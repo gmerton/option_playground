@@ -101,83 +101,6 @@ def query_entries_range_for_leg(
     return df
 
 
-# ------------------------------
-# 1) ENTRIES: pick ~30Δ call with expiry ≈ entry_date + horizon_days
-#    mode: "nearest" (closest to +45), "exact" (only exact +45), "next_on_or_after" (first expiry >= +45)
-# ------------------------------
-def query_entries_range(
-    ts_start: str, ts_end: str,
-    ticker: str = "XSP", cp: str = "C",
-    delta_target: float = 0.30, horizon_days: int = 45,
-    mode: str = "nearest"
-) -> pd.DataFrame:
-    base_where = f"""
-      o.ticker = '{ticker}'
-      AND o.cp = '{cp}'
-      AND o.ts >= TIMESTAMP '{ts_start} 00:00:00'
-      AND o.ts <  TIMESTAMP '{ts_end} 00:00:00'
-    """
-
-    if mode == "exact":
-        expiry_clause = f"o.expiry = date_add('day', {horizon_days}, DATE(o.ts))"
-        order = "ORDER BY ABS(delta - {delta_target}), strike"
-        select_extra = ""
-    elif mode == "next_on_or_after":
-        expiry_clause = f"o.expiry >= date_add('day', {horizon_days}, DATE(o.ts))"
-        order = "ORDER BY o.expiry, ABS(delta - {delta_target}), strike"
-        select_extra = ""
-    else:  # nearest
-        expiry_clause = None
-        order = "ORDER BY expiry_diff, ABS(delta - {delta_target}), strike"
-        select_extra = f", ABS(date_diff('day', o.expiry, date_add('day', {horizon_days}, DATE(o.ts)))) AS expiry_diff"
-
-    sql = f"""
-    WITH cand AS (
-      SELECT
-          DATE(o.ts) AS entry_date,
-          o.ts,
-          o.expiry,
-          o.ticker,
-          o.cp,
-          o.strike,
-          o.delta,
-          o.last AS entry_last
-          {select_extra}
-      FROM {TABLE} o
-      WHERE {base_where}
-      {" AND " + expiry_clause if expiry_clause else ""}
-    ),
-    ranked AS (
-      SELECT
-          *,
-          ROW_NUMBER() OVER (
-            PARTITION BY entry_date
-            {order.format(delta_target=delta_target)}
-          ) AS rn
-      FROM cand
-    )
-    SELECT entry_date, expiry, ticker, cp, strike, delta, entry_last
-    FROM ranked
-    WHERE rn = 1
-    ORDER BY entry_date;
-    """
-
-    df = wr.athena.read_sql_query(
-        sql=sql,
-        database=DB,
-        workgroup=WORKGROUP,
-        s3_output=S3_OUTPUT,
-        ctas_approach=True  # efficient for bigger ranges
-    )
-    # Ensure dtypes
-    for col in ["entry_date", "expiry"]:
-        if col in df:
-            df[col] = pd.to_datetime(df[col]).dt.date
-    return df
-
-
-
-
 def fetch_option_paths(df_entry: pd.DataFrame) -> pd.DataFrame:
     """
     For each (entry_date, expiry, ticker, cp, strike, entry_last) in df_entry,
@@ -300,20 +223,4 @@ if __name__ == "__main__":
    df2 = fetch_option_paths(df_entry)
    print(df2.head())
    df_final = summarize_hold_to_maturity(df2)
-   print(df_final.head(11)) 
-    # 1) Entries across a date range
-    
-    
-    # df_entry = query_entries_range (
-    #     ts_start="2022-06-10",
-    #     ts_end="2022-06-18",
-    #     ticker="XSP",
-    #     cp="C",
-    #     delta_target=0.30,
-    #     horizon_days=45,
-    #     mode="nearest"  # or "exact" / "next_on_or_after"
-    # )
-    # print(df_entry.head())
-    # print(df2.head())
-    # df_final = summarize_hold_to_maturity(df2)
-    # print(df_final.head(7))
+   print(df_final.head(11))  
