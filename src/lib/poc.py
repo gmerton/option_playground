@@ -185,6 +185,12 @@ def summarize_hold_to_maturity(df_paths: pd.DataFrame) -> pd.DataFrame:
         "entry_date", "expiry", "strike", "entry_last", "quote_last", "profit"
     ]].sort_values(["entry_date", "expiry", "strike"]).reset_index(drop=True)
 
+    total_pnl = out["profit"].sum()
+    total_investment = 100*out["entry_last"].sum()
+    roc = ((total_pnl-total_investment) / total_investment)+1
+    print(f"Total Investment: {total_investment}")
+    print(f"Total PnL: {total_pnl}")
+    print(f"ROC: {roc}")
     return out
 
 
@@ -194,7 +200,7 @@ if __name__ == "__main__":
     # 1) Entries across a date range
     df_entry = query_entries_range (
         ts_start="2022-06-10",
-        ts_end="2022-06-17",
+        ts_end="2022-06-18",
         ticker="XSP",
         cp="C",
         delta_target=0.30,
@@ -205,4 +211,4 @@ if __name__ == "__main__":
     df2 = fetch_option_paths(df_entry)
     print(df2.head())
     df_final = summarize_hold_to_maturity(df2)
-    print(df_final.head())
+    print(df_final.head(7))
