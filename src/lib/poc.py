@@ -1,5 +1,6 @@
 import awswrangler as wr
 import pandas as pd
+from data.Leg import Leg, Strategy, Direction, OptionType
 
 WORKGROUP="primary"
 S3_OUTPUT = "s3://athena-919061006621/"
@@ -7,6 +8,98 @@ DB="gm_equity"
 TABLE = "gm_equity.options_daily_parquet"
 tables = wr.catalog.get_tables(database=DB)
 print([t["Name"] for t in tables])
+
+def query_entries_range_for_leg(
+    ts_start: str,
+    ts_end: str,
+    ticker: str,
+    leg: "Leg",
+    mode: str = "nearest",
+) -> pd.DataFrame:
+    """
+    Resolve one Leg (delta+DTE) into concrete contracts across [ts_start, ts_end).
+    Returns the same schema as your current query, plus optional leg-trace columns.
+    """
+    cp = "C" if leg.opt_type.name == "CALL" else "P"
+    # Your SQL expects 0.30 for 30-delta; Leg stores 30.0
+    delta_target = float(leg.strike_delta) / 100.0
+    horizon_days = int(leg.dte)
+
+    base_where = f"""
+      o.ticker = '{ticker}'
+      AND o.cp = '{cp}'
+      AND o.ts >= TIMESTAMP '{ts_start} 00:00:00'
+      AND o.ts <  TIMESTAMP '{ts_end} 00:00:00'
+    """
+
+    if mode == "exact":
+        expiry_clause = f"o.expiry = date_add('day', {horizon_days}, DATE(o.ts))"
+        order = "ORDER BY ABS(delta - {delta_target}), strike"
+        select_extra = ""
+    elif mode == "next_on_or_after":
+        expiry_clause = f"o.expiry >= date_add('day', {horizon_days}, DATE(o.ts))"
+        order = "ORDER BY o.expiry, ABS(delta - {delta_target}), strike"
+        select_extra = ""
+    else:  # nearest
+        expiry_clause = None
+        order = "ORDER BY expiry_diff, ABS(delta - {delta_target}), strike"
+        select_extra = (
+            f", ABS(date_diff('day', o.expiry, date_add('day', {horizon_days}, DATE(o.ts)))) AS expiry_diff"
+        )
+
+    sql = f"""
+    WITH cand AS (
+      SELECT
+          DATE(o.ts) AS entry_date,
+          o.ts,
+          o.expiry,
+          o.ticker,
+          o.cp,
+          o.strike,
+          o.delta,
+          o.last AS entry_last
+          {select_extra}
+      FROM {TABLE} o
+      WHERE {base_where}
+      {" AND " + expiry_clause if expiry_clause else ""}
+    ),
+    ranked AS (
+      SELECT
+          *,
+          ROW_NUMBER() OVER (
+            PARTITION BY entry_date
+            {order.format(delta_target=delta_target)}
+          ) AS rn
+      FROM cand
+    )
+    SELECT entry_date, expiry, ticker, cp, strike, delta, entry_last
+    FROM ranked
+    WHERE rn = 1
+    ORDER BY entry_date;
+    """
+
+    df = wr.athena.read_sql_query(
+        sql=sql,
+        database=DB,
+        workgroup=WORKGROUP,
+        s3_output=S3_OUTPUT,
+        ctas_approach=True,
+    )
+
+    # Normalize dates
+    for col in ("entry_date", "expiry"):
+        if col in df:
+            df[col] = pd.to_datetime(df[col]).dt.date
+
+    # (Optional) keep the requested leg spec for traceability
+    df["leg_direction"] = leg.direction.name
+    df["leg_type"] = leg.opt_type.name
+    df["leg_quantity"] = leg.quantity
+    df["target_delta"] = delta_target
+    df["target_dte"] = horizon_days
+
+    return df
+
 
 # ------------------------------
 # 1) ENTRIES: pick ~30Δ call with expiry ≈ entry_date + horizon_days
@@ -196,19 +289,31 @@ def summarize_hold_to_maturity(df_paths: pd.DataFrame) -> pd.DataFrame:
 
 
 if __name__ == "__main__":
-   
-    # 1) Entries across a date range
-    df_entry = query_entries_range (
-        ts_start="2022-06-10",
-        ts_end="2022-06-18",
-        ticker="XSP",
-        cp="C",
-        delta_target=0.30,
-        horizon_days=45,
-        mode="nearest"  # or "exact" / "next_on_or_after"
+   leg = Leg(direction=Direction.BUY, opt_type=OptionType.CALL, quantity=1, strike_delta=30.0, dte=45)
+   df_entry = query_entries_range_for_leg(
+    ts_start="2024-01-01",
+    ts_end="2024-01-18",
+    ticker="XSP",
+    leg=leg,
+    mode="nearest",
     )
-    print(df_entry.head())
-    df2 = fetch_option_paths(df_entry)
-    print(df2.head())
-    df_final = summarize_hold_to_maturity(df2)
-    print(df_final.head(7))
+   df2 = fetch_option_paths(df_entry)
+   print(df2.head())
+   df_final = summarize_hold_to_maturity(df2)
+   print(df_final.head(11)) 
+    # 1) Entries across a date range
+    
+    
+    # df_entry = query_entries_range (
+    #     ts_start="2022-06-10",
+    #     ts_end="2022-06-18",
+    #     ticker="XSP",
+    #     cp="C",
+    #     delta_target=0.30,
+    #     horizon_days=45,
+    #     mode="nearest"  # or "exact" / "next_on_or_after"
+    # )
+    # print(df_entry.head())
+    # print(df2.head())
+    # df_final = summarize_hold_to_maturity(df2)
+    # print(df_final.head(7))
