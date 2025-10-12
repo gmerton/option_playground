@@ -1,33 +1,64 @@
-import boto3
+'''
+This was the original query and hit the table gm_equity.options_daily_parquet
+'''
+
 import awswrangler as wr
 import pandas as pd
 from data.Leg import Leg, Strategy, Direction, OptionType
+import boto3
 
-# -----------------------------
-# Athena / Catalog configuration
-# -----------------------------
-CATALOG   = "awsdatacatalog/s3tablescatalog/gm-equity-tbl-bucket"  # from QueryExecutionContext
-WORKGROUP = "dev-v3"                                               # Athena engine v3
-S3_OUTPUT = "s3://athena-919061006621/"                            # WG output location (safe to keep)
-DB        = "silver"
-TABLE     = "options_daily_v2"                                     # referenced as silver.options_daily_v2
+ath = boto3.client("athena")
+cats = ath.list_data_catalogs()
+print([c["CatalogName"] for c in cats.get("DataCatalogsSummary", [])])
+CONTRACT_MULTIPLIER=100
+# WORKGROUP="primary"
+
+
+DB="gm_equity"
+TABLE = "gm_equity.options_daily_parquet"
+
+
+S3_OUTPUT = "s3://athena-919061006621/"                            # WG output; fine to keep here too
 
 CONTRACT_MULTIPLIER = 100
 
+# ---------- Athena helper (use everywhere) ----------
 def athena(sql: str) -> pd.DataFrame:
-    """Single path for all Athena queries against the S3 Tables catalog."""
+    return wr.athena.read_sql_query(
+        sql=sql,
+  #      database=DB,
+  #      workgroup=WORKGROUP,
+  #      data_source=CATALOG,     # IMPORTANT: non-AwsDataCatalog catalog
+        s3_output=S3_OUTPUT,
+        ctas_approach=True      # REQUIRED for non-AwsDataCatalog
+    )
+
+
+
+
+def athena(sql: str):
     return wr.athena.read_sql_query(
         sql=sql,
         database=DB,
-        workgroup=WORKGROUP,
-        data_source=CATALOG,   # IMPORTANT: non-AwsDataCatalog
-        s3_output=S3_OUTPUT,
-        ctas_approach=False    # REQUIRED when data_source != AwsDataCatalog
+        # workgroup=WORKGROUP,
+        # data_source=DATA_SOURCE,   # non-default data source
+        s3_output=S3_OUTPUT,       # keep if your WG doesn’t have an output location set
+        ctas_approach=False        # <-- REQUIRED for non AwsDataCatalog sources
     )
 
-# ---------------------------------------
-# Strategy/Leg resolution and data fetches
-# ---------------------------------------
+# tbls = wr.athena.read_sql_query(
+#     sql=f"SHOW TABLES IN {DB}",
+#     database=DB,
+#     workgroup=WORKGROUP,
+#     data_source=DATA_SOURCE,
+#     s3_output=S3_OUTPUT,
+# )
+
+# print(wr.catalog.get_tables(database=DB))
+# tbls = athena(f"SHOW TABLES IN {DB}")
+
+
+
 def query_entries_range_for_strategy(
     ts_start: str,
     ts_end: str,
@@ -37,8 +68,8 @@ def query_entries_range_for_strategy(
     require_all_legs: bool = True,
 ) -> pd.DataFrame:
     """
-    Resolve each leg to a concrete contract per day in [ts_start, ts_end).
-    If require_all_legs=True, keep only entry_dates present for ALL legs.
+    Runs query_entries_range_for_leg() for each leg and returns a tidy long DF with leg metadata.
+    If require_all_legs=True, keep only entry_dates that exist for ALL legs.
     """
     per_leg = []
     for idx, leg in enumerate(strategy.legs):
@@ -49,7 +80,8 @@ def query_entries_range_for_strategy(
             leg=leg,
             mode=mode,
         ).copy()
-        df_leg["leg_index"]     = idx
+
+        df_leg["leg_index"]    = idx
         df_leg["leg_direction"] = leg.direction.name
         df_leg["leg_type"]      = leg.opt_type.name
         df_leg["leg_quantity"]  = leg.quantity
@@ -63,11 +95,16 @@ def query_entries_range_for_strategy(
     tidy = pd.concat(per_leg, ignore_index=True)
 
     if require_all_legs:
+        # keep only dates present for EVERY leg
         needed = set(range(len(strategy.legs)))
-        dates_ok = tidy.groupby("entry_date")["leg_index"].apply(lambda s: set(s.unique()) == needed)
+        dates_ok = (
+            tidy.groupby("entry_date")["leg_index"]
+                .apply(lambda s: set(s.unique()) == needed)
+        )
         common_dates = set(dates_ok[dates_ok].index)
         tidy = tidy[tidy["entry_date"].isin(common_dates)].copy()
 
+    # stable ordering
     tidy.sort_values(["entry_date", "leg_index", "expiry", "strike"], inplace=True)
     tidy.reset_index(drop=True, inplace=True)
     return tidy
@@ -81,47 +118,51 @@ def query_entries_range_for_leg(
     mode: str = "nearest",
 ) -> pd.DataFrame:
     """
-    Resolve one Leg (delta + DTE) into concrete contracts across [ts_start, ts_end).
+    Resolve one Leg (delta+DTE) into concrete contracts across [ts_start, ts_end).
+    Returns the same schema as your current query, plus optional leg-trace columns.
     """
     cp = "C" if leg.opt_type.name == "CALL" else "P"
+    # Your SQL expects 0.30 for 30-delta; Leg stores 30.0
     delta_mag = float(leg.strike_delta) / 100.0
     delta_target = delta_mag if cp == "C" else -delta_mag
+    # delta_target = float(leg.strike_delta) / 100.0
     horizon_days = int(leg.dte)
 
     base_where = f"""
       o.ticker = '{ticker}'
       AND o.cp = '{cp}'
-      AND o.trade_date >= TIMESTAMP '{ts_start} 00:00:00'
-      AND o.trade_Date <=  TIMESTAMP '{ts_end} 00:00:00'
+      AND o.ts >= TIMESTAMP '{ts_start} 00:00:00'
+      AND o.ts <=  TIMESTAMP '{ts_end} 00:00:00'
     """
 
     if mode == "exact":
-        expiry_clause = f"o.expiry = date_add('day', {horizon_days}, o.trade_date)"
+        expiry_clause = f"o.expiry = date_add('day', {horizon_days}, DATE(o.ts))"
         order = "ORDER BY ABS(delta - {delta_target}), strike"
         select_extra = ""
     elif mode == "next_on_or_after":
-        expiry_clause = f"o.expiry >= date_add('day', {horizon_days}, o.trade_date)"
+        expiry_clause = f"o.expiry >= date_add('day', {horizon_days}, DATE(o.ts))"
         order = "ORDER BY o.expiry, ABS(delta - {delta_target}), strike"
         select_extra = ""
     else:  # nearest
         expiry_clause = None
         order = "ORDER BY expiry_diff, ABS(delta - {delta_target}), strike"
         select_extra = (
-            f", ABS(date_diff('day', o.expiry, date_add('day', {horizon_days}, o.trade_date))) AS expiry_diff"
+            f", ABS(date_diff('day', o.expiry, date_add('day', {horizon_days}, DATE(o.ts)))) AS expiry_diff"
         )
 
     sql = f"""
     WITH cand AS (
       SELECT
-          o.trade_date AS entry_date,
+          DATE(o.ts) AS entry_date,
+          o.ts,
           o.expiry,
           o.ticker,
           o.cp,
           o.strike,
           o.delta,
-          (o.bid + o.ask) / 2 AS entry_last
+          (o.bid + o.ask) / 2 as entry_last
           {select_extra}
-      FROM "{DB}"."{TABLE}" o
+      FROM {TABLE} o
       WHERE {base_where}
       {" AND " + expiry_clause if expiry_clause else ""}
     ),
@@ -140,14 +181,20 @@ def query_entries_range_for_leg(
     ORDER BY entry_date;
     """
 
-    df = athena(sql)
+    df = wr.athena.read_sql_query(
+        sql=sql,
+        database=DB,
+        # workgroup=WORKGROUP,
+        s3_output=S3_OUTPUT,
+        ctas_approach=True,
+    )
 
     # Normalize dates
     for col in ("entry_date", "expiry"):
         if col in df:
             df[col] = pd.to_datetime(df[col]).dt.date
 
-    # traceability
+    # (Optional) keep the requested leg spec for traceability
     df["leg_direction"] = leg.direction.name
     df["leg_type"] = leg.opt_type.name
     df["leg_quantity"] = leg.quantity
@@ -159,8 +206,7 @@ def query_entries_range_for_leg(
 
 def fetch_option_paths(df_entry: pd.DataFrame) -> pd.DataFrame:
     """
-    Given selected entries (entry_date/expiry/ticker/cp/strike/entry_last),
-    return daily price paths (quote_date) for those contracts up to expiry.
+    Same as before, but if df_entry contains a 'row_id' column, we propagate it.
     """
     if df_entry.empty:
         return df_entry.copy()
@@ -195,7 +241,7 @@ def fetch_option_paths(df_entry: pd.DataFrame) -> pd.DataFrame:
             for _, r in df_keys.iterrows()
         ]
         targets_ddl = "(entry_date, expiry, ticker, cp, strike, entry_last, row_id)"
-        select_cols = "t.entry_date, o.trade_date AS quote_date, o.expiry, o.ticker, o.cp, o.strike, t.entry_last, o.last, 100*(o.last - t.entry_last) AS profit, t.row_id"
+        select_cols = "t.entry_date, DATE(o.ts) AS quote_date, o.expiry, o.ticker, o.cp, o.strike, t.entry_last, o.last, 100*(o.last - t.entry_last) AS profit, t.row_id"
     else:
         rows = [
             f"(DATE '{r.entry_date}', DATE '{r.expiry}', '{esc(r.ticker)}', '{esc(r.cp)}', "
@@ -203,7 +249,7 @@ def fetch_option_paths(df_entry: pd.DataFrame) -> pd.DataFrame:
             for _, r in df_keys.iterrows()
         ]
         targets_ddl = "(entry_date, expiry, ticker, cp, strike, entry_last)"
-        select_cols = "t.entry_date, o.trade_date AS quote_date, o.expiry, o.ticker, o.cp, o.strike, t.entry_last, o.last, 100*(o.last - t.entry_last) AS profit"
+        select_cols = "t.entry_date, DATE(o.ts) AS quote_date, o.expiry, o.ticker, o.cp, o.strike, t.entry_last, o.last, 100*(o.last - t.entry_last) AS profit"
 
     values = ",\n".join(rows)
 
@@ -214,22 +260,26 @@ def fetch_option_paths(df_entry: pd.DataFrame) -> pd.DataFrame:
     )
     SELECT
       {select_cols}
-    FROM "{DB}"."{TABLE}" o
+    FROM {TABLE} o
     JOIN targets t
       ON  o.expiry = t.expiry
       AND o.ticker = t.ticker
       AND o.cp     = t.cp
       AND o.strike = t.strike
-    WHERE o.trade_date BETWEEN t.entry_date AND t.expiry
+    WHERE DATE(o.ts) BETWEEN t.entry_date AND t.expiry
     ORDER BY o.ticker, o.cp, o.strike, o.expiry, quote_date
     """
 
-    df = athena(sql)
+    df = wr.athena.read_sql_query(
+        sql=sql,
+        database=DB,
+        s3_output=S3_OUTPUT,
+        ctas_approach=False
+    )
     if not df.empty:
         df["entry_date"] = pd.to_datetime(df["entry_date"]).dt.date
         df["quote_date"] = pd.to_datetime(df["quote_date"]).dt.date
     return df
-
 
 def fetch_option_paths_for_strategy_entries(tidy_entries: pd.DataFrame) -> pd.DataFrame:
     """
@@ -239,6 +289,7 @@ def fetch_option_paths_for_strategy_entries(tidy_entries: pd.DataFrame) -> pd.Da
     if tidy_entries.empty:
         return tidy_entries.copy()
 
+    # create a stable row id per leg-row to carry through Athena and back
     tidy = tidy_entries.copy()
     tidy["row_id"] = range(len(tidy))
 
@@ -246,6 +297,7 @@ def fetch_option_paths_for_strategy_entries(tidy_entries: pd.DataFrame) -> pd.Da
         "row_id", "entry_date", "expiry", "ticker", "cp", "strike", "entry_last"
     ]].copy())
 
+    # Merge leg metadata back using row_id
     out = paths.merge(
         tidy[["row_id","entry_date","leg_index","leg_direction","leg_type","leg_quantity"]],
         on=["row_id","entry_date"],
@@ -254,11 +306,11 @@ def fetch_option_paths_for_strategy_entries(tidy_entries: pd.DataFrame) -> pd.Da
     )
     return out
 
-
 def summarize_hold_to_maturity_strategy(paths_long: pd.DataFrame) -> pd.DataFrame:
     """
     Keep expiry quotes only and compute portfolio PnL across all legs per entry_date.
-    'profit' is already CONTRACT_MULTIPLIER * (opt_price - entry_price) per contract.
+    Uses your 'profit' column, which is already CONTRACT_MULTIPLIER * (opt_price - entry_price) per contract.
+    Applies direction sign and quantity for each leg before summing.
     """
     if paths_long.empty:
         return pd.DataFrame(columns=[
@@ -266,15 +318,19 @@ def summarize_hold_to_maturity_strategy(paths_long: pd.DataFrame) -> pd.DataFram
             "portfolio_pnl", "roc_like_metric"
         ])
 
+    # expiry-day rows only
     df_exp = paths_long[paths_long["quote_date"] == paths_long["expiry"]].copy()
 
+    # signed per-leg pnl = profit * (+1 for BUY, -1 for SELL) * quantity
     sign = df_exp["leg_direction"].map({"BUY": 1, "SELL": -1}).astype(int)
     df_exp["leg_pnl"] = df_exp["profit"] * sign * df_exp["leg_quantity"]
 
+    # net entry premium (signed) across legs (use entry_last * multiplier * quantity * sign)
     df_exp["entry_premium_signed"] = (
         df_exp["entry_last"] * CONTRACT_MULTIPLIER * df_exp["leg_quantity"] * sign
     )
 
+    # group to portfolio level per entry_date
     summary = (
         df_exp.groupby("entry_date", as_index=False)
               .agg(
@@ -286,72 +342,78 @@ def summarize_hold_to_maturity_strategy(paths_long: pd.DataFrame) -> pd.DataFram
               .sort_values("entry_date")
     )
 
+    # Optional: a simple ROC-like metric based on net premium outlay (can be negative if net credit)
+    # Avoid divide-by-zero; only compute where abs(outlay) > 1e-9
     outlay = summary["net_entry_premium"].replace(0, pd.NA)
     summary["roc_like_metric"] = (summary["portfolio_pnl"] / outlay).astype(float)
 
     total_pnl = summary["portfolio_pnl"].sum()
+    # total_pnl = out["profit"].sum()
     total_investment = summary["net_entry_premium"].sum()
-    roc = ((total_pnl - total_investment) / (total_investment if total_investment else 1)) + 1
+    roc = ((total_pnl-total_investment) / total_investment)+1
     print(f"Total Investment: {total_investment}")
     print(f"Total PnL: {total_pnl}")
     print(f"ROC: {roc}")
-    return summary
+    
 
+    return summary
 
 def summarize_hold_to_maturity(df_paths: pd.DataFrame) -> pd.DataFrame:
     """
-    From fetch_option_paths output, keep only the expiry-day quote and compute total PnL.
+    From fetch_option_paths output, keep only the expiry-day quote and compute PnL.
+
+    Returns columns:
+      entry_date, expiry, strike, entry_last, quote_last, pnl
     """
     if df_paths.empty:
         return pd.DataFrame(columns=[
-            "entry_date","expiry","strike","entry_last","quote_last","profit"
+            "entry_date","expiry","strike","entry_last","quote_last","pnl"
         ])
 
+    # keep only rows where the quote is on expiry
     df_exp = df_paths[df_paths["quote_date"] == df_paths["expiry"]].copy()
-    df_exp.rename(columns={"last": "quote_last"}, inplace=True)
 
+    # rename and compute pnl
+    df_exp.rename(columns={"last": "quote_last"}, inplace=True)
+    #df_exp["pnl"] = df_exp["quote_last"] - df_exp["entry_last"]
+
+    # select/order columns
     out = df_exp[[
         "entry_date", "expiry", "strike", "entry_last", "quote_last", "profit"
     ]].sort_values(["entry_date", "expiry", "strike"]).reset_index(drop=True)
 
     total_pnl = out["profit"].sum()
-    total_investment = CONTRACT_MULTIPLIER * out["entry_last"].sum()
-    roc = ((total_pnl - total_investment) / (total_investment if total_investment else 1)) + 1
+    total_investment = 100*out["entry_last"].sum()
+    roc = ((total_pnl-total_investment) / total_investment)+1
     print(f"Total Investment: {total_investment}")
     print(f"Total PnL: {total_pnl}")
     print(f"ROC: {roc}")
     return out
 
 
+
 if __name__ == "__main__":
-    # example usage
-    leg = Leg(direction=Direction.BUY, opt_type=OptionType.CALL, quantity=1,
+    leg = Leg(direction=Direction.BUY, opt_type=OptionType.CALL, quantity=1, 
               strike_delta=30.0, dte=45)
-
-    # Butterfly
-    # strat = Strategy(legs=[
-    #     Leg(direction=Direction.BUY,  opt_type=OptionType.CALL,  quantity=1, strike_delta=95.0, dte=45),
-    #     Leg(direction=Direction.BUY,  opt_type=OptionType.CALL,  quantity=2, strike_delta=50.0, dte=45),
-    #     Leg(direction=Direction.BUY,  opt_type=OptionType.CALL,  quantity=1, strike_delta=5.0,  dte=45),
-    # ])
-
+   
     strat = Strategy(legs=[
-        Leg(direction=Direction.SELL,  opt_type=OptionType.CALL,  quantity=1, strike_delta=25.0, dte=30),
-        Leg(direction=Direction.SELL,  opt_type=OptionType.PUT,  quantity=1, strike_delta=25.0, dte=30),
-    ])
-
+        Leg(direction=Direction.BUY,  opt_type=OptionType.CALL,  quantity=1, strike_delta=95.0, dte=45),
+        Leg(direction=Direction.BUY,  opt_type=OptionType.CALL,  quantity=2, strike_delta=50.0, dte=45),
+            Leg(direction=Direction.BUY,  opt_type=OptionType.CALL,  quantity=1, strike_delta=5.0, dte=45),
+     ])
+    
     entries = query_entries_range_for_strategy(
-        ts_start="2014-01-01",
-        ts_end="2026-01-31",
-        ticker="UVXY",
+        ts_start="2024-01-01",
+        ts_end="2024-01-31",
+        ticker="XSP",
         strategy=strat,
         mode="nearest",
         require_all_legs=True,
     )
-    print(entries.head())
 
+    print(entries.head())
     paths = fetch_option_paths_for_strategy_entries(entries)
     print(paths.head())
-
     portfolio = summarize_hold_to_maturity_strategy(paths)
     print(portfolio)
+   
