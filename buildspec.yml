@@ -1,0 +1,37 @@
+version: 0.2
+
+env:
+  variables:
+    LAMBDA_FUNCTION_NAME: "options_toolkit_prod" # <-- your function name
+    ARTIFACT_ZIP: "function.zip"
+
+phases:
+  install:
+    commands:
+      - python --version
+      - pip --version || true
+  pre_build:
+    commands:
+      - rm -rf build dist && mkdir -p build
+      # Install deps (if any) into build/ so they sit next to your code
+      - |
+        if [ -f requirements.txt ] && [ -s requirements.txt ]; then
+          pip install -r requirements.txt -t build
+        fi
+  build:
+    commands:
+      # Copy your source tree into build/ preserving src/ path
+      - cp -r src build/
+      # Sanity: ensure package in zip has src/lib/handler.py
+      - test -f build/src/lib/handler.py
+      # Zip everything inside build/ (so src/ is at top level in the zip)
+      - cd build && zip -r9 "../${ARTIFACT_ZIP}" . && cd ..
+  post_build:
+    commands:
+      # Push code to Lambda
+      - aws lambda update-function-code --function-name "$LAMBDA_FUNCTION_NAME" --zip-file fileb://"${ARTIFACT_ZIP}" --no-cli-pager
+      # (Optional) publish a new numbered version
+      - aws lambda publish-version --function-name "$LAMBDA_FUNCTION_NAME" --no-cli-pager
+artifacts:
+  files:
+    - function.zip

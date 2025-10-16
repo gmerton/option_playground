@@ -1,0 +1,7 @@
+pandas
+pyarrow
+awswrangler
+boto3
+sqlparse
+aiohttp
+polygon-api-client
