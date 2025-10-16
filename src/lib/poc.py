@@ -1,4 +1,3 @@
-import boto3
 import awswrangler as wr
 import pandas as pd
 from data.Leg import Leg, Strategy, Direction, OptionType

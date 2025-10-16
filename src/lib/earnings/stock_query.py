@@ -45,8 +45,8 @@ def _run_athena_query(
     cells = rows[1].get("Data", [])
     return cells[0].get("VarCharValue") if cells else None
 
-def fetch_closes_for_dates(
-    dates: Iterable[Union[str, date]],
+def fetch_closes_for_date(
+        date: date,
     ticker: str) -> Dict[str, float]:
     """
     For each date in `dates`, query the 16:30 bar close from Athena.
@@ -55,12 +55,11 @@ def fetch_closes_for_dates(
     t = _safe_ticker(ticker)
     out: Dict[str, float] = {}
 
-    for d_in in dates:
-        d = _parse_date(d_in)
-        iso = d.isoformat()
+    d = _parse_date(date)
+    iso = d.isoformat()
 
-        # Your query template
-        sql = f"""
+    # Your query template
+    sql = f"""
         SELECT close
         FROM stock_5min_pp
         WHERE ticker = '{t}'
@@ -71,21 +70,21 @@ def fetch_closes_for_dates(
           AND minute(ts) = 30
         LIMIT 1
         """
-        print(sql)
+    # print(sql)
 
-        val = _run_athena_query(
+    val = _run_athena_query(
             sql.strip(),
           )
 
-        if val is None:
+    if val is None:
             out[iso] = -1.0
-        else:
+    else:
             try:
                 out[iso] = float(val)
             except ValueError:
                 out[iso] = -1.0
 
-    return out
+    return val
 
 
 
