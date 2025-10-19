@@ -3,6 +3,7 @@ import aiohttp
 from typing import List, Dict, Any, Optional
 from lib.commons.bs import implied_vol
 from lib.commons.list_contracts import list_contracts_for_expiry
+from lib.commons.get_underlying_price import get_underlying_price
 from datetime import datetime, date
 
 TRADIER_API_KEY = os.getenv("TRADIER_API_KEY")
@@ -48,38 +49,6 @@ async def _list_expirations(
     finally:
         await session.close()
     
-async def _get_underlying_price(
-        ticker: str
-) :
-    url = f"{TRADIER_ENDPOINT}/markets/quotes"
-    params = {"symbols" : ticker}
-    close_session = False
-    session = aiohttp.ClientSession(
-        headers=TRADIER_REQUEST_HEADERS
-    )
-    try:
-        async with session.get(url, params=params) as resp:
-            resp.raise_for_status()
-            data = await resp.json()
-        q = (data or {}).get("quotes", {}).get("quote")
-        if q is None:
-            return None
-        if isinstance(q, list):
-            q = q[0]
-        bid = q.get("bid")
-        ask = q.get("ask")
-        last = q.get("last")
-        close = q.get("close") or q.get("prevclose")
-
-        if bid and ask and bid > 0 and ask > 0:
-            return float((bid+ask)/2.0)
-        if last and last > 0:
-            return float(last)
-        if close and close > 0:
-            return float(close)
-        return None
-    finally:
-        await session.close()
 
 
 
@@ -99,7 +68,7 @@ async def test():
     front_expiration_date = '2025-11-14'
     back_expiration_date = '2025-12-19'
     # Step 1: get price of underlying
-    spot = await _get_underlying_price(ticker)
+    spot = await get_underlying_price(ticker)
     print(spot)
 
     # Step 2: get dates of available options for a symbol
