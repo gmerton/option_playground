@@ -52,13 +52,16 @@ async def test(ticker, expiry, verbose = False):
     spot = await get_underlying_price(ticker)
     contracts = await list_contracts_for_expiry(ticker, expiry)
     if verbose:
-        print(f"underlying spot={spot}")
+        print(f"underlying spot={round(spot,2)}")
     tie_breaker = "higher"
-    puts = [c for c in contracts if c.get("option_type").lower() == "put"]
+    
+    put_contracts = [c for c in contracts if c.get("option_type").lower() == "put"]
+    call_contracts = [c for c in contracts if c.get("option_type").lower() == "call"]
+    
     tie_breaker = "higher"
     prefer_high = (tie_breaker != "lower")
     atm_put_contract = min(
-        puts,
+        put_contracts,
         key = lambda c: (
             abs(c["strike"]- spot),
             0 if (c["strike"] >= spot) == prefer_high else 1,
@@ -67,56 +70,73 @@ async def test(ticker, expiry, verbose = False):
     )
     put_bid, put_ask = atm_put_contract["bid"], atm_put_contract["ask"]
     put_mid = (put_bid + put_ask) /2
-    call_contract = find_call(spot, contracts, atm_put_contract)
-    if verbose:
-        print(f"atm put strike ={atm_put_contract["strike"]}, price = {put_mid}")
-        print(f"call strike = {call_contract["strike"]}")
-    profitability(ticker, spot, call_contract, atm_put_contract, dte)
+    breakeven_call_contract = find_call(spot, contracts, atm_put_contract)
+    breakeven_call_contract_strike = breakeven_call_contract["strike"]
+    atm_put_contract_strike = atm_put_contract["strike"]
 
-def profitability(ticker, spot, call_contract, put_contract, dte):
+    if verbose:
+        # print(f"atm put strike ={atm_put_contract["strike"]}, price = {put_mid}")
+        # print(f"call strike = {breakeven_call_contract_strike}")
+        print(f"{ticker}, {expiry}")
+    for call_contract in call_contracts:
+        if call_contract["strike"] < breakeven_call_contract_strike:
+            continue
+        for put_contract in put_contracts:
+            if put_contract["strike"] > atm_put_contract_strike:
+                continue
+            # profitability(ticker, spot, breakeven_call_contract, atm_put_contract, dte)
+            profitability( spot, call_contract, put_contract, dte)
+
+
+    
+    
+
+def profitability(spot, call_contract, put_contract, dte):
     # strikes
     Kc = float(call_contract["strike"])
     Kp = float(put_contract["strike"])
-
     call_mid = (float(call_contract["bid"]) + float(call_contract["ask"])) /2.0
     put_mid = (float(put_contract["bid"]) + float(put_contract["ask"])) /2.0
 
     net_credit = call_mid - put_mid
+    breakeven = round(spot + put_mid - call_mid,2)
+    
     max_profit = (Kc - spot + net_credit) * 100.0
     min_profit = -1*(spot - Kp - net_credit) * 100.0
 
-    initial_investment = (spot + net_credit) * 100.0
+    initial_investment = (spot - net_credit) * 100.0
         
     min_return = round((min_profit / initial_investment) * 100,2)
     max_return = round((max_profit / initial_investment) * 100,2)
 
+   
     annualized_min_return = round(100* (((1+min_return/100) ** (365/dte))-1),2)
     annualized_max_return = round(100* (((1+max_return/100) ** (365/dte))-1),2)
-    expiry = call_contract["expiration_date"]
-    # print(f"put delta = {put_contract["greeks"]["delta"]}, call delta = {call_contract["greeks"]["delta"]}")
-    # print(f"put IV = {round(put_contract["greeks"]["smv_vol"],3)}, call IV = {round(call_contract["greeks"]["smv_vol"],3)}")
     
-    # print(f"  Profit range: [{round(min_profit)},{round(max_profit)}]")
-    # print(f"  [{min_return},{max_return}]")
-    #print(f"Annualized profit range: [{annualized_min_return},{annualized_max_return}]")
-    print(f"{ticker}, {expiry}, max guaranteed annualized profit: {annualized_max_return}")
+
+    reward_to_risk = -1 if min_profit == 0 else round(-1 * (max_profit) / (min_profit),1)
+    term_BE_drift = (breakeven - spot) / spot
+    annualized_BE_drift =100*((1+term_BE_drift) ** (365/dte) - 1)
+
+    if annualized_BE_drift < 8 and annualized_max_return > 50.0 and annualized_min_return > -15 and reward_to_risk > 3:
+        print(f"Kp={Kp}, Kc={Kc}, max profit = {round(max_profit)}, max loss = {round(min_profit)}, Min ROI: {annualized_min_return}%, Max ROI: {annualized_max_return}%, r-to-r={reward_to_risk}, BE={breakeven}, BE_drift = {round(annualized_BE_drift,1)}%")
         
 
  # Retrieve a list of exps 6 months or more in the future.
 async def find_best_leap(ticker):
     unfiltered_exps = await list_expirations(ticker)
     today =date.today()
-    six_months_later = today + relativedelta(months=12)
+    six_months_later = today + relativedelta(months=5)
     filtered = [
         d for d in unfiltered_exps
         if datetime.strptime(d, "%Y-%m-%d").date() >= six_months_later
     ]
     for expiration_date in filtered:
+        print(ticker, expiration_date, "...")
         await test(ticker, expiration_date)     
 
 if __name__ == "__main__":
     #HPE: bad
-    #SOFI: good
     #APLD: good (1/15/2027)
     #HIMS: good
     #CHWY: mid
@@ -126,16 +146,52 @@ if __name__ == "__main__":
     #BAC bad
     # SLV bad
     # Path mid
-    # GRAB, 2027-01-15, max guaranteed annualized 
-    # FUBO, 2027-01-15, max guaranteed annualized profit: 22.69
-    # AMC, 2027-01-15, max guaranteed annualized profit: 31.09
+    # CPNG mid (14)
+    # ONON bad
+    # NVO bad
+    # BROS bad
+    # SIRI bad
+    # KHC bad
+    # BB mid (18)
+    # HIVE bad
+    # JBLUE good
+    # AEO bad
+    # BEKE bad
+    # JOBY bad
+
+    #GRAB 2027-01-15 ...Kp=5.5, Kc=10.0, max profit = 417, max loss = -33, Min ROI: -4.58%, Max ROI: 54.31%, r-to-r=12.6, BE=5.83, BE_drift = 2.5%
+    #GRAB Kp=5.5, Kc=12.0, max profit = 600, max loss = -51, Min ROI: -6.82%, Max ROI: 74.47%, r-to-r=11.9, BE=6.0, BE_drift = 4.9%
+
+    #GRAB, FUBO, AMC all have choices.
+    #APLD has some expiring in 4/2026 that look good.
+    # Kp=32.0, Kc=42.0, max profit = 854, max loss = -146, Min ROI: -8.58%, Max ROI: 58.2%, r-to-r=5.9, BE=33.45, BE_drift = -5.9%
+    # NCLH bad
+    # WRBY bad
+    # SIRI bad
+    # XPEV: 2027-01-15
+    # UUUU: 2026-06-18, 2027-01-15
+    # NLY 2026-04-17
+    # RIOT multilple dates.  Best in 2026-05-15
+    # MARA multiple. 
+    # RUN: 2027-01-15
+    # CAN: good
+    # NB: good
+    # DPRO: no
+    # PATH: yes
+    # ETH: yes
+    # XRT: yes
+    # ETHA: yes
+    # IE: NO
+    #AES: Yes
+    # WBD: Yes
+    #KHC: in buffet's portfolio. yes. But headed downhil.
+    tickers = ["META", "AMZN", "AAPL"]
+    for ticker in tickers:
+         asyncio.run(find_best_leap(ticker))
     
-    # profit: 27.02
-    # tickers = ["PATH", "FUBO", "SLV", "OPEN", "AMC"]
-    # for ticker in tickers:
-    #     asyncio.run(find_best_leap(ticker))
-    # */
     
     #Run this for more details on a single idea
-    #asyncio.run(test("AMC", '2027-01-15', True))
+    #asyncio.run(test("JBLU", '2028-01-21', True))
+    # asyncio.run(test("APLD", '2027-01-15', True))
+ 
  
