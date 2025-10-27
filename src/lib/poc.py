@@ -1,6 +1,12 @@
 import awswrangler as wr
 import pandas as pd
+import uuid
 from data.Leg import Leg, Strategy, Direction, OptionType
+from typing import Iterable, Optional
+import datetime
+from condor_tools import condor_study, evaluate_condor
+import numpy as np
+
 
 # -----------------------------
 # Athena / Catalog configuration
@@ -10,8 +16,67 @@ WORKGROUP = "dev-v3"                                               # Athena engi
 S3_OUTPUT = "s3://athena-919061006621/"                            # WG output location (safe to keep)
 DB        = "silver"
 TABLE     = "options_daily_v2"                                     # referenced as silver.options_daily_v2
-
+TMP_S3_PREFIX = "s3://athena-919061006621/tmp_targets/" 
 CONTRACT_MULTIPLIER = 100
+GLUE_CATALOG = "AwsDataCatalog"  # Glue Data Catalog name
+S3TABLES_CATALOG = CATALOG       # your existing "awsdatacatalog/..." string
+
+
+
+
+
+
+def _compute_condor_capital_for_group(group: pd.DataFrame, net_entry_premium_total: float) -> float:
+    """
+    Compute total capital (max loss) for a short iron condor within a single
+    (entry_date, expiry) group from `merged`.
+
+    Returns NaN if the group is not a recognizable 4-leg condor.
+    """
+    # Identify legs
+    sc = group[(group["leg_type"] == "CALL") & (group["leg_direction"] == "SELL")]
+    lc = group[(group["leg_type"] == "CALL") & (group["leg_direction"] == "BUY")]
+    sp = group[(group["leg_type"] == "PUT")  & (group["leg_direction"] == "SELL")]
+    lp = group[(group["leg_type"] == "PUT")  & (group["leg_direction"] == "BUY")]
+
+    # Must have at least one of each side to qualify as a condor
+    if sc.empty or lc.empty or sp.empty or lp.empty:
+        return float("nan")
+
+    # If multiple rows per side (rare here), take the 1st by convention
+    # (you can make this smarter to match by quantity if needed)
+    sc_strike = float(sc.iloc[0]["strike"])
+    lc_strike = float(lc.iloc[0]["strike"])
+    sp_strike = float(sp.iloc[0]["strike"])
+    lp_strike = float(lp.iloc[0]["strike"])
+
+    # Wing widths (should be positive)
+    width_call = max(0.0, lc_strike - sc_strike)
+    width_put  = max(0.0, sp_strike - lp_strike)
+
+    if width_call == 0.0 and width_put == 0.0:
+        return float("nan")
+
+    # Spreads count: minimum quantity across the 4 defining legs
+    sc_qty = int(sc.iloc[0]["leg_quantity"])
+    lc_qty = int(lc.iloc[0]["leg_quantity"])
+    sp_qty = int(sp.iloc[0]["leg_quantity"])
+    lp_qty = int(lp.iloc[0]["leg_quantity"])
+    spreads_count = min(sc_qty, lc_qty, sp_qty, lp_qty)
+    if spreads_count <= 0:
+        return float("nan")
+
+    # Total credit received is -net_entry_premium_total (your premium is signed & includes *100*qty)
+    credit_total = -float(net_entry_premium_total)
+
+    # Capital = max(wing width) * 100 * spreads_count - total credit
+    max_wing_total = max(width_call, width_put) * CONTRACT_MULTIPLIER * spreads_count
+    capital_total = max_wing_total - credit_total
+
+    # Capital cannot be negative (guard for edge rounding)
+    return max(capital_total, 0.0)
+
+
 
 def athena(sql: str) -> pd.DataFrame:
     """Single path for all Athena queries against the S3 Tables catalog."""
@@ -24,136 +89,24 @@ def athena(sql: str) -> pd.DataFrame:
         ctas_approach=False    # REQUIRED when data_source != AwsDataCatalog
     )
 
-# ---------------------------------------
-# Strategy/Leg resolution and data fetches
-# ---------------------------------------
-def query_entries_range_for_strategy(
-    ts_start: str,
-    ts_end: str,
-    ticker: str,
-    strategy: "Strategy",
-    mode: str = "nearest",
-    require_all_legs: bool = True,
-) -> pd.DataFrame:
-    """
-    Resolve each leg to a concrete contract per day in [ts_start, ts_end).
-    If require_all_legs=True, keep only entry_dates present for ALL legs.
-    """
-    per_leg = []
-    for idx, leg in enumerate(strategy.legs):
-        df_leg = query_entries_range_for_leg(
-            ts_start=ts_start,
-            ts_end=ts_end,
-            ticker=ticker,
-            leg=leg,
-            mode=mode,
-        ).copy()
-        df_leg["leg_index"]     = idx
-        df_leg["leg_direction"] = leg.direction.name
-        df_leg["leg_type"]      = leg.opt_type.name
-        df_leg["leg_quantity"]  = leg.quantity
-        df_leg["target_delta"]  = float(leg.strike_delta) / 100.0
-        df_leg["target_dte"]    = int(leg.dte)
-        per_leg.append(df_leg)
-
-    if not per_leg:
-        return pd.DataFrame()
-
-    tidy = pd.concat(per_leg, ignore_index=True)
-
-    if require_all_legs:
-        needed = set(range(len(strategy.legs)))
-        dates_ok = tidy.groupby("entry_date")["leg_index"].apply(lambda s: set(s.unique()) == needed)
-        common_dates = set(dates_ok[dates_ok].index)
-        tidy = tidy[tidy["entry_date"].isin(common_dates)].copy()
-
-    tidy.sort_values(["entry_date", "leg_index", "expiry", "strike"], inplace=True)
-    tidy.reset_index(drop=True, inplace=True)
-    return tidy
+# def _normalize_weekdays(entry_weekdays: Optional[Iterable]) -> Optional[set[int]]:
+#     """
+#     Accepts integers (0=Mon..6=Sun) and/or strings like 'WED', 'Fri'.
+#     Returns a normalized set of ints or None.
+#     """
+#     if entry_weekdays is None:
+#         return None
+#     out = set()
+#     for w in entry_weekdays:
+#         if isinstance(w, int):
+#             out.add(int(w) % 7)
+#         elif isinstance(w, str):
+#             out.add(WEEKDAY_ALIASES[w.strip().upper()[:3]])
+#         else:
+#             raise ValueError(f"Unsupported weekday spec: {w!r}")
+#     return out
 
 
-def query_entries_range_for_leg(
-    ts_start: str,
-    ts_end: str,
-    ticker: str,
-    leg: "Leg",
-    mode: str = "nearest",
-) -> pd.DataFrame:
-    """
-    Resolve one Leg (delta + DTE) into concrete contracts across [ts_start, ts_end).
-    """
-    cp = "C" if leg.opt_type.name == "CALL" else "P"
-    delta_mag = float(leg.strike_delta) / 100.0
-    delta_target = delta_mag if cp == "C" else -delta_mag
-    horizon_days = int(leg.dte)
-
-    base_where = f"""
-      o.ticker = '{ticker}'
-      AND o.cp = '{cp}'
-      AND o.trade_date >= TIMESTAMP '{ts_start} 00:00:00'
-      AND o.trade_Date <=  TIMESTAMP '{ts_end} 00:00:00'
-    """
-
-    if mode == "exact":
-        expiry_clause = f"o.expiry = date_add('day', {horizon_days}, o.trade_date)"
-        order = "ORDER BY ABS(delta - {delta_target}), strike"
-        select_extra = ""
-    elif mode == "next_on_or_after":
-        expiry_clause = f"o.expiry >= date_add('day', {horizon_days}, o.trade_date)"
-        order = "ORDER BY o.expiry, ABS(delta - {delta_target}), strike"
-        select_extra = ""
-    else:  # nearest
-        expiry_clause = None
-        order = "ORDER BY expiry_diff, ABS(delta - {delta_target}), strike"
-        select_extra = (
-            f", ABS(date_diff('day', o.expiry, date_add('day', {horizon_days}, o.trade_date))) AS expiry_diff"
-        )
-
-    sql = f"""
-    WITH cand AS (
-      SELECT
-          o.trade_date AS entry_date,
-          o.expiry,
-          o.ticker,
-          o.cp,
-          o.strike,
-          o.delta,
-          (o.bid + o.ask) / 2 AS entry_last
-          {select_extra}
-      FROM "{DB}"."{TABLE}" o
-      WHERE {base_where}
-      {" AND " + expiry_clause if expiry_clause else ""}
-    ),
-    ranked AS (
-      SELECT
-          *,
-          ROW_NUMBER() OVER (
-            PARTITION BY entry_date
-            {order.format(delta_target=delta_target)}
-          ) AS rn
-      FROM cand
-    )
-    SELECT entry_date, expiry, ticker, cp, strike, delta, entry_last
-    FROM ranked
-    WHERE rn = 1
-    ORDER BY entry_date;
-    """
-
-    df = athena(sql)
-
-    # Normalize dates
-    for col in ("entry_date", "expiry"):
-        if col in df:
-            df[col] = pd.to_datetime(df[col]).dt.date
-
-    # traceability
-    df["leg_direction"] = leg.direction.name
-    df["leg_type"] = leg.opt_type.name
-    df["leg_quantity"] = leg.quantity
-    df["target_delta"] = delta_target
-    df["target_dte"] = horizon_days
-
-    return df
 
 
 def fetch_option_paths(df_entry: pd.DataFrame) -> pd.DataFrame:
@@ -286,7 +239,7 @@ def summarize_hold_to_maturity_strategy(paths_long: pd.DataFrame) -> pd.DataFram
     )
 
     outlay = summary["net_entry_premium"].replace(0, pd.NA)
-    summary["roc_like_metric"] = (summary["portfolio_pnl"] / outlay).astype(float)
+    summary["roc_like_metric"] = (summary["portfolio_pnl"] / (outlay)).astype(float)
 
     total_pnl = summary["portfolio_pnl"].sum()
     total_investment = summary["net_entry_premium"].sum()
@@ -295,6 +248,12 @@ def summarize_hold_to_maturity_strategy(paths_long: pd.DataFrame) -> pd.DataFram
     print(f"Total PnL: {total_pnl}")
     print(f"ROC: {roc}")
     return summary
+
+
+
+
+
+
 
 
 def summarize_hold_to_maturity(df_paths: pd.DataFrame) -> pd.DataFrame:
@@ -319,6 +278,9 @@ def summarize_hold_to_maturity(df_paths: pd.DataFrame) -> pd.DataFrame:
     print(f"Total Investment: {total_investment}")
     print(f"Total PnL: {total_pnl}")
     print(f"ROC: {roc}")
+
+
+
     return out
 
 
@@ -334,23 +296,81 @@ if __name__ == "__main__":
     #     Leg(direction=Direction.BUY,  opt_type=OptionType.CALL,  quantity=1, strike_delta=5.0,  dte=45),
     # ])
 
-    strat = Strategy(legs=[
-        Leg(direction=Direction.SELL,  opt_type=OptionType.CALL,  quantity=1, strike_delta=25.0, dte=30),
-        Leg(direction=Direction.SELL,  opt_type=OptionType.PUT,  quantity=1, strike_delta=25.0, dte=30),
+
+    short_straddle = Strategy(legs=[
+        Leg(direction=Direction.SELL,  opt_type=OptionType.CALL,  quantity=1, strike_delta=50, dte=30),
+        Leg(direction=Direction.SELL,  opt_type=OptionType.PUT,  quantity=1, strike_delta=50, dte=30),
+    ])
+    
+    calendar = Strategy(legs=[
+        Leg(direction=Direction.SELL,  opt_type=OptionType.CALL,  quantity=1, strike_delta=50, dte=30),
+        Leg(direction=Direction.BUY,  opt_type=OptionType.CALL,  quantity=1, strike_delta=50, dte=45),
     ])
 
-    entries = query_entries_range_for_strategy(
-        ts_start="2014-01-01",
-        ts_end="2026-01-31",
-        ticker="UVXY",
-        strategy=strat,
-        mode="nearest",
-        require_all_legs=True,
-    )
-    print(entries.head())
+    double_calendar = Strategy(legs=[
+        Leg(direction=Direction.SELL,  opt_type=OptionType.CALL,  quantity=1, strike_delta=62, dte=10),
+        Leg(direction=Direction.BUY,  opt_type=OptionType.CALL,  quantity=1, strike_delta=62, dte=17),
+        Leg(direction=Direction.SELL,  opt_type=OptionType.PUT,  quantity=1, strike_delta=33, dte=10),
+        Leg(direction=Direction.BUY,  opt_type=OptionType.PUT,  quantity=1, strike_delta=33, dte=17),
+    ])
 
-    paths = fetch_option_paths_for_strategy_entries(entries)
-    print(paths.head())
 
-    portfolio = summarize_hold_to_maturity_strategy(paths)
-    print(portfolio)
+    #Evaluate different condor strike structures for a ticker.
+    # condor_study("IBIT")
+
+    #Evaluate a single condor
+    evaluate_condor("IBIT", 25, 5)
+
+    #condor = Strategy(legs=[
+    #         Leg(direction=Direction.SELL,  opt_type=OptionType.CALL,  quantity=1, strike_delta=shoulder, dte=30),
+    #         Leg(direction=Direction.SELL,  opt_type=OptionType.PUT,  quantity=1, strike_delta=shoulder, dte=30),
+    #         Leg(direction=Direction.BUY,  opt_type=OptionType.CALL,  quantity=1, strike_delta=wing, dte=30),
+    #         Leg(direction=Direction.BUY,  opt_type=OptionType.PUT,  quantity=1, strike_delta=wing, dte=30),
+    #      ])
+
+    # results = []
+
+    # for i in range(1,2):
+    #     for j in range(5, 6):
+    #         wing = 5*i
+    #         shoulder = 5*j
+    #         condor = Strategy(legs=[
+    #         Leg(direction=Direction.SELL,  opt_type=OptionType.CALL,  quantity=1, strike_delta=shoulder, dte=30),
+    #         Leg(direction=Direction.SELL,  opt_type=OptionType.PUT,  quantity=1, strike_delta=shoulder, dte=30),
+    #         Leg(direction=Direction.BUY,  opt_type=OptionType.CALL,  quantity=1, strike_delta=wing, dte=30),
+    #         Leg(direction=Direction.BUY,  opt_type=OptionType.PUT,  quantity=1, strike_delta=wing, dte=30),
+    #      ])
+
+        
+    #         entries = query_entries_range_for_strategy(
+    #         ts_start="2022-12-15",
+    #         ts_end="2026-03-16",
+    #         ticker="IBIT",
+    #         strategy=condor,
+    #         mode="nearest",
+    #         require_all_legs=True,
+    #         entry_weekdays={"WED"}
+    #         )
+    #         print("")
+    #         print(f"wing={wing}, shoulder={shoulder}")
+    #         summary_json = summarize_hold_to_maturity_strategy_from_entries(entries) #Use this for straddles/strangles
+    #         summary_json["wing"]=wing
+    #         summary_json["shoulder"]=shoulder
+    #         results.append(summary_json)
+    # print(results)
+
+    
+
+    # df = pd.DataFrame(results, columns=["shoulder", "wing", "roc", "win_rate"])
+    # df.to_csv("condor.csv", index=False)
+
+    # for result in results:
+    #     print(result)
+    
+    #cal_summary = summarize_calendar_exit_on_near_expiry(entries)
+    #summarize_exit_on_earliest_expiry(entries) # use this for double calendars
+    # paths = fetch_option_paths_for_strategy_entries(entries)
+    # print(paths.head())
+
+    # portfolio = summarize_hold_to_maturity_strategy(paths)
+    # print(portfolio)

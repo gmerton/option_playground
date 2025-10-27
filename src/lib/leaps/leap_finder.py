@@ -1,11 +1,13 @@
 import os, asyncio
-import aiohttp
-from typing import List, Dict, Any, Optional
 from datetime import datetime, date
 from lib.commons.list_contracts import list_contracts_for_expiry
 from lib.commons.get_underlying_price import get_underlying_price
 from lib.commons.list_expirations import list_expirations
 from dateutil.relativedelta import relativedelta
+
+
+# This module identifies opportunities for LEAP collar plays: long 100 shares, a protective ATM put, and a covered call.
+# Been finding the LT skew column in oquants to be useful in pre-screening.
 
 TRADIER_API_KEY = os.getenv("TRADIER_API_KEY")
 TRADIER_ENDPOINT = "https://api.tradier.com/v1"
@@ -36,6 +38,9 @@ def find_call(spot, contracts, atm_put_contract):
      
         if min_profit >=0:
            eligible.append((call_mid,c))
+    
+    if not eligible:
+        return None
     call =  min(
         eligible,
         key = lambda x:x[0]
@@ -46,14 +51,17 @@ def find_call(spot, contracts, atm_put_contract):
 
 
 
-async def test(ticker, expiry, verbose = False):
+async def analyze(ticker, expiry, spot, verbose = False):
     
     dte = ((datetime.strptime(expiry, "%Y-%m-%d")).date() - date.today()).days
-    spot = await get_underlying_price(ticker)
+    
+    #spot = await get_underlying_price(ticker)
+    #spot = 15.28
     contracts = await list_contracts_for_expiry(ticker, expiry)
     if verbose:
         print(f"underlying spot={round(spot,2)}")
     tie_breaker = "higher"
+    
     
     put_contracts = [c for c in contracts if c.get("option_type").lower() == "put"]
     call_contracts = [c for c in contracts if c.get("option_type").lower() == "call"]
@@ -71,6 +79,8 @@ async def test(ticker, expiry, verbose = False):
     put_bid, put_ask = atm_put_contract["bid"], atm_put_contract["ask"]
     put_mid = (put_bid + put_ask) /2
     breakeven_call_contract = find_call(spot, contracts, atm_put_contract)
+    if breakeven_call_contract is None:
+        return
     breakeven_call_contract_strike = breakeven_call_contract["strike"]
     atm_put_contract_strike = atm_put_contract["strike"]
 
@@ -85,13 +95,20 @@ async def test(ticker, expiry, verbose = False):
             if put_contract["strike"] > atm_put_contract_strike:
                 continue
             # profitability(ticker, spot, breakeven_call_contract, atm_put_contract, dte)
-            profitability( spot, call_contract, put_contract, dte)
+            profitability(spot, call_contract, put_contract, dte, verbose)
 
 
-    
-    
+MAX_ANNUALIZED_BE_DRIFT = 8
+MIN_ANNUALIZED_MAX_RETURN =  50.0
+MIN_ANNUALIZED_MIN_RETURN = -15
+MIN_REWARD_TO_RISK = 3
 
-def profitability(spot, call_contract, put_contract, dte):
+# MAX_ANNUALIZED_BE_DRIFT = 30
+# MIN_ANNUALIZED_MAX_RETURN =  0
+# MIN_ANNUALIZED_MIN_RETURN = 0
+# MIN_REWARD_TO_RISK = 0
+
+def profitability(spot, call_contract, put_contract, dte, verbose = False):
     # strikes
     Kc = float(call_contract["strike"])
     Kp = float(put_contract["strike"])
@@ -118,12 +135,15 @@ def profitability(spot, call_contract, put_contract, dte):
     term_BE_drift = (breakeven - spot) / spot
     annualized_BE_drift =100*((1+term_BE_drift) ** (365/dte) - 1)
 
-    if annualized_BE_drift < 8 and annualized_max_return > 50.0 and annualized_min_return > -15 and reward_to_risk > 3:
+    #if 1> 0:
+    if annualized_BE_drift < MAX_ANNUALIZED_BE_DRIFT and annualized_max_return > MIN_ANNUALIZED_MAX_RETURN and annualized_min_return > MIN_ANNUALIZED_MIN_RETURN and (reward_to_risk >  MIN_REWARD_TO_RISK or reward_to_risk < 0):
+        
         print(f"Kp={Kp}, Kc={Kc}, max profit = {round(max_profit)}, max loss = {round(min_profit)}, Min ROI: {annualized_min_return}%, Max ROI: {annualized_max_return}%, r-to-r={reward_to_risk}, BE={breakeven}, BE_drift = {round(annualized_BE_drift,1)}%")
+        if verbose:
+            print(f"call price = {call_mid}, put price = {put_mid}")
         
 
- # Retrieve a list of exps 6 months or more in the future.
-async def find_best_leap(ticker):
+async def find_valid_expirations(ticker):
     unfiltered_exps = await list_expirations(ticker)
     today =date.today()
     six_months_later = today + relativedelta(months=5)
@@ -131,9 +151,20 @@ async def find_best_leap(ticker):
         d for d in unfiltered_exps
         if datetime.strptime(d, "%Y-%m-%d").date() >= six_months_later
     ]
+    return filtered
+ # Retrieve a list of exps 6 months or more in the future.
+async def find_best_leap(ticker, spot = None, verbose=False):
+    if spot == None:
+        spot = await get_underlying_price(ticker)
+        if spot is None:
+            print(f"Can't find spot for {ticker}")
+            return
+    print(f"{ticker} spot={round(spot,2)}")
+    
+    filtered = await find_valid_expirations(ticker)
     for expiration_date in filtered:
         print(ticker, expiration_date, "...")
-        await test(ticker, expiration_date)     
+        await analyze(ticker, expiration_date, spot, verbose)     
 
 if __name__ == "__main__":
     #HPE: bad
@@ -184,10 +215,16 @@ if __name__ == "__main__":
     # IE: NO
     #AES: Yes
     # WBD: Yes
-    #KHC: in buffet's portfolio. yes. But headed downhil.
-    tickers = ["META", "AMZN", "AAPL"]
+    #KHC: in buffet's portfolio. yes. But headed downhill.
+    # QSI no
+    # BTBT yes: has some nice ones due in May
+    tickers = ["FUBO", "APLD"]
     for ticker in tickers:
-         asyncio.run(find_best_leap(ticker))
+         # spot = 15.28
+         spot = None
+         asyncio.run(find_best_leap(ticker, spot, verbose=False))
+         #asyncio.run(test("CMPO", '2026-03-20', True))
+    
     
     
     #Run this for more details on a single idea
