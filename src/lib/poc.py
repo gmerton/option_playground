@@ -4,7 +4,7 @@ import uuid
 from data.Leg import Leg, Strategy, Direction, OptionType
 from typing import Iterable, Optional
 import datetime
-from condor_tools import condor_study, evaluate_condor
+from condor_tools import condor_study, evaluate_symmetric_condor, evaluate_condor
 import numpy as np
 
 
@@ -314,12 +314,21 @@ if __name__ == "__main__":
         Leg(direction=Direction.BUY,  opt_type=OptionType.PUT,  quantity=1, strike_delta=33, dte=17),
     ])
 
+    condor = Strategy(legs=[
+            Leg(direction=Direction.SELL,  opt_type=OptionType.CALL,  quantity=1, strike_delta=25, dte=30),
+            Leg(direction=Direction.SELL,  opt_type=OptionType.PUT,  quantity=1, strike_delta=20, dte=30),
+            Leg(direction=Direction.BUY,  opt_type=OptionType.CALL,  quantity=1, strike_delta=10, dte=30),
+            Leg(direction=Direction.BUY,  opt_type=OptionType.PUT,  quantity=1, strike_delta=10, dte=30),
+         ])
+    
+    
+    #evaluate_condor("UVXY", condor)
 
     #Evaluate different condor strike structures for a ticker.
-    # condor_study("IBIT")
+    condor_study("IBIT")
 
     #Evaluate a single condor
-    evaluate_condor("IBIT", 25, 5)
+    #evaluate_symmetric_condor("UVXY", 25, 5)
 
     #condor = Strategy(legs=[
     #         Leg(direction=Direction.SELL,  opt_type=OptionType.CALL,  quantity=1, strike_delta=shoulder, dte=30),

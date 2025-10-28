@@ -199,7 +199,8 @@ def summarize_hold_to_maturity_strategy_from_entries(tidy_entries: pd.DataFrame)
     merged["entry_premium_signed"] = (
         merged["entry_last"] * CONTRACT_MULTIPLIER * merged["leg_quantity"] * sign
     )
-
+    print("merged")
+    print(merged)
     # ---- EARLY FILTER: drop groups with net_entry_premium ≈ 0 or NaN ----
     EPS = 1e-9
     nep_by_group = (

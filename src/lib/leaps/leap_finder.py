@@ -218,7 +218,7 @@ if __name__ == "__main__":
     #KHC: in buffet's portfolio. yes. But headed downhill.
     # QSI no
     # BTBT yes: has some nice ones due in May
-    tickers = ["FUBO", "APLD"]
+    tickers = ["DPRO", "WU"]
     for ticker in tickers:
          # spot = 15.28
          spot = None

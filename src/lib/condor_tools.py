@@ -4,7 +4,24 @@ from option_strat import query_entries_range_for_strategy, summarize_hold_to_mat
 
 
 
-def evaluate_condor(ticker, shoulder, wing):
+def evaluate_condor(ticker, condor):
+    entries = query_entries_range_for_strategy(
+            ts_start="2025-07-01",
+            ts_end="2026-03-16",
+            ticker=ticker,
+            strategy=condor,
+            mode="nearest",
+            require_all_legs=True,
+            entry_weekdays={"WED"}
+        )
+    print("")
+    # print(f"wing={wing}, shoulder={shoulder}")
+    summary_json = summarize_hold_to_maturity_strategy_from_entries(entries) #Use this for straddles/strangles
+    # summary_json["wing"]=wing
+    #summary_json["shoulder"]=shoulder
+    print(summary_json)
+
+def evaluate_symmetric_condor(ticker, shoulder, wing):
     condor = Strategy(legs=[
             Leg(direction=Direction.SELL,  opt_type=OptionType.CALL,  quantity=1, strike_delta=shoulder, dte=30),
             Leg(direction=Direction.SELL,  opt_type=OptionType.PUT,  quantity=1, strike_delta=shoulder, dte=30),
@@ -12,7 +29,7 @@ def evaluate_condor(ticker, shoulder, wing):
             Leg(direction=Direction.BUY,  opt_type=OptionType.PUT,  quantity=1, strike_delta=wing, dte=30),
          ])
     entries = query_entries_range_for_strategy(
-            ts_start="2022-12-15",
+            ts_start="2025-07-01",
             ts_end="2026-03-16",
             ticker=ticker,
             strategy=condor,
@@ -42,13 +59,13 @@ def condor_study(ticker):
 
         
             entries = query_entries_range_for_strategy(
-            ts_start="2022-12-15",
+            ts_start="2020-12-15",
             ts_end="2026-03-16",
             ticker=ticker,
             strategy=condor,
             mode="nearest",
             require_all_legs=True,
-            entry_weekdays={"WED"}
+            entry_weekdays={"FRI"}
             )
             print("")
             print(f"wing={wing}, shoulder={shoulder}")
