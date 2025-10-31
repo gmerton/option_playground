@@ -3,6 +3,7 @@ import pandas as pd
 import awswrangler as wr
 from constants import GLUE_CATALOG, S3TABLES_CATALOG, TABLE, TMP_S3_PREFIX
 import uuid
+from data import Leg
 
 def athena(sql: str) -> pd.DataFrame:
     """Single path for all Athena queries against the S3 Tables catalog."""
@@ -167,11 +168,70 @@ def _create_temp_targets_table(df: pd.DataFrame, database: str) -> tuple[str, st
     )
     return table_name, s3_path
 
+def step2Sql(ticker:str, ts_start:str, ts_end:str):
+    return f"""SELECT X.ticker, X.entry_date, X.expiry, X.cp, X.strike, X.delta, entry_price_mid, exit_price_mid 
+        FROM temp2 X inner join
+    (SELECT ticker, expiry,cp, strike, trade_date, round((bid + ask)/2,3) as exit_price_mid FROM options_daily_v2 
+        WHERE ticker = '{ticker}' AND trade_date >= TIMESTAMP '{ts_start} 00:00:00'
+    AND  trade_date <= TIMESTAMP '{ts_end} 00:00:00' and trade_date = expiry) as Y
+    ON X.ticker = Y.ticker and X.expiry = Y.expiry and X.cp = Y.cp and X.strike = Y.strike
+    """
+    
+
+def step1Sql(ticker:str, ts_start:str, ts_end: str, dte:int):
+    return f"""CREATE TABLE silver.temp2 as
+    WITH cand AS (
+        SELECT
+            o.trade_date AS entry_date,
+            o.expiry,
+            o.ticker,
+            o.cp,
+            o.strike,
+            o.delta,
+            ROUND((o.bid + o.ask) / 2, 3) AS entry_price_mid,
+            ABS(date_diff('day', o.expiry, date_add('day', {dte}, o.trade_date))) AS expiry_diff
+    FROM "silver"."options_daily_v2" o
+    WHERE o.ticker = '{ticker}'
+        AND o.trade_date >= TIMESTAMP '{ts_start} 00:00:00'
+        AND o.trade_date <= TIMESTAMP '{ts_end} 00:00:00'
+        ),
+    ranked AS (
+    SELECT
+      *,
+      ROW_NUMBER() OVER (
+        PARTITION BY entry_date, cp, strike
+        ORDER BY expiry_diff, expiry  -- tie-breaker on earlier expiry if equally close
+      ) AS rn
+    FROM cand
+        )
+    SELECT entry_date, expiry, ticker, cp, strike, delta, entry_price_mid
+    FROM ranked
+    WHERE rn = 1
+    ORDER BY entry_date, cp, strike;
+        """
+
+
+def query_ticker(
+    ts_start: str,
+    ts_end: str,
+    ticker: str, 
+    dte:int
+    ):
+    athena("DROP TABLE IF EXISTS temp2")
+    sql1 = step1Sql(ticker, ts_start, ts_end, dte)
+    print(sql1)
+    athena(step1Sql(ticker, ts_start, ts_end, dte))
+    df = athena(step2Sql(ticker, ts_start, ts_end))
+    athena("DROP TABLE IF EXISTS temp2")
+    return df
+    
+
+
 def query_entries_range_for_leg(
     ts_start: str,
     ts_end: str,
     ticker: str,
-    leg: "Leg",
+    leg: Leg,
     mode: str = "nearest",
 ) -> pd.DataFrame:
     """
@@ -233,6 +293,7 @@ def query_entries_range_for_leg(
     WHERE rn = 1
     ORDER BY entry_date;
     """
+    print(sql)
 
     df = athena(sql)
 

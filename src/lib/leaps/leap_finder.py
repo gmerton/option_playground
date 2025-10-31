@@ -9,13 +9,6 @@ from dateutil.relativedelta import relativedelta
 # This module identifies opportunities for LEAP collar plays: long 100 shares, a protective ATM put, and a covered call.
 # Been finding the LT skew column in oquants to be useful in pre-screening.
 
-TRADIER_API_KEY = os.getenv("TRADIER_API_KEY")
-TRADIER_ENDPOINT = "https://api.tradier.com/v1"
-TRADIER_REQUEST_HEADERS = {
-    "Authorization": f"Bearer {TRADIER_API_KEY}", 
-    "Accept": "application/json"
-}
-
 
 def find_call(spot, contracts, atm_put_contract):
     put_bid, put_ask = atm_put_contract["bid"], atm_put_contract["ask"]
@@ -100,7 +93,7 @@ async def analyze(ticker, expiry, spot, verbose = False):
 
 MAX_ANNUALIZED_BE_DRIFT = 8
 MIN_ANNUALIZED_MAX_RETURN =  50.0
-MIN_ANNUALIZED_MIN_RETURN = -15
+MIN_ANNUALIZED_MIN_RETURN = -12
 MIN_REWARD_TO_RISK = 3
 
 # MAX_ANNUALIZED_BE_DRIFT = 30
@@ -218,7 +211,63 @@ if __name__ == "__main__":
     #KHC: in buffet's portfolio. yes. But headed downhill.
     # QSI no
     # BTBT yes: has some nice ones due in May
-    tickers = ["DPRO", "WU"]
+    #tickers = [ "NB",  "ETH", "XRT", "ETHA", "AES", "WBD",  "HIMS", "CMG", "GRAB", "FUBO", "APLD", "XPEV", "UUUU",   "MARA"]
+    
+    ravish_list = ["AVGO",
+"NVDA",
+"GS",
+"COST",
+"META",
+"BIDU",
+"JPM",
+"CRWD",
+"PLTR",
+"LULU",
+"MSFT",
+"TSLA",
+"APP",
+"WMT",
+"TSM",
+"ADBE",
+"CAT",
+"SNOW",
+"COIN",
+"NFLX",
+"CRWV",
+"PANW",
+"ARM",
+"ASML",
+"XYZ",
+"MU",
+"SOFI",
+"DELL",
+"MS",
+"JNJ",
+"BAC",
+"UBER",
+"CHWY",
+"CVNA",
+"SGOV",
+"GE",
+"TGT",
+"C",
+"WFC",
+"AMD",
+"HPE",
+"CMG",
+"APLD",
+"OXY",
+"HD",
+"QQQ",
+"PEP",
+"HIM",
+"CRCL",
+"FIG",
+"SMCI",
+"GTLB",
+"DG",
+"CRM"]
+    tickers = ravish_list
     for ticker in tickers:
          # spot = 15.28
          spot = None

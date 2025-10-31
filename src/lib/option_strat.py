@@ -2,10 +2,46 @@ import pandas as pd
 import awswrangler as wr
 import uuid
 from typing import Iterable, Optional
-from constants import TMP_S3_PREFIX, DB, CONTRACT_MULTIPLIER, WEEKDAY_ALIASES
-from athena_lib import athena, query_entries_range_for_leg, fetch_expiry_quotes, fetch_quotes_at_exit
+from constants import CONTRACT_MULTIPLIER, WEEKDAY_ALIASES
+from athena_lib import athena, query_entries_range_for_leg, fetch_expiry_quotes, fetch_quotes_at_exit, query_ticker
+from data import Leg
 
 
+def retrieve_study_data(ts_start: str,
+    ts_end: str,ticker:str, entry_weekdays:Optional[Iterable] = None):
+    raw_df = query_ticker(ts_start, ts_end,ticker,30)
+    print(raw_df.head())
+    wd_filter = _normalize_weekdays(entry_weekdays) #set of ints representing days
+ 
+    
+    # print(raw_df.head())
+    raw_df["entry_date"] = pd.to_datetime(raw_df["entry_date"], errors="coerce")
+    raw_df["expiry"] = pd.to_datetime(raw_df["expiry"], errors = "coerce")
+    raw_df["entry_date"] = raw_df["entry_date"].dt.normalize()
+    raw_df["expiry"]  = raw_df["expiry"].dt.normalize()
+    # df_with_exit_price = raw_df.merge(
+    #     raw_df[["cp", "strike", "entry_date", "entry_price_mid"]]
+    #         .rename(columns={"entry_date": "expiry", "entry_price_mid": "exit_price_mid"}),
+    #         on=["cp", "strike", "expiry"],
+    #         how="left"
+    # )  
+
+    # print(df_with_exit_price.head())
+    # print(df_with_exit_price.dtypes)
+    # df_check = df_with_exit_price[df_with_exit_price["entry_date"] == pd.Timestamp('2025-01-10')]
+
+    # print("df_check:")
+    # print(df_check.head())
+    #    Include only selected weekdays as entry points
+    
+    print(f"prefiltered size = {len(raw_df)}")
+    if wd_filter:
+        wd = pd.to_datetime(raw_df["entry_date"]).dt.weekday
+        df_filtered = raw_df[wd.isin(wd_filter)].copy()
+        if df_filtered.empty:
+            return df_filtered  
+    print(f"filtered size = {len(df_filtered)}")
+    print(df_filtered.head())
 # ---------------------------------------
 # Strategy/Leg resolution and data fetches
 # Returns data by leg
@@ -14,7 +50,7 @@ def query_entries_range_for_strategy(
     ts_start: str,
     ts_end: str,
     ticker: str,
-    strategy: "Strategy",
+    strategy: Leg,
     mode: str = "nearest",
     require_all_legs: bool = True,
     entry_weekdays: Optional[Iterable] = None,  # NEW: e.g., {"WED"} or {2}
@@ -281,7 +317,7 @@ def summarize_hold_to_maturity_strategy_from_entries(tidy_entries: pd.DataFrame)
     print("summary 3")
     print(summary)
     output_df_csv = pd.DataFrame(summary, columns=["entry_date", "expiry", "portfolio_pnl", "net_entry_premium", "roc_like_metric", "capital" ])
-    output_df_csv.to_csv("output/condor_detail.csv", index=False)
+    # output_df_csv.to_csv("output/condor_detail.csv", index=False)
     # roc on capital (safe)
     def _safe_div(a, b):
         if pd.isna(b) or b == 0:

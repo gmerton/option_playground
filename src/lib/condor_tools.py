@@ -1,8 +1,8 @@
 from data.Leg import Leg, Strategy, Direction, OptionType
 import pandas as pd
 from option_strat import query_entries_range_for_strategy, summarize_hold_to_maturity_strategy_from_entries
-
-
+from datetime import datetime
+import os
 
 def evaluate_condor(ticker, condor):
     entries = query_entries_range_for_strategy(
@@ -46,7 +46,7 @@ def evaluate_symmetric_condor(ticker, shoulder, wing):
     
 def condor_study(ticker):
     results = []
-    for i in range(1,2):
+    for i in range(1,3):
         for j in range(5, 6):
             wing = 5*i
             shoulder = 5*j
@@ -58,7 +58,7 @@ def condor_study(ticker):
          ])
 
         
-            entries = query_entries_range_for_strategy(
+            entries = query_entries_range_for_strategy( 
             ts_start="2020-12-15",
             ts_end="2026-03-16",
             ticker=ticker,
@@ -76,6 +76,8 @@ def condor_study(ticker):
     print(results)
 
     
-
+    current_time = datetime.now().strftime("%Y%m%d%H%M%S")
     df = pd.DataFrame(results, columns=["shoulder", "wing", "roc", "win_rate"])
-    df.to_csv("condor.csv", index=False)
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    output_path = os.path.join(base_dir, "output", f"condor_study_{current_time}.csv")
+    df.to_csv(output_path, index=False)

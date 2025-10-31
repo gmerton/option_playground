@@ -22,3 +22,19 @@ def nearest_strike_contract(contracts, spot, cp):
     if not side:
         return None
     return min(side, key=lambda c: abs(c["strike"]-spot))
+
+# Suppose your list is named `option_chain`
+
+def find_nearest_delta_option(option_chain, target_delta):
+    # Filter out any options that are missing delta values
+    # valid_options = [opt for opt in option_chain if opt.get("greeks") and "delta" in opt["greeks"]]
+    # if not valid_options:
+    #     return None
+
+    
+    # Find the option whose delta is closest to the target_delta
+    return min(option_chain, key=lambda opt: abs(opt["greeks"]["delta"] - target_delta))
+
+# Example usage:
+# nearest_30_delta = find_nearest_delta_option(option_chain, 0.30)
+# print(nearest_30_delta)

@@ -6,7 +6,8 @@ from typing import Iterable, Optional
 import datetime
 from condor_tools import condor_study, evaluate_symmetric_condor, evaluate_condor
 import numpy as np
-
+from athena_lib import query_ticker
+from option_strat import retrieve_study_data
 
 # -----------------------------
 # Athena / Catalog configuration
@@ -322,10 +323,13 @@ if __name__ == "__main__":
          ])
     
     
-    #evaluate_condor("UVXY", condor)
+    # evaluate_condor("UVXY", condor)
 
     #Evaluate different condor strike structures for a ticker.
-    condor_study("IBIT")
+    #query_ticker("IBIT")
+    retrieve_study_data( ts_start="2022-12-15",
+             ts_end="2026-03-16",ticker="IBIT", entry_weekdays={"WED"})
+    #condor_study("IBIT")
 
     #Evaluate a single condor
     #evaluate_symmetric_condor("UVXY", 25, 5)
