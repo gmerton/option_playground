@@ -155,8 +155,10 @@ if __name__ == "__main__":
 "GTLB",
 "DG",
 "CRM"]
+
+    ff_list = ["FTNT", "FUBO", "CSIQ", "WYNN", "SNAP", "IRBT", "XPEV", "CELH", "AMKR", ]
     tickers = ["STZ", "SIRI"]
-    for ticker in tickers:
+    for ticker in ["TLT", "USO", "IBIT"]:
          asyncio.run(evaluate_credit_spread(ticker,0.3,0.15 ))
      
  

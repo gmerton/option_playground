@@ -54,9 +54,12 @@ async def list_contracts_for_expiry(
             resp.raise_for_status()
             data = await resp.json()
 
-        raw = (data or {}).get("options", {}).get("option")
-        if not raw:
+        if data is None:
             return []
+        # raw = (data or {}).get("options", {}).get("option")
+        raw = (((data or {}).get("options") or {}).get("option") or [])
+        if not raw or raw ==[]:
+            return None
 
         # Normalize to list
         options = raw if isinstance(raw, list) else [raw]

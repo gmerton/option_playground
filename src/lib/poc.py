@@ -327,9 +327,9 @@ if __name__ == "__main__":
 
     #Evaluate different condor strike structures for a ticker.
     #query_ticker("IBIT")
-    retrieve_study_data( ts_start="2022-12-15",
-             ts_end="2026-03-16",ticker="IBIT", entry_weekdays={"WED"})
-    #condor_study("IBIT")
+    # retrieve_study_data( ts_start="2022-12-15",
+    #          ts_end="2026-03-16",ticker="IBIT", entry_weekdays={"WED"})
+    condor_study("IBIT")
 
     #Evaluate a single condor
     #evaluate_symmetric_condor("UVXY", 25, 5)

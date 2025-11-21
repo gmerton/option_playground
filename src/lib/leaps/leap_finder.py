@@ -51,6 +51,8 @@ async def analyze(ticker, expiry, spot, verbose = False):
     #spot = await get_underlying_price(ticker)
     #spot = 15.28
     contracts = await list_contracts_for_expiry(ticker, expiry)
+    if contracts is None:
+        return
     if verbose:
         print(f"underlying spot={round(spot,2)}")
     tie_breaker = "higher"
@@ -70,6 +72,8 @@ async def analyze(ticker, expiry, spot, verbose = False):
         )
     )
     put_bid, put_ask = atm_put_contract["bid"], atm_put_contract["ask"]
+    if put_bid is None or put_ask is None:
+        return
     put_mid = (put_bid + put_ask) /2
     breakeven_call_contract = find_call(spot, contracts, atm_put_contract)
     if breakeven_call_contract is None:
@@ -88,6 +92,8 @@ async def analyze(ticker, expiry, spot, verbose = False):
             if put_contract["strike"] > atm_put_contract_strike:
                 continue
             # profitability(ticker, spot, breakeven_call_contract, atm_put_contract, dte)
+            if put_contract["bid"] is None or put_contract["ask"] is None or call_contract["bid"] is None or call_contract["ask"] is None:
+                continue
             profitability(spot, call_contract, put_contract, dte, verbose)
 
 
@@ -106,6 +112,9 @@ def profitability(spot, call_contract, put_contract, dte, verbose = False):
     Kc = float(call_contract["strike"])
     Kp = float(put_contract["strike"])
     call_mid = (float(call_contract["bid"]) + float(call_contract["ask"])) /2.0
+    
+    
+        
     put_mid = (float(put_contract["bid"]) + float(put_contract["ask"])) /2.0
 
     net_credit = call_mid - put_mid
@@ -268,7 +277,9 @@ if __name__ == "__main__":
 "DG",
 "CRM"]
     tickers = ravish_list
-    for ticker in tickers:
+    for ticker in ["UBER"]:
+    #for ticker in tickers:
+    #for ticker in ["KVUE", "AIP", "SOUN", "AVTR", "FC", "NOMD", "MAX", "DOMO", "LX", "WPP", "CAG"]:
          # spot = 15.28
          spot = None
          asyncio.run(find_best_leap(ticker, spot, verbose=False))
