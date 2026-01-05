@@ -9,6 +9,11 @@ from dateutil.relativedelta import relativedelta
 # This module identifies opportunities for LEAP collar plays: long 100 shares, a protective ATM put, and a covered call.
 # Been finding the LT skew column in oquants to be useful in pre-screening.
 
+MAX_ANNUALIZED_BE_DRIFT = 8
+MIN_ANNUALIZED_MAX_RETURN =  50.0
+MIN_ANNUALIZED_MIN_RETURN = -12
+MIN_REWARD_TO_RISK = 3
+
 
 def find_call(spot, contracts, atm_put_contract):
     put_bid, put_ask = atm_put_contract["bid"], atm_put_contract["ask"]
@@ -90,7 +95,13 @@ async def analyze(ticker, expiry, spot,  global_min_roi, verbose = False):
         for put_contract in put_contracts:
             if put_contract["strike"] > atm_put_contract_strike or put_contract["strike"]>=call_contract["strike"]:
                 continue
-            # profitability(ticker, spot, breakeven_call_contract, atm_put_contract, dte)
+            if put_contract["bid"]==0 or call_contract["bid"]==0:
+                continue
+            
+            if (call_contract["volume"]==0 and call_contract["open_interest"] < 50 and 
+                (call_contract["last"] is not None and call_contract["ask"] > 2 * call_contract["last"]) and call_contract["ask"] > 5 * call_contract["bid"]
+            ):
+                continue
             if put_contract["bid"] is None or put_contract["ask"] is None or call_contract["bid"] is None or call_contract["ask"] is None:
                 continue
             if put_contract["root_symbol"] != put_contract["underlying"] or call_contract["root_symbol"] != call_contract["underlying"]:
@@ -99,10 +110,6 @@ async def analyze(ticker, expiry, spot,  global_min_roi, verbose = False):
     return global_min_roi
 
 
-MAX_ANNUALIZED_BE_DRIFT = 8
-MIN_ANNUALIZED_MAX_RETURN =  50.0
-MIN_ANNUALIZED_MIN_RETURN = -12
-MIN_REWARD_TO_RISK = 3
 
 # MAX_ANNUALIZED_BE_DRIFT = 30
 # MIN_ANNUALIZED_MAX_RETURN =  0
@@ -113,6 +120,7 @@ def profitability(spot, call_contract, put_contract, dte, global_min_roi, verbos
     # strikes
     Kc = float(call_contract["strike"])
     Kp = float(put_contract["strike"])
+
     call_mid = (float(call_contract["bid"]) + float(call_contract["ask"])) /2.0
         
     put_mid = (float(put_contract["bid"]) + float(put_contract["ask"])) /2.0
@@ -175,7 +183,7 @@ async def find_best_leap(ticker, spot = None, verbose=False):
         # print(ticker, expiration_date, "...")
         global_min_roi = await analyze(ticker, expiration_date, spot, global_min_roi, verbose)
     if global_min_roi is not None:
-        print(f"{ticker} global_min_roi = {global_min_roi}")     
+        print(f"{ticker}, {global_min_roi}")     
 
 if __name__ == "__main__":
     #HPE: bad
@@ -292,6 +300,7 @@ if __name__ == "__main__":
     #for ticker in tickers:
     #for ticker in ["AG", "USAR", "QS", "SOUN", "HL", "LUNR", "CDE", "PL", "PAAS", "UUUU", "JD", "CRML","PATH", "LUNR", "SERV", "CDE", "QUBT", "INTC", "GLXY", "CLSK", "QBTS", "RGTI", "NVO"]:
     for ticker in big_list:
+    #for ticker in ["ANVS"]:
     # for ticker in ["RKLB", "NLY", "HIMS", "AG", "VKTX","SOUN", "USAR", "PATH", "GME", "AG", "IONQ","QS",
     #                 "CCCX", "UUUU", "CDE", "LI"]:
     #for ticker in tickers:
