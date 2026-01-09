@@ -150,8 +150,8 @@ def profitability(spot, call_contract, put_contract, dte, global_min_roi, verbos
     if annualized_BE_drift < MAX_ANNUALIZED_BE_DRIFT and annualized_max_return > MIN_ANNUALIZED_MAX_RETURN and annualized_min_return > MIN_ANNUALIZED_MIN_RETURN and (reward_to_risk >  MIN_REWARD_TO_RISK or reward_to_risk < 0):
         if global_min_roi is None or annualized_min_return > global_min_roi:
             global_min_roi = annualized_min_return
-        if verbose:
-            print(f"Kp={Kp}, Kc={Kc}, max profit = {round(max_profit)}, max loss = {round(min_profit)}, Min ROI: {annualized_min_return}%, Max ROI: {annualized_max_return}%, r-to-r={reward_to_risk}, BE={breakeven}, BE_drift = {round(annualized_BE_drift,1)}%")
+        if 1>0:
+            print(f"{put_contract["expiration_date"]}, {round(initial_investment)}, Kp={Kp}, Kc={Kc}, max profit = {round(max_profit)}, max loss = {round(min_profit)}, Min ROI: {annualized_min_return}%, Max ROI: {annualized_max_return}%, r-to-r={reward_to_risk}, BE={breakeven}, BE_drift = {round(annualized_BE_drift,1)}%")
         if verbose:
             print(f"call price = {call_mid}, put price = {put_mid}")
     return global_min_roi
@@ -175,6 +175,8 @@ async def find_best_leap(ticker, spot = None, verbose=False):
         if spot is None:
             if verbose:
                 print(f"Can't find spot for {ticker}")
+            return
+        if spot > 30:
             return
     # print(f"{ticker} spot={round(spot,2)}")
     
@@ -295,11 +297,16 @@ if __name__ == "__main__":
 "GTLB",
 "DG",
 "CRM"]
+    
+    small_list = ["ACH","ACHR","ACM","ACVA","AD","ADT","AI","AMC","AMPX","ANRO","APTV","ARLO","ASPN","AZO","BABA","BBAI","BE","BHVN","BKKT","BKV","BMY","BOX","BUD","BUR","BZH","CC","CCI","CF","CHGG","CMP","COMP","CON","CRCL","CTEV","CX","DE","DHR","DIS","DQ","EBS","ELF","FIG","FMC","FUBO","GIS","GME","HD","HHH","HIMS","HLT","HPQ","KEP","KO","KOS","KR","LAC","LDI","LEN","LMT","LNG","LUMN","MA","MANU","MBI","MCD","MO","MP","NEE","NIO","NOW","NPWR","NRGV","NUS","OKLO","OPFI","ORCL","OSG","PCG","PEG","PG","POST","QBTS","RACE","RDW","SAP","SES","SG","SHEL","SJM","SMR","SOC","SONY","SPGI","SRE","TIC","UNP","V","VG","VIPS","VNO","VZ","XXI"]
+
+    smaller_list = ["HIMS", "AI", "ADT", "BOX", "ACHR", "BBAI", "BE", "ACVA", "CHGG", "QBTS"]
+
     tickers = ravish_list
     
     #for ticker in tickers:
     #for ticker in ["AG", "USAR", "QS", "SOUN", "HL", "LUNR", "CDE", "PL", "PAAS", "UUUU", "JD", "CRML","PATH", "LUNR", "SERV", "CDE", "QUBT", "INTC", "GLXY", "CLSK", "QBTS", "RGTI", "NVO"]:
-    for ticker in big_list:
+    for ticker in smaller_list:
     #for ticker in ["ANVS"]:
     # for ticker in ["RKLB", "NLY", "HIMS", "AG", "VKTX","SOUN", "USAR", "PATH", "GME", "AG", "IONQ","QS",
     #                 "CCCX", "UUUU", "CDE", "LI"]:

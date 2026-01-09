@@ -5,8 +5,8 @@ from lib.commons.get_underlying_price import get_underlying_price
 from lib.commons.list_expirations import list_expirations
 from lib.commons.nearest_strike_contract import find_nearest_delta_option
 from dateutil.relativedelta import relativedelta
-
-
+from datetime import date, timedelta
+from lib.commons.get_daily_history import get_daily_history
 
 
 
@@ -99,6 +99,10 @@ async def evaluate_credit_spread(ticker, short_delta, long_delta):
         #print(ticker, expiration_date, "...")
         await analyze(ticker, expiration_date, short_delta, long_delta)     
 
+
+async def test():
+    await get_daily_history("AAPL",  start, end)
+
 if __name__ == "__main__":
   
     ravish_list = ["AVGO",
@@ -158,8 +162,15 @@ if __name__ == "__main__":
 
     ff_list = ["FTNT", "FUBO", "CSIQ", "WYNN", "SNAP", "IRBT", "XPEV", "CELH", "AMKR", ]
     tickers = ["STZ", "SIRI"]
-    for ticker in ["TLT", "USO", "IBIT"]:
-         asyncio.run(evaluate_credit_spread(ticker,0.3,0.15 ))
+    #for ticker in ["TLT", "USO", "IBIT"]:
+    #     asyncio.run(evaluate_credit_spread(ticker,0.3,0.15 ))
+
+    end = date.today()
+    start = end - timedelta(days = 30)
+    asyncio.run(test())
+
+
+    
      
  
  
