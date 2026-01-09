@@ -6,7 +6,7 @@ from lib.commons.list_expirations import list_expirations
 from lib.commons.nearest_strike_contract import find_nearest_delta_option
 from dateutil.relativedelta import relativedelta
 from datetime import date, timedelta
-from lib.commons.get_daily_history import get_daily_history, adx
+from lib.commons.get_daily_history import screen
 
 
 
@@ -101,9 +101,9 @@ async def evaluate_credit_spread(ticker, short_delta, long_delta):
 
 
 async def evaluate_adx(ticker):
-    symbol_adx = await adx(ticker)
-    if symbol_adx is not None and symbol_adx < 25:
-        print(f"{ticker}, {round(symbol_adx,2)}")
+    await screen(ticker)
+    #if symbol_adx is not None and symbol_adx < 25:
+    #    print(f"{ticker}, {round(symbol_adx,2)}")
     #await get_daily_history("AAPL",  start, end)
 
 if __name__ == "__main__":
@@ -162,11 +162,19 @@ if __name__ == "__main__":
 "GTLB",
 "DG",
 "CRM"]
+    
+    vrp_list = ["IBIT", "UVXY", "VXX", "BITX", "UVIX", "EWZ", "KWEB",
+                "XLP", "TMF", "EEM", "SQQQ", "ASHR", "DIA",
+                 "SILJ", "BOIL", "SPY", "TLT", "RSP", "EFA",
+                 "IWM", "NVDL", "YINN", "GDXJ"
+                 
+                  ]
 
+    vrp_list2 = ["TLT", "MCD", "QQQ", "NDX", "JD", "NEE", "LQD", "KVUE", "IEF", "WBD", "HYG", "SPY", "USO"]
     ff_list = ["FTNT", "FUBO", "CSIQ", "WYNN", "SNAP", "IRBT", "XPEV", "CELH", "AMKR", ]
     tickers = ["STZ", "SIRI"]
     test_tickers = ["IRBT"]
-    for ticker in ravish_list:
+    for ticker in vrp_list2:
         asyncio.run(evaluate_adx(ticker))
 
     #     asyncio.run(evaluate_credit_spread(ticker,0.3,0.15 ))
