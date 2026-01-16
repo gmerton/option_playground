@@ -15,7 +15,16 @@ from lib.tradier.tradier_client_wrapper import TradierClient
 from datetime import date, datetime
 from typing import List, Dict, Any, Optional, Tuple
 import math
-     
+import  asyncio
+import os
+
+TRADIER_API_KEY = os.getenv("TRADIER_API_KEY")
+TRADIER_ENDPOINT = "https://api.tradier.com/v1"
+TRADIER_REQUEST_HEADERS = {
+    "Authorization": f"Bearer {TRADIER_API_KEY}", 
+    "Accept": "application/json"
+}
+
 
 async def screen(symbol, client: TradierClient, verbose = False):
     try:
@@ -529,3 +538,13 @@ async def get_daily_history(
     df["date"] = pd.to_datetime(df["date"])
     df = df.set_index("date").sort_index()
     return df
+
+async def main():
+    print("Hello")
+    async with TradierClient(api_key=TRADIER_API_KEY) as client:
+        for ticker in ["SPY", "SPX"]:
+            print(ticker)
+            await screen(ticker, client, verbose=True)
+   
+if __name__ == "__main__":
+    asyncio.run(main())

@@ -12,6 +12,6 @@ Select one: `export AWS_PROFILE=clarinut-gmerton`
 
 Run files with code like this:
 `PYTHONPATH=src python -m lib.forward.ff`
-`PYTHONPATH=src python -m lib.credit_spread.credit_spread_finder`
+`PYTHONPATH=src python -m lib.commons.credit_spread_finder`
 `PYTHONPATH=src python -m lib.leaps.leap_finder`
 `PYTHONPATH=src python -m lib.fly.fly_finder`
