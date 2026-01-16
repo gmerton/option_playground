@@ -2,43 +2,49 @@ from typing import Optional, List, Dict, Any
 import aiohttp
 import os
 
-TRADIER_API_KEY = os.getenv("TRADIER_API_KEY")
-TRADIER_ENDPOINT = "https://api.tradier.com/v1"
-TRADIER_REQUEST_HEADERS = {
-    "Authorization": f"Bearer {TRADIER_API_KEY}", 
-    "Accept": "application/json"
-}
+from lib.tradier.tradier_client_wrapper import TradierClient
+
 
 
 async def get_underlying_price(
-        ticker: str
-) :
-    url = f"{TRADIER_ENDPOINT}/markets/quotes"
-    params = {"symbols" : ticker}
-    close_session = False
-    session = aiohttp.ClientSession(
-        headers=TRADIER_REQUEST_HEADERS
-    )
-    try:
-        async with session.get(url, params=params) as resp:
-            resp.raise_for_status()
-            data = await resp.json()
-        q = (data or {}).get("quotes", {}).get("quote")
-        if q is None:
-            return None
-        if isinstance(q, list):
-            q = q[0]
-        bid = q.get("bid")
-        ask = q.get("ask")
-        last = q.get("last")
-        close = q.get("close") or q.get("prevclose")
+    ticker: str,
+    *,
+    client: TradierClient,
+) -> Optional[float]:
+    params = {"symbols": ticker}
 
-        if bid and ask and bid > 0 and ask > 0:
-            return float((bid+ask)/2.0)
-        if last and last > 0:
-            return float(last)
-        if close and close > 0:
-            return float(close)
+    data = await client.get_json("/markets/quotes", params=params)
+
+    q = ((data or {}).get("quotes") or {}).get("quote")
+    if not q:
         return None
-    finally:
-        await session.close()
+
+    if isinstance(q, list):
+        q = q[0] if q else None
+        if not q:
+            return None
+
+    bid = q.get("bid")
+    ask = q.get("ask")
+    last = q.get("last")
+    close = q.get("close") or q.get("prevclose")
+
+    # Prefer mid if we have a real market
+    if bid is not None and ask is not None:
+        try:
+            bid_f = float(bid)
+            ask_f = float(ask)
+            if bid_f > 0 and ask_f > 0:
+                return (bid_f + ask_f) / 2.0
+        except (TypeError, ValueError):
+            pass
+
+    # Fall back to last, then close
+    for x in (last, close):
+        try:
+            if x is not None and float(x) > 0:
+                return float(x)
+        except (TypeError, ValueError):
+            continue
+
+    return None

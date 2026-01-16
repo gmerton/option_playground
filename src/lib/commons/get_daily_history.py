@@ -1,11 +1,9 @@
 from __future__ import annotations
 
-from typing import Optional, List, Dict, Any, Iterable
+from typing import Optional, List, Dict, Any
 import aiohttp
-import os
 from lib.commons.get_underlying_price import get_underlying_price
 import aiohttp
-import time
 from datetime import date, timedelta
 import pandas as pd
 import pandas_ta as ta
@@ -13,42 +11,58 @@ from dataclasses import dataclass
 import numpy as np
 from lib.commons.list_contracts import list_contracts_for_expiry
 from lib.commons.list_expirations import list_expirations
+from lib.tradier.tradier_client_wrapper import TradierClient
 from datetime import date, datetime
 from typing import List, Dict, Any, Optional, Tuple
 import math
      
 
-TRADIER_API_KEY = os.getenv("TRADIER_API_KEY")
-TRADIER_ENDPOINT = "https://api.tradier.com/v1"
-TRADIER_REQUEST_HEADERS = {
-    "Authorization": f"Bearer {TRADIER_API_KEY}", 
-    "Accept": "application/json"
-}
+async def screen(symbol, client: TradierClient, verbose = False):
+    try:
+        end = date.today()
+        start = end - timedelta(days=35)
+        expirations = await list_expirations(symbol, client=client)
+        df = await get_daily_history(symbol, start, end, client=client)
+        if df is None:
+            return
 
-async def screen(symbol):
-    end = date.today()
-    start = end - timedelta(days = 30)
-    expirations = await list_expirations(symbol)
-  
-    spot = await get_underlying_price(symbol)
-    iv30 = await compute_iv_30_interpolated(symbol, spot, expirations)
-    df = await get_daily_history(symbol, start, end)
+        symbol_adx = compute_adx_14(symbol, df)
+        print(symbol_adx)
+        if symbol_adx >= 25:
+           return
 
-    if df is None:
+        skew_ratio, put_iv, call_iv, expiry = await compute_skew_30d_proxy(symbol, expirations)
+        if skew_ratio <= 1.15:
+            return
+
+        spot = await get_underlying_price(symbol, client=client)
+        symbol_rv = compute_rv_20(df)
+        iv30 = await compute_iv_30_interpolated(symbol, spot, expirations)
+        vrp = round(iv30 / symbol_rv, 2)
+
+        if vrp < 1.1:
+            return
+        
+        print(
+            f"{symbol}, adx={symbol_adx:.2f}, "
+            f"rv={symbol_rv:.2f}, iv={iv30:.2f}, "
+            f"vrp={vrp}, skew_ratio={skew_ratio:.2f}"
+        )
+
+    except RuntimeError as e:
+        # Swallow known, non-fatal screening failures
+        # Optional: log if you want visibility
+        # print(f"[SKIP] {symbol}: {e}")
+        print(e)
         return
-    symbol_adx = compute_adx_14(symbol, df)
-    symbol_rv = compute_rv_20(df)
-    vrp = round(iv30/symbol_rv,2)
-    skew_ratio, put_iv, call_iv, expiry = await compute_skew_30d_proxy(symbol, expirations)
-    good_symbol = True if symbol_adx < 25 and skew_ratio > 1.15 and vrp >=1.3  else False
-    if good_symbol:
-        print(f"{symbol}, adx = {round(symbol_adx,2)},rv= {round(symbol_rv,2)}, iv= {round(iv30,2)},vrp= {vrp}, skew_ratio={round(skew_ratio,2)} {good_symbol}")
+
     
 
 
 
 
 def compute_rv_20(df: pd.DataFrame) -> float:
+    print("there")
     """
     Compute 20-day realized volatility (close-to-close), annualized.
 
@@ -59,11 +73,14 @@ def compute_rv_20(df: pd.DataFrame) -> float:
         raise ValueError("DataFrame must contain a 'close' column")
 
     closes = pd.to_numeric(df["close"], errors="coerce").dropna()
-
+       
     if len(closes) < 21:
+        print(len(closes))
+        print("whatever")
         raise RuntimeError("Need at least 21 closing prices to compute RV20")
 
     # log returns
+    print("hi")
     log_returns = np.log(closes / closes.shift(1))
 
     # 20-day rolling realized vol, annualized
@@ -73,6 +90,8 @@ def compute_rv_20(df: pd.DataFrame) -> float:
 
 def compute_adx_14(symbol: str, df: pd.DataFrame):
     ind = ta.adx(high=df["high"], low = df["low"], close = df["close"], length=14)
+    if ind is None:
+        raise RuntimeError(f"ind is None for {symbol}")
     df2 = df.join(ind).dropna()
     if df2.empty:
         raise RuntimeError(f"Not enough data to compute ADX for {symbol}")
@@ -178,6 +197,20 @@ def find_contract_closest_to_delta(
 
     return best
 
+def fails_hard_liquidity(contract):
+    return (
+        contract["bid"] is None
+        or contract["ask"] is None
+        or contract["bid"] <= 0
+        or contract["ask"] <= 0
+        or contract["open_interest"] <= 0
+    )
+
+def spread_pct(contract):
+    mid = (contract["bid"] + contract["ask"]) / 2
+    return (contract["ask"] - contract["bid"]) / mid
+
+
 def compute_skew_ratio_25d(contracts: List[Dict[str, Any]]) -> Tuple[float, float, float]:
     """
     Returns (skew_ratio, put_iv, call_iv) for ~25-delta options:
@@ -189,6 +222,13 @@ def compute_skew_ratio_25d(contracts: List[Dict[str, Any]]) -> Tuple[float, floa
     if not put or not call:
         raise RuntimeError("Could not find both -25Δ put and +25Δ call with IV+delta available.")
 
+    if fails_hard_liquidity(put) or fails_hard_liquidity(call):
+        raise RuntimeError("Lack of liquidity in compute_skew_ratio_25d")
+    
+    if spread_pct(put) > 0.35 or spread_pct(call) > 0.35:
+        raise RuntimeError("Spread is too large")
+
+    
     put_iv = _extract_iv(put)
     call_iv = _extract_iv(call)
 
@@ -213,13 +253,15 @@ def pick_expiry_closest_to_dte(expirations: List[str], target_dte: int = 30) -> 
             best_e = e
 
     if not best_e:
-        raise RuntimeError("No valid future expiration found.")
+        #raise RuntimeError("No valid future expiration found.")
+        return None
     return best_e
 
 
 async def compute_skew_30d_proxy(
     symbol: str,
     expirations,
+    client: TradierClient,
     *,
     target_dte: int = 30,
 ) -> Tuple[float, float, float, str]:
@@ -232,7 +274,9 @@ async def compute_skew_30d_proxy(
     """
     exp = pick_expiry_closest_to_dte(expirations, target_dte=target_dte)
 
-    chain = await list_contracts_for_expiry(symbol, exp, include_greeks=True)
+    if exp is None:
+        raise RuntimeError("No valid expiration date found for {symbol}")
+    chain = await list_contracts_for_expiry(symbol, exp, client=client, include_greeks=True)
     if not chain:
         raise RuntimeError(f"No chain for {symbol} {exp}")
 
@@ -457,40 +501,31 @@ async def compute_iv_30(
     return float(iv30)
 
 async def get_daily_history(
-        ticker: str,
-        start: date,
-        end: date,
-) :
-    url = f"{TRADIER_ENDPOINT}/markets/history"
+    ticker: str,
+    start: date,
+    end: date,
+    *,
+    client: TradierClient,
+) -> Optional[pd.DataFrame]:
     params = {
-        "symbol" : ticker,
-        "interval" : "daily",
-        "start" : start.isoformat(),
-        "end" : end.isoformat()
-        }
-    session = aiohttp.ClientSession(
-        headers=TRADIER_REQUEST_HEADERS
-    )
-    try:
-        async with session.get(url, params=params) as resp:
-            resp.raise_for_status()
-            data = await resp.json()
-        #print(data)
-        history = (data or {}).get("history", {})
-        if history is None or "day" not in history:
-            return None
-        day = history.get("day")
+        "symbol": ticker,
+        "interval": "daily",
+        "start": start.isoformat(),
+        "end": end.isoformat(),
+    }
 
-        if day is None:
-            single = history.get("day")
-            if isinstance(single, dict):
-                day = [single]
-        if not day:
-            raise RuntimeError(f"No history returned for {ticker}")
-        df = pd.DataFrame(day)
-        df["date"] = pd.to_datetime(df["date"])
-        df = df.set_index("date").sort_index()
+    data = await client.get_json("/markets/history", params=params)
 
-        return df
-    finally:
-        await session.close()
+    history = (data or {}).get("history") or {}
+    day = history.get("day")
+
+    if not day:
+        return None
+
+    if isinstance(day, dict):
+        day = [day]
+
+    df = pd.DataFrame(day)
+    df["date"] = pd.to_datetime(df["date"])
+    df = df.set_index("date").sort_index()
+    return df
