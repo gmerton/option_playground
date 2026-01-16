@@ -3,15 +3,18 @@ from __future__ import annotations
 from typing import Optional, List, Dict, Any
 import aiohttp
 from lib.commons.get_underlying_price import get_underlying_price
+
 import aiohttp
 from datetime import date, timedelta
 import pandas as pd
 import pandas_ta as ta
 from dataclasses import dataclass
 import numpy as np
+from lib.commons.nyse_arca_list import nyse_arca_list, ravish_list, vrp_list, vrp_list2
 from lib.commons.list_contracts import list_contracts_for_expiry
 from lib.commons.list_expirations import list_expirations
 from lib.tradier.tradier_client_wrapper import TradierClient
+from lib.tradier.get_daily_history import get_daily_history
 from datetime import date, datetime
 from typing import List, Dict, Any, Optional, Tuple
 import math
@@ -29,49 +32,131 @@ TRADIER_REQUEST_HEADERS = {
 async def screen(symbol, client: TradierClient, verbose = False):
     try:
         end = date.today()
-        start = end - timedelta(days=35)
+        start = end - timedelta(days=50)
         expirations = await list_expirations(symbol, client=client)
         df = await get_daily_history(symbol, start, end, client=client)
+
+        # 10 DTE condor filter
+        condor_10_rv_ok = rv20_not_rising(df, sma_window=3)
+
+        # 30 DTE condor filter
+        condor_30_rv_ok = rv20_not_rising(df, sma_window=10)
+        
+        #condor_rv_ok = rv20_ma_not_rising(df, ma_days=5)
         if df is None:
             return
 
-        symbol_adx = compute_adx_14(symbol, df)
-        print(symbol_adx)
-        if symbol_adx >= 25:
-           return
+        di_plus, di_minus, adx = compute_adx_14(symbol, df)
+        # if adx >= 25:
+        #    return
 
-        skew_ratio, put_iv, call_iv, expiry = await compute_skew_30d_proxy(symbol, expirations)
-        if skew_ratio <= 1.15:
-            return
+        skew_ratio, put_iv, call_iv, expiry = await compute_skew_30d_proxy(symbol, expirations, client=client)
+        # if skew_ratio <= 1.15:
+        #     return
 
         spot = await get_underlying_price(symbol, client=client)
         symbol_rv = compute_rv_20(df)
-        iv30 = await compute_iv_30_interpolated(symbol, spot, expirations)
+        iv30 = await compute_iv_30_interpolated(symbol, spot, expirations, client=client)
         vrp = round(iv30 / symbol_rv, 2)
 
-        if vrp < 1.1:
-            return
+        # if vrp < 1.1:
+        #     return
         
-        print(
-            f"{symbol}, adx={symbol_adx:.2f}, "
+
+        #Check for spread
+        if (adx < 25 or di_plus > di_minus) and skew_ratio > 1.15 and vrp > 1.1:
+
+            print(
+            f"Spread: {symbol}, adx={adx:.2f}, "
+            f"DI+ ={di_plus:.2f}, DI- ={di_minus:.2f},"
             f"rv={symbol_rv:.2f}, iv={iv30:.2f}, "
             f"vrp={vrp}, skew_ratio={skew_ratio:.2f}"
         )
-
+            
+        # Check for 10 DTE codor
+        if abs(di_plus-di_minus) < 8 and vrp > 1.15 and skew_ratio > 1.05 and skew_ratio < 1.30 and condor_10_rv_ok and adx<20:
+                print(
+            f"30 DTE Condor: {symbol}, adx={adx:.2f}, "
+            f"DI+ ={di_plus:.2f}, DI- ={di_minus:.2f},"
+            f"rv={symbol_rv:.2f}, iv={iv30:.2f}, "
+            f"vrp={vrp}, skew_ratio={skew_ratio:.2f}"
+        )
+                
+        # Check for 30 DTE codor
+        if abs(di_plus-di_minus) < 10 and vrp > 1.25 and skew_ratio > 1.05 and skew_ratio < 1.35 and condor_30_rv_ok and adx<25:
+                print(
+            f"10 DTE Condor: {symbol}, adx={adx:.2f}, "
+            f"DI+ ={di_plus:.2f}, DI- ={di_minus:.2f},"
+            f"rv={symbol_rv:.2f}, iv={iv30:.2f}, "
+            f"vrp={vrp}, skew_ratio={skew_ratio:.2f}"
+        )
+    
     except RuntimeError as e:
         # Swallow known, non-fatal screening failures
         # Optional: log if you want visibility
         # print(f"[SKIP] {symbol}: {e}")
-        print(e)
+        # print(f"{symbol},  {e}")
         return
 
     
 
+import numpy as np
+import pandas as pd
+
+
+def rv20_not_rising(
+    df: pd.DataFrame,
+    *,
+    sma_window: int,
+    rv_window: int = 20,
+) -> bool:
+    """
+    Generic "RV not rising" test used for condor regime filters.
+
+    Returns True if:
+        RV(rv_window)_today <= SMA_sma_window( RV(rv_window) )
+
+    Examples:
+        # 10 DTE condor filter:
+        rv_ok_10dte = rv20_not_rising(df, sma_window=3)
+
+        # 30 DTE condor filter:
+        rv_ok_30dte = rv20_not_rising(df, sma_window=10)
+
+    Notes:
+      - Uses close-to-close log returns, annualized with sqrt(252).
+      - Raises RuntimeError if df is None/empty or lacks sufficient data.
+    """
+    if df is None or df.empty or "close" not in df.columns:
+        raise RuntimeError("rv20_not_rising: df is None/empty or missing 'close'")
+
+    closes = pd.to_numeric(df["close"], errors="coerce").dropna()
+    min_closes = rv_window + sma_window + 1
+    if len(closes) < min_closes:
+        raise RuntimeError(
+            f"rv20_not_rising: not enough data (need >= {min_closes} closes; have {len(closes)})"
+        )
+
+    # log returns
+    log_returns = np.log(closes / closes.shift(1)).dropna()
+
+    # realized vol series (annualized)
+    rv = log_returns.rolling(rv_window).std() * np.sqrt(252)
+    rv = rv.dropna()
+
+    if len(rv) < sma_window:
+        raise RuntimeError(
+            f"rv20_not_rising: insufficient RV history (need >= {sma_window} RV points; have {len(rv)})"
+        )
+
+    rv_today = float(rv.iloc[-1])
+    rv_sma = float(rv.iloc[-sma_window:].mean())
+
+    return rv_today <= rv_sma
 
 
 
 def compute_rv_20(df: pd.DataFrame) -> float:
-    print("there")
     """
     Compute 20-day realized volatility (close-to-close), annualized.
 
@@ -89,7 +174,6 @@ def compute_rv_20(df: pd.DataFrame) -> float:
         raise RuntimeError("Need at least 21 closing prices to compute RV20")
 
     # log returns
-    print("hi")
     log_returns = np.log(closes / closes.shift(1))
 
     # 20-day rolling realized vol, annualized
@@ -110,7 +194,7 @@ def compute_adx_14(symbol: str, df: pd.DataFrame):
     di_minus = float(last["DMN_14"])
     adx = float(last["ADX_14"])
     #print(f"{di_plus}, {di_minus}, {adx}")
-    return adx
+    return (di_plus, di_minus, adx)
 
 def _parse_ymd(d: str) -> date:
     return datetime.strptime(d, "%Y-%m-%d").date()
@@ -383,6 +467,7 @@ async def compute_iv_30_interpolated(
     symbol: str,
     underlying_price: float,
     expirations,
+    client: TradierClient,
     *,
     target_dte: int = 30,
     session: Optional[aiohttp.ClientSession] = None,
@@ -399,8 +484,11 @@ async def compute_iv_30_interpolated(
     exp1, dte1, exp2, dte2 = pick_bracketing_expirations(expirations, target_dte=target_dte)
 
     # 2) chains
-    c1 = await list_contracts_for_expiry(symbol, exp1, include_greeks=True, session=session)
-    c2 = await list_contracts_for_expiry(symbol, exp2, include_greeks=True, session=session)
+    c1 = await list_contracts_for_expiry(symbol, exp1, client=client, include_greeks=True)
+    c2 = await list_contracts_for_expiry(symbol, exp2, client=client, include_greeks=True)
+    
+    # c1 = await list_contracts_for_expiry(symbol, exp1, include_greeks=True, session=session)
+    # c2 = await list_contracts_for_expiry(symbol, exp2, include_greeks=True, session=session)
 
     if not c1 or not c2:
         raise RuntimeError(f"Missing option chain(s): {symbol} {exp1}={bool(c1)} {exp2}={bool(c2)}")
@@ -509,41 +597,25 @@ async def compute_iv_30(
     iv30 = math.sqrt(max(vart / Tt, 0.0))
     return float(iv30)
 
-async def get_daily_history(
-    ticker: str,
-    start: date,
-    end: date,
-    *,
-    client: TradierClient,
-) -> Optional[pd.DataFrame]:
-    params = {
-        "symbol": ticker,
-        "interval": "daily",
-        "start": start.isoformat(),
-        "end": end.isoformat(),
-    }
 
-    data = await client.get_json("/markets/history", params=params)
+def rv20_ma_not_rising(df: pd.DataFrame, ma_days: int = 5) -> bool:
+    if df is None:
+        raise RuntimeError("df is none in rv20_ma_not_missing")
+    closes = pd.to_numeric(df["close"], errors="coerce").dropna()
+    rets = np.log(closes / closes.shift(1)).dropna()
 
-    history = (data or {}).get("history") or {}
-    day = history.get("day")
+    rv20 = (rets.rolling(20).std() * np.sqrt(252)).dropna()
+    if len(rv20) < ma_days + 1:
+        raise RuntimeError("Not enough RV20 points for MA test")
 
-    if not day:
-        return None
+    rv20_today = float(rv20.iloc[-1])
+    rv20_ma = float(rv20.iloc[-ma_days:].mean())
+    return rv20_today <= rv20_ma
 
-    if isinstance(day, dict):
-        day = [day]
-
-    df = pd.DataFrame(day)
-    df["date"] = pd.to_datetime(df["date"])
-    df = df.set_index("date").sort_index()
-    return df
 
 async def main():
-    print("Hello")
     async with TradierClient(api_key=TRADIER_API_KEY) as client:
-        for ticker in ["SPY", "SPX"]:
-            print(ticker)
+        for ticker in ravish_list:
             await screen(ticker, client, verbose=True)
    
 if __name__ == "__main__":
