@@ -10,7 +10,7 @@ import pandas as pd
 import pandas_ta as ta
 from dataclasses import dataclass
 import numpy as np
-from lib.commons.nyse_arca_list import nyse_arca_list, ravish_list, vrp_list, vrp_list2
+from lib.commons.nyse_arca_list import nyse_arca_list, ravish_list, vrp_list, vrp_list2, nasdaq_list
 from lib.commons.list_contracts import list_contracts_for_expiry
 from lib.commons.list_expirations import list_expirations
 from lib.tradier.tradier_client_wrapper import TradierClient
@@ -100,8 +100,6 @@ async def screen(symbol, client: TradierClient, verbose = False):
 
     
 
-import numpy as np
-import pandas as pd
 
 
 def rv20_not_rising(
@@ -615,7 +613,7 @@ def rv20_ma_not_rising(df: pd.DataFrame, ma_days: int = 5) -> bool:
 
 async def main():
     async with TradierClient(api_key=TRADIER_API_KEY) as client:
-        for ticker in ravish_list:
+        for ticker in nasdaq_list:
             await screen(ticker, client, verbose=True)
    
 if __name__ == "__main__":
