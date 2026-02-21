@@ -1,9 +1,10 @@
-from constants import DB, WORKGROUP, CATALOG, S3_OUTPUT
+from lib.constants import DB, WORKGROUP, CATALOG, S3_OUTPUT
 import pandas as pd
 import awswrangler as wr
-from constants import GLUE_CATALOG, S3TABLES_CATALOG, TABLE, TMP_S3_PREFIX
+from lib.constants import GLUE_CATALOG, S3TABLES_CATALOG, TABLE, TMP_S3_PREFIX
 import uuid
-from data import Leg
+from lib.data import Leg
+from typing import Optional
 
 def athena(sql: str) -> pd.DataFrame:
     """Single path for all Athena queries against the S3 Tables catalog."""
@@ -371,5 +372,172 @@ def fetch_expiry_quotes(df_entry: pd.DataFrame) -> pd.DataFrame:
 
     df["entry_date"] = pd.to_datetime(df["entry_date"]).dt.date
     df["expiry"]     = pd.to_datetime(df["expiry"]).dt.date
+    return df
+
+
+def fetch_strangle_trades(
+    tickers: list,
+    ts_start: str,
+    ts_end: str,
+    call_delta: float,
+    put_delta: float,
+    dte: int,
+    entry_weekdays: Optional[set] = None,
+) -> pd.DataFrame:
+    """
+    Single Athena query for one or more tickers, returning both mid and worst-case entry prices.
+
+    Both pricings are computed in one round-trip so callers don't need a second query.
+    entry_weekdays: optional set of Python weekday ints (Mon=0, Fri=4, Sun=6).
+    Returns one row per (ticker, entry_date, expiry) with columns:
+      call_entry_last_mid, call_entry_last_worst, put_entry_last_mid, put_entry_last_worst.
+    """
+    if isinstance(tickers, str):
+        tickers = [tickers]
+    tickers_sql = ", ".join(f"'{t}'" for t in tickers)
+
+    if entry_weekdays:
+        # Presto day_of_week: Mon=1 .. Fri=5 .. Sun=7  (Python is Mon=0..Sun=6)
+        presto_days = ", ".join(str(w + 1) for w in sorted(entry_weekdays))
+        weekday_clause = f"AND day_of_week(o.trade_date) IN ({presto_days})"
+    else:
+        weekday_clause = ""
+
+    sql = f"""
+    WITH
+    call_cand AS (
+      SELECT
+        o.trade_date AS entry_date,
+        o.expiry,
+        o.ticker,
+        o.strike,
+        o.delta,
+        (o.bid + o.ask) / 2 AS entry_last_mid,
+        o.bid               AS entry_last_worst,
+        ABS(date_diff('day', o.expiry, date_add('day', {dte}, o.trade_date))) AS expiry_diff
+      FROM "{DB}"."{TABLE}" o
+      WHERE o.ticker IN ({tickers_sql})
+        AND o.cp = 'C'
+        AND o.trade_date >= TIMESTAMP '{ts_start} 00:00:00'
+        AND o.trade_date <= TIMESTAMP '{ts_end} 00:00:00'
+        AND o.bid > 0
+        AND o.ask > 0
+        AND o.open_interest > 0
+        AND (o.ask - o.bid) / ((o.ask + o.bid) / 2) <= 0.35
+        {weekday_clause}
+    ),
+    call_ranked AS (
+      SELECT *,
+        ROW_NUMBER() OVER (
+          PARTITION BY ticker, entry_date
+          ORDER BY expiry_diff, ABS(delta - {call_delta}), strike
+        ) AS rn
+      FROM call_cand
+    ),
+    call_leg AS (
+      SELECT entry_date, expiry, ticker,
+             strike AS call_strike, delta AS call_delta,
+             entry_last_mid   AS call_entry_last_mid,
+             entry_last_worst AS call_entry_last_worst
+      FROM call_ranked WHERE rn = 1
+    ),
+    put_cand AS (
+      SELECT
+        o.trade_date AS entry_date,
+        o.expiry,
+        o.ticker,
+        o.strike,
+        o.delta,
+        (o.bid + o.ask) / 2 AS entry_last_mid,
+        o.bid               AS entry_last_worst,
+        ABS(date_diff('day', o.expiry, date_add('day', {dte}, o.trade_date))) AS expiry_diff
+      FROM "{DB}"."{TABLE}" o
+      WHERE o.ticker IN ({tickers_sql})
+        AND o.cp = 'P'
+        AND o.trade_date >= TIMESTAMP '{ts_start} 00:00:00'
+        AND o.trade_date <= TIMESTAMP '{ts_end} 00:00:00'
+        AND o.bid > 0
+        AND o.ask > 0
+        AND o.open_interest > 0
+        AND (o.ask - o.bid) / ((o.ask + o.bid) / 2) <= 0.35
+        {weekday_clause}
+    ),
+    put_ranked AS (
+      SELECT *,
+        ROW_NUMBER() OVER (
+          PARTITION BY ticker, entry_date
+          ORDER BY expiry_diff, ABS(delta - {-put_delta}), strike DESC
+        ) AS rn
+      FROM put_cand
+    ),
+    put_leg AS (
+      SELECT entry_date, expiry, ticker,
+             strike AS put_strike, delta AS put_delta,
+             entry_last_mid   AS put_entry_last_mid,
+             entry_last_worst AS put_entry_last_worst
+      FROM put_ranked WHERE rn = 1
+    ),
+    matched AS (
+      SELECT
+        c.entry_date,
+        c.expiry,
+        c.ticker,
+        c.call_strike,
+        c.call_delta,
+        c.call_entry_last_mid,
+        c.call_entry_last_worst,
+        p.put_strike,
+        p.put_delta,
+        p.put_entry_last_mid,
+        p.put_entry_last_worst
+      FROM call_leg c
+      JOIN put_leg p ON c.entry_date = p.entry_date AND c.expiry = p.expiry AND c.ticker = p.ticker
+    ),
+    call_expiry AS (
+      SELECT o.expiry, o.ticker, o.strike, MAX(o.last) AS call_exit_last
+      FROM "{DB}"."{TABLE}" o
+      JOIN matched m
+        ON o.expiry = m.expiry
+        AND o.ticker = m.ticker
+        AND o.strike = m.call_strike
+        AND o.trade_date = m.expiry
+      WHERE o.cp = 'C'
+      GROUP BY o.expiry, o.ticker, o.strike
+    ),
+    put_expiry AS (
+      SELECT o.expiry, o.ticker, o.strike, MAX(o.last) AS put_exit_last
+      FROM "{DB}"."{TABLE}" o
+      JOIN matched m
+        ON o.expiry = m.expiry
+        AND o.ticker = m.ticker
+        AND o.strike = m.put_strike
+        AND o.trade_date = m.expiry
+      WHERE o.cp = 'P'
+      GROUP BY o.expiry, o.ticker, o.strike
+    )
+    SELECT
+      m.entry_date,
+      m.expiry,
+      m.ticker,
+      m.call_strike,
+      m.call_delta,
+      m.call_entry_last_mid,
+      m.call_entry_last_worst,
+      ce.call_exit_last,
+      m.put_strike,
+      m.put_delta,
+      m.put_entry_last_mid,
+      m.put_entry_last_worst,
+      pe.put_exit_last
+    FROM matched m
+    JOIN call_expiry ce ON m.expiry = ce.expiry AND m.ticker = ce.ticker AND m.call_strike = ce.strike
+    JOIN put_expiry pe  ON m.expiry = pe.expiry AND m.ticker = pe.ticker AND m.put_strike  = pe.strike
+    ORDER BY m.ticker, m.entry_date
+    """
+
+    df = athena(sql)
+    for col in ("entry_date", "expiry"):
+        if col in df.columns:
+            df[col] = pd.to_datetime(df[col]).dt.date
     return df
 

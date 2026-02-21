@@ -1,13 +1,13 @@
 import awswrangler as wr
 import pandas as pd
 import uuid
-from data.Leg import Leg, Strategy, Direction, OptionType
+from lib.data.Leg import Leg, Strategy, Direction, OptionType
 from typing import Iterable, Optional
 import datetime
-from condor_tools import condor_study, evaluate_symmetric_condor, evaluate_condor
+from lib.condor_tools import condor_study, strangle_study, evaluate_symmetric_condor, evaluate_condor
 import numpy as np
-from athena_lib import query_ticker
-from option_strat import retrieve_study_data
+from lib.athena_lib import query_ticker
+from lib.option_strat import retrieve_study_data
 
 # -----------------------------
 # Athena / Catalog configuration
@@ -329,7 +329,8 @@ if __name__ == "__main__":
     #query_ticker("IBIT")
     # retrieve_study_data( ts_start="2022-12-15",
     #          ts_end="2026-03-16",ticker="IBIT", entry_weekdays={"WED"})
-    condor_study("IBIT")
+    # condor_study("IBIT")
+    strangle_study(["IBIT"])
 
     #Evaluate a single condor
     #evaluate_symmetric_condor("UVXY", 25, 5)

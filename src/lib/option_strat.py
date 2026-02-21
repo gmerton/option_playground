@@ -2,9 +2,9 @@ import pandas as pd
 import awswrangler as wr
 import uuid
 from typing import Iterable, Optional
-from constants import CONTRACT_MULTIPLIER, WEEKDAY_ALIASES
-from athena_lib import athena, query_entries_range_for_leg, fetch_expiry_quotes, fetch_quotes_at_exit, query_ticker
-from data import Leg
+from lib.constants import CONTRACT_MULTIPLIER, WEEKDAY_ALIASES
+from lib.athena_lib import athena, query_entries_range_for_leg, fetch_expiry_quotes, fetch_quotes_at_exit, query_ticker
+from lib.data import Leg
 
 
 def retrieve_study_data(ts_start: str,
@@ -285,6 +285,33 @@ def summarize_hold_to_maturity_strategy_from_entries(tidy_entries: pd.DataFrame)
         lc = group[(group["leg_type"] == "CALL") & (group["leg_direction"] == "BUY")]
         sp = group[(group["leg_type"] == "PUT")  & (group["leg_direction"] == "SELL")]
         lp = group[(group["leg_type"] == "PUT")  & (group["leg_direction"] == "BUY")]
+        # Strangle/straddle: short legs only, no long legs
+        if lc.empty and lp.empty and (not sc.empty or not sp.empty):
+            sc_strike = float(sc.iloc[0]["strike"]) if not sc.empty else None
+            sp_strike = float(sp.iloc[0]["strike"]) if not sp.empty else None
+            strikes = [s for s in [sc_strike, sp_strike] if s is not None]
+            underlying_est = sum(strikes) / len(strikes)
+
+            call_margin = 0.0
+            if not sc.empty:
+                sc_qty = int(sc.iloc[0]["leg_quantity"])
+                call_credit = float(-sc.iloc[0]["entry_premium_signed"])
+                call_otm = max(0.0, sc_strike - underlying_est) * CONTRACT_MULTIPLIER * sc_qty
+                method1 = 0.20 * underlying_est * CONTRACT_MULTIPLIER * sc_qty - call_otm + call_credit
+                method2 = 0.10 * underlying_est * CONTRACT_MULTIPLIER * sc_qty + call_credit
+                call_margin = max(method1, method2)
+
+            put_margin = 0.0
+            if not sp.empty:
+                sp_qty = int(sp.iloc[0]["leg_quantity"])
+                put_credit = float(-sp.iloc[0]["entry_premium_signed"])
+                put_otm = max(0.0, underlying_est - sp_strike) * CONTRACT_MULTIPLIER * sp_qty
+                method1 = 0.20 * underlying_est * CONTRACT_MULTIPLIER * sp_qty - put_otm + put_credit
+                method2 = 0.10 * sp_strike * CONTRACT_MULTIPLIER * sp_qty + put_credit
+                put_margin = max(method1, method2)
+
+            return max(call_margin, put_margin)
+
         if sc.empty or lc.empty or sp.empty or lp.empty:
             return float("nan")
 
@@ -317,7 +344,11 @@ def summarize_hold_to_maturity_strategy_from_entries(tidy_entries: pd.DataFrame)
     print("summary 3")
     print(summary)
     output_df_csv = pd.DataFrame(summary, columns=["entry_date", "expiry", "portfolio_pnl", "net_entry_premium", "roc_like_metric", "capital" ])
-    # output_df_csv.to_csv("output/condor_detail.csv", index=False)
+    output_df_csv["portfolio_pnl"] = output_df_csv["portfolio_pnl"].round(2)
+    output_df_csv["net_entry_premium"] = output_df_csv["net_entry_premium"].round(2)
+    output_df_csv.rename(columns={"roc_like_metric": "return_on_credit"}, inplace=True)
+    output_df_csv["return_on_credit"] = output_df_csv["return_on_credit"].round(4)
+    output_df_csv["capital"] = output_df_csv["capital"].round(2)
     # roc on capital (safe)
     def _safe_div(a, b):
         if pd.isna(b) or b == 0:
@@ -332,19 +363,92 @@ def summarize_hold_to_maturity_strategy_from_entries(tidy_entries: pd.DataFrame)
     total_pnl = float(summary["portfolio_pnl"].fillna(0).sum())
 
     roc = (total_pnl / total_cap) if total_cap > EPS else 0.0
-    count_wins = int((summary["roc_like_metric"].fillna(0) > 0).sum())
+    count_wins = int((summary["portfolio_pnl"].fillna(0) > 0).sum())
     win_rate = (count_wins / n_entries) if n_entries else 0.0
+    total_credit = float(-summary["net_entry_premium"].fillna(0).sum())
+    return_on_credit = (total_pnl / total_credit) if total_credit > EPS else 0.0
 
     print("\n=== Portfolio Summary ===")
     print(f"Entries analyzed: {n_entries}")
     print(f"Total capital = {round(total_cap)}")
     print(f"ROC = {round(100*roc,1)}%")
+    print(f"Return on credit: {round(return_on_credit * 100, 1)}%")
     print(f"Total Net Entry Premium: {round(float(summary['net_entry_premium'].sum()))}")
     print(f"Total Portfolio PnL: {round(total_pnl)}")
-    print(f"Mean return vs credit: {round(float(pd.Series(summary['roc_like_metric']).dropna().mean()*100) if summary['roc_like_metric'].notna().any() else 0.0, 1)}%")
     print(f"Win rate: {round(win_rate*100,1)}%")
+
+    output_df_csv["roc"] = pd.Series([_safe_div(p, c) for p, c in zip(output_df_csv["portfolio_pnl"], output_df_csv["capital"])]).round(4)
 
     return {
         "roc": float(round(roc, 3)),
+        "return_on_credit": float(round(return_on_credit, 3)),
         "win_rate": float(round(win_rate, 3)),
-    }
+    }, output_df_csv
+
+
+def summarize_strangle_trades(df: pd.DataFrame, pricing: str = "mid") -> tuple:
+    """
+    Compute PnL, capital, and summary metrics from fetch_strangle_trades() output.
+    pricing: "mid" or "worst" — selects which entry_last columns to use.
+    Returns (summaries, detail_df) where summaries is a list of per-ticker dicts.
+    """
+    EPS = 1e-9
+
+    if df.empty:
+        return [], pd.DataFrame()
+
+    d = df.copy()
+
+    # Select entry prices based on pricing
+    d["call_entry_last"] = d[f"call_entry_last_{pricing}"]
+    d["put_entry_last"]  = d[f"put_entry_last_{pricing}"]
+
+    # PnL (short positions: profit when price falls to 0 at expiry)
+    d["call_pnl"]      = -(d["call_exit_last"] - d["call_entry_last"]) * CONTRACT_MULTIPLIER
+    d["put_pnl"]       = -(d["put_exit_last"]  - d["put_entry_last"])  * CONTRACT_MULTIPLIER
+    d["portfolio_pnl"] = (d["call_pnl"] + d["put_pnl"]).round(2)
+
+    # Credit received (negative by convention)
+    d["net_entry_premium"] = (-(d["call_entry_last"] + d["put_entry_last"]) * CONTRACT_MULTIPLIER).round(2)
+    d["return_on_credit"]  = (d["portfolio_pnl"] / -d["net_entry_premium"]).round(4)
+
+    # Capital: FINRA naked margin — take the worse (larger) of call/put margin
+    d["underlying_est"] = (d["call_strike"] + d["put_strike"]) / 2
+
+    call_credit = d["call_entry_last"] * CONTRACT_MULTIPLIER
+    call_otm    = (d["call_strike"] - d["underlying_est"]).clip(lower=0) * CONTRACT_MULTIPLIER
+    call_m1 = 0.20 * d["underlying_est"] * CONTRACT_MULTIPLIER - call_otm + call_credit
+    call_m2 = 0.10 * d["underlying_est"] * CONTRACT_MULTIPLIER + call_credit
+    call_margin = pd.concat([call_m1, call_m2], axis=1).max(axis=1)
+
+    put_credit = d["put_entry_last"] * CONTRACT_MULTIPLIER
+    put_otm    = (d["underlying_est"] - d["put_strike"]).clip(lower=0) * CONTRACT_MULTIPLIER
+    put_m1 = 0.20 * d["underlying_est"] * CONTRACT_MULTIPLIER - put_otm + put_credit
+    put_m2 = 0.10 * d["put_strike"]     * CONTRACT_MULTIPLIER + put_credit
+    put_margin = pd.concat([put_m1, put_m2], axis=1).max(axis=1)
+
+    d["capital"] = pd.concat([call_margin, put_margin], axis=1).max(axis=1).round(2)
+    d["roc"]     = (d["portfolio_pnl"] / d["capital"]).round(4)
+
+    # Per-ticker summaries
+    summaries = []
+    for ticker, grp in d.groupby("ticker"):
+        n_entries    = len(grp)
+        total_pnl    = float(grp["portfolio_pnl"].sum())
+        total_credit = float(-grp["net_entry_premium"].sum())
+        total_cap    = float(grp["capital"].sum())
+        roc          = total_pnl / total_cap    if total_cap    > EPS else 0.0
+        roc_credit   = total_pnl / total_credit if total_credit > EPS else 0.0
+        win_rate     = float((grp["portfolio_pnl"] > 0).sum()) / n_entries if n_entries else 0.0
+        summaries.append({
+            "ticker":           ticker,
+            "n_entries":        n_entries,
+            "roc":              float(round(roc, 3)),
+            "return_on_credit": float(round(roc_credit, 3)),
+            "win_rate":         float(round(win_rate, 3)),
+        })
+
+    detail_df = d[["ticker", "entry_date", "expiry", "portfolio_pnl",
+                   "net_entry_premium", "return_on_credit", "capital", "roc"]].copy()
+
+    return summaries, detail_df
