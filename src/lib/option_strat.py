@@ -3,7 +3,7 @@ import awswrangler as wr
 import uuid
 from typing import Iterable, Optional
 from lib.constants import CONTRACT_MULTIPLIER, WEEKDAY_ALIASES
-from lib.athena_lib import athena, query_entries_range_for_leg, fetch_expiry_quotes, fetch_quotes_at_exit, query_ticker
+from lib.athena_lib import athena, query_entries_range_for_leg, fetch_expiry_quotes, fetch_quotes_at_exit, query_ticker, fetch_put_spread_trades
 from lib.data import Leg
 
 
@@ -384,6 +384,68 @@ def summarize_hold_to_maturity_strategy_from_entries(tidy_entries: pd.DataFrame)
         "return_on_credit": float(round(return_on_credit, 3)),
         "win_rate": float(round(win_rate, 3)),
     }, output_df_csv
+
+
+def summarize_put_spread_trades(df: pd.DataFrame, pricing: str = "mid") -> tuple:
+    """
+    Compute PnL, capital, and summary metrics from fetch_put_spread_trades() output.
+    pricing: "mid" or "worst".
+
+    Capital = max loss = (spread_width - net_credit) * 100  (exact, defined-risk).
+    Returns (summaries, detail_df).
+    """
+    EPS = 1e-9
+
+    if df.empty:
+        return [], pd.DataFrame()
+
+    d = df.copy()
+
+    d["short_entry_last"] = d[f"short_entry_last_{pricing}"]
+    d["long_entry_last"]  = d[f"long_entry_last_{pricing}"]
+
+    # Drop trades where the spread produces no credit — not a trade worth taking
+    d = d[d["short_entry_last"] > d["long_entry_last"]].copy()
+    if d.empty:
+        return [], pd.DataFrame()
+
+    # PnL: sold short put (profit when price falls), bought long put (profit when price rises)
+    d["short_pnl"]     = -(d["short_exit_last"] - d["short_entry_last"]) * CONTRACT_MULTIPLIER
+    d["long_pnl"]      =  (d["long_exit_last"]  - d["long_entry_last"])  * CONTRACT_MULTIPLIER
+    d["portfolio_pnl"] = (d["short_pnl"] + d["long_pnl"]).round(2)
+
+    # Net credit received (positive number)
+    d["net_credit"]        = (d["short_entry_last"] - d["long_entry_last"]).round(4)
+    d["net_entry_premium"] = (-d["net_credit"] * CONTRACT_MULTIPLIER).round(2)  # negative = credit
+
+    d["return_on_credit"] = (d["portfolio_pnl"] / (d["net_credit"] * CONTRACT_MULTIPLIER)).round(4)
+
+    # Capital = exact max loss = spread width - net credit
+    d["spread_width"] = d["short_strike"] - d["long_strike"]
+    d["capital"]      = ((d["spread_width"] - d["net_credit"]) * CONTRACT_MULTIPLIER).round(2)
+    d["roc"]          = (d["portfolio_pnl"] / d["capital"]).round(4)
+
+    summaries = []
+    for ticker, grp in d.groupby("ticker"):
+        n_entries    = len(grp)
+        total_pnl    = float(grp["portfolio_pnl"].sum())
+        total_credit = float(grp["net_credit"].sum() * CONTRACT_MULTIPLIER)
+        total_cap    = float(grp["capital"].sum())
+        roc          = total_pnl / total_cap    if total_cap    > EPS else 0.0
+        roc_credit   = total_pnl / total_credit if total_credit > EPS else 0.0
+        win_rate     = float((grp["portfolio_pnl"] > 0).sum()) / n_entries if n_entries else 0.0
+        summaries.append({
+            "ticker":           ticker,
+            "n_entries":        n_entries,
+            "roc":              float(round(roc, 3)),
+            "return_on_credit": float(round(roc_credit, 3)),
+            "win_rate":         float(round(win_rate, 3)),
+        })
+
+    detail_df = d[["ticker", "entry_date", "expiry", "portfolio_pnl",
+                   "net_entry_premium", "return_on_credit", "capital", "roc"]].copy()
+
+    return summaries, detail_df
 
 
 def summarize_strangle_trades(df: pd.DataFrame, pricing: str = "mid") -> tuple:

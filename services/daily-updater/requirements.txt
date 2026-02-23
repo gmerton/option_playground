@@ -1,0 +1,5 @@
+pandas
+pyarrow
+awswrangler
+boto3
+polygon-api-client

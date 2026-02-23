@@ -375,6 +375,172 @@ def fetch_expiry_quotes(df_entry: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
+def fetch_put_spread_trades(
+    tickers: list,
+    ts_start: str,
+    ts_end: str,
+    short_delta: float,
+    long_delta: float,
+    dte: int,
+    entry_weekdays: Optional[set] = None,
+) -> pd.DataFrame:
+    """
+    Single Athena query for a bull put spread: sell short_delta put, buy long_delta put.
+    Returns one row per (ticker, entry_date, expiry) with mid and worst entry prices for
+    both legs, plus exit prices at expiry.
+
+    Capital is exactly known: (short_strike - long_strike - net_credit) * 100.
+    entry_weekdays: optional set of Python weekday ints (Mon=0, Fri=4).
+    """
+    if isinstance(tickers, str):
+        tickers = [tickers]
+    tickers_sql = ", ".join(f"'{t}'" for t in tickers)
+
+    if entry_weekdays:
+        presto_days = ", ".join(str(w + 1) for w in sorted(entry_weekdays))
+        weekday_clause = f"AND day_of_week(o.trade_date) IN ({presto_days})"
+    else:
+        weekday_clause = ""
+
+    sql = f"""
+    WITH
+    short_put_cand AS (
+      SELECT
+        o.trade_date AS entry_date,
+        o.expiry,
+        o.ticker,
+        o.strike,
+        o.delta,
+        (o.bid + o.ask) / 2 AS entry_last_mid,
+        o.bid               AS entry_last_worst,
+        ABS(date_diff('day', o.expiry, date_add('day', {dte}, o.trade_date))) AS expiry_diff
+      FROM "{DB}"."{TABLE}" o
+      WHERE o.ticker IN ({tickers_sql})
+        AND o.cp = 'P'
+        AND o.trade_date >= TIMESTAMP '{ts_start} 00:00:00'
+        AND o.trade_date <= TIMESTAMP '{ts_end} 00:00:00'
+        AND o.bid > 0
+        AND o.ask > 0
+        AND o.open_interest > 0
+        AND (o.ask - o.bid) / ((o.ask + o.bid) / 2) <= 0.35
+        {weekday_clause}
+    ),
+    short_put_ranked AS (
+      SELECT *,
+        ROW_NUMBER() OVER (
+          PARTITION BY ticker, entry_date
+          ORDER BY expiry_diff, ABS(delta - ({-short_delta})), strike DESC
+        ) AS rn
+      FROM short_put_cand
+    ),
+    short_put_leg AS (
+      SELECT entry_date, expiry, ticker,
+             strike AS short_strike, delta AS short_delta,
+             entry_last_mid   AS short_entry_last_mid,
+             entry_last_worst AS short_entry_last_worst
+      FROM short_put_ranked WHERE rn = 1
+    ),
+    long_put_cand AS (
+      SELECT
+        o.trade_date AS entry_date,
+        o.expiry,
+        o.ticker,
+        o.strike,
+        o.delta,
+        (o.bid + o.ask) / 2 AS entry_last_mid,
+        o.ask               AS entry_last_worst,
+        ABS(date_diff('day', o.expiry, date_add('day', {dte}, o.trade_date))) AS expiry_diff
+      FROM "{DB}"."{TABLE}" o
+      WHERE o.ticker IN ({tickers_sql})
+        AND o.cp = 'P'
+        AND o.trade_date >= TIMESTAMP '{ts_start} 00:00:00'
+        AND o.trade_date <= TIMESTAMP '{ts_end} 00:00:00'
+        AND o.bid > 0
+        AND o.ask > 0
+        AND o.open_interest > 0
+        AND (o.ask - o.bid) / ((o.ask + o.bid) / 2) <= 0.35
+        {weekday_clause}
+    ),
+    long_put_ranked AS (
+      SELECT *,
+        ROW_NUMBER() OVER (
+          PARTITION BY ticker, entry_date
+          ORDER BY expiry_diff, ABS(delta - ({-long_delta})), strike DESC
+        ) AS rn
+      FROM long_put_cand
+    ),
+    long_put_leg AS (
+      SELECT entry_date, expiry, ticker,
+             strike AS long_strike, delta AS long_delta,
+             entry_last_mid   AS long_entry_last_mid,
+             entry_last_worst AS long_entry_last_worst
+      FROM long_put_ranked WHERE rn = 1
+    ),
+    matched AS (
+      SELECT
+        s.entry_date,
+        s.expiry,
+        s.ticker,
+        s.short_strike,
+        s.short_delta,
+        s.short_entry_last_mid,
+        s.short_entry_last_worst,
+        l.long_strike,
+        l.long_delta,
+        l.long_entry_last_mid,
+        l.long_entry_last_worst
+      FROM short_put_leg s
+      JOIN long_put_leg l
+        ON s.entry_date = l.entry_date
+       AND s.expiry     = l.expiry
+       AND s.ticker     = l.ticker
+       AND s.short_strike > l.long_strike
+    ),
+    short_expiry AS (
+      SELECT o.expiry, o.ticker, o.strike, MAX(o.last) AS short_exit_last
+      FROM "{DB}"."{TABLE}" o
+      JOIN matched m
+        ON o.expiry = m.expiry AND o.ticker = m.ticker AND o.strike = m.short_strike
+       AND o.trade_date = m.expiry
+      WHERE o.cp = 'P'
+      GROUP BY o.expiry, o.ticker, o.strike
+    ),
+    long_expiry AS (
+      SELECT o.expiry, o.ticker, o.strike, MAX(o.last) AS long_exit_last
+      FROM "{DB}"."{TABLE}" o
+      JOIN matched m
+        ON o.expiry = m.expiry AND o.ticker = m.ticker AND o.strike = m.long_strike
+       AND o.trade_date = m.expiry
+      WHERE o.cp = 'P'
+      GROUP BY o.expiry, o.ticker, o.strike
+    )
+    SELECT
+      m.entry_date,
+      m.expiry,
+      m.ticker,
+      m.short_strike,
+      m.short_delta,
+      m.short_entry_last_mid,
+      m.short_entry_last_worst,
+      se.short_exit_last,
+      m.long_strike,
+      m.long_delta,
+      m.long_entry_last_mid,
+      m.long_entry_last_worst,
+      le.long_exit_last
+    FROM matched m
+    JOIN short_expiry se ON m.expiry = se.expiry AND m.ticker = se.ticker AND m.short_strike = se.strike
+    JOIN long_expiry  le ON m.expiry = le.expiry AND m.ticker = le.ticker AND m.long_strike  = le.strike
+    ORDER BY m.ticker, m.entry_date
+    """
+
+    df = athena(sql)
+    for col in ("entry_date", "expiry"):
+        if col in df.columns:
+            df[col] = pd.to_datetime(df[col]).dt.date
+    return df
+
+
 def fetch_strangle_trades(
     tickers: list,
     ts_start: str,

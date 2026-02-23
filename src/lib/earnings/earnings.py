@@ -1,3 +1,4 @@
+import os
 from polygon import RESTClient
 from pathlib import Path
 from earnings_cache import save_json, load_json
@@ -38,7 +39,7 @@ def fetch_and_cache_earnings(ticker: str = "AAPL", use_cache: bool = True):
     if use_cache and CACHE.exists():
         return load_json(CACHE)
 
-    client = RESTClient("kM4B15NPLQj2QBxzQXUwaKdVytI7DrFs")
+    client = RESTClient(os.environ["POLYGON_API_KEY"])
     earnings = list(client.list_benzinga_earnings(
         ticker=ticker, limit=50, sort="date.desc"
     ))
