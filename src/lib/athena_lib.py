@@ -565,7 +565,7 @@ def fetch_strangle_trades(
     if entry_weekdays:
         # Presto day_of_week: Mon=1 .. Fri=5 .. Sun=7  (Python is Mon=0..Sun=6)
         presto_days = ", ".join(str(w + 1) for w in sorted(entry_weekdays))
-        weekday_clause = f"AND day_of_week(o.trade_date) IN ({presto_days})"
+        weekday_clause = f"AND day_of_week(trade_date) IN ({presto_days})"
     else:
         weekday_clause = ""
 
@@ -573,24 +573,33 @@ def fetch_strangle_trades(
     WITH
     call_cand AS (
       SELECT
-        o.trade_date AS entry_date,
-        o.expiry,
-        o.ticker,
-        o.strike,
-        o.delta,
-        (o.bid + o.ask) / 2 AS entry_last_mid,
-        o.bid               AS entry_last_worst,
-        ABS(date_diff('day', o.expiry, date_add('day', {dte}, o.trade_date))) AS expiry_diff
-      FROM "{DB}"."{TABLE}" o
-      WHERE o.ticker IN ({tickers_sql})
-        AND o.cp = 'C'
-        AND o.trade_date >= TIMESTAMP '{ts_start} 00:00:00'
-        AND o.trade_date <= TIMESTAMP '{ts_end} 00:00:00'
-        AND o.bid > 0
-        AND o.ask > 0
-        AND o.open_interest > 0
-        AND (o.ask - o.bid) / ((o.ask + o.bid) / 2) <= 0.35
-        {weekday_clause}
+        trade_date AS entry_date,
+        expiry,
+        ticker,
+        strike,
+        delta,
+        (bid + ask) / 2 AS entry_last_mid,
+        bid               AS entry_last_worst,
+        ABS(date_diff('day', expiry, date_add('day', {dte}, trade_date))) AS expiry_diff
+      FROM (
+        SELECT *,
+          ROW_NUMBER() OVER (
+            PARTITION BY ticker, trade_date, strike, expiry
+            ORDER BY open_interest DESC NULLS LAST, bid DESC
+          ) AS dedup_rn
+        FROM "{DB}"."{TABLE}"
+        WHERE ticker IN ({tickers_sql})
+          AND cp = 'C'
+          AND trade_date >= TIMESTAMP '{ts_start} 00:00:00'
+          AND trade_date <= TIMESTAMP '{ts_end} 00:00:00'
+          AND bid > 0
+          AND ask > 0
+          AND open_interest > 0
+          AND (ask - bid) / ((ask + bid) / 2) <= 0.35
+          AND delta IS NOT NULL
+          {weekday_clause}
+      ) deduped
+      WHERE dedup_rn = 1
     ),
     call_ranked AS (
       SELECT *,
@@ -609,24 +618,33 @@ def fetch_strangle_trades(
     ),
     put_cand AS (
       SELECT
-        o.trade_date AS entry_date,
-        o.expiry,
-        o.ticker,
-        o.strike,
-        o.delta,
-        (o.bid + o.ask) / 2 AS entry_last_mid,
-        o.bid               AS entry_last_worst,
-        ABS(date_diff('day', o.expiry, date_add('day', {dte}, o.trade_date))) AS expiry_diff
-      FROM "{DB}"."{TABLE}" o
-      WHERE o.ticker IN ({tickers_sql})
-        AND o.cp = 'P'
-        AND o.trade_date >= TIMESTAMP '{ts_start} 00:00:00'
-        AND o.trade_date <= TIMESTAMP '{ts_end} 00:00:00'
-        AND o.bid > 0
-        AND o.ask > 0
-        AND o.open_interest > 0
-        AND (o.ask - o.bid) / ((o.ask + o.bid) / 2) <= 0.35
-        {weekday_clause}
+        trade_date AS entry_date,
+        expiry,
+        ticker,
+        strike,
+        delta,
+        (bid + ask) / 2 AS entry_last_mid,
+        bid               AS entry_last_worst,
+        ABS(date_diff('day', expiry, date_add('day', {dte}, trade_date))) AS expiry_diff
+      FROM (
+        SELECT *,
+          ROW_NUMBER() OVER (
+            PARTITION BY ticker, trade_date, strike, expiry
+            ORDER BY open_interest DESC NULLS LAST, bid DESC
+          ) AS dedup_rn
+        FROM "{DB}"."{TABLE}"
+        WHERE ticker IN ({tickers_sql})
+          AND cp = 'P'
+          AND trade_date >= TIMESTAMP '{ts_start} 00:00:00'
+          AND trade_date <= TIMESTAMP '{ts_end} 00:00:00'
+          AND bid > 0
+          AND ask > 0
+          AND open_interest > 0
+          AND (ask - bid) / ((ask + bid) / 2) <= 0.35
+          AND delta IS NOT NULL
+          {weekday_clause}
+      ) deduped
+      WHERE dedup_rn = 1
     ),
     put_ranked AS (
       SELECT *,

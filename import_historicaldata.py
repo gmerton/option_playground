@@ -97,7 +97,28 @@ def transform(df_raw: pd.DataFrame) -> pd.DataFrame:
     d["resolution"]    = "daily"
     # Drop rows where cp or key fields couldn't be mapped
     d = d.dropna(subset=["cp", "strike", "expiry", "trade_date"])
+    # Deduplicate: historicaldata.net includes per-exchange quotes for the same contract.
+    # Keep the row with the highest open_interest (most representative quote).
+    d = (d.sort_values("open_interest", ascending=False, na_position="last")
+          .drop_duplicates(subset=["ticker", "trade_date", "cp", "strike", "expiry"], keep="first"))
     return d[V3_COLS]
+
+
+def _dates_already_in_v3(dates: list) -> set:
+    """Return the subset of dates that already have rows in v3 (one Athena query)."""
+    if not dates:
+        return set()
+    date_list = ", ".join(f"DATE '{d}'" for d in dates)
+    sql = f'SELECT DISTINCT trade_date FROM "{DB}"."{TABLE}" WHERE trade_date IN ({date_list})'
+    df = wr.athena.read_sql_query(
+        sql=sql,
+        database=DB,
+        workgroup=WORKGROUP,
+        data_source=CATALOG,
+        s3_output=S3_OUTPUT,
+        ctas_approach=False,
+    )
+    return set(pd.to_datetime(df["trade_date"]).dt.date)
 
 
 def athena_insert(tmp_table: str) -> None:
@@ -176,14 +197,25 @@ def main():
         with zipfile.ZipFile(zip_path) as zf:
             day_files = sorted(n for n in zf.namelist() if n.endswith("options.csv"))
 
+            # Batch idempotency check: one Athena query per ZIP file
+            candidate_dates = [
+                date.fromisoformat(f[:10]) for f in day_files
+                if date.fromisoformat(f[:10]) > CUTOFF
+                and (from_date is None or date.fromisoformat(f[:10]) >= from_date)
+            ]
+            already_loaded = _dates_already_in_v3(candidate_dates) if candidate_dates else set()
+
             for fname in day_files:
                 trade_date = date.fromisoformat(fname[:10])
 
                 if trade_date <= CUTOFF:
-                    print(f"  {trade_date} — skipped (already in v3)")
+                    print(f"  {trade_date} — skipped (before cutoff)")
                     continue
                 if from_date and trade_date < from_date:
                     print(f"  {trade_date} — skipped (before --from-date)")
+                    continue
+                if trade_date in already_loaded:
+                    print(f"  {trade_date} — skipped (already in v3)")
                     continue
 
                 print(f"  {trade_date} ...", end=" ", flush=True)
