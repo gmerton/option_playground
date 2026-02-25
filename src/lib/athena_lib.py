@@ -549,12 +549,21 @@ def fetch_strangle_trades(
     put_delta: float,
     dte: int,
     entry_weekdays: Optional[set] = None,
+    same_strike: bool = False,
+    max_delta_err: float = 0.10,
+    max_dte_err: int = 14,
 ) -> pd.DataFrame:
     """
     Single Athena query for one or more tickers, returning both mid and worst-case entry prices.
 
     Both pricings are computed in one round-trip so callers don't need a second query.
     entry_weekdays: optional set of Python weekday ints (Mon=0, Fri=4, Sun=6).
+    same_strike: if True, the put leg is selected at the same strike as the call leg
+                 (use for straddles: call_delta=0.50, put_delta=0.50, same_strike=True).
+    max_delta_err: max allowed deviation from target delta for each leg (default 0.10).
+                   Entries where |actual_delta - target_delta| > max_delta_err are dropped.
+    max_dte_err: max allowed deviation from target DTE in calendar days (default 14).
+                 Entries where |actual_expiry_diff - dte| > max_dte_err are dropped.
     Returns one row per (ticker, entry_date, expiry) with columns:
       call_entry_last_mid, call_entry_last_worst, put_entry_last_mid, put_entry_last_worst.
     """
@@ -568,6 +577,74 @@ def fetch_strangle_trades(
         weekday_clause = f"AND day_of_week(trade_date) IN ({presto_days})"
     else:
         weekday_clause = ""
+
+    put_scan = f"""
+      SELECT
+        trade_date AS entry_date,
+        expiry,
+        ticker,
+        strike,
+        delta,
+        (bid + ask) / 2 AS entry_last_mid,
+        bid               AS entry_last_worst,
+        ABS(date_diff('day', expiry, date_add('day', {dte}, trade_date))) AS expiry_diff
+      FROM (
+        SELECT *,
+          ROW_NUMBER() OVER (
+            PARTITION BY ticker, trade_date, strike, expiry
+            ORDER BY open_interest DESC NULLS LAST, bid DESC
+          ) AS dedup_rn
+        FROM "{DB}"."{TABLE}"
+        WHERE ticker IN ({tickers_sql})
+          AND cp = 'P'
+          AND trade_date >= TIMESTAMP '{ts_start} 00:00:00'
+          AND trade_date <= TIMESTAMP '{ts_end} 00:00:00'
+          AND bid > 0 AND ask > 0 AND open_interest > 0
+          AND (ask - bid) / ((ask + bid) / 2) <= 0.35
+          AND delta IS NOT NULL
+          {weekday_clause}
+      ) deduped
+      WHERE dedup_rn = 1"""
+
+    if same_strike:
+        # Straddle: look up put at the exact strike chosen for the call leg
+        put_leg_cte = f"""
+    put_cand AS ({put_scan}
+    ),
+    put_leg AS (
+      SELECT p.entry_date, p.expiry, p.ticker,
+             p.strike AS put_strike, p.delta AS put_delta,
+             p.entry_last_mid   AS put_entry_last_mid,
+             p.entry_last_worst AS put_entry_last_worst
+      FROM put_cand p
+      JOIN call_leg c
+        ON p.entry_date = c.entry_date AND p.expiry = c.expiry
+       AND p.ticker = c.ticker AND p.strike = c.call_strike
+      WHERE ABS(p.delta - {-put_delta}) <= {max_delta_err}
+    ),"""
+    else:
+        # Strangle: independently rank puts by closest delta
+        put_leg_cte = f"""
+    put_cand AS ({put_scan}
+    ),
+    put_ranked AS (
+      SELECT *,
+        ROW_NUMBER() OVER (
+          PARTITION BY ticker, entry_date
+          ORDER BY expiry_diff, ABS(delta - {-put_delta}), strike DESC
+        ) AS rn
+      FROM put_cand
+    ),
+    put_leg AS (
+      SELECT entry_date, expiry, ticker,
+             strike AS put_strike, delta AS put_delta,
+             entry_last_mid   AS put_entry_last_mid,
+             entry_last_worst AS put_entry_last_worst
+      FROM put_ranked
+      WHERE rn = 1
+        AND expiry_diff <= {max_dte_err}
+        AND ABS(delta - {-put_delta}) <= {max_delta_err}
+    ),"""
 
     sql = f"""
     WITH
@@ -592,9 +669,7 @@ def fetch_strangle_trades(
           AND cp = 'C'
           AND trade_date >= TIMESTAMP '{ts_start} 00:00:00'
           AND trade_date <= TIMESTAMP '{ts_end} 00:00:00'
-          AND bid > 0
-          AND ask > 0
-          AND open_interest > 0
+          AND bid > 0 AND ask > 0 AND open_interest > 0
           AND (ask - bid) / ((ask + bid) / 2) <= 0.35
           AND delta IS NOT NULL
           {weekday_clause}
@@ -614,53 +689,12 @@ def fetch_strangle_trades(
              strike AS call_strike, delta AS call_delta,
              entry_last_mid   AS call_entry_last_mid,
              entry_last_worst AS call_entry_last_worst
-      FROM call_ranked WHERE rn = 1
+      FROM call_ranked
+      WHERE rn = 1
+        AND expiry_diff <= {max_dte_err}
+        AND ABS(delta - {call_delta}) <= {max_delta_err}
     ),
-    put_cand AS (
-      SELECT
-        trade_date AS entry_date,
-        expiry,
-        ticker,
-        strike,
-        delta,
-        (bid + ask) / 2 AS entry_last_mid,
-        bid               AS entry_last_worst,
-        ABS(date_diff('day', expiry, date_add('day', {dte}, trade_date))) AS expiry_diff
-      FROM (
-        SELECT *,
-          ROW_NUMBER() OVER (
-            PARTITION BY ticker, trade_date, strike, expiry
-            ORDER BY open_interest DESC NULLS LAST, bid DESC
-          ) AS dedup_rn
-        FROM "{DB}"."{TABLE}"
-        WHERE ticker IN ({tickers_sql})
-          AND cp = 'P'
-          AND trade_date >= TIMESTAMP '{ts_start} 00:00:00'
-          AND trade_date <= TIMESTAMP '{ts_end} 00:00:00'
-          AND bid > 0
-          AND ask > 0
-          AND open_interest > 0
-          AND (ask - bid) / ((ask + bid) / 2) <= 0.35
-          AND delta IS NOT NULL
-          {weekday_clause}
-      ) deduped
-      WHERE dedup_rn = 1
-    ),
-    put_ranked AS (
-      SELECT *,
-        ROW_NUMBER() OVER (
-          PARTITION BY ticker, entry_date
-          ORDER BY expiry_diff, ABS(delta - {-put_delta}), strike DESC
-        ) AS rn
-      FROM put_cand
-    ),
-    put_leg AS (
-      SELECT entry_date, expiry, ticker,
-             strike AS put_strike, delta AS put_delta,
-             entry_last_mid   AS put_entry_last_mid,
-             entry_last_worst AS put_entry_last_worst
-      FROM put_ranked WHERE rn = 1
-    ),
+    {put_leg_cte}
     matched AS (
       SELECT
         c.entry_date,

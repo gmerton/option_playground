@@ -1,5 +1,5 @@
 pandas
 pyarrow
-awswrangler
+awswrangler==3.13.0
 boto3
 polygon-api-client

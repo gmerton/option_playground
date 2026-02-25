@@ -502,15 +502,22 @@ def summarize_strangle_trades(df: pd.DataFrame, pricing: str = "mid") -> tuple:
         roc          = total_pnl / total_cap    if total_cap    > EPS else 0.0
         roc_credit   = total_pnl / total_credit if total_credit > EPS else 0.0
         win_rate     = float((grp["portfolio_pnl"] > 0).sum()) / n_entries if n_entries else 0.0
+        avg_roc      = float(grp["roc"].mean()) if n_entries else 0.0
+        stddev_roc   = float(grp["roc"].std(ddof=1)) if n_entries > 1 else 0.0
         summaries.append({
             "ticker":           ticker,
             "n_entries":        n_entries,
-            "roc":              float(round(roc, 3)),
-            "return_on_credit": float(round(roc_credit, 3)),
-            "win_rate":         float(round(win_rate, 3)),
+            "roc":              float(round(roc, 4)),
+            "return_on_credit": float(round(roc_credit, 4)),
+            "win_rate":         float(round(win_rate, 4)),
+            "avg_roc":          float(round(avg_roc, 4)),
+            "stddev_roc":       float(round(stddev_roc, 4)),
         })
 
     detail_df = d[["ticker", "entry_date", "expiry", "portfolio_pnl",
-                   "net_entry_premium", "return_on_credit", "capital", "roc"]].copy()
+                   "net_entry_premium", "return_on_credit", "capital", "roc",
+                   "call_delta", "put_delta"]].copy()
 
     return summaries, detail_df
+
+

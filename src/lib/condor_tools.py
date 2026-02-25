@@ -2,7 +2,7 @@ from lib.data.Leg import Leg, Strategy, Direction, OptionType
 import pandas as pd
 from lib.option_strat import query_entries_range_for_strategy, summarize_hold_to_maturity_strategy_from_entries, summarize_strangle_trades, summarize_put_spread_trades
 from lib.athena_lib import fetch_strangle_trades, fetch_put_spread_trades
-from lib.mysql_lib import create_study, upsert_study_detail, upsert_study_summary
+from lib.mysql_lib import create_study, upsert_study_detail, upsert_study_summary, upsert_strangle_study_det
 from datetime import datetime
 import os
 
@@ -53,7 +53,9 @@ strangle = Strategy(legs=[
 
 _STRANGLE_BATCH_SIZE = 100  # scan cost is the same for any # of tickers with bucket partitioning
 
-def strangle_study(tickers, ts_start="2020-12-15", ts_end="2026-03-16", study_description="25-25 strangle"):
+def strangle_study(tickers, ts_start="2020-12-15", ts_end="2026-03-16", study_description="25-25 strangle",
+                   call_delta=0.25, put_delta=0.25, same_strike=False, file_prefix="strangle",
+                   max_delta_err=0.10, max_dte_err=14):
     import time
 
     if isinstance(tickers, str):
@@ -62,10 +64,13 @@ def strangle_study(tickers, ts_start="2020-12-15", ts_end="2026-03-16", study_de
     common_args = dict(
         ts_start=ts_start,
         ts_end=ts_end,
-        call_delta=0.25,
-        put_delta=0.25,
+        call_delta=call_delta,
+        put_delta=put_delta,
         dte=30,
         entry_weekdays={4},  # Friday
+        same_strike=same_strike,
+        max_delta_err=max_delta_err,
+        max_dte_err=max_dte_err,
     )
 
     t0 = time.perf_counter()
@@ -114,24 +119,26 @@ def strangle_study(tickers, ts_start="2020-12-15", ts_end="2026-03-16", study_de
         [{**s, "pricing": "worst"} for s in summaries_worst]
     )
     out_df = pd.DataFrame(summary_rows)
-    output_path = os.path.join(base_dir, "output", f"strangle_study_{current_time}.csv")
+    output_path = os.path.join(base_dir, "output", f"{file_prefix}_study_{current_time}.csv")
     out_df.to_csv(output_path, index=False)
 
     detail_mid["pricing"]   = "mid"
     detail_worst["pricing"] = "worst"
     detail_all = pd.concat([detail_mid, detail_worst], ignore_index=True)
-    detail_path = os.path.join(base_dir, "output", f"strangle_study_detail_{current_time}.csv")
+    detail_path = os.path.join(base_dir, "output", f"{file_prefix}_study_detail_{current_time}.csv")
     detail_all.to_csv(detail_path, index=False)
 
     study_id         = create_study(study_description)
     detail_affected  = upsert_study_detail(detail_all, study_id)
+    det_affected     = upsert_strangle_study_det(detail_all, study_id)
     summary_affected = upsert_study_summary(summaries_mid, summaries_worst, study_id)
 
     t2 = time.perf_counter()
     print(f"\n[TIMING] total: {t2-t0:.2f}s")
     print(f"Saved: {output_path}")
     print(f"Saved: {detail_path}")
-    print(f"MySQL study_id={study_id}: {detail_affected} rows upserted into study_detail")
+    print(f"MySQL study_id={study_id}: {detail_affected} rows inserted into study_detail")
+    print(f"MySQL study_id={study_id}: {det_affected} rows inserted into strangle_study_det")
     print(f"MySQL study_id={study_id}: {summary_affected} rows upserted into study_summary")
 
 def put_spread_study(tickers, ts_start="2020-12-15", ts_end="2026-03-16",
@@ -216,6 +223,21 @@ def put_spread_study(tickers, ts_start="2020-12-15", ts_end="2026-03-16",
     print(f"Saved: {detail_path}")
     print(f"MySQL study_id={study_id}: {detail_affected} rows upserted into study_detail")
     print(f"MySQL study_id={study_id}: {summary_affected} rows upserted into study_summary")
+
+
+def straddle_study(tickers, ts_start="2020-12-15", ts_end="2026-03-16", study_description="50-50 straddle"):
+    """Short ATM straddle study — same infrastructure as strangle_study but with
+    call_delta=0.50, put_delta=0.50, and same_strike=True so both legs share the ATM strike."""
+    strangle_study(
+        tickers,
+        ts_start=ts_start,
+        ts_end=ts_end,
+        call_delta=0.50,
+        put_delta=0.50,
+        same_strike=True,
+        study_description=study_description,
+        file_prefix="straddle",
+    )
 
 
 def condor_study(ticker):

@@ -114,14 +114,30 @@ def get_tickers(client: RESTClient, override: list[str] | None = None) -> list[s
 
 
 def today_et() -> date:
-    """Return today's date in US/Eastern time (DST-aware)."""
+    """Return the most recent market date in US/Eastern time.
+
+    The scheduled job runs at 10 PM ET, well after market close, so
+    'today' is always the correct trade date.  But if someone triggers
+    a manual run after midnight ET (e.g. from Pacific time), the clock
+    has already rolled to tomorrow — roll back to the previous weekday
+    so we never tag data with a future date.
+    """
     try:
         import zoneinfo
         et = zoneinfo.ZoneInfo("America/New_York")
-        return datetime.now(tz=et).date()
     except ImportError:
-        # Fallback: UTC-5 (EST); close enough for a nightly job
-        return datetime.now(tz=timezone(timedelta(hours=-5))).date()
+        et = timezone(timedelta(hours=-5))
+
+    now_et = datetime.now(tz=et)
+    d = now_et.date()
+
+    # Before 8 AM ET the market hasn't opened — use the previous weekday
+    if now_et.hour < 8:
+        d -= timedelta(days=1)
+        while d.weekday() >= 5:   # roll back over Saturday / Sunday
+            d -= timedelta(days=1)
+
+    return d
 
 
 def check_already_loaded(trade_date: date) -> bool:
