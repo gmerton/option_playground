@@ -1,10 +1,11 @@
 """
 Trade Reviewer CLI
 
-Run with:
+Review a past trade:
     PYTHONPATH=src python -m lib.trade_reviewer.cli
 
-Shows recent stock (STK) buys and lets you pick one to review.
+Evaluate a prospective trade right now:
+    PYTHONPATH=src python -m lib.trade_reviewer.cli -p TICKER
 """
 
 from __future__ import annotations
@@ -82,6 +83,21 @@ def _pick_trade(trades: list[dict]) -> dict | None:
 
 
 def main():
+    # Check for -p / --propose flag
+    if len(sys.argv) >= 3 and sys.argv[1] in ("-p", "--propose"):
+        ticker = sys.argv[2].upper()
+        print(f"=== Trade Proposal Evaluator ===")
+        print(f"Evaluating {ticker} right now...")
+        print("Calling Claude — this may take 15-30 seconds...\n")
+        print("-" * 60)
+
+        from lib.trade_reviewer.reviewer import evaluate_proposal
+        analysis = evaluate_proposal(ticker)
+        print(analysis)
+        print("-" * 60)
+        return
+
+    # Default: review a past trade
     print("=== Trade Reviewer ===")
     print("Loading recent stock buys...")
 
@@ -95,7 +111,7 @@ def main():
         return
 
     print(f"\nReviewing: {trade['symbol']} bought on {trade['trade_date']} @ ${trade['price']:.2f}")
-    print("Calling Claude Opus — this may take 15-30 seconds...\n")
+    print("Calling Claude — this may take 15-30 seconds...\n")
     print("-" * 60)
 
     from lib.trade_reviewer.reviewer import review_trade

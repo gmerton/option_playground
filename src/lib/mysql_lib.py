@@ -280,6 +280,172 @@ def recompute_summary_from_detail(study_id: int) -> int:
     return affected
 
 
+# ── options_cache helpers ─────────────────────────────────────────────────────
+
+def create_options_cache_table() -> None:
+    """Create options_cache table if it does not already exist."""
+    sql = """
+        CREATE TABLE IF NOT EXISTS options_cache (
+            ticker        VARCHAR(20)   NOT NULL,
+            trade_date    DATE          NOT NULL,
+            expiry        DATE          NOT NULL,
+            cp            CHAR(1)       NOT NULL,
+            strike        DECIMAL(10,3) NOT NULL,
+            bid           DECIMAL(10,4),
+            ask           DECIMAL(10,4),
+            last          DECIMAL(10,4),
+            mid           DECIMAL(10,4),
+            delta         DECIMAL(8,4),
+            open_interest INT,
+            volume        INT,
+            PRIMARY KEY (ticker, trade_date, expiry, cp, strike)
+        ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+    """
+    conn = _get_conn()
+    try:
+        cursor = conn.cursor()
+        cursor.execute(sql)
+        conn.commit()
+        cursor.close()
+    finally:
+        conn.close()
+
+
+def get_options_cache_max_date(ticker: str) -> "date | None":
+    """Return the latest trade_date in options_cache for *ticker*, or None."""
+    conn = _get_conn()
+    try:
+        cursor = conn.cursor()
+        cursor.execute(
+            "SELECT MAX(trade_date) FROM options_cache WHERE ticker = %s",
+            (ticker,),
+        )
+        row = cursor.fetchone()
+        cursor.close()
+    finally:
+        conn.close()
+    return row[0] if row and row[0] else None
+
+
+def upsert_options_cache(ticker: str, df: pd.DataFrame, chunk_size: int = 5000) -> int:
+    """
+    Bulk-upsert option rows into options_cache.
+
+    df must have columns: trade_date, expiry, cp, strike, bid, ask, last,
+                          mid, delta, open_interest, volume.
+    Returns total rows affected.
+    """
+    if df.empty:
+        return 0
+
+    sql = """
+        INSERT INTO options_cache
+            (ticker, trade_date, expiry, cp, strike,
+             bid, ask, last, mid, delta, open_interest, volume)
+        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+        ON DUPLICATE KEY UPDATE
+            bid           = VALUES(bid),
+            ask           = VALUES(ask),
+            last          = VALUES(last),
+            mid           = VALUES(mid),
+            delta         = VALUES(delta),
+            open_interest = VALUES(open_interest),
+            volume        = VALUES(volume)
+    """
+
+    def _to_date(v):
+        if isinstance(v, date):
+            return v
+        return pd.Timestamp(v).date()
+
+    def _int_or_none(v):
+        try:
+            f = float(v)
+            return int(f) if math.isfinite(f) else None
+        except (TypeError, ValueError):
+            return None
+
+    rows = [
+        (
+            ticker,
+            _to_date(r.trade_date),
+            _to_date(r.expiry),
+            str(r.cp),
+            _safe_float(r.strike),
+            _safe_float(r.bid),
+            _safe_float(r.ask),
+            _safe_float(r.last),
+            _safe_float(r.mid),
+            _safe_float(r.delta),
+            _int_or_none(r.open_interest),
+            _int_or_none(r.volume),
+        )
+        for r in df.itertuples(index=False)
+    ]
+
+    total = 0
+    conn = _get_conn()
+    try:
+        cursor = conn.cursor()
+        for i in range(0, len(rows), chunk_size):
+            cursor.executemany(sql, rows[i : i + chunk_size])
+            total += cursor.rowcount
+        conn.commit()
+        cursor.close()
+    finally:
+        conn.close()
+    return total
+
+
+def fetch_options_cache(ticker: str, start: "date", end: "date") -> pd.DataFrame:
+    """
+    Fetch all option rows for *ticker* with trade_date in [start, end].
+
+    Returns a DataFrame with columns:
+      trade_date, expiry, cp, strike, bid, ask, last, mid, delta,
+      open_interest, volume, dte
+    All date columns are Python date objects.
+    """
+    conn = _get_conn()
+    try:
+        cursor = conn.cursor()
+        cursor.execute(
+            """
+            SELECT trade_date, expiry, cp, strike, bid, ask, last, mid,
+                   delta, open_interest, volume
+            FROM options_cache
+            WHERE ticker = %s
+              AND trade_date BETWEEN %s AND %s
+            ORDER BY trade_date, expiry, cp, strike
+            """,
+            (ticker, start, end),
+        )
+        rows = cursor.fetchall()
+        cols = [
+            "trade_date", "expiry", "cp", "strike",
+            "bid", "ask", "last", "mid",
+            "delta", "open_interest", "volume",
+        ]
+        cursor.close()
+    finally:
+        conn.close()
+
+    if not rows:
+        return pd.DataFrame(columns=cols + ["dte"])
+
+    df = pd.DataFrame(rows, columns=cols)
+    df["trade_date"] = pd.to_datetime(df["trade_date"]).dt.date
+    df["expiry"]     = pd.to_datetime(df["expiry"]).dt.date
+    for c in ("strike", "bid", "ask", "last", "mid", "delta"):
+        df[c] = pd.to_numeric(df[c], errors="coerce")
+    df["open_interest"] = pd.to_numeric(df["open_interest"], errors="coerce")
+    df["volume"]        = pd.to_numeric(df["volume"],        errors="coerce")
+    df["dte"] = (
+        pd.to_datetime(df["expiry"]) - pd.to_datetime(df["trade_date"])
+    ).dt.days
+    return df
+
+
 def _parse_ibkr_date(v) -> date | None:
     """Convert IBKR YYYYMMDD string to a date, or None if blank/NaN."""
     try:
