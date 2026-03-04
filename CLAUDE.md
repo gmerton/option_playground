@@ -7,7 +7,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
-pip install pandas pyarrow awswrangler boto3 sqlparse aiohttp polygon-api-client requests pandas-ta
+pip install pandas pyarrow awswrangler boto3 sqlparse aiohttp polygon-api-client requests pandas-ta anthropic yfinance
 ```
 
 AWS authentication is required. Set your profile:
@@ -31,6 +31,44 @@ PYTHONPATH=src python -m lib.fly.fly_finder
 PYTHONPATH=src python -m lib.interface.sepa
 PYTHONPATH=src python -m lib.forward.ff
 ```
+
+### Trade Reviewer
+
+Review a past trade against O'Neill/CANSLIM principles (interactive menu of recent buys):
+```bash
+PYTHONPATH=src python -m lib.trade_reviewer.cli
+```
+
+Evaluate a prospective trade in real time (during market hours):
+```bash
+PYTHONPATH=src python -m lib.trade_reviewer.cli -p TICKER
+# e.g.
+PYTHONPATH=src python -m lib.trade_reviewer.cli -p PHIN
+```
+
+Requires: `ANTHROPIC_API_KEY`, `TRADIER_API_KEY`, `MYSQL_PASSWORD`
+
+### Pre-Market Watchlist
+
+Daily watchlist scanner inspired by Martin Luk and Qullamaggie (Stage 2 / EMA stack / pivot).
+
+EOD prep — run after market close (~7pm ET):
+```bash
+PYTHONPATH=src python premarket_watchlist.py --mode eod
+PYTHONPATH=src python premarket_watchlist.py --mode eod --universe nyse
+```
+
+Pre-market enrichment — run 8–9am ET (adds yfinance gap data):
+```bash
+PYTHONPATH=src python premarket_watchlist.py --mode premarket
+```
+
+Custom ticker list:
+```bash
+PYTHONPATH=src python premarket_watchlist.py --mode eod --universe NVDA,MSFT,AAPL
+```
+
+Requires: `TRADIER_API_KEY`. Pre-market mode also requires `yfinance` (`pip install yfinance`).
 
 ## Architecture
 
