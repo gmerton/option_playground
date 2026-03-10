@@ -9,6 +9,7 @@ Strategy
     (a) net spread value ≤ (1 - profit_take_pct) × net_credit_mid  [profit take]
     (b) expiry (settle at intrinsic net value of both legs)
 - Apply optional VIX threshold filter: skip entries when VIX >= threshold
+- Apply optional MA trend filter: skip entries when spot < N-day MA
 
 Delta sign convention
 ---------------------
@@ -38,17 +39,229 @@ Data sources
 ------------
 - Options data:  MySQL options_cache (synced from Athena by straddle_study.sync_options_cache)
 - VIX data:      Tradier VIX daily close, cached to data/cache/vix_daily.parquet
+- Stock prices:  Tradier daily close, cached to data/cache/{ticker}_stock.parquet
 """
 
 from __future__ import annotations
 
+import pathlib
 from datetime import date, timedelta
 from typing import Optional
 
 import numpy as np
 import pandas as pd
 
+from lib.commons.bs import implied_vol as _bs_implied_vol
 from lib.studies.put_study import fetch_vix_data
+
+_REPO_ROOT   = pathlib.Path(__file__).resolve().parents[3]
+_CACHE_DIR   = _REPO_ROOT / "data" / "cache"
+
+
+# ── Stock price / MA helpers ───────────────────────────────────────────────────
+
+def fetch_stock_history(ticker: str, start: date, end: date) -> pd.DataFrame:
+    """
+    Fetch daily close prices for ticker via Tradier, cached to
+    data/cache/{ticker}_stock.parquet.
+
+    Returns DataFrame with columns: trade_date (date), close (float).
+    Incremental: only fetches dates not already in the cache.
+    start is padded by 120 days so MA warmup is available.
+    """
+    import asyncio
+    import os
+    from lib.tradier.tradier_client_wrapper import TradierClient
+    from lib.tradier.get_daily_history import get_daily_history
+
+    cache_path = _CACHE_DIR / f"{ticker}_stock.parquet"
+    need_start = start - timedelta(days=120)   # MA warmup buffer
+    today      = date.today()
+
+    if cache_path.exists():
+        cached = pd.read_parquet(cache_path)
+        cached["trade_date"] = pd.to_datetime(cached["trade_date"]).dt.date
+        max_cached = cached["trade_date"].max()
+        if max_cached >= today - timedelta(days=2) and cached["trade_date"].min() <= need_start:
+            mask = cached["trade_date"] <= end
+            return cached[mask].reset_index(drop=True)
+        fetch_start = max_cached + timedelta(days=1)
+        print(f"Stock cache ({ticker}): extending from {fetch_start} → {today} ...")
+    else:
+        cached     = pd.DataFrame(columns=["trade_date", "close"])
+        fetch_start = need_start
+        print(f"Stock cache ({ticker}): fetching {fetch_start} → {today} ...")
+
+    api_key = os.environ.get("TRADIER_API_KEY", "")
+    if not api_key:
+        print(f"  WARNING: TRADIER_API_KEY not set — cannot fetch stock history for {ticker}")
+        return cached
+
+    async def _fetch():
+        async with TradierClient(api_key=api_key) as client:
+            return await get_daily_history(ticker, fetch_start, today, client=client)
+
+    raw = asyncio.run(_fetch())
+
+    if raw is None or raw.empty:
+        print(f"  No data returned from Tradier for {ticker}.")
+    else:
+        new_rows = raw[["close"]].copy()
+        new_rows.index = pd.to_datetime(new_rows.index).date
+        new_rows.index.name = "trade_date"
+        new_rows = new_rows.reset_index()
+        new_rows["trade_date"] = pd.to_datetime(new_rows["trade_date"]).dt.date
+        new_rows["close"]      = pd.to_numeric(new_rows["close"], errors="coerce")
+
+        combined = pd.concat([cached, new_rows], ignore_index=True)
+        combined = combined.drop_duplicates(subset=["trade_date"], keep="last")
+        combined = combined.sort_values("trade_date").reset_index(drop=True)
+        _CACHE_DIR.mkdir(parents=True, exist_ok=True)
+        combined.to_parquet(cache_path, index=False)
+        cached = combined
+
+    mask = cached["trade_date"] <= end
+    return cached[mask].reset_index(drop=True)
+
+
+def add_ma_column(
+    positions: pd.DataFrame,
+    stock_df: pd.DataFrame,
+    ma_days: int = 50,
+) -> pd.DataFrame:
+    """
+    Add ma_ratio_N column (float) to positions DataFrame.
+    ma_ratio = spot_close / rolling_MA — values > 1.0 mean spot is above the MA.
+    Entries where the MA cannot be computed (warmup) get NaN.
+    """
+    col_name = f"ma_ratio_{ma_days}"
+    df = stock_df.sort_values("trade_date").copy()
+    df["_ma"]       = df["close"].rolling(ma_days, min_periods=ma_days).mean()
+    df["_ma_ratio"] = df["close"] / df["_ma"]
+    ratio_map = df.set_index("trade_date")["_ma_ratio"].to_dict()
+
+    pos = positions.copy()
+    pos[col_name] = pos["entry_date"].map(ratio_map)
+    return pos
+
+
+def print_ma_filter_comparison(
+    sweep_df: pd.DataFrame,
+    short_delta: float,
+    wing_width: float,
+    vix_threshold: Optional[float] = None,
+    ma_days: int = 50,
+    ratio_thresholds: Optional[list] = None,
+) -> None:
+    """
+    Print spot/MA{ma_days} ratio analysis for a specific (short_delta, wing, vix) combo.
+
+    Two tables:
+    1. Threshold sweep — require ratio >= X (like fwd_vol_factor sweep).
+       Answers: "what happens if we only enter when spot/MA >= X?"
+    2. Bucket breakdown — performance by ratio range.
+       Answers: "where do the losses actually live?"
+    """
+    import math
+
+    col_name = f"ma_ratio_{ma_days}"
+    if col_name not in sweep_df.columns:
+        print(f"  No {col_name} column — run with --ma-filter {ma_days}.")
+        return
+
+    if ratio_thresholds is None:
+        ratio_thresholds = [None, 1.10, 1.05, 1.00, 0.97, 0.95, 0.90]
+
+    vt_label = (
+        "All VIX"
+        if (vix_threshold is None or (isinstance(vix_threshold, float) and math.isnan(vix_threshold)))
+        else f"VIX<{int(vix_threshold)}"
+    )
+
+    sub = sweep_df[
+        (sweep_df["short_delta_target"] == short_delta)
+        & (sweep_df["wing_delta_width"]  == wing_width)
+        & (
+            (sweep_df["vix_threshold"].isna() & (vix_threshold is None))
+            | (sweep_df["vix_threshold"] == float(vix_threshold or float("nan")))
+        )
+    ].copy()
+    closed = sub[~sub["is_open"] & ~sub["split_flag"]].copy()
+    if closed.empty:
+        print("  No data.")
+        return
+
+    base_n   = len(closed)
+    avg_ratio = closed[col_name].mean()
+    nan_count = closed[col_name].isna().sum()
+
+    print(f"\n  spot/MA{ma_days} Ratio Filter  ·  short={short_delta:.2f}  wing={wing_width:.2f}  {vt_label}")
+    print(f"  ratio = spot_close / MA{ma_days}  |  >1.0 = spot above MA (uptrend); <1.0 = spot below MA (downtrend)")
+    print(f"  Overall avg ratio: {avg_ratio:.3f}  |  NaN entries (warmup): {nan_count}")
+
+    # ── Table 1: Threshold sweep (require ratio >= X) ──────────────────────────
+    print(f"\n  Threshold sweep (require ratio ≥ X to enter):")
+    print(f"  {'min ratio':>10}  {'N':>4}  {'Skip%':>6}  {'Win%':>5}  {'ROC%':>6}  {'AnnROC%':>8}  {'AvgRatio':>9}")
+    print("  " + "─" * 64)
+
+    for thr in ratio_thresholds:
+        if thr is None:
+            grp   = closed
+            label = "  (no filter)"
+        else:
+            grp   = closed[closed[col_name].isna() | (closed[col_name] >= thr)]
+            label = f"  ≥ {thr:.2f}      "
+
+        n = len(grp)
+        if n == 0:
+            print(f"  {label:>10}  {0:>4}  {'—':>6}")
+            continue
+        skip_pct  = (base_n - n) / base_n * 100
+        win_pct   = grp["is_win"].mean() * 100
+        roc       = grp["roc"].mean() * 100
+        ann_roc   = grp["annualized_roc"].mean() * 100
+        avg_r     = grp[col_name].mean()
+        print(
+            f"  {label:>10}  {n:>4}  {skip_pct:>5.1f}%  {win_pct:>4.1f}%"
+            f"  {roc:>+5.2f}%  {ann_roc:>+7.1f}%  {avg_r:>9.3f}"
+        )
+
+    # ── Table 2: Bucket breakdown ──────────────────────────────────────────────
+    buckets = [
+        (1.10, None,  "≥ 1.10"),
+        (1.05, 1.10,  "1.05 – 1.10"),
+        (1.00, 1.05,  "1.00 – 1.05"),
+        (0.97, 1.00,  "0.97 – 1.00"),
+        (0.95, 0.97,  "0.95 – 0.97"),
+        (0.90, 0.95,  "0.90 – 0.95"),
+        (None, 0.90,  "< 0.90"),
+    ]
+
+    print(f"\n  Performance by ratio bucket:")
+    print(f"  {'Ratio range':>14}  {'N':>4}  {'Pct%':>5}  {'Win%':>5}  {'ROC%':>6}  {'AnnROC%':>8}  {'AvgRatio':>9}")
+    print("  " + "─" * 68)
+
+    for lo, hi, label in buckets:
+        mask = pd.Series([True] * len(closed), index=closed.index)
+        if lo is not None:
+            mask &= closed[col_name] >= lo
+        if hi is not None:
+            mask &= closed[col_name] < hi
+        grp = closed[mask]
+        n   = len(grp)
+        if n == 0:
+            print(f"  {label:>14}  {0:>4}")
+            continue
+        pct_of_total = n / base_n * 100
+        win_pct      = grp["is_win"].mean() * 100
+        roc          = grp["roc"].mean() * 100
+        ann_roc      = grp["annualized_roc"].mean() * 100
+        avg_r        = grp[col_name].mean()
+        print(
+            f"  {label:>14}  {n:>4}  {pct_of_total:>4.1f}%  {win_pct:>4.1f}%"
+            f"  {roc:>+5.2f}%  {ann_roc:>+7.1f}%  {avg_r:>9.3f}"
+        )
+    print()
 
 
 # ── Entry construction ─────────────────────────────────────────────────────────
@@ -365,6 +578,191 @@ def compute_spread_metrics(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
+# ── Forward volatility ────────────────────────────────────────────────────────
+
+def _leg_iv(mid: float, strike: float, dte_days: int, r: float = 0.04) -> Optional[float]:
+    """BS implied vol for a put leg using S ≈ K (ATM approximation)."""
+    T = dte_days / 365.0
+    if T <= 0 or mid <= 0 or strike <= 0:
+        return None
+    return _bs_implied_vol(price=mid, S=strike, K=strike, T=T, r=r, q=0.0, opt_type="put")
+
+
+def enrich_put_spreads_with_fwd_vol(
+    positions: pd.DataFrame,
+    df_opts: pd.DataFrame,
+    r: float = 0.04,
+    min_gap: int = 15,
+    max_gap: int = 60,
+) -> pd.DataFrame:
+    """
+    Add forward vol metrics to put spread positions.
+
+    Uses ATM puts at (entry_date, spread_expiry) → near_iv, then finds the next
+    available expiry min_gap–max_gap days later → far_iv. Computes sigma_fwd and
+    fwd_vol_factor via variance decomposition.
+
+    Added columns: near_iv, far_iv, sigma_fwd, fwd_vol_factor
+      fwd_vol_factor < 1: market expects vol to FALL → favorable for short puts
+      fwd_vol_factor > 1: market expects vol to RISE → unfavorable
+      NaN: extreme backwardation (forward variance < 0) or missing data
+    """
+    if positions.empty:
+        for col in ("near_iv", "far_iv", "sigma_fwd", "fwd_vol_factor"):
+            positions[col] = np.nan
+        return positions
+
+    puts = df_opts[df_opts["cp"] == "P"].copy()
+    for col in ("trade_date", "expiry"):
+        if pd.api.types.is_datetime64_any_dtype(puts[col]):
+            puts[col] = puts[col].dt.date
+
+    puts = puts[puts["delta"].notna() & (puts["mid"] > 0)].copy()
+    puts["_delta_dist"] = (puts["delta"] - (-0.50)).abs()
+    puts_atm = (
+        puts.sort_values(["trade_date", "expiry", "_delta_dist"])
+        .drop_duplicates(subset=["trade_date", "expiry"], keep="first")
+        [["trade_date", "expiry", "strike", "mid", "dte"]]
+        .copy()
+    )
+    puts_atm["trade_date"] = puts_atm["trade_date"].apply(
+        lambda x: x if isinstance(x, date) else x.date()
+    )
+    puts_atm["expiry"] = puts_atm["expiry"].apply(
+        lambda x: x if isinstance(x, date) else x.date()
+    )
+    lookup = puts_atm.set_index(["trade_date", "expiry"])
+
+    expiries_by_date = (
+        puts_atm.groupby("trade_date")["expiry"]
+        .apply(lambda s: sorted(s.unique()))
+        .to_dict()
+    )
+
+    near_ivs, far_ivs, sigmas_fwd, factors = [], [], [], []
+
+    for _, row in positions.iterrows():
+        entry_date  = row["entry_date"]
+        near_expiry = row["expiry"]
+        if isinstance(near_expiry, str):
+            near_expiry = date.fromisoformat(near_expiry)
+        if isinstance(entry_date, str):
+            entry_date = date.fromisoformat(entry_date)
+
+        s_iv = l_iv = sigma_fwd = factor = None
+
+        near_key = (entry_date, near_expiry)
+        if near_key in lookup.index:
+            nr = lookup.loc[near_key]
+            s_iv = _leg_iv(nr["mid"], nr["strike"], int(nr["dte"]), r)
+
+            if s_iv:
+                for far_exp in expiries_by_date.get(entry_date, []):
+                    gap = (pd.Timestamp(far_exp) - pd.Timestamp(near_expiry)).days
+                    if min_gap <= gap <= max_gap:
+                        far_key = (entry_date, far_exp)
+                        if far_key in lookup.index:
+                            fr = lookup.loc[far_key]
+                            l_iv = _leg_iv(fr["mid"], fr["strike"], int(fr["dte"]), r)
+                            if l_iv:
+                                T1 = nr["dte"] / 365.0
+                                T2 = fr["dte"] / 365.0
+                                dT = T2 - T1
+                                if dT > 0:
+                                    var_fwd = (l_iv**2 * T2 - s_iv**2 * T1) / dT
+                                    if var_fwd > 0:
+                                        sigma_fwd = var_fwd ** 0.5
+                                        factor    = sigma_fwd / s_iv
+                        break
+
+        near_ivs.append(s_iv)
+        far_ivs.append(l_iv)
+        sigmas_fwd.append(sigma_fwd)
+        factors.append(factor)
+
+    pos = positions.copy()
+    pos["near_iv"]        = near_ivs
+    pos["far_iv"]         = far_ivs
+    pos["sigma_fwd"]      = sigmas_fwd
+    pos["fwd_vol_factor"] = factors
+    return pos
+
+
+def print_fwd_vol_factor_sweep(
+    sweep_df: pd.DataFrame,
+    short_delta: float,
+    wing_width: float,
+    vix_threshold: Optional[float] = None,
+    fwd_vol_thresholds: Optional[list] = None,
+) -> None:
+    """
+    Print effect of a max-fwd_vol_factor filter on put spread performance.
+
+    fwd_vol_factor = sigma_fwd / near_iv
+      < 1: market expects vol to FALL → favorable for short puts (enter)
+      > 1: market expects vol to RISE → unfavorable (consider skipping)
+      NaN: extreme backwardation or missing far expiry → always included
+    """
+    import math
+
+    if fwd_vol_thresholds is None:
+        fwd_vol_thresholds = [None, 1.30, 1.20, 1.10, 1.00, 0.90, 0.80]
+
+    def _vix_label(v) -> str:
+        return "All VIX" if (v is None or (isinstance(v, float) and math.isnan(float(v or 0)))) else f"VIX<{int(v)}"
+
+    sub = sweep_df[
+        (sweep_df["short_delta_target"] == short_delta)
+        & (sweep_df["wing_delta_width"]  == wing_width)
+    ].copy()
+    if vix_threshold is not None:
+        sub = sub[sub["vix_threshold"] == float(vix_threshold)]
+    else:
+        sub = sub[sub["vix_threshold"].isna()]
+
+    closed_base = sub[~sub["is_open"] & ~sub["split_flag"]]
+    if closed_base.empty:
+        print("  No data.")
+        return
+
+    vix_lbl    = _vix_label(vix_threshold)
+    base_n     = len(closed_base)
+    avg_factor = closed_base["fwd_vol_factor"].mean()
+    nan_count  = closed_base["fwd_vol_factor"].isna().sum()
+
+    print(f"\n  Forward Vol Factor Filter  ·  short={short_delta:.2f}  wing={wing_width:.2f}  {vix_lbl}")
+    print(f"  fwd_vol_factor = sigma_fwd / near_iv  |  <1.0 = vol expected to fall (favorable for short puts)")
+    print(f"  Overall avg factor: {avg_factor:.3f}  |  NaN entries: {nan_count}")
+    print(f"  {'max factor':>12}  {'N':>4}  {'Skip%':>6}  {'Win%':>5}  {'ROC%':>6}  {'AnnROC%':>8}  {'AvgFactor':>9}")
+    print("  " + "-" * 68)
+
+    for thr in fwd_vol_thresholds:
+        if thr is None:
+            grp   = closed_base
+            label = "  (no filter)"
+        else:
+            grp   = closed_base[
+                closed_base["fwd_vol_factor"].isna() | (closed_base["fwd_vol_factor"] <= thr)
+            ]
+            label = f"  ≤ {thr:.2f}      "
+
+        n = len(grp)
+        if n == 0:
+            print(f"  {label:>12}  {n:>4}  {'—':>6}")
+            continue
+
+        skip_pct = (base_n - n) / base_n * 100
+        win_pct  = grp["is_win"].mean() * 100
+        roc      = grp["roc"].mean() * 100
+        ann_roc  = grp["annualized_roc"].mean() * 100
+        avg_f    = grp["fwd_vol_factor"].mean()
+        print(
+            f"  {label:>12}  {n:>4}  {skip_pct:>5.1f}%  {win_pct:>4.1f}%"
+            f"  {roc:>+5.2f}%  {ann_roc:>+7.1f}%  {avg_f:>9.3f}"
+        )
+    print()
+
+
 # ── Sweep orchestrator ─────────────────────────────────────────────────────────
 
 def run_spread_delta_sweep(
@@ -380,6 +778,9 @@ def run_spread_delta_sweep(
     max_delta_err: float = 0.08,
     max_spread_pct: Optional[float] = None,
     profit_take_pct: float = 0.50,
+    max_fwd_vol_factor: Optional[float] = None,
+    stock_df: Optional[pd.DataFrame] = None,
+    ma_filter_days: Optional[int] = None,
 ) -> pd.DataFrame:
     """
     Run the put spread study across all (short_delta, wing_width, vix_threshold) combos.
@@ -415,6 +816,20 @@ def run_spread_delta_sweep(
                 continue
 
             positions["vix_on_entry"] = positions["entry_date"].map(vix_lookup)
+            positions = enrich_put_spreads_with_fwd_vol(positions, df_opts)
+
+            if stock_df is not None and ma_filter_days is not None:
+                positions = add_ma_column(positions, stock_df, ma_filter_days)
+
+            if max_fwd_vol_factor is not None:
+                positions = positions[
+                    positions["fwd_vol_factor"].isna()
+                    | (positions["fwd_vol_factor"] <= max_fwd_vol_factor)
+                ]
+            if positions.empty:
+                print("no entries after fwd_vol_factor filter.")
+                continue
+
             positions = find_put_spread_exits(positions, df_opts, profit_take_pct=profit_take_pct)
             positions = compute_spread_metrics(positions)
 
@@ -612,6 +1027,9 @@ def run_put_spread_study(
     detail_short_delta: Optional[float] = None,
     detail_wing_width: Optional[float] = None,
     detail_vix: Optional[float] = None,
+    fwd_vol_thresholds: Optional[list] = None,
+    max_fwd_vol_factor: Optional[float] = None,
+    ma_filter_days: Optional[int] = None,
 ) -> pd.DataFrame:
     """
     Full pipeline: sync options_cache → VIX fetch → load → sweep → print → CSV.
@@ -638,7 +1056,16 @@ def run_put_spread_study(
         return pd.DataFrame()
     print(f"  {len(df_opts):,} rows loaded.")
 
-    # 4. Run sweep
+    # 4. Stock price history (for MA filter)
+    stock_df: Optional[pd.DataFrame] = None
+    if ma_filter_days is not None:
+        print(f"Fetching {ticker} daily price history for MA{ma_filter_days} filter ...")
+        stock_df = fetch_stock_history(ticker, start, end)
+        if stock_df.empty:
+            print("  WARNING: no stock price data — MA filter will be skipped.")
+            stock_df = None
+
+    # 5. Run sweep
     print(
         f"\nRunning put spread sweep:"
         f" short_deltas={short_delta_targets}"
@@ -657,6 +1084,9 @@ def run_put_spread_study(
         max_delta_err=max_delta_err,
         max_spread_pct=max_spread_pct,
         profit_take_pct=profit_take_pct,
+        max_fwd_vol_factor=max_fwd_vol_factor,
+        stock_df=stock_df,
+        ma_filter_days=ma_filter_days,
     )
 
     if not sweep.empty:
@@ -672,9 +1102,18 @@ def run_put_spread_study(
         dte_target, profit_take_pct, ticker=ticker,
     )
 
-    # 6. Optional per-year detail
+    # 6. Optional per-year detail + fwd vol factor sweep + MA filter comparison
     if detail_short_delta is not None and detail_wing_width is not None:
         print_spread_year_detail(sweep, detail_short_delta, detail_wing_width, detail_vix)
+        if "fwd_vol_factor" in sweep.columns:
+            print_fwd_vol_factor_sweep(
+                sweep, detail_short_delta, detail_wing_width, detail_vix,
+                fwd_vol_thresholds,
+            )
+        if ma_filter_days is not None:
+            print_ma_filter_comparison(
+                sweep, detail_short_delta, detail_wing_width, detail_vix, ma_filter_days,
+            )
 
     # 7. CSV
     if output_csv:
@@ -686,6 +1125,7 @@ def run_put_spread_study(
             "short_mid", "short_bid", "net_credit_mid", "net_credit_worst",
             "credit_pct_of_width", "max_loss",
             "vix_on_entry",
+            "near_iv", "far_iv", "sigma_fwd", "fwd_vol_factor",
             "exit_date", "exit_net_value", "exit_type", "days_held",
             "net_pnl", "net_pnl_worst",
             "pnl_pct", "roc", "annualized_roc",

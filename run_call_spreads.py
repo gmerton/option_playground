@@ -119,6 +119,16 @@ def main() -> None:
         help="VIX threshold for the per-year detail (omit = no filter)",
     )
     parser.add_argument(
+        "--max-fwd-vol-factor", type=float, default=None,
+        help="Maximum fwd_vol_factor at entry (sigma_fwd/near_iv; e.g. 1.0 = only enter "
+             "when market expects vol to fall or stay flat)",
+    )
+    parser.add_argument(
+        "--fwd-vol-thresholds", type=_parse_floats, default=None,
+        help="Comma-separated fwd_vol_factor thresholds to sweep in detail output "
+             "(e.g. 1.30,1.20,1.10,1.00,0.90); default sweeps a preset list",
+    )
+    parser.add_argument(
         "--output", type=str, default=None,
         help="CSV output path; defaults to <ticker_lower>_call_spreads_<today>.csv",
     )
@@ -163,6 +173,8 @@ def main() -> None:
         detail_short_delta=args.detail_short_delta,
         detail_wing_width=args.detail_wing,
         detail_vix=args.detail_vix,
+        max_fwd_vol_factor=args.max_fwd_vol_factor,
+        fwd_vol_thresholds=args.fwd_vol_thresholds,
     )
 
 

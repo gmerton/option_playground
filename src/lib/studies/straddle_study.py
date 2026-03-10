@@ -65,6 +65,44 @@ XOP_SPLIT_DATES: list[date] = [
     date(2020, 6, 9),   # 1:4 reverse split
 ]
 USO_SPLIT_DATES: list[date] = []  # post-restructuring study window avoids the 2020 break
+XLU_SPLIT_DATES: list[date] = []  # XLU has no reverse splits
+XLP_SPLIT_DATES: list[date] = []  # XLP has no reverse splits (2019 forward split handled by delta selection)
+IWM_SPLIT_DATES: list[date] = []  # IWM has no reverse splits
+GDX_SPLIT_DATES: list[date] = []  # GDX has no reverse splits
+QQQ_SPLIT_DATES: list[date] = []  # QQQ has no reverse splits
+INDA_SPLIT_DATES: list[date] = []  # INDA has no reverse splits
+
+UVIX_SPLIT_DATES: list[date] = [
+    date(2023, 10, 11),  # ~1:4 reverse split (strikes ~$10 → ~$40)
+    date(2025, 1, 15),   # ~1:4 reverse split (strikes ~$8 → ~$33)
+]
+
+TMF_SPLIT_DATES: list[date] = [
+    date(2016, 8, 25),   # 1:4 forward split (price ~$116 → ~$29; pre-2018 study window)
+    date(2023, 12, 5),   # 1:10 reverse split (price ~$6 → ~$60)
+]
+
+EEM_SPLIT_DATES: list[date] = []  # EEM has no splits in the study window
+XLF_SPLIT_DATES: list[date] = []  # XLF has no splits in the study window
+ASHR_SPLIT_DATES: list[date] = []  # ASHR has no known splits in the study window
+FXI_SPLIT_DATES: list[date] = []   # FXI has no known splits in the study window
+SOXX_SPLIT_DATES: list[date] = []  # SOXX had a 2:1 forward split 2021-10-13; delta selection handles it naturally
+
+SQQQ_SPLIT_DATES: list[date] = [
+    date(2022, 5, 24),  # 1:10 reverse split (QQQ crash lifted SQQQ; post-crash re-base)
+    # TODO: verify additional splits from Athena price data; there may be a 2023 split
+]
+
+BJ_SPLIT_DATES: list[date] = []    # BJ's Wholesale Club; IPO June 2018, no splits
+YINN_SPLIT_DATES: list[date] = [
+    date(2021, 9, 21),  # 1:5 reverse split
+    # TODO: verify additional splits from Athena price data
+]
+
+GEV_SPLIT_DATES:  list[date] = []   # GE Vernova; spun off from GE April 2, 2024 — no splits
+CLS_SPLIT_DATES:  list[date] = []   # Celestica; no known splits in study window
+FN_SPLIT_DATES:   list[date] = []   # Fabrinet; no known splits in study window
+CASY_SPLIT_DATES: list[date] = []   # Casey's General Stores; no known splits in study window
 
 
 # ── Athena → MySQL sync ───────────────────────────────────────────────────────

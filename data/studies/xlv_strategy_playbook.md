@@ -220,6 +220,45 @@ with both UVXY and TLT, and draws on a completely different underlying driver
 
 ---
 
+## Forward Vol Factor Research
+
+The fwd_vol_factor (σ_fwd / near_iv) was tested on the confirmed parameters
+(short=0.25, wing=0.05, All VIX, 374 trades).
+
+XLV's avg fwd_vol_factor is **1.085** — slightly in contango. Similar to GLD.
+
+```
+  max fwd_vol_factor    N   Skip%   Win%     ROC%   AnnROC%   AvgFactor
+  -----------------------------------------------------------------------
+  (no filter)          374    0.0%  92.5%   +6.82%   +558.8%       1.085
+  ≤ 1.30               320   14.4%  93.4%   +7.96%   +589.8%       1.027
+  ≤ 1.20               273   27.0%  93.4%   +7.89%   +584.1%       0.990
+  ≤ 1.10               209   44.1%  93.3%   +8.44%   +613.6%       0.941
+  ≤ 1.00               128   65.8%  93.0%   +9.58%   +689.6%       0.873
+  ≤ 0.90                64   82.9%  96.9%  +11.99%   +857.4%       0.780
+  ≤ 0.80                29   92.2% 100.0%  +18.01%  +1213.4%       0.683
+```
+*(NaN entries: 1 of 374)*
+
+**Strong monotonic improvement throughout.** XLV already has a very high win rate
+(92.5%) at baseline, but the factor filter continues to improve both win rate and ROC
+all the way to ≤ 0.80 (100% win rate on 29 trades). The pattern is remarkably consistent.
+
+**Sweet spots:**
+- **≤ 1.10** (209 trades, ~26/year): Minimal frequency loss, +8.44% ROC (+24% lift)
+- **≤ 1.00** (128 trades, ~16/year): +9.58% ROC (+40% lift), 93% win, AnnROC +690%
+- **≤ 0.90** (64 trades, ~8/year): 97% win, +11.99% ROC — very low frequency
+
+**Interpretation:** XLV's beta to the market means that when near-term vol is elevated
+relative to forward vol (factor < 1.0), the market has just processed a fear event and
+expects calm ahead. Drug pricing scares and healthcare shocks that cause losses tend to
+accompany elevated forward vol expectations.
+
+**Decision:** Current confirmed strategy uses no fwd_vol_factor filter. The ≤ 1.10
+filter provides a modest but reliable lift with minimal frequency impact.
+
+---
+
 ## Research Notes
 
 - **Call spread rejected**: Short calls tested at 0.10Δ/0.05Δ (only viable delta for XLV).

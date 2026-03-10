@@ -50,6 +50,11 @@ from datetime import date
 from lib.studies.straddle_study import (
     UVXY_SPLIT_DATES, TLT_SPLIT_DATES, GLD_SPLIT_DATES,
     XLE_SPLIT_DATES, XLV_SPLIT_DATES, XOP_SPLIT_DATES, USO_SPLIT_DATES,
+    XLU_SPLIT_DATES, XLP_SPLIT_DATES, IWM_SPLIT_DATES, GDX_SPLIT_DATES,
+    QQQ_SPLIT_DATES, INDA_SPLIT_DATES, UVIX_SPLIT_DATES, TMF_SPLIT_DATES,
+    EEM_SPLIT_DATES, XLF_SPLIT_DATES, ASHR_SPLIT_DATES, FXI_SPLIT_DATES,
+    SOXX_SPLIT_DATES, SQQQ_SPLIT_DATES, BJ_SPLIT_DATES, YINN_SPLIT_DATES,
+    GEV_SPLIT_DATES, CLS_SPLIT_DATES, FN_SPLIT_DATES, CASY_SPLIT_DATES,
 )
 
 
@@ -238,6 +243,382 @@ TICKER_CONFIG: dict[str, dict] = {
         "opt_call_vix_min": (0.0,  30.0),
     },
 
+    "XLP": {
+        # Consumer Staples Select Sector SPDR. Non-cyclical, pricing-power driven,
+        # structural upward bias. No sector-specific legislative risk (unlike XLV).
+        # XLP had a 2:1 forward split in Oct 2019; delta-based selection handles this
+        # naturally as strikes rescale with spot. No reverse splits.
+        "start": date(2018, 1, 1),
+        "split_dates": XLP_SPLIT_DATES,
+
+        # Low IV (~12–18%); conservative delta range similar to XLV.
+        "put_deltas":   [0.10, 0.15, 0.20, 0.25, 0.30],
+        "short_deltas": [0.10, 0.15, 0.20, 0.25, 0.30],
+        "wing_widths":  [0.05, 0.10, 0.15],
+        "vix_thresholds": [None, 30, 25, 20],
+
+        "opt_short_delta":  (0.10, 0.35),
+        "opt_put_delta":    (0.10, 0.30),
+        "opt_wing_width":   (0.05, 0.20),
+        "opt_profit_take":  (0.30, 0.70),
+        "opt_max_spread":   (0.10, 0.40),
+        "opt_put_vix_max":  (15.0, 45.0),
+        "opt_call_vix_min": (0.0,  30.0),
+    },
+
+    "XLU": {
+        # Utilities Select Sector SPDR. Highly rate-sensitive; mean-reverts around
+        # Fed expectations. Periodic IV spikes on rate surprises followed by calm —
+        # ideal calendar spread candidate. No reverse splits.
+        "start": date(2018, 1, 1),
+        "split_dates": XLU_SPLIT_DATES,
+
+        # Low IV (~15–20%); conservative delta range.
+        "put_deltas":   [0.10, 0.15, 0.20, 0.25, 0.30],
+        "short_deltas": [0.10, 0.15, 0.20, 0.25, 0.30],
+        "wing_widths":  [0.05, 0.10, 0.15],
+        "vix_thresholds": [None, 30, 25, 20],
+
+        "opt_short_delta":  (0.10, 0.35),
+        "opt_put_delta":    (0.10, 0.30),
+        "opt_wing_width":   (0.05, 0.20),
+        "opt_profit_take":  (0.30, 0.70),
+        "opt_max_spread":   (0.10, 0.40),
+        "opt_put_vix_max":  (15.0, 45.0),
+        "opt_call_vix_min": (0.0,  30.0),
+    },
+
+    "QQQ": {
+        # Invesco Nasdaq 100 ETF. Tech-heavy (Apple, Microsoft, Nvidia, etc.).
+        # IV ~20–30% in normal regimes, spikes to 40%+ in risk-off. No reverse splits.
+        # 2018 covers: rate hike cycle, COVID crash/recovery, 2022 bear market (−33%),
+        # and the 2023–2024 AI-driven rally (+55%, +25%).
+        "start": date(2018, 1, 1),
+        "split_dates": QQQ_SPLIT_DATES,
+
+        # Moderate IV — similar range to IWM but slightly lower beta moves.
+        "put_deltas":   [0.10, 0.15, 0.20, 0.25, 0.30, 0.35],
+        "short_deltas": [0.15, 0.20, 0.25, 0.30, 0.35, 0.40],
+        "wing_widths":  [0.05, 0.10, 0.15],
+        "vix_thresholds": [None, 30, 25, 20],
+
+        "opt_short_delta":  (0.15, 0.45),
+        "opt_put_delta":    (0.10, 0.40),
+        "opt_wing_width":   (0.05, 0.20),
+        "opt_profit_take":  (0.30, 0.70),
+        "opt_max_spread":   (0.10, 0.40),
+        "opt_put_vix_max":  (15.0, 45.0),
+        "opt_call_vix_min": (0.0,  30.0),
+    },
+
+    "GDX": {
+        # VanEck Gold Miners ETF. Tracks large gold/silver mining companies.
+        # Higher beta to gold price (~1.5–2×), higher IV (~25–40%) than GLD.
+        # Structural upward drift mirrors gold's inflation-hedge tailwind.
+        # No reverse splits.
+        "start": date(2018, 1, 1),
+        "split_dates": GDX_SPLIT_DATES,
+
+        # Higher IV than GLD allows wider delta sweep while staying OTM.
+        "put_deltas":   [0.15, 0.20, 0.25, 0.30, 0.35, 0.40],
+        "short_deltas": [0.15, 0.20, 0.25, 0.30, 0.35, 0.40],
+        "wing_widths":  [0.05, 0.10, 0.15],
+        "vix_thresholds": [None, 30, 25, 20],
+
+        "opt_short_delta":  (0.15, 0.45),
+        "opt_put_delta":    (0.10, 0.40),
+        "opt_wing_width":   (0.05, 0.20),
+        "opt_profit_take":  (0.30, 0.70),
+        "opt_max_spread":   (0.10, 0.40),
+        "opt_put_vix_max":  (15.0, 45.0),
+        "opt_call_vix_min": (0.0,  30.0),
+    },
+
+    "IWM": {
+        # iShares Russell 2000 ETF. Small-cap index, highest equity beta, most
+        # sensitive to credit conditions and rate expectations. No reverse splits.
+        # 2018 covers: rate hike cycle, COVID crash/recovery, and the 2022 bear market.
+        "start": date(2018, 1, 1),
+        "split_dates": IWM_SPLIT_DATES,
+
+        # IV ~20–30% in normal regimes, spikes to 40%+ in selloffs. Wider delta
+        # range than TLT/GLD to capture higher premiums when vol is elevated.
+        "put_deltas":   [0.10, 0.15, 0.20, 0.25, 0.30, 0.35],
+        "short_deltas": [0.15, 0.20, 0.25, 0.30, 0.35, 0.40],
+        "wing_widths":  [0.05, 0.10, 0.15],
+        "vix_thresholds": [None, 30, 25, 20],
+
+        "opt_short_delta":  (0.15, 0.45),
+        "opt_put_delta":    (0.10, 0.40),
+        "opt_wing_width":   (0.05, 0.20),
+        "opt_profit_take":  (0.30, 0.70),
+        "opt_max_spread":   (0.10, 0.40),
+        "opt_put_vix_max":  (15.0, 40.0),
+        "opt_call_vix_min": (0.0,  30.0),
+    },
+
+    "EEM": {
+        # iShares MSCI Emerging Markets ETF. Broad EM basket — China, Taiwan,
+        # India, Brazil, Korea, etc. More range-bound than single-country ETFs
+        # (~$34–53 for most of 2015–2024). IV ~25–30%. No splits.
+        "start": date(2018, 1, 1),
+        "split_dates": EEM_SPLIT_DATES,
+
+        "put_deltas":   [0.10, 0.15, 0.20, 0.25, 0.30, 0.35],
+        "short_deltas": [0.15, 0.20, 0.25, 0.30, 0.35],
+        "wing_widths":  [0.05, 0.10, 0.15],
+        "vix_thresholds": [None, 30, 25, 20],
+
+        "opt_short_delta":  (0.15, 0.40),
+        "opt_put_delta":    (0.10, 0.35),
+        "opt_wing_width":   (0.05, 0.20),
+        "opt_profit_take":  (0.30, 0.70),
+        "opt_max_spread":   (0.10, 0.40),
+        "opt_put_vix_max":  (15.0, 45.0),
+        "opt_call_vix_min": (0.0,  30.0),
+    },
+
+    "XLF": {
+        # Financial Select Sector SPDR. Banks, insurance, asset managers.
+        # Rate-sensitive but oscillates with the cycle rather than trending
+        # structurally. Upward drift 2018–2026 ($28→$55). IV ~20–25%. No splits.
+        "start": date(2018, 1, 1),
+        "split_dates": XLF_SPLIT_DATES,
+
+        "put_deltas":   [0.10, 0.15, 0.20, 0.25, 0.30, 0.35],
+        "short_deltas": [0.10, 0.15, 0.20, 0.25, 0.30, 0.35],
+        "wing_widths":  [0.05, 0.10, 0.15],
+        "vix_thresholds": [None, 30, 25, 20],
+
+        "opt_short_delta":  (0.10, 0.35),
+        "opt_put_delta":    (0.10, 0.35),
+        "opt_wing_width":   (0.05, 0.20),
+        "opt_profit_take":  (0.30, 0.70),
+        "opt_max_spread":   (0.10, 0.40),
+        "opt_put_vix_max":  (15.0, 45.0),
+        "opt_call_vix_min": (0.0,  30.0),
+    },
+
+    "TMF": {
+        # Direxion Daily 20+ Year Treasury Bull 3X Shares. 3x leveraged TLT.
+        # Two splits in history: 1:4 forward split 2016-08-25 (pre-study window),
+        # 1:10 reverse split 2023-12-05 (within study window).
+        # Higher IV than TLT (~40-60%) from 3x leverage. Same directional thesis:
+        # short calls when rates are rising / TLT falling (VIX≥20 regime).
+        "start": date(2018, 1, 1),
+        "split_dates": TMF_SPLIT_DATES,
+
+        # Higher IV than TLT supports wider delta sweep.
+        "put_deltas":   [0.10, 0.15, 0.20, 0.25, 0.30, 0.35],
+        "short_deltas": [0.20, 0.25, 0.30, 0.35, 0.40],
+        "wing_widths":  [0.05, 0.10, 0.15],
+        "vix_thresholds": [None, 30, 25, 20],
+
+        "opt_short_delta":  (0.15, 0.45),
+        "opt_put_delta":    (0.10, 0.35),
+        "opt_wing_width":   (0.05, 0.20),
+        "opt_profit_take":  (0.30, 0.70),
+        "opt_max_spread":   (0.10, 0.40),
+        "opt_put_vix_max":  (15.0, 45.0),
+        "opt_call_vix_min": (0.0,  30.0),
+    },
+
+    "UVIX": {
+        # ProShares Ultra VIX Short-Term Futures ETF. 2x leveraged VIX futures.
+        # Launched 2022-04-14. Two reverse splits within the study window:
+        #   2023-10-11 (~1:4) and 2025-01-15 (~1:4).
+        # Structurally similar to UVXY (1.5x) but higher leverage = higher IV,
+        # faster decay, and lower price. Low price = liquidity risk on premiums.
+        "start": date(2022, 4, 14),
+        "split_dates": UVIX_SPLIT_DATES,
+
+        # High IV (80–150%) from 2x leverage. Wider delta sweep than UVXY viable.
+        "put_deltas":   [0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40],
+        "short_deltas": [0.30, 0.35, 0.40, 0.50],
+        "wing_widths":  [0.10, 0.15, 0.20],
+        "vix_thresholds": [None, 30, 25, 20],
+
+        "opt_short_delta":  (0.30, 0.55),
+        "opt_put_delta":    (0.10, 0.45),
+        "opt_wing_width":   (0.05, 0.25),
+        "opt_profit_take":  (0.30, 0.70),
+        "opt_max_spread":   (0.15, 0.50),
+        "opt_put_vix_max":  (15.0, 35.0),
+        "opt_call_vix_min": (0.0,  25.0),
+    },
+
+    "INDA": {
+        # iShares MSCI India ETF. Tracks large/mid-cap Indian equities.
+        # EM risk premium pushes IV higher (~20–30%) than US large-cap ETFs.
+        # No reverse splits. 2018 captures rate hike cycle, COVID crash/recovery,
+        # and the post-2020 India growth rally.
+        "start": date(2018, 1, 1),
+        "split_dates": INDA_SPLIT_DATES,
+
+        # Moderate-to-high IV; similar sweep to IWM/QQQ.
+        "put_deltas":   [0.10, 0.15, 0.20, 0.25, 0.30, 0.35],
+        "short_deltas": [0.15, 0.20, 0.25, 0.30, 0.35],
+        "wing_widths":  [0.05, 0.10, 0.15],
+        "vix_thresholds": [None, 30, 25, 20],
+
+        "opt_short_delta":  (0.15, 0.40),
+        "opt_put_delta":    (0.10, 0.35),
+        "opt_wing_width":   (0.05, 0.20),
+        "opt_profit_take":  (0.30, 0.70),
+        "opt_max_spread":   (0.10, 0.40),
+        "opt_put_vix_max":  (15.0, 45.0),
+        "opt_call_vix_min": (0.0,  30.0),
+    },
+
+    "ASHR": {
+        # Xtrackers Harvest CSI 300 China A-Shares ETF. Tracks mainland China
+        # A-shares via the CSI 300 index. Higher China-specific risk than EEM or FXI
+        # (domestic policy, capital controls, PBOC intervention). IV ~25–35%.
+        # No known splits. Price range ~$20–35 in study window.
+        "start": date(2018, 1, 1),
+        "split_dates": ASHR_SPLIT_DATES,
+
+        "put_deltas":   [0.10, 0.15, 0.20, 0.25, 0.30, 0.35],
+        "short_deltas": [0.15, 0.20, 0.25, 0.30, 0.35],
+        "wing_widths":  [0.05, 0.10, 0.15],
+        "vix_thresholds": [None, 30, 25, 20],
+
+        "opt_short_delta":  (0.15, 0.40),
+        "opt_put_delta":    (0.10, 0.35),
+        "opt_wing_width":   (0.05, 0.20),
+        "opt_profit_take":  (0.30, 0.70),
+        "opt_max_spread":   (0.10, 0.40),
+        "opt_put_vix_max":  (15.0, 45.0),
+        "opt_call_vix_min": (0.0,  30.0),
+    },
+
+    "FXI": {
+        # iShares China Large-Cap ETF. Tracks large-cap Chinese stocks listed in
+        # Hong Kong (H-shares, Red Chips). Highly liquid, one of the oldest China
+        # ETFs. More policy/geopolitical sensitive than EEM. IV ~30–40%.
+        # No known splits. Price range ~$25–50 in study window.
+        "start": date(2018, 1, 1),
+        "split_dates": FXI_SPLIT_DATES,
+
+        "put_deltas":   [0.10, 0.15, 0.20, 0.25, 0.30, 0.35],
+        "short_deltas": [0.15, 0.20, 0.25, 0.30, 0.35],
+        "wing_widths":  [0.05, 0.10, 0.15],
+        "vix_thresholds": [None, 30, 25, 20],
+
+        "opt_short_delta":  (0.15, 0.40),
+        "opt_put_delta":    (0.10, 0.35),
+        "opt_wing_width":   (0.05, 0.20),
+        "opt_profit_take":  (0.30, 0.70),
+        "opt_max_spread":   (0.10, 0.40),
+        "opt_put_vix_max":  (15.0, 45.0),
+        "opt_call_vix_min": (0.0,  30.0),
+    },
+
+    "SOXX": {
+        # iShares Semiconductor ETF. Tracks the PHLX Semiconductor Sector Index
+        # (SOX). High-beta tech subsector — AI/data-center tailwind since 2023 but
+        # severe selloffs in 2022 (−43%) and cyclical downturns. IV ~30–45% normal,
+        # spikes to 60%+ in risk-off. Structurally upward-trending 2018–2025.
+        # 2:1 forward split 2021-10-13 (~$500 → ~$250); delta selection handles it
+        # naturally (no strike rescaling issue for P&L in % terms). No reverse splits.
+        "start": date(2018, 1, 1),
+        "split_dates": SOXX_SPLIT_DATES,
+
+        # Higher IV than broad ETFs (IWM/QQQ) — extend delta range upward.
+        "put_deltas":   [0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40],
+        "short_deltas": [0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40],
+        "wing_widths":  [0.05, 0.10, 0.15],
+        "vix_thresholds": [None, 30, 25, 20],
+
+        # ── Optimizer search bounds ────────────────────────────────────────────
+        "opt_short_delta":  (0.15, 0.45),
+        "opt_put_delta":    (0.10, 0.40),
+        "opt_wing_width":   (0.05, 0.20),
+        "opt_profit_take":  (0.30, 0.70),
+        "opt_max_spread":   (0.10, 0.40),
+        # Semiconductors sell off hard WITH VIX spikes — restrict puts in fear regimes.
+        "opt_put_vix_max":  (15.0, 40.0),
+        "opt_call_vix_min": (0.0,  30.0),
+    },
+
+    "SQQQ": {
+        # ProShares UltraPro Short QQQ. 3x inverse of the Nasdaq 100.
+        # Structurally decays toward zero over time as QQQ trends upward — this is
+        # a headwind for short puts (SQQQ falling = short put losses) but the very
+        # high IV (60–100%+) compensates with large credits. VIX filter matters:
+        # when VIX spikes, SQQQ surges (market crashes) → short puts expire worthless;
+        # when VIX is low, QQQ drifts up → SQQQ drifts down → short puts hurt.
+        # So the VIX dynamic is OPPOSITE to UVXY: high VIX = SQQQ rally = good for puts.
+        # Reverse split 2022-05-24 (1:10); additional splits possible — verify from data.
+        "start": date(2018, 1, 1),
+        "split_dates": SQQQ_SPLIT_DATES,
+
+        # Very high IV — same broad sweep as UVXY.
+        "put_deltas":   [0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40],
+        "short_deltas": [0.30, 0.35, 0.40, 0.50],
+        "wing_widths":  [0.10, 0.15, 0.20],
+        "vix_thresholds": [None, 30, 25, 20],
+
+        # ── Optimizer search bounds ────────────────────────────────────────────
+        "opt_short_delta":  (0.30, 0.55),
+        "opt_put_delta":    (0.10, 0.45),
+        "opt_wing_width":   (0.05, 0.25),
+        "opt_profit_take":  (0.30, 0.70),
+        "opt_max_spread":   (0.15, 0.50),
+        # High VIX = SQQQ rally = puts expire worthless → no max VIX cap needed.
+        # Low VIX environments are the dangerous ones for SQQQ short puts.
+        "opt_put_vix_max":  (15.0, 45.0),
+        "opt_call_vix_min": (0.0,  25.0),
+    },
+
+    "BJ": {
+        # BJ's Wholesale Club Holdings. NYSE-listed US membership warehouse retailer.
+        # IPO: June 28, 2018. Defensive consumer spending with membership fee moat.
+        # IV ~25–35% (moderate retail sector volatility). No splits.
+        # Skip early post-IPO period — allow ~6 months for options liquidity to develop.
+        # IMPORTANT: BJ has MONTHLY OPTIONS ONLY (~14 expirations/year, no weeklies).
+        # Use --dte 45 --dte-tol 10 for reliable monthly entries (~19/year).
+        # At 20 DTE (default), only ~4 entries/year are found — use 45 DTE.
+        "start": date(2019, 1, 1),
+        "split_dates": BJ_SPLIT_DATES,
+
+        "put_deltas":   [0.10, 0.15, 0.20, 0.25, 0.30, 0.35],
+        "short_deltas": [0.10, 0.15, 0.20, 0.25, 0.30, 0.35],
+        "wing_widths":  [0.05, 0.10, 0.15],
+        "vix_thresholds": [None, 30, 25, 20],
+
+        "opt_short_delta":  (0.10, 0.40),
+        "opt_put_delta":    (0.10, 0.35),
+        "opt_wing_width":   (0.05, 0.20),
+        "opt_profit_take":  (0.30, 0.70),
+        "opt_max_spread":   (0.10, 0.40),
+        "opt_put_vix_max":  (15.0, 45.0),
+        "opt_call_vix_min": (0.0,  30.0),
+    },
+
+    "YINN": {
+        # Direxion Daily FTSE China Bull 3X Shares. 3x leveraged China large-cap ETF.
+        # Tracks the FTSE China 50 Index (H-shares listed in Hong Kong). Very high IV
+        # (60–120%+) from 3x leverage + China policy risk. Structural decay from daily
+        # rebalancing. Multiple reverse splits.
+        "start": date(2018, 1, 1),
+        "split_dates": YINN_SPLIT_DATES,
+
+        # High IV similar to UVIX; use wide delta sweep.
+        "put_deltas":   [0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40],
+        "short_deltas": [0.20, 0.25, 0.30, 0.35, 0.40, 0.50],
+        "wing_widths":  [0.05, 0.10, 0.15, 0.20],
+        "vix_thresholds": [None, 30, 25, 20],
+
+        "opt_short_delta":  (0.20, 0.55),
+        "opt_put_delta":    (0.10, 0.45),
+        "opt_wing_width":   (0.05, 0.25),
+        "opt_profit_take":  (0.30, 0.70),
+        "opt_max_spread":   (0.15, 0.50),
+        "opt_put_vix_max":  (15.0, 40.0),
+        "opt_call_vix_min": (0.0,  30.0),
+    },
+
     "USO": {
         # United States Oil Fund. Holds WTI crude futures; structurally different
         # post-2020 restructuring (June 2020: changed from 100% front-month to
@@ -260,4 +641,93 @@ TICKER_CONFIG: dict[str, dict] = {
         "opt_put_vix_max":  (15.0, 40.0),
         "opt_call_vix_min": (0.0,  30.0),
     },
+
+    "GEV": {
+        # GE Vernova — spun off from GE on 2024-04-02. Power generation equipment
+        # (gas turbines, wind, grid). Direct beneficiary of data center power demand
+        # and grid electrification buildout. Limited history (~2 years).
+        "start": date(2024, 4, 7),   # First full week of trading after spinoff
+        "split_dates": GEV_SPLIT_DATES,
+
+        # Moderate-to-high IV (~30–50%) for an industrial capital goods name.
+        "put_deltas":   [0.15, 0.20, 0.25, 0.30, 0.35],
+        "short_deltas": [0.15, 0.20, 0.25, 0.30, 0.35],
+        "wing_widths":  [0.05, 0.10, 0.15],
+        "vix_thresholds": [None, 30, 25, 20],
+
+        "opt_short_delta":  (0.15, 0.40),
+        "opt_put_delta":    (0.10, 0.35),
+        "opt_wing_width":   (0.05, 0.20),
+        "opt_profit_take":  (0.30, 0.70),
+        "opt_max_spread":   (0.10, 0.40),
+        "opt_put_vix_max":  (15.0, 40.0),
+        "opt_call_vix_min": (0.0,  30.0),
+    },
+
+    "CLS": {
+        # Celestica — electronics manufacturing services (EMS). Major hyperscaler
+        # customer exposure (AI compute hardware, networking gear). Strong upward
+        # trend driven by AI capex. Listed NYSE; no known splits.
+        "start": date(2018, 1, 1),
+        "split_dates": CLS_SPLIT_DATES,
+
+        # Moderate IV (~30–45%) for an EMS/tech manufacturing name.
+        "put_deltas":   [0.15, 0.20, 0.25, 0.30, 0.35],
+        "short_deltas": [0.15, 0.20, 0.25, 0.30, 0.35],
+        "wing_widths":  [0.05, 0.10, 0.15],
+        "vix_thresholds": [None, 30, 25, 20],
+
+        "opt_short_delta":  (0.15, 0.40),
+        "opt_put_delta":    (0.10, 0.35),
+        "opt_wing_width":   (0.05, 0.20),
+        "opt_profit_take":  (0.30, 0.70),
+        "opt_max_spread":   (0.10, 0.40),
+        "opt_put_vix_max":  (15.0, 40.0),
+        "opt_call_vix_min": (0.0,  30.0),
+    },
+
+    "FN": {
+        # Fabrinet — contract manufacturer specializing in optical/photonic products,
+        # laser components, and precision assemblies. Key customers include NVIDIA,
+        # Coherent, II-VI. Benefits from AI networking (optical interconnects).
+        "start": date(2018, 1, 1),
+        "split_dates": FN_SPLIT_DATES,
+
+        # Moderate IV (~25–40%) for a precision manufacturing name.
+        "put_deltas":   [0.15, 0.20, 0.25, 0.30, 0.35],
+        "short_deltas": [0.15, 0.20, 0.25, 0.30, 0.35],
+        "wing_widths":  [0.05, 0.10, 0.15],
+        "vix_thresholds": [None, 30, 25, 20],
+
+        "opt_short_delta":  (0.15, 0.40),
+        "opt_put_delta":    (0.10, 0.35),
+        "opt_wing_width":   (0.05, 0.20),
+        "opt_profit_take":  (0.30, 0.70),
+        "opt_max_spread":   (0.10, 0.40),
+        "opt_put_vix_max":  (15.0, 40.0),
+        "opt_call_vix_min": (0.0,  30.0),
+    },
+
+    "CASY": {
+        # Casey's General Stores — convenience store chain, Midwest/rural US.
+        # Sells fuel, prepared food, beverages. Defensive consumer staples-like
+        # business model; loyal regional customer base; consistent earnings.
+        "start": date(2018, 1, 1),
+        "split_dates": CASY_SPLIT_DATES,
+
+        # Low-to-moderate IV (~20–30%) for a defensive consumer staples name.
+        "put_deltas":   [0.15, 0.20, 0.25, 0.30, 0.35],
+        "short_deltas": [0.15, 0.20, 0.25, 0.30, 0.35],
+        "wing_widths":  [0.05, 0.10, 0.15],
+        "vix_thresholds": [None, 30, 25, 20],
+
+        "opt_short_delta":  (0.15, 0.40),
+        "opt_put_delta":    (0.10, 0.35),
+        "opt_wing_width":   (0.05, 0.20),
+        "opt_profit_take":  (0.30, 0.70),
+        "opt_max_spread":   (0.10, 0.40),
+        "opt_put_vix_max":  (15.0, 40.0),
+        "opt_call_vix_min": (0.0,  30.0),
+    },
+
 }
