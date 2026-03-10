@@ -1,6 +1,6 @@
 # TLT Bear Call Spread — Trading Playbook
 
-**Last updated:** 2026-03-03
+**Last updated:** 2026-03-05
 **Status:** Parameters confirmed. Ready for live trading consideration.
 
 ---
@@ -191,6 +191,43 @@ call spread activates — creating a natural regime handoff.
 
 ---
 
+## Forward Vol Factor Research
+
+The fwd_vol_factor (σ_fwd / near_iv) was tested as an entry filter on the confirmed
+parameters (short=0.35, wing=0.05, 70% take, All VIX baseline with 348 trades).
+
+TLT's avg fwd_vol_factor is **1.101** — near-neutral, very slightly in contango. The
+market does not price aggressive vol changes in either direction for TLT's term structure.
+
+```
+  max fwd_vol_factor    N   Skip%   Win%     ROC%   AnnROC%   AvgFactor
+  -----------------------------------------------------------------------
+  (no filter)          348    0.0%  76.7%   +6.30%   +626.8%       1.101
+  ≤ 1.30               303   12.9%  77.6%   +7.36%   +646.3%       1.045
+  ≤ 1.20               259   25.6%  77.2%   +6.65%   +617.4%       1.011
+  ≤ 1.10               193   44.5%  78.2%   +8.33%   +628.5%       0.963
+  ≤ 1.00               109   68.7%  75.2%   +5.34%   +566.0%       0.892
+  ≤ 0.90                39   88.8%  74.4%   +4.51%   +692.7%       0.783
+  ≤ 0.80                15   95.7%  73.3%   +9.79%   +683.8%       0.658
+```
+*(All VIX baseline used; VIX≥20 strategy subset would differ. NaN entries: 0.)*
+
+**Conclusion: Not transformative for TLT.** The relationship is non-monotonic — ROC
+peaks at ≤ 1.10 (+8.33%), then collapses at ≤ 1.00 (+5.34%, worse than no filter).
+The VIX≥20 regime filter already captures the relevant timing information for TLT,
+leaving little incremental signal in the term structure beyond "don't enter the most
+extreme high-contango weeks." Contrast with XLU where the fwd_vol_factor is decisive.
+
+The ≤ 1.10 sweet spot skips 45% of All VIX entries and improves ROC (+32% lift), but:
+1. The confirmed strategy already skips ~60% of weeks via VIX≥20 — further thinning
+   entry frequency is undesirable
+2. The improvement is not robust (reverts sharply at ≤ 1.00)
+3. The All VIX baseline used here does not reflect the confirmed VIX≥20-only entry pool
+
+**Decision:** Keep confirmed parameters as-is. The VIX≥20 floor is the dominant signal.
+
+---
+
 ## Research Notes
 
 - **Put leg research:** Short put (0.30Δ, VIX<25) was fully backtested and rejected.
@@ -220,6 +257,12 @@ AWS_PROFILE=clarinut-gmerton MYSQL_PASSWORD=xxx PYTHONPATH=src python3 run_puts.
 # Call spread sweep (study reference):
 AWS_PROFILE=clarinut-gmerton MYSQL_PASSWORD=xxx PYTHONPATH=src python3 run_call_spreads.py \
     --ticker TLT --spread 0.25
+
+# Forward vol factor sweep (for research — All VIX baseline, 70% take):
+AWS_PROFILE=clarinut-gmerton MYSQL_PASSWORD=xxx PYTHONPATH=src python run_call_spreads.py \
+    --ticker TLT --spread 0.25 --profit-take 0.70 \
+    --short-deltas 0.35 --wing-widths 0.05 --vix-thresholds none \
+    --detail-short-delta 0.35 --detail-wing 0.05 --no-csv
 
 # Optimizer:
 AWS_PROFILE=clarinut-gmerton MYSQL_PASSWORD=xxx PYTHONPATH=src python3 run_optimizer.py \

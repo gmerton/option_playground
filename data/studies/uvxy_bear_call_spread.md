@@ -145,6 +145,57 @@ The same finding from the naked call study holds: All VIX is better than VIX<20 
 
 ---
 
+## Forward Vol Factor Research
+
+The fwd_vol_factor (σ_fwd / near_iv) was tested as an additional entry filter on the
+confirmed short=0.50, wing=0.10, All VIX strategy.
+
+**Key difference from calendar spreads:** UVXY's avg fwd_vol_factor is **1.336** — the
+market almost always prices rising volatility in the forward window for UVXY (contango
+is the norm). This contrasts with XLU (avg 0.799) and GLD (avg ~0.95).
+
+For bear call spreads, the filter direction is inverted relative to calendars: you want
+to skip entries where contango is most extreme (factor very high), not where it's low.
+The highest-factor entries are where the market most expects vol to spike — exactly when
+short calls are most dangerous.
+
+```
+  max fwd_vol_factor    N   Skip%   Win%     ROC%   AnnROC%   AvgFactor
+  -----------------------------------------------------------------------
+  (no filter)          374    0.0%  86.6%   +5.06%   +593.4%       1.336
+  ≤ 1.30               191   48.9%  88.5%   +8.64%   +712.4%       1.100
+  ≤ 1.20               127   66.0%  90.6%   +9.49%   +796.9%       1.023
+  ≤ 1.10                79   78.9%  89.9%   +8.37%   +800.5%       0.943
+  ≤ 1.00                42   88.8%  85.7%   +2.83%   +698.6%       0.841
+  ≤ 0.90                25   93.3%  96.0%  +13.87%   +991.0%       0.752
+  ≤ 0.80                12   96.8%  91.7%   +9.42%   +851.5%       0.627
+```
+*(NaN entries = extreme backwardation, always included; 2 of 374 trades)*
+
+**Optimal filter: ≤ 1.20** (127 trades, ~16/year)
+- Win rate jumps from 86.6% → 90.6%
+- Per-trade ROC nearly doubles: +5.06% → +9.49%
+- AnnROC: +593% → +797%
+- Skips 66% of entries — eliminates the weeks where the term structure most aggressively
+  prices in a future vol spike
+
+**Non-monotonic at ≤ 1.00:** The ≤ 1.00 filter actually underperforms ≤ 1.10, suggesting
+that true backwardation entries (factor < 1.0) are not systematically better for short
+calls — they are rare edge cases (UVXY occasionally resets near-term vol after a spike).
+
+**Conclusion:** The ≤ 1.20 filter provides meaningful improvement, but the confirmed
+strategy uses All VIX / no fwd_vol_factor filter for simplicity and frequency. This
+analysis is available as a future parameter upgrade if tighter entry selection is desired.
+
+**How to run with this filter:**
+```bash
+AWS_PROFILE=clarinut-gmerton MYSQL_PASSWORD=xxx PYTHONPATH=src python run_call_spreads.py \
+    --ticker UVXY --short-deltas 0.50 --wing-widths 0.10 --spread 0.25 \
+    --max-fwd-vol-factor 1.20 --detail-short-delta 0.50 --detail-wing 0.10 --no-csv
+```
+
+---
+
 ## Summary: Answer to "Does the Wing Protect From Bankrupting Trades?"
 
 **Yes, decisively at 0.10Δ wing.** The 2020 COVID spike was UVXY's most extreme move of the 8-year study period. Naked calls were obliterated (-22.75% ROC). The 0.10Δ wing turned the same period into a modest profit (+5.74% ROC). The wing cost: ~11-15% lower ROC in the good years. Given that a single blowup year at naked scale could wipe out 2-3 years of gains, this is likely a favorable trade.
@@ -155,6 +206,35 @@ The same finding from the naked call study holds: All VIX is better than VIX<20 
 - DTE: 20 (preferred from the naked call study)
 - VIX filter: none (All VIX)
 - Spread filter on short leg: ≤ 25%
+
+---
+
+## Live Trading — High Contango Warning
+
+Before each entry, compute the fwd_vol_factor to flag extreme-contango environments:
+
+```
+near_iv  = BS_IV(short_leg_put_mid,  K=ATM_strike, T=short_dte/365, r=0.04)
+far_iv   = BS_IV(next_expiry_put_mid, K=ATM_strike, T=next_dte/365,  r=0.04)
+
+var_fwd       = (far_iv² × T_far − near_iv² × T_near) / (T_far − T_near)
+fwd_vol_factor = √var_fwd / near_iv
+```
+
+Use the ATM put at the spread's expiry as the near leg; the next monthly expiry
+(15–60 days later) as the far leg. Use the same ATM strike for both.
+
+| fwd_vol_factor | Action |
+|---|---|
+| ≤ 1.20 | ✓ Normal entry — proceed |
+| 1.20 – 1.50 | ⚠ Elevated contango — enter but size conservatively |
+| > 1.50 | ✗ **Extreme contango — consider skipping this week** |
+| NaN (var_fwd ≤ 0) | ✓ Extreme backwardation — most favorable, enter |
+
+**Context:** UVXY's long-run avg factor is 1.336. Factor > 1.50 means the market is
+pricing in a significant vol spike in the window just beyond expiry — a warning sign
+that a UVXY spike may be loading. The ≤ 1.20 filter historically improves ROC from
++5.06% → +9.49% and win rate from 86.6% → 90.6% (127 trades, ~16/year).
 
 ---
 

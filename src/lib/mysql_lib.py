@@ -406,29 +406,46 @@ def fetch_options_cache(ticker: str, start: "date", end: "date") -> pd.DataFrame
       open_interest, volume, dte
     All date columns are Python date objects.
     """
-    conn = _get_conn()
-    try:
-        cursor = conn.cursor()
-        cursor.execute(
-            """
-            SELECT trade_date, expiry, cp, strike, bid, ask, last, mid,
-                   delta, open_interest, volume
-            FROM options_cache
-            WHERE ticker = %s
-              AND trade_date BETWEEN %s AND %s
-            ORDER BY trade_date, expiry, cp, strike
-            """,
-            (ticker, start, end),
+    from datetime import timedelta
+
+    cols = [
+        "trade_date", "expiry", "cp", "strike",
+        "bid", "ask", "last", "mid",
+        "delta", "open_interest", "volume",
+    ]
+    # Fetch in yearly chunks to avoid dropping large connections
+    rows: list = []
+    chunk_start = start
+    while chunk_start <= end:
+        chunk_end = min(
+            date(chunk_start.year, 12, 31),
+            end,
         )
-        rows = cursor.fetchall()
-        cols = [
-            "trade_date", "expiry", "cp", "strike",
-            "bid", "ask", "last", "mid",
-            "delta", "open_interest", "volume",
-        ]
-        cursor.close()
-    finally:
-        conn.close()
+        conn = _get_conn()
+        try:
+            cursor = conn.cursor()
+            cursor.execute("SET SESSION net_read_timeout=600")
+            cursor.execute("SET SESSION net_write_timeout=600")
+            cursor.execute(
+                """
+                SELECT trade_date, expiry, cp, strike, bid, ask, last, mid,
+                       delta, open_interest, volume
+                FROM options_cache
+                WHERE ticker = %s
+                  AND trade_date BETWEEN %s AND %s
+                ORDER BY trade_date, expiry, cp, strike
+                """,
+                (ticker, chunk_start, chunk_end),
+            )
+            while True:
+                chunk = cursor.fetchmany(50_000)
+                if not chunk:
+                    break
+                rows.extend(chunk)
+            cursor.close()
+        finally:
+            conn.close()
+        chunk_start = date(chunk_start.year + 1, 1, 1)
 
     if not rows:
         return pd.DataFrame(columns=cols + ["dte"])
@@ -444,6 +461,172 @@ def fetch_options_cache(ticker: str, start: "date", end: "date") -> pd.DataFrame
         pd.to_datetime(df["expiry"]) - pd.to_datetime(df["trade_date"])
     ).dt.days
     return df
+
+
+def create_position_tables() -> None:
+    """Create strategy_positions and position_trades tables if they don't exist."""
+    conn = _get_conn()
+    try:
+        cur = conn.cursor()
+        cur.execute("""
+            CREATE TABLE IF NOT EXISTS strategy_positions (
+                id               INT AUTO_INCREMENT PRIMARY KEY,
+                strategy_name    VARCHAR(64)  NOT NULL,
+                ticker           VARCHAR(16)  NOT NULL,
+                position_type    VARCHAR(20)  NOT NULL,  -- 'bull_put_spread', 'bear_call_spread', 'put_calendar', 'short_put'
+                status           VARCHAR(10)  NOT NULL DEFAULT 'open',  -- 'open', 'closed'
+                contracts        INT          NOT NULL DEFAULT 1,
+                entry_date       DATE         NOT NULL,
+                expiry           DATE,
+                short_strike     DECIMAL(10,4),
+                long_strike      DECIMAL(10,4),
+                entry_value      DECIMAL(10,4),  -- credit received (>0) or debit paid (<0) per share
+                profit_target_pct DECIMAL(5,4) NOT NULL,
+                close_date       DATE,
+                notes            TEXT,
+                created_at       TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                INDEX idx_status (status),
+                INDEX idx_ticker (ticker)
+            )
+        """)
+        cur.execute("""
+            CREATE TABLE IF NOT EXISTS position_trades (
+                id           INT AUTO_INCREMENT PRIMARY KEY,
+                position_id  INT             NOT NULL,
+                trade_id     BIGINT UNSIGNED NOT NULL,
+                leg_role     VARCHAR(20)     NOT NULL,  -- 'open_short', 'open_long', 'close_short', 'close_long'
+                UNIQUE KEY uq_pos_trade (position_id, trade_id),
+                FOREIGN KEY (position_id) REFERENCES strategy_positions(id),
+                FOREIGN KEY (trade_id)   REFERENCES trades(id)
+            )
+        """)
+        conn.commit()
+        cur.close()
+    finally:
+        conn.close()
+
+
+def create_position(
+    strategy_name: str,
+    ticker: str,
+    position_type: str,
+    contracts: int,
+    entry_date: date,
+    expiry: date,
+    short_strike: float,
+    long_strike: float | None,
+    entry_value: float,
+    profit_target_pct: float,
+    notes: str = "",
+) -> int:
+    """Insert a new strategy_positions row and return its id."""
+    conn = _get_conn()
+    try:
+        cur = conn.cursor()
+        cur.execute("""
+            INSERT INTO strategy_positions
+                (strategy_name, ticker, position_type, status, contracts,
+                 entry_date, expiry, short_strike, long_strike,
+                 entry_value, profit_target_pct, notes)
+            VALUES (%s, %s, %s, 'open', %s, %s, %s, %s, %s, %s, %s, %s)
+        """, (strategy_name, ticker, position_type, contracts,
+              entry_date, expiry, short_strike, long_strike,
+              entry_value, profit_target_pct, notes))
+        conn.commit()
+        position_id = cur.lastrowid
+        cur.close()
+    finally:
+        conn.close()
+    return position_id
+
+
+def link_trades_to_position(position_id: int, trade_legs: list[tuple[int, str]]) -> None:
+    """
+    Link trade IDs to a position.
+    trade_legs: list of (trade_id, leg_role) where leg_role is one of:
+        'open_short', 'open_long', 'close_short', 'close_long'
+    """
+    conn = _get_conn()
+    try:
+        cur = conn.cursor()
+        cur.executemany("""
+            INSERT IGNORE INTO position_trades (position_id, trade_id, leg_role)
+            VALUES (%s, %s, %s)
+        """, [(position_id, tid, role) for tid, role in trade_legs])
+        conn.commit()
+        cur.close()
+    finally:
+        conn.close()
+
+
+def close_position(position_id: int, close_date: date) -> None:
+    """Mark a position as closed."""
+    conn = _get_conn()
+    try:
+        cur = conn.cursor()
+        cur.execute("""
+            UPDATE strategy_positions SET status='closed', close_date=%s WHERE id=%s
+        """, (close_date, position_id))
+        conn.commit()
+        cur.close()
+    finally:
+        conn.close()
+
+
+def get_open_positions() -> list[dict]:
+    """Return all open positions with their open legs joined from trades."""
+    conn = _get_conn()
+    try:
+        cur = conn.cursor(dictionary=True)
+        cur.execute("""
+            SELECT
+                sp.id, sp.strategy_name, sp.ticker, sp.position_type,
+                sp.contracts, sp.entry_date, sp.expiry,
+                sp.short_strike, sp.long_strike,
+                sp.entry_value, sp.profit_target_pct, sp.notes,
+                pt.trade_id, pt.leg_role,
+                t.buy_sell, t.quantity, t.price, t.strike AS trade_strike,
+                t.expiry AS trade_expiry, t.put_call
+            FROM strategy_positions sp
+            JOIN position_trades pt ON pt.position_id = sp.id
+            JOIN trades t           ON t.id = pt.trade_id
+            WHERE sp.status = 'open'
+              AND pt.leg_role IN ('open_short', 'open_long')
+            ORDER BY sp.id, pt.leg_role
+        """)
+        rows = cur.fetchall()
+        cur.close()
+    finally:
+        conn.close()
+
+    # Group by position
+    positions: dict[int, dict] = {}
+    for row in rows:
+        pid = row["id"]
+        if pid not in positions:
+            positions[pid] = {
+                "id":                pid,
+                "strategy_name":     row["strategy_name"],
+                "ticker":            row["ticker"],
+                "position_type":     row["position_type"],
+                "contracts":         row["contracts"],
+                "entry_date":        row["entry_date"],
+                "expiry":            row["expiry"],
+                "short_strike":      float(row["short_strike"] or 0),
+                "long_strike":       float(row["long_strike"]) if row["long_strike"] else None,
+                "entry_value":       float(row["entry_value"]),
+                "profit_target_pct": float(row["profit_target_pct"]),
+                "notes":             row["notes"] or "",
+                "legs":              [],
+            }
+        positions[pid]["legs"].append({
+            "leg_role":    row["leg_role"],
+            "trade_strike": float(row["trade_strike"]),
+            "trade_expiry": row["trade_expiry"],
+            "put_call":     row["put_call"],
+            "price":        float(row["price"]),
+        })
+    return list(positions.values())
 
 
 def _parse_ibkr_date(v) -> date | None:
