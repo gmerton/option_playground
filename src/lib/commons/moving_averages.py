@@ -163,6 +163,7 @@ async def sma_trending_up_trading_days(
 class MovingAverages:
     symbol: str
     asof: str                 # last candle date in YYYY-MM-DD
+    sma_20: Optional[float]
     sma_50: Optional[float]
     sma_150: Optional[float]
     sma_200: Optional[float]
@@ -209,6 +210,7 @@ async def get_sma(
         return MovingAverages(
             symbol=params["symbol"],
             asof="",
+            sma_20=None,
             sma_50=None,
             sma_150=None,
             sma_200=None,
@@ -235,7 +237,8 @@ async def get_sma(
     return MovingAverages(
         symbol=params["symbol"],
         asof=asof,
-        sma_50 = _sma(closes, 50),
+        sma_20 =_sma(closes, 20),
+        sma_50 =_sma(closes, 50),
         sma_150=_sma(closes, 150),
         sma_200=_sma(closes, 200),
         closes_used=len(closes),

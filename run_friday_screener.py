@@ -254,6 +254,34 @@ STRATEGIES: list[dict] = [
         "fwd_vol_warn":  1.20,   # avg=1.156; no filter recommended but flag >1.20
         "note":          "PROVISIONAL (2yr data); AI EMS/hyperscaler infra; 93.4% win; 0.10Δ wing",
     },
+    {
+        "type":          "spread",
+        "name":          "XLE Bull Put Spread",
+        "alloc_key":     "XLE puts",
+        "ticker":        "XLE",
+        "cp":            "put",
+        "short_delta":   0.30,
+        "long_delta":    0.20,
+        "dte_target":    60,
+        "vix_cond":      None,
+        "profit_take":   0.50,
+        "fwd_vol_warn":  1.20,   # energy IV elevated in geopolitical/macro stress; flag >1.20
+        "note":          "PROVISIONAL; energy sector oil/gas; 60 DTE; +7.18% ROC 88.7% win; All VIX",
+    },
+    {
+        "type":          "spread",
+        "name":          "XOP Bull Put Spread",
+        "alloc_key":     "XOP puts",
+        "ticker":        "XOP",
+        "cp":            "put",
+        "short_delta":   0.35,
+        "long_delta":    0.25,
+        "dte_target":    60,
+        "vix_cond":      None,
+        "profit_take":   0.50,
+        "fwd_vol_warn":  1.20,   # E&P higher beta to crude; flag >1.20
+        "note":          "PROVISIONAL; E&P upstream oil/gas; 60 DTE; +5.44% ROC 81.5% win; All VIX",
+    },
     # ── Calendar strategies ───────────────────────────────────────────────────
     {
         "type":          "calendar",
@@ -391,10 +419,10 @@ def fmt_leg(c: dict, label: str, cp: str, target_delta: float) -> str:
     sp_tag = "✓" if sp is not None and sp <= MAX_SPREAD_PCT else "✗"
     d_str  = f"{float(delta):+.3f}" if delta is not None else "  n/a"
     return (
-        f"  {label:<6}  {target_delta:.2f}Δ {cp_c}"
+        f"  {label:<6}  {cp_c}"
         f"  ${strike:>7.2f}"
         f"  bid ${bid:>5.2f}  ask ${ask:>5.2f}  mid ${m:>5.2f}"
-        f"  Δ {d_str}  BA {sp_str:>6} {sp_tag}"
+        f"  Δ {d_str} (tgt {target_delta:.2f})  BA {sp_str:>6} {sp_tag}"
     )
 
 
@@ -570,8 +598,10 @@ def screen_spread(
         l_delta    = (long.get("greeks")  or {}).get("delta")
         s_delta_str = f"{abs(float(s_delta)):.2f}Δ" if s_delta is not None else "?Δ"
         l_delta_str = f"{abs(float(l_delta)):.2f}Δ" if l_delta is not None else "?Δ"
+        tgt_s_str = f"{short_delta:.2f}Δ"
+        tgt_l_str = f"{long_delta:.2f}Δ" if long_delta is not None else "?Δ"
         summary = (
-            f"short ${s_strike:.2f}{cp_c}({s_delta_str}) / buy ${l_strike:.2f}{cp_c}({l_delta_str})"
+            f"short ${s_strike:.2f}{cp_c}({s_delta_str} tgt {tgt_s_str}) / buy ${l_strike:.2f}{cp_c}({l_delta_str} tgt {tgt_l_str})"
             f"   net ${credit:.3f}cr   width ${width:.2f}"
         )
         max_loss_per_contract = max_loss * 100
@@ -587,7 +617,7 @@ def screen_spread(
         cp_c       = "C" if cp == "call" else "P"
         s_delta    = (short.get("greeks") or {}).get("delta")
         s_delta_str = f"{abs(float(s_delta)):.2f}Δ" if s_delta is not None else "?Δ"
-        summary = f"${strike:.2f}{cp_c}({s_delta_str})   premium ${short_mid:.3f}"
+        summary = f"${strike:.2f}{cp_c}({s_delta_str} tgt {short_delta:.2f}Δ)   premium ${short_mid:.3f}"
         max_loss_per_contract = None  # naked short — undefined max loss
 
     return {"enter": True, "lines": lines, "summary": summary,

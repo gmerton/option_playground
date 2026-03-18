@@ -3,6 +3,7 @@ import os
 from datetime import date, datetime
 import mysql.connector
 import pandas as pd
+from sqlalchemy import create_engine
 
 
 def _safe_float(v):
@@ -22,6 +23,12 @@ def _get_conn():
         password=os.environ["MYSQL_PASSWORD"],
         database="stocks",
     )
+
+
+def _get_engine():
+    """Return a SQLAlchemy engine — use this with pd.read_sql() to avoid warnings."""
+    pw = os.environ["MYSQL_PASSWORD"]
+    return create_engine(f"mysql+mysqlconnector://root:{pw}@127.0.0.1:3306/stocks")
 
 
 def create_study(description: str) -> int:
