@@ -104,6 +104,38 @@ CLS_SPLIT_DATES:  list[date] = []   # Celestica; no known splits in study window
 FN_SPLIT_DATES:   list[date] = []   # Fabrinet; no known splits in study window
 CASY_SPLIT_DATES: list[date] = []   # Casey's General Stores; no known splits in study window
 
+VXX_SPLIT_DATES: list[date] = [
+    date(2019, 11, 20),  # 1:4 reverse split
+    date(2021, 11,  1),  # 1:4 reverse split
+    date(2023,  7, 24),  # 1:4 reverse split
+]
+
+UCO_SPLIT_DATES: list[date] = [
+    date(2020,  6,  8),  # 1:25 reverse split (COVID oil crash / negative WTI prices)
+]
+
+XBI_SPLIT_DATES: list[date] = []  # XBI has no reverse splits
+
+XLK_SPLIT_DATES:  list[date] = []  # Technology Select Sector SPDR; no reverse splits
+V_SPLIT_DATES:    list[date] = []  # Visa Inc.; no splits in study window
+MA_SPLIT_DATES:   list[date] = []  # Mastercard Inc.; no splits in study window
+HD_SPLIT_DATES:   list[date] = []  # Home Depot; no splits in study window
+
+# Low-volatility defensive individual stocks (no reverse splits)
+COST_SPLIT_DATES: list[date] = []  # Costco; no splits since 2000 (pre-study window)
+WMT_SPLIT_DATES:  list[date] = []  # Walmart; 3:1 forward split 2024-02-26 — delta selection handles it
+JNJ_SPLIT_DATES:  list[date] = []  # Johnson & Johnson; no splits in study window
+
+# Broad market + mega-cap individual stocks (forward splits only — delta selection handles naturally)
+SPY_SPLIT_DATES:   list[date] = []  # SPY; no reverse splits
+AAPL_SPLIT_DATES:  list[date] = []  # AAPL; 4:1 forward split 2020-08-31 — delta selection handles it
+MSFT_SPLIT_DATES:  list[date] = []  # MSFT; no splits since 2003
+NVDA_SPLIT_DATES:  list[date] = []  # NVDA; 4:1 fwd 2021-07-20, 10:1 fwd 2024-06-10 — delta selection handles it
+AMZN_SPLIT_DATES:  list[date] = []  # AMZN; 20:1 forward split 2022-06-06 — delta selection handles it
+GOOGL_SPLIT_DATES: list[date] = []  # GOOGL; 20:1 forward split 2022-07-18 — delta selection handles it
+META_SPLIT_DATES:  list[date] = []  # META; no splits
+IBIT_SPLIT_DATES:  list[date] = []  # iShares Bitcoin Trust ETF; no splits
+
 
 # ── Athena → MySQL sync ───────────────────────────────────────────────────────
 

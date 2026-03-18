@@ -55,6 +55,13 @@ from lib.studies.straddle_study import (
     EEM_SPLIT_DATES, XLF_SPLIT_DATES, ASHR_SPLIT_DATES, FXI_SPLIT_DATES,
     SOXX_SPLIT_DATES, SQQQ_SPLIT_DATES, BJ_SPLIT_DATES, YINN_SPLIT_DATES,
     GEV_SPLIT_DATES, CLS_SPLIT_DATES, FN_SPLIT_DATES, CASY_SPLIT_DATES,
+    VXX_SPLIT_DATES, UCO_SPLIT_DATES, XBI_SPLIT_DATES,
+    SPY_SPLIT_DATES, AAPL_SPLIT_DATES, MSFT_SPLIT_DATES, NVDA_SPLIT_DATES,
+    AMZN_SPLIT_DATES, GOOGL_SPLIT_DATES, META_SPLIT_DATES,
+    COST_SPLIT_DATES, WMT_SPLIT_DATES, JNJ_SPLIT_DATES,
+    XLK_SPLIT_DATES,
+    V_SPLIT_DATES, MA_SPLIT_DATES, HD_SPLIT_DATES,
+    IBIT_SPLIT_DATES,
 )
 
 
@@ -708,6 +715,82 @@ TICKER_CONFIG: dict[str, dict] = {
         "opt_call_vix_min": (0.0,  30.0),
     },
 
+    "XBI": {
+        # SPDR S&P Biotech ETF. Equal-weighted S&P Biotechnology Select Industry
+        # Index — ~130 biotech names, no mega-cap bias (unlike IBB). High
+        # idiosyncratic risk from FDA decisions, clinical trial readouts, and M&A.
+        # IV typically 35–55% in calm regimes, spikes to 60%+ on sector events.
+        # Significant drawdown 2021–2022 (~-60%). No reverse splits.
+        "start": date(2018, 1, 1),
+        "split_dates": XBI_SPLIT_DATES,
+
+        # Moderate-to-high IV — similar sweep to SOXX/IWM.
+        "put_deltas":   [0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40],
+        "short_deltas": [0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40],
+        "wing_widths":  [0.05, 0.10, 0.15],
+        "vix_thresholds": [None, 30, 25, 20],
+
+        # ── Optimizer search bounds ────────────────────────────────────────────
+        "opt_short_delta":  (0.15, 0.45),
+        "opt_put_delta":    (0.10, 0.40),
+        "opt_wing_width":   (0.05, 0.20),
+        "opt_profit_take":  (0.30, 0.70),
+        "opt_max_spread":   (0.10, 0.40),
+        "opt_put_vix_max":  (15.0, 40.0),
+        "opt_call_vix_min": (0.0,  30.0),
+    },
+
+    "UCO": {
+        # ProShares Ultra Bloomberg Crude Oil ETF. 2x leveraged long crude oil
+        # via the Bloomberg Commodity Balanced WTI Crude Oil Index (front-month
+        # + deferred contracts). Higher IV than USO (1x) due to leverage (~50–90%).
+        # Structural decay from daily rebalancing + roll costs. 1:25 reverse split
+        # 2020-06-08 during COVID oil crash (WTI briefly went negative).
+        # Study from 2018; split_date excludes the COVID catastrophe trades.
+        "start": date(2018, 1, 1),
+        "split_dates": UCO_SPLIT_DATES,
+
+        # Higher IV than USO — extend delta sweep upward.
+        "put_deltas":   [0.15, 0.20, 0.25, 0.30, 0.35, 0.40],
+        "short_deltas": [0.20, 0.25, 0.30, 0.35, 0.40],
+        "wing_widths":  [0.05, 0.10, 0.15],
+        "vix_thresholds": [None, 30, 25, 20],
+
+        # ── Optimizer search bounds ────────────────────────────────────────────
+        "opt_short_delta":  (0.15, 0.45),
+        "opt_put_delta":    (0.10, 0.40),
+        "opt_wing_width":   (0.05, 0.20),
+        "opt_profit_take":  (0.30, 0.70),
+        "opt_max_spread":   (0.10, 0.40),
+        "opt_put_vix_max":  (15.0, 40.0),
+        "opt_call_vix_min": (0.0,  30.0),
+    },
+
+    "VXX": {
+        # iPath Series B S&P 500 VIX Short-Term Futures ETN (Barclays). 1x long
+        # VIX futures — rolls front-month to second-month VIX futures daily.
+        # Launched 2018-01-17. Lower leverage than UVXY (1.5x) or UVIX (2x) so
+        # IV is lower (~50–80% vs 60–100% for UVXY). Same structural decay
+        # toward zero as all long-VIX products. Three reverse splits 2019–2023.
+        "start": date(2018, 1, 17),
+        "split_dates": VXX_SPLIT_DATES,
+
+        # High IV — similar to UVXY but slightly lower; extend delta sweep to match.
+        "put_deltas":   [0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40],
+        "short_deltas": [0.30, 0.35, 0.40, 0.50],
+        "wing_widths":  [0.10, 0.15, 0.20],
+        "vix_thresholds": [None, 30, 25, 20],
+
+        # ── Optimizer search bounds ────────────────────────────────────────────
+        "opt_short_delta":  (0.30, 0.55),
+        "opt_put_delta":    (0.10, 0.45),
+        "opt_wing_width":   (0.05, 0.25),
+        "opt_profit_take":  (0.30, 0.70),
+        "opt_max_spread":   (0.15, 0.40),
+        "opt_put_vix_max":  (15.0, 35.0),
+        "opt_call_vix_min": (0.0,  25.0),
+    },
+
     "CASY": {
         # Casey's General Stores — convenience store chain, Midwest/rural US.
         # Sells fuel, prepared food, beverages. Defensive consumer staples-like
@@ -726,6 +809,310 @@ TICKER_CONFIG: dict[str, dict] = {
         "opt_wing_width":   (0.05, 0.20),
         "opt_profit_take":  (0.30, 0.70),
         "opt_max_spread":   (0.10, 0.40),
+        "opt_put_vix_max":  (15.0, 40.0),
+        "opt_call_vix_min": (0.0,  30.0),
+    },
+
+    # ── Thursday short-DTE screener universe ──────────────────────────────────
+
+    "SPY": {
+        # SPDR S&P 500 ETF Trust. Broadest US equity benchmark; deepest options
+        # market in the world. Weekly expirations every Friday. IV ~15–20% normal,
+        # spikes to 35%+ in selloffs. Secular upward trend. No reverse splits.
+        "start": date(2018, 1, 1),
+        "split_dates": SPY_SPLIT_DATES,
+        "put_deltas":   [0.05, 0.10, 0.15, 0.20, 0.25, 0.30],
+        "short_deltas": [0.10, 0.15, 0.20, 0.25, 0.30, 0.35],
+        "wing_widths":  [0.05, 0.10, 0.15],
+        "vix_thresholds": [None, 30, 25, 20],
+        "opt_short_delta":  (0.10, 0.40),
+        "opt_put_delta":    (0.05, 0.30),
+        "opt_wing_width":   (0.05, 0.20),
+        "opt_profit_take":  (0.30, 0.70),
+        "opt_max_spread":   (0.10, 0.35),
+        "opt_put_vix_max":  (15.0, 45.0),
+        "opt_call_vix_min": (0.0,  30.0),
+    },
+
+    "AAPL": {
+        # Apple Inc. Largest US company by market cap. Very liquid weekly options.
+        # IV ~25–35% normal, spikes on earnings. Secular upward trend.
+        # 4:1 forward split 2020-08-31 — delta selection handles naturally.
+        "start": date(2018, 1, 1),
+        "split_dates": AAPL_SPLIT_DATES,
+        "put_deltas":   [0.05, 0.10, 0.15, 0.20, 0.25, 0.30],
+        "short_deltas": [0.10, 0.15, 0.20, 0.25, 0.30, 0.35],
+        "wing_widths":  [0.05, 0.10, 0.15],
+        "vix_thresholds": [None, 30, 25, 20],
+        "opt_short_delta":  (0.10, 0.40),
+        "opt_put_delta":    (0.05, 0.35),
+        "opt_wing_width":   (0.05, 0.20),
+        "opt_profit_take":  (0.30, 0.70),
+        "opt_max_spread":   (0.10, 0.35),
+        "opt_put_vix_max":  (15.0, 45.0),
+        "opt_call_vix_min": (0.0,  30.0),
+    },
+
+    "MSFT": {
+        # Microsoft Corporation. Enterprise software + cloud (Azure) + gaming.
+        # IV ~22–30% normal, very liquid weekly options. Secular upward trend.
+        # No splits since 2003.
+        "start": date(2018, 1, 1),
+        "split_dates": MSFT_SPLIT_DATES,
+        "put_deltas":   [0.05, 0.10, 0.15, 0.20, 0.25, 0.30],
+        "short_deltas": [0.10, 0.15, 0.20, 0.25, 0.30, 0.35],
+        "wing_widths":  [0.05, 0.10, 0.15],
+        "vix_thresholds": [None, 30, 25, 20],
+        "opt_short_delta":  (0.10, 0.40),
+        "opt_put_delta":    (0.05, 0.35),
+        "opt_wing_width":   (0.05, 0.20),
+        "opt_profit_take":  (0.30, 0.70),
+        "opt_max_spread":   (0.10, 0.35),
+        "opt_put_vix_max":  (15.0, 45.0),
+        "opt_call_vix_min": (0.0,  30.0),
+    },
+
+    "NVDA": {
+        # NVIDIA Corporation. GPU/AI compute leader. Very high IV (~50–70%),
+        # massive options volume. 4:1 fwd split 2021-07-20; 10:1 fwd 2024-06-10.
+        # Secular upward trend driven by AI buildout.
+        "start": date(2018, 1, 1),
+        "split_dates": NVDA_SPLIT_DATES,
+        "put_deltas":   [0.05, 0.10, 0.15, 0.20, 0.25, 0.30],
+        "short_deltas": [0.10, 0.15, 0.20, 0.25, 0.30, 0.35],
+        "wing_widths":  [0.05, 0.10, 0.15],
+        "vix_thresholds": [None, 30, 25, 20],
+        "opt_short_delta":  (0.10, 0.45),
+        "opt_put_delta":    (0.05, 0.40),
+        "opt_wing_width":   (0.05, 0.20),
+        "opt_profit_take":  (0.30, 0.70),
+        "opt_max_spread":   (0.10, 0.40),
+        "opt_put_vix_max":  (15.0, 45.0),
+        "opt_call_vix_min": (0.0,  30.0),
+    },
+
+    "AMZN": {
+        # Amazon.com Inc. E-commerce + AWS cloud. IV ~30–40%. Very liquid weeklies.
+        # 20:1 forward split 2022-06-06 — delta selection handles naturally.
+        "start": date(2018, 1, 1),
+        "split_dates": AMZN_SPLIT_DATES,
+        "put_deltas":   [0.05, 0.10, 0.15, 0.20, 0.25, 0.30],
+        "short_deltas": [0.10, 0.15, 0.20, 0.25, 0.30, 0.35],
+        "wing_widths":  [0.05, 0.10, 0.15],
+        "vix_thresholds": [None, 30, 25, 20],
+        "opt_short_delta":  (0.10, 0.40),
+        "opt_put_delta":    (0.05, 0.35),
+        "opt_wing_width":   (0.05, 0.20),
+        "opt_profit_take":  (0.30, 0.70),
+        "opt_max_spread":   (0.10, 0.40),
+        "opt_put_vix_max":  (15.0, 45.0),
+        "opt_call_vix_min": (0.0,  30.0),
+    },
+
+    "GOOGL": {
+        # Alphabet Inc. (Class A). Search + YouTube + Google Cloud. IV ~25–35%.
+        # Very liquid weekly options. 20:1 forward split 2022-07-18.
+        "start": date(2018, 1, 1),
+        "split_dates": GOOGL_SPLIT_DATES,
+        "put_deltas":   [0.05, 0.10, 0.15, 0.20, 0.25, 0.30],
+        "short_deltas": [0.10, 0.15, 0.20, 0.25, 0.30, 0.35],
+        "wing_widths":  [0.05, 0.10, 0.15],
+        "vix_thresholds": [None, 30, 25, 20],
+        "opt_short_delta":  (0.10, 0.40),
+        "opt_put_delta":    (0.05, 0.35),
+        "opt_wing_width":   (0.05, 0.20),
+        "opt_profit_take":  (0.30, 0.70),
+        "opt_max_spread":   (0.10, 0.40),
+        "opt_put_vix_max":  (15.0, 45.0),
+        "opt_call_vix_min": (0.0,  30.0),
+    },
+
+    "META": {
+        # Meta Platforms Inc. Facebook/Instagram/WhatsApp. IV ~30–45%.
+        # Very liquid weekly options. No splits. Secular upward trend post-2022.
+        "start": date(2018, 1, 1),
+        "split_dates": META_SPLIT_DATES,
+        "put_deltas":   [0.05, 0.10, 0.15, 0.20, 0.25, 0.30],
+        "short_deltas": [0.10, 0.15, 0.20, 0.25, 0.30, 0.35],
+        "wing_widths":  [0.05, 0.10, 0.15],
+        "vix_thresholds": [None, 30, 25, 20],
+        "opt_short_delta":  (0.10, 0.40),
+        "opt_put_delta":    (0.05, 0.35),
+        "opt_wing_width":   (0.05, 0.20),
+        "opt_profit_take":  (0.30, 0.70),
+        "opt_max_spread":   (0.10, 0.40),
+        "opt_put_vix_max":  (15.0, 45.0),
+        "opt_call_vix_min": (0.0,  30.0),
+    },
+
+    "V": {
+        # Visa Inc. Payment network duopoly (with MA). Transaction fee revenue
+        # on global card volume — no credit risk, no float. IV ~18–24%, very
+        # low realized vol relative to IV. Secular uptrend. No splits in study
+        # window. Liquid weekly options.
+        "start": date(2018, 1, 1),
+        "split_dates": V_SPLIT_DATES,
+        "put_deltas":   [0.05, 0.10, 0.15, 0.20, 0.25, 0.30],
+        "short_deltas": [0.10, 0.15, 0.20, 0.25, 0.30, 0.35],
+        "wing_widths":  [0.05, 0.10, 0.15],
+        "vix_thresholds": [None, 30, 25, 20],
+        "opt_short_delta":  (0.10, 0.35),
+        "opt_put_delta":    (0.05, 0.30),
+        "opt_wing_width":   (0.05, 0.20),
+        "opt_profit_take":  (0.30, 0.70),
+        "opt_max_spread":   (0.10, 0.35),
+        "opt_put_vix_max":  (15.0, 45.0),
+        "opt_call_vix_min": (0.0,  30.0),
+    },
+
+    "MA": {
+        # Mastercard Incorporated. Payment network duopoly (with V). Nearly
+        # identical business model — transaction fees, no credit risk. IV ~18–25%,
+        # slightly higher than Visa. Secular uptrend. No splits in study window.
+        # Liquid weekly options.
+        "start": date(2018, 1, 1),
+        "split_dates": MA_SPLIT_DATES,
+        "put_deltas":   [0.05, 0.10, 0.15, 0.20, 0.25, 0.30],
+        "short_deltas": [0.10, 0.15, 0.20, 0.25, 0.30, 0.35],
+        "wing_widths":  [0.05, 0.10, 0.15],
+        "vix_thresholds": [None, 30, 25, 20],
+        "opt_short_delta":  (0.10, 0.35),
+        "opt_put_delta":    (0.05, 0.30),
+        "opt_wing_width":   (0.05, 0.20),
+        "opt_profit_take":  (0.30, 0.70),
+        "opt_max_spread":   (0.10, 0.35),
+        "opt_put_vix_max":  (15.0, 45.0),
+        "opt_call_vix_min": (0.0,  30.0),
+    },
+
+    "HD": {
+        # Home Depot Inc. #1 home improvement retailer (duopoly with LOW).
+        # Consistent same-store sales, contractor/pro segment provides recurring
+        # revenue. IV ~18–25%, low realized vol for a $350–400 stock. Secular
+        # uptrend. No splits in study window. Liquid weekly options.
+        "start": date(2018, 1, 1),
+        "split_dates": HD_SPLIT_DATES,
+        "put_deltas":   [0.05, 0.10, 0.15, 0.20, 0.25, 0.30],
+        "short_deltas": [0.10, 0.15, 0.20, 0.25, 0.30, 0.35],
+        "wing_widths":  [0.05, 0.10, 0.15],
+        "vix_thresholds": [None, 30, 25, 20],
+        "opt_short_delta":  (0.10, 0.35),
+        "opt_put_delta":    (0.05, 0.30),
+        "opt_wing_width":   (0.05, 0.20),
+        "opt_profit_take":  (0.30, 0.70),
+        "opt_max_spread":   (0.10, 0.35),
+        "opt_put_vix_max":  (15.0, 45.0),
+        "opt_call_vix_min": (0.0,  30.0),
+    },
+
+    "XLK": {
+        # Technology Select Sector SPDR ETF. ~44% AAPL + MSFT combined weight;
+        # also holds NVDA, AVGO, CRM, AMD. Moderate IV (~18–28%) — lower than
+        # individual mega-cap tech due to diversification. Secular upward trend.
+        # No reverse splits. Liquid weekly options.
+        "start": date(2018, 1, 1),
+        "split_dates": XLK_SPLIT_DATES,
+        "put_deltas":   [0.05, 0.10, 0.15, 0.20, 0.25, 0.30],
+        "short_deltas": [0.10, 0.15, 0.20, 0.25, 0.30, 0.35],
+        "wing_widths":  [0.05, 0.10, 0.15],
+        "vix_thresholds": [None, 30, 25, 20],
+        "opt_short_delta":  (0.10, 0.40),
+        "opt_put_delta":    (0.05, 0.35),
+        "opt_wing_width":   (0.05, 0.20),
+        "opt_profit_take":  (0.30, 0.70),
+        "opt_max_spread":   (0.10, 0.35),
+        "opt_put_vix_max":  (15.0, 45.0),
+        "opt_call_vix_min": (0.0,  30.0),
+    },
+
+    "COST": {
+        # Costco Wholesale Corporation. Membership warehouse retailer; defensive
+        # consumer staples-like business model with recurring fee revenue. Low IV
+        # (~15–25%) reflecting steady earnings and consistent demand. No splits
+        # since 2000 (pre-study window). Very liquid weekly options.
+        "start": date(2018, 1, 1),
+        "split_dates": COST_SPLIT_DATES,
+        "put_deltas":   [0.05, 0.10, 0.15, 0.20, 0.25, 0.30],
+        "short_deltas": [0.10, 0.15, 0.20, 0.25, 0.30, 0.35],
+        "wing_widths":  [0.05, 0.10, 0.15],
+        "vix_thresholds": [None, 30, 25, 20],
+        "opt_short_delta":  (0.10, 0.35),
+        "opt_put_delta":    (0.05, 0.30),
+        "opt_wing_width":   (0.05, 0.20),
+        "opt_profit_take":  (0.30, 0.70),
+        "opt_max_spread":   (0.10, 0.35),
+        "opt_put_vix_max":  (15.0, 45.0),
+        "opt_call_vix_min": (0.0,  30.0),
+    },
+
+    "WMT": {
+        # Walmart Inc. World's largest retailer by revenue. Defensive consumer
+        # staples / discount retail with strong same-store sales. Low IV (~15–22%).
+        # 3:1 forward split 2024-02-26 — delta selection handles it naturally.
+        # Very liquid weekly options.
+        "start": date(2018, 1, 1),
+        "split_dates": WMT_SPLIT_DATES,
+        "put_deltas":   [0.05, 0.10, 0.15, 0.20, 0.25, 0.30],
+        "short_deltas": [0.10, 0.15, 0.20, 0.25, 0.30, 0.35],
+        "wing_widths":  [0.05, 0.10, 0.15],
+        "vix_thresholds": [None, 30, 25, 20],
+        "opt_short_delta":  (0.10, 0.35),
+        "opt_put_delta":    (0.05, 0.30),
+        "opt_wing_width":   (0.05, 0.20),
+        "opt_profit_take":  (0.30, 0.70),
+        "opt_max_spread":   (0.10, 0.35),
+        "opt_put_vix_max":  (15.0, 45.0),
+        "opt_call_vix_min": (0.0,  30.0),
+    },
+
+    "JNJ": {
+        # Johnson & Johnson. Diversified healthcare (pharma + MedTech) after
+        # spinning off Kenvue (consumer health) in 2023. Defensive, dividend
+        # aristocrat. Low IV (~15–22%) reflecting stable earnings. No splits
+        # in the study window. Liquid weekly options.
+        "start": date(2018, 1, 1),
+        "split_dates": JNJ_SPLIT_DATES,
+        "put_deltas":   [0.05, 0.10, 0.15, 0.20, 0.25, 0.30],
+        "short_deltas": [0.10, 0.15, 0.20, 0.25, 0.30, 0.35],
+        "wing_widths":  [0.05, 0.10, 0.15],
+        "vix_thresholds": [None, 30, 25, 20],
+        "opt_short_delta":  (0.10, 0.35),
+        "opt_put_delta":    (0.05, 0.30),
+        "opt_wing_width":   (0.05, 0.20),
+        "opt_profit_take":  (0.30, 0.70),
+        "opt_max_spread":   (0.10, 0.35),
+        "opt_put_vix_max":  (15.0, 45.0),
+        "opt_call_vix_min": (0.0,  30.0),
+    },
+
+    "IBIT": {
+        # iShares Bitcoin Trust ETF. Spot Bitcoin exposure via the largest US
+        # Bitcoin ETF (launched Jan 2024). Very high IV (50–80%+) driven by
+        # crypto volatility; no structural decay like UVXY but exhibits large
+        # directional swings. No reverse splits. Liquid weekly options.
+        # Data in Athena starts 2024-11-21 (~16 months).
+        "start": date(2024, 11, 21),
+        "split_dates": IBIT_SPLIT_DATES,
+
+        # High IV supports higher-delta short calls — similar to UVXY.
+        "short_deltas": [0.30, 0.35, 0.40, 0.50],
+
+        # Wider wings viable given high IV and wide markets.
+        "wing_widths": [0.10, 0.15, 0.20],
+
+        # put_deltas included for completeness; not used by call spread study.
+        "put_deltas": [0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40],
+
+        # VIX thresholds — sweep all regimes; crypto vol is driven by its own
+        # dynamics not tightly coupled to VIX, but worth checking.
+        "vix_thresholds": [None, 30, 25, 20],
+
+        # ── Optimizer search bounds ────────────────────────────────────────────
+        "opt_short_delta":  (0.25, 0.55),
+        "opt_put_delta":    (0.10, 0.45),
+        "opt_wing_width":   (0.05, 0.25),
+        "opt_profit_take":  (0.30, 0.70),
+        "opt_max_spread":   (0.15, 0.45),
         "opt_put_vix_max":  (15.0, 40.0),
         "opt_call_vix_min": (0.0,  30.0),
     },

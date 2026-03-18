@@ -781,6 +781,7 @@ def run_spread_delta_sweep(
     max_fwd_vol_factor: Optional[float] = None,
     stock_df: Optional[pd.DataFrame] = None,
     ma_filter_days: Optional[int] = None,
+    ma_thresholds: Optional[list] = None,
 ) -> pd.DataFrame:
     """
     Run the put spread study across all (short_delta, wing_width, vix_threshold) combos.
@@ -821,6 +822,11 @@ def run_spread_delta_sweep(
             if stock_df is not None and ma_filter_days is not None:
                 positions = add_ma_column(positions, stock_df, ma_filter_days)
 
+            # Add MA columns for all requested sweep thresholds
+            if stock_df is not None and ma_thresholds:
+                for _ma_days in [d for d in ma_thresholds if d is not None]:
+                    positions = add_ma_column(positions, stock_df, _ma_days)
+
             if max_fwd_vol_factor is not None:
                 positions = positions[
                     positions["fwd_vol_factor"].isna()
@@ -833,21 +839,34 @@ def run_spread_delta_sweep(
             positions = find_put_spread_exits(positions, df_opts, profit_take_pct=profit_take_pct)
             positions = compute_spread_metrics(positions)
 
-            for vix_thresh in vix_thresholds:
-                if vix_thresh is None:
-                    filtered = positions.copy()
-                    label = float("nan")
+            _ma_sweep = ma_thresholds if ma_thresholds is not None else [None]
+            for ma_thresh in _ma_sweep:
+                if ma_thresh is not None:
+                    _col = f"ma_ratio_{ma_thresh}"
+                    ma_pos = (
+                        positions[positions[_col].isna() | (positions[_col] >= 1.0)].copy()
+                        if _col in positions.columns
+                        else positions.copy()
+                    )
                 else:
-                    filtered = positions[
-                        positions["vix_on_entry"].isna()
-                        | (positions["vix_on_entry"] < vix_thresh)
-                    ].copy()
-                    label = float(vix_thresh)
+                    ma_pos = positions.copy()
 
-                filtered["short_delta_target"] = short_delta
-                filtered["wing_delta_width"]   = wing_width
-                filtered["vix_threshold"]      = label
-                all_results.append(filtered)
+                for vix_thresh in vix_thresholds:
+                    if vix_thresh is None:
+                        filtered = ma_pos.copy()
+                        vix_label = float("nan")
+                    else:
+                        filtered = ma_pos[
+                            ma_pos["vix_on_entry"].isna()
+                            | (ma_pos["vix_on_entry"] < vix_thresh)
+                        ].copy()
+                        vix_label = float(vix_thresh)
+
+                    filtered["short_delta_target"] = short_delta
+                    filtered["wing_delta_width"]   = wing_width
+                    filtered["vix_threshold"]      = vix_label
+                    filtered["ma_threshold"]       = float("nan") if ma_thresh is None else float(ma_thresh)
+                    all_results.append(filtered)
 
             n = len(positions[~positions["split_flag"] & ~positions["is_open"]])
             print(f"{n} trades.")
@@ -867,6 +886,8 @@ def print_spread_sweep_summary(
     dte_target: int = 20,
     profit_take_pct: float = 0.50,
     ticker: str = "GLD",
+    ma_thresholds: Optional[list] = None,
+    entry_weekday: int = 4,
 ) -> None:
     """
     Print one summary table per wing_width.
@@ -897,58 +918,72 @@ def print_spread_sweep_summary(
     width = 84
     bar   = "=" * width
 
-    for wing_width in wing_delta_widths:
-        print(f"\n{bar}")
-        print(
-            f"  {ticker} Bull Put Spread — {dte_target} DTE  "
-            f"({int(profit_take_pct*100)}% profit take, Fridays)  "
-            f"Wing ≈ {wing_width:.2f}Δ"
-        )
-        print(bar)
+    _day_name = {0: "Mondays", 1: "Tuesdays", 2: "Wednesdays", 3: "Thursdays", 4: "Fridays"}.get(entry_weekday, f"weekday={entry_weekday}")
+    _ma_sweep = ma_thresholds if ma_thresholds is not None else [None]
 
-        thresh_labels = [_vix_label(v) for v in vix_thresholds]
-        hdr1 = f"  {'ShortΔ':>7}"
-        hdr2 = f"  {'':>7}"
-        for lbl in thresh_labels:
-            hdr1 += f"  {lbl:^33}"
-            hdr2 += f"  {'N(E%)':>5} {'Win%':>5} {'Pnl%':>6} {'ROC%':>6} {'AnnROC%':>8} {'Crd%':>4}"
-        print(hdr1)
-        print(hdr2)
-        print("  " + "-" * (width - 2))
+    for ma_thresh in _ma_sweep:
+        if "ma_threshold" in sweep_df.columns:
+            if ma_thresh is None:
+                ma_df = sweep_df[sweep_df["ma_threshold"].isna()].copy()
+            else:
+                ma_df = sweep_df[sweep_df["ma_threshold"] == float(ma_thresh)].copy()
+        else:
+            ma_df = sweep_df.copy()
 
-        for short_delta in short_delta_targets:
-            row = f"  {short_delta:>7.2f}"
-            for vt in vix_thresholds:
-                sub = sweep_df[
-                    (sweep_df["short_delta_target"] == short_delta)
-                    & (sweep_df["wing_delta_width"] == wing_width)
-                    & (
-                        (sweep_df["vix_threshold"].isna() & (vt is None))
-                        | (sweep_df["vix_threshold"] == (float(vt) if vt is not None else float("nan")))
-                    )
-                ]
-                st = _stats(sub)
-                if st:
-                    early_pct = st["n_early"] / st["n"] * 100
-                    row += (
-                        f"  {st['n']:>3}({early_pct:>2.0f}%)"
-                        f" {st['win_pct']:>4.1f}%"
-                        f" {st['pnl_pct']:>+5.1f}%"
-                        f" {st['roc']:>+5.2f}%"
-                        f" {st['ann_roc']:>+7.1f}%"
-                        f" {st['credit_pct']:>3.0f}%"
-                    )
-                else:
-                    row += f"  {'—':^33}"
-            print(row)
+        ma_label = "" if ma_thresh is None else f"  [spot > {ma_thresh}-day MA]"
 
-        print("  " + "-" * (width - 2))
-        print(
-            f"  N = closed trades (split-spanning excluded)  "
-            f"E% = {int(profit_take_pct*100)}% profit take  "
-            f"Crd% = net_credit/spread_width"
-        )
-        print(bar)
+        for wing_width in wing_delta_widths:
+            print(f"\n{bar}")
+            print(
+                f"  {ticker} Bull Put Spread — {dte_target} DTE  "
+                f"({int(profit_take_pct*100)}% profit take, {_day_name})"
+                f"  Wing ≈ {wing_width:.2f}Δ{ma_label}"
+            )
+            print(bar)
+
+            thresh_labels = [_vix_label(v) for v in vix_thresholds]
+            hdr1 = f"  {'ShortΔ':>7}"
+            hdr2 = f"  {'':>7}"
+            for lbl in thresh_labels:
+                hdr1 += f"  {lbl:^33}"
+                hdr2 += f"  {'N(E%)':>5} {'Win%':>5} {'Pnl%':>6} {'ROC%':>6} {'AnnROC%':>8} {'Crd%':>4}"
+            print(hdr1)
+            print(hdr2)
+            print("  " + "-" * (width - 2))
+
+            for short_delta in short_delta_targets:
+                row = f"  {short_delta:>7.2f}"
+                for vt in vix_thresholds:
+                    sub = ma_df[
+                        (ma_df["short_delta_target"] == short_delta)
+                        & (ma_df["wing_delta_width"] == wing_width)
+                        & (
+                            (ma_df["vix_threshold"].isna() & (vt is None))
+                            | (ma_df["vix_threshold"] == (float(vt) if vt is not None else float("nan")))
+                        )
+                    ]
+                    st = _stats(sub)
+                    if st:
+                        early_pct = st["n_early"] / st["n"] * 100
+                        row += (
+                            f"  {st['n']:>3}({early_pct:>2.0f}%)"
+                            f" {st['win_pct']:>4.1f}%"
+                            f" {st['pnl_pct']:>+5.1f}%"
+                            f" {st['roc']:>+5.2f}%"
+                            f" {st['ann_roc']:>+7.1f}%"
+                            f" {st['credit_pct']:>3.0f}%"
+                        )
+                    else:
+                        row += f"  {'—':^33}"
+                print(row)
+
+            print("  " + "-" * (width - 2))
+            print(
+                f"  N = closed trades (split-spanning excluded)  "
+                f"E% = {int(profit_take_pct*100)}% profit take  "
+                f"Crd% = net_credit/spread_width"
+            )
+            print(bar)
 
 
 def print_spread_year_detail(
@@ -1030,6 +1065,7 @@ def run_put_spread_study(
     fwd_vol_thresholds: Optional[list] = None,
     max_fwd_vol_factor: Optional[float] = None,
     ma_filter_days: Optional[int] = None,
+    ma_thresholds: Optional[list] = None,
 ) -> pd.DataFrame:
     """
     Full pipeline: sync options_cache → VIX fetch → load → sweep → print → CSV.
@@ -1058,8 +1094,10 @@ def run_put_spread_study(
 
     # 4. Stock price history (for MA filter)
     stock_df: Optional[pd.DataFrame] = None
-    if ma_filter_days is not None:
-        print(f"Fetching {ticker} daily price history for MA{ma_filter_days} filter ...")
+    _needs_stock = ma_filter_days is not None or (ma_thresholds and any(d is not None for d in ma_thresholds))
+    if _needs_stock:
+        _ma_desc = ", ".join(str(d) for d in ([ma_filter_days] if ma_filter_days else []) + [d for d in (ma_thresholds or []) if d is not None])
+        print(f"Fetching {ticker} daily price history for MA filter(s): {_ma_desc} ...")
         stock_df = fetch_stock_history(ticker, start, end)
         if stock_df.empty:
             print("  WARNING: no stock price data — MA filter will be skipped.")
@@ -1087,6 +1125,7 @@ def run_put_spread_study(
         max_fwd_vol_factor=max_fwd_vol_factor,
         stock_df=stock_df,
         ma_filter_days=ma_filter_days,
+        ma_thresholds=ma_thresholds,
     )
 
     if not sweep.empty:
@@ -1100,6 +1139,7 @@ def run_put_spread_study(
     print_spread_sweep_summary(
         sweep, short_delta_targets, wing_delta_widths, vix_thresholds,
         dte_target, profit_take_pct, ticker=ticker,
+        ma_thresholds=ma_thresholds, entry_weekday=entry_weekday,
     )
 
     # 6. Optional per-year detail + fwd vol factor sweep + MA filter comparison

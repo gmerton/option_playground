@@ -1,0 +1,68 @@
+{
+  "fetched_at": "2026-03-11T10:32:24.747981",
+  "events": [
+    {
+      "date": "2026-03-12",
+      "name": "Core CPI",
+      "label": "Core CPI",
+      "actual": "0.2%",
+      "consensus": "0.2%"
+    },
+    {
+      "date": "2026-03-12",
+      "name": "Core CPI",
+      "label": "Core CPI",
+      "actual": "2.5%",
+      "consensus": "2.5%"
+    },
+    {
+      "date": "2026-03-12",
+      "name": "CPI",
+      "label": "CPI",
+      "actual": "0.3%",
+      "consensus": "0.3%"
+    },
+    {
+      "date": "2026-03-12",
+      "name": "CPI",
+      "label": "CPI",
+      "actual": "2.4%",
+      "consensus": "2.4%"
+    },
+    {
+      "date": "2026-03-19",
+      "name": "Core PPI",
+      "label": "Core PPI",
+      "actual": "&nbsp;",
+      "consensus": ""
+    },
+    {
+      "date": "2026-03-19",
+      "name": "Core PPI",
+      "label": "Core PPI",
+      "actual": "&nbsp;",
+      "consensus": ""
+    },
+    {
+      "date": "2026-03-19",
+      "name": "PPI",
+      "label": "PPI",
+      "actual": "&nbsp;",
+      "consensus": ""
+    },
+    {
+      "date": "2026-03-19",
+      "name": "PPI",
+      "label": "PPI",
+      "actual": "&nbsp;",
+      "consensus": ""
+    },
+    {
+      "date": "2026-03-19",
+      "name": "Fed Interest Rate Decision",
+      "label": "FOMC",
+      "actual": "&nbsp;",
+      "consensus": ""
+    }
+  ]
+}

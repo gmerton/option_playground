@@ -21,6 +21,7 @@ from lib.tradier.tradier_client_wrapper import TradierClient
 from lib.commons.list_contracts import list_contracts_for_expiry
 from lib.commons.get_underlying_price import get_underlying_price
 from lib.mysql_lib import get_open_positions
+from lib.economic_calendar import print_upcoming_events
 
 
 # ── Quote helpers ─────────────────────────────────────────────────────────────
@@ -244,6 +245,8 @@ async def run(today: date) -> None:
     print(f"\n{BAR}")
     print(f"  POSITION MONITOR  ·  {today}")
     print(f"{BAR}")
+    print()
+    print_upcoming_events(lookahead_days=7)
 
     action_icons = {
         "CLOSE":       "⚠️   CLOSE NOW",

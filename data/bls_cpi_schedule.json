@@ -1,0 +1,19 @@
+{
+  "_source": "https://www.bls.gov/schedule/news_release/cpi.htm",
+  "_note": "Update this file each January when BLS publishes the new year's schedule",
+  "cpi_releases": [
+    {"date": "2025-12-18", "period": "November 2025"},
+    {"date": "2026-01-13", "period": "December 2025"},
+    {"date": "2026-02-13", "period": "January 2026"},
+    {"date": "2026-03-11", "period": "February 2026"},
+    {"date": "2026-04-10", "period": "March 2026"},
+    {"date": "2026-05-12", "period": "April 2026"},
+    {"date": "2026-06-10", "period": "May 2026"},
+    {"date": "2026-07-14", "period": "June 2026"},
+    {"date": "2026-08-12", "period": "July 2026"},
+    {"date": "2026-09-11", "period": "August 2026"},
+    {"date": "2026-10-14", "period": "September 2026"},
+    {"date": "2026-11-10", "period": "October 2026"},
+    {"date": "2026-12-10", "period": "November 2026"}
+  ]
+}
