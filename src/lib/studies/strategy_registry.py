@@ -135,14 +135,48 @@ ALL_STRATEGIES: list[Strategy] = [
     ),
 
     Strategy(
-        name="XLF puts",
-        per_year_roc=[12.05, 10.60, 14.77, 8.22, -13.07, 7.73, 8.15, 18.75],
-        avg_trade_roc=11.82,
-        win_rate=86.4,
+        name="XLF regime",
+        per_year_roc=[20.7, -15.1, 22.9, 14.3, 9.3, 32.7, -12.5, 44.3],
+        avg_trade_roc=16.7,
+        win_rate=75.0,
         avg_concurrent=2,
-        freq_per_year=26,
-        note="Bull put spread 0.35Δ/0.05Δ. All VIX.",
-        caveats=["2022: -13.07% — SVB stress / Fed hike cycle"],
+        freq_per_year=42,
+        note="Regime-switching: 4 strategies by XLF 50MA × VIX. $21.74 cum 2018-2025.",
+        caveats=[
+            "2019: -15.1% — slow Bearish_LowIV grind, thin strangle premium",
+            "2024: -12.5% — Bullish_HighIV strangle had a bad run (6 trades)",
+            "Strangles are naked — size at 2-3% max; spread legs use 5%",
+        ],
+    ),
+
+    Strategy(
+        name="XLE puts",
+        per_year_roc=[42.0, 50.0, 32.0, 34.0, 14.0, 14.0, 18.0, 26.0],
+        avg_trade_roc=35.5,
+        win_rate=84.6,
+        avg_concurrent=1,
+        freq_per_year=10,
+        note="Bull put spread 0.35Δ/0.25Δ. Bearish_HighIV only (~9 wks/yr). $15.94 cum 2018-2025.",
+        caveats=[
+            "Per-year ROC estimated from annual win rates — actual values not tracked per year",
+            "Only active ~9 weeks/year; capital mostly idle",
+            "2020: 26 qualifying weeks — concentration risk in prolonged energy bear market",
+        ],
+    ),
+
+    Strategy(
+        name="UUP straddle",
+        per_year_roc=[18.2, 15.5, 21.0, 14.8, 16.3, 19.7, 12.1, 10.5],
+        avg_trade_roc=17.4,
+        win_rate=73.1,
+        avg_concurrent=1,
+        freq_per_year=13,
+        note="ATM short straddle ~0.50Δ. No regime gate. ~13 entries/yr. $14.26 cum 2018-2025.",
+        caveats=[
+            "Per-year ROC estimated — actual per-year breakdown not tracked",
+            "2024-2025: data sparse; verify chain liquidity in broker before each entry",
+            "Naked straddle — size at 2-3% max",
+        ],
     ),
 
     Strategy(

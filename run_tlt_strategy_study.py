@@ -26,12 +26,13 @@ Regimes (4 buckets):
   Bullish_LowIV:   above 50MA + VIX <  20
 
 Usage:
-  PYTHONPATH=src python run_tlt_strategy_study.py
+  PYTHONPATH=src python run_tlt_strategy_study.py [--ticker TMF]
 
 Requires: MYSQL_PASSWORD
 """
 from __future__ import annotations
 
+import argparse
 import math
 import pathlib
 from datetime import date, timedelta
@@ -70,15 +71,23 @@ END_DATE   = date(2026, 3, 14)
 
 # ── Data loading ──────────────────────────────────────────────────────────────
 
-def load_tlt_options() -> pd.DataFrame:
+def load_options(ticker: str) -> pd.DataFrame:
+    all_deltas = [CALL_SHORT_DELTA, CALL_LONG_DELTA, PUT_SHORT_DELTA, PUT_LONG_DELTA, STRADDLE_DELTA]
+    dte_min    = max(0, DTE_TARGET - DTE_TOL - 5)
+    dte_max    = DTE_TARGET + DTE_TOL + 5
+    delta_min  = min(all_deltas) - MAX_DELTA_ERR
+    delta_max  = max(all_deltas) + MAX_DELTA_ERR
     sql = f"""
-        SELECT trade_date, expiry, strike, mid, delta, cp
+        SELECT trade_date, expiry, strike, mid, delta, cp,
+               DATEDIFF(expiry, trade_date) AS dte
         FROM options_cache
-        WHERE ticker = 'TLT'
+        WHERE ticker = '{ticker}'
           AND trade_date >= '{START_DATE}'
           AND trade_date <= '{END_DATE}'
           AND mid > 0
           AND delta <> 0
+          AND ABS(delta) BETWEEN {delta_min} AND {delta_max}
+          AND DATEDIFF(expiry, trade_date) BETWEEN {dte_min} AND {dte_max}
         ORDER BY trade_date, expiry, strike
     """
     df = pd.read_sql(sql, _get_engine())
@@ -87,12 +96,12 @@ def load_tlt_options() -> pd.DataFrame:
     df["strike"]     = df["strike"].astype(float)
     df["mid"]        = df["mid"].astype(float)
     df["delta"]      = df["delta"].abs().astype(float)
-    df["dte"]        = (df["expiry"] - df["trade_date"]).apply(lambda d: d.days)
+    df["dte"]        = df["dte"].astype(int)
     return df
 
 
-def load_stock() -> pd.DataFrame:
-    path = _CACHE_DIR / "TLT_stock.parquet"
+def load_stock(ticker: str) -> pd.DataFrame:
+    path = _CACHE_DIR / f"{ticker}_stock.parquet"
     df   = pd.read_parquet(path)
     df["trade_date"] = pd.to_datetime(df["trade_date"]).dt.date
     return df.sort_values("trade_date").reset_index(drop=True)
@@ -354,11 +363,16 @@ def print_section(df_sub: pd.DataFrame, label: str) -> None:
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 def main() -> None:
-    print("Loading TLT option data...")
-    opts = load_tlt_options()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--ticker", default="TLT", help="Ticker symbol (default: TLT)")
+    args = parser.parse_args()
+    ticker = args.ticker.upper()
+
+    print(f"Loading {ticker} option data...")
+    opts = load_options(ticker)
     print(f"  {len(opts):,} rows  ({opts['trade_date'].min()} → {opts['trade_date'].max()})")
 
-    stock_df   = load_stock()
+    stock_df   = load_stock(ticker)
     stock_map  = dict(zip(stock_df["trade_date"], stock_df["close"].astype(float)))
     vix_map    = load_vix()
     regime_map = build_regime_map(stock_df, vix_map)
@@ -468,7 +482,7 @@ def main() -> None:
 
     # ── Summary ───────────────────────────────────────────────────────────────
     print("\n" + "═" * 92)
-    print("  TLT MULTI-STRATEGY REGIME STUDY  ·  2018–2026  ·  ~20 DTE")
+    print(f"  {ticker} MULTI-STRATEGY REGIME STUDY  ·  2018–2026  ·  ~20 DTE")
     print("  Credit strategies: 50% profit take / 2× stop   |   Long straddle: +50% take / -40% stop")
     print("═" * 92)
 

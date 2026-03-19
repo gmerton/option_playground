@@ -3,10 +3,12 @@
 TLT Regime-Switching Strategy Backtest
 
 Each Friday, classify the regime and deploy the optimal structure:
-  Bearish_HighIV  → Bear call spread:        short 0.35Δ call / long 0.25Δ call
-  Bearish_LowIV   → Short strangle (sym):     short 0.25Δ call / short 0.25Δ put
-  Bullish_HighIV  → Short strangle (skewed):  short 0.45Δ call / short 0.25Δ put
-  Bullish_LowIV   → Long straddle:            long  0.50Δ call / long  0.50Δ put
+  Bearish_HighIV  → Bear call spread:  short 0.40Δ call / long 0.30Δ call
+  Bearish_LowIV   → Bear call spread:  short 0.25Δ call / long 0.15Δ call
+  Bullish_HighIV  → Bear call spread:  short 0.40Δ call / long 0.30Δ call
+  Bullish_LowIV   → Bull put spread:   short 0.45Δ put  / long 0.35Δ put
+
+ROC uses Reg T capital-at-risk as denominator (spread_width - credit).
 
 Exit rules:
   Credit strategies: 50% profit take, 2× stop loss
@@ -35,14 +37,54 @@ from lib.mysql_lib import _get_engine
 
 _CACHE_DIR = pathlib.Path(__file__).parent / "data" / "cache"
 
-# ── Strategy parameters ───────────────────────────────────────────────────────
-REGIME_STRATEGIES = {
-    "Bearish_HighIV": ("bear_call_spread",     0.35, 0.25, None,  None ),
-    "Bearish_LowIV":  ("short_strangle_sym",   0.25, 0.25, None,  None ),
-    "Bullish_HighIV": ("short_strangle_skew",  0.45, 0.25, None,  None ),
-    "Bullish_LowIV":  ("long_straddle",        0.50, 0.50, None,  None ),
+
+# ── Capital at risk ────────────────────────────────────────────────────────────
+
+def reg_t_margin(
+    structure:    str,
+    underlying:   float,
+    credit:       float,
+    spread_width: float = 0.0,
+    call_strike:  float = 0.0,
+    put_strike:   float = 0.0,
+    call_prem:    float = 0.0,
+    put_prem:     float = 0.0,
+) -> float:
+    """
+    Capital at risk per share (Reg T / CBOE methodology):
+      - Spreads:          spread_width - credit  (exact max loss)
+      - Short strangles:  max(call_side, put_side) per CBOE uncovered formula
+      - Long straddle:    debit paid
+    """
+    if structure in ("bear_call_spread", "bull_put_spread"):
+        return spread_width - credit
+    elif structure in ("short_strangle_sym", "short_strangle_skew"):
+        otm_c  = max(0.0, call_strike - underlying)
+        otm_p  = max(0.0, underlying  - put_strike)
+        call_m = max(0.20 * underlying - otm_c + call_prem, 0.10 * underlying + call_prem)
+        put_m  = max(0.20 * underlying - otm_p + put_prem,  0.10 * put_strike  + put_prem)
+        return max(call_m, put_m)
+    else:  # long_straddle
+        return credit  # debit = total premium at risk
+
+# ── Per-ticker regime strategy maps ──────────────────────────────────────────
+# (strategy_name, call_or_short_delta, put_or_long_delta, ...)
+TICKER_REGIME_STRATEGIES: dict[str, dict] = {
+    "TLT": {
+        "Bearish_HighIV": ("bear_call_spread",  0.40, 0.30, None, None),
+        "Bearish_LowIV":  ("bear_call_spread",  0.25, 0.15, None, None),
+        "Bullish_HighIV": ("bear_call_spread",  0.40, 0.30, None, None),
+        "Bullish_LowIV":  ("bull_put_spread",   0.45, 0.35, None, None),
+    },
+    "XLF": {
+        "Bearish_HighIV": ("bull_put_spread",      0.35, 0.25, None, None),
+        "Bearish_LowIV":  ("short_strangle_skew",  0.20, 0.25, None, None),
+        "Bullish_HighIV": ("short_strangle_skew",  0.35, 0.40, None, None),
+        "Bullish_LowIV":  ("bear_call_spread",     0.35, 0.25, None, None),
+    },
 }
-# (strategy_name, call_delta, put_delta, ...)
+# Fallback (TLT mapping) used when ticker not in TICKER_REGIME_STRATEGIES
+REGIME_STRATEGIES = TICKER_REGIME_STRATEGIES["TLT"]
 
 PROFIT_TAKE   = 0.50
 STOP_MULT     = 2.0
@@ -62,11 +104,32 @@ END_DATE   = date(2026, 3, 14)
 
 # ── Data loading ──────────────────────────────────────────────────────────────
 
-def load_tlt_options() -> pd.DataFrame:
+def load_options(ticker: str) -> pd.DataFrame:
+    from datetime import date as _date
+    cache_path = _CACHE_DIR / f"{ticker}_options.parquet"
+    staleness_threshold = _date.today() - timedelta(days=30)
+
+    if cache_path.exists():
+        df = pd.read_parquet(cache_path)
+        df["trade_date"] = pd.to_datetime(df["trade_date"]).dt.date
+        df["expiry"]     = pd.to_datetime(df["expiry"]).dt.date
+        cached_max = df["trade_date"].max()
+        if cached_max >= staleness_threshold:
+            print(f"  Loaded {len(df):,} rows from parquet cache (max date: {cached_max}).")
+            return df
+        print(f"  Parquet cache stale (max date: {cached_max}, threshold: {staleness_threshold}).")
+        answer = input("  Refresh from MySQL? (~2 GB RAM) [y/N] ").strip().lower()
+        if answer != "y":
+            print("  Using stale cache.")
+            return df
+        print("  Refreshing from MySQL ...")
+    else:
+        print(f"  No parquet cache found, fetching from MySQL ...")
+
     sql = f"""
         SELECT trade_date, expiry, strike, mid, delta, cp
         FROM options_cache
-        WHERE ticker = 'TLT'
+        WHERE ticker = '{ticker}'
           AND trade_date >= '{START_DATE}'
           AND trade_date <= '{END_DATE}'
           AND mid > 0
@@ -80,11 +143,13 @@ def load_tlt_options() -> pd.DataFrame:
     df["mid"]        = df["mid"].astype(float)
     df["delta"]      = df["delta"].abs().astype(float)
     df["dte"]        = (df["expiry"] - df["trade_date"]).apply(lambda d: d.days)
+    df.to_parquet(cache_path, index=False)
+    print(f"  Saved {len(df):,} rows to {cache_path.name}")
     return df
 
 
-def load_stock() -> pd.DataFrame:
-    path = _CACHE_DIR / "TLT_stock.parquet"
+def load_stock(ticker: str) -> pd.DataFrame:
+    path = _CACHE_DIR / f"{ticker}_stock.parquet"
     df   = pd.read_parquet(path)
     df["trade_date"] = pd.to_datetime(df["trade_date"]).dt.date
     return df.sort_values("trade_date").reset_index(drop=True)
@@ -167,22 +232,31 @@ def sim_credit_spread(
     credit:       float,
     daily_map:    dict,
     stock_map:    dict[date, float],
+    margin:       float = 0.0,
+    ann_target:   Optional[float] = None,
 ) -> dict:
     take = credit * (1.0 - PROFIT_TAKE)
-    stop = credit * STOP_MULT
+    stop = credit * STOP_MULT if STOP_MULT is not None else None
 
     cur = entry_date + timedelta(days=1)
     while cur <= expiry:
         s = daily_map.get((cur, expiry, short_strike))
         l = daily_map.get((cur, expiry, long_strike))
         if s is not None and l is not None:
-            val = s - l
-            if val <= take:
-                return dict(pnl=credit - val, exit="profit_take",
-                            days=(cur - entry_date).days, exit_date=cur)
-            if val >= stop:
-                return dict(pnl=credit - val, exit="stop_loss",
-                            days=(cur - entry_date).days, exit_date=cur)
+            val       = s - l
+            pnl_now   = credit - val
+            hold_days = (cur - entry_date).days
+            # Profit take: annualized-ROC mode or fixed-pct mode
+            if ann_target is not None and margin > 0 and hold_days > 0:
+                if (pnl_now / margin) * (365.0 / hold_days) >= ann_target:
+                    return dict(pnl=pnl_now, exit="profit_take",
+                                days=hold_days, exit_date=cur)
+            elif val <= take:
+                return dict(pnl=pnl_now, exit="profit_take",
+                            days=hold_days, exit_date=cur)
+            if stop is not None and val >= stop:
+                return dict(pnl=pnl_now, exit="stop_loss",
+                            days=hold_days, exit_date=cur)
         if cur >= expiry:
             spot = stock_map.get(expiry) or stock_map.get(cur, short_strike)
             si = max(0.0, spot - short_strike) if cp == "C" else max(0.0, short_strike - spot)
@@ -213,7 +287,7 @@ def sim_strangle(
 ) -> dict:
     if is_short:
         take = credit * (1.0 - PROFIT_TAKE)
-        stop = credit * STOP_MULT
+        stop = credit * STOP_MULT if STOP_MULT is not None else None
     else:
         take = credit * (1.0 + LONG_TAKE_PCT)
         stop = credit * (1.0 - LONG_STOP_PCT)
@@ -228,7 +302,7 @@ def sim_strangle(
                 if val <= take:
                     return dict(pnl=credit - val, exit="profit_take",
                                 days=(cur - entry_date).days, exit_date=cur)
-                if val >= stop:
+                if stop is not None and val >= stop:
                     return dict(pnl=credit - val, exit="stop_loss",
                                 days=(cur - entry_date).days, exit_date=cur)
             else:
@@ -259,16 +333,40 @@ def sim_strangle(
 # ── Trade entry for each strategy ────────────────────────────────────────────
 
 def enter_trade(
-    regime:      str,
-    edate:       date,
-    day_opts:    pd.DataFrame,
-    daily_map_c: dict,
-    daily_map_p: dict,
-    stock_map:   dict[date, float],
+    regime:            str,
+    edate:             date,
+    day_opts:          pd.DataFrame,
+    daily_map_c:       dict,
+    daily_map_p:       dict,
+    stock_map:         dict[date, float],
+    regime_strategies: dict = None,
+    ann_target:        Optional[float] = None,
 ) -> Optional[dict]:
-    strategy, cd, pd_, _, _ = REGIME_STRATEGIES[regime]
+    if regime_strategies is None:
+        regime_strategies = REGIME_STRATEGIES
+    strategy, cd, pd_, _, _ = regime_strategies[regime]
 
-    if strategy == "bear_call_spread":
+    underlying = stock_map.get(edate, 0.0)
+
+    if strategy == "bull_put_spread":
+        short_row = find_option(day_opts, "P", cd)
+        if short_row is None:
+            return None
+        long_row = find_option(day_opts, "P", pd_, expiry=short_row["expiry"])
+        if long_row is None or long_row["strike"] >= short_row["strike"]:
+            return None
+        credit = short_row["mid"] - long_row["mid"]
+        if credit <= 0:
+            return None
+        spread_width = short_row["strike"] - long_row["strike"]
+        margin = reg_t_margin(strategy, underlying, credit, spread_width=spread_width)
+        sim = sim_credit_spread(edate, short_row["expiry"],
+                                short_row["strike"], long_row["strike"],
+                                "P", credit, daily_map_p, stock_map,
+                                margin=margin, ann_target=ann_target)
+        return dict(strategy=strategy, entry_val=credit, margin=margin, **sim)
+
+    elif strategy == "bear_call_spread":
         short_row = find_option(day_opts, "C", cd)
         if short_row is None:
             return None
@@ -278,10 +376,13 @@ def enter_trade(
         credit = short_row["mid"] - long_row["mid"]
         if credit <= 0:
             return None
+        spread_width = long_row["strike"] - short_row["strike"]
+        margin = reg_t_margin(strategy, underlying, credit, spread_width=spread_width)
         sim = sim_credit_spread(edate, short_row["expiry"],
                                 short_row["strike"], long_row["strike"],
-                                "C", credit, daily_map_c, stock_map)
-        return dict(strategy=strategy, entry_val=credit, **sim)
+                                "C", credit, daily_map_c, stock_map,
+                                margin=margin, ann_target=ann_target)
+        return dict(strategy=strategy, entry_val=credit, margin=margin, **sim)
 
     elif strategy in ("short_strangle_sym", "short_strangle_skew"):
         call_row = find_option(day_opts, "C", cd)
@@ -293,10 +394,13 @@ def enter_trade(
         credit = call_row["mid"] + put_row["mid"]
         if credit <= 0:
             return None
+        margin = reg_t_margin(strategy, underlying, credit,
+                              call_strike=call_row["strike"], put_strike=put_row["strike"],
+                              call_prem=call_row["mid"], put_prem=put_row["mid"])
         sim = sim_strangle(edate, call_row["expiry"],
                            call_row["strike"], put_row["strike"],
                            credit, True, daily_map_c, daily_map_p, stock_map)
-        return dict(strategy=strategy, entry_val=credit, **sim)
+        return dict(strategy=strategy, entry_val=credit, margin=margin, **sim)
 
     elif strategy == "long_straddle":
         call_row = find_option(day_opts, "C", cd)
@@ -308,10 +412,11 @@ def enter_trade(
         cost = call_row["mid"] + put_row["mid"]
         if cost <= 0:
             return None
+        margin = reg_t_margin("long_straddle", underlying, cost)
         sim = sim_strangle(edate, call_row["expiry"],
                            call_row["strike"], put_row["strike"],
                            cost, False, daily_map_c, daily_map_p, stock_map)
-        return dict(strategy=strategy, entry_val=cost, **sim)
+        return dict(strategy=strategy, entry_val=cost, margin=margin, **sim)
 
     return None
 
@@ -335,39 +440,49 @@ def enter_bear_call_spread(
     credit = short_row["mid"] - long_row["mid"]
     if credit <= 0:
         return None
+    spread_width = long_row["strike"] - short_row["strike"]
+    underlying   = stock_map.get(edate, 0.0)
+    margin = reg_t_margin("bear_call_spread", underlying, credit, spread_width=spread_width)
     sim = sim_credit_spread(edate, short_row["expiry"],
                             short_row["strike"], long_row["strike"],
                             "C", credit, daily_map_c, stock_map)
-    return dict(strategy="bear_call_spread", entry_val=credit, **sim)
+    return dict(strategy="bear_call_spread", entry_val=credit, margin=margin, **sim)
 
 
-# ── Main ──────────────────────────────────────────────────────────────────────
+# ── Reusable backtest core ────────────────────────────────────────────────────
 
-def main() -> None:
-    print("Loading TLT option data...")
-    opts = load_tlt_options()
-    print(f"  {len(opts):,} rows")
-
-    stock_df   = load_stock()
+def load_data(ticker: str) -> tuple:
+    """Load and preprocess all data for a ticker. Returns tuple for reuse across sweeps."""
+    opts     = load_options(ticker)
+    stock_df = load_stock(ticker)
     stock_map  = dict(zip(stock_df["trade_date"], stock_df["close"].astype(float)))
     vix_map    = load_vix()
     regime_map = build_regime_map(stock_df, vix_map)
-
     calls = opts[opts["cp"] == "C"]
     puts  = opts[opts["cp"] == "P"]
     daily_map_c  = {(r.trade_date, r.expiry, r.strike): r.mid for r in calls.itertuples(index=False)}
     daily_map_p  = {(r.trade_date, r.expiry, r.strike): r.mid for r in puts.itertuples(index=False)}
     opts_by_date = {d: g for d, g in opts.groupby("trade_date")}
-
-    entry_dates = [
+    entry_dates  = [
         START_DATE + timedelta(days=i)
         for i in range((END_DATE - START_DATE).days + 1)
         if (START_DATE + timedelta(days=i)).weekday() == 4
     ]
+    return (daily_map_c, daily_map_p, opts_by_date, stock_map, regime_map, entry_dates, len(opts))
 
-    switch_rows = []
-    baseline_rows = []   # always-on, no filter
-    vix20_rows    = []   # always-on, VIX ≥ 20
+
+def build_trades(
+    regime_strategies: dict,
+    daily_map_c:  dict,
+    daily_map_p:  dict,
+    opts_by_date: dict,
+    stock_map:    dict,
+    regime_map:   dict,
+    entry_dates:  list,
+    ann_target:   Optional[float] = None,
+) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    """Run the regime-switching backtest. Returns (switching, baseline, vix20) DataFrames."""
+    switch_rows, baseline_rows, vix20_rows = [], [], []
 
     for edate in entry_dates:
         reg = regime_map.get(edate)
@@ -376,32 +491,55 @@ def main() -> None:
         day_opts = opts_by_date.get(edate)
         if day_opts is None:
             continue
-
         regime = reg["regime"]
         vix    = reg["vix"]
 
-        # Switching strategy
-        trade = enter_trade(regime, edate, day_opts, daily_map_c, daily_map_p, stock_map)
+        trade = enter_trade(regime, edate, day_opts, daily_map_c, daily_map_p, stock_map,
+                            regime_strategies=regime_strategies, ann_target=ann_target)
         if trade:
             switch_rows.append(dict(edate=edate, year=edate.year, regime=regime,
                                     vix=vix, **trade))
 
-        # Baseline A: always-on call spread
         b = enter_bear_call_spread(edate, day_opts, daily_map_c, stock_map, vix)
         if b:
             baseline_rows.append(dict(edate=edate, year=edate.year, regime=regime,
                                       vix=vix, **b))
 
-        # Baseline B: call spread, VIX ≥ 20 only
         b2 = enter_bear_call_spread(edate, day_opts, daily_map_c, stock_map, vix,
                                     vix_filter=20.0)
         if b2:
             vix20_rows.append(dict(edate=edate, year=edate.year, regime=regime,
                                    vix=vix, **b2))
 
-    sw  = pd.DataFrame(switch_rows)
-    bl  = pd.DataFrame(baseline_rows)
-    v20 = pd.DataFrame(vix20_rows)
+    return pd.DataFrame(switch_rows), pd.DataFrame(baseline_rows), pd.DataFrame(vix20_rows)
+
+
+# ── Main ──────────────────────────────────────────────────────────────────────
+
+def main() -> None:
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--ticker",     default="TLT", help="Ticker symbol (default: TLT)")
+    parser.add_argument("--no-stop",    action="store_true", help="Disable 2× stop loss on credit legs")
+    parser.add_argument("--ann-target", type=float, default=100.0,
+                        help="Annualized ROC profit target in %% (e.g. 100 = 100%%). "
+                             "Pass 0 to use legacy 50%% fixed take.")
+    args = parser.parse_args()
+    ticker = args.ticker.upper()
+    if args.no_stop:
+        global STOP_MULT
+        STOP_MULT = None
+    regime_strategies = TICKER_REGIME_STRATEGIES.get(ticker, TICKER_REGIME_STRATEGIES["TLT"])
+
+    print(f"Loading {ticker} option data...")
+    data = load_data(ticker)
+    daily_map_c, daily_map_p, opts_by_date, stock_map, regime_map, entry_dates, nrows = data
+    print(f"  {nrows:,} rows")
+
+    ann_target = (args.ann_target / 100.0) if args.ann_target else None
+    sw, bl, v20 = build_trades(regime_strategies, daily_map_c, daily_map_p,
+                                opts_by_date, stock_map, regime_map, entry_dates,
+                                ann_target=ann_target)
 
     # ── Helper ────────────────────────────────────────────────────────────────
     def stats(df: pd.DataFrame) -> dict:
@@ -410,28 +548,34 @@ def main() -> None:
         n      = len(df)
         wins   = (df["pnl"] > 0).sum()
         avg_cr = df["entry_val"].mean()
+        avg_mg = df["margin"].mean()
         avg_p  = df["pnl"].mean()
-        roc    = (df["pnl"] / df["entry_val"]).mean() * 100
+        roc    = (df["pnl"] / df["margin"]).mean() * 100
         maxl   = df["pnl"].min()
         sump   = df["pnl"].sum()
         stops  = (df["exit"] == "stop_loss").sum()
-        return dict(n=n, win_pct=wins/n*100, avg_cr=avg_cr, avg_pnl=avg_p,
-                    roc=roc, max_loss=maxl, sum_pnl=sump, stop_pct=stops/n*100)
+        return dict(n=n, win_pct=wins/n*100, avg_cr=avg_cr, avg_margin=avg_mg,
+                    avg_pnl=avg_p, roc=roc, max_loss=maxl, sum_pnl=sump,
+                    stop_pct=stops/n*100)
 
     def print_stats_row(label: str, s: dict, width: int = 30) -> None:
         if not s:
             return
         print(f"  {label:<{width}}  {s['n']:>4}  {s['win_pct']:>5.1f}%  "
-              f"${s['avg_cr']:>7.3f}  ${s['avg_pnl']:>6.3f}  {s['roc']:>6.1f}%  "
-              f"${s['max_loss']:>7.3f}  ${s['sum_pnl']:>8.3f}  {s['stop_pct']:>5.1f}%")
+              f"${s['avg_cr']:>7.3f}  ${s['avg_margin']:>7.3f}  ${s['avg_pnl']:>6.3f}  "
+              f"{s['roc']:>6.1f}%  ${s['max_loss']:>7.3f}  ${s['sum_pnl']:>8.3f}  "
+              f"{s['stop_pct']:>5.1f}%")
 
     HDR = (f"  {'Strategy':<30}  {'N':>4}  {'Win%':>6}  {'AvgCr':>8}  "
-           f"{'AvgPnL':>7}  {'ROC%':>7}  {'MaxLoss':>8}  {'SumPnL':>9}  {'Stops%':>6}")
+           f"{'AvgMgn':>8}  {'AvgPnL':>7}  {'ROC%':>7}  {'MaxLoss':>8}  "
+           f"{'SumPnL':>9}  {'Stops%':>6}")
 
     # ── Overall comparison ────────────────────────────────────────────────────
     print("\n" + "═" * 96)
-    print("  TLT REGIME-SWITCHING STRATEGY  ·  2018–2026  ·  ~20 DTE")
-    print("  50% profit take / 2× stop  (long straddle: +50% take / −40% stop)")
+    print(f"  {ticker} REGIME-SWITCHING STRATEGY  ·  2018–2026  ·  ~20 DTE")
+    take_desc = f"ann ROC ≥ {args.ann_target:.0f}% profit take" if args.ann_target else "50% fixed profit take"
+    print(f"  {take_desc} / 2× stop")
+    print("  ROC% = pnl / capital-at-risk  (spreads: max-loss; strangles: Reg T BPR; straddle: debit)")
     print("═" * 96)
     print("\n  OVERALL COMPARISON\n")
     print(HDR)
@@ -455,9 +599,9 @@ def main() -> None:
         bl_yr  = bl[bl["year"] == yr]
         v2_yr  = v20[v20["year"] == yr]
 
-        sw_roc = (sw_yr["pnl"] / sw_yr["entry_val"]).mean() * 100 if len(sw_yr) else 0.0
-        bl_roc = (bl_yr["pnl"] / bl_yr["entry_val"]).mean() * 100 if len(bl_yr) else 0.0
-        v2_roc = (v2_yr["pnl"] / v2_yr["entry_val"]).mean() * 100 if len(v2_yr) else 0.0
+        sw_roc = (sw_yr["pnl"] / sw_yr["margin"]).mean() * 100 if len(sw_yr) else 0.0
+        bl_roc = (bl_yr["pnl"] / bl_yr["margin"]).mean() * 100 if len(bl_yr) else 0.0
+        v2_roc = (v2_yr["pnl"] / v2_yr["margin"]).mean() * 100 if len(v2_yr) else 0.0
 
         sw_sum = sw_yr["pnl"].sum()
         bl_sum = bl_yr["pnl"].sum()
@@ -477,9 +621,9 @@ def main() -> None:
               f"BHI={bhi:>2}  BLO={blo:>2}  UHI={uhi:>2}  ULO={ulo:>2}")
 
     # totals
-    sw_tot  = (sw["pnl"] / sw["entry_val"]).mean() * 100
-    bl_tot  = (bl["pnl"] / bl["entry_val"]).mean() * 100
-    v2_tot  = (v20["pnl"] / v20["entry_val"]).mean() * 100
+    sw_tot  = (sw["pnl"] / sw["margin"]).mean() * 100
+    bl_tot  = (bl["pnl"] / bl["margin"]).mean() * 100
+    v2_tot  = (v20["pnl"] / v20["margin"]).mean() * 100
     print(f"\n  {'TOTAL':>6}  {sw_tot:+5.1f}% ${sw['pnl'].sum():+7.2f}   "
           f"{bl_tot:+5.1f}% ${bl['pnl'].sum():+7.2f}  "
           f"{v2_tot:+5.1f}% ${v20['pnl'].sum():+7.2f}")
@@ -490,7 +634,7 @@ def main() -> None:
     print("═" * 96)
     print("\n" + HDR)
     print("  " + "─" * 92)
-    for regime, (strat, cd, pd_, _, _) in REGIME_STRATEGIES.items():
+    for regime, (strat, cd, pd_, _, _) in regime_strategies.items():
         sub = sw[sw["regime"] == regime]
         label = f"{regime}  →  {strat}  ({cd:.2f}Δ/{pd_:.2f}Δ)"
         print_stats_row(label, stats(sub), width=50)

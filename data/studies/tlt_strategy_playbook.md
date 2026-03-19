@@ -1,33 +1,50 @@
 # TLT Regime-Switching Options Strategy — Trading Playbook
 
-**Last updated:** 2026-03-17
-**Status:** Upgraded to regime-switching framework. Ready for live trading.
+**Last updated:** 2026-03-19
+**Status:** All defined-risk spreads + annualized ROC profit target (100%). Ready for live trading.
 
 ---
 
 ## Overview
 
 Each Friday, classify TLT's regime using two signals — its position relative to the 50-day
-MA (trend direction) and the VIX level (implied vol environment). Deploy a different options
+MA (trend direction) and the VIX level (implied vol environment). Deploy a different spread
 structure depending on the regime:
 
-| Regime | Condition | Strategy | Backtest ROC |
-|--------|-----------|----------|-------------|
-| **Bearish_HighIV** | Below 50MA + VIX ≥ 20 | Bear call spread 0.35Δ / 0.25Δ | +23.1% |
-| **Bearish_LowIV** | Below 50MA + VIX < 20 | Short strangle 0.25Δ / 0.25Δ | +11.6% |
-| **Bullish_HighIV** | Above 50MA + VIX ≥ 20 | Short strangle 0.45Δ call / 0.25Δ put | +33.6% |
-| **Bullish_LowIV** | Above 50MA + VIX < 20 | Long straddle *(skip for now)* | +8.6% |
+| Regime | Condition | Strategy | ROC (Reg T) | Win% |
+|--------|-----------|----------|:-----------:|:----:|
+| **Bearish_HighIV** | Below 50MA + VIX ≥ 20 | Bear call spread 0.40Δ / 0.30Δ | +4.4% | 87.8% |
+| **Bearish_LowIV** | Below 50MA + VIX < 20 | Bear call spread 0.25Δ / 0.15Δ | +2.4% | 88.7% |
+| **Bullish_HighIV** | Above 50MA + VIX ≥ 20 | Bear call spread 0.40Δ / 0.30Δ | +2.6% | 86.0% |
+| **Bullish_LowIV** | Above 50MA + VIX < 20 | Bull put spread 0.45Δ / 0.35Δ | +10.4% | 87.1% |
 
-**Current regime (2026-03-17):** Bearish_HighIV — TLT $87.14, 50MA $88.26, VIX 27.40.
+ROC = pnl / (spread_width − credit) — the Reg T margin requirement / max loss.
 
-**Overall switching strategy performance (2018–2026):** +16.2% avg ROC per trade, $103.81
-cumulative P&L, 67.5% win rate, 409 trades. The prior VIX≥20-only call spread returned
-+17.1% avg ROC but only traded 36% of Fridays (+$12.30 cumulative).
+**Profit target:** Close when annualized ROC ≥ 100%, i.e. `(pnl/margin) × (365/hold_days) ≥ 1.0`.
+This naturally closes quick winners early (freeing capital) while holding slow trades longer.
+Avg hold ≈ 5 days. Stop loss: 2× credit.
 
-**Bullish_LowIV (long straddle) is parked for now.** The +8.6% ROC is real but the 47.1%
-win rate and 44.9% stop rate are psychologically costly. When this regime is active, skip
-the week or revisit the long straddle research. The other three regimes all exceed 75% win
-rate.
+**Current regime (2026-03-19):** Bearish_HighIV — TLT $87.59, VIX elevated.
+
+**Overall switching strategy performance (2018–2026):** +5.6% avg ROC per trade, $12.07
+cumulative P&L, 87.6% win rate, 410 trades. Max drawdown: $3.16. Max losing streak: 2 weeks.
+
+---
+
+## Why All Spreads (No Strangles)
+
+Prior versions used short strangles in Bearish_LowIV (+11.6% apparent ROC) and
+Bullish_HighIV (+33.6%). Those figures used credit as the denominator. On a proper Reg T
+capital-at-risk basis (CBOE uncovered formula), the margins were ~$20–27/share — making
+actual ROC 0.8% and 3.3% respectively. The spreads, with max-loss margins of ~$0.98–1.19,
+beat the strangles on capital efficiency and produce much lower drawdowns:
+
+| | Strangles | All Spreads |
+|--|:---------:|:-----------:|
+| Avg ROC (Reg T) | +5.4% | **+5.6%** |
+| Max drawdown | −$20.58 | **−$3.16** |
+| Max losing streak | 11 weeks | **2 weeks** |
+| Undefined risk | Yes | **No** |
 
 ---
 
@@ -37,105 +54,144 @@ rate.
 **Step 2:** Is VIX ≥ 20?
 
 ```
-                   VIX ≥ 20              VIX < 20
-TLT below 50MA  → Bear call spread    → Short strangle (sym)
-TLT above 50MA  → Short strangle (skew)  → Skip (long straddle TBD)
+                   VIX ≥ 20                VIX < 20
+TLT below 50MA  → Bear call 0.40Δ/0.30Δ → Bear call 0.25Δ/0.15Δ
+TLT above 50MA  → Bear call 0.40Δ/0.30Δ → Bull put  0.45Δ/0.35Δ
 ```
+
+**Step 3 (Bearish_HighIV only):** Is VRP ≥ −2.5 pp?
+- VRP = ATM IV30 (BS-implied from ~20 DTE put) − RV20 (20-day annualized realized vol)
+- **Skip when VRP < −2.5 pp** — lowest quartile: ~60% win rate, negative avg ROC
+- Q2–Q4 (VRP ≥ −2.5 pp): 83%+ win rate, >12% avg ROC
+- The screener computes and enforces this automatically
+- Note: VRP filter was validated at 0.35Δ/0.25Δ; carry-over to 0.40Δ/0.30Δ is directionally sound but not re-verified
+
+---
+
+## Profit Target
+
+**Rule:** Close when `(pnl / margin) × (365 / hold_days) ≥ 1.0` (100% annualized ROC).
+
+This replaces the old fixed 50%-of-credit target. Benefits:
+- A trade at 49% profit on day 1 closes immediately (annualized ROC ≈ 18,000%)
+- A slow trade at 10% profit on day 18 stays open (annualized ROC ≈ 20%, below target)
+- Avg hold drops from ~10 days to ~5 days, freeing capital for re-deployment
+- Win rate improves: 87.6% vs 72.0% (fewer trades held into adverse reversals)
+- Max losing streak drops: 2 weeks vs 6 weeks
+
+Walk-forward validation (IS=2018–2022, OOS=2023–2026): OOS annualized ROC +616% vs +313%
+baseline (50% take). The IS→OOS improvement confirms genuine edge, not overfitting.
+
+When recording a new TLT position in the database, set `ann_target = 1.0`.
 
 ---
 
 ## Strategy Details
 
-### Bearish_HighIV — Bear Call Spread
+### Bearish_HighIV — Bear Call Spread (0.40Δ / 0.30Δ)
 
 | Parameter | Value |
 |-----------|-------|
-| Short call delta | 0.35Δ |
-| Long call delta | 0.25Δ (wing = 0.10Δ) |
+| Short call delta | 0.40Δ |
+| Long call delta | 0.30Δ (wing = 0.10Δ) |
 | Target DTE | 20 days (±5) |
-| Profit take | 50% of credit |
+| Profit take | Ann ROC ≥ 100% |
 | Stop loss | 2× credit |
+| VRP filter | Skip if VRP < −2.5 pp |
 | Entry day | Friday |
 
 **Economics (~TLT $87):**
-- Short call strike: ~$91–93
-- Long call strike: ~$93–95
-- Avg credit: ~$0.44/share ($44/contract)
-- Max loss: ~$1.56/share ($156/contract, hitting stop at 2× credit)
+- Short call strike: ~$89–91 (closer to the money than prior 0.35Δ)
+- Long call strike: ~$91–93
+- Avg credit: ~$0.49/share ($49/contract)
+- Max loss: ~$0.98/share ($98/contract)
 
-**90 weeks, 77.8% win rate, +23.1% avg ROC, +$9.55 cumulative**
+**90 weeks, 87.8% win rate, +4.4% avg ROC, +$4.68 cumulative**
+
+Rationale: TLT is in a downtrend. Sell above-trend resistance. The 0.40Δ short strike
+collects more premium than 0.35Δ with only a marginal win-rate cost. Tighter wing narrows
+the max-loss denominator, boosting ROC.
 
 ---
 
-### Bearish_LowIV — Short Strangle (Symmetric)
+### Bearish_LowIV — Bear Call Spread (0.25Δ / 0.15Δ)
 
 | Parameter | Value |
 |-----------|-------|
 | Short call delta | 0.25Δ |
-| Short put delta | 0.25Δ |
+| Long call delta | 0.15Δ (wing = 0.10Δ) |
 | Target DTE | 20 days (±5) |
-| Profit take | 50% of combined credit |
-| Stop loss | 2× combined credit |
+| Profit take | Ann ROC ≥ 100% |
+| Stop loss | 2× credit |
 | Entry day | Friday |
 
-Both legs on the same expiry. Put strike ≤ call strike required.
-
 **Economics (~TLT $87):**
-- Call strike: ~$89–90 (0.25Δ)
-- Put strike: ~$84–85 (0.25Δ)
-- Avg credit: ~$1.01/share ($101/contract)
-- Max planned loss at stop: ~$3.16/share
+- Short call strike: ~$90–92 (OTM)
+- Long call strike: ~$92–94
+- Avg credit: ~$0.24/share ($24/contract)
+- Max loss: ~$1.12/share ($112/contract)
 
-**124 weeks, 75.8% win rate, +11.6% avg ROC, +$16.68 cumulative**
+**124 weeks, 88.7% win rate, +2.4% avg ROC, +$3.79 cumulative**
 
-Rationale: Low VIX means TLT is drifting slowly, not running. OTM strangle with symmetric
-wings has much higher ROC than the ATM straddle (+11.6% vs +7.3%) because both strikes
-stay safely away from the slow drift. 2020 outlier risk: one week in Mar-2020 hit -118%
-ROC when VIX spiked from LowIV to HighIV mid-cycle. Stop loss limits the damage.
+Rationale: TLT is below its 50MA and low-volatility. Premium is thin. The 0.25Δ strike
+is sufficiently OTM that TLT's slow drift rarely threatens it. ROC is modest (+2.4%) but
+positive and far better than the prior strangle on a capital-at-risk basis (+0.8%). The
+annualized target helps exit quickly when the trade moves in our favor early.
+
+⚠️ **Worst single-year risk:** A sharp TLT spike (rate surprise) in a low-VIX week can
+breach the short call before VIX has time to re-classify the regime. The 2× stop limits
+damage. 2024 was the worst year for the Bearish regimes overall.
 
 ---
 
-### Bullish_HighIV — Short Strangle (Asymmetric)
+### Bullish_HighIV — Bear Call Spread (0.40Δ / 0.30Δ)
 
 | Parameter | Value |
 |-----------|-------|
-| Short call delta | 0.45Δ (near-ATM) |
-| Short put delta | 0.25Δ (far OTM) |
+| Short call delta | 0.40Δ |
+| Long call delta | 0.30Δ (wing = 0.10Δ) |
 | Target DTE | 20 days (±5) |
-| Profit take | 50% of combined credit |
-| Stop loss | 2× combined credit |
+| Profit take | Ann ROC ≥ 100% |
+| Stop loss | 2× credit |
 | Entry day | Friday |
 
-Put strike ≤ call strike required (will usually be satisfied given delta difference).
+Same structure as Bearish_HighIV.
 
-**Economics (~TLT $87):**
-- Call strike: ~$87–88 (near-ATM, 0.45Δ)
-- Put strike: ~$84–85 (0.25Δ, well OTM)
-- Avg credit: ~$2.74/share ($274/contract)
-- Max planned loss at stop: ~$5.48/share
+**Economics (~TLT $87):** Identical to Bearish_HighIV (~$0.49 credit, ~$0.98 max loss).
 
-**57 weeks, 82.5% win rate, +33.6% avg ROC, +$53.99 cumulative**
+**57 weeks, 86.0% win rate, +2.6% avg ROC, +$0.66 cumulative**
 
-Rationale: TLT is in a flight-to-safety rally (above 50MA, VIX elevated). The rally is
-likely decelerating — sell the near-ATM call to collect rich call premium. TLT is moving
-*away* from put strikes; keep the put far OTM and nearly free. The asymmetry reflects
-directional conviction: call side is the premium source, put side is just insurance.
-
-This is the highest-edge regime. 2020 (COVID) drove 20 of 57 Bullish_HighIV weeks;
-+$30.45 cumulative that year alone. The structure earned well across all other HighIV years
-too (2021, 2022, 2023, 2024).
+Rationale: Even in a TLT bull trend, the 20-DTE call spread with 0.40Δ short strike
+rarely gets breached. High VIX inflates call premiums; TLT's short-term moves within
+a 20-day window are choppy enough that the spread expires or closes profitably 86% of the time.
+The prior skewed strangle generated more absolute dollars per contract but required ~27×
+more capital per trade. On capital efficiency the spread wins.
 
 ---
 
-### Bullish_LowIV — Skip (Long Straddle TBD)
+### Bullish_LowIV — Bull Put Spread (0.45Δ / 0.35Δ)
 
-Long straddle (buy 0.50Δ call + 0.50Δ put) backtested at +8.6% avg ROC, but with 47.1%
-win rate and 44.9% stop rate. The underlying logic is sound — low IV underprices TLT's
-moves when it is trending — but the trade-by-trade experience is noisy. **Skip this regime
-for now.** When the signal fires, take no position.
+| Parameter | Value |
+|-----------|-------|
+| Short put delta | 0.45Δ (near-ATM) |
+| Long put delta | 0.35Δ (wing = 0.10Δ) |
+| Target DTE | 20 days (±5) |
+| Profit take | Ann ROC ≥ 100% |
+| Stop loss | 2× credit |
+| Entry day | Friday |
 
-Represents ~34% of Fridays (138/409). Revisit with a refined entry condition (IV rank,
-RV20 vs IV30) before trading.
+**Economics (~TLT $87):**
+- Short put strike: ~$85–87 (near-ATM)
+- Long put strike: ~$83–85
+- Avg credit: ~$0.38/share ($38/contract)
+- Max loss: ~$0.53/share ($53/contract)
+
+**139 weeks, 87.1% win rate, +10.4% avg ROC, +$2.94 cumulative**
+
+Rationale: TLT is in a bull trend with low vol. Sell near-ATM puts — the directional
+tailwind keeps the short put OTM as TLT drifts higher. The near-ATM strike collects
+better premium; the tight wing keeps margin small, producing the highest ROC of any
+regime (+10.4%). The annualized exit target captures early favorable moves efficiently.
 
 ---
 
@@ -143,168 +199,169 @@ RV20 vs IV30) before trading.
 
 - Max delta error: ±0.08 from target on each leg
 - DTE window: 15–25 days (target 20)
-- Both legs must be same expiry
+- Both legs must be on the same expiry
 - Long-leg bid ≤ 25% of short-leg mid (practical fill check)
-- Skip if net credit ≤ 0 (should not occur but sanity check)
+- Skip if net credit ≤ 0
 
 ---
 
 ## Capital Allocation
 
-**Portfolio sizing:**
-- The switching strategy is active ~66% of Fridays (271 of 409 after skipping BullishLowIV)
-- Average credits range from $0.44 (call spread) to $2.74 (BullishHI strangle)
-- Size positions by max dollar loss, not by credit size
+All four regimes are now defined-risk spreads. Max loss per share is:
 
-**Example ($100k portfolio, 5% max risk per trade = $5,000):**
+| Regime | Avg max loss | Contracts at $5K risk ($100K portfolio) |
+|--------|:------------:|:--------------------------------------:|
+| Bearish_HighIV | ~$0.98/shr | ~51 |
+| Bearish_LowIV | ~$1.12/shr | ~45 |
+| Bullish_HighIV | ~$0.98/shr | ~51 |
+| Bullish_LowIV | ~$0.53/shr | ~94 |
 
-| Regime | Max loss/contract | Contracts at 5% |
-|--------|------------------|-----------------|
-| Bearish_HighIV call spread | ~$156 | ~32 |
-| Bearish_LowIV sym strangle | ~$316 | ~16 |
-| Bullish_HighIV skew strangle | ~$548 | ~9 |
-
-The BullishHI strangle requires the smallest position in number of contracts but each
-contract earns the most premium. Keep dollar risk constant across regimes, not lot size.
+Size by max dollar loss, not by contract count. The strategy is active ~100% of Fridays.
+Consider 3–5% portfolio allocation. Avg hold ~5 days means capital cycles faster than
+the nominal 20-DTE window suggests.
 
 ---
 
 ## Backtested Performance (2018–2026)
 
-### Overall comparison
+### Overall comparison (ROC = pnl / Reg T capital-at-risk)
 
-| Strategy | Trades | Win% | Avg ROC | Sum P&L | Max Drawdown |
-|----------|--------|------|---------|---------|-------------|
-| **Regime-switching** | 409 | 67.5% | **+16.2%** | **+$103.81** | −$20.58 |
-| Always-on call spread | 408 | 70.1% | +4.6% | +$13.53 | −$11.01 |
-| Call spread VIX≥20 only | 147 | 76.2% | +17.1% | +$12.30 | — |
+| Strategy | Trades | Win% | Avg ROC | Sum P&L | Max DD | Max Streak |
+|----------|:------:|:----:|:-------:|:-------:|:------:|:----------:|
+| **Regime-switching (ann target)** | 410 | **87.6%** | +5.6% | +$12.07 | −$3.16 | **2 weeks** |
+| Always-on call spread | 408 | 70.1% | +1.8% | +$13.53 | −$11.01 | 8 weeks |
+| Call spread VIX≥20 only | 147 | 76.2% | +6.2% | +$12.30 | — | — |
 
-The switching strategy generates 7.7× more absolute P&L than always-on call spreads.
-The VIX≥20-only call spread has similar ROC (+17.1%) but only trades 36% of Fridays.
+Note: regime-switching has lower absolute SumPnL than always-on because the ann target
+exits earlier. The dramatically lower drawdown and losing streak reflect the quality of
+capital deployment.
 
 ### Per-year
 
-| Year | Switching ROC | Switching P&L | Always-on ROC | Dominant regime | Notes |
-|------|--------------|--------------|--------------|-----------------|-------|
-| 2018 | −1.5% | +$0.56 | −19.3% | BearLO (26w) | Switching avoided call-spread losses |
-| 2019 | +9.6% | +$10.00 | −33.4% | BullLO (37w) | Long straddle captured bond rally |
-| 2020 | +28.7% | +$39.59 | +4.2% | BearHI/BullHI (41w) | COVID flight-to-safety; best year |
-| 2021 | +9.5% | −$2.36 | +3.6% | BullLO (22w) | Long straddle underperformed; skip rule helps |
-| 2022 | +24.7% | +$10.40 | **+33.4%** | BearHI (38w) | Only year always-on wins; pure call-spread year |
-| 2023 | +13.3% | +$19.52 | +19.1% | BearLO (25w) | Sym strangle solid |
-| 2024 | +21.2% | +$18.34 | +9.8% | BearLO (23w) | Switching outperformed significantly |
-| 2025 | +21.4% | +$5.44 | +13.7% | BearLO (17w) | Switching outperformed |
-| 2026 | +40.1% | +$2.30 | +49.4% | BearLO (6w) | Partial year |
+| Year | ROC | P&L | Notes |
+|------|:---:|:---:|-------|
+| 2018 | −2.1% | +$0.17 | BearLO dominated (26w); thin premiums |
+| 2019 | +3.6% | +$0.76 | BullLO dominated (37w); bull put spread solid |
+| 2020 | +4.3% | +$0.49 | BearHI/BullHI (41w); ann target captures vol spikes quickly |
+| 2021 | +4.1% | +$2.45 | Mix of regimes; bull put spread carried BullLO |
+| 2022 | +7.2% | +$4.26 | BearHI dominated (38w); rising-rate environment |
+| 2023 | +3.0% | +$1.83 | BearLO dominated (25w); thin regime |
+| 2024 | **−2.8%** | **−$0.80** | BearLO/BullLO split; worst year |
+| 2025 | +4.6% | +$1.19 | Mixed; BearLO and BullLO |
+| 2026 | +149.7% | +$1.71 | Partial year (8 weeks); small sample |
 
-### Per-regime contribution (switching strategy)
+**2024 flag:** TLT had sustained rate pressure with periodic sharp rallies. The
+Bearish_LowIV bear call spreads (0.25Δ, 23 weeks) absorbed some stop-outs when brief
+TLT spikes breached the short call before VIX re-classified the regime. −2.8% ROC
+is the worst single year in the backtest (improved from −8.7% under fixed 50% target
+due to faster exits in favorable weeks).
 
-| Regime | Weeks | Strategy | Win% | Avg ROC | Sum P&L |
-|--------|-------|----------|------|---------|---------|
-| Bearish_HighIV | 90 | Bear call spread | 77.8% | +23.1% | +$9.55 |
-| Bearish_LowIV | 124 | Sym strangle | 75.8% | +11.6% | +$16.68 |
-| Bullish_HighIV | 57 | Skew strangle | 82.5% | +33.6% | +$53.99 |
-| Bullish_LowIV | 138 | Long straddle* | 47.1% | +8.6% | +$23.60 |
+### Per-regime contribution
 
-*Long straddle included in historical totals; parked for live trading.
+| Regime | Weeks | Strategy | Win% | ROC | Sum P&L |
+|--------|:-----:|----------|:----:|:---:|:-------:|
+| Bearish_HighIV | 90 | Bear call 0.40Δ/0.30Δ | 87.8% | +4.4% | +$4.68 |
+| Bearish_LowIV | 124 | Bear call 0.25Δ/0.15Δ | 88.7% | +2.4% | +$3.79 |
+| Bullish_HighIV | 57 | Bear call 0.40Δ/0.30Δ | 86.0% | +2.6% | +$0.66 |
+| Bullish_LowIV | 139 | Bull put 0.45Δ/0.35Δ | 87.1% | +10.4% | +$2.94 |
 
 ---
 
 ## Risks and Known Limitations
 
-1. **Regime classification lag** — The 50MA and VIX are end-of-day Thursday signals. If a
-   regime shift begins Friday morning (e.g. VIX spikes 30% at the open), you will enter
-   the wrong structure. Check VIX at entry time, not just Thursday close.
+1. **2024 worst-year risk** — Bearish_LowIV (0.25Δ bear call) is the most fragile regime.
+   Thin premiums combined with periodic sharp TLT rallies can produce stop-outs even in
+   a broadly bearish rate environment. Size conservatively in this regime.
 
-2. **2020 outlier in Bearish_LowIV** — One week in March 2020 classified as Bearish_LowIV
-   (VIX had not yet spiked Thursday close) produced −118% ROC on the sym strangle. Stop
-   loss at 2× contained actual dollar loss but the ROC hit is real.
+2. **Regime classification lag** — 50MA and VIX are end-of-day Thursday signals. A VIX
+   spike Friday morning can put you in the wrong structure. Check VIX at entry time.
 
-3. **Bullish_HighIV is dominated by 2020** — 20 of 57 BullishHI weeks were COVID-era.
-   The +$53.99 cumulative is real but half comes from an extraordinary regime. Expect
-   lower absolute contribution in non-crisis years; the structure is still sound.
+3. **Bearish_LowIV is thin** — +2.4% avg ROC with low absolute P&L. Worth running
+   (positive edge, 88.7% win), but a single large stop-out week can erase several months
+   of gains in this regime. The 2× stop is essential.
 
-4. **BullishHI strangle: near-ATM call is exposed** — The 0.45Δ call is close to at-the-
-   money. If TLT continues rallying after entry (e.g. emergency Fed cut), this leg can go
-   ITM quickly. The 2× stop loss is critical to control losses; do not remove it.
+4. **Bullish_HighIV absolute P&L** — $0.66 cumulative over 57 weeks is low. The regime
+   fires ~7 weeks/year. In a real portfolio, you need enough contracts to make the P&L
+   meaningful. Adjust position sizing accordingly.
 
-5. **Bearish_LowIV strangle: both sides exposed** — Unlike the call spread, neither leg is
-   defined against the other. A sharp TLT move in either direction can breach both strikes.
-   This is an undefined-risk trade; size accordingly (smaller lot count than the spread).
+5. **VRP filter not re-verified at 0.40Δ** — The VRP ≥ −2.5 pp filter was tested at the
+   old 0.35Δ short delta. It is directionally valid and carried over, but the exact
+   threshold has not been re-optimized for the new strikes.
 
-6. **2022: the always-on spread's best year** — 38 of 51 weeks were Bearish_HighIV. In a
-   pure rising-rate regime the simple call spread slightly outperforms (+33.4% vs +24.7%).
-   The switching strategy still had a good year; it just wasn't the best relative year.
+6. **Ann target creates shorter holds** — Avg hold ~5 days means more weekly transaction
+   costs if you pay commissions. At typical retail rates ($0.65/contract), confirm net
+   P&L still positive after friction.
 
 ---
 
 ## Relationship to Other Strategies
 
-| | TLT | UVXY |
-|---|---|---|
-| Active weeks | ~66% of Fridays | ~100% |
-| Regime logic | 4-way classification (50MA + VIX) | 2-way (VIX level) |
-| Best regime | Bullish_HighIV (+33.6% ROC) | VIX < 20 (short put) |
-| Correlation | Low to UVXY | — |
+| | TLT | UVXY | TMF |
+|---|---|---|---|
+| Active weeks | ~100% of Fridays | ~100% | Same regimes as TLT |
+| Best regime | Bullish_LowIV (+10.4%) | VIX<20 short put | BearHI call spread |
+| Correlation | Low to UVXY | — | High to TLT |
 
-TLT and UVXY are complementary. When VIX is elevated, TLT's BearishHI call spread and
-BullishHI strangle both fire. UVXY's call spread fires regardless; its short put sits out
-when VIX ≥ 20. The regimes interlock cleanly.
+TLT and UVXY are complementary. TMF (3× levered TLT) mirrors TLT regimes but with
+amplified credits and wider spreads — run the same regime classification, size smaller.
 
 ---
 
 ## Research History
 
-### Prior approach (deprecated): VIX≥20 call spread only
+### Prior version (deprecated 2026-03-19): fixed 50% profit take
 
-The original strategy sold only bear call spreads (0.35Δ / 0.30Δ → later 0.35Δ / 0.25Δ)
-and sat out entirely when VIX < 20. That worked well (81.4% win rate, +11.57% ROC on 140
-trades) but left 60%+ of Fridays idle and suffered in high-VIX bond-rally years (2019, 2023).
+Used `close when spread ≤ 50% of entry credit`. Performance: 72.0% win, +7.7% avg ROC,
+$21.22 cumulative, max drawdown $4.46, max losing streak 6 weeks. Replaced with 100%
+annualized ROC target: higher win rate (87.6%), tighter drawdown ($3.16), shorter avg
+hold (~5 days), better OOS validation (+616% vs +313% ann ROC).
 
-**Why upgraded:** Regime-switching addresses the core weakness — "what do we do when TLT is
-above its 50MA?" — rather than simply sitting out. The multi-strategy framework also
-exploits the Bullish_HighIV regime, the single richest window in the dataset.
+### Prior version (deprecated 2026-03-19): strangles in Bearish_LowIV + Bullish_HighIV
+
+Used short_strangle_sym (0.25Δ/0.25Δ) in Bearish_LowIV and short_strangle_skew
+(0.45Δ/0.25Δ) in Bullish_HighIV. Appeared strong at +11.6% and +33.6% ROC, but those
+figures used credit (~$1–2.74) as the denominator. Correct Reg T capital-at-risk
+denominator (~$20–27/share) showed actual ROC of 0.8% and 3.3%. Defined-risk spreads
+outperform on true capital efficiency. Replaced 2026-03-19.
+
+### Prior version (deprecated 2026-03-17): VIX≥20 call spread only
+
+Original strategy: bear call spread 0.35Δ/0.25Δ when VIX≥20, skip otherwise.
+Strong win rate (76.2%) but only active 36% of Fridays.
 
 ### Short put leg (rejected 2026-03-03)
 
-Researched and rejected. Net contribution to portfolio: −221.7% cumulative SumROC.
-Only added value in 2022. The put leg was superseded by the Bearish_LowIV strangle
-(which adds a put as part of a credit-balanced structure, not a naked put).
+Researched and rejected. Net contribution: −221.7% cumulative SumROC.
 
 ### Ratio spread (rejected 2026-03-17)
 
-TLT 2:1 call ratio spread (sell 2 near calls, buy 1 further OTM) backtested at +79.7%
-win rate (VIX≥25) but max loss −$9.05/share vs avg credit ~$0.54. 2018 flight-to-safety
-moves caused repeated stops. Defined-risk structures outperform on risk-adjusted basis.
-
-### Forward vol factor (inconclusive 2026-03-05)
-
-The fwd_vol_factor (σ_fwd/near_iv) was tested as an additional filter. Non-monotonic
-relationship; no improvement over VIX-alone signal. Not used in the switching framework.
+TLT 2:1 call ratio spread: +79.7% win rate (VIX≥25) but max loss −$9.05/share.
+Defined-risk spreads outperform on risk-adjusted basis.
 
 ---
 
 ## Code
 
 ```bash
-# Regime-switching combined backtest:
-MYSQL_PASSWORD=xxx PYTHONPATH=src python run_tlt_regime_switch.py
+# Regime-switching combined backtest (primary):
+AWS_PROFILE=clarinut-gmerton MYSQL_PASSWORD=xxx PYTHONPATH=src \
+  python run_tlt_regime_switch.py --ticker TLT
 
-# Per-regime strangle sweep (e.g. Bearish_LowIV):
-MYSQL_PASSWORD=xxx PYTHONPATH=src python run_tlt_strangle_study.py --regime Bearish_LowIV
-MYSQL_PASSWORD=xxx PYTHONPATH=src python run_tlt_strangle_study.py --regime Bullish_HighIV
+# Per-regime structure sweep (finds optimal structure per regime):
+AWS_PROFILE=clarinut-gmerton MYSQL_PASSWORD=xxx PYTHONPATH=src \
+  python run_tlt_structure_sweep.py --ticker TLT
 
-# Multi-strategy regime study (all 5 structures compared):
-MYSQL_PASSWORD=xxx PYTHONPATH=src python run_tlt_strategy_study.py
+# Stop-loss effectiveness analysis:
+AWS_PROFILE=clarinut-gmerton MYSQL_PASSWORD=xxx PYTHONPATH=src \
+  python run_tlt_regime_switch.py --ticker TLT --no-stop
 
-# Prior call spread sweep (reference only):
-MYSQL_PASSWORD=xxx PYTHONPATH=src python run_call_spreads.py \
-    --ticker TLT --spread 0.25 --profit-take 0.70 \
-    --short-deltas 0.35 --detail-short-delta 0.35 --detail-wing 0.10 --no-csv
+# Profit target sweep (walk-forward IS/OOS optimization):
+AWS_PROFILE=clarinut-gmerton MYSQL_PASSWORD=xxx PYTHONPATH=src \
+  python run_tlt_profit_sweep.py --ticker TLT
 ```
 
 **Key source files:**
-- `run_tlt_regime_switch.py` — unified regime-switching backtest (primary)
-- `run_tlt_strangle_study.py` — per-regime strangle delta sweep
-- `run_tlt_strategy_study.py` — all-strategy regime comparison
-- `run_tlt_naked_calls.py` — naked call backtest (reference)
-- `run_tlt_ratio_calls.py` — ratio spread backtest (reference)
+- `run_tlt_regime_switch.py` — unified regime-switching backtest (primary); `--ann-target 100` default
+- `run_tlt_structure_sweep.py` — per-regime structure/delta sweep with Reg T ROC
+- `run_tlt_profit_sweep.py` — walk-forward profit target optimization (IS=2018–2022, OOS=2023–2026)
+- `run_tlt_strategy_study.py` — all-strategy regime comparison (reference)

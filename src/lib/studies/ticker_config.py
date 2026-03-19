@@ -815,25 +815,6 @@ TICKER_CONFIG: dict[str, dict] = {
 
     # ── Thursday short-DTE screener universe ──────────────────────────────────
 
-    "SPY": {
-        # SPDR S&P 500 ETF Trust. Broadest US equity benchmark; deepest options
-        # market in the world. Weekly expirations every Friday. IV ~15–20% normal,
-        # spikes to 35%+ in selloffs. Secular upward trend. No reverse splits.
-        "start": date(2018, 1, 1),
-        "split_dates": SPY_SPLIT_DATES,
-        "put_deltas":   [0.05, 0.10, 0.15, 0.20, 0.25, 0.30],
-        "short_deltas": [0.10, 0.15, 0.20, 0.25, 0.30, 0.35],
-        "wing_widths":  [0.05, 0.10, 0.15],
-        "vix_thresholds": [None, 30, 25, 20],
-        "opt_short_delta":  (0.10, 0.40),
-        "opt_put_delta":    (0.05, 0.30),
-        "opt_wing_width":   (0.05, 0.20),
-        "opt_profit_take":  (0.30, 0.70),
-        "opt_max_spread":   (0.10, 0.35),
-        "opt_put_vix_max":  (15.0, 45.0),
-        "opt_call_vix_min": (0.0,  30.0),
-    },
-
     "AAPL": {
         # Apple Inc. Largest US company by market cap. Very liquid weekly options.
         # IV ~25–35% normal, spikes on earnings. Secular upward trend.
@@ -1115,6 +1096,33 @@ TICKER_CONFIG: dict[str, dict] = {
         "opt_max_spread":   (0.15, 0.45),
         "opt_put_vix_max":  (15.0, 40.0),
         "opt_call_vix_min": (0.0,  30.0),
+    },
+
+    "SPY": {
+        # S&P 500 ETF Trust. Broad US equity market proxy. Low IV (~15–22% in normal
+        # conditions, spikes to 30–60% in crisis). Bear call spreads make sense in
+        # elevated-VIX / below-50MA regimes where the market is under pressure.
+        # No reverse splits; forward-split history irrelevant for delta-based selection.
+        "start": date(2018, 1, 1),
+        "split_dates": SPY_SPLIT_DATES,
+
+        # SPY IV is relatively low — keep short deltas moderate to ensure
+        # meaningful credit. 0.20–0.40Δ is the practical range.
+        "put_deltas":   [0.15, 0.20, 0.25, 0.30, 0.35],
+        "short_deltas": [0.20, 0.25, 0.30, 0.35, 0.40],
+        "wing_widths":  [0.05, 0.10, 0.15],
+
+        # Key sweep: VIX ≥ 20 is the regime gate hypothesis (Bearish_HighIV).
+        # Also test ≥ 25 and no filter for comparison.
+        "vix_thresholds": [None, 20, 25, 30],
+
+        "opt_short_delta":  (0.15, 0.45),
+        "opt_put_delta":    (0.10, 0.35),
+        "opt_wing_width":   (0.05, 0.20),
+        "opt_profit_take":  (0.30, 0.70),
+        "opt_max_spread":   (0.10, 0.35),
+        "opt_put_vix_max":  (15.0, 45.0),
+        "opt_call_vix_min": (0.0,  35.0),
     },
 
 }
