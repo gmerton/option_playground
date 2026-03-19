@@ -118,39 +118,68 @@ def evaluate_position(pos: dict, chains: dict[tuple, list[dict]], today: date) -
             return {"action": "DATA_ERROR", "reason": "no quote for long leg",
                     "pnl_pct": None, "detail": detail}
 
+        ann_target     = pos.get("ann_target")          # e.g. 1.0 = 100% annualized; None = fixed %
+        entry_date     = pos["entry_date"]
+        hold_days      = max((today - entry_date).days, 1)
+
+        # Margin = spread_width - credit (Reg T max loss)
+        spread_width   = abs(pos["short_strike"] - pos["long_strike"])
+        margin         = max(spread_width - entry_value, 0.01)
+
         # Current cost to close = buy back short, sell long
-        current_spread = short_mid - long_mid   # cost to close (positive = debit to close)
-        target_spread  = entry_value * (1.0 - pt_pct)  # close when spread ≤ this
-        pnl_per_share  = entry_value - current_spread   # P&L realised if closed now
+        current_spread = short_mid - long_mid
+        pnl_per_share  = entry_value - current_spread
         pnl_pct        = pnl_per_share / entry_value * 100
         total_pnl      = pnl_per_share * 100 * contracts
 
-        detail.append(f"  Short ${short_leg['trade_strike']:.2f}P  entry ${short_leg['price']:.2f}  current ${short_mid:.2f}")
-        detail.append(f"  Long  ${long_leg['trade_strike']:.2f}P  entry ${long_leg['price']:.2f}  current ${long_mid:.2f}")
+        cp_label = "C" if position_type == "bear_call_spread" else "P"
+        detail.append(f"  Short ${short_leg['trade_strike']:.2f}{cp_label}  entry ${short_leg['price']:.2f}  current ${short_mid:.2f}")
+        detail.append(f"  Long  ${long_leg['trade_strike']:.2f}{cp_label}  entry ${long_leg['price']:.2f}  current ${long_mid:.2f}")
         detail.append("")
-        detail.append(f"  Entry credit:     ${entry_value:.4f}/shr")
+        detail.append(f"  Entry credit:     ${entry_value:.4f}/shr  (margin ${margin:.4f}/shr)")
         detail.append(f"  Current spread:   ${current_spread:.4f}/shr  (cost to close)")
-        detail.append(f"  Profit target:    close when spread ≤ ${target_spread:.4f}  (keep {int(pt_pct*100)}%)")
-        detail.append(f"  P&L if closed now: ${pnl_per_share:+.4f}/shr  ({pnl_pct:+.1f}%)  ${total_pnl:+.0f} total ({contracts} contracts)")
+        detail.append(f"  Days held:        {hold_days}d")
+
+        if ann_target is not None:
+            # Annualized ROC mode
+            roc_now     = pnl_per_share / margin
+            ann_roc_now = roc_now * (365.0 / hold_days)
+            target_pct  = ann_target * 100
+            # Today's equivalent spread threshold for reaching the ann target
+            req_roc     = ann_target * (hold_days / 365.0)
+            req_pnl     = req_roc * margin
+            target_spread = entry_value - req_pnl
+
+            detail.append(f"  Profit target:    ann ROC ≥ {target_pct:.0f}%  "
+                          f"→ today's spread ≤ ${target_spread:.4f}  "
+                          f"(need {req_roc*100:.1f}% ROC in {hold_days}d)")
+            detail.append(f"  P&L if closed now: ${pnl_per_share:+.4f}/shr  "
+                          f"({roc_now*100:+.1f}% ROC, {ann_roc_now*100:+.0f}% ann)  "
+                          f"${total_pnl:+.0f} total ({contracts} contracts)")
+            target_met = ann_roc_now >= ann_target
+            target_desc = f"ann ROC {ann_roc_now*100:+.0f}% ≥ target {target_pct:.0f}%"
+            miss_desc   = f"ann ROC {ann_roc_now*100:+.0f}% < target {target_pct:.0f}% ({hold_days}d held)"
+        else:
+            # Fixed % mode (legacy)
+            target_spread = entry_value * (1.0 - pt_pct)
+            detail.append(f"  Profit target:    close when spread ≤ ${target_spread:.4f}  (keep {int(pt_pct*100)}%)")
+            detail.append(f"  P&L if closed now: ${pnl_per_share:+.4f}/shr  ({pnl_pct:+.1f}%)  ${total_pnl:+.0f} total ({contracts} contracts)")
+            target_met  = current_spread <= target_spread
+            target_desc = f"spread ${current_spread:.4f} ≤ ${target_spread:.4f} ({pnl_pct:.1f}% ROC)"
+            miss_desc   = f"spread ${current_spread:.4f} > target ${target_spread:.4f} ({pnl_pct:+.1f}% ROC so far)"
 
         if dte <= 1:
             action = "EXPIRY_SOON"
-            reason = f"Expiry tomorrow — close both legs at market"
-        elif current_spread <= target_spread:
+            reason = "Expiry tomorrow — close both legs at market"
+        elif target_met:
             action = "CLOSE"
-            reason = (
-                f"Profit target reached: spread ${current_spread:.4f} ≤ ${target_spread:.4f} "
-                f"({pnl_pct:.1f}% ROC)"
-            )
+            reason = f"Profit target reached: {target_desc}"
         elif dte <= 3:
             action = "EXPIRY_SOON"
             reason = f"Expiry in {dte} days — monitor closely"
         else:
             action = "HOLD"
-            reason = (
-                f"Spread ${current_spread:.4f} > target ${target_spread:.4f} "
-                f"({pnl_pct:+.1f}% ROC so far)"
-            )
+            reason = miss_desc
 
     # ── Calendar (put_calendar, call_calendar) ────────────────────────────────
     elif position_type in ("put_calendar", "call_calendar"):

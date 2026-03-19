@@ -489,12 +489,18 @@ def create_position_tables() -> None:
                 long_strike      DECIMAL(10,4),
                 entry_value      DECIMAL(10,4),  -- credit received (>0) or debit paid (<0) per share
                 profit_target_pct DECIMAL(5,4) NOT NULL,
+                ann_target        DECIMAL(8,4) NULL,  -- annualized ROC target (e.g. 1.0 = 100%); NULL = use profit_target_pct
                 close_date       DATE,
                 notes            TEXT,
                 created_at       TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                 INDEX idx_status (status),
                 INDEX idx_ticker (ticker)
             )
+        """)
+        # Migration: add ann_target if the table existed before this column was added
+        cur.execute("""
+            ALTER TABLE strategy_positions
+            ADD COLUMN IF NOT EXISTS ann_target DECIMAL(8,4) NULL
         """)
         cur.execute("""
             CREATE TABLE IF NOT EXISTS position_trades (
@@ -525,6 +531,7 @@ def create_position(
     entry_value: float,
     profit_target_pct: float,
     notes: str = "",
+    ann_target: float | None = None,
 ) -> int:
     """Insert a new strategy_positions row and return its id."""
     conn = _get_conn()
@@ -534,11 +541,11 @@ def create_position(
             INSERT INTO strategy_positions
                 (strategy_name, ticker, position_type, status, contracts,
                  entry_date, expiry, short_strike, long_strike,
-                 entry_value, profit_target_pct, notes)
-            VALUES (%s, %s, %s, 'open', %s, %s, %s, %s, %s, %s, %s, %s)
+                 entry_value, profit_target_pct, ann_target, notes)
+            VALUES (%s, %s, %s, 'open', %s, %s, %s, %s, %s, %s, %s, %s, %s)
         """, (strategy_name, ticker, position_type, contracts,
               entry_date, expiry, short_strike, long_strike,
-              entry_value, profit_target_pct, notes))
+              entry_value, profit_target_pct, ann_target, notes))
         conn.commit()
         position_id = cur.lastrowid
         cur.close()
@@ -590,7 +597,7 @@ def get_open_positions() -> list[dict]:
                 sp.id, sp.strategy_name, sp.ticker, sp.position_type,
                 sp.contracts, sp.entry_date, sp.expiry,
                 sp.short_strike, sp.long_strike,
-                sp.entry_value, sp.profit_target_pct, sp.notes,
+                sp.entry_value, sp.profit_target_pct, sp.ann_target, sp.notes,
                 pt.trade_id, pt.leg_role,
                 t.buy_sell, t.quantity, t.price, t.strike AS trade_strike,
                 t.expiry AS trade_expiry, t.put_call
@@ -623,6 +630,7 @@ def get_open_positions() -> list[dict]:
                 "long_strike":       float(row["long_strike"]) if row["long_strike"] else None,
                 "entry_value":       float(row["entry_value"]),
                 "profit_target_pct": float(row["profit_target_pct"]),
+                "ann_target":        float(row["ann_target"]) if row["ann_target"] is not None else None,
                 "notes":             row["notes"] or "",
                 "legs":              [],
             }

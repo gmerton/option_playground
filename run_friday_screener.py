@@ -20,7 +20,10 @@ import math
 import os
 import sys
 from datetime import date
+from pathlib import Path
 from typing import Optional
+
+import pandas as pd
 
 from lib.tradier.tradier_client_wrapper import TradierClient
 from lib.commons.list_expirations import list_expirations
@@ -94,6 +97,7 @@ STRATEGIES: list[dict] = [
         "vix_cond":      ("gte", 20),
         "profit_take":   0.70,
         "fwd_vol_warn":  1.30,   # avg=1.10; >1.30 = elevated
+        "vrp_min":       -2.5,   # skip Q1 (VRP < -2.5 pp): 60.9% win / -4.9% avg ROC
         "note":          "only when VIX ≥ 20 (fear = TLT under pressure)",
     },
     {
@@ -137,17 +141,19 @@ STRATEGIES: list[dict] = [
         "note":          "oil IV premium — no VIX filter; post-restructuring (Jul 2020+)",
     },
     {
-        "type":          "spread",
-        "name":          "XLF Bull Put Spread",
-        "alloc_key":     "XLF puts",
+        "type":          "regime_spread",
+        "name":          "XLF Regime-Switching",
+        "alloc_key":     "XLF regime",
         "ticker":        "XLF",
-        "cp":            "put",
-        "short_delta":   0.35,
-        "long_delta":    0.25,
-        "vix_cond":      None,
         "profit_take":   0.50,
-        "fwd_vol_warn":  1.20,   # avg=1.077; sweet spot ≤1.10
-        "note":          "financials upward drift — no VIX filter; optional fwd_vol ≤1.10",
+        "fwd_vol_warn":  None,
+        "note":          "4-regime switch by 50MA×VIX; $21.74 cum 2018-2025",
+        "regime_strategies": {
+            "Bearish_HighIV": {"structure": "bull_put_spread",  "short_d": 0.35, "long_d": 0.25},
+            "Bearish_LowIV":  {"structure": "short_strangle",   "call_d":  0.20, "put_d":  0.25},
+            "Bullish_HighIV": {"structure": "short_strangle",   "call_d":  0.35, "put_d":  0.40},
+            "Bullish_LowIV":  {"structure": "bear_call_spread", "short_d": 0.35, "long_d": 0.25},
+        },
     },
     {
         "type":          "spread",
@@ -202,6 +208,24 @@ STRATEGIES: list[dict] = [
         "note":          "3x inverse QQQ structural decay; all VIX; 2 losing years (2018, 2022)",
     },
     {
+        "type":          "regime_spread",
+        "name":          "QQQ Regime-Optimized",
+        "alloc_key":     "QQQ puts",
+        "ticker":        "QQQ",
+        "profit_take":   0.50,
+        "fwd_vol_warn":  None,
+        "note":          "regime-specific deltas + stop rules; reduce to 1.5% when SPY also fires",
+        "regime_strategies": {
+            # No stop in bearish regimes — whipsaws mean stopped trades often recover
+            "Bearish_HighIV": {"structure": "bull_put_spread", "short_d": 0.25, "long_d": 0.15, "stop_multiple": None},
+            "Bearish_LowIV":  {"structure": "bull_put_spread", "short_d": 0.35, "long_d": 0.15, "stop_multiple": None},
+            # Keep 2× stop in Bullish_HighIV — losers tend to keep going, not recover
+            "Bullish_HighIV": {"structure": "bull_put_spread", "short_d": 0.45, "long_d": 0.35, "stop_multiple": 2.0},
+            # No stop in Bullish_LowIV — calm market, minor edge vs stop
+            "Bullish_LowIV":  {"structure": "bull_put_spread", "short_d": 0.45, "long_d": 0.35, "stop_multiple": None},
+        },
+    },
+    {
         "type":          "spread",
         "name":          "BJ Bull Put Spread",
         "alloc_key":     "BJ puts",
@@ -239,6 +263,7 @@ STRATEGIES: list[dict] = [
         "vix_cond":      None,
         "profit_take":   0.50,
         "fwd_vol_warn":  1.10,   # avg=1.083; no filter recommended but flag >1.10
+        "vrp_min":       -7.83,  # skip Q1 (VRP < -7.83 pp): 70.0% win / +2.2% avg ROC vs 91.4% / +13.7% above
         "note":          "PROVISIONAL (2yr data); power infra/AI tailwind; 94.4% win; 0.10Δ wing",
     },
     {
@@ -255,18 +280,45 @@ STRATEGIES: list[dict] = [
         "note":          "PROVISIONAL (2yr data); AI EMS/hyperscaler infra; 93.4% win; 0.10Δ wing",
     },
     {
-        "type":          "spread",
-        "name":          "XLE Bull Put Spread",
+        "type":          "regime_spread",
+        "name":          "XLE Regime-Gated",
         "alloc_key":     "XLE puts",
         "ticker":        "XLE",
-        "cp":            "put",
-        "short_delta":   0.30,
-        "long_delta":    0.20,
-        "dte_target":    60,
-        "vix_cond":      None,
         "profit_take":   0.50,
-        "fwd_vol_warn":  1.20,   # energy IV elevated in geopolitical/macro stress; flag >1.20
-        "note":          "PROVISIONAL; energy sector oil/gas; 60 DTE; +7.18% ROC 88.7% win; All VIX",
+        "fwd_vol_warn":  None,
+        "note":          "Bearish_HighIV only (below 50MA + VIX≥20); +35.5% ROC 84.6% win ~9wks/yr",
+        "regime_strategies": {
+            "Bearish_HighIV": {"structure": "bull_put_spread", "short_d": 0.35, "long_d": 0.25},
+            "Bearish_LowIV":  {"structure": "skip"},
+            "Bullish_HighIV": {"structure": "skip"},
+            "Bullish_LowIV":  {"structure": "skip"},
+        },
+    },
+    {
+        "type":          "regime_spread",
+        "name":          "SPY Regime-Switching",
+        "alloc_key":     "SPY regime",
+        "ticker":        "SPY",
+        "profit_take":   0.50,
+        "fwd_vol_warn":  None,
+        "note":          "VIX≥20→bull put spread (no stop); Bear+LowIV→long straddle; Bull+LowIV→skip; reduce to 1.5% when QQQ also fires",
+        "regime_strategies": {
+            # No stop in either put spread regime — SPY mean-reverts even in high-IV; stop fires then recovers
+            "Bearish_HighIV": {"structure": "bull_put_spread", "short_d": 0.25, "long_d": 0.15, "stop_multiple": None},
+            "Bearish_LowIV":  {"structure": "long_straddle",   "delta":   0.50},
+            "Bullish_HighIV": {"structure": "bull_put_spread", "short_d": 0.45, "long_d": 0.35, "stop_multiple": None},
+            "Bullish_LowIV":  {"structure": "skip"},
+        },
+    },
+    {
+        "type":          "straddle",
+        "name":          "UUP ATM Short Straddle",
+        "alloc_key":     "UUP straddle",
+        "ticker":        "UUP",
+        "profit_take":   0.50,
+        "max_ba_pct":    0.35,
+        "fwd_vol_warn":  None,
+        "note":          "ATM only (OTM illiquid); 73.1% win +17.4% ROC; verify chain in broker",
     },
     {
         "type":          "spread",
@@ -496,6 +548,400 @@ def fmt_fwd_vol(factor: Optional[float], warn_threshold: float) -> str:
     return f"  fwd_vol_factor: {factor:.3f}  {tag}"
 
 
+# ── MA50 helper for regime classification ────────────────────────────────────
+
+def get_ma50(ticker: str) -> Optional[float]:
+    """Load 50-day simple MA from cached stock parquet. Returns None on any failure."""
+    path = Path("data") / "cache" / f"{ticker}_stock.parquet"
+    try:
+        df = pd.read_parquet(path)
+        df = df.sort_values("trade_date")
+        if len(df) < 50:
+            return None
+        return float(df["close"].iloc[-50:].mean())
+    except Exception:
+        return None
+
+
+def compute_vrp(
+    ticker: str,
+    chain:  list[dict],
+    expiry: Optional[str],
+    today:  date,
+) -> Optional[float]:
+    """
+    Compute VRP = ATM IV30 − RV20 in percentage points.
+    Uses cached stock parquet for RV20 and the live option chain for ATM IV.
+    Returns None if data is insufficient.
+    """
+    # RV20 from parquet (21 closes → 20 log returns)
+    path = Path("data") / "cache" / f"{ticker}_stock.parquet"
+    try:
+        df = pd.read_parquet(path)
+        df = df.sort_values("trade_date")
+        closes = df["close"].tolist()
+        if len(closes) < 21:
+            return None
+        tail = closes[-21:]
+        log_rets = [math.log(tail[i + 1] / tail[i]) for i in range(20)]
+        mean_lr  = sum(log_rets) / 20
+        variance = sum((r - mean_lr) ** 2 for r in log_rets) / 19   # ddof=1
+        rv20 = math.sqrt(variance) * math.sqrt(252)
+    except Exception:
+        return None
+
+    # ATM IV from chain at target expiry
+    if not chain or not expiry:
+        return None
+    dte = _dte(expiry, today)
+    if dte <= 0:
+        return None
+    atm = _atm_put(chain)
+    if atm is None:
+        return None
+    m = mid_price(atm)
+    K = atm.get("strike", 0.0)
+    T = dte / 365.0
+    try:
+        iv30 = _bs_implied_vol(price=m, S=K, K=K, T=T, r=0.04, q=0.0, opt_type="put")
+    except Exception:
+        return None
+    if iv30 is None or iv30 <= 0:
+        return None
+
+    return (iv30 - rv20) * 100   # percentage points
+
+
+# ── Regime-switching screener ─────────────────────────────────────────────────
+
+def screen_regime_spread(
+    strat:  dict,
+    chain:  list[dict],
+    expiry: Optional[str],
+    vix:    float,
+    today:  date,
+    spot:   Optional[float],
+    ma50:   Optional[float],
+) -> dict:
+    """Screen a regime-switching strategy. Classifies 50MA×VIX regime, selects sub-strategy."""
+    ticker      = strat["ticker"]
+    profit_take = strat["profit_take"]
+    lines: list[str] = []
+
+    # 1. Regime classification
+    if spot is None or ma50 is None:
+        lines.append("  Cannot classify regime: spot or MA50 unavailable")
+        return {"enter": False, "lines": lines, "summary": "SKIP  (regime data unavailable)"}
+
+    trend    = "Bullish" if spot > ma50 else "Bearish"
+    iv_class = "HighIV"  if vix >= 20   else "LowIV"
+    regime   = f"{trend}_{iv_class}"
+
+    lines.append(f"  {ticker} ${spot:.2f} vs 50MA ${ma50:.2f} → {trend}")
+    lines.append(f"  VIX {vix:.2f} → {iv_class}")
+    lines.append(f"  Regime: {regime}")
+
+    rs_map = strat["regime_strategies"]
+    if regime not in rs_map:
+        lines.append(f"  No strategy configured for {regime}")
+        return {"enter": False, "lines": lines, "summary": f"SKIP  ({regime} — unconfigured)"}
+
+    rs        = rs_map[regime]
+    structure = rs["structure"]
+
+    if structure == "skip":
+        lines.append(f"  {regime}: no edge in this regime — skip")
+        return {"enter": False, "lines": lines, "summary": f"SKIP  ({regime})"}
+
+    # 2. Expiry
+    if not expiry:
+        lines.append(f"  No expiry within {DTE_TARGET}±{DTE_TOL} DTE")
+        return {"enter": False, "lines": lines, "summary": "SKIP  (no valid expiry)"}
+    dte = _dte(expiry, today)
+    lines.append(f"  Expiry: {expiry}  ({dte} DTE)")
+
+    if not chain:
+        lines.append("  No option chain data returned")
+        return {"enter": False, "lines": lines, "summary": "SKIP  (no chain data)"}
+
+    # 3a. Credit spread (bull put or bear call)
+    if structure in ("bull_put_spread", "bear_call_spread"):
+        cp      = "put"  if structure == "bull_put_spread" else "call"
+        short_d = rs["short_d"]
+        long_d  = rs["long_d"]
+
+        short = find_by_delta(chain, short_d, cp)
+        if short is None:
+            lines.append(f"  Short {short_d:.2f}Δ {cp}: no match within ±{MAX_DELTA_ERR}Δ")
+            return {"enter": False, "lines": lines, "summary": "SKIP  (no short leg)"}
+        lines.append(fmt_leg(short, "Short", cp, short_d))
+
+        sp = ba_pct(short)
+        if sp is None or sp > MAX_SPREAD_PCT:
+            sp_str = f"{sp * 100:.1f}%" if sp is not None else "n/a"
+            lines.append(f"  Short leg BA too wide: {sp_str} > {MAX_SPREAD_PCT * 100:.0f}%")
+            return {"enter": False, "lines": lines, "summary": f"SKIP  (short BA {sp_str})"}
+
+        long = find_by_delta(chain, long_d, cp)
+        if long is None:
+            lines.append(f"  Long  {long_d:.2f}Δ {cp}: no match within ±{MAX_DELTA_ERR}Δ")
+            return {"enter": False, "lines": lines, "summary": "SKIP  (no long leg)"}
+        lines.append(fmt_leg(long, "Long", cp, long_d))
+
+        lsp = ba_pct(long)
+        if lsp is None or lsp > MAX_SPREAD_PCT:
+            lsp_str = f"{lsp * 100:.1f}%" if lsp is not None else "n/a"
+            lines.append(f"  Long leg BA too wide: {lsp_str} > {MAX_SPREAD_PCT * 100:.0f}%")
+            return {"enter": False, "lines": lines, "summary": f"SKIP  (long BA {lsp_str})"}
+
+        lines.append("")
+        short_mid = mid_price(short)
+        long_mid  = mid_price(long)
+        credit    = short_mid - long_mid
+        s_strike  = short.get("strike", 0.0)
+        l_strike  = long.get("strike", 0.0)
+        width     = (l_strike - s_strike) if cp == "call" else (s_strike - l_strike)
+
+        if credit <= 0 or width <= 0:
+            lines.append(f"  Invalid spread — credit ${credit:.3f}  width ${width:.2f}")
+            return {"enter": False, "lines": lines, "summary": "SKIP  (invalid spread)"}
+
+        max_loss   = width - credit
+        credit_pct = credit / width * 100
+        take_at    = credit * (1.0 - profit_take)
+        keep       = credit * profit_take
+        cp_c       = "C" if cp == "call" else "P"
+        s_delta    = (short.get("greeks") or {}).get("delta")
+        l_delta    = (long.get("greeks")  or {}).get("delta")
+        s_d_str    = f"{abs(float(s_delta)):.2f}Δ" if s_delta is not None else "?Δ"
+        l_d_str    = f"{abs(float(l_delta)):.2f}Δ" if l_delta is not None else "?Δ"
+
+        lines.append(f"  Net credit:  ${credit:.3f}/shr  (${credit * 100:.2f}/contract)")
+        lines.append(f"  Spread:      ${s_strike:.2f}/${l_strike:.2f}  width ${width:.2f}  credit/width {credit_pct:.1f}%")
+        lines.append(f"  Max loss:    ${max_loss:.3f}/shr  (${max_loss * 100:.2f}/contract)")
+        stop_mult = rs.get("stop_multiple", 2.0)
+        lines.append(f"  Take profit: close spread at ≤ ${take_at:.3f}  (keep {int(profit_take * 100)}% = ${keep:.3f}/shr)")
+        if stop_mult is None:
+            lines.append(f"  Stop loss:   NONE — hold to profit take or expiry (no stop this regime)"  )
+        else:
+            lines.append(f"  Stop loss:   close spread at ≥ ${credit * stop_mult:.3f}  ({stop_mult:.0f}× credit)")
+
+        summary = (
+            f"{regime}  short ${s_strike:.2f}{cp_c}({s_d_str}) / buy ${l_strike:.2f}{cp_c}({l_d_str})"
+            f"   net ${credit:.3f}cr   width ${width:.2f}"
+        )
+        return {"enter": True, "lines": lines, "summary": summary,
+                "max_loss_per_contract": max_loss * 100}
+
+    # 3b. Short strangle
+    elif structure == "short_strangle":
+        call_d = rs["call_d"]
+        put_d  = rs["put_d"]
+
+        short_call = find_by_delta(chain, call_d, "call")
+        if short_call is None:
+            lines.append(f"  Short {call_d:.2f}Δ call: no match within ±{MAX_DELTA_ERR}Δ")
+            return {"enter": False, "lines": lines, "summary": "SKIP  (no short call)"}
+        lines.append(fmt_leg(short_call, "Call", "call", call_d))
+
+        csp = ba_pct(short_call)
+        if csp is None or csp > MAX_SPREAD_PCT:
+            csp_str = f"{csp * 100:.1f}%" if csp is not None else "n/a"
+            lines.append(f"  Call leg BA too wide: {csp_str} > {MAX_SPREAD_PCT * 100:.0f}%")
+            return {"enter": False, "lines": lines, "summary": f"SKIP  (call BA {csp_str})"}
+
+        short_put = find_by_delta(chain, put_d, "put")
+        if short_put is None:
+            lines.append(f"  Short {put_d:.2f}Δ put: no match within ±{MAX_DELTA_ERR}Δ")
+            return {"enter": False, "lines": lines, "summary": "SKIP  (no short put)"}
+        lines.append(fmt_leg(short_put, "Put", "put", put_d))
+
+        psp = ba_pct(short_put)
+        if psp is None or psp > MAX_SPREAD_PCT:
+            psp_str = f"{psp * 100:.1f}%" if psp is not None else "n/a"
+            lines.append(f"  Put leg BA too wide: {psp_str} > {MAX_SPREAD_PCT * 100:.0f}%")
+            return {"enter": False, "lines": lines, "summary": f"SKIP  (put BA {psp_str})"}
+
+        lines.append("")
+        call_mid = mid_price(short_call)
+        put_mid  = mid_price(short_put)
+        credit   = call_mid + put_mid
+        c_strike = short_call.get("strike", 0.0)
+        p_strike = short_put.get("strike", 0.0)
+
+        if credit <= 0:
+            lines.append(f"  Invalid strangle — combined credit ${credit:.3f}")
+            return {"enter": False, "lines": lines, "summary": "SKIP  (no credit)"}
+
+        take_at = credit * (1.0 - profit_take)
+        keep    = credit * profit_take
+        c_delta = (short_call.get("greeks") or {}).get("delta")
+        p_delta = (short_put.get("greeks")  or {}).get("delta")
+        c_d_str = f"{abs(float(c_delta)):.2f}Δ" if c_delta is not None else "?Δ"
+        p_d_str = f"{abs(float(p_delta)):.2f}Δ" if p_delta is not None else "?Δ"
+
+        lines.append(f"  Combined credit:  ${credit:.3f}/shr  (${credit * 100:.2f}/contract)")
+        lines.append(f"  Strikes:          call ${c_strike:.2f} / put ${p_strike:.2f}")
+        lines.append(f"  Take profit: close strangle at ≤ ${take_at:.3f}  (keep {int(profit_take * 100)}% = ${keep:.3f}/shr)")
+        lines.append(f"  Stop loss:   close strangle at ≥ ${credit * 2:.3f}  (2× credit)")
+
+        summary = (
+            f"{regime}  short ${c_strike:.2f}C({c_d_str}) / short ${p_strike:.2f}P({p_d_str})"
+            f"   combined ${credit:.3f}cr"
+        )
+        return {"enter": True, "lines": lines, "summary": summary,
+                "max_loss_per_contract": None}  # naked — undefined max loss
+
+    # 3c. Long straddle (debit — buy ATM call + put)
+    elif structure == "long_straddle":
+        delta = rs.get("delta", 0.50)
+
+        long_call = find_by_delta(chain, delta, "call")
+        if long_call is None:
+            lines.append(f"  Long {delta:.2f}Δ call: no match within ±{MAX_DELTA_ERR}Δ")
+            return {"enter": False, "lines": lines, "summary": "SKIP  (no call leg)"}
+        lines.append(fmt_leg(long_call, "Call (buy)", "call", delta))
+
+        csp = ba_pct(long_call)
+        if csp is None or csp > MAX_SPREAD_PCT:
+            csp_str = f"{csp * 100:.1f}%" if csp is not None else "n/a"
+            lines.append(f"  Call leg BA too wide: {csp_str} > {MAX_SPREAD_PCT * 100:.0f}%")
+            return {"enter": False, "lines": lines, "summary": f"SKIP  (call BA {csp_str})"}
+
+        long_put = find_by_delta(chain, delta, "put")
+        if long_put is None:
+            lines.append(f"  Long {delta:.2f}Δ put: no match within ±{MAX_DELTA_ERR}Δ")
+            return {"enter": False, "lines": lines, "summary": "SKIP  (no put leg)"}
+        lines.append(fmt_leg(long_put, "Put (buy)", "put", delta))
+
+        psp = ba_pct(long_put)
+        if psp is None or psp > MAX_SPREAD_PCT:
+            psp_str = f"{psp * 100:.1f}%" if psp is not None else "n/a"
+            lines.append(f"  Put leg BA too wide: {psp_str} > {MAX_SPREAD_PCT * 100:.0f}%")
+            return {"enter": False, "lines": lines, "summary": f"SKIP  (put BA {psp_str})"}
+
+        lines.append("")
+        call_mid = mid_price(long_call)
+        put_mid  = mid_price(long_put)
+        debit    = call_mid + put_mid
+        c_strike = long_call.get("strike", 0.0)
+        p_strike = long_put.get("strike", 0.0)
+
+        if debit <= 0:
+            lines.append(f"  Invalid straddle — combined debit ${debit:.3f}")
+            return {"enter": False, "lines": lines, "summary": "SKIP  (no debit)"}
+
+        take_at  = debit * (1.0 + profit_take)   # close when value rises to +50%
+        stop_at  = debit * 0.60                   # stop when value falls to 60% of debit (-40%)
+        c_delta  = (long_call.get("greeks") or {}).get("delta")
+        p_delta  = (long_put.get("greeks")  or {}).get("delta")
+        c_d_str  = f"{abs(float(c_delta)):.2f}Δ" if c_delta is not None else "?Δ"
+        p_d_str  = f"{abs(float(p_delta)):.2f}Δ" if p_delta is not None else "?Δ"
+
+        lines.append(f"  Total debit:    ${debit:.3f}/shr  (${debit * 100:.2f}/contract)")
+        lines.append(f"  Strikes:        call ${c_strike:.2f} / put ${p_strike:.2f}")
+        lines.append(f"  Max loss:       ${debit:.3f}/shr  (${debit * 100:.2f}/contract)  — fully defined")
+        lines.append(f"  Take profit:    close when straddle value ≥ ${take_at:.3f}  (+{int(profit_take * 100)}%)")
+        lines.append(f"  Stop loss:      close when straddle value ≤ ${stop_at:.3f}  (−40% of debit)")
+
+        summary = (
+            f"{regime}  buy ${c_strike:.2f}C({c_d_str}) / buy ${p_strike:.2f}P({p_d_str})"
+            f"   debit ${debit:.3f}   max loss ${debit * 100:.2f}/contract"
+        )
+        return {"enter": True, "lines": lines, "summary": summary,
+                "max_loss_per_contract": debit * 100}
+
+    lines.append(f"  Unknown structure: {structure}")
+    return {"enter": False, "lines": lines, "summary": f"SKIP  (unknown structure)"}
+
+
+# ── ATM short straddle screener ───────────────────────────────────────────────
+
+def screen_straddle(
+    strat:  dict,
+    chain:  list[dict],
+    expiry: Optional[str],
+    today:  date,
+) -> dict:
+    """Screen an ATM short straddle. Uses strict BA filter (max_ba_pct). Returns enter/lines/summary."""
+    profit_take = strat["profit_take"]
+    max_ba      = strat.get("max_ba_pct", MAX_SPREAD_PCT)
+    lines: list[str] = []
+
+    # 1. Expiry
+    if not expiry:
+        lines.append(f"  No expiry within {DTE_TARGET}±{DTE_TOL} DTE")
+        return {"enter": False, "lines": lines, "summary": "SKIP  (no valid expiry)"}
+    dte = _dte(expiry, today)
+    lines.append(f"  Expiry: {expiry}  ({dte} DTE)")
+
+    if not chain:
+        lines.append("  No option chain data returned")
+        return {"enter": False, "lines": lines, "summary": "SKIP  (no chain data)"}
+
+    # 2. ATM put (closest to 0.50Δ)
+    atm_put = _atm_put(chain)
+    if atm_put is None:
+        lines.append("  No ATM put with positive bid found")
+        return {"enter": False, "lines": lines, "summary": "SKIP  (no ATM put)"}
+
+    strike = atm_put["strike"]
+
+    # 3. Matching call at same strike
+    atm_call = next(
+        (c for c in chain
+         if c.get("option_type") == "call" and c["strike"] == strike and (c.get("bid") or 0) > 0),
+        None,
+    )
+    if atm_call is None:
+        lines.append(f"  No call at ATM strike ${strike:.2f} with positive bid")
+        return {"enter": False, "lines": lines, "summary": "SKIP  (no ATM call)"}
+
+    # 4. BA checks (strict limit for thinly-traded underlyings)
+    put_ba = ba_pct(atm_put)
+    if put_ba is None or put_ba > max_ba:
+        put_ba_str = f"{put_ba * 100:.1f}%" if put_ba is not None else "n/a"
+        lines.append(f"  Put BA too wide: {put_ba_str} > {max_ba * 100:.0f}% (ATM limit for this ticker)")
+        return {"enter": False, "lines": lines, "summary": f"SKIP  (put BA {put_ba_str})"}
+
+    call_ba = ba_pct(atm_call)
+    if call_ba is None or call_ba > max_ba:
+        call_ba_str = f"{call_ba * 100:.1f}%" if call_ba is not None else "n/a"
+        lines.append(f"  Call BA too wide: {call_ba_str} > {max_ba * 100:.0f}% (ATM limit for this ticker)")
+        return {"enter": False, "lines": lines, "summary": f"SKIP  (call BA {call_ba_str})"}
+
+    # 5. Economics
+    put_mid  = mid_price(atm_put)
+    call_mid = mid_price(atm_call)
+    credit   = put_mid + call_mid
+
+    if credit <= 0:
+        lines.append(f"  Combined credit ${credit:.3f} — no edge")
+        return {"enter": False, "lines": lines, "summary": "SKIP  (no credit)"}
+
+    take_at = credit * (1.0 - profit_take)
+    keep    = credit * profit_take
+    p_delta = (atm_put.get("greeks")  or {}).get("delta")
+    c_delta = (atm_call.get("greeks") or {}).get("delta")
+    p_d_str = f"{abs(float(p_delta)):.2f}Δ" if p_delta is not None else "?Δ"
+    c_d_str = f"{abs(float(c_delta)):.2f}Δ" if c_delta is not None else "?Δ"
+
+    lines.append(fmt_leg(atm_put,  "Put",  "put",  0.50))
+    lines.append(fmt_leg(atm_call, "Call", "call", 0.50))
+    lines.append("")
+    lines.append(f"  Combined credit:  ${credit:.3f}/shr  (${credit * 100:.2f}/contract)")
+    lines.append(f"  ATM strike:       ${strike:.2f}")
+    lines.append(f"  Take profit: close straddle at ≤ ${take_at:.3f}  (keep {int(profit_take * 100)}% = ${keep:.3f}/shr)")
+    lines.append(f"  Stop loss:   close straddle at ≥ ${credit * 2:.3f}  (2× credit)")
+
+    summary = (
+        f"${strike:.2f} straddle  P({p_d_str}) + C({c_d_str})"
+        f"   combined ${credit:.3f}cr"
+    )
+    return {"enter": True, "lines": lines, "summary": summary,
+            "max_loss_per_contract": None}  # stop at 2× credit; no defined max
+
+
 # ── Per-strategy screening ────────────────────────────────────────────────────
 
 def screen_spread(
@@ -518,6 +964,18 @@ def screen_spread(
     if not ok:
         return {"enter": False, "lines": lines,
                 "summary": f"SIT OUT   ({vix_desc})"}
+
+    # 1b. VRP gate (optional; only if vrp_min is configured on the strategy)
+    vrp_min = strat.get("vrp_min")
+    if vrp_min is not None:
+        vrp = compute_vrp(strat["ticker"], chain, expiry, today)
+        if vrp is None:
+            lines.append(f"  VRP: n/a (data unavailable) — proceeding without filter")
+        else:
+            lines.append(f"  VRP: {vrp:+.1f} pp  (IV30 − RV20)  filter: VRP ≥ {vrp_min:+.1f} pp")
+            if vrp < vrp_min:
+                return {"enter": False, "lines": lines,
+                        "summary": f"SIT OUT   (VRP {vrp:+.1f} pp < {vrp_min:+.1f} pp — Q1 skip)"}
 
     # 2. Expiry
     if not expiry:
@@ -919,6 +1377,7 @@ async def run(today: date, capital: Optional[float] = None, risk_pct: float = 0.
 
     spread_strats   = [s for s in STRATEGIES if s.get("type", "spread") == "spread"]
     calendar_strats = [s for s in STRATEGIES if s.get("type") == "calendar"]
+    regime_strats   = [s for s in STRATEGIES if s.get("type") == "regime_spread"]
 
     async with TradierClient(api_key=api_key) as client:
 
@@ -976,6 +1435,13 @@ async def run(today: date, capital: Optional[float] = None, risk_pct: float = 0.
             print("ERROR: Could not fetch VIX. Markets may be closed.", file=sys.stderr)
             sys.exit(1)
 
+        # MA50 for regime-switching strategies (loaded from cached parquet)
+        ma50_for: dict[str, Optional[float]] = {}
+        for strat in regime_strats:
+            t = strat["ticker"]
+            if t not in ma50_for:
+                ma50_for[t] = get_ma50(t)
+
         # ── Step 2: collect all (ticker, expiry) pairs and fetch in parallel ──
         chain_pairs: list[tuple[str, Optional[str]]] = []
         seen: set = set()
@@ -1028,6 +1494,15 @@ async def run(today: date, capital: Optional[float] = None, risk_pct: float = 0.
                     f"0.50Δ  {strat_dte}DTE short / {strat['min_gap']}–{strat['max_gap']}d gap"
                     f"  iv_ratio≥{strat['min_iv_ratio']:.2f}  {int(profit_take * 100)}% take"
                 )
+            elif strat_type == "regime_spread":
+                header_detail = (
+                    f"regime-switch 50MA×VIX  {strat_dte}DTE  {int(profit_take * 100)}% take"
+                )
+            elif strat_type == "straddle":
+                max_ba = strat.get("max_ba_pct", MAX_SPREAD_PCT)
+                header_detail = (
+                    f"ATM 0.50Δ straddle  {strat_dte}DTE  BA≤{int(max_ba * 100)}%  {int(profit_take * 100)}% take"
+                )
             else:
                 sd = strat["short_delta"]
                 ld = strat.get("long_delta")
@@ -1059,6 +1534,23 @@ async def run(today: date, capital: Optional[float] = None, risk_pct: float = 0.
                     chain_cache.get((ticker, long_exp),  []),
                     short_exp,
                     long_exp,
+                    today,
+                )
+            elif strat_type == "regime_spread":
+                result = screen_regime_spread(
+                    strat,
+                    chain_cache.get((ticker, short_exp), []),
+                    short_exp,
+                    vix,
+                    today,
+                    spot_for.get(ticker),
+                    ma50_for.get(ticker),
+                )
+            elif strat_type == "straddle":
+                result = screen_straddle(
+                    strat,
+                    chain_cache.get((ticker, short_exp), []),
+                    short_exp,
                     today,
                 )
             else:

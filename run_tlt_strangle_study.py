@@ -9,7 +9,7 @@ Sweeps call_delta × put_delta to find the optimal asymmetric strangle.
 Exit rules: 50% profit take, 2× stop loss.
 
 Usage:
-  PYTHONPATH=src python run_tlt_strangle_study.py [--regime LABEL]
+  PYTHONPATH=src python run_tlt_strangle_study.py [--ticker TMF] [--regime LABEL]
 
   LABEL: Bearish_LowIV (default), Bearish_HighIV, Bullish_HighIV, Bullish_LowIV, ALL
 
@@ -49,15 +49,22 @@ END_DATE      = date(2026, 3, 14)
 
 # ── Data loading ──────────────────────────────────────────────────────────────
 
-def load_tlt_options() -> pd.DataFrame:
+def load_options(ticker: str) -> pd.DataFrame:
+    dte_min   = max(0, DTE_TARGET - DTE_TOL - 5)
+    dte_max   = DTE_TARGET + DTE_TOL + 5
+    delta_min = min(CALL_DELTAS + PUT_DELTAS) - MAX_DELTA_ERR
+    delta_max = max(CALL_DELTAS + PUT_DELTAS) + MAX_DELTA_ERR
     sql = f"""
-        SELECT trade_date, expiry, strike, mid, delta, cp
+        SELECT trade_date, expiry, strike, mid, delta, cp,
+               DATEDIFF(expiry, trade_date) AS dte
         FROM options_cache
-        WHERE ticker = 'TLT'
+        WHERE ticker = '{ticker}'
           AND trade_date >= '{START_DATE}'
           AND trade_date <= '{END_DATE}'
           AND mid > 0
           AND delta <> 0
+          AND ABS(delta) BETWEEN {delta_min} AND {delta_max}
+          AND DATEDIFF(expiry, trade_date) BETWEEN {dte_min} AND {dte_max}
         ORDER BY trade_date, expiry, strike
     """
     df = pd.read_sql(sql, _get_engine())
@@ -66,12 +73,12 @@ def load_tlt_options() -> pd.DataFrame:
     df["strike"]     = df["strike"].astype(float)
     df["mid"]        = df["mid"].astype(float)
     df["delta"]      = df["delta"].abs().astype(float)
-    df["dte"]        = (df["expiry"] - df["trade_date"]).apply(lambda d: d.days)
+    df["dte"]        = df["dte"].astype(int)
     return df
 
 
-def load_stock() -> pd.DataFrame:
-    path = _CACHE_DIR / "TLT_stock.parquet"
+def load_stock(ticker: str) -> pd.DataFrame:
+    path = _CACHE_DIR / f"{ticker}_stock.parquet"
     df   = pd.read_parquet(path)
     df["trade_date"] = pd.to_datetime(df["trade_date"]).dt.date
     return df.sort_values("trade_date").reset_index(drop=True)
@@ -193,15 +200,17 @@ def sim_strangle(
 
 def main() -> None:
     parser = argparse.ArgumentParser()
+    parser.add_argument("--ticker", default="TLT", help="Ticker symbol (default: TLT)")
     parser.add_argument("--regime", default="Bearish_LowIV",
                         help="Regime filter (or ALL)")
     args = parser.parse_args()
+    ticker = args.ticker.upper()
 
-    print("Loading TLT option data...")
-    opts = load_tlt_options()
+    print(f"Loading {ticker} option data...")
+    opts = load_options(ticker)
     print(f"  {len(opts):,} rows")
 
-    stock_df  = load_stock()
+    stock_df  = load_stock(ticker)
     stock_map = dict(zip(stock_df["trade_date"], stock_df["close"].astype(float)))
     vix_map   = load_vix()
     regime_map = build_regime_map(stock_df, vix_map)
@@ -272,7 +281,7 @@ def main() -> None:
 
     regime_lbl = regime_filter if regime_filter != "ALL" else "All regimes"
     print(f"\n{'═'*88}")
-    print(f"  TLT SHORT STRANGLE SWEEP  ·  {regime_lbl}  ·  ~20 DTE  ·  50% take / 2× stop")
+    print(f"  {ticker} SHORT STRANGLE SWEEP  ·  {regime_lbl}  ·  ~20 DTE  ·  50% take / 2× stop")
     print(f"  Rows: {len(df):,}   Entry dates: {df['edate'].nunique()}")
     print(f"{'═'*88}")
 
