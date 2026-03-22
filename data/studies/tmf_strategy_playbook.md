@@ -1,7 +1,7 @@
 # TMF Bear Call Spread — Trading Playbook
 
-**Last updated:** 2026-03-05
-**Status:** Directionally confirmed. Data limited to ~2 usable years — treat as watch list until more post-split history accumulates.
+**Last updated:** 2026-03-19
+**Status:** Directionally confirmed. 0.35Δ/0.05Δ wing confirmed optimal. 50% fixed profit take confirmed (ann-target rejected). Data limited to ~2 usable years — treat as watch list until more post-split history accumulates.
 
 ---
 
@@ -103,7 +103,7 @@ in all market regimes.
 | Parameter | Value |
 |---|---|
 | Short call delta | 0.35Δ |
-| Long call delta | ~0.30Δ (wing = 0.05Δ) |
+| Long call delta | ~0.30Δ (wing = 0.05Δ — confirmed; see Research Notes) |
 | Target DTE | 20 days |
 | DTE tolerance | ±5 days |
 | Entry day | Friday |
@@ -290,6 +290,36 @@ annualized return.
 
 ---
 
+## Research Notes
+
+### 2026-03-19: Wing sweep + profit target optimization
+
+**Wing sweep (0.05Δ vs 0.10Δ vs 0.15Δ):** Swept all three wings. 0.05Δ is clearly optimal for TMF:
+
+| Wing | Short Δ | ROC% | Win% | Notes |
+|------|---------|------|------|-------|
+| 0.05Δ | 0.35Δ | +15.07% | 87.3% | **Confirmed** |
+| 0.10Δ | 0.35Δ | +9.63% | 87.8% | −5.4pp penalty |
+| 0.10Δ | 0.40Δ | +11.17% | 83.6% | Best 0.10Δ combo, still worse |
+
+The 0.10Δ wing standard (adopted 2026-03-09) does **not** apply to TMF. Rationale: at $50–70,
+TMF's strikes are $1 apart. The 0.30Δ long leg is only $1 above the short and fills fine — the
+practical fill concern driving the 0.10Δ upgrade was about very far OTM options. The 0.05Δ wing
+delivers +15% ROC vs +9.6% for 0.10Δ; retaining it is justified.
+
+**Profit target optimization (IS 2018–2022 / OOS 2023–2026):** Swept 50%–2000% ann-ROC targets.
+Every ann_target fires at ~6.3d hold vs 11.5d baseline (TMF's high IV generates enough daily
+pnl/margin×365/days to clear any target on day 1–2). Result:
+
+- Baseline (50% fixed): OOS $748.00, +16.4% avg ROC, +1294.7% ann ROC, 11.5d hold
+- Any ann_target: OOS $507.50, +10.5% avg ROC, +1236.3% ann ROC, 6.3d hold
+- IS SumPnL collapses to $0 with ann_target (thin IS sample can't afford to give up winner upside)
+
+**50% fixed take confirmed optimal.** Ann_target exits winners too early on a fast-decaying,
+high-IV underlying — same dynamic as ASHR calls.
+
+---
+
 ## Code
 
 ```bash
@@ -297,9 +327,13 @@ annualized return.
 AWS_PROFILE=clarinut-gmerton MYSQL_PASSWORD=xxx PYTHONPATH=src python3 run_call_spreads.py \
     --ticker TMF --spread 0.25
 
-# Per-year detail for confirmed parameters:
+# Per-year detail for confirmed parameters (0.35Δ/0.05Δ):
 AWS_PROFILE=clarinut-gmerton MYSQL_PASSWORD=xxx PYTHONPATH=src python3 run_call_spreads.py \
     --ticker TMF --spread 0.25 --detail-short-delta 0.35 --detail-wing 0.05 --no-csv
+
+# Profit target sweep (reproduces optimization):
+AWS_PROFILE=clarinut-gmerton MYSQL_PASSWORD=xxx PYTHONPATH=src python3 run_profit_sweep.py \
+    --ticker TMF --strategy call_spread --short-delta 0.35 --wing 0.05 --vix none
 
 # Bull put spread sweep (research — not confirmed):
 AWS_PROFILE=clarinut-gmerton MYSQL_PASSWORD=xxx PYTHONPATH=src python3 run_put_spreads.py \

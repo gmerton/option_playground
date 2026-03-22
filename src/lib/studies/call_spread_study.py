@@ -189,6 +189,7 @@ def find_spread_exits(
     df_opts: pd.DataFrame,
     profit_take_pct: float = 0.50,
     stop_multiple: Optional[float] = None,
+    ann_target: Optional[float] = None,
 ) -> pd.DataFrame:
     """
     For each spread position, find the exit date and net spread value.
@@ -199,6 +200,8 @@ def find_spread_exits(
     stop_multiple: if set, also exit when net_value ≥ stop_multiple × net_credit_mid.
     e.g. stop_multiple=2 exits when it costs 2× the premium collected to close
     (i.e. you've lost 1× your credit).
+    ann_target: if set (e.g. 1.0 = 100%), overrides profit_take_pct with an annualized ROC target.
+      Exit when (pnl_now / margin) * (365 / days_held) >= ann_target.
 
     Returns positions with added: exit_date, exit_net_value, days_held, exit_type.
     exit_type: 'early' (profit take) | 'stop' (stop-loss) | 'expiry' | 'missing'
@@ -272,8 +275,18 @@ def find_spread_exits(
     merged["net_value"] = merged["short_mark_mid"] - merged["long_mark_mid"]
 
     # Profit-take trigger
-    profit_target        = merged["net_credit_mid"] * (1.0 - profit_take_pct)
-    merged["_early"]     = merged["net_value"] <= profit_target
+    if ann_target is not None and ann_target > 0:
+        merged["_days_held"] = (
+            pd.to_datetime(merged["mark_date"]) - pd.to_datetime(merged["entry_date"])
+        ).dt.days.clip(lower=1)
+        merged["_pnl_now"] = merged["net_credit_mid"] - merged["net_value"]
+        merged["_margin"]  = (merged["short_strike"] - merged["long_strike"] - merged["net_credit_mid"]).clip(lower=0.01)
+        merged["_early"]   = (
+            (merged["_pnl_now"] / merged["_margin"]) * (365.0 / merged["_days_held"])
+        ) >= ann_target
+    else:
+        profit_target    = merged["net_credit_mid"] * (1.0 - profit_take_pct)
+        merged["_early"] = merged["net_value"] <= profit_target
     # Stop-loss trigger
     if stop_multiple is not None:
         stop_threshold   = merged["net_credit_mid"] * stop_multiple
@@ -567,6 +580,7 @@ def run_spread_delta_sweep(
     max_delta_err: float = 0.08,
     max_spread_pct: Optional[float] = None,
     profit_take_pct: float = 0.50,
+    ann_target: Optional[float] = None,
     max_fwd_vol_factor: Optional[float] = None,
 ) -> pd.DataFrame:
     """
@@ -614,7 +628,7 @@ def run_spread_delta_sweep(
                 print("no entries after fwd_vol_factor filter.")
                 continue
 
-            positions = find_spread_exits(positions, df_opts, profit_take_pct=profit_take_pct)
+            positions = find_spread_exits(positions, df_opts, profit_take_pct=profit_take_pct, ann_target=ann_target)
             positions = compute_spread_metrics(positions)
 
             for vix_thresh in vix_thresholds:
@@ -806,6 +820,7 @@ def run_call_spread_study(
     max_delta_err: float = 0.08,
     max_spread_pct: Optional[float] = None,
     profit_take_pct: float = 0.50,
+    ann_target: Optional[float] = None,
     output_csv: Optional[str] = None,
     force_sync: bool = False,
     detail_short_delta: Optional[float] = None,
@@ -858,6 +873,7 @@ def run_call_spread_study(
         max_delta_err=max_delta_err,
         max_spread_pct=max_spread_pct,
         profit_take_pct=profit_take_pct,
+        ann_target=ann_target,
         max_fwd_vol_factor=max_fwd_vol_factor,
     )
 

@@ -1230,8 +1230,14 @@ def _print_sizing(
     risk_pct: float,
 ) -> None:
     """
-    Print contract sizing for all ENTER strategies using equal-risk and
-    Sharpe-weighted allocations from the strategy registry.
+    Print contract sizing for all ENTER strategies.
+
+    Primary column: fixed allocation from the $100K portfolio model (registry.portfolio_alloc).
+      risk_per_trade = portfolio_alloc / avg_concurrent
+      contracts      = risk_per_trade / max_loss_per_contract
+
+    Secondary column: Sharpe-weighted allocation across today's active strategies,
+      distributing a total risk budget (total_capital × risk_pct).
 
     UVXY Bear Call Spread + UVXY Short Put share a single 'UVXY combined' allocation.
     """
@@ -1259,72 +1265,89 @@ def _print_sizing(
     if not entered:
         return
 
-    # Look up Sharpe from registry; warn if missing
+    # Look up registry data; collect Sharpes for secondary column
     active_keys = list(entered.keys())
+    regs: list[object]   = []
     sharpes: list[float] = []
     missing: list[str]   = []
     for akey in active_keys:
         reg = STRATEGY_MAP.get(akey)
+        regs.append(reg)
         if reg is None:
             missing.append(akey)
             sharpes.append(0.01)
         else:
             sharpes.append(max(reg.sharpe_annual, 0.01))
 
-    total_risk  = total_capital * risk_pct
-    n           = len(active_keys)
-    equal_per   = total_risk / n
+    total_risk   = total_capital * risk_pct
     total_sharpe = sum(sharpes)
     sharpe_alloc = [total_risk * (sh / total_sharpe) for sh in sharpes]
 
-    W = 108
+    W = 115
     print("═" * W)
     print(
         f"  CONTRACT SIZING  ·  ${total_capital:,.0f} portfolio  ·  "
-        f"{risk_pct * 100:.0f}% risk budget = ${total_risk:,.0f}  ·  "
-        f"{n} active {'strategy' if n == 1 else 'strategies'}"
+        f"{len(active_keys)} active {'strategy' if len(active_keys) == 1 else 'strategies'}"
     )
     print("═" * W)
     print(
-        f"  {'Strategy (alloc key)':<26}  {'Sharpe':>6}  {'= Risk $':>9}  "
-        f"{'= Cts':>6}  {'Sharpe-wtd $':>12}  {'Sharpe Cts':>10}  Max loss/ct"
+        f"  {'Strategy':<24}  {'Alloc':>6}  {'$/trade':>8}  {'Cts':>5}  │  "
+        f"{'Sharpe':>6}  {'Sh-wtd $':>9}  {'Sh Cts':>7}  Max loss/ct"
     )
+    print(f"  {'(primary: fixed $100K model)':<24}  {'':>6}  {'':>8}  {'':>5}  │  "
+          f"{'':>6}  {'(20% risk budget)':>9}")
     print("─" * W)
 
-    for akey, sh, sa in zip(active_keys, sharpes, sharpe_alloc):
+    fixed_total = 0
+    for akey, reg, sh, sa in zip(active_keys, regs, sharpes, sharpe_alloc):
         info = entered[akey]
-        reg  = STRATEGY_MAP.get(akey)
         sharpe_disp = reg.sharpe_annual if reg else 0.0
         mlpc = info["max_loss_per_contract"]
 
-        if mlpc is not None and mlpc > 0:
-            eq_cts = int(equal_per / mlpc)
-            sh_cts = int(sa / mlpc)
-            mlpc_str  = f"${mlpc:.2f}"
-            eq_cts_str = str(eq_cts)
+        # Fixed allocation column (primary)
+        if reg and reg.portfolio_alloc > 0:
+            alloc_str       = f"${reg.portfolio_alloc:,}"
+            risk_per_trade  = reg.risk_per_trade
+            risk_str        = f"${risk_per_trade:,}"
+            if mlpc and mlpc > 0:
+                fixed_cts = int(risk_per_trade / mlpc)
+                fixed_cts_str = str(fixed_cts)
+            else:
+                fixed_cts_str = "—"
+            fixed_total += reg.portfolio_alloc
+        else:
+            alloc_str     = "—"
+            risk_str      = "—"
+            fixed_cts_str = "—"
+
+        # Sharpe-weighted column (secondary)
+        if mlpc and mlpc > 0:
+            sh_cts     = int(sa / mlpc)
+            mlpc_str   = f"${mlpc:.2f}"
             sh_cts_str = str(sh_cts)
         else:
             mlpc_str   = "undefined (naked)"
-            eq_cts_str = "—"
             sh_cts_str = "—"
 
-        sub = ", ".join(info["sub_names"])
+        sub  = ", ".join(info["sub_names"])
         note = f"  ← {sub}" if sub != akey else ""
         print(
-            f"  {akey:<26}  {sharpe_disp:>6.3f}  ${equal_per:>8,.0f}  "
-            f"{eq_cts_str:>6}  ${sa:>11,.0f}  {sh_cts_str:>10}  {mlpc_str}{note}"
+            f"  {akey:<24}  {alloc_str:>6}  {risk_str:>8}  {fixed_cts_str:>5}  │  "
+            f"{sharpe_disp:>6.3f}  ${sa:>8,.0f}  {sh_cts_str:>7}  {mlpc_str}{note}"
         )
 
     print("─" * W)
     print(
-        f"  {'TOTAL':<26}  {'':>6}  ${total_risk:>8,.0f}  {'':>6}  "
-        f"${sum(sharpe_alloc):>11,.0f}"
+        f"  {'TOTAL':<24}  ${fixed_total:>5,}  {'':>8}  {'':>5}  │  "
+        f"{'':>6}  ${sum(sharpe_alloc):>8,.0f}"
     )
     if missing:
-        print(f"\n  WARNING: no registry entry for: {missing}  (Sharpe floored at 0.01)")
+        print(f"\n  NOTE: no registry entry for {missing} — Sharpe floored at 0.01; add to strategy_registry.py")
     print(
-        "\n  Contracts = allocation / max_loss_per_contract  (round down; always verify fills)"
-        "\n  For UVXY combined: call spread allocation applies; put allocation is half that (50/50 blend)"
+        "\n  Fixed model: contracts = (portfolio_alloc / avg_concurrent) / max_loss_per_contract"
+        "\n  Sharpe-wtd: distributes 20% of portfolio across today's active strategies by Sharpe ratio"
+        "\n  For UVXY combined: risk_per_trade = $2,500 (call spread leg); put runs same $"
+        "\n  Always round down contracts; verify fills before sizing up"
     )
     print("═" * W + "\n")
 
@@ -1640,8 +1663,8 @@ def main() -> None:
         help="Trade date YYYY-MM-DD (default: today)",
     )
     parser.add_argument(
-        "--capital", type=float, default=None,
-        help="Portfolio size in dollars — enables contract sizing output",
+        "--capital", type=float, default=100_000,
+        help="Portfolio size in dollars (default: $100,000)",
     )
     parser.add_argument(
         "--risk-pct", type=float, default=0.20,

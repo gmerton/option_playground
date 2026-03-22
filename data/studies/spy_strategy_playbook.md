@@ -1,7 +1,7 @@
 # SPY Regime-Switching Options Strategy — Trading Playbook
 
-**Last updated:** 2026-03-19
-**Status:** Research complete. Optimized with regime-specific deltas and no stop loss.
+**Last updated:** 2026-03-21
+**Status:** Research complete. Double calendar added for Bearish_HighIV and Bullish_LowIV.
 
 ---
 
@@ -13,24 +13,27 @@ structure depending on the regime:
 
 | Regime | Condition | Strategy | Backtest ROC | Win% |
 |--------|-----------|----------|-------------|------|
-| **Bearish_HighIV** | Below 50MA + VIX ≥ 20 | Bull put spread 0.25Δ / 0.15Δ, no stop | +7.49% | 94.7% |
+| **Bearish_HighIV** | Below 50MA + VIX ≥ 20 | Bull put spread 0.25Δ/0.15Δ, no stop **+ Double calendar 0.25P/0.10C** | +7.5% / +23.7% | 94.7% / 50.0% |
 | **Bearish_LowIV** | Below 50MA + VIX < 20 | Long straddle 0.50Δ | +22.6% | 57.9% |
 | **Bullish_HighIV** | Above 50MA + VIX ≥ 20 | Bull put spread 0.45Δ / 0.35Δ, no stop | +8.26% | 81.9% |
-| **Bullish_LowIV** | Above 50MA + VIX < 20 | **Skip** | — | — |
+| **Bullish_LowIV** | Above 50MA + VIX < 20 | **Double calendar 0.25P/0.25C, 50%PT** | **+10.4%** | **59.3%** |
 
 **Regime frequencies (2018–2026):** Bearish_HighIV 75 wks (~9/yr), Bearish_LowIV 39 wks
-(~5/yr), Bullish_HighIV 72 wks (~9/yr), Bullish_LowIV 225 wks (~28/yr, skipped).
-Active ~23 Fridays/year.
+(~5/yr), Bullish_HighIV 72 wks (~9/yr), Bullish_LowIV 225 wks (~28/yr).
+Active ~51 Fridays/year (all regimes now covered except Bearish_LowIV is low-frequency).
 
 **Key finding:** Bear call spreads are definitively rejected on SPY in all regimes
 (-20% ROC in Bearish_HighIV, -17.6% in Bullish_HighIV). SPY's structural upward bias
 means elevated put premium in high-IV regimes is more reliably captured by bull put spreads.
 
-**Bullish_LowIV is skipped.** Short strangles show +14.6% average ROC in that regime but
-produced -481% ROC in 2020 (COVID) and -163% in 2022 when regime misclassified during a
-fast-moving selloff. Catastrophic tail risk makes short strangles unsuitable for SPY.
-Bull put spreads return only +0.45% in Bullish_LowIV (no stop) — not worth the capital
-commitment.
+**Bullish_LowIV now uses a double calendar.** Short strangles show +14.6% average ROC in
+that regime but produced -481% ROC in 2020 (COVID) and -163% in 2022. The double calendar
+at 0.25Δ/0.25Δ with 50% profit take yields +10.4% ROC, 59.3% win rate, with max loss
+capped at the net debit (~$2.15/shr). No tail risk.
+
+**Bearish_HighIV now runs two strategies simultaneously** — the put spread (high win rate,
+lower ROC) and the double calendar (lower win rate, much higher ROC). Size each at 1.5%
+rather than a single position at 2–3%. See sizing section below.
 
 ---
 
@@ -40,13 +43,11 @@ commitment.
 **Step 2:** Is VIX ≥ 20?
 
 ```
-                    VIX ≥ 20                        VIX < 20
-SPY below 50MA  → Bull put 0.25Δ/0.15Δ, no stop → Long straddle 0.50
-SPY above 50MA  → Bull put 0.45Δ/0.35Δ, no stop → SKIP
+                    VIX ≥ 20                              VIX < 20
+SPY below 50MA  → Put spread 0.25/0.15 (no stop)      → Long straddle 0.50
+                  + Double cal 0.25P/0.10C (hold)
+SPY above 50MA  → Put spread 0.45/0.35 (no stop)      → Double cal 0.25P/0.25C (50%PT)
 ```
-
-**Simplified rule:** If VIX ≥ 20, sell a bull put spread (delta varies by MA). If VIX < 20
-and SPY is below its 50MA, buy a straddle. Otherwise, skip the week.
 
 **No stop loss on either put spread regime.** SPY mean-reverts even in elevated-VIX
 environments — the stop fires on temporary breaches and cuts trades that would have
@@ -137,12 +138,12 @@ individual sector shocks and tends to mean-revert, so touched positions recover 
 
 ## Comparison: Original vs Optimized
 
-| Regime | Original (0.35Δ/0.10Δ, 2× stop) | Optimized | Improvement |
-|--------|----------------------------------|-----------|-------------|
-| Bearish_HighIV | +4.02% ROC, 74.3% win | +7.49%, 94.7% win | **+3.47%** |
-| Bearish_LowIV | Long straddle (unchanged) | unchanged | — |
-| Bullish_HighIV | +4.57% ROC, 77.8% win | +8.26%, 81.9% win | **+3.69%** |
-| Bullish_LowIV | Skipped (unchanged) | unchanged | — |
+| Regime | v1 | v2 (optimized) | v3 (+ double cal) |
+|--------|----|----------------|-------------------|
+| Bearish_HighIV | +4.02% (put spread w/stop) | +7.49% (no stop, OTM) | **+7.49% + +23.7% (dual)** |
+| Bearish_LowIV | — | +22.6% (long straddle) | unchanged |
+| Bullish_HighIV | +4.57% (spread w/stop) | +8.26% (no stop, aggressive) | unchanged |
+| Bullish_LowIV | Skip | Skip | **+10.4% (double cal)** |
 
 ---
 
@@ -159,18 +160,23 @@ individual sector shocks and tends to mean-revert, so touched positions recover 
 | 2024 | 3 | 4 | 3 | 41 |
 | 2025 | 7 | 4 | 8 | 31 |
 
-**Current regime (2026-03-19): Bearish_HighIV** — SPY below 50MA, VIX elevated.
-→ **Trade: Bull put spread 0.25Δ/0.15Δ, ~20 DTE, 50% profit take, no stop.**
+**Current regime (2026-03-21): Bearish_HighIV** — SPY below 50MA, VIX elevated.
+→ **Trades: (1) Bull put spread 0.25Δ/0.15Δ, ~20 DTE, no stop, 1.5% sizing.**
+→ **         (2) Double calendar 0.25P/0.10C, ~12 DTE short / ~19 DTE long, hold, 1.5% sizing.**
 
 ---
 
 ## Sizing & Portfolio Context
 
-- **Bull put spread:** 2–3% of portfolio. **Reduce to 1.5% when QQQ also fires** — both
-  sell put spreads in the same regimes (VIX≥20), creating correlated put delta exposure.
-- **Long straddle:** 1–2% of portfolio. Maximum loss is the debit paid (fully defined).
-  Debit strategies diversify away from the credit-selling bias of the rest of the portfolio.
-- **Skip weeks:** ~28 Fridays/year. Capital is idle and available for other screener entries.
+- **Bearish_HighIV:** Run put spread (1.5%) + double calendar (1.5%) simultaneously.
+  Total 3% = same as prior single put spread, but split across two uncorrelated structures.
+  Further reduce put spread to 1% if QQQ also fires that week (correlated put delta).
+- **Bullish_HighIV:** Bull put spread 2–3%. Reduce to 1.5% if QQQ fires same week.
+- **Bearish_LowIV:** Long straddle 1–2%. Debit strategy; max loss = premium paid.
+- **Bullish_LowIV:** Double calendar 2–3%. Max loss = net debit (~$2.15/shr). ~7 contracts
+  at $1,500 deployment per entry.
+- **Double calendar sizing note:** At avg debit $2.15/shr, $1,500 → ~7 contracts.
+  Max loss $1,505/trade. Two concurrent entries possible (12-day hold, weekly entries).
 
 ---
 

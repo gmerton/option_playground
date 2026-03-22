@@ -597,7 +597,7 @@ def get_open_positions() -> list[dict]:
                 sp.id, sp.strategy_name, sp.ticker, sp.position_type,
                 sp.contracts, sp.entry_date, sp.expiry,
                 sp.short_strike, sp.long_strike,
-                sp.entry_value, sp.profit_target_pct, sp.ann_target, sp.notes,
+                sp.entry_value, sp.profit_target_pct, sp.notes,
                 pt.trade_id, pt.leg_role,
                 t.buy_sell, t.quantity, t.price, t.strike AS trade_strike,
                 t.expiry AS trade_expiry, t.put_call
@@ -630,7 +630,7 @@ def get_open_positions() -> list[dict]:
                 "long_strike":       float(row["long_strike"]) if row["long_strike"] else None,
                 "entry_value":       float(row["entry_value"]),
                 "profit_target_pct": float(row["profit_target_pct"]),
-                "ann_target":        float(row["ann_target"]) if row["ann_target"] is not None else None,
+                "ann_target":        None,   # column removed; kept for monitor compatibility
                 "notes":             row["notes"] or "",
                 "legs":              [],
             }
