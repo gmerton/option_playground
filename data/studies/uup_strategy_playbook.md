@@ -1,7 +1,7 @@
 # UUP Strategy Playbook — ATM Short Straddle
 
-**Last updated:** 2026-03-18
-**Status:** Backtested 2018–2023 (full data). 2024–2025 data sparse — treat as provisional. Strategy fires on regime-independent basis.
+**Last updated:** 2026-03-19
+**Status:** Backtested 2018–2023 (full data). 2024–2025 data sparse — treat as provisional. Strategy fires on regime-independent basis. ROC corrected to Reg T capital-at-risk basis.
 
 ---
 
@@ -103,9 +103,19 @@ the bid-ask cost is prohibitive.
 |--------|-------|
 | Total trades | 104 |
 | Win rate | **73.1%** |
-| Avg ROC/trade | **+17.4%** |
+| Avg ROC/trade (Reg T) | **~+2.3%** |
+| ~~Avg ROC/trade (credit basis)~~ | ~~+17.4%~~ (do not use — understates capital at risk) |
 | Cumulative P&L | **+$14.26** (per-share, 104 trades) |
 | Active weeks / total | 104 / 428 (~24% of Fridays) |
+
+**ROC methodology:** The prior +17.4% figure used combined straddle credit (~$0.44/share) as
+the denominator. Correct Reg T margin for a short ATM straddle = `0.20 × underlying + credit`
+≈ `0.20 × $28 + $0.44 = $6.04/share`. True ROC per trade = avg pnl ($0.137) / margin ($6.04)
+≈ **+2.3%**. The absolute P&L is real and correct; only the ROC denominator was wrong.
+
+**No alternative strategy exists for UUP.** OTM strikes (0.20–0.30Δ) have 65–95% bid-ask
+spread/mid, making spreads impractical. The straddle remains the only viable structure
+despite its low per-trade Reg T ROC.
 
 ### Why so few entries (104/428)?
 
@@ -189,7 +199,7 @@ Most trades expire inside the strikes, hitting the 50% profit take before 20 DTE
 
 | | UUP (short straddle) | XLF (regime-switch) | GLD (put spread + calendar) |
 |--|--|--|--|
-| Avg ROC/trade | +17.4% | +16.7% | +7–13% |
+| Avg ROC/trade (Reg T) | +2.3% | +6.1% | +7–13% |
 | Win rate | 73.1% | 75.0% | 75–85% |
 | Trades/year | ~13 | ~42 | ~20–30 |
 | Defined risk | No (straddle unbounded) | Mixed | Yes |

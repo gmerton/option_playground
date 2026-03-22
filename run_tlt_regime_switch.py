@@ -77,7 +77,7 @@ TICKER_REGIME_STRATEGIES: dict[str, dict] = {
         "Bullish_LowIV":  ("bull_put_spread",   0.45, 0.35, None, None),
     },
     "XLF": {
-        "Bearish_HighIV": ("bull_put_spread",      0.35, 0.25, None, None),
+        "Bearish_HighIV": ("bull_put_spread",      0.40, 0.30, None, None),  # upgraded from 0.35/0.25
         "Bearish_LowIV":  ("short_strangle_skew",  0.20, 0.25, None, None),
         "Bullish_HighIV": ("short_strangle_skew",  0.35, 0.40, None, None),
         "Bullish_LowIV":  ("bear_call_spread",     0.35, 0.25, None, None),
@@ -668,9 +668,15 @@ def main() -> None:
     print("  REGIME DISTRIBUTION  ·  weeks per year")
     print("═" * 96)
     pivot = (sw.groupby(["year", "regime"]).size().unstack(fill_value=0))
+    col_map = {
+        "Bearish_HighIV": "BearHI",
+        "Bearish_LowIV":  "BearLO",
+        "Bullish_HighIV": "BullHI",
+        "Bullish_LowIV":  "BullLO",
+    }
     cols  = ["Bearish_HighIV", "Bearish_LowIV", "Bullish_HighIV", "Bullish_LowIV"]
     pivot = pivot.reindex(columns=[c for c in cols if c in pivot.columns], fill_value=0)
-    pivot.columns = ["BearHI", "BearLO", "BullHI", "BullLO"]
+    pivot.columns = [col_map[c] for c in pivot.columns]
     pivot["Total"] = pivot.sum(axis=1)
     print(f"\n{pivot.to_string()}")
     print(f"\n  Column totals: {pivot.sum().to_dict()}")

@@ -102,10 +102,11 @@ reverse split. Always verify current ATM strike and spread width on the live opt
 before sizing. At the time of study (2018–2026), strikes ranged from $5–$80+ depending
 on the post-split price level.
 
-**Example sizing ($100k portfolio, 5% max risk per position = $5,000):**
-- With a $1-wide spread ($69 max loss/contract): ~72 contracts per entry
-- With a $2-wide spread ($138 max loss/contract): ~36 contracts per entry
+**Sizing ($100k portfolio — $3,000 allocation, $1,500 per trade at max_concurrent=2):**
+- With a $1-wide spread ($69 max loss/contract): **~22 contracts** per entry
+- With a $2-wide spread ($138 max loss/contract): **~11 contracts** per entry
 - Max concurrent positions: ~2 (overlapping 20-DTE trades entered weekly)
+- Always verify current spread width on the live chain (price shifts after reverse splits)
 
 ---
 

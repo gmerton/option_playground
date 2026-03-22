@@ -141,11 +141,11 @@ it barely fires — and that's fine. Selectivity is the edge.
 | Max loss per contract | Spread width − credit (~$52–$152/contract) |
 | 50% profit target | Exit when spread worth ~$0.24 |
 
-**Sizing ($100k portfolio, 5% max risk = $5,000):**
-- At spread width $1 (tight chain): ~96 contracts
-- At spread width $2 (wider chain): ~48 contracts
-- Check the actual spread width at entry; XLE chains can be wide in high-VIX environments
-- Max concurrent positions: typically 1–2 (rare to have overlapping 20-DTE entries)
+**Sizing ($100k portfolio — $3,000 allocation, $3,000 per trade at max_concurrent=1):**
+- At spread width $1 (tight chain): **~58 contracts** ($3,000 / $52)
+- At spread width $2 (wider chain): **~20 contracts** ($3,000 / $152)
+- Check actual spread width at entry; XLE chains can be wide in high-VIX environments
+- Max concurrent positions: typically 1 (overlapping 20-DTE entries are rare)
 
 **Note on timing:** Because the strategy only fires ~9 weeks/year, capital is idle most of
 the time. This is intentional — the edge is in the selectivity, not in continuous deployment.

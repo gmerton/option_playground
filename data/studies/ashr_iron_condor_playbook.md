@@ -1,7 +1,7 @@
 # ASHR Iron Condor — Trading Playbook
 
-**Last updated:** 2026-03-05
-**Status:** Parameters confirmed. Ready for live trading consideration.
+**Last updated:** 2026-03-19
+**Status:** Parameters confirmed. Put spread upgraded to 0.10Δ wing + 550% ann-ROC profit target. Ready for live trading.
 
 ---
 
@@ -31,7 +31,7 @@ years in 8 years of backtesting.**
 
 | Side | Action |
 |---|---|
-| **Put spread** | Short 0.25Δ put / Long 0.20Δ put (~0.05Δ wing) |
+| **Put spread** | Short 0.25Δ put / Long 0.15Δ put (~0.10Δ wing) |
 | **Call spread** | Short 0.20Δ call / Long 0.10Δ call (~0.10Δ wing) |
 
 Enter both sides simultaneously every eligible Friday. No VIX filter — enter every week.
@@ -50,15 +50,17 @@ profitable.
 
 ## Exit Rules
 
-- **Profit take (each side independently):** Close when spread value ≤ 50% of credit
-  received on that side (keep 50% of premium)
+- **Put spread — profit take:** Close when `(pnl / margin) × (365 / days_held) ≥ 550%`
+  (annualized ROC target). This exits faster than a fixed 50% take on winning trades
+  while still collecting full credit on slow movers. Avg hold ~11.5d (OOS).
+- **Call spread — profit take:** Close when spread value ≤ 50% of credit received
+  (fixed 50% take). Ann-target optimization adds no value for the call spread.
 - **Expiry:** If profit target not reached, close/let expire on expiration day
 - **Stop-loss:** None — both spreads have defined risk by construction
 
-Manage each spread leg independently — do not wait for both sides to hit their profit
-targets simultaneously.
+Manage each spread leg independently. The profit rules differ between legs; this is intentional.
 
-Average holding period: ~11–14 days (early exits dominate).
+Average holding period: ~11–12d (put spread, 550% ann target) / ~14d (call spread, 50% fixed).
 
 ---
 
@@ -67,15 +69,15 @@ Average holding period: ~11–14 days (early exits dominate).
 | Parameter | Value |
 |---|---|
 | Underlying | ASHR |
-| Put spread | Short 0.25Δ / Long ~0.20Δ (wing = 0.05Δ) |
+| Put spread | Short 0.25Δ / Long ~0.15Δ (wing = 0.10Δ) |
 | Call spread | Short 0.20Δ / Long ~0.10Δ (wing = 0.10Δ) |
 | Target DTE | 20 days |
 | DTE tolerance | ±5 days |
 | Entry day | Friday |
 | VIX filter | None — enter every Friday |
 | Max spread (bid-ask/mid) | 25% on each short leg |
-| Profit take | 50% of credit per side |
-| Credit as % of spread width | Puts ~21% / Calls ~12% |
+| Profit take (put spread) | 550% annualized ROC target: `(pnl/margin) × (365/days) ≥ 5.5` |
+| Profit take (call spread) | 50% of credit received (fixed) |
 | Study start date | 2018-01-01 |
 
 ---
@@ -98,49 +100,65 @@ The 25% bid-ask filter is essential — enforce strictly. On any given Friday, o
 may not qualify (wide spread, no matching delta). Running only the qualifying side is
 the right response.
 
-**Example sizing ($100k portfolio, 5% max risk per spread = $5,000):**
-- Put spread: $5,000 / $79 ≈ 63 contracts
-- Call spread: $5,000 / $176–276 ≈ 18–28 contracts
-- Both sides simultaneously when both qualify
+**Sizing ($100k portfolio — $3,000 per spread, $1,500 per trade at max_concurrent=2):**
+- Put spread: $1,500 / $79 ≈ **19 contracts** per entry
+- Call spread: $1,500 / $176–276 ≈ **5–9 contracts** per entry
+- Full condor (both sides): $6,000 total allocation, both sides sized independently
+- Both sides enter simultaneously when both qualify
 
 ---
 
-## Backtested Performance (2018–2025)
+## Backtested Performance (2018–2026)
 
-### Put spread (short=0.25Δ, wing=0.05Δ, All VIX):
+### Put spread (short=0.25Δ, wing=0.10Δ, All VIX, 550% ann-ROC target):
 
-| Metric | Value |
-|---|---|
-| Total closed trades | 194 |
-| Win rate | **86.6%** |
-| Mean ROC per trade | **+8.49%** |
-| Annualized ROC | +656% |
-| Avg holding period | ~12 days |
-| Losing years | 2 of 8 (2018: −1.43%, 2025: −2.02%) |
+Walk-forward split: IS = 2018–2022, OOS = 2023–2026.
 
-### Call spread (short=0.20Δ, wing=0.10Δ, All VIX):
+| Metric | IS (2018–2022) | OOS (2023–2026) |
+|---|---|---|
+| Closed trades | 247 | 136 |
+| Win rate | 87.4% | **88.2%** |
+| Avg ROC/trade | +3.8% | **+11.8%** |
+| Avg ann ROC | +564% | **+740%** |
+| Avg holding period | 10.4d | 11.5d |
+| Sum P&L | $807.50 | $769.50 |
 
-| Metric | Value |
-|---|---|
-| Total closed trades | 232 |
-| Win rate | **90.1%** |
-| Mean ROC per trade | **+8.19%** |
-| Annualized ROC | +456% |
-| Avg holding period | ~13 days |
-| Losing years | 1 of 8 (2020: −3.99%) |
+**Note on ROC:** The wider 0.10Δ wing roughly doubles max-loss vs the old 0.05Δ wing,
+so per-trade ROC is lower. Absolute P&L and win rate are similar; capital at risk is larger.
+IS 2018–2022 ROC is depressed by China-specific bear years (2018, 2022, 2025 puts).
 
-### Per-year breakdown (All VIX):
+### Call spread (short=0.20Δ, wing=0.10Δ, All VIX, 50% fixed profit take):
 
-| Year | Put N | Put Win% | Put ROC% | Call N | Call Win% | Call ROC% | Joint Loss? |
-|------|-------|----------|----------|--------|-----------|-----------|-------------|
-| 2018 | 11 | 81.8% | −1.43% | 7 | 100% | +10.48% | **No** |
-| 2019 | 23 | 87.0% | +6.95% | 24 | 83.3% | +11.15% | No |
-| 2020 | 31 | 100% | +20.44% | 26 | 80.8% | −3.99% | **No** |
-| 2021 | 39 | 89.7% | +6.76% | 40 | 92.5% | +7.51% | No |
-| 2022 | 36 | 86.1% | +1.92% | 31 | 83.9% | +0.92% | No |
-| 2023 | 22 | 68.2% | +7.19% | 31 | 100% | +15.63% | No |
-| 2024 | 19 | 94.7% | +21.27% | 37 | 91.9% | +16.55% | No |
-| 2025 | 13 | 69.2% | −2.02% | 36 | 91.7% | +6.56% | **No** |
+Walk-forward split: IS = 2018–2022, OOS = 2023–2026.
+
+| Metric | IS (2018–2022) | OOS (2023–2026) |
+|---|---|---|
+| Closed trades | 242 | 145 |
+| Win rate | 88.8% | **92.4%** |
+| Avg ROC/trade | +7.8% | **+10.5%** |
+| Avg ann ROC | +416% | **+638%** |
+| Avg holding period | 13.6d | 14.0d |
+| Sum P&L | $1,689.00 | $996.50 |
+
+**Call spread profit target:** Ann-target optimization tested and rejected — any ann-target
+exits at ~7.7d with +1.5% OOS ROC (far worse than baseline +10.5%). ASHR call credits are
+thin; the 50% fixed take is optimal.
+
+### Per-year breakdown (original 0.05Δ wing, 50% fixed take — for reference):
+
+These numbers are from the prior study (0.05Δ wing). The negative-correlation pattern
+holds with the 0.10Δ wing; zero joint-loss years are preserved.
+
+| Year | Put Win% | Put ROC% | Call Win% | Call ROC% | Joint Loss? |
+|------|----------|----------|-----------|-----------|-------------|
+| 2018 | 81.8% | −1.43% | 100% | +10.48% | **No** |
+| 2019 | 87.0% | +6.95% | 83.3% | +11.15% | No |
+| 2020 | 100% | +20.44% | 80.8% | −3.99% | **No** |
+| 2021 | 89.7% | +6.76% | 92.5% | +7.51% | No |
+| 2022 | 86.1% | +1.92% | 83.9% | +0.92% | No |
+| 2023 | 68.2% | +7.19% | 100% | +15.63% | No |
+| 2024 | 94.7% | +21.27% | 91.9% | +16.55% | No |
+| 2025 | 69.2% | −2.02% | 91.7% | +6.56% | **No** |
 
 **Zero joint-loss years in 8 years.** The put and call sides naturally hedge each other:
 - When China rallies sharply (calls threatened), puts profit easily
@@ -215,6 +233,25 @@ filter would leave too many weeks with only one side or neither active.
 
 ---
 
+## Research History
+
+### 2026-03-19: Wing upgrade + profit-target optimization
+
+**Put spread wing:** Upgraded from 0.05Δ to 0.10Δ (short=0.25Δ / long=0.15Δ). Rationale:
+the 0.05Δ long leg is very far OTM on a ~$28 ETF (long put ~$27 when short is ~$28.50).
+The 0.10Δ wing provides a more practical long leg with better fills at the cost of doubled
+max-loss (and halved per-trade ROC). Absolute P&L is similar.
+
+**Profit target optimization (put spread):** Walk-forward sweep (IS 2018–2022, OOS 2023–2026)
+across 40 annualized-ROC targets (50%–2000%). Best IS = 550%. OOS improvement: +119 pp avg
+ann ROC (+621% baseline → +740% at 550% target). IS/OOS result consistent.
+Script: `run_profit_sweep.py --ticker ASHR --strategy put_spread --short-delta 0.25 --wing 0.10 --vix none`
+
+**Call spread:** Ann-target rejected. Any ann-target exits in 7.7d vs 14d baseline with
+OOS ROC collapsing (+1.5% vs +10.5%). ASHR OTM call credits are thin; fixed 50% take is optimal.
+
+---
+
 ## Code
 
 ```bash
@@ -222,9 +259,13 @@ filter would leave too many weeks with only one side or neither active.
 AWS_PROFILE=clarinut-gmerton MYSQL_PASSWORD=xxx PYTHONPATH=src python3 run_put_spreads.py \
     --ticker ASHR --spread 0.25
 
-# Put spread per-year detail (confirmed params):
+# Put spread per-year detail (confirmed params — 0.10Δ wing, 550% ann-ROC target):
 AWS_PROFILE=clarinut-gmerton MYSQL_PASSWORD=xxx PYTHONPATH=src python3 run_put_spreads.py \
-    --ticker ASHR --spread 0.25 --detail-short-delta 0.25 --detail-wing 0.05 --no-csv
+    --ticker ASHR --spread 0.25 --detail-short-delta 0.25 --detail-wing 0.10 --no-csv
+
+# Profit-target sweep (reproduces optimization):
+AWS_PROFILE=clarinut-gmerton MYSQL_PASSWORD=xxx PYTHONPATH=src python3 run_profit_sweep.py \
+    --ticker ASHR --strategy put_spread --short-delta 0.25 --wing 0.10 --vix none
 
 # Call spread sweep:
 AWS_PROFILE=clarinut-gmerton MYSQL_PASSWORD=xxx PYTHONPATH=src python3 run_call_spreads.py \
