@@ -311,6 +311,24 @@ STRATEGIES: list[dict] = [
         },
     },
     {
+        "type":          "double_calendar",
+        "name":          "SPY Double Calendar",
+        "alloc_key":     "SPY double cal",
+        "ticker":        "SPY",
+        "dte_target":    12,
+        "dc_gap_min":    5,
+        "dc_gap_max":    9,
+        "profit_take":   0.50,
+        "fwd_vol_warn":  None,
+        "note":          "BearishHI: 0.25P/0.10C hold to expiry; BullishLO: 0.25P/0.25C 50%PT; run alongside put spread at 1.5% each",
+        "regime_strategies": {
+            "Bearish_HighIV": {"put_d": 0.25, "call_d": 0.10, "exit": "hold"},
+            "Bearish_LowIV":  {"exit": "skip"},
+            "Bullish_HighIV": {"exit": "skip"},
+            "Bullish_LowIV":  {"put_d": 0.25, "call_d": 0.25, "exit": "50pct_take"},
+        },
+    },
+    {
         "type":          "straddle",
         "name":          "UUP ATM Short Straddle",
         "alloc_key":     "UUP straddle",
@@ -1222,6 +1240,178 @@ def screen_calendar(
             "long_expiry": long_expiry}
 
 
+# ── Double calendar screener ──────────────────────────────────────────────────
+
+def screen_double_calendar(
+    strat:        dict,
+    short_chain:  list[dict],
+    long_chain:   list[dict],
+    short_expiry: Optional[str],
+    long_expiry:  Optional[str],
+    vix:          float,
+    today:        date,
+    spot:         Optional[float],
+    ma50:         Optional[float],
+) -> dict:
+    """
+    Screen a regime-gated double calendar spread.
+
+    Structure:
+      Short legs: ~12 DTE expiry  (sell put at put_d delta + sell call at call_d delta)
+      Long  legs: same strikes, +7d expiry (buy them)
+      Net debit = (long_put_mid - short_put_mid) + (long_call_mid - short_call_mid)
+      Max loss = net debit paid.
+    """
+    ticker      = strat["ticker"]
+    profit_take = strat["profit_take"]
+    lines: list[str] = []
+
+    # 1. Regime classification
+    if spot is None or ma50 is None:
+        lines.append("  Cannot classify regime: spot or MA50 unavailable")
+        return {"enter": False, "lines": lines, "summary": "SKIP  (regime data unavailable)"}
+
+    trend    = "Bullish" if spot > ma50 else "Bearish"
+    iv_class = "HighIV"  if vix >= 20   else "LowIV"
+    regime   = f"{trend}_{iv_class}"
+
+    lines.append(f"  {ticker} ${spot:.2f} vs 50MA ${ma50:.2f} → {trend}")
+    lines.append(f"  VIX {vix:.2f} → {iv_class}")
+    lines.append(f"  Regime: {regime}")
+
+    rs_map = strat["regime_strategies"]
+    rs     = rs_map.get(regime, {"exit": "skip"})
+
+    if rs["exit"] == "skip":
+        lines.append(f"  {regime}: no double calendar edge in this regime — skip")
+        return {"enter": False, "lines": lines, "summary": f"SKIP  ({regime})"}
+
+    # 2. Expiry pair
+    if not short_expiry or not long_expiry:
+        lines.append(
+            f"  Could not find expiry pair (need ~{strat['dte_target']} DTE short + "
+            f"{strat['dc_gap_min']}–{strat['dc_gap_max']}d gap)"
+        )
+        return {"enter": False, "lines": lines, "summary": "SKIP  (no expiry pair)"}
+
+    short_dte = _dte(short_expiry, today)
+    long_dte  = _dte(long_expiry, today)
+    gap       = long_dte - short_dte
+    lines.append(f"  Short expiry: {short_expiry} ({short_dte} DTE)")
+    lines.append(f"  Long  expiry: {long_expiry} ({long_dte} DTE, gap={gap}d)")
+
+    if not short_chain or not long_chain:
+        lines.append("  Option chain data unavailable")
+        return {"enter": False, "lines": lines, "summary": "SKIP  (no chain data)"}
+
+    put_d  = rs["put_d"]
+    call_d = rs["call_d"]
+
+    # 3. Short put leg
+    short_put = find_by_delta(short_chain, put_d, "put")
+    if short_put is None:
+        lines.append(f"  Short {put_d:.2f}Δ put: no match within ±{MAX_DELTA_ERR}Δ")
+        return {"enter": False, "lines": lines, "summary": "SKIP  (no short put)"}
+
+    pba = ba_pct(short_put)
+    if pba is None or pba > MAX_SPREAD_PCT:
+        pba_str = f"{pba * 100:.1f}%" if pba is not None else "n/a"
+        lines.append(f"  Short put BA too wide: {pba_str} > {MAX_SPREAD_PCT * 100:.0f}%")
+        return {"enter": False, "lines": lines, "summary": f"SKIP  (short put BA {pba_str})"}
+
+    # 4. Short call leg
+    short_call = find_by_delta(short_chain, call_d, "call")
+    if short_call is None:
+        lines.append(f"  Short {call_d:.2f}Δ call: no match within ±{MAX_DELTA_ERR}Δ")
+        return {"enter": False, "lines": lines, "summary": "SKIP  (no short call)"}
+
+    cba = ba_pct(short_call)
+    if cba is None or cba > MAX_SPREAD_PCT:
+        cba_str = f"{cba * 100:.1f}%" if cba is not None else "n/a"
+        lines.append(f"  Short call BA too wide: {cba_str} > {MAX_SPREAD_PCT * 100:.0f}%")
+        return {"enter": False, "lines": lines, "summary": f"SKIP  (short call BA {cba_str})"}
+
+    put_strike  = short_put["strike"]
+    call_strike = short_call["strike"]
+
+    # 5. Long put at same strike
+    long_put = next(
+        (c for c in long_chain
+         if c.get("option_type") == "put" and c["strike"] == put_strike and (c.get("bid") or 0) > 0),
+        None,
+    )
+    if long_put is None:
+        lines.append(f"  No ${put_strike:.2f}P with positive bid on {long_expiry}")
+        return {"enter": False, "lines": lines, "summary": "SKIP  (no long put)"}
+
+    # 6. Long call at same strike
+    long_call = next(
+        (c for c in long_chain
+         if c.get("option_type") == "call" and c["strike"] == call_strike and (c.get("bid") or 0) > 0),
+        None,
+    )
+    if long_call is None:
+        lines.append(f"  No ${call_strike:.2f}C with positive bid on {long_expiry}")
+        return {"enter": False, "lines": lines, "summary": "SKIP  (no long call)"}
+
+    # 7. Economics
+    sp_mid  = mid_price(short_put)
+    sc_mid  = mid_price(short_call)
+    lp_mid  = mid_price(long_put)
+    lc_mid  = mid_price(long_call)
+    net_debit = (lp_mid - sp_mid) + (lc_mid - sc_mid)
+
+    if net_debit <= 0:
+        lines.append(f"  Net debit ≤ 0 (${net_debit:.3f}) — data issue")
+        return {"enter": False, "lines": lines, "summary": "SKIP  (negative debit)"}
+
+    sp_delta = (short_put.get("greeks")  or {}).get("delta")
+    sc_delta = (short_call.get("greeks") or {}).get("delta")
+    sp_d_str = f"{abs(float(sp_delta)):.2f}Δ" if sp_delta is not None else "?Δ"
+    sc_d_str = f"{abs(float(sc_delta)):.2f}Δ" if sc_delta is not None else "?Δ"
+
+    pba_str  = f"{pba * 100:.1f}%" if pba is not None else "n/a"
+    cba_str  = f"{cba * 100:.1f}%" if cba is not None else "n/a"
+
+    lines.append(f"")
+    lines.append(
+        f"  Short put  ${put_strike:.2f}P  {short_expiry}"
+        f"  mid ${sp_mid:.2f}  Δ {sp_d_str}  BA {pba_str}"
+    )
+    lines.append(
+        f"  Long  put  ${put_strike:.2f}P  {long_expiry}"
+        f"  mid ${lp_mid:.2f}  Δ {(long_put.get('greeks') or {}).get('delta', 0):+.3f}"
+    )
+    lines.append(
+        f"  Short call ${call_strike:.2f}C  {short_expiry}"
+        f"  mid ${sc_mid:.2f}  Δ {sc_d_str}  BA {cba_str}"
+    )
+    lines.append(
+        f"  Long  call ${call_strike:.2f}C  {long_expiry}"
+        f"  mid ${lc_mid:.2f}  Δ {(long_call.get('greeks') or {}).get('delta', 0):+.3f}"
+    )
+    lines.append(f"")
+    lines.append(f"  Net debit:   ${net_debit:.3f}/shr  (${net_debit * 100:.2f}/contract)")
+    lines.append(f"  Max loss:    ${net_debit:.3f}/shr  = net debit paid")
+
+    if rs["exit"] == "hold":
+        lines.append(f"  Exit:        hold to expiry (BearishHI — let large moves run)")
+    else:
+        take_at = net_debit * (1.0 + profit_take)
+        lines.append(
+            f"  Exit:        50% profit take — close when value ≥ ${take_at:.3f}/shr"
+            f"  (+{int(profit_take * 100)}% ROC)"
+        )
+
+    exit_label = "hold" if rs["exit"] == "hold" else "50%PT"
+    summary = (
+        f"{regime}  short ${put_strike:.2f}P({sp_d_str})/${call_strike:.2f}C({sc_d_str})"
+        f"  debit ${net_debit:.3f}  [{exit_label}]"
+    )
+    return {"enter": True, "lines": lines, "summary": summary,
+            "max_loss_per_contract": net_debit * 100}
+
+
 # ── Allocation sizing ─────────────────────────────────────────────────────────
 
 def _print_sizing(
@@ -1398,9 +1588,10 @@ async def run(today: date, capital: Optional[float] = None, risk_pct: float = 0.
         print(f"\n  NOTE: {day_name} is not a Friday. "
               f"Entry signals are calibrated for Friday expiry selection.\n")
 
-    spread_strats   = [s for s in STRATEGIES if s.get("type", "spread") == "spread"]
-    calendar_strats = [s for s in STRATEGIES if s.get("type") == "calendar"]
-    regime_strats   = [s for s in STRATEGIES if s.get("type") == "regime_spread"]
+    spread_strats        = [s for s in STRATEGIES if s.get("type", "spread") == "spread"]
+    calendar_strats      = [s for s in STRATEGIES if s.get("type") == "calendar"]
+    regime_strats        = [s for s in STRATEGIES if s.get("type") == "regime_spread"]
+    double_cal_strats    = [s for s in STRATEGIES if s.get("type") == "double_calendar"]
 
     async with TradierClient(api_key=api_key) as client:
 
@@ -1454,13 +1645,28 @@ async def run(today: date, capital: Optional[float] = None, risk_pct: float = 0.
                     if short_exp else None
                 )
 
+        # Long expiry for double calendar strategies (keyed by strategy name, not ticker,
+        # because multiple DC strats on same ticker could have different gap targets)
+        dc_long_expiry_for: dict[str, Optional[str]] = {}
+        for strat in double_cal_strats:
+            name = strat["name"]
+            t    = strat["ticker"]
+            short_exp = short_expiry_for.get(name)
+            dc_long_expiry_for[name] = (
+                find_long_expiry(
+                    expirations_for[t], short_exp,
+                    strat["dc_gap_min"], strat["dc_gap_max"]
+                )
+                if short_exp else None
+            )
+
         if vix is None:
             print("ERROR: Could not fetch VIX. Markets may be closed.", file=sys.stderr)
             sys.exit(1)
 
         # MA50 for regime-switching strategies (loaded from cached parquet)
         ma50_for: dict[str, Optional[float]] = {}
-        for strat in regime_strats:
+        for strat in regime_strats + double_cal_strats:
             t = strat["ticker"]
             if t not in ma50_for:
                 ma50_for[t] = get_ma50(t)
@@ -1477,6 +1683,12 @@ async def run(today: date, capital: Optional[float] = None, risk_pct: float = 0.
         for strat in calendar_strats:
             t = strat["ticker"]
             e = long_expiry_for.get(t)
+            if (t, e) not in seen:
+                chain_pairs.append((t, e))
+                seen.add((t, e))
+        for strat in double_cal_strats:
+            t = strat["ticker"]
+            e = dc_long_expiry_for.get(strat["name"])
             if (t, e) not in seen:
                 chain_pairs.append((t, e))
                 seen.add((t, e))
@@ -1516,6 +1728,11 @@ async def run(today: date, capital: Optional[float] = None, risk_pct: float = 0.
                 header_detail = (
                     f"0.50Δ  {strat_dte}DTE short / {strat['min_gap']}–{strat['max_gap']}d gap"
                     f"  iv_ratio≥{strat['min_iv_ratio']:.2f}  {int(profit_take * 100)}% take"
+                )
+            elif strat_type == "double_calendar":
+                header_detail = (
+                    f"double cal 50MA×VIX  {strat_dte}DTE short / "
+                    f"{strat['dc_gap_min']}–{strat['dc_gap_max']}d gap"
                 )
             elif strat_type == "regime_spread":
                 header_detail = (
@@ -1559,6 +1776,22 @@ async def run(today: date, capital: Optional[float] = None, risk_pct: float = 0.
                     long_exp,
                     today,
                 )
+            elif strat_type == "double_calendar":
+                long_exp = dc_long_expiry_for.get(name)
+                result = screen_double_calendar(
+                    strat,
+                    chain_cache.get((ticker, short_exp), []),
+                    chain_cache.get((ticker, long_exp),  []),
+                    short_exp,
+                    long_exp,
+                    vix,
+                    today,
+                    spot_for.get(ticker),
+                    ma50_for.get(ticker),
+                )
+                if result.get("enter"):
+                    result["display_expiry"]      = short_exp
+                    result["display_expiry_long"] = long_exp
             elif strat_type == "regime_spread":
                 result = screen_regime_spread(
                     strat,
