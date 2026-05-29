@@ -61,7 +61,7 @@ from lib.studies.straddle_study import (
     COST_SPLIT_DATES, WMT_SPLIT_DATES, JNJ_SPLIT_DATES,
     XLK_SPLIT_DATES,
     V_SPLIT_DATES, MA_SPLIT_DATES, HD_SPLIT_DATES,
-    IBIT_SPLIT_DATES,
+    IBIT_SPLIT_DATES, CORN_SPLIT_DATES, WEAT_SPLIT_DATES,
 )
 
 
@@ -813,6 +813,31 @@ TICKER_CONFIG: dict[str, dict] = {
         "opt_call_vix_min": (0.0,  30.0),
     },
 
+    "CORN": {
+        # Teucrium Corn Fund — holds a basket of CBOT corn futures (second, third,
+        # and December contracts) to reduce front-month roll distortion. Directly
+        # tracks corn prices; IV tends to spike around USDA crop reports (planted
+        # acreage, crop progress, WASDE), weather events (drought/flooding), and
+        # export demand shocks. Trades ~$20–30; no reverse splits. Liquid enough
+        # for 20 DTE monthly options. Options data from 2010-11-09.
+        "start": date(2018, 1, 1),
+        "split_dates": CORN_SPLIT_DATES,
+
+        # Moderate IV (~25–45%) — commodity ETF; wider delta sweep than equity ETFs.
+        "put_deltas":   [0.15, 0.20, 0.25, 0.30, 0.35, 0.40],
+        "short_deltas": [0.15, 0.20, 0.25, 0.30, 0.35, 0.40],
+        "wing_widths":  [0.05, 0.10, 0.15],
+        "vix_thresholds": [None, 30, 25, 20],
+
+        "opt_short_delta":  (0.15, 0.45),
+        "opt_put_delta":    (0.10, 0.40),
+        "opt_wing_width":   (0.05, 0.20),
+        "opt_profit_take":  (0.30, 0.70),
+        "opt_max_spread":   (0.10, 0.40),
+        "opt_put_vix_max":  (15.0, 40.0),
+        "opt_call_vix_min": (0.0,  30.0),
+    },
+
     # ── Thursday short-DTE screener universe ──────────────────────────────────
 
     "AAPL": {
@@ -1123,6 +1148,33 @@ TICKER_CONFIG: dict[str, dict] = {
         "opt_max_spread":   (0.10, 0.35),
         "opt_put_vix_max":  (15.0, 45.0),
         "opt_call_vix_min": (0.0,  35.0),
+    },
+
+
+    "WEAT": {
+        # Teucrium Wheat Fund. Tracks wheat futures via a blend of 3 contracts.
+        # Structural contango roll cost causes persistent downside drift (~10-15%/yr)
+        # → call spreads benefit from decay; put spreads carry more tail risk.
+        # One reverse split: ~3:1 on 2025-11-25 (price ~$5 → ~$22).
+        # IV typically 25-45%, spiking to 60%+ on supply shocks (Russia-Ukraine 2022).
+        # Start 2019 for clean post-prior-period data at stable $5-10 price range.
+        "start": date(2019, 1, 1),
+        "split_dates": WEAT_SPLIT_DATES,
+
+        # Moderate-high IV commodity ETF. Call side: sell more aggressively (decay
+        # works in your favor). Put side: stay conservative (spike risk).
+        "put_deltas":   [0.10, 0.15, 0.20, 0.25, 0.30],
+        "short_deltas": [0.20, 0.25, 0.30, 0.35, 0.40],
+        "wing_widths":  [0.05, 0.10, 0.15, 0.20],
+        "vix_thresholds": [None, 30, 25, 20],
+
+        "opt_short_delta":  (0.15, 0.45),
+        "opt_put_delta":    (0.10, 0.30),
+        "opt_wing_width":   (0.05, 0.20),
+        "opt_profit_take":  (0.30, 0.70),
+        "opt_max_spread":   (0.15, 0.50),
+        "opt_put_vix_max":  (15.0, 45.0),
+        "opt_call_vix_min": (0.0,  30.0),
     },
 
 }

@@ -247,3 +247,11 @@ AWS_PROFILE=clarinut-gmerton MYSQL_PASSWORD=xxx PYTHONPATH=src python run_calend
     --deltas 0.50 --profit-target 0.25 \
     --detail-delta 0.50 --no-csv
 ```
+
+---
+
+## Trade Log
+
+| Entry | Exit | Contracts | Strike | Short Expiry | Long Expiry | Entry Debit | Exit Value | ROC | Notes |
+|-------|------|-----------|--------|--------------|-------------|-------------|------------|-----|-------|
+| 2026-03-20 | 2026-03-25 | 50 | $46P | 2026-04-10 | 2026-05-15 | $0.470 | $0.550 | +17.0% | Early close — one-day blip concern; target was 25% |

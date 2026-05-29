@@ -377,12 +377,86 @@ STRATEGIES: list[dict] = [
         "fwd_vol_warn":  1.00,   # avg=0.80; any >1.0 = unfavorable; ≤0.90 is optimal
         "note":          "structurally in backwardation; enter every eligible Friday",
     },
+    {
+        "type":          "calendar",
+        "name":          "XLV Put Calendar",
+        "alloc_key":     "XLV calendar",
+        "ticker":        "XLV",
+        "min_gap":       25,
+        "max_gap":       50,
+        "min_iv_ratio":  1.0,
+        "profit_take":   0.25,
+        "fwd_vol_warn":  1.00,   # avg=0.79; FVF≤0.90 = ~8 entries/yr; Tier A priority=286
+        "note":          "FVF≤0.90 gate; 87.1% win +49.0% ROC; correlated w/XLU+XLP on FOMC weeks; IBKR Pro + ≥5 cts",
+    },
+    {
+        "type":          "calendar",
+        "name":          "XLP Put Calendar",
+        "alloc_key":     "XLP calendar",
+        "ticker":        "XLP",
+        "min_gap":       25,
+        "max_gap":       50,
+        "min_iv_ratio":  1.0,
+        "profit_take":   0.25,
+        "fwd_vol_warn":  1.00,   # avg=0.81; FVF≤0.90 = ~10 entries/yr; Tier A priority=239
+        "note":          "FVF≤0.90 gate; 82.1% win +54.7% ROC; correlated w/XLU+XLV on FOMC weeks; IBKR Pro + ≥5 cts",
+    },
 ]
 
 DTE_TARGET     = 20
 DTE_TOL        = 5
 MAX_DELTA_ERR  = 0.08
 MAX_SPREAD_PCT = 0.25   # max (ask-bid)/mid on the short leg
+
+# ── Tier lookup tables ────────────────────────────────────────────────────────
+
+TIER_MAP: dict[str, str] = {
+    "UVXY Bear Call Spread":    "C",
+    "UVXY Short Put":           "C",
+    "UVIX Bear Call Spread":    "C",
+    "TLT Bear Call Spread":     "C",
+    "TMF Bear Call Spread":     "P",
+    "GLD Bull Put Spread":      "C",
+    "USO Bull Put Spread":      "C",
+    "SOXX Bull Put Spread":     "C",
+    "INDA Bull Put Spread":     "A",
+    "ASHR Bull Put Spread":     "C",
+    "SQQQ Bear Call Spread":    "C",
+    "BJ Bull Put Spread":       "B",
+    "ASHR Bear Call Spread":    "C",
+    "GEV Bull Put Spread":      "P",
+    "CLS Bull Put Spread":      "P",
+    "UUP ATM Short Straddle":   "C",
+    "XOP Bull Put Spread":      "P",
+    "GLD Put Calendar":         "C",
+    "XLU Put Calendar":         "A",
+    "XLV Put Calendar":         "A",
+    "XLP Put Calendar":         "A",
+}
+
+# For regime strategies, tier depends on which regime fires
+REGIME_TIER_MAP: dict[str, dict[str, str]] = {
+    "XLF Regime-Switching": {
+        "Bearish_HighIV": "B", "Bearish_LowIV": "C",
+        "Bullish_HighIV": "C", "Bullish_LowIV": "C",
+    },
+    "QQQ Regime-Optimized": {
+        "Bearish_HighIV": "B", "Bearish_LowIV": "A",
+        "Bullish_HighIV": "A", "Bullish_LowIV": "B",
+    },
+    "XLE Regime-Gated": {
+        "Bearish_HighIV": "A", "Bearish_LowIV": "C",
+        "Bullish_HighIV": "C", "Bullish_LowIV": "C",
+    },
+    "SPY Regime-Switching": {
+        "Bearish_HighIV": "B", "Bearish_LowIV": "A",
+        "Bullish_HighIV": "B", "Bullish_LowIV": "C",
+    },
+    "SPY Double Calendar": {
+        "Bearish_HighIV": "A", "Bearish_LowIV": "C",
+        "Bullish_HighIV": "C", "Bullish_LowIV": "C",
+    },
+}
 
 
 # ── Pure helpers (no I/O) ─────────────────────────────────────────────────────
@@ -749,7 +823,7 @@ def screen_regime_spread(
             f"   net ${credit:.3f}cr   width ${width:.2f}"
         )
         return {"enter": True, "lines": lines, "summary": summary,
-                "max_loss_per_contract": max_loss * 100}
+                "max_loss_per_contract": max_loss * 100, "active_regime": regime}
 
     # 3b. Short strangle
     elif structure == "short_strangle":
@@ -808,7 +882,7 @@ def screen_regime_spread(
             f"   combined ${credit:.3f}cr"
         )
         return {"enter": True, "lines": lines, "summary": summary,
-                "max_loss_per_contract": None}  # naked — undefined max loss
+                "max_loss_per_contract": None, "active_regime": regime}  # naked — undefined max loss
 
     # 3c. Long straddle (debit — buy ATM call + put)
     elif structure == "long_straddle":
@@ -867,7 +941,7 @@ def screen_regime_spread(
             f"   debit ${debit:.3f}   max loss ${debit * 100:.2f}/contract"
         )
         return {"enter": True, "lines": lines, "summary": summary,
-                "max_loss_per_contract": debit * 100}
+                "max_loss_per_contract": debit * 100, "active_regime": regime}
 
     lines.append(f"  Unknown structure: {structure}")
     return {"enter": False, "lines": lines, "summary": f"SKIP  (unknown structure)"}
@@ -1107,6 +1181,7 @@ def screen_calendar(
     short_expiry: Optional[str],
     long_expiry:  Optional[str],
     today:        date,
+    spot:         Optional[float] = None,
 ) -> dict:
     """Screen a put calendar spread strategy. Returns enter/lines/summary."""
     min_iv_ratio = strat.get("min_iv_ratio", 1.0)
@@ -1146,7 +1221,11 @@ def screen_calendar(
         lines.append("  No common strikes with positive bid on both expiries")
         return {"enter": False, "lines": lines, "summary": "SKIP  (no common strikes)"}
 
-    # 4. Best ATM put: closest to 0.50Δ on short leg, from common strikes only
+    # 4. Best ATM put: prefer strike closest to spot among the "ATM zone"
+    # (short delta in [0.30, 0.65]); fall back to delta-closest-to-0.50 if spot
+    # is unknown or no strike is in the zone. Calendar P/L peaks at strike=spot,
+    # so distance-to-spot is the right primary criterion — pure delta-targeting
+    # can pick a strike >$1 away from spot when the vol skew is steep.
     short_puts = [
         c for c in short_chain
         if c.get("option_type") == "put"
@@ -1157,10 +1236,17 @@ def screen_calendar(
         lines.append("  No ATM put in common strikes")
         return {"enter": False, "lines": lines, "summary": "SKIP  (no ATM put)"}
 
-    best_short = min(
-        short_puts,
-        key=lambda c: abs(abs((c.get("greeks") or {}).get("delta", 0)) - 0.50)
-    )
+    in_zone = [
+        c for c in short_puts
+        if 0.30 <= abs((c.get("greeks") or {}).get("delta", 0)) <= 0.65
+    ]
+    if spot is not None and in_zone:
+        best_short = min(in_zone, key=lambda c: abs(c["strike"] - spot))
+    else:
+        best_short = min(
+            short_puts,
+            key=lambda c: abs(abs((c.get("greeks") or {}).get("delta", 0)) - 0.50)
+        )
     strike = best_short["strike"]
 
     # 5. Long leg at same strike
@@ -1189,13 +1275,16 @@ def screen_calendar(
         / (long_mid  / math.sqrt(long_dte  / 365))
     )
 
-    # 7. BA spread on short leg
+    # 7. BA spread on both legs
     sp = ba_pct(best_short)
+    lp = ba_pct(best_long)
 
     short_delta = (best_short.get("greeks") or {}).get("delta", 0)
     long_delta  = (best_long.get("greeks")  or {}).get("delta", 0)
     sp_str = f"{sp * 100:.1f}%" if sp is not None else "n/a"
     sp_tag = "✓" if sp is not None and sp <= MAX_SPREAD_PCT else "✗"
+    lp_str = f"{lp * 100:.1f}%" if lp is not None else "n/a"
+    lp_tag = "✓" if lp is not None and lp <= MAX_SPREAD_PCT else "✗"
 
     lines.append(f"  Strike: ${strike:.2f}")
     lines.append(
@@ -1208,6 +1297,7 @@ def screen_calendar(
         f"  Long   {long_expiry} "
         f"  bid ${best_long.get('bid', 0):.2f} / ask ${best_long.get('ask', 0):.2f}"
         f"  mid ${long_mid:.2f}  Δ {long_delta:+.3f}"
+        f"  BA {lp_str} {lp_tag}"
     )
     lines.append("")
     lines.append(f"  Net debit:   ${net_debit:.2f}/share  (${net_debit * 100:.0f}/contract)")
@@ -1223,7 +1313,11 @@ def screen_calendar(
     # Gate checks
     if sp is None or sp > MAX_SPREAD_PCT:
         lines.append(f"  Short leg BA too wide: {sp_str} > {MAX_SPREAD_PCT * 100:.0f}%")
-        return {"enter": False, "lines": lines, "summary": f"SKIP  (BA {sp_str})"}
+        return {"enter": False, "lines": lines, "summary": f"SKIP  (short BA {sp_str})"}
+
+    if lp is None or lp > MAX_SPREAD_PCT:
+        lines.append(f"  Long leg BA too wide: {lp_str} > {MAX_SPREAD_PCT * 100:.0f}%")
+        return {"enter": False, "lines": lines, "summary": f"SKIP  (long BA {lp_str})"}
 
     if iv_ratio < min_iv_ratio:
         return {
@@ -1284,7 +1378,7 @@ def screen_double_calendar(
 
     if rs["exit"] == "skip":
         lines.append(f"  {regime}: no double calendar edge in this regime — skip")
-        return {"enter": False, "lines": lines, "summary": f"SKIP  ({regime})"}
+        return {"enter": False, "lines": lines, "summary": f"SKIP  ({regime})", "active_regime": regime}
 
     # 2. Expiry pair
     if not short_expiry or not long_expiry:
@@ -1292,7 +1386,7 @@ def screen_double_calendar(
             f"  Could not find expiry pair (need ~{strat['dte_target']} DTE short + "
             f"{strat['dc_gap_min']}–{strat['dc_gap_max']}d gap)"
         )
-        return {"enter": False, "lines": lines, "summary": "SKIP  (no expiry pair)"}
+        return {"enter": False, "lines": lines, "summary": "SKIP  (no expiry pair)", "active_regime": regime}
 
     short_dte = _dte(short_expiry, today)
     long_dte  = _dte(long_expiry, today)
@@ -1302,7 +1396,7 @@ def screen_double_calendar(
 
     if not short_chain or not long_chain:
         lines.append("  Option chain data unavailable")
-        return {"enter": False, "lines": lines, "summary": "SKIP  (no chain data)"}
+        return {"enter": False, "lines": lines, "summary": "SKIP  (no chain data)", "active_regime": regime}
 
     put_d  = rs["put_d"]
     call_d = rs["call_d"]
@@ -1311,25 +1405,25 @@ def screen_double_calendar(
     short_put = find_by_delta(short_chain, put_d, "put")
     if short_put is None:
         lines.append(f"  Short {put_d:.2f}Δ put: no match within ±{MAX_DELTA_ERR}Δ")
-        return {"enter": False, "lines": lines, "summary": "SKIP  (no short put)"}
+        return {"enter": False, "lines": lines, "summary": "SKIP  (no short put)", "active_regime": regime}
 
     pba = ba_pct(short_put)
     if pba is None or pba > MAX_SPREAD_PCT:
         pba_str = f"{pba * 100:.1f}%" if pba is not None else "n/a"
         lines.append(f"  Short put BA too wide: {pba_str} > {MAX_SPREAD_PCT * 100:.0f}%")
-        return {"enter": False, "lines": lines, "summary": f"SKIP  (short put BA {pba_str})"}
+        return {"enter": False, "lines": lines, "summary": f"SKIP  (short put BA {pba_str})", "active_regime": regime}
 
     # 4. Short call leg
     short_call = find_by_delta(short_chain, call_d, "call")
     if short_call is None:
         lines.append(f"  Short {call_d:.2f}Δ call: no match within ±{MAX_DELTA_ERR}Δ")
-        return {"enter": False, "lines": lines, "summary": "SKIP  (no short call)"}
+        return {"enter": False, "lines": lines, "summary": "SKIP  (no short call)", "active_regime": regime}
 
     cba = ba_pct(short_call)
     if cba is None or cba > MAX_SPREAD_PCT:
         cba_str = f"{cba * 100:.1f}%" if cba is not None else "n/a"
         lines.append(f"  Short call BA too wide: {cba_str} > {MAX_SPREAD_PCT * 100:.0f}%")
-        return {"enter": False, "lines": lines, "summary": f"SKIP  (short call BA {cba_str})"}
+        return {"enter": False, "lines": lines, "summary": f"SKIP  (short call BA {cba_str})", "active_regime": regime}
 
     put_strike  = short_put["strike"]
     call_strike = short_call["strike"]
@@ -1342,7 +1436,7 @@ def screen_double_calendar(
     )
     if long_put is None:
         lines.append(f"  No ${put_strike:.2f}P with positive bid on {long_expiry}")
-        return {"enter": False, "lines": lines, "summary": "SKIP  (no long put)"}
+        return {"enter": False, "lines": lines, "summary": "SKIP  (no long put)", "active_regime": regime}
 
     # 6. Long call at same strike
     long_call = next(
@@ -1352,7 +1446,21 @@ def screen_double_calendar(
     )
     if long_call is None:
         lines.append(f"  No ${call_strike:.2f}C with positive bid on {long_expiry}")
-        return {"enter": False, "lines": lines, "summary": "SKIP  (no long call)"}
+        return {"enter": False, "lines": lines, "summary": "SKIP  (no long call)", "active_regime": regime}
+
+    # 6b. Long-leg BA gates — same threshold as the short legs. Without this,
+    # an illiquid back-month with a 100%+ wide quote sneaks through and the
+    # printed mid is fictional.
+    lpba = ba_pct(long_put)
+    lcba = ba_pct(long_call)
+    if lpba is None or lpba > MAX_SPREAD_PCT:
+        lpba_str = f"{lpba * 100:.1f}%" if lpba is not None else "n/a"
+        lines.append(f"  Long put BA too wide: {lpba_str} > {MAX_SPREAD_PCT * 100:.0f}%")
+        return {"enter": False, "lines": lines, "summary": f"SKIP  (long put BA {lpba_str})", "active_regime": regime}
+    if lcba is None or lcba > MAX_SPREAD_PCT:
+        lcba_str = f"{lcba * 100:.1f}%" if lcba is not None else "n/a"
+        lines.append(f"  Long call BA too wide: {lcba_str} > {MAX_SPREAD_PCT * 100:.0f}%")
+        return {"enter": False, "lines": lines, "summary": f"SKIP  (long call BA {lcba_str})", "active_regime": regime}
 
     # 7. Economics
     sp_mid  = mid_price(short_put)
@@ -1363,7 +1471,7 @@ def screen_double_calendar(
 
     if net_debit <= 0:
         lines.append(f"  Net debit ≤ 0 (${net_debit:.3f}) — data issue")
-        return {"enter": False, "lines": lines, "summary": "SKIP  (negative debit)"}
+        return {"enter": False, "lines": lines, "summary": "SKIP  (negative debit)", "active_regime": regime}
 
     sp_delta = (short_put.get("greeks")  or {}).get("delta")
     sc_delta = (short_call.get("greeks") or {}).get("delta")
@@ -1372,6 +1480,8 @@ def screen_double_calendar(
 
     pba_str  = f"{pba * 100:.1f}%" if pba is not None else "n/a"
     cba_str  = f"{cba * 100:.1f}%" if cba is not None else "n/a"
+    lpba_str = f"{lpba * 100:.1f}%" if lpba is not None else "n/a"
+    lcba_str = f"{lcba * 100:.1f}%" if lcba is not None else "n/a"
 
     lines.append(f"")
     lines.append(
@@ -1381,6 +1491,7 @@ def screen_double_calendar(
     lines.append(
         f"  Long  put  ${put_strike:.2f}P  {long_expiry}"
         f"  mid ${lp_mid:.2f}  Δ {(long_put.get('greeks') or {}).get('delta', 0):+.3f}"
+        f"  BA {lpba_str}"
     )
     lines.append(
         f"  Short call ${call_strike:.2f}C  {short_expiry}"
@@ -1389,6 +1500,7 @@ def screen_double_calendar(
     lines.append(
         f"  Long  call ${call_strike:.2f}C  {long_expiry}"
         f"  mid ${lc_mid:.2f}  Δ {(long_call.get('greeks') or {}).get('delta', 0):+.3f}"
+        f"  BA {lcba_str}"
     )
     lines.append(f"")
     lines.append(f"  Net debit:   ${net_debit:.3f}/shr  (${net_debit * 100:.2f}/contract)")
@@ -1409,7 +1521,7 @@ def screen_double_calendar(
         f"  debit ${net_debit:.3f}  [{exit_label}]"
     )
     return {"enter": True, "lines": lines, "summary": summary,
-            "max_loss_per_contract": net_debit * 100}
+            "max_loss_per_contract": net_debit * 100, "active_regime": regime}
 
 
 # ── Allocation sizing ─────────────────────────────────────────────────────────
@@ -1775,6 +1887,7 @@ async def run(today: date, capital: Optional[float] = None, risk_pct: float = 0.
                     short_exp,
                     long_exp,
                     today,
+                    spot_for.get(ticker),
                 )
             elif strat_type == "double_calendar":
                 long_exp = dc_long_expiry_for.get(name)
@@ -1869,14 +1982,28 @@ async def run(today: date, capital: Optional[float] = None, risk_pct: float = 0.
                     fwd_tag = f"  [⚠ fwd={factor:.2f} elevated]"
                 else:
                     fwd_tag = f"  [fwd={factor:.2f}]"
-            if result.get("enter") and result.get("display_expiry"):
+            if result.get("display_expiry"):
                 if result.get("display_expiry_long"):
                     exp_str = f"  exp {result['display_expiry']} / {result['display_expiry_long']}"
                 else:
                     exp_str = f"  exp {result['display_expiry']}"
             else:
                 exp_str = ""
-            print(f"  {verdict}   {name:<28}  {result['summary']}{exp_str}{fwd_tag}")
+            # Tier tag
+            active_regime = result.get("active_regime")
+            if not active_regime and name in REGIME_TIER_MAP:
+                # Regime skips embed the regime name in the summary — extract it
+                for r in ("Bearish_HighIV", "Bearish_LowIV", "Bullish_HighIV", "Bullish_LowIV"):
+                    if r in result.get("summary", ""):
+                        active_regime = r
+                        break
+            if name in REGIME_TIER_MAP and active_regime:
+                tier = REGIME_TIER_MAP[name].get(active_regime, "?")
+            else:
+                tier = TIER_MAP.get(name, "?")
+            tier_tag  = f"  [Tier {tier}]"
+            date_tag  = f"  [{today}]" if result.get("enter") else ""
+            print(f"  {verdict}   {name:<28}  {result['summary']}{exp_str}{fwd_tag}{tier_tag}{date_tag}")
         print(f"{BAR}\n")
 
         # ── Sizing section (only when --capital is provided) ──────────────────

@@ -27,8 +27,19 @@ import uuid
 from datetime import date, datetime, timedelta, timezone
 
 import awswrangler as wr
+import numpy as np
 import pandas as pd
 from polygon import RESTClient
+from py_vollib_vectorized import (
+    vectorized_implied_volatility,
+    vectorized_delta,
+    vectorized_gamma,
+    vectorized_theta,
+    vectorized_vega,
+)
+
+# Risk-free rate proxy for IV solve. ~1Y Treasury yield. Refine later if needed.
+RISK_FREE_RATE = 0.045
 
 # ── Athena / S3 Tables configuration ────────────────────────────────────────
 CATALOG       = "awsdatacatalog/s3tablescatalog/gm-equity-tbl-bucket"
@@ -200,7 +211,13 @@ def fetch_polygon_snapshot(client: RESTClient, ticker: str) -> list:
 
 
 def transform_snapshot(snapshots: list, ticker: str, trade_date: date) -> pd.DataFrame:
-    """Convert Polygon option snapshot objects to v3 schema rows."""
+    """Convert Polygon option snapshot objects to v3 schema rows.
+
+    The current Polygon plan returns last_quote, greeks, and implied_volatility
+    as None for option contracts. So we read price from the day's OHLC
+    (close → vwap fallback) and leave Greeks/IV blank — they are computed
+    later by compute_iv_and_greeks() once we have the underlying spot price.
+    """
     rows = []
     for snap in snapshots:
         try:
@@ -222,27 +239,22 @@ def transform_snapshot(snapshots: list, ticker: str, trade_date: date) -> pd.Dat
             quote = snap.last_quote
             bid = getattr(quote, "bid", None) if quote else None
             ask = getattr(quote, "ask", None) if quote else None
-            midpoint = getattr(quote, "midpoint", None) if quote else None
 
-            if bid is not None and ask is not None:
+            day = snap.day
+            day_close  = getattr(day, "close",  None) if day else None
+            day_vwap   = getattr(day, "vwap",   None) if day else None
+            day_volume = getattr(day, "volume", None) if day else None
+
+            if bid is not None and ask is not None and bid > 0 and ask > 0:
                 last = (bid + ask) / 2
-            elif midpoint is not None:
-                last = midpoint
+            elif day_close is not None and day_close > 0:
+                last = day_close
+            elif day_vwap is not None and day_vwap > 0:
+                last = day_vwap
             else:
                 last = None
 
-            iv = getattr(snap, "implied_volatility", None)
-
-            day = snap.day
-            volume = getattr(day, "volume", None) if day else None
             oi = getattr(snap, "open_interest", None)
-
-            greeks = snap.greeks
-            delta = getattr(greeks, "delta", None) if greeks else None
-            gamma = getattr(greeks, "gamma", None) if greeks else None
-            theta = getattr(greeks, "theta", None) if greeks else None
-            vega  = getattr(greeks, "vega",  None) if greeks else None
-            rho   = getattr(greeks, "rho",   None) if greeks else 0.0
 
             rows.append({
                 "trade_date":    trade_date,
@@ -250,18 +262,18 @@ def transform_snapshot(snapshots: list, ticker: str, trade_date: date) -> pd.Dat
                 "cp":            cp,
                 "strike":        float(strike),
                 "expiry":        expiry,
-                "bid":           float(bid)    if bid    is not None else None,
-                "ask":           float(ask)    if ask    is not None else None,
-                "last":          float(last)   if last   is not None else None,
-                "bid_iv":        float(iv)     if iv     is not None else None,
-                "ask_iv":        float(iv)     if iv     is not None else None,
-                "open_interest": int(oi)       if oi     is not None else None,
-                "volume":        int(volume)   if volume is not None else None,
-                "delta":         float(delta)  if delta  is not None else None,
-                "gamma":         float(gamma)  if gamma  is not None else None,
-                "theta":         float(theta)  if theta  is not None else None,
-                "vega":          float(vega)   if vega   is not None else None,
-                "rho":           float(rho)    if rho    is not None else 0.0,
+                "bid":           float(bid)  if bid  is not None else None,
+                "ask":           float(ask)  if ask  is not None else None,
+                "last":          float(last) if last is not None else None,
+                "bid_iv":        None,
+                "ask_iv":        None,
+                "open_interest": int(oi)         if oi         is not None else None,
+                "volume":        int(day_volume) if day_volume is not None else None,
+                "delta":         None,
+                "gamma":         None,
+                "theta":         None,
+                "vega":          None,
+                "rho":           0.0,
                 "resolution":    "daily",
             })
         except Exception:
@@ -274,6 +286,137 @@ def transform_snapshot(snapshots: list, ticker: str, trade_date: date) -> pd.Dat
     df["open_interest"] = df["open_interest"].astype("Int64")
     df["volume"]        = df["volume"].astype("Int64")
     return df[V3_COLS]
+
+
+def fetch_underlying_closes(
+    client: RESTClient,
+    trade_date: date,
+    tickers: list[str] | None = None,
+) -> dict[str, float]:
+    """Fetch dict {ticker: close_price} for trade_date.
+
+    Strategy: grouped daily aggregates first (one API call for ~12k tickers).
+    On the day-of-run, Polygon's grouped endpoint can return NOT_AUTHORIZED
+    ("before end of day") even after market close — when that happens we
+    fall back to per-ticker get_aggs (parallelized) for whichever tickers
+    in the universe are still missing. Per-ticker bars are available faster
+    after close than the grouped aggregate.
+    """
+    print(f"Fetching underlying closes for {trade_date} ...")
+    result: dict[str, float] = {}
+
+    try:
+        for agg in client.get_grouped_daily_aggs(
+            date=str(trade_date), adjusted=True, locale="us", market_type="stocks"
+        ):
+            tk = getattr(agg, "ticker", None)
+            cl = getattr(agg, "close", None)
+            if tk and cl is not None and cl > 0:
+                result[tk] = float(cl)
+        print(f"  grouped: {len(result):,} closes")
+    except Exception as e:
+        print(f"  [WARN] grouped daily aggs failed: {e}")
+
+    if tickers:
+        missing = [t for t in tickers if t not in result]
+        if missing:
+            print(f"  fallback: per-ticker fetch for {len(missing):,} missing tickers ...")
+            from concurrent.futures import ThreadPoolExecutor, as_completed
+
+            def _fetch_one(t: str) -> tuple[str, float | None]:
+                try:
+                    bars = list(client.get_aggs(
+                        ticker=t, multiplier=1, timespan="day",
+                        from_=str(trade_date), to=str(trade_date),
+                        adjusted=True, limit=1,
+                    ))
+                    if bars and bars[0].close is not None and bars[0].close > 0:
+                        return t, float(bars[0].close)
+                except Exception:
+                    pass
+                return t, None
+
+            recovered = 0
+            with ThreadPoolExecutor(max_workers=8) as ex:
+                for fut in as_completed([ex.submit(_fetch_one, t) for t in missing]):
+                    t, c = fut.result()
+                    if c is not None:
+                        result[t] = c
+                        recovered += 1
+            print(f"  fallback recovered {recovered:,} additional closes")
+
+    print(f"  total: {len(result):,} underlying close prices loaded")
+    return result
+
+
+def compute_iv_and_greeks(
+    df: pd.DataFrame,
+    underlying_closes: dict[str, float],
+    trade_date: date,
+    risk_free_rate: float = RISK_FREE_RATE,
+) -> pd.DataFrame:
+    """Solve for IV from `last`, then compute delta/gamma/theta/vega.
+
+    Mutates `df` in place and returns it. Rows missing a usable price or
+    underlying spot are left with NaN for IV/Greeks.
+    """
+    if df.empty:
+        return df
+
+    S = df["ticker"].map(underlying_closes).astype("float64")
+    T = df["expiry"].apply(
+        lambda e: max((e - trade_date).days / 365.0, 1.0 / 365.0)
+    ).astype("float64")
+    flag = df["cp"].str.lower().values  # 'c' or 'p'
+
+    last = pd.to_numeric(df["last"], errors="coerce")
+    eligible = last.notna() & (last > 0) & S.notna() & (T > 0)
+    if not eligible.any():
+        return df
+
+    idx = df.index[eligible]
+    price = last.loc[idx].values
+    s_vec = S.loc[idx].values
+    k_vec = df.loc[idx, "strike"].astype("float64").values
+    t_vec = T.loc[idx].values
+    f_vec = pd.Series(flag).loc[idx].values
+
+    try:
+        iv = vectorized_implied_volatility(
+            price=price, S=s_vec, K=k_vec, t=t_vec,
+            r=risk_free_rate, flag=f_vec, return_as="numpy",
+        )
+    except Exception as e:
+        print(f"  [WARN] IV solve failed: {e}")
+        return df
+
+    iv = np.where(np.isfinite(iv) & (iv > 0.001) & (iv < 5.0), iv, np.nan)
+    valid = ~np.isnan(iv)
+    if not valid.any():
+        return df
+
+    v_idx = idx[valid]
+    kw = dict(
+        S=s_vec[valid], K=k_vec[valid], t=t_vec[valid],
+        r=risk_free_rate, sigma=iv[valid], flag=f_vec[valid], return_as="numpy",
+    )
+    try:
+        d_arr  = vectorized_delta(**kw)
+        g_arr  = vectorized_gamma(**kw)
+        th_arr = vectorized_theta(**kw)
+        ve_arr = vectorized_vega(**kw)
+    except Exception as e:
+        print(f"  [WARN] Greeks computation failed: {e}")
+        return df
+
+    df.loc[v_idx, "bid_iv"] = iv[valid]
+    df.loc[v_idx, "ask_iv"] = iv[valid]
+    df.loc[v_idx, "delta"]  = d_arr
+    df.loc[v_idx, "gamma"]  = g_arr
+    df.loc[v_idx, "theta"]  = th_arr
+    df.loc[v_idx, "vega"]   = ve_arr
+
+    return df
 
 
 def athena_insert(tmp_table: str) -> None:
@@ -353,6 +496,9 @@ def main():
     tickers = get_tickers(client, ticker_override)
     print(f"Tickers to process: {len(tickers):,}")
 
+    # ── Underlying spot prices (grouped first, per-ticker fallback) ──────────
+    underlying_closes = fetch_underlying_closes(client, trade_date, tickers)
+
     # ── Idempotency guard ────────────────────────────────────────────────────
     if not args.dry_run:
         already = check_already_loaded(trade_date)
@@ -401,6 +547,7 @@ def main():
         batch_tickers += 1
         if batch_tickers >= BATCH_SIZE and batch_frames:
             combined = pd.concat(batch_frames, ignore_index=True)
+            combined = compute_iv_and_greeks(combined, underlying_closes, trade_date)
             t0 = time.perf_counter()
             n = flush_batch(combined, args.dry_run)
             rows_inserted += n
@@ -412,6 +559,7 @@ def main():
     # Flush remainder
     if batch_frames:
         combined = pd.concat(batch_frames, ignore_index=True)
+        combined = compute_iv_and_greeks(combined, underlying_closes, trade_date)
         t0 = time.perf_counter()
         n = flush_batch(combined, args.dry_run)
         rows_inserted += n

@@ -229,3 +229,12 @@ MYSQL_PASSWORD=xxx PYTHONPATH=src python run_tlt_strangle_study.py --ticker XLE 
 XLE produces higher per-trade ROC than XLF but is active far less often. XLF is a better
 "always-on" regime-switching vehicle; XLE is a high-conviction opportunistic play that
 fires when energy fear peaks.
+
+---
+
+## Trade Log
+
+| Entry | Exit | Contracts | Short | Long | Expiry | Entry Credit | Exit Cost | ROC | Notes |
+|-------|------|-----------|-------|------|--------|--------------|-----------|-----|-------|
+| 2026-03-16 | 2026-03-25 | 5 | $55P | $52P | 2026-05-15 | $0.68 | $0.315 | +53.7% | 50% PT hit |
+| 2026-03-18 | — | 10 | $56P | $53P | 2026-05-15 | $0.67 | — | open | +38.1% as of 2026-03-25 |

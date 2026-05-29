@@ -135,6 +135,8 @@ AMZN_SPLIT_DATES:  list[date] = []  # AMZN; 20:1 forward split 2022-06-06 — de
 GOOGL_SPLIT_DATES: list[date] = []  # GOOGL; 20:1 forward split 2022-07-18 — delta selection handles it
 META_SPLIT_DATES:  list[date] = []  # META; no splits
 IBIT_SPLIT_DATES:  list[date] = []  # iShares Bitcoin Trust ETF; no splits
+CORN_SPLIT_DATES:  list[date] = []  # Teucrium Corn Fund; no reverse splits
+WEAT_SPLIT_DATES:  list[date] = [date(2025, 11, 25)]  # Teucrium Wheat Fund; ~3:1 reverse split
 
 
 # ── Athena → MySQL sync ───────────────────────────────────────────────────────

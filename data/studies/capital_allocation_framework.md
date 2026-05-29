@@ -46,35 +46,37 @@ full-backtest unless noted.
 | Rank | Strategy / Regime | Avg ROC% | Win% | Wks/yr | Priority Score | Tier |
 |------|-------------------|----------|------|--------|---------------|------|
 | 1 | **XLU** — Put calendar (FVF ≤ 0.90) | 78.8% | 93.5% | 11 | **347** | A |
-| 2 | **XLE** — Bull put (Bearish_HighIV only) | 35.5% | 84.6% | 9 | **174** | A |
-| 3 | **SPY** — Long straddle (Bearish_LowIV) | 22.6% | 57.9% | 5 | **136** | A |
-| 4 | **QQQ** — Bull put 0.35Δ/0.15Δ (Bearish_LowIV) | 8.3% | 90.5% | 5 | **78** | A |
-| 5 | **QQQ** — Bull put 0.45Δ/0.35Δ (Bullish_HighIV) | 14.1% | 80.9% | 8 | **75** | A |
-| 6 | **SPY** — Double cal 0.25P/0.10C (Bearish_HighIV) | 23.7% | 50.0% | 9 | **68** | A |
-| 7 | **INDA** — Bull put 0.25Δ/0.20Δ ⚠️ | 12.8% | 91.7% | 10 | **61** | A |
-| 8 | **SPY** — Bull put 0.25Δ/0.15Δ (Bearish_HighIV) | 7.5% | 94.7% | 9 | **41** | B |
-| 9 | **SPY** — Bull put 0.45Δ/0.35Δ (Bullish_HighIV) | 8.3% | 81.9% | 9 | **39** | B |
-| 10 | **XLF** — Bull put 0.40Δ/0.30Δ (Bearish_HighIV) | 11.7% | 77.5% | 13 | **36** | B |
-| 11 | **QQQ** — Bull put 0.25Δ/0.15Δ (Bearish_HighIV) | 7.4% | 92.3% | 10 | **35** | B |
-| 12 | **TLT** — Bull put 0.45Δ/0.35Δ (Bullish_LowIV) | 10.4% | 87.1% | 15 | **31** | B |
-| 13 | **Long Straddle** — approved list, FVR ≥ 1.40 (per ticker) | 13.1% | 44.1% | 12 | **25** | B |
-| 14 | **BJ** — Bull put 0.20Δ/0.10Δ (monthly) | 9.2% | 94.2% | 19 | **24** | B |
-| 15 | **SOXX** — Bull put 0.35Δ/0.30Δ | 18.0% | 89.3% | 52 | **16** | C |
-| 16 | **TLT** — Bear call 0.40Δ/0.30Δ (Bearish_HighIV) | 4.4% | 87.8% | 13 | **15** | C |
-| 17 | **GLD** — Put calendar (iv_ratio ≥ 1.00) | 13.3% | 75.4% | 35 | **15** | C |
-| 18 | **Long Straddle** — approved list, FVR 1.20–1.39 (per ticker) | 13.1% | 44.1% | 20 | **15** | C |
-| 19 | **XLF** — Bear call 0.35Δ/0.25Δ (Bullish_LowIV) | 7.0% | 69.7% | 19 | **13** | C |
-| 20 | **ASHR** — Iron condor (put + call spreads) | 11.2% | 90.0% | 52 | **10** | C |
-| 21 | **TLT** — Bear call 0.40Δ/0.30Δ (Bullish_HighIV) | 2.6% | 86.0% | 12 | **10** | C |
-| 22 | **GLD** — Bull put 0.30Δ/0.25Δ (VIX < 25) | 8.0% | 87.1% | 40 | **9** | C |
-| 23 | **TLT** — Bear call 0.25Δ/0.15Δ (Bearish_LowIV) | 2.4% | 88.7% | 12 | **9** | C |
-| 24 | **USO** — Bull put 0.25Δ/0.20Δ | 9.6% | 92.3% | 52 | **9** | C |
-| 25 | **SPY** — Double cal 0.25P/0.25C (Bullish_LowIV) | 10.4% | 59.3% | 26 | **12** | C |
-| 26 | **UVXY** — Bear call + short put (bi-weekly) | 5.6% | 74.6% | 26 | **8** | C |
-| 27 | **SQQQ** — Bear call 0.50Δ/0.40Δ | 10.0% | 82.7% | 52 | **8** | C |
-| 28 | **XLF** — Strangle 0.20Δ/0.25Δ (Bearish_LowIV) | 1.7% | 79.7% | 9 | **8** | C |
-| 29 | **XLF** — Strangle 0.35Δ/0.40Δ (Bullish_HighIV) | 2.1% | 75.8% | 11 | **7** | C |
-| 30 | **UUP** — Short ATM straddle | 2.3% | 73.1% | 13 | **7** | C |
+| 2 | **XLV** — Put calendar (FVF ≤ 0.90) | 49.0% | 87.1% | 7.75 | **286** | A |
+| 3 | **XLP** — Put calendar (FVF ≤ 0.90) | 54.7% | 82.1% | 9.75 | **239** | A |
+| 4 | **XLE** — Bull put (Bearish_HighIV only) | 35.5% | 84.6% | 9 | **174** | A |
+| 5 | **SPY** — Long straddle (Bearish_LowIV) | 22.6% | 57.9% | 5 | **136** | A |
+| 6 | **QQQ** — Bull put 0.35Δ/0.15Δ (Bearish_LowIV) | 8.3% | 90.5% | 5 | **78** | A |
+| 7 | **QQQ** — Bull put 0.45Δ/0.35Δ (Bullish_HighIV) | 14.1% | 80.9% | 8 | **75** | A |
+| 8 | **SPY** — Double cal 0.25P/0.10C (Bearish_HighIV) | 23.7% | 50.0% | 9 | **68** | A |
+| 9 | **INDA** — Bull put 0.25Δ/0.20Δ ⚠️ | 12.8% | 91.7% | 10 | **61** | A |
+| 10 | **SPY** — Bull put 0.25Δ/0.15Δ (Bearish_HighIV) | 7.5% | 94.7% | 9 | **41** | B |
+| 11 | **SPY** — Bull put 0.45Δ/0.35Δ (Bullish_HighIV) | 8.3% | 81.9% | 9 | **39** | B |
+| 12 | **XLF** — Bull put 0.40Δ/0.30Δ (Bearish_HighIV) | 11.7% | 77.5% | 13 | **36** | B |
+| 13 | **QQQ** — Bull put 0.25Δ/0.15Δ (Bearish_HighIV) | 7.4% | 92.3% | 10 | **35** | B |
+| 14 | **TLT** — Bull put 0.45Δ/0.35Δ (Bullish_LowIV) | 10.4% | 87.1% | 15 | **31** | B |
+| 15 | **Long Straddle** — approved list, FVR ≥ 1.40 (per ticker) | 13.1% | 44.1% | 12 | **25** | B |
+| 16 | **BJ** — Bull put 0.20Δ/0.10Δ (monthly) | 9.2% | 94.2% | 19 | **24** | B |
+| 17 | **SOXX** — Bull put 0.35Δ/0.30Δ | 18.0% | 89.3% | 52 | **16** | C |
+| 18 | **TLT** — Bear call 0.40Δ/0.30Δ (Bearish_HighIV) | 4.4% | 87.8% | 13 | **15** | C |
+| 19 | **GLD** — Put calendar (iv_ratio ≥ 1.00) ⚠️ | 13.3% | 75.4% | 35 | **15** | C |
+| 20 | **Long Straddle** — approved list, FVR 1.20–1.39 (per ticker) | 13.1% | 44.1% | 20 | **15** | C |
+| 21 | **XLF** — Bear call 0.35Δ/0.25Δ (Bullish_LowIV) | 7.0% | 69.7% | 19 | **13** | C |
+| 22 | **ASHR** — Iron condor (put + call spreads) | 11.2% | 90.0% | 52 | **10** | C |
+| 23 | **TLT** — Bear call 0.40Δ/0.30Δ (Bullish_HighIV) | 2.6% | 86.0% | 12 | **10** | C |
+| 24 | **GLD** — Bull put 0.30Δ/0.25Δ (VIX < 25) | 8.0% | 87.1% | 40 | **9** | C |
+| 25 | **TLT** — Bear call 0.25Δ/0.15Δ (Bearish_LowIV) | 2.4% | 88.7% | 12 | **9** | C |
+| 26 | **USO** — Bull put 0.25Δ/0.20Δ | 9.6% | 92.3% | 52 | **9** | C |
+| 27 | **SPY** — Double cal 0.25P/0.25C (Bullish_LowIV) | 10.4% | 59.3% | 26 | **12** | C |
+| 28 | **UVXY** — Bear call + short put (bi-weekly) | 5.6% | 74.6% | 26 | **8** | C |
+| 29 | **SQQQ** — Bear call 0.50Δ/0.40Δ | 10.0% | 82.7% | 52 | **8** | C |
+| 30 | **XLF** — Strangle 0.20Δ/0.25Δ (Bearish_LowIV) | 1.7% | 79.7% | 9 | **8** | C |
+| 31 | **XLF** — Strangle 0.35Δ/0.40Δ (Bullish_HighIV) | 2.1% | 75.8% | 11 | **7** | C |
+| 32 | **UUP** — Short ATM straddle | 2.3% | 73.1% | 13 | **7** | C |
 
 ⚠️ INDA: Score reflects historical data (2019–2022 core); recent years sparse. Verify chain liquidity before entry.
 
@@ -96,8 +98,12 @@ Provisional strategies: take at half the recommended size until 3+ years accumul
 *These signals fire infrequently. When they appear, fund them first — you may not get
 another chance for weeks. Take at full recommended size regardless of other signals.*
 
-XLU calendar, XLE BearishHI, SPY BearishLO, QQQ BearishLO,
-QQQ BullishHI, SPY BearishHI double cal, INDA
+XLU calendar, XLV calendar, XLP calendar, XLE BearishHI, SPY BearishLO,
+QQQ BearishLO, QQQ BullishHI, SPY BearishHI double cal, INDA
+
+**Calendar correlation rule:** XLU, XLV, XLP all use the same FVF ≤ 0.90 entry gate and
+can fire simultaneously on FOMC weeks. Cap combined calendar debit at 3% ($3,000) across
+all three. When >1 fires, take the two with the lowest FVF first.
 
 ### Tier B — Score 20–49 (Selective, Good Edge)
 *Fires less than 20 weeks/year or offers meaningfully above-average edge.

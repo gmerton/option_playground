@@ -3,19 +3,22 @@
 **Run date:** 2026-03-02
 
 **Output file:**
+
 - `uvxy_call_spreads_20dte_spread25_2026-03-02.csv` — 20 DTE, spread ≤ 25% on short leg (16,005 rows)
 
 **Related studies:**
+
 - `data/studies/uvxy_short_call_sweep.md` (naked calls — the baseline this study compares against)
 - `data/studies/uvxy_short_put_sweep.md` (puts, for eventual combined optimization)
 
-**Options cache:** MySQL `stocks.options_cache` — 1,476,601 UVXY rows (2018-01-12 → 2026-02-20)
+**Options cache:** MySQL `stocks.options_cache` — 1,476,601 UVXY rows (2018-01-12 → 2026-02-20)1
 
 ---
 
 ## Setup
 
 Bear call spread (credit spread):
+
 - **Short leg**: sell a call at `short_delta_target` (Friday, 20 DTE ± 5)
 - **Long leg**: buy a call at `short_delta_target - wing_delta_width` (further OTM, higher strike)
 - **Exit**: when daily net spread value ≤ 50% × net_credit (profit take), or at expiry (intrinsic net value)
@@ -71,17 +74,17 @@ This is a different denominator than the naked call study (which used Reg T). Se
 
 ## Per-Year Detail — short=0.50, wing=0.10, All VIX
 
-| Year | N | E% | Win% | ROC% | AnnROC% | AvgDays | Crd% |
-|---|---|---|---|---|---|---|---|
-| 2018 | 45 | 76% | 75.6% | **-7.08%** | +326% | 13.2 | 25% |
-| 2019 | 51 | 92% | 92.2% | +17.23% | +929% | 11.5 | 29% |
-| 2020 | 48 | 90% | 89.6% | **+5.74%** | +518% | 12.1 | 23% |
-| 2021 | 46 | 93% | 93.5% | +6.46% | +325% | 13.4 | 18% |
-| 2022 | 50 | 82% | 86.0% | +4.22% | +486% | 12.1 | 24% |
-| 2023 | 41 | 88% | 87.8% | +4.30% | +575% | 11.2 | 24% |
-| 2024 | 46 | 80% | 80.4% | +1.16% | +719% | 12.0 | 24% |
-| 2025 | 42 | 90% | 92.9% | +11.54% | +933% | 11.9 | 23% |
-| 2026 | 5 | 40% | 40.0% | -33.04% | -22% | 17.4 | 22% |
+| Year | N   | E%  | Win%  | ROC%       | AnnROC% | AvgDays | Crd% |
+| ---- | --- | --- | ----- | ---------- | ------- | ------- | ---- |
+| 2018 | 45  | 76% | 75.6% | **-7.08%** | +326%   | 13.2    | 25%  |
+| 2019 | 51  | 92% | 92.2% | +17.23%    | +929%   | 11.5    | 29%  |
+| 2020 | 48  | 90% | 89.6% | **+5.74%** | +518%   | 12.1    | 23%  |
+| 2021 | 46  | 93% | 93.5% | +6.46%     | +325%   | 13.4    | 18%  |
+| 2022 | 50  | 82% | 86.0% | +4.22%     | +486%   | 12.1    | 24%  |
+| 2023 | 41  | 88% | 87.8% | +4.30%     | +575%   | 11.2    | 24%  |
+| 2024 | 46  | 80% | 80.4% | +1.16%     | +719%   | 12.0    | 24%  |
+| 2025 | 42  | 90% | 92.9% | +11.54%    | +933%   | 11.9    | 23%  |
+| 2026 | 5   | 40% | 40.0% | -33.04%    | -22%    | 17.4    | 22%  |
 
 ---
 
@@ -89,16 +92,16 @@ This is a different denominator than the naked call study (which used Reg T). Se
 
 This is the central result of the spread study. The naked call's two catastrophic years were 2018 and 2020. With a 0.10Δ wing at 0.50 short delta:
 
-| Year | Naked 0.50Δ ROC% | Spread +0.10Δ Wing ROC% | Difference |
-|---|---|---|---|
-| 2018 | **-18.51%** | **-7.08%** | +11.4 pp |
-| 2019 | +12.78% | +17.23% | +4.4 pp |
-| **2020** | **-22.75%** | **+5.74%** | **+28.5 pp** |
-| 2021 | +16.16% | +6.46% | -9.7 pp |
-| 2022 | +13.70% | +4.22% | -9.5 pp |
-| 2023 | +13.03% | +4.30% | -8.7 pp |
-| 2024 | +9.66% | +1.16% | -8.5 pp |
-| 2025 | +10.41% | +11.54% | +1.1 pp |
+| Year     | Naked 0.50Δ ROC% | Spread +0.10Δ Wing ROC% | Difference   |
+| -------- | ---------------- | ----------------------- | ------------ |
+| 2018     | **-18.51%**      | **-7.08%**              | +11.4 pp     |
+| 2019     | +12.78%          | +17.23%                 | +4.4 pp      |
+| **2020** | **-22.75%**      | **+5.74%**              | **+28.5 pp** |
+| 2021     | +16.16%          | +6.46%                  | -9.7 pp      |
+| 2022     | +13.70%          | +4.22%                  | -9.5 pp      |
+| 2023     | +13.03%          | +4.30%                  | -8.7 pp      |
+| 2024     | +9.66%           | +1.16%                  | -8.5 pp      |
+| 2025     | +10.41%          | +11.54%                 | +1.1 pp      |
 
 **2020 is transformed**: the COVID spike that produced -22.75% ROC on a naked call becomes +5.74% with the 0.10Δ wing. The long call absorbed the unlimited upside risk. 2018 is also significantly reduced.
 
@@ -109,6 +112,7 @@ The trade-off: every other year shows lower ROC compared to the naked call. This
 ## Why the ROC Numbers Are Not Directly Comparable to Naked Calls
 
 The ROC denominator differs between the two studies:
+
 - **Naked calls**: Reg T margin = (0.20 × strike × 100) + (entry_mid × 100). For a $10 ATM UVXY call, this is roughly $200-300+ per contract.
 - **Spreads**: Max loss = (spread_width - net_credit) × 100. With a $1 spread and 24% credit, max_loss ≈ $76 per contract.
 
@@ -120,12 +124,12 @@ The spread max_loss is typically **3-4× smaller** than Reg T. This inflates spr
 
 Wider wings cost more premium, reduce credit-to-width ratio, and increase the ROC denominator relative to the credit collected:
 
-| Wing Δ | Credit/Width | AnnROC (All VIX) | 2020 ROC% |
-|---|---|---|---|
-| Naked | — | **+660%** | -22.75% |
-| 0.10Δ | 24% | +593% | **+5.74%** |
-| 0.15Δ | 21% | +463% | *(not shown)* |
-| 0.20Δ | 19% | +394% | *(not shown)* |
+| Wing Δ | Credit/Width | AnnROC (All VIX) | 2020 ROC%     |
+| ------ | ------------ | ---------------- | ------------- |
+| Naked  | —            | **+660%**        | -22.75%       |
+| 0.10Δ  | 24%          | +593%            | **+5.74%**    |
+| 0.15Δ  | 21%          | +463%            | _(not shown)_ |
+| 0.20Δ  | 19%          | +394%            | _(not shown)_ |
 
 The 0.10Δ wing is the most efficient: it provides decisive catastrophe protection while giving up the least performance. The 24% credit-to-width ratio means you keep ¾ of the spread width as risk capital but cover the unlimited tail completely.
 
@@ -170,9 +174,11 @@ short calls are most dangerous.
   ≤ 0.90                25   93.3%  96.0%  +13.87%   +991.0%       0.752
   ≤ 0.80                12   96.8%  91.7%   +9.42%   +851.5%       0.627
 ```
-*(NaN entries = extreme backwardation, always included; 2 of 374 trades)*
+
+_(NaN entries = extreme backwardation, always included; 2 of 374 trades)_
 
 **Optimal filter: ≤ 1.20** (127 trades, ~16/year)
+
 - Win rate jumps from 86.6% → 90.6%
 - Per-trade ROC nearly doubles: +5.06% → +9.49%
 - AnnROC: +593% → +797%
@@ -188,6 +194,7 @@ strategy uses All VIX / no fwd_vol_factor filter for simplicity and frequency. T
 analysis is available as a future parameter upgrade if tighter entry selection is desired.
 
 **How to run with this filter:**
+
 ```bash
 AWS_PROFILE=clarinut-gmerton MYSQL_PASSWORD=xxx PYTHONPATH=src python run_call_spreads.py \
     --ticker UVXY --short-deltas 0.50 --wing-widths 0.10 --spread 0.25 \
@@ -201,6 +208,7 @@ AWS_PROFILE=clarinut-gmerton MYSQL_PASSWORD=xxx PYTHONPATH=src python run_call_s
 **Yes, decisively at 0.10Δ wing.** The 2020 COVID spike was UVXY's most extreme move of the 8-year study period. Naked calls were obliterated (-22.75% ROC). The 0.10Δ wing turned the same period into a modest profit (+5.74% ROC). The wing cost: ~11-15% lower ROC in the good years. Given that a single blowup year at naked scale could wipe out 2-3 years of gains, this is likely a favorable trade.
 
 **Recommended starting point for live implementation:**
+
 - Short delta: 0.50 (ATM, best ROC and most liquidity)
 - Wing width: 0.10Δ (best efficiency, decisive tail protection)
 - DTE: 20 (preferred from the naked call study)
@@ -224,12 +232,12 @@ fwd_vol_factor = √var_fwd / near_iv
 Use the ATM put at the spread's expiry as the near leg; the next monthly expiry
 (15–60 days later) as the far leg. Use the same ATM strike for both.
 
-| fwd_vol_factor | Action |
-|---|---|
-| ≤ 1.20 | ✓ Normal entry — proceed |
-| 1.20 – 1.50 | ⚠ Elevated contango — enter but size conservatively |
-| > 1.50 | ✗ **Extreme contango — consider skipping this week** |
-| NaN (var_fwd ≤ 0) | ✓ Extreme backwardation — most favorable, enter |
+| fwd_vol_factor    | Action                                               |
+| ----------------- | ---------------------------------------------------- |
+| ≤ 1.20            | ✓ Normal entry — proceed                             |
+| 1.20 – 1.50       | ⚠ Elevated contango — enter but size conservatively  |
+| > 1.50            | ✗ **Extreme contango — consider skipping this week** |
+| NaN (var_fwd ≤ 0) | ✓ Extreme backwardation — most favorable, enter      |
 
 **Context:** UVXY's long-run avg factor is 1.336. Factor > 1.50 means the market is
 pricing in a significant vol spike in the window just beyond expiry — a warning sign
@@ -254,6 +262,7 @@ PYTHONPATH=src python run_uvxy_call_spreads.py --spread 0.25 \
 ```
 
 **Key files:**
+
 - `run_uvxy_call_spreads.py` — CLI runner
 - `src/lib/studies/call_spread_study.py` — spread engine
 - `src/lib/studies/call_study.py` — naked call baseline
