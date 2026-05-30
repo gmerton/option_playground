@@ -150,7 +150,7 @@ def main() -> int:
         print("usage: ema_monitor.py SYMBOL [SYMBOL ...]")
         return 1
 
-    ib = connect_ib(client_id=12)
+    ib = connect_ib(client_id=int(os.environ.get("IB_CLIENT_ID", "12")))
     print(f"OK Connected (paper {ib.managedAccounts()}). Monitoring: {', '.join(symbols)}\n")
     _log(f"[{datetime.now():%Y-%m-%d %H:%M:%S}] --- session start: monitoring {', '.join(symbols)} ---")
 
