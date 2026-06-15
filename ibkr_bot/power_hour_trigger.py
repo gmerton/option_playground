@@ -77,6 +77,7 @@ def simulate_exit(sess: pd.DataFrame, i: int, stop_mode: str) -> tuple:
       vwap      -- thesis-invalidation: exit on the first bar that closes back < VWAP
       pct:X     -- fixed: exit if price trades down X% from entry
       ema9      -- trailing: exit on the first bar that closes back below the 9 EMA
+      ema_cross -- trend: exit on the first bar where 9 EMA falls below the 21 EMA
       trail:X   -- trailing: exit if price falls X% from the running peak high since entry
     """
     entry = sess["close"].iloc[i]
@@ -94,6 +95,8 @@ def simulate_exit(sess: pd.DataFrame, i: int, stop_mode: str) -> tuple:
             return hhmm.iloc[j], b["close"], "vwap"
         if stop_mode == "ema9" and b["close"] < b["ema9"]:
             return hhmm.iloc[j], b["close"], "ema9"
+        if stop_mode == "ema_cross" and b["ema9"] < b["ema21"]:
+            return hhmm.iloc[j], b["close"], "9<21"
         if pct is not None and b["low"] <= entry * (1 - pct):
             return hhmm.iloc[j], entry * (1 - pct), "stop"
         if trail is not None and b["low"] <= peak * (1 - trail):

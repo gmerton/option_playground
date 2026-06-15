@@ -4,3 +4,10 @@ __pycache__/
 **/__pycache__/
 *.pyc
 src/lib/output/
+
+# ibkr_bot runtime artifacts
+ibkr_bot/signals.db
+ibkr_bot/signals.db-wal
+ibkr_bot/signals.db-shm
+ibkr_bot/alerts.log
+.env

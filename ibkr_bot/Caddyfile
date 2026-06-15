@@ -1,0 +1,20 @@
+# Public HTTPS for the signal UI, no domain required.
+#
+# `tls internal` makes Caddy mint the server cert from its own local CA, so it
+# works for a bare Elastic IP (Let's Encrypt won't issue for IPs). It is real
+# TLS -- the password is never sent in clear -- but the browser won't trust the
+# cert until you import Caddy's root CA once (see DEPLOY.md). After that you get
+# a trusted padlock AND effective cert-pinning against MITM.
+#
+# Caddy auto-sets X-Forwarded-Proto/-For on the proxied request, which the UI
+# uses to mark the session cookie Secure and to rate-limit by real client IP.
+
+{
+	# Issue internal certs on demand for whatever host/IP is requested.
+	auto_https disable_redirects
+}
+
+:443 {
+	tls internal
+	reverse_proxy signal-ui:8000
+}

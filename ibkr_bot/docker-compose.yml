@@ -1,0 +1,74 @@
+# Single-host deployment: IB Gateway + monitor + web UI + TLS proxy.
+# All on one private network; only Caddy's 443 is published. The bot reaches
+# the gateway at ib-gateway:4002 (paper) and never exposes the API to the host.
+#
+#   cp .env.example .env   # then fill in IB creds + UI_PASSWORD_HASH/UI_SECRET
+#   docker compose up -d --build
+#
+services:
+  ib-gateway:
+    image: ghcr.io/gnzsnz/ib-gateway:stable
+    restart: unless-stopped
+    environment:
+      TWS_USERID: ${TWS_USERID}
+      TWS_PASSWORD: ${TWS_PASSWORD}
+      TRADING_MODE: paper
+      # Bot only reads market data -- keep the API read-only so a compromise
+      # can't place orders. Flip to 'no' only if you add order entry later.
+      READ_ONLY_API: ${READ_ONLY_API:-yes}
+      TWS_ACCEPT_INCOMING: accept
+      # IBC restarts the gateway daily at this local time; the bot reconnects.
+      AUTO_RESTART_TIME: ${AUTO_RESTART_TIME:-11:55 PM}
+      TIME_ZONE: ${TIME_ZONE:-America/New_York}
+      BYPASS_WARNING: "yes"
+    volumes:
+      - ibgw_settings:/home/ibgateway/Jts
+    # No `ports:` -- the API (4002) stays on the internal network only.
+
+  bot:
+    build: .
+    restart: unless-stopped
+    depends_on: [ib-gateway]
+    command: python signal_monitor.py --signals phb --watchlist watchlist_phb.txt
+    environment:
+      IB_HOST: ib-gateway
+      IB_PORT: "4002"
+      IB_CLIENT_ID: "13"
+      IB_SUPERVISED: "1"        # wait through the daily reset; exit->restart on drop
+      SIGNAL_DB: /data/signals.db
+      TZ: ${TIME_ZONE:-America/New_York}
+    volumes:
+      - signal_data:/data
+
+  signal-ui:
+    build: .
+    restart: unless-stopped
+    command: python signal_ui.py
+    environment:
+      UI_HOST: "0.0.0.0"        # reachable by Caddy on the internal network
+      UI_PORT: "8000"
+      SIGNAL_DB: /data/signals.db
+      UI_PASSWORD_HASH: ${UI_PASSWORD_HASH}
+      UI_SECRET: ${UI_SECRET}
+      UI_COOKIE_SECURE: "1"
+      TZ: ${TIME_ZONE:-America/New_York}
+    volumes:
+      - signal_data:/data
+    # No `ports:` -- only Caddy reaches 8000.
+
+  caddy:
+    image: caddy:2
+    restart: unless-stopped
+    depends_on: [signal-ui]
+    ports:
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data       # holds the internal root CA you'll trust
+      - caddy_config:/config
+
+volumes:
+  ibgw_settings:    # gateway login/session + settings (persists the daily cycle)
+  signal_data:      # the shared SQLite signal store
+  caddy_data:
+  caddy_config:

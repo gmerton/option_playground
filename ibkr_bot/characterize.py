@@ -36,6 +36,7 @@ def add_indicators(df: pd.DataFrame) -> pd.DataFrame:
     c = df["close"]
     df["ema9"] = c.ewm(span=FAST, adjust=False).mean()
     df["ema20"] = c.ewm(span=SLOW, adjust=False).mean()
+    df["ema21"] = c.ewm(span=21, adjust=False).mean()
     tp = (df["high"] + df["low"] + df["close"]) / 3
     wap = df["wap"].where(df.get("wap", 0) > 0, tp) if "wap" in df else tp
     df["vwap"] = (wap * df["volume"]).cumsum() / df["volume"].cumsum()

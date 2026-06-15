@@ -17,8 +17,40 @@ after the low — entry price, % off the low, and % of the move still ahead.
 ## Patterns
 | Name | File | Status | Examples | Entry |
 |---|---|---|---|---|
-| Morning Flush Reversal (MFR) | [morning_flush_reversal.md](morning_flush_reversal.md) | exploring | 1 | morning oversold reclaim |
-| Power Hour Breakout (PHB) | [power_hour_breakout.md](power_hour_breakout.md) | exploring | 4 ex + 5 counter | late-day base breakout |
+| Volatility-Contraction Breakout (VCB) | [volatility_contraction_breakout.md](volatility_contraction_breakout.md) | exploring · backtested (`vcb.py`) · **live-alert wired** | 1 (AAOI) | coil → OR-high break on volume, RS-gated |
+| Morning Flush Reversal (MFR) | [morning_flush_reversal.md](morning_flush_reversal.md) | exploring · live-alert wired | 1 | morning oversold reclaim |
+| Power Hour Breakout (PHB) | [power_hour_breakout.md](power_hour_breakout.md) | **retired** — dead out-of-sample (PF 0.66) | 4 ex + 5 counter | late-day base breakout |
+| EMA 9/20 cross | (see `ema_monitor.py` / `signal_monitor.py`) | live-alert (v1, whippy) | — | EMA crossover |
+
+## Live alerting
+`signal_monitor.py` watches live 1-min bars and fires an alert (terminal bell +
+macOS dialog + `alerts.log`) the moment any pattern triggers. Alert-only — no
+orders. It reuses the *same* detection code as the backtests: indicators from
+`characterize.add_indicators`, and PHB delegates to
+`power_hour_trigger.find_trigger` (1.0% above-VWAP precision filter on,
+intraday-flat window 14:30–15:30), so a live fire means what a backtest fire meant.
+
+```bash
+.venv/bin/python3 ibkr_bot/signal_monitor.py PL CIEN AAOI         # default ema,mfr,vcb
+.venv/bin/python3 ibkr_bot/signal_monitor.py --signals vcb AAOI CIEN
+.venv/bin/python3 ibkr_bot/signal_monitor.py --signals vcb --vcb-rs-min 5 --index QQQ MRVL
+.venv/bin/python3 ibkr_bot/signal_monitor.py --mfr-trigger rsi40 PL
+```
+
+**VCB** (`detect_vcb`) reuses `vcb.find_vcb` (same gate/trigger as the backtest) and
+needs a relative-strength benchmark: the monitor auto-subscribes `--index` (default
+SPY) as a hidden feed and shares its ret-from-open, so the live RS gate (`--vcb-rs-min`,
+default +3 pts) matches the backtest. No index feed → VCB never fires (by design — a
+breakout without the selection gate is just noise). Validated by bar-by-bar replay:
+AAOI 2026-06-04 fires live at 12:24, the same bar as the backtest. The intraday stop
+(none / adr:0.45) is an *execution* choice, not part of the alert.
+
+Validated offline by replaying cached sessions bar-by-bar: PHB fires on the four
+winners (CIEN/IBM/DDOG/PANW) and stays silent on NVDA/TXN; MFR fires on PL and
+stays silent on non-flush names. ⚠️ Still in-sample (one up-day) — alerts are a
+heads-up, not a validated edge. MFR is N=1 and experimental; its gate is anchored
+on % down from open (≤−5%) + oversold RSI (≤30 at the low), with below-VWAP as
+context, not required (an open-gap flush drags session-VWAP down with price).
 
 Batch-scan a watchlist through the PHB lens with `scan_phb.py SYM SYM ...` — sorts
 into STRONG / weak / COUNTER. Counter-examples are first-class: a 45-symbol scan

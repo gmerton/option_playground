@@ -30,3 +30,57 @@
 [2026-05-29 12:01:05]  vv DDOG: 9 EMA crossed BELOW 20 EMA  |  price 242.69  VWAP 238.91 (px above)  (bar 15:00)
 [2026-05-29 12:04:05]  ^^ AVGO: 9 EMA crossed ABOVE 20 EMA  |  price 436.48  VWAP 439.87 (px below)  (bar 15:03)
 [2026-05-29 12:09:06]  ^^ DDOG: 9 EMA crossed ABOVE 20 EMA  |  price 243.29  VWAP 238.97 (px above)  (bar 15:08)
+[2026-06-01 11:29:05] --- signal_monitor start: phb on AAOI, AAPL, ADI, AEHR, AMD, AMKR, APLD, APP, ASTS, AVGO, AXTI, CIEN, CRDO, CSCO, DDOG, DELL, ENPH, FLEX, HOOD, IBM, INTC, JOBY, KLAR, M, MCHP, MNST, MRVL, MSFT, MU, NUE, NVDA, ON, ORCL, PANW, PL, QBTS, QCOM, RGTI, RKLB, ROKU, SEDG, SLB, SNOW, TER, TSLA, TXN, WDC ---
+[2026-06-01 11:33:05]  [PHB] NUE: POWER-HOUR IGNITION @ 14:32  |  entry 252.20  (+1.2% vs VWAP, RSI 70); intraday-flat -- exit by close, VWAP stop
+[2026-06-01 11:36:05]  [PHB] RGTI: POWER-HOUR IGNITION @ 14:35  |  entry 26.14  (+2.9% vs VWAP, RSI 69); intraday-flat -- exit by close, VWAP stop
+[2026-06-01 11:36:06]  [PHB] QBTS: POWER-HOUR IGNITION @ 14:35  |  entry 30.55  (+3.2% vs VWAP, RSI 67); intraday-flat -- exit by close, VWAP stop
+[2026-06-01 11:37:05]  [PHB] JOBY: POWER-HOUR IGNITION @ 14:36  |  entry 12.23  (+2.7% vs VWAP, RSI 71); intraday-flat -- exit by close, VWAP stop
+[2026-06-01 11:38:05]  [PHB] PANW: POWER-HOUR IGNITION @ 14:37  |  entry 300.22  (+2.8% vs VWAP, RSI 69); intraday-flat -- exit by close, VWAP stop
+[2026-06-01 11:38:06]  [PHB] ASTS: POWER-HOUR IGNITION @ 14:37  |  entry 108.49  (+4.2% vs VWAP, RSI 67); intraday-flat -- exit by close, VWAP stop
+[2026-06-01 11:40:05]  [PHB] ORCL: POWER-HOUR IGNITION @ 14:39  |  entry 249.54  (+4.4% vs VWAP, RSI 63); intraday-flat -- exit by close, VWAP stop
+[2026-06-01 14:39:32] --- signal_monitor start: phb on AAPL, MSFT ---
+[2026-06-01 14:45:20] --- signal_monitor start: phb on AAPL, MSFT ---
+[2026-06-04 21:26:51] --- signal_monitor start: vcb on AAOI, CIEN ---
+[2026-06-05 06:39:33] --- signal_monitor start: vcb on AAOI, AAPL, ADI, AEHR, AMD, AMKR, APLD, APP, ASTS, AVGO, AXTI, CIEN, CRDO, CSCO, DDOG, DELL, ENPH, FLEX, HOOD, IBM, INTC, JOBY, KLAR, M, MCHP, MNST, MRVL, MSFT, MU, NUE, NVDA, ON, ORCL, PANW, PL, QBTS, QCOM, RGTI, RKLB, ROKU, SEDG, SLB, SNOW, TER, TSLA, TXN, WDC, C, CRWD, CVS, DOCN, FITB, GS, KLAC, LITE, MRK, MRNA, MS, RDDT, STRL, TWLO, UNH, WOLF ---
+[2026-06-05 06:42:21] --- signal_monitor start: vcb on AAOI, AAPL, ADI, AEHR, AMD, AMKR, APLD, APP, ASTS, AVGO, AXTI, CIEN, CRDO, CSCO, DDOG, DELL, ENPH, FLEX, HOOD, IBM, INTC, JOBY, KLAR, M, MCHP, MNST, MRVL, MSFT, MU, NUE, NVDA, ON, ORCL, PANW, PL, QBTS, QCOM, RGTI, RKLB, ROKU, SEDG, SLB, SNOW, TER, TSLA, TXN, WDC, C, CRWD, CVS, DOCN, FITB, GS, KLAC, LITE, MRK, MRNA, MS, RDDT, STRL, TWLO, UNH, WOLF ---
+[2026-06-05 11:42:08]  [VCB] MNST: VCB BREAKOUT @ 14:41  |  entry 90.36  (OR-high 89.66, vol 2.1x, RSI 77, RS +3.1pts vs idx); intraday-flat -- exit by close, wide/ADR stop
+[2026-06-08 06:55:23] --- signal_monitor start: vcb on AAOI, AAPL, ADI, AEHR, AMD, AMKR, APLD, APP, ASTS, AVGO, AXTI, CIEN, CRDO, CSCO, DDOG, DELL, ENPH, FLEX, HOOD, IBM, INTC, JOBY, KLAR, M, MCHP, MNST, MRVL, MSFT, MU, NUE, NVDA, ON, ORCL, PANW, PL, QBTS, QCOM, RGTI, RKLB, ROKU, SEDG, SLB, SNOW, TER, TSLA, TXN, WDC, C, CRWD, CVS, DOCN, FITB, GS, KLAC, LITE, MRK, MRNA, MS, RDDT, STRL, TWLO, UNH, WOLF ---
+[2026-06-08 07:33:05]  [VCB] RGTI: VCB BREAKOUT @ 10:32  |  entry 22.00  (OR-high 21.85, vol 3.0x, RSI 70, RS +3.2pts vs idx); intraday-flat -- exit by close, wide/ADR stop
+[2026-06-08 07:59:05]  [VCB] KLAC: VCB BREAKOUT @ 10:58  |  entry 2100.54  (OR-high 2082.30, vol 2.2x, RSI 73, RS +3.3pts vs idx); intraday-flat -- exit by close, wide/ADR stop
+[2026-06-08 08:40:07]  [VCB] M: VCB BREAKOUT @ 11:39  |  entry 22.67  (OR-high 22.33, vol 2.5x, RSI 68, RS +3.0pts vs idx); intraday-flat -- exit by close, wide/ADR stop
+[2026-06-08 08:45:05]  [VCB] CRDO: VCB BREAKOUT @ 11:44  |  entry 227.21  (OR-high 227.00, vol 3.1x, RSI 63, RS +4.3pts vs idx); intraday-flat -- exit by close, wide/ADR stop
+[2026-06-08 09:29:36] --- signal_monitor start: ema on AAOI, AAPL, ADI, AEHR, AMD, AMKR, APLD, APP, ASTS, AVGO, AXTI, CIEN, CRDO, CSCO, DDOG, DELL, ENPH, FLEX, HOOD, IBM, INTC, JOBY, KLAR, M, MCHP, MNST, MRVL, MSFT, MU, NUE, NVDA, ON, ORCL, PANW, PL, QBTS, QCOM, RGTI, RKLB, ROKU, SEDG, SLB, SNOW, TER, TSLA, TXN, WDC, C, CRWD, CVS, DOCN, FITB, GS, KLAC, LITE, MRK, MRNA, MS, RDDT, STRL, TWLO, UNH, WOLF ---
+[2026-06-08 09:30:05]  [EMA] AAPL: 9 EMA crossed BELOW 20 EMA  |  price 313.67, VWAP 312.98 (px above)  (bar 12:29)
+[2026-06-08 09:30:06]  [EMA] QCOM: 9 EMA crossed BELOW 20 EMA  |  price 218.42, VWAP 218.77 (px below)  (bar 12:29)
+[2026-06-08 09:30:06]  [EMA] RKLB: 9 EMA crossed BELOW 20 EMA  |  price 113.76, VWAP 114.03 (px below)  (bar 12:29)
+[2026-06-08 09:30:06]  [EMA] AXTI: 9 EMA crossed BELOW 20 EMA  |  price 92.79, VWAP 93.92 (px below)  (bar 12:29)
+[2026-06-08 09:30:07]  [EMA] AMKR: 9 EMA crossed BELOW 20 EMA  |  price 68.30, VWAP 68.15 (px above)  (bar 12:29)
+[2026-06-08 09:30:07]  [EMA] IBM: 9 EMA crossed BELOW 20 EMA  |  price 281.69, VWAP 284.70 (px below)  (bar 12:29)
+[2026-06-08 09:31:05]  [EMA] IBM: 9 EMA crossed ABOVE 20 EMA  |  price 281.96, VWAP 284.69 (px below)  (bar 12:30)
+[2026-06-08 09:31:05]  [EMA] KLAR: 9 EMA crossed BELOW 20 EMA  |  price 16.54, VWAP 16.58 (px below)  (bar 12:30)
+[2026-06-08 09:31:06]  [EMA] AEHR: 9 EMA crossed BELOW 20 EMA  |  price 97.53, VWAP 98.76 (px below)  (bar 12:30)
+[2026-06-08 09:32:21] --- signal_monitor start: ema on NBIS, MRVL ---
+[2026-06-08 09:49:06]  [VCB] AAOI: VCB BREAKOUT @ 12:48  |  entry 197.58  (OR-high 189.49, vol 2.2x, RSI 61, RS +7.0pts vs idx); intraday-flat -- exit by close, wide/ADR stop
+[2026-06-08 09:50:05]  [EMA] MRVL: 9 EMA crossed ABOVE 20 EMA  |  price 299.83, VWAP 294.14 (px above)  (bar 12:49)
+[2026-06-08 10:01:05]  [EMA] MRVL: 9 EMA crossed BELOW 20 EMA  |  price 297.32, VWAP 294.22 (px above)  (bar 13:00)
+[2026-06-08 10:18:05]  [EMA] MRVL: 9 EMA crossed ABOVE 20 EMA  |  price 298.75, VWAP 294.37 (px above)  (bar 13:17)
+[2026-06-08 10:19:05]  [EMA] MRVL: 9 EMA crossed BELOW 20 EMA  |  price 297.78, VWAP 294.38 (px above)  (bar 13:18)
+[2026-06-08 10:22:05]  [EMA] MRVL: 9 EMA crossed ABOVE 20 EMA  |  price 298.80, VWAP 294.39 (px above)  (bar 13:21)
+[2026-06-08 10:23:05]  [EMA] MRVL: 9 EMA crossed BELOW 20 EMA  |  price 297.89, VWAP 294.40 (px above)  (bar 13:22)
+[2026-06-08 10:27:05]  [EMA] MRVL: 9 EMA crossed ABOVE 20 EMA  |  price 298.72, VWAP 294.42 (px above)  (bar 13:26)
+[2026-06-08 10:44:05]  [EMA] MRVL: 9 EMA crossed BELOW 20 EMA  |  price 298.60, VWAP 294.61 (px above)  (bar 13:43)
+[2026-06-08 10:47:05]  [EMA] MRVL: 9 EMA crossed ABOVE 20 EMA  |  price 299.90, VWAP 294.62 (px above)  (bar 13:46)
+[2026-06-08 11:15:06]  [EMA] MRVL: 9 EMA crossed BELOW 20 EMA  |  price 301.09, VWAP 294.95 (px above)  (bar 14:14)
+[2026-06-08 11:18:05]  [EMA] MRVL: 9 EMA crossed ABOVE 20 EMA  |  price 301.93, VWAP 294.97 (px above)  (bar 14:17)
+[2026-06-08 11:20:05]  [EMA] MRVL: 9 EMA crossed BELOW 20 EMA  |  price 300.95, VWAP 294.99 (px above)  (bar 14:19)
+[2026-06-08 12:32:05]  [EMA] MRVL: 9 EMA crossed ABOVE 20 EMA  |  price 295.33, VWAP 295.06 (px above)  (bar 15:31)
+[2026-06-08 12:41:05]  [EMA] MRVL: 9 EMA crossed BELOW 20 EMA  |  price 292.41, VWAP 295.03 (px below)  (bar 15:40)
+[2026-06-14 19:05:32] --- breakout monitor start: STT, JBHT, AMD, AMKR ---
+[2026-06-14 19:14:06] --- breakout monitor start: STT, JBHT, AMD, AMKR ---
+[2026-06-14 19:22:08] --- breakout monitor start: STT, JBHT, FITB, C, CVS, IBKR, KEYS, CAT, ADI, AMD, RVMD, AMKR, INTC, ONTO, AMAT, UCTT ---
+[2026-06-14 19:24:05] --- breakout monitor start: STT, JBHT, FITB, C, CVS, IBKR, KEYS, CAT, ADI, AMD, RVMD, AMKR, INTC, ONTO, AMAT, UCTT ---
+[2026-06-14 20:08:07] --- breakout monitor start: ARMK, MS, RPRX, STT ---
+[2026-06-14 20:30:40] --- breakout monitor start: STT, JBHT, FITB, C, CVS, IBKR, KEYS, CAT, ADI, AMD, RVMD, AMKR, INTC, ONTO, AMAT, UCTT, ARMK, MS, RPRX ---
+[2026-06-14 20:30:58] --- breakout monitor start: STT, JBHT, FITB, C, CVS, IBKR, KEYS, CAT, ADI, AMD, RVMD, AMKR, INTC, ONTO, AMAT, UCTT, ARMK, MS, RPRX ---
+[2026-06-14 20:35:52] --- breakout monitor start: STT, JBHT, FITB, C, CVS, IBKR, KEYS, CAT, ADI, AMD, RVMD, AMKR, INTC, ONTO, AMAT, UCTT, ARMK, MS, RPRX ---
+[2026-06-14 20:59:44] --- breakout monitor start: STT, JBHT, FITB, C, CVS, IBKR, KEYS, CAT, ADI, AMD, RVMD, AMKR, INTC, ONTO, AMAT, UCTT, ARMK, MS, RPRX, FTNT, DAL, CRWD, PANW, UAL ---

@@ -1,0 +1,482 @@
+{
+  "AMKR": {
+    "theme": "Semis/AI-cap",
+    "theme_rs": 0.2425,
+    "priority_mult": 1.708,
+    "size_mult": 1.568,
+    "rank": 1,
+    "catalyst": "AI capex = defining 2026 theme; TSMC capex up; memory upcycle; ceasefire risk-on"
+  },
+  "ONTO": {
+    "theme": "Semis/AI-cap",
+    "theme_rs": 0.2425,
+    "priority_mult": 1.708,
+    "size_mult": 1.568,
+    "rank": 1,
+    "catalyst": "AI capex = defining 2026 theme; TSMC capex up; memory upcycle; ceasefire risk-on"
+  },
+  "AMAT": {
+    "theme": "Semis/AI-cap",
+    "theme_rs": 0.2425,
+    "priority_mult": 1.708,
+    "size_mult": 1.568,
+    "rank": 1,
+    "catalyst": "AI capex = defining 2026 theme; TSMC capex up; memory upcycle; ceasefire risk-on"
+  },
+  "INTC": {
+    "theme": "Semis/AI-cap",
+    "theme_rs": 0.2425,
+    "priority_mult": 1.708,
+    "size_mult": 1.568,
+    "rank": 1,
+    "catalyst": "AI capex = defining 2026 theme; TSMC capex up; memory upcycle; ceasefire risk-on"
+  },
+  "UCTT": {
+    "theme": "Semis/AI-cap",
+    "theme_rs": 0.2425,
+    "priority_mult": 1.708,
+    "size_mult": 1.568,
+    "rank": 1,
+    "catalyst": "AI capex = defining 2026 theme; TSMC capex up; memory upcycle; ceasefire risk-on"
+  },
+  "AMD": {
+    "theme": "Semis/AI-cap",
+    "theme_rs": 0.2425,
+    "priority_mult": 1.708,
+    "size_mult": 1.568,
+    "rank": 1,
+    "catalyst": "AI capex = defining 2026 theme; TSMC capex up; memory upcycle; ceasefire risk-on"
+  },
+  "ADI": {
+    "theme": "Semis/AI-cap",
+    "theme_rs": 0.2425,
+    "priority_mult": 1.708,
+    "size_mult": 1.568,
+    "rank": 1,
+    "catalyst": "AI capex = defining 2026 theme; TSMC capex up; memory upcycle; ceasefire risk-on"
+  },
+  "AEHR": {
+    "theme": "Semis/AI-cap",
+    "theme_rs": 0.2425,
+    "priority_mult": 1.708,
+    "size_mult": 1.568,
+    "rank": 1,
+    "catalyst": "AI capex = defining 2026 theme; TSMC capex up; memory upcycle; ceasefire risk-on"
+  },
+  "SKYT": {
+    "theme": "Semis/AI-cap",
+    "theme_rs": 0.2425,
+    "priority_mult": 1.708,
+    "size_mult": 1.568,
+    "rank": 1,
+    "catalyst": "AI capex = defining 2026 theme; TSMC capex up; memory upcycle; ceasefire risk-on"
+  },
+  "KEYS": {
+    "theme": "Semis/AI-cap",
+    "theme_rs": 0.2425,
+    "priority_mult": 1.708,
+    "size_mult": 1.568,
+    "rank": 1,
+    "catalyst": "AI capex = defining 2026 theme; TSMC capex up; memory upcycle; ceasefire risk-on"
+  },
+  "FTNT": {
+    "theme": "Cybersecurity",
+    "theme_rs": 0.1514,
+    "priority_mult": 1.433,
+    "size_mult": 1.35,
+    "rank": 2,
+    "catalyst": "AI-driven security spend cycle; durable dual-timeframe RS"
+  },
+  "CRWD": {
+    "theme": "Cybersecurity",
+    "theme_rs": 0.1514,
+    "priority_mult": 1.433,
+    "size_mult": 1.35,
+    "rank": 2,
+    "catalyst": "AI-driven security spend cycle; durable dual-timeframe RS"
+  },
+  "PANW": {
+    "theme": "Cybersecurity",
+    "theme_rs": 0.1514,
+    "priority_mult": 1.433,
+    "size_mult": 1.35,
+    "rank": 2,
+    "catalyst": "AI-driven security spend cycle; durable dual-timeframe RS"
+  },
+  "ZS": {
+    "theme": "Cybersecurity",
+    "theme_rs": 0.1514,
+    "priority_mult": 1.433,
+    "size_mult": 1.35,
+    "rank": 2,
+    "catalyst": "AI-driven security spend cycle; durable dual-timeframe RS"
+  },
+  "NET": {
+    "theme": "Cybersecurity",
+    "theme_rs": 0.1514,
+    "priority_mult": 1.433,
+    "size_mult": 1.35,
+    "rank": 2,
+    "catalyst": "AI-driven security spend cycle; durable dual-timeframe RS"
+  },
+  "S": {
+    "theme": "Cybersecurity",
+    "theme_rs": 0.1514,
+    "priority_mult": 1.433,
+    "size_mult": 1.35,
+    "rank": 2,
+    "catalyst": "AI-driven security spend cycle; durable dual-timeframe RS"
+  },
+  "OKTA": {
+    "theme": "Cybersecurity",
+    "theme_rs": 0.1514,
+    "priority_mult": 1.433,
+    "size_mult": 1.35,
+    "rank": 2,
+    "catalyst": "AI-driven security spend cycle; durable dual-timeframe RS"
+  },
+  "TENB": {
+    "theme": "Cybersecurity",
+    "theme_rs": 0.1514,
+    "priority_mult": 1.433,
+    "size_mult": 1.35,
+    "rank": 2,
+    "catalyst": "AI-driven security spend cycle; durable dual-timeframe RS"
+  },
+  "DAL": {
+    "theme": "Airlines",
+    "theme_rs": 0.1217,
+    "priority_mult": 1.368,
+    "size_mult": 1.301,
+    "rank": 3,
+    "catalyst": "ceasefire->cheap jet fuel tailwind (flip side of energy headwind)"
+  },
+  "UAL": {
+    "theme": "Airlines",
+    "theme_rs": 0.1217,
+    "priority_mult": 1.368,
+    "size_mult": 1.301,
+    "rank": 3,
+    "catalyst": "ceasefire->cheap jet fuel tailwind (flip side of energy headwind)"
+  },
+  "AAL": {
+    "theme": "Airlines",
+    "theme_rs": 0.1217,
+    "priority_mult": 1.368,
+    "size_mult": 1.301,
+    "rank": 3,
+    "catalyst": "ceasefire->cheap jet fuel tailwind (flip side of energy headwind)"
+  },
+  "LUV": {
+    "theme": "Airlines",
+    "theme_rs": 0.1217,
+    "priority_mult": 1.368,
+    "size_mult": 1.301,
+    "rank": 3,
+    "catalyst": "ceasefire->cheap jet fuel tailwind (flip side of energy headwind)"
+  },
+  "LITE": {
+    "theme": "Optical/Network",
+    "theme_rs": 0.1056,
+    "priority_mult": 1.296,
+    "size_mult": 1.239,
+    "rank": 4,
+    "catalyst": "AI-infra adjacent (rides capex)"
+  },
+  "VIAV": {
+    "theme": "Optical/Network",
+    "theme_rs": 0.1056,
+    "priority_mult": 1.296,
+    "size_mult": 1.239,
+    "rank": 4,
+    "catalyst": "AI-infra adjacent (rides capex)"
+  },
+  "AAOI": {
+    "theme": "Optical/Network",
+    "theme_rs": 0.1056,
+    "priority_mult": 1.296,
+    "size_mult": 1.239,
+    "rank": 4,
+    "catalyst": "AI-infra adjacent (rides capex)"
+  },
+  "TPR": {
+    "theme": "Retail/Luxury",
+    "theme_rs": 0.051,
+    "priority_mult": 1.102,
+    "size_mult": 1.077,
+    "rank": 5,
+    "catalyst": ""
+  },
+  "STT": {
+    "theme": "Financials",
+    "theme_rs": 0.0165,
+    "priority_mult": 1.085,
+    "size_mult": 1.076,
+    "rank": 6,
+    "catalyst": "risk-on tailwind from ceasefire"
+  },
+  "C": {
+    "theme": "Financials",
+    "theme_rs": 0.0165,
+    "priority_mult": 1.085,
+    "size_mult": 1.076,
+    "rank": 6,
+    "catalyst": "risk-on tailwind from ceasefire"
+  },
+  "FITB": {
+    "theme": "Financials",
+    "theme_rs": 0.0165,
+    "priority_mult": 1.085,
+    "size_mult": 1.076,
+    "rank": 6,
+    "catalyst": "risk-on tailwind from ceasefire"
+  },
+  "KEY": {
+    "theme": "Financials",
+    "theme_rs": 0.0165,
+    "priority_mult": 1.085,
+    "size_mult": 1.076,
+    "rank": 6,
+    "catalyst": "risk-on tailwind from ceasefire"
+  },
+  "IBKR": {
+    "theme": "Financials",
+    "theme_rs": 0.0165,
+    "priority_mult": 1.085,
+    "size_mult": 1.076,
+    "rank": 6,
+    "catalyst": "risk-on tailwind from ceasefire"
+  },
+  "MS": {
+    "theme": "Financials",
+    "theme_rs": 0.0165,
+    "priority_mult": 1.085,
+    "size_mult": 1.076,
+    "rank": 6,
+    "catalyst": "risk-on tailwind from ceasefire"
+  },
+  "BNY": {
+    "theme": "Financials",
+    "theme_rs": 0.0165,
+    "priority_mult": 1.085,
+    "size_mult": 1.076,
+    "rank": 6,
+    "catalyst": "risk-on tailwind from ceasefire"
+  },
+  "RY": {
+    "theme": "Financials",
+    "theme_rs": 0.0165,
+    "priority_mult": 1.085,
+    "size_mult": 1.076,
+    "rank": 6,
+    "catalyst": "risk-on tailwind from ceasefire"
+  },
+  "TD": {
+    "theme": "Financials",
+    "theme_rs": 0.0165,
+    "priority_mult": 1.085,
+    "size_mult": 1.076,
+    "rank": 6,
+    "catalyst": "risk-on tailwind from ceasefire"
+  },
+  "BEN": {
+    "theme": "Financials",
+    "theme_rs": 0.0165,
+    "priority_mult": 1.085,
+    "size_mult": 1.076,
+    "rank": 6,
+    "catalyst": "risk-on tailwind from ceasefire"
+  },
+  "HOOD": {
+    "theme": "Financials",
+    "theme_rs": 0.0165,
+    "priority_mult": 1.085,
+    "size_mult": 1.076,
+    "rank": 6,
+    "catalyst": "risk-on tailwind from ceasefire"
+  },
+  "LEN": {
+    "theme": "Homebuilders",
+    "theme_rs": 0.0327,
+    "priority_mult": 1.065,
+    "size_mult": 1.049,
+    "rank": 7,
+    "catalyst": ""
+  },
+  "BLD": {
+    "theme": "Homebuilders",
+    "theme_rs": 0.0327,
+    "priority_mult": 1.065,
+    "size_mult": 1.049,
+    "rank": 7,
+    "catalyst": ""
+  },
+  "VRT": {
+    "theme": "DataCtr-Power",
+    "theme_rs": -0.049,
+    "priority_mult": 0.992,
+    "size_mult": 1.019,
+    "rank": 8,
+    "catalyst": "AI power-buildout narrative intact though price consolidating (RS/news diverge)"
+  },
+  "GEV": {
+    "theme": "DataCtr-Power",
+    "theme_rs": -0.049,
+    "priority_mult": 0.992,
+    "size_mult": 1.019,
+    "rank": 8,
+    "catalyst": "AI power-buildout narrative intact though price consolidating (RS/news diverge)"
+  },
+  "NVT": {
+    "theme": "DataCtr-Power",
+    "theme_rs": -0.049,
+    "priority_mult": 0.992,
+    "size_mult": 1.019,
+    "rank": 8,
+    "catalyst": "AI power-buildout narrative intact though price consolidating (RS/news diverge)"
+  },
+  "RVMD": {
+    "theme": "Healthcare",
+    "theme_rs": -0.0078,
+    "priority_mult": 0.984,
+    "size_mult": 0.988,
+    "rank": 9,
+    "catalyst": ""
+  },
+  "RPRX": {
+    "theme": "Healthcare",
+    "theme_rs": -0.0078,
+    "priority_mult": 0.984,
+    "size_mult": 0.988,
+    "rank": 9,
+    "catalyst": ""
+  },
+  "CVS": {
+    "theme": "Healthcare",
+    "theme_rs": -0.0078,
+    "priority_mult": 0.984,
+    "size_mult": 0.988,
+    "rank": 9,
+    "catalyst": ""
+  },
+  "CAT": {
+    "theme": "Industrials",
+    "theme_rs": -0.0107,
+    "priority_mult": 0.979,
+    "size_mult": 0.984,
+    "rank": 10,
+    "catalyst": ""
+  },
+  "CMI": {
+    "theme": "Industrials",
+    "theme_rs": -0.0107,
+    "priority_mult": 0.979,
+    "size_mult": 0.984,
+    "rank": 10,
+    "catalyst": ""
+  },
+  "GWW": {
+    "theme": "Industrials",
+    "theme_rs": -0.0107,
+    "priority_mult": 0.979,
+    "size_mult": 0.984,
+    "rank": 10,
+    "catalyst": ""
+  },
+  "JBHT": {
+    "theme": "Industrials",
+    "theme_rs": -0.0107,
+    "priority_mult": 0.979,
+    "size_mult": 0.984,
+    "rank": 10,
+    "catalyst": ""
+  },
+  "FIX": {
+    "theme": "Industrials",
+    "theme_rs": -0.0107,
+    "priority_mult": 0.979,
+    "size_mult": 0.984,
+    "rank": 10,
+    "catalyst": ""
+  },
+  "FLS": {
+    "theme": "Industrials",
+    "theme_rs": -0.0107,
+    "priority_mult": 0.979,
+    "size_mult": 0.984,
+    "rank": 10,
+    "catalyst": ""
+  },
+  "CP": {
+    "theme": "Industrials",
+    "theme_rs": -0.0107,
+    "priority_mult": 0.979,
+    "size_mult": 0.984,
+    "rank": 10,
+    "catalyst": ""
+  },
+  "MNST": {
+    "theme": "Staples/Food",
+    "theme_rs": -0.0347,
+    "priority_mult": 0.903,
+    "size_mult": 0.92,
+    "rank": 11,
+    "catalyst": "risk-on rotates out of defensives"
+  },
+  "MDLZ": {
+    "theme": "Staples/Food",
+    "theme_rs": -0.0347,
+    "priority_mult": 0.903,
+    "size_mult": 0.92,
+    "rank": 11,
+    "catalyst": "risk-on rotates out of defensives"
+  },
+  "BG": {
+    "theme": "Staples/Food",
+    "theme_rs": -0.0347,
+    "priority_mult": 0.903,
+    "size_mult": 0.92,
+    "rank": 11,
+    "catalyst": "risk-on rotates out of defensives"
+  },
+  "ARMK": {
+    "theme": "Staples/Food",
+    "theme_rs": -0.0347,
+    "priority_mult": 0.903,
+    "size_mult": 0.92,
+    "rank": 11,
+    "catalyst": "risk-on rotates out of defensives"
+  },
+  "SLB": {
+    "theme": "Energy",
+    "theme_rs": -0.0494,
+    "priority_mult": 0.766,
+    "size_mult": 0.787,
+    "rank": 12,
+    "catalyst": "HEADWIND: ceasefire->oil down/Hormuz reopen; FLIPS to tailwind if truce breaks"
+  },
+  "VLO": {
+    "theme": "Energy",
+    "theme_rs": -0.0494,
+    "priority_mult": 0.766,
+    "size_mult": 0.787,
+    "rank": 12,
+    "catalyst": "HEADWIND: ceasefire->oil down/Hormuz reopen; FLIPS to tailwind if truce breaks"
+  },
+  "MPC": {
+    "theme": "Energy",
+    "theme_rs": -0.0494,
+    "priority_mult": 0.766,
+    "size_mult": 0.787,
+    "rank": 12,
+    "catalyst": "HEADWIND: ceasefire->oil down/Hormuz reopen; FLIPS to tailwind if truce breaks"
+  },
+  "DINO": {
+    "theme": "Energy",
+    "theme_rs": -0.0494,
+    "priority_mult": 0.766,
+    "size_mult": 0.787,
+    "rank": 12,
+    "catalyst": "HEADWIND: ceasefire->oil down/Hormuz reopen; FLIPS to tailwind if truce breaks"
+  }
+}

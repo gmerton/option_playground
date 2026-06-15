@@ -1,0 +1,8 @@
+# Runtime deps for the containerized bot + UI (pinned to the dev venv).
+# pandas pulls numpy transitively; pinned here for reproducible image builds.
+# pandas-ta is NOT needed at runtime -- characterize computes indicators with
+# plain pandas; it is only used by the offline backtests.
+ib_async==2.1.0
+pandas==2.3.3
+numpy==2.2.6
+aiohttp==3.13.1
