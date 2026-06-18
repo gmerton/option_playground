@@ -48,7 +48,7 @@ from ib_async import Stock
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-from conn import connect_ib  # noqa: E402
+from conn import connect_ib, daily_bars_completed  # noqa: E402
 
 LOG_PATH = os.path.join(HERE, "alerts.log")
 RTH_MIN = 390           # 9:30-16:00 ET
@@ -161,10 +161,7 @@ def _derive_levels(ib, sym: str, cfg: dict) -> dict | None:
     if not ib.qualifyContracts(contract):
         print(f"  x {sym}: could not qualify -- skipping")
         return None
-    daily = ib.reqHistoricalData(
-        contract, endDateTime="", durationStr="80 D",
-        barSizeSetting="1 day", whatToShow="TRADES", useRTH=True,
-    )
+    daily = daily_bars_completed(ib, contract, "80 D")  # strips today's in-progress bar
     if not daily or len(daily) < 25:
         print(f"  ! {sym}: insufficient daily history -- skipping")
         return None
@@ -224,7 +221,7 @@ def _fmt(d) -> str:
 
 
 def _fire(sym: str, st: dict, kind: str, price: float, pace: float,
-          when: str, headline: str) -> None:
+          when: str, headline: str, above_vwap: bool = True) -> None:
     mode = "mover" if st["is_mover"] else "grinder"
     tag = "WATCH " if st.get("watch") else ""
     stamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -235,7 +232,7 @@ def _fire(sym: str, st: dict, kind: str, price: float, pace: float,
                  f"risk ${pos['risk']:,.0f} (x{st['size_mult']:.2f} {st['theme']} "
                  f"RS {st['theme_rs']*100:+.0f}%){cap}  |  ")
     msg = (f"{sym} [{st['tier']}/{mode}] {tag}{kind}: {headline}  |  px {price:.2f}, "
-           f"above VWAP, pace {pace:.2f}x  |  {size_part}stop {st['stop']:.2f} "
+           f"{'above' if above_vwap else 'BELOW'} VWAP, pace {pace:.2f}x  |  {size_part}stop {st['stop']:.2f} "
            f"(risk {st['risk_pct']:.1f}%), hard {st['hard_stop']:.2f}  |  "
            f"{st['note']}  (bar {when})")
     bar = "=" * 76
@@ -281,14 +278,19 @@ def _on_bar_update(bars, has_new_bar: bool) -> None:
     if st["consec_above"] >= need:
         st["established"] = True
 
-    # Ping 1 -- momentum arm (volume-confirmed)
-    if not st["ping1_fired"] and st["established"] and pace >= VOL_MULT:
+    # Ping 1 -- momentum arm (volume-confirmed).
+    # Re-validate LIVE conditions (price still >= level AND above VWAP) at fire
+    # time -- `established` only latches that the break HAPPENED, so without this
+    # the arm could fire on a faded-back bar (below pivot/VWAP) once volume caught up.
+    if not st["ping1_fired"] and st["established"] and qualifies and pace >= VOL_MULT:
         bar_high = max(float(b.high) for b in closed[-need:])
-        st["buy_stop"] = bar_high + _buffer(bar_high)
+        # buy-stop can never sit below the breakout pivot -- a stop under the
+        # trigger would fill on weakness, defeating the "must keep going" design.
+        st["buy_stop"] = max(bar_high + _buffer(bar_high), st["trigger"])
         st["ping1_fired"] = True
         kept = f"{need} close{'s' if need > 1 else ''} > {level:.2f}"
         _fire(sym, st, "ARM", price, pace, when,
-              f"{kept} held -> PLACE BUY-STOP {st['buy_stop']:.2f}")
+              f"{kept} held -> PLACE BUY-STOP {st['buy_stop']:.2f}", above_vwap)
         return
 
     # soft heads-up: broke but volume not confirming yet (no dialog, terminal only)
@@ -305,7 +307,7 @@ def _on_bar_update(bars, has_new_bar: bool) -> None:
         if touched and green_hold and pace >= 1.0:
             st["ping2_fired"] = True
             _fire(sym, st, "RETEST", price, pace, when,
-                  f"pulled back to {st['trigger']:.2f} and held (green bar)")
+                  f"pulled back to {st['trigger']:.2f} and held (green bar)", above_vwap)
 
 
 def main() -> int:

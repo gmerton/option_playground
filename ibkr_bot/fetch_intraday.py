@@ -10,6 +10,7 @@ session (open drop, intraday low/high, and the move off the low).
 Usage:
   .venv/bin/python3 ibkr_bot/fetch_intraday.py PL
   .venv/bin/python3 ibkr_bot/fetch_intraday.py PL AVGO --days 5
+  .venv/bin/python3 ibkr_bot/fetch_intraday.py SMCI --end-date 2024-02-16   # historical session
 """
 
 from __future__ import annotations
@@ -75,8 +76,17 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("symbols", nargs="+")
     ap.add_argument("--days", type=int, default=1, help="trading days of history")
+    ap.add_argument("--end-date", default=None,
+                    help="pull the session ENDING on this date (YYYY-MM-DD); "
+                         "default = most recent session")
     args = ap.parse_args()
     symbols = [s.upper() for s in args.symbols]
+
+    # IB wants the bar window's END. To capture the full RTH of --end-date, end at
+    # that day's close (20:00 UTC ~ 16:00 ET; IB treats the date as the cutoff).
+    end_dt = ""
+    if args.end_date:
+        end_dt = f"{args.end_date.replace('-', '')} 23:59:59 US/Eastern"
 
     os.makedirs(DATA_DIR, exist_ok=True)
     ib = connect_ib(client_id=int(os.environ.get("IB_CLIENT_ID", "13")))
@@ -89,7 +99,7 @@ def main() -> int:
             continue
         bars = ib.reqHistoricalData(
             contract,
-            endDateTime="",
+            endDateTime=end_dt,
             durationStr=f"{args.days} D",
             barSizeSetting="1 min",
             whatToShow="TRADES",

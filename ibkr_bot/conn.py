@@ -16,6 +16,7 @@ import os
 import socket
 import struct
 import time
+from datetime import datetime
 
 from ib_async import IB
 
@@ -114,3 +115,31 @@ def connect_ib_with_retry(client_id: int | None = None, timeout: float = 10.0,
               f"retrying in {wait:.0f}s", flush=True)
         time.sleep(wait)
     raise SystemExit(f"x gave up connecting after {attempts} attempts: {last}")
+
+
+def daily_bars_completed(ib, contract, duration_str: str = "60 D",
+                         what_to_show: str = "TRADES", use_rth: bool = True) -> list:
+    """Daily bars with today's IN-PROGRESS session stripped.
+
+    During market hours IB returns a partial bar for the current session as the
+    LAST element, whose close is the live price. Using that as the prior close
+    (so prevclose == last) or inside a 20-day-high pivot (so the pivot tracks
+    today's own move) is a bug -- it made every day-change read +0.0%. This drops
+    any trailing bar dated today, so callers get only COMPLETED sessions:
+        prior_close = daily_bars_completed(...)[-1].close
+    Pre-open there is no today bar, so nothing is dropped; never returns empty.
+    """
+    bars = ib.reqHistoricalData(
+        contract, endDateTime="", durationStr=duration_str,
+        barSizeSetting="1 day", whatToShow=what_to_show, useRTH=use_rth,
+    )
+    if not bars:
+        return bars
+    today = datetime.now().date()
+
+    def _bar_date(b):
+        d = b.date
+        return d.date() if hasattr(d, "date") else d  # datetime -> .date(); date stays
+
+    trimmed = [b for b in bars if _bar_date(b) != today]
+    return trimmed if trimmed else bars  # safety: never empty
