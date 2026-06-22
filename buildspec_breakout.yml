@@ -1,0 +1,64 @@
+version: 0.2
+
+# CI/CD for the preferred-breakout-scan Lambda (daily EOD breakout screen).
+# Triggered by CodePipeline `preferred-breakout-scan` on push to main.
+# Scope: update the function CODE + the S3 ticker universe only. The pandas/numpy
+# layer, env vars (TRADIER_API_KEY), memory/timeout, and the EventBridge schedule
+# are managed once by deploy_breakout_lambda.sh and intentionally left alone here.
+
+env:
+  variables:
+    FUNCTION: "preferred-breakout-scan"
+    BUCKET: "gmerton-stock-data"
+    PREFIX: "breakouts"
+    ARTIFACT_ZIP: "breakout_function.zip"
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.12
+    commands:
+      - python --version
+
+  build:
+    commands:
+      - rm -rf build "$ARTIFACT_ZIP" && mkdir -p build
+      # Runtime deps that must ship in the zip (pandas/numpy come from the layer;
+      # boto3 is in the Lambda runtime). Pin to the Lambda's platform so the
+      # aiohttp C-extensions match python3.12 x86_64.
+      - >
+        pip install --platform manylinux2014_x86_64 --implementation cp
+        --python-version 3.12 --only-binary=:all: -t build aiohttp typing_extensions
+      # Copy ONLY the modules this Lambda imports (its closure) -- mirrors
+      # deploy_breakout_lambda.sh so the package stays slim.
+      - |
+        for m in \
+          interface/breakout_lambda.py \
+          interface/breakout_artifacts.py \
+          interface/premarket_watchlist.py \
+          tradier/get_daily_history.py \
+          tradier/tradier_client_wrapper.py \
+          commons/get_underlying_price.py \
+          commons/list_contracts.py \
+          commons/list_expirations.py; do
+          mkdir -p "build/lib/$(dirname "$m")"
+          cp "src/lib/$m" "build/lib/$m"
+        done
+      - for d in "" "interface/" "tradier/" "commons/"; do touch "build/lib/${d}__init__.py"; done
+      # Fail the build early if the handler module didn't make it in.
+      - test -f build/lib/interface/breakout_lambda.py
+      - (cd build && zip -qr9 "../$ARTIFACT_ZIP" .)
+      - echo "package size:" && du -h "$ARTIFACT_ZIP"
+
+  post_build:
+    commands:
+      # 1) update the Lambda code (layer/env/schedule untouched)
+      - aws lambda update-function-code --function-name "$FUNCTION" --zip-file "fileb://$ARTIFACT_ZIP" --no-cli-pager
+      - aws lambda wait function-updated --function-name "$FUNCTION"
+      # 2) sync the ticker universe the function reads at runtime
+      - aws s3 cp data/preferred_tickers.txt "s3://$BUCKET/$PREFIX/preferred_tickers.txt"
+      - echo "Deployed code + ticker list for $FUNCTION."
+
+artifacts:
+  files:
+    - breakout_function.zip

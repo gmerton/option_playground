@@ -104,6 +104,13 @@ CONFIG = {
 }
 
 STATE: dict[str, dict] = {}
+
+# Market-regime gate: track the index's live session VWAP. Long breakouts are
+# suppressed while the index trades below its own VWAP (weak tape) and released
+# once it reclaims -- exactly the "wait for the rebound to confirm" rule. Empty
+# until the index feed warms up; unknown == permissive (never blocks on no data).
+REGIME: dict = {"sym": None, "vwap": None, "price": None,
+                "prev_close": None, "enabled": True}
 # theme/narrative tilt, produced by theme_strength.py -> data/theme_scores.json
 THEME_SCORES: dict[str, dict] = {}
 
@@ -266,6 +273,95 @@ def _session_vwap(closed_bars):
     return num / den if den else None
 
 
+# The long-lived keepUpToDate buffer drifts when the monitor subscribes at the
+# volatile open -- the opening high-volume bars get under-weighted, so VWAP reads
+# several points too low (and "above VWAP" fires falsely). A fresh historical
+# snapshot is always correct, so VWAP decisions are validated against one. Pulled
+# via the ASYNC API (reqHistoricalDataAsync) so it is safe to await from inside
+# an update-event handler -- the sync call would re-enter the running loop and crash.
+IB = None                                    # set in main(); used for the re-pull
+_VWAP_CACHE: dict[str, tuple] = {}           # sym -> (last_bar_date, vwap, price)
+
+
+async def _authoritative_vwap(contract, fallback_bars=None):
+    """Session VWAP + last price from a FRESH 1-min snapshot, cached per minute.
+    Falls back to the live buffer on any error so a data hiccup never blocks a
+    fire decision. Returns (vwap, price); either may be None if no data at all."""
+    sym = contract.symbol
+    cached = _VWAP_CACHE.get(sym)
+    last_dt = fallback_bars[-1].date if fallback_bars else None
+    if cached and last_dt is not None and cached[0] == last_dt:
+        return cached[1], cached[2]          # already pulled for this bar minute
+    try:
+        if IB is not None:
+            fresh = await IB.reqHistoricalDataAsync(
+                contract, endDateTime="", durationStr="1 D",
+                barSizeSetting="1 min", whatToShow="TRADES", useRTH=True,
+                keepUpToDate=False)
+            if fresh:
+                vw, px = _session_vwap(fresh), float(fresh[-1].close)
+                _VWAP_CACHE[sym] = (last_dt, vw, px)
+                return vw, px
+    except Exception as exc:
+        print(f"  ! {sym}: fresh-VWAP pull failed ({exc}); using live buffer", flush=True)
+    if fallback_bars:
+        return _session_vwap(fallback_bars), float(fallback_bars[-1].close)
+    return None, None
+
+
+def _index_ret() -> float | None:
+    """Index intraday return vs prior close (None until the feed warms up)."""
+    p, pc = REGIME.get("price"), REGIME.get("prev_close")
+    return (p / pc - 1.0) if (p and pc) else None
+
+
+def _regime_ok() -> bool:
+    """True when long breakouts are allowed: gate disabled, or no index data yet
+    (permissive -- never block on missing data), or index at/above its VWAP."""
+    if not REGIME.get("enabled"):
+        return True
+    v, p = REGIME.get("vwap"), REGIME.get("price")
+    if v is None or p is None:
+        return True
+    return p >= v
+
+
+def _regime_str() -> str:
+    sym = REGIME.get("sym") or "idx"
+    v, p = REGIME.get("vwap"), REGIME.get("price")
+    if v is None or p is None:
+        return f"{sym} n/a"
+    r = _index_ret()
+    rtxt = f" {r*100:+.1f}%d" if r is not None else ""
+    return f"{sym} {'above' if p >= v else 'BELOW'} VWAP ({p:.2f} vs {v:.2f}{rtxt})"
+
+
+def _rel_strength(st: dict, price: float) -> str:
+    """Annotate the name's intraday move vs the index -- RS+ when it's outpacing
+    a weak tape (the relative-strength tell that flags real leadership)."""
+    ir = _index_ret()
+    pc = st.get("last_close")
+    if ir is None or not pc:
+        return ""
+    nr = price / pc - 1.0
+    rs = nr - ir
+    return (f"  |  RS{'+' if rs >= 0 else '-'} {rs*100:+.1f}pp "
+            f"(d {nr*100:+.1f}% vs idx {ir*100:+.1f}%)")
+
+
+async def _on_index_bar(bars, has_new_bar: bool) -> None:
+    """Keep REGIME's session VWAP + last price fresh from the index 1-min feed,
+    validated against an authoritative snapshot (the gate must not run on a low VWAP)."""
+    if len(bars) < 2:
+        return
+    closed = bars[:-1]                       # drop the still-forming bar
+    vw, px = await _authoritative_vwap(bars.contract, fallback_bars=closed)
+    if px is not None:
+        REGIME["price"] = px
+    if vw is not None:
+        REGIME["vwap"] = vw
+
+
 def _fmt(d) -> str:
     return d.strftime("%H:%M") if hasattr(d, "strftime") else str(d)
 
@@ -284,6 +380,7 @@ def _fire(sym: str, st: dict, kind: str, price: float, pace: float,
     msg = (f"{sym} [{st['tier']}/{mode}] {tag}{kind}: {headline}  |  px {price:.2f}, "
            f"{'above' if above_vwap else 'BELOW'} VWAP, pace {pace:.2f}x  |  {size_part}stop {st['stop']:.2f} "
            f"(risk {st['risk_pct']:.1f}%), hard {st['hard_stop']:.2f}  |  "
+           f"{_regime_str()}{_rel_strength(st, price)}  |  "
            f"{st['note']}  (bar {when})")
     bar = "=" * 76
     print(f"\a\n{bar}\n  >> {msg}\n{bar}\n", flush=True)
@@ -293,7 +390,7 @@ def _fire(sym: str, st: dict, kind: str, price: float, pace: float,
         _mac_alert(f"{sym} {kind} ({st['tier']}/{mode})", msg)
 
 
-def _on_bar_update(bars, has_new_bar: bool) -> None:
+async def _on_bar_update(bars, has_new_bar: bool) -> None:
     if not has_new_bar or len(bars) < 2:
         return
     sym = bars.contract.symbol
@@ -307,8 +404,6 @@ def _on_bar_update(bars, has_new_bar: bool) -> None:
     if elapsed < MIN_ELAPSED or frac <= 0:
         return
     pace = (cum_vol / frac) / st["avg_vol"] if st["avg_vol"] else 0.0
-    vwap = _session_vwap(closed)
-    above_vwap = (vwap is None) or (price > vwap)
     when = _fmt(last.date)
     grinder = not st["is_mover"]
 
@@ -323,6 +418,14 @@ def _on_bar_update(bars, has_new_bar: bool) -> None:
 
     need = 1 if st["is_mover"] else 2
     level = st["trigger"] if st["is_mover"] else max(st["trigger"], st["or_high"] or st["trigger"])
+    # VWAP only gates a decision when price is testing the pivot; validate it with an
+    # authoritative snapshot there (the live buffer reads low). Elsewhere the cheap
+    # buffer value suffices -- qualifies/green_hold are False below the trigger anyway.
+    if price >= st["trigger"]:
+        vwap, _ = await _authoritative_vwap(bars.contract, fallback_bars=closed)
+    else:
+        vwap = _session_vwap(closed)
+    above_vwap = (vwap is None) or (price > vwap)
     qualifies = (price >= level) and above_vwap
     st["consec_above"] = st["consec_above"] + 1 if qualifies else 0
     if st["consec_above"] >= need:
@@ -333,6 +436,16 @@ def _on_bar_update(bars, has_new_bar: bool) -> None:
     # time -- `established` only latches that the break HAPPENED, so without this
     # the arm could fire on a faded-back bar (below pivot/VWAP) once volume caught up.
     if not st["ping1_fired"] and st["established"] and qualifies and pace >= VOL_MULT:
+        # Market-regime gate: hold (don't latch) while the index is below its VWAP.
+        # When the tape reclaims, the next still-qualifying bar fires for real --
+        # so a break into weakness that fades won't have armed you on a dead bounce.
+        if not _regime_ok():
+            if not st.get("regime_held_noted"):
+                st["regime_held_noted"] = True
+                print(f"  . {sym}: ARM met but {_regime_str()}{_rel_strength(st, price)} "
+                      f"-- HOLDING fire until index reclaims VWAP.", flush=True)
+            return
+        st["regime_held_noted"] = False
         bar_high = max(float(b.high) for b in closed[-need:])
         # buy-stop can never sit below the breakout pivot -- a stop under the
         # trigger would fill on weakness, defeating the "must keep going" design.
@@ -355,6 +468,13 @@ def _on_bar_update(bars, has_new_bar: bool) -> None:
         green_hold = (price >= st["trigger"] and float(last.close) > float(last.open)
                       and above_vwap)
         if touched and green_hold and pace >= 1.0:
+            if not _regime_ok():
+                if not st.get("regime_held_noted"):
+                    st["regime_held_noted"] = True
+                    print(f"  . {sym}: RETEST held but {_regime_str()} "
+                          f"-- HOLDING fire until index reclaims VWAP.", flush=True)
+                return
+            st["regime_held_noted"] = False
             st["ping2_fired"] = True
             _fire(sym, st, "RETEST", price, pace, when,
                   f"pulled back to {st['trigger']:.2f} and held (green bar)", above_vwap)
@@ -380,6 +500,10 @@ def main() -> int:
     ap.add_argument("--s3", action="store_true",
                     help=f"pull the fresh bridge from the EOD Lambda's S3 location "
                          f"({DEFAULT_WATCHLIST_S3}); shorthand for --watchlist <that URI>")
+    ap.add_argument("--index", default="SPY",
+                    help="index symbol for the market-regime VWAP gate (default SPY)")
+    ap.add_argument("--no-regime", action="store_true",
+                    help="disable the index-VWAP gate (fire breakouts regardless of tape)")
     args = ap.parse_args()
 
     global VOL_MULT, ADR_SPLIT, ACCOUNT, RISK_PCT, MAX_NOTIONAL_PCT
@@ -406,6 +530,8 @@ def main() -> int:
     THEME_SCORES = _load_theme_scores()
 
     ib = connect_ib(client_id=int(os.environ.get("IB_CLIENT_ID", "14")))
+    global IB
+    IB = ib                                  # authoritative-VWAP re-pulls use this
     print(f"OK Connected (paper {ib.managedAccounts()}).")
     print(f"Narrative tilt: {'loaded data/theme_scores.json' if THEME_SCORES else 'NONE (run theme_strength.py) -- neutral 1.0x'}\n")
     _log(f"[{datetime.now():%Y-%m-%d %H:%M:%S}] --- breakout monitor start: {', '.join(syms)} ---")
@@ -446,6 +572,35 @@ def main() -> int:
           f"vol confirm >= {VOL_MULT}x, ADR split {ADR_SPLIT}%. Ctrl-C to stop.")
     print("  grinder = skip 5min OR + 2 closes (or retest); mover = 1 close. "
           "Both: VWAP filter, buy-stop above the bar.\n")
+
+    # Market-regime gate: subscribe to the index's 1-min feed and seed its prior
+    # close so breakouts are held while the tape trades below VWAP.
+    REGIME["enabled"] = not args.no_regime
+    if REGIME["enabled"]:
+        idx = Stock(args.index.upper(), "SMART", "USD")
+        if ib.qualifyContracts(idx):
+            REGIME["sym"] = args.index.upper()
+            idx_daily = daily_bars_completed(ib, idx, "5 D")
+            if idx_daily:
+                REGIME["prev_close"] = float(idx_daily[-1].close)
+            idx_bars = ib.reqHistoricalData(
+                idx, endDateTime="", durationStr="1 D",
+                barSizeSetting="1 min", whatToShow="TRADES", useRTH=True,
+                keepUpToDate=True,
+            )
+            idx_bars.updateEvent += _on_index_bar
+            pc = REGIME["prev_close"]
+            print(f"Regime gate ON: {REGIME['sym']} VWAP "
+                  f"(prev close {pc:.2f})." if pc else
+                  f"Regime gate ON: {REGIME['sym']} VWAP.")
+            print("  Breakouts HOLD while the index is below its session VWAP; "
+                  "they release on reclaim.\n")
+        else:
+            REGIME["enabled"] = False
+            print(f"  ! could not qualify index {args.index} -- regime gate OFF.\n")
+    else:
+        print("Regime gate OFF (--no-regime): breakouts fire regardless of tape.\n")
+
     for sym, st in STATE.items():
         bars = ib.reqHistoricalData(
             st["contract"], endDateTime="", durationStr="1 D",
