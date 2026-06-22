@@ -3,12 +3,9 @@ from __future__ import annotations
 from typing import Optional, List, Dict, Any
 import aiohttp
 from lib.commons.get_underlying_price import get_underlying_price
-import aiohttp
 from datetime import date, timedelta
 import pandas as pd
-import pandas_ta as ta
 from dataclasses import dataclass
-import numpy as np
 from lib.commons.list_contracts import list_contracts_for_expiry
 from lib.commons.list_expirations import list_expirations
 from lib.tradier.tradier_client_wrapper import TradierClient

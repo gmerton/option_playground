@@ -51,6 +51,10 @@ sys.path.insert(0, HERE)
 from conn import connect_ib, daily_bars_completed  # noqa: E402
 
 LOG_PATH = os.path.join(HERE, "alerts.log")
+# Canonical S3 location of the bridge the EOD Lambda (preferred-breakout-scan)
+# writes after close. `--s3` pulls this; `--watchlist s3://...` overrides it.
+DEFAULT_WATCHLIST_S3 = "s3://gmerton-stock-data/breakouts/monitor_latest.json"
+WATCHLIST_MAX_AGE_H = 36.0   # warn if the bridge is older than this (missed run?)
 RTH_MIN = 390           # 9:30-16:00 ET
 MIN_ELAPSED = 2.0       # don't project EOD volume from a near-zero denominator
 OR_MIN = 5.0            # opening-range window (grinders sit this out)
@@ -102,6 +106,52 @@ CONFIG = {
 STATE: dict[str, dict] = {}
 # theme/narrative tilt, produced by theme_strength.py -> data/theme_scores.json
 THEME_SCORES: dict[str, dict] = {}
+
+
+def _fetch_s3_watchlist(uri: str) -> dict:
+    """Pull the CONFIG bridge the EOD Lambda wrote to S3 (s3://bucket/key).
+
+    Warns (but still loads) if the object is older than WATCHLIST_MAX_AGE_H so the
+    live alarm never silently runs on a stale scan after a missed/failed run."""
+    import boto3  # local import: only needed for the S3 path
+    from datetime import timezone
+
+    bucket, _, key = uri[len("s3://"):].partition("/")
+    obj = boto3.client("s3").get_object(Bucket=bucket, Key=key)
+    age_h = (datetime.now(timezone.utc) - obj["LastModified"]).total_seconds() / 3600.0
+    stamp = obj["LastModified"].astimezone().strftime("%Y-%m-%d %H:%M")
+    if age_h > WATCHLIST_MAX_AGE_H:
+        print(f"  ! WARNING: {uri} is {age_h:.0f}h old (written {stamp}) -- "
+              f"the daily scan may not have run. Using it anyway.")
+    else:
+        print(f"  . bridge written {stamp} ({age_h:.0f}h ago)")
+    return json.loads(obj["Body"].read().decode("utf-8"))
+
+
+def _load_watchlist(path: str) -> dict:
+    """Load externally-generated CONFIG entries (from run_preferred_breakouts.py
+    or the EOD Lambda's S3 bridge) and merge them into CONFIG. External entries
+    override curated ones on key collision so the daily scan stays authoritative
+    for the names it surfaces. `path` may be a local file or an s3:// URI.
+    Returns the dict of entries merged (empty on missing/invalid source)."""
+    try:
+        if path.startswith("s3://"):
+            entries = _fetch_s3_watchlist(path)
+        else:
+            with open(path) as fh:
+                entries = json.load(fh)
+    except Exception as exc:
+        print(f"  ! could not load watchlist {path}: {exc}")
+        return {}
+    merged = {}
+    for sym, cfg in entries.items():
+        if not isinstance(cfg, dict) or "trigger_lb" not in cfg:
+            continue
+        cfg.setdefault("tier", "A")
+        cfg.setdefault("note", "from daily scan")
+        CONFIG[sym.upper()] = cfg
+        merged[sym.upper()] = cfg
+    return merged
 
 
 def _load_theme_scores() -> dict:
@@ -323,13 +373,30 @@ def main() -> int:
                     help="base %% of equity risked per trade, before theme tilt (default 0.75)")
     ap.add_argument("--max-notional-pct", type=float, default=25.0,
                     help="cap one position's notional at this %% of equity (default 25)")
+    ap.add_argument("--watchlist", default=None,
+                    help="local path OR s3:// URI of a JSON of CONFIG-shaped entries "
+                         "(e.g. data/watchlist/monitor_latest.json from the daily scan); "
+                         "merged into CONFIG, and used as the default symbol set")
+    ap.add_argument("--s3", action="store_true",
+                    help=f"pull the fresh bridge from the EOD Lambda's S3 location "
+                         f"({DEFAULT_WATCHLIST_S3}); shorthand for --watchlist <that URI>")
     args = ap.parse_args()
 
     global VOL_MULT, ADR_SPLIT, ACCOUNT, RISK_PCT, MAX_NOTIONAL_PCT
     VOL_MULT, ADR_SPLIT = args.vol_mult, args.adr_split
     ACCOUNT, RISK_PCT, MAX_NOTIONAL_PCT = args.account, args.risk_pct, args.max_notional_pct
 
-    syms = [s.upper() for s in args.symbols] or list(CONFIG.keys())
+    watch_src = args.watchlist or (DEFAULT_WATCHLIST_S3 if args.s3 else None)
+    watch_syms: list[str] = []
+    if watch_src:
+        merged = _load_watchlist(watch_src)
+        watch_syms = list(merged.keys())
+        print(f"Loaded watchlist {watch_src}: {len(watch_syms)} names "
+              f"({', '.join(watch_syms) or 'none'})")
+
+    # explicit args win; else the watchlist (if given); else the full curated CONFIG
+    default_syms = watch_syms if watch_syms else list(CONFIG.keys())
+    syms = [s.upper() for s in args.symbols] or default_syms
     syms = [s for s in syms if s in CONFIG]
     if not syms:
         print("No configured symbols matched. Configured:", ", ".join(CONFIG))

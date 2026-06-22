@@ -10,9 +10,11 @@ Run over the 2024 big-mover universe to (a) confirm it re-surfaces SMCI 2/16 + N
 (b) see what else fires, (c) measure next-day follow-through. Gates are LOOSE knobs at
 top — we dial them in together, not hard-code an opinion yet.
 """
-import os, asyncio, statistics as st
+import os, sys, asyncio, statistics as st
 import pandas as pd
 from lib.tradier.tradier_client_wrapper import TradierClient
+
+YEAR = int(sys.argv[1]) if len(sys.argv) > 1 else 2024   # scan year (OOS: 2023, 2025)
 
 # ---- tunable gates (deliberately loose; calibrate with the user) ----
 EXT10_MIN   = 0.10   # prior close must be >= +10% above the 10-SMA (extension/parabola)
@@ -23,12 +25,25 @@ VOL_MULT    = 2.0    # volume >= 2.0x the 50-day average (climactic)
 RED_BAR     = True   # require close < open (reversed through the open)
 # ---------------------------------------------------------------------
 
-UNIVERSE = ["NVDA","SMCI","MSTR","ARM","COIN","GLD","AAPL","BRK/B","IWM","GEV","APP",
-            "BABA","DJT","PLTR","TSLA","COST",            # Adhikary names
-            "META","AMD","AVGO","DELL","CVNA","AFRM","ANF","MARA","CELH","NVO"]  # extra 2024 movers
+# Universe: a hand-picked 26 (legacy, 2024-hindsight-biased -- NOT for clean OOS) OR a
+# rules-based file via UNIVERSE_FILE (e.g. data/sp500_constituents.txt). The S&P 500 set
+# removes the hand-picking bias; residual caveat = current membership applied to past
+# years is a mild survivorship bias (names get added AFTER big runs).
+_LEGACY = ["NVDA","SMCI","MSTR","ARM","COIN","GLD","AAPL","BRK/B","IWM","GEV","APP",
+           "BABA","DJT","PLTR","TSLA","COST",
+           "META","AMD","AVGO","DELL","CVNA","AFRM","ANF","MARA","CELH","NVO"]
+_uf = os.environ.get("UNIVERSE_FILE")
+if _uf:
+    with open(_uf) as fh:
+        raw = fh.read().replace("\n", ",")
+    # Tradier uses slash for class shares (BRK.B -> BRK/B); dedupe, drop blanks
+    UNIVERSE = sorted({t.strip().upper().replace(".", "/") for t in raw.split(",") if t.strip()})
+else:
+    UNIVERSE = _LEGACY
 
-START, END = "2023-09-01", "2024-12-31"   # ~4mo lead for SMA warmup, scan all of 2024
-SCAN_FROM = "2024-01-01"
+START = f"{YEAR-1}-09-01"           # ~4mo lead for SMA warmup
+END = f"{YEAR}-12-31"
+SCAN_FROM = f"{YEAR}-01-01"
 
 
 async def hist(client, sem, sym):
@@ -119,10 +134,12 @@ async def main():
     print(f"\n{len(df)} fade-signal days across {df['ticker'].nunique()} tickers.")
     print(f"Next-day follow-through DOWN: {(ok_ft<0).sum()}/{len(ok_ft)} "
           f"({(ok_ft<0).mean()*100:.0f}%); median {ok_ft.median():+.1f}%")
-    print(f"Re-surfaced the two known cases: "
-          f"SMCI 2024-02-16 {'YES' if ((df.ticker=='SMCI')&(df.date=='2024-02-16')).any() else 'NO'}, "
-          f"NVDA 2024-03-08 {'YES' if ((df.ticker=='NVDA')&(df.date=='2024-03-08')).any() else 'NO'}")
-    df.to_csv("data/studies/Adhikary/fade_signals_2024.csv", index=False)
+    if YEAR == 2024:
+        print(f"Re-surfaced the two known cases: "
+              f"SMCI 2024-02-16 {'YES' if ((df.ticker=='SMCI')&(df.date=='2024-02-16')).any() else 'NO'}, "
+              f"NVDA 2024-03-08 {'YES' if ((df.ticker=='NVDA')&(df.date=='2024-03-08')).any() else 'NO'}")
+    df.to_csv(f"data/studies/Adhikary/fade_signals_{YEAR}.csv", index=False)
+    print(f"\nwrote data/studies/Adhikary/fade_signals_{YEAR}.csv")
 
 
 if __name__ == "__main__":

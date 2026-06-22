@@ -54,6 +54,11 @@ _HOLDINGS_LIST: List[str] = [
 
 DEFAULT_UNIVERSE: List[str] = sorted(set(_FOOL_LIST + _HOLDINGS_LIST))
 
+# Breakout volume confirmation: the breakout bar's volume must exceed this
+# multiple of its trailing 50-day average to count as a *confirmed* breakout.
+VOL_CONFIRM_MULT: float = 1.5
+VOL_AVG_LOOKBACK: int = 50
+
 
 # ── Indicator helpers ─────────────────────────────────────────────────────────
 
@@ -71,44 +76,51 @@ def _ema_series(values: List[float], span: int) -> List[float]:
 def _detect_pivot(
     highs: List[float],
     lows: List[float],
-    base_lookback_days: int = 90,
-    min_base_len_bars: int = 15,
-    min_depth: float = 0.05,
-    max_depth: float = 0.45,
+    max_base_len_bars: int = 60,
+    min_base_len_bars: int = 10,
+    max_depth: float = 0.25,
 ) -> Optional[float]:
     """
-    Find the consolidation pivot (= base high) using the same logic as
-    pivot_detector._detect_base_simple.
+    Find the breakout pivot = high of the most recent *tight* consolidation.
 
-    Returns the pivot price, or None if no valid base is found.
+    Anchored-at-end base detector (v2): start at the most recent bar and walk
+    backward, expanding the window while its total depth (high→low range as a
+    fraction of the range high) stays within ``max_depth``. Stop at the first
+    bar that would breach the depth gate, or at ``max_base_len_bars``.
+
+    The tight run must be at least ``min_base_len_bars`` long; otherwise the
+    name has no real recent base (it is trending / extended) and we return
+    None rather than inventing a pivot at a recent high.
+
+    Returns the pivot price (the consolidation high = resistance), or None.
+
+    Note: the caller passes bars excluding the most recent session, so the
+    pivot is resistance built *before* the prospective breakout event.
     """
     n = len(highs)
     if n < min_base_len_bars:
         return None
 
-    start_i = max(0, n - base_lookback_days)
-    window_lows = lows[start_i:]
-    if not window_lows:
-        return None
+    run_max = highs[-1]
+    run_min = lows[-1]
+    base_len = 1
+    upper = min(max_base_len_bars, n)
 
-    rel_low_i = min(range(len(window_lows)), key=lambda i: window_lows[i])
-    low_i = start_i + rel_low_i
+    # Expand the window backward while it stays tight.
+    for b in range(2, upper + 1):
+        new_max = max(run_max, highs[n - b])
+        new_min = min(run_min, lows[n - b])
+        if new_max <= 0:
+            break
+        depth = (new_max - new_min) / new_max
+        if depth > max_depth:
+            break
+        run_max, run_min, base_len = new_max, new_min, b
 
-    base_len = n - low_i
     if base_len < min_base_len_bars:
         return None
 
-    base_high = max(highs[low_i:])
-    base_low = min(lows[low_i:])
-
-    if base_high <= 0:
-        return None
-
-    depth = (base_high - base_low) / base_high
-    if depth < min_depth or depth > max_depth:
-        return None
-
-    return float(base_high)
+    return float(run_max)
 
 
 # ── Per-ticker EOD screen ─────────────────────────────────────────────────────
@@ -187,6 +199,17 @@ async def screen_ticker(client: TradierClient, ticker: str) -> Optional[Dict[str
     if pivot is not None and pivot > 0:
         pivot_dist_pct = round((close_now - pivot) / pivot * 100, 1)
 
+    # ── Breakout volume confirmation ──────────────────────────────────────────
+    # Most recent bar's volume vs its trailing 50-day average (the avg excludes
+    # the breakout bar itself). Only meaningful once price has cleared the pivot.
+    avg_vol = _sma(vols[:-1], VOL_AVG_LOOKBACK)
+    vol_ratio = round(vols[-1] / avg_vol, 2) if (avg_vol and avg_vol > 0) else None
+
+    is_breakout = bool(pivot is not None and pivot > 0 and close_now >= pivot)
+    breakout_confirmed = bool(
+        is_breakout and vol_ratio is not None and vol_ratio >= VOL_CONFIRM_MULT
+    )
+
     # ── Previous day green candle (for Potent) ────────────────────────────────
     prev_green = bool(closes[-2] > opens[-2]) if n >= 2 else False
     prev_high  = round(highs[-2], 2) if n >= 2 else None
@@ -217,6 +240,9 @@ async def screen_ticker(client: TradierClient, ticker: str) -> Optional[Dict[str
         "prev_green":       prev_green,
         "prev_high":        prev_high,
         "avg_dolvol_5d_m":  round(avg_dolvol_5d / 1_000_000, 1),
+        "vol_ratio":        vol_ratio,
+        "is_breakout":      is_breakout,
+        "breakout_confirmed": breakout_confirmed,
         "is_potent":        is_potent,
         "is_leader":        is_leader,
     }
@@ -288,6 +314,18 @@ def enrich_premarket(eod_results: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
 
 # ── Console output formatters ─────────────────────────────────────────────────
 
+def _vol_tag(r: Dict[str, Any]) -> str:
+    """Render the breakout-bar relative-volume tag for a result row."""
+    vr = r.get("vol_ratio")
+    if vr is None:
+        return "RVOL --"
+    if r.get("breakout_confirmed"):
+        return f"RVOL {vr:.1f}x ** BREAKOUT CONFIRMED"
+    if r.get("is_breakout"):
+        return f"RVOL {vr:.1f}x (broke pivot, light vol)"
+    return f"RVOL {vr:.1f}x"
+
+
 def format_eod_output(results: List[Dict[str, Any]], as_of: date) -> str:
     lines = [f"\n=== EOD WATCHLIST — {as_of} (for tomorrow) ===\n"]
 
@@ -306,7 +344,7 @@ def format_eod_output(results: List[Dict[str, Any]], as_of: date) -> str:
             lines.append(
                 f"  {r['ticker']:<6} close ${r['close']:<9.2f}"
                 f"{pivot_str:<26}  ADR {r['adr20']:.1f}%  {ema_tag}  {rs}"
-                f"  vol ${r['avg_dolvol_5d_m']:.0f}M"
+                f"  vol ${r['avg_dolvol_5d_m']:.0f}M  {_vol_tag(r)}"
             )
     else:
         lines.append("* POTENT — no candidates today")
@@ -328,7 +366,7 @@ def format_eod_output(results: List[Dict[str, Any]], as_of: date) -> str:
                 f"  {r['ticker']:<6} close ${r['close']:<9.2f}"
                 f"1M:{r['pct_1m']:+.0f}%  3M:{r['pct_3m']:+.0f}%  "
                 f"ADR {r['adr20']:.1f}%  {ema_tag}  {near_str}"
-                f"  vol ${r['avg_dolvol_5d_m']:.0f}M"
+                f"  vol ${r['avg_dolvol_5d_m']:.0f}M  {_vol_tag(r)}"
             )
     else:
         lines.append("^ LEADERS — no candidates today")

@@ -1,0 +1,70 @@
+[Sun Jun 21 20:59:07 PDT 2026] starting eod scan
+Scanning 153 preferred tickers...
+
+=== EOD WATCHLIST — 2026-06-21 (for tomorrow) ===
+
+* POTENT — yesterday's leaders near pivot
+  DOCN   close $173.27   pivot $187.50 (-7.6%)       ADR 8.0%  EMA:Lead  1M:+16%  vol $500M  RVOL 0.9x
+  CORZ   close $29.16    pivot $30.46 (-4.3%)        ADR 5.9%  EMA:Lead  1M:+27%  vol $329M  RVOL 1.2x
+  BAP    close $382.76   pivot $396.03 (-3.4%)       ADR 4.0%  EMA:Lead  1M:+21%  vol $200M  RVOL 1.3x
+  FTAI   close $276.11   pivot $285.50 (-3.3%)       ADR 5.8%  EMA:Lead  1M:+24%  vol $282M  RVOL 1.1x
+  GEV    close $1109.73  pivot $1140.00 (-2.7%)      ADR 4.1%  EMA:Lead  1M:+10%  vol $3540M  RVOL 1.6x
+  GH     close $131.78   pivot $135.00 (-2.4%)       ADR 5.0%  EMA:Lead  1M:+34%  vol $295M  RVOL 1.5x
+  CMI    close $716.86   pivot $733.48 (-2.3%)       ADR 3.6%  EMA:Lead  1M:+9%  vol $942M  RVOL 2.2x
+  RVMD   close $162.99   pivot $166.50 (-2.1%)       ADR 4.0%  EMA:Lead  1M:+11%  vol $420M  RVOL 1.4x
+  ATI    close $201.34   pivot $203.59 (-1.1%)       ADR 4.0%  EMA:Lead  1M:+34%  vol $433M  RVOL 1.7x
+  IBKR   close $96.00    pivot $96.75 (-0.8%)        ADR 3.7%  EMA:Lead  1M:+15%  vol $460M  RVOL 1.5x
+  NVT    close $177.02   pivot $178.00 (-0.6%)       ADR 4.2%  EMA:Lead  1M:+12%  vol $374M  RVOL 2.1x
+  APH    close $163.96   pivot $164.18 (-0.1%)       ADR 4.0%  EMA:Lead  1M:+38%  vol $1538M  RVOL 1.3x
+  CRS    close $586.47   pivot $585.50 (+0.2%)       ADR 3.9%  EMA:Lead  1M:+44%  vol $494M  RVOL 1.7x ** BREAKOUT CONFIRMED
+  BE     close $328.91   pivot $306.72 (+7.2%)       ADR 8.2%  EMA:Lead  1M:+26%  vol $3266M  RVOL 1.5x (broke pivot, light vol)
+
+^ LEADERS — 1-month RS standouts
+  MRVL   close $310.58   1M:+76%  3M:+247%  ADR 9.8%  EMA:Lead  near pivot (-4.2%)  vol $27574M  RVOL 6.2x
+  VSH    close $64.90    1M:+75%  3M:+266%  ADR 9.9%  EMA:Lead  near pivot (-2.6%)  vol $480M  RVOL 1.9x
+  DELL   close $409.50   1M:+74%  3M:+161%  ADR 7.0%  EMA:Lead  pivot dist (-12.8%)  vol $3558M  RVOL 1.7x
+  WDC    close $746.23   1M:+64%  3M:+136%  ADR 6.4%  EMA:Lead  no base  vol $8536M  RVOL 2.2x
+  MU     close $1133.99  1M:+62%  3M:+155%  ADR 6.8%  EMA:Lead  near pivot (+2.1%)  vol $51417M  RVOL 1.3x (broke pivot, light vol)
+  CRDO   close $271.83   1M:+61%  3M:+154%  ADR 10.6%  EMA:Lead  no base  vol $2108M  RVOL 1.1x
+  CIFR   close $29.18    1M:+55%  3M:+99%  ADR 9.4%  EMA:Lead  no base  vol $704M  RVOL 1.5x
+  RXT    close $7.22     1M:+54%  3M:+303%  ADR 16.5%  EMA:Lead  no base  vol $282M  RVOL 1.1x
+  AMAT   close $617.11   1M:+52%  3M:+73%  ADR 5.3%  EMA:Lead  no base  vol $6902M  RVOL 2.2x
+  KLAC   close $259.56   1M:+49%  3M:+72%  ADR 5.9%  EMA:Lead  no base  vol $4111M  RVOL 2.4x
+  STX    close $1070.23  1M:+46%  3M:+146%  ADR 6.1%  EMA:Lead  no base  vol $5751M  RVOL 2.1x
+  ENTG   close $178.77   1M:+44%  3M:+54%  ADR 6.8%  EMA:Lead  no base  vol $639M  RVOL 1.9x
+  LRCX   close $389.04   1M:+42%  3M:+66%  ADR 5.4%  EMA:Lead  near pivot (-2.2%)  vol $5198M  RVOL 2.3x
+  AEHR   close $115.30   1M:+42%  3M:+205%  ADR 11.8%  EMA:Lead  no base  vol $173M  RVOL 0.5x
+  FCEL   close $24.04    1M:+38%  3M:+256%  ADR 15.5%  EMA:Lead  no base  vol $221M  RVOL 1.5x
+  MKSI   close $406.37   1M:+38%  3M:+72%  ADR 5.1%  EMA:Lead  near pivot (+5.3%)  vol $479M  RVOL 1.8x ** BREAKOUT CONFIRMED
+  SN     close $140.84   1M:+38%  3M:+38%  ADR 4.4%  EMA:Lead  near pivot (+0.9%)  vol $218M  RVOL 1.2x (broke pivot, light vol)
+  AMKR   close $90.46    1M:+38%  3M:+88%  ADR 8.2%  EMA:Lead  no base  vol $729M  RVOL 1.0x
+  TER    close $437.92   1M:+36%  3M:+45%  ADR 6.6%  EMA:Lead  near pivot (-0.6%)  vol $2849M  RVOL 4.7x
+  VICR   close $331.37   1M:+36%  3M:+74%  ADR 7.9%  EMA:Lead  near pivot (-3.5%)  vol $203M  RVOL 1.1x
+  WULF   close $28.98    1M:+36%  3M:+84%  ADR 7.1%  EMA:Lead  near pivot (-1.1%)  vol $759M  RVOL 1.0x
+  BB     close $8.38     1M:+35%  3M:+154%  ADR 9.0%  EMA:Lead  pivot dist (-23.3%)  vol $226M  RVOL 1.0x
+  ONTO   close $333.76   1M:+34%  3M:+59%  ADR 6.1%  EMA:Lead  no base  vol $467M  RVOL 1.6x
+  TTMI   close $216.44   1M:+34%  3M:+123%  ADR 7.3%  EMA:Lead  near pivot (+3.4%)  vol $433M  RVOL 1.1x (broke pivot, light vol)
+  HUT    close $124.44   1M:+33%  3M:+148%  ADR 8.3%  EMA:Lead  near pivot (-8.0%)  vol $460M  RVOL 0.9x
+  AMD    close $537.37   1M:+30%  3M:+162%  ADR 5.8%  EMA:Lead  near pivot (-3.8%)  vol $17266M  RVOL 1.1x
+  GFS    close $85.83    1M:+29%  3M:+98%  ADR 6.1%  EMA:Lead  near pivot (-7.3%)  vol $192M  RVOL 0.6x
+  FORM   close $149.55   1M:+28%  3M:+57%  ADR 7.3%  EMA:Lead  no base  vol $207M  RVOL 1.0x
+  APLD   close $46.59    1M:+27%  3M:+74%  ADR 8.9%  EMA:Lead  near pivot (-7.3%)  vol $943M  RVOL 0.6x
+  LSCC   close $153.72   1M:+24%  3M:+62%  ADR 5.6%  EMA:Lead  near pivot (-1.3%)  vol $267M  RVOL 1.4x
+  MOD    close $297.37   1M:+22%  3M:+48%  ADR 7.4%  EMA:Lead  near pivot (-8.0%)  vol $368M  RVOL 1.5x
+  INTC   close $133.99   1M:+21%  3M:+190%  ADR 7.0%  EMA:Lead  no base  vol $19389M  RVOL 1.7x
+  STRL   close $861.88   1M:+18%  3M:+100%  ADR 6.9%  EMA:Lead  pivot dist (-14.3%)  vol $581M  RVOL 1.7x
+  BWA    close $71.84    1M:+18%  3M:+37%  ADR 4.2%  EMA:Lead  pivot dist (-8.9%)  vol $201M  RVOL 1.1x
+  SMTC   close $158.23   1M:+17%  3M:+102%  ADR 8.4%  EMA:Lead  pivot dist (-10.8%)  vol $885M  RVOL 5.7x
+  FLEX   close $147.61   1M:+17%  3M:+124%  ADR 5.9%  EMA:Lead  pivot dist (-11.5%)  vol $3065M  RVOL 14.3x
+  AGX    close $738.85   1M:+16%  3M:+54%  ADR 6.6%  EMA:Lead  no base  vol $261M  RVOL 1.6x
+
+Total candidates: 51  (Potent: 14, Leaders: 37)
+
+
+--- Artifacts written to /Users/gmerton/v2/options_playground/data/watchlist ---
+  Confirmed breakouts (2): MKSI, CRS
+  Intraday monitor list (26): AMD, APH, APLD, ATI, BAP, CMI, CORZ, CRS, DOCN, FTAI, GEV, GFS, GH, HUT, IBKR, LRCX, LSCC, MOD, MRVL, NVT, RVMD, SN, TER, VICR, VSH, WULF
+
+To arm the intraday trigger monitor (market hours, IB gateway up):
+  .venv/bin/python3 ibkr_bot/breakout_monitor.py --watchlist /Users/gmerton/v2/options_playground/data/watchlist/monitor_latest.json
+[Sun Jun 21 20:59:10 PDT 2026] done -> data/watchlist/eod_latest.json

@@ -535,5 +535,37 @@ by a 0DTE put **intraday**. So the daily detector is only a **candidate-narrower
 **selection + intraday execution**, consistent with the long-side thesis (see `project-ibkr-bot`:
 intraday gates can't buy precision). The cleanest discriminators in-sample were **close in bottom ≤10%
 of range + open→close ≤ −8%** — both only knowable mid-session, so they belong in the intraday trigger,
-not the screen. ⚠ **Blocked next step:** validate the intraday trigger on 1-min bars (needs IBKR Gateway —
-Tradier keeps only ~20–40d, Polygon plan blocks 2024; `fetch_intraday.py --end-date` is wired and ready).
+not the screen.
+
+### Intraday trigger validation — RESOLVED (1-min bars, 2026-06-19)
+
+Pulled IBKR 1-min RTH bars for all **17 daily-detector hits** (2024) via `fetch_intraday.py --end-date`
+and tested the intraday entry/exit on real ticks (`scratch_fade_trigger.py`). Findings:
+
+- **Entry trigger = `lose_vwap`** (first 1-min close below running VWAP) beats `lose_open` and `lose_or5`
+  on both known Tito cases: it fires earliest (5 min SMCI / 9 min NVDA after the high), enters at the
+  highest price (best put entry), and on a fade you want max entry price → it slightly *beats* the naive
+  open→low benchmark. `lose_or5` is worst (waits for the opening-range break, enters low).
+- **Naive "first VWAP loss" is too trigger-happy** — fired before the real session high on 5/17 and got
+  run over, *including NVDA 3/8 (a known winner): stopped −0.7% because the famous outside-reversal high
+  was at 10:30, not the open.* The other premature stops (DJT, MSTR 3/11, BABA, SMCI 12/3) were also
+  before the top — yet **every one of those days still closed deep red.** Timing was wrong, direction right.
+- **Fix = fade-the-failed-new-high + RE-ENTRY.** Rule: enter on a VWAP loss; **a new high above the
+  high-at-entry is the stop** (the "failed" high wasn't the top); after a stop, re-arm and fade the next
+  failed high (≤3 legs). This recovers all 5 — NVDA −0.7% → **+8.1%** (09:46✗ → 10:39✓), DJT → +6.5%.
+  **Underlying capture: 17/17 profitable days, median +7.0% (mech, held to close) / +8.9% (MFE, sold into
+  the intraday low). Only 5/17 needed a re-entry; the 2nd leg always held (never needed leg 3).**
+- **0DTE option P&L (BS reprice, ATM put, TRADING-time T, central = IV 90% + 10% round-trip haircut):
+  median +216% (mech) / +257% (MFE), 17/17 positive, worst day +34%.** Convexity *helps* — a stock down
+  8–23% intraday makes the ATM 0DTE put a multibagger. Robust across IV 60–120% (most conservative cell
+  still +206% median / +39% worst-day). **⚠ Two real constraints: (1) a STOP LEG loses ~99–100% of its
+  premium — each leg's premium is full risk capital, size accordingly; (2) magnitude is model-fragile
+  (tiny ATM denominator, single flat IV, no smile, 0DTE fills worse than mid±10%) — trust the SIGN, not
+  the number.** MSTR 3/11's re-entry was 15:20 (degenerate, ~40 min of 0DTE life) — a marginal trade.
+
+**Status of the edge:** daily detector = candidate-narrower with no next-day edge; the **realized edge is
+selection (the screen) + intraday execution (`lose_vwap` entry, new-high stop, re-enter the next failed
+high, sell into weakness).** ⚠ Still **n=17, selection-biased** (these are the days that already passed the
+exhaustion screen, which re-surfaces both known cases). **Next:** true out-of-sample — run the detector on
+2023 + 2025, pull those bars, re-test. Scripts: `scratch_fade_detector.py` (daily screen),
+`scratch_fade_trigger.py` (intraday entry/exit + 0DTE repricing).
