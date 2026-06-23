@@ -174,5 +174,10 @@
     "trigger_lb": 20,
     "tier": "A",
     "note": "sweep-add 06-22; calm turnaround basing at pivot"
+  },
+  "MNST": {
+    "trigger_lb": 20,
+    "tier": "A",
+    "note": "sweep-add 06-22; tight low-ADR coil under $93.92 pivot, grinder"
   }
 }

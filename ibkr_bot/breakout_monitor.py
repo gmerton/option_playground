@@ -59,6 +59,41 @@ RTH_MIN = 390           # 9:30-16:00 ET
 MIN_ELAPSED = 2.0       # don't project EOD volume from a near-zero denominator
 OR_MIN = 5.0            # opening-range window (grinders sit this out)
 RETEST_BAND = 0.002     # a low within 0.2% of the pivot counts as a retest touch
+WARMUP_MIN = 15.0       # suppress (soft-note) hard fires for the first N min (CLI: --warmup-min)
+
+# Empirical cumulative intraday volume curve -- fraction of an RTH session's total
+# volume that has typically traded by each 5-min bin (78 bins over 390 min). Built
+# from 10 days x 7 liquid names (build_volprofile). Volume is heavily front-loaded
+# (~9% in the first 5 min, ~19% by 30 min vs 1.3%/7.7% for a naive linear assumption),
+# so projecting EOD volume linearly massively over-states pace at the open and lets
+# the opening burst fake-confirm the volume gate. Using this curve makes pace honest.
+VOL_PROFILE_CUM = [
+    0.0662, 0.0921, 0.1144, 0.1363, 0.1548, 0.1723,
+    0.1903, 0.2055, 0.2205, 0.2351, 0.2504, 0.2630,
+    0.2779, 0.2903, 0.3021, 0.3159, 0.3285, 0.3416,
+    0.3536, 0.3651, 0.3765, 0.3875, 0.3983, 0.4092,
+    0.4201, 0.4306, 0.4408, 0.4520, 0.4615, 0.4711,
+    0.4821, 0.4910, 0.5001, 0.5085, 0.5175, 0.5245,
+    0.5319, 0.5411, 0.5491, 0.5564, 0.5634, 0.5707,
+    0.5791, 0.5872, 0.5944, 0.6016, 0.6089, 0.6179,
+    0.6274, 0.6352, 0.6439, 0.6524, 0.6605, 0.6676,
+    0.6781, 0.6875, 0.6955, 0.7036, 0.7113, 0.7184,
+    0.7275, 0.7353, 0.7436, 0.7522, 0.7603, 0.7693,
+    0.7790, 0.7879, 0.7984, 0.8097, 0.8213, 0.8334,
+    0.8489, 0.8631, 0.8780, 0.8942, 0.9258, 1.0000,
+]
+
+
+def _vol_frac(elapsed_min: float) -> float:
+    """Fraction of a typical RTH session's volume traded by `elapsed_min` minutes
+    in. Replaces the naive time-fraction (elapsed/390) for volume-pace projection so
+    the front-loaded open doesn't inflate projected EOD volume. Clamped to (0,1]."""
+    if elapsed_min <= 0:
+        return VOL_PROFILE_CUM[0]
+    binx = int(elapsed_min // 5)
+    if binx >= len(VOL_PROFILE_CUM):
+        return 1.0
+    return VOL_PROFILE_CUM[binx] or VOL_PROFILE_CUM[0]
 
 # defaults overridden by CLI in main()
 VOL_MULT = 1.5
@@ -403,7 +438,10 @@ async def _on_bar_update(bars, has_new_bar: bool) -> None:
     cum_vol, elapsed, frac = _session_stats(closed)
     if elapsed < MIN_ELAPSED or frac <= 0:
         return
-    pace = (cum_vol / frac) / st["avg_vol"] if st["avg_vol"] else 0.0
+    # project EOD volume via the empirical intraday curve, not linear time -- the
+    # front-loaded open would otherwise inflate pace and fake-confirm the gate.
+    vfrac = _vol_frac(elapsed)
+    pace = (cum_vol / vfrac) / st["avg_vol"] if (st["avg_vol"] and vfrac > 0) else 0.0
     when = _fmt(last.date)
     grinder = not st["is_mover"]
 
@@ -436,6 +474,15 @@ async def _on_bar_update(bars, has_new_bar: bool) -> None:
     # time -- `established` only latches that the break HAPPENED, so without this
     # the arm could fire on a faded-back bar (below pivot/VWAP) once volume caught up.
     if not st["ping1_fired"] and st["established"] and qualifies and pace >= VOL_MULT:
+        # Warm-up gate: suppress (don't latch) hard fires during the volatile open;
+        # the break must still hold past the warm-up to arm for real.
+        if elapsed < WARMUP_MIN:
+            if not st.get("warmup_held_noted"):
+                st["warmup_held_noted"] = True
+                print(f"  . {sym}: ARM met at {when} but within {WARMUP_MIN:.0f}min warm-up "
+                      f"-- HOLDING (opening volatility), pace {pace:.2f}x.", flush=True)
+            return
+        st["warmup_held_noted"] = False
         # Market-regime gate: hold (don't latch) while the index is below its VWAP.
         # When the tape reclaims, the next still-qualifying bar fires for real --
         # so a break into weakness that fades won't have armed you on a dead bounce.
@@ -468,6 +515,13 @@ async def _on_bar_update(bars, has_new_bar: bool) -> None:
         green_hold = (price >= st["trigger"] and float(last.close) > float(last.open)
                       and above_vwap)
         if touched and green_hold and pace >= 1.0:
+            if elapsed < WARMUP_MIN:
+                if not st.get("warmup_held_noted"):
+                    st["warmup_held_noted"] = True
+                    print(f"  . {sym}: RETEST held at {when} but within {WARMUP_MIN:.0f}min "
+                          f"warm-up -- HOLDING (opening volatility).", flush=True)
+                return
+            st["warmup_held_noted"] = False
             if not _regime_ok():
                 if not st.get("regime_held_noted"):
                     st["regime_held_noted"] = True
@@ -504,11 +558,15 @@ def main() -> int:
                     help="index symbol for the market-regime VWAP gate (default SPY)")
     ap.add_argument("--no-regime", action="store_true",
                     help="disable the index-VWAP gate (fire breakouts regardless of tape)")
+    ap.add_argument("--warmup-min", type=float, default=15.0,
+                    help="suppress (soft-note) hard fires for the first N min of the "
+                         "session to avoid opening-volatility overfires (default 15; 0=off)")
     args = ap.parse_args()
 
-    global VOL_MULT, ADR_SPLIT, ACCOUNT, RISK_PCT, MAX_NOTIONAL_PCT
+    global VOL_MULT, ADR_SPLIT, ACCOUNT, RISK_PCT, MAX_NOTIONAL_PCT, WARMUP_MIN
     VOL_MULT, ADR_SPLIT = args.vol_mult, args.adr_split
     ACCOUNT, RISK_PCT, MAX_NOTIONAL_PCT = args.account, args.risk_pct, args.max_notional_pct
+    WARMUP_MIN = args.warmup_min
 
     watch_src = args.watchlist or (DEFAULT_WATCHLIST_S3 if args.s3 else None)
     watch_syms: list[str] = []
@@ -570,8 +628,12 @@ def main() -> int:
     movers = len(STATE) - grinders
     print(f"\nArmed {len(STATE)} names ({grinders} grinder / {movers} mover) | "
           f"vol confirm >= {VOL_MULT}x, ADR split {ADR_SPLIT}%. Ctrl-C to stop.")
-    print("  grinder = skip 5min OR + 2 closes (or retest); mover = 1 close. "
-          "Both: VWAP filter, buy-stop above the bar.\n")
+    print(f"  grinder = skip 5min OR + 2 closes (or retest); mover = 1 close. "
+          f"Both: VWAP filter, buy-stop above the bar.")
+    print(f"  warm-up: hard fires held for first {WARMUP_MIN:.0f}min (opening volatility); "
+          f"pace projected via intraday volume curve, not linear.\n"
+          if WARMUP_MIN > 0 else
+          "  warm-up: OFF; pace projected via intraday volume curve.\n")
 
     # Market-regime gate: subscribe to the index's 1-min feed and seed its prior
     # close so breakouts are held while the tape trades below VWAP.
