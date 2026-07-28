@@ -1,0 +1,331 @@
+[00:00] I have the rule to never risk more than one to two% of my account on any single day. Zero DTE break even iron condors. I have done more than 9,000 trades with this options strategy and it has been
+
+[00:17] consistently profitable for me for almost 5 years. Many followers of Theta Profits have asked that I make a video about my own trading. So here it is. Today's
+
+[00:31] interview guest is myself. Welcome Yon Aar Sanan. Thank you John. Nice to be here. Okay John let's get straight to it. Give us the 42nd version of what the zerote
+
+[00:46] break even condor strategy is. Sir break even iron condor is a day trading strategy on SBX. You sell multiple iron condors throughout the day and always try to
+
+[01:01] collect equal premium on both sides of the iron condor. It has very tight stop- losses. You set separate stop- losses on each side and you set them equal to the total premium you collected for the
+
+[01:14] whole iron contour. This means that if on uh the stop loss hits on one side, which is the most common scenario, your trade still ends up more or less around break even, hence the name.
+
+[01:28] I've traded this now for almost five years. In total, I've done more than 9,000 trades and it's been consistently profitable for me over all those years with quite low drawdowns.
+
+[01:43] We will break down the details of how you trade the zero DTE break even iron condor strategy. But first, tell us a little bit about yourself and your ways into options trading. I've been a
+
+[01:57] journalist and communication manager for many years in Scandinavia's leading media company, Shipster, but I took an early retirement last March. And now I spend my time on options trading but
+
+[02:11] also running this YouTube channel. I started with options trading in 2018 I believe it was and for the first couple of years it was pretty flat. Then came the pandemic. I lost half my
+
+[02:27] account by just taking too much risk. That was really a learning experience for me. And since then I've been profitable every year. Last year I made 39.3%
+
+[02:39] on my account. I just love trading options. There's so much to learn. It has this intellectual side to it, but it's also like this daily fight between the rational John and the emotional John
+
+[02:54] that I'm quite fascinated by. I live south of Oslo in Norway, but I also have a house uh by the fjord on western Norway where I really love to spend uh spend time. And right now I
+
+[03:11] have my winter base in Daang, Vietnam. A fantastic city that I really recommend. And you're also running this YouTube channel. Why is that? I started the profits as a way to learn
+
+[03:25] even more about options trading myself. I've always found that sharing knowledge is the best way to also gain knowledge yourself. It also is a great way to combine my professional background as a
+
+[03:39] journalist with a nerdy hobby as options trading. And the last personal question, we have called you both Yona and John so far in this video. What is your first name?
+
+[03:52] Yona is what everyone calls me in Norway. It is combined of my first name Yon and my middle name Aina. And in Norway we often put the first and the middle name together as the first name.
+
+[04:08] So Yona. But whenever I speak English I just switch to John. It is easier that way. Let's get into the basics. What is a zero DTE break even condor? So we can start with the basic terms in the name
+
+[04:26] right uh zero DT zero days to expiration that means it's day trading it's a day trading strategy on S&P the options product that follow the standard and PO poor 500 index.
+
+[04:46] It is iron condors which means selling a call credit spread on the upside and a put credit spread on the down sign at the same time opened as one trade. It has equal premium on both side or at
+
+[05:05] least we try to get as equal premium as we as possible. And then you set stop loss on each side separately and the stop loss is set to be equal the total premium you have
+
+[05:20] collected for the iron condor. So, if you have collected $200 for the whole iron condor, you will set the stop loss of $200 on the put side and a stop loss of $200 on the call side. This means
+
+[05:34] that if one of the stop losses hit, which is one of the most common uh scenario, you have lost $200 on that side, but you have also keeping the $200 you collected in premium. So, basically,
+
+[05:47] you are break even. You only really lose on this trade if the stop loss hits on both sides, which in my case has happened in around 8% of the trades over the years.
+
+[06:03] You place multiple trades throughout the day. How many? Well, well, that depends on your how you execute the strategy and your preference.
+
+[06:14] Can we set up an example to illustrate this better? Here is an iron condor I set up in options strat on uh Tuesday, February 17, about 35 minutes after the market had opened. S&P at the time was
+
+[06:32] about six 6,800 and I was able to set up an iron condor that in total collected $300 in premium, $150 on each side. I have sold a put at 6710,
+
+[06:50] bought a put at 6680. I have sold a call at 6870 and I have bought a call at 6,900 at the moment. Uh 10 about 10 minutes after the SPX has fallen about 10
+
+[07:07] points, but the trade is still pretty much in break even. We can look at how this trade will develop on the over the day. If S&P stays at this level, we see that the profit level uh you know profit
+
+[07:22] level will very quickly widen and at the end of the the day will be very wide. But we also see if we look at the thick line here, it doesn't take a big move down or a big move up before we are into
+
+[07:38] minus. And especially early in the day, if we get a big move, the stop loss will hit very quickly. But a lot further out we get into the day, the bigger move we can tolerate before before the stop-loss
+
+[07:53] uh hit. So this is basically a very typical trade that I set up with this strategy. So here we collected $300. The stop loss on the put side is then set at $300. And the same at the call side. The
+
+[08:10] stop loss on the call side is set at $300. Which means that if the stop loss on the put side hits, well, we lose $300 on the stop-loss, but we keep the 300 in premium. So basically break even. The
+
+[08:24] same if it the stop hits on the call side. Of course also break even. We only really lose with this trade if the stop loss hits on both sides. In that case we will lose about $300 on this trade. And
+
+[08:38] that happens in about 8% of the trades. In my experience this seems very similar to the zero DTE strategy called MEIC. Multiple entries and condors. What's the difference?
+
+[08:53] It is essentially the same trade or at least they are very similar. MEIC is maybe a more known name, but I like uh to call them zero DT breaking even iron condors. I think that kind of catch
+
+[09:09] that name catches the essence of of the strategy a bit better. MEIC is often connected to the trader Tammy Chamblas who trades a bit more mechanical than me and typically also
+
+[09:24] collects higher premiums than my trading style. But you know for all practical purposes, these are two names of strategies that are very closely related.
+
+[09:37] Let's get into the entry mechanics. When do you open new trades and how mechanical is this process? As I said, I enter these trades at multiple times throughout the day. I
+
+[09:51] don't personally have a set time that I enter them, but in general, I enter one per hour, once per hour um in on average. I will often enter the first after about 10 15 minutes after the
+
+[10:06] market has opened and then maybe the next at 10 15 around that. Uh then a bit after 11, one trade after 12, one after one, one after two and also I will enter after three depending a bit on the total
+
+[10:23] risk picture I have at that time. I try to enter when the market has stabilized a bit. So if there is a big move up in the market, I will wait for the market to somehow stabilize. Typically I will
+
+[10:40] wait until I see two or three five minute candles on more or less the same the same level. And the same if the market is dropping, I will kind of wait till I see some signs for it to
+
+[10:54] stabilize or signs of it reversing. But five the five minute candle is essentially what I'm using for this. And I, as I said, I like to see at least a couple of five minute candles on more or
+
+[11:07] less the same level before I before I enter a trade. The number of trades can vary a lot. depends partly on my personal program that day because these trades do need to be you know monitored
+
+[11:20] a bit. So if I have a busy schedule on busy personal scale that day I may enter fewer trades. If I have you know the time to fully concentrate on my trading I may enter more but it also depends on
+
+[11:34] the total risk I'm taking on and how the trades I already have on are are doing. I always try to look at what is the worst that can happen at any time and if I feel I have too much risk on or
+
+[11:49] approaching my limit then I may hold on entering new trades. I enter one spread at a time typically the call side first and then immediately after I will enter the put side. I don't try to leg in
+
+[12:07] though that you know by waiting for the market to move up and down. I I my philosophy is to enter both of them you know more or less at the same time. But I find that I get a bit better feel if I
+
+[12:19] first do the call spread and then the put spread less slippage so to speak than if you enter it all as one iron condor. It's also easier to control that you get the same premium on both sides.
+
+[12:33] How do you decide your strikes and the width of your wings? I don't have a set rule for this, but in most cases, I will the short will be at 10 to 15 delta and I will collect
+
+[12:47] between $100 and $200 uh on each side. So, $2 to $300 for the full anor. Sometimes especially if volatility is high I will go you know I will collect higher premiums but most cases I am
+
+[13:05] between 10 to 15 delta and $100 to $200 on each side of the iron condor. My starting point for the width is is uh always 30 but then I will adjust on one side to collect the same premium.
+
+[13:22] Sometimes, you know, one side may have 25, sometimes it might have 35 and well, even 40 and more sometimes, but the starting point and most typical iron condor, it has a width of 30 on each
+
+[13:38] side. How many trades will you have on at any time? I can have up to 10 trades running at any time, but that is rare. I would say
+
+[13:50] how many trades really depends on the total risk picture of the day and how the market is looking. As I said, I typically enter one trade per hour, which means that I will have, you know,
+
+[14:03] about six or seven trades running at the end of the day. But, you know, sometimes I will add extra trades if I have the time to monitor it and I feel that that is good. I have the rule to never risk
+
+[14:18] more than one to two% of my account on any single day. This is measured by the risk if all stop losses are hit on both sides on all the trade. It if that worst case scenario happens, I should not lose
+
+[14:34] more than 1 to 2% of my total account. I also have the rule to never use more than 50% of my available buying power on this strategy on any single day. So really my assessment of my total risk at
+
+[14:52] the moment also influences how many trades that I will uh I will put on. If things are going wrong and many of my trades are, you know, close to losing or stop losses have already been hit, I may
+
+[15:05] be careful with adding new trades. I'm curious, are there times during the day, for instance, the last hour before the market closes when you will not trade this strategy?
+
+[15:18] No, I enter trades every hour, but my statistics tell me that over those five years I've been trading this strategy, the last 3 hours of the market days have been the most profitable hours to open
+
+[15:34] trades. So, that's the hour that starts with 1:00 p.m. Eastern Standard Time, 2:00 p.m., and 300 p.m. Those have the best results in the long run. But I also noticed that these statistics
+
+[15:48] vary a lot from one month to another and one quarter to another. So I've decided to not take it into account and open trades on the individual day on all hours or as I see fit on that particular
+
+[16:04] day. Let's get into the exit mechanics. What are your rules for when you exit these trades? The main rule is that I leave the trade on until my automatic stop orders hit or the shorts hits the
+
+[16:21] value of 5 cents when well where when it will also be automatically closed. Sometimes I will tighten the stop losses during the day. I can do this to you know make sure I have capture some of
+
+[16:36] the profit that I've already collected. But it is can also be a way to control the total risk I have on. If I have a lot of trades on and I am considering enter new ones, I can reduce the risk by
+
+[16:51] tightening stop- losses of some of those trades that are at the moment doing pretty well. Why do you close your shorts at 5 cents instead of just letting them expire worthless?
+
+[17:02] The main reason is basically to take risk off the table. It allows me to reuse the longs for new trades and often I it means that often I can sell strangles in during the last hour
+
+[17:16] because several shorts have already been closed and I can sell strangles reusing the the longs because when the shorts hit five cents the the long no longer have any value so it's no point in
+
+[17:30] selling them but they can be reused for new trades to you know limit the buying power. Another reason is by closing at 5 cents. I often avoid the risks of those huge swings that sometimes can occur
+
+[17:46] during the last half hour. There have been several occasions where I have had the shorts being closed out for 5 cents and then market have made a big move and the same shorts that were closed
+
+[18:01] suddenly have gained a lot of value and other traders who were waiting for them to expire worthless see big losses. So I've been I've avoided those last minute swing losses sometimes due to this due
+
+[18:15] to this rule. But you know it just makes me more calm what to take risk off the table and to know that trades have been uh closed and my total exposure has been uh reduced.
+
+[18:28] Can you explain more in detail how you set up your stops? Yes, I set the stops a bit differently than many other traders. The first is that I only set them on the shorts. I
+
+[18:42] used to set them on spreads but decided a while back to change to only the shorts and I found that that in general gives me much less slippage than when I have the stops on spread especially when
+
+[18:56] the market is moving very fast. It also allows that the order can rest at the exchange instead of the broker which you know saves some milliseconds or seconds and in some cases can be very beneficial
+
+[19:10] again in situation where the market move very fast. Then is the question of should I set a stop limit order or a stop market order. I do both. I use a functionality called oko one cancel the
+
+[19:24] others. By doing that, I can set the stop limit order and then a stop market order further out. So to be more specific, I I set the stop uh limit order with 40 points between the stop
+
+[19:38] and the limit price. And then there is a stop market order 30 points further out. And with OK, one cancels the other. You know, if one is triggered, the other one is automatically cancelled. My way of
+
+[19:53] thinking around this is that I really want the stop limit order to be the one that triggered. That's the one that is closest. But there are cases especially when the market move extremely fast in a
+
+[20:07] short amount of time where the stop limit order can be skipped. And for me then the stop market order 30 points further out is kind of like the last line of defense. It ensures that I get
+
+[20:22] out of the trade okay at the poor fill but I get out before the losses get astronomical. You say you set the stops only on the shorts. What do you do with the remaining longs when the stops are
+
+[20:36] hit? The main rule then is to just close it. But sometimes the market have kept moving in the same direction and the long is gaining value. In those cases,
+
+[20:48] you know, I might actually make money on the long and the whole trade in the best cases may actually end up profitable. So, what I will do if I see that the long already has that the market keeps
+
+[21:02] moving uh keeps moving in that direction and the long has already more value than what I assumed for the break even scenario. I might set a stop market order on the longs, you know, at that
+
+[21:16] level where where the trade will be break even and uh let that one run and then adjust it if the market it keeps uh moving in that direction. This hasn't happened that often, but sometimes I'm
+
+[21:29] able to gain extra profit, sometimes big profit even by doing it in this way. But the main role is to just close the long right away because market may also turn around as we all know and then the long
+
+[21:42] will lose value very fast and you're just adding to your losses. So it really requires a bit of attention when when this happened. You do need to monitor uh the long and take action quickly after
+
+[21:58] the stop-loss hits, especially on the put side. on the call side, the longs will typically have much less value and much less gamma at uh later in the day. So, so I think um you don't see this
+
+[22:14] scenario as often. So, let's get into management of the trade. How do you manage the trade throughout the day? My main management is to adjust the
+
+[22:26] stops. There are two reasons for adjusting the stops. One is as the longs will lose value as the day go on and I want to tighten up the stops accordingly so that it still is at a break even
+
+[22:40] level if it hits. But the other is also that I might tighten up stops just to reduce the total risk of all my trades. That's a continuous you know assessment I'm doing where I look at you know what
+
+[22:55] is my total exposure right now? What is the total risk I have right now? What is the worst that can happen right now? And if I do have then a number of trades that are, you know, doing quite well,
+
+[23:07] but others are being threatened and maybe risk at double stop- losses, etc. Then I might want to tighten up some of them so that I basically reduce the total risk. So adjusting the stops is
+
+[23:23] basically the only management I do of my trades. I never try to adjust the trade otherwise or roll them or something. These are zerodt trades. I don't adjust them in other ways than tightening up
+
+[23:37] the stop losses. We have to talk about risk. What is the worst that can happen when trading zero DTE break even iron condors? I think there are two worst case
+
+[23:48] scenarios. One, the first and most comp common is if all trades end with double stop- losses. This can happen in whipsaw markets where the markets is jumping up
+
+[24:03] and down throughout the day. And that's also why position sizing is very important and the rule of never risking more than one to 2% of your total uh count in a single day. Double stop
+
+[24:18] losses have happened for me about 8% of my trades. This percentage is a bit higher has been higher the last year than it was in in the first years I traded this strategy. Maybe an
+
+[24:33] indication that the market is there is more intraday volatility than than before. But double stop losses really is the enemy or the main risk of this strategy because that's when you have
+
+[24:46] real losses. If stop-loss is hit only on one side, the trade will end more or less around break even. There is another really bad thing that can happen that is catastrophic
+
+[25:00] pills. I have been pretty lucky with that. But you know there are situation again when the market moves very fast and very far in a short amount of time liquidity disappears from the market and
+
+[25:16] you have the risk of getting pretty catastrophic fills. There are a lot of stories are out there of people of traders who have experienced this. So that is a risk you
+
+[25:27] also need to take into account and again position sizing is really important here. not you have [snorts] more trades on than what you should. Basically, what are other risks that traders should
+
+[25:42] be aware of? I think the most important is be aware of that this is a strategy where you actually need to monitor your trades. Alternatively,
+
+[25:52] if you have set up automation, I have not done that so far, but if you set up automation that you have good rules set up that take care of the risks, the major risks with this strategy is
+
+[26:06] essentially situation with big and sudden moves in the market. They can also be big opportunities when you have the stops only on the shorts as I have. But you know that's that's when you have
+
+[26:21] the risk of getting bad feels. That's when you have the risks of a lot of stop- losses hitting. When I say there is opportunity, it is also because that you know when this happen and if you
+
+[26:33] have the stops only on shorts as I do the longs gain value very quickly if the market moves in that direction. What looked like a trade that will be a losing trade can suddenly be a
+
+[26:45] profitable trade. I had that experience on uh on April 9th, for instance, when when uh Donald Trump was rolling down many of his tariff threats and the market made a huge jump of 10%.
+
+[27:00] Several of my stop losses hit on the cold side. But then the longs gain value and when I closed them, I closed uh closed them at a value where the whole trade was at uh at profit and I made
+
+[27:15] good money that day because of that. But that's that's really the exceptions and not planned for with the ok stops that I described where I have one cancels the other where I have both a stop limit and
+
+[27:27] a stop market order. They should not trigger at the same time but every now and then few times every year it does happen that they trigger both at the same time and then you are suddenly long
+
+[27:40] what you were short because you got an extra you got an extra long essentially that is a risk but you know in mo most of the cases I've been able to get out of it without the loss I always ask my
+
+[27:54] guests so I will ask myself as as well where would you place this strategy on a risk profile scale from one being very low risk to 10 being very high risk. I would put it at a four. That is though
+
+[28:12] assuming that you are able to trade it with discipline, that you are setting the stop- losses, that you are sticking to the rules, that you are limiting your total risk to 1 to 2% etc.
+
+[28:28] But if you're able to do that, I would say as a zero DTE strategy, it is a bit on the safer side. I would argue it has relatively low drawd downs. It will of course as all strategy have draw downs,
+
+[28:43] but it has relatively low drawdowns, but again it assumes that you are disciplined. If you're not disciplined, well, it's not the four. John, what has been your
+
+[28:56] results trading this strategy and how do you measure the results? So, let let me start by showing the overall graph of my results since I started trading this strategy in April 2021.
+
+[29:14] This graph you see how it has, you know, been consistently profitable month by month. I do not share the exact size of my account and I'm not going to give you a total percentage either because you
+
+[29:28] know I do trade other strategies in the same account and like so just by telling you how much my account has been growing does not really show that overall results but this graph shows you know
+
+[29:41] the monthly profits and and illustrates also the cumul cumulative profits that I have collected over those years and as you See it is a very steady graph going upwards with a few small draw downs but
+
+[29:57] not really big. The posit overall picture in my opinion is very positive. So let's go to how I measure the results. I found that traders measure their results in many different ways. I
+
+[30:11] measure this strategy in two different ways. The first is what I call net profit per average trade. With this measurement, I've had a average net profit per trade as 0.28%.
+
+[30:30] How do I measure this? Well, I take the net profit of the trade. I divide it by the risk of that trade. And the risk is of course the width of the biggest spread minus the premium I collected.
+
+[30:44] Essentially the buying power I'm using for the for the trade. So I I measure this on all trades I do. When I take all those 9,000 plus trades into account, my average net profit per trade has been
+
+[30:59] 0.28%. Doesn't sound much, but remember this is day trading. This is capital being used again and again each day and it adds up quite a bit when you analyze it. The
+
+[31:12] other way I use to measure this is premium capture rate. With this way of measuring, you take your net profits and you divide it by the all the premium you collected and that gives you a premium
+
+[31:29] capture rate. My average premium capture rate over all those 9,000 plus trade has been 5.65%. Maybe not a lot, but it's been profitable all those all those years.
+
+[31:46] This these are two alternative ways of measuring. And let's if we take a very quick look here is the graph for the net profit per trade month by month over those years. And here is the same graph
+
+[32:03] for the premium capture rates. So what we see, you know, is that they both have look very much look very much the same. They pretty much measure the same thing. I like the net profit percent per trade
+
+[32:17] best myself and I think it's a very good way over time to measure a zerod trade strategy. What is the win loss rate? the win rate has stayed consistently at around 40% over that time. And I think I
+
+[32:36] think this is a great example of why win rate is not something we should be that focused on. A strategy with a low win rate actually most of the trades end up with loss can still be profitable. Some
+
+[32:50] people fall in love with win rate and brag about the high win rate. But win rate in itself does not guarantee that the strategy will be profitable in the long run.
+
+[33:02] And with this strategy also win rate is not really [snorts] that relevant for another reason is that the break even trades the trades that end with the stop losses uh hitting on one side. Well,
+
+[33:15] most of those will end around break even. Some will end with a few dollars in plus also so wins. Some will end with5 or $10 in minus losses. And it's a bit of how tight the stop
+
+[33:30] loss is at and coincidential of where the where each trade will happen. So for me the win rate is not really that relevant to this strategy. Why would you trade the strategy with
+
+[33:43] such a low win rate? because it has positive expectancy and that's what we need to understand with win rate. We know the formula for expectancy. You take the win your win
+
+[33:56] rate and multiply by the average size of your wins. Then from this you deduct your loss rate multiply with the average size of your loss. From this formula you get the expectancy and the most
+
+[34:12] important is not your win rate or loss rate. The it is what that you have positive expectancy of the strategy. This strategy for me has had 40% win rate but the wins are more than twice
+
+[34:27] the size of the average losses and because of that it has positive expectancy even though it has only 40% win rate. You open these trades throughout the
+
+[34:40] day. How is the time you open uh the trade affecting your results? Do you see any difference depending on day of the week or hour in the day? Yes, there are clear differences when I look at the
+
+[34:54] statistics over all those five years. Mondays and Fridays are the most profitable days. Tuesday and Wednesdays are more, let's say, medium profitable days. and Thursdays have been for
+
+[35:09] practical purposes break even days on average. Also the time of the day matter when I look at the statistics for all those five years the three last hours of the market day has been the most
+
+[35:22] profitable. That's the best time to open new trades according to my statistics and my way of uh trading. But again, this can vary significantly from one quarter to another. And I basically
+
+[35:38] decided not to really pay attention to it that much because I think even though that's what the long-term statistics show, this month might still be very much differently. Let's sum up. Who is
+
+[35:53] this strategy suited for and who is it not suited for? I think this is a strategy to consider for traders who are a bit riskaverse but would love to get into zerodt trading because it does have
+
+[36:08] at least in my experience pretty low drawd downs but you need to have the time to monitor your trades otherwise it be can become quite risky. you must have that time to monitor the trade and it's
+
+[36:23] also a trade where you you know you do want to be able to put on several trades not just one I think many traders and I haven't done this but many traders have set up this strategy or similar
+
+[36:34] strategies on automation and this is working well for them. It is my ambition to also try that for myself and and I want to try that to see if I can reduce some of my time. But you know, you need
+
+[36:47] to either be able to monitor your trades or set up this in a very good way in a trade automation software. What are the two or three most important takeaways you want the audience to
+
+[37:00] remember from them from this interview? The first takeaway is that you need to be disciplined. You need to stick to your rules. If you're not able to be disciplined and
+
+[37:14] stick to your rules, this is not a strategy for you. The second takeaway is always pay attention to your total risks. Know what what is at risk at any time.
+
+[37:29] Know what is the worst that can happen at any time. know what will happen, how much you will lose if all stop losses are hit on the trades you have on. This is crucial to have that picture at any
+
+[37:43] time to avoid too big losses on any single day. And the third, you really need to keep a trade log of some form so that you can analyze your trading, analyze your wins and uh wins and
+
+[37:57] losses. I think it's very hard to succeed with a strategy like this or a lot of other strategies as well if you do not have a good trade log that allows you to analyze that particular strategy
+
+[38:10] in detail. How does this fit with other strategies you trade? This has been my bread and butter strategy and the one I do on zero DTE.
+
+[38:22] It's been a big chunk of my profits the last few years. But I do also trade other long-term strategies. Uh I do in the money covered calls. I do the wheel. I do time flies spreads. And over time,
+
+[38:36] I do want to put more of my attention into my longer uh longer terms strategies. Also, I want to find strategies that, you know, play well together. But this has been my bread and
+
+[38:50] butter strategy. John, what would be good resources to learn more about this style of trading? There are a few videos on the profits that are about similar strategy. There's
+
+[39:04] an interview with David Baronson. There is an interview with Nick Magno and there is a video with Tammy Chamblas where she explains her way of trading me.
+
+[39:17] I will also recommend the Facebook group quantum options that is run by Tammy Chamblas. Tammy Chamblas has you know is sharing every day how she is doing with her way of trading this strategy and
+
+[39:32] also sharing a lot of knowledge and uh research. So I do really recommend if you want to trade this way to join the quantum options uh Facebook group. Yay. Thank you very much for sharing your
+
+[39:48] zero DTE break even iron condor strategy. And remember we have a many other interviews on this channel about the different zerodte trading strategies. So check them out. Thank you
+
+[40:02] very much. This was fun.

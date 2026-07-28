@@ -1,0 +1,19 @@
+{
+  "video_id": "BRht1eWBAIY",
+  "url": "https://www.youtube.com/watch?v=BRht1eWBAIY",
+  "title": "$SKHY short and many takeaways | 15 Jul 2026",
+  "channel": "martinlukkt",
+  "channel_id": "UCB6jWJJvO_sWZ2PwgmMcxCw",
+  "stream_date": "2026-07-15",
+  "duration": "2:22:59",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

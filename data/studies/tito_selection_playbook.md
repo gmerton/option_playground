@@ -149,6 +149,55 @@ his actuals dwarf both at-expiry intrinsic and my exit-*close* estimate. The pro
   methods. **Any backtest MUST model his actual intraday exits** — expiry/close pricing is worthless here.
 - His **sell-into-strength / cut-fast** discipline is alpha *on top of* selection.
 
+### ⭐⭐ Hold-time expectancy — the asymmetric barbell (FULL log, n=2,712, `Adhikary_PNL_by_duration.csv`)
+
+Unlike the curated 20-winner set, this table is Tito's **full-log behavior with losers in it** (win rates
+44.7% → 67.5%), so it *does* speak to expectancy — the first dataset that partially lifts the survivorship
+caveat below.
+
+| Duration | Trades | Win% | payoff (W/L) | exp/trade | share of P&L |
+|---|---|---|---|---|---|
+| 0-10 min | 920 (34%) | 44.7% | 1.16 | **−$26** | net **drag** |
+| 10-30 min | 467 | 51.2% | 1.59 | +$232 | |
+| 30-60 min | 239 | 56.1% | 2.28 | +$549 | |
+| 1-2 h | 184 | 57.6% | 2.25 | +$611 | |
+| 2-4 h | 146 | 58.9% | 1.93 | +$606 | |
+| **4+ h** | 756 (28%) | 67.5% | 2.32 | **+$1,146** | **82% of total profit** (Tito's number) |
+
+Win rate **and** payoff ratio both rise monotonically with hold time; avg loss stays ~flat ($650-924).
+
+**Tito's own two takeaways (ground truth — these supersede my first read):**
+1. **4+ hour trades = 82% of profit from 28% of trades.** (My CSV-mean expectancy estimated 68%; his realized
+   82% is higher because the long bucket's fat right tail of huge winners is understated by a simple avg-win
+   mean — concentration is even more extreme than the means imply. The 28% trade-share matches 756/2,712 exactly.)
+2. **The sub-10-min bucket is DISCIPLINE, not churn.** "He knows he is wrong and quickly cuts losers." Its slight
+   negative expectancy (−$26/trade) is the **intended cost of being wrong cheaply** — fast recognition + a small
+   cut. ⚠ This corrects an earlier reading that called it over-trading: do NOT "enter less" there — the fast cut
+   is what keeps avg loss flat (~$700) so the 4+h winners can dominate.
+
+**Synthesis — the barbell:** cut losers fast (short duration, small ~symmetric losses) + let winners run (4+h =
+82% of P&L). This **extends the "exit timing IS alpha" finding above to the loss side**: the prior section
+quantified selling *winners* into strength; this quantifies cutting *losers* fast — both halves of the exit are
+the edge. Mechanical caveat: duration is partly **endogenous** (winners last by definition), so this is NOT "hold
+everything 4+h" — it's "be right about which to hold, and be fast to cut the rest."
+
+**Relationship to the curated-20 swing trades (working lens, 2026-06-22):** treat the multi-day swing
+winners in this playbook as the **extreme right tail of the 4+h "let-it-run" bucket** — not a separate
+book, but the same cut-fast/let-run discipline carried to its end on the trades that kept working. This
+unifies the two datasets: the duration table is the **body** (base rates + barbell mechanics, incl. the
+disciplined loss-cutting drag), and the curated 20 are the **tail** (what a 4+h winner becomes when it has
+the legs to ride for days). The 82%-vs-my-68% gap *is* that tail — outsized winners the avg-win mean hides.
+**Implication: the selection recipe here is really the front-end *tail-potential filter*** — which of his
+~11 trades/day deserve to be ridden toward 4+h (and beyond) vs cut fast. ⚠ Unverifiable without the trade
+log (we have only the 6-row aggregate; the curated set may even be a different period/instrument — longer-
+dated options vs intraday), so this is a conceptual model, not a proven linkage.
+
+⚠ **Caveat shift (was survivorship → now also single-regime):** the 2,712-trade sample is *large* (lifts
+the old survivorship problem for hit-rate/expectancy), but if it's ~one year it's **one market environment**
+— expectancy is regime-conditioned (big N, but not a sample of regimes). Frequency ≈ 2,712/252 ≈ **11
+trades/day → an intraday day-trading book**, distinct in timeframe from the multi-day swing setups even if
+behaviorally the same continuum.
+
 ### When to HANG TIGHT — daily-close trail (from the 12 held-to-expiry winners)
 
 For a trader who bails too early on intraday wobble, the path analysis (`scratch_adhikary_holdpath.py`)

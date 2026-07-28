@@ -1,0 +1,63 @@
+# Options With Ryan — Playlist Video List
+# Source playlist: https://www.youtube.com/playlist?list=PL5p4CtbicLYl9nbsmLf8fLzG-DlNlfBgq
+# Fetched 2026-07-14 via `.venv/bin/yt-dlp --flat-playlist` — 56 entries, playlist order (oldest teaching material first).
+# 4 videos unavailable/hidden (title NA) — kept for completeness.
+# Column 1: [x]=reviewed in strategies/  [ ]=not yet reviewed.  Re-run yt-dlp to refresh.
+# Reviewed: 6/56  (matched by meta.json video_id)
+
+[ ] OgcNdqgHZWM | How To Trade Options For Beginners (Free Course) | $600k Portfolio Live Trading
+[ ] rHMEVc9kLuU | Top 3 LEAPS Call Options To Buy For 2025 (You're Not Too Late!)
+[ ] 8L9Sq0WVUao | Put Options | How To Trade Cash Secured Puts (Full Tutorial)
+[ ] jvMu1ptkIb4 | How LEAPS Call Options Helped Me Retire Early (Full Options Trading Tutorial)
+[ ] UOSWrmOHlTE | How I Became A Profitable Trader (My 3 Principles) - Options With Ryan
+[ ] vJFHb2XCpA0 | How I Was Able To Retire Early Using The Wheel Strategy Options On 3 Stocks | Options With Ryan
+[ ] no5NRRvTfWU | How I Approached a New Swing Trading Strategy (Personal Recap & Backtesting)
+[ ] n6zX0QgCkoQ | How To Profitably Swing Trade $SPY & QQQ Options ($162,000 PROOF)
+[ ] tUH5edzfuWw | Breaking Down My $117k Trading Period | Swing Trading Backtest
+[x] FPDDV_R55tI | My Incredibly Easy Swing Trading Strategy To Make $24,000 Per Month (REAL PROOF)
+[ ] O5eO7Jxd7qI | Selling Cash-Secured Puts Explained | My Beginner Framework for 2025
+[ ] yJvVlEyBNMM | How I Was Able To Retire Early Using The Wheel Strategy With These 3 Stocks 2025
+[ ] 2aAQQF20c6k | My 5 Rules To Become A Profitable Trader In 2025 - Options With Ryan
+[ ] qFyTKUdQkDw | How I Make $29,361 Per Month Using This SIMPLE Swing Trading Strategy (PROOF)
+[ ] k-0CT52rEHo | My Wheel Options Strategy With $196K Portfolio | 3 Stocks I’m Watching In 2025
+[ ] yS8QOghPrRU | How I Made $70,235 In 2 Months Using This NEW Swing Trading Strategy (LIVE BACKTESTING)
+[ ] -BMijqUdnH0 | How I Traded $SPY & $QQQ Options For $100,000+ Profit (Live Login) - Options With Ryan
+[ ] hC7AliOV9r0 | The RSI Indicator - How I Made $106,000 Using The Relative Strength Index Trading Options
+[ ] XPYAJ25wnHw | How I Trade The Wheel Strategy On These 3 Stocks
+[ ] PSXFCNfRWpo | How I Swing Trade LEAPS Call Options (Options Trading For Beginners)
+[ ] zJA3NWnAZyo | My LEAPS Framework on SPY | Long-Term Options Strategy
+[x] lHMYnBi5sZY | The Wheel Options Strategy For BEAR MARKETS And RECESSIONS (Full Guide To Avoid HUGE LOSSES)
+[ ] K78dKgMdfMI | The Poor Man's Covered Call (A Beginners Guide To Generating Premium From Options)
+[ ] VUq292GT3eU | Rolling Options Explained | Trade Management for Beginners
+[ ] PJY3hYa6p4A | The Wheel Options Trading For Beginners: How I Went From $2k To $600,000 Portfolio SAFELY!
+[ ] 2igAXaYiEr4 | My Long-Term QQQ Options Strategy | $250K Wheel Breakdown
+[ ] Zd9Du2D_fzA | Vertical Spread Options Strategies (Full Guide For Small Accounts) | Less Than $10k
+[ ] N5edkQ4M_F8 | Covered Call Option Strategy | My Guide To Weekly Income From The Stock Market
+[x] THpAzr-UKxo | The Wheel Strategy 101 | My Full-Time Option Income Plan Explained
+[ ] 05q7FAFwIso | Swing Trading During a Market Crash: My $28,800 Month (What I’d Do Differently)
+[ ] RA6q0LPPMrc | 🚨 3 Tech Stocks To BUY NOW (May 2025) | Why I Invested $250,000 - Options With Ryan
+[ ] mDDNw0ocDXw | NA
+[ ] cJVb2k3NMj8 | How I Collected $55K In May Swing Trading Options (My Personal Recap)
+[ ] mPRDOzgGIAA | How I Averaged $10K/Month Selling Options on PLTR (My Wheel Strategy Options Recap)
+[ ] qZfz5kgQVDU | How I Use The Wheel Strategy On SOFI To Average $10k (Full Breakdown)
+[x] ttN5dCDDE5c | The Wheel Strategy Options: How I Collected $218K Selling Options (Personal Recap)
+[ ] XsqjFjQqSv0 | The Wheel Strategy On Nvidia (NVDA) Options: My $29K Profit Breakdown For July
+[ ] 4LGFL7H6ur8 | Robinhood Wheel Strategy Options Trading (HOOD) | $60K Premium Collected In July - Options With Ryan
+[ ] VTqCAC1V5BU | NA
+[ ] 4z2E3P0WRaY | Palantir Wheel Strategy Options Explained | How I Collected $282K In Premiums - Options With Ryan
+[ ] DFjsCAgdmDs | Retire Early With SOFI Wheel Strategy Options? My $290K Premium Story (Options With Ryan)
+[x] vZgrQgk4IlI | How I Use LEAPS Call Options To Retire Early (Full Masterclass) | Options With Ryan
+[ ] OAUSSQ3_uTc | The Wheel Strategy Options | How I Collected $300K Selling Options (Personal Recap)
+[ ] WYRLYE9gXqY | Robinhood Wheel Strategy Options Trading 2025 (HOOD) | $318K Premium Collected - Options With Ryan
+[ ] WRBUg_YYUFY | NA
+[ ] SEBYgJ-KrRs | IREN Wheel Strategy Options Explained | How I Personally Collected $448K In Premiums
+[x] 9gkUoPpUJO8 | Stock Deep Underwater? My Covered Call Strategy Explained 2026 | Options With Ryan
+[ ] Q3IZjEFjaxc | The Wheel Options Strategy Explained: My SOFI Setup for 2026 | Options With Ryan
+[ ] QhOPlTnJTh8 | The Wheel Strategy Explained | My Western Digital (WDC) Options Plan For 2026 - Options With Ryan
+[ ] XVu1Vi0yYjs | The Wheel Strategy Explained | My Corning (GLW) Options Plan For 2026 - Options With Ryan
+[ ] 1PmzBb61C6w | Stock Market Earnings: TSLA, VRT, LRCX | How I Trade Options Around Earnings (Options With Ryan)
+[ ] pxOrmdrh-WA | IREN Wheel Strategy Options Explained | $23K Premium Breakdown 2026 (Options With Ryan)
+[ ] sS7rttL83cE | Celestica Wheel Strategy Options Explained | My Trading Game Plan 2026 (Options With Ryan)
+[ ] sfDrBnVop9k | Coherent (COHR) Wheel Strategy Explained | My 2026 Trading Game Plan - Options With Ryan
+[ ] 0LUyp2xJm-E | How I Use LEAPS Call Options To Build Early Retirement Wealth | Full 2026 Masterclass
+[ ] ZGGKgdcLF2w | NA

@@ -1,0 +1,128 @@
+{
+  "video_id": "yvaMXQfOEWI",
+  "date": "2026-05-26",
+  "title": "Chasing the gap-up | 26 May 2026",
+  "observed_trades": [
+    {
+      "date": "2026-05-26",
+      "ticker": "INTC",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Chasing the gap-up/breakout on Intel; says the best entries were the early one-minute candle reclaiming the 9 EMA, and his fill was a bit late.",
+      "entry_basis": "One-minute candle breakout / 9 EMA reclaim after gap up",
+      "stop": "",
+      "source": "2026-05-26_yvaMXQfOEWI@37:49",
+      "confidence": "stated",
+      "fill_timing": "today",
+      "notes": "'Intel was a little a bit late. I think the best one is down here.' (37:49). Got stopped (43:35) then re-entered (136:56)."
+    },
+    {
+      "date": "2026-05-26",
+      "ticker": "INTC",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Got stopped on Intel after the late/chase entry.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-05-26_yvaMXQfOEWI@43:35",
+      "confidence": "stated",
+      "fill_timing": "today",
+      "notes": "'does start on intel too' (43:35) = got stopped on Intel too; 'the punishment of not getting it early' (47:53); then re-entered (see 136:56). Removed 'low of day / bar low' stop figure not stated for this fill."
+    },
+    {
+      "date": "2026-05-26",
+      "ticker": "INTC",
+      "direction": "long",
+      "action": "reentry",
+      "setup": "Missed the pullback into 9 EMA/anchor-VWAP, so bought the weekly breakout a bit higher.",
+      "entry_basis": "Weekly breakout",
+      "stop": "",
+      "source": "2026-05-26_yvaMXQfOEWI@136:56",
+      "confidence": "stated",
+      "fill_timing": "today",
+      "notes": "'I missed the pullback on the 9 EMA and the angel fee web... I just bought the weekly breakout.' (136:56)."
+    },
+    {
+      "date": "2026-05-26",
+      "ticker": "MXL",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "MaxLinear (semi) entry attempt; got stopped out.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-05-26_yvaMXQfOEWI@83:17",
+      "confidence": "stated",
+      "fill_timing": "today",
+      "notes": "'No, I got stopped out from MXL.' (83:17). 'MXL mass linear' = MaxLinear (interpreted; see ambiguous_tickers). Removed 'stop order at preset level' phrasing not stated for this fill."
+    },
+    {
+      "date": "2026-05-26",
+      "ticker": "AAOI",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Pullback play on AAOI; got stopped out twice today but still considers it a valid pullback play.",
+      "entry_basis": "Pullback into 60-min / daily 9 EMA",
+      "stop": "",
+      "source": "2026-05-26_yvaMXQfOEWI@90:36",
+      "confidence": "stated",
+      "fill_timing": "today",
+      "notes": "'AOI is still a valid pullback play even though I got stopped out twice today.' (90:36). 'AOI' = AAOI (interpreted)."
+    },
+    {
+      "date": "2026-05-26",
+      "ticker": "AAOI",
+      "direction": "long",
+      "action": "reentry",
+      "setup": "Giving AAOI a last chance on a 5-min/15-min candle breakout with very tight stop (<1%, ~0.2% risk).",
+      "entry_basis": "5-min or 15-min candle breakout",
+      "stop": "<1% (very tight; ~0.2% risk)",
+      "source": "2026-05-26_yvaMXQfOEWI@141:24",
+      "confidence": "stated",
+      "fill_timing": "today",
+      "notes": "'I'm giving the last try on AOI today... a stop less than 1%... only like point 2% risk.' (141:24)."
+    },
+    {
+      "date": "2026-05-26",
+      "ticker": "EMP",
+      "direction": "long",
+      "action": "trim",
+      "setup": "Sold 15% of the position into strength on EMP.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-05-26_yvaMXQfOEWI@130:16",
+      "confidence": "stated",
+      "fill_timing": "today",
+      "notes": "'I sell some into strength on EMP 15%.' (130:16) — 15% of the position, not a 15% gain. Ticker 'EMP' uncertain (a beaten-down solar name in other streams); see ambiguous_tickers."
+    },
+    {
+      "date": "2026-05-26",
+      "ticker": "TSLA",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Entered Tesla on a 60-min pullback into the 9/21 EMA last week; says any day that week was a good entry.",
+      "entry_basis": "60-min pullback into 9/21 EMA",
+      "stop": "",
+      "source": "2026-05-26_yvaMXQfOEWI@67:36",
+      "confidence": "stated",
+      "fill_timing": "last week",
+      "notes": "'Entry on Tesla is on the pullback... 60-minute pullback into the 921 EMA... I could buy every single day on Tesla last week.' (67:36) — holding from last week's entry."
+    }
+  ],
+  "principles": [
+    { "category": "posture", "text": "Chasing a strong gap-up is justified when you have a profit cushion: accept a lower win rate, risk only 1-2%, and aim to capture the straight-up rally — giving back 1-2% is fine if it fails.", "timestamp": "60:59" },
+    { "category": "risk", "text": "Size new positions off real-time account value (often discounting ~10%), and keep new-trade size similar to or smaller than existing positions; smaller new size when already loaded controls drawdown and avoids amplifying losses when the market reverses.", "timestamp": "125:49" },
+    { "category": "risk", "text": "When you have many working positions the market is likely stretched, so new entries carry a lower win rate; under-sizing new trades reduces drawdown and protects your mental capital for holding existing winners.", "timestamp": "127:27" },
+    { "category": "mindset", "text": "After a losing streak, stop trading for a day or two to reset; only re-engage for high-conviction setups and size small (~3% risk per trade) so 10 losses in a row is only a mild ~3% drawdown.", "timestamp": "132:23" },
+    { "category": "risk", "text": "Never increase risk per trade while in a drawdown/losing streak — that was a costly 2024 mistake; if you avoid risking more when losing, you'll stay fine unless you're wildly overtrading.", "timestamp": "134:38" },
+    { "category": "exits", "text": "Use plain market stop orders (not limit). On a premarket gap-down, wait for the open and let it execute, or wait the first 5-15 minutes for the spread to tighten before selling on market.", "timestamp": "86:10" }
+  ],
+  "ambiguous_tickers": [
+    { "timestamp": "09:23", "caption_text": "MXL mass linear maybe a AOI", "context": "Candidates he might find an entry on today; 'mass linear' = MaxLinear (MXL); AOI = AAOI.", "guess": "MXL", "confidence": "likely" },
+    { "timestamp": "09:52", "caption_text": "selling some in the strength like EMP", "context": "Trimming a name into strength; later 'sell some into strength on EMP 15%'. A beaten-down solar name.", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "39:19", "caption_text": "stopped out from AOI and Excel also", "context": "Got stopped from two semi/optical names; 'Excel' likely MXL (MaxLinear) mis-transcribed.", "guess": "MXL", "confidence": "unsure" },
+    { "timestamp": "42:43", "caption_text": "this breakout on app is pretty good on the weekly", "context": "Technically nice software-sector breakout but he prefers AI/semi theme over software 'app'.", "guess": "APP", "confidence": "unsure" },
+    { "timestamp": "73:36", "caption_text": "Galaxy weekly chart is looking pretty decent", "context": "A crypto-sector name, ~11B market cap, a bit illiquid (<200M volume); he wants >200M dollar volume.", "guess": "GLXY", "confidence": "likely" },
+    { "timestamp": "78:42", "caption_text": "QCOM actually starts started this rally from early 1999", "context": "Dot-com analog discussion — QCOM as a non-leader that caught up mid-rally with a 2,000% move. (Historical reference, not a trade.)", "guess": "QCOM", "confidence": "likely" },
+    { "timestamp": "114:38", "caption_text": "I and Q today at the end of free web since the gap", "context": "A name shaking out below the anchor-VWAP since the gap; considered a possible entry. 'I and Q' often = IONQ in these captions.", "guess": "IONQ", "confidence": "unsure" }
+  ]
+}

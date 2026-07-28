@@ -1,0 +1,19 @@
+{
+  "video_id": "s7dNzX6KWmg",
+  "url": "https://www.youtube.com/watch?v=s7dNzX6KWmg",
+  "title": "This 8-Leg Options Trade Targets Big Returns in Days",
+  "channel": "Theta Profits",
+  "channel_id": "UCzGARfberQ8nRRbsjK90BHg",
+  "stream_date": "2026-04-19",
+  "duration": "52:39",
+  "summary": "Steve Gunn (Options Income Academy; auto-captioned 'Steve Gans') pitches the newest variant of his flyagonal series, the 8-leg 'fly diagonal' (fly D): an ATM iron butterfly plus a put diagonal and a call diagonal on either side, delta-neutral, run Friday->following-Monday at 7-14 DTE for a fast 5-7% (24-48h) or 10-15% profit target, avg ~4 days in trade. Claims 50/50 = 100% win rate (first loser closed the day of taping), ~120% in 5 months, and a blended alert-service record of 95% win / 6.98 profit factor; uses no stops and instead 'heals' losers with discretionary adjustments taught in his paid course, and says AI (ChatGPT/Gemini/Claude) both assembled the strikes and validated the results. Skeptic view: same sound vega-aware core as Time Flies/Flyagonal but weaker-evidenced -- the 100% win rate is the vacuous defined-risk-fly trap, 8 legs mean 16 fills that eat a tiny ~$150-210 (SPX) or $7-12 (SPY) weekend target, and the user's own dc_time_machine backtest already showed tight-gap Fri/Mon 8-leg structures go net-negative after costs; the return engine is un-testable adjustment discretion and the AI 'validation' is circular in-sample. Same 1.5 as flyagonal: clever structure, more cost drag, louder sales motive. Write-up: strategies/eight_leg_trade.md (conviction 1.5/5).",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

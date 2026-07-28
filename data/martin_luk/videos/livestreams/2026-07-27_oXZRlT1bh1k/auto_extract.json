@@ -1,0 +1,266 @@
+{
+  "video_id": "oXZRlT1bh1k",
+  "date": "2026-07-27",
+  "title": "EP72 | 27 Jul 2026",
+  "observed_trades": [
+    {
+      "date": "2026-07-27",
+      "ticker": "SKHY",
+      "direction": "short",
+      "action": "hold",
+      "setup": "Carried short in SK Hynix (SKHY decode, previously confirmed). Managing rather than adding: 'probably I may lower the stop mid.'",
+      "entry_basis": "Pre-existing position from the prior week's semi short book",
+      "stop": "Raising it; thesis intact 'if it doesn't break out from the end of VWAP or this unfilled gap on Friday'",
+      "source": "2026-07-27_oXZRlT1bh1k@10:28",
+      "confidence": "stated",
+      "notes": "Also fields a viewer question at 36:14 about selling SKHY before earnings and explicitly refuses to give a directional answer ('how about flipping a coin? ... both holding and selling are right').",
+      "fill_timing": "prior",
+      "fill_date": ""
+    },
+    {
+      "date": "2026-07-27",
+      "ticker": "SNDK",
+      "direction": "short",
+      "action": "hold",
+      "setup": "Carried semi short. Viewer asks whether to cover at 1300 (a pivot support zone); he declines to cover yet.",
+      "entry_basis": "Pre-existing, from the Thursday semi shorts",
+      "stop": "",
+      "source": "2026-07-27_oXZRlT1bh1k@61:41",
+      "confidence": "stated",
+      "notes": "Reasoning is INDEX-level, not stock-level: SPY/IWM are 'day one on this reversal', not even below the 50 EMA, so he wants the indices more extended to the downside before covering more. Says he covered most shorts on Fri 17 Jul when QQQ was extended and at a prior swing low. Concedes the trade-off: 'I will probably give back some profits.'",
+      "fill_timing": "prior",
+      "fill_date": ""
+    },
+    {
+      "date": "2026-07-27",
+      "ticker": "MSTR",
+      "direction": "short",
+      "action": "reentry",
+      "setup": "Second attempt at the MicroStrategy short. Flagged as a candidate early ('I'm considering shorting this micro strategy today'), then confirmed via a viewer question about why he took the second try when he did.",
+      "entry_basis": "Entered while still a little below the declining 21 EMA rather than waiting for the touch — 'I just don't like to wait. And as long as my stop is tight, I'm going to try it out.'",
+      "stop": "Tight (unquantified) — the stated precondition for entering early",
+      "source": "2026-07-27_oXZRlT1bh1k@14:23, @88:40",
+      "confidence": "stated",
+      "notes": "⭐ The reason given for the aggressive entry is P&L state, not chart state: 'I got a huge chunk of profit cushions and positive feedback from my shorts, so I can be a little bit more aggressive on my entries... If I am in a drawdown, if I'm red in a year, I will not be this aggressive.'",
+      "fill_timing": "today",
+      "fill_date": "2026-07-27"
+    },
+    {
+      "date": "2026-07-27",
+      "ticker": "AMD",
+      "direction": "short",
+      "action": "entry",
+      "setup": "Pullback short into the declining 9/21 EMA in a weak SOXX. He concedes the setup is NOT ideal — price is somewhat extended from the declining 9, and 'the more extended you are from the declining EMAs, the lower your win rate will be.'",
+      "entry_basis": "⭐ Taken for RISK reasons rather than signal quality: 'My reason AMD today will be a good short is plainly because there's a tight stop. So I can manage my risk very easily and I can get a pretty high potential risk/reward.'",
+      "stop": "High of day, which coincides with the 9 EMA — 'a stop is only around 1%'; reclaiming the declining 9 intraday means 'you're probably wrong'",
+      "source": "2026-07-27_oXZRlT1bh1k@24:50",
+      "confidence": "inferred",
+      "notes": "INFERRED: framed as an answer to a viewer's 'Can AMD be a nice short here?', so he is grading the idea rather than clearly announcing a fill. He endorses it strongly and later remarks 'what a nice shot actually, AMD huge follow through' (68:31) and 'AMD is going lower' (67:37). Logged as inferred entry, not stated.",
+      "fill_timing": "",
+      "fill_date": ""
+    },
+    {
+      "date": "2026-07-27",
+      "ticker": "MARA",
+      "direction": "short",
+      "action": "missed",
+      "setup": "Break of the day's low on the 5-minute; he calls it the best entry, with the bounce back into the declining EMAs (or anchored VWAP from the highs/open) as the second-best.",
+      "entry_basis": "Not taken today",
+      "stop": "",
+      "source": "2026-07-27_oXZRlT1bh1k@41:23",
+      "confidence": "stated",
+      "notes": "A MISS, and he says so: 'I think I should have traded this one... The daily looks really nice, intraday also looks pretty nice.' Reason he is not in it: 'I was a little bit early and I got stopped out on Thursday.' Useful as a record of a stop-out that removed him from a subsequently working trade.",
+      "fill_timing": "",
+      "fill_date": ""
+    },
+    {
+      "date": "2026-07-27",
+      "ticker": "PLTR",
+      "direction": "short",
+      "action": "watch",
+      "setup": "Gapping up into the daily 9 and 21 EMA; weekly pullback into the 9 EMA; sector confirmation from IGV pulling back into its declining 21 and 50.",
+      "entry_basis": "Multi-timeframe confluence (weekly 9 + daily 9/21 + sector)",
+      "stop": "",
+      "source": "2026-07-27_oXZRlT1bh1k@42:46",
+      "confidence": "inferred",
+      "notes": "Strongly endorsed ('I think this is a really really good one') but no fill stated. ⚠ He flags earnings next Monday as a consideration.",
+      "fill_timing": "",
+      "fill_date": ""
+    }
+  ],
+  "principles": [
+    {
+      "category": "risk",
+      "text": "⭐ A tight, unambiguous stop can be the PRIMARY REASON to take a trade, overriding a mediocre setup. On AMD: 'my reason AMD today will be a good short is plainly because there's a tight stop — so I can manage my risk very easily and I can get a pretty high potential risk/reward.' He takes it despite conceding the entry is extended and therefore lower win rate, because the stop is ~1% and sits at a level (high of day = the 9 EMA) where being wrong is obvious: 'you can easily know you're wrong.'",
+      "timestamp": "24:50"
+    },
+    {
+      "category": "entries",
+      "text": "Win rate decays with distance from the declining EMAs: 'the more extended, the farther away you are from the declining EMAs, the lower your win rate will be.' Extension does not disqualify a trade, but it must be paid for with a correspondingly tighter stop.",
+      "timestamp": "26:14"
+    },
+    {
+      "category": "entries",
+      "text": "⭐ SECTOR selection dominates STOCK selection on the short side: 'my stock selection is not really that important — I just identify the weak sector to short. If you look at all the other semi names, most of them are going down since Thursday, like 99% of them. So it doesn't matter actually which stock I pick.'",
+      "timestamp": "51:34"
+    },
+    {
+      "category": "entries",
+      "text": "Prioritising a short watchlist when several names gap into declining EMAs: prefer names with a clean, sustainable PRIOR trend to break. He rejects PATH as the least interesting precisely because 'in the past few months it's going sideways, no really clean or sustainable trend has formed' — a name with no trend has nothing to fail.",
+      "timestamp": "57:26"
+    },
+    {
+      "category": "entries",
+      "text": "The 60-minute chart is the preferred reference for short entries: 50 EMA curling down, 9 below the 50, 21 also curling down, then short the bounce into the declining EMAs. Best when the 60-min 50 EMA aligns with the daily 9.",
+      "timestamp": "59:12"
+    },
+    {
+      "category": "entries",
+      "text": "Wait for weakness to SHOW at resistance rather than anticipating the reversal: 'sometimes I would anticipate the reversal, but most of the time I wait for it to show the weakness when it rallies into the resistance level. If it continues shooting higher, I won't consider shorting.'",
+      "timestamp": "59:43"
+    },
+    {
+      "category": "sizing",
+      "text": "⭐ Entry AGGRESSION is conditioned on recent P&L, not just on the chart: 'I got a huge chunk of profit cushions and positive feedback from my shorts, so I can be a little bit more aggressive on my entries. If I am in a drawdown, if I'm red in a year, I will not be this aggressive — I'll wait for the five-minute breakdown.' Same setup, different entry trigger depending on account state.",
+      "timestamp": "89:51"
+    },
+    {
+      "category": "risk",
+      "text": "He does NOT use stops in extended hours or overnight. If a stock gaps through the stop he simply lets it execute at the open. Rationale: overnight gap risk cannot be eliminated, and 'the probability of getting a gap up or a gap down is pretty similar — they probably even out.'",
+      "timestamp": "32:51"
+    },
+    {
+      "category": "risk",
+      "text": "A pullback short that closes near the low of day buys its own gap cushion: 'that's an advantage of a pullback short — if after entry it rolls over and closes near the low of day, it looks pretty weak, so I kind of have some cushion for a gap up tomorrow.' Managing overnight risk via entry quality rather than via a stop order.",
+      "timestamp": "29:53"
+    },
+    {
+      "category": "exits",
+      "text": "Cover shorts on INDEX extension, not on the individual name's support level. Declines to cover SNDK at a pivot-support zone because SPY/IWM are only 'day one on this reversal' and not even below their 50 EMA; he prefers to cover when the indices are extended to the downside — as he did on 17 Jul when QQQ hit a prior swing low. Accepts the cost: 'I will probably give back some profits.'",
+      "timestamp": "62:06"
+    },
+    {
+      "category": "exits",
+      "text": "⚠ Notably refuses to take a side on sell-into-strength vs sell-into-weakness: 'one of the most debatable rules — they both have a lot of supporters and both have their own merits and disadvantages. You need to find the one that works for you, and sometimes what works for that particular market situation.' A softening of the KB's existing 'sell into strength — it's never wrong' principle.",
+      "timestamp": "64:44"
+    },
+    {
+      "category": "posture",
+      "text": "Choppy conditions; watchlist breadth has flipped bearish — the leading/lagging counts have roughly inverted versus two weeks ago. 'A lot of the stocks are not looking great, especially in the tech universe.' Defensive, energy, financials and biotech look better, but he will not trade them: 'I'm not a fan of trading them, so I'm just going to focus mostly on the tech names.'",
+      "timestamp": "06:48"
+    },
+    {
+      "category": "posture",
+      "text": "Very low conviction on the long side: 'if you look at all the previous leaders — the tech names — most of them have made a move in either late 2024 or this year. I have very little confidence or interest in the long side. Very little.' Still tracks relative-strength names to stay open-minded and avoid tunnel vision.",
+      "timestamp": "09:18"
+    },
+    {
+      "category": "posture",
+      "text": "⚠ Bull-trap warning that he says has caught him repeatedly: relative strength in a WEAKENING tape is a trap. 'Sometimes you get a leader with relative strength, and after the market weakness comes in they have MORE follow-through to the downside. I got tricked by this type of bullish stocks, bullish patterns, bullish charts multiple times when the market breadth is really worsening and the peers are really doing bad.'",
+      "timestamp": "69:32"
+    },
+    {
+      "category": "posture",
+      "text": "How he flipped from neutral to bearish: he graded it as roughly '40% bullish, 60% bearish', then the software/data-centre names that looked strong turned out to be few and still under their 50 or 150 EMA. Decisive test: 'in a really strong bull market, for a really strong bounce, it shouldn't be staying right here — at least I want a bounce into the declining 21 or even the declining 50.' Plus no candidate leader to replace semis as the engine of the AI bull market.",
+      "timestamp": "73:13"
+    },
+    {
+      "category": "posture",
+      "text": "Extended-into-the-downside with huge volume is a danger sign for SHORTS near term, not a green light: semis are 'really extended into the downside having huge volume — that is a really really dangerous sign for the short term.' Symmetrically, a strongest-sector top with 'huge volume, high volatility, white candles' after names like SNDK/MU ran ~2,000% lowers the odds of that sector leading the next leg up.",
+      "timestamp": "78:06"
+    },
+    {
+      "category": "mindset",
+      "text": "⭐ Indicator parameters are zones, not lines, and the exact setting does not matter: 'any EMA is not a magic line or something — it's like a zone, it's like a range. Sometimes it overshoots, sometimes it just comes close and finds resistance. I'm using the 21 EMA — what if other people are using the 20? Anyone out there use the 19 EMA? It really doesn't matter.'",
+      "timestamp": "90:48"
+    },
+    {
+      "category": "mindset",
+      "text": "'What do you think?' is the wrong question: 'that's not an important question at all — it's irrelevant. What does the MARKET think is the most important, and how can we know that? The price.' He explicitly discounts news, analysts and other traders' claims as inputs.",
+      "timestamp": "10:12"
+    },
+    {
+      "category": "mindset",
+      "text": "On an unanswerable hold-or-sell decision (SKHY into earnings) he refuses to give a directional answer and suggests flipping a coin, 'because both holding and selling are right — there is no definite answer.' The decision that does matter: size it against your year — if you're down and the trade is green, locking profit may be right; do not treat earnings as a way to win losses back.",
+      "timestamp": "36:59"
+    },
+    {
+      "category": "psychology",
+      "text": "'Do not regret after you have made your decision. You can disagree, you can evaluate your decision a few days or a few weeks later — but do not regret the decision you made at that time.'",
+      "timestamp": "38:52"
+    },
+    {
+      "category": "process",
+      "text": "Weekend preparation is where the plan gets made, because the market is shut: 'that's really good for making the trading plan for today or this week — doing all the preparations in the weekend where the market isn't open, and you can really analyse the picture, analyse the condition more rationally.'",
+      "timestamp": "06:06"
+    },
+    {
+      "category": "process",
+      "text": "Position management has no universal answer and is found by iteration: 'it's really a process, and you'll gradually find your own way after trying to sell some or trying to hold more — you will find a balance in between for you. Try first and then evaluate later. But it definitely also depends on the market condition.'",
+      "timestamp": "85:57"
+    },
+    {
+      "category": "macro",
+      "text": "Cross-market read: Ethereum pushed above its 13 EMA (which he treats as his 9 EMA) and some smaller cryptos climbed, but most altcoins still look bad. He is 'getting a little bit worried about the market starting a deep correction or even a bear market' — NVDA looks like a failed breakout rolling over, having topped before QQQ.",
+      "timestamp": "94:18"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "10:28",
+      "caption_text": "if we're talking about SK high next / Should I sell SKH Highix before the earnings / he bought the leverage S skhinx ETF in Hong Kong",
+      "context": "Three separate manglings of the same name in one stream. SKHY = SK Hynix, a decode already confirmed in prior videos. The Hong Kong anecdote at 15:21 is about a third party, not a Luk position.",
+      "guess": "SKHY",
+      "confidence": "confirmed"
+    },
+    {
+      "timestamp": "57:26",
+      "caption_text": "Naps is definitely one shortable bounce into the declining nine ... especially NPA ... apart from NPS a lot of the semi names also gapping up",
+      "context": "Same ticker rendered three ways (Naps / NPA / NPS) within 90 seconds, discussed as the pick of a short watchlist alongside COIN and PATH, in a semi/AI-adjacent context. ⬜ NEEDS CONFIRMATION — best guess is NBIS (Nebius), but the captions do not support it strongly.",
+      "guess": "NBIS?",
+      "confidence": "uncertain"
+    },
+    {
+      "timestamp": "59:12",
+      "caption_text": "I think most of them are shortable like this T are also gapping up ... shorting at this 60 minute 50 EMA which aligns with the daily 9",
+      "context": "A semiconductor name rendered only as 'this T'. Used as the worked example for the 60-min-50-EMA-aligned-with-daily-9 entry. ⬜ NEEDS CONFIRMATION — plausibly TSM, but a single letter is not enough to decode.",
+      "guess": "TSM?",
+      "confidence": "uncertain"
+    },
+    {
+      "timestamp": "16:33",
+      "caption_text": "ONDS looks pretty strong, although weekly is still below the 9 EMA and also the 21 EMA. And there is a declining 150 and the declining 50 EMA above in the overhead supply. So yep, probably I may get stopped out",
+      "context": "⬜ DIRECTION UNCLEAR. 'Looks pretty strong' + 'I may get stopped out' + overhead supply reads most naturally as an existing SHORT being squeezed, which fits his bearish book — but it could be a long below its weekly EMAs. Not logged as a trade until confirmed.",
+      "guess": "ONDS",
+      "confidence": "confirmed"
+    },
+    {
+      "timestamp": "76:16",
+      "caption_text": "AMK under the 9 EMA, SITM under the 9 EMA, DTMI slightly above the 9 EMA, but all the EMAs they're trending down",
+      "context": "Three semis listed as evidence the Wednesday bounce was weak. SITM = SiTime is clean. AMK is most likely AMKR (Amkor). ⬜ 'DTMI' does not resolve — possibly MTSI (MACOM) or DTM. Confirmation needed on two of the three.",
+      "guess": "AMKR / SITM / MTSI?",
+      "confidence": "uncertain"
+    },
+    {
+      "timestamp": "19:35",
+      "caption_text": "And yeah, the kills is the weakest. And not even not even at the 9 EMA",
+      "context": "Listed immediately after SPY and IWM in an index rundown, and 'cues' (= the Qs / QQQ) is used repeatedly elsewhere in the stream. 'the kills' is almost certainly the same word mangled.",
+      "guess": "QQQ",
+      "confidence": "confirmed"
+    },
+    {
+      "timestamp": "95:25",
+      "caption_text": "Man, this a str just looks really really ugly ... this huge red candles up there. KAC also",
+      "context": "Semi-equipment context alongside a rollover discussion. KAC is almost certainly KLAC (KLA Corp); 'this a str' is likely ASML or AMAT. ⬜ Low confidence on both.",
+      "guess": "KLAC",
+      "confidence": "uncertain"
+    },
+    {
+      "timestamp": "14:40",
+      "caption_text": "tunnel fish. Yeah, that's the word",
+      "context": "NOT A TICKER — he is groping for the phrase 'tunnel vision' at 12:58 ('I don't want to be narrow... what's that phenomenon called'). Logged so a future pass does not try to decode it as a symbol.",
+      "guess": "(not a ticker — 'tunnel vision')",
+      "confidence": "confirmed"
+    }
+  ]
+}

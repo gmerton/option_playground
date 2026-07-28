@@ -1,0 +1,323 @@
+[00:00] If we go up and volatility drops, the butterfly is making money for me. If the market goes down and volatility increases, the diagonal is making money for me. Today, we will explore an
+
+[00:11] advanced options strategy that benefits from the volatility going both up or down. Our guest has achieved a 96% win rate so far and has made almost $24,000 in two months while developing the
+
+[00:27] strategy. Welcome to Steve Guns. Thank you, John. Great to meet you. Like I said, I feel like I already know you just because I watch so much of your stuff. And I want to apologize upfront
+
+[00:39] for my funky glasses. I had some eye surgery and they're recommending that I wear these red tinted glasses to keep the strain down. No problem at all. And let's get
+
+[00:48] straight to it. Give us the 42nd version of your new strategy. The 42nd version is that I have developed trading classes in both butterflies and diagonals. And as I was
+
+[01:02] doing that, I realized that they each have weaknesses. But if I combine the two together, it gets rid of a lot of the weaknesses. So I put those two together in a strategy I
+
+[01:13] call the flyagonal. And I look really forward to dig into the details of this strategy. But first, tell us a little bit about yourself as an options trader and well maybe as a person as well.
+
+[01:26] Okay, first of all, I absolutely am passionate about and love options trading and teaching. Uh I've taught for a number of different companies over the years. I've taught for online trading
+
+[01:38] academy. I am an educational contributor to Option Strat. I helped Kirk Duplex's develop his options trading software, which is a bot trading platform called Option Alpha. And I'm fortunate that I
+
+[01:53] don't have to do any of this if I don't want to. I do it because I love doing it. I've built up nice nest eggs over the years. So, this is all just for fun and to help educate other people. So,
+
+[02:03] that's really what I'm all about. I went out on my own here about two three years ago developing educational content and working to help options traders through classes and through my alert service
+
+[02:15] where I trade the fly agon and I'm really curious to dig into your strategy but first tell me what are you trying to achieve with your fly organals?
+
+[02:26] Basically, my goal is income trading again while I have a nest egg and nice retirement built up, things like that. Um, if I don't have to tap into it, I don't want to. So, I took a small
+
+[02:41] portion of my savings and I just trade consistently with that small portion, developing monthly income off of that. So, that's the goal of the flagal of any trade I make.
+
+[02:53] Why the name fly open roll? I'm probably not pronouncing that correctly, am I? Yeah. No, you're pronouncing it correctly. Flyagonal. And there's actually at the end of the day, there's
+
+[03:03] going to be three versions of the flyagonal. There's a flyagonal, there's going to be a conagonal, and there's going to be a vertagonal. And those are three different versions of a trade that
+
+[03:16] has a diagonal on the put side, which gives positive theta and helps the trade in a big down move. helps it kind of self adjust almost. Then on the upside, right now the main focus is a broken
+
+[03:30] wing butterfly on the call side. And in the not tooistant future, I'm going to do further testing on just a vertical on the call side and or a condor on call side. And again, those are going to have
+
+[03:44] different use cases for different scenarios, but the name is basically I looked at the combination of well, it's a diagonal and it's a fly. So your flyal have two elements call broken wing
+
+[03:58] butterfly on the upside and put diagonal on the lower part. So I think we should just first explain those two elements before we see how they work together. So let's start with the call broken wing
+
+[04:13] butterfly. Maybe we should just illustrate this with an example. So many of you are probably familiar with option strat. Again, I'm a contributor there, educational content
+
+[04:23] contributor. I love it. Great program for helping traders learn the basics of options. All right, so let's get started by looking at one of the first components of the flyagonal, and that is
+
+[04:34] the call broken wing butterfly. I actually set this trade up two days ago so that we'd have something to look at here and kind of see how this works. So, you'll notice that right now this call
+
+[04:47] broken wing butterfly is actually down a little bit. I'm going to run this out here though to expiration so it's a little easier to see. This is the P&L diagram here at expiration. This dash
+
+[05:00] line here is where our current market is. So, if we are near expiration, this trade should be significantly profitable, as much as $2,000 profitable in the butterfly portion. Now, I do not
+
+[05:15] carry these to expiration. I'll get into that in a little more detail, but you'll notice this trade was put on about 10 days out when I put it on. Now, it's 8 days to expiration, but I open this up
+
+[05:26] about 10 days uh in advance. And again, broken wing butterfly. has less risk on the downside, has a little more risk on the upside. When I put it on, our market was trading right here in the 6360 or so
+
+[05:42] range. So, this is put on above the market. That's the goal of this call broken wing butterfly. This is going to handle an upside move in our market if that happens. And as you can see, it
+
+[05:55] handles a pretty wide upside move. This thing is 110 points wide. My lower call is at 6370. Then my center strikes which are short are at 6420. Then my upper calls at 6480. And to be
+
+[06:12] clear, a call broken wing butterfly consists of two short calls, one long call on each side, but the distance between those two to the shorts are not equal.
+
+[06:23] That is correct. On a broken wing, they're not equal. If it were a flatfly, they would be equal wings. So this is broken wing. So one side is 50 points wide. This one is 60 points wide. So
+
+[06:36] that's the configuration that comes out of this. And where this trade makes its money, by the way, because again, my main focus prior to flyagonal was butterfly trading. It comes from the
+
+[06:46] decay in these two shorts. So in other words, I'm buying along here. I'm spending money for that. I'm buying along here, spending money for that. I'm selling two shorts. And as theta decays,
+
+[06:58] it decays on all of these, but as theta decays, these shorts dropping their value is what brings the profitability into this trade. So if I move our slider back here to today, we can see that as
+
+[07:12] of today, this trade is basically break even. It might be up 10 bucks, it might be down 10 bucks depending on, you know, the market because there's eight days left. That decay has not happened much
+
+[07:24] yet. So that is the call portion of the flyagonal. Any questions on that, John? No, that seems quite clear. And this is placed a bit above the current market
+
+[07:39] price. That's the way I've been doing it and testing it. The exact amount I'm still in the testing mode. That's one of the things I'm using AI to help me determine
+
+[07:49] to go back and analyze all of these trades and help me. So now the second component of the flyagonal is the put diagonal. So let me pop that open here. And this is the put diagonal. Now the
+
+[08:02] construction of a diagonal. First of all, you'll notice that this part is up $200. This is up $18% right now. Now, of course, if I knew the market was only going to go up a few days ago, well,
+
+[08:15] gee, maybe I would have just entered this trade. But we never know. Of course, as traders, for me, the goal is to have a complete trade that's as wide of a range in the market as possible
+
+[08:25] that I can cover and ideally a trade that has positive theta and positive vega. Vega is what's going to help us if volatility spikes. A normal butterfly is negative Vega, which means that if
+
+[08:40] volatility spikes, I'm going to lose money in that. But before we move on, can we just define what is a diagonal? The diagonal here is basically we are selling a put a
+
+[08:52] closer in DTE. So this happens to be the same DTE as my butterfly was. So that's 8 days to expiration. Now I come out and part of a diagonal or a calendar those are called time spreads. The key to a
+
+[09:10] time spread is the second option in here is further dated in time. This option is dated out on August 18th. So why do you do this? Well, if both of these were the exact same expiration, this would simply
+
+[09:25] be a vertical and it would not bring positive theta into the equation. And again, we'll look at that in just a moment and what that means. But so we're selling a closer to the money closer in
+
+[09:40] time short put and then we're buying a further out in time put which will decay slower. If you've studied options for any length of time, you know that the closer you get to expiration, the faster
+
+[09:55] they decay. So that's why this one is shorter in time and this one is further out in time. We want to capture as much of this fastm moving decay in that front period or closer days to expiration
+
+[10:10] option while this back one is not decaying as fast because it's further out there. So that's the concept behind a time spread. How does this one develop when time
+
+[10:19] passes as we get closer? You can see right here this green line here the T0 line that this shows our profitability in the trade. And if I go all the way out to expiration here, this
+
+[10:32] is what this would look like. I do have to put the caveat in here that the one thing that's unusual about a time spread, a time spread, again can be a calendar or a diagonal. A calendar is
+
+[10:45] just where these two have the exact same strike and they're just split by time. A diagonal, they are split not only by time, but also by distance. So in both cases the thing that you need to
+
+[10:58] understand is that volatility will change the configuration of this tent. If you have a butterfly, if you have a condor, if you have a vertical, your tent stays the same. It does not change
+
+[11:11] over volatility changes. But what we're going to see right here is if I come in and I increase the volatility, let's just say there's a market event. And more often than not, what happens? Let
+
+[11:26] me move this back here to today. So, what happens if you have a down move in the market? It's more often than not the down moves that will increase volatility. Volatility is basically just
+
+[11:39] fear coming into the market. When fear comes into the market, people that own long stock and have retirement accounts and those sorts of things, they start running out buying insurance. They're
+
+[11:53] buying puts to protect their investments and that is what spikes volatility. So what happens here when volatility spikes? First of all, I should show you the Greek here. If we look at our
+
+[12:05] Greeks, I want you to see that Vega is positive. So what that means in the overall scheme of things here is that if volatility goes up, watch what happens to the size of my tent. The size of my
+
+[12:20] tent stretches way, way out. and where a minute ago, let me bring my range in here a little bit. Um, I'll take this back to where it was. Right here, the volatility basically puts me in right
+
+[12:35] here is the break even, which is 6250. But if volatility spikes, that break even all of a sudden is way out here at 6,000 or so. So that's what positive Vega does. And
+
+[12:51] that's how a tent in a time spread can change. Again, we want that change. That's what makes this an integral part of the flyagonal is having that positive Vega and some protection to the
+
+[13:08] downside. Now, I'm going to go back real quickly here to the broken wing butterfly because I want to show you the same stats there. Here you can see that we
+
+[13:18] have negative Vega. Negative Vega means that if our volatility increases, this goes bad. This goes south on us. Okay, we can still be under our tent, but we're losing money just because of
+
+[13:35] an uptick in volatility. But what normally happens? Well, if our markets go up, volatility normally drops. fear in the market subsides. So if volatility
+
+[13:49] continues to drop, look what happens on this side of the trade. On the butterfly side, if the market moves up and volatility drops, we're in great shape on this side of the equation.
+
+[14:05] Again, going back to the flip side to kind of pull these two close together. If we look at this put diagonal again, it's down here largely because if our market drops, we want that positive
+
+[14:19] Vega. If our market drops, volatility goes up. And look what makes money. If our market goes down and volatility goes up, so that's why these two pair so extremely well together. They're almost
+
+[14:34] self- adjusting to a certain point. If you if we go up and volatility drops, the butterfly is making money for me. If the market goes down and volatility increases, the diagonal is making money
+
+[14:46] for me. Let's move to how this look when we combine them. So, this is the complete here. We can see I'm going to move this out right now
+
+[14:55] to expiration. So, we see the full configuration of the tents. So, this is what the two separate tents look like unto themselves. Again, this is the diagonal here.
+
+[15:08] And the diagonal, by the way, is put on below the market with my first short strike being below the market. Exactly how far below is something I'm still fine-tuning right now. But probably in
+
+[15:22] that 3% or so below the market is what has shown to work fairly well so far. as volatility does increase, when we do get those little bit of increases in volatility and our average true range on
+
+[15:37] the market, the amount that the S&P might move in a day starts to expand and widen, I will likely widen out where these tents land as well. So these are the two separate components again, the
+
+[15:50] diagonal side and then our call broken wing butterfly side. We can see that our tent here runs from all the way down here around 6250 or so and all the way up to
+
+[16:05] 6460. So that's a 200 point wide range in our market over a period of 8 to 10 days. Most of the time we're likely going to be within that range if we drop because
+
+[16:21] you'll drop usually faster than you'll climb. If we do drop, we'll see that that lower side widens out with volatility. So again, that's kind of the self-
+
+[16:33] adjusting side, if you will, to the downside. That does not mean this will never need an adjustment. But in most scenarios, if we get a down move with an increase in volatility, that side will
+
+[16:44] to some extent adjust automatically for me. Could you also show what happens when the implied volatility drops? Yeah. So let me take this back to today
+
+[16:53] here. So if volatility drops again volatility usually drops on an up move in the market or when our markets are stable. So if our market continues up here over the next day or two I do think
+
+[17:05] volatility will probably drop a little bit more. When that volatility drops the profitability comes in on the call butterfly side. Okay. And this is our this dashed line right here is where our
+
+[17:18] current market is. So over the next couple days, as time goes by, as volatility drops, we're going to mound up into the call butterfly tent, that's going to be where most of our profit in
+
+[17:29] this trade is going to come from. Again, on the flip side of that, if our market goes down and volatility increases, we can see that this tent, the diagonal, starts to get wider and profitability
+
+[17:47] comes in there. So again, that's mainly going to happen if our market drops. So let's just say our market drops from where it is right now down to 6340. This is going to be more profitable because
+
+[17:59] volatility will increase during that time as well. How much volatility increases, we don't really know, but an increase in volatility helps this position to the downside. An increase in
+
+[18:12] volatility is good for the diagonal. Increases in volatility tend to happen when our market moves down, which is why that trade is positioned below the market.
+
+[18:23] Increases in price of the underlying tend to decrease volatility and decrease volatility is good for a butterfly, which is why that one's above the market. And then the combination of
+
+[18:37] those two gives me this nice center area here. If implied volatility stays exactly the same, if we stay exactly the same place in our market, if we don't get any move at all over three or 4 days
+
+[18:52] and time just goes by, we also get profitability in this trade because the two have a little bit of overlap in them. Sorry for interrupting the interview, but I would like to spend
+
+[19:07] 40 seconds to recommend a fantastic tool for options traders. It is Option Strat. You may have noticed that we use Option Strat often here on Theta Profits. And to be honest,
+
+[19:21] it would be hard for me to do my options trade without Option Strat. I love how I can visualize my trades in option strat, see how they will develop over time, and even share my trades with others. There
+
+[19:36] are numerous other functions such as the options flow telling where the big money and options trades is flowing right now. This is a recommended tool. Check out the affiliate link in the description.
+
+[19:49] So I think now we have a very good understanding of the concepts between those two trades and what happens when you combine them. Uh so I'm now curious a little bit about your mechanics. What
+
+[20:02] underlines are you choosing for instance and strike selection? How many days to expiration? What are your rules for the mechanics of entering here? All right. Well, let me share a couple
+
+[20:15] of stat pages with you here that I think will help drive this home. And these are stats that I've had AI extract from these trades for me. These are the trades that I've made since I took it
+
+[20:26] live. 60 total trades, 58 winners, two losers of which one was a $1 loser. I have commissions factored into all of these as well. Roughly a 97% win rate, 24,000 in gains. Average gain 406.
+
+[20:41] Average percent gain about 10%. Total capital used. Now, it's important to understand that's a big number there. This is a lot of trades. Most of these trades were only open for 3 or 4 days
+
+[20:52] and they would take about 4 to $5,000 in capital each. The average holding time is about 4 and a half days. These are the underlines that I've traded it in over here. So, one of the
+
+[21:05] things I used to design and test more automated trading systems all the way back in, hate to say this, all the way back in the late 1990s. And one of the things that I would look at routinely is
+
+[21:17] how robust was the system or was the trade. And a way that I would test robustness is I would run a whole bunch of different symbols through it. So if something just traded well on gold for
+
+[21:29] example or just traded well on SPY but it traded horribly on the rut or traded horribly on IWM that wasn't very robust to me that told me that whatever it was that was kind of
+
+[21:42] custom fit to a given symbol and how it moved. But I've purposely traded a lot of different symbols on here. S&P has been where most of my trades have been made. But I also did a bunch of trades
+
+[21:53] in Rut the Q's. I even went out and did some individual trades. Google, Netflix, the SPY, Tesla, IWM, Nvidia. How many days to expiration do you typically do?
+
+[22:05] Expirations, I'm normally going about 8 to 10 days is where I'm normally at. And if we look at the list of all the trades, this will show me that normally I'm out in four and a half days. Now,
+
+[22:19] I'm putting these trades on about 8 to 10 days out. The short strike is 8 to 10 days out. The long strike I usually go about double whatever the short strike is. So if my short strike is 8 to 10
+
+[22:32] days out, my long strike is going to be 16 to 20 or so days out. And again, that is still being tested. Variations of that are still being worked on. But right now, that's what most of these
+
+[22:45] trades have been based on. What are your rules for when you take profit? You said that you're typically out in four or five days, but is that the rule or do you have like a certain
+
+[22:55] percentage? I'm shooting for 10%. But I also have a general rule about when I have to adjust a trade, I lower my expectations. So when I get into one of these, in fact, I
+
+[23:07] have a live one open here right now that I can share with you. But when I get into one of these trades, this one I entered right here. I've been in this trade two days. So, I opened this trade
+
+[23:18] two days ago. This is a typical flyagonal with the butterfly on the top. Let me bring the diagonal into view. The diagonal on the bottom. I opened this one 10 days to expiration. Now, we're 8
+
+[23:30] days to expiration. This trade is currently up 7.2% or so. It's bouncing around here as the market price is bouncing around a little bit. So, I look to get out of these
+
+[23:42] around a 10% profit or just thin them. In some cases, for me personally, I will phase out of them. So, I may come in and take one of these butterflies off, take one of these
+
+[23:54] calendars off when I hit about 10%. Then, I've greatly reduced my risk or exposure in the trade. I've greatly reduced the amount of money I have allocated to it, so I can go open
+
+[24:04] another one. Um, and I'll carry that remaining part much closer to expiration. But I'm always out of these at least three to four days prior to expiration. I don't carry anything much
+
+[24:16] closer than that. And when you say 10%, this is 10% of the max loss in the trade. This is 10% of the max loss when the trade is opened. Okay. Now, if I have to
+
+[24:28] adjust a trade, depending on the adjustment I make, it could require more capital than what it originally had in it. And of course that's typical of almost any options trade.
+
+[24:40] What about adjustments? Do you ever adjust these trades? And how do you do that? Yes, I do. Now I again to a certain extent they're somewhat self- adjusting
+
+[24:51] based on the things we already talked about, but they have required adjustments. I would say that probably less than 50% of them end up needing an adjustment. And that's because I am
+
+[25:02] taking them off so relatively early. I'm not waiting until gamma gets high. Gamma meaning that a small move in the market is going to have a big impact in my P&L. So this particular trade here put on two
+
+[25:17] days ago again up about 7 and a half%. I don't see any need to adjust this. If I felt the market were going to go much higher here, we can see that this gets a rather steep curve and I could start
+
+[25:32] losing money fairly quickly if there was a sizable up move in the market. But again, that up move in the market will drop volatility which is going to play in our favor and time will pass. Let me
+
+[25:45] just march this forward 3 days in time. See how my t0 mounted up here? I mean my theta today is $317 a day in this trade. So this trade if it stays in this general range theta is a
+
+[26:02] theoretical number but it is telling me that the current configuration of this trade is basically decaying at a rate of $300 a day. That's going to accelerate as we get closer to expiration. So this
+
+[26:15] particular trade right now I would not quite frankly look to adjust. My goal here is by the end of the day today, I'm expecting I can probably pull this thing off at around my 10% profit. One of the
+
+[26:26] most common ones is I'll come back and I will buy one or two of my center strikes back and simply move those higher. So, if I move that higher, we can see that I had been a negative
+
+[26:41] 1.4 delta. Well, now I'm a positive seven delta. Well, maybe I don't want a positive 7 delta unless I really thought the market was going to move up. So, maybe I just roll this 10 points. Okay,
+
+[26:53] so now I'm basically neutral delta or slightly positive delta. My theta's gone down a little bit. My Vega has gone up a little bit. So, all of those are things I'm okay with. I still have plenty of
+
+[27:07] theta working here. Again, I would not adjust this specific trade, but more often than not, the adjustments are a simple roll of one of the strikes, usually a short strike,
+
+[27:23] and then same thing here. In an up move, I will also model, well, what if I bought back one of these short puts and I moved it up closer to the market. We can see that widens out my upside a
+
+[27:36] little bit, but it brings my downside quite a bit closer. It achieved the same goal of making me delta positive. And again, that's probably too much. I usually wouldn't do that. I usually just
+
+[27:51] kind of want to be about delta neutral. This one kept my theta about the same. It dropped my Vega slightly. So, as a trader, I kind of analyze the market before I make a move. I look at a chart
+
+[28:07] and I think looking at the chart, you know, are we at a resistance area? Are we potentially going to stall where we're at? Well, if we're going to stall, I'm not even going to make an upside
+
+[28:18] adjustment. If it looks like we're breaking out and running hard, well, then I have to take a more serious consideration on an adjustment. But even if I'm wrong, the nice thing about this
+
+[28:29] trade, I don't have to be able to analyze the market down to a minute amount. I need to be in a 100 point range, maybe even a 200 point range depending on exactly how this is
+
+[28:42] structured. So I don't have to be real precise in my market assessment. So now we have been through the details of how you trade this flagal. And of course there is a lot to study and learn
+
+[28:55] here but and you have mentioned your results. Give us a little bit more about your results with your first 60 trades. And I'm also curious about how you measure your results.
+
+[29:06] Sure. So my results are actually just measured using the the trading program I use. I happen to use a program called Option Traders Assistant because it interfaces directly with my broker and
+
+[29:18] it keeps tracks of all the components of the trade. So in option trader assistant I can select how I want my results reported to me and I've chosen to use as you mentioned earlier John the amount of
+
+[29:30] capital that is put into the trade. I'm measuring my results based on as a percent of capital at the time the trade is opened. So and again the results right now I've counted every single
+
+[29:43] flyagonal trade I have made here in live. These are all live trades. All of them have the same basic configuration. Right now, 58 winners out of 60 total trades over 10 weeks. This shows the bar
+
+[29:58] chart of each individual trade. We can see there's the one loser that was about $600. That was in SPX and that was on a huge up move and continued runup. That is probably if there is an Achilles heel
+
+[30:12] here, it is a very large up move. an up move of a 100 points followed by a day or two of grind up. That's the one place that unless you put that upper tent way the heck out there, you'll find yourself
+
+[30:28] kind of chasing that runup move. The down moves have been more forgiving because of the diagonal and the way the diagonal expands if volatility expands. Steve, I like to ask my guests to put
+
+[30:40] their strategy on a risk profile scale from one being very low risk and 10 being very high risk. Where would you put this strategy and why? All of these trades are defined risk.
+
+[30:54] So, as a result of that, I would certainly put them on the lower half of your scale, below a five for sure. And then I think it would depend on what underlying you were trading. Uh, I tend
+
+[31:06] to make most of my trades personally in S&P and that trade might have $5,000 or so dollars in risk in it or buying power that's used up. If I made the same trade in SPY, that would be about $500.
+
+[31:20] So, depending on the underlying that you're going to trade, the size you're going to trade it in, you can control the dollar amount of risk. Now, as far as the percent risk, I would say that
+
+[31:32] I'd put this probably down maybe at a three or so. How would you sum up what we've been through in a few words? And who is this strategy best suited for?
+
+[31:43] The strategy is certainly best suited for somebody that has made options trades before. This is not something that a beginner is going to come in and they haven't even done an iron condor
+
+[31:54] yet and they step into this. not not where they should be starting. The butterfly, if you have experience in trading a butterfly of any type, that's going to be great. If you have
+
+[32:04] experience in trading a calendar or a diagonal, that is certainly a plus. I wouldn't say that would be required, but if you're going to do that for the first time because time spreads do act a
+
+[32:17] little bit differently than what they model. You just need to go through that a time or two and make sure you understand what how that tent can change on you in volatility conditions. So you
+
+[32:28] need to have made some options trades before. Again, ideally slightly more complex trade like a condor, butterfly, and maybe a calendar. If you've ever traded either of those
+
+[32:39] two, you'll grasp onto this pretty quickly. What would be a good resource to learn more? Well, I do have my website,
+
+[32:49] sjgtrades.com, and that's kind of how I got into this. I developed a deep dive course on butterflies and a deep dive course on diagonals. They're 10 plus hours each.
+
+[33:00] And as I developed those two classes and started realizing the weaknesses of each and how they complement each other and take the weaknesses away from the other one, it's like, okay, that's that's a
+
+[33:12] good place to go. Any studying that you do, Tasty Works has great studies on butterflies, calendars, etc. So, that would be a good resource. I mean, when I was first learning to trade, they were a
+
+[33:24] great resource for me. I do have a flagal class that's going to be coming up. Would you have one or two books about options trading that you would like to
+
+[33:34] recommend to our viewers? I I'd have to say I don't I'm not a book learner personally. I now have a pretty good BS detector. So, I can go out on YouTube. I can find people like you,
+
+[33:48] John, that bring good people to the table. And I can tell that these people know and understand what they're doing. that's my resource of information anymore. I'm more of a visual learner.
+
+[33:59] So, you know, you've been great in that respect and the people you bring on. So, that's the type of thing I tend to rely on now. Well, thank you for that. I would like
+
+[34:08] to say that we did a few weeks ago have an interview with Simon Black from New Zealand who has a a similar trade also combining call broken wing butterfly and put diagonal but trading in a bit
+
+[34:22] different way. So if you found this interesting, I would also recommend that you watch that interview. The link will pop up on the screen. Steve, thank you very much for joining in this interview,
+
+[34:35] for sharing your news strategies. All right, take care, John. Thank you.

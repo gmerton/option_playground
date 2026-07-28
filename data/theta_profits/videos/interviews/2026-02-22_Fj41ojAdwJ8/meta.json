@@ -1,0 +1,19 @@
+{
+  "video_id": "Fj41ojAdwJ8",
+  "url": "https://www.youtube.com/watch?v=Fj41ojAdwJ8",
+  "title": "After 9,000 Trades, This Is Still My Most Profitable 0DTE Strategy",
+  "channel": "Theta Profits",
+  "channel_id": "UCzGARfberQ8nRRbsjK90BHg",
+  "stream_date": "2026-02-22",
+  "duration": "40:04",
+  "summary": "Theta Profits host Yona ('John') interviews himself about his 0DTE 'break-even' iron condor on SPX (a.k.a. MEIC) — selling delta-balanced condors roughly hourly all day with each side stopped at the full condor premium, so a one-side stop is ~break-even and only the ~8% double-stops lose. He claims 9,000+ trades over ~5 years at ~40% win rate, 0.28% net profit per trade, but discloses no separable account return. Write-up: strategies/zerodte_breakeven_iron_condor.md (conviction 2/5).",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

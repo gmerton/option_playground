@@ -1,0 +1,251 @@
+[00:00] Hi everyone, it's Sean with Paycheck to Portfolio. Today we're going to talk about margin isn't the risk, equity is. I wanted to talk about specific topics that actually break portfolios in any
+
+[00:12] portfolio, but especially the paycheck to portfolio system and how we proactively manage those things. At the very bottom, you can see I have a quote here by Benjamin Graham. He says, "The
+
+[00:22] essence of investment management is the management of risk, not the management of returns. If you can manage the risk, returns take care of themselves over time with the market because obviously
+
+[00:33] it typically goes up over time. In fact, the market spends about 75% of its time in a bull market runs. Let's jump right into the portfolio. Then we'll go through the Excel file. Looking at the
+
+[00:44] current net account value of the portfolio, I'm sitting at $177,645. My unrealized gain is sitting at $30,185 or 9.17%. You can see it was a pretty flat day in
+
+[00:59] the market. I'm recording late Friday night here. Um, basically no movement of at all. We were down $23. If you look at the one-year time weighted return, again, this accounts
+
+[01:11] for uh just the pure growth of the portfolio and any dividends received layered back on that equity growth. You can see uh my portfolio is sitting at 37% time weighted return. The S&P 500's
+
+[01:25] basically at 19.9%. The NASDAQ's at 24%. The Dow is getting close to 19% and the Russell's at 21%. On the 2-year chart, you can see I'm sitting basically at 72%, the S&P 500's
+
+[01:41] at 46, the Nasdaq's at 58 1/2, the Dow's at 32 1/2, and the Russell's at 36%. If you look at the historical values tab, I fully live out of a brokerage account as opposed to a traditional
+
+[01:58] checking account. All of my money goes into the brokerage. it gets fully invested into long-term growth stocks and ETFs, closed end funds, and high yield funds. And the high yield funds
+
+[02:11] typically get me between a 20 and 30% blended yield. And then I borrow from my equity at 5.49%. So each paycheck I'm creating cash on cash returns with my own money on bills
+
+[02:24] I have to pay anyway. So, taking that system into account, over the last year, the portfolio has grown $59,224. And over the last 2 years, you can see the portfolio is up $132,151.
+
+[02:42] If you're new to my channel, I started living out of the brokerage account right in this range here. About June of 2024 is when I started to fully live out of the account, just for context.
+
+[02:53] Um let's jump into the Excel file here and go step by step through uh what I would like to talk about today. I wanted to talk about my equity position, how I look at the brokerage account from an
+
+[03:06] equity position. You might see me jump back and forth to Erade because I want to show you how I look at these things and and to make sure that you understand how that all works together. I did take
+
+[03:18] this snapshot this morning very early before the market opens. So you might see some variations between my values that I'm showing here and what I might show on Erade at the end of the market
+
+[03:30] obviously because the market moves during market hours and we're actively spending money out of this account. So there might be some small variations. This morning I was sitting at net
+
+[03:41] account of 178. You could see that's down to 177645. some bills have come out uh from payments and different things. But I did make a note that I pulled this on
+
+[03:52] January 16th, very early this morning before market opened. So at that time, my gross account value was $357,162. My margin balance was sitting at $178,163.
+
+[04:10] Therefore, my net account value this morning was $178,998, leaving my equity percentage at 50.12%. I maintained 50% equity or greater at all times. Every two weeks, my W2 is
+
+[04:28] coming in and replenishing this. And every week I'm getting dividends and every month I'm getting dividends and every quarter I'm getting dividends that also feed into the equity percentage and
+
+[04:39] grow the portfolio which you can see down here. This snippet right below that is from a website called Snowball Analytics. You can see under the total profit tab uh they layer back in the
+
+[04:51] dividends that I've received into the total profit percentage there and they've grabbed the gross portfolio value on the left hand side. So you can see the gross portfolio value and the
+
+[05:03] net portfolio value. Just for context, right now I have a $39,000 maintenance buffer. If you go to Erade and you click on the margin tab, it will roll up your actual margin uh
+
+[05:17] maintenance positions. And I can show you that really quick. If you go to the margin tab right here, and again, these numbers may have moved slightly. You can see right now my maintenance excess is
+
+[05:27] currently basically still sitting at $39,000. But they take all of your holdings and they give you a margin maintenance requirement by holding. And what they do is they roll that up to
+
+[05:39] your total margin maintenance requirements. You can think about this like a loan to value ratio. If you own a house and you want to refinance a house, the bank will lend you a certain
+
+[05:50] percentage of the total equity. Uh, typically between 80 and 85% loan to value ratio is what they would lend you. So on a $100,000 house, just for easy math, I know those don't really exist
+
+[06:03] anymore, but they would lend you about $85,000 on the price of that house if you were refinancing it and you wanted to pull cash out of it. You can see my total
+
+[06:14] margin equity is sitting at $178,43. Therefore, I have this $39,000 of excess. That's where these numbers are coming from. And again, this snippet was from this morning. So, if we look at
+
+[06:27] price versus equity, what does that mean for the brokerage account and how I manage um the brokerage account? So, you know, let's say the market drops um 20%. And I have this side by side here. So,
+
+[06:41] today you can see the starting balances that we just went over with the current equity position. If the market dropped 10%, my gross portfolio would fall to 321 grand essentially. My margin balance
+
+[06:54] would remain the same just to keep things simple. Therefore, my net account value would drop to $143,000 and my equity position would be 44.57%. Still in the clear. Nothing has stressed
+
+[07:10] the system. We went through this in April and um I've already kind of lived through those type of stress tests and and obviously I've been investing a long time since 2008. So I've been through
+
+[07:22] the housing crisis and financial crisis back in '08. Obviously COVID and other events. This is not taking into account any type of put option insurance which we'll talk about in just a second. This
+
+[07:35] is just the straight impact to equity with no no puts being taken into account. With a 20% drop, it would drop the portfolio down to basically 286,000. You can see the net equity at that point
+
+[07:49] would be 107,000 and that would put the equity at basically 37 38% right around there. Now my maintenance would trigger without any type of insurance at 292,000
+
+[08:02] gross portfolio value and my net equity would be 113 which would hit that 39% equity buffer. So you can see the range I have there between um a market pulling back and my maintenance position just so
+
+[08:18] you can see that very clearly. So my maintenance threshold would be 39%. my margin balance again would be still the same as it is today. Therefore, if my gross portfolio value fell to
+
+[08:31] $292,000, I would basically be in a margin call type of position without any type of insurance on which we'll talk about next. And I don't really think about
+
+[08:43] margin as a loan, just as an FYI. I think about it as a margin draw or an SBA loan more along those terms. I'm using that as a business infusion of cash so I can stay fully invested on the
+
+[08:57] front end instead of investing leftovers on the back end. So, let's talk about put insurance next and there's a lot to discuss on this page. Now, I normally buy my puts 30 days out. I had purchased
+
+[09:10] these puts about a month and a half out with the holidays and um the tariff situation going to the Supreme Court. So, I normally don't carry this much put option insurance. Normally, I've been
+
+[09:23] carrying 2 SPY and 2 QQQ on average because my portfolio is growing so quickly. I will start adding five and six options contracts, but I definitely don't want to be spending $900 for that
+
+[09:36] type of coverage. And again, I did this about 45 days out um when I first bought some of these puts just due to the holiday season and concerns I had around um you know, would the Supreme Court
+
+[09:50] decide against the tariff situation which could potentially make the the market volatile. Right now, they've held off on on making a judgment on that, and I don't believe they're planning on
+
+[10:00] making a judgment on that anytime soon. So, I'll probably scale out of one QQQ put here or one SPY put over the next several weeks, but I wanted to show you my current state coverage and to see how
+
+[10:13] that would actually impact the portfolio. Again, when I grabbed these numbers, this was first thing this morning. So, SPY was at 692, QQQ was at 620. Basically, I have three put options
+
+[10:27] contracts on on 640 strike price that expires on February 13th. And the same thing goes for the QQQ strike of 545 on February 13th as well. And I have three contracts of that. If you look at the
+
+[10:43] straight notional value, you can see that down here the total complete notional value is actually more than my gross portfolio. If you look at how far these are out of the money, these were
+
+[10:54] the percentages as of this morning. Now, I had timed the spy contract quite well because it was at market highs at the time when I started to scale into some of the put options contracts. You don't
+
+[11:06] always have that luxury. Again, typically I buy 30 days out, 10 to 20% out of the money or below the current strike price. If you want to see more detailed specifics on put options, I
+
+[11:19] have a video on my channel called the market crash cheat code where I dive into that a little bit more if you want to see how I place a put option, what my general rules are for that. Now, as my
+
+[11:30] grow gross portfolio value grows, I am adding additional layers of insurance as I go. Basically what I've done is I've taken taken a calculator here which I grabbed from uh option strat is the name
+
+[11:43] of this website which visually is pretty appealing to me. So I grabbed their calculations and I plug these into these specific dates to get some rough numbers on how the options Greeks would move
+
+[11:57] with a drop in the market prices. If SPY dropped 5% I just took a middle of the road date here. those contracts would be worth about $1,500. If SPY dropped 10%, those contracts
+
+[12:11] would be worth about $6,000. If the SPY dropped 20%, then now we're we're in the money as far as the options contracts goes. It's no longer just the Greeks that are moving for us with the
+
+[12:24] put options premiums, but now we're getting real value of being in the money and even deep in the money at this point. So 26,300 stays consistent across that whole
+
+[12:36] timeline. On QQQ, you can see at 5% it's a $333 addition. At a 10% drop, it's basically $1,900. At a 20% drop, it's it's $15,000. So if
+
+[12:50] you apply that to the equity position and the math on the price versus equity viewpoint, basically at a 10% drop, my gross portfolio would fall to 321446. Again, the margin would stay in its
+
+[13:04] current state. The base equity would drop to 143282. That would be my net portfolio value. The hedge would kick in and cover about $8,000 of that. Therefore, the adjusted
+
+[13:17] equity would be 151210. And you can see my equity position would be still sitting at 47%. That's exactly what happened to me in the tariff situation in April, which
+
+[13:31] allowed me to buy additional shares of stock, which I'll show you just for for full transparency. In April, I was buying shares of Nvidia, which you can see right here during the
+
+[13:43] tariff situation in April. And you can see the returns I've experienced with that. These were all tariff purchases. You can see the lowest I got this was about $96. Actually, it was $95 right
+
+[13:56] here. Wish I would have bought more, but those puts kicked in and allowed me not to panic. I had W2 coming in, income coming into the brokerage account, and I continued to buy even as the market was
+
+[14:08] pulling back. Same thing with TQQQ and UPRO. I I was buying and selling some of those. But you can see in April I have some of those that I I was purchasing. April. April I was buying and selling.
+
+[14:21] If you go to UPRO, you'll see the same thing here. Whole bunch of April purchases. All doing really well because I was able to make purchases when the market was going a little bit sideways
+
+[14:33] because I had that equity hedge buffer that was maintaining my equity position. Now, if the market drops 20%, the gross portfolio value would be $285,730. The margin balance stays. The base
+
+[14:49] equity, my net portfolio value would be $107,566. The hedges would kick in and cover $41,400 of that. Therefore, the adjusted equity
+
+[15:01] would be $149,000. and my equity position would actually improve, believe it or not, to 52%. If you look at my maintenance number, which would put me into a margin call
+
+[15:15] essentially if it dropped below the maintenance requirements that Erade has, again, the gross portfolio would be 292 in its price versus equity state. Margin stays the same. The base equity would
+
+[15:29] basically fall to 113992. the hedges would kick in and cover 18,000 of it, which would bring my adjusted equity up to $131,992 and keep me out of that call situation
+
+[15:44] at a 45% equity position. So, at 10% hedge, it slows the equity compression and it buys time, which allows you not to panic and to actually execute. At a 20% decline,
+
+[15:58] the hedge more than offsets the incremental losses and actually increases the equity position. So you can see if it fell 30%, our equity position would actually be going up in
+
+[16:09] those situations. So it keeps equity well above maintenance instead of below the maintenance position at 20% with the put insurance. It maintenance the hedge, restores a meaningful buffer and pres
+
+[16:23] prevents forced deleveraging. So, you have to know how to risk manage your portfolio. And you can go look at options strat for this. And you can put in your own put options and it will show
+
+[16:35] you basically the way that those options premiums will move. You can adjust the implied volatility. I just kept it at its recommended 21% that you can adjust that. Obviously, when the market's
+
+[16:47] falling quickly or there's a lot of fear in the market, the implied volatility can go a lot higher than that, which makes the put options premiums become very, very, very valuable. So, if you
+
+[16:58] look at the risk hierarchy, the biggest risk to any system that you're living out of and borrowing against is equity management. It doesn't matter if it's a home equity line of
+
+[17:10] credit. It doesn't matter if it's refinancing a house. It doesn't matter if it's living out of your brokerage and being fully invested. You have to understand what your equity levels are,
+
+[17:22] how your spending impacts your equity, how your income impacts your equity, and how your portfolio is impacting your equity and your cash flow management as well. You have to understand an equity
+
+[17:35] management position and make sure if you're new to the paycheck to portfolio system, you're scaling in and you're understanding each step of that along the way. And that's why I started the
+
+[17:47] spark to fire series on Wednesdays is so you can scale into the system and get used to managing your portfolio from an equity management position. The second thing is income coverage. How much
+
+[18:00] dividends are you generating versus what your margin interest rate is costing you? That's a key performance indicator that you should be tracking. For me, in December, I brought in over $4,000 of
+
+[18:13] dividends and my margin interest cost me $790. So, obviously, I'm creating a good cash on cash return with my own investments and I'm getting equity growth and
+
+[18:25] compounding from the portfolio as well. And then third and finally, you need to understand put option insurance and how that works and how to calculate effective put option insurance. If you
+
+[18:37] want more information on that, again, I have videos on my channel, the market crash cheat code, and then I have another video of how I protect my portfolio against a market correction or
+
+[18:46] crash. Also, on our membership Discord, I put my whole portfolio on there every Sunday, and you can see the specific put option insurance I'm holding for myself. So, these are the three things you have
+
+[18:57] to know how to manage because if you're mismanaging them, they can break your system and you can get into a compromised state. If you know how to manage these, you can expedite your
+
+[19:08] portfolio growth, run your business effectively through your brokerage account, and break free from the 9-to-five job much quicker. Most people work until they're 65, they retire, and
+
+[19:20] then unfortunately, the average life expectancy is mid70s. We all know that if you invest 10,000 a year at 7% growth after 30 years due to compounding, you'll have over a million dollars. What
+
+[19:33] I'm doing is I'm frontloading all of my income into the brokerage fully investing that into equities, closed end funds, and and high yield funds, all those equity positions. and it's
+
+[19:45] generating equity growth and compounding with cash flow layered on top of that which will ultimately set me free in five to seven years versus 30 years and allow me to live free from a 9 toive
+
+[19:57] job. If you look at additional resources every Thursday I put out a survey basically getting a pulse of the community and how folks are feeling about things. I wanted to know what
+
+[20:10] guard rails or what folks thought would actually break the brokerage account. You can see 19% said margin and borrowing which we talked about from an equity position. Some folks talk about
+
+[20:21] Nav erosion. Um I've covered that in prior videos. In fact, I have a video on my channel called Nav erosion fact or fiction. If you're going to buy income funds, it's really important that you
+
+[20:32] understand total return. You can't look at a traditional chart. Um you have to look at charts that include the dividends that are paid out just like a rental home. If you have a rental home,
+
+[20:41] you can claim depreciation on your taxes, but you have to add back in the rental income that you've received. The IRS won't let you claim depreciation and no income. It's improper accounting, and
+
+[20:55] you'll get into a lot of trouble if you try to do that. But for whatever reason, folks that look at income um positions think that they can look at a chart and not account for dividends and think that
+
+[21:06] that's proper accounting. It's not. you have to add the dividends back into the price action and actually see the total return. We've talked about that in multiple videos, but 12% answered on
+
+[21:17] that one. And then 49% you can see the biggest one that we wanted to talk about was equity mismanagement, position size, leverage, maintenance risks. Sometimes I'll get asked, you know, how much money
+
+[21:30] could I spend for my brokerage? It can be a difficult question to answer because a lot of that depends on your brokerage and your margin maintenance for the holdings that you have.
+
+[21:39] Obviously, the equity percentages will change with a large portfolio versus a small portfolio. That's why I started the um spark to fire series so you could see what it looks like to scale into the
+
+[21:50] system and get used to how that impacts your actual equity position. I've been living out of my portfolio long enough. I know um it can support all of my bills and I know with my income coming in that
+
+[22:04] I can manage that equity position comfortably. But it took me some trial and error at the beginning to really understand how the es and flows of that work. And then market crash draw down
+
+[22:16] speed was 19% which we talked about with the put options and how that impacts equity. All of my resources are under all of the pin comments and all of my videos. You can set up white glove
+
+[22:29] mentorship and coaching with me. If you want to go deep into the system and you need shoulder-to-shoulder mentorship on how we could set this up for your specific situation, you can join our
+
+[22:39] private Discord and membership where we have a large community of folks all living out of their brokerage accounts. And we're talking about equity management. We have a Fire Pro
+
+[22:48] calculator that you can project your equity positions, your bills, and your dividends and all of that good stuff. If you want to see a tool and and get the feel for it on a on a specific
+
+[22:59] spreadsheet and then compare that to your brokerage account, lots of good tools in there. You can book a 30inut strategy call with me if you want a highlevel overview of the the strategy
+
+[23:08] as far as paycheck to portfolio goes. And then you can grab our free starter kit and spreadsheet. Basically, it's a simple uh financial calculator that you can see how your own in um finances
+
+[23:20] would be impacted. That's available to you as well. And then a few questions I wanted to talk about. A boyer said, "I'd like to know how you determine how much of your bills and paycheck you can scale
+
+[23:32] into based off of your starting portfolio size. Obviously, a small account couldn't handle a full paycheck right off the bat." That's correct. Uh, I have the Fire Model Pro calculator in
+
+[23:43] our membership Discord. It looks just like this right here. You can plug your own numbers into that and then it will project the 60-month view for you with an equity position there. That's the
+
+[23:55] best projection tool available that you can you can grab. You can reload this. It grabs online uh resources and it's it's a live tool. It will grab your dividends for you. But that is available
+
+[24:07] on the membership discord. Typically speaking, you can watch the Spark the Fire series on Wednesday as well. If you have a $10,000 account, typically you can float about $2,500 very comfortably.
+
+[24:20] You could probably float about $5,000, but you want to make sure that you're used to that equity position. So, I again, I would recommend scaling in starting with a car bill or a cell phone
+
+[24:31] bill and then see how that impacts your equity and scale in from that point forward. But a lot of that is going to depend on your margin maintenance position and how that actually impacts
+
+[24:44] you based off of your own brokerage margin maintenance requirements. Mr. Junth said, "I was watching a video on fund overlap. Does that affect how efficient your portfolio can be? Does it
+
+[24:55] even matter?" And I put, "Fund overlap matters a lot more in traditional portfolio theory than it does in how I run my system. I'm not optimizing for perfect diversification on paper.
+
+[25:07] Sometimes I'll hold some of the same funds, right? So I'll have QQQI by NEOS and I'll have QQQY by Defiance and I'm diversifying amongst the fund managers running the covered
+
+[25:19] call strategy. I'm optimizing for cash flow, compounding, and equity management across the three buckets I talk about in all of my videos. Some overlap is intentional because certain assets play
+
+[25:31] specific roles. Growth builds borrowing power with the form of equity. Closed end funds compound through drip and drip at nav with cornerstone. And income funds pay the bills and service the debt
+
+[25:44] and erode away the expenses. As long as the portfolios producing the income I need, maintaining healthy equity and compounding over time. Overlap doesn't really hurt efficiency. What breaks
+
+[25:56] portfolios isn't overlap. That's poor cash flow management and for selling, which is what we talked about tonight. So, I hope that you found this video useful. Please like and subscribe and
+
+[26:08] we'll talk to everybody Wednesday for our Spark the Fire series. Have a great rest of your weekend. Bye.

@@ -1,0 +1,19 @@
+{
+  "video_id": "2DXQqwKSwJE",
+  "url": "https://www.youtube.com/watch?v=2DXQqwKSwJE",
+  "title": "The 3 Scalping Trading Strategies That Made Me Millions",
+  "channel": "TheOneLanceB",
+  "channel_id": "UCzksXiC-Ju-DTIZmMiaOVfQ",
+  "stream_date": "2026-04-11",
+  "duration": "10:44",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

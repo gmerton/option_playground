@@ -1,0 +1,19 @@
+{
+  "video_id": "tx321OQ8iD0",
+  "url": "https://www.youtube.com/watch?v=tx321OQ8iD0",
+  "title": "Flawed plan with perfect execution | 24 Jun 2026",
+  "channel": "martinlukkt",
+  "channel_id": "UCB6jWJJvO_sWZ2PwgmMcxCw",
+  "stream_date": "2026-06-24",
+  "duration": "2:37:05",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

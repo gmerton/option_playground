@@ -1,0 +1,176 @@
+{
+  "video_id": "e0nRvaK2uUg",
+  "date": "2026-02-27",
+  "title": "$IWM weakness | 27 Feb 2026",
+  "observed_trades": [
+    {
+      "date": "2026-02-27",
+      "ticker": "ARM",
+      "direction": "short",
+      "action": "stopped_out",
+      "setup": "Semi short (ARM) stopped out; weekly first lower-high bounce into 15 EMA / prior swing low after huge sell-off; felt too early on semi shorts",
+      "entry_basis": "first bounce into 15 EMA / prior swing low resistance",
+      "stop": "",
+      "source": "2026-02-27_e0nRvaK2uUg@92:20",
+      "confidence": "stated",
+      "notes": "'arm just stops me out. Maybe I'm too early for this semi shorts'",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-02-27",
+      "ticker": "QBTS",
+      "direction": "short",
+      "action": "trim",
+      "setup": "Covered some QBTS into a dip in case the market reversed from the lows",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-02-27_e0nRvaK2uUg@49:23",
+      "confidence": "stated",
+      "notes": "'going to cover some QTS in case the market going to reverse'; covered again on a dip candle (69:15)",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-02-27",
+      "ticker": "NFLX",
+      "direction": "short",
+      "action": "entry",
+      "setup": "Shorted Netflix on second attempt as it rallied into the 21 EMA weekly / 50 weekly / 150 daily and got rejected at declining EMAs",
+      "entry_basis": "rejection at declining EMAs / 21 EMA weekly; second attempt",
+      "stop": "",
+      "source": "2026-02-27_e0nRvaK2uUg@92:43",
+      "confidence": "stated",
+      "notes": "'this is the second try on Netflix and the weekly is still in play...give him a second chance'",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-02-27",
+      "ticker": "STX",
+      "direction": "short",
+      "action": "stopped_out",
+      "setup": "Seagate semi short stopped out; decided not to overtrade afterward",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-02-27_e0nRvaK2uUg@78:03",
+      "confidence": "stated",
+      "notes": "'Got stopped out on STX. Okay, I decided not to overtrade'",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-02-27",
+      "ticker": "CRCL",
+      "direction": "short",
+      "action": "hold",
+      "setup": "Holding/managing Circle short; nearly stopped out as market bounced; earnings Wednesday make adding too risky",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-02-27_e0nRvaK2uUg@118:46",
+      "confidence": "inferred",
+      "notes": "'almost got stopped out from circle' implies an existing position; earnings risk noted (37:25)",
+      "fill_timing": ""
+    }
+  ],
+  "principles": [
+    {
+      "category": "risk",
+      "text": "Very tight stops (risking <0.3% per trade) let you take many positions without fear of a big drawdown even if a bounce stops you out of most of them.",
+      "timestamp": "63:23"
+    },
+    {
+      "category": "posture",
+      "text": "In an indecisive market, prepare for both sides and ignore the indices for a bit; don't trust any move, wait for a stock to pick a direction before committing.",
+      "timestamp": "12:23"
+    },
+    {
+      "category": "entries",
+      "text": "Shorting gap-ups into declining EMAs or swing-high AVWAP has been working well; for an aggressive reversal short you must time the bounce into the declining 9 EMA precisely and act on the first opportunity, not wait for the next day.",
+      "timestamp": "23:14"
+    },
+    {
+      "category": "entries",
+      "text": "A cleaner short is to wait for price to lose the weekly 9 / daily 50 EMA first, let the EMAs cross below, then short the pullback; the most reliable short is when price consolidates under all the EMAs with the EMAs clustered close together.",
+      "timestamp": "71:11"
+    },
+    {
+      "category": "mindset",
+      "text": "Always be prepared for the trade to be over; stay ready to flip with the reversal if one appears.",
+      "timestamp": "88:55"
+    },
+    {
+      "category": "risk",
+      "text": "Avoid entering a short too close to an earnings report (e.g. Circle reporting Wednesday) — it's too risky.",
+      "timestamp": "37:25"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "08:12",
+      "caption_text": "essenti K was closing really strong yesterday... the strongest stocks right now",
+      "context": "Strongest memory name, building higher lows above the 9 EMA",
+      "guess": "SNDK",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "21:57",
+      "caption_text": "Ripto is setting up lower... at the 20 21 EMA on the weekly charts",
+      "context": "Crypto-related name setting up short, gapping below hourly 9 EMA",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "33:09",
+      "caption_text": "SNTK I think right now it's not really a good short candidate... still above the 9 EMA",
+      "context": "Memory name building higher lows, strong reversal on AVWAP/9 EMA",
+      "guess": "SNDK",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "40:21",
+      "caption_text": "the Korea ETF is... yesterday could be a kind of parabolic short huge volume",
+      "context": "South Korea ETF with climax-top volume, bad sign for semis",
+      "guess": "EWY",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "44:32",
+      "caption_text": "Also the lemonade I believe lemonade at the 50",
+      "context": "Name he missed shorting on a gap-up into 50 EMA back in January",
+      "guess": "LMND",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "67:33",
+      "caption_text": "Mar second attempts on the free web... margin requirement or something that I cannot shot this one",
+      "context": "Crypto miner he WANTED to short on the AVWAP second attempt but explicitly could NOT due to margin requirement / no locate; not entered. Removed from observed_trades as an unfillable candidate",
+      "guess": "MARA",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "96:02",
+      "caption_text": "This dual lingo this green bird down 80 83% in eight months",
+      "context": "Stock down ~83% in 8 months (the 'green bird' = Duolingo's owl mascot); best short when consolidating under all EMAs",
+      "guess": "DUOL",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "82:11",
+      "caption_text": "Looks like a cent is pushing higher from that five minute breakouts",
+      "context": "Name pushing higher off a 5-min/1-min breakout; possible high tight flag",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "97:01",
+      "caption_text": "Block is also bounced back. Have a huge gap up into the 50 EMA and 150",
+      "context": "Name (Block = XYZ/SQ) bouncing into 50/150 EMA; better short on pullback to 50 EMA daily",
+      "guess": "XYZ",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "105:05",
+      "caption_text": "AMD is the weakest one... the semi sympathy play",
+      "context": "References AMDD as a short ETF — 'AMDD is a short ETF but a little bit liquid and low priced'",
+      "guess": "SOXS",
+      "confidence": "unsure"
+    }
+  ]
+}

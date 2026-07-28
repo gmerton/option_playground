@@ -1,0 +1,137 @@
+{
+  "video_id": "6jYbU2k6gBc",
+  "date": "2026-04-15",
+  "title": "Sit-out power (involuntary) | 15 Apr 2026",
+  "observed_trades": [
+    {
+      "date": "2026-04-15",
+      "ticker": "MRVL",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Marvell as a model relative-strength buy: held higher lows while market fell, weekly VCP/shakeout, bought the pullback into the 9 EMA after earnings; very liquid (>1B total volume). Up ~10%, wants to hold longer rather than sell into strength; can handle the pullback",
+      "entry_basis": "pullback into the 9 EMA after a weekly shakeout/VCP",
+      "stop": "9 EMA trailing rule (mostly)",
+      "source": "2026-04-15_6jYbU2k6gBc@97:27",
+      "confidence": "stated",
+      "notes": "'Marfo is going to the high 130s ... I got a 10% ... I'm just going to hold this thing' (89:01) and detailed entry thesis at 97:27 ('the pullback in the 9-year MA'). Marfo=MRVL (Marvell)",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-04-15",
+      "ticker": "AAOI",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Holding AAOI; wants it to reach ~200 before a second add; studied photodiodes for it over the weekend",
+      "entry_basis": "would add on pullback into support",
+      "stop": "",
+      "source": "2026-04-15_6jYbU2k6gBc@67:46",
+      "confidence": "stated",
+      "notes": "'maybe AAOI goes to 200 first before my second bite'. AAOI=Applied Optoelectronics",
+      "fill_timing": ""
+    }
+  ],
+  "principles": [
+    {
+      "category": "mindset",
+      "text": "Protecting mental capital is the priority: after building a good portfolio with no losing trades for days, avoid over-trading and paper cuts that would worsen decision-making in the coming pullback.",
+      "timestamp": "86:14"
+    },
+    {
+      "category": "posture",
+      "text": "When the index is extended and far from the 9 EMA, lean back and wait; you must stay away from new longs until the market pulls back and the EMAs catch up. After a straight-up move, expect ~1-2 weeks before better pivots form.",
+      "timestamp": "84:14"
+    },
+    {
+      "category": "entries",
+      "text": "Setup-selection priority: prefer the hottest sector first (even a worse chart in a better sector), then the faster-moving / higher-ADR name, then the higher-dollar-volume / more liquid one.",
+      "timestamp": "82:41"
+    },
+    {
+      "category": "exits",
+      "text": "Hold original winners rather than selling them to chase new ideas; don't let new ideas influence decisions on existing positions (a mistake he made a lot in 2024).",
+      "timestamp": "72:05"
+    },
+    {
+      "category": "entries",
+      "text": "Favor breakouts from a long base over a short one - the long-base breakout is generally the most powerful; also prefer liquid (>~300M total volume) and higher-priced names over sub-$3 stocks with wide spreads/high commissions.",
+      "timestamp": "102:07"
+    },
+    {
+      "category": "risk",
+      "text": "Risk sizing scales with stop tightness, not a fixed dollar risk: as he tightened stops over the years he could put on a 25% position at 0.5% risk; he reduced risk from ~1-2% to ~0.5% as the account grew and trade count rose (~100 trades/month).",
+      "timestamp": "35:22"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "21:42",
+      "caption_text": "Y S S I don't know ... should I sell some? Or sell all into strength ... now it is up 30% since the pullback into the anchor view up from the IPO day",
+      "context": "A recent IPO he held longer; up 30% off an anchored-VWAP pullback from IPO day",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "39:37",
+      "caption_text": "What's SKYT? Look. Yesterday ... it looks pretty well",
+      "context": "A name that gapped up at the previous swing high for a clean ORB; SKYT=SkyWater Technology",
+      "guess": "SKYT",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "46:04",
+      "caption_text": "That would be something like this red wire ... I love this kind of a long base ... Plug is only trading at below three bucks",
+      "context": "Comparing a long-base name ('red wire') to PLUG (sub-$3, illiquid, avoid)",
+      "guess": "PLUG",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "47:47",
+      "caption_text": "the best examples is uh I think it's our GTI. Our GTI is or Qubit ... December 2024",
+      "context": "Late-bull-run speculative leaders example; 'our GTI'=RGTI (Rigetti), 'Qubit'=QUBT (Quantum Computing) per known garbles",
+      "guess": "RGTI",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "49:11",
+      "caption_text": "I would trade SIT you on April 10th",
+      "context": "A name he'd enter on a pullback into the hourly 21 / daily 9 EMA / anchored VWAP",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "53:08",
+      "caption_text": "I don't know why this is one of them, right? Isn't it? Spacecraft ... breaking out yesterday",
+      "context": "A drone/space-sector name forming a range below the anchored VWAP; possibly RCAT or a space name",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "55:04",
+      "caption_text": "ASTS is a quite ugly, but this is not a drone stock",
+      "context": "ASTS noted as ugly, distinguished from drone names; ASTS=AST SpaceMobile",
+      "guess": "ASTS",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "56:09",
+      "caption_text": "crude CCJ is looking tight",
+      "context": "Uranium name looking tight, breaking out; CCJ=Cameco",
+      "guess": "CCJ",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "91:47",
+      "caption_text": "VTS is breaking out today ... could just keep surfing the 9-year may higher",
+      "context": "A name breaking out he thinks will keep riding the 9 EMA",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "102:07",
+      "caption_text": "NetApp is also a 6-month long base ... this weekly candle is so bullish that I just couldn't resist taking that",
+      "context": "Long-base breakout he took; 'NetApp' = NTAP (NetApp)",
+      "guess": "NTAP",
+      "confidence": "unsure"
+    }
+  ]
+}

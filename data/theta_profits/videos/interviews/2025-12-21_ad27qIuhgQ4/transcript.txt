@@ -1,0 +1,397 @@
+[00:00] That to me was almost like the holy grail of zero DTE trades. My average hold time is about 18 minutes. John, my goal is to get in, get my fair share, and to get out because to me, time is
+
+[00:15] money. Zero DTE volatility can become a powerful source of consistent income with the right approach. Duck Severson does exactly that with his zero ironfly
+
+[00:29] setup and he's about to show us how. Hi John, it's a pleasure to be here. Nice to have you. Give us a quick summary of what your Zero DT iron fly is and how it has worked for you.
+
+[00:43] The iron fly is something that we stumbled upon oh probably about two three years ago when we were searching for a trade that we could place every day in a consistent environment and zero
+
+[00:57] DTE came out on the S&P and with full five days I think it was about two to three years ago and so we were looking for something that we could play every day and of course everybody starts out
+
+[01:10] by putting the wings way out on the iron condors. And so what we found through experimentation was actually bringing them in and tightening in the iron condor, which is what an iron fly
+
+[01:24] actually is, gave us the the best performing trade and the one that we spent the least amount of time managing. And so that to me was almost like the holy
+
+[01:36] grail of zero DTE trades. Fantastic. and we will dig more into this. But why don't you tell us a little bit about yourself first? Well, I'm a uh I'm a former engineer
+
+[01:49] like like all the other traders out there and I was in uh kind of a a frustrating career point about 20 years ago where all I would do every day is sit on a conference call and argue with
+
+[02:02] my sister companies about which way the company should go. And I was feeling this sort of sense of desperation like I wanted to do something different. And then at the same time I was getting into
+
+[02:15] options trading and starting to do really really well with it. And so I got this pull of inspiration towards that new thing. So desperation inspiration allowed me to kind of burn my bridges,
+
+[02:29] handed my notice to my boss and quit and become a full-time trader. And uh that was like I said about 20 years ago. And what I found after that after maybe about a year of doing that is that I had
+
+[02:43] a continuous stream of people knocking at my door saying, "Hey, you quit your job. Could you help me do the same thing?" And so this is what I've been doing also through the day now is
+
+[02:55] helping people do the same thing through what I do. So showing them kind of the path and it's a very narrow path of success when it comes to trading. You have to do
+
+[03:07] everything the right way and follow that narrow path. But u that's what I do now during the day. And it's u it allows me to maintain a a kind of a social circle now which is what a lot of traders find
+
+[03:21] out when they trade from home that they lose that that social community. Where are you located? I am in the Blue Ridge Mountains. We live in a mountain house now. Um up on a mountain in the
+
+[03:33] Blue Ridge in the very north of South Carolina. All right. So, let's get into the topic and your strategy. But I think we should start with the basics first. What
+
+[03:45] exactly is an ironfly? An ironfly is an iron condor. So, I think most of your listeners are aware of what an iron condor is. You have a put credit spread
+
+[04:00] married to a call credit spread and the combination of those creates a credit and it creates a profitable range. And what most people do is again put them out as far as possible maybe at a five
+
+[04:14] or 10 delta for those short options on the wings. That's why they call it an iron condor because it's a bird with very wide wings. And that's what I started with 20 years ago was these wide
+
+[04:27] high probability iron condors. And I did very well with them and allowed me to retire from my job at the time because the market character fit what I was trading. And then that all changed in in
+
+[04:42] 2008 as we can get into in a minute. But bringing them in actually is sort of counterintuitive. Bringing in the wings. So, you're making the trade more narrow is counterintuitive to most people.
+
+[04:56] Their first question is, well, you know, doc, why would you make the trade more narrow? Doesn't that it makes no sense to me? Well, it's it's really good from a couple of of perspectives here. So,
+
+[05:08] number one, by making the trade more narrow, reducing your profitability range does one very very wonderful thing, which is to speed up the trade significantly. So versus a a wide wide
+
+[05:22] iron condor where you have to wait the majority of the day to realize your very small profits by putting them closer in you get much bigger credits and the time decay is much much faster. So, that's
+
+[05:38] one of the big advantages is speed of the trade, which is something that's very important to me now because I don't want to be spending all day long staring at a screen, you know, wondering how a
+
+[05:50] trade is working out. The second thing that's a real big advantage is just the reward to risk on the trade. When you have wide, high probability iron condors, your reward to risk is usually
+
+[06:02] very poor. Your probabilities are high, but your reward to risk is very poor. So, It then falls upon you to be very very disciplined with your stop- losses as everything is right. But by bringing
+
+[06:16] in the trade, by making it more narrow, you significantly improve your reward to risk and you make it a much more manageable trade such that if you were not able to watch the market or didn't
+
+[06:30] have to watch the market all day long, that is a a possibility that you could pursue. So over the years, what I've done is actually make everything much more narrow and reduce my range and
+
+[06:41] speed up the trade and produce a better reward to risk. And to be clear, an ironfly is basically an iron condor where the two shorts are on the same strike. Correct?
+
+[06:55] Strike. Yeah. The put, the short put and caller at the same strike price. So let's look at an example. Maybe please explain this example. Okay. Okay, so the current price right
+
+[07:06] now is uh right around 68.50 on the cash index. And so that's what we're going to select as our short strike for the puts and the calls. So that's the very center of that ironfly
+
+[07:19] pyramid, if you will. And then what we're going to do is we're going to select the the wings, which are the long options. And those wings are going to be based on
+
+[07:30] the expected move or essentially the expected move of that day's price movement. So looking at today's option chain for the S&P, we have an expected move of
+
+[07:44] 29.38. So what we're going to do is we're going to select our wings based on that expected move. So we're going to make them 30 points wide. So, one of the
+
+[07:56] things that I do is to make the wings just wide enough to accommodate that expected move. So, the wings, if we select 6850 for a center strike, we're going to push the wings out to 68.880
+
+[08:11] for the long call and 68.20 for the long put. And and we could of course show how this changes as the day uh day is moving on. We are recording this a couple of hours
+
+[08:25] before the market opens and but you know as the as the time passes this profit curve will profit will go up and eventually end all the way up here at the end of the at the end of the day
+
+[08:41] with this profit um tent. Right? So the the profit tent at the very top there is $2,000 which is not at all what we're looking to accomplish. So, a lot of people will ask me, "Hey,
+
+[08:53] do you stay in these things all day long, and do you make that $2,000?" And the answer is absolutely not. My goal is to get in, get my fair share, and to get out because to me, time is money. I
+
+[09:07] don't want to be spending all day long staring at the screens and trading one job for another. So the whole idea of trading from home, working your own business in the trading business is to
+
+[09:19] reduce the amount of risk. And that risk is also measured in time. So the longer that you're that you're sitting in a position, the more the market has a chance to move. And if you're playing a
+
+[09:33] short gamma position like an iron condor or an iron fly, the longer you're in, the more likely the market is to move against one of your wings.
+
+[09:44] So let's move into the specific mechanics that you are following. And first the underlying in our example we used SPX. Is that what you also use in real life?
+
+[09:57] Yes, I use the spx. What what I recommend for people to try and to learn on after they understand the mechanics is it doesn't hurt to start on something like the spiders, the spy or the XSP,
+
+[10:13] which is the other u European settled version of this. So that that's good because it's onetenth the notional value and you can sort of learn how to manage the trade using something much smaller.
+
+[10:27] you won't get the efficiency because of the commissions are a larger percentage of your winnings on the spy versus the spx and also the spx is more granular versus the spy or the xsp
+
+[10:42] which allows me to better select the the center strike get the very middle of that iron fly. So what I do recommend though is that people as they're learning this start with a smaller
+
+[10:53] notional instrument and then graduate up to the SPX. But the SPX is what I use on a daily basis. So let's move to when you are entering the time. What are the conditions for
+
+[11:05] entering a trade like this? Both with regard to what time or are there requirements that you want to be in place before you enter a trade? There's there's two main factors of this. If you
+
+[11:19] think about what we're doing here, we have a very narrow range to work with because this is an iron fly. So, right off the bat, what I want to do is I want to maximize my possibility or
+
+[11:34] probability of this being what's called a range day. Now, a range day is is a day where the price just doesn't do much of anything at all. wanders up a little bit, wanders down, kind of stays in the
+
+[11:45] middle. And you know, quite honestly, it does that most of the time. All these days where we have these small little candles and spinning tops, things like that, those are range days. What we want
+
+[11:57] to avoid is a trend day. A trend day is where you have either a big green candle, big red candle, or just a big long wick on the on the candle. big range, big ATR. So I try to avoid this
+
+[12:14] through two ways. First of all, on a macro basis, what you want to avoid is a corrective market. So market and correction where you have generally you'll you'll see this happening by
+
+[12:30] you'll see an early push up and then immediate selloff and usually closing near the end of the day. So you can look at this. We've been in sort of a correction recently for
+
+[12:42] about the last month or so, but before that, you know, quiet and trending. And that's what we look for, quiet and trending character where it's kind of like Groundhog Day. You come in every
+
+[12:53] day and it's about the same thing. Maybe you dip a little bit and then it ends up working higher. But how how but how exactly do you decide if you are in a rangebound day?
+
+[13:05] It's not that easy. Well, that's where I go to the micro of this. So, the macro is number one, stay away from corrective markets. Bare markets, stay away from them because you're going
+
+[13:17] to have big candles most of the time. So, this is a strategy. In 2022, I did not trade this strategy. I traded other strategies that were wider and took advantage of them. So look for calm
+
+[13:33] conditions, which is 80% of the time through a bull market you're going to have. So the macro is stay away from corrective areas. Number two, what I look at is what's called the opening
+
+[13:45] range. The opening range is a study that most people can put on their charts intraday. I tend to use tick charts intraday just because it draws out the price patterns better. But what I'm
+
+[13:57] looking for is the price range of the first 30 minutes. And if you think about it this way, you've got an upper and a lower expected move, right? So every time we we come into a new day, we're
+
+[14:10] going to have an expected move plus and minus. So that is the statistical expected move that the options traders have basically said this is what we expect for the day and there's a 68.2%
+
+[14:23] 2% chance that it will fit the the the market will close within that that range of that expected move. So that's number one. That's kind of like my outer boundaries of what we're working with.
+
+[14:35] And inside of that should be if it's a range day should be the opening range which is the first 30 minutes of the day. And that sets the tone for everything. So, if the price stays
+
+[14:49] within the opening range after 30 minutes and doesn't appear to be trending and if I'm not in a corrective market, then I will uh I'll pull the trigger and chances are I'm going to
+
+[15:03] have, you know, some quiet price action for the next 20 30 minutes and that's usually all it takes. In fact, I did some statistics on statistics on this
+
+[15:13] and my average whole time is about 18 minutes. John, what time exactly then are you putting on the trade at 10:00 after half an hour?
+
+[15:23] Yes. After 30 minutes of the cash market being open, after the opening bell, 30 minutes defines the range. And if the price is still within that opening range and especially near the middle of the
+
+[15:35] opening range, that's I'll pull the trigger on the trade. And in our example, you chose to have the shorts on uh shorts on uh where the market is right now and you place the longs uh um
+
+[15:51] at the expected move of that day. Do you always place the shorts at the money? The shorts are usually placed just on the first strike price above where the price is trading. So for example, if the
+
+[16:07] price is trading at say 6848, then I will always go up to the next strike price that's offered by the S&P. The reason for that is the way that the skew plays out with the puts versus the
+
+[16:23] calls. There's a definite bias towards the puts because they're usually overpriced. What is the reason why you place the longs at the expected move? Well, for a couple of reasons. Uh, first
+
+[16:37] of all, just from a a consistency standpoint, this allows me to do essentially the same thing statistically every single day. So, when I come into an expected move of 35 points, I can put
+
+[16:53] the wings to accommodate that expected volatility. If the expected move is 20 points, it's going to be more narrow, but we would typically expect to see less volatility during that day. So,
+
+[17:06] it's a way to adjust for what the market is anticipating for the day. And just in case uh someone doesn't know how to find the expected move, how how do you find it?
+
+[17:19] Well, there's a couple of different ways you could do this. uh my preferred method the the the number the metric that I find to be the most accurate comes from the thinker
+
+[17:31] swim expected move. Not everybody publishes an expected move. Not every broker publishes an expected move. What I find is the tasty trade unfortunately is even though it
+
+[17:43] was invented by the same guys is unfortunately different. And I don't find the tasty trade number to be as useful in terms of the expected move. I don't know what the difference is
+
+[17:54] between the two. I'm sure somebody does, but they are different. They are different numbers. So I do use the thinker swim number. If I did not have access to either of those two, what I
+
+[18:04] would do is just use the at the money straddle price to come up with an approximation of the expected move for the day. So, you have opened your trade at around
+
+[18:17] 10 a.m. Eastern Standard Time. The short is placed on the next strike up from where the market is that time. The longs are placed at the expected move for the day. You have your trade going.
+
+[18:33] Mhm. Now, now what when what are your rules for closing the trade? Both taking profit but also taking a loss. So I would immediately I would immediately as
+
+[18:45] as soon as the trade is in I am calculating depending on my mood for the day depending on how the market is is acting I will look for at least $50 a contract. Sometimes I'll go
+
+[18:59] to as high as $100 a contract. It again it depends on how much that I want to wait for the trade. How much do you how much do you typically collect just to for
+
+[19:10] comparison? Well, the credit is going to be a reflection of the spread width. So, this the the credit can be uh $20. The credit can sometimes be 16. Sometimes it's it's 12. It's it's going to be a
+
+[19:25] function of how wide that that iron fly is. And so what I'll do is I'll do is I'll immediately say like say I'll enter for a credit of in this case the the trade that we're looking at today would
+
+[19:39] be $20.85. So the first thing I would do is I would put in a limit order for $20.35 debit to immediately close those out. Sometimes what I'll also do is if I do
+
+[19:54] multiple contracts I'll close out the first at 50. I'll close out the second at 100 or the first group at 50, the second group at 100. And this typically happens on average
+
+[20:05] after 18 minutes that you can collect this uh this profit. Yes. Sometimes it's as fast as 5 minutes and that's that's when we have a a big crush in volatility if if some event has
+
+[20:21] just happened. So if we just got a a big economic report or something that everybody was looking for has just occurred and then it was like a either a big letdown or you could just feel the
+
+[20:33] air coming out of the market like h okay. So those those options will crush very very quickly in that case. That doesn't happen all the time. Sometimes I'll have to wait half an hour.
+
+[20:46] Sometimes the decay is is somewhat slow or the market's waiting for something that's happening maybe in 45 minutes from now. So, the decay is going to be slower, but generally somewhere around
+
+[20:57] that. That's the whole point is I'm trying to be done after the first hour of the day. If I can be done after one hour, that's great. I've got the rest of the day to work on the stuff that I want
+
+[21:08] to. What what strikes me is that most traders that I have heard doing similar ironfly strategies they have some kind of a 10% take profit rule you are essentially closing yours taking the
+
+[21:21] profit earlier than that in many cases right not exactly if if you look at the numbers so a typical risk for a trade like this is about what I'll do is I'll
+
+[21:34] set up stops and I actually go to the thinker swim analyzer and I set up vertical lines that represent the price levels for the stop. And if if the price hits those, I'm gone. I'm out. And
+
+[21:47] typically the the numbers bear out that it's about a $350 loss. So that turns out to be if you factor that as the loss and not the absolute loss because I'm not going to stay in
+
+[22:01] the thing all day long then the trade ends up being at $50 profit target is a 14.3 return on risk 14.3%. Or if I stick in for $100 per contract
+
+[22:14] that's 28.6 which is not bad if you're only spending 18 minutes on something like that. Now let's move into what happens when the trade goes against you because this
+
+[22:27] is a fastmoving uh trade both when it comes to taking profit but I guess also when it comes to getting into negative territory if the market doesn't move your way. What are your exact rules for
+
+[22:39] taking the loss or and putting up stop-loss? I've got a spreadsheet that basically tells me what to do. Right. So what I'll do is I'll I'll enter the expected moves
+
+[22:52] into that. So an expected move figure and then I'll enter the entry point of that. So say it's 6850 and the example for today that we had with a 29 point expected move. My stop
+
+[23:09] losses would be at 68.21 21 and 6879. And so if the price comes down to there, boom, I'm out. So I I don't set up, John. I don't set up uh limit orders. I
+
+[23:24] don't set up market limit orders or anything like that or I don't set up u you know, one cancels others or anything fancy like that. If the price starts to trend and if it's at or near my stop
+
+[23:38] loss, I will just punch out. I'll get out of the trade. Some others. Now, what I've tried before is I've tried to do, hey, let's add a hedge trade. Let's turn this into a Batman. If you add another
+
+[23:51] iron fly, you can turn it into a Batman trade. Uh, I've done those before and what I found is that not only does it now make me have to spend probably 3 to four hours managing that trade,
+
+[24:07] but also the, you know, the numbers to that usually don't bear out. Usually, if you've got a a market starting to trend, it's going to trend. And so, what you just want to do is to get out of it. And
+
+[24:21] that's the thing that I find beautiful about zero DTE is there's always tomorrow and the day after that and the day after that. There's five times a week. So unlike the old options trades
+
+[24:32] that we used to do 20 years ago where you had one monthly expiration, so you had one shot at a trade every month, now you've got a shot every single day. So you can wipe yourself off and and just
+
+[24:45] reset for tomorrow. And that's the beautiful thing about this. You said that uh your average loss when you take a loss with and following these rules uh is about $350,
+
+[24:59] but what is the range that the losses you will see the losses on? I guess some losses are bigger, some are smaller. They're they're very close to that. So,
+
+[25:08] some might be as as high as 400 and some some I'll punch out early be just because maybe it's taking too long and I don't like the way the price is moving and maybe I'll punch out at 200,
+
+[25:24] but they're rarely a whole lot more than 350. on. I have one question though because you know sometimes the market moves very fast like you have a sudden huge drop or
+
+[25:35] um well uh on April 9 you had a similar big move up. Uh and you say that you do not have any automatic stop-loss set up. You actually close out manually.
+
+[25:49] Does it sometimes happen that this get out of a control then if you have these huge moves just at that uh just at that time if you're going to get a huge move
+
+[25:59] usually they do occur pre-market. They usually occur later in the day. I I don't have an issue. I've not had an issue in the number of years I've been
+
+[26:11] running this where I've not been able to manage the risk on the trade. So, if you're willing to manage this for say the first hour or so, um it's it's not been even on the days over the last
+
+[26:25] couple of years where we've we've moved into some really nasty little days where we drop a 100 points, you know, it doesn't happen all at once. And usually you can see you can see the
+
+[26:35] hallmarks of times where it's time to get out. like if if the price is punching through the lower expected move, it's usually on days where we get uh corrective moves, right? So, nasty
+
+[26:46] corrective moves. We don't usually get upside days where it blows up to the upside unless there's some kind of announcement, which you shouldn't be trading over anyway. So, I haven't
+
+[26:58] really found it to be that difficult to manage the risk on these trades without some type of automation. And the the other thing the other thing too here is worst case scenario. So
+
+[27:11] worst case scenario like the trade that we're talking about this morning, if we've got $30 wide wings, we're bringing in $2,000. My disaster risk on the trade is $915.
+
+[27:23] 915. So at the end of the day, okay, so the worst possible thing that could happen to me is I lose three times a standard loss. That's a hell of a lot better than, you know, something where
+
+[27:37] it's a high probability trade that gets away from me and I'm into, you know, uh, the darkness, you know, when I'm into the spread on a high probability trade, those are unreoverable.
+
+[27:51] We will get into your results a little bit later, but what is the win loss rate you see with your mechanics? Uh, let's see. What have I had here? um 2023
+
+[28:06] I had a relatively simple strategy for that. It was about 95% with a profit factor of 3.85. So that was out of 121 trades that was that was pretty good. Now the next year I tried to get
+
+[28:22] more aggressive. This is what always happens if you spent any time trading. As soon as you get some success you want more. And so you get more aggressive and so
+
+[28:31] you look for ways to turn the losers into winners and you look for ways to take the winners and expand upon those or you should be. And so 2024 actually the the numbers went down. Um I got 86%
+
+[28:46] win rate with a profit factor of 1.92. So even though I got more aggressive, the numbers didn't bear that out. What do you mean by a profit factor? profit factor is if you it's based on
+
+[29:01] how much you win based on $1 of losses. So what that means is you can imagine this is sort of like a box where you have money going into the box and then
+
+[29:13] you have your trading system and then there's money coming out. So this this is the basic notion of what a profit factor is. If I have a dollar coming in at a profit factor of a $1.92,
+
+[29:25] then I have a $1.92 coming out. So, anything your goal should be to shoot for somewhere around a profit factor of two. And if you can do that year after year after year, you walk on water in
+
+[29:38] this business. Let's move into the risk of this strategy. You already said that the reverse that can happen is that you take a full loss, but you are protected by
+
+[29:49] the longs. I always ask my guests to place their strategy on a risk profile scale from one being very low risk to 10 being very high risk. And you are free to define those numbers as you see fit.
+
+[30:06] Where would you place your ironfly strategy? You know, it even though it doesn't seem like it, John, I think this is a relatively
+
+[30:19] lower risk strategy. I I certainly wouldn't put it at one. One would be like, you know, putting money into, you know, money market or something like
+
+[30:30] that. and a 10. The way I would define 10 is like buying out of the money call options or you know uh trading 100% of your your capital on cash secured puts something
+
+[30:42] like that. So to me this would be somewhere between four to five. You know I really am not a a gunslinger. I I usually trade very very riskmanaged solutions because as we all
+
+[30:56] know if you've had spent any time in this business the the worst thing that that happens to you is the trades that get away from you and then you wake up at 2 o'clock in the morning and you're
+
+[31:06] checking the futures and those kind of things. And I made up my mind I never wanted to do that again. And that's again one of the reasons why I've gone more narrow. So, I I used to be one of
+
+[31:17] those guys like, you know, you could make a an analogy here of the military. And to me, the high probability traders are the guys that are sitting with the artillery five miles behind the lines
+
+[31:31] and they're just lobbing shells over the front. You know, there's no risk to them, you know, and they they just get to to do the fun stuff until, you know, their the opposing army flanks them and
+
+[31:43] they're they're unprotected. So, what I've kind of gone towards over the years is I'm much more in the trenches now. I'd rather duke it out with a price right there. And by doing so, you speed
+
+[31:57] things up and you reduce your risk by playing closer to the money. And I know it's it sounds it it sounds uh counterintuitive, but it's actually the truth that the closer that you play, the
+
+[32:10] more you can reduce time and reduce your risk. What have been your results of uh trading this strategy over time? And how do you measure your results? The one thing that I do is I'm not
+
+[32:24] trading my entire account off of this. Most of what I'm trading is just simple wheel strategies because what I've learned over time, we we tend to fall in love with income,
+
+[32:36] but what we lose out on is income trades don't carry value very well. If you look at the S&P 500 or any any index over the past 20 years, you'll see a line that goes from the lower left to the upper
+
+[32:49] right. And by only focusing on income, you lose out on all those capital gains. You lose out on the ability to carry value forward. So that's what I've been more focused on the last three years
+
+[33:03] using wheel trades and certainly you know creating income through there and using cash secure puts to drop my cost basis those kind of things. So the the standard wheel
+
+[33:15] strategy but what I'm using it kind of at the top of my pyramid if you will. So that's all the foundational stuff is the wheel strategy, but the income at the very top of the pyramid is my zero DTE.
+
+[33:28] I don't need it. It's one of those it's kind of the cherry on the top. If it's available to me, I will do it because it's very profitable and can really goose your results, really help your
+
+[33:39] results, but only if you're disciplined enough to stay away from it during times that you you you really shouldn't be trading it. How how many percentage of the days are you typically trading this
+
+[33:50] in a year that you find the conditions conducive? Uh well I'll just let the numbers speak for that. Like in 2023 I did 121. So that may be 50% of the days, right?
+
+[34:03] That's roughly 50% of the days. In 2024 I did 144. So it's a little bit over. That's maybe 60% of the days. And um I've not done all that much this year actually because the first third of the
+
+[34:18] year was corrective. First third of the year was corrective. And so I had no business playing this strategy during that time. And the past month has been corrective.
+
+[34:28] So I haven't really been playing it during that time either. But and the the other times, yes. But uh Doc, you didn't exactly answer my question about your results of this
+
+[34:38] strategy as such. this strategy specifically. Again, I can give you the numbers for the past couple of years here. 2023 was um very good for this. So, I had 121
+
+[34:52] trades. I won 95% of them. So, that gave me a profit factor of $385 or 3.85, meaning that every dollar I stuck into the system, I got 385 out of it on the other end of it, which is probably too
+
+[35:07] high. So the next year, again, like I said, I tried to augment it. I tried to get more aggressive, and I actually got lower numbers, but still good enough. That was 144 trades, 86% win rate, and
+
+[35:20] profit factor of 1.92. So again, you still want to focus on getting to about 2.0 if you can because that cleans up for a lot of the the inefficiencies of the trade. So far this
+
+[35:33] year, I'm running about 90% with a profit factor of 2.1. So, I'm right on target. Let's sum up what we have been through. Who is this strategy best suited for,
+
+[35:44] would you say? And what would be your most two to three most important uh takeaways that you would like the audience to remember? Who this is for? This is probably not
+
+[35:55] for somebody that is working a a true nineto-five job that doesn't have the time to I mean, I need you to be able to lock in for maybe an hour or so. to focus on the strategy. So, not only
+
+[36:09] being able to pre-qualify this to say, okay, this looks like a range day, you know, boom, you're in the trade, but now being able to understand where your exit points are and to just execute on that.
+
+[36:20] You don't have to guess. You don't have to predict the future. Just if the price gets up to your exit points, you get out. Otherwise, if the price hits your limit order, you're out. You're free and
+
+[36:29] clear. So, it's it's a very mechanical trade in the way that it's set up. So, that's kind of who it's for, but it's it's probably not for somebody that's working a full-time job trying to do
+
+[36:39] this on the side and and, you know, go through tele, you know, telephone calls at the same time. Couple of takeaways for this. Do everything that you can to make the market show you that it's a
+
+[36:52] range day. And I I talked about a couple of different ways of doing that. First of all, in macro basis, on the macro basis, stay away from corrections. Stay away from corrective price behavior
+
+[37:03] where we have big red candles and big volatility and you see the VIX spike up. Kind of want to stay away from those because those are the days where you're going to have the realized volatility
+
+[37:16] probably exceed the implied volatility and that's usually been my case of seeing that. So you want to avoid those kind of things. The second thing is on a micro basis that look for something
+
+[37:27] which is still trending or still still trading within the opening range after 30 minutes. So macro micro there's a couple of different ways that you can you can really filter these trades.
+
+[37:41] What would be good resources to learn more about this style of trading? There's there's a a million different ways of doing every strategy, right? There's you you know just because I did
+
+[37:55] not invent the iron fly. I just made it work for what I want out of it. And that's kind of what I I like everybody to do is to find a version of this that they can call their own of doing it. If
+
+[38:08] anybody needs more information on that, they can uh they can look me up at ready set.trade trade and there's there's more information there or they can engage with me or they can email me at doc
+
+[38:21] ready settrade or I've got classes out there. We do have a live trading room where we talk about this strategy as well too. Would you have a couple of good books
+
+[38:31] about the options trading to recommend to other traders that you benefited from? I've got I've got tons of books. We could go on for half an hour about that,
+
+[38:39] but um let me let me uh let's make two then. Let me give you a couple here. First of all, one one that I read one the book I couldn't put down which is rare in the
+
+[38:53] trading book space is uh by John Carter. It's called Mastering the Trade. He came out with this maybe 20 years ago and it's been around for a long time, but it's it's really good because he mixes
+
+[39:06] the the mental side of trading with the mechanics of how to view the market intraday. He's he's very very good with it. He's an excellent communicator and he's he's a fun read. So, Mastering the
+
+[39:18] Trade by John Carter, I think, is is worth its weight. If you're going to trade options, uh, for if you're going to trade it for a living, and face it, if you're going to
+
+[39:29] trade this, you need to trade it like a business, then you owe it to yourself to get the Sheldon Natenberg book, which is called Options, Volatility, and Pricing. It will it it's a it's a recipe for uh
+
+[39:42] for insomnia. It will put you to sleep the first time you go through it and it will force you to go it. It doesn't have a plot. It doesn't have a beginning, you know, a middle. It doesn't have
+
+[39:55] protagonist to it or anything like that. It's not a fun book to read. But if you chew through it and if you go through it very very slowly and again and again, you'll probably have to go through it
+
+[40:07] three or four times, but you will find out things that um that you had dismissed before the the true secrets of how options really are priced and how they move and you know you'll find
+
+[40:20] little edges in here that your competitors won't be able to figure out. So that is u if you talk to I got this through my my prop trading days is that we were forced to to read this book and
+
+[40:34] and so it's it's kind of one of those those classics that's handed down through time. The other one that I think is really good which is overundred years old now is uh reminiscences of a stock
+
+[40:47] operator and it was uh written about Jesse Livermore. And what I love about it is it showed how he he pushed and he failed. He rebuilt himself up. He learned from his
+
+[41:01] lessons. He pushed up to a higher point, failed again. But it showed how somebody as a trader can fail upwards and never quit. And that's that's what I see missing from so
+
+[41:15] many retail traders is that they fail and they didn't know why they failed. They just stop. they just quit and they just say, "Well, this is a rigged game. I can't do this." It's it's not if you
+
+[41:27] want to approach it that way. All right? So, it's it's just another it is not gambling. It is waiting for the odds to be in your favor. And few people have the patience to do that. But most people
+
+[41:40] are not reflective enough to be able to analyze their failure note emotionally and say, "Oh, I see what I did wrong." The people that make it in this business are the ones that don't quit. And this
+
+[41:53] is a great lesson from Jesse Livermore and how not to quit and how to get to the top of your profession. And some of the lessons that he imparts even 100 years ago are still absolutely 100%
+
+[42:05] valid today. So those are those are three books that I I would say belong on everybody's list. You know, even if only one of them is specific to options trading.
+
+[42:16] Thank you. And if you are curious about doing zerod iron flies strategies, we do also have two other interviews about different ways of trading zero iron flies on SPX. You will see the two links
+
+[42:32] on the screen right now. Thank you, Doc, very much for sharing your knowledge and your strategy. Well, thank you, John. I appreciate the invitation and it's uh I look forward to
+
+[42:42] hearing from anybody out there that's curious about this strategy.

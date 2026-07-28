@@ -1,0 +1,290 @@
+{
+  "video_id": "BRht1eWBAIY",
+  "date": "2026-07-15",
+  "title": "$SKHY short and many takeaways | 15 Jul 2026",
+  "observed_trades": [
+    {
+      "date": "2026-07-15",
+      "ticker": "SKHY",
+      "direction": "short",
+      "action": "short",
+      "setup": "Semi sector weak/extended; SK Hynix ADR is an extended leader breaking down below the 50 EMA, making its first bounce into the declining 50 and declining 9 EMA (daily + weekly 9), with weekly volume expansion signaling distribution. Shorted the intraday bounce into resistance.",
+      "entry_basis": "Intraday rally into unfilled gap below ~188.50 and the declining daily 9 EMA (~187); resistance found at ~188 (ok to overshoot bids to 189-190). Timed on the 1-minute chart with anchored VWAP from the open after the 5-minute candle lost momentum.",
+      "stop": "Not stated numerically; described as 'pretty tight' (vs the ~2% stop a 5-min breakdown entry above the prior bar high would require)",
+      "source": "2026-07-15_BRht1eWBAIY@42:29",
+      "confidence": "stated",
+      "notes": "'I just sold a bit of SK Hynix' at 42:29 = entered the short live during stream. Full anatomy explained 52:08-63:18. Calls it 'one of the best trades I've took... one of the best entries this year.' Anchored-VWAP-on-1-min entry tactic learned from Christian (parabolic shorts). WDC free-falling same day helped the thesis. Plan: cover before SK Hynix earnings next Wednesday (101:20); book most/all profits into weakness, e.g. if SOX flushes to ~555 (66:52, 78:13). Ticker from title $SKHY (ADR; 'ADR launch date' mentioned 56:59).",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-07-15",
+      "ticker": "MU",
+      "direction": "short",
+      "action": "hold",
+      "setup": "Semi-sector short: shorted the bounce into the declining daily 9 and 21 EMAs; same day the semi ETF and QQQ were at their 9/21 and slightly below the anchored VWAP from the all-time high.",
+      "entry_basis": "Opened last Thursday on the bounce into the 9 and 21 EMAs; executed as a 5-minute breakdown after a first-15-minute fakeout",
+      "stop": "",
+      "source": "2026-07-15_BRht1eWBAIY@80:50",
+      "confidence": "stated",
+      "notes": "Answer to viewer 'When did you open your shorts on MU?' - 'last Thursday on the bounce into the 9 and 21... I did the 5-minute breakdown.' Still holding; plans to offer into weakness rather than trail all the way down (84:13), cover more the faster the semi flush goes.",
+      "fill_timing": "last Thursday (2026-07-09)"
+    },
+    {
+      "date": "2026-07-15",
+      "ticker": "CRWV",
+      "direction": "short",
+      "action": "hold",
+      "setup": "Short on breakdown: 9 and 21 EMAs crossing lower and starting to cross the 50; part of his semi/AI-infrastructure short book.",
+      "entry_basis": "Entries on 25 June and 9 July (viewer read them off his chart, he confirmed 'Yes'); best one the 25 June entry near the base",
+      "stop": "",
+      "source": "2026-07-15_BRht1eWBAIY@91:08",
+      "confidence": "stated",
+      "notes": "Caption garbles: 'When do you enter call with?' (91:08) and 'cover core re- at around maybe 473 72 level' (78:57) both interpreted as CoreWeave (CRWV) - the ~472-473 cover target fits one name he plans to cover at a specific level. He adds 10 July and Monday were also decent entries but 25 June was the best he took.",
+      "fill_timing": "25 June and 9 July"
+    },
+    {
+      "date": "2026-07-15",
+      "ticker": "LITE",
+      "direction": "short",
+      "action": "hold",
+      "setup": "Semi/optical name short doing 'exactly what I wanted': rejecting off the weekly 9 / daily 50 EMA with a huge red candle, slicing through all the EMAs, now approaching the unfilled gap below.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-07-15_BRht1eWBAIY@96:00",
+      "confidence": "inferred",
+      "notes": "Caption: 'The light is still wonderful. Doing what exactly I wanted to do... I kind of wanted to trail this one for a little bit longer.' 'The light' interpreted phonetically as LITE (Lumentum) - uncertain. Clearly an open short he is managing; says he'll probably cover most or all semi shorts into the weakness since they could find support at any time (96:42).",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-07-15",
+      "ticker": "TSLA",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Attempted a long on a 50 EMA reversal on the 15-minute chart; it failed and stopped him out, which he used as a market-direction signal to pivot fully to the short side.",
+      "entry_basis": "50 EMA reversal on the 15-minute chart ('16-minute' in captions), Tuesday last week",
+      "stop": "",
+      "source": "2026-07-15_BRht1eWBAIY@89:28",
+      "confidence": "stated",
+      "notes": "'I actually tried a Tesla on Tuesday last week but it failed. It stopped me out... after I got stopped out I decided to focus on the short side instead.' Losing trades as feedback/'best indicator of the market' (90:53). Today Tesla 'looks really bad on this candle.'",
+      "fill_timing": "Tuesday last week (2026-07-07)"
+    },
+    {
+      "date": "2026-07-15",
+      "ticker": "DELL",
+      "direction": "long",
+      "action": "sell",
+      "setup": "Sold his Dell long last Thursday and has stayed away since; the failed breakout / failed VCP forming a lower high after a huge rally (up ~250% in 3 months) is a bad sign for the stock and the sector.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-07-15_BRht1eWBAIY@69:03",
+      "confidence": "stated",
+      "notes": "'That's why I stay away from Dell after I sell it on Thursday.' Later Q&A ('How could you tell Dow's breakout would fail' = Dell, 108:58): he couldn't know in advance, it's probability - sector already hot, buying power consumed, peers falling off, so odds of another 100% move were low (111:49-113:26).",
+      "fill_timing": "last Thursday (2026-07-09)"
+    },
+    {
+      "date": "2026-07-15",
+      "ticker": "INTC",
+      "direction": "long",
+      "action": "buy",
+      "setup": "Bought Intel on 13 July on a pullback into the 9 EMA / anchored VWAP. In hindsight 'not wrong, but could be avoided' given overall semi-sector weakness, market extension, and weak action from peers.",
+      "entry_basis": "Pullback into the 9 EMA, also aligned with the anchored VWAP ('angle free web' in captions)",
+      "stop": "",
+      "source": "2026-07-15_BRht1eWBAIY@122:10",
+      "confidence": "stated",
+      "notes": "Viewer asked if the Intel buy was wrong: 'It's definitely not wrong... the entry itself is pretty decent... but it could be avoided because of the overall sector weakness.' Outcome/current status of the position not stated.",
+      "fill_timing": "13 July"
+    }
+  ],
+  "principles": [
+    {
+      "category": "process",
+      "text": "There are thousands of valid ways to trade and no single model answer - find the style that suits your personality, risk appetite, and character, and don't copy someone else's wholesale.",
+      "timestamp": "21:06"
+    },
+    {
+      "category": "psychology",
+      "text": "Managing longs and shorts simultaneously can mess with your mind; if it does, it is easier and simpler to focus on one side of the market at a time.",
+      "timestamp": "19:53"
+    },
+    {
+      "category": "sizing",
+      "text": "Size shorts exactly like longs: position size is derived purely from stop width and the fixed amount of capital you are willing to risk per trade.",
+      "timestamp": "26:56"
+    },
+    {
+      "category": "process",
+      "text": "Don't put a timer on study - value the process over the result. How you approach and drill a problem matters more than whether you reach a conclusion this time.",
+      "timestamp": "30:33"
+    },
+    {
+      "category": "process",
+      "text": "Replay historical periods side by side (e.g. long AMD while short Square in late 2021) to train your eyes on market dynamics and test whether an approach could work for you.",
+      "timestamp": "34:55"
+    },
+    {
+      "category": "process",
+      "text": "Do your own study to make knowledge yours - you can take ideas from others' sharing, but you have to verify everything yourself; the market leaves puzzles in the charts for you to discover.",
+      "timestamp": "38:05"
+    },
+    {
+      "category": "market_read",
+      "text": "After a stretched, high-volume uptrend, a failed breakout at the prior swing high that builds the first lower high marks the end of the uptrend the vast majority of the time (he estimates ~98-99%).",
+      "timestamp": "25:15"
+    },
+    {
+      "category": "market_read",
+      "text": "Price respects unfilled gaps quite efficiently - use prior unfilled gaps as support/resistance levels for entries and targets.",
+      "timestamp": "40:10"
+    },
+    {
+      "category": "entry",
+      "text": "Check the sector/theme before the stock: short weak stocks in weak sectors (never a laggard in a strong sector), and go long where many peers in the theme show strength. Then work top-down: theme, weekly, daily, intraday.",
+      "timestamp": "53:11"
+    },
+    {
+      "category": "entry",
+      "text": "Short broken-down leaders on the first bounce or first pullback into the declining 9/50 EMA, ideally where it confluences with prior swing lows and the declining weekly 9.",
+      "timestamp": "55:46"
+    },
+    {
+      "category": "entry",
+      "text": "To time a short intraday, wait for the 5-minute candle to lose momentum, then drop to the 1-minute chart and use the anchored VWAP from the open (or high of day) for the entry - it works beyond parabolic shorts.",
+      "timestamp": "58:18"
+    },
+    {
+      "category": "entry",
+      "text": "Always hunt for entry tactics that tighten the stop - a tighter, logical stop is what maximizes risk/reward per trade (vs e.g. a 2% stop from a 5-minute breakdown).",
+      "timestamp": "59:54"
+    },
+    {
+      "category": "market_read",
+      "text": "Candlestick pattern names are gimmicks - the same chart can read bullish (e.g. morning star) in isolation; context of theme, extension, and volume decides the trade, not the pattern.",
+      "timestamp": "64:40"
+    },
+    {
+      "category": "exit",
+      "text": "Cover shorts into weakness rather than trailing all the way down: the faster the flush, the more you cover; if price drifts down slowly and orderly, trail longer.",
+      "timestamp": "83:48"
+    },
+    {
+      "category": "risk",
+      "text": "Cover short positions before the company's earnings rather than holding through the event.",
+      "timestamp": "101:20"
+    },
+    {
+      "category": "entry",
+      "text": "Only take a mean-reversion long after a genuine panic flush - one huge red candle undercutting all support (e.g. into the weekly 21 EMA). If the decline is slow and orderly with no panic, skip it; the base needs more time.",
+      "timestamp": "103:55"
+    },
+    {
+      "category": "entry",
+      "text": "Don't buy a stock showing relative weakness / lagging the market, especially after a quick huge-volume correction from the top of its last push higher.",
+      "timestamp": "93:33"
+    },
+    {
+      "category": "market_read",
+      "text": "There is no certainty in markets, only probability - anyone who tells you something is definitely going up or down is a scammer.",
+      "timestamp": "108:58"
+    },
+    {
+      "category": "market_read",
+      "text": "After a sector runs hot and a name is already up ~250% in 3 months with peers rolling over, the odds of another 100% leg are low - most of the buying power has been consumed by the run and the late gap-ups.",
+      "timestamp": "111:49"
+    },
+    {
+      "category": "market_read",
+      "text": "Your own trade feedback is the best market indicator: in a strong market even bad entries get rewarded, but when even good entries get stopped out - a losing streak of 10-20 - the market has turned unfavorable to your style.",
+      "timestamp": "137:40"
+    },
+    {
+      "category": "risk",
+      "text": "Tight stops raise your trade frequency, which gives you more and timelier feedback from the market - consecutive stop-outs are a useful signal, not just a cost, if you act on them instead of spiraling.",
+      "timestamp": "139:11"
+    },
+    {
+      "category": "sizing",
+      "text": "He cut risk per trade from 0.5% to 0.3% (sometimes less) this year to control drawdowns; tight stops still produce solid position sizes, and a higher number of entries compensates for the smaller unit risk.",
+      "timestamp": "132:49"
+    },
+    {
+      "category": "psychology",
+      "text": "If you are in a drawdown and don't know what you're doing, stop trading for a while and take a rest.",
+      "timestamp": "124:50"
+    },
+    {
+      "category": "psychology",
+      "text": "In a middle-of-the-range market with no clear direction, there is no need to push - and don't get influenced by social-media noise, FOMO, or panic.",
+      "timestamp": "142:01"
+    },
+    {
+      "category": "psychology",
+      "text": "Superior returns require luck (a market that cooperates with your style) plus a tight-stop approach that maximizes risk/reward - don't expect top-decile results in a choppy, weak uptrend.",
+      "timestamp": "116:26"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "05:10",
+      "caption_text": "AOI / A O I / AUI",
+      "context": "At an interesting level on the anchored VWAP from the stage-2 swing low and the 150 EMA; weekly under the declining 9, 21 curling down; watching which way it breaks. Later says he never really caught it on the last leg up - choppy, not the best stock to trade.",
+      "guess": "AAOI",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "08:46",
+      "caption_text": "W C today is also actually pretty decent short",
+      "context": "Faded from the 21 EMA yesterday, flat open pushing into the declining 9 today. At 60:19 confirms as 'Western Digital... the one that I didn't take on the opening range low breakout' - it free-fell ('like bungee jumping'). Watch-only, no fill.",
+      "guess": "WDC",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "78:57",
+      "caption_text": "I'll probably cover core re-uh at around maybe 70 473 72 level",
+      "context": "Naming which semi short he'll cover and at what level (~472-473) as SOX approaches 555.",
+      "guess": "CRWV",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "91:08",
+      "caption_text": "When do you enter call with? Looks like there's an entry on 25th of June... and also 9 of July",
+      "context": "Viewer reading short entries off his chart; he confirms both and says 25 June was the best, near the base with 9/21 crossing down toward the 50.",
+      "guess": "CRWV",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "96:00",
+      "caption_text": "The light is still wonderful. Doing what exactly I wanted to do.",
+      "context": "An open short rejecting off the weekly 9 / daily 50 EMA, huge red candle slicing through all EMAs, approaching the unfilled gap below; wants to trail it a bit longer.",
+      "guess": "LITE",
+      "confidence": "uncertain"
+    },
+    {
+      "timestamp": "64:51",
+      "caption_text": "Rippling is yeah, really showing strength today",
+      "context": "Non-semi name showing relative strength on a weak semi day; matches Rivian, which he discussed at 21:46-24:37 as a stock he tracks for the next leg's leaders.",
+      "guess": "RIVN",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "93:33",
+      "caption_text": "Rockefeller is a little bit showing relative weakness",
+      "context": "Viewer's long candidate bouncing off the 200-day / weekly 50 EMA; he dislikes it - a laggard vs the market with a quick huge-volume pullback from the top; 'not my type of entry'.",
+      "guess": "RKLB",
+      "confidence": "uncertain"
+    },
+    {
+      "timestamp": "108:58",
+      "caption_text": "How could you tell Dow's breakout would fall would fail?",
+      "context": "Viewer question about the failed breakout he sold Thursday; his answer continues explicitly about Dell (110:13 'whether Dell can have a failed breakout').",
+      "guess": "DELL",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "124:50",
+      "caption_text": "that is a pretty nasty reversal on a rule break",
+      "context": "Chart commentary on a nasty intraday reversal; followed by a 'really good undercut and reclaim / head shake on the 21 EMA' on a name he associates with Cathie Wood (126:34). Commentary only, no fill.",
+      "guess": "RBRK",
+      "confidence": "uncertain"
+    }
+  ]
+}

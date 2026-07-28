@@ -1,0 +1,19 @@
+{
+  "video_id": "QmPUp9ISuDw",
+  "url": "https://www.youtube.com/watch?v=QmPUp9ISuDw",
+  "title": "ORB Trading Only Works If You Do These 3 Things",
+  "channel": "TheOneLanceB",
+  "channel_id": "UCzksXiC-Ju-DTIZmMiaOVfQ",
+  "stream_date": "2026-06-24",
+  "duration": "10:16",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

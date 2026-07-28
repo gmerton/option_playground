@@ -1,0 +1,19 @@
+{
+  "video_id": "RKV1rncXSkg",
+  "url": "https://www.youtube.com/watch?v=RKV1rncXSkg",
+  "title": "How to Read the Tape with Level 2 Data",
+  "channel": "TheOneLanceB",
+  "channel_id": "UCzksXiC-Ju-DTIZmMiaOVfQ",
+  "stream_date": "2026-05-30",
+  "duration": "12:43",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

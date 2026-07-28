@@ -1,0 +1,19 @@
+{
+  "video_id": "ad27qIuhgQ4",
+  "url": "https://www.youtube.com/watch?v=ad27qIuhgQ4",
+  "title": "The 0DTE Iron Fly Strategy That Trades in 18 Minutes (SPX)",
+  "channel": "Theta Profits",
+  "channel_id": "UCzGARfberQ8nRRbsjK90BHg",
+  "stream_date": "2025-12-21",
+  "duration": "42:46",
+  "summary": "Doc Severson (readysettrade.com; former engineer, ~20-yr trader; mis-captioned 'Duck Severson') pitches a 0DTE SPX iron fly: ATM shorts at the first strike above spot, long wings set at the day's expected move, entered ~10:00 ET only after a 30-minute opening-range filter and only in non-corrective regimes, held ~18 minutes for a small fixed $50-$100/contract profit against a manual ~$350 stop (capped ~$915 disaster loss on a $30-wide fly). Claims 95% win / PF 3.85 (2023), 86% / 1.92 (2024), ~90% / 2.1 (2025 YTD) but all verbal self-report with no separable statements, and the win rate sits right on its own breakeven (~87.5% at $50 vs $350) so the edge is thin and margin-sensitive. Genuinely disciplined and defined-risk with an honest declining-PF disclosure and a real stand-down rule, but it's an intraday hand-managed 0DTE strategy with no automation, so it is not faithfully testable on our EOD data. Same family and conviction as MEIC/Pulver. Write-up: strategies/iron_fly_18min.md (conviction 2/5).",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

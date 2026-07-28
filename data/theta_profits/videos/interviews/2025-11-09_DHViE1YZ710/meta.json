@@ -1,0 +1,19 @@
+{
+  "video_id": "DHViE1YZ710",
+  "url": "https://www.youtube.com/watch?v=DHViE1YZ710",
+  "title": "The 0DTE strategy with zero risk? Boomer Dan\u2019s \u201cLevitation trades\u201d explained",
+  "channel": "Theta Profits",
+  "channel_id": "UCzGARfberQ8nRRbsjK90BHg",
+  "stream_date": "2025-11-09",
+  "duration": "47:54",
+  "summary": "Dan Westbrook ('Boomer Dan' — SAME trader as the Burrito Butterfly interview) pitches '0DTE levitation trades' on SPX: open an ATM 5-wide credit spread plus a ~$1 hedge, and once the directional leg gains, buy the opposite spread to lift the whole position above the zero line ('levitate') into a guaranteed-profit butterfly, then stack a 'wall of butterflies.' 'Zero-risk / minus-zero' is conditional on first winning the entry's directional bet (he admits no firm direction edge); if wrong or the market just sags, you take a loss. No separable track record (netted into a larger portfolio). Write-up: strategies/levitation_trades.md (conviction 1.5/5).",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

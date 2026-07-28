@@ -1,0 +1,619 @@
+[00:00] Risk management is one of the most important skills, yet it is one of the most complex and sometimes even counterintuitive parts of trading. Do we always need to have a hard stop on our
+
+[00:10] trades? Shocker, no. Should we ever violate our risk rules? Also shocker, maybe sometimes. Is it okay to risk blowing up your whole account? Well, actually, I'd argue there are situations
+
+[00:22] where it is. Is undercapitalizing on big opportunities a sign of poor risk management? 100% [music] and I'm going to explain why to all of this. This video is my attempt at making
+
+[00:32] the ultimate comprehensive guide to risk management in trading. The fundamental truth of trading is that you cannot have reward without risk. Or as the normies would call it, no pain, no gain. Risk is
+
+[00:43] inherent in everything we do. Ultimately, risk management is not about eliminating risk. That is impossible in markets. It is about intelligently controlling exposure to help us achieve
+
+[00:54] our goals. My definition of risk management is a set of processes and rules that allow you to maximize the odds of achieving your stated goals while minimizing the odds of
+
+[01:03] encountering unacceptable outcomes. Risk management in trading isn't just about stop losses and risk rules. True risk management is much broader. It includes managing position sizing, but also the
+
+[01:14] emotional and psychological side of trading, as well as the money management rules we follow. At its core, risk management is about balancing aggression, taking enough risk to
+
+[01:24] meaningfully capitalize on opportunities, along with defense, or ensuring the avoidance of unacceptable outcomes. In many ways, one of the biggest themes of this entire
+
+[01:33] presentation is that risk management is not about maximizing safety. It is about maximizing long-term expected value while avoiding those outcomes that are unacceptable. Before we can discuss how
+
+[01:44] to manage risk though, we first need to answer a more important and fundamental question. What exactly are we trying to avoid? That question is part of what makes risk management so complicated and
+
+[01:56] subjective. Risk management will always fundamentally be unique to the individual. One of the biggest mistakes in trading discourse is pretending there is one universally correct risk model
+
+[02:06] that everyone should follow. No trader, no firm, and no hedge fund has the same financial situation, emotional tolerance, obligations, or goals. The correct amount of risk depends entirely
+
+[02:19] on context. For a pension fund, a university endowment, or a retired elderly person, a 20% drawdown may be completely unacceptable because the primary objective is preservation of
+
+[02:30] capital and consistency. The utility of additional upside is low relative to the devastation a large loss could create. Meanwhile, another trader may rationally be willing to risk a 100% of an account
+
+[02:44] because they are undercapitalized, can easily replenish the funds, and are optimizing for asymmetric upside. As individuals, we all have completely different utility functions for
+
+[02:55] incrementally more money. This is why internet debates about the correct amount of risk are often useless. Most people arguing about risk are unknowingly optimizing for entirely
+
+[03:05] different objectives. Losing 50K means radically different things to different people. To one person, it's just an inconvenience. To another, it may represent financial ruin, instability
+
+[03:15] for their family, or years of savings erased. Risk management, therefore, is never purely mathematical. It is financial, psychological, situational, and lifestyle dependent all at once. The
+
+[03:28] ultimate point of risk management is to avoid risk of ruin, but ultimately, each individual needs to define that for themselves. For some, that might mean blowing up their whole account. For
+
+[03:38] others, that might even mean a 20% drawdown. If you are a trader at a hedge fund that needs to produce returns every year, ruin could even be defined as underperforming the market for
+
+[03:48] consecutive years. Now, here is one warning as you take the first step and seek to define that. Studies have shown that most people greatly overestimate how much risk they think they can
+
+[03:59] stomach. Or as the great risk philosopher, Mike Tyson, would say, "Everyone has a plan until they get punched in the mouth." Until you have actually weathered through multiple
+
+[04:08] drawdowns, you have no idea how you are going to react when you are hit in the face. For that reason alone, most people would benefit from being far more conservative than they think at first
+
+[04:19] blush. It sounds really easy and macho to think that you could weather a 50% drawdown. But if your risk rules allow you to get there, experiencing it is a whole different thing. You might be in a
+
+[04:30] multi-day or multi-week or even multi-month slump. Your confidence might be shattered and your psychology shaken. How well will your actual decision-making be and how severely
+
+[04:41] impacted will your normal life, psychology, and emotions be if you reach that point? Trust me, as someone who has taken some big losses and some big drawdowns, so much of developing as a
+
+[04:51] trader is about minimizing those periods while maximizing time spent in positive feedback loops where you are making continuous progress and feeling motivated. This is where the concept of
+
+[05:02] risk of ruin becomes so important. A drawdown does not need to wipe out your account to fundamentally damage your ability to perform. A loss large enough to destroy your confidence, impair your
+
+[05:12] decision-making, and strain important relationships, or create chronic stress can be almost as damaging as a financial blowup itself. The first goal of trading is not getting rich. It is survival.
+
+[05:23] Most traders never even make it to the point where skill can compound because they blow themselves up first. Trading is one of the few professions where a single catastrophic mistake can erase
+
+[05:33] years of progress. The market only has to kill you once. What makes drawdowns so dangerous is that recovery math becomes exponentially harder the deeper the loss gets. A 50% drawdown requires a
+
+[05:46] 100% return just to get back to break even. An 80% loss requires a 400% gain, and a 90% loss requires 900%. Most people intellectually understand this, but very few emotionally respect
+
+[06:01] how devastating those large losses really are. This is also why leverage destroys so many traders. Leverage magnifies not only returns, but the probability of ruin. Most traders
+
+[06:11] drastically underestimate drawdown risk because during good periods compounding feels magical. But compounding works both ways. Just as gains can snowball upward, losses can spiral downward with
+
+[06:22] equal force. The problem is that once losses get too large, mathematics starts working against you in an awfully brutal fashion. Many of these ideas are reflected in concepts like the Kelly
+
+[06:33] criterion, which is essentially attempts to determine the mathematically optimal amount of capital to risk based on edge and probability. We will get deeper into that formula later, but the key takeaway
+
+[06:44] is not the formula itself, but the principle underneath it. Overbetting can kill you. Even if you have a real advantage, sizing too aggressively introduces such large volatility and
+
+[06:54] drawdown risk that the odds of eventual ruin skyrocket. Ironically, many traders blow up at near peak confidence, not peak fear. After large winning streaks, people begin extrapolating recent
+
+[07:05] success indefinitely into the future. Risk feels lower precisely when it's often the highest. That's when our position sizes expand, our discipline weakens, and traders begin believing
+
+[07:15] they are safer than they really are. That combination of leverage, confidence, and complacency is what wipes out many otherwise talented traders. Once you've decided though what
+
+[07:24] your unacceptable outcomes are, that's the first step, and then you can then start to set risk rules around them. One of the most important things to understand about risk management is that
+
+[07:34] it is inherently iterative. No trader sits down on day one and magically constructs the the framework. Risk management is refined over time through experience, mistakes, observation, and
+
+[07:46] adaptation. Some lessons come from paying your own tuition. You're taking losses, you're violating our rules, and you run into risks that you weren't even yet aware existed. But, the truly
+
+[07:55] intelligent traders also learn from the mistakes of others so that they do not need to personally experience every catastrophic outcome themselves. Every major blowup in market history contains
+
+[08:06] lessons. Every trader who imploded from leverage, emotional decision-making, concentration risk, ego, or complacency, they leave behind warnings for those willing to study them. Over time, good
+
+[08:16] risk management becomes less about theory and more about pattern recognition. You begin identifying which situations historically lead to disaster, both in yourself and in
+
+[08:25] others, and then you slowly build rules and safeguards around those vulnerabilities. In many ways, risk management is a process of continually discovering where you are fragile, and
+
+[08:35] then systematically reinforcing those weaknesses before they become fatal. To use the phrase of Nassim Taleb, the best traders are anti-fragile. Their losses don't ruin them, and in fact, their
+
+[08:46] losses make them stronger because they learn from them and adapt. This is one reason I believe that studying both successful traders and failed traders is so valuable. The market is constantly
+
+[08:56] showing us examples of risks we have not yet considered. We can either learn those lessons cheaply through observation or expensively through experience. Now that we've established
+
+[09:05] what risk management actually is, why it's personal, and what outcomes are trying to avoid, and why risk management is a constantly evolving process, let's start building the actual framework
+
+[09:15] itself. I break risk management into two categories: offensive risk management and defensive risk management. We're going to start with defensive. The most common defensive tool in the toolkit for
+
+[09:25] traders is setting hard loss limits and guardrails around the outcomes that are unacceptable to us. The best traders and institutions build systems and rules that reduce the probability of
+
+[09:36] catastrophic mistakes occurring in the first place. If it is good enough for Jane Street or Citadel or Point72, why do you think it should not be utilized by you as well? Essential to these
+
+[09:46] guardrails for the retail trader is setting hard daily and weekly drawdown limits. At a certain point, losses begin affecting psychology, objectivity, and your decision quality. A trader who's
+
+[09:58] deeply frustrated, tilted, or revenge trading is no longer operating with the same expected value as they normally would. Because of this, many traders create predefined rules around maximum
+
+[10:08] daily loss, maximum weekly drawdown, or mandatory cooling off periods after large losses. The purpose is not just about protecting capital. It's protecting decision-making quality
+
+[10:19] during periods where emotions begin compounding risk. Professional frameworks also create rules around position sizing and aggregate exposure. This includes maximum position caps,
+
+[10:29] maximum percentage of account exposure per trade, and limits on how much total capital can be concentrated traded one theme, sector, or correlated group of positions. A proper framework therefore
+
+[10:40] sets rules not just around individual position size, but also around total exposure to different risks like overnight risk or event risk. A truly professional framework also includes
+
+[10:49] rules around mental and physical state. This is an area retail traders often completely ignore despite it being massively important. Many elite traders create filters around sleep, fatigue,
+
+[10:59] illness, emotional stress, distraction, or psychological instability because they recognize their decision-making quality materially deteriorates under those conditions. Some traders, like
+
+[11:10] myself, reduce size or avoid trading altogether after poor sleep. The core principle is recognizing that risk is not purely market-based. This is why institutional firms and prop firms often
+
+[11:21] implement layers of controls far beyond simple stop losses. Some firms have automatic lockouts after certain drawdowns, others enforce strict concentration limits, exposure caps,
+
+[11:31] overnight restrictions, or mandatory risk reviews. These systems exist because even highly skilled traders are still human beings vulnerable to emotion, overconfidence, fatigue, and
+
+[11:41] poor judgment under stress. Again, if some of the best institutional trading firms in the world are using these practices, why as a lone retail trader are you not doing everything in your
+
+[11:50] power to emulate that environment? The goal of these risk rules is not simply to define how much you can lose, but to determine exactly what actions you will take if and when those limits are
+
+[12:00] reached. The more objective and rule-based the framework is, the easier it becomes to follow. Here are two basic examples of what these rules might look like. For example, an intraday trader
+
+[12:10] might have a daily loss limit of $2,500, a weekly loss limit of $7,500, and a monthly loss limit of 15 grand. Their rules could state that if they lose $1,500 in a day, they must immediately
+
+[12:21] cut all position sizes by 50%. If they reach their $2,500 daily loss limit, they must close all positions and stop trading for the remainder of the day. And if they reach their weekly loss
+
+[12:31] limit, they must trade at half size for the following week while reviewing their trades and identifying mistakes. If they reach their monthly loss limit, they must stop trading entirely for several
+
+[12:40] days, conduct a thorough review of their performance, and return with minimum size until they demonstrate consistency again. Because this trader specializes in intraday trading, they may also have
+
+[12:50] a rule that no positions can be held overnight under any circumstances. A swing trader may use a different framework because overnight exposure is a core part of their strategy. For
+
+[12:59] example, they might allow 5% drawdown from their portfolio high before taking defensive action, and a 10% drawdown before entering a full risk reduction mode. Their rules could state that if
+
+[13:10] the portfolio declines by 5%, all positions must immediately be reduced by 50%. If the drawdown reaches 10%, they must exit all non-core positions, move primarily to cash, and spend time
+
+[13:20] reassessing market conditions before putting significant risk back on. Swing traders may also have overnight exposure rules stating that no single position can exceed 20% of the portfolio and that
+
+[13:31] total overnight exposure cannot exceed 100% of account equity. If either limit is breached, positions must be reduced before the market closes. They may also require themselves to cut overnight
+
+[13:41] exposure by half ahead of major events such as earnings, FOMC meetings, or elections. Notice that these frameworks are built around specific if-then rules. If a certain loss threshold is reached,
+
+[13:52] a predefined action automatically follows. This removes discretion during periods of stress and protects traders from emotional decision-making. It ensures that a temporary setback does
+
+[14:02] not become a career-threatening drawdown. Note that even the different needs of a purely intraday trader versus a swing trader highlights just how customized a risk process needs to be.
+
+[14:11] Before we move on, I want to introduce one concept that has become increasingly important in my own trading. Having a hierarchy of risk rules. Not all risk rules are equally important. Some rules
+
+[14:22] are flexible, others are not, and under standing the difference can be critical. Part of what makes the topic of risk management so complex is that the dynamic nature of markets requires
+
+[14:32] traders to have a lot of flexibility in their rules. Part of our advantage as a discretionary trader over systematic traders is that we can respond quicker and more effectively to situations that
+
+[14:43] might not have been seen before. That is why I think an optimal risk management system has a hierarchy of risk rules with some being far more flexible than others and some rules being truly
+
+[14:53] unbreakable if you want to protect yourself from ruin. On that lower hierarchy of risk rules, there are absolutely times in a trade where I might move my stop or not have a stop or
+
+[15:03] there might even be days where I increase my risk beyond my predefined risk limit. A certain level of flexibility is needed to adapt and maximally capitalize. But there are
+
+[15:13] other rules that I am dramatically less flexible on. These are the rules designed to prevent the unacceptable outcomes. These are the account survival rules around maximum drawdowns and
+
+[15:22] avoiding catastrophic losses. In other words, I'm comfortable being flexible where mistakes are recoverable if it allows me to better capitalize on discretionary situations. What I don't
+
+[15:33] want is that flexibility bleeding into the bigger picture rules that protect me from myself. I am not comfortable being flexible where mistakes can be existential. The goal of risk management
+
+[15:43] should not be to eliminate discretion. The goal is to make sure discretion never becomes catastrophic. With that higher-level understanding of risk rules, let's now dig down to our
+
+[15:53] day-to-day risk management tools. Up to this point, we've largely been discussing risk management at the account and framework level. We've talked about defining unacceptable
+
+[16:01] outcomes, understanding risk of ruin, and creating larger picture rules that protect us from ourselves. But eventually, every trader arrives at the trade level. And once we get to the
+
+[16:10] trade level, one of the most common risk management tools is the stop-loss. A stop-loss is the trigger that will lead you to exit your position and lock in your loss. As you might imagine,
+
+[16:20] stop-losses are one of the most universal topics in all of trading. Most traders utilize them on every trade they take. In fact, one of the most famous risk management quotes on stop-losses
+
+[16:29] comes from Bruce Kovner in Market Wizards. "Whenever I enter a position, I have a predetermined stop. I know where I'm getting out before I get in. It's the only way I can sleep." One of the
+
+[16:39] most important distinctions in trading risk management is a difference between a mental stop-loss and a hard stop-loss. A hard stop-loss is an actual order entered into the market that will
+
+[16:49] automatically exit your position once price reaches a predefined level. A mental stop-loss, on the other hand, is discretionary. You're telling yourself that you intend to get out at a certain
+
+[16:58] price, but no actual order exists in the market. The execution relies entirely on your discipline, emotional control, reaction speed, and ability to process information in real time. Neither is
+
+[17:10] inherently correct in every situation. Hard stops provide certainty and protection against hesitation, emotional paralysis, or catastrophic tail events. They are especially valuable for newer
+
+[17:21] traders, highly emotional traders, or situations where one cannot actively monitor positions. However, hard stops can also expose you to temporary dislocations and situations where you
+
+[17:31] are mechanically removed from an otherwise valid trade. Mental stops offer flexibility. They allow experienced traders to interpret the context, tape, liquidity, and news flow
+
+[17:41] before exiting. Sometimes a level briefly trades through and immediately reclaims. Sometimes the manner in which a level breaks matters more than the level itself. A trader using mental
+
+[17:51] stops may avoid unnecessary exits and improve overall expectancy. The problem is that mental stops require extremely high levels of discipline because the human brain is exceptionally good at
+
+[18:02] rationalizing losses once money's on the line. Many traders claim to use mental stops when in reality they simply do not have stops. Regardless of whether the stop is mental or hard, the critical
+
+[18:12] concept is that every professional trade should generally have a predefined point where the trade thesis is invalidated. Without that point, you cannot truly quantify your risk. And if you cannot
+
+[18:22] quantify risk, you cannot properly calculate expected value. Expected value in trading is essentially the mathematical expectation of a trade over many repetitions. What makes stop losses
+
+[18:32] so important is that your loss when wrong is often the one variable you can know with relatively high confidence before entering the trade. Your potential reward is almost always an
+
+[18:42] estimate. Your win rate is often an estimate. But if you define your stop properly, you can usually know very closely what you stand to lose if the setup fails. That is huge because it
+
+[18:51] allows position sizing to become more objective. If you know your stop is $1 away, and you're willing to risk $500, then your size becomes straightforward. You need 500 shares. If your stop
+
+[19:03] suddenly widens to $5, your position size must shrink accordingly. You only need 100 shares. The stop is what converts abstract trade ideas into measurable risk. In many ways, this is
+
+[19:14] why technical analysis and expected value are so deeply connected. Charts are not just random drawings. Good technical setups help define logical invalidation points, and those points
+
+[19:24] are, from a theoretical perspective, where your expected value goes negative. As traders, we never ever want to have any exposure when expected value is negative. If you don't understand that,
+
+[19:35] make sure you check out this video I made on the subject. I'd be remiss if I didn't mention one other type of stop some traders use, a time stop. A time stop is a risk management rule where you
+
+[19:44] exit a trade not because price hit your stop loss, but because the trade has not worked within the expected amount of time. In other words, if this setup is valid, it should start working by X
+
+[19:54] amount of time. If it doesn't, I'm out. A normal stop answers, "How much price pain am I willing to take?" Whereas a time stop answers, "How long am I willing to wait for the thesis to prove
+
+[20:04] itself?" The reason why time stops matter is that many good trades should have a certain pace, particularly in breaking breaking news trades. My thesis is that the news is a huge deal. If the
+
+[20:13] market isn't catching on within minutes, I'll often exit rather than wait for my stop. Similarly, one of my most important trading heuristics is that your best trades work immediately. If a
+
+[20:23] trade isn't working at all, over time I do start to reduce size or just cut it. So, in a small subset of trades, I do use time stops. So, does that mean you always need to use a stop? Well,
+
+[20:34] actually no. Even this is personal. Fundamental value investors like Warren Buffett and even famous traders like Market Wizard Chris Camillo do not use price stops. Instead, their stop is if
+
+[20:45] their thesis is disproved rather than a certain dollar loss amount. Before I move on to position sizing, though, it's important to recognize that stop losses are not perfect. In practice, markets
+
+[20:54] can have price gaps, halts, breaking news, and misfills. Sometimes we find ourselves in situations where the market is already moved dramatically beyond our intended risk level. That raises an
+
+[21:04] important question. George Coyle, co-author of the recent Market Wizards book that I was featured in, asked me this. What do you do if price blows way past your stop? The reality of trading
+
+[21:13] is that this can occur for any assortment of reasons. So, what does one do? I think most people would assume my answer is that you get out, no questions asked. However, that would be wrong.
+
+[21:23] There are times where you are caught offsides. But, closing out the trade at a certain price might genuinely feel crazy and actually have immense negative expected value. In an optimal world,
+
+[21:34] expected value should drive every trading decision we make. So, if we gap way down and massively overshoot my stop, but I would actually be buying the stock if I were flat, why would I
+
+[21:44] automatically want to sell? The one disclaimer to this is if it violates a larger overarching risk rule, meaning the trade going further against you would create a loss that you simply are
+
+[21:53] not willing to take. In practical terms, assuming that is not the current situation, I try my best to imagine I am completely flat the position and then objectively handicap the expected value
+
+[22:03] from that point forward. If I genuinely believe the expected value is hugely positive, I may continue holding position or even increase my size. However, I will establish a new hard
+
+[22:13] stop based on the amount of additional risk I'm willing to tolerate. In other words, the original stop may have failed, but that does not mean risk management disappears. This is one of
+
+[22:22] the reasons why I spent so much time earlier discussing larger account level risk rules and the hierarchy. In my mind, there's a huge difference between violating a trade level rule and
+
+[22:31] violating an account level rule. I may be flexible on trade management if expected value justifies it, but I am far less flexible when it comes to rules designed to protect my psychology, my
+
+[22:41] capital, and my long-term survival. That's the beauty though of this topic. In practice, these situations are personal and complex. Risk management is rarely as simple as blindly following a
+
+[22:50] checklist. If we can't always rely on stop-losses, that poses another question. What other tools or concepts can we utilize to keep ourselves safe? The next one I want to present is
+
+[22:59] position sizing. A stop-loss helps define risk. Position sizing determines whether that risk is survivable. If you're properly sized, gaps, halts, and unexpected adverse events are usually
+
+[23:10] survivable. If you're improperly sized, even the best stop-loss in the world may not save you. As important as stop-losses are, I would argue that position sizing is actually the more
+
+[23:20] powerful risk management tool. In fact, those successful traders and investors like Buffett and Chris Camillo that don't even use traditional stop-losses, they use position sizing. This is
+
+[23:29] because position sizing determines how much damage a mistake can do before it ever occurs. Position sizing is one of the single most important risk management tools in trading because no
+
+[23:37] matter how skilled you are, no matter how good your setup is, no matter how much research you have done, you are never eliminating risk. Markets are full of risks that exist beyond your stop.
+
+[23:47] You're always exposed to variables you cannot fully control. Halt risk, gap risk, and more. It's important to note, these are not black swan events. These are normal market realities. Traders
+
+[23:57] often think catastrophic outcomes only happen once every decade. But, severe slippage, violent gaps, and halted names happen far more frequently than most inexperienced participants realize,
+
+[24:07] which is precisely why position sizing matters so much. Position sizing is what determines whether an unexpected event becomes survivable or career-ending. A trader who's oversized can be correct on
+
+[24:18] their thesis and still blow up because the path the market took was too violent for their account to withstand. Meanwhile, a properly sized trader can survive adverse outcomes, even the black
+
+[24:27] swans, long enough for their edge to play out over hundreds or thousands of trades. Almost any position can be made safer by making it smaller. Likewise, almost any position can be made
+
+[24:38] dangerous by making it large enough. One general rule regarding position sizing is that as traders, we need to be far more conservative when sizing our shorts versus our longs. Let me explain. One of
+
+[24:48] the realities of long-only trading is that even if a trader does not use a hard price stop, they can still theoretically quantify maximum risk in an extremely conservative way. Why?
+
+[24:57] Because this stock can only go to zero. If you buy $10,000 worth of a stock, your worst possible outcome is losing that $10,000. That may still be catastrophic depending on account size,
+
+[25:07] but importantly, the downside is finite and mathematically knowable. In other words, even without a predefined stop loss, a long only trader can always size positions under the assumption that the
+
+[25:18] stock could completely collapse. That possibility is precisely why long only exposure, while dangerous, is still fundamentally more controllable from a tail risk perspective than short
+
+[25:28] selling. Short selling completely changes this equation. When you short a stock, your gains are capped at 100%, but your losses are theoretically infinite because the stock can continue
+
+[25:38] rising indefinitely. Many inexperienced traders hear that phrase and dismiss it as some abstract textbook concept. It is not abstract at all. Markets have repeatedly demonstrated that upside
+
+[25:48] dislocations can become so violent that price totally breaks from reality and can blow your account in a blink. This becomes especially dangerous shorting micro caps where liquidity is thin and
+
+[25:59] reflexive squeezes can feed on themselves. We have seen names like the ticker ZJYL gap hundreds of percent higher in shockingly short periods of time. These were not just funny charts
+
+[26:09] on social media. These events blew up traders, bankrupted accounts, and severely crippled even some highly experienced traders. I personally know a handful of traders whose careers and
+
+[26:18] financial lives were materially damaged by moves like these. And importantly, this danger is not isolated to obscure penny stocks. Even larger market cap companies can become extraordinarily
+
+[26:29] dangerous on the short side. Avis Budget Group became one of the most recent examples of a modern squeeze where momentum, limited float dynamics, and forced covering created a near vertical
+
+[26:39] move. More broadly, any company has some news that could catapult the stock multiples higher where any company can theoretically receive a buyout offer at a huge premium to its prevailing market
+
+[26:49] value. A stock trading at $5 can suddenly open at 15, 30, or even higher with absolutely no opportunity to exit beforehand. This is why shorting is always magnitudes more dangerous and
+
+[27:00] complex than simply being long stock. Longs have capped downside and unlimited upside. Shorts have capped upside and theoretically unlimited downside. That asymmetry fundamentally changes how risk
+
+[27:11] management frameworks must be built. As traders scale larger over time, this becomes even more important. Small tail risks that are survivable at lower size can become existential threats when
+
+[27:22] leverage and larger sizing are introduced. Many traders appear highly successful for years while quietly carrying enormous hidden tail exposure until one abnormal event permanently
+
+[27:32] wiped out a massive percent of their capital. This is why the best risk managers obsess over survival. They understand that trading is not merely about returns. It's about ensuring that
+
+[27:42] no single event and no single position can permanently remove you from the game. There is one more defensive tool I want to emphasize. I'd say it really might be the most powerful tool for the
+
+[27:51] retail trader. Most traders think of risk management purely through the lens of stop losses, position sizing, or portfolio exposure. But wiring out profits might be one of the most
+
+[28:00] overlooked forms of risk management for retail traders. The trader graveyard is full of tens of thousands of people who found initial success in markets, became overconfident, and never wired out funds
+
+[28:11] to diversify away from just their trading risk. Money inside a trading account is psychologically different from money outside of it. A common phrase in trading is that unrealized
+
+[28:20] profits don't count until you close the position. A corollary of that should be that profits don't count until you've either been paid out on them if you're at a prop firm, or wired that money out
+
+[28:29] of the account, because it is still at risk, especially for retail traders. One bad day or one bad trade can wipe out years of progress. That's why wiring out profits can be such an important tool.
+
+[28:39] Once capital leaves the trading account and is moved into passive investments or cash, that money is no longer directly exposed to your trading decisions. In many ways, wiring out profits creates a
+
+[28:49] psychological firewall between your speculative self and your long-term financial future. Another benefit of wiring money out is that it is one of the few things that truly protects
+
+[28:58] against black swan events. I mentioned position sizing earlier as one protection, but the truth is that any money in a trading account is theoretically at risk. By definition,
+
+[29:07] you cannot fully eliminate black swan risk, but position sizing, wiring out profits, and being especially careful when shorting are among the best defenses available. Many successful
+
+[29:17] traders, like my friend Alex Temes, who I interviewed in this video, have openly discussed how wiring out profits regularly has been one of the best decisions they ever made. Beyond the
+
+[29:26] obvious financial protection, it creates enormous psychological stability. There is tremendous peace of mind in knowing that regardless of what happens tomorrow, a meaningful portion of your
+
+[29:35] gains have already been permanently secured, your quality of life will not be impaired. That psychological stability is often underestimated by beginner traders. Traders who know they
+
+[29:45] protected wealth outside the market often trade calmer, clearer, and more rationally. Ironically, having less capital in the account can sometimes improve decision-making because the
+
+[29:54] trader is no longer subconsciously defending an ever-growing pile of unrealized financial gains and their identity. There's no universally correct framework for when traders should wire
+
+[30:03] out profits because risk tolerance and account size, financial goals all differ. What do these wiring out rules look like in practice? Here are a few ideas. Withdraw all capital above a
+
+[30:13] predetermined account size, withdraw 25% of profits at the end of every month, or withdraw 50% of any profits made above a new all-time high in account equity. And with those tools having been discussed,
+
+[30:24] now we get to the fun part, the offensive side of risk management. Up until this point, we've largely been discussing defensive risk management, how we limit losses and protect our
+
+[30:33] accounts from catastrophic outcomes. Those are all incredibly important questions, but they only represent half of risk management. The other half is maximizing our best opportunities. One
+
+[30:43] of the biggest misconceptions in trading is that good risk management means always being conservative. In reality, that could not be further from the truth. Good risk management is not about
+
+[30:52] minimizing risk at all costs. It's about allocating risk intelligently. Many struggling traders unknowingly play permanent defense. They become so focused on avoiding losses that they
+
+[31:03] never properly capitalize on their biggest edges. They size everything similarly, hesitate in high conviction moments, and treat mediocre setups and elite setups almost identically. But, if
+
+[31:14] your edge is real, that approach is mathematically flawed. As Mike Bellafiore of SMB Capital has emphasized for years to his traders, your job is not merely to avoid losses. Your job is
+
+[31:26] to risk aggressively within your risk frameworks when your very best A+ opportunities appear. Trading is not a game where equal risk should be allocated equally across all situations.
+
+[31:37] The best traders understand that markets are highly asymmetrical. Most opportunities are mediocre. A small percentage are exceptional. And it is those exceptional situations that often
+
+[31:48] drive the majority of long-term performance. Many of the traders with the best equity curves are not the traders who constantly play small. They're the traders who stay disciplined
+
+[31:58] and controlled during average conditions, but become highly aggressive when high expected value opportunities emerge. They understand when conditions are unusually favorable and are willing
+
+[32:08] to press hard when the probabilities shift in their favor. Poker offers an excellent analogy for this concept. Imagine you are an elite poker player who is always excessively conservative
+
+[32:20] regardless of hand quality. Even when dealt pocket aces, statistically one of the strongest starting hands possible, you refuse to size up or press your advantage. Over time, despite playing
+
+[32:30] safe, you will almost certainly lose because you are failing to maximize your expected value during your highest best situations. Professional poker players understand that survival alone is not
+
+[32:41] enough. They must aggressively capitalize when probabilities are strongly in their favor because those moments disproportionately determine long-term profitability and trading is
+
+[32:51] no different. If a trader risks the same amount on mediocre setups as they do on elite setups, they are failing to properly align capital allocation with expected value. In many ways, one of the
+
+[33:02] defining characteristics of elite traders is not simply their ability to avoid bad situations, but their ability to recognize when conditions are extraordinarily favorable and
+
+[33:12] meaningfully increase their exposure. Of course, this must always be within a robust risk management framework. Aggression without discipline is recklessness. The goal is not blind
+
+[33:23] gambling or emotional oversized trading. The goal is calculated aggression backed by experience, preparation, statistical understanding, and defined downside. This is also why many traders struggle
+
+[33:35] when they become overly traumatized by losses. They become so psychologically focused on defense that they lose the willingness to properly attack opportunity. But trading is not a sport
+
+[33:45] where you can win purely by avoiding mistakes. At some point, you must score. The question then becomes, how much more should you risk when the opportunity is exceptional? That brings us to one of
+
+[33:56] the most famous concepts in all of risk management, the Kelly criterion. If good risk management means taking full advantage of our best opportunities, then a natural question emerges. How
+
+[34:06] much more should we actually risk? Shouldn't there be some mathematical formula that tells us exactly how much to bet? Many traders have asked this exact question and unsurprisingly, many
+
+[34:16] quants have tried to answer it. One of the most famous quantitative position sizing models is this Kelly criterion, which attempts to calculate the mathematically optimal amount of capital
+
+[34:26] to allocate to a trade based on an expected value. In theory, this sounds appealing. If you have a larger edge, you should risk more. If you have a smaller edge, you should risk less.
+
+[34:34] Conceptually, I strongly agree with that. In fact, much of my own philosophy around risk management is built around the idea that larger edges deserve larger bets. The problem is that these
+
+[34:44] formulas often break down in practice. First, they require estimating inputs such as win rates, payoff ratios, and expected value with the level of precision that most traders simply do
+
+[34:54] not possess. Markets are constantly changing, and even small errors in these assumptions can lead to dramatically different sizing recommendations. More importantly, these formulas are rarely
+
+[35:04] personalized to the individual trader. A position size that may be mathematically optimal for one person may be psychologically intolerable for another. Risk management is ultimately personal.
+
+[35:15] Factors such as financial circumstances, your resilience and experience level, and your trading objectives all matter. A formula cannot adequately account for these differences. This highlights a
+
+[35:25] broader challenge with many quantitative risk models. They often optimize for theoretical returns rather than actual real-world execution. A risk model is only useful if you can consistently
+
+[35:36] follow it. And in practice though, this sizing creates drawdowns that cause fear, hesitation, and second-guessing, which leads to deviations from the plan. Then the formula has failed regardless
+
+[35:46] of what the math says. This is one of the biggest reasons why I don't use any quantitative risk formulas in my own trading. While I appreciate the concepts behind them, I believe risk management
+
+[35:56] is too personal and markets are too dynamic to be reduced to a single equation. Ultimately, I care far more about finding a sizing framework that I can actually execute consistently than
+
+[36:06] one that is theoretically optimal on paper. A formula that works in a spreadsheet but breaks down in real life isn't particularly useful. Instead, position sizing should reflect both the
+
+[36:16] opportunity and the individual taking the risk. And while I don't use formal quantitative risk formulas, I am a huge believer in something closely related, dynamic bet sizing, which is a topic I
+
+[36:26] made especially popular for retail traders through Twitter. And this concept is that larger edges deserve larger bets. And I fully explain it in this video. In fact, one of the biggest
+
+[36:35] mistakes traders make is treating every opportunity as though it deserves the same amount of risk. Markets don't work that way. Some opportunities have little edge, others have massive edge. And so
+
+[36:45] if expected value varies across opportunities, then your position sizing should vary as well. One of the ways I personally implement this is through my daily report card process. Every day I
+
+[36:53] evaluate the opportunity set in front of me and assign an overall risk level for the day. On slower days, I may be trading very small. On normal days, I may be trading my baseline size. And on
+
+[37:03] highly opportunistic days, however, I may be risking dramatically more. In some situations, I might be risking 10 times more than I would on a slow day. And in rare situations, I might even be
+
+[37:14] risking 100 times more. Now, as you've probably gotten the feel of already, risk management is not always some perfect thing in practice. What happens when it's a slow day and out of nowhere
+
+[37:24] something crazy happens? That's why practical risk management for traders often involves being flexible. My risk management has always involved a ton of subjectivity in real time and
+
+[37:34] adaptability while also sticking to those bigger picture hard rules on losses and drawdowns. If opportunity suddenly explodes, I want the flexibility to increase risk. If
+
+[37:44] conditions deteriorate, I want the flexibility to decrease risk. In other words, I don't mind using flexibility in intraday long as I'm not violating those bigger picture rules.
+
+[37:56] This distinction is so important and it's something we'll revisit repeatedly throughout this video. Some risk management rules should be highly flexible, others should be almost
+
+[38:04] completely rigid. And that brings us to another critical component of risk management, recognizing when the environment itself is changed. One of the most important and difficult skills
+
+[38:13] traders must develop is recognizing when the environment calls for offense versus defense. Markets are not static. Conditions constantly evolve. There are periods where opportunity is abundant,
+
+[38:23] volatility and moves are clean, and the liquidity is favorable to really sizing up. There are other periods where conditions are choppy, uh the moves are random and slow, and it's just simply
+
+[38:33] incompatible with your trading strategy. Great risk management requires understanding that difference. Many traders make the mistake of trying to force offense in defensive environments.
+
+[38:43] They feel pressure to produce daily P&L and maintain their consistency, or they're just emotionally trying to stay in the game. But, one of the harsh realities of trading is that there are
+
+[38:50] periods where the best trade is no trade at all. Sometimes the highest expected value decision is simply sitting on your hands. This is especially true in slow markets or markets where your specific
+
+[39:01] edge is absent. If you're an intraday momentum trader and nothing is moving cleanly, aggressively forcing trades may simply mean donating money through commissions and frustration and
+
+[39:10] exhaustion. If all of a sudden your setup stop falling through, continuing to trade aggressively simply because you're accustomed to activity can be super destructive. Professional traders
+
+[39:20] understand that preserving mental capital is just as important as preserving financial capital. In fact, sometimes the best form of risk management is shifting entirely from
+
+[39:28] offense into research and development mode. Instead of forcing mediocre trades, traders can spend time reviewing tape, studying historical setups, refining their systems, and journaling
+
+[39:38] their mistakes. You can even spend this time improving your watch lists, testing ideas, or just mentally resetting and taking a break. Those periods may not feel productive in the short term
+
+[39:48] because no money's being made, but over the long run they're often critical to longevity and growth. This becomes even more important during slumps. One of the worst things traders can do during
+
+[39:57] periods of poor performance is try to increase their trading activity in an attempt to immediately recover losses. When you lose confidence, so often traders begin overtrading. They search
+
+[40:07] for certainty and a recovery that doesn't exist, and they start forcing setups. But, if the market environment is poor and the trader themselves is mentally compromised, that combination
+
+[40:16] can just be so damaging. Sometimes defensive risk management means reducing size dramatically. Sometimes it means only taking A+ setups, and sometimes it means shortening your holding times. And
+
+[40:26] sometimes it also means just not trading at all until conditions improve or your confidence is back. This is one reason many elite traders think in terms of market conditions rather than just the
+
+[40:36] individual setup. They understand that edge expands and contracts over time. There are environments where pressing aggressively is appropriate because the market's rewarding that style. And there
+
+[40:45] are environments where survival and patience matter way more than the short-term profits. The irony is that inactivity often feels psychologically harder than trading. Humans naturally
+
+[40:55] want action, especially ambitious and competitive traders that are drawn to markets. But discipline is not merely the ability to execute trades. Discipline's also the ability to not
+
+[41:04] trade when the conditions are unfavorable. Ultimately, strong risk management it's not about being permanently aggressive or permanently conservative. It's about adaptation. The
+
+[41:13] best traders survive because they understand when to attack aggressively and when to preserve capital, confidence, and wait patiently for conditions to change. If this topic of
+
+[41:22] bet sizing interests you, be sure to watch this long-form discussion I did with Kyle Williams. Now that we have discussed defensive risk management and offensive risk management, we now need
+
+[41:31] to address the elephant in the room. Our psychology and how it affects our risk taking. Robust risk management systems are often designed just as much to protect traders from themselves as they
+
+[41:42] are to protect us from the market. Markets are emotional environments that constantly trigger some of the strongest psychological biases humans possess. And the dangerous part is that these biases
+
+[41:51] often become strongest precisely when risk is highest. Tilt is one of the clearest examples. After a frustrating loss or a missed opportunity, traders often enter emotionally compromised
+
+[42:02] states where decision-making deteriorates. They begin forcing trades, revenge trading, and abandoning their process, prioritizing emotional relief over the expected value of their trades.
+
+[42:12] The problem is that traders on tilt rarely realize they are tilted in real time. This is why professional risk systems often include daily loss limits, cool down periods, mandatory breaks, or
+
+[42:22] reduced sizing after losses. The goal is not merely protecting the capital. It's protecting the trader from an emotional spiral. FOMO, or fear of missing out, is another major destroyer. Markets
+
+[42:33] constantly create the illusion that massive opportunities are slipping away every minute. You end up chasing extended moves, you enter late, abandon your game plan. You size too
+
+[42:42] aggressively because you can't emotionally tolerate watching others make money without you. Ironically, many of the worst losses that traders experience come not from their planned
+
+[42:51] trades, but from emotionally reactive trades they were never supposed to take in the first place. Strong risk management frameworks recognize that protecting traders from impulsive trades
+
+[43:00] is just as important as protecting them from bad analysis. Overconfidence may be even more dangerous because it often emerges during periods of success. After large winning streaks, traders begin
+
+[43:10] unconsciously believing they're seeing the market more clearly. During this period, blowups often occur not after periods of struggle, but these periods of extraordinary success because success
+
+[43:20] lowers psychological defenses. The trader stops fearing risk precisely when they should fear it most, which is why I dedicated this whole video to the subject. Anchoring is another incredibly
+
+[43:30] destructive bias in trading. Traders anchor to prior account highs, their P&L levels, even just anchor to prior market prices. A trader who once had a $2 million account may psychologically
+
+[43:40] refuse to accept operating at $1.2 million, even if objectively they are still wildly successful. This anchoring creates increasingly reckless behavior as traders attempt to get back to prior
+
+[43:51] peaks. Similarly, we anchor to stock prices themselves. A stock that traded at 100 can feel cheap at $40 despite fundamentally changing conditions. Markets do not care where a stock used
+
+[44:02] to trade. The comparison game has become dramatically worse in the social media era. Traders are constantly exposed to curated highlight reels of other traders making enormous gains, posting massive
+
+[44:12] P&L screenshots, or catching perfect entries. This creates immense psychological pressure to force returns. Traders end up no longer trading their own account, their own risk tolerance,
+
+[44:21] and their own edge. Instead, they begin subconsciously competing in a game they were never supposed to be playing. Risk management frameworks need to account for this because envy and insecurity can
+
+[44:31] ruin you. Moving goalposts is another dangerous bias. Traders often believe that achieving a financial milestone will financially trade satisfaction or safety. "Oh, once I make my first 100K,
+
+[44:42] then I'll reduce risk." But then it becomes 500K or a million, then 5 million. The target always moves. As wealth increases, lifestyle creep and psychological normalization often
+
+[44:51] increase alongside it. Traders who once would have protected life-changing money begin treating enormous sums casually because their perception adapts to their current reality. This is one reason many
+
+[45:02] traders never meaningfully de-risk even after extraordinary success. Robust risk management systems exist because human beings are not naturally wired for this type of decision-making under
+
+[45:13] uncertainty. Good risk systems create structures that protect you from periods where emotion, ego, and greed would otherwise distort your judgment. The best traders understand that risk
+
+[45:24] management is not simply about protecting against bad markets. It is about protecting against the predictable psychological weaknesses that emerge when money and uncertainty collide.
+
+[45:33] Anything that materially increases the probability of making poor decisions is ultimately a risk management issue. That is again why I utilize a daily report card to check in on myself and make sure
+
+[45:44] my risk is adapting to my sleep and psychological situation as well as the market opportunity set. Once we understand all these concepts, we can finally start putting them together into
+
+[45:53] a practical framework. At this point, we've covered a tremendous amount of ground. We've discussed stop losses, position sizing, drawdown, psychology, offensive and defensive risk management,
+
+[46:03] and even when to adapt to changing market conditions. The natural question becomes, what does all of this actually look like in practice? So, let me walk you through a sample. Let's say I've
+
+[46:13] done the reflections on my personal tolerances and current life situation. Blowing up an account is not an acceptable outcome for me. In fact, I've decided that I never want to lose more
+
+[46:21] than 50% of my trading account. While I do want to be aggressive when there are good opportunities, I want to take as little existential risk as possible. From there, I'm now going to set daily
+
+[46:31] and monthly loss limits. In 1 month, I don't want to lose more than 20% of my account. If I ever draw down more than 20%, it means I must take an immediate 3-day break to cool off and study what
+
+[46:41] has gone wrong. From there, I must reduce my trading size by 50%. If I lose 10% more of my account, I must take a 1-week break. From a daily perspective, I never want to lose more than 10% of my
+
+[46:52] account. Yes, that's pretty aggressive, but let's assume for this avatar that I'm a solid home run trader, and sometimes I'm okay swinging the bat hard. Additionally, I never want to have
+
+[47:00] more than 50% of my account in any given trade, nor do I want 50% of my account exposed to any given theme. If it's a short position, I'll never have over 25% of my account in any given position, and
+
+[47:12] I will never overnight a microcap stock that's more than 2% of my account. Other risk rules might include that I must complete a daily report card each morning before I start trading. If my
+
+[47:21] subjective pre-market temperature check is a C, I will reduce my risk by 50%, and if my pre-market temp check is a D, I will reduce risk by 80%, and if it's an F, I'm not going to trade that day at
+
+[47:32] all. I'm only going to do productive work or recover. I can then break down each of the stop losses for every strategy in my playbook. That way, I know exactly where my out is before I
+
+[47:41] get in. At the end of each month, I will wire out 50% of my profits above my high water mark. Going through all these steps allows you to build a basic risk management foundation. To be clear, this
+
+[47:51] is far from comprehensive, but it is a pretty solid start. As I said before, developing these rules will be an iterative process. Now, keep in mind that you never want risk management
+
+[48:00] rules so complex that you can't follow them in real time. If you have a 200-page rulebook with infinite window cases, you are never going to be able to apply that appropriately in the heat of
+
+[48:09] the battle. There is a trade-off between having a robust system versus one that can account for literally every situation imaginable. You need to find the balance that works for you. The
+
+[48:18] purpose of this example wasn't to give you the perfect framework. In fact, that would be impossible because, as we discussed throughout the video, risk management is personal. Your drawdown
+
+[48:26] limits, position limits, sleep rules, and sizing may look completely different from mine. The point is not the exact numbers. The point is the process and the things to consider. You want to
+
+[48:35] identify the outcomes that are unacceptable to you, build rules around those outcomes, and refine those rules through experience, and then continue adapting as both you and the market
+
+[48:44] evolve. Which brings me to one of the most important points about risk management. If there's one thing I hope you take away from this video, it's that risk management is not about avoiding
+
+[48:52] risk. Risk is unavoidable. This is true in trading and in life. The moment we decide to participate in markets, we are accepting uncertainty. We are accepting that losses will happen, drawdowns will
+
+[49:01] happen, and we will make mistakes. Recently, it came out on social media that Chris Camillo had a 70% drawdown, and that Christian Kaelin Maggie had a 50% drawdown. Many have asked my
+
+[49:11] thoughts on those drawdowns. When I see something like this, it actually doesn't surprise me nor mean that much to me. For starters, there are traders that have had astronomical returns. They do
+
+[49:21] that through aggressive bets and high risk tolerance. As an outsider, I don't know their risk rules, their goals, or their actions that brought them there. But, I do know that by definition, in
+
+[49:30] order to win big, one must risk big as well. It's like when a trader asks me if leverage is good or bad. It's neither. It's just a magnifier once expected value. The only real question is whether
+
+[49:40] it's being deployed in a way that, over the long run, is likely to serve the trader's goals. I also hope this video challenged the idea that risk management is purely defensive. Many traders think
+
+[49:50] risk management is simply about avoiding losses, but some of the worst risk management I've ever seen comes from traders who never properly capitalize on their biggest opportunities. Trading is
+
+[49:59] not a game where we win simply by avoiding mistakes. At some point we need to take risk. At the same time, one of the reasons risk management is so difficult is that it is never finished.
+
+[50:08] Markets evolve and we evolve with it. Many of the best risk management rules I follow today came from mistakes that I made years ago. Others came from watching traders far smarter than me
+
+[50:17] make mistakes of their own. Perhaps the most humbling realization of all of this is that some of the biggest losses in market history come from risks that people didn't even realize they were
+
+[50:26] taking. It is often what you think you know, but don't actually understand that gets you into trouble. Ultimately, the purpose of risk management is longevity. The goal is not to maximize the outcome
+
+[50:36] of a single trade, a single day, or even a single year. The goal is to survive long enough for skill, experience, and discipline, and your good decisions to compound over time. The best traders
+
+[50:46] take losses, we all do. But the best traders also by definition, they're the traders who avoid the losses that take them out of the game entirely. If you can build a framework that protects you
+
+[50:55] from catastrophe and allows you to adapt as conditions change, will give you confidence to press aggressively when exceptional opportunities emerge, you will be far ahead of the vast majority
+
+[51:05] of market participants. Risk management isn't what prevents success in trading. Proper risk management is what makes long-term success possible in the first place. If you enjoyed this long-form
+
+[51:15] solo deep dive, which I haven't done before, let me know in the comments and let me know what other topics you would like me to address. And this video, it actually took me an absurd amount of
+
+[51:24] time to create. I asked you for what questions you wanted answered, and I incorporated all that feedback into the script. It took me dozens of hours. So, if you made it to the end, first of all,
+
+[51:33] you are a serious trader and I respect that. Please return the favor and just do a subscribe or share this video on social. It took me so much time. Thank you for watching, and I'll see you in
+
+[51:43] the next one. Mhm.

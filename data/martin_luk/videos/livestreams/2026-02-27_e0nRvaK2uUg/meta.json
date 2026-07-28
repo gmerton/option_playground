@@ -1,0 +1,19 @@
+{
+  "video_id": "e0nRvaK2uUg",
+  "url": "https://www.youtube.com/watch?v=e0nRvaK2uUg",
+  "title": "$IWM weakness | 27 Feb 2026",
+  "channel": "martinlukkt",
+  "channel_id": "UCB6jWJJvO_sWZ2PwgmMcxCw",
+  "stream_date": "2026-02-27",
+  "duration": "2:06:53",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

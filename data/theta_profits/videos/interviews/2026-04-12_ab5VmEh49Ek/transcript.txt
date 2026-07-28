@@ -1,0 +1,287 @@
+[00:00] And it's a way to synthetically set up either long stock position with about a 100 delta or conversely a short stock position with negative 100 delta using a lot less capital than you would
+
+[00:15] just buying or selling the stock outright. Today we are diving into a powerful options strategy that can replicate stock ownership with less capital and
+
+[00:27] defined risk, the zebra strategy. Welcome Fawzia Timberlay. Fawzia, tell us briefly first, what is the zebra trade and why do you trade it? So zebra stands for zero extrinsic back
+
+[00:42] ratio and it's a way to synthetically set up either long stock position with about a 100 delta or or conversely a short stock position with negative 100 delta using a lot less capital than you
+
+[00:59] would just buying or selling the stock outright. I'm very interested in learning more about this trade, but tell us first a little bit about yourself, especially as
+
+[01:09] an options trader. Okay, well, I was educated as an engineer, worked later had a career change and worked at a major wire house as a financial advisor and then
+
+[01:22] discovered tasty trade. And that was it. I never looked back. I love trading options. I learned everything I know from them. This was about 12 years ago. And where are you located?
+
+[01:34] I live in Las Vegas, Nevada in the United States. And what is it with options trading that's so attractive to you? Well, the biggest benefit of options
+
+[01:44] trading is the fact that you can control your exposure to the underlying, whether you want to be bullish or bearish or neutral or slightly bullish or slightly bearish. That's all under your control
+
+[01:58] using the strikes and the combination of them and also the financial leverage offered by trading options. You can have a small account and participate in movements of
+
+[02:11] expensive underlying using options. So we will dig into the details about the zebra trade, but before we do that, what do you want to achieve when you trade this strategy?
+
+[02:24] I'm hoping that So if I'm bullish, I would do a call zebra and that allows me to set up synthetically a long stock position. Sometimes I will also cover that position, so that's the same as a
+
+[02:39] covered stock position. The position moves one for one if the stock moves up in your direction using a lot less capital than you would just buying the stock outright.
+
+[02:52] So this using a lot less capital, that's the main advantage. I would say so, yes. So it allows people with smaller accounts to participate in movements of expensive underlying that
+
+[03:04] they normally would not be able to do. using options. Let's get into the basic rules of how you set up a zebra trade and achieve this stock
+
+[03:16] replication. Okay, so I'm just for the sake of our discussion unless you wanted otherwise, going to deal with the call zebra which is trying to simulate long stock or
+
+[03:28] about 100 delta or as close as you can be and remove all extrinsic value because that's what doesn't work in your favor as time goes by. You basically because you're making a
+
+[03:43] purchase, so I aim for low IV and I buy two in the money calls out in time and sell one at the money call and using that
+
+[03:59] combination to create a better 90 to 100 delta position with minimal extrinsic value. The further out in time you make this purchase, the more expensive it will be, but then you will have more
+
+[04:14] time to manage it and sell calls against it in the front months. So there is a trade-off. Let's before we go on explain, what do you mean by extrinsic value?
+
+[04:26] So that's the time value. All options that are out of the money have purely extrinsic value and options that are in the money have intrinsic plus some extrinsic value
+
+[04:40] also, unless you your deltas are so close to the actual stock value that the extrinsic is essentially zero. So I can show you with an example, but it's the extrinsic value that is the extra
+
+[04:59] we pay and that's what decays as time goes by. So we want to be sure that we buy as little of that as possible and and then sell calls against it if we want to reduce cost basis even further.
+
+[05:15] And you said you're trying to do this in a way that you end up with about 90 to 100 delta and just to remind the audience if you own 100 shares, you basically
+
+[05:28] have 100 delta, right? So this means that you are equivalent to positions that are more or less the same as owning 100 shares. That's right.
+
+[05:37] Let's look at an example to make this even clearer. So I have it set up on my platform. I use the tastytrade platform. I use the underlying Oklo, O K L O.
+
+[05:49] And as you can see in the bottom left corner of the screen, that's the trade box. I bought two May 40 calls and I sold one May 50 call. Notice that the extrinsic
+
+[06:04] is very small. And the normally, let me add that here, I would go out further in time, maybe June or July. Of course, I would pay more, right? Now, my debit is 1685,
+
+[06:18] which is the maximum dollars that I would have at risk. I'm making a purchase, and if the underlying does not comply, and it can only go to zero and I can lose $1,600.
+
+[06:31] I set this up in May because I wanted to show you how to compare it to maybe other strategies that we could discuss that try to set up 100 deltas or long stock, but are
+
+[06:47] not quite as effective as a zebra. Uh Fosia, when we sell an out-of-the-money call, that has a minus 50 delta. What deltas have you chosen for the two long calls that you bought?
+
+[07:03] So, there's a little bit. So, I started with by selling the out-of-the-money 50, and then I bought two of the 40s. The The idea was So, see, the the 40 in-the-money call, each
+
+[07:19] call has about $2.20 in extrinsic value, right? That's the back-of-the-envelope calculation. What is the extrinsic for an in-the-money call? You just look over on the other side, on the put side, and
+
+[07:33] you see that. And so, you're trying to zero that out, and I I I bought it twice, so that's 440 at least. So I sell the 50 call and wind up, you know, collecting five something
+
+[07:49] and I have an extrinsic of only -25. I have a delta of about 103, which is good and there's your long stock. If we go back to the curve view, how will this position change as time
+
+[08:05] moves? So here's the curve view since I have existing positions. Notice on the analysis tab, I remove them and only consider the two
+
+[08:19] positions that we are considering for this new trade. You can evaluate this so you can say since our expiration is May 15th, one way to comp
+
+[08:32] look at as time goes by is say, what is if the effective DTE is May 15th, evaluate this if OCLO is at 55, right? Which is ideal for us. We want it to go
+
+[08:49] past that short call and the analysis tells us that there's a 35% chance of that happening by that certain date.
+
+[09:00] And then we come here to see what will the expected move be at 55 and it says about the theoretical is about $800. Right here. So that's
+
+[09:16] the P&L. So we paid 1685 and we made $800 if OCLO expires above 50 by May expiration, which is in the next
+
+[09:32] 35 days. So to sum up this part, this will move exactly like a stock when it goes up and partly when it goes down, but there we are capping the downside.
+
+[09:48] By what we paid for the whole trade. Yeah. There's, you know, we will lose it slowly, but eventually it'll go to the max of 1685. So, in this section here, the loss will
+
+[10:02] not be completely 1685, but it'll start working its way down. Notice that the break even is right where the stock is. And that's very clearly visible
+
+[10:15] um on this platform by this green bar, which is where does the profit start? Right around here, right at 48 essentially. So, if it goes up, you know, we'll start making money right
+
+[10:30] away. We'll Let's get a bit more into the details. When you When do you choose to enter these type of trades? And what are your conditions for choosing to do the zebra?
+
+[10:43] So, I want to get long stock. If I were to just buy 100 shares, I mean, you can buy less than 100 shares, but as an options trader, I like to cover long stock also, which means I need 100
+
+[10:56] shares. That would cost me about $4800. This is costing me a less than $1700. And the IV is fairly low. The IV rank is about 35. We have to remember that under current market conditions, IVs, you
+
+[11:14] know, the volatility has expanded across the board, but Ocloo is still under 50. I would prefer to find something that was that's around 20 or so. So, John, you can see the chart of Ocloo
+
+[11:28] now. It's pretty much beaten down, and I'm quite comfortable getting bullish on this underlying. So, hence I would choose a zebra because if I bought 100 shares, it would cost me $4,800, but
+
+[11:43] this is costing me only 17, less than $1,700. What are the other considerations? You want low volatility. What about days to expiration? What What do you prefer
+
+[11:58] there? So, I recognize that duration gives me more time to manage it. Gives the underlying more time to move in my desired direction. However, you know,
+
+[12:12] like Dr. Jim, I don't know if you know him, he's on Tasty, he says, "For every gimme, there's a gotcha." So, the gimme is I have more time, the gotcha is I'm going to pay more for it. Would you like
+
+[12:25] me to show you the difference? Sure, do that. So, the May zebra cost $16.85. I'm going to clear that. And I will go to just the next month.
+
+[12:41] And set it up again. I have 95 delta, which is okay. And it it's not costing that much more. So, it's a it's an interesting question that you asked because one could say,
+
+[12:58] "Well, for just a few more dollars, um 100, I'm I'm guessing, I could have, you know, a whole month of duration to allow this thing to work out in my favor."
+
+[13:11] So, it's a, you know, it's a trade-off. Uh when you're setting them up, when you make the decision, I'd like to be long oak low, then you go looking for where you would like how much money you think
+
+[13:23] is reasonable. Obviously, it's it's nice to give it lots of duration because the other advantage of more duration is you have all the front month weeks and months to sell calls against it and
+
+[13:39] reduce basis. But ultimately, the decision is made by the trader as to how much buying power they would like to tie up in this underlying. But you would sometimes use this like
+
+[13:54] you would this long long position as a basis of a covered call if I understand it correctly to add extra income. Yes.
+
+[14:03] Yes, absolutely. Yeah, so in this case if I did a June, I would go in the front month and I notice that earnings are before May expiration. Maybe I'll go to the 25
+
+[14:16] days out May 1st and sell I normally sell the 30 delta when I'm covering long stock. So the 30 delta here would be about the 56 or the 57 and I would sell that. That reduces
+
+[14:32] the cost by the amount of the call. It'll help in case the stock takes a downturn that one can keep selling calls against it and reduce cost until the stock decides to go in your
+
+[14:47] favor. It's the same as doing a traditional covered stock position. You start with a 30 delta call which is has a 70% chance of not getting there and then you know, you you establish your
+
+[15:02] maximum profit where you like it. Um but if the underlying goes up, you're you're very happy. But if underlying goes down, you keep the premium on the short call, but
+
+[15:14] then it seems to make sense to sell another short call to keep reducing that basis. Fawzia, what are your rules for getting out of this trades? When do you take
+
+[15:27] profit or to what extent let you do you let these run all the way to expiration? Well, again, like any long stock position, uh the trader makes a decision on what
+
+[15:40] is an acceptable profitability for them. If we did the June and we spent about $1,800 on the zebra, then you can decide, "Okay, I'll be happy with 50% profit."
+
+[15:54] And uh I'm pretty disciplined about setting uh good till cancel orders. So, you can say I'll be happy if I get, you know, 1,800 and another 900, so that's about
+
+[16:06] 2,500. And put your GTC there and wait for that to happen. That's uh a fabulous situation that the stock moves in your direction and goes past
+
+[16:19] your short call. If the converse happens, then it requires some management. What is the management that you would do on these trades?
+
+[16:29] So, very good question. So, remember zero extrinsic back ratio. Here's about 71 in June, right? Um now, if the stock goes up, we don't have to worry. We just
+
+[16:43] set our desired uh gain percentage and close and and and the position closes. If the stock goes down, then what happens is that these strikes start uh gaining extrinsic
+
+[17:00] value. And then you have to do what we call a ratchet. You have to adjust the zebra. You have to move it back to
+
+[17:12] where it has zero extrinsic again, which means you will wind up paying for that. Which is essentially the same as recognizing the loss. If you have a long stock and it goes down, you know, you
+
+[17:27] recognize some of that loss, pay for it, and now you have a higher basis, and then you wait for the stock to go up again. Sorry about that. Uh you would roll it down basically for
+
+[17:42] a debit. Yes. So, um So, I can illustrate it. Let's say we started in this manner, and then we wound up like this, right? The same strikes, but
+
+[17:57] now they're in the money, and we have a lot of extrinsic value. So, we will close this out, the position that has acquired extrinsic value, and we will reopen
+
+[18:12] a new one potentially out in time, and um reducing It's It's hard to show it this way because I've got the other one, but basically we buy back
+
+[18:32] the the June position, which has the extrinsic value. So, you sell that, you buy that, you would pay you would collect about 10.79 in credit, and then you would go
+
+[18:45] out to July and rebuy. It's called a ratchet. And what have you achieved by doing this? Again, it's the same thing as getting
+
+[18:57] bullish on on something you can't afford to get bullish on. So, when we buy stock, that's static delta. The stock just sits there with a 100 delta.
+
+[19:08] And what we can do around it is sell calls, roll calls out, and adjust our deltas that way. When you do it this way using a zebra, it's called a dynamic stock position.
+
+[19:22] It's go It's deltas are going to change with changes in the underlying. And we have to do as I described earlier, the ratchet, meaning let's get this back to where we wanted it to be. Um it's it's
+
+[19:39] profitable. We can close the position. If it's not profitable, then we have to put some more debit into it to or just close it out and realize that
+
+[19:52] loss. There are a number of other ways to also control 100 shares. One of them, obviously, to just own the shares. Uh and this is an alternative to owning
+
+[20:04] shares, but can we maybe compare this to other ways of controlling 100 shares? Sure. Let's go back to May, and here is the zebra in May, and it cost 1685. We know that just buying the stock cost
+
+[20:23] 4800 plus. There's no doubt about this being a more cost-effective way of uh creating long stock. Now, some other suggestions might be let's um
+
+[20:39] buy an at-the-money uh call and sell an at-the-money put, correct? That would also give give us 100 delta, right?
+
+[20:51] Exactly. And it's much less expensive than the zebra. So, why not do this? Well, because you have extrinsic values, so let's analyze it. If the stock moves
+
+[21:04] up, it will be fine because the put will be profitable and the long call will be profitable. But, look at where your break even is. Your break even is almost, you know, you've got to pay for
+
+[21:18] that 393 before you can start making money. So, if the stock stayed at 48, right now it's at 48, stayed at 48, your long call would be worth $3 at expiration.
+
+[21:34] And you still would not make up what you paid for it. You've got to get beyond 48 to to make this profitable. So, the the zebra will always be more profitable than this strategy.
+
+[21:50] Another alternative is to buy two at-the-money calls. That would also give you 100 delta. Right, let's do that. This costs almost $800,
+
+[22:04] a little bit more than this one we just discussed, where we buy the call and sell the stocks, but less than the zebra. Again, the break even is better on this
+
+[22:16] one, but if the stock moves in the opposite direction, there's not a lot we can do to resurrect the position other than just keep rolling out in time
+
+[22:32] and uh paying more. So, if the stock drops down It's at 48 now. If it drops down to, say, 44, so it'll be worth nothing, right? All the entire 790
+
+[22:48] will go to zero. We would have spent it all. So, to sum up this, the zebra is more cost-efficient. Yeah, and it's tied to this. Look at the
+
+[22:59] extrinsic on this, 908. This you're paying $908 extra uh to buy uh something that's in the money by $3, right? It's in the money by
+
+[23:13] three. So, part of this cost is 790, $3 of it is just um the intrinsic and the rest is extrinsic, which just disappears as time goes by. So, you you know, time is not
+
+[23:30] your friend in this case. Let's move to discussing the risk. What is the worst that can happen with this trade? You know, it's what you pay for it,
+
+[23:40] right? So, if we go back to the zebra, here we have 103 long delta and we paid 1685. The worst, if you never managed it, if you never ratcheted it,
+
+[23:54] um um is that you would lose 1685. Which is, of course, much less than if your stock went to zero and you had bought 100 shares. That's right. I mean, the probabilities
+
+[24:08] are low that that happens, but you know, we're discussing the theoretical. I always ask my guests to put a stra- their strategy on a risk profile scale where one is very low risk and 10 is
+
+[24:23] very high risk. And you can define those numbers as you see fit. Where would you place this zebra strategy on a scale like that? I would call it a low risk simply be-
+
+[24:36] but low is relative, right? It depends on how big the account is and how much money the trader wants to spend, but it's low risk because I know my risk is defined at entry.
+
+[24:52] I you know, you could just buy here's another low risk. You could just buy the at the money and spend only $800, but you know, you only have a 33% chance
+
+[25:08] of making about a penny, which is the definition of pop. So, I prefer to if you buy stock, you have a 50% chance of when a little bit more because, you know, the market has
+
+[25:22] upward drift. But around 50 51% chance. So, I I can look at the risk as how much money what's my max potential loss.
+
+[25:35] Hopefully, now I I personally do not use stop losses, but certainly, you know, others can, but I keep an eye on it and if if I paid 1600 and I did
+
+[25:49] nothing to manage the zebra, then um I know that I can't lose more than 1600 and maybe I close it at $800. Take a 50% loss.
+
+[26:03] But hasn't happened yet. What have you been your results trading the zebra? I think please with them as a way to substitute for long stock. It's a long
+
+[26:15] stock substitution and it seems to work. You know, it's under all conditions of buying long stock, this takes up a lot less money, but the expectation is the same.
+
+[26:28] Expectation is the stock should move up. We've had a pretty decent market correction. So, this is a good time if you would like to get bullish on some of your favorite
+
+[26:41] underlines. Traders could consider this. And we're not going to show that in detail, but you can do the complete opposite too, right? Using puts and going short the stock for for less
+
+[26:54] money, right? Absolutely. Ex- Yeah, it's it's a mirror it's a mirror image. The put zebra where you would like to get short the the underlying and
+
+[27:06] then you can also cover the put zebra by selling puts at say the 30 delta against it in the front month. It's essentially a mirror image of the call zebra.
+
+[27:17] And I guess for the results, this all depends on your ability to pick the right direction for the stock as if you are owning the stock. Yes. Ultimately, it's the the investor
+
+[27:31] the trader decides what their opinion is on any particular underlying if they want to be bullish, they want to be neutral or they want to lean bullish. This is outright bullish. Maybe you want
+
+[27:44] to lean bullish and then it makes better sense to just sell a put or a put spread, but this is essentially stock substitution, which means you're definitely bullish on you
+
+[27:58] need so the underlying to move in your direction. You are being directional. There's nothing neutral about it. Let's sum up. How would you sum up this strategy and how does it fit with other
+
+[28:11] strategies that you do personally? This is one of my go-to strategies when I want to get long an underlying. Um there are people get long by using leaps, diagonals.
+
+[28:26] Um um those are perfectly fine, but I like this one. I use a lot of different strategies in my portfolio. Depending on the implied volatility of the underlying, I try to diversify by
+
+[28:40] sectors. I try to diversify by duration. So, I'm more of a quote-unquote traditional investor in that respect, but always using options. It's been years that I ever really bought actual
+
+[28:56] stock. Unless the stock is not optionable, in which case I might just buy it if it's cheap. It's one aspect uh I call it there are many arrows in my
+
+[29:09] in my bucket of strategies to use, and I use this particularly if I want to get bullish and or bearish and be directional, this is my go-to strategy.
+
+[29:22] What would be your two to three most important takeaways that you want the audience to remember from this interview? I would like the audience to try the
+
+[29:31] strategy, obviously. I would like them to recognize that it is a purely directional strategy. I would like them to know that there are ways to reduce the cost
+
+[29:42] of the of the call zebra or vice versa, increase the selling on the put zebra selling price. I want them to be sure to make sure not
+
+[29:57] shortcut, take shortcuts on the extrinsic value, because that is the underlying principle. Meaning, don't try to buy cheap in the money's or pay less for them because you're trying to reduce
+
+[30:11] your cost that way um and uh incur extrinsic value. It's much better to come in closer and pay less, have less duration, but the setup should
+
+[30:25] be good from the beginning. That's I would say that's my biggest takeaway. And then be sure to use the ratchet um when the positions when the strikes take on extrinsic value. They started out
+
+[30:39] with none and suddenly they take on cuz it moves in the opposite direction. And there's lots of um discussion on this strategy on the tasty live learn center. You can go
+
+[30:53] there and learn more about it. They also have YouTube videos talking about it. The two principals, Liz and Jenny, uh I'm not sure if they came up with it or um Tony Rehagen from Mexico came up
+
+[31:08] with it. I don't remember. It's a fairly old strategy. But regardless, there's a lot of discussion if you do a search on zebras to find um how to manage how to set up
+
+[31:19] and manage these positions. But they're valuable, so everyone should try it. Are there other good resources to learn more about about this trade, but also
+
+[31:33] about options trading as such that you would recommend? So I I also mentor and coach people on learning how to trade options. And my go-to for all levels, whether
+
+[31:44] they're beginners or experienced, is to go through the learn center on um tastytrade because it's just full of lots of little quizzes and um sections where you can learn and test
+
+[32:00] yourselves. Um even after 12 years of trading, I continue to go there to pick up some new little nuggets of information. There are two books that I would definitely
+
+[32:10] recommend. Uh one is a book by Julius Speigner called The Unlucky Investor's Guide to trading options. And the other book is Far from Random
+
+[32:22] written by Rick Lehman. He was um a professor at UC Berkeley in behavioral finance, and he wrote the book. And I was lucky enough to be in his class, and then I I a copy of the book,
+
+[32:36] and I read it from beginning to end, and and really, really enjoyed it. Fauzia Timberlake, thank you very much for coming here and sharing your
+
+[32:45] knowledge and experience. And I will, of course, also recommend people to watch some of the other interviews on this channel. We cover a lot of strategies through all these interviews, but thank
+
+[32:57] you very much, Fauzia, for sharing your own knowledge. You're welcome. Thank you, John. Thank you for having me as a guest.

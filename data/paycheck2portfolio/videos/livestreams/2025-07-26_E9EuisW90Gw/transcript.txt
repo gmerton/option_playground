@@ -1,0 +1,139 @@
+[00:00] Hi, good morning everyone. Hope you're having a great weekend so far. This is Sean with Paycheck to Portfolio. Today I'm going to talk about the paycheck to portfolio system explained step by step.
+
+[00:10] I have it mapped out in a word document, but first I want to do a quick portfolio update here. You can see my net account value is sitting $131,978. My total unrealized gain is currently
+
+[00:23] sitting at $37,119 or basically 16%. Uh last week, another good week in the market. So you can see Friday I had a $752
+
+[00:34] gain. If you look at performance, I'm going to touch on the one-year, two-year, and three-year performance. So let's start with the one year. You can see it one year here with the chart. Uh
+
+[00:46] my account is up 55.61% right here, which you can see the S&P is up 17. The NASDAQ's up 21 basically 22%. The Dow is getting close to 11% and the Russell's basically at zero. At the
+
+[01:03] two-year performance, you can see I'm sitting at 67% cumulative. Uh S&P's 41, the NASDAQ's basically 50, the Dow's 27.5, and the Russell's sitting at about 15%.
+
+[01:19] On the three-year, you can see I'm at 93.5. Basically, the S&P is at 65. The NASDAQ's at 84, the Dow's at 43, and the Russell's at 29 um almost uh 30%. So, what this is is this is our cumulative
+
+[01:37] return. This includes the growth of the portfolio and the dividends received. So, I'm just going to show that for clarity because I get a lot of questions around this. So, if we go back to
+
+[01:47] positions, what's baked into that cumulative return is the total unrealized gains, the growth of the portfolio. in addition to dividends that I have received. This is my estimated
+
+[02:00] dividend return over the next year, which basically the way ERA calculates this is your last dividend received. They'll annualize that out over a year. So currently I'm sitting at $43,141
+
+[02:14] anticipated dividends. You can see in the next one month that equates to about 3386. You'll see that um as you watch that varies from 33 to 4,000 depending on
+
+[02:27] payouts. If you go to transactions um in Erade and you type or you select all dividends here and hit apply, you can look backwards and to see the dividends that have actually hit the
+
+[02:40] account. So you can see I get quite a lot of dividends that roll in on Fridays, every week, and then every month as well. So you can see all that on Erade and it will show you those
+
+[02:53] specifically. So jumping right into um the paycheck to portfolio system. I've shown this image on a few videos and I like it just because it keeps things simple and then we'll talk about the
+
+[03:05] word document and the step by step uh each step along the way. So basically, if you're new to my channel, I don't live out of a traditional uh checking account. I all of my W2 income rolls
+
+[03:17] into my brokerage account. With those funds, I'll buy dividend and growth assets with those funds. And then what my dividends don't cover, I'll float with margin to pay my bills. And over
+
+[03:29] time, what's going to happen is this cash flow cycle is going to continue, which will snowball my growth and my income and eventually pay all of my expenses and allow me to live free from
+
+[03:41] a 9 toive job or to live a fire lifestyle, which stands for financially independent, retire early. As you can see, Albert Einstein has a quote down there that says, "Compound interest is
+
+[03:53] the eighth wonder of the world. He who understands it earns it. He who doesn't pays it." And so I'm getting the benefit of my whole paycheck being fully invested and compounding year after
+
+[04:05] year. Sometimes I'll see comments in the section in the um comment section of YouTube saying, you know, how are you going to get uh over a million dollars worth of performance in five years where
+
+[04:16] a large chunk of that over five years is coming from my own W2 income that would have been have been spent to zero and then I would have had to start the cycle all over again of going back to work,
+
+[04:29] trading my time for money, spending zero, and investing 10%. instead of the normal cycle that we're taught. I'm investing 100% on the front end, allowing it to compound, which
+
+[04:40] essentially will will set me free um quicker. So, all right, I want to talk about the paycheck to portfolio system explained step by step here on a word document. So, step one is deposit all
+
+[04:53] earned income into your brokerage account. All income sources, whether it's W2, real estate income, I don't have commissions or or bonuses or anything like that. I'm just trying to
+
+[05:04] show you it's all earned income comes into this bucket. This account becomes my central financial system, replacing the need for a traditional checking account. So, all earned income sources
+
+[05:15] come into the brokerage account. This account becomes the central system. Um, historically, we we would go put our funds into a bank account. the bank would take your money. It's not in a
+
+[05:26] vault as I think we all know. And they would invest that into um investments that would pay, you know, seven, eight or nine% to other people
+
+[05:38] taking out loans and generating cash flow with your money and then paying you a very minimal amount. So step two would pay down margin then acquire assets. So as new cash comes in, it automatically
+
+[05:51] reduces my margin balance. This boosts my equity percentage and unlocks new buying power. Once my margin uh is reduced and my equity level goes up well above 50%.
+
+[06:03] That percentage or cash, I'll reinvest into more generating assets, whether they're growth or dividend assets, which creates more obviously cash flow and will get me closer to living free from a
+
+[06:15] nineto-ive job. I invest in three separate buckets I want to talk about. So, the first bucket would be my drip stocks, which I consider my compounding engine. So, CLM and CRF, the cornerstone
+
+[06:28] funds I talk a lot about, and you can go find that on prior videos if you're interested. These drip monthly at the NAV, which stands for net asset value. So, every month you're getting immediate
+
+[06:40] gains with your dividend drips. With golf, that's another closed end fund. It drips monthly at 5% discount to its NAV, so it has a good dividend and it drips at a discount. SPY is a S&P 500 growth
+
+[06:56] uh ETF. McDonald's, Costco, and others I also set to drip to compound there as well. These funds reinvest automatically, compounding my share count and income each month. The
+
+[07:09] effective yield with the closedend funds up above is approximately and that's cornerstone golf that I'm talking about here are approximately 21.35% when factoring in the NAV discounts and
+
+[07:21] compounding effects and how that works. Covered call ETFs. This is what I consider my cash flow workh horses. These are not all the covered call ETFs I invest in. I have a portfolio review
+
+[07:34] again on my videos. You can see my whole portfolio and you can go to the YieldMax website, the Roundill website, uh the NEOS website, the Defiance website and look up these annualized projections for
+
+[07:46] yourself. MSTY is currently projected to be at 76%. YAX uh 69% QQQY 40%, QQQI 15, and SPYI 12. So if you just take in this example and you calculate a blended distribution rate
+
+[08:06] across these funds, that's 42.24%. In the calculator I show on other videos, our fire model pro calculator that you can get on our membership section of Discord, I'm conservative
+
+[08:19] with this blended distribution rate and I calculate about a 32% blended yield. So you can see it can be a lot higher than that just for clarification and and um how you see how the system works. So
+
+[08:32] these pay weekly or monthly cash dividends. So my portfolio on average currently generates between $3500 and $4,000 a month in cash dividends. Again, that's projected out over the next year.
+
+[08:46] I'm I'm currently at $43,000 a year, and that will fluctuate based on the next distribution round. This cash is used to cover margin interest. As an example, I paid $850 in interest in June. My
+
+[09:00] interest rate is 8.44%. But I brought in um about $3,500. So, you can see I'm creating a a business spread just like any business would do with an SBA loan to create cash flow.
+
+[09:14] I'm using my own funds as basically a business cash flow machine. and it covers living expenses and whatever my dividends don't cover I bridge with margin. So I want to talk about these
+
+[09:27] covered call ETFs because you're going to see a lot of comments and you can go back and look at the other videos about NAV erosion. Okay, so covered call ETFs often show flat or negative share price
+
+[09:38] performance if you look at a traditional chart. I evaluate these slightly different than a routine growth ETF or growth stock. I evaluate total return on investment when I'm looking at these. So
+
+[09:51] that would be the income or the dividends plus or minus the price movement, not just price alone. I use Morning Stars performance tab to review the growth of 10,000. What this does is
+
+[10:03] it includes the dividends reinvested. And you can also look how that performance is versus the S&P 500 or the NASDAQ or other indexes. Um so basically it's just like having a rental home,
+
+[10:15] right? If you're just calculating depreciation and expenses and having to fix the air conditioner, of course, it's going to look like a bad investment. But when you add rent payments that you're
+
+[10:26] receiving and cash flow that's coming in, then you look at it from a balance sheet perspective and you see your true return on investment. So, a fund might decline on paper 5 or 10% in price, but
+
+[10:38] still still yield 25 to 75% in income. And that's the real return on investment. This strategy focuses on cash flow with covered call ETFs, not capital
+
+[10:50] appreciation. As you can see, I have a blend of everything. So, traditional growth comparisons can be misleading without distributions and understanding how these actually work. And then at
+
+[11:01] last, but not least, my growth stocks. I consider these my portfolio stabilizers and anchors for the whole system. So, again, these are not all my funds, but SPY, McDonald's, Costco, I've been
+
+[11:13] buying for a long time. These provide long-term capital appreciation and stabilize my margin equity with growth. And then they have modest quarterly dividends mostly at MCD and Costco, but
+
+[11:26] the focus is on portfolio strength and appreciation. Dividends flow in and the cycle repay repeats. So drip shares compound automatically. The cash dividends come
+
+[11:36] in like we've talked about, pay down margin and cover bills. What my dividends don't cover, I bridge with margin, allowing my entire paycheck to stay fully invested in compounding. And
+
+[11:46] I always maintain at least 50% margin equity to manage risk and to protect long-term growth. I also keep put options on at all times to ensure um the downside and to protect the overall
+
+[12:00] account. So, I've talked about that and I'll talk about that more in the future as well. Equity grows, margin resets, and the cycle accelerates. So, core principles behind the strategy. It's
+
+[12:12] velocity of money. Every dollar is deployed quickly. There's no idle cash. I'm creating a margin arbitrage. I'm borrowing at 8.44% interest. Reinvested into blended uh yields ranging from 25
+
+[12:26] to 75% depending on the asset class. Um capturing the spread and compounding it. This is like a velocity banking mechanic. So margin acts as my personal line of credit. I pay it down with
+
+[12:39] income. Then the then the recycle um of that equity is what keeps the system going and allows 100% of my income to be invested in the compounding. So it's an infinite compounding machine. As I drip
+
+[12:53] across multiple positions, as we've talked about, these drip positions grow share count automatically month after month. Dividends come in, more shares, more dividends, more equity, repeat.
+
+[13:06] Eventually, all my dividend income snowballs and fully covers all margin interests, all living expenses, resulting in financial freedom without ever needing to sell a single share,
+
+[13:16] even though I will share with the cornerstone rights offerings or um you know, if I'm buying low and selling high and then and moving those funds to dividend funds. And the last thought I'm
+
+[13:27] going to leave you with here is how Elon Musk bought Twitter. He didn't go pay cash. He used a lot of margin um from his Tesla stock. And so this is what the wealthy do is they'll borrow and they'll
+
+[13:40] leverage from their own assets to create more more assets essentially. Um if you're interested, I have some uh resources. I'll pin those in the comments. I have free resources with a
+
+[13:53] starter kit and a simple calculator to get you get you going. I have um membership here as you can see the discord. We have tools. I update my portfolio. You can book strategy calls.
+
+[14:04] We have meeting weekly meetings. Um so you can join there. I offer a white glove service if you need some shoulderto-shoulder strategy and some intense um help and training. And then
+
+[14:16] I'm uh you know I'm always here. You can reach out via email and I'm happy to talk with you more. But again, all of my resources will be available on the pinned comments within the YouTube um
+
+[14:26] comments section. So, I hope you found this uh video valuable. Please reach out to me again if you have any questions or concerns. I hope you have a great day and we'll talk to you soon. Bye.

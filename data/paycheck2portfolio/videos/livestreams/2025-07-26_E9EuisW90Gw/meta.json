@@ -1,0 +1,19 @@
+{
+  "video_id": "E9EuisW90Gw",
+  "url": "https://www.youtube.com/watch?v=E9EuisW90Gw",
+  "title": "The Paycheck to Portfolio System Explained (Step-by-Step)",
+  "channel": "Paycheck To Portfolio",
+  "channel_id": "UCqweTiFXT0z9FcURR55RcRg",
+  "stream_date": "2025-07-26",
+  "duration": "14:37",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

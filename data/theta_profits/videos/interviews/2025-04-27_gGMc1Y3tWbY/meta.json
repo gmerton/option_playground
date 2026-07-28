@@ -1,0 +1,19 @@
+{
+  "video_id": "gGMc1Y3tWbY",
+  "url": "https://www.youtube.com/watch?v=gGMc1Y3tWbY",
+  "title": "How to Automate Options Trading Like a Pro in 2025",
+  "channel": "Theta Profits",
+  "channel_id": "UCzGARfberQ8nRRbsjK90BHg",
+  "stream_date": "2025-04-27",
+  "duration": "21:57",
+  "summary": "Scott Clark, vendor spokesperson for 'Trade Steward' (retail bot-automation platform). Product infomercial, NOT a strategy: zero parameters, zero numbers, zero track record - his own returns never mentioned. Covers what a 'bot' is (template of delta/width/entry-time/target/stop, deployable across many accounts at once), the vendor landscape (Trade Steward, Options Alpha, Option Omega, Kyle Lisman's TAT), and onboarding (7-day trial, start with one bot; note major brokers lack paper-account API so you can't fully dry-run a bot). Correct category truth: automation is a discipline/execution tool ('not a get-rich thing... simply enables trades you've already thought of'), likened to supervised Tesla self-driving. Only performance claim is an unfalsifiable survivorship anecdote ('people made more in that week than the previous two years' during April 2025 vol). Automation scales losers as efficiently as winners. Write-up: strategies/automation_trade_steward_scott_clark.md (conviction 1/5).",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

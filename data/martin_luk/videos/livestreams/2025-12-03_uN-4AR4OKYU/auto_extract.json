@@ -1,0 +1,221 @@
+{
+  "video_id": "uN-4AR4OKYU",
+  "date": "2025-12-03",
+  "title": "Waiting | 2 Dec 2025",
+  "observed_trades": [
+    {
+      "date": "2025-12-03",
+      "ticker": "RIVN",
+      "direction": "long",
+      "action": "hold",
+      "setup": "EV momentum leader candidate; loved weekly relative strength, pullback then sharp reclaim, hourly range breakout; bought last Tuesday after the prior stream",
+      "entry_basis": "Breakout from a 5-minute pullback",
+      "stop": "",
+      "source": "2025-12-03_uN-4AR4OKYU@03:53",
+      "confidence": "stated",
+      "notes": "'I've bought Rifian'... working nicely past few days; would re-enter even if stopped.",
+      "fill_timing": "tuesday"
+    },
+    {
+      "date": "2025-12-03",
+      "ticker": "TSLL",
+      "direction": "long",
+      "action": "entry",
+      "setup": "2x Tesla leveraged ETF; classic weekly VCP / cup-with-handle, EMAs converging; bought yesterday on the pullback",
+      "entry_basis": "1-minute candle breakout above all EMAs (~5-min opening range), around 18:45",
+      "stop": "~2% (wider than his optimal ~1.5%, acceptable for a 2x ETF)",
+      "source": "2025-12-03_uN-4AR4OKYU@07:17",
+      "confidence": "stated",
+      "notes": "'I took the 2X ETF and I bought it yesterday during the pullback'; nearly stopped at low of day. Caption says '2X ETF' of Tesla, not the letters 'TSLL'; TSLL is the standard 2x Tesla long ETF (interpreted).",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2025-12-03",
+      "ticker": "LMND",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Lemonade; relative strength through the pullback; bought the second dip",
+      "entry_basis": "5-minute candle breakout on the second dip",
+      "stop": "Low of the breakout bar (almost stopped before the close)",
+      "source": "2025-12-03_uN-4AR4OKYU@13:34",
+      "confidence": "stated",
+      "notes": "'this first stock I've bought this the lemonade'. Later stopped out (84:38).",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2025-12-03",
+      "ticker": "LMND",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Same Lemonade long stopped out before the close",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2025-12-03_uN-4AR4OKYU@84:38",
+      "confidence": "stated",
+      "notes": "'lemonade's stopped out.'",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2025-12-03",
+      "ticker": "CSIQ",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Canadian Solar; tried 5-minute breakout entry yesterday but it failed",
+      "entry_basis": "5-minute breakout",
+      "stop": "",
+      "source": "2025-12-03_uN-4AR4OKYU@16:13",
+      "confidence": "stated",
+      "notes": "'I also got stopped out from CSIQ yesterday.'",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2025-12-03",
+      "ticker": "ONDS",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Tried a 5-minute candle breakout on a bounce; stopped out",
+      "entry_basis": "5-minute candle breakout on the bounce",
+      "stop": "",
+      "source": "2025-12-03_uN-4AR4OKYU@16:42",
+      "confidence": "stated",
+      "notes": "Caption 'OMDS'/'ODS' = ONDS (Ondas Holdings) (interpreted; he does not spell it).",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2025-12-03",
+      "ticker": "IONQ",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Quantum name showing relative strength (holding 9 EMA daily); buying as quantums make a higher low, red-to-green",
+      "entry_basis": "Bought into the move ('I just bought some'); ~2% stop intended",
+      "stop": "~2% (mentions a 3% stop level too, targeting ~5% trade)",
+      "source": "2025-12-03_uN-4AR4OKYU@70:06",
+      "confidence": "inferred",
+      "notes": "Caption 'OQ'/'IQ' in quantum context = IONQ. 'Oh, I just I just bought some.' Ambiguous which exact ticker but IONQ context is strongest.",
+      "fill_timing": "today"
+    }
+  ],
+  "principles": [
+    {
+      "category": "risk",
+      "text": "Risk management is the one constant of trading: always define and cap your risk before entering, know how much you'll lose if wrong, and accept that loss; entry tactics (breakouts vs pullbacks) change with the market, risk management never does.",
+      "timestamp": "92:52"
+    },
+    {
+      "category": "risk",
+      "text": "Use hard stop orders and risk a small fixed fraction per trade (not 5%, more like ~0.3%, less than 0.5%) so that even 10 years out you haven't gone bankrupt.",
+      "timestamp": "94:50"
+    },
+    {
+      "category": "macro",
+      "text": "Watch the leading index/leader (NVDA) at the declining EMAs: if it rejects the 50 EMA and can't reclaim/hold the 9 EMA while semis show relative strength, that's a bad sign for the whole market.",
+      "timestamp": "18:40"
+    },
+    {
+      "category": "posture",
+      "text": "Don't rush; when many stocks sit under resistance/EMAs, wait for the close of today or tomorrow to decide direction. The close is crucial for deciding whether to be aggressive long.",
+      "timestamp": "88:13"
+    },
+    {
+      "category": "mindset",
+      "text": "Sector strength is a sufficient but not necessary factor for picking a stock; relative strength in the weekly big picture can justify a name even without sector confirmation.",
+      "timestamp": "11:26"
+    },
+    {
+      "category": "posture",
+      "text": "Position count and exposure depend on (1) how much profit cushion existing positions give and (2) where the market is in its trend (start vs extended); don't take many new positions when the market is extended.",
+      "timestamp": "90:29"
+    },
+    {
+      "category": "entries",
+      "text": "Avoid taking short entries while the market is gapping down / already falling, even when speculative leaders are bear-flagging and breaking down.",
+      "timestamp": "23:40"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "07:17",
+      "caption_text": "I took the 2X ETF and I bought it yesterday during the pullback",
+      "context": "Bought a 2x Tesla long ETF yesterday on the pullback (1-min breakout ~18:45). He says '2X ETF' of Tesla, not the letters; TSLL is the standard 2x Tesla long ETF.",
+      "guess": "TSLL",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "16:42",
+      "caption_text": "got stopped out from the OMDS. I've also tried to put um ODS on this bounce",
+      "context": "Stopped out yesterday after a 5-min breakout entry on a bounce. Caption 'OMDS'/'ODS' has no clean phonetic; ONDS (Ondas Holdings) is the likely intended symbol but he does not spell it.",
+      "guess": "ONDS",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "24:06",
+      "caption_text": "this G set is flexing pretty nicely, but it's too illquid",
+      "context": "Setting up nicely but dismissed as too illiquid.",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "24:47",
+      "caption_text": "A fastly too. This LES looks so similar to the the Tesla back in February",
+      "context": "'A fastly' may be Fastly (FSLY); 'LES' lost all EMAs and bounced back, compared to TSLA in February.",
+      "guess": "FSLY",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "25:48",
+      "caption_text": "want more sideways for LAC",
+      "context": "Wants more sideways before going long; LAC could be Lithium Americas.",
+      "guess": "LAC",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "28:18",
+      "caption_text": "This under cotton reclaim napas is showing some strengths",
+      "context": "Undercut-and-reclaim showing strength, worth a look. 'napas' unclear.",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "34:34",
+      "caption_text": "this is a earnings from cradle",
+      "context": "An earnings move; later 'this breakout is too fast for cradle right now.' 'cradle' phonetic, no obvious symbol.",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "66:51",
+      "caption_text": "Bullfire just break out from the inside day yesterday",
+      "context": "Broke out from an inside day, could be an entry. 'Bullfire' phonetic.",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "66:51",
+      "caption_text": "OQ is showing some relative strengths holding up the 9 EMA on daily compared to LGTI and QBT",
+      "context": "Quantum context: 'OQ'/'IQ' vs 'LGTI' and 'QBT'. Known garbles: LGTI=RGTI, QBT=QBTS, OQ/IQ=IONQ.",
+      "guess": "IONQ",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "71:24",
+      "caption_text": "Valentia has trying to break out the break out from the 50 EMA",
+      "context": "Trying to break out from the 50 EMA and a huge red candle high. 'Valentia' phonetic.",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "72:59",
+      "caption_text": "MDP is is an EP, but the nature of this stock is not very tradable",
+      "context": "An episodic pivot (EP) but choppy/not tradable; gaps up then goes sideways.",
+      "guess": "MDB",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "97:03",
+      "caption_text": "this is NDK. is reversing",
+      "context": "A position reversing; later 'my kid is going down' (the name he's holding). Likely SNDK (SanDisk) mis-captioned as NDK/'kid'.",
+      "guess": "SNDK",
+      "confidence": "unsure"
+    }
+  ]
+}

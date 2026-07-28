@@ -1,0 +1,451 @@
+[00:00] the wins are anywhere from 1 to 5,000 percent. So, the average winner is actually 1,200 percent. It's It's very hard to to lose money with this strategy. If you're keeping that 52% win
+
+[00:11] rate, Today, we will present the zero DTE options strategy that can make you many more times than what you risk. But, there is, of course, a catch. Welcome Shamoun Bari.
+
+[00:26] Hey, John. Great to see you here. Excited to look forward to the episode. Okay, let's get straight to it. Give us the 40-second version of your options strategy.
+
+[00:38] Sure. Yeah, so the strategy is essentially a zero DTE butterfly on the SPX. Uh we use the SPX because it's European settled and is European style and cash
+
+[00:48] settled. So, you don't have the risk of early assignment. Uh you get very good liquidity, good strikes, and essentially what you do is we have a bunch of indicators which we'll cover. Uh and we
+
+[00:58] look to enter around midday to essentially get a little bit of a pin on the actual index and kind of scale out as the market moves in your favor, moves into that profit tent, and you go for a
+
+[01:10] huge wins. And typically, uh the wins are anywhere from 1 to 5,000 percent. These are huge huge wins. Very hard to get the max profit and be that accurate. Uh but, we have some some
+
+[01:21] methods of really accomplishing that more often than not. Okay, this is exciting. I'm curious how you get to that point. But, tell us first about yourself a little bit, especially as an
+
+[01:32] options trader. Of course. Yeah, so I have been trading options for about 7 years now. I've been trading ever since high school. And my senior year of high school, actually
+
+[01:42] right after I graduated, I secured myself an internship at Raymond James Financial. And from there, I went back for a second year. I actually got a lot of my institutional experience from
+
+[01:52] there talking to the analysts, the traders, a lot of higher-ups. And it taught me a lot of things, specifically in terms of how dealers and market makers are required to hedge their
+
+[02:01] positions. And in that, you can actually have a sense for where the market is going to go, when it is going to go there. And using options, you can structure both a profit target and a
+
+[02:12] profit time. And it's very flexible. Obviously, options are a lot more flexible than futures are. And it really just gives you an an easy way to structure a high probability trade with
+
+[02:23] an asymmetrical risk reward comparative to the win rate. Explain for us, what are you trying to achieve with this strategy? Of course, yes. So, this strategy is a
+
+[02:34] very high risk reward trade, but it doesn't have the highest win rate. So, essentially, these butterflies, a lot of people like to call them lottery tickets. A lot of people use these
+
+[02:43] butterflies to hedge even, but what we're trying to achieve is a optimized risk reward. And again, a lot of the wins are anywhere from 1,000% to 5,000% because we use these very narrow
+
+[02:55] uh strike prices, and the actual time of entry will be around midday, and the win rate is only about 52%, but when your win rate is 52%, that's really all you need when your risk reward is so high.
+
+[03:08] So, all we're trying to achieve is seeing where the mo- momentum is bringing the index and trying to pin it by the end of the day, specifically in the last 30 minutes. Uh and obviously,
+
+[03:18] with butterflies, the closer you get to expiration, the more profit you're going to have. So, all in all, you're just really trying to figure out where the market is going to close at the end of
+
+[03:27] the trading day. Let's start with the basics. What is a butterfly trade? Sure. Yes, so a butterfly, there is a few different kinds. There is call flies and put flies. I typically use call
+
+[03:40] flies, and essentially, what that is is you are selling two calls and you are buying two calls. And all you do is you sell the two calls on the strike that you expect the market to pin at, and you
+
+[03:52] buy the two calls in a sort of usually an equilateral uh type of fashion for this strategy. Uh but sometimes people will skew the strikes to get more of a broken wing broken wing butterfly.
+
+[04:05] And um yeah, so it brings sort of a tent-like structure to the P&L chart, and we can actually pull that up soon, and I can kind of go over the mechanics of how the butterfly works, and how the
+
+[04:15] options Greeks actually play into profiting off of them. Yes, let's bring up an example trade so people understand it. Sure. Yeah, so I'm on Option Strat here.
+
+[04:27] So, right here we're on the SPX. Uh the market is closed right now, so we won't have an accurate, you know, minute-by-minute time frame to reference, but essentially, just like I
+
+[04:37] said, we're going to buy two calls and sell two calls. This is just referred to as a call fly, and we pick the expiration, in this case it would be zero DTE, but let's just say we're doing
+
+[04:47] March 31st. All we want to do is figure out what the market is going to pin at. So, let's say we think it's going to pin at 6375. We're going to sell
+
+[04:59] two calls right here at 6375. And then for these butterflies, we like to go very, very narrow, usually anywhere from 5 to 15 width, usually 10 is the sweet spot. So, let's just go for
+
+[05:11] a 10. You do one at 6385, and you buy the second one at 6365. And this is about one DTE out, so you can see the max loss is going to be 100%,
+
+[05:23] and the max profit is going to be obviously huge. It's very rare that you're going to get this entire thing because this is if it closes directly in the middle on the penny, exactly at 4:00
+
+[05:34] p.m. Eastern time at market close. So, usually what we like to do is wait a little bit for that, uh and as it moves in your direction, you can see the curve starting to flatten. As time goes on,
+
+[05:46] this will heighten, and usually around 3:00 p.m. to 3:30 is when we start to scale out, and you can see that's when the numbers start getting serious. As long as you're anywhere within this
+
+[05:56] range, and you can actually see that even if you're not in the range, right? These two strikes right here, you can be slightly outside of it, but since there's still some time until market
+
+[06:05] close, you can still be up a couple hundred of percent. So, it's a very flexible strategy to use, and it's actually very easy to manage. And it cost you only $40 to put up a one
+
+[06:18] contract. Correct. Yes, so especially with these super narrow call flies, uh the more narrow it is, the cheaper they're going to be. So, we can go right here to
+
+[06:27] contract value. We can see if we're buying it right away, uh it's going to be 0.44, which is a very small price to pay. And by the time you're getting close to expiration, say
+
+[06:38] we were to start scaling out at 3:30, and we're we're in our range, it's going to be anywhere from about one on the the sides of it, and you can al- already get all the way up to three, which if you go
+
+[06:49] to profit and loss, it's going to be about 700% and you still have the last 30 minutes to go. And obviously with these butterfly structures, you want them to stay in that range as the market
+
+[06:59] closes and go all the way to the max profit and get as close as possible to this number right here. There is, of course, as I said, a catch, and the catch here is that you need to hit that
+
+[07:11] very narrow profit tent. And I think it's time to explore how you make your bets and how you try to estimate where that profit tent will be.
+
+[07:23] And let's start with the entry mechanics. For instance, what what time of the day do you put on this trade? Yeah, so typically we like to do it anywhere from 12:00 p.m. to 2:00 p.m.
+
+[07:35] Eastern time. Typically, we might extend that a little bit more with the sweet spot being right at about 2:15 p.m. Eastern time. That is usually seen as the inflection point
+
+[07:46] when the Greeks, the risks from each one, specifically theta, Vega, and Delta, start to shift. So, that's seen as the inflection point. Uh 2:15 on the dot is the sweet spot, and we like to
+
+[07:58] give about a 15-minute window, but sometimes it'll fall outside of that window and we'll get a little bit earlier, uh around 12:00 p.m. or a little bit later around 3:00 p.m. But,
+
+[08:08] most most of these entries will take place in that window, uh in that 2:15 p.m. Eastern time window. And how many trades do you put on?
+
+[08:18] Uh it it depends on the the contract size. So, what we like to do, if we go to SPX right here, essentially, when we're doing the strategy, what we like to see is more of
+
+[08:28] a slow move down, which this is a great example for. I just wanted to use this because it replicates it very easily, where we open uh on the day and we kind of just consolidate around and drift
+
+[08:38] down slowly. Uh with this strategy, we don't want to see any huge, extreme, and violent moves. We want to see more of this contained action, where a little bit
+
+[08:46] smaller candles, we don't have any extreme volume, extreme news events, anything really skewing the results. And then, in this specific case, we can see that once we kind of get around 2:15
+
+[08:56] p.m., this window right here is going to typically be where we start to bottom out and go for a reversal. And what we'll do is one entry right here on the
+
+[09:06] dot at 2:15 p.m., uh and then we'll kind of just scale into it as it goes. So, as it continues chopping around, we'll continue adding a few more contracts and trying to get the
+
+[09:15] best fills possible on these plays. But, are you then uh with the different trades I'm trying to hit several several end points, or are all the trades on the same with the shorts on the same strike?
+
+[09:29] So, all all of these are on the same strike. So, when we do our first entry, we already have a very good idea of where the market is actually going to pin based off some of those indicators
+
+[09:39] we're going to discuss. And we're we're basically betting every single entry on that pin. Uh we're not saying, "Oh, it could pin in this spot, but it also could pin somewhere up here, and we're
+
+[09:49] going to do one of each or a skewed ratio, anything like that." We have our data that tells us where it's going to pin with a high probability, and we just follow exclusively that pin. How many
+
+[10:00] trades might you do on this pin? Uh how many trades as in how many contracts or Uh no, how many how many entries might you do on that pin?
+
+[10:12] How many entries? Got it. So, usually it's only about one to three. And that depends on how long it really stays in that window for. So, for example, say this day where we see our 215 mark right
+
+[10:22] about here, but we can see a little bit before and a little bit after, uh we kind of just consolidated in that same exact zone. So, in in a day like this, we would just set limit orders trying to
+
+[10:33] get the best fill possible, and we would get about two to three entries on this day. Maybe one right here on this push down, one right here on this wick, and then if we're lucky, we might get filled
+
+[10:42] one more last time before we push up. Uh but if there's a situation where it just spikes down, we get filled immediately, and then we get sort of a more violent push back up, more of a quicker push,
+
+[10:54] then we might only get one entry. So, it does it does depend. We just set the limit orders and let the market decide how much it's going to give us. Everyone is now curious. How do you decide your
+
+[11:05] pin? So, obviously that's the the the golden ticket right there. So, we have a bunch of things that we use in order to kind of forecast where the the market is going to go.
+
+[11:15] Uh the easy version is obviously the technicals on the TradingView chart. That's always going to be the the basics, the fundamentals. Uh and for this, we use basic trend lines. I like
+
+[11:26] to use the RSI, as you can see right here. And then this indicator down here, it's called the DSS Bresser. This is also a very useful indicator. And what we like to do
+
+[11:37] is see where the market opens right at 9:30 a.m. And again, this is Eastern time. And step one, like I mentioned previously, we want to see a slow drift down. We're seeing big huge candles,
+
+[11:47] lots of volumes, we don't want to take it. Uh we want something like this. And all we do is see a a simple trend line. I know many people will uh hate on using trend lines. They don't like it too
+
+[11:58] much. Uh I see if there's any type of support, something like this. And then we look at the actual consolidation range. And we can see in here
+
+[12:06] it's been sloping down even since the previous day, right? So, we're kind of in this channel right here. And first off, we will are going to look at the RSI. And anyone who's been trading for
+
+[12:16] any decent amount of time can tell you what this is, a bullish RSI divergence. And that's your first sign because with these butterflies, again, that 2:15 window, it's really
+
+[12:28] that we're indicating a reversal. And without this bullish RSI divergence as confluence, you don't really want to feel too comfortable taking on a reversal. We always want everything to
+
+[12:37] line up. So, that's that's step one. And then step two, once we see that we're in a bullish divergence in price action, and I like to do this on the 5-minute chart. Uh you
+
+[12:47] can go to the 15 as well. Uh the next thing I look at is this Bresser. And what I like to see is during this consolidation phase, we start to cross below this bottom orange
+
+[12:59] band, which is set to 20, and we start to curl over. And this curling motion, it's very similar to the MACD. I'm sure that's uh more familiar uh indicator for most people out there. But it
+
+[13:10] essentially shows that the momentum is switching over. And using these few technicals is all we do for TradingView. Uh these few indicators are all you need. And then the other side of things,
+
+[13:21] which is where most people are uh really you're this type of information, is going to be secondary derivatives. And I use a proprietary model that I have built, but there are a lot of great
+
+[13:33] options Greek really services out there. For example, options depth, spot gamma, there's VS 3D. All of these are great. They do exactly the same thing. But
+
+[13:44] essentially, what those will show is something called the dealer profile. And I'll just draw it out. Very simple to understand. You have a line down the middle,
+
+[13:54] something like this. And you have nodes on this side. Something like this. And typically, you want to look for three nodes, and I'll get to what these
+
+[14:03] nodes are in a second. And then you'll also have nodes on this left side. Something like this. And usually for this type of setup, you want the nodes on the left to sandwich these nodes
+
+[14:15] right here in the right. And essentially, what this is is the dealer inventory, and it shows you the positive and negative gamma and the dealer positions. And what that essentially
+
+[14:25] means is that the dealers are going to have to hedge their positions. In positive gamma, which is this right side, dealers are going to have to essentially fight
+
+[14:35] against whatever the price is doing. So if the price shoots up, dealers are going to have to hedge their position, and they do that by going against it and shorting it. And that is going to drive
+
+[14:45] it back to the mean. And vice versa. If the price shoots down, they're going to have to hedge it by fighting against it. It's going to have it revert back to the mean. And this process is positive gamma
+
+[14:55] hedging. This is what dealers do all day long. And because they they want their delta to be zero. So this is what we look for. And already, with this intact, we can see that this is very conducive
+
+[15:07] for a pin. Right? If dealers are purposely compressing a price in a specific range in order to hedge their positions, this is going to be a very very strong confluence for a potential
+
+[15:18] place that price will pin at the end of the the So that's that's how the positive side works. The negative side is completely the opposite as you would imagine.
+
+[15:27] When price gets to these negative ranges, they're often seen as test levels because instead of hedging the opposite way, dealers will have to hedge the same way. So, if the market goes up,
+
+[15:38] dealers are going to have to hedge by buying more and that's going to send it up further. And it's almost like a domino effect, a chain reaction, a snowball effect, whatever you want to
+
+[15:45] call it, it will just create these very violent moves that are much more extreme and very hard to predict and they're seen as test levels because when you interact with these negative gamma
+
+[15:55] zones, usually price will get here and then have an exacerbated move away from it back into a positive gamma zone where it will then compress and that will lead to a pin. And again, to to conclude
+
+[16:07] here, that's why we like to see this positive gamma really sandwich between negative gamma. And again, there's there's multiple parties out there that offer this type of data. Very simple to
+
+[16:17] use. A lot of them are very quick, very updated and anyone can have access to any sort of this data at all. So, in this example you are showing here, I guess it's a little bit difficult to
+
+[16:28] read the numbers for people, but where did you which day was this and where did you end pinning it? Right. So, this day is Wednesday, March
+
+[16:40] 11th. So, nine times out of 10, I'm sure everyone knows in here that the VWAP is a commonly used indicator. A lot of banking algorithms are actually based around the VWAP. And this VWAP is
+
+[16:54] actually going to nine times out of 10 coincide with the pin. So, right here on this specific day, we pinned right here at 6775. And the reason we did this is not just
+
+[17:04] because, oh, the VWAP is here, we're going to blindly pin this price. It's because one, yes, we look at the VWAP, obviously it's right here, but two, we have the bullish
+
+[17:14] RSI divergence. Now we have two checks. The next check box is we have this brezer starting to cross over and the last check box is that we finally have positive gamma in this area
+
+[17:27] covering this nice little a bit of a cushion, right? Because we are going very narrow 5 to 10 width on this specific day. I believe it was a 10 width that we played. So not not much
+
+[17:37] room for mess up, right? If we get rid of all this and we map out the levels of a 10 width, you can see that it is a decent amount of room, but you can't get to caught up. So this would be the
+
+[17:49] one side and the next side would be right here and we're entering all the way down here. So again, decent but still very narrow range and we want it to be
+
+[17:58] directly in the middle to capitalize on that multiple thousand percent win. So that in common, again just to recap the view up, the RSI divergence, the brezer coupled with the negative and positive
+
+[18:10] gamma all kind of sandwiching a specific area on the map is what's going to give you a high probability trade in order to pin the price at close and the butterfly structure is going to be the elite
+
+[18:23] option when you are capitalizing on that profit potential. You said that you put in limit order awaiting for the good price. How do you determine which price you're willing to pay for this
+
+[18:33] butterflies? So it depends on the speed of the market and again some of the volatility, the VIX, the VRP and all of those other metrics, but typically anywhere from 0.4 to 0.5 in that range
+
+[18:46] is going to be seen as a fairly decent buy that you can start getting into and around this window, what I like to do is just one market order for one single contract, kind of get a gist of how it
+
+[18:57] moves because sometimes on these the bid and ask spread they're they're fairly large and then I'll start setting limit orders to see how low we can actually go. Some I will set
+
+[19:07] conservatively very close to market and some I will set a little bit more aggressive in case of for example any big wicks like say example this one it would give us just a very decent
+
+[19:18] fill. So I always like to just set one market order and then the rest of the limit orders kind of surrounding that in order to ensure that I get the best price possible.
+
+[19:28] Um typically you would pay around 40 50 for one contract. Correct. And if you get in a little bit earlier again sometimes this happens sooner you can get a little bit of a
+
+[19:39] better deal and when you kind of get to the later end sometimes it's a little closer to 55 60. So it also does depend slightly on the time of day. And just to repeat this 40 50 that you
+
+[19:50] paid that is your max loss on that trade. Correct. So these are going to be debits all debits so whatever you are putting in the max loss is that you can't have a you know something like a
+
+[20:01] credit spread or iron condor where you're taking huge you know 800% losses. This is completely capped on your risk. How do you get out of the trade? Do you just let them expire with no management
+
+[20:12] or do you manage them sometimes? So nine times out of 10 we're going to be managing them. So great question. What we typically do is we'll usually have some sort of channel whether it's you
+
+[20:22] know a downwards channel a wedge some type of technical structure however you believe in them whether you believe in them or not we kind of just base it off of that. So for example here
+
+[20:32] we have a downward wedge. What we'll do is start to scale out at the break of whatever structure we're in. So as soon as we break out of here this upper trend line we're officially
+
+[20:41] in this zone where our tent our profit tent our P&L graph that we looked at in option strat is officially in the green. And this move when we're getting in all the way back here
+
+[20:53] a little bit here as well maybe even back here we're already going to be up a couple hundred percent say at this time at about 3:30 we'll already be up say anywhere from 3 to 500%. So at this
+
+[21:05] stage we usually like to close at least half. And the beauty of that is that when you're up at least 3 to 500% and you're closing half of your position, you are
+
+[21:15] now guaranteed to win on that trade, right? Even if the rest goes to zero, you're still making a net profit, and that's a decent size profit. Uh and then from there,
+
+[21:25] I like to scale out every 5 minutes. I'll take off a chunk of the position. Uh and again, depending on how fast it is moving. In this case, it kind of consolidated very, very uh very nicely.
+
+[21:36] It didn't move much at all. So, I didn't have to scale out as quickly. I could hold more until expiration. But sometimes, these rallies will go a little bit stronger than you may expect,
+
+[21:45] uh especially because of that negative gamma, right? If it does end up reaching that negative gamma zone, going through it, it will move up very fast, again because the move is exacerbated, and
+
+[21:55] you'll be forced to scale out a little bit quicker than you would have liked. So, it does take some active management. It does unfortunately take a little bit of discretion sometimes, but watching
+
+[22:04] the price action, really gauging how strong it is, seeing the volume coming in, and seeing the strength of the positive gamma in relation to the negative is going to give you a very
+
+[22:14] good idea of how fast you should be scaling out, and in what sizes you should be scaling out. How many of your contracts will you leave for expiration?
+
+[22:23] I'll usually only leave about a 10th. Uh in this case, it was a very clean example where it consolidated very nicely. We didn't have any huge moves uh threatening to breach our side. So, in
+
+[22:32] this case, I left about 20%. Uh but I really recommend going no more than 20% at an absolute max. Uh 10% is typically what I go for. Again, the only reason why I went a little heavier on this time
+
+[22:44] was just because it was a very uh very clean example to to watch play out. So, this requires pretty active management in the end of the day. Correct. Yeah, so in the beginning of
+
+[22:55] the day, you know, there's not much to do. You really just have to watch, uh have an idea of how the market is moving. You don't want to just, you know, blindly enter. You only really
+
+[23:04] have to get on the charts and then about that window, that 2:15 we talk about over and over. And then really in the last 30 minutes to 1 hour is where all of your effort is going to be because
+
+[23:15] the managing of the of the the butterfly is really all the skill. Anyone can enter it here, anyone can see this window and and find a pin based off the gamma chart and the indicators. Anyone
+
+[23:26] can do that. The actual thing that takes practice is managing it when it hits that 3:30 mark and when it's that final 30 minutes of the market. And you have to sit there, really gauge the strength
+
+[23:37] of the push and understand the mechanics, uh understanding the second derivative Greeks as well, not only gamma, but also understanding vanna and charm and how that's going to affect the
+
+[23:46] market. Uh and understanding all of these things is really what gives you such a substantial edge. It's very rare that you have a strategy uh with a pretty decent win rate, right? 52%
+
+[23:57] nothing special. Uh what makes it special is the risk reward relative to the win rate. Most traders that uh have an incredibly high uh incredibly high risk reward strategy,
+
+[24:08] a lot of their win rates are going to be much lower and that's because that's just the nature of the strategy. Uh but the nature of this strategy, the reason why we're able to really optimize that
+
+[24:19] win rate so heavily is because of the amount of active management that it calls for. And knowing how to manage it, uh scaling out responsibly, managing the risk, uh back testing and always being
+
+[24:30] very, very diligent is what gives you the edge and what makes this such a great strategy at the end of the day. And Jamal, you you're mentioning the second derivative Greeks, uh vanna and
+
+[24:40] charm. Just spend 10 seconds explaining what what do they show? Sure. Yeah, so the three main secondary Greeks, there's there's four, but three
+
+[24:50] main ones are going to be gamma, vanna, and charm. Those are the three that that we use for the strategy. There's also third degree uh derivatives and there's actually one
+
+[24:59] single fourth degree as well. But for the purpose of this strategy, all you need to know are gamma, vanna, and charm. Gamma is going to be the change in delta based on the spot price change
+
+[25:11] in the underlying. So, what that means is for example, say we have our our chart up again. All the positive gamma on this side uh essentially every every trader should
+
+[25:22] be familiar with with delta if you have any amount of experience. That's how much your options contract is going to change per $1 move in the underlying. So, you have an options contract with a
+
+[25:32] delta of 0.2 and the underlying goes up by $1, your options contract is going to go up by this amount. And the gamma is essentially that same relationship where if your gamma is say 0.2
+
+[25:48] and uh the underlying goes up by $1, then that means that your delta is going to go up by 0.2. So, to make it simple, I like to think of it as a analogy where you look at speed and acceleration. When
+
+[26:01] you're driving a car, delta is the speed and acceleration is the gamma because the gamma is the rate of change of the delta. So, that's gamma, uh second-degree derivative. Everyone
+
+[26:14] should know delta, that's one. Uh the second one is vanna. Vanna, not not terribly important to understand all the mechanics, but all vanna is very simple is that same change in delta. So, again,
+
+[26:26] say your delta is 0.2, vanna is going to be the change in this delta and instead of relating to the spot price movement in the underlying like gamma, it's going to be related to the volatility. So, if
+
+[26:38] the volatility increases or decreases, then because of vanna, your delta is also going to change. And the last one is charm, right? So, say you have your same 0.2 delta over
+
+[26:49] here. Charm is the same exact change in Delta, but unlike Vanna, it's not the volatility. Unlike Gamma, it's not the spot price movement. Charm actually reflects the change in Delta as time
+
+[27:01] passes on. Right? If your if your Delta at this stage is .2, and say it goes flatline, all that happens is time passes, even though the price didn't move at
+
+[27:13] all, and the volatility didn't move at all, uh the the time moved. And that time move is what affects your Delta. So, those are the three derivatives. Doesn't matter too much why they work.
+
+[27:25] Um it matters how they work and why it works, or how it works, excuse me, is that when these dealers are hedging, again, remember, they they need to force their Delta to zero. Uh and usually what
+
+[27:35] we like to see that in these positive Gamma environments, we like to see that, okay, all of these are going to be affected by these three main second derivatives, and if we know these second
+
+[27:45] derivatives, if we can calculate them, for example, having this Gamma chart over here that we can look at, we can actually see the amount that these dealers are going to have to hedge, how
+
+[27:55] that's going to affect the price, and again, that is just going to give us an incredible edge over everyone else, because we're going to have a super high probability of knowing where the dealers
+
+[28:06] are going to push the market uh and set our pin there. And that's that's the name of the game. We have to talk about the risk. What is the worst that can happen with this strategy?
+
+[28:16] So, the worst case scenario with this strategy is a 100% loss. So, since it is a debit, uh you can only lose 100% of what you put in. You will never have something blow up and move against you
+
+[28:28] by 1,000%. Uh and and that way it makes it fairly easy to to manage your risk just using a basic stop loss. I always ask my guest to rate their strategy on the risk profile scale, where one is
+
+[28:41] very low risk, and 10 is very high risk. And you are free to define these numbers as you see fit. Where would you place this strategy? You know, traditionally,
+
+[28:54] uh for the average trader, I would say this is an extraordinarily high-risk trade. I'd put it at a nine or a 10, but as Warren Buffett likes to say, or I believe it was Howard Marks, some great
+
+[29:04] investor out there, uh they say that risk is the is the absence of knowledge. And if you have enough knowledge, you can actually reduce the risk. So, by learning,
+
+[29:13] backtesting, and actually practicing the strategy, after I've been doing it for a couple years, I would actually rate this anywhere from a seven to seven and a half on on the
+
+[29:22] risk scale. The benefit, um from a risk perspective, is of course that it is very defined risk. You cannot lose more than what you pay. And
+
+[29:32] if you play if you don't do many contracts, it doesn't need to cost you a lot. Absolutely. That is the the best part, right? So, since the risk reward is huge, you don't have to be risking
+
+[29:42] these these huge amounts. Usually, what I would do in terms of position sizing is stay very conservative. I will never go then it more than an absolute max of a 1% total position, meaning that if
+
+[29:54] everything goes wrong, the most I can lose on my portfolio in one day is only 1%. And using this, I I typically go even smaller, close to half a percent of risk, and say that half a percent of
+
+[30:06] risk with a 2,000% max profit can turn into much more return on on the portfolio. And obviously, 2,000, 5,000, 1,000, whatever the the risk reward ends up being on that specific day, uh it's
+
+[30:20] really going to compound over time, and you're really going to see the effects of using the strategy. Let's talk about your results. You have already mentioned that you have a win rate of 52%
+
+[30:31] on these trades. But I guess the how much you win will vary a lot from couple of dollars to a a Can you say a little bit how these wins distribute?
+
+[30:45] Of course, yes. So, the average winner is actually 1,200%. That is obviously skewed by the max winners, which, you know, drag it out to close to 4 to 5,000%.
+
+[30:55] Uh but most commonly, if we're going with the median, it will be about 750% for for the win. And using that, uh it's it's very hard to uh to lose money with this strategy if you're keeping that 52%
+
+[31:08] win rate. And by by managing it, right? Remember where where where we're scaling out, uh especially in that last 30 minutes to 1 hour of the market, uh it's it's very easy to to keep this as a
+
+[31:19] profitable strategy. And using these methods, uh the strategy actually performs at an annual return of 52% per year. Uh but that the issue with the strategy, even though it's so beautiful,
+
+[31:31] has so many strengths, is that we don't get these plays too often. Usually, we'll only get one of these every two to four weeks. And so, what I like to do is couple other strategies with it, but
+
+[31:42] using this strategy, it will do very well. You just have to have the patience in order to wait for the setups and make sure you're not forcing any dumb trades in there, uh really ruining the
+
+[31:51] statistics of the the optimization that's been done on it. So, you are placing this trade only every second week or so? Correct. Every every two to four weeks.
+
+[32:00] In some market conditions with very low volatility, it will happen more often. Sometimes, it'll happen three or four times in a week, but on average, uh every two to four weeks is is what you
+
+[32:10] can expect when you're using this strategy. And when you say your results were 50 something percent, that is on the average capital that you uh
+
+[32:20] risk on this strategy, I guess. Yeah, that is 52% and average annual return using only this strategy. Right. Let's sum up. How will you sum up this strategy in a few words?
+
+[32:34] Yeah, so the way I would sum up this strategy is that it is really a home run type of play where your win rate isn't anything extraordinary. I know there's a lot of strategy out there with 80 90%
+
+[32:45] win rates but low risk reward. This is the opposite. You're sacrificing that win rate for a heavy hitting win. And by really just accepting a lower win rate, again that 52% win rate, you're able to
+
+[32:57] achieve very high risk rewards that are very in your favor. And by doing that and learning how to scale out appropriately to mitigate a lot of the risk that's associated with these zero
+
+[33:08] DTE strategies, you can not only keep a high win rate, but you can keep a high reward also. So it kind of gives you that asymmetric skew that's really going to just increase the performance. How
+
+[33:20] does this fit with other strategies that you trade, especially zero DTE strategies? So it fit if it's exceptionally well. A lot of zero DTE strategies are high
+
+[33:30] frequency, meaning a lot of these traders will do zero DTE spreads, iron condors, lots of things. And because they're zero DTE, they typically get them on high they get high
+
+[33:41] volume of trades, high frequency of trades. And they'll get them very often. So I always recommend coupling this strategy with a strategy that you do get lots of
+
+[33:51] trades. That way you don't have to sit there and go, you know, a week or two while doing essentially nothing all day. And by having another strategy as a backup that you can consistently rely on
+
+[34:01] for small gains, that really gives you the ability to wait and be exceptionally patient so that when this day does come, you finally hit it, you know what's going on, you're able to take advantage
+
+[34:12] of the market conditions that it's giving you and have a a huge home run. And really coupling those creates a a really nice harmony that just will greatly increase the the performance of
+
+[34:23] your portfolio. And what is your zero DTE backup strategy that allows you to do many trades? Yes, so it does depend on the market condition. Obviously, every good trader
+
+[34:34] out there uh skews their strategy based on the market environment they're in. Uh recently, though, uh since since 2026, I have been doing a lot of zero DTE iron condors where I will enter a 10 delta
+
+[34:48] iron condor right at open, take advantage of that first initial volatility spike, right around the first hour. Uh if you actually go back and back test this, you'll see, but the
+
+[34:58] first 30 minutes of the market be a certain direction, and the next 30 minutes will typically be a retracement. And depending on the strength of that retracement, you'll actually already be
+
+[35:08] up a decent amount, usually anywhere from 40 to 60%, and you start to manage it there. Have a whole bunch of stuff to go into, but that is a very powerful strategy that we've been using. Uh and
+
+[35:18] it's very consistent. And since it's an iron condor, uh it's a credit strategy, you won't have any huge wins like the butterfly, but it's just consistent, small gains every day, and that allows
+
+[35:28] us to wait for these home runs that the butterflies are going to give us. What type of stop loss are you using on those? So, for the iron condors, it I uh the simple one that I suggest using is a
+
+[35:39] just a 100% of max credit. So, your your risk reward is only going to be one to one, but what I typically like to do is not use a stop loss, and I will actually delta hedge the position where if if we
+
+[35:50] breach a certain level, I will put on a put spread or even a butterfly or a debit spread or even a butterfly in that same direction right below or above that specific band that I needed to close
+
+[36:02] above. And by doing that, you essentially act almost like a market maker like we just talked about. You reduce your net delta to zero, and in in a case where it's going to lose your
+
+[36:12] trade, where you would have blown up your entire condor and taken a big hit, uh you're actually, most times, either breaking even or even profiting, uh even when you're wrong. So, it is a one of my
+
+[36:22] favorite go-to strategies for uh for consistency. Um I guess this is a topic for another interview to dig deep into that one. Moving back to this
+
+[36:35] your CRDT butterflies, what are the two or three most important takeaways you want the audience to remember from this interview? I'd give two. So, the one would have to be the quality of data is
+
+[36:48] going to matter a ton when you're doing these more complex strategies. This isn't a strategy that you can, you know, just something like a break and retest where it's very step one, step two, step
+
+[36:59] three, you either win or lose. This is something where there's multiple steps. You have to really know what you're talking about. You have to understand the the mechanics that actually move the
+
+[37:08] market. And by understanding that, you are developing as a trader. You're getting more knowledge than your competition. And that's what the market is about, right? Whoever is more
+
+[37:18] prepared, whoever has spent the time studying will inherently have an advantage over people who haven't. And that edge that you develop on your own is going to really
+
+[37:29] give you that that boost of performance. While everyone else is losing money, you'll know what to do to make money. And this doesn't just go for the butterflies, this obviously goes for any
+
+[37:37] strategy. The more you know, the more you can mitigate risk. And the second thing that I'd take away is to really just use untraditional approaches.
+
+[37:46] Everyone knows about alpha decay in strategies where as soon as everybody knows about something, it stops working, the alpha decays, there's no more advantage if everybody knows it. So, by
+
+[37:57] really going and getting creative with the strategies, you know, looking at these secondary Greeks that people don't usually think of, looking at the third and fourth, looking at whatever it may
+
+[38:06] be, whatever type of knowledge you're out there to seek to develop your edge, the more unknown it is, usually the more profitable it would be. So, those would be my two takeaways. This is
+
+[38:17] complicated strategy in to the extent that it uh takes a lot knowledge, uh uh to to do it. What would be good resources to learn more about this way of trading?
+
+[38:30] Uh a lot of it is actually uh self-taught and taught from my experience at uh a few financial firms, uh working with hedge funds as well. But I'd say for the average person that
+
+[38:40] wants to learn about this, it'd be uh most beneficial to probably start off with something researching it via AI. AI knows a lot about this sort of thing. It won't be as good as, you know, going out
+
+[38:53] seeking a mentor. Uh that's always going to be my number one recommendation. Find someone, whether it's in person, online, someone that really knows what they're doing, someone with verifiable track
+
+[39:02] records. There's obviously a lot of uh you know, sketchy people in the trading space, so make sure you're you're picking someone selective that you know is credible. Uh but picking a
+
+[39:11] mentor is going to be my my number one recommendation for everyone out there looking to learn, whether it's this strategy or something else. And my my second recommendation, which is as a
+
+[39:20] backup, AI is always good to to teach you the fundamentals. Would you have a couple of good books on options trading to recommend to our viewers? Yeah, so uh two good books that I think
+
+[39:32] every serious options trader should use uh should read at some point and really get a good understanding of. One is called Options Volatility and Pricing by, I believe, Sheldon Natenberg
+
+[39:43] Natenberg. Uh you guys can look that one up, and the second one is called Options as a Strategic Investments. They're two very big, very long, very boring books, uh but really reading them diligently,
+
+[39:56] understanding them, is going to take you a very long way in in your options trading. And the last book you mentioned has been mentioned by many guests in the on the on this uh on this uh show. So
+
+[40:07] that is obviously a book that is uh worth reading. I would also recommend people to watch an interview we did with Don McGraw about the gamma levels, which is a very relevant topic for if you want
+
+[40:22] to dig more into this into this way of trading. We do also have a special discount of 20% on Mentor Q, which is one of the softwares that are showing Greeks level or gamma levels that Jamal
+
+[40:36] was talking about. So, the link will pop up on on the screen. Jamal, thank you very much for this very interesting walk-through of your 0 DTE butterfly strategy.
+
+[40:49] Of course, it's been an absolute pleasure, and I thank you for having me on.

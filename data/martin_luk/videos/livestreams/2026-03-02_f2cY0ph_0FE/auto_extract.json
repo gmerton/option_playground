@@ -1,0 +1,209 @@
+{
+  "video_id": "f2cY0ph_0FE",
+  "date": "2026-03-02",
+  "title": "Memory shorts | 2 Mar 2026",
+  "observed_trades": [
+    {
+      "date": "2026-03-02",
+      "ticker": "MSTR",
+      "direction": "short",
+      "action": "stopped_out",
+      "setup": "MicroStrategy short stopped out on the push right at the market open",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-03-02_f2cY0ph_0FE@14:05",
+      "confidence": "stated",
+      "notes": "'I got stopped though for MSTR shorts...right at the market open'",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-03-02",
+      "ticker": "CRCL",
+      "direction": "short",
+      "action": "stopped_out",
+      "setup": "Circle short stopped out as it took out the previous bar high",
+      "entry_basis": "",
+      "stop": "above previous bar high",
+      "source": "2026-03-02_f2cY0ph_0FE@15:14",
+      "confidence": "stated",
+      "notes": "'Stop all circle. Cuz I think it takes out the previous bar high already'",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-03-02",
+      "ticker": "SNDK",
+      "direction": "short",
+      "action": "add",
+      "setup": "Added SanDisk memory short on AVWAP retest; looking for rejection at ~625/635 and follow-through to the downside",
+      "entry_basis": "AVWAP retest, bounce into resistance ~625-635",
+      "stop": "",
+      "source": "2026-03-02_f2cY0ph_0FE@33:57",
+      "confidence": "stated",
+      "notes": "Ticker decoded from garble 'S and T K'/'SNTK' = guessed SNDK; holding all of SNDK/WDC/STX (60:01)",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-03-02",
+      "ticker": "STX",
+      "direction": "short",
+      "action": "entry",
+      "setup": "Shorted Seagate (the weakest memory name); holding STX, SNDK, WDC together",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-03-02_f2cY0ph_0FE@33:57",
+      "confidence": "stated",
+      "notes": "'I want to short the STX'; '60:01 I'm in STX'",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-03-02",
+      "ticker": "WDC",
+      "direction": "short",
+      "action": "hold",
+      "setup": "Holding Western Digital memory short along with STX and SNDK",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-03-02_f2cY0ph_0FE@60:01",
+      "confidence": "stated",
+      "notes": "'I'm in SNTK WDC and STX all three'; WDC held from a prior session",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-03-02",
+      "ticker": "NVDA",
+      "direction": "short",
+      "action": "entry",
+      "setup": "Took an Nvidia short; weekly bearish engulfing closing below weekly 9/21, bouncing into declining weekly 9/21",
+      "entry_basis": "bounce into declining EMAs",
+      "stop": "",
+      "source": "2026-03-02_f2cY0ph_0FE@74:27",
+      "confidence": "stated",
+      "notes": "'I also took the short of Nvidia'; then stopped out (84:27)",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-03-02",
+      "ticker": "NVDA",
+      "direction": "short",
+      "action": "stopped_out",
+      "setup": "Nvidia short stopped out; would try again tomorrow if it doesn't break down",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-03-02_f2cY0ph_0FE@84:27",
+      "confidence": "stated",
+      "notes": "'Looks I'm getting stopped out from the Nvidia'",
+      "fill_timing": "today"
+    }
+  ],
+  "principles": [
+    {
+      "category": "risk",
+      "text": "Risking ~0.3% per trade means you'd need 10 stop-outs in a row to hit a 3% daily drawdown, which rarely happens unless you overtrade or get chopped on both sides the same day.",
+      "timestamp": "78:28"
+    },
+    {
+      "category": "risk",
+      "text": "Use ~3% as a mental daily-drawdown stop, but count only new trades taken that day (not unrealized losses on existing positions); focus on drawdown from peak equity or over the week, not a single day.",
+      "timestamp": "80:53"
+    },
+    {
+      "category": "posture",
+      "text": "Don't trust any move and don't chase: before a strong close back above the EMAs, look only for the short side, especially in the Nasdaq with EMAs trending down and weekly below the 9/21.",
+      "timestamp": "87:43"
+    },
+    {
+      "category": "entries",
+      "text": "The best risk-reward short is taken where the EMAs cluster close together; shorting after price loses the daily 50 / weekly 9 and the EMAs cross down is more optimal than shorting a simple bounce.",
+      "timestamp": "93:33"
+    },
+    {
+      "category": "mindset",
+      "text": "Trade one side at a time; flipping between longs and shorts in a choppy market gets you chopped up and can produce big losing streaks (last December's 26% drawdown came from repeatedly switching directions).",
+      "timestamp": "82:36"
+    },
+    {
+      "category": "entries",
+      "text": "Prefer the weaker name within a strong sector for a sympathy short (e.g. CK/Western Digital over the leaders), and use leaders' 9 EMA and swing-high AVWAP as the resistance reference.",
+      "timestamp": "36:03"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "06:02",
+      "caption_text": "SNDK is opening lower than the previous day low under the anchor view up",
+      "context": "Memory name he's shorting; resistance ~625/635; main character of the day",
+      "guess": "SNDK",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "07:34",
+      "caption_text": "this L A S R and the A O I... the optics theme",
+      "context": "Optics-theme names gapping up on Iran news; AOI up ~100% in two days",
+      "guess": "LASR",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "08:00",
+      "caption_text": "A O I up uh 100% in just two trading days",
+      "context": "Optics theme leader running hard",
+      "guess": "AAOI",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "06:58",
+      "caption_text": "WDC and Red Cat is the strong names gapping up because of the Iran news",
+      "context": "Names gapping up on Iran news; Red Cat = drone name",
+      "guess": "RCAT",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "23:25",
+      "caption_text": "CK is a weaker one. We should have traded this one rather than Western Digital",
+      "context": "A weaker memory/semi name he wishes he'd shorted instead of WDC",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "10:21",
+      "caption_text": "The strongest name. It's a light and Corning",
+      "context": "Optics leaders; 'light' is a recurring strong optics name, plus Corning (GLW)",
+      "guess": "GLW",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "36:36",
+      "caption_text": "A V A V 2. A V A V is I believe it's near the angle V up",
+      "context": "Defense/drone name near AVWAP, could reverse below 50 EMA",
+      "guess": "AVAV",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "56:15",
+      "caption_text": "IGV has a huge volume candle last week on a key level 77 area",
+      "context": "Software ETF with huge volume on a key level, weak price action, possible short setup",
+      "guess": "IGV",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "61:01",
+      "caption_text": "Bare triple ETF for semis... this is a merge",
+      "context": "Low-priced bearish 3x semiconductor ETF he holds; mentions a reverse-split/merge",
+      "guess": "SOXS",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "91:16",
+      "caption_text": "Rocket Lab on the short side",
+      "context": "Space/drone name; best risk-reward short where EMAs cluster; relative weakness vs Planet Lab",
+      "guess": "RKLB",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "71:39",
+      "caption_text": "The planet that is freaking out. Really crazy",
+      "context": "Planet Labs strong; compared with Rocket Lab as short candidate",
+      "guess": "PL",
+      "confidence": "likely"
+    }
+  ]
+}

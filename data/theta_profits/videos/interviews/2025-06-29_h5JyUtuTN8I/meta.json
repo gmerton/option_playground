@@ -1,0 +1,19 @@
+{
+  "video_id": "h5JyUtuTN8I",
+  "url": "https://www.youtube.com/watch?v=h5JyUtuTN8I",
+  "title": "Jade Lizard Options Strategy Explained: No Upside Risk!",
+  "channel": "Theta Profits",
+  "channel_id": "UCzGARfberQ8nRRbsjK90BHg",
+  "stream_date": "2025-06-29",
+  "duration": "26:34",
+  "summary": "Ross Young (repeat guest, no sales motive) pitches the tastytrade Jade Lizard and Big Lizard: a short put financed by a short call spread sized so net credit >= call-spread width, which really does eliminate upside risk at expiry. He credit-selects strikes (put ~$0.70, $1-wide call spread) on cheap high-IV ETFs like GDX/GDXJ, 45 DTE, 50% PT (25-30% for Big Lizard), 3x-credit stop. The 'no upside risk' claim is mechanically true, but the title buries the real exposure: a naked short put on gap-prone gold-miner ETFs, and his 'close to 90% win' is untracked, self-reported, and inflated by his own admission that he refuses to close losers and rolls them out indefinitely (one GDXJ position for 2+ years). Real structure, honest presenter, no track record; the rolling that supposedly produces the win rate is loss-deferral, not edge. Write-up: strategies/jade_lizard.md (conviction 2/5).",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

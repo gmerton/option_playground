@@ -1,0 +1,267 @@
+{
+  "video_id": "tx321OQ8iD0",
+  "date": "2026-06-24",
+  "title": "Flawed plan with perfect execution | 24 Jun 2026",
+  "observed_trades": [
+    {
+      "date": "2026-06-24",
+      "ticker": "?",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Existing long position stopped out right at the open as the market gapped/pushed lower after yesterday's weak close.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-06-24_tx321OQ8iD0@03:57",
+      "confidence": "stated",
+      "notes": "Caption: 'I got stopped out from T right at the gate.' Ticker garbled to 'T' by auto-captions; genuinely unresolvable (literal T/AT&T unlikely for his style). Logged in ambiguous_tickers.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-06-24",
+      "ticker": "?",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Portfolio-wide decision: heavily long into the index pullback, chose to hold ALL positions and let predefined stops manage the exits instead of discretionary selling into weakness.",
+      "entry_basis": "",
+      "stop": "Predefined per-position stops; explicitly accepts ~25% drawdown if a black-swan gap-down stops out everything (@114:57)",
+      "source": "2026-06-24_tx321OQ8iD0@15:12",
+      "confidence": "stated",
+      "notes": "Not a single ticker - his whole long book. 'I decided to ... hold all my positions and let the stops guide me through this pullback.' Reiterated @113:33-114:18. This is the 'plan' the stream title refers to executing.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-06-24",
+      "ticker": "FLEX",
+      "direction": "long",
+      "action": "buy",
+      "setup": "Relative-strength name he'd tracked since yesterday, setting up nicely; bought the intraday pullback into the short-timeframe 9 EMA. Chose Flex over Sterling (STRL) because Sterling's bid-ask spread was too wide (~$12).",
+      "entry_basis": "Intraday pullback into 5/15-minute 9 EMA, then lower-timeframe candle breakout",
+      "stop": "Non-low-of-day stop: breakout candle low on the 5/15-minute chart (cited @105:58 as one of today's non-LOD stop examples)",
+      "source": "2026-06-24_tx321OQ8iD0@38:38",
+      "confidence": "stated",
+      "notes": "'I'm going with Flex' @38:38; immediately after says he's nearly out of buying power @40:16; confirms the fill @105:58: 'Flex today is another one' (example of a non-low-of-day stop he used today).",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-06-24",
+      "ticker": "ALAB",
+      "direction": "long",
+      "action": "buy",
+      "setup": "One of today's buys, cited as an example of using a non-low-of-day (tighter, breakout-candle-low) stop.",
+      "entry_basis": "Lower-timeframe breakout after finding support (his standard pullback-buy trigger)",
+      "stop": "Non-low-of-day stop: 5/15-minute breakout candle low",
+      "source": "2026-06-24_tx321OQ8iD0@105:58",
+      "confidence": "inferred",
+      "notes": "Caption: 'A lap today is one of the example' - interpreted as ALAB (Astera Labs), a Luk-style AI-hardware momentum name. Logged in ambiguous_tickers. Fill implied by citing it as a stop he used today.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-06-24",
+      "ticker": "MRVL",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Long position stopped out during the mid-morning market flush.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-06-24_tx321OQ8iD0@65:24",
+      "confidence": "inferred",
+      "notes": "Caption: 'Normal guys stopped us from war fell' - read as 'Now I got stopped out from Marvell'. Corroborated @73:56: 'If I got stopped out from IONQ I'll probably buy back my [Mar]vell', implying MRVL was just sold/stopped. Logged in ambiguous_tickers.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-06-24",
+      "ticker": "IONQ",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Holding an existing IONQ long through quantum-sector weakness; stock weak today but sitting at the daily 50 EMA / weekly 9 EMA in the handle of a cup-with-handle, so he judges the hold's risk/reward solid.",
+      "entry_basis": "",
+      "stop": "Existing stop in place - 'If I got stopped out from IONQ I'll probably buy back my Marvell'",
+      "source": "2026-06-24_tx321OQ8iD0@73:56",
+      "confidence": "stated",
+      "notes": "Position existence explicit via the conditional stop-out remark. Follow-on chart commentary @75:43-76:22 (daily 50 EMA + weekly 9 EMA + cup-with-handle handle, first pullback to the 50) appears to describe this quantum position context.",
+      "fill_timing": "today"
+    }
+  ],
+  "principles": [
+    {
+      "category": "market_read",
+      "text": "Never judge market health from a single index indicator (e.g. QQQ below the 20 EMA); analyze the action of individual stocks first - if leaders are finding support at rising EMAs and building higher lows, the market is fine regardless of the index chart.",
+      "timestamp": "85:01"
+    },
+    {
+      "category": "market_read",
+      "text": "IWM/small-cap relative strength is a better breadth gauge than the cap-weighted indexes; when small caps keep outperforming during a pullback, breadth is improving and the odds of a deep correction are statistically lower.",
+      "timestamp": "89:54"
+    },
+    {
+      "category": "posture",
+      "text": "In a fast 'lockout rally' market, keep making entries on pullback days rather than waiting for the uptrend to be obvious - missing the first day or two of the new leg means being left out entirely.",
+      "timestamp": "94:05"
+    },
+    {
+      "category": "entry",
+      "text": "When buying a pullback, don't buy on the way down - wait for the stock to find the support level and then take the first 5-minute or 15-minute candle breakout as the entry trigger.",
+      "timestamp": "108:43"
+    },
+    {
+      "category": "entry",
+      "text": "After a gap up, the best entry is the intraday dip into the 9/21 EMA or into the newly created gap, rather than chasing the gap open itself.",
+      "timestamp": "102:24"
+    },
+    {
+      "category": "entry",
+      "text": "Avoid wide-spread, thin stocks even when the setup is good - a ~$12 bid-ask spread is reason enough to take the equally good but more liquid alternative.",
+      "timestamp": "38:38"
+    },
+    {
+      "category": "risk",
+      "text": "Define the stop before entry as the level that proves the trade wrong, then trust it - trying to outsmart your stops occasionally helps but loses over time when the market is still range-bound rather than extended.",
+      "timestamp": "115:33"
+    },
+    {
+      "category": "risk",
+      "text": "Non-low-of-day stops (the 5- or 15-minute breakout candle low) lower your win rate but tighten risk substantially; accept the extra stop-outs and be willing to re-enter if the stock bounces back.",
+      "timestamp": "106:21"
+    },
+    {
+      "category": "exit",
+      "text": "Only sell into strength or close positions early when the market is genuinely extended; inside a range/pullback, let the stops do the selling.",
+      "timestamp": "116:37"
+    },
+    {
+      "category": "exit",
+      "text": "To capture big trends you must hold through pullbacks and ugly red days - if you sell your leaders on every red day you exit at a third of the move; if holding everything is too hard, sell some into strength and hold the rest with realized profits as a cushion.",
+      "timestamp": "118:32"
+    },
+    {
+      "category": "psychology",
+      "text": "Losing trades are not the same as bad trades - lose small and win big; a triple-digit year is possible while making many mistakes, because the edge comes from continually correcting them, not from IQ.",
+      "timestamp": "131:45"
+    },
+    {
+      "category": "psychology",
+      "text": "It's better to miss an opportunity than to chase an extended move and get stopped out - chasing damages mental capital and makes you hesitate on the next valid setup, and a bull market always offers more opportunities.",
+      "timestamp": "149:26"
+    },
+    {
+      "category": "process",
+      "text": "Don't blindly copy another trader's rules - question each one, adopt only what fits your personality and style, and modify the rest; disagreeing with famous traders after thinking it through is part of improving.",
+      "timestamp": "122:53"
+    },
+    {
+      "category": "process",
+      "text": "Always study your losing trades; a trader who stops examining mistakes and looking for room to improve is doomed to fail no matter past success.",
+      "timestamp": "134:32"
+    },
+    {
+      "category": "process",
+      "text": "When traveling, trade less: let stops manage existing positions, take only A+ setups or none at all - trades made while traveling are generally bad.",
+      "timestamp": "129:20"
+    },
+    {
+      "category": "posture",
+      "text": "The best opportunities show up during pullbacks and weakness - at support in an intact uptrend, don't get super bearish or ignore the upside potential, even if this bounce isn't guaranteed to be the next leg up.",
+      "timestamp": "155:32"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "03:57",
+      "caption_text": "I got stopped out from T right at the gate",
+      "context": "An existing long position hit its stop right at the open.",
+      "guess": "?",
+      "confidence": "uncertain"
+    },
+    {
+      "timestamp": "65:24",
+      "caption_text": "Normal guys stopped us from war fell",
+      "context": "Announcing a stop-out during the intraday flush; likely 'Now I got stopped out from Marvell'.",
+      "guess": "MRVL",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "73:56",
+      "caption_text": "If I got stopped out from IONQ I'll probably buy back my my fell",
+      "context": "Plans to re-buy the name he was stopped out of earlier if his IONQ stop hits; 'fell' = Marvell.",
+      "guess": "MRVL",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "105:58",
+      "caption_text": "A lap today is one of the example and uh Flex today is another one",
+      "context": "Citing today's positions where he used a non-low-of-day (breakout candle low) stop.",
+      "guess": "ALAB",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "110:02",
+      "caption_text": "for Cypher, I could set an order for near the 25 the low 25s levels",
+      "context": "Occasional exception where he would place a resting limit order at a level instead of waiting for a breakout; unfilled intent, not a trade.",
+      "guess": "CIFR",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "09:47",
+      "caption_text": "On 9F Q because the quantum is pretty weak today, but still within the range",
+      "context": "Quantum-sector name that is weak today but still inside its range; he holds IONQ per 73:56.",
+      "guess": "IONQ",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "56:50",
+      "caption_text": "I think Grado and Quantum sounds so great sub",
+      "context": "Names looking like great setups during the flush (he is out of buying power).",
+      "guess": "CRDO",
+      "confidence": "uncertain"
+    },
+    {
+      "timestamp": "69:20",
+      "caption_text": "this Morpheus is going to probably go to thousand. And I can't do anything at all",
+      "context": "A strong runner he has no buying power to enter; says it could go to $1000.",
+      "guess": "?",
+      "confidence": "uncertain"
+    },
+    {
+      "timestamp": "04:38",
+      "caption_text": "such as this Sterling and Flex",
+      "context": "Relative-strength names tracked from yesterday; 'Sterling' recurs all stream, later rejected for its ~$12 wide spread (couldn't get filled @55:07).",
+      "guess": "STRL",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "22:14",
+      "caption_text": "fortunate is holding up pretty well. So I believe like 706 705 will be will be a level",
+      "context": "Name tracked since yesterday holding up well; 'Fortinet' named explicitly @04:48, though the 705/706 level may belong to a different chart he flips to.",
+      "guess": "FTNT",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "78:41",
+      "caption_text": "Firm is breaking out today",
+      "context": "Fintech/finance-software names getting strong; 'Firm' breaking out.",
+      "guess": "AFRM",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "86:22",
+      "caption_text": "ETMI finding support at the 9 EMA and closed very strong",
+      "context": "Example of an individual stock showing strength despite the weak index close yesterday.",
+      "guess": "?",
+      "confidence": "uncertain"
+    },
+    {
+      "timestamp": "88:16",
+      "caption_text": "This rubric is breaking out yesterday",
+      "context": "Example of stocks breaking out despite the index gap-down.",
+      "guess": "RBRK",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "89:03",
+      "caption_text": "like AOI, that is uh breaking down from the 50 EMA",
+      "context": "One of the relatively few leaders actually breaking down; normal for some leaders to fall apart in a bull market.",
+      "guess": "AAOI",
+      "confidence": "likely"
+    }
+  ]
+}

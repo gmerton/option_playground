@@ -1,0 +1,19 @@
+{
+  "video_id": "D2P-0xh6aEM",
+  "url": "https://www.youtube.com/watch?v=D2P-0xh6aEM",
+  "title": "The Anchored VWAP Edge Most Traders Never Discover",
+  "channel": "TheOneLanceB",
+  "channel_id": "UCzksXiC-Ju-DTIZmMiaOVfQ",
+  "stream_date": "2025-07-15",
+  "duration": "9:26",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

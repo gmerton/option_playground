@@ -1,0 +1,19 @@
+{
+  "video_id": "7FbTZZNljSo",
+  "url": "https://www.youtube.com/watch?v=7FbTZZNljSo",
+  "title": "I Only Trade Stocks That Meet This Criteria",
+  "channel": "TheOneLanceB",
+  "channel_id": "UCzksXiC-Ju-DTIZmMiaOVfQ",
+  "stream_date": "2025-12-13",
+  "duration": "6:33",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

@@ -1,0 +1,143 @@
+{
+  "video_id": "wiyv0ISHiHk",
+  "date": "2026-02-18",
+  "title": "Wait for the close | 18 Feb 2026",
+  "observed_trades": [
+    {
+      "date": "2026-02-18",
+      "ticker": "SMR",
+      "direction": "short",
+      "action": "stopped_out",
+      "setup": "Short; got out with a tiny gain as it bounced strongly and closed above the 9 EMA",
+      "entry_basis": "",
+      "stop": "stopped out / exited tiny gain",
+      "source": "2026-02-18_wiyv0ISHiHk@10:21",
+      "confidence": "stated",
+      "notes": "Caption 'NPS' = SMR; he later says 'other than the SMR I don't have much follow-through from the shorts'; interpreted ticker; stopped out yesterday",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-02-18",
+      "ticker": "SNDK",
+      "direction": "short",
+      "action": "reentry",
+      "setup": "Re-entered short the prior day on a 15-minute breakdown; very strong stock so he doesn't feel safe even though gapping down",
+      "entry_basis": "15-minute breakdown",
+      "stop": "wants it rejected by the 9 EMA; needs to close below 9 EMA 2-3 days to confirm",
+      "source": "2026-02-18_wiyv0ISHiHk@13:16",
+      "confidence": "stated",
+      "notes": "Caption 'SNDK'; re-entry stated",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2026-02-18",
+      "ticker": "?",
+      "direction": "short",
+      "action": "stopped_out",
+      "setup": "Shorting some names intraday but the market wants to go higher; stopped out",
+      "entry_basis": "",
+      "stop": "stopped out",
+      "source": "2026-02-18_wiyv0ISHiHk@31:33",
+      "confidence": "stated",
+      "notes": "Ticker not identified ('shorting some sticks'); generic intraday shorts that got stopped",
+      "fill_timing": "today"
+    }
+  ],
+  "principles": [
+    {
+      "category": "risk",
+      "text": "Risk only ~0.3% of the account per trade; reducing per-trade risk makes losing streaks and drawdowns far more manageable and suits an aggressive lower-timeframe entry style.",
+      "timestamp": "16:09"
+    },
+    {
+      "category": "exits",
+      "text": "Wait for the close to confirm strength before acting; a strong first 30-60 minutes isn't enough — names rallying into resistance must prove they close strong, not just spike.",
+      "timestamp": "45:21"
+    },
+    {
+      "category": "entries",
+      "text": "Skip the first 15 minutes after the open — it's super volatile (a name can be +10% then -5%); sit out and observe before entering.",
+      "timestamp": "24:32"
+    },
+    {
+      "category": "posture",
+      "text": "No need to rush entries in a choppy market; if it holds above the EMAs and doesn't quickly reverse, then start searching for longs or get more aggressive.",
+      "timestamp": "26:58"
+    },
+    {
+      "category": "entries",
+      "text": "For a short to confirm a resistance, require the stock to close below the 9 EMA for at least two to three days, not a single day.",
+      "timestamp": "14:44"
+    },
+    {
+      "category": "mindset",
+      "text": "This market is genuinely difficult; if you're not trading well right now that's completely okay — protect mental capital alongside financial capital.",
+      "timestamp": "17:59"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "06:20",
+      "caption_text": "I have one short candidate for today that is called leaf",
+      "context": "Short candidate; weekly rejected from 21 EMA, closed below 9/21 with EMAs close together; later 'the left is getting follow through'",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "10:21",
+      "caption_text": "And I got stopped out of NPS yesterday",
+      "context": "A short that bounced strongly and closed above the 9 EMA; he later refers to 'the SMR'",
+      "guess": "SMR",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "31:33",
+      "caption_text": "I am shorting some sticks ... Stopped open",
+      "context": "Shorting some unnamed names intraday that got stopped out as the market pushed higher",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "20:07",
+      "caption_text": "PL is consolidating above the 50 EMA but below the 9 and 21 on the weekly",
+      "context": "A name hanging around the 9 EMA, stronger than Rocket Lab; later 'PL is rejecting at the 21 EMA'",
+      "guess": "PL",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "20:22",
+      "caption_text": "compared to Rocket Lab or STS",
+      "context": "Comparing relative strength among satellite/space names",
+      "guess": "RKLB",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "23:19",
+      "caption_text": "an hourly nine is a pretty important key level for the kills and this buy",
+      "context": "Discussing index key levels; 'kills' = QQQ (cues), 'buy/spy' = SPY",
+      "guess": "QQQ",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "23:19",
+      "caption_text": "SCG just turn just down 10% in the first minute candle",
+      "context": "A super-volatile name down 10% in the first minute then bouncing; later 'The SCG is so weak'",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "39:09",
+      "caption_text": "Barack is on a declining nine. 4 out 21",
+      "context": "A name on a declining 9 EMA, below the 21",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "67:35",
+      "caption_text": "Core web is reclaiming the EMAs trying to ... could be a long if it can hold above the EMAs and close strong",
+      "context": "Reclaiming EMAs, potential long if it holds and closes strong near anchor VWAP",
+      "guess": "CRWV",
+      "confidence": "likely"
+    }
+  ]
+}

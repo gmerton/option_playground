@@ -1,0 +1,19 @@
+{
+  "video_id": "JtGW1wNFNIY",
+  "url": "https://www.youtube.com/watch?v=JtGW1wNFNIY",
+  "title": "How Steve turns Double Calendar Spreads Into Risk-Free Iron Condors",
+  "channel": "Theta Profits",
+  "channel_id": "UCzGARfberQ8nRRbsjK90BHg",
+  "stream_date": "2026-06-07",
+  "duration": "48:41",
+  "summary": "Steve Bernich (NavigationTrading) pitches the 'DC Time Machine': enter an SPX double calendar, then once it shows ~5-10% profit convert it in one order into an iron condor whose net credit exceeds the wing width, making the condor structurally no-loss and freeing buying power. The 'risk-free' label is true only post-transform (~60% of the time); the real, unstopped risk sits in the un-transformed double calendar. Write-up: strategies/dc_time_machine.md (conviction 2/5).",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

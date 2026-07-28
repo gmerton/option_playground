@@ -1,0 +1,19 @@
+{
+  "video_id": "FFGSFSk6Dn8",
+  "url": "https://www.youtube.com/watch?v=FFGSFSk6Dn8",
+  "title": "Selling Gold Futures Credit Spreads For Income (10% Per Month Case Study)",
+  "channel": "Theta Profits",
+  "channel_id": "UCzGARfberQ8nRRbsjK90BHg",
+  "stream_date": "2026-02-01",
+  "duration": "31:58",
+  "summary": "Azhar Pasha (anesthesiologist trading from Vietnam; name uncertain from auto-captions) sells one-sided daily credit spreads on /GC gold-futures options — 10-delta short / $10 wide, put-spread or call-spread chosen by reading the 4am London-open trend, off at 80% profit — claiming ~10% of account per month over a single 6-month account. Skeptic view: n=1 self-reported case study in a historic gold bull run (a benign regime for his bullish put-spread default), with NO stop-loss — he 'never takes a loss' but rolls a 4x-underwater spread to the next day, flipping puts/calls and adding contracts, the classic loss-deferral pattern that hides realized losses and eventually blows up on the path. Tail is real (leveraged futures, physical gold assignment at $27k/contract, naked-short-future exposure on a wrong-way roll); he self-rates risk 7, we rate 8. Untestable on our stack twice over: /GC futures options aren't in silver.options_daily_v3, and the 4am-entry / intraday-roll mechanics are sub-EOD anyway. Write-up: strategies/gold_futures_credit_spreads.md (conviction 1.5/5).",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

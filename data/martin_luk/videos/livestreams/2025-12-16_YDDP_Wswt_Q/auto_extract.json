@@ -1,0 +1,56 @@
+{
+  "video_id": "YDDP_Wswt_Q",
+  "date": "2025-12-16",
+  "title": "Short the bounce | 15 Dec 2025",
+  "observed_trades": [
+    {
+      "date": "2025-12-16",
+      "ticker": "TSLA",
+      "direction": "long",
+      "action": "exit",
+      "setup": "Sold Tesla last Friday; regrets it (panic sell) but justifies it by disliking the many strong, clean reversals across other stocks and not being good at holding both longs and shorts at once",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2025-12-16_YDDP_Wswt_Q@11:18",
+      "confidence": "stated",
+      "notes": "'Tesla' = TSLA; the sell was executed last Friday; discussed as a regret",
+      "fill_timing": "friday"
+    },
+    {
+      "date": "2025-12-16",
+      "ticker": "?",
+      "direction": "short",
+      "action": "entry",
+      "setup": "All starts from the daily: Friday broke down losing 9/21 and prior base lows; green-open bounce toward declining 9/21 hourly, then he took a short after seeing a huge 1-minute red reversal candle following a huge green candle",
+      "entry_basis": "short on a huge 1-minute red reversal candle into declining 9/21 EMA after a green-open bounce",
+      "stop": "",
+      "source": "2025-12-16_YDDP_Wswt_Q@72:44",
+      "confidence": "stated",
+      "notes": "Caption 'SNTY' is a shaky decode; symbol not clearly established. He describes taking the short live this session.",
+      "fill_timing": "today"
+    }
+  ],
+  "principles": [
+    { "category": "macro", "text": "When indices try to climb but the tech-related names (SMH/XLK) are under the 9 and closing below the 21 with the 21 crossing under the 50, those names face pressure climbing into declining MAs — a non-bullish backdrop.", "timestamp": "03:57" },
+    { "category": "risk", "text": "Gap-down risk is a core, unavoidable part of trading; for small/micro caps (<~$2B) a >30% gap down is common, so use smaller size, take profits more aggressively, or avoid those trappy names entirely.", "timestamp": "14:44" },
+    { "category": "entries", "text": "When the 9 is under the 21 (downtrend), a bounce back to the 21 EMA has a very high win rate for shorts; a multi-day base/flag bounce before rejection has a higher win rate than a one-day bounce, though both are tradeable.", "timestamp": "58:39" },
+    { "category": "mindset", "text": "Study setups in hindsight across hundreds of examples (he uses the 1-hour chart) to learn which entry context — opening-range, prior-bar breakout, 21 EMA pullback — actually stands out, rather than only chasing rare perfect 5-star setups.", "timestamp": "49:31" },
+    { "category": "risk", "text": "Tight stops are his style and carry their own edge; an 8% prior-day-high stop is not for him — develop a personal style, but risk management is non-negotiable.", "timestamp": "53:48" },
+    { "category": "exits", "text": "In a divergent/weak market, protect profits more aggressively and sell into strength; in a stronger market allow positions more room to pull back.", "timestamp": "78:10" },
+    { "category": "posture", "text": "Don't short after everything has already gone straight down and you have no profit cushion; missing those entries can be a blessing, and don't trade both longs and shorts at once if it doesn't suit you.", "timestamp": "45:14" }
+  ],
+  "ambiguous_tickers": [
+    { "timestamp": "22:45", "caption_text": "The weekly of Hims is looking so bad. Looking ... like it's going to enter stage three I mean stage four", "context": "Weekly looks like a huge topping pattern entering stage four", "guess": "HIMS", "confidence": "likely" },
+    { "timestamp": "26:28", "caption_text": "BE will will be a will be a very profitable short if if the market stays weak", "context": "Short any bounce if the market stays weak", "guess": "BE", "confidence": "likely" },
+    { "timestamp": "30:23", "caption_text": "Oh, S and D case. It's ready. S and D case for the bounce on the 21 and the nine", "context": "Ready for a bounce on the 21/9 toward 18-19, a short candidate into 21/50", "guess": "SNDK", "confidence": "unsure" },
+    { "timestamp": "48:35", "caption_text": "And August rejecting fading from the declining EMAs in a 1-hour chart", "context": "Fading from declining EMAs on the hourly and daily", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "50:10", "caption_text": "for example, I traded uh ALNQ today", "context": "A name he traded today, used for a hindsight study walkthrough", "guess": "IONQ", "confidence": "unsure" },
+    { "timestamp": "51:46", "caption_text": "with this IONQ, if you're trading a There is no like um the five-star setups here", "context": "Detailed hindsight study of entries on the earnings breakout and the subsequent downtrend", "guess": "IONQ", "confidence": "likely" },
+    { "timestamp": "64:43", "caption_text": "Oclo 9th of September ... under 9 and 21 although ... really really tight", "context": "Hindsight study example; inside day, two reversals off the 50-day, quantum-correlated weekly", "guess": "OKLO", "confidence": "likely" },
+    { "timestamp": "72:44", "caption_text": "SNTY ... it all starts from the daily ... I took a short after I see this candle", "context": "His live short: daily breakdown, green-open bounce, 1-minute red reversal", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "76:33", "caption_text": "Straight down this APLD. Okay", "context": "Name going straight down", "guess": "APLD", "confidence": "likely" },
+    { "timestamp": "77:06", "caption_text": "in puffs wall It closed below the 9 on last Friday. 17.42", "context": "Closed below 9 EMA Friday at 17.42; would sell on break of Friday's low", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "79:18", "caption_text": "this riot, too ... This 90 EMA pullback could be one entry", "context": "Short idea; 9 EMA pullback coinciding with swing lows", "guess": "RIOT", "confidence": "likely" },
+    { "timestamp": "79:47", "caption_text": "the gap down with hive ... Oh, what's this? I RBK? ... This kept down", "context": "Gap-down small/micro caps used to illustrate gap-down risk", "guess": "HIVE", "confidence": "unsure" }
+  ]
+}

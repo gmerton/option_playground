@@ -1,0 +1,269 @@
+[00:00] and on average it's about 10% a month. My guest today balances running a doctor's office with options trading and he has done very well with his trading so far. Today he will present his latest
+
+[00:14] zero DTE strategy called adaptive butterfly. Welcome Asar Pasha. Thank you. Give us the 42nd version of your zerod strategy and how it is working for you.
+
+[00:28] So basically I've been trading the zerodt spx credit spreads for the past five years. However, you know when things go bad when the market moves strongly against you even having a
+
+[00:43] credit spread does not protect you completely and you it can lead to large losses. So what I came up with the strategy is to have a broken wing butterfly on the put side or on the call
+
+[00:56] side depending on the trend of the day in which you have one debit spread facing the market and then you have two credit spreads out of the money. In that way, if the market moves against you,
+
+[01:11] you have some protection. And then the goal is to is to be able to flip the put spread into a call spread or or vice versa if uh the market moves against you.
+
+[01:27] And this has been going very well with you for you so far, I understand. Yes, sir. So I I've been doing it for about three months now and uh I've been averaging about 10% results a month
+
+[01:41] being very conservative and using a smaller portion of my account with the goal of being uh you know to go to all cash every night. So the the any rolling involved does not roll roll to the next
+
+[01:58] day. It is only rolled same day and having the debit spread facing the market as protection has really helped with that because as the credit spread gets uh in a loss the debit spreads they
+
+[02:16] go into profit and they act as a shield to protect against market action if it goes against you. I'm very eager to get into the details of this uh strategy, but first tell us a
+
+[02:31] little bit about yourself. So, I'm a physician. I've been uh I've been in private practice for the past 22 years. I'm an anesthesiologist, but I focus on the interventional pain
+
+[02:43] procedures. I was always interested in the stock market. I started buying stocks when I was in med school in in the 90s. I've been doing some sort of option trading at least full-time for
+
+[02:56] the past five years and I I normally sell premium. So I normally sell options of course if I do a spread I would buy the option too but uh so the idea is to sell premium to generate any profits. I
+
+[03:14] still practice medicine two days a week. I've been phasing out that part of my life and I'm uh focusing more and more on the trading. That must mean that u your trading is
+
+[03:26] going quite well then. Yes sir. I've been I've been very fortunate and uh I've been uh I've been getting good results with the trading for the past three years which has given
+
+[03:37] me the confidence to scale down my 9-to-five job. So let's dig into your latest strategy zero DTE adaptive butter offly. What are you trying to achieve with this strategy?
+
+[03:53] So the idea is to sell premium and for the zero DTE you uh most people either sell a put spread, a call spread or they sell the iron condor. And the idea is to sell premium and to be able to close or
+
+[04:10] to let it expire out of the money the same day to generate uh you know some degree of profit. And that's what I've been trying to do for the past five years. However,
+
+[04:23] one bad day in the market can erase months of of gains and the market can move really fast against you. So the idea that I came up with but with trial and error which is not new is to have a
+
+[04:41] broken wing butterfly in which you are selling two out of the money credit spreads while you're buying one more towards the money you debit spread and the debit spreads
+
+[04:57] acts as protection if everything goes according to plan you're able to close the credit spreads for the least amount of debit and then you can sell the debit spread back and
+
+[05:14] that takes away some of the debit you know that you had to use to close it and the idea or the goal is to sell premium and to be able to go to all cash by the end of the day. I also have not learned
+
+[05:32] to look at the gamma uh flows in which you can can look at the live market data. There are lot of many websites now who sell that uh that data and it can show
+
+[05:49] you in real time what the market maker positioning is as compared to the customer positioning and that can lead to identification of the resistance and the support levels. And the way I think
+
+[06:05] about it is that if the market makers are long at a certain strike by a large amount that means is when the market moves away from them they have to you know balance it. So they sell.
+
+[06:25] Now when the market moves towards them they have to balance to stay neutral and and they buy. So very simply those levels can be very helpful in trying to predict
+
+[06:41] market action and of course they change during the day and that is why it is imperative to look at live data during the day and of course they are also affected by by the market price.
+
+[07:00] So we will dig into the details but uh maybe we first should uh bring up an example so that everyone is clear about uh what an trade like this would look like. Here you have set up an example
+
+[07:13] trade in options strat. Uh please tell us what we see. Yes sir. So today it is pre-market. So the market currently is trading around 6620.
+
+[07:26] So if if the market opened right this minute, I would sell the uh so I would buy the 6600 put and I will buy one. Then I would sell three of the 6590 puts and then I
+
+[07:45] would buy two of the 6570 puts. So essentially I'll have a debit spread uh 666590 that will be protecting the the two credit spreads behind it. In that way, I
+
+[08:03] will start off with a credit and I do realize that I'm giving up some of the credit received by buying the you know the debit spread which is closer to the money but I have felt that it really
+
+[08:21] helps in protecting the strategy. It is a credit spread and the short strikes will go in the money if the market falls below uh 6590. Would you like to collect income from
+
+[08:37] options every week with defined risk? That's exactly what three traders are going to show us in the next Fed live on November 5th. We are bringing together three options traders who each have
+
+[08:54] built consistent income systems all powered by Theta. First up, Simon Black, creator of the Time Flies Strategy, a smart twist on butterflies and diagonals.
+
+[09:07] So, my goal for the year is 100% return. Then it is Steve Gunce with his flyal strategy seeing a very high win rate. If we go up and volatility drops, the butterfly is making money for me. If the
+
+[09:20] market goes down and volatility increases, the diagonal is making money for me. And Ravish Auya with his double calendar strategy.
+
+[09:29] If I were to just trade double calendar in an account, I can make well over 100% annually. Three unique ways to turn time decay into consistent income. And you can ask
+
+[09:40] them all your questions. Don't miss this Feta life. It's going to be filled with actionable ideas. Check out the link on the screen and register now. See you on November 5th.
+
+[09:57] Let's go into your entry mechanics. I do this on SPX zero DTE. I use a platform you that would let me enter pre-market. So the entry times are normally early in
+
+[10:14] the morning either pre-market or at market open. The idea is to do it at market open or earlier to maximize the implied volatility and to get the most premium
+
+[10:29] because that would be the goal while you're selling premium. I like to buy the first strike facing the market between 10 or five delta and that is normally determined by the gamma
+
+[10:44] exposure levels that I mentioned. The five delta or the 10 delta coincides with the market maker long. That would be ideal because in my experience even if the market moves against me and
+
+[11:04] goes to that strike most likely due to the market maker hedging the market will bounce back up in the case of the put strike or or come back down in case of the call strike. So the goal is to enter
+
+[11:23] five or 10 delta for the long strike and then I go 10 points lower for the short strikes and then I normally go 20 or 15 points, you know, further out for the two long strikes. And it is important to
+
+[11:42] have the two long strikes, you know, further away, you know, for it to be a broken wing butterfly to obtain the credit. And you do this for a net credit. You
+
+[11:52] pay for the debit spread, but get premium from for the two credit spreads. Uh, how much net premium do you usually collect for one position? I try not to enter a position for less
+
+[12:06] than 40 cents credit. Are there other conditions that needs to be in place before you open this trade? Not necessarily. I try to keep it very simple. So basically
+
+[12:18] uh the goal is to enter either pre-market or or at market open to maximize the implied volatility of the options and to look at the gamma exposure. That to me that is the most
+
+[12:35] important factor. As I think some of the listeners may be aware they are small hedge funds now which specialize in the zerod iron condors. People have have different nicknames for them but anyway
+
+[12:52] so you sometimes they enter the day before at market close for the next day. There's also, you know, like a group or a hedge fund that enter 15 minutes after the market opens with very large
+
+[13:07] positions for iron condors on both sides of the market. to mention that is that normally if they have 15,000 or 20,000 positions for a credit spread either on on the put side or the call side most of
+
+[13:25] the time in like normal market conditions they act as price resistance and support levels. So if they are in the market that helps me in finding the levels and in my experience if I can be
+
+[13:44] slightly out of the money you compared to their strikes it almost turns into a foolproof trade because even if the market moves against you know my strategy they act as a protection for a
+
+[14:01] while and that gives me enough time to do the adaptive part of my strategy because if I know the market is moving against me but I have little bit of room I can monetize the debit spread and use
+
+[14:18] that to to be able to flip the direction of my credit spreads as I'm curious about how you uh look at the market makers level what tools are you using for this maybe we could look
+
+[14:33] at an example. So this is uh like one of the platforms that I use. So this is the gamma exposure of the market and very simply on the right side of the line these are
+
+[14:46] the market maker long gamma exposure and on the left side is the customer long exposure. So very simply thinking that the left side is like a magnet. So if there is a if there's a big position on
+
+[15:05] the left side which is the customer long the market is attracted towards it moves towards it if it's big enough and we are close enough to it in the orbit but however on the right side are the are
+
+[15:21] the market maker long gamma exposure and as we know that the market maker has to stay neutral at all times just to hedge their positions. So as so if the market goes up and it
+
+[15:37] goes close to their long position they have to stay neutral by selling ES futures. So very simply the market maker long gamma exposure which is shown on the right side of this line that acts as
+
+[15:54] a resistance if the market is moving up and it acts as a support level if the market is moving down. So that how it helps me is that I would like to position my long strike at the market
+
+[16:14] maker long strike. In that way, my debit spread is there. Even if the market moves against my position, it gets to my long, most of the time the market maker positioning will act as a barrier and it
+
+[16:36] will protect it from going into the money. Sometimes it can overshoot and go in the money by a few points, but most of the time it does not slice through it right away. It provides some time which
+
+[16:56] gives me the grace period that I can adjust my credit spreads which are further out of the money. And most of the time like what happened on on last Friday when there is a you know drop in
+
+[17:11] the market which is precipitous. I was able to flip my put spreads into into zero DTE call spreads out of the money and I was able to do that by using the profit that I had generated from the
+
+[17:30] debit spreads which were further closer to the market and they went into profit because the market came down. Can you be a bit more specific about how you did this flip from your put side to the call
+
+[17:45] side? Yes. So on Friday I had a 6670 6650 credit spread two of them and then I had a 6670
+
+[18:02] 6680 debit spread which were sold in the morning for a credit of I believe 40 cents. And in the ideal scenario, I would have been able to close the whole
+
+[18:17] position either for 10 cents or a 5 cents debit if the market had stayed out of the money. And normally that can happen about 2 hours or 2 and 1/2 hours into the trading day. That's the ideal
+
+[18:31] situation. However, around uh I think uh 90 minutes into the market day when the market uh started falling so severely. Of course, it was still at 6700, but it was falling and and the VIX was above 19
+
+[18:49] or 20 at that point. I was able to flip my credit spread into a 6700 6720 call credit spread. And I was able to do that at a credit when I also sold my
+
+[19:07] 6680 6670 debit spread which was now worth I believe $2 in credit when I sold it back. So in that way it added the level
+
+[19:21] of protection that I was looking for and instead of the market slicing through my position and me having a full loss or have like a stop-loss of three times credit received as most people do. I was
+
+[19:39] able to use this strategy to go on the opposite direction which proved to be you know the right strategy for last Friday because the market kept dropping and my call spread was not threatened
+
+[19:53] and it expired for full profit. How how would you describe your rules for managing this trade? I would enter it like I mentioned pre-market or right at market open. I'm
+
+[20:06] trying to get at least 40 cents credit or or higher depending on my on my strikes based on the gamma positioning. As soon as my order is filled, I put a a close order for my short spread in which
+
+[20:23] it's a credit spread that I sold. I try to close it for 10 cents. If it closes for 10 cents debit, then I try to sell my debit spread for at least 5 cents. Sometimes if the market moves towards my
+
+[20:38] strikes, I'm able to close that for 15 cents or or 10 cents. So essentially, I'm able to close the whole spread for no debit. So that is the ideal scenario. If the market moves against me, as I
+
+[20:56] mentioned you last Friday, I do the adaptive flip of my credit spreads first. And of course, I try to go to a strike on the other side. Like I moved my like
+
+[21:14] the put spreads to the call spread but I try to move them to a level which according to the gamma positioning would be a would be a market maker uh level. So that would act as some resistance. I
+
+[21:34] need to do that first if the market is moving against me quickly. After I'm done with that, then I'd go back and I try to monetize the debit spread and try to salvage as
+
+[21:48] much profit as possible. The goal is to be positive for the day on the credits received even with the adjustments and also the other goal is to go to all cash you positioning every night. You said
+
+[22:01] that you usually put up a put broken uh winged butterfly, but sometimes you also do it on the call side in open on the call side. When do you do that? So I try to do one side at a time and the idea or
+
+[22:17] the philosophy behind it is that you know based on price action pre-market price uh you based on the dollar you based on on the 10-year note there's a bias every morning that the market has
+
+[22:33] and and similarly I have whether it's going to be a green day or a red day. So I try to go with the trend. If the market is up and it is a green day which we are expecting you I would enter the
+
+[22:48] put spreads and if the market is down and we are expecting a red day then I would enter a call spread. I try not to go counter trend with these strategies just because the market has been so
+
+[23:07] strong especially right now as they say the pain trade is to the upside. So if the anybody who's been trying to short the market since April has been losing money for most of for most of the time.
+
+[23:21] So I try not to go against the trend of the market at least starting off. Of course, the market can reverse intraday and then the adaptive part comes in. Then I have to switch sides so to speak
+
+[23:37] and go to the other side and of course there are some days which are a chopfest so to speak and the market can turn again and then now this time I don't have the debit spread to protect me. So
+
+[23:53] then depending on uh where I am uh I may have to flip again but that's not ideal and sometimes if I do that I may have to increase the number of contracts to stay positive or
+
+[24:09] to get a credit. Let's talk about the risk. What is the worst that can happen with this strategy? What the worst can happen is that if the market uh moves against you
+
+[24:23] and you were away from the desk or you were not paying attention and it slices through your your long strike on your credit spread, you have booked at least 50% loss because it's not 100% loss
+
+[24:40] because the the debit spread would be completely in the money. So one debit spread completely in the money will help you with the two credit spreads completely in the money. Your loss will
+
+[24:53] be 50% instead of 100%. But as everybody who who trades S&P knows that you can't walk away from the market like even if you go somewhere or walk somewhere to the other room you probably are watching
+
+[25:10] the market action on your phone. So, uh, try not to let that happen. But it's possible that you can not be paying attention and the market moves completely against you and then you have
+
+[25:24] a 50% loss. I like to ask my guests to place their strategy on a risk profile scale from one being very low risk and 10 being very high risk. And you can define these
+
+[25:38] numbers as you see fit. Where would you put your strategy? I think this is four. I say that because I would say that selling credit spreads on S&P would be a eight or a nine because one bad day with
+
+[25:54] a complete loss or stop losses that don't work can wipe out months of uh profits and cause huge drawdowns. But with this strategy, if you're able to pay attention to market action and
+
+[26:13] not let it slice through both of your spreads, it does provide you some protection that would help you manage it. Whether you manage it for zero DTE spreads or you roll it to the next day,
+
+[26:29] having the debit spread closer to the market does provide you extra protection. I'm sure everyone now is curious about your results from trading this strategy
+
+[26:42] so far. You have traded it for around 3 months. What have been your results and how do you measure it? So I I basically use IBKR and they have a a very good uh reporting system that you can do uh you
+
+[26:59] can use the the portfolio analyst and do daily reports and uh that's the first thing I do every morning to run a report for the you know for the last day and and and for my you know since I started
+
+[27:11] the strategy and uh so over the last three months I've had one day that I had 0.0 01 loss uh 0.01% loss and that was because I did not close a debit spread. So I try to average at least 39
+
+[27:31] 40 45 basis points a day. Some days are less, some days are more and on average it's about 10% a month. And this is measured uh on your account size.
+
+[27:44] Right. Right. Right. How much of your account are you using as buying power? So I start off using about 20% of my account every morning with this strategy. And I do 20% because
+
+[27:58] if I have to do the flip and I have to manage it intraday like I said if I have to do the second flip because of market action I have to increase uh the size of my trade by adding more contracts. So
+
+[28:16] I've seen that if I start off with by using 20% of my account, it gives me the flexibility to add more of the trades in order to manage it intraday. And in total for these three months, how
+
+[28:31] much is your account up with this strategy? The account size was 106,000. I think that was the minimum in order to get portfolio margin at IBKR for this
+
+[28:42] account. and I believe it is up around 30,000. That's quite impressive. Thank you. Thank you. So, let's sum up. Who is this strategy
+
+[28:53] best suited for? And what would you say are the three to four most important takeaways that our viewers should bring with them? I believe this is uh not for somebody
+
+[29:04] who cannot be looking at the market. if you're busy at work. So the days that I am practicing medicine, I do not do this strategy because that's reassuring,
+
+[29:15] right? Of course, for trading and for my patients because this is not something you can set and forget. This requires attention and the ability to act uh to manage. So I would say that this is for
+
+[29:29] people who are able to pay attention. So they're day trading so to speak. So that's the first thing. The second thing is you have to be careful about your account size and how much you're
+
+[29:40] risking. Like I mentioned, I start off the day with only 20% of my account at risk because that gives you the flexibility that you can manage it successfully during the day without
+
+[29:53] having some issues as far as being close to the margin call or anything like that. So that's all very important. Number three, it's very important to look at the gamma exposure and look at
+
+[30:07] the market maker positioning. I believe if anybody trades zero DTE spx and they're not looking at that, they are flying blind. Unfortunately, it can work in the short term, but long term, if you
+
+[30:22] plan to do this, you have to look at that because that essentially is sort of like an MRI of the market. gives you the underlying positioning and where the market should go. But of course, you you
+
+[30:38] also have to pay attention to the headlines because we live in a time where there is headline risk. One headline during the trading day could completely change the market for the
+
+[30:51] day. So whether you like it or not, you have to be paying attention to the headline risk. You have to know the Fed speakers are speaking who are speaking today or if there is a major you know
+
+[31:06] global event happening. Of course there are some things you cannot predict intraday but uh you have to pay attention. We are only one presidential tweet away
+
+[31:16] from everything changing right. Of course. Of course. How does your adaptive butterfly fit with the other option strategies you are trading?
+
+[31:27] I sell premium. So I sell weekly premium on other stocks and I also do the 45 DTE premium. I also do options on gold futures and crude oil futures. Most of them I can also employ the same
+
+[31:46] strategy there. But I felt that it is uh the adaptive butterfly is most helpful with the S&P just because the price action is so is it is so volatile that you need the extra protection. But I
+
+[32:05] have used the broken wing butterfly strategy on other index options and other stocks and futures that I trade. what would be good resources to learn more both about this strategy or similar
+
+[32:21] strategies but also about options trading in general right so there's a lot of information on the internet uh there a lot of videos I follow your channel and what I like about your
+
+[32:33] channel obviously is that you focus on the strategy so if you watch a video you're going to learn a strategy of course Tasty Trade also has some good educational videos. So if I am curious
+
+[32:46] about a strategy, I I'm my my go-to source would be YouTube and look at the various videos and then try to make a trade plan. Write it down on write it down yourself and analyze it yourself to
+
+[33:03] see if that makes sense and how you would manage it yourself. Of course, you can feed that what you wrote down into a chat GPT and then ask it to analyze it for you, too. But it's always good to
+
+[33:18] make your own trade plan and try to put it down on paper and make up some make some rules for yourself that then you have to uh keep yourself honest and follow those rules. I believe option
+
+[33:33] trading uh is like like a game of golf so to speak because you are uh the only person that you are really uh competing against is yourself. It's a mind game. You have to control your emotions and
+
+[33:48] your uh and your tendencies and it's easier to say that. It's easier to know what to do. But when the market is moving against you and there's real money on the line, it's very difficult
+
+[34:03] to keep a uh keep a balanced mindset about this. So it's very important to trade small and to have a trade plan that you know what you are planning to do and to
+
+[34:18] follow it. Assaar, thank you very much for sharing your zero DTE adaptive butterfly strategy. And we do have a number of other interviews on this channel about
+
+[34:32] different ways of uh trading zero DTE. So check those out. Thank you very much. Yes, thank you so much for having me. I appreciate it.

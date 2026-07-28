@@ -1,0 +1,222 @@
+{
+  "video_id": "RA5jmPfRk8k",
+  "date": "2026-05-12",
+  "title": "Finally | 12 May 2026",
+  "observed_trades": [
+    {
+      "date": "2026-05-12",
+      "ticker": "MU",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Memory leader pulling back into the 9 EMA before getting extended; wants it to go sideways and let the 9 EMA catch up",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-05-12_RA5jmPfRk8k@05:43",
+      "confidence": "inferred",
+      "notes": "He says he likes the pullback on MU/SNDK; ownership inferred from narration, not explicitly stated",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-05-12",
+      "ticker": "SNDK",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Memory leader pulling back into the 9 EMA before getting extended; wants sideways consolidation",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-05-12_RA5jmPfRk8k@05:43",
+      "confidence": "inferred",
+      "notes": "Discussed alongside MU; ownership inferred, not explicitly stated",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-05-12",
+      "ticker": "FLY",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Pullback into the 9 EMA; 36 is the key level; showing relative strength vs the general market",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-05-12_RA5jmPfRk8k@25:46",
+      "confidence": "stated",
+      "notes": "Caption 'fly' = ticker FLY; he says 'if fly stops me out, it stops me out' implying a live position. Stop level removed (the 5-min candle low stop he mentions at 66:01 is for QBT, not FLY)",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-05-12",
+      "ticker": "NVTS",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Orderly pullback, still above prior swing high, only second day after breakout; upside high enough to hold through pullback",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-05-12_RA5jmPfRk8k@64:15",
+      "confidence": "stated",
+      "notes": "Answering 'are you going to hold NVTS' -> yes unless stopped out today",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-05-12",
+      "ticker": "EMP",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-05-12_RA5jmPfRk8k@27:57",
+      "confidence": "stated",
+      "notes": "'I also got stopped out from EMP'; ticker EMP is an uncertain caption decode (see ambiguous_tickers)",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-05-12",
+      "ticker": "?",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Holding a strong name into earnings after hours unless stopped out today",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-05-12_RA5jmPfRk8k@51:17",
+      "confidence": "stated",
+      "notes": "Caption 'happiness' = an unidentified ticker he says he will hold 100% through earnings; symbol unknown",
+      "fill_timing": ""
+    }
+  ],
+  "principles": [
+    {
+      "category": "exits",
+      "text": "On an orderly pullback day, do not panic-sell winners; trail with the 9 EMA and hold for the larger move rather than selling early into weakness.",
+      "timestamp": "39:06"
+    },
+    {
+      "category": "entries",
+      "text": "On a pullback day, hunt for the stocks showing relative strength and buy them at well-defined support levels for a tight-risk entry.",
+      "timestamp": "39:06"
+    },
+    {
+      "category": "risk",
+      "text": "When many setups trigger the same day, either find very tight entries (3-4% stops) or cut risk per trade so even five simultaneous stop-outs only cost ~2-2.5% of the account.",
+      "timestamp": "107:06"
+    },
+    {
+      "category": "risk",
+      "text": "If you spot many entries the same day and they all fail, the market is wrong - treat the cluster of stop-outs as an alarm bell to back off.",
+      "timestamp": "108:49"
+    },
+    {
+      "category": "mindset",
+      "text": "Real euphoria is story/fundamental-driven (AI spend, 300% growth narratives), not chart-driven; being bullish off the technicals alone is not being euphoric.",
+      "timestamp": "54:26"
+    },
+    {
+      "category": "entries",
+      "text": "For a pullback entry, prefer the stock to bounce off support (9 EMA / prior high) immediately; do not want it to retest the support again.",
+      "timestamp": "111:52"
+    },
+    {
+      "category": "posture",
+      "text": "When splitting entries on a larger account, use the same entry style for each tranche (e.g. two 12% halves with two stops) to keep position size and risk smaller.",
+      "timestamp": "58:53"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "03:58",
+      "caption_text": "looking at today will be fly um pull back into the 9 EMA",
+      "context": "A name he is watching/holding, pulling back into the 9 EMA; '36 is the key level'; later 'if fly stops me out'",
+      "guess": "FLY",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "06:44",
+      "caption_text": "Q BT is uh gapping up 20 26% after earnings",
+      "context": "Gapping up 20-26% after earnings into prior swing highs; he later calls it QBT/QBTS and tries one-minute breakout",
+      "guess": "QBTS",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "07:06",
+      "caption_text": "PR is really strong. Uh it is catching up",
+      "context": "A strong name catching up fast",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "08:15",
+      "caption_text": "PMW is also near the alltime highs with net",
+      "context": "Near all-time highs; cyber-security theme",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "20:23",
+      "caption_text": "back on AHL. Really nice actions. So strong",
+      "context": "Strong action on a name he is watching",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "22:32",
+      "caption_text": "M unsk is finding support",
+      "context": "Finding support, wants it to go sideways before another leg up rather than parabolic",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "23:01",
+      "caption_text": "some stocks like core Veaf is actually breaking down",
+      "context": "Breaking down but still above weekly EMAs and daily 50 EMA; later 'Core VI pulling back into the all-time highs'",
+      "guess": "CRWV",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "24:56",
+      "caption_text": "This this AMKR is flagging nearly 9 EMA building higher lows",
+      "context": "Flagging near the 9 EMA, building higher lows",
+      "guess": "AMKR",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "27:57",
+      "caption_text": "I also got stopped out from EMP",
+      "context": "He was stopped out of this position; also references 'EMP solar name' on 05-11",
+      "guess": "EMP",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "30:08",
+      "caption_text": "A lab is looking pretty decent today. Is showing relative strength",
+      "context": "Showing relative strength, found support on the 9 EMA",
+      "guess": "RKLB",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "51:17",
+      "caption_text": "am I going to hold happiness for earnings? Uh 100%",
+      "context": "A held name he will hold 100% through earnings unless stopped out today",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "64:15",
+      "caption_text": "Are you going to hold through hold neis?",
+      "context": "Same context as NVTS hold; likely the captioner's rendering of NVTS",
+      "guess": "NVTS",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "79:44",
+      "caption_text": "I don't have enough buying power for gold beef even with half size",
+      "context": "An attractive ~$105 name with a great five-minute breakout; could not enter on buying power (missed, not taken)",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "103:28",
+      "caption_text": "CLSK a pull back by at the 20 day 20 EMA 21 EMA",
+      "context": "Pullback into the 20/21 EMA",
+      "guess": "CLSK",
+      "confidence": "likely"
+    }
+  ]
+}

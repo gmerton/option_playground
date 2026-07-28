@@ -1,0 +1,108 @@
+{
+ "video_id": "bKkGWr8uCgE",
+ "date": "2026-07-01",
+ "title": "Clean | 1 Jul 2026",
+ "observed_trades": [
+  {
+   "date": "2026-07-01",
+   "ticker": "QBTS",
+   "direction": "long",
+   "action": "buy",
+   "setup": "Quantum-sector bounce play: quantum names bouncing off the weekly EMAs and trying to stay above / reclaiming the 9 EMA.",
+   "entry_basis": "Bounce off weekly EMAs, 9 EMA reclaim",
+   "stop": "",
+   "source": "2026-07-01_bKkGWr8uCgE@04:28",
+   "confidence": "stated",
+   "notes": "\"I only make one trade yesterday. It's the QBTS.\" Bought Monday 2026-06-30 while off-screen. He adds in hindsight that QNT (likely QUBT, garbled) would have been the better quantum play than QBTS.",
+   "fill_timing": "yesterday"
+  },
+  {
+   "date": "2026-07-01",
+   "ticker": "RDDT",
+   "direction": "long",
+   "action": "buy",
+   "setup": "Software-sector strength during market pullback; RDDT has inside days above all the EMAs with EMAs clustered together, long base, weekly undercut-and-rally, higher lows since end of March (VCP-like).",
+   "entry_basis": "Inside day above all EMAs with clustered EMAs, in the leading (software) theme",
+   "stop": "",
+   "source": "2026-07-01_bKkGWr8uCgE@29:01",
+   "confidence": "inferred",
+   "notes": "Captioned as \"Reddit\" at 29:01 and \"Rabbit\" at 30:56 \u2014 both interpreted as RDDT. He answers \"Why Reddit?\" while walking through today's entries, strongly implying it is one of the four new positions taken off the open.",
+   "fill_timing": "today"
+  },
+  {
+   "date": "2026-07-01",
+   "ticker": "?",
+   "direction": "long",
+   "action": "buy",
+   "setup": "Three additional new long positions taken off the open (part of \"four new positions\" today, one being RDDT); stocks finding support where expected, bouncing off the lows; software names emphasized as the theme.",
+   "entry_basis": "Fills taken off the open into gap-down; support at 9/21 EMA and anchored VWAP from swing high",
+   "stop": "",
+   "source": "2026-07-01_bKkGWr8uCgE@24:08",
+   "confidence": "stated",
+   "notes": "\"Finished today's trading. Four new positions... four trades zero stops, zero being stopped out.\" Only RDDT is identifiable by name; the other three tickers are never stated on the transcript. Earlier at 13:10-13:20 he says \"I'm only taking my fill off the open.\"",
+   "fill_timing": "today"
+  }
+ ],
+ "principles": [
+  {
+   "category": "process",
+   "text": "Theme/sector strength is the number one factor in stock selection \u2014 pick names in the sector showing relative strength (here: software leading during the pullback while semis got crushed).",
+   "timestamp": "29:53"
+  },
+  {
+   "category": "posture",
+   "text": "Focus on the long side and get aggressive when the market is pulling back into or holding above support (EMAs), not when it is at all-time highs and extended.",
+   "timestamp": "26:28"
+  },
+  {
+   "category": "entry",
+   "text": "Down days during a pullback are the great entry opportunities \u2014 undercut-and-reclaim moves and failed breakdowns that break back out to the upside.",
+   "timestamp": "26:01"
+  },
+  {
+   "category": "entry",
+   "text": "Take your fills off the open, then don't rush into further new trades \u2014 wait for the better level, e.g. the low of the previous day or the 60-minute 50 MA in the support area.",
+   "timestamp": "12:56"
+  },
+  {
+   "category": "exit",
+   "text": "As long as price stays above the support level (9/21 EMA, anchored VWAP from the swing high), the position is fine \u2014 sideways action after entry is good enough; no need to act.",
+   "timestamp": "25:23"
+  },
+  {
+   "category": "entry",
+   "text": "The ideal chart is a long base with EMAs clustered close together, inside days, in the right theme/sector \u2014 plus a weekly building higher lows (VCP-like).",
+   "timestamp": "31:10"
+  }
+ ],
+ "ambiguous_tickers": [
+  {
+   "timestamp": "04:43",
+   "caption_text": "It looks like QNT would be the better play",
+   "context": "Comparing quantum names: says buying \"QNT\" yesterday off the daily 9 EMA and previous swing high was definitely the better play than QBTS. Hindsight commentary, not a fill.",
+   "guess": "QUBT",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "06:19",
+   "caption_text": "I think Space X is uh one of them",
+   "context": "Listed among \"pretty decent charts\" on today's watchlist alongside Tesla. Watchlist-only, no fill. Could be a SpaceX-related listing/IPO or a mis-caption of another ticker (e.g. SPCE). UPGRADED 2026-07-23: Gabe confirmed the EP70 (2026-07-23_0AZFeoV6ikY@77:37) 'SpaceX' mention is the literal post-IPO SpaceX listing, so this earlier watchlist mention is likely the same name (not SPCE). Symbol: SPCX.",
+   "guess": "SPCX",
+   "confidence": "confirmed"
+  },
+  {
+   "timestamp": "07:11",
+   "caption_text": "The CPR is maybe one of the IPOs that could be setting up",
+   "context": "Recent IPO possibly starting a new uptrend off yesterday's/last week's low. Watchlist-only, no fill. Garbled; plausible recent-IPO candidates include CRCL or CRWV but unresolvable from captions.",
+   "guess": "?",
+   "confidence": "uncertain"
+  },
+  {
+   "timestamp": "30:56",
+   "caption_text": "And Rabbit individually, specifically the it has a put uh inside day above all the EMAs",
+   "context": "\"Rabbit\" (also \"Reddit\" at 29:01) \u2014 inside day above clustered EMAs, in the software theme, weekly undercut-and-rally; explained as answer to \"Why Reddit?\" \u2014 likely one of today's four new positions.",
+   "guess": "RDDT",
+   "confidence": "likely"
+  }
+ ]
+}

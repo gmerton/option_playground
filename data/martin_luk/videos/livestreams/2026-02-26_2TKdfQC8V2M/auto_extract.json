@@ -1,0 +1,122 @@
+{
+  "video_id": "2TKdfQC8V2M",
+  "date": "2026-02-26",
+  "title": "Chop chop chop | 26 Feb 2026",
+  "observed_trades": [
+    {
+      "date": "2026-02-26",
+      "ticker": "ONDS",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Tried a long the prior day; fell late day and stopped him out; now rejecting from the 9-week MA on the weekly and the daily EMAs",
+      "entry_basis": "",
+      "stop": "stopped out; fell late day",
+      "source": "2026-02-26_2TKdfQC8V2M@03:31",
+      "confidence": "stated",
+      "notes": "Caption 'OANDS'/'O N D S' = ONDS (Ondas); interpreted ticker",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2026-02-26",
+      "ticker": "RCAT",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Tried a long the prior day on the weekly chart setup; weekly looks fine but dipping",
+      "entry_basis": "",
+      "stop": "stopped out",
+      "source": "2026-02-26_2TKdfQC8V2M@07:16",
+      "confidence": "inferred",
+      "notes": "Caption 'Recur Recur' = RCAT (Red Cat); he references 'Red Cat' later @71:16; interpreted ticker",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2026-02-26",
+      "ticker": "NVDA",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Long memory/semi name; weak for the day, turning red, pulling back into prior highs around 194",
+      "entry_basis": "",
+      "stop": "expected to stop out",
+      "source": "2026-02-26_2TKdfQC8V2M@18:55",
+      "confidence": "inferred",
+      "notes": "Says 'probably going to stop out on the Nvidia too' implying an existing position; ~194 level stated @05:03",
+      "fill_timing": ""
+    }
+  ],
+  "principles": [
+    {
+      "category": "posture",
+      "text": "In a chop-chop market, lean on the power of sitting out; the edge is situational awareness, emotional management, and avoiding over-trading/FOMO rather than forcing entries.",
+      "timestamp": "68:32"
+    },
+    {
+      "category": "risk",
+      "text": "When short against an uptrend, move the stop to break-even faster than normal because shorting a stock in an uptrend is dangerous; this limits damage to the equity curve across repeated stop-outs.",
+      "timestamp": "54:13"
+    },
+    {
+      "category": "risk",
+      "text": "Don't increase size during a losing streak; if anything reduce size. Trading smaller is the main lever for limiting drawdown.",
+      "timestamp": "85:13"
+    },
+    {
+      "category": "entries",
+      "text": "Stack confluence: short when the index (QQQ) is at a resistance level AND the individual stock is also at resistance, to increase the odds the trade works.",
+      "timestamp": "88:43"
+    },
+    {
+      "category": "entries",
+      "text": "After a strong/extended day, wait for one to two more days of consolidation above the EMAs (ideally near the 21 EMA) before entering rather than chasing.",
+      "timestamp": "08:44"
+    },
+    {
+      "category": "mindset",
+      "text": "Don't let the index defining a top happen in your head too early; being habitually too early on shorts costs money, so hold back and be more patient.",
+      "timestamp": "60:21"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "03:31",
+      "caption_text": "I tried some long yesterday like OANDS",
+      "context": "A long he tried the prior day that stopped him out late day; later 'O N D S is rejecting hard'",
+      "guess": "ONDS",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "07:16",
+      "caption_text": "The weekly chart of Recur Recur is another one that I tried yesterday",
+      "context": "A long he tried the prior day that stopped him out; weekly looks fine but dipping; he references Red Cat later",
+      "guess": "RCAT",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "04:13",
+      "caption_text": "S&P K doesn't want to go down ... Q could be the the EP's",
+      "context": "Discussing indices not wanting to go down; watching the Nasdaq/QQQ",
+      "guess": "QQQ",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "29:24",
+      "caption_text": "ONTS. Mhm. Do you PT also report earnings today",
+      "context": "Asking which name reports earnings; mention of 'PT' near ONDS discussion",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "60:07",
+      "caption_text": "And SNTK just somewhere near the near the 9-year MA",
+      "context": "Wants it to close near the 21/9 EMA for an optimal short entry tomorrow; recurring weak memory name",
+      "guess": "SNDK",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "49:38",
+      "caption_text": "I'm going to short somehow and twist the Is that a plant? Is plant. On the 9-year MA",
+      "context": "Considering a short on the 9 MA / 50 MA; garbled name 'plant'",
+      "guess": "PLTR",
+      "confidence": "unsure"
+    }
+  ]
+}

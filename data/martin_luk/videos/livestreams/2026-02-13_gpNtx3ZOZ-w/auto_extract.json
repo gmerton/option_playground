@@ -1,0 +1,142 @@
+{
+  "video_id": "gpNtx3ZOZ-w",
+  "date": "2026-02-13",
+  "title": "2 cents | 13 Feb 2026",
+  "observed_trades": [
+    {
+      "date": "2026-02-13",
+      "ticker": "SMR",
+      "direction": "short",
+      "action": "entry",
+      "setup": "Shorted a gap up into the 9 EMA on a green reclaim candle near the anchor VWAP; strong follow-through; missed the 1-min breakdown so used the reclaim",
+      "entry_basis": "green candle reclaiming the 9 EMA near anchor VWAP (after missing the 1-min breakdown)",
+      "stop": "",
+      "source": "2026-02-13_gpNtx3ZOZ-w@06:55",
+      "confidence": "stated",
+      "notes": "Only new trade made the prior day; SMR (NuScale)",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2026-02-13",
+      "ticker": "GLD",
+      "direction": "short",
+      "action": "hold",
+      "setup": "Holding gold short toward the weekly 50 EMA target; trying to follow the plan and not exit early; wanted to add but avoided over the long weekend",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-02-13_gpNtx3ZOZ-w@09:08",
+      "confidence": "stated",
+      "notes": "Refers to 'gold' short generically; GLD/gold proxy",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-02-13",
+      "ticker": "SLV",
+      "direction": "short",
+      "action": "trim",
+      "setup": "Holding silver short into the weekly 50 EMA but covered some into weakness ahead of the weekend as silver rejected",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-02-13_gpNtx3ZOZ-w@73:43",
+      "confidence": "stated",
+      "notes": "'Silver' short; covered some into weakness; SLV/silver proxy",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-02-13",
+      "ticker": "SNDK",
+      "direction": "short",
+      "action": "add",
+      "setup": "Shorted a bit waiting for the 1-min 9 EMA; already tried it 3-4 times; expects pullback to weekly 9 / ~620 area; stopped out late (4th-5th attempt)",
+      "entry_basis": "1-minute 9 EMA pullback",
+      "stop": "above the day high; ~2 cents from being stopped out, eventually stopped",
+      "source": "2026-02-13_gpNtx3ZOZ-w@67:40",
+      "confidence": "stated",
+      "notes": "Caption 'SNDK'/'SMDK'/'SNTK' = SNDK; repeated short attempts; got stopped out @156:51",
+      "fill_timing": "today"
+    }
+  ],
+  "principles": [
+    {
+      "category": "entries",
+      "text": "Favor buying breakouts of multi-month bases and trading pullbacks to the 9/21/50 EMA over chasing extended names; the first retest of the 9 EMA is often the best entry.",
+      "timestamp": "21:58"
+    },
+    {
+      "category": "mindset",
+      "text": "Don't try to eliminate emotions — acknowledge them but don't let them drive decisions; euphoria leads to chasing, drawdowns lead to widening stops or revenge-risk.",
+      "timestamp": "46:47"
+    },
+    {
+      "category": "macro",
+      "text": "Most retail can't beat the index after hundreds of hours of study; the honest advice for non-serious traders is to buy QQQ/VOO and hold for 10 years.",
+      "timestamp": "51:24"
+    },
+    {
+      "category": "entries",
+      "text": "For parabolic shorts, study topping patterns: after a parabolic top a stock usually builds a lower high before the downtrend, and trendlines getting steeper (60-70 degree slope) signal the top is near.",
+      "timestamp": "84:16"
+    },
+    {
+      "category": "risk",
+      "text": "Holding shorts over a long weekend carries gap risk you can't hedge; size down or avoid adding before holidays since you can't exit on a Monday gap.",
+      "timestamp": "05:51"
+    },
+    {
+      "category": "posture",
+      "text": "A long, exhausting chop market (longest since 2020) is the best training ground — surviving or profiting here makes the next trending market feel easy.",
+      "timestamp": "109:31"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "10:08",
+      "caption_text": "If Bley is the outlier yesterday, this is a highest volume since 2021. It has a market cap of 2.4 billion",
+      "context": "Outlier with huge volume (1.8B traded vs 2.4B cap), now above all weekly/daily EMAs; next resistance at a prior gap-down candle high ~1260",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "14:02",
+      "caption_text": "This FTA looks really strong. one of the few names that looks really good",
+      "context": "Strong name holding above the 21 EMA after the recent sell-off; later 'This FTI looks like it's having some follow through'",
+      "guess": "FTAI",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "18:10",
+      "caption_text": "This aim match is absolutely insane. I traded a MAT in back in 2021 ... the leader of the semic sector",
+      "context": "Leader of the semi sector, up >100% in 5 months; he wants 'a mat to mark the top of the semi run'",
+      "guess": "AMAT",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "20:41",
+      "caption_text": "This AET EP looks pretty good like it's gapping above this swing high",
+      "context": "An episodic pivot breaking out from a base since October last year; he loves base breakouts but the market is weak",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "71:46",
+      "caption_text": "Lumin is a pretty good short candidate on the previous gap level",
+      "context": "Short candidate with several rejections on the 15 EMA; speculative name with weak sector",
+      "guess": "LUMN",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "85:30",
+      "caption_text": "the base of GM is a little bit like it ... after a parabolic move or after the top and then it comes back for a lower high",
+      "context": "Chart example of a lower-high topping pattern after a parabolic move",
+      "guess": "GME",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "113:07",
+      "caption_text": "The C gate looks a little bit similar to the plug back in 2021 ... CK is up 600%",
+      "context": "Comparing Seagate-type move to PLUG 2021; 'CK' up 600%, SNDK relatively weakest vs WDC and Seagate",
+      "guess": "STX",
+      "confidence": "unsure"
+    }
+  ]
+}

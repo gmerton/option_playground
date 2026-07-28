@@ -1,0 +1,136 @@
+{
+  "video_id": "70HSadiCjPw",
+  "date": "2026-04-22",
+  "title": "Manchester is green | 22 Apr 2026",
+  "observed_trades": [
+    {
+      "date": "2026-04-22",
+      "ticker": "COIN",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Bought 1-minute breakout after pullback into 21 EMA; strongest crypto name since the open",
+      "entry_basis": "1-minute breakout off 21 EMA pullback",
+      "stop": "",
+      "source": "2026-04-22_70HSadiCjPw@29:19",
+      "confidence": "stated",
+      "notes": "'Entry on corn and B M N O ... I'm just buying like the 1-minute breakouts. coin is the strongest.' corn=COIN",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-04-22",
+      "ticker": "BMNR",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Bought 1-minute breakout; similar to COIN but a gap up",
+      "entry_basis": "1-minute breakout (gap up)",
+      "stop": "",
+      "source": "2026-04-22_70HSadiCjPw@29:19",
+      "confidence": "stated",
+      "notes": "'B M N O' / 'BMR' = BMNR (Bitmine), a crypto name he trades repeatedly. Ticker is an interpreted decode - see ambiguous_tickers",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-04-22",
+      "ticker": "AAOI",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Held a long for 7 weeks (one of his longest holds); raising stop a little; resisting the old urge to sell when it looks like it will lose the 9 EMA",
+      "entry_basis": "",
+      "stop": "raising stop slightly",
+      "source": "2026-04-22_70HSadiCjPw@43:25",
+      "confidence": "stated",
+      "notes": "'I have been holding it for ... 7 weeks ... not selling uh a single share ... raise the stop a little'; later names it 'A O I' (45:01) = AAOI (Applied Optoelectronics). Ticker is an interpreted decode - see ambiguous_tickers",
+      "fill_timing": ""
+    }
+  ],
+  "principles": [
+    {
+      "category": "exits",
+      "text": "Holding winners is a major improvement: he held a 7-week position without selling a share, resisting the old habit of selling the moment a leader looks like it will lose the 9 EMA.",
+      "timestamp": "43:25"
+    },
+    {
+      "category": "entries",
+      "text": "Prefer dollar volume over share volume because it shows how much money is actually trading the name; two stocks with similar share volume can differ by orders of magnitude in dollar volume.",
+      "timestamp": "46:15"
+    },
+    {
+      "category": "macro",
+      "text": "Climax tops in commodities (gold/silver after a multi-year run, with a ~10% one-day reversal on a 3% ATR) have a high chance of not going higher and rhyming with prior parabolic-then-multi-year-decline patterns. History doesn't repeat but it rhymes.",
+      "timestamp": "75:24"
+    },
+    {
+      "category": "posture",
+      "text": "Surviving a difficult market and staying focused even when it's bad is what positions you to capture the fast easy-money move that follows; those who quit or stopped watching miss the straight-up rally.",
+      "timestamp": "60:08"
+    },
+    {
+      "category": "entries",
+      "text": "Trade the strongest name in the hottest sector; sector/relative strength matters more than the chart pattern itself.",
+      "timestamp": "84:37"
+    },
+    {
+      "category": "risk",
+      "text": "A stock with extreme volume on a parabolic run is likely seeing institutions building shorts; even leaders may need a longer base/deeper pullback (to the 50 or weekly 21 EMA) after a huge move.",
+      "timestamp": "82:45"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "29:19",
+      "caption_text": "Entry on corn and B M N O uh I did this on the 1-minute charts",
+      "context": "His two crypto 1-minute breakout entries; corn=COIN, B M N O / BMR=BMNR",
+      "guess": "COIN",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "31:16",
+      "caption_text": "So, AOI is uh going down. Turning red and Corning is also coming down",
+      "context": "Semis/optical distribution; AOI=AAOI, 'Corning' may be GLW or a garble for Corning Inc",
+      "guess": "AAOI",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "37:52",
+      "caption_text": "I link Q and Q BTS",
+      "context": "Comparing 'our close' (likely a quantum name) to other quantum-theme names; garbled letter strings",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "48:42",
+      "caption_text": "should find some X N D U. So, X N D U is a is also trading at 17 million ... around $600 volume",
+      "context": "Example of a low-dollar-volume stock contrasted with CAR's $8B dollar volume",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "51:53",
+      "caption_text": "Mara is breaking out. Actually Mara is one of the strongest stocks ... on the crypto sector ... strongest stock right next to the MSTR",
+      "context": "Bitcoin miner breaking out, strongest crypto name after MSTR; Mara=MARA",
+      "guess": "MARA",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "56:20",
+      "caption_text": "I don't know Wolfin has Are they like transforming into the data center?",
+      "context": "Discussing whether a name is pivoting to data center; 'Wolfin' / 'Wolf' = WOLF (Wolfspeed)",
+      "guess": "WOLF",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "65:06",
+      "caption_text": "the Lights or FTR Steel HR are getting a little bit weaker",
+      "context": "Leaders getting weaker but still above EMAs; garbled basket of names",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "86:21",
+      "caption_text": "The angle of view up probably works on this pullback ... This angle of view up retest. Textbook like perfect retest",
+      "context": "'angle of view up' is a caption garble for 'anchored VWAP'; a perfect retest setup, not a ticker",
+      "guess": "N/A",
+      "confidence": "unsure"
+    }
+  ]
+}

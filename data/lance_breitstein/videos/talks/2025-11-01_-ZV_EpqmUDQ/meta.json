@@ -1,0 +1,19 @@
+{
+  "video_id": "-ZV_EpqmUDQ",
+  "url": "https://www.youtube.com/watch?v=-ZV_EpqmUDQ",
+  "title": "How to Trade the News Like a Top Wall St Trader",
+  "channel": "TheOneLanceB",
+  "channel_id": "UCzksXiC-Ju-DTIZmMiaOVfQ",
+  "stream_date": "2025-11-01",
+  "duration": "8:26",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

@@ -1,0 +1,165 @@
+{
+  "video_id": "56ECvN_79n0",
+  "date": "2025-11-26",
+  "title": "Oct trades | 25 Nov 2025",
+  "observed_trades": [
+    {
+      "date": "2025-11-26",
+      "ticker": "RIVN",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Main idea for the week; weekly base with rising EMAs turning up, undercut-reclaim, ~2yr sideways, up ~45% in days, liquid, relative strength vs growth names",
+      "entry_basis": "Pullback / 9 EMA on the 5-minute chart ('not an ordinary entry, but worth the shot')",
+      "stop": "",
+      "source": "2025-11-26_56ECvN_79n0@64:21",
+      "confidence": "stated",
+      "notes": "'my I might try to buy some Rivian in this pullback today. Today I got filled up.'",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2025-11-26",
+      "ticker": "ACHR",
+      "direction": "long",
+      "action": "exit",
+      "setup": "RECAP of an October trade (not today's book). Bought breakout over prior 1-hour bar high, ~1.5% stop; sold into strength then closed early because market extended",
+      "entry_basis": "Breakout above prior 1-hour bar high (Oct 1)",
+      "stop": "Day low (~1.5%)",
+      "source": "2025-11-26_56ECvN_79n0@36:28",
+      "confidence": "stated",
+      "notes": "Caption 'ACHL' = ACHR (Archer Aviation) (interpreted). Historical Oct trade recap, included as his own trade.",
+      "fill_timing": "2025-10-01"
+    },
+    {
+      "date": "2025-11-26",
+      "ticker": "AMD",
+      "direction": "long",
+      "action": "exit",
+      "setup": "RECAP of an October trade. Took the 2x AMD leveraged ETF; entry Oct 1 on breakout over prior day / prior 1-hour bar high; got lucky with a big gap up; closed Oct 10",
+      "entry_basis": "Breakout above prior day high / prior 1-hour bar high (Oct 1)",
+      "stop": "",
+      "source": "2025-11-26_56ECvN_79n0@39:11",
+      "confidence": "stated",
+      "notes": "He bought a 2x AMD ETF (e.g. AMDL), not AMD common. Historical Oct trade recap.",
+      "fill_timing": "2025-10-01"
+    },
+    {
+      "date": "2025-11-26",
+      "ticker": "ASTS",
+      "direction": "long",
+      "action": "exit",
+      "setup": "RECAP of October trade. Gap-and-fade 'handshake' pullback entry into anchor VWAP / prior highs off a ~3-month base; bought 5-min breakout, sold into strength, closed Oct 10",
+      "entry_basis": "5-minute candle breakout after gap-up faded to anchor VWAP (Oct 1)",
+      "stop": "Bar low (~1.25%, less than 2%)",
+      "source": "2025-11-26_56ECvN_79n0@41:55",
+      "confidence": "stated",
+      "notes": "Historical Oct trade recap.",
+      "fill_timing": "2025-10-01"
+    },
+    {
+      "date": "2025-11-26",
+      "ticker": "RGTI",
+      "direction": "long",
+      "action": "exit",
+      "setup": "RECAP of October trade. High-tight-flag / quantum momentum; bought Oct 2 at opening range highs (~$30.90); closed all into strength",
+      "entry_basis": "Opening range highs (Oct 2)",
+      "stop": "",
+      "source": "2025-11-26_56ECvN_79n0@45:24",
+      "confidence": "stated",
+      "notes": "Historical Oct trade recap.",
+      "fill_timing": "2025-10-02"
+    },
+    {
+      "date": "2025-11-26",
+      "ticker": "RCAT",
+      "direction": "long",
+      "action": "exit",
+      "setup": "RECAP of October trade. 'Red Cat' entry Oct 3 on a gap up, opening range highs, treated as an EP; mediocre trade, ~20% gain, sold into strength, closed Oct 9",
+      "entry_basis": "Opening range highs on the gap up (Oct 3, ~12:30)",
+      "stop": "",
+      "source": "2025-11-26_56ECvN_79n0@47:07",
+      "confidence": "stated",
+      "notes": "'Red Cat' = RCAT (Red Cat Holdings). Historical Oct trade recap. He corrects entry from Oct 2 to Oct 3.",
+      "fill_timing": "2025-10-03"
+    },
+    {
+      "date": "2025-11-26",
+      "ticker": "DUST",
+      "direction": "short",
+      "action": "exit",
+      "setup": "RECAP of October trade. Gold-miners short ETF; gold went parabolic mid-Oct so he shorted the move; nailed the top on second try, rode it down, closed Oct 28 — his best trade of the year",
+      "entry_basis": "Short on the exact top of the parabolic move (second attempt, ~Oct 20)",
+      "stop": "First attempt stopped out quickly; re-entered after the wick",
+      "source": "2025-11-26_56ECvN_79n0@49:35",
+      "confidence": "stated",
+      "notes": "He calls it 'dust... the gold miners short ETF.' Direction short = betting against gold miners via the inverse ETF. Historical Oct trade recap.",
+      "fill_timing": "2025-10-20"
+    }
+  ],
+  "principles": [
+    {
+      "category": "mindset",
+      "text": "The technical setup is secondary; the most important factor is the big picture — is the stock gaining momentum, building higher lows, moving fast enough, and trading liquid enough.",
+      "timestamp": "59:53"
+    },
+    {
+      "category": "mindset",
+      "text": "The best breakouts come from huge, long bases (weeks, months, years); a multi-year base building higher lows with a tightening VCP is the highest-conviction structure.",
+      "timestamp": "30:52"
+    },
+    {
+      "category": "posture",
+      "text": "When the market only just reclaims the 9 but is still under the 21 and individual stocks are loose, don't aggressively enter new positions; you're not out of the woods and a reversal is still possible.",
+      "timestamp": "17:35"
+    },
+    {
+      "category": "mindset",
+      "text": "Develop 'sit-down power' — learn to do nothing and wait rather than force trades in an indecisive market.",
+      "timestamp": "27:36"
+    },
+    {
+      "category": "risk",
+      "text": "Trade liquid names (~$100M+ daily dollar volume): more liquidity means tighter spreads, less slippage, and easier execution.",
+      "timestamp": "18:47"
+    },
+    {
+      "category": "exits",
+      "text": "Sell some into strength on the way up, and when the broad market is very extended don't bother trailing with the EMAs for a longer hold — close early rather than give back too much profit.",
+      "timestamp": "45:09"
+    },
+    {
+      "category": "mindset",
+      "text": "You don't need to know the catalyst; the price action going up is the most important thing to know.",
+      "timestamp": "67:13"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "36:28",
+      "caption_text": "I bought ACHL. ACHL would be the entry",
+      "context": "October long, breakout over prior 1-hour bar high, ~1.5% stop. 'ACHL' has no ticker; ACHR (Archer Aviation) is the likely intended symbol.",
+      "guess": "ACHR",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "32:51",
+      "caption_text": "the reason why I'm looking at RIF healing... RIF healing forms support on the rising weekly EMAs",
+      "context": "Recurring garble 'Rifian'/'RIF healing'/'Riftim' for the EV name he keeps citing as a potential leader = Rivian.",
+      "guess": "RIVN",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "39:11",
+      "caption_text": "AMD. And I took this AMD ETF. The leverage longs, 2x",
+      "context": "He bought a 2x leveraged AMD long ETF (e.g. AMDL), not AMD common. Caption only says 'AMD ETF'.",
+      "guess": "AMDL",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "49:35",
+      "caption_text": "the last one I want to share would be dust... the gold miners short ETF",
+      "context": "He says 'dust' = gold miners short ETF. DUST is the Direxion Junior Gold Miners 2x Bear ETF, matching the description.",
+      "guess": "DUST",
+      "confidence": "likely"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "video_id": "OaX6WjZhFaw",
+  "url": "https://www.youtube.com/watch?v=OaX6WjZhFaw",
+  "title": "$GLD $SLV pullback short | 4 Mar 2026",
+  "channel": "martinlukkt",
+  "channel_id": "UCB6jWJJvO_sWZ2PwgmMcxCw",
+  "stream_date": "2026-03-04",
+  "duration": "1:34:34",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

@@ -1,0 +1,163 @@
+[00:00] Hi, good morning everyone. It's Shawn with Paycheck to Portfolio. This morning we're going to do a Spark to Fire week 15 update. We got some new purchases going in this morning which we'll talk
+
+[00:09] about in detail. If you're new to my channel, all of my income goes into a brokerage account. I don't live out of a traditional checking account. I invest in the three buckets, long-term growth
+
+[00:20] stocks and ETFs, closed-end funds, and high-yield funds. What that gives me is asset appreciation over time and dividends which provide cash flow. What my dividends don't cover in a month,
+
+[00:34] I'll bridge with a margin loan. And that allows me to keep my compounding cycle going on the front end. You can go check out my YouTube channel and look at all of my playlists. Those are there and
+
+[00:44] available for you. My large portfolio is over $370,000. I show that on Saturdays and how I'm completely living out of that account. And then on Wednesdays, this is the
+
+[00:55] Spark to Fire account that we started for my 17-year-old daughter a couple of months ago so she can start living out of the account and snowballing her income and her assets as
+
+[01:06] well. Let's jump right into the portfolio, then we'll go step-by-step through the Excel file. All right, looking at the net account value this morning, the net account value is
+
+[01:14] currently sitting at $3,246. The total unrealized gain or loss is $578. Over the last two to three months, the market's been very, very choppy with
+
+[01:28] rate cuts, with concerns around an AI bubble, with earning season. There's a lot of companies investing a lot of money and capital into AI, so the market's trying
+
+[01:38] to find its footing. None of that bothers me because of dollar cost averaging. I'm buying at the lows, I'm buying at the highs, and I'm buying at the averages, which will smooth out that
+
+[01:49] volatility over time. Markets go up in the short term, they go down in the short term, but over time the market grows. And that's what you have to focus on, especially when you're first
+
+[01:58] starting out. If I could draw your attention to the historical values tab, you can even see in a sideways to slightly down market right now, in October when I started, the account was
+
+[02:09] basically 2475. In November, the account jumped up to 2531. In December, 2869. In January, 2998.
+
+[02:22] And then currently, we're sitting at $3,257. So even in a down market, the account value continues to grow. Equity ownership continues to grow because of
+
+[02:33] velocity banking concepts, because we're investing money that we would have otherwise spent anyway. You know, if you go to the grocery store, if you go to Starbucks, if you're paying your cell
+
+[02:43] phone bills, water bills, gas bills, things like that, you've consumed those funds, and then you don't have anything to show for it. In the Paycheck to Portfolio system,
+
+[02:54] you're fully investing on the front end, or you're scaling in bills to get started. And then you own an equity in an asset that over time will grow for you and also pay you dividends. If you
+
+[03:06] look at the estimated income tab here, the way that E*TRADE does this is they take the last payment distribution, and then they annualize this out over 12 months. But you can see currently over
+
+[03:17] the next 1 year, I'm projected to bring in about $830 of dividends. So every time money comes in, every time money is invested, this dividend snowball is going to happen in the background. So
+
+[03:30] over time, what we'll get is we'll get unrealized gains turn green as the market grows when we give it enough time. It's not going to happen in a month. It's not going to happen in two
+
+[03:39] months. It's going to take a year, right around there, to start to get some momentum on equity growth. That's pretty typical in the stock market. The longer you hold stocks, the more money you make
+
+[03:51] over time. And then on top of that, we're going to get this estimated income that's going to be layered in addition to any equity growth down the road. But most importantly, these funds are funds
+
+[04:02] that you would have consumed otherwise that will set you free from a 9-to-5 job quicker. Jumping back into the Excel file so we can go step-by-step through this this morning. I have the portfolio
+
+[04:13] updates here. This was the last time we we made purchases and we're looking at the portfolio as a whole just for easy reference. This is as of this morning. And then over here on the right, you can
+
+[04:24] see this is from uh first thing this morning just so you can compare the net account value and the net account value and the available for withdrawal amounts there.
+
+[04:33] I grabbed the historical values tab over here just for easy reference. And then the dividend tab over here as well. One thing I want to spend quite a bit of time talking about this morning is total
+
+[04:44] return. And what does that mean? Jumping into the dividend ROI tracker this morning, this tracks the concept of total return. Basically, what total return is is any paper gains or losses
+
+[04:57] plus dividends received is your total return or your current ROI. You can see like we just talked about on the portfolio tab, the portfolio's down currently $578.
+
+[05:09] When you add dividends back in, that is reduced to $388. This tool is available on our membership Discord. If you're interested in tracking that, and this image is a tool
+
+[05:20] that we're developing that will be available in the membership Discord before too long that will track all of this for you automatically. You can see the number of shares, the price of the
+
+[05:31] shares currently. You can see the market value is automatically detected here. You can see today's changes if the market's open. Then you'll be able to see your cost basis and unrealized gain.
+
+[05:43] So my cost basis is $811. My average cost per share is 5407. Therefore, QQQI is currently down $23.97 or 3%. When you add the cash dividends back in, that reduces that number to
+
+[06:01] $8.71 or currently a negative total return of 1.07%. Obviously, as time moves on, this will this will flip green across the board,
+
+[06:13] and that total return will grow as cash continues to come in. I wanted to call out total return because it's very important if you're going to buy dividend-producing stocks, not just to
+
+[06:24] look at paper gains or losses. You need to add your dividends back in to understand that full accounting. This tracker and this future tool again is available on our membership Discord if
+
+[06:34] you're interested. Our new tools are going to launch in about four to eight weeks, right around there, and we're really excited about that. And then the dividend tracker is currently available
+
+[06:43] now if you would like an easy way to track your total returns. On the business spread piece of this, this is the amount of money we have invested and the margin arbitrage we're
+
+[06:53] creating for ourselves or cash on cash returns. Currently, the gross portfolio value of the starter account is $3,847. That's essentially the gross portfolio amount and then the net portfolio amount
+
+[07:09] you'll see on the actual brokerage, which is what I showed previously. So as of this morning, the net portfolio amount is and the gross portfolio amount is $3,847.
+
+[07:24] That's because I'm still owning those assets when I'm fully invested in the account. Currently, the margin debt is $600, so that's how you get your net portfolio is
+
+[07:36] your gross portfolio minus your margin debt equals obviously your net portfolio balance. The blended yields of all of my dividend holdings right now are roughly 22%.
+
+[07:48] The margin interest rate in the starter account is 8.4%. In my large account that I show on Saturday, I was able to negotiate that rate down with E*TRADE to 5.49%.
+
+[08:01] So just because you have a starter account or you have a a seasoned account, you're still able to negotiate those margin interest rates. I would recommend you reach out to the brokerage
+
+[08:13] and you just ask, what is the best interest rate they can give you? And if you have, you know, stocks and funds in multiple brokerage accounts, one of the best things you can do is actually try
+
+[08:23] to consolidate those accounts because that will give you negotiation leverage. And a lot of the brokerages are negotiating because folks are are shopping those rates around. So I would
+
+[08:34] definitely call and ask for the best possible interest rate you could get. Currently, my equity is sitting at 84%. The business spread is sitting close to 14%.
+
+[08:46] The annual dividends are right around that 846 range, that mid-800 range, depending on the last distribution. The margin interest annually is costing me about $50.50
+
+[08:58] currently. So the annual business spread is the dividends minus the interest, which is about $800. And my monthly net is about $66 in that case. You can see
+
+[09:10] this is an easier version of basically the Paycheck to Portfolio system. Again, the W-2 income comes in, goes into the brokerage account, gets fully invested into dividends and growth assets. And
+
+[09:24] then what the dividends don't cover, I'm using margin to basically fill that void and to create this business structure within my brokerage account. Jumping into the new purchases this
+
+[09:34] morning, if you're new to my uh channel, I started the Spark to Fire portfolio with $2,500 deposit, and I'm investing $500 a month or $250 every paycheck. Currently, I'm splitting that into a
+
+[09:49] 40/60 split. 40% in the growth closed-end funds and 60% in the high-yield funds. Currently, I'm paying my water and electric bill out of this account. You can see January's water
+
+[10:02] bill came in at $125.60. And then January's electric bill came in at $245.72. As the portfolio grows, I will add additional bills on to create um faster
+
+[10:17] compounding, essentially. So, what will happen next is I'll probably add the cell phone bill over the next month or two just to create more of a cash flow cycle. On the available for withdrawal
+
+[10:28] amount, you can see in week 14, we were at $1,117. And at week 15, we're sitting at $1,258. Purchases I'm making as of this morning, I'm going to buy one share of Amazon.
+
+[10:43] Amazon's been down recently with the AI situation and the capital investments in AI. And then I'm going to buy AMZY, which is the covered call fund by Yield Max ran on Amazon. And I'm going to
+
+[10:55] spend $44 on that purchase. And the reason I'm deciding to do that this morning is on the moving averages of Amazon. This is a snippet from E*TRADE of the simple moving averages on this
+
+[11:10] chart. I have the 50-day moving average, the 100-day moving average, and the 200-day moving average. You can see Amazon usually when it touches or it goes below its 200-day moving average,
+
+[11:22] it typically will bounce off of that and stay within those simple moving average bands. And currently, you can see we're well below the 200-day moving average. Therefore, I'm making that purchase for
+
+[11:34] a few reasons. One, I believe in Amazon. I purchase a lot of things on Amazon like most people. And on its chart, it's currently cheap at this point, which is why I'm deciding
+
+[11:46] to make these purchases as of this morning. If you go on to our Discord, our membership Discord, we have many channels, but one of the most used channels that I really enjoy reading is
+
+[11:56] our brokerage channel. We have folks living out of their E*TRADE brokerage, their Fidelity brokerage, Schwab, Robinhood, Interactive Brokers, M1. So, we have a large community of folks, even
+
+[12:09] international channels here. We get a lot of pe- people from Europe, Canada, and other locations that are all trying to learn how to live out of their portfolio so they can break free from
+
+[12:20] their 9-to-5 jobs as well. All of my resources, as I've mentioned, are under the pin comments. You can set up white glove and personal coaching with me if you need shoulder-to-shoulder training
+
+[12:30] in the system, and you want mentorship specific to your situation. You can join our private Discord and membership. Again, all of our tools and resources are available there there that we've
+
+[12:41] talked about this morning. are very, very good the market's going You can um to be higher book a one-on-one strategy call with me.
+
+[12:46] That's a 30-minute high-level call on the system. And then you can download the free starter kit and the simple calculator if you'd like to see how your personal finances could be impacted. And
+
+[12:56] then I have playlists that try to break this down easy for you. And then I have the whole Spark the Fire series here from the very beginning. And then I have all of the videos I've ever made
+
+[13:07] starting from May of last year when I launched the channel, if you're interested in looking at structured playlists. Looking and talking about closing
+
+[13:16] thoughts this morning, you know, it's it's easy for new investors especially to get emotional in volatility. And I can tell you I've been investing since 2008.
+
+[13:28] When I first started investing, we had the housing and financial crash. Uh my twins were just born in '08. You know, I was trying to be a good father and husband at the time, and I
+
+[13:39] invested a large amount of money in '08. And then the housing crisis and financial crisis happened, right? And I lost a a good amount of money right off the bat. And I remember feeling down in
+
+[13:51] the dumps. I wish I could go back to my 21, 22-year-old self and say, "Sean, buy as much as you can right now."
+
+[14:03] Because this is going to recover. And everything's going to be okay. And if I would have just bought more, I bought, trust me. I've always dollar
+
+[14:14] cost average. But if I could go back to '08 or COVID or tariffs, hindsight's always 20/20. But the
+
+[14:24] market's going to always recover. If I would have invested heavily in '08, I would probably be retired by now. So, if you see red on your brokerage account in the short term, that's temporary. The
+
+[14:36] market's going to grow over time. So, I'm going to read this paragraph to you in closing. Spark the Fire isn't about whether the account is green this month. It's about whether the engine is getting
+
+[14:46] stronger. Yes, the account is down on paper, and total return is still negative. But the income is growing, the share count is growing, and the account value continues
+
+[14:56] to build over time. Dividends are quietly padding the return. My volatility makes the scoreboard look worse than the foundation actually is. In the early stage, price swings are
+
+[15:06] loud, but accumulation is what matters. The market controls price in the short term. We control ownership and cash flow. And the Spark the Fire is about building the machine, not reacting to
+
+[15:18] the noise. Just remember dollar cost averaging, and this time year, the odds than what it is now. And then 2 years from now, it's even higher probability. So, stay the course, invest your money,
+
+[15:33] and remember you would have consumed this cash anyway. Have a great day. We'll see you Saturday for the long-form video. Please like and subscribe, and we'll talk to you soon. Bye.

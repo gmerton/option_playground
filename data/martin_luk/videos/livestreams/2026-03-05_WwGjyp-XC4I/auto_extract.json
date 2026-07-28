@@ -1,0 +1,207 @@
+{
+  "video_id": "WwGjyp-XC4I",
+  "date": "2026-03-05",
+  "title": "Should have skipped the first 15mins | 5 Mar 2026",
+  "observed_trades": [
+    {
+      "date": "2026-03-05",
+      "ticker": "QQQ",
+      "direction": "short",
+      "action": "trim",
+      "setup": "Trimmed QQQ short into the strong bounce to reduce short exposure and lock profits, kept most of the position",
+      "entry_basis": "",
+      "stop": "lowered stop on QQQ puts to the gap-down day high",
+      "source": "2026-03-05_WwGjyp-XC4I@10:28",
+      "confidence": "stated",
+      "notes": "'I went queue yesterday'; 'Q PTS' = QQQ puts; trimmed today, pleased he did before the strong bounce",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2026-03-05",
+      "ticker": "AVGO",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Broadcom bought on gap up into declining daily/weekly EMAs after finding support on rising 9 EMA; only long he took today",
+      "entry_basis": "gap up / pullback into the AVWAP angle, support on rising 9 EMA",
+      "stop": "",
+      "source": "2026-03-05_WwGjyp-XC4I@06:10",
+      "confidence": "stated",
+      "notes": "Got stopped out (30:53), then considered re-entering",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-03-05",
+      "ticker": "AVGO",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Broadcom long stopped out after the EMA bounce entry",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-03-05_WwGjyp-XC4I@30:53",
+      "confidence": "stated",
+      "notes": "Then considered re-entry either on close below 9 EMA or bounce into AVWAP from day high (37:31)",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-03-05",
+      "ticker": "ARM",
+      "direction": "short",
+      "action": "exit",
+      "setup": "Covered ARM short, partly because SMCI was strong the prior day",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-03-05_WwGjyp-XC4I@20:17",
+      "confidence": "stated",
+      "notes": "'one of the reason that I exit my ARM short'",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-03-05",
+      "ticker": "PL",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Bought Planet Labs as it tried to break out from previous day high and swing-high AVWAP; very strong, good risk-reward, tight ~1% stop",
+      "entry_basis": "breakout from previous day high / AVWAP, after tightening on lower time frame",
+      "stop": "stop only ~1% away",
+      "source": "2026-03-05_WwGjyp-XC4I@44:26",
+      "confidence": "stated",
+      "notes": "'Put some Planet Lab'; one of his ~3 focus long ideas (with DOW, SOLS)",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-03-05",
+      "ticker": "PL",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Planet Labs long stopped out shortly after entry; only risked ~1%",
+      "entry_basis": "",
+      "stop": "~1%",
+      "source": "2026-03-05_WwGjyp-XC4I@47:34",
+      "confidence": "stated",
+      "notes": "Ticker decoded from garble 'Lamar to CP out'/'final lap' = Planet Labs (PL); 'right after I enter it...I'm out'; called it one of three losing trades",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-03-05",
+      "ticker": "NVDA",
+      "direction": "short",
+      "action": "entry",
+      "setup": "Shorted Nvidia just after being stopped out of Planet Labs; NVDA had not yet cleared hourly EMA",
+      "entry_basis": "rejection below hourly EMA",
+      "stop": "",
+      "source": "2026-03-05_WwGjyp-XC4I@48:31",
+      "confidence": "stated",
+      "notes": "'I will short this on Nvidia. Just now, right after I got stopped out from the final lap'",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-03-05",
+      "ticker": "GLD",
+      "direction": "short",
+      "action": "hold",
+      "setup": "Holding gold short; precious metals moving in his direction after nearly being stopped overnight; very confident",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-03-05_WwGjyp-XC4I@29:32",
+      "confidence": "stated",
+      "notes": "'precious metals are going into my direction...so confident on gold and silver'; held from a prior session",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-03-05",
+      "ticker": "SLV",
+      "direction": "short",
+      "action": "hold",
+      "setup": "Holding silver short with gold; metals working, going with plan of rejection into declining 9 EMA",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-03-05_WwGjyp-XC4I@29:32",
+      "confidence": "stated",
+      "notes": "Confident on the metals shorts; held from a prior session",
+      "fill_timing": ""
+    }
+  ],
+  "principles": [
+    {
+      "category": "risk",
+      "text": "Don't over-trade the first 15 minutes; getting too aggressive at the open led to being shaken out three times. Be patient before committing.",
+      "timestamp": "55:30"
+    },
+    {
+      "category": "mindset",
+      "text": "Choppy, range-bound conditions are a good training market: if you can survive or profit here, you'll capture big gains once the market improves.",
+      "timestamp": "11:56"
+    },
+    {
+      "category": "entries",
+      "text": "On parabolic-top shorts, the highest-risk-reward entry is the bounce into the declining 9 EMA after the first close below it; build conviction by studying historical parabolic tops (e.g. 1980 gold) that rhyme with the current chart.",
+      "timestamp": "78:56"
+    },
+    {
+      "category": "exits",
+      "text": "When shorting and the market rips against you, recover/cover shorts rather than panic-sell longs; trimming into strength to lock profits while keeping the core is the disciplined move.",
+      "timestamp": "11:11"
+    },
+    {
+      "category": "risk",
+      "text": "Pick a small set of favorite moving averages and stick to them; using too many MAs over-complicates decision-making, and you must accept missing trades your chosen MAs don't capture.",
+      "timestamp": "62:39"
+    },
+    {
+      "category": "mindset",
+      "text": "A tight ~1% stop makes a stop-out cheap while the upside-if-right is huge, so a good risk-reward play is worth taking even if it fails.",
+      "timestamp": "88:53"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "04:14",
+      "caption_text": "this SOLS",
+      "context": "One of three focus long ideas, inside day at the 21 EMA finding support",
+      "guess": "SOLS",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "29:32",
+      "caption_text": "lowered my stop all for Q PTS into the gap down day high",
+      "context": "Lowering stop on his index put position",
+      "guess": "QQQ",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "47:34",
+      "caption_text": "Lamar to CP out",
+      "context": "Long that stopped him out right after entry; same as 'final lap' / Planet Labs",
+      "guess": "PL",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "49:41",
+      "caption_text": "Circle is now at the end of the web from the July last year",
+      "context": "Strong name at swing-high AVWAP and 150 EMA, good risk-reward short setup he lacked buying power for",
+      "guess": "CRCL",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "53:49",
+      "caption_text": "EMA and R is the weakest name in the crypto space",
+      "context": "Weakest crypto-space name, beaten-down names rallying into 21/50 EMA",
+      "guess": "MARA",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "56:52",
+      "caption_text": "W Y U also looks pretty good. LUNA also looks pretty good",
+      "context": "Names holding up well alongside NVDA",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "85:58",
+      "caption_text": "BRX has been serving the rising EMAs for a month",
+      "context": "Name riding rising EMAs for a month, rare in this market",
+      "guess": "BRX",
+      "confidence": "unsure"
+    }
+  ]
+}

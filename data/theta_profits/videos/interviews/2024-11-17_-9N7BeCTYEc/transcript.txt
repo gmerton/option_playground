@@ -1,0 +1,211 @@
+[00:00] I haven't been assigned once all year on that particular strategy so it's been really good it's about a 75% return on just that strategy this year that's actually been my highest
+
+[00:12] performing strategy with cover strangle you can make extra money on stocks you own either the price goes up or down my guest to discuss this strategy is a high
+
+[00:24] school chemistry teacher as well as a dedicated options uh retail Trader welcome Lance Kaminsky hi everybody thank you John for having me appreciate this and interested
+
+[00:38] in talking about the covered strangle but just tell me how you combine being a high school teacher and options trading yeah um it's interesting because I teach full-time chemistry some
+
+[00:50] physics and obviously I'm pretty busy with you know about 110 students so I do relatively passive trades that usually go pretty far out in time as well so I don't have to watch the market every
+
+[01:04] minute of the day um I typically do stuff with relatively lower implied volatility they're not going to be very dramatic moves on most of the positions um occasionally I will do some on a
+
+[01:16] little bit higher IV possibly riskier trades but most of my accounts are very conservative and very low ups and down moves on those positions have you been trading for a
+
+[01:29] long time uh yeah pretty pretty long um I've been mostly a investor so in the US we have a Roth th for our retirement accounts and I've been doing that for 18 years now
+
+[01:42] and been maxing that out and um just a little segue into the covered strangle um I've been buying and holding for many years eventually I had a 100 shares of different stock and then I noticed I
+
+[01:55] could sell a covered call against it take in some premium when uh already have a good cost basis and then I went into the cast secured put side where you could you know get another 100 shares of
+
+[02:08] stock at a lower price and then just notice you could combine both of those together and then have a covered strangle which we'll talk about soon so let's define very briefly first what is
+
+[02:19] a coverage strangle okay so um first the regular strangle without being covered is when you're selling a call and selling a put a coverage strangle is when you already hold the 100 shares of
+
+[02:34] stock and then you sell the call and sell the put by holding the 100 shares of stock it would be a covered call so if the U price of the underlying goes up dramatically you're still okay because
+
+[02:48] you have those 100 shares of stock and then you have a short put as well um you're willing to take in another 100 shares of stock and obviously be okay with that if you get it so it's
+
+[03:00] essentially a covered call and a short put combined together and so it is composed of the two words the strangle and the covered and the strangle is the two uh selling
+
+[03:14] shorts on each side exactly let's go into how you set up this Triad sounds good um so essentially you're going to buy a 100 shares of
+
+[03:27] stock first um typically you want to be selling some if you're relatively conservative buying stock that you're more bullish on in the long term so you're going to buy 100
+
+[03:39] shares of stock first then you're going to sell a call and there's a lot of flexibility in where you sell the call which would make this a covered call um you could sell them a little bit in the
+
+[03:49] money so for instance if you buy a stock at $30 a share you could possibly sell a call at $29 a share and then you take in a lot of Premium that that way it also helps reduce your cost basis and if the
+
+[04:04] stock happens to drop a little bit then you're still usually okay you can also sell them out of the money and in that case you get more capital gains so again you bought the shares at $100 sorry $30
+
+[04:16] and let's say you sell a covered call at $32 a share then if the stock goes above 32 you would make the difference of $2 or $200 for the 100 shares and that's in capital gains
+
+[04:30] and then with that you're going to sell a put now typically I'll sell a cash secured put so let's say I sold a 28 strike then I'm going to have $2,800 available for my brokerage so then if I
+
+[04:44] happen to get a sign on that then I have another 100 shares and I would have 200 shares at that point and I guess we have an example of a trade just to give a bit more meat to
+
+[04:57] it yeah so if you look at the here um SCD that is the swab um pretty much a high yields on dividends ETF it's not a very dramatic up and down ETF um it stays in a relatively tight range in
+
+[05:15] most cases and pays good dividends at grow so this is an ETF that I own a lot of shares of in my Roth IRAs but I also do the coverage strangle with some of my shares not all of them so look at the
+
+[05:27] example here um the second line I bought 100 shares at 28.3 n and then on the top line I sold a 29 call so a little bit out of the money took in $20 on that covered call and then I also sold on the
+
+[05:46] third line a 28 cash secured put and I took in $27 for that so overall I took in 20 for the covered call 27 for the cash secured put it's an extra $47 in premium that I took in and if um goes
+
+[06:06] below 28 I'm perfectly fine with buying another 100 shares at that 28 strike price because then I bought another 100 shares at a lower cost than where I previously bought them at the
+
+[06:20] 2839 and if you dig into the cost basis uh I I think you have um here you calculating that how do you calculate the cost BAS this right yeah good question so I bought the 100 shares at
+
+[06:33] 28.3 n and then I'm going to subtract the premiums I took in so I took in 0.2 or $20 on the covered call and then $23 on the cash secured put and then you're just going to subtract that from the
+
+[06:48] initial 100 shares that you bought so that means the cost basis would be 27.96 in this case and and then of course if you have a have several bounce of it it will be
+
+[07:00] lower and lower yeah so if we don't go below the C secured put and we don't go above the covered call then I'll just do that same thing again I'll sell another covered call sell another cash secured
+
+[07:13] put take in premium on both sides as well and then lower your cost basis even more what what is typical your DTE for the for the call and put yourself yeah so again
+
+[07:29] I'm pretty busy teaching all day so I typically look around a month out where I'm going to sell the call and the put and then I just let it sit there pretty much every time I'm going to see what
+
+[07:42] happens at expiration and then and we'll go over the sides later at expiration I'll either reenter the position or I'll take another 100 shares and then sell covered calls against those as
+
+[07:54] well we'll get to the management but let's start now with um with the underlying so how do you pick your uh underlyings yeah so I typically want ones that aren't having dramatic up and
+
+[08:08] down moves SCD is a good example of that they're very blue chip type companies they pay good dividends that has been growing over many years so you only want to do this with stocks or ETFs and you
+
+[08:22] could even do this with futures um we could do this with like Mees futures or ES if you have a large account and you need to be willing to hold them for a long time and have at least 200 shares
+
+[08:34] of stock if you're doing stocks or ETFs or at least two contracts if you're doing the Futures contracts and uh what about managing this is you you you said that you
+
+[08:49] usually go one month out you don't want to do too much as I understand during that uh period but uh what are scenarios uh let's go through the scenarios what can happen happen in the risk management
+
+[09:01] I guess the one the one scenario is if the if the price ends up between the shorts right exactly so when the price ends up between the call covered call and the cash cured put then both of
+
+[09:17] those premiums or both of those option contracts will expire worthless you get to keep the full premium that you did before you entered the trade and then I'm just going to do the same exact
+
+[09:28] thing again I'm going to sell another call usually at the initial price or higher If It Moves a little bit up I might look to sell a new covered call a little bit above the previous one and
+
+[09:41] then you could get even more possible capital gains if it runs up and then I'm going to sell another cash geared put so essentially just Recycling and entering in both of those positions just like I
+
+[09:53] did the first time and how many times you can do this I me you could do this for Infinity theoretically um if you never get a sign on the covered call or the short put you
+
+[10:05] can just keep taking in more premium month after month and then lower your cost basis and again ideally you want this with positions that your very longterm bullish on so you will see a
+
+[10:18] uptrend in the position so then you could just keep going with the you know the price going up so let's say HT just slowly goes up you could sell the covered call Higher and Higher and then
+
+[10:33] possibly lock in a really big gain eventually if the covered calls go away in theory but how often does it happen in practice um in terms of the covered call
+
+[10:44] being a signed and you lose your shares not too frequently I typically go a real pretty high um strike price I usually go out of the money and I'll typically look around a 0.1 to point to Delta on the
+
+[11:00] covered call side so I'm willing to be a little bit patient I'm not trying to make a ton of money on the premiums necessarily but I want to be able to ride up with the
+
+[11:12] position okay so let's see now let's say now that the price dumps and your short put is uh is uh breached what do you do then all right so if your short putut is breached at expiration again I wait
+
+[11:28] until expiration I'm not going to manage before that because I'm okay with what happens in any of these scenarios at expiration so if you get assigned on your cash secured put you would then get
+
+[11:41] another 100 shares of Stocker ETF and then you already had a 100 shares so now you're at 200 shares of stock at this point I'm usually going to be selling two covered calls but I want to make
+
+[11:55] sure that those covered calls are at least above my cost B basis because if the position rides back up again you want to make sure you're not locking in a loss at that point so if it drops a
+
+[12:09] little bit let's say I sold a 28 put ond and we get ass signed at 27.5 so not a dramatic difference at that point I will probably sell the two covered calls around 29 or so so I could
+
+[12:25] get back in that upswing if the position happens to drop a l lot let's say it goes to 24 23 then I wouldn't be selling the covered calls right away because the premiums wouldn't be worth it and I'm
+
+[12:38] just willing to wait it out a bit just to get that eventual recovery and also take in dividends while I'm waiting but you know if the price keeps keeps falling in every round you
+
+[12:51] know you sell another cash c p but I guess there is a limit to how how long you will keep selling new puts and add to your stocks yeah that that is possible it hasn't happened in the last
+
+[13:05] year and a half of me now um there you could do a stop loss um track your cost basis see how much down you are and obviously know how much you're willing to lose before you start this um I'm
+
+[13:19] perfectly okay with buying a CHD and waiting for a recovery but it's definitely a good management to be able to have a stop loss in place if you're worried about it is continuing to
+
+[13:30] drop what then if the short call is breached what is your strategy then so if the short call is breached you're actually at the maximum profit at expiration because at that point you're
+
+[13:44] going to be gaining usually some capital gains on your shares especially if you sold the call out of the money you also keep both Sid of the premium you're keeping the covered call keeping the
+
+[13:56] cash secured put premium and then if didn't run up really high but let's say it just barely breached your short call in that case I would usually just restart the strategy buy another 100
+
+[14:09] shares again sell the hasur put sell another covered call even higher than it was before a lot of people are familiar with the covered call strategy and this has a
+
+[14:22] lot of similarity you know how would you compare this strategy with covered call you know in terms of let's say risk profile and how easy or difficult it is to manage Etc why would why should
+
+[14:35] people jump from cover call to cover strangle for instance okay good question so cover calls are a pretty conservative strategy um when a lot of people are talking about options they think oh
+
+[14:47] options must be very risky but selling a cover call is actually more conservative than holding 100 shares of stock because you're taking in that premium as um you know position position moves so I would
+
+[15:01] start with covered calls in general if you're brand new or you could intermediate to doing these type of Trades and then think about selling a cash secured put just separately on the
+
+[15:13] side if there's a stock that you like but you think it's a little bit overvalued you could sell a cash secured put at a price that you're willing to and be happy with getting the 100 shares
+
+[15:24] of stock and then you're essentially just combining both of those strategies together so again for beginners or intermediates I would focus on just one side just do covered calls for a while
+
+[15:37] understand how the mechanics work and then you could just do casur puts and then eventually if you want to you could combine both together what is the worst that can
+
+[15:48] happen with this strategy so the worst that could happen is the stock just continues to drop and just keeps going down down down at that point you're not going to be really wanting to sell
+
+[16:00] covered calls because the premiums will be way too low where you had your initial entry and um theoretically you could have a pretty big loss if the position goes down really far and that's
+
+[16:12] why this is one of the keys is to only do this with stocks or ETFs or even Futures that you're willing to hold for the long term so you might have to wait a while if you get a big drop for that
+
+[16:24] eventual recovery but if you're going to put this on a um risk profile with the one being the very low risk and 10 being very high very risky as a strategy options trading
+
+[16:38] strategy where would you put it compared to other option strategies So based on very conservative or very strong long-term stocks I don't think it's very risky I would probably put it around a
+
+[16:52] three or a four just because it's going to have that eventual recovery um like if you byd those are some of the strongest fundamental companies in America and over the long term these
+
+[17:07] will be growing as the US economy grows however if you're doing this with riskier positions so big moves up and down then it would be a higher risk trade because of that big drop that you
+
+[17:21] might have that we just talked about at that point it might be around an seven or an eightc I'm not going to say 10 because you are taking in premiums on the puts in the call
+
+[17:32] sides do you try to avoid earnings with this strategy um Ford it's not going to be much of an issue because earnings come out frequently and there's a lot of different stocks if it's one individual
+
+[17:46] stock I'm doing um I usually would wait during earnings to sell any options um and then when the earnings are done I'll go back into selling the call on the putt but I usually frequently do this
+
+[17:59] with ETFs over individual stocks how do you measure the results do I measure the results yeah how how do you measure them um so measuring the results is I'm going to
+
+[18:11] look at where I bought the shares of stock I'm going to be adding up the total premiums on the calls and the put sides and then eventually when the covered call goes away I'll look at any
+
+[18:23] possible capital gains and then essentially add up all the premiums collected plus the capital gains and then divided by the total amount of money that you needed to do the
+
+[18:35] trade and know I'm sure that many people are interested in what have been the results yeah results have been pretty good in general I've only done the coverage triangle for about a year and a
+
+[18:47] half with stuff like SD I've been doing stuff on Mees the futures for spy and that one has been very good just because we've been in a very bullish Market the last year so in that one I'm actually
+
+[19:04] selling two short puts um I'm going to sell one quite a bit below near the expected move and then I sell another one even lower than that on those I closed them out at 75% profit of the
+
+[19:19] premium received so I'm not waiting to expire on those and I haven't been assigned once all year on that particular strategy so it's been really good it's about a
+
+[19:31] 75% return on just that strategy this year that's actually been my highest performing strategy 75% that's very good it's really good um I only do that with a very small percent of my account
+
+[19:44] because you got to be careful with Futures especially if you get a sign on a Futures position um meses you can lose $5 dollar every point it drops so that's 75% of of what of your
+
+[19:56] account value it's a very small um I think it's about 2% or so in my total account yeah I stay mostly conservative so most of them are buy and hold for
+
+[20:08] Ford for example I'll do a few of the coverage strangles but I hold a lot of shares as just long-term Buy and Hold and I don't do any options with those so let's sum up in a couple of
+
+[20:22] sentences this strategy and who is it for who would is it a good fit for what type of Trader yeah so I think covered strangle is a very flexible strategy you could sell your strike prices again your
+
+[20:36] cover call you could sell in the money you could sell the short puts really far away if you want to so once you get the mechanics understood it's a very flexible strategy and it would be good
+
+[20:48] for Traders that are okay holding a 100 shares or holding half of a lot so to speak and then being okay taking in the other half lot at a lower entry point and then also if you want to be
+
+[21:03] conservative just sell the call sell the put and then if it goes away and expires you usually make a very good return off of it anyway tell us a little bit about uh you
+
+[21:18] where people can um connect with you and uh learn more from you yeah so I run thet traders.com if you see in the there we go in the bottom over here um so I do many different types of option trades I
+
+[21:32] do a lot of credit spreads where you sell a put and then sell sorry buy a put right below it I do the coverage strangles I'll occasionally do some zero DTE on SPX and then I do some Futures
+
+[21:46] trades Futures strangles um and then quite a bit of Trades and um I am a teacher so I've been able to help beginner intermediate people understand a lot of the mechanics behind the trades
+
+[21:59] and why we take trades the way we do and you're based in Texas I understand yeah in Texas it's a bit hot up here I know in Norway it's a bit cooler I
+
+[22:09] think it's already dark it's 500m yeah do you get any sunlight around now just a few hours maybe during daytime during daytime maybe if you're lucky that's good um are you guys able
+
+[22:23] to see the Northern Lights at all uh well it's mostly in Northern Norway I live in in the southern part but actually the last year it's been uh you have sometimes been able to see it see
+
+[22:34] it in the southern part as well oh awesome quite exciting actually yes very nice I was talking about that in my chemistry class about how electrons move to different energy levels and it
+
+[22:46] releases the different colors of white but it's definitely a sight to see it is uh very fascinated fascinating Lance thank you very much for joining and for expl explaining this uh strategy so well
+
+[23:01] uh I really appreciate it thank you very much John it was great talking with you and hopefully everyone that watches understood the strategy and got some benefit out of it thank you very much
+
+[23:18] [Music]

@@ -1,0 +1,19 @@
+{
+  "video_id": "xA77RMkIc_s",
+  "url": "https://www.youtube.com/watch?v=xA77RMkIc_s",
+  "title": "MARGIN ISN\u2019T THE RISK \u2014 EQUITY IS (Here\u2019s What Breaks Portfolios)",
+  "channel": "Paycheck To Portfolio",
+  "channel_id": "UCqweTiFXT0z9FcURR55RcRg",
+  "stream_date": "2026-01-17",
+  "duration": "26:14",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

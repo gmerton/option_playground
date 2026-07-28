@@ -1,0 +1,19 @@
+{
+  "video_id": "wtQIj6Apiq0",
+  "url": "https://www.youtube.com/watch?v=wtQIj6Apiq0",
+  "title": "This Right Side of the \"V\u201d Trading Strategy Made Me Millions",
+  "channel": "TheOneLanceB",
+  "channel_id": "UCzksXiC-Ju-DTIZmMiaOVfQ",
+  "stream_date": "2025-11-15",
+  "duration": "8:20",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

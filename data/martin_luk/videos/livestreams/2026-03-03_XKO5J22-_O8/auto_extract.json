@@ -1,0 +1,228 @@
+{
+  "video_id": "XKO5J22-_O8",
+  "date": "2026-03-03",
+  "title": "No idea | 3 Mar 2026",
+  "observed_trades": [
+    {
+      "date": "2026-03-03",
+      "ticker": "CRCL",
+      "direction": "short",
+      "action": "entry",
+      "setup": "Tried shorting Circle on opening-range breakdown / rally into gap, looking for a fade so weekly closes below 21 EMA; admits it's not his favored entry",
+      "entry_basis": "opening range breakdown into gap",
+      "stop": "",
+      "source": "2026-03-03_XKO5J22-_O8@18:13",
+      "confidence": "stated",
+      "notes": "Repeatedly stopped out and re-tried Circle through the day (22:46, 36:10, 49:56); 'I don't like it...just let's try'; says he was a little too early",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-03-03",
+      "ticker": "CRCL",
+      "direction": "short",
+      "action": "stopped_out",
+      "setup": "Circle short stopped out multiple times as it bounced back toward the gap; if stopped again, no more trades today",
+      "entry_basis": "",
+      "stop": "above prior bar high",
+      "source": "2026-03-03_XKO5J22-_O8@49:56",
+      "confidence": "stated",
+      "notes": "'No, got stopped out from circle again'; was too early, says new base up another 21%",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-03-03",
+      "ticker": "WDC",
+      "direction": "short",
+      "action": "trim",
+      "setup": "Covered ~25% of Western Digital short below the 21; chose to cover WDC rather than STX since holding both",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-03-03_XKO5J22-_O8@19:48",
+      "confidence": "stated",
+      "notes": "'covering some western digital here around 25%'; not covering STX",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-03-03",
+      "ticker": "QBTS",
+      "direction": "short",
+      "action": "trim",
+      "setup": "Covered some QBTS short; bounce into declining weekly 9 EMA with trending-down daily EMAs and inverse-EP structure",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-03-03_XKO5J22-_O8@28:45",
+      "confidence": "stated",
+      "notes": "'I already covered some QBTS'; entered originally on 50 EMA bounce then 1st 5-min breakdown after gap down",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-03-03",
+      "ticker": "AMD",
+      "direction": "short",
+      "action": "exit",
+      "setup": "Closed AMD short (used as a semiconductor sympathy trade); later reflected the Friday entry was bad",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-03-03_XKO5J22-_O8@29:14",
+      "confidence": "stated",
+      "notes": "'I closed AMD yesterday'; entered Friday; reflection: should have traded the sector ETF or entered earlier/at resistance, not Friday",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2026-03-03",
+      "ticker": "SNDK",
+      "direction": "short",
+      "action": "hold",
+      "setup": "Holding memory-name short taken yesterday on pullback into declining 9 EMA, using WDC/STX 9 EMA and swing-high AVWAP as resistance; skeptical of the AI/memory hype after +500% runs",
+      "entry_basis": "pullback into declining 9 EMA; original 5-min and 1-min breakdown at AVWAP rejection",
+      "stop": "",
+      "source": "2026-03-03_XKO5J22-_O8@40:59",
+      "confidence": "stated",
+      "notes": "Ticker decoded from garble 'SNK/SNTK' = guessed SNDK (SanDisk); first profit-take level ~530 weekly 9 EMA",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2026-03-03",
+      "ticker": "STX",
+      "direction": "short",
+      "action": "hold",
+      "setup": "Holding Seagate short; not covering it since he chose to cover WDC instead",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-03-03_XKO5J22-_O8@28:33",
+      "confidence": "stated",
+      "notes": "'STX I'm also not going to cover this one'; part of the memory-short basket taken with SNDK/WDC",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2026-03-03",
+      "ticker": "QQQ",
+      "direction": "short",
+      "action": "trim",
+      "setup": "Covered some QQQ short into the gap area; wanted it to reach high-44 / 34 levels",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-03-03_XKO5J22-_O8@70:46",
+      "confidence": "stated",
+      "notes": "'I'll cover some INQ into this gap area'; 'just 25%'; INQ = QQQ index short",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-03-03",
+      "ticker": "NVDA",
+      "direction": "short",
+      "action": "stopped_out",
+      "setup": "Traded Nvidia short but got stopped out; cited as part of overtrading the semi-short idea on a sub-optimal daily 9 EMA entry",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-03-03_XKO5J22-_O8@35:28",
+      "confidence": "stated",
+      "notes": "'I traded Invidia but I got stopped out'; traded yesterday on the daily 9 EMA bounce (low win rate)",
+      "fill_timing": "yesterday"
+    }
+  ],
+  "principles": [
+    {
+      "category": "mindset",
+      "text": "Plan trades days ahead, before the chart fully confirms; you should be five steps ahead and not improvise after the open. This keeps you focused on the best ideas and immune to news and other people's noise.",
+      "timestamp": "46:58"
+    },
+    {
+      "category": "risk",
+      "text": "Trade a sector ETF rather than an individual stock when expressing a sector view; a single name (e.g. AMD) can bounce, fake your stop, and reverse, so the ETF separates the thesis from single-stock noise.",
+      "timestamp": "31:24"
+    },
+    {
+      "category": "entries",
+      "text": "Demand a high-standard entry right at resistance, not somewhere already extended; a poor-location entry risks a gap-through-stop and a larger-than-planned loss.",
+      "timestamp": "34:50"
+    },
+    {
+      "category": "risk",
+      "text": "Simply bouncing into the declining 9 EMA is a low-win-rate short entry; one try is fine, but taking two or three losses on it is unwise (overtrading).",
+      "timestamp": "53:11"
+    },
+    {
+      "category": "posture",
+      "text": "Stay focused on the short side in this pocket; don't get distracted by the strong leaders, watch the laggards, the weakness, and the declining breadth.",
+      "timestamp": "45:37"
+    },
+    {
+      "category": "exits",
+      "text": "Scale out partials (~25%) into weakness/target areas rather than all at once, and don't celebrate early until the short is actually closed.",
+      "timestamp": "75:02"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "11:31",
+      "caption_text": "I'm looking to short this BATL but I think IPKL doesn't have any locates",
+      "context": "Wants to short a name but his broker has no locates available",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "11:55",
+      "caption_text": "circle could be a rally into this gap and watch for the fades",
+      "context": "Crypto-related name he's looking to short on a rally into the gap for a weekly close below 21 EMA",
+      "guess": "CRCL",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "17:10",
+      "caption_text": "USA and UU are what are the uranium names that I'm plan to play the long side",
+      "context": "Uranium names he planned to long if the market improved",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "28:45",
+      "caption_text": "QBTS and OQ not not yet not yet. I already covered some QBTS",
+      "context": "Quantum shorts; covered some QBTS, not yet covering the other",
+      "guess": "IONQ",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "40:59",
+      "caption_text": "SNK / SNTK uh I've been tracking this one for so long",
+      "context": "Memory name short taken yesterday on pullback into declining 9 EMA; first take-profit ~530",
+      "guess": "SNDK",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "70:46",
+      "caption_text": "I'll cover some INQ into this gap area",
+      "context": "Index short he's covering 25% into the gap, wants high-44 / 34 levels",
+      "guess": "QQQ",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "48:08",
+      "caption_text": "The speed is still going",
+      "context": "Leader still running; mentioned among names still going (light, AOI)",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "49:31",
+      "caption_text": "I be care doesn't have any locates. Red cat is also going",
+      "context": "Name with no locates available; alongside Red Cat (RCAT) drone name",
+      "guess": "RCAT",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "55:58",
+      "caption_text": "This abs into the yesterday's angle of free web and also the previous swing low area",
+      "context": "Name at yesterday's AVWAP and previous swing low, focusing short side",
+      "guess": "ASTS",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "08:02",
+      "caption_text": "this light is still going. AOI is still going",
+      "context": "Leaders still running in the strong-stock group",
+      "guess": "AAOI",
+      "confidence": "likely"
+    }
+  ]
+}

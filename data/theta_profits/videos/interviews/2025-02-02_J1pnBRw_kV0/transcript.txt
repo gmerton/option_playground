@@ -1,0 +1,215 @@
+[00:00] it's not for the faint-hearted it's not your grandmother's mutual fund uh in meaning that you'll have a more variant than possibly uh what you're accustomed to but also the potential for larger
+
+[00:14] profits today we will talk about the very exciting Zer DTE options tra strategy on S SPX with big profit potential my guest is Dale Perryman who has had tremendous success with his way
+
+[00:28] of selling iron fles welcome Dale thank you very much John give me the elevator pitch on this iron fly strategy you are doing elevator pitch it's a four-legged trade primarily
+
+[00:42] selling at the money on SPX with very specific opening rules and closing rules to keep your losses manageable which gives you a chance to have a big win every day call ourselves
+
+[00:58] the fight catchers with the objective of catching the close price relatively close to one of uh one to four flies that we'll have on at the end of the day and it's not a strategy for the faint
+
+[01:13] tarted I understand it's a bit up and down it's not your grandmother's mutual fund uh and meaning that you'll have more variants than possibly uh what you're accustomed to but also the
+
+[01:27] potential for larger profits there tell me a little bit about you as an option Trader I I bought my first mutual fund in 1988 and I had to drive to the library
+
+[01:40] to research it I was a Buy and Hold guy until about 2008 and I saw my portfolio going down I I talked to a friend of mine who worked at a hedge fund and he said what are you doing to hedge and I
+
+[01:54] said what's a hedge at that moment I learned about options and I began to sell covered S I did that for enough years on Apple where my cost basis was aboutus $40 a share then I found a tasty
+
+[02:08] trade opened up my game started selling uh strangles Etc and have tried a number of different strategies over the years today one of my favorite strategies is iron flies and that's where I've landed
+
+[02:23] I manage a number of different accounts primarily for some friends and family running a small hedge fund trading multiple accounts so let's start with the basic
+
+[02:35] what is an iron fly an iron fly is is a four-legged trade uh you're selling a put selling a call uh close to or at the money and then you have uh two wings um which are anywhere from 20 to 50 uh
+
+[02:51] points away that is essentially an iron fly and we're doing it on SPX and and we have an example here here to visualize uh what an iron fly looks like and as you see on this graph the
+
+[03:04] heaviest profit potential is at the peak where SPX is closing uh close to that Peak and you see your max losses on the edges and why have you chosen SPX for this uh strategy well SPX cash settles
+
+[03:22] which basically means at the end of the day it settles to cash so it's impossible to get assigned long SPX or short SPX I guess you could also do this
+
+[03:35] strategy on XSP which is kind of a mini version of SP SPX right you could trade it on XSP for every gimme there's a gacha the gacha is XSP doesn't quite have the same liquidity liquidity is the
+
+[03:50] spread between the bid and ask so there's not as much volume in XSP as there is in SPX take us through how you trade this strategy with entry and exits every day
+
+[04:03] around between 9:30 a.m. Central Time and 10:00 a.m. Central Time I'll I'll do a roll call who's ready to fly are we at ready or wait usually we try to avoid significant news events if something's
+
+[04:21] about to happen we might wait a little longer but it's usually around 10:00 a.m. that we put our first fly on and we're looking to trade it very close to at the money now there's
+
+[04:33] times where we'll need to split the difference so if something is trading like in between 15 and 20 you're going to have to make a decision about whether or not you go with the 15s or the 20s
+
+[04:44] we'll usually wait for price to break the tie so to speak but our attempt on the very first one is to go very close if not at the money what are the rules for uh your second trade well the very
+
+[04:59] first one determines our next action so it all depends upon John how much you collect for that first fly Okay so we've collected anywhere from $13 per contract to uh uh
+
+[05:17] $27 per contract I believe on Friday our first one was around $14 because right now we're at a very low vix environment a low vola utility so we're not getting as much premium as we used
+
+[05:34] to what are the rules in in essence anytime you collect less than $15 our next ad will be a plus or minus 7 with an ad at 10 if we've collected over $15 between1 15 to
+
+[05:52] $19 our next ad would be plus or minus 10 with an ad 15 apart so let me try to understand this if the first Iron fly is sold at let's say 6,000 uh and you have a collected less
+
+[06:08] than 15 you will wait till the price gets up to 607 or down to 5,093 at that time you would add a new fly that is either 6,010 or 59,0 90 is that correct exactly so it's
+
+[06:26] probably better to view a visual or see that in action in order to better understand it but essentially the essence is the price that you collect for your first fly it determines your
+
+[06:39] overall strategy and then how long do you keep adding new flies well we will always have one or two flies on until about 12:30 central time and at that time we
+
+[06:55] began to load up the boat we don't want to load up the boat until probably 2 hours before close and what are the rules for getting out of them do you have any kind of stop
+
+[07:08] loss or other rules for when you close them it's not t typical to way most people think about stop losses but it's essentially exiting a fly anytime it gets to 90 to 100% loss at expiration
+
+[07:24] for example if you sold something at 6,000 and it went to6 ,10 and you collected $10 for it you'd begin to cut your losses on that one okay if you were at $6,000 and you
+
+[07:40] collected $10 and it gets down to $59.90 then you'd begin to cut your losses on that one so it's anywhere from 90% to 100% break even at expiration
+
+[07:59] okay and how wide are your wings well at the beginning of the day my maximum wings are 50 throughout the day I will adjust that Wing width The Sweet Spot is around 40 cents for a long okay there's
+
+[08:17] no need to go wider if you've got to 40 cents you know taking it to 30 cents 10 10 extra points or five extra points of risk is not really worth it so it's kind of a risk reward
+
+[08:30] in adjusting the width of your wings it'll go from 50 to 40 to 30 the last 30 minutes will probably be 20 wide if you have additional ads and if you trade this strategy with
+
+[08:44] one contract for each iron fly how much buying power would you need to trade this strategy on a typical day good question let me start with how you calculate the maximum buying power so
+
+[08:56] you start with the width of your wings and then this case if it's 50 minus the credit you collected so let's say you collected $15 50 minus 15 would be 35 if you're trading one contract your maximum
+
+[09:14] loss would be $3,500 so that's you've got one fly you've used $3500 in buying power now the question might be what should you budget for the entire amount of wings you might trade
+
+[09:28] that day the Comfort level is anywhere from 122,500 to $20,000 per contract traded is a comfortable range that would accommodate anywhere from three to on on large
+
+[09:43] premium days up to four or five flies all right I you know it takes a bit time to grasp the rules that you are trading this with so I thought let's look at one specific day and how you
+
+[09:57] traded then and let's bring that up this is the graph from Friday January 24 how the SPX was developing throughout the day in the five minute intervals so anything you would say about this day
+
+[10:11] before we go into the trades well a lot of times the market will open at 8:30 a.m. Central Time and we typically have a considerable amount of volatility for the first hour and a half we like to
+
+[10:25] bypass that so sometime around 9:30 a.m. to 10: a.m. we're looking at our first fly on Friday it happened to be around 10:00 a.m. um and we're trading at 6115 so that was the first Iron fly we
+
+[10:42] put on at 6115 if anyone wonders about the times on this graph the times below are actually the time zone in Norway where I live gotcha so as you can see price
+
+[10:55] began uh to move up um I believe on on that first flly we collected around uh 14 uh dollar our first um rule was at plus or minus 7 we would have an add at 10 away and so as you see price moves up
+
+[11:12] when it gets to 6122 we added the 612s so now we're in two flies the 615s and the 612s and then the next trade is close
+
+[11:29] that one yeah what happened is price moved down we gave it about a 1 to three point Tolerance on the 25s price gets down to about 6114
+
+[11:42] 6113 and we close the 6125 so now we're just in the 611 15s and this would be around the break even zone for this trade I guess yeah the 6125 was close to a break even if not a
+
+[11:57] small loss and then the next step you are doing Market continues to go down we're now compromising we went to plus or minus 2 and a half with an ad at five so the
+
+[12:10] price goes down to 61250 and we add the 615s so now we're in the 611 15s and the 6110 and then you add another one and then the price continues to go down so
+
+[12:26] it goes down to 61750 and we add the 6105 so now we've got the fives the 10 and the 15s and the market keep changing the market keeps going down we've collected
+
+[12:40] enough on the 615s might have misspoke earlier we might have collected as much as $16 for those 615s so give it a little bit of
+
+[12:50] Tolerance now we've got the Double O's the fives the T and the 15s Four Flies open is that uh typical at this time of the they typical is anywhere from 3 to five flies depending upon how much you
+
+[13:06] collected for your first one if you've collected over $15 the most you would have on at any one time would be four if you've collected less than 15 the most you have on is
+
+[13:21] three so essentially as premium begins to dry up we might move from a maximum of four flly to a maximum of three because you're collecting less premium and that's what's happening here
+
+[13:36] you are a bit later close when as the market continues to go down you are closing the 6115 yeah so the price goes down at some point we've passed our tolerance level
+
+[13:50] for the 615s and we close the 615s so now we're just in the Double O's the fives and the 10 and let's take one more step so now price continues to go down um we've hit
+
+[14:05] our tolerance and so we exit the 6110 so now we're just in the double lows and the fives now price as it moves down U to 69750 we add the 6095 so now we're in
+
+[14:24] the 95s the Double O's and the 05s and then one more is closed and then we hit our our exit for the 6105 so we're in the 95s and double
+
+[14:40] o's but you add one more and as price gets down to 9250 we add the 6090 so now we're in the 90 95s and double O and that is how it looks at the the
+
+[14:55] end of the day right yep and it closed at the end of the day I think it was 6101 yes so yeah we've been close I think our ideal close there would have been
+
+[15:09] 6095 we went slightly outside the range but it was still a profitable day here are your profits for the day right and and you collected you had a profit of $26 per contract that was traded this
+
+[15:24] day I would classify that as a small win all right you need to be on alert trading this uh strategy be next to your computer and follow the market very closely isn't that so yes John it's
+
+[15:39] definitely not a set it and forget it and go to the supermarket uh type of trade you said that you're trading in a group tell me about that we trade every day in zoom and we have what's called a
+
+[15:53] Captain's Log the analogy would be to Star Trek where we're always within the group there's a central Focus point where we know what flies we're in we know the next add or drop and we know
+
+[16:06] the specific price based upon that Captain's Log helps to guide us trading can be a lonely Sport and at last it allows some camaraderie we can celebrate together when we have a winning day we
+
+[16:22] can um commiserate when we have a losing day and kind of group therapy so to speak it's definitely a group where we U learn from each other and what I find is that you get a group of smart people
+
+[16:36] together and it's more valuable than the smartest consultants and I'm sure people are bit curious about the results and uh we will look at them now because it is a bit of
+
+[16:48] a roller coaster although it has been very profitable for you but this is the uh results graph that you you have had since you started trading this uh in 2023 was it yes and it's it's uh in
+
+[17:03] three months it'll be our two-year anniversary so how would you comment on this result graph you know as you can see there are some significant times of draw Downs so
+
+[17:16] what I say is you live by the sword you die by The Sword and what I mean by that is at times where you see my biggest up move and my biggest down move it's as a result of a growth that I had grown the
+
+[17:30] number of contracts so as you grow the number of contracts you can expect bigger swings up and bigger swings down if a person wants to have smaller down moves you could just trade smaller
+
+[17:43] ideally if you were to put a kayak into the ocean you would experience a lot of waves ideally put a kayak on top of an aircraft carrier and you wouldn't feel any wave at all and so I guess having a
+
+[17:58] larger account in trading this very small and reinvesting the proceeds back into the strategy I think is a healthy growth rate so I think as you see I've gone kind of from zero to one and a half
+
+[18:15] million over this time period with a high of about two million it's very impressive and you said that this strategy constitutes about 65% of your profits but I also
+
+[18:29] know that you trade a number of other strategies some of them much more conservative one of them is Poor Man's covered call that you explained very well in a previous video we will put the
+
+[18:40] link to that video in the the description so so how much of your trading Capital are you allocating to this uh strategy you know when I started it was 20% of my buying power allocated
+
+[18:55] to this strategy and I'm a fan of reinvesting the profits of this strategy back into this strategy so it might grow from 20% of your buying power to perhaps 30% of your
+
+[19:11] buying power but I'd say that's a comfortable amount in a portfolio can you sum up the most important risk management rules to follow with this strategy yeah follow
+
+[19:26] the rules stay on the reservation what is the reservation the reservation is where we've been for some period of time and we feel comfortable that we know what
+
+[19:37] the numbers are going to be if you choose to go off the reservation it can be dangerous you might do better than we do that day or you might do worse but we don't really know what might be out
+
+[19:49] there if you're choosing to go off on your own so while I encourage experimentation and little bets don't go too crazy with it because you're not quite sure what's out
+
+[20:03] there how would you compare this to other iron fly strategies people are trading I know some are for instance putting on iron flies early in the morning and taking profit at 10 15% and
+
+[20:16] having a stop loss for instance uh how would you compare these different styles of iron flies well well our our strategy is really capitalizing upon what uh the Theta Decay that occurs in the last hour
+
+[20:31] and while we call it Power Hour which is the last hour from 2:00 p.m. to 3:00 p.m. a lot of crazy things can happen but there's also a lot of opportunity there's a lot of theta Decay
+
+[20:46] many times uh you can double your profits in the last hour from the entire day or the market could like snatch it away so there's a there's a Chinese symbol that includes danger and
+
+[21:03] opportunity in in in any crisis there's danger and opportunity we believe there's so much opportunity in the last hour that will fly into the close these other trades many times won't go near
+
+[21:16] that last hour because it's so dangerous I traded one of those other strategies very good strategy and if you don't have time to babysit it you could take u a 12% profit Target or a 30% stop loss
+
+[21:31] it's a pretty good strategy it has a 70% win rate so it's a winning strategy to do that with iron flies but you miss the chance for the bigger wins let's look at the risk profile of
+
+[21:46] this strategy where would you put it on a scale from one being very low risk and 10 being very high risk where would you put this strategy and I assume that you're asking me against all of the
+
+[21:59] available including you know people who are buying straight out calls way out of the money I mean would be high-risk low probability I would think gambling strategy so if you add them into the
+
+[22:14] equation I think this strategy uh would be at a a six or 1 to 10 scale if one is just buying t bills and
+
+[22:30] 10 is gambling by selling a collar put way out of the money what is the worst that can happen with the strategy the worst thing that could happen is that you have a really bad day
+
+[22:44] and you are following the rules and you have an $8,000 per contract loss and those days will happen worse than that is you completely go off the reservation you don't follow the rules
+
+[22:58] in that case you could take a Max loss in two years I could count on one hand how many times I've taken Max losses and that's in thousands of iron flies all of those on one hand was due to some human
+
+[23:14] error when you close your trades one iron fly will you close the whole iron fly all four legs in one operation or will you do the shorts first and then the Longs or split it up I would say 99%
+
+[23:28] of the time I close all four legs now I'm in experimenting with a larger account where I buy a set of wings in a block and the rest of the day I just trade the
+
+[23:42] shorts if you've got a large amount of buying power in a larger account and you don't care as much about your buying power you can do that and I think you can have a strategy that's slightly more
+
+[23:55] profitable it will be more dangerous because because you need to be on top of it because your protection is wider so let's sum up who is this strategy suited for and who should not
+
+[24:09] try this strategy you should not try it if you don't have time to manage it I think it's suitable for a person that has interest in being around now you don't have to do it every day I mean you
+
+[24:26] could just do it on the days where you are arounded you're available so who's it not for it's not for uh someone that doesn't have that ability um to manage it and to watch it
+
+[24:39] throughout the day and I guess you should also be comfortable with the large draw Downs you have seen yeah so comfortable with the draw downs and I really think in order to
+
+[24:53] manage some of those larger draw Downs you need to give yourself a chance for the big wins what does that mean that means if you're always taking the money and run
+
+[25:06] like a small win I'm happy with $500 I'm just going to take this money and close everything well that's fine and dandy but what's going to happen when you're down uh 2,000 3,000 4,000 you really
+
+[25:22] need to give yourself a chance for those big wins in order to offset some of your larger losses to make the numbers work where can people learn more about how to trade this uh strategy well if you're on
+
+[25:35] Discord you could um join our Discord uh at trade diff uh we do have some um Security in place to make sure that people are legit you could join us on our daily Zoom calls you can find me on
+
+[25:51] YouTube where you can watch a video of a description of iron flies or contact me through private message through comment on YouTube dear Peron thank you very much
+
+[26:03] for once more sharing one of your strategy with us well my pleasure

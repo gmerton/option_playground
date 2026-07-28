@@ -1,0 +1,19 @@
+{
+  "video_id": "hC4g7qY6UcQ",
+  "url": "https://www.youtube.com/watch?v=hC4g7qY6UcQ",
+  "title": "52 Minute Risk Management Masterclass from a $100,000,000 Trader",
+  "channel": "TheOneLanceB",
+  "channel_id": "UCzksXiC-Ju-DTIZmMiaOVfQ",
+  "stream_date": "2026-07-15",
+  "duration": "51:52",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

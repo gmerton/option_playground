@@ -1,0 +1,425 @@
+[00:00] I was able to make more money, spend less time, and have less stress doing it. My goal is that I make 1.04% premium gain on the value of my account over the course of the week. My guest
+
+[00:15] has a simple options strategy that has been working very well for him. He sells weekly puts and aims to start each week with 100% in cash. Welcome, Josh Walker. Hey, thanks for having me.
+
+[00:31] Certainly appreciate being here. Josh, let's get straight to it. Give us the 42nd version of how you trade and how it has been working out for you. Absolutely. So, I as you mentioned, it's
+
+[00:43] it's weekly puts. I'm with a math background, I'm I super big on finding levels and using those levels to make sure that those puts expire useless as as often as possible. With such simple
+
+[00:57] strategy, you you can get super high premiums. You can make super super large amounts of gain with that as long as you're, you know, you hit your levels properly. So, that's the that's the
+
+[01:08] basic idea behind it. And we will get into the details of how you trade, how you choose your underlines, how you enter the trades, how you get out of them, what you do when the trades go
+
+[01:20] against you, etc., etc. And you will of course also share your results from this way of trading. But first, tell us a little bit about yourself, especially as an options trader. I have an engineering
+
+[01:35] background, I have a math background, and so I used to to to do day and swing trading, and I, you know, had I kind of decided to stick with options primarily because I was able to make more money,
+
+[01:47] spend less time, and have less stress doing it. And so I I'm really a firm believer in in sticking with the basics and really hand handing yourself those fundamentals, the real foundational
+
+[02:00] stuff. And so I feel like that's where I get it all from is basis, you know, risk assessment, and trying to to maintain everything in a kind of a robotic emotional state with these basic
+
+[02:12] fundamental tools. Where are you located? I'm in Prescott, Arizona. Which is not hot like Phoenix. We get snow here. And you are a full-time trader? Yeah, I
+
+[02:25] guess I use the term soft retired. I've had a number of businesses over the years, and I dabbled in trading for many years for for a long time, and about 2 years ago, I said I was kind of done
+
+[02:40] with the engineering industry, and I said, "You know what? I'm going to just try this." And I I dove in, and I just really committed to it. And so yeah, I'm I'm kind of soft retired trader at this
+
+[02:52] point. So, let's start with a short overview of your basic trade, and then we'll get into the details later. But what is your basic trade in short? Right. So, the
+
+[03:03] most basic trade, right, is is your your run-of-the-mill cash secured put. And what I try to do is I go in, I try to identify a level within the next 5 days expiration that my analysis suggests
+
+[03:19] that I won't pass that level, and then I just write a put or a set of puts. Sometimes I'll do a spread, and you know, I'll I'll I'll choose some different strike prices, but it's just
+
+[03:30] this basic put. I write them on Monday mornings ideally for for expiration on Friday. There are cases where, you know, Tuesday I won't find a good entry, and so Tuesday or Wednesday rolls around,
+
+[03:43] and so occasionally I'll write them to expire the following week. But at the end of the day, fundamentally, that's it. That's the nuts and bolts of it, and it only gets more complicated than that
+
+[03:54] when when when trades go south. And so What are you trying to achieve? Is this your aiming for, or is your goal to actually
+
+[04:05] own these shares? I don't really want to own the stock. One of my risk versions, one of the things where I behave best emotionally is when I don't own the stock. And so yeah, so I'll go in, and
+
+[04:17] I'll purposely write these contracts to expire useless. And that kind of ends up being the place where after having sat down and looked through all of these other scenarios and and, you know, going
+
+[04:31] crazy with butterflies and condors and all this stuff, that that is the thing that really seems to work. And why weekly, and why selling puts? The weekly thing is interesting because
+
+[04:45] there's still some theta left, right, over the course of the week, and it dissolves super quickly like Wednesday, Thursday, Friday. So, you got to get those those those puts in on Monday or
+
+[04:56] Tuesday, or they they lose a lot. But the week if you go and you and you look at an options chain, and you say, "Okay, I'm going to sell an option, this particular option, if it's close to the
+
+[05:06] money, if close to at the money, you might make X amount in in in a 1-week expiration. If you go 2 weeks out, you make a little bit less than double that. And if you go 3 weeks out, then you make
+
+[05:19] a little less than triple that. And this is theta specific, right? Like if we're talking about you know, the gamma effect, we're talking about theta predominating the the value of the
+
+[05:30] option. So, I I just kept saying, "Well, if I go 3 weeks out, I make slightly less than three times as much as 1 week, and then I have two more weeks that I have to worry about things that that can
+
+[05:42] happen to the stock like, you know, the US attacking Iran or something, right?" So, so I I just went through this logic over and over in my head, and I just always come back to these weekly weekly
+
+[05:53] puts. Have you ever wondered how different traders approach the same trading day? On March 23rd, we will explore just that.
+
+[06:03] For the first time on Theta Profits, we are bringing together more than 25 experienced options traders for a full-day live stream. Theta Live, one trading day, 25 plus
+
+[06:15] traders. From before the market opens until after the close, traders will join throughout the day and walk through how they are approaching the market in real time.
+
+[06:25] Different strategies, different time frames, the same market. Some traders may place trades live, others will explain why they are waiting. Because sometimes the most
+
+[06:37] valuable lesson in trading is knowing when not to trade. Throughout the day, more than 25 experienced options traders will drop in to share how they are reading the
+
+[06:49] market. You'll hear how traders think about entries, risk management, adjustments, and market structure. No hindsight, no cherry-picked trades. Just live markets and real decisions. We'll
+
+[07:03] cover everything from zero-DTE trading, short premium strategies, longer-term upside positions, and how traders manage risk as the market moves. It is a rare chance to see how different traders
+
+[07:17] approach the same trading day. The event will run from before the opening bells to after the close on March 23rd. If you trade options or want to learn how experienced traders think in real
+
+[07:31] time, this will be one of the most educational trading events of the year. Use the QR code or link in the description for more info and to register. Theta Live, one trading day,
+
+[07:45] more than 25 traders, live markets. I hope to see you there. So, let's start with the entry mechanics. And maybe first, how do you choose your underlines? What are your
+
+[08:00] criteria for finding the the options you want to sell puts on? So, as a as an engineer, as a tech software engineer, electrical engineer, tech guy, I'm I'm heavy tech, which makes me a little bit
+
+[08:13] more risky, I think. I don't I don't have as many safe haven stocks as a lot of of people might. So, most of my watch list is made up of tech stocks. Um and I cycle through like on a on Saturday
+
+[08:26] afternoon, I go through every single stock on my watch list, which is I don't know, there's 80 or 90 of them, and I do like a 1-minute
+
+[08:35] quick take on each stock, and I make a a short list of all of the stocks that, you know, fit the kind of the criteria, and we can talk about those criteria, that fit the criteria that I say, "Okay,
+
+[08:47] this tradeable in the next couple of days." And then I go back to those three or four or five or six, and I do a a longer analysis on on those, and that's where I get that list from. How do you
+
+[08:59] do a 1-minute analysis of 80 stocks? Yeah, so I my my biggest way, and I'll show you this, I love looking I love doing confirmation with moving averages and Ichimoku Cloud. So, I go in, I I go
+
+[09:15] on 1-day candles, I pull up a Ichimoku Cloud and some of the moving averages. There's so much information in in Ichimoku Cloud, but you have gotten to the point where I can look at the 1-day
+
+[09:28] Ichimoku Cloud, and in about 5 seconds I can say it's tradeable or it's not. And so if it is, then I go down to a 4-hour candle, and I check there. If it's still, I go down to a 1-hour candle, and
+
+[09:40] I check there. And if it passes those tests, and it, you know, has some close levels with some moving averages, makes it on the list. Pretty much that simple right off the bat. So, I guess let's
+
+[09:50] bring in TradingView, and you can show us. Yeah, absolutely. So, I just so happen to have Upstart up right now and Upstart is a tech stock. They're like a fintech kind of company that I trade
+
+[10:03] sometimes. So, if I was going to try to determine whether this was tradeable, I would activate I'll turn off some of this other stuff here. I'd go to our daily candle and I'll turn on the
+
+[10:13] Ichimoku Cloud and we've got a whole bunch of stuff, right? Before we go, what is this Ichimoku Cloud that you're talking about? Yeah, so Ichimoku Cloud is So, back in
+
+[10:24] you know, candles, right? Were were actually originally used in Japan in like the 1800s, they used them to chart the price of rice over the the seasons. And so, a lot
+
+[10:37] of the stuff and I actually happen to be a martial artist as well and so, a lot of this I get a little bit fascinated by some of this stuff. A lot of the tools, the modern tools
+
+[10:47] that we use here come from Japan. They come from 1800s Japan. And so, this Ichimoku Cloud is essentially I'll turn off this linear regression here so you can. So, it's essentially got a few
+
+[11:00] different lines in it and I won't, you know, go through all of these, but they there's this lagging line here, this green line, which is really just like 30 candles back from the free You can see
+
+[11:13] it almost matches exactly the the actual candle mapping. And then there's these this blue and red line, which are a baseline and a conversion line and they're kind of like their own moving
+
+[11:25] averages. They're kind of like in a in a MACD indicator where you get like a crossover that can indicate like a buy or a sell. And then you've got the cloud. You've got this cloud itself,
+
+[11:36] this this red and green area and I can find some examples where we're looking at a good cloud. Like with Upstart right now, it's not tradeable. What we're looking at
+
+[11:45] right now is not a tradeable position. So, What does this cloud tell us? Well, the cloud on this screen there and this you have this long red uh cloud.
+
+[11:56] Yeah, so it's giving you trend information. It's giving you trend and bias information and the cloud here like these these all this red and green line again like they're just these they're
+
+[12:07] specific moving average values. The cloud, this area in the in the middle here is just filled from, you know, when these when these when one in when one moving average crosses over or under the
+
+[12:19] other. With the cloud itself, what we want for a tradeable position is we want to find an area where the current candle that we're on is above the cloud and the cloud is green and the cloud has a large
+
+[12:34] amount of area, right? So, where we see this red cloud here that has a large amount of area like that's kind of like a bad trend signal. Like it's a trending system is essentially what it is. Josh,
+
+[12:46] you said that Upstart, which we are looking at, is not tradeable. Why exactly is that? Okay, so the there's a couple of different elements to to make that
+
+[12:57] decision. The first one is is that the actual value of Upstart is below this this cloud and the forward-looking cloud here is red. And so, that's one tick. That's one suggestion that
+
+[13:11] the trend is downward, right? Unless we're shorting the stock, we have a downward trend that makes it hard difficult to trade. The next item are these blue and red
+
+[13:21] lines, this the base and conversion line. And so, if we see this blue line cross under the red line, that tends to be a signal to sell the stock.
+
+[13:34] And so, when we see when when we're way down here and we see this this large gap between the blue and the red, we're saying, "Okay, that's in a sell position. Like we we're we're selling
+
+[13:45] the stock. We're not writing, you know, puts on it in a case where we might want to buy it, right?" And then the third piece is this lag line. When we see this green lag line below the the cloud as
+
+[13:56] well as opposed to above it, we we take that as a third indication that trending it's trending downward, right? We want we're all of this is just kind of like kind of trend settings and everything
+
+[14:10] that that the cloud is telling us, the cloud and these conversion lines and this lag line are all telling us that the trend is downward. So, either short the stock or don't trade it.
+
+[14:22] And when you do your quick research during the weekend, this is the chart that you look at very quickly for all the Yeah, so the underlying lines. Right,
+
+[14:30] I'll look at this if if it looked better, then I would go to the 4-hour. And here we're saying, "Okay, similar situation. Everything is is not tradeable." Then I go to the 1-hour,
+
+[14:41] still not tradeable. Now, you notice on this one, this blue line has crossed up above the red. And so, in a moving average, right? It's like a golden cross. The problem is is that we've
+
+[14:52] still got this red cloud and we've still got, you know, the the price of the the stock below the the cloud and this this green lag line is stuck in the cloud. So, even on short timescales, it's not
+
+[15:05] it's not a very tradeable stock, but it's trending towards tradeable on 1-hour candle timeframes. Could we look at an example that is tradeable? Yeah, let's see. Let me see
+
+[15:17] if I can find something here without taking too much effort. Okay, so here we go. So, this is Paramount Skydance and you can see how back here ways like back in in the end
+
+[15:32] of February, they they were they were no good, but but they've had this really nice upward trend, right? Like you can and draw this this nice little Gann line that just like goes straight up right
+
+[15:44] through here. But you notice now we have a green cloud. We have a blue conversion line that popped up above the red line and we have the green lag line that's above. So, we
+
+[15:55] go to 4-hour and we're barely at the same point. Look, we literally just got a buy signal on those conversion lines. The cloud is just barely green right here. So, when we go to day, when we go
+
+[16:07] to the 1-day candle, it's the whole situation here is going to change. Watch this. So, now on on the 1-day candle, we see the trend, right? And you see that this I drew this Gann line right here.
+
+[16:19] So, you can see that on short short timescales, we're starting to look good. But if you're trading for more long-term, uh this is, you know, this situation is
+
+[16:30] still feels a little bit worrisome. There's not a long enough trend to feel super comfortable like this. It really depends on your risk level, right? But like this is a little bit concerning
+
+[16:41] even though the other two timeframes are great. What about IV level? How much do you look at that? Yeah, I do look at implied volatility and actually I like
+
+[16:51] I like to see high implied volatility. Not too high, but I'm I'm, you know, the the strategy is is going for, you know, decent premiums. And so, in order to really get some of the premiums I want,
+
+[17:06] you know, that volatility is, you know, it it all depends, right? Because it can it can it can vary still based on the stock, the sector, right? But, you know, 60, 70, 80% I love I love it. Then you
+
+[17:21] have chosen that you want to trade one stock. This is tradeable. We are at Monday morning. Now you need to decide which trade you are going to do. What is your dealt What
+
+[17:33] is the delta you are choosing and how much premium are you aiming for? So, in terms of delta, I don't I don't screen by delta, right? Like I don't use delta as a way of determining which
+
+[17:47] trade to take. I I I monitor delta so that I don't get, you know, I you know, I don't get into situations where I have a super high On TradingView, if I want to now decide
+
+[18:03] what my levels are going to be, I'll turn off Ichimoku Cloud. And we will we'll pull back out of here and I'll start looking at moving averages. And so, in this particular
+
+[18:16] case, I've activated a linear regression, which gives me kind of a, you know, a best fit line and and two sigma channel on the outside. And then I've
+
+[18:27] got in here, I've got a 5-day, 10-day, 20-day moving average and a 50, 100, 200 moving average. And so, I'm looking at all of these different levels. And they're all psychological, right? Like
+
+[18:41] it's like hundreds of thousands of people around the world and they're like choosing their levels based on the same criteria, right? So, if we look at this particular stock and I'll take it down
+
+[18:51] to the 1-hour candle. Now, at the 1-hour candle where we're going to try to like confirm our levels, we see the stock here and we notice that we've got this
+
+[19:02] this grouping, right? These yellow lines on the bottom are the 5, 10, and 20-day MA. And then these two top white lines are the 100 and the 200-day and then the
+
+[19:13] 50-day is right here in the middle at 11.86. So, these are our levels. Or these are some of our levels, right? I don't want to put so much stuff on the
+
+[19:23] screen that it's just ridiculous. But what I'm looking for is I'm saying, "Okay, on these, we have the 100 and the 200-day and they're almost exactly the same and
+
+[19:33] they're right above here. And so, I I'm going to say, "Well, if if we pass those, if we go above if we're able to break that resistance right there, then we have to find we have to decide
+
+[19:46] next, well, what do we even have, right? Like if we break cuz we're going to trade from level to level, right? Like you hear people talk like I think you know, some of some traders out there
+
+[19:56] talk about trading from supply to supply or from demand to demand, right? And so, we need to decide well, if we're going to bounce off of this thing and go down, then we want to write a put
+
+[20:08] our weekly put in such a way that this stock doesn't go below that that price, right? If we go above this and we start moving to the next level,
+
+[20:20] which because there's no moving average above that I could use the linear regression and all these other things to find levels above, but the point here really is the fact that I want to say,
+
+[20:31] okay, I have 5 days. If I break this resistance level and I head upward, then what what does that look like? What kind of growth can I see in the stock um in the
+
+[20:44] next X number of days? And I'll choose the strike price primarily based on that analysis. So, where would that be on this chart for instance? Well, let's say on Monday
+
+[20:56] morning we passed this resistance. Let's say we break through this resistance level and we start moving up. If that were to happen, I might come in here and I might activate a Bollinger
+
+[21:06] Band and I might say, okay, where does this two sigma and this two sigma look like? I may project out, right? Like so, if we move up into this region over here and I project this band, this is like
+
+[21:19] the maximum place that I think that the stock could end up, right? And so, if I'm feeling like taking a little bit of risk I could write the the put to be closer to that range. Now, it's very
+
+[21:33] rare that I do that. What's really likely is is that I take this these two levels here, the stock itself is at 1334 and these two moving averages are at 1391 and 1382 and I might say, okay, I'm
+
+[21:48] not going to I'm not going to write my put any higher than that because I don't know what's going to happen and if we bounce off that, then I might get a huge premium, but I might also own a stock at
+
+[21:59] a really high cost basis. So, if we're feeling more bearish on the stock on the other side of that, I might come down here and I say, well, if we bounce off of these these moving
+
+[22:11] averages our next drop, our next level down is all the way down here at at 1186. And so, I might say, okay, if I'm feeling bearish on this stock, I'll write just
+
+[22:22] below 1186. I'll write at 1150 and maybe I'm not going to get very much premium, but I just can't guarantee that this gap won't, you know, be filled up, right? That we won't drop that gap during the
+
+[22:36] course of the week. Do you have any rules for how your minimum premium as as compared to the total risk you're taking? I do and it's not for a specific item,
+
+[22:47] but I go for my weekly goal is that I make 1.04% and that's I know it's sounds silly, but there's a reason why it's 0.04, but my goal is that I make 1.04%
+
+[23:03] premium gain on the a value of my account over the course of the week. And so, if I take a stock and so, you're talking about Delta earlier, right? And so, in
+
+[23:14] some ways I'm kind of doing this Delta hedging scheme, but rather than using Delta, I'm using premium gain percentage. And so, if I write on a stock that happens to have
+
+[23:27] like a super high premium, then I'll take another stock that I'll accept a super low premium. On this one for example, if I wrote at 1184, the premium's going to be really low and so,
+
+[23:39] I may try to choose I may take a little bit more risk on a different stock to try to get a higher premium to hit that 1.04% that week.
+
+[23:50] So, so you don't have a specific goal for each trade, you have a goal for your total total risk or your total trading that week, which means that some trades will have a very
+
+[24:03] high premium, maybe 2%, others might you will be okay with 0.5% as long as you totally get up to your 1.04. Exactly. That's exactly right. And what is this 0.04? Well, it's so it
+
+[24:20] has to do with the risk-free interest rate. So, as you know, my preference is to have 100% cash position on Monday morning and own zero stock. And so, if I'm successful writing puts all week and
+
+[24:38] they all expire useless, then my entire account balance is earning the, you know, right now it's like 3.6% interest is the risk-free interest rate, right? So, if you divide 3.6 by 50, I
+
+[24:52] think I have it divided by 50 weeks instead of 52 weeks, you get a 0.04% interest per week. And so, I add that to my goal because I want to I kind of it's a way of like pushing myself and saying
+
+[25:05] like, well, that's that should be free money. So, like I'm going to add that to my 1% goal. Okay, so let's get to how you exit the trades both for profit,
+
+[25:19] but also when things go wrong. Yes. Your goal is to let them expire worthless if I understand it correctly. Correct. Correct. So, that means that you don't have a
+
+[25:30] take profit level as such, they should go to zero. Yeah, although I do a super quick little calculation and I say, okay, well, if there's five trading days, let's say I
+
+[25:41] made $1,000 in premium and I have five trading days and so, that's basically $200 a day. And so, if I get to Wednesday, which is 3 days in and before Wednesday
+
+[25:54] closes, I'm $800 of that in the money, I'll just close it out because I'm $200 ahead of where I would have been, you know, if I just took 200 bucks a day. And then on Thursday morning, I can open
+
+[26:10] a new option rather than waiting till Monday, I can open a new option and have a little bit more theta in there for expiration the following Friday. But things do not always go as planned
+
+[26:24] neither for you nor for any other trader. So, let's get into what you do when things do not work the way you planned it.
+
+[26:34] All right. What are your main rules then? Yeah, so I have three scenarios. Two of them are are super basic. One of them is if if we're super close to the strike price,
+
+[26:45] I may just, you know, set a limit and try to let the stock sell at at the price that I bought it at. And so, and that's worked sometimes. In fact, sometimes I've ended up being assigned a
+
+[26:57] on a stock and I've woken up the next morning and the stock has gone up or not the next morning, but Monday morning and the stock is up $3 and you just sell it, right? And you're done and that's
+
+[27:06] beautiful. Scenario two is is that if we're a little farther away, I may just turn around and write a call. I may just write a weekly call on it. If I get into a situation, however, where the stock
+
+[27:18] has dropped substantially before I've had a chance to sell it or or write a call on it or whatever, I do have a stock repair strategy that I use, like a cost basis repair
+
+[27:31] strategy and and I think you're familiar with like the traditional stock repair strategy, which is like a it's uh you sell two calls at a certain price and you buy one call at another price. Well,
+
+[27:43] I do a similar thing, although I use puts. So, if I bought a stock at $10 and it dropped, let's just say it dropped to like $7, right? Which is like super
+
+[27:56] substantial, right? At that price. I might I would sell I might sell two puts at $8.50 and then I would buy a put at $10. And I actually like I'll buy the put and I
+
+[28:12] literally as soon as I buy it, I'll get on the phone with my broker and I'll be like, I'm I'd like to exercise this option right now. Like immediately exercise it. My my stock that I that one
+
+[28:25] of the share one of the contracts worth that I purchased at $10 that's now at seven, I just sold for for $10 and the the puts that I sold paid for it. And then I have to manage these new puts
+
+[28:39] and I have two of them. So, it kind of requires that I'm still a little bit bearish on the the stock itself, but that's kind of the gist of it. Josh, can you give us an example of how you do
+
+[28:51] this stock replacement strategy? Yeah, absolutely. Absolutely. So, so for the example of OpenDoor, let's just assume that we bought the stock at $8, right? So, we're long the stock at $8.
+
+[29:06] In this particular case, the the the only assumption we have to make is is that we're still bullish, right? Like we've gotten the stock is down to $5 and we're saying, well, we we did some
+
+[29:17] analysis and and we don't think it's dropping anymore. Like we think it's on the way up or we're we are okay with buying more of open. So, what we do is is we sell
+
+[29:29] two puts at 650. That's halfway in between the price we bought it for and the current price. So, now I have it included that. Right.
+
+[29:41] Okay. And then we buy a put at our original price of $8. And so, when we look at this, we we kind of think like, "Well, that's this seems
+
+[29:53] crazy. Like, what is what is even going on?" So, so here's the story. We expect that both of these options are going to be exercised, right? And so, like I said, we need to make sure we're
+
+[30:06] bullish because we're going to buy two we have those two we're going to buy 200 more shares of the stock, but we're going to buy them halfway in between what we owned it at previously and what
+
+[30:19] it's at right now. And in the process, we're going to pay for that long put by selling two short puts. And so, we break even, right? The goal now you tweak this so
+
+[30:33] that Now, usually when I do this, I make money on it. I'll make, you know, hunt some hundreds of dollars. I think in this it says net debit four. So, so we paid $4 for this setup. The The end
+
+[30:45] result is is that we sell our initial stock at the price that we bought it for, the $8. And then, we buy twice as much at 6.50. And so, we ended up with more stock, but
+
+[31:01] we reduced our cost basis by $1.50 a share. And so, this is I'll go through this sort of process when I have a stock that I'm not patient enough for it to come back up and I want to repair that
+
+[31:14] cost basis. And this way of doing it has worked out for you? It does. And I do it slowly and methodically. And I actually manage the the put. In fact, there have been cases
+
+[31:27] where the the puts that I sell, I'm able to roll and never and never actually have to buy those shares. And so, I end up getting away without, you know, I end up selling it at the at the original
+
+[31:39] price and I don't have to buy anything. Doesn't always work out like that, but yeah, I I love doing this. It's It's It's just little pieces at a time, but it I love it. Correct me if I'm wrong,
+
+[31:50] but as I understand you, you do not manage the trades until the expiration. You let them either expire worthless or you are assigned the shares and then when you are the sign assigned the
+
+[32:04] shares, you basically try to figure out what what's the best thing to do then and you hence your three scenarios. Is that correctly understood? Yeah, correct. So, like I said, sometimes I do
+
+[32:16] close them early, but it's very rare that I actually do that. But would would would you ever roll them for another week instead of taking assignment? There have been instances
+
+[32:27] where I've rolled a stock. If I can get away from I really, like I said, I really don't want to own and I'm okay owning stock, right? But my goal my trading plan goal is to not own stock.
+
+[32:38] So, if I can roll a stock one week forward and drop by by the strike price by one amount one degree of money in this,
+
+[32:50] right? And make a credit, then I will do it. But if I have to roll out, that's actually really the problem with weekly options is you've lost they're spent so much time decay that you have so much
+
+[33:02] theta left that you when you roll, there's not a lot of of rolling that you can do. And so, I I might be able to roll for a week or two, but most of the time I end up I those if I
+
+[33:16] have to roll, I I think there's probably and guessing at this number, but I would say 80% of the time that I roll, I still get assigned on the stock anyway. It's
+
+[33:26] helped my cost basis, but I still ended up with the stock. So, the roll doesn't correct the failed trade. It just makes you feel a little bit better, I suppose. One of the most popular options trading
+
+[33:40] strategy is the wheel. What if How does yours way of trading differ from the typical way of trading the wheel? Yeah, so I think that most of the people that are trading the wheel
+
+[33:55] choose a like a couple of stocks based on fundamentals, right? Like they're looking at the you know, the EPS and and PE ratios and business plans and sentiment. And they're like choosing
+
+[34:08] these stocks that they, you know, a couple of stocks they want to sit with. And then, if they get assigned, you know, on it, then they just hold it and they and they go through that, you know,
+
+[34:17] that constant wheel process. The biggest difference really is that they're trading on fundamentals and I'm trading on math and technicals. But if I get assigned a
+
+[34:31] stock, then the the the the the core concept of of how I get rid of it is actually is actually similar. How of your risk every week with this strategy? Do
+
+[34:46] you spend your whole account on this or do you have like a part of it that you risk every week? I would never in a single week I would never risk more than like 50%. If I was assigned on a whole
+
+[34:58] bunch of stuff, for example, like I would never go below like about 20% of my actual cash position. And that varies week week to week. If it's a If it's a super bullish week and
+
+[35:11] the analysis just looks so solid, then I might put a little bit more in. And if it's real bearish, there's been weeks that, you know, I don't even write any puts. You know, I might write a couple
+
+[35:21] calls. I might do a day trade here and there. But yeah, 50% in a given week is quite a bit for me to to put in. Let's talk about the risk. Yes. What is the worst that can happen with your way of
+
+[35:35] trading and selling puts? Well, you know, the thing about the thing that's so funny about the basic put and the basic call is that in I you know,
+
+[35:46] fundamentally they're some of the riskiest options trades, right? Because and this never really happens, but if the stock were to go to zero, then you lose everything, right? Where with a
+
+[35:58] condor or a straddle or a collar or something like this this isn't really a thing. And so, from that perspective, what I'm doing the core idea of just selling pure puts
+
+[36:11] is actually considered, I think, pretty risky. Like it's up there in the risk level. And I think that I reduce that risk by the analysis and the and confirming my levels. I always ask my
+
+[36:24] guests to place their strategy on a risk profile scale from one being very low risk and 10 being very high risk. And you are free to define those numbers as you see
+
+[36:39] fit. Where would you put your strategy on a such a scale? Well, I don't sell naked puts. And so, that reduces a little bit. I would say that my strategy is probably somewhere between
+
+[36:51] a six on a good day and an eight on a bad day. So, maybe a seven. We'll call it a seven. Let's get to your actual results of trading this strategy. What have been your results?
+
+[37:05] Last year, I ended the year with some stocks that I owned that had dropped a little bit. So, I calculate my gain both based on, like I mentioned, the premium percentage of the account as well as the
+
+[37:17] actual account balance. And I think from a premium percentage last year, I was at I think it was 1.28% for the 2025 year. And if you look at the account balance, then that was like
+
+[37:33] probably right under 1%. So, the difference there, right? That I owned these stocks that had dropped in value that I still owned. So, yeah, like 0.9 something to 1.28 depending on which
+
+[37:45] metric you go with. So, Josh, how would this translate into annual returns for 2025? So, in terms of annual returns in there's two brokerage accounts, right?
+
+[37:57] And so, in one brokerage account, which is just for trading, in that account, the annual percentage, like the what that ends up translating to from the year, ends up being like something if
+
+[38:09] you consider the stocks that dropped and you look at just the account balance, something like between 30 and 40%. If you look at the account that I use I have a brokerage account. All I do is
+
+[38:21] pay the bills out of that account. That account in particular, I don't know the exact amount, but I have that same goal in there, right? And essentially, my goal in that account it's significantly
+
+[38:33] smaller, but the goal in that account is that I'm making like five five-ish hundred dollars a week. And so, as long as I'm making more than 500 bucks a week in that account, it's it's pretty
+
+[38:44] decent. So, How about how big is that account, just to say? Yeah, so that account results It's got the same 1.04%
+
+[38:55] criteria on it. So, like that account is sitting right at like 50 last year it was at like 50 somewhere between 50 and 60,000. Mhm. So, $500 would be around 1% per week.
+
+[39:09] Exactly. Let's sum up. How would you sum up your strategy and who is it best suited for? To sum up, weekly puts with a super strong analysis side, determining levels
+
+[39:26] exactly so that you're not there's not guesswork, like take not emotional, right? It's all robotic analysis and it's backed up by
+
+[39:35] saying, "What is my risk level?" And and that kind of goes into what you were asking there, what what what who is this good for? You don't need a significant amount of experience to do
+
+[39:47] this. What you need is to be really clear with yourself that you're going to take you're going to go through the effort to do that actual analysis. You need to be
+
+[39:58] able to take on a little bit more risk since these are these are straight puts, right? They're not they're they're not collared or or strangled or anything like that. And so
+
+[40:10] in from that perspective anybody can do this. You just you just need to make sure that you you've clearly defined all of those parameters. What would be the two or three most important takeaways
+
+[40:24] you want the audience to remember from this interview? I think the first one is to be robotic. Right? Training Trading isn't it's not a
+
+[40:35] casino. It shouldn't be emotional. You shouldn't have FOMO, right? About all of these things like you want to be robotic. Like you want to trade treat this like you've heard traders say this,
+
+[40:46] right? Like it should be kind of boring. And it doesn't need to be boring cuz I have a blast. I love trading. I do it because I want to do it. But being robotic and keeping that emotion out is
+
+[40:56] I think every mistake I've ever made is because of emotion almost. The other piece and I see this I say this one a lot because I see people posting up, you know, on YouTube and on Reddit and and
+
+[41:08] Quora and all these places trying to like get a prescription for their their their their options trading. And the I think the recommendation the advice there is is is be yourself and
+
+[41:21] find find what works for you. Like don't just copy trades. Like go and and and learn the what somebody else does and then modify it and and use that thing to make it make sense for for
+
+[41:34] what you're doing. You got to be yourself like that because if you just go out and copy a a system or a trade or a whatever then it's not going to it's not going to work out the same. So
+
+[41:44] you've got to you got to be true to yourself there. What would be good resources to learn more about this way of trading? So I have a Patreon page and that particular Patreon page is is kind
+
+[41:57] of geared towards helping people work with options strategies that are not terribly complicated like you know, condors and and stuff. And of course condors and butterflies and whatever
+
+[42:06] great, but I do offer a lot of content to help people with trading ideas and analysis and and strategies. Would you have a couple of good books on options trading you would like to recommend to
+
+[42:20] our viewer? I'm so glad you asked that. So I have I have a couple of of unorthodox selections here. They're not options books specifically, but if if if the watchers aren't familiar if you're
+
+[42:33] wanting to do options and really understand the nuts and bolts, I recommend getting a book a textbook on statistical learning. I recommend getting a textbook uh if you're not into
+
+[42:44] math, getting a a calculus book for non-math people and learning the basics of of calculus and statistical analysis. Pick up a textbook from a macroeconomics course or a book
+
+[42:57] on how CBOE does their their stuff. I really think that these types of fundamental things are are critical for you know, really understanding all the the dynamics and especially I even the
+
+[43:11] calculus like the Black-Scholes model that we get all of our Greeks from. It's a partial differential equation. And if you have a basis of calculus in your brain then you can you can
+
+[43:23] understand what's going on there in in a super profound way. So those are those are my book recommendations. Learn math in other words. Josh Walker, thank you very much for sharing how you
+
+[43:37] sell puts weekly and how you not the least how you analyze and get to the trades that you choose to put out. So thank you very much for joining here. Well, thank you John. I appreciate it.
+
+[43:50] It's super fun. Thank you.

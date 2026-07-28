@@ -1,0 +1,169 @@
+{
+  "video_id": "auNHhMtknWw",
+  "date": "2026-04-14",
+  "title": "Selling into strength | 14 Apr 2026",
+  "observed_trades": [
+    {
+      "date": "2026-04-14",
+      "ticker": "MRVL",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Marvell ~15% above 9 EMA / extended into previous highs; planned to sell some into strength but decided not to trim and to wait/hold the rest via the 9 EMA aiming for 5+ weeks",
+      "entry_basis": "",
+      "stop": "9 EMA trailing until extended",
+      "source": "2026-04-14_auNHhMtknWw@06:07",
+      "confidence": "stated",
+      "notes": "At 06:07 he plans to trim ~15%, but at 35:33 says 'Marfo, I don't think I'm going to trim it here ... probably I'm just going to wait' - the trim was NOT executed. 'Marfo'=MRVL (Marvell). The '15%' sold at 34:34 refers to NPI, not Marvell",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-04-14",
+      "ticker": "MSTR",
+      "direction": "long",
+      "action": "hold",
+      "setup": "MicroStrategy opened near his stop; instead of stopping out he waited the first 30 minutes for it to reclaim the EMAs, which it did",
+      "entry_basis": "",
+      "stop": "mental stop ~high 123s (below the gap); ~1.6% stop",
+      "source": "2026-04-14_auNHhMtknWw@10:01",
+      "confidence": "stated",
+      "notes": "Chose to wait 30 min rather than risk a first-minute shakeout. MSTR=MicroStrategy",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-04-14",
+      "ticker": "GLXY",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Galaxy entered as a 5-minute candle breakout (chasing) on Thursday with a very tight stop; now up >20%",
+      "entry_basis": "5-minute candle breakout (chase) after waiting for a pullback that never reached the 9 EMA",
+      "stop": "very tight, ~0.3% / 1.3% risk",
+      "source": "2026-04-14_auNHhMtknWw@13:22",
+      "confidence": "stated",
+      "notes": "'Galaxy is ... only a 5-minute candle breakout entry ... On this one uh on Thursday ... now it's up more than 20%'. Galaxy=GLXY",
+      "fill_timing": "thursday"
+    },
+    {
+      "date": "2026-04-14",
+      "ticker": "ARM",
+      "direction": "long",
+      "action": "hold",
+      "setup": "ARM entered yesterday on opening-range highs (~2nd minute); 1-minute opening range high entry working well. (Earlier ARM entry Friday on 15-min breakout got stopped out near EOD)",
+      "entry_basis": "1-minute opening-range high",
+      "stop": "",
+      "source": "2026-04-14_auNHhMtknWw@16:30",
+      "confidence": "stated",
+      "notes": "ARM=Arm Holdings. Two ARM entries referenced: Fri 15-min (stopped out near EOD), yesterday 1-min ORH (working/held)",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2026-04-14",
+      "ticker": "?",
+      "direction": "long",
+      "action": "trim",
+      "setup": "First 15-minute candle getting volume; trimmed it (sold 15%) and will ride the rest",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-04-14_auNHhMtknWw@32:14",
+      "confidence": "stated",
+      "notes": "'NPI today's first 15-minute candle is getting some volume ... I just sold 15%. And then I'm going to ride the rest'. Ticker 'NPI' is a caption garble and not decodable - set to '?'. See ambiguous_tickers",
+      "fill_timing": "today"
+    }
+  ],
+  "principles": [
+    {
+      "category": "exits",
+      "text": "His chronic mistake is selling winners too early (cites SMCI: sold and it ran another 100% in 3-4 weeks). He aims to be more lenient on selling than on entries - trim ~15% into strength and hold the rest via the 9 EMA for 5+ weeks.",
+      "timestamp": "07:54"
+    },
+    {
+      "category": "risk",
+      "text": "When a position opens right at your stop, it can be worth waiting the first 30 minutes to see if it reclaims the EMAs rather than eating an immediate first-minute shakeout - accepting up to ~2.5x the original risk as a deliberate discretionary call.",
+      "timestamp": "10:51"
+    },
+    {
+      "category": "entries",
+      "text": "Don't impose a hard limit on re-entering a stock: as long as the market hasn't fundamentally flipped and you manage risk, re-entry is fine.",
+      "timestamp": "23:54"
+    },
+    {
+      "category": "posture",
+      "text": "After a huge gap up / V-shape recovery, a pullback to the 9 EMA is essentially guaranteed; don't chase the gap - be patient and buy the pullback, or you'll get shaken out.",
+      "timestamp": "38:29"
+    },
+    {
+      "category": "entries",
+      "text": "Avoid shorting a stock in a strong weekly uptrend (50 EMA far below 21) and in the strongest sector (semis); an undercut-and-reclaim of the 9 EMA is poor short timing - wait for a fakeout/rejection above the 21 EMA, and demand a quick reversal away from the level.",
+      "timestamp": "60:12"
+    },
+    {
+      "category": "exits",
+      "text": "Whether to add or book profits depends on entry cushion, current position size (don't over-concentrate >~30% in one name), and overall exposure/margin. Don't sell on the gap-up earnings day itself if you already have a cushion - you'd only be giving back profit, not capital.",
+      "timestamp": "77:01"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "13:22",
+      "caption_text": "Galaxy Galaxy is actually a in no way like it is only a 5-minute candle breakout entry",
+      "context": "His chase entry on Galaxy Digital, now up >20%; Galaxy=GLXY",
+      "guess": "GLXY",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "06:07",
+      "caption_text": "Like Marvell, this one is already 15% above the 9 EMA",
+      "context": "Discussing trimming his Marvell long into strength (ultimately did not trim); later 'Marfo'. Marvell=MRVL",
+      "guess": "MRVL",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "29:11",
+      "caption_text": "Didn't expect uh Circor is going up that fast. This it it just rallying from the low",
+      "context": "A name rallying fast off the low he is missing; 'Circor' may be a garble (CIR) or 'Circle' (CRCL)",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "30:44",
+      "caption_text": "This MBTS too, like yesterday is a really good pullback buy ... it's not that liquid, it is small cap",
+      "context": "A small-cap with a good prior-day 5-min pullback-buy entry",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "32:14",
+      "caption_text": "NPI today's uh first 15-minute candle is getting some volume. I think I will trim it",
+      "context": "A position he trimmed 15% on first-15-min volume; ticker 'NPI' unclear/garbled and not decodable",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "46:50",
+      "caption_text": "Fastly is the one that uh I think catch many traders off guard. it is going down for 40% off the top",
+      "context": "A name down 40% off top in 5 days, now at anchored VWAP; Fastly=FSLY",
+      "guess": "FSLY",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "47:41",
+      "caption_text": "Cool weaves also one of the great names. Like last Thursday a really great pullback buy. Now it's up 30%",
+      "context": "A strong name up 30% in four days with rising volume; 'Cool weaves' likely CRWV (CoreWeave)",
+      "guess": "CRWV",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "55:42",
+      "caption_text": "this one is um it's a pullback short on on I think 7th of April ... SIMO ... is in the semi sector",
+      "context": "Reviewing a viewer's pullback short on SIMO (Silicon Motion) - advises against shorting semis in a weekly uptrend",
+      "guess": "SIMO",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "40:33",
+      "caption_text": "No shorting in this type of lockout rally Yeah, B E B E is",
+      "context": "A leader 'BE' he'd enter on the next pullback if underinvested; BE=Bloom Energy",
+      "guess": "BE",
+      "confidence": "likely"
+    }
+  ]
+}

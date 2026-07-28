@@ -1,0 +1,171 @@
+{
+  "video_id": "OaX6WjZhFaw",
+  "date": "2026-03-04",
+  "title": "$GLD $SLV pullback short | 4 Mar 2026",
+  "observed_trades": [
+    {
+      "date": "2026-03-04",
+      "ticker": "GLD",
+      "direction": "short",
+      "action": "reentry",
+      "setup": "Re-entered gold short on bounce/pullback into the 50 EMA after first attempt stopped out pre-market; entered on 15-min breakdown",
+      "entry_basis": "bounce into 50 EMA, then 15-min breakdown of 9 EMA",
+      "stop": "",
+      "source": "2026-03-04_OaX6WjZhFaw@06:06",
+      "confidence": "stated",
+      "notes": "First attempt (overnight orders) stopped out pre-market, then re-entered gold first; very confident, likes the entries",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-03-04",
+      "ticker": "SLV",
+      "direction": "short",
+      "action": "reentry",
+      "setup": "Shorted silver after gold broke down its 15-min 9 EMA; entered on close below the 9 EMA",
+      "entry_basis": "close below 9 EMA on 15-min after gold confirmed",
+      "stop": "",
+      "source": "2026-03-04_OaX6WjZhFaw@07:48",
+      "confidence": "stated",
+      "notes": "Sequenced silver after gold; happy with decision-making even if stopped out",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-03-04",
+      "ticker": "GLD",
+      "direction": "short",
+      "action": "hold",
+      "setup": "Holding metals shorts; following stops, not selling into the bounce",
+      "entry_basis": "",
+      "stop": "follow stops",
+      "source": "2026-03-04_OaX6WjZhFaw@62:31",
+      "confidence": "stated",
+      "notes": "'I'm going to follow my stops. I'm not going to sell it into the bounce'",
+      "fill_timing": "today"
+    }
+  ],
+  "principles": [
+    {
+      "category": "mindset",
+      "text": "Judge a trade by the quality of your decision-making, not the outcome; if the entry and process are solid, you can be happy to take the loss when stopped out.",
+      "timestamp": "08:57"
+    },
+    {
+      "category": "posture",
+      "text": "Pick one side and stay on it as long as possible in a choppy market; constantly flipping between longs and shorts (as in last December) can easily kill performance.",
+      "timestamp": "92:20"
+    },
+    {
+      "category": "entries",
+      "text": "Treat a clean gap-up above all EMAs, prior highs, resistance, and AVWAP as an EP and enter; but a stock that opens flat/down and only rises 5% after the open is too late to chase.",
+      "timestamp": "34:25"
+    },
+    {
+      "category": "entries",
+      "text": "Avoid opening-range-breakout entries on EPs now (too many fakeouts); wait for the intraday 5-min or 15-min candle breakout instead. On too-wide stocks use the 5-min breakout, not the 15-min.",
+      "timestamp": "30:18"
+    },
+    {
+      "category": "exits",
+      "text": "When closing a long into a gap-up you can be casual/aggressive about the exact level, but to build a new short position wait for it to reach resistance more precisely.",
+      "timestamp": "19:31"
+    },
+    {
+      "category": "risk",
+      "text": "Don't short a one-day bounce into declining EMAs as a rule; normally wait 2-3 days, since quick one-day reversals back below the EMAs are rare.",
+      "timestamp": "90:33"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "05:06",
+      "caption_text": "PE and PL are twos that are maybe setting up for the long side",
+      "context": "Two names possibly setting up for the long side",
+      "guess": "PL",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "18:10",
+      "caption_text": "Circle is one of the strongest one... Up over 110% in a month",
+      "context": "Strong name nearing 150 EMA and swing-high AVWAP; he was stopped out of it yesterday",
+      "guess": "CRCL",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "21:33",
+      "caption_text": "EE is rejecting at the 9 EMA",
+      "context": "Name rejecting at the 9 EMA; later 'EE is finding support with the markets'",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "22:13",
+      "caption_text": "GV reversal on the declining 9 EMA",
+      "context": "Reversal on declining 9 EMA, not looking good",
+      "guess": "GEV",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "26:11",
+      "caption_text": "The fast ETF is it is it pullback buy",
+      "context": "ETF that is a nice pullback buy into daily 9 EMA and AVWAP; South Korea ETF context follows",
+      "guess": "FAS",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "37:24",
+      "caption_text": "ESTS is following higher after the earnings",
+      "context": "Following higher after earnings",
+      "guess": "ASTS",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "47:04",
+      "caption_text": "like AOI. But this thing is just going up... opening range highs",
+      "context": "EP-type name running straight up; best entry called the 5-min candle breakout",
+      "guess": "AAOI",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "77:59",
+      "caption_text": "AEVA That's been a long time that I haven't heard this name",
+      "context": "Name that only got to 22, too illiquid; wants weekly close above 21 EMA first",
+      "guess": "AEVA",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "79:40",
+      "caption_text": "this USAR is looks like this fading from the resistance",
+      "context": "Fading from resistance; uranium/rare-earth context",
+      "guess": "USAR",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "76:56",
+      "caption_text": "This SOLS is serving the 21 EMA. Found supports",
+      "context": "Name riding the 21 EMA finding support",
+      "guess": "SOLS",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "89:37",
+      "caption_text": "I r e n Maybe they Yeah, this Wednesday is the best opportunity",
+      "context": "Crypto miner at 150 EMA / gap / daily 21; reluctant to short a one-day bounce",
+      "guess": "IREN",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "83:07",
+      "caption_text": "this SEDG also bounces several times at the 50 EMA",
+      "context": "Name up 30% then down 23%, double inside day, bullish weekly",
+      "guess": "SEDG",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "59:43",
+      "caption_text": "like AVAV shorts I I I really don't know... I think it's it worth the try",
+      "context": "Weakest name bouncing into resistance; he leans toward maybe trying it but ultimately wants 1-2 days of consolidation first; no confirmed fill. Dropped from observed_trades as an undecided candidate",
+      "guess": "AVAV",
+      "confidence": "likely"
+    }
+  ]
+}

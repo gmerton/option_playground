@@ -1,0 +1,263 @@
+[00:00] If I were to just trade double calendar in an account, I can make well over 100% annually. My guest this week has had consistent success for years trading double calendars and that makes me
+
+[00:12] curious. How does he trade them? Hello John. So let's get straight to it. Give us the high level pitch of your double calendar strategy and the results you've had. So double calendar is a rangebased
+
+[00:26] strategy. It is like an iron condor, but with double calendar, we use different dates for both strikes. And that allows us to have a much wider range compared to an iron condor. And on top of that,
+
+[00:39] with an iron condor, you are typically risking like $80 to make $20 profit. But with double calendar, you can make well over 100% even in best case scenario. And your risk is smaller, but the payout
+
+[00:53] is much bigger. And we will dig into this, how you trade it, your mechanics for entry, your detailed results, etc. But uh tell us first a little bit about your journey in
+
+[01:06] option trading. So I've been trading options for the last 7 years. Initially I got into it kind of by an accident. I downloaded Robin Hood app on my phone and I clicked
+
+[01:17] the trade button. It showed a button called trade options. Initially I thought it will allow me to place an advanced order for my stock stock trades but then I learned something new that
+
+[01:27] there is something called call and puts which allows you to use leverage. I tried my first call option on meta stock and it made like 500% profit in a day. So I turned $500 into $2500. Next day I
+
+[01:42] made another trade made another $2,000. So, in my first week, I made like 5,000 profit by sort of like luck because I didn't really know what I was doing. And then it was a lot of hits, a lot of
+
+[01:55] misses. Took me several years to learn and perfect my strategies. So, initially I was just buying calls, buying puts and losing money most of the time. Then I learned the tasty trade philosophy and
+
+[02:06] how to sell options. And I started with credit spreads, iron cornrows, and slowly started to build up on my strategies. And now it's at a point where double calendar is my number one
+
+[02:18] strategy and I've perfected it to a point where I get like more than 85% win rate on it. That's impressive. What are you doing when you're not trading options? When
+
+[02:29] I'm not trading options, I like to spend time with my family. I like to travel and spend my time with friends. And what is your profession? I used to be in product management at a fintech company.
+
+[02:42] In 2021, I've got to a point where my options income was more than my primary job income. So, at that point, I was able to leave my job and transition full-time into options.
+
+[02:55] All right, let's dig into today's topic. Yeah, double calendars. But first, we need to define what is a calendar. So, there are two types of calendar. First one is a call calendar in which
+
+[03:10] basically we will have two calls but both of them are going to be for different dates. So for example I can sell one call I can buy one call for 27th of June and sell one call for 20th
+
+[03:25] June. So there is one week difference between both but they are going to be at the same strike. Let's start with an example of a single calendar on the at the money strike. It will give us a
+
+[03:38] profit and loss curve kind of like this which resembles a butterfly. But the main difference between butterfly and calendar is that butterfly makes profit when VIX goes down. Calendar makes
+
+[03:52] profit when VIX goes up. And you can position these strikes at anywhere. So you can use calendar in three different ways. You can use it for a neutral trade. You can use it for a bullish
+
+[04:02] trade. You can also use it for a bearish trade. So if I am using at the money, this is a neutral trade which will make profit if S&P stays between this range. But if I want to make a bullish trade,
+
+[04:16] let's say I think okay by June 20th I anticipate that S&P will go to 6050 and I make a trade like this. I can sell a call option for 60/50 strike for June 20th expiry and buy a protective call
+
+[04:33] one week after that. Now in this case my debit will be 1650 but my max profit is 2970 which is like I can make close to like 90% profit on it. So if we go here and
+
+[04:49] look at profit on max risk, the profit on max risk can be 180% in just like 10 days. This is why I like calendars because you're risking small amounts for a potentially very big payout. Now I
+
+[05:05] usually don't hold it until like that last point because one disadvantage of calendar is that even if you are using a bullish or bearish strike once the price surpasses your strike
+
+[05:19] your profit will start to go down. So let's say if I am making a trade targeting 60/50 strike in that case 1 SPX touches my strike price regardless of whatever the date is I'm going to
+
+[05:33] take profit and exit and maybe then I will consider placing my second trade because from there on if it goes higher than 6050 I will lose money. If it comes back down even then my profit can erode.
+
+[05:47] The peak profit is usually by the expiry date, but I almost never hold till the expiry date. I always exit several days before the expiration. Maybe it's useful to show how this trade develops from the
+
+[06:01] beginning to the end. Let's use this slider here. So if I start this trade today, initially it is going to be at like zero and day after day it is slowly going to develop this curve where it is
+
+[06:16] going to accumulate theta premium and let's say 3 days into the trade even if the the price of S&P is exactly the same this trade is going to be in 10% profit and if we go a couple more days after
+
+[06:32] one week if S&P is at the same price, this trade is going to be in 30% profit. If SPX goes to my desired strike, then it is going to be at 42% profit. So, this is kind of like my sweet spot for
+
+[06:46] exit where I am exiting a few days before the expiry. Typically I like to make these trades with 10 to 15 days expiry and whatever my time horizon for that
+
+[06:59] trade is I like to add few days more because it allows me to avoid the scenario where my profit tent becomes very narrow. This is a single calendar but your strategy is a double calendar.
+
+[07:15] What do you do then? So with a single calendar you can choose any strike. Let's say you want to go even further. A single calendar will allow you to have like very high profit with a small risk.
+
+[07:29] The further out of the money you go, the higher your max profit is going to be and you can go as far as you want. But then the goal is that S&P will reach your strike price by the desired time
+
+[07:42] frame. And you can do a similar trade with a put calendar for a bullish trade. So if you think that S&P is going to pull back by 100 points then you can go here. You can do a 5900 strike. In this
+
+[07:56] case you will make profit if SPX stays flat. You will make profit if S&P goes down but you will lose money if SPX goes up. Now in a double calendar we like to combine both call calendar and a put
+
+[08:10] calendar. In this case I am going to do a 5900 put calendar. And I'm going to do a 6100 strike call calendar. So now I have my strikes placed about approximately 100 point away from the
+
+[08:27] current price. Now this gives me a 71% chance of profit and it gives me a very wide break even curve where if S&P goes up or down by 2.4% in these 10 days, I will make some profit. Now in this case
+
+[08:46] I will not be making like 200% 300% profit because what's going to happen is if S&P goes up the call calendar is going to make profit and the put calendar might end up at a break even or
+
+[09:00] a small loss. If S&P goes down then put calendar is going to make a bigger profit and call calendar is going to be at a smaller loss. How will the profit loss curve look look then?
+
+[09:14] So profit and loss curve will look down. So let's say we start here today. If even if SPX stays flat day over day, we are accumulating theta and the max profit is going to be somewhere in
+
+[09:28] between the both strikes. But initially if you are through the trade like halfway through the trade the the curve is still going to be very smooth. The further you go near the
+
+[09:41] expiry, you will see that a sag starts to develop in the middle and the max profit range shifts to each strike. So by the end of expiry, you will make
+
+[09:54] max profit if it ends up near the call strike or the put strike and you will make smaller profit in the middle. So which is why I like to exit a few days before expiry while the curve is still
+
+[10:08] smooth. So at this point anywhere between the expiry dates I can make some profit. Let's get into the more specifics of how you trade. Now we understand the
+
+[10:21] principles behind. You said that you're usually aiming for 10 to 15 days before expiration. What are your rules for underlyings and other entry mechanic rules?
+
+[10:34] So this can work well on S&P, SPY, Triple Q or any large cap stocks also like Apple, Microsoft. But I tend to avoid small cap stocks because they are more volatile. I like to enter when I
+
+[10:50] anticipate that the underlying is going to stay in the range. So I don't like to enter when I see that there is a big move upcoming. Let's say there is FOMC coming up in a few days.
+
+[11:03] that is probably not the best time to enter. If I have any existing trades, I will exit those trades before such a big event and after that event, I will consider my next entry.
+
+[11:16] I like to typically choose strike based on the implied move, based on the expected move, but it's not completely to the tea. I like to have some flexibility and discretion based on
+
+[11:30] where I see the market is going. Do you have any rules for VIX level volatility when it comes to entering? Yes. So one big risk for double calendar strategy is
+
+[11:44] that if VIX comes down then this trade is going to lose. So let's simulate that in in this profit and loss curve. So now here we see that we have a very wide range of profit. But if VIX comes down
+
+[11:59] then we see that in the middle of the range it will become a sea of red. So I am going to lose money if the trade is in middle of both strikes. And in that case the only way to make money is going
+
+[12:12] to be if S&P lands very close to one of the strike prices. So in that case the probability of profit is going to be very low. It's going to be like 30%. But if VIX goes up
+
+[12:27] then you see that my profit range expands very wide. It goes very wide and I can make profit like anywhere. Even if it goes past my strike, I can still make profit if VIX goes up. So which is why
+
+[12:41] more than the price itself VIX is a bigger factor because you have to see is the VIX going to go up or down during my trade duration. So you need to exercise some discretion on that. Now we can't
+
+[12:55] really say that there is a certain VIX level where you need to enter because the rule of thumb is that you want to enter when VIX is low and take profit when VIX is high. If I say that low VIX
+
+[13:08] means 13 but we have not seen 13 wicks in the last several months. So we have to see what the current baseline is. Like these days the baseline seems to be low VIX seems to be about 17 or 18 and
+
+[13:21] on the higher side it can go well over 20 or 40. One of the great thing about this kind of trade strategy under the Trump administration is that the president can tweet some new policy out
+
+[13:35] of the blue at any point and the market goes crazy start to spike and under those circumstances these trades can make more profit than even the anticipated profit. Right? So let's say
+
+[13:49] we go to the table. So the rule of thumb is that you enter the trade when VIX is low and you take profit when VIX is high because if VIX starts to go down during your trade duration then this trade is
+
+[14:03] going to lose. Now the great thing about the current circumstances is that right now we have Trump administration where he can tweet any random policy at any time and the market goes crazy. It
+
+[14:16] becomes very volatile. Under those circumstances, these trades can make higher profit which can be even more than the estimated profit. So for example here
+
+[14:26] you see that at the peak this trade can make somewhere around 50% profit. If wick suddenly goes up then you see this trade can make well over 100% profit as well and you will make profit pretty
+
+[14:40] much everywhere wherever the price lands between your strike and it can make profit even if the price goes slightly above beyond your strike. So, which is why if you anticipate that
+
+[14:54] something unexpected is going to come up in the market, this is a great position to be in because you kind of have this hedge against the volatility. If the volatility goes up, you make more
+
+[15:06] profit. So, the trick is to know when the volatility will go up, which is easier said than done. There can be three scenarios. One, the VIX stays the same.
+
+[15:18] this trade will make profit in that scenario. If VIX is up or down by one or two points, it's going to do okay. If VIX goes up, then this trade will make higher profit. If VIX comes down by a
+
+[15:31] significant bit, then this trade can lose. So if you anticipate that the volatility is going to come down for example if VIX is at 30 then there is a 90% chance that VIX is
+
+[15:46] going to come down from 30 it can take one weeks few weeks but eventually it is come down to the baseline which is somewhere in the teams right most of the time fix is between 13 to 19 very rarely
+
+[16:00] it goes above 20 or above 30 so I will not enter this trade if VIX is like more than 20. I like it to be under 20. The lower the better. Now I've been trading this strategy for a very long time. And
+
+[16:15] under the circumstances when VIX is very high, I tend to avoid this kind of trade. But recently I have figured it figured out a workound around this which allows me to make this trade negative
+
+[16:30] Vega. So that even if VIX is at 50, I can still enter this kind of trade and make a lot of profit. Let's go into how you manage this trade. When do you take profit? When will you
+
+[16:45] accept the loss? So I have couple of rules on how to take profit. First is that I can stay in this trade technically as long as the VIX is in the same range or higher and the
+
+[16:59] price is between both the strikes. So you will make the max profit near the expiry. But I always like to exit before the expiry before the center of the trade starts to sag. For that reason, I
+
+[17:15] like to start tracking profit at 15 to 20%. I can have a lot of contracts while entering the trade. So I will not sell all at once. I will start to take profit at 15 20% and keep selling more and more
+
+[17:28] as a trade goes higher. But I always have a deadline on when I want to exit this trade and by that timeline I'm going to be completely out of the trade and then I will build up my next trade.
+
+[17:41] And how long before expiry would that deadline be? The expiry is going to be typically a few days before the expiry. To choose the expiry for this trade, I typically
+
+[17:54] like to have a time horizon of 10 to 15 days. Now, more than the date to expiry itself, what's important is what dates you select for the expiry. So, I like to select the short date which is going to
+
+[18:07] be on a Friday expiry and the long date can be one of the two options. Either it can be Friday of the next week or the Monday immediately after the Friday. In that case, there will only be like a
+
+[18:21] two-day difference between the expiry. I like to take profit at least 2 to 3 days before the expiry. I like to enter the trade usually in the middle of the week like a Tuesday or Wednesday and my time
+
+[18:34] horizon is one week. So in that case I will choose a 10day expiry uh for the following week's Friday and I'm going to be out of this trade by the next Tuesday or Wednesday and at that point I will
+
+[18:48] also start to build up my next trade and 10 to 15% is as a percentage of your max loss in the trade. Yeah. So this is a debit trade. So whatever debit I pay into this trade can be my max loss. Now
+
+[19:02] to take profit, I like to start tracking profit at 15 to 20%. And most of the times my goal is to take it over 30%. And when it comes to taking a loss, the loss can be in one of the
+
+[19:16] two scenarios. If my trade is is underwater, I can still stay in this trade until my time horizon as long as the price is near one of the two strikes. The other exit criteria is if
+
+[19:29] the price goes to one of my two strikes at that point, regardless if the trade is in profit or a loss, I'm going to exit the trade. We saw how this trade can be very quickly into negative
+
+[19:40] territory if the Vega goes down. Will you still wait if you get into that all red zone or will you try to exit everything at that time? So if the Vega goes down typically now I've had so much
+
+[19:54] experience in this trade that I can tell when I expect the Vega to go up or down. So I refrain from entering a trade if if the Vega were to go down. But if the if it does happen in that case I can still
+
+[20:09] hold on to the trade because my max loss in that case is usually going to be somewhere between 20 to 30%. So I can stay in this trade as long as it is still within my range because if some
+
+[20:22] event happens during the that time frame and VIX spikes again, my trade is going to be back in profit. So in that case I can still stay in the trade as long as it is in the range. But always I'm going
+
+[20:35] to exit a few days before expiry. You said you had a little trick when VIX is high with a trick where you trade it with a negative Vega. What is this trick?
+
+[20:47] So for that trick, if you were to enter a trade when VIX is high, in that case you will choose the short expiry date for a Wednesday and the long expiry date for the next Friday.
+
+[21:01] Okay. And that will do the trick. Yes. Even though technically it will say that the trade is still a long Vega but it will do the trick and it will make profit even if it w even if VIX comes
+
+[21:14] down. So while entering the trade I have to make a call based on my discretion that do I expect the VIX to go up or do I expect the VIX to go down. In that case if I expect the VIX to go up then I
+
+[21:29] will go with Friday expiry. If I am expecting weeks to come down then I will go with Wednesday expiry. Sometimes if I do not know what's going to happen then I can do both. In that case I am kind of
+
+[21:42] like neutral Vega and I'm making profit from theta. Now in that case my profit is going to be less because maybe one of that trade can win and one of the trade can lose but my win is going to be
+
+[21:55] bigger than the loss. So overall I will still be net profit. What are the pros and cons with this strategy? The pros is this strategy is very
+
+[22:05] passive. It is set and forget. The trade duration is usually one to two weeks. In that case, I can just layer on these couple of trades every week and every week I'm opening couple of trades,
+
+[22:18] closing my previous trades. It's a campaign style program. I do not need to do much technical analysis. Do not need to spend a lot of time watching charts. just keep rolling this campaign and it
+
+[22:30] makes consistent profit month after month. The negative is that sometimes it can be hard to get fills with this strategy because there are four options on different expiry dates. So if you are
+
+[22:43] doing a large order, it can be hard to get a good fill. In that case, I usually have to work around a little bit or split my orders into smaller chunks to get the fill. If you were to place this
+
+[22:57] strategy on a risk scale where one is very low risk and 10 is very high risk, where would you put it? So if you if we are evaluating purely based on option strategy risk curve, then I would say it
+
+[23:11] is one of the lowest risk option strategy. But overall if we are looking at okay comparing it with stock investing then yes every option strategy is higher risk than stock because
+
+[23:22] theoretically a trade can go into law big loss it can go into zero as well. So for me it is going to be a three on the risk curve. Now we are very curious about your
+
+[23:36] actual results of trading this strategy. You have been trading it for years. What have your results been like over the last few years? I was able to grow my account from 400,000 to over $2 million.
+
+[23:51] Over how long period? It was in three years trading only this strategy. So most of my trades are between two strategies. I have this 80/20 principle where I allocate 80% of my capital into
+
+[24:06] very lowrisk strategy where I want to be in a place where it is even lower risk than buying and owning stocks and then I allocate 20% of my capital into more active strategies like double calendar.
+
+[24:20] Now in my passive strategy where I have very low risk tolerance the trade duration is usually like 6 to 24 months. So it's like set and forget for a near kind of trade and I'm happy to make 20
+
+[24:33] to 40% return on those kind of trades. With double calendar strategy based on the capital I allocate to the double calendar strategy it can make 20 to 30% monthly on the invested capital. So
+
+[24:47] overall I'm happy if my overall portfolio makes like 50%. But if I were to just trade double calendar in an account, I can make well over 100% annually.
+
+[24:59] And that's amazing results. Have you had years where you had uh losses on this strategy? I have not had any years on losses on this strategy. I do have draw downs on
+
+[25:12] my long-term buy and holds, but I have not had a single losing year trading double calendar. Can you elaborate on your philosophy behind 8020 where you have 80% on lowrisk strategies? Like I
+
+[25:26] said that I can make well over 100% return on double calendars but if an unforeseen black swan event were to happen I could also get wiped out from my current positions right because in
+
+[25:41] the end of day this is a rangebased strategy. So if something like COVID were to happen where market was going down like 5 to 10% in a day can withstand that kind of test
+
+[25:54] most likely the trades that I am holding are going to lose. I could be in a big loss on those trades. For that reason I never have more than what I'm willing to lose invested in any option strategies.
+
+[26:08] You only have to get rich once. So once you make a significant amount of money, for most people that's seven figures, you go into capital preservation mode. So now I want to preserve 80% of my
+
+[26:21] capital, but I'm willing to risk 20% of my capital to amplify my returns. So overall I want my risk adjusted returns to be higher than the market with a potentially lower draw down than the
+
+[26:35] market. That is my goal. So now I have the strategy which can make very well. So if I were just starting out with a 25k account, I would consider doing just double calendars and do well with it.
+
+[26:48] But now that I'm at a point where capital preservation is my goal. So I like to invest 80% of my capital into lowrisk strategy where I'm happy to make 20 30 40% return. But with if I'm
+
+[27:02] investing 20% of my capital into double calendar and I make over 100% return on that capital so my total return on my portfolio can be well over 50%. And that is an amazing return for me.
+
+[27:18] Very briefly you say that you get about 20 to 40% on the lowrisk portion your 80% portion. What type of strategies are you trading with that money? It's a combination of two things. Finding good
+
+[27:33] investment opportunities and pairing them with long-term option strategies like selling leap covered calls or building collars. I also have a unique strategy called hybrid collar where I
+
+[27:47] can make I can even make a zero risk trade where I will not lose any money if the stock even if it goes down 50%, I will not lose a single dollar but if it goes up I can make 20 to 30%. Or I can
+
+[28:01] do it in a way where I have some risk appetite. I'm willing to take a 10% draw down but with a 50% upside. So I like to find those asymmetric riskreward opportunities.
+
+[28:15] So let's move back to the double calendars. How would you sum up what we have been through and who is this strategy suited for? So this strategy is ideal for someone
+
+[28:29] who wants to amplify their returns but they don't want to day trade, spend all day doing technical analysis, watching charts. If you want something with a reasonable riskreward where you have
+
+[28:42] high win rate, smaller losses, bigger wins, it's very consistent, it's ideal for someone like that. Where would be a good place to learn more about these kind of strategies? I used to have a
+
+[28:55] mentorship program where I used to teach these strategies and now we stopped offering that anymore. But I'm going to publish most of these strategies on my new YouTube channel called Options with
+
+[29:07] Ravish. And I would say Tasty Trade has been my biggest resource both their websites and the YouTube channel. It has been an incredible learning resource especially in the early years of my
+
+[29:20] trading journey. And you are not the only one of my guests who are recommending Tasty Life. I would of course also like to recommend to watch some of the other interviews we have on
+
+[29:31] this channel. We have interviews every Sunday with new options traders about different strategies and different topics. Ravish, thank you very much for joining us and sharing your exciting
+
+[29:44] strategy. Thank you, John. It was a pleasure.

@@ -1,0 +1,19 @@
+{
+  "video_id": "4ByN7YEGuZY",
+  "url": "https://www.youtube.com/watch?v=4ByN7YEGuZY",
+  "title": "Turned $50K to $500K Then Lost It All Trading the 112 Options Strategy | Real Trader Story",
+  "channel": "Theta Profits",
+  "channel_id": "UCzGARfberQ8nRRbsjK90BHg",
+  "stream_date": "2025-06-22",
+  "duration": "37:35",
+  "summary": "Murray Lindholt grew a $50K /ES account to ~$526K (2020-2024) trading the 1-1-2 (a put debit spread financed by 2 far-OTM naked puts for net credit), then lost all four years of profit in days when he added size into the August 2024 carry-trade vol spike and got margin-called to ruin at ~200% buying power. Cautionary tale on naked short premium, sizing, and the undefined tail. Write-up: strategies/one_one_two_112.md (conviction 1/5).",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

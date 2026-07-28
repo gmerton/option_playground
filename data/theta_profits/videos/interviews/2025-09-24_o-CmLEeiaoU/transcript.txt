@@ -1,0 +1,113 @@
+[00:00] I've got an average of 20.7 in 2023 and 2024. I was around very close to 30%. Do you want a zero DTE strategy built on consistency, not chaos?
+
+[00:14] In this Theta Live excerpt, Tammy Chamblas reveals her multiple entries iron condors strategy. You get the rules, the results, and a tool she uses to make it all work. I know there's a
+
+[00:29] lot of people that are new to zero DTE trading continually coming into the the groups and and uh trading and I I hear a lot of the same issues. So, I thought I'd cover some important things. First
+
+[00:44] uh before I quickly before I go into my strategy uh first of all for zero DTE trading I would recommend an account size of $30,000 or greater to avoid the pattern day trading rules. And then uh
+
+[01:01] one of the best things about zero DTE options is no overnight risk. So you know you've got a good advantage already in um in just no overnight risk. Then third, always use a stop. That's my
+
+[01:16] recommendation. I know Tasty Trade, a lot of us came up through Tasty Trade and learned their techniques and they don't use stops. Um that I just don't recommend that when you move to zero DTE
+
+[01:29] options. Market stops work best. Stop limit orders can be blown through. uh you can use those in certain I used to recommend those but uh CBOE has made some changes on how they handle stop
+
+[01:44] limit orders. So market orders generally work best and anyone who says they've got a mental stop has a mental problem just doesn't work. So use a stop. And then another thing is uh that's very
+
+[02:00] important if you're not familiar with zero DTE is if you're using stops on spreads be sure to remove the long leg from the stop when it becomes worth less than five cents because that five cent
+
+[02:13] option or less is not tradable. And so any stop with that leg in it won't fill ever. No matter how how high your stop goes or how high the price of the option goes on that spread, it just won't fill.
+
+[02:28] So you have to close the stop uh and then just move the stop to be on the short leg only uh as you get toward the end of the day. And then I highly recommend back testing. You know, it's
+
+[02:40] just an important part of zero DD zero DTE options. And I recommend um TAT's BYOB or Option Omega for back testing. They are both based on one minute data. And uh TAT is trade automation toolbox.
+
+[02:58] So you can go to their website. It's a free back tester. Option Omega is is a back tester on steroids. It has a lot of variables, a lot of options, but it's really good back tester. So, I'm going
+
+[03:11] to talk about multiple entry iron condors. And I have my goal for trading options. No matter what strategy is a good annual return and low draw downs. I just don't like the psychological effect
+
+[03:25] of of high draw downs. So, I really aim for low draw downs. And the MEIC rules that I use are legging into an iron condor uh multiple times a day using zero DTE options on S&P. Uh I enter six
+
+[03:41] trades each day at about 30 to 60 minutes apart generally in the late morning through afternoon. My credit targets lately I've reduced them because of the lower volatility generally from
+
+[03:53] one to a dollar to $1.75 credit on each side. You can use other credits uh if you want, but the the higher the credit, the larger the draw downs that I've found in my experience. And then I use
+
+[04:09] uh from 50 wide to to anywhere from 50 to 60 wide on average to all the way up to 100 wide uh because I want to pay as little as possible for that long leg. You can use any width of spread that
+
+[04:24] works for you. you know, back test it to make sure it's going to work the way you think it's going to work. Then I set a stop for a 1x net lost, which which is two times the initial credit. And I set
+
+[04:38] that stop on each side separately. I don't set it on the whole iron condor. So management, I enter and manage each side separately, and I leave all trades on until either they hit the stop or
+
+[04:50] expire worthless. And because MEIC has a clear set of rules, it can be easily automated. So I use trade automation toolbox and trade steward for automation and those work with multiple brokers.
+
+[05:04] There are other automated traders available uh that work just as well. So um but those are two good ones that I know of. Here's a risk graph of an iron condor. So you're selling a put spread
+
+[05:17] on one side and a call spread on the other. You make a profit if it stays in the price stays in between those two prices that you sold, those two legs that you sold. And if it goes beyond
+
+[05:32] that, then you're going to start losing money. And uh I set a onex stop on each side. So if I collect 150 on one side, my stop is set at 150. So I'd never take full loss.
+
+[05:47] That would only be in the case of like a nuclear disaster and the market shut down and I can't get out of my trade. That that could happen and that's how much I would lose. But most of the time
+
+[06:00] my daily risk is how much I've risk on each side times the number of contracts times the number of trades. So uh my risk in the trade is is uh set by my credit. Um and then the buying power
+
+[06:15] that's required is set by the the total uh maximum credit on each side or the the difference between the short leg and the long leg. And um so that's the buying power your broker is going to
+
+[06:30] hold uh for the trade. Now I also oops I also trade a slight that is MEIC and uh I did not develop MEIC it was there were several people that worked on that and I I just uh have
+
+[06:48] have taken that it's a very good trade I put my own spin on it with uh MEIC plus so roughly 30% of days that I trade end up at break even. So I set up the ME rules to take MEIC rules to take
+
+[07:04] advantage of this. I set a stop for 10 10 cents less than a 1x net stop. So if if my stop is for if I credit is a dollar, my stop is would have been $2 for a 1x net stop. I set the credit the
+
+[07:23] stop for one 190 10 cents less. And I use those rules so that if I'm stopped out on one side, I and I make money on the other side, my loss is a little smaller than what I made on the other
+
+[07:38] side and I make a little money on every trade that that is break even. So otherwise those would be break even and I wouldn't make anything on those trades. I do this and like example
+
+[07:50] yesterday and today I I made money even though yesterday I got stopped out of every call and today I got stopped out of every put. It should say puts today. Today was puts. Um and I do aim for
+
+[08:04] similar credits on both sides. This isn't critical but it can help. And you can't control that in automated trading but um it is helpful. How much do you risk? Risk is very important. I think
+
+[08:16] it's always good to keep in mind how much are you risking? And um I risk no more than 2% of my account each trading day. So I add up all the all the iron condors I'm trading or all the sides I'm
+
+[08:32] trading. If I got stopped out of every trade I entered, that is not going to be as much as a 2% loss in my account. So I can live to trade another day. Um, and then of course I do follow the tasty
+
+[08:47] trade rule of never risking more than 50% of your buying power each trading day. So that's the total risk based on the width of your spread less the initial credit. And then what can what
+
+[08:59] can you expect with this strategy? Here is a back test based on U BYOB that I ran uh for 2020 January 2023 through September 5th 25 Friday uh 2025 and it shows a compound annual return of 33.3%
+
+[09:21] uh average each year. The max draw down is 7.41 41 and that occurred in this period. Uh that is uh it looks like around November December last year through March of this year. Calmar is
+
+[09:36] 4.5. Calmar is just a a rank of the the profitability divided by the draw downs and uh gives you a a ratio that you can use to compare strategies. Now in my live trading I'm achieving a little bit
+
+[09:54] less than that. So you can see uh I've got an average of 20.7. In 2023 and 2024 I was around very close to 30% uh return each year but 2025 has been
+
+[10:09] flatter and there are certain reasons for that. Note my max draw down is 4.3% so about half of what the back tests show and and uh this was during the election. So I took a hit and I really
+
+[10:24] scaled way back at during that time and then I've been scaling up and try getting back to normal trading lately. My calmar is a little higher than that back test at 4.86 because of the low
+
+[10:37] draw down. So here it shows you uh each individual trade and what happened and some trades I make 2%. If all the trades end up positive on that day I make 2%. If all the trades end up negative on
+
+[10:54] that day I'll lose 2%. And um so you and then a lot of days end up somewhere between one zero and 1% either up or down with more trades ending positive than negative uh resulting in a in a
+
+[11:12] good positive strategy. And that says there's 1,500 15,000 trades total in this this two and a half or two and 3/4 year uh period. Um, another bit of advice is, uh, just pay attention to
+
+[11:29] slippage. That can make a big difference in profitability. And I've worked really hard that that what happened in October. Uh, just some some glitches in slippage between various brokers became very
+
+[11:47] evident during this time. And so we did a lot of work, me and others. We talked to CBOE, we talked to brokers, we tried to figure out why why is it so different from some one broker to another. And um
+
+[12:01] it uh you know how how brokers handle the stop orders is what makes the difference. Brokers who hold the stop at the brokerage will have the highest slippage. Brokers who send the stop
+
+[12:13] orders to the exchange to hold until triggered will have the lowest slippage. Now, CBOE only accepts orders on single legs. So, you can't send a order for a stop a stop on a spread to CBOE. Your
+
+[12:28] broker will have to hold that. And so, to get the lowest slippage, use market stops on single legs held at the exchange. So, you'll have to check with your broker. And here's a slide. You
+
+[12:40] might might want to make a screenshot of this. This is the difference between a high-cost broker like IBKR and Tasty Trade and a lowcost broker like Tradeier, Erade or even Trade Station if
+
+[12:53] you get some benefits with TAT. And then the difference like what impact high slippage can have and this is just trading one contract of ME with a average say half of the stops stop out
+
+[13:09] you know half of the trades stop out. So that's that's the impact on your account that year. High slippage, you know, you're going to end up generally, you know, stops that are held at the broker
+
+[13:21] and and certain brokerages end up with high slippage. You can see here where those stops are held broke, if it's held at the broker, you're going to end up at the high end of this chart. If it's held
+
+[13:33] at the exchange, you're going to end up toward the low end of this chart. So just something to be aware of for you zero DTE traders. If you're interested in learning more
+
+[13:44] about multiple entries iron condors, Tammy has published several long videos where she goes much more into detail. You'll find the link in the description. Thank you, Tammy.

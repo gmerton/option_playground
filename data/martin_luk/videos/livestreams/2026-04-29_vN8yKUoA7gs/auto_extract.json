@@ -1,0 +1,130 @@
+{
+  "video_id": "vN8yKUoA7gs",
+  "date": "2026-04-29",
+  "title": "No trade | 29 Apr 2026",
+  "observed_trades": [
+    {
+      "date": "2026-04-29",
+      "ticker": "INTC",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Stopped out the prior day; in hindsight should have waited for the semi ETF to pull back into the 9 EMA before entering",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-04-29_vN8yKUoA7gs@64:11",
+      "confidence": "stated",
+      "notes": "Caption 'Intel' = INTC; 'I unfortunately I got stopped out uh yesterday'",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-04-29",
+      "ticker": "?",
+      "direction": "long",
+      "action": "trim",
+      "setup": "Lower-cap name up ~100% from the lows; sold some into strength and is 'lenient' on holding the rest",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-04-29_vN8yKUoA7gs@53:56",
+      "confidence": "stated",
+      "notes": "Caption 'YSS' = unidentified ticker; he says he'll sell some into the strength and hold the rest",
+      "fill_timing": ""
+    }
+  ],
+  "principles": [
+    {
+      "category": "posture",
+      "text": "After a really good run and in a difficult/choppy period, deliberately trade less and stay patient rather than forcing entries.",
+      "timestamp": "23:28"
+    },
+    {
+      "category": "posture",
+      "text": "Shorting is almost always too early; wait for clear confirmation on the bearish side instead of front-running a pullback in a strong uptrend.",
+      "timestamp": "22:26"
+    },
+    {
+      "category": "exits",
+      "text": "Prefer selling into strength on lower-cap stocks - they have weaker fundamentals, a higher chance of fading, and rarely make multi-week moves, so trailing the 9/21/50 EMA can give back ~20% before the first close below.",
+      "timestamp": "52:13"
+    },
+    {
+      "category": "exits",
+      "text": "Decide your exit plan (trail wide for a longer move vs tighter to protect profit) before the pullback starts, by weighing potential upside against potential give-back; emotions distort the decision once profits are shrinking.",
+      "timestamp": "59:06"
+    },
+    {
+      "category": "macro",
+      "text": "Use IWM/Russell mainly as a relative-strength/breadth tell - it tends to lag and make lower highs before a >15% correction while the QQQ is still at highs; weight QQQ more for tech focus.",
+      "timestamp": "73:32"
+    },
+    {
+      "category": "entries",
+      "text": "Screen for liquidity: prefer >$100M (raising toward $200M) dollar volume and check the 1-/5-min chart - thin names with ~$25K-per-candle volume have wide spreads and poor fills.",
+      "timestamp": "17:10"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "12:30",
+      "caption_text": "Wolf is uh kind of setting up a flag above the 9A",
+      "context": "Setting up a flag above the 9 EMA with some relative strength; a name to watch if market goes higher",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "12:54",
+      "caption_text": "Oh, V is putting back into the 21 and looks like it's finding support",
+      "context": "Pulling back into the 21 EMA, finding support, could be a buy today",
+      "guess": "V",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "20:23",
+      "caption_text": "ESTs is the weakest one elites",
+      "context": "Among space names; weakest, first to lose the 50 EMA, now below 150",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "25:42",
+      "caption_text": "if bull forms a uh this kind of bull flag",
+      "context": "A name forming a bull flag; would have been a good pullback buy two weeks ago; 'bull' may be a ticker rather than the word",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "26:27",
+      "caption_text": "the peers uh what's what's that Robin M is ging down",
+      "context": "A peer going down while software names lag; 'Robin' may reference Robinhood (HOOD)",
+      "guess": "HOOD",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "50:02",
+      "caption_text": "UMY [snorts] Why it says it's coming into the 50 EMA",
+      "context": "Ugly reversal / failed breakout on the weekly; down >30% in five trading days",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "53:56",
+      "caption_text": "YSS has has moved has made a move about more than around 100% since the lows",
+      "context": "Up ~100% from the lows; selling some into strength, holding the rest (a held position)",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "55:10",
+      "caption_text": "Oh, we is uh breaking out like now. It is showing massive strength today",
+      "context": "Breaking out with massive strength; viewer asks about holding it longer with the 20 EMA; he had already sold",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "55:55",
+      "caption_text": "You think uh erm is worth to hold it longer like using the 20 EMA",
+      "context": "Viewer's name; he discusses it as ARM later ('sorry ARM')",
+      "guess": "ARM",
+      "confidence": "likely"
+    }
+  ]
+}

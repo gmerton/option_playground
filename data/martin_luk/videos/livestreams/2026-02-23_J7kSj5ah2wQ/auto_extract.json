@@ -1,0 +1,116 @@
+{
+  "video_id": "J7kSj5ah2wQ",
+  "date": "2026-02-23",
+  "title": "No trade | 23 Feb 2026",
+  "observed_trades": [
+    {
+      "date": "2026-02-23",
+      "ticker": "SNDK",
+      "direction": "short",
+      "action": "stopped_out",
+      "setup": "Short attempt that stopped out again; not setting up for higher but he sees it as one of few opportunities",
+      "entry_basis": "",
+      "stop": "stopped out again",
+      "source": "2026-02-23_J7kSj5ah2wQ@04:31",
+      "confidence": "stated",
+      "notes": "Caption 'SNTK'/'SNDK' = SNDK (SanDisk); recurring short; interpreted ticker",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-02-23",
+      "ticker": "SMR",
+      "direction": "short",
+      "action": "exit",
+      "setup": "Covered the SMR short; set stop on Wednesday's high which then stopped him out (exited Thursday)",
+      "entry_basis": "",
+      "stop": "stop set at Wednesday high; stopped out Thursday",
+      "source": "2026-02-23_J7kSj5ah2wQ@06:34",
+      "confidence": "stated",
+      "notes": "Exited prior to this session; recapping the trade",
+      "fill_timing": ""
+    }
+  ],
+  "principles": [
+    {
+      "category": "posture",
+      "text": "Sitting out is a valid and good outcome; deliberately reduce the number of trades per year and treat no-trade days as practicing the sit-out skill.",
+      "timestamp": "55:20"
+    },
+    {
+      "category": "posture",
+      "text": "Be skeptical of buying breakouts after a long, stretched uptrend with no decent base and narrow breadth; a pullback to the 21 or 50 EMA is healthier for sustaining an uptrend.",
+      "timestamp": "19:58"
+    },
+    {
+      "category": "entries",
+      "text": "Wait for the market to confirm weakness before shorting into a choppy tape; don't pre-empt the move and risk getting chopped up.",
+      "timestamp": "37:31"
+    },
+    {
+      "category": "risk",
+      "text": "Intraday/breakout-candle stops give tighter risk but a lower success rate; sitting the stop at the low of day is wider but more reliable — it's a tradeoff to weigh per setup.",
+      "timestamp": "25:37"
+    },
+    {
+      "category": "exits",
+      "text": "In a market with only 2-3 day follow-through on either side, take short swings and sell into strength / cover into weakness after a couple days rather than holding for a big move.",
+      "timestamp": "39:46"
+    },
+    {
+      "category": "mindset",
+      "text": "Keep a holistic feel for both sides of the market; don't tunnel-vision only on weakness (shorts) and ignore stocks showing strength.",
+      "timestamp": "41:11"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "04:31",
+      "caption_text": "it got stopped out of SNTK again",
+      "context": "A short that keeps stopping him out; one of few opportunities he sees",
+      "guess": "SNDK",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "07:02",
+      "caption_text": "the DS is a pretty huge one that I didn't expect to close below the EMAs on the Friday",
+      "context": "A name with a strong rejection on the anchor VWAP that closed below EMAs Friday",
+      "guess": "ONDS",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "07:59",
+      "caption_text": "But there also some of the Sam's names is is really strong like a feed",
+      "context": "Strong names ('Sam's names' = semis); garbled ticker 'a feed'",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "08:28",
+      "caption_text": "Oh, this exti too",
+      "context": "Naming another stock with action in both directions",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "17:29",
+      "caption_text": "Alex is also building a pretty good flag here, but it's a bit choppy to trade",
+      "context": "A name building a good flag but choppy to trade for past 3-4 months",
+      "guess": "ALAB",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "30:40",
+      "caption_text": "SNK is going to it's going to 700 and possibly all-time high",
+      "context": "Strong name heading toward 700 / all-time high",
+      "guess": "SNDK",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "45:30",
+      "caption_text": "I believe we'll get a pretty good main refresh long setup on IGV pretty soon",
+      "context": "Expecting a pullback/refresh long setup on the software ETF IGV",
+      "guess": "IGV",
+      "confidence": "likely"
+    }
+  ]
+}

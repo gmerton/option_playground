@@ -1,0 +1,104 @@
+# Paycheck To Portfolio — Channel Video List
+# Channel: Paycheck To Portfolio (@Paycheck2Portfolio, UCqweTiFXT0z9FcURR55RcRg)
+# https://www.youtube.com/@Paycheck2Portfolio/videos
+# Fetched 2026-07-05 via `.venv/bin/yt-dlp --flat-playlist` — 97 videos, newest first.
+# Column 1: [x]=reviewed in reviews/  [ ]=not yet reviewed.  Re-run yt-dlp to refresh.
+# Reviewed/ingested: 7/97  ([x] = cited in reviews/system_overview.md)
+
+[ ] 1gQQ9NQwB9I | I Don’t Fear Margin. I Manage It Like a Business
+[ ] Q7N6vGl5vZA | How I Turn Equity Into Financial Freedom
+[ ] Qys3zzSNc08 | Stop Trying to Time the Stock Market
+[ ] Y46AIiwxCNE | What If You Invested Before Paying Bills?
+[ ] oP5aF9w76pA | I Refused to Wait 30 Years for Financial Freedom
+[ ] uLdBMTVzzZQ | This Is How I Turn Borrowed Money Into Cash Flow
+[ ] z0HKQcLKXdk | How I Pay My Bills Without Spending My Paycheck
+[ ] 2lex214O1Kk | Most People Spend Their Paycheck. I Invest Mine First.
+[ ] 1SeAOey-Nfg | The Goal Was Never Dividends. It Was Freedom.
+[ ] gdHazWYjRlM | How I Turned $2,500 Into a Growing Cash Flow System
+[ ] yhQOJBuNCOw | They Never Taught Us How Money Actually Works (My FIRE Strategy)
+[ ] TmtJUeTVfik | How I Generate Monthly Cash Flow From My Portfolio
+[ ] I0STdFzpmB8 | STOP Paying Bills With Your Paycheck
+[ ] qNuA9AFbOPk | How Ordinary Paychecks Become Big Portfolios
+[ ] nGpp1VzIMm8 | Market Crash Cheat Code (Revisited)
+[ ] zhyRrNKYVzs | How I Live Out of My Brokerage Account (My FIRE Strategy)
+[ ] K30kuBK1EsA | Why I Still Live Out of My Brokerage Account (1 Year Later)
+[ ] XdiexibZndg | Spark to FIRE – Week 19: The Money Lessons Schools Never Teach 🔥
+[ ] HYZLejvBRBw | Debt Builds Cash Flow
+[ ] DRRBwnkiMqc | I Turn My Paycheck Into Cash Flow (Here’s How)
+[ ] g_JS_EXAGko | I Don’t Pay Bills Anymore… My Portfolio Does (Real Numbers)
+[ ] iDwK2uK7tug | Dividends Pay Me While Equity Grows… Spark to FIRE Week 18
+[ ] GqQuCknuOdA | I Invest My Entire Paycheck… Then Live Off It
+[ ] 05NFXB-RLOw | I Live Out of My Brokerage Account (No Bank Needed)
+[ ] OA-aqu7WIxQ | How I Turn My Portfolio Into Monthly Cash Flow (Run Like a Business)
+[ ] vA0RK8hq9J0 | The Market Rebounded And So Did My Income | SPARK TO FIRE Week 18
+[ ] r_ork4UFSmM | Fully Invested. Using Margin. No Cash. (And My Bills Are Still Paid)
+[ ] r7YX0aIVGfQ | I Don’t Pay My Bills… My Portfolio Does
+[ ] vz-2Rk0uvTg | MARKET CRASH = WEALTH TRANSFER
+[ ] 3F1WpHC0SNI | Spark to FIRE - Week 17: $500/Month Built This Portfolio System
+[ ] U7LVR5VaTfc | Stop Investing Like Everyone Else — Run Your Portfolio Like a Business
+[ ] S3zm45dkCkk | Why I Don’t Keep an Emergency Fund
+[ ] _Xrgh31JsJc | The Day I Realized My Job Would Replace Me in a Week
+[ ] ax4RpNMdx7g | Spark to FIRE – Week 16: I’m Making Sure My Daughter Never Needs a Paycheck
+[ ] 9FvcaLkoaG0 | Why I Don’t Judge My Income ETFs By Price (And Neither Should You)
+[ ] Zq3Zd4ESjMk | Borrowed Money Pays My Bills
+[ ] 9p35EnK99UQ | How I’d Survive If My Paycheck Went to $0
+[x] 8kMyrnUduFg | Spark to FIRE – Week 15: Account Down, Income Up (Total Return & Margin Explained)
+[ ] gx20Ik_ztRM | The Golden Handcuffs Nobody Talks About (And How To Break Them)
+[ ] OYCPF0JD8Ag | Spark to FIRE Week 14: How My Daughter’s $3,000 Brokerage Account Grows in a Volatile Market
+[ ] YJoLVaENI8U | What a Market Pullback Actually Did to My System (With Real Numbers)
+[ ] 6tne9zNcUss | Spark to FIRE – Week 13: I Paid My Bills… and the Account Still Grew (Paycheck to Portfolio)
+[ ] rZQJa1pOzEo | Why Compounding Feels Slow (And How I Fixed It)
+[ ] _Zd6E_qL64c | Spark to FIRE – Week 12: Paying Bills Without Selling Investments
+[ ] tRE_Ae8lrRc | How I Compressed a 30-Year Retirement Plan Into 5–7 Years
+[ ] 5K5ArfjjQXA | Spark to FIRE – Week 11: Why Market Volatility Doesn’t Break This System
+[x] xA77RMkIc_s | MARGIN ISN’T THE RISK — EQUITY IS (Here’s What Breaks Portfolios)
+[ ] Z1Q7T1YLU_I | Spark to FIRE – Week 10: 86% Equity (How I Borrow Against My Portfolio)
+[ ] kbiIa6fObZk | Why I Don’t Use a Bank Account Anymore (I Live Out of My Brokerage)
+[ ] BD16r5dpgSA | Spark to FIRE – Week 9: How I Pay Real Bills Without a Checking Account
+[ ] D5Z1CKLwgDA | Most People Never Escape the Rat Race (This Is Why)
+[ ] HSo7oaD1fVE | I’m Not Budgeting in 2026 — I’m Running My Money Like This
+[ ] pCsz01SxgU8 | This Is How Borrowed Money Replaced My Paycheck (My FIRE Strategy)
+[ ] zxsMPTAenj0 | From Spark to FIRE – Week 8: When Cash Flow Replaces Expenses (Paycheck to Portfolio)
+[ ] Em3f0ndqm2o | Why I Run My Portfolio Like a Business (And Why Most Investors Never Get Free)
+[ ] -QpxcXSnW-0 | Spark to FIRE – Week 7: How a $2,500 Account Is Paying for My Kids College
+[ ] 7o70mK25vcI | How I’m Preparing to Leave My Job Using Passive Income (My FIRE Strategy)
+[ ] jLxgwXy_jqQ | Spark to FIRE – Week 6: Dollar Cost Averaging, Dividend Growth & My New Buys (Paycheck to Portfolio)
+[ ] c0z6Fl9v-14 | How I Turn Borrowed Money Into Passive Income (Step-By-Step)
+[ ] q1qUs2jeqAo | Spark to FIRE Week 5: Why I Stopped Using a Checking Account (And Live Out of My Brokerage Instead)
+[ ] H50fgReAHJo | ULTY, MSTY & This Market: Michael Khouw Breaks Down YieldMax and the Options Strategy Investors Need
+[ ] 6yu_9COZd-0 | Spark to FIRE – Week 4: Staying Consistent Through Stock Market Volatility (Paycheck to Portfolio)
+[ ] 1TaeItPhjUM | Staying Fully Invested in Volatility: The Strategy Most Investors Miss (My FIRE Strategy)
+[ ] DqNoxNWI900 | Spark to FIRE – Week 3: Compounding & Cash Flow (Paycheck to Portfolio)
+[ ] 2WvYswNRsVE | How I Turned My Brokerage Account Into a Cash-Flow Machine (My FIRE Strategy)
+[ ] 00ViK4KBhS4 | Spark to FIRE – Week 2: Turning $500 Into Freedom (Paycheck to Portfolio)
+[ ] Szq8AJWjr6Q | Breaking Free From the 9–5 Trap and Replacing It With Cash Flow (Paycheck to Portfolio)
+[ ] imsnwC7cVns | From Spark to FIRE: How to Start Investing With $500 (Paycheck to Portfolio)
+[ ] 8B6gAqIQRhI | Why I Stay Fully Invested (While Everyone Else Panics)
+[ ] B2thUEYAZvY | How I Turn Borrowed Money Into Monthly Income (My FIRE Strategy)
+[x] OfN--AF6yjo | NAV Erosion: Fact or Fiction? (The Truth About High-Yield Funds)
+[ ] 0egeNpFnjgI | The Bottom Line: $4,000 Dividend Income (September 2025 Review)
+[ ] qyg6b81L1YI | How to Live Out of Your Brokerage Account (And Invest Every Dollar You Earn)
+[ ] n85vS3SVhfw | The Market Crash Cheat Code: How $200 in Puts Buys $15,000 Protection (Go On Offense)
+[ ] t2OSdCZYC_w | How to Compound 100% of Your Paycheck (Charlie Munger’s $100K Rule)
+[ ] FQNzKjqjv1s | Replace Your Bills With Dividends | Paycheck to Portfolio
+[ ] k7H76mlZs5U | The Bottom Line: $4,400 Dividend Income (August 2025 Review)
+[x] 8jMuwf3_Cv0 | Margin Management: How I Borrow Safely Without Going Broke
+[ ] tLsRLVYT6Ms | I’m 100% Invested: Here’s How I Still Pay My Bills
+[ ] Dp8sn_UhNhg | How I’m Playing the Cornerstone Rights Offering to Compound My Net Worth Fast
+[ ] WHaPIgWlCw4 | From Debt to Dividends: How I Use Margin to Replace My Paycheck
+[ ] cY6czfNJijQ | How I Stopped Living Paycheck to Paycheck (Without Making More Money)
+[ ] SlbUmiLbCr0 | How I Protect My Portfolio From a Market Crash
+[ ] Z8yzaE8tW-w | Inside the YieldBOOST Strategy — A Conversation with Will Rhind, CEO of GraniteShares
+[x] E9EuisW90Gw | The Paycheck to Portfolio System Explained (Step-by-Step)
+[x] lZqclPBegFA | How I’d Start With $10,000 (My Paycheck to Portfolio Plan)
+[ ] aiyJgKCpca0 | This is How I Borrow Money to Make More Money
+[x] 3t4l8rYWkqo | My Portfolio breakdown — (What I Own and Why)
+[ ] anVzWAvmGkg | Why I Don’t Worry About Taxes (Even With Monthly Income)
+[ ] mCEFsSgIPmU | The Secret Weapon of My Dividend Strategy: DRIP at NAV
+[ ] BllQhy6bSRg | How I Use Options to Boost Income and Protect My Portfolio
+[ ] pJyMOg5XcX4 | My Paycheck Doesn’t Pay My Bills — My Portfolio Does
+[ ] SI0EqncNeFA | How I Built $3,000+/Month in Dividend Income (And How You Can Too)
+[ ] EV0YjlDp5CM | How I Use Margin To Boost My Income (Without Going Broke)
+[ ] x3a0tm98Ms0 | How I Invest Every W-2 Paycheck (Without Ever Touching it)
+[ ] U4UkEwIJucw | How I Get Paid From Dividend ETFs (My FIRE Strategy)
+[ ] MbK5kulcKkk | Why I Live Out of My Brokerage Account (My FIRE Strategy)

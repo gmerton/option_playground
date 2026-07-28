@@ -1,0 +1,65 @@
+{
+  "video_id": "KIConi96jLo",
+  "date": "2026-05-28",
+  "title": "Another up day | 28 May 2026",
+  "observed_trades": [
+    {
+      "date": "2026-05-28",
+      "ticker": "UMAC",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Gap up into all-time highs out of a 1.5-year base from a prior 1,600% move; powerful EP-style long-base breakout.",
+      "entry_basis": "Gap up / EP-style breakout from long base",
+      "stop": "",
+      "source": "2026-05-28_KIConi96jLo@11:17",
+      "confidence": "inferred",
+      "fill_timing": "today",
+      "notes": "At 11:17 'Probably UMAC is the one consumes most of the remaining buying power... this is probably it for today for my trading' — implies he bought UMAC today. Entry inferred; ticker UMAC is clearly labeled in the caption (04:20)."
+    },
+    {
+      "date": "2026-05-28",
+      "ticker": "AAOI",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Existing position; says no more buying power left for AOI.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-05-28_KIConi96jLo@11:17",
+      "confidence": "inferred",
+      "fill_timing": "",
+      "notes": "'I guess no more buying power for AOI' (11:17) — implies he already holds AAOI. 'AOI' = AAOI (interpreted). Entry timing unspecified."
+    },
+    {
+      "date": "2026-05-28",
+      "ticker": "INTC",
+      "direction": "long",
+      "action": "reentry",
+      "setup": "Re-buying Intel as it starts to find support; likes the anchor-VWAP shakeout that shook him out, wants a reclaim/rebound above the EMAs.",
+      "entry_basis": "Finding support / reclaim above EMAs after shakeout",
+      "stop": "",
+      "source": "2026-05-28_KIConi96jLo@44:51",
+      "confidence": "stated",
+      "fill_timing": "today",
+      "notes": "'I'm going to rebuy my intel' (44:51); at 62:00 discusses the shakeout that shook him out and wanting a reclaim."
+    }
+  ],
+  "principles": [
+    { "category": "risk", "text": "Set stops around 1-2% regardless of setup or entry tactic; usually at the low of day, sometimes at the bar low or just below the anchor VWAP.", "timestamp": "59:16" },
+    { "category": "exits", "text": "Selling into strength is never wrong; if undecided, flip a coin to pick trim-vs-hold, then review after the trade to gradually build your own selling approach.", "timestamp": "68:51" },
+    { "category": "posture", "text": "In a strong uptrend it's the perfect time to be aggressive and buy as much as you can, because you don't know how long the market will last; rather be too bullish than try to pick the top.", "timestamp": "87:33" },
+    { "category": "macro", "text": "Treat the current AI move like the 1998-2000 dot-com analog: NASDAQ ~15% above the 150 EMA is early (the run extended to ~26-28% above before topping); don't short too early, and prepare for an eventual large correction afterward.", "timestamp": "95:26" },
+    { "category": "mindset", "text": "Getting shaken out of winners after red candles is the most common mistake; you only need to successfully hold one big winner through the pullbacks to learn to sit through them — it's a gradual process, not perfection.", "timestamp": "110:24" },
+    { "category": "mindset", "text": "Too many external opinions (e.g. Twitter) deteriorate trading; protect your own internal process — even re-watch mentor streams a day later to avoid being influenced in real time.", "timestamp": "104:31" }
+  ],
+  "ambiguous_tickers": [
+    { "timestamp": "03:05", "caption_text": "Napius", "context": "A name that found support at the 9 EMA / rising trendline and is gapping into all-time highs; at 116:25 'probably going to miss Nepius... going to gap up tomorrow.'", "guess": "NPS", "confidence": "unsure" },
+    { "timestamp": "04:20", "caption_text": "UMAC also gapping up into the alltime highs", "context": "A 1.5-year base from a prior 1,600% move, EP-style breakout; consumes most of his remaining buying power.", "guess": "UMAC", "confidence": "likely" },
+    { "timestamp": "06:29", "caption_text": "another 50% move from this INFQ. This milk is moving so fast", "context": "A fast-moving name up another 50%; repeatedly 'INFQ is freaking out', 'run out of buying power to buy FQ'.", "guess": "INOD", "confidence": "unsure" },
+    { "timestamp": "06:06", "caption_text": "50% move on RTI", "context": "A quantum name with a two-day 50% push.", "guess": "RGTI", "confidence": "likely" },
+    { "timestamp": "62:41", "caption_text": "This CPRS is also holding up the lower time frames EMAs", "context": "Could be the first higher low since the downtrend; 60-min 9 starting to cross above 21.", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "66:18", "caption_text": "and DS. I think the best entry would be yesterday", "context": "A fast straight-up name, lockout-rally style; later 'trim a few Android yesterday or OMDS'.", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "90:02", "caption_text": "C ML. Okay, good. Super tight", "context": "Lithium / rare-metal name, fast moving with clustered EMAs; weekly looks good.", "guess": "CRML", "confidence": "unsure" },
+    { "timestamp": "92:34", "caption_text": "The coral beef is a is a good one", "context": "Got stopped out yesterday break-even, it closed strong, today gapped up and pulled back into the EMAs and is pushing higher; weekly retesting 50/21 EMA.", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "72:23", "caption_text": "to have taken the yen trade on 12 or 13 of May", "context": "Took it on swing-high support and the April 24 anchor-VWAP support; thinks risk/reward is huge if it breaks out.", "guess": "?", "confidence": "unsure" }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "video_id": "3t4l8rYWkqo",
+  "url": "https://www.youtube.com/watch?v=3t4l8rYWkqo",
+  "title": "My Portfolio breakdown \u2014 (What I Own and Why)",
+  "channel": "Paycheck To Portfolio",
+  "channel_id": "UCqweTiFXT0z9FcURR55RcRg",
+  "stream_date": "2025-07-05",
+  "duration": "12:56",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

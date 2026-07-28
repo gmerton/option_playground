@@ -11,3 +11,21 @@ ibkr_bot/signals.db-wal
 ibkr_bot/signals.db-shm
 ibkr_bot/alerts.log
 .env
+
+# ── Derived / downloaded data (regenerable — do NOT commit) ───────────────────
+# The repo already carries ~300MB of parquet in history and .git is ~950MB;
+# everything below rebuilds from the fetch/backtest scripts in seconds-to-minutes.
+*.parquet
+*.zip
+
+# Lambda build trees (contain compiled .so)
+build/
+refresh_build/
+*.so
+
+# Bulk price panels (rebuild: fetch_broad.py / fetch_longhistory.py / fetch_gap_data.py)
+data/carter_mastering_the_trade/backtests/risk_architecture/broad_history/
+data/carter_mastering_the_trade/backtests/risk_architecture/polygon_history/
+
+# Per-trade dumps (rebuild by rerunning the study that emits them)
+data/carter_mastering_the_trade/backtests/opening_gap/gap_trades.csv

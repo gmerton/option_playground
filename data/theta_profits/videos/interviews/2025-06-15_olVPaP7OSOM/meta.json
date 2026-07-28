@@ -1,0 +1,19 @@
+{
+  "video_id": "olVPaP7OSOM",
+  "url": "https://www.youtube.com/watch?v=olVPaP7OSOM",
+  "title": "How This Trader Makes 100%+ Returns with Double Calendar Spreads (Full Strategy)",
+  "channel": "Theta Profits",
+  "channel_id": "UCzGARfberQ8nRRbsjK90BHg",
+  "stream_date": "2025-06-15",
+  "duration": "29:47",
+  "summary": "Trader 'Ravish' (channel 'Options with Ravish') pitches a pure SPX/SPY/QQQ double calendar (put calendar below + call calendar above, ~expected-move strikes, short Friday / long next-Mon-or-Fri, 10-15 DTE), held as a long-vega/long-theta range tent and scaled out at 15-30% of debit a few days before expiry. NO transform-to-condor (contrast Bernich's DC Time Machine, same entry / opposite management). Edge is a discretionary VIX-direction call; admits vol-crush turns the tent into 'a sea of red' and a black-swan gap could wipe the sleeve out (sized 20% via an 80/20 framing). Claims >85% win, '$400k to $2M in 3 years', 'well over 100% annually' -- all account-level, no separable trade log, and the 'only this strategy' claim contradicts the 80/20 split. 'Negative-vega trick' hand-waved. Write-up: strategies/double_calendar_ravish.md (conviction 1.5/5).",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

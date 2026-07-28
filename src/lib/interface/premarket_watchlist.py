@@ -9,13 +9,13 @@ Pre-market mode:
   - EOD scan + yfinance pre-market gap enrichment
   - Categorizes: EP (≥8%), Gap-up (2–8%), Near-pivot (<2%)
 
-Filters applied in order for efficiency:
+Universe gates (see GATE_TIERS — "required" misses disqualify, "optional"
+misses are reported but do not):
   1. Fetch 420 calendar days of OHLCV (skip if no data / <60 bars)
-  2. Stage 2: SMA50 > SMA150 > SMA200, close > SMA50
-  3. ADR(20) > 3.5%
-  4. 5-day avg dollar volume > $10M
-  5. EMA stack (9>21>50), pivot detection, RS
-  6. Potent / Leader classification
+  2. Stage 2: SMA50 > SMA150 > SMA200, close > SMA50   [required]
+  3. ADR(20) > 3.5%                                     [optional]
+  4. 5-day avg dollar volume > $10M                     [required]
+Then: EMA stack (9>21>50), pivot detection, RS, Potent/Leader classification.
 """
 
 from __future__ import annotations
@@ -58,6 +58,20 @@ DEFAULT_UNIVERSE: List[str] = sorted(set(_FOOL_LIST + _HOLDINGS_LIST))
 # multiple of its trailing 50-day average to count as a *confirmed* breakout.
 VOL_CONFIRM_MULT: float = 1.5
 VOL_AVG_LOOKBACK: int = 50
+
+# ── Universe-gate weighting ───────────────────────────────────────────────────
+# v1 is deliberately crude: a gate is either "required" (a miss disqualifies the
+# name from the scan) or "optional" (a miss is scored and reported — e.g. as a
+# vehicle caveat — but does not disqualify). Intended to evolve into numeric
+# weights; keep this the single source of truth so nothing downstream
+# hard-codes a tier. ADR is a vehicle trait, not an event trait -> optional.
+GATE_TIERS: Dict[str, str] = {
+    "stage2":     "required",
+    "adr":        "optional",
+    "dollar_vol": "required",
+}
+ADR_MIN: float = 3.5                  # ADR(20) %, optional gate
+DOLVOL_MIN: float = 10_000_000        # 5-day avg dollar volume, required gate
 
 
 # ── Indicator helpers ─────────────────────────────────────────────────────────
@@ -125,14 +139,23 @@ def _detect_pivot(
 
 # ── Per-ticker EOD screen ─────────────────────────────────────────────────────
 
-async def screen_ticker(client: TradierClient, ticker: str) -> Optional[Dict[str, Any]]:
+async def score_ticker(client: TradierClient, ticker: str, *,
+                       asof: Optional[date] = None) -> Optional[Dict[str, Any]]:
     """
-    Screen a single ticker for EOD watchlist inclusion.
+    Compute the full gate scorecard for a single ticker — no filtering.
 
-    Returns a dict if the stock qualifies as Potent or Leader; None otherwise.
+    Every universe gate is evaluated and returned in ``gates`` with its
+    measured value, threshold, tier (from GATE_TIERS), and pass/fail, plus
+    ``required_pass`` / ``optional_misses`` rollups, so callers can see *why*
+    a name qualifies or misses instead of a binary verdict.
+
+    Returns None only when there is no usable price history (<60 bars).
     A single Tradier history call is made per ticker (no duplicate fetches).
+
+    `asof` lets you reconstruct the scan as of a past completed session (the
+    last bar fetched is <= asof); defaults to today.
     """
-    end = date.today()
+    end = asof or date.today()
     start = end - timedelta(days=420)
 
     try:
@@ -150,30 +173,45 @@ async def screen_ticker(client: TradierClient, ticker: str) -> Optional[Dict[str
     opens  = list(df["open"].astype(float))
     vols   = list(df["volume"].astype(float))
     n = len(closes)
+    close_now = closes[-1]
 
-    # ── Stage 2: SMA50 > SMA150 > SMA200, close > SMA50 ──────────────────────
+    # ── Gate: Stage 2 — SMA50 > SMA150 > SMA200, close > SMA50 ───────────────
     sma50  = _sma(closes, 50)
     sma150 = _sma(closes, 150)
     sma200 = _sma(closes, 200)
+    stage2_ok = bool(
+        sma50 is not None and sma150 is not None and sma200 is not None
+        and sma50 > sma150 > sma200 and close_now > sma50
+    )
 
-    if sma50 is None or sma150 is None or sma200 is None:
-        return None
-
-    close_now = closes[-1]
-    if not (sma50 > sma150 > sma200 and close_now > sma50):
-        return None
-
-    # ── ADR(20) > 3.5% ────────────────────────────────────────────────────────
+    # ── Gate: ADR(20) ─────────────────────────────────────────────────────────
     ranges_pct = [(h - l) / c * 100 for h, l, c in zip(highs, lows, closes)]
     adr20 = _sma(ranges_pct, 20)
-    if adr20 is None or adr20 < 3.5:
-        return None
+    adr_ok = bool(adr20 is not None and adr20 >= ADR_MIN)
 
-    # ── 5-day avg dollar volume > $10M ────────────────────────────────────────
+    # ── Gate: 5-day avg dollar volume ─────────────────────────────────────────
     dollar_vols = [c * v for c, v in zip(closes, vols)]
     avg_dolvol_5d = _sma(dollar_vols, 5)
-    if avg_dolvol_5d is None or avg_dolvol_5d < 10_000_000:
-        return None
+    dolvol_ok = bool(avg_dolvol_5d is not None and avg_dolvol_5d >= DOLVOL_MIN)
+
+    gates = [
+        {"gate": "stage2",
+         "value": None if sma50 is None or sma150 is None or sma200 is None else
+                  f"50:{sma50:.2f} 150:{sma150:.2f} 200:{sma200:.2f} close:{close_now:.2f}",
+         "threshold": "SMA50>SMA150>SMA200 & close>SMA50",
+         "tier": GATE_TIERS["stage2"], "passed": stage2_ok},
+        {"gate": "adr",
+         "value": round(adr20, 2) if adr20 is not None else None,
+         "threshold": f">={ADR_MIN}%",
+         "tier": GATE_TIERS["adr"], "passed": adr_ok},
+        {"gate": "dollar_vol",
+         "value": round(avg_dolvol_5d / 1e6, 1) if avg_dolvol_5d is not None else None,
+         "threshold": f">=${DOLVOL_MIN / 1e6:.0f}M (5d avg, $M)",
+         "tier": GATE_TIERS["dollar_vol"], "passed": dolvol_ok},
+    ]
+    required_pass = all(g["passed"] for g in gates if g["tier"] == "required")
+    optional_misses = [g["gate"] for g in gates
+                       if g["tier"] == "optional" and not g["passed"]]
 
     # ── EMA stack (Luk's Lead: 9 > 21 > 50) ──────────────────────────────────
     ema9_s  = _ema_series(closes, 9)
@@ -225,9 +263,6 @@ async def screen_ticker(client: TradierClient, ticker: str) -> Optional[Dict[str
         and pct_3m is not None and pct_3m > 30
     )
 
-    if not is_potent and not is_leader:
-        return None
-
     return {
         "ticker":           ticker,
         "close":            round(close_now, 2),
@@ -245,7 +280,28 @@ async def screen_ticker(client: TradierClient, ticker: str) -> Optional[Dict[str
         "breakout_confirmed": breakout_confirmed,
         "is_potent":        is_potent,
         "is_leader":        is_leader,
+        "gates":            gates,
+        "required_pass":    required_pass,
+        "optional_misses":  optional_misses,
     }
+
+
+async def screen_ticker(client: TradierClient, ticker: str, *,
+                        asof: Optional[date] = None) -> Optional[Dict[str, Any]]:
+    """
+    Screen a single ticker for EOD watchlist inclusion.
+
+    Thin qualifying filter over score_ticker(): the name must pass every
+    *required* universe gate and classify as Potent or Leader. Optional-gate
+    misses (e.g. ADR) do NOT disqualify — they ride along in the result's
+    ``optional_misses`` so reports can tag them as vehicle caveats.
+    """
+    r = await score_ticker(client, ticker, asof=asof)
+    if r is None or not r["required_pass"]:
+        return None
+    if not (r["is_potent"] or r["is_leader"]):
+        return None
+    return r
 
 
 # ── Concurrent EOD scan ───────────────────────────────────────────────────────
@@ -253,9 +309,11 @@ async def screen_ticker(client: TradierClient, ticker: str) -> Optional[Dict[str
 async def run_eod_scan(
     client: TradierClient,
     tickers: List[str],
+    *,
+    asof: Optional[date] = None,
 ) -> List[Dict[str, Any]]:
     """Concurrently screen all tickers and return those that pass."""
-    tasks = [screen_ticker(client, t) for t in tickers]
+    tasks = [screen_ticker(client, t, asof=asof) for t in tickers]
     raw = await asyncio.gather(*tasks, return_exceptions=True)
     return [r for r in raw if isinstance(r, dict)]
 
@@ -314,6 +372,12 @@ def enrich_premarket(eod_results: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
 
 # ── Console output formatters ─────────────────────────────────────────────────
 
+def _opt_tag(r: Dict[str, Any]) -> str:
+    """Render optional-gate misses as a vehicle-caveat tag, e.g. '!adr'."""
+    misses = r.get("optional_misses") or []
+    return ("  " + " ".join(f"!{m}" for m in misses)) if misses else ""
+
+
 def _vol_tag(r: Dict[str, Any]) -> str:
     """Render the breakout-bar relative-volume tag for a result row."""
     vr = r.get("vol_ratio")
@@ -344,7 +408,7 @@ def format_eod_output(results: List[Dict[str, Any]], as_of: date) -> str:
             lines.append(
                 f"  {r['ticker']:<6} close ${r['close']:<9.2f}"
                 f"{pivot_str:<26}  ADR {r['adr20']:.1f}%  {ema_tag}  {rs}"
-                f"  vol ${r['avg_dolvol_5d_m']:.0f}M  {_vol_tag(r)}"
+                f"  vol ${r['avg_dolvol_5d_m']:.0f}M  {_vol_tag(r)}{_opt_tag(r)}"
             )
     else:
         lines.append("* POTENT — no candidates today")
@@ -366,7 +430,7 @@ def format_eod_output(results: List[Dict[str, Any]], as_of: date) -> str:
                 f"  {r['ticker']:<6} close ${r['close']:<9.2f}"
                 f"1M:{r['pct_1m']:+.0f}%  3M:{r['pct_3m']:+.0f}%  "
                 f"ADR {r['adr20']:.1f}%  {ema_tag}  {near_str}"
-                f"  vol ${r['avg_dolvol_5d_m']:.0f}M  {_vol_tag(r)}"
+                f"  vol ${r['avg_dolvol_5d_m']:.0f}M  {_vol_tag(r)}{_opt_tag(r)}"
             )
     else:
         lines.append("^ LEADERS — no candidates today")

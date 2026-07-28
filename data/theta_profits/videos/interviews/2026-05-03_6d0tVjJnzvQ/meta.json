@@ -1,0 +1,19 @@
+{
+  "video_id": "6d0tVjJnzvQ",
+  "url": "https://www.youtube.com/watch?v=6d0tVjJnzvQ",
+  "title": "How I Doubled My Money With Triple Calendar Spreads (Full Breakdown)",
+  "channel": "Theta Profits",
+  "channel_id": "UCzGARfberQ8nRRbsjK90BHg",
+  "stream_date": "2026-05-03",
+  "duration": "30:43",
+  "summary": "Vipul (options since 2019, now Delhi/NCR) pitches a triple calendar on QQQ (also SPY/SPX): three same-strike calendars (ATM middle + upper + lower), each selling the 21-DTE Friday and buying the 28-DTE Friday (a +7-day gap), with outer strikes at ATM ± the straddle-implied expected move + ~5 pts; exit at +10% of debit or a hard 7-DTE time-close, no price stop, plus discretionary 4th/5th-calendar adjustments when price breaches an outer strike. He claims ~100%/yr (\"double my money\") but that is just the sum of ~17 tiny %-of-debit trades in his one shown year (2025 log: 17 trades, 82% win, +6.33% avg, 11-day hold), unverified for prior years and inconsistent with his own note that he only adopted the 21-DTE triple \"since 2025\"; worst realized loss 30-35% in 2022. Genuine positives: the most disciplined rule-set of the channel's three calendar episodes, defined-risk debit, an actual (if thin, screenshot-only) trade log, and a +7 gap / expected-move placement that matches the user's own net-positive SPY dcal config; negatives: long-vega campaign vol-crush risk, thin 10% target eaten by 6-leg fills, adjustment-stacking tail, and a channel/Discord/earnings-tool sales motive. Third calendar episode in the KB (same family as Ravish's double and Bernich's DC-transform). Write-up: strategies/triple_calendar.md (conviction 2/5).",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

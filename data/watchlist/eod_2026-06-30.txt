@@ -1,0 +1,48 @@
+
+=== EOD WATCHLIST — 2026-06-30 (for tomorrow) ===
+
+* POTENT — yesterday's leaders near pivot
+  SITM   close $731.03   pivot $794.36 (-8.0%)       ADR 7.2%  EMA:Lead  1M:+3%  vol $725M  RVOL 0.3x
+  KEYS   close $350.34   pivot $374.96 (-6.6%)       ADR 3.8%  EMA:Lead  1M:+4%  vol $692M  RVOL 0.1x
+  FTAI   close $271.90   pivot $288.40 (-5.7%)       ADR 5.9%  EMA:Lead  1M:+4%  vol $278M  RVOL 0.2x
+  ENTG   close $176.66   pivot $186.94 (-5.5%)       ADR 7.2%  EMA:Lead  1M:+27%  vol $529M  RVOL 0.2x
+  LSCC   close $149.38   pivot $157.01 (-4.9%)       ADR 5.9%  EMA:Lead  1M:+2%  vol $303M  RVOL 0.2x
+  FIX    close $1987.32  pivot $2073.99 (-4.2%)      ADR 5.2%  EMA:Lead  1M:+9%  vol $1112M  RVOL 0.2x
+  ATI    close $197.57   pivot $205.31 (-3.8%)       ADR 3.7%  EMA:Lead  1M:+13%  vol $428M  RVOL 0.1x
+  GH     close $148.52   pivot $153.95 (-3.5%)       ADR 4.8%  EMA:Lead  1M:+14%  vol $836M  RVOL 0.2x
+  ILMN   close $177.06   pivot $182.84 (-3.2%)       ADR 4.1%  EMA:Lead  1M:+9%  vol $346M  RVOL 0.3x
+  FORM   close $153.28   pivot $157.24 (-2.5%)       ADR 7.7%  EMA:Lead  1M:+23%  vol $450M  RVOL 0.2x
+  RVMD   close $188.29   pivot $192.80 (-2.3%)       ADR 4.3%  EMA:Lead  1M:+20%  vol $923M  RVOL 0.4x
+  FLEX   close $163.21   pivot $166.86 (-2.2%)       ADR 6.5%  EMA:Lead  1M:+8%  vol $1002M  RVOL 0.2x
+  BAP    close $391.51   pivot $398.51 (-1.8%)       ADR 3.9%  EMA:Lead  1M:+14%  vol $118M  RVOL 0.1x
+  GNRC   close $291.42   pivot $296.44 (-1.7%)       ADR 4.8%  EMA:Lead  1M:+5%  vol $259M  RVOL 0.1x
+  RRX    close $232.91   pivot $236.34 (-1.5%)       ADR 4.3%  EMA:Lead  1M:+15%  vol $283M  RVOL 0.9x
+  INTC   close $139.90   pivot $141.45 (-1.1%)       ADR 7.2%  EMA:Lead  1M:+22%  vol $12725M  RVOL 0.3x
+  GEV    close $1135.86  pivot $1142.00 (-0.5%)      ADR 4.2%  EMA:Lead  1M:+17%  vol $2923M  RVOL 0.4x
+  AGX    close $796.26   pivot $798.00 (-0.2%)       ADR 7.0%  EMA:Lead  1M:+19%  vol $281M  RVOL 0.2x
+  VICR   close $369.17   pivot $370.00 (-0.2%)       ADR 8.0%  EMA:Lead  1M:+10%  vol $436M  RVOL 0.2x
+  AMD    close $566.34   pivot $562.99 (+0.6%)       ADR 5.9%  EMA:Lead  1M:+10%  vol $15407M  RVOL 0.3x (broke pivot, light vol)
+  TER    close $475.74   pivot $472.37 (+0.7%)       ADR 7.0%  EMA:Lead  1M:+27%  vol $2542M  RVOL 0.3x (broke pivot, light vol)
+  SN     close $148.06   pivot $146.44 (+1.1%)       ADR 4.0%  EMA:Lead  1M:+22%  vol $183M  RVOL 0.1x (broke pivot, light vol)
+  CRS    close $616.41   pivot $608.52 (+1.3%)       ADR 3.7%  EMA:Lead  1M:+31%  vol $724M  RVOL 0.3x (broke pivot, light vol)
+  LRCX   close $426.69   pivot $414.98 (+2.8%)       ADR 5.9%  EMA:Lead  1M:+34%  vol $5357M  RVOL 0.5x (broke pivot, light vol)
+  AMAT   close $732.38   pivot $708.99 (+3.3%)       ADR 6.1%  EMA:Lead  1M:+63%  vol $9773M  RVOL 0.6x (broke pivot, light vol)
+  APH    close $174.65   pivot $168.75 (+3.5%)       ADR 3.9%  EMA:Lead  1M:+17%  vol $1262M  RVOL 0.3x (broke pivot, light vol)
+  MKSI   close $440.03   pivot $421.58 (+4.4%)       ADR 5.7%  EMA:Lead  1M:+36%  vol $721M  RVOL 0.4x (broke pivot, light vol)
+  KLAC   close $294.28   pivot $279.34 (+5.3%)       ADR 6.6%  EMA:Lead  1M:+53%  vol $3374M  RVOL 0.5x (broke pivot, light vol)
+  MXL    close $116.00   pivot $108.65 (+6.8%)       ADR 11.0%  EMA:Lead  1M:+25%  vol $437M  RVOL 0.3x (broke pivot, light vol)
+
+^ LEADERS — 1-month RS standouts
+  FCEL   close $35.71    1M:+65%  3M:+473%  ADR 17.3%  EMA:Lead  no base  vol $508M  RVOL 1.1x
+  MRNA   close $71.62    1M:+52%  3M:+48%  ADR 7.9%  EMA:Lead  no base  vol $580M  RVOL 0.5x
+  ONTO   close $382.24   1M:+48%  3M:+102%  ADR 6.7%  EMA:Lead  pivot dist (+8.2%)  vol $560M  RVOL 0.8x (broke pivot, light vol)
+  MRVL   close $296.37   1M:+45%  3M:+238%  ADR 9.8%  EMA:Lead  pivot dist (-10.2%)  vol $9046M  RVOL 0.3x
+  GLW    close $259.13   1M:+43%  3M:+102%  ADR 7.6%  EMA:Lead  no base  vol $5667M  RVOL 0.6x
+  BB     close $12.50    1M:+39%  3M:+297%  ADR 8.8%  EMA:Lead  no base  vol $511M  RVOL 0.5x
+  RXT    close $6.38     1M:+24%  3M:+538%  ADR 15.1%  EMA:Lead  no base  vol $67M  RVOL 0.2x
+  AMKR   close $84.46    1M:+21%  3M:+105%  ADR 8.2%  EMA:Lead  pivot dist (-12.6%)  vol $409M  RVOL 0.2x
+  WDC    close $641.50   1M:+21%  3M:+155%  ADR 7.5%  EMA:Lead  no base  vol $7756M  RVOL 0.3x
+  MU     close $1141.13  1M:+18%  3M:+255%  ADR 7.4%  EMA:Lead  pivot dist (-9.1%)  vol $71706M  RVOL 0.3x
+  CRDO   close $271.75   1M:+15%  3M:+210%  ADR 11.0%  EMA:Lead  no base  vol $3299M  RVOL 0.3x
+
+Total candidates: 40  (Potent: 29, Leaders: 11)

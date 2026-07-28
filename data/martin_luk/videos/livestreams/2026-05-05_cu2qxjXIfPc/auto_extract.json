@@ -1,0 +1,292 @@
+{
+  "video_id": "cu2qxjXIfPc",
+  "date": "2026-05-05",
+  "title": "Back on margin and many yapping | 5 May 2026",
+  "observed_trades": [
+    {
+      "date": "2026-05-05",
+      "ticker": "MSTR",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Tracking from the lows; Bitcoin closed above weekly 9 EMA (bullish) and MSTR pulled back to the 9 EMA Thursday; great risk-reward (holds 9 EMA and continues, or loses it and fades)",
+      "entry_basis": "5-minute (or 15-minute) breakout after MSTR closed above the 60-min 9 EMA",
+      "stop": "",
+      "source": "2026-05-05_cu2qxjXIfPc@35:53",
+      "confidence": "stated",
+      "notes": "'I bought MSTR on last Thursday first day'; treated as a breakout after a pullback",
+      "fill_timing": "thursday"
+    },
+    {
+      "date": "2026-05-05",
+      "ticker": "MRVL",
+      "direction": "long",
+      "action": "entry",
+      "setup": "One of the leading stocks; bought on a tight two-candle range with the QQQ also finding support and breaking out intraday (index as support)",
+      "entry_basis": "5-minute or 15-minute breakout after the gap up and first intraday fade",
+      "stop": "",
+      "source": "2026-05-05_cu2qxjXIfPc@39:21",
+      "confidence": "stated",
+      "notes": "Caption 'Marvel' = Marvell (MRVL); 'I bought this again and also on Thursday'",
+      "fill_timing": "thursday"
+    },
+    {
+      "date": "2026-05-05",
+      "ticker": "?",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Same breakout candle as QQQ and Marvell, breaking out from a prior candle high; liked the volume increase since the uptrend started",
+      "entry_basis": "breakout from prior-candle high",
+      "stop": "",
+      "source": "2026-05-05_cu2qxjXIfPc@40:45",
+      "confidence": "stated",
+      "notes": "Caption 'a shi'/'a shroud' (~3B market cap, smaller-cap); bought Thursday, almost stopped out the next day but held. Ticker decode too shaky to assert (was guessed ASTS) - set to ?",
+      "fill_timing": "thursday"
+    },
+    {
+      "date": "2026-05-05",
+      "ticker": "AOI",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Always on watchlist; daily anchored-VWAP and 9 EMA pullback; liquid 12% ADR momentum name, one of the best stocks right now",
+      "entry_basis": "bought on a five-minute candle, after the close of that candle",
+      "stop": "",
+      "source": "2026-05-05_cu2qxjXIfPc@42:36",
+      "confidence": "stated",
+      "notes": "Caption 'AI'/'AOI' = interpreted as AOI (consistent across streams); 'It is also bought in on Thursday'",
+      "fill_timing": "thursday"
+    },
+    {
+      "date": "2026-05-05",
+      "ticker": "?",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Breakout; anchored VWAP from swing low plus prior high of a long base = layered support; gap up above the 60-min 9 EMA with slight pullback",
+      "entry_basis": "one-minute breakout / opening-range high on Friday",
+      "stop": "",
+      "source": "2026-05-05_cu2qxjXIfPc@46:48",
+      "confidence": "stated",
+      "notes": "Caption 'naps'/'Napius' = unidentified ticker; bought Friday as a breakout",
+      "fill_timing": "friday"
+    },
+    {
+      "date": "2026-05-05",
+      "ticker": "QBTS",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Quantum name, stronger on the dailies (Wed/Thu); bought the breakout of the previous-day high (Oliver Calceus wick play)",
+      "entry_basis": "breakout of previous-day high",
+      "stop": "",
+      "source": "2026-05-05_cu2qxjXIfPc@51:25",
+      "confidence": "stated",
+      "notes": "Bought as the daily-stronger quantum name vs IQ/IONQ; quantum names bought Friday",
+      "fill_timing": "friday"
+    },
+    {
+      "date": "2026-05-05",
+      "ticker": "IONQ",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Classic pullback into anchored VWAP from the swing high of a small base and the 9 EMA; weekly looks stronger than QBTS",
+      "entry_basis": "intraday pullback buy on Friday",
+      "stop": "",
+      "source": "2026-05-05_cu2qxjXIfPc@50:34",
+      "confidence": "stated",
+      "notes": "Caption 'IQ' = interpreted as IONQ (quantum); bought the pullback intraday Friday",
+      "fill_timing": "friday"
+    },
+    {
+      "date": "2026-05-05",
+      "ticker": "CRCL",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Daily gap up above anchored VWAP from the swing high; bought the opening-range breakout / anchored-VWAP intraday pullback",
+      "entry_basis": "opening-range breakout (or anchored-VWAP pullback intraday)",
+      "stop": "",
+      "source": "2026-05-05_cu2qxjXIfPc@53:27",
+      "confidence": "stated",
+      "notes": "Caption 'circle' = Circle (CRCL); earnings in three days; entry day not explicitly stated",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-05-05",
+      "ticker": "AFRM",
+      "direction": "long",
+      "action": "entry",
+      "setup": "One of the strongest software/momentum names, 5% ADR; liked the undercut-and-rally on the 9 EMA Wed/Thu",
+      "entry_basis": "5-minute breakout",
+      "stop": "",
+      "source": "2026-05-05_cu2qxjXIfPc@52:00",
+      "confidence": "stated",
+      "notes": "Caption 'a firm'/'the firm' = interpreted as Affirm (AFRM); 'Wednesday and Thursday entry at 5 minute breakout'",
+      "fill_timing": "thursday"
+    },
+    {
+      "date": "2026-05-05",
+      "ticker": "?",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Not ready yet; earnings in three days",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-05-05_cu2qxjXIfPc@52:15",
+      "confidence": "stated",
+      "notes": "Caption 'No coin' = unidentified ticker; it stopped him out",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-05-05",
+      "ticker": "INTC",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Stopped out on Tuesday; then it ran ~30%; lesson: should have waited for the pullback into the 9 EMA on the semi names",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-05-05_cu2qxjXIfPc@53:42",
+      "confidence": "stated",
+      "notes": "Caption 'Intel' = INTC; stopped out Tuesday (prior week, confirmed in the 04-29 stream), regretted not being more patient",
+      "fill_timing": ""
+    }
+  ],
+  "principles": [
+    {
+      "category": "entries",
+      "text": "Use the index as support for individual breakouts: if the QQQ is finding support and breaking out intraday, single-stock breakouts have a higher success rate.",
+      "timestamp": "40:19"
+    },
+    {
+      "category": "entries",
+      "text": "Anchor VWAP from three places - the height of the whole base, the recent base's swing high, and the recent swing low; an entry where price reclaims multiple anchored-VWAPs at once is a layered, high-confluence support.",
+      "timestamp": "61:02"
+    },
+    {
+      "category": "exits",
+      "text": "Sell more aggressively into strength in the late stage of an uptrend; hold longer and trim less in the early stage (where he believes the market currently is).",
+      "timestamp": "85:23"
+    },
+    {
+      "category": "risk",
+      "text": "Risk management is the holy grail; keeping losses small and controlling drawdown keeps you in the game long enough to learn and improve, whatever your style or instrument.",
+      "timestamp": "106:26"
+    },
+    {
+      "category": "mindset",
+      "text": "Review both your winners and losers - on winners study what you did well (entry/exit/stock pick), on losers whether you entered at the wrong time, exited too early, or mis-set the stop; judge a trade by whether price moved your way after entry and against you after exit.",
+      "timestamp": "109:19"
+    },
+    {
+      "category": "posture",
+      "text": "Build leverage by managing each trade individually and stacking entries over days (3-4 Thursday, 2-3 Friday, 2 Monday) so profit cushions and drawdown control accumulate gradually - not all at once.",
+      "timestamp": "128:26"
+    },
+    {
+      "category": "mindset",
+      "text": "Stop copying other traders' rules once past the beginner stage; filter out what does not fit you (drawdown tolerance, win-rate comfort, stop width) and build your own style.",
+      "timestamp": "113:50"
+    },
+    {
+      "category": "risk",
+      "text": "Respect the market most when it is doing well - a hyperbolic equity curve to new all-time highs is the danger lying beneath the surface (the path to euphoria and blow-up).",
+      "timestamp": "90:42"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "05:43",
+      "caption_text": "cyher is gapping up by around 4%",
+      "context": "Above prior-day/Friday highs after earnings, inside a long base from last November; weekly above 9 EMA; later anchored at swing high and base low",
+      "guess": "CIFR",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "06:30",
+      "caption_text": "this uh digital ocean is jumping into the alltime highs again",
+      "context": "Strong increasing momentum since the early-April pullback into the 50 EMA; 'digital ocean' = DigitalOcean (DOCN)",
+      "guess": "DOCN",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "08:45",
+      "caption_text": "APLD. I really love yesterday's shakeout",
+      "context": "Long base similar to cyher but stronger; in the upper part of the base, already breaking out",
+      "guess": "APLD",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "17:50",
+      "caption_text": "The DN is getting a lot of follow through after the open",
+      "context": "Super strong, potential next market leader, clearing prior highs into all-time highs",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "40:45",
+      "caption_text": "a shi is also bought uh on Thursday",
+      "context": "Bought Thursday, same breakout candle as QQQ/Marvell; later 'a shroud, only 3 billion market cap'; decode too shaky to assert (logged as a '?' trade)",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "42:36",
+      "caption_text": "AOI always on my watch list and a really great liquid stock and a momentum name 12% ADR",
+      "context": "Caption 'AI'/'AOI'; bought Thursday; interpreted as AOI (recurs across streams) but a garbled-caption guess",
+      "guess": "AOI",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "46:48",
+      "caption_text": "naps are I think this is also another really great looking breakout",
+      "context": "Anchored VWAP from swing low plus prior high of a long base; gap up above 60-min 9 EMA; bought Friday",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "50:34",
+      "caption_text": "IQ is actually also a pull back into the end of VW web from the swing high",
+      "context": "Classic pullback into anchored VWAP and 9 EMA; weekly stronger than QBTS; quantum name",
+      "guess": "IONQ",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "51:58",
+      "caption_text": "the firm is one of the strongest probably I think maybe the software names",
+      "context": "5% ADR; undercut-and-rally on the 9 EMA Wed/Thu; '5-minute breakout'; called 'a firm' the typical breakout entry",
+      "guess": "AFRM",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "52:15",
+      "caption_text": "No coin. It just stops me out",
+      "context": "Stopped out, 'not ready yet', earnings in three days",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "54:42",
+      "caption_text": "This Mco is is breaking out. It's having some good follow through",
+      "context": "Breaking out with good follow-through; he missed it",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "55:17",
+      "caption_text": "Fastly is up 15. Yeah, Fastly is the one that uh I think I missed on this breakout",
+      "context": "Faked out earlier in the week, real breakout Friday, missed it; 'Fastly' = FSLY",
+      "guess": "FSLY",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "59:01",
+      "caption_text": "MP. Yeah. Oh, nice pull back into the 9 and nice reaction off the lows",
+      "context": "Nice pullback into 9 EMA; earnings in three days but low gap risk; used as anchored-VWAP example; 'MP' = MP Materials",
+      "guess": "MP",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "72:31",
+      "caption_text": "AGR is also a breakout I think. Although it's also like pull back intraday",
+      "context": "Cited as a breakout that also pulled back intraday",
+      "guess": "?",
+      "confidence": "unsure"
+    }
+  ]
+}

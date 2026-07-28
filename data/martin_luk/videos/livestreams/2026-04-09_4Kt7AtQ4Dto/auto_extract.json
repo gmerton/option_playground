@@ -1,0 +1,117 @@
+{
+  "video_id": "4Kt7AtQ4Dto",
+  "date": "2026-04-09",
+  "title": "Premarket routine | 9 Apr 2026",
+  "observed_trades": [
+    {
+      "date": "2026-04-09",
+      "ticker": "CAR",
+      "direction": "short",
+      "action": "stopped_out",
+      "setup": "Three stops in a row in the first 30 minutes shorting the parabolic Avis (CAR) rip; lowered stop to prior 1-hour bar high after a close below the 9 EMA.",
+      "entry_basis": "Failed push above prior bar high after a huge move",
+      "stop": "Prior 1-hour bar high",
+      "source": "2026-04-09_4Kt7AtQ4Dto@23:04",
+      "confidence": "stated",
+      "notes": "He explicitly says he stopped out three times in the first 30 minutes; later says he is not trading CAR today.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-04-09",
+      "ticker": "UMY",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Tier-2 watchlist small/micro-cap; weekly base never closed below 50 EMA, trying to break out above all weekly EMAs.",
+      "entry_basis": "5-minute candle breakout",
+      "stop": "",
+      "source": "2026-04-09_4Kt7AtQ4Dto@33:56",
+      "confidence": "stated",
+      "notes": "Ticker uncertain (caption 'U M Y' / 'UWM Y'); reduced position size due to low liquidity, wide spread, low price.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-04-09",
+      "ticker": "UMY",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Stopped out, lastly on the 9 EMA and previous high.",
+      "entry_basis": "",
+      "stop": "9 EMA / previous high",
+      "source": "2026-04-09_4Kt7AtQ4Dto@58:14",
+      "confidence": "stated",
+      "notes": "Ticker uncertain (caption 'UWM Y').",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-04-09",
+      "ticker": "COIN",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Crypto long; raised stop to break even, debating whether to raise to break even / be more patient.",
+      "entry_basis": "",
+      "stop": "Break even",
+      "source": "2026-04-09_4Kt7AtQ4Dto@43:45",
+      "confidence": "stated",
+      "notes": "Caption 'coin' = Coinbase. He raised stop on coin to break even.",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-04-09",
+      "ticker": "MSTR",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Treats MSTR as leveraged Bitcoin; bought on crypto strength after finding support at 4-hour 90 MA / hourly 50 MA above previous swing high.",
+      "entry_basis": "Pushed the buy button on crypto support",
+      "stop": "",
+      "source": "2026-04-09_4Kt7AtQ4Dto@107:04",
+      "confidence": "stated",
+      "notes": "He says 'I'm going to push the buy button' then describes treating MSTR as leveraged Bitcoin.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-04-09",
+      "ticker": "FSLY",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Fastly long; faded toward 21 EMA, almost 20% off high of day, broke down.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-04-09_4Kt7AtQ4Dto@121:12",
+      "confidence": "stated",
+      "notes": "'I stopped out from fastly.' Fastly = FSLY.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-04-09",
+      "ticker": "AAOI",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Holding all positions; working on holding winners longer with larger position after a correction; AAOI riding up, he only knows it 'does optics'.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-04-09_4Kt7AtQ4Dto@116:25",
+      "confidence": "inferred",
+      "notes": "Says 'I haven't sold any of my position yet, I'm still holding all positions'; AAOI ('AOI'/'auto') is one of those held names.",
+      "fill_timing": ""
+    }
+  ],
+  "principles": [
+    { "category": "entries", "text": "When mediocre-watchlist names upgrade to the leading watchlist, market breadth is improving and you should tilt focus to the long side.", "timestamp": "19:57" },
+    { "category": "exits", "text": "On a strong position trade, follow the 9 EMA on the weekly chart to avoid getting shaken out of huge runners.", "timestamp": "13:39" },
+    { "category": "risk", "text": "Reduce position size for less-liquid, lower-priced, wide-spread small/micro-cap names.", "timestamp": "34:48" },
+    { "category": "posture", "text": "Just after a correction is the best time for position trading because the odds of a prolonged uptrend are higher; aim to hold winners longer with larger size.", "timestamp": "117:58" },
+    { "category": "mindset", "text": "Trade ~90% on technicals and ~10% on themes/industry; you don't need to read financials, you just need to know what the stock keeps doing.", "timestamp": "120:03" },
+    { "category": "entries", "text": "Once a leading runner is ~10% extended above the 9 EMA it is too fast to chase; the last leg up in stage two is the fastest and craziest.", "timestamp": "114:23" }
+  ],
+  "ambiguous_tickers": [
+    { "timestamp": "33:56", "caption_text": "U M Y is this smaller position", "context": "Tier-2 watchlist small/micro-cap with a weekly base never closing below the 50 EMA; he buys a 5-minute breakout and later gets stopped out.", "guess": "UMY", "confidence": "unsure" },
+    { "timestamp": "58:14", "caption_text": "Got stopped out from UWM Y", "context": "Same small-cap position as 'U M Y' above; stopped out on the 9 EMA / previous high.", "guess": "UMY", "confidence": "unsure" },
+    { "timestamp": "11:31", "caption_text": "Neo is the one of the huge runners in 2020", "context": "References a stock up 3,000% in 8 months in 2020 then down 94% after topping early 2021 (Christian's example).", "guess": "NIO", "confidence": "likely" },
+    { "timestamp": "24:46", "caption_text": "U M Y and VDS", "context": "Two tier-2 watchlist names whose weekly bases he likes.", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "112:19", "caption_text": "SNTK keeps ripping higher", "context": "A name ripping ~10% above the 9 EMA in the fastest leg of stage two.", "guess": "SNDK", "confidence": "likely" },
+    { "timestamp": "17:00", "caption_text": "TS is also building a really decent base", "context": "Listed among leading-watchlist semis/tech names (ARM, Intel, Nokia, AMD).", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "20:08", "caption_text": "Cypher also turning up", "context": "A name that gapped up 16% and is now above all the EMAs.", "guess": "CIFR", "confidence": "unsure" },
+    { "timestamp": "62:25", "caption_text": "Fastly maybe we can wait for a 15-minute breakout", "context": "Repeatedly discussed liquid leader that loves finding support at the 9 EMA; he is long and stopped out.", "guess": "FSLY", "confidence": "likely" },
+    { "timestamp": "20:53", "caption_text": "BE is going straight up today", "context": "A name going straight up after breaking out, with a weekly undercut-and-reclaim pin bar at the 21 EMA.", "guess": "BE", "confidence": "unsure" }
+  ]
+}

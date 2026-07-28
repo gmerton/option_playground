@@ -1,0 +1,19 @@
+{
+  "video_id": "6jYbU2k6gBc",
+  "url": "https://www.youtube.com/watch?v=6jYbU2k6gBc",
+  "title": "Sit-out power (involuntary) | 15 Apr 2026",
+  "channel": "martinlukkt",
+  "channel_id": "UCB6jWJJvO_sWZ2PwgmMcxCw",
+  "stream_date": "2026-04-15",
+  "duration": "1:54:37",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

@@ -1,0 +1,19 @@
+{
+  "video_id": "i8NgzZgc5L4",
+  "url": "https://www.youtube.com/watch?v=i8NgzZgc5L4",
+  "title": "How to Trade the SpaceX IPO (And Every Big IPO After It)",
+  "channel": "TheOneLanceB",
+  "channel_id": "UCzksXiC-Ju-DTIZmMiaOVfQ",
+  "stream_date": "2026-06-09",
+  "duration": "13:54",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

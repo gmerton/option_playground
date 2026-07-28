@@ -1,0 +1,19 @@
+{
+  "video_id": "UM_Q5xiYGNw",
+  "url": "https://www.youtube.com/watch?v=UM_Q5xiYGNw",
+  "title": "This VIX Trade Breaks Even Most of the Time \u2014 And Wins Big in Crashes",
+  "channel": "Theta Profits",
+  "channel_id": "UCzGARfberQ8nRRbsjK90BHg",
+  "stream_date": "2026-02-08",
+  "duration": "41:40",
+  "summary": "AJ Brown (Trading Trainer) pitches a defined-risk long-VIX portfolio hedge: a 'double vertical spread' (a $1-wide call debit spread below spot VIX financed by a bull-put credit spread above), entered at VIX lows on a MACD 6-19-3 signal, that breaks even most of the time and pays off on a fear spike. The crash payoff is capped at the $1 widths and the advertised 5-20x multiples are on a near-zero cost basis, while a VIX collapse can lose the full ~20% allocation. Write-up: strategies/vix_crash_hedge.md (conviction 2/5).",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

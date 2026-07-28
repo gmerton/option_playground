@@ -1,0 +1,159 @@
+[00:00] The best swing trade of my career made me over $10 million in P&L, and the majority of my swing trading is just two strategies. The same two strategies that helped me make over $100 million on Wall
+
+[00:10] Street. For most of my career, I was an active intraday trader, but the intensity of it destroyed my health and forced me to slow down. Now, I mainly swing trade because it lets me take the
+
+[00:20] best opportunities while actually having a life and time to teach aspiring traders like you. So, here's exactly what swing trading is and the strategies I use to land some of my biggest trades.
+
+[00:30] I'm not retired, just more relaxed. So, first, what exactly is swing trading? Swing trading simply means holding positions longer than one trading session. That can mean a few days, a few
+
+[00:40] weeks, or sometimes even a few months depending on the setup. Instead of trying to capture every little intraday wiggle, you're trying to capture a larger directional move on a higher time
+
+[00:49] frame chart. Generally speaking, most swing traders are making decisions primarily off the daily chart rather than the 2-minute or 5-minute intraday chart. Right away, one of the biggest
+
+[01:00] benefits of swing trading becomes obvious. You do not need to be glued to the screen all day long. As a day trader, and especially as a scalper, you can't get distracted for a second. Every
+
+[01:10] candle matters, every headline matters, and your nervous system is just permanently cranked to a 10. I was tired of that. For the majority of my career, I was absolutely glued to my screens,
+
+[01:20] constantly trading in and out positions, scalping, or waiting for that next big headline. If you're interested in scalping or just want to see how I did it, check out one of my latest videos
+
+[01:28] about the top three scalping strategies I used throughout my career. The link's in the description. Swing trading allows for a much healthier pace. You can spend more time game planning, you can think
+
+[01:38] more strategically, and you can build your watch lists, identify your levels, define your risk, and then simply let the trade work. Instead of making 50 decisions per hour, maybe only need to
+
+[01:48] make one or two important decisions per day. Another huge benefit of swing trading is scalability. One of the limitations of aggressive intraday trading is liquidity and execution. A
+
+[01:58] lot of strategies become liquidity constrained over time where your expected value decreases as you size up due to slippage. Swing trading solves a lot of that because you're trying to
+
+[02:07] capture much larger moves over longer periods of time. The pennies of your entry and exit mean less when you're trying to make dollars on the move. In many ways, swing trading has almost
+
+[02:17] infinite scalability compared to hyper short-term trading. The emotional side is different, too. Intraday trading requires rapid-fire decision-making. There's almost no time to think. You're
+
+[02:27] reacting in real time while your heart tries to keep up. Swing trading allows for more deliberate thinking. Your entries are planned, your exits are planned, and even your risk is all
+
+[02:36] pre-planned. The process becomes calmer and more systematic. Now, with that said, swing trading sounds like a no-brainer versus intraday trading, but it absolutely comes with downsides, too.
+
+[02:46] And honestly, some of these downsides are very significant. In my opinion, there is generally less absolute edge in swing trading compared to intraday trading. Intraday trading still has more
+
+[02:56] inefficiencies because emotions, liquidity imbalances, and panic happen so quickly. There are moments in intraday trading where price just totally disconnects from reality for
+
+[03:05] brief periods of time or moments when you can get incredible asymmetric reward for a given level of risk. That creates big opportunities if you know what you're doing. Swing trading, at the
+
+[03:15] expense of scalability, is often more efficient. As a result, your edge can feel thinner and variance can feel much higher depending on the strategy. You also have overnight risk. As a day
+
+[03:25] trader, if something catastrophic happens after the close, you're generally flat. You sleep peacefully well at night, relatively peacefully at least. And as a swing trader, you can
+
+[03:34] wake up and your stock is down 20% because the CEO got arrested, earnings missed, China invaded somebody, or because of some absolutely crazy tweet from the leader of the free world. That
+
+[03:45] overnight risk is real. You have increased headline exposure, increased gap risk, and increased uncertainty. And oddly enough, despite swing trading being less intense intraday, I actually
+
+[03:55] find it harder sometimes to mentally unplug. Because when you have overnight exposure, you're carrying positions in your head constantly. You're checking quotes around the clock and living in
+
+[04:04] fear that something bad happens to your position. Is Jerome Powell about to casually erase three weeks of gains with one sentence because someone burnt his toast that morning? Just kidding,
+
+[04:13] Jerome. All the true finance homies know that you're a real one and we'll miss your FOMC meetings. Thank you very much, everyone. I won't see you next time.
+
+[04:25] So, it's a trade-off. You reduce some stress while introducing different stress. Based on that, who is swing trading right for? I'd say there's three main categories. The first category
+
+[04:34] that's often a perfect fit for swing trading is the part-time trader. Maybe you have a demanding career, kids, or simply can't stare at screens all day trying to scalp intraday moves. Swing
+
+[04:44] trading lets you participate in markets using higher time frame decisions based on trends, structure, and broader context instead of reacting to every tiny fluctuation. For many traders, that
+
+[04:53] slower pace is actually an advantage because it reduces emotional overtrading and impulsive mistakes. The second category of trader is a trader who's burnt out from day trading and wants a
+
+[05:03] better quality of life, like me initially. Constantly reacting to every candle and checking quotes 24/7 wears on your nervous system over time. Swing trading creates more breathing room. You
+
+[05:13] can step away from the screen, think more clearly, sleep better, and avoid living in the constant fight or flight mode. Ironically, many traders perform better once they stop micromanaging
+
+[05:23] every tick. The third category is the trader looking for greater scalability. Very short-term trading becomes harder to scale as liquidity, slippage, and execution speed start mattering more
+
+[05:33] with size. Swing trading generally scales far better because you're targeting larger moves over longer periods of time. You're less dependent on perfect entries and exits and can
+
+[05:42] participate in major trends, breakouts, and macro moves without fighting over every intraday fluctuation. Because of that scalability, that's what enabled me to have one of my best trading years
+
+[05:52] ever in 2024. Now, let's get into strategy because this is where I think a lot of traders overcomplicate things unnecessarily. Markets are like fractals. What I mean by this is that
+
+[06:01] the same concepts tend to apply regardless of time frame. Meaning, the same exact intraday patterns I looked for during my career at Trillium as an intraday trader also exist as daily
+
+[06:11] patterns. That's one of the reasons that transitioning into swing trading was easier for me than most people would assume. I didn't reinvent the wheel. I simply adapted the same core principles
+
+[06:21] and strategies I already understood extremely well and applied them on higher time frames. Most importantly, I'm still overwhelmingly focused on in-play stocks. That part never changes.
+
+[06:31] If you don't know what an in-play stock is, make sure to check out this video because the foundation of all my trading is that I want the stocks attracting volume, attention, and price discovery
+
+[06:41] because that's where opportunity is. The difference is now I'm generally looking at daily chart setups instead of primarily intraday setups. One of the biggest mistakes I made early when
+
+[06:50] transitioning into swing trading is that my entries and exits were still too intraday focused. I was too myopic. I'd enter a daily chart setup, but then use some tiny intraday stop that made
+
+[07:01] absolutely no sense relative to the higher time frame structure. For example, let's say a stock has a beautiful weekly breakout setup with a logical stop 8% lower based on the daily
+
+[07:11] chart. Old Intraday Lance would enter the trade and then stop himself out because the stock dipped a percent and a half intraday and the two-minute candles looked ugly. That completely violated my
+
+[07:21] system because I wasn't giving it the proper daily stop. If you're trading based on the daily chart, your risk management needs to align with the daily chart. Your entries, exits, sizing, and
+
+[07:31] expectations all need to match the time frame you're actually trading. And honestly, sizing was probably the biggest issue for me when I transitioned to this time frame. As an intraday
+
+[07:41] trader, I was accustomed to very tight stops. Sometimes my stop might only be $0.50 or $1 away, but swing trading naturally requires wider stops because higher timeframe structure is wider. My
+
+[07:53] problem was I initially kept sizing way too aggressively relative to those wider stops. So, instead of adapting my size downward appropriately, I would stay oversized and because I was oversized, I
+
+[08:05] emotionally couldn't tolerate normal fluctuations within the setup. That would then force me to use improper stops, micromanage my trades, and basically sabotage my own trading
+
+[08:14] system. This is something I see newer swing traders do constantly. If your stop is three times wider, your size probably needs to be three times smaller. Pretty simple concept
+
+[08:24] intellectually. Emotionally though, traders hate doing this because smaller size feels less exciting. Unfortunately, tuition is usually expensive in this business. So, if this video helps save
+
+[08:34] you tuition, make sure you hit that subscribe button. Now, as for the actual swing trading strategies I use, they broadly fall into two categories. The first is mean reversion. Mean reversion
+
+[08:44] is when a stock becomes so overextended, either to the upside or downside, that you're betting on a reversal back toward equilibrium. This has been one of my biggest edges my entire career. It's the
+
+[08:54] same core philosophy behind my best trade ever during the Nikkei panic in August 2024. What makes these setups powerful is emotional exhaustion. At extremes, market participants stop
+
+[09:04] behaving rationally. Fear and greed accelerate price too far in one direction. Sellers panic, buyers capitulate, positioning becomes one-sided, and eventually you reach a
+
+[09:14] point where there's simply aren't enough marginal sellers left. Those moments can create incredible swing long opportunities. Now, timing is everything here. A stock becoming oversold does not
+
+[09:24] automatically mean buy. Shout out to the AMC bagholders though. I'm usually looking for capitulatory characteristics. Massive volume after a sharp extended move that is accelerated
+
+[09:33] at an unsustainable rate of change. These are all signs that the panic is exhausting itself. One thing I learned from years of intraday trading is that reversals usually happen when the
+
+[09:42] emotional intensity reaches maximum levels. The daily chart simply gives you a larger lens to identify those same emotional extremes. My best trade ever in the Nikkei back in August 2024 was
+
+[09:53] the epitome of all these things and it's how I made $10 million in one trade. For a more detailed analysis of that opportunity, be sure to check out this video. What I'm looking to do in these
+
+[10:03] situations is identify when the trend has exhausted itself. Then I buy what I call the right side of the V when the trend breaks. And from there I'm often trailing based on an initial stop at
+
+[10:12] lows, then a trailing stop of prior daily bar lows. It's a simple system, but when applied to the right situations, it can be incredibly effective. The second major category for
+
+[10:22] me is continuation plays. This style was heavily popularized by traders like Christian Kaelin Maggie and many others who focus on momentum and trend continuation. Instead of betting against
+
+[10:32] an extended move, you're betting that a powerful trend continues higher. Specifically for me, I'm usually looking for major multi-month breakouts, ideally with a catalyst attached. I want a stock
+
+[10:42] that institutions suddenly care about. Maybe it's earnings, maybe it's AI exposure, but most of all I want a chart of an in-play stock that is part of a hot theme and that chart is screaming to
+
+[10:52] me that it's ready to move. Last year, there were some incredible swing opportunities in names like IonQ and many AI related stocks. This year, semiconductors provided huge
+
+[11:01] continuation setups at various points. When institutions need exposure to a theme, they don't buy for 20 minutes. They buy for weeks and sometimes months. That institutional demand can create
+
+[11:11] sustained trends that become incredible swing opportunities. For these opportunities, I'm usually buying the breakout level using stock or short-term call options and then using an initial
+
+[11:22] stop as a break below that resistance level. Or if I want to be looser, I use the lows of the day. Then, as a trailing stop, I'm either using prior daily bar lows or a looser moving average like the
+
+[11:32] 20 period moving average on the daily chart. One thing I love about continuation plays is that they align with how large money actually moves markets. And you're with the trend
+
+[11:41] capturing it. Trust me, despite being known for capitulation trading, trading with the trend is often far less stressful and often more asymmetric. Now, of course, continuation trading has
+
+[11:51] its own challenges, too. The hardest part psychologically is buying stocks that already feel too high. Christian Kwall Maghi always jokingly talks about how he is looking for the garbage stocks
+
+[12:01] making the biggest moves higher so that when they set up, he can get long and bet that they keep going. The reality of markets is often the strongest stocks continue getting stronger while the
+
+[12:11] steadily weak stocks continue getting weaker. For more on Christian's breakout strategies, check out this video I did on him and how he uses moving averages. One final point I want to emphasize is
+
+[12:20] that swing trading still requires process and structure. A lot of people hear swing trading and assume it means casually throwing darts at charts while checking positions from the beach with
+
+[12:28] the mojito in hand. That fantasy? Yeah, it usually doesn't end well. For me, swing trading has been a way to recapture my life back. I already did the years of sitting glued to screens 12
+
+[12:38] hours a day. I already traded my health for wealth. I already lived with my nervous system permanently in fight or flight mode. Now, I care more about sustainability. I care more about
+
+[12:47] freedom and I care more about building a life where trading serves me instead of completely consuming me. I don't think one is better than the other. It's just about finding what time frame is right
+
+[12:56] for you. And regardless of what that style is, I'll be here to help you find success at it. Thanks for watching, hit that subscribe button, and I'll see you in the next one.

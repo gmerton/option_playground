@@ -1,0 +1,321 @@
+[00:00] Triple calendar is like bread and butter strategy for me. It will work either market will go up, down, or sideways. Now I'm in a situation like I'm able to make roughly 100% like double my money
+
+[00:12] every year. Today's guest made solid profits last year with his favorite options strategy, the triple calendar. Can he keep doing that? Let's dig into
+
+[00:23] it. Here is Vipal. Hey, hi John. So, the triple calendar which we will be talking today is like bread and butter strategy for me. So, tell us in 40 seconds what it is and
+
+[00:36] how it has worked for you. So, I started calendar before calendar actually. When I got started with options back in 2019, I was looking for a strategy which I
+
+[00:47] saved because I'm very bad at predicting where market will go. And this strategy was something where it will work all the three ways. Either market
+
+[00:55] will go up, down, or sideways. And it works on in all the three scenarios. So, this is the best strategy. Then I started paper trading and everything. And then now I'm in a situation like I'm
+
+[01:05] able to make roughly 100% like double my money every year. So, I have like this is the my bread and butter strategy.
+
+[01:13] Very interesting and I look forward to digging into this. But tell us first a little bit about yourself, especially as an options trader. I started this option trading in 2019.
+
+[01:26] And I started first was my like just I spent like $10 or $20 one option very out of the money call I bought for Visa, I think so. And I made some double my money. So, I was so happy over this
+
+[01:38] is very good. Then after a few trades, COVID came and I started making losses also because I was not correct directionally. I was very off.
+
+[01:47] If while I was thinking market will go up, it will go down. When I'm thinking it will go down, it will go up. So, I was looking for some better strategy. Then I started doing
+
+[01:56] debit spreads like vertical like that called debit spread and all, but there also direction was the one thing which was killing me. Then I started working on the calendars.
+
+[02:06] So, this strategy was something which I felt was you know, safe I will say. In the option world it is very hard to
+
+[02:15] find a safe strategy and in calendars what you are doing is you can put a good amount of money. My main goal is I can invest a good amount of money which will give me I'm not looking for
+
+[02:28] like in one trade I make 100% or 50% like that. I'm happy with my 10% profit. If I'm making consistently 10 10% profit and win ratio is above 80% I'm very
+
+[02:39] happy with that. And calendar is one strategy which works in this way. Now I then I started doing lot of research on these calendars which uh
+
+[02:49] thing to pick like could I do it on stocks? Could I do it on index? Like that. So, it went like that. Where are you located? Uh so, initially when I started I was in
+
+[03:02] US then I moved back to India. And and where in India? Uh NCR. Delhi. All right.
+
+[03:12] So, let's start with the basics. What are you trying to achieve with this triple calendar strategy? So, triple calendar as you know has three calendars. A calendar is mainly
+
+[03:26] delta neutral. Uh either market will go up or down you are not like if it is stay within this range it is very good, but even if it goes up or down since I have three
+
+[03:36] calendars one is on the upper side and one is on the lower side. Those calendar will help you to give you profit. So, if you have three calendars or either two calendars like double calendar if you go
+
+[03:46] with that strategy or as well this will help you to get profit. Let's before we go on let's just define what do we mean by a calendar trade? A calendar is when you are sending
+
+[03:58] a let's say pick one any strike price, maybe at the money you can pick and then you will be buying the same strike price of a later date. So in my case I go one
+
+[04:09] week far. So I'm sending let's say next week Friday all and I will buy next to next Friday all. So this will create a calendar. All right, we will we will get into the
+
+[04:20] details of how you trade it, but let's maybe first put up an example trade so everyone understands how these trades that you do look and then we'll go get into the
+
+[04:31] details of how you enter them and exit and manage and so on, but here is a triple calendar. Tell us what we see here and how this trade is put together.
+
+[04:44] Okay, so I'm giving this example right now like you can go yesterday closed around 6 37 or something with there. So this is one example trade which let's say I if I
+
+[04:55] have to enter today, how I will enter. So one will be at the money. So 638 I will go little, you know, I always go in the multiple of so of five. So either 635 or 640. I won't put 638 because
+
+[05:08] volume volume is less. So 635 will be my middle calendar, okay? Now I will put one calendar at the like upper side and one calendar the lower side. Now how will I choose like how far so then I
+
+[05:20] will see how much is that strike price and then I will decide what is the total like three calendars will look like. And here you are seeing like how I got these we will discuss later, but this is the
+
+[05:32] lower calendar 601, 635 is the at the money and the 665 is the upper calendar. And this is how the payout graph will look like at the expiration. So if you can see these three tents like of
+
+[05:44] structure will be there and if Q Q is within these tents, you will make profit given that volatility is like within some range. Let's drag this scale back to today and
+
+[05:59] see how this trade develops over over the time. Okay, so let's say this is today, okay? Now, we will go slowly how it will look like. So, today we are here, okay? Now,
+
+[06:13] let's say day by day you will see the this tent is going up. So, you'll start seeing profit, okay? Yeah. Now, our debit was 426 here. So, my goal always remains I don't want to go till
+
+[06:27] the top of this. I will just look for $42 and I will exit the trade. And you can see here it is $44. If we are here almost here, but let's say if we are not here, we are somewhere here, let's say
+
+[06:39] QQQ has went down or maybe has went up, then we won't see $44. Then I will wait some for more some more time. So, like here, here, here, it will go like this, this, this, this, this, this.
+
+[06:50] Now, assume QQQ is moving around let's say 620 to 660. It is a very wide range. Now, if you look for $40, you see it is $42. I was looking for $42. It is still here. It is 618.
+
+[07:04] Or even if it goes till let's say 660, we are still seeing $42. So, you can see it is a very wide range and my profit target of 10% is met. Mhm.
+
+[07:16] [clears throat] So, this is the beauty about it. So, if you are aiming for 10%, you will be able to get like my win ratio is almost like 80%. So, 80% of the time I'm able
+
+[07:26] to meet this 10% profit. Let me interrupt with a quick tip. If you like trading earnings, earnings trades are some of the most exciting opportunities in the market, but they
+
+[07:37] can also be tricky to do right. Big moves, changing volatility, It is not always obvious what makes sense. There is a great tool to help you with
+
+[07:49] that. Earnings Watcher. It gives you data on upcoming earnings like expected moves, historical reactions, and volatility patterns.
+
+[08:00] And you get tips about the best earnings trades to consider right now. So, if you like earnings trades, this tool will give you the data you need to find and evaluate great trades.
+
+[08:12] I have a negotiated a special discount for the Setup Profits community. 33% off the annual plan or 50% off your first month. You find the discount link below or in
+
+[08:26] the description. All right. Back to the interview. So, we will get into the details of how you how you enter this trade and how you
+
+[08:36] choose your strikes. And let's start with your entry mechanics. And first, what are the underlines you're using with this strategy? Uh I usually do index. One option is to
+
+[08:48] try stocks near earnings. But, if you want to play safe, any index, take it SPX, SPY, QQQ, whichever index which has good good volume, you can try
+
+[08:59] on that. I have tried this strategy on SPY and QQQ myself. Which is your favorite underlying? Uh I don't know why QQQ I'm always aligned to
+
+[09:10] for some reason. You have chosen QQQ. What is your rules for expiration? How far out do you go and what days of the week do you enter these trades?
+
+[09:22] So, I go that like the selling leg will be 21 day to expiry. So, 21 DTE will be my selling leg and 28 day, which is 1 week after that selling leg, will be my buying leg.
+
+[09:33] So, 3 and 4 weeks ahead. Correct. And Friday expiries I choose. Okay, so that means that you're also entering these trades on the Friday. Uh so, what I will do is if let's say
+
+[09:44] I'm entering on Wednesday, so instead of 21 it will be 23. So, I'll just look for 21 plus few days like that you can say. Are there other conditions you are you have for entering a trade or you just
+
+[09:57] enter these every week? There are few conditions which I will check. Let's say any event is happening. By event, let's say CPI numbers are coming,
+
+[10:06] FOMC meeting is there. I won't be selling the calendar. The sell leg should not be after that event. Let's say the FOMC meeting is on Tuesday and Wednesday, I won't be selling uh the
+
+[10:19] sell leg of that Friday. So, either I will go 1 week before, which will be uh the buy leg will be that Friday and before the the event, I will be selling leg will be
+
+[10:30] before that. So, this is one important thing I always make sure. What about the volatility? Do you have any rules for VIX levels or volatility?
+
+[10:40] Uh it works most of the time if VIX is very low like 12 or like below 12 13 like that, then I reduce my sizes because then most of the time it is like not much, you know? You won't get
+
+[10:54] losses, but it will not be much like 10% will go down to 5% or like that. Then I will maybe skip few days if it is very low volatility. But as a main rule, you enter these
+
+[11:04] every week. Yes, whenever I exit, I enter the maybe same day or within few days I will enter the next trade. Tell us how do you choose the strikes?
+
+[11:15] You told us that the one is at the money, but what about the two others? How far Do you have any rules for how far out you go with the two other strikes?
+
+[11:26] So, for choosing, first I will calculate what is the main 21 DTE for expirations. So, let's say for let's say I'm entering today it will be 8th of May. Then
+
+[11:37] let's go to option start. So on 8th of May expiry uh QQQ right now in like yesterday close around 638 and since I go always you know multiples of five. So what is the
+
+[11:49] 635 put and 635 call debit add them together that will give you the straddle price. So basically the straddle price is how much you are expecting the underlying which is QQQ can move by 8th
+
+[12:02] of May. So here you can see it is telling me two 25.8 points it can move. So either QQQ can move 25 points up or down. This is the estimated which we are
+
+[12:15] getting. So now how I will put my upper and lower calendar is either I can place like 25 points up and down or I can add some margin. Usually I add five points extra. So let's say here I'm getting 25
+
+[12:28] as my expected move. So I will make it 30. So my upper calendar will go 635 plus 30. So like that I will do. So let's I will put 665
+
+[12:40] like here and then I will sell a call and make it 665 like this and now same way I will put uh lower side 635 minus 30 605 and then
+
+[12:57] sell the put and 605 like this. I have to change the expiry of few of them. So now I'm changing this the expiry. Okay. So now this is how it will look like. Now
+
+[13:17] one thing is 605 and if you will see there's a resistance also around six there's a support of QQQ at 600. So sometimes I move do move the lower or upper calendar as well. So, I feel like
+
+[13:30] 600 will be a better point. So, moving five points up and down is fine. And already last few days we have moved up a lot and I feel like it will not go above 665, then I will move this five points
+
+[13:42] up down. This is sometimes I take these changes in the what am I rules are, but if you feel like those are fine, then you can keep it that way. Five points up and down if you are doing it, that is
+
+[13:53] fine. Only later on these helps. So, if you're doing some technical analysis, it will help better. Uh your starting point is that the two outer strikes are at the estimated
+
+[14:04] moves. Correct. And then five points sometimes I move up and down. And is this a curve you are happy with right now? I see it has kind of a red
+
+[14:13] dip on the left and on the and not on the right. Yeah? Oh, I have seen very bad curves also. See, calendar is something where you can't predict right now. It will come in
+
+[14:27] from experience. One thing is that. So, if you are seeing like like like this also, if it is going till 300, then don't worry about that.
+
+[14:35] This is fine. Mhm. And now your max risk here is what you have paid for the three calendars. It's a debit spread, so right now it is
+
+[14:43] paying 434 for this one lot. So, we have a covered how you enter these trades. Every Friday you sell three weeks out and you buy the same strike
+
+[14:57] four weeks out and you use the estimated move as the starting point for selecting the outer strikes. Let's move out of option strat and go get into exit mechanics. What are
+
+[15:13] your rules for taking profit, but also when you will take a loss? Let's talk about profit booking. So, whenever I see 10% profit of my debit, whatever I paid, I'll exit the trade
+
+[15:26] then. Whether it is first day or 5 days, I'll exit. 10% is my target. Now, taking the loss. So, if it is 3 weeks far, so when 1 week is left, I'll just cut my trade. Whichever how much profit, how
+
+[15:42] much loss it is there, I will cut my trade. So, I will not go in the last week of the expiry of the sell leg. Okay, so make sure I understand this. You
+
+[15:53] You sell on the Friday. After two You take the profit whenever it reaches 10% of what you have paid for the calendars. And you do not have a stop loss as such,
+
+[16:04] but after 2 weeks, you cut the trade if it has not hit the profit level. Whatever is the loss or profit. Yes. Basically, 7 DT. When you are left with 7 days to expiry for the sell leg.
+
+[16:17] For the profit, how many days does it typically take before you reach the take profit level? So, I have taken profit within 2 days till 10 days. This is the rough range.
+
+[16:30] Sometimes it goes till the profit, like if I'm booking profit, sometimes even the like my hard exit date, I will book some 5% or like that. But use most of the time it comes within 2 to 10 days.
+
+[16:42] And what the losses? How How many percent of your trades ends with a loss after the when you have 1 week left? And what have been the biggest losses? If I will go with my own stats, uh like
+
+[16:55] when I say 80% is almost my win ratio, so 20% of the time sometimes trade do give me losses. And the losses numbers range sometimes below 10%, but I have even seen like 30% losses as well.
+
+[17:08] 30% have been the biggest. Yes, 30 35 I've seen once. In 2022. How did you decide on these rules for taking profit and when to close the
+
+[17:20] trades? Research. I did a lot of research and lot of paper trading, lot of like I was doing these calendars since 2019. So I have modified
+
+[17:32] my strategy a lot. So if you watch my channel, like lot of videos are there. I have like you know, changed my strategy on the go and how I'm you know, adjusting, fine-tuning my strategy. So
+
+[17:44] yeah, first previously I used to do like instead of 21 DTE, I used to do 14 DTE. Then I felt like the days in the trade is less, so I increased to 21 DTE. So lot of research and lot of uh
+
+[17:58] hands-on experience is there. And how long have you have you been trading this way with these expiries, etc. consistently? Uh since 2025 I'm using this strategy
+
+[18:09] where I'm using 21 DTE triple calendar. Let's talk about management. Do you ever manage the trades beyond the rules that you have laid out for us? Sometimes when the underlying do move
+
+[18:23] out of my upper or lower calendar, then I have to do some adjustment as well. If it is let's say going up, like in this recent scenario you can see QQQ Q is going up a lot. So then I have to do
+
+[18:35] again put one another trade whichever direction it is going. Let's say in this case it is breaching my upper calendar, then I will place one more calendar same expiry strike price will be little ahead
+
+[18:45] of the previous one. So it will be four calendars then. Yeah, will you even add more than one calendar or is it one your limit? Uh usually it within four, like I start
+
+[18:58] with three calendars and adding one is more usually more than enough, but uh in situations like 2022 October if you see, we saw a big
+
+[19:09] drop that time. I had to add the fifth calendar as well. So, sometimes really it happens that fifth calendar is also needed, but most of the time if I have to do the adjustment, fourth calendar is
+
+[19:19] more than enough. In those cases, you do not close the previous the lower calendar the calendar prices. closing the previous calendars doesn't
+
+[19:28] help much because they are like peanuts by that time. So, it doesn't make much difference. If you want, you can keep it, but I just keep
+
+[19:36] it till then. We will bring options back in leap hole because I want to ask what I think many people will ask, and that is that calendars, as we know, they are positive
+
+[19:48] they are positive Vega. So, you know, they benefit if volatility goes up, but you know, they may hurt if the volatility goes down, which you know, sometimes happen actually in this market
+
+[20:00] right now is happening. So, how how do you deal with that? Maybe we can look at look at how this trade develops because in options time we can
+
+[20:10] also take the implied volatility slider up and up and down, and maybe you can show with the dragging the implied volatility up a bit.
+
+[20:20] Yeah, if it is going up, then it is very good. Within a day or two, you will get a very good profit. Let's say it is going down.
+
+[20:29] Let's say we will decrease it to say 20%. Okay? Now, you can see the curve is coming up, but it went I it like for few days it was down, then it started to go up. When volatility is
+
+[20:46] in going down and the QQQ is going up, you can see because of VIX the volatility going down, like let me go take it back.
+
+[20:57] So, you can see here like say here only, VIX has gone down, QQQ has went up, and you are making $13 profit here. If I will take little bit up more like few more days, few more days like this here.
+
+[21:09] Okay, so my target is 434, right? So, it is coming in this area. So, basically QQQ is going up or moving around same way. That's why VIX is falling, right? That is the main reason
+
+[21:21] that VIX is falling. And so, QQQ is in this area and now you see there's a profit tent here. It is happening here. So, you'll see some profit. Maybe it might be possible that
+
+[21:31] 10% fall in this target will not meet or sometimes it will meet. But you are still seeing a positive, you know, a profit in this case also where VIX went down and you are still seeing a profit.
+
+[21:45] So, it do happens that when VIX is falling, the uh wallet because of positive Vega trade, the profits are going down. But since
+
+[21:55] that upper calendar, the the call calendar which you have, this will give you good amount of profit in the this area. If it goes down, now when someone can
+
+[22:04] ask if it goes down, then you are seeing a pro loss. But if you are seeing a loss because if it let's say QQQ falls here till here, then VIX go will go up. Let's see here. So, then then you will see
+
+[22:15] anyway profit here. So, if it is going down, then you will see positive like VIX is going up and then you will see profit. And if it is VIX is falling, but you
+
+[22:25] will see at the positive side, QQQ has went up or stayed here. Then also you are seeing a some profit. So, that is the trick which I will see will say that that works here.
+
+[22:35] But essentially, you have to wait longer for the profit when the volatility falls. Yes. Yes, sometimes it does happen like when VIX is falling and QQQ is not doing
+
+[22:45] much. Let's say it is playing there or it is going up and down here and in there, then the number of days you are spending in the trade might increase. Will you in Will you in those situations
+
+[22:57] sometimes close for lower profit target than your 10%? No, I usually keep my goal as 10% or 7 days left to expire of
+
+[23:08] the sell leg, I'll exit. Because most of the time it will happen in few more days, you'll get profit, and I don't want to, you know, keep put a lot of effort. I, as I told in the start
+
+[23:19] beginning, that I want to, you know, peaceful trade, so it I don't try to kill it again and again. Sometimes it is not giving profit, and suddenly in mid two three days you could
+
+[23:29] go anywhere either up or down or do something, and you'll see the trade profit. So, I prefer to keep it low. Low, you know, work. Let's talk about risk. What is the worst
+
+[23:42] that can happen with this way of trading and this strategy? VIX falling is the one which you usually see happening. And if you are taking caution about the, like, events, that is
+
+[23:54] the one thing. And if you are selling a leg after any FOMC or ICP numbers and all, that time, yes. So, you have to always make sure that you take care of these
+
+[24:04] events. Never sell a means option after an event date. That is one thing if you're making sure, and best scenario will be if you are can keep the event between the legs. So,
+
+[24:14] buying leg after the event and sell leg before the event. That is the best. I always ask my guest to rate their strategy on a risk profile scale, where one is very low risk, and
+
+[24:27] 10 is a very high risk. And you can define those numbers as you see fit. Where would you put this strategy? Uh I will keep this as number two or three.
+
+[24:39] That's very low. Yeah, so the reason is let's say, as a person myself, whenever I deploy any other strategy, I will not go this big, but in
+
+[24:51] calendars, I will peacefully sit with a big amount in calendar and peacefully sit. The same person, if it will he will be doing some other strategy, he will
+
+[25:00] either reduce his size or he won't be able to get good night sleep. But with calendars, you will have a big amount in calendars and still have a,
+
+[25:10] you know, nice sleep. So, it is very peaceful because the thing is you can't expect 100% loss or big losses because
+
+[25:20] how a loss of 100% will happen? Basically, the farther leg which you're selling buying and the closer leg there the the difference between the premium is zero, then only the cost of that
+
+[25:32] calendar will become zero and it is not possible. So, that's why it is very, you know, safe strategy and the moment wise also you have a lower calendar and upper
+
+[25:40] calendar. So, even scenarios when the underlying is moving a very high or very low, it doesn't it means it will take care of itself. So, it is a very safe strategy.
+
+[25:51] Ripal, let's get to your results. Please share more in detail what have been your results from trading this strategy. Okay, so we can show my 2025 results. So, if you see the green trades are the
+
+[26:08] one where I entered and I made a profit and the red ones are the those where I made a loss and the white ones is the one where I was not in the trade. So, for example, this one like 17th of April
+
+[26:20] I entered on 17th of April. This was the entry. I stayed in this trade till 28th of April and I made a real profit of 11.12%. The same day I exited at the same day I
+
+[26:32] entered the another trade. So, like this I have, you know, put this all the results in this spreadsheet. So, you can see most of my
+
+[26:39] trades the win ratio is 82.35%. So, out of these all the 17 trades, three were losses. So, here you can see three losses and rest of them were positives. So, my average return was if
+
+[26:51] you will see from each trade was 6.33% and average time duration for each trade was 11 days. So, and it is including the weekend. So, 11 days I was able to make 6.33%
+
+[27:03] from this triple calendar strategy in 2025. And that's pretty amazing. And just to be clear, when you say that you made or so and so much in percent, that as a
+
+[27:15] is as a percentage of the debit you paid? Correct. All right. So, that's pretty good results. How has
+
+[27:23] 2026 been going so far? Uh it is going good. So, I have made four trades as of now. Three were positives and one was in a loss. Uh this was the last if you know the QQQ
+
+[27:35] went up a lot. So, I had to do two adjustments there. So, that was in a loss of 8.6% if I go with by the rules and rest three trades were in positives of 10 10% plus.
+
+[27:47] Let's sum up a bit. How will you sum up this strategy? And especially, what would be your two to three most important takeaways that you want the audience to remember?
+
+[27:58] So, this strategy if I'm you are looking for, you know, some strategy which is, you know, peacefully you can deploy a good capital amount of capital. You are making weekly income from that
+
+[28:11] passively. You have to look like entry exit or when it is breaching, then you have to look. But you don't have to
+
+[28:18] your mobile screen or your window everyday like that, then this is a very good strategy. Some takeaways, never, you know, short a very big event.
+
+[28:29] Then this one important thing in calendars, never short them because then it will not give you very good results. How does this fit with others options strategies you may do?
+
+[28:39] So, I do trade some directional plays, but I'm very bad at doing any directional options. I do sometimes some call debit spreads or something like that or buying
+
+[28:50] puts when I feel like market is going down, but all those strategies never give me very good results. All other strategies doesn't work for me. Most of the time I'm just doing
+
+[29:00] calendars. What would be good resources to learn more about uh calendar and this way of trading? What are the resources that you have
+
+[29:10] benefited from? Uh so start with the Option Strat is one where you can, you know, deploy, paper trade, you can see how it is going. Also, I have my YouTube
+
+[29:22] channel and Discord, so you can take from there. I have shared my strategy, what I'm doing in YouTube in detail everything and Discord I also I put my things like what trade I'm taking and
+
+[29:33] all. And also main thing which I will say is patience. Calendar is a game of expe- experiments. So, you have to learn by experimenting. So, once you experiment, you will get Usually,
+
+[29:45] calendar is always treated as the most complex strategy because it has very weak volatility dependent. Even the Option Strat where whatever you are watching,
+
+[29:54] it will will not be able to calculate the exact numbers. Like any other profit graph will tell you that this is the exact profit which will happen if you could go close at this price. But in
+
+[30:04] calendars, no one can predict what will be the price because there are so many parameters. So, ex- experiment, do paper trading, then you will get the results.
+
+[30:13] Vipul, thank you very much for sharing your strategy with us. And I would like to point out to the audience that we do have a couple of other interviews also about calendars. I would point out
+
+[30:25] Ravish Ahuja's double calendar, which is actually the most seen video on this uh channel, which is also another way of trading calendars. Thank you very much, Vipul, for coming
+
+[30:38] and sharing your strategy and your experience with us. Thank you.

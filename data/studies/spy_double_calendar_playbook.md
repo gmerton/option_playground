@@ -1,7 +1,19 @@
 # SPY Double Calendar Spread — Trading Playbook
 
-**Last updated:** 2026-03-21
+**Last updated:** 2026-06-26
 **Status:** Backtested 2018–2026. Two tradeable regimes confirmed. Ready for live trading.
+
+> **Revision 2026-06-26 — tighter short strikes (0.25Δ → 0.35Δ).** A regime-gated, after-cost
+> backtest confirms that pulling the short strikes closer to the money improves both traded regimes:
+> **BuLO → 0.35Δ both sides** (capital-weighted ROC after costs **+6.1% → +9.7%**), **BHI → 0.35Δ
+> put / keep 0.10Δ call** (preserve the skew; **+7.9% → +13.1%**). Pulling the *call* in to 0.35Δ in
+> BHI *hurts* (adds upside risk). Prescriptive params below are updated to the 0.35Δ values; the
+> historical Performance tables still show the prior **0.25Δ** results (mean-of-ratios, mid fills).
+> The idea was surfaced by — but does **not** endorse — the Theta-Profits "DC Time Machine"/Ravish
+> double-calendar episodes; their tight Fri/Mon gap was net-negative after costs. Evidence + scripts:
+> `data/theta_profits/backtests/dc_time_machine/RESULTS.md` (`run_gated_confirm.py`). The engine
+> reproduced the documented BuLO edge (incumbent CW-mid +10.46% ≈ playbook +10.4%) before testing the
+> change. Gains concentrate in 2021/2024/2025; BHI is small-sample — adopt at half size and re-confirm.
 
 ---
 
@@ -21,12 +33,17 @@ to zero while the long legs retain residual time value.
 **Regime gating is essential.** A full regime sweep shows only two of four regimes with
 reliable edge:
 
-| Regime | Put Δ | Call Δ | Profit Take | AvgROC% | Win% | ~Freq |
+| Regime | Put Δ | Call Δ | Profit Take | AvgROC%¹ | Win% | ~Freq |
 |--------|-------|--------|-------------|---------|------|-------|
-| **Bearish_HighIV** | 0.25Δ | 0.10Δ | Hold to expiry | **+23.7%** | 50.0% | ~8 wks/yr |
-| **Bullish_LowIV** | 0.25Δ | 0.25Δ | 50% ROC | **+10.4%** | 59.3% | ~26 wks/yr |
+| **Bearish_HighIV** | **0.35Δ** | 0.10Δ | Hold to expiry | **+23.7%** | 50.0% | ~8 wks/yr |
+| **Bullish_LowIV** | **0.35Δ** | **0.35Δ** | 50% ROC | **+10.4%** | 59.3% | ~26 wks/yr |
 | Bullish_HighIV | — | — | Skip | −3.4% | 46.4% | ~9 wks/yr |
 | Bearish_LowIV | — | — | Skip | +10.5% | 55.6% | ~5 wks/yr |
+
+> ¹ **AvgROC%/Win% above are the prior-params (0.25Δ) historical figures** (mean-of-ratios, mid
+> fills). The 2026-06-26 revision changes the **Δ columns** to 0.35Δ. On a like-for-like
+> capital-weighted, after-cost basis the 0.35Δ params improve BuLO +6.1%→+9.7% and BHI +7.9%→+13.1%
+> — see the Revision note above and `backtests/dc_time_machine/RESULTS.md`.
 
 > **Bearish_LowIV is not traded despite positive ROC.** Only 36 entries in 8 years
 > (~5/yr); result is dominated by 2018 (+20.8%) and 2022 (+25.2%). Insufficient frequency
@@ -42,8 +59,8 @@ reliable edge:
 SPY close vs 50-day MA?   →  Bullish (above) or Bearish (below)
 VIX ≥ 20?                 →  HighIV or LowIV
 
-Bearish_HighIV  →  ENTER asymmetric double calendar (0.25P / 0.10C)
-Bullish_LowIV   →  ENTER symmetric double calendar  (0.25P / 0.25C)
+Bearish_HighIV  →  ENTER asymmetric double calendar (0.35P / 0.10C)   [rev 2026-06: put 0.25→0.35]
+Bullish_LowIV   →  ENTER symmetric double calendar  (0.35P / 0.35C)   [rev 2026-06: 0.25→0.35 both]
 Bullish_HighIV  →  SKIP  (also trading bull put spread in this regime)
 Bearish_LowIV   →  SKIP  (too infrequent; also long straddle available)
 ```
@@ -63,10 +80,16 @@ and the long expiry is the Friday 7 days after that.
 
 | Regime | Short put | Short call |
 |--------|-----------|------------|
-| **Bearish_HighIV** | 0.25Δ (OTM put, ~4–5% below spot) | 0.10Δ (far OTM call, ~3–4% above spot) |
-| **Bullish_LowIV**  | 0.25Δ (OTM put, ~2–3% below spot) | 0.25Δ (OTM call, ~2–3% above spot) |
+| **Bearish_HighIV** | **0.35Δ** (OTM put, ~3% below spot) | 0.10Δ (far OTM call, ~3–4% above spot) |
+| **Bullish_LowIV**  | **0.35Δ** (OTM put, ~1.5–2% below spot) | **0.35Δ** (OTM call, ~1.5–2% above spot) |
 
 Long legs are matched to the **same strike** as the corresponding short leg.
+
+> **Rev 2026-06-26:** strikes pulled in from 0.25Δ. Closer strikes raise the per-trade debit and the
+> realized after-cost ROC (BuLO +6.1%→+9.7%, BHI +7.9%→+13.1%, capital-weighted, gated). **Keep the
+> BHI call at 0.10Δ** — the asymmetry is deliberate (see "Why the Asymmetry" below); a symmetric 0.35Δ
+> call in BHI *reduced* after-cost ROC to +5.4%. The optional 25%-PT variant in BuLO trades a little
+> ROC (+8.5%) for a higher win rate (67%) and faster turnover.
 
 ### Entry filters:
 
@@ -99,7 +122,11 @@ to +10.35% (50%PT) and reduces average hold from 12.0 to 11.8 days.
 
 ## Performance (2018–2026)
 
-### Bearish_HighIV — 0.25Δ put / 0.10Δ call / hold
+> The two tables below are the **prior-params (0.25Δ)** historical record (mean-of-ratios, mid fills),
+> retained for reference. For the 0.35Δ revision's after-cost, capital-weighted comparison see the
+> Revision note at the top and `data/theta_profits/backtests/dc_time_machine/RESULTS.md`.
+
+### Bearish_HighIV — 0.25Δ put / 0.10Δ call / hold  *(prior params)*
 
 Avg net debit: ~$2.15/shr | Avg put strike: ~$383 | Avg call strike: ~$412 (on SPY ~$400)
 
@@ -120,7 +147,7 @@ Avg net debit: ~$2.15/shr | Avg put strike: ~$383 | Avg call strike: ~$412 (on S
 > hit on most trades. In whipsaw-dominant bear regimes, the calendar underperforms a simple
 > put spread. Keep sizing conservative (~1.5% per trade).
 
-### Bullish_LowIV — 0.25Δ put / 0.25Δ call / 50% take
+### Bullish_LowIV — 0.25Δ put / 0.25Δ call / 50% take  *(prior params)*
 
 Avg net debit: ~$2.15/shr | Avg put strike: ~$440 | Avg call strike: ~$453 (on SPY ~$447)
 
@@ -248,9 +275,15 @@ PYTHONPATH=src .venv/bin/python3 run_spy_double_calendar.py \
 
 # Asymmetric regime sweep (reproduces this playbook):
 # See inline script in session notes; uses double_calendar_study.py directly
+
+# 0.35Δ revision — regime-gated, after-cost confirmation (rev 2026-06-26):
+AWS_PROFILE=clarinut-gmerton PYTHONPATH=src .venv/bin/python3 \
+    data/theta_profits/backtests/dc_time_machine/run_gated_confirm.py
 ```
 
 **Key source files:**
 - `src/lib/studies/double_calendar_study.py` — double calendar backtest engine
 - `run_spy_double_calendar.py` — symmetric sweep runner
 - `data/cache/SPY_options.parquet` — SPY options data (2018–2026)
+- `data/theta_profits/backtests/dc_time_machine/run_gated_confirm.py` — 0.35Δ regime-gated confirmation
+- `data/theta_profits/backtests/dc_time_machine/RESULTS.md` — full 0.35Δ evidence + Theta-Profits comparison

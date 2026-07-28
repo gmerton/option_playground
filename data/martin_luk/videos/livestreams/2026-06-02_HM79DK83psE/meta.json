@@ -1,0 +1,19 @@
+{
+  "video_id": "HM79DK83psE",
+  "url": "https://www.youtube.com/watch?v=HM79DK83psE",
+  "title": "Sizing up | 2 Jun 2026",
+  "channel": "martinlukkt",
+  "channel_id": "UCB6jWJJvO_sWZ2PwgmMcxCw",
+  "stream_date": "2026-06-02",
+  "duration": "1:54:29",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

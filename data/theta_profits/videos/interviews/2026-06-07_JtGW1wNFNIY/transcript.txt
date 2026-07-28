@@ -1,0 +1,501 @@
+[00:00] putting on double calendars and I'm pumping out risk-free iron condors like a machine. I've had double calendars that I put on and I was able to transform them into a risk-free iron
+
+[00:09] condor within 7 minutes. The only thing that can happen is you could make a little or you could make a lot. Today's strategy starts with a double calendar and ends with a risk-free iron
+
+[00:21] condor. Here's my guest. Welcome Steve Bernich. Hi John, thanks for having me. Give us the short version of what your double calendar time machine is and how
+
+[00:31] it has worked for you. Like you said, it it starts off as a double calendar spread, which it calendar spreads are also known as time spreads.
+
+[00:41] And so that's why that's where the time name comes in the name. So it's DC time machine because we start cranking out risk-free iron condors like a machine. So first of all, that's that's where the
+
+[00:53] name comes from, just kind of a funny play on words. But yeah, it starts off as a double calendar. Once the double calendar has a little bit of profit and it depends on the
+
+[01:03] variations that you use on the double calendar, but once it has a little bit of profit, typically 5 to 10%, you're able to transform it in one order into a risk-free iron condor. And then at that
+
+[01:16] point most of the trades that I do are on SPX. So then at that point you can let it expire, you could close it early. Ideally, you would let them expire and collect that max profit if it lands
+
+[01:28] inside the iron condor tent. I'm really curious to learn more about this. It's sounds so fantastic to get into risk-free positions, doesn't it?
+
+[01:39] Yeah, and to give you you and your audience a little bit of background, for the last we have I have about I don't know, I think six, maybe seven different what I call transformer
+
+[01:50] strategies now. So there's all different variations where you can take spreads like a vertical spread or an iron condor or a butterfly spread and transform those
+
+[02:02] into risk-free spreads. Uh but what we what we will talk about today is specifically the DC time machine, which starts with a uh double calendar and then transforms into a risk-free iron
+
+[02:12] condor. And I look really forward to hearing more about this, but tell us first a little bit about yourself, especially as an options trader.
+
+[02:22] Yeah, so I started my trading journey in 1999, so right before the dot-com bubble burst, and I was trading primarily stocks and futures at that time, all directional.
+
+[02:34] Uh I didn't start trading options till about 2006. And then I really started Once I learned options, I really started gearing all of my focus towards options and just
+
+[02:46] started learning all different types of strategies outside of just directional trades, doing a lot of uh delta neutral type strategies, positive theta type strategies is is really where my focus
+
+[02:57] started going. Uh and started doing really well, and in 2016 started navigation trading uh to start teaching some of these strategies that I had learned over the years.
+
+[03:07] Let's move to your DC time machine. Tell us first, what are you trying to achieve with this strategy? Yeah, the idea is to obviously when you put a position on,
+
+[03:20] anytime you put on any type of option strategy position or spread, you're going to initially have some risk, but the idea is to transform that strategy and remove the risk as soon as
+
+[03:33] possible and then give yourself an opportunity to, you know, still have a risk-free position, but an opportunity to still book a significant profit. And the beautiful thing about transformer
+
+[03:47] spreads in general, like the DC time machine, is that not only do you remove the risk, but you also remove your buying power that's required from the broker. So, the idea is to remove the
+
+[04:00] risk as quickly as possible, get your buying power back, and then be able to redeploy that capital into additional trading positions. Let's start with the basics. What is a
+
+[04:12] calendar trade? Yeah, so a a calendar trade is it it's essentially a an option spread, but we're using two different expirations. And so, that's
+
+[04:24] why it's called a calendar spread or a time spread because we're using two different expirations. And when you when you enter a calendar spread, you're entering it for a debit, and you are
+
+[04:35] entering it where you're selling the options in the front expiration, the expiration that is closest to us, and then we're buying the options in the further dated expiration, and that is
+
+[04:46] what completes a calendar spread. So, you can do a calendar spread on the put side, or you can do it on the call side, and a double calendar just combines the two. So, we've got a put calendar down
+
+[04:58] below the current price, and we've got a call calendar above the current price, and together those make up a double calendar spread. And the calendar has the same strike on
+
+[05:09] both expirations, isn't that so? That's correct. Yeah, a calendar is going to use the same strike, but different expirations, exactly. Before we go into depths about how you
+
+[05:20] put this on and manage an exit and all that, let's maybe look at an example trade, could we? Yeah, so a a double calendar spread, and I I use thinkorswim, which is uh the
+
+[05:32] platform connected to Charles Schwab, and the reason I like to use them as specifically for this kind of strategy is because of the risk profile graph that they have.
+
+[05:42] Uh I'm a very visual trader, so using the the visual risk graph uh can be helpful especially when you're learning this to get a visual perspective of what the trade looks like. So So this is a
+
+[05:54] this is what a typical double calendar would look like. You see the peak down here and in this case it's on the 7480 strike. This is the order that I have checked here. So this is what you're
+
+[06:06] viewing. You've got the 7480 strike on the put side and then you've got the 7570 strike on the call side and and that's the call calendar and that's the put calendar. Both of those together
+
+[06:19] make up the double calendar. And then you wait for some profit and then you transform this into an iron condor. That's correct. I'll I'll show you an
+
+[06:30] example of a of a trade that I specifically did today. So here's a double calendar that I put on this morning. It has a June 4 June 5 expiration. So I'm selling the the June
+
+[06:42] 4 options and buying the June 5. This was the double calendar that I put on. You can see it it has some it got it gained some profit throughout the day and before the day was over I was able
+
+[06:53] to do a transformer order which is the red one here. I just click that and you can see that once I do the transformer order it transformed it into an iron condor and what you'll notice is the
+
+[07:07] zero line of profit is right here and you so you can see the wings are above the zero line. In fact the worst case scenario is that I would if it if it expired outside the the max profit area
+
+[07:20] the worst case scenario is I would make $300. If it did expire inside the max profit area I could make $10,300 on a and this is on a 20 lot.
+
+[07:31] So you have absolutely no risk of losing any more on this one. Right. No risk of losing. You can you can also you could let it expire because SPX expires and settles to cash. There
+
+[07:42] is no assignment because there are no shares of SPX. Or if I decided that I wanted to close it early and just book the current profits, you obviously have that
+
+[07:52] opportunity as well if you don't want to hold it all the way to expiration. I want to tell you about something new here on Theta Profits. We are launching of the first Theta
+
+[08:02] training, a live course where you can learn about the wheel strategy in depth. The very first course is completely free and all about one of the most popular options strategies, the wheel. Paul
+
+[08:16] Gambleson, an experienced trader, will teach it. You know, the wheel has been my primary options strategy for years. I've traded the strategy more than 10,000 times. In
+
+[08:27] this four-part live course, I'll show you exactly how to run the wheel. And that is how to select stocks, how to sell cash-secured puts, manage assignments, sell covered calls, and
+
+[08:39] handle adjustments along the way. If you've ever wanted to learn the wheel from someone who trades it every day, I can be your mentor and I'd love to have you join us.
+
+[08:51] The first of four sessions in the course will be on Tuesday, June 16th. Check the link on the screen or in the description below to learn more and to register. I hope to see you there.
+
+[09:04] Now, let's get back to today's interview. So, let's get a bit more into detail of your process and start with your entry mechanics. Tell us a little bit about your conditions for opening a
+
+[09:17] trade, you know, your underlying, the deltas, DTEs, etc. From an underlying standpoint, you can do this really on any underlying that has liquid options.
+
+[09:28] As I mentioned before, I almost exclusively do this trade on SPX. You get some tax advantages in the US for for trading the European style options. So that's one reason. The other reason
+
+[09:41] that I mentioned is they expire to cash. And so you don't have to worry about being assigned shares like you would with SPY or Tesla or some other type of American style options.
+
+[09:53] So I primarily use SPX. And as far as the deltas go, it's going to vary depending on the duration that I choose, but it's typically going to range anywhere
+
+[10:05] from the 30 to 40-ish delta are the strikes that I would use on the put side and the strikes that I would choose on the call side. So pretty close actually.
+
+[10:17] Yeah, they can be they can be fairly close and and you can you and that's just my preference. You can actually choose wider wider strikes. Like you could go down to 20 delta or 15.
+
+[10:29] The reason that I don't is just because my goal with this strategy is to transform it and remove the risk as quickly as possible. So the tighter in those strikes are, the closer they are
+
+[10:41] to the money, the faster you can flip it into a risk-free trade. If I were to choose the 15 or 20 delta where the strikes are much wider, much further away from the current price,
+
+[10:53] it's just going to take me longer to transform that into a risk-free structure. Now the trade-off is the benefit would be is that when you transform it, now you have a wider iron
+
+[11:04] condor that that's risk-free. The difference is it just takes longer to get there. How many days out do you go with this trade, both the shorts and the longs?
+
+[11:14] My my favorite duration to go is to use the following weeks' expirations. So if today is May 26th, I would be looking at expirations in the following week, which would be starting
+
+[11:31] with uh starting with with June 1st. So, we're talking uh 6 days out, 7 days out, 10 days out,
+
+[11:41] 12, 15 days out. So, I like to focus on the following week's expirations. And the reason I do that is because it's a really good balance of getting a structure in place to where if
+
+[11:54] price moves around during the day, I have a nice wide range and the P&L swings are very minimal. But yet, I still have the opportunity of potentially transforming that trade into
+
+[12:06] a risk-free iron condor in the in the same day. Now, that doesn't always happen. Sometimes I'll come to the end of the day and I'll have a small profit or a
+
+[12:16] small loss, and then I'll make the decision to either close that out for a small loss, a small profit, or hold risk overnight. I really like to get things transformed
+
+[12:27] the same day to remove that risk because I don't like to hold a lot of risk overnight, but there are situations where, let's say if I did 20 contracts and I come to the end of the day and I
+
+[12:37] have not been able to transform that into a risk-free spread, I might close 10 of those and book a small profit on the double calendar and hold the other 10 till the next day and see if then I
+
+[12:48] can transform it the next day. How much further out do you have your longs? My longs are usually pretty tight compared to my shorts. So, sometimes
+
+[12:59] I'll do just one day between the fronts and the back dated options. One of my other favorite uh expiration combinations is a Friday-Monday combination where I'm
+
+[13:10] selling the Friday and I'm buying the Monday. Those are typically almost always in backwardation, which means the front options are more expensive than the back options or the front implied
+
+[13:21] volatility is higher than the back implied volatility. So, that's what I mean by backwardation. And and so those those typically set up a really nice profile to trade in, but I
+
+[13:32] typically don't go more than three or four days in between the front and the back-dated options. You mentioned volatility and that the front month the front option is
+
+[13:44] more worse, so to speak, or have a higher volatility. Is that the crucial condition for when you will enter these trades or can you enter them at any time?
+
+[13:54] You can really enter them at any time and I I've I've actually built a tool to be able to figure out when the most optimal time is to enter these because exactly what you're saying, it's so
+
+[14:06] critical to understand the relationship between the front implied volatility, the options that you're selling, and the back implied volatility of the options that you're buying. It's the
+
+[14:16] relationship between those two that matters. So and and it matters mostly after you enter the trade. So if you get into a trade and the front implied volatility contracts faster than the
+
+[14:30] back, that's going to benefit your position. If you get into a double calendar spread and the front options expand faster than the back-dated options, that's going to
+
+[14:40] work against your position. So the idea is you want to get into positions in in a situation where you have a high probability chance of those front options decaying faster than the back
+
+[14:52] options. But how can you know this? Maybe you could show us this tool that you built. This is a This is a tool that I built. This was something that wasn't
+
+[15:01] available. I actually I searched all over to try to find something similar and I just couldn't find it. So I ended up having to build it myself with the help of of one of my community
+
+[15:11] members. And as you can see, the name of this tool is called Flux, going with the whole DC time machine Back to the Future theme. Uh, I named I named the tool Flux, and so what what you're seeing
+
+[15:24] here is the blue line represents the front option implied volatility. And you can see it kind of move throughout the day. And then the green line represents the
+
+[15:36] backdated implied volatility, and you can kind of see how it moves during the day. Now, you can see that these kind of move very similar throughout the day. When one's going up, the other one's
+
+[15:46] going up. When one's going down, the other one's going down. The orange line is is the line that I focus on the most, and that's the ratio between the front and the back. So, it's
+
+[15:59] the front implied volatility divided by the back implied volatility. And since we want the front to contract faster than the back, essentially, once we get into a into a trade, if the orange line
+
+[16:13] is moving lower, that's benefiting our position. You're going to see profit come into that double calendar. If if if you're in a position and this orange line spikes,
+
+[16:24] that's going to you're you're typically going to see losses, or you're you're going to see your profits lower in your double calendar. Now, one thing I will say, this is not a prediction tool,
+
+[16:36] right? This We're not I'm There's no way to predict what's going to happen in the future with the implied volatility, just like it's very difficult to predict the direction of price, but what this does
+
+[16:48] is it provides context. So, we know that implied volatility is mean reverting. So, I like to get into these when when I see a spike in the ratio.
+
+[17:00] And then if it comes back and starts reverting back down, that's going to benefit the position. So, that's where That's one way that I use this tool to provide context. The other thing it
+
+[17:11] shows, this is the intraday view, and it it updates every 1 minute. The other The other views that this has is it has a 5-day view, so I can see has the ratio been declining over over the
+
+[17:23] last 5 days. It's got a 20-day view, so I can view what what is the ratio and the implied volatility been doing over the last 20 days. And so again, it just it provides context to give you an idea
+
+[17:36] of of what implied volatility has been doing, and then you can take an assumption to enter your trade based on the context of that implied volatility. The other big thing that that this has
+
+[17:47] is a scanner. And so I can look at all the different expirations from 0 to 30 days to expiration. I can choose whatever gap in between the front and the back that I
+
+[17:59] want. You know, I could do 3 days, 5 days, whatever that might be. And then I can scan all these expirations by the uh a minimum drop in the ratio or a minimum rise in the ratio that day.
+
+[18:13] And this allows me to look through a lot of different expirations very quickly and decide if if that's a a scenario where I want where I want to enter a position.
+
+[18:24] I know one question people will ask, that is is this a tool that's available? So this is a tool I don't I don't charge for this tool, but it is only available exclusively for our members at
+
+[18:36] Navigation Trading. We have entered the trade. Hopefully under perfect conditions. And we get to this point where we are going to transform the double calendar.
+
+[18:48] Could you take us through in detail that process when you have the profit you need to transform and how you actually do this? Yeah, so let me bring thinkorswim back
+
+[18:59] up, and I'll show you an example of an actual trade that I just did today. This is the double calendar that I entered this morning. And you can see I did 20 lots, and I
+
+[19:10] sold the June 4, and I bought the June 5th expiration. The time of this recording is May 26th, so that was 9 days in the front and 10 days in the back dated
+
+[19:22] options. Just to give a little context of how far out the duration is. [snorts] And so I put this on in the morning and as profit started coming in, I got to
+
+[19:33] the point where I was able to transform it and that's what this order is that I that I just clicked on the red one here. So the question is what are the actual mechanics? How did I How did I do that?
+
+[19:45] What is that transformer order that that transforms it to a from a double calendar like this into a risk-free iron condor like this.
+
+[19:56] Well, what I'm doing is essentially I am closing out the back dated options. Right? So that the options that I bought originally were in the June 5th expiration.
+
+[20:08] We can see here I just sold those. I sold the exact same strike at the exact same expiration. You can see I sold both of those back dated options. And then what I did in the same order is
+
+[20:22] I bought the wings of this iron condor in the June 4th. So essentially on the on the June 4 uh call strike, which was at 7560, I bought a 7565.
+
+[20:38] So I bought it five five points wide. And then on the put side, which was a 7485 put that I sold originally, I bought the 7480. So five points below that one. And putting that order in
+
+[20:53] will transform it into a structure of an iron condor. Now the one the one key component is when you do the transformer order, remember I said you have to generate
+
+[21:05] some profit in the original double calendar first. And the amount of profit that you have to generate is enough for this transformer order to be at
+
+[21:16] least $5 over the debit that you originally paid for the double calendar. Right? So, I paid a debit of $10.10 on this double calendar that I entered and I transformed it and I got a credit
+
+[21:30] of $15.25. So, that's that's actually $5.15 more than the debit I originally paid for the double calendar. And that's why I have a little bit of profit on the
+
+[21:42] wings. You can see I have a profit on the wings of $300 out here and $300 down here. If I would have transformed it for exactly $5 over, my
+
+[21:54] my risk or profit on the wings would be exactly zero. So, for example, if I change this from 1525 to 1510, so that's now exactly $5 over what I paid for the double calendar, you
+
+[22:08] could see now on the the wings my risk and my profit is exactly zero. And the $5 here is the width of the wings, and so you need to cover the potential loss.
+
+[22:20] Exactly right. I'm I'm transforming this into an iron condor with five wide wings, so I have to get a credit of $5 more than the debit I paid. That's exactly right.
+
+[22:32] Right. So, the rule is you take what you paid, uh you add the for the for the calendar, and you add the width of your of the spreads in the iron condor, and
+
+[22:45] that's what will bring you to zero. That's correct. If I wanted to get a 10 an iron condor with 10 wide wings, I would need to trans- I would I would move my wings to 10 10 wide, and then I
+
+[22:57] would need to collect a credit that's $10 more than the original debit paid. So, you're exactly right. You're taking the the width of your wings and you're getting a credit of equal or more value
+
+[23:07] when you transform it. How long does it typically take before you can do this? Well, that's a great question. And the answer is there is no typical.
+
+[23:18] Uh I've had in periods of extreme volatility, I've had double calendars that I put on and I was able to transform them into a risk-free iron condor within 7 minutes.
+
+[23:29] I've had others that happened in 15 minutes or 20 minutes. And I've had you know that that's a very extreme situation and that's that's absolutely not normal. But when you're in periods
+
+[23:39] of of extreme volatility and and volatility is kind of spiking all over the place, you can get some of these transformed very very quickly. Uh you're also putting yourself in a position of
+
+[23:50] more risk because price and volatility are really moving around, but you also can get these transformed very quickly. That's that's an extreme. Then there are other
+
+[24:01] positions like this one that I put on today where I I entered this in the morning pretty close to the open. I waited uh a few minutes after the open before I
+
+[24:09] put this on. And then I was able to transform it about an hour and a half before the close of the day. That's if you were going to say more typical,
+
+[24:21] I would say that's a more typical time frame that you can get these transformed. But it really depends, right? There there are some days when I'll put on a double calendar and you
+
+[24:31] just won't see much of any profit throughout the day. So, there are certainly days where I get to the end of the day and that that double calendar has not generated enough profit to
+
+[24:43] transform and then I'll have to make the decision, do I want to hold it overnight and hold that risk overnight and try to transform it tomorrow, or do I want to just close it out, book the profit,
+
+[24:53] remove the overnight risk, and try again the next day? Do I understand it correctly that you are setting this transformer order straight after you have opened the
+
+[25:02] trade? That is certainly a way that you can do it. And if I'm not going to be in front of my computer or if I have if I'm going to be very busy and I can't I can't
+
+[25:13] monitor it very closely, that's typically what I'll do. So as soon as I get filled on the double calendar, I can immediately turn around and put on that transformer orders for $5 more than the
+
+[25:24] debit that I originally paid and just, you know, come back and see if it gets filled later. So that's that's certainly an option and and that's that is something that I do sometimes. The other
+
+[25:34] thing that I'll do is if I start seeing profit come in very quickly into a double calendar, sometimes I'll put in an order to transform half of the contracts. So let's say I did a 20 lot
+
+[25:47] like the example here, I might put in an order to transform 10 of those at around $5 or a little bit more than $5 over and then I'll wait later in the day to see if I can generate some more profit and
+
+[26:00] I'll try to transform the remaining 10 for an even higher credit which essentially just adds directly to the minimum profit on the wings as well as the max profit
+
+[26:12] uh on the iron condor. And here we transformed it into an iron condor, but are there other ways you could have transformed a double calendar into a risk-free position?
+
+[26:21] There are infinite different variations of things that you can do. Getting into all the different variations would we could be here for a few hours, John, but but I would just say yeah, there are a
+
+[26:34] lot of different variations where you could uh transform uh you know, one side 10 wide, one side five wide, you could make it more
+
+[26:42] directional so you have risk free on one side and and a little bit of risk on on on the other side and there are there are a bunch of different adjustment techniques as well that that I don't
+
+[26:56] think we have time to get into here. I think the basis of what I really want to drive home to your audience and and you today is just kind of the the primary foundational way to trade the DC time
+
+[27:08] machine and understand that yeah, there are a lot of different variations of of things that you can do to tweak the different strikes in the transformer to make it a different type of risk-free
+
+[27:21] spread like a a broken wing iron condor, a vertical spread. There are a lot of different different variations that you could transform it into a risk-free spread.
+
+[27:31] So, we will stick to this standard way today and then try to learn that one well. And I'm curious, how do you exit these positions? What are your rules for when you take profit, but also well, you
+
+[27:45] don't have any a need for a stop loss anymore when you have no risk, but when do you get out of the price? Yeah, so ideally, you know, as as I as I mentioned the the name
+
+[27:56] represents DC time machine. So, I'm putting on double calendars and I'm pumping out risk-free iron condors like a machine. That's that's the name, right? So, ideally, I'm going to be
+
+[28:06] putting these on, transforming them in different expiration cycles at different price levels and and just creating a variety of different structures all over the place. And ideally, I would just
+
+[28:19] like to let them expire. And some are going to expire for the minimum profit, some are going to expire for the maximum profit, but you're just playing a game of probabilities and spreading those out
+
+[28:30] and hoping that some, you know, expire within your max profit area. That's the ideal situation. In reality, you know, it it just depends on the the price action. For me, you know, there
+
+[28:42] was a there was an example last week where I had I had two different risk-free iron condors that were expiring that day. And all morning price of SPX was just in a very narrow range.
+
+[28:54] It looked like a really good chance that I would have both of those hit max profit at the end of the day. And then we had some war news come out and the price of SPX just shot started shooting
+
+[29:05] through the roof. Well, I I didn't want to give up all the profit that I had and so I just started scaling out and closing some of the contracts. So for example, if I had a 20 contract position
+
+[29:18] on like this, I might close half, see what price was going to do, close the other half, and just and just start, you know, kind of closing it out to book the profits that I had in hand as opposed to
+
+[29:30] being a little bit more greedy and and waiting for price to expire and hoping that I hit that max profit area. So Ideally, I'd like to wait until expiration.
+
+[29:41] I I almost always wait until expiration day to make a decision. But then at that point, it's you know, just looking at the price action, I make a I I just make a trading decision
+
+[29:54] whether I want to try to let this go all the way to expiration or whether I want to close part of the trade or close it out and just take take the take the profit that I have.
+
+[30:04] And uh with the 30 45 deltas to start with, you have a pretty tight iron condor, don't you? Yeah, like the the example that I showed you today,
+
+[30:16] uh you know, I've got the calls on the 7560 strike and I've got the puts on the 7485. So what is that? 85 points wide? So, you
+
+[30:27] know, if I if I look at the the way I kind of look at it is if you look at the expected move or the expected range on the SPX. So if I if this if this
+
+[30:39] position was expiring tomorrow, I would look at the one-day options and I would say, "Okay, there's an expected move, a one standard deviation move in the options tomorrow of plus or minus 40
+
+[30:50] points. And if I think that there's a good probability of price staying within the range that I have, then I'll be more inclined to to keep it on. But yeah, it
+
+[31:01] just depends on what's going on in the world and and how the mar- how the market's moving, which we've obviously obviously seen some uh pretty insane volatility lately.
+
+[31:11] We have. And what if your transformation conditions are not met? What are your rules then? If it doesn't uh how long will you wait?
+
+[31:21] I wait until the end of the day. So, if I I put a lot of these double calendars that I put on, I either put on in the morning with the intent to transform the by the end of the day, or if I put them
+
+[31:33] on later in the day, I'm putting them on with the intent that I'm going to hold overnight and try to transform them the next day. If that If things don't go well, and and
+
+[31:43] typically what I mean by that, if things don't go well, that typically means that price made a pretty significant move outside of the range of my double calendar, and I'm starting to see
+
+[31:52] losses. My kind of my uh my uncle point of when I'll say, "Okay, I'm out. I'm I've I've got to give up on this one." is if I if I see a loss that gets to 20% on the double calendar, I will typically
+
+[32:08] pull the plug and just close the trade and take the loss. To what extent do you manage these trades after they have been transformed? And if you do, how do you do it?
+
+[32:20] After I get the trade transformed, there's really no management needed. The only thing that I would do as I as I just described is I would potentially
+
+[32:31] close some of the contracts early if I decided just to just because I wanted to book some of that profit uh now instead of waiting to expiration. But other than that, there's
+
+[32:42] there's zero management to the trade once it's transformed. And because I'm trading SPX, uh you can let it expire. You don't have to worry about assignment or exercise or anything like that.
+
+[32:54] I'm curious about how how many of your trades can you are you able to transform? How many percent of your trades are able to transform in this way?
+
+[33:02] They kind of come in bunches. So, I'll have periods where I'll have a bunch of them just transform one after another one one after another after another. And then I'll go through periods where the,
+
+[33:13] you know, the coordination between the front and back of implied volatility is not playing nicely. And, you know, I'll go days without transforming one. From a from a overall statistical
+
+[33:24] standpoint, and I've really just been keeping really clean stats on this strategy for the last 3 months. I've been trading it, you know, going into last year and even
+
+[33:34] some before the year before, but I really just started tracking and and trading it as a core piece of my uh strategy and tracking it with clean stats the last 3 months. And I would say
+
+[33:47] um it typically about 60% of the time I'm able to get these transformed uh either within the same day or the next day. Let's talk a little bit about the risk.
+
+[33:57] What's the worst that can happen with this strategy? Yeah, good point. And that that's something that I talk about a lot is cuz it's all great when you hear, "Oh, you
+
+[34:07] can get this to a risk-free trade. No risk, no risk." And that's all that people hear is no risk. Well, let me be very clear. There is risk when you first put on the double calendar, right?
+
+[34:17] There's no such thing as a free lunch in the market. And so, the worst of the worst-case scenario is if you put on a double calendar
+
+[34:25] and then we have some type of crazy black swan type event and price just rips out of your out of the range of your double calendar, you know, you're you're going to be at risk for whatever
+
+[34:37] the max loss is on that double calendar. And that's where position size becomes so so important because number one, I do not use a stop loss on a double calendar spread. I think having a mental stop on
+
+[34:50] a double calendar spread is is what you need to do because if you try to put a a hard stop in a hard stop loss with your broker on a
+
+[35:00] double calendar, it's it's typically not going to end well because a lot of times price can kind of jump around and you'll get spiked out and stopped out and and
+
+[35:09] price, you know, didn't really even get to a point where you probably wanted to exit the trade. But but but managing risk really primarily comes down to
+
+[35:21] managing risk at order entry and that comes down to your position size. So, you when you put on a double calendar spread, you better be willing to take the maximum loss that that is part of
+
+[35:34] that spread based on the number of contracts that you that you trade. I would say the the typical double calendar that I enter is usually for a debit of anywhere
+
+[35:46] between depending on the duration, could be anywhere between 800 and $1,500. That's kind of the normal for one contract. So, you you need to position size, you know,
+
+[36:00] being able to you know, take a full loss on whatever position size you do. And I always tell I always tell my members in my community that when you're deciding on that position
+
+[36:10] size, everybody's risk tolerance is a little bit different, right? Some people can handle $50,000 P&L swings and not even blink an eye. Other people start sweating if they have a $500, you know,
+
+[36:23] unrealized loss on a position. So, it really comes down to your risk tolerance, but I think the main thing to ask is if if a black swan happens after I put
+
+[36:34] on this position and I'm forced to take a max loss, then am I still going to be able to trade tomorrow? And if the answer's no, then you're
+
+[36:43] trading too big. And if your palm starts sweating when you're when price starts moving around, you're probably trading too big. So, it's a very personal question, but but I would say yeah, kind
+
+[36:55] of the worst case scenario is you could take full loss on that double calendar before you get the chance to transform it and remove the risk. I'd like to ask my guests to place their
+
+[37:06] strategy on a risk profile scale where one is very low risk and 10 is very high risk and you actually free to define these numbers as you see fit. Where would you place the double calendar time
+
+[37:19] machine? Yeah, I would say I would I would kind of break that down into two scenarios. So, the when you first put on the double calendar, that's when you have the most
+
+[37:28] risk, but even a double calendar spread in itself, especially the way that I trade them because, you know, let's say the the expected range in SPX today for the course of one day, let's say right
+
+[37:41] now in this current implied volatility environment is about 50 points. Plus or minus 50 points is kind of a normal range that we're seeing today. Well, a lot of times when I put these double
+
+[37:52] calendars on, I will have a range of over 100 points. So, from from just purely trading double calendars, I would put those on a scale that like like you mentioned from one to
+
+[38:05] 10, I would say a double calendar is probably a three or four. So, it's you know, it's a fairly lower risk strategy in and itself. And then of course, once you transform
+
+[38:16] it into a risk-free spread, that would go to zero. So, I would I would say between a three and a four on a scale like that. I think everyone now is asking, what
+
+[38:26] have been your results doing this? Yeah, so my results for the last few months and like I said, I've really been tracking the data and the statistics of these trades cleanly the last few
+
+[38:38] months. So February, March, and April of 2026, here are the results. Uh in February, I made a little over 16,000 and that was on 16 trades. I had an 81% win rate in
+
+[38:52] February, average winner 1,300, average loser about 465. Uh my biggest win was 6,505 and my biggest loss was $600 for a profit factor of over of 12.7. Very uh
+
+[39:08] very solid. Only 16 trades. In March, I really ramped up the number of trades that I took. Uh I took 48 trades. My my profit was only 5,538 for the month. And the reason being is I
+
+[39:23] just didn't hit. Uh I think I only hit one max profit in March on all those 48 that I did where statistically over time, you should hit about 25% of the uh DC time machines that you
+
+[39:38] transform, about 25% of those statistically should hit that max profit at expiration. And March was one of those months that I just barely hit any. I was still at a 64.6%
+
+[39:51] win rate. My average winner was $588. My average loser $747. My biggest win was a little over 3,500 and my biggest loss was 3,100 for a profit factor of 1.44.
+
+[40:06] And then April really took off from a P&L standpoint. And again, this really had to do with because I ended up hitting a lot more max profits in April. So what I would the way I would look at
+
+[40:19] this is in March I underperformed because I hit less max profits at expiration, and in April I probably hit more max profits than normal. And so, I did 42 trades in
+
+[40:33] April, made over 44,000, uh win rate of 54.8% average average winner 2,300, average loser minus 561, uh biggest win 9,800, my biggest loss
+
+[40:47] was only 1,700 for a profit factor of 5.41. So, total up uh for the 3 months, a little over $66,000 on 106 trades with a 63% win rate.
+
+[41:02] What do you mean by profit factor when you measure your results? Yeah, so the profit factor is is just your essentially it's your average win versus your average loss.
+
+[41:15] So, uh and and the and and and the size of your wins versus the size of your of your losers. So, it's the combination of those that makes up the the profit
+
+[41:26] factor uh digit. Is this your favorite way of measuring results? Uh it's just a it's a nice metric that just gives you kind of a bottom line
+
+[41:36] result. Like for example, you'll see on the total uh my biggest loss was 3,100, my biggest loss was 9,800, so it's a 3.7 five. Just gives you an idea because my I really don't care about win rate.
+
+[41:51] I care about profit. And I think a lot of newer traders focus too much on win rate. Like I I got to have a 70% win rate, or I got to have an 80% win rate. But really what it comes down to is the
+
+[42:02] is your is the average winner versus your average loser. I want to have a much bigger winner wins than I do losses, and that's that means more to me than um than win rate. And so, that's
+
+[42:15] what profit factor uh measures. And we see that in April, that was your best month in dollars, but the lowest win rate.
+
+[42:24] Correct. Yep. Let's start to sum up. How will you sum up what we have been through, and what would be your two or three most important takeaways that you really want
+
+[42:34] the audience to remember? I think the the top three things that I would want the audience to take away from this is that when you you can put on a spread,
+
+[42:44] and once you have a little bit of profit, you're able to transform that spread and remove the risk, and give yourself an opportunity at a higher potential profit. So many people, when
+
+[42:57] they when they start trading, they think they put a trade on, and they have to then determine either taking a win or taking a loss. And I think this is kind of a
+
+[43:08] uh a different a different mindset shift about another option that you can do when you're trading option spreads. So, that's that's one thing. Number two is what I call recycling buying power. And
+
+[43:22] this is a big one. When you kind of have this lightbulb moment, and you start to understand recycling buying power, it becomes a very powerful thing. And And what I mean by that is remember, when
+
+[43:34] you put on your your trade, and you have your buy your your broker uses a specific amount of buying power when you put on a position like a double calendar spread.
+
+[43:45] But as soon as you transform that, not only do you remove the risk, but you remove the buying power that your broker is requiring. So, now you can use that capital to go start a new trade, and you
+
+[43:57] still have this risk-free iron condor structure over here that that can still earn a significant profit. So, so being able to remove the risk as one, being able to uh recycle the buying power is
+
+[44:12] is number two, and then I would say number three is just the ability to be able to trade something where you don't have to worry about stop losses. You know, if you if you if you've traded any
+
+[44:26] type of zero DTE iron condors or any type of option spread that has a stop loss, it's a totally different mindset than if you have an iron condor that doesn't have any risk on. You don't have
+
+[44:39] to have a stop loss, you don't have to watch the futures at night, you don't have to you know, have the stress of having risk on. The only thing that can happen is
+
+[44:49] you could make a little or you could make a lot. You don't have to worry about the stress of stop losses getting spikes through or slippage, and you don't have to worry about holding it
+
+[45:00] overnight because there is no risk. Steve, what are some good resources to learn more about this kind of trading? Both this particular strategy, but also, you know, in general this
+
+[45:13] idea of transforming a strategy into a risk-free position. Yeah, you know, I I've never really seen anybody else talk about this stuff. I'm not saying I'm the
+
+[45:25] only one, but I I've never really seen many people talking about this kind of thing. So, I'm this is something that I've I've just kind of figured out over the years. And the way that I figured it
+
+[45:35] out is I would put on a spread, and you don't even have to risk money to do this. You could You could put on a theoretical spread on a risk graph like Thinkorswim or Option Strat or Option
+
+[45:46] Omega, and you can view that, and then you can just start looking at closing trades or transformer orders or opposite orders, and you can just start playing with the strikes and playing with the
+
+[46:00] with the the prices that you're that you're trading it for and over time you're going to start seeing things about how you can take one spread and transform it to another spread. To me, I
+
+[46:12] think that's the biggest the biggest way that you can learn this type of strategy besides obviously, you know, learning from the from the classes that I teach. Really just playing around on a risk
+
+[46:22] profile graph with a with a with one kind of option spread and and seeing what you can do with it with a with a transform forming option spread.
+
+[46:31] Would you have a couple of good books on options trading you would like to recommend? Well, I would say this. I get that question a lot in my community and what
+
+[46:41] I would say is when it comes to reading books, the books that I would recommend are really around the mindset of trading. I always recommend trading in the zone which I'm sure has been
+
+[46:52] recommended on your show hundreds of times. So trading in the zone by Mark Douglas is a big one. Best loser wins by Tom Hougaard is
+
+[47:00] another one. The mental game of trading by Jared Tendler is a good one. Those would those would probably be my top three trading related mindset books. The other the
+
+[47:12] other mental book that I would highly recommend that's not necessarily trading related but it's called Atomic Habits by James Clear and it's really just a way to focus on your habits which as
+
+[47:25] you know John is is a is a big part of trading. So those would be my top four books. When [snorts] I when it comes to actually learning options, I don't really think that reading books is the
+
+[47:36] best way to go. I think watching videos, at least for me I'm a very visual person. I think watching videos or now with what we have with AI, asking AI questions and asking AI how to help you
+
+[47:49] navigate through different trading strategies and and options type scenarios is a much better uh, resource than than your traditional books.
+
+[48:01] Or watch some of the videos here on Theta Prophets. And, if you are curious about this way of trading and moving a position into risk free, I would also recommend the
+
+[48:12] interview we had we have with, uh, Boomer Dan, who's doing something similar, not the not the same, on zero DTE, where which he calls his zero DTE levitation trades, where his goal is to
+
+[48:24] have a number of trades that are risk free at the end of the day. So, the link to that will pop up on the screen. Thank you very much, Steve, for sharing this exciting, uh, strategy with us.
+
+[48:36] You're welcome. It was fun being here, John, and, uh, hope your audience got some value from it.

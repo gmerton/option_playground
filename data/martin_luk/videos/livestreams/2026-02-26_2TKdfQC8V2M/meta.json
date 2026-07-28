@@ -1,0 +1,19 @@
+{
+  "video_id": "2TKdfQC8V2M",
+  "url": "https://www.youtube.com/watch?v=2TKdfQC8V2M",
+  "title": "Chop chop chop | 26 Feb 2026",
+  "channel": "martinlukkt",
+  "channel_id": "UCB6jWJJvO_sWZ2PwgmMcxCw",
+  "stream_date": "2026-02-26",
+  "duration": "1:31:16",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

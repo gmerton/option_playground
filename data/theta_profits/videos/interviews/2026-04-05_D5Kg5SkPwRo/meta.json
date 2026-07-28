@@ -1,0 +1,19 @@
+{
+  "video_id": "D5Kg5SkPwRo",
+  "url": "https://www.youtube.com/watch?v=D5Kg5SkPwRo",
+  "title": "This 0DTE SPX Strategy Targets 1200% Average Wins",
+  "channel": "Theta Profits",
+  "channel_id": "UCzGARfberQ8nRRbsjK90BHg",
+  "stream_date": "2026-04-05",
+  "duration": "40:53",
+  "summary": "Shamoun Bari (addressed on air as 'Jamal') pitches a convex 0DTE SPX long call butterfly: buy a very narrow (5-15 pt, usually 10) ATM call fly around 2:15pm ET on a predicted closing 'pin' derived from dealer-gamma profiles + RSI divergence + DSS Bressert + VWAP, scale in 1-3 contracts on the same strike, then scale out into the close (close half at +300-500%, leave ~10% to expiry). Defined risk (max loss = ~$40-55 debit), sized 0.5-1% of portfolio. Headline claims: 52% win rate, 1200% average winner (median ~750%, max 4000-5000%), 52%/yr return, one setup every 2-4 weeks. Skeptic read: the 1200% avg win is the trap and is almost certainly OptionStrat theoretical-peak P&L, not realized scaled-out fills; the claimed inputs imply an implausible +520%/risk EV; no separable track record (only a winning OptionStrat example), the win-making step is admitted discretionary last-30-min management, and the tiny ~13-26 trades/yr sample is statistical noise. Defined risk is the one real virtue. Write-up: strategies/zerodte_convex_butterfly.md (conviction 1.5/5).",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

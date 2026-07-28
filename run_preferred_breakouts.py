@@ -71,12 +71,12 @@ def _write_artifacts(results: List[Dict[str, Any]], report: str, as_of: date) ->
     return {"monitor": monitor, "buckets": bk}
 
 
-async def _run(api_key: str, tickers: List[str], premarket: bool) -> None:
+async def _run(api_key: str, tickers: List[str], premarket: bool, asof=None) -> None:
     print(f"Scanning {len(tickers)} preferred tickers...", flush=True)
     async with TradierClient(api_key=api_key) as client:
-        results = await run_eod_scan(client, tickers)
+        results = await run_eod_scan(client, tickers, asof=asof)
 
-    as_of = date.today()
+    as_of = asof or date.today()
     report = format_eod_output(results, as_of)
     print(report)
 
@@ -84,6 +84,16 @@ async def _run(api_key: str, tickers: List[str], premarket: bool) -> None:
         enriched = enrich_premarket(results)
         report = report + "\n" + format_premarket_output(enriched, as_of)
         print(format_premarket_output(enriched, as_of))
+
+    # Historical (--asof) runs are read-only: don't clobber the *_latest.json
+    # artifacts the live intraday monitor points at.
+    if asof is not None:
+        from lib.interface.breakout_artifacts import buckets as _bk
+        confirmed = _bk(results)["confirmed"]
+        print(f"\n--- Historical run as of {as_of} (artifacts NOT written) ---")
+        print(f"  Confirmed breakouts ({len(confirmed)}): "
+              f"{', '.join(r['ticker'] for r in confirmed) or '(none)'}")
+        return
 
     info = _write_artifacts(results, report, as_of)
     mon = info["monitor"]
@@ -103,6 +113,8 @@ def main() -> None:
     ap = argparse.ArgumentParser(description="Preferred-ticker breakout scan")
     ap.add_argument("--mode", choices=["eod", "premarket"], default="eod",
                     help="eod: scan only; premarket: + yfinance gap overlay")
+    ap.add_argument("--asof", help="scan as of a past completed session, YYYY-MM-DD "
+                                   "(read-only; excludes today's partial bar)")
     args = ap.parse_args()
 
     api_key = os.environ.get("TRADIER_API_KEY")
@@ -110,7 +122,8 @@ def main() -> None:
         print("Error: TRADIER_API_KEY not set.", file=sys.stderr)
         sys.exit(1)
 
-    asyncio.run(_run(api_key, _load_tickers(), args.mode == "premarket"))
+    asof = date.fromisoformat(args.asof) if args.asof else None
+    asyncio.run(_run(api_key, _load_tickers(), args.mode == "premarket", asof=asof))
 
 
 if __name__ == "__main__":

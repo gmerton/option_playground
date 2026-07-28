@@ -1,0 +1,77 @@
+{
+  "video_id": "0bvjF-T_3UE",
+  "date": "2026-03-13",
+  "title": "No panic yet | 13 Mar 2026",
+  "observed_trades": [
+    {
+      "date": "2026-03-13",
+      "ticker": "UVXY",
+      "direction": "long",
+      "action": "entry",
+      "setup": "One of three ideas for the day; UVXY long pulling back into the intraday VWAP from the Monday high, wanting a VIX push to 40-50 to reset the market.",
+      "entry_basis": "Pullback into intraday VWAP from Monday high",
+      "stop": "",
+      "source": "2026-03-13_0bvjF-T_3UE@04:20",
+      "confidence": "stated",
+      "notes": "Caption 'UXY'/'U W S Y'/'UVXY' = UVXY. He states three ideas: PG short, LYFT short, UVXY long. He references being stopped out of it and making a second/third attempt, confirming a real fill. Flagged in ambiguous_tickers.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-03-13",
+      "ticker": "UVXY",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Plans a re-entry if stopped out; after a second failed attempt he decides not to try a third time (UVXY hard to trade).",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-03-13_0bvjF-T_3UE@30:30",
+      "confidence": "inferred",
+      "notes": "He references getting stopped out of UVXY and a second/third attempt; outcome inferred from narration. Flagged in ambiguous_tickers.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-03-13",
+      "ticker": "PG",
+      "direction": "short",
+      "action": "entry",
+      "setup": "Procter & Gamble short; PM weaker than Qs/SPY, can't get above the 250 level, bouncing into declining EMAs.",
+      "entry_basis": "Bounce into declining hourly 9/21 EMA; rejection at 250 level",
+      "stop": "",
+      "source": "2026-03-13_0bvjF-T_3UE@04:20",
+      "confidence": "inferred",
+      "notes": "Caption 'PM'/'Procter & Gamble' = PG. One of his three stated trade ideas; he is short-biased on the bounce and 'cannot get above 250'. No explicit fill word for PG (unlike UVXY stop-out and the LYFT 10% build), so the fill is inferred from the trade-plan framing. Flagged in ambiguous_tickers.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-03-13",
+      "ticker": "LYFT",
+      "direction": "short",
+      "action": "entry",
+      "setup": "Lyft short; focus on intraday VWAP from the swing low and the hourly 9/21 EMA; yesterday gave a good entry on the bounce into the all-time-high VWAP / declining 9 EMA.",
+      "entry_basis": "Bounce into intraday VWAP from swing low / 9 or 21 EMA on hourly",
+      "stop": "",
+      "source": "2026-03-13_0bvjF-T_3UE@07:46",
+      "confidence": "stated",
+      "notes": "Caption 'Lyft'/'light' = LYFT. One of three stated ideas; he built it as only a ~10% position after running low on buying power ('I can only build it 10% position on light'), confirming a real (partial) fill. Flagged in ambiguous_tickers.",
+      "fill_timing": "today"
+    }
+  ],
+  "principles": [
+    { "category": "posture", "text": "No panic yet: with the VIX still under 30 and money still flowing into the strongest small/micro-cap leaders, sentiment isn't bearish enough; wait for a huge flush that stops out even the leaders.", "timestamp": "53:40" },
+    { "category": "posture", "text": "When breadth is low and leadership is shrinking, stop hunting breakouts and longs; this kind of market punishes traders who chase every breakout.", "timestamp": "68:35" },
+    { "category": "entries", "text": "A genuine support reaction is a fast V-shaped bounce reclaiming the 9 EMA quickly; a slow, weak bounce off the EMA (no quick reclaim) is a warning, not a buy.", "timestamp": "43:00" },
+    { "category": "mindset", "text": "You don't need to trade every day or master every setup/side/condition; you can avoid the shorts you dislike and still make a good return.", "timestamp": "75:24" },
+    { "category": "macro", "text": "Use the oil top as a tell for a market low: the market likely finds at least a short-term bottom when oil tops; watch ~120 prior high and ~105 as levels.", "timestamp": "56:14" },
+    { "category": "risk", "text": "Don't trade extended names long: a stock 50% above its 50 EMA and nowhere near the daily 9 EMA is a poor spot to take a long despite a shallow pullback.", "timestamp": "71:25" }
+  ],
+  "ambiguous_tickers": [
+    { "timestamp": "04:20", "caption_text": "the UXY long ... U W S Y", "context": "His one long idea among three; pulling back into intraday VWAP, wants a VIX push to 40-50; calls it harder to trade than SQQQ/inverse ETFs but higher potential gain.", "guess": "UVXY", "confidence": "likely" },
+    { "timestamp": "04:20", "caption_text": "Procter & Gamble short ... PM is a bit weaker than the Qs", "context": "One of three stated ideas; can't get above the 250 level, bouncing into declining EMAs.", "guess": "PG", "confidence": "likely" },
+    { "timestamp": "07:46", "caption_text": "Lyft, my focus will be on the intraday web ... I think I can only build it 10% position on light", "context": "A short idea; good entry on the bounce into all-time-high VWAP and declining 9 EMA; limited size due to low buying power.", "guess": "LYFT", "confidence": "likely" },
+    { "timestamp": "24:49", "caption_text": "A O I is at the end of VWAP from the earnings day", "context": "At anchored VWAP from the EP day; could be a play if the market stays strong; he never actually trades it.", "guess": "AAOI", "confidence": "likely" },
+    { "timestamp": "33:33", "caption_text": "Rocket Lab is to me is a short", "context": "Space/drone name he won't trust breakouts on; under the EMAs, looking for the short side.", "guess": "RKLB", "confidence": "likely" },
+    { "timestamp": "31:13", "caption_text": "Riot ... is actually bouncing pretty hard", "context": "A crypto-miner name bouncing strongly; watching for rejection at the 9 EMA.", "guess": "RIOT", "confidence": "likely" },
+    { "timestamp": "39:41", "caption_text": "And NetApp is showing strong ... huge relative strength today", "context": "A name showing huge relative strength on the day.", "guess": "NTAP", "confidence": "unsure" },
+    { "timestamp": "18:35", "caption_text": "the Nifty 50 is ... Nifty index ... the Indian market is getting hammered. Down 11%", "context": "Indian index down 11% in two weeks; he wishes the US market would flush similarly.", "guess": "NIFTY", "confidence": "likely" }
+  ]
+}

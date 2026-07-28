@@ -1,0 +1,18 @@
+
+=== EOD WATCHLIST — 2026-07-21 (for tomorrow) ===
+
+* POTENT — yesterday's leaders near pivot
+  PR     close $20.86    pivot $22.68 (-8.0%)        ADR 2.5%  EMA:Lead  1M:+13%  vol $150M  RVOL 0.5x  !adr
+  CASY   close $860.60   pivot $927.85 (-7.2%)       ADR 3.6%  EMA:Lead  1M:+2%  vol $227M  RVOL 0.3x
+  EBAY   close $113.06   pivot $119.31 (-5.2%)       ADR 2.6%  EMA:Lead  1M:+4%  vol $415M  RVOL 0.4x  !adr
+  HST    close $24.32    pivot $25.41 (-4.3%)        ADR 2.0%  EMA:Lead  1M:-3%  vol $186M  RVOL 0.3x  !adr
+  IBKR   close $94.20    pivot $97.84 (-3.7%)        ADR 3.9%  EMA:Lead  1M:-2%  vol $351M  RVOL 0.7x
+  ROST   close $237.51   pivot $242.81 (-2.2%)       ADR 2.7%  EMA:Lead  1M:+2%  vol $458M  RVOL 0.4x  !adr
+  BURL   close $355.50   pivot $361.21 (-1.6%)       ADR 3.3%  EMA:Lead  1M:+6%  vol $238M  RVOL 0.5x  !adr
+  NUVL   close $123.96   pivot $123.97 (-0.0%)       ADR 0.1%  EMA:Lead  1M:+0%  vol $260M  RVOL 1.2x  !adr
+  CVS    close $110.09   pivot $108.97 (+1.0%)       ADR 2.3%  EMA:Lead  1M:+12%  vol $812M  RVOL 0.7x (broke pivot, light vol)  !adr
+
+^ LEADERS — 1-month RS standouts
+  ILMN   close $190.44   1M:+18%  3M:+43%  ADR 3.9%  EMA:Lead  near pivot (-3.2%)  vol $245M  RVOL 0.5x
+
+Total candidates: 10  (Potent: 9, Leaders: 1)

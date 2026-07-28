@@ -1,0 +1,19 @@
+{
+  "video_id": "KuQdL4-1IcM",
+  "url": "https://www.youtube.com/watch?v=KuQdL4-1IcM",
+  "title": "This butterfly strategy aims to remove risk as fast as possible",
+  "channel": "Theta Profits",
+  "channel_id": "UCzGARfberQ8nRRbsjK90BHg",
+  "stream_date": "2026-06-14",
+  "duration": "46:39",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

@@ -1,0 +1,131 @@
+{
+  "video_id": "wTbuVPT4hc0",
+  "date": "2026-04-07",
+  "title": "$WTI potential double top | 7 Apr 2026",
+  "observed_trades": [
+    {
+      "date": "2026-04-07",
+      "ticker": "COIN",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Crypto long stopped out on the gap-down open; crypto probably heading lower, maybe he was too early or wrong.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-04-07_wTbuVPT4hc0@05:03",
+      "confidence": "stated",
+      "notes": "Caption 'coin' = Coinbase; says he'll get stopped out from coin on the open.",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-04-07",
+      "ticker": "MSTR",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Stopped out of MicroStrategy (second crypto-proxy stop); crypto probably heading lower.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-04-07_wTbuVPT4hc0@46:30",
+      "confidence": "stated",
+      "notes": "'I got stopped out from Micro Strategy 2' = MSTR.",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-04-07",
+      "ticker": "FSLY",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Fastly long stopped out right after the open; admits he set the stop a bit too tight (too greedy) and would not have been stopped using the 5-minute candle low.",
+      "entry_basis": "",
+      "stop": "Set too tight (below 5-min candle low would have held)",
+      "source": "2026-04-07_wTbuVPT4hc0@28:01",
+      "confidence": "stated",
+      "notes": "Fastly = FSLY; stopped out again later too. Position carried in from a prior session.",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-04-07",
+      "ticker": "DRIP",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "XOP inverse ETF (DRIP) short-oil proxy; followed stop and got taken out, then it pulled back (rejected after hunting his stop).",
+      "entry_basis": "Bounce into anchored VWAP from swing high (short oil thesis)",
+      "stop": "",
+      "source": "2026-04-07_wTbuVPT4hc0@11:27",
+      "confidence": "stated",
+      "notes": "Caption 'drip'/'XOP'/'XOP'= DRIP, the -2x oil & gas ETF used as a WTI double-top short; he follows the stop on 'drip'. Position carried in from a prior session.",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-04-07",
+      "ticker": "?",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Bought half size on a name (caption 'SOLS'/'SOS') via limit order around 78.65; treated as a sympathy trade with the market / breakout near yesterday's high.",
+      "entry_basis": "Limit order ~78.65; later 15-min breakout, hourly 9 EMA",
+      "stop": "",
+      "source": "2026-04-07_wTbuVPT4hc0@16:18",
+      "confidence": "stated",
+      "notes": "Ticker uncertain: caption 'SOLS'/'SOS' garbled and not decodable; set to '?'. He bought half size (limit ~78.65) and got stopped out later. Flagged in ambiguous_tickers.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-04-07",
+      "ticker": "?",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "The half-size 'SOS' long got stopped out again as the market headed lower.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-04-07_wTbuVPT4hc0@98:41",
+      "confidence": "stated",
+      "notes": "Same garbled 'SOS' name; ticker not decodable, set to '?'. Flagged in ambiguous_tickers.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-04-07",
+      "ticker": "QQQ",
+      "direction": "long",
+      "action": "reentry",
+      "setup": "Re-entered 'Q' (likely QQQ or a name he calls Q) on a 15-minute breakout / pullback into the 9 EMA and anchored VWAP from the all-time high.",
+      "entry_basis": "15-minute candle breakout on pullback into 9 EMA / anchored VWAP",
+      "stop": "",
+      "source": "2026-04-07_wTbuVPT4hc0@61:10",
+      "confidence": "stated",
+      "notes": "Ticker uncertain: he repeatedly calls it 'Q' and pairs it with 'SOS'; could be QQQ or an individual name. Flagged in ambiguous_tickers.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-04-07",
+      "ticker": "BMNR",
+      "direction": "long",
+      "action": "hold",
+      "setup": "BMNR and COIN crypto longs at risk of being stopped out as market heads lower; expects ~5% portfolio drawdown today if both stop.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-04-07_wTbuVPT4hc0@99:38",
+      "confidence": "stated",
+      "notes": "Caption 'BMNR' = BitMine; held into potential stop-out.",
+      "fill_timing": ""
+    }
+  ],
+  "principles": [
+    { "category": "risk", "text": "Don't set stops too tight out of greed; placing a stop below the 5-minute candle low can avoid getting shaken out of a good entry.", "timestamp": "29:53" },
+    { "category": "exits", "text": "A push to new highs followed by a failed breakout is one of the most common tell-tale signs of a double/climax top, especially with a climax top on the left.", "timestamp": "85:58" },
+    { "category": "entries", "text": "On a pullback day into the 9 EMA, take more attempts on the long side when the leaders are doing well; this is good timing for pullback buys.", "timestamp": "75:16" },
+    { "category": "exits", "text": "For shorts, selling into weakness is welcome anytime; if you already sold some into strength you can hold the rest longer for a close below the 9 EMA.", "timestamp": "110:37" },
+    { "category": "risk", "text": "Sizing below 3% per trade is optional and situational; deepen the drawdown (e.g. past ~10%) before cutting risk further.", "timestamp": "102:10" },
+    { "category": "posture", "text": "It's hard to short an uptrend; avoid being aggressive or large on the short side while price keeps gapping higher.", "timestamp": "101:03" }
+  ],
+  "ambiguous_tickers": [
+    { "timestamp": "12:11", "caption_text": "The spread of uh SOS is pretty wide ... SOLS", "context": "A name he buys half-size via limit order ~78.65, treats as a market-sympathy/breakout trade, and gets stopped out of twice; wide spread early, narrower later.", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "06:16", "caption_text": "this Q and this SOL looks pretty identical inside day", "context": "Two charts with one-month bases above all EMAs, pulled back to the 15 EMA, trying to break out; he later re-enters 'Q'.", "guess": "QQQ", "confidence": "unsure" },
+    { "timestamp": "32:30", "caption_text": "Hills is at the end of V from the Wednesday low", "context": "An undercut-and-rally candle breaking out from anchored VWAP.", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "39:16", "caption_text": "a nice breakouts on the CF", "context": "A name putting in a strong 5-minute breakout candle ('CF is doing good').", "guess": "CF", "confidence": "unsure" },
+    { "timestamp": "33:12", "caption_text": "FA is still under 21 EMA", "context": "A name that could set up a breakout if it closes above the 9 EMA (tiny flag then upside).", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "55:13", "caption_text": "YSA set and the free web from this from the IPO high", "context": "A recent-IPO name at anchored VWAP from the IPO high, a bit extended from the 9 EMA.", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "70:22", "caption_text": "Lucky is pulling is pulling back into the angle web", "context": "A name pulling back into anchored VWAP; possibly mis-transcribed company name.", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "70:49", "caption_text": "PL looks like the stand alone the outlier", "context": "Satellite-stock group becoming the hottest sector; PL described as the standout outlier.", "guess": "PL", "confidence": "likely" },
+    { "timestamp": "112:43", "caption_text": "The power looks looks great actually", "context": "A name holding up very well, looks like a successful breakout (an electricity/power-themed stock).", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "63:12", "caption_text": "Nepus", "context": "Crypto/AI-adjacent name he keeps wanting to enter but its daily sits at anchored VWAP; he goes for the crypto instead.", "guess": "NBIS", "confidence": "likely" }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "video_id": "_ko_4ity85A",
+  "url": "https://www.youtube.com/watch?v=_ko_4ity85A",
+  "title": "$IWM outperformance | 8 Jan 2026",
+  "channel": "martinlukkt",
+  "channel_id": "UCB6jWJJvO_sWZ2PwgmMcxCw",
+  "stream_date": "2026-01-09",
+  "duration": "1:22:14",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

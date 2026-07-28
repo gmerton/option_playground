@@ -1,0 +1,365 @@
+{
+  "video_id": "F_Xw70m9jeA",
+  "date": "2026-07-13",
+  "title": "Declining breadth | 13 Jul 2026",
+  "observed_trades": [
+    {
+      "date": "2026-07-13",
+      "ticker": "HOOD",
+      "direction": "long",
+      "action": "sell",
+      "setup": "Sold the long into strength after a close below the 9 EMA on the 60-minute chart; crypto (BTC/ETH) showed no Tuesday follow-through after Monday's undercut-and-reclaim, and HOOD was approaching prior overhead resistance ~120 amid declining market breadth.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-07-13_F_Xw70m9jeA@06:41",
+      "confidence": "stated",
+      "notes": "Caption reads 'I closed put on Tuesday' — interpreted as HOOD (he immediately cites 'the hood... approaching the previous overheads resistance... around like 120 area' and crypto correlation). Closed Tuesday last week while traveling.",
+      "fill_timing": "Tuesday last week (2026-07-07)"
+    },
+    {
+      "date": "2026-07-13",
+      "ticker": "CRWD",
+      "direction": "long",
+      "action": "sell",
+      "setup": "Sold software long after CRWD closed below the 9 EMA; didn't wait for the daily close, exited on the first 60-minute candle. Part of clearing all remaining longs on declining breadth.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-07-13_F_Xw70m9jeA@08:55",
+      "confidence": "stated",
+      "notes": "Caption 'crowd' = CRWD. Sold together with FTNT(?) and NET on Friday: 'I sold them all on the Friday... after crowd closed below the 9 EMA'.",
+      "fill_timing": "Friday last week (2026-07-10)"
+    },
+    {
+      "date": "2026-07-13",
+      "ticker": "FTNT",
+      "direction": "long",
+      "action": "sell",
+      "setup": "Sold along with CRWD and NET on Friday as the software longs weakened (CRWD 9 EMA break was the trigger for exiting the group).",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-07-13_F_Xw70m9jeA@08:55",
+      "confidence": "stated",
+      "notes": "Caption 'foret' — best guess Fortinet (FTNT), a software name fitting the group he was long; ticker interpretation uncertain (see ambiguous_tickers).",
+      "fill_timing": "Friday last week (2026-07-10)"
+    },
+    {
+      "date": "2026-07-13",
+      "ticker": "NET",
+      "direction": "long",
+      "action": "sell",
+      "setup": "Sold along with CRWD and FTNT(?) on Friday as software longs rolled over; exit into the group's 9 EMA break.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-07-13_F_Xw70m9jeA@08:55",
+      "confidence": "stated",
+      "notes": "Caption 'net' = NET (Cloudflare). 'I sold them all on the Friday.'",
+      "fill_timing": "Friday last week (2026-07-10)"
+    },
+    {
+      "date": "2026-07-13",
+      "ticker": "IONQ",
+      "direction": "short",
+      "action": "cover",
+      "setup": "Covered quantum shorts into weakness on Tuesday after the gap down and downside follow-through into the weekly 50 EMA (~45), also near the low of the previous uptrend. His style: book short profits into weakness rather than hold for a bigger trend.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-07-13_F_Xw70m9jeA@10:27",
+      "confidence": "stated",
+      "notes": "Captions 'by Q' / 'IQ' with 'weekly 50 EMA... around 45ish' — interpreted as IONQ. He says 'quantum shorts' (plural), so there may have been more than one quantum name; only IONQ is resolvable.",
+      "fill_timing": "Tuesday last week (2026-07-07)"
+    },
+    {
+      "date": "2026-07-13",
+      "ticker": "NBIS",
+      "direction": "long",
+      "action": "sell",
+      "setup": "Closed semi/AI-infra longs (Nebius and other semi names) as they weakened; after he closed, the stock flushed hard (gapped down ~5%, nearly -8% intraday). The weakening of his longs plus working shorts was his change-of-character signal.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-07-13_F_Xw70m9jeA@12:50",
+      "confidence": "stated",
+      "notes": "Captions 'Napius'/'Napas' interpreted as NBIS (Nebius). 'The long stuff that closed is also getting weak. So like Napius and a lot of the semi names'; at 55:18 'after I close my semi longs... it get a huge flush to the downside'. Exact day of the close not stated (before Thursday).",
+      "fill_timing": "last week, before Thursday"
+    },
+    {
+      "date": "2026-07-13",
+      "ticker": "?",
+      "direction": "short",
+      "action": "short",
+      "setup": "Started shorts on the semiconductor ETF on Thursday at the open, after the US semi sector repeated the SK Hynix/Samsung pattern (breakdown, rally back into declining 9/21 EMAs, fade) and after his own semi longs stopped working.",
+      "entry_basis": "Thursday open, sector fading back below declining 9/21 EMAs",
+      "stop": "",
+      "source": "2026-07-13_F_Xw70m9jeA@52:05",
+      "confidence": "stated",
+      "notes": "Caption 'started the shorts on the to send me ETF' = 'the semi ETF' — instrument unresolvable (SMH/SOXX short or inverse SOXS). He 'reposted my short tweets... on Thursday at the open'. Position appears still open.",
+      "fill_timing": "Thursday last week (2026-07-09)"
+    },
+    {
+      "date": "2026-07-13",
+      "ticker": "DELL",
+      "direction": "long",
+      "action": "buy",
+      "setup": "Bought Wednesday's breakout: first 60-minute fade, then breakout of a tiny range on the 15-minute chart, taking out the range highs.",
+      "entry_basis": "15-minute tight-range breakout after the first 60-minute fade",
+      "stop": "",
+      "source": "2026-07-13_F_Xw70m9jeA@40:19",
+      "confidence": "stated",
+      "notes": "Caption 'deli'/'D' interpreted as DELL. 'I actually long this thing on Wednesday.'",
+      "fill_timing": "Wednesday last week (2026-07-08)"
+    },
+    {
+      "date": "2026-07-13",
+      "ticker": "DELL",
+      "direction": "long",
+      "action": "sell",
+      "setup": "Sold Thursday for a very quick swing; he now flags that if DELL fails to reclaim the 9 EMA it becomes a dangerous failed breakout / failed FCP with trapped left-side buyers.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-07-13_F_Xw70m9jeA@40:57",
+      "confidence": "stated",
+      "notes": "'I just sold it on Thursday. So it's a really quick swing.'",
+      "fill_timing": "Thursday last week (2026-07-09)"
+    },
+    {
+      "date": "2026-07-13",
+      "ticker": "LITE",
+      "direction": "short",
+      "action": "short",
+      "setup": "Shorted the lagging semi/optical name during the stream: weakening semi sector, LITE topped mid-June and built lower highs while the sector made higher highs, lost its EMAs with all EMAs trending down; also a sympathy short on QQQ opening below all EMAs. Chart resembles a textbook rounding top but he stresses the pattern is not the reason.",
+      "entry_basis": "Fade from the ~78.5 area ('785 level') below the declining 9 EMA; initial 1-minute breakdown entry was missed at 28:01, entered on the subsequent fade",
+      "stop": "Tight, above the bounce into the declining 9 EMA (implied: 'if it stops me out then continues rally into the declining nine')",
+      "source": "2026-07-13_F_Xw70m9jeA@34:37",
+      "confidence": "inferred",
+      "notes": "Caption 'light'/'lights' = LITE (Lumentum). Position confirmed live: at 111:51 'I'm still in light. I haven't got stopped out just yet.' Exact entry moment between 28:01 (missed first trigger) and 34:37 (managing the position).",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-07-13",
+      "ticker": "LITE",
+      "direction": "short",
+      "action": "stopped_out",
+      "setup": "Stopped out of the LITE short late in the session on an intraday bounce, at what he calls 'a pretty poor timing'.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-07-13_F_Xw70m9jeA@113:01",
+      "confidence": "stated",
+      "notes": "'Oh no, I got stopped out from lights at a pretty poor timing.'",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-07-13",
+      "ticker": "SQQQ",
+      "direction": "long",
+      "action": "buy",
+      "setup": "Bought SQQQ (inverse QQQ, i.e. a QQQ short) after QQQ gapped down below the 9/21 EMAs with worsening breadth and momentum loss in the leading sector; waited for the push into the 5-minute EMAs (SPY at 5-min 9 EMA) then took the shot with a very tight stop.",
+      "entry_basis": "QQQ rejection near the 5-minute 21 EMA / 15-minute 9 EMA after the gap down below the daily 9/21 EMAs",
+      "stop": "Very tight ('the stop is really tight')",
+      "source": "2026-07-13_F_Xw70m9jeA@95:38",
+      "confidence": "stated",
+      "notes": "Caption 'SQQ loan' at 104:15 = 'SQQQ long', sized ~0.15% of equity ('really a paper cut'). Expressed as a short on 'the cues' (QQQ).",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-07-13",
+      "ticker": "SQQQ",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Stopped out 'just barely' as the market pushed into the 15-minute 9 EMA; considered one last re-entry attempt if QQQ rolled over but it is not confirmed as taken.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-07-13_F_Xw70m9jeA@103:58",
+      "confidence": "stated",
+      "notes": "'Looks like we're getting stopped out just yeah barely.' Loss trivial at ~0.15% of equity. Possible re-entry at 104:15 left unresolved ('Not sure whether I would take this maybe').",
+      "fill_timing": "today"
+    }
+  ],
+  "principles": [
+    {
+      "category": "exit",
+      "text": "Sell longs into strength once they close below the 9 EMA on the 60-minute chart; be quick and lenient on selling rather than waiting for full confirmation (he often exits on the first 60-minute candle instead of the daily close).",
+      "timestamp": "08:55"
+    },
+    {
+      "category": "exit",
+      "text": "Cover shorts into weakness and book the profit rather than holding for a longer trend move.",
+      "timestamp": "10:44"
+    },
+    {
+      "category": "market_read",
+      "text": "Use your own trade feedback as a situational-awareness signal: when shorts start working and recently-closed longs keep weakening, treat it as evidence of a change of character or the start of a downtrend.",
+      "timestamp": "12:12"
+    },
+    {
+      "category": "market_read",
+      "text": "Weigh individual watchlist stock action more heavily than the index chart: many names cracking the 50 EMA (some the 150 EMA) is bearish even while the index holds its EMAs.",
+      "timestamp": "15:01"
+    },
+    {
+      "category": "market_read",
+      "text": "Increasing volatility after an uptrend — wide-range candles, alternating gap-ups and gap-downs, undercut-reclaim-breakout-gap-down sequences — is a sign of momentum loss and a market that needs to rest or roll over.",
+      "timestamp": "56:32"
+    },
+    {
+      "category": "entry",
+      "text": "Don't short into potential support (e.g. the 60-minute 50 EMA); wait for a bounce into the declining 9/21 EMAs for a better risk/reward entry.",
+      "timestamp": "28:23"
+    },
+    {
+      "category": "entry",
+      "text": "The perfect entry may never appear — sometimes you must take an imperfect entry rather than wait forever for the textbook bounce.",
+      "timestamp": "35:36"
+    },
+    {
+      "category": "entry",
+      "text": "The chart pattern is not the reason for the trade: sector weakness, relative weakness versus peers (lower highs while the group makes higher highs), and EMA structure drive the decision — the pattern just happens to look textbook.",
+      "timestamp": "37:30"
+    },
+    {
+      "category": "market_read",
+      "text": "A huge-volume range-expansion reversal after an extended rally rarely starts a new uptrend right away; expect chop or a downtrend while the 9/21 EMAs come down and dip-buyers at the 50 EMA are exhausted.",
+      "timestamp": "44:42"
+    },
+    {
+      "category": "market_read",
+      "text": "The faster and more parabolic a move gets after a long rally, the higher the probability it is topping; when the strongest leader of a group reverses, it can mark the end of the whole group's move.",
+      "timestamp": "84:56"
+    },
+    {
+      "category": "posture",
+      "text": "With declining breadth after a big rally, prefer missing a potential rally over being aggressive on the long side; don't trust the first bounce until new leadership forms.",
+      "timestamp": "76:44"
+    },
+    {
+      "category": "risk",
+      "text": "Don't flip between longs and shorts rapidly; if the market reclaims its EMAs against your short thesis, sit out rather than immediately hopping to the long side, to avoid getting hammered from both sides in chop.",
+      "timestamp": "100:24"
+    },
+    {
+      "category": "sizing",
+      "text": "In choppy, low-conviction conditions keep position risk tiny (e.g. ~0.15% of equity) so a stop-out is only a paper cut.",
+      "timestamp": "104:15"
+    },
+    {
+      "category": "process",
+      "text": "Judge volume rules through your own study instead of accepting book rules: low-volume breakouts can still lead the strongest rallies, and the deep-dive process (what you look at, what works, what doesn't) matters more than the tools.",
+      "timestamp": "68:32"
+    },
+    {
+      "category": "psychology",
+      "text": "Taking real rest matters: it's acceptable to sacrifice some trades and profits for a genuine break instead of grinding continuously.",
+      "timestamp": "16:59"
+    },
+    {
+      "category": "psychology",
+      "text": "Let emotions from mistakes pass quickly — focus on the next trade instead of dwelling on missed entries or panic sells.",
+      "timestamp": "111:51"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "06:41",
+      "caption_text": "I closed put on Tuesday",
+      "context": "The long he sold Tuesday into strength on a 60-min 9 EMA break; he cites crypto weakness and the name 'approaching the previous overheads resistance... around like 120 area'.",
+      "guess": "HOOD",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "08:55",
+      "caption_text": "crowd",
+      "context": "Software long sold Friday after it 'closed below the 9 EMA'; trigger for exiting the whole software group.",
+      "guess": "CRWD",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "08:55",
+      "caption_text": "foret",
+      "context": "Second software long sold Friday together with 'crowd' and 'net'.",
+      "guess": "FTNT",
+      "confidence": "uncertain"
+    },
+    {
+      "timestamp": "08:55",
+      "caption_text": "net",
+      "context": "Third software long sold Friday.",
+      "guess": "NET",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "10:27",
+      "caption_text": "by Q ... IQ. Yeah, 45ish",
+      "context": "The quantum short he covered Tuesday after a gap down into the weekly 50 EMA around 45, near the low of the previous uptrend.",
+      "guess": "IONQ",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "12:50",
+      "caption_text": "Napius (also 'Napas' at 76:15)",
+      "context": "One of the semi/AI longs he closed that then got very weak (gapped down ~5%, -8% intraday after his exit); later cited as a candidate for new leadership if it reclaims the 21 EMA.",
+      "guess": "NBIS",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "16:21",
+      "caption_text": "Palanteer",
+      "context": "Says last Tuesday was a really good short entry that he missed while traveling — no fill, watch commentary only.",
+      "guess": "PLTR",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "28:01",
+      "caption_text": "light / lights",
+      "context": "The lagging semi/optical name he shorts live: topped mid-June, lower highs vs the sector, lost all EMAs; stopped out late in the stream at 113:01.",
+      "guess": "LITE",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "40:19",
+      "caption_text": "deli ... D",
+      "context": "Breakout he bought Wednesday and sold Thursday (quick swing); now a potential failed FCP if it can't reclaim the 9 EMA.",
+      "guess": "DELL",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "41:52",
+      "caption_text": "AAP is super weak. It's simply gold.",
+      "context": "One-line weakness observation, goes straight down after the open; no trade.",
+      "guess": "APP",
+      "confidence": "uncertain"
+    },
+    {
+      "timestamp": "52:05",
+      "caption_text": "started the shorts on the to send me ETF",
+      "context": "'The semi ETF' he started shorting Thursday at the open (also reposted short tweets then); instrument unclear — SMH/SOXX short or an inverse ETF like SOXS.",
+      "guess": "?",
+      "confidence": "uncertain"
+    },
+    {
+      "timestamp": "59:30",
+      "caption_text": "AOI",
+      "context": "'One of the first leaders showing weakness... riding the 9 EMA down' — market-read commentary, no trade.",
+      "guess": "AAOI",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "64:04",
+      "caption_text": "corning / warnings / horning / coing",
+      "context": "The group leader whose huge gap-down and 9 EMA loss on 1 July made him more bearish; strongest post-18-June breakout (~50% in two weeks after a 500%+ multi-year run), compared against peer SNDK. Watch-tell only, no fill.",
+      "guess": "GLW",
+      "confidence": "uncertain"
+    },
+    {
+      "timestamp": "90:51",
+      "caption_text": "cues / kills",
+      "context": "The index he is looking to short (via SQQQ long); gapped down below 9/21 EMAs, found support at 50 EMA since Wednesday.",
+      "guess": "QQQ",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "104:15",
+      "caption_text": "the SQQ loan is only like 0.15% of my equity",
+      "context": "'SQQQ long' — his instrument for the QQQ short, sized ~0.15% of equity.",
+      "guess": "SQQQ",
+      "confidence": "likely"
+    }
+  ]
+}

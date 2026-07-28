@@ -1,0 +1,19 @@
+{
+  "video_id": "y_7vCLAcc9c",
+  "url": "https://www.youtube.com/watch?v=y_7vCLAcc9c",
+  "title": "The Flyagonal Options Strategy: 96% Win Rate and $24k in 2 Months",
+  "channel": "Theta Profits",
+  "channel_id": "UCzGARfberQ8nRRbsjK90BHg",
+  "stream_date": "2025-08-10",
+  "duration": "34:39",
+  "summary": "Steve Gunn (sjgtrades.com) pitches the 'flyagonal' — a delta-neutral SPX combo of a put diagonal below (long vol) plus a call broken-wing butterfly above (short vol), 8-10 DTE, taking ~10% of max loss; mechanically the same structure as Simon Black's Time Flies, independently developed. Headline '96% win rate / $24k in 2 months' rests on just 58/60 winning trades over ~10 weeks of a benign low-vol regime, with admittedly unfinalized mechanics and heavy course/alert sales motive. Write-up: strategies/flyagonal.md (conviction 1.5/5).",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

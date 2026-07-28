@@ -1,0 +1,705 @@
+[00:00] I'm pretty confident to say my win rate's over about 85%. I've had butterflies that that have closed out for over a thousand% profit. My goal is to win the day.
+
+[00:08] My guest loves trying to predict where the market will end each day and then pin a smart trade exactly at that level. But isn't that easier said than done? Welcome Chris Pulver.
+
+[00:22] Hey John, thank you. So let's get straight to it. give us the 42nd version of how you trade zero DTE and how it's going for you. So ZDT has been something I've been I
+
+[00:34] started with in 2022 when it became kind of groundbreaking. I know that we've been able to trade index options since like 1981, but Zerdt has really allowed me to take lots and lots of reps in the
+
+[00:44] market and build some strategies where what would typically be start to finish over a 30-day trade or a 45day trade, now we can do it every single day. So, it's really accelerated the learning
+
+[00:55] curve as far as, you know, building a strategy, managing risk daytoday. And so, you mentioned I I I like to pin prices. Well, I'll share today that there's a couple of core strategies I
+
+[01:05] look at for zero DTE. It includes kind of a daily look at an iron condor and also some daily looks at butterfly spreads or maybe broken wing butterfly spreads. And I kind of stick to those
+
+[01:15] three. That's kind of my wheelhouse. That's my strike zone. So I I try to, you know, map out the day, plan accordingly, definitely keep risk under control, and I will give the markets
+
+[01:24] hopefully an opportunity to, you know, stay within some levels for me to make some, you know, zero DT profits. And zero DT is indeed an exciting way to trade, at least in in my experience. But
+
+[01:35] tell us a little bit about yourself, especially as an options trader. I've been trading since early 2000s, and started off with just a passive, you know, stock portfolio, myself and my
+
+[01:46] brother. We had some friends and family. We did a little investment club. And so we were participating in the markets since just after the do-com bubble and we built some scanners and screeners. We
+
+[01:54] subscribed to some newsletters and we just participated not really knowing much but you know if we like some companies like some trends we kind of allocate some cash. Uh you know and if
+
+[02:02] you can you can imagine you know surviving the do bubble or surviving even the great financial crisis and just being willing to buy and participate in the markets for 20 plus years. As they
+
+[02:10] say time in the market is better than timing the market. And so we did pretty well for a 20 20 plus year stretch. Fast forward to 06 07. I actually met a currency trader at the time and he
+
+[02:20] really introduced me to trading currencies and leverage and more technicals and just putting the whole picture together from like top down analysis. And so going through the great
+
+[02:28] financial crisis I figured hm well I that wasn't fun to have a you know 30 40 50% draw down in our portfolio. So what ways can we add you know layers of protection to our portfolio? And so I
+
+[02:39] discovered options and that was you know simple things like you know buying puts on your own shares or selling covered calls if you wanted stock called away and kind of lower your cost basis for
+
+[02:48] the last 10 plus years I would say it's been very much heavily focused on risk defined option trading for me today it's not going to be about one single strategy it's rather about one
+
+[02:58] approach where you where the actual trades you make each day depends on how you read and analyze the market but tell us first Chris what are you trying to achieve with your way of trading zero
+
+[03:10] DT. I think that zero DT is is as as simple as it might seem like well I can just trade every single day it probably comes with the most intensive plan every
+
+[03:20] single day. The amount of prep that I put into zerodt as easily as comp as comprehensive as what I would do for a full campaign trade if I wanted to own something and lower my cost basis
+
+[03:30] whether I'm doing you know leaps and diagonal spreads or I'm doing ratio spreads and looking out in time. You take all those factors of price, time, and volatility and you put them into a
+
+[03:39] same day window. And so what I start my day with is my little prep in the morning is what is the expected move for the day? What's the broker showing me as far as the plus minus move? Do we have
+
+[03:48] futures up or down for the morning? Generally, I would say are we are we sitting at all-time highs? I mean, this this year has been a really interesting year as far as the dispersion trade we
+
+[03:56] saw in the first three four months with with a lot of indecision till the market broke down below 6,800 and fell, you know, to 6,300 and then back up to all-time highs with one of the fastest
+
+[04:04] bull markets we've seen in a long time. And here we are just just off all-time highs. But every single day, what's nice about zero DTE is I don't have to worry about the next Trump tweet. I don't have
+
+[04:14] to worry about the new Fed chair. I don't have to worry about oil prices or gold prices. I can just plan the day on an efficient efficient tool like the like the S&P 500. So I primarily focus
+
+[04:23] on S&P 500 to me that is that is a very efficient index to trade. NASDAQ is a little bit more exciting but you're you're probably adding another 20% of implied volatility there. And so my day
+
+[04:32] is very much starting with what is my likely move. So my expected high and low I I do make a lot of my my calculations are gap adjusted. I also see what the VIX is doing. Do we have a VIX that is
+
+[04:43] that is down to recent lows? Do we have a VIX that's elevated? You know futures market plays in this as well. And I mean I I want to say that I start with a plan every single day and I I stick to my
+
+[04:53] plan. But when you and I talked before, John, before this for the session, I did mention that very much of my trading day is flexible. And so when I mentioned my strategies, an iron condor, a butterfly,
+
+[05:04] some broking butterflies, that's kind of my go-to strategy mix. But every single day, I'm just going to find my ideal levels to position my call spread or my put spread or maybe be directional. But
+
+[05:15] mostly I like to trade kind of non-directional for the day because the S&P is very efficient. Uh we would expect to see prices within typically, you know, 1% or less as far as intraday
+
+[05:25] price action. So the opening bell to closing bell is usually something within reason, but there's the occasional, you know, big move to the upside, the occasional big move to the downside. And
+
+[05:34] those are tough days to get right, but those are tough days just to make sure that I can survive and come back and trade the next day and, you know, keep continuing to trade my plan. So, it's
+
+[05:42] very flexible and I try to make it as as as concrete as I can where it's like I have a plan. I'd like to stick to it, but I also provide myself some wig room and flexibility because I think you have
+
+[05:51] to have that in a zero DT zero DT environment. You said you had three goto zerod strategies. Iron condors, a butterfly, and a broken wing butterfly.
+
+[06:01] Yes. Let's take just the one sentence definition of each of them. What it is. Okay. So, let's start with the iron condor. The way that I trade in iron
+
+[06:09] condor is to kind of consistently have a top and a bottom that I can sell premium and and collect where price does not go as high as I I I need price to stay below a certain level. So I basically
+
+[06:21] trade a ceiling and then I also trade a floor. So my iron condor is a combination of a bear call spread on top and a bullput spread below. So it's two credit spreads that add up for a net
+
+[06:30] credit. And I want price to stay below the ceiling and above the floor. and a price stays rangebound for the day, I can make money and I can make income. So that's that's my goal with the iron
+
+[06:39] condor. A butterfly spread is more of the it tends to be a very lowrisisk strategy and you really just kind of place a profit trap out there where if I can go allow myself maybe 20 to 30
+
+[06:54] points of of room where if price is just going to gravitate towards my profit trap for the day, I can generate let's say you know 20 30 40% return on risk. uh price gets later in the day and it
+
+[07:05] still manages to be inside my profit trap. When you said at the very beginning of the session, I like to, you know, pin prices. Uh you can do that late in the day, you can you can turn
+
+[07:12] price, you know, return on risk in a butterfly spread could be fantastic. You can have five to one setups, 8 to1 setups, sometimes ridiculous, you know, 10 to1 setups. Um and you know, it's
+
+[07:21] it's kind of like a lottery pick, but you know, obviously I'm trying to have a plan and and a certain price play price level I think that is that is getable and achievable for the day. Uh, but
+
+[07:30] those tend to be, you know, an example of of paying $2 or $3 debit and by the end of the day that could be worth over $1,000 profit. It's hard to not like a trade like that when you can start, you
+
+[07:40] know, making a winner that can make up for three, four, five losses. It's a really good way to grow your account, inject some cash into your into your your portfolio.
+
+[07:48] And then you do broken wing butterflies, too. I love broken wing butterflies. So, it's similar to me. A broking butterfly is essentially like a credit spread with a
+
+[07:56] bit of a lottery pick at the end. So, if I wanted to define a low for the day, if I could have a broken butterfly down there, it's essentially like a credit spread, but it gives me maybe a five or
+
+[08:07] 10 point wide profit trap. So, I can have a little bit of flexibility where if price comes to threaten my lows, a broken wing might actually offer a bonus profit versus just a credit spread,
+
+[08:16] which might be I have a dollar of wiggle room and then I go into risk where a a profit trap on a broking butterfly could offer me five, 10, even $15 of of of buffer. So, if we talk a little bit a
+
+[08:26] bit bit about my my iron condor strategy today and some defense trades, I tend to kind of position like that where I'll do a iron condor at a high and a low. So that's my that's my ceiling and my
+
+[08:35] floor. And then I'll position a broken wing butterfly and give myself maybe 10 to 15 points of additional buffer. And we can talk about deltas and things like that, but mainly if the markets stay
+
+[08:46] within 10 deltas when you look at an opening bell option chain, if we stay within that typically 10 delta area, even my defense trades, as long as price stays within the five delta area, uh
+
+[08:57] that usually gets me some profit on the day. Important part of you of your way of trading is to analyze the market. uh and you start this already before the market
+
+[09:06] open. So what type of tools are you using to analyze the market and get yourself a picture of uh how you see the market that day and what so the the first thing I go to I I just
+
+[09:17] grab from my broker platform. You can do this on Tasty Trade. You can do this on Thinker Swim or Interactive Brokers. A lot of the brokers will show the implied volatility for the day. So, if I can see
+
+[09:26] that there is the implied volatility percentage and the plus minus move, I usually like to take that plus minus move pre-market. And you know, some people will say, well, that's going to
+
+[09:35] change the opening bell. And I I acknowledge that it will change the opening bell. But if for some reason Tasty Trade is calculated a plus or minus 50 on the day and opening bell,
+
+[09:44] that 50 drops to 35. I've seen a lot of examples, John, where the markets will still drift 40, 45, 50 points for the day and then come back to close within 35 points. But for me, if I'm trading a
+
+[09:55] ceiling and trading a floor, I don't like my highs and lows to be threatened, if that makes sense. So, I use that that's like the first thing I would go to is like taking your broker
+
+[10:04] information, using the expected move, and then plotting out, okay, if price is opening here and there's a plus minus 50 on the day. Well, 50 points above, 50 points below, can I position some type
+
+[10:15] of ceiling or floor trade like an iron condor to pull in some premium and have price stay within that range for the day? So, that's that's a very straightforward way to kind of map out
+
+[10:22] my iron condor for the day. Defense-wise, if I was going to defend my ceiling, my floor, that would be the broken wing structure. I used to only I was very stubborn about this. I used to
+
+[10:32] only take defense trades if I would get a credit. So, I would insist on getting a broken wing butterfly that would have to give me at least, you know, 50 cents credit or a dollar credit so I can
+
+[10:40] manage my risk. But nowadays that I I tend to not have defense pay me very often, but when it does, it's helpful. So, I'm I tend to also, you know, let's say I'll sacrifice five cents debit or
+
+[10:51] 10 cents debit for a broken wing. And that way, what I still have is I still have like a five or$10 buffer, which in the S&P 500 or SPX that's like a five or 10 point buffer from your ceiling in
+
+[11:01] your floor. So, markets can still test those highs and test those and it would basically have to breach them by another five or 10 points before I get in a lot of trouble. But you said that you start
+
+[11:10] with your broker platform to to know what is the estimated move for the day basically and the implied volatility. What other tools are you using to analyze the market both before and
+
+[11:21] during the day? A lot of what I'll do kind of a visual reading is I use a tool Tanuki trade is is a great software piece. They have an awesome indicator bundle where they have
+
+[11:30] their own web app that shows real-time data on indexes, futures as well as like 200 liquid instruments. And um I I will I will basically kind of map out my day where where I think there's there's a
+
+[11:41] collection of open interest and volume and a gamma profile for certain prices for the day. It it's by no means a crystal ball, but to me I look at it and I've always kind of taught it this way.
+
+[11:50] It's it's like a it's like a visual road map. If I didn't have the visuals, I would have really no context where I think that there may be some suspected direction for the day or some flows for
+
+[11:58] the day. And so if I have my expect to move area and within you know one standard deviation which a lot of prices can cover that in a day then I'm trying to look at kind of the concentrated
+
+[12:08] levels of where price can kind of linger for the day or find throughout the day. So I brought a couple examples today John if can I go ahead and share my screen.
+
+[12:15] Let's do that because I think we are now at the entry mechanics and I think this is a very good time to show an example. Okay so the first thing if I can use this as an example this is my expected
+
+[12:25] move box. I built this indicator and I made this gap adjusted. So basically what this will do is every single morning if I take the expected move box I will plug in the exact value that my
+
+[12:35] broker shows me. So if it's a plus minus on this would have been an example last week we had a plus - 57.98. Now when I plug that number in it will adjust and make sure that when we have
+
+[12:45] the market open it will take the open price plus your 57 points. That's going to be my top of the day. And then to be extra safe and even for me I consider myself like to be you know pretty
+
+[12:56] conservative. it will take the previous day's close and also go 57 points lower. So, this is a much wider expected move box than what would typically be just, you know, starting an opening bell going
+
+[13:08] plus or minus 57. And to me, what I tend to see is I rarely see prices breaching my expected move box high or low, which means that if I'm selling my ceiling up here, I don't see prices breach that
+
+[13:19] very often. And if I'm selling my floor down here, I don't see prices breaching that very often. That also helps me play defense where if I don't see this breach very often, but I can play defense up
+
+[13:28] here and I can play defense down here. That gives the market a lot of wiggle room to do whatever it wants to do for the day. It can be choppy, noisy, it can move a lot, it can move a little, but as
+
+[13:38] long as price from open to close is going to stay inside of this box, I can do pretty well for the day. And that's typically my my concept of zerdt trading is can I win the day.
+
+[13:48] So you start with an iron condor. Is that correctly understood that you start with an iron condor that's outside this estimated move box? Typically, it's going to look something
+
+[13:58] like this for my trading. So, when the market is here, a couple things I would say just to go into a little a little more granular details is if we have the market opening with a gap in this
+
+[14:07] example, this delta to go to my expected move box, this is still trading John for probably like a 15 delta or like a 10 delta. I don't mind starting there for my iron condor. Now, on the put side,
+
+[14:20] the put side, there's been a bit of pricing skew in the market, and the puts still maintain a decent amount of premium. But if I'm starting with a 10 delta call, I will typically match that
+
+[14:28] with a 10 delta put. So, I I try to go a combination of either above or below my expected move or a delta neutral iron condor. And I like to keep it 10 or less and still set a certain credit that I'm
+
+[14:40] willing to accept. So, example is if I went 10 wide on an iron condor, which means I'm, you know, selling the call, buying a higher strike, selling the put, buying a lower strike, and I create that
+
+[14:51] 10 wide, I would want at least a dollar or a$150 credit minimum for that trade, which means I'd be risking close to $9 or $850, which is not great rewards risk. It never is. But that's why I play
+
+[15:02] defense because if I can defend that $8.50 50 cents a risk or that $9 of risk. My goal is if I'm going to take a loss for the day, I'd like the loss to be as small as possible or as managed as
+
+[15:12] possible or better yet obviously not taking a loss and trying to manage some net profits on the day. So that means if I understand it correctly that you don't use stop-
+
+[15:21] losses on your iron condors. You open these iron condors pretty early in the day and then you for instance typically with a width of 10 but you do not use stop loss on them. Is that correct?
+
+[15:31] That's correct. I I did start so when I first started trading iron condors about been 2022 this is now you know four years of of trading a lot I mean thousands and thousands of zero deep
+
+[15:39] trades I started out initially with about a 20 wide iron condor that I was using a 100 to 200% premium stop-loss and and that and it works it works great most of the time but where I was really
+
+[15:50] getting frustrated was if I don't want to be that wide and take on that much risk where I was seeing that the the premium was not really that great. For example, I go 20 wide and the broker
+
+[15:58] says you can have a $150. Well, I'm risking $1,850 to make 150 on the day. And if I put a stop loss in 0DT, if anybody has traded 0DT, you've probably seen how sensitive
+
+[16:09] the values are. So, when price gets a a a very a very quick like 5, 10, 15 minute move, your deltas can go from a, you know, I could start my my iron condor at a 10 delta and in 10 minutes
+
+[16:20] it could be trading at a 25 delta. Those values change so quickly that a stop-loss oftentimes would be triggered. And yet I look back at the trade in hindsight and see that the trade would
+
+[16:29] still be a winner inside my expected move box. And so I decided I go a little bit tighter on my spreads and accept the risk and just play a little bit more defense versus trying to just a stop
+
+[16:39] loss is just is very difficult to manage for me because it's it's such a sensitive environment with with option prices changing so aggressively. We have referred a few times now to your
+
+[16:48] defense of the iron condor. So could you walk us through exactly what you do to defend your iron condor? what trades you put on to to help the help it not lose. So, I'll do a straight up example. Let's
+
+[17:02] say that my top down plan is this. I come to the market. I find my broker platform shows a plus minus pre-market at 57.98. So, I enter that in my expected move box. We have a gap open
+
+[17:12] and it gaps open higher. So, I have my adjusted gap high at 7535. Let's say here, John, that I'm going to set my call spread is going to be 7545 that I'll sell. And then I'll go down
+
+[17:23] here towards my expected move box. We'll say 7,400 cuz we also gapped up and I'm seeing that this is a matching delta. So I'll say I'm going to do a 7,400 here. Now if we go 7545, let's go up 10
+
+[17:35] points. So we'll go to 55 and then my 400 down here to 7390. So that's going to be my iron condor. Now if that trade goes in, I I'll type this out. So let's say we do a 10
+
+[17:48] 10 delta and 10 wide iron condor. Now from there, let's say the broker allows me to have a $150 credit and my max risk is going to be $8.50 max risk. Now, in order for me
+
+[18:01] to take on that risk, my break even price is going to be 7546.50 or my break even price is going to be 7398.50. That's at least I know if price stays
+
+[18:12] below this blue line or above this blue line, I can make profit. And that gives price plenty of distance to wiggle around. you know, if if the expected move changes right at the open, it goes
+
+[18:21] down to like 35 points, that to me is also a good sign that if I'm selling premium early enough in the day, I have a fairly decent probability of profit. You know, on paper, a 10 delta is about
+
+[18:29] a 90% chance of profit on paper. But I know delta, how early in the day do you split them on? I'm usually in my iron condor within the
+
+[18:36] first five or 10 minutes of the open. I get in pretty early. So, this is kind of my core my core strategy is, okay, if I can map out a high, map out a low, this is where I'll start my day. And then for
+
+[18:46] the defense trade, what I'll end up doing is positioning myself. So the reason I would like to go 10 or 15 wide on my iron condor is because it allows me to play inside of that with a broken
+
+[18:57] wing. So again, I'll just use this as an example. Let's say that I'm 7545 by 55 on my iron condor. So what I'll build out here, John, is I'll do like a buy 75 call
+
+[19:11] and then above that I can do the 50. So I can sell the 7550 call and then I can space it out with So that's 10 wide and I'll go 15 or 20 wide. Let's go 20 wide. 7570
+
+[19:26] call. And let's say that the broker ideally what I like on this trade, John, is maybe a 10-cent credit. And I'll explain that that's not that still takes on risk. Okay. But if I get a 10- cents
+
+[19:36] credit, that adds a little bit more to my iron condor. So if I don't need the defense, at least doesn't cost me anything. But I'm willing to also spend, you know, let's say 10 to 20 cents debit
+
+[19:48] to just pay for it because what this provides is a $10 profit trap and it's, you know, $10 of protection over an 850 max risk. So, where this puts me, and I'll use a
+
+[20:01] different color here, but if I position for a profit trap, let me box this in. So, if I'm starting at 40, I'll go 40 to 50. 40 to 50. And because this a 10 wide, my break even on that trade is all
+
+[20:16] the way up here towards 60. Now, for me to get profit on the trade, I'm kind of happy in like the the 40 zone to 55 zone is about where my profit trap is going to sit. So, I'll kind of map out my day
+
+[20:27] this way. So, this would be my broken wing. Let's say that I can get this trade filled for 10 cents credit. Okay. Now, to be fair, this 10 cents credit is still going to require some risk. And
+
+[20:36] so, I don't want people to think, well, this defense trade is is very smart, but it still comes with risk. If I pulled in a 10-cent credit, I still have $9.90 risk. So, I've had examples where the
+
+[20:47] price goes too far on me and too high and it closes at the high for the day and then I'm losing on the iron condor and I'm losing on defense and and those days aren't fun. I'll be real honest.
+
+[20:57] Those days aren't fun. But I have a backup plan which we'll talk about a little bit which is butterflies because maybe I can help help offset some of that risk. So, this would be my upper
+
+[21:04] defense and I'm still taking on risk. But the nice part is is this break even. And I'm sorry if this is too granular here, but this is this is kind of how I map out the day. So my break even price,
+
+[21:13] and this is always important, 7546.50. That's my break even price on the iron condor. This break even price would be 7560.10. So the nice part is I give myself
+
+[21:28] another $13.50 of error to play defense. And we're talking a, you know, roughly a 10 delta iron condor that another, you know, 13 points of error is probably closer to like a six delta, five delta.
+
+[21:42] That price would have to do something pretty out of the ordinary. We'd have to have almost like a two sigma move or a two standard deviation move for me to get in any trouble. All right, that's
+
+[21:50] why I do it. So there's my defense trade down here. I can box this in. We'll start at the the 70, let's say 7,400. So I place some defense down here. I can buy the 7405
+
+[22:02] and that would be that's the put side. So I do one put there and then I sell the 7395 with two and I'll go 20 wide there. 7375. This one I generally see that I can get
+
+[22:13] more credit on the put side. This one might actually give us, you know, 10 to 20 cents credit, which is great. And I'll still play some defense down here. So I'll box this in. And let's say I I
+
+[22:24] start my profit trap. And this is always late in the day on on the butterfly spreads or the broking butterflies. If this kicks in, there's my defense. And this break even would be, this is
+
+[22:34] the most important thing for me is the break even price would be 7 384. Let's just say I I pulled in 10 cents. That's my break even versus my iron
+
+[22:45] condor. If I started at 7,400, the iron condor, iron condor break even is I pulled in let's say a$150, right? So we'd go 738 uh I'm sorry 7398.50.
+
+[23:01] So $150. So again, I'm giving myself you know 14 more points of of error. Roughly 13 14 more points of error and a singledigit delta that the price would have to do something out of the
+
+[23:12] ordinary. So if this is how I'm mapped out for the day, what I'm allowing price to do now is go up, down, sideways. It can finish green on the day. It can finish slightly red on the day. I just
+
+[23:22] want to see prices on the S&P 500 stay within a, you know, expected move. And I've made that gap adjust to kind of help help increase my probabilities. Maybe I got a little bit lost here,
+
+[23:32] Chris. So, two questions. Yes. First, um, when do you put on these butterfly trades? So, if I'm in my iron condor trades, let's say in the first 10 minutes of the
+
+[23:41] open, I am most likely, especially if this is trading out of the money, I'm probably in those trades within 10 or 15 minutes later. So, I have my iron condor and then within another five or 10
+
+[23:51] minutes, I will make an assessment. Do I want to play defense today? I mean, to me, I look at defense like I don't need it. I don't necessarily expect to need defense because price should stay within
+
+[24:02] the expected move. But on those days where the market likes to test those highs or test those lows or test that ceiling or test that floor, I'm thankful that later in the day, we have defense
+
+[24:13] that that maybe offers like a 5, 10, 15 point buffer to help, you know, maybe manage some of the risk. Because to me, here's my biggest issue. If I win a bunch of trades with an iron condor,
+
+[24:24] that's great. But if I win out of a hundred trades, if I'm risking $850 every single day to make $150, I have to have a high win rate. If I play defense and my average loss can be minimal, my
+
+[24:37] average loss, let's say, is a couple hundred dollars, but my average winner is $150. Well, then it doesn't take that much to recover. So, my my speed of recovery is a lot greater when I play
+
+[24:46] defense, even if I have to take a little bit of a small debit on defense or a tiny little credit on defense. And yes, I I I'll still take on a bit more risk, but that's why that's why I feel like
+
+[24:55] for me it's it's I'm not going to call this a free hedge because it's not. I certainly have risk on the trade, but to me, it's the peace of mind of knowing that if my price of the iron condor gets
+
+[25:04] threatened, at least I have some buffer there to maybe give me a five or 10 points of wig room before I'm really in trouble on Iron Condor because the riskreward in Iron Condor for me, the
+
+[25:12] way I trade them so safely is it's not great. You know, it's going to take me seven wins to make up for a loss. And so, I want to minimize that with at least a little bit of defense. What here
+
+[25:21] now is the max risk that you have when you look at both the butterfly and the iron condor together? Iron condor is $850. I get that. But when you look at it together,
+
+[25:32] $850 max risk and then the broken wing. So the broken wing butterfly. So if if the the top side is threatened or blown through in the bottom, one of the two, if price goes way way too high or way
+
+[25:42] too low, I'm accepting another $990 of risk. If I pulled in 10 cents credit, that's assuming that I'm taking a 10-cent 10-centent credit. So, my max risk is around $1,800 for the day. Now,
+
+[25:57] is that enough to make me uncomfortable? Not really. I mean, I I've risked plenty more than that. But the reality is I know how to make that back. So, if I was going to lose on that for the day, you
+
+[26:08] know, I understand that it might take me three, four, five days to make that back up. It's part of the process. I'll keep grinding. But I do know that my my way of planning every single day certainly
+
+[26:17] wins a lot more than it loses. So I I I just it's a numbers game and the more trades I take and the more you know sampling that I do, the more fair my my, you know, win percentage is and I can
+
+[26:27] still, you know, make up for it. So there is max risk. The other side of this, I I could kind of position this defense a little bit differently. I don't use it very often because I have
+
+[26:34] to go I'll give you an example and I don't want to get too in the weeds here but if I did a broking butterfly up here but I did an in the money call butterfly or I did way down here an in the money
+
+[26:46] put butterfly what this could actually I split I do an in the money put butterfly in the money call butterfly I can do that trade for sometimes less than $50 max risk but the
+
+[26:56] problem with that is if I only pull in a $150 here and this is max risk of 50, max risk of 50. I'm eating $100 of my profit if price doesn't go beyond my levels. So, go go back to my first point
+
+[27:11] of why I trade the the the iron condor. I don't want price to break the ceiling. I don't want price to break the floor. And so, this is essentially my positioning and guard railing the market
+
+[27:20] to say stay below the ceiling. Stay below the floor and allow me to let price do what it needs to do. This way, I don't have to be very picky on if price goes down 10, 20, 30 points, I
+
+[27:30] don't care. If price goes up 30, 40, 50 points, I don't care. As long as it doesn't breach my planned expected move, I I tend to be on the right side of this. I I I accept that I'm taking on a
+
+[27:39] bit more risk. But I would say of all the times I'm playing defense, maybe one or two times out of, you know, 15 or 20 trades do I have to play defense that it actually needs to needs
+
+[27:50] to be defended. Usually it's it's prices stay within expect to move and and we we typically build out a lot higher win streaks on on, you know, efficient trading. How often do you play defense?
+
+[28:00] Almost every day. For me, it's peace of mind because what I'll do is if I set my trade up like this, then I will set a chart alarm. And if I need to get away from the computer,
+
+[28:09] at least I know, do I have to pay attention to price? If price comes up and threatens and triggers my upper level alarm or my bottom level alarm, then I will kind of go to plan B. Well,
+
+[28:19] if plan B is, well, I'm in trouble. What can I do to mitigate some of this risk? Then we can maybe start sprinkling in the standard butterfly as something else to uh you know give me a higher reward
+
+[28:28] to lowest type setup because that's a core strategy that you do that you try to set some butterflies where you think the price will go that day that as a standalone trade, right?
+
+[28:39] Yes. Yes. So um I I'll go ahead and I'll I'll just move this stuff aside here. So I don't want this to be too noisy for everybody. But we have the So kind of I'm guard railing the markets with an
+
+[28:48] iron condor playing the defense. There's a bit more risk there. Now there there's there's a couple of levels that I watch every single day. Where the market opens, where the market was, and if we
+
+[29:00] have any concentration of order flows, you know, throughout the day that look somewhat attractive. So if anybody uses like a gamma tool like you know, John and I mentioned a Tanuki trade, you
+
+[29:10] know, one thing I'll look at every single day is is is the high volatility level called HVL. And I refer to that as the positive and negative gamma pivot. Which all that means for for option
+
+[29:20] trading is when you start to see price above that HVL level, it means that it's typically favoring a positive gamma environment, which is most dealers and flows are going to be selling puts,
+
+[29:33] providing a floor, and selling calls to suppress volatility. So a positive gamma environment is usually a very slow grind to the upside. A negative gam environment is usually buying puts and
+
+[29:45] selling calls which is ex exa accelerating and exacerbating some of the volatility. So in a in a positive gam environment when it's usually like a sideways or slow drift higher I will
+
+[29:55] tend to look and see do I think that price can go achieve a certain level on the day and and possibly float there for the day and do I also think that price might stick around a you know positive
+
+[30:05] negative day and just be flat like this this is the example from from last week. I mean the market opened at 76 and closed at 74. So implied volatility was 58 points but the market closed within
+
+[30:18] about two to three points of the actual open. Right? So very very noisy day from from volatility but the actual move was was very quiet.
+
+[30:27] And again this is why in an index I I tend to just I tend to sell premium because I don't think the markets move directionally a lot. Could we take a quick look at how you in
+
+[30:37] Tanuki trade for instance? how you look at these gamma levels and the HL. Sure. This this is an example that I took recently. This would have been uh last week on Friday. This is around 1:21
+
+[30:47] p.m. Eastern time. So, in the morning, and I'll kind of draw on this on this screenshot here. Let me pull up a drawing tool. So, in the morning, we opened up around 75 or 76. So, let me
+
+[30:58] just highlight that. So, when the market opened up around 9:30, the the live price was right about here. I'm going to put a yellow line there. So live price was around 7475. Now there there was a
+
+[31:10] reasonable concentration right around 7500. So here's some gamma. Here's some absolute gex. We have the uh you know one of the call walls. And it to me again it it's it's just a tool. But
+
+[31:24] because if if you look at the the information on this tool, the context tells me this. There's very little activity down here, very little activity up here. And so what's the big sticky
+
+[31:35] sticky level on this on this entire screen? If I looked at this screenshot and you can see well just 7500 seems to be some type of important level for the day and we're trading live at 7475.
+
+[31:47] So for a butterfly spread, if I put a butterfly position on that allowed me to have a low-risk profit trap around that 7500 zone and then low risk over here, that butterfly spread I was able to put
+
+[31:59] on last week for I think I paid like $3.70 debit. So this was $370 to make me up to$,730 if I let it close all the way at the end of the day. And that debit is also your max loss,
+
+[32:12] right? Exactly. Right. So a 370 debit, that's the most I can lose. And so when we go back and talk about my entire trading plan, if I'm risking 850 on an iron
+
+[32:21] condor and another, you know, 99.90 on a broken wing butterfly for defense, the probability of profit on those trades remains very, very high. But for a butterfly spread like this, 370 is the
+
+[32:31] most I can risk. And I can get I mean, this is a 4:1 setup intraday. So if I'm right, I mean, I don't have to be super right to get a 2:1. I don't have to be super right to get a one one. And even
+
+[32:43] if I'm able to to put a little bit of a winner on this butterfly spread, let's say that of the 370 risk and and I'll I'll tell you the example. I closed this trade out last week for $6 credit. So I
+
+[32:55] I made $2.30. My risk was $370, but I get out of the trade intraday. I made a couple hundred bucks. That helps offset some of the max risk on the day, which was my iron condor. And if I have the
+
+[33:07] $230 of profit on the butterfly spread, plus another $150 on the iron condor, plus another 10 and another 10 on those broken wings. I mean, a $1.70 and 230, I I make 400 bucks on the day. You know,
+
+[33:21] that's not a bad trade. That's not a bad result for the day. Making $400 on the day is not bad. It could be better. It could be worse. But I go ahead and I'm I'm happy. I mean, I piece together a
+
+[33:31] couple dollars. I don't have to have a super aggressive risk, but this allows me to kind of, you know, I I use the the phrase here, it's it's it's a hockey quote from Wayne Gretzky, which is skate
+
+[33:40] where the puck is going. If price is opening up here, and the context of my my software shows there's something that is important, whether it's a reactionary level or something where price might
+
+[33:51] gravitate up towards a certain key strike of the day, 7500 for whatever reason mattered to the markets on Friday. And if I can position myself to to take advantage of that, I don't have
+
+[34:02] to be perfect. I don't have to sit and pin it all day. But if I can have price rally, you know, 20 30 points into that vicinity, I can turn a butterfly spread into some profit.
+
+[34:12] How often do you put on these type of trades? Mostly every day. [laughter] Mostly every day. That That's why I said my my my my com my my combination is
+
+[34:22] iron condor defense on iron condor and then I'm focused on butterflies to try to get the high reward, lowrisisk trades. That's usually my combination. Chris, I'm curious about these
+
+[34:30] butterflies. When do you take them off? Do you have some kind of a stop-loss or if they don't go in that uh direction or do you take them early off for profit or try to pin in the end of the day? What
+
+[34:42] are your rules? Great question here. Here's kind of my rule. Um and again, this is why I said like for me as a trader, I'm pretty flexible. So butterflies, butterfly
+
+[34:51] trades, butterfly spreads are typically low risk and high reward. And so here's what I prefer to do. So personally, if I don't think this butterfly will win, I have a couple options. I can close it or
+
+[35:08] I can open another one at another key level, right? If I think that price is going to go somewhere else for the day, let let's say it falls back down to the opening
+
+[35:19] price, John. Let's say it fell to like we opened at 7475. Well, I might put a butterfly spread around that and say, well, that's where we open for the day. That might be around that HBL level that
+
+[35:29] I talked about, which is kind of that positive and negative gamma pivot. And if I wanted to open up another butterfly, not overlap my strikes, but that would be some type of, you know, 23
+
+[35:37] $4 debit to make another $15, $1,600 on this trade. I can afford to eat the risk altogether. I lose $3.770. But as long as I can make it up in another trade, then I will typically
+
+[35:50] keep it and not try to micromanage these butterflies because at the end of the day, if price ends up at 7500 and I close this trade out because it went 20 points higher, 20 points lower intraday,
+
+[36:00] I will kick myself later for not holding the trade. And so if I lose on this trade, I'd rather it be that near the end of the day, we're not even close to 7500. That butterfly is a loser. But if
+
+[36:09] I can get the 7475 as a backup plan and I can win, let's say I win a thousand bucks, well, I can win $1,000 on one butterfly, eat the 370 on another, I can still make money on the day.
+
+[36:21] When do you take them off for profit? So, good question. So, if if I'm if I feel like I'm incorrect, then I'll probably just open up another butterfly. So, John's asking, when do you close for
+
+[36:31] profit? So I will say if I have multiple butterflies butterflies running net profit. So between let's say two or three open butterflies if I'm up a
+
+[36:45] 100red to $200 to $300 net profit among the three of them I might just close them all and take the profit and and and book it like just book the profit. I also might let them go to the end of the
+
+[36:55] day and see you know sometimes I'll let the day get very exciting at the end and you know be around for closing bell and see if I can get a pin price. So that's that's one way is just look for look for
+
+[37:03] net profit on multiple, you know, let them close for the kind of the home run, you know, the home run or lottery. And the other one would be if I'm only in one butterfly, then really my only
+
+[37:16] option is manage it to the best of my ability. I think intraday, you know, best practices. Best practices for me is if if it's intraday and you have a 50% return on
+
+[37:27] risk, it's worth closing. Peace of mind of if if I'm in for a for a 370 debit and I make $1500 to $200 profit and I don't want to sit on it all day, just close it and be done. It's a good it's a
+
+[37:40] good day trade. It's a great day trade. And here here's kind of the timeline. If I take a butterfly in the morning, John, at like let's say 9:45 or 10 o'clock Eastern time, the butterfly gets better
+
+[37:49] and better and better as time goes on. So, as time goes on, my butterfly gets narrower for profit, but the profit center starts to increase. And so, if I can hold a butterfly tread butterfly
+
+[38:00] trade until, let's say, noon Eastern time or 1 Eastern time or 2 Eastern time, a lot of times those trades look very, very favorable. You can get those 2:1 ones and 3:1 ones. At the end of the
+
+[38:09] day, you know, 3:30 p.m., 3:45 p.m., that's when it gets a little crazy, a little exciting, but that's where you get like a 5 to 1, 6:1, 7 to1 ridiculous reward to risk if you're even remotely
+
+[38:20] right on some of those center prices. I mean, I've had butterflies that that have closed out for over a,000% profit. So, a 10 to one, it's I mean, again, you feel like an all-star when that happens.
+
+[38:30] You just know that that's not what I expect. I expect to hopefully make a winning trade. But yeah, I mean it's a home run lottery trade when I get 10 to one. But the the the the breadand butter
+
+[38:40] for me is if I can get you know 50 to let's say 150% or 50 to 200% those to me are very safe, very profitable and you know try to keep a reasonable win rate there and the money adds up very nicely.
+
+[38:52] So if if I have one trade only, I'll just manage it let's say 50% or I'll put like 50 to kind of 200% return I think is very favorable. If you're trading SPX, let's just talk SPX for a second.
+
+[39:04] SPX butterfly five wide, you know, the reward to risk is it's insane. You know, you pay, you know, 20 cents debit to make $4.80. But the precision that you have to have in
+
+[39:17] order to get that $4.80, 80 cents. It has to be perfect at the end of the day because if price slips slips just a couple of dollars, you know, you're going to make, you know, maybe a dollar,
+
+[39:25] but it's great, but it's extremely extremely rare to pin. But if you go 10 wide, it's going to be more expensive. You go 15 wide, more expensive, 20 wide more expensive, 25 wide more expensive,
+
+[39:38] but your net is wider. And the payment on those butterflies tends to be it tends to happen a little bit faster in the day. And so if I wanted to get in one butterfly that I really like this
+
+[39:49] kind of key level that I'm watching, one butterfly I tend to go at like 20 wide, 20 wide for me is fair. You know, 2530 is a little bit more expensive, but those those tend to pay out pretty well
+
+[39:59] with like a 50 60 70% return intraday. Later in the day, if I feel like that level's still still popular and still key on the on the on the charts or software I'm using, then I might try to
+
+[40:08] hold it for 100 plus percent. I guess some traders if maybe if you don't have a too big account would think that it's a bit scary to do this on SPX which is a very big underlying but then you have
+
+[40:19] the poor man's butterfly I guess on XSP which is also indexed European style and cash settled and where you can do this for one10enth where you can put on these butterflies for maybe 30 $30
+
+[40:33] absolutely you can do so onetenth the price so I will sometimes do a butterfly spread on XSP I'll also do an iron turn flying XSP sometimes I'll go like 345 wide which is the equivalent of like 30
+
+[40:44] 40 50 wide so if I want less risk for example this this is example last week so XSP I did a $2 I want to say I did a four wide I think I was four wide iron
+
+[40:59] fly and I'll give an example here so my credit was $2.70 credit so it's a $130 max risk I'll I'll give an example we'll say that 7500 was a key level so I did a 50
+
+[41:12] sell call and then I did a 754 buy call and a 750 sell put and a 746 buy put. So the broker gave me 270 credit and price has to be basically from 270 if price is less than
+
+[41:33] 52.70 or price is greater than 73 uh be 73630 no 7.30 30. So price is greater or I'm
+
+[41:50] sorry greater than 737 or oops actually 47 my my fault that's 47 4730. So if price is in between those two strikes
+
+[42:02] then I can I can pull in some premium and my max risk was $130. So that casts a pretty wide net for an expected move of let's say 30 40 50 points S&P which is three or four points XSP. So that's a
+
+[42:15] pretty big profit trap to throw out there. and it's over two to one. So, I don't have to win all of my trades here, but if I can land, you know, this is a high probability winner, then I can I
+
+[42:25] can catch a lot of those expected moves. I'll just kind of summarize this. Sounds like this guy, you're talking about myself. It's like I'll just trade anything. Well, I do have a plan, right?
+
+[42:33] Iron condor for tops and bottoms. If I think there's key levels to go after for the day, I'll typically put butterfly spreads on. If I want something a little bit cheaper, but I want a wider net, I
+
+[42:41] do trade a lot of XSP for this reason because I could do an iron fly. And here's the setup. If I did this trade on the S&P, John, this trade would probably cost me $2,700 or maybe like close to
+
+[42:51] $2,000 max risk where I can only risk a couple hundred in XSP. So, if you want to dabble in the space of iron condors or butterflies or iron flies or some of these zerod trades, XSP is a great way
+
+[43:02] to start and just kind of get your feet wet without taking a ton of risk. Once you feel like you're ready for, you know, certain dollars and certain percentages, you can obviously step it
+
+[43:10] up. But you have the same type of tax treatment on XSP. Liquidity is not quite the same. I'd say you can get better fills on S&P. You can close out a little bit faster towards the later end of the
+
+[43:19] day, you know, 3:50, 3:55 p.m. on SPX than you can on XSP. But I do a lot of like end of day pins or a lot of end of day holds and just let the broker kind of cash settle them on XSP and it it
+
+[43:30] works out just fine. And I guess it's not recommended to do this on SPY or QQ where you can be assigned. Correct. I mean, so I some people do it.
+
+[43:39] I mean, some people prefer the spy. It's super liquid, but I don't like the fact that it doesn't just settle at 4 p.m. But there there's there's, you know, post market and you can have like as
+
+[43:48] soon as the market is is closing at 4, you know, closing bell, you can have something like jump up the spy and gap it higher. And I'm talking some some interesting examples like, you know,
+
+[43:58] Nvidia earnings comes out last week on Thursday. Well, if if the markets were were super shocked in Nvidia earnings one way or the other, that postmarket spy could be three, four, $5 different.
+
+[44:09] And I don't want to be in a trade like this that could have that jump right after the bell when if it's 4 pm, the price at 4 pm is what I'm actually trading for. That S&P settle, that XSP
+
+[44:19] settle, that's exactly what my trade is going to result with. And so I don't have to worry about the postmarket stuff and the potential assignment risk as well. Um, and some traders, I get a lot
+
+[44:27] of these emails where traders will tell me, you know, the brokers are closing people's trades early in the day because of a spy potential assignment and they're closing traders zero DT trades
+
+[44:37] before the market closes. Uh, that would be really frustrating. I I I mean, this is why I like the the European style with SPX and XSP because it has to go all the way to the close and there is no
+
+[44:47] assignment on on those two instruments. Sum up your trading plan, trading style in one minute. Okay. It's a lot to sum up in a minute, but I'll say this. There's a plan every
+
+[44:55] day. I will have two minutes. What's that? I will give you two minutes. Oh, thank you, John. Two minutes. Okay.
+
+[45:01] So, I have a plan every day. The simplest way for me to start top down is, do I have my expected move, my high and low? Do I think that I can plot out a ceiling and a floor to trade around?
+
+[45:13] Will I place defense around that ceiling and floor in case price goes a little bit high or lower than I expect? Also, inside of the day, do I have any key levels and key prices and key strikes
+
+[45:23] that I'd like to focus on to see if I can, you know, have some butterfly type trades which allow me to have a bigger win than my risk. And when the day settles, uh, combination prop for me is
+
+[45:32] if I win on the iron condor, excellent. The defense trade, if I don't need it, that's fine. I can either throw it away for the small debit or or maybe have that tiny little credit. But the iron
+
+[45:40] condor wins, excellent. If a butterfly spread wins for a partial winner or I hold it all the way to expiration and get a pin price, excellent. Um, at the end of the day, for me in a zero DT
+
+[45:50] environment, I plan very meticulously, but my goal is to win the day. And so I'm not all over the place. It's just a couple of core strategies that I tend to just think, okay, the market's going up,
+
+[45:59] down, sideways. How do I position for that each and every day? And that that's my that's my two minutes. It's it is a plan every day. I do have flexibility. If I want to play defense, try to win
+
+[46:09] the day. Butterfly spreads are great to win the day because it's such a lowrisk, high reward opportunity. But I I as far as the risk, I do know that every single trade I take requires risk. And so if I
+
+[46:20] am dead wrong for the day, if it's above my ceiling, below my floor, if I miss all of my strikes for my butterfly spreads, I'm typically playing around with like $2 to $3,000 a day as far as
+
+[46:28] total risk. So if I'm dead wrong, I'm probably down a couple thousand. But if I'm right, my winners tend to be pretty consistent in like the two to, you know, $200 to $500,000, like $1,000, $2,000. I
+
+[46:40] can have days like that where I have, you know, the positive negatives tend to win out. And, you know, percentage- wise, I I I win pretty frequently. I would I would say I'm pretty confident
+
+[46:47] to say my win rate's over about 85%. And when you give these numbers, we are talking about trading one contract. So just just one contract. And again, and I anytime I'll talk about options
+
+[46:59] with anybody, I just teach teach one contract. Talk one contract because it's you the trader that should decide how many contracts to trade. I should only trade what I'm comfortable with. So my
+
+[47:08] dollar amount, my percentage amount, whatever I feel like risking, it's always one contract conversation. So, I meet people all the time that are trading 10, 20, 50 contracts. Good.
+
+[47:18] Like, that's awesome. That's that's swinging that's swinging a heavy bat for the day. Those are great winning days because you'll make thousands and thousands of dollars. But I also know
+
+[47:25] that a losing day that costs 10, 20, $30,000 can sometimes sting for the for the normal trader out there with a, you know, let's say less than $25,000 account. So, um, you know, I I trade
+
+[47:34] accounts of all different sizes, but I'm an active trader. You have 220 230 opportunities in zero DT for a trading year and I'm going to do my best to take advantage of those and try to win the
+
+[47:44] day. How many trades do you put on on an average day? O uh so between all the accounts that I that I trade, my average day is probably
+
+[47:53] 50 plus trades average day. Wow. Yeah, it's pretty active. Yep. So open opening closing, it's a lot of management, it's a lot of button
+
+[48:00] pushing. I'm typically on my computer, you know, all day opening bell to closing bell. If it's not down here in my main office, I'm upstairs on the laptop with a couple extra monitors. So,
+
+[48:08] I'm I'm always I'm always monitoring. Chart alarm's going off all the time. Nice thing is where I live, I I I'm done with closing bell around 2 p.m. my time. So, you I can still have the afternoon
+
+[48:16] off and not feel like I'm at the computer all day. But, uh yeah, I mean, it's it's my job. It's what I do. I was going to ask what is the worst that can happen, but I think you
+
+[48:25] answered it. The worst loss you can have is around2 to $3,000 on a Yeah. And the worst case scenario is, so the nice thing about all the strategies I just outlined today is they're all
+
+[48:34] defined risk. So even with the higher risk profile of an iron condor, I know that even if I'm dead wrong, I know my max risk. And so that's that's where I just when I'm when I'm talking sizes and
+
+[48:45] talking risk, you know, that dollar amount to me is something that I'm comfortable with. And a winner or loser, here's what happens when I lose. I get annoyed because I'm competitive. I don't
+
+[48:54] want to lose, but I also know that I can survive and come back the next day and just focus on the process and focus on my plan and it tends to work out more than it doesn't. So, a couple thousand
+
+[49:02] dollars down that tends to be where I'm blown out. A couple examples last say, let's say 6 12 months. Trump's tweets intraday, I I don't recall the last one, but I know earlier this year there was
+
+[49:12] like a, you know, a one plus percent move at like 3 in the afternoon and and it completely blew up my ceiling for the day. I took a loss on that particular day. I know that Jackson Hole last year
+
+[49:23] drone pow spoke. We had a huge expected move on the day. The market said forecasted like a 90 point expected move even with my gap adjusted price still went up another like 20 30 points higher
+
+[49:32] than my call side and so I had to play defense and I sold into that top to get the Jackson Hole top to relinquish about 20 30 points to help me net out the day. I think it ended up netting out like a
+
+[49:42] loss of 400 bucks versus losing like close to $3,000. And then right after that the next day it was, you know, aggressive winner. I was up a couple thousand bucks the next day. So, you
+
+[49:50] know, I I'm not revenge trading, but I try to make sure that if I take a loss, I respect the market for what it is. I'll come back in and plan the next day and just try to do my best to take
+
+[49:58] another winner. Chris, I always ask my guests one question and that is to place their strategy or in your case, your trading style on a risk profile scale where one
+
+[50:08] is very low risk and 10 is a very high risk and you are free to define these numbers as you see fit. Okay. Uh that's it's a it's a fair question. I will say that because I'm
+
+[50:18] trading defined risk, I will put this in I'll put the iron condor probably in like a like a five or six risk category just because it's an unfavorable reward to risk. I'll put the butterfly at
+
+[50:29] probably a like a three like a two to three risk just because it's it's one of the lowest risk strategies you can deploy. So with that combination, let's just take the average. Let's say I have
+
+[50:38] a you know three risk on the butterfly and let's say a six risk on the iron condor. say it averages out with my combo strategy to like a four out of 10, four and a half out of 10. I think
+
+[50:48] that's fair because it's to find risk, I know that I can't lose more than what I put on for the day. And most of the time I find myself on the right side of of the market as far as a win. And and
+
+[50:56] what's interesting is usually when I'm wrong, John, it's like something kind of odd happened. There was that and honest like right now it's like there was some big jump in the news. There was some
+
+[51:05] Trump tweet. There was something that happened intraday. The market just moved ahead of itself and had like an outlier type move late in the day. And I accept that stuff. It's just it's a little
+
+[51:13] annoying when it happens because you want the markets to maintain efficiencies, but sometimes they don't. I will say this though, here's an interesting study that Tasty did. Since
+
+[51:21] zero DT came back in 2022 with with zero DT index trading, the S&P 500, there were never more than two losing days in a row for iron condors. So, that's based on like their mechanics of they do like
+
+[51:34] 15 deltas and they get out within let's say 60 to 90 minutes or they hit like a take profit of 20 30%. I will take that a step further and say with my trades, I've logged over just in the last like
+
+[51:44] 18 months, I've logged over 600 trades with my iron condor strategy alone. I'm at about an 89.6% win rate. And I usually let my iron condors go way later in the day. So I'm not as interested in
+
+[51:55] doing like a 20 delta, 25, 30 delta, collecting all that premium because what I defined earlier is I want to trade the ceiling and the floor and let price just dance and exist within the ceiling and
+
+[52:06] the floor and not exceed them. So, I tend to have a win rate a little bit higher and also go back and let's 600 plus trades. I have never had more than two losing days in a row. And we were
+
+[52:15] very close to breaking this because this last bull market that we just saw this run from the March 31st low that started to go up from March into April, I saw four of five days in a row where the
+
+[52:27] market was bullish for the day and it broke my expected move box. But thankfully because of how I plan out my day, my expected movebox gap adjusted and my defense, I didn't take more than
+
+[52:37] one loss. So even when the market was ripping to the upside, I still managed to play winners more often than not. What have we been your overall results trading zero DTE? Let's say 2025 and so
+
+[52:49] far in 2026. And how do you measure it? I was up about 27% last year on six figure accounts. I'm pretty happy with that. Right now, I'm up about 15.3% for
+
+[53:02] this type of zero DD strategy on my growth account. So, 15.3% right now. Mostly one and two contracts, nothing crazy size-wise. The accounts up to about 75K. I usually start at around
+
+[53:13] like 50 55 or 60K every single year. And I just try to grow that one pretty aggressively. So, I trade it a lot. I trade aggressively, but it's not heavy sizing. I'm very active with it. And so,
+
+[53:24] I'm up about 15 plus% this year year to date. Last year was I was I was up about 40%. Then I gave some back on some Bitcoin exposure, which is fine. It was that was unrealized gains, so I don't
+
+[53:33] really count that. But I finished the year at like 27%. And a lot of that's on six figure counts. So I'm not a crazy aggressive trader. I mean, my best gains I've ever had in my career would have
+
+[53:41] been, you know, 150% gain in a year that was in a currency fund that I was, you know, building great, you know, these huge pattern trades and I was making, you know, 15 20% of these position
+
+[53:51] trades. I had lightning in a bottle. I admit that it was a perfect environment for my strategy. I was super aggressive. I was really arrogant. And then, you know, literally a year later, I got
+
+[53:59] myself in trouble and was managing 20% draw downs for 6 months. So, you learn, you'll learn the hard way. I didn't blow up an account or anything, but I sat in draw downs for six, seven, eight months
+
+[54:06] before I got out of trouble. I had a trade that was upside down 20 grand and closed out for $500 profit, and two weeks later would have been worth $40,000. So, I've had all sorts of
+
+[54:14] interesting stories where, you know, you make some really interesting decisions for better, for worse. But, I would say as an option trader and as a very heavy and active option trader, define risk
+
+[54:24] has made trading so much better. and surviving in the markets has been so much easier. And trading is not easy. Nobody should tell you that trading is easy. But when you can go into a
+
+[54:34] strategy, make a calculated bet on whether the market goes up, down, or sideways, and you know exactly what your risk is and what your reward is and what your roughly probability profit is. I
+
+[54:45] mean, that's trading. You're making calculated bets every single day. And you just trade with a mechanical edge, and the numbers tend to work out in the big sizes where you just keep doing the
+
+[54:52] same thing over and over again. The markets are are honestly like surprisingly efficient. So that's that's where I I kind of wrap this all up for today's trade is zero DT is I bank on
+
+[55:01] market efficiency. I think a lot of stuff gets priced in. There's some outlier events here and there, but for the most part we are we are dealing with a very efficient market. And this market
+
+[55:09] now with zero DT flows I want to say comfortably over 60% of all option trading right now in the S&P is over it's it's 60 plus% of zero DT. It's so so so liquid now. It's super super
+
+[55:21] common. And I think as they lift the pattern day trading restrictions here in the next maybe three four weeks as we get into June uh it's just going to become more and more popular. So the
+
+[55:30] market's ability to to you know either one stay efficient or two bounce back from from little draw downs intraday it just lets traders make like a calculated bet for the day and I would just say
+
+[55:40] just be defined risk you know just take good trades and once you get comfortable with the reward reward and risk and a win loss feels about the same then you're you're on your way to be a you
+
+[55:47] know being a better trader. Let's sum up. What would be the two or three most important takeaways that you really want the audience to remember from this interview?
+
+[55:58] Options. It It sounds so overwhelming at first, but it is worth the learning curve to just grasp a couple of core strategies, understand how to trade the market up, down, sideways. Option
+
+[56:09] trading has changed my entire portfolio management for the better. way better risk management, way better survivability, and the ability to to to get the leverage that you want in a
+
+[56:20] market that is really biased to the upside and continues to to to prove that, you know, the markets want to go up and continue to go higher through thick and thin, through wall of worry.
+
+[56:29] So, take the lesson of trying to learn how to trade options and also keep it simple. Risk defined is my preferred style because I've known way too many stories of undefined risk trading. Tasty
+
+[56:39] Trade loves the naked strangle, which is great on paper, but when you have an outlier type event like a liberation day or a COVID or something that just blows these expected moves out for 30, 45 days
+
+[56:49] or so, people can get a lot of trouble. And if you don't have a plan B, you don't have a backup plan. That's another beautiful thing about options is the trade I outlined today. I have a plan A.
+
+[56:57] That's my iron condor with defense, right? Or I'll say my plan A is iron condor. My plan B is defense. My plan C is butterfly sprinkled in throughout the day. That combination of things allows
+
+[57:06] me to be very flexible every single day and hopefully carve out some net profit and also mitigate my risk more importantly. So, don't be afraid to learn options. I I think that it's one
+
+[57:15] of the greatest assets and tools that we can trade in the markets. It's been a Wall Street secret since the 70s and just great for to find risk trading. And on top of that, you know, don't
+
+[57:24] overtrade or don't don't overleverage. Don't trade too large. Don't put the profits ahead of the process. I really mean that with traders, just grasp the concept first. Learn it, paper trade it,
+
+[57:34] demo trade it, trade it small, get proof of concept, get proof of revenue, build up the reps. That's what's beautiful about zero DT is you can learn every single day and you get two, three months
+
+[57:43] of this under your belt and all of a sudden you've seen 60, 80, 90 examples of trading. You get a feel for the market and that's good because then you see what the market does almost every
+
+[57:51] single day. You know, have some surprises on occasion, but for the most part have a game plan you think within a reason like I expect to win. What would you say are the best resources to learn
+
+[58:00] more about zero DTE trading? I'd like to say I'm a pretty good resource. I have I have a bunch of YouTube videos that are, you know, trading 101 and options 101 and keep it
+
+[58:09] seriously simple. I've done hundreds of videos and stuff for people that have asked me, you know, to teach options. I built a course called Practical Options that I built for my nephews and they
+
+[58:16] were teenagers at the time. And I've given this to to teenagers and kids in college. I've given this to my clients that are also 80 plus years old. And it's essentially, you know, 13 of my
+
+[58:25] favorite option strategies that just show here is on a chart. If I want to place this trade that defines I'm going to go bullish or go bearish or trade the market up or down or sideways, this is
+
+[58:34] exactly what I do. Um, and then elsewhere, I mean, some great books to to read if we can talk about books. I mean, uh, Julius's book from Tasty Trade. It's the unlikely investors guide
+
+[58:42] to options trading, the options playbook by Brian Brian Overby is a fantastic book for like a game plan and all these variety of strategies. Anything on market psychology, I know Mark Douglas
+
+[58:50] did trading in the zone. That's a good book for for trading psychology. You can talk about any of the Jack the Jack Schwagger Market Wizards books just to see like these are just great traders.
+
+[58:58] It all comes back to risk management. But as far as I've never read like some of the crazy thick options textbooks, although they're I'm sure they're great, but it's like I'm I'm very much like I
+
+[59:08] want to be in the market. I want to learn with market tuition and I'll figure it out that way. And that I think that's made me more of like a like a proof of concept, proof of revenue. I've
+
+[59:16] seen thousands and thousands of examples where I feel like I'm I'm confident I can talk about the markets. And I will of course also recommend to watch some of the many interviews we
+
+[59:27] have on this channel about zero DTE trading with different traders and very different styles. Chris, thank you very much for coming and with such an engaging presentation of your way of
+
+[59:39] trading zero DT. Thank you, John.

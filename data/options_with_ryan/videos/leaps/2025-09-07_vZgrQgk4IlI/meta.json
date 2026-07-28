@@ -1,0 +1,19 @@
+{
+  "video_id": "vZgrQgk4IlI",
+  "url": "https://www.youtube.com/watch?v=vZgrQgk4IlI",
+  "title": "How I Use LEAPS Call Options To Retire Early (Full Masterclass) | Options With Ryan",
+  "channel": "Options With Ryan",
+  "channel_id": "UCQnIfbieTyf53CZBiyLAkjg",
+  "stream_date": "2025-09-07",
+  "duration": "25:38",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

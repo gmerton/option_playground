@@ -1,0 +1,280 @@
+{
+  "video_id": "mbNrtjYog_U",
+  "date": "2026-06-26",
+  "title": "Go big or stopped out | 26 Jun 2026",
+  "observed_trades": [
+    {
+      "date": "2026-06-26",
+      "ticker": "NET",
+      "direction": "long",
+      "action": "buy",
+      "setup": "Gap-down day; NET showed relative strength off the lows (near breakeven while QQQ down ~1% in first 15-30 min). Bought early, anticipating a breakout of the declining daily 9/21 EMA.",
+      "entry_basis": "Relative strength off the lows on a market gap-down; anticipation entry below the declining daily 9/21 EMA",
+      "stop": "Very tight; total risk ~0.1-0.15% of portfolio across the two buys",
+      "source": "2026-06-26_mbNrtjYog_U@46:15",
+      "confidence": "stated",
+      "notes": "Caption 'Nettie' = NET (Cloudflare), confirmed later by 'IBKR hasn't filled my stop order on NET'. One of the only two trades he took today (the other is the garbled 'Flossy'). At 67:20 he explains why he changed his mind from yesterday's plan of waiting for a 9/21 reclaim.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-06-26",
+      "ticker": "NET",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Same-day tight stop on the anticipation buy got hit as the bounce faded.",
+      "entry_basis": "",
+      "stop": "Tight stop below entry; filled during the stream",
+      "source": "2026-06-26_mbNrtjYog_U@62:34",
+      "confidence": "stated",
+      "notes": "'IBKR hasn't filled my stop order on NET just yet. Whoop. Got filled right after I pointing it out.' Concludes at 69:13/70:33 he was wrong to buy early below the 9/21 and maybe should have skipped it.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-06-26",
+      "ticker": "?",
+      "direction": "long",
+      "action": "buy",
+      "setup": "Second of the only two buys taken today alongside NET, on the intraday bounce during the gap-down; likely a relative-strength name (cybersecurity noted as the strong group).",
+      "entry_basis": "Intraday bounce / relative strength on a gap-down day",
+      "stop": "Very tight; combined risk with NET ~0.1-0.15% of portfolio",
+      "source": "2026-06-26_mbNrtjYog_U@45:51",
+      "confidence": "stated",
+      "notes": "Caption garble: 'When Flossy and Nettie are only... the only two trades that I am going to take today.' 'Nettie' = NET; 'Flossy' unresolved. Confirmed real fills by 'these two buys' at 63:01.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-06-26",
+      "ticker": "GFS",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Existing GFS position trading down through his stop on the gap-down; he lets the stop take him out rather than waiting.",
+      "entry_basis": "",
+      "stop": "Pre-set stop, being hit today",
+      "source": "2026-06-26_mbNrtjYog_U@11:52",
+      "confidence": "inferred",
+      "notes": "'GFS is getting down below my stops and if you trying to wait and wait and wait, generally it is going to lead to a larger loss.' Used as the example for his no-second-guessing rule; strongly implies he holds it and is being stopped.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-06-26",
+      "ticker": "CIFR",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Winner up ~25% pulling back into the 50 EMA; he treats a 50-EMA pullback as a solid consolidation that can set up the next leg, so he holds the full position with his original stop.",
+      "entry_basis": "Original buy was off the lows (position up 25% at peak)",
+      "stop": "Original stop respected; price almost hit it today",
+      "source": "2026-06-26_mbNrtjYog_U@75:00",
+      "confidence": "stated",
+      "notes": "Caption 'Cypher'/'Cyther' interpreted as CIFR (Cipher Mining). 'I'm still holding my full position on Cypher after being up 25% and now it almost hit my stop today.' Also at 65:21: 'I didn't sell it off the lows today... respecting my stop.'",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-06-26",
+      "ticker": "MU",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Existing winner he is trying to hold through the pullback, using the stop (not discretion) to guide the exit.",
+      "entry_basis": "",
+      "stop": "Using his pre-set stop to guide him during the pullback",
+      "source": "2026-06-26_mbNrtjYog_U@65:05",
+      "confidence": "inferred",
+      "notes": "'I don't know how it's going to end up like MU or maybe like Cyther. I didn't sell it off the lows today... respecting my stop.' Mentioned alongside CIFR as a current position in the holding-winners discussion.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-06-26",
+      "ticker": "?",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Got stopped out of many positions yesterday on high-risk-reward buys off the lows; says he would take those same trades again.",
+      "entry_basis": "Buys off the lows Thursday 2026-06-25",
+      "stop": "Stops hit on the continued weakness",
+      "source": "2026-06-26_mbNrtjYog_U@60:25",
+      "confidence": "stated",
+      "notes": "'Yesterday... I got stopped out from many positions. But yesterday... a really high risk reward play off the lows... if I can take the trade again I'm still going to take them.' No individual tickers given.",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2026-06-26",
+      "ticker": "?",
+      "direction": "long",
+      "action": "buy",
+      "setup": "Weekly-review admission: bought off the lows on Wednesday, which he now judges too early ('wrong 7-Eleven level') with room left down to the daily 50 EMA / weekly 9 EMA; says that trade could have been skipped.",
+      "entry_basis": "Buy off the lows, Wednesday 2026-06-24",
+      "stop": "",
+      "source": "2026-06-26_mbNrtjYog_U@59:29",
+      "confidence": "stated",
+      "notes": "'Buying off the lows on Wednesday is a little bit too early... could be prevented, could be skipped.' No ticker stated; distinct from the Thursday stop-outs which he stands by.",
+      "fill_timing": "'Wednesday'-style phrase (2026-06-24)"
+    }
+  ],
+  "principles": [
+    {
+      "category": "risk",
+      "text": "Let new positions get stopped out if they trigger the stop — no second-guessing and no ego; don't try to prove yourself right when the market tells you you're not.",
+      "timestamp": "10:52"
+    },
+    {
+      "category": "exit",
+      "text": "When price is already below your stop, waiting and hoping generally leads to a larger loss — take the exit.",
+      "timestamp": "11:52"
+    },
+    {
+      "category": "posture",
+      "text": "Don't panic-sell all positions or initiate shorts on a gap-down day; a gap down into support is a bad place to flip bearish.",
+      "timestamp": "09:12"
+    },
+    {
+      "category": "market_read",
+      "text": "Weigh the full index picture before turning bearish — it is hard to justify a bearish stance while IWM is still trending steadily above its 9 EMA even if SPY looks ugly.",
+      "timestamp": "10:35"
+    },
+    {
+      "category": "posture",
+      "text": "On reversal days when the market is below the 9/21 EMA you can simply sit out and wait for confirmation — a 60-minute reclaim of the 9 EMA, or the daily 9/21 breakout — before buying.",
+      "timestamp": "46:48"
+    },
+    {
+      "category": "market_read",
+      "text": "Red-open days that bounce intraday are the best days to spot relative strength — the stocks holding green while the market is down are the likely leaders of the next leg up.",
+      "timestamp": "47:35"
+    },
+    {
+      "category": "sizing",
+      "text": "Anticipation entries below the declining 9/21 EMA have a higher chance of failure, so offset the low win rate by risking a tiny amount (e.g., 0.1-0.15% of portfolio) with a very tight stop.",
+      "timestamp": "70:08"
+    },
+    {
+      "category": "psychology",
+      "text": "Have no P&L goals — focus on your trades only; P&L is a byproduct, and if you take good care of your trades the money will follow.",
+      "timestamp": "66:24"
+    },
+    {
+      "category": "exit",
+      "text": "Avoid moving stops to break-even as a habit — either take the planned loss or let the position do its own thing.",
+      "timestamp": "71:57"
+    },
+    {
+      "category": "exit",
+      "text": "Let the entry location dictate the exit style: a buy off the lows / a pullback into the 50 EMA is a solid consolidation worth holding through with the stop, while a buy off the 9 EMA or near highs should lean toward selling more into strength because a deeper pullback (to the 21/50 EMA) is more likely.",
+      "timestamp": "75:30"
+    },
+    {
+      "category": "entry",
+      "text": "For a breakout volume signal to matter it should be truly parabolic in dollar terms — roughly double prior days or a step-change in daily dollar volume — not just modestly elevated.",
+      "timestamp": "13:18"
+    },
+    {
+      "category": "process",
+      "text": "When the market is mixed and direction is unclear, be patient and let the market tell you — pick one bellwether stock (his 'anchor') to monitor as the read on market strength.",
+      "timestamp": "93:45"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "45:51",
+      "caption_text": "When Flossy and Nettie are only... the only two trades that I am going to take today",
+      "context": "One of the only two buys he made today (the other resolved to NET); tight-stop relative-strength bounce buy on a gap-down day; cybersecurity flagged as the strong sector shortly before.",
+      "guess": "?",
+      "confidence": "uncertain"
+    },
+    {
+      "timestamp": "75:00",
+      "caption_text": "Cypher / Cyther",
+      "context": "Full position up 25% at peak, pulled back into the 50 EMA and almost hit his stop today; he is holding rather than selling into strength.",
+      "guess": "CIFR",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "04:49",
+      "caption_text": "I think Quantum is one of that",
+      "context": "Named as a sign of market weakness: failed breakout, downside follow-through, no support at the weekly 9 EMA. Watchlist/market-read only, no position.",
+      "guess": "QUBT",
+      "confidence": "uncertain"
+    },
+    {
+      "timestamp": "07:54",
+      "caption_text": "light is going sideways for almost two months",
+      "context": "Former leader spending more time below the 50 and 21 EMA; could go both ways, too early to tell.",
+      "guess": "LITE",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "12:06",
+      "caption_text": "A Mets is looking a little bit starting to accelerate",
+      "context": "Huge volume yesterday but not a true doubling; he'd want 15-20B daily dollar volume for a parabolic signal; price slightly extended. Watch only.",
+      "guess": "AMAT",
+      "confidence": "uncertain"
+    },
+    {
+      "timestamp": "19:04",
+      "caption_text": "AOY / AEOI is back into the weekly 21 and the previous highs of the base",
+      "context": "Potential buy-off-the-lows at weekly support structure, but he explicitly is NOT taking it now after recent losing trades.",
+      "guess": "AAOI",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "48:00",
+      "caption_text": "Ryan looks pretty strong today. I think a lot of the data center name",
+      "context": "Relative-strength observation in the data-center group on the bounce; no position.",
+      "guess": "IREN",
+      "confidence": "uncertain"
+    },
+    {
+      "timestamp": "48:19",
+      "caption_text": "hot this uh is fine",
+      "context": "Another data-center name called out as fine/strong; no position.",
+      "guess": "HUT",
+      "confidence": "uncertain"
+    },
+    {
+      "timestamp": "48:19",
+      "caption_text": "BB uh after yesterday's gap up... the EP earnings day have been followed through to the upside... BB is at the all-time highs",
+      "context": "Earnings gap-up name at all-time highs while market is at the 50 EMA; impressive but hard to catch, only 15-min 50 EMA entries available. No position.",
+      "guess": "?",
+      "confidence": "uncertain"
+    },
+    {
+      "timestamp": "49:41",
+      "caption_text": "D talk is reclaiming the 9 and 21",
+      "context": "Strength observation during the software/relative-strength scan; no position.",
+      "guess": "DDOG",
+      "confidence": "uncertain"
+    },
+    {
+      "timestamp": "51:35",
+      "caption_text": "This MX cell also looks uh pretty decent ... this AMXL versus PE",
+      "context": "Going sideways above all EMAs with relative strength during the pullback; he prefers it over 'PE' as a focus name when the market regains strength. No position.",
+      "guess": "ACLS",
+      "confidence": "uncertain"
+    },
+    {
+      "timestamp": "52:18",
+      "caption_text": "PE is definitely not the one that I would like to focus on right now",
+      "context": "Weak name he would avoid unless it reclaims the 9 EMA today (which he thinks is highly unlikely).",
+      "guess": "?",
+      "confidence": "uncertain"
+    },
+    {
+      "timestamp": "55:15",
+      "caption_text": "Would you consider Q&T of the quantum names dots bouncing?",
+      "context": "Viewer question about a quantum name bouncing; he says he would consider it — strong vs peers, ~30-40B market cap but a bit illiquid. Watchlist intent only, no fill.",
+      "guess": "IONQ",
+      "confidence": "uncertain"
+    },
+    {
+      "timestamp": "83:31",
+      "caption_text": "this NVT rejected by the 21 EMA",
+      "context": "Semi/AI name breaking down from previous lows/support — cited as a market-weakness sign.",
+      "guess": "NVTS",
+      "confidence": "uncertain"
+    },
+    {
+      "timestamp": "18:18",
+      "caption_text": "Corning",
+      "context": "Treated as his anchor/bellwether for market strength; a huge red candle back to the 200 area would be 'the writings on the wall'. Not a trade.",
+      "guess": "GLW",
+      "confidence": "likely"
+    }
+  ]
+}

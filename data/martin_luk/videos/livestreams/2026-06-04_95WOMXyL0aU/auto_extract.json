@@ -1,0 +1,175 @@
+{
+  "video_id": "95WOMXyL0aU",
+  "date": "2026-06-04",
+  "title": "Reducing exposure | 4 Jun 2026",
+  "observed_trades": [
+    {
+      "date": "2026-06-04",
+      "ticker": "ASTS",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Space name; got stopped out yesterday as space names moved under the 21 EMAs",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-06-04_95WOMXyL0aU@05:47",
+      "confidence": "stated",
+      "fill_timing": "yesterday",
+      "notes": "'ASTS' stated; 'I got stopped out from some of the names like yesterday was ASTS'"
+    },
+    {
+      "date": "2026-06-04",
+      "ticker": "QBTS",
+      "direction": "long",
+      "action": "exit",
+      "setup": "Reducing exposure on a gap-down day; sold QBTS; not panic-selling everything at once, scaling out",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-06-04_95WOMXyL0aU@24:22",
+      "confidence": "stated",
+      "fill_timing": "today",
+      "notes": "Sold QBTS; Apple's reversal made the weekly bearish; also 'get rid of QBTS' at 10:06"
+    },
+    {
+      "date": "2026-06-04",
+      "ticker": "IONQ",
+      "direction": "long",
+      "action": "exit",
+      "setup": "Sold IONQ while reducing exposure on the gap-down day",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-06-04_95WOMXyL0aU@25:01",
+      "confidence": "stated",
+      "fill_timing": "today",
+      "notes": "'I also sold my IONQ' stated"
+    },
+    {
+      "date": "2026-06-04",
+      "ticker": "IREN",
+      "direction": "long",
+      "action": "exit",
+      "setup": "Sold his iron (IREN) position while reducing exposure",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-06-04_95WOMXyL0aU@25:01",
+      "confidence": "stated",
+      "fill_timing": "today",
+      "notes": "'I also sell this sword by iron' = IREN (garbled caption); also mentioned IREN at 10:06; ticker is interpreted decode"
+    },
+    {
+      "date": "2026-06-04",
+      "ticker": "IONQ",
+      "direction": "long",
+      "action": "trim",
+      "setup": "Took one partial (~50%) off his IONQ position; uncertain which day this week",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-06-04_95WOMXyL0aU@40:04",
+      "confidence": "stated",
+      "fill_timing": "",
+      "notes": "Caption 'OWQ' = IONQ (interpreted decode); ~50% partial ('50% I think'); he is unsure which day ('on this day or this day. I don't know')"
+    },
+    {
+      "date": "2026-06-04",
+      "ticker": "SOXS",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Keeping remaining SOXS position; gapping down into prior candle high / unfilled gap / 9 EMA, expects support",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-06-04_95WOMXyL0aU@25:01",
+      "confidence": "stated",
+      "fill_timing": "today",
+      "notes": "'SOXS pulling back gaping down'; 'I will keep the remaining positions'"
+    }
+  ],
+  "principles": [
+    {
+      "category": "posture",
+      "text": "When real selling shows up (a leader closing below its breakout-day low with a 3-day reversal, mega-caps 50% above the 50 EMA on huge volume), reduce exposure; don't buy the dip even when it gaps down into the EMAs.",
+      "timestamp": "03:26"
+    },
+    {
+      "category": "risk",
+      "text": "On a gap-down day, don't panic-sell the whole book at once; scale out and prefer selling into any bounce rather than dumping into weakness.",
+      "timestamp": "08:41"
+    },
+    {
+      "category": "posture",
+      "text": "Don't short too early; if it's a short-term top the market likely needs to spend time up there before turning, so wait rather than initiate shorts into the first drop.",
+      "timestamp": "13:24"
+    },
+    {
+      "category": "macro",
+      "text": "After a prolonged 2-month uptrend, a pullback has a higher chance of being a deeper/longer consolidation than the quick sideways-then-up that occurs early in a trend (e.g. ARM in April after only 2-3 weeks up).",
+      "timestamp": "32:46"
+    },
+    {
+      "category": "mindset",
+      "text": "To recover from an over-trading death spiral, recognizing the over-trading is the first step; then take a break, stop watching the market, and evaluate your trades.",
+      "timestamp": "07:15"
+    },
+    {
+      "category": "exits",
+      "text": "On the strongest holders still in an uptrend, wait for a final blow-off push (like ARM/Marvell did) and sell into that strength rather than exiting early.",
+      "timestamp": "54:17"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "06:07",
+      "caption_text": "ONDS close below the nine",
+      "context": "Disliked candle: big green candle followed by same-size red candle at the highs after running up 4000%",
+      "guess": "ONDS",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "10:06",
+      "caption_text": "I'm considering shorting Ocwen market starting to bounce and Ocwen bounce into the declining EMAs",
+      "context": "Considering shorting it as it bounces into declining EMAs",
+      "guess": "OKLO",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "10:32",
+      "caption_text": "yesterday RGTI was really ugly actions and I have Q",
+      "context": "RGTI ugly action; he holds 'Q' (a quantum name)",
+      "guess": "IONQ",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "25:01",
+      "caption_text": "I also sell this sword by iron",
+      "context": "Selling his 'iron' position while reducing exposure; also 'get rid of ... IREN' at 10:06",
+      "guess": "IREN",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "40:04",
+      "caption_text": "I have taken I took one partial from my OWQ, I believe",
+      "context": "~50% partial taken off this position; uncertain which day this week",
+      "guess": "IONQ",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "45:23",
+      "caption_text": "Red disease. Ricky knows. Team is also pretty strong",
+      "context": "Software names showing relative strength today",
+      "guess": "RDDT",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "51:17",
+      "caption_text": "I took a miss really strong today. Leading the cumin and spice the whole time",
+      "context": "A name leading (the Qs and SPY) strongly all day",
+      "guess": "MU",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "54:17",
+      "caption_text": "The M U S N T K S is I think I still not yet see a like a final push",
+      "context": "Names (MU, SNDK?) where he wants to see a final blow-off push like ARM/Marvell before selling into strength",
+      "guess": "MU",
+      "confidence": "unsure"
+    }
+  ]
+}

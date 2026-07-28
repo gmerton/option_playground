@@ -1,0 +1,165 @@
+[00:00] Morning everyone. Hope you're having a great start to your Labor Day weekend. This is Sean with Paycheck to Portfolio. Today I'm going to talk about margin management, how I borrow safely without
+
+[00:09] going broke. I'm going to go through some simple examples and compounding and then a calculator I'm working on that's a little bit more indepth on how you can calculate liquidity. Um, but first of
+
+[00:20] all, I want to do a portfolio update like I do at the beginning of every video. Currently, my net account value is sitting at $136,000.
+
+[00:29] My total unrealized gain is sitting at $33,724 or 13%. Friday, last week was kind of up and down in the market with different things
+
+[00:39] going on. We have a potential rate cut coming in September. So, the markets, it's been pretty volatile the last couple weeks. So, the portfolio was down $1,900 on Friday. But what's really
+
+[00:51] neat, if you're new to my system, all of my W2 income rolls into the brokerage account. I fully invest that income which generates dividends and cash flow. What my dividends don't cover, I bridge
+
+[01:03] with a margin um draw or loan. And essentially what's going to happen over time is that's going to snowball and fully cover my living expenses which will allow me to live free from a 9
+
+[01:15] toive job. Going back to Friday being down, 1900, I also had dividends that rolled in on Friday. Um and you can see those. So, let's just do this and make this easy. Let's just go all dividends
+
+[01:28] and let's just look at at Friday just so you can see what I was looking at. And we'll make it super easy and just hit apply here. And you can see all the dividends that just rolled in for me on
+
+[01:41] Friday 8:29. So we had MSTY that came in, multiple YieldMax covered call funds, some Defiance funds came in, and so you can see I had a hefty dividends around, I believe, $800 plus dollars
+
+[01:59] here. And so, you know, it cut in to those losses on Friday and it continues the cash flow cycle coming. So, if we go back to portfolio quickly here and look at performance,
+
+[02:13] my year-to- date performance, you can see I'm sitting basically at 30.5%. This takes into account growth of the portfolio and dividends received. The S&P is at 8.2%, the NASDAQ's at 8.8%,
+
+[02:26] the Dow's basically at six, and the Russell's at 5.4% there. If you look at my one-year, I'm sitting at 45%, the S&P is at 14. The NASDAQ's at 21, the Dow's at 9 and a half, and the Russell's at
+
+[02:39] basically almost 7% there. If you look at my three-year, I'm sitting almost at 81%, the S&P is at almost 53%. The NASDAQ 69, the Dow 35, and the Russell basically 21. As I've mentioned, I'm
+
+[02:54] fully living out of the brokerage. So, if you look at my historical value for the last year, again, I all of my money comes in, I'm living out of the brokerage. So in the
+
+[03:05] last year, this includes cash coming in and cash being spent. So uh my uh historical value is up 32,000 almost 33,000 going back to September of last year
+
+[03:17] while I'm living out of the brokerage. So in the system you get growth with the portfolio, you get cash flow in the forms of dividends, and you get compounding over
+
+[03:29] time. So it's really important to invest in the three buckets I talk about. long-term growth, closed end funds, I look at those as my anchors I always have, and then high yield funds, which
+
+[03:39] allow you to have cash flow. So, now let's jump into the margin uh management portion of this and how I borrow safely without going broke. I want to talk about what I call the margin flywheel.
+
+[03:53] And so, I'm going to go step by step here. Obviously, in column A, the first thing you would want to do is open a brokerage account. The second thing you'd want to do is to negotiate a rate.
+
+[04:04] If you have a brokerage open, you know, or you have multiple brokerages open, you know, look at one centralized brokerage. At least that's what I did. And then I negotiated my my rates as I
+
+[04:16] consolidated. And I've asked for rate decreases over the last year. And and typically I'm with Erade. They've negotiated with me twice and my my uh margin interest rates at 8.4% basically.
+
+[04:29] So the next step is you would deposit your funds. You would invest those funds. Those funds would generate dividends. Uh you would borrow on margin to bridge as I articulated earlier in
+
+[04:41] the video. You'd want to check your maintenance. Each stock has margin maintenance requirements which we're going to talk about um in the video here. as we move along, you would cycle
+
+[04:51] in your paycheck, the paycheck to portfolio method, and your dividends and growth would would snowball and and impact the portfolio. So, some rules I keep in this system. I always maintain
+
+[05:03] 50% equity or greater and living out of the brokerage, I always keep put option insurance on. I have videos on that if you look at my channel about how I run put options and how I protect myself
+
+[05:15] from a market correction or crash. You want to create a positive spread. So obviously your yield is greater than your rate which creates a business spread just like any business does going
+
+[05:27] out and get a getting a small uh business loan. They're generating a a capital investment and generating cash flow with that capital investment and creating a business spread. We really
+
+[05:39] need to get away from the consumer mindset and become more of a a business owner in our own finances. At least in my opinion, you need at least $2,000 to open a margin account or to qualify. So,
+
+[05:54] you know, if you're working your way up to that to that uh $2,000 minimum, you can start with less than that. You don't have to use margin to make this system work. I'm using margin because it's high
+
+[06:06] octane fuel for the car essentially. And um it expedites my my retirement plans. I want to retire in the next 5 to 10 years, God willing. And um that margin availability allows me to
+
+[06:19] increase that that compounding effect. But you can certainly do this with straight cash. You can invest that cash and you can cycle it in just like you would um in the same event as margin. So
+
+[06:31] please don't misunderstand that you have to use margin. You don't have to use margin. uh you can simply use cash and generate returns as well. So I invest in the three buckets. Um again I'm going to
+
+[06:44] mention them. Long-term growth, high yield funds, that's what I have as growth here and then high yield cash flow and compounding. Again the plan is that my dividends snowball over time and
+
+[06:55] cover my bills. I don't use margin for lifestyle creep. I'm using it for my bills and maybe some investments at times if I if I see things on sale and I have the equity availability in my
+
+[07:06] brokerage, but it's not so I can go take massive trips or um buy a new car, things like that. It it's definitely not used for the lifestyle. Again, as I mentioned earlier, and you're going to
+
+[07:18] hear some repetitive things, and I'm I'm kind of doing that on purpose because some of these concepts take multiple listening to and to get competence and understanding with. So each stock or ETF
+
+[07:29] has a margin maintenance requirement. For example, SPY, which is a long-term growth ETF on the S&P 500, it has a 30% margin maintenance on it. You can go to Erade, which I'll show you here towards
+
+[07:44] the end of the video, and you can see which holding you have much margin maintenance is required. My W2 stays fully invested on the front end as opposed to investing five or 10%
+
+[07:58] on the back end. In the calculation below, I'm assuming 25% dividends, which is conservative. Sometimes I'll get comments going which companies pay these type of dividends. The 25% I'm I'm
+
+[08:12] talking about the high yield funds that run a covered call strategy or a covered put strategy. Neos, QQ, QQI, SPYI. You have Defiance that has QQQY. You have Roundill that has QDTE.
+
+[08:26] Those funds are running a covered call or covered put strategy depending on which company you're looking at or which fund you're looking at. And those will generate dividends for you. And um you
+
+[08:37] know, many investors run covered call or cash secured put strategies on their own. Uh these companies do that for you and generate cash. And then I'm I'm allocating 5% conservative growth to my
+
+[08:49] growth funds such as SPY which historically outperforms SPY. Um so again I'm I I believe I'm taking conservative estimates and looking at these things. So let's say we have an
+
+[09:02] example account here. We have an ERA account. It's margin enabled. Uh you've negotiated your rate down to 8%. Doesn't really matter if it's 8 n or 10%. you'll see the the dollars don't really impact
+
+[09:15] the the interest that you pay at at the end of the month with the numbers we're using. So, we're going to say we're starting out with a $10,000 deposit. I realize some people listening uh may not
+
+[09:27] have $10,000. They might have $500 or a,000 or 2,000. The concept still applies to the system whether it's 2,000, 5,000, 10,000, $100,000, million dollars. It's still all the same
+
+[09:40] flywheel generating the same compounding effect. So, I would encourage you as you're watching my videos and you're checking out my channel is try not to over complicate it. I know we're talking
+
+[09:52] about some complicated numbers. We're talking about a complicated system, but hopefully it's simple enough to where you can follow along. Uh again the three buckets S spy growth
+
+[10:05] CLM cornerstone closed end fund YAX all of yield maxes covered call ETFs or or or tickers I guess I should say QQQI NEOS fund on QQQ. So let's say we're trying to scale to cover a bill. An
+
+[10:22] example is a $500 truck payment. So you would borrow $500 for the truck. Let's say that you have a 30% margin maintenance requirement just to make the math easy in this example. So the next
+
+[10:34] check you get 2,000 would would be invested and the portfolio would now be 12,000. Okay, let's say dividends equal$10,000* 25%. We talked about that earlier. That's $2500 a year or $28 a
+
+[10:49] month. Now let's say on the growth portion of your portfolio it grows at a conservative 5%. That's the spy, the CLMs. Um, take 10,000, that's $500 in growth a year or approximately $42 a
+
+[11:04] month. So, if you look at the math here again, brokerage setup, negotiated rate, you would have $5,000 of margin availability. So, if you open up a $10,000 account, you apply for margin.
+
+[11:16] Typically, most brokerages are going to give you 50% margin availability. So, in this example, it would be $5,000 worth of margin. You would want to build your your three buckets like we've talked
+
+[11:26] about a few times so I won't repeat myself there. Uh basically this is used to offset your expenses or to erode your expenses in a good way. So you pay that $500 truck bill. Now your equity is
+
+[11:39] $10,000 minus your $500 investment or or bill rather. So that brings your equity down to $9,500. Now, in a margin maintenance requirements, let's say it's 30%, again,
+
+[11:53] for easy math. $10,000 time 30% equals basically a $3,000 deposit that your brokerage is going to make you keep. Think of this like a rental deposit. If you go rent a house, an apartment, um,
+
+[12:07] we've all done that at some point in our lives. That's basically the deposit that your brokerage makes you hold so you don't overlever yourself or extend yourself. So, you would still be well
+
+[12:17] above that that margin maintenance requirement when your paycheck rolled in the next month. You know, you could say it's $500, you could say it's $2,000. You can
+
+[12:27] you can scale this however you would like if you want to look at it in different mathematical equations, but in this in this case, your equity is now $12,000 minus your $500 payment would
+
+[12:38] get you to $11,500. You're still safe, obviously, because you're building more equity. So in this example, your margin interest on $500 at 8% is $40 a year or $3.33
+
+[12:52] a month. Your net inflow with your dividends plus projected growth would be $28 in dividends and $42 in growth minus your $3.33 in interest. Um, which would be a $247 a month benefit. That's how
+
+[13:09] everybody looks at it in the business world. I've been blessed in in my career to um be in leadership roles where you know I have a master's degree in business. I've ran some private equity
+
+[13:20] companies and this is simply how a business looks at their own financial health is revenue minus expenses equals the bottom line right that you'll hear often. The concept is the same example
+
+[13:34] here down below. I basically just built a 12-month scenario to where you could see your portfolio value compounding your equity after your $500 debit growing. So again, you're snowballing
+
+[13:48] here each month. You can see each month you're investing in your dividends which snowball and erode the expense. You see your growth in dollars here and your net after interest here. So, the
+
+[14:02] concept can seem complicated, but really you're you're investing, you're compounding, you're getting growth, you're getting dividends snowballing, and you want to maintain that equity.
+
+[14:15] What I'm building in the community, we have multiple resources available to you. I have a white glove service if you need shoulder-to-shoulder training and and one-on-one training and coaching. I
+
+[14:26] have a a membership with Discord access and tools. I have um a a simple calls, 30 minute calls you can set up with me and we have the free starter kit. All of those resources will be on the pin
+
+[14:41] comments and you can always go to my YouTube channel and find those or look at the description of my videos. But I'm creating a comprehensive tool that's a little bit bigger, right? These are all
+
+[14:52] my holdings. These are all my quantities. You can see the price I paid, the dividend yield that each uh stock or asset pays, the estimated annual dividend, the monthly dividends,
+
+[15:05] the margin maintenance you can go in and grab from your brokerage. It can even vary by brokerage. We have a lot of members that have Schwab, Fidelity, obviously Erade, some folks use Robin
+
+[15:16] Hood. Um, so those margin maintenance percentages will fluctuate by broker. And then what this calculator is going to be able to allow you to do is to take into account your own specific
+
+[15:28] situation. So in my case, I have my total market value here. I'm telling it I need $8,300 of living expenses. It's calculating my current dividend yields as of the last payment. And it's telling
+
+[15:43] me I basically have 50% of my bills covered in the form of dividends. And then when my W2 paycheck rolls in next month, it's going to tell me what is my projected equity. Um, and and then you
+
+[15:56] can take into account even daily changes with the market, which can affect your equity as well. So, I'm trying to make something very complicated, easy to use on a calculator. You can see this in
+
+[16:08] your own brokerage as well, just for full disclosure and transparency. If you go to margin, they'll have a calculator here. They'll tell you your requirements, your holdings. You can
+
+[16:17] even uh on E trade you can even enter a specific let's say you wanted to buy a stock and you wanted to buy some more MSTY you can pull that up you can say what would happen if I bought 100 shares
+
+[16:31] you know and then you could calculate the impact of what that would look like on your projected pre and post purchase. So these tools are available to you in your brokerage. But if you want
+
+[16:42] something easy and you want a community with multiple tools, we have that here in the Discord for you. I know that this is a lot of information. I hope you found it useful. Please like and
+
+[16:53] subscribe and share if you found this valuable. I really appreciate all of you guys loving the communication, the outreach, and uh just really passionate about this and I I hope it's helping set
+
+[17:06] you free um long term from from a nineto-five job and and that you're able to do what you want as well. Thank you guys. Talk to you soon. Bye.

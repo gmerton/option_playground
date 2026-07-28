@@ -1,0 +1,273 @@
+[00:00] I never looked back because it has such a high win rate and you get a lot of premium for selling them. If you do it right is how you can get the exponential wealth.
+
+[00:10] Today we are diving into options on futures like NQ and ES. We'll talk about the leverage risk and premium selling. My guest calls herself to OS short for the option seller.
+
+[00:26] Hi Josh, nice to be on here. So give us the 40 secondond version of why you prefer selling options on futures rather than on stocks and indexes and ETFs.
+
+[00:39] Yeah, for sure. I trade ES and NQ future options using technical analysis, gamma exposure and options slow. So I prefer trading futures options because one there are open very um late. So you have
+
+[00:57] actually 23 hours a day to trade future options unlike you know normal index or equity options. And also because they have daily expirations you have a lot of gamma exposure data that gets updated on
+
+[01:14] a daily basis. So that gives you a very minute-to-minute picture of how different participants in the market are positioning and that in my opinions gives you a very good edge in predicting
+
+[01:29] the move for the day. And then the other thing is that they have very good tax structures that a lot of people don't know about uh that I take advantage of. And in short, I've been, you know,
+
+[01:42] hosting a Substack and Discord to teach others how to do the same for the past four months with a 91% win rate and over 77,000 returns on a 100K average account. and
+
+[01:57] we will dig into this but tell us first a little bit about yourself and especially your way into options trading. I started trading back in 2020 during
+
+[02:07] the pandemic um a lot more times then so I started to look into how I can have a side hustle. My goal at the time was to retire my parents early which I did by the way. Um so
+
+[02:22] what I did was I started trading stocks and then I discovered options as a leveraged version of stocks. Um I really like trading options and discovering different strategies related to options
+
+[02:35] in particular. I really like selling puts. Um and I thought that was like a really good way of using my capital versus just owning a stock outright. And then I discovered futures which has even
+
+[02:50] more benefits than trading regular equity. Futures as mentioned before has you know a more flexible hours of tradings that allow me to focus during um outside of my 9 to5 and I can
+
+[03:07] trade during Asia or during London sessions and then I use what I've learned from equity options and apply that to futures. Then I started selling puts on futures on the NASDAQ 100 and
+
+[03:24] the S&P 500 futures. I never looked back because it has such a high win rate and you get a lot of premium for selling them and they have daily expirations which is really good if anyone wants a
+
+[03:37] daily generating income strategy. Where are you located? I'm in Los Angeles. Let's start with the basics. What is a futures contract and how does it work in
+
+[03:52] practical terms? [snorts] Way back in the day, the futures were invented to allow people to hedge. People usually trade futures on commodity like silver, gold, caddles,
+
+[04:06] milk, um corns. But with the rise of like the financial market, we also have features on like the equity in indexes themselves. Um so you don't actually get you know like a cattle or a bundle of
+
+[04:24] corn with the MNQ or sorry with the NQ or the ES uh features. you they track the S&P 500 and the NASDAQ 100 respectively, right? And when you trade them, the advantage is
+
+[04:42] that you are get to trade with a very high multiplier and you are you only need a very little bit of margin to trade them even though they have a high notional value. And it
+
+[04:59] allows you to track the index directly without worry about the Greeks if you're trading futures directly. So in this case, one ES future contract is $50 times the index value of the S&P 500,
+
+[05:15] right? And one NQ future contract is $20 times the NASDAQ 100 index value. So what what are the main differences between an options on a futures contract and options on say stocks and indexes or
+
+[05:33] ETFs? In essence, they trade the same way, right? So a claw gives you the right to buy a future cons contract at the strike price, right, that you picked. And then
+
+[05:45] a put gives you the right to sell the future contract at the strike price that you picked. So same concept as equity options. But instead of translating that to 100 shares of the underlying, you're
+
+[05:59] translating it to one future contract of the underlying, whether that's, you know, the NQ or the ES. What are the most common uh futures to trade options on?
+
+[06:12] I would say the ES market is the one with the most liquidity. NQ has a lot less liquidity but it has way higher premium which is why I like it. And then a lot of people that I know also trade
+
+[06:26] it on the commodity market. Right. So there's gold and then there's silver as well and copper. And you also have some mini versions of this uh of ES and and NQ right?
+
+[06:39] Yes, we have the micro version. And this is what I recommend people to start out with if they're new to futures. So everything that you've heard so far with regard to you know the uh ES and MNQ
+
+[06:54] just think one10enth of the size right so each NES or micro ES contract is onetenth the size of one ES. So that's $5 times the S&P 500 index level, which dramatically reduces your risk and the
+
+[07:13] dollar swing of your P&L. Okay? So for each 100 point move on the S&P 500, typically you would get $5,000 on the ES, but on the NBES that would be $500. And then on M and Q, same concept,
+
+[07:31] right? onetenth the size of one and two. So $2 times the NASDAQ index level. So every 100 point move on the NASDAQ, you get $2,000 on NQ and with MNQ, you get $200.
+
+[07:48] So I guess that is a mental shift for those of us who have only been trading options on stocks or indexes to get the overview of how many contracts you control. We are so used to always
+
+[07:59] multiplying by 100, aren't we? Yeah. I think that like tripped a lot of people up when they first start cuz they're like, "Oh, uh, like, what does this mean? Do I multiply it by 100?"
+
+[08:10] Like, you know, especially when you see like the the contract price. So, that's a common mistake for sure. What about the leverage and the margin you use on these options as compared to
+
+[08:21] options on stocks and indexes? I think that's a really really good uh questions because leverage is a two-sided sword, right? You live and die on the sword is what I
+
+[08:35] typically like to say. The advantage of trading future future option is leverage and the disadvantage is also leverage. Let's talk a little bit more about how the leverage works
+
+[08:50] for the ES, right? You are looking at 13.9x leverage. So that's kind of similar to something you would say you would see on like crypto trading platform, right? You have like between
+
+[09:06] 15 to 20x leverage. Uh some even go to 50, but that's crazy. And then on the NQ you get 13.7x leverage. What does this actually mean? The notional value of one ES contract
+
+[09:25] and this is something that people don't typically think of when they trade future but the notional value of one ES contract is the S&P 500 is trading at $6,900
+
+[09:39] would be $345,000. That's some money. Yeah. Right. So that's 6,900 time 60 $345,000. So which is trading one ES contract.
+
+[09:56] That's how much money you actually control. And so that's why every time the ES moves one point, you get $50, right? And the sweet thing about future, like I
+
+[10:12] said, it's leverage. Because that's a 13.9x leverage. You don't need 345,000 to trade it. You only need roughly 24,000 as your margin requirement to trade one
+
+[10:30] ES contract. Now, if you're familiar with stock options, right, and most broker will only gives you 4x leverage. With futures, you're looking at 13.9x.
+
+[10:46] That's a lot more. And and I think like that if you do it right, is how you can get to exponential wealth, right? If you know how to control your risk and use margin and use
+
+[11:01] leverage responsibly and it's how people can make a lot of money even if they don't even if they don't have like a large starting capital.
+
+[11:11] What happens if you are assigned the futures? Is that the same way as if you are assigned an option on the stock? Yeah, it's the same to go back to like a stock example, right? If you sell one
+
+[11:26] put on SPY and it goes in the money at expiration, then you get 100 share of SPY at the uh at the end of the expiration, right? But with ES,
+
+[11:41] if you sell one ES contract, one put in this case, and that put goes in the money at at expiration, then you will get one ES future contract at that strike price as you're signing.
+
+[11:57] I understand that your favorite futures option is NQ. That is the futures on uh on NASDAQ. Why is that your favorite? I like to think of NQ as the wild child and ES as like, you know, like the first
+
+[12:16] kid that it's like really good and try to be responsible. For people to start out, I recommend trading ES because like it's easier to understand. It moves more orderly and NTO is like the NASDAQ,
+
+[12:29] right? It moves it's more volatile and you get rewarded for the volatility, right? So, it has richer premium than ES, which for me as a premium seller is what I'm looking for and I'm willing to
+
+[12:45] take on that extra risk because I know the index really well. And then similar to ES, it has daily expiration. So, this gives me more precise like timing understanding using gamma exposure on
+
+[13:02] the market. And so I can like see where different participants are positioning. And that helps me like that gives me a more concrete level than just like using technical analysis. And then of course
+
+[13:14] it has the tax benefit and the 23 hours trading window. What is the strategy you are trading most on?
+
+[13:24] Put credit spread. Put credit spread is my favorite strategy on NQ. Um so typically how my dates start right is I look at the chart I look at the gamma exposure. I have my levels on the chart
+
+[13:40] and you know I map down like different technical analysis or patterns that I see and then I use the gamma exposure. So layer that on to see like okay where are pe where are the call resistance
+
+[13:54] where the put support where you know these are potential in selection point within the market and that's something to note and then I also um using that information I'd like to then sell a put
+
+[14:10] below the put support and then a lot of time I also turn it into a put credit spread to not only reduce the margin require I'm in but also to add in an extra protection, right? So it's risk
+
+[14:24] apply when you have a spread like you basically is saying like this is how much I'm willing to lose. I do that on a daily basis, right? Because future has the zero DTE expirations. It allows me
+
+[14:37] to make income every single day unlike with equity options where you only have weekly or monthly expirations. Um, so that's like the thing that I really like about doing the strategy.
+
+[14:49] What type of deltas do you typically end up with on these put credit spreads? I actually don't use delta um like I mentioned because the market is very dynamic and you know like the gamma
+
+[15:02] exposure does change a lot. So I don't stick to a fixed delta. I know people some people do 10 delta, some people do 25. Um, but I don't stick to a fixed delta value. Rather, I look at, you
+
+[15:16] know, what's the strike that's gonna expire out of the money, but also still give me a good premium, cuz I don't want to put up a lot of risk and only get like a $100 in return, for example.
+
+[15:30] So, what what type of tools are you using to identify the gamma exposure levels or other signals that you use? Um, so there's a couple tools that I use. I use Tanuki trade. So they have um
+
+[15:45] a lot of gamma exposures on different stocks and index and also futures. I also use options dep um only S&P options but it's more granular so you can see like you know what the
+
+[16:03] customers are positioning and what the market makers are positioning. I think that's really helpful. And so I use that SBX data and translate that over to ES if I'm trading ES. Um if not, then I
+
+[16:17] will use uh NQ data and QQQ data to help me when I'm trading NQ. And the reason I brought up QQQ is because the options market there is way more liquid and way thicker than NQ,
+
+[16:33] right? And so you get a lot more data um from GKQ on a daily basis, especially during the US market hours and I think that's much more reliable than just using like the um MQ future data itself.
+
+[16:50] Um so that's why I like to use both. And for viewers who might be curious about GEX levels that you use in your analysis, we do have an in-depth interview on that topic with Doc Mc Gro
+
+[17:03] that I recommend that you watch if you're curious about that uh about that topic. And I know that you also have been working together with Doc McRo about this.
+
+[17:13] Yeah. No, he's awesome. I definitely recommend you guys watching that video has a lot of knowledge on gamma exposure. uh he's also in my room. He like share his trade uh and analysis all
+
+[17:26] the time. So he's a great guy. How let's move to the risk. How would you assess the risk of trading options on futures compared to other options trading?
+
+[17:38] I would have to go back to what I said earlier, right? The advantage of trading future is leverage and the disadvantage is leverage. With like stock options, you're looking at Forex leverage at
+
+[17:52] most, right? But with futures options and just future don't sell, you're looking at 13.7 to 13.9x leverage. And people can oversize
+
+[18:10] if they don't think about that. I just want to pause there because that's a really important point and I see it time and time again especially like some people who are new to trading features
+
+[18:24] and it's derivatives leverage can kill you. So do not oversize especially if you are doing a PL credit spread because that compresses the margin requirement even more. And so,
+
+[18:40] you know, instead of the usual like um 36k margin for trading one naked put, if you do a put credit spread on NPU, you can reduce that even further based on like what your long put is, right? And I
+
+[18:58] see people oversize because they think, oh, this is only requiring 7K margin. let me just do like five, you know, spreads. And then when the spread go in the money, all of a sudden, you know,
+
+[19:14] you're at town's at risk because you didn't have that much margin to take on the assignment of five and two to begin with, right? And so that's something that we have to like keep in mind is
+
+[19:27] that you're already trading a very high leverage instrument. So don't go crazy with spreads and always keep in mind like how much margin requirement is needed to take on
+
+[19:44] assignments if something goes in the money. And this is also why you recommend people to start with the micro versions like mees.
+
+[19:54] Exactly. Right. So with the micro version instead of 36,000 as a margin requirement is 3.6 6K or 3600, right? And so on one10enth the size and
+
+[20:09] that's really good for risk management and for smaller accounts starting with trading and like most things, right? You should focus more on the process and the understanding of how things work first
+
+[20:22] rather than chasing the money. And I think like if you want to build this skill for yourself and to use it to escape your 9-to-f5 job, then focus more on like learning how the thing you're
+
+[20:37] trading works like and how to manage risk and how it affects you emotionally when a trade is going the wrong way. And you know knowing all these things will help you become a better trader and so
+
+[20:52] that eventually you can size up and do it responsibly. Um and you know I just I don't want people to like think oh leverage means I can make a lot of money. Yes that's totally true but the
+
+[21:05] opposite is also true. Leverage also means you can lose a lot of money. I guess this is as with all options trading the best loser is the biggest winner in the end. Yeah, exactly. But,
+
+[21:18] and this is something that I haven't talked about, unlike equity options, there's a lot more repair strategy that you can do with future options. We talked about assignment, right? So,
+
+[21:33] that's it. Your put goes in the money. You get assigned one future contract for every put that you sold. However, what I haven't talked about is that if you sold a put on NT, for
+
+[21:48] example, let's use 25 um,000 as the strike. And let's say the market is trading at 25100 and now it's approaching your strike.
+
+[22:04] and you know all the data that you're looking at is telling you that it's likely that it's a trend day and there's a high probability that your strike's going to be in the money by the end of
+
+[22:15] the day. So what do you do in that case? You can start shorting NQ directly to cover your naked put or your put credit card spread. Right? So if NQ is trading at 25100
+
+[22:31] and you are feeling fairly confident that your 25,000 strat is going to be in the money, you can start shorting it at 25100, 2550,
+
+[22:42] any level above your break even. you can start shorting that to cover your play and then by the end of the day when your strike is breached then you it will cover the short that
+
+[22:57] you already have right because what happens when your strike is breached you get an assignment which is equivalent to being long so that long will cover your short and you that's how you can
+
+[23:08] actually make money even when the market's going against you right so that's already two repair strategy. First one is to take assignment and then start you know either selling cover call
+
+[23:21] on it or sell it when the price move above your break even point. Second one is to start shorting it if you feel fairly confident that your strike is going to be breached. And then the third
+
+[23:35] one is to roll, right? So you can roll the cut credit spread that you have to a later expiration. And when rolling, I always recommend to try to reduce your strike down to um like a lower strike to
+
+[23:53] reduce your exposure. And then, you know, go for a credit. So don't roll. You're gonna like have to pay up for it. In that case, it's in my opinion, it's better to take assignment because for
+
+[24:07] the most part you can get out of the assigned long within like a day or two and then you know obviously the last option is to close it up as a loss and just take it as a loss and move on.
+
+[24:22] Now I'm curious what have been your results from trading futures options? Right now, I have a 91% win rate and then $77,000 returns on a 100k account. Right? So,
+
+[24:40] and I have the spreadsheet that I share every week that shows all the trades that we took inside my Discord that I call out live. And then also like it's something that I do every day. So
+
+[24:54] I'm trading with every you know the people in my discord live and if they have any questions that's when I answer them uh and then I would give them like the guidance that I would give myself
+
+[25:07] not as financial advice but like something like I would do if I were in that situation. It has a very high win rate like as I mentioned because you are selling and you are in essence being the
+
+[25:20] market makers right and there's also a lot of repair strategy like we've been through a lot this year right you have very volatile like up and down day especially in Q I I don't know
+
+[25:36] if you watch the market that often John but like if you see just this past week we have multiple days where NQ was down like between 3 to 500 points, right? And so that's normally would be very tough
+
+[25:51] for option sellers to handle. But because we're trading future options, we have a lot more repair strategy when the trade goes against us. For example, one of my short put got breached and I took
+
+[26:05] assignment on it and I was able to get out like few days later at a profit, right? And that's what I meant by the advantages of futures options. And then the other thing that I want to
+
+[26:19] remind people is that unlike you know trading super volatile stocks for high premium, you're trading the NASDAQ 100. This is not a this is not a code, right? Like this is not a company that
+
+[26:35] is running on hype like you know quantum companies are right. This is actually the NASDAQ 100 is like the top 100 tech company in the world and the chance of it recovering is very high and even if
+
+[26:53] you have to forward for a day or two like you shouldn't be losing sleep on it right it's not like oh my god this company is going to go bankrupt right if the NASDAQ goes bankrupt we have way
+
+[27:04] more issues than our trading account let's sum up a bit who is trading options on futures is best suited for would you say and what would be your two or three most important takeaways
+
+[27:16] [clears throat] that you really want the audience to remember? I think trading future options is really suitable for someone with at least some starting capital of 50k or more right I
+
+[27:30] don't recommend like trading it unless you have that account size if you have smaller account size then do the micro right so that will be suitable for anyone with less than 50k. But if you
+
+[27:42] have more than 50k, you can do the actual um ES or NQ itself. And then it's also suitable for people who have a 9 to5 job and can't necessarily look at the market during the the normal like 9
+
+[27:59] to5 window. If you're in the US, if you're in Europe like John, then that's not an issue. But yeah and like if you want to sell premium selling it on NQ is one of the
+
+[28:13] best underlying instrument you can do for you know the return on capital and as well as the risk that you're taking on. It's just there is no comparison. You don't have to you know do it on a
+
+[28:28] crazy volatile company that's running on high. you're doing it on the tech index itself and these are you know this is one of the safest thing that you can do and still make really really good
+
+[28:43] returns. The final thing that I want people to take away, of course, is something that I've emphasized again and again during this whole video is don't forget you're doing this on very high
+
+[28:55] leverage and it can go to your advantage, but it can also go to your disadvantage if you oversize. So remember how much margin requirement is needed for what you're trading. And as
+
+[29:09] always, don't oversize. focus more on the process until you are confident and have been making you know um and has been profitable consistently before you size up.
+
+[29:21] What would be good resources to learn more about trading options on futures? I have a substack and a discord uh the option seller and you know you can join us and I every single day I trade.
+
+[29:36] Nobody loves trading more than me is what I like to say. And so like I would trade during lowex hours. This is non US hours for those who are um not part of the US market. And that actually I trade
+
+[29:52] a lot during like Asia and Europe hours as well to like just sell options because a lot of time like they have good entries and I will have alert set to like sell different options there.
+
+[30:05] Obviously, I trade during US hours. That's when I'm most active. I will give a daily plan on like what I think the market will do based on DEX levels and also like what I'm seeing on my end and
+
+[30:20] yeah, help people along. Would you have a couple of books on options trading that have you have benefited from and that you would recommend to our viewers? option as a
+
+[30:31] strategic investment. I think that is like the holy grail textbook on options and you know future option trade just like normal options the concepts the same. So once you understand the
+
+[30:46] concepts behind different option strategy, you can apply them to futures, right? So I think that one's really good if you're brand new to futures, don't really know what a put or a call means
+
+[30:58] or like you know what are some more intermediate or advanced strategy that you can do with options. That one's really good to dive in. And then I think also
+
+[31:08] most of trading is a mental game, right? It's about how you manage your emotions, about how you manage your fear and your greed and also like understanding yourself and how you operate under
+
+[31:24] stress. So trading in the zone and the other ones like best winners lose. I think those are two really good one to to read because it dives into what you should expect and how you can control
+
+[31:44] your emotions in those states, right? And then to sum up, always go into a trade knowing what your max loss is and accept that you don't have control over the market. I think that's really
+
+[32:00] important because we often trade what we want and not what we see. What we see is what we need to accept, right? And people like to control the market. If they have a controlling tendency or if
+
+[32:16] they, you know, if they feel like that's something they can exert control over, but in reality, unless you have billions of dollars, it's very hard to control price movement. And so we can only trade
+
+[32:28] with price not against price. Thank you very much for sharing your knowledge about options on futures. Um you are trading a lot with GEX level as I mentioned before. I do recommend the
+
+[32:43] interview with Doc McRaw about trading with GEX levels that the link is popping up on the screen now. But thank you very much for your introduction to this very fascinating topic.
+
+[32:55] Thank you John. Thanks for having me.

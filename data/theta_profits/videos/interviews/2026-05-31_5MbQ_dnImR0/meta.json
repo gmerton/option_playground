@@ -1,0 +1,19 @@
+{
+  "video_id": "5MbQ_dnImR0",
+  "url": "https://www.youtube.com/watch?v=5MbQ_dnImR0",
+  "title": "How Chris Pulver Achieves an 85% Win Rate With 0DTE Options",
+  "channel": "Theta Profits",
+  "channel_id": "UCzGARfberQ8nRRbsjK90BHg",
+  "stream_date": "2026-05-31",
+  "duration": "59:42",
+  "summary": "Chris Pulver (options educator, 'Practical Options' course) runs a flexible defined-risk 0DTE SPX/XSP book: a ~10-delta iron condor sized inside a gap-adjusted expected-move box, a broken-wing-butterfly defense just inside it, and standalone 'profit-trap' butterflies pinned at intraday gamma (TanukiTrade HVL) levels. Claims ~85-89.6% win rate and +27%/2025, +15.3%-YTD/2026 — but it's an intraday discretionary day-trade whose ~85% headline is, to the decimal, the breakeven win rate of his own iron condor. Write-up: strategies/pulver_0dte.md (conviction 2/5).",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

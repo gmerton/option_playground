@@ -1,0 +1,19 @@
+{
+  "video_id": "YREhrh408Bs",
+  "url": "https://www.youtube.com/watch?v=YREhrh408Bs",
+  "title": "10% a Month? Inside Azhar Pasha\u2019s Adaptive 0DTE Butterfly Strategy for SPX Traders",
+  "channel": "Theta Profits",
+  "channel_id": "UCzGARfberQ8nRRbsjK90BHg",
+  "stream_date": "2025-10-19",
+  "duration": "34:41",
+  "summary": "Anesthesiologist Azhar Pasha pitches a 0DTE SPX 1-3-2 broken-wing butterfly: one near-money debit spread 'facing the market' shields two OTM credit spreads, entered near-open for a ~40c net credit and hand-managed all day to close for near-zero debit, with an 'adaptive' put-to-call flip (financed by the now-ITM debit spread) when the market runs against him. The debit-spread shield is a genuinely sound idea (turns a possible 100% credit-spread loss into ~50% and buys reaction time), but the headline 'about 10% a month' rests on a 3-month, self-reported, strongly-bullish sample with 'one 0.01% loss day' and is pure discretionary intraday GEX-reading, not a mechanical rule. The self-rated 4/10 risk understates the real tail: after the shield is spent he flips to an unhedged single-side bet and, on a second reversal, adds contracts to 'stay positive' (a martingale path). No sales motive and fair candor, but no separable/audited record and an extraordinary claim in a benign regime; 0DTE + intraday flips are not faithfully testable on EOD data. Write-up: strategies/azhar_pasha_0dte_butterfly.md (conviction 1.5/5).",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

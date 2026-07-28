@@ -1,0 +1,243 @@
+[00:00] Gold has employed volatility about three times that of S&P right now. There is a lot of opportunity to sell premium and I've been averaging about 10% of the account size as profit per month.
+
+[00:15] Compared to most markets, gold future options carry elevated implied volatility. In this interview, we'll explore how traders can use that to generate income.
+
+[00:29] Welcome Asha Pasha. Give us the quick summary of how you trade gold futures and how it has worked for you. So as you were saying, gold has implied volatility about three times that of S&P
+
+[00:45] right now. So what that does mean to me is that there is a lot of opportunity to sell premium. So what I do is that I normally sell you know credit spreads on gold for daily expiration. So there are
+
+[01:01] five expirations per week. The gold future contract start trading around 6:00 p.m. and they expire the next day at 5:00 p.m. So it is a 23-hour
+
+[01:16] option like duration and you can sell put credit spreads or call credit spreads and because of the high implied volatility it seems to have a lot of juice so to speak and lot of
+
+[01:32] opportunity to sell premium. This is very interesting and I look forward to digging into it. But first uh tell us a little bit about yourself and especially as an options trader.
+
+[01:44] Yes sir. So I'm an anesthesiologist and a pain physician by trade, but I have been uh you you know dabbling in in stock trading and option trading since the '9s. But I've been doing uh like
+
+[02:00] seriously the option trading since 2020. And I've been uh like I mainly sell premium. I like to sell options in the liquid uh entities like these days my main trades are in S&P and in the gold
+
+[02:18] futures and you have been guest at theta profits before that time we discussed your other main strategy adaptive zero DTE butterfly so I do recommend people to
+
+[02:33] check that one out as well before we go into exact exactly how you trade. I think it's good to take the basics. What are gold futures? So, basically there's a contract for
+
+[02:47] gold futures which if you end up being assigned the contract you are buying, you know, 1 ounce of gold. So, right now the contract is is being traded around $4,800.
+
+[03:05] And if you sold a put option and it was in the money at the time of expiration, you would be assigned 1 ounce of gold. However, uh the intent is not to buy physical gold this way. Uh the intent is
+
+[03:24] to is to be able to sell premium and like right now uh you know gold as as we all know has been very bullish and you know like one could say that it's
+
+[03:40] very simple you know you always sell like a put spread on it. What's the big deal? However, there's a lot of volatility. the uh you know the overall trend is up.
+
+[03:53] However, the price can swing uh four to 5% up or down. You know, sometimes you based on like what's going on in the world. A lot of macro events can also you know have an effect on gold. So it
+
+[04:11] is very interesting and that is why there is you know so much volatility and that's why these options have so much premium. What ticker are we talking about here?
+
+[04:21] It is slashgc. So to be clear you're not trading slashgc in itself. You are selling options on slashgc. Yes. So I'm not buying or selling the
+
+[04:35] contract itself. I am selling puts or call options on GC. That is correct. And are these European style options where they are cash settled? No sir. You will actually be assigned
+
+[04:51] one ounce of gold. [laughter] If you were uh actually assigned uh and you took uh and you had to take delivery or one futures contract, right? like you get one futures
+
+[05:03] contract, but if you if you held on to it, my and I'll be very honest with you, I've never held on to it. I've never even let it be assigned to me, but my understanding is that that would
+
+[05:17] actually mean physical gold. So these are not at the end of the day, these are not cash settled. That's my understanding. And you mentioned that these these
+
+[05:28] options trade more or less the whole uh whole day and night. Yes, sir. So, they start at 6:00 p.m. and it's like a 1DTE contract. Uh it starts at at 6 p.m. uh like Eastern time
+
+[05:43] in the US when the futures open and they and they expire the next day around 1:30 p.m. You know, that is the time like these options settle. they keep trading but at 1:30 p.m. uh if you're out of the
+
+[05:59] money that is considered to be like settled. So uh if your spread goes in the money after 1:30 p.m. it it does not count against you if that makes any sense.
+
+[06:14] And this means that you can take advantage of the different zones in the world and the different markets. Like I'm in Vietnam at the moment. I could actually trade the the Asian market in
+
+[06:27] my daytime. Right. Right. Now that we have the basics out of the way, let's move to your specific strategy. Can you give us an overview of
+
+[06:38] that? Sure. So, I would like to share my screen with you. I have modeled like a sample trade like an option strat and this is live. So at this time the future
+
+[06:52] options for gold are trading at 4,777 and for tomorrow's expiration. If I sell the 4725 put and buy the 4715 put is going to require like $1,000 in margin and I'm getting $265 in credit
+
+[07:14] with a max loss of $745 at expiration. So this would be very simply the trade setup. However, normally I do not sell this close to the money. Like my short strike is normally
+
+[07:30] at the 10 delta. So I normally sell the short 10 delta strike whether it is a put or a call and then I buy another strike 10 down. In that way for one contract I am only risking $1,000.
+
+[07:49] And these are zero DTE trades. you take the nearest expiration. Yes, that is correct. So, we are taping this on the 21st and this trade would be for the 22nd. Tomorrow, it will expire
+
+[08:03] at 1:30 p.m. Eastern. Now, let move a bit more into your specific entry mechanics. How do you choose exactly both whether you are doing a put or a credit spread and the
+
+[08:18] other criteria that that you use to uh pick exactly which trade you will do? So I use like a platform called mentor Q. So basically that is a pl like a paid service in which I can look at the gamma
+
+[08:34] positioning and I can look at the order flow for gold options like for today and for next week and for the next month which basically gives me a good idea of whether the momentum is
+
+[08:51] positive or negative currently or in the long term. So John what I do is that that I look at this service mentor Q and they provide data and as you can see I can look at the net gamma of all the
+
+[09:08] expirations for you know for this particular gold contract and as you can see on this screen it is very bullish. We have a lot of flows you know towards the top in which they are showing there
+
+[09:25] is a very strong call volume which is very bullish. [snorts] Also for daily expiration it gives me one day max price and it gives me the one day minimum price. It also gives me the like
+
+[09:44] the momentum score. it it also gives like the implied volatility and and the daily expected move. So this is the basis. Then what I do is I try not to enter into the trade the day before.
+
+[10:02] What I what my routine is actually that at 4:00 a.m. for me Eastern time is when like the trading starts in London and there is always like a flurry of orders that comes in at 4:00 a.m.
+
+[10:17] Eastern time and that to me is normally when I can see the trend for the day. Even though gold has been very bullish, there are certain days in which it is bearish for that day. And [snorts]
+
+[10:34] normally when I look at the the price action around 4:00 a.m. or right afterwards after the orders come in, you know, from the London opening, I can normally see what the trend of the day
+
+[10:47] would be. So if the trend of the day is bearish, I would enter the call spread. And if the if the trend of the day is is normally bullish, which has has been for for a lot of times because gold has been
+
+[11:04] on such a run, then I would enter the put spread. Gold can move a lot with the trend and I have learned over time not to go counter trend for the day. Will you ever do iron condors or will
+
+[11:22] you always pick either put credit spread or call credit spread? I have uh found in my experience the gold is is very uh you know volatile these days but it is following a trend
+
+[11:38] every day. If it is bullish the employed move may be 1% but it can go up as high as 5% that day. And same thing when it is bearish it it it can fall up to 5% a
+
+[11:56] day. So I have decided in my strategy over time not to do iron condors and just to have a bias for the day and choose the trades likewise. And your typical trade if I understand it
+
+[12:14] correctly is 10 delta with a 10 spread. Yeah, that is my standard opening for the trade. My short strike is the 10 delta and I buy a 10 wide strike to make it a credit spread because the margin is
+
+[12:30] very high and I do not recommend doing these options naked. How much do you typically collect on a spread like that? And what is then the max risk? If you're risking $1,000 like in margin, you can
+
+[12:47] collect up to 80 to like $100 in the premium. So your max loss would be $900 or $920 for that trade. You mentioned that you use a tool like mentor Q to identify the
+
+[13:05] direction of the market. Uh many who watch this may not and there are other tools doing more or less the same thing I guess but if you don't have a tool like that what how would you then
+
+[13:18] determine the direction? Well, [snorts] I mean obviously uh just looking at the price action, gold is uh is very strongly trending these days. So it's hard to miss it. Like you know uh every
+
+[13:33] morning I don't know if you follow gold options but uh when you wake up these days in the morning it's either up 1% 2% or down one or 2%. It is very difficult not to see the trend for the day. But
+
+[13:48] the caution that I have is that the long-term trend is very bullish. So for a day or two depending on some macro events, it is affected by the dollar. It is affected by the Fed decisions and
+
+[14:04] other geopolitical events. It can fall four to 5% even. But the long-term trend is very bullish and our caution against uh going short on gold futures because it can cause a lot of losses very
+
+[14:23] quickly. Now that was the entry mechanics. What are your rules for when you exit these trades? Both when it comes to taking profit but also putting on a stop-loss.
+
+[14:34] I like to exit at like uh 80% profit. So as soon as I enter I I would enter uh like the order to close for profit and uh if the days goes as planned uh you know that works and I I take my desired
+
+[14:56] profit. I do not do a stop-loss but my strategy is because these options are like very liquid. I normally roll them. If my positions are threatened, instead of taking a loss, I roll them to
+
+[15:13] the next day expiration. And sometimes depending on the trend, I may roll a put credit spread into a call credit spread or I may turn a call credit spread for today into a put credit spread for
+
+[15:31] tomorrow depending on the price action. I normally do not, you know, take a stop-loss and take a loss. But when would will you do these rolls? How much into negative territory you do
+
+[15:45] you have to be before you think now it's time to manage this trade? I'm watching the price action and when uh the price to close is is four times the credit that uh I received that is
+
+[16:01] normally uh my rule at which I would roll it to the next expiration. And most of the time if I am if I get my direction wrong and uh I sold a call spread let's let's say and the market
+
+[16:20] starts uh trending strongly up I would roll the call spread from today into a put credit spread for tomorrow and most of the time that is effective and I can avoid
+
+[16:38] long-term losses. Can you be a bit more specific of how you change your call credit spread into a put credit spread? So, you know, and I didn't know this for
+
+[16:48] a very long time, like with S&P, like with gold options, if uh we have a bias, right? Of course, if you're doing the iron condor, you are on both sides of the market. But, uh, when you when
+
+[17:03] you're selling a put credit spread or a call credit spread, you know, we have a bias. So if my bias for today for gold options was that the price will go up and I sold a put credit spread uh at at
+
+[17:21] a 10 delta short strike and uh and I received you know for example $100 in premium and uh and then the price action went you know went against me and the price started
+
+[17:38] falling if it got to 400 on the debit for this spread. And normally, it's not a hard and fast rule, but that's my rule that I if the premium collected is now four times the price to close it, that
+
+[17:55] to me is a good reason to get out of that uh out of that trade. And if I recognize that I'm the on on the wrong side of the price action for the day, instead of taking a loss right there and
+
+[18:11] losing money, I will flip my direction and and roll it to the opposite side for the next day. But then you close the call credit spread for uh 4x uh loss and then you
+
+[18:26] sell and you put credit spread in at the same time. uh are you then still selling at the 10 delta because in that case this role is at a loss. Right. Right. Right. Right. So the roles do not
+
+[18:40] follow uh do not follow the same uh the same rule uh for the short strike of 10 delta. Uh my goal in the role is to not roll for a debit with the high implied volatility
+
+[18:57] and and rolling to the next expiration. Most of the time I can still roll for a credit. Now I may have to roll multiple times. I'm not you know I may rolled the call credit spread from today to a put
+
+[19:15] credit spread tomorrow. And uh the price action may not you know work as I want tomorrow and I may have to uh you roll it further down tomorrow for the next day expiration. So it's not
+
+[19:31] a hard and fast rule. I can I do not automate it and uh but overall that is my preference not to take a loss but to but to manage it this way. So hopefully eventually it closes for a profit or it
+
+[19:54] it would expire out of the money. But I guess that sometimes you will need to take a loss. When will you finally realize the loss? [snorts] Well, the only time you would have to
+
+[20:05] take a loss in this strategy is that if you have a trouble with the with the margin and that's the key like with any other strategy. I would uh emphasize again that uh that you have to be very
+
+[20:21] careful in sizing your trades. So I tried not to use more than 10% of the margin of my account uh on a given day at a given time. And the idea being that if I have to roll multiple
+
+[20:41] times, I would still be in a situation that I can keep rolling for a credit without getting getting into a situation in which I would be forced to liquidate the trade because of margin issues.
+
+[20:57] Let's talk about risk. What is the worst that can happen with this strategy? If you are, you know, selling a put credit spread and your short strike expired in the money,
+
+[21:14] you would be assigned one gold future contract. And uh the margin requirement, at least at my broker, for one contract is $27,000.
+
+[21:28] So most people with a smaller account will have a problem with margin or at least uh they probably won't want to be assigned. So of course uh it's uh you can still sell that uh contract
+
+[21:47] and if you are in a bull market like we are most of the time you can sell it for a profit but um but that is the risk that you will you know like you can get assignment of an actual gold contract.
+
+[22:03] On the other hand, if you were selling a naked call, uh you could get uh you know have the call assigned to you. So you are now short a gold contract
+
+[22:20] and uh the price action could go really against you and in theory the uh the losses could be infinite. So, uh, I do not recommend selling naked options
+
+[22:38] in gold futures. I typically ask my guests to place their strategy on a risk profile scale from one being very low risk and 10 being very high risk. And you are free to the define these numbers
+
+[22:54] as you see fit. Where would you put your strategy? I would say this is at least a seven because of the volatility uh in the gold option options. I would say that it is it is very volatile and
+
+[23:12] you have to actively manage these and uh you have to be very careful in your positioning. Meaning that you have to really size according to the size of your account. Otherwise you can get into
+
+[23:30] a situation in which the losses mount up and you cannot uh roll any further and you have to close for a loss. Let's say I I'm curious about uh selling options on gold futures but I'm not
+
+[23:48] quite comfortable with this risk level and this volatility. Are there ways I could trade this with a lower risk for instance by having a more narrow spread or using the micro version of the gold
+
+[24:03] futures? Yes. So you can always uh you know sell a you know five wide on the uh on the gold options. So, uh, that would, uh, that would limit
+
+[24:17] your your max loss to $500 on one contract instead of $1,000. I do not, uh, trade the mini gold futures. I'm not familiar with them, so I'm not
+
+[24:33] sure how liquid they are and um, how trading would work on them. I'm not really sure. Let's talk about your results of this strategy. But before we take the
+
+[24:47] financial results, can you tell us a little bit about your win loss rate and the size of your wins compared to the losses? I like to compare this as being like a
+
+[25:02] surgeon or being a pilot. If your surgeon has to do a lot of things or if you're you normally we don't see our pilot but but if you're in a small plane and you see your pilot doing a lot of
+
+[25:15] things it's normally not that's normally not a good sign. What I mean by that is that if my direction is correct and I can close it at my desired profit then it's it's very easy and uh you know that
+
+[25:34] happens 50 to 60% of the time. However, in the other instances 30 to 40% of the time I have to actively manage them. Of course, and when you roll any option spread or any option, you are in theory
+
+[25:55] taking a loss for the day, but uh you're rolling it into a different trade. And uh in my opinion, as long as overall you get to close it for a profit, eventually it's not a loss. But I know the purists
+
+[26:12] don't look at it that way. Uh they say it's it's a loss, it's a loss. So I would say that the clean trades that they do not require any management and I can close for full profit or for the
+
+[26:26] desired profit are around 60% of the time. I'm sure everyone now is very curious what have been your financial results of trading this strategy.
+
+[26:37] Yes sir. So the past six months I have uh you know one account in which I only trade this strategy and I've been averaging about 10% uh of the account size as profit per
+
+[26:52] month. So I am uh I'm very pleased with these results and I I hope to uh to be able to continue this streak in the future. That's very amazing results. And that's
+
+[27:07] despite the fact that you start out with only using about 10% of your total account with a trade. I start off with only 10% on my on my on my initial trades, but when I do the
+
+[27:23] roll, sometimes I have to increase the number of contracts and sometimes uh the margin requirement goes a little bit higher. But I try to manage those trades and close them
+
+[27:38] before I enter into new contracts. And that's part of my my philosophy and my strategy for money management so that uh we never get into a situation in which there is problem with margin.
+
+[27:54] Let's sum up first. Who would you say this way of trading and this strategy is best suited for? I think this is for the active trader. Now, I uh I don't mean an active day trader. You don't have to be
+
+[28:09] on your screen all day. But it is for somebody who can uh at least be in a situation that they if they have alerts set up that uh if the price action moves suddenly and they should be able to get
+
+[28:26] to a computer or their phone to make the the adjustments. This is not uh for the passive investor in my opinion. This would require some active management daily. So that would be my
+
+[28:41] recommendation for for folks who can you have some time during the day when they have these trades on to be able to manage them. What would you say are the two or three
+
+[28:54] most important takeaways that you would like the audience to remember from this interview? So I would say that you have to size your trades
+
+[29:06] very carefully so that you uh are not using too much of your account. That is very important. Number two, uh you have to be cognizant of the fact that gold is on a very bullish run at this time. If
+
+[29:26] you decide to short it briefly, you have to be very very careful in doing so. And number three, I think that that this requires active management of the trade and I would not recommend people to
+
+[29:44] place this trade and not being able to look at it while the trades are open. What would be good resources to learn more? So there are some there are some YouTube videos about gold options of
+
+[29:57] course uh you know tasty trade uh and and the traders have some videos about it and uh I think the standard rules for option trading do apply is just little bit nuances to it because of uh the
+
+[30:16] nature of the gold contract and and the different expiration times. the platform mentor Q that I was mentioning, they have some videos about how to interpret their data as related
+
+[30:31] to the gold options and I found that to be very helpful in educating myself on this strategy. Would you have a couple of good books about options trading to recommend to
+
+[30:44] our audience? I do not have any books. I learned everything from YouTube. So I know that sounds very uh I don't know what it sounds like but
+
+[30:55] I didn't I have not read any books on option trading. Almost all of my education about option trading is from is from watching you know videos on channels like yours and from Tasty Trade
+
+[31:08] and from other resources on the web. So uh I do not have any specific uh any any specific books that I can recommend. Thank you for sharing your strategy. And for the audience, you will see two
+
+[31:23] videos on the screen. One is an interview we did a few weeks ago with the option seller about selling options on futures as such, which gives even more background about this way of
+
+[31:37] selling options. And the other is the interview we did with Ashar about his zero DTE adaptive butterfly strategy. Assar, thank you very much for uh coming here and sharing your knowledge and your
+
+[31:52] strategy. Yes, thank you so much for having me. I I really appreciate it.

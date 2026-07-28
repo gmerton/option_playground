@@ -1,0 +1,19 @@
+{
+  "video_id": "WJfvBfaeuP4",
+  "url": "https://www.youtube.com/watch?v=WJfvBfaeuP4",
+  "title": "This Lawyer\u2019s Options Trading Strategy Guarantees No Loss (Here\u2019s How)",
+  "channel": "Theta Profits",
+  "channel_id": "UCzGARfberQ8nRRbsjK90BHg",
+  "stream_date": "2025-04-13",
+  "duration": "46:57",
+  "summary": "Christian, a risk-averse Munich lawyer/options trader, pitches a 'no-loss-at-expiration' combo: take a butterfly/calendar/condor and replace one long-option leg with synthetic long stock (put-call parity) so the position carries a large debit earning the Fed-funds rate; if that carry exceeds the structure's loss zone, the floor lifts to >=$0 at expiry. The 'no loss' is arithmetically TRUE but trivial (textbook cost-of-carry) and only at expiration; base return is ~1-2% (sub-T-bill) on $50k-$84k/combo before fees/slippage, dies at zero rates, and the claimed 20-25%/yr secretly rests on a directional read he disclaims. Legitimate as a capital-preservation overlay, not the money machine the title implies. Write-up: strategies/no_loss_combo.md (conviction 2/5).",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

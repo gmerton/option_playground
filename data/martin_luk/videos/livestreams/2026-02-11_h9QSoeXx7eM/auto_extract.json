@@ -1,0 +1,156 @@
+{
+  "video_id": "h9QSoeXx7eM",
+  "date": "2026-02-11",
+  "title": "Watchlists | 11 Feb 2026",
+  "observed_trades": [
+    {
+      "date": "2026-02-11",
+      "ticker": "SNDK",
+      "direction": "short",
+      "action": "add",
+      "setup": "Entered short the prior day; shorting a 5-minute breakdown and adding through the session, expecting at least a pullback to the weekly 9 EMA; multiple attempts, kept getting stopped",
+      "entry_basis": "5-minute breakdown",
+      "stop": "stopped out (repeatedly); tight stop",
+      "source": "2026-02-11_h9QSoeXx7eM@60:37",
+      "confidence": "stated",
+      "notes": "Caption 'SNDK'/'SND'/'DK' = SNDK; 'I'm already shorting mu and dk' @83:13; entered yesterday, adding today",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2026-02-11",
+      "ticker": "MU",
+      "direction": "short",
+      "action": "hold",
+      "setup": "Holding a MU short as a pullback short into the declining EMAs; sees MU as a medium/long-term top for the bull run since April",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-02-11_h9QSoeXx7eM@83:13",
+      "confidence": "stated",
+      "notes": "'I'm already shorting mu and dk' @83:13 confirms the held position; candidate discussion @22:22",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-02-11",
+      "ticker": "GLD",
+      "direction": "short",
+      "action": "entry",
+      "setup": "Shorted gold pre-market; focusing on metal shorts (gold and silver); re-entered after exiting last Friday on a strong close",
+      "entry_basis": "pre-market short",
+      "stop": "",
+      "source": "2026-02-11_h9QSoeXx7eM@03:51",
+      "confidence": "stated",
+      "notes": "'I entered yesterday SNDK ... and gold pre-market on the short side'; gold proxy",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-02-11",
+      "ticker": "SLV",
+      "direction": "short",
+      "action": "entry",
+      "setup": "Tried shorting a little silver; focusing on metal shorts alongside gold",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-02-11_h9QSoeXx7eM@09:23",
+      "confidence": "stated",
+      "notes": "'I try shorting a little bit of silver'; silver proxy",
+      "fill_timing": "today"
+    }
+  ],
+  "principles": [
+    {
+      "category": "risk",
+      "text": "After a big drawdown/losing streak, stop trading for 2-3 days to refresh and rebuild confidence, then restart with small size; build patience incrementally from each painful drawdown.",
+      "timestamp": "11:32"
+    },
+    {
+      "category": "risk",
+      "text": "Move the stop to break-even the next day once the 9 EMA crosses above the entry; but if the stock is choppy or the market is pulling into a key support, leave the stop in place to avoid being shaken out before a bounce.",
+      "timestamp": "55:58"
+    },
+    {
+      "category": "entries",
+      "text": "Avoid opening-range-high breakouts, especially the first 15 minutes (volatile, wide spreads since ~2023); reduce frequency and wait for pullbacks into declining EMAs on a gap up.",
+      "timestamp": "35:38"
+    },
+    {
+      "category": "entries",
+      "text": "Shorting a 9 EMA pullback alone has a low success rate — you must short at resistance, with the market environment cooperating; market condition matters more than how good the chart looks.",
+      "timestamp": "91:13"
+    },
+    {
+      "category": "exits",
+      "text": "Take profit more aggressively on shorts than longs (cover into weakness); on longs follow the stop and don't cover prematurely.",
+      "timestamp": "96:10"
+    },
+    {
+      "category": "mindset",
+      "text": "Categorize watchlists by EMA structure (leading: 9>21>50, 50>150; lagging: the exact inverse; mediocre in between) but treat the rules as flexible conventions, not fixed laws — adapt to your own personality and preferences.",
+      "timestamp": "74:36"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "05:17",
+      "caption_text": "I think UEC will be the one",
+      "context": "A pullback short candidate gapping up into declining EMAs; uranium name discussed later",
+      "guess": "UEC",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "08:15",
+      "caption_text": "STS has a has a news and a gap up into the declining EMAs",
+      "context": "A name with news, gapping up into declining EMAs; tracking reactions against EMAs",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "25:17",
+      "caption_text": "this UU looks very bullish like if a breakout of previous day high",
+      "context": "Technically bullish gap-up name; he's bearish on the gap so passes; later 'this yuyu to have more upside'",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "27:19",
+      "caption_text": "This USC looks pretty good too on the short side",
+      "context": "A short-side candidate among uranium/pullback names",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "29:24",
+      "caption_text": "The memory names reminds me for the be that is the fuel cell not be ... we plug in early 2021",
+      "context": "Comparing memory names to a fuel-cell name like PLUG/BE in early 2021",
+      "guess": "BE",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "56:15",
+      "caption_text": "if I enter the CCJ on the 9 maybe 90 93 55",
+      "context": "Example of moving stop to break-even using a uranium name entry on the 9 EMA",
+      "guess": "CCJ",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "63:21",
+      "caption_text": "MUD is the short. Okay, it's a short inverse ETF",
+      "context": "Discussing a low-priced inverse ETF for shorting memory; dislikes the wide spread/low liquidity",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "74:36",
+      "caption_text": "like the HL is on a huge like it's very strong uptrend ... I would still consider leader it",
+      "context": "Example of a strong uptrend name kept as a leader if above 50 EMA",
+      "guess": "HL",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "80:26",
+      "caption_text": "like AEX so this stock is under the 1 billion market cap then I think this breakout is very valid",
+      "context": "Small-cap example for the watchlist; under 1B cap, fast mover, >$50M volume",
+      "guess": "?",
+      "confidence": "unsure"
+    }
+  ]
+}

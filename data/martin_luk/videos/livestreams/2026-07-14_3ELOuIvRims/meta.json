@@ -1,0 +1,19 @@
+{
+  "video_id": "3ELOuIvRims",
+  "url": "https://www.youtube.com/watch?v=3ELOuIvRims",
+  "title": "Software strength and semi weakness | 14 Jul 2026",
+  "channel": "martinlukkt",
+  "channel_id": "UCB6jWJJvO_sWZ2PwgmMcxCw",
+  "stream_date": "2026-07-14",
+  "duration": "2:01:28",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

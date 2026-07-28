@@ -1,0 +1,279 @@
+{
+  "video_id": "ZBJU2uGgrg0",
+  "date": "2026-03-12",
+  "title": "Watchlist rules, AVWAP, $GLD $SLV shorts and more | 12 Mar 2026",
+  "observed_trades": [
+    {
+      "date": "2026-03-12",
+      "ticker": "SOXS",
+      "direction": "long",
+      "action": "exit",
+      "setup": "Bearish semi ETF position covered near the open",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-03-12_ZBJU2uGgrg0@05:20",
+      "confidence": "stated",
+      "notes": "Covered near 4770 area right after the open ('somewhere like 47 70 area')",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-03-12",
+      "ticker": "SNDK",
+      "direction": "short",
+      "action": "exit",
+      "setup": "Memory-name short covered after first close above the hourly 9 EMA",
+      "entry_basis": "",
+      "stop": "close above hourly 9 EMA",
+      "source": "2026-03-12_ZBJU2uGgrg0@06:05",
+      "confidence": "stated",
+      "notes": "Covered a bit late, around 555 area; caption 'SNTK' = SNDK (SanDisk)",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-03-12",
+      "ticker": "WDC",
+      "direction": "short",
+      "action": "exit",
+      "setup": "Western Digital memory short covered near the 9 EMA",
+      "entry_basis": "",
+      "stop": "close above 9 EMA",
+      "source": "2026-03-12_ZBJU2uGgrg0@06:26",
+      "confidence": "stated",
+      "notes": "'Western Digital' = WDC; covered near the 9 EMA",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-03-12",
+      "ticker": "STX",
+      "direction": "short",
+      "action": "exit",
+      "setup": "Seagate memory short covered near the 9 EMA",
+      "entry_basis": "",
+      "stop": "close above 9 EMA",
+      "source": "2026-03-12_ZBJU2uGgrg0@06:26",
+      "confidence": "stated",
+      "notes": "'Seagate' = STX; covered near the 9 EMA",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-03-12",
+      "ticker": "GLD",
+      "direction": "short",
+      "action": "exit",
+      "setup": "Gold short covered on Friday after close above 9 EMA",
+      "entry_basis": "",
+      "stop": "close above 9 EMA",
+      "source": "2026-03-12_ZBJU2uGgrg0@06:26",
+      "confidence": "stated",
+      "notes": "Covered gold Friday; 'if they close above the 9 EMA then I'm out'",
+      "fill_timing": "friday"
+    },
+    {
+      "date": "2026-03-12",
+      "ticker": "SLV",
+      "direction": "short",
+      "action": "exit",
+      "setup": "Silver short covered on Monday after close above 9 EMA",
+      "entry_basis": "",
+      "stop": "close above 9 EMA",
+      "source": "2026-03-12_ZBJU2uGgrg0@06:26",
+      "confidence": "stated",
+      "notes": "Covered silver Monday",
+      "fill_timing": "monday"
+    },
+    {
+      "date": "2026-03-12",
+      "ticker": "DELL",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Bought pullback to the EP-day low area after strong post-earnings shakeout/recovery; planned pullback into 9 EMA around 141",
+      "entry_basis": "reclaim of 9 EMA on 1-min after AVWAP reclaim and pullback to 50 EMA (1-min); initial 1-min breakout entry stopped out",
+      "stop": "",
+      "source": "2026-03-12_ZBJU2uGgrg0@07:09",
+      "confidence": "stated",
+      "notes": "Entered Tuesday; first 1-min breakout entry stopped out, then re-entered on reclaim; holding until stop hit (35:46)",
+      "fill_timing": "tuesday"
+    },
+    {
+      "date": "2026-03-12",
+      "ticker": "PL",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Long entered Tuesday, stopped out late the same day",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-03-12_ZBJU2uGgrg0@09:35",
+      "confidence": "stated",
+      "notes": "Ticker is a decode of garbled caption 'funnel lab' = guessed PL (Planet Labs); not clearly established. Stopped out late day Tuesday",
+      "fill_timing": "tuesday"
+    },
+    {
+      "date": "2026-03-12",
+      "ticker": "HAFC",
+      "direction": "long",
+      "action": "exit",
+      "setup": "Long bought Tuesday on breakout of the previous candle high (~95 level); sold all into strength on the gap up the next day",
+      "entry_basis": "breakout of previous candle high ~95",
+      "stop": "",
+      "source": "2026-03-12_ZBJU2uGgrg0@10:38",
+      "confidence": "stated",
+      "notes": "Ticker is a shaky decode of garbled caption 'Hap Hap ES' = guessed HAFC; uncertain. Sold into strength on gap up; remains on radar to re-buy weakness",
+      "fill_timing": "tuesday"
+    },
+    {
+      "date": "2026-03-12",
+      "ticker": "SLV",
+      "direction": "short",
+      "action": "reentry",
+      "setup": "Silver short re-entered on rejection into declining 4-hour prior swing-high resistance",
+      "entry_basis": "rejection at prior swing high on 4-hour; entered just now",
+      "stop": "stop a little too wide; hoping for bounce into 86 to improve entry",
+      "source": "2026-03-12_ZBJU2uGgrg0@37:56",
+      "confidence": "stated",
+      "notes": "'EP stands for just entered I entered gold and silver short just now'",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-03-12",
+      "ticker": "GLD",
+      "direction": "short",
+      "action": "reentry",
+      "setup": "Gold short re-entered on rejection at the first lower-high / previous swing high on 4-hour; foundation is the late-Jan parabolic top",
+      "entry_basis": "rejection at previous swing high on 4-hour, losing another swing high",
+      "stop": "",
+      "source": "2026-03-12_ZBJU2uGgrg0@37:56",
+      "confidence": "stated",
+      "notes": "Entered just now alongside silver",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-03-12",
+      "ticker": "ARKK",
+      "direction": "short",
+      "action": "entry",
+      "setup": "Shorted bear flag / wedge-higher bounce into 50 and 150 EMA, now falling and closing below 9 and 21; gap down today",
+      "entry_basis": "pullback bounce into declining EMAs",
+      "stop": "",
+      "source": "2026-03-12_ZBJU2uGgrg0@37:15",
+      "confidence": "stated",
+      "notes": "'I also did arc too...short the ARKK'; small short exposure",
+      "fill_timing": "today"
+    }
+  ],
+  "principles": [
+    {
+      "category": "exits",
+      "text": "On parabolic-top shorts, cover when price closes back above the 9 EMA; a close above the 9 is the signal the downtrend is failing.",
+      "timestamp": "06:53"
+    },
+    {
+      "category": "exits",
+      "text": "Sell into intraday strength, especially in a weak market with little follow-through; willing to lock profits on longs into gap-up strength near prior highs.",
+      "timestamp": "11:17"
+    },
+    {
+      "category": "entries",
+      "text": "For reversal shorts, the highest-risk-reward entry is the bounce into the declining 9 EMA after price has closed below it and the 9 has started to decline.",
+      "timestamp": "78:56"
+    },
+    {
+      "category": "posture",
+      "text": "When more leaders close below the 9/21/50-day and the market stays range-bound, treat breadth as deteriorating and lean to the short side; the general market is the single most important breakout filter.",
+      "timestamp": "83:54"
+    },
+    {
+      "category": "risk",
+      "text": "Tightening stops to under 2-3% (~0.35% account risk) lets you size larger into winners and tolerate frequent stop-outs; performance lifted off after tightening stops. Size down on ADRs, small/micro caps, and high gap-risk names.",
+      "timestamp": "114:07"
+    },
+    {
+      "category": "mindset",
+      "text": "Copy other traders early, but eventually discard most of it and build your own style around the edge only you possess; know yourself.",
+      "timestamp": "116:13"
+    },
+    {
+      "category": "posture",
+      "text": "Maintain three daily watchlists by simple daily-chart rules: leading (price > 50 EMA and 50 EMA > 150 EMA), lagging (the inverse), mediocre (in between). Keep rules minimal so you can flip charts fast and stay rational doing scans after the close.",
+      "timestamp": "72:01"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "06:05",
+      "caption_text": "SNTK, the memory name short",
+      "context": "Memory-name short he covered after first close above hourly 9 EMA, around 555",
+      "guess": "SNDK",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "10:38",
+      "caption_text": "Hap Hap ES",
+      "context": "Long bought Tuesday on breakout of previous candle high ~95 level; sold into strength on the gap up; one of his longs alongside DAL",
+      "guess": "HAFC",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "09:35",
+      "caption_text": "funnel lab",
+      "context": "Entered Tuesday, got stopped out late day; later 'final lap' also; strong space/satellite name",
+      "guess": "PL",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "19:50",
+      "caption_text": "DLOCN",
+      "context": "Only new leader recently found on his radar; built 12 consecutive green candles",
+      "guess": "DLO",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "13:51",
+      "caption_text": "I like Q at the 9 EMA. RGT I is 21",
+      "context": "Quantum names he's watching; bear flag ~70-74% down from highs",
+      "guess": "RGTI",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "14:24",
+      "caption_text": "the STS is um the end of VWAP from the swing high",
+      "context": "Space/satellite name under 21 EMA from swing-high AVWAP, lining up for another down leg",
+      "guess": "ASTS",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "78:32",
+      "caption_text": "I win Q now",
+      "context": "Mentioned hypothetically as an example of setting a cover alert in the low-30s prior swing low ('if I'm shorting I win Q now maybe I'll set a price target'); not confirmed as a held position",
+      "guess": "IONQ",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "44:38",
+      "caption_text": "This U Mac is going straight up",
+      "context": "Drone/space-equipment theme name going straight up",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "45:53",
+      "caption_text": "This red wire is also looking pretty decent",
+      "context": "Drone/space theme name looking decent",
+      "guess": "RDW",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "82:11",
+      "caption_text": "O N D S yesterday is also uh not a good day to enter the long side",
+      "context": "Same-sector name showing distribution, AVWAP from swing high, weak weekly rejection",
+      "guess": "ONDS",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "76:15",
+      "caption_text": "And SCL too who is going to be downgraded pretty soon",
+      "context": "A watchlist name about to be downgraded to mediocre as it loses the 50 EMA",
+      "guess": "?",
+      "confidence": "unsure"
+    }
+  ]
+}

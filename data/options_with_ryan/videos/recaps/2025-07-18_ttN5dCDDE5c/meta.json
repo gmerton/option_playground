@@ -1,0 +1,19 @@
+{
+  "video_id": "ttN5dCDDE5c",
+  "url": "https://www.youtube.com/watch?v=ttN5dCDDE5c",
+  "title": "The Wheel Strategy Options: How I Collected $218K Selling Options (Personal Recap)",
+  "channel": "Options With Ryan",
+  "channel_id": "UCQnIfbieTyf53CZBiyLAkjg",
+  "stream_date": "2025-07-18",
+  "duration": "31:57",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

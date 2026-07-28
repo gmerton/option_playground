@@ -1,0 +1,599 @@
+[00:00] And again, I'm up about 40% after 4 months, so it's pretty consistent. So, for me, getting more than 5% on a trade that is on average lasting less than 6 days, that's something I'm very happy
+
+[00:11] with. Just knocked over 100% return last year. 1 year ago, Simon Black presented his time flies strategy here on Theta Profits. Since then, it has become one of my
+
+[00:24] favorite strategies to trade, and so far, I'm very happy with the results. But, strategies evolve. What has Simon learned during this last year? Welcome back, Simon Black. Hey John, how's it
+
+[00:40] going? Great to be back. Uh give us this short summary of what a time fly strategy is and how it has worked for you. Yes, so a time fly spread strategy is um
+
+[00:51] it's my go-to strategy. It's a delta neutral strategy, and it's a short-term strategy. So, the strategy lasts about a week. So, being a delta neutral strategy, it's a kind of strategy I like
+
+[01:00] to trade where I don't want the market to move much. Uh and the nature of the strategy and how it's um put together is such that um it handles volatility expansions
+
+[01:12] and contractions. So, this looks at the contractions pretty well. And importantly for me, being in a country where I'm asleep for half the market, it's the kind of trade where I only have
+
+[01:23] to look at it once a day. So, that's the trade I like to trade. Tell us, who are you? Well, as you said, my name's Simon. I am in New Zealand, uh capital city Wellington. I have an engineering
+
+[01:35] background. I'm an electrical engineer by trade, and I'm focusing mainly in software engineering these days. I have always been interested in numbers and finance, and I was naturally drawn to
+
+[01:46] options trading. Um and I just find it fascinating. So, now it's kind of it's my hobby, and it's sort of my my goal, long-term goal, is to stop doing
+
+[01:57] this engineering work and and ramp up my trading to be a full-time trader. But yeah, and then one of my favorite hobbies is playing with new strategies, inventing new strategies, seeing what's
+
+[02:06] what's possible. Um I just love that part of it so much. And this is actually the first time I had to do a second interview interview on the same strategy, but this was a very popular
+
+[02:17] video on on the channel and I'm sure you have developed it further during this year and also, as I mentioned, this has become one of my own favorite trading strategy strategy I really like doing.
+
+[02:31] So, I think it's time for an update. But let's start with the basic. What are you trying to achieve with your time flies strategy? So, I'm trying to build a trade, um like I mentioned, that it's
+
+[02:45] delta neutral. So, if you've traded something traded something like an iron condor in the past, um you'll know you sort of put uh a boundary around sort of a central
+
+[02:55] point and you want the market to try and sort of stay in the middle. Myself, like many people, uh aren't very good at predicting market direction, and so I gave up on that a
+
+[03:05] long time ago, and so I'm hoping to for the market to not move much. But if the market does move, I'm hoping to build a trade where the volatility contractions and expansions that happen with market
+
+[03:16] moves hopefully um are taken into account and let the trade withstand that a little bit. And let's describe the basic trade. Maybe it's easier if we bring up an
+
+[03:28] example or build a stra- build a trade from the beginning. A time flies spread is a combination trade of two trades and if you've seen me talk about this before on your channel, it's two components,
+
+[03:40] one of which is a put diagonal and one of which is a call broken wing butterfly. So, just for reference, it's outside market hours, so the pricing might be slightly off. It's um
+
+[03:51] just before market open uh here, but what I'm going to do is I'll go into this QQQ. I'll pick uh Russell cuz it's my favorite thing to trade, the um tight price spread on.
+
+[04:03] I'm going to build a put diagonal. So, what I'm going to do is I'm going to make it uh this is a Friday expiration. I'm just
+
+[04:09] going to change alter this long date to be a bit tighter in. And what I'm going to do is go um some percentage below the market. Um so, you can see here this this short
+
+[04:22] strike is about a week out, right? So, I'll go a little bit below. Um I'll I'll just going to go percentage in a 2% or so below. Uh let's going to go
+
+[04:32] somewhere around here, give or take. Um and I'm going to drag this. So, a diagonal is a is a trade where you sell um you sell an option and you buy an
+
+[04:42] option, but they are different in strike and and expiration. So, this one is closer in. That's a shorter time and longer time.
+
+[04:50] So, I've always start with this. I don't know. Let's say 10 wide as an example. So, um here is a diagonal. If I just pull the range out a bit here,
+
+[05:02] and so, this is what a diagonal looks like. And so, the idea is that over time, if the market drop down a little bit and volatility what will move
+
+[05:12] time forward a bit here, the idea is that that um slider could move up. Um sorry, the time as the slider moves forward, it pulls up. Um and so, that's
+
+[05:24] sort of what's below the market price. And we've mentioned in the past that usually when the market starts you know, dropping 2 3%, you might get a little bit of a volatility increase. So,
+
+[05:34] if I drag the vol slider up, you'll see that it also pulls up. So, that's kind of what I put below the market. So, let me just reset
+
+[05:44] uh of Um what I like to do normally when I put these trades on is drag the time side all the way to sort of 24 hours to go cuz that's sort of we'll talk about that
+
+[05:54] later about exit criteria, but that's sort of where I want to be out of the trade um by the time I get out. So, that's the that's the bottom half. And so, what I
+
+[06:02] like to do then is put a trade above the market and I want to again have a trade that can handle what would happen potentially when the market starts
+
+[06:12] drifting up, which is normally volatility might contract a little bit when things are good, volatility goes down. So, I'll go I mean I'll just pick a point yeah, some percentage above the
+
+[06:23] market again, maybe a similar amount. And this is where you can play and decide whether you're bullish or bearish, whether you want to um, skew it in a certain direction which
+
+[06:32] is perfectly possible. So, what I'm going to do is do a a broken wing butterfly. Um, this is sort of a normal kind of butterfly. What I'm going to do is make
+
+[06:38] it a broken wing butterfly by moving this further away. And so, what I'm going broken wing butterfly you have unequal distance to That is right. So, as an
+
+[06:47] example here, let's just make this so it's something we can see. This is 15 and 30 yeah, 29 15 29 35. So, that's 20 wide. This one here, let's make it a little bit I don't know.
+
+[06:58] Like say there somewhere. Um, and now what we have is this sort of this is sort of the basis of the trade. Now, this isn't quite exactly how I would get it looking. We'll talk about a
+
+[07:08] little bit later about getting the curve right, but this is the basic structure of this trade and that we have a trade below and a trade above. So, we will get back to a little bit more how you adjust
+
+[07:19] this to get the the perfect curve so to speak, but essentially to sum up so far, you have a put diagonal below the market and you have a call broken wing butterfly above
+
+[07:30] the market. Yes, and just to clarify that the expiration of the short of the diagonal matches the expiration of all the legs on the broken wing butterfly. Let me interrupt with a quick tip if you
+
+[07:43] like trading earnings. Earnings trades are some of the most exciting opportunities in the market, but they can also be tricky to do right. Big moves, changing volatility, it is not
+
+[07:56] always obvious what makes sense. There is a great tool to help you with that. Earnings Watcher. It gives you data on upcoming earnings
+
+[08:07] like expected moves, historical reactions, and volatility patterns. And you get tips about the best earnings trades to consider right now. So, if you like earnings trades, this tool will
+
+[08:19] give you the data you need to find and evaluate great trades. I have a negotiated a special discount for the Setup Profits community. 33% off the annual plan or 50% off your first
+
+[08:34] month. You find the discount link below or in the description. All right. Back to the interview. All right. So, let's get a bit more into
+
+[08:45] your entry mechanics. Let's start with underlying. You mentioned that you your favorite underlying is root. Why is that and what other underlying could this work on? Yes, I initially started
+
+[08:58] trading this on SPX and SPX was fine and I was doing great and then tastytrade changed the margin requirements such that I couldn't cuz I was trading a
+
+[09:09] single contract in a separate account for the purposes of record keeping and I didn't want to change what I was doing. So, I thought what if I just what would happen if I
+
+[09:17] just moved to the Russell instead, you know, Russell and SPX. Obviously, SPX is the top 500 companies. Russell 2000 is the best quote unquote best 2000 small cap
+
+[09:26] companies. I thought how different could it be? But the moment I started trading Russell, I found I could get a better looking curve and a wider range. Now, the wider range you think
+
+[09:37] okay, that's great, but Russell does move more than SPX. Like, when the market drops when SPX drops 2%, Russell might drop 3%, whatever. But, I just found that I
+
+[09:47] was getting good results with Russell. And so, in the end, I was like, well, this is fine. Why bother going back? To be clear, it's still perfectly valid to trade it in SPX, and you can definitely
+
+[09:57] get trades winning trades, as you you know. But, I just like Russell. But, in terms of any other underlying as we just I just mentioned that this trade is all about
+
+[10:08] a diagonal below which benefits from a volatility increase and a broken butterfly above that benefits from a volatility decrease. So, any instrument's fine where that
+
+[10:20] relationship is true. And so, things, for example, like trading gold like, sometimes when the market's crashing and dumping and volatility's going up in general
+
+[10:29] across the market, the price of gold might go up. It's almost counterintuitive. And things like the bonds, if you trade anything about the bonds, volatility can increase in both
+
+[10:39] directions. So, it has to be a an instrument where what we think of as a normal thing where ah, it's crashing and burning, vol's spiking, or everything's happy, it's
+
+[10:47] going up. So, any of the indexes are great. I personally like indexes because they're cash settled, no no assignment risk. But, I've traded these in um
+
+[10:58] QQQ, which is the Nasdaq 100 ETF. I've traded them in options on futures / NQ uh / ES and the Russell one as well. So,
+
+[11:11] there's a wide variety of instruments you can use. What are the days to expiration you are using? I've had a lot of people who trade this try short-term trades, and I also tried
+
+[11:22] you know, when I was experimenting building this short-term trades. My biggest tip is it has to be a minimum of 7 days to expiration from when you put it on to
+
+[11:32] that um expiry. You can go longer. When I first started this, I was sometimes I was trying ones where the those shorts were 14 days to
+
+[11:40] expiration. I thought maybe further out you can get a wider range. Is this better? And in the end it I sort of discovered that that whole window
+
+[11:51] of sort of 7 to 14 days gave very similar results. So, now I personally like to trade [clears throat] on um it's
+
+[12:00] Thursday market time. Um for me that's Friday morning. It just suits my lifestyle better. There's nothing magical about a Thursday. It's just what I like to do. So, when I'm
+
+[12:08] putting the trade on for the new expiring the following Friday. So, for me it happens to be 8 days to expiration. Could be 9 days, 10 days, whatever. And
+
+[12:17] then the long is the week after that. Uh and you can you can play with that and get different curves. But that's sort of a I'd say don't try to trade this trade less than 7 days. Let's get back to
+
+[12:29] options trade. And so, uh what happens with this trade when the volatility go up and down as you have mentioned a bit. Right. So, here is um a trade just sitting here. And so, at
+
+[12:43] the moment the volatility slider is um sort of where the market is at. Um of course, if the market started falling dramatically for whatever reason, there's some big news or whatever, quite
+
+[12:56] often volatility spikes. So, if I start dragging the vol slider up, what you see is the overall quick curve both to the upside and to the downside, but especially the downside, um starts to
+
+[13:08] rise. And the break even at the bottom, it wasn't screen before, now it's gone completely out of screen. So, what would have been a whatever 3.5% or whatever break even to
+
+[13:18] the downside, a vol spike has made that much bigger. So, there's a little bit of natural buffering built into the downside. And just resetting that,
+
+[13:27] volatility never really crashes down like it spikes up and then just drifts down slowly. But when news is when things are good, I mean, I guess if say the Iran war ended
+
+[13:38] tomorrow, maybe vol would really drop, but in general vol just gradually goes down. So, if the market was just gradually moving up and vol was just gradually moving down, so imagine this
+
+[13:48] price line is moving up and you know, sort of slowly moving up. If we start dragging the vol slider down, the line where the market is now is going to pull [clears throat] down. But the
+
+[13:59] the tent the curve under the tent starts pulling up. So, if things work nicely, the market drifts up,
+
+[14:08] and then you end up in a curve end up under the tent where where the vol decreases sort of giving it some help, if that makes sense. I'm curious now how you choose your strikes
+
+[14:21] and how you kind of define what is the best trade to make this week. If you've traded an iron condor before or something like that, you'll know that when volatility
+
+[14:31] is high, um options are more expensive. And so, the options you're selling, you you you get more for them, of course. So, when volatility is high, you can make
+
+[14:42] your strikes further out because it's just a a wider range. Volatility literally means the market is volatile, the market could move more. So, my
+
+[14:53] strike selection is pretty much and there's no magic formula for this, but when VIX is quite low, my strikes are closer in. You know, maybe I think when I put a trade on, I've got a trade I can
+
+[15:06] show later, one I'm actually in. I put the trade on today. Um VIX is about 17 at the moment, which is it's not high, definitely, but it's not super low. It's sort of
+
+[15:16] on the lower side of low. I think I decided to go about 2.2, 2.3%. That's just an arbitrary number in my head uh either side if the VIX was higher in the 20, 25, I could go much further out of
+
+[15:29] maybe 3% above and below. And so, what you do find is that with getting trying to get the curve right is that it it's sort of it's sort of self-correcting. If you try
+
+[15:40] to go too far away, like you try to give it too big a range, you get a big sag in the curve in the middle. It will make more sense when we we really focus on the on the curve
+
+[15:49] later. But, um yeah, so I think the volatility kind of helps you naturally pick it, and the curve helps you pick it. If you get it wrong, it you you can't get a good curve. So, I think
+
+[16:00] the first thing you can try is let's move the short strikes. It's all about the short strike. You get the short strikes kind of in the right place,
+
+[16:07] the rest are kind of easy. So, if you think about it about the short strikes a little bit like I'm putting on an iron condor, where is the market going to going to
+
+[16:15] be? It's a good way to think about it. You have mentioned the curve if you times, and I know that you are very concerned that you want to create the perfect curve when you open a new trade.
+
+[16:27] So, please explain for us how you choose your strikes, and what is a perfect curve for this trade? Well, the the perfect curve for me is one that
+
+[16:41] gives a nice round curve, and it sounds so simple. The trade on the screen at the moment is an actual trade I'm in. I entered it uh
+
+[16:51] today. Um if you come back to my website later and look at the trading results, some point you'll better see how this trade worked out. But, what you can see with this trade, it's exactly the same
+
+[17:00] structure you saw before. There's a put broken wing butterfly below, and a call broken wing butterfly above. But, what I want to do is I'll pull the time slider forward. And unlike the last demo where
+
+[17:11] the curve kind of looked a bit janky, to be fair, it was kind of sagging in the middle. As this one pulls up, and just to be to be perfectly um
+
+[17:20] transparent, the market has dropped about a percent overnight since I put this on outside of hours. But notice this curve as I move forward, it's nice and round. Like it's it's kind of
+
+[17:30] even either side. It's going up and up and up. This is the kind of thing I'm looking for. I don't want And as I get closer to like a day to expiration, say 24 hours, it's starting
+
+[17:41] to bend a little bit here, just sort of here. It's bending here. But almost all the way up. It was almost I think I'll go back just a little bit where I was. Is it so that the further out shorts are
+
+[17:53] the the sooner you will get this sagging or bending? Yeah, I think if you if you move the broken wing butterfly too far away, it it will sag. And one way to see that
+
+[18:05] actually, if I bring the time slider to the extreme expiry, right? The reason why is this is this this big low point here, right? This is clearly the This is going to pull it down.
+
+[18:15] Right? But leading up to that, if I move back a little bit again, see how this is kind of nice and round? So this is what we're aiming for because it gives it a nice range, right? So you
+
+[18:28] can sort of see here this trade expires on you can see there May 22nd and with a day and a half to go according to the Option Strat. Again, this is all
+
+[18:37] theoretical pricing, you know, you can't trust exactly Option Strat, but it's a guess. But this is sort of showing this trade could handle a 3.6% jump to the upside and a
+
+[18:49] What is it to the downside? About 3.8. So it's a a pretty balanced trade. So you'll see here this dotted line is sort of right in the middle. This is a classic delta neutral trade.
+
+[18:59] The fact that the curve is the highest where the price currently is is it shows you how delta neutral this is. If if the if the peak of the curve was
+
+[19:09] either side of where the price is, you've either skewed it to the downside or the upside, and that's a perfectly valid um thing. The thing about this trade is
+
+[19:17] nothing stops you making this trade completely centered higher or lower if you have a feeling that the market's going up or down. I never get those feelings cuz I don't
+
+[19:27] know what's going on, so I just try to center it and hope that the market can last. And so, you want a nice smooth round curve. You also have those tops of the profit
+
+[19:38] attends on the input diagonal on the call butterfly. Um does that matter how high they are in relationship to each other? It it kind of does. It it it
+
+[19:51] I mean, I think so. I like to think of use the analogy before. I like to think of imagine that green line is a rope and those points are pulling that rope
+
+[20:02] up. And so, it's what you find is this diagonal here, this is higher up. It's almost got more force. It's going to pull that bit up higher. And so, if you find, for
+
+[20:11] example, your curve is sagging quite a bit, say to the upside, you want to make sure this this point is up higher. And how do you make the point higher
+
+[20:22] in a broken wing butterfly? It's quite simple. You just make it wider. So, if I wanted, just as an example, I'm just going to make this wider. All right. Now, this is outside market
+
+[20:33] hours. It's sort of weird. I'm going to try to get it like that. Now, now these points this point's higher, right? So, it's just, you know, it
+
+[20:42] you can play with all these sliders to to see what you you want to do, but definitely if you can think about both of these trades are trying to pull the curve in a
+
+[20:52] different direction, then if it's pulling one way or the other, you can adjust one way or the other to try to do it. Basically, it's kind of
+
+[21:01] it's almost counterintuitive if you're not used to trading these trades. Making the the widths wider we'll pull the butterfly peak higher,
+
+[21:10] but making a diagonals widths uh closer actually pulls up the diagonal point. So, something to play with an option strat. It's It's quite easy just to slide the sliders and and see what
+
+[21:21] happens, move prices around. So, So, this is basically an artistic approach to opening a trade where you kind of play back and forth and until you find what I've been asked by so many people,
+
+[21:31] can I automate this trade? Could Could I make a, you know, a formula like enter sell the 20 delta, whatever, buy the 30 delta, whatever it is. And it's like, well, I've never considered it because
+
+[21:42] every week volatility is different, the market conditions are different every week. And people who who follow my trades will will see that the the the the the
+
+[21:52] diagonals are actually pretty consistent, but the broken wing butterfly widths are different almost every week depending on what's happening in the
+
+[21:59] market just just to get the curve right. Um So, I quite like this approach. I want the trade to look look good. It's It seems so simple, but um
+
+[22:09] yeah, that's how I do it. So, Simon, you have the beautiful curve you can admire and you are free to open the trade, but what then? When do you take it off? What are your
+
+[22:21] rules? So, I like to use buying power as my metric. So, if a trade has a buying power, and for these trades the buying power and the max loss are very similar. Um so, in option strat you can actually
+
+[22:36] can show you in this trade I'm in. If I slide the range slider to the extreme, you know, how much could I lose in this trade? You know, you're getting down here. I mean, you can go all the way to
+
+[22:45] the bottom, but let's say the market dropped, I don't know, 10%, which is probably unlikely, but let's say it does, about $1,300 or whatever. So, let's say
+
+[22:54] the max loss or Well, it's not the max loss, but let's say the buying power is about that. So, I would say buying power is about $1,300. I would be [snorts] keen for 10%
+
+[23:04] profit. So, if this trade shows 10% of a $1,300, which is $130, I would get out. I'm happy um with that 10%. If you know, the trade is going through the
+
+[23:17] week and you're still price is still right in the center of the curve, you can try and, you know, hit more of a home run and get a higher return. I've had over 20% returns
+
+[23:28] in the past number of times. I've had as high as 40%, but that was usually due to a big volatility spike. But, um it somewhere between 10 and 20% is definitely where I'd like to get out.
+
+[23:38] I've been in situations before where it's been hovering just below 10% getting near the market close for the day. And I'm like
+
+[23:45] it's it's the almost the most interesting time. It's like, should I just take 8% and run? Or should I wait and see? And sometimes you wake up the next day and it's back down to 3% or you
+
+[23:57] wake up and it's 15%. So, it's a bit of a lottery. So, I you asked me how this trade has changed over time and I think one thing I've done more of and this year especially is
+
+[24:08] if it's close enough for a profit, I will take the money and run. And to be in some part to be fair, it's the market at the moment is crazy with this Iran conflict, oil dramas. And so,
+
+[24:19] you know, the market who knows what's going to happen. So, at the moment I'm being being quite conservative. I think in a more sort of quote-unquote normal market, you
+
+[24:27] might be able to hold these trades a bit longer if the market's not moving much. So, that's what I like to do in terms of getting out. And I think that's also my experience from trading
+
+[24:36] this that you it's very smart to take the profit when you have it because it can it can change quite quickly, especially as you
+
+[24:44] [clears throat] get nearer to the nearer to the expiration. And what looks like a very positive trade one day can have changed completely. Uh
+
+[24:53] in fact, my biggest loss in it in April where I had two contracts on and they reached 10% and I was took only one off and the other I left for the next day hoping for more and
+
+[25:06] that ended up as one of my biggest losers. So, take your profit I think is a good advice here. It's it's always good advice and one thing I always say to to people who are in my discord and
+
+[25:18] and follow my trades is there's actually nothing wrong with taking a loss. Sometimes you'll wake up and markets dropped a couple of percent and it might be showing a small loss.
+
+[25:27] And people are like, "Oh, what should I do? Should I adjust? Should I just hope? Should I get out?" And to me, taking a 1 or 2% loss is like, "No,
+
+[25:36] you know, who cares?" Like that's that's the least of your worries taking a small loss. So, I I want to get out for 10%. I will definitely get out if if the if the
+
+[25:45] whole trade is down 30 40% like a big big move, something has gone crazy. I'll just get out. There's There's no point trying to risk your trade which is beyond hope price. Sometimes, you know,
+
+[25:58] people always try to they try to save every trade. I'm in a delta neutral trade. I don't want the market to move. If the market moves a lot,
+
+[26:07] okay, this is not the trade for me. I was wrong. You know, I I can't you can't sort of you can't have it both ways. Either you're trying to be delta neutral
+
+[26:15] or you're trying to pick a direction. If I'm in a delta neutral trade and the market absolutely just bombs or for some reason flies up, I'm happy to take a loss. I think taking a
+
+[26:24] loss is just part of trading. I'm not afraid of that at all. I know you also have a deadline for when you have want to be out of the trade no
+
+[26:32] matter what. Yep, it's and to me it's very important rule and if you if you bring up options spread again, I can can show you why that is. This trade here this is options
+
+[26:43] spread again like I mentioned, it's just theoretical and it it's just a guess of what's going to happen, but this trade here is showing what things could look like with
+
+[26:51] uh 1.7 days to go. You know, so you're on you're on Wednesday morning. It's like, "Yeah, we're going to go to war whatever it is
+
+[27:01] Thursday morning, sorry." You got to the end of Friday. But, if you if your price was somewhere up around here, say, this is great. I'm going to you're going
+
+[27:09] to make you're going to make lots of money. As you slide this forward, so I like to be out 24 hours to go. I like to quote be out by the Thursday. I don't want to hold it
+
+[27:18] on the Friday. So, on the third on the end of trading on Thursday, you're sort of sitting somewhere around here, 24 hours to go. Still looks pretty good, but the moment you start getting to that
+
+[27:28] last day, that curve really starts to whip around. Now, if you're over here, if you're up on the diagonal, fantastic. But, if you're But, because the market can move a percentage a day easily, next
+
+[27:41] minute you're here and you've gone you've your loss has been given away. And what's worse is if not only if you were here and the market flies up and the volatility drops,
+
+[27:50] not only that, your your curve can pull along by the line. So, what was going to be a nice profit or at least a profit the day before, you hold into the last day with
+
+[28:01] a volatility drop, and next minute it's a it's a small loss, right? So, that's why taking the money when it's there is quite important because
+
+[28:10] holding to that especially holding into the last day is a bit fraught. Personally, I often let the trade be open in options start after I have closed it. So, I see where it would have
+
+[28:20] developed. And of course, there are some weeks where it would have been fantastic profitable in the middle of those 10 $2,000 or whatever, but there are just as often weeks when it would have ended
+
+[28:32] up with minus 1,500 minus 2,000. So, that last day is really volatile. Stay out of it. Yeah, exactly. Yeah, what they say is hindsight's 20/20. So, yeah, exactly that. So,
+
+[28:46] I learned a long time ago not to try to hold it until the last day. And you know, like you can look at it and go, "Oh, if I just held for tomorrow, what what is actually showing
+
+[28:55] as a loss might be a profit." So, I will get out at the last bit of middle on Thursday for a loss. I don't want to even try to do it on you know, Thursday so on
+
+[29:04] Friday. So, yeah. But Simon, this trade doesn't always work out, right? So, what are the most typical situation when things go wrong and you need to decide what to do? Um
+
+[29:15] well, like I mentioned, it's a delta neutral trade, right? So, the the the main thing well, pretty much the only thing that can go wrong well, not the only thing, but the main thing that
+
+[29:22] can go wrong, of course, is a big market move, either up or down, right? Because we're trying to be in the middle of that curve. If we move down a lot, you know, or up a lot, we start to get
+
+[29:32] beyond what the break evens could be. The other thing, which is not doesn't happen as common well, it's not as often, I should say, is that there's some big vol crash. For some reason,
+
+[29:41] volatility is artificially high. Maybe there's been some big news, and then that volatility uh dumps. And we we have seen it this year with um
+
+[29:51] volatility's up because of the oil crisis in Iran, and then next minute, there's a ceasefire and the vol drops, and then there's not a ceasefire and it goes up. So,
+
+[29:59] the biggest things are big market moves or a vol crash. Um in those situation, obviously, one choice is to close the trade. But if you want to save it or manage it, could we look at a couple
+
+[30:13] situations that could happen and what uh what you could consider doing in those situations? Again, this is a real trade I'm in. I like to keep the slider around this whole about a day to go cuz it sort
+
+[30:25] of shows me where the trade is going. So, if you imagine we're in this trade right now, obviously, it looks great at the moment where we're going to end up. But let's say we woke up tomorrow and
+
+[30:34] the market had dumped down some percentage, and we you know, we we get down here somewhere. If we were down here, there's only a half a percent gap, right, to break even. We're at the point
+
+[30:45] now where it's like if the market dropped, you know, say it dropped down 2 and 1/2% overnight, and then it dropped down another 2% the next day, we would be in this territory here.
+
+[30:55] Now, like I said, I keep banging on, I say it often and often all over again, taking the losses fine, but if you like you said, if you decide I really want to try and rescue this trade or make it
+
+[31:05] last or whatever, maybe it's early in the trade and you think it's going to bounce back, whatever reason. The downside adjustment, my go-to and is this is where you use your sort of um
+
+[31:14] your sort of trader's toolkit. You've You've got a few skills and you know some trades. I like uh calendars for my downside adjustment. Calendars are really simple. I I use I keep it really
+
+[31:25] simple. It's the same dates as um as the diagonal. So, let's say the market's coming down, I might decide to try and you know, put a diagonal on. So, I'm
+
+[31:35] just going to throw one on and then I'll throw a calendar on and then I'm just going to have a play. So, I'm just going to sell put and buy a put. And I'm going to change the expiration
+
+[31:45] to match the other one. And instantly you get this big curve, right? And so, this is giving you this big you know, move to the downside.
+
+[31:57] Yeah, and so, you know, you've got even a bigger break even. And of course, if the market did keep dropping down, volatility might keep spiking up and that gives you even more room. So,
+
+[32:06] to be honest, I'm not afraid of of downside moves. Obviously, I'm afraid of a 10% crash, of course, no one can survive that, but for that sort of 3% shock, I might better recover. But,
+
+[32:19] this looks great on paper, but the the issue with this is this trade, I don't know if you noticed earlier, this trade cost I think it was two nearly $270,
+
+[32:28] something. The point is now the whole trade costs more, and I don't actually care about the cost in general, but because the trade costs more, if the market then recovered, right?
+
+[32:38] You and let's say it bounced back up. You could be like, well, this I don't need this calendar anymore. I can sell it. So, you'd sell that calendar at a loss, which is fine.
+
+[32:47] But basically now, what that would mean is this this lower point here will be quite low now. You've spent more money, right? So, where this curve was higher up, now it's lower down. So, that
+
+[33:00] that's the disadvantage of these downside adjustments is if if you turns out you didn't need it and the market rebounded, the chance of getting the profit now is
+
+[33:08] low. And if we talk about my trading results later, if I I can show you some examples, you'll actually see that almost all my adjustments don't lead to some big win. They just lead to a
+
+[33:20] minimized loss or maybe a small profit. So, for me, when I'm adjusting, I'm like, it's defense mode. I'm not I'm like, okay, I'm in a delta neutral trade.
+
+[33:30] It's not going my way. What can I do to try and get out of this with the least damage? So, that's where I think of adjustments there. You're better to try and rescue um
+
+[33:39] that trade if if possible. You said that you are not so afraid for the downwards moves, I guess because you get some extra help by the increased volatility that
+
+[33:52] typically follows that move. But when [laughter] the market jumps up, like we had in April, we had like market recovery that was pretty marvelous and it moved very very quickly
+
+[34:06] to the to the upside. How do What do you do then? Yeah, well, so what I've been doing recently, this is not even an adjustment, but when you
+
+[34:17] set up this trade and play with the widths and stuff, I'm just going to move this range about higher. Again, I don't know if you can s- I mean, you should be able to see this,
+
+[34:26] but you'll see here the loss to the downside, we talked about that before, 1,300 or 1,400. Notice that the upside is actually deliberately not as much. So, I've skewed this trade to have less
+
+[34:37] risk to the upside. And you can actually skew it to have less risk to the downside. So, you can you can actually play with it at the market at the moment. I'm a
+
+[34:45] bit afraid of a big upside move. So, I've made it that even if there was some crazy move up, the damage will be less. But back to your question about actual adjustments.
+
+[34:55] Now, it's almost counterintuitive, but quite often what happens is when the market starts falling up, um volatility has probably naturally
+
+[35:05] dropped down a bit. Things have kind of back to normal. And one simple thing I do, and it is counterintuitive, I like to use just a a
+
+[35:15] you know, a call calendar or a sort of a diagonal above the market. It gives it a bit of a target to hit, and I know that a volatility contraction doesn't play well with call calendars.
+
+[35:27] But my reasoning is that volatility is already dropped quite a lot. That's why we're already on the way up. And so, is it going to keep dropping more? I don't know. So, just give an example. To be
+
+[35:36] fair, I I I'm more prone to like just take a small loss for a big upside move, but if I wanted to try and rescue it, I'm just going to throw a random um calendar on here. I'm not even going to
+
+[35:45] sort of look uh exactly where I'm putting it, but just to sort of show you what this can do. It's going to change the expiration.
+
+[35:54] So, it gives a bit of a bump here, right? And so, again, it's got a bit more room. But what you can do is you can start playing with this and move it along a bit. And if you actually
+
+[36:05] um people Some people aren't really familiar with the diagonal. We are the long that's closer, but if you move the long a little bit closer to the market, it even goes even further.
+
+[36:14] All right? So, you sort of get to this point where it's going further. Now, like I said about volatility, the downside of this is if there really is if there was a lot of juice in the
+
+[36:23] market and if there's still a a of volatility to come out, if I start pulling this down, you'll watch that break even come closer and closer and closer and closer and closer.
+
+[36:31] Right? So, you're trying to protect, you know, and it's it's still only, you know, maybe it's fine, maybe it's not, but I if you want to try and adjust to the upside, I just try to give it a
+
+[36:43] little target because calendars make the most money if you you pin it right. If you if the you end up close near expiration on that, you know,
+
+[36:52] that that that price. Um of course, like I said, I don't hold to expiration, but the curve sort of pulls up. But then again, there's that downside is that uh going back now I've spent more money,
+
+[37:03] so if vol did drop and then it it it would sort of maybe there's a big vol crush and that's sort of now this is the normal vol amount, right? And then the
+
+[37:12] market starts coming down again. Maybe we pull and we get further and closer I don't know. We we we get Yeah, you can sort of see the moment you see this line below
+
+[37:21] zero, there's always a chance of taking a loss, right? So, if I if I keep dumping vol down, uh you know, this is more negative now. And
+
+[37:29] the reason why this is more negative is I've spent more on the trade because I paid for a calendar. So, with every adjustment, there's the trade-off. It's 100% possible to do adjustments,
+
+[37:39] but it's sort of a I wouldn't say it's a a beginner sort of trade. Luckily, I'm using mainly calendars and diagonals to adjust and I think
+
+[37:49] because that's the basis of the trade and I understand that really well, I'm pretty comfortable, but Does it matter when you make the adjustments? Yeah, yes, that's a good point, actually. So,
+
+[37:59] if I like I mentioned, I like to get into all my trades sort of I get in 1 week for the next week's expiry. If there's something happens on the day after I get into the trade, I get on on
+
+[38:10] a Thursday, there's something on a Friday or on the Monday, I might consider adjusting. Getting closer to the end of you know, the expiration week, you get to the
+
+[38:20] point where your adjustments aren't going to do anything for you, you know, because it's just you've you're trying to counter that that early
+
+[38:28] move in the trade. If If you get some big late move, it's almost like the ship has sailed at that point, so it's easier probably just to take a small loss.
+
+[38:36] Adjustments are possible later, but that's that's getting into sort of almost expert territory. And to be honest, I'd rather just be like, "Look, I'll take a 5% loss
+
+[38:47] than to try and adjust it and turn it into a 20 20% loss or whatever." So, that's just me. Approximately how many of your trades have you ended up adjusting?
+
+[38:58] I actually was looking at that earlier. This I can show you my results page if you want to I can count them exactly, but I'm pretty sure um
+
+[39:07] I think last year it was about 20%, but this year it's closer to 15%, so it's not a lot. Uh Simon, what has been the worst loss you had? Really early when I started, I this is like 2024, I had a a
+
+[39:22] 40% loss and it was actually when Trump got reelected, the markets went crazy. Uh ever since then, I um the probably the biggest trade I loss I've had on average, I've had a couple
+
+[39:34] of 20% losses. So, that's 20% on buying power. As you know, I'm aiming for that 10%, so at the moment a loss might wipe out two weeks of gains. Uh what what is the worst that can happen with this
+
+[39:47] strategy? The worst that can happen is there's some big, you know, market crash, obviously, like any anything. And of course, I'm trying to be delta
+
+[39:56] neutral, so some big crash could result in a near um full loss. But the best thing about these trades is they are defined risk. The moment you enter this trade, you
+
+[40:06] know the most you can lose, so you can take that into account. That's just standard trading risk management, you know, don't overtrade, don't trade more contracts than you should if you
+
+[40:15] can't afford, you know, like that that trade I was showing you was a single contract trade. I can lose it that I lost it $1,300. Fine. If that's a If that's a black swan
+
+[40:26] event, 10% crash, and all I lose is $1,300, that's okay. So, that's why I'm sort of I think it's quite a good trade because yes, you will take losses, but a lot of
+
+[40:37] people get worried about that big crash. Um and you will just lose you know, these are weekly trades. So, if a crash is you'll lose that trade. And then maybe vol's gone crazy and
+
+[40:48] you'll put a trade on and it wins, I don't know. So, yeah. I always ask my guests to put their strategy on the risk profile scale from one being very low risk and 10 being very high
+
+[40:59] risk. And where would you put it this year and has it changed from what what you said last year? Yeah, to be honest, I can't remember what I said last year. I probably said
+
+[41:08] about a four or five. I think it's probably still there. I mean, it's the fine risk, right? So, in terms of risk levels, I'm not selling naked strangles or anything like that. So, I'm
+
+[41:21] not going to wake up $40,000 underwater if there's a big vol spike. Um so, that makes it low risk. It but I think the risk might come from just general management of it or even getting into it
+
+[41:33] because, you know, diagonals and broken wing butterflies, they're not beginner strategies. So, I would say it's probably a four around a four or five for risk just
+
+[41:42] because if you don't really know what you're doing, it could be more risky. If you're an expert trader or intermediate trader who's really familiar with the diagonals and
+
+[41:50] butterflies, then it's pretty low risk. One of the reasons I wanted to invite you back is that you have traded this strategy now for three years. You publish your results every single week.
+
+[42:03] So, you have a pretty, you know, solid results to show. So, let's get into your actual results of trading this strategy through three years. Yeah, my results been pretty good. I'll show you my 2026
+
+[42:17] results. They're on my website. Like you mentioned, I trade every week, rain or shine. I don't skip a week unless I'm I'm out of out of the country or on holiday. So, I've had 19 trades this
+
+[42:28] year so far, 16 winners. So, that's the percentage. These are These results I'm showing are per contract. I personally trade more than one contract, but for the sake of
+
+[42:37] transparency, I I show my results as one contract. That way you can factor in how you trade. So, clearly you can see and ironically, John, I think when you
+
+[42:47] interviewed me a year ago, you said I was up 40% after 4 months. And again, I'm up about 40% after 4 months. So, it's pretty consistent. And this this return annualized is just me sort of
+
+[42:56] calculating it. But you also last year I ended up I just snuck over 100% return last year. I actually I actually took a trade, I think, on um actually on Christmas It was Christmas
+
+[43:07] Day my time. Just I took a holiday trade to try and get it over 100%. If it lost, it would have got further, but I I actually I actually added a note to my trade at the bottom here. I actually
+
+[43:17] exited on deliberately for $11.60 profit. I literally took a holiday trade just to get it. The moment I got I actually I got my calculator out, worked out commissions and fees, and worked it
+
+[43:28] out if I hit this, get out, it would be 100%. So, that's why it's exactly 100% Well, not exactly 100 103. So, that's the full full year result.
+
+[43:39] But yeah, so it's it's you know, it's 100% 200% a year is obviously So, it's been consistently profitable for all those three years. And if you move back to 2026,
+
+[43:49] I know that you are analyzing what the results would be. Yeah, I mean, this is just a You can sort of see up here the calculation because it's it's 45.4% in 134 days, and that works out to be like
+
+[44:02] if you times it out, you know, this is my math geek engineering thing going on here. So, this is where if things stay the how they are, this is where you could end up, of course.
+
+[44:11] But that's Simon, and that because I have had many interview guests here, and one one thing I've found is that people measure their results in very different ways. But the most common is
+
+[44:21] probably to measure by the as a percentage of the buying power or the max loss use used. But you actually do it a bit different and I would say conservative
+
+[44:32] or generous way because what you do is you have allocated a set of money for your trades, but you use less than half of that buying power. So, so so your results is
+
+[44:45] your results as a percentage of the allocated capital. So, if you had measured your result in the same way as most of my guests,
+
+[44:52] it would have looked much much better. Probably twice or 300%. Yeah. Well, what my my as you probably gleaned by talking to me now, I'm pretty
+
+[45:02] conservative, and my idea is this. Like you've seen me put on these trades, max loss per contract of $1,000, say. So, let's say I take a max loss, right? Well, if if that's my whole trading
+
+[45:14] account wiped out, that's no good. So, my idea is I allocate $3,000 per contract, right? So, if I had you know, I don't know, $12,000 to throw
+
+[45:25] at this strategy, I might trade four contracts. I could take a full loss. Yes, it would wipe out some money. I guess in that situation it would be
+
+[45:33] down to whatever, uh you know, take take away 12, you know, 8,000. But then I could still probably trade nearly two or three. The point is I didn't want
+
+[45:42] a lot of full loss on this trade to wipe it out. So, this percentage is based on 3,000. I don't risk $3,000 per trade. I cannot lose $3,000 per trade per contract. It's
+
+[45:52] it's impossible by how I place them. So, as as ironic as it sounds, this 100% return is the conservative result. It's I feel really bad cuz people see these results and they're like, "This is This
+
+[46:03] can't be real." It's like I can show you my trading statements. They're available Some trading statements are actually available on my website because people keep asking for
+
+[46:10] them. It's like, "These are These are real trades." And anyone who's in my discourse sees me place these trades every week and again can confirm that the numbers these
+
+[46:19] uh these numbers and these debits and entry dates and exit dates are all are all accurate. And as you know, John, of course you are in that discourse, so you
+
+[46:27] you discourse you do see these uh these trades yourself. Yep. So, yeah, so those are those are my results. But John, I know that you also trade this. So, how have you been going?
+
+[46:37] Well, this has been a very solid strategy for me. I measure my results as the results of compared to the buying power or the max loss, which is most common way. Although
+
+[46:50] I fully agree with your your way of thinking that you want to never risk more than half of your buying power anyway on on on your trading. But I have
+
+[47:01] done 57 trades so far over the last year and a year. And 46 of them have been winners. On average, my average net profit per trade has been 5.33%.
+
+[47:19] It was a bit higher, but I did take a couple of big losses in April. And I'm have on average been 5.7 days in the trade. So, for me getting more than 5% on a trade that is on
+
+[47:31] average lasting less than six days, that's something I'm very happy with for sure. It's great to hear. So, let's sum up Sam. How would you sum
+
+[47:43] up this strategy in a few words? Uh I would say it's a strategy not for beginners, but intermediate to advanced traders who want to have a weekly trade that's Delta neutral. So,
+
+[47:56] you you don't know which way the market's going, you want to try and capture that theta decay and hopefully handle some uh
+
+[48:03] you know, volatility moves, and a trade that you don't have to look at you know, all day and be glued to your screen. Um I've mentioned in the past um
+
+[48:14] I'm asleep for half the market, so [laughter] I can't watch it. So, yeah. I think many have also watched on this channel an interview with Steve Gunn's about his
+
+[48:24] fly diagonal strategy. That is quite similar trading strategy. What would you say are the difference between how you trade and how Steve is trading this? To be 100%
+
+[48:35] honest, I've never like I've I've not done Steve's course. I I don't actually know his exact mechanics other than what I've seen on your video. From what I can glean looking at some of his you know,
+
+[48:46] option strat or not he doesn't use option strat, he uses that other tool, but [laughter] his graphs, it seems to me and this is
+
+[48:53] just my um guess. I think he's a little bit tighter in on the range, and so which can give a nice a bigger sort of bump up in the curve in the middle, but I think that
+
+[49:04] might lead to more adjustment. So, without knowing the full details of of his trade, I would say he probably has to adjust it more than I do. Um but the mechanics are the same
+
+[49:14] concept, and we we came up with these trades independently. What would be the two or three most important takeaways you really want the audience to remember from this interview? I would say that
+
+[49:24] getting the good curve is the secret. Uh I would say getting out with uh no more than 24 hours to go is very important, and I would say like we just
+
+[49:37] just talked about um allocate your capital wisely. Don't throw all your money at a single strategy. Good advice, that. What would be good resources to learn
+
+[49:47] more? Uh well, I've as Well, as showing you, I have my website. If you want to see all the trading logs and graphs and um or you want to
+
+[49:56] find my email address and contact me, uh you can do so through that. It's probably the easiest way to get a hold of me. And what would be a couple of good books to recommend
+
+[50:05] to Well, I was prepared I was prepared for this, John. So, last time I was on, I mentioned Julia's book, um which is the Tastytrade one, The Unlucky Investor's Guide to Options Trading. Uh
+
+[50:16] it's still a great book. It's very mathematical, but I think it's a cool book. I I bought two more here because one of the things that a lot of traders struggle with is mindset and discipline.
+
+[50:28] And you know, just putting random trades on. And so, there's a book by um Mark Douglas called uh Trading in the Zone. Uh it's a really good book about mindset and just
+
+[50:38] uh sorry, it's a bit blurry, but Trading in the Zone and it's if you're having trouble with discipline, I recommend that. And a book which is kind of almost counterintuitive to to Tastytrade
+
+[50:48] mechanics and things like the standard deviation and the expected move, there's a great book called Fooled by Randomness. And uh the little tagline is The Hidden
+
+[50:58] Role of Chance in Life and in the markets. And it's um it's fascinating. It sort of explains why how we get all these six
+
+[51:08] six or seven standard deviation moves more regularly than we think because the market actually is well, random. And so, Fooled by Randomness is basically uh talking about
+
+[51:18] how you don't you can never know what's happening. So, it's a very interesting read. I it's uh it's not purely a trading book, but it's if you're a trader, I think you'll find it really
+
+[51:26] interesting. Thank you very much, Simon, for uh coming back here on Theta Profits to uh share your time flies strategy and how you uh trade it and how you uh adjust it and your pretty amazing
+
+[51:39] results, I would say, over our three years. We do have a number of other interviews that might be relevant. I will uh show a couple of them on the on the
+
+[51:49] screen here. Thank you very much again, Simon. Thank [snorts] you very much, John. It's been an honor to be your first return strategist.
+
+[51:58] All the and all the best trading with Tom fights for yourself.

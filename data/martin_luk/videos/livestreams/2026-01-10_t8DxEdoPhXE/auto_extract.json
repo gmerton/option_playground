@@ -1,0 +1,84 @@
+{
+  "video_id": "t8DxEdoPhXE",
+  "date": "2026-01-10",
+  "title": "$AEVA $30 | 9 Jan 2026",
+  "observed_trades": [
+    {
+      "date": "2026-01-10",
+      "ticker": "RIVN",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Rivian stopped him out before the close; thinks it needs more time and today isn't a good entry",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-01-10_t8DxEdoPhXE@01:58",
+      "confidence": "stated",
+      "notes": "'Rapian'/'Rifian' = RIVN (confident phonetic match)",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-01-10",
+      "ticker": "AEVA",
+      "direction": "long",
+      "action": "hold",
+      "setup": "AEVA holding; double-inside-day after a huge-volume gap up; very explosive, expects move to ~30; plans to keep trailing the 9 EMA",
+      "entry_basis": "double inside day breakout (entered prior day)",
+      "stop": "trailing 9 EMA",
+      "source": "2026-01-10_t8DxEdoPhXE@05:26",
+      "confidence": "inferred",
+      "notes": "Whether he still holds AEVA is inferred from 'let's keep serving the nine'; the named symbol AEVA is confident (also the video title)",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2026-01-10",
+      "ticker": "?",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Took it Monday on opening-range breakout as an inside-week breakout (opened above prior week high); discusses whether to enter another here but it's a bit extended to 9 EMA",
+      "entry_basis": "opening range breakout / inside-week breakout",
+      "stop": "",
+      "source": "2026-01-10_t8DxEdoPhXE@54:14",
+      "confidence": "stated",
+      "notes": "Caption 'hot'/'hut'/'hearts' is a shaky decode (guessed HOOD); symbol not clearly established",
+      "fill_timing": "monday"
+    },
+    {
+      "date": "2026-01-10",
+      "ticker": "QBTS",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Entered earlier in week; references entry date marked by stop line on chart",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-01-10_t8DxEdoPhXE@55:52",
+      "confidence": "inferred",
+      "notes": "'QBTS and I enter on this day' — D-Wave Quantum = QBTS (named clearly)",
+      "fill_timing": ""
+    }
+  ],
+  "principles": [
+    { "category": "macro", "text": "A healthy bull market shows rotation — strength broadening to sectors outside tech, not only tech up while everything else is down.", "timestamp": "31:05" },
+    { "category": "entries", "text": "Skip gap-ups where the right side of the base is too short; prefer a longer right side that digests selling pressure before the move, even if it means missing the trade.", "timestamp": "37:06" },
+    { "category": "risk", "text": "Extended breakouts (price stretched from the 9 EMA) have a high failure rate unless the market is super strong; if you take one, use a smaller size or smaller risk to compensate for the low win rate, only when the stop can be kept tight.", "timestamp": "51:16" },
+    { "category": "entries", "text": "Prefer buying pullbacks above the 9/21 EMA (e.g., on the hourly) over chasing; pullback entries are low-win-rate and need a strong market to work well, so be careful not to overtrade them in a weak tape.", "timestamp": "66:31" },
+    { "category": "exits", "text": "Don't take shorts on a parabolic commodity until it closes below the 9 EMA — the 9 EMA is the crucial trigger level for the reversal.", "timestamp": "59:41" },
+    { "category": "posture", "text": "Trade less and stay in one lane — skip 50/50 setups, and avoid doing longs here and shorts there; focus.", "timestamp": "82:49" },
+    { "category": "macro", "text": "Index pullbacks (e.g., Qs to the 50 EMA) are healthy and good for long setups, letting EMAs catch up to names that have run straight up; no need to be too bearish while IWM remains strong.", "timestamp": "79:15" }
+  ],
+  "ambiguous_tickers": [
+    { "timestamp": "03:02", "caption_text": "This ESTS is is very strong", "context": "Very strong name; wanted it to go sideways to let the 9 EMA catch up", "guess": "ASTS", "confidence": "likely" },
+    { "timestamp": "05:26", "caption_text": "This AEVA2 hanging around under the angle free web but above the 9 EMA", "context": "Double-inside-day after huge volume gap up; his main long, target ~30", "guess": "AEVA", "confidence": "likely" },
+    { "timestamp": "06:16", "caption_text": "Oh man, BPI if it Yeah, I think today could be an entry", "context": "Possible entry; wished it closed stronger yesterday", "guess": "BBAI", "confidence": "unsure" },
+    { "timestamp": "11:06", "caption_text": "the CCCX breaks out yesterday. Why don't you wait one more day? APAT also looks pretty decent", "context": "CCCX broke out; 'APAT' a tiny flag but too illiquid", "guess": "CCCX", "confidence": "unsure" },
+    { "timestamp": "34:14", "caption_text": "is the E. I believe the last time I tracked this stock is back in 2021 ... using Finnfist", "context": "Name that ran in late 2020/early 2021 then went sideways five years", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "36:20", "caption_text": "whether to take allow or not ... gapping near the gapping into the anchor VW web", "context": "Olo gap-up he decides to skip (right side of base too short)", "guess": "OLO", "confidence": "likely" },
+    { "timestamp": "40:27", "caption_text": "the base of Cyber is a it's a pretty pretty not a big base", "context": "~2-month base building higher lows, reclaim of MAs, weekly pulling to 21", "guess": "CIFR", "confidence": "unsure" },
+    { "timestamp": "41:04", "caption_text": "And this VH This I cannot believe this thing shakes me out", "context": "Shook him out then went straight up", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "54:14", "caption_text": "I took hot at Monday on Monday at the opening range breakouts ... for hearts I enter on this day", "context": "His Monday opening-range / inside-week breakout long he is holding", "guess": "HOOD", "confidence": "unsure" },
+    { "timestamp": "68:01", "caption_text": "A+ setup very easy SNDK on last Friday", "context": "A+ cup-with-handle clean breakout he missed; 'free money'", "guess": "SNDK", "confidence": "likely" },
+    { "timestamp": "71:13", "caption_text": "BBAI would be um it's just a simple breakout of the previous day high", "context": "Breakout above 9 EMA, reclaim of 9/21 yesterday, sharp 20% move", "guess": "BBAI", "confidence": "likely" },
+    { "timestamp": "72:31", "caption_text": "Remember this PBI is it's very choppy", "context": "Very choppy roller-coaster name to trail or sell into strength", "guess": "BBAI", "confidence": "unsure" },
+    { "timestamp": "82:49", "caption_text": "Circle is the one looks much better. at the 21 EMA daily", "context": "At daily 21 EMA and anchor VWAP from prior swing high, but he decides to stay in his lane", "guess": "CRCL", "confidence": "likely" },
+    { "timestamp": "79:34", "caption_text": "this red cat and surf. We can pull back a little bit", "context": "Names that ran straight up since Jan 2; right side not solid", "guess": "RCAT", "confidence": "likely" }
+  ]
+}

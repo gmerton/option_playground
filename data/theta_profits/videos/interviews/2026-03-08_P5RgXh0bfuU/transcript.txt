@@ -1,0 +1,647 @@
+[00:00] My fastest trade is four seconds to make two or three dollars on on the trade. So that's how fast you had to be sometimes. I was consistently making 100 to 200% monthly at the time. That run was the
+
+[00:11] easiest money I ever made in my life. So this episode is all about speed and precision. We are diving into intraday option scalping and the structure behind it.
+
+[00:23] Let's welcome Eddie Lee. Hey John. So let's get straight to this topic. tell us very briefly how you are trading and how this is working for you.
+
+[00:33] Okay, so I'm mostly a directional options trader. So even if I sell options, I'm actually selling them in a directionally sense. Ever since I mastered this strategy, I mostly just
+
+[00:44] scalp options and that allows me to trade smaller accounts and actually grow them into much bigger accounts to fund my longerterm investments and my swing trades.
+
+[00:52] So tell us a little bit about yourself, especially as an options trader. Okay, so I'm from New Brunswick, Canada. My family actually ran a restaurant here for four or six years. So I've been here
+
+[01:02] my whole life. I got into trading when I was 15. I was mostly a value investor at the time. My uncle taught me. And then 2008 happened and basically I I had a big large draw down on value investing
+
+[01:13] since I was mostly in banks and stuff like that. So that made me switch into technical analysis. And then around 2018, I tried options for the first time and it it didn't work out for me because
+
+[01:25] I got the direction right, but I didn't quite understand how options work or the Greeks. But I do see the potential in it. So I kind of dig deeper into options and that's when I found like option
+
+[01:36] alpha and tasty trade where I kind of picked up on premium selling puts and spreads in the occasional broken wing butterfly. And because of my technical background, I had the best year in my
+
+[01:48] career in about 2020 and 2021 when we had the huge rallies and I was basically have very high win rates selling just weekly and bi-weekly options and swing trading leap options at the time. And
+
+[02:01] then during this same period, I accidentally got into teaching others how to trade options with technical analyst mixed into it. Since then co happened in around that same time my my
+
+[02:13] restaurant shut down so I had a ton of free time at the time was hanging around these trading groups trolling people that give up bad advice for fun and then this guy kind of noticed my trading and
+
+[02:23] my results so he kind of asked me and I show him my result and I was consistently making 100 to 200% monthly at the time because that run was the easiest money I ever made in my life and
+
+[02:33] then it turns out uh he actually has a big community of real estate guys that just got to put selling. Lee Lo taught his course and he wanted me to teach his more advanced technical course where I
+
+[02:45] could combine the technical analysis and my options into trading. So fast forward 2022. So the market shifted and selling options didn't work for me that well because the volatility was quite big. It
+
+[02:58] was swinging literally 100 points in one direction and then drop 100 points by the end of the day. So with the spread selling, it didn't quite work for me because the the stop-loss kind of just
+
+[03:08] blew right through it. So my So I I looked at I said this to me does not make any sense because I was making very little money to put up a lot of risk and one bad volatility wipe out like
+
+[03:21] basically a week's gains. So, I kind of stopped and went cash for a while. And eventually, I I thought to myself, why don't I just go directionally with just calls and puts because now that I have a
+
+[03:33] good understanding of the Greeks, how options work plus my technical background, I'll just treat it like I am tra trading just futures. So, that's what I did. And I end up building this
+
+[03:44] strategy of sculping options. And as I tested for several months, I I got better and better at it. So I create like different rules, different strategies, and I was back testing
+
+[03:57] different things. So it took me about a year to really refine the strategy that I have right now. Did you say 100 to 200% per month? Oh yeah.
+
+[04:08] Wow. Yeah. And I was posting I was posting that like constantly in those groups. People didn't believe me. So, but I like I show him I I screen share with with
+
+[04:18] his name is Ernito. So, I screen share with him. He's a real estate guy and and then I actually show him and he's like, "Wow." He he was shocked too. I mean, like I was shocked to myself. I I didn't
+
+[04:29] think it was possible, but but because the strategy I was using like where I'm swing trading long options plus I'm kind of selling options to fund my long options. And in 2020 and 2021, it was a
+
+[04:40] very different market. It was basically any base that you see can break out and that's what my technical trading is mostly about is is that strategy is the base break. So that's kind of like my
+
+[04:54] bread and butter and that was all through 2020 2021 like my win rate at the time was like over 90%. That's how crazy it was. So, so we are getting into scalping today
+
+[05:08] and I must admit this is really not a way of trading that I am familiar with and have any knowledge to speak of about. So, I'm very curious to learn more about it. But let's start with a
+
+[05:20] very basic. What is scalping? Scalping is basically just a short-term trading approach. you're taking you very small profits from a very quick price fluctuation. So my trades usually last
+
+[05:35] from seconds to just a few minutes and I'm basically just looking for one to three momentum candles in a move. That's that's all I'm doing. So So what are you trying to achieve
+
+[05:46] with this type of trading? So with futures and options, you don't need a really big movement to make money. So I mostly look for 50 cents to $2. That's my bread and butter per
+
+[06:00] contract. So basically once you understand the technique, understand the rules and you're extracting 50 cents to a couple dollars, it's just a matter of scaling the size, right? So and this
+
+[06:15] does not work really well with large size. So I created a strategy where I mostly scale in and scale out depending on the setup itself. We will get more into details of how you
+
+[06:29] do this but first could you give us the main characteristics of a trade that you put on like setup underlying time in trade etc. I have three main setups I use. My
+
+[06:42] setups are based on key levels. So I trade them level per level looking for areas of high volume interest and watch how the price reacts around those levels. Basically, I have a trend setup.
+
+[06:55] I basically look for consolidation breakouts and continue continuation plays. And I also have a range setup where I just trade between a defined support and resistance level. And I also
+
+[07:06] have a reversal setup where I look for exhaustion while hitting a very key high interest level. And then I confirm it by waiting for the trend to break down and then I go the other direction. So those
+
+[07:19] are my three main setups that I use. I do trade some very specific setups, but these are the three that I mostly trade on a daily basis. And out of these, the easiest and most forgiving one is
+
+[07:34] obviously the trend following trade, which is uh specifically like the very wavy trends where I can measure out using Fibonacci ruler to project the extensions as well as the pullbacks over
+
+[07:48] where it potentially can reverse. Once I confirm that this setup is bouncing off a key Fibonacci level, I can expect it can expand to to a potential Fibonacci extension level as well as a target. So
+
+[08:06] I use this as a part of this trend following technique and it's probably the most easy one to use and it's most forgiving one because if you get your entry wrong you can still be right by
+
+[08:18] just letting the trade play out and and we will show how you analyze these levels but first what underlyings are you using for your trades? I I trade off S&P levels, but I also watch ES for
+
+[08:33] volume because ES is the only way I can see where the volume levels are. So, I map out in pre-market my key levels using S&P and then I also map it out using ES where I can see the volume more
+
+[08:47] clearly. I use very basic indicators mostly just EMA and volume and then price of the candles and we So we is probably the only specialized indicator that I use for this. I even
+
+[09:01] have my own aggro but those are mostly for very specific type of trading. But on a daily basis I mostly just look at volume price and in and the trend and the levels. That's that's all it is.
+
+[09:15] Let's just define those terms that you use. You you mentioned EMA and you mentioned VWAP. What are those two indicators? So EMA is exponential moving averages. That's more heavyw weighted on
+
+[09:30] the price action, the closest price action for the moving average. So it gives me more of a smooth line for it works better for fastm moving trading. So it works perfect for day trading. So
+
+[09:42] I use mostly 8 and 21 EMA and that's basically all I look for on trends. So when it's trending and it reverts reverts back to the mean, meaning it'll revert back to either the eight or 21
+
+[09:56] and bounces off the level and continue in the trend. So that's what I mostly use when when it's trending. I also use it as a indicator to see when a trend is about to reverse. So if a trend is about
+
+[10:10] to reverse, it usually breaks the 8 and 21 and then it forms a lower high before it actually drops and and reverses direction. So these are time kind of like some of my key focus on trend
+
+[10:25] reversals. I use the EMA quite a bit for trend following as well as trend reversal. So we is volume weighted average price. So this is a indicator that institutions like to use to price
+
+[10:38] their clients. So they can't give a client that wants say a million shares or something one specific price. So what they can say do is give them the volume average price. So if they can execute
+
+[10:52] their trades below we that means they did a good job. They execute the trades above we that means they they didn't do quite quite a job right. So, so the the weap area is a very important
+
+[11:07] indicator in day trading because that's where the key price levels revert to. So, when the price goes too far away from VWOP, it tends to come back down towards VWAP. And if it drops too far
+
+[11:21] away from WeWO, it tends to revert back to VWAP. Especially in very wavy patterns, this happens quite often throughout the day. And I I like to use this early on in the trades as well
+
+[11:34] because most I mostly just trade the first one to two hours and that we indicator is really really important rat. So within 15 minutes I like to see the price either above or below to give
+
+[11:46] me somewhat of a bias of direction. You also mentioned Fibonacci. Let's just briefly explain what that is before we start showing some of this. Fibonacci is basically like a mathematic sequence
+
+[12:00] that apparently the entire universe is based on and it kind of works for trading as well. Trading works nowadays is based on arrows and numbers and these Fibonacci numbers tend to be the numbers
+
+[12:14] that the arrows attract to. So this does gives you a bit of an edge to to trade with when when the setup is there. So this works really well in wavy patterns meaning it goes up extended and then it
+
+[12:28] comes down. These wavy patterns is is when Fibonacci works the best. It doesn't work when it goes in straight line. It goes parabolic. All right. These are a lot of terms now.
+
+[12:40] So I think it's time to bring in a chart and where you can explain a little bit how this looks in daily trading. Please explain a bit about how you know how you look for the levels that you use in your
+
+[12:54] trading and how you see which direction that you think the price will take. All right. So maybe I'll go into a bigger time frame. So what I'm showing you right here is basically this is last
+
+[13:08] week, right? So just by looking at this, you can see way away that we're in basically a consolidation area because obviously we got rejected here multiple times and we bounce off here multiple
+
+[13:22] times. That means we're in a range. So when we're in a range and I'm day trading, I basically look for trades that are in the range. So then I go down to the smaller time frames and I
+
+[13:34] basically look for these key levels. So if this level like right here has been tested right here and then right here and then right here that tells me that this entire area is support and if this
+
+[13:50] area gets taken out that means that direction has changed right and when a direction has changed what I like to see is a retest and fail. But but could you first explain maybe
+
+[14:03] what are these different things we see on this chart? What are the different lines? What are these? I guess it's volume on the right. Yeah. Okay. So, this is volume by price.
+
+[14:14] So, majority people look at volume by time, which is the volume bars down here. But really, they should be looking at volume by price. So, volume by price tells you at what price points is
+
+[14:26] majority of the trading taking place. So this tells you a very key fact that this is all institution money for it's it's usually not retail it's all institution money. So if this is a level of high
+
+[14:40] interest meaning there's a lot of institutions either buying or selling this level if the price is below it and it's heading towards it that means this level is is a huge resistance area. So
+
+[14:54] chances of it breaking through like right here is pretty slim. And if it does break through, it means it's a trend change, right? Because this is a very heavy selling area. In order to
+
+[15:07] break through it, it has to consume all the sellers and the buyers has to overtake the sellers. That means it's a big shift in momentum and shift in structure of markets. Right? If this
+
+[15:20] area like right here, if I zoom back here and I see this resistance up here, if I see this resistance up here, I would be running towards it and then I'd be selling into it, right? I don't wait
+
+[15:35] till it hits this area because sometimes it doesn't hit and it'll reverse right away. So what I normally do is if I buy say down here and it's running up, I usually scale out, scale out and then I
+
+[15:47] scale back in if it resumes the trend. But as soon as it hits up here where all the resistance, all the sellers are, I don't even touch it. I wait till it hits there and then I see what the reaction
+
+[16:00] is going to be like. So typically if it hits up here, it tends to get rejected. So it start reversing back down, right? So then I would trade the downside. Now if like this it hits up here and it just
+
+[16:14] goes sideways and it doesn't come down and it start breaking above it and then it comes back and it testes this area and it doesn't break down. That confirms that the trend has changed. We have
+
+[16:26] broken out the structure and now we're cons consuming the trend because obviously over here this area has been rejected several times and and that tells me that this was a very strong
+
+[16:37] resistance level to break out of. So that tells me that the the trend has shifted and then all of a sudden you see that the price here once it got through this area it just start trending rapidly
+
+[16:49] above that. Obviously tested on the entire weekend couldn't get through. And your basic trades is basically buying calls or puts depending on which direction you want to take with your
+
+[17:02] trade. Is that so? That's correct. And what I do occasionally sell a spread, but I sell them directionally. So I've sell them slightly in the money
+
+[17:12] to go above so that the spread itself will pay out one to one. Meaning my risk is say I do a $10 spread. I'm looking for $5 in premium and $5 of risk. So it's a one- one trade and I usually do
+
+[17:26] that at key level. So say say it's up here and it got rejected. I would sell a call spread up here knowing that you'll you'll probably end up somewhere in the middle or below it and it'll be a one to
+
+[17:38] one trade. If it doesn't work out, it's one to one. So I can make it back in one trade literally. And what what's the time frame we see on this chart? This is a five-minute chart. Basically,
+
+[17:49] you see the volume at the bottom. That's one day. So, here is one day. Here's one day. And this gray area right here with no volume is pre-market and after hours. So, I analyze pre-market and after hours
+
+[18:02] with ES futures to see what the structure is like leading into the open. So I want to see what the price action is like pre-market and after hours just to give me some levels to work with when
+
+[18:14] we open. For example, say right here the day before it looks like head and shoulders leading into a close and then in pre-market and after hours it actually went up tested the level and
+
+[18:28] came back down but it still it it didn't come down too far and then right at the open it dropped right down back to yesterday's low. and then it kind of v-shaped back up.
+
+[18:40] Once I see it test yesterday's low and at a level that's been tested all week and bounced and then all of a sudden it it broke above there and then it broke above the pre-market high as well as
+
+[18:53] yesterday's high right here. It then tells me that we're going higher basically. So once it takes out certain levels, especially pre-market levels, it tends to go higher from there. So I
+
+[19:06] basically look for structure breaking. That's what I do to give me directional bias. Right? If I am directionally trading this, I don't hold the trade for that long either. When I'm trading, I'm
+
+[19:18] basically looking for one candle pattern. So like right here, I see here, this is where I can show you actually show you Fibonacci as well on this part right here, right at the open.
+
+[19:30] You see how the chart went up and then pulled back. So that's a wave. That's So the up wave is one wave and the down wave is wave two. I call this wave 1, wave two. So I use this Fibonacci tool.
+
+[19:44] So the key Fibonacci levels are 0.382, 0.5, and 0.618. These are key retracement levels. Meaning if the wave goes up, it comes back and hit these levels and bounce.
+
+[19:58] Chances are it'll continue going higher, make a new high and then go for a full extension. So I show you a retracement. So I measured the low of the candle into the high of the wave. So this comes
+
+[20:12] right back and look where it lands. It lands right at 0. I don't know if you can see that clearly, but this green line right here is 0.618. So it landed exactly at 0.618 and
+
+[20:24] bounce. So when it lands at 0.618 and bounce basically I wait for the candle close and then I wait for the confirmation candle which is this green candle right here by breaking the red
+
+[20:35] candle high. That's my entry. I don't I use the five minutes as my key pattern analysis, but then I zoom into the 30 seconds leading into that break to give me like a earlier indication of of a
+
+[20:49] trend change and early indication of a breakout. So I zoom that into 30 seconds to see this breakout and then I I take the trade. And I'm not holding this trade all the way from here to up here
+
+[21:03] either. I'm holding this trade from this break probably to like midway through this candle and I'm and I'm already out. I already made my two or three dollars on the options or and then I'm out. So,
+
+[21:16] I made like a few hundred bucks per contract. That's how quick my trades are. Could we maybe use one ex specific example trade to just clarify how you do
+
+[21:28] this? So, on this chart, what I'm showing you is basically two different time frames. I analyze my charts on the five minute time frame. So on my left right here is
+
+[21:37] a five minute time frame chart. On my right here is my execution time frame. This is a 30 second time frame. All right. So in this candle right here, I was looking for the extension and then
+
+[21:52] the pullback into a Fibonacci level. Right? So at this candle low right here is the Fibonacci level of 0.618. So, I'll measure that out once again on the 30 second time frame. So, I basically
+
+[22:05] take the low of the trend and pull it up to the high of the trend. And then you can see that it pulls back and hits exactly at 0.618. Now, this confirms me that we're going
+
+[22:19] to bounce from here. Right? So, for me to execute this trade, I'm basically looking for a candlestick pattern of reversal. Right? I can either trade it on the 302 time frame on that reversal
+
+[22:36] by just by sculping say I wait for this candle to engulf the candle low for the reversal or I can wait for it to reclaim the EMA. Now on the 302 time frame you get a lot of false indications. So
+
+[22:50] that's why the the way to do it is to look at the five minute time frame setup and then lead it into the 30 second time frame zoomed in for the execution to get the perfect entry. So right here I'm
+
+[23:06] basically looking for this red candle, this green candle to break above the red candle high. Okay. So over here on the 32nd candle right the c the red candle high is basically this error right here.
+
+[23:23] So basically this error right here is where that red candle high is. You can see the right there. Once the price breaks above this red candle high is where I like to make my entries. But on
+
+[23:42] the 30 secondond time frame, it actually allows me to go in slightly sooner because I like to scale into my trades. With options, it's very hard to get fills. All right? Because of the spread
+
+[23:55] and the and depends how fast the price moves. So it's hard to get like exact fill. So what I do is I go in small. So let's say my my size is five. I would go in one or two early to to lower my risk
+
+[24:12] because I'm early, right? And then I'll add the other three as it confirms my trend. So what I do is I look for a stack EMA. So what I mean by stack EMA meaning the 8, the 21, the 50, or even
+
+[24:28] the 200 all clobbered together in one area. Now this is my favorite trade because this is a start of a very big move. That's how all big moves start with is a stack EMA. All right. So
+
+[24:42] that's the 8, the 21, and then you the symbol moving average is 50 and 200. if they all stack in one area and then all I'm looking for is the price to fall on it and bounce off of it either by a
+
+[24:58] confirmation by using a big very large green candle engulfing the previous candle or several green candles engulfing the entire area of of consolidation. So right here you see
+
+[25:12] there's small little waves and then this pullback and then it creates a higher low. So every trend starts with a higher low. All right, a trend basically a higher low and a higher high. Higher
+
+[25:25] low, higher high. So I'm basically looking for a higher low around the EMA stack. And then I look for a confirmation candle, which is like this, a big green candle engulfing five
+
+[25:38] or six smaller candles. Once I see that candle, I'm in. And what is the exact trade you would make here then? So that would be the entry right right here where you see how
+
+[25:50] okay so that purple line is we So that works out even better if it it actually on top of we as well. So it's all clobbered together in one area. Right? So when it's all stacked like
+
+[26:03] this this is where I'll take the square off. Okay. So you see all the EMAs all the lines right here are stacked in one place. Right? And now I look for this candle. This is called theite candle.
+
+[26:15] It's one large candle that engulfs all of it and it reclaims all the EMA. So, I entered this candle. My stop loss would be at the low of this area right here. I I don't use a firm stop loss. I use
+
+[26:27] hotkeys. So, I look for price action and they hit my hotkey to get out. So, I'm basically have my hands on the hot keys as my eyes are only on the price and then my hands work as my eyes watch the
+
+[26:39] price action. That's how fast I am. My fastest trade is four seconds to make to make two or three dollars on on the trade. So that's how fast uh you have to be sometimes. So So right here I'll be
+
+[26:49] making my entry. And what would be your entry? Would we be buying a call in this case? Yes. Only buy calls. You would buy the call here compared to
+
+[26:58] your charge. Okay. This would be the area I'd be looking. Once you break above this high right here, this red candle high, that's where I buy. And then this is where I'd
+
+[27:11] be looking to get out if it falls drop below here. So I'm basically risking one candle, right? So
+
+[27:20] you will get out at what level for profit. So I have a system where I measure it out using Fibonacci. This is where the Fibonacci extension comes in. So I take
+
+[27:32] this high, this low, and I pull it down to this candle low at the 0.618. So now I'm going to delete the previous measurements. This is called the
+
+[27:44] Fibonacci extension. It gives you so a typical wave will extend to 100% of the pullback, right? But sometimes what it'll do, you'll extend to 1.618 on an overextension. So right here I basically
+
+[27:58] looking for extential of 100%. So this is the 100% right up here. Right? So I use this as a general target. Now it's never exact. It's always like a zone. Once once the EMA start expanding,
+
+[28:15] I use the EMA as my stop loss on the 30 second time frame. All right. So EMA the eight is the yellow line is where my 8 EMA is. So, normally I take my exit right at the eight after it closes below
+
+[28:30] the eight. Now, this is only at the start of the move. Okay? If it's later on into move and we're like really really extended up way up there, I don't even wait for the eight because
+
+[28:41] sometimes the price is so far away from the eight that it makes no sense to wait till the eight. So, I just wait for the first red candle to exit. As soon as I see red, I'm out and that would lock in
+
+[28:53] my profit. And because this is such a big move right here, I the way that I trade is I'll explain it a little bit later on, but what the way I trade is by the time it hit these candles up here
+
+[29:06] that this is like 10 points in just up here, it's already 10 points in. 10 points in means that if I bought at the money, which is around 0.5.4 delta, right? 10 points in, that's
+
+[29:20] about, you know, four or five bucks already in profit, right? Like a few bucks in profit. I don't like to risk that because one red candle because we're in a higher delta. One red candle,
+
+[29:32] we're at like 0.6, 0.7 delta now because we're in the money. One red candle loses majority of your profits. So what I normally do is I get out of the in the money option and I buy back the lower
+
+[29:47] delta by continue riding the trend. Right? This limits my risk. So any pullback once I switch I'm back at 30 delta or or or 40 delta. Right? So one red candle means I'll lose 30 40 cents
+
+[30:02] and and then I get out of the trade and I'm still very very green from the original. And if it actually continues the trend, it'll go in the money again. And then I can do this all over again. I
+
+[30:14] get out and then I buy a cheaper one. This allows me to lock in my profit, still ride in the trend without much risk. So this is like the my way of trading is always look at risk first. So
+
+[30:27] if you're deep green, I I I get out, I buy a cheaper one, ride a trend, keep riding it, and just keep repeating myself until the risk is free. risk is free, meaning you already double in
+
+[30:37] option premium and you still have the same sizing, but you're still in the trade and it's still trending. Meaning you can just let it ride and ride and ride and it's free money, right? But
+
+[30:47] obviously I I will keep repeating myself and just take it out, buy back cheaper, take it out, buy back cheaper, and my risk is gets smaller and smaller, smaller, and basically at the end of the
+
+[30:56] trend, I can't lose money. Eddie, it strikes me that this way of trading requires an intense level of concentration very
+
+[31:09] which is uh why I I tell people right from start are you disciplined can you follow rules that that's the most important part about trade day trading really is you
+
+[31:22] have to be disciplined you have to be fast you have to be able to follow rules and these are three characteristics you have to have. If you don't have it, it's not for you.
+
+[31:30] And you need to learn the rules and remember them in the situation. Well, uh well, that's where uh the uh reps comes in. The more you trade, you recognize the rules through your
+
+[31:42] trading experience because he'll force you to recognize the rules because if you don't recognize the rules, it'll be over before you get too far into the game. out.
+
+[31:51] Do you trade like this the whole day or is there like one period of the day that you focus on? Yeah. So for day trading most of the action is in the first hour and a half
+
+[32:02] and the last hour. Now back in the day during COVID I trade all day every day and I do about five 600 trades in a day. I I limit myself from that now. I I trade only the first two hours now.
+
+[32:16] Usually I you I used to trade a lot of power hour which is the last hour but I find that in the last year or so I think market makers figure out that we know what they do in the last hour and they
+
+[32:30] actually don't move in the last hour until the last 15 minutes of the day. I think they figure out the strategy because that used to be my home run maker because at the end of the day the
+
+[32:41] options are super cheap. That means you can load up in size because I have this one rule. If I am very green, I will sacrifice 20% of my profits at the end of the day for a lotto. A lot means that
+
+[32:54] it's a long shot and it I expect it to go to zero. Now a lot of times in 2022, these lots was my day maker. Actually, one time it was my year maker in this lot because back then it was a 100 point
+
+[33:10] swings. So you buy them out of the money for say $2, like 10 points out of the money towards the end of the day. 10 points and then it shoots up 50 points. Those options you bought for $2 suddenly
+
+[33:22] become $50 at the end of the day. And if I use 20% of my profits for that lot, I mean that easily turns $5,000 into six figures, right? So I did hit it one time really big in two 2022 and I was hitting
+
+[33:38] it multiple times throughout the year but in the last two years I find that this strategy stopped working as much because they stop doing these reversals in the full hour. They they tend to do
+
+[33:51] them last sometimes 15 minutes sometimes just the last five minutes because they kind of waited way too closing time now to do this. So it kind of stopped retailers from taking advantage of these
+
+[34:01] price swings. So the reason for that to happen is because the the way options work, if there's a lot of people buying puts, the market maker has to hedge the delta hedge their precision. So
+
+[34:13] basically they have to short the market to to hedge those puts, right? But towards expiration time, especially if it's a monthly expiration or or or a quarterly expiration, which which is my
+
+[34:25] favorite one, the quarterly expiration, they they look at the premium on both sides to see at which strike is max paying, meaning which strike will everybody expire, worthless, and then
+
+[34:36] make all the money. So if the price gets too far away because a lot of people buying puts but towards the end of the day that last 30 minutes they start unhedging to precision because a lot of
+
+[34:47] the options is going to become worthless right. So if they look at the middle max pain, say we're trading at 6,000 and max pain is say 6050 at the end of the day the price will try
+
+[35:00] to revert to 6050 because they what they'll do is unhedge the precision meaning they'll buy back stock which pushes the price up as they get rid of their puts as the puts start expiring.
+
+[35:11] So it brings the price up and you'll go ver vertically into the close. And if you bought a call when it was at 6,000 and it went all the way up to 6050, that's 50 points. And because it's so
+
+[35:26] far away from that price towards that closing time, you're paying literally like three, four, $5 at the money. And these went in in the money by $40. It's a strategy I took full advantage of for
+
+[35:39] a full year until it didn't work. But anyway, that that was my end of day lo strategy, but I can share that now because it doesn't work anymore. So, Eddie, I'm sure many are curious about
+
+[35:54] what do you have on all those screens we see when you are trading? Yeah. So, I can show you. This is one of the screens. So this is one big five-minute chart. Basically, I use this
+
+[36:07] screen to analyze structure on multiple days. So if you look right here on the right, this is volume based on my entire screen. And then you have these volumes. This is volume per day. So I analyze the
+
+[36:23] previous days to see where majority of the volumes being traded. So that gives me a clean level of what previous days level. So right here you see majority of the trade was up here and then majority
+
+[36:34] of yesterday was down here. Um so it just gives me a good uh analysis uh overall picture of what's going on and then on a different screen I have this uh right here which is my execution
+
+[36:47] window. So at the bottom here I have the two minute and five minute of my algro which I base my trading trends with. The aggros basically shows me the levels as well as buy sell signals based on trend.
+
+[37:00] And this is works great for trend following obviously. And then over here I have my 30 secondond execution on the right and on my left is just basically a a fivem minute window. And then I have
+
+[37:12] this screen uh on another monitor. This basically gives me multi-time frames in one window. So, this is very important when I'm day trading because down here I have my 30 second window right on the
+
+[37:25] bottom left right here. And these circles are actually my custom indicators. This tells me if there's more bare volume coming through or more bull volume coming through. This
+
+[37:35] downtrend is all bare volume. This is where the up volume start coming through. And at the bottom gives you like uh 30 second. I like looking at 30 second volume because it tells me if
+
+[37:45] there's a big buyer coming in or not. Like right here you see this big large volume candles right here and then it forms kind of like two 30 second hammer reversal hammers that tells me that this
+
+[37:56] is a early indication that we could pretend trend change. So this is a very important window for me to look at. So after just above that is my five minute window. I use Ichimoku clouds just to
+
+[38:08] see easy look at support and resistance basically on trends. And then I have the 15 minute 65 minutes and also the daily. And people don't think the daily is important when you're day trading, but
+
+[38:19] it definitely does because it it shows you where the big levels are, right? And it gives you the overall picture of what's going on. So that's why I I have a screen like this. And then obviously I
+
+[38:29] have trading view I mean my my my broker on on two screens because I I trade different accounts. So I have a day trading account. I also have a swing trading account. I have an investing
+
+[38:39] account. So I have those on on different screens. And then I have the news in one account. I have a discord community in one account and then I also have a flow account where I could see unusual whales
+
+[38:50] net flow. So it tells me if majority of the people are buying or selling in the market. So I look for confluence when I'm trend when I'm trading. So if I'm going bullish, what I like to look for
+
+[39:03] is a trend multi be multiple multiple time frames as well as the overall net flow is positive and then I look for option open interest to see which strikes has the biggest open interest
+
+[39:18] when because price tends to revert to the strike with the biggest open interest. So if you're way below it and we're in uptrend and then we also have net flow going upwards. Let's say that
+
+[39:33] we're train at 6820 and we're in the uptrend right now and the trend looks strong. The the I look for ticks too cumulative ticks to see if the ticks are net positive or net negative. So, if
+
+[39:46] ticks are net positive, if overall market flow is net positive, we're in a stack EMA and we're trending up right here at 68.20. I scroll up the option chain to see where the biggest open
+
+[39:59] interest. So, I look over here, I see 6875 has 1.4,000 open interest, while everything else was just measly few hundred. And then up
+
+[40:10] here at 6,900, these flat levels always have high open interest. So that tells me my first big resistance point is 6875 and if that area gets taken out it's going to revert all the way to 6900.
+
+[40:25] Now that's a 80 point day if it actually goes that far. 80 point is a fairly big stretch, but in a volatile market, if the VIX is high and elevated, I look at that as a magnet because we're expecting
+
+[40:42] 80 points if the VIX is elevated. And uh and I also look at ATR, which is average true range, which is built into my indicator. So that kind of tells me where the average true range is as well.
+
+[40:58] And if that matches with the open interest distance, then I kind of use that as a general guidance of where price can go for the day if we're trending up in that direction.
+
+[41:10] Eddie, which software are you using for your trading both for your charting and to see different levels, etc. Can you just give us a quick overview of the software you are using?
+
+[41:20] Yeah, so I use Trading View for all my charting. I use Interactive Brokers for trading for for my brokerage because I'm in Canada. We're very limited on what we can use. Interactive Brokers is kind of
+
+[41:32] the go-to one for active traders. So, that's the one I use and it allows me to use built-in hotkeys as well. So, I have like a stream deck right here where I can just click one button to buy or sell
+
+[41:43] and and to get out my precisions. So, I use hotkeys to go in and out and that can be built in Interactive Brokers quite well. And Trading View has a lot of custom indicators that you can
+
+[41:53] program. So I I did program, like I said, I have my own algorithm. So I kind of program my own aggro into my trading as well. And I create custom indicators based on what I use. And I tend to like
+
+[42:04] to tweak certain indicators for my own liking. So I kind of like to combine certain things into one. So I I can just look at one set of indicators instead of try to look through like a bunch of
+
+[42:15] different indicators at once. So trading view is a really really good platform for for like traders to analyze charts. Let's talk about position sizing. How big are your trades compared to the size
+
+[42:28] of your account for instance? All right. So I use actually very small amount of my capital to trade. So I dedicate a certain account just for day trading options. The reason behind that
+
+[42:41] is if you ever day trade once in the blue moon you'll go on tilt. So, so basically separating my accounts is my fail safe. Meaning the worst I can do is blow up the account and it would
+
+[42:55] be just a small percentage of my entire portfolio altogether. Right? So I set up $100,000 account but I don't use $100,000 either. I use maybe five 10,000 at most. And that's my full size. I'm
+
+[43:11] not big on contract sizing. I go fairly small. Then I scale into the size. Right? If if the trade is very strong setup, I go bigger. If the trade is like say 710 setup, I go smaller or I don't
+
+[43:30] trade it. That's the way I I do change my sizing based on the setup itself. And I also change my sizing based on the premiums as well because at the start of the day obviously it's more volatile.
+
+[43:42] The premiums are higher. So I go a little bit further out the money because I don't need the theta doesn't work matter to me because I'm not in it long enough for the theta to decay on me.
+
+[43:51] Right? So so basically I just look for a certain contract size at a certain delta where an expected move will give me a few dollars per trade. That's that's all I'm looking for. So, majority of time
+
+[44:07] I'm using about anywhere between like two 3% to 5% of my money with a maximum size of 10% of of that 100,000 portfolio. And as the day goes by though, as my profit increases, I also
+
+[44:21] increase my sizing. And I also have a set rule where I don't give up more than 50% of my profits of the first half an hour or so. So if the first half an hour say I make $5,000 first half an hour, I
+
+[44:33] cannot lose more than 2500. That's my my limit and then I I either exit or I take my loss and I go smaller size just so I could stay above my 50% and continue trading for the day. Sometimes I make it
+
+[44:47] right back really quickly because with options you don't need a lot of sizing. It's more about extracting those few dollars over and over and over again throughout the day. Because in the
+
+[44:58] fiveminute trend that I just showed you earlier where it went up 20 points, I could do like three, four, five trades where I can extract a few dollars every single time in those 20. So
+
+[45:10] you said that your day trading account is around $100,000. Does that mean that you kind of has keeping it at that size? So if you make good profit, you're just moving it out of the out of this
+
+[45:22] account. So I use big sizing on swing trades, not day trades. I tested this theory out myself multiple times on sizing to see what my limit is. If I go any more than
+
+[45:34] my limit on day trading options, my my heart rate gets elevated and I have to go see the doctor quite often. So, so what I do is I I kind of found a sweet spot for my sizing and that sizing is
+
+[45:47] not that big. I I like to trade about anywhere between 10 to 20 contracts at a time, but I scale in and scale a little bit. I I don't hold on to 20. That's just basically my full size. And and
+
+[46:00] sometimes I I go bigger. If if the trend is very strong, if the setup is very strong and everything aligned all together very strong, then I would increase the size. But as I increase the
+
+[46:13] size, I sweat quite a bit. My heart rate goes up. I can feel the heat. So that's not really healthy for me to trade like that all the time. I do that once in the blue moon when I see a perfect setup,
+
+[46:24] but that's it. Majority time. I I had a video on my YouTube channel where I took a small account. That account was I think at the time was five or 10,000. I think it was 10,000. I was only using
+
+[46:35] $500 per contract and I made $500 within 30 minutes using $500. So, so as you can tell, like this strategy does not require a lot of capital. It requires a
+
+[46:49] lot of skill and discipline, but not capital. So, it's kind of pointless for me to have a bigger account for this type of trading because if you're one of those emotional people, which I kind of
+
+[47:01] am sometimes I I have these little triggers. So, so sometimes you'll pull a trigger and I would go like hotkey hotkey hockey hotkey and I go way over size and then if it doesn't work out,
+
+[47:14] you blow the account. But if if you keep extracting your money out and if you double your account over and over and over again and once in blue moon you blow one account, it doesn't even
+
+[47:25] matter, right? So So this is kind of like my fail safe. The way I teach my students is you you should always separate your accounts anyways. You always if you're going to day trade,
+
+[47:34] have a day trading account. You're going to swing trade, have a swing trading account. If you have a long-term investment, have a long-term investment account. Don't put them all in one place
+
+[47:42] because especially when you're doing options, sometimes those strikes cancel each other out and I've done that multiple times when I first started. That's when I created this strategy
+
+[47:51] where I just separate them. Especially when you're doing spreads and you're doing layers of spreads. Sometimes you you sell a spread, you forgot that you already have like a spread with that
+
+[48:00] strike and then you basically cancel one leg of the other strike and now it's all screwed up and you can't you don't know the difference which which is which anymore.
+
+[48:07] Let's talk more about risks. What is the worst that can happen with this way of trading? See, that's the beauty part. The worst that can happen is your option go to
+
+[48:19] zero. Now, if you Yes. Because if you size it appropriately and you are okay with losing the full zero, right? Then you're at no more risk than you went in the
+
+[48:34] trade with. So, but where you're selling spreads, that's where it's very, very different because I used to sell spreads and I was making a lot of profits for the first few months of it because I was
+
+[48:46] using a very specific system and then the volatility keep blowing my stops, but they don't stop me out at 200%. They stop me out at like three 400% and they kind of wipe out, you know, weeks of
+
+[49:01] gains in one place. And if you size it any that can blow up your account right there and then because it doesn't take you out right at that stop. Sometimes if you set a limit stop it skip your stop
+
+[49:12] and just keep going. So so like even selling spreads you expect a certain stop a stop loss. It may go way past your stop loss but this equals to zero. That's the beauty
+
+[49:26] right? So, if I am willing to risk $5,000 for that day, well, I'll just size it so that I'm risking $5,000 and obviously I'm not going to let my options go to zero. I'm getting out with
+
+[49:39] my rules. If it breaks EMA, if it gives me one red candle, I can get out before the 5,000 is up. So, the next time I get into a trade, I get into a smaller size trade where I can still use that $5,000
+
+[49:50] as my max loss, right? So, if I able to take a $500 loss on my trade, I could go into next trade with $4,500 and I I still have that $5,000 as my max loss for the day, right? So, this basically
+
+[50:03] allow me to control what I'm willing to risk to lose. So, that is my max loss. That's the worst that can happen unless you hit the hotkey too many times.
+
+[50:15] Eddie, I always ask my guests to place their strategy or way of trading on a risk profile scale where one is a very low risk and 10 is a very high risk and you are free to define those numbers as
+
+[50:31] you see fit. Where would you put your trading? All right. So, if you're brand new, this would be a 10 out of 10 because it's definitely high risk. And if you don't have the knowledge, if you
+
+[50:43] don't have the skills, you don't have the discipline, this is definitely not for you. And you know, it's the fastest way to lose all your money, right? If you're not skilled enough to take the
+
+[50:52] trades, if you're if if you don't know uh the rules, you don't know what you're doing, then definitely don't do this. This is high risk. Now, if you're knowledgeable, you have experience, you
+
+[51:02] have discipline, and you follow the rules, this is actually a very lowrisk way of trading just because I just mentioned that it's basically refined risk trading. So, if you have the
+
+[51:14] discipline to set your set your limit at a certain price point, right, that's your maximum loss for the day. So, you know, what's the risk? And I always tell people though, when
+
+[51:26] you trade this strategy, you want to trade it for several months on paper and has to be profitable. If you're not profitable on paper, there's no way you'll be profitable with real cash
+
+[51:38] because this is like high stakes trading, right? So, so in order to develop these skill sets, you have to be given a lot of reps. I call them trading over and over. That's this is how you
+
+[51:50] how you learn your mistakes, how you can create control, how you can refine your trading because it took me two years to really refine my trading. I mean, I started off making money, but I also
+
+[52:02] made a lot of mistakes and then I figure out my mistakes and I just refine my my my rules, refine my setup, and then I kind of take stuff away, kind of make it simpler over time. And that's where it
+
+[52:14] makes it very lowrisk trading because once you have a strategy that works and you know what you're looking for, you know how to exit, you know how to enter, you know how to manage your risk, you
+
+[52:24] know how to take your money out when you already hit a certain amount of profit in your account, then the risk is very, very low, right? Because like I said, it's refined risk.
+
+[52:33] It's time to get into your actual results trading this way, which I'm sure many are very curious about. But before we get to the financials, could you tell us a little bit about
+
+[52:47] your win and loss rate and how big is your average win compared to the average loss? So, when I first traded this strategy, I created a $10,000 account to focus just
+
+[53:02] on this strategy because sometimes I do swing trading in my regular account. So the results are a little bit mixed. With this account, I I created a $10,000 account just to test everything out. So
+
+[53:15] I did it over a month time. I did about 500 trades. My win rate was 77.94. I did this with Trade Zela. So I can show you on the screen if you like. All right. So this is kind of like
+
+[53:28] my Tradezella results. When I was testing out this strategy over one month's time, my win rate was 77.94%. I did about 500 trades. I had 385 wins and 109 losses. And I have a cumulative
+
+[53:45] profit of 19,211. So that's about 300% in gains from a $10,000 start. My profit factor was 1.36, which is not very big because I'm extracting anywhere from 50 cents to a couple dollars per trade. And
+
+[54:02] sometimes you do get to hit those big candles once in a while on the downside where it can take more losses than my average profit. But because my win rate was so high that it kind of is still
+
+[54:16] cumulatively a very high net profit. But but what what about this average the size of the average win versus the size of the average loss? So that varies because where I'm buying
+
+[54:30] the trade and I'm exiting when it breaks. That really changes my profit, right? I don't have it like a set profit. I look at technicals, right? So if the trend is strong, I let it rise so
+
+[54:42] I have bigger wins on that trade. Now, if we're in a range and then I get in the trade and then it goes two candles and it reverses on me, then my profits I'm exiting and my profit will be
+
+[54:53] smaller. So, I do this like throughout the day, so there's no really refined target, but I try to limit my stops to one candle, but sometimes that one candle could be big or small. So, and
+
+[55:05] because the option values fluctuate so much, sometimes when you hit that exit, you don't actually get the exit. So, you have to cancel and exit again. And that creates a bigger loss for you. So this
+
+[55:16] is why where I I start creating that scale in scale out technique. Whereas price start rising I start scaling out and going to a different size and then scaling out and going to a different
+
+[55:27] size. And that's where that technique came from. So your example 300% in one month. I mean that's just amazing. Yeah. Well, it's because you're not
+
+[55:38] risking that much capital, but if you get the setups and get the technique right, it actually you're extracting a few dollars by a few dollars over and over and over again throughout the day
+
+[55:50] every day. Right? So, that's where it cumulatively creates a big win. So, I look for base hits and people always go for those home runs. That's the wrong way to trade, right? If you get enough
+
+[56:02] base hits and you have like a high run rate with base hits and you could do it repeatedly over and over again, that's actually a much much bigger win than looking for that one single big home run
+
+[56:12] play. Tell people this all the time. You know, if if you can keep positive on most of your trades by not letting your trade go from green to red, that that the value is so big over the longer
+
+[56:25] term, right? And it it it's so much better for you emotionally when trading. So it gives you the right set mindset as well because the the worst thing that can happen when you're trading is you
+
+[56:36] get very emotional and that's from a very green trade turning into a very red trade. You get super emotional and that's where people blow up their accounts because they're go crazy. I've
+
+[56:46] done it multiple times. So that's how I know and I tell people not to do it. Right? So this is why it's so important for people. It's that risk control that really defines your trading. is not
+
+[56:57] really about the profits because the profits comes as you manage your risk over time. So the best loser is the biggest winner I guess we can say.
+
+[57:08] Yeah, that's right. But what have been your long-term results of trading these scalping options? Yeah. So this is more recent. So I'll
+
+[57:18] show you this one. Right. So this is more of my main account where I both do swing trading and day trading occasionally on this account. So this is what I call my medium account. And this
+
+[57:29] account is year to date from first of year till this week. And I'm already up 80% on this. This is where I normally funnel my money from day trading into a swing trading. But sometimes trading
+
+[57:42] back and forth like this and switching accounts back and forth is kind of a bit of a hassle. So what I did was whenever I day trade for the profits I put them into a swing position and then I create
+
+[57:55] one more higher risk account where I can do both using just options directionally. So in this account I mostly swing trade with leap options. I also scalp options occasionally on this.
+
+[58:09] So, but like the the returns on is about 80%. Mostly because I look for theme trades when I'm swing trading. So, right now the theme is commodities. So, I I'm heavy into gold and silver right now and
+
+[58:23] that's where majority of these profits are coming from. If you look at your overall options trading over the last few years, what have been your results then? If I start
+
+[58:35] counting from options, that would be from the marijuana craze in 2018 or so to now. So, I turned about over 2,000% during that time. That's a combination of day trading, swing trading, position
+
+[58:53] trading, and investing. This is a lot of information, Ed, and I'm sure we could talk for hours to get even further into the details, but let's try to sum up this way of trading. First, who is this
+
+[59:08] suited for? And what would be the two or three most important takeaways you want the audience to remember from this interview? This is more for somebody that's willing to put up the time to
+
+[59:19] really learn the technicals and and learn to read price action in real time and they must have the discipline and and can follow a set of rules and don't mind staring at the screen for extended
+
+[59:30] amount of time at the beginning because that's the only way to really learn from this. So you got to have to treat this like a profession. So this is just like any high-skll job that you do. It
+
+[59:40] requires training. It requires experience. And as you gain more experience, time into this, you get paid better. That's just the way it is, right? So, you know, this is really for
+
+[59:53] somebody that want to take their trading to the next level type of thing and want to really dedicate to trading because if you don't have the passion for trading, you either hate or you love this game,
+
+[60:05] right? So, this style of trading, if if you hate it, you will never make money from it. If you love it, you don't mind the time that you spend studying it. And that's just where like I I taught a few
+
+[60:16] hundred people. And the people that stick around and people that are doing really really well, they're doing four or five figures in a day now are the same people that would spend the whole
+
+[60:25] weekend looking at charts. They they review their trades every day after market hours. They they wake up early for pre-market analysis. And those are the people that dedicate to want to do
+
+[60:36] this for a living. and and they succeed at doing that by putting up the work. So, it's just like anything else. You if you're looking for fast money, it's a very fast way out the game as well for
+
+[60:47] with this type of strategy. But if you are willing to put in all the time and effort to learn this, it can be very profitable. That's what you're saying.
+
+[60:57] Yes. It doesn't require a lot of capital either. So it's not like something that you put in a lot of risk of your own capital to really succeed in this game. It's more about the experience. It's
+
+[61:09] more about the learning curve and the emotion and the emotions that go along with the trading. And a lot of that stuff can be done if you have the proper process and you learn it from the very
+
+[61:21] start and follow step by step on the process to get to the part. See, majority people what they do is they watch a video and like jump straight into money and then go straight into
+
+[61:34] buying an option the next day and then they blow up say this does not work. Well, obviously it doesn't work because you don't even know what you're doing. You're just buying the call, right? So,
+
+[61:44] this is something that you know if you put in the time and you follow the right steps, you can get there. Now, you have to have the personality for it as well. Just because you want to doesn't mean
+
+[61:56] you you can, right? If you're a person that's very emotional and you can't let your emotion take over your trading, right? If you're a disciplined person, if you can follow the rules, if you can
+
+[62:09] just execute a trades like a robot, you can definitely do this. And and like I say, it does not require a lot of money. I actually have people who started with no money. They they went into trading
+
+[62:20] futures on prop firms. And now I have a guy that makes about, you know, five five figures a minute five figures a month trading only prop firms, none of his own money using my techniques from
+
+[62:33] from trading options except for he's doing with futures. This obviously as we have pointed out uh requires u a lot of learning much much beyond what we have been able to cover
+
+[62:47] in this interview. So, what would be good resources to learn more about scalping options? If you want to get into this way of trading, this type of trading is something that I
+
+[63:02] kind of I would say I would be one of the first to ever do this because when I first start trading this, I I I did this strategy. I started looking around to see if other people do this
+
+[63:13] and I couldn't find a single one that was doing this. But there might be some more now because we're we're about four or five years into UDTE options every day now. So there's probably more people
+
+[63:23] doing this now. I more learn from trial and error and using my technical background of day trading shares and futures just to combine that with options trading and kind of just
+
+[63:34] tweaking the strategy over a few years time to really do it. It's very long. It's literally it takes a week to go through the course. hours and hours and hours of lessons. But this type of
+
+[63:47] strategy does require at least one to two years learning before you can actually get to a a consistent level of profitability. So majority of my people that been following me for the last
+
+[63:59] five, six years, they hit their consistency rate at at year three between year three and year five. in the first three years is basically they they they did really well and then they go
+
+[64:11] backwards and they did really well and went backwards, right? So it's something that they have to keep tweak as they go along because each person has different personality and and a lot of the
+
+[64:22] mistakes are very very common mistakes. It's you know the rule but you broke it anyway. That's usually the the the common from from all the people that's been telling me. So if you really want
+
+[64:33] to learn this, I would say go on YouTube and learn the technicals and then maybe find some day traders and learn their strategies. And if you have a good knowledge of options, then try to
+
+[64:45] combine all together like I did to to really create your own type of strategy around this technique, right? And and the technicals really help you in all tradings, not just for scalping, not
+
+[64:57] just for day trading. This works for investing. This works for swing trading. It works for everything. It just every single type of trading has a different set of rules and different risk
+
+[65:07] management. So, you kind of just have to tweak it around. But the technicals works. It technicals basically allow you to time the markets and the risk management allow you to to control what
+
+[65:18] you're willing to risk and and where to set stops if you want to set stops and and set targets and stuff like that. And that's the stuff that you really have to tweak. But other than that, the the the
+
+[65:28] stuff we talk about today, the price structure, the volume, the candlesticks, like it's all the same for every type of trading. Even if you're selling options, if you know technicals, I bet you your
+
+[65:39] your win rate can increase as well. Would you have a couple of good books to recommend when it comes to learning technical analysis or options trading? One of my favorite books is Mastering
+
+[65:50] the Trade by John Carter. He has a variety of different styles of trading like I do and he goes in very detail of his story how he got started as well. It's very similar to mine actually. So I
+
+[66:03] found that book to be really helpful to me because if you go into the book he actually started as a pretty emotional trader as well and he kind of worked his way into the discipline of things. So
+
+[66:14] that's a really really good book to start with. Another one's Mark Minabini. He's not an options trader. He's he's a swing trader and a precision trader, but he's one of the old school traders that
+
+[66:25] that use the breakout system on trends, like trendbased breakouts, like cup and handles and stuff like that. That's a really good book. And he talks about psychology and all that stuff as well.
+
+[66:36] Before I got into options, I was mostly focused on his strategy for swing trading shares. And it's been working great for me. and everything I learned from him I I try to incorporate into my
+
+[66:47] options trading as well. And another good book is volume price analysis by Anna Cooling. That's a really good book learning how candlestick works, the psychology behind it and what does the
+
+[67:00] volume and price actually tell you when it's happening. So that's a really good combination of knowledge that you can have for this style of trading. Eddie Lee, this has been very inspiring.
+
+[67:12] a lot of information about scalping options. Thank you very much for sharing your knowledge and how you trade. Thanks, John. Thanks for having me.

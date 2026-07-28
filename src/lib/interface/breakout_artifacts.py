@@ -39,10 +39,12 @@ def monitor_config(results: List[Dict[str, Any]]) -> Dict[str, Dict[str, Any]]:
         tier = "A" if r.get("is_potent") else ("A-" if r.get("is_leader") else "B")
         vr = r.get("vol_ratio")
         vr_str = f"RVOL {vr:.1f}x" if vr is not None else "RVOL --"
+        misses = r.get("optional_misses") or []
+        miss_str = "; " + " ".join(f"!{m}" for m in misses) if misses else ""
         cfg[r["ticker"]] = {
             "trigger_lb": 20 if coiled else 5,
             "tier": tier,
-            "note": f"{dist:+.1f}% to pivot ${r['pivot']:.2f}; {vr_str}; 1M {r.get('pct_1m')}%",
+            "note": f"{dist:+.1f}% to pivot ${r['pivot']:.2f}; {vr_str}; 1M {r.get('pct_1m')}%{miss_str}",
             # less-imminent names (further below pivot) -> terminal/log only, no popup
             "watch": dist < (COILED_BAND - 1.0),
         }

@@ -1,0 +1,19 @@
+{
+  "video_id": "pP-gZCJq9aY",
+  "url": "https://www.youtube.com/watch?v=pP-gZCJq9aY",
+  "title": "Selling Options On Futures For Income (NQ & ES Explained)",
+  "channel": "Theta Profits",
+  "channel_id": "UCzGARfberQ8nRRbsjK90BHg",
+  "stream_date": "2026-01-11",
+  "duration": "32:57",
+  "summary": "An anonymous trader who calls herself \"OS / The Option Seller\" (no real name given) pitches selling 0DTE put credit spreads (and sometimes naked puts) on /NQ and /ES futures options, choosing strikes off gamma-exposure (GEX) levels rather than a fixed delta and leaning on intraday \"repair\" (assignment, shorting the future to cover, rolling). She claims a 91% win rate and ~$77,000 on a 100K account in only ~4 months, self-reported inside her paid Substack/Discord — an extraordinary return on the most vacuous metric (win rate on credit spreads) with a direct sales motive and no separable track record. The genuine value is her repeated, correct warning that 13.9x futures leverage will kill an oversized account; the risk is high because it is leveraged 0DTE futures with discretionary directional repair and occasional undefined-risk naked puts. Untestable on our data (futures options absent from the table; intraday + discretionary GEX would be uncapturable even if present). Write-up: strategies/futures_strangle_nq_es.md (conviction 1.5/5).",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

@@ -1,0 +1,133 @@
+[00:00] Hi everyone, good evening. It's Sean with Paycheck to Portfolio. Wanted to do a quick portfolio update and then we're going to talk about how I would start with 10,000, my paycheck to portfolio
+
+[00:10] plan. Oftentimes I get asked, "How can I get started? Um, how can I scale into your system?" And so we're going to talk about that in detail here in just a few minutes. Currently, my net account value
+
+[00:21] is sitting at $127,98. My total unrealized gain is sitting at $35,312. Um the the market's been up and down this week, as I'm sure everybody's been
+
+[00:33] following. So I uh I was down $1,000 today. Um if you're new to my channel, all of my W2 income rolls into the brokerage. I don't use a traditional bank account. I buy long-term growth
+
+[00:46] assets and or uh dividend paying assets with those funds. Eventually, what's going to happen over time is my my dividends are going to grow, which I can show you here under the estimated income
+
+[00:58] tab. You can see currently my estimated income sitting at $41,319. With every dividend, um, which you can see under here, these are the different
+
+[01:10] dividend um, paying assets I get. Some are paid weekly, some are paid monthly. I'm going to show that on an Excel file here in just a second. Basically, what it does is it takes the last payments.
+
+[01:21] You can see the purple is announced dividends. The orange is unannounced. So, we're waiting for those. But when it's annualized, currently I'm sitting at $41,319.
+
+[01:32] So, what's going to happen is over time my dividends will snowball and cover all of my living expenses and allow me to live free from a nineto-ive job. If you look at my performance,
+
+[01:45] let's do a quick update there. And like I said, we'll jump in. My one-year cumulative performance is sitting at 51%. Um, what that basically means is how well my portfolio is growing, and
+
+[01:58] this takes into account dividends I've received. So, you can see again 51%. The S&P is at 12, the NASDAQ's at basically 13, the Dow's at 11.5, and the Russell's at 5% there. If you look at
+
+[02:12] the 2-year performance just briefly, I'm sitting at 65%. You can see the S&P is basically at 40, the Nasdaq's at 47, the Dow's at 29, and the Russell's at 17. Three-year performance, I'm basically at
+
+[02:26] 90%. You can see the S&P is 61, the NASDAQ 78, the Dow's 42, and the Russell's basically 28% there. So, um, the portfolio is outperforming the indexes. I'm getting long-term
+
+[02:40] appreciation on the portfolio. I'm getting cash flow. and essentially I'll get freedom from a nine-to-five job um eventually and I'm aiming for five to 10 years. So, let's jump right into how I
+
+[02:54] would start with 10,000. So, I have a few Excel files here just for simplicity and walking through this step by step. So, um basically starting left to right, I have the the stock in column A. I have
+
+[03:08] I would start with an S&P 500 growth um stock that appreciates and grows in value. So, I have SPY here, which tracks the S&P 500, 1500 there, CLM and CRF. These are closed end funds I talk a lot
+
+[03:23] about in prior videos. One of the big um benefits of these funds is they drip at NAV for a discount every month. So, when you receive the discount or the dividend, um it drips at the discounted
+
+[03:35] percentage there. We'll talk about that more in a minute. And then these are covered call ETFs by YieldMax. And so what these funds do is they run the covered call strategy for you. They
+
+[03:46] charge you a fee for that strategy, but they pay a a good dividend. So looking at the stocks here from left to right, you can see the amount invested here adds up to $10,000.
+
+[03:58] You can see the shares owned here. You can see the dividend per share total here. And I'm going to show you how you can find that on Erade. So, if you go to the estimated income tab, you can see
+
+[04:10] down here at the bottom, you can type in a symbol here like MSTY. It'll pull up here. It'll automatically go to a quantity of 100, but let's just say you have one and update. It'll tell you what
+
+[04:23] the last distribution rate was and it will annualize that for you. You can type a 100 in here. it'll do the same thing and it'll tell you what your estimated monthly income will be for
+
+[04:34] that particular um asset. So that's where I'm getting these dividends per share which add up to $2.84 when you add them all together or sum them up. So the monthly income would be
+
+[04:47] $252 there basically $253. The annualized income when you take all those things into consideration would be $3,32. That's over 30% um dividend on a $10,000
+
+[05:02] investment. You can see I have the NAB discount applied for CLM and CRF. You can see the payment cadence. Some of these are quarterly, some of these are monthly, some of these are weekly. Um
+
+[05:15] you can see the effective drip yield. I I went a little bit more conservative on just for the sake of showing here and we'll see that in some of the calculations. And then I have notes, one
+
+[05:24] specifically for growth. um two or closed end funds both by cornerstone which I talk a lot about in prior videos and then of course the yield max covered call ETF. So all this you can find on
+
+[05:37] public information. You can go to the YieldMax website. They'll show you their annual distribution. You can go to the Cornerstone website. It'll show you a Drip it nav feature which I actually
+
+[05:47] have open right here. So you can click they update every Friday and they show you their their their nav discount essentially. So there is CRF and there is uh CLM and then every year they do a
+
+[06:00] rights offering and I talk about that again in prior videos if you would like to check that out. So, one next thing I would like to to talk about is I offer multiple resources
+
+[06:12] which I'll pin in the comments from one-on-one calls to our membership program to white glove service. And again, you can look at those under the pin comments, but we have a calculator
+
+[06:23] in our membership and our discord. And so, lots of times, again, what I'll get asked is, hey, how can I start out? I don't have a huge amount of money, but I want to scale into your system. And so,
+
+[06:36] in the calculator, I started out here with $10,000, just like I showed in the first example. I'm starting out with zero margin debt. Um, let's say I want to pay a car bill or a mortgage or
+
+[06:48] groceries, however you want to break that down. You can put your annual W2 contribution. So, in this case, let's just say we're trying to pay our car bill and it's $7,500 a year. And I know
+
+[06:59] that, you know, depending on what type of car you buy and what your standards are, that may be higher, it may be low. Um, the inflation rate we're going to say is baked in at 4%, that takes
+
+[07:08] account monthly. And you got to pay your car bill or whatever expense you would put here anyway. So, we're just going to put a 1:1 ratio between contribution and and expense. And then we have the the
+
+[07:19] drip yield, which I have here. And I again, I've made these a little bit more conservative with current movements. So, if you take the drip yield, it's at basically 21.66 66%. You can see I have
+
+[07:30] that at 21.35 just to be a little bit conservative. And then all the drip on this. And again, this isn't a one:1 ratio, but it shows you some of these covered call ETFs in this calculator
+
+[07:42] that are actually in my portfolio that you can find on the Discord. And on this example, these actually sum up to about 54% blended yields, but again, we use a conservative um 32% on the non-drip
+
+[07:57] portion of that. So, just want to call that out for transparency. So, starting left to right, let's say we start out with a gross portfolio value of 10,000. The drip dividends for CLM, CRF, and GOF
+
+[08:09] on this calculator would be $89. And those would compound in drip at NAV discounts every month. The non-drip dividends that we would take as cash would be here at 134. The first month we
+
+[08:21] would have zero interest to pay the first month because we haven't taken a margin um draw or bridge. So our cash would come straight over to 134. Our monthly expense would be 625. You can
+
+[08:34] see that accounts for inflation dynamically below. And obviously um inflation doesn't necessarily go up like that month after month, but again it's a conservative calculator. So the first
+
+[08:45] month to bridge that expense, it would be $491 in margin used. We wouldn't pay anything down yet. So we would we would borrow $491 from our margin account. Our W2 contribution would come in at 625 and
+
+[08:59] our net portfolio value would show here. So what's going to happen over time is when you scroll down, this will accumulate and compound on itself. And let's say you you didn't change anything
+
+[09:12] after 5 years. Now, the stock market's not linear. It's going to go up over time, but it won't go up linearly over like this month after month. Um, but you get the point, right? This is showing
+
+[09:23] the power of compounding. So, after 5 years, you're looking at $72,846. Okay? $648 of drip dividends, $973 of non-drip. Okay? Okay. And if you come over here to the right, you see when you
+
+[09:39] would break free of this payment where you see zero. And what that means is your non-drip dividends have surpassed your monthly expenses in this example. And then it starts to pay down the
+
+[09:52] margin. Now, the truth is is I'm just going to buy more cash flow with that margin and arbitrage the cash flow and buy buy more with it just like a business would with an SBA loan. But at
+
+[10:05] the end of the day, end of the day, at the end of the um 5 years, basically, you would have a net of 56,44. Now, if you look at my specific situation where I type in my real-time
+
+[10:17] balances, and we'll wrap up here in just a second. Just want to show you this so you can see it. If you go to my balances just briefly, you'll see my gross account value
+
+[10:29] including my cash secured puts is at 257283. You can see that my um margin balance is sitting right here at 123362. My net uh account value is $127,98.
+
+[10:46] So that's what I own in equity. If I sold everything, that's what I would have and walk away from. Just like a house, how much I own free and clear. And I always keep my equity above 50%.
+
+[10:58] Okay, which you can see right here. I always keep at least 50% equity in my account. Okay, you might hear some people say that that's risky or you're going to hear a lot about nav erosion in
+
+[11:09] the comments. I've touched on that in prior videos. I would say when you go get a loan on a house and you put 3% down or 5% down or 10% down and the bank owns 90% 95% or 97%
+
+[11:23] equity of your home, I would say this is more way more conservative than a than a home purchase. And I also keep put options on at all times. So if you look at my specific um
+
+[11:36] and let me make sure I'm on the right tab here. If you look at my specific inputs, you can see I've added all those things here. If you go to my 60-month fire plan, and I won't go left to right
+
+[11:46] like I did. You guys kind of get the point already. If you scroll down on mine at month 37 is when my non-drip dividends will cover all of my living expenses. And basically, I'm free from a
+
+[11:59] 9-to-five job. Okay? And so, really, there's three engines that work for for you in this system. You have drip dividends that compound and drip at NAV if I' as I've talked about. You have
+
+[12:12] non-drip dividends that you take as cash payments just like a rental home would. And then the biggest engine is your W2 contributions that you would spend to zero in most cases, but now you're
+
+[12:23] investing the whole amount. You're using a margin um bridge and you're you're you're owning all of that. So at the end of five years, that's $660,000 in my case. My net at the end of the day
+
+[12:37] is going to be $1.3 million basically. But as you can see, $660,000 of that comes from my own income. One last thing I want to touch on when I say the stock market's not linear. I think everybody
+
+[12:49] knows that. Um, but I want to show you my historical value just to show over time it goes up. Obviously, the journey is not linear. So, in one year, um, my account value has grown $28,000.
+
+[13:03] And it's going to look more like this. up and down movement, but over time growth. And so I live out of my account. I'm spending out of my account. Funds are being deducted. My mortgage is
+
+[13:14] pulled out. All my bills come out of this account. But through the investments, I'm getting capital gain appreciation. I'm getting cash flow. And ultimately, I'm building financial
+
+[13:24] freedom. And I protect the downside with put options in case the market goes down. So, I hope you found this video helpful. Um, please like and subscribe if you did. Hope you guys have a great
+
+[13:35] weekend. Talk to you soon.

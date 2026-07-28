@@ -1,0 +1,187 @@
+{
+  "video_id": "4i0leXxP5zk",
+  "date": "2026-02-06",
+  "title": "$SNDK LoD | 5 Feb 2026",
+  "observed_trades": [
+    {
+      "date": "2026-02-06",
+      "ticker": "PLTR",
+      "direction": "short",
+      "action": "exit",
+      "setup": "Entered short ~160 on a breakdown candle two days prior (entered late, ~2% stop); covered early on an anchor-VWAP reclaim because of too much short exposure, then it fell another 13% without him",
+      "entry_basis": "breakdown candle (~160)",
+      "stop": "~2% stop; covered early on anchor-VWAP reclaim before stop hit",
+      "source": "2026-02-06_4i0leXxP5zk@15:15",
+      "confidence": "stated",
+      "notes": "Caption 'palent'/'palenteer'/'Palunteer' = PLTR; regrets covering early",
+      "fill_timing": "wednesday"
+    },
+    {
+      "date": "2026-02-06",
+      "ticker": "TSLA",
+      "direction": "short",
+      "action": "exit",
+      "setup": "Shorted TSLA two days prior on a pullback that filled the post-earnings gap into the daily 9 EMA and anchor VWAP; took it all off the prior day to reduce exposure near the reversal-day low; it then fell another 10%",
+      "entry_basis": "pullback filling the earnings gap into 9 EMA + anchor VWAP",
+      "stop": "",
+      "source": "2026-02-06_4i0leXxP5zk@18:58",
+      "confidence": "stated",
+      "notes": "Caption 'TSLQ'/'Ollo' refer to the Tesla short he 'traded perfectly'; he names it the test/Tesla short",
+      "fill_timing": "wednesday"
+    },
+    {
+      "date": "2026-02-06",
+      "ticker": "NVDA",
+      "direction": "short",
+      "action": "hold",
+      "setup": "Shorted NVDA on a gap up that lost the intraday opening range; Monday's weak candle (failed to reclaim 9 EMA, closed below 21 + anchor VWAP) caught his attention; still holding part",
+      "entry_basis": "gap up that lost the opening range",
+      "stop": "",
+      "source": "2026-02-06_4i0leXxP5zk@21:36",
+      "confidence": "stated",
+      "notes": "Still holding 'the smile short' in NVDA; took the shot on Tuesday @22:12",
+      "fill_timing": "tuesday"
+    },
+    {
+      "date": "2026-02-06",
+      "ticker": "GLD",
+      "direction": "short",
+      "action": "hold",
+      "setup": "Holding gold short; rebounded into the anchor VWAP from all-time highs and 21 EMA, clean rejection on declining 9/21; target weekly 21 then 50 EMA, holding longer this time",
+      "entry_basis": "rejection at anchor VWAP from ATH / 21 EMA",
+      "stop": "",
+      "source": "2026-02-06_4i0leXxP5zk@24:07",
+      "confidence": "stated",
+      "notes": "Gold short; ~15% downside target to the 50 EMA weekly",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-02-06",
+      "ticker": "SLV",
+      "direction": "short",
+      "action": "hold",
+      "setup": "Holding silver short, rebounded exactly into the anchor VWAP from all-time highs / 21 EMA with a clean 5-min rejection; holding to weekly 21 and hopefully 50 EMA",
+      "entry_basis": "clean rejection at anchor VWAP (5-min) from ATH / 21 EMA",
+      "stop": "",
+      "source": "2026-02-06_4i0leXxP5zk@24:07",
+      "confidence": "stated",
+      "notes": "Silver short; sold too early last Friday ~81-82, re-holding this time",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-02-06",
+      "ticker": "OKLO",
+      "direction": "short",
+      "action": "exit",
+      "setup": "Covered the OKLO short 100% the prior day to reduce exposure (sold into strength near the reversal-day low ~72); it followed through another 10%",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-02-06_4i0leXxP5zk@64:56",
+      "confidence": "stated",
+      "notes": "Caption 'Ollo'/'oklo' = OKLO; covered 100%",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-02-06",
+      "ticker": "SNDK",
+      "direction": "short",
+      "action": "entry",
+      "setup": "Tried a small short into strength believing it's the right environment/parabolic-short candidate; expects a flush as it loses the day low; acknowledges it may shake him out",
+      "entry_basis": "small starter short into strength near resistance",
+      "stop": "will end the stream when it takes out the day's low (LoD trigger)",
+      "source": "2026-02-06_4i0leXxP5zk@53:13",
+      "confidence": "stated",
+      "notes": "Caption 'SNDK'/'DK' = SNDK; title '$SNDK LoD'; small size, may stop out",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-02-06",
+      "ticker": "ONDS",
+      "direction": "short",
+      "action": "trim",
+      "setup": "Covered ~30% of ONDS into weakness; believes it could flush to the 15 EMA soon if the market stays bad; strong selling pressure since early January",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-02-06_4i0leXxP5zk@90:22",
+      "confidence": "stated",
+      "notes": "Caption 'OMDS'/'ONDS' = ONDS; covered ~30% into weakness",
+      "fill_timing": ""
+    }
+  ],
+  "principles": [
+    {
+      "category": "exits",
+      "text": "Don't cut a working short too early just because of exposure or relative strength; covering before the stop is hit can forfeit large follow-through (PLTR cost him ~13% more downside).",
+      "timestamp": "17:14"
+    },
+    {
+      "category": "entries",
+      "text": "Best short entries are pullbacks that fill a post-earnings gap into the daily 9 EMA + anchor VWAP, or rejections of the declining 9/21 EMA at the anchor VWAP from the all-time high.",
+      "timestamp": "19:23"
+    },
+    {
+      "category": "exits",
+      "text": "For aggressive shorts, sell into strength to scale out; you don't need to trail every short to the bottom — keep a 'smile'/runner position while booking the meat of the move.",
+      "timestamp": "20:37"
+    },
+    {
+      "category": "posture",
+      "text": "When the pre-market scan shows most names in downtrends and only defensive (staples) names up, the breadth is bad — favor the short side and don't chase extended names higher.",
+      "timestamp": "03:47"
+    },
+    {
+      "category": "risk",
+      "text": "If anticipating a breakdown (aggressive early entry before confirmation), take less risk — use only a fraction (e.g. half) of your normal per-trade risk.",
+      "timestamp": "70:58"
+    },
+    {
+      "category": "mindset",
+      "text": "A 50% QQQ run with every dip bought and snap-back rallies can't last forever; recall the market's long-run average is only ~8-10% annually before assuming endless upside.",
+      "timestamp": "61:25"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "18:58",
+      "caption_text": "the TSLQ is the test that's the short I shorted it two days ago",
+      "context": "A short he traded 'pretty perfectly' on the earnings gap-fill into the 9 EMA and anchor VWAP",
+      "guess": "TSLA",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "21:06",
+      "caption_text": "like compared to patent here. I think Ollo is I'm doing it very fine",
+      "context": "Comparing the regretted PLTR cover to a short he's comfortable with; 'Ollo' covered 100% the prior day",
+      "guess": "OKLO",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "43:17",
+      "caption_text": "ASD running back into the EMA. Oh, what a what a reclaim",
+      "context": "A name running back into the EMAs intraday; questions whether it's a trap",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "56:04",
+      "caption_text": "Light is the strongest one. I'm going to cover some into weakness today",
+      "context": "Strongest of a group; he's covering shorts into weakness; could be 'LITE' or a mis-transcription",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "80:56",
+      "caption_text": "Actually, this wolf is uh it has an entry maybe today, but the nine is still above the 21",
+      "context": "A potential short entry today but EMA structure not yet aligned; yesterday's range too wide",
+      "guess": "WOLF",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "58:47",
+      "caption_text": "It reminds me of the square. Now it's called the block back in 2021",
+      "context": "Comparing PLTR's drop to Block (formerly Square) in 2021 ~70% downside",
+      "guess": "XYZ",
+      "confidence": "likely"
+    }
+  ]
+}

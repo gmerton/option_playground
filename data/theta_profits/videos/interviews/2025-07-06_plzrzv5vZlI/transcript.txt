@@ -1,0 +1,333 @@
+[00:00] No way I would be able to enter, even if this was my full-time job, to be able to enter 48 different trades, you know, one at a time by hand, place the stop orders, place the profit target orders,
+
+[00:13] and not just be totally, you know, totally nuts. Automating your zero options trading sounds like a dream, but can it also be a nightmare? Today we will unpack the risks, rewards,
+
+[00:27] and how to do it right. And my guest, he built his own trade automation tool. Here is Kyle Lisman. Welcome, Kyle. Thanks, John. It's exciting to be here. Let's start with myself as an example.
+
+[00:41] I've been trading zeroD for several years with quite good results. Why would I want to automate my zero trading? So, there's there's a couple of reasons. first and foremost for me was just uh
+
+[00:55] I'd had a day job and so I was not available to be watching the market, placing trades uh during the day throughout the day um during the US trading hours. So having software that
+
+[01:08] was able to do a lot of that for me, place trades, monitor them during the day, take profits, do those sorts of things was a big part of what I was looking for. Beyond that, it's a lot
+
+[01:19] easier to stay disciplined, to stick with your plan, to be less emotional about what's happening during the trading day if you've got the software essentially running the trading plan for
+
+[01:29] you and you're not having to make spur-of-the- moment decisions as you're watching candles go up and candles go down. Tell us before we dig into this, tell us a little bit about yourself as
+
+[01:40] an uh your own journey into options trading. So, I've u been somebody who's been interested in investing for a long time. I owned my first mutual fund when I was I was a teenager with some money
+
+[01:51] that I had had made uh working as a kid. Found my way into options in the early 2000s when I was in college. Did some covered calls. That seems to be one of the first things that uh people do in
+
+[02:04] the options world. Got away from it a little bit as I got a got married, got a full-time job and found my way back into options trading into the kind of the tasty trade world. in their, you know,
+
+[02:17] their 45 DTE trades, strangles, um, those sorts of trades, probably 2016, 2017, and, uh, from there was was kind of plugged in, uh, to the options trading
+
+[02:30] world. eventually found my way from there into the zero DTE space and that was something that really interested me the the ability to trade every day have your you know your results your outcome
+
+[02:44] you know essentially happen right away that you know by the end of the day by 3:00 I was done so uh it was definitely something that kind of captured my interest and that's what I've been
+
+[02:55] mostly trading ever since and you are a chief technology officer in a I understand which probably explains why you built your own tool when you needed to automate it. It it
+
+[03:08] does. Yeah. I enjoy investing, but uh one of the other things that I really enjoy doing is computers, development, uh websites, those sorts of things is what I've spent a 20 20 plus year career
+
+[03:19] working on. And so it was kind of a a natural fit for me to to merge those two interests of mine. And uh yeah, I had figured there there had to be a way with APIs and you know, the tools that the
+
+[03:32] brokers provide that I could automate some of these actions and be able to take the the actual physical trading and clicking of the buttons, you know, off of my plate during the day. So, this was
+
+[03:44] to make your own life easier. 100%. That's how lots of lots of software and other businesses get get started and get created is you know a need that the the owner the founder had and that's
+
+[03:58] absolutely what happened here. So we will get into the automation and how does that is done but first you know zero DTE what makes that different from other option trading strategies. There's
+
+[04:10] a few things like I mentioned, one of the the benefits is just that it's it's so short that you're trading today, you're closing your trades today. Uh if that's all you're trading, then your
+
+[04:20] account is in 100% cash at the, you know, at the close every every evening. So there's no overnight risk, no worries about the market gapping one way or the other if there was, you know, some sort
+
+[04:32] of news event that happens uh you know overnight. So, that definitely had some appeal um to me. The other thing that that's kind of nice about it from a a data
+
+[04:43] standpoint and just a number standpoint is you're able to trade so often. If you're trading once a day or a lot of people are trading, you know, five ten trade entries a day times five days a
+
+[04:55] week times all year is you just get the number of occurrences of trades, you know, gets very high very quickly and that helps to smooth out the results and get you closer to the the long-term
+
+[05:06] averages that you're expecting. So, let's dig into trade automation and start with the basic question. What do we actually mean when we say trade automation? To me, automation is it's,
+
+[05:20] you know, it's not a strategy in and of itself. It is just a way to implement a trading strategy that you already have, that you've back tested, that you're confident in, and comfortable trading.
+
+[05:32] But the automation from my standpoint is basically just clicking the buttons for you. So, you know, when you're trading manually, you're in Thinkorswim or Tasty or Interactive Brokers in their
+
+[05:44] platforms and you're clicking this strike, clicking that strike, setting your entry price, adjusting the price to get your order filled. Then, once you're in a trade, then you're placing stop
+
+[05:55] orders, profit take orders, you know, you're doing all of that manually, you know, with with your mouse and setting those prices. And it's it's definitely potentially prone to human error,
+
+[06:06] misclicking, you know, buying instead of selling or, you know, those those sorts of things. So what automation can do for you is basically let you define how you want to do the trading, what you want to
+
+[06:17] enter, what price you want to be at, what your your stop loss and your profit targets are. And then the software, you know, once the trading day hits, we'll place the orders, adjust the pricing,
+
+[06:30] monitor the fills, place the stop orders, and essentially eliminate the time spent and the potential, you know, for human error in actually, you know, physically submitting the orders to your
+
+[06:42] broker. You developed a tool to help you sell. But later on, it has developed. Um, today trade automation toolbox has a lot of retail traders as uh customers. And who's the typical uh retail trader
+
+[06:56] that uh would like to start tool like that? I think they're probably a lot a lot like I was. I think the people looking for automation. Um certainly the the people my earlier users were people
+
+[07:08] who are already typically fairly experienced options traders. they have strategies that that they're comfortable trading uh but they like me they they had a day job or they have other
+
+[07:19] obligations during the day and are not able to monitor the market you know six plus hours a day and they were looking for something to help them actually implement that um during during the
+
+[07:31] trading day. So, if I want to start automating my strategies, could you walk me through the the process I need to do to set this up and uh to get going, so to speak? Yeah, absolutely. My software,
+
+[07:45] it's it's actually an installed solution. And so you would sign up for an account on our website, download the software, run a the quick installer, and uh once you've got it, got it
+
+[07:57] installed, open it up, connect it to your broker, whether it be Interactive Brokers, we also work with Trade and Trade Station, and we'll be working with Schwab soon. Uh once you connect to your
+
+[08:09] broker, it'll download your account information, and from there, you're ready to configure your strategy. Um what that entails essentially is there's lots of options um that you may want to
+
+[08:22] use, but big picture it's selecting what type of trade you're trading uh what uh DTE you're trading. Uh we do support some shorter term DTEES, but the vast majority of my users uh use it for zero
+
+[08:36] DTE trading. But you configure the type of trade, the credit you're looking for or deltas that you're targeting, how wide do you want your spread to be, what are your stop-loss, profit target goals,
+
+[08:47] or is there a scheduled time that you want the trades to close? And essentially, you configure all of those things ahead of time. So the software knows what to do when the market's open
+
+[08:58] and it's time uh to do your trading. You configure during the, you know, during the day what time you want your trades to enter or we also have the ability uh to trigger trades via a web hook using
+
+[09:11] an external charting or alerting service like Trading View if you have some sort of other signals that you use uh to trigger when to trade. But the kind of the building blocks is defining ahead of
+
+[09:23] time what is your trade your template for this trade what are your entry and your exit criteria. Here's a hypothesis on my end but I suspect that many of us think that our
+
+[09:35] strategies are much clearer than they are in reality at least when we are asked by your software to actually specify every piece of what we want to happen. Is that a correct assumption? I
+
+[09:47] would I would say that probably is a good assumption and honestly it's it's something that will make you define your strategy very very specifically because yeah the computer will do what you tell
+
+[09:59] it to do and only what you tell it to do and so there's no well you know today I'm going to do it this way tomorrow I'm going to do it that way I'm going to look at the chart and see if I feel like
+
+[10:09] it's going to go further up or come back down you know there the the benefit of automating those things and setting all that up and making those decisions ahead of time. Uh I think is has been helpful
+
+[10:22] for me, but it's you're right. It's definitely something that you you will have to make sure you know how you want to trade, when you want to get in, when you want to get out, otherwise the
+
+[10:32] computer is not going to make those decisions for you. Are there things that we need to be particularly aware of when we use these type of software for zero DTE post longer term strategies? The
+
+[10:44] thing with automation for me is that it's it's not the end- all beall. It's primarily a tool to save yourself time, save yourself the potential for human error um when placing trades yourself,
+
+[10:59] but it's it's not foolproof. It's not set it and forget it. It's not a, you know, a money printer. You know, the market is still, you know, a very challenging environment. Changes, you
+
+[11:10] know, from day to day and and week to week. So, it it's not something that you're just able to set up once and just turn it on and, you know, come back, you know, go on
+
+[11:20] vacation, come back a month later and, you know, see how much money you made. When setting this up, of course, you need to learn the software, which I suspect takes a bit of uh time and time
+
+[11:31] and energy. But uh when setting up these rules for your uh CRDT strategies, are there any best practices uh that has uh that have developed? Um I mean to to me the biggest thing is
+
+[11:46] is to back test uh your strategy over you know various short-term, medium-term, longer term periods of time so you know going in kind of what sort of performance you're expecting. Um, I
+
+[12:01] also like to continue to forward test as I am trading, you know, and trading live. I will monitor those results, you know, on a weekly or monthly basis and compare them to the back testing tools
+
+[12:13] to see if what I'm getting in real life, you know, is mirroring relatively closely uh what the back test believes I I should have had it happen during that same time frame. And you also built your
+
+[12:25] own back testing tool. I did. So, that's really kind of where this started. Uh, back in probably 2020, I had, like I said, I'd heard of zero DTE. I had seen um some videos and been in, you know,
+
+[12:40] Facebook group and some Discord groups with other traders. I know you've had, I think, Tammy on your show at least once before and she had done a lot of manual back testing in those days. There were
+
+[12:52] there in, you know, just a few seconds. So, I know she had done a lot of manual testing and that was kind of what I was basing the morning trades that I was placing before I went to work on what
+
+[13:03] she had found using I think five minute data with Option Net Explorer at the time. And I knew again being a software guy that I could probably if I could get a hold of the, you know, the pricing
+
+[13:16] data that I would be able to, you know, to automate that, go back through, you know, follow the option pricing through the day and figure out what my results would have been just to kind of if I was
+
+[13:27] going to commit a decent amount of, you know, of my savings into these investments that I wanted to feel comfortable and confident in, you know, the kind of returns that were possible.
+
+[13:39] And so I was able to acquire the data from CBOE at one minute resolution and then later actually tick level intrainut um data and build out a software tool. We call it Bob build your own back test.
+
+[13:54] Um and again that's something that I made available for free for other people you know trading similarly in the communities that I was in uh to be able to do the same thing where they could
+
+[14:05] set you know what price they wanted to target, how wide they wanted their spreads, what sort of stop-loss levels did they want to test and make it easy to quickly test a bunch of those
+
+[14:17] variables and then be able to narrow down you how they wanted uh to trade. I guess there are a couple schools of uh trading or many schools actually but you know some traders are very mechanical
+
+[14:31] have a very clear written rules for everything they want to do while others are more let's say discretionary they like to read how the the market is developed that day and take the decision
+
+[14:41] based on the actual uh picture at the moment is there any space left for discretion uh with this type of tool um I would say that depends toally on the trader and how you like to trade. Uh for
+
+[14:55] me I I found pretty quickly that I was not very good at doing that and you know deciding if the market was going up from here or down from here and when I tried to do that and made my trading decisions
+
+[15:07] based on what I thought was going to happen that that you know sometimes it worked out other times it didn't but there are other people who are who are very good at that who are much better
+
+[15:15] than me at it and so I think there is room uh for some of that discretion in automated trading. Um, my software does allow you to to do a lot of that if you choose to. You again define kind of how
+
+[15:30] you want to manage the trade in those templates ahead of time, but you have the ability to trigger an instant trade at any point during the day. If you see, you know, price action going one way or
+
+[15:40] the other, and you say, "Oh, I want to, you know, put my put spreads in now." You can do that. Click the button. The software will still handle the order entry process for you, placing the stop
+
+[15:49] once the trades um get placed, but you do have that discretion to be able to um to trigger those when you'd like. Uh there are a lot of people as well who once the trades will open. Uh we'll
+
+[16:01] manage them using the software and the automation during the day. It's very, you know, usually just one or two clicks to be able to close a trade that's open, change a stop price, uh, change a profit
+
+[16:13] target. If you, you know, a lot of people will tighten their stops down later in the day as, you know, they're in the spreads they've sold decade, they'll, you know, bring their stops in
+
+[16:23] to break even or, you know, even down to 20 or 30 cents maybe, just to make sure that they've locked that profit in if things happen to turn around. So there's definitely the ability um that again
+
+[16:34] those sorts of things can be automated if you make those decisions ahead of time, but there's definitely space um to be uh making those tweaks during the day once positions are open if that's how
+
+[16:44] you like to manage things. But there is no uh there is no trading without risks. And I guess that also goes with using a tool like this. What's the worst that can happen that can go
+
+[16:57] wrong? There's definitely risk involved in trading. that's you know without risk there would be no reward. Um but as far as the software is concerned I mean the worst case scenario for any zero DTE
+
+[17:09] trader is that something catastrophic happens the market you know jumps 100 points and gets all the way past your you know your positions and you end up looking at potentially at a full loss.
+
+[17:22] Um that's possible whether you're you know you have automation watching your software or not. You know we can't control how the market moves. Um, beyond that, any automation tool is still a
+
+[17:33] piece of software that, you know, potentially could have a bug, could have some sort of connectivity problems. You're still depending on not only the automation software, but the broker
+
+[17:44] software, there's, you know, the stops and things that are held on their servers. 99, you know, some percent of the time, everything works fine, you know, handles everything that that comes
+
+[17:55] up during the day and there are no issues. But in the end, it's still the trader's responsibility to monitor their account, their trading. Most of the automation platforms
+
+[18:07] again are very good at monitoring those things for you, sending alerts and those sorts of things if something unexpected happens, there's connectivity problem or you know, position doesn't close as
+
+[18:18] expected. But, you know, the bottom line is it is still the trader's account. it's their money that's at risk and I would 100% recommend keeping an an eye on things during the day just to be sure
+
+[18:30] that everything is executing as expected. If we move back a few weeks to I believe it was April 9 when um President Trump announced the pause in the tariffs and the market jumped I
+
+[18:43] believe it was like 9 or 10% in uh a few minutes. How did automating tools handle that specific event? I'd have to go back and look. I don't think I ended up making
+
+[18:56] money on that day because not surprisingly all all of my trades on the call side stopped out on that huge jump. Um, one of the things that was very important to me, um, when when writing
+
+[19:08] Trade Automation Toolbox was to make sure that it was handled things as safely as possible and that once trades were entered that as little depended on my software as possible. So, anytime you
+
+[19:22] open a trade and it's set up to have stop-loss orders, those orders are submitted to the the broker servers immediately as the position is open. So even if there was a problem with with
+
+[19:35] your internet or you know the power at your house or wherever you're you're running my automation software, those stop orders have already been submitted to Interactive Brokers or to Trade
+
+[19:46] Station. And so th they'll still get executed even if there was a software problem. So on that day with the those big those big moves up, my stops were already in had been sitting on the
+
+[19:58] broker servers for hours at that point. by the time that that move happened in the afternoon and obviously the you know the trade stopped out with probably a little higher than average slippage as
+
+[20:09] quickly as that move was, but it was you know still well within the the expected um range of what a stop could fill for. And so it was while the move was outsiz and very unusual, the results for that
+
+[20:23] day were were still very typical. But as the developer of uh of a platform uh you feel of course responsible for all your customers who are basically trading their money through your
+
+[20:38] platform. What is your nightmare scenario as the owner and developer of the platform? What's um yeah that's that is a good point. I I definitely do feel some responsibility for that. I I
+
+[20:52] appreciate that people trust me and my software uh to help them invest invest their hard-earned money. So I think you every day as I'm as I'm making changes adding to the software
+
+[21:06] about basically safety first worst case scenarios making things as redundant as possible adding as much monitoring as possible so that if anything unexpected happens a the software can deal with it
+
+[21:20] can handle it can notify the user can do all of those things um to try to mitigate and eliminate ate as many risks as possible. Again, nothing is, you know, soft in the
+
+[21:34] software world is ever 100% perfect just because of the nature of things and how, you know, what what might happen. But I been as careful as possible to try to handle as many of those one-off
+
+[21:47] scenarios as we can and to make sure to be able to notify the user in the event that any anything unexpected happens. But um if I understand you correctly as a trader, it's not 100% set and forget.
+
+[22:01] We need to still monitor what's happening throughout uh throughout the day even though the trades are automatically placed for us. I I would definitely say yes. One of the benefits
+
+[22:12] for me is that I again I don't have to watch the trading, watch the market action and things, you know, minute by minute if I don't want to. Obviously, if if that's what you're doing, you're a
+
+[22:24] full-time trader, you enjoy doing that or trading discretionarily, then you certainly can do that. But it it allows you some level of being able to remove yourself from the minute-by-minute
+
+[22:36] action during the day. Um, but you definitely do still want to keep an eye on things. My kind of typical um workflow is that I I you know I've got my email open at work during the
+
+[22:47] day. So I know typically when my trades are scheduled to enter and so I you know we'll see those emails. I get an email confirmation from the software every time a position opens. So without
+
+[22:59] necessarily watching the market or seeing how the the trades are performing, I'm still able to see those emails come in at each time I have a scheduled entry. and seeing those is is
+
+[23:10] kind of a low lower touch way to still have an eye on things, make sure that um trading is going going on as expected. I also would encourage people and I typically, you know, 10 or 15 minutes
+
+[23:24] before the market closes, I would sign in um make sure everything again was was working as expected. I have some trades that have scheduled exits a few minutes before the close. So, I like to sign in
+
+[23:36] before those trigger and just make sure everything works as expected and I've I very very rarely um have ever had to intervene or do anything manually. It's almost always just
+
+[23:50] watching you watching those orders go in, watching those positions close and basically seeing, you know, how the day went and getting that, you know, that immediate feedback that zero DTE gives
+
+[24:01] you, you know, every time the closing bell rings. You touched on this now, but uh I'm curious, can you elaborate a bit more how you you yourself use trade automation for your zero DT? What type
+
+[24:12] of strategies are running? How you set up your own your own trading throughout the day? Yeah, of course. Um, so I primarily do uh two two approaches to zero DTE trading. I I trade um iron
+
+[24:26] condors throughout the day. A number of entries where iron condor being where you're selling both a put spread and a call spread in a delta neutral fashion, hoping the market, you know, stays
+
+[24:37] relatively calm and will stay between your strikes and let those expire at the end of the day. Um, in addition, and kind of as a complement to that, I also do some uh some trend following trading
+
+[24:49] where I'm entering just one side, either puts or calls depending uh on what the the moving averages are doing during the day. So, if the market is is moving up, I'll be selling put spreads. If it's
+
+[25:02] turning back down, then I'll be selling call spreads. And I kind of like the the combination of those two sorts of approaches because one one will do better on a you know rangebound day with
+
+[25:13] little movements, but on big trending days where the market you know heads up or down all day having those trend following trades will help to offset some of the stops from the iron condors
+
+[25:24] getting stopped out on one side. How often do you log in during the day on your broker platform? I typically don't. I mean, it's it's signed in and I have the platform open on, you know, I've got
+
+[25:37] a a few monitors set up, but I honestly don't, like I said, I don't watch it during the day. Um, if things go well, I, you know, I'm working away. I've got my email open. I'm seeing my trade open,
+
+[25:49] confirmations come in as expected. And as long as all of that happens the way it it normally does, then usually I'll make it to, you know, 2:45 central time, 15 minutes before the close. and that's
+
+[26:02] the first time I'll sign in and even know if S&P uh is up or down on the dayto-day. How many trades uh do you typically place in a day with these two strategies? So, I run I think 24 uh iron
+
+[26:17] condor entries through the day and I believe 20 uh trend following trades. So, I've got about 48 uh trades and then, you know, 68 if you count the puts and calls separately uh once the iron
+
+[26:31] condors get entered. So, I'm firing, you know, I've some of them, you know, happen. It's not 100% spread out evenly throughout the day. I've got some trades in the morning, some in the midm
+
+[26:42] morning, um more later in the afternoon, but um yeah, I have trades going in all day. And again, like I I mentioned earlier in the call, uh just I like the ability to take lots of smaller
+
+[26:58] positions throughout the day, which is really, you know, the automation software allows that to happen. There's no way I would be able to enter, even if this was my full-time job, to be able to
+
+[27:09] enter 48 different trades, you know, one at a time by hand, place the stop orders, place the profit target orders, and not just be totally, you know, totally nuts, you know, and done with it
+
+[27:23] by the end of the day. So, the automation definitely allows um for spreading things out much more uh widely throughout the day than I would be able to if I was doing all this trading by
+
+[27:35] hand. How have your your results been? Uh they they've been good. So, yeah, I've been trading um zero DTE um using the automation platform. It's almost three years old now. It was about this
+
+[27:50] time um in 2022 where I first started writing it and was using it myself. Um I have made uh 30 40% um on the buying power I've used I think each year that that I've been doing it there. You know,
+
+[28:08] it's like I said, it's no guarantee and you know, things don't work every day or every week or even every month. But I think if you're trading at a size that you're able to
+
+[28:18] trade through some of those weeks and months where things don't go as well as others and you know be consistent and disciplined over the long term, it's still a strategy where there is some
+
+[28:28] edge and the the volatility risk premium that you're you're selling with um short zero DTE premium trades. One of the things I will mention and definitely encourage people to do is um
+
+[28:42] Interactive Brokers, Trade Station, and Tradeier all have paper trading platforms that are compatible with their trading APIs and uh trade automation toolbox is able to work with those. So,
+
+[28:55] my recommendation for people when they first get started is 100% start in their paper trading environment. That way you're able to set up your trade templates, your entry and your exit
+
+[29:06] criterias um in a an environment where you're not going to lose any money if you misunderstood something or you you know typed 50 instead of five for your you know your stop multiple or
+
+[29:18] something. um you'll be able to see those things happen in in paper trading or simulation accounts and be able to catch those configuration errors before you know they they might happen trading
+
+[29:31] live. So let's sum up a bit. What would you say are the most important pros and cons and who would you say that uh automating Seridity is most suitable for?
+
+[29:45] Um, so I would say for me the the biggest pro is probably just the amount of time that you can save. Again, being able to enter, you know, a half dozen, a dozen, two dozen trades a day and have
+
+[30:00] those things just happen. And even if you're watching them, you're still not having to do the clicking and, you know, enter all those things manually. So it's a tremendous amount of time that can be
+
+[30:10] saved and you know reducing the potential for human error. So that's I think probably the big appeal um for automation and on top of that for people uh who have a job have a day job in the
+
+[30:23] US during market hours um being able to have the automation doing the trade entries and you know setting all of your orders up again is is probably the main driver um that have
+
+[30:37] people looking at automation. Um, some of the the cons potentially is it I think sometimes people will see people talk about trading and videos on YouTube and how well it's going and how easy it
+
+[30:50] is and think that it's just, you know, one, two, three, I'm going to do exactly what I saw this person say they were doing. I'm going to set it up. It's going to do all these things and just
+
+[30:59] make me a bunch of money. And, you know, I'll come back after a week and after a month and it'll have been great. And that's that's definitely I mean there may be a week where things work really
+
+[31:08] well like that, but there will definitely be weeks where where it doesn't. And so it's I I think it might be easy um to trade too large, especially with kind, you know, with
+
+[31:18] options and spreads. It's it's easy to misunderstand the amount of leverage that you're taking and the amount of actual positions that can be put on with the buying power you have available. So
+
+[31:29] I I definitely caution people to start small and to start slow and build up as they grow their confidence in their trading plan and in how their automation tool is implementing it for them. Kyle,
+
+[31:42] what are good sources to learn more about trade automation? So I would I pro I would probably personally would uh love to point people at you know our website and we have a discord community
+
+[31:56] of users that is is pretty active and talk about all things trading zero DTE automation obviously people um are great at helping one another with questions uh with our software in particular and also
+
+[32:11] with uh just trading in general trading strategies. Um there are a number of other groups. Um the tasty trade Facebook group is one of the places I started and u made a lot of contacts.
+
+[32:25] There are other discord groups. Um you know a number of trading communities out there and I've found that it you know trading sometimes can be a lonely business particularly in in real life.
+
+[32:39] Not a lot of people, you know, that you come in contact with, you know, during your day-to-day life are trading the way that we are and are interested or understand, you know, frankly, what will
+
+[32:50] you puts and calls and options and zero DTE and, you know, that don't understand what we're doing there. So, I've definitely found it's a very positive thing to have, you know, a community of
+
+[33:02] people. You have been creating options for quite some time. would you have a couple of good books to recommend about options trading? the the one I definitely would point out uh is called
+
+[33:13] Trading uh Trading in the Zone by I believe it's it's Mark Douglas and it's very much about the kind of the mindset of trading dealing with the psychology of winning days, losing days and um I I
+
+[33:29] think it paired nicely with you know the automation and the ability uh to be more disciplined in your trading that the software uh provides. And if you want to dig deeper into trade automation, we
+
+[33:42] also have an interview with Scott Clark from another company offering this type of tool, Trade Stewart. The link will pop up on the on on the screen. And uh please take uh take the time to
+
+[33:54] subscribe to our channel if you like like this video. Kyle, thank you very much for sharing your knowledge about automating your ser trading. Of course, Sean, thanks for your time. I enjoyed
+
+[34:06] it.

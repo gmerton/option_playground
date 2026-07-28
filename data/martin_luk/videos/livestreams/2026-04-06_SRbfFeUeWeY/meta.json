@@ -1,0 +1,19 @@
+{
+  "video_id": "SRbfFeUeWeY",
+  "url": "https://www.youtube.com/watch?v=SRbfFeUeWeY",
+  "title": "Cryptos quietly setting up | 6 Apr 2026",
+  "channel": "martinlukkt",
+  "channel_id": "UCB6jWJJvO_sWZ2PwgmMcxCw",
+  "stream_date": "2026-04-06",
+  "duration": "1:50:04",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

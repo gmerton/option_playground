@@ -1,0 +1,19 @@
+{
+  "video_id": "P5RgXh0bfuU",
+  "url": "https://www.youtube.com/watch?v=P5RgXh0bfuU",
+  "title": "This trader scalps SPX options in seconds",
+  "channel": "Theta Profits",
+  "channel_id": "UCzGARfberQ8nRRbsjK90BHg",
+  "stream_date": "2026-03-08",
+  "duration": "1:07:23",
+  "summary": "Eddie Lee (New Brunswick, Canada) pitches discretionary intraday scalping of directional SPX calls/puts: buy ATM (~0.54 delta), analyze on 5-min and execute on a 30-sec chart using EMA 8/21, VWAP, volume-by-price, and Fibonacci, then hold seconds-to-minutes to extract 50 cents-$2 per contract off one-to-three momentum candles, exiting by hotkey with no firm stop. The edge is un-specifiable reaction speed and screen-reading feel, not a rule, so nothing is mechanically reproducible or falsifiable. Claimed returns (100-200%/month in 2020-21, a one-month self-entered Tradezella journal of 77.94% win / PF 1.36 / +$19,211, '2,000% since 2018') are self-reported, blended across strategies, from a vanished regime, or arithmetically inflated (the $19,211 he calls '300%' is ~192%), with no separable brokerage track record and a paid-course sale motive. More honest than the channel norm about difficulty (rates it 10/10 for beginners, 3-5 years to consistency), but fundamentally untestable on our EOD data and untestable in principle. Write-up: strategies/spx_scalping.md (conviction 1.5/5).",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

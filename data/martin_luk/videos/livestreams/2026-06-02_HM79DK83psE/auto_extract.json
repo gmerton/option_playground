@@ -1,0 +1,153 @@
+{
+  "video_id": "HM79DK83psE",
+  "date": "2026-06-02",
+  "title": "Sizing up | 2 Jun 2026",
+  "observed_trades": [
+    {
+      "date": "2026-06-02",
+      "ticker": "UMAC",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Quantum/drone-type name; only able to get half size; used a limit order because it's not very liquid and the spread is too wide",
+      "entry_basis": "limit order",
+      "stop": "",
+      "source": "2026-06-02_HM79DK83psE@41:54",
+      "confidence": "stated",
+      "fill_timing": "today",
+      "notes": "Ticker confirmed: he explicitly says 'UMAC' at 44:40; captions 'you Mac' / 'you back' / 'new Mac' decode to UMAC. Got only half size; regretted not adding the second half (hindsight)"
+    },
+    {
+      "date": "2026-06-02",
+      "ticker": "RGTI",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Quantum name; tried to enter but kept getting stopped out a few times; wanted a clean breakout / 5-min pullback rather than chasing the extension",
+      "entry_basis": "wanted 5-minute pullback (~2630)",
+      "stop": "",
+      "source": "2026-06-02_HM79DK83psE@60:02",
+      "confidence": "stated",
+      "fill_timing": "today",
+      "notes": "'our GTI' / 'RGI' = RGTI (quantum name, contrasted with INFQ). Stopped out a few times, disappointed (113:01). ~2630 pullback level stated at 17:17"
+    },
+    {
+      "date": "2026-06-02",
+      "ticker": "HOOD",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Got stopped out; thinks he should have been a bit more patient but it's fine",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-06-02_HM79DK83psE@60:44",
+      "confidence": "inferred",
+      "fill_timing": "today",
+      "notes": "Caption 'food' phonetically decodes to HOOD ('Hood'); interpreted guess (single garbled word, no spelling/label) — see ambiguous_tickers entry"
+    }
+  ],
+  "principles": [
+    {
+      "category": "mindset",
+      "text": "When he starts feeling bearish he's usually too early; don't predict, just react — keep buying longs while the market shows strength until it actually shows weakness or stops you out.",
+      "timestamp": "05:01"
+    },
+    {
+      "category": "entries",
+      "text": "Don't chase: wait for a tight 5-minute pullback to enter rather than buying the extension up high, which would have gotten the '2022 me' stopped out.",
+      "timestamp": "16:59"
+    },
+    {
+      "category": "entries",
+      "text": "Only put actionable names (the ones you'd actually enter) in your main watch list; keep the real extended leaders in a separate 'leading names' list to keep the main list focused.",
+      "timestamp": "49:43"
+    },
+    {
+      "category": "risk",
+      "text": "Size up slowly, not immediately. After the early-2025 lesson, when the account grows from e.g. 10K to 20K he keeps risking near the original 1% dollar amount (e.g. ~150 instead of 200), only stepping up gradually (110 at 13K, 120 at 15K).",
+      "timestamp": "91:51"
+    },
+    {
+      "category": "risk",
+      "text": "The best buys come at the very beginning of a move; entries get progressively lower-quality afterward, so sizing up immediately right when pullback odds rise leads to more stop-outs.",
+      "timestamp": "93:24"
+    },
+    {
+      "category": "risk",
+      "text": "Sizing up slowly on the way up is a precaution that makes it easier to size down on the way down; his biggest past mistake was raising risk on the way up and failing to size down on the way down.",
+      "timestamp": "105:50"
+    },
+    {
+      "category": "exits",
+      "text": "While the market keeps grinding higher, it's good to sell some into strength and not get so excited you forget the downside risk.",
+      "timestamp": "113:51"
+    },
+    {
+      "category": "entries",
+      "text": "For names that like to gap above the 9/21 EMA after a pullback and turn higher, you must get in fast when it turns up; a tight risk is available on the gap-up day.",
+      "timestamp": "85:10"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "05:44",
+      "caption_text": "RGTI and INFQ is looking pretty decent too and GFS is actually closing above the 9 EMA",
+      "context": "Quantum names plus GFS; INFQ described later as 'much stronger than RGTI', strongest/most liquid quantum",
+      "guess": "INFQ",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "21:40",
+      "caption_text": "INFQ is much stronger than our GTI",
+      "context": "Quantum sector name, stronger and more liquid than RGTI; a focus/tracking name",
+      "guess": "IONQ",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "21:04",
+      "caption_text": "Scyther is breaking out into the all-time highs, clearing the previous swing high",
+      "context": "Breaking out to all-time highs, clearing prior swing high and the current base swing high",
+      "guess": "CIFR",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "41:54",
+      "caption_text": "notice you Mac. I only get in with half size",
+      "context": "Illiquid, wide-spread name he bought today with half size using a limit order; later 'UMAC' and 'new Mac'",
+      "guess": "UMAC",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "56:43",
+      "caption_text": "MXL is um we're getting a gap up today",
+      "context": "Got stopped out of it earlier; wants a 60-min dip into 9 EMA then a bounce/gap-up to re-enter; keeps closing below 9-day MA",
+      "guess": "MXL",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "55:54",
+      "caption_text": "Intel, it is pulling back into the angle V on the daily",
+      "context": "Pulling back into anchored VWAP on daily and weekly; wants a quick powerful bounce",
+      "guess": "INTC",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "60:44",
+      "caption_text": "also got stop from food",
+      "context": "Got stopped out; should have been more patient. Single garbled caption word 'food' phonetically decodes to HOOD/'Hood' (Robinhood); used as observed trade ticker",
+      "guess": "HOOD",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "98:30",
+      "caption_text": "Oh, Chlo is freaking out today. Yeah. Looks pretty good",
+      "context": "A name running hard today, looks good",
+      "guess": "CHLO",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "85:10",
+      "caption_text": "AXTI was today a good pullback entry point today",
+      "context": "Names (AXTI, 'AI') that gap above the 9/21 after a pullback and turn higher; good tight-risk pullback entry today",
+      "guess": "AXTI",
+      "confidence": "unsure"
+    }
+  ]
+}

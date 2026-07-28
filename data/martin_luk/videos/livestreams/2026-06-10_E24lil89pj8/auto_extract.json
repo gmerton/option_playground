@@ -1,0 +1,205 @@
+{
+  "video_id": "E24lil89pj8",
+  "date": "2026-06-10",
+  "title": "Too volatile | 10 Jun 2026",
+  "observed_trades": [
+    {
+      "date": "2026-06-10",
+      "ticker": "OKLO",
+      "direction": "short",
+      "action": "hold",
+      "setup": "Still shorting Oklo (and Marvell); hasn't taken profits on these two; wants to see further downside",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-06-10_E24lil89pj8@04:05",
+      "confidence": "stated",
+      "notes": "'Oak Low' / 'ocl' = OKLO (interpreted from garbled caption; quantum/nuclear short context). At 71:55 he confirms 'I still hold a ocl and more full shorts'.",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-06-10",
+      "ticker": "MRVL",
+      "direction": "short",
+      "action": "hold",
+      "setup": "Still short Marvell; no profits taken yet on the two remaining shorts",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-06-10_E24lil89pj8@04:49",
+      "confidence": "stated",
+      "notes": "Clarifies he had been mis-saying the ticker for months; MRVL = Marvell",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-06-10",
+      "ticker": "SQQQ",
+      "direction": "long",
+      "action": "exit",
+      "setup": "Bought SQQQ (inverse/bearish bet) as the Qs rallied into declining EMAs with the 50 crossing below the 150 and many names below the 9 EMA; covered at the low of the day as a day trade",
+      "entry_basis": "rally into declining EMAs, names below 9 EMA",
+      "stop": "",
+      "source": "2026-06-10_E24lil89pj8@11:55",
+      "confidence": "stated",
+      "notes": "Placed yesterday and covered same day at the lows; worked well",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2026-06-10",
+      "ticker": "SOXL",
+      "direction": "short",
+      "action": "exit",
+      "setup": "Shorted SOXL on a similar candle as the SQQQ trade; chose to short the leveraged long ETF (SOXL) rather than long the inverse (SOXS) to avoid leverage-decay disadvantage on a potential swing hold; covered intraday near the lows",
+      "entry_basis": "rally into declining EMAs",
+      "stop": "",
+      "source": "2026-06-10_E24lil89pj8@62:51",
+      "confidence": "stated",
+      "notes": "Placed yesterday alongside SQQQ; covered intraday; not planned as intraday but market fell fast",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2026-06-10",
+      "ticker": "QBTS",
+      "direction": "short",
+      "action": "exit",
+      "setup": "Took a QBTS short; covered at the 50 EMA",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-06-10_E24lil89pj8@12:17",
+      "confidence": "stated",
+      "notes": "He spells 'Q B T S'; covered at 50 EMA. Grouped with yesterday's short trades.",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2026-06-10",
+      "ticker": "IONQ",
+      "direction": "long",
+      "action": "exit",
+      "setup": "Sold his long up there discretionarily before it fell back into his stop",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-06-10_E24lil89pj8@34:27",
+      "confidence": "stated",
+      "notes": "Caption 'OWENQ' interpreted as IONQ (garbled; quantum-name context); sold discretionarily rather than waiting for stop. Entry timing unspecified.",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-06-10",
+      "ticker": "ARM",
+      "direction": "short",
+      "action": "entry",
+      "setup": "Only short he took before last Friday's distribution day; shorted ARM on the gap-up day June 1",
+      "entry_basis": "gap up day",
+      "stop": "",
+      "source": "2026-06-10_E24lil89pj8@56:53",
+      "confidence": "stated",
+      "notes": "Discussed within ~20 losing-trades / past-trades review; he plainly says ARM and dates the entry to June 1.",
+      "fill_timing": "2026-06-01"
+    }
+  ],
+  "principles": [
+    {
+      "category": "exits",
+      "text": "He rarely manages stops (rarely trails or raises to breakeven); the hard stop is a protective/precautionary measure for sudden gaps or black swans, while actual selling is discretionary, taking names off before they reach the stop.",
+      "timestamp": "33:51"
+    },
+    {
+      "category": "posture",
+      "text": "After a crazy rally and a change-of-character distribution candle, either sit out doing nothing or look for the short side; don't keep buying.",
+      "timestamp": "59:46"
+    },
+    {
+      "category": "posture",
+      "text": "Bullish medium-term but patient short-term: wait for volatility to tighten and the indices to digest selling (e.g. reclaim the 60-min 9 EMA) before opening new longs.",
+      "timestamp": "28:30"
+    },
+    {
+      "category": "mindset",
+      "text": "Study weekends focusing heavily on past trades, especially the losses; a cluster of ~20 losing trades late in a move was an early warning that justified sizing down before the market broke.",
+      "timestamp": "51:24"
+    },
+    {
+      "category": "exits",
+      "text": "Reflect on exits even for winners; selling ARM fully then failing to hold/re-buy cost a 100% move — exits are the weakest part of his game.",
+      "timestamp": "52:35"
+    },
+    {
+      "category": "risk",
+      "text": "Shorting is much harder than going long and is best only when the general market is clearly weak (e.g. Qs below 50 EMA); shorting a leader rallying into declining EMAs while the index is still in an uptrend is low-probability.",
+      "timestamp": "47:11"
+    },
+    {
+      "category": "exits",
+      "text": "Cover shorts into weakness; expect a strong bounce after a big down day, especially in volatile leveraged ETFs, so cover near the lows rather than risk being shaken out.",
+      "timestamp": "72:09"
+    },
+    {
+      "category": "macro",
+      "text": "Relative strength of IWM / individual stocks vs the indices during a pullback (e.g. names holding the weekly EMAs) is a green flag for the market's medium-term health.",
+      "timestamp": "15:08"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "04:05",
+      "caption_text": "I'm still shorting uh Oak Low and Marvell",
+      "context": "Two shorts he is still holding; wants further downside",
+      "guess": "OKLO",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "06:22",
+      "caption_text": "Armis is losing its uh the 50-day",
+      "context": "Cited as a leader breaking down / potential short when general market weakens (watchlist mention, not a trade)",
+      "guess": "ARM",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "06:34",
+      "caption_text": "like yeah there's the AOI maybe another one for the short side",
+      "context": "Potential short candidate when general market gets weaker; later 'AEOI' weekly looks decent, and 'A O I short' discussed (rally into 9/21 EMA)",
+      "guess": "AAOI",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "09:08",
+      "caption_text": "Cradle is another one that is showing huge relative strength",
+      "context": "Showing huge relative strength; also 'cradle is also super strong today'",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "09:34",
+      "caption_text": "Galaxy Galaxy just um super relative strength",
+      "context": "Cited as super relative strength name",
+      "guess": "GLXY",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "09:51",
+      "caption_text": "this CBRS is the neutral one. I think it can go either way",
+      "context": "Neutral setup, can go either way",
+      "guess": "CBRL",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "34:27",
+      "caption_text": "I just sold my OWENQ up there",
+      "context": "A long he sold discretionarily up there rather than waiting for the stop; quantum-name context",
+      "guess": "IONQ",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "38:33",
+      "caption_text": "Reddy looking pretty decent. Both daily and weekly",
+      "context": "Software name showing relative strength, decent on daily and weekly",
+      "guess": "RDDT",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "76:15",
+      "caption_text": "A firm finding support at and go through web from 30th of March",
+      "context": "Software name finding support (anchored VWAP) overlapping 150/50/weekly EMAs; not the strongest in software, not a short candidate",
+      "guess": "AFRM",
+      "confidence": "likely"
+    }
+  ]
+}

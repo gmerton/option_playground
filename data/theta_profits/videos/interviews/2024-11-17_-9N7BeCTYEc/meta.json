@@ -1,0 +1,19 @@
+{
+  "video_id": "-9N7BeCTYEc",
+  "url": "https://www.youtube.com/watch?v=-9N7BeCTYEc",
+  "title": "How to Profit from Covered Strangle - with Lance Kaminsky",
+  "channel": "Theta Profits",
+  "channel_id": "UCzGARfberQ8nRRbsjK90BHg",
+  "stream_date": "2024-11-17",
+  "duration": "23:29",
+  "summary": "Lance Kaminsky (Texas chemistry teacher, thetatraders.com mentor) pitches the covered strangle: long 100 shares of a low-vol blue-chip/dividend name (SCHD, Ford) + a ~0.10-0.20 delta 1-month covered call + a cash-secured put, held to expiration with no intraday management, rolled monthly to lower cost basis; on put assignment you double to 200 shares and sell covered calls only above basis. Honestly described textbook structure with unusually candid risk disclosure (he rates volatile-underlying versions 7-8/10 and names the drawdown failure mode himself), but the hidden risk is the naked put stacking ~2x downside on the long stock while the call caps the rebound. The opening '75% return, never assigned all year' headline is a bait-and-switch - it belongs to a separate leveraged /MES futures naked-double-put strategy on ~2% of account in an admitted bull market, not the covered strangle, for which he gives no win rate or track record. Monthly hold-to-expiry cadence makes it one of the more EOD-testable strategies on the channel (though the futures variant is not - no futures options in our table). Write-up: strategies/covered_strangle_kaminsky.md (conviction 2/5).",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

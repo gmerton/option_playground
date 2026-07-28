@@ -1,0 +1,207 @@
+{
+  "video_id": "HbBRhvwW6tM",
+  "date": "2026-05-08",
+  "title": "Not euphoric enough | 8 May 2026",
+  "observed_trades": [
+    {
+      "date": "2026-05-08",
+      "ticker": "MSTR",
+      "direction": "long",
+      "action": "exit",
+      "setup": "Sold on a rejection at Bitcoin's weekly 21 EMA; preferred a faster push to the upside and it was grinding near prior lower highs",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-05-08_HbBRhvwW6tM@15:32",
+      "confidence": "stated",
+      "notes": "'I sold it yesterday with circle'",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2026-05-08",
+      "ticker": "CRCL",
+      "direction": "long",
+      "action": "exit",
+      "setup": "Sold yesterday with MSTR on the crypto weakness",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-05-08_HbBRhvwW6tM@15:32",
+      "confidence": "stated",
+      "notes": "Caption 'circle' = Circle (CRCL); has earnings Monday; sold yesterday",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2026-05-08",
+      "ticker": "AOI",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Took it off yesterday because of earnings after hours and not enough profit cushion; got stopped out today",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-05-08_HbBRhvwW6tM@80:03",
+      "confidence": "stated",
+      "notes": "Caption 'AOI'/'AOY'; took it off yesterday on earnings risk, then 'stopped out from both AOI and four wave' today at 80:03. Ticker is an uncertain caption decode",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-05-08",
+      "ticker": "TSLA",
+      "direction": "long",
+      "action": "hold",
+      "setup": "~4.5-year weekly base / huge VCP making higher lows; daily breaking out from a potential first higher low with EMAs converging; says he nailed the planned entry",
+      "entry_basis": "pullback into rising daily EMAs after the weekly green candle; would sell some into strength at the 470 unfilled gap",
+      "stop": "",
+      "source": "2026-05-08_HbBRhvwW6tM@55:01",
+      "confidence": "stated",
+      "notes": "Says he planned and executed the Tesla entry perfectly; position is slightly above 30, maybe 35% (above his usual 25-30%). Plan was laid out in the prior Tuesday (05-05) stream",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-05-08",
+      "ticker": "MRVL",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Breaking out from a long base, only week one of the uptrend; holding a larger position is high-EV; would trim above 120",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-05-08_HbBRhvwW6tM@95:27",
+      "confidence": "inferred",
+      "notes": "Caption 'Marvel' = Marvell (MRVL); uses it as his example of a week-one uptrend held larger; entry detailed in the 05-05 stream (bought Thursday)",
+      "fill_timing": "last week"
+    },
+    {
+      "date": "2026-05-08",
+      "ticker": "QQQ",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Holding index exposure; may raise the stop a bit (below the day's low)",
+      "entry_basis": "",
+      "stop": "below this day's low",
+      "source": "2026-05-08_HbBRhvwW6tM@92:20",
+      "confidence": "stated",
+      "notes": "Says he would raise his stop on QQQ",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-05-08",
+      "ticker": "?",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Stopped out alongside AOI today",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-05-08_HbBRhvwW6tM@80:03",
+      "confidence": "stated",
+      "notes": "Caption 'four wave' = unidentified ticker; he says he was stopped out of it with AOI",
+      "fill_timing": ""
+    }
+  ],
+  "principles": [
+    {
+      "category": "macro",
+      "text": "Do not get bearish too early and do not short too early; an uptrend like this is more likely to end in a euphoric climax run than a quiet roll-over.",
+      "timestamp": "49:18"
+    },
+    {
+      "category": "exits",
+      "text": "Trim less in the early stage of an uptrend; trust the trend and hold larger positions while the longs keep pushing away from your stop, then sell more into strength only after a 60%+ move.",
+      "timestamp": "94:15"
+    },
+    {
+      "category": "entries",
+      "text": "Best entries come when daily and weekly EMAs converge tightly together - a compression that precedes expansion (the start of a trend).",
+      "timestamp": "77:14"
+    },
+    {
+      "category": "exits",
+      "text": "Sell some into strength at unfilled gaps and prior-high resistance (e.g. Tesla's 470 gap); trail the rest, tightening the trail timeframe (15/30/60-min 9 EMA) if worried about market extension.",
+      "timestamp": "82:42"
+    },
+    {
+      "category": "mindset",
+      "text": "Stay away from social media / news feeds during the week to avoid FOMO; review tweets only on weekends to check whether you already lined up with the right names.",
+      "timestamp": "80:47"
+    },
+    {
+      "category": "exits",
+      "text": "There is no single right place to sell; choose a stop/back-stop rule (prior-day low, unfilled gap, 9 EMA) before the trade based on your turnover style, then review whether the rule itself can be improved.",
+      "timestamp": "114:21"
+    },
+    {
+      "category": "risk",
+      "text": "Coming out of a losing streak, trade smaller (0.2-0.3% risk), take only the very best/tight entries, and rebuild confidence until two-to-three positions are working and the broad market participates.",
+      "timestamp": "106:54"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "09:07",
+      "caption_text": "some like AOI yesterday went down for almost 15%",
+      "context": "Gapped down ~15% on earnings, took it off for lack of cushion; up 10% today; stopped out again",
+      "guess": "AOI",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "12:00",
+      "caption_text": "I am OD. I know there's a gap up, this is gapping up for more than 50%",
+      "context": "Gapping up more than 50%, decided not to enter",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "15:32",
+      "caption_text": "I sold it yesterday with circle",
+      "context": "Sold MSTR and 'circle' together on crypto weakness; circle has earnings Monday",
+      "guess": "CRCL",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "43:18",
+      "caption_text": "The local levels um just pushed out from this previous swing highs",
+      "context": "Pushing out of prior swing highs, attacking all-time highs",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "60:13",
+      "caption_text": "Quantum score finding support at the 9 EMA so far",
+      "context": "Quantum name finding support at the 9 EMA",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "65:55",
+      "caption_text": "Or MPS forming tight range above 9 EMA",
+      "context": "Tight range above the 9 EMA; later 'RPS is a little bit choppy'; above anchored VWAP and all EMAs forming a tiny flag",
+      "guess": "RAMP",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "80:03",
+      "caption_text": "I got stopped out from both AOI and four wave",
+      "context": "Stopped out of two positions today",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "111:05",
+      "caption_text": "you get stopped out like I did on maybe AOY or Colby",
+      "context": "New trades from late April that got stopped out; 'Colby' = unidentified ticker",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "113:14",
+      "caption_text": "You bought SNTK on 1st of May",
+      "context": "Answering a viewer; 'SNTK' = Sandisk (SNDK), the memory name he repeatedly cites with MU",
+      "guess": "SNDK",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "37:02",
+      "caption_text": "AMD and Rocket Lab are pushing up. Pushing up after the open. Doing really well",
+      "context": "Names he narrates as pushing up after the open; no statement of ownership (not confirmed as his positions)",
+      "guess": "AMD / RKLB",
+      "confidence": "unsure"
+    }
+  ]
+}

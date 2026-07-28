@@ -1,0 +1,515 @@
+[00:00] So, my goal is to take a zero DTE trade on the S&P to make the trade completely risk-f free as quickly as possible. I can just close the laptop and walk away knowing that no matter what, uh, the
+
+[00:10] trade is going to be a winner. Once it's levitating and we're locked in, I I give it a zero or a minus zero. I mean, there's no way you can lose with them. My guest today has one goal with his
+
+[00:21] zero DT trades to maneuver himself into a position where he no longer has any chance of losing at the end of the day. He calls his strategy levitation trades. Here is Dan Westbrook, also called
+
+[00:38] Boomer Dan. Hello. Hi, John. Hi. Thanks for letting me on here. This is great. I'm very fascinated by what we are going to get through here now. And let's just
+
+[00:49] start with an image. This is your positions at the end of one day and where the viewer will see that in this situation whatever happens at the end of the day you will be in profit and this
+
+[01:03] is where you aim to be at at the end of the day. So give us your 42nd version of the levitation trades and how you work your way towards this end picture. The whole goal behind this trade is to
+
+[01:19] create a zero DTE trade. It could be used with other option expiration lengths as well, like one day out, week, month, whatever. But I'm using the zero DTE trade. So my goal is to take a zero
+
+[01:30] DTE trade on the S&P and maneuver it, manage it in such a way to get to make the trade completely risk-free as quickly as possible. I'm really curious how you how you do that because this
+
+[01:43] must be a dream situation to be in at the end at the end of the day. Yeah, once you once you get it in, it is a dream. However, it's important to realize that you don't start off you
+
+[01:53] start off with some risk. For years, I've looked for trades. Ever since I learned how to read the risk graph, I've spent hours and hours trying to construct structures, trades where I
+
+[02:03] could start the trade off above the zero line on the risk graph. That's that's kind of my holy grail. And I was I found it with one trade, but it requires a little bit more capital. But with these
+
+[02:14] trades and everything else I've found, there is going to be some initial risk at the beginning, but the goal is to eliminate that risk as quickly as possible and get the whole thing
+
+[02:21] floating up above the zero line on the risk graph. And we are going to dig into how you do this and your road towards this uh end picture. But first, tell us a little bit
+
+[02:33] about yourself and your history with options trading. I was a a film editor, film and video editor for years like during the 90s and into the 2000s. And I worked I I cut like trailers,
+
+[02:47] promotional materials for the studios in LA, like Warner Brothers, New Line Cinema, Sony. And right about that time, I somehow I got a hold of a Robert Kiasaki book where in the middle of the
+
+[02:58] book just all like out of the blue, he mentioned this weird trade that uh would pay him upfront to to make the trade and then if if if the trade went against him, he could own a stock at a discount.
+
+[03:12] And that just totally got my curiosity going. So, I I kind of dove into what options were. And once I once I figured out and and learned from a couple of different teachers, uh I was actually
+
+[03:24] really pretty upset. Well, not not really upset, but I was angry kind of because no one had told me about this like this magical way of trading the market with options, selling covered
+
+[03:34] calls. That just blew my mind. And then I just kind of dove in from there. And I used to uh it took about traffic in LA is horrible. So, it would take me like two hours to get to work every day. just
+
+[03:43] like a like it was 30 miles away but just because of the traffic. So I turned my little beat up Honda into a like a university an options university on wheels. I would I would uh on the drive
+
+[03:53] I would be listening to well like the old one was uh uh Option Edetics was one of the first ones. Dan Sheridan I would just have that thing running all like during those drives and I just learned
+
+[04:05] how to trade. I began to trade and then from then I probably phased out of uh doing editing because of the options trading around 2010 2011 I think and then I've just continued to go from
+
+[04:19] there. I have a I have a trading school a free trading school we you can join a discord and just creating option strategies like the one I want to show you here that are just kind of unique
+
+[04:30] and different and that's about all I got. Let me start with two questions. Why the name le levitation trades and what do you try to achieve with this strategy? The path
+
+[04:44] that got me here was I just got tired of getting slapped around with my iron condors and credit spread trades. Uh I used to trade them. I I was the iron condor king at one time or so I thought.
+
+[04:55] And I would trade like the typical you know sell the 10 delta uh create the iron condor and you know try to manage it if it moved against you. But I just got I just got whipsawed and slapped and
+
+[05:05] and crushed so many times that I was always looking for another solution. I moved into trading at the money credit spreads and that kind of changed the whole outlook for me the whole game
+
+[05:18] because if you trade at the money you have way more credit to work with. uh you can put on trades that have a one to one riskreward ratio where with the iron condors and the credit spreads I was
+
+[05:27] doing before where you know you would risk nine to make one and you have so much credit in that at the money credit spread that you have plenty of funds available to manage it if it if it moves
+
+[05:39] against you. So that's what got me to creating these trades and that just took the next step from trading at the money credit spreads into trying to figure out how to turn those things flip them up
+
+[05:48] above the zero line on the risk graph so there's no risk at all for the rest of the day and then I can just play with them. I can continue to build off of them or I can just you know close the
+
+[05:57] laptop and walk away knowing that no matter what uh the trade is going to be a winner and potentially a big winner depending on how the different structures I have on that particular
+
+[06:05] trade. So ex essentially when the rest of us are worried about the big move and how that will hit our stop losses, you are basically hoping for the big move to
+
+[06:17] really bring you into the big profit zone and not worried about your losses at the end of the day. Yeah, that's that's true. Depending on how it's structured, but yeah, I try to
+
+[06:25] structure those things so they have outer wings or outer outer mountains on the on the risk graph. So, no matter what, if it lands in the in the the zone where it's currently trading at, I'll
+
+[06:35] make a nice zero DTE daily return. But if there is a big move, which there was just a couple weeks ago with the the Trump whatever that was with the China and the Trump thing, I had a trade that
+
+[06:45] paid off really well because of uh just the ability that no matter what that thing is floating, but we have these wings that are building out and flaring up on either side.
+
+[06:52] Dan, this sounds too good to be true. So, I think it is time we actually go into a specific example, maybe a specific day, and uh see how you did it. All right, so let me pull up my
+
+[07:07] Thinkorswim. Thinker Swimim has this great feature on it called on demand where you can go back in time uh and trade trade uh any any trade you you can come up with and you can see it graphed
+
+[07:20] out on the risk graph. So, I'm going to back go back in time. Now, this morning I went and I found a date in October. It's about a week ago, I think, this particular day. And it just kind of
+
+[07:30] showcases the all the different things that can happen during a day and why I love this trade so much. So, this is actually a the basic concept of this trade is something that I learned from a
+
+[07:42] mentor back around 2010, like a grizzled old market maker guy. And it's a super simple concept and setup. And there's different ways to do it. So, I'm just going to go through a couple of the
+
+[07:53] simple examples to show how I'm getting these things above the zero line and then I'll dive into like an actual trade on the date. So, I'm going back to October 15th. You can see it up here.
+
+[08:04] I'm going to change the time on it to 6:45. That's when I got a signal on my chart that that triggered me into this. And you are now on Pacific time. So, this is 15 minutes after the market has
+
+[08:18] opened, correct? Yeah. So yeah, we're on Pacific Coast time, so we have to get up early, three hours earlier than everybody else. So let me just go through a couple of
+
+[08:27] quick examples how this thing how I flip or get these things to levitate above the zero line. So here's the risk graph. You can see the price of the S&P is down here and the profit and loss is here.
+
+[08:38] That pink line is the zero line. So that's like the break even. So let me go over to add simulated trades. I'll go to October 15th. And then I'll come down here. And this
+
+[08:50] is just a this isn't the exact trade that I'm going to show you, but these are just some simple ideas to help you understand how I get these things to float. So here I come to I got a signal
+
+[09:00] on my chart. I have a caveman chart that I use. I got a signal at 643. So at 645, I'm going to come in. Now, I would never trade this way, but this was some people do, and this would give you a concept of
+
+[09:11] how these things how you get these things how you get these trades to float. So, I'm going to say I'm going to buy an at the money call, zero DTE call. And let me change the date on this so
+
+[09:23] you can see it. So, there's the risk graph of the call. Mhm. We have a risk right now with this with this particular setup. Again, I would
+
+[09:32] never trade a naked call like this, but this will help illustrate it. So, there's $1,570 of risk in this call. 1570. Now I'm going to move forward in time by 20
+
+[09:43] minutes. Okay, so here we go. So here we are. It's moved forward by 15 minutes and well this says there's uh there's a profit. If you look at the pink line, the pink line is the current P&L and the
+
+[09:54] blue line is the end of day. So the pink line where we're at right now shows a profit of $1,13. So, I would what I want to do now is I'm going to do the little flip maneuver.
+
+[10:06] And all it is is just selling the other side of this spread. I'm turning this call into a debit spread. So, I'll go to the option chain. I'm uh I originally bought the 6695, which is
+
+[10:22] this one. So, now I'm going to sell the strike above it, [clears throat] which creates a debit spread basically. But as you can see, because that first leg got in a profit, this position is
+
+[10:35] floating above the zero line. So now this thing is locked in. No matter what, we're going to make $640 on this trade, even if it crashes all the way to zero. And we can make up to 1,140.
+
+[10:47] So that's like a simple uh just the the the simple maneuver to get these things above the zero line. Okay. Dan, you said that this is not how you would actually trade. So what would
+
+[10:59] be your typical start trade? So the trade that I just showed you was just a basic demonstration like the simplest I could think of to show you how to get that thing to raise. Now the
+
+[11:08] way that I put these on is I I start with an at the money credit spread. I sell an at the money credit spread and this is on the S&P. It's important to to know that you need to these trades won't
+
+[11:20] necessarily work on anything other than cash settled indexes or you could but you have to get out of them at the end of the day. the easiest ways to use cash settled indexes so you don't have to
+
+[11:29] worry about assignment and you know having to make sure your trades are off at the end of the day. You can let these just go into the night. So I would start off with an at the money credit spread.
+
+[11:39] So I'll just do that here. This is the at the money and because I'm bullish I'm going to sell an at the money put credit spread. So I'll say analyze sell trade. I'll say vertical. And you can see it
+
+[11:51] populate down there. So here's the trade. This is I know you a fivepoint difference between the between the short and the long.
+
+[12:00] Yeah. And that's not important. You could do if you're a seasoned trader, you could do as wide as you want. I just stick with five because it it works. It's fine. So, it's at the money. And
+
+[12:09] the pricing on this is 255, which is usually what you'll get. Sometimes you'll you have to kind of fudge and go up a little bit or outside the 10 a little bit to make that work. I want to
+
+[12:18] try to get 250 or better. So, it's a 1:1 riskreward ratio. And typically you can get that. So I'm going to lock that price in at 255. And so on the risk graph you can see
+
+[12:29] that we're risking our our total worst case scenario risk at this point is $245 of loss. Up here we can make up to 255. So that's basically a one to one. So then I'm going to go ahead and go
+
+[12:41] forward by 20 minutes like we did with the first one. And you can see we've moved into the tent. This trade is up 130 140ish bucks. And so what I'm going to do now is I'm
+
+[12:54] just going to complete the other side of this. I'm going to turn this into a butterfly. And it doesn't have to be a butterfly. Like I said, the guy who taught me this, he would do iron condors
+
+[13:03] this way. He would do condor trades, uh, spreads, bunch of different ways to do it. But for this example, I'm going to do I'm going to sell the other side of this structure. I'm going to turn
+
+[13:13] this into a butterfly. So, I'm gonna So, I'm going to buy a debit spread with the short at the exact same spot there, which is 66.95. So, let me go to the option chain and we'll say uh
+
+[13:28] I'm going say buy debit spread. And I need to adjust these strikes because I want to make sure that that short is at the same short of the of the original one.
+
+[13:41] Mhm. So, there is the other side. I just because we were on the first trade, we're into profit now. And you can gauge it. You could set these up as automatic
+
+[13:50] orders if you wanted to just to figure out how much how much of a return do you want. Usually, I go for like a 10 to 20% return, which would be about a 25 cent difference between the prices of these
+
+[14:01] two spreads down here. So, I could set an automatic order to trigger this other one if I want. In this case, I just let it run. And once I see that I can make a profit here, I'm
+
+[14:11] gonna buy this debit spread and it turns it into a floating butterfly. And now this butterfly uh will always make money. And this happens because you
+
+[14:22] were already moved the put credit spread into the profit. So you use this profit, you lock in some profit. Is that correctly understood? Yes, that's exactly correct.
+
+[14:33] So here we have no matter what, if it goes all the way to zero, we'll make 125 bucks. So worst case scenario, even if it flies up all the way to the moon or if it crashes all the way to
+
+[14:43] zero, we're guaranteed to make 125 bucks on this. And we have this tent here where if it throughout the day, if it keeps moving back and forth throughout this, this pink line will start to raise
+
+[14:54] like a like a rainbow. And you could get additional profits out of this area. or at the end of day if you're lucky enough and it and it lands right at the tip or anywhere along these these slopes here
+
+[15:07] you can make all the way up to like 600 bucks 590 bucks but then for for this to work like you're showing now there was a pre prerequisite that is that your put
+
+[15:18] credit spread turned into profitable right and um life is not like always like that [laughter] right right [gasps] so yeah so uh If you're I
+
+[15:30] sometimes I'll trade these like this. I'll put them on and I'll be on the trigger. I'm really just because I've traded for so long. I'm really nimble with using Think or Swim and I can throw
+
+[15:39] a hedge on quickly if it if it doesn't go my way. But the but the saf safer way to do it is to at the trade initiation, let's go back to the same time when we put this trade on, which was uh 6:45.
+
+[15:54] Okay, there's the starting position. The safest way to start this position off in my opinion is to hedge it. And there's various ways to hedge it. The the simplest, most common way that I do it
+
+[16:05] is to just simply buy uh a same expiration, a zero DTE put option. So, let's go over to the option chain. This is the same date, October 15th. And I'll just go down just from having done this
+
+[16:18] a lot. I just look for the the the put option that's around a dollar, which is this right here, one buck. So, I'm going to throw that in there. We'll go back to the risk profile. So, that's what the
+
+[16:30] risk profile looks like with that on. So, I'm going to lock that price in. So, you can see that uh we're nicely hedged. If this thing moves my way, I'm good. And again, remember that I'm only
+
+[16:43] looking for 10 to 20%. So, we've re we have reduced the profit the total profit potential in the tent, but I'm not looking for that in with this trade necessarily. But on the other side, you
+
+[16:53] can see I have this great hedge where if it moves against me, uh just follow the pink line. You can see the numbers down here. Like in the middle here, the worst case scenario right now is $10 of loss
+
+[17:05] if it moves. And by end of day, if it's down here, we're going to lose 345. But we're not going to let it go that go that long. We're going to get out of the trade. If this thing moves against me,
+
+[17:16] if it moves hard, I can get into additional profit, potentially even more profit than I would with the original trade. Uh, if it moves my way, like I said, I can make my I can turn this into
+
+[17:27] my butterfly. If it just sits then here, this thing, this this zero line will start to sag throughout the day. But uh I found that I can get like an half an hour to maybe up to two hours where this
+
+[17:41] thing will it may start to sag, but it won't sag significantly enough where it's a real problem. Uh it may like maybe after an hour this could be down to 50 bucks or uh maybe maybe 100. Uh
+
+[17:54] and the other thing to think about too is that if if the if the S&P moves down a lot of time volatility will pop into this this call I mean this put option and it will actually bump up. they will
+
+[18:04] pop it up. So, go ahead. But when when will you close if it goes uh if it goes that way because as you said the the pink line will start
+
+[18:15] sagging or falling down. So what what will you actually do if that happens? That will be that's trader choice basically like you you you pick where you where you cry uncle at.
+
+[18:26] Have you ever heard that? Do they say that in Norway? Uncle no like uncle means like where I want to like too much pain I want to get out. So for me it would be 50 bucks to 100 bucks
+
+[18:37] and then you will close it. Yeah. If it sits in here and sags I will I'll just close the whole trade out and I'll reset or wait for another opportunity or maybe just be done.
+
+[18:47] Now if it moves I mean I'll give it some time. If it moves here and I haven't reached that $50 to $100 uh loss level on this pink line, a lot of times it'll keep moving down and once it gets down
+
+[18:59] in here uh you know you can get into profit. You can get into like a a really nice amount of profit if the thing tanks on you. But the main the main thing with this trade is to watch this sag. At
+
+[19:10] least the way that this is being traded. Now, another way you can hedge this is by using MEES futures like a like I think with one I think it's a one to one uh with one credit spread. One MEES
+
+[19:23] futures will give a similar type of a hedge but what's nice about the MEES futures is that it's you're not going to get you're not going to get hurt with the bid ass spread that you may with
+
+[19:32] this. I mean, it's not going to be bad with this with this put, maybe 10 cents of a spread, but with the MEES futures, it's immediate and there's no Vega issue and there's no theta decay in that MEES,
+
+[19:44] so it'll last longer. It's more robust. So, that's just another way that you could you could hedge it off. Okay. So, let's um maybe move a bit further out in the day then and see what
+
+[19:56] what you will do then. Right. So, we put this trade on. We got this hedge on. we're safe if there's a immediate move against me. And if there is, if it turns out that I'm wrong with
+
+[20:06] my direction, I can either just get out of the trade immediately or I can wait to see if maybe it'll move back in the tent or maybe it'll go down. I have about an hour or two usually of time
+
+[20:16] before this pink line starts to sink too much. So, let's just do what we did before and go 20 minutes forward in time. So, let me just hit those. Now we're 20 minutes into the day or now
+
+[20:29] we're 20 minutes into where we where we just were. And we can see we've moved into the tent the same amount as we did before. And what I want to do now is I just want to put do the same thing I did
+
+[20:39] before, but keep this hedge on. And I'm just going to uh buy that debit spread with the short at the peak just like I did before. So it's already down here. You can see
+
+[20:50] it. I'm going to go ahead and just click that on. Mhm. Make sure the price is right. So there is the the current position. So with
+
+[20:59] this position, we have a locked in profit no matter what. We have there's $25 worth of profit uh regardless of what happens all the way down and all the way up, which is about 10% of the
+
+[21:09] 250 risk that we started with. Now, at this point, I can either sell out that hedge and get rid of it because I don't really need it anymore, or I can hold on to it. And I'll show you examples of
+
+[21:20] both uh both ways. I'll I'll leave it on for right now. Leave just I'll leave that hedge on. If we were to take that hedge off right now, sell it out,
+
+[21:31] just flatten it out, you can see that we have a $100 now of guaranteed risk. All I mean, of guaranteed profit all the way from here to zero and all the way from up plus the butterfly. So depending on
+
+[21:42] the chart setup and how I how I feel about what's going on with the market, I can immediately put on another one of these. So let's just look at that real quick. Ideally, the ideal scenario would
+
+[21:53] just to be able to put one on right at the exact same strike of that long and just create a wall of butterflies. Uh, if it continues to move up. For right now, I'm just going to put one on.
+
+[22:05] So, I'll just come down back to the option chain. I forget what strike that was, but we can adjust it. So, I'll say analyze sell trade vertical.
+
+[22:19] And you don't have to necessarily stack them right next to each other. You can do you can just do whatever you want. We didn't have to turn this into a butterfly if we want. We could have
+
+[22:24] turned this into a wider tent, a wider condor. In this case, I'm going to put another butterfly on right at the 6700. So, I'm going to I'm going to buy the 6700.
+
+[22:37] I'm going to sell the 6705. So, that's the initial credit spread like we did here before we lo [clears throat] before we closed it. And if we still had
+
+[22:49] our our initial hedge on, you can see that the hedge protects that beautifully. So, I'm going to go ahead. I'm just going to lock this uh trade in. It's
+
+[22:59] this credit is not great. It's 155. And like I said before, I want to get 250 or better. So, I'm going to adjust this. I'm going to sell a credit spread a little further up. I want to try to get
+
+[23:09] 250 on these. Okay, there's 250. And if you're really on the ball, I mean, as soon as you lock this one off, you can open up the next one. And it is possible to get these
+
+[23:20] things right next to each other, just like a stack them up like a wall of butterflies. So there is the opening position for the second one. Let me move forward in time by 15 minutes.
+
+[23:33] Um, this is going to be 225. So there's the second one. And basically what I would do, I would just continue to do that as long as I believe the market is still moving up. I
+
+[23:48] would just continue to stack these up as preferably right next to each other because at some point when we have a stack of these, each time we add one of these, we're going to
+
+[23:59] we're going to increase the total profit on the bottom line there. So, you know, if we the first one, maybe we had 100 guaranteed profit. When I put the second one on, we could have 200. If
+
+[24:09] I put the third one, we could have 300. So, we're raising the entire structure with however many butterflies we can get on there. And how long into the day will you keep
+
+[24:18] adding positions? I'll I'll keep adding all the way to the end of the day. As long as it makes sense. I mean, I'm not going to sell I'm not going to be
+
+[24:26] able to sell like outer outer legs, which I do sometimes like an outer credit spread or a put spread. But if they're at the money, uh, typically I'll just continue to to do it or until I
+
+[24:36] just want to just call it a day and let it sit there for the, you know, for the rest of the rema the remainder of the day. So now I have two butterflies on. I have a guaranteed profit of this says 50
+
+[24:46] bucks all the way to zero. If it lands in here at the end of the day, I make I make 50 bucks. All the way from here all the way up, I make 50 bucks. So, it's a guaranteed profit. And I have these two
+
+[24:56] like lottery ticket tents that I can make up to 500 in each. Now, at this point, I could decide to remove the hedge, the initial hedge that I put on. And if I remove that, it would give me a
+
+[25:09] position like this where now I have a guaranteed profit of 130 because I sold out that hedge. 130 all the way to zero. Same in here. 130 and 130 all the way up. So that's that's like trader choice.
+
+[25:23] Do you want to do you want to hold on to this hedge if you think a down move could be possible or you just want to get rid of it and cash that in? No matter what, you're safe. You're you
+
+[25:31] have a you have a guaranteed profit trade regardless. Mhm. But let me show you the because I know what's going to happen on this
+
+[25:38] particular day. Let's just say we left that hedge on and then let me move forward a couple say an hour. What time have you done on? So, this is
+
+[25:51] going to skip forward to 8:35, halfway into the market, into the trading. So, here's the move down. This is where we're at now. So, we've we were up in
+
+[26:02] here. Now, we've come down here. We could cash this position out at 161 bucks because of that hedge. And let me move forward to there was a down move going on here. So, let me move
+
+[26:15] forward to where that down move ended just so you can see the idea of why you may want to keep this hedge on. Here it is. It's 10:45. We had a drop in the market and with that hedge there, you
+
+[26:31] can see that we're at uh about a 100 bucks. Better than if we had about the same if we had no hedge. But what's really important about this time frame and this screen is if we had no if the
+
+[26:46] market moved against us immediately, this put option would be helping us uh significantly. It would it would not only keep us from losing the full 250 amount, the $250 amount that we started
+
+[26:56] with, it would be bringing the entire position up into profit. So that's just a quick snapshot of and actually I think the pink line would be higher. You can see the pink line's kind of funky
+
+[27:07] looking here just because of the the way that Thinkers looks at its data in the back. But you can see that if there's a crash, the pink line, this that single put option that we put on at the
+
+[27:17] beginning of the trade can turn into significant profits. Now, how I would proceed from this point to start to build these out again, as as long as the market's moving up, I can continue to
+
+[27:27] put these butterflies on like I just showed you as long as it makes sense, as long as the market's moving up. If the market starts to move down like it did, I can do the exact same thing on the
+
+[27:36] downside. I would just sell a call credit spread. And then once that got into profit, I would create another butterfly and another butterfly. I could have a wall of butterflies over the zone
+
+[27:45] where I think S&P is going to be trading for the day. And I think there's a screenshot that I sent you that shows a similar position like that. There's like six or seven butterflies that are all
+
+[27:54] lined up. Now, what's cool about this trade is that once we reach a certain area on the chart, these wings on these butterflies will become very cheap. And so, like, if we come down here where we
+
+[28:07] are, I would have orders then to buy just this side back for like five cents or just this one back for 5 cents. And so, let me show you what that would look like. Let me make sure I'm doing the
+
+[28:19] right one. So, I'm going to set an order to buy just this side of the butterfly back, that debit spread. So, I'm going to buy the 6720. I'm going to sell the 6725.
+
+[28:35] So, once we reach that level, which you can see the the mark shows it, it's 490. So, it's basically lost all the value there. I can I can get the full value of that just that one side of the butterfly
+
+[28:45] that was there. So now I have this huge cliff on this side that just automatically gets bought back. Let me lock that one. Let me see if I can do the same thing with this
+
+[28:56] one. I'll see if I can buy that side back. So that's almost at full value if I were to get it. So now we've we've released those outer wings or we've ripped those outer wings off of those
+
+[29:09] butterflies because they're so cheap. I mean, there's no more profit we can get out of them because we're trading down here. And it creates a structure like this.
+
+[29:18] Mhm. Where we're still risk-f free. And if it moves back, uh, we can make up to 520 here and we can make up to a,000 here. So, basically what the trade is
+
+[29:30] doing, I'm just I'm just rinsing and repeating that same process there just over and over again. How many butterflies like this will you end up with in a day? I'll end up with
+
+[29:42] as many as I want. So, at the end of the day, I'll wind up with as many butterflies as I can cram in there or if I just want to, you know, call it a day at some point. Usually, I'll try to if
+
+[29:52] it's easy to put them on and I can get the pricing that I want, I'll try to try to cover like a good like a like a ATR range, like an average daily range in the S&P, like say like
+
+[30:02] right now it's about 50. So, if I can cover an area of butterflies that are like in a 50 point range, that would be great. Uh, if I'm bored, I'll just keep adding them if I'm able
+
+[30:15] to. Um, and then what we can also do is like in say in this case, we move down here and I bought those wings back of the butterfly. If I wanted to, I could sell another credit spread here now and
+
+[30:29] get like a great credit for it, probably full credit, and just make this cliff bigger. And then I just start to build off of each of those. So I wind up with a position similar to the one you showed
+
+[30:41] at the beginning where we're floating, we're levitating nicely above the zero line. And throughout the day, I'll I'll continue to work these if I have the time and I just sit there and do it uh
+
+[30:53] to just continue continually raise this blue line, the the zero line up higher and higher and higher. Get as much guaranteed profit as I can, but I'll wind up with a lot of potent potentially
+
+[31:04] a lot of these these spikes, these butterflies or these condors. I could do the same thing with a condor at this point where here I could sell a condor really cheaply because we're already
+
+[31:14] halfway through the day and more. that's going to be really cheap and it'll just create a higher higher mountains with these peaks off of them. So, ideally at the end of the day, I'll have this
+
+[31:22] floating structure that's guaranteed to make some amount of money and [clears throat] a bunch of uh profit mountains where if I get lucky, I can cash in really big.
+
+[31:33] All this sounds fine, but it depends on you being right on the direction. What happens if you're initially wrong on the direction and it just moves against you? What happens to this hedge that you have
+
+[31:45] put up? Right? So, let me just illustrate it. The quickest way to do that is let's just let's clear all these trades out of here. Let's go back to the exact same
+
+[31:54] starting point that we put those trades on, which was 6:45 California time. So, we're going to go back to California time. And so, the easiest way to to show you what happens
+
+[32:05] is just to do the initial reverse trade. So to get into this one I just showed you we put on a bullish credit spread, a put credit spread and it went our way beautifully. So let's go back to the
+
+[32:16] same time frame and I'll put on the exact opposite. I'll put on a bearish credit spread and we'll see it move against us and what how that what happens in that situation. So we're back
+
+[32:26] at 6:45 in the morning. Let's go to let's go to the call side now and I'm going to sell an at the money call spread. like this. So, this is just like the
+
+[32:41] initial position. Let's just say that I was wrong and I put this trade on at the same time. So, I have a credit of 280, which is nice. That's what I want. And now I want to put my hedge on.
+
+[32:53] So, I'll do the same thing. I'd go down the option chain on the call side and I would look for the call with a value of around a dollar. This one's 10510. So, I'll put that on.
+
+[33:05] I'll zoom in. So, this is just the exact opposite of trade that we looked at. This is a bearish credit spread with a hedge to the upside.
+
+[33:18] And then I'll just do the same thing we did before. I'll lock those prices in. Here's the opening position. And I'll [clears throat] move forward by 20 minutes.
+
+[33:27] So, the market's going to move against us in this scenario. There we go. So, so the market has moved about 20 points against us and right now we're at a profit of 13
+
+[33:38] bucks. Let's just call it break even. You can see the little bit of sag happening in there, but we've moved up through that. Let's go another 10 minutes and see
+
+[33:49] well how this hedge will affect this hedge. Okay, now we're up to we we moved further away. Uh we're having a profit of 4750. Um, so we could just get out of it. I mean, at
+
+[34:03] this point, I would have gotten out of this because I clearly I was wrong. But what's important to realize is that if we didn't have that hedge on, let's just remove the hedge and see where we would
+
+[34:12] be. We'd be down like 140 bucks here. And I I've been in trades like this that are like naked credit spreads and the S&P can move so quickly that it's very difficult to try to hedge it. I'd rather
+
+[34:24] get into a trade that's hedged like this. Then I have all this room where I can I'm not under stress. I can wait it out. So, that's what happens if uh that's the
+
+[34:33] scenario if we're wrong. And like I said to be like I said at the beginning, I try to I come up with a a time f not a time frame, a profit. If I if I'm down about 50 to 100 bucks on a one contract
+
+[34:43] trade, that's when I'll try to get out or I may even get out quicker. The the the quicker I can get out with the least amount of loss, if I think I'm wrong, the better. You have showed us one way
+
+[34:53] to get into these trades with starting with a with a credit spread and and transferring it into a butterfly, but you told me that there are also a number of other ways you can get into these
+
+[35:05] these type of trades. Uh can you just can you just mention some of them? Sure. The initial one I showed where I bought that call, that's one of I wouldn't necessarily do on the on the
+
+[35:13] SPX, but you could do it on the XSX XSP or the SPY on a on a smaller vehicle where it's not such a big amount of money on the line if you're really confident in a direction. Another thing
+
+[35:26] you can do is to is to buy or sell out of the money credit spreads or debit spreads that are on the fringes of that daily expected move where maybe you'll you'll pay 10 bucks for an out- of-the-
+
+[35:38] money call debit spread and maybe 10 bucks for the out- of- the money put debit spread or as least as you can get the small amount of money it takes to to buy those and then when it moves either
+
+[35:49] way you can quickly lock those in. Um, that's another that's another way to do it. Even if you have a butterfly on or a an iron condor structure, at some point when that when that trade the condor or
+
+[36:03] the butterfly gets into profit and you have enough profit, you can just shrink that trade, you can just pull the wings in and bring the whole thing up above the zero line or to close to a break
+
+[36:15] even or above it. That's a trade with the with butterflies. I trade also trade a lot of like at the money butterflies that I scalp throughout the day. And once those get into profit, say it's a a
+
+[36:27] 20 point wide SPX butterfly, once it's in profit, you can start to to roll those legs in on either side and it raises the whole structure up and then you can just work off of that.
+
+[36:38] So quite a few different ways. One thing that strikes me is that this is not a set it and forget type of trading. At least not until you get into this floating zone where you where where you
+
+[36:51] are in a no risk picture. It takes a lot of management during the day, doesn't it? Well, I guess that depends on what what you would think is a lot of management.
+
+[37:01] you the basic trade is to put the initial credit spread on and then just put the other side on the debit spread once it get once it gets in the profit. And typically if I were just to do that
+
+[37:11] trade uh if I'm correct on the on the morning move, you know, I could be done with this in 15 minutes as long as it takes for the the price of the S&P to get into the butterfly to lock it in.
+
+[37:22] And if I want to continue to trade throughout the rest of the day, it's just doing that same thing over and over. But each trade by itself could be, you know, a 10-minute trade. It just
+
+[37:33] depends on how quickly it gets into the tent. So, what is the worst that can happen with this way of trading? So, let's look at the risk uh the risk
+
+[37:42] graph on Thinker Swim again real quick. So, the worst thing that can happen on this trade is that when we put the initial position on the credit spread and the hedge, which you can put on
+
+[37:53] super quickly within, you know, 20 seconds of each other or less, the worst thing that can happen is that the SPX just sits there and does nothing. If it's inside the tent, that's it's not
+
+[38:04] so bad. But if it just meanders around in here for an hour or two, that's the that's the worst thing that can happen with this trade because again, this pink line will
+
+[38:16] start to sag and it will continue to sag throughout the day. But if you're if you're tightly hedged like this, and you can adjust these the hedge to however you want. I just used a dollar 10, but
+
+[38:27] if I wanted a tighter hedge, I could move this hedge like like this. You can get a really super tight hedge if you want or you can get a really loose hedge like [clears throat]
+
+[38:38] you know just go out a couple strikes. It's up to you. But the worst thing is that if it just meanders around here, but it's not like it's not it's not life or death. It's at that point it becomes
+
+[38:48] your decision on when you want to get out. If you set the hedge up correctly, if it moves against you, you you may have a loss of 10 bucks, 20, maybe up to 50
+
+[38:57] bucks. But if it sits there and meanders uh and does nothing, doesn't move this way where you could get into a lot of profit or into the tent where you can make your profit or make your lock off
+
+[39:06] your butterfly. If it just sits here, then you have to make the decision on when you're going to cry uncle and get out of the trade. [clears throat]
+
+[39:15] So, it's not like this pink line isn't going to instantly collapse to the max profit. It's going to gradually start to sag lower and lower and you have plenty of time to get out. It's not stressful.
+
+[39:28] You just need to figure out what that point is. And if you don't do it and you just let it go, then you know eventually it's that's your fault. This thing could wind up at the bottom by the end of the
+
+[39:37] day. So just that's the main thing. Just watch that pink line if it's in this area and get out if it doesn't move one way or the other once it hits your profit stop or your loss stop.
+
+[39:48] Then I always ask my guests to put their strategy or way of trading on a risk profile scale where one is very low risk and 10 is very high risk and you are free to define these numbers as you see
+
+[40:05] fit. Where would you put your levitation trade? Once it's levitating and we're locked in, I I give it a zero or a minus zero. I mean, there's no way you can lose with
+
+[40:14] them as long as you're using a cash settled index. Like, don't use uh like a stock or an underlying that can be put to you at the end of the day or signed. Make sure it's a cash settled index
+
+[40:25] unless you're able unless you're willing to get out of the trade before the end of the day. You don't want to get assigned the stock. But if it's a cash settled index like
+
+[40:31] the S&P, uh if we're floating above that zero line, uh there's it's a zero risk. Now, at the initiation, if we're hedging it like this, we have a hedge on, I would give this I would say like a one
+
+[40:46] or a two, and it's because it's you're really uh it's up to you when you want to get out. I mean, if it moves against you quickly, you're not going to be hurting. You're probably getting a
+
+[40:56] profit quickly. If it sits here and just meanders and does nothing, you know, that's that could cause problems. So, it's really up to the trader, I think, as long as you're using this this this
+
+[41:06] hedge here. I'm sure many now are curious. What are your results from trading like this? Yeah. So, this trade is just one of many trades that I trade every day. I have I
+
+[41:19] have a bunch of different strategies going on. And the other thing with this trade, the the the the setup that I just showed you is the initial setup trade for a bigger trade. And not only a
+
+[41:30] bigger trade, but I start to combine the other positions that I have on that are not related to the levitation trade. I start to manage them all at a on a portfolio basis, like altogether. So,
+
+[41:40] it's difficult for me to say exactly what the the numbers are for this trade. But if I had to give you my guess, my best guess for this particular setup, I would say that I'm I'm able to get into
+
+[41:53] these floating positions probably like seven or eight times out of 10. uh and that that includes the management that I just showed you, but also uh I have a lot of experience with trading
+
+[42:04] this. So, a newbie may not have the the nimleness or the ability to to tweak the trade in order to get into a floating position like I do. But even with this setup alone, I think if you just if you
+
+[42:16] look at this risk graph and you know how options work and how the risk graph works, you can see that there's minimum amount of risk on this and it's super manageable. It's just a matter of you
+
+[42:25] deciding when to cry uncle and say I've had enough. I I don't want to take any more of a loss and get out of it. But but it is a strategy or way of trading that requires a lot of
+
+[42:38] discretion and uh traders judgments throughout the day. It's not a 100% mechanical strategy. Yeah, I would say that's true until until you get into the locked in
+
+[42:50] position. this first part of the trade when you first get in and you just have to make the decision in your head when am I if it moves against me where do I what is the maximum amount of loss I'm
+
+[43:01] willing to take for me on a one contract it's like 50 to 100 bucks so I just get out of the trade at that point so during the opening the opening move here when you're trying to get into that floating
+
+[43:12] structure it is some it there is discretion you have to have you have to be right on direction or somewhat right and And if you're wrong, you're not going to get
+
+[43:22] slammed. You can get out for a break even or a slight loss if you're really quick. So it's uh so it's it's somewhat discretionary in that way.
+
+[43:32] So let's sum up what we have been through. Who is this strategy best suited for? Yeah, I think the strategy is probably for an intermediate options trader who
+
+[43:42] understands credit spreads and butterflies. uh as long as they understand the mechanics and how to put on a credit spread and they understand that they need some sort of a hedge if
+
+[43:54] they want to hedge it and they're somewhat nimble with being with uh actually making the trades on their platform. I mean, it's not going to be like a fire alarm. You have time with
+
+[44:04] this. It's not super stressful, but you should have the ability to uh be comfortable opening and closing trades. So, I'd say an inter intermediate options trader. What would be the two or
+
+[44:15] three most important takeaways you want people to remember from this interview? I think the the most important couple things to remember is to if you're trading credit spreads or iron condors,
+
+[44:28] take a look at trading at the money credit spreads and iron condors. Even without the hedge, you're able to put these trades on with so much credit that you have plenty of money to work with to
+
+[44:40] get out of a situation to manage your way out of it. where if you're using using the typical like uh 10 delta ones, 10 delta trades or contracts where they're way out of the money, you're
+
+[44:50] just bringing in so little money that you really don't have enough profit from that intake of money to manage the trade correctly. The other thing is these hedges, this is so stupidly simple and
+
+[45:03] basic and there's, like I said before, there's various ways you can use MEES futures if you're not comfortable with this. You could use longerterm debit spreads going the opposite way to give
+
+[45:13] the same sort of effect. And with this trade in particular, just always, if you use this hedge, always be sure to keep your eye on that pink line, that sag. If it stays in this area,
+
+[45:25] you can you can set you can set automatic orders to complete the the floating trade. That will automatically trigger if it goes your way. If it crashes against you, you're going to
+
+[45:35] have s you could have significant profits up here. And if it does do that, don't let it just sit there thinking you could get more. If you have a significant down move and you get a big
+
+[45:44] burst of profits, get out of that trade at that point and capture those profits. I think that's one of my main my main takeaways. Just watch this area. This is the problem area if it just S&P sits
+
+[45:54] here and hovers for any period of time. Dan, what would be good resources to learn more about this way of trading? I have a free ebook on this trade that just goes step by step how I put these
+
+[46:06] trade on just like how we went through and as well as various ways to hedge it and when I how I use the MEES and the spreads. So, you can just go to that. My website's boomerdan.com
+
+[46:17] and you'll see the link there for it. Also, check out my my YouTube channel every day. I I I trade some sort of configuration of this strategy every day. And there may be additional
+
+[46:27] structures built off of it, but they always start off with a basic entry point trade like this. And sometimes you'll see like I'll put trades in there at the end of the day, like the last 10
+
+[46:36] minutes. We can watch them come in and like go into expiration, see how they profited. So, I'll just check out my website there. Would you have a couple of good uh books
+
+[46:45] on options trading to recommend? I wish there were more good books on options trading and selling. And maybe there are, I'm not aware of them. One of my favorite newbie books for someone
+
+[46:55] getting just started with options trading would be from my friend Lee Lel. It's uh Get Rich with Options. That's a good one. A lot of the books that I found helpful with trading options are
+
+[47:06] not necessarily trading books in themselves, but more books about mindset mindset probabilities. There's a really great book called Thinking in Bets by a poker player and a lot of traders signal
+
+[47:20] that book as something that's that really helped them a lot and kind of move the needle. It's just about ways to think when you don't have all the information sort of like what we're
+
+[47:28] doing like looking at probabilities and it can be used with this type of trading as well. Dan, thank you very much for sharing this fascinating way of trading zero DTE and we have a lot of other
+
+[47:43] interviews on this channel including with Lee Lovel that you just mentioned. Thank you very much Dan for sharing your strategy. Thank you. Nice to meet you, John.

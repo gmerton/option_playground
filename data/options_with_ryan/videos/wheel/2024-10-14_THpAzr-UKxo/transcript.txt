@@ -1,0 +1,237 @@
+[00:00] so you want to retire trading options well that's great because I've been able to do it and I'm going to show you exactly how you can retire off of just 200k in your options trading account
+
+[00:12] without having to have millions of dollars without having to uh take on exorbitant amounts of risk and then also without having to day trade the markets every single day being glued to your
+
+[00:24] computer screen I'm going to show you in this video exactly how to trade the wheel option strategy or the wheel strategy and how to do this less than two hours per week to retire and have
+
+[00:36] monthly passive income coming into your trading account now if we go over to my account right here as you can see I'll press the refresh button so you can see this is one of my 600k accounts that I'm
+
+[00:49] going to be sharing my journey turning this into $10 million so you could see utilizing the wheel strategy now as you can see in the past month uh my portfolio has gone up about
+
+[01:01] $41,000 um so almost 7% and this was definitely a better month usually I'm making anywhere from 3 to 5% with my portfolio uh but for the year I'm up over 50% so I'm going to show you
+
+[01:16] exactly how I've been able to do this with taking less risk than buying stocks and then also uh doing it on my favorite stock so now let's go ahead and dive into it but before we do uh make make
+
+[01:29] sure to hit that subscribe button and hit the YouTube notification Bell uh so that you can get daily videos from me showing you exactly what I'm trading how I'm trading and how I'm generating
+
+[01:41] monthly income utilizing calls and puts and selling cash secured puts and covered calls um and also if you have any questions regarding the strategies that we talk about uh in this particular
+
+[01:55] video or any videos you can go ahead and go to my Instagram it's Ryan hildr make sure you see that uh verified blue check mark and you could go ahead and DM me and I'll answer all of your questions so
+
+[02:07] let's go ahead and dive into it um this is not Financial advice this is just me sharing my experience uh with the strategies that I've used to build wealth for myself whatever you do with
+
+[02:18] your money is your responsibility so make sure going forward to make think of that and definitely do your research and watch more of my videos um to make sure that you're understanding the strategies
+
+[02:29] that work talking about now how can you retire off 200k with the wheel strategy now your account size should be somewhere above $115,000 to get started with the wheel
+
+[02:43] if you don't know um exactly what calls and puts are or you're brand new to options you're going to want to watch the video that I'm going to link Down Below in the description that's a full
+
+[02:55] course that I released on my YouTube channel it's a 43 minute video talk talking about what exactly options are and what the strategies um I'm going to be covering in this video are so you
+
+[03:07] have a better understanding of that but if you already know kind of what options are you've dabbled a little bit or you've studied a little bit here on YouTube then great uh you're going to
+
+[03:16] need at least 15,000 because if you get assigned 100 shares meaning you're selling cash secured puts and the stock goes below your strike price so now your now your puts are in the money and they
+
+[03:30] expire there you'll be forced to buy 100 shares of that particular stock and most of the stocks that we cover um in my videos and the stocks that I'm personally invested in are like apple
+
+[03:43] Amazon Google Nvidia Tesla QQQ all of those stocks will require you to have at least $115,000 to purchase 100 Shar so um that's kind of Ideal 25,000 is really the ideal number because you'll be able
+
+[04:00] to um kind of trade in all those particular stocks uh but $200,000 okay times 4% .04 it equals $88,000 per month that's kind of what we're shooting for with a 200k account
+
+[04:14] 4% is kind of the the average the minimum standard that uh we will be required to um return in order to cover our costs right our living expenses now the cool part about this is you know if
+
+[04:29] you listen to traditional Finance gurus you need about you know um $2 million to make roughly the same amount right $2 million so uh it just really shows you the power of compounding if you're able
+
+[04:42] to make a higher active return meaning 4% per month versus 10% per year and that is pretty standard I would say anywhere between 25 and 35% with the wheel strategy doing super safe far out
+
+[04:58] of the money puts and calls uh is definitely doable but I'm going to show you exactly which stocks are generating me these types of returns um 10 to 15% is achievable it's not going to be
+
+[05:10] achievable every single month in a row obviously stocks go up and down uh but I've been able to do it on some of the biggest stocks and the most volatile so the more obviously percentage points you
+
+[05:24] are earning the higher the risk right the more volatile the stock so I'm going to show you kind of a higher risk stock that's making me you know just last month I made over 10% on and then I'm
+
+[05:35] going to show you kind of a safe strategy that you don't have to really worry about the stock going up and down too much uh because that will be an ETF okay um now you must make sure to only
+
+[05:48] perform the wheel strategy on stocks you actually want to own not on stocks you like because you can afford a 100 shares for instance if we go into into um my account right here one of my accounts um
+
+[06:03] we're just going to type in snap so if we search Up snap which is Snapchat okay and we go to the stock you can see that like in the past five years this stock has not done very well the 5-year chart
+
+[06:17] looks like uh just constant downtrend that is not a good stock to perform the wheel on but I've seen many people perform the wheel on Snapchat because it's a lowprice stock meaning you know
+
+[06:32] to buy 100 shares would only be 1,000 bucks because it's a $10 stock that is not the right way to do it so just because you have $1,000 to purchase 100 shares of the
+
+[06:44] stock does not mean that it should be something that you are doing because Snapchat is frankly not a good stock to do the wheel on it just the downtrend I mean for the past 5 years the stock has
+
+[06:59] just been going nothing but down I don't believe in the company so I personally would never sell puts or covered calls or get assigned shares on a stock that I didn't believe in I don't believe in
+
+[07:10] Snapchat um I know social media but it's just not something that I would do okay so you want to make sure to pick stocks that are high quality have high free cash flow and are probably in the top 10
+
+[07:25] maybe top 20 stocks in the entire S&P 500 so that is why I only trade big stocks and as you could see right I have apple here great company I understand the company I have Apple products Apple
+
+[07:42] computer iPhone laptop iPad right Amazon I order on Amazon every single day they're high-f free cash flow stock they're a great company um you know PE ratios are semi low so I understand
+
+[07:57] Amazon Google same thing we're here on YouTube YouTube is owned by Google they do advertising right Nvidia uh all the AI technology chat gbt Facebook Instagram all of these AI
+
+[08:12] Technologies are powered by Nvidia chip so I understand Nvidia and then um paler is kind of a newer one I've added definitely a higher risk play and then QQQ which is the NASDAQ 100 has the top
+
+[08:26] 100 uh technology companies but not just Tech technology companies if you look in QQQ you'll see like Coca-Cola and Boeing and stocks like that that aren't really you know
+
+[08:38] technology in a sense that you would think about it like apple right so you definitely want to choose a good stock to run the wheel strategy on that you'd be comfortable owning the shares if you
+
+[08:52] got assigned not just because you could afford a th000 shares so let's go ahead and jump into the first stock the more High risk play that would generate 4% or above right and it's done this for me in
+
+[09:05] fact last month I was able to make those returns um you know 40 to 60,000 because I was selling puts on a more volatile more risky stock okay so um what I would do is I would check out Invidia okay
+
+[09:24] Nvidia now again this is something that I personally do this is I'm not telling you to do this this is just something that I because I'm experienced and I've traded for 12 plus years this is
+
+[09:37] something that I'm comfortable doing and I understand this particular company NVIDIA okay so if we go over to the charts on Nvidia we could see the fiveyear chart is amazing it's gone
+
+[09:50] nothing but up and to the right that's what we want to see so always zoom out look at the stock and see do I believe in this company do I understand what the company sells and how they make money
+
+[10:03] and do I want to potentially own it so this is a stock that I've been buying since 2020 so way back in the day um and you know been running the wheel on it ever since back in the day I wasn't
+
+[10:17] selling as much puts I was just owning the shares doing some covered calls here and there but now I run the full wheel on it um and it's been very very profitable okay so let's just go to the
+
+[10:27] past year and I'll show you what I mean so let's just say that we start selling puts we started selling puts back here maybe at 100 bucks okay um now let's let's go to the Chart so you can kind of
+
+[10:41] see what the wheel strategy is is basically what we're doing is we're selling puts selling cash secured puts meaning we're fine buying the shares um and you keep selling puts as the stock
+
+[10:53] goes up keep selling puts Higher and Higher and Higher and then eventually that stock is going to come down and I'll show you what I mean on the chart it's going to come down below your
+
+[11:03] strike price at that point okay so you've been collecting all this premium selling puts but now you finally get assigned the shares because the stock Falls below your strike price on the
+
+[11:15] puts so you get assigned the shares now when you get assigned you will immediately start selling covered calls against those shares to collect premium again to collect that monthly income now
+
+[11:28] what's cool about selling covered calls is you can go to a strike price where you believe hey if the stock goes up 8% in 30 days I'm find selling it taking my 8% profit on the stock and then also
+
+[11:42] getting collecting my 4% premium so I made 12% in one month just selling covered calls against my shares so you could see how that works and I'll show you um an exact example on my computer
+
+[11:56] all right so you sell the calls collect premium and then eventually that stock will run up past your calls and then you will be forced to sell your shares at a profit plus you get to collect that
+
+[12:09] premium so your stocks get called away and then you restart the whole thing again you start selling puts collecting premium eventually get assigned then you sell covered calls and then eventually
+
+[12:20] you have to your call your shares get called away and then you profit and you restart so this is why it's called the wheel because you just keep rotating in and out um of that particular stock all
+
+[12:32] right so again let's go back to the example let's just pretend we were selling puts at 100 all right 30 days later um you know the Stock's trading at 110 so we profited we made more premium
+
+[12:46] we sell another round of you know 105 puts the stock goes up again we collected our premium we go and sell the 110 puts the stock goes up all the way to 140 bucks so we col Ed premium on the
+
+[13:00] puts three times and then what happens is the stock comes down now let's just say that last put we sold was at like 125 okay the stock kind of blew through that now it's at 118 we are forced to
+
+[13:17] buy the shares at 125 all right and now we are going to start selling covered calls against our shares um obviously above where we were assigned so we were assigned at 125 so
+
+[13:29] we'll sell the you know maybe 130s 135 calls keep selling those until oh okay Nvidia blasted through our calls at 1 130 now we were forced to sell our shares at a $5 profit obviously we had
+
+[13:44] the shares at 125 now we're selling at 130 um got to collect that call Premium and you do the whole thing over again with the puts so that's basically what I did um in the past few months and I made
+
+[13:55] a lot of money because you know Nvidia kind of traded sideways it kind of did this whole up and down thing which is great this is great for option sellers because the
+
+[14:06] more volatile the stock is the more expensive the options are priced because there's more fear in the market so Nvidia uh owners the stock owners are like hey maybe I hedge my hedge my stock
+
+[14:19] position with and buy some puts well we're selling those puts to those people okay um so that's exactly what I did now how would I play this right now and I'll show you that I currently do have
+
+[14:31] positions on I have the 115 puts right and the 130 calls so we're going to go trade we're going to go to the options chain and we're going to go 30 days out that's to collect monthly income I like
+
+[14:45] to go 30 days out now let's just pretend we want to buy the stock we want to own the stock but we don't want to buy it today we believe it's a little bit higher than we'd like so we're going
+
+[14:56] to start selling puts and start the wheel wheel strategy we're going to go to the November 8th um expiration that's 33 days let's just you know for for example purposes we'll just pretend it's
+
+[15:08] 30 but this is 33 days out okay and what we'll do is we got to collect enough premium to get 4% so maybe we go a little bit higher Delta which again if you don't know what Delta is I went over
+
+[15:23] it in the um the course that I released in the first link in the description okay so watch that video but Delta basically is your um probability of being in the
+
+[15:36] money or probability of profit so if you're selling the 30 Delta puts right like the um right somewhere in between here your probability of profit is uh 70% right so there's a 30%
+
+[15:51] chance that your puts will be in the money by expiration so I will go closer to the money meaning this is where you know Nvidia is trading at 124 so the closer you get to 124 is the closer you
+
+[16:06] get to being at the money now I will go ahead and sell the 120s just for an example because this is a 37 Delta so definitely more aggressive I usually sell 25 Delta to 35 Delta but if you
+
+[16:19] really want to own the stock then this is not this is not a bad thing okay you can just collect more premium and then if uh Nvidia comes down to 120 you're happy own it at that price and you got
+
+[16:30] to collect more premium so I'm going to pull up my calculator right now so let's do the math on this all right so we're selling the 120 strike price put let's just pretend we're getting about $5 I
+
+[16:44] know they the bid is $4.95 the ask is 510 so this is what buyers are willing to buy and this is what sellers are willing to sell it at and somewhere in between is where um they kind of meet
+
+[16:57] right so we're just going to pretend that we're collecting five or $5 or $500 all right cuz remember there's a hundred shares in each one of these contracts so $495 would be
+
+[17:11] $495 and we're just going to sell it for five okay so $500 divided by the capital requirement to purchase 100 shares at uh 120 bucks would be $112,000 right so 12,000
+
+[17:30] equals 4.16% all right if we times this by 100 4.16% so you're making 4% premium on your money okay just from selling the 120 puts on Nvidia all right now again
+
+[17:48] 4% on 200,000 is about $8,000 a month so that's why it's doable trading Nvidia and in fact you can generate even more premium trading Nvidia and I'll show you in just a moment on the call side so
+
+[18:04] okay so I'm going to get rid of the calculator we sold the 120 put for $5 so 500 bucks that's our 4% return let's just say bu expiration Nvidia goes down to 119 okay
+
+[18:22] 119 so we get to collect our 500 bucks but we are getting a signed the shares at $120 all right that's fine that's perfect we got it at a discount and we
+
+[18:34] got paid to dollar cost average right we got paid to buy our favorite stock at a discount 500 bucks now we have 100 shares of Nvidia at 120 so what we have to immediately do is
+
+[18:49] then uh what I would do is go 30 days out again and I would go on the left side which is the call side and I would sell a covered call against my share so what I would do is say hey you know
+
+[19:02] if if we look at the chart and we're like you know I think at 130 that's kind of a good area to sell my stock I'll take the profit if it goes up to 130 in 30 days that's a nice
+
+[19:17] profit right so let's do the math on that all right so the math on that is we have we own the shares at 120 bucks right so 130 minus 120 is 10 divided by
+
+[19:31] 120 is about uh and I'll multiply that by 100 that's about a 8.33% return so we're happy if Nvidia goes all the way up to 130 we got to collect the premium and we made an
+
+[19:47] additional 8% on our shares going up in value right so um let me get rid of this so the 130s if we sold the 130 covered call against our shares we'd collect
+
+[20:02] $535 all right so let's do the math 535 divided by 12,000 because that's what we owned our shares at that's an additional 4.4% return so we're making 12% on our money we're
+
+[20:19] making 4% from the call Premium and then if Nvidia goes all the way up to 130 bucks and our shares get called away we made that additional 8% on top of the 4% so that's how you make insane Returns on
+
+[20:35] a stock like Nvidia which is super Vol volatile and it has done this in the past swinging 10 20 points in the matter of a month so that's exactly how I'm doing it on Nvidia now if you want safer
+
+[20:49] returns okay if you don't want to just rely on one stock to do the wheel strategy then what you're going to want to do is perform the wheel strategy on
+
+[21:02] something like QQQ all right now I don't do the wheel strategy on spy or the S&P 500 because there's more call Premium and put premium in the qqqs because it's a
+
+[21:15] little bit more volatile because it has less stocks right S&P 500 has 500 stocks QQQ has 100 stocks um and I believe in QQQ better I like that basket of stocks better um because it has a little bit
+
+[21:32] more exposure to the top companies like Amazon Netflix Google Apple Tesla Nvidia all right and you can do your research on that um I'm not going to get too much into it but QQQ is my ETF of choice so
+
+[21:47] again uh we could do we could go 30 days out all right on QQQ and again you want to collect enough premium to cover your your expenses so
+
+[21:59] if you want 4% you're going to have to go probably closer to the money on the put side so if you're getting into the wheel and you're starting to sell puts you might have to go a higher Delta like
+
+[22:13] 40 Delta or 42 Delta to collect that 4% premium if you're fine you know with getting assigned at these prices that's that's okay now if you don't want to get assigned at these prices you're going to
+
+[22:27] be forced to sell something down here like a 30 Delta okay and collect maybe 2 and A2 or 3% all right and that's fine but you just have to do whatever uh works with your portfolio size now for
+
+[22:44] QQQ 200,000 might be not enough to retire on I would say if you had 400,000 or double then definitely you can sell the 30 Delta puts 30 Delta calls and retire on about 400k all right so let's
+
+[23:00] go ahead and do the math here let's just pretend we only had 200 but we're fine selling 40 Delta which you're going to probably get ass signed on these shares right that you're more likely to get ass
+
+[23:11] signed because your probability of um being in the money is 60 or 40% right and your probability of profit is 60% so um let's do the math here all right so let's just pretend we're selling the 42
+
+[23:26] Delta put which is very close to the money it's not at the money but very close to the money you believe in QQQ in the stock market and you you want to collect that premium um let's do the
+
+[23:38] math here okay so $1,114 right because we're um collecting 1014 which is $1,114 divided by uh 48,3 would be the cost of capital
+
+[23:53] required to purchase 100 shares right that's 2% all right so it's a little bit lower than I thought 2% on the put side but again you might make more on the call side all right so let's just
+
+[24:09] pretend you you got assigned um you collected your 2% you got assigned you have to buy the shares at 483 okay now we have to immediately sell
+
+[24:20] some calls against it so let's just go to the Chart so we can kind of see where QQQ is all right let's just say hey if QQQ goes up to all-time highs again at 503 in the next 30 days we're cool
+
+[24:34] selling our shares all right so let's do the math on that all right so 503 minus 486 is $17 divided by 486 that would be an additional
+
+[24:52] 3.4% return so let's multiply that by 100 so you can see 3.49 so let's just say 3 and 1/2% plus the 2% you collect on the call side um actually I don't think we calculated the call side let's
+
+[25:07] do that all right so we're going to go 33 days out let's sell the 503 that would be 502 and a half call okay so that's a 34 Delta pretty
+
+[25:23] close but um you know that's that's a good a ways away so 643 bucks 643 divided by our cost of the shares which was
+
+[25:39] 48300 all right is 1.3% so we'd make 1.3% plus an additional 3% on the shares going all the way up there so you'd make about 4% okay so you could make 4% on the covered calls with
+
+[25:56] the QQQ wheel strategy but you definitely have to go a little bit more aggressive so um that's exactly how I would personally do it on QQQ that's why I tend to have like if
+
+[26:10] you look at my portfolio right we have 634k um on QQQ I'm selling about $133,000 worth of puts usually I'm closer to 200k I'm closer to like a
+
+[26:23] third of my portfolio will be in QQQ but for right now because I'm chasing ing more premium um I tend to you know be Diversified into more individual stocks that I believe in I think it's a great
+
+[26:36] time right now because the market isn't at all-time highs it's close but um QQQ is almost there so for me owning individual stocks right now is the play so if you enjoyed this video go ahead
+
+[26:49] hit the Thumbs Up Button I'm going to link another video right here that you could watch on one of my favorite stocks to sell puts on so check that video out and I will see you in the next one take
+
+[27:00] care

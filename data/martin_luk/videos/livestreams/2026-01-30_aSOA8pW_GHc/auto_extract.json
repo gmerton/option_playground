@@ -1,0 +1,120 @@
+{
+  "video_id": "aSOA8pW_GHc",
+  "date": "2026-01-30",
+  "title": "Once in a decade | 30 Jan 2026",
+  "observed_trades": [
+    {
+      "date": "2026-01-30",
+      "ticker": "?",
+      "direction": "long",
+      "action": "exit",
+      "setup": "Bought Tuesday, sold Thursday for a small ~10% gain; round trip that gave back ~2/3 of profits",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-01-30_aSOA8pW_GHc@06:23",
+      "confidence": "stated",
+      "notes": "Caption 'this RR' is a shaky decode; the actual symbol is not clearly established in the transcript",
+      "fill_timing": "tuesday"
+    },
+    {
+      "date": "2026-01-30",
+      "ticker": "LMND",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Traded Lemonade on a gap-up day; thought the close was strong but it reversed and stopped him out two days later",
+      "entry_basis": "gap-up day",
+      "stop": "",
+      "source": "2026-01-30_aSOA8pW_GHc@07:39",
+      "confidence": "stated",
+      "notes": "'Lemonade' = LMND (confident phonetic match)",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-01-30",
+      "ticker": "?",
+      "direction": "short",
+      "action": "hold",
+      "setup": "Shorted gold on opening-range breakout; very extended weekly (~30% above weekly 50 EMA), expecting pullback to at least weekly 21 EMA; high-conviction once-in-a-decade short; retested anchor VWAP / intraday open VWAP for entry",
+      "entry_basis": "opening range breakout; retest of anchor VWAP / intraday open VWAP before flush down",
+      "stop": "very tight; risked >0.5% due to high conviction",
+      "source": "2026-01-30_aSOA8pW_GHc@15:44",
+      "confidence": "stated",
+      "notes": "He refers to 'gold' generically; specific symbol (GLD vs GC futures) not established in transcript",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2026-01-30",
+      "ticker": "?",
+      "direction": "short",
+      "action": "hold",
+      "setup": "Shorted silver on opening-range breakout; ~50% above weekly 50 EMA, parabolic; swinging for a pullback toward the daily 50; high conviction",
+      "entry_basis": "opening range breakout",
+      "stop": "very tight; risked >0.5%",
+      "source": "2026-01-30_aSOA8pW_GHc@15:44",
+      "confidence": "stated",
+      "notes": "He refers to 'silver' generically; specific symbol (SLV vs SI futures) not established in transcript",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2026-01-30",
+      "ticker": "?",
+      "direction": "short",
+      "action": "exit",
+      "setup": "Separate silver short taken Monday; intended to swing to daily 50 but it came back up and he exited at break even",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-01-30_aSOA8pW_GHc@17:10",
+      "confidence": "stated",
+      "notes": "Break-even silver trade, distinct from the held swing short; symbol (SLV vs SI futures) not established",
+      "fill_timing": "monday"
+    },
+    {
+      "date": "2026-01-30",
+      "ticker": "?",
+      "direction": "short",
+      "action": "stopped_out",
+      "setup": "Shorted 'S-N-T-K' once and got stopped out; watching for a re-short below anchor VWAP near a top",
+      "entry_basis": "5-minute breakdown / below anchor VWAP",
+      "stop": "",
+      "source": "2026-01-30_aSOA8pW_GHc@50:20",
+      "confidence": "stated",
+      "notes": "Caption 'S and T K' / 'SNTK' is a shaky decode (possibly SNDK / Sandisk); symbol not clearly established",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-01-30",
+      "ticker": "OKLO",
+      "direction": "short",
+      "action": "entry",
+      "setup": "Oklo short — pullback to clustered declining 9/21 EMAs, weekly 9 crossed below 21, reversal off 50-day on selling volume; smaller sizing because the weekly is stronger than SMR",
+      "entry_basis": "bounce into declining 9/21 EMAs; ~1940 overshoot of the EMA also acceptable",
+      "stop": "tight; kept stop in place (didn't move to forgiving)",
+      "source": "2026-01-30_aSOA8pW_GHc@47:49",
+      "confidence": "stated",
+      "notes": "'Oklo' stated clearly at 47:49; smaller size used",
+      "fill_timing": "today"
+    }
+  ],
+  "principles": [
+    { "category": "macro", "text": "First 13-15 minutes after the open are hard to trade: spreads are wider and most early moves are fakeouts; the real move usually comes 30-60 minutes after the open.", "timestamp": "10:28" },
+    { "category": "risk", "text": "Overtrading drains both financial and mental capital; the gains you miss while recovering confidence after a string of stop-outs also count as a cost of overtrading.", "timestamp": "14:44" },
+    { "category": "posture", "text": "Shift focus to the short side when the general market weakens and breadth deteriorates, but short rebounds into declining EMAs (e.g., declining 9/21) rather than chasing breakdowns.", "timestamp": "23:26" },
+    { "category": "exits", "text": "Cover shorts into weakness/acceleration (gap-down candles) rather than into strength; size up gradually only after building a profit cushion from existing winners.", "timestamp": "62:49" },
+    { "category": "risk", "text": "Only risk more than your normal per-trade amount (>0.5%) when conviction is genuinely exceptional, such as a true once-in-a-decade parabolic setup with a very tight stop.", "timestamp": "54:52" },
+    { "category": "mindset", "text": "Market environment contributes more than half of a trade's success; a great-looking chart pattern is not the major factor — your own recent trade feedback (e.g., 8 of last 10 failing) is a more accurate signal than any indicator that it's time to stop pushing.", "timestamp": "78:01" },
+    { "category": "mindset", "text": "Don't be too emotional about gains or losses; the emotional intensity of both winning and losing diminishes with experience, and a little detachment is optimal.", "timestamp": "86:42" }
+  ],
+  "ambiguous_tickers": [
+    { "timestamp": "06:23", "caption_text": "I only get um this RR. I bought it on the Tuesday and then I sold it", "context": "A trade he round-tripped Tue-Thu for ~10% gain", "guess": "RR", "confidence": "unsure" },
+    { "timestamp": "07:22", "caption_text": "I used the S S S S just got got stopped out", "context": "A name he traded and got stopped out", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "15:44", "caption_text": "I shorted the gold and silver yesterday on the opening range opening range breakouts", "context": "His two high-conviction parabolic short swings; 'gold' could be GLD or GC futures", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "15:44", "caption_text": "I shorted the gold and silver yesterday on the opening range opening range breakouts", "context": "The silver short swing; could be SLV or SI futures", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "20:44", "caption_text": "Upland and this and SMR is my one of the shorts", "context": "Listing short candidates; SMR (NuScale) confirmed, 'Upland' unclear", "guess": "SMR", "confidence": "likely" },
+    { "timestamp": "30:56", "caption_text": "Loom luminous one of the names that really really interest me. I love this base uh cup of handle", "context": "Cup-with-handle base bouncing into anchor VWAP, earnings in 2 days", "guess": "LUMN", "confidence": "unsure" },
+    { "timestamp": "32:31", "caption_text": "this S and T K 5-minute breakouts to the downside", "context": "Short candidate near a top, below anchor VWAP; also the name he was stopped out of", "guess": "SNDK", "confidence": "unsure" },
+    { "timestamp": "41:38", "caption_text": "Can you be first off from here? All this MST out", "context": "Garbled; possibly a short reference", "guess": "MSTR", "confidence": "unsure" },
+    { "timestamp": "45:42", "caption_text": "Go dash is a pretty good one, too, but it's too slow", "context": "A short candidate showing relative weakness but too slow", "guess": "DASH", "confidence": "likely" },
+    { "timestamp": "73:18", "caption_text": "Decipher starting to lose the EMAs and the anchor VWAP. Wolf is pretty Wolf is pretty weak", "context": "Two weak names losing EMAs; 'Decipher' and 'Wolf' unclear", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "59:08", "caption_text": "that's why I prefer SMR more than Apple", "context": "Comparing two nuclear/small-cap shorts; 'Apple' likely Oklo given context", "guess": "OKLO", "confidence": "likely" }
+  ]
+}

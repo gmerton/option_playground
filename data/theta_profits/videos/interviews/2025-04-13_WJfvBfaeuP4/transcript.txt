@@ -1,0 +1,339 @@
+[00:00] I place this kind of trade and I say, "Okay, I switch off my computer and I will look at this tomorrow again." Fine, I know I'm safe. Is it possible to set up a
+
+[00:18] riskfree trade? That's today's topic. My guest is a lawyer and options trader from Munish in Germany. Welcome, Christian Chennich. Hello John for having me. Thanks for joining. So and
+
+[00:35] this is a hot topic these days because we are recording this on April 8 in 2025 and I guess we are officially in the beer market after the tariff related turmoil. So this couldn't be better
+
+[00:48] timing. Right. That's correct. I'm also a member of some Facebook groups I follow and I read about multiple traders who posted they sold all their portfolio simply to avoid further draw downs,
+
+[01:03] further pain and that's not necessary. That's what we will be talking today about. But it is possible to set up a no loss trade at expiration where there is absolutely no risk to the downside.
+
+[01:19] That's correct, John. uh you can set up a spy trade which will show you no loss at expiration. It may have draw downs during the trade but at expiration this trade you see just now on the screen has
+
+[01:33] no loss at expiration. You will have a minimum profit of $48 and a maximum profit of $2548. And that is fixed because it's a butterfly in one expiration and there is
+
+[01:54] no ambiguity at expiration what you will get. That's really fascinating. I'm really curious to learn more about this. I didn't even think it was possible. But
+
+[02:06] first, Christian, tell me a little bit about yourself as a trader and person. Well, I'm 60 years old. I'm married. I have a 23 year old daughter. I'm working in my own law
+
+[02:19] office and I'm working alone. So I also have time to trade and I do since I'd say 2000 I started trading in earnest. I traded stocks, futures, forex
+
+[02:36] and started trading options in 2020. I'm quite risk averse because in my trading career I had experienced three black swan events and they rattled my portfolio and my account quite severely.
+
+[02:56] I don't trade zero DTE. I don't trade naked positions. That means I trade no strangles, no straddles and no naked puts or naked calls. Most of my trades are 21 to 120 days to expiration. It's
+
+[03:14] usually a stock options combo. I like statistics. I like to understand everything I do. I develop my own strategies and trades and I'm trading my own capital. I'm
+
+[03:29] living from trading or supporting my retirement for two years now and it's working quite well. Thank you very much. And before we get into the specific setup of your trades, we need to
+
+[03:46] understand the concept of call put parity. Please explain that to us. What is call put parity and how does it work? My experience as a trader was a zero interest rate environment as we had it
+
+[04:04] from 2008 to approximately 2020. Put call parity for me simply meant call price plus strike is the same as a put strike plus spot price. Very easy. And uh to spot an arbitrage possibility you
+
+[04:23] simply use this formula and normally you noticed there is no arbitrage in options trading. I really can recommend a a video by the options industry council. They have a
+
+[04:37] lot of good videos and the one on put call parity is a little bit technical but it's everything there what you need to know about put call parity. Now in 2023, I noticed the formula did
+
+[04:54] no longer work. On the other hand, it was no arbitrage and I wasn't able to profit from the difference I saw in a put call par that became a lot more noticeable when I went further further
+
+[05:11] out in time for my 7-day or 14-day trades, which I did then. It still worked with the old formula, but going beyond 21 days, it was no longer correct. And I noticed calls were too
+
+[05:28] expensive. I noticed the puts were too cheap. And I did not understand why. It took me most of 2023 to really understand what was happening. I met an older
+
+[05:44] trader in a forum who told me, "Yes, Chris, it's not a blip what you see here. It's it's actually interest rates at work." And he was or he traded a lot of options in the 1990s to
+
+[06:01] 2000. And he traded long boxes and short boxes. And I learned a lot of him simply knowing how interest rates are priced into options on the put side and on the call side. Now I know what we are doing
+
+[06:17] or what I'm doing now is simply exploiting that the moment you you do a debit trade you get paid the fed funds rate and if you do a credit trade nowadays
+
+[06:32] you pay the fed funds rate. If the interest you earn on your debit during the time you hold the trade is enough or higher than the loss zone of your trade you're actually placing, then you have a
+
+[06:47] no risk or no loss trade at hand simply because the interest rate you receive over time lifts your trade out of the loss zone. Should we bring up a slide that explains
+
+[07:01] some of this concept? You may have heard that you can replace any option you have in an options combo by a synthetic equivalent. So a long put is the same as a short stock or short 100 stock and a
+
+[07:21] long call. A long call is the same as 100 shares of stock plus a long put. That's the example you see on the right side. We have a spy long call on the left and on the right we have long 100
+
+[07:39] spy and a long put and the shape you see on the screen is the same. The prices are not the same but the shape is the same. Now you can replace a long put and a long call with a synthetic equivalent.
+
+[07:55] You can also replace a short put or a short call. And you can replace a long stock position by an options or a short stock. That relationship is something I always
+
+[08:13] keep on my desk. That's something you need to take away from this presentation because this will help you a lot if you want to adjust a trade. If you have a complex position and you want to find a
+
+[08:28] way to remove some options, replace it or adjust it, knowing what you can do or how you can use syn synthetic positions instead of a long put or a long call or a short put or a short call can help you
+
+[08:44] a lot and I guess better keep this in writing. At least I struggle to remember this. I have printed it and it's on my desk because I also forget it and just looking at it I
+
+[08:59] know okay that's what I have to do now I said the shape is is the same of our long core of our long core replacement trade but the numbers are not the same simply because the fed
+
+[09:16] funds rate is priced into the options and if If we look at this, the long call cost us $3,12 for the call and that's the max risk this trade has. If we do the same
+
+[09:35] as a synthetic position, we go long stock. So long 100 spy and long put. The spy was trading at 4054. So that's a debit of $50,554. And we have a debit for the
+
+[09:56] long put. And the long put was is priced at $2,244 or 2244. And the debit for the put is then 2,244. So that's a debit of $52,798.
+
+[10:11] [Music] If we look at the trade itself, it says a max loss for the call, we already established that was 3,1. That's what we paid. And if we look
+
+[10:27] at the synthetic position, the max loss is $2,798. So that's $300 less. That's per combo. That's a lot. Let's ask why. Well, you pay
+
+[10:48] $52,798. I told you the fed funds rate is priced into the options and the fed funds rate at this time when I did this slide was 3.9%. The trade is on 54 days and we multiply
+
+[11:07] these numbers. We divide it by 365 and the result is $304. So the $34 difference in loss is simply the interest rate we receive from giving the
+
+[11:25] market a loan of $52,798. So what you can take away from that is that the market pays you interest for going long stock or doing debit
+
+[11:39] trades and you have to pay interest if you do credit trades. So if you do an iron condor or an iron butterfly and you receive a credit
+
+[11:52] then you pay for this 3.9%. That's the fat funds trade right now. Once I realized this, I asked myself, how can I apply this? Are there trades where if I move out a certain amount of
+
+[12:12] time which allow me to receive so much interest on the debit I pay for the trade that the trade itself becomes a no- loss trade. Usually we started with a a spy butterfly. So let's look at our
+
+[12:29] first example. That's a 75day spy trade. It's a 20 wide butterfly or 20 wide call butterfly. I always start with a trade I want to do.
+
+[12:45] So, I start with a call butterfly and then I replace the lower long call with a long put and I add the 100 shares of spy. And the result is the trade you see here. We
+
+[13:05] have a 480 long put. We have two 500 short calls and we have a 520 long call. And no matter where the market will go, you will end up with a small profit. I will
+
+[13:23] always end with a at least a profit of 175. I pay for the shares $50,554 and I hold the trade 75 days. I will receive interest on this trade.
+
+[13:43] This interest is so much that this normal call butterfly is lifted out of the loss zone outside of the lower long put and higher long call sides and it will be a no- loss trade. Of course,
+
+[14:05] $175 for an investment of $50,000 over a period of $75 days is not a lot of return. That's one or 2%. Still in an environment like today, if I see the market crashing and I put on this
+
+[14:25] trade, then my portfolio is safe. There can nothing be happening. And if I earn 1% or 2% because I have not placed my butterfly correctly, so be it. The thing is, you can only go broke if you lose
+
+[14:42] money. You can't go broke if you lose time. Of course, a time is money. I don't expect every trade I do to end outside of the wings. Still, some of my trades will end outside of the wings
+
+[14:59] because I've read the market wrong. It happens. But then I at least receive 1% or 2% on the invested capital instead of having a loss. I'm 60 years old. I don't need huge returns within a day. Of
+
+[15:18] course, I like huge returns within a day. Who wouldn't? But I know I will not have it. I cannot do that every day, every day, every day. It's not possible. I like a consistency and I'm very happy
+
+[15:34] to have a 20% or 25% return per year. That's a perfect return compared to what I can earn in fixed income. That's great. And if I'm right, I can earn a lot more. If I'm wrong, I can tell my
+
+[15:50] wife, we have no risk. So for you this is an important aspect of this is to preserve your capital. Yes. Which is of course of people in our age is very important. Yeah. If the
+
+[16:04] stock market crashes 15 or 20%. And some stocks or individual stocks have crashed 50%. I don't have the time to rebuild that. So my whole retirement plan looks a
+
+[16:21] little bit difficult once my portfolio crashes 50%. Of course they tell you you need to go into T- bills and you need to go into bonds then I earn 3 or 4% maybe 5%. But I'm still a trader. I still want
+
+[16:38] to earn a little bit more than just 4% per year. For me this is the best of both worlds. If I'm wrong, I lose 2% or 3% and I only gain 1% on the invested capital. But if I'm right, I can earn a
+
+[16:56] lot more and I have no risk. Well, it's a butterfly. We will go through other examples using calendars or condors. We all know that we don't close a butterfly at 100%. Sometimes you win the lottery,
+
+[17:10] of course, but most of us don't win the lottery. And the butterfly lottery means you close the butterfly at 50 to 75% and you're happy and you're done at 10 or 15 days prior to
+
+[17:24] expiration. That's the way I trade butterflies or how I have learned to trade butterflies. And then the profit zone becomes a lot wider. Maybe this is a
+
+[17:36] good idea to look at a life example to see how such a butterfly would develop over time. Let's do that. What do we see here? We see here Microsoft trade. The trade idea
+
+[17:50] I'm presenting today is not limited to ETFs. It's limited to anything having an underlying. You can't trade it on indexes because indexes have no shares. But you can trade it on anything having
+
+[18:05] shares with some caveats or exceptions I will go later into. But most regular stock or ETF you can do this trade. We have here Microsoft. Microsoft is trading at
+
+[18:23] 357.86. And I see Microsoft going back to the 400 420 area within the next 120 days. 130 days. This is an August trade. I don't know if Microsoft is paying a dividend within this time. If Microsoft
+
+[18:41] has an X dividend date during that time, we will also receive dividend because we are long stock. So that would be added to the $96 we have as a guaranteed profit in
+
+[18:56] this trade. But why I'm looking at this or what's interesting, how is this trade developing? You enter this trade today and we have no profit in the trade. Now this trade is
+
+[19:12] developing. If the implied volatility stays as it is like this. The moment the market goes up you will see a profit in the trade. Of course if you are simply long stock
+
+[19:26] you would see more profit. On the other hand, if the market crashes further because we have some new tariffs to deal with, this trade will have a marginal loss of 100,
+
+[19:41] 200, maybe $300 per combo if IB goes up as well. But overall, this T0 line is very, very flat. So, it will do you no harm if the market crashes. On the other hand, if
+
+[19:58] the market goes up, your trade goes up. Maybe not as fast and not as nice as if you had a simple long stock position, but you are protected. The moment you have some profits in the
+
+[20:13] trade, you're still able to roll this upper call a little bit down to lift the outside leg up and guarantee you more profits in this
+
+[20:30] trade given that we will not crash. Because the moment you lift, you move this in, of course, this side would go down. And if you have profits in the trade and you are able to hold this
+
+[20:44] trade in the no loss zone still means you may have let's say $400 $500 profit and by lifting this leg up you and the market crashes you would give up these $500 you have as unrealized profits
+
+[21:03] right now in the trend. Still if the market moves as you think it will move maybe at end of July or mid July you can you would decide I close this trade I move on and the market has stabilized
+
+[21:18] and I'm happy to hold my long Microsoft position again then you simply take this trade off you can sell it or sell the longs and buy back the short as any other options trade you are not fixed or
+
+[21:33] limited to holding this until expiration. You can close the trade at any time you want. What I normally do is I keep my shares and 10 days prior to expiration, I roll this trade forward
+
+[21:52] into October or December. And I'm happy to have this trade. I express my market view for the next half year with the trade and if I'm right, I earn a lot of profit. Should we
+
+[22:10] also give a couple of other examples of how you can set up no loss trades? Yes. What type of trade could that be? Let's look at a put butterfly. Here I have replaced the short put at 420 with short
+
+[22:28] calls long stock and this time 200 long shares of the QQQ. It's a little bit shorter trade and simply because I'm now using 200 shares or an equivalent of $84,000 I'm investing in the market. I'm
+
+[22:47] earning more interest which lifts this 25 point wide butterfly out of the loss zone it would have normally outside of the tent. So what will be the next example we can
+
+[23:02] show? The next example would be a call calendar trade. It has an interesting fact which we will discuss shortly. Now here we have a normal call a call calendar trade where I've replaced the
+
+[23:18] long call by a long put long stock position. This example is a hue packard. This trade is showing a small loss of 50 cents. That's something we can ignore. As all calendars has no fixed return. So
+
+[23:35] the return you see here is dependent on the implied volatility staying the same. If the implied volatility especially in the back long option changes then the maximum profit you see here either goes
+
+[23:51] up or goes down. But what still remains the same. It's a calendar. So the loss in a calendar is fixed. If you look at the options table table when you set up this calendar, you will notice that the
+
+[24:07] extrinsic value in the short call which is in the front is higher than the extrinsic value in the long put expiring one week later. That's why you can set up a no loss calendar trade simply
+
+[24:27] because at expiration of this short call, even if this long put loses all extrinsic value, it's still less extrinsic value lost than was in the short call in the first place. That
+
+[24:43] means or here the extrinsic value is the same. The reason why we have here no no loss calendar but a very slight loss is that Pekka has earnings on May 8th. That means if Ulip Pekka trades
+
+[25:01] below 15 on May 2nd then this short call expires worthless and you are left with a position long stock long call. That's the position after March 2nd. If this short call expires worthless, we still
+
+[25:21] have a trade showing a max loss of 50 cents, but now it's a long stock long put position. That's an equivalent of a long call. So beyond 15, Cula Packard or your position simply goes up. If the
+
+[25:38] earnings call is positive, then you stand to gain a lot of money. If the earnings call is negative, your max loss is limited to 50 cent. So, I really like these type of calendars or earnings
+
+[25:55] calendars simply because they allow me to have nearly risk-free earnings rates. In addition, Hulip Packard has been brutalized during the last few days, I see a good chance of the trade going up.
+
+[26:12] Of course, if it goes beyond 15 prior to May 2nd, I have a decision to make. Do I keep the trade or do I buy back this short call simply to preserve my chance of a nice pop after earnings? That's a
+
+[26:31] decision I have to make as a trader and I simply don't know how I will decide what I will do. It depends on how the market develops from now on. But the principle is the same. If you want to
+
+[26:46] set up these kind of earnings trades or earnings calendars, you need to set them up at least 21 days in advance. A better 28 to 35 days. then you have a chance that the
+
+[27:01] earnings are not fully priced into the option series already. That's a kind of trade I like to do. It requires some planning, but I have time. I have no zero DTE trades. I can look at companies
+
+[27:16] and see which earnings calls or which earnings I take stocks or companies where I know we have a lot of movement after earnings. Makes more sense. Let's go to the next example. This slide is a
+
+[27:33] Microsoft call condor where I have replaced the lower long call at 305 with a long put long stock position. And as you can see the interest received on the invested 30,000 actually because we
+
+[27:53] receive a credit of 5,500 in this trade. So, it's around $30,000, the interest received is enough to lift this condor out of the loss zone. Now, in our kind of market where
+
+[28:07] we know the market is moving a lot and Microsoft will not stay at 360, we just don't know if it's going up or down. The reverse trade is also very interesting. Let's which we see here. Here we have a
+
+[28:27] short condor and again with a no no loss zone. Actually this no loss zone where we earn a minimum profit of $80 spends nearly all of the expected range Microsoft will be doing within the next
+
+[28:45] 47 days. But the markets are moving so fast and so explosive that I actually see Microsoft going down to 300 or going again up to 420. within the next 47 days, which means this trade makes a lot
+
+[29:06] of sense to me. Especially after 15 to 20 days, the trade will have a profit of 700 or $600 to $700 regardless where Microsoft went as long as Microsoft moves at all. But I
+
+[29:23] don't think Microsoft will remain static for the next 47 days. This kind of trade is very interesting because we have no risk and we have a lot of potential reward in this trade. The technique I'm
+
+[29:39] using to set up this kind of trades. I set up the trade I want that's the short call condor. It has a chance of profit of 34%. Now I replace the long
+
+[29:55] call with long put and I simply add the shares. So as you can see this trade still shows a loss which means either I go a little bit further out or I
+
+[30:15] reduce the width of the trade. The reason why I have to go further out now and also have to reduce the width of the short condor to realize a minimum profit in the trade. is that the implied
+
+[30:34] volatility in Microsoft has come down compared to last Friday when I made the other slide where I was able to set up a similar trade with better
+
+[30:50] numbers. So I always have to take what the market is willing to give me. I can only deal with what I have and I adjust my trades
+
+[31:02] accordingly. Another option is to say okay I don't do this trade for 45 days. I go for June 20 and try now for a wider trade. No, that's not working. Let's go to July. July is fine.
+
+[31:22] Well, now instead of a 40 45 day trade, I'm investing for 100 days. What I would do next is seeing if Microsoft has an X dividend date somewhere in between. Because if I'm not able to set up a no-
+
+[31:41] loss trade, that might be simply because the stock has an X dividend date and dividends are priced into options. That's the reason why sometimes you cannot set up a no- loss
+
+[31:59] trade. That brings me to Altria M. If you try to set up the kind of trade I'm doing or presenting here using Altria, you will not be able to create a no- loss trade. You still
+
+[32:20] have something like this. If we go further out in January, it's a little bit better, but not good. March, let's go to January 27. It gets we worse again. Why Altra is one
+
+[32:38] of the stocks paying a dividend of around 7%. So that's higher than the Fed funds rate. Meaning any
+
+[32:52] debit I invest in this stock, I still have to deal with two to 3% Alfria is paying more on dividends. than what I'm receiving for investing in the
+
+[33:07] stock. So if I add the dividends I receive until June 18th next year, then this trade is a no loss trade. But if I don't look at the dividends, if
+
+[33:24] I only look at this trade as it is seen in options, it's impossible to set up a no- loss trade. And as a general rule, this is correct for any high yielding stock. anything yielding more than the
+
+[33:43] fed funds rate, you will have a hard time setting up a no- loss trade using this method I'm presenting here. I'm sure many will ask, what's the
+
+[33:56] catch? No loss. There's there's got to be a catch. No, there is no catch simply because you are giving the market a loan and you are paid for this loan interest as if you would give your bank a loan
+
+[34:13] and you would receive an interest on the money you give the bank. If you buy treasuries or T bills, you receive interest for the money invested. And it's the same in the stock market. It's
+
+[34:26] the cost to carry. You have to pay if you do a credit trade and if you do a debit trade, you receive interest. So there is no catch. It's simply mathematics. It's simply how the market
+
+[34:41] works. This trade has not worked for at least 12 years when we had no interest rates. That's why no one knows about the trade or only older traders may remember this trade because they did
+
+[35:00] it in 2000 and earlier. If you look at your old options books, McMillan on options thousand sides and you take the fourth or fifth revision published in 2000 or
+
+[35:17] 2004, then you will find this kind of trade and you will find examples of short boxes and long boxes earning you interest of 6 to 10% because that's what the interest rate
+
+[35:35] was. This kind of trade was possible until 2005 or 2008. After 2008, we had no interest rates and this trade simply was not possible because you earned no
+
+[35:50] interest if you invested in the market. But now we have interest rates and we can invest in the market and we are get paid interest again. So this trade will work as long as we have meaningful
+
+[36:04] interest rates. If the interest rates go down to zero again, then this trade is dead. That's the catch. But we have pointed out a few times that this is no loss at
+
+[36:17] expiration. But what can happen during the trade? During a trade, the trade can have a loss or can have a draw down. And if you close it at such a time, you will have a
+
+[36:32] real loss. If the trade shows a loss, what I do is I buy additional positions in the trade, additional combos. Sometimes I see that I get no fill. So my trade shows me a
+
+[36:51] loss of $500 and I say great $500 within the next 30 days I get them riskfree but I get no fill because the market makers simply have such a wide spread within the bid ask that even if
+
+[37:10] the trade shows a loss it's not real and no one is willing to trade with me at these better prices. If the market melts up and you have an X dividend date coming
+
+[37:26] up, you are short calls. So you are at risk of getting assigned short stock or losing your shares if at X dividend the extrinsic value of your
+
+[37:45] short calls is less than the dividend expected to be paid. So that's something you have to be aware of. But otherwise I have not seen short calls getting assigned outside of next
+
+[38:03] dividend dates simply because holding long stock carries cost. That's why short calls usually don't get assigned while short puts get assigned if they are in the
+
+[38:18] money and if they have no extrinsic value left. To what extent are you managing these trades before expiration? I tried to leave them alone because back tests have shown the market swings. So
+
+[38:31] even if the market moves outside of the tent until expiration, which is usually still 20 to 30 days away. When that happens, the market may swing back. Chance is 50/50. So if I adjust or
+
+[38:50] if I roll, I simply can make it worth. So I try to leave these trades alone. What I do is I may add additional shares or additional combos. So I no longer have one butterfly, but I have two
+
+[39:09] butterflies at different prices or I have a double calendar instead of a single calendar. That's something I do if I have the cash and uh if the market has moved out of my
+
+[39:25] profit zone then I adjust but otherwise I try to leave them alone and it becomes easier and easier simply because I know I have no loss if I'm wrong. You can't believe how liberating
+
+[39:40] it is to know I will not lose in this trade even if everything goes wrong. If I'm I'm really bad at reading the market. I'm really really bad at knowing if tomorrow the market will go up or go
+
+[39:55] down or next week or next month if we have a trend. Sure. But short term I have no idea. And so I have decided leave it alone. Very simple. And if I make 50 to 70% in the trade, I'm happy.
+
+[40:16] You mentioned assignment. What is the risk about assignment? How do you handle that? Well, if you do the initial trade I presented with the butterfly with just
+
+[40:28] one long stock position, then I have two short calls and I only have 100 shares long. So if I'm get if I get assigned then I suddenly have a
+
+[40:45] position short 100 shares and the next day I have to buy back the shares. Yes, that can happen if you have a trade. If you start with the put butterfly and replace the short puts
+
+[41:02] with short calls and 200 stock, then after assignment, I'm left with no shares and two long puts, which I simply sell. assignment simply realizes the extrinsic
+
+[41:19] value you had in your short position earlier. The assignment will not change the risk profile of your trade. Very simple. Christian, I always ask my guests where they will put their
+
+[41:35] strategy on let's say risk scale from one being very low risk and 10 being very high risk. Where would you put uh this one? Two to three. Uh simply because you need to know what you do.
+
+[41:53] You need to know your option math. You need to know how these trades are set up, how they move, and what to expect. So I would suggest paper trading this before you place real trades. So, so uh
+
+[42:12] Christian, what have been your results overall trading these type of strategies? 20 to 25% average return per year. That's what
+
+[42:24] I expect. And is that also what you have achieved? Yeah, that's what I'm achieving with this kind of trade. Usually I have two to three or four trades like
+
+[42:38] this on at the same time. I'm trying to set up a sheim uh where I place this kind of trade every four weeks every week. So I have four times the same trade started on Fridays and
+
+[43:00] these trades go for 28 to 35 days depending how the market is and how much volatility is in the market. The higher the volatility, the better when I'm setting up butterflies. The lower the
+
+[43:14] volatility, the better if I'm setting up calendars. And 20% per year with practically speaking, no risk. It's amazing results. Yes, but you need the capital. That's the problem. So the
+
+[43:29] thing is you need to be able to pay for the shares. That's the problem in this trade. So let's sum up the different types of no loss strategies that we have been
+
+[43:44] through today. Who are these suited for? Anyone trading stocks and options. Anyone who trades stocks or has a portfolio and is able to trade options on this portfolio. Because if
+
+[44:01] you have a portfolio, let's say a portfolio of 1 million in stocks and you see something happening like the last two days and you say enough is enough. Then you can place
+
+[44:16] this kind of trade, you already have the stock for bookkeeping. You simply use the stock price at the time you do your options trade and you can secure the current value of your
+
+[44:32] portfolio. You won't regain overnight the money you lost or you see in the draw down already experienced. But you can stop the bleeding and fix the current price and say, "Okay, I have
+
+[44:47] this trade on now. I can take a step back and see what the market will do within the next 30 days." Sometimes from one moment to the next, you decide, I have enough. And you
+
+[45:03] realize you lost it at usually the worst moment in time. That's how I do it or I have done it and I'm fed up with it. So that's what I do. I place this kind of trade and I say okay I switch off my
+
+[45:24] computer and I will look at this tomorrow again. Fine. I know I'm safe. I'm alive. Christian, my final question because this to understand this
+
+[45:39] strategy, you know, it takes some knowledge about options pricing and options theory to really grasp them. I would say it's not the most simple strategies
+
+[45:51] uh to follow. Mhm. Do you have a couple of options trading books to recommend for people who want to learn more and to have the possibility to better understand what's happening in these
+
+[46:06] type of trades? Well, I have learned it with the McMillan options uh options as a strategic investment. But that's heavy stuff. That's already heavy stuff. I'm
+
+[46:18] happy if someone reaches out to me. I have no problem explaining it or I'm on Discord. What I do is discussing these trades, presenting these trades because when I'm presenting the trades, I have
+
+[46:31] to think through them. You ask me questions, I need to answer them. So, I think through the trades and that's how I sharpen myself, how I develop this kind of trade.
+
+[46:44] Christian, thank you very much for joining and for sharing your knowledge about your no loss trace. A really fascinating subject. Thank you very much. Thank you, John, for having me.

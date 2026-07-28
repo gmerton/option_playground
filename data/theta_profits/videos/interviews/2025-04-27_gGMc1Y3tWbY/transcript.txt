@@ -1,0 +1,223 @@
+[00:00] seeing what traders can do pre-automation um to what they can do postautomation. It's it's night and day. I cannot stop looking at my trades. I feel the fear
+
+[00:14] and the greed. It can be stressful sometimes. So, I've been thinking, should I just automate it all? Can I sit on my sofa and let the bot handle all my trades?
+
+[00:27] my guest at least think so here is Scott Clark from trade steward welcome Scott morning John afternoon thanks for having me so I give you one minute convince me why I should automate my options trading
+
+[00:44] well I think for a lot of people including myself we get to a point where we're doing trades let's say we have a trade that we want to put several instances of throughout the day uh say
+
+[00:56] every hour every half hour or we find ourselves trading in many different accounts. Um there gets to a point where manual just isn't going to cut it anymore. Um you're more prone to errors
+
+[01:08] um making mistakes. Maybe you're not able to get out of a trade fast enough. Um, automation really allows you to set the controls and kind of pilot the ship while letting all the the uh the motor
+
+[01:21] work for you where you can set your tra your strategies in motion and really expand the ground you can cover with it with automation where you can have, you know, one trade going across four
+
+[01:32] different accounts without having to manually um deploy those trades in in individual accounts. So, it really opens up just the floodgate of what you can do with with options trading.
+
+[01:45] And I'm excited to dig into what this is. But, uh, first, uh, tell us a little bit about yourself as an option trader and your trading journey. Um, I started trading options back in 2015. Uh, my
+
+[01:58] introductions or my introduction to options was trade tasty trade. So, I I watched some of Tom Sausnoff and his daughter um do like the beginning course where they just went very um
+
+[02:11] fundamentally through options trading and and I was hooked um just learning about options and how you can define your own risk. You know, you can be as conservative or as aggressive as you
+
+[02:21] want. Um I was hooked as soon as I discovered options and I've been I've been trading them ever since. So, let's dig into the topic. First of all, what actually is trade automation?
+
+[02:34] Trade automation is simply a software platform um that has what we call bots. And bots are settings that you input into the platform that define your trades and then you set the parameters
+
+[02:48] for them on how you want them to be deployed. So, you can pick things like, you know, what delta you want to open a position at, how wide you want a spread to be, and then you can set what time
+
+[02:59] that goes off, um, your profit targets, your stop loss, all those things that we think about when we're manually monitoring a trade. You can have those inputs into your bot to execute
+
+[03:09] automatically for you. Are there many different ways of doing this or are the different let's say platforms and products built around more or less the same type of principles? I'd
+
+[03:21] say the principle is the same across products but sometimes the implementation is different. I know some products there's limitations on what days expiration you can do uh when it
+
+[03:32] comes to things like calendars, diagonals, stuff like that. So, and there's also differences on how the positions are monitoring. Uh, for some platforms, you know, they scan every
+
+[03:42] minute um to for your stop-loss conditions. Other platforms are a little bit longer. So, there's a little nuance in in um in the platforms. I will say I'd say the biggest differentiator for
+
+[03:53] some is uh customer service. Um you need what really sets I'd say Trade Store apart is um the the access to support. Um we're there pretty much 247. We we provide support uh during market
+
+[04:10] hours, but we are always reading support. Um we're eager to hop on to help customers out um with any problems they encounter. So So you are one of the players. Can you give us just a very
+
+[04:21] brief overview of the landscape of platforms and products in this uh area? Yeah. So there's there's a few competitors in the same space as trade steward that like I said provide similar
+
+[04:33] services where you have you know bot platform um to where you can put your inputs in to deploy your trades. Um and like I said there's varying degrees of the nuance um on what's allowed on those
+
+[04:45] bot platforms. Who are the biggest players? Say trade stewart is up there. There's also um options alpha has a platform. I know option omega is coming out with
+
+[04:59] their own automation. There's tat um trade automation toolbox. So so there's there's several out there. What are the biggest benefits that you have seen for traders who start
+
+[05:11] automating their option strategies? I'll tell you, I've been in a few private uh trading groups for years u predating my involvement with Trade Stewart and seeing what traders can do
+
+[05:22] pre-automation um to what they can do post automation, it's it's night and day. I'm with a a certain group um who started we we were all hanging out and trading before we
+
+[05:35] got into automation and seeing what they've been able to do post automation is just mind-blowing. not only in the returns but just uh on the intricacies of the trades they can do. Um you know
+
+[05:48] before we were sitting there all day monitoring our trades um you know if a position hit a certain threshold we would manually stop it out. Being able to set all that up ahead of time and
+
+[05:58] just let it run has been has been life-changing. I guess this also has to do with the ability to just sticking to your trading plan. Yeah. Yeah, and that that's the
+
+[06:10] hardest part of trading. Um, you know, the actual placing of trades is very easy. Um, whether you're doing automation or manual. However, the mental aspect of it on you when you
+
+[06:20] suffer a loss, you know, how do you stick to your plan? And and I I really encourage anyone who's serious about trading options to have a group, find your your people, find a group of fellow
+
+[06:32] traders that you can, you know, socialize with. You know, trading can be very lonely sometimes. So there's not a lot of people a lot of times most of us we can't talk to people about finances
+
+[06:42] too in depth but um it's good to find a group of traders where you can bounce ideas off of find that conviction to stay with a trade um when it's going against you and automation can
+
+[06:53] definitely help take some of those um temptations out of the mix to to to not continuing. But what about the risks? I assume that also trade automation comes with some
+
+[07:06] risks. Yeah, I mean there's always risk in technology. Um I would say on a whole automation there's few there's less execution risk than there is manually
+
+[07:18] trading. I can't tell you how many times that I've made a mistake manually trading in Think or Swim where I didn't close something out or I set the stop loss incorrectly and you know something
+
+[07:30] went past where I wanted it to. automation, you know, you have risks such as, let me say this, automation is receiving real-time data from the brokerages. So, if there's ever a blip
+
+[07:41] or something like that where the the data is incorrect, there could be an issue with automation. It's happened maybe a few times in the past three years that I can remember. It's usually
+
+[07:50] fixed very quickly, but I always like to say automation is not fully auto. You can't just set it and forget it. It's kind of like supervised self-driving with Tesla. You you can do the test the
+
+[08:05] self-driving, but you still have to monitor it. So, I would never recommend anyone, you know, set a bunch of trades and then go on a vacation to Southeast Asia or anything. Um, you want to you
+
+[08:15] want to still monitor what your automation platforms do. What's the most uh serious that can go wrong from a trader perspective? You know what's the biggest mistake you have
+
+[08:26] seen someone do or get hit by? I would say it's probably just misconfiguring bots or thinking not fully understanding. Let me say this. There's
+
+[08:41] there's some traders that are new to options trading period. And they get very excited about, you know, they they they watch a video or they they see a back test, they're really excited to
+
+[08:51] jump into trading, which is great. However, you really have to understand what you're doing. I mean, this is real money. This is your money that's at play. Um, understanding options as a
+
+[09:02] whole and then what you're doing in the automation platform is very important to understand. Um, so a lot of times some of the mistakes we see is just not understanding how options work
+
+[09:13] sometimes. And then on top of that is just not sticking to a plan. You know, you can have a you have a great back test and maybe it goes against you the first couple trades. Well, a lot of
+
+[09:23] times the worst thing you can do is to to quit. You have to let those probabilities play out. So, I think automation helps give you that the ability to to stick to a plan better
+
+[09:34] because it's taking a lot of guesswork out of the execution of it. We are we are recording this in midappril 2025 and the last few weeks have been really turbulent in the market
+
+[09:48] with big jumps up and big drops and uh the big discussion at the moment is what happened in the market on April 9th when Donald Trump postponed most of the tariffs with 90 days and we saw a 10%
+
+[10:02] jump in the market in a very short period. How is trade uh automation dealing with those kinds of market situations? I'll tell you this is where automation
+
+[10:14] really shines. Um I can say honestly the last week in my private trading groups I've seen people make more money in that week than they had the previous two years in in trading in these groups. Um,
+
+[10:29] I mean, volatility is kind of the gold mine for traders. Whether you're long volatility and then you get that that spike in the VIX or you're short volatility and you it collapses from 55
+
+[10:40] to 30. I mean, there was opportunities on both sides of that explosion to to make a fortune and a lot of people did. And I would say that automation really enabled that. um if they were having to
+
+[10:53] I mean we had an 8% day the other day uh to the upside trying to manually stop out of a position that just went up you know 8% I mean I I can only imagine not being able to get filled whereas you
+
+[11:06] know things on automation that that platform is going to keep trying so if your first uh hit doesn't go through you're going to keep trying and keep trying to get out of that position if
+
+[11:15] you're stopping out on a call spread and now just picture that across four accounts I mean there's four or five six eight accounts however ever many some people have. There's no way you can stop
+
+[11:24] out of a position like that across that when something like that happens. So yeah, what automation enabled people to do last week specifically has was mind-blowing.
+
+[11:34] Are there strategies that are more conducive to to trade automation than others? I'm thinking for instance about the fastm moving zero DT trading. Yeah, I was I mean trade store
+
+[11:48] specifically. I can't think of a a a strategy you can't trade on it. You can do butterflies, you can do iron condors, iron flies. The person that developed trade storage only trades zero DTE. So
+
+[12:01] he the platform was built it started three years ago with him wanting to build his own platform for himself to trade zero DTE. So the whole genesis of the of the product was to enable zero
+
+[12:13] DTE trading. So, you know, seeing what what customers are doing, I can't think of a strategy um that a customer hasn't been able to do on trade steward. So, to take myself, I'm a relatively
+
+[12:26] experienced uh options trader, but I have not tried trade automation. So, let's say I want to start. Walk me through what I need to do. Well, the first thing you do is to sign up for a
+
+[12:38] 7-day trial. And after that, what I always recommend customers do is start slow. do one bot. Just configure one bot. Um, make sure it's match. You know, if
+
+[12:50] you're coming to the platform with back tests you'd like to verify or uh a conviction of certain trade, do that onebot trade for a week and see if it's performing how you expect it to be.
+
+[13:01] Um, you want to make sure you're comfortable before before scaling up because I can tell you once you start um you're not going to be able to stop. You know, it starts with one bot and next
+
+[13:10] thing you know, two months later you're doing 100 bots. But it's good to get comfortable with the platform first. Make sure you know you're getting the strikes you're anticipating, that your
+
+[13:19] profit targets are working the way you want and your stop losses are working the way you want and how you expect. Um, so start very slow and then scale into it as you are comfortable. You know,
+
+[13:30] it's not automation. You can't think of it as like as a get-richqu thing. It's it's simply another tool to enable the trades that you've already thought of or you're already doing.
+
+[13:41] Is there a way to try it without risking real money connected to paper trading for instance? Unfortunately, the major brokers don't have API access to say paper accounts. However, on some
+
+[13:54] platforms like trade steward, there's ability to do test runs. So, we have a feature where you can configure a bot and then do a test run to see what strikes you would have gotten from that
+
+[14:03] bot itself. So, it'll make sure that you have like like however you want your legs set up. you can verify you're getting that that distance in the in the width of your spreads etc by doing a
+
+[14:14] test run. Is there one tip you wish you had known when you started uh testing automation? Yeah, I wish I I wish it was available even earlier. I wish it was available
+
+[14:28] back in 2015 uh when I started. Um one thing to remember is it's not all or nothing. So let's say you you you attach an account to your trading platform. At least with trade steward,
+
+[14:41] it's you don't have to pick or choose. You know, you can do some trades manually. You can do some trades um some strategies uh through automation. So I really wish that I uh you know, back
+
+[14:52] three years ago, three or four years ago, that I moved some more of my strategies to automation um at the get-go instead of um still continuing to do some of my other manual trades. I
+
+[15:03] think I would have been a lot more successful moving more to automation much earlier. H how do you balance automating your trade on one hand and staying
+
+[15:13] involved in your trades and following them up let's say manually on the other hand? I'd say that's really where a community comes in. Um, I don't think many of the people I I trade with and I
+
+[15:26] I hang out with through the day on Discord and other mediums would be half as successful as they are without having a community to not only get conviction to stay in a trade, but just to bounce
+
+[15:36] ideas off of um maybe they're running similar trades and just having that that that kinship with other people um throughout the day. Like I said before, you know, trading can be very lonely.
+
+[15:47] There's not usually not a lot of people in our in our real lives that we can talk to talk to talk about it. So, it's good to have a group of people that you can you can talk to while your your bots
+
+[15:59] are running. What are the most common mistake you see beginners do? What I'd say the I'd say the biggest mistake options traders period make is
+
+[16:12] just not understanding volatility. Um, you know, we're good at picking direction or having, you know, delta neutral strategies, but a lot of that goes out the window when volatility
+
+[16:22] explodes or contracts. So, I would I would recommend anyone new to options to really understand how volatility works in options pricing. Um, and also leverage, you know, um, spreads can be
+
+[16:36] very deceptive. You can put a lot of them on for your buying power. However, um the leverage you're you're trading with and at risk of um can be deceptive. So really understanding leverage
+
+[16:49] um and how much money you actually have at risk if things if if the worst case happens. Um I'd say those are the two biggest um pitfalls for traders. Where do you see trade automation going?
+
+[17:04] Oh, there's no stopping this train. I I think as as the markets um evolve, automation is becoming more and more um integrated into retail trading. I mean, we're not at the point now where it's,
+
+[17:16] you know, voice to trades yet. We we don't have AI completely taking over trading where you can just speak what you want to do. But I think that might be the north star eventually that we can
+
+[17:27] just say, you know, bot deploy a spy put for me or or whatever. But um I think we'll see more institutions integrating it into the platforms they offer to customers. And of course the landscape
+
+[17:39] for automation is just growing um horizontally and vertically more and more every day. And what about the the relationship to back testing? I would guess that trade
+
+[17:50] automation is somehow a sibling to back testing. It is. They're they're really one and the same. Well, not one and the same, but they're really paired at the hip because people come to automation
+
+[18:01] platforms usually with back tests that they they want to deploy. So, yeah, we're really seeing a synergy of those two products, back testing and bot automation coming together. Uh customers
+
+[18:14] are looking for that in products and they they really want to be able to just take a back test and have that be able to be deployed on their bot platform. So, let's sum up. What would be the
+
+[18:29] three best tips you would give me if I want to start automating my trades? I would say start slow. Um, you you have a strategy that you've been you've been running for years. Um, let's make sure
+
+[18:43] that we have the your first bot set up correctly and that your first run at it is is looking good and what you expect. Really, just, you know, consider what you want to do. Are are we sticking to
+
+[18:54] one strategy? are we wanting to scale out? Really come to the the bot platform with a a game plan and the the bot platform will kind of be your your your army. You know, you're the general. You
+
+[19:04] tell the army what to do. Have a group of of folks that you can talk to through the day. Have your, you know, your your trade groups to to bounce ideas off of and experiment with new ideas. I mean,
+
+[19:16] uh, automation really opens up possibilities you might not have thought of because maybe you have seven accounts and you're like, well, I really like the strategy, but I'm not going to run it in
+
+[19:24] seven accounts because that's way too much clicking and way too much flipping around. So, yeah, I mean, keep your m your your mind open to new ideas that maybe you haven't thought of.
+
+[19:36] What are the best resources to learn more about trade automation? Um, so we have a well, YouTube is a great resource. Um, Trade Store has a video library that we're building out to read
+
+[19:47] re really detail the product there. Um, joining Discord groups. Um, you know, Option Omega has a Discord group for back testing. Um, Trade Stewart has our Discord. There's a lot of trading
+
+[20:00] discords out there that are free um that you can join and just learn from other traders on, you know, how to set up the platform um experiences they've had. Um you know, our our Discord, we have a lot
+
+[20:13] of Option Omega users that use their back tests. So, they'll join our Discord, sign up for the bot platform, and they'll bounce off with other Option Omega users like, "Hey, you know, I'm
+
+[20:22] trying to match this back test. How do I do that?" um and they'll get feedback from them and they'll they'll fine-tune what they're looking to do.
+
+[20:31] And to put uh trade automation a bit to the side, you're an experienced options trader. Um do you have a couple of books about option trading you recommend to traders to read? I really don't have a
+
+[20:43] specific book recommendation. I I really learned from the internet. Um, you know, like I said, I really learned from watching the the fundamental courses uh that Tom did. Tom Sausnoff from Tasty
+
+[20:56] Trade. I don't know if they're still up there, but they've done new courses and just really never stop learning with options. Um, for me personally, like I'm always reviewing
+
+[21:06] the fundamentals. I'm always trying to understand options more. Um, it seems like, and that's what I love about options trading is that I've been doing it for 10 years and I'm constantly
+
+[21:15] learning something new. whether it's, you know, how options behave on uh April 9th of 2025 or other volatility events like the the yen carry trade back in August. Um there's always something to
+
+[21:28] learn. So really don't ever stop learning with options. Always seek out new information because there's always something to learn. and uh running this YouTube channel. I
+
+[21:41] would of course also recommend people to watch some of the interviews we have with retail option traders. Every every Sunday we publish a new one. Thank you very much, Scott Clark, for your
+
+[21:53] excellent introduction to trade automation. Thanks for having me, John.

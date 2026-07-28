@@ -1,0 +1,273 @@
+[00:00] In this video, I'm going to show you a strategy that I've previously kept for Options Trading University members only. But I feel it's important to equip you with this strategy to keep you cool,
+
+[00:11] calm, and collecting premium, especially in this period of volatility where we've seen some of our favorite stocks go down upwards of 20 to 50%. Now, this strategy is going to keep you level-headed and
+
+[00:25] collecting that premium like I talked about. So, let's go ahead and jump into it. Remember, this is not financial advice. I'm just sharing what I'm personally doing for educational
+
+[00:33] purposes only. Results may vary. Now, if you're new to the channel, this right here is my public account that I show here on YouTube. And if you do want to follow me on my 8 figureure journey, be
+
+[00:44] sure to be subscribed by clicking the subscribe button down below this video. Also, if you get any value out of this video, please hit the thumbs up button for me. I would greatly appreciate that
+
+[00:53] and I appreciate you being here. Now, before we jump into the below cost basis covered call strategy, I also give away trade ideas here on my Instagram where I share a little bit of my personal life,
+
+[01:04] my ex account, and my free newsletter. All three of those will be down below in the description. They're absolutely free, so be sure to be subscribed. Also, if you do want to join my private
+
+[01:15] mastermind, Options Trading University, and join 838 other members in that group, that'll be at the top of the description. I have a free training for you here as well as all our client
+
+[01:26] testimony testimonials that I upload on a bi-weekly basis. So, be sure to check that out. Now, let's go ahead and jump straight into it. This is one of my favorite strategies going forward,
+
+[01:39] especially when we have volatile times like this. This is something that I actually did during the tariffs crash as well as during the bare market of 2022. So, we're going to talk about the below
+
+[01:51] cost basis covered calls, a disciplined approach to collecting weekly premiums and managing recovery after a significant stock draw down. So, if you're someone who has traded the wheel
+
+[02:03] strategy, you know that sometimes when you get assigned a stock, it could keep going down further than where you'd like. Obviously, an optimal price point would be somewhere where, hey, the stock
+
+[02:15] is down, but I could still collect covered call premiums at my assignment price and not have to worry about it. Now, if a stock goes down 40, 50%, it's extremely tough to collect covered call
+
+[02:29] premiums at your assignment price. So, I'm going to talk about exactly how I do it, how I manage these positions, and how I decide whether or not to let a stock go out of my portfolio because
+
+[02:41] there are instances where, you know, a stock can go down. You get assigned and it doesn't meet certain criteria and most likely it's going to continue to go downwards. And I'm going to show you
+
+[02:52] examples of stocks that have done that and you know why I'm keeping the example in this video which is going to be Palanteer. Okay. So let's go over the strategic rationale transforming
+
+[03:05] unrealized losses into cash flow. Now remember you do not take a loss until you actually sell the position. During the tariffs crash my account was down 18% at the bottom where NASDAQ was down
+
+[03:19] about 25%. And because I held on to all my positions, I was able to finish out the year in 2025 at a 40% return. And I've been able to do that year-over-year about 40% annually for 5 years straight.
+
+[03:35] Now, obviously, results vary, and there are significant periods of draw down and volatility, but this right here is one of the tools that I utilize to keep me cool, calm, and collecting premium. So,
+
+[03:48] let's get into it. The underwater problem. Okay, so the problem is the draw down gap when assigned from a cash secured put. Yes, it's better than being a buy and hold investor because as a buy
+
+[04:00] and hold investor like I was many years ago, you're buying at the top and you never know when the stock is going to go down 20 to 50%. For instance, if you bought Robin Hood at 150 bucks, you're
+
+[04:12] pretty much buying the top and now it's down 50%. versus if you were selling cash secured puts, let's say at the 120 level, you'd still get a significant discount on the stock. The stock would
+
+[04:23] be down, but not down as much as you would be if you were a buy and hold investor. So, that's why I love the wheel strategy. I love options. It gives you flexibility to be assigned a stock
+
+[04:34] at a discount even if it keeps going downward. So, we're going to talk about the draw down gap. You know, the draw down gap is when you get assigned a cash secured put and the stock keeps going,
+
+[04:44] you know, 20, maybe even 40% below your assignment price. The cost basis remains high while the stock price sits far below. And attempting to sell calls at the original cost basis often yields
+
+[04:56] negligible premiums, less than 1% per month. So, with my strategy, I'm aiming for anywhere from 3 to 5% per month on average. Sometimes I hit 2% and that's fine too. But uh you know when we're
+
+[05:10] only able to collect less than 1% of premiums at our assignment price, it's definitely not going to help me hit my goals. So that's why I deployed the below cost basis covered call strategy.
+
+[05:21] Okay. So instead of selling at a loss, right, we remain patient. We transition to a below cost basis covered call strategy and we aim to harvest you know I aim to harvest.3 to.5% weekly in
+
+[05:33] premiums while the underlying asset consolidates and recovers toward the assignment price. So I'm able to pick up you know over 1% or maybe I able to pick up 1% worst case scenario doing below
+
+[05:47] costbased covered calls and while I wait for the stock to rebound and we'll go over those examples as well. So the first thing before even implementing the below cost basis covered call strategy
+
+[05:59] is that I want to make sure the asset meets my core asset requirements. This is extremely important because I recently sold a stock off that was in the portfolio that stopped meeting all
+
+[06:11] three of these requirements and you know I was doing below cost basis covered calls in them and at that point I decided to take the loss which was very rare for me. This is this is the only
+
+[06:21] time it's happened in my portfolio. It was actually on hims, but I'm going to go over these asset requirements and we're going to go over pounder and see if Palanteer meets all of these
+
+[06:32] requirements. So, this will give you the tools to look at a stock like a professional investor, right? But while remaining very simple and not having to dive dive deep into their balance sheet.
+
+[06:44] So, the first thing that is most important to me is the price action. So, I want to make sure that the stock is maintaining an upward trending chart for the past 18 months or year and a half,
+
+[06:57] ensuring long-term momentum remains intact because we don't want to get into a stock that is downward trending for more than a year and a half because if we get assigned, there's a good
+
+[07:08] likelihood the stock is going to continue going downwards. And I'll show you an example right here. So, for Palanteer, it's very easy. Okay, this is Palanteer right here. What I'm going to
+
+[07:18] do is basically draw a line on the trend on on the chart. Okay? And I'm using tradingview.com. It's absolutely free. And I'm going to go back a year and a half from today's price. So today's
+
+[07:28] price is right here. Okay? We're trading at 137. And I'm going to go right under that candlestick. And I'm going to draw this line all the way back to August of 2024. Okay. So, as you can see, I'm here
+
+[07:42] at August uh 2024. We'll even go to like, you know, it's the 27th today. I'll go to August 27th, which is right here. Okay. So, as long as the stock is still trending upwards for the past year
+
+[07:56] and a half, that's a good sign because that means it's going to probably rebound and recover from this crash as it has many, many times in the past. You know, you see this crash here, you see
+
+[08:08] the tariffs crash here, crashed here, right? And it's recovered every single time. So that's what we want to see versus if we go to a stock like Lululemon. Okay, Lululemon, great
+
+[08:20] company. They sell a great product, but look at their stock, right? If we go from today's price, right, which is trading at 181, and we draw a line back to the price it was trading at a year
+
+[08:32] and a half ago, okay? And we'll go to that price, which was right here, August of 2024. It's about right there. Okay. Uh, we could see that this stock is downward
+
+[08:46] trending. That is not if the line is pointing downwards, that's not a stock we want to trade the wheel on or continue trading the wheel on because chances are high probability odds are
+
+[08:56] that the stock continues trending downwards. Okay? So, we don't want to be in stocks like that. Okay? So, that's the number one requirement. And that's something that I would say I'm probably
+
+[09:08] the only person on YouTube that has that requirement, but it's worked out very well for me because a lot of people will tell me, "Hey, well, you're trading the wheel strategy. That's a risky strategy
+
+[09:18] because what if the stock keeps going down?" Well, that's how I mitigate my risk is I make sure that it's been trending upward for the past year and a half and it's worked on every single
+
+[09:28] stock on my list, okay, of on my approved list. So, that is that. That's the first thing that I look at. The next thing I look at is PE ratios. I want to make sure that it has positive
+
+[09:39] fundamentals, right? Positive fundamentals are non-negotiable. And we target a PE ratio ideally under 100. If not, that's fine as long as they have enough cash to cover their debts. So for
+
+[09:50] Palunteer, okay, we just want to make sure the PE ratio is positive. I do not trade negative earnings stocks, meaning stocks that don't turn a profit. Right? If we look at Palanteer, yes, their PE
+
+[10:01] ratio is a little bit high, 216. It's over that 100 mark, but they are a positive earning company. They actually turn a profit. Okay. And if you go to their financials, right, if [snorts] it
+
+[10:13] is over 100, you could just take a look at their cash to debt rat ratio. As you could see, uh their cash and equivalence $1.4 billion and their debt $200 million. So, they could pay off their
+
+[10:23] debts like four or five times over. I'm not too worried about the stock. They earn uh a profit, right? They turn a profit here. Net margins 43%. So you just got to make sure the company's
+
+[10:33] profitable, okay? And that um if the PE is over 100, they should have some enough cash to cover at least almost equivalent of their debts, okay? So that is um that fundamental uh PE ratio. The
+
+[10:48] next one is a premium yield. So, because eventually we will get these shares called away once the stock does recover, we want to make sure that we're able to get back into the stock and sell 30-day
+
+[11:00] 30 delta puts that are at least, you know, yielding about 2%. Okay, so that's kind of a minimum baseline for me on a stock. And if we go to the options chain, um, we could go into, you know,
+
+[11:13] the Palanteer options chain, we could see that if we go out 30 days, okay, to the March 27th, that's 28 days from now, and we go to a 30 delta, we'll just go to that 33 delta, you could see that the
+
+[11:26] collateral there is about 3.9%. So, um, obviously results vary, but that is well above the 2% threshold that I require. So, that's that. Now the last new strict guideline that I have and I actually
+
+[11:40] implemented this after the uh selling off HIMS at a loss in the portfolio is the double beat. Okay, so they need to the stock must have beaten both EPS and revenue expectations in the most recent
+
+[11:54] quarterly earnings report. If they have not then we have a strict zero miss policy. So they cannot have missed two consecutive quarters with poor guidance. Okay, that's uh the caveat there. With
+
+[12:08] poor guidance, we avoid fundamental decay. Okay, so um if Palanteer, we on Trading View, it's very nice because you could see there's a little E here at the bottom. And you could just click on that
+
+[12:19] to see if they beat earnings. So yes, they beat on earnings per share this past quarter, 8% surprise. They also beat on revenue, which was a 4% surprise. Okay. Uh if we go back to this
+
+[12:31] quarter again, they beat earnings, both EPS and revenue. and they've done that for many many quarters in a row. So this is a solid fundamentally solid company. Okay? Versus if we go to let's just say
+
+[12:43] HIMS, okay, I'll type in HIMS. Um we can go you could see that this earnings they missed revenue and then the last earnings they actually actually missed earnings per share. So that was not good
+
+[12:55] um as well. And then the previous one they missed revenue. So it's just like 3/4 um of missed earnings. that's not a good sign and that would would take the stock off of my uh requirements
+
+[13:09] especially if they have poor guidance. There are some stocks that are there's a caveat maybe they missed earnings but we won't get into that. So just keeping it very simple, okay, they must be beating
+
+[13:21] earnings and if they didn't beat earnings, they can't miss earnings two quarters in a row. So we have that on lock. Palanteer has completed all of our requirements, price action, PE ratios,
+
+[13:34] premium yield and um guidance, okay, as well as earnings beat. So that is what is keeping Palanteer in the portfolio. Even though if we look from all-time highs, okay, the stock is currently down
+
+[13:48] about 33.8% and at one point a few weeks ago or a couple last week, it was down almost 40% about 38.8%. So with that in mind, right, we are going to stay patient,
+
+[14:01] stay calm, and know that Palanteer will rebound from this uh deep correction. We just have to deploy a strategy that will allow us to at least collect some premium while we wait. So that is what
+
+[14:14] the below cost basis covered calls are for. So let's go into tactical execution of this. This is the weekly premium protocol. Okay, weekly operation. So days to expiration, I don't like to go
+
+[14:27] too out too far out in time with these below cost basis covered calls. The reason so is because if I go too far out in time, I allow too much time for the stock to go above my below basis covered
+
+[14:41] call and test it and then potentially be at risk to get my shares called away at a loss. That's the number one thing we want to avoid. We do not want our covered call to go in the money. We
+
+[14:54] basically meaning we don't want the stock to go above our covered call because then we will be at risk of getting our shares called away at a loss and that's what we don't want to do. So
+
+[15:04] I do have a protocol for that and it is you know calls for active management. So, days to expiration, 7 to 10 days out. Ideally, I've been I've been going out like seven days every Friday. You
+
+[15:17] know, I'll put a new one on for the next Friday or I'll even wait until the weekend's over and deploy on Monday for that Friday. So, the target delta is going to be 8 to 12 delta strike price.
+
+[15:30] Income target, premium targets is going to be anywhere from 3 to 0.5%. Okay? And the goal is consistent premiums until 1% monthly at cost basis is viable. So we're just going to keep
+
+[15:43] doing this until the stock recovers enough to where we can go out 30 days, 30 to 45 days, ideally 30 at our cost basis, our assignment price, and just collect premiums at our assignment price
+
+[15:56] and just set it and forget it, right? Until the stock, you know, is eventually called away and we could get back in to the wheel on the put side. So that is exactly how we're going to do that. Um
+
+[16:07] let's go ahead and jump into the Palanteer uh example. Okay. So we're going to look at the chart currently trading at 137. We're going to go into the options chain on Palunteer. As you
+
+[16:20] can see right now I have I deployed these yesterday. Okay. I deployed the 150 covered calls. um on pounds here my assignment price was 175 and 185 but we just put on all of them at 150 so uh for
+
+[16:36] me right I could draw a line here or actually a percentage gain from now right the stock has to stay below 150 so basically in the next 7 days the stock cannot go up past 9.4% 4% or else I will
+
+[16:52] be getting tested and that covered call will be at risk of being in the money and getting my shares called away. So it's very unlikely that the stock is going to go up 9% 9 and a almost 9 and a
+
+[17:03] half% in the next seven days. Um so it's and two of those days are weekend theta decay. So that's like free theta over the weekend. So really in 5 days the stock would have to go up 9.4%. So very
+
+[17:17] unlikely. All right. So, if I had to deploy today, let's just pretend I don't have these ones on and I wanted to go out to next week. Okay, I would go to the 8 to 12 delta. All right, so
+
+[17:30] currently my 150s are about 10 delta. So, that's very strong. I actually would go to this same strike right now. So, I would pick up about 40 bucks. So, I'd click on that, right? And sell as many
+
+[17:43] contracts as I can against the shares that I have. So, if I have a 100 shares, I could sell one contract. If I have five shares or 500 shares, I could sell five contracts. I must have enough
+
+[17:56] shares for the collateral for each one of these contracts, which covers 100 shares. Okay? So, I'd go here, the 40 uh 40 uh 150 strike, click on the bid, and then I would try to get the mid price
+
+[18:10] that I usually shoot for that. So, I'd pick up 41 bucks per contract. Yes, it's not too much um premium. There's roughly.3% if we were to divide this by the strike
+
+[18:20] price. You know, roughly.3% somewhere in that range. But it's something while we wait, right? It's better than just doing nothing um and you know, holding the shares like a buy and hold investor and
+
+[18:33] just waiting for something to happen. It's better to be proactive to collect a little premium if you have the time to manage uh these weekly covered calls. if you're have time to manage them during
+
+[18:45] the week. Obviously, this does take time. So, that's the only caveat. If you don't have the time, then maybe um just being patient and waiting for the stock to rebound is fine. But for me, I like
+
+[18:56] being a little bit more active involved and trying to maximize my premiums while I wait. So, that is going to be that. In fact, I could even go to the 12 delta. that would be the most aggressive which
+
+[19:07] would be the 149 strike and I'd pick up about 51 um bucks there which is.3. So either one works you know 10 to 12 delta really 8 to 12 delta somewhere in that range depending on how bullish you are
+
+[19:22] on the stock. So, if all goes well, right, if Palanteer stays under um if we go to the stock price, if Palanteer stays under 150, the current calls that covered calls that I have in the next
+
+[19:35] seven days, two days or over the weekend, so in the next five trading days, I'm good to go. I pick up all of that premium, which you could see on my 150 covered calls. My cost was the
+
+[19:45] premium collected. So, 161 here, 284 here, right? So, over 400 bucks. That's pretty nice, right? a nice weekly premium paycheck while I wait for the shares to recover. So that is exactly
+
+[19:59] how I do it there. Now let's talk about what happens um at different phases. So we have one phase which is the consolidation phase and that's kind of where Palanteer is in right now. The
+
+[20:12] stock is finally starting to consolidate. It found a bottom here meaning the stock is trading kind of sideways for a little bit. So at that point right I continue selling 8 to 12 8
+
+[20:24] to 12 delta call covered calls below cost basis covered calls weekly collection of you know.3 to.5% somewhere in that range sometimes it's a little lower sometimes it's a little higher
+
+[20:34] depending on the um premiums but obviously it's better than again I believe it's better than just sitting and doing nothing right and then the next phase comes which is a moderate
+
+[20:46] uptrend so uh as as long as you keep the strikes above the current price, you get those premiums, right? And you get recovery in your share price, which is nice, too. So, if Palanteer starts um
+
+[21:00] trending upwards here, and I'll draw a little line so you could see, right? If it starts doing this sort of thing, that's fine. We'll as we go get into next week, maybe I manage a little bit
+
+[21:10] early, a day early on Thursday or something like that instead of waiting till Friday expiration day to close out my covered calls and open up the following weeks. Maybe I manage on
+
+[21:20] Thursday or even Wednesday to open up the following weeks, but I move it to a much higher strike. Maybe I go to the 160, right? And then if the stock keeps going up the next one, now I'm at the
+
+[21:32] 170. And then if the stock keeps going up, right, then I could get to my cost basis, which was 175. So, usually I'm only doing these things um you know, maybe two to four weeks max at a time
+
+[21:46] before I'm able to get up and out to my cost basis and then kind of set it and forget it. So, um that's that. But what happens when there's an aggressive breakout? Because that happens
+
+[21:58] sometimes, too. And that's the biggest risk to the strategy. And that's why I don't recommend this strategy. This is definitely not something I recommend, especially if you're a beginner or new
+
+[22:09] here. There's definitely some risk there. But if you're someone who has been doing this for a bit and you have the time to manage, then that's okay, too. Okay. So, the aggressive breakout,
+
+[22:19] my typical um management of the aggressive breakout is roll up and out to cost basis. Okay. I might take a loss on those covered calls. That's totally fine. I just don't want to um let my
+
+[22:34] shares go eat into those put premiums that I received when I initially got assigned the shares and let the shares get called away at a loss. That's just not going to happen. So, uh what happens
+
+[22:45] if and we'll clean up this chart a little bit. Okay, so I'm going to talk about the breakout here and what happens if let's just say in the next week, okay, Pouncer has some news come in. QQQ
+
+[22:58] is up 3% in a day and Palanteer goes to 149. Maybe maybe it goes to 149 in one day. Okay, ideally I like to manage these covered calls if the stock gets a couple dollars away. Okay, maybe a
+
+[23:15] dollar to a couple dollars away because if the stock goes above my covered call now it's exponentially losing money. So because the delta is getting much higher, if the stock went above 151 or
+
+[23:30] above 150, I'd be losing exponential amounts of money and then it's harder to manage from there. So let's just say the stock went to 149 or 14850 and now I'm down like let's just say I
+
+[23:43] don't know a few hundred bucks, three 400 bucks. That's okay. I'm going to take the loss there. I'm going to book that small loss and then I'm going to roll up and out to my cost basis. Okay.
+
+[23:55] So, um it's going to be hard to show this as an example, but we'll just go like anywhere from 30 to 40 days out. So, I'll go 42 days out. And you know, at that point, um the stock would be
+
+[24:08] somewhere around here. Okay? And I'd be able to go to the 175 strike, which is my assignment price, and go pick up maybe a couple hundred bucks. So, I'd make up for half of the loss. I'd get to
+
+[24:20] my assignment price and then I would let the stock hopefully get up there and get called away and just relieve myself of the shares as I got in at a bad price, right? Um, relative to how deep the
+
+[24:32] correction went for this particular stock. But that's exactly how I do it. Usually I'm able to come out positive um even if I do get tested because I was collecting covered call premiums for so
+
+[24:43] long two to four weeks sometimes longer like during the tariffs crash I was collecting covered call premiums for a month and a half two months on like Nvidia
+
+[24:52] right and then of course I had to close out my covered calls at a loss uh I'll show you an example for instance we'll go to Nvidia okay I was collecting um covered call
+
+[25:03] premium here here, here, all the way down to the bottom of the tariff crash. And then right here, I already drew a circle. Uh, the stock went up, you know, over 10% in one hour when President
+
+[25:15] Trump announced no China tariffs. And I had to close out my covered calls at like a $1,500 loss. But throughout this whole time right here, I collected probably 4,500 bucks in covered call
+
+[25:29] premiums every single week. So, you know, the the net gain in total was about 3K. So, that's about the same, you know, with pounds here is what I expect is I'll be able to collect enough uh
+
+[25:41] premiums to where if I do eventually get tested and maybe I won't even get tested, I will have collected enough weekly premiums to be in a profit overall and then eventually get those
+
+[25:52] shares called away. So that is the aggressive breakout and that's how I preserve my my uh shares. I don't let them get called away. I always manage those covered calls early and I try to
+
+[26:05] never let those covered calls go um in the money. Okay. So, I'm managing these things like for instance on this current position, okay, these 150s I will close out next Friday in 7 days and I will
+
+[26:20] open up the new set hopefully at a higher strike so I can get even further away from the stock and just continue doing that until I'm at my cost basis. So, that's exactly how to do the below
+
+[26:31] cost basis covered call. We went over the fundamental myths. you know, if the guidance is bad and you want to just get out of the position, that is something you'll have to decide based off of the
+
+[26:43] fundamentals we talked about. It has to meet all of those. But Palanteer is solid and so are SoFi, Robin Hood, and some of the other stocks that have been down um during this tech draw down. So,
+
+[26:55] that's exactly how we do it, handling the test. If the stock makes a meaningful recovery, the test and test your below uh basis strike. Do not let the shares get called away at a loss.
+
+[27:06] That's number one. Close the calls at a small loss immediately roll up and out to original cost basis. The role logistics, you'll target a time frame of like 30 to 45 days out. Enough to where
+
+[27:17] you could at least get more than 1% of premium or 1% or more of premium and then be at your cost basis. So when the stock eventually does rebound all the way, you could just se sell sell your
+
+[27:30] shares at your assignment price and pick up that put premium as well. So I hope you enjoyed this video on below cost basis covered calls. If you did, please give it a thumbs up because that helps
+
+[27:41] this video boosted in the algorithm to other viewers who may need this strategy because they've never heard of it. So I appreciate you being here and I'll see you in the next one. Take care.

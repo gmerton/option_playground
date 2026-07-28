@@ -1,0 +1,19 @@
+{
+  "video_id": "eDdpTNB04ws",
+  "url": "https://www.youtube.com/watch?v=eDdpTNB04ws",
+  "title": "The Trade Sizing Strategy that Made Me Millions",
+  "channel": "TheOneLanceB",
+  "channel_id": "UCzksXiC-Ju-DTIZmMiaOVfQ",
+  "stream_date": "2025-10-25",
+  "duration": "6:30",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

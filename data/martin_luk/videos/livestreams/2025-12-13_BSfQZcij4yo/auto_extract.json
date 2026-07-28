@@ -1,0 +1,189 @@
+{
+  "video_id": "BSfQZcij4yo",
+  "date": "2025-12-13",
+  "title": "Panic sell | 12 Dec 2025",
+  "observed_trades": [
+    {
+      "date": "2025-12-13",
+      "ticker": "RIVN",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "EV momentum name, weekly relative strength / pullback-reclaim play that he had been holding",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2025-12-13_BSfQZcij4yo@02:57",
+      "confidence": "stated",
+      "notes": "He says 'I got stopped out of my Rivian' yesterday; frustrated, couldn't re-enter.",
+      "fill_timing": ""
+    },
+    {
+      "date": "2025-12-13",
+      "ticker": "TSLL",
+      "direction": "long",
+      "action": "hold",
+      "setup": "2x Tesla leveraged ETF, flag looks good; already a large position so not adding",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2025-12-13_BSfQZcij4yo@13:37",
+      "confidence": "stated",
+      "notes": "'I already have a pretty huge position on TSLL, so I'm not going to add more.'",
+      "fill_timing": ""
+    },
+    {
+      "date": "2025-12-13",
+      "ticker": "TSLA",
+      "direction": "long",
+      "action": "exit",
+      "setup": "Closed Tesla long; not comfortable holding longs as market reversed",
+      "entry_basis": "",
+      "stop": "Was using first close below 9 EMA as stop but exited early on gap-fill",
+      "source": "2025-12-13_BSfQZcij4yo@79:11",
+      "confidence": "stated",
+      "notes": "'I'm going to close my Tesla if it fills this gap... I closed my Tesla position.'",
+      "fill_timing": ""
+    },
+    {
+      "date": "2025-12-13",
+      "ticker": "PATH",
+      "direction": "long",
+      "action": "exit",
+      "setup": "UiPath long; sold because market too weak, didn't want to risk the close below the 9",
+      "entry_basis": "",
+      "stop": "First close below 9 EMA (but exited early instead of waiting)",
+      "source": "2025-12-13_BSfQZcij4yo@85:31",
+      "confidence": "stated",
+      "notes": "'I'm going to sell my path'; PATH = UiPath. He says path is extended and market too weak.",
+      "fill_timing": ""
+    }
+  ],
+  "principles": [
+    {
+      "category": "entries",
+      "text": "Prefer buying the breakout AFTER a pullback rather than the dip itself, because at the rising EMAs you don't yet know if support holds; a breakout-of-pullback gives a defined, easier-to-manage stop.",
+      "timestamp": "45:30"
+    },
+    {
+      "category": "entries",
+      "text": "Wait for the right side of the base to consolidate the selling pressure of the left side; a small/sharp pullback right side isn't ready, and straight-up-from-here off a too-small base is a lower-probability breakout.",
+      "timestamp": "41:30"
+    },
+    {
+      "category": "posture",
+      "text": "When the market has no direction (up one day, down the next) and new long positions aren't working, reduce activity, cut new-position win-rate exposure, and consider that the short side or cash may be the easier play.",
+      "timestamp": "50:36"
+    },
+    {
+      "category": "mindset",
+      "text": "In a polarized market you must be excellent at stock selection; be open-minded and prepared for the worst case even when pre-market scans lean you long, and react quickly when things turn.",
+      "timestamp": "98:23"
+    },
+    {
+      "category": "risk",
+      "text": "Cut losses quickly, don't become a bag holder, and never average down.",
+      "timestamp": "101:35"
+    },
+    {
+      "category": "exits",
+      "text": "If you can't watch the close to enforce a 'first close below the 9 EMA' stop, exit early rather than risk a larger overnight drawdown when the market is weak.",
+      "timestamp": "88:34"
+    },
+    {
+      "category": "posture",
+      "text": "Staying in cash is itself a position; don't be aggressive on the short side without cushion, but lean short if the QQQ stays under the 9 EMA.",
+      "timestamp": "96:32"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "07:40",
+      "caption_text": "SNDK, too",
+      "context": "Inside day reversal that would have been an entry yesterday; later 'I may try to buy a send DK here'. SanDisk recently re-listed as SNDK.",
+      "guess": "SNDK",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "08:02",
+      "caption_text": "SNDK could be Lumen",
+      "context": "Caption confuses SNDK with 'Lumen'; he is discussing the inside-day reversal setup.",
+      "guess": "SNDK",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "13:52",
+      "caption_text": "Cypher also have a pretty decent reversal",
+      "context": "Names a stock with a decent reversal yesterday, undercut anchor VWAP, hadn't reached 50 EMA but closed strong.",
+      "guess": "CIFR",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "18:25",
+      "caption_text": "C O S Q also looks pretty good",
+      "context": "Listed among nicely setting-up flagging/shakeout names.",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "23:12",
+      "caption_text": "ONT is could could be also a reversal buy",
+      "context": "Reversal buy on pullback then 5-minute breakout on previous candle high.",
+      "guess": "ONIT",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "28:18",
+      "caption_text": "popped up from Wolf",
+      "context": "Stock popped/gapped ~16% after the open; he considers buying it with a stop at the low of the 5-min breakout candle. 'Wolf' likely Wolfspeed.",
+      "guess": "WOLF",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "52:23",
+      "caption_text": "this Y C is going straight up",
+      "context": "Stock up ~100% from lows, second/third gap-up day; he argues 90% of time it needs to pull back.",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "57:04",
+      "caption_text": "Oh, SE Yes, USC is looking solid",
+      "context": "Weekly pullback to 21, now near 9 EMA, strong uptrend; many stocks look like this 'USC'.",
+      "guess": "USAC",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "75:00",
+      "caption_text": "This reversal of C I F I",
+      "context": "If it closes below the 9 EMA he thinks the market wants to go down further.",
+      "guess": "CIFR",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "82:33",
+      "caption_text": "X Y M C This is too illiquid",
+      "context": "Dismissed as too illiquid to trade.",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "93:11",
+      "caption_text": "Is NRG is what How can you trade this stock?",
+      "context": "Describes it as only tradable 'buy low sell high'. Could be NRG Energy or a garble.",
+      "guess": "NRG",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "93:46",
+      "caption_text": "Crowd is falling. And 10 rejects twice from the 50-day",
+      "context": "'Crowd' is a known garble for CRWD (CrowdStrike), described as falling.",
+      "guess": "CRWD",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "94:24",
+      "caption_text": "that PS 2 under all the EMAs",
+      "context": "Stock under all EMAs, rejected from the 50.",
+      "guess": "?",
+      "confidence": "unsure"
+    }
+  ]
+}

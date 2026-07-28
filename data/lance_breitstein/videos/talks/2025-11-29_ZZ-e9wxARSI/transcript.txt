@@ -1,0 +1,97 @@
+[00:00] Should you use Ballinger bands to enter or exit a trade to find areas of support and resistance? Hi, I'm Lance Britstein, 8 figure P&L per year trader with over a hund00 million in verified profits and
+
+[00:11] mentored hundreds of six, seven, and 8 figure P&L per year traders. And I've used Ballinger bands for over 15 years in my Wall Street career. I'm going to tell you what they are, how I use them,
+
+[00:22] and show you tons of examples so that you can apply them to your trading. Ballinger bands are a versatile tool and truthfully pretty much the main indicator I use on my intraday and daily
+
+[00:32] chart. Developed by John Ballinger in the 1980s, these bands consist of three lines. A central moving average, typically the 20 period simple moving average, and two standard deviation
+
+[00:42] lines plotted above and below the moving average. From the outset, I want to make it explicitly clear that I do not use Ballinger bands as exact levels. meaning I am never buying the break above a
+
+[00:53] Ballinger band. We're using a Ballinger band as a price target or anything else along those lines, pardon the pun. I find that the Ballinger bands prove useful in three major ways. The first is
+
+[01:04] the pendulum concept. Much like a pendulum or a rubber band, stocks without fresh news can often exhibit strong mean reversion characteristics. In other words, when things go too far
+
+[01:14] too fast in either direction, that rubber band tends to snap back towards the equilibrium. I'll go so far as to say that the further a stock is stretched in one direction, the higher
+
+[01:25] the probability of a successful reversal and the greater in magnitude that reversal is likely to be. But always remember, just because a stock is stretching in one direction doesn't mean
+
+[01:35] it can't always go further. During my time as a prop trader, we always had a saying, crazy can always get crazier. And economist John Maynard Keen said it best, the market can stay irrational
+
+[01:46] longer than you can stay solvent. However, because Ballinger bands show standard deviations versus the equilibrium price, you can execute some interesting plays based on a stock going
+
+[01:55] from steady strong to very weak or steady weak to very strong. Now, because the bands show a price two standard deviations away, the second way I use Ballinger bands is as a basic measure of
+
+[02:09] overextension. A stock can be considered overextended if when trending price ends up accelerating to be above or below the Ballinger bands. In my many years of experience, the absolute best
+
+[02:20] capitulation plays tend to have price meaningfully extended below or above the Ballinger bands after already trending and being extended in a direction. Keep in mind, this is just one measure of
+
+[02:31] overextension I consider when judging whether or not a trade is worth taking. That is something we'll dive into in a separate video as there is a lot of subject matter on that topic. Nuance and
+
+[02:41] experience always matter. For example, think about if a stock has been consolidating tightly for a while. If the price range has been very tight, that doesn't mean that at an upper band
+
+[02:50] the stock is overextended. Context matters. In fact, Ballinger bands during periods of consolidation help us in an entirely different way. The third way I use Ballinger bands is they help us
+
+[03:01] measure volatility contraction and get a feel for if we are in the dreaded no man's land. No man's land happens when bands narrow significantly, suggesting a period of low volatility and often a
+
+[03:12] precursor of a period when consolidation is needed. Often Ballinger bands contract after a period of big expansion. That coupled with the stock being inside the overall range can be an
+
+[03:23] indicator we have taken a step into no man's land. And real quick, I've noticed that over 50% of you watching this video aren't subscribed. And the biggest way you can support me and my team is by
+
+[03:33] clicking that subscribe button. Okay, back to the old Ballinger bands. When Ballinger bands are contracting, I often won't look to take any trades within the range without proper consolidation.
+
+[03:43] These types of nuances help me avoid a lot of losses that other people might otherwise take. All of that sounds great in theory, but I know what you all want. Practical examples so you can see how
+
+[03:54] these apply in the real world. I don't know if we can call trading the real world because I think of it all as a video game, but work with me here people. Let me first show you how
+
+[04:01] Ballinger bands can be used as a measure of the pendulum concept. Take this daily chart of Palunteer. One of my best trades of 2025 was buying Palunteer on August 20th. The reasoning behind it was
+
+[04:11] this. The stock gapped up on earnings on August 5th and was steadily strong above the upper Ballinger band. Note that the bars weren't accelerating higher and being above the upper Ballinger alone
+
+[04:21] doesn't lead me to short or be bearish. We do though end up selling off and then quickly accelerate lower towards that lower Ballinger band. Now context is key here. This stock was steadily strong and
+
+[04:32] uptrending which leads to upward angled Ballinger bands. We then went from steady strong above the bands. In other words, if we were to think of the pendulum as being -10 peak panic, zero
+
+[04:44] is equilibrium, and positive 10 is peak euphoria. We were a steady strong positive 6 or so. In a matter of a few days, we melt all the way to the lower Ballinger band in what I would describe
+
+[04:55] as sentiment resembling negative8 or so. In fact, in the final two days, the stock lost almost 20% in value despite being a large established company. To summarize, we went from positive6 steady
+
+[05:08] strong on the sentiment pendulum all the way to negative8 bearish panic in a matter of days. Even better, want to know how I timed my entry on the intraday? I used the 20 period moving
+
+[05:18] average, that middle line from my Ballinger bands to time an entry because the stock had been using the moving average as resistance and then that break of the moving average I viewed as
+
+[05:28] a break of the trend lower. For more on how I use and apply moving averages, check out this video. It's worth emphasizing again that Ballinger bands were just one tool. I was also factoring
+
+[05:37] in the capitulatory volume that occurred that day, tons of nuances involving the intraday pattern to time my entry. And it is the confluence of these systems and indicators that lead to successful
+
+[05:47] trading. Now for an example on how I use Ballinger bands to gauge overextension. Take this chart of UA. This stock was exploding higher and peaked on October 14th, 2025, which not so coincidentally
+
+[05:59] also had capitul that day, which can be used as an indicator that a top might be in. Because the stock had already been trending higher, I would consider all the preceding days spent above the upper
+
+[06:10] Ballinger band as overextended. This also shows how important it is to integrate other concepts into your trading rather than just blindly buy or sell using Ballinger bands in some
+
+[06:20] overly simplified method. To have edge, we need to apply a mix of strategies and concepts. In this example, one could structure a daily short swing trade by waiting for the trend to reverse or what
+
+[06:31] I call the right side of the V and shorting. when we break prior bar lows on the daily chart using a simple system with a stop of prior daily bar highs. You would end up making over $3 in
+
+[06:41] profit. And this is exactly the type of trade that I love to make. It's worth illustrating in this chart of ION Q though that context matters. When a stock has been consolidating and then
+
+[06:51] we're just breaking out of the range because of the contracting Ballinger bands, we easily can end up above that upper Ballinger band. As price moves out of the range, the Ballinger bands will
+
+[07:01] expand as well. It is only in trending markets with expanding Ballinger bands that I tend to use them as a gauge of overextendedness. So this ION Q example I would not consider overextended as it
+
+[07:12] breaks out of the range. This final example shows what happens when Ballinger bands are contracting and what I consider no man's land. On November 21st, 2024, MSTR had an amazing short
+
+[07:24] opportunity when it had an exhaustion gap higher that ended up collapsing far lower. However, in the weeks that followed, the Ballinger bands end up contracting while MSTR was in the middle
+
+[07:34] of the daily range. This is even evidenced by how prices are just oscillating around that moving average. During periods like this, I will often avoid trading the stock or at the
+
+[07:44] minimum sizing any trades far less than I did during the huge opportunity that came prior. Many argue against certain trading indicators, but I found that the Ballinger bands provide a great visual
+
+[07:55] representation of price and volatility that the naked eye otherwise couldn't remotely achieve as effectively. For that reason alone, Ballinger bands are essential to my trading in addition to
+
+[08:05] all of the benefits just mentioned. Ballinger bands will never give you the exact entry or exit, but they will be a useful tool that can help improve your system of trading. Want more case
+
+[08:15] studies and examples? Then consider checking out my trading course. if free is a better option. I'll be covering a bunch of other indicators. So, hit that subscribe button and stay tuned for
+
+[08:23] more.

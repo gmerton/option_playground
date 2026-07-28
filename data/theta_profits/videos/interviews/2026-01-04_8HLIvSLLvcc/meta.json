@@ -1,0 +1,19 @@
+{
+  "video_id": "8HLIvSLLvcc",
+  "url": "https://www.youtube.com/watch?v=8HLIvSLLvcc",
+  "title": "A Smart Options Trade for Stocks that Could Double (Ratio Diagonal)",
+  "channel": "Theta Profits",
+  "channel_id": "UCzGARfberQ8nRRbsjK90BHg",
+  "stream_date": "2026-01-04",
+  "duration": "27:20",
+  "summary": "Levi Woods (Kelowna, BC; ~12 yrs options, second channel appearance) pitches a call ratio diagonal: buy 3 long-dated OTM calls on a stock that could double (CHWY, PLTR) and finance their theta by selling 2 near-dated slightly-OTM calls each week, sized to stay net-long-delta (~+72) AND net-positive-theta at once — something a plain long call or PMCC can't do. Downside is cleanly defined (all calls, max loss ~= the debit) with a small bounded upside 'valley' from the 2:3 ratio; self-rated risk 4/10. Honest for the channel (he volunteers that the long-put variation lost, that his target names carry 30-40c spreads, and that the trade requires a directional view), but there is no separable track record — ~6 self-reported trades in a benign 6-month window and a showcased 'annualized 120%' Chewy trade that is open, unrealized, and mark-to-model. Edge is really stock selection plus thin weekly roll credits that wide spreads and commissions likely eat. Write-up: strategies/ratio_diagonal.md (conviction 2/5).",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

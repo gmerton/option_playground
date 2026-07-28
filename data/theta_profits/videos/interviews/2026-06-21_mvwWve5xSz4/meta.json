@@ -1,0 +1,19 @@
+{
+  "video_id": "mvwWve5xSz4",
+  "url": "https://www.youtube.com/watch?v=mvwWve5xSz4",
+  "title": "How Reiner Achieved a 100% Win Rate Selling Short Strangles",
+  "channel": "Theta Profits",
+  "channel_id": "UCzGARfberQ8nRRbsjK90BHg",
+  "stream_date": "2026-06-21",
+  "duration": "44:34",
+  "summary": "Reiner Hoffmann sells gated short strangles on RUT (10-delta put / 8-delta call, 30 DTE, 50% profit target), entering only when IV is elevated and the vol term structure is in contango, and claims a 100% win rate over ~3 years (~75 trades) defended by a delta-35 watch trigger, a 20%-of-margin hard stop, micro-future tail hedges, and conservative ~10% sizing. The 100% headline is statistically vacuous on an undefined-risk seller in a benign window and his own +10% gap near-miss shows the tail is real. Write-up: strategies/short_strangle_reiner.md (conviction 2/5).",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

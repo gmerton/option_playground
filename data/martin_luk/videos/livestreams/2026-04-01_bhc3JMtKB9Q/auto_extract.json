@@ -1,0 +1,64 @@
+{
+  "video_id": "bhc3JMtKB9Q",
+  "date": "2026-04-01",
+  "title": "A lot of talking | 1 Apr 2026",
+  "observed_trades": [
+    {
+      "date": "2026-04-01",
+      "ticker": "MRVL",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Holding Marvell since the 10 Mar entry on a pullback to the 9 EMA and prior highs after a strong Nvidia-news gap-up; full position, no profit taken, training to sit and hold winners longer.",
+      "entry_basis": "5-minute candle breakout on pullback into daily 9 EMA / prior swing high (10 Mar)",
+      "stop": "",
+      "source": "2026-04-01_bhc3JMtKB9Q@10:48",
+      "confidence": "stated",
+      "notes": "Caption 'MFA'/'Marvell' = MRVL. He describes the winning trade as 'MFA' then clearly means Marvell (Nvidia news, VCP weekly). Says he is holding since the 10 March entry. Flagged in ambiguous_tickers.",
+      "fill_timing": "2026-03-10"
+    },
+    {
+      "date": "2026-04-01",
+      "ticker": "DELL",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Holding Dell from a 2-year weekly base; bought the shakeout into the EP low / 9 EMA on relative strength while the market rolled over; trading it on the weekly chart.",
+      "entry_basis": "Shakeout into EP low / 9 EMA",
+      "stop": "",
+      "source": "2026-04-01_bhc3JMtKB9Q@106:33",
+      "confidence": "stated",
+      "notes": "Dell = DELL; held weekly position, building higher lows during the correction. Entered around the earnings shakeout; exact entry date not stated this stream.",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-04-01",
+      "ticker": "?",
+      "direction": "short",
+      "action": "exit",
+      "setup": "Covered most of his shorts last Friday; has been mostly flat while traveling (a few small losing trades) and is now long-biased waiting for pullbacks into the rising 9 EMA.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-04-01_bhc3JMtKB9Q@07:27",
+      "confidence": "stated",
+      "notes": "He says he 'covered most of my shorts' last Friday but does not name the short tickers; ticker set to '?'. Generic short-book cover. Flagged in ambiguous_tickers.",
+      "fill_timing": "friday"
+    }
+  ],
+  "principles": [
+    { "category": "posture", "text": "Trade what you see, not what you think: get more bullish only when your longs work and the market holds the rising 9 EMA; don't be aggressive long once it loses the 9 EMA.", "timestamp": "29:57" },
+    { "category": "posture", "text": "After two gap-down days, a gap-up back above the hourly 9 EMA (extended from the daily 9) is good timing to try some bounce/mean-reversion longs, but it's fine to sit out while the market is still below the 9 EMA.", "timestamp": "20:52" },
+    { "category": "mindset", "text": "Shorting during a downtrend builds a profit cushion before the next uptrend, so a failed bounce-long only costs cushion, not capital.", "timestamp": "23:23" },
+    { "category": "risk", "text": "Never widen a stop or take high risk to chase; only in rare cases (2-3 times/year) use an intraday entry to chase a name you really want in a great market.", "timestamp": "57:22" },
+    { "category": "risk", "text": "In a drawdown, sizing up to win it back creates a death spiral; instead reduce size or sit out, because drawdowns mean either you're trading badly or the market doesn't suit your style.", "timestamp": "81:28" },
+    { "category": "entries", "text": "Prefer liquid stocks breaking out from long bases over names just riding the 50 EMA straight up; the most powerful moves come from real bases.", "timestamp": "38:43" },
+    { "category": "mindset", "text": "Bad market conditions are the best time to review and correct your mistakes (entries, sizing, stops, stock picking) by reflecting on losing trades; a good market will always come, so protect your mental and financial capital until it does.", "timestamp": "110:24" }
+  ],
+  "ambiguous_tickers": [
+    { "timestamp": "07:27", "caption_text": "Since this Friday. Where I covered most of my shorts.", "context": "He covered most of his short book last Friday but never names the individual short tickers.", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "10:48", "caption_text": "the recent winning trades that I've took is MFA", "context": "A winning long bought on a pullback to the 9 EMA / prior highs after a strong Nvidia-news gap-up; he holds it on the weekly (VCP base) since 10 Mar.", "guess": "MRVL", "confidence": "likely" },
+    { "timestamp": "73:51", "caption_text": "switch the signal the dates. on the S&D K ... S&D K if it continues higher", "context": "A name he calls a legendary move; breakout on 2 Jan 2026 and an EP day that future traders will run into.", "guess": "SNDK", "confidence": "likely" },
+    { "timestamp": "44:13", "caption_text": "the power What is it like TV and VR T", "context": "Electricity-production / power stocks discussed alongside TSMC doing the circuits.", "guess": "VRT", "confidence": "unsure" },
+    { "timestamp": "51:57", "caption_text": "ETH home breakouts", "context": "A technically great breakout he won't trade because it's a biotech and too thin; compares it to if it were on Fastly.", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "109:51", "caption_text": "S&P SEDG. I was looking to buy this pullback but I hesitated", "context": "A name he was looking to buy on a pullback but passed on.", "guess": "SEDG", "confidence": "likely" },
+    { "timestamp": "26:16", "caption_text": "I'm also tracking NVRs ... shakeout on the 21 EMA", "context": "A name with a nice weekly shakeout candle and a base since October with multi-month potential.", "guess": "?", "confidence": "unsure" }
+  ]
+}

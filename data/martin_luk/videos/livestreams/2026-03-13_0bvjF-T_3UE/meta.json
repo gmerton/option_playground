@@ -1,0 +1,19 @@
+{
+  "video_id": "0bvjF-T_3UE",
+  "url": "https://www.youtube.com/watch?v=0bvjF-T_3UE",
+  "title": "No panic yet | 13 Mar 2026",
+  "channel": "martinlukkt",
+  "channel_id": "UCB6jWJJvO_sWZ2PwgmMcxCw",
+  "stream_date": "2026-03-13",
+  "duration": "1:20:21",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

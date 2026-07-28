@@ -1,0 +1,115 @@
+{
+  "video_id": "oxkdLQZoef0",
+  "date": "2026-04-08",
+  "title": "Huge gap-up and $CAR short | 8 Apr 2026",
+  "observed_trades": [
+    {
+      "date": "2026-04-08",
+      "ticker": "USO",
+      "direction": "short",
+      "action": "exit",
+      "setup": "Shorted oil via USO on a 5-minute candle after a failed breakout closed below the 9 EMA at the prior high (~116-117); closed the short pre-market for ~10-15 hour overnight gain.",
+      "entry_basis": "5-minute candle around 114 high after failed breakout / close below 9 EMA",
+      "stop": "",
+      "source": "2026-04-08_oxkdLQZoef0@07:53",
+      "confidence": "stated",
+      "notes": "Caption 'USO'; he says he shorted oil using USO and closed pre-market. It was a ~10-15 hour overnight trade, so the short was entered the prior afternoon.",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2026-04-08",
+      "ticker": "CAR",
+      "direction": "short",
+      "action": "entry",
+      "setup": "Shorting the parabolic Avis (CAR) rip into prior highs / exhaustion candle on huge volume; the main and possibly only trade of the day.",
+      "entry_basis": "Failed push above prior bar high after huge move; first attempt then add on push higher",
+      "stop": "Raised to 300 (then plans 330 if it hits 290)",
+      "source": "2026-04-08_oxkdLQZoef0@11:37",
+      "confidence": "stated",
+      "notes": "Caption 'car' = Avis Budget CAR; title confirms $CAR short. He raises stop to 300 after ending stream.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-04-08",
+      "ticker": "CAR",
+      "direction": "short",
+      "action": "hold",
+      "setup": "Holding the CAR short overnight; raising stop to 300, then 330 if it reaches 290, willing to take 1-2% loss if it grinds to 300+.",
+      "entry_basis": "",
+      "stop": "300, then 330 if it touches 290",
+      "source": "2026-04-08_oxkdLQZoef0@114:46",
+      "confidence": "stated",
+      "notes": "Explicit stop management on the CAR short.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-04-08",
+      "ticker": "NBIS",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Entered Nebius (NBIS) yesterday on an intraday range/flat breakout around 113 timed with the oil breakdown; focusing on the theme/stock rather than a perfect chart, ~1% stop (~0.3% account risk).",
+      "entry_basis": "Intraday ~113 breakout (hourly), entered alongside oil 15-min breakdown",
+      "stop": "~1% (tight intraday stop)",
+      "source": "2026-04-08_oxkdLQZoef0@45:38",
+      "confidence": "stated",
+      "notes": "Caption 'NBS'/'NPS'/'Nius'/'napas' = Nebius NBIS, an AI/crypto-adjacent name he entered the prior day.",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2026-04-08",
+      "ticker": "BMNR",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Crypto-proxy long (BitMine) held through a near-stop shake; anticipation play on a crypto 4-hour reclaim of the 50 EMA, ~1% stop = ~0.3% account risk.",
+      "entry_basis": "Anticipation of 4-hour reclaim / new uptrend support at 50 EMA",
+      "stop": "~1% (tight)",
+      "source": "2026-04-08_oxkdLQZoef0@10:32",
+      "confidence": "stated",
+      "notes": "Caption 'BMR'/'Bit Mine' = BMNR; he says BMNR and coin came within ~1-2% of his stop but held.",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-04-08",
+      "ticker": "COIN",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Coinbase long held through a shake (~2% from being stopped out); will consider closing crypto longs if they close below the 4-hour 9 EMA.",
+      "entry_basis": "",
+      "stop": "Considering exit on close below 4-hour 9 EMA",
+      "source": "2026-04-08_oxkdLQZoef0@96:21",
+      "confidence": "stated",
+      "notes": "Caption 'coin' = Coinbase; paired with BMNR as crypto longs.",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-04-08",
+      "ticker": "AAOI",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Holding AAOI; got lucky it didn't stop him out Monday; a fast (13 ADR), very liquid potential new leader.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-04-08_oxkdLQZoef0@84:51",
+      "confidence": "inferred",
+      "notes": "Caption 'AOI'/'AOI' = AAOI; he discusses it as a held position that nearly stopped out Monday.",
+      "fill_timing": ""
+    }
+  ],
+  "principles": [
+    { "category": "posture", "text": "Don't chase on a huge gap-up day for longs, and don't short into a gap-down day; gap days are poor entry timing for the corresponding side.", "timestamp": "09:27" },
+    { "category": "macro", "text": "Ignore news, CNBC, FT, Trump's Twitter; only the charts matter and news that is pre-announced is mostly already priced in (especially the bad side).", "timestamp": "54:37" },
+    { "category": "risk", "text": "A ~1% tight stop (~0.3% of account) lets you take many attempts cheaply; even if stopped out it's no big deal, and if it works the risk/reward is huge.", "timestamp": "50:48" },
+    { "category": "entries", "text": "In the current regime, pullbacks with tight stops work better than breakouts because breakouts no longer offer tight stops; find the entry tactic that gives the tightest possible stop right now.", "timestamp": "66:20" },
+    { "category": "entries", "text": "For a new uptrend, price must first hold above the fastest (9) EMA; pulling back to a rising 9 EMA and finding support confirms it, and on lower time frames support must hold before higher time frames.", "timestamp": "74:09" },
+    { "category": "exits", "text": "For shorts, selling into strength is welcome anytime; this also makes it easier to hold and avoid being shaken out.", "timestamp": "111:20" },
+    { "category": "mindset", "text": "Keep rules and setups as simple as possible; complex multi-rule checklists make decision-making too hard.", "timestamp": "79:18" }
+  ],
+  "ambiguous_tickers": [
+    { "timestamp": "10:32", "caption_text": "BMR and coin", "context": "Two crypto-proxy longs that came within ~1-2% of his stop but held and bounced; cited as examples of following your own trades.", "guess": "BMNR", "confidence": "likely" },
+    { "timestamp": "45:38", "caption_text": "NBS entry yesterday ... Nius ... napas", "context": "A name he entered on an intraday ~113 breakout timed with the oil breakdown; AI/crypto-adjacent leader, ~1% stop.", "guess": "NBIS", "confidence": "likely" },
+    { "timestamp": "15:57", "caption_text": "This semi ETF, this XX is gapping up 6%", "context": "A semiconductor ETF gapping up 6%, more than twice its ADR.", "guess": "SOXX", "confidence": "unsure" },
+    { "timestamp": "103:21", "caption_text": "fastly 15 minute range breakouts", "context": "A liquid leader riding the 9 EMA; he passes on today's gap-up version of the setup.", "guess": "FSLY", "confidence": "likely" },
+    { "timestamp": "106:01", "caption_text": "DL is on my is in my watch list", "context": "A slower-theme name kept on the watchlist alongside DHI.", "guess": "DAL", "confidence": "unsure" },
+    { "timestamp": "107:28", "caption_text": "circle could be another one", "context": "A crypto-adjacent name of interest if crypto finds support and builds higher lows.", "guess": "CRCL", "confidence": "likely" }
+  ]
+}

@@ -1,0 +1,268 @@
+{
+ "video_id": "Oac266pBZMY",
+ "date": "2026-07-24",
+ "title": "EP71 | 24 Jul 2026",
+ "observed_trades": [
+  {
+   "date": "2026-07-24",
+   "ticker": "SNDK",
+   "direction": "short",
+   "action": "reentry",
+   "setup": "Semi-leader short (continuation of the bearish semi book). Stopped out, then re-entered on the breakdown. Context at 26:59: SNDK surfed the 50 EMA during the whole uptrend and is now losing the 50 for the first time, bouncing into the DECLINING 50 — 'shorting yesterday would be the best timing for it.'",
+   "entry_basis": "Re-entered at the '21 EMA daily / 60-minute 150 EMA / 15 minutes breakdown' (caption garbled — some multi-timeframe EMA breakdown trigger)",
+   "stop": "",
+   "source": "2026-07-24_Oac266pBZMY@04:49",
+   "confidence": "stated",
+   "notes": "Answering viewer 'You didn't get stopped out in SNDK?' — 'Yes, I did get stopped out, but I re-enter it.' Timing of the stop/re-entry not stated; the 7/23 stream (EP70) expected SNDK to stop him ('probably I will also got stops from SNDK'), so the stop was most likely Thursday and the re-entry Thursday or Friday pre-open.",
+   "fill_timing": ""
+  },
+  {
+   "date": "2026-07-24",
+   "ticker": "?",
+   "direction": "short",
+   "action": "stopped_out",
+   "setup": "Repeated early stop-outs shorting the first 5–15 minute reversals yesterday: 'not that pleased with my entries yesterday. Got too many losses in the earlier part of the day' (05:30); 'yesterday I just kept stopping out in the first 15 minutes of the day' (16:50). Tickers of the stopped names mostly unstated (MARA named separately).",
+   "entry_basis": "Took the first 5-minute reversal shorts at the open — today's stated fix is to wait longer",
+   "stop": "Stopped repeatedly in the first 15 minutes",
+   "source": "2026-07-24_Oac266pBZMY@05:30",
+   "confidence": "stated",
+   "notes": "Explicitly NOT sizing up after the losing streak (06:02) — contrasts with his younger self who would revenge-size. Still called the damage 'manageable.' These stop-outs are presumably among the 6-7 shorts he opened Thursday (see the add/recap row).",
+   "fill_timing": "yesterday"
+  },
+  {
+   "date": "2026-07-24",
+   "ticker": "MARA",
+   "direction": "short",
+   "action": "stopped_out",
+   "setup": "Crypto-miner short (fits the crypto-short basket he wanted on 7/23: MSTR/COIN/WULF). 'Mara stops me out yesterday and now it is showing weakness' — knocked out before the move went his way.",
+   "entry_basis": "Not stated",
+   "stop": "Stopped out yesterday; the stock is now breaking down without him",
+   "source": "2026-07-24_Oac266pBZMY@13:29",
+   "confidence": "stated",
+   "notes": "Stop-out explicitly stated; SHORT direction inferred from context (a stopped short + 'now showing weakness' = the trade would have worked; matches his stated crypto-short intent from EP70). Follow-on lesson at 14:58: right idea + decent execution can still lose.",
+   "fill_timing": "yesterday"
+  },
+  {
+   "date": "2026-07-24",
+   "ticker": "WULF",
+   "direction": "short",
+   "action": "short",
+   "setup": "'I believe the wolf is my target today' (07:19). Crypto-miner short, the name he couldn't short on 7/23 for lack of buying power. Today he deliberately waited — 'decided to be a little bit more patience and wait a little bit longer. It didn't take the the first five minute reversals and then now it's going having a pretty strong follow through into the downside' (15:50–16:38).",
+   "entry_basis": "Patient intraday entry — skipped the first 5-minute reversal (yesterday's mistake), entered on a later reversal as it followed through lower",
+   "stop": "Not stated",
+   "source": "2026-07-24_Oac266pBZMY@15:50",
+   "confidence": "inferred",
+   "notes": "INFERRED: he never says the literal word 'shorted WULF'; the sequence is target-declared-today + 'this wolf as well... decided to be more patient... now having strong follow through into the downside.' Read as an executed short working in his favor, but could arguably be narration of a name he was still stalking. 'wolf' = WULF decode confirmed by Gabe on the 7/23 video.",
+   "fill_timing": "today"
+  },
+  {
+   "date": "2026-07-24",
+   "ticker": "?",
+   "direction": "long",
+   "action": "sell",
+   "setup": "RECAP of the book flip, with more precise timing than EP70: 'on Wednesday at the open I was still heavily long. I have five or six long position at the open and then... on Wednesday midday I closed all my longs' (107:33–108:07).",
+   "entry_basis": "Proactive close of the whole long book at Wednesday midday",
+   "stop": "",
+   "source": "2026-07-24_Oac266pBZMY@107:33",
+   "confidence": "stated",
+   "notes": "Same event as the EP70 'closed the entire long book' trade (7/23 extract, fill_timing 'yesterday'); this retelling pins it to Wednesday MIDDAY rather than the evening review. Known constituents from 7/21–7/22 streams: NET, PANW, MSTR, BMNR?, COIN.",
+   "fill_timing": "Wednesday"
+  },
+  {
+   "date": "2026-07-24",
+   "ticker": "SKHY",
+   "direction": "short",
+   "action": "entry",
+   "setup": "RECAP: immediately after closing all longs Wednesday midday, 'I shorted SK highix' — the first short of the re-engaged semi book.",
+   "entry_basis": "Wednesday midday, same session as the long-book liquidation",
+   "stop": "",
+   "source": "2026-07-24_Oac266pBZMY@108:07",
+   "confidence": "stated",
+   "notes": "Complements the EP70 row where this SKHY short was stopped out at Thursday's open — this recap supplies the entry timing (Wednesday midday) that EP70 left unstated. SK Hynix ADR decode (SKHY) is a prior confirmed decode.",
+   "fill_timing": "Wednesday"
+  },
+  {
+   "date": "2026-07-24",
+   "ticker": "?",
+   "direction": "short",
+   "action": "add",
+   "setup": "RECAP: 'yesterday and then I really sized in into the into the shorts... it's very aggressive and a little bit dangerous' (108:07–108:25); at 110:10 he references opening 'six or seven short position in one day' as what the triple-digit profit cushion lets him do.",
+   "entry_basis": "Aggressive same-week exposure flip: heavily long Wednesday open → 6-7 short positions by Thursday",
+   "stop": "",
+   "source": "2026-07-24_Oac266pBZMY@108:07",
+   "confidence": "stated",
+   "notes": "Constituents across EP70/EP71: SKHY (stopped Thu open), SNDK, LITE, MARA (stopped Thu), plus unnamed others. He frames the aggressiveness itself as conditional on profit cushion + self-monitoring (109:28–110:52), and explicitly warns viewers not to copy it.",
+   "fill_timing": "yesterday"
+  },
+  {
+   "date": "2026-07-24",
+   "ticker": "BOIL",
+   "direction": "long",
+   "action": "entry",
+   "setup": "HISTORICAL RECAP (2022 bear market): his best trade of 2022 and the source of most of that year's return — long BOIL (leveraged natural-gas ETF) riding the nat-gas uptrend while nearly all his 2022 shorts lost.",
+   "entry_basis": "Bought early in the trend (exact day uncertain even to him), then trailed the position with the 9 EMA all the way up",
+   "stop": "Trailed the daily 9 EMA; when it went parabolic (~17% above the 9 EMA) he sold into strength per Qullamaggie's live advice instead of waiting for the first close below the daily 9/10; sold the last ~20% piece on the gap down near the top",
+   "source": "2026-07-24_Oac266pBZMY@38:56",
+   "confidence": "stated",
+   "notes": "Historical trade from 2022, told as a story (38:56–44:05) — kept for the exit lesson: sell parabolic extension into strength or trail the 60-min 9/10 EMA rather than the daily. He was up only ~4–8% in 2022 overall with drastically reduced trade count.",
+   "fill_timing": "2022"
+  },
+  {
+   "date": "2026-07-24",
+   "ticker": "GME",
+   "direction": "long",
+   "action": "entry",
+   "setup": "HISTORICAL RECAP (self-deprecating 'am I a genius' answer): bought GME in the PRE-MARKET at ~130–150 and it dropped 50% in 30 minutes — 'You cannot see my entry in the daily chart because I bought it at the pre-market.'",
+   "entry_basis": "Pre-market chase of the mania move",
+   "stop": "Not stated; loss implied",
+   "source": "2026-07-24_Oac266pBZMY@48:22",
+   "confidence": "stated",
+   "notes": "Year not stated — almost certainly the Jan-2021 GME squeeze given the 130–150 pre-market prints. Kept as an actual (historical) trade; illustrative of the mistakes-forgiveness theme, not current positioning.",
+   "fill_timing": ""
+  }
+ ],
+ "principles": [
+  {
+   "category": "market_read",
+   "text": "Stance unchanged from the 7/22 flip: fully bearish/short. Not many tradable ideas this morning, but 'we're getting a small bounce — which could favor the short side': in a downtrend a bounce is supply, an entry opportunity for shorts, not a reason to cover.",
+   "timestamp": "04:16"
+  },
+  {
+   "category": "risk",
+   "text": "Never size up after a losing streak to make the losses back as fast as possible — that instinct (his own, 2-3 years ago) is the first step of a vicious cycle that ends in a larger drawdown. After yesterday's string of stop-outs he explicitly kept size flat and did not 'keep shorting every bounce regardless of the risk or the market.'",
+   "timestamp": "06:02"
+  },
+  {
+   "category": "mindset",
+   "text": "Your original idea can be right and your execution decent and you can still lose: a lot of the time price does not follow your expectations, or knocks you out before going your way (MARA stopping him out and then breaking down). That, not bad analysis, is much of what makes trading difficult.",
+   "timestamp": "14:58"
+  },
+  {
+   "category": "entries",
+   "text": "Intraday-short patience rule learned from yesterday's losses: don't take the FIRST 5-minute reversal at the open — that's how he kept stopping out in the first 15 minutes. Waiting for a later, cleaner reversal (WULF today) caught the strong follow-through with none of the churn.",
+   "timestamp": "16:38"
+  },
+  {
+   "category": "market_read",
+   "text": "Rotation read on the bounce day: defensive sectors leading, midcaps leading, tech getting beaten down, many names selling off hard into resistance after the open — a risk-off tape beneath a green-ish index, consistent with staying short.",
+   "timestamp": "17:14"
+  },
+  {
+   "category": "market_read",
+   "text": "Leader character change as short timing: SNDK surfed the 50 EMA for the entire uptrend; now it is losing the 50 for the FIRST time and bouncing into the declining 50 — the first such bounce after a long trend is the highest-quality short entry ('shorting yesterday would be the best timing'). Whether it now surfs the 50 DOWN, 'no one knows — we will see.'",
+   "timestamp": "26:59"
+  },
+  {
+   "category": "market_read",
+   "text": "This correction may be more destructive than people expect, precisely because the post-liberation-day rally taught everyone that buying every dip prints money. Habits and mindsets formed in a lockout/stage-2 rally (2020-21 analog: Tesla, EV names, speculative garbage later sliced in half) get people smashed when the market deteriorates: 'in a very strong uptrend a lot of mistakes would be forgiven... when the market starts to slow down, you're gonna lose all the money back. Buy the dips — until it doesn't.'",
+   "timestamp": "28:04"
+  },
+  {
+   "category": "market_read",
+   "text": "Late-stage crowding marker: before April the heat on SK Hynix wasn't crazy, but on this last leg up retail piled into the semi leader with leverage, margin, even loans — the crowd arrives in the last part of the rally. 'There will be another SK Hynix in the future and we'll see the same thing again' — the ticker changes, the story doesn't.",
+   "timestamp": "35:19"
+  },
+  {
+   "category": "posture",
+   "text": "Bear-market playbook from his own 2022 (+4–8%): drastically reduce trade count; accept that shorts learned in a bull market mostly fail at first (nearly all his 2022 shorts lost); most of the year's return can come from ONE well-trailed trend trade (long BOIL). Survival plus one trend carried the year.",
+   "timestamp": "37:59"
+  },
+  {
+   "category": "exits",
+   "text": "Parabolic-extension exit (from Qullamaggie, on his 2022 BOIL trade): when a position accelerates ~17% above the daily 9 EMA, you don't have to wait for the first close below the daily 9/10 — selling into strength is fine, or downshift and trail the 60-minute 9/10 EMA so the lower timeframe takes you out near the top.",
+   "timestamp": "42:32"
+  },
+  {
+   "category": "study",
+   "text": "Filter the noise by demanding PROOF: he anchored on Qullamaggie's style because Qullamaggie is a verified example of the strategy working at the highest level, while most strategies online (99%-win-rate MACD/RSI/Bollinger 'secret indicator' videos) come with no proof — just a Patreon link and a discount code.",
+   "timestamp": "61:04"
+  },
+  {
+   "category": "study",
+   "text": "Verify everything with the market: 'everybody could be wrong, but the market is always right.' Even mentors' rules are hypotheses to test against your own fills, not gospel.",
+   "timestamp": "66:10"
+  },
+  {
+   "category": "entries",
+   "text": "How his signature entry was born: reviewing 2023-24 losers he found breakouts/opening-range-high entries stopping him out and THEN going his direction, with rising frequency. Once you find 5-10-20 examples of the same failure, redesign the entry — wait for the shakeout and buy the intraday pullback / 5-minute range breakout reversal instead of the opening-range high. Takeaway: don't blindly follow the standard entry; let your own losing-trade review re-engineer the trigger.",
+   "timestamp": "69:09"
+  },
+  {
+   "category": "study",
+   "text": "Knowing vs understanding an entry: the tight-range breakout isn't 'the best buy point' because a book says so — it's best because it strictly limits downside and precedes range expansion (high win rate, 10-20R potential). Once you understand the FUNDAMENTALS (defined risk + win rate + reward), the same logic can justify buying a 21-EMA pullback — breakout vs pullback are opposite tactics built on identical reasons.",
+   "timestamp": "76:56"
+  },
+  {
+   "category": "study",
+   "text": "Keep asking why about every detail in the market (why did Tesla find resistance THERE?). Most of the time you won't find the answer — but the observations you eventually generate yourself are the most valuable thing you own, 'because that originates from you, not the others,' and what you truly understand works far better than what you copy.",
+   "timestamp": "83:32"
+  },
+  {
+   "category": "mindset",
+   "text": "Discretionary vs systematic is a personality fit, not a ranking: he sides with the 'art of trading' and keeps no checklist/rulebook, but a trader with a strong ego, emotional swings, or weak self-discipline may be better served by hard rules. 'There is no one way of trading — which one suits you the best?'",
+   "timestamp": "87:51"
+  },
+  {
+   "category": "mindset",
+   "text": "The best lessons are always in the drawdowns, the mistakes, the difficult periods, the market crashes (to a viewer who lost 80% overtrading options) — and living through one mania (this AI run, which 'will definitely fade away one day') is what saves your fortune in the NEXT one, decades later.",
+   "timestamp": "93:35"
+  },
+  {
+   "category": "risk",
+   "text": "Into a pivotal event week (FOMC + mega-cap earnings): the events can't be predicted, so sizing is a self-knowledge question — if a 10% gap against you would trigger revenge trading or panic selling, cut exposure BEFORE the event; if you can genuinely handle the volatility, managing positions as usual is not wrong. He trades the chart, not the news/macro — 'the chart would let me know.'",
+   "timestamp": "104:18"
+  },
+  {
+   "category": "risk",
+   "text": "Aggression is earned, twice over: he can flip from heavily long at Wednesday's open to 6-7 short positions by Thursday only because (1) a triple-digit YTD profit cushion absorbs the risk — 'if I'm not up triple digits right now, probably I'm not opening six or seven short positions in one day' — and (2) he's gotten better at throttling down during losing streaks. Without both, the same flip is just overtrading toward a large drawdown; 'you don't have to trade like this.'",
+   "timestamp": "109:28"
+  },
+  {
+   "category": "posture",
+   "text": "Trading the short side as well as the long keeps you from becoming over-bullish in uptrends/sideways markets and helps you spot weakness earlier. The cost: getting chopped in trendless tape and sometimes turning too bearish during a normal base — but the benefits outweigh the disadvantages.",
+   "timestamp": "112:25"
+  },
+  {
+   "category": "risk",
+   "text": "Aggressive sizing is only an edge when done CORRECTLY — in hindsight the winners look like front-running, but the same behavior failing produces a large drawdown. Reward always comes from risk; the job is maximizing return while actively managing the drawdown — 'and it's not easy. I definitely got lucky this year.' He also says he does not really use volume on lower timeframes (114:29).",
+   "timestamp": "114:47"
+  }
+ ],
+ "ambiguous_tickers": [
+  {
+   "timestamp": "07:19",
+   "caption_text": "I believe the wolf is my target today. Uh, but I I'll try to be a little bit more patient on this one",
+   "context": "Today's declared short target, revisited at 15:50 ('this wolf as well... now having a pretty strong follow through into the downside'). Decode applied from prior confirmation: 'wolf'/'terolf' = WULF (confirmed by Gabe on the 2026-07-23 video). Whether the short actually FILLED is the uncertain part (logged as an inferred trade), not the ticker.",
+   "guess": "WULF",
+   "confidence": "confirmed"
+  },
+  {
+   "timestamp": "08:29",
+   "caption_text": "AM is actually looks very nice right here. Will this be a felt? A failed. ... high tie flag maybe",
+   "context": "Caption 'AM' — resolved within this same transcript: at 13:08 the captions render 'the odds of AMD really having follow through into the upside is quite low.' Same name under discussion (nice-looking high tight flag, but weak market + weak semi sector cap the odds; watchlist-only, NOT a trade — 'I'll still keep monitoring in case it suddenly turns higher').",
+   "guess": "AMD",
+   "confidence": "high"
+  },
+  {
+   "timestamp": "13:29",
+   "caption_text": "Mara stops me out yesterday and now it is showing weakness",
+   "context": "New name this stream. 'Mara' reads cleanly as MARA (Marathon Digital) — a crypto miner, exactly the basket he wanted short on 7/23 (MSTR/COIN/WULF). Logged as a short stopped out yesterday; direction inferred. Worth a one-glance confirm since MARA hasn't appeared in prior confirmed decodes.",
+   "guess": "MARA",
+   "confidence": "high"
+  },
+  {
+   "timestamp": "31:16",
+   "caption_text": "Maybe DOG also one of the names that uh is very hot in in co or the fasting names",
+   "context": "Inside the 2020-21 mania analogy (Tesla, EV names, speculative names later delisted). 'DOG... very hot in co[vid]' is most plausibly Dogecoin (DOGE), 'the fasting names' possibly 'the FAANG names' or 'the vaccine names' — caption too mangled to be sure. Historical color only, not a trade or watchlist item.",
+   "guess": "DOGE (Dogecoin, crypto — not an equity ticker)",
+   "confidence": "low"
+  },
+  {
+   "timestamp": "108:07",
+   "caption_text": "I closed all my longs and then I I shorted SK highix",
+   "context": "Recap of the Wednesday-midday flip. Decode applied from prior confirmation: 'SK highix' = SK Hynix ADR, tracked as SKHY (confirmed on prior videos). Also referenced at 35:04 ('SK highix' as the retail-crowded leader) and 97:21 (joke about a future 'SK whatever').",
+   "guess": "SKHY",
+   "confidence": "confirmed"
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+  "video_id": "VKNEJA5r8zw",
+  "url": "https://www.youtube.com/watch?v=VKNEJA5r8zw",
+  "title": "+969% Return in 1 Year: The Pullback Strategy of a Trading Champion",
+  "channel": "TraderLion",
+  "channel_id": "UCMgOSW62URSxzPCcNXyohLw",
+  "stream_date": "2026-01-31",
+  "duration": "4:09:11",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

@@ -1,0 +1,19 @@
+{
+  "video_id": "55ox9fB3x-E",
+  "url": "https://www.youtube.com/watch?v=55ox9fB3x-E",
+  "title": "How Robert grew a $3,200 account selling SPX put spreads",
+  "channel": "Theta Profits",
+  "channel_id": "UCzGARfberQ8nRRbsjK90BHg",
+  "stream_date": "2025-12-28",
+  "duration": "24:56",
+  "summary": "Robert Mintosh, a brand-new options trader (started March 2025), sells at-the-money SPX put credit spreads 10 points wide at 5-7 DTE, entered discretionarily on 20-EMA pullbacks and mostly held to expiry, and reports growing $3,200 to ~5x in ~4 months (self-reported ~50 trades, 71% win). The headline is a survivorship/leverage artifact: ATM (~50-delta) short spreads through a benign 2025 bull tape make 71% weekly wins mostly P(no drop) plus drift, not a demonstrated edge, and selling ATM is a directional bet on bull continuation dressed as income. Real virtues are defined risk (~$650 max loss, cash-settled SPX), an honest low-oversell presenter with no sales motive, and admitted failure modes (over-leverage, weak stops, ATM gamma held into expiry); thin ~$60/trade gross EV (65% break-even win rate) is regime-fragile. The mechanical skeleton is highly testable on SPX EOD data (the EMA-pullback timing and expiry-day intraday management are not). Write-up: strategies/robert_spx_put_spreads.md (conviction 2/5).",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

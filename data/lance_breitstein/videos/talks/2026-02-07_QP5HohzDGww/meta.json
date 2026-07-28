@@ -1,0 +1,19 @@
+{
+  "video_id": "QP5HohzDGww",
+  "url": "https://www.youtube.com/watch?v=QP5HohzDGww",
+  "title": "Technical Analysis is a SCAM!? What the Research Actually Shows",
+  "channel": "TheOneLanceB",
+  "channel_id": "UCzksXiC-Ju-DTIZmMiaOVfQ",
+  "stream_date": "2026-02-07",
+  "duration": "10:05",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

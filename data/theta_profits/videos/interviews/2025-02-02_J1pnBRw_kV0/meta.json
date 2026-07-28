@@ -1,0 +1,19 @@
+{
+  "video_id": "J1pnBRw_kV0",
+  "url": "https://www.youtube.com/watch?v=J1pnBRw_kV0",
+  "title": "0DTE Iron Fly Strategy: $1.5M in 2 Years Trading SPX Options (Step-by-Step Guide)",
+  "channel": "Theta Profits",
+  "channel_id": "UCzGARfberQ8nRRbsjK90BHg",
+  "stream_date": "2025-02-02",
+  "duration": "26:10",
+  "summary": "Dale Perryman (runs a small friends-and-family hedge fund) pitches a 0DTE ATM SPX iron-fly program (\"fly catchers\") that opens near-the-money ~10am and chases price all day, adding/dropping 3-5 flies keyed to the first fly's credit and narrowing wings (50->20) into a 2-3pm \"Power Hour\" theta grab; defined-risk per fly (width - credit), exits at ~90-100% of loss, self-rated risk 6/10. Headline is \"$1.5M in 2 years, high ~$2M\" but with NO denominator (no starting capital, no % return, no drawdown depth, comingled across managed accounts) and the equity curve shows real drawdowns he attributes to a growing contract count. The edge is entirely unspecifiable intraday add/drop discretion run by a Zoom group, demonstrated with a single winning example day, over a benign 2023-2025 low-vol bull; he is honest about the $8k/contract bad days that \"will happen\" but claims no win rate for his own method. 0DTE + intraday hand-management => not faithfully testable on our EOD stack; same family as MEIC/Pulver. Write-up: strategies/iron_fly_1_5m.md (conviction 1.5/5).",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

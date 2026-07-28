@@ -1,0 +1,339 @@
+[00:00] my account off four years of profits were gone and I'm and I'm watching the account bounce around 30 40 $50,000 at a tick. Today we will dig into the 112 strategy. My guest has traded it for
+
+[00:17] years. He has seen great results but also shocking losses. Welcome Murray Lindhot. Hi John. Thanks for having me today. You lost three years profit in a couple
+
+[00:31] of days last year and yet you are up on the horse again and still trading the 112 strategy. What's the attraction? Well, I think the attraction is trading to your lifestyle. You know, some people
+
+[00:46] like the zero DTE because they like to be in front of the computer. I don't. I'm a very active person outside. I like minimal time in front of the computer. And the 112 strategy fits that style for
+
+[00:58] me. Can you explain the 112 strategy in 20 seconds? Yeah, the 112 it's just simply it's a put debit spread at a 25 delta and then you go out and sell two further out of the money puts so that
+
+[01:14] the overall strategy is a credit. I personally aim for around $10 credit at about 90 days to expiration. And we will dig into all the details about this. We will also tell the story
+
+[01:28] about how your big loss last year that will be later in the interview. But first, tell us a little bit about your journey into options trading and what you do for a living. Well, Gian, I'm a a
+
+[01:41] 40-year veteran of a high school math teacher. I taught AP classes. always loved derivatives since I taught it and went to an option strategy class only because I invested in a 401k mutual fund
+
+[01:58] that was supposed to be very secure and ended up going belly up where I lost a half a million dollars and had to settle out at $30,000. So I said, "They're not managing my money, so I better manage my
+
+[02:13] money." And that's where it all began. Okay. So, let's move to the 112 strategy and repeat how you set it up. Maybe we should bring up an example. Yeah. So, the 112 strategy, as you can see, has a
+
+[02:27] put debit spread, which we kind of use to help hedge off the market as it moves down. And then it has two out of the money puts that finance the put spread and leaves you a small credit. So, if
+
+[02:43] the market moves up, you'll make a small credit return, somewhere in the neighborhood of two to 4%. If the market moves or just stays the same, you can make two to 5%. If the
+
+[02:57] market goes down, you can make a lot of money. And that's the trap part. That's the high elevated green part in your visual picture there. That's the 112 a put debit spread and two out of the
+
+[03:11] money puts. What is the underlying you're using for this? Well, you can use a lot of different underlyings. I use the ES, that's the futures market for the S&P 500. You notice in the example
+
+[03:25] there that put debit spread is buying the 5700 and selling a 5600. That's a 100 wide. And then I go way down to 4500 and sell two of those. And again, the ES the reason that I use it is basically
+
+[03:42] because the massive amount of liquidity. Can you do this on SPX for instance? Some of the bigger traders do use S spx. In fact, a lot of traders use multiple different assets and that I'll save for
+
+[03:55] later in the discussion because that's what I've migrated to myself. Uncorrelated assets to give you more risk protection. tell us a little bit more in detail how you set up your
+
+[04:06] trades, days to expiration, your mechanics for setting up a new trade. That's a good question. When you follow some of the 112 forms and stuff, everybody kind of sets it up differently
+
+[04:18] depending on their own personal lifestyle and their risk tolerance level. I originally for the past four years did pretty standard 50 wide at 25 delta. So, I'd buy a 25 delta put
+
+[04:33] and then sell a 50 wide delta put against it and then I would just go out as far as I could trying to make my trap as large as I could by still receiving somewhere around $10 of credit. Now,
+
+[04:47] I've completely changed that since the crash, but I'll explain that to you later. So I think to answer your question, John, it depends on your risk tolerance because if you're trading 45
+
+[04:59] DTE based expiration or 90 DTA or 135 DTE, you can set those up in a different risk format. It just depends on your particular risk profile that you're looking for. But in general, most people
+
+[05:15] go out 45 to 90 days. They'll buy a 25 delta put. They'll sell a 20, 21, 22 delta put, whatever they feel is a good hedge, you might say, and then they'll go further out and get a credit. Some
+
+[05:31] people are aggressive. They'll get a $20 credit in the overall trade. I personally like the $10 credit. It gives you a nice wide profit track. I is it correctly understood then that the you
+
+[05:46] make the most of the money on the two short out of the money puts but the put debit spread there is to somehow as a hedge and to protect you against too big loss well that's what I thought
+
+[05:59] originally and I kept statistics being a stats teacher I kept statistics from month to month I actually did week to week actually did dayto day but no the actual the hat the the put debit spread
+
+[06:12] as some people would call it a delta hedge. Actually profits quite often when the market is stagnant or the market just slowly drifts down, your profit comes from that put debit spread because
+
+[06:25] the put debit spreads making money as the market moves down. And if it's a slow regressed market or stagnant market, the two out of the money puts are also decaying. So you're getting
+
+[06:35] theta decay in those or Vega drop or or you're making money on the put debit spread. So I have found that about 30% of the time my put debit spreads are helping me. How often do you put on
+
+[06:48] these trades and how many trades do you have on at any time? So again that's kind of a risk tolerance level question but in my previous four years I kept my working capital at about 50% of my
+
+[07:03] buying power. And when I started in 2020, I said, you know what? I'm just going to do this on the ES because it's the easiest way to manage it, just having
+
+[07:15] one asset class. And so I would put on as many trades as I could every I would say I did probably at least one a week, sometimes two a week, and I would just kind of stagger those trades in over
+
+[07:29] time so that as one were coming off, I would be putting on a new one. I wasn't necessarily waiting for a volatility spike to put one on, but it certainly is helpful if that happens. But, you know,
+
+[07:42] again, you can I was under the I guess my philosophy was to stag all of my trades out throughout time. Some people like to do maybe one a month and put on more contracts. Instead of a 112, they
+
+[07:56] might do a 5510. I just kind of liked having them kind of dispersed over time, which in the end bit me a little bit and we'll explain that later. What are your exit rules?
+
+[08:10] When do you take profit and to what extent you have a stop-loss? Don't have a stop loss in this trade because even through my entire four years, I've never had a position that
+
+[08:22] went past my naked puts. So, I don't have a built-in stop-loss. As far as I'm taking profits, it kind of market dependent. You know, if the market moves up on me, might stay in that trade to
+
+[08:34] expiration. If the market moves down, I definitely want to keep it on because I want I want to be in that maximum profit zone. So, again, it's just somewhat depending, I
+
+[08:45] think, on your personal risk tolerance level. A lot of guys do like 90% of the credit. I generally left them on to expiration. To what extent do you adjust trades during its duration or manage it
+
+[08:58] in other ways? In general, John, no, because I'd be putting new positions on every week, those would kind of like adjust to the market conditions. But I think if you were a a once a week or
+
+[09:10] once every two week or once every month, you would probably do more adjustments. Maybe slide your put debit spread up or slide your put debit spread down. But since the big crash, I've made a couple
+
+[09:23] changes and we'll highlight that later in the video here. There are some variations of this trade. Uh I know you also trade a variation that is called uh 111. What is uh what is that? Yeah, the
+
+[09:35] 11 one trade is actually what I enter now. It doesn't mean I stay in that position, but I do enter in that position. And all it does is it's a little less profit on the upper end, but
+
+[09:50] it's a lot safer on the lower end. You'll notice the trap part, the part that's in green there is smaller. This is a buy a 5700, sell a 5600, and now you're only down to 5,000. So you don't
+
+[10:03] have as much downside movement. But in theory, John, if the market's going to go down to 5,000, you got some other issues. And one of those is Vega. And it's the volatility in this trade that
+
+[10:17] you got to watch and be careful in. The difference between this and 112 is that you are only selling one out of the money put, right? That's correct. And by selling two, you can make the trap part
+
+[10:30] of this trade much wider, like all the way down to 4500. By selling one, you got to move that all the way up to 5,000. But your risk, you would think your risk would be more because you're
+
+[10:42] closer to at the money. You're actually less because you only have that one naked put that's being affected by the Vega component of the Greeks. Uh Murray, let's look at what happens when the
+
+[10:54] implied volatility goes up a lot. Now, now we are 25 days into our example trade. If I pull up the implied volatility, what we see now is that the loss zone is becoming much bigger.
+
+[11:09] Right. Correct. This is where patience comes into play big time. Of course, every trader has to learn that rule. You and I, I think, both have been down that path. But yes, as volatility expands,
+
+[11:21] those naked puts become extremely expensive. And as you can see, you have temporarily unrealized losses. That's the hard part of this strategy. But to be honest with
+
+[11:33] you, it doesn't happen that often. I mean, you this strategy can take on a a pretty good five, six, 7% increase on the VIX and it's not real noticeable in your account. It's just when it goes to
+
+[11:47] 60, that's when you notice it. You said that you are trading ES the futures with this strategy. Is that the only underlying you're trading with? Well, John, when I started in 2020, I was
+
+[11:58] trying to keep things really simple. So, I said, "Yes, I'm just going to trade the ES futures." What I found out, which we're going to talk about shortly, is I needed to diversify my assets better.
+
+[12:10] So, now I trade ES, I trade gold, I trade bonds, I trade oil, and I try to keep those equally balanced with the 111 or 112 strategy. But what I really like about futures, at least here in America,
+
+[12:25] we get what's called a 1256. It's section 1256 of the tax code tax break. It's a 6040 tax supplement, which is just really nice when you have profits. You don't have to claim all of them that
+
+[12:39] way. And also, the futures trading, you're trading 23 hours a day, six days a week. It gives you a lot of market time. If something were to happen at night, you could make an adjustment or
+
+[12:49] throw on a hedge or whatever you need to do. But I love the availability of the futures. We have referred to your huge loss last year and you actually posted in a Facebook group this picture that
+
+[13:03] showed what had happened to your account and this was in August last year where we saw quite a turbulent market. Tell us, take us through what happened. Well, John, maybe we should go back a
+
+[13:16] little bit and show your viewers, I guess, why this was caused by my trading style by looking back at maybe my yearly returns. And we'll just build up to this crescendo moment and the lesson that was
+
+[13:32] learned. If you want to throw up that yearly profit chart starting with 2020 and you notice in 2020 I started just in the ES with $50,000 account and the dark black line that's my cash account and
+
+[13:47] the light gray bar is the IRA account and the red bar that you see there is the S&P 500 and you'll notice in 2020 the IRA and the cash accounts outperformed very well and that was of
+
+[14:00] the COVID year in 200 21 again outperformed very nicely. 2022 was the best year. That was the year I believe the stock market was down around 1920%
+
+[14:15] and my account was way up way over 100% 106%. This is when the strategy really performs. When the market falls off or is stagnant, you get a lot of
+
+[14:25] volatility, a lot of premiums. Then in 2023, another banging year. It started with 50,000. And I think after the first year it was 137,000. I think after the second year it was up
+
+[14:38] to 209,000. In 2023 I think jumped to 431,000. And then just before the big crash I think I was just over 500 526,000 somewhere in there. So from 50,000 to
+
+[14:55] about a half a million. So now, John, if you throw on that that monthly performance, and this is the last year, 2024, you can see how from month to month,
+
+[15:08] January was pretty decent. February, March, and April was great. The market was down in April, the account was way up. In May, the market bounced back. So, the market actually beat the account
+
+[15:20] values there. But if you average those last two months together, you notice the market's flat and the account's up 12%. And then you have the and you have the next couple months and then comes
+
+[15:31] August. John, if you show the next slide, this will be a weekly graph. And you'll notice this is the week before the carry trade, the August 5th carry trade. And you'll notice the accounts
+
+[15:45] doing well. And you'll even notice that this strategy performs great when the market goes down. It performs great when the market's stagnant. It doesn't keep up with the market though when we have
+
+[15:57] those booming 2 3% days. It doesn't keep up with it. But overall, it's it's really outperforms the market. This now is the Friday. I just recorded the week um of the carry trade. And that Friday,
+
+[16:10] we had a huge V spike. I think the VIX went from oh 14 or 15 up to 35 or something. It was just a huge jump. And that took my account way down. In fact, just I I don't know what is like 16%
+
+[16:25] whatever that is. I mean, that that's quite a crush. That was on that Friday. And my buying power went up. I was thinking it was like 60%, 50 to 60%. I thought, hey, what a great opportunity,
+
+[16:39] John. The volatility is high. The VIX hasn't been at 35 in forever. I I'm going to go out and and put on some new positions. And exactly what I did right on the close, right when the market was
+
+[16:52] at the lowest, the premium was just surging, I put on new positions and took my buying power close to 90%. Now, remember, John, previous four years, I mean, I'm I'm profitering really well. I
+
+[17:06] haven't had it. I mean, I'd spend less than two minutes a day looking at the account. Um, putting on positions a couple times a week. No big deal. Been tracking all this. I'm a stats teacher.
+
+[17:17] I'm all excited, motivated. I'm like, here's a great opportunity. And then John, next slide. This is what happens when size, you just don't control your size. All four years
+
+[17:31] of my profits. Now, remember, I woke up, I think it was Sunday night, futures opened at six o'clock, and I look at my account, and I thought maybe a computer screen had broke or something. my
+
+[17:43] account off four years of profits were gone and I'm watching the account bounce around 30 40 $50,000 at a tick and the spreads wide and I I've got to make a decision. Is this the cr is this like
+
+[17:58] going to be black Monday? Is this the crash? I called a buddy of mine and we're talking about it and he said, "Well, I'm just going to hang in there." I said, "Well, I want to live to trade
+
+[18:09] another day, so I'm going to close these out." This is on Sunday. Now, on Sunday, the futures markets they trade, it's not as liquid, so the spreads are pretty wide. And I can remember the spreads are
+
+[18:18] like5 to$10,000 a spread trying to close these trades and close them. It's just bouncing all over. And I I did it took me about an hour because I had so many positions on John. I had to click and
+
+[18:32] click and click and click and click and just bouncing all over the place. So, that was one of the bad things I thought about my style, having too many little positions on instead of fewer larger
+
+[18:42] positions. But finally got them all closed and there I was back to $50,000 just like I was in 2020 like nothing had happened. How did that feel? It was it was
+
+[18:58] huge adrenaline running through you. Everything's emotional. I gotta believe that, you know, it took probably the rest of the night. I mean, I was up at like six,
+
+[19:11] five in the morning. I can I can just remember the the the just the complete adrenaline flow going through my head. The next day was sad. It was like there was the markets flying all
+
+[19:25] over the place the next day. And I was just I was sad that all of that money had gone away and and I couldn't trade. And so I said, you know, I'm just going to take I'm going to take some time to
+
+[19:37] think about this. And you're sitting there day after day after day. And a week later, one week later, had I not done anything, all of those profits would still be there plus some. So the
+
+[19:51] the strategy, you know, the strategy was fine. the market was in the maximum profit zone of the strategy, but you couldn't stay in it because the buying power was exceeded. I think at one point
+
+[20:05] I was at like 200% buying power, closing positions, trying to keep my buying power. My dad finally I just had to close everything out. How did you tell your family about this?
+
+[20:18] It's a lot of money. Well, being family, I am the family. a single guy, never married. So, it was, you know, it's money that I, it was my cash account, so it's money that I could
+
+[20:31] play with. Doesn't change my lifestyle at all. I have other accounts that I do different investments with. It's just not easy losing. You know, for four years, I never had a losing trade, not
+
+[20:45] one trade. And this was just a I was forced to lose in this and that's what I didn't like. I put myself in a position that forced me to have to be a loser. And so hence now I still trade
+
+[21:06] but I trade knowing that that risk factor is going to happen again. In fact, I kind of look back over time, the VIX that day, that Monday, spiked to 65 or something like that. I mean, it just
+
+[21:21] massive. But it does happen. It happens about every five to seven years, you get some anomaly that happens and and bam, uh, the VIX is there. So, you have to be ready for that. And I've made a few
+
+[21:35] changes to the strategy. And I'm sure when you have your losses, you look back and you go, what is it that I can do differently to make it better and not have this happen again? You and I are
+
+[21:46] active in the same Facebook group, Tasty Trade Options, and you have been posting regularly about your trading there. I think most traders when they experience loss, they will just kind of disappear
+
+[21:57] from the group. You don't hear anything more from them. that you actually posted and shared what had happened and told in detail to everyone. Why did you decide to be so open about such a huge loss? It
+
+[22:11] probably just comes from my teaching background, you know, and I always told my students, you know, you when you learn from your mistakes, that's the best lesson you'll ever learn in life.
+
+[22:21] And you know, I have a group of traders that I trade with and guys that I talk to and we all talked about it. I mean, I wasn't the only one in the group in that same boat. Some guys stayed in it and
+
+[22:31] they did fine. They didn't end up losing any money. Um, and other guys closed it out like I did and started all over like I did. But we said, "What can we do differently? What is it that could make
+
+[22:42] this strategy successful but yet able to take on that type of a risk event going forward? The main change you have done as I understand it is that you are now
+
+[22:55] diversifying with the underlyings. Yeah, John. I think that was one of the key things. I was just trading the ES because it was easy. You open up your account, you have ES, you don't have to
+
+[23:06] flip screens around. It was just convenient. Okay. So, what I do now is I trade like gold and bonds and oil, natural gas, corn, whatever it is. I still trade the same strategy. I
+
+[23:21] actually trade the 111. I'll tell you about that in a second, but I trade the 112. and in those different asset classes that are uncorrelated because if something happens in corn,
+
+[23:32] it's probably not going to happen in oil. So that takes the risk. I mean, I could have had I been in that situation, I could have closed the other positions for profits and opened up the buying
+
+[23:43] power that could have kept me in those positions for that week and not end up losing any money. So the uncorrelated risk is huge. And when I mean uncorrelated, I don't mean diversified.
+
+[23:55] People get those two words, I think, messed up. You know, people will buy Microsoft and then they'll buy GE and say, "Oh, they're diversified." But they're not. When the market goes down,
+
+[24:04] they both go down. Where corn and oil and bonds and ES, they're not they're just not related to each other. They're so much more uncorrelated and that keeps your risk in check.
+
+[24:19] Have you made any other changes to your trading style and how you do it after this experience? Well, yeah. Yeah, the experience definitely was a learning lesson. And what we learned is not only
+
+[24:30] do we want to be uncorrelated, but we want to be able to take advantage of some things. So, here's the changes that I've made to the 112. I enter the trades now as a one.
+
+[24:42] And the 111's going to make as much money as the 112. The trap isn't as large. But when I have a nice volatility spike or a nice market pullback like we have this year, I will take that one far
+
+[24:56] out of the money put and I'll buy it back and sell two further out of the money puts for a little bit of a credit. So I've changed a 111 to a 112 and I don't have that big loss. Had I started
+
+[25:12] with a 112, there'd be that immediate Vega loss like you just showed us in the previous graph. But with the 111, that vega loss is just very minimal. And now I'm taking advantage of a high volatile
+
+[25:25] situation. So that's the first change I made. Well, the first change was actually doing uncorrelated assets, but then I enter them as 111s. And then I do three time periods from 0 to 45 days. I
+
+[25:40] do a 50 wide put debit spread. From 45 to 90, I do a 100 wide put debit spread. And from 90 to 135, I do 150 wide put debit spread. That gives you a little more delta hedge on the way down.
+
+[26:00] Number one. Number two, as time or theta decays out of that position, if let's say I put on 135 day and it moves into, let's say, down to 85 days, I'll take that put debit spread from a 150 and
+
+[26:15] narrow it to a 100 and I'll receive a credit for that because I'll be buying back one, selling one closer at the money. I get a credit for that. So, I'll bring in another $200 $300. Then as it
+
+[26:28] decays into the 45day range, I'll narrow that from a h 100red down to 50. I'll take in another credit, another $200 or $300 on top of that. So I might start with a $10 credit and end up with a 156
+
+[26:42] $18 credit by the time the trade has decayed through it through its time frame. So just I like this the uncorrelated part risk diversifies the time the wide put debit spread much
+
+[26:57] nicer delta hedge. I mean I can have volatile days of 2 to 3% moving down and because I have 150 wide shows me a profit for the day. That's I like that. And then I can change it from a 111 to a
+
+[27:12] 112 and take advantage of some of that extra premium. But I do run my buying power at 50% still and I feel confident because I'm uncorrelated. It's not really 50%. I mean my ES might
+
+[27:28] go up a little, corn might go up a little. It hovers around 50% even when they have volatility spikes in the market. So I like that. So I feel like you said, why did I go back to this
+
+[27:40] strategy? Fits my lifestyle. Two, three minutes a day. Now I feel very risk adverse in this position. Up 21% year-to date this year. I feel good about it. I like it.
+
+[27:55] But your new style must take a lot more management I would guess than before. It does take a while to click through the different strategies. But um you know I mean the different asset classes you
+
+[28:06] know gold and but once you get familiar with them like anything it's just second nature. You almost know what strikes you're going to buy and sell. And it goes pretty fast. I maximum five minutes
+
+[28:18] a day. And it usually it's in the morning in the first 9:30, 9:45, something like that. And all I do is look at it. I really don't do anything to it. I just kind of look at it and see
+
+[28:29] how the volatility is for the day or if I've got enough money to put on a new position, that situation. We're going to talk about your results in just a second, but first I always ask
+
+[28:40] my guests to place their strategies on a let's say a risk scale from one being very low risk and 10 being very high risk. So now I'm curious where would you put the 112 strategy?
+
+[28:55] John, that's a tough question and I can't answer it with a number because I think it depends on your understanding of the groups and understanding of the options and understanding the
+
+[29:09] background of the market. I mean, you could teach a beginner how to put the strategy on, and they would say it's low risk, like I would say, and they would make money like I did for four years,
+
+[29:23] and then they could have one bad day, and then they'd say, "Oh, it's high risk." So, it's just hard to quantify that strategy as at a risk level. But but but considering your huge loss last
+
+[29:38] year certainly cannot be one or two. Yeah. But prior to the loss, I would have said one or two, right? So, you know, like when you had your big loss, now all of a sudden, is it a 10? You
+
+[29:49] know, I mean, I don't know. I I honestly think it's a very lowrisk, low management strategy with a potential. I mean, if you manage it by uncorrelated and you
+
+[30:03] keep your buying power and your size managed, I think it's extremely low risk. You just have to manage the size of your account. You can't get aggressive like I did.
+
+[30:18] No, and I think that's a very good point and you were referring to my big loss which was when the pandemic hit and I actually lost half my account and I was trading iron condors. uh but just taking
+
+[30:29] on too much risk having too many of them on and then kept believing it had to turn around and it didn't turn around and suddenly half my account was gone. Yes, that Yep. We've all been there. If
+
+[30:43] you haven't experienced it, you will experience it. True. So, let's get to your results. You already showed us how your strategy was developing before your big loss last
+
+[30:56] August and then you have continued to trade 112 and 11 uh with the changes that you have explained to us. So what have been your results after August last year when you were bit back to 50,000 in
+
+[31:11] your account? Well, let's just say when I started in 2020, my goal was one to two% a month. you're just kind of feeling out the strategy, but in reality, the results were three to 5% a
+
+[31:25] month and you get real you get real excited about it and then you don't have a losing trade for three and a half, four years, you know, you just get all pumped up. Well, yeah, since the loss um
+
+[31:38] and diversifying, of course, when you go uncorrelated, some of those assets work for and against you um just slower. you know things are just like gold is a different animal bonds are a different
+
+[31:51] animal than the ES you know their volatility are a little bit different so my my new goal is anywhere from two to 4% a month that's my personal goal with the market went pretty down pretty heavy
+
+[32:07] this year and that 21% year-to date so that's you know annualized might be 40 to 50% a year but if I could do I mean I'd be happy with 20 to 25%, you know, two to 3% a month. But even being
+
+[32:22] uncorrelated like this, it's been pretty decent. I'm not complaining. So, let's just say my personal goal is let's shoot for 3% a month and keep those assets uncorrelated and keep my size in check,
+
+[32:38] keep my buying power at 50% or lower. I feel pretty good about it. And you have been growing your account after the big loss last year. 21% this year and also some last fall. Yeah, basically starting
+
+[32:53] all over again. Starting with around 50,000 my cash account. I have other investment accounts that I trade differently. But in this particular strategy, that cash account, yeah, back
+
+[33:02] to 50,000 like I was in 2020. How do you measure your results? Well, being a stats teacher, I've got a pretty complex spreadsheet set up that kind of shows a lot of different things, but
+
+[33:14] essentially, you know, the day-to-day variations fluctu depending on the volatility, the vague aspect of the trade. Theta eventually comes out of it through time. So, I I record everything
+
+[33:26] daily. I chart everything weekly, chart everything monthly, chart everything yearly. Daily is just kind of fun to watch as, you know, it just bounces around. But weekly is pretty consistent
+
+[33:37] as you saw the other one and the monthly chart that we talked about earlier. You could see um it's pretty pretty I mean you know from trading the markets John things depend on the in the options
+
+[33:52] world depend on the volatility that's going on more so than the theta. The theta eventually comes out but volatility rules in this game and that's what we got to be careful of.
+
+[34:05] So we have been through a lot. How would you sum up? I'm in particular thinking about what are the pros and cons of this strategy as you see it. The pros of the strategy is it pitch my lifestyle when
+
+[34:20] you're trading iron condors or stuff. You you got to keep your eyes on what's going on in there. Where the 111 or 112 strategy, it's pretty much put it on and just watch it. So, I like that. It's it
+
+[34:33] I The biggest pro to me is it just fits my personal lifestyle. Very little time management needed. The con of the strategy. Well, the only con is the Vega risk. You know, if we have a nuclear
+
+[34:45] war, we have a meltdown and volatility spikes up to 60. I mean, it's going to be interesting. But being uncorrelated, you know, if 50% of my buying power is split up into five assets, that's only
+
+[34:59] 10% of of the account being in the ES and that explodes to 60, it's going to be manageable. My buying power might go to 65 or 70, but I don't see it going through the roof with those assets. So
+
+[35:13] again, the pros, easy strategy, very little time. Put it on, watch it. Very little management. The cons, the Vega risk.
+
+[35:27] It's all about the volatility. Let's say I want to start with this strategy. What would be your most important one or two tips you would give me? Uncorrelate your assets. You know, keep
+
+[35:43] your size in check. Keep your buying power in check. If you're uncorrelated and you keep your buying power in check and keep the size of your contracts down, you've taken care of all of your
+
+[35:57] risk and that's the most important thing. What would be good resources to learn more about this? The guy that probably does the most with this is Tom King and
+
+[36:09] he's got a series of videos out there on the 112 and he gives you pretty much a daily update on his 112 strategy. is a great correspondence person. If you watch the Tom King videos, I think that
+
+[36:22] would be the most helpful and probably your best resource at this point. Would you have one or two books about options trading that you would recommend to other traders?
+
+[36:36] No, you know, I always say it's hands-on that is teaches you the lessons and so I think I think you know like I got involved by going to an options seminar
+
+[36:47] to just learn about the options and those things out there but with the internet now there's just so much information available on the internet you have to you know people say oh read
+
+[36:58] this book and do I think you just got to try you gota you got to have skin in the game when there's no skin in the game there's no fear there's No blood rush. There's no You got to have the SC. Who
+
+[37:08] cares if you lose some money? You're learning every time you lose. And I would also like to end with recommending you to watch some of the other interviews we have done on this
+
+[37:20] channel about a lot of different strategies and topics related to options trading. Marray, thank you very much for sharing your experiences with the 112 strategy. Well, Jan, I appreciate you
+
+[37:32] reaching out. Hopefully we'll do it again sometime.

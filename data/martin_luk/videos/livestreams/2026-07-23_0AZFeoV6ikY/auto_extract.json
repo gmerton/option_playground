@@ -1,0 +1,194 @@
+{
+ "video_id": "0AZFeoV6ikY",
+ "date": "2026-07-23",
+ "title": "EP70 | 23 Jul 2026",
+ "observed_trades": [
+  {
+   "date": "2026-07-23",
+   "ticker": "?",
+   "direction": "long",
+   "action": "sell",
+   "setup": "Closed the ENTIRE long book Tuesday evening after the stream: post-stream watchlist review found mass breakdowns (IGV breaking lower, RDDT and PATH gapping down, RBLX weakest, ZM breaking down from declining EMAs, SOFI/AFRM fintechs lower, semis bad), leaders' bounces getting rejected at the declining 9 ('not powerful enough'), leader count shrinking, and crypto unable to clear the weekly 9 EMA.",
+   "entry_basis": "Proactive close of all longs \u2014 'I didn't wait for it to stop me out, I just closed all of them'",
+   "stop": "",
+   "source": "2026-07-23_0AZFeoV6ikY@02:46",
+   "confidence": "stated",
+   "notes": "Known constituents from 7/21-7/22 streams: NET, PANW, MSTR, BMNR?, COIN (HOOD and RIVN had already stopped out 7/22 intraday). Crypto reasoning at 09:20-10:41: wanted a quick, strong bounce off the weekly 9 like 2023; instead it hung around the declining 50 like early-Jan 2026.",
+   "fill_timing": "yesterday"
+  },
+  {
+   "date": "2026-07-23",
+   "ticker": "SKHY",
+   "direction": "short",
+   "action": "stopped_out",
+   "setup": "Re-shorted SK Hynix ADR (his big mid-July winner) as part of re-engaging the semi short book.",
+   "entry_basis": "Entry timing not stated (pre-open reference at stream start)",
+   "stop": "Stopped out at today's open ('it looks like it's going to stop me out at the open')",
+   "source": "2026-07-23_0AZFeoV6ikY@03:21",
+   "confidence": "stated",
+   "notes": "Later (77:17) says he is 'shorting heavily on the semi names' but dislikes semis' relative strength vs the market today; 133:45 'not liking the strength of SNDK and MU today \u2014 holding up very well.'",
+   "fill_timing": ""
+  },
+  {
+   "date": "2026-07-23",
+   "ticker": "?",
+   "direction": "long",
+   "action": "stopped_out",
+   "setup": "Repeated attempts to catch the turning point / reversal bounce on the big gap-down day (indices gapping into the 50 EMA where he assumed a bounce), 'tons of losing trades today.'",
+   "entry_basis": "Multiple intraday entries; tickers not stated",
+   "stop": "Stopped repeatedly; price 'shoots higher, stops me out, comes back \u2014 just not going anywhere'; ran out of buying power by midday",
+   "source": "2026-07-23_0AZFeoV6ikY@61:58",
+   "confidence": "stated",
+   "notes": "Self-critique at 63:23: 'I kind of deserve that because I was really trying to pick the turning point... didn't want to miss the reversal.' The exhausted buying power then blocked the crypto shorts he wanted (MSTR, COIN, WULF? \u2014 65:26, unfilled intent, not trades).",
+   "fill_timing": "today"
+  },
+  {
+   "date": "2026-07-23",
+   "ticker": "LITE",
+   "direction": "short",
+   "action": "short",
+   "setup": "The laggard's tricky bounce: LITE topped mid-May and made its first lower high in early June (topped BEFORE the market) \u2014 a 3-month laggard despite a strong-looking bounce since Friday. Today it 'broke out' above the previous day high and opened above the anchored VWAP from the swing high, showing apparent RS vs QQQ \u2014 but it is bouncing straight into the supply range of prior red candles/reversals, while the market and SOXX are below their declining EMAs. Direct analog: OPEN's January 2026 dead-cat bounce (topped Sept, lower highs, 9<21<50 with the 50 rolling over, tricky EP-looking bounce that trapped buyers and never came back).",
+   "entry_basis": "Today, shorting into the PDH-breakout/gap-up strength ('your LITE short today')",
+   "stop": "Not stated",
+   "source": "2026-07-23_0AZFeoV6ikY@88:01",
+   "confidence": "stated",
+   "notes": "Full reasoning 88:01-102:53. Says his younger self would have BOUGHT this exact look and 'I think actually it's 100% of the time I got stopped out.' On target (114:13 Q): 'really hard to tell given how weak today's action is... huge damage has been done to market breadth'; on SOXX cover level (132:15): 'I would try to trail it a little bit longer, but the plan could change.' Timing note (101:32): 'if you're shorting ANYTHING today it probably worked \u2014 timing matters.'",
+   "fill_timing": "today"
+  },
+  {
+   "date": "2026-07-23",
+   "ticker": "SNDK",
+   "direction": "short",
+   "action": "hold",
+   "setup": "Part of the heavy semi short book; SNDK had just printed its first weekly close below the 9 EMA after its huge run (flagged in yesterday's stream as the leader warning).",
+   "entry_basis": "Entry not stated in this stream",
+   "stop": "Expects it may stop him out ('probably I will also got stops from SNDK') as SNDK shows strength today",
+   "source": "2026-07-23_0AZFeoV6ikY@70:39",
+   "confidence": "stated",
+   "notes": "Also eyeing MU as a failed-breakout short into the anchored VWAP from all-time highs (65:49-69:05: inside-day breakout, 'the better it looks on the long side the better it is on the short side if it really fails'; an overshoot of the AVWAP would be the good short scenario) \u2014 but no MU fill stated, and 71:08 'trade what you see... if it keeps going higher, definitely not going to short it on the way up.' 133:45: not liking SNDK/MU strength today.",
+   "fill_timing": ""
+  }
+ ],
+ "principles": [
+  {
+   "category": "posture",
+   "text": "When the evening watchlist review shows breakdowns everywhere \u2014 leaders rejected at the declining 9, gap-downs across groups, leader count shrinking \u2014 close the long book proactively that evening; don't wait for each individual stop to be hit.",
+   "timestamp": "05:48"
+  },
+  {
+   "category": "market_read",
+   "text": "The QUALITY of a bounce is information: off a weekly support you want it quick and strong (like crypto 2023); a bounce that hangs around the declining 50 EMA for days is failing, and repeating the pattern of the last failed cycle.",
+   "timestamp": "09:51"
+  },
+  {
+   "category": "mindset",
+   "text": "Trying to pick the turning point because you don't want to miss the reversal is paid tuition \u2014 repeated stop-outs while price goes nowhere after each stop is the market saying it's chop, not a reversal; the stop-out cluster itself is the signal to stand down.",
+   "timestamp": "63:23"
+  },
+  {
+   "category": "entries",
+   "text": "The better a setup looks on the long side at resistance, the better it is on the short side if it fails: an inside-day 'breakout' right at the anchored VWAP from all-time highs traps breakout buyers whose stops fuel the move down \u2014 a classic failed breakout; an overshoot of the AVWAP is the ideal short scenario.",
+   "timestamp": "68:06"
+  },
+  {
+   "category": "entries",
+   "text": "Trade what you see: if the candidate short keeps going higher without showing weakness, don't short it on the way up \u2014 wait for the failure.",
+   "timestamp": "71:08"
+  },
+  {
+   "category": "entries",
+   "text": "Beware the laggard's tricky bounce: a name that topped BEFORE the market (made lower highs while the index made higher highs, 9<21<50 with the 50 flattening/turning down) then prints a strong-looking bounce with apparent relative strength \u2014 breaking a previous day high, reclaiming EMAs \u2014 straight into the supply range of prior red candles. That is a dead-cat bounce / bull trap, not new leadership (LITE now; OPEN January 2026). Don't buy it; when market and sector are below declining EMAs, it's a short candidate.",
+   "timestamp": "92:14"
+  },
+  {
+   "category": "market_read",
+   "text": "Judge a suspicious bounce by its FORWARD behavior, not the pattern: if the name holds above its EMAs and makes higher lows while the market makes lower lows, it graduates into a long candidate for when the market improves; if it loses the 9 (or 50) within a day or two on big red candles, the bull trap is confirmed. The pattern label matters less than how it holds up as the market weakens.",
+   "timestamp": "110:54"
+  },
+  {
+   "category": "entries",
+   "text": "In a clear downtrend the method is still the pullback short: shorting bounces gives the highest win rate AND the best risk/reward, and keeps you moving at the same pace as the market rather than chasing breakdowns.",
+   "timestamp": "128:47"
+  },
+  {
+   "category": "market_read",
+   "text": "Track the sequential death of speculative groups as a breadth thermometer: quantum gone, nuclear gone, power generators weak, software destroyed, semi laggards breaking \u2014 when the speculative money is gone across groups, real damage has been done and a much deeper correction (e.g. QQQ to the weekly 50, ~15%) is on the table.",
+   "timestamp": "116:07"
+  },
+  {
+   "category": "market_read",
+   "text": "Range/volatility expansion near the highs on the weekly is a red flag even during an apparently healthy pullback \u2014 compare with true leaders (MU, SNDK) whose bases pull back to the weekly 9 QUIETLY, volatility contracting into the next setup rather than expanding.",
+   "timestamp": "125:26"
+  },
+  {
+   "category": "posture",
+   "text": "The checklist to turn bullish again after de-risking: (1) breadth improves \u2014 more names showing strength and potential leadership; (2) follow-through appears after breakouts/reversals instead of instant failure; (3) your own long trades start giving positive feedback; and (4) at minimum the index reclaims its declining 9 EMA.",
+   "timestamp": "140:09"
+  }
+ ],
+ "ambiguous_tickers": [
+  {
+   "timestamp": "06:42",
+   "caption_text": "soon also breakdown from the declining EMAs that actually could be a short entry on Tuesday",
+   "context": "Named among the software/speculative breakdowns in the Tuesday-evening review that made him close all longs; 'could be a short entry on Tuesday'. CONFIRMED by Gabe 2026-07-23: ZM (Zoom) \u2014 'soon' garble, NOT SOUN as first guessed.",
+   "guess": "ZM",
+   "confidence": "confirmed"
+  },
+  {
+   "timestamp": "07:02",
+   "caption_text": "the soi a firm is also going lower",
+   "context": "'The fintech names' going lower in the same breakdown list. CONFIRMED by Gabe 2026-07-23: SOFI and AFRM.",
+   "guess": "SOFI, AFRM",
+   "confidence": "confirmed"
+  },
+  {
+   "timestamp": "07:18",
+   "caption_text": "some leaders like be is getting rejected at a declining nine",
+   "context": "A leader whose bounce is weak/rejected at the declining 9 \u2014 'not powerful enough to convince me this is the end of the downtrend'. CONFIRMED by Gabe 2026-07-23: BE (Bloom Energy).",
+   "guess": "BE",
+   "confidence": "confirmed"
+  },
+  {
+   "timestamp": "08:59",
+   "caption_text": "the cyber security names is uh 12 and 14 that is losing the 21 EMA",
+   "context": "Cybersecurity names losing the 21 EMA, cited as evidence the theme was failing. CONFIRMED by Gabe 2026-07-23: CRWD and FTNT ('14' ~ FTNT phonetically; 'crowd'=CRWD is a known decode). NOT his holdings \u2014 his cybersecurity longs were NET and PANW (re-entered Tue per 07-22 stream); CRWD/FTNT breaking down was sector-level evidence behind closing those longs.",
+   "guess": "CRWD, FTNT",
+   "confidence": "confirmed"
+  },
+  {
+   "timestamp": "65:26",
+   "caption_text": "I cannot short uh the crypto names and also this this wolf / micro strategy coin or this terolf",
+   "context": "Shorts he WANTED but couldn't take after exhausting buying power: MSTR, COIN, and a garbled third name ('wolf'/'terolf') \u2014 unfilled intent, not trades. CONFIRMED by Gabe 2026-07-23: WULF.",
+   "guess": "WULF",
+   "confidence": "confirmed"
+  },
+  {
+   "timestamp": "77:37",
+   "caption_text": "I really wish I have I've shorted this SpaceX",
+   "context": "Missed parabolic short after its IPO \u2014 17% above the 9 EMA on the 60-minute with range expansion, gapped up then +12% more, ~ $3T valuation mentioned; 'a gift by the market god that I refused to accept' (83:15-86:25). CONFIRMED by Gabe 2026-07-23: he was literally talking about SpaceX (post-IPO) as a missed shorting opportunity. Trades under SPCX (Gabe, 2026-07-23).",
+   "guess": "SPCX",
+   "confidence": "confirmed"
+  },
+  {
+   "timestamp": "103:33",
+   "caption_text": "Jordan MSTL works pretty well for me / MSTL could go to like below 70 or even 60",
+   "context": "Caption 'MSTL' twice \u2014 CONFIRMED by Gabe 2026-07-23 as MSTR (no leveraged ETF involved). Viewer (Jordan) comment that MSTR 'works pretty well for me'; Luk's downside projection: if MSTR or COIN breaks down from this range, MSTR could go below 70 or even 60 (COIN already rejected at the weekly 9, 'huge potential to the downside'). Bearish view on the name he was long until closing the book 7/22 evening.",
+   "guess": "MSTR",
+   "confidence": "confirmed"
+  },
+  {
+   "timestamp": "106:29",
+   "caption_text": "isn't open January book exactly the same as cypher today",
+   "context": "Viewer compares CIFR's bounce today to OPEN's January bull trap; Luk: CIFR lacks the sideways action (clean 60-degree downtrend instead) and its EMAs are less bearish (9 and 21 above the 50) \u2014 watch its forward behavior vs the weakening market (109:23-112:36). Cross-ref: yesterday's 'CBRS' garble was also tentatively guessed CIFR. CONFIRMED by Gabe 2026-07-23: CIFR.",
+   "guess": "CIFR",
+   "confidence": "confirmed"
+  },
+  {
+   "timestamp": "117:35",
+   "caption_text": "the power generators uh be EV also looks pretty weak",
+   "context": "The power-generator names looking weak in the breadth-damage roll-call (quantum gone, nuclear gone, power gens weak). CONFIRMED by Gabe 2026-07-23: BE and GEV.",
+   "guess": "BE, GEV",
+   "confidence": "confirmed"
+  }
+ ]
+}

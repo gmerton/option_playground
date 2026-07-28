@@ -1,0 +1,123 @@
+{
+  "video_id": "VZnilD2O7N4",
+  "date": "2026-01-21",
+  "title": "Buy pullbacks and Greenland | 20 Jan 2026",
+  "observed_trades": [
+    {
+      "date": "2026-01-21",
+      "ticker": "RKLB",
+      "direction": "long",
+      "action": "trim",
+      "setup": "Rocket Lab held for some time; bought pullback into anchor VWAP from prior swing high; sold first partials Friday around 97-98, trailing, stop now at break even",
+      "entry_basis": "pullback into anchor VWAP from previous swing high",
+      "stop": "moved to break even",
+      "source": "2026-01-21_VZnilD2O7N4@10:15",
+      "confidence": "stated",
+      "notes": "'Rocket Lab' = RKLB; admits it was a B setup (loose right side)",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-01-21",
+      "ticker": "GLXY",
+      "direction": "long",
+      "action": "trim",
+      "setup": "Galaxy bought as breakout of prior day high ~26 as a Bitcoin sympathy trade; got lucky with data-center news gap up; reduced Wed/Thu/Fri, ~60% of original position left",
+      "entry_basis": "breakout of previous day high ~26",
+      "stop": "",
+      "source": "2026-01-21_VZnilD2O7N4@12:00",
+      "confidence": "stated",
+      "notes": "'Galaxy' = GLXY (Galaxy Digital); bought Tuesday per 105:10",
+      "fill_timing": "tuesday"
+    },
+    {
+      "date": "2026-01-21",
+      "ticker": "ASTS",
+      "direction": "long",
+      "action": "trim",
+      "setup": "Got stopped out Wednesday (undercut Friday low), re-entered on 15-minute breakout same day as market bounced off 21/50 EMA; sold partials into strength Friday",
+      "entry_basis": "15-minute breakout (reentry); also Thursday pullback to 9 EMA / 1-hour 50",
+      "stop": "",
+      "source": "2026-01-21_VZnilD2O7N4@14:24",
+      "confidence": "stated",
+      "notes": "ASTS = AST SpaceMobile; first a stop-out Wednesday then a 15-min-breakout re-entry the same day; net trim",
+      "fill_timing": "wednesday"
+    },
+    {
+      "date": "2026-01-21",
+      "ticker": "SURF",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Bought Friday on a 5-minute (or 1-minute) breakout when it pulled back to anchor VWAP; gapping down today under 9 EMA, expects to get stopped out at the open with a ~2% stop",
+      "entry_basis": "5-minute / 1-minute breakout off anchor VWAP pullback",
+      "stop": "~2%",
+      "source": "2026-01-21_VZnilD2O7N4@17:29",
+      "confidence": "stated",
+      "notes": "'Surf' = SURF; still held at the time of the stream, only anticipating (not yet) a stop-out at the open",
+      "fill_timing": "friday"
+    },
+    {
+      "date": "2026-01-21",
+      "ticker": "?",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Tried an opening-range-highs breakout but stop too wide, so put stop at this candle's low; used 0.3% risk as a starter; nearly stopped out then it ran",
+      "entry_basis": "opening range highs breakout, stop at candle low",
+      "stop": "0.3% risk starter",
+      "source": "2026-01-21_VZnilD2O7N4@43:10",
+      "confidence": "stated",
+      "notes": "Caption 'USD up'/'USR' is a shaky decode (guessed USAR); symbol not clearly established in transcript",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-01-21",
+      "ticker": "?",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Got stopped out as it closed below the 9 EMA after raising stop to a candle low on Thursday; very tiny gain",
+      "entry_basis": "",
+      "stop": "raised to prior candle low; close below 9 EMA",
+      "source": "2026-01-21_VZnilD2O7N4@92:47",
+      "confidence": "stated",
+      "notes": "Caption 'Huts'/'Hots' is a shaky decode (guessed HOOD); symbol not clearly established",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-01-21",
+      "ticker": "ROKU",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Roku LEAP looking ugly; putting stop at previous week low and allowing room for an undercut of the 9 EMA",
+      "entry_basis": "",
+      "stop": "previous week low, with room for 9 EMA undercut",
+      "source": "2026-01-21_VZnilD2O7N4@83:22",
+      "confidence": "stated",
+      "notes": "'Roku leap' = ROKU; LEAP/options position implied",
+      "fill_timing": ""
+    }
+  ],
+  "principles": [
+    { "category": "entries", "text": "On a broad gap-down day into rising EMAs/support levels, prefer buying pullbacks and reversals (e.g., indices pulling into 21/50 EMA) rather than chasing; if market is weak, reduce positions and wait for the next rebound.", "timestamp": "42:30" },
+    { "category": "posture", "text": "Even if bearish, don't short into a fresh gap down — the risk/reward is poor; wait for a rebound into the declining EMAs to short.", "timestamp": "19:09" },
+    { "category": "risk", "text": "Reduce risk per trade to ~0.3-0.4% (down from 0.5%) because trading very frequently raises the odds of losing streaks; smaller risk preserves mental capital and curbs revenge trading.", "timestamp": "61:44" },
+    { "category": "exits", "text": "Trimming too early reduces losses on bad trades but also significantly cuts returns on the good ones; he normally trims after a position is up 3-5R.", "timestamp": "65:12" },
+    { "category": "posture", "text": "Practice progressive exposure by number of trades: start with 1-2 new positions from cash, add to 4-5 only if trades gain traction; cut risk when trades aren't working.", "timestamp": "65:55" },
+    { "category": "mindset", "text": "Study your losing trades, not just journal them — look for recurring weaknesses (e.g., raising risk during losing streaks) and fix them.", "timestamp": "108:26" },
+    { "category": "mindset", "text": "Obey your stop and ignore the impulsive inner voice; most emotion-driven mistakes (FOMO entries, cutting winners early) come from desire for money — be systematic and forget the money.", "timestamp": "110:35" },
+    { "category": "macro", "text": "Theme is the only fundamental that matters to him; he reads charts only (no financials/ratios) but respects that many profitable styles exist.", "timestamp": "86:59" }
+  ],
+  "ambiguous_tickers": [
+    { "timestamp": "04:22", "caption_text": "this I B R X looks sturdy. Pretty good parabolic shots", "context": "Biotech he avoids; gapping near prior highs on huge volume", "guess": "IBRX", "confidence": "likely" },
+    { "timestamp": "21:16", "caption_text": "by the way, Ayla I really love this base", "context": "Long base above 150 EMA, pulling into anchor VWAP and 9 EMA, an A setup", "guess": "AILE", "confidence": "unsure" },
+    { "timestamp": "22:31", "caption_text": "And this Cypher this Cypher, too. A little bit stronger than Ayla", "context": "Looks pretty good, slightly stronger than 'Ayla'", "guess": "CIFR", "confidence": "unsure" },
+    { "timestamp": "22:54", "caption_text": "And this USA they are is is breaking out in breaking out pre-market", "context": "Strong rally from lows, change of character, gapping into declining EMAs on institutional buying", "guess": "USAR", "confidence": "likely" },
+    { "timestamp": "43:10", "caption_text": "I tried putting some USD up for this opening range highs breakout", "context": "The starter position he took with 0.3% risk", "guess": "USAR", "confidence": "unsure" },
+    { "timestamp": "52:59", "caption_text": "Wait, my USR didn't get stopped out", "context": "Same starter position surprising him by not stopping out", "guess": "USAR", "confidence": "unsure" },
+    { "timestamp": "54:31", "caption_text": "IP hasn't stopped me out yet. And now it's coming for me", "context": "Broker/platform humor ('use IP because it allows you to hold winners longer'), not a separate held ticker", "guess": "IP", "confidence": "unsure" },
+    { "timestamp": "63:48", "caption_text": "O N D S is so strong today. But this thing is all over the place", "context": "Very strong name but choppy, not tradeable yet", "guess": "ONDS", "confidence": "likely" },
+    { "timestamp": "39:20", "caption_text": "The LU also looks strong", "context": "Strong name; wants to buy back ~305 or breakout ~330", "guess": "LU", "confidence": "unsure" },
+    { "timestamp": "77:35", "caption_text": "This ONTS is exceptionally strong. And it's very liquid", "context": "An outlier strong, liquid name in this market", "guess": "ONDS", "confidence": "unsure" },
+    { "timestamp": "92:47", "caption_text": "Huts. Yes, I got stopped out from Huts, I believe", "context": "A long he got stopped out of for a tiny gain", "guess": "HOOD", "confidence": "unsure" },
+    { "timestamp": "98:27", "caption_text": "The GTX really looks a bit extended. What's the risk here?", "context": "Tempting but extended short candidate near a top", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "67:34", "caption_text": "Hey look, I bought it. I bought it at this one-minute candle breakout ... it's an EP", "context": "A strong earnings-play name bought on a 1-minute breakout, moving too fast to manage stop, long base / gap over highs, small market cap", "guess": "?", "confidence": "unsure" }
+  ]
+}

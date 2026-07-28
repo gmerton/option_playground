@@ -1,0 +1,128 @@
+{
+  "video_id": "297D7gVsLY4",
+  "date": "2026-04-27",
+  "title": "Short term extension and oil strength | 27 Apr 2026",
+  "observed_trades": [
+    {
+      "date": "2026-04-27",
+      "ticker": "MSTR",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Crypto/MicroStrategy long; cryptos rejected at 150 EMA and below 9 EMA on 4-hour, planning to reduce or maybe exit and take some profits ~7% above 50 EMA",
+      "entry_basis": "",
+      "stop": "hard stop below the candle or below the 21 EMA",
+      "source": "2026-04-27_297D7gVsLY4@02:43",
+      "confidence": "stated",
+      "notes": "Existing hold. He says 'I'm probably going to reduce uh or maybe even exit my MicroStrategy or Galaxy' and 'pew some profits off' - intent to reduce, not a confirmed sell; later 'MicroStrategy is back to the green'. MicroStrategy=MSTR",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-04-27",
+      "ticker": "GLXY",
+      "direction": "long",
+      "action": "exit",
+      "setup": "Galaxy crypto long; cryptos cannot push up quickly and won't give confidence on the breakout, so sold the share",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-04-27_297D7gVsLY4@08:35",
+      "confidence": "stated",
+      "notes": "'I just sold uh my my Google share in Galaxy' - 'Google' likely a caption garble; refers to Galaxy Digital (GLXY)",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-04-27",
+      "ticker": "?",
+      "direction": "long",
+      "action": "exit",
+      "setup": "First pullback of the semis bull run; weekly very extended (semis up ~50% since March low); panic-sold several semi positions, kept remaining three",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-04-27_297D7gVsLY4@30:29",
+      "confidence": "stated",
+      "notes": "'I've I've sold a Y. So the Q sold NBI's and arm' - garbled tickers; he sold multiple semi positions and kept three. Specific symbols (NVDA etc.) NOT decodable from caption; ticker set to '?' for the unnamed semis basket. Flagged in ambiguous_tickers",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-04-27",
+      "ticker": "ARM",
+      "direction": "long",
+      "action": "exit",
+      "setup": "Semi position sold during first pullback of semis bull run; weekly extended",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-04-27_297D7gVsLY4@30:29",
+      "confidence": "inferred",
+      "notes": "'arm' named among the sells ('sold a Y. So the Q sold NBI's and arm'); carried from prior streams' ARM long. Ticker is an interpreted decode - see ambiguous_tickers",
+      "fill_timing": "today"
+    }
+  ],
+  "principles": [
+    {
+      "category": "posture",
+      "text": "When the daily chart is extended (e.g. 2% above 9 EMA, far from all EMAs), don't chase breakouts on the long side; shift focus to profit-taking.",
+      "timestamp": "62:33"
+    },
+    {
+      "category": "exits",
+      "text": "The toughest decision is selling into strength now versus waiting for the pullback and selling into weakness; he admits he often has no clean answer.",
+      "timestamp": "47:35"
+    },
+    {
+      "category": "entries",
+      "text": "To short an extended market, zoom into a lower time frame (15-min) and short the rejection off the EMAs (e.g. 9 EMA pullback) only once the daily is genuinely extended.",
+      "timestamp": "64:13"
+    },
+    {
+      "category": "risk",
+      "text": "A >30% gap-down on a small/micro cap (pre-market up 20%, then down 60% intraday) underscores risk management and the randomness of markets; you never know what the market does next.",
+      "timestamp": "50:17"
+    },
+    {
+      "category": "mindset",
+      "text": "He is often early on both long and short ideas; a directional feel can take days or weeks to play out, and the market can push higher before reversing. On the weekly he wants to see an overshoot of the prior candle high then a reversal.",
+      "timestamp": "71:40"
+    },
+    {
+      "category": "posture",
+      "text": "Be willing to be over-selective and sit out: avoid trades (e.g. oil) where the risk/reward isn't attractive, especially when a new position would conflict with existing exposure and risk irrational panic decisions.",
+      "timestamp": "60:20"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "08:35",
+      "caption_text": "I just sold uh my my Google share in Galaxy",
+      "context": "Selling his crypto-equity long because cryptos can't push up and confirm the breakout",
+      "guess": "GLXY",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "30:29",
+      "caption_text": "So I've I've sold a Y. So the Q sold NBI's and arm. Yumel's pulled back",
+      "context": "Listing the semi/index positions he panic-sold during the first pullback of the semis bull run, keeping three. 'arm'=ARM is the only confidently named symbol; the rest ('a Y', 'the Q', 'NBI's') are not decodable",
+      "guess": "ARM (rest unknown)",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "68:07",
+      "caption_text": "I think Lights could possibly be a short candidate",
+      "context": "Potential short if market turns lower; wants close below 21 EMA first then short the rebound",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "06:14",
+      "caption_text": "the CRM lithium names",
+      "context": "A name/sector he thinks looks good alongside CrowdStrike/software",
+      "guess": "CRM",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "73:51",
+      "caption_text": "I TV is still holding the low ... Now the EMAs to start trending up crossing up. I think they have the potential on becoming the next leader",
+      "context": "Software names getting stronger during the pullback; likely the IGV software ETF",
+      "guess": "IGV",
+      "confidence": "likely"
+    }
+  ]
+}

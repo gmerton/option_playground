@@ -1,0 +1,247 @@
+[00:00] a recession may be around the corner and you have to know exactly how to trade options during a bare Market because the strategy that we've been using the wheel strategy is not the same during a bare
+
+[00:12] market so I'm going to reveal exactly what I did in the last bare Market in 2022 and exactly how to trade a bare market profitably so you don't lose your whole portfolio now let's go ahead and
+
+[00:26] get into it hey welcome back to options with Ryan now the current portfolio sitting at around 659k and I'm going to be documenting this live turning this into 10 million
+
+[00:37] in the next 7 to 10 years so if you aren't subscribed make sure to hit the Subscribe button down below and if you get value out of this video at any point please hit the thumbs up button I really
+
+[00:47] appreciate it because that helps get this out to more people now before we jump into it if you want my options pick straight to your inbox go ahead and hit the link in the description that's going
+
+[00:58] to take you to options trading University which is my free newsletter and I'm going to be emailing you Monday Wednesday and Friday and if you want to speak to me personally and see my
+
+[01:08] personal life go ahead and follow me at it's Ryan hildr and send me a DM I love to answer all questions comments and messages so go ahead and do that now remember this is not Financial advice
+
+[01:19] this is just me sharing my experience with options and how I've built wealth trading options so let's go ahead and jump into it the wheel strategy during in bare markets so if you don't know
+
+[01:31] what the wheel strategy is I have a full tutorial in the description as well but for most of you you probably understand what the wheel strategy is let me just run through it real quick the wheel
+
+[01:43] strategy consists of selling cash secured puts on your favorite stocks such as Nvidia Tesla maybe it's the indexes like spy or QQQ right you sell puts you collect monthly premium
+
+[01:58] anywhere from 2 to 5% % per month on your money right and then eventually the stock will come down and breach your put price so that means you will get assigned 100 shares of that stock once
+
+[02:12] you get assigned 100 shares you immediately start selling covered calls against your shares to generate premium income right monthly income anywhere from on the on the call side anywhere
+
+[02:24] from like 1 and 1/2 to 32% right and then eventually your calls will um be in the money cuz the stock just runs up past your calls your 100 shares get called away at a profit plus you collect
+
+[02:38] the call Premium so that's a double profit on the call side I actually make more money selling covered calls against my stock than I do just selling puts okay um so shares get called away and
+
+[02:51] you run this whole thing over again you sell more cash secured puts now how do we do this in a bare market so let's go ahead and look at some of the worst bare markets that we've ever had um maybe
+
+[03:04] you've been through a few if depending on your age I've been through a couple right but I've only been through one that was pretty significant and the duration was pretty long um and I
+
+[03:16] actually had money in the markets back in 2008 I was too young I didn't have a brokerage account I didn't even really know what stocks were at the time so let's go ahead and kind of analyze why
+
+[03:27] each bare Market can be pretty easily predicted okay and maybe you didn't know this so I'm going to show you exactly how I look at it and how I was able to make it through
+
+[03:39] 2022 um you know unscathed and actually very very profitable and I'm going to show you exact strategies that you can Implement with back testing to prove to you with data that it works okay um
+
+[03:53] there's a back testing tool that I'm going to utilize now back in 2022 to 20 you know we didn't fully recover if you bought in December of 2021 uh the S&P 500 which is what we're
+
+[04:06] looking at and you basically your portfolio was unchanged like you didn't make any money all the way till 2024 okay January of 2024 was when we finally started breaching all-time highs so your
+
+[04:21] portfolio was just going sideways down right then maybe up a little bit uh but your $100 maybe you bought it for 100 bucks let's just say you had $100 in the market that 100 didn't change until 2
+
+[04:33] years later so that was a pretty long um bare Market but there's been longer okay so this one the depth of the bare Market wasn't that bad I mean 27% seems pretty bad um I believe on QQQ we were down
+
+[04:47] like 33% but there was much worse bare markets okay but these could have easily been predicted and this one because of information being so readily available
+
+[04:58] that's why I believe it didn't go down as far and it didn't last as long okay because people everyone has a brokerage account and everyone has access to immediate news and immediate um you know
+
+[05:10] information so um that was a pretty decent bare Market that we went through and still a lot of people lost money a lot of people lost money average investors sold at the bottom um people
+
+[05:21] didn't know how to trade it and they thought the market was never going to come back okay this happens every bare market now we had a crash in 2020 where I lost a lot of money a significant
+
+[05:32] portfolio six figures so that's why I have you know confidence and actual proof that you know I've made it through bare markets um in 2020 was was a big blow for me um and my wife and it was a
+
+[05:47] very very hard time but that's what made this strategy work because I had to figure out a strategy that would actually make it through crashes which rebound very fast and bare markets now
+
+[05:59] this this crash right here the co crash that only lasted 35 days that recovered fully in 35 days so if you were selling cash secured puts and getting assigned the shares down here at the bottom you
+
+[06:13] made you basically doubled your money in 35 days so that's why you don't sell during um at the bottom of a crash or a bare Market there's a better time to sell which is at the top and I'll show
+
+[06:25] you exactly how to figure those points out now this was 2008 we had a 57% draw down that was a pretty big one and it didn't recover to all-time highs like there was all-time highs in 20 2007
+
+[06:39] didn't recover until 5 years later in 2013 okay the next one 50% draw down on the S&P 500 this was the bubble we had a huge runup and this didn't recover for um the highs were in 2000 and this
+
+[06:57] didn't recover until 2007 okay so that one lasted a good 7 years before you actually made your money back so what makes all of these bare markets the same there's only one thing and it's very
+
+[07:12] interesting that this isn't talked about very much and a lot of people don't understand this but you have to understand the flow of money that money went somewhere else it didn't just
+
+[07:23] disappear out of thin air right that money went somewhere else there's always um a loser on the side other side of the trade so there was a lot of winners that sold at the top and put their money
+
+[07:34] somewhere else now basically what we have to understand is the Federal Reserve the Federal Reserve controls the money supply the more dollars that are printed or
+
+[07:45] borrowed from the fed the more dollars Chase assets that provide a return so when people are scared of a bare Market um but for just no reason other than oh well the the num the recess the
+
+[07:58] unemployment numbers look bad or or this look bad or that looked bad all of that really doesn't matter what matters is what the FED does in reaction to that data okay because they control the money
+
+[08:11] flow now institutions Banks and people chase assets because the US dollar is inflationary meaning we just keep printing it the FED keeps printing it um and the more they print the less
+
+[08:24] valuable the dollar becomes so if your money is just sitting there in a bank account get no yield it's actually def it's actually losing value because of inflation right um the this diminishes
+
+[08:38] the buying power of the dollar for example a good example house prices in 1950 were 7,500 bucks you could buy a house in America for 7500 bucks in 1950 the average home prices today are around
+
+[08:55] 420,000 so you can see that when money is printed it chases assets or things that are scarce right they can't just keep building more houses along the coast of California right there's just
+
+[09:07] not enough space so those houses go up a lot in value they can't keep building houses in you know the good safe areas those houses go up in value because there's just no more land to build
+
+[09:19] houses right just understand that money chases assets um because it is inflationary uh the FED is a somewhat private entity that prints US Dollars and has a Board of Governors that
+
+[09:29] reports to Congress all right so when interest rates increase the market will eventually fall because the market doesn't like interest rates being high because the cost of borrowing money goes
+
+[09:42] up right so Banks borrow less money the government borrows less money consumers borrow less money right and then less money is actually going towards assets because frankly you could get better
+
+[09:56] returns in risk-free assets which we'll talk about next okay which is where does the money go okay Ryan the FED raises interest rates the market doesn't like that where does the money go as the
+
+[10:11] Federal Reserve increases interest rates investors Banks and institutions seek alternative risk-free assets such as debt instruments that pay a coupon or a dividend whether it's monthly quarterly
+
+[10:24] yearly right so bonds treasury bills corporate bonds institutional bonds when the FED increases interest rates there is usually some economic falter that causes them to do so so like the
+
+[10:36] FED doesn't just increase interest rates for no reason they increase it because something is wrong with the economy such as inflation in 2022 right so that puts the markets into
+
+[10:49] fear now let's actually go back to um the first bare Market okay this one this one was in 2022 all right we're going to go to this website that um it basically it's a Forbes website that shows you the
+
+[11:04] FED funds rate history so the FED started hiking rates in 2022 of June June 2022 okay that's when they decided okay inflation's getting bad um you know the cost of goods is going up I remember
+
+[11:20] gas in Texas when we lived there went from a196 to almost $350 $4 which was absolutely insane to see in just short amount of time I literally saw it like over a couple weeks right so inflation
+
+[11:35] was getting bad they decided let's raise interest rates back in 2022 so let's go back to the Chart right here this is when they announced it right June 2022 we had a nice pullback that was the
+
+[11:47] first tell this was the time to start saying hey maybe I should start trimming some of my portfolio and leaving some cash on the side now there was even better place to do that which which was
+
+[11:59] in December of 2022 okay this was when we the FED funds rate was about 4.25% which is pretty average that's kind of like the staple fed funds rate somewhere between 3 and 4.25 okay on this meeting
+
+[12:16] um Jerome pal or yeah it was Jerome maybe it was minuchin Jerome pal at the time said we're going to continue hiking rates because inflation is getting bad December 14th okay look what happened
+
+[12:31] December January that's when the bare Market started so you could have got out right here you could have got out had your cash sitting there ready to go right because you could predict these
+
+[12:43] things because of the fed the FED is controlling the money supply they're basically saying hey we're going to basically not increase the money printing we're going to decrease and
+
+[12:53] soak up that money supply and get money out of the markets okay um the same thing happened in 2008 you could have predicted that if we go back
+
+[13:03] here 2008 uh or mid2 2007 the market started crashing if we go to the FED funds rate right let's go back to the FED funds rate Fed rate Cuts in 2007 they started
+
+[13:17] cutting rates because the the market was crashing but we have to look back at 2005 to 2006 the housing market Boom the rates right they started increasing rates in 2005 all the way to
+
+[13:32] mid2 2006 where they brought it up to 5.25 that's uh not too far of where we are now right so because the housing prices I remember my parents bought a house in like 2003 or 2004 and the house
+
+[13:45] literally doubled in price okay this was not sustainable the FED had to hike had to start hiking rates because the housing market was getting ridiculous it was it
+
+[13:57] was inflationary and it's just not sustainable um you know people that made zero income or worked at McDonald's were owning three houses because you know the banks were giving them mortgages it was
+
+[14:09] crazy so the FED had to hike rates 2006 it was the highest we could have predicted okay back here we would have got out a little early right we had still a whole another a year of upwards
+
+[14:23] action but we could have just been maybe 50% in right and the reason why it didn't happen is fast back in the day is because people didn't have brokerage accounts people didn't have Robin Hood
+
+[14:34] accounts TDM Merit tray Charles Schwab tasty trade right there was not a community online trading options right um people didn't have Fast Access they had to call their broker hey like can
+
+[14:47] you sell my stock so it took longer for the information to actually hit the markets nowadays things are immediate right when the FED announced in December hey we're going to continue hiking rates
+
+[15:00] boom 2022 we saw a bare market right literally a month later so this was predictable do com bubble very very predictable this one um obviously again the information wasn't
+
+[15:15] read readily available but the FED started hiking rates in um 1999 they started hiking them all the way in 2000 to 65% right so that's the cost of
+
+[15:29] borrowing like the government if they want to borrow from the FED 62% the banks want to borrow from the FED 62% um that was easily right here right 1999 to 2000 they started hiking rates
+
+[15:42] and then boom a year later huge bare Market all right so now we understand what you know what happens when a be like what causes a bare market right we understand that now
+
+[15:56] so let's understand where the money goes like I said treasury bonds okay treasury bonds actually the yields go up when Federal Reserve hikes interest rates so look at the FED fund
+
+[16:10] rate right every time they hike it they hike rates look what happens to the treasury bond yields this is basically uh bonds are issued by the US government right as debt and what they do is they
+
+[16:24] say hey lend me your money and I'll pay you a coupon right um every month for Lending me money and what happens is the yield on the 10-year treasury went up to 8% right you get 8% on your money
+
+[16:39] risk-free because you're lending it to the US government it's called risk-free because as long as you believe in America that America is not going away anytime soon then you can just leave
+
+[16:49] your money and and T bills and get your free money right risk- free so back here in 2022 the FED funds rate was nearly at zero went all the way up to SI almost 6% and look at the um the treasury the
+
+[17:05] 10-year treasury bill boom you can get basically 5 to 5 and a half% at the peak on your money risk-free right so why would you invest in the stock market when you could just get risk-free money
+
+[17:18] let the economy get better right and then when things get better then you could pull your money out of the T bills and and uh and the treasury bonds and start investing in the stock market
+
+[17:28] again right so like the 3-month T bill was paying out almost 6% risk-free okay so that's crazy like risk-free money um so that's where the money went now the money is slowly coming back into the
+
+[17:42] stock market right so let's create a strategy uh with great profit scenarios with back testing all right so when when the market the FED announces hey we're hiking rates and don't worry I'm going
+
+[17:57] to announce on my YouTube channel when the FED hikes rates so you will know when I'm Shoring up cash okay but first I'm going to go over three specific strategies we're going to do some back
+
+[18:09] testing and then I'm going to go over my strategy what did I do in 2022 okay so you must flip bearish with your income generating strategy once the FED announces that they will be doing
+
+[18:20] interest rate hikes okay you cannot trade a bare Market the same as trading a bull market because the trend is downwards not upwards so you the trend is your friend so now you have to start
+
+[18:30] taking more bear strategies so we have bare call spreads okay 30 days till expiration 30 Delta let's go ahead and go into that um let's so this is my back testing tool here on tacy trade which is
+
+[18:43] pretty cool we're going to be trading SPY which is the S&P 500 we're going to go to inflation induced bare Market 2022 and let's select the strategy the strategy is going to be a bare call
+
+[18:56] spread which is a credit call spread but bearish right is where you sell the 30 Delta call and you buy the 15 Delta call okay it's a spread now we're going to change the days to expiration to
+
+[19:09] 30 all right 30 there we go and we're going to go ahead and um run the back test cool so if you were to just buy thep S&P 500 in dollar cost average like most um Financial YouTubers talk about
+
+[19:28] out you would be down about $2,000 on your money okay now if you were to just do bare call spreads every 30 days okay you would be in a $725 profit or
+
+[19:45] 63% return on Capital okay you used 11,500 throughout those um this time and you made 63% okay this was a strategy that I deployed not very hard right if we to the details number of Trades
+
+[20:01] 74 right largest individual loss 900 bucks and um average Prof profit per trade was $98 okay so yeah you made 63% on your money doing bare call spreads every 30 days all right you could have
+
+[20:19] also done long puts just buying a leap like buy maybe not a leap but buying a long put 90 days out let's test that one 90 days out just buying a long put meaning you think the Market's going
+
+[20:30] down so you just buy put 70 Delta so it's in the money so you're you're making enough money when it does go down and then you close out at 50% of Premium so 50% profit you close out let's let's
+
+[20:42] test that one okay so new back test we're going to go select a different strategy long put which is bearish going to change that to 70 Delta we're going to go 90 days to give
+
+[20:55] ourselves enough time to be right and we're going to take 50% of profit okay let's run the back test if you were to just buy and hold every 90 days on spy you'd be down 667
+
+[21:06] bucks or 25% on your money you'd be down 25% if you just bought a long put every 90 days you'd make $3,772 or 142% return on Capital okay think about that if you put1 Grand in
+
+[21:23] Long puts every 90 days you'd be making double money more than double your money okay so that is that right that's actually the best strategy but the risk is you're paying a premium okay um now
+
+[21:38] there's also short puts which is a a bullish strategy but you're doing 15 Delta so let's go ahead and jump into that 30 days to expiration 15 Delta collecting 50% of Premium okay let's go
+
+[21:50] ahead and do that so new back test we're going to do a short put which is bullish right cash secured puts 30 Delta or we're going to do 15 Delta not 30 because we want to be further
+
+[22:02] away from the stock just in case 30 days till expiration and we just close out at 50% of Premium okay now I didn't close out of these I just if I got assigned great I just got assigned kept the stock
+
+[22:16] for the long term but if you wanted to just collect income you could just close out at 50% of profit that's going to be your best bet during a bare market so let's run the back test there we go if
+
+[22:26] you were to just buy and hold every 30 days the Spy you would have been down 23% or $133,000 with this strategy which is bullish okay it's a bullish strategy you'd make
+
+[22:38] $44,000 and you make 6% return on Capital okay 6.82% not bad not the best I mean it makes sense because you're using a bullish strategy in a bare market so you're not going to make crazy
+
+[22:50] Returns versus doing a long put but still better than losing money okay so let's talk about what I specifically did so what I did was I just followed Simple Rules okay I said I'm going to sell 20
+
+[23:07] Delta puts cash secured puts when vix is over 25 okay if you don't know like what the vix is let's go ahead and just look at that we'll just look at the vix all right um let's go to charts
+
+[23:24] actually that'll be a little easier let's go back here to I don't know 3 years okay and we'll go back to like yeah we'll go back to actually 5 years so you
+
+[23:36] could see 2022 okay the vix was very elevated most of the time it was trading above um above 20 most of the time okay but there was points where it went a little bit below 20 and 23 was kind of
+
+[23:50] like that midpoint it was kind of that midpoint in fact the Ballinger band is telling you so 23 was kind of the midpoint the mean average vix price and vix is the fear index so my rule was
+
+[24:05] sell 20 Delta puts when vix is over 25 okay um let's go back there vix was over 25 many many at lots of the time right but then it would retract back you just see it go up then retract back then go
+
+[24:20] up retract back go up retract back right so it's up and down Market what happened is most of the time I would just keep the premium but some times I got assigned on the stock and if I got
+
+[24:30] assigned I kept the stock that's a long-term hold that once this bare Market is over I'm going to make double triple quadruple my money on especially on like Nvidia and high you know High
+
+[24:41] volatility stocks like that the next strategy sell 30 Delta bare call spreads which we just went over in the back testing when vix is under 23 so when vix is low and there's not as much fear but
+
+[24:54] we're in a bare Market that doesn't make any sense right um you start selling the bare call spreads because that's usually when the market bounces back up it bounces back up right and we could we
+
+[25:06] could take a look at it let's go to um SP spy all right so yeah there there was times back here when it would it would go all the way down and then bounce back
+
+[25:18] up boom be call spread go all the way down bounce back up boom be call spread right and I just kept doing that so you sell 30 Del Delta be call spreads when VI is under 23 close out at 50% of
+
+[25:30] premium and just wait for the next opportunity and then lastly I sold covered calls when vix was below 23 on my shares that I got assigned on or the shares that I currently owned okay 15 to
+
+[25:44] 30 days out and just sold covered calls um did I get called away rarely but uh you know potentially it does happen cool if it does great I made a little profit on the shares profit on the call um but
+
+[25:57] that's basically the strategy it's not that it's not that hard you definitely have to be more cognizant of your entries and exits you have to be very particular with that but if you
+
+[26:11] understand the flow of money there's no reason to be afraid right there's no reason to be afraid like do I see a bare Market coming anytime soon no the the FED is constantly they're going to be
+
+[26:23] lowering interest rates for the next couple years so the next bare Market that I for c will probably probably be somewhere in 2027 maybe later um could be earlier if
+
+[26:35] the FED announces something different but don't worry I'll keep you updated so if you enjoyed this bare Market uh this bare Market tutorial hit the Thumbs Up Button comment down below with any
+
+[26:45] questions I'm going to be answering all questions on this video and uh I'll see you in the next one take care

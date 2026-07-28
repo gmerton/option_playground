@@ -1,0 +1,115 @@
+{
+  "video_id": "4anepWcpjKw",
+  "date": "2026-06-05",
+  "title": "Holiday time | 5 Jun 2026",
+  "observed_trades": [
+    {
+      "date": "2026-06-05",
+      "ticker": "?",
+      "direction": "long",
+      "action": "exit",
+      "setup": "Plans to sell his long position on any bounce into the ~62 area as the market loses momentum",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-06-05_4anepWcpjKw@21:15",
+      "confidence": "stated",
+      "fill_timing": "today",
+      "notes": "Caption 'EMP' is garbled and the symbol is not clearly established in the transcript (prior guess ENTG is unverified), so ticker set to '?'. He holds this as a long and plans to sell into a bounce at ~62 ('sell EMP when there's any bounce into the 62 area'; cf. 'get out of my page at 62' at 27:13)."
+    }
+  ],
+  "principles": [
+    {
+      "category": "posture",
+      "text": "Don't rush to flip aggressively to the short side just because of a pullback; while the market is still in an uptrend, treat a selloff as a short-term correction of a longer-term move and prefer sitting out over fighting the trend.",
+      "timestamp": "08:03"
+    },
+    {
+      "category": "risk",
+      "text": "Playing both long and short aggressively in an uptrend has burned him before (December and February drawdowns); avoid being too aggressive shorting in an uptrend.",
+      "timestamp": "09:37"
+    },
+    {
+      "category": "entries",
+      "text": "Price is the best indicator (roughly 80% price, 20% volume); don't hunt for the 'best' EMA or indicator since all are derived from price and volume.",
+      "timestamp": "23:50"
+    },
+    {
+      "category": "macro",
+      "text": "Extreme extension plus volume spikes on leaders (e.g. a mega-cap gapping up 30% on huge volume) is a warning sign that the move can't last, even if it pushes higher first.",
+      "timestamp": "24:57"
+    },
+    {
+      "category": "posture",
+      "text": "On every pullback or correction, hunt for the next leaders — names holding up with relative strength vs the indices often become the biggest movers of the next leg (e.g. Marvell in March, QCOM-style late starters).",
+      "timestamp": "35:33"
+    },
+    {
+      "category": "mindset",
+      "text": "Once you make a decision (e.g. an exit rule), follow your plan; whether someone holds to 200 or sells below the 9 EMA matters less than committing to and following the plan.",
+      "timestamp": "70:06"
+    },
+    {
+      "category": "exits",
+      "text": "He uses no fixed profit targets on shorts; covers some near the lows of the prior flush/pin-bar candles and trails the rest down based on price action.",
+      "timestamp": "74:46"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "04:45",
+      "caption_text": "I'm going to sell my GPH. um for shorting",
+      "context": "A name that gapped up yesterday but no gap up today; thinking about shorting it but unsure",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "11:09",
+      "caption_text": "some of the names like AXI if we are getting a bounce",
+      "context": "Names showing ugly action he might short on a bounce into declining moving averages",
+      "guess": "AXTI",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "21:15",
+      "caption_text": "I'm going to sell EMP when there's any bounce into the 62 area",
+      "context": "Plans to sell his EMP long into a bounce at ~62; this is his own held position",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "28:18",
+      "caption_text": "PSH. Uh this one is also another one that is going straight up and getting higher volume",
+      "context": "An old/early leader running straight up on rising volume, cited as extended",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "46:20",
+      "caption_text": "AI is looking very strong today. SMTC is also holding up pretty well",
+      "context": "Names holding up well during the pullback (relative strength)",
+      "guess": "AI",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "62:13",
+      "caption_text": "M you want to show shorts alo a yeah",
+      "context": "A possible long setup some viewers like (tight above daily EMAs) but he leans short; weekly 9 under 21 under 50; he skipped the long/breakouts; talked about it Sunday/Monday",
+      "guess": "OLLI",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "66:47",
+      "caption_text": "Napius took off uh half my position at 270. holding half from 200 average",
+      "context": "Viewer's position, not his; viewer took half off at 270, holding half from 200 avg, asking whether to stop the rest at 200",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "70:19",
+      "caption_text": "planet lab is falling is losing the 50 day",
+      "context": "Original leader showing distribution, losing the 50-day",
+      "guess": "PL",
+      "confidence": "likely"
+    }
+  ]
+}

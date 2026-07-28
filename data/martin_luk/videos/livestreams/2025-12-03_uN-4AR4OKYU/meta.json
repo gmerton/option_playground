@@ -1,0 +1,19 @@
+{
+  "video_id": "uN-4AR4OKYU",
+  "url": "https://www.youtube.com/watch?v=uN-4AR4OKYU",
+  "title": "Waiting | 2 Dec 2025",
+  "channel": "martinlukkt",
+  "channel_id": "UCB6jWJJvO_sWZ2PwgmMcxCw",
+  "stream_date": "2025-12-03",
+  "duration": "1:43:46",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

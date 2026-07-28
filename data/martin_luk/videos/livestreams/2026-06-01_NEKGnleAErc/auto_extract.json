@@ -1,0 +1,78 @@
+{
+  "video_id": "NEKGnleAErc",
+  "date": "2026-06-01",
+  "title": "Too early to short | 1 Jun 2026",
+  "observed_trades": [
+    {
+      "date": "2026-06-01",
+      "ticker": "TSLA",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Position weakening, paused at the 9 EMA; initially intended to close into weakness but decides to keep holding.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-06-01_NEKGnleAErc@33:46",
+      "confidence": "stated",
+      "fill_timing": "",
+      "notes": "At 18:03 says 'probably going to close up my Tesla today'; but at 33:46 'my Tesla... paged at the 9 EMA. I think I'm just going to hold, keep holding it.' Final stated decision is to keep holding, so action = hold. Position entered the prior week (per 5/26 stream)."
+    },
+    {
+      "date": "2026-06-01",
+      "ticker": "GFS",
+      "direction": "long",
+      "action": "exit",
+      "setup": "Closed GlobalFoundries; semis getting weak, reducing exposure into a stretched market.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-06-01_NEKGnleAErc@31:53",
+      "confidence": "stated",
+      "fill_timing": "today",
+      "notes": "'I close my GFS.' (31:53); later (68:37) 'I think I've sold GFS a little bit too early today.'"
+    },
+    {
+      "date": "2026-06-01",
+      "ticker": "MU",
+      "direction": "long",
+      "action": "trim",
+      "setup": "Notes MU showing strength; says he's trying to reduce his exposure a bit (de-risking).",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-06-01_NEKGnleAErc@28:36",
+      "confidence": "inferred",
+      "fill_timing": "today",
+      "notes": "'I saw some more some mu in the strength. Trying to reduce my exposure a bit.' (28:36) — the 'reduce exposure' remark is general and only loosely tied to MU; trim of MU specifically is a weak inference."
+    },
+    {
+      "date": "2026-06-01",
+      "ticker": "RGTI",
+      "direction": "short",
+      "action": "hold",
+      "setup": "Short held in a quantum name that keeps grinding higher; expects to get stopped soon, may re-try on another gap up.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-06-01_NEKGnleAErc@61:47",
+      "confidence": "stated",
+      "fill_timing": "",
+      "notes": "At 61:47 'I started shorting RGTI I think on this day or this day and then we got another week up' — explicitly names RGTI and states he is short, entered a prior (unspecified) day. The 57:43 'probably going to get stopped out very soon' refers to this short."
+    }
+  ],
+  "principles": [
+    { "category": "posture", "text": "When the leaders are vertical (90-degree, consecutive green days, far above the 50 EMA), don't be aggressive; shift focus to taking profits rather than opening new positions.", "timestamp": "16:42" },
+    { "category": "exits", "text": "Exit weak/extended positions one by one, slowly and steadily, rather than dumping everything at once, so you keep some exposure to capture the final leg if the run continues.", "timestamp": "34:46" },
+    { "category": "exits", "text": "Sell into strength on discretion; don't wait for a close below the 9 EMA, because the fastest movers get too extended and a post-9EMA-close exit can cost a ~20% pullback.", "timestamp": "63:29" },
+    { "category": "risk", "text": "On margin with heavy long exposure, prefer trimming early and re-buying on a fresh breakout over sitting through a pullback, because a correction hits all correlated positions at once and amplifies drawdown from the peak.", "timestamp": "65:17" },
+    { "category": "mindset", "text": "Don't short too early: when you start to feel bearish, the market usually pushes a few more days/weeks higher before the real reversal. It's too early to short and too late to long.", "timestamp": "53:35" },
+    { "category": "entries", "text": "The same chart in a different context/timing yields a different decision; situational awareness governs whether to take an otherwise-clean breakout. In a stretched market, skip new breakouts.", "timestamp": "48:22" }
+  ],
+  "ambiguous_tickers": [
+    { "timestamp": "14:08", "caption_text": "The RM is gapping up today", "context": "A name gapping up and going higher at the open, watching for extension/volume spike; later 'Arm is going straight up' and 'arm is gapping up more than 15% today'.", "guess": "ARM", "confidence": "likely" },
+    { "timestamp": "17:22", "caption_text": "I'm putting core wave into watch this", "context": "Putting a name on watch after a gap up, tracking strength of the breakout follow-through vs falling back into the anchor VWAP.", "guess": "CRWV", "confidence": "likely" },
+    { "timestamp": "19:26", "caption_text": "BFS is pretty weak today", "context": "Mentioned as weak alongside general semis getting hit.", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "45:35", "caption_text": "All close looks ready. Maybe one or two more tight days on our 10 20 50 cluster", "context": "A name looking ready with a tight EMA cluster (10/20/50); later 'talking about Olo again' suggests OLO.", "guess": "OLO", "confidence": "unsure" },
+    { "timestamp": "48:41", "caption_text": "a leotard um electing stock", "context": "A leading/elite stock that looks like it's going to break out; he'd take it early in an uptrend but is skipping it now given extension. Context ties to OLO.", "guess": "OLO", "confidence": "unsure" },
+    { "timestamp": "51:54", "caption_text": "and barfall is another example", "context": "Cited as an example of huge volume at the top with distribution candles; not interested in going long.", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "52:15", "caption_text": "light is um like slipping slipping through the 50 EMA", "context": "A name slipping through the 50 EMA for the first time since the liberation-day low / start of the big uptrend.", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "58:23", "caption_text": "QBTS back in um is it QBTS? QTI", "context": "References a quantum name from October last year that kept grinding higher then ran 30% more; he self-corrects between QBTS and 'QTI'. Likely RGTI or QBTS lesson.", "guess": "RGTI", "confidence": "unsure" },
+    { "timestamp": "67:43", "caption_text": "You Mac is pretty attractive to me", "context": "A name he finds attractive; ties to UMAC discussed in other streams.", "guess": "UMAC", "confidence": "likely" }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "video_id": "plzrzv5vZlI",
+  "url": "https://www.youtube.com/watch?v=plzrzv5vZlI",
+  "title": "He Runs 48 0DTE Options Trades a Day — All Automated! Here’s How",
+  "channel": "Theta Profits",
+  "channel_id": "UCzGARfberQ8nRRbsjK90BHg",
+  "stream_date": "2025-07-06",
+  "duration": "34:07",
+  "summary": "Kyle Lisman (career CTO; builder/vendor of 'Trade Automation Toolbox' + free 'BOB' backtester) runs ~48 SPX 0DTE structures/day fully automated: ~24 iron condors + ~20 trend-following single-side credit spreads (sell put spreads above intraday MAs, call spreads below) harvesting VRP. Central honest point: AUTOMATION IS NOT A STRATEGY - it's execution infrastructure that implements a plan you already backtested; it removes clicks/human-error/emotion but creates no edge. Good safety-first engineering: stop orders pushed to broker servers on entry so a software/power/internet failure can't leave positions unprotected. Claims ~30-40%/yr 'on buying power used' over ~3 yrs, but NO separable track record, soft denominator, and '48 trades/day' is throughput not alpha (~12k trades/yr eats thin 0DTE edge in costs). April-9-2025 tariff spike: call side stopped out, no profit, 'typical' loss. Underlying book = VRP-harvest already covered by MEIC/Pulver; intraday so NOT testable on our EOD stack. Vendor motive. Write-up: strategies/automation_tat_kyle_lisman.md (conviction 1.5/5).",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

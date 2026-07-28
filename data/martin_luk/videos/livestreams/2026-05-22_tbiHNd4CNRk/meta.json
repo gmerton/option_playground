@@ -1,0 +1,19 @@
+{
+  "video_id": "tbiHNd4CNRk",
+  "url": "https://www.youtube.com/watch?v=tbiHNd4CNRk",
+  "title": "Be open-minded and curious | 22 May 2026",
+  "channel": "martinlukkt",
+  "channel_id": "UCB6jWJJvO_sWZ2PwgmMcxCw",
+  "stream_date": "2026-05-22",
+  "duration": "1:03:36",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

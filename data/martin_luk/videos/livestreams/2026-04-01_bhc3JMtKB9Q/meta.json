@@ -1,0 +1,19 @@
+{
+  "video_id": "bhc3JMtKB9Q",
+  "url": "https://www.youtube.com/watch?v=bhc3JMtKB9Q",
+  "title": "A lot of talking | 1 Apr 2026",
+  "channel": "martinlukkt",
+  "channel_id": "UCB6jWJJvO_sWZ2PwgmMcxCw",
+  "stream_date": "2026-04-01",
+  "duration": "1:52:13",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

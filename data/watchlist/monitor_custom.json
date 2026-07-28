@@ -179,5 +179,30 @@
     "trigger_lb": 20,
     "tier": "A",
     "note": "sweep-add 06-22; tight low-ADR coil under $93.92 pivot, grinder"
+  },
+  "GNRC": {
+    "trigger_lb": 20,
+    "tier": "A",
+    "note": "top10 06-22; breaking +0.5% pivot, RVOL1.5, strong closer"
+  },
+  "TXN": {
+    "trigger_lb": 20,
+    "tier": "A",
+    "note": "top10 06-22; at pivot, low ADR 3.9, very liquid mega-cap"
+  },
+  "ADI": {
+    "trigger_lb": 20,
+    "tier": "A",
+    "note": "top10 06-22; breaking +1.3%, calm ADR 3.9, liquid"
+  },
+  "KEYS": {
+    "trigger_lb": 20,
+    "tier": "A",
+    "note": "top10 06-22; breaking +0.9%, low ADR 3.5"
+  },
+  "SMTC": {
+    "trigger_lb": 20,
+    "tier": "A",
+    "note": "top10 06-22; coiled -1.5% under pivot, high ADR 8.5-size small"
   }
 }

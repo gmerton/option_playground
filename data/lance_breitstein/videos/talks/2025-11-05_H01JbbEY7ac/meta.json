@@ -1,0 +1,19 @@
+{
+  "video_id": "H01JbbEY7ac",
+  "url": "https://www.youtube.com/watch?v=H01JbbEY7ac",
+  "title": "Reacting to Kristjan Qullamaggie\u2019s Moving Average Trading Strategy",
+  "channel": "TheOneLanceB",
+  "channel_id": "UCzksXiC-Ju-DTIZmMiaOVfQ",
+  "stream_date": "2025-11-05",
+  "duration": "19:01",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

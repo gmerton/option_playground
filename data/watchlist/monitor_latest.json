@@ -1,158 +1,62 @@
 {
-  "AMD": {
-    "trigger_lb": 5,
-    "tier": "A-",
-    "note": "-3.8% to pivot $558.37; RVOL 1.1x; 1M 29.8%",
-    "watch": false
-  },
-  "APH": {
+  "BURL": {
     "trigger_lb": 20,
     "tier": "A",
-    "note": "-0.1% to pivot $164.18; RVOL 1.3x; 1M 37.6%",
+    "note": "-1.6% to pivot $361.21; RVOL 0.5x; 1M 5.5%; !adr",
     "watch": false
   },
-  "APLD": {
+  "CASY": {
     "trigger_lb": 5,
-    "tier": "A-",
-    "note": "-7.3% to pivot $50.24; RVOL 0.6x; 1M 27.2%",
+    "tier": "A",
+    "note": "-7.2% to pivot $927.85; RVOL 0.3x; 1M 2.2%",
     "watch": true
   },
-  "ATI": {
+  "CVS": {
     "trigger_lb": 20,
     "tier": "A",
-    "note": "-1.1% to pivot $203.59; RVOL 1.7x; 1M 33.8%",
+    "note": "+1.0% to pivot $108.97; RVOL 0.7x; 1M 12.0%; !adr",
     "watch": false
   },
-  "BAP": {
+  "EBAY": {
     "trigger_lb": 5,
     "tier": "A",
-    "note": "-3.4% to pivot $396.03; RVOL 1.3x; 1M 21.2%",
-    "watch": false
-  },
-  "CMI": {
-    "trigger_lb": 20,
-    "tier": "A",
-    "note": "-2.3% to pivot $733.48; RVOL 2.2x; 1M 8.7%",
-    "watch": false
-  },
-  "CORZ": {
-    "trigger_lb": 5,
-    "tier": "A",
-    "note": "-4.3% to pivot $30.46; RVOL 1.2x; 1M 27.2%",
+    "note": "-5.2% to pivot $119.31; RVOL 0.4x; 1M 4.5%; !adr",
     "watch": true
   },
-  "CRS": {
-    "trigger_lb": 20,
-    "tier": "A",
-    "note": "+0.2% to pivot $585.50; RVOL 1.7x; 1M 44.3%",
-    "watch": false
-  },
-  "DOCN": {
+  "HST": {
     "trigger_lb": 5,
     "tier": "A",
-    "note": "-7.6% to pivot $187.50; RVOL 0.9x; 1M 15.5%",
-    "watch": true
-  },
-  "FTAI": {
-    "trigger_lb": 5,
-    "tier": "A",
-    "note": "-3.3% to pivot $285.50; RVOL 1.1x; 1M 23.5%",
-    "watch": false
-  },
-  "GEV": {
-    "trigger_lb": 20,
-    "tier": "A",
-    "note": "-2.7% to pivot $1140.00; RVOL 1.6x; 1M 9.7%",
-    "watch": false
-  },
-  "GFS": {
-    "trigger_lb": 5,
-    "tier": "A-",
-    "note": "-7.3% to pivot $92.55; RVOL 0.6x; 1M 28.7%",
-    "watch": true
-  },
-  "GH": {
-    "trigger_lb": 20,
-    "tier": "A",
-    "note": "-2.4% to pivot $135.00; RVOL 1.5x; 1M 34.2%",
-    "watch": false
-  },
-  "HUT": {
-    "trigger_lb": 5,
-    "tier": "A-",
-    "note": "-8.0% to pivot $135.31; RVOL 0.9x; 1M 33.4%",
+    "note": "-4.3% to pivot $25.41; RVOL 0.3x; 1M -2.8%; !adr",
     "watch": true
   },
   "IBKR": {
-    "trigger_lb": 20,
+    "trigger_lb": 5,
     "tier": "A",
-    "note": "-0.8% to pivot $96.75; RVOL 1.5x; 1M 15.0%",
+    "note": "-3.7% to pivot $97.84; RVOL 0.7x; 1M -1.9%",
     "watch": false
   },
-  "LRCX": {
-    "trigger_lb": 20,
-    "tier": "A-",
-    "note": "-2.2% to pivot $397.63; RVOL 2.3x; 1M 42.3%",
-    "watch": false
-  },
-  "LSCC": {
-    "trigger_lb": 20,
-    "tier": "A-",
-    "note": "-1.3% to pivot $155.82; RVOL 1.4x; 1M 23.7%",
-    "watch": false
-  },
-  "MOD": {
+  "ILMN": {
     "trigger_lb": 5,
     "tier": "A-",
-    "note": "-8.0% to pivot $323.25; RVOL 1.5x; 1M 21.6%",
+    "note": "-3.2% to pivot $196.66; RVOL 0.5x; 1M 17.6%",
+    "watch": false
+  },
+  "NUVL": {
+    "trigger_lb": 20,
+    "tier": "A",
+    "note": "-0.0% to pivot $123.97; RVOL 1.2x; 1M 0.4%; !adr",
+    "watch": false
+  },
+  "PR": {
+    "trigger_lb": 5,
+    "tier": "A",
+    "note": "-8.0% to pivot $22.68; RVOL 0.5x; 1M 13.2%; !adr",
     "watch": true
   },
-  "MRVL": {
-    "trigger_lb": 5,
-    "tier": "A-",
-    "note": "-4.2% to pivot $324.20; RVOL 6.2x; 1M 76.2%",
-    "watch": true
-  },
-  "NVT": {
+  "ROST": {
     "trigger_lb": 20,
     "tier": "A",
-    "note": "-0.6% to pivot $178.00; RVOL 2.1x; 1M 11.9%",
-    "watch": false
-  },
-  "RVMD": {
-    "trigger_lb": 20,
-    "tier": "A",
-    "note": "-2.1% to pivot $166.50; RVOL 1.4x; 1M 10.7%",
-    "watch": false
-  },
-  "SN": {
-    "trigger_lb": 20,
-    "tier": "A-",
-    "note": "+0.9% to pivot $139.58; RVOL 1.2x; 1M 38.1%",
-    "watch": false
-  },
-  "TER": {
-    "trigger_lb": 20,
-    "tier": "A-",
-    "note": "-0.6% to pivot $440.75; RVOL 4.7x; 1M 36.2%",
-    "watch": false
-  },
-  "VICR": {
-    "trigger_lb": 5,
-    "tier": "A-",
-    "note": "-3.5% to pivot $343.39; RVOL 1.1x; 1M 36.1%",
-    "watch": false
-  },
-  "VSH": {
-    "trigger_lb": 20,
-    "tier": "A-",
-    "note": "-2.6% to pivot $66.65; RVOL 1.9x; 1M 75.2%",
-    "watch": false
-  },
-  "WULF": {
-    "trigger_lb": 20,
-    "tier": "A-",
-    "note": "-1.1% to pivot $29.30; RVOL 1.0x; 1M 35.8%",
+    "note": "-2.2% to pivot $242.81; RVOL 0.4x; 1M 2.0%; !adr",
     "watch": false
   }
 }

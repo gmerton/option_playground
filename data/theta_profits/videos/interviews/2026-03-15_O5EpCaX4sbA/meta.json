@@ -1,0 +1,19 @@
+{
+  "video_id": "O5EpCaX4sbA",
+  "url": "https://www.youtube.com/watch?v=O5EpCaX4sbA",
+  "title": "How He Makes 1% Per Week Selling Weekly Puts",
+  "channel": "Theta Profits",
+  "channel_id": "UCzGARfberQ8nRRbsjK90BHg",
+  "stream_date": "2026-03-15",
+  "duration": "43:53",
+  "summary": "Josh Walker (soft-retired engineer, Prescott AZ) sells weekly cash-secured puts (~5 DTE, Monday to Friday) on a ~80-90 name tech watchlist, picking strikes just below discretionary Ichimoku Cloud / moving-average support levels and targeting 1.04% of account premium per week. The honest core: he volunteers that the '1% per week' is a premium-collection goal (~1.28% in 2025), while the realized account return was only ~0.9%/week (~30-40%/yr) once assigned losers he still held are counted, so the video title oversells by roughly 2x. Real, disciplined structure with correct capital-at-risk accounting (cash-secured, quoted on account value) and a sober 7/10 self-rated risk, but the win-determining edge is unfalsifiable chart-reading, there is no separable track record (self-reported, ~$50-60k account, one benign tech-bull year), and single-name tech CSPs carry a gap/assignment tail; the 'stock repair' overlay is really doubling down and he admits ~80% of rolls still get assigned. Write-up: strategies/weekly_put_selling.md (conviction 2/5).",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

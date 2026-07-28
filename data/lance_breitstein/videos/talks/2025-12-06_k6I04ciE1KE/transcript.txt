@@ -1,0 +1,93 @@
+[00:00] When you know how to align multiple trading time frames, you can increase your win rate, increase your expected value, and become a profitable trader. It applies to every strategy, every
+
+[00:09] product. And I do this every day with my own trading. I'm Lance Brightstein, [music] 8 figureure P&L trader with over $und00 million in verified profits. Wired stock market expert, market
+
+[00:20] wizard, and mentor to the world's top traders. So, here's how to align multiple time frames in your trading, why it's important, and I will also walk you through a few examples of exactly
+
+[00:30] how I do it in my own trading. Then, at the end, I have two critical tips that ties this concept together for your own practical application. While the concept of aligning multiple time frames via
+
+[00:39] technical analysis has long existed, the concept was popularized by Brian Shannon's book, Technical Analysis Using Multiple Time Frames. I read this book in college and sure enough I later found
+
+[00:51] my mentor to be teaching me utilizing this concept as well when I first started working at Trillium. I want you to think of trading as like fighting a battle. We want to get as many people on
+
+[01:01] our side as possible. We want the day traders, the swing traders, the hedge funds all buying after we buy or selling after we short. Assemble. The best part is that as nimble smaller traders, we
+
+[01:13] can often position ourselves first ahead of that inflow of volume from the larger less nimble players. So, how do we do this? One way is by aligning as many time frames as possible. Because when
+
+[01:24] multiple time frames agree, when the daily chart is saying this is the level and the intraday is giving you the same trigger, you're stacking the variables in your favor. Here's the thing. Every
+
+[01:34] time frame has its own group of market participants. Scalpers are watching the one minute or two minute. Intraday momentum traders are watching the five and 15 minute. Swing traders are dialed
+
+[01:43] into the daily. Institutional money, they're watching the big picture on the daily chart. So when you're taking a trade that's only valid on the one minute chart, you've maybe got the
+
+[01:52] scalpers with you. That's it. But when that setup is happening at a major level from the daily chart, now you've got scalpers watching the quick move, intraday traders recognizing the same
+
+[02:01] inflection, swing traders stepping in at the daily level, and maybe even bigger money starting to build a position. You just went from a solo skirmish to fighting with an army behind you. And
+
+[02:12] what does that mean in trading terms? It means your expected value just went up. Let's unpack that. Expected value or EV is the essence of trading. And if you don't know what expected value is,
+
+[02:22] subscribe and watch this video. When your setup aligns across multiple time frames, your win rate increases because you've got more confirmation and more participants acting in your favor. Your
+
+[02:32] potential reward increases because bigger players create bigger moves. You're no longer trading for a 10-cent scalp. You're catching a multi-doll move that's being driven by bigger money
+
+[02:43] participants. And your risk, it often stays about the same because your stop is still tucked behind the same key level. you're just now entering a higher quality trade. So, if you keep the same
+
+[02:53] risk, but increase both win rate and reward, your expected value doesn't just increase linearly, it increases exponentially. If you've seen me dissect a trade in one of my weekly YouTube live
+
+[03:03] sessions, odds are you see that most times I start with the daily chart context. I am always using that daily chart to give me big picture context of where the stock has come from and what
+
+[03:13] the various market participants might be thinking and feeling. If you look at the best long trades, they often are obvious longs on the intraday chart and the daily chart. If you look at the best
+
+[03:23] short trades, the same holds true. They're obvious shorts on the intraday and daily charts. So, what does this look like in practice? Let's start off with SMCI on January 19th, 2024. On this
+
+[03:34] day, SMCI gapped up in the pre-market following a promising Q2 guidance update. position just below a significant multi-year resistance level at $355
+
+[03:44] and all-time highs on the daily time frame. SMCI initially saw a dip but rebounded once it referenced its opening price turning positive on the day. This scenario presents a convergence of three
+
+[03:55] time frames. A notable news catalyst in a hot sector drawing attention from institutional investors, hedge funds, and fundamental traders. a breakout on the daily chart to new all-time highs
+
+[04:06] after a prolonged consolidation period, appealing to swing traders and those operating on higher time frames, and an intraday reversal from red to green, enticing active intraday traders. In
+
+[04:16] this instance, SMCI skyrocketed an impressive 25% in a straight line. The next example is in Ford. Ford mirrors the structure of the SMCI trade, but in reverse. On October 27th, 2023, Ford
+
+[04:28] gapped down following a disappointing earnings announcement. The underwhelming fundamental performance was chiefly attributed to losses in their electric vehicle segment and the burden of a high
+
+[04:37] cost structure in gas engine vehicles. This development drew immediate attention from institutional investors, hedge funds, and traders focused on fundamental analysis. The pre-market
+
+[04:46] activity saw Ford opening below a substantial multi-year support level at $11 on the daily chart. A move that caught the eye of swing traders and those operating on higher time frames.
+
+[04:56] Intraday, the stock printed my bouncy ball pattern, adding intrigue for intraday traders seeking short-term opportunities. Once again, we witness a convergence of multiple time frames
+
+[05:06] aligning in this example for shorting the break of support at $10.20. In this final example, AVGO and other semiconductor stocks experienced a notable gap up propelled by the earnings
+
+[05:17] report and massive AI guidance from Nvidia. Unlike Nvidia, there was no specific fundamental change directly impacting AVGO. On the daily time frame, AVGO displayed signs of capitulation
+
+[05:28] evident from the surge in volume and price acceleration beyond the upper Ballinger band. This dynamic attracted the attention of swing traders and those focusing on higher time frames.
+
+[05:38] Similarly, on the intraday time frame, the capitulation was apparent, peing the interest of intraday traders seeking shorter term opportunities. If you showed me the daily chart, I'd want to
+
+[05:47] be short. If you showed me the intraday chart as we spike above $900, I'd also want to be short. That alignment across time frames provides for a higher expected value situation. Now, let's get
+
+[05:57] into two critical advanced tips. These took me years and years to learn and internalize, paid for by a lot of tuition to the markets. The first is that the lower time frames are the most
+
+[06:06] important for your trading decisions. If you are an intraday trader, the intraday chart will always be more important than the daily chart. If I had to approximate it for my intraday trades, the intraday
+
+[06:16] chart gets an 80% waiting for my decisions. Even if the daily chart is screaming short, if the stock is steadily grinding on the intraday chart, I will almost never fight that.
+
+[06:26] Similarly, if a chart has a mediocre daily chart but an amazing intraday chart, I will still likely take the trade. That is because the lower time frame wins and importance. It speaks
+
+[06:35] more to the price action in this specific moment in time. My second huge tip that I learned as I expanded my playbook to incorporate swing trading. If you place a trade due to the intraday
+
+[06:44] chart, you often want to be using a stop on the intraday chart. If you place a trade due to the daily chart, you often want to be using a stop on the daily chart. In other words, I want my stop
+
+[06:54] and system to be relevant to the time frame I'm placing the trade on. For example, take this breakout in ION Q above $50 or so. If I get long on the breakout due to that beautiful daily
+
+[07:05] consolidation, my initial stop will be the lows of the daily bar. Then for my simple system, I'm going to use a trailing stop of prior bar lows, which keeps me in the trade until about $71 or
+
+[07:15] so. Notice how I am not giving it some tight intraday stop because it is a daily chart trade. Trust me, those two lessons alone are worth their weight in gold. I don't know what to make of the
+
+[07:25] fact that lessons don't weigh anything. So, that saying doesn't really make sense here, but I do know gold prices have been up a lot. Pros and cons to everything, I guess. Anywh who, there's
+
+[07:33] a reason why aligning multiple time frames has been a popular trading concept for decades. Experienced traders know that our best trades are when all market participants are on our side. If
+
+[07:43] you're serious about trading, consider joining my trading course that's used by firms to train their traders. The link is in the description. Thanks for watching and I'll see you next time.

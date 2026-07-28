@@ -1,0 +1,143 @@
+{
+  "video_id": "ooGFDI2AZ0M",
+  "date": "2026-04-23",
+  "title": "Halted | 23 Apr 2026",
+  "observed_trades": [
+    {
+      "date": "2026-04-23",
+      "ticker": "COIN",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Crypto long; gap up setting down/pulling back, letting it get stopped out at the open",
+      "entry_basis": "",
+      "stop": "stop at the open / prior stop level",
+      "source": "2026-04-23_ooGFDI2AZ0M@03:51",
+      "confidence": "stated",
+      "notes": "Existing position. 'coin probably going to get stopped out' then later 'am I getting shakeouts from coin again'. COIN=Coinbase",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-04-23",
+      "ticker": "WOLF",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Wolfspeed looked good but shot up first 1-minute candle then reversed; got stopped out",
+      "entry_basis": "1-minute breakout entry near open",
+      "stop": "tight; stopped on first 1-min candle reversal",
+      "source": "2026-04-23_ooGFDI2AZ0M@09:01",
+      "confidence": "stated",
+      "notes": "'wolf is just shooting up in the first one minute candle. got stopped out'. wolf=WOLF (Wolfspeed)",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-04-23",
+      "ticker": "NOK",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Nokia gapping up after earnings; entered but stopped out, reinforcing that he should sit out the first 15 minutes",
+      "entry_basis": "early entry near open",
+      "stop": "stopped out within first 15 min",
+      "source": "2026-04-23_ooGFDI2AZ0M@17:39",
+      "confidence": "stated",
+      "notes": "'got stopped out from Nokia'. NOK=Nokia",
+      "fill_timing": "today"
+    }
+  ],
+  "principles": [
+    {
+      "category": "entries",
+      "text": "Sit out the first 15-30 minutes of the session; entering in the opening window has a low win rate, especially around earnings gaps.",
+      "timestamp": "18:19"
+    },
+    {
+      "category": "risk",
+      "text": "Taking many small losses chewing up buying power compounds the damage; a stream of unexpected stops drains both capital and the ability to size the trade you actually want.",
+      "timestamp": "64:23"
+    },
+    {
+      "category": "mindset",
+      "text": "Selling a winner to fund a new idea usually backfires: the original works while the new one stops you out, and the regret of that is worse than the regret of missing a fresh opportunity.",
+      "timestamp": "47:37"
+    },
+    {
+      "category": "entries",
+      "text": "He likes basing setups where the EMAs are tightly clustered and starting to cross up (e.g. 9 crossing 21/50); buy the weakness as things line up.",
+      "timestamp": "60:35"
+    },
+    {
+      "category": "entries",
+      "text": "To enter an extended short candidate he wants acceleration to the downside: a huge red candle (5-min down 5-10%+) with increased volume engulfing the prior small candle.",
+      "timestamp": "98:32"
+    },
+    {
+      "category": "risk",
+      "text": "When a stock halts repeatedly you cannot manage risk (can't place stops or get filled between halts); such names may not be worth trading no matter how attractive.",
+      "timestamp": "70:13"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "05:30",
+      "caption_text": "Offlow is also gapping up after announcement of Nvidia partnership",
+      "context": "A name gapping up on an NVIDIA partnership announcement; later called 'Oaklo' finding support",
+      "guess": "OKLO",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "05:47",
+      "caption_text": "Quantum Skip is keeping up after the earnings",
+      "context": "A name up after earnings, in the 'quantum' theme he tracks",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "07:30",
+      "caption_text": "The circle is also pulling back into the nine or the 21 EMA",
+      "context": "Crypto-related name pulling back; he loves the pullback and weekly looks strong. 'Circle' = Circle Internet (stablecoin) IPO he discusses elsewhere",
+      "guess": "CRCL",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "08:15",
+      "caption_text": "MU and SNDK are the ones that is working really well that I completely missed",
+      "context": "Memory names that worked the prior day; SNDK=SanDisk",
+      "guess": "SNDK",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "57:38",
+      "caption_text": "the BMR and coin are still above it",
+      "context": "Crypto names flagging/making higher lows above the 9 EMA with COIN; 'BMR' likely BMNR (Bitmine)",
+      "guess": "BMNR",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "62:18",
+      "caption_text": "F first solar today guy is like solar soul is pretty strong See DG ... NXT is the choppy one ... BBS CDG is the play",
+      "context": "Solar sector discussion; FSLR (First Solar), NXT (Nextracker), and a 'CDG'/'SEDG' name",
+      "guess": "SEDG",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "70:51",
+      "caption_text": "Your arm is actually breaking out from the alltime highs ... this base looks wonderful ... test the base back in 2010 2013",
+      "context": "A long two-year base breaking out to all-time highs he may treat as a long-term hold; 'arm' here may be a garble of another ticker given the 2010-2013 base context",
+      "guess": "ARM",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "90:40",
+      "caption_text": "Should I I bought airlines instead of car by AAL? AEL is actually up 4% today",
+      "context": "Considering buying an airline instead of CAR; AAL=American Airlines, 'AEL' likely AAL",
+      "guess": "AAL",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "98:52",
+      "caption_text": "Why are yen? Oh, today's actually having good breakouts",
+      "context": "A name he says had good breakouts today but he wasn't watching it",
+      "guess": "?",
+      "confidence": "unsure"
+    }
+  ]
+}

@@ -1,0 +1,383 @@
+[00:00] If there's a spike in the VIX, you can actually close the position early. You can usually grab almost all of the profit and it becomes 5x 10x your investment. It becomes a very big
+
+[00:14] payback. When markets get scary, most traders lose. But this wick strategy is built to win. Welcome, AJ Brown. Hey, thanks John. Thanks for having me.
+
+[00:28] So let's get straight to it. Give us the 40 secondond version of what your VIX trade does. Well, I mean the big thing is is that we are having these moments especially more now in 2025 2026 and in
+
+[00:44] the you know not too distant future where these external shocks are affecting the market affecting our whole portfolio because there's so much correlation between all the different
+
+[00:57] stocks thanks to like the proliferation of ETFs and funds like that. There's so much correlation that when something big like I don't know one of the biggest powers in the world decides that they
+
+[01:10] want to annex a country or take over another country all of these crazy things tariff the other biggest country in the world you know economically these things affect everything and your whole
+
+[01:23] portfolio goes under stress. But now what if there is a way where we can recognize that every time this pattern under stress occurs that we can actually profit from it. That was like the big
+
+[01:37] problem in my mind. And so we started to look for what you know security measures when things are fearful or uncertain and how can we profit from it. That's really the summary of what we're doing here.
+
+[01:52] We're putting a portion of our portfolio into this one trade to basically hedge when the rest of our portfolio is under stress. And as we are recording this on February
+
+[02:03] 5th, the market is taking another dip. And I guess a lot of us wish we had a trade like that on in in place. Yeah. Yes. Okay. So, tell us a little bit
+
+[02:15] about yourself, especially as an options trader. Who are you? Yeah. I'm AJ Brown. I founded a company back in 2003 called Trading Trainer. Uh I actually started doing options trading
+
+[02:27] in 1997. I started by the the way a lot of folks uh today start. I started by taking courses and I did that over and over. You know, I would try to trade those
+
+[02:38] strategies, John, and I would, you know, find out if it would was a winning strategy or a losing strategy. And finally, I I took a good look at my own personal life. And my own personal life,
+
+[02:50] I was like, I don't want to be stuck in front of the charts all day. I don't want to have to read charts. I I I see myself as an end of day trader, but I still want that flexibility to be able
+
+[03:03] to profit on whatever profits or whatever patterns that I'm seeing. not just price patterns but patterns in time patterns in you know fear and confidence those type and that's what attracted me
+
+[03:16] to option and then it took me a long time because maybe I did something different than folks can today I did a lot of trial and error so it took me like a good six or seven years of trial
+
+[03:28] and error to try to figure out what actually worked not only for me but for you know consistently but when I finally cracked that code. I started to not only teach people, but I also started to
+
+[03:42] teach, you know, I got called into a group uh in Denver. I was living in in Colorado at the time, and there were some moms that brought me in and said, "Hey, our kids are getting trouble at
+
+[03:56] school. Can we do something that might, you know, grab their interest?" And so I was brought into kind of a really rough area of Denver. And I worked with nine kids for about six months to try to
+
+[04:09] teach them some of the the trading strategies that I learned to get them really engaged because, you know, the message was you can really grab control of your destiny instead of, you know,
+
+[04:20] staying in this situation. And I'll have you know, at the end of that six months, I gave each one of those nine kids 2,000 of my own dollars, thinking I would, you know, never see that money again. That
+
+[04:32] it was kind of like I'm going to have to write this off. And every single one of those nine kids gave me back that money and went on to buy their own computers, buy their own access to the internet at
+
+[04:44] their own homes. And actually, you know, fast forward to 2026, one of those kids is actually a very uh esteemed professor at Denver University. And so that's kind of my my drive behind teaching people
+
+[04:57] how to trade options is that I teach people. I have that company called Trading Trainer that you can go and get, you know, education and get, you know, all the tools you need to learn how to
+
+[05:07] trade, uh, you know, options, especially end of day. But I take all the profits from that company and I use it every year to run a group of kids, underserved kids through my foundation, and that's
+
+[05:20] really why I do all of this. Let's now get to your strategy. Yeah. What do you call it, by the way? for for lack of a better name, I just call it I I've called it all these years the VIX
+
+[05:32] hedging strategy. All right. So, let's start with the basics, but first you touched on it, but elaborate a little bit more what you try to achieve with this strategy.
+
+[05:44] Well, okay. So, I'm going to share my screen here for a second. So, I've got the VIX up on my screen. Now, the VIX is a measurement. I'm going to get some nerdy terms here, but I'm going to try
+
+[05:57] to distill it down. The VIX is a measurement of the buying and selling pressures on options overall. The options of the S&P 500. I'm really simplifying this, but more accurately,
+
+[06:14] when people are a little bit anxious about what might come, and it it may I I want to emphasize that it may never come to fruition. It may never happen, but when people get anxious, what do they
+
+[06:27] do? They buy insurance. And in the markets, that's options. That's the derivatives, right? On commodities, it's futures. On stocks and ETFs, it's options. And when they buy options, it
+
+[06:39] causes that price to go up. And when you factor out things like the days to expiration and the underlying symbol price, you can actually mathematically represent what is that anxiety, what is
+
+[06:55] that, you know, if there's an anxiety or fear or uncertainty versus if there's confidence. And that's what the VIX is, right? The VIX is a measurement and we call it implied volatility versus
+
+[07:08] historical volatility. implied volatility is what you know the result of what we think might happen in the future and I wanted to show you if I go back in time to even 1985 right so I'm
+
+[07:23] going to show you all of my VIX data each one of these bars and I know we're getting very small here so I'm going to kind of change my cursor so that you can see what I'm thinking about but if you
+
+[07:35] can see over here first of all I want to want to look at where we get confidence down at the bottom. And this is less of, you know, a lot of people look at trading, John, and they think trading is
+
+[07:48] all mathematical and engineering and things like that and you have to have like math degrees to understand it. Actually, I have found that folks that have a a background in psychology or
+
+[08:00] just even understanding their friend groups can start to understand trading. And here's a perfect example. Notice that we never as a a a group of uh investors, a a tribe if you will, we
+
+[08:15] never get that confident, right? You'll notice that there's no spikes to the downside in confidence. In fact, when we get confident, we get confident very slowly. It takes a long time for us to
+
+[08:28] build trust, for us to build confidence. It's almost like, you know, when you think about, you know, relationships between people, relationships, you know, with organizations, it takes a long time
+
+[08:41] to build that confidence, to build that trust. But the minute something goes wrong, the minute that proverbial poop hits the fan, we are ready to pull out. And that's what you can see these
+
+[08:52] spikes. This is the 1987 spike when we had Black Friday when we decided to revise the tax code of the United States and make everything you make investors very scared for what's going to happen
+
+[09:04] in their money. Here we've got the SNL crisis uh under the president, the first Bush president. He had a savings and loan crisis. Here's the dot boom and then bust. Here's the 2008 financial
+
+[09:19] crisis. Right? Here is the pandemic. Here's a lot of the tariff crap that's going on here in the United States. Every time uh our president and chief uh decides to tariff a big superpower or
+
+[09:33] even tariff one of the neighbors here, you know, like Canada or Mexico supposed or the EU supposedly the the longtime partners, we get these big pops in fear and uncertainty by investors. So
+
+[09:47] understanding that a human species, it must be from when we were like cavemen where we would sit behind a rock for days ready to pounce on that woolly mammoth. You know, we're always
+
+[10:00] erroring to the side of fight or flight, erroring to the side of, you know, anxiety and jumping at action and very rarely getting complacent. That's what the VIX measures. So now that you
+
+[10:12] understand the patterns of the VIX, you can then apply that and go into your tool gest of option strategies and say now what would play to that pattern and that's where you have set up uh
+
+[10:24] trade that you trade regularly that break evens most of the time but that will benefit if when we have those big market crashes. That's exactly right. So the the trade
+
+[10:38] that we like to place, we call it the double vertical spread. It's the combination of a debit spread and a credit spread. So when we understand that VIX, you know, we've got our
+
+[10:51] pattern that we apply our trade to, the best trade that we have found that works with this is called our double vertical spread. And that's where we have a debit spread offset by a vertical credit
+
+[11:07] spread. And what's really nice about this, if you can imagine when we overlay our VIX on this, you can imagine that the VIX oscillates like we saw over the last 30ome 40ome years and every once in
+
+[11:22] a while it spikes on some sort of news and then it oscillates. And you remember there's that level of confidence where we just don't get that confident and we slowly come down to that level of
+
+[11:36] confidence but we never it takes a long time to build that confidence but if there's any sort of you know something happening in the world or something happening that could you know externally
+
+[11:49] the VIX jumps up. So this is like the best option trading strategy to take advantage of that price pattern of the VIX. And to be clear, this these two spreads
+
+[12:02] you place on VIX itself. Correct. That's absolutely correct. So you have to pay attention if you're used to trading, you know, options on equities and ETFs. Remember the VIX has
+
+[12:14] some interesting expiration dates. it's a Wednesday instead of a Friday, but there's often a lot of liquidity and often you can do the weeklies. So, when we decide on the expiration date of
+
+[12:26] these, we usually don't go that far out. We go maybe three, maybe at the most four weeks out. And there is a certain timing. We like to place these trades when the VIX is at a low. So, we'll use
+
+[12:39] a timing signal to find a bottom in the VIX. And we'll usually leg into this. So, we'll place the debit spread first and then we'll look for an offsetting credit spread.
+
+[12:51] We will get into your entry mechanics more in detail, but just um explain this specific example. It might be a bit hard for the audience to read which strikes you have chosen here and and so on.
+
+[13:05] And this is a example of the most recent VIX trade that I placed. So when I got my bottom signal, I went and I first looked for the ideal debit spread. So that would be the bottom trade. And what
+
+[13:20] I'm looking for is a debit usually somewhere between 70 and 90s. Uh that would be my out-ofpocket. And I'm talking about a $1 spread. So you'll see I use the 1450 and the 151550
+
+[13:38] strike prices. Um, and so that's a $1 between the spread. And I usually look for, like I said, somewhere between 70 and maybe 90 cents for the cost of this debit spread. Um, and that's per uh
+
+[13:53] option. And as many of your uh viewers probably know, options are in lots of 100 in contracts. So, make sure you multiply that by by by 100. Uh but yeah, I would uh uh place that debit spread
+
+[14:08] and then as soon as that debit spread is set, I would then go over and see how can I offset the cost of that debit spread by placing my credit spread. And I tried to error on the side of having
+
+[14:24] that credit spread be a few pennies above the debit. So in this case uh I was able to get the debit spread for 83 cents and then the credit spread I was able to get it for 87 cents. So I wound
+
+[14:38] up you know just in opening the position being 4 cents positive. Now of course there is a margin requirement on that credit spread that you know we're not going to put our whole portfolio into
+
+[14:51] this. In fact we just put a portion of our portfolio into this. So a lot of times the rest of our portfolio covers that margin spread, but you want to have in the on the onset of this trade a
+
+[15:04] slightly slant towards more credit than debit. And if I understand correctly, the debit spread has been placed below the current VIX level and put credit spread has been
+
+[15:16] placed above the current current level. And as we see you have a pretty wide uh zone which is essentially break even and that's exactly right
+
+[15:30] jumps you will get into the profit zone. Exactly. So if you know the most of the time we place this trade and if you think about how a credit works. So if I got this 87 cents in this credit the way
+
+[15:45] that you can think about it is if it ends up on this side of the the spread it's going to cost me that dollar. If it's over here I'm going to get to make that dollar. Right? So if this is
+
+[15:59] costing me a dollar, say for when the options expire, we're in this zone here. This particular spread is going to make me a dollar. This spread is going to make lose me a dollar. So it's going to
+
+[16:12] be like you said a break even situation. And because I when I open the position, I errored to the side of credit, I'll have enough extra pennies per share to cover my commission. and maybe depending
+
+[16:27] on the number of contracts I did, you know, get a a a little bit of money that maybe I could take my significant other out for dinner that week, right? But where the real benefit comes is exactly
+
+[16:39] what you said is if there's a spike in the VIX. There's some event that happened that causes investors to get very fearful like what you were saying is happening today and this VIX shoots
+
+[16:52] up to this zone. You could actually close the position early and usually because we're talking about that two to four week expiration, you can usually grab almost all of the profit and it
+
+[17:05] becomes 5x 10x your investment. It becomes a very big payback. All right, so let's get more into the details of how you entry uh this trade. You said you have some conditions and
+
+[17:20] you follow some indicators. Please explain when is [clears throat] are the conditions right? I love that. I'm going to switch back and show you guys the VIX again. Uh
+
+[17:33] there's a indicator and I I wish I could take credit for it, but it's the folks over at the the MACD organization, right? You've got the the father and son team that have been working on the MACD
+
+[17:46] for over 40 50 years. A lot of these uh MACD are just standard indicators in all your charting packages. Whether you're using Trading View or whether you're using a broker one like I'm showing
+
+[17:58] thinker swim right here, trade thirsty. When you go to look at your indicators, uh and I'll pull up my screen here on Thinker Swim. There we go. Sorry, it was a little bit delayed. So, we've got our
+
+[18:11] MACD. There it is right there. So, uh, moving average, convergence, divergence, and when you add this indicator to your charting, it usually comes up by default with the standard settings, the 1226-9.
+
+[18:26] You can see that right here, 1226-9. And the folks over at the MACD organization, you know, started to look at some standardized settings for longer or shorter term, you know, crossings.
+
+[18:40] This is one of those lagging indicators that waits for a confirmation to be a little bit more uh confirmed before it gives you the indicator. And so what we like to do, and you can see it up here
+
+[18:53] in uh our version that is just basically an arrow versus an analog, you know, it makes it a little bit simpler for us end of day traders. The the designations are 619 and three. 61 19 and three. And this
+
+[19:10] is again nothing special from AJ Brown. This is you know when those those MACD you know experts decided you know and and tested different combinations of settings. The 6193 is what they call the
+
+[19:23] fast MACD and that's all we're using to identify an endofday signal. So you can see on this particular MACD arrow indicator that whenever we get a light blue arrow that's the time we want to
+
+[19:36] look to place this trade. All right. Are there other conditions that need to be in place before you open this trade? [snorts] Yeah. So in addition to getting that
+
+[19:47] bottom signal and again everything that we do is end of day. So if we get that signal after the market is closed, we will then try to look for followth through on the subsequent day. And a lot
+
+[19:59] of times that followthrough is something we can program into our automatic trading platforms, program our bots because most of the folks I work with, you know, they have their careers, they
+
+[20:10] have their hobbies, they have their families, and they don't want to be watching the charts during the day. So in the evening, if we identify that there's been one of these bottom signals
+
+[20:20] found, we'll go ahead and program our bots that evening to trade the next day, assuming some simple conditions are met, like the mark the the the VIX is continuing to go up, it's higher than
+
+[20:33] the previous day close, it's higher than the uh confirming day close, just in case the previous day and the confirming day are not the same day. Um and and there's a little day trader tool that we
+
+[20:47] use. You know, day traders like to look at the first 30 minutes of trading and then see if it's above that range. It's called the open range. If it's trading above the open range. So, some simple
+
+[20:57] things that we can program into some contingency trades. We call them our trading bots. Those are kind of the rules that we would put in place. And if that happens in the subsequent day, a
+
+[21:09] trade is placed, right? And that a lot of times the trade that's going to be placed in this situation is that debit spread. And how many DTE are you going out? You
+
+[21:21] said that. Could you repeat that? Absolutely. We try to target about two to four weeks, right? And we we we look at what's been happening like you know with the events going on. And so two to
+
+[21:36] four weeks is what's working right now. Uh I if you were if we were having this phone call in 2024 when things were a little bit more stable uh I might be saying three to five weeks a little bit
+
+[21:50] longer but man the events are coming and that's another thing is position sizing. If you were talking to me in 2024 I would be putting maybe 5% of my portfolio into this trade each time the
+
+[22:05] signal came. I would be leaving that that that chunk of my portfolio open to place this trade every time I would get that signal and it would be maybe 120th of my portfolio 5%.
+
+[22:19] Right now in 2026, the beginning of 2026, we're uh my program participants and I are actually setting aside about 20% of our portfolio. And we're we're having it
+
+[22:33] so that the expirations are every two to four weeks. And it's just a sign of the times, right? There's a lot of events and you never know whether there's going to be an ex, you know, a tweet or
+
+[22:45] there's going to be a true social thing that happens and all of a sudden, just like today, we're looking at the market right now. The VIX is open and the VIX is up at 22. You know, anybody who had
+
+[22:56] this trade in place right now, they'd be looking for, you know, the opportunity to close this down at max profit right now. And and how how has this trade played out
+
+[23:06] played out for you this specific week? We are on February 5th today. Yeah. Well, I haven't closed my position. I've got a uh I've got this in place. I'm waiting to see if I can get
+
+[23:20] more and more profits, but you know, right now I think we're at 90% of what the max profit could be. So, I'm I'm being a little bit greedy. Uh, I'm also possibly waiting for that top signal.
+
+[23:34] So, along with the bottom signal, there's a top signal, a little pink arrow. So, I'm waiting for that pink arrow to come end of day and then maybe I'll try to jump on it. But, you know,
+
+[23:44] the the the scoop is is I'm about 90% at that max profit right now. And it is true. A few of my trades in the rest of my portfolio are under stress right now because gosh, the market is topsyturvy.
+
+[23:58] But this is going to bail me out. And it has been bailing me out. I mean, back in uh the middle of October, we got a huge payout from this particular trade. And then again in November, and we actually
+
+[24:11] just got a nice payout and we barely put this trade back on and we're already getting another payout again. And I guess you were leading very naturally into my next question. When do
+
+[24:23] you take profit? And today you are kind of being a little greedy greedy as you say, but so does that mean you don't have a specific rule for it? So that's a great question. So this
+
+[24:36] trade is either going to hit its expiration and usually if it's gone all the way to expiration, it's going to be one of those break even runs of the trade or you're going to get a pop above
+
+[24:48] your strike price. You know, your top strike price. you're going to get that pop above that strike price. And then you're going to evaluate, well, what's the value of the two spreads. So, my
+
+[24:59] debit spread is definitely already at a dollar, but my credit spread hasn't decayed all the way down to zero yet. It's getting close, but it's not down to zero yet. So, I'm seeing and I'm
+
+[25:12] watching the VIX today continue to creep higher. And every time it creeps higher, my credit spread gets closer and closer to zero. So, because I just placed this trade literally at the end of last week,
+
+[25:26] you know, I I've got I don't have that time to exercise, that time to expiration working in my benefit. It's got like two or three more weeks. So, I have to rely on the actual distance. If
+
+[25:40] I was closer to expiration, that would benefit me. So, yeah, I'm I'm being a little bit greedy. C could C could C could C could C could C could C could C could C could C could C [clears throat]
+
+[25:48] could could we maybe take up the trade again and and look at where it is exactly right now live and how it will develop as time passes. Sure. I mean I can show you I don't have
+
+[25:59] the actual uh uh drawing right now but I can show you on my um I could show you on my little uh let me switch screens here. So as you can imagine we are roughly up here now. Of course, you
+
+[26:17] know, this is what the double vertical spread will look like at expiration in about three more weeks. So, what it looks like right now is a little bit softer, right? It when you look at the
+
+[26:30] actual values of the options, it's going to look at look like something like this. So, like I was saying, we're up here and we've got a little bit of value left in that credit spread that hasn't
+
+[26:43] decayed away because of time. So the more that I have that underlying symbol that VIX go higher the closer I'll get to that max profit if that makes sense. Do you have any kind of stop loss or
+
+[26:55] other mechanism in play if it goes below if the VIX really falls and uh confidence is returning with full force in the market. Again we go back to the psychology of
+
+[27:08] the VIX. So the VIX we as people as traders just don't get that confidence. So of course there's stop losses that we have on this vertical spread but the underlying philosophy of this trade is
+
+[27:23] that confidence comes very slowly. We don't get that situation that you're talking about where all of a sudden everybody in the world becomes confident overnight. It just doesn't happen that
+
+[27:35] way. So the the key is placing that debit spread appropriately, right? If you go back and you look, you know, especially over the last year, the the VIX really isn't trading below 14, you
+
+[27:49] know, with me placing my lower spread 1550 1450. That is a little bit on the aggressive side. A lot of my program participants are waiting for timing or going ahead and taking, you know, more
+
+[28:02] of a debit in order to get the strike prices lower. So that statistically the chance that they actually get um you know have the VIX dip down into that zone is almost nil. But um yeah, it's
+
+[28:17] the placement of the trade in the first place and realizing that you know we as traders, we as S&P 500 traders just don't get that confident. We don't relinquish our options. We keep those
+
+[28:30] protecting hedge options in place and we get the keep the price up at a certain amount. What is the worst that can happen with this strategy?
+
+[28:39] Exactly what you were just mentioning is if all of a sudden a an exuberance of confidence and if we wind up going down below that lower strike. So again, placement of that lower debit spread is
+
+[28:54] critical. You don't want to get too greedy. I wouldn't say going above 1550 is a smart idea right now. You want to get your uh initial strike prices as low as possible. If it does go below there,
+
+[29:09] you know, you would not only have that whole situation where your credit spread would be zero, but having your debit spread would be zero, you could uh put at risk that percentage of your
+
+[29:22] portfolio that you placed into this trade. So, if you're looking to put 20% of your portfolio into this trade, that 20% is at risk. But again, we're going on that philosophy that confidence just
+
+[29:35] doesn't come standard uh in in investors. It it never has and it probably never will. And what would you do if it happened? Stop-loss. Exactly what you were talking
+
+[29:48] about. You have a stop-loss and you have those days to expiration. So for instance over the holiday season we had a unexpected you know dip in confidence just because mainly because there was no
+
+[30:02] volume in the markets over the holiday season the winter holiday season a lot of people went and spent times with their families investor-wise and there just wasn't activity and the VIX
+
+[30:12] naturally dipped. So, a lot of us, including myself, had a trade where all of a sudden there was, you know, the VIX was trading under our lower spread. But again, with our expiration date in the
+
+[30:26] middle of January, which was what it was on the last run, um, we kind of knew that as soon as investors were back from the holidays, January 4th, January 5th, that there'd be some activity. And sure
+
+[30:40] enough, the whole thing with Greenland started. And that's almost expected when you've got when you've got somebody such a big player with such a big ego in the world. You know, uncertainty in the
+
+[30:52] investment uh has almost been, you know, and I remember this from 2016 to 2020. It's almost like you can't rely on repeating patterns in order to do your trades anymore. you almost have to rely
+
+[31:06] on what is happening on Twitter or X or what is happening on the social medias with the posts. Um, so that's kind of your hedge on this one.
+
+[31:16] AJ, I always ask my guests to place their strategy on a risk profile scale where one is very low risk and 10 is very high risk and uh you are free to define those numbers as you see fit.
+
+[31:31] Where would you place this uh strategy or way of trading on that scale? And again, I'm going to assume that the folks who are doing this are making sure that that debit spread is along the, you
+
+[31:43] know, historical line of low, you know, low confidence. And I would say that we're probably risk is around a three. I also want to emphasize though that most of the time this trade is going to do
+
+[31:56] just a little bit better than break even. It's not going to be a trade that's going to be a profit center. And you don't want to structure it such. You want to structure it so that it is a
+
+[32:07] hedge. It's going to bail out your portfolio when the rest of your portfolio is under risk. So it it most of the time you're setting this up as a break even trade. So it's not meant to
+
+[32:18] be a big profit. So without the big profits, you're also not going to have the big risks. you touched on it, but what have been your results of trading this strategy when when uh wicks have
+
+[32:33] exploded? So, if you think about it, so there is a margin requirement on the credit spread, but again, we're not putting this is not something we're putting our whole
+
+[32:42] portfolio on. So, that margin requirement usually is taken care of by the rest of your portfolio in action or if you've got it in cash, that's great. So, if you look at, you know, before and
+
+[32:55] after the position is before it's opened and after it's closed. I mean, when this trade pops, you're starting with a little bit of credit and then all of a sudden that multiplies by a 10x or a 20x
+
+[33:09] depending on how much you did the difference between the two spreads. So, you know, you've got 20% of your portfolio in play and all of a sudden you could have easily a, you know, uh, I
+
+[33:22] if 20% of your portfolio, if your portfolio is 50k, $50 US, uh, and you put 10 $10,000, it could easily be a 20 to $25,000 profit on this trade. And again, that's not going to happen every
+
+[33:39] every cycle. So, I don't want to set expectation. That's going to happen when, for instance, the other uh 80% of your portfolio, in the case of our sample portfolio of $50,000, a $40,000
+
+[33:53] trade. Uh you know, the $40,000 is under stress. It's it's showing some losses. And then you get this trade where you invested 10 $10,000 in your portfolio in the form of margin requirement is now
+
+[34:08] coming back at 2025. it bails out the rest of your portfolio. Let's sum up a bit. How will you sum up this uh in a few words? And who should trade a strategy like this?
+
+[34:22] Anybody who is using their portfolio and you're you you're trading on repeatable patterns when all of a sudden there is there is external shocks that can put the rest of your portfolio in stress.
+
+[34:38] Right? You don't want to go to bed at night saying, "Oh my gosh, you know, I've got a good portion of my portfolio into equities, into options, into ETFs, and now I'm worried." Right? You want to
+
+[34:52] always have some sort of trade. And like I said, I've been trading this trade for almost 10 years. Every time it cycles, and what changes is the amount of my portfolio I put into this hedging trade.
+
+[35:05] So, if it's just something that's going to be breaking even, times are calm. I'm still placing this trade. And I feel like everybody should have a trade like this, some sort of hedging trade that
+
+[35:17] they're placing for when the rest of their portfolio might all of a sudden surprisingly go under stress. And now I'm putting more of my portfolio into this type of trade just because
+
+[35:30] stressful moments have been increasing in both amplitude and frequency. What are the two or three most important takeaways you really want the audience to remember?
+
+[35:42] Yeah, I want you to remember that the VIX is a special uh index. It's not measuring, you know, like the gains in the market the way like the S&P or an individual stock is. It doesn't go up
+
+[35:56] and to the right. It goes sideways. And I want you to remember that it's a testament to human nature that we just don't go confident, right? People are are not wired, right? Especially when
+
+[36:11] they get together in that tribe thing. People are not wired to all of a sudden turn on their confidence and trust. People trust has to be earned through consistency, right? And so the VIX
+
+[36:23] measures that. It's an it's an amazing psychology experiment for sure. And so just remember that confidence seems to be a a very heavy level of support whereas fear and uncertainty spikes
+
+[36:39] whenever just the smallest um influence external influence hits the market. It's not something that we you know have to build up to the fear like when there's a stimulus uh the fear comes on strong. So
+
+[36:54] that's the first thing you just have to understand that the VIX is this is how the VIX operates. And then the second thing is you know we're always no matter what you're trading you want to first
+
+[37:07] understand all the patterns whether the patterns are in price or the patterns are in you know time to expiration or the patterns are you know you want to understand all the patterns that you're
+
+[37:18] looking at especially the repeating patterns and then you know figure out how you're going to profit from that pattern. If you're just trading the stock or the option, uh, you know, the
+
+[37:30] stock or the commodity, well, then you've got probably one or two strategies. You know, buy low, sell high, or if you want to short it, sell high, and then buy back low. if you've
+
+[37:40] got options or some sort of derivatives. I mean options the last times the the the mathematicians really delved into options. Uh they said that by combining them and also picking the different
+
+[37:52] expiration dates and strike prices, you could have up to 27 different patterns you can profit on. Whether the the underlying is going up, down or sideways, whether time is passing by,
+
+[38:03] whether there's fear or uncertainty on that particular equity. So, you know, being able to realize that no matter what you're trading, right, it's pattern recognition first, pattern utilization
+
+[38:18] second. So, in the case of the VIX trade, we really spent a long time looking at how the VIX works and then matching the perfect trade, in this case, a double vertical spread, a credit
+
+[38:29] spread that offsets a debit spread as the best strategy to profit from that. And then the third one is always figure out your risk, right? Understand, have a plan. We always say, you know, plan your
+
+[38:41] trade and then trade your plan. Make sure you understand what your plan is. Your plan should be based around what the worst case scenario is. And then you should, of course, put in price targets
+
+[38:53] so that when you actually execute the trade that the trade uh winds up being better than what you planned for. And you know, that's that's my three points. What would be good resources to learn
+
+[39:05] more? Oh gosh, you asked me to get some books out. Uh there's a book about the Wyoff method and I feel like that is one of the strongest books uh that you could
+
+[39:17] get a hold of and I believe you can buy that uh for like $18 or $19, not from Amazon, but from the actual publisher. So, the Wyoff method, anything on the Wyoff method, I think would be a great
+
+[39:30] resource for for doing any sort of trading. And then let me take a look here in my bookcase just very quickly. Um, and let me see if I can and I know that you uh asked me to have this ready
+
+[39:43] in advance and of course I'm failing you here. Um, another resource I think I would definitely anything having to do with price patterns. uh not just indicators because indicators are pretty
+
+[39:57] straightforward and indicators are also things that I feel like um folks could get complacent with. But if you get into price patterns uh with like candlestick training um or any sort of western
+
+[40:13] versus eastern you know looking at price patterns so that you can validate what what you're you're seeing with your indicators or seeing with your news in the the headlines or if you're using
+
+[40:25] analysts upgrades downgrades you always want to have a second source and you can often see things in price. And the last one would be anything having to do with point and figure charts. Uh I think that
+
+[40:36] price charts have their place, but if you you combine them with point and figure charts and understand how to read point and figure charts, you're going to have a leg up again of identifying these
+
+[40:47] patterns. You'll notice a lot of the stuff I'm talking about, John, is all about pattern recognition. I think, you know, the number one thing that I see traders mess up on is they apply the
+
+[40:58] wrong trading strategy to the pattern that's that's in place. So, they don't spend enough time analyzing the pattern. So, every tool you can, you know, wrap your mind around to understand exactly
+
+[41:11] what you're seeing is is a valuable tool. That's gold. And then knowing the trading strategies to profit from it is almost secondary. AJ Brown, thank you very much for presenting this very
+
+[41:23] handson hedging strategy on on Wix and for bringing us through it in such a great way. Thank you. Thank you for letting me do that. I just love, you know, downloading
+
+[41:36] and talking to folks. So, thank you for giving me this opportunity to do

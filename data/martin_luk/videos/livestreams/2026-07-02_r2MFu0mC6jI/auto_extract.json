@@ -1,0 +1,275 @@
+{
+  "video_id": "r2MFu0mC6jI",
+  "date": "2026-07-02",
+  "title": "Semi breakdown | 2 Jul 2026",
+  "observed_trades": [
+    {
+      "date": "2026-07-02",
+      "ticker": "QBTS",
+      "direction": "short",
+      "action": "short",
+      "setup": "Quantum sector rolling over: most names below 50 EMA, bounce rejected at the 9 EMA, breakdown-and-retest of prior base lows -> trend-continuation pullback short. Flipped short after yesterday's long was stopped out.",
+      "entry_basis": "rejection at 9 EMA on the bounce; retest of prior base/swing lows",
+      "stop": "",
+      "source": "2026-07-02_r2MFu0mC6jI@01:56",
+      "confidence": "stated",
+      "notes": "'you are not seeing it wrong. Uh I am shorting QBTS after getting stopped out yesterday.' Setup rationale elaborated at 86:44-88:14 ('all the quantums turns out to be a pullback short').",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-07-01",
+      "ticker": "QBTS",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Long taken yesterday on quantum bounce; he calls it a bad trade he should have avoided since the quantum group was below the 50 EMA and peers (IONQ/RGTI) were getting rejected at the 9 EMA.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-07-02_r2MFu0mC6jI@86:44",
+      "confidence": "stated",
+      "notes": "'yesterday's long is a bad trade that I should have avoided' plus 01:56 'after getting stopped out yesterday'.",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2026-07-01",
+      "ticker": "MU",
+      "direction": "long",
+      "action": "sell",
+      "setup": "Sold all semiconductor longs as Corning (group leader) failed to bounce off the 9 EMA and rolled over near low of day; MU itself printed two consecutive ~$100B dollar-volume days after a near-1000% run, a potential climactic swing high.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-07-02_r2MFu0mC6jI@03:38",
+      "confidence": "stated",
+      "notes": "'I sold most of my semi positions... MU'. Timing pinned by 81:12 'selling all of them yesterday' and 95:56 'glad that I decided to took them off yesterday'. Hindsight critique: should have sold more into strength instead of all at once on weakness.",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2026-07-01",
+      "ticker": "INTC",
+      "direction": "long",
+      "action": "sell",
+      "setup": "Part of the same semi-book liquidation triggered by Corning's failed 9 EMA bounce and choppy sector action.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-07-02_r2MFu0mC6jI@03:59",
+      "confidence": "stated",
+      "notes": "'what are the other names like Intel' listed among the semi positions he sold.",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2026-07-01",
+      "ticker": "GLW",
+      "direction": "long",
+      "action": "sell",
+      "setup": "Listed with Intel among semi names sold; its own weak action (no bounce off the 9 EMA, sideways near low of day, rolling over) was 'the major reason' he exited the whole semi book.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-07-02_r2MFu0mC6jI@03:59",
+      "confidence": "inferred",
+      "notes": "Caption 'corning'/'coining' interpreted as Corning (GLW). Slightly ambiguous whether GLW was itself a position or only the tell -- phrasing 'the other names like Intel and also corning' reads as names sold. Logged in ambiguous_tickers.",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2026-07-02",
+      "ticker": "?",
+      "direction": "long",
+      "action": "sell",
+      "setup": "Took out another long position today while cutting overall exposure during the semi/AI breakdown.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-07-02_r2MFu0mC6jI@08:59",
+      "confidence": "stated",
+      "notes": "'I just take out my uh also took out my EMP. Like although I'm reducing my exposure quite a lot today'. Caption 'EMP' unresolved -- possibly MP (MP Materials); logged in ambiguous_tickers.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-06-29",
+      "ticker": "IREN",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Tried to buy the dip in a data-center/AI name after its breakdown; it kept going '90 degrees down like a waterfall' instead of bouncing.",
+      "entry_basis": "attempted long on Thursday (2026-06-25) after the breakdown",
+      "stop": "",
+      "source": "2026-07-02_r2MFu0mC6jI@77:50",
+      "confidence": "stated",
+      "notes": "Caption 'iron' interpreted as IREN (fits data-center-breakdown context with HUT, GLXY, CRWV). 'I even tried to take longs on iron on Thursday and then it stops me out on Monday and then keeps going down.'",
+      "fill_timing": "entered Thursday 2026-06-26 area ('on Thursday'), stopped out Monday 2026-06-29"
+    },
+    {
+      "date": "2026-07-02",
+      "ticker": "?",
+      "direction": "short",
+      "action": "stopped_out",
+      "setup": "Several short-side losses in the first 15-30 minutes after open while the semi ETF gapped down; entries were too early -- he says he should have waited for the bounce.",
+      "entry_basis": "shorted into the opening gap-down instead of waiting for the rebound",
+      "stop": "",
+      "source": "2026-07-02_r2MFu0mC6jI@59:06",
+      "confidence": "stated",
+      "notes": "'I have several losses uh in the first 15... 30 minutes after open... the semi ETF is gapping down and I wanted to play on the short side so I should have waited a little bit on the bounce.' Individual tickers never named. These early losses made him skip the RKLB short later ('really sad that didn't take rocket lab today', 84:21).",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-07-02",
+      "ticker": "?",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Holding software longs (sector 'showing immense strength' vs the semi breakdown); plan is to trail them with the 9 EMA and take profits early / sell into strength given the shaky tape.",
+      "entry_basis": "",
+      "stop": "trail with 9 EMA",
+      "source": "2026-07-02_r2MFu0mC6jI@88:49",
+      "confidence": "inferred",
+      "notes": "'for the software longs probably going to use the 9 EMA... trail them with the 9 EMA... I'm just going to take the profits early or like selling them into the strength' (captions garble 'loans'/'fail them with the non MA'). Position names never given; existence of the longs is implied by the exit-management talk.",
+      "fill_timing": ""
+    }
+  ],
+  "principles": [
+    {
+      "category": "market_read",
+      "text": "Treat your recent trade feedback as a market signal: when solid, well-selected setups keep getting stopped out, the market itself is telling you to cut exposure and reassess your posture.",
+      "timestamp": "69:04"
+    },
+    {
+      "category": "market_read",
+      "text": "Judge a group by its leader: in a strong uptrend the leader must bounce hard off the 9 EMA. A failed 9 EMA bounce that drifts sideways near the low of day is an early warning to sell the whole group.",
+      "timestamp": "04:34"
+    },
+    {
+      "category": "market_read",
+      "text": "Parabolic/climactic dollar-volume after a huge extended run (e.g. consecutive ~$100B volume days after a near-1000% move) often marks the swing high or the end of the uptrend.",
+      "timestamp": "72:55"
+    },
+    {
+      "category": "market_read",
+      "text": "When volatility expands after a long rally (big gaps up and down, wide candles, failed breakouts), it generally means distribution or consolidation, not continuation.",
+      "timestamp": "92:27"
+    },
+    {
+      "category": "market_read",
+      "text": "Individual names showing relative weakness before the sector breaks (losing the 9/21 EMA, 9 crossing below 21, repeated failed breakouts, first close below the 50 EMA) flag the coming turn and become the pullback-short candidates.",
+      "timestamp": "76:09"
+    },
+    {
+      "category": "entry",
+      "text": "Avoid trading the first 15-30 minutes after open. If the sector ETF gaps down and you want to short, wait for the bounce instead of chasing the open.",
+      "timestamp": "59:44"
+    },
+    {
+      "category": "entry",
+      "text": "Once a breakdown has already extended, it is too late to short. Wait for the rebound into the declining 9/21 EMA (or the anchored VWAP from the swing high) for the short entry.",
+      "timestamp": "81:56"
+    },
+    {
+      "category": "entry",
+      "text": "In a weak group's bounce, short the names that get rejected at the 9 EMA while retesting prior base/swing lows -- a breakdown-and-retest trend-continuation setup.",
+      "timestamp": "87:17"
+    },
+    {
+      "category": "entry",
+      "text": "Skip groups that are acting well but moving too slowly -- only trade the fast movers.",
+      "timestamp": "09:56"
+    },
+    {
+      "category": "exit",
+      "text": "Scale out by selling into strength rather than dumping the entire position at once into weakness.",
+      "timestamp": "81:12"
+    },
+    {
+      "category": "psychology",
+      "text": "When the action feels weird, strange, or uncomfortable midday, act on it -- take positions off rather than staying stubborn or long-biased.",
+      "timestamp": "96:19"
+    },
+    {
+      "category": "risk",
+      "text": "Losses are a chain reaction: early sloppy losses consume your risk budget and force you to pass on the day's best setup later. Protecting the open preserves capacity for the A+ trade.",
+      "timestamp": "86:08"
+    },
+    {
+      "category": "posture",
+      "text": "Do not get aggressively bearish inside a potential chop zone. Require confirmation -- e.g. the index closing below the 9 and 21 EMA -- before increasing short exposure.",
+      "timestamp": "83:00"
+    },
+    {
+      "category": "process",
+      "text": "Use holidays and long weekends to digest the action across names, review your trades, and fix mistakes so you come back with a refreshed mind.",
+      "timestamp": "97:46"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "03:59",
+      "caption_text": "corning / coining",
+      "context": "Semi leader whose failed 9 EMA bounce and roll-over was 'the major reason' he sold all semi positions; possibly also a position he sold alongside Intel.",
+      "guess": "GLW",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "06:15",
+      "caption_text": "I just sell some food into strength",
+      "context": "Selling something into strength while semis lose the breakout low; may be 'sold some more' rather than a ticker.",
+      "guess": "?",
+      "confidence": "uncertain"
+    },
+    {
+      "timestamp": "08:59",
+      "caption_text": "took out my EMP",
+      "context": "A long position he exited today while reducing exposure.",
+      "guess": "MP",
+      "confidence": "uncertain"
+    },
+    {
+      "timestamp": "74:45",
+      "caption_text": "AOI",
+      "context": "One of the strongest semi/optics names before topping in early May, multiple failed breakouts, broke down around June 22 -- cited as a leader breaking down first (commentary, not a trade).",
+      "guess": "AAOI",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "76:09",
+      "caption_text": "exti",
+      "context": "Another prior leader showing relative weakness before the whole sector weakened (commentary).",
+      "guess": "?",
+      "confidence": "uncertain"
+    },
+    {
+      "timestamp": "76:44",
+      "caption_text": "Hut",
+      "context": "Data-center name, 'the stronger one among the group', gapped down but closed above the 50 EMA (commentary).",
+      "guess": "HUT",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "77:18",
+      "caption_text": "Galaxy ... Sienna is not the one ... course is one of them ... iron",
+      "context": "Listing weak data-center/AI names in yesterday's breakdown (Meta news reaction): Galaxy weak, 'Sienna' dismissed then corrected, 'course' and 'iron' named as breakdowns; he was stopped out of a long in 'iron'.",
+      "guess": "GLXY / CIEN / CRWV / IREN",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "79:57",
+      "caption_text": "light / lights",
+      "context": "Went sideways for 3 months, first close below the 50 EMA since the Liberation Day low, failed breakout, then lost the 9/21 EMA and kept fading (commentary).",
+      "guess": "LITE",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "84:21",
+      "caption_text": "rocket left / rock lab",
+      "context": "The short setup he regrets not taking today because early losses had used up his risk budget (missed trade, not a fill).",
+      "guess": "RKLB",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "87:00",
+      "caption_text": "other than Q and I ... Q&",
+      "context": "The one quantum name that may be the strongest in the group while the rest sit below the 50 EMA.",
+      "guess": "IONQ",
+      "confidence": "uncertain"
+    },
+    {
+      "timestamp": "87:17",
+      "caption_text": "IQ or like um RGTI",
+      "context": "Quantum names that could not reclaim / stay above the 9 EMA on the bounce -- got rejected there, a sign of weakness.",
+      "guess": "IONQ",
+      "confidence": "uncertain"
+    }
+  ]
+}

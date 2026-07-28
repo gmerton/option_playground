@@ -1,0 +1,439 @@
+[00:00] The win rate of this strategy is 100%. I have done 25 trades a year and every trade was so far successful. The risk management, I think that is where I again most of the edge. The most
+
+[00:13] important thing is you need to be aware all the time that you have theoretically two times unlimited risk. Today's strategy is selling short strangles. Many options traders love
+
+[00:25] strangles, not least because they are relatively easy to manage. But strangles also come with unlimited risk. From Germany, welcome Reiner Hoffmann. Hello.
+
+[00:39] Reiner, give us the 42nd version of how you sell strangles and why it works for you. The short strangle is for me personally is perhaps the purest form of premium
+
+[00:50] selling. So, it does everything for me. So, theta, vega, gamma, margin, and psychology, very important, and humility in in times like
+
+[01:00] this. So, I don't sell strangles because I believe nothing can happen, you know? I will only sell them if I really get compensated for the risk. And as many people know, options are
+
+[01:11] influenced more by the probability of speed than by direction. That means I'm not betting on a direction. I'm selling time and volatility. And
+
+[01:21] that is the nice factor which I like. I get paid twice for the market moving less than the options market as priced in. So, a short strangle allows me to sell
+
+[01:31] this uncertainty on both sides. So, put and calls, but again, only if the market regime, volatility, and liquidity is aligning. And we will dig into how you sell your
+
+[01:45] strangles, what are your criteria, how do you manage your risk, etc. But first, tell us a little bit about yourself, especially as an options trader. So, I'm currently 62 years old. From my
+
+[01:58] background, I'm a mechanical engineer. I was 25 years in the software or tech industry, last 15 years in senior or executive management positions. I did a lot of turnaround management. Or did
+
+[02:10] oversee acquisitions and exit for private equity portfolio companies. So, I'm very a friend with numbers, fundamentals. And I always liked
+
+[02:21] to to to deal with those figures and facts and I I stepped out of my career a year ago and since then I'm focusing full on options trading. For the past 3 years,
+
+[02:34] I've now worked with a professional coach from a former CBOE market maker, which really um opened the curtain for me and give me
+
+[02:44] allows me to look into the professional world, which I have to say benefit a lot. So, let's move to selling strangles. What do you try to achieve with your
+
+[02:56] strangle strategies? Yeah, I mean I want to benefit from the of course time decay and of also being short Vega from that possibility. And there's a certain
+
+[03:11] point which I want to highlight because not many people might think about that. That's so I I try to look on the term structure if it is in contango. So, I have a a third
+
+[03:23] contribution which is uh you can call it uh a carry advantage of the short Vega because the the IV uh for the option drops uh when it slides into the lower volatility from
+
+[03:37] from the front end segment. So, uh it's more a volatility play for me. There were a lot of terms here and we will get into them and find them one by
+
+[03:48] one, but let's start with the very basic. What is a strangle? That's easy. You sell two option legs, so a short put and a and a short call. Uh of course, out of the money. And you
+
+[04:03] can set them if you just check the expected move, for example. You can do this on a delta based or on a on a premium based environment. And uh then you have
+
+[04:16] the um expectation is that the underlying you're using is liquid, of course. And uh it should not be bullish. So, the expectation is that it might stay in a
+
+[04:28] range. I think it would be useful here to look at an example, maybe, of how the a strangle profits and loses, uh etc. Yes. So, for many uh
+
+[04:40] junior retail traders, you know, they have fear here to see unlimited um um loss potential on both sides. So, that is a risk profile of a short strangle. So, you have the two short
+
+[04:52] legs, and then you have no protection on the upside or on the downside. And you can have three variations. So, you can set them delta neutral. Yeah, so the delta is equal on both sides and
+
+[05:05] gives a neutral delta. You can also say they have the spot price and you you be symmetric, so the distance strike wise is equally. Or you focus on premium, so you get paid
+
+[05:18] on the put side and you use the same You try to get the same premium on the on the on the call side. This is from my perspective are the the three options. So, this thing is you
+
+[05:30] exchange premium long theta against short gamma. That is the most important thing to remember, and you have this profile here, where you have the I would
+
+[05:41] say on the on the upside, definitely um a high risk on the unlimited almost unlimited risk and on the downside you can you can get a
+
+[05:53] settlement if you want or you can have stocks as well. But that is less less difficult to manage here. I guess the main alternative to a
+
+[06:03] strangle is an iron condor door where you also buy long call and or and a long put for protection. Just give us very quickly the pros and cons of strangles versus
+
+[06:16] iron condors. Yeah, so the I I like both I have to say. So the the short strangle of course has no protection. That's the most important
+
+[06:26] difference. But the other thing it has only two legs in comparison to the iron condor which you have you have four legs. You know, you have a
+
+[06:37] spreads on on two sides and it is a difficulty in if it comes to management. And then the second is the short strangle earns net two times theta. The um
+
+[06:51] iron condor you you have to pay for the long and you have to take care that the negative theta on does not take too much away from the for you positive uh
+
+[07:05] long theta from the shorts and that is always for me a criterion sometimes to move to the short strangle because then my time
+
+[07:15] exposure is less because I the the time decay moves faster. And in return you take a little bit more risk. But in principle both would work.
+
+[07:26] Sorry to interrupt, but I want you to meet Wendy, my new trading buddy. Her job is simple. Keep me disciplined as an options trader. Stick to your plan, John.
+
+[07:38] Wendy is an AI trading coach. I can drop in a chart and she analyzes it, points out key levels, structure, and what I should pay attention to. She's also a great sparring partner when
+
+[07:51] I'm testing new ideas. But, the most important part, she keeps me accountable. Wait for confirmation, John. No setup, no trade.
+
+[08:04] Exactly. If you want to check it out, you get 25% off the annual plan or the first 3 months with code Theta Profits. Link is below.
+
+[08:15] All right. Back to the interview. So, let's move to the end your entry criteria. Describe your process when you want to enter a new trade. What are your
+
+[08:27] conditions for DTE underlying? Maybe we'll start with underlying. Yeah, so I have two variations. The one is on an index,
+
+[08:39] Russell. That's my underlying for a premium for income trade. Back tested for a while. The back test is has a time of 8 years and
+
+[08:51] the sweet spot was a 30 days uh time into the trade, so time to expiration, and it has fixed deltas. So, on the low side, and then 10, and on the upside delta 8. And important is the
+
+[09:06] take profit um is at 50%, not at 90 or or worthless expiry because you want to avoid to get caught by the gamma. That's the most important thing. So, my criteria is
+
+[09:20] this is a Russell, so the the index of the volatility index of the Russell, the RVX, should not be sky high, yeah? Because that means there's a threat,
+
+[09:31] there's a fear in the market. It should be below 40. Then, um set score should be at least above uh half standard deviation deviation above the
+
+[09:43] mean of the of the uh uh implicit volatility. So, if you don't have the Z-score, which uh you What is the Z-score? Yeah, that's the uh distance,
+
+[09:56] mathematical distance between the mean of a volatility based on the for example on a 1-year period and the actual volatility. Uh and that is is written in standard
+
+[10:09] deviations. Not many people have that. So, you can also say uh it has to be at least so the implicit volatility has to be larger than the realized volatility, of course.
+
+[10:21] But from American perspective, yeah, it's easier, but it's difficult because that's why I give you a second criteria. It's I use the percentile
+
+[10:31] as well. So, if you don't have the rank, you need to use the percentile to a check, okay, how is that implicit volatility in terms of um um
+
+[10:40] in comparison to the the history. So, the percentile tells you, for example, if you have a 50% implicit volatility and it is shows 70%. Okay, in 70% of the
+
+[10:52] past 252 trading days it was lower. So, it gives you a context. Yeah? Otherwise, a number of 50% implied volatility can also be that you are
+
+[11:05] below the mean and then uh you are in a in trouble if mean reversion kicks in. So, um RVX, uh let's say not more than 40. IV Z-score at least a half standard deviation or the IV percentile at 50%
+
+[11:22] and then uh the EMA, so I use the exponential moving average. You can also use the simple. There's not a lot of difference. But at least above 50.
+
+[11:32] And that is based on a on a back test. And term structure, very important, should be contango. What How many days to expiration did you say?
+
+[11:42] So so so the I have also this variations. So this is the main DDI trade. And based on that um the average day days of trading in the trade is 14. That's good. Yeah, so
+
+[11:57] it's half of the time you stay and then you get your profit and you can set up a new trade. The win rate of this strategy is 100%. I do this since 3 years. You can also trade variations. 45 days
+
+[12:10] works very well, 75 days, but you get less trades, of course. Uh the entry criteria are always the same for this um trade. So the delta's exactly the same. The only thing which
+
+[12:24] is changing is the days until expiration. Reneer, you said that the term structure had to be in contango. A lot of um difficult words there for at least
+
+[12:37] beginner traders. What does that mean? Yeah, so most of the traders know the VIX Central maybe, that website which tells you how the VIX structure is from a term perspective. So how does How is
+
+[12:51] the pricing of future volatility? Uh and that uh you you can see a a curve. And if if the current volatility is lower than the
+
+[13:03] next expirations, then you have so-called contango curve. That is what you need. And if you have the opposite, you have a so-called backwardation curve. So you have a peak
+
+[13:15] at current and then the volatility for the next expirations goes down. So many people would say, "Actually, it's great to have backwardation because I sell at the the peak."
+
+[13:26] And that is one of the big misunderstandings of retail traders because you have the role if the time moves your your expiration, so your remaining days to expiration get less.
+
+[13:40] That means your volatility gets down per se because what your price in the future is the uncertainty. The longer it the longer you're out, the more uncertainty you have. So, contango
+
+[13:52] is exactly what you need. So, the more time you're in in trade, the lower your volatility gets. So, you you benefit from those uh roll down
+
+[14:03] uh effect. Uh that is a is a carry advantage and advantage if you want to say so. And if you would say you would sell high volatility in a backwardation curve,
+
+[14:14] it's very dangerous because that's the opposite. You're in the highest volatility and then if time time runs, this this volatility uh changes and you you get um
+
+[14:28] caught by the opposite way volatility changes. So, that's why I always tell people if if you trade um or you sell volatility, you should have in mind there is a term
+
+[14:43] structure. And term structure you can you can see on on on a brokerage black platform. You can see it on on different tools, but I would
+
+[14:52] recommend to have a look into it. So, you have very specific criteria for this strangle on roots. Let's just one more time very quickly repeat the criteria.
+
+[15:04] Yeah. So, again, uh volatility. So, to make it simple, um the implied volatility has to be more than the realized volatility. And to make sure that it is happening,
+
+[15:17] you use the IV percentile. So, it should be let's say at 70% at least. And then, uh very important, have the picture of the term structure. So, it should be in contango again. The current
+
+[15:31] volatility needs to be less than the future volatility on the term structure. And another thing is the price range you look in a chart should not be super bullish. And so, I would prefer to
+
+[15:46] look also at the RSIs or the relative strength index should be maybe between 40 and 60. So, that is for a standard income trade. And you were selling the put at 10 delta
+
+[15:57] and the call at eight delta. Correct. Correct. So, and then I have that is Russell. It works. So, on on underlyings and different underlyings,
+
+[16:09] so equity underlyings, you have to be careful. Because it has to be very liquid. And the same criteria, of course, if you want to sell a strangle
+
+[16:20] which goes sideways, then same, you have to have a little bit more volatility. So, maybe one standard deviation from mean. But the the other criteria are the same.
+
+[16:33] And most important is that you have a liquid underlying. Because if volatility, for example, goes up, those bid asks get wider. And then you
+
+[16:46] will run into difficulties to actually close the trade or adjust the trade. And third option is, and that is not for beginners, I have to be very clear here.
+
+[16:59] It's you use the mean reversion volatility crush effect. Then you can have the the same. So, you have to have a a very high volatility, let's say, uh 1.5 up to two standard deviations
+
+[17:14] away from the mean in terms of IV percentile, it should be 90 to 100%. So, it means fear in the market, yeah, or on the underlying.
+
+[17:25] And then the term structure can be in backwardation, but then it is very very tricky or very important that your take profit is very little. So, not 50%, so maybe
+
+[17:38] 10, 20%, and the only way you do this, the only reason is you want to benefit from volatility crush. Not from time decay. To move quickly back to the route
+
+[17:48] triangle, how much premium do you typically collect when you sell this for 30 DTE? I only sell one tranche, so one contract per side. Um this is a Russell is a big
+
+[18:03] thing, so it requires margin, of course. I currently collect between $1,800 and $2,000 premium. And I want to keep 50% of that. And as you remember, the time in in
+
+[18:18] trade was approximately 14 days. It's a very lucrative strategy. How much buying power is the broker typically requiring for this? Yeah, of course,
+
+[18:30] if you have a hedged portfolio, the broker will appreciate that. So, then they might charge you a little bit less, but on an average 10K you should
+
+[18:42] consider for this strategy. Now, let's move to your exit mechanics, and you have already told us that you take a profit at 50%. Yes.
+
+[18:54] So, for the for the Russell, yeah. For the Russell. And let's focus on the Russell strategy and now for simplicity. What are your rules for losses when it goes against you?
+
+[19:08] The risk management, I think that is where I gain most of the edge. Yeah, that's important. And then I have prepared a slide for you to to show you a bit the principles playing. So, first
+
+[19:19] of all, the primary exit is the take profit. If we uh if we talk about the Russell, it's 50%. It has worked really well because
+
+[19:29] it's the sweet spot of the decay curve of theta. Uh on for an out-of-the-money option. And then you have as you have two times unlimited or
+
+[19:41] theoretically unlimited risk, you have to think about, "Okay, what happens if your trade doesn't work in your favor?" Then you have the so-called secondary exit. And the secondary exit,
+
+[19:53] I have trigger points defined. So, if one of the two legs is at delta 35, so 0.35, then I know, "Okay, I have to watch. I have to look. I have to do something."
+
+[20:08] Yeah? And there are different things. First of all, I look at the regime. So, is there currently a stress coming? Is there currently maybe has the trend changed? So, is it now
+
+[20:20] bullish or super bearish? It depends on the side you are under pressure. So, then with a delta 35, you can close those leg which is under pressure. And the other, you might roll a little
+
+[20:34] bit towards the towards the the in-the-money, so at-the-money, and gain a little bit more premium to compensate those small loss you get when you exit the trade, so the
+
+[20:47] leg at delta 35. And delta 35 is a call kind of sweet spot where the gamma has already power, but not at the max. Yeah, you know gamma is at its max at at-the-money. And it's
+
+[21:01] not at-the-money, so you have still an opportunity to to the trade on those side which is under pressure. And of course, the other one is um if you think your trade is still
+
+[21:13] okay, the regime is still uh not saying there's stress, you can also then uh do a vertical adjustment. So, not change the expiration, uh because that would would uh increase the exposure.
+
+[21:26] So, then you if let's say the put side is under pressure, uh you roll the other side towards the money you get additional credit and use that credit to roll out
+
+[21:38] further out of the money the other side. So, that's a a neutral way. And what also happens then, your delta will be neutral or more um moderate. So, it's a kind of delta
+
+[21:51] hedge. If you cannot do this with a credit, very important, uh don't do it with a debit. Always credit. Then you can also roll to further
+
+[22:00] expiration. That's the other one. So, you can either do both to further expire uh expiration or you can say, "Okay, I use the um the side which is under pressure, roll it out one
+
+[22:12] expiration, and the other one I leave and roll it more to the towards the money." Again, to uh to gain a little bit more extra credit. And worst case, of course,
+
+[22:25] we have to talk about this. Um and I told you the required uh margin on an average is 10K. And my criteria is if I lose 20% of my required margin, in this case it would be $2,000,
+
+[22:39] I would be exit this trade. Definitely. The side which is under pressure, I have always to say. So, you you might already uh see there's a lot of flexibility in a
+
+[22:50] in a in a strangle. This is why I like it. I have very rarely lost or produced a a loss in a in a short strangle. Because So, always uh used those kind of
+
+[23:03] criterias to move legs in and out and to manage the trade in a way though that I at least can leave the trade without a loss. How many percent of the trades do you
+
+[23:17] have to manage in one way or another? Yeah, so Russell maybe 5% very rarely because Russell seems is not a super
+
+[23:28] bullish instrument. It's stays in a range for a while. On equity options, if you do this with options which are not so with underlines
+
+[23:38] which are not so bullish, I would say 2/3 of all trades you don't need to touch. In times like this, I have to say honestly, I would avoid to sell short strangles. So, if you are are in short
+
+[23:51] strangle positions, you might be caused to close them or to adjust them. Did you say that you have a 100% win rate on the on the Russell strangle that
+
+[24:02] you're running? Yes. Yes, since 3 years. Yeah. How many trades have you done? So, I think 25 per year roughly. You you know there are entry criterias,
+
+[24:14] so you cannot always turn on this strategy, but if the entry criterias are there, I have done 25 trades a year and every trade was so far successful.
+
+[24:26] And what about your other strategies? Is it the same picture there? No, I I would say 90 to 95% success rate. Again, the success rate is because of
+
+[24:38] this possibility to adjust a strangle or short strangle very easily. Your point is that this adjustment that you're doing is easy to do with a strangle because you have only two legs
+
+[24:49] to deal with. While if you had an iron condor, condor, it would be more complicated and you would not always be able to adjust in the same way. Is that correct? Is that correct?
+
+[25:01] That's perfect summary because one thing people you you can roll a spread. Yeah, especially if it's under pressure
+
+[25:12] out of the money. But the the difficulty is the short sorry the long cost is more costly. You know it's the long Vega which makes
+
+[25:24] the the long more costly. So to roll it with a credit very often it requires that you widen the spread which means you have more exposure.
+
+[25:35] I think it's for beginners I would recommend to start with a an iron condor. But watch carefully okay the behavior of an iron condor and then if you feel a
+
+[25:48] bit more comfortable with um in and out with the the mechanics in in your trade or workstation or so then you can try with maybe one position only
+
+[26:00] um first short strangle get your experiences but you need to be you need to be strict on your on your management because again you have
+
+[26:11] unlimited risk and what I also recommend is and I I do it all the time I have of call of course on portfolio side my hedges. Yeah, so it's very hard to hedge a
+
+[26:24] strangle on the equity side or on the on the on the trading side. So I have black swan hedge I have fat tail hedge that need to have. Can you give us one example of a hedge
+
+[26:36] that you put on for this uh root uh strangles? So these lines here yeah, this represent the trigger line. So let's say you have invested 10K on margin on the strategy
+
+[26:48] and your rule is 20% max loss based on the strategy. Then you can uh you can do this with option strata or other tools. You can look, okay, which
+
+[27:00] is the strike which I would theoretically lose $2,000, 20% of my 10. That is my trigger strike. And for at this strike you can then
+
+[27:11] if if you hedge the downside, you can go short with a with a future for example. And I I use the M2K. That is the micro future on the Russell 2000,
+
+[27:27] which is a $5 per point, so it's a smaller hedge. So if that strike is triggered, you go you go short, yeah? So you you sell stop limit.
+
+[27:40] And then it allows you to close those side. Yeah? You need to know um the why I do this is
+
+[27:50] future is traded almost almost 24/7. It's very liquid. The disadvantage of a future is a linear instrument, so it will not be a convex payout structure. This is why you have
+
+[28:03] to be ridiculous here. You have to close your side which is under pressure. You can do the same on the upside. If it goes up, then you you buy limit, yeah? You buy the future.
+
+[28:16] And of course if it turns around, you need to have a stop loss here. So that the future is not against you. That is one hedge. The other one is I'll show you this.
+
+[28:27] Uh this is now a a short straddle, but you can replace that picture with a short strangle. Doesn't matter doesn't make a difference. Um so this is your income. So let's say
+
+[28:39] 30 days out of expiration, and then you place um with less expiration because you think you might get out of the trade for before because of your take profit.
+
+[28:53] Let's say half expiration you pay place this one as a long strangle which the definition is you need to secure those those those profits on here. And if it goes in in a loss
+
+[29:07] position, you get covered by the outside legs. That works perfectly well. And this has to be of course less expensive than the the credit you get
+
+[29:17] here. So that is a way you can um trade short strangles with very defined risk. RUT is as you pointed out fairly large
+
+[29:31] index or fairly large product. And let's say a trader who's wants to get into strangles for the first time maybe a little bit scared about the buying power required etc. Could you do this
+
+[29:44] the same on let's say IWM which is the ETF smaller ITF ETF version of RUT? Yeah, you can do this. You have to be aware that you have assignment risk of
+
+[29:58] course on on those underlyings. I don't know why. I have tested it multiple times but the IWB IWM hasn't the same um success rate as the Russell.
+
+[30:13] Um, of course there is a little difference in but the other side it is a very small underlying so I think it's good to start with and then of course um
+
+[30:25] have an have a close eye on it so that you get not um and in trouble in terms uh you get an an early assignment or such such things. We have to talk more about the risks.
+
+[30:38] What is the worst that can happen with selling short strangles. Of course, one side, you can only lose one side. For example, you have a black swan
+
+[30:50] event. Then I think you are in trouble, but a black swan event you should be hedged. So if you do it naked without any hedging, you should you are not uh
+
+[31:03] I would say you should not do this. If you have not a portfolio hedge, then you should think about the possibility I've showed you, so you can either
+
+[31:14] do it via a future or you have a um a very strict
+
+[31:21] risk management, but if you have a overnight gap for example, you know, then your delta 35 doesn't help you because you have you have been overrun.
+
+[31:32] So then the future is the only instrument. Or you do it this a bit more complex. It requires a little bit more of experience to do it like I've showed you. You buy
+
+[31:46] the opposite risk profile. So you you buy a long straddle to hedge your short straddle. That's essentially getting into an iron condor.
+
+[31:57] Yeah, or I mean, we have not talked about this possibility, of course. That's the I would say the funny thing or the nice thing or the beneficial thing on a short strangle. If
+
+[32:08] you feel unsafe or you think there is something coming, then turn it into an iron condor. Then your risk is pretty much defined. With a short strangle on route, you
+
+[32:20] know, the risk is unlimited because there is no limit to how high the price can go. So to theoretically, the risk is really unlimited. So it can blow out an account
+
+[32:33] if the market suddenly decides to make a 50% jump or I mean, that you have to always have in mind and then also the margin requirement of your broker will go up.
+
+[32:44] Yeah? I have looked at some statistics. I have seen those events on the downside. I have very rarely, maybe one, two
+
+[32:55] times, seen that on the upside. Talking about this risk, you need to be careful with your underlying. I would not recommend you to use short
+
+[33:06] strangles on bullish guys. Especially on those tech companies. The magnificent magnificent seven, for example. All bullish instruments. They're more
+
+[33:18] They're more options or more underlyings like, for example, a boring one is McDonald's or there are more underlyings which go which like to go sideways, are not so bullish. And then you you can
+
+[33:30] avoid those upside blowouts. Yeah? Do you have a guarantee that it will never happen? No. That's true. I mean, if you sell a naked short call, you know what hopefully know what you do.
+
+[33:44] Or you have the underlying in your portfolio, so you get called away. Last year we had Donald Trump's liberation day. And a bit
+
+[33:53] after that, he he eased a lot of the tariffs and the market made, I think it was around a 10% jump in one day. How did your strangles survive that? Yeah, and that's the only event I really
+
+[34:09] remember which happened like this. Luckily, I only had the the Russell in this case and I was luckily not invested on equities.
+
+[34:22] But the Russell, of course, I had to roll the um call side. And delta eight has a little range. So you need to know that there is still a
+
+[34:37] little bit of space and it worked. But if it would be 1000 points, then you might have difficulties because the liquidity of those out of the money options get
+
+[34:48] less and less. So you have difficulties to get a fill. So you might not be able to roll out vertical. So you have then to change expiry.
+
+[34:59] Or what I would have done if it would really be impossible, I would have just closed the the call side. I always ask my guest to put their
+
+[35:10] strategy on a risk profile scale from one being very low risk and 10 being very high risk. And you are free to define these numbers as you see fit for the purpose. Where would you put selling
+
+[35:25] short strangles on such a scale? Definitely, again, if you would be a a junior retail trader, I would give you an eight or nine out of
+
+[35:37] 10. If you know about gamma and short Vega, long Vega, and you're experienced in adjusting trades, I would say it's maybe a six or
+
+[35:48] seven. Let's move to your results. You have touched on them, but give us some more details about your results about trading this strategy and
+
+[35:57] how do you measure your results? Yeah, so I'm very conservative on this. I have just an Excel sheet which I put all the trades in,
+
+[36:06] profit and loss. And and if you roll, you have many times have a so-called roll loss, which is of course not a loss. It's a temporary loss and that is on the other
+
+[36:16] side going to your premium. Um so I track that and I I look at the I have a a dedicated a part of my portfolio of my depot
+
+[36:29] depot value assigned for those kind of strategies and based on this I do all the math and I have to say that works very well for me.
+
+[36:39] And what are the results when you measure like this? Yeah, so as I'm very conservative and very risk averse the past 3 years I have gained 25% profit based on that amount
+
+[36:53] which I have used for those trades. There is a drawdown of course and let's say between 0 and of course on the upside also until 50% but on an average um 25% is
+
+[37:07] is is possible. It's not my target. My target is always conservative 10%. Everything in addition I appreciate and that is also
+
+[37:18] recommendation how to act and work. So don't take too much risk. Um position size is one of the most important things and be ridiculous on rules.
+
+[37:30] So you say that you allocate a certain capital for each strategy. I don't know your account size but let's assume your account is $100,000 and you are trading your route strangle
+
+[37:43] strategy on that capital. How much buying power would you then be able to use of those 100,000 to for your strangle? So if you would have a $100,000
+
+[37:56] account and if you would follow my rule then you would have to allocate 10% risk total risk and that is the margin
+
+[38:09] the max margin you can allocate for a trade. So my risk rule is based on that margin of 10K I would allow a loss of 20% in max.
+
+[38:22] So and you see already if you want to trade a Russell strangle short strangle, you need some buying power. You need some a minimum
+
+[38:34] portfolio size. It is time to sum up. How would you sum up your strategy and what would be the two or three most important takeaways that you want the audience to remember?
+
+[38:46] First of all, the short strangle, if you use that short strangle uh has pros and cons. You need to be aware about the the pros uh and the cons as well. So, um
+
+[38:59] the short strangle, uh the most important thing is you need to be aware all the time that you have theoretically two times unlimited risk. But, the
+
+[39:10] uh other things are you you're you're selling volatility, not direction. That's the first thing. So, um the entry should happen in in uh periods where the IV is elevated, yeah?
+
+[39:25] And then, as it is a riskier strategy, the position size is one of the most important things. So, don't over-allocate. The
+
+[39:34] edge in a in a short strangle strategy, of course, is two times theta, uh two times um short Vega, and uh most important is the
+
+[39:46] management. And the management decides uh if you take the undefined risk or you keep it as it is. So, that you're not uh that the theoretical risk be
+
+[39:59] uh is a theoretical risk and not a real risk. How does selling strangles fit with other option strategies that you do? A short strangle is, of course, not my
+
+[40:09] primarily uh primarily uh uh option strategy. It's It's a part of your let's say a uh uh approaches. So, my trading style is
+
+[40:21] I try to utilize all a regime. So, if it is up, down, or sideways. And strangle is one of the instruments I use if the entry criteria are allowing me
+
+[40:34] to sell those short strangles. In other In other ways, I can also go directional. I can also be just on volatility. In most cases, I personally don't have
+
+[40:45] an opinion about the markets. I sell probability. What would be good resources to learn more, especially about selling short strangles?
+
+[40:55] Yeah, of course. There are many many opportunities in the market nowadays. You can watch YouTube. So, I I show you one of my Bibles, which is a very old book.
+
+[41:10] It's from 1985. It's a Mr. Charles Cottle. Um this is a written before computer computerization.
+
+[41:20] There you get all the the things I think which you you need to understand why is a short strangle why is a an option behaving like it is. So, for example, if um
+
+[41:33] direction of the underlying changes changing, what does it mean? You know, so it explains you that uh not not um the Vega is your main problem. It's
+
+[41:47] mainly the gamma. And gamma is something you retail option traders have difficulties to understand. So, this is a very recom- recommended book, of course.
+
+[41:57] Um the other book which is very helpful if you trade short strangles is this one. Most probably everybody knows. It's talking about volatility. And uh another Bible which I recommend
+
+[42:11] is very thick book. That's a heavy one. Yeah. I mean I have read it.
+
+[42:19] Not Option as a strategic investment by McMillan. Not in one time I have to say, but it's always beside me if I want to know
+
+[42:26] something. Um that's important and of course um uh how how should I learn? I mean um just doing paper trading is probably this is my personal opinion
+
+[42:41] is not helping you over the time. At a certain time you need to go live because that's a different also mental from a psychology a different momentum than you if you
+
+[42:54] have a paper account. Uh at the end of the day it's a paper account. So if you if you gain a loss it's not hurting you. But if you have the option live and you
+
+[43:06] should start with a very little position on an underlying you know very well you trust very well. Um and then just watch the Greeks. Uh it's this is what I recommend.
+
+[43:17] Uh have a daily look at an option. Look at how the Greeks will change. What will happen if the underlying moves $1 up or down? Look at what happens with Vega. What
+
+[43:28] happens with uh your theta decay. Uh what happens with gamma? The delta is not the most important um Greek I would say. It's only giving you
+
+[43:38] the sensitivity of the option uh of the underlying price movement but not not not something else. Uh the important Greeks you need to learn about is watch Vega. Watch uh
+
+[43:52] gamma which is the risk you take in exchange uh for theta. Uh this is my recommendation I can everybody uh
+
+[44:03] um motivate to to into. Um I will of course all also recommend to watch some of the other interviews we have here on Set Profit. Every Sunday we interview a new retail options trader
+
+[44:17] and we have covered a lot of different strategies with different risk profiles over the last couple of years. Rainer, thank you very much for coming here and sharing how you
+
+[44:29] how you trade short strangles. Thank you. It was a pleasure. Thank you, John.

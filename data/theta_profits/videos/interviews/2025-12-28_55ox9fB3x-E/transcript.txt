@@ -1,0 +1,241 @@
+[00:00] I sell at the money put credit spreads. Started with $3,200 in March and as of Friday, the account is at 12,000, but I've made a little over 18 uh and I've pulled some money out.
+
+[00:12] My guest is still a quite new options trader. However, over the last few months, he has managed to increase his trading account fivefold by selling at the money put credit spreads.
+
+[00:27] curious. Me too. So, let's dig into the details. Welcome, Robert Mintosh. Thank you. Pleasure to be here. Robert, give us the 42nd version of your strategy and how it has worked for you.
+
+[00:44] Uh, yes. So, I sell at the money uh put credit spreads. I use um discretionary on when I enter the trade. I'm only trading on the S&P right now. And your count has grown five times.
+
+[00:57] Just about just under five times uh as of Friday a few days ago. Yes. Just under [snorts] is still all all quite good. I would say it's close. Yes. [laughter]
+
+[01:08] So tell us a little bit about yourself and your way into options trading. So I've been uh trading uh pretty much everything off and on uh for a little over 20 years. um stocks, futures, forex
+
+[01:21] a little bit, but I started in options in March and uh watched as many videos as I could u many of your guests and um eventually decided to take the plunge. Started out with a couple strategies uh
+
+[01:36] like the wheel and things like that because I had a a really small account to start with. Uh a lot of those strategies weren't really helpful for a small account or they would take a
+
+[01:45] really long time to get anywhere. So, I started in with the credit spreads. They were very easy to reason about. I didn't have to pay a lot of attention to the the Greeks. Didn't have to do a lot of
+
+[01:56] technical analysis with trading on the S&P. I didn't have to worry about getting out of the trade and closing and worrying about pattern day trading rules and things like that. So, it's worked
+
+[02:05] out really nicely for me. And where are you located? Uh, I'm in central Oklahoma. How do you like option trading so far? So far, it's pretty good there. I don't
+
+[02:15] have to really do a lot of management. Um I do work from home so I can watch it and I do uh but mostly just because I like to. Um but I could fire and forget if you will on a particular trade if I
+
+[02:28] really wanted to but it's it's not overly stressful and like say I don't have to do a whole lot of analysis u with the way I'm trading right now. So that's nice. You don't have to have a
+
+[02:38] lot of prep work. But you started with zero DTE trading before you ventured into the strategy we are going to dig into today. That is correct. Um I did start um doing
+
+[02:50] uh zero DTE iron condors and did okay. Problem that I had was with iron condors you really kind of want to use stop losses and that can have an effect on your pattern day trading rules. uh which
+
+[03:05] hopefully the US is getting rid of this next year, but it's it was still an issue and the risk-to-reward was pretty high. Uh you know, for about $200 worth of premium, uh you're risking about, you
+
+[03:16] know, 1,200,300 bucks or so if you let it go all the way. And so I switched to 5 to 7 day DTE credit spreads and uh that's worked out. One of the reasons for the five to seven was allows me to
+
+[03:31] uh be out of a trade fairly quickly. My goal with a really small account was to grow it up fairly quickly and then start to kind of back off and go more into capital preservation mode as opposed to
+
+[03:44] very aggressive. So with a small account, I'm able to be pretty aggressive with it. Can you share how small account you actually started with? I usually don't
+
+[03:52] ask about this, but you have already told us that it is small and it is within the $25,000 level of uh the PT rules. Yes. So, I started with $3,200 in March.
+
+[04:05] Uh when I started trading the credit spreads, I had it up to about 4,000 or so. And as of Friday, the account is at 18,000. I'm sorry, is at 12,000, but I've made a little over 18. Uh and I've
+
+[04:17] pulled some money out in the last couple months. So Robert, let's start with the very basic. How do you put your trade together? Uh yes. So um I'll take give you a quick
+
+[04:30] example here on option strand as of this chart here. This is an at the money. Uh so the current market is at 6826 or seven or so. I generally do a 10point spread. Sometimes I'll do a 15, but the
+
+[04:44] 10point spread I like. It gives me the a good margin, allows me some margin preservation, and at the money, I'm generally getting about 350 to 380 or so on the credit. Uh, and I'm going out 5
+
+[05:00] to seven days in general. And in this specific trade, how many days is it out? This one here is 4 days out, and this one here would be uh six days out. So,
+
+[05:10] you see that the credit goes up a little bit. One of the reasons why I don't go much further than a week is the credit tends to uh kind of decline a bit. Um, and I have to wait a long time for it to
+
+[05:23] really uh come into the money. As you as we can see, most of the money really comes in in the last day uh day and a half. So, if I have to wait two weeks for it, then my margin is tied up while
+
+[05:37] that trade uh gets to expiration. And I would just assume that happened sooner rather than later. So, right. And and when you typically get $350 in premium and you have a 10 wide
+
+[05:49] spread, that means that your max loss if you don't put on any stop loss, etc. is $650 on this trade. Yes. Yes. So, let's
+
+[06:01] talk a little bit about when you enter. What are your conditions for entering this trade? So, I am looking for pullbacks on the S&P 500. Um, I use the uh daily chart. I
+
+[06:16] have a an EMA indicator on. I don't use it as a hard uh rule. It's more of a guideline. And one of the things that I look for is if the price has extended um too far uh too quickly. And that sounds
+
+[06:32] like that's kind of ambiguous. Um, but what I kind of my general rule of thumb is on the S&P, if it's up more than 1% above that um 20 EMA line, then it's probably going to come back down at some
+
+[06:45] point within the next few days. And uh so I I look for those days where it pulls back. It doesn't have to pull back all the way to the line, but the the further away from the EMA that it goes,
+
+[06:58] I'll generally wait a a couple pullback days as opposed to just one. But in general, I using this, I can get about one trade a week on average. Uh, which is kind of what I go for. Sometimes I'll
+
+[07:09] get two two trades a week. Um, if I do more than two with my account size, then I run the risk of, you know, getting into overlever and being uh too exposed. Robert, your use of EMA.
+
+[07:22] What is EMA? And can you show us a bit more in detail how you use this signal? Yes. So, uh an EMA is a u a moving indicator. It's exponential uh moving average. It favors the the near-term uh
+
+[07:39] values more than the far-term as opposed to a simple average. As mentioned, I use it as a as a guideline for when I want to possibly enter a trade or when I think the market is about to make a
+
+[07:50] pullback. To give an example, so uh this is my chart right here. Uh the white line here is the 20 EMA. The yellow line is the 50. Uh the white line is one that I use the most. The 20
+
+[08:03] EMA is what I use the most. And what I am looking for are days like this where it the market this is S the uh S&P again uh I'm looking for the market to extend pretty far above it um which generally
+
+[08:19] will tell me that there's going to be a pullback uh relatively soon. If I see a day like this, um, then I I will not enter on the first pullback. Uh, just because it it's more
+
+[08:32] likely to, uh, pull back hard if there's a hard extension. So, the this day was an example. Uh, this day right here was an example. Uh, this one was an extreme example here. U, but there are others in
+
+[08:45] here where it extends up and it's a nice gradual pullback. uh this one hit a little bit sharp, but these are the kinds of things that I will look for on if I'm going to be more aggressive. So,
+
+[08:58] on these types of pullbacks, if it comes down to the 20, uh I will generally be more likely to um add an extra contract in as opposed to uh on days like this one right here. I
+
+[09:13] can zoom in a little bit here where uh you know, this was just a a simple down day. This was a simple down day. Uh these kinds of trades, uh I'll stick with a a s a a single contract and enter
+
+[09:25] these. Well, you're not by definition waiting for it to drop all the way down to the 20 EMA line. Correct. Um if it does hit the 20, then
+
+[09:36] um you know, it's it's a pretty big movement. Uh so, no uh I'm not using it as a strong um technical signal. Um just more as as a guideline. uh it's kind of easier to see, you know, these kinds of
+
+[09:49] pullbacks uh when you have something to reference it to. And the EMA is more of my my visual reference for when it pull out. If it does pull back pretty hard and it goes below it, uh then I will
+
+[10:01] usually wait till the first recovery day before I'll enter trade. uh because on um you know like in in this particular area here this this wouldn't have been a good one but on some of these it can you
+
+[10:15] have several down days in a row and um so uh I'll I'll wait for it to start to recover. Uh the nice thing with the S&P is you know the SPY in general is you know in in general the market wants to
+
+[10:28] go up uh over time. Uh so you're less likely to you know um have extended periods of downturn. You know obviously they do happen you know there are markets and years when that happens like
+
+[10:42] during the COVID uh time frame and things like that. Um but it always ends up recovering and wants to go up. So it kind of makes uh the analysis um easier. So I I wait for it to start to recover
+
+[10:53] before I'll enter. And what time frame are you using on on this graph to analyze this? I'm using daily, which makes it nice and easy. Um, sometimes I will look at the hourly
+
+[11:05] chart. Um, but I'm only using the hourly if I want to see how fast uh the market is moving on my expiration day. So, if it's moving pretty quickly, I'll switch the hourly and see just how much it's
+
+[11:18] bouncing around because it's easier to see and that'll help me determine if I want to exit a trade earlier on that day as opposed to u letting it run to full expiration. Are there other conditions
+
+[11:29] that you consider? Not really, other than if I'm already in a given trade. There are times uh this past Friday, for example, uh which was the uh 12th of December, I uh the market
+
+[11:42] came back pretty sharply on on that day and I had a uh trade that was expiring and that one was going to be a loss. So I managed to cut that one, but at the same time it the market came back enough
+
+[11:56] that I entered in another one pretty low. So that kind of acts as my counter. Do you have any rules for specific days of the week you enter the trade or can this be opened on any day as long as you
+
+[12:10] see think the conditions are good for the most part? Um I can do any day. Uh I like to have expirations on uh anywhere between Thursday and Monday, but there's no specific technical reason
+
+[12:25] why. It's just a personal preference, but I've entered trades on uh any day of the week if the if the opportunity presents itself. Okay. So to sum up, you enter at the money, you sell an at the
+
+[12:38] money put on SPX, you buy an uh put 10 further further out and you set it to expire at 5 to 7 DTE and you have a set of conditions uh where you try to do it on pullbacks uh where you use EMA. Is
+
+[12:57] that correctly summarized? Yes, that is that is pretty much it. So, let's move to when you get out of the trade, what are your exit criteria? As much as possible, I like to let the
+
+[13:10] trades expire. For me, uh, one, it's that's one less commission and fee that I have to pay on closing it. But I only do that if it's well out of the money. So, I don't say no chance, but there's
+
+[13:24] almost no chance that the trade is going to go against me on the last day. Uh, so I just like to let it expire, look for my next trade and move on. Uh, on days where it is expiring. Um, as I
+
+[13:37] mentioned, like Friday was one where the market was coming against me, I'll generally try to let it ride. Uh, if it's early in the morning, then I'll try to let it ride till about noon or so
+
+[13:48] just to kind of let it come back. But if not, then I will try to do a one one loss on it. There are times when I haven't. Um, I should be better at doing stop losses because it has caught me a
+
+[14:01] few times. But for the most part, I I let them expire or I try to close them around one if it's going against me on that on on the expiration date. But do you always wait until expiration
+
+[14:13] day? It can go against you much further much earlier than that. I guess it can and that's one of the reasons why I generally do 5 to seven days to let it come back. There's only been twice where
+
+[14:25] it's really gone south pretty hard. The last week of October kind of first two weeks of November where examples of that when the market got really choppy there. Those are a little harder to get out of.
+
+[14:37] Not technically, but just from the mental mindset of okay, I need to close this cuz it's not going to come back in 3 days or something like that. So, yeah, I'll I'll try to get out of those.
+
+[14:46] But how do you try to get out of them? Do you roll the position or or do you just close it before it's looking too bad? I usually just go ahead and and close it. Have rolled a couple trades,
+
+[14:57] but for the most part, I just close it and when I am closing it, it that also is usually another buying opportunity or selling opportunity. And so I'll just close it and enter in a another trade.
+
+[15:10] It's easier for me to manage than to trying to roll it and and then try to figure out, okay, how much further do I need? And you know, when am I going to recoup my costs? And you know, for a
+
+[15:19] relatively new trader, it's easier to think about just close it and and move on to the next trade. I've done a couple of similar strategies few times, but I I seem never to get
+
+[15:31] friendly with these weekly strategies and the issue tend to be that you suddenly get this very big overnight drop in the market that just you're suddenly at a big loss. It it is
+
+[15:45] a little frustrating at times and one of the reasons why I started with the zero DTE on the iron condors early on was I hated opening gaps. That's one thing that uh was very rare in things like
+
+[15:57] forex. You know, opening gaps just generally tend to not exist unless it's a really extreme event. But on the S&P and and SPY and you know, individual stocks in general, that tends to happen
+
+[16:08] a lot. And at first that worried me a little bit, but um S&P for the most part so far is relatively mild. If I were doing this on individual stocks, I'd be a little more cautious. They tend to
+
+[16:21] fluctuate a little bit more than uh than the big index does. And I guess that with your 10we spread, you do have a protection that as well. It will be a $650 loss. Yes. But that is
+
+[16:34] still not wiping out your account if it happens. Correct. Yeah, that was one of the primary reasons why I I keep the spread fairly tight at the 10 mark. You know,
+
+[16:43] it keeps me at a two to one or just under two to one in most cases. And I'm I'm I'm willing to live with that. Yeah. If it went so hard that I couldn't get out of it uh any earlier, then it
+
+[16:55] only takes me two trades to recover as opposed to three or four trades to recover from that. What What is the worst that can happen with this strategy?
+
+[17:06] Uh the worst thing that can happen happened to me a couple times where I got too aggressive and I was too exposed within a given week on an individual trade. Uh when I'm just doing one trade
+
+[17:16] at a time, exposure is very minimal. Obviously, I don't win every single trade, but when I do lose a trade, it's quick to recover. Uh if on the times when I've gotten too aggressive, that's
+
+[17:28] when you get hurt. we have too many trades expiring with one week and that week just tanks on you and it doesn't come back quick enough for you, then you lose multiple trades at a time. So,
+
+[17:39] but what is the average number of trades you have on right now with an account size of 12 $13,000? I generally have uh one to three uh most of the time I'll have maybe two on uh
+
+[17:52] and the two are overlapping. So, I'll have one that's expiring, you know, on a Thursday or Friday, and I may have entered on a Wednesday. So, the other one will be expiring three to four days
+
+[18:02] after that. Though, those aren't hard rules. It just tends to kind of work out that way. Um, if the market pulls back um a good 1% or so, then I may enter extra or I may increase the contract
+
+[18:15] size and I may go out to two weeks, but that's pretty rare. I've only done that a couple times. And I only would do the two weeks so that I don't have multiple ending on the the same expiration or
+
+[18:27] within a day of the same expiration. So I don't run into that case where where I'm overexposed on a given week. So I I'll go ahead and let it ex extend a week.
+
+[18:36] So in general the max draw down you are risking is about 10% of your account to $650 multiply by two. Correct. Yeah. And on a small account, I
+
+[18:48] mean, you know, as a percentage, that's high, but on a really small account, you know, one, it's kind of unavoidable, but it's also acceptable to me. If I was working with a six-f figureure account,
+
+[18:58] I would never go that high. I would keep it far more manageable. I always ask my guests, Robert, to put their strategy on a risk profile scale from one being very low risk and 10
+
+[19:10] being very high risk. And you can define those numbers as you see fit for the purpose. Where would you put your strategy? You know, I actually thought about this
+
+[19:18] quite a bit over the weekend. Um, I would probably put it at a three. I think for a beginner, probably a three or four. And as you get a little more experience or uh the more disciplined
+
+[19:30] you are, then it's probably closer to a two. The risk is well defined. The risk-to-reward is uh very acceptable to me. And you don't have to worry about you only you only have to worry about
+
+[19:40] the market going in one direction as opposed to multiple directions or bouncing around. uh like you would with say a condor or something like that. So let's talk about the results.
+
+[19:52] Win rate loss rate first. How many trades have you done so far and what win rate have you seen so far on the credit spreads? Uh I have about 50 trades uh since uh June and the win
+
+[20:07] rate is at 71% right now. And the financial results on credit spreads alone about 12,000 plus in the uh black. I I try to target my target goal is a $100 a day average.
+
+[20:22] Uh right now I'm averaging about $130 a day. Uh June and July were not good months. U but the other months have been really good so far. So let's sum up this a bit. How would
+
+[20:34] you sum up this strategy and who is it suited for? Uh, I think it's really suited for beginners in options because you don't really have to uh dive into the the
+
+[20:47] Greeks, you know, I'm not worried about uh what my delta is and, you know, I'm not worried about the other, you know, metrics that um more advanced strategies were rely on. So, it it it's easier to
+
+[21:00] reason about for a new trader. There's less, you know, there's only two legs on the trade, so your commissions are a little bit lower. Uh, and on a on a small account that can mean, you know, a
+
+[21:09] a decent percentage overall. Uh, and it's it's easy to get into the trade and then just let it ride. Uh, as I mentioned, I'm using SPX, so I don't have to worry about
+
+[21:21] assignments, uh, because everything is settled to cash. Uh, so that makes it easy and, uh, lets it go all the way to expiration and keep the full amount of, uh, premium that I got. So I'm not
+
+[21:34] worried about a 50% target or 75%. Sorry, market just opened here. [snorts] So I'm not worried about, you know, a specific target like that. So I try to capture as much as I can.
+
+[21:46] You're still relatively new to options trading, but you have been trading stocks and forex for a very long time. Could you share what are the couple of most important learning points you have
+
+[21:56] learned so far about options trading that you know really strike you as important to know? stay away from the uh the complicated strategies, you know, things like double calendars and the the
+
+[22:11] wheel is is nice, but only if you have a an account where you can get into, you know, uh good size stocks. Um you know, most of the strategies that you see are suitable for, you know, mid to high five
+
+[22:23] figure accounts and up. Um and if you're really starting out small, you know, there e you either just can't do it because you don't have the capital for it. Uh, so I think the spreads are are
+
+[22:35] really nice for that. Other than that, just discipline and not get more aggressive than you're willing to risk. Uh, while the trades themselves are not overly risky, I am willing to put more
+
+[22:46] up if I see an opportunity. If I see a really good pullback, all, you know, I'll put on more contracts than I normally would. Um, but if you're want to do more of a slow and steady, then
+
+[22:56] then you don't have to do that. So, that's nice that you have the option. What have been good resources for you to learn options trading? Primarily, uh, YouTube. Uh, uh, I don't,
+
+[23:10] uh, buy any books anymore. So, there's plenty of, uh, videos out there. Uh, there's plenty of videos on zero DTE stuff. Uh, credit spreads, there's a lot of, uh, videos on credit spreads. Your
+
+[23:21] channel has a lot of great guests that have a lot of great ideas. Uh, many of them I have bookmarked for, uh, later research. I do plan on uh diversifying my strategy a bit when I get my account
+
+[23:31] up to a certain point, but yeah, it's uh you YouTube's a wonderful resource these days. Robert, thank you for sharing your strategy and how you have been able to grow your account fivefold. Last
+
+[23:44] question. Do you expect to keep uh five doubling your account in a few months? Uh no. [laughter] Um, my goal is, um, every, uh, 10,000 I make, I increase the contract size. Um,
+
+[23:59] but I'm not going to keep that up indefinitely. Um, so I hope to get about up to about 50,000 by summer, end of summer, uh, you know, so, six to nine months from now. And then I'll, uh, pull
+
+[24:13] back a little bit on the aggressiveness. Um, at that point, it'll be more about keeping the money and just being nice and steady as opposed to getting up there quick. Um, I've never looked at
+
+[24:22] this as a get-richqu uh type of strategy. Um, but you know, when you have a small account, um, aggression is helpful. And unless you want to make, you know, um, pennies on the dollar,
+
+[24:34] well, I I want to make dollars on the dollar. So, and five to 10 times by the end of next year is very ambitious. It is. It is. Um, I think I can do it.
+
+[24:46] Um, but time will tell. So, thank you very much for sharing your strategy and what you have learned so far. Thank you very much.

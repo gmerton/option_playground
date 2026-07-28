@@ -1,0 +1,208 @@
+{
+  "video_id": "p59drmcumy4",
+  "date": "2026-04-28",
+  "title": "Dip buys not working | 28 Apr 2026",
+  "observed_trades": [
+    {
+      "date": "2026-04-28",
+      "ticker": "?",
+      "direction": "long",
+      "action": "exit",
+      "setup": "Sold all positions and went to cash the prior day; got lucky as semis and the general market pulled back today",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-04-28_p59drmcumy4@00:09",
+      "confidence": "stated",
+      "notes": "Blanket exit of his whole book yesterday; individual tickers not specified",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2026-04-28",
+      "ticker": "FSLY",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Dip buy on the first pullback into the 9 EMA after a strong uptrend; breaking out but failed",
+      "entry_basis": "breakout / reclaim of the 9 EMA",
+      "stop": "",
+      "source": "2026-04-28_p59drmcumy4@31:48",
+      "confidence": "stated",
+      "notes": "Caption 'fastly' = Fastly (FSLY); 'I stopped out from fastly too'",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-04-28",
+      "ticker": "?",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Dip-buy attempt that failed as IWM rolled over",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-04-28_p59drmcumy4@31:48",
+      "confidence": "stated",
+      "notes": "Caption 'on the abyss' = unidentified ticker he was stopped out of",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-04-28",
+      "ticker": "ONDS",
+      "direction": "long",
+      "action": "reentry",
+      "setup": "Got stopped out then re-entered it the same session; stopped out again",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-04-28_p59drmcumy4@61:17",
+      "confidence": "stated",
+      "notes": "Caption 'ONDS' = Ondas (ONDS); 'I got stopped out and then re-entered it', then 'all from ONDS again' at 64:18",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-04-28",
+      "ticker": "IONQ",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Strongest stock in the quantum sector; pulled back into the 9 EMA with an undercut-reclaim and support at prior swing highs; huge risk-reward if it breaks out",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-04-28_p59drmcumy4@71:07",
+      "confidence": "stated",
+      "notes": "Caption 'IOWNQ' = IONQ; 'it's got stopped out again' at 72:33; may switch to the short side if the long fails",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-04-28",
+      "ticker": "?",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Aggregate: stopped out of more than five dip-buy positions today as the market weakened (the unnamed remainder beyond FSLY/abyss/ONDS/IONQ)",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-04-28_p59drmcumy4@90:14",
+      "confidence": "stated",
+      "notes": "'I got stopped out from like more than five positions today'; an aggregate recap, individual tickers not all named",
+      "fill_timing": ""
+    }
+  ],
+  "principles": [
+    {
+      "category": "risk",
+      "text": "Never increase risk per trade to revenge-trade out of a drawdown; in a drawdown you should reduce size - chasing losses with bigger positions is how he turned 0.5% risk into a 35% drawdown.",
+      "timestamp": "108:04"
+    },
+    {
+      "category": "posture",
+      "text": "When you get stopped out of 5+ dip buys in a session, the market is telling you to take a step back and trade less for a while.",
+      "timestamp": "90:14"
+    },
+    {
+      "category": "mindset",
+      "text": "Drawdowns are unavoidable and you are in one most of the time; even the biggest winners (e.g. NVIDIA) spent years in drawdown - judge yourself on process, not a perpetual all-time-high equity curve.",
+      "timestamp": "82:49"
+    },
+    {
+      "category": "exits",
+      "text": "Strike a balance between holding winners and protecting profit by knowing your own temperament: if seeing profits stripped away frustrates you, sell more into strength and accept giving up some upside.",
+      "timestamp": "86:41"
+    },
+    {
+      "category": "entries",
+      "text": "A good entry is confirmed by what happens after you exit: if a stopped-out trade keeps going against you, the stop was effective and the entry was sound.",
+      "timestamp": "139:07"
+    },
+    {
+      "category": "entries",
+      "text": "After a red day followed by a gap up, a pullback on the gap-up day can be a buy rather than something to avoid - watch the fade after the opening range.",
+      "timestamp": "141:52"
+    },
+    {
+      "category": "mindset",
+      "text": "His edge has drifted from pattern/setup classification toward discretionary reads of theme and general market - in a fast market a clean tight-range breakout often is not available.",
+      "timestamp": "118:56"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "00:09",
+      "caption_text": "I sold all my positions and went into cash yesterday",
+      "context": "Blanket exit of his whole book the prior day; individual tickers not specified",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "07:57",
+      "caption_text": "AMT on the 9 EMA could be also watch",
+      "context": "On the 9 EMA, a potential buy among software/space names finding support",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "28:08",
+      "caption_text": "R of a yes but missed the entry on CR ML yesterday",
+      "context": "Missed the entry yesterday; later 'CRML The late EP do you think? Still have enough fuel'",
+      "guess": "CRML",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "29:52",
+      "caption_text": "The space UMY is also looks really nice. The test book VCP now looks like it's breaking out",
+      "context": "Space name, textbook VCP breaking out; pullback into the 90-min is a good entry",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "31:48",
+      "caption_text": "I got stopped out. on the abyss",
+      "context": "Stopped out of this position as IWM rolled over",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "41:31",
+      "caption_text": "Why so bullish on that piece? ... That piece is now at the prior highs like the high of the previous base, the 6-month base",
+      "context": "At prior highs of a 6-month base, slightly below the 21 EMA, valid pullback buy; at anchored VWAP on the swing low; later 'NetApp' is mentioned in the same thread",
+      "guess": "NTAP",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "52:38",
+      "caption_text": "Net NetApp is trading at 700 million, but what why does this look so illiquid?",
+      "context": "Viewer asks why it looks illiquid; he says it may be on NYSE; earnings May 18th; 'NetApp' = NTAP",
+      "guess": "NTAP",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "61:17",
+      "caption_text": "Can you check out on ONDS? I I did. I got stopped out and then I just re-entered it",
+      "context": "Stopped out and re-entered; later all stops 'from ONDS again'; 'ONDS' = Ondas",
+      "guess": "ONDS",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "71:07",
+      "caption_text": "Why IOWNQ? Um strongest stock in quantum sector",
+      "context": "Strongest quantum name, pulled back into 9 EMA with undercut-reclaim; stopped out again",
+      "guess": "IONQ",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "90:14",
+      "caption_text": "I got stopped out from like more than five positions today",
+      "context": "Aggregate recap of the day's stop-outs; not all individual tickers named",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "91:38",
+      "caption_text": "this candle from CROX is so ugly. And this gap down from Rampus is also disgusting",
+      "context": "Two ugly charts cited as change-of-character; 'CROX'=Crocs, 'Rampus' likely RAMP",
+      "guess": "RAMP",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "113:14",
+      "caption_text": "SKYT I'm not sure about this one and that this is a small cap and illiquid",
+      "context": "Small-cap illiquid name; weekly looks decent but chart does not correlate with semis/AI; 'SKYT' = SkyWater",
+      "guess": "SKYT",
+      "confidence": "unsure"
+    }
+  ]
+}

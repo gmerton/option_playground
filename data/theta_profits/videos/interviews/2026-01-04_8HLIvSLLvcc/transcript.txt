@@ -1,0 +1,263 @@
+[00:00] And I actually think that this is a stronger trade than a poor man's covered call. Just this is a lower risk than that and it has a better positive theta. Today we will talk about the directional
+
+[00:12] options strategy with both high delta and positive theta decay. The strategy is called ratio diagonal from Canada. Welcome to Levi Woods. Thanks John for having me.
+
+[00:29] you are back for the second time uh as an interview guest and let's start with the 42nd version of your strategy. Absolutely. This strategy is a ratio diagonal and I would compare it to like
+
+[00:43] a zebra trade or the purchasing of a long call. So sometimes when we're in a position where we're looking for directional opportunity, but we want to take a a limited risk to the downside
+
+[00:56] and have some upside potential, uh I might consider trades like that where I'm looking at either zebra positive delta of 100 uh or uh a long call position. And this one has positive
+
+[01:09] theta unlike both of those other trades that I mentioned. Tell us a little bit about yourself and your way into options trading. Sure. I've been trading since 1996 stocks and
+
+[01:21] I started trading options in 2014. So it's been 12 years of option trader as an option trader. Uh I retired in 2019 just before the pandemic when I was 39 and mostly because of my long-term
+
+[01:33] investment strategy. And then uh now I run a YouTube channel. So I make educational videos and I try to help people think about options in a different way. I'm primarily an options
+
+[01:44] trader. don't hold a huge portfolio of stocks. I use synthetic positions all the time if I want to go long. And setups like this are how I like to make money.
+
+[01:54] Where in Canada are you located? I'm in Colona, British Columbia, which is about four hours from the the Pacific Ocean. So, it's a beautiful wine country area and uh not not so great this time
+
+[02:05] of year. In the winter, we get a lot of cloud, but in the summer, it's absolutely gorgeous. We get very very long days and uh it's a beautiful place to live.
+
+[02:16] We will go into the details of your ratio diagonal but tell us first what are you trying to achieve with this strategy? Well, this strategy really is
+
+[02:26] directional. So when I am looking at a position I might have a stock chart in front of me and I see that a a stock has has hit a support level and I I think that it might rebound. It might go up.
+
+[02:38] uh I want to sometimes just take a directional trade. And of course, as an options trader, I want to limit my downside risk. So, I've looked at tons of strategies over the years. I
+
+[02:48] understand, you know, buying a call is a very, very simple way to get an upside potential and I have unlimited potential with that. Uh there are some other more advanced strategies like a zebra. I
+
+[03:00] don't know if your viewers are familiar with that, but that's selling an at the money call uh and then buying two in the money calls. The the ratio with that you what you're trying to do is get yourself
+
+[03:13] to a zero exttrinsic value paid. So you would whatever exttrinsic value you would collect from selling the call, you would use that exttrinsic value to buy the calls that are lower and in the
+
+[03:24] money. That position works really well. But in practicality, if the stock continues to to go down and doesn't stay at that support level, those zebras can actually cost quite a bit of money
+
+[03:35] because the slope below the the current price is actually steeper than 100 delta. So, you lose a little bit more uh in a in a down move even though you have lots of upside potential. So, what I
+
+[03:48] wanted to do was say, hey, I want that same sort of setup, but I want to just change like I want to alter the direction. So I don't care if I'm a full 100 delta. Maybe I want to be 70 delta
+
+[04:00] to the upside but have more cushion on the downside. And if I'm wrong and if we get into consolidation period then this position can make money. So let's start with the basic concepts
+
+[04:11] first. This is a ratio diagonal. Let's unpack each of the terms. What is a diagonal? Okay. So diagonal spreads are when we typically have strikes that aren't the
+
+[04:26] same strike. So they're set up where we have like a call that is being sold and then a call that is being purchased and it's a diagonal because those dates are different
+
+[04:39] and then you have a ratio. What is the ratio part of ratio diagonal? Yeah. So, similar to the zebra, which stands for zero exttrinsic back ratio spread, this is also a ratio spread, but
+
+[04:52] it's a a zebra. All of the all of the option contracts are on the same date. In this case, I'm using a ratio of contracts. So, there's a different number being sold than there
+
+[05:06] are being purchased. And then they're also at different dates. So, we have a different strikes. We have different expiry dates and we have different number of sold and bought
+
+[05:20] options. Correct. Okay, Levi, let's get into your [clears throat] ratio diagonal. Please describe this
+
+[05:28] strategy for us. All right. So, the the entry mechanics are pretty specific. So, I wanted to take a directional trade and this is a screenshot of a trade that I took on
+
+[05:38] November 4th and I was looking at the daily chart on Chewy and the stock was trading at 3349 and I wanted to put in a very specific trade. So, I'm going to show you what that trade was that I
+
+[05:51] placed that day. So, it's a there's two different expiration dates. So, this was entered on November 4th of last of this year. And the first contracts that I'm selling are just above the current price
+
+[06:05] of Chewy. And I'm selling two uh 34 calls. So these are slightly out of the money calls. And then what I'm doing is I'm buying three out of the money calls that are March, so March 20th of next
+
+[06:18] year. So these are quite longdated in this particular case. And I'm paying a debit to open this trade. And how would a trade like this profit? If we look at the profit profile on it,
+
+[06:30] it profits basically if the if the stock goes up. It's a directional trade. So the if we were to stay at the same price, it would make a little bit of money over time uh right around that $34
+
+[06:44] mark. And if it went up substantially, which is what I was hoping in this case, then I would be able to collect most of the delta to the upside. And we see that it is a clear very clearly a directional
+
+[06:58] trade and it will get into negative territory if the price goes down. Yeah, correct. What type of stocks is this strategy suited for?
+
+[07:06] Well, I'm looking for stocks that have a potential of doubling. So, if I am looking at Chewy, it's an online retailer and they could easily be purchased by Amazon. The stock could go
+
+[07:16] to 70 bucks and I have no idea when that could occur. I could buy a poor man's cover call on this position and have quite a bit of risk to the downside. And then I could actually have a losing
+
+[07:25] trade if the stock was to go up. And in this case, uh, I'm basically trading these like small lotto tickets and have a lot of potential to the upside while I'm making weekly income. The underlying
+
+[07:38] choice really is about uh liquidity because it is a a multi-option strategy. So I don't want to pick something that has massively wide spreads. But you can see here on Chewy the spreads on these
+
+[07:49] are quite wide. Like the the selling of those November 14th calls were more than 30 cent spread and then we have 40 cent spread on the on the March positions. Let's get into your entry mechanics more
+
+[08:02] more in detail. Uh what are the conditions that you actually want to start this trade? This trade is an at the money position. Uh, so I want the IV to be relatively
+
+[08:15] elevated for the short duration contracts. So that contract in this case I was only going out 10 days. So I'm looking at the the at the money IV and saying is that high enough to warrant
+
+[08:28] collecting enough data to decay for this. Is there enough upside risk is really what what I'm looking for and deltas and other criteria you're looking at?
+
+[08:39] Not really because the trade itself is positive delta. Like I'm looking at the the overall position. So in this case, this has a positive delta of 72. That's really what I'm trying to get. Like can
+
+[08:55] this is the synthetic position of buying 72 shares at today's price. The posit the delta of the position is overall what I'm looking for. So I want to have positive delta because I think there's
+
+[09:08] opportunity to the upside and I want this to be as as high as possible but I want to maintain positive theta decay. So that the combination of the two are what I'm looking for is net positive
+
+[09:20] delta and positive theta decay. And your DTE is uh typically around a couple of weeks ahead or do you do this on different time expirations? I'm basing it on exttrinsic value. So
+
+[09:33] because the in this particular case Chewy was trading underneath the 34 call then all of the value that I'm collecting for selling these calls is exttrinsic value. And for 10 days on a
+
+[09:46] $35 stock or $33 stock I'm collecting quite a bit like 72 cents. So that's giving me 2% a week in exttrinsic value decay. You sell the shorts typically two weeks ahead and then the longs when you
+
+[10:01] open the trade the first time they are maybe 100 days plus out. Yeah, they're long enough that it I can expect the move to happen, you know. So, in this case, I I didn't know when I
+
+[10:13] entered whether or not Chewy would bounce and that we would just go up in November or we might see it by the end of the year or we might see it in January. And I just want to keep that
+
+[10:24] potential on for the whole time. But I don't want a position like a long call that is just constantly uh decaying because of theta in my account. So this gives me an opportunity
+
+[10:36] to pay for that long call which is my lotto ticket. So we have covered how you enter these trades. But what about when you exit? When do you take profit for instance? And what is your what are your
+
+[10:50] rules for when you will take a loss? So I trade quite long-term like I have a robust tracking system and I typically have a 100 trades on at a time. So I am looking for opportunity that I don't
+
+[11:03] have to think about too much. I want to get into a trade like this. I know I have more than 100 days on those March contracts and I'm going to if the if the stock shoots up like I'm hoping, I can
+
+[11:14] take profits whenever I want. uh if the stock stays where it is, then I'm just going to continue to sell those calls each week. And as long as I'm collecting positive uh money, cash flow into my
+
+[11:28] account each week, I'm going to keep the trade on. And if the if it goes down, then it's no different than uh owning a long call. Like I I have a max loss on this trade of what the debit is that I
+
+[11:44] paid. I'm taking a defined amount of risk and I'm letting the opportunity play out. So I would typically be in this trade for a couple months. So that means that you are using rolling
+
+[11:56] as a management technique continuously. Yeah. Like all of my positions. That's kind of the the my bread and butter is like I don't I just want to log into my account and when the theta or when the
+
+[12:08] extrinsic value is gone in any of my short positions, I just roll them out to that next duration. I mean, it might be a week out, it may not. On a trade like this, it's directional, so I have to uh
+
+[12:18] pick a little bit as to whether or not I'm going to put the calls on every week or not. Sometimes I might just not play the short calls if the stock drops. But typically, you roll the whole
+
+[12:28] position, both the shorts and the longs. No, the the March positions don't change because they're that's part of the mechanics of this. I want to keep my uh my commissions low and I want to very
+
+[12:43] easy trades. So the only portion that gets rolled in in this trade is the short calls. Maybe you could show us how you do this management of the trade.
+
+[12:55] Yeah. So I have a robust spreadsheet that I've built that allows me to track this kind of thing. And what what it does is it tracks my positions. So on this is this trade has a reference chewy
+
+[13:07] November 4th. I entered it in November 4th. The stock was trading at 3301 and I I have call diagonals and effectively I have two call diagonals and I have one long call. That's what the total
+
+[13:20] position is. So my my short contracts were short calls 34 strike expiring November 14th and there's two of those. And then I have my option expiration date of March 20th for the long calls.
+
+[13:35] Those were the 35s. And I have three of those. To enter that trade, I paid a total debit of $915. And so that was that's my max uh that's my max entry. It's not actually my max
+
+[13:50] loss. And this is where my spreadsheet helps me quite a bit. It actually charts the the total max loss on that. So, this is the the bottom position that uh I'm looking at here. And I can I can scrub
+
+[14:03] along. So, if the stock dropped to whatever price, I would lose $915. I actually had a little bit more risk than that if the stock went up because, as we saw in that initial chart, there's
+
+[14:15] kind of a a small valley of death uh above the above in the profit chart that could occur uh if the stock was to move up. But, this is a directional play. What I'm wanting is that for the stock
+
+[14:26] to go up to, you know, $40 or $50 and for me to make some money. The way that this charting works is it actually shows I'm at a negative return because this is the absolute value and it doesn't
+
+[14:39] include any exttrinsic value at expiration. And I know that when we have these trades on, I have lots of exttrinsic value still in these March calls because we're close enough to add
+
+[14:50] the money. So, my chart I use in conjunction with my uh brokerages chart. This is absolute loss. I I know that I can't lose more than $1,14. And then
+
+[15:05] [clears throat] uh my brokerage shows it as a more positive uh display than this shows. And then you add each time you make a roll, you add this into your your
+
+[15:15] spreadsheet and it will show a new Yeah. So my sheet, what I'm trying to do is I'm just trying to track my credits. So my the next trade that I did on this was on November 14th. My short contracts
+
+[15:30] were going going to expire and the stock was trading at 33.84. It hadn't gone up enough. So they were going to expire worthless and I just rolled uh those November 14th contracts out to November
+
+[15:43] 21st at the same strike. So 34, I did two of those and I collected a dollar for that. So I collected $100 back from my initial debit of $ 915. And then I continued to do that each
+
+[15:56] week. So the next week uh on November 21st, stock was trading at 3374. Again, we had had a very just neutral move that the stock just stayed in its range in in a consol consolidation zone in a
+
+[16:12] consolidation zone. And I rolled from November 21st to November 28th again at the same strikes, these 34. And that week I collected $112 or $112 for that role. And these March contracts are are
+
+[16:26] just moving across the sheet. They're not contributing to any of the credit that's being received because the position is the same. This example is pretty smooth sailing.
+
+[16:36] What if it goes against you? Will you roll for a debit or what will you do? Well, if it goes down, then I may not put the calls on like right now. Actually I my today's adjustment that I
+
+[16:49] would have to make. So I have some positions that are already worthless right now. If we look at the December 14th uh I have rolled up which is one of the things that I one of the mechanics
+
+[17:00] that I like to do because I wanted to reduce my uh this little valley. I wanted to make it smaller. And it's one of the nice things about this strategy is that I have two contracts here. So,
+
+[17:11] if the if the stock was going up, which it which it was, if we look, it was above $34, uh it was above my strikes, uh I was able to collect a credit of 72 and roll one of these to in the money
+
+[17:25] and one of these to out of the money. So, it's quite flexible in that way. And then the next week, uh I did the same. I've always been collecting credit on this trade because it's been quite
+
+[17:36] static. And in which situations will you give up and just take the loss? As you can see, as long as I'm collecting credit, I mean, my risk at this point in time, so I'm now, how many
+
+[17:48] days have I been in this trade? Uh, I've been in this trade for uh 44 days. And my total risk at this point in time is $456. And I still have till March. What I'm
+
+[18:05] looking for is a breakout on Chewy. I don't know when it it may happen, but it could happen any time. It Chewy was trading above $40 before. So, if it goes up, then I'll exit this trade for a
+
+[18:17] profit. And if it doesn't, then I'll just keep churning along and keep collecting income and keep uh reducing your cost base. And at this rate, like the you know, I
+
+[18:27] could look at the calls for the I just looked at them this morning. Um, if I stay at the 34 and a half calls, I'm only getting like 10 cents. So, in that case, I won't uh I won't roll right now.
+
+[18:39] I'll wait for an update if it comes. And if it doesn't come, that's okay. I'm I'm these are small allocation plays. Like the total risk on this trade was $1,100 and I trade in a relatively large
+
+[18:52] account. So, from a percentage standpoint, if I lose all of this, it's nothing for the overall account. Levi, are there variations of this trade that you do or do you always do it as we have
+
+[19:03] described? If I'm worried about the downside risk on a particular stock, then sometimes I'll buy a long put and this just drags a little bit on the theta. It makes the
+
+[19:14] trade not produce as much money uh if if the move doesn't happen. So, I'll show you this example of that I did on COP, which at the time when I entered it, the the stock was trading at $86 and I
+
+[19:29] wanted it to move. And you can see that we actually got the move, this $93. Um, but the setup was slightly different in that I paid to have a long put in here as well, also out in March. And when the
+
+[19:43] the the ratio diagonal portion has worked very very well, that has moved up uh nicely uh and has made money. But unfortunately, I've lost some money on this long put because as the stock moved
+
+[19:57] up, the IV drops and that is not good for long puts. So, a lot of the value has has been sucked out of this March uh 80 put. The chart is nice. You know, you you look at it from a perspective of
+
+[20:09] like how much am I risking? We're basically putting ourselves in a position where we have a a long it's like a long strangle position but with positive theta decay. But even with this
+
+[20:22] move, I'm actually only about break even on this trade. So that is one of the woes about adding that long put. You know, this was an experimental trade where I I placed it
+
+[20:35] uh to see if the if it would function and the value I'm getting from rolling the short calls is not enough to offset the loss on the long put. In this case, let's discuss the risk with this
+
+[20:46] strategy. What is the worst that can happen? The worst case scenario is I lose the money that I paid for this the trade. That's the worst case. So it's a clearly
+
+[20:59] defined risk strategy at least. Yeah. I mean it's all calls. So because it's all calls, if the market goes down, then I lose whatever debit is paid.
+
+[21:12] I always ask my guests to place their strategy on a risk profile scale from one being very low risk and 10 being very high risk. And you are free to define those numbers as you see fit.
+
+[21:27] Where would you put this strategy? I would put this as fairly low risk because it is defined risk and because it has positive theta decay. I would put it like at a four uh on a risk scale.
+
+[21:39] You know, very little management is required and the the strikes can be placed out like the diagonals can be adjusted quite easily because of the time frame and the number of them.
+
+[21:51] Having it as a ratio really helps this trade. I'm sure everyone is now very curious about your results uh with this strategy. How do you measure your results and what have they been for the
+
+[22:03] period that you have been trading this? Well, the results are based on total risk capital. So, if you look at a trade like this, $1,14 or yeah, $114,
+
+[22:15] then I've this particular trade if I was closing today is worth 161. So, it's a 14% return on capital in 44 days. and annualized 120%. They're so specific. So I don't trade these trades are very
+
+[22:29] specific entry. I don't trade a lot of them. And this is part of why I wanted to show you as part of an interview. It's like when those opportunities arise and when we have a a strong conviction
+
+[22:40] to one side, uh there are plays that we can make that uh don't actually have to have the move and they can still make us a little bit of money. So, I would say over the the course of the last six
+
+[22:55] months, I've only traded about six of these. And the ones that I have played without the put have been positive, and the ones that uh have been uh with the put have been a little bit of a drag.
+
+[23:12] They they have been uh negative return. I haven't had any that have blown out, but again, this is from a totally from a directional standpoint. like I'm looking at very specific entry.
+
+[23:23] So this is not the strategy for me who have no edge in guessing the direction. You know it's it's a interesting thing because it actually is a very omniirectional trade. I mean the
+
+[23:35] probability of profit is quite high. So for people that are like selling poor man's covered calls which is also a directional trade uh you know the the the upside potential is not there
+
+[23:47] anymore. And I actually think that this is a stronger trade than a poor man's covered call because we get into a position where if the stock goes up, if we have strong conviction and the the
+
+[23:59] stock goes up, then it can actually make quite a bit of money. That's generally the same thing that people are doing with poor man's cover calls. They're buying a 90 delta and they expect the
+
+[24:08] stock to go up. Just this is a lower risk than that and it has a better positive theta. So, let's sum up. Who is this strategy suited for? Um, what are the one to two or three most important
+
+[24:24] takeaways you want for our audience? Well, I think this is a strategy for people that want to play strategy similar to a poor man's covered call where they're buying an in the money
+
+[24:37] call and then they're selling a call against it. I think that this is a very natural progression to that. I think it's a much stronger trade because it acts more like a married put whereas a
+
+[24:47] poor man's covered call acts more like a synthetic stock position. So the the overall risk on this trade is much much smaller and it has much greater potential. So anybody considering a poor
+
+[25:01] man's covered call when they're looking at a stock that they think is going to go up, I believe this is a much stronger trade. What are the two most important
+
+[25:09] takeaways that the audience should remember? Well, of course, liquidity is the the fact that we're trading and we're having to roll those positions as part of the
+
+[25:19] mechanics means that we're buying out a position and selling a position at the same time. So, I I want to look for stocks that have a high potential for breakout. Stocks like Palunteer or Chewy
+
+[25:32] would be a much better choice than stocks that typically trade sideways. Levi, I know that you trade a number of different strategies. How does this one fit in with the rest of your trading
+
+[25:45] strategies? Yeah, this one would fit like if I was in a position where I might already have a traditional like put ratio spread on like a 111 or something that was below
+
+[25:59] uh the the current price and I wanted some upside potential, then that's when I would add to this. So, I would typically layer this on as part of my overall strategy. And because I don't
+
+[26:09] buy stocks, this is just giving me a position where I could make money when the opportunity arises. What would be good resources to learn more both about this way of trading, but
+
+[26:21] also what have inspired you as an options trader? Well, I think the biggest resource is to go and actually follow people like myself. Like I I trade live with people
+
+[26:32] on Tuesdays for free on YouTube uh at 11 Pacific Standard Time and I'm always open to uh to questions about how I might adjust these trades and things like this. I set up a ton of diagonals
+
+[26:47] and ratio spreads and there's so nuanced that we have to do it on a on a uh live platform because there's so many different mechanics going on when we get into diagonalized positions because IV
+
+[27:00] has a role. Uh and then obviously the the risk is what we're looking for. We're looking for how much is that that max risk. Lemway, thank you very much for sharing this strategy with us and
+
+[27:13] for sharing your knowledge and experience. It was a pleasure to have you here. Yeah, thanks John. This is wonderful.

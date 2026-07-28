@@ -1,0 +1,168 @@
+{
+  "video_id": "px4qapfqQ9E",
+  "date": "2026-04-21",
+  "title": "$CAR absolute cinema | 21 Apr 2026",
+  "observed_trades": [
+    {
+      "date": "2026-04-21",
+      "ticker": "CAR",
+      "direction": "short",
+      "action": "entry",
+      "setup": "Avis Budget parabolic short; only trade idea of the day. Wanted a huge volume blow-off candle (5-min >100M dollar volume) before shorting; entered small after a 300M dollar-volume candle closed below 9 EMA",
+      "entry_basis": "candle high as stop reference after a huge-volume 1-min/5-min candle closing below the 9 EMA",
+      "stop": "above the entry candle high",
+      "source": "2026-04-21_px4qapfqQ9E@30:35",
+      "confidence": "stated",
+      "notes": "Only ~15% position (couldn't build size). Added a little. CAR=Avis Budget per title and 'car' references",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-04-21",
+      "ticker": "CAR",
+      "direction": "short",
+      "action": "exit",
+      "setup": "Accidentally closed the short via misclick on the buy button while joking about confusing the algos",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-04-21_px4qapfqQ9E@80:54",
+      "confidence": "stated",
+      "notes": "'I misclicked the buy button ... I just closed the short here.' He states the trade ended with a 0.4% loss",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-04-21",
+      "ticker": "CAR",
+      "direction": "short",
+      "action": "reentry",
+      "setup": "Re-shorted CAR after the misclick exit; got halted then stopped out again",
+      "entry_basis": "",
+      "stop": "stopped out",
+      "source": "2026-04-21_px4qapfqQ9E@84:09",
+      "confidence": "stated",
+      "notes": "'I'm just going to try that again' then 'I got stopped out again'; tries 'last time' at 107:19. Got lucky with small size",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-04-21",
+      "ticker": "NET",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Entered NET on a pullback to the EMAs (all EMAs clustered together); referenced as a current holding",
+      "entry_basis": "pullback to the clustered EMAs / 9 EMA",
+      "stop": "",
+      "source": "2026-04-21_px4qapfqQ9E@06:57",
+      "confidence": "stated",
+      "notes": "'yesterday I entered Net on a pullback to the 9 EMA actually all the EMAs are a cluster together'. NET=Cloudflare",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2026-04-21",
+      "ticker": "COIN",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Entered COIN on Thursday (chased a bit on a 5-min candle); raised stop to break even",
+      "entry_basis": "chased on a 5-minute candle",
+      "stop": "raised to break even",
+      "source": "2026-04-21_px4qapfqQ9E@53:20",
+      "confidence": "stated",
+      "notes": "'on uh Thursday I also I I entered coin ... maybe on this 5-minute candle ... Now I raised my stop to break even'",
+      "fill_timing": "thursday"
+    },
+    {
+      "date": "2026-04-21",
+      "ticker": "BMNR",
+      "direction": "long",
+      "action": "exit",
+      "setup": "Closed BMNR on Friday; it started lagging other crypto names and market looked extended/due a pullback",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-04-21_px4qapfqQ9E@53:20",
+      "confidence": "stated",
+      "notes": "'why I closed BMNR I closed it on the on Friday ... BMNR is kind of starting to lag ... so I just sold my BMNR'. BMNR=Bitmine",
+      "fill_timing": "friday"
+    }
+  ],
+  "principles": [
+    {
+      "category": "mindset",
+      "text": "When you start doubting your entry and feel low conviction, that often means the trade 'is getting there' (near a top/turning point); if you can't get the parabolic volume signal you want, it's okay to skip the trade.",
+      "timestamp": "12:24"
+    },
+    {
+      "category": "entries",
+      "text": "For a parabolic short he wants a huge dollar-volume blow-off candle on a lower time frame (e.g. 5-min >100M dollar volume, or a 300M+ candle that closes below the 9 EMA) before entering; size is naturally tiny when the spread is wide.",
+      "timestamp": "11:39"
+    },
+    {
+      "category": "risk",
+      "text": "Getting filled with a small size on a wild parabolic was lucky: a 20-25% position would have been brutal; small size on extreme-volatility names protects you when stops can't get through.",
+      "timestamp": "66:05"
+    },
+    {
+      "category": "mindset",
+      "text": "Never go long a euphoric parabolic just because it might run further - when you get the urge to chase the top, do the opposite or don't trade it; you'll get destroyed on the second or third attempt.",
+      "timestamp": "68:47"
+    },
+    {
+      "category": "exits",
+      "text": "Plan profit targets in advance for a short: first target the hourly 50 EMA, then the daily 9 EMA (ideally undercut a bit) before considering more.",
+      "timestamp": "38:19"
+    },
+    {
+      "category": "macro",
+      "text": "Markets revert to ~8-10% annual returns long term but go through short-term variance: a 20% up move can be followed by a 20% down move; we haven't had a >50% correction in ~20 years and one will eventually come.",
+      "timestamp": "45:28"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "07:39",
+      "caption_text": "Circle yesterday is a really good pullback buy entry. Slightly fall below the gap ... reclaim",
+      "context": "A great prior-day pullback buy near the 21 EMA / unfilled gap; 'Circle' = Circle Internet (CRCL)",
+      "guess": "CRCL",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "09:00",
+      "caption_text": "O N D S yesterday is also a really great pullback buy entry on the hourly chart. Right at the 50 and 150 EMA",
+      "context": "A great hourly pullback-buy setup the prior day; ONDS=Ondas Holdings (drone)",
+      "guess": "ONDS",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "10:51",
+      "caption_text": "FTS device is also wonderful. This entry is wonderful. Also on the gap level",
+      "context": "Another wonderful pullback-buy at the prior gap low / 50 EMA",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "19:47",
+      "caption_text": "PE is is breaking out. It's trying It's breaking out from the previous high",
+      "context": "A name breaking out from previous high that 'doesn't belong to me'",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "20:08",
+      "caption_text": "SMT is actually forming a pretty nice black range above the 9 EMA",
+      "context": "A name forming a tight (flag) range above the 9 EMA; 'black range' likely garble for 'flag/tight range'",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "53:20",
+      "caption_text": "why I closed BMNR I closed it on Friday",
+      "context": "Closed his Bitmine long Friday as it lagged other crypto names",
+      "guess": "BMNR",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "55:36",
+      "caption_text": "How much did GME go up back in 2020? More than 2,000% ... GME is actually is starting to trend up recently",
+      "context": "Comparing CAR squeeze to the GME short squeeze; GME=GameStop",
+      "guess": "GME",
+      "confidence": "likely"
+    }
+  ]
+}

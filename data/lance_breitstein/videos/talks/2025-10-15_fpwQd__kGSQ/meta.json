@@ -1,0 +1,19 @@
+{
+  "video_id": "fpwQd__kGSQ",
+  "url": "https://www.youtube.com/watch?v=fpwQd__kGSQ",
+  "title": "This Trading Concept Made Me One of the Best (Bobblehead Method Explained)",
+  "channel": "TheOneLanceB",
+  "channel_id": "UCzksXiC-Ju-DTIZmMiaOVfQ",
+  "stream_date": "2025-10-15",
+  "duration": "8:57",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

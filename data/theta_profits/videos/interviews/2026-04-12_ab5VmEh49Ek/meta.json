@@ -1,0 +1,19 @@
+{
+  "video_id": "ab5VmEh49Ek",
+  "url": "https://www.youtube.com/watch?v=ab5VmEh49Ek",
+  "title": "How To Control 100 Shares With Less Money (ZEBRA Strategy Explained)",
+  "channel": "Theta Profits",
+  "channel_id": "UCzGARfberQ8nRRbsjK90BHg",
+  "stream_date": "2026-04-12",
+  "duration": "33:04",
+  "summary": "Fauzia Timberlake (Las Vegas engineer/ex-advisor, ~12 yrs, tastytrade-taught, coaches traders) walks through the ZEBRA (Zero Extrinsic Back Ratio) — a public tastytrade stock-replacement structure, not her own: buy 2 ITM calls / sell 1 ATM call for a ~100-delta long with near-zero net extrinsic, at a fraction of the cost of 100 shares (OKLO example: $1,685 vs ~$4,800). It is honestly presented as purely directional with no structural edge — she says results depend entirely on your direction call — and gives zero win rate, ROC, or track record. Defined max loss = debit, but it is leveraged 1:1 directional where a 100% loss of the debit is routine on a mere adverse drift; the 'ratchet' adjustment is loss-realization, not edge. Refreshingly low-hype and a correct break-even comparison vs synthetic/2-ATM-call alternatives, but no independent evidence and nothing strategy-specific to bank. Write-up: strategies/zebra_back_ratio.md (conviction 2/5).",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

@@ -1,0 +1,19 @@
+{
+  "video_id": "YDDP_Wswt_Q",
+  "url": "https://www.youtube.com/watch?v=YDDP_Wswt_Q",
+  "title": "Short the bounce | 15 Dec 2025",
+  "channel": "martinlukkt",
+  "channel_id": "UCB6jWJJvO_sWZ2PwgmMcxCw",
+  "stream_date": "2025-12-16",
+  "duration": "1:23:42",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

@@ -1,0 +1,266 @@
+{
+  "video_id": "Z2PyXDLCRaM",
+  "date": "2026-06-23",
+  "title": "Don't panic | 23 Jun 2026",
+  "observed_trades": [
+    {
+      "date": "2026-06-23",
+      "ticker": "CRWD",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Leader gapping into support; not selling at the open unless stopped out. Flags CRWD as the position most at risk of being stopped.",
+      "entry_basis": "",
+      "stop": "Will let the pre-set stop decide",
+      "source": "2026-06-23_Z2PyXDLCRaM@07:19",
+      "confidence": "stated",
+      "notes": "Ticker garbled 'crowd' -> CRWD. He says he won't reduce exposure unless stopped out 'maybe like crowd'. Existing position.",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-06-23",
+      "ticker": "IONQ",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Lead quantum name, RS on the day; got shaken out on the gap-down.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-06-23_Z2PyXDLCRaM@92:50",
+      "confidence": "stated",
+      "notes": "Ticker garbled 'I want Q' -> IONQ (interpreted; see ambiguous_tickers). 'I got stopped out from I want Q.'",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-06-23",
+      "ticker": "IONQ",
+      "direction": "long",
+      "action": "reentry",
+      "setup": "Re-entered the lead quantum name after being stopped out; weekly chart constructive, near weekly 9 EMA, still within ~8-month base.",
+      "entry_basis": "Support at 60-min EMAs / 15-min candle breakout or undercut-and-reclaim",
+      "stop": "",
+      "source": "2026-06-23_Z2PyXDLCRaM@118:54",
+      "confidence": "stated",
+      "notes": "Ticker garbled 'I went Q' -> IONQ (interpreted; see ambiguous_tickers). 'just reentered I went Q. And I think I'm not going to do much later in the day.'",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-06-23",
+      "ticker": "QBTS",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Quantum cluster name already held; sticking with it for quantum exposure.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-06-23_Z2PyXDLCRaM@96:01",
+      "confidence": "stated",
+      "notes": "'As I've already got QBTS...' Confirms existing position.",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-06-23",
+      "ticker": "MRVL",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Holding through a deep-red day; lets the stock guide the trade rather than getting shaken out.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-06-23_Z2PyXDLCRaM@83:58",
+      "confidence": "stated",
+      "notes": "Ticker garbled 'Marvell' -> MRVL. Viewer confirms he is 'still holding Corning and Marvell, which you were in deep red.'",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-06-23",
+      "ticker": "GLW",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Holding through a deep-red day; sit tight, let the stock guide the trade.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-06-23_Z2PyXDLCRaM@83:58",
+      "confidence": "stated",
+      "notes": "Ticker garbled 'Corning' -> GLW. Same viewer note about holding Corning in deep red.",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-06-23",
+      "ticker": "?",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Breakout-and-retest into previous highs around the 960 level; finding support, likes the action. Not trading it today, holding.",
+      "entry_basis": "Entered yesterday; 960 is the important previous-highs support level",
+      "stop": "Defined stop",
+      "source": "2026-06-23_Z2PyXDLCRaM@41:34",
+      "confidence": "stated",
+      "notes": "Ticker garbled 'T E A T' / 'TEIA' unresolved -> set to '?' (see ambiguous_tickers). 'If I haven't entered TEIA yesterday...' implies he entered it yesterday.",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2026-06-23",
+      "ticker": "INTC",
+      "direction": "long",
+      "action": "reentry",
+      "setup": "Strongest name in the strongest sector; gap up above daily EMA then fade into 9/21 EMA, bounced off tightly-clustered 60-min EMAs.",
+      "entry_basis": "Re-entered on the 15-min candle after the morning low was taken out",
+      "stop": "",
+      "source": "2026-06-23_Z2PyXDLCRaM@46:37",
+      "confidence": "stated",
+      "notes": "Recap of his own June 11 INTC trade (viewer question): stopped out on ORB dip below morning low, then re-entered later that day. Historical recap, not a same-day trade.",
+      "fill_timing": "2026-06-11"
+    },
+    {
+      "date": "2026-06-23",
+      "ticker": "?",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Recent IPO basing; on watchlist for a week. Pullback buy in the first 5-15 minutes.",
+      "entry_basis": "Tried it yesterday; describes a pullback buy on the candle as a solid buy",
+      "stop": "",
+      "source": "2026-06-23_Z2PyXDLCRaM@29:17",
+      "confidence": "inferred",
+      "notes": "Ticker 'CPRS' unresolved -> set to '?' (see ambiguous_tickers). 'I have been having the CPRS on my watches for the past week. I tried it yesterday...' Fill ambiguous. The 'around 231' is a hypothetical buy level he describes, not a stated fill, so stripped.",
+      "fill_timing": "yesterday"
+    }
+  ],
+  "principles": [
+    {
+      "category": "posture",
+      "text": "On a big gap down with no specific catastrophic news, don't panic and don't sell at the open; calm down and evaluate where leaders are relative to their support levels first.",
+      "timestamp": "06:20"
+    },
+    {
+      "category": "posture",
+      "text": "Leaders gapping back into a rising 9 EMA or prior consolidation range is healthy, not bearish; pullbacks let extended names cool off and set up the next leg.",
+      "timestamp": "20:59"
+    },
+    {
+      "category": "mindset",
+      "text": "In an uptrend it is better to be too bullish than too bearish; trying to top-tick or pick the top of the move isn't worth it.",
+      "timestamp": "23:02"
+    },
+    {
+      "category": "risk",
+      "text": "Risk roughly 0.3% of account value per position via a defined stop, and let the stops decide the exits.",
+      "timestamp": "38:38"
+    },
+    {
+      "category": "entries",
+      "text": "Buy near the weekly/daily EMAs while a stock is still within its base/range; fast markets give less consolidation so don't miss the breakout waiting for a perfect pullback.",
+      "timestamp": "103:36"
+    },
+    {
+      "category": "exits",
+      "text": "Getting stopped out in the first minute or two after the open is acceptable; if a name gaps into a support level near your stop you can simply re-buy it when you like the action.",
+      "timestamp": "54:30"
+    },
+    {
+      "category": "mindset",
+      "text": "Learn to sit tight and let the stock guide the trade; experiencing repeated shakeouts that then find support teaches you to hold instead of leaving the trade to the market.",
+      "timestamp": "84:50"
+    },
+    {
+      "category": "macro",
+      "text": "Markets usually give warning signs and a choppy digestion period before a real top/crack; trust the trend and momentum until something strange shows up.",
+      "timestamp": "88:06"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "07:19",
+      "caption_text": "unless I got stopped out maybe like crowd",
+      "context": "Names it as the position most likely to be stopped out on the gap down.",
+      "guess": "CRWD",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "39:37",
+      "caption_text": "you select QQQ and I want Q",
+      "context": "Lead quantum name he is buying on a breakout; later stopped and re-entered.",
+      "guess": "IONQ",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "92:50",
+      "caption_text": "I got stopped out from I want Q",
+      "context": "Got stopped out of the lead quantum name; looking for re-entry.",
+      "guess": "IONQ",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "99:24",
+      "caption_text": "I'm going to stick with O and Q ... stick with I and Q",
+      "context": "Choosing to stay in the larger-cap lead quantum name over smaller quantum names.",
+      "guess": "IONQ",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "95:45",
+      "caption_text": "our GTI is is a little bit stronger than I I went Q intraday",
+      "context": "Smaller-cap quantum name, stronger intraday due to RS on IWM/Russell.",
+      "guess": "RGTI",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "99:41",
+      "caption_text": "RGTI or the another one like INFQ. INFQ is actually breaking out",
+      "context": "Cited as a quantum name that already broke out; he passes on it.",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "24:54",
+      "caption_text": "Iron is finally supported at this ascending trend line",
+      "context": "Supported at ascending trendline, still looking good on the weekly.",
+      "guess": "IREN",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "23:14",
+      "caption_text": "FTNT looks really nice. The software names are picking up some strength",
+      "context": "Software names gaining strength; cites it favorably.",
+      "guess": "FTNT",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "40:11",
+      "caption_text": "This T E A T is an entry from here ... 960 is level is really important for TEIA",
+      "context": "High-priced name; breakout-and-retest into previous highs around the 960 level; entered yesterday. Ticker unresolved.",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "29:17",
+      "caption_text": "I have been having the CPRS on my watches for the past week",
+      "context": "Recent IPO basing; on watchlist a week; tried it yesterday. Ticker unresolved.",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "57:27",
+      "caption_text": "If you bought food on the one-minute breakout, it works",
+      "context": "Cited as a 1-minute opening-range breakout that worked on the gap-down day.",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "57:36",
+      "caption_text": "SNTK failed",
+      "context": "Cited as a 1-minute opening-range breakout that failed.",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "57:49",
+      "caption_text": "Ntap yes is a little bit too wide, but it works. Sci theory, it works",
+      "context": "ORB walkthrough of watchlist names; 'Ntap' likely NTAP, 'Sci theory' unclear.",
+      "guess": "NTAP",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "58:13",
+      "caption_text": "OWINQ works. QBTS works",
+      "context": "Quantum-cluster ORB walkthrough; 'OWINQ'/'owning Q' unclear quantum name.",
+      "guess": "?",
+      "confidence": "unsure"
+    }
+  ]
+}

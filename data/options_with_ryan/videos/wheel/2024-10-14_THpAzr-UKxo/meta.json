@@ -1,0 +1,19 @@
+{
+  "video_id": "THpAzr-UKxo",
+  "url": "https://www.youtube.com/watch?v=THpAzr-UKxo",
+  "title": "The Wheel Strategy 101 | My Full-Time Option Income Plan Explained",
+  "channel": "Options With Ryan",
+  "channel_id": "UCQnIfbieTyf53CZBiyLAkjg",
+  "stream_date": "2024-10-14",
+  "duration": "27:01",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

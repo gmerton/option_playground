@@ -1,0 +1,132 @@
+{
+  "video_id": "SRbfFeUeWeY",
+  "date": "2026-04-06",
+  "title": "Cryptos quietly setting up | 6 Apr 2026",
+  "observed_trades": [
+    {
+      "date": "2026-04-06",
+      "ticker": "GLW",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Corning long planned days ahead; opened at anchored VWAP from swing high on the 21 EMA and unfilled gap, found support and shot higher.",
+      "entry_basis": "5-minute candle breakout intraday after support held at anchored VWAP / 21 EMA",
+      "stop": "",
+      "source": "2026-04-06_SRbfFeUeWeY@36:06",
+      "confidence": "stated",
+      "notes": "Caption 'Corning'/'Cornings' = GLW; one of three new positions (with FSLY and DRIP). He says he planned the trade days earlier and took it Thursday (didn't take Wednesday's breakout, waited for the Thursday pullback).",
+      "fill_timing": "thursday"
+    },
+    {
+      "date": "2026-04-06",
+      "ticker": "FSLY",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Fastly long entered after the Corning trade, alongside the indices breaking out from high of day; intraday relative strength though not an ideal structure.",
+      "entry_basis": "Entered with QQQ breaking out from high of day; rides 9 EMA at 45 degrees",
+      "stop": "",
+      "source": "2026-04-06_SRbfFeUeWeY@36:37",
+      "confidence": "stated",
+      "notes": "Fastly = FSLY; one of three new positions entered Thursday (after the Corning trade, alongside the indices breaking out from high of day). He notes it nearly stopped him out intraday.",
+      "fill_timing": "thursday"
+    },
+    {
+      "date": "2026-04-06",
+      "ticker": "DRIP",
+      "direction": "long",
+      "action": "entry",
+      "setup": "XOP short (via DRIP inverse ETF) as a planned trade; shorting the gap-up into declining anchored VWAP on a possible oil climax top.",
+      "entry_basis": "Gap-up into declining anchored VWAP on the oil & gas ETF",
+      "stop": "",
+      "source": "2026-04-06_SRbfFeUeWeY@30:43",
+      "confidence": "stated",
+      "notes": "Caption 'XOP shorts'/'DRIP' = DRIP, the -2x oil & gas ETF; one of three new positions, all planned days earlier and taken Thursday.",
+      "fill_timing": "thursday"
+    },
+    {
+      "date": "2026-04-06",
+      "ticker": "?",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Three new crypto positions (~25-27% each) entered on tight stops after Bitcoin/Ethereum held above the 9 and 21 EMA with a Sunday shakeout-and-reclaim; ~0.3% risk per trade.",
+      "entry_basis": "Close above / hold of 9 and 21 EMA with shakeout-and-reclaim",
+      "stop": "Tight (~0.3% account risk each)",
+      "source": "2026-04-06_SRbfFeUeWeY@19:44",
+      "confidence": "stated",
+      "notes": "He says 'three new crypto positions are around 25% each'; specific tickers NOT named on this clip (crypto-proxy names, on later streams these are COIN/MSTR/BMNR). Ticker set to '?'; flagged in ambiguous_tickers.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-04-06",
+      "ticker": "FSLY",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Looks like he'll get stopped out on Fastly intraday.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-04-06_SRbfFeUeWeY@22:05",
+      "confidence": "stated",
+      "notes": "'Looks like I'm going to get stopped out on Fastly.' Same FSLY position (entered Thursday), being managed today.",
+      "fill_timing": "thursday"
+    },
+    {
+      "date": "2026-04-06",
+      "ticker": "AAOI",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Stopped out on AAOI; tried a tempting 1-minute entry with high chance of getting stopped; hoping for a pullback to the daily 9 EMA to re-enter.",
+      "entry_basis": "1-minute entry (high stop-out probability)",
+      "stop": "",
+      "source": "2026-04-06_SRbfFeUeWeY@34:06",
+      "confidence": "stated",
+      "notes": "Caption 'AOI'/'AEOI'/'AAOI' = AAOI (Applied Optoelectronics); stopped out, watching for re-entry. He tried a tempting 1-minute entry this session.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-04-06",
+      "ticker": "DOW",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Holding Dow on the weekly chart; raised stop last week to the week low slightly below the weekly 9 EMA; no profit taken yet.",
+      "entry_basis": "",
+      "stop": "Week low slightly below weekly 9 EMA",
+      "source": "2026-04-06_SRbfFeUeWeY@96:01",
+      "confidence": "stated",
+      "notes": "Caption 'Dow' = DOW (Dow Inc., a weekly position he trades), not the index. He explicitly manages its stop (raised the stop last week).",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-04-06",
+      "ticker": "MRVL",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Holding Marvell (entered 5-minute breakout, stop at break even); will cut if it starts closing below the 9 EMA rather than wait for the stop to hit.",
+      "entry_basis": "5-minute candle breakout intraday",
+      "stop": "Break even; cut on close below 9 EMA",
+      "source": "2026-04-06_SRbfFeUeWeY@105:55",
+      "confidence": "stated",
+      "notes": "Caption 'Marvel'/'Marfo' = MRVL; entry at 5-min breakout intraday, stop raised to break even. Existing held position (he calls Dell and Marvell his existing positions); entry date not clearly stated.",
+      "fill_timing": ""
+    }
+  ],
+  "principles": [
+    { "category": "entries", "text": "Watch quietly-setting-up groups nobody is bullish on (e.g. crypto when everyone talks oil/inflation/war); a shakeout-and-reclaim that closes back above the 9/21 EMA is a strong sign of strength.", "timestamp": "10:14" },
+    { "category": "entries", "text": "After leaders close above the EMAs, get in within the first few days of the new uptrend; they tend to snap up so fast you won't get a later entry.", "timestamp": "09:01" },
+    { "category": "risk", "text": "Keep risk per trade under ~1% (often 0.3-0.5%) so even a gap-down that doubles or triples your intended loss stays manageable (~1-1.5%).", "timestamp": "85:36" },
+    { "category": "entries", "text": "Trade liquid stocks (above ~50M daily dollar volume); they shake out less, move cleaner, and have better odds of becoming true leaders. Avoid focusing on small/micro caps unless you have a special edge.", "timestamp": "53:36" },
+    { "category": "exits", "text": "Selling some into strength is never wrong and can give you confidence to hold a larger position through later pullbacks without being shaken out; but early in a new uptrend favor holding for a longer move.", "timestamp": "62:52" },
+    { "category": "mindset", "text": "Once in a trade, accept the outcome and move on; the more you try to control the outcome, the harder trading becomes.", "timestamp": "93:14" },
+    { "category": "posture", "text": "Let your own positions tell you the regime: when existing longs (e.g. Dell, Marvell) build higher lows during a correction, that positive feedback signals the long side has potential.", "timestamp": "34:33" }
+  ],
+  "ambiguous_tickers": [
+    { "timestamp": "19:44", "caption_text": "the three new crypto positions are around 25% each", "context": "Three new crypto-proxy longs entered on tight stops after the Sunday shakeout-and-reclaim above the 9/21 EMA; specific tickers not named on this stream (on later streams these are COIN/MSTR/BMNR).", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "11:50", "caption_text": "AOY Nvidia Auto, I think SNTK", "context": "Key individual long candidates he wants to buy on a pullback into the 9 EMA; 'Auto'/'AOY' he describes as an optics stock.", "guess": "AAOI", "confidence": "likely" },
+    { "timestamp": "11:50", "caption_text": "SNTK too", "context": "Listed among key long candidates with AAOI and NVDA.", "guess": "SNDK", "confidence": "likely" },
+    { "timestamp": "72:01", "caption_text": "This SOLS is also looking pretty decent", "context": "A name on the 21 EMA / previous gap / anchored VWAP swing high, first-day pullback a great entry.", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "73:17", "caption_text": "A H has definitely one of the craziest stocks right now", "context": "A fast-moving name; opening-range-high or 5-minute breakout okay but moving too fast, intraday below 9/21 EMA.", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "70:49", "caption_text": "Almost building a decent flag above the 90 MA ... ARM would be one of the key stocks", "context": "Flag above the 90 MA possibly setting up a breakout of a two-year base; he calls it a key focus name.", "guess": "ARM", "confidence": "likely" },
+    { "timestamp": "78:56", "caption_text": "last year this CIN since this earnings day", "context": "A name where it was hard to get a breakout entry after the earnings day (used as a teaching example).", "guess": "CIEN", "confidence": "likely" },
+    { "timestamp": "103:38", "caption_text": "FPS is the next stock that I would try to get in", "context": "A weekly-chart name with a nice shakeout candle now back above all EMAs, ready to go.", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "103:38", "caption_text": "AMD first day candle is is a change of character", "context": "AMD weekly close above all EMAs at an unfilled gap facing resistance.", "guess": "AMD", "confidence": "likely" },
+    { "timestamp": "68:08", "caption_text": "F R O I think on Tuesday this one this pullback", "context": "A war/oil-related sector name with a decent pullback entry that he avoids because it contradicts his long-side market view.", "guess": "FRO", "confidence": "likely" }
+  ]
+}

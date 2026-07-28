@@ -1,0 +1,19 @@
+{
+  "video_id": "Oac266pBZMY",
+  "url": "https://www.youtube.com/watch?v=Oac266pBZMY",
+  "title": "EP71 | 24 Jul 2026",
+  "channel": "martinlukkt",
+  "channel_id": "UCB6jWJJvO_sWZ2PwgmMcxCw",
+  "stream_date": "2026-07-24",
+  "duration": "1:57:57",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

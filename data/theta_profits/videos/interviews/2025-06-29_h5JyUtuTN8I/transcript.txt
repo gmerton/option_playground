@@ -1,0 +1,275 @@
+[00:00] I really like the Jade Lizard because it gives you a pretty far break even and you can eliminate the risk to one side, usually the upside for me. Today we will dig into a high probability options
+
+[00:11] strategy with no risk to the upside. We're talking about Jade Lizard and its sibling Big Lizard from New Hampshire. Welcome Ross Young. Hi John. Good to be with you again. Ross, one of your
+
+[00:26] favorite strategies is big lizard. Why is that? I really like the Jade Lizard because it gives you a pretty far break even and you can eliminate the risk to one side, usually the upside for me and
+
+[00:38] yeah, that makes it a very interesting trade and we will dig into all the details of how you trade specific strategy and also big lizard which is a variation of the same strategy. But tell
+
+[00:51] us first how would you characterize yourself as an option strate trader? I think I'm especially nowadays I'm getting a little a little older, more cautious. And that's what I'd like about
+
+[01:02] the lizards is they give me further break evens, eliminate risk to one side, and I can get a little bit more comfortable there. I guess after our last conversation, I realize I'm pretty
+
+[01:11] diversified because I do a lot of different things as a trader, but I'm trying to manage risk and reward all the time. So, I've got some caution. So, let's dig into it. What exactly is a
+
+[01:23] jade lizard? Well, the Jay Lizard trades, and these are these are all going off my the my head here. I'm not a professional options instructor or anything, but I'll
+
+[01:32] tell you from my experience. It was a trade created by Liz and Jenny on the Tasty Live Network. And the Jade Lizard is basically the short put with an added call spread on top. And
+
+[01:44] the call spread has got to be smaller than the total credit. and and that means you're going to eliminate the risk to the upside. If it goes through your call spread, you will make a very small
+
+[01:56] profit, but if it stays anywhere between the put and the call spread, you'll make your full profit if you took it all the way to expiration. All right, so maybe we should do an example. We have one
+
+[02:06] here with GDX. What do we see? That sounds good. Yeah, GDX gold miners ETF. It's pretty liquid and you do need you do need good liquidity to trade these things because you've got three legs.
+
+[02:19] Now, whenever I'm setting up one of these, the the thing I start with is the put. And it's not it's not delta based really. It's credit based. So, I'm looking at I'm looking for credit around
+
+[02:31] 70 cents or a little bit better than 70 cents. And that sets my sets my short put. And in this case here, we are receiving 79 cents with strike 49. Perfect. And then our current price is
+
+[02:46] 53. store a few dollars below that nice spot. And then I'm looking for a credit spread above this and I got to keep that narrow. So in this case, we're going to keep it to a dollar wide. And the credit
+
+[02:58] spread is probably paying 20 something cents here. Receiving 125 on the one with soil and then we are paying 103 for the long. So around 25 cents. Yes. Right. And the two of those combined,
+
+[03:12] the $1 credit spread with a little bit and the short put spread with 70 something cents together will be just over a dollar. The width of our credit spread is a dollar. There is no risk to
+
+[03:26] the upside. If this underlying goes to the moon, we don't lose anything. We actually make a very small credit on this one, just 50 cents. But the advantage is it eliminates upside risk.
+
+[03:36] The other advantage here is our break evens are further than just the short put. The short put at 49 would be our 70s something cents under that is our break even. But we've added the credit
+
+[03:47] from the short credit spread on top of that gives us a little bit more a little bit further break even there. And this is how it would look at expiration. But we could of course look
+
+[03:58] very quickly at the uh profit loss how it develops during the trade. This is a 45 day to expiration example. And this is how it looks. The thick line is the situation right now and the thinnest
+
+[04:11] dotted line is where it will be at expiration. So as as the as the uh time passes we see that the break even point is going uh current break even point is going lower and then finally we end up
+
+[04:27] expiration with the profit loss curve we saw. What I like about this is the width and the distance to the break even. I've got a lot of room in here. I'm not worried about anything to the upside. I
+
+[04:39] first started trading these because strangles that I had would get the call would get run over and I'd have to deal with that, take losses to the upside. So, this eliminated my loss to one side.
+
+[04:50] It's a smaller much smaller credit but a higher probability profit uh in the end. And I guess many have had that experience. If they are selling, if you're selling iron condors regularly
+
+[05:02] and it looks fine and you're sure it cannot move that much, but then the market jumps up as the market does sometimes and suddenly you are losing on your trades, right? It does what we're
+
+[05:12] not expecting. So Russ, what are the best conditions for these type of trades? Well, the IV is certainly an advantage. You want volatility. You want some IV in there to
+
+[05:24] get paid for the risk that you're taking. And you know, price price of the underlying is significant. You want liquidity because we're selling three legs. If it's an illlquid product, it's
+
+[05:36] going to be much more difficult because you're going to be giving up a little bit on each leg. For myself, I do like it if I'm slightly bullish. This can be a neutral to bullish trade, but really
+
+[05:47] it's going to be best if nothing happens. if the stock just kind of stays in between the two short strikes. And you explain the mechanics for how you set it up. You run it by the by the
+
+[05:58] premium you expect to get. To repeat, you aim for about 70 cents on the put side. Yeah, that's really how it'll start is I start looking for that and then I can
+
+[06:11] decide if I'm more comfortable bringing that put up and the credit's going to get bigger. If it gets closer to $2, that credit spread can then pop open at $2. Really, I just want to keep the
+
+[06:22] total credit bigger than the credit spread and that eliminates my risk to the upside. The further my put can be down gives me a greater break even to the downside. That the downside break
+
+[06:33] even is really the advantage. And then having no upside risk is the advantage. This is a great trade for somebody who's been selling short puts and wants to do a little bit more but might be nervous
+
+[06:45] about risk to the upside or just want to see some more things happen. This has got more stuff going on in here. What are your favorite underlyings and also days to expiration with this system?
+
+[06:58] I like liquid things for the ETFs and I like them to be cheaper for these so that I can start with a dollar wide call spread which that really that limits us to being less expensive underlyings but
+
+[07:09] they got to be liquid. So a lot of the liquid ETFs like ETFs like GDX and GDXJ one of those we just looked at and I'm also thinking about buying power that it's going to restrict me. So yeah
+
+[07:20] smaller smaller is better in general but it's got to be liquid. It's got to have good high IV. I will look at little liquid products if I, you know, there's a stock I have or I've traded, I'll look
+
+[07:31] at them and I'll compare them sometimes, but that just the math doesn't always work out because I'm giving up too much on each leg and yeah, it makes it really not not worth it. So, I might just end
+
+[07:42] up just just selling a short put in something that's less less liquid. How many days to expirations do you prefer? 45 is what I've been targeting. I'll go a little bit longer with these
+
+[07:54] if I need to, maybe 60, but I haven't traded much beyond that. I've always kept it in that shorter range so the theta can come in more quickly for me. How do you manage them? Well, this is
+
+[08:04] where you get the little bit more going on than the short put where there's not too much to do with a short put. You're probably just going to take your profits, maybe roll it up. But here, if
+
+[08:13] it goes to the upside, uh, mostly you just consider one trade and you take your win. You take your small win or you set a good deal till cancelled to take it at that dollar profit or the dollar
+
+[08:25] debit making your small teeny credit whatever is to the upside. Sometimes I think 50 cents in our example might be a couple couple of dollars but it's not much. You can roll that put up. You just
+
+[08:36] have to realize if you do that you are bringing your break even up as well with it. So I don't really like to roll my puts up because it brings up my break even. So I try not to do that. I just
+
+[08:47] consider it all one trade and I'll take it off for the small credit. Uh if the price goes up through my calls, if it comes down, I will roll the calls down if I can. Now, the space between the
+
+[08:58] wider I started, if I started really wide between the put and the short call spread, I have the ability to roll that call spread down sometimes a couple of times if I need to for small credits
+
+[09:09] each time. And then the last roll will be to match up the two strikes, uh, the short call and the short put, the same putt. I'm gonna roll the whole call spread. I don't want to widen the call
+
+[09:20] spread because could then add risks to the upside. But if I'm just rolling the whole spread down, it continues to say, "Oh, you still have no risk to the upside." It gives me a little bit more
+
+[09:31] room to the break even to the downside and adds a little bit more credit on there. That's how I'll manage it in the one expiration. I also will roll these out. If IV
+
+[09:42] remains high and I can get a credit to roll things out, I will do that. Now, there's two ways to do it. Probably the easiest is just to close the trade and reopen a new trade. I will roll one leg
+
+[09:56] one at a time. So, I'll roll the short put out and then I'll roll a call spread because you can't roll three legs into three legs. Uh, at least I haven't seen a place that'll let you let you do let
+
+[10:06] you do that. But I can close the roll the put out for a credit and roll the call spread out for a small credit. What's the worst that can happen with this trade? Well, the risk is on the
+
+[10:16] downside. So, if the if the trade falls or the under the underlying falls completely through your short put, you're going to have to roll and or or possibly take shares. Usually, I'm
+
+[10:27] looking to roll and let's say I go straight through my put spread, my my short put, and I've already rolled my calls down so they're all the same. I will close that close that trade and
+
+[10:38] reopen or roll the whole thing out and hopefully it's still worthwhile to keep the call spread on there. Then I will also watch the total credit that the trade has received and I can widen the
+
+[10:50] call spread appropriate to whatever credit I've received. So if I've rolled it a couple of times and it's gone up to $2 credit that if we're in GDX for example, I can widen that call spread to
+
+[11:01] $2 and take in a little bit more. And that works especially as I'm going out in time. So if we've gone one month to another and then a third month and I have a couple of these that I've fought
+
+[11:10] for for many months, I can think of I can think of one that went beyond a year and turned out pretty good in the end. It has a good ending story, but it was sweating in between fighting the battles
+
+[11:20] and adding and rolling and moving, but came out okay. Will you sometimes just take the shares? Yeah, I will take the shares if it's something I'm interested in. Nowadays,
+
+[11:32] those tend to be dividend payers, but remember, it had to be liquid to start with. The one I was thinking of that took a long time to come in was GDXJ. Started with a regular old Jade Lizard,
+
+[11:43] the very inexpensive, just a dollar, maybe paid a$110, dollar 20. Had to roll down, had to roll out at some points in the trade. It was not a jade lizard. In some points in this trade, it was just a
+
+[11:55] short put, meaning it didn't pay me enough to keep the call spread on top. It was only a dollar or two, you know, pennies really in the options world. And then in the end, in the end, I actually
+
+[12:07] do take shares and was covered. So anyway, it's more exciting. There's more stuff to do if you're comfortable with the risk that you take. I guess that for those trading the wheel, this is kind of
+
+[12:18] a way to boost your cash secured put a little bit because constantly on top. Exactly. It's the short put. You can think of that as the wheel spread with the kicker a kicker call spread that
+
+[12:29] gives you a little bit of boost. What would you say are the main pros and cons with this strategy? Yeah, the pro is definitely the break even. I get a break even to the downside. You know, break
+
+[12:39] even is really far and I have no risk to one side. Those are really the pros. The risks are the the credit is small. They're not usually that big. You can do much more exciting trades where the
+
+[12:52] deltas are higher. The call spread is wider. But then there's always a trade-off in everything. You're going to say, "Oh, now I have risk to the upside. Now my break even has come up further."
+
+[13:02] So yeah, that's the pros and cons. But what role does it play in your own overall trading? How does it fit with others? Yeah, it's not the most common one I do,
+
+[13:13] but I'll definitely look at it every time I've got an underlying that I'm looking at. That's the first thing there. It has to have strikes that are available to be able to fit a nice
+
+[13:23] smaller call spread in there. So, if it's5 or $10 wide strikes, tougher to do that. It's possible, but it's more difficult to do it. That's why the GDX and GDXJ and smaller ETFs work really
+
+[13:36] well to do this. Or liquid underlyings. How many of these do I have on? I don't know how many out of the whole thing. I don't have a standard of how many I'll keep on, but I'm sure I have a couple
+
+[13:46] all the time that I'm trading. And then we have the sibling trade, Big Lizard. What's that? Really the how to get to this one from the other is if you're trading a couple contracts of the jade
+
+[13:59] lizard and you know you want to trade five of these $1 wide jade lizards and you're trying to boost the credit that you're taking in by adding on contracts, you could instead go to a big lizard
+
+[14:13] which is going to bring in a bigger credit one contract to those. So I think of it as if you're going to have five risks to the downside with a far break even, it might be better to just have
+
+[14:24] one contract risk to the downside and bring your break even up a little. That's the how we're getting there and why we're doing it. Now the what is it? It's the same thing. It's a short put
+
+[14:35] and the short call spread, but we're going to we're going to bring the two right together. So really we instead of starting with just a short put, we'll start with a short straddle. really at
+
+[14:46] the money straddle right there. And then depending on the credit that we're getting, which is going to be a very, very good credit, we'll put that long call on top to make sure that it gives
+
+[14:58] us no risk to the upside. So, if the credit is, you know, $11, I don't want to pay any more than $11 for that call spread, the the long call on top that caps our risk.
+
+[15:10] So maybe we should bring up our example again and it's the jade lizard on GDX that we had. What should we do now to create a big lizard out of this trades? Yeah, I would bring them right to both
+
+[15:22] short strikes right to 54. Okay. So we bring up put and then we bring down the short call. And where would you like the long call? Well, let's see what our credit is
+
+[15:34] here. credit is 429 and we are at let's see a five. So we're going to the chart shows it perfectly. You can see to the right there's a little bit of a loss if it comes up. So let's bring that 59 into
+
+[15:48] 58 and see how that does. Mhm. And there we go. So we're almost not nothing at the upside. Just a few dollars for 407. This is great. This gives us the widest break evens and a4 $47 credit if it
+
+[16:03] stays right here. Great. And and what what's the best conditions for this as opposed to the jade lizard? Again, high IV. I will look at them both back and forth. The major
+
+[16:16] differences in the trade-offs really here is if I'm in a jade lizard, I got a wide break even. If I'm in a big lizard, that break even comes way up. But I get a whole lot more money. I have much
+
+[16:29] bigger credit in in the big lizard than I did in the jade lizard. The jade lizard I'm giving up a big credit and the and the big lizard I'm getting a credit. Both of them are bullish neutral
+
+[16:39] to bullish trades. You can play with the where are the two things going to go, but that's on sort of personal preference. What do you like here on that last example? I might even bring
+
+[16:48] that call down one more strike so that I have a little bit of more credit if it's going to go up to the upside, but that doesn't bring in my break even each time I do it. But those are things I'll play
+
+[16:57] with anytime I've got an underlying in here. What's the J lizard going to look like? What's the big lizard going to look like? And am I comfortable with the break evens and the credit that I'm
+
+[17:08] going to receive? And if you want to show if you want to bring along call one step further, we will get it like this. Right. So here it's a $3 wide call and I'm going to get
+
+[17:20] $378. So I know to the upside the worst case scenario is I'm going to make $78. It did bring my my break even to the downside up a little bit and that's what I'll play with a little bit when I set
+
+[17:33] this up. I don't automatically go well let's I'm getting paid $4 and I got a $4 wide let's go. I'll bring it in and say, "Okay, well, this is a little bit more a little bit more upside credit if I'm if
+
+[17:45] it runs up." And what are the biggest risks? Yeah, the biggest risk is the downside here. All the risk is to the downside. If you've set it up right, all the risk is
+
+[17:55] to the downside and the break even is higher than the jade lizard there. So, you got to know that going in that you didn't have that far break even way out. It's a lot closer. How would you manage
+
+[18:06] this compared to the Jet Lizard? In the same expiration, there's a lot less to do. There's nowhere to roll that call spread. So, this is on until you decide to try to roll it out in time um or or
+
+[18:19] take it off it for for with either the credit or or a loss. I like to I'll roll them out in time. And this is where I'm thinking about how much buying power is this holding up and is it am I going to
+
+[18:30] get something to be able to roll it out for? I want to be able to bring in some percentage of return on this. Hopefully a percent if I'm going to roll it out. But usually these are easy to if the
+
+[18:40] price is around that uh your strikes and the IV is high, it's probably going to make sense to roll it. Has been in my experience anyway that I continue to roll it. I've got one right now in what
+
+[18:53] is that in I think Xon Mobile and it's doing. It's kind of just the price has come below my strikes and it's already it's already profitable slightly, but if it hangs in there a little bit
+
+[19:07] around here, it'll probably make sense if IV stays high to roll it out and do the whole thing again, close it down and reopen or roll one chunk at a time, the calls and then the put or the put and
+
+[19:19] then the calls. Do you have a preset profit level where the trade off? Yeah, I mean I'm looking for I'm looking for 50% and the jade lizard. If it runs up, I will take it
+
+[19:32] early. If either of these move quickly or come in quickly, I'll take a smaller percentage in less time. I'll take them off at 50% if I can. The big lizard is usually going to be less than that
+
+[19:45] because it's a straddle. So, you know, 25 25 to 30% is going to be a good thing. If everything's playing my way, I'll keep them going. What have been your overall results trading jade leard
+
+[19:57] and the gizards respect? Really? Good question. On the overall result, I would say I don't have a percentage on the winners and losers, but I think this these are high percent win trades. The
+
+[20:10] jade lizard bigger than the than the big lizard. And the other thing that adds on the winning percentage is that I roll them out of time. That I will keep fighting the battle if it makes sense.
+
+[20:21] if I've got some IV and if I continue making credit on the risk that I'm taking on the on the buying power that's holding up. I I wish I could put a number on there, but I think that it is
+
+[20:32] difficult because I roll them out because I don't it's not they're not all one-offs and I think that is, you know, for an old for just a little backing up on options trading. We can look at any
+
+[20:42] trade in sort of a vacuum and see what happens over time. Like I love your chart and see what happens over time. But I think the real advantage is the how do you manage things and how do you
+
+[20:51] roll them and what can you do once once the trade is on. It's you don't just have to sit you know when you explain to somebody we're always saying this is the option and here's the case at
+
+[21:02] expiration. It's really the in between world that gives you all the benefit. It's not just that one math equation of where you're going to be at expiration but how do I manage this? How do I roll
+
+[21:13] it out in time? How do I keep bringing in some more theta? Those are the real advantages, which unfortunately mean I don't have a percentage. I mean, I guess if you pin me down and say how many are
+
+[21:24] winners and how many are losers, it's got to be close to 90% winners. I know that's a big number, but remember, I've fought one for probably uh it's at least two years I took a GDXJ and wrestled
+
+[21:35] around with it. Um, so I'm a little bit stubborn in that sense. the 80s, I guess, if I had to nail it down, but I don't know. I'm sure I've
+
+[21:45] got some losers, but I fight the battle. I roll them out and keep fighting if I can. You keep rolling, you say? But I can. Rolling can sometimes also add to the a loss at least if you do it in the
+
+[21:56] wrong way. Do you have a set level where you enough is enough? I just going to have to take the loss and close everything. When I'm smart enough, yes. When I'm
+
+[22:07] smart enough, yes. It's really a three 3x loss is kind of the standard thing I have in my head when I've been mechanical with that. I've probably been the most successful. It's when I and
+
+[22:20] these are the these are the risks that you you let your emotions get involved and you think well this is it's it's come down. is going to come back up or worst case which I don't do this often
+
+[22:31] but I do have done it is you throw good money after bad and you go well let's how about another jade lizard just below this one and we can keep two running and it's been a while since I've done that
+
+[22:42] I've done that but those would be the the lost things where it came down through my through my short put I maybe took took shares and now the shares are still makes doesn't make sense to sell
+
+[22:54] calls against them those Those are the bad scenarios that having having your mental how do I get out of this is really good. You get into a trade, you say, "Oh, it's going to be it's going to
+
+[23:05] be GDX, for example. It's going to be the $1. I will get rid of this if I roll down the credit." And the total credit or the the trade is worth three times the total credit. Get rid of
+
+[23:17] it. Right. Ross, I like to ask my guests to place their strategy on a risk scale from one very low risk 10 with very high risk. Where would you place these strategies on risk like Well, if we have
+
+[23:35] a short put at Do you have a number for a short put? This is all up to yours. Yeah. If you say a short put is a five, for example, this is lower than the short put. And I
+
+[23:47] would put the the jade lizard maybe let's just say the short put is a five. The jade lizard might be a three and the big lizard might be a four. So they're less risky than the short
+
+[23:58] puts and you're going to get some additional credits on there. But depending on which of those two trades you have, the break even changes. Let's sum up what would been true. Ross, what
+
+[24:10] would be your three to four most important tips to someone who are interested in getting into these two strategies? I think you have to know what you're getting into for the risk.
+
+[24:21] There is risk to the downside and you have to keep the call spread small enough that there's no risk to the upside. So, they're good trades to maybe experiment what you might do if you want
+
+[24:33] to do a strangle, but you're a little bit nervous there. Yeah, I think they're really good trades when you're not quite sure what to do. I'm not sure if I'm neutral or bullish. This is perfect.
+
+[24:42] Maybe I'm a little bullish, but I'm a little nervous. This is a good a good a good trade to do. You have all kinds of the same the same type of trade. This is something different that has components
+
+[24:52] on both sides. So, it's a little more interesting than just selling short puts. Do you ever reverse them so that all the risk is to the upside? Yes, you can. You can do it. And I've done a
+
+[25:04] couple of reverses. I can't think of the underlyings I've done that on right now. Well, me, since I'm a cautious, a little more cautious, if I had shares, then I'm much more likely to be able to
+
+[25:18] do a reverse because I've already got shares and any call I sell is covered already. So, yeah, there would be call spread, a single call, single naked call, and then a short put spread
+
+[25:30] underneath. Except for me, for me, I like I much more prefer that trade if I have shares and then that that call is not naked anymore. It's now covered. But yeah, you could you could certainly do
+
+[25:41] that. That might be a preferential treatment of looking at where the price is and what you're expecting. So if you may be very it's on its highs and you're expecting a pullback there, I can see
+
+[25:50] someone wanting to put on a trade like that there. Where would be a good place to learn more about these strategies? Well, the originators, the inventors of this, Liz
+
+[26:00] and Jenny on Tasty Live, they are the masters and they've got a few they've got a couple other variations as well. Those are the two that I trade. Yeah, they have a bunch of videos about it and
+
+[26:11] they're probably a lot smarter than me. And if you're interested in learning more about Ross own trading, we did an another interview with him a few weeks and the link to that video will pop up
+
+[26:25] on the screen. Thank you very much, Ros, for sharing how we trade these strategies with us. Well, thanks for having me and thanks for talking.

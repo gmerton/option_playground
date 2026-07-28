@@ -1,0 +1,19 @@
+{
+  "video_id": "wiyv0ISHiHk",
+  "url": "https://www.youtube.com/watch?v=wiyv0ISHiHk",
+  "title": "Wait for the close | 18 Feb 2026",
+  "channel": "martinlukkt",
+  "channel_id": "UCB6jWJJvO_sWZ2PwgmMcxCw",
+  "stream_date": "2026-02-18",
+  "duration": "1:15:12",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

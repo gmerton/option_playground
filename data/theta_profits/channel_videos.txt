@@ -1,0 +1,107 @@
+# Theta Profits — Channel Video List
+# Channel: Theta Profits (UCzGARfberQ8nRRbsjK90BHg)
+# https://www.youtube.com/channel/UCzGARfberQ8nRRbsjK90BHg/videos
+# Fetched 2026-07-05 via `.venv/bin/yt-dlp --flat-playlist` — 100 videos, newest first.
+# Column 1: [x]=reviewed in strategies/  [ ]=not yet reviewed.  Re-run yt-dlp to refresh.
+# Reviewed: 30/100  (matched by meta.json video_id)
+
+[ ] Dnzr5RukaII | Calendar Spreads: The Mechanics of a Profitable Earnings Trade
+[ ] JEXlslx3Nb0 | Stop Chasing Options Strategies. Build This Instead
+[x] mvwWve5xSz4 | How Reiner Achieved a 100% Win Rate Selling Short Strangles
+[ ] bUr7RhKQH2U | Earnings Trading: These 4 Mistakes Will Drain Your Account
+[x] KuQdL4-1IcM | This butterfly strategy aims to remove risk as fast as possible
+[ ] izz9K3cHiVs | Your Backtest Looks Perfect...Then Reality Hits
+[x] JtGW1wNFNIY | How Steve turns Double Calendar Spreads Into Risk-Free Iron Condors
+[ ] EUlSVwyONTI | Can AI Actually Predict the Stock Market?
+[x] 5MbQ_dnImR0 | How Chris Pulver Achieves an 85% Win Rate With 0DTE Options
+[ ] EI6nlav2GFs | Gamma Levels Aren't Magic - Here's What They Actually Do
+[x] 319lHEiewRY | How Simon Black made 100% with his Time Flies options strategy
+[ ] 0woUNVPVCnw | Why This Trader Exits His 0DTE Iron Condors Early (And Accepts Smaller Profits)
+[ ] vhp_3lXdRMY | Losing Options Trade? Here Is Exactly What To Do
+[ ] 3ZihW63C6vk | 0DTE Butterflies: 5 Smart Ways to Trade Them
+[x] 6d0tVjJnzvQ | How I Doubled My Money With Triple Calendar Spreads (Full Breakdown)
+[ ] uJSi0AvYcr8 | How This 0DTE Iron Condor Made 40% in One Quarter
+[x] s7dNzX6KWmg | This 8-Leg Options Trade Targets Big Returns in Days
+[x] ab5VmEh49Ek | How To Control 100 Shares With Less Money (ZEBRA Strategy Explained)
+[x] D5Kg5SkPwRo | This 0DTE SPX Strategy Targets 1200% Average Wins
+[ ] POhDQ7fiEP8 | These 6 Tools Can Transform Your Options Trading
+[ ] oAYSr8C3bSM | A Smarter Poor Man’s Covered Call Most Traders Aren’t Using
+[ ] YS0D9cSNV4M | We Followed 25 Options Traders for a Full Market Day — Here’s What Happened (Full Replay)
+[ ] unEbRp90gxs | How This Options Strategy Can Profit In Any Market (Selling LEAPS Explained)
+[x] O5EpCaX4sbA | How He Makes 1% Per Week Selling Weekly Puts
+[x] P5RgXh0bfuU | This trader scalps SPX options in seconds
+[ ] xgKPl3VDUgc | Butterfly Options Explained: Iron vs Standard vs Broken Wing
+[x] Fj41ojAdwJ8 | After 9,000 Trades, This Is Still My Most Profitable 0DTE Strategy
+[ ] ZWDh7NMdGgI | If You Don’t Understand the Options Greeks, You’re Trading Blind (Masterclass)
+[ ] rmATH3QxxZ4 | Why 0DTE Trades Suddenly Go Out of Control (Gamma Explained)
+[x] UM_Q5xiYGNw | This VIX Trade Breaks Even Most of the Time — And Wins Big in Crashes
+[ ] 1mp5gh4fj1U | Stop Guessing Direction in Earnings Trades
+[x] FFGSFSk6Dn8 | Selling Gold Futures Credit Spreads For Income (10% Per Month Case Study)
+[ ] AiYShlwEiIg | How these options traders use AI to place 150 trades a day
+[ ] wvQoknvK3Ts | Three Crucial Mental Skills Options Traders Can Learn from Top Athletes
+[ ] SCCDMwRniwU | My 2025 options trading results: +39.26% with 4 core strategies
+[x] pP-gZCJq9aY | Selling Options On Futures For Income (NQ & ES Explained)
+[x] 8HLIvSLLvcc | A Smart Options Trade for Stocks that Could Double (Ratio Diagonal)
+[ ] N-hULJjZZb0 | 10 Options Strategies for 2026 (From Low Risk to Aggressive)
+[x] 55ox9fB3x-E | How Robert grew a $3,200 account selling SPX put spreads
+[x] ad27qIuhgQ4 | The 0DTE Iron Fly Strategy That Trades in 18 Minutes (SPX)
+[ ] IBQEt-6n0CU | Safer Income Trades with the Wheel, Covered Calls & Cash-Secured Puts
+[ ] d3MDIGl7TjA | This Options Strategy Can Deliver 60% Returns - Here's Why
+[ ] H9Mmk24a20c | How Jim Plans to Turn $25K Into $750K With Systematic Options Trading
+[ ] uR_tlldtu9Q | How gamma exposure predicts SPX moves (with Doc McGraw)
+[ ] zsST-yeSKHY | Earnings IV Crush: How To Trade Volatility Before It Drops
+[ ] jZHMaKHgmc8 | The Options Market Most Traders Don't Know Exists
+[ ] u-XPsFzp7SQ | 🔥 Theta LIVE: 3 Proven Weekly Options Strategies for Consistent Income
+[x] DHViE1YZ710 | The 0DTE strategy with zero risk? Boomer Dan’s “Levitation trades” explained
+[ ] bZwlfS0QH98 | Rolling Put Credit Spreads Explained – The High Risk, High Reward Strategy
+[ ] gfPyEz5g-TE | 👉 The Safest Options Strategy for Consistent Income
+[x] YREhrh408Bs | 10% a Month? Inside Azhar Pasha’s Adaptive 0DTE Butterfly Strategy for SPX Traders
+[ ] YtRZoni93Jg | Master the Wheel Strategy: Complete Step-by-Step Guide for Options Traders
+[ ] 88Z7CC9guZY | The Options Strategy That Paid for $1,500 Shoes — Week After Week
+[ ] GiAp1MytKtY | Has Your 0DTE Strategy Stopped Working? Experts Explain When to Quit
+[ ] 7DQWW_zCFUk | Can This Options Strategy Really Make 15–30% a Month?
+[x] o-CmLEeiaoU | Tammy Chambless Explains Her 0DTE Options Iron Condor Strategy
+[ ] Q9DJKrZsX34 | 3 Simple Options Strategies That Work in 2025
+[ ] MaNYhyjQ30E | 0DTE Options: 3 Strategies Top Experts Use
+[ ] yo9LcsdyXjU | Blind Options Trader Beats the Market with 32% Returns
+[ ] _Dty5WPQltU | Learn Options the Safer Way: The Safe Wheel Strategy
+[ ] xn3qnKpN70U | Delta Secrets Every Options Trader Must Know
+[ ] MwsxXa0jA9g | How Ravish Ahuja Made $1 Million with Low-Risk Options Strategies
+[ ] _nOSdhk2wuI | Retired Early? This Options Approach Protects Your Portfolio
+[x] y_7vCLAcc9c | The Flyagonal Options Strategy: 96% Win Rate and $24k in 2 Months
+[ ] GDl1S-wcftc | Five Ways This Trader Uses AI to Find Winning Options Trades (Step-by-Step)
+[ ] a_kqXWLa6pg | Vega and Volatility: What Every Options Trader Should Know
+[ ] H2G8_jisZP8 | Post-Earnings Credit Spreads: High Win Rate Options Strategy
+[ ] CCtg8i-FEb4 | How to Eliminate Currency Risk When Trading US Options (From Abroad)
+[x] plzrzv5vZlI | He Runs 48 0DTE Options Trades a Day — All Automated! Here’s How
+[x] h5JyUtuTN8I | Jade Lizard Options Strategy Explained: No Upside Risk!
+[x] 4ByN7YEGuZY | Turned $50K to $500K Then Lost It All Trading the 112 Options Strategy | Real Trader Story
+[x] olVPaP7OSOM | How This Trader Makes 100%+ Returns with Double Calendar Spreads (Full Strategy)
+[ ] M4N6qHWzO9Y | Options Trading Secret: How to Pocket an Extra 4% Risk-Free (Brokers Hate This)
+[ ] CiSxgiDOZ30 | How a Spanish Teacher Turned $500K into $4M with Options Trading
+[ ] qeR7DLFhI-A | Profit from VIX Spikes: Easy Options Strategy Revealed!
+[ ] JRkLzdaR8Ho | From Six-Figure Losses to $10M Hedge Fund: Tips for Scaling Your Options Trading in 2025
+[ ] 8IypxEOO5-Q | Build a Pro Options Trading Plan for 2025! Step-by-Step Guide
+[ ] nzx4yWbzs-I | 45% Returns with This Options Strategy! Time Flies Spread Revealed
+[x] gGMc1Y3tWbY | How to Automate Options Trading Like a Pro in 2025
+[ ] agi9MtNpyuw | Trader’s Nightmare: $116K Loss from a Rule Gone Wrong! It can also happen to you!
+[x] WJfvBfaeuP4 | This Lawyer’s Options Trading Strategy Guarantees No Loss (Here’s How)
+[ ] i_HSTzdVXdc | 0DTE Options Trading: 5 Essential Tips from a Hedge Fund Pro
+[ ] 8ea0DwpJtgg | Broken Wing Butterfly: How to Collect 10-13% in 2 Weeks (SPX Options)
+[ ] P0SxlqnMt7c | Options Trading for Absolute Beginners — Maggie Roth’s 3-Step Plan
+[ ] iUZp-er4cJo | Theta Explained: What Every Options Trader MUST know!
+[ ] paFhuSCejsc | The Wheel Options Strategy with a Twist: Simple Steps for Consistent Income
+[ ] 1YLglos6Ru8 | 0DTE Options Trading for Beginners - with Tammy Chambless
+[ ] 5ifjl3QFe60 | How to Turn Market Volatility Into BIG Profits With This Options Strategy!
+[x] J1pnBRw_kV0 | 0DTE Iron Fly Strategy: $1.5M in 2 Years Trading SPX Options (Step-by-Step Guide)
+[ ] b3VGlD4F79Q | Earnings trades made easy: How to profit with options!
+[ ] Ev-OyVE3heg | The Most Important Skill in Options Trading (And Why Many Ignore It)
+[ ] BLCH2HxJd68 | 0DTE SPX Options: Smart Stop-Loss Tips
+[ ] 4bsSnxvfwHY | Delta Neutral Strategy: An Income Generator for Any Market
+[ ] DHrYiyhflDQ | Options trading success starts with THESE simple principles
+[x] -9N7BeCTYEc | How to Profit from Covered Strangle - with Lance Kaminsky
+[ ] NcNuTwvvlH0 | Poor Man’s Covered Call: A Smarter Way to Trade Covered Calls
+[ ] Va13VeEBVjs | Backtesting options strategies made easy - with Tammy Chambless
+[ ] BwWh9cPYZdY | A consistently profitable 0DTE Iron Condor strategy - even after thousands of trades
+[ ] 0JtSJ5lvbfk | A 0DTE trend-following options strategy that works
+[ ] ZpoKKZBIlBI | How to make consistent income trading In The Money Covered Calls

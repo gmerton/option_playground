@@ -1,0 +1,276 @@
+{
+ "video_id": "OTJ1GjZ8rAc",
+ "date": "2026-07-22",
+ "title": "Study the charts | 22 Jul 2026",
+ "observed_trades": [
+  {
+   "date": "2026-07-22",
+   "ticker": "NET",
+   "direction": "long",
+   "action": "buy",
+   "setup": "Cybersecurity theme attempt during an indecisive tape. First tranche of cybersecurity longs opened Thursday was stopped out; re-entered NET. Today it is gapping up while the general market gaps down (relative strength).",
+   "entry_basis": "Re-entry Tuesday after Thursday tranche stopped out; specific trigger not stated",
+   "stop": "",
+   "source": "2026-07-22_OTJ1GjZ8rAc@25:48",
+   "confidence": "stated",
+   "notes": "'I tried some cybersecurity stocks on Thursday but I got stopped out yesterday but I re-entered... on NET and PANW yesterday. Today they are gapping up interestingly while the market is gapping down.' Holding as of stream.",
+   "fill_timing": "yesterday"
+  },
+  {
+   "date": "2026-07-22",
+   "ticker": "PANW",
+   "direction": "long",
+   "action": "buy",
+   "setup": "Same cybersecurity-theme re-entry as NET after the Thursday tranche stopped out; gapping up today against a gap-down market.",
+   "entry_basis": "Re-entry Tuesday; specific trigger not stated",
+   "stop": "",
+   "source": "2026-07-22_OTJ1GjZ8rAc@26:02",
+   "confidence": "stated",
+   "notes": "Paired with NET as the cybersecurity re-entry. Holding as of stream.",
+   "fill_timing": "yesterday"
+  },
+  {
+   "date": "2026-07-22",
+   "ticker": "MSTR",
+   "direction": "long",
+   "action": "buy",
+   "setup": "Crypto-treasury theme. Weekend study: BTC/ETH finding support on the rising daily 9 and 21 EMAs, 9 just crossed above the 21; ETH stronger than BTC (higher lows riding the rising 9 for ~4 weeks). BTC weekly: failed breakdown below prior swing lows in late June, reclaimed the next week at the 2021-high zone \u2014 a shakeout he likes as a possible turning point.",
+   "entry_basis": "Monday at the open: opening-range-high entry on the breakout of the previous day high",
+   "stop": "Intraday stop nearly hit ('almost knocked me out intraday') but survived",
+   "source": "2026-07-22_OTJ1GjZ8rAc@26:23",
+   "confidence": "stated",
+   "notes": "First of three crypto names ordered Monday (with BMNR? and COIN). Full context 66:39-71:26.",
+   "fill_timing": "Monday"
+  },
+  {
+   "date": "2026-07-22",
+   "ticker": "BMNR",
+   "direction": "long",
+   "action": "buy",
+   "setup": "Same crypto-treasury previous-day-high play as MSTR, but it gapped up at Monday's open so it acted better out of the gate.",
+   "entry_basis": "Monday: previous-day-high breakout at the open; stopped out once intraday, re-bought on a 5-minute breakout",
+   "stop": "First entry stopped intraday; re-entry held",
+   "source": "2026-07-22_OTJ1GjZ8rAc@26:44",
+   "confidence": "stated",
+   "notes": "Caption says 'BMR' \u2014 decoded as BMNR (crypto-treasury name grouped with MSTR/COIN, ETH-heavy; ETH showing more strength than BTC per his weekend read). See ambiguous_tickers. Re-buy after stop at 70:50.",
+   "fill_timing": "Monday"
+  },
+  {
+   "date": "2026-07-22",
+   "ticker": "COIN",
+   "direction": "long",
+   "action": "buy",
+   "setup": "Third crypto name of Monday's basket; added later in the day after it outperformed the other crypto names.",
+   "entry_basis": "Monday, later in the day: 5-minute breakout out of the intraday range",
+   "stop": "",
+   "source": "2026-07-22_OTJ1GjZ8rAc@27:00",
+   "confidence": "stated",
+   "notes": "Entry mechanics confirmed at 71:13 ('the five minute breakout and breaking out from this range intraday').",
+   "fill_timing": "Monday"
+  },
+  {
+   "date": "2026-07-22",
+   "ticker": "HOOD",
+   "direction": "long",
+   "action": "buy",
+   "setup": "Weekly breakout-and-retest of the anchored VWAP from all-time highs, which is also the high of a ~9-month base; strong action on a red day; IPO-age name breaking out is a plus for market breadth. Called it aggressive: ~1.5% stop even on a 1-minute breakout entry.",
+   "entry_basis": "Today: 5-minute chart entry (or 15-minute 9-EMA pullback), explicitly labeled 'a really aggressive entry'",
+   "stop": "~1.5% (tight, intraday-timeframe stop)",
+   "source": "2026-07-22_OTJ1GjZ8rAc@49:11",
+   "confidence": "stated",
+   "notes": "Stopped out live during the stream ('We just got stopped out from HOOD and Rivian', 73:21) with QQQ/SPY still under the daily 9 EMA. Setup discussion 27:25-50:04.",
+   "fill_timing": "today"
+  },
+  {
+   "date": "2026-07-22",
+   "ticker": "RIVN",
+   "direction": "long",
+   "action": "buy",
+   "setup": "Liked today's action ('couldn't resist it') despite EV/autos not being a leading sector or theme right now \u2014 acknowledged the sector negative up front.",
+   "entry_basis": "Today, intraday; specific trigger not stated",
+   "stop": "Stopped out live during the stream when it took out the low of day",
+   "source": "2026-07-22_OTJ1GjZ8rAc@15:16",
+   "confidence": "stated",
+   "notes": "Caption garbles it as 'radian'/'Riven'/'Riian'. Stopped at 73:21; at 78:50-81:02 he frames it as a textbook RE-ENTRY candidate: fell right back to the anchored VWAP from the swing high with the daily 9 EMA and lower-timeframe EMAs clustered there (LOD-shakeout-then-reclaim pattern he says is increasingly common), but wants the market to cooperate first and would prefer breakout buyers get checked. No re-entry fill stated during the stream.",
+   "fill_timing": "today"
+  }
+ ],
+ "principles": [
+  {
+   "category": "entries",
+   "text": "Before shorting a bounce, check where the index AND the sector ETF sit relative to their declining 9 EMA: if they are still extended below it, they will likely keep bouncing into the declining 9/21 and drag your stock up with them (~70-80% of stocks follow market/sector). Short when the index/sector has already bounced back near its declining EMAs, not before.",
+   "timestamp": "92:31"
+  },
+  {
+   "category": "entries",
+   "text": "Shorting every bounce into the declining 9 EMA has the lowest win rate of pullback-short entries \u2014 the 9 is the fastest EMA and pullbacks routinely extend to the 21 or even the 50 before rolling over.",
+   "timestamp": "95:10"
+  },
+  {
+   "category": "posture",
+   "text": "Pullback shorts need bear-market context, not just a red week: an intact weekly uptrend making its FIRST pullback into the rising weekly 21 usually finds support and starts another leg; markets rarely slice through all the EMAs without a bounce or sideways attempt first. Shorting that is completely different from shorting a 3-month downtrend where the 50 EMA is under the 150, the declining EMAs are clustered, and breadth is broken.",
+   "timestamp": "100:04"
+  },
+  {
+   "category": "entries",
+   "text": "Do not short immediately after a strong reversal candle \u2014 one that opened lower, recovered the whole intraday loss, and closed near the high of day and the prior day's high.",
+   "timestamp": "109:48"
+  },
+  {
+   "category": "entries",
+   "text": "A relatively-strong stock gapping DOWN into rising daily 9/21 support while its sector ETF also opens red improves the odds of the pullback buy \u2014 you are buying support with the sector's selling already expressed (e.g. gapping down into the 9/21 on a day SOXX opens lower).",
+   "timestamp": "58:58"
+  },
+  {
+   "category": "market_read",
+   "text": "You spot the next leading theme when several names from the same group (five or six, not one or two) show up in the same day's relative-strength scans \u2014 especially if they are bouncing on a red market day.",
+   "timestamp": "11:42"
+  },
+  {
+   "category": "market_read",
+   "text": "True market leaders top BEFORE the index: QCOM topped in January 2000 while the Nasdaq ran until March. When the real leaders of the move stall, fail to make higher highs, and show relative weakness while the index grinds higher, get cautious on the whole market.",
+   "timestamp": "141:52"
+  },
+  {
+   "category": "market_read",
+   "text": "Blow-off tops print extreme dollar volume relative to market cap: QCOM traded ~1/4 of its market cap in one week at the 2000 top (SNDK ~half). Huge weekly volume expansion plus price acceleration after a long uptrend is distribution, not strength.",
+   "timestamp": "135:41"
+  },
+  {
+   "category": "market_read",
+   "text": "Watch the volatility signature, not just price: in a healthy base volatility looks like the uptrend's, but consecutive giant alternating red/green weekly candles near highs (volatility expansion) mark the late stage of a move (Motorola 2000).",
+   "timestamp": "145:54"
+  },
+  {
+   "category": "exits",
+   "text": "True trending leaders never close below the weekly 9 EMA on the way up (QCOM never violated it through a ~600%-then-300% run; works with any fast weekly MA). Riding that line keeps you in far longer than feels comfortable \u2014 simple, powerful, and very hard to actually follow. The first weekly close below it after a long run (SNDK last week) is the warning.",
+   "timestamp": "149:28"
+  },
+  {
+   "category": "market_read",
+   "text": "Market corrections start from an EXTENSION or a FAILED BREAKOUT, almost never from a flat base or sideways range (2007, 2018 trade war, 2024 examples). If neither structure is present, it is too early to call a top.",
+   "timestamp": "169:52"
+  },
+  {
+   "category": "posture",
+   "text": "The market won't crash in a day \u2014 a real downtrend shows multiple signs first (leader breakdowns, failed breakouts, volume/volatility expansion). Wait for the danger signs instead of front-running a top call; standing out from the crowd by top-ticking is not smart, and the market can run far beyond what you can imagine.",
+   "timestamp": "168:05"
+  },
+  {
+   "category": "posture",
+   "text": "When neither side offers clear risk/reward \u2014 longs not yet confirmed, shorts already extended down into weekly support \u2014 trade less and smaller: 'less is more' until the market proves itself, while still probing new positions so you participate if it works.",
+   "timestamp": "23:19"
+  },
+  {
+   "category": "entries",
+   "text": "Stocks increasingly take out the low of day and then rally back to the highs (stop-run shakeouts). If a name gets you out at LOD but falls right back into confluent support (anchored VWAP + daily 9 + clustered lower-timeframe EMAs), treat it as a re-entry candidate rather than a dead trade \u2014 but let the market/breakout buyers confirm first.",
+   "timestamp": "79:36"
+  },
+  {
+   "category": "mindset",
+   "text": "99% of trading questions have no model answer \u2014 different traders reach different, equally profitable answers. Verify claims yourself and build your own conviction; don't adopt another trader's rule without digesting it, and value the thinking process over being right.",
+   "timestamp": "117:53"
+  },
+  {
+   "category": "process",
+   "text": "Almost nobody does the boring off-hours study (a chart-study prompt to ~27k viewers drew 11 real replies): the repetitive, un-dopaminergic work \u2014 studying past charts, learning from mistakes when the market is closed \u2014 is itself the edge, because so few put in the time.",
+   "timestamp": "121:06"
+  },
+  {
+   "category": "process",
+   "text": "Study historical downtrends, not just uptrends: once for shorting skill, once for staying out of bear markets, and once for recognizing where real turning points form at the end of a decline.",
+   "timestamp": "156:08"
+  },
+  {
+   "category": "mindset",
+   "text": "History gives ideas but does not directly repeat \u2014 don't over-fit past patterns onto today's market; let current individual charts prove the thesis first.",
+   "timestamp": "172:46"
+  }
+ ],
+ "ambiguous_tickers": [
+  {
+   "timestamp": "03:08",
+   "caption_text": "A E sharp looks very promising",
+   "context": "From his scans: closed below the 9 EMA Monday with a bearish engulfing, then Tuesday a strong green breakout candle on ~$500M volume vs ~$3.2B market cap (>10% of cap traded). Bullish sign.",
+   "guess": "AEHR",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "04:53",
+   "caption_text": "Dyer, we got a very strong bounce off the weekly 50 EMA",
+   "context": "Scan name showing a strong weekly 50 EMA bounce.",
+   "guess": "DY",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "04:53",
+   "caption_text": "The lights um also really strong bounce off the 150 EMA / light felt it is reclaim on 20th of July",
+   "context": "Bounced off the daily 150 EMA, closed above the 50; later the entire viewer shorting Q&A (89:20-111:53) uses this name as the worked example \u2014 reclaimed the 50 EMA Monday 20 Jul and gapped up Tuesday past the viewer's short stop.",
+   "guess": "LITE",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "15:16",
+   "caption_text": "batch is also looking pretty tight, flagging above the previous highs",
+   "context": "Tight flag near/above prior highs, above the 50 and 150 EMAs, maybe software theme; he won't trade it \u2014 too slow, no storytelling narrative.",
+   "guess": "PATH",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "18:53",
+   "caption_text": "blend here is also lagging uh near the 50 EMA",
+   "context": "Lagging name near the 50 EMA, could go either way.",
+   "guess": "BLND",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "20:12",
+   "caption_text": "CBRS is uh yesterday is really strong / CBR is pulling back into the next",
+   "context": "Broke out of a double-bottom base, recovered the 9 and 21 EMAs (20:12). Later (86:30-88:25): pulling back, he's NOT in it; fine if it closes near the anchored VWAP or holds the 15-min 9 EMA, bad if it closes red/weak. UPGRADED 2026-07-23: EP70's 'cypher' (same active-watch name, OPEN-analog discussion) was user-confirmed as CIFR, so this 'CBRS'/'CBR' garble is likely CIFR too.",
+   "guess": "CIFR",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "26:44",
+   "caption_text": "BMR is also similar play but it is gapping up",
+   "context": "Second crypto name of Monday's basket alongside MSTR and COIN; previous-day-high play that gapped up; stopped once then re-bought on a 5-min breakout (70:50).",
+   "guess": "BMNR",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "27:00",
+   "caption_text": "yesterday it's actually outperformed STRM PM and off",
+   "context": "Why he added COIN later in the day Monday \u2014 it outperformed the other crypto names; garble likely lists them (MSTR, BMNR, HOOD?).",
+   "guess": "",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "50:31",
+   "caption_text": "see D Napas AMD is doing really well today",
+   "context": "Semis roll-call before the MU discussion; unclear first name(s) before AMD.",
+   "guess": "",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "53:10",
+   "caption_text": "IC chr good entry with one minute breakout / IC is opening green",
+   "context": "Pullback into daily 9+21 with relative strength vs semis; opened green and gapped down into support on a day SOXX gapped lower; 'definitely not a liquid name'. Commentary on the setup \u2014 no fill stated.",
+   "guess": "ICHR",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "74:53",
+   "caption_text": "MU is looking it's doing pretty decent like Dow is still doing pretty decent",
+   "context": "Names holding up that keep him looking long as long as MU holds the rising 9 / doesn't fill the ~900-915 gap.",
+   "guess": "DELL",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "132:23",
+   "caption_text": "what's the weekly volume of of Dell right now 15 billion ... 11 12 billion. Napius 19 billion.",
+   "context": "Comparing today's weekly dollar volumes to QCOM's $20B/week at the 2000 top; 'Napius' is some current mega-cap.",
+   "guess": "",
+   "confidence": "unsure"
+  }
+ ]
+}

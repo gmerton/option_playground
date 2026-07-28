@@ -1,0 +1,19 @@
+{
+  "video_id": "BSfQZcij4yo",
+  "url": "https://www.youtube.com/watch?v=BSfQZcij4yo",
+  "title": "Panic sell | 12 Dec 2025",
+  "channel": "martinlukkt",
+  "channel_id": "UCB6jWJJvO_sWZ2PwgmMcxCw",
+  "stream_date": "2025-12-13",
+  "duration": "1:42:26",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

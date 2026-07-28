@@ -1,0 +1,19 @@
+{
+  "video_id": "8kMyrnUduFg",
+  "url": "https://www.youtube.com/watch?v=8kMyrnUduFg",
+  "title": "Spark to FIRE \u2013 Week 15: Account Down, Income Up (Total Return & Margin Explained)",
+  "channel": "Paycheck To Portfolio",
+  "channel_id": "UCqweTiFXT0z9FcURR55RcRg",
+  "stream_date": "2026-02-18",
+  "duration": "15:42",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

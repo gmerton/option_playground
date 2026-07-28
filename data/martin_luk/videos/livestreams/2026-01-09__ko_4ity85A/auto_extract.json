@@ -1,0 +1,81 @@
+{
+  "video_id": "_ko_4ity85A",
+  "date": "2026-01-09",
+  "title": "$IWM outperformance | 8 Jan 2026",
+  "observed_trades": [
+    {
+      "date": "2026-01-09",
+      "ticker": "RKLB",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Rocket Lab showing huge relative strength vs other space names; honest pullback buy to previous-high level and 1-hour EMA; intends to swing for a longer move; a B / fair trade worth the risk",
+      "entry_basis": "pullback to previous high level and 1-hour EMA",
+      "stop": "",
+      "source": "2026-01-09__ko_4ity85A@32:30",
+      "confidence": "stated",
+      "notes": "'Rocket Lab' = RKLB; later raises stop to a recent low",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-01-09",
+      "ticker": "?",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Waited and bought the 1-minute opening-range-highs breakout, entry 20.01, a bit late; bouncing at all the EMAs, near previous highs, daily 9 and 1-hour 50/21; a fair trade",
+      "entry_basis": "1-minute opening range highs breakout @ 20.01",
+      "stop": "~1.2%",
+      "source": "2026-01-09__ko_4ity85A@52:52",
+      "confidence": "stated",
+      "notes": "Caption 'PP I'/'causes' is a shaky decode; $20.01 entry is inconsistent with PLTR's price, symbol not established. See ambiguous_tickers.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-01-09",
+      "ticker": "?",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Bought it in early December but got stopped out and didn't catch the real upside move; now up ~70% without him",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-01-09__ko_4ity85A@48:45",
+      "confidence": "stated",
+      "notes": "Caption 'ONT'/'ONTS'/'always' is a shaky decode (guessed ONDS); past trade, symbol not established",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-01-09",
+      "ticker": "PATH",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Buying the 5-minute breakout on a pullback-buy; huge weekly base since 2022 bear market, early stage-1 transitioning to stage-2, robotics/software theme; risking 0.3% with ~1% stop",
+      "entry_basis": "5-minute breakout (pullback-buy from support)",
+      "stop": "~1% (0.3% account risk)",
+      "source": "2026-01-09__ko_4ity85A@70:13",
+      "confidence": "stated",
+      "notes": "'path' = PATH (UiPath); he calls it robotics but notes it's software",
+      "fill_timing": "today"
+    }
+  ],
+  "principles": [
+    { "category": "macro", "text": "IWM outperforming the Qs is bullish for longs; since 2008 every market drawdown >15% has begun with IWM lagging the Qs, so IWM being the stronger one makes him more optimistic on a pullback.", "timestamp": "59:00" },
+    { "category": "posture", "text": "Don't take shorts while the indices are still above their EMAs, especially when IWM is much stronger — a stated goal to trade less means skipping those shorts.", "timestamp": "47:50" },
+    { "category": "entries", "text": "Every higher-timeframe uptrend begins as an uptrend on a lower timeframe; for pullback buys, the 5-minute breakout (stop at low of day / breakout candle) is a solid entry timeframe to express the reversal.", "timestamp": "76:25" },
+    { "category": "risk", "text": "Risk only ~0.3% per trade this year (down from 0.5%); when the stop is very tight (~1%) the position size ends up similar anyway, so tighter risk doesn't shrink exposure much.", "timestamp": "78:39" },
+    { "category": "entries", "text": "Prefer to let the 9 EMA catch up before buying a name with a steep left side and little consolidation; an inside day forming today makes tomorrow's breakout ideal.", "timestamp": "44:33" },
+    { "category": "exits", "text": "On extended commodity/parabolic names that have run 60-70%+, expect at least a short-term top; don't keep buying — wait for the reaction at declining EMAs.", "timestamp": "56:11" }
+  ],
+  "ambiguous_tickers": [
+    { "timestamp": "06:34", "caption_text": "G set and V set also. They're still there hanging up above the 90 MA", "context": "Satellite names having a sharp pullback, holding above EMA", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "07:17", "caption_text": "This core wave looks shortable. Love this Love this base", "context": "Shortable base, 9/21 close together, ~1.5-month base", "guess": "CRWV", "confidence": "likely" },
+    { "timestamp": "17:36", "caption_text": "This mobile Mobileye's is up 16 or 17% yesterday ... just getting crushed", "context": "Up 16-17% at open then crushed", "guess": "MBLY", "confidence": "likely" },
+    { "timestamp": "20:54", "caption_text": "What's the news of Is it AVAV?", "context": "Gapping into overhead resistance, up 30% in 4 days, Trump budget news", "guess": "AVAV", "confidence": "likely" },
+    { "timestamp": "25:11", "caption_text": "Oh, B E is gapping up. Okay", "context": "Gapping up, keeps going higher; he watches it pull back to 50 EMA", "guess": "BE", "confidence": "likely" },
+    { "timestamp": "32:07", "caption_text": "or within Vic could be a short today", "context": "Possible short while indices still above 40 EMA", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "41:42", "caption_text": "APLT is back. Is this Is this Is back? ... Oh, this is today's the earnings", "context": "Earnings name, hard to manage risk except 1-minute breakout candle stop", "guess": "APLT", "confidence": "unsure" },
+    { "timestamp": "44:07", "caption_text": "we claim from this A E V A. If it forms an inside day today", "context": "Reclaim; inside-day-then-breakout candidate for tomorrow", "guess": "AEVA", "confidence": "likely" },
+    { "timestamp": "45:11", "caption_text": "Q P T S is finding support at the at the nine and also the anchor view up", "context": "Quantum name finding support at 9 EMA / anchor VWAP", "guess": "QBTS", "confidence": "likely" },
+    { "timestamp": "48:45", "caption_text": "This ONT is amazing ... I remember bought it at early December ... up 70%", "context": "Past long stopped out in early Dec; now up ~70%", "guess": "ONDS", "confidence": "unsure" },
+    { "timestamp": "52:22", "caption_text": "this PP I shaping up. This looks really good ... I waited to refund at the 1-minute opening range highs. My interest is at 20.01", "context": "His actual entry: 1-minute opening range high @ 20.01, 1.2% stop", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "70:13", "caption_text": "the weekly of of path like or this huge base since the 2022 bear markets ... the robots, right? Robotics. Oh, it's software", "context": "His 5-minute breakout entry; huge weekly base, robotics/software theme", "guess": "PATH", "confidence": "likely" }
+  ]
+}

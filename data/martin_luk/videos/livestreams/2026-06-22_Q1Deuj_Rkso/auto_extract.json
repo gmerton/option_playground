@@ -1,0 +1,212 @@
+{
+  "video_id": "Q1Deuj_Rkso",
+  "date": "2026-06-22",
+  "title": "Weekend scan | 22 Jun 2026",
+  "observed_trades": [
+    {
+      "date": "2026-06-22",
+      "ticker": "CRWD",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Took two new long trades on Thursday last week; CrowdStrike",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-06-22_Q1Deuj_Rkso@04:16",
+      "confidence": "stated",
+      "notes": "Refers to prior week Thursday entry; 'Crowd' = CRWD",
+      "fill_timing": "thursday"
+    },
+    {
+      "date": "2026-06-22",
+      "ticker": "GLW",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Second of two new trades Thursday last week; Corning",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-06-22_Q1Deuj_Rkso@04:16",
+      "confidence": "stated",
+      "notes": "'Corning' = GLW; prior week Thursday entry",
+      "fill_timing": "thursday"
+    },
+    {
+      "date": "2026-06-22",
+      "ticker": "ALAB",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Astera Labs; entered on a candle but set the stop a little higher than the candle low to get a tighter stop, which stopped him out Tuesday",
+      "entry_basis": "",
+      "stop": "set a little higher than the entry-day candle low (too tight)",
+      "source": "2026-06-22_Q1Deuj_Rkso@04:48",
+      "confidence": "stated",
+      "notes": "'A-Lab' = ALAB (interpreted from garbled caption; see ambiguous_tickers). Stopped out Tuesday; entry date not stated.",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-06-22",
+      "ticker": "TE",
+      "direction": "long",
+      "action": "entry",
+      "setup": "T1 Energy, small-cap solar/data-center theme, relative strength vs other solar names, above all EMAs; minute 9/21 EMA pullback play",
+      "entry_basis": "got ~70-75% of intended position around 944",
+      "stop": "low of the day, around 2.5%",
+      "source": "2026-06-22_Q1Deuj_Rkso@55:55",
+      "confidence": "stated",
+      "notes": "Position less than 25% of account; considering buying remaining 1/4 on pullback. 'TE' interpreted from 'T1 energy' (see ambiguous_tickers).",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-06-22",
+      "ticker": "HOOD",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Really likes his entry on Hood; wishes to hold for weeks/months",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-06-22_Q1Deuj_Rkso@71:19",
+      "confidence": "stated",
+      "notes": "",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-06-22",
+      "ticker": "INTC",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Likes his Intel entry; hopes to hold for weeks and months",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-06-22_Q1Deuj_Rkso@72:27",
+      "confidence": "stated",
+      "notes": "",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-06-22",
+      "ticker": "IONQ",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Quantum name; got stopped out, but says the tighter stop helped reduce risk vs a low-of-day stop",
+      "entry_basis": "",
+      "stop": "tighter than low of day (reduced risk by ~0.5%)",
+      "source": "2026-06-22_Q1Deuj_Rkso@87:24",
+      "confidence": "stated",
+      "notes": "Caption 'I-I-I-Yen' and later 'OWENQ' = IONQ (interpreted; see ambiguous_tickers). Entry date not stated.",
+      "fill_timing": ""
+    }
+  ],
+  "principles": [
+    {
+      "category": "risk",
+      "text": "Setting a stop tighter than the actual structural low (entry candle low) to chase a smaller risk is a tradeoff: you accept getting shaken out more easily; sometimes it still saves risk, sometimes it costs you the trade.",
+      "timestamp": "05:24"
+    },
+    {
+      "category": "mindset",
+      "text": "Constantly watching the market even on weekends and vacations is unhealthy and unsustainable; deliberately stepping away and letting stops work for you also helps you hold positions longer.",
+      "timestamp": "07:52"
+    },
+    {
+      "category": "entries",
+      "text": "Be more selective adding new names once the watch list is already large; the marginal value of each additional stock shrinks.",
+      "timestamp": "15:29"
+    },
+    {
+      "category": "entries",
+      "text": "Buy near the daily/weekly EMAs where you can define tight risk; avoid chasing extended names far above the EMAs and avoid buying gap-ups, especially gap-ups after a short squeeze.",
+      "timestamp": "70:02"
+    },
+    {
+      "category": "risk",
+      "text": "Tight stops let you allocate large position size (25-30% of account) while risking only a small fraction (0.25% or less) of the account.",
+      "timestamp": "67:53"
+    },
+    {
+      "category": "risk",
+      "text": "Risk per trade varies only slightly with setup quality (e.g. 0.2% for a B setup vs 0.25% baseline); never half or double size based on conviction alone.",
+      "timestamp": "78:32"
+    },
+    {
+      "category": "risk",
+      "text": "Size off realized equity, not unrealized profits; when doubling the account, only count about half the unrealized gains when computing new risk and position size.",
+      "timestamp": "80:33"
+    },
+    {
+      "category": "posture",
+      "text": "When a leading sector (e.g. semis) has already run for weeks, success rate on new entries drops as they go sideways; don't be aggressive chasing late.",
+      "timestamp": "20:09"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "04:48",
+      "caption_text": "A-Lab",
+      "context": "Got stopped out from it Tuesday; set stop a bit higher than candle low",
+      "guess": "ALAB",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "16:59",
+      "caption_text": "And Q has a pretty high potential of being the next sure leader",
+      "context": "Small/mid cap, very liquid, strong move, potential 100%+ / 10B market cap; back in 2021 had 1.5B mkt cap around $7, now ~4B; gapping into previous highs after a short squeeze",
+      "guess": "IONQ",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "21:37",
+      "caption_text": "pen button is another name similar to Q",
+      "context": "Strong move and very liquid relative to market cap; later 'Penguin and Q' appearing on scans; gap-up after short squeeze",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "23:21",
+      "caption_text": "this T1 energy",
+      "context": "Interesting small-cap, very liquid, solar + data center theme, relative strength vs solar names, above all EMAs; he enters it as 'TE' later",
+      "guess": "TE",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "34:49",
+      "caption_text": "This FNC is looking pretty good. Like a cup with handle. Above the 21",
+      "context": "Cup-with-handle, finding support on 21 EMA, but choppy price action; considering a try",
+      "guess": "FNC",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "39:56",
+      "caption_text": "USA always shaping up a little bit",
+      "context": "Looks good but not buying it today",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "60:55",
+      "caption_text": "SMT looks really nice",
+      "context": "Likes it but intraday volume a bit illiquid, hard to size, ~$1M dollar volume on 1-min chart",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "87:24",
+      "caption_text": "It got stopped out on I-I-I-Yen",
+      "context": "Quantum/leader name he was stopped out of; later called 'OWENQ' at 101:19; a tighter stop helped reduce risk",
+      "guess": "IONQ",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "105:36",
+      "caption_text": "Call weeks is also pulling back into the 50 EMA level",
+      "context": "Weekly looks very good, healthy pullback above all EMAs, weekly EMAs turning up, ~110 / 9 EMA; considering a 5-min candle breakout entry",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "116:10",
+      "caption_text": "CBR is setting up pretty nicely",
+      "context": "Wants it to go sideways to let 9 EMA catch up, wedge pop / breakout from 21 EMA and anchored VWAP",
+      "guess": "CBRL",
+      "confidence": "unsure"
+    }
+  ]
+}

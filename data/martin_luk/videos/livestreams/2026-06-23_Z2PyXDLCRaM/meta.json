@@ -1,0 +1,20 @@
+{
+  "video_id": "Z2PyXDLCRaM",
+  "url": "https://www.youtube.com/watch?v=Z2PyXDLCRaM",
+  "title": "Don't panic | 23 Jun 2026",
+  "channel": "martinlukkt",
+  "channel_id": "UCB6jWJJvO_sWZ2PwgmMcxCw",
+  "stream_date": "2026-06-23",
+  "duration": "2:11:14",
+  "summary": "Live reaction to a gap-down open (~3% Qs / ~1.5% SPY). Thesis: don't panic, leaders pulling back into rising 9 EMA = healthy double-bottom build (a la Oct 2020). Works quantum names (IONQ/RGTI/QBTS), semis, INTC; tangent on European/Spanish/Australian indices.",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp 2026.06.09",
+    "captured_date": "2026-06-24",
+    "quality_note": "Auto-generated captions. Ticker names frequently mis-transcribed; see notes.md for the decoding table. Timestamps are [mm:ss] from stream start."
+  },
+  "supplemental_notes_file": "notes.md"
+}

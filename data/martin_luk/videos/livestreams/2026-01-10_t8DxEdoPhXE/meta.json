@@ -1,0 +1,19 @@
+{
+  "video_id": "t8DxEdoPhXE",
+  "url": "https://www.youtube.com/watch?v=t8DxEdoPhXE",
+  "title": "$AEVA $30 | 9 Jan 2026",
+  "channel": "martinlukkt",
+  "channel_id": "UCB6jWJJvO_sWZ2PwgmMcxCw",
+  "stream_date": "2026-01-10",
+  "duration": "1:29:07",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

@@ -1,0 +1,19 @@
+{
+  "video_id": "o-CmLEeiaoU",
+  "url": "https://www.youtube.com/watch?v=o-CmLEeiaoU",
+  "title": "Tammy Chambless Explains Her 0DTE Options Iron Condor Strategy",
+  "channel": "Theta Profits",
+  "channel_id": "UCzGARfberQ8nRRbsjK90BHg",
+  "stream_date": "2025-09-24",
+  "duration": "13:58",
+  "summary": "Tammy Chambless (a well-known retail 0DTE backtester; did not invent MEIC) presents the Multiple-Entry Iron Condor and her 'MEIC plus' tweak: SPX 0DTE, 6 iron condors/day 30-60 min apart, $1-1.75 credit/side, 50-100 wide, per-side stop at 1x net (=2x credit), 2%-of-account daily risk cap. Best-evidenced 0DTE IC in this KB: near-complete reproducible mechanics, a BYOB 1-min backtest (33.3% CAR, 7.4% maxDD, Calmar 4.5, Jan2023-Sep2025) reconciled against a lower live record (~20.7% avg, live UNDER backtest = anti-oversell), and genuine quantified slippage/broker-stop-handling rigor. Still self-reported (not audited), a benign 2023-2025 regime, crowded VRP-harvesting family (same as Yona/Pulver), and 0DTE-intraday so not faithfully testable on our EOD stack. Write-up: strategies/tammy_chambless_0dte_ic.md (conviction 2.5/5).",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

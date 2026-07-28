@@ -1,0 +1,167 @@
+{
+  "video_id": "HnKJ8ZCARwE",
+  "date": "2026-06-12",
+  "title": "Shopping spree | 12 Jun 2026",
+  "observed_trades": [
+    {
+      "date": "2026-06-12",
+      "ticker": "INTC",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Bought yesterday on the 60-minute failed-breakdown candle reclaiming the 9/21 EMA, as Qs/indices bounced and IWM showed strength",
+      "entry_basis": "60-minute failed breakdown reclaiming 9/21 EMA",
+      "stop": "",
+      "source": "2026-06-12_HnKJ8ZCARwE@04:55",
+      "confidence": "stated",
+      "notes": "Bought 'boot and intel' on the same 60-min candle; Intel = INTC",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2026-06-12",
+      "ticker": "BOOT",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Bought on same 60-minute failed-breakdown/reclaim candle as Intel",
+      "entry_basis": "60-minute failed breakdown reclaiming 9/21 EMA",
+      "stop": "",
+      "source": "2026-06-12_HnKJ8ZCARwE@04:55",
+      "confidence": "inferred",
+      "notes": "Caption 'boot' likely BOOT (Boot Barn); interpreted guess, see ambiguous_tickers",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2026-06-12",
+      "ticker": "?",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Anticipation buy though daily still below the 9/21 EMAs; really likes the weekly structure (pullback and reclaim at the 9 EMA / previous swing highs); market moving fast, doesn't want to miss it",
+      "entry_basis": "16-minute pullback into the 21 and 9 EMA",
+      "stop": "",
+      "source": "2026-06-12_HnKJ8ZCARwE@44:26",
+      "confidence": "inferred",
+      "notes": "Caption garbled 'ENTP'/'EMP' - ticker cannot be confidently decoded; set to '?'. Bought today on the 16-min pullback. See ambiguous_tickers",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-06-12",
+      "ticker": "MRVL",
+      "direction": "short",
+      "action": "hold",
+      "setup": "Still short Marvell (and 'Ollo') overnight; covered the shorts when the Qs reversed and bounced to flip toward longs",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-06-12_HnKJ8ZCARwE@72:12",
+      "confidence": "stated",
+      "notes": "'Marfell' = Marvell = MRVL (confident phonetic); covered shorts after Q reversal",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-06-12",
+      "ticker": "?",
+      "direction": "short",
+      "action": "hold",
+      "setup": "Still shorting 'Ollo' overnight alongside Marvell",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-06-12_HnKJ8ZCARwE@72:12",
+      "confidence": "inferred",
+      "notes": "Caption 'Ollo' cannot be confidently decoded (OLLI vs OLO); set to '?'. See ambiguous_tickers",
+      "fill_timing": ""
+    }
+  ],
+  "principles": [
+    {
+      "category": "entries",
+      "text": "Buying inside the range (not after breakout) is preferred because the stock isn't extended and the range gives the tightest stop; you don't need to wait for it to go higher.",
+      "timestamp": "41:25"
+    },
+    {
+      "category": "mindset",
+      "text": "You never know if a breakout will hold or fail and you don't need certainty; focus only on managing downside risk and finding the tightest entry.",
+      "timestamp": "63:35"
+    },
+    {
+      "category": "posture",
+      "text": "In a fast V-shaped/lockout-rally market where many leaders break out the same day, strict progressive exposure can hold you back; be more aggressive. Progressive exposure fits long bases, not V-shaped bounces off a low.",
+      "timestamp": "51:30"
+    },
+    {
+      "category": "entries",
+      "text": "Conviction to get aggressive comes from both the number of strong-looking individual stocks and the strong recovery of the indices/IWM, which are correlated since stocks make up the index; healthy breadth (not just Mag-7) matters.",
+      "timestamp": "66:27"
+    },
+    {
+      "category": "mindset",
+      "text": "Don't blindly follow any concept learned from other traders (including his own advice); test it against whether the market actually rewards you trading that way.",
+      "timestamp": "54:08"
+    },
+    {
+      "category": "mindset",
+      "text": "The market doesn't care about your P&L or equity curve; whether you're up 10% or down 10% is irrelevant to the trades, which reduces emotional pressure.",
+      "timestamp": "90:32"
+    },
+    {
+      "category": "exits",
+      "text": "Panic-selling a clean breakout for fear it will fail is a mistake; forget it and move on, there will be many more opportunities.",
+      "timestamp": "70:35"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "04:55",
+      "caption_text": "I bought uh boot and intel on the same 60-minute candle",
+      "context": "Bought two names on the same 60-min failed-breakdown/reclaim candle; the other is Intel",
+      "guess": "BOOT",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "06:43",
+      "caption_text": "it's a little bit sad that I didn't get that I didn't bought SNDK",
+      "context": "Clean breakout, strong close, relative strength; regretted not buying yesterday (not entered)",
+      "guess": "SNDK",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "43:25",
+      "caption_text": "Why would I choose to answer ENTP today? It's under the 9 and 21",
+      "context": "Below daily EMAs (anticipation), but weekly pulls back and reclaims 9 EMA / previous swing highs; he bought it on the 16-min pullback; later called 'EMP'. Caption garbled; ticker decoded as '?'",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "44:26",
+      "caption_text": "I really like the weekly structure of EMP. So I bought it today",
+      "context": "Same name as ENTP above; the one he bought today on the 16-min pullback into 9/21 EMA. Caption garbled; ticker decoded as '?'",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "72:12",
+      "caption_text": "I'm still shorting um Marfell and uh Ollo",
+      "context": "Two remaining shorts he held overnight; Marfell = Marvell (MRVL); 'Ollo' cannot be confidently decoded",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "69:22",
+      "caption_text": "AAT is already at the alltime highs",
+      "context": "Cited as a strong name at all-time highs along with semis/banks/financials closing strong (not a position)",
+      "guess": "AAT",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "93:07",
+      "caption_text": "entering QBTS in the hourly chart when it breaks out",
+      "context": "Quantum name a viewer asked about; weekly finds support at weekly 9; he prefers IQ (the strongest/most liquid quantum) instead",
+      "guess": "QBTS",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "93:24",
+      "caption_text": "I will go for IQ because it's the strongest and the the most liquid one",
+      "context": "His preferred quantum name over QBTS; strongest and most liquid; weekly looks nice, daily finding support ~55-56, filled Tuesday gap and 50 EMA support; not taken today",
+      "guess": "IONQ",
+      "confidence": "unsure"
+    }
+  ]
+}

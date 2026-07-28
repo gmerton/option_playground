@@ -1,0 +1,277 @@
+{
+  "video_id": "OBQEWy8PAck",
+  "date": "2026-06-25",
+  "title": "Buying into the weekly 9 | 25 Jun 2026",
+  "observed_trades": [
+    {
+      "date": "2026-06-25",
+      "ticker": "FLEX",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "One of yesterday's new pullback entries; stopped out during the mid-day index sell-off along with all other new entries that day.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-06-25_OBQEWy8PAck@04:01",
+      "confidence": "stated",
+      "notes": "Quote: 'unlucky day yesterday. I got stopped out from flex. Stopped out from all of the entries yesterday.' Caption 'flex' interpreted as FLEX (Flex Ltd), which he also lists among names 'looking really good' at 06:25.",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2026-06-25",
+      "ticker": "SNDK",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Stopped out yesterday on the market flush; the stock then gapped up ~20% today. He shrugs it off: 'it could be a 20% gap down today... just following the stops.'",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-06-25_OBQEWy8PAck@06:37",
+      "confidence": "stated",
+      "notes": "Caption 'SMDK' interpreted as SNDK (Sandisk) — logged in ambiguous_tickers. Quote: 'SMDK stopped me out yesterday. And then we got a 20% gap up today.'",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2026-06-25",
+      "ticker": "?",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Kept most existing swing positions through yesterday's index weakness per plan; they are 'doing quite well' after today's widespread gap-ups.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-06-25_OBQEWy8PAck@05:35",
+      "confidence": "stated",
+      "notes": "Portfolio-level hold, individual tickers not enumerated. Names he calls 'looking really good' at 06:25 (GFS, SMTC, FTNT, 'Morpheus', Flex) likely overlap with holdings but are not confirmed as positions there. Quote: 'we kept most of our positions... I am really glad that I've held through yesterday's weakness and followed my plan perfectly.'",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-06-25",
+      "ticker": "MU",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Held existing MU position through earnings (reported after hours yesterday). Watched into yesterday's close; late-day bounce left ~8% cushion above his stop, which he judged enough to hold through the report.",
+      "entry_basis": "",
+      "stop": "960 (would have exited pre-earnings if it closed weak, e.g. ~980)",
+      "source": "2026-06-25_OBQEWy8PAck@95:30",
+      "confidence": "stated",
+      "notes": "Viewer asked why he maintained MU with price near his 960 stop into earnings. Quote: 'during the close it bounces back a bit... I got a little bit like 8% cushion for my stop... enough for me to hold through the earnings.' Also 109:22: stayed up until the close yesterday specifically because of MU earnings.",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2026-06-25",
+      "ticker": "FTNT",
+      "direction": "long",
+      "action": "buy",
+      "setup": "One of five new positions bought today — buying strong names pulling back into rising EMAs while the indices flushed toward the weekly 9 EMA.",
+      "entry_basis": "Pullback-into-weakness buy off the intraday lows (his 'buying into the weekly 9' theme)",
+      "stop": "",
+      "source": "2026-06-25_OBQEWy8PAck@58:07",
+      "confidence": "stated",
+      "notes": "Quote: 'I've already taken a lot of new positions and I got FTNT, I got Crowd.' Entered with market orders (113:05: 'I entered like all stocks even including Nphase with market orders').",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-06-25",
+      "ticker": "CRWD",
+      "direction": "long",
+      "action": "buy",
+      "setup": "One of five new positions bought today on the pullback into rising EMAs during the intraday market flush.",
+      "entry_basis": "Pullback/buy-into-weakness entry off the intraday lows",
+      "stop": "",
+      "source": "2026-06-25_OBQEWy8PAck@58:07",
+      "confidence": "stated",
+      "notes": "Caption 'I got Crowd' interpreted as CRWD (CrowdStrike) — logged in ambiguous_tickers.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-06-25",
+      "ticker": "ENPH",
+      "direction": "long",
+      "action": "buy",
+      "setup": "New experimental 'trade the weekly as the daily' entry: buying the pullback into the weekly 21/50 EMA and prior highs around the 45 level on a stock he is bullish on the weekly timeframe.",
+      "entry_basis": "Weekly pullback into 21/50 weekly EMA + previous highs ~45 level; pilot tranche (1 of up to 3 planned entries)",
+      "stop": "Tight stop (<~2%) for the weekly pullback, per Q&A at 101:57; exact level not stated",
+      "source": "2026-06-25_OBQEWy8PAck@96:53",
+      "confidence": "stated",
+      "notes": "Quote: 'buying ENPH today is a little bit new thing that I'm trying to experiment... trading off the weekly.' Sizing: splits 0.3% risk into thirds, ~0.1% risk on this pilot. Filled with a market order (113:24 'all stocks even including Nphase, so with market orders').",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-06-25",
+      "ticker": "?",
+      "direction": "long",
+      "action": "buy",
+      "setup": "Two additional unnamed new positions — he states he bought five new positions today, but only FTNT, CRWD and ENPH are named on stream.",
+      "entry_basis": "Same theme: buying strong names on the pullback into rising EMAs / weekly 9 area",
+      "stop": "",
+      "source": "2026-06-25_OBQEWy8PAck@71:03",
+      "confidence": "stated",
+      "notes": "Quote: 'the first thing is I already bought like five new positions today. And it will be a little bit too much for the open risk' (his reason for skipping Marvell). Candidates he praised but did not confirm filling: GFS, SMTC, 'Morpheus'.",
+      "fill_timing": "today"
+    }
+  ],
+  "principles": [
+    {
+      "category": "entry",
+      "text": "Don't chase gap-ups: avoid buying opening range highs or first-15-minute strength; skip the first 15 minutes after the open.",
+      "timestamp": "05:51"
+    },
+    {
+      "category": "entry",
+      "text": "The highest-quality pullback buy is at the rising weekly 9 EMA — be patient and wait for price to actually reach it instead of entering early; entering too early gets you stopped on the flush.",
+      "timestamp": "05:02"
+    },
+    {
+      "category": "psychology",
+      "text": "A stock gapping up 20% right after stopping you out is part of the game — it could just as easily have gapped down. Follow the stop, take the exit, and move on to the next trade without regret.",
+      "timestamp": "07:23"
+    },
+    {
+      "category": "market_read",
+      "text": "When indices look weak but leading stocks are pulling back into rising EMAs, that is a buy-weakness environment — not a reason to short or sell positions.",
+      "timestamp": "17:19"
+    },
+    {
+      "category": "market_read",
+      "text": "A quick intraday flush against a strong primary uptrend is a countertrend move: probability and risk/reward favor pullback buys and bounce plays over shorts.",
+      "timestamp": "60:48"
+    },
+    {
+      "category": "entry",
+      "text": "Buying off the lows below the lower-timeframe EMAs is a lower-win-rate entry but catches fast movers; waiting for price to reclaim and hold above all EMAs is safer but risks missing the move. Know which trade-off you're taking.",
+      "timestamp": "66:32"
+    },
+    {
+      "category": "entry",
+      "text": "You don't need to wait for a daily reclaim of an EMA or support level: if a stock is genuinely finding support, a 5-minute candle breakout off the low is a valid entry with a tighter stop.",
+      "timestamp": "69:03"
+    },
+    {
+      "category": "risk",
+      "text": "Risk management is the number one objective, above everything else: set the stop and define your risk before you enter, and never widen a stop after entry. Entry and exit tactics can evolve; this never changes.",
+      "timestamp": "77:35"
+    },
+    {
+      "category": "risk",
+      "text": "Cap total portfolio open risk: even when multiple valid setups fire the same day, stop adding new positions once open risk is too heavy (he skipped Marvell after five new buys).",
+      "timestamp": "71:03"
+    },
+    {
+      "category": "process",
+      "text": "To fix overtrading, review your past trades to find the nonsense ones and identify the specific conditions where you overtrade (extended markets, choppy periods) — then deliberately reduce trade count in those conditions.",
+      "timestamp": "83:46"
+    },
+    {
+      "category": "process",
+      "text": "Treat trend lines as zones, not magic lines — they're too subjective to anchor decisions on. Keep charts clean; use them only as secondary confluence for pullback buys.",
+      "timestamp": "90:42"
+    },
+    {
+      "category": "risk",
+      "text": "Hold through earnings only with enough cushion above your stop (e.g. ~8%); if the stock closes weak near the stop into the report, exit before earnings instead.",
+      "timestamp": "95:49"
+    },
+    {
+      "category": "sizing",
+      "text": "As the account grows, split an entry into tranches like a big fund would (e.g. thirds: first pullback, next pullback, breakout day) — 0.3% trade risk becomes ~0.1% per tranche, keeping cost basis low and drawdowns small.",
+      "timestamp": "98:06"
+    },
+    {
+      "category": "sizing",
+      "text": "Match risk-per-trade to your system's win rate: a low-win-rate, tight-stop approach is prone to losing streaks and should risk small (~0.3%); a wider-stop, higher-win-rate approach can justify larger risk per trade.",
+      "timestamp": "107:49"
+    },
+    {
+      "category": "risk",
+      "text": "Let the stop decide what you do — no second-guessing, no daily-drawdown overrides; let the market do its own thing.",
+      "timestamp": "105:15"
+    },
+    {
+      "category": "process",
+      "text": "If a position is far from its stop, don't watch it — the stop takes care of the position (even while traveling). Stay up for the close only on special events: earnings on a holding, FOMC, unusually volatile days.",
+      "timestamp": "109:22"
+    },
+    {
+      "category": "process",
+      "text": "Trade liquid stocks so you can use market orders and get in fast on trigger; reserve limit orders for thin or wide-spread names to control slippage.",
+      "timestamp": "112:55"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "04:01",
+      "caption_text": "I got stopped out from flex",
+      "context": "One of yesterday's entries that stopped out on the market flush; also listed among today's strong gap-up names at 06:25.",
+      "guess": "FLEX",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "06:25",
+      "caption_text": "GFS, SMTC FTNT Morpheus, Flex",
+      "context": "List of names 'looking really good / really great' on today's gap-ups. 'Morpheus' does not map cleanly to any obvious ticker (MRVL is captioned as 'Marvell' elsewhere).",
+      "guess": "?",
+      "confidence": "uncertain"
+    },
+    {
+      "timestamp": "06:37",
+      "caption_text": "SMDK stopped me out yesterday. And then we got a 20% gap up today",
+      "context": "Stopped out yesterday, gapped ~20% today.",
+      "guess": "SNDK",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "37:56",
+      "caption_text": "I really want to buy a little bit more like SMTC or A lab",
+      "context": "Names he wants to add on another pullback but won't because exposure is already heavy; also 'maybe not A left, but SMT could be another gap up and then another pullback' at 49:55.",
+      "guess": "ALAB",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "58:07",
+      "caption_text": "I got FTNT, I got Crowd",
+      "context": "Listing today's new buys.",
+      "guess": "CRWD",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "62:15",
+      "caption_text": "Good is finding support at the 21 EMA at the previous swing high",
+      "context": "Commentary on a chart finding support at the 21 EMA / prior swing high; a possible entry with a 5-minute candle breakout. Not confirmed as a fill.",
+      "guess": "GOOG",
+      "confidence": "uncertain"
+    },
+    {
+      "timestamp": "65:07",
+      "caption_text": "Penguin looks pretty solid here, too",
+      "context": "Looks solid but buying here would be aggressive; he'd prefer waiting for it to reclaim and hold above the 60-minute EMAs then go sideways. Watchlist only.",
+      "guess": "PENG",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "114:06",
+      "caption_text": "Having BB is reporting this this morning, right? Like pre-market.",
+      "context": "Notes a name reporting earnings pre-market this morning; 'really love to see this type of actions, hopefully it gets followed through.' Not stated as a position.",
+      "guess": "BB",
+      "confidence": "uncertain"
+    },
+    {
+      "timestamp": "118:54",
+      "caption_text": "I think this is cool wave is going to break out in either one direction",
+      "context": "Chart coiling, expected to break out in one direction or the other. Watchlist commentary only.",
+      "guess": "CRWV",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "123:07",
+      "caption_text": "AOY is already down 42% from the high",
+      "context": "Closing remark about a beaten-down name, 42% off its high. No trade.",
+      "guess": "AAOI",
+      "confidence": "uncertain"
+    },
+    {
+      "timestamp": "07:53",
+      "caption_text": "Uses approaching the angle of the web from the swing high",
+      "context": "Heavily garbled line just before SPY commentary about the 60-minute 9 EMA; underlying ticker unresolvable.",
+      "guess": "?",
+      "confidence": "uncertain"
+    }
+  ]
+}

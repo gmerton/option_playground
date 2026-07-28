@@ -1,0 +1,83 @@
+{
+  "video_id": "-5l8H8TBF5s",
+  "date": "2026-05-21",
+  "title": "Kristjan influence | 21 May 2026",
+  "observed_trades": [
+    {
+      "date": "2026-05-21",
+      "ticker": "GFS",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Got lucky on yesterday's longs; GFS gapping up 12% on quantum-computing government-equity news, pushing into all-time highs with volume.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-05-21_-5l8H8TBF5s@04:00",
+      "confidence": "stated",
+      "fill_timing": "yesterday",
+      "notes": "Holds GFS from yesterday's longs ('got lucky for yesterday's longs. GFS is gapping up 12%', 04:00); 'GFS is pushing into all-time highs today with volume' (43:53)."
+    },
+    {
+      "date": "2026-05-21",
+      "ticker": "QBTS",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Strongest quantum name (esp. on the weekly), aside from INQ which he bought yesterday; bought the first-minute breakout.",
+      "entry_basis": "First one-minute candle / opening breakout",
+      "stop": "low of day (~1% of equity risk)",
+      "source": "2026-05-21_-5l8H8TBF5s@10:21",
+      "confidence": "stated",
+      "fill_timing": "today",
+      "notes": "Order had ~4% slippage on a market order via IBKR; filled late (10:21, 13:50). Stop: 'I'm just going to use the low of the... 1% of my equity for the risk' (14:29). At 68:51 explains why he picked QBTS over RGTI."
+    },
+    {
+      "date": "2026-05-21",
+      "ticker": "IONQ",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Already bought 'INQ' (IONQ) yesterday, so today chose QBTS instead among the quantum names.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-05-21_-5l8H8TBF5s@68:51",
+      "confidence": "inferred",
+      "fill_timing": "yesterday",
+      "notes": "'INQ which I have already bought it yesterday' (68:51) — 'INQ' decoded as IONQ (interpreted; see ambiguous_tickers). Bought yesterday."
+    },
+    {
+      "date": "2026-05-21",
+      "ticker": "TSLA",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Solid reversal off the 50/150 EMA (daily and weekly), gapping above the anchor-VWAP from last week's swing high; discusses pullback levels (60-min 50/9 EMA) as add/entry points.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-05-21_-5l8H8TBF5s@07:51",
+      "confidence": "inferred",
+      "fill_timing": "",
+      "notes": "Discusses Tesla reversal and 'another support/entry point' levels (07:51, 21:00). Does not explicitly state he holds it on this stream; holding inferred only from cross-stream context (5/26 stream confirms he entered Tesla on the prior week's 60-min pullback). Fill timing unspecified on this transcript."
+    }
+  ],
+  "principles": [
+    { "category": "entries", "text": "When indices gap down into support and individual names are stronger than the indices, opening-range-breakout entries have higher odds — the bounce raises the win rate, especially on relatively strong names.", "timestamp": "42:16" },
+    { "category": "entries", "text": "On straight-up moves where price never touches the 9 EMA, a supplementary entry is to buy any day and stop at the low of day; in such runs each low of day stays above the prior day's low (seen on CRWD/Intel), so a stop-at-LOD survives.", "timestamp": "54:31" },
+    { "category": "risk", "text": "Define and tighten your stop before entering — the biggest influence from Kristjan: set the stop at the low of day (~3%), and tighten over years (7-8% to 1%) alongside improving entry skills so you're not chasing extended names.", "timestamp": "80:11" },
+    { "category": "mindset", "text": "Think in percentages of account (and R-multiples), never absolute dollars; obsessing over dollar P&L is what stops traders from scaling up. To grow a small account fast, ignore the dollar size and focus on percentage/R per trade.", "timestamp": "85:48" },
+    { "category": "mindset", "text": "Trading is reacting, not predicting: you can never know the bottom; just react when a stock pulls back into one or (better) multiple support levels for a higher chance it holds and continues.", "timestamp": "60:37" },
+    { "category": "entries", "text": "Prefer liquid, fast-moving, orderly names with the right theme; favor beaten-down names that remain liquid (>100-200M daily dollar volume even after 90%+ declines), as liquidity through the decline signals two-sided interest and more explosive bounces.", "timestamp": "113:52" }
+  ],
+  "ambiguous_tickers": [
+    { "timestamp": "04:43", "caption_text": "Napius is also gapping up by around 10%", "context": "Gapping up ~10% on a partnership announcement.", "guess": "NPS", "confidence": "unsure" },
+    { "timestamp": "10:21", "caption_text": "I really like this pullback on the ATS", "context": "A pullback he likes; right before discussing his QBTS order. Possibly ASTS (space name) given other streams.", "guess": "ASTS", "confidence": "unsure" },
+    { "timestamp": "16:13", "caption_text": "EXYZ. Yeah. What actually?", "context": "A name he had on his scan/watch list, breaking out with a decent 15-min / opening-range entry but a bit illiquid (<400-500M volume).", "guess": "XYZ", "confidence": "unsure" },
+    { "timestamp": "18:43", "caption_text": "Cypher is not is the only one that I'm really wanted to find an entry", "context": "The one name he wanted to enter but was too late; later 'cipher' undercutting the 9 EMA / anchor-VWAP.", "guess": "CIFR", "confidence": "unsure" },
+    { "timestamp": "23:12", "caption_text": "GTI is also doing a wonderful job today. This weekly candle is wonderful", "context": "Largest 15-min volume since October last year; a quantum name. 'GTI' = RGTI.", "guess": "RGTI", "confidence": "likely" },
+    { "timestamp": "68:51", "caption_text": "INQ which I have already bought it yesterday", "context": "Names the quantum stock he bought yesterday (vs QBTS today and RGTI). 'INQ' decoded as IONQ.", "guess": "IONQ", "confidence": "likely" },
+    { "timestamp": "28:24", "caption_text": "Is Mara a crypto name? Amara might be the strongest one", "context": "Debating whether 'Mara' is a crypto name and the strongest crypto.", "guess": "MARA", "confidence": "likely" },
+    { "timestamp": "43:34", "caption_text": "SNTK is pushing higher", "context": "A name pushing higher intraday.", "guess": "SNDK", "confidence": "unsure" },
+    { "timestamp": "57:42", "caption_text": "Is TL a good short setup today", "context": "Asked if it's a good short; he won't fight a strong market though it's bouncing into declining 21/50 EMAs.", "guess": "TLT", "confidence": "unsure" },
+    { "timestamp": "73:09", "caption_text": "the stock Nap", "context": "Viewer asks him to look at 'Nap'/'NAVN'; it's trying to lose the 9 EMA after sideways action, a bit illiquid.", "guess": "NAVN", "confidence": "unsure" },
+    { "timestamp": "74:57", "caption_text": "I mentioned AEVA on this breakout day", "context": "Recalls calling AEVA going to 30 on a breakout; six months later it's ~21, used as 'my opinions are useless' example.", "guess": "AEVA", "confidence": "likely" },
+    { "timestamp": "110:26", "caption_text": "EMP. How you actually spot them out", "context": "A beaten-down (down 92% from late 2022) solar name riding the 9 EMA; peers cited as first-solar (FSLR) and SEDG; he prefers EMP as less choppy.", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "111:58", "caption_text": "SEDG is one of the names that I also tracking", "context": "SolarEdge as a solar peer he tracks but finds choppier than the 'EMP' name.", "guess": "SEDG", "confidence": "likely" },
+    { "timestamp": "114:55", "caption_text": "Kana back in 2023 kana is also is down by 99%", "context": "A 2023 example of a beaten-down (-99%) but liquid (>200M volume) name that rallied; 'kana'/'FO'.", "guess": "?", "confidence": "unsure" }
+  ]
+}

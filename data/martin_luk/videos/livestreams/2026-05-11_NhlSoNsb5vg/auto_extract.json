@@ -1,0 +1,177 @@
+{
+  "video_id": "NhlSoNsb5vg",
+  "date": "2026-05-11",
+  "title": "Free money market | 11 May 2026",
+  "observed_trades": [
+    {
+      "date": "2026-05-11",
+      "ticker": "QBTS",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Quantum name; was the strongest of the quantum group on the two days before his entry; chose it over RGTI",
+      "entry_basis": "entered on a breakout the prior Friday",
+      "stop": "",
+      "source": "2026-05-11_NhlSoNsb5vg@62:54",
+      "confidence": "stated",
+      "notes": "He says he chose QBTS over RGTI because it was strongest; references his entry from the prior Friday",
+      "fill_timing": "friday"
+    },
+    {
+      "date": "2026-05-11",
+      "ticker": "TSLA",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Re-entered a strong name after being shaken out; lists Tesla among names he regained exposure to",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-05-11_NhlSoNsb5vg@56:18",
+      "confidence": "inferred",
+      "notes": "Lists Tesla among names he regained exposure to ('a Tesla too'); treated as held. Entry detailed in the 05-08 stream",
+      "fill_timing": "last week"
+    }
+  ],
+  "principles": [
+    {
+      "category": "macro",
+      "text": "In a strong bull market most people are not bullish enough; when the chart is far more bullish than the sentiment, lean long and do not try to call the top.",
+      "timestamp": "125:46"
+    },
+    {
+      "category": "posture",
+      "text": "After a shake-out or mistake, do not avoid the same stock or direction; it is fine to re-buy the same name at a higher price.",
+      "timestamp": "56:43"
+    },
+    {
+      "category": "entries",
+      "text": "The strongest pullback entries stack multiple support levels at once (21 EMA, anchored VWAP, unfilled gap, 150 EMA, weekly 9 EMA); the more confluence, the more edge.",
+      "timestamp": "108:55"
+    },
+    {
+      "category": "entries",
+      "text": "Avoid choppy stocks that ignore or whipsaw around the moving averages (lots of wicks/shakeouts); favor names that respect EMAs and follow through cleanly.",
+      "timestamp": "111:36"
+    },
+    {
+      "category": "risk",
+      "text": "Size with the stop ~95% of the time; only on rare very-high-conviction setups (e.g. the gold/silver short) risk a larger 1-1.5%.",
+      "timestamp": "116:33"
+    },
+    {
+      "category": "mindset",
+      "text": "When you find yourself saying a stock 'should go to 1000/2000' or talking about yachts/supercars/leveraged ETFs, that is a tell you are near the end of the run.",
+      "timestamp": "128:10"
+    },
+    {
+      "category": "exits",
+      "text": "The shift from breakouts to pullbacks is forced by a faster market; to keep a tight stop you must buy the intraday pullback before the stock rallies back to the highs.",
+      "timestamp": "87:20"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "08:23",
+      "caption_text": "the EMP solar name. I really think Solar has getting a little bit of strength",
+      "context": "A solar name (a 'laggard' / 'lard') trying to break out from the 50 EMA; choppier than peers",
+      "guess": "ENPH",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "19:55",
+      "caption_text": "missed this ATLD pull back in a 98. This is a really nice entry",
+      "context": "Pullback at ~98; later 'APLD pushed back into the 9 EMA' = same name, APLD",
+      "guess": "APLD",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "33:56",
+      "caption_text": "I cannot uh get into galaxy. You cannot enter galaxy little bit too slow",
+      "context": "Wanted the pullback but fill too slow (missed, not taken)",
+      "guess": "GLXY",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "34:18",
+      "caption_text": "BMR is just having a really high capital requirement",
+      "context": "High capital requirement, could not get in with size (missed, not taken)",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "34:18",
+      "caption_text": "cyher also a really nice pullback but uh it is undercutting the nine and 9 EMA quite deeply",
+      "context": "Nice pullback but undercutting the 9 EMA too deeply, heading to 15-19ish",
+      "guess": "CIFR",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "35:48",
+      "caption_text": "Ollo also recovering from the day low from the first five minute flush",
+      "context": "Recovering from the day low after the opening flush; later 'all low... weekly is the eye-catching point'",
+      "guess": "OLO",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "37:32",
+      "caption_text": "software names are coming back. Brow strike and zoom",
+      "context": "Software names recovering; 'Brow strike' = CrowdStrike (CRWD)",
+      "guess": "CRWD",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "37:59",
+      "caption_text": "Do the OCN ai is up 15%. Nice shake out",
+      "context": "Up 15% with a nice shakeout",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "39:20",
+      "caption_text": "Maybe uplo is could be an entry today",
+      "context": "Powerful intraday flag after the EP; earnings tomorrow after hours",
+      "guess": "OLO",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "40:47",
+      "caption_text": "Calab rock lab is not it's hard to buy",
+      "context": "Hard to buy today; 'rock lab' = Rocket Lab (RKLB)",
+      "guess": "RKLB",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "45:55",
+      "caption_text": "So, Ro a really good example, space names",
+      "context": "Cited as a good example among space names finding strength",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "47:19",
+      "caption_text": "the Crowd Strike is definitely one of the leaders in the software sector",
+      "context": "Software-sector leader he is tracking",
+      "guess": "CRWD",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "62:54",
+      "caption_text": "island Q is is so strong today",
+      "context": "Very strong, circling back near the high of the day; quantum context",
+      "guess": "IONQ",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "62:54",
+      "caption_text": "I win Q and versus RTI",
+      "context": "Comparing two quantum names; chose QBTS; 'RTI'/'RGTI' is the other candidate",
+      "guess": "RGTI",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "82:04",
+      "caption_text": "so for block uh so it's software names maybe also the crypto related names",
+      "context": "Within a base near the higher part, at the 150 weekly; tracking for a stage-two breakout; 'block' may be Block Inc (XYZ)",
+      "guess": "XYZ",
+      "confidence": "unsure"
+    }
+  ]
+}

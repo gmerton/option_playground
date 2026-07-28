@@ -1,0 +1,19 @@
+{
+  "video_id": "IgiOMLGVD_A",
+  "url": "https://www.youtube.com/watch?v=IgiOMLGVD_A",
+  "title": "26% Dec drawdown | 7 Jan 2026",
+  "channel": "martinlukkt",
+  "channel_id": "UCB6jWJJvO_sWZ2PwgmMcxCw",
+  "stream_date": "2026-01-08",
+  "duration": "1:55:37",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

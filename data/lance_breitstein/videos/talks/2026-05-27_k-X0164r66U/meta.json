@@ -1,0 +1,19 @@
+{
+  "video_id": "k-X0164r66U",
+  "url": "https://www.youtube.com/watch?v=k-X0164r66U",
+  "title": "The 2 Swing Trading Strategies That Made me Millions",
+  "channel": "TheOneLanceB",
+  "channel_id": "UCzksXiC-Ju-DTIZmMiaOVfQ",
+  "stream_date": "2026-05-27",
+  "duration": "13:11",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

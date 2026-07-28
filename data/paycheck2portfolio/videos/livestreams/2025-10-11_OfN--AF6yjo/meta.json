@@ -1,0 +1,19 @@
+{
+  "video_id": "OfN--AF6yjo",
+  "url": "https://www.youtube.com/watch?v=OfN--AF6yjo",
+  "title": "NAV Erosion: Fact or Fiction? (The Truth About High-Yield Funds)",
+  "channel": "Paycheck To Portfolio",
+  "channel_id": "UCqweTiFXT0z9FcURR55RcRg",
+  "stream_date": "2025-10-11",
+  "duration": "20:36",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

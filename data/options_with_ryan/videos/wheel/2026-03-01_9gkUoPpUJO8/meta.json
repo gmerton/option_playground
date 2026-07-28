@@ -1,0 +1,19 @@
+{
+  "video_id": "9gkUoPpUJO8",
+  "url": "https://www.youtube.com/watch?v=9gkUoPpUJO8",
+  "title": "Stock Deep Underwater? My Covered Call Strategy Explained 2026 | Options With Ryan",
+  "channel": "Options With Ryan",
+  "channel_id": "UCQnIfbieTyf53CZBiyLAkjg",
+  "stream_date": "2026-03-01",
+  "duration": "27:52",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

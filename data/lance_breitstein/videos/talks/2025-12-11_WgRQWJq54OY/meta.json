@@ -1,0 +1,19 @@
+{
+  "video_id": "WgRQWJq54OY",
+  "url": "https://www.youtube.com/watch?v=WgRQWJq54OY",
+  "title": "How to Stop Guessing with Your Stop Losses",
+  "channel": "TheOneLanceB",
+  "channel_id": "UCzksXiC-Ju-DTIZmMiaOVfQ",
+  "stream_date": "2025-12-11",
+  "duration": "7:30",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

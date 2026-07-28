@@ -1,0 +1,101 @@
+{
+  "video_id": "603RKPXwd3Y",
+  "date": "2026-05-20",
+  "title": "Aggressive exposure | 20 May 2026",
+  "observed_trades": [
+    {
+      "date": "2026-05-20",
+      "ticker": "IREN",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Within a long base, pulling back into weekly 9/21 EMA and breakout-candle bar low; bought as a possible day-one-of-trend with indices fading but the stock breaking out (relative strength).",
+      "entry_basis": "Reclaim/turn-up off support; breakout from long base",
+      "stop": "",
+      "source": "2026-05-20_603RKPXwd3Y@51:28",
+      "confidence": "stated",
+      "fill_timing": "today",
+      "notes": "'I just bought some iron' (51:28). 'Iron' = IREN; at 132:57 confirms IREN pulling back into weekly EMA after a long base, wants to get in early."
+    },
+    {
+      "date": "2026-05-20",
+      "ticker": "MU",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Intraday pullback attempt on a memory/semi leader; stop hit then it found support.",
+      "entry_basis": "Intraday pullback into 60-min 9 EMA",
+      "stop": "",
+      "source": "2026-05-20_603RKPXwd3Y@32:11",
+      "confidence": "stated",
+      "fill_timing": "today",
+      "notes": "'I got stopped out from MU. It just hits my stop and finds support.' (32:11). At 135:41 he re-bought MU on the 5-minute breakout same day."
+    },
+    {
+      "date": "2026-05-20",
+      "ticker": "ARM",
+      "direction": "long",
+      "action": "exit",
+      "setup": "Bought Monday on the 21 EMA pullback (felt like a perfect entry); panic-sold/closed all positions Tuesday on a 15-min candle amid general-market weakness — not a stop-out.",
+      "entry_basis": "Pullback into 21 EMA",
+      "stop": "",
+      "source": "2026-05-20_603RKPXwd3Y@72:41",
+      "confidence": "stated",
+      "fill_timing": "yesterday",
+      "notes": "At 72:41 clarifies he panic-sold ARM yesterday (Tuesday) rather than being stopped; bought Monday on the 21 EMA dip. Regrets selling (it 'looks absolutely wonderful'). Exit fill = yesterday."
+    },
+    {
+      "date": "2026-05-20",
+      "ticker": "ASTS",
+      "direction": "long",
+      "action": "exit",
+      "setup": "Says he just covered/sold a space-sector name; cited while discussing buying the prior day's pullback.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-05-20_603RKPXwd3Y@107:51",
+      "confidence": "inferred",
+      "fill_timing": "today",
+      "notes": "'actually a lot ASTS I just just covered' (107:51) — garbled, ambiguous wording; ASTS is an interpreted decode (space name) and the action 'covered' is unclear. Treated as a recent exit. See ambiguous_tickers."
+    },
+    {
+      "date": "2026-05-20",
+      "ticker": "SNDK",
+      "direction": "long",
+      "action": "entry",
+      "setup": "At the 60-min 9 EMA, slightly breaking out; bought the 5-min breakout (daily gap-up-and-pullback into 9 EMA).",
+      "entry_basis": "5-minute breakout at 60-min 9 EMA",
+      "stop": "",
+      "source": "2026-05-20_603RKPXwd3Y@135:41",
+      "confidence": "stated",
+      "fill_timing": "today",
+      "notes": "'SNTK'/'SNDK' at 60-min 9 EMA breaking out (53:22); at 135:41 'SNTK and MU... I actually bought it on the 5-minute breakouts.' Ticker 'SNTK' decoded as SNDK (SanDisk, memory peer of MU) — interpreted; see ambiguous_tickers. Removed unsupported 0.3R stop figure (the ~0.3R risk is a general principle he states, not attached to this fill)."
+    }
+  ],
+  "principles": [
+    { "category": "entries", "text": "When the indices fade on a lower timeframe but the bigger-picture daily is bullish and individual names show relative strength by breaking out, that's a great time to pull the trigger long.", "timestamp": "52:55" },
+    { "category": "exits", "text": "Key lesson: holding many full-size positions without selling enough into strength means giving back large profits when the inevitable pullback hits; sell more into strength to free buying power and mental capital, trusting you can buy back even if you exit a leader early.", "timestamp": "74:07" },
+    { "category": "posture", "text": "In a straight-up, low-pullback market, progressive (gradual) exposure works worse than in a basing market; it's acceptable to be more aggressive — but cap it (e.g. 4-5 positions/day, not 8) and reduce risk per trade (~0.3R) to control drawdown.", "timestamp": "86:39" },
+    { "category": "risk", "text": "Stock selection: prefer liquid names (>=500M daily dollar volume or >=10B market cap); the big multi-week/month winners are the liquid ones institutions buy, and liquidity lets you size up and avoids gap-down risk.", "timestamp": "127:59" },
+    { "category": "entries", "text": "Use the weekly chart for context: a name that looks weak on the daily (below 9/15/21 EMA) can actually be pulling back into the weekly 9/21 EMA after a long base while building higher lows (e.g. NEP, IREN) — a setup to enter early before it's hard to chase.", "timestamp": "131:42" },
+    { "category": "risk", "text": "Don't add to a winner: adding raises average cost and, with a 25-30% initial size, pushes the position to an unmanageable 40-50%; a stop-out on the add also hurts your mindset on the whole trade.", "timestamp": "112:30" }
+  ],
+  "ambiguous_tickers": [
+    { "timestamp": "04:19", "caption_text": "especially A E H O, getting a round trip", "context": "A position that round-tripped while he was sick and stopped him out break-even.", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "05:14", "caption_text": "sold the remaining like NE PS", "context": "Sold the rest of this name on Tuesday; recurs as 'NEP'/'Nepi' — a long-base name pulling into weekly 21 EMA.", "guess": "NEP", "confidence": "unsure" },
+    { "timestamp": "05:31", "caption_text": "I bought Fly. I also got Fly yesterday, but I also sold it all", "context": "Bought and sold 'Fly' across two days; later 'All flies flying' / 'Flyers also breaking out'.", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "13:44", "caption_text": "ORMIS exceptionally strong. So Solar is one of the thing", "context": "An exceptionally strong solar name.", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "14:39", "caption_text": "I D M P H so I bought this breakout inside day breakout", "context": "An inside-day breakout he bought; stopped next day, then it found support and lifted off — used as a pullback-is-best example.", "guess": "DMPH", "confidence": "unsure" },
+    { "timestamp": "40:22", "caption_text": "I actually kind of like a cold wave. But this weekly chart pushed back into the 50 EMA", "context": "A name with tightened EMAs, slightly below anchor-VWAP from all-time highs, attempting to close above the 60-min 9 EMA. 'cold wave'/'gold wave' = CoreWeave.", "guess": "CRWV", "confidence": "likely" },
+    { "timestamp": "46:28", "caption_text": "Iron is within a long base but at the 50 EMA", "context": "Within a long base, weekly breakout candle then pullback into 9/21 EMA; he buys it as possible day-one-of-trend. 'Iron' = IREN.", "guess": "IREN", "confidence": "likely" },
+    { "timestamp": "49:45", "caption_text": "Cypher is also like a weekly pullback", "context": "Weekly pullback, found support on 15 EMA, stronger than the one he already holds.", "guess": "CIFR", "confidence": "unsure" },
+    { "timestamp": "53:22", "caption_text": "M U N S N T K it is at the 60-minute 9 EMA", "context": "MU and 'SNTK' at the 60-min 9 EMA, slightly breaking out. 'SNTK' = SNDK (SanDisk), memory peer of MU.", "guess": "SNDK", "confidence": "unsure" },
+    { "timestamp": "81:39", "caption_text": "MCI is breaking out from the previous highs near the 50 EMA on pullback", "context": "A software name breaking out from previous highs near the 50 EMA on a pullback.", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "82:25", "caption_text": "ESTS, the space name", "context": "A strong space-sector software name finding support on the weekly 50 EMA.", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "107:51", "caption_text": "actually a lot ASTS I just just covered", "context": "Garbled; says he just 'covered' a space-sector name while discussing buying the prior day's pullback. Decoded as ASTS but both the ticker and the action are uncertain.", "guess": "ASTS", "confidence": "unsure" },
+    { "timestamp": "83:01", "caption_text": "CLSK CLSK also showing huge relative strength during the pullback", "context": "Showing huge relative strength, cleared the prior swing high.", "guess": "CLSK", "confidence": "likely" },
+    { "timestamp": "109:54", "caption_text": "would you consider AGNA today", "context": "A choppy-character name; he says a low-of-day pullback buy with previous highs / 9 MA is a good entry.", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "115:22", "caption_text": "C O S K on the 1530", "context": "A leader breaking out from the high of its base while the broad market is still within the base; riding the 15-min 9 EMA. Letters spelled C-O-S-K.", "guess": "COSK", "confidence": "unsure" },
+    { "timestamp": "124:24", "caption_text": "D O C N pullback buy on 9 EMA today", "context": "One of the strongest software names; he says there isn't a pullback buy, it's a breakout, worth trying. Letters spell DOCN.", "guess": "DOCN", "confidence": "likely" },
+    { "timestamp": "125:59", "caption_text": "is the pullback of CVX on Monday a good entry", "context": "Chevron pullback Monday; technically a really good entry but a slow-moving name.", "guess": "CVX", "confidence": "likely" },
+    { "timestamp": "123:18", "caption_text": "What do you think about NVTS", "context": "Viewer asks his opinion; he deflects ('what the market does is the only important thing').", "guess": "NVTS", "confidence": "unsure" },
+    { "timestamp": "131:14", "caption_text": "AULAF is trading also more than 1 billion after this gap up", "context": "Cited as a liquid high-quality name trading >1B since a gap up.", "guess": "?", "confidence": "unsure" }
+  ]
+}

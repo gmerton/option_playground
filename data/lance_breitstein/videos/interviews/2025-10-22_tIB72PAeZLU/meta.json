@@ -1,0 +1,19 @@
+{
+  "video_id": "tIB72PAeZLU",
+  "url": "https://www.youtube.com/watch?v=tIB72PAeZLU",
+  "title": "The Art of Betting Big | Elite Traders Lance Breitstein & Kyle Williams on When to Size Up",
+  "channel": "TheOneLanceB",
+  "channel_id": "UCzksXiC-Ju-DTIZmMiaOVfQ",
+  "stream_date": "2025-10-22",
+  "duration": "54:12",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

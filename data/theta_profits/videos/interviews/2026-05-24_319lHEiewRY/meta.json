@@ -1,0 +1,19 @@
+{
+  "video_id": "319lHEiewRY",
+  "url": "https://www.youtube.com/watch?v=319lHEiewRY",
+  "title": "How Simon Black made 100% with his Time Flies options strategy",
+  "channel": "Theta Profits",
+  "channel_id": "UCzGARfberQ8nRRbsjK90BHg",
+  "stream_date": "2026-05-24",
+  "duration": "52:01",
+  "summary": "Simon Black's 'Time Flies' delta-neutral weekly index strategy (put diagonal below + call broken-wing butterfly above, 7-14 DTE on RUT/SPX/QQQ; exit +10% of BP or 24h before expiry). Return guest with a 3-yr weekly-published track record (2025: ~103%; 2026 YTD: 19 trades/16 wins). Write-up: strategies/time_flies.md (conviction 2.5/5).",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

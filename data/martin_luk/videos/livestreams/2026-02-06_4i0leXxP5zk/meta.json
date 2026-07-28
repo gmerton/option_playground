@@ -1,0 +1,19 @@
+{
+  "video_id": "4i0leXxP5zk",
+  "url": "https://www.youtube.com/watch?v=4i0leXxP5zk",
+  "title": "$SNDK LoD | 5 Feb 2026",
+  "channel": "martinlukkt",
+  "channel_id": "UCB6jWJJvO_sWZ2PwgmMcxCw",
+  "stream_date": "2026-02-06",
+  "duration": "1:37:45",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

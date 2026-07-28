@@ -1,0 +1,233 @@
+{
+  "video_id": "3ELOuIvRims",
+  "date": "2026-07-14",
+  "title": "Software strength and semi weakness | 14 Jul 2026",
+  "observed_trades": [
+    {
+      "date": "2026-07-14",
+      "ticker": "NBIS",
+      "direction": "short",
+      "action": "stopped_out",
+      "setup": "Overnight short in a weak fast-mover following the declining 9 EMA (semi/AI-infra weakness theme); gap-up open went against the position.",
+      "entry_basis": "Prior-day short below declining 9 EMA (entry pre-dated this stream)",
+      "stop": "Stop at/near high of day; gap up ~1% through it, roughly 2x original risk",
+      "source": "2026-07-14_3ELOuIvRims@59:02",
+      "confidence": "stated",
+      "notes": "Captions garble it as 'FBS' (59:02), 'Naps/NABS' (62:37-64:02), 'Napas' (67:57), 'npias/Nepius' (116:12) — all read as NBIS (Nebius). 'you can see how I got stopped out on lights and FBS at the open'; 67:57 confirms 'Napas and Lights... only like 1%' gap, 'around double my original risk'. He also explains preferring to short NBIS directly over a leveraged inverse ETF (illiquid, stock volatile enough).",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "LITE",
+      "direction": "short",
+      "action": "stopped_out",
+      "setup": "Short at first bounce into the declining 50 EMA after the stock broke down from its May-June range; stock had served the 15 EMA all year, so loss of MAs marks character change. Gap-up open stopped him out.",
+      "entry_basis": "First bounce into declining 50 EMA after range breakdown/retest",
+      "stop": "Stop hit on gap-up open (~1% gap, about 2x original risk)",
+      "source": "2026-07-14_3ELOuIvRims@59:02",
+      "confidence": "stated",
+      "notes": "Captions render it 'lights'/'light' throughout (34:58, 59:02, 67:57) — interpreted as LITE (Lumentum). 'how I got stopped out on lights and FBS at the open'; 67:57: 'Napas and Lights did... probably only like 1%'.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "LITE",
+      "direction": "short",
+      "action": "reentry",
+      "setup": "Re-shorted the same 50 EMA first-bounce setup intraday after the open stop-out; got stopped again but is willing to take a few tries until the stock proves him wrong.",
+      "entry_basis": "Bounce/push into the declining 50 EMA (daily) and 15-min EMAs",
+      "stop": "Tight intraday stop (hit again: 'stops me again on this')",
+      "source": "2026-07-14_3ELOuIvRims@32:12",
+      "confidence": "inferred",
+      "notes": "32:12 'stops me again on this... I'm going to keep trying this thing'; 33:36 'Let's see how many times it's going to stop me out' — surrounding discussion (34:58-37:38) is all about 'light' (LITE) at the 15/50 EMA, so the repeated-stop ticker is inferred to be LITE. Re-entry itself filled and stopped again today.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "MU",
+      "direction": "short",
+      "action": "hold",
+      "setup": "Existing short in memory/storage-sector weakness (semis breaking down); this exposure is why he passed on shorting Western Digital ('too much exposure on the same sector').",
+      "entry_basis": "",
+      "stop": "Stops in place ('keep my shorts... let the stops working', 113:16)",
+      "source": "2026-07-14_3ELOuIvRims@29:09",
+      "confidence": "stated",
+      "notes": "Caption: 'I've already got MUNS and DK' while discussing shorting Western Digital (WDC) — interpreted as MU and SNDK (Micron and SanDisk, same storage sector as WDC). Ticker interpretation uncertain; position itself stated. Held into the close (113:16, 120:32 'the shorts that I'm holding').",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "SNDK",
+      "direction": "short",
+      "action": "hold",
+      "setup": "Existing short in memory/storage-sector weakness alongside MU; cited as reason not to add a WDC short (sector exposure cap).",
+      "entry_basis": "",
+      "stop": "Stops in place ('keep my shorts... let the stops working', 113:16)",
+      "source": "2026-07-14_3ELOuIvRims@29:09",
+      "confidence": "stated",
+      "notes": "From garbled 'MUNS and DK' — the 'DK' fragment read as SNDK (SanDisk), storage peer of WDC. Ticker interpretation uncertain; the fact he holds two same-sector shorts is stated. Held into the close.",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "IONQ",
+      "direction": "short",
+      "action": "cover",
+      "setup": "Quantum-name short swing held about three days; covered on strength last Tuesday, which he says was too early since the stock fell another ~10% afterward.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-07-14_3ELOuIvRims@109:07",
+      "confidence": "stated",
+      "notes": "Caption: 'like IQ I think I covered it too early. I covered it on Tuesday, last Tuesday, and it's going down for another 10%' — 'IQ' interpreted as IONQ given the immediately following 'for the quantum shorts I only hold them for like three days' (109:57). Past trade recounted as a lesson on covering shorts too early.",
+      "fill_timing": "last tuesday"
+    }
+  ],
+  "principles": [
+    {
+      "category": "market_read",
+      "text": "A gap up into declining 9/21 EMAs and prior resistance after a big rally is not healthy action — those levels are where to focus short entries.",
+      "timestamp": "07:09"
+    },
+    {
+      "category": "market_read",
+      "text": "A strong Russell/IWM weekly historically lowers the odds of a >15% correction in SPY/QQQ — but treat it as reference only, never as a standalone reason to buy or sell.",
+      "timestamp": "06:26"
+    },
+    {
+      "category": "risk",
+      "text": "Cap same-sector exposure: even if a setup is good, skip it when you already hold multiple positions in that sector on the same side.",
+      "timestamp": "29:09"
+    },
+    {
+      "category": "entry",
+      "text": "The first pullback (long) or first bounce (short) into the 50 EMA after a breakdown/character change is a high-quality entry, especially in a stock that previously respected its moving averages closely.",
+      "timestamp": "36:44"
+    },
+    {
+      "category": "process",
+      "text": "Be willing to take a few tries at a high-conviction level with tight stops until the stock proves the thesis wrong.",
+      "timestamp": "37:20"
+    },
+    {
+      "category": "sizing",
+      "text": "Pre-compute position size before the open: shares = (account risk %, e.g. 3%) / (stop distance %). ~1% stop -> ~3x risk in position value, 1.5% stop -> ~2x; wider than 1.5% -> size down further.",
+      "timestamp": "51:16"
+    },
+    {
+      "category": "risk",
+      "text": "Place the stop order immediately after the entry fills — never sit in a position without a working stop.",
+      "timestamp": "57:44"
+    },
+    {
+      "category": "risk",
+      "text": "Use market orders (not stop-limits) for stop losses so the exit is guaranteed to fill when the stop price is hit.",
+      "timestamp": "60:23"
+    },
+    {
+      "category": "risk",
+      "text": "Overnight gap risk is part of the game and roughly symmetric; a wider stop does not reduce the chance of a close landing near your stop, so don't widen stops to 'avoid' gaps.",
+      "timestamp": "67:15"
+    },
+    {
+      "category": "process",
+      "text": "Prefer shorting the stock itself over inverse/leveraged ETFs: the ETFs are less liquid, a volatile underlying doesn't need leverage, and every ETF forces you to track a second chart.",
+      "timestamp": "63:40"
+    },
+    {
+      "category": "psychology",
+      "text": "You don't have to be net bullish or bearish to be profitable — there is more than one correct play; in a polarized tape being in the right stock matters more than the directional call.",
+      "timestamp": "73:50"
+    },
+    {
+      "category": "process",
+      "text": "Review charts manually across sectors: the act of filtering hundreds of charts is itself how you read relative strength/weakness and the general market.",
+      "timestamp": "75:15"
+    },
+    {
+      "category": "entry",
+      "text": "Let where the market opens relative to key levels (declining EMAs, unfilled gaps, AVWAP) decide timing: if the open favors your bias, take entries in the first 15-30 minutes; if it opens flat/weak against your bias, wait for the bounce into those levels.",
+      "timestamp": "79:10"
+    },
+    {
+      "category": "sizing",
+      "text": "Leverage doesn't change per-trade risk when risk is defined by tight stops; it lets you hold many small-risk positions at once (e.g. >10 at ~25% average size) and finance new trades with open profits when the market is paying.",
+      "timestamp": "88:30"
+    },
+    {
+      "category": "process",
+      "text": "The weekly/daily chart is the thesis and the lower time frames are only execution — take intraday entries only in the direction that aligns with the higher-time-frame read, and return to the big picture when time frames conflict.",
+      "timestamp": "94:17"
+    },
+    {
+      "category": "entry",
+      "text": "Anchor entries to daily levels (9/21/50 EMA) with all the clues lining up — theme strength/weakness, relative strength, distribution candles (big red bars, long upper wicks) — rather than a single intraday candle pattern; exact intraday trigger can stay discretionary once the daily context is right.",
+      "timestamp": "105:36"
+    },
+    {
+      "category": "process",
+      "text": "New traders should be more systematic about entry rules — it reduces overtrading and makes it clear whether an entry is solid.",
+      "timestamp": "104:23"
+    },
+    {
+      "category": "exit",
+      "text": "Treat shorts as short swings of a few days (shorter holds than longs) outside of true bear markets — but beware covering into ordinary strength too early.",
+      "timestamp": "109:24"
+    },
+    {
+      "category": "psychology",
+      "text": "In choppy markets, mostly sit in cash but keep working: study relative strength across sectors and run imaginary trades (where to enter, whether a scary bounce should stop you) so you don't panic-cover or panic-sell when holding real positions.",
+      "timestamp": "114:38"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "59:02",
+      "caption_text": "lights",
+      "context": "Stopped out on it at the open after a gap up; earlier described as serving the 15 EMA all year and making its first bounce into the 50 EMA after losing its May-June range — his repeated short.",
+      "guess": "LITE",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "59:02",
+      "caption_text": "FBS",
+      "context": "'I got stopped out on lights and FBS at the open' — paired with the other overnight short that gapped up ~1% against him (later called 'Napas').",
+      "guess": "NBIS",
+      "confidence": "uncertain"
+    },
+    {
+      "timestamp": "62:37",
+      "caption_text": "Naps / NABS / Napas / npias / Nepius",
+      "context": "The stock he is shorting; viewer asks why not use a leveraged inverse ETF instead. He says the underlying is already a really fast, volatile mover. Also used for the 'imaginary trade' walkthrough at 116:12 (drifting lower under the declining 9 EMA).",
+      "guess": "NBIS",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "29:09",
+      "caption_text": "MUNS and DK",
+      "context": "'I kind of like shorting this Western Digital, but I've already got MUNS and DK... too much exposure on the same sector on the short side.' Same sector as WDC (memory/storage).",
+      "guess": "MU + SNDK",
+      "confidence": "uncertain"
+    },
+    {
+      "timestamp": "109:07",
+      "caption_text": "IQ",
+      "context": "'IQ I think I covered it too early... on Tuesday, last Tuesday, and it's going down for another 10%' — immediately followed by 'for the quantum shorts I only hold them for like three days'.",
+      "guess": "IONQ",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "42:26",
+      "caption_text": "crowd",
+      "context": "'only strength and crowd is approaching the previous candle high, the all-time highs' — a leading software name near ATH; watchlist commentary only, not traded.",
+      "guess": "CRWD",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "97:28",
+      "caption_text": "This island here is doing really well",
+      "context": "Mentioned amid 'all the software names are doing really well'; a software name performing strongly. No other identifying detail.",
+      "guess": "?",
+      "confidence": "uncertain"
+    }
+  ]
+}

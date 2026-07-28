@@ -1,0 +1,321 @@
+[00:00] In this video, I'm going to show you the four principles that I followed to successfully sell cash secured puts in the last 6 months. In fact, following these principles allowed me to collect
+
+[00:11] over 218K in premiums. And for full transparency, that was about a 22% return in the portfolio. Now, remember, this is not financial advice. I'm just sharing what I'm personally doing for
+
+[00:23] educational purposes only. Results may vary, but let's go ahead and jump into it. I want to show you these principles and exactly how I use them in the portfolio as you could see. And if
+
+[00:33] you're not subscribed to the channel yet, please be sure to do so if you want to follow along my journey to hit my 8 figureure goal. Also, if you get any value out of this video, please give it
+
+[00:42] a thumbs up. So, let's go ahead and dive into it. I'm going to go to this tab where we're going to look at the last 6 months. As you could see, 218K. And remember, results vary, but
+
+[00:53] following these principles definitely helped me uh collect this much premium in the past 6 months. So, let's go ahead and dive into it. Before we dive into it, if you do want my free trade ideas,
+
+[01:04] I give those away on my Instagram and my free newsletter. So, be sure to check those out in the description below. But, let's go ahead and dive into it. How I collected 218K in premiums in the past 6
+
+[01:17] months. And it came down to these four principles which most people don't get right. Okay? And I want to show you because I've made many mistakes in the past. I've blew up a six-figure account
+
+[01:27] in the past and that really hurt because I didn't have these principles in place. But because I went through those lessons, I was able to come up with these principles that have worked very
+
+[01:37] very well for me and as well as my clients. So number one is understanding the VIX cash allocation levels. I'm going to talk about the fear and volatility index. If you don't know what
+
+[01:47] this is, every trader must know what this is before selling options, okay? Because this is going to save you in times where we are at all-time highs like we are now and kind of predicting
+
+[02:00] the crash, the next crash, and then also when we do have crashes, when to know when the bottom is in so that you could take full advantage of it. Okay, so I'm going to show you exactly how to use it,
+
+[02:09] how I've been able to use it very successfully. Number two is understanding the overall macro environment. I'm going to show you exactly how to tell if we are in a bull
+
+[02:18] market, if this bull market is going to continue or are we going to be in a bare market or if is the bare market going to continue. So, um understanding that is really going to help you uh with your
+
+[02:30] trading because obviously if you don't know which direction we're going in, then it's very hard to place the right options trade. Now, number three is understanding and identifying key levels
+
+[02:40] on the chart. relative strength index and Ballinger bands are just a couple technical indicators that I utilize to help me succeed with trading. And then number four is choosing the right option
+
+[02:51] strategy that meets your risk profile and puts the odds in your favor. Okay? And that's 90% of what I do is selling options. So selling cash secured puts, which we're going to talk about a
+
+[03:04] majority of, selling covered calls just in case you get assigned shares, which is totally fine. at least you get assigned a good asset, right? Um, and you could generate income off that. And
+
+[03:15] then number three, I'm going to talk a little bit about LEAPS call options, which is a buying option strategy, but um, you know, has time on it. So, it's a little bit safer than buying something
+
+[03:27] that's going to expire in the next 30 to 90 days. So, I'll show you exactly how I do that. Now, this not only worked for me, but it's also worked for 250 members here in Options Trading University. As
+
+[03:39] you can see, we have a um a section where people share their inspiration. Just today, it's July 15th. Um you know, this client here, nice u you know, nice win inspiration there, right? Sarah
+
+[03:51] here, Jason here, all applying the principles that I teach here in Options Trading University. So, if you do want access to that and you want access to my Ryan's
+
+[04:02] Trades channel, as well as my leaps, entries, and exits, that'll be at the top of the description below. Um, and you could even watch some of our client testimonials. I post all of them here on
+
+[04:13] a weekly basis. So, check some of those out, book a call with me or one of my team members, and I look forward to working with you. But let's go ahead and dive into it. So, understanding the VIX.
+
+[04:23] All right. So, what is the VIX? Well, when VIX is high, options premiums are usually overpriced. So, when you're buying options, right, when people are buying options, they're usually paying
+
+[04:35] to own that option. Okay? And sometimes those options are overpriced, especially put options when the market is going down because they're fear-based products, right? The more the market's
+
+[04:46] going down, the more people are buying puts and the more expensive they are. Now, that's good for put sellers like me because I can sell expens expensive options. Um, so that gives me an edge in
+
+[04:58] the market. All right. Now, if we take a look at VIX, okay, this is the fear and volatility index of the S&P 500. It's VIX. So make sure this ticker is in your, you know, on your watch list. But
+
+[05:10] basically what it shows is is the fear high or is it low? Now right now it's around 17. So there if we go to my chart, okay, VIX 15 to 20 is slight fear. And when we're at that level, I
+
+[05:25] usually have 50 to 70 75% of my portfolio allocated to positions. meaning I only have 25% cash to upwards of 50% cash. Now, right now I have about 15% cash. So, I'm not quite following my
+
+[05:42] VIX allocation levels. I'm a little bit more aggressive, but I know that um I'm not, you know, I don't have zero cash. So, I do have cash ready to go. So, this kind of keeps me in check. And yes,
+
+[05:55] sometimes I'll be outside of these ranges, but um you know, these ranges can be adjusted to meet your risk tolerance. So, that's the nice part about it. But I do have cash and I'm
+
+[06:05] ready for um a potential pullback in the markets or a VIX spike. Now, let me show you what happened during the tariff crash back in April. Okay, the VIX went all the way up to 60. Now, we haven't
+
+[06:18] seen this since the previous year, August um 5th, when we had the Japanese yen carry trade, which caused the markets to go down. And then the last time we saw it before that was in 2020.
+
+[06:29] So, this happens only once every few years. Okay? So, this is a lifetime opportunity right here. And what I did actually when VIX hit 60 was I I put 100K more into my portfolio and went all
+
+[06:43] in. And that ended up being the bottom. And that was the best investment I could ever make. Right? So, how was I able to tell? Well, right here when um QQQ went all the way down to 403, that's when the
+
+[06:57] VIX went all the way up to 60. Okay? And if you go back to that August 5th, 2024 crash, okay, you could see right here, August 5th, okay, we kind of dropped off a cliff and the same thing happened. All
+
+[07:11] right? And then even back um you know if you search all the way back to COVID during 2020 we had this massive crash right here okay which was the fastest stock market crash since 1987. Okay same
+
+[07:24] thing on the VIX. The VIX went all the way up. I saw it print 97. Okay. So that was the highest I've ever seen VIX trade. All right. And that would have been the most the best opportunity to go
+
+[07:37] allin and unfortunately I actually lost a lot of money when that happened because I didn't understand the VIX cash allocation principles. Okay. So this has saved me um hundreds of thousands of
+
+[07:50] dollars because I lost over 100K and I came up with this strategy which has helped me you know through the 2022 bare market and through the past few crashes that we've had. So just be aware of
+
+[08:02] this. When the VIX is sub 15 and we're not quite there yet, okay, this is that 15 level. When we go below this, when we go below 15, we are at all-time highs and all-time greed and confidence. And
+
+[08:15] this is when you have to listen to that Warren Buffett quote where it says, "Be fearful when others are greedy and greedy when others are fearful." So people were fearful here. I was greedy.
+
+[08:26] and people uh you know when it goes below 15 people are greedy and that's when I'm fearful and I definitely have more cash on the sidelines because usually what we see is when the VIX is
+
+[08:38] trading at these low levels okay we have these VIX spikes all right as you can see boom boom and then boom and that's when the market goes down right we have these nice you know pullbacks boom big
+
+[08:51] pullback crash right and we've had these along the way so we might be approaching ing that uh you know in the next few weeks by the time you're watching this video and it doesn't matter if you're
+
+[09:01] watching this video a year later you could kind of look at the chart and say okay you know we're at are we at all-time highs yes where's the VIX at is it below 15 if yes okay maybe I should
+
+[09:13] be a little bit more fearful and have some cash ready okay so that is the VIX cash allocation levels because what um average traders do and this is unfortunately 99% of people because
+
+[09:24] there's a lot of people on YouTube that teach trading, but they don't talk about cash capital allocation and portfolio management, right? They're just talking about, oh, well, you take this trade
+
+[09:34] and, you know, hopefully it goes to this area and then you exit, right? Um, that doesn't work long term. Okay? You have to be an efficient capital manager. All right? So this is exactly how I'm able
+
+[09:47] to do that efficiently because you don't want to have be allin at the top right into this a trade that looks like a perfect setup and the overall market starts tanking and pulls your stock down
+
+[10:00] as well and then you're pretty much screwed at that point. So um that is the VIX capital allocation. So if you have to screenshot this, make sure to do that. 10 to 15 VIX, you know, have more
+
+[10:12] cash on the side. 15 to 20 where we're at now. You could have, you know, 25 to 50% cash. 20 to 30 VIX, you could be allin technically. And then 30 plus is allin plus, you know, transfer. I'm
+
+[10:24] usually transferring uh money out from my checking savings and putting it into new money into my brokerage account. Okay, so that is that. Now, the next one is understanding the macro environment.
+
+[10:36] Okay, we're going to get into the trading strategy, don't worry. But these things are going to protect you. Okay, these things have protected me from losing money. It's protected me and
+
+[10:47] actually made me very successful with trading and being able to do it full-time. Um, you know, technically retired. Okay, so understanding the macro environment, we are currently in a
+
+[10:57] lowering interest rate environment. Cheaper for businesses and consumers to borrow money and spend. This is a good thing. Now, how are we able to tell that? Well, this is something I stumbled
+
+[11:08] upon actually right when the um 2022 bare market started. All right, so if we go to the CME group.com/market/interest rates, okay, this is called the CME Fedwatch tool. You're going to click on
+
+[11:24] aggregated and this is going to show you where you know the interest rates are at. Okay, these are the basis points that are they're at. And every time, you know, this is a lower interest rate.
+
+[11:34] This is a lower interest rate. Lower, lower, lower. Every time this thing says 55% or more going into a Fed meeting since 1998, it's been right 100% of the time. So, this is telling us right now
+
+[11:50] that, you know, as of recording this video, it's July 15th, that we are going to get 92% in interest rate cut. Okay, 92% odds of an interest rate cut in October of 2025. Okay, so if going into
+
+[12:05] that Fed meeting in October, this thing is still above 55% or, you know, at 92%, we are getting an interest rate cut. So I see an interest rate cut being priced in in October, in potentially December
+
+[12:18] or January of next year, another one in April of next year, another one in July of next year, right? and then potentially one at the end of next year as well. Okay, so we see 1 2 3 4 five
+
+[12:32] interest rate cuts coming. Now that is a good thing. That means the stock market will continue upward because more liquidity will go into the markets. Businesses will borrow more, right? They
+
+[12:44] could pay with their employees. Their employees make more. Their employees borrow on credit cards and auto loans and student loans and all the kinds of stuff, right? And all of that money ends
+
+[12:53] up back in the stock market. So that's what we want to see when we had the 2022 um bare market. Okay. And I will go ahead and put this to the weekly chart so you can see each candlestick will be
+
+[13:06] one week. All right. when this thing happened. Okay, right at the peak right here back in November of 2021 is when the Fed, the Federal Reserve, okay, Jerome Powell
+
+[13:21] said, "We are going to start raising interest rates." Okay, they lowered interest rates after COVID to stimulate the economy. The economy was shut down. That really hurt the economy. So, they
+
+[13:31] said, "You know what? We're going to bring interest rates to basically zero. all the money can be borrowed at virtually nothing, right? Such low rates that um it made sense to
+
+[13:43] borrow, right? And that pushed the markets up drastically. Okay? But it pushed it up too high and it caused inflation. So the Fed said, "Okay, now we have to basically start raising rates
+
+[13:54] again to bring this inflation in check." And that immediately when they announced that, that's when the market started rolling over. Okay? And if you didn't have the CME Fed Watch tool or you
+
+[14:06] weren't paying attention to the Federal Reserve, then you couldn't tell if you know interest rates are going to be raised or cut, right? So, how would it look if the interest rates are going to
+
+[14:16] be raised? Well, it would basically look um kind of a mirror opposite of this. So, it would be like this. We would be trading here at, you know, 300 basis points um as far as rates go. And then
+
+[14:29] it would be like, okay, they're going to raise rates. they're going to raise rates the following month. Maybe they're going to raise again in March and April and right so it would just look like
+
+[14:37] kind of an opposite and that's what you don't want to see. Once you see that you'll be seeing me make videos on YouTube like I'm getting out of the markets or I'm shorting the markets.
+
+[14:47] Okay, but for right now things are looking good. So we understand the overall macro environment. We understand interest rates are being cut. That's good. And then also, you know, things
+
+[14:59] that affect you macro headline risk like when President Trump enacted the tariffs that caused a massive crash, right? Now, that was a short-term crash. Okay? And that ended up being a V-shaped recovery.
+
+[15:13] Um, now to all-time highs, right? And I and I knew that because I said, you know what, we're still in an interest rate cutting environment. Yes, this crash could last for a few several months. It
+
+[15:24] could last for 6 months, but it eventually it's going to recover um probably sooner than later. And I was exactly right. And you could go watch my old videos during this time when all the
+
+[15:35] YouTubers were freaking out. And I said, you know what, I'm going to be buying the bottom here. I'm going to be selling cash secured puts, getting into my favorite stocks because this market is
+
+[15:43] going to recover. And it did. All right. So that's because I understood the macro environment. Hey, yes, short-term this is not good for the economy, right? tariffs aren't good, but long-term
+
+[15:56] interest rates are still very high and are being cut and the Fed could easily stimulate the economy um if needed. Okay, so that's a very very important thing to understand. All right, now the
+
+[16:08] last thing just look at the charts. All right, are we below the 200 day moving average? That's another thing I put on the chart. This little blue line right here, every time it time it crosses,
+
+[16:17] okay, it it ends up being bearish. But if it crosses it to the upside, it's bullish. Okay, so as you can see, like from literally 2023, okay, right here all the way to here, we
+
+[16:31] were trading above that 200 day moving average, we had a dip below quickly that August 5th, 2024 crash. But um if you you see that if we trade below it, okay, that's kind of when a bare market could
+
+[16:45] start. And that's where we thought we were going to be in a longerterm bare market here, but we didn't. Okay, so that's another thing just to quickly look at. Now, you know the VIX, you
+
+[16:56] know, capital allocation like a hedge fund manager. You know the macro environment like an economist. Okay, the next is more trading tools, okay? Like a professional trader. So, you have to be
+
+[17:07] able to identify key levels on the chart. You have to be able to use the relative strength index to your advantage and Ballinger bands. All right, those are my two RSI and
+
+[17:17] Ballinger bands are my two favorite indicators. So, the relative strength index is a momentum oscillator that measures overbought and oversold conditions. If it's trading at or above
+
+[17:27] 70, the stock is overbought. If it's trading below 30, the stock is oversold. Now, we're going to look at Robin Hood. I like Robin Hood as a good example because it's a fundamentally strong
+
+[17:39] company. Okay, PE ratio is 57. So people are paying 57 times earnings, which as long as it's under 100, that's that's a really good PE ratio for a high growth company like this. Okay, they have good
+
+[17:51] margins, 36% net margin last quarter. Okay, and they have tons of cash on hand. So we're going to look at Robin Hood as an example. All right, right now the RSI is trading above 70. We're
+
+[18:03] currently at 71. So we are technically overbought on the RSI. And as you can see, the stock has made quite a run and that is why we're overbought on the RSI. Now, during the crash when we were all
+
+[18:17] the way down here, okay, you could see that we were pretty much oversold here. We touched this 30 mark um almost two times and this right here was an indicator of potentially the bottom and
+
+[18:29] it went lower, but you know the this is an indicator that we were pretty much oversold. Okay, so those are good kind of you want to play contrarian, right? When things are oversold, you want to
+
+[18:41] buy and when things are overbought, right, I want to sell. And that's kind of how I look at the RSI. All right, so right here, definitely got to be more careful because we are overbought. But
+
+[18:53] understanding the macro environment, we could go much higher. So this is just something to, you know, keep in tabs. This is not an end all beall, but just gives you a good kind of understanding
+
+[19:03] of where the stock is at. Okay. Um, as far as QQQ goes, we are not overbought yet. We're just almost there, but we aren't overbought yet. So, the overall markets could go higher, which could
+
+[19:15] push Robin Hood even more um to the overbought area. Okay? And we've seen this thing overbought for many months at a time. So, you know, just keep that in mind. So, that is the relative strength
+
+[19:28] index. Now, let's talk about the Ballinger bands. This is my absolute favorite um indicator because it's a probabilities indicator. So, Ballinger bands measure how drastic price changes
+
+[19:40] are and the probabilities that the price will revert back to the mean. So, let me show you what that looks like. Okay, so every time that basically these two lines are the upper and lower Ballinger
+
+[19:52] band, that means these are two standard deviations away from the average price. Or what that means is the stock is going to stay in between those lines 95% of the time. And they'll breach those lines
+
+[20:03] 5% of the time. And when that happens, they usually the stock usually bounces back inside of the Ballinger bands and reverts back to the mean or the average price. Okay? So you see it here. Broke
+
+[20:15] this lower Ballinger band, sucked back in. Broke the lower Ballinger band, sucked back in. Lower Ballinger band, sucked back in. And same with here. Upper Ballinger band, sucked back in.
+
+[20:27] Right? So it's very predictable. Now, this stock has been kind of bouncing off this mid Ballinger band line, which actually is the 20-day moving average. But Robin Hood has a very predictable
+
+[20:37] pattern. Okay, it just kind of hugs the upper Ballinger band, bounces off the middle, and goes back up. Okay, so that's kind of what we've been doing here. And that's the Ballinger bands.
+
+[20:47] Um, so now we have the we understand capital allocation, we understand the macro environment like an economist, we understand technical indicators like a professional trader.
+
+[21:01] Now, how do we piece this all together to actually collect premium every month? Okay, so how I do it is choosing the right options strategy. I prim primarily sell options. I don't buy them because
+
+[21:17] buying an option, you have what's called theta decay, which works against you. Okay? You're paying for something that's decaying away every single day that the stock doesn't move in your favor. Now,
+
+[21:28] when I sell options, I pocket a premium upfront. And as long as that option, you know, isn't in the money, I get to keep that premium, the whole premium, and I don't have to do anything. Now, worst
+
+[21:41] case scenario, when I sell a cash secured put if the stock goes below my put price, I still get to keep the premium, but I'm forced to buy 100 shares of the stock. Worst case
+
+[21:50] scenario. So, I only do cash secured puts on stocks that I like, okay? That I'm fine owning. So, when you're first trading options, you should not be buying them. You should be selling them
+
+[22:00] via vertical spreads, which we're not going to talk about today because that's for more small accounts. Uh, but we're going to talk about cash secured puts and covered calls. Okay? This ensures
+
+[22:10] that I'm winning 80 to 90% of the time versus losing 50 to 75% of the time with buying options and relying on stop-losses. I don't set stop losses. Okay? Those don't make sense. That's not
+
+[22:22] how I trade. So, you can buy options when you get more experience. and I will go over a live example towards the end of the video. Okay, so the first thing we're going to talk about is cash
+
+[22:33] secured puts. So what that means is let's just say the stock's trading at 100. I sell a 90 strike cash secured put and I collect 500 bucks. The person that bought that put from me, they said,
+
+[22:47] "Hey, maybe they've been owning the stock since $20. They bought the stock from $20. It's at a hundred." They said, "Hey, I'll buy a put option from you because if this stock goes below 90, I
+
+[22:59] just want to be able to get rid of it and not lose any more money." Okay? So, I'm willing to pay for that because potentially on bad earnings, this stock could open up down to 80, right? And he
+
+[23:10] doesn't want to lose any more money. He wants to be able to sell those shares at $90 to me. Okay? So, I know that there's a 20% chance that that could happen, but
+
+[23:21] an 80% chance that the put I sold to him at the 90 strike is going to expire worthless. So, I get to keep the whole premium. All right, so let's just say at the end of 30 days, the stock falls down
+
+[23:33] to $91. All right, I keep I keep that whole premium and I get to do it all over again next month. I get to sell a 90 strike put option. I could even sell something further down and collect the
+
+[23:46] same amount of money. Okay, so I do that every month, right? And let's just say on the third month, I sell that 90 put option. The stock's trading at 98 and then it falls down to 88. Okay, now I
+
+[23:59] still get to keep the premium, but now I'm forced to buy 100 shares at $90. Okay? And in that moment, that's when you have to do that's when I do covered calls to generate income worst case
+
+[24:10] scenario. And I'll show you exactly how to do that. But first, let's talk about the cash secured puts. I sell 25 to 35 delta. 25 delta means 25% chance of being in the money or the stock going
+
+[24:22] below that put price and a 75% chance that it doesn't. Okay. 35 delta little bit more aggressive, right? The stock has a 35% chance of going down below your put strike, but you get right. I
+
+[24:37] would collect more money because I am risking more. I'm taking on more risk. Okay, so expiration 30 days out. That should yield me between three to 5% on the puts. Stock has to have a good
+
+[24:49] chart, good PE ratio. We already talked about that. So, let's go ahead and dive into an example. Uh remember, this is not financial advice. I'm just sharing what I'm personally doing for
+
+[24:58] educational purposes only. Results may vary. But this is the account. We have lots of cash secured puts in the account, okay? But we're going to go to Robin Hood specifically. I have the 88
+
+[25:09] puts. Okay. I have 15 of these to collect this uh to collect this much. Okay. About 3.3K. All right. Now, what's cool about that is 88 is all the way down here. Okay. So,
+
+[25:24] 88's down here. The stock basically would have to fall. Let's see how much it would have to fall for me to get assigned by expiration. So, in 17 days, the stock would have to fall 10.7%
+
+[25:37] for me to actually more 11% for me to actually get assigned 100 shares at $88 per contract. Okay? So, that's most likely not going to happen, right? But it could, right? The the risk is there.
+
+[25:52] And the risk is, hey, I'm willing to buy 100 shares at a discount down here and I'll just ride it back up. Okay? But if it doesn't go down before uh below that then I just keep the premium and I do it
+
+[26:04] all over again next month. So that's what I love about the cash secured puts. I can do this every month and it's very predictable. Okay. So I'm going to go to Robin Hood. I'm going to go to the
+
+[26:13] options chain. And what I typically do is I'll go like 30 days out, 30 to 45 days out. Sometimes 25 days, but we're going to go let's just go to 30 24 days out. Okay. So this will be like right
+
+[26:27] within a month. I like to go to, you know, somewhere around that 25 to 35 delta. So on a 25 delta, which is right here, that would be the 89 strike. I would collect 315, which is a 3.76%
+
+[26:43] ROI. Remember, these these numbers vary. These returns vary, and they're not guaranteed because the stock is always moving. All right. 30 35 delta would be a 5.59%
+
+[26:55] ROI. Again, results vary because the stock's continuously moving. So, you could kind of choose how much, you know, I could choose how much premium I want to collect based off of my return goals,
+
+[27:06] okay? And how much risk I want to take there. So, again, the downside, you just I would have to make sure that I'm okay owning it at that specific strike price. So, that is that. Okay. So, let's just
+
+[27:18] say, hey, I want to be super aggressive. I want the 5.59. Um, I'd sell the 94 strike, right? and I'd basically collect um 490 okay for selling that one put option but I have
+
+[27:31] to have enough collateral 95 9400 bucks to buy 100 shares if I get assigned that okay so that is exactly how to do the cash secured put now let's just say the stock falls and now I have 100 shares
+
+[27:47] well that's what the covered calls are about covered calls in case of assignment in case you in case I get assigned the shares okay I have to basically sell a covered call to collect
+
+[27:57] income. So, let's just say the stock's trading here and or I get assigned here. The stock I sell a cash secured put at um actually we'll we'll dive into the options chain so I could show you
+
+[28:11] exactly how that works. Okay, so I like to sell 30 delta covered calls, 20 to 30 days to expiration and I enter on a green day preferably um just so I could get a little further away from the
+
+[28:22] stock. But we're going to go um you know, we'll go here. Let's just pretend I got a sign today at 99 bucks. Okay. And I'll go to the 30 delta, which is it's pretty far away actually. I'll
+
+[28:35] probably go a little bit more aggressive. I'll go to the 35 delta, which is the 110 strike. So, I would collect 400 bucks. All right. And remember, this is not guaranteed because
+
+[28:45] the prices are always changing by the time you watch this. But basically, if the stock, so I sell this 110 covered call against my shares. And if the stock goes past 110, which is, you know,
+
+[28:56] there's a let's just say 35% chance that that might happen. Okay, let's just say it goes to 112 by expiration. I'll be forced to sell my shares at 110. So I'd make the difference between 99 and 110.
+
+[29:09] So I'd make $11 per share times 100, right? And I would collect this premium. So it's a double premium collection, right? I'm collecting on the share appreciation having to sell my shares at
+
+[29:21] a profit and also collecting this covered call income which is beneficial right and that's exactly how I get out of the shares I get my shares called away so that I could do the cash secured
+
+[29:33] puts again okay so that is exactly how I do that um now let's talk about the last strategy on how I increase my returns okay so what I do is I buy 70 delta leaps call options that are about I I
+
+[29:47] like to go 400 to 500 days out just to be, you know, safer, give myself enough time to be right. Stock has to be be below the middle Ballinger band or lower ballinger band and VIX has to be above
+
+[29:58] 15. So, there has to be some fear in the market. I want the market to be tanking before I buy these. So, on Hood, for instance, you know, we could buy these when it dips below this middle Ballinger
+
+[30:10] band line. I actually got leaps here. I got leaps here. I I actually even got leaps when it got close to that middle Ballinger band line, too. And I rode them up as well. So, what I'm going to
+
+[30:20] do is I'm going to wait for, you know, Robin Hood to maybe come below this middle Ballinger band line, which will be like this, right? I'm going to wait till it gets here, and I will buy leaps
+
+[30:34] call options. So, how I do that is I would go out, you know, five 549 days, Jan 15, 2027, and I would go to the 70 delta, which is the 95 strike, and I'd pay 3,400 bucks.
+
+[30:47] Okay, $34.95 to own basically control 100 shares versus buying 100 shares today, which would cost me 9,900. I'm able to do it for $34.95.
+
+[30:59] Okay, remember these will change, too. This is not guaranteed. these numbers will change, but today I could purchase right now for this amount. And then what I'll do is I'll wait for the stock to go
+
+[31:12] back up to the upper Ballinger band and I will go ahead and sell and I will exit. Okay? And usually I'm somewhere, you know, if I if I'm around 10 to 20% return in 7 days or less, I will close
+
+[31:25] it out. And you know, if I'm between 20 and 40% ROI in 4 weeks or less, I will close out that trade. Okay? Just keeping myself rules-based and principles-based. Um, and not just trying to hold on to
+
+[31:39] something and hope it keeps going up. Okay? So, that's exactly how I do the leaps call options. Um, but if you like the video, please give it a thumbs up. And I'll link another one right here
+
+[31:48] talking about my favorite strategy called the wheel strategy and exactly how I do this on my favorite stock. So, check this one out and I'll see you in the next one. Take care.

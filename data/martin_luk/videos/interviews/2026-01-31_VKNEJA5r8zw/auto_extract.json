@@ -1,0 +1,524 @@
+{
+  "video_id": "VKNEJA5r8zw",
+  "date": "2026-01-31",
+  "title": "+969% Return in 1 Year: The Pullback Strategy of a Trading Champion",
+  "observed_trades": [
+    {
+      "date": "2026-01-31",
+      "ticker": "TQQQ",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Parabolic-bottom long after 3 consecutive gap-down days post-Liberation-Day; QQQ ~15% below daily 9 EMA (TQQQ ~50% below 9 EMA), extremely oversold reversal",
+      "entry_basis": "1-minute opening-range-high breakout off the panic gap-down low",
+      "stop": "low of the breakout bar (~2%)",
+      "source": "2026-01-31_VKNEJA5r8zw@156:42",
+      "confidence": "stated",
+      "fill_timing": "April",
+      "notes": "Called his best trade of 2025; first parabolic long; planned in advance, target was hourly 9 EMA, sold all into strength near 5-min 150 EMA; ~13R in half an hour"
+    },
+    {
+      "date": "2026-01-31",
+      "ticker": "BBAI",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Pullback/breakout in AI theme; gap up closing prior unfilled gap, building higher lows above EMAs after a Monday reversal off gap-fill support",
+      "entry_basis": "1-minute opening-range-high breakout on gap-up day",
+      "stop": "wide (early-2025, before he tightened stops)",
+      "source": "2026-01-31_VKNEJA5r8zw@146:23",
+      "confidence": "stated",
+      "fill_timing": "February",
+      "notes": "Trailed/sold ~15% into strength when extended on 1-hr; closed remainder on first close below 9 EMA"
+    },
+    {
+      "date": "2026-01-31",
+      "ticker": "HOOD",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Leader after April correction; standard breakout off small base above anchored VWAP and rising EMAs, found support on 21 EMA and closed above 9",
+      "entry_basis": "breakout of the small base",
+      "stop": "",
+      "source": "2026-01-31_VKNEJA5r8zw@164:40",
+      "confidence": "stated",
+      "fill_timing": "April",
+      "notes": "Sold all into strength on a high-volume reversal; admits trailing the 9 EMA would have captured another ~50%"
+    },
+    {
+      "date": "2026-01-31",
+      "ticker": "OKLO",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Breakout below 50 EMA on a reversal pin bar / change-of-character; closed strong above 9 then gapped up next day",
+      "entry_basis": "breakout",
+      "stop": "",
+      "source": "2026-01-31_VKNEJA5r8zw@172:41",
+      "confidence": "stated",
+      "fill_timing": "",
+      "notes": "Calls it a 'fair' trade that worked mostly because market was trending up post-April; sold into strength, closed on first close below 9 EMA"
+    },
+    {
+      "date": "2026-01-31",
+      "ticker": "FUTU",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Standard inside-day / VCP-style breakout, tight handle riding the 9 EMA",
+      "entry_basis": "inside-bar breakout",
+      "stop": "",
+      "source": "2026-01-31_VKNEJA5r8zw@168:27",
+      "confidence": "stated",
+      "fill_timing": "July",
+      "notes": "Sold into strength early because market felt extended (3 green months); would now set stop below 9 EMA candle low"
+    },
+    {
+      "date": "2026-01-31",
+      "ticker": "SMR",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Breakout of previous day high (says pullback into 21/50 EMA cross would have been the better entry)",
+      "entry_basis": "1-minute opening-range-high breakout",
+      "stop": "opening price (~2%)",
+      "source": "2026-01-31_VKNEJA5r8zw@177:14",
+      "confidence": "stated",
+      "fill_timing": "",
+      "notes": "Aggressive entry into choppy first 30 min; worked but says 5-min candle low would have been a better stop"
+    },
+    {
+      "date": "2026-01-31",
+      "ticker": "PL",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Pullback on an earnings-power (EP) move; opening-range-high fakeout then faded back",
+      "entry_basis": "5-minute candle breakout after the fake-out",
+      "stop": "5-minute breakout candle low (~2.3%)",
+      "source": "2026-01-31_VKNEJA5r8zw@180:44",
+      "confidence": "stated",
+      "fill_timing": "",
+      "notes": "Planet Labs; satisfied with entry; sold all into strength, stock ran another ~30% (sell-rule weakness)"
+    },
+    {
+      "date": "2026-01-31",
+      "ticker": "IONQ",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Quantum theme; weekly pin bar + inside week (clean VCP/cup-with-handle) standout; tried several times and got stopped before this fill",
+      "entry_basis": "5-minute / opening-range-high breakout",
+      "stop": "tight (tight-stop style)",
+      "source": "2026-01-31_VKNEJA5r8zw@185:34",
+      "confidence": "stated",
+      "fill_timing": "September",
+      "notes": "Transcript caption 'INQ'/'IQ' = IONQ; one of his biggest contributors (highest R); sold into strength"
+    },
+    {
+      "date": "2026-01-31",
+      "ticker": "RGTI",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Same quantum theme/sector/day as IONQ; weekly above 9 EMA with inside week, small flag above 9 EMA",
+      "entry_basis": "opening-range-high breakout (anticipated wick play)",
+      "stop": "",
+      "source": "2026-01-31_VKNEJA5r8zw@191:02",
+      "confidence": "stated",
+      "fill_timing": "September",
+      "notes": "Caption 'R and Q'/'RGT'/'algi'/'alg' = RGTI; trimmed aggressively into strength"
+    },
+    {
+      "date": "2026-01-31",
+      "ticker": "QBTS",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Quantum theme; very tight weekly inside bar above 21 EMA; admits a near-random entry that ugly on daily",
+      "entry_basis": "5-minute reversal off the low",
+      "stop": "tight",
+      "source": "2026-01-31_VKNEJA5r8zw@193:14",
+      "confidence": "stated",
+      "fill_timing": "",
+      "notes": "Says he would NOT take this entry again (would wait for breakout/pullback); gave him conviction to enter quantum sector"
+    },
+    {
+      "date": "2026-01-31",
+      "ticker": "TSLA",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Pullback to daily 9 EMA and unfilled Friday gap near anchored VWAP; big weekly base building higher lows",
+      "entry_basis": "5-minute breakout",
+      "stop": "",
+      "source": "2026-01-31_VKNEJA5r8zw@199:07",
+      "confidence": "stated",
+      "fill_timing": "",
+      "notes": "Calls it a 'fair' entry (9 EMA pullback = lowest win rate); sold into strength"
+    },
+    {
+      "date": "2026-01-31",
+      "ticker": "AMD",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Breakout of previous day high from very tight area, EMAs coiled; gapped up 3 days later on news (possibly OpenAI deal)",
+      "entry_basis": "breakout of previous day high",
+      "stop": "",
+      "source": "2026-01-31_VKNEJA5r8zw@204:51",
+      "confidence": "stated",
+      "fill_timing": "",
+      "notes": "~42R; sold into strength, closed on extended reversal bar; calls the gap-up a lucky outlier"
+    },
+    {
+      "date": "2026-01-31",
+      "ticker": "AAOI",
+      "direction": "short",
+      "action": "entry",
+      "setup": "Recounted short examples; rally/pullback into declining EMAs / anchored VWAP rejection",
+      "entry_basis": "5-minute candle breakdown",
+      "stop": "stated before entry (controllable loss)",
+      "source": "2026-01-31_VKNEJA5r8zw@219:12",
+      "confidence": "inferred",
+      "fill_timing": "November",
+      "notes": "Caption 'echof' is garbled; context is a Nov short into 21 EMA gap-up rejection above 50; ticker uncertain - flagged in ambiguous_tickers"
+    },
+    {
+      "date": "2026-01-31",
+      "ticker": "GDX",
+      "direction": "short",
+      "action": "entry",
+      "setup": "Parabolic short of gold via gold-miners ETF (faster than gold) near a top; got the gap down next day",
+      "entry_basis": "short near the parabolic top / resistance",
+      "stop": "small (~1% position risk)",
+      "source": "2026-01-31_VKNEJA5r8zw@213:21",
+      "confidence": "stated",
+      "fill_timing": "October",
+      "notes": "Gold miners ETF (he said inverse but means shorting miners); ticker = GDX (or DUST inverse) - flagged ambiguous; 36hr trade up ~30%, sold into strength on second gap-down"
+    },
+    {
+      "date": "2026-01-31",
+      "ticker": "UPS",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Pullback to hourly 21 EMA / prior swing high, but too extended on daily and right side of base not clean",
+      "entry_basis": "pullback buy (admits middle-of-nowhere)",
+      "stop": "low of entry day",
+      "source": "2026-01-31_VKNEJA5r8zw@113:04",
+      "confidence": "stated",
+      "fill_timing": "",
+      "notes": "LOSER; stopped out next day or two; lesson: too aggressive, entry too extended after long market rally"
+    },
+    {
+      "date": "2026-01-31",
+      "ticker": "QS",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Pullback into rising hourly 9/21 EMA after gap up; bounce attempt off oversold daily EMA near prior swing high",
+      "entry_basis": "1-minute breakout of previous bar high",
+      "stop": "low of breakout bar / previous bar (tight, instead of low of day)",
+      "source": "2026-01-31_VKNEJA5r8zw@115:41",
+      "confidence": "stated",
+      "fill_timing": "",
+      "notes": "LOSER; used to illustrate his intraday pullback entry/stop mechanics"
+    },
+    {
+      "date": "2026-01-31",
+      "ticker": "CRCL",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Pullback into daily 9 EMA / prior highs but stock in strong downtrend (21 & 50 declining), below anchored VWAP",
+      "entry_basis": "pullback/bounce attempt into 9 EMA",
+      "stop": "tight",
+      "source": "2026-01-31_VKNEJA5r8zw@119:31",
+      "confidence": "inferred",
+      "fill_timing": "",
+      "notes": "LOSER (small); caption 'circle' = CRCL (Circle); no higher lows in base, bad spot"
+    },
+    {
+      "date": "2026-01-31",
+      "ticker": "RKLB",
+      "direction": "short",
+      "action": "entry",
+      "setup": "Short on rally into declining 9 EMA / flattening 21, anchored VWAP resistance, distribution; but weekly still above 9 EMA",
+      "entry_basis": "5-minute breakdown of previous bar",
+      "stop": "high of day",
+      "source": "2026-01-31_VKNEJA5r8zw@125:00",
+      "confidence": "inferred",
+      "fill_timing": "",
+      "notes": "LOSER; caption 'rocket lab' = RKLB; stopped out days later; lesson: don't short pullback to declining 9/21 when weekly looks good"
+    },
+    {
+      "date": "2026-01-31",
+      "ticker": "SOFI",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Pullback into hourly 21 EMA only (not near daily 9), too extended on daily; eager to add exposure after missing a bounce",
+      "entry_basis": "pullback into hourly 21",
+      "stop": "",
+      "source": "2026-01-31_VKNEJA5r8zw@128:56",
+      "confidence": "stated",
+      "fill_timing": "December",
+      "notes": "LOSER; gapped down; lesson: too aggressive, entry too extended"
+    },
+    {
+      "date": "2026-01-31",
+      "ticker": "AEO",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Long off first big green candle closing above 50 (perceived character change), pullback into rising 9 / flat 21",
+      "entry_basis": "5-minute breakout",
+      "stop": "breakout bar low (~just over 2%)",
+      "source": "2026-01-31_VKNEJA5r8zw@121:21",
+      "confidence": "inferred",
+      "fill_timing": "December",
+      "notes": "LOSER; caption 'AO'/'alo'/'AEO' = AEO; 50 still trending down, failed and followed through lower"
+    },
+    {
+      "date": "2026-01-31",
+      "ticker": "QBTS",
+      "direction": "short",
+      "action": "entry",
+      "setup": "December short on pullback into 50 EMA with EMAs coiled",
+      "entry_basis": "5-minute breakdown closing below 5-min 9 EMA",
+      "stop": "wider than ideal (>3% if taken earlier breakdown)",
+      "source": "2026-01-31_VKNEJA5r8zw@139:40",
+      "confidence": "stated",
+      "fill_timing": "December",
+      "notes": "LOSER; had same-day follow-through, didn't take partials, stopped out ~2 days later; choppy December"
+    },
+    {
+      "date": "2026-01-31",
+      "ticker": "CSIQ",
+      "direction": "long",
+      "action": "entry",
+      "setup": "December flip to long when shorts stopped working; bought into solar name",
+      "entry_basis": "breakout/breakdown reclaim",
+      "stop": "",
+      "source": "2026-01-31_VKNEJA5r8zw@141:38",
+      "confidence": "stated",
+      "fill_timing": "December",
+      "notes": "LOSER; stopped out 1 day later; example of long/short flip-flopping in choppy December"
+    },
+    {
+      "date": "2026-01-31",
+      "ticker": "SRPT",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Held through a ~30-35% earnings/news gap down - his single largest loss of 2025",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-01-31_VKNEJA5r8zw@143:51",
+      "confidence": "inferred",
+      "fill_timing": "early 2025",
+      "notes": "Caption 'surf' = likely SRPT (Sarepta, known 2025 gap-down); largest loss; shared in prior interview - ticker uncertain, flagged ambiguous"
+    },
+    {
+      "date": "2026-01-31",
+      "ticker": "SNDK",
+      "direction": "short",
+      "action": "entry",
+      "setup": "November short above all EMAs that worked because market had selling pressure (non-ideal entry, favorable condition)",
+      "entry_basis": "short above EMAs",
+      "stop": "",
+      "source": "2026-01-31_VKNEJA5r8zw@218:08",
+      "confidence": "stated",
+      "fill_timing": "November",
+      "notes": "WINNER; contrast with choppy-December shorts that failed despite better entries"
+    },
+    {
+      "date": "2026-01-31",
+      "ticker": "AVGO",
+      "direction": "long",
+      "action": "entry",
+      "setup": "First breakout after a long weekly base, respected anchored VWAP on pullback; gap up above prior gap/swing high",
+      "entry_basis": "5-minute breakout",
+      "stop": "bar low",
+      "source": "2026-01-31_VKNEJA5r8zw@206:46",
+      "confidence": "inferred",
+      "fill_timing": "",
+      "notes": "Caption 'AMX' near 202:03 context (long weekly base, AI/semis) - ticker uncertain; could be AMX (America Movil) or a semi; flagged ambiguous"
+    }
+  ],
+  "principles": [
+    {
+      "category": "risk",
+      "text": "Trade with very tight stops (mostly under 2.5%, rarely over 3%) and a low win rate; tightening a stop from 3% to 1.5% can compensate for ~8 losing trades on a 25% return trade and 20-25R on bigger winners.",
+      "timestamp": "30:40"
+    },
+    {
+      "category": "risk",
+      "text": "Risk a fixed ~0.5% of portfolio per trade on average; risk less when trades aren't working, more (6-7%... i.e. larger size at fixed stop) only with high conviction or a profit cushion.",
+      "timestamp": "16:13"
+    },
+    {
+      "category": "risk",
+      "text": "Stop width drives position size: position size = (account risk) / (stop %). A 1.5% stop yields ~20% size, a 1-1.2% stop yields ~25-30%; do the quick math on every trade.",
+      "timestamp": "33:40"
+    },
+    {
+      "category": "risk",
+      "text": "Don't cap total margin/exposure explicitly; instead cap risk-per-trade, and let exposure (up to ~280% long) build naturally only as existing positions work and you derisk them.",
+      "timestamp": "41:12"
+    },
+    {
+      "category": "risk",
+      "text": "Always define and place the stop BEFORE entering (even when bending other rules) so every loss is known and controllable; put it at the low of day for highest win rate, or at the entry/breakout candle low to tighten.",
+      "timestamp": "118:07"
+    },
+    {
+      "category": "entries",
+      "text": "Favor pullback buys over breakouts in markets that reward them: pullbacks give earlier, lower-risk, tighter-stop entries at non-extended support, improving average price and risk/reward.",
+      "timestamp": "60:42"
+    },
+    {
+      "category": "entries",
+      "text": "The best pullback entry is the first pullback to support within a base that has higher lows, ideally at confluence where anchored VWAP + 9/21/50/150 EMA + prior swing high stack; avoid pullbacks 'in the middle of nowhere' or far extended from the 9/21 EMA.",
+      "timestamp": "69:51"
+    },
+    {
+      "category": "entries",
+      "text": "Use anchored VWAP (learned from Brian Shannon) as a key support/resistance on daily, hourly, and intraday; anchor to swing highs/lows or big gap/volume bars, and adjust the anchor to the bar price respects most - it's an art, what matters is the price reacting.",
+      "timestamp": "66:04"
+    },
+    {
+      "category": "entries",
+      "text": "Don't chase: skip an entry if price is more than ~3% above the low of day / ideal entry point.",
+      "timestamp": "24:22"
+    },
+    {
+      "category": "entries",
+      "text": "Intraday trigger is the breakout of the previous bar high after a fast flush to support; use 1-minute candles in the first ~15 min, then 5-minute candles after.",
+      "timestamp": "116:58"
+    },
+    {
+      "category": "entries",
+      "text": "Prefer a sharp V-shaped intraday recovery (buyers stepping in immediately) over a slow gradual late-day recovery; the faster the rebound, the stronger the stock.",
+      "timestamp": "101:35"
+    },
+    {
+      "category": "entries",
+      "text": "Use the weekly chart to clarify the big picture: a daily that looks ugly can be a constructive base if weekly 9>21 and price respects anchored VWAP - don't short or abandon names that are fine on the weekly.",
+      "timestamp": "94:21"
+    },
+    {
+      "category": "exits",
+      "text": "No strict sell rule; scale out ~15-20% into strength when extended on a lower time frame (especially the 1-hour), and close remainder on first close below the 9 EMA.",
+      "timestamp": "147:39"
+    },
+    {
+      "category": "exits",
+      "text": "Bias toward controlling downside over maximizing upside - he sells winners early when skeptical because his weakness is overtrading/extended entries, not leaving gains on the table.",
+      "timestamp": "167:56"
+    },
+    {
+      "category": "exits",
+      "text": "Take profits on shorts faster than longs (within ~2-3 days, into strength/weakness): mathematically a short's edge decays as price falls (a further -50% is only +75% vs +125% staying long).",
+      "timestamp": "217:38"
+    },
+    {
+      "category": "posture",
+      "text": "Focus only on the fastest-moving, highest-ADR names within a hot theme; combined with tight stops this maximizes return potential and risk/reward.",
+      "timestamp": "18:24"
+    },
+    {
+      "category": "posture",
+      "text": "Let the market dictate the setup: trade more pullbacks/breakouts/EPs/parabolics depending on what the current environment rewards; the tight-stop low-win-rate style stays constant, the entry tactic adapts.",
+      "timestamp": "27:04"
+    },
+    {
+      "category": "posture",
+      "text": "Size in percentage terms and grow position size as the account grows - thinking in absolute dollars (not %) keeps many traders from compounding (learned from Qullamaggie).",
+      "timestamp": "184:38"
+    },
+    {
+      "category": "macro",
+      "text": "Build situational awareness from three inputs: your own trade feedback (are new positions working), the indices (QQQ & IWM daily), and your watch-list flow (names migrating to leading vs lagging lists).",
+      "timestamp": "226:41"
+    },
+    {
+      "category": "macro",
+      "text": "Be most aggressive buying during index pullbacks to rising EMAs, not when indices are extended; when breadth is declining, trade less rather than forcing shorts.",
+      "timestamp": "229:48"
+    },
+    {
+      "category": "mindset",
+      "text": "Choppy/sideways markets (e.g. his December) punish tight-stop traders via flip-flopping longs/shorts and false signals; the fix is to sit out and trade less, not to keep trying to make losses back.",
+      "timestamp": "50:48"
+    },
+    {
+      "category": "mindset",
+      "text": "Beware behavioral slippage: after a losing streak or a missed leader you take random/revenge trades, which compounds the drawdown and bleeds into future decisions (missed the SNDK breakout this way).",
+      "timestamp": "242:36"
+    },
+    {
+      "category": "mindset",
+      "text": "It's okay to miss leaders and get stopped out - you can still have a great year; don't feel discouraged or chase what left without you.",
+      "timestamp": "241:51"
+    },
+    {
+      "category": "mindset",
+      "text": "When unsure whether to take a setup or sell, ask 'what would a great trader do?' - it eliminates ~90% of random/revenge trades; treat trading as a real business.",
+      "timestamp": "243:46"
+    },
+    {
+      "category": "mindset",
+      "text": "Copy mentors early, but as you gain experience adapt the system to your own personality and style (e.g. he progressively tightened stops from 5-7% to under 2.5% because it suited him).",
+      "timestamp": "36:24"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "186:44",
+      "caption_text": "INQ trade / I catch this really strong uptrend",
+      "context": "Quantum-theme leader, weekly pin bar + inside week, September; same sector/day as RGTI and QBTS",
+      "guess": "IONQ",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "191:18",
+      "caption_text": "R and Q and also RGT ... algi ... alg was the leader",
+      "context": "Quantum name traded same day/sector as IONQ; weekly above 9 EMA, inside week, small flag above 9 EMA",
+      "guess": "RGTI",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "121:21",
+      "caption_text": "Another one is AO ... if alo is really finding supports",
+      "context": "December losing long off first green candle closing above 50 EMA, pullback into rising 9/flat 21",
+      "guess": "AEO",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "119:31",
+      "caption_text": "for circle, this one is also a pullback buy which failed",
+      "context": "Long pullback into 9 EMA/prior highs on a stock in strong downtrend, below anchored VWAP",
+      "guess": "CRCL",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "125:00",
+      "caption_text": "this one is the rocket lab",
+      "context": "Short on rally into declining 9 EMA, anchored VWAP resistance; weekly still above 9 EMA",
+      "guess": "RKLB",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "143:51",
+      "caption_text": "this surf like earlier in 2025 this gap down ... already a 35% gap down",
+      "context": "Largest loss of 2025, held through ~30-35% gap down, shared in prior interview",
+      "guess": "SRPT",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "219:12",
+      "caption_text": "I took it for the echof pulls back ... hourly reversal",
+      "context": "November short into 21 EMA gap-up rejection above 50, 5-min candle breakdown",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "202:03",
+      "caption_text": "this one is AMX would be another pullback buy on the 21 and 9 EMA",
+      "context": "Long pullback/break-and-retest near anchored VWAP off a long weekly base; 1-min breakout",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "213:21",
+      "caption_text": "thus is this the gold miner ETF inverse ETF",
+      "context": "October parabolic short of gold via gold-miners ETF (faster than gold), got gap down next day",
+      "guess": "GDX",
+      "confidence": "unsure"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "video_id": "8jMuwf3_Cv0",
+  "url": "https://www.youtube.com/watch?v=8jMuwf3_Cv0",
+  "title": "Margin Management: How I Borrow Safely Without Going Broke",
+  "channel": "Paycheck To Portfolio",
+  "channel_id": "UCqweTiFXT0z9FcURR55RcRg",
+  "stream_date": "2025-08-30",
+  "duration": "17:14",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

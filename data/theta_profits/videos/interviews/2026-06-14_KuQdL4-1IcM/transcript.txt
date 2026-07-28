@@ -1,0 +1,497 @@
+[00:00] It's like a a directional trade that's that's wrapped in bubble wrap. It's a magic money rainbow. At this point, this really is a a risk-free floating butterfly. There's no way that this
+
+[00:09] position can lose. That was the genesis of the delicious and tasty burrito butterfly. My guest has a passion for coming up with very creative names for his options
+
+[00:21] strategies. Today we are going to talk about his burrito butterfly, an options strategy that aims to reduce the risk as soon as possible. Welcome to Boomer Dam. Hey John, great to be back.
+
+[00:37] Nice to have you back. Give us your 40 secondond version of what the burrito butterfly is and how it has worked for you. I've been training butterflies forever.
+
+[00:45] I love butterflies and I hate them. I have a lovehate relationship with butterflies. I love the theta that comes out of them really quick, but the uh the I don't I don't like the narrow aspect
+
+[00:53] of them and the risk that they can be. And so what I tried to do with this particular strategy, the burrito butterfly, is I tried to kind of create a hybrid. And the other thing is I
+
+[01:06] always wanted to get directional too, but I don't have the technical skills to get directional. So I've always stayed like a a delta neutral trader, a theta trader. Uh but I always wanted to. So, I
+
+[01:15] was for years I was thinking how can I combine these? How can I create a hybrid that can be somewhat directional uh and that can fix the problem that I see with the that I have with the the butterflies
+
+[01:25] or the traditional butterflies where the uh it's such a narrow range but still try to get some of that theta out of it. And that was the genesis of the delicious and tasty burrito butterfly.
+
+[01:37] And why all these funny names of your strategies? Oh, uh I don't know. burrito butterfly just kind of, you know, at some point I was just I started to refer to profits,
+
+[01:48] the profits that I would extract from the market or try to extract from the market as burritos and it just kind of stuck and it went down from hill into went went downhill from there into all
+
+[01:58] this this mayhem names. Uh I don't know I don't know why I'm why I do it but I'm kind of I'm stuck with it. Tell us a little bit about yourself. So, I've been trading options uh since
+
+[02:10] around 2006, about 20 years now. And I started off with pretty much the theta option income style of trading. I never really did the calls and the puts and I've just kind of gone from there. At at
+
+[02:24] the time when I started, I was working as a film editor, a film and video editor for the studios down in LA. And I would take I would take long drives. It would take forever. Even though I'm only
+
+[02:34] 30 minutes from the studios where I was working, just because the traffic's so terrible here in LA, it would take it would take forever to get down there. So, I would just on the way to work
+
+[02:41] every day, I would turn on Dan Sheridan and other option courses that I got and just turn that little beat up Honda of mine into a option education university. And I just continued to trade from
+
+[02:54] there. And at some point I was able to phase out from doing the 9 to5 grind and into trading options. And your burrito butterfly is a pretty elaborate uh strategy if I may say uh
+
+[03:09] with a lot of add-ons and adjustments and so on. But let's start with the basics first. What are you trying to achieve with this strategy? I think that I think that it can seem like it it's uh
+
+[03:25] that there's a lot of stuff going on. It can be it can be simplified way down though. I always have a whether it's a good habit or a bad habit, I always have a tendency to try to take things into
+
+[03:34] the stratosphere with all with a bunch of different adjustments and tweaks. And it's not necessary as you'll see. I'll point it out. It starts off with just a simple at the money butterfly. And the
+
+[03:45] the the goal at the beginning is to get somewhat directional by adding a debit spread to one side of the butterfly. And I'll show you examples here in a second. Uh but that's that's the main starting
+
+[03:56] goal. But because we have the butterfly in the center as kind of like the the pivot point there and we add the a butterfly on which direction we think the market's going to go, it creates
+
+[04:06] like a hybrid type of a trade. It's like a a semidirectional trade, but it's super soft. It's like a It's a kinder, gentler directional trade where it makes money maybe a little bit slower than a
+
+[04:19] like a call would or even a credit spread or a debit spread, but it's still it can still make a great return relatively quickly. Uh, and on the other side, it it loses money really slowly.
+
+[04:30] So, you have a lot of time to react and you're not going to get slammed into a loss. And plus, there's always that butterfly that's in the middle that has that theta working for it or kind of I
+
+[04:40] like to think of it the butterfly peak. It's sort of like the top of that peak is like a magnet that's continually pulling up the profits. So that kind of acts as a as a buffer as well.
+
+[04:50] Before we go into the details of uh your strategy, just let us define the two basic trades that you already said that it is composed of. What is a butterfly and what is a debit spread?
+
+[05:02] Yeah. So a butterfly is basically just two vertical spreads married together at the top. You have uh on the on the one side, say we do an at the money butterfly, you would have one vertical
+
+[05:13] on one side and on the other side you'd have a vertical going the other way on the other side. And the debit spread is it's a vertical as well. It's where you buy one option at a particular strike
+
+[05:24] and you sell another option at a at a further out strike. And there's call debit spreads and put debit spreads and you can use them directionally as well. I want to tell you about something new
+
+[05:35] here on Theta Profits. We are launching our first Theta training, a live course where you can learn about one strategy in depth. The very first course is completely free and all about one of the
+
+[05:49] most popular option strategies, the wheel. Paul Gunderson, an experienced trader, will teach it. You know, the wheel has been my primary option strategy for years. I've traded the
+
+[06:01] strategy more than 10,000 times. In this four-part live course, I'll show you exactly how to run the wheel. And that is how to select stocks, how to sell cash secured puts, manage assignments,
+
+[06:14] sell covered calls, and handle adjustments along the way. If you've ever wanted to learn the wheel from someone who trades it every day, I can be your mentor and I'd love to have you
+
+[06:27] join us. The first of four sessions in the course will be on Tuesday, June 16th. Check the link on the screen or in the description below to learn more and to register. I hope to see you there.
+
+[06:41] Now, let's get back to today's interview. So, let's get to your butterfly burrito. Could we look at an example trade maybe then? So, let's take a look at the butterfly
+
+[06:53] burrito. So, this is the basic setup right here. What I'm doing with these, I'm typically putting them at the money. And so, this is the S&P and I've created uh a butterfly that's at the money. That
+
+[07:05] butterfly is 15 points wide. And you can see down below we in the in the green uh the green part of the the screen there the price I get. Usually I put these on 15 points wide and I go out
+
+[07:19] about two to three days. However, I've done them at I've done them at zero DTE, 1 DTE, 7 DTE, 14 DTE. I've tried to go out further than that, but I found that they work the the best the best results
+
+[07:31] I get are 14 days or under. But this the standard trade is about two to three days out. So you can see once we get this butterfly on, I can get this butterfly pretty cheap. 75 cents for
+
+[07:43] this for a 15point wide butterfly. If I were to do this with a zero DTE, it would be uh probably over a buck. So that's one of the reasons why I like to go out a couple of days. And then
+
+[07:54] depending on direction, if I think the S&P is going up, I add the debit spread to the upside. I use the same long there as the butterfly and that will be a fivepoint spread on the
+
+[08:08] S&P. So this is an example of a bullish butterfly uh butterfly burrito where I'm expecting price to go up. And both of these two trades the max loss is what you have paid for them.
+
+[08:21] Isn't that so? Yeah. And the way that I figure out the the max loss is on Think or Swim, I just look at the risk graph here and I move my mouse over to the lower leg there
+
+[08:29] that's underwater or that's under the zero line. And when I when I put my on Thinker Swim, when I move my mouse over there, I can see exactly what that loss amount is. And typically, it's about
+
+[08:40] three bucks to 350ish. That's kind of the range I usually see. How do you determine your direction? That is a great question. Do you have any hints or tips?
+
+[08:52] No, I have no clue. I've realized a long time ago that I have absolutely no edge in guessing the direction. So that's why I'm curious. Yeah, I've I've come to the same
+
+[09:02] conclusion. And so I do have uh a chart set up that I call the the caveman chart that that works fairly well, but still I mean it's not 100% all the time. So I'll sometimes I'll use that. But with this
+
+[09:16] trade, because it's so uh it's so slow to lose money, a lot of times I'll just I'll just put the trade on and go bullish with it. I use this trade a lot for another trade that I do, like one of
+
+[09:29] my my other main trades, and that trade is always leaning bearish. So, this acts as a perfect hedge for that. If I always put this on bullish, uh it's it's like the perfect hedge. If
+
+[09:40] it because if it moves against me, the other trade will make money. So that's kind of that's kind of like my quick fix. But another thing with this is that you could with you could put this on
+
+[09:48] without direction, without any idea of direction. You could just put the butterfly on itself. This is something I've done a lot. Just put the butterfly on and don't add a wing to begin with
+
+[09:56] and just watch price and let price tell you which way to go. So, if we if we enter this trade right at the money and say price starts to edge up and hits or get gets close or hits that outer wing
+
+[10:07] on the on the upside of the butterfly, then I would go ahead and I would add that debit spread just assuming that we're going bullish. And it's it's so easy to manage these and uh manage
+
+[10:19] potential losses if it were to go down. That's a that's a way to trade these that I use all the time and works really well. Dan, how will this trade profit as it is
+
+[10:28] uh set up now? If the S&P goes the direction that I'm assuming it's going to go with this particular setup, this is a bullish trade. Uh, as price goes up, if you you can see the risk graph
+
+[10:38] there, the blue line is the hard expiration line. That's where the trade will be on final on the final day of expiration. But the pink line shows us where the profit and loss is at right
+
+[10:45] now. So, as price moves up, you can see how that pink line is gently sloping up into that outer debit spread. So as price moves up it will it will gain value basically from that debit spread
+
+[10:57] that called debit spread that we have going on. And so the the very basic version of this or let's say the version that I would I would recommend my son trade if we were just to start this is
+
+[11:07] to once this trade is put on and he and he has picked a direction whether he's guessing or he's just waiting for price to tell him or he thinks he knows which which way it's going to go. Let's say he
+
+[11:16] comes up with this setup a bullish setup. I want him to I would tell him to go ahead and look at what the risk is on the trade. And let's just assume without me having to do math here, let's just
+
+[11:25] say that that lower line there is say 350 bucks of risk. I would tell him that you want to try to capture a a 5 to 10% profit on that. So just quickly do the math on 350. So that's you're looking
+
+[11:39] for a $35 gain to $70 gain. And that can happen very quickly. So, as price moves up, you can gauge the pro the the profit and loss on that pink line. And then once it hits your profit target, whether
+
+[11:53] it's 5%, 10%, or if you want to go more, then you can either just take the trade off completely and call it a day. That's your profit that you made for the day. Or you can turn it into the the the the
+
+[12:06] further steps of the butterfly burrito where we get a little bit fancier. So, that was a bullish position. But what if you are bearish and want to do this uh set this up in a bearish way?
+
+[12:18] Can you do that? Yeah, exact same thing. We we're just switch the whole thing around. We'll flop it. So, here's an example of a bearish position again. I'll put a 15
+
+[12:28] point wide S&P butterfly at the money and and then to go bearish, I'll put uh put debit spread at the same long of the main butterfly structure. And it creates the same structure we were just looking
+
+[12:42] at. This it creates the identical uh bullish position we were looking at. It just flops it over now. So I'm expecting a down move. Same thing. As price moves down, it'll move into this put debit
+
+[12:53] spread and that's where the profits are made. Now if this trade go into profit and you were mentioning about say say 5% 10% you could of course close the trade and being happy with that but you could
+
+[13:08] also add more positions to this and that's what you are doing with this burrito butterfly. So explain this next step if you want to keep building out your burrito.
+
+[13:20] Yeah. So, like we were just saying, this position here is a setup to be to be bearish and let's say we're right on direction. So, price moves down here. I would I would recommend the same the
+
+[13:32] same targets 5 to 10% and then you can either take the trade off or you can flip it into the burrito butterfly. So once the position has gotten into profit by a certain amount, again, you can just
+
+[13:42] take it off and call it a day. Or if you want to turn it into more of a a delta neutral trade and try to build this thing up higher and higher, you can simply add the other side, the call
+
+[13:52] debit spread at that point. Because when price moves down into this area and we're getting into a profit, uh this spread here is getting cheaper and cheaper as we move down into the put
+
+[14:04] side down here. And so at some point we'll be able to buy this uh this called debit spread at a cheap enough price where we can get both of these wings, both of these debit spreads to reside
+
+[14:17] and float above the zero line. And that's what we've done here. So again, this trade was a bearish setup. It we were correct. The market moved down, got into profit, and then at some point we
+
+[14:28] were able to add this call side, the other side, the other debit spread at a cheap enough price. So now we have a position uh once this is on so that no matter what happens if S&P 500x crashes
+
+[14:40] all the way to zero we'll still make a profit wherever this is residing at. I'm trying to this probably like a 50 to $75 profit in there. And the same thing up here if if S&P were to rip up to the
+
+[14:52] moon we're above the zero line. So no matter what, we can't get hurt. Plus, we have this butterfly still in the middle which is working for us, you know, kicking off theta. And over time, the
+
+[15:03] pink line, if you know how butterflies work, that the theta causes this pink line to bow. It's the magic mighty rainbow. So we have a position that technically there's risk because there's
+
+[15:13] these little valleys of death here. But after having traded these for so long and having a lot of experience, that is not something that I'm really concerned with until the last say two to three
+
+[15:22] hours of the final day at expiration. This pink line, which is our current P&L for the trade, it won't droop down into that. It won't even get close to drooping to the break even line in this
+
+[15:33] setup until the again until the last couple hours on the final day. Instead, this pink line will stay flat or it will it will start to bow up. It'll create the money rainbow, which will give us
+
+[15:45] additional profit opportunity if we're in this range beyond up and up and above what we can get with this hard blue line up and down. When will you take this trade off?
+
+[15:58] So, that's up to the trader. Personally, at this point, I'm fine just leaving this thing on all the way till the final day because at from this point forward, my my ultimate goal is that the the
+
+[16:10] price of the S&P will come back and be in somewhere in this range because if it is, this pink line will be boowing up and I'll be able to get much more money than showing now because we're residing
+
+[16:20] in the area. And the closer we get to expiration, this pink line will bow up as the pink line starts to try to become this this apex here, this butterfly. So, I'll just leave these on. I won't even
+
+[16:31] mess with them because I know for sure I've locked in 5 to 10% all the way to zero, which is a great return in two or three days. I've locked in two to 3% I mean 5 to 10% from here all the way up
+
+[16:43] and I have additional profit potential where I could make you know many many multiples of the risk. So, I'll leave this on personally all the way till the final day. But is this what what we see
+
+[16:55] now, the butterfly in the middle and the debit spread on each side, is this like the definition of your burrito butterfly? This is the end goal of your trade.
+
+[17:06] Yes. Yeah. This is this is the end goal unless you take it off for profit. There's nothing wrong with just playing it directionally like we talked about earlier. And if it moves up and you just
+
+[17:14] want to grab that profit and be done, that's great. So that's that's a version of it. But when when I talk about the floating butterfly or sometimes I I call it the I I refer to it as the quote
+
+[17:25] unquote free butterfly and it's not really free because technically there's there's risk in these valleys. But if you know how these trades work and that that that risk it doesn't really come
+
+[17:35] into play at all until the very few last hours of the expiration day. That's why I call it call it quote unquote the free butterfly because this butterfly at least the way I'm looking at it I have
+
+[17:45] no risk in this trade to worry about throughout the throughout the rest of the duration of the trade until the very final last hours if the S&P is trading in this area.
+
+[17:56] To make sure we understand this well this opposite side debit spread you put on when you had enough profit to be able to place it. So, so it when you can buy it for less than the profit you have
+
+[18:10] gained so far on your initial position. Correct. And that's an important thing to bring up because a lot of times you can put both of these wings on at the very start of the trade and have uh and
+
+[18:22] immediately have a break even trade where I've even had a slight profit just right at the beginning. It has to do with the pricing. So, so what I'm saying is a lot of times I'll put on a
+
+[18:32] butterfly the first step and then I'll just price out both sides and sometimes I'm able to get wings on both sides at the immediately where the the the outer wings are at a break even or slightly in
+
+[18:44] the profit just because of the way the pricing is at the at the beginning. So you don't necessarily have to wait for it to get into profit on one side. It really just has to do with the pricing
+
+[18:54] on each of these spreads. And typically what I'll do, what usually happens is that it'll move into profit on one side and you just watch the price of the spread on the other and you just add
+
+[19:05] this leg uh when you're able to buy it buy it at a cheap enough price to float these these outer wings above the zero line. And your profit target is usually about
+
+[19:17] how many%. The same uh 5 to 10%. So for example, here is a trade that I did today, a live market trade with real money. And today I was I was bullish on the market, which
+
+[19:29] turned out to be correct. So at the time when the S&P was trading right here at earlier in the day, I put the at the money trade on the the butterfly, the 15 point wide butterfly. I added the the
+
+[19:38] debit spread and at some point the market began to move up and you can see here at this point when the we had a profit of about 65 bucks and I'm trying to remember the risk exactly but this
+
+[19:50] was about a this was between a five and 7% return on the risk at that point and so then I've just priced out the other side and I I waited until I was able to get that price and then I just added the
+
+[20:04] other leg to it. And so of now doing that is going to eat into the profit that we had before. We had 65 to 70 bucks in the trade just as a standalone trade, which we could have just grabbed
+
+[20:16] and closed the whole thing down if we wanted. But because I wanted to turn it into a a multi-day burrito butterfly trade, I was willing to accept a little bit less money locked in, 50
+
+[20:27] bucks up and down, which is still a great return. I think that's like 12% on the on the risk. And so now I have this trade that's it's it's good to go till expiration day. No matter what, if the
+
+[20:40] market crashes to zero, I'll make 12% on that risk. If it move it moves from here all the way up to the moon, I'll make 12%. And if it stays in this range over the next couple days, this pink line
+
+[20:50] again will start to bow into the magic rainbow and I could I could take the tradeoff for a lot more than the 50 bucks that I have locked in right now. So this example since it may be a little
+
+[21:01] difficult for people to read the numbers. So what did you pay for the uh initial butterfly then then the call debit spread and then finally the the put debit spread.
+
+[21:12] Yeah. So you can see here I I bought the original butterfly for 75 cents 75 bucks and that's that's a typical price for a butterfly that's a couple days out. This expires on June 2nd. So that's a
+
+[21:26] standard price. And then I added the the debit spread which cost 265 265 bucks. And so that was the first step. And then as price moved up into profit, I reached a point where I was
+
+[21:40] able to buy the other side, the put debit spread for $110. And then once I did that, I have this floating burrito butterfly. So then this uh this situation we have
+
+[21:52] now with the butterfly and the two debit spread, that is your burrito butterfly. Is that correct? Yeah. Yep. That's the basic uh vanilla burrito butterfly right there.
+
+[22:03] And when you get to that point, you basically leave the uh the trade on until the last day when it's when you consider when you will take it off depending on the market.
+
+[22:14] Yeah, that's how I do it. uh that can vary. If someone wants if this starts to pink up, if this pink line starts to bow up and gives you a nice profit of say maybe 200 bucks and it's on day two, the
+
+[22:25] day before expiration, there's nothing wrong with taking it off at that point, you know, grabbing that opportunity. Typically, I just leave it on till the end or until I can get way more profit
+
+[22:32] than the 50 bucks I have built in. Now then, this is assuming all this is assuming that you were correct on your direction, but um well, you said yourself that you're not very good at
+
+[22:44] picking directions and then neither am neither am I. So, what if we happen to be wrong on the direction? What what do you do then? Right? So, that's a question I'm sure
+
+[22:56] everyone has and that's like the biggest the potential uh risk in this. What if you're wrong on direction? Then what what are you gonna do? So the way that these these burrito butterflies or these
+
+[23:08] this initial structure of the butterfly and the debit sp on one side is built, it's super forgiving. It's like it's like a it's like a trade. It's like a a directional trade that's that's that's
+
+[23:19] wrapped in bubble wrap or in slow motion. And it's super easy to deal with and there's no there's no panicking. There's no franticness. There's no uh getting getting blasted to the downside
+
+[23:30] if you're wrong. So what I typically will do if I'm wrong on direction is in this example for for example in this case let's say we put the bullish position on and the price moved against
+
+[23:42] us we were wrong and start and price starts to move down. So, the first thing as I was saying with these particular structures, just the way they're built, they lose money super super slowly. It's
+
+[23:53] not like having a credit spread on or uh like a naked call as price moves down. You can just see the the gentle slope of that pink line and how slowly it gets into a loss. if you're wrong. For
+
+[24:05] example, in this particular situation, we're down 10 20 30 40 56 70 points and we're at a $75 loss and which is about what our our profit target is on the other side. So that's like a that's like
+
+[24:19] a if we were if we reach this point, I I would never wait for it to reach this point, but as you can see, just because the way the position is built, it's so slow to lose money that you have a lot
+
+[24:28] of room to be wrong and still not be destroyed. So the things I would do to to uh address that is first of all like any strategy just have a basic uncle point
+
+[24:40] like a stop loss and typically I would I would recommend like a one to one at least to start with. So if I'm looking to make 5 to 10% if the trade goes my way I would look uh at a 5 to 10% loss
+
+[24:52] to just get out of the trade, close the trade and call it a loser. That's the that's the most basic one. Uh that's just an uncle point. Come over the uncle point and have a stop loss. get out of
+
+[25:02] the trade. Another thing we can do, which is this is one of my favorites, is if the price moves against you, we can still add that other debit spread on on the side that's losing, which will stop
+
+[25:15] the bleeding immediately and create a flat line here. Now, if the price was moving against us and we put this on after price had started started to move against us, we would wind up
+
+[25:27] with a burrito butterfly where the outer legs here uh maybe they they could be in a little bit in the profit still depending on price or they may be at break even or they may be a little bit
+
+[25:38] under uh the break even. So, we would have a locked in loss. So, in this case, if we decided to deal with the loss that way, we would have a a slight loss built in. Another thing we can do is to simply
+
+[25:50] add a uh put or call option in the direction where it's losing and that will immediately flatten out the pink line. So in this case the price let's say the price moved against us and it
+
+[26:02] reached the side of the tenant and we're heading down. Obviously I was wrong. I can just go out and I can buy a put option same expiration and usually I go out about like say a dollar a dollar or
+
+[26:13] less right around the dollar mark. I'll just buy a single put option and that's going to be way out of the money. But you can see how that totally lifts that pink line up. So now we're we we've
+
+[26:23] we've stopped the bleeding and at least for the rest of today and maybe tomorrow with this particular put option, uh the pink line won't droop or won't continue to go down into losses. It basically
+
+[26:33] kind of like freezes the position where it's at, which you also But haven't you also added the cost to the trades? Yes, you have. Uh you've added you've
+
+[26:46] added a dollar or whatever whatever the cost of that put is. But you can see that in this particular case, even with the ad with the addition of that, we still have our upper line above the zero
+
+[26:58] line up here. So, it's not the end of the world. If we were to come back, if this trade were were to recover, it is costing us a buck. But remember that if price were to move around, we can always
+
+[27:07] very likely sell that back out at some value. Maybe not the 95 bucks, but 50, maybe 50 bucks or so, or it'll save us on a move down, and we can just take our time in closing out the whole position.
+
+[27:19] So, that would be this would be a scenario where uh I'm not necessarily looking to save the trade or turn the trade into a profitable position. I'm just trying to uh like stop the bleeding
+
+[27:29] and allow myself a nice relaxed and stress-free atmosphere to get out of the trade at the least amount of loss possible. So, that's a solution that I would use if it moved against me. And
+
+[27:40] this is one that my probably my favorite way to do it. This is simply adding another 15 point wide butterfly. Uh just overlap it slightly on the first one and that just creates a wider tint. So, if
+
+[27:54] price on the original butterfly, if price starts to move down and say we reach the outer edge of the butterfly, the first butterfly, and we start to get into a little bit of a loss, and
+
+[28:04] obviously I was wrong on my initial direction, I would just buy another 15 point wide butterfly, and you can overlap it as much or as little as you want. You could spread it
+
+[28:14] out down here. I like to go out 20 points down because it creates this nice tent with a nice profit uh area here. This ledge that's that still has a nice amount of profit in it. And you can get
+
+[28:26] it for a price. This one looks like it cost me 95, but you can still get it in in the general range of the price of the first one. And what that does is just it just smooths smooths everything out. It
+
+[28:36] continues to have that pink line gently sloped out. So we have a lot more room where it can move down and we're still not in any trouble. But the other thing that I like about this one the most is
+
+[28:47] that we're building out this bigger tent area. We're making the the profit tent wider and which will give us more theta in the long run and it will also give us that magic money rainbow that I'm always
+
+[29:01] looking for. It just creates a nice wider profit tent. So I'm not so for the rest of the duration of the trade if this works out I'm not stuck with just that narrow butterfly that I started
+
+[29:09] with. I'm now expanding the tent. This is sort of like think of it as building a condor out piece by piece like in chunks as price dictates as price rather than put on a condor a wide condor at
+
+[29:23] the beginning not knowing which way it's going to go. Let price tell you where it's going to go and then slowly just add these chunks as necessary to prolong the the position and keep that pink line
+
+[29:36] from falling off too hard. And why do you call this a choo choo train adjustment? So, it's I I look at these as as as cars of a train. As the XPX is moving down,
+
+[29:48] I'm adding cars to the to the train. The train started off as just this engine. And then, if I need to, as price moves down, I'm adding a new car to the train. And then, if price continues to move
+
+[30:00] down, I'll add a third one. As price continues to move down, I'll just continue to add these train cars to this train, which is expanding this this profit tent area. And again, the the
+
+[30:12] wider we can get this tent area, the uh the more profit potential we've built up in a nice range, a wider range, and we have that theta working for us where that money rainbow is going to pop up if
+
+[30:23] on any type of a pullback. But but one question, what does adding all these butterflies do to the risk of the trade? So each one will will add risk by the amount of the butterfly. So in this
+
+[30:36] last one, so the first butterfly we did was 75 bucks. The second one was about uh look like it's 100. Uh this one was 50. So each butterfly we add is going to add risk to the entire structure. But I
+
+[30:49] consider this not a lot of risk to add uh especially uh in relationship to what I'm gaining from that 50 bucks. I'm gaining a big profit tent, a big condor structure basically that can make up to
+
+[31:03] 500 at these at these middle levels and up towards a thousand at the at the tops. So, I'm building out a nice wide tent on any sort of a pullback. And I'm still I still will be able to to uh do
+
+[31:15] the same sort of adjustment here. I'll be add some point and and cap off the risk to the downside. Now again, because we've added that additional risk with each of the butterflies, once I do that,
+
+[31:28] the the wings will be most likely below the zero line, but not that much. And it's and it's very recoverable with a with a technique or a method I call the clawback, which is this. So the claw
+
+[31:43] down here. So here's So here's where we're at. We're underwater. Uh we've built out the tent here, which is nice money rainbow forming. This is all good stuff for us,
+
+[31:51] but our wings are underwater. So, how can I bring these wings back towards the break even line or above it? So, what I've done here is I go to the XSP. The XSP is a smaller index. It's it's
+
+[32:04] basically the S&P at onetenth the size and it behaves just like the S&P. It's cash settled. Everything's the same and it's priced it's priced similarly, just onetenth the size. So, it's a way for me
+
+[32:17] to get really granular and fine-tune these S&P positions. So, what I did in this particular case, I just came in here and I bought three additional
+
+[32:28] put debit spreads right here. And I bought three additional call debit spreads on the upside. I just overlaid those XSPs on the S&P and that raised up those wings. So now the wings are above
+
+[32:43] the zero line and then and then a profit all the way to that all the way to zero and all the way to the top. And the cost of these of course is gonna it's going to nick some profit potential out of the
+
+[32:52] tent. But as you can see we still have a nice profit uh potential in our bigger tent here. It's this is like maybe I'm trying to read like say 300 bucks on those valleys there. That's above water.
+
+[33:04] That's a profit. And at the tips we have up to look like 600. So, it costs a little bit, but it it it it immediately puts us back into our original goal, which is to have a butterfly burrito
+
+[33:17] trade that has no risk to the downside. We can only make profit. And in this case, I believe it's a 5 to 10% profit all the way down after doing that adjustment. And the same on the upside,
+
+[33:28] we have profit potential above the zero line all the way up. And we have this middle tent which is much wider now and has a lot more theta working for us and a wider range where we can make money if
+
+[33:37] the SPX not only lands in that area, but even if it just moves through there, it'll it'll it'll it'll increase in value where we take the whole thing off or or we can just let it go till the
+
+[33:48] final day like I do the the first one and see where it lands and just manage it like that. But then you still have those two dips in your profit uh curve
+
+[34:00] which u you know are not insignificant as we see it right and those are the things that leave that that keep option traders up at night or at least me I'm always
+
+[34:09] worried about those valleys of death. Uh but the first thing to remember is that because the way this this is constructed uh throughout the duration of the trade, this is a two to three day trade and
+
+[34:20] just from experience, I've just seen this a million times, that pink line will not fall into that until the last couple hours of the day. And that's that's a that's something to keep in
+
+[34:30] mind. I mean, you definitely don't want that to happen. You want to be watchful. But for the first days before expiration, this pink line will stay flat or it'll start to bow up. So, I'm
+
+[34:38] not worried about it at that point. But there are a way there. But there is a way to eliminate those. So first let's attack this one. How can I get rid of that valley of death there? And all that
+
+[34:51] is is essentially that's that that is a a short butterfly right there. I mean I know we built it with a butterfly here and a debit spread, but if you look at this this this area here, that is a
+
+[35:03] short butterfly. So, let's just fill in that hole by buying a butterfly at the exact same strikes. So, we'll just uh configure a butterfly that has uh the longs at these levels and the short at
+
+[35:18] the middle and we'll buy a butterfly there. And that will immediately pop that up and eliminate that risk completely. So now with that one gone, we have our
+
+[35:30] floating blue line still above the zero line now, but there's no risk that we have to worry about. So we do the same thing with the other side if we want. I mean, this is all depending on if those
+
+[35:38] are bothering you. A lot of times, uh, if you wait till the last day, price may not be anywhere around these valleys of death. It may be way down here or up here, and you have to worry about it.
+
+[35:48] But if if it's bothering you and you want to get rid of them, you can just do what we just did. We can just fill those holes in. So in this case, I want to do the same thing. I want to eliminate this
+
+[35:56] valley of death. I'll just buy a butterfly right in the middle of that at the same strike and it'll eliminate that. So now we're left with just the butterfly, the original butterfly. The
+
+[36:06] valleys of death are gone and the structure is still floating all the way to zero and all the way up. And so this is like this is a home free trade at this point. At this point, this really
+
+[36:15] is a a risk-free floating butterfly. There's no way that this position can lose because we're we're completely floating above the zero line and it's S&P. It's settled. It's cash settled.
+
+[36:26] There's no assignment. So, this is a this is like a a pretty much bulletproof trade from this point forward. How often do you end like this with these trades?
+
+[36:36] Yeah. Personally, if I I was trading this, I I may not always somebody new to trading this, I would I would recommend being more uh recognizing that risk there and going ahead and eliminating it
+
+[36:47] so you have to worry about it. Here's what will happen on the final day. If you do nothing at all and you have these valleys of death throughout the first half of the day, the pink line will be
+
+[36:55] floating. There'll be really no problem. Uh usually, that's what I've seen. But like say about halfway through the day on the final day, this pink line will start to droop into these areas because
+
+[37:07] what's going to happen at the end of the day, the pink line is going to turn into that blue line. So you want to address that before that droop starts to happen. And worst case scenario, if you forget
+
+[37:18] all about it and price ends up right there at the final minute of the day on Friday, you know, you're going to have you're going to be exposed to that risk, which you don't want to have happen. So,
+
+[37:28] somebody new to this trade or these type of trades that have these valleys of death, I would I would recommend going eliminating them, just fixing it like I just described. The way that I
+
+[37:36] personally trade them, I just I wait I wait until the final day and see where price is. If price is anywhere around those, then I'll address that and do that. If it's not, I won't.
+
+[37:47] You have shown that it isn't on SPX, but uh do you use other underlyings for this trade? Yeah, personally, I don't. I think you could. Um, I would just be make sure you
+
+[38:00] understand assignment risk. Like if you were to use these on a stock, uh, you might find yourself in a position where maybe some of the options could be in the money and you might wind up with a
+
+[38:09] bunch of stock in your account the next day, which would not be great or depending on what you're what you want. But I would I would stick to the indexes that are cash settled. Uh, and
+
+[38:19] personally, I just stick to everything I do is on the S&P. However, you can do this the whole the whole butterfly burrito with the the XSP at one cent size. If you want to start super small,
+
+[38:28] you could you could start there and have a super minimal risk until you really figure it out and learn it and then go up to the spx. But XSP is a bit less liquid than uh
+
+[38:39] SPX. That's correct. Although it's getting better. I'm surprised like a year ago it was pretty difficult. I not difficult, it was it was challenging to get fills.
+
+[38:48] Right now it's not so challenging. Uh it's not as liquid as the SPX, but give it give it some time. It's there's a lot of uh you can get really good fills with them.
+
+[38:57] And personally, I love using XSP because to test out new strategies. I do my regular zero DTE trading on SPX and I don't want to mess up the mess up the positions and uh remember which strike
+
+[39:10] belong to which strategy. So I can use XSP for testing new uh strategies and right risk much less if it doesn't go well. Yeah. Yeah, I did the same thing.
+
+[39:21] Let's move to the risk. What is the worst that can happen with this way of trading? Then generally this trade is really pretty safe. I think it's as long as you
+
+[39:31] understand what's going on. I consider this to be like a slow motion bubble wrapped trade either directionally if you start directionally or you can quickly flip it into a delta neutral
+
+[39:42] trade like I showed. Uh and once it's into a delta neutral trade, it's super safe. The real risk will be during that first part, the directional part. And the worst thing that could happen, I
+
+[39:52] guess, with that is that price moves against your direction that you picked. It goes the other way, and you don't do anything about it. You you smoke the opium, as that somebody said, and you
+
+[40:04] just sit there and wait and hope that it's going to stop and come back. Uh, with these, I would I would recommend jumping on trades that are moving against you fast, quicker, as quickly as
+
+[40:15] possible. Because even if you use that technique where I showed where we we turn it into a butter a burrito butterfly while it's still underwater, it's it's very simple to claw that back
+
+[40:27] up towards that break even line using that XSP trick where we're we're substituting the XSPS. We're just kind of we're fine-tuning it. We're getting really granular and raising that thing
+
+[40:36] back up. And so the quicker you act and the less of a loss that you lock in with that with that part of the trade where you turn it into a floating butterfly, even if it's underwater, if there's not
+
+[40:48] a lot of loss sitting in there, you can you can fix it or at least improve it significantly by doing that clawback method where we start to raise it back up.
+
+[40:57] I would like to ask you to place this on a risk profile scale where one is very low risk and 10 is very high risk. Where would you put this strategy? I would put this at probably a three or
+
+[41:11] four, I think. Uh, for for someone brand new until they really kind of understand it and get it dialed in, maybe five. But like I said, the way that this is built, uh, it reacts so slowly. It's just like
+
+[41:24] it's a it's a trade that's in slow motion. And again, as long as you don't just, uh, not look at it, walk away and forget about it, or just uh, hope that it's going to come back. If you act
+
+[41:35] quickly, you can flatten and uh stop the bleeding on those losses very quickly. What have been your results trading this strategy? So, my results have been really good
+
+[41:46] with this. The thing to keep in mind is that the way that I trade this uh like what I just went through here is what I would consider the the beginner newbie introduction version of it. Just the
+
+[41:57] simplest form of it. And the way that I trade these are more advanced. I'm doing a lot more stuff with them. And I'm also combining them into other positions like I mentioned with my as a as like say a
+
+[42:08] hedge to my other trades and then I just I I combine them all together into like more of a portfolio sty style of a position. So the way that I'm managing them and tracking them is is much
+
+[42:20] different than if someone than someone who if they were to trade this as a standalone trade and look at the results. So, it's really difficult for me to like untangle them from the bigger
+
+[42:30] positions that I have going on because they all kind of they all become one big massive trade. But generally I would say uh these as long as you adhere to like the warnings that I was talking about
+
+[42:42] and just understand the trade and realize that it's a very slow to get into a loss trade but the the quicker you can you can jump on those losses if the trade moves against you and flatten
+
+[42:53] them out uh lock off those losses and then manage them from there the better. How will you sum up what we've been through and what would be your two or three most important uh takeaways that
+
+[43:06] you want the audience to remember? The reason I like this trade so much is because it's sort of a hybrid trade. Like I was saying, I'm always I've always been looking for a way to trade
+
+[43:15] directionally but have failed because I just can't do the directional thing. Uh and I love theta trades, delta neutral trades. So this this trade is like the perfect hybrid trade for me because it
+
+[43:26] combines both together in one trade or it allows me to start say directionally as a directional trade uh and quickly flip it into a delta neutral more of an like an option income uh delta neutral
+
+[43:40] trade like super fast. And so that's what I that's what I like most about this trade. And the things that uh for others looking at maybe potentially trying this out is I would just take it
+
+[43:51] slow. Start with small start with the XSP or just one contract on the S&P and just keep in mind that uh the sooner you react on a trade that the only way you're going to get hurt on this is if
+
+[44:03] you get greedy and and don't take your profits at a reasonable level once they get in the profit or you don't lock the whole thing up into a burrito butterfly so that you're protected up and down.
+
+[44:14] Say you say you want to get like 50% out of it or whatever. Uh that might that might be the that might not be the wisest route at least to begin with. So just start slow, take your take your
+
+[44:27] wins quickly to begin with. And if if a trade moves against you, that's the only really reason that you're going to get hurt with this. And again, because it's such a slowmoving, gently sloped trade,
+
+[44:39] uh, you're not going to get hurt significantly or you shouldn't get hurt significantly unless you just sit there and not and you you don't address it. You don't do anything. So, to begin
+
+[44:48] with, I would say be quick, be super quick, quicker than maybe you will at some point later on to address that risk, lock the trade up, and, you know, not not let it get into a more of a like
+
+[45:00] a bigger losing trade. Even the way the trade is now, like on the on the positions I showed you, there's $350 worth of risk on on one of those trades to the downside. That's a one contract
+
+[45:12] trade. And it will take days if this is a two to three day trade, unless there's a huge crash, it will take days for that loss to to to realize the loss of that full amount just the way that that that
+
+[45:22] pink line is so gently sloped down. So, you have a lot of room. But if you want to use that technique where you can you can claw back and you can rise raise raise that whole structure back up
+
+[45:31] towards the break break even line if you get into trouble. The quicker you can act on the other side is the probably the best way to do it. What would be good resources to learn
+
+[45:41] more? I would say I haven't seen anyone else trading this this this strategy or this this combination of trades like the way I'm doing them. And I have a free course
+
+[45:51] at my trading school site and has a bunch of free trainings in there including the training on this like a stepbystep kind of in more depth than what we've gone through here. And I
+
+[46:02] would also recommend to watch the other interview we have with uh Bouadan about his zero DTE levitation trades where he's trying to do some of the same moving zero DTE position into no risk
+
+[46:17] trades. Right. Yeah. Yeah. And that the cool thing with that is that these trades can work together really beautifully. You can you can combine them together. You
+
+[46:25] can turn one into the other and they just work really well as a pair with uh building out structures that are that are these together in your own versions of different variants of these two
+
+[46:35] trades. Thank you very much, Dan. Thank you, John. Good to see you again.

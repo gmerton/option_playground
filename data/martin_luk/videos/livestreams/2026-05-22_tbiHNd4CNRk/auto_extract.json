@@ -1,0 +1,69 @@
+{
+  "video_id": "tbiHNd4CNRk",
+  "date": "2026-05-22",
+  "title": "Be open-minded and curious | 22 May 2026",
+  "observed_trades": [
+    {
+      "date": "2026-05-22",
+      "ticker": "QBTS",
+      "direction": "long",
+      "action": "trim",
+      "setup": "Sold 15% into strength on the quantum name.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-05-22_tbiHNd4CNRk@13:21",
+      "confidence": "stated",
+      "fill_timing": "today",
+      "notes": "'I've sold 15% QBTS into strength.' (13:21)."
+    },
+    {
+      "date": "2026-05-22",
+      "ticker": "GFS",
+      "direction": "long",
+      "action": "trim",
+      "setup": "Sold 15% of GlobalFoundries into strength.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-05-22_tbiHNd4CNRk@13:21",
+      "confidence": "stated",
+      "fill_timing": "today",
+      "notes": "'also sold 15% GFS into strength.' (13:21)."
+    },
+    {
+      "date": "2026-05-22",
+      "ticker": "EMP",
+      "direction": "long",
+      "action": "hold",
+      "setup": "Plans to sell some into strength if it continues higher (today or next week); otherwise trailing the rest.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-05-22_tbiHNd4CNRk@36:30",
+      "confidence": "inferred",
+      "fill_timing": "",
+      "notes": "'probably we're going to sell some EMP into strength if it continues higher. Maybe today or maybe next week.' (36:30) — intent to trim an existing position, not yet executed, so kept as hold. Ticker 'EMP' is an uncertain recurring decode (a beaten-down solar name in other streams); see ambiguous_tickers. Entry fill timing unspecified."
+    }
+  ],
+  "principles": [
+    { "category": "exits", "text": "There's no correct trim-vs-hold answer; if unsure, toss a coin, then review the closed trade later to gradually build your own selling style. Trimming an extended (far from 9 EMA) name helps you stay on the boat through a potential ~20% pullback.", "timestamp": "27:11" },
+    { "category": "entries", "text": "Buying pullbacks: prefer the entry where price just lists a little sideways at support; use a lower-timeframe EMA (e.g. 60-min 9 EMA) as the reference/trigger and pick whichever timeframe works best for you.", "timestamp": "31:29" },
+    { "category": "entries", "text": "The lowest spot at support is the best risk/reward pullback entry, but it's hard to catch — strong stocks 'touch and go' at support; if a stock starts chopping around the 21 EMA for several days it's an early sign of losing strength.", "timestamp": "33:18" },
+    { "category": "posture", "text": "A gap-up is generally a lower-probability time to buy new positions (expect more fade), but it's a tendency, not a black-and-white rule to avoid all entries; gap-downs into support are better timing.", "timestamp": "44:46" },
+    { "category": "mindset", "text": "Be open-minded and curious: don't blindly follow any concept or trader; think twice about new ideas, keep the good ones, discard the bad, and form your own style. Curiosity drives finding good risk/reward entries by studying past moves.", "timestamp": "52:49" },
+    { "category": "mindset", "text": "Your opinions on where a random stock 'will go' are useless and unimportant; ask actionable questions (was X a good entry/exit at a specific level/timeframe) rather than 'what do you think of ticker Y'.", "timestamp": "73:45" }
+  ],
+  "ambiguous_tickers": [
+    { "timestamp": "10:14", "caption_text": "I really want Ro left to stay within the high from today", "context": "Wants the name to stay within the prior swing high and go sideways to form an inside week — best-case base.", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "13:21", "caption_text": "also s 15% kill in the strength", "context": "Sold 15% of a name into strength alongside QBTS and GFS; 'kill' likely a mis-transcribed ticker.", "guess": "KLAC", "confidence": "unsure" },
+    { "timestamp": "19:16", "caption_text": "Sim is earnings today. Sim has earnings today", "context": "Has earnings today; price getting a higher-price section.", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "19:47", "caption_text": "Brown is still going higher. NW all the cyber security stocks", "context": "Cyber-security group going straight up; 'Brown' likely a cyber name (possibly CrowdStrike/CRWD).", "guess": "CRWD", "confidence": "unsure" },
+    { "timestamp": "20:06", "caption_text": "Elab is also doing really well", "context": "Doing well, no volume-expansion exhaustion signs yet.", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "21:54", "caption_text": "fly looks like freaking out today", "context": "A good-looking breakout: cup with handle, tight range yesterday, breaking previous day high today.", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "22:56", "caption_text": "about poet on one minute reversal. Yeah, great entry", "context": "A name with a one-minute reversal entry he calls great.", "guess": "POET", "confidence": "likely" },
+    { "timestamp": "36:30", "caption_text": "probably we're going to sell some EMP into strength", "context": "An existing long he plans to trim into strength (today or next week); a beaten-down solar name in other streams (down ~92% from 2022). Ticker decode 'EMP' is uncertain/recurring.", "guess": "EMP", "confidence": "unsure" },
+    { "timestamp": "37:15", "caption_text": "AXTI forming a bull flag, but looks like kind of choppy", "context": "Bull flag but choppy; an extended short-based breakout that's run ~5,000%, he can't pull the trigger.", "guess": "AXTI", "confidence": "likely" },
+    { "timestamp": "39:42", "caption_text": "The XYZ is a really good was a really good breakout yesterday", "context": "Clean breakout with EMAs close on multiple timeframes, tight range; 'five star setup'.", "guess": "XYZ", "confidence": "unsure" },
+    { "timestamp": "57:21", "caption_text": "crow I'm looking at the move on crowd", "context": "A name going straight up; studying where one could buy. 'crow'/'crowd' = CRWD in these captions.", "guess": "CRWD", "confidence": "likely" },
+    { "timestamp": "47:53", "caption_text": "CPRS is going actually going down after the IPO", "context": "Used as a sentiment example — a recent IPO going down after listing.", "guess": "?", "confidence": "unsure" },
+    { "timestamp": "44:46", "caption_text": "Do I consider gaps in kills a lot in my entries", "context": "'kills' recurs as a name/index reference in these streams; here in context of gaps and entries.", "guess": "?", "confidence": "unsure" }
+  ]
+}

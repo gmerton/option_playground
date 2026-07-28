@@ -1,0 +1,19 @@
+{
+  "video_id": "fCp6CRu6E5Y",
+  "url": "https://www.youtube.com/watch?v=fCp6CRu6E5Y",
+  "title": "Stop Trading in \"No Man's Land\" If You Want to Be Profitable",
+  "channel": "TheOneLanceB",
+  "channel_id": "UCzksXiC-Ju-DTIZmMiaOVfQ",
+  "stream_date": "2026-02-28",
+  "duration": "7:05",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}
