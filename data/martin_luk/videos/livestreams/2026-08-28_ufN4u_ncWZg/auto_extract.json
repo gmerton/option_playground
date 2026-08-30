@@ -1,0 +1,307 @@
+{
+  "video_id": "ufN4u_ncWZg",
+  "date": "2026-08-28",
+  "title": "EP90 | 28 Aug 2026",
+  "observed_trades": [
+    {
+      "date": "2026-08-28",
+      "ticker": "CRCL",
+      "direction": "long",
+      "action": "trim",
+      "setup": "Was holding Circle (CRCL) long; sold/trimmed the position today.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-08-28_ufN4u_ncWZg@25:57",
+      "confidence": "stated",
+      "notes": "Phrase used: 'I've sold my circle right now, just now.' Later in the stream (~156:57-159:33) he describes raising the stop on a Circle position after a breakout, implying this was likely a partial sell/trim rather than a full exit, not a fresh entry.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-08-28",
+      "ticker": "PATH",
+      "direction": "long",
+      "action": "exit",
+      "setup": "Was holding UiPath (PATH) long; decided to sell it.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-08-28_ufN4u_ncWZg@25:57",
+      "confidence": "stated",
+      "notes": "Phrase used: 'I'm going to sell my path as well.'",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-08-28",
+      "ticker": "SNDK",
+      "direction": "short",
+      "action": "add",
+      "setup": "Added to short position as part of a broad semiconductor short basket; names lining up together at resistance/EMAs was read as an edge signal.",
+      "entry_basis": "Rejection at resistance / EMA cluster, part of the day's semis short basket",
+      "stop": "Very tight stop on this name (~0.5% stop, ~0.15% account risk, per his later risk comments)",
+      "source": "2026-08-28_ufN4u_ncWZg@79:31",
+      "confidence": "stated",
+      "notes": "Ticker transcribed inconsistently as 'SNK' (14:47) and 'SNTK' (38:13, 79:31); confirmed as SanDisk (SNDK) via an explicit, correctly-transcribed 'SNDK approaching the 50 EMA' mention at 60:03.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-08-28",
+      "ticker": "SK Hynix",
+      "direction": "short",
+      "action": "add",
+      "setup": "Added to short position as part of a broad semiconductor short basket alongside SNDK; one of his largest sizes of the year (~26-27%).",
+      "entry_basis": "Rejection at resistance / EMA cluster, part of the day's semis short basket",
+      "stop": "Very tight stop on this name (~0.5% stop, ~0.15% account risk, per his later risk comments)",
+      "source": "2026-08-28_ufN4u_ncWZg@79:31",
+      "confidence": "stated",
+      "notes": "Ticker transcribed variously as 'SK highix' / 'SKH Highix' / 'SK Hidings' throughout the stream - this is SK Hynix (South Korean memory chipmaker), not a US-listed ticker with a standard symbol in this transcript.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-08-28",
+      "ticker": "OLO",
+      "direction": "short",
+      "action": "entry",
+      "setup": "One of the 'weaker names' shorted the prior day as part of the large short basket; got rejection and good follow-through to the downside.",
+      "entry_basis": "Rejection at resistance/VWAP/EMA area during the prior day's short pullback setup",
+      "stop": "",
+      "source": "2026-08-28_ufN4u_ncWZg@141:53",
+      "confidence": "inferred",
+      "notes": "Caption text 'Ollo' is unclear/likely garbled; grouped with APLD as one of the weaker names shorted yesterday. Best-guess ticker is OLO (Olo Inc) but this is not confirmed.",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2026-08-28",
+      "ticker": "APLD",
+      "direction": "short",
+      "action": "entry",
+      "setup": "One of the 'weaker names' shorted the prior day as part of the large short basket; got rejection and good follow-through to the downside.",
+      "entry_basis": "Rejection at resistance/VWAP/EMA area during the prior day's short pullback setup",
+      "stop": "",
+      "source": "2026-08-28_ufN4u_ncWZg@141:53",
+      "confidence": "stated",
+      "notes": "APLD (Applied Digital) is clearly transcribed and named alongside 'Ollo' as one of yesterday's weaker-name shorts.",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2026-08-28",
+      "ticker": "GLD/SLV",
+      "direction": "short",
+      "action": "entry",
+      "setup": "Sized unusually large (well above his normal 20-25% average, into the 35%+ range) on a gold/silver parabolic short, framed as a 'once in a decade' opportunity and an explicit exception to his normal sizing rules.",
+      "entry_basis": "Parabolic extension in gold and silver",
+      "stop": "",
+      "source": "2026-08-28_ufN4u_ncWZg@152:31",
+      "confidence": "stated",
+      "notes": "Historical trade referenced during a Q&A about position sizing, not a same-session trade; timing given only as 'early this year'. Ticker is a best guess (gold/silver, not a specific instrument named).",
+      "fill_timing": "earlier this year"
+    }
+  ],
+  "principles": [
+    {
+      "category": "entries",
+      "text": "When a large number of correlated names (same sector) all line up at the same technical spot (resistance, EMAs, VWAP) on the same day, that alignment itself is read as an edge/signal from the market, not just a collection of individually good-looking charts.",
+      "timestamp": "141:13"
+    },
+    {
+      "category": "entries",
+      "text": "Avoid chasing an extended sector/stock into strength even when the long-term trend looks bullish; the more extended a name is, the higher the odds of a pause or pullback, so wait for sideways consolidation before entering.",
+      "timestamp": "104:53"
+    },
+    {
+      "category": "entries",
+      "text": "Extension can be judged visually (e.g., percent distance above the 9/50 EMA) without needing a formal indicator (ADR, distance-from-moving-average, etc.) - a systematic extension indicator is not a must.",
+      "timestamp": "107:26"
+    },
+    {
+      "category": "entries",
+      "text": "Be wary of shorting a weak stock sitting inside an otherwise strong sector - relative weakness within strength is a lower-quality setup than weakness confirmed across the group.",
+      "timestamp": "91:06"
+    },
+    {
+      "category": "exits",
+      "text": "No hard rule to move a stop to breakeven; exits are usually either the original stop getting hit, selling into strength, or a discretionary manual close when price action starts behaving abnormally relative to the trend.",
+      "timestamp": "156:57"
+    },
+    {
+      "category": "exits",
+      "text": "There is no fixed definition for 'selling into strength' - you can't reliably nail the top, so this exit is discretionary by nature.",
+      "timestamp": "160:59"
+    },
+    {
+      "category": "exits",
+      "text": "When trailing a winning trend trade, raise the stop to a structural level (e.g., an hourly 50 EMA) selectively after a confirming event like a breakout - not as a default rule - and use a level where a break below signals the uptrend is genuinely over.",
+      "timestamp": "158:37"
+    },
+    {
+      "category": "exits",
+      "text": "Prefer sitting in winners over rotating capital between positions; the big money is made by staying with what's working (echoing Livermore).",
+      "timestamp": "173:26"
+    },
+    {
+      "category": "risk",
+      "text": "Size down and use unusually tight stops (as low as ~0.5% price stop / ~0.15% account risk) on core large positions as account size grows, to keep slippage manageable at scale.",
+      "timestamp": "154:32"
+    },
+    {
+      "category": "risk",
+      "text": "Using margin isn't the root cause of large drawdowns - revenge trading (increasing risk size after a loss) causes big drawdowns with or without leverage. The real skill is controlling the impulse to revenge trade, not simply avoiding margin.",
+      "timestamp": "166:33"
+    },
+    {
+      "category": "sizing",
+      "text": "Size smaller in smaller-cap or less-liquid names; typical position sizing runs about 20-25% of the account, and sizing much above ~35% into one name is treated as an outlier, not the norm.",
+      "timestamp": "151:18"
+    },
+    {
+      "category": "sizing",
+      "text": "Reserve outsized position sizing (well above normal, e.g. 30%+) for rare, high-conviction 'once in a decade' setups (e.g., a parabolic blow-off short), and treat these explicitly as exceptions rather than a template to repeat casually.",
+      "timestamp": "152:31"
+    },
+    {
+      "category": "regime",
+      "text": "Historically (post-2008), corrections of 15-20%+ in the Nasdaq have started with relative weakness in the Russell 2000 - a necessary but not sufficient warning sign, not a standalone sell signal.",
+      "timestamp": "63:08"
+    },
+    {
+      "category": "regime",
+      "text": "A market where mega-caps and large-cap software/tech grind steadily higher while small caps and speculative names break down is a narrow, selective-market pattern reminiscent of late-2021 topping action - worth noting as a risk context, not a definitive top call.",
+      "timestamp": "99:46"
+    },
+    {
+      "category": "psychology",
+      "text": "Treat scheduled macro news/Fed-speech days like any other trading day and react only to price action on the charts rather than trying to interpret the commentary itself.",
+      "timestamp": "83:48"
+    },
+    {
+      "category": "other",
+      "text": "Don't accept another trader's methods on faith - verify borrowed ideas yourself by 'flipping the charts'; a technique that works for one trader may not work for you.",
+      "timestamp": "123:08"
+    },
+    {
+      "category": "other",
+      "text": "When evaluating trading educators/content creators, a demonstrated track record of at least 2, preferably 3+, years is a useful filter to separate credible traders from unverified or marketing-driven content.",
+      "timestamp": "127:17"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "07:02",
+      "caption_text": "Iron Yen",
+      "context": "Considering trying a short as an 'inverse EP' (earnings-play reversal) on this name.",
+      "guess": "IREN",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "182:09",
+      "caption_text": "hour yen",
+      "context": "Watching this name do well after a 5-minute breakdown; ultimately skips the trade due to lack of buying power.",
+      "guess": "IREN",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "05:35",
+      "caption_text": "real break",
+      "context": "Says this name is gapping down into the nine daily EMA after earnings; wants to track its action at the rising nine.",
+      "guess": "RBRK (Rubrik)",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "35:02",
+      "caption_text": "rubric",
+      "context": "Describes an ugly reversal on this name (10% one-minute candle range).",
+      "guess": "RBRK (Rubrik)",
+      "confidence": "confirmed"
+    },
+    {
+      "timestamp": "05:12",
+      "caption_text": "Kims",
+      "context": "Says this name is doing pretty well after Wednesday weakness, coming back and looking good on the weekly.",
+      "guess": "HIMS",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "05:35",
+      "caption_text": "a firm's EP",
+      "context": "Mentioned alongside the earnings-gap-down name (real break/RBRK) as another name with an earnings play.",
+      "guess": "AFRM (Affirm)",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "14:47",
+      "caption_text": "SNK",
+      "context": "Pushing into the hourly/daily nine EMA, grouped with MU as a semi name to watch.",
+      "guess": "SNDK (SanDisk)",
+      "confidence": "confirmed",
+      "note": "Confirmed by explicit correct spelling 'SNDK' later at 60:03."
+    },
+    {
+      "timestamp": "38:13",
+      "caption_text": "SNTK",
+      "context": "Pushing into all EMAs (daily, 4hr, hourly) during the semis-short discussion.",
+      "guess": "SNDK (SanDisk)",
+      "confidence": "confirmed"
+    },
+    {
+      "timestamp": "63:45",
+      "caption_text": "SK highix / SKH Highix / SK Hidings",
+      "context": "Referenced repeatedly throughout as a semiconductor short candidate/position, built into a bigger position later in the stream.",
+      "guess": "SK Hynix (South Korean memory chipmaker)",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "14:47",
+      "caption_text": "sock case",
+      "context": "Approaching the daily nine EMA, mentioned in the same breath as other semi names.",
+      "guess": "SOXX (semiconductor ETF) or SOX index",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "29:17",
+      "caption_text": "him is loosen this all the year",
+      "context": "Commentary during discussion of a name losing/loosening around a moving average.",
+      "guess": "HIMS",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "50:47",
+      "caption_text": "OSK",
+      "context": "Says this name 'seems like a good short yesterday,' with a reversal in the second hour that never took out the high of day.",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "90:16",
+      "caption_text": "Red is very strong today. Nobody going to stop me out.",
+      "context": "Follows commentary about gold/silver; unclear if 'Red' is a ticker or a color/chart description.",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "99:11",
+      "caption_text": "the kills at the spies",
+      "context": "Comparing index performance: this pairing is looking very good while the Russell underperforms.",
+      "guess": "QQQ and SPY",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "180:36",
+      "caption_text": "Kill and spice are cracking down the hourly nine",
+      "context": "Indices breaking the hourly nine EMA and coming into the daily nine.",
+      "guess": "QQQ and SPY",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "132:39",
+      "caption_text": "corning",
+      "context": "Comparing which name is the better short between this one and SK Hynix; says it is technically weaker on both daily and intraday.",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "165:32",
+      "caption_text": "this basics",
+      "context": "Example of a name where his entry was very tight, less than 1%, maybe half a percent.",
+      "guess": "?",
+      "confidence": "unsure"
+    }
+  ]
+}

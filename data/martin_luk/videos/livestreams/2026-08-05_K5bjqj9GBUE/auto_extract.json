@@ -1,0 +1,200 @@
+{
+  "video_id": "K5bjqj9GBUE",
+  "date": "2026-08-05",
+  "title": "Pushing at the wrong time | 5 Aug 2026",
+  "observed_trades": [
+    {
+      "date": "2026-08-05",
+      "ticker": "RKLB",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Thesis-driven entry: believed SpaceX's earnings would drag SpaceX's standing/sentiment down and that capital/attention would rotate to competitor Rocket Lab",
+      "entry_basis": "Competitor-rotation thesis ahead of SpaceX earnings; no specific chart trigger stated",
+      "stop": "",
+      "source": "2026-08-05_K5bjqj9GBUE@78:36",
+      "confidence": "stated",
+      "notes": "Ticker resolved with high confidence: caption \"rock collab\" is spelled out in the same sentence as \"rocket lab.\" A viewer questioned whether the logic holds; Luk agreed the thesis alone is unverifiable and needs market confirmation. He said he \"recently\" entered, not necessarily today specifically.",
+      "fill_timing": "recently"
+    },
+    {
+      "date": "2026-08-05",
+      "ticker": "?",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Gapping up above the previous swing high in a very strong weekly uptrend, described as a huge breakout (captioned \"BCP\", likely a mis-transcription of VCP) on the weekly",
+      "entry_basis": "Gap above prior swing high off a weekly volatility-contraction-style breakout",
+      "stop": "",
+      "source": "2026-08-05_K5bjqj9GBUE@06:02",
+      "confidence": "inferred",
+      "notes": "Caption renders the ticker as \"YU\", which does not resolve to a known symbol; true ticker unresolved. Immediately after describing this setup he says \"I'm back from trading, that's all the trades I got today,\" implying this (and possibly other unlisted setups) was actually executed, but the transcript/video jumps from 07:37 to 49:35, so the segment covering the actual fills appears to be cut.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-08-05",
+      "ticker": "?",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Position taken ahead of what he considered a cleaner technical trigger",
+      "entry_basis": "Self-assessed as early; would have preferred waiting for a pullback to the 60-minute 9 EMA for better timing",
+      "stop": "",
+      "source": "2026-08-05_K5bjqj9GBUE@90:44",
+      "confidence": "inferred",
+      "notes": "Caption renders the ticker as \"AVAC\"; true ticker unresolved. Explicitly self-critical: \"Maybe I'm a little bit early on [it].\"",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-08-05",
+      "ticker": "?",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Position stopped out for a very small loss late in the session",
+      "entry_basis": "",
+      "stop": "Stopped out for just a few cents of loss",
+      "source": "2026-08-05_K5bjqj9GBUE@139:20",
+      "confidence": "stated",
+      "notes": "Caption renders the ticker as \"AAP\"; best guess is APP (AppLovin), given repeated earlier discussion of that name in the stream, but this is unconfirmed (could also be a different, unrelated name) and is in tension with an earlier passage where he explicitly says he did NOT take the AppLovin setup he was discussing. He ended the trading day immediately after this stop-out to avoid getting tilted — the episode most directly tied to the stream's \"pushing at the wrong time\" theme.",
+      "fill_timing": "today"
+    }
+  ],
+  "principles": [
+    {
+      "category": "regime",
+      "text": "Avoid buying into strength when the broader market/tape is extended to the upside (e.g., after multiple consecutive gap-up days); wait for a pullback instead of chasing.",
+      "timestamp": "50:49"
+    },
+    {
+      "category": "entries",
+      "text": "Want the sector or market to align with the individual stock before entering — prefers to see the sector ETF pull back into its own rising EMA/unfilled gap before buying a stock within that sector, rather than trading the stock in isolation.",
+      "timestamp": "63:32"
+    },
+    {
+      "category": "entries",
+      "text": "Prefers a stock to close strong into a key intraday level (e.g., a 60-minute candle testing the 9 EMA / trendline) before entering; a weak-looking candle heading into its close is a reason to pass rather than anticipate the bounce.",
+      "timestamp": "59:38"
+    },
+    {
+      "category": "risk",
+      "text": "When there is no real structure to place a stop against (e.g., a fast, gappy first-minute candle), use a fixed percentage stop (roughly 1.5-2.5%) instead of a structural one — accepting a lower win rate — rather than chasing a stock that has already extended too far past its breakout level.",
+      "timestamp": "74:41"
+    },
+    {
+      "category": "psychology",
+      "text": "A trading thesis or narrative (e.g., \"if X's earnings are bad, money rotates to competitor Y\") only matters once it's confirmed by actual market/price action — don't trust logic alone without checking how similar situations have played out historically and how the market is actually reacting.",
+      "timestamp": "79:19"
+    },
+    {
+      "category": "sizing",
+      "text": "Lowered average risk per trade from about 0.5% of account (prior year) to about 0.3% this year, and considers that reduction a good decision.",
+      "timestamp": "120:42"
+    },
+    {
+      "category": "exits",
+      "text": "Rarely trims winning positions anymore; prefers to hold full size for at least two to three weeks when a stock is working, and has become progressively more comfortable holding larger positions over time rather than de-risking early.",
+      "timestamp": "121:36"
+    },
+    {
+      "category": "risk",
+      "text": "Rarely moves a stop up to breakeven even after a stock has moved favorably; keeps the stop at the original entry-based level and, if he wants to lock in gains, manually exits rather than mechanically trailing the stop.",
+      "timestamp": "123:04"
+    },
+    {
+      "category": "sizing",
+      "text": "Typical position size is around 20-25% of account (rarely above 30%), with per-trade risk still held under ~0.3% by using tight technical stops (often under 1% from entry) rather than by cutting position size.",
+      "timestamp": "134:00"
+    },
+    {
+      "category": "regime",
+      "text": "Avoids initiating shorts when market breadth is improving, even if a specific sector looks locally weak (rolling over from a declining 50 EMA) — breadth strength argues other areas will hold up and absorb any single-sector weakness.",
+      "timestamp": "104:43"
+    },
+    {
+      "category": "psychology",
+      "text": "After getting stopped out, deliberately stops trading for the rest of the day (\"before I get tilted\") rather than continuing to search for another entry — treats tilt risk as a hard stop condition, not just a feeling to push through.",
+      "timestamp": "139:20"
+    },
+    {
+      "category": "psychology",
+      "text": "Actively tracks his own condition/mood and will cut back on streaming (and by extension, trading) rather than force it when he's not feeling well or not in the right headspace, even taking planned days off.",
+      "timestamp": "108:49"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "06:02",
+      "caption_text": "I I I was do at least try a few a few times I think I particularly like a YU.",
+      "context": "Describing a stock gapping above its previous swing high in a strong weekly uptrend with a big breakout on the weekly (captioned \"BCP\", likely VCP), immediately followed by him saying that's all the trades he got today.",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "58:52",
+      "caption_text": "I first I'm not a fan of a net because it's a little bit choppy",
+      "context": "Discussing a semis-adjacent stock pulling back toward the 60-minute 9 EMA, alongside ALAB, but passing on it due to choppiness.",
+      "guess": "ANET (Arista Networks)",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "63:10",
+      "caption_text": "I think a lab could be a good entry today as we pull back into the unfilled gaps and converging EMAs",
+      "context": "Discussing a semiconductor-related stock pulling back into unfilled gaps and converging EMAs; later spelled \"ALAP\"/\"ALAC\" in captions for the same name.",
+      "guess": "ALAB (Astera Labs)",
+      "confidence": "confirmed"
+    },
+    {
+      "timestamp": "70:10",
+      "caption_text": "why did you pick up start when fintex seems to be lagging a little versus like something like apps or shop?",
+      "context": "Viewer question about a fintech-sector pick versus software names APP/SHOP; the discussion that follows is actually about the AppLovin (APP) setup itself, which he later says he did NOT take.",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "70:10",
+      "caption_text": "Understand you took while US is in the hot software sector plus breaking out of",
+      "context": "Viewer referencing a software-sector stock Luk apparently took; never clearly resolved in the answer that follows.",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "78:52",
+      "caption_text": "there's a um hypothesis that that the earnings of basics would drag Space X down",
+      "context": "Discussing SpaceX's upcoming earnings as the driver of the Rocket Lab thesis; \"SpaceX\" is also spoken directly elsewhere in the same passage.",
+      "guess": "SpaceX (private company; no public ticker traded here)",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "90:44",
+      "caption_text": "Maybe I'm a little bit early on AVAC.",
+      "context": "Self-assessing entry timing as early; thinks a pullback to the 60-minute 9 EMA would have been a better trigger.",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "91:26",
+      "caption_text": "and also the as sockex maybe pull it pulls back into this unfilled gap. It will be a better further entry",
+      "context": "Discussing a related name that could offer a better/further entry on a pullback into an unfilled gap; not clearly stated as taken.",
+      "guess": "ASTS (AST SpaceMobile)",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "100:37",
+      "caption_text": "The slow case is also at the declining nine to uh weekly nine.",
+      "context": "Discussing semis sector/ETF weakness alongside a discouraged \"AAP long\" and a possible pullback-short setup.",
+      "guess": "SMH (semiconductor ETF) or a similarly-named semis ticker",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "126:45",
+      "caption_text": "Fast is also doing pretty well.",
+      "context": "Listing the strongest small-cap (<$5B) stocks on his watchlist alongside AHR.",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "139:20",
+      "caption_text": "No, I just got stopped out on AAP by by how much? I mean, just a few cents, I believe.",
+      "context": "Confirms a real stop-out late in the session, right before deciding to end the day; the same \"AAP\" caption also appears earlier (99:31) discouraging an \"AAP long\".",
+      "guess": "APP (AppLovin)",
+      "confidence": "unsure"
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "video_id": "_GDlFxwuZXE",
+  "date": "2026-08-13",
+  "title": "$CBRS gap down | 13 Aug 2026",
+  "observed_trades": [
+    {
+      "date": "2026-08-07",
+      "ticker": "CIFR",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Flag breakout entry",
+      "entry_basis": "Flag breakout",
+      "stop": "212.8",
+      "source": "2026-08-13__GDlFxwuZXE@60:44",
+      "confidence": "stated",
+      "notes": "Caption reads 'CPRS'/video title reads 'CBRS' — both are the same recurring caption garble the KB has repeatedly decoded to CIFR (Cipher Mining) across many other Martin Luk transcripts ('Cypher'/'cyher'/'Scyther'/'CBRS'). Recapped by a viewer question about handling gap-downs below a stop, not narrated live on this stream day. NOTE: the stated stop level (212.8) is far above CIFR's typical real-world trading range — flag for verification; the ticker ID may need revisiting if this number is accurate.",
+      "fill_timing": "7th August"
+    },
+    {
+      "date": "2026-08-07",
+      "ticker": "CIFR",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Same flag-breakout position from 7th August",
+      "entry_basis": "",
+      "stop": "212.8",
+      "source": "2026-08-13__GDlFxwuZXE@61:21",
+      "confidence": "stated",
+      "notes": "Stock gapped below his 212.8 stop pre-market; he closed out the position rather than holding through the gap. Recapped via viewer Q&A, not live on this stream day.",
+      "fill_timing": "7th August (pre-market)"
+    },
+    {
+      "date": "2026-08-07",
+      "ticker": "CIFR",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Re-entry into the same name after being stopped out pre-market",
+      "entry_basis": "Strong open buying, re-bought much higher than the pre-market stop-out price",
+      "stop": "",
+      "source": "2026-08-13__GDlFxwuZXE@61:21",
+      "confidence": "stated",
+      "notes": "He re-entered at the open because the stock opened with strong buying, after having closed the position on the pre-market gap-below-stop. He noted this doesn't always work out well but reflects his rule of only acting on stops at the open. Recapped via viewer Q&A, not live on this stream day.",
+      "fill_timing": "7th August (at the open)"
+    },
+    {
+      "date": "2026-08-13",
+      "ticker": "HPQ",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Gap up into the highs (the high of the prior huge red weekly candle), not into a declining EMA — treated as an opening range breakout",
+      "entry_basis": "Tight intraday entry using limit orders (not market order); scaled in — first got only ~1/5 of intended position size, then got filled further on a pullback",
+      "stop": "Marked as a line on his chart (confirmed verbally as his stop, exact price not stated) near the prior swing high",
+      "source": "2026-08-13__GDlFxwuZXE@08:49",
+      "confidence": "stated",
+      "notes": "He was initially unsure about taking it ('probably not going to take it') then decided it was solid because it was gapping up into the highs rather than into a declining EMA. Additional fills confirmed later ('Oh, I got filled from my limit orders on this pullback') around 12:20, after which he planned to trail it as an opening range breakout.",
+      "fill_timing": "today"
+    }
+  ],
+  "principles": [
+    {
+      "category": "entries",
+      "text": "A stock that gaps down (or opens) into rising EMAs (support) is a much safer, higher-odds entry than one gapping up into a declining EMA or overhead resistance — the latter has a much higher chance of getting rejected and reversing.",
+      "timestamp": "31:02"
+    },
+    {
+      "category": "entries",
+      "text": "Set your stop well below resistance rather than entering right at the highs into that resistance — that way even a mild pullback doesn't stop you out, whereas entering at the highs means normal chop can shake you out before the move even starts.",
+      "timestamp": "34:05"
+    },
+    {
+      "category": "exits",
+      "text": "It's never wrong to book some profits and sell into strength, especially once a position is extended from a key moving average and approaching a prior swing high.",
+      "timestamp": "13:28"
+    },
+    {
+      "category": "regime",
+      "text": "Small/micro caps are hard to trade and prone to shakeouts and fakeouts; with enough liquid, high-ADR mid-cap-and-above names available, there's no need to bother trading small caps.",
+      "timestamp": "37:25"
+    },
+    {
+      "category": "entries",
+      "text": "The best pullback entries are the ones where multiple support levels — e.g. weekly 9 EMA, daily 9/21 EMA, 1-hour 50 EMA, and the prior breakout area — all converge at the same price.",
+      "timestamp": "49:34"
+    },
+    {
+      "category": "risk",
+      "text": "Stops are only executed at the open, not pre-market or after-hours — if a stock gaps below the stop overnight, he lets it happen and reassesses the position/stop at the open rather than acting on the pre-market print.",
+      "timestamp": "61:44"
+    },
+    {
+      "category": "risk",
+      "text": "Tightening a stop (holding all else equal) doesn't inherently change a trade's expectancy on its own, but in his experience the larger risk-multiple gained from a tighter stop tends to outweigh the decrease in win rate, because good trades rarely pull back more than ~1-1.5% before continuing in his favor.",
+      "timestamp": "69:02"
+    },
+    {
+      "category": "psychology",
+      "text": "There's no single best or 'magical' approach that works for everyone in trading; learn from what other traders share, but adapt or discard it based on what actually works for you rather than copying it 100%.",
+      "timestamp": "63:41"
+    },
+    {
+      "category": "psychology",
+      "text": "Avoids running a trading community/Discord because roughly 95% of trader-to-trader discussion is noise from people still in their learning phase; only a small fraction of experienced, profitable traders are actively engaged in group discussions.",
+      "timestamp": "86:14"
+    },
+    {
+      "category": "psychology",
+      "text": "Less screen time can be a net positive — you'll miss some trades, but you also cut out boredom trades and revenge trades, and can hold positions for longer.",
+      "timestamp": "80:34"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "04:16",
+      "caption_text": "CPRS (video title renders it 'CBRS')",
+      "context": "Discussed throughout the stream as a 16% gap-down name taking support at the previous gap near rising EMAs/anchor VWAP; also the subject of a viewer Q&A recap of a 7th-August flag-breakout trade that stopped out pre-market and was re-bought at the open.",
+      "guess": "CIFR",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "22:53",
+      "caption_text": "This coal reef",
+      "context": "Immediately after dismissing an illiquid name undercutting its 90 MA, he says 'this coal reef... I thought it's going to stop me out at the open and now turn it's up like 9%' — discussing a position/watch name that nearly hit its stop then reversed up sharply.",
+      "guess": "CRWV",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "67:04",
+      "caption_text": "this crowd entry",
+      "context": "Used as a live chart example to explain how tightening vs widening a stop (1.5% vs 3%) doesn't change a trade's expectancy.",
+      "guess": "CRWD",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "14:44",
+      "caption_text": "Roc La Familia is doing a pretty also we got a pretty decent four pack by today",
+      "context": "Brief, garbled aside right after discussing HP; unclear what stock or concept ('four pack') is being referenced.",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "33:01",
+      "caption_text": "Broadcom Lab ... gapping up into that 83 83 bucks",
+      "context": "Immediately follows an extended discussion of 'Rockefeller'/Rocket Lab (RKLB) gapping down into rising EMAs; this line describes a hypothetical/contrast case of the same name gapping UP into resistance instead, likely a continued mis-caption of 'Rocket Lab' rather than Broadcom.",
+      "guess": "RKLB",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "74:05",
+      "caption_text": "It's for me I think H 15 the better entry will be on the night at the 90 MA but looks like it's not getting there",
+      "context": "A name where he thinks a better entry would be at the 90 MA, but price isn't reaching it; ticker unclear.",
+      "guess": "?",
+      "confidence": "unsure"
+    }
+  ]
+}

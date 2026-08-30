@@ -1,0 +1,312 @@
+{
+  "video_id": "1fkRKvTZJ8s",
+  "date": "2026-08-12",
+  "title": "Overexposure | 12 Aug 2026",
+  "observed_trades": [
+    {
+      "date": "2026-08-12",
+      "ticker": "MSTR",
+      "direction": "long",
+      "action": "exit",
+      "setup": "Selling out of a crypto-adjacent equity position",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-08-12_1fkRKvTZJ8s@08:49",
+      "confidence": "stated",
+      "notes": "Sold as part of crypto-position management; uses the 9 EMA as the signal for staying in or exiting crypto-adjacent positions.",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2026-08-12",
+      "ticker": "BMNR",
+      "direction": "long",
+      "action": "exit",
+      "setup": "Selling out of a crypto-adjacent equity position, alongside MSTR",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-08-12_1fkRKvTZJ8s@08:49",
+      "confidence": "inferred",
+      "notes": "Transcript garbles ticker as 'BMR'. Best guess is BMNR (Bitmine Immersion Technologies) given the crypto/bitcoin-treasury context alongside MSTR.",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2026-08-12",
+      "ticker": "SPCX",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Space sector showing broad strength over the past few days, riding the rising 9/21 EMAs higher; entering on the strength of the sector theme despite the name itself being extended and below its weekly 9 EMA",
+      "entry_basis": "60-minute 9 EMA bounce",
+      "stop": "tight (exact level unstated), described as tight enough to justify the aggressive/extended entry",
+      "source": "2026-08-12_1fkRKvTZJ8s@65:22",
+      "confidence": "stated",
+      "notes": "Ticker per known caption pattern ('SpaceX'/'basics' = SPCX). Acknowledged by Luk as an aggressive entry since price is extended from the daily EMAs.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-08-12",
+      "ticker": "AFRM",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Software-name entry despite a recent low group-wide success rate; price close to the 9 and 21 daily EMAs",
+      "entry_basis": "5-minute candle breakout",
+      "stop": "tight stop, close to the 9 and 21 daily EMA",
+      "source": "2026-08-12_1fkRKvTZJ8s@91:29",
+      "confidence": "stated",
+      "notes": "",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2026-08-12",
+      "ticker": "AFRM",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Follow-up on the AFRM breakout entry",
+      "entry_basis": "",
+      "stop": "stop hit",
+      "source": "2026-08-12_1fkRKvTZJ8s@92:11",
+      "confidence": "stated",
+      "notes": "Attributes the recent low win rate in software names partly to IGV being extended.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-08-12",
+      "ticker": "AAOI",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Re-entry after earnings: pullback into a post-earnings gap level; stock going sideways without tagging the rising 9 EMA, plus a healthy pullback into the weekly 9/21 EMA",
+      "entry_basis": "5-minute breakout",
+      "stop": "",
+      "source": "2026-08-12_1fkRKvTZJ8s@98:34",
+      "confidence": "inferred",
+      "notes": "Ticker transcribed as 'AOI'. Best real-ticker match given the optical/photonics-sector context in the same question ('CHR' -> likely COHR, 'lights' -> likely LITE) is AAOI (Applied Optoelectronics). Caption is garbled around a prior stop-out and an intent to keep re-entering on pullbacks to the 9/21 EMA.",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2026-08-12",
+      "ticker": "DELL",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Entering DELL around $103",
+      "entry_basis": "1-minute range breakout, chosen over 5-minute/15-minute breakout because those ranges implied a too-wide (~2.5-3%) stop",
+      "stop": "tightened via the 1-minute range vs. a wider multi-minute range",
+      "source": "2026-08-12_1fkRKvTZJ8s@127:45",
+      "confidence": "stated",
+      "notes": "",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-08-12",
+      "ticker": "DELL",
+      "direction": "long",
+      "action": "add",
+      "setup": "Progressive re-attempt on the same name after being stopped out on shorter-timeframe breakout attempts",
+      "entry_basis": "15-minute breakout, after prior 1-minute and 5-minute breakout attempts",
+      "stop": "",
+      "source": "2026-08-12_1fkRKvTZJ8s@132:23",
+      "confidence": "inferred",
+      "notes": "Question text transcribed as 'a call with clip', which is garbled. Inferred to be the same DELL trade given the explicit '1-minute, then 5-minute, then 15-minute breakout' progression matching the prior DELL discussion. Stated as possibly the last trade of the day if stopped out again.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-08-12",
+      "ticker": "?",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Re-entry into a previously-held position",
+      "entry_basis": "5-minute breakout",
+      "stop": "",
+      "source": "2026-08-12_1fkRKvTZJ8s@51:26",
+      "confidence": "inferred",
+      "notes": "Question transcribed as 'Core with re-entry' -- the ticker itself is unresolved/unintelligible in the caption. Luk confirms he re-entered on the 5-minute breakout.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-08-12",
+      "ticker": "APP",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Chose this name over an alternative ('VIP') for a pullback entry; a tiny intraday range high considered a low-risk entry point",
+      "entry_basis": "5-minute pullback into the anchored VWAP and previous swing high",
+      "stop": "",
+      "source": "2026-08-12_1fkRKvTZJ8s@51:26",
+      "confidence": "inferred",
+      "notes": "Transcribed as 'AAPAP'. Best guess is APP (AppLovin), which plausibly matches a later remark ('This AAP is getting really nice follow through', @133:26) about the same name working out.",
+      "fill_timing": "today"
+    }
+  ],
+  "principles": [
+    {
+      "category": "regime",
+      "text": "A pullback that doesn't even touch the 9 EMA, while holding a prior breakout gap, is a sign of immense underlying strength.",
+      "timestamp": "07:23"
+    },
+    {
+      "category": "exits",
+      "text": "Uses the 9 EMA as the objective level/guide for deciding whether to stay in or exit volatile (e.g. crypto) positions.",
+      "timestamp": "08:49"
+    },
+    {
+      "category": "sizing",
+      "text": "The number of positions held is irrelevant on its own -- what matters is market breadth, individual stock action, and the indices, not a fixed position count.",
+      "timestamp": "45:57"
+    },
+    {
+      "category": "psychology",
+      "text": "Don't try to outsmart or second-guess the market -- in a strong market, price can run much further than expected; let the market signal when it no longer wants to go up.",
+      "timestamp": "47:57"
+    },
+    {
+      "category": "entries",
+      "text": "Avoid names where volume is too low relative to market cap -- expect a wide spread in the first 5-15 minutes of trading on such names.",
+      "timestamp": "56:46"
+    },
+    {
+      "category": "entries",
+      "text": "Whether to require taking out the opening-range high on the 1-minute vs. 5-minute chart depends on where the market opens and how extended it is intraday.",
+      "timestamp": "59:06"
+    },
+    {
+      "category": "entries",
+      "text": "When a stock approaches a declining resistance moving average (e.g. the 50 EMA), watch how price reacts there -- no rejection and a clean push through is a sign of strength.",
+      "timestamp": "63:33"
+    },
+    {
+      "category": "other",
+      "text": "Don't rely on charts alone -- line up the market, the sector, and the individual stock's context/rationale together; being obsessed with the chart in isolation loses a big part of the edge.",
+      "timestamp": "86:50"
+    },
+    {
+      "category": "regime",
+      "text": "Index/sector context matters a lot for timing entries and improving win rate, but it isn't 'all about' the index -- individual stock selection and pattern still matter a great deal.",
+      "timestamp": "95:33"
+    },
+    {
+      "category": "entries",
+      "text": "When comparing two similar names in the same group, prefer the relatively stronger one (e.g. choosing MU over SNDK).",
+      "timestamp": "97:21"
+    },
+    {
+      "category": "entries",
+      "text": "Core trading philosophy: focus on getting entries with the tightest possible risk right before a range expansion.",
+      "timestamp": "106:17"
+    },
+    {
+      "category": "risk",
+      "text": "Getting stopped out repeatedly (washed out) on the same names is a signal to go back and study whether entries or stop placement need improvement.",
+      "timestamp": "76:15"
+    },
+    {
+      "category": "risk",
+      "text": "How much to trim into an earnings gap-risk event should be sized to the adverse gap you can psychologically/financially accept -- the more profit cushion, the less you need to trim; it's never wrong to book some profit.",
+      "timestamp": "124:13"
+    },
+    {
+      "category": "sizing",
+      "text": "Overexposure is subjective -- it's defined by what the individual trader can personally tolerate losing, not by an external rule on position count.",
+      "timestamp": "119:38"
+    },
+    {
+      "category": "psychology",
+      "text": "Build pattern recognition by studying past trades (especially shakeout entries) for real hours of work; if it still doesn't click after genuine effort, that entry style may simply not be a fit -- and that's fine.",
+      "timestamp": "116:40"
+    },
+    {
+      "category": "entries",
+      "text": "Pick the breakout timeframe (1-minute vs. 5-minute vs. 15-minute) based on the stop size it implies -- a wider range on a longer timeframe means a wider percentage stop, so use a finer timeframe to keep risk tight.",
+      "timestamp": "128:06"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "05:16",
+      "caption_text": "This one, Kyoshia. I I don't know whether I'm pronounced it right. It looks like very identical to SNDK. Probably like 95% correlation.",
+      "context": "Comparing a memory-sector name's price action to SNDK for correlation",
+      "guess": "KIOXY (Kioxia)",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "08:49",
+      "caption_text": "I sold uh MSTR and uh BMR yesterday",
+      "context": "Selling crypto-adjacent equity positions, using the 9 EMA as the exit guide",
+      "guess": "BMNR",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "20:37",
+      "caption_text": "Unless I got stopped out from by co uh cool beef or spacics, whatever.",
+      "context": "Listing existing crypto/space-adjacent positions whose stops have not yet been hit",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "22:02",
+      "caption_text": "I I really want to buy the GU and Intel or the Sea Gates, but I just can't",
+      "context": "Wanted to add more names but ran out of buying power (not executed)",
+      "guess": "? for 'GU'; STX (Seagate) for 'Sea Gates'",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "51:26",
+      "caption_text": "Core with re-entry. Yes, I put it on the five minute breakout.",
+      "context": "Viewer question about re-entering a name; Luk confirms a 5-minute breakout re-entry",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "51:26",
+      "caption_text": "If I'm not buying uh for VIP, I'm I'm going to buy the AAPAP on this five minute pullback into the end of VWAP and the previous swing high.",
+      "context": "Choosing between two candidate pullback entries",
+      "guess": "APP (AppLovin) for 'AAPAP'; 'VIP' itself unresolved",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "54:23",
+      "caption_text": "This Q&T is doing super well after earnings... I remember you mentioning Q&A as a strong setup... a 15 billion market cap stock",
+      "context": "Discussing a name's post-earnings price action and low volume relative to its market cap",
+      "guess": "KIOXY (Kioxia) -- matches the earlier Kyoshia/SNDK comparison, earnings timing, and market cap",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "59:28",
+      "caption_text": "frog I think is also a little bit too low the volume but uh yeah but the the weekly is looking very nice.",
+      "context": "Discussing low volume on a name with a strong weekly chart",
+      "guess": "FROG (JFrog)",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "66:35",
+      "caption_text": "Maybe this red wire is this. Yeah, probably this RDW and OMDS as well.",
+      "context": "Naming other space/drone-sector names showing strength alongside SPCX",
+      "guess": "RDW (Redwire); ONDS (Ondas Holdings) for 'OMDS'",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "98:34",
+      "caption_text": "why you reenter AOI when there is such an erective behavior from CHR and uh lights on Monday",
+      "context": "Viewer question about re-entering a name, referencing two related sector peers",
+      "guess": "AAOI (Applied Optoelectronics) for 'AOI'; COHR (Coherent) for 'CHR'; LITE (Lumentum) for 'lights'",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "75:34",
+      "caption_text": "I've been washed out several times in D HP Dodge... I guess you're you mean like DO, right? and FTN since last week",
+      "context": "Viewer describing their own repeated stop-outs in driller/oilfield-services names (not Luk's trades)",
+      "guess": "DO (Diamond Offshore); HP (Helmerich & Payne); FTI (TechnipFMC) for 'FTN'",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "122:23",
+      "caption_text": "Any thoughts on how you will handle your CPRS trade? Since there's earnings later on tonight... if CBRS is gapping down into like 220 tomorrow",
+      "context": "Viewer asking how Luk will manage an existing position ahead of same-day earnings; Luk discusses a general trimming framework but no specific trim action is confirmed",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "132:23",
+      "caption_text": "What is your reason for not trying a call with clip again. I put it at this 15 minute breakouts.",
+      "context": "Follow-up question matching the DELL 1-minute/5-minute/15-minute breakout attempt progression",
+      "guess": "DELL",
+      "confidence": "unsure"
+    }
+  ]
+}

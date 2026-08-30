@@ -1,0 +1,145 @@
+{
+  "video_id": "xZ5LigAsWec",
+  "date": "2026-07-29",
+  "title": "Bleeding slowly | 29 Jul 2026",
+  "observed_trades": [
+    {
+      "date": "2026-07-29",
+      "ticker": "?",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Parabolic long on SK Hynix (South Korean chipmaker) traded via its US ADR in the overnight East-Asia session; spotted an extension/parabolic move on the Korean chart around midday Hong Kong time and tracked it for a continuation entry",
+      "entry_basis": "5-minute pullback into a rising 9 EMA after a parabolic breakout from the prior high/range; discovered the Korean feed was 20 minutes delayed, so by the time he checked the US ADR chart the stock had already moved and he missed the optimal entry",
+      "stop": "~2% (described as one of the widest stops he's used in recent months)",
+      "source": "2026-07-29_xZ5LigAsWec@53:10",
+      "confidence": "stated",
+      "notes": "Only got filled on about 1/3 of intended size on this first fill; noted liquidity is much poorer trading in the overnight/East Asia session",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-07-29",
+      "ticker": "?",
+      "direction": "long",
+      "action": "add",
+      "setup": "Same SK Hynix parabolic long — added the remaining size after the initial partial fill",
+      "entry_basis": "Bought the remaining size on a later candle after also missing a subsequent 5-min breakout / 15-min pullback-into-9EMA entry",
+      "stop": "~2% (same wide stop as the initial fill)",
+      "source": "2026-07-29_xZ5LigAsWec@53:36",
+      "confidence": "stated",
+      "notes": "Added roughly the remaining 2/3 of intended size; sized the trade down so total risk was only about 0.5% of account given the wider-than-usual stop; called it 'a kind of textbook parabolic long entry'",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-07-29",
+      "ticker": "?",
+      "direction": "short",
+      "action": "exit",
+      "setup": "Covering an existing short position shown on his chart",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-07-29_xZ5LigAsWec@34:47",
+      "confidence": "inferred",
+      "notes": "Caption reads 'covering shot,' almost certainly a mis-transcription of 'covering short.' Ticker is not identifiable from context. He notes he did not cover at the exact low and that price continued lower (back toward his original short thesis direction) right after he covered — used to illustrate how hard it is to exit at a trend's turning point.",
+      "fill_timing": ""
+    }
+  ],
+  "principles": [
+    {
+      "category": "exits",
+      "text": "It's very hard to exit a trade exactly at the turning point of a trend — expect to frequently cover a short (or exit a long) only to watch price immediately continue in your original favor; accept this as a normal cost of managing the trade rather than a sign you exited wrong.",
+      "timestamp": "35:20"
+    },
+    {
+      "category": "sizing",
+      "text": "When the stop on a setup has to be unusually wide, cut position size so total dollar risk stays in the normal range (here: a ~2% stop, roughly his widest in months, was offset by taking a fraction of normal size to keep risk near ~0.5% of account).",
+      "timestamp": "54:09"
+    },
+    {
+      "category": "entries",
+      "text": "Criteria for a good parabolic reversal (short-into-bounce or long-into-flush) setup: (1) the move should be steep — slope getting sharper on the lower timeframe, (2) the reversal candle should have wide range/high volatility, and (3) it should come with volume expansion.",
+      "timestamp": "88:02"
+    },
+    {
+      "category": "entries",
+      "text": "Uses market orders for the large majority of entries/exits (roughly 90% of the time) and limit orders only occasionally (~10%), rather than defaulting to limit orders.",
+      "timestamp": "99:01"
+    },
+    {
+      "category": "risk",
+      "text": "His largest drawdowns have historically come right after his best runs (cited his 26% December drawdown following a strong stretch), so he makes a deliberate point to get more careful with risk after a good run rather than more aggressive.",
+      "timestamp": "125:19"
+    },
+    {
+      "category": "sizing",
+      "text": "When performing well and in sync with the market, it's reasonable to scale up conviction — running more positions (e.g. six to seven instead of two to three) — rather than keeping size static regardless of how the year is going.",
+      "timestamp": "113:59"
+    },
+    {
+      "category": "risk",
+      "text": "To fix overtrading, set a hard daily trade limit; to fix not respecting stops, use hard/mechanical stop orders rather than relying on discretion in the moment.",
+      "timestamp": "153:18"
+    },
+    {
+      "category": "psychology",
+      "text": "Names the specific mistakes that caused his worst drawdown: ignoring his own stops, increasing size after consecutive losses, and oversizing in an attempt to make back losses in one trade (revenge trading).",
+      "timestamp": "158:24"
+    },
+    {
+      "category": "exits",
+      "text": "Personal exit rule for consistency: never exit outside of regular trading hours (e.g., won't close an overnight/premarket position on adverse after-hours or foreign-market action) — will wait for the regular session open to manage the trade, even if the counterpart market is moving against him overnight.",
+      "timestamp": "143:46"
+    },
+    {
+      "category": "psychology",
+      "text": "Views trading communities and social platforms as generally low-value for real help, since most participants there aren't consistently profitable and are more focused on attention or validation; considers grinding it out largely solo one of his best early-career decisions, and says if you do seek outside help, seek out people with actual multi-year track records.",
+      "timestamp": "147:11"
+    },
+    {
+      "category": "other",
+      "text": "Deliberately delays / doesn't broadcast entries in real time because he doesn't want viewers copy-trading his exact fills.",
+      "timestamp": "42:49"
+    },
+    {
+      "category": "regime",
+      "text": "Shorting tends to move faster than going long because panic is a more powerful force than greed.",
+      "timestamp": "66:17"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "51:13",
+      "caption_text": "SK Highs / SK Hix / SK HX / SK high",
+      "context": "Discussion of a parabolic long trade on the South Korean chart, tracked via its US ADR in the overnight East-Asia session",
+      "guess": "SK Hynix (South Korean chipmaker) — exact US ADR ticker not stated in transcript",
+      "confidence": "confirmed"
+    },
+    {
+      "timestamp": "35:20",
+      "caption_text": "I would definitely like to also enter like BNR PW",
+      "context": "Right after saying he believes he's finished trading for the day, he mentions wanting to also enter something — reads as forward-looking/aspirational rather than a confirmed action, so not logged as a trade",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "103:57",
+      "caption_text": "Усі know what is happening with this I'm still in crowd so who cares coin earnings tomorrow",
+      "context": "Mentions earnings coming tomorrow for a name referred to as 'crowd'",
+      "guess": "CRWD (CrowdStrike)",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "93:59",
+      "caption_text": "You think now it's a good time to buy VO if I'm plan to hold it for long term",
+      "context": "Viewer chat question (not Luk's own trade); he declines to give investing advice",
+      "guess": "VOO (Vanguard S&P 500 ETF) or another V-ticker misheard as 'VO'",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "173:16",
+      "caption_text": "is also reaching the previous gap of this unfield gap back in May breaking out from this from this tiny flag",
+      "context": "Continued chart commentary shortly after the SK Hynix trade discussion — likely still describing the same name's chart (unfilled May gap, flag breakout) but no explicit new action stated",
+      "guess": "SK Hynix (continued)",
+      "confidence": "unsure"
+    }
+  ]
+}

@@ -4,30 +4,36 @@
 
 Two checks per video. **Ambiguous tickers**: spots where the auto-caption garbled a symbol — click the timestamp, check the chart, confirm the ticker. **Trades**: each trade with the day it was placed; ⬜ marks rows that need a glance — an unresolved ticker (`?`), an unresolved fill date, or a date *inferred* to a different day than the stream (e.g. he said "Thursday"). Rows with no ⬜ are same-session or he stated the date.
 
-**647** ticker flags · **166** trades to date-check · across **65** videos. Conf: 🟡 likely · ❓ unsure.
+**776** ticker flags · **199** trades to date-check · across **78** videos. Conf: 🟡 likely · ❓ unsure.
 
 ## Index — ticker flags by video
 
 - [2026-05-20 — Aggressive exposure](#2026-05-20-aggressive-exposure) · 19
+- [2026-08-28 — EP90](#2026-08-28-ep90) · 17
 - [2026-07-13 — Declining breadth](#2026-07-13-declining-breadth) · 15
 - [2026-06-26 — Go big or stopped out](#2026-06-26-go-big-or-stopped-out) · 15
 - [2026-05-11 — Free money market](#2026-05-11-free-money-market) · 15
+- [2026-08-03 — Don't buy family size chips](#2026-08-03-don-t-buy-family-size-chips) · 14
 - [2026-06-24 — Flawed plan with perfect execution](#2026-06-24-flawed-plan-with-perfect-execution) · 14
 - [2026-06-23 — Don't panic](#2026-06-23-don-t-panic) · 14
 - [2026-05-21 — Kristjan influence](#2026-05-21-kristjan-influence) · 14
 - [2026-05-12 — Finally](#2026-05-12-finally) · 14
 - [2026-05-05 — Back on margin and many yapping](#2026-05-05-back-on-margin-and-many-yapping) · 14
 - [2026-01-10 — $AEVA $30](#2026-01-10-aeva-30) · 14
+- [2026-08-12 — Overexposure](#2026-08-12-overexposure) · 13
+- [2026-08-10 — Dot-com bubble charts](#2026-08-10-dot-com-bubble-charts) · 13
 - [2026-05-22 — Be open-minded and curious](#2026-05-22-be-open-minded-and-curious) · 13
 - [2026-03-04 — $GLD $SLV pullback short](#2026-03-04-gld-slv-pullback-short) · 13
 - [2026-01-21 — Buy pullbacks and Greenland](#2026-01-21-buy-pullbacks-and-greenland) · 13
 - [2025-12-13 — Panic sell](#2025-12-13-panic-sell) · 13
+- [2026-08-06 — Don't worry be happy](#2026-08-06-don-t-worry-be-happy) · 12
 - [2026-07-22 — Study the charts](#2026-07-22-study-the-charts) · 12
 - [2026-04-28 — Dip buys not working](#2026-04-28-dip-buys-not-working) · 12
 - [2026-01-09 — $IWM outperformance](#2026-01-09-iwm-outperformance) · 12
 - [2026-01-08 — 26% Dec drawdown](#2026-01-08-26-dec-drawdown) · 12
 - [2025-12-16 — Short the bounce](#2025-12-16-short-the-bounce) · 12
 - [2025-12-03 — Waiting](#2025-12-03-waiting) · 12
+- [2026-08-05 — Pushing at the wrong time](#2026-08-05-pushing-at-the-wrong-time) · 11
 - [2026-07-02 — Semi breakdown](#2026-07-02-semi-breakdown) · 11
 - [2026-06-25 — Buying into the weekly 9](#2026-06-25-buying-into-the-weekly-9) · 11
 - [2026-03-12 — Watchlist rules, AVWAP, $GLD $SLV shorts and more](#2026-03-12-watchlist-rules-avwap-gld-slv-shorts-and-more) · 11
@@ -53,6 +59,10 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 - [2026-02-18 — Wait for the close](#2026-02-18-wait-for-the-close) · 9
 - [2026-02-11 — Watchlists](#2026-02-11-watchlists) · 9
 - [2026-01-31 — +969% Return in 1 Year: The Pullback Strategy of a Trading Champion](#2026-01-31-969-return-in-1-year-the-pullback-strategy-of-a-trading-champion) · 9
+- [2026-08-21 — Reset](#2026-08-21-reset) · 8
+- [2026-08-17 — Missed $ONDS](#2026-08-17-missed-onds) · 8
+- [2026-08-04 — Lockout rally again](#2026-08-04-lockout-rally-again) · 8
+- [2026-07-28 — Locking in profits](#2026-07-28-locking-in-profits) · 8
 - [2026-07-27 — EP72](#2026-07-27-ep72) · 8
 - [2026-06-12 — Shopping spree](#2026-06-12-shopping-spree) · 8
 - [2026-06-05 — Holiday time](#2026-06-05-holiday-time) · 8
@@ -66,13 +76,408 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 - [2026-03-05 — Should have skipped the first 15mins](#2026-03-05-should-have-skipped-the-first-15mins) · 7
 - [2026-02-23 — No trade](#2026-02-23-no-trade) · 7
 - [2026-02-13 — 2 cents](#2026-02-13-2-cents) · 7
+- [2026-08-25 — C game](#2026-08-25-c-game) · 6
+- [2026-08-13 — $CBRS gap down](#2026-08-13-cbrs-gap-down) · 6
 - [2026-04-08 — Huge gap-up and $CAR short](#2026-04-08-huge-gap-up-and-car-short) · 6
 - [2026-02-26 — Chop chop chop](#2026-02-26-chop-chop-chop) · 6
 - [2026-02-06 — $SNDK LoD](#2026-02-06-sndk-lod) · 6
+- [2026-07-29 — Bleeding slowly](#2026-07-29-bleeding-slowly) · 5
 - [2026-07-24 — EP71](#2026-07-24-ep71) · 5
 - [2026-04-27 — Short term extension and oil strength](#2026-04-27-short-term-extension-and-oil-strength) · 5
 - [2026-07-01 — Clean](#2026-07-01-clean) · 4
 - [2025-11-26 — Oct trades](#2025-11-26-oct-trades) · 4
+
+
+## 2026-08-28 — EP90
+
+[▶ watch](https://www.youtube.com/watch?v=ufN4u_ncWZg) · `data/martin_luk/videos/livestreams/2026-08-28_ufN4u_ncWZg` · 17 ticker flags · 7 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [07:02](https://www.youtube.com/watch?v=ufN4u_ncWZg&t=422s) | Iron Yen | Considering trying a short as an 'inverse EP' (earnings-play reversal) on this name. | IREN | 🟡 |
+| ⬜ | [182:09](https://www.youtube.com/watch?v=ufN4u_ncWZg&t=10929s) | hour yen | Watching this name do well after a 5-minute breakdown; ultimately skips the trade due to lack of buying power. | IREN | 🟡 |
+| ⬜ | [05:35](https://www.youtube.com/watch?v=ufN4u_ncWZg&t=335s) | real break | Says this name is gapping down into the nine daily EMA after earnings; wants to track its action at the rising nine. | RBRK (Rubrik) | 🟡 |
+| ⬜ | [35:02](https://www.youtube.com/watch?v=ufN4u_ncWZg&t=2102s) | rubric | Describes an ugly reversal on this name (10% one-minute candle range). | RBRK (Rubrik) | ✅ |
+| ⬜ | [05:12](https://www.youtube.com/watch?v=ufN4u_ncWZg&t=312s) | Kims | Says this name is doing pretty well after Wednesday weakness, coming back and looking good on the weekly. | HIMS | 🟡 |
+| ⬜ | [05:35](https://www.youtube.com/watch?v=ufN4u_ncWZg&t=335s) | a firm's EP | Mentioned alongside the earnings-gap-down name (real break/RBRK) as another name with an earnings play. | AFRM (Affirm) | 🟡 |
+| ⬜ | [14:47](https://www.youtube.com/watch?v=ufN4u_ncWZg&t=887s) | SNK | Pushing into the hourly/daily nine EMA, grouped with MU as a semi name to watch. | SNDK (SanDisk) | ✅ |
+| ⬜ | [38:13](https://www.youtube.com/watch?v=ufN4u_ncWZg&t=2293s) | SNTK | Pushing into all EMAs (daily, 4hr, hourly) during the semis-short discussion. | SNDK (SanDisk) | ✅ |
+| ⬜ | [63:45](https://www.youtube.com/watch?v=ufN4u_ncWZg&t=3825s) | SK highix / SKH Highix / SK Hidings | Referenced repeatedly throughout as a semiconductor short candidate/position, built into a bigger position later in the stream. | SK Hynix (South Korean memory chipmaker) | 🟡 |
+| ⬜ | [14:47](https://www.youtube.com/watch?v=ufN4u_ncWZg&t=887s) | sock case | Approaching the daily nine EMA, mentioned in the same breath as other semi names. | SOXX (semiconductor ETF) or SOX index | ❓ |
+| ⬜ | [29:17](https://www.youtube.com/watch?v=ufN4u_ncWZg&t=1757s) | him is loosen this all the year | Commentary during discussion of a name losing/loosening around a moving average. | HIMS | ❓ |
+| ⬜ | [50:47](https://www.youtube.com/watch?v=ufN4u_ncWZg&t=3047s) | OSK | Says this name 'seems like a good short yesterday,' with a reversal in the second hour that never took out the high of day. | ? | ❓ |
+| ⬜ | [90:16](https://www.youtube.com/watch?v=ufN4u_ncWZg&t=5416s) | Red is very strong today. Nobody going to stop me out. | Follows commentary about gold/silver; unclear if 'Red' is a ticker or a color/chart description. | ? | ❓ |
+| ⬜ | [99:11](https://www.youtube.com/watch?v=ufN4u_ncWZg&t=5951s) | the kills at the spies | Comparing index performance: this pairing is looking very good while the Russell underperforms. | QQQ and SPY | 🟡 |
+| ⬜ | [180:36](https://www.youtube.com/watch?v=ufN4u_ncWZg&t=10836s) | Kill and spice are cracking down the hourly nine | Indices breaking the hourly nine EMA and coming into the daily nine. | QQQ and SPY | 🟡 |
+| ⬜ | [132:39](https://www.youtube.com/watch?v=ufN4u_ncWZg&t=7959s) | corning | Comparing which name is the better short between this one and SK Hynix; says it is technically weaker on both daily and intraday. | ? | ❓ |
+| ⬜ | [165:32](https://www.youtube.com/watch?v=ufN4u_ncWZg&t=9932s) | this basics | Example of a name where his entry was very tight, less than 1%, maybe half a percent. | ? | ❓ |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [25:57](https://www.youtube.com/watch?v=ufN4u_ncWZg&t=1557s) | CRCL | long · trim | today | 2026-08-28 |
+| · | [25:57](https://www.youtube.com/watch?v=ufN4u_ncWZg&t=1557s) | PATH | long · exit | today | 2026-08-28 |
+| · | [79:31](https://www.youtube.com/watch?v=ufN4u_ncWZg&t=4771s) | SNDK | short · add | today | 2026-08-28 |
+| · | [79:31](https://www.youtube.com/watch?v=ufN4u_ncWZg&t=4771s) | SK Hynix | short · add | today | 2026-08-28 |
+| ⬜ | [141:53](https://www.youtube.com/watch?v=ufN4u_ncWZg&t=8513s) | OLO | short · entry | yesterday | 2026-08-27 |
+| ⬜ | [141:53](https://www.youtube.com/watch?v=ufN4u_ncWZg&t=8513s) | APLD | short · entry | yesterday | 2026-08-27 |
+| ⬜ | [152:31](https://www.youtube.com/watch?v=ufN4u_ncWZg&t=9151s) | GLD/SLV | short · entry | earlier this year | _(unresolved)_ |
+
+
+## 2026-08-25 — C game
+
+[▶ watch](https://www.youtube.com/watch?v=WjAbgRQCHZ8) · `data/martin_luk/videos/livestreams/2026-08-25_WjAbgRQCHZ8` · 6 ticker flags · 3 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [04:31](https://www.youtube.com/watch?v=WjAbgRQCHZ8&t=271s) | Basics is also looking little bit shortable | Part of his gap-up-day short watchlist alongside Tesla and 'quantum' names; mentioned again later as 'acting in a quite neutral' way | ? | ❓ |
+| ⬜ | [04:57](https://www.youtube.com/watch?v=WjAbgRQCHZ8&t=297s) | the only long I'm watching today will be like this fake | Naming the single long setup he's watching on the gap-up day; explicitly framed as 'watching,' not a trade taken | ? | ❓ |
+| ⬜ | [67:58](https://www.youtube.com/watch?v=WjAbgRQCHZ8&t=4078s) | explain the thesis on PNW if they think cyber security is a bit weak now | Viewer question about a cybersecurity-related ticker during a discussion of cyber-sector weakness and stopped-out trades | PANW | 🟡 |
+| ⬜ | [83:19](https://www.youtube.com/watch?v=WjAbgRQCHZ8&t=4999s) | Parabolic shots on P uh extended and approaching the previous swing high | Viewer asks about a parabolic-short candidate near a prior swing high; Luk explicitly passes ('Not for me') | ? | ❓ |
+| ⬜ | [101:56](https://www.youtube.com/watch?v=WjAbgRQCHZ8&t=6116s) | personally I think SpaceX can go like either way | Discussing an existing position with an active stop that could go either direction; matches known KB decode pattern (SpaceX=SPCX) | SPCX | 🟡 |
+| ⬜ | [115:33](https://www.youtube.com/watch?v=WjAbgRQCHZ8&t=6933s) | hopefully walking can show some momentum in the in the future | Closing remarks about current conditions not favoring his style; unclear if referring to a specific ticker or the market generally | ? | ❓ |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [69:14](https://www.youtube.com/watch?v=WjAbgRQCHZ8&t=4154s) | IGV | long · entry | — | 2026-08-25 |
+| ⬜ | [64:37](https://www.youtube.com/watch?v=WjAbgRQCHZ8&t=3877s) | ? | long · stopped_out | today | 2026-08-25 |
+| · | [101:56](https://www.youtube.com/watch?v=WjAbgRQCHZ8&t=6116s) | SPCX | long · entry | — | 2026-08-25 |
+
+
+## 2026-08-21 — Reset
+
+[▶ watch](https://www.youtube.com/watch?v=72SNbrYCpuA) · `data/martin_luk/videos/livestreams/2026-08-21_72SNbrYCpuA` · 8 ticker flags · 5 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [45:47](https://www.youtube.com/watch?v=72SNbrYCpuA&t=2747s) | I'm thinking on rolling this basics, but I'm hope I'm waiting for the for a better entry. | Discussing SpaceX again (a recurring topic throughout the stream); waiting for a better entry, no action taken. | SPCX | 🟡 |
+| ⬜ | [62:05](https://www.youtube.com/watch?v=72SNbrYCpuA&t=3725s) | Yeah, I was thinking shorting this basics, but uh I don't know. | Considering a short on SpaceX after discussing quantum-name strength near a resistance cluster; still hesitant, no action taken. | SPCX | 🟡 |
+| ⬜ | [62:05](https://www.youtube.com/watch?v=72SNbrYCpuA&t=3725s) | And this octai sp of the lows. | Brief mention that Okta is scraping/near the lows, transitioning between quantum-name talk and the SpaceX short discussion. | OKTA | 🟡 |
+| ⬜ | [64:21](https://www.youtube.com/watch?v=72SNbrYCpuA&t=3861s) | I kind of shorting shorted it a little bit early like back in the 1st of July... eventually stops me out and it gaps up into the declining 9 EMA on the next day. | Recap of a past short trade referenced while looking at a chart; likely the same SpaceX ('basics') name discussed moments earlier, but the exact subject is not restated. | SPCX | ❓ |
+| ⬜ | [26:07](https://www.youtube.com/watch?v=72SNbrYCpuA&t=1567s) | this CI is one of the uh interesting names that I found | Watchlist mention of a low-liquidity biotech name with a decent chart and earnings follow-through, grouped with MRNA and other biotech names; unlikely to be the literal ticker CI (Cigna, a large highly-liquid non-biotech name). | ? | ❓ |
+| ⬜ | [26:24](https://www.youtube.com/watch?v=72SNbrYCpuA&t=1584s) | and uh and um this twist | Another low-liquidity biotech/earnings-play watchlist name grouped with MRNA and CI. | TWST | 🟡 |
+| ⬜ | [26:24](https://www.youtube.com/watch?v=72SNbrYCpuA&t=1584s) | also include this M&N | Another low-liquidity biotech/earnings-play watchlist name grouped with MRNA, CI and 'twist'. | ? | ❓ |
+| ⬜ | [27:36](https://www.youtube.com/watch?v=72SNbrYCpuA&t=1656s) | I think that would be the ones that I would like to trade a little bit more like maybe like Tam today we got a pretty decent breakout on copper names. | Possibly a garbled ticker for a copper-related name, or simply a caption mis-hearing of the word 'them'. | ? | ❓ |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [14:46](https://www.youtube.com/watch?v=72SNbrYCpuA&t=886s) | CRCL | long · trim | today | 2026-08-21 |
+| · | [16:46](https://www.youtube.com/watch?v=72SNbrYCpuA&t=1006s) | MSTR | long · stopped_out | — | 2026-08-21 |
+| · | [17:23](https://www.youtube.com/watch?v=72SNbrYCpuA&t=1043s) | BMNR | long · exit | — | 2026-08-21 |
+| · | [18:37](https://www.youtube.com/watch?v=72SNbrYCpuA&t=1117s) | COIN | long · entry | — | 2026-08-21 |
+| ⬜ | [64:21](https://www.youtube.com/watch?v=72SNbrYCpuA&t=3861s) | SPCX | short · stopped_out | 1st of July | _(unresolved)_ |
+
+
+## 2026-08-17 — Missed $ONDS
+
+[▶ watch](https://www.youtube.com/watch?v=28slvAelnSc) · `data/martin_luk/videos/livestreams/2026-08-17_28slvAelnSc` · 8 ticker flags · 7 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [06:47](https://www.youtube.com/watch?v=28slvAelnSc&t=407s) | the QBTS and INQ has has closed above all the weekly EMAs | Discussing quantum-computing names that closed above their weekly EMAs | IONQ | 🟡 |
+| ⬜ | [40:21](https://www.youtube.com/watch?v=28slvAelnSc&t=2421s) | ODS today pullback by uh undercutting actions | Discussing the name he missed today, referenced in the video title as $ONDS | ONDS | ✅ |
+| ⬜ | [59:41](https://www.youtube.com/watch?v=28slvAelnSc&t=3581s) | OMDS on this lush has a really good opportunities for the pullback buys | Continuing the same discussion of the missed pullback-buy setup named in the video title | ONDS | ✅ |
+| ⬜ | [74:13](https://www.youtube.com/watch?v=28slvAelnSc&t=4453s) | Can you explain what's your entry point on Rock Calab and AOI? | Viewer question about two entries he took today; space-theme strength cited right after as a supporting reason | RKLB | 🟡 |
+| ⬜ | [75:23](https://www.youtube.com/watch?v=28slvAelnSc&t=4523s) | A AOI would be on the on this day 11th of August the pull back into the on into this gap area | Explaining a pullback-buy entry from 11 August using an anchored VWAP | ? | ❓ |
+| ⬜ | [39:17](https://www.youtube.com/watch?v=28slvAelnSc&t=2357s) | BMR takes up so much of my buying power that I they cannot get the into Intel | Explaining why he couldn't buy Intel today - an existing position is tying up his buying power | BMNR | ❓ |
+| ⬜ | [88:34](https://www.youtube.com/watch?v=28slvAelnSc&t=5314s) | let's say like crowd but although I'm not raising my stop um on crowd | Hypothetical example used while explaining his exit/stop-placement philosophy (not a real action taken) | CRWD | ✅ |
+| ⬜ | [102:23](https://www.youtube.com/watch?v=28slvAelnSc&t=6143s) | And this F is looking pretty good now. It's holding up um above the 9 EMA. | Wrapping up the EMA/SMA discussion while looking at a chart on screen | ? | ❓ |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [74:13](https://www.youtube.com/watch?v=28slvAelnSc&t=4453s) | RKLB | long · entry | today | 2026-08-17 |
+| · | [75:23](https://www.youtube.com/watch?v=28slvAelnSc&t=4523s) | AOI | long · entry | 2026-08-11 | 2026-08-11 |
+| · | [78:33](https://www.youtube.com/watch?v=28slvAelnSc&t=4713s) | CRCL | long · stopped_out | 2026-08-06 | 2026-08-06 |
+| · | [79:51](https://www.youtube.com/watch?v=28slvAelnSc&t=4791s) | CRCL | long · stopped_out | 2026-08-10 | 2026-08-10 |
+| · | [80:12](https://www.youtube.com/watch?v=28slvAelnSc&t=4812s) | CRCL | long · entry | — | 2026-08-17 |
+| · | [81:29](https://www.youtube.com/watch?v=28slvAelnSc&t=4889s) | CRCL | long · stop_raised | 2026-08-14 | 2026-08-14 |
+| · | [92:47](https://www.youtube.com/watch?v=28slvAelnSc&t=5567s) | HPQ | long · entry | today | 2026-08-17 |
+
+
+## 2026-08-13 — $CBRS gap down
+
+[▶ watch](https://www.youtube.com/watch?v=_GDlFxwuZXE) · `data/martin_luk/videos/livestreams/2026-08-13__GDlFxwuZXE` · 6 ticker flags · 4 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [04:16](https://www.youtube.com/watch?v=_GDlFxwuZXE&t=256s) | CPRS (video title renders it 'CBRS') | Discussed throughout the stream as a 16% gap-down name taking support at the previous gap near rising EMAs/anchor VWAP; also the subject of a viewer Q&A recap of a 7th-August flag-breakout trade that stopped out pre-market and was re-bought at the open. | CIFR | 🟡 |
+| ⬜ | [22:53](https://www.youtube.com/watch?v=_GDlFxwuZXE&t=1373s) | This coal reef | Immediately after dismissing an illiquid name undercutting its 90 MA, he says 'this coal reef... I thought it's going to stop me out at the open and now turn it's up like 9%' — discussing a position/watch name that nearly hit its stop then reversed up sharply. | CRWV | ❓ |
+| ⬜ | [67:04](https://www.youtube.com/watch?v=_GDlFxwuZXE&t=4024s) | this crowd entry | Used as a live chart example to explain how tightening vs widening a stop (1.5% vs 3%) doesn't change a trade's expectancy. | CRWD | 🟡 |
+| ⬜ | [14:44](https://www.youtube.com/watch?v=_GDlFxwuZXE&t=884s) | Roc La Familia is doing a pretty also we got a pretty decent four pack by today | Brief, garbled aside right after discussing HP; unclear what stock or concept ('four pack') is being referenced. | ? | ❓ |
+| ⬜ | [33:01](https://www.youtube.com/watch?v=_GDlFxwuZXE&t=1981s) | Broadcom Lab ... gapping up into that 83 83 bucks | Immediately follows an extended discussion of 'Rockefeller'/Rocket Lab (RKLB) gapping down into rising EMAs; this line describes a hypothetical/contrast case of the same name gapping UP into resistance instead, likely a continued mis-caption of 'Rocket Lab' rather than Broadcom. | RKLB | ❓ |
+| ⬜ | [74:05](https://www.youtube.com/watch?v=_GDlFxwuZXE&t=4445s) | It's for me I think H 15 the better entry will be on the night at the 90 MA but looks like it's not getting there | A name where he thinks a better entry would be at the 90 MA, but price isn't reaching it; ticker unclear. | ? | ❓ |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [60:44](https://www.youtube.com/watch?v=_GDlFxwuZXE&t=3644s) | CIFR | long · entry | 7th August | _(unresolved)_ |
+| ⬜ | [61:21](https://www.youtube.com/watch?v=_GDlFxwuZXE&t=3681s) | CIFR | long · stopped_out | 7th August (pre-market) | _(unresolved)_ |
+| ⬜ | [61:21](https://www.youtube.com/watch?v=_GDlFxwuZXE&t=3681s) | CIFR | long · entry | 7th August (at the open) | _(unresolved)_ |
+| · | [08:49](https://www.youtube.com/watch?v=_GDlFxwuZXE&t=529s) | HPQ | long · entry | today | 2026-08-13 |
+
+
+## 2026-08-12 — Overexposure
+
+[▶ watch](https://www.youtube.com/watch?v=1fkRKvTZJ8s) · `data/martin_luk/videos/livestreams/2026-08-12_1fkRKvTZJ8s` · 13 ticker flags · 10 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [05:16](https://www.youtube.com/watch?v=1fkRKvTZJ8s&t=316s) | This one, Kyoshia. I I don't know whether I'm pronounced it right. It looks like very identical to SNDK. Probably like 95% correlation. | Comparing a memory-sector name's price action to SNDK for correlation | KIOXY (Kioxia) | 🟡 |
+| ⬜ | [08:49](https://www.youtube.com/watch?v=1fkRKvTZJ8s&t=529s) | I sold uh MSTR and uh BMR yesterday | Selling crypto-adjacent equity positions, using the 9 EMA as the exit guide | BMNR | 🟡 |
+| ⬜ | [20:37](https://www.youtube.com/watch?v=1fkRKvTZJ8s&t=1237s) | Unless I got stopped out from by co uh cool beef or spacics, whatever. | Listing existing crypto/space-adjacent positions whose stops have not yet been hit | ? | ❓ |
+| ⬜ | [22:02](https://www.youtube.com/watch?v=1fkRKvTZJ8s&t=1322s) | I I really want to buy the GU and Intel or the Sea Gates, but I just can't | Wanted to add more names but ran out of buying power (not executed) | ? for 'GU'; STX (Seagate) for 'Sea Gates' | ❓ |
+| ⬜ | [51:26](https://www.youtube.com/watch?v=1fkRKvTZJ8s&t=3086s) | Core with re-entry. Yes, I put it on the five minute breakout. | Viewer question about re-entering a name; Luk confirms a 5-minute breakout re-entry | ? | ❓ |
+| ⬜ | [51:26](https://www.youtube.com/watch?v=1fkRKvTZJ8s&t=3086s) | If I'm not buying uh for VIP, I'm I'm going to buy the AAPAP on this five minute pullback into the end of VWAP and the previous swing high. | Choosing between two candidate pullback entries | APP (AppLovin) for 'AAPAP'; 'VIP' itself unresolved | ❓ |
+| ⬜ | [54:23](https://www.youtube.com/watch?v=1fkRKvTZJ8s&t=3263s) | This Q&T is doing super well after earnings... I remember you mentioning Q&A as a strong setup... a 15 billion market cap stock | Discussing a name's post-earnings price action and low volume relative to its market cap | KIOXY (Kioxia) -- matches the earlier Kyoshia/SNDK comparison, earnings timing, and market cap | ❓ |
+| ⬜ | [59:28](https://www.youtube.com/watch?v=1fkRKvTZJ8s&t=3568s) | frog I think is also a little bit too low the volume but uh yeah but the the weekly is looking very nice. | Discussing low volume on a name with a strong weekly chart | FROG (JFrog) | 🟡 |
+| ⬜ | [66:35](https://www.youtube.com/watch?v=1fkRKvTZJ8s&t=3995s) | Maybe this red wire is this. Yeah, probably this RDW and OMDS as well. | Naming other space/drone-sector names showing strength alongside SPCX | RDW (Redwire); ONDS (Ondas Holdings) for 'OMDS' | 🟡 |
+| ⬜ | [98:34](https://www.youtube.com/watch?v=1fkRKvTZJ8s&t=5914s) | why you reenter AOI when there is such an erective behavior from CHR and uh lights on Monday | Viewer question about re-entering a name, referencing two related sector peers | AAOI (Applied Optoelectronics) for 'AOI'; COHR (Coherent) for 'CHR'; LITE (Lumentum) for 'lights' | ❓ |
+| ⬜ | [75:34](https://www.youtube.com/watch?v=1fkRKvTZJ8s&t=4534s) | I've been washed out several times in D HP Dodge... I guess you're you mean like DO, right? and FTN since last week | Viewer describing their own repeated stop-outs in driller/oilfield-services names (not Luk's trades) | DO (Diamond Offshore); HP (Helmerich & Payne); FTI (TechnipFMC) for 'FTN' | ❓ |
+| ⬜ | [122:23](https://www.youtube.com/watch?v=1fkRKvTZJ8s&t=7343s) | Any thoughts on how you will handle your CPRS trade? Since there's earnings later on tonight... if CBRS is gapping down into like 220 tomorrow | Viewer asking how Luk will manage an existing position ahead of same-day earnings; Luk discusses a general trimming framework but no specific trim action is confirmed | ? | ❓ |
+| ⬜ | [132:23](https://www.youtube.com/watch?v=1fkRKvTZJ8s&t=7943s) | What is your reason for not trying a call with clip again. I put it at this 15 minute breakouts. | Follow-up question matching the DELL 1-minute/5-minute/15-minute breakout attempt progression | DELL | ❓ |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [08:49](https://www.youtube.com/watch?v=1fkRKvTZJ8s&t=529s) | MSTR | long · exit | yesterday | 2026-08-11 |
+| ⬜ | [08:49](https://www.youtube.com/watch?v=1fkRKvTZJ8s&t=529s) | BMNR | long · exit | yesterday | 2026-08-11 |
+| · | [65:22](https://www.youtube.com/watch?v=1fkRKvTZJ8s&t=3922s) | SPCX | long · entry | today | 2026-08-12 |
+| ⬜ | [91:29](https://www.youtube.com/watch?v=1fkRKvTZJ8s&t=5489s) | AFRM | long · entry | yesterday | 2026-08-11 |
+| · | [92:11](https://www.youtube.com/watch?v=1fkRKvTZJ8s&t=5531s) | AFRM | long · stopped_out | today | 2026-08-12 |
+| ⬜ | [98:34](https://www.youtube.com/watch?v=1fkRKvTZJ8s&t=5914s) | AAOI | long · entry | yesterday | 2026-08-11 |
+| · | [127:45](https://www.youtube.com/watch?v=1fkRKvTZJ8s&t=7665s) | DELL | long · entry | today | 2026-08-12 |
+| · | [132:23](https://www.youtube.com/watch?v=1fkRKvTZJ8s&t=7943s) | DELL | long · add | today | 2026-08-12 |
+| ⬜ | [51:26](https://www.youtube.com/watch?v=1fkRKvTZJ8s&t=3086s) | ? | long · entry | today | 2026-08-12 |
+| · | [51:26](https://www.youtube.com/watch?v=1fkRKvTZJ8s&t=3086s) | APP | long · entry | today | 2026-08-12 |
+
+
+## 2026-08-10 — Dot-com bubble charts
+
+[▶ watch](https://www.youtube.com/watch?v=AntPf0JXhbw) · `data/martin_luk/videos/livestreams/2026-08-10_AntPf0JXhbw` · 13 ticker flags · 1 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [04:15](https://www.youtube.com/watch?v=AntPf0JXhbw&t=255s) | AEX is looking really good | Reviewing existing watchlist stocks at the start of the weekend routine scan | ? | ❓ |
+| ⬜ | [05:26](https://www.youtube.com/watch?v=AntPf0JXhbw&t=326s) | AHL I like it it is a stock that loves pulling back | Discussing a watchlist stock's tendency to pull back, planning to buy near the 9 EMA (daily) or 50 EMA (60-min) instead of the breakout | ? | ❓ |
+| ⬜ | [06:11](https://www.youtube.com/watch?v=AntPf0JXhbw&t=371s) | this red wire is doing pretty good ... it's a arrow aerospace stocks. So it's a space theme. | Reviewing a space/aerospace-theme stock that reclaimed all its EMAs (daily and weekly) after earnings follow-through | RDW | 🟡 |
+| ⬜ | [13:15](https://www.youtube.com/watch?v=AntPf0JXhbw&t=795s) | SpaceX is getting like the I would say like the step one of a character change | Discussing a stock closing above both the 9 and 21 EMA on daily and weekly, tied to the space theme picking up steam | SPCX | 🟡 |
+| ⬜ | [35:03](https://www.youtube.com/watch?v=AntPf0JXhbw&t=2103s) | I got many stocks that have been down are right now at the like the weekly 21 or the weekly 50 like MPCCJ Ollo | Listing stocks bouncing back into declining weekly EMAs, grouped alongside quantum and semi names | MP / CCJ | ❓ |
+| ⬜ | [35:03](https://www.youtube.com/watch?v=AntPf0JXhbw&t=2103s) | MPCCJ Ollo | Same list of stocks bouncing into declining weekly EMAs; second garbled name in the same sentence | ? | ❓ |
+| ⬜ | [59:37](https://www.youtube.com/watch?v=AntPf0JXhbw&t=3577s) | What do you think on net earnings jump, but it almost gave back most of the increase. | Discussing an existing holding that jumped on earnings then gave back most of the gain but stayed above the 9 EMA and his stop; decided not to do anything | NET | 🟡 |
+| ⬜ | [60:26](https://www.youtube.com/watch?v=AntPf0JXhbw&t=3626s) | This can start out on the AOI, but I am looking for the re-entry. This a thing is too ill liquid. | Discussing an illiquid name (grouped with semis elsewhere in the stream) he's watching for a re-entry rather than sizing into now | AEHR | ❓ |
+| ⬜ | [82:15](https://www.youtube.com/watch?v=AntPf0JXhbw&t=4935s) | Man, this ae is just I mean it has to shake shake the opening range high peoples out. | Discussing opening-range shakeouts on a small-cap, illiquid name; likely the same name discussed by full ticker name minutes later | AEVA | 🟡 |
+| ⬜ | [88:58](https://www.youtube.com/watch?v=AntPf0JXhbw&t=5338s) | I'm a little bit not sure whether I should reenter circle or not. | Considering (but not confirming) re-entering a previously held position | CRCL | 🟡 |
+| ⬜ | [97:21](https://www.youtube.com/watch?v=AntPf0JXhbw&t=5841s) | O US was a good setup today. The lightest AEVA and Od. | Discussing setups in the lidar sector alongside AEVA | OUST | ❓ |
+| ⬜ | [100:53](https://www.youtube.com/watch?v=AntPf0JXhbw&t=6053s) | you match shot is so good. Yeah, I'm so sad that I missed | Reacting to a strong move in a name he did not take (admitted miss, not a trade) | MTCH | ❓ |
+| ⬜ | [103:44](https://www.youtube.com/watch?v=AntPf0JXhbw&t=6224s) | SMDK right right now is looking really weak. Um I think most of the memory names are are looking weak. | Discussing weakness across memory-sector stocks | SNDK | 🟡 |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [88:58](https://www.youtube.com/watch?v=AntPf0JXhbw&t=5338s) | AHR | long · entry | — | 2026-08-10 |
+
+
+## 2026-08-06 — Don't worry be happy
+
+[▶ watch](https://www.youtube.com/watch?v=DZNRjMvhFUw) · `data/martin_luk/videos/livestreams/2026-08-06_DZNRjMvhFUw` · 12 ticker flags · 4 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [04:17](https://www.youtube.com/watch?v=DZNRjMvhFUw&t=257s) | Got fake um | Listing software names gapping down after earnings during the pre-market scan recap; re-discussed at 39:23-40:36 where it's compared to Palantir's May earnings gap-down, called 'still stage one', with today's gap into the 50 EMA described as a good entry. | ? | ❓ |
+| ⬜ | [04:30](https://www.youtube.com/watch?v=DZNRjMvhFUw&t=270s) | We also got uh ops. And we also got app. | Continuing the list of software names gapping down after earnings. | APP (AppLovin) for 'app'; 'ops' unresolved | ❓ |
+| ⬜ | [04:58](https://www.youtube.com/watch?v=DZNRjMvhFUw&t=298s) | Same on um I don't know CRYN. Uh it's always was Cypher. | Comparing HUT's breakdown to another weak data-center/crypto-mining name. | CIFR (Cipher Mining) | ✅ |
+| ⬜ | [22:31](https://www.youtube.com/watch?v=DZNRjMvhFUw&t=1351s) | The detail is also gapping down. | Discussing an unspecified earnings-day pullback ('not a EP... pulled back 16 minutes pullback'). | ? | ❓ |
+| ⬜ | [29:09](https://www.youtube.com/watch?v=DZNRjMvhFUw&t=1749s) | On the TTMIO. | Discussing a stock's shakeout, support level, and gap fill; the same stock appears to be explicitly clarified two lines later at 30:09 as 'This I O T looks pretty decent' (Samsara). | IOT | 🟡 |
+| ⬜ | [31:45](https://www.youtube.com/watch?v=DZNRjMvhFUw&t=1905s) | This lights also seems like it's finding some support off the off the gap. | Continuing relative-strength discussion of semi-adjacent names right after the IOT/EMA shakeout discussion. | LITE (Lumentum) | ❓ |
+| ⬜ | [33:22](https://www.youtube.com/watch?v=DZNRjMvhFUw&t=2002s) | just you to take a look at QNT strong basket IPO base relative strength your type of trade. | Viewer suggesting a recent-IPO, relative-strength ticker for Luk to review; Luk notes thin dollar volume (~$50M) and a weak/choppy bounce. | ? | ❓ |
+| ⬜ | [40:53](https://www.youtube.com/watch?v=DZNRjMvhFUw&t=2453s) | Is Snap PS a good pullback buy entry today? | Viewer question listing candidate pullback buys alongside NetApp, ARM, Dell, and BE. | SNPS (Synopsys) | ❓ |
+| ⬜ | [44:16](https://www.youtube.com/watch?v=DZNRjMvhFUw&t=2656s) | the semis like the socket socks exist also pulling back into the support level | Discussing semiconductor sector strength relative to NetApp during the pullback-buy Q&A. | SOX (semiconductor index) | 🟡 |
+| ⬜ | [46:22](https://www.youtube.com/watch?v=DZNRjMvhFUw&t=2782s) | if you compare to like uh that beer is like much stronger. Uh on the daily. | Comparing relative strength of the stock currently being discussed (likely NetApp) to a peer. | ? | ❓ |
+| ⬜ | [68:58](https://www.youtube.com/watch?v=DZNRjMvhFUw&t=4138s) | Man, this circle is going It's going straight up after stopping me out at the open. | Luk was stopped out of a crypto-adjacent name at the open right before it rallied; follow-up Q&A at 69:25 confirms the rationale was crypto-sector strength. | CRCL (Circle Internet Group) | ✅ |
+| ⬜ | [105:19](https://www.youtube.com/watch?v=DZNRjMvhFUw&t=6319s) | When like if A net continues to to drop lower. | Advising a viewer on where to raise the stop for their own position (viewer entered on 8/3 during an earnings gap-up); a software/networking name discussed alongside Datadog's earnings reaction. | ANET (Arista Networks) | 🟡 |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [04:48](https://www.youtube.com/watch?v=DZNRjMvhFUw&t=288s) | HUT | long · stopped_out | — | 2026-08-06 |
+| · | [44:45](https://www.youtube.com/watch?v=DZNRjMvhFUw&t=2685s) | DELL | long · entry | today | 2026-08-06 |
+| · | [69:25](https://www.youtube.com/watch?v=DZNRjMvhFUw&t=4165s) | CRCL | long · entry | today | 2026-08-06 |
+| · | [68:58](https://www.youtube.com/watch?v=DZNRjMvhFUw&t=4138s) | CRCL | long · stopped_out | today | 2026-08-06 |
+
+
+## 2026-08-05 — Pushing at the wrong time
+
+[▶ watch](https://www.youtube.com/watch?v=K5bjqj9GBUE) · `data/martin_luk/videos/livestreams/2026-08-05_K5bjqj9GBUE` · 11 ticker flags · 4 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [06:02](https://www.youtube.com/watch?v=K5bjqj9GBUE&t=362s) | I I I was do at least try a few a few times I think I particularly like a YU. | Describing a stock gapping above its previous swing high in a strong weekly uptrend with a big breakout on the weekly (captioned "BCP", likely VCP), immediately followed by him saying that's all the trades he got today. | ? | ❓ |
+| ⬜ | [58:52](https://www.youtube.com/watch?v=K5bjqj9GBUE&t=3532s) | I first I'm not a fan of a net because it's a little bit choppy | Discussing a semis-adjacent stock pulling back toward the 60-minute 9 EMA, alongside ALAB, but passing on it due to choppiness. | ANET (Arista Networks) | 🟡 |
+| ⬜ | [63:10](https://www.youtube.com/watch?v=K5bjqj9GBUE&t=3790s) | I think a lab could be a good entry today as we pull back into the unfilled gaps and converging EMAs | Discussing a semiconductor-related stock pulling back into unfilled gaps and converging EMAs; later spelled "ALAP"/"ALAC" in captions for the same name. | ALAB (Astera Labs) | ✅ |
+| ⬜ | [70:10](https://www.youtube.com/watch?v=K5bjqj9GBUE&t=4210s) | why did you pick up start when fintex seems to be lagging a little versus like something like apps or shop? | Viewer question about a fintech-sector pick versus software names APP/SHOP; the discussion that follows is actually about the AppLovin (APP) setup itself, which he later says he did NOT take. | ? | ❓ |
+| ⬜ | [70:10](https://www.youtube.com/watch?v=K5bjqj9GBUE&t=4210s) | Understand you took while US is in the hot software sector plus breaking out of | Viewer referencing a software-sector stock Luk apparently took; never clearly resolved in the answer that follows. | ? | ❓ |
+| ⬜ | [78:52](https://www.youtube.com/watch?v=K5bjqj9GBUE&t=4732s) | there's a um hypothesis that that the earnings of basics would drag Space X down | Discussing SpaceX's upcoming earnings as the driver of the Rocket Lab thesis; "SpaceX" is also spoken directly elsewhere in the same passage. | SpaceX (private company; no public ticker traded here) | 🟡 |
+| ⬜ | [90:44](https://www.youtube.com/watch?v=K5bjqj9GBUE&t=5444s) | Maybe I'm a little bit early on AVAC. | Self-assessing entry timing as early; thinks a pullback to the 60-minute 9 EMA would have been a better trigger. | ? | ❓ |
+| ⬜ | [91:26](https://www.youtube.com/watch?v=K5bjqj9GBUE&t=5486s) | and also the as sockex maybe pull it pulls back into this unfilled gap. It will be a better further entry | Discussing a related name that could offer a better/further entry on a pullback into an unfilled gap; not clearly stated as taken. | ASTS (AST SpaceMobile) | ❓ |
+| ⬜ | [100:37](https://www.youtube.com/watch?v=K5bjqj9GBUE&t=6037s) | The slow case is also at the declining nine to uh weekly nine. | Discussing semis sector/ETF weakness alongside a discouraged "AAP long" and a possible pullback-short setup. | SMH (semiconductor ETF) or a similarly-named semis ticker | ❓ |
+| ⬜ | [126:45](https://www.youtube.com/watch?v=K5bjqj9GBUE&t=7605s) | Fast is also doing pretty well. | Listing the strongest small-cap (<$5B) stocks on his watchlist alongside AHR. | ? | ❓ |
+| ⬜ | [139:20](https://www.youtube.com/watch?v=K5bjqj9GBUE&t=8360s) | No, I just got stopped out on AAP by by how much? I mean, just a few cents, I believe. | Confirms a real stop-out late in the session, right before deciding to end the day; the same "AAP" caption also appears earlier (99:31) discouraging an "AAP long". | APP (AppLovin) | ❓ |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [78:36](https://www.youtube.com/watch?v=K5bjqj9GBUE&t=4716s) | RKLB | long · entry | recently | _(unresolved)_ |
+| ⬜ | [06:02](https://www.youtube.com/watch?v=K5bjqj9GBUE&t=362s) | ? | long · entry | today | 2026-08-05 |
+| ⬜ | [90:44](https://www.youtube.com/watch?v=K5bjqj9GBUE&t=5444s) | ? | long · entry | today | 2026-08-05 |
+| ⬜ | [139:20](https://www.youtube.com/watch?v=K5bjqj9GBUE&t=8360s) | ? | long · stopped_out | today | 2026-08-05 |
+
+
+## 2026-08-04 — Lockout rally again
+
+[▶ watch](https://www.youtube.com/watch?v=z73SOenHQQA) · `data/martin_luk/videos/livestreams/2026-08-04_z73SOenHQQA` · 8 ticker flags · 5 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [10:25](https://www.youtube.com/watch?v=z73SOenHQQA&t=625s) | CBR is like uh even closed above 50 EMA and the free web yesterday | Listing strong stocks alongside HP, in the pre-market/early strength recap | ? | ❓ |
+| ⬜ | [10:25](https://www.youtube.com/watch?v=z73SOenHQQA&t=625s) | And Dow is also showing huge strength during this during the recent pullback | Same strong-stocks list; described as never falling below a candle low and holding the weekly 9 EMA — matches the pattern later attributed to DOC | DOC | ❓ |
+| ⬜ | [67:12](https://www.youtube.com/watch?v=z73SOenHQQA&t=4032s) | the probability of B do um continues making new high | Answering a viewer question about their DOC earnings hold, discussing the stock's breakout from a flag in the software sector | DOC | 🟡 |
+| ⬜ | [71:26](https://www.youtube.com/watch?v=z73SOenHQQA&t=4286s) | because DTO is in a really strong uptrend above 10 and 21 | Continuing the same DOC-earnings-hold discussion with the viewer | DOC | 🟡 |
+| ⬜ | [71:46](https://www.youtube.com/watch?v=z73SOenHQQA&t=4306s) | trying to stick with your stock even if like the Dong is gapping down after earnings | Same DOC discussion — advising the viewer not to panic if the stock gaps down after earnings | DOC | 🟡 |
+| ⬜ | [96:37](https://www.youtube.com/watch?v=z73SOenHQQA&t=5797s) | probably um trading pan W off this breakout or this pullback | Describing a past cybersecurity-sector trade, exited at breakeven/small win | PANW | ✅ |
+| ⬜ | [110:33](https://www.youtube.com/watch?v=z73SOenHQQA&t=6633s) | for hot today is gapping under all EMAs today is the biggest reason relative strength or the sector strength | Viewer question about a stock gapping down under all EMAs but bouncing, with data-center sector strength mentioned | ? | ❓ |
+| ⬜ | [82:24](https://www.youtube.com/watch?v=z73SOenHQQA&t=4944s) | only crowd survived uh when on Wednesday | Recapping stopped-out semiconductor longs from the 29 Jul selloff | CRWD | ✅ |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [40:58](https://www.youtube.com/watch?v=z73SOenHQQA&t=2458s) | MSTR | long · stopped_out | today | 2026-08-04 |
+| ⬜ | [40:58](https://www.youtube.com/watch?v=z73SOenHQQA&t=2458s) | ? | long · stopped_out | today | 2026-08-04 |
+| ⬜ | [82:07](https://www.youtube.com/watch?v=z73SOenHQQA&t=4927s) | ? | long · stopped_out | 2026-07-29 | 2026-07-29 |
+| · | [82:07](https://www.youtube.com/watch?v=z73SOenHQQA&t=4927s) | CRWD | long · entry | 2026-07-29 | 2026-07-29 |
+| · | [96:37](https://www.youtube.com/watch?v=z73SOenHQQA&t=5797s) | PANW | long · exit | — | 2026-08-04 |
+
+
+## 2026-08-03 — Don't buy family size chips
+
+[▶ watch](https://www.youtube.com/watch?v=Flrm2Y_qB_M) · `data/martin_luk/videos/livestreams/2026-08-03_Flrm2Y_qB_M` · 14 ticker flags · 9 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [05:38](https://www.youtube.com/watch?v=Flrm2Y_qB_M&t=338s) | crowd | Recapping current open positions at the top of the stream | CRWD | ✅ |
+| ⬜ | [08:16](https://www.youtube.com/watch?v=Flrm2Y_qB_M&t=496s) | net | Position entered Wednesday, part of the cybersecurity/software cluster | NET | 🟡 |
+| ⬜ | [10:02](https://www.youtube.com/watch?v=Flrm2Y_qB_M&t=602s) | And then I have a handw. This one I entered on Thursday... near of 317 area. | Unnamed position in the same cybersecurity/software cluster, entered near $317 on a 60-minute breakout | ? (possibly PANW or ZS given price level and theme; unconfirmed) | ❓ |
+| ⬜ | [11:02](https://www.youtube.com/watch?v=Flrm2Y_qB_M&t=662s) | FPNT foret | Position bought Friday after an earnings pullback, cybersecurity theme | FTNT | 🟡 |
+| ⬜ | [75:48](https://www.youtube.com/watch?v=Flrm2Y_qB_M&t=4548s) | FT&T | Viewer question about re-entering the same name after its earnings reaction | FTNT | ✅ |
+| ⬜ | [12:36](https://www.youtube.com/watch?v=Flrm2Y_qB_M&t=756s) | BNN | Another name tried Thursday alongside the cybersecurity cluster, stopped out Friday for a small loss | ? | ❓ |
+| ⬜ | [39:13](https://www.youtube.com/watch?v=Flrm2Y_qB_M&t=2353s) | CBRS / CPR / CPRS | Recent-IPO semiconductor-adjacent name building a base for about a month, considered (but not entered) as a potential long | ? | ❓ |
+| ⬜ | [23:47](https://www.youtube.com/watch?v=Flrm2Y_qB_M&t=1427s) | the snow and duck software names... I think DOC | Viewer asks about SNOW and (likely) DDOG; Luk's reply is captioned as discussing 'DOC' | DDOG | 🟡 |
+| ⬜ | [87:18](https://www.youtube.com/watch?v=Flrm2Y_qB_M&t=5238s) | The SpaceX is showing some support off the lows... SpaceX Rock did find the low on Wednesday | Watchlist name (not traded) showing support and a strong weekly open/reclaim | SPCX | 🟡 |
+| ⬜ | [91:29](https://www.youtube.com/watch?v=Flrm2Y_qB_M&t=5489s) | Have a look at HA similar to SpaceX... spin-off of Horn[eywell] | Chat/viewer discussion of a recent Honeywell spin-off ticker compared to SPCX | ? | ❓ |
+| ⬜ | [94:12](https://www.youtube.com/watch?v=Flrm2Y_qB_M&t=5652s) | SOS is the materials part of Honeywell... Q&T is also the subsidiaries of the Honeywell | Chat discussion identifying Honeywell spin-off companies/tickers | SOLS (Solstice Advanced Materials) for 'SOS'; other spin-off ticker unresolved for 'Q&T' | ❓ |
+| ⬜ | [60:07](https://www.youtube.com/watch?v=Flrm2Y_qB_M&t=3607s) | BMR | Crypto-strength discussion; name added to watchlist alongside Bitcoin/Ethereum, explicitly not traded | ? | ❓ |
+| ⬜ | [65:01](https://www.youtube.com/watch?v=Flrm2Y_qB_M&t=3901s) | MSTR and corner | Names to watch if crypto strength continues | COIN | 🟡 |
+| ⬜ | [78:39](https://www.youtube.com/watch?v=Flrm2Y_qB_M&t=4719s) | SUV. This Southwest is... AL is also weaker | Airlines sector discussion; he says he hesitated and did not buy | LUV (Southwest) / AAL (American Airlines) noted as weaker names | 🟡 |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [05:38](https://www.youtube.com/watch?v=Flrm2Y_qB_M&t=338s) | CRWD | long · entry | prior stream (before the previous Thursday, exact date not stated) | _(unresolved)_ |
+| ⬜ | [08:16](https://www.youtube.com/watch?v=Flrm2Y_qB_M&t=496s) | NET | long · entry | Wednesday (previous week) | _(unresolved)_ |
+| ⬜ | [10:22](https://www.youtube.com/watch?v=Flrm2Y_qB_M&t=622s) | ? | long · entry | Thursday (previous week) | _(unresolved)_ |
+| ⬜ | [76:31](https://www.youtube.com/watch?v=Flrm2Y_qB_M&t=4591s) | FTNT | long · entry | Thursday (earnings day, previous week) | _(unresolved)_ |
+| ⬜ | [76:31](https://www.youtube.com/watch?v=Flrm2Y_qB_M&t=4591s) | FTNT | long · stopped_out | Thursday (earnings day, previous week) | _(unresolved)_ |
+| ⬜ | [11:02](https://www.youtube.com/watch?v=Flrm2Y_qB_M&t=662s) | FTNT | long · entry | Friday (previous week) | _(unresolved)_ |
+| ⬜ | [12:36](https://www.youtube.com/watch?v=Flrm2Y_qB_M&t=756s) | ? | long · entry | Thursday (previous week) | _(unresolved)_ |
+| ⬜ | [12:36](https://www.youtube.com/watch?v=Flrm2Y_qB_M&t=756s) | ? | long · stopped_out | Friday (previous week) | _(unresolved)_ |
+| · | [23:07](https://www.youtube.com/watch?v=Flrm2Y_qB_M&t=1387s) | PBF | long · entry | — | 2026-08-03 |
+
+
+## 2026-07-29 — Bleeding slowly
+
+[▶ watch](https://www.youtube.com/watch?v=xZ5LigAsWec) · `data/martin_luk/videos/livestreams/2026-07-29_xZ5LigAsWec` · 5 ticker flags · 3 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [51:13](https://www.youtube.com/watch?v=xZ5LigAsWec&t=3073s) | SK Highs / SK Hix / SK HX / SK high | Discussion of a parabolic long trade on the South Korean chart, tracked via its US ADR in the overnight East-Asia session | SK Hynix (South Korean chipmaker) — exact US ADR ticker not stated in transcript | ✅ |
+| ⬜ | [35:20](https://www.youtube.com/watch?v=xZ5LigAsWec&t=2120s) | I would definitely like to also enter like BNR PW | Right after saying he believes he's finished trading for the day, he mentions wanting to also enter something — reads as forward-looking/aspirational rather than a confirmed action, so not logged as a trade | ? | ❓ |
+| ⬜ | [103:57](https://www.youtube.com/watch?v=xZ5LigAsWec&t=6237s) | Усі know what is happening with this I'm still in crowd so who cares coin earnings tomorrow | Mentions earnings coming tomorrow for a name referred to as 'crowd' | CRWD (CrowdStrike) | 🟡 |
+| ⬜ | [93:59](https://www.youtube.com/watch?v=xZ5LigAsWec&t=5639s) | You think now it's a good time to buy VO if I'm plan to hold it for long term | Viewer chat question (not Luk's own trade); he declines to give investing advice | VOO (Vanguard S&P 500 ETF) or another V-ticker misheard as 'VO' | ❓ |
+| ⬜ | [173:16](https://www.youtube.com/watch?v=xZ5LigAsWec&t=10396s) | is also reaching the previous gap of this unfield gap back in May breaking out from this from this tiny flag | Continued chart commentary shortly after the SK Hynix trade discussion — likely still describing the same name's chart (unfilled May gap, flag breakout) but no explicit new action stated | SK Hynix (continued) | ❓ |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [53:10](https://www.youtube.com/watch?v=xZ5LigAsWec&t=3190s) | ? | long · entry | today | 2026-07-29 |
+| ⬜ | [53:36](https://www.youtube.com/watch?v=xZ5LigAsWec&t=3216s) | ? | long · add | today | 2026-07-29 |
+| ⬜ | [34:47](https://www.youtube.com/watch?v=xZ5LigAsWec&t=2087s) | ? | short · exit | — | 2026-07-29 |
+
+
+## 2026-07-28 — Locking in profits
+
+[▶ watch](https://www.youtube.com/watch?v=fGPCqWLQ-Qk) · `data/martin_luk/videos/livestreams/2026-07-28_fGPCqWLQ-Qk` · 8 ticker flags · 6 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [22:02](https://www.youtube.com/watch?v=fGPCqWLQ-Qk&t=1322s) | I just covered my SKH Alex. upwards for Oh, I covered my SNDK. | Covering a short position on weakness; the caption garbles the start of the sentence before he clearly restates the ticker. | SNDK | ✅ |
+| ⬜ | [82:33](https://www.youtube.com/watch?v=fGPCqWLQ-Qk&t=4953s) | It looks like I'm going to get stopped out on MSTR. So, I think I'm going to close my short on DS as well. | Closing an additional short position as MSTR nears its stop level. | ? | ❓ |
+| ⬜ | [115:43](https://www.youtube.com/watch?v=fGPCqWLQ-Qk&t=6943s) | MST are going to stop me out at it very soon. So, I'm going to close my WDS as well. | Closing another short position alongside MSTR during a bounce in cyber security names. | ? | ❓ |
+| ⬜ | [18:02](https://www.youtube.com/watch?v=fGPCqWLQ-Qk&t=1082s) | Wow, pattern is gapping down and now it's following following to the downside down 8%. | Reacting to a stock/sector gapping down heavily premarket amid broader semiconductor weakness. | ? | ❓ |
+| ⬜ | [44:53](https://www.youtube.com/watch?v=fGPCqWLQ-Qk&t=2693s) | Yeah, I want a Sammy maybe down maybe like seven eight% or more. | Discussing how much further the weak semiconductor group would need to drop before considering a mean-reversion long. | SMH | 🟡 |
+| ⬜ | [47:54](https://www.youtube.com/watch?v=fGPCqWLQ-Qk&t=2874s) | You think GTX has a better show set up than cryptos? ... gold. I don't know but I believe like in the recent weeks recent months golden cryptos has a pretty strong correlation. | Comparing crypto setups to another asset; he immediately pivots to discussing gold's correlation with crypto. | GLD | 🟡 |
+| ⬜ | [117:02](https://www.youtube.com/watch?v=fGPCqWLQ-Qk&t=7022s) | Is it possible it is? That should be a long flip. The BMR is looking pretty good. | Discussing a possible long flip in a crypto-related name after Bitcoin shows bounce potential. | ? | ❓ |
+| ⬜ | [79:04](https://www.youtube.com/watch?v=fGPCqWLQ-Qk&t=4744s) | let's say I I think if I think I bought down on uh on on this candle the 10th of March ... this is Dow is showing relative strength during the during the the market weakness. | Recounting a historical (non-today) winning long trade example (15-20R) from around March, used to illustrate trailing with the 21 EMA; not a trade taken during this stream. | ? | ❓ |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [02:18](https://www.youtube.com/watch?v=fGPCqWLQ-Qk&t=138s) | MSTR | short · stopped_out | yesterday | 2026-07-27 |
+| · | [22:02](https://www.youtube.com/watch?v=fGPCqWLQ-Qk&t=1322s) | SNDK | short · exit | today | 2026-07-28 |
+| · | [33:20](https://www.youtube.com/watch?v=fGPCqWLQ-Qk&t=2000s) | MU | short · exit | today | 2026-07-28 |
+| ⬜ | [82:33](https://www.youtube.com/watch?v=fGPCqWLQ-Qk&t=4953s) | ? | short · exit | today | 2026-07-28 |
+| · | [105:05](https://www.youtube.com/watch?v=fGPCqWLQ-Qk&t=6305s) | NET | long · stop_adjustment | today | 2026-07-28 |
+| ⬜ | [115:43](https://www.youtube.com/watch?v=fGPCqWLQ-Qk&t=6943s) | ? | short · exit | today | 2026-07-28 |
 
 
 ## 2026-07-27 — EP72

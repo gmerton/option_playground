@@ -1,0 +1,152 @@
+{
+  "video_id": "WjAbgRQCHZ8",
+  "date": "2026-08-25",
+  "title": "C game | 25 Aug 2026",
+  "observed_trades": [
+    {
+      "date": "2026-08-25",
+      "ticker": "IGV",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Cybersecurity/software theme breakout play, part of his weekly-EMA9-pullback-based cyber trades",
+      "entry_basis": "Potential breakout on IGV",
+      "stop": "",
+      "source": "2026-08-25_WjAbgRQCHZ8@69:14",
+      "confidence": "stated",
+      "notes": "He says he is 'trading at the IGV potential breakout' but it is 'fading back here' and admits he may be wrong/too early. Discussed while explaining his broader cyber-sector thesis after the market close.",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-08-25",
+      "ticker": "?",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Weekly-EMA9-pullback longs in cybersecurity-themed names",
+      "entry_basis": "Weekly EMA9 support/pullback entries in names he considers true market leaders",
+      "stop": "",
+      "source": "2026-08-25_WjAbgRQCHZ8@64:37",
+      "confidence": "stated",
+      "notes": "Says overall 'not a good day' and 'got a few trades getting stopped out'; specific tickers not named, but he attributes it to cybersecurity names 'not finding support just yet.'",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-08-25",
+      "ticker": "SPCX",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Existing position he sees as able to 'go either way'",
+      "entry_basis": "Not specified in this segment",
+      "stop": "Has an active stop; plans to flip short immediately if stopped out",
+      "source": "2026-08-25_WjAbgRQCHZ8@101:56",
+      "confidence": "inferred",
+      "notes": "Ticker decoded from garbled caption 'SpaceX' per known KB decode pattern (SpaceX=SPCX). Position inferred from phrase 'if SpaceX is going to stop me out' implying an active stop on an open position; entry timing not stated.",
+      "fill_timing": ""
+    }
+  ],
+  "principles": [
+    {
+      "category": "entries",
+      "text": "A gap-up that pushes stocks into overhead resistance rather than through it can itself be read as a potential short setup, rather than a bullish signal.",
+      "timestamp": "04:14"
+    },
+    {
+      "category": "regime",
+      "text": "On an unclear/skeptical gap-up day, avoid being aggressive and instead just observe whether the market can follow through to the upside with broadening breadth before committing capital.",
+      "timestamp": "05:15"
+    },
+    {
+      "category": "entries",
+      "text": "In an uptrend, a true market-leader stock will usually find support and bounce off the weekly EMA9 pullback -- he is always watching for a tight-risk entry near the weekly 9 on leadership names.",
+      "timestamp": "68:23"
+    },
+    {
+      "category": "entries",
+      "text": "Chart review process: check the daily chart first; if the daily looks weak but the weekly is still in a strong uptrend (weekly 50 EMA trending higher, higher highs/higher lows intact), switch to the weekly chart to find a key level -- a weekly EMA or a candle low -- to trade off instead of dismissing the name.",
+      "timestamp": "76:30"
+    },
+    {
+      "category": "entries",
+      "text": "A valid parabolic-short candidate needs a large enough move, clear volume expansion, and visible extension even on a lower timeframe (e.g. 60-minute); a move of only ~70% with no volume expansion and a recent pausing day is not extended enough to short.",
+      "timestamp": "83:19"
+    },
+    {
+      "category": "entries",
+      "text": "When choosing between multiple good setups in the same sector, the general preference is liquidity and speed of movement -- compare ADR and dollar volume first, then finer technical details like undercut-and-rally patterns or inside-day volatility contraction.",
+      "timestamp": "100:55"
+    },
+    {
+      "category": "sizing",
+      "text": "Trade frequency should not be dictated by account/fund size -- it depends on your trading style, your timeframes, and which entry tactics or setups you actually use.",
+      "timestamp": "100:19"
+    },
+    {
+      "category": "risk",
+      "text": "The goal of a speculator is to 'suck less' -- protect your downside first so you buy yourself time to develop your upside; focusing on upside while ignoring downside protection means one drawdown can wipe you out.",
+      "timestamp": "108:12"
+    },
+    {
+      "category": "risk",
+      "text": "He lets his stop-losses work rather than trying to outsmart them -- about 95-99% of the time he does not cut a position before it hits his stop; cutting early happens, but it's rare.",
+      "timestamp": "114:13"
+    },
+    {
+      "category": "psychology",
+      "text": "The easiest way to avoid being affected by social-media noise about stocks/markets is to remove yourself from the environments that produce it -- he deleted Twitter and other trading-related apps for months when he judged they were hurting his trading.",
+      "timestamp": "104:00"
+    },
+    {
+      "category": "psychology",
+      "text": "His biggest historical mistakes, and what he most improved: making fewer random trades, not abandoning his stops, and not revenge-trading with increased risk after a loss.",
+      "timestamp": "106:05"
+    },
+    {
+      "category": "psychology",
+      "text": "He sees no need to justify sticking with his discretionary style -- it already suits him and has delivered good performance over the years, so the burden of proof is on switching styles, not on staying with what works.",
+      "timestamp": "95:34"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "04:31",
+      "caption_text": "Basics is also looking little bit shortable",
+      "context": "Part of his gap-up-day short watchlist alongside Tesla and 'quantum' names; mentioned again later as 'acting in a quite neutral' way",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "04:57",
+      "caption_text": "the only long I'm watching today will be like this fake",
+      "context": "Naming the single long setup he's watching on the gap-up day; explicitly framed as 'watching,' not a trade taken",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "67:58",
+      "caption_text": "explain the thesis on PNW if they think cyber security is a bit weak now",
+      "context": "Viewer question about a cybersecurity-related ticker during a discussion of cyber-sector weakness and stopped-out trades",
+      "guess": "PANW",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "83:19",
+      "caption_text": "Parabolic shots on P uh extended and approaching the previous swing high",
+      "context": "Viewer asks about a parabolic-short candidate near a prior swing high; Luk explicitly passes ('Not for me')",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "101:56",
+      "caption_text": "personally I think SpaceX can go like either way",
+      "context": "Discussing an existing position with an active stop that could go either direction; matches known KB decode pattern (SpaceX=SPCX)",
+      "guess": "SPCX",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "115:33",
+      "caption_text": "hopefully walking can show some momentum in the in the future",
+      "context": "Closing remarks about current conditions not favoring his style; unclear if referring to a specific ticker or the market generally",
+      "guess": "?",
+      "confidence": "unsure"
+    }
+  ]
+}

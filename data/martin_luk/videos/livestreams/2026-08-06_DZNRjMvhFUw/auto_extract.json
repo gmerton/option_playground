@@ -1,0 +1,212 @@
+{
+  "video_id": "DZNRjMvhFUw",
+  "date": "2026-08-06",
+  "title": "Don't worry be happy | 6 Aug 2026",
+  "observed_trades": [
+    {
+      "date": "2026-08-06",
+      "ticker": "HUT",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Data-center/crypto-mining name flagged during pre-market recap as part of a weak data-center group (also compared to CIFR breaking down).",
+      "entry_basis": "Not stated in transcript.",
+      "stop": "",
+      "source": "2026-08-06_DZNRjMvhFUw@04:48",
+      "confidence": "stated",
+      "notes": "Mentioned in passing during the pre-market scan recap ('after I got stopped out on HUT, now it's breaking down') — exact timing of the stop-out itself is unclear; may have occurred on a prior session rather than intraday 8/6.",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-08-06",
+      "ticker": "DELL",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Pullback buy grouped with NetApp/ARM/BE in a viewer Q&A about which pullbacks look good today; semis (SOX) pulling back into support alongside these names.",
+      "entry_basis": "Pullback into rising EMA support in context of a broader semis/software pullback (SOX support level, NetApp relative strength cited nearby).",
+      "stop": "",
+      "source": "2026-08-06_DZNRjMvhFUw@44:45",
+      "confidence": "stated",
+      "notes": "Explicitly stated: \"Dell, because I'm I'm I bought it, and so I consider it as a solid pullback buy.\"",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-08-06",
+      "ticker": "CRCL",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Crypto-sector strength play — Bitcoin and Ethereum both recovering back above their 9/21 EMAs; bought Circle (CRCL) on that thematic strength rather than on CRCL's own technical structure.",
+      "entry_basis": "Sector/thematic (crypto sector strength) rather than a technical EMA trigger — entered while price was below all of CRCL's own EMAs.",
+      "stop": "",
+      "source": "2026-08-06_DZNRjMvhFUw@69:25",
+      "confidence": "inferred",
+      "notes": "Caption reads \"Circle is below all EMAs and you're buying it. May I know the rationale? Um, cryptos.\" — ticker inferred from the word 'circle' (Circle Internet Group, CRCL), consistent with his earlier bullish crypto-sector commentary.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-08-06",
+      "ticker": "CRCL",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Same Circle (CRCL) position noted above.",
+      "entry_basis": "Stop-loss triggered at the market open.",
+      "stop": "",
+      "source": "2026-08-06_DZNRjMvhFUw@68:58",
+      "confidence": "inferred",
+      "notes": "\"Man, this circle is going straight up after stopping me out at the open.\" Transcript surfaces this complaint before the entry-rationale exchange at 69:25, but the stop-out logically follows the entry chronologically.",
+      "fill_timing": "today"
+    }
+  ],
+  "principles": [
+    {
+      "category": "entries",
+      "text": "Be wary of stocks rallying straight up into daily/weekly resistance while their EMAs are still trending lower — that kind of move is a red flag, not a buy signal.",
+      "timestamp": "05:52"
+    },
+    {
+      "category": "risk",
+      "text": "If a stock you're watching (or holding) starts losing the rising 9 or 21 EMA, treat that as a huge red flag — it invalidates the setup.",
+      "timestamp": "06:32"
+    },
+    {
+      "category": "regime",
+      "text": "When the general market/indices are extended, it's much harder to find a tight-risk entry on strength — always time individual entries against the health/extension of the broader market, not just the setup in isolation.",
+      "timestamp": "50:28"
+    },
+    {
+      "category": "risk",
+      "text": "No risk, no reward — don't let fear of stopping out or taking a loss cause you to skip good opportunities; take the trade while price is still holding the key level (the invalidation point hasn't hit yet), and if it fails, accept it and re-evaluate.",
+      "timestamp": "55:38"
+    },
+    {
+      "category": "entries",
+      "text": "Decide whether you'll take a breakout before it actually happens — commit to pressing the buy button immediately at the breakout candle rather than waiting 15-20 seconds to confirm, which lowers reaction time and often means chasing.",
+      "timestamp": "65:21"
+    },
+    {
+      "category": "entries",
+      "text": "It's possible to enter before a key-level bounce is confirmed (before the candle even closes), but expect a meaningfully lower win rate for doing so.",
+      "timestamp": "73:18"
+    },
+    {
+      "category": "psychology",
+      "text": "When you have a recurring trading problem (e.g. overtrading, entering too many positions at once), diagnose the actual root cause first — is it mental discomfort with size, poor execution, or FOMO/revenge trading — rather than looking for a generic fix.",
+      "timestamp": "82:39"
+    },
+    {
+      "category": "risk",
+      "text": "If you keep getting stopped out repeatedly, drill down into why: are you entering at the wrong time, is the entry itself not optimal, or are you entering somewhat randomly without a clear plan.",
+      "timestamp": "87:14"
+    },
+    {
+      "category": "psychology",
+      "text": "None of your biggest/best trades will come from revenge trading during a difficult, losing period — statistically it's undeniable that the best trades never come from those emotional, revenge-driven stretches.",
+      "timestamp": "90:22"
+    },
+    {
+      "category": "psychology",
+      "text": "You can't fully eliminate FOMO or revenge trading, but you can gradually reduce it over time through hard lessons and drawdowns — improvement is incremental, not a single fix.",
+      "timestamp": "89:02"
+    },
+    {
+      "category": "psychology",
+      "text": "Accept that overnight/gap risk is part of the game — you can't control whether a position gaps up or down, so embrace the uncertainty rather than dwelling on the downside ('never met a successful pessimist').",
+      "timestamp": "107:15"
+    },
+    {
+      "category": "other",
+      "text": "Before going full-time on trading: build roughly 2 years of consistent track record spanning different market conditions (uptrend, sideways, downtrend), have trading income that clearly exceeds (ideally 2-3x) your day-job income, and keep a financial cushion of at least 6-12 months of expenses.",
+      "timestamp": "95:21"
+    },
+    {
+      "category": "psychology",
+      "text": "If you have to ask other people (or discuss with family/friends) whether you're ready to quit your job and trade full-time, you're not ready — when you truly are ready, you'll know it with certainty rather than being 90% sure.",
+      "timestamp": "98:42"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "04:17",
+      "caption_text": "Got fake um",
+      "context": "Listing software names gapping down after earnings during the pre-market scan recap; re-discussed at 39:23-40:36 where it's compared to Palantir's May earnings gap-down, called 'still stage one', with today's gap into the 50 EMA described as a good entry.",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "04:30",
+      "caption_text": "We also got uh ops. And we also got app.",
+      "context": "Continuing the list of software names gapping down after earnings.",
+      "guess": "APP (AppLovin) for 'app'; 'ops' unresolved",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "04:58",
+      "caption_text": "Same on um I don't know CRYN. Uh it's always was Cypher.",
+      "context": "Comparing HUT's breakdown to another weak data-center/crypto-mining name.",
+      "guess": "CIFR (Cipher Mining)",
+      "confidence": "confirmed"
+    },
+    {
+      "timestamp": "22:31",
+      "caption_text": "The detail is also gapping down.",
+      "context": "Discussing an unspecified earnings-day pullback ('not a EP... pulled back 16 minutes pullback').",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "29:09",
+      "caption_text": "On the TTMIO.",
+      "context": "Discussing a stock's shakeout, support level, and gap fill; the same stock appears to be explicitly clarified two lines later at 30:09 as 'This I O T looks pretty decent' (Samsara).",
+      "guess": "IOT",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "31:45",
+      "caption_text": "This lights also seems like it's finding some support off the off the gap.",
+      "context": "Continuing relative-strength discussion of semi-adjacent names right after the IOT/EMA shakeout discussion.",
+      "guess": "LITE (Lumentum)",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "33:22",
+      "caption_text": "just you to take a look at QNT strong basket IPO base relative strength your type of trade.",
+      "context": "Viewer suggesting a recent-IPO, relative-strength ticker for Luk to review; Luk notes thin dollar volume (~$50M) and a weak/choppy bounce.",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "40:53",
+      "caption_text": "Is Snap PS a good pullback buy entry today?",
+      "context": "Viewer question listing candidate pullback buys alongside NetApp, ARM, Dell, and BE.",
+      "guess": "SNPS (Synopsys)",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "44:16",
+      "caption_text": "the semis like the socket socks exist also pulling back into the support level",
+      "context": "Discussing semiconductor sector strength relative to NetApp during the pullback-buy Q&A.",
+      "guess": "SOX (semiconductor index)",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "46:22",
+      "caption_text": "if you compare to like uh that beer is like much stronger. Uh on the daily.",
+      "context": "Comparing relative strength of the stock currently being discussed (likely NetApp) to a peer.",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "68:58",
+      "caption_text": "Man, this circle is going It's going straight up after stopping me out at the open.",
+      "context": "Luk was stopped out of a crypto-adjacent name at the open right before it rallied; follow-up Q&A at 69:25 confirms the rationale was crypto-sector strength.",
+      "guess": "CRCL (Circle Internet Group)",
+      "confidence": "confirmed"
+    },
+    {
+      "timestamp": "105:19",
+      "caption_text": "When like if A net continues to to drop lower.",
+      "context": "Advising a viewer on where to raise the stop for their own position (viewer entered on 8/3 during an earnings gap-up); a software/networking name discussed alongside Datadog's earnings reaction.",
+      "guess": "ANET (Arista Networks)",
+      "confidence": "likely"
+    }
+  ]
+}

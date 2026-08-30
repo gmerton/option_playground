@@ -1,0 +1,276 @@
+{
+  "video_id": "Flrm2Y_qB_M",
+  "date": "2026-08-03",
+  "title": "Don't buy family size chips | 3 Aug 2026",
+  "observed_trades": [
+    {
+      "date": "2026-08-03",
+      "ticker": "CRWD",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Cybersecurity-theme position, part of a cluster of same-sub-theme names (with NET, an unnamed ~$317 name, and FTNT); held through a close pullback the following Thursday",
+      "entry_basis": "Entered on a prior stream (exact trigger not restated in this recap); notes a nice undercutting rally through the rising weekly 9 EMA as bullish confirmation",
+      "stop": "",
+      "source": "2026-08-03_Flrm2Y_qB_M@05:38",
+      "confidence": "stated",
+      "notes": "This is a position recap at the top of the stream, not a same-day action. Pulled in very close to his stop on the prior Thursday but found support; now back above the daily 9 and 21 EMAs.",
+      "fill_timing": "prior stream (before the previous Thursday, exact date not stated)"
+    },
+    {
+      "date": "2026-08-03",
+      "ticker": "NET",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Same cybersecurity/software cluster; entered Wednesday shortly after the previous stream ended",
+      "entry_basis": "Bought on a 15-minute reversal candle near 12:15pm ET after price found support where all the 15-minute EMAs (including the 50) had converged, coinciding with a strong 15-minute reversal candle on QQQ and SPY",
+      "stop": "",
+      "source": "2026-08-03_Flrm2Y_qB_M@08:16",
+      "confidence": "stated",
+      "notes": "Ticker inferred from transcript word 'net' (Cloudflare, NET). Almost stopped out Thursday but held; back above 9/21 as of this recap.",
+      "fill_timing": "Wednesday (previous week)"
+    },
+    {
+      "date": "2026-08-03",
+      "ticker": "?",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Same cybersecurity/software cluster as CRWD/NET/FTNT; entered Thursday",
+      "entry_basis": "Bought at the breakout of the previous 60-minute candle, near the $317 price area",
+      "stop": "Low of the 60-minute breakout candle",
+      "source": "2026-08-03_Flrm2Y_qB_M@10:22",
+      "confidence": "stated",
+      "notes": "Ticker name is not decipherable in the transcript ('And then I have a handw...' trails into 'This one I entered on Thursday...' with no ticker spoken/captured). ~$317 price level, same theme as the other cybersecurity names. Almost stopped out again but held; back above 9/21.",
+      "fill_timing": "Thursday (previous week)"
+    },
+    {
+      "date": "2026-08-03",
+      "ticker": "FTNT",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Cybersecurity name, earnings-day attempt",
+      "entry_basis": "Bought on a 5-minute candle breakout on the earnings reaction day",
+      "stop": "",
+      "source": "2026-08-03_Flrm2Y_qB_M@76:31",
+      "confidence": "stated",
+      "notes": "Ticker captioned as 'FPNT foret' earlier and 'FT&T' later in a viewer Q&A about re-entering FTNT on earnings; both clearly refer to Fortinet (FTNT). This was the first, failed attempt on the earnings day itself.",
+      "fill_timing": "Thursday (earnings day, previous week)"
+    },
+    {
+      "date": "2026-08-03",
+      "ticker": "FTNT",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Earnings-day 5-minute breakout entry failed",
+      "entry_basis": "Same 5-minute breakout entry as above",
+      "stop": "",
+      "source": "2026-08-03_Flrm2Y_qB_M@76:31",
+      "confidence": "stated",
+      "notes": "After the stop-out he switched to the 15-minute chart and chose not to re-enter that same day because price never printed a higher high after the opening fade.",
+      "fill_timing": "Thursday (earnings day, previous week)"
+    },
+    {
+      "date": "2026-08-03",
+      "ticker": "FTNT",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Re-entry after the failed earnings-day breakout; pullback into support after earnings",
+      "entry_basis": "Bought at a 15-minute breakout after price pulled back into the daily 9/21 EMAs and the 16-minute-chart EMAs (all clustering)",
+      "stop": "",
+      "source": "2026-08-03_Flrm2Y_qB_M@11:02",
+      "confidence": "stated",
+      "notes": "Successful re-entry the day after the Thursday stop-out; part of the same-theme cluster he still holds as of this recap.",
+      "fill_timing": "Friday (previous week)"
+    },
+    {
+      "date": "2026-08-03",
+      "ticker": "?",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Another name tried alongside the cybersecurity cluster",
+      "entry_basis": "Bought at a 5-minute candle breakout",
+      "stop": "",
+      "source": "2026-08-03_Flrm2Y_qB_M@12:36",
+      "confidence": "stated",
+      "notes": "Ticker captioned as 'BNN'; could not be confidently resolved to a real ticker. This name was already stopped out (see next entry) and not one of the four positions the viewer later asked about.",
+      "fill_timing": "Thursday (previous week)"
+    },
+    {
+      "date": "2026-08-03",
+      "ticker": "?",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Same 'BNN' 5-minute breakout entry",
+      "entry_basis": "Same 5-minute candle breakout as above",
+      "stop": "",
+      "source": "2026-08-03_Flrm2Y_qB_M@12:36",
+      "confidence": "stated",
+      "notes": "Stopped out one day after entry (Friday), described as 'a small loss'.",
+      "fill_timing": "Friday (previous week)"
+    },
+    {
+      "date": "2026-08-03",
+      "ticker": "PBF",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Existing position referenced while answering a viewer's question about entry timing",
+      "entry_basis": "Bought near the $67 high/level",
+      "stop": "Approximately $66.21 (transcript gives the number split across two caption fragments as '662' then '21')",
+      "source": "2026-08-03_Flrm2Y_qB_M@23:07",
+      "confidence": "stated",
+      "notes": "No specific entry date given; mentioned only as background while telling a viewer 'probably not today' is a good entry for PBF now. Stop price is a best-effort reconstruction from garbled captions.",
+      "fill_timing": ""
+    }
+  ],
+  "principles": [
+    {
+      "category": "entries",
+      "text": "Avoid shorting a stock or sector into a strong, reclaiming weekly candle after a big rally off the lows — wait for it to reclaim (and then lose) the declining 50 EMA and form a tighter, failed-breakout setup before initiating a short.",
+      "timestamp": "17:55"
+    },
+    {
+      "category": "psychology",
+      "text": "The best way to answer your own trading questions is to study the charts yourself — working through your own analysis teaches more (new observations, deeper learning) than simply being handed the answer.",
+      "timestamp": "21:25"
+    },
+    {
+      "category": "regime",
+      "text": "Don't change your process for earnings season — manage entries and active positions the same way regardless of whether a name is reporting earnings.",
+      "timestamp": "36:54"
+    },
+    {
+      "category": "risk",
+      "text": "A structural stop placed just below a rising 9/21 EMA support zone gives a clearly defined, low-cost risk, so a pullback-to-support entry offers favorable risk/reward: small defined loss if wrong, large move if the level holds and price turns back up.",
+      "timestamp": "31:57"
+    },
+    {
+      "category": "sizing",
+      "text": "Define risk by stop distance and a fixed risk-per-trade, not by a stock's ADR or beta — position size is derived from the stop distance, so two stocks with very different volatility (e.g. 20% ADR vs 5% ADR) can still carry the same dollar risk.",
+      "timestamp": "49:51"
+    },
+    {
+      "category": "sizing",
+      "text": "Prefer spreading size across several smaller positions within the same theme/sector (buying a few small bags of chips instead of one family-size bag) rather than concentrating into a single full-size position, because you don't know in advance which name in the group will actually become the leader — or which one hits its stop.",
+      "timestamp": "53:51"
+    },
+    {
+      "category": "regime",
+      "text": "After a huge, extended uptrend, it's unlikely a stock or sector reverses in a straight line down — even names headed for a real downtrend usually go sideways/base near the highs first, producing failed breakouts or breakdowns to short, rather than falling straight down after a huge move.",
+      "timestamp": "68:05"
+    },
+    {
+      "category": "entries",
+      "text": "In a persistently strong market regime, buying pullbacks into support (9/21 EMA) can be more reliable than waiting for classic tight-range contraction, because strong stocks don't waste time chopping near the lows before resuming higher — adapt entry style to what the current market is actually doing.",
+      "timestamp": "84:31"
+    },
+    {
+      "category": "regime",
+      "text": "To judge whether a sector is gaining strength, scan the whole watchlist/screeners daily and look for several (four-plus) stocks in the same sector or industry acting well together, alongside the sector ETF holding/clustering above its EMAs — breadth across names is more reliable evidence than any single stock's action.",
+      "timestamp": "80:54"
+    },
+    {
+      "category": "other",
+      "text": "Deeply beaten-down assets that finally find a bottom at a key structural level (e.g. a shakeout back to a prior swing low) can rally very fast off the lows in a 'lockout rally' — watch for confirmation at those key levels rather than assuming continued downside just because a name looks beaten down.",
+      "timestamp": "63:59"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "05:38",
+      "caption_text": "crowd",
+      "context": "Recapping current open positions at the top of the stream",
+      "guess": "CRWD",
+      "confidence": "confirmed"
+    },
+    {
+      "timestamp": "08:16",
+      "caption_text": "net",
+      "context": "Position entered Wednesday, part of the cybersecurity/software cluster",
+      "guess": "NET",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "10:02",
+      "caption_text": "And then I have a handw. This one I entered on Thursday... near of 317 area.",
+      "context": "Unnamed position in the same cybersecurity/software cluster, entered near $317 on a 60-minute breakout",
+      "guess": "? (possibly PANW or ZS given price level and theme; unconfirmed)",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "11:02",
+      "caption_text": "FPNT foret",
+      "context": "Position bought Friday after an earnings pullback, cybersecurity theme",
+      "guess": "FTNT",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "75:48",
+      "caption_text": "FT&T",
+      "context": "Viewer question about re-entering the same name after its earnings reaction",
+      "guess": "FTNT",
+      "confidence": "confirmed"
+    },
+    {
+      "timestamp": "12:36",
+      "caption_text": "BNN",
+      "context": "Another name tried Thursday alongside the cybersecurity cluster, stopped out Friday for a small loss",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "39:13",
+      "caption_text": "CBRS / CPR / CPRS",
+      "context": "Recent-IPO semiconductor-adjacent name building a base for about a month, considered (but not entered) as a potential long",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "23:47",
+      "caption_text": "the snow and duck software names... I think DOC",
+      "context": "Viewer asks about SNOW and (likely) DDOG; Luk's reply is captioned as discussing 'DOC'",
+      "guess": "DDOG",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "87:18",
+      "caption_text": "The SpaceX is showing some support off the lows... SpaceX Rock did find the low on Wednesday",
+      "context": "Watchlist name (not traded) showing support and a strong weekly open/reclaim",
+      "guess": "SPCX",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "91:29",
+      "caption_text": "Have a look at HA similar to SpaceX... spin-off of Horn[eywell]",
+      "context": "Chat/viewer discussion of a recent Honeywell spin-off ticker compared to SPCX",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "94:12",
+      "caption_text": "SOS is the materials part of Honeywell... Q&T is also the subsidiaries of the Honeywell",
+      "context": "Chat discussion identifying Honeywell spin-off companies/tickers",
+      "guess": "SOLS (Solstice Advanced Materials) for 'SOS'; other spin-off ticker unresolved for 'Q&T'",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "60:07",
+      "caption_text": "BMR",
+      "context": "Crypto-strength discussion; name added to watchlist alongside Bitcoin/Ethereum, explicitly not traded",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "65:01",
+      "caption_text": "MSTR and corner",
+      "context": "Names to watch if crypto strength continues",
+      "guess": "COIN",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "78:39",
+      "caption_text": "SUV. This Southwest is... AL is also weaker",
+      "context": "Airlines sector discussion; he says he hesitated and did not buy",
+      "guess": "LUV (Southwest) / AAL (American Airlines) noted as weaker names",
+      "confidence": "likely"
+    }
+  ]
+}

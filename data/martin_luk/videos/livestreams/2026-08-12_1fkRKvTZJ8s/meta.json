@@ -1,0 +1,19 @@
+{
+  "video_id": "1fkRKvTZJ8s",
+  "url": "https://www.youtube.com/watch?v=1fkRKvTZJ8s",
+  "title": "Overexposure | 12 Aug 2026",
+  "channel": "martinlukkt",
+  "channel_id": "UCB6jWJJvO_sWZ2PwgmMcxCw",
+  "stream_date": "2026-08-12",
+  "duration": "2:14:40",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

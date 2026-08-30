@@ -1,0 +1,19 @@
+{
+  "video_id": "Flrm2Y_qB_M",
+  "url": "https://www.youtube.com/watch?v=Flrm2Y_qB_M",
+  "title": "EP75 | 3 Aug 2026",
+  "channel": "martinlukkt",
+  "channel_id": "UCB6jWJJvO_sWZ2PwgmMcxCw",
+  "stream_date": "2026-08-03",
+  "duration": "1:40:21",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

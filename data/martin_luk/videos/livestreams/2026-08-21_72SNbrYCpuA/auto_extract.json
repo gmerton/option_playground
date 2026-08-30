@@ -1,0 +1,197 @@
+{
+  "video_id": "72SNbrYCpuA",
+  "date": "2026-08-21",
+  "title": "Reset | 21 Aug 2026",
+  "observed_trades": [
+    {
+      "date": "2026-08-21",
+      "ticker": "CRCL",
+      "direction": "long",
+      "action": "trim",
+      "setup": "Circle (crypto proxy) is up roughly 30% from the lows in just three days as BTC/ETH push into the weekly 50 EMA; peeling off some of the long into the strength, especially after taking a recent drawdown himself.",
+      "entry_basis": "n/a - trim of an existing position, not a new entry",
+      "stop": "",
+      "source": "2026-08-21_72SNbrYCpuA@14:46",
+      "confidence": "stated",
+      "notes": "He also lays out a plan to trail the remainder with the 60-minute/daily 50 EMA and sell into strength near the all-time high/VWAP if it extends further (57:28-60:16), but that is a stated plan, not a confirmed action taken on stream - only the initial trim is a confirmed action.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-08-21",
+      "ticker": "MSTR",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Was trying to long MSTR as a leveraged Bitcoin proxy roughly one to two weeks before the recent BTC/ETH spike.",
+      "entry_basis": "Bitcoin/crypto trend idea, positioned ahead of the eventual spike",
+      "stop": "Stopped out because the stock was weak and didn't hold",
+      "source": "2026-08-21_72SNbrYCpuA@16:46",
+      "confidence": "stated",
+      "notes": "Recap of a prior trade discussed while looking back at a chart on stream ('I really try to look longing the MSTR and BMNR a few days or maybe one week, a week or two before this spike'). Exact entry/exit dates are not stated, only relative timing.",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-08-21",
+      "ticker": "BMNR",
+      "direction": "long",
+      "action": "exit",
+      "setup": "Long BMNR (Bitmine, ETH proxy) ahead of the recent BTC/ETH spike, entered at the day low.",
+      "entry_basis": "Entered at the day low",
+      "stop": "Was using a day-low stop but exited early on discretion before any real dip, then failed to buy it back before it ran",
+      "source": "2026-08-21_72SNbrYCpuA@17:23",
+      "confidence": "stated",
+      "notes": "He states that if he had kept using the day-low stop instead of exiting early/manually, he'd likely still have been in the trade and caught the full spike - framed as a lesson learned. Exact exit date not given (referencing chart, 'this day' / 'before this dip').",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-08-21",
+      "ticker": "COIN",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Long Coinbase as another crypto-proxy idea ahead of the BTC/ETH spike, part of the same 'always too early' pattern he describes for MSTR/BMNR.",
+      "entry_basis": "Crypto trend idea",
+      "stop": "",
+      "source": "2026-08-21_72SNbrYCpuA@18:37",
+      "confidence": "inferred",
+      "notes": "Mentioned briefly while pointing at a chart ('even I long like coin... somewhere maybe back here or back here'); no exit/outcome stated, grouped with the recurring 'too early on crypto ideas' lesson.",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-08-21",
+      "ticker": "SPCX",
+      "direction": "short",
+      "action": "stopped_out",
+      "setup": "Recap of a prior short attempt on SpaceX (captioned as 'basics'), shorted a bit early into what turned out to be a continued short-term bounce before the real breakdown.",
+      "entry_basis": "Shorted at the 16-minute chart's 9 EMA",
+      "stop": "Stopped out on a gap up into the declining 9 EMA the next day; the day after that actually turned out to be the best short entry, and price went straight down from there",
+      "source": "2026-08-21_72SNbrYCpuA@64:21",
+      "confidence": "inferred",
+      "notes": "Ticker is a best guess: 'basics' decodes to SpaceX/SPCX elsewhere in this same stream (04:16, 11:48, 45:47, 62:05) and matches a confirmed KB decode pattern from the 2026-07-23 stream. Lower confidence specifically here because the topic briefly threads through quantum names and Okta just before this recap.",
+      "fill_timing": "1st of July"
+    }
+  ],
+  "principles": [
+    {
+      "category": "regime",
+      "text": "When you don't have a strong opinion on market direction, it's fine to step back and trade less rather than forcing entries.",
+      "timestamp": "05:10"
+    },
+    {
+      "category": "psychology",
+      "text": "After a drawdown, rotate your posture: get more aggressive about taking profits on winners and more defensive/patient about new entries, adapting to your own equity curve performance, not just to the market.",
+      "timestamp": "15:37"
+    },
+    {
+      "category": "psychology",
+      "text": "When you're doing well, you tend to stop playing your A-game - success itself breeds a drop in discipline, so stay alert right after a hot streak.",
+      "timestamp": "13:36"
+    },
+    {
+      "category": "entries",
+      "text": "A recurring personal mistake is getting into high-conviction trade ideas too early, before the real move starts; losing focus on a strong theme while chasing other setups compounds the problem.",
+      "timestamp": "16:46"
+    },
+    {
+      "category": "exits",
+      "text": "Stick to your predefined stop (e.g. the day low) instead of exiting early on discretion - an early, emotional exit can cost you the entire move that a mechanical stop would have kept you in for.",
+      "timestamp": "17:23"
+    },
+    {
+      "category": "entries",
+      "text": "Fast-moving assets like crypto don't give you time to wait for confirmation after the breakout is obvious - you have to anticipate the move and plan the trade before the prior swing high/base actually breaks.",
+      "timestamp": "21:11"
+    },
+    {
+      "category": "other",
+      "text": "Every ticker or asset class has its own character/behavior pattern - study how a specific name tends to move and adapt your approach to that character rather than applying one generic playbook to everything.",
+      "timestamp": "22:34"
+    },
+    {
+      "category": "entries",
+      "text": "The first bounce after a parabolic climax run typically has a low win rate for real follow-through or a V-shaped recovery - it usually needs a second leg down or a sideways chop first before the next real uptrend starts.",
+      "timestamp": "43:15"
+    },
+    {
+      "category": "entries",
+      "text": "Entries based on lower time frames have a higher failure rate ('fair trades') - cutting down on those and focusing more on daily-level signals raises overall trade quality.",
+      "timestamp": "65:22"
+    },
+    {
+      "category": "sizing",
+      "text": "Being too heavily leveraged forces you to give up good positions/opportunities early just to control drawdown - position sizing discipline matters more than conviction in a name.",
+      "timestamp": "83:44"
+    },
+    {
+      "category": "risk",
+      "text": "Cap max drawdown from peak equity (e.g. keep it below roughly 20%) as a hard rule, but accept that holding larger positions for longer swings will sometimes produce bigger drawdowns as the trade-off.",
+      "timestamp": "88:09"
+    },
+    {
+      "category": "risk",
+      "text": "A gap down against a fresh position is part of the game - let the stop execute at the open rather than trying to intervene; there's nothing you can do about it in the moment.",
+      "timestamp": "90:46"
+    },
+    {
+      "category": "entries",
+      "text": "It's fine to skip a trade entirely when the market or a specific setup is choppy/undecided - wait to see whether support actually holds before committing.",
+      "timestamp": "34:56"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "45:47",
+      "caption_text": "I'm thinking on rolling this basics, but I'm hope I'm waiting for the for a better entry.",
+      "context": "Discussing SpaceX again (a recurring topic throughout the stream); waiting for a better entry, no action taken.",
+      "guess": "SPCX",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "62:05",
+      "caption_text": "Yeah, I was thinking shorting this basics, but uh I don't know.",
+      "context": "Considering a short on SpaceX after discussing quantum-name strength near a resistance cluster; still hesitant, no action taken.",
+      "guess": "SPCX",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "62:05",
+      "caption_text": "And this octai sp of the lows.",
+      "context": "Brief mention that Okta is scraping/near the lows, transitioning between quantum-name talk and the SpaceX short discussion.",
+      "guess": "OKTA",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "64:21",
+      "caption_text": "I kind of shorting shorted it a little bit early like back in the 1st of July... eventually stops me out and it gaps up into the declining 9 EMA on the next day.",
+      "context": "Recap of a past short trade referenced while looking at a chart; likely the same SpaceX ('basics') name discussed moments earlier, but the exact subject is not restated.",
+      "guess": "SPCX",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "26:07",
+      "caption_text": "this CI is one of the uh interesting names that I found",
+      "context": "Watchlist mention of a low-liquidity biotech name with a decent chart and earnings follow-through, grouped with MRNA and other biotech names; unlikely to be the literal ticker CI (Cigna, a large highly-liquid non-biotech name).",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "26:24",
+      "caption_text": "and uh and um this twist",
+      "context": "Another low-liquidity biotech/earnings-play watchlist name grouped with MRNA and CI.",
+      "guess": "TWST",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "26:24",
+      "caption_text": "also include this M&N",
+      "context": "Another low-liquidity biotech/earnings-play watchlist name grouped with MRNA, CI and 'twist'.",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "27:36",
+      "caption_text": "I think that would be the ones that I would like to trade a little bit more like maybe like Tam today we got a pretty decent breakout on copper names.",
+      "context": "Possibly a garbled ticker for a copper-related name, or simply a caption mis-hearing of the word 'them'.",
+      "guess": "?",
+      "confidence": "unsure"
+    }
+  ]
+}

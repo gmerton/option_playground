@@ -1,0 +1,185 @@
+{
+  "video_id": "AntPf0JXhbw",
+  "date": "2026-08-10",
+  "title": "Dot-com bubble charts | 10 Aug 2026",
+  "observed_trades": [
+    {
+      "date": "2026-08-10",
+      "ticker": "AHR",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Existing watchlist name; took a partial (half-size) starter position",
+      "entry_basis": "Limit order, half size",
+      "stop": "",
+      "source": "2026-08-10_AntPf0JXhbw@88:58",
+      "confidence": "stated",
+      "notes": "Mentioned in past tense during Q&A ('that actually bought half size AHR on the limit order'). He says he hasn't traded since Friday's close as of this Monday pre-market stream, so the fill likely predates the stream; exact fill date not stated. He later (110:13) calls his stop placement on this position 'pretty poor' but does not confirm changing it.",
+      "fill_timing": ""
+    }
+  ],
+  "principles": [
+    {
+      "category": "entries",
+      "text": "Prefer buying a pullback to the rising 9 EMA (daily) or 50 EMA (intraday) over chasing an inside-day breakout, especially in stocks that habitually pull back after breaking out.",
+      "timestamp": "05:55"
+    },
+    {
+      "category": "risk",
+      "text": "Small-cap stocks are harder to trade than liquid large caps: they get shaken out more often and rarely sustain multi-week/multi-month trends (mostly quick, explosive, hard-to-time runs), so trade them less and prioritize liquidity first.",
+      "timestamp": "11:12"
+    },
+    {
+      "category": "entries",
+      "text": "A stock closing back above its key EMAs (the 9, and ideally the 21, on both daily and weekly) marks the first step of a character/trend change worth watching.",
+      "timestamp": "13:46"
+    },
+    {
+      "category": "entries",
+      "text": "A candle that opens lower, pushes lower intraday, then reverses and closes at/near the highs is a strong bullish signal, especially when confirmed on both daily and weekly timeframes.",
+      "timestamp": "14:19"
+    },
+    {
+      "category": "regime",
+      "text": "When most watchlist stocks are extended from the 9 EMA and running into resistance on a given day, avoid chasing breakouts and instead wait for pullbacks into rising EMAs.",
+      "timestamp": "36:45"
+    },
+    {
+      "category": "psychology",
+      "text": "Avoid taking low-conviction 'fair' trades just to stay active; piling up small losses on marginal setups erodes confidence ('mental capital'), which is worth protecting the same way you protect account equity.",
+      "timestamp": "54:23"
+    },
+    {
+      "category": "entries",
+      "text": "Adapt entry tactics to how the market is currently behaving (e.g., trade the shakeout instead of buying opening-range breakouts once the market has repeatedly shaken out breakout buyers) rather than sticking rigidly to one fixed method, because market microstructure changes over time.",
+      "timestamp": "85:10"
+    },
+    {
+      "category": "entries",
+      "text": "When multiple setups can trigger at the same time, predefine your entry decision before the trigger happens so you can react quickly, and accept that you will still miss some opportunities.",
+      "timestamp": "96:41"
+    },
+    {
+      "category": "regime",
+      "text": "Lower-quality ('fair'/B-C grade) entries need a strongly favorable market environment to work; in choppy/sideways markets their win rate drops sharply, so reserve them for confirmed strong-market conditions.",
+      "timestamp": "100:18"
+    },
+    {
+      "category": "entries",
+      "text": "Prefer buying weakness/pullbacks over chasing strength, even in strong stocks capable of running without a pullback; accept missing some of the biggest moves rather than chase extension from the 9 EMA.",
+      "timestamp": "102:41"
+    },
+    {
+      "category": "regime",
+      "text": "Watch for market leaders breaking down from their key EMAs (9/21) and making lower highs before the general index does — this can be an early warning sign that a broader market top is forming.",
+      "timestamp": "121:16"
+    },
+    {
+      "category": "risk",
+      "text": "After a powerful/parabolic prior move, treat new breakout setups with extra caution even when the chart pattern looks bullish: use smaller size, set tighter stops, follow those stops strictly, and weigh the extended market context rather than judging the pattern in isolation.",
+      "timestamp": "129:09"
+    },
+    {
+      "category": "exits",
+      "text": "Failed breakouts near prior highs (large reversal candles slightly above or below the previous swing high) are the most dangerous and most powerful reversal signals to watch for, especially late in an extended uptrend.",
+      "timestamp": "131:25"
+    },
+    {
+      "category": "risk",
+      "text": "Even when a breakdown looks like it confirms a top, be careful shorting into an extended market — breakdowns can fail and the market can find support again before the real top is in, so don't assume any single reversal is definitively the top.",
+      "timestamp": "150:34"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "04:15",
+      "caption_text": "AEX is looking really good",
+      "context": "Reviewing existing watchlist stocks at the start of the weekend routine scan",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "05:26",
+      "caption_text": "AHL I like it it is a stock that loves pulling back",
+      "context": "Discussing a watchlist stock's tendency to pull back, planning to buy near the 9 EMA (daily) or 50 EMA (60-min) instead of the breakout",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "06:11",
+      "caption_text": "this red wire is doing pretty good ... it's a arrow aerospace stocks. So it's a space theme.",
+      "context": "Reviewing a space/aerospace-theme stock that reclaimed all its EMAs (daily and weekly) after earnings follow-through",
+      "guess": "RDW",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "13:15",
+      "caption_text": "SpaceX is getting like the I would say like the step one of a character change",
+      "context": "Discussing a stock closing above both the 9 and 21 EMA on daily and weekly, tied to the space theme picking up steam",
+      "guess": "SPCX",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "35:03",
+      "caption_text": "I got many stocks that have been down are right now at the like the weekly 21 or the weekly 50 like MPCCJ Ollo",
+      "context": "Listing stocks bouncing back into declining weekly EMAs, grouped alongside quantum and semi names",
+      "guess": "MP / CCJ",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "35:03",
+      "caption_text": "MPCCJ Ollo",
+      "context": "Same list of stocks bouncing into declining weekly EMAs; second garbled name in the same sentence",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "59:37",
+      "caption_text": "What do you think on net earnings jump, but it almost gave back most of the increase.",
+      "context": "Discussing an existing holding that jumped on earnings then gave back most of the gain but stayed above the 9 EMA and his stop; decided not to do anything",
+      "guess": "NET",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "60:26",
+      "caption_text": "This can start out on the AOI, but I am looking for the re-entry. This a thing is too ill liquid.",
+      "context": "Discussing an illiquid name (grouped with semis elsewhere in the stream) he's watching for a re-entry rather than sizing into now",
+      "guess": "AEHR",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "82:15",
+      "caption_text": "Man, this ae is just I mean it has to shake shake the opening range high peoples out.",
+      "context": "Discussing opening-range shakeouts on a small-cap, illiquid name; likely the same name discussed by full ticker name minutes later",
+      "guess": "AEVA",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "88:58",
+      "caption_text": "I'm a little bit not sure whether I should reenter circle or not.",
+      "context": "Considering (but not confirming) re-entering a previously held position",
+      "guess": "CRCL",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "97:21",
+      "caption_text": "O US was a good setup today. The lightest AEVA and Od.",
+      "context": "Discussing setups in the lidar sector alongside AEVA",
+      "guess": "OUST",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "100:53",
+      "caption_text": "you match shot is so good. Yeah, I'm so sad that I missed",
+      "context": "Reacting to a strong move in a name he did not take (admitted miss, not a trade)",
+      "guess": "MTCH",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "103:44",
+      "caption_text": "SMDK right right now is looking really weak. Um I think most of the memory names are are looking weak.",
+      "context": "Discussing weakness across memory-sector stocks",
+      "guess": "SNDK",
+      "confidence": "likely"
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "video_id": "z73SOenHQQA",
+  "date": "2026-08-04",
+  "title": "Lockout rally again | 4 Aug 2026",
+  "observed_trades": [
+    {
+      "date": "2026-08-04",
+      "ticker": "MSTR",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Bought into a gap-up move without waiting for price to consolidate first",
+      "entry_basis": "gap up entry",
+      "stop": "",
+      "source": "2026-08-04_z73SOenHQQA@40:58",
+      "confidence": "stated",
+      "notes": "Named as one of 'two losses' taken today; he says it 'could be avoided' by letting it consolidate above the 5-minute EMA before entering.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-08-04",
+      "ticker": "?",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Second of 'two losses' taken today; ticker not named",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-08-04_z73SOenHQQA@40:58",
+      "confidence": "inferred",
+      "notes": "He says 'I think the two losses could be avoided' and only names MSTR specifically; the other loss ticker is unstated.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-08-04",
+      "ticker": "?",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Semiconductor-sector longs entered during the panic-sale selloff",
+      "entry_basis": "buying weakness during the semi sector drop",
+      "stop": "",
+      "source": "2026-08-04_z73SOenHQQA@82:07",
+      "confidence": "stated",
+      "notes": "In response to a viewer asking about entering on 29 Jul, he says 'I got stopped out on like a few times on the semi longs like only crowd (CRWD) survived on Wednesday.' Specific stopped-out tickers not named.",
+      "fill_timing": "2026-07-29"
+    },
+    {
+      "date": "2026-08-04",
+      "ticker": "CRWD",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Semiconductor/tech-sector long entered during the same panic-sale round as the stopped-out semi longs; this one survived",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-08-04_z73SOenHQQA@82:07",
+      "confidence": "inferred",
+      "notes": "'only crowd survived...on Wednesday' (Wed 29 Jul). Position confirmed still open later in stream: 'Would you trim some after it crossed the trend line? I have no plans on trimming any positions.' (77:20).",
+      "fill_timing": "2026-07-29"
+    },
+    {
+      "date": "2026-08-04",
+      "ticker": "PANW",
+      "direction": "long",
+      "action": "exit",
+      "setup": "Cybersecurity-leader breakout/pullback entry, part of spotting strength in the cyber group early",
+      "entry_basis": "breakout or pullback entry",
+      "stop": "",
+      "source": "2026-08-04_z73SOenHQQA@96:37",
+      "confidence": "inferred",
+      "notes": "Caption garbles the ticker as 'pan W'. He says he tried trading it 'off this breakout or this pullback' and 'exited like break even or like a small win.' Timing not specified beyond 'in the past two months.'",
+      "fill_timing": ""
+    }
+  ],
+  "principles": [
+    {
+      "category": "entries",
+      "text": "Don't buy into a gap-up move; wait for a better entry rather than chase strength at the open.",
+      "timestamp": "09:56"
+    },
+    {
+      "category": "psychology",
+      "text": "Prioritize getting the most optimal entry possible over taking many marginal trades — this maximizes usable buying power and preserves mental capital between good trades.",
+      "timestamp": "12:17"
+    },
+    {
+      "category": "exits",
+      "text": "The big money is made by sitting tight in a winning position rather than overtrading it (citing Jesse Livermore).",
+      "timestamp": "65:22"
+    },
+    {
+      "category": "risk",
+      "text": "When you have a solid profit cushion and the stock is in an early-stage uptrend, don't trim the entire position ahead of earnings — keep at least a partial position on, since selling it all risks missing a big continuation run.",
+      "timestamp": "68:13"
+    },
+    {
+      "category": "psychology",
+      "text": "Don't panic and exit on an earnings gap-down as long as price is still above your predefined stop — a strong uptrend can gap down 7-10% and still hold above support.",
+      "timestamp": "71:10"
+    },
+    {
+      "category": "risk",
+      "text": "An entry is only worth taking if it offers a tight stop (roughly 2% or less); a wider stop makes the setup not worth it.",
+      "timestamp": "79:21"
+    },
+    {
+      "category": "psychology",
+      "text": "Don't copy another trader's rules, style, entries, exits, stock selection, timeframe, or chart settings wholesale — learn selectively from others, test it yourself, and keep only what actually works for your own personality.",
+      "timestamp": "94:12"
+    },
+    {
+      "category": "entries",
+      "text": "Buying a pullback into the 9 EMA on a leading stock offers the tightest possible stop and therefore the best risk/reward in a strong uptrend.",
+      "timestamp": "100:34"
+    },
+    {
+      "category": "exits",
+      "text": "When a stock closes below its 9 EMA after riding it throughout a strong rally, that's a high-probability signal the uptrend is ending or at least needs to pause/go sideways.",
+      "timestamp": "101:11"
+    },
+    {
+      "category": "regime",
+      "text": "Market breadth and the behavior of individual leading stocks are the decisive factor for regime/health assessment, not the index chart itself — the index is just made up of the individual stocks.",
+      "timestamp": "110:09"
+    },
+    {
+      "category": "regime",
+      "text": "The same chart pattern should be traded differently depending on the surrounding market context — an identical setup can be tradeable in a strong tape and untouchable in a weak one.",
+      "timestamp": "92:09"
+    },
+    {
+      "category": "risk",
+      "text": "Using a very tight stop on an explosive opening-range move can cause you to miss the trade entirely if it never pulls back — there's a real tradeoff between tight risk control and catching fast intraday movers.",
+      "timestamp": "114:37"
+    },
+    {
+      "category": "regime",
+      "text": "After a very fast, extended rally, expect a pullback in the coming days or weeks; don't get FOMO or chase — wait for low-risk entries instead.",
+      "timestamp": "123:20"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "10:25",
+      "caption_text": "CBR is like uh even closed above 50 EMA and the free web yesterday",
+      "context": "Listing strong stocks alongside HP, in the pre-market/early strength recap",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "10:25",
+      "caption_text": "And Dow is also showing huge strength during this during the recent pullback",
+      "context": "Same strong-stocks list; described as never falling below a candle low and holding the weekly 9 EMA — matches the pattern later attributed to DOC",
+      "guess": "DOC",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "67:12",
+      "caption_text": "the probability of B do um continues making new high",
+      "context": "Answering a viewer question about their DOC earnings hold, discussing the stock's breakout from a flag in the software sector",
+      "guess": "DOC",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "71:26",
+      "caption_text": "because DTO is in a really strong uptrend above 10 and 21",
+      "context": "Continuing the same DOC-earnings-hold discussion with the viewer",
+      "guess": "DOC",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "71:46",
+      "caption_text": "trying to stick with your stock even if like the Dong is gapping down after earnings",
+      "context": "Same DOC discussion — advising the viewer not to panic if the stock gaps down after earnings",
+      "guess": "DOC",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "96:37",
+      "caption_text": "probably um trading pan W off this breakout or this pullback",
+      "context": "Describing a past cybersecurity-sector trade, exited at breakeven/small win",
+      "guess": "PANW",
+      "confidence": "confirmed"
+    },
+    {
+      "timestamp": "110:33",
+      "caption_text": "for hot today is gapping under all EMAs today is the biggest reason relative strength or the sector strength",
+      "context": "Viewer question about a stock gapping down under all EMAs but bouncing, with data-center sector strength mentioned",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "82:24",
+      "caption_text": "only crowd survived uh when on Wednesday",
+      "context": "Recapping stopped-out semiconductor longs from the 29 Jul selloff",
+      "guess": "CRWD",
+      "confidence": "confirmed"
+    }
+  ]
+}

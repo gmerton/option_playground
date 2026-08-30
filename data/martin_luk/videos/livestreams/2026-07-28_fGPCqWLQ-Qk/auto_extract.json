@@ -1,0 +1,240 @@
+{
+  "video_id": "fGPCqWLQ-Qk",
+  "date": "2026-07-28",
+  "title": "Locking in profits | 28 Jul 2026",
+  "observed_trades": [
+    {
+      "date": "2026-07-28",
+      "ticker": "MSTR",
+      "direction": "short",
+      "action": "stopped_out",
+      "setup": "Short position in MSTR taken the prior day",
+      "entry_basis": "Entry taken previous day did not offer a good risk/reward with a tight stop",
+      "stop": "",
+      "source": "2026-07-28_fGPCqWLQ-Qk@02:18",
+      "confidence": "inferred",
+      "notes": "He explicitly says he 'got stopped out on MSTR yesterday'; direction (short) is inferred from the fact that he is short-biased throughout the stream and later explains a separate active MSTR short via bearish EMA stacking. Not the same position as the MSTR short he discusses/holds later in the stream.",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2026-07-28",
+      "ticker": "SNDK",
+      "direction": "short",
+      "action": "exit",
+      "setup": "Short position in SNDK covered into intraday weakness",
+      "entry_basis": "Covered near the round-number 1100 level rather than a strict technical trigger",
+      "stop": "",
+      "source": "2026-07-28_fGPCqWLQ-Qk@22:02",
+      "confidence": "stated",
+      "notes": "Rationale explained later in the stream (~38:11-38:30): 'SNDK falls below the 1100 marks... I like the numbers 1100... that's why I covered it into that level.' He states you don't need a strong reason to cover a short into weakness.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-07-28",
+      "ticker": "MU",
+      "direction": "short",
+      "action": "exit",
+      "setup": "Short position in MU covered as price approached prior support",
+      "entry_basis": "MU heading into the previous swing low and the unfilled gap from May",
+      "stop": "",
+      "source": "2026-07-28_fGPCqWLQ-Qk@33:20",
+      "confidence": "stated",
+      "notes": "Transcript literally says 'I'm copying my MU', almost certainly a mis-transcription of 'covering'.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-07-28",
+      "ticker": "?",
+      "direction": "short",
+      "action": "exit",
+      "setup": "Additional short position closed alongside an anticipated MSTR stop-out",
+      "entry_basis": "Closed preemptively as MSTR approached its stop level, ahead of a broader market bounce",
+      "stop": "",
+      "source": "2026-07-28_fGPCqWLQ-Qk@82:33",
+      "confidence": "inferred",
+      "notes": "Ticker transcribed as 'DS' ('I think I'm going to close my short on DS as well') — could not confidently resolve to a real symbol. See ambiguous_tickers.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-07-28",
+      "ticker": "NET",
+      "direction": "long",
+      "action": "stop_adjustment",
+      "setup": "Cyber security name (Cloudflare) pulling back into the weekly 9 EMA and finding support",
+      "entry_basis": "Confluence of unfilled gap, weekly 9 EMA, prior swing highs, and the 50 EMA",
+      "stop": "Lowered stop to the high of today's gap-down candle",
+      "source": "2026-07-28_fGPCqWLQ-Qk@105:05",
+      "confidence": "inferred",
+      "notes": "Direction (long) inferred from bullish framing ('finding support', 'looks really good'); not explicitly stated as long. This is a stop management action on an existing position, not a new entry/exit.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-07-28",
+      "ticker": "?",
+      "direction": "short",
+      "action": "exit",
+      "setup": "Short position closed alongside MSTR nearing its stop, amid a bounce in cyber security names",
+      "entry_basis": "Closed preemptively into strength/bounce rather than waiting to get stopped out",
+      "stop": "",
+      "source": "2026-07-28_fGPCqWLQ-Qk@115:43",
+      "confidence": "inferred",
+      "notes": "Ticker transcribed as 'WDS' ('So, I'm going to close my WDS as well') — could not confidently resolve to a real symbol. Possibly related to the position closed earlier near 82:33 (transcribed 'DS'), though it may be a separate name. See ambiguous_tickers.",
+      "fill_timing": "today"
+    }
+  ],
+  "principles": [
+    {
+      "category": "entries",
+      "text": "Focus on entries offering asymmetric risk/reward: limited downside represented by a tight stop, entered where the trend is changing, so price should start trending in your favor immediately rather than chopping sideways.",
+      "timestamp": "61:11"
+    },
+    {
+      "category": "entries",
+      "text": "Use EMA stacking and slope (e.g. 9/21/50/150 EMA order and direction) to objectively classify a stock as trending vs. sideways/choppy before deciding whether to trade it.",
+      "timestamp": "107:21"
+    },
+    {
+      "category": "entries",
+      "text": "After a strong gap-up move, wait for a pullback into the 9 or 21 EMA before entering long rather than chasing the initial breakout.",
+      "timestamp": "124:49"
+    },
+    {
+      "category": "entries",
+      "text": "Avoid chasing (FOMO) a setup that already looks good but has run too far without you in it; wait for the next proper opportunity instead.",
+      "timestamp": "122:55"
+    },
+    {
+      "category": "exits",
+      "text": "Cover shorts into weakness/extension and lock in profits; the entry price of your next short in the same name is generally going to be higher (worse) than where you covered.",
+      "timestamp": "39:11"
+    },
+    {
+      "category": "exits",
+      "text": "The more extended the market/sector becomes to the downside, the more you should trim/cover shorts, since a snapback bounce after an extended move tends to be fast and strong.",
+      "timestamp": "39:48"
+    },
+    {
+      "category": "exits",
+      "text": "In choppier, more volatile conditions, trail a winning trend-following position with a wider EMA (e.g. 21 EMA) rather than a tighter one (9 EMA) to avoid getting shaken out prematurely.",
+      "timestamp": "80:17"
+    },
+    {
+      "category": "exits",
+      "text": "You don't need a strong technical reason to take profits into weakness on a short - it's always fine to cover some or all when it feels right, because there will always be another opportunity.",
+      "timestamp": "38:44"
+    },
+    {
+      "category": "risk",
+      "text": "Use small risk per trade, especially early in a trading career, to keep drawdowns manageable while you're still gaining experience from losses.",
+      "timestamp": "72:54"
+    },
+    {
+      "category": "risk",
+      "text": "Deep drawdowns commonly trace back to overtrading, taking poor entries, ignoring your own stop-loss, and oversizing positions - not just bad luck.",
+      "timestamp": "74:29"
+    },
+    {
+      "category": "risk",
+      "text": "Use the price action that follows a stop-out as feedback: if the stopped-out position reverses and gaps back above key levels the next day, the broader thesis/market condition may not be as bad as it looked and re-entry can be considered; if it instead breaks down further, that confirms the weakness.",
+      "timestamp": "112:20"
+    },
+    {
+      "category": "sizing",
+      "text": "Specialize in the setup type/side (e.g. shorts only, or a specific pattern) that matches your demonstrated edge rather than trying to trade every opportunity in every direction.",
+      "timestamp": "64:54"
+    },
+    {
+      "category": "psychology",
+      "text": "Journal your trades after a drawdown and look for patterns in the mistakes, including non-trading factors (personal life, mood, sleep) that may have contributed, so you can recognize the same warning signs in the future.",
+      "timestamp": "76:41"
+    },
+    {
+      "category": "psychology",
+      "text": "Review your good/winning trades, not just losses, to identify what made them work and to rebuild confidence during a drawdown.",
+      "timestamp": "78:15"
+    },
+    {
+      "category": "psychology",
+      "text": "Copying another trader's system can work as a starting point, but it isn't sustainable long-term - you eventually need to tweak and adapt the rules to fit your own personality.",
+      "timestamp": "86:24"
+    },
+    {
+      "category": "psychology",
+      "text": "Taking a loss/getting stopped out isn't inherently bad - it can be useful information that prompts a shift in bias (e.g. from long to short focus).",
+      "timestamp": "111:44"
+    },
+    {
+      "category": "regime",
+      "text": "Gauge overall market health by watching how a broad list of individual stocks is behaving, rather than relying on a single indicator (like a follow-through day) to call a market bottom or top.",
+      "timestamp": "102:52"
+    },
+    {
+      "category": "regime",
+      "text": "After an ambiguous, volatile session with a sharp bounce, stay open-minded to either direction (continuation lower or a real reversal) rather than committing hard to one bias.",
+      "timestamp": "126:53"
+    },
+    {
+      "category": "other",
+      "text": "The specific pattern (e.g. tight-range consolidation breakout) matters less than whether it satisfies the underlying requirement of asymmetric risk/reward; keep trading a setup only as long as that requirement still holds, even if the pattern occurs less frequently in the current market.",
+      "timestamp": "97:06"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "22:02",
+      "caption_text": "I just covered my SKH Alex. upwards for Oh, I covered my SNDK.",
+      "context": "Covering a short position on weakness; the caption garbles the start of the sentence before he clearly restates the ticker.",
+      "guess": "SNDK",
+      "confidence": "confirmed"
+    },
+    {
+      "timestamp": "82:33",
+      "caption_text": "It looks like I'm going to get stopped out on MSTR. So, I think I'm going to close my short on DS as well.",
+      "context": "Closing an additional short position as MSTR nears its stop level.",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "115:43",
+      "caption_text": "MST are going to stop me out at it very soon. So, I'm going to close my WDS as well.",
+      "context": "Closing another short position alongside MSTR during a bounce in cyber security names.",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "18:02",
+      "caption_text": "Wow, pattern is gapping down and now it's following following to the downside down 8%.",
+      "context": "Reacting to a stock/sector gapping down heavily premarket amid broader semiconductor weakness.",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "44:53",
+      "caption_text": "Yeah, I want a Sammy maybe down maybe like seven eight% or more.",
+      "context": "Discussing how much further the weak semiconductor group would need to drop before considering a mean-reversion long.",
+      "guess": "SMH",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "47:54",
+      "caption_text": "You think GTX has a better show set up than cryptos? ... gold. I don't know but I believe like in the recent weeks recent months golden cryptos has a pretty strong correlation.",
+      "context": "Comparing crypto setups to another asset; he immediately pivots to discussing gold's correlation with crypto.",
+      "guess": "GLD",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "117:02",
+      "caption_text": "Is it possible it is? That should be a long flip. The BMR is looking pretty good.",
+      "context": "Discussing a possible long flip in a crypto-related name after Bitcoin shows bounce potential.",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "79:04",
+      "caption_text": "let's say I I think if I think I bought down on uh on on this candle the 10th of March ... this is Dow is showing relative strength during the during the the market weakness.",
+      "context": "Recounting a historical (non-today) winning long trade example (15-20R) from around March, used to illustrate trailing with the 21 EMA; not a trade taken during this stream.",
+      "guess": "?",
+      "confidence": "unsure"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "video_id": "ufN4u_ncWZg",
+  "url": "https://www.youtube.com/watch?v=ufN4u_ncWZg",
+  "title": "EP90 | 28 Aug 2026",
+  "channel": "martinlukkt",
+  "channel_id": "UCB6jWJJvO_sWZ2PwgmMcxCw",
+  "stream_date": "2026-08-28",
+  "duration": "3:04:39",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

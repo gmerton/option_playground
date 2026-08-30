@@ -1,0 +1,208 @@
+{
+  "video_id": "28slvAelnSc",
+  "date": "2026-08-17",
+  "title": "Missed $ONDS | 17 Aug 2026",
+  "observed_trades": [
+    {
+      "date": "2026-08-17",
+      "ticker": "RKLB",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Opening range breakout with a strong bounce off the lows, supported by continued strength in the space sector theme",
+      "entry_basis": "1-minute opening range breakout, entered near the close of the 1-min candle; also showed a pullback into the gap area / EMAs on 5m, 15m and 16m timeframes, with the daily also looking good",
+      "stop": "",
+      "source": "2026-08-17_28slvAelnSc@74:13",
+      "confidence": "inferred",
+      "notes": "Ticker rendered in captions as 'Rock Calab' - likely a garbled transcription of Rocket Lab (RKLB); space-theme strength cited as a supporting reason for the entry",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-08-17",
+      "ticker": "AOI",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Pullback buy into a prior gap area, revisiting an anchored VWAP support level for the second time (first tested 6 Aug, retested 11 Aug)",
+      "entry_basis": "5-minute candle breakout on a pullback into an anchored VWAP (anchored from 31 Jul) and a gap-fill area",
+      "stop": "",
+      "source": "2026-08-17_28slvAelnSc@75:23",
+      "confidence": "inferred",
+      "notes": "Ticker rendered in captions simply as 'AOI' - could not confidently resolve to a real symbol; discussed in the same breath as a space-theme name so may also be a space-sector stock",
+      "fill_timing": "2026-08-11"
+    },
+    {
+      "date": "2026-08-17",
+      "ticker": "CRCL",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Traded as a crypto-correlation play before later starting to treat it more like a software name",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-08-17_28slvAelnSc@78:33",
+      "confidence": "stated",
+      "notes": "Recap of a prior Circle (CRCL) trade; got stopped out on this date while buying near the lows",
+      "fill_timing": "2026-08-06"
+    },
+    {
+      "date": "2026-08-17",
+      "ticker": "CRCL",
+      "direction": "long",
+      "action": "stopped_out",
+      "setup": "Continuation of the Circle recap - a second attempt near the lows",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-08-17_28slvAelnSc@79:51",
+      "confidence": "inferred",
+      "notes": "Luk says he 'maybe' also got stopped out on the 10th but is explicitly unsure ('I'm not sure. I think so'); did not immediately buy back after this",
+      "fill_timing": "2026-08-10"
+    },
+    {
+      "date": "2026-08-17",
+      "ticker": "CRCL",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Re-entering after decent price action on the rising 9/21 EMA and a first close above them, seeing a potential new uptrend forming off this base",
+      "entry_basis": "Clean 5-minute breakout intraday, stock up roughly 1.5% at entry",
+      "stop": "",
+      "source": "2026-08-17_28slvAelnSc@80:12",
+      "confidence": "stated",
+      "notes": "Exact fill date unclear from the recap - discussed right after referencing the 10 Aug price action, so likely entered on or shortly after 10 Aug",
+      "fill_timing": ""
+    },
+    {
+      "date": "2026-08-17",
+      "ticker": "CRCL",
+      "direction": "long",
+      "action": "stop_raised",
+      "setup": "Managing the existing Circle position after it pulled back and lost the 9 EMA on the 16-min chart amid broader crypto weakness, showing an intraday rejection off the declining 50 EMA",
+      "entry_basis": "",
+      "stop": "Raised stop to slightly below the rising 50 EMA on the 15-min chart and below that day's opening range low",
+      "source": "2026-08-17_28slvAelnSc@81:29",
+      "confidence": "stated",
+      "notes": "Circle never triggered the stop after it was raised. Luk first says 'the 13th', then corrects himself ('No not Thursday. Probably Friday') - since the stream date (17 Aug) is a Monday, the 13th would be Thursday, so his corrected date implies Friday the 14th",
+      "fill_timing": "2026-08-14"
+    },
+    {
+      "date": "2026-08-17",
+      "ticker": "HPQ",
+      "direction": "long",
+      "action": "entry",
+      "setup": "Re-entering a name showing relative strength through the market pullback and the subsequent bounce",
+      "entry_basis": "Pullback to the 9 EMA (matching on daily and 60-min charts), also lining up with a pullback into Thursday's post-gap-up intraday fade area and a prior swing high",
+      "stop": "",
+      "source": "2026-08-17_28slvAelnSc@92:47",
+      "confidence": "stated",
+      "notes": "Entered in two tranches: about 1/4 of the position on the 15-min breakout via limit order, remainder filled on the candle after the breakout candle",
+      "fill_timing": "today"
+    }
+  ],
+  "principles": [
+    {
+      "category": "regime",
+      "text": "When the broader market (e.g. Nasdaq/QQQ) has just recovered from a pullback or correction, that recovery is a good time to shift toward position trading your stocks rather than quick in-and-out trades.",
+      "timestamp": "85:08"
+    },
+    {
+      "category": "entries",
+      "text": "For pullback buys, keep a mental watchlist of strong names and manually watch for price to pull back into a rising key EMA (9/21) or another support level in the coming days, rather than relying on pre-set price alerts.",
+      "timestamp": "68:24"
+    },
+    {
+      "category": "entries",
+      "text": "When waiting to buy a dip in a sector or stock, don't just buy the first move down - wait for a decisive breakdown below a key level (e.g. anchored VWAP) followed by a support reaction or bounce before entering.",
+      "timestamp": "70:32"
+    },
+    {
+      "category": "entries",
+      "text": "A strong rebound off a correction low that reclaims and holds above all key EMAs, combined with outsized trading volume relative to the stock's market cap, signals smart-money/institutional interest and is a bullish setup worth watching.",
+      "timestamp": "65:11"
+    },
+    {
+      "category": "risk",
+      "text": "Trust your stops rather than trying to override or second-guess them with a discretionary read of price action in the moment.",
+      "timestamp": "73:24"
+    },
+    {
+      "category": "exits",
+      "text": "Rather than defining an exit as a daily close below a certain EMA (which forces you to wait for the close), set a hard stop slightly below that EMA - or an equivalent EMA on a lower timeframe (e.g. a 150 EMA on the 60-min chart approximating a daily 21 or 200 EMA) - so the stop can trigger intraday.",
+      "timestamp": "88:34"
+    },
+    {
+      "category": "exits",
+      "text": "An alternative stop-placement approach: place the stop below a recent candle's low, ideally one that also happens to sit slightly below a key EMA, rather than below the EMA alone.",
+      "timestamp": "90:08"
+    },
+    {
+      "category": "sizing",
+      "text": "An oversized single position can tie up so much buying power that it blocks you from entering other setups you actually want to take - a reason to be mindful of position sizing relative to available capital.",
+      "timestamp": "39:17"
+    },
+    {
+      "category": "psychology",
+      "text": "You will never nail the entry on every opportunity, and there will always be trades you miss entirely - don't dwell on or feel bad about the ones that got away.",
+      "timestamp": "60:00"
+    },
+    {
+      "category": "other",
+      "text": "The exact EMA/SMA period you use matters less than the fact that you've tested and compared it yourself and have conviction in why you use it - don't blindly copy another trader's indicator settings without doing your own study.",
+      "timestamp": "99:54"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "06:47",
+      "caption_text": "the QBTS and INQ has has closed above all the weekly EMAs",
+      "context": "Discussing quantum-computing names that closed above their weekly EMAs",
+      "guess": "IONQ",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "40:21",
+      "caption_text": "ODS today pullback by uh undercutting actions",
+      "context": "Discussing the name he missed today, referenced in the video title as $ONDS",
+      "guess": "ONDS",
+      "confidence": "confirmed"
+    },
+    {
+      "timestamp": "59:41",
+      "caption_text": "OMDS on this lush has a really good opportunities for the pullback buys",
+      "context": "Continuing the same discussion of the missed pullback-buy setup named in the video title",
+      "guess": "ONDS",
+      "confidence": "confirmed"
+    },
+    {
+      "timestamp": "74:13",
+      "caption_text": "Can you explain what's your entry point on Rock Calab and AOI?",
+      "context": "Viewer question about two entries he took today; space-theme strength cited right after as a supporting reason",
+      "guess": "RKLB",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "75:23",
+      "caption_text": "A AOI would be on the on this day 11th of August the pull back into the on into this gap area",
+      "context": "Explaining a pullback-buy entry from 11 August using an anchored VWAP",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "39:17",
+      "caption_text": "BMR takes up so much of my buying power that I they cannot get the into Intel",
+      "context": "Explaining why he couldn't buy Intel today - an existing position is tying up his buying power",
+      "guess": "BMNR",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "88:34",
+      "caption_text": "let's say like crowd but although I'm not raising my stop um on crowd",
+      "context": "Hypothetical example used while explaining his exit/stop-placement philosophy (not a real action taken)",
+      "guess": "CRWD",
+      "confidence": "confirmed"
+    },
+    {
+      "timestamp": "102:23",
+      "caption_text": "And this F is looking pretty good now. It's holding up um above the 9 EMA.",
+      "context": "Wrapping up the EMA/SMA discussion while looking at a chart on screen",
+      "guess": "?",
+      "confidence": "unsure"
+    }
+  ]
+}
