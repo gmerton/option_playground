@@ -23,6 +23,21 @@ Usage:
     ... --no-charts      # skip Tradier entirely, detail pages get no chart (fast, for text-only iteration)
 
 Requires: MYSQL_PASSWORD, TRADIER_API_KEY.
+
+Each review may also carry a hand-written `actionable_analysis` (free text --
+what could have raised the entry/exit score using only information available
+at the time, no hindsight) and a short `actionable_verdict` label -- a small,
+CONSISTENT vocabulary so it's filterable/indexable on the index page instead
+of read one page at a time. Reuse an existing label rather than mint a new one
+unless a review genuinely doesn't fit any of these:
+  Pass                   -- no entry available then would have scored well; shouldn't have traded it
+  No Change              -- already close to optimal given the information at the time
+  Enter Earlier          -- right idea, but entry lagged the actual signal
+  Wait for Pullback      -- right idea, but chased an extended price instead of waiting for one
+  Wait for Confirmation  -- entered before a would-be trigger (breakout hold, reversal candle, etc.) confirmed
+  Tighter Stop           -- exit discipline: should have cut the loss sooner
+  Hold Longer            -- exit discipline: cut a working trade too early
+  Size Down              -- entry/exit were fine, position size was too big for the setup's risk
 """
 from __future__ import annotations
 
@@ -94,6 +109,13 @@ def direction_badge_html(v: str | None) -> str:
     return f'<span class="badge {cls}">{v}</span>'
 
 
+def actionable_badge_html(v: str | None) -> str:
+    if not v:
+        return '<span class="badge badge-n_a">—</span>'
+    cls = "badge-bad" if v == "Pass" else "badge-good" if v == "No Change" else "badge-neutral"
+    return f'<span class="badge {cls}">{v}</span>'
+
+
 def fmt_pnl(v: float | None) -> str:
     if v is None:
         return ""
@@ -129,6 +151,8 @@ def _row_to_json(r: pd.Series) -> dict:
         "exitVerdict": s(r.get("exit_verdict")),
         "exitReason": s(r.get("exit_reason")),
         "marketContext": s(r.get("market_context")),
+        "actionableAnalysis": s(r.get("actionable_analysis")),
+        "actionableVerdict": s(r.get("actionable_verdict")),
         "tags": [t.strip() for t in (r.get("tags") or "").split(",") if t.strip()],
         "realizedPnl": s(r.get("realized_pnl")),
     }
@@ -314,6 +338,8 @@ DETAIL_CSS = BASE_CSS + """
   .block { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 14px; }
   .block h2 { margin: 0 0 8px; font-size: 13px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
   .block p { margin: 0; }
+  .block.actionable { border-left: 3px solid var(--accent); }
+  .block.actionable p { white-space: pre-wrap; }
   .context { color: var(--muted); font-style: italic; font-size: 12.5px; margin-top: 8px; }
   .tags { margin-top: 10px; display: flex; gap: 6px; flex-wrap: wrap; }
   .pnl-line { font-size: 15px; margin-bottom: 14px; }
@@ -329,6 +355,11 @@ def render_detail_page(review: dict, chart_data: dict) -> str:
     tags_html = "".join(f'<span class="tag">{t}</span>' for t in review["tags"])
     pnl_label = "Unrealized (last snapshot)" if review["exitDate"] is None else "Realized P&L"
     context_html = f'<div class="context">{review["marketContext"]}</div>' if review["marketContext"] else ""
+    actionable_html = (
+        f'<div class="block actionable"><h2>Actionable analysis '
+        f'{actionable_badge_html(review.get("actionableVerdict"))}</h2><p>{review["actionableAnalysis"]}</p></div>'
+        if review.get("actionableAnalysis") else ""
+    )
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -355,6 +386,7 @@ def render_detail_page(review: dict, chart_data: dict) -> str:
   {context_html}
   <div class="tags">{tags_html}</div>
 </div>
+{actionable_html}
 
 <div class="chart-box" id="chart"></div>
 
@@ -422,6 +454,7 @@ INDEX_TEMPLATE = """<!doctype html>
     <select id="direction"><option value="">Direction: all</option></select>
     <select id="entryVerdict"><option value="">Entry verdict: all</option></select>
     <select id="exitVerdict"><option value="">Exit verdict: all</option></select>
+    <select id="actionableVerdict"><option value="">Fix: all</option></select>
     <span class="stat" id="stat"></span>
   </div>
 </header>
@@ -434,6 +467,7 @@ INDEX_TEMPLATE = """<!doctype html>
         <th data-key="entryDate">Entry / Exit</th>
         <th data-key="entryVerdict">Entry</th>
         <th data-key="exitVerdict">Exit</th>
+        <th data-key="actionableVerdict">Fix</th>
         <th data-key="realizedPnl">P&amp;L</th>
       </tr>
     </thead>
@@ -455,6 +489,11 @@ function directionBadge(v) {
   const cls = v === 'LONG' ? 'badge-good' : v === 'SHORT' ? 'badge-bad' : 'badge-neutral';
   return `<span class="badge ${cls}">${v}</span>`;
 }
+function actionableBadge(v) {
+  if (!v) return '<span class="badge badge-n_a">—</span>';
+  const cls = v === 'Pass' ? 'badge-bad' : v === 'No Change' ? 'badge-good' : 'badge-neutral';
+  return `<span class="badge ${cls}">${v}</span>`;
+}
 function fmtPnl(v) {
   if (v === null || v === undefined) return '';
   const cls = v >= 0 ? 'pnl-pos' : 'pnl-neg';
@@ -462,23 +501,25 @@ function fmtPnl(v) {
   return `<span class="${cls}">${sign}$${v.toFixed(2)}</span>`;
 }
 function populateFilters() {
-  const ev = new Set(), xv = new Set(), dir = new Set();
-  DATA.forEach(r => { if (r.entryVerdict) ev.add(r.entryVerdict); if (r.exitVerdict) xv.add(r.exitVerdict); if (r.direction) dir.add(r.direction); });
+  const ev = new Set(), xv = new Set(), dir = new Set(), av = new Set();
+  DATA.forEach(r => { if (r.entryVerdict) ev.add(r.entryVerdict); if (r.exitVerdict) xv.add(r.exitVerdict); if (r.direction) dir.add(r.direction); if (r.actionableVerdict) av.add(r.actionableVerdict); });
   const fill = (sel, set) => { [...set].sort().forEach(v => {
     const o = document.createElement('option'); o.value = v; o.textContent = v.replace(/_/g,' '); sel.appendChild(o);
   }); };
   fill(document.getElementById('entryVerdict'), ev);
   fill(document.getElementById('exitVerdict'), xv);
   fill(document.getElementById('direction'), dir);
+  fill(document.getElementById('actionableVerdict'), av);
 }
-function matches(r, q, ev, xv, dir, tag) {
+function matches(r, q, ev, xv, dir, av, tag) {
   if (ev && r.entryVerdict !== ev) return false;
   if (xv && r.exitVerdict !== xv) return false;
   if (dir && r.direction !== dir) return false;
+  if (av && r.actionableVerdict !== av) return false;
   if (tag && !r.tags.includes(tag)) return false;
   if (!q) return true;
   q = q.toLowerCase();
-  const hay = [r.underlying, r.symbol, r.entryReason, r.exitReason, r.marketContext, r.direction, ...r.tags]
+  const hay = [r.underlying, r.symbol, r.entryReason, r.exitReason, r.marketContext, r.direction, r.actionableVerdict, ...r.tags]
     .filter(Boolean).join(' ').toLowerCase();
   return hay.includes(q);
 }
@@ -487,7 +528,8 @@ function render() {
   const ev = document.getElementById('entryVerdict').value;
   const xv = document.getElementById('exitVerdict').value;
   const dir = document.getElementById('direction').value;
-  let rows = DATA.filter(r => matches(r, q, ev, xv, dir, activeTag));
+  const av = document.getElementById('actionableVerdict').value;
+  let rows = DATA.filter(r => matches(r, q, ev, xv, dir, av, activeTag));
   rows.sort((a, b) => {
     let av = a[sortKey], bv = b[sortKey];
     if (av === null || av === undefined) av = '';
@@ -511,6 +553,7 @@ function render() {
       <td>${badge(r.exitVerdict)}<div class="reason">${r.exitReason || ''}</div>
           ${r.marketContext ? `<div class="context">${r.marketContext}</div>` : ''}
           <div class="tags">${tagsHtml}</div></td>
+      <td>${actionableBadge(r.actionableVerdict)}</td>
       <td class="pnl">${fmtPnl(r.realizedPnl)}</td>
     `;
     tr.addEventListener('click', (e) => {
