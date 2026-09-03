@@ -1057,6 +1057,119 @@ def create_trade_review_table() -> None:
         conn.close()
 
 
+def create_pending_notes_table() -> None:
+    """Create journal_pending_notes if missing.
+
+    Staging area for trader notes given BEFORE the corresponding Flex data (and therefore the
+    journal_trade_reviews row) exists -- e.g. "I shorted X today because Y" given same-day, before
+    tonight's IBKR pull. Applied later by matching (underlying_symbol, note_date) against a new
+    review's (underlying_symbol, entry_date) and merging note_text into that review's
+    market_context; `applied`/`applied_review_id` track that so a note is only merged once.
+    """
+    conn = _get_conn()
+    try:
+        cur = conn.cursor()
+        cur.execute("""
+            CREATE TABLE IF NOT EXISTS journal_pending_notes (
+                id                 INT AUTO_INCREMENT PRIMARY KEY,
+                underlying_symbol  VARCHAR(32) NOT NULL,
+                note_date          DATE NOT NULL,          -- the trade date the note pertains to
+                note_text          TEXT NOT NULL,
+                applied            TINYINT(1) NOT NULL DEFAULT 0,
+                applied_review_id  INT,                     -- journal_trade_reviews.id once merged
+                created_at         TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                updated_at         TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+                INDEX idx_underlying_date (underlying_symbol, note_date),
+                INDEX idx_applied (applied)
+            )
+        """)
+        conn.commit()
+        cur.close()
+    finally:
+        conn.close()
+
+
+def add_pending_note(underlying_symbol: str, note_date: date, note_text: str) -> int:
+    """Stage a note for a trade not yet in journal_trade_reviews. Returns the new row's id."""
+    conn = _get_conn()
+    try:
+        cur = conn.cursor()
+        cur.execute(
+            "INSERT INTO journal_pending_notes (underlying_symbol, note_date, note_text) VALUES (%s, %s, %s)",
+            (underlying_symbol.upper(), note_date, note_text),
+        )
+        conn.commit()
+        note_id = cur.lastrowid
+        cur.close()
+    finally:
+        conn.close()
+    return note_id
+
+
+def get_pending_notes(applied: bool | None = False) -> pd.DataFrame:
+    """Query staged notes, by default only the unapplied ones. Pass applied=None for all."""
+    conn = _get_conn()
+    try:
+        sql = "SELECT * FROM journal_pending_notes"
+        params: list = []
+        if applied is not None:
+            sql += " WHERE applied = %s"
+            params.append(1 if applied else 0)
+        sql += " ORDER BY note_date, underlying_symbol"
+        return pd.read_sql(sql, conn, params=params)
+    finally:
+        conn.close()
+
+
+def mark_pending_note_applied(note_id: int, review_id: int) -> None:
+    conn = _get_conn()
+    try:
+        cur = conn.cursor()
+        cur.execute(
+            "UPDATE journal_pending_notes SET applied=1, applied_review_id=%s, updated_at=NOW() WHERE id=%s",
+            (review_id, note_id),
+        )
+        conn.commit()
+        cur.close()
+    finally:
+        conn.close()
+
+
+def apply_pending_notes() -> int:
+    """Merge unapplied staged notes into any journal_trade_reviews row matching
+    (underlying_symbol, entry_date == note_date) -- run this after building reviews for a new
+    day's trades so same-day notes given before the Flex pull land automatically. Prepends to
+    market_context (rather than overwriting) so it stacks with anything already written there.
+    Returns the number of (note, review) merges applied.
+    """
+    notes = get_pending_notes(applied=False)
+    if notes.empty:
+        return 0
+    conn = _get_conn()
+    applied = 0
+    try:
+        cur = conn.cursor()
+        for _, n in notes.iterrows():
+            cur.execute(
+                "SELECT id, market_context FROM journal_trade_reviews WHERE underlying_symbol=%s AND entry_date=%s",
+                (n["underlying_symbol"], n["note_date"]),
+            )
+            rows = cur.fetchall()
+            for review_id, existing_context in rows:
+                prefix = f"TRADER NOTE (given same-day, before the Flex pull): {n['note_text']}"
+                merged = prefix if not existing_context else f"{prefix}\n\n{existing_context}"
+                cur.execute(
+                    "UPDATE journal_trade_reviews SET market_context=%s, updated_at=NOW() WHERE id=%s",
+                    (merged, review_id),
+                )
+                conn.commit()
+                mark_pending_note_applied(int(n["id"]), review_id)
+                applied += 1
+    finally:
+        conn.close()
+    return applied
+
+
 def add_trade_review(
     underlying_symbol: str,
     symbol: str,
