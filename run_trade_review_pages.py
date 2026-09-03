@@ -77,9 +77,9 @@ LIGHTWEIGHT_CHARTS_SCRIPT = (
 
 BASE_CSS = """
   :root {
-    --bg: #0f1115; --panel: #161922; --border: #262b38; --text: #e6e9f0; --muted: #8b93a7;
-    --good: #34c98c; --bad: #ef6b6b; --neutral: #f0b556; --gray: #7d85a3; --accent: #5b8def;
-    --chip-bg: #1f2430;
+    --bg: #f7f8fa; --panel: #ffffff; --border: #e1e4ea; --text: #1a1d24; --muted: #6b7280;
+    --good: #157a4d; --bad: #c23b3b; --neutral: #a3690a; --gray: #5b6272; --accent: #3f6fd8;
+    --chip-bg: #eef1f6;
   }
   * { box-sizing: border-box; }
   body {
@@ -228,11 +228,11 @@ async def _build_daily_chart(client: TradierClient, underlying: str, entry_date:
     if entry_fills:
         avg = sum(x[1] for x in entry_fills) / len(entry_fills)
         markers.append({"time": entry_date.strftime("%Y-%m-%d"), "position": "belowBar",
-                         "color": "#34c98c", "shape": "arrowUp", "text": f"{symbol} entry ${avg:.2f}"})
+                         "color": "#157a4d", "shape": "arrowUp", "text": f"{symbol} entry ${avg:.2f}"})
     if exit_fills and exit_date:
         avg = sum(x[1] for x in exit_fills) / len(exit_fills)
         markers.append({"time": exit_date.strftime("%Y-%m-%d"), "position": "aboveBar",
-                         "color": "#ef6b6b", "shape": "arrowDown", "text": f"{symbol} exit ${avg:.2f}"})
+                         "color": "#c23b3b", "shape": "arrowDown", "text": f"{symbol} exit ${avg:.2f}"})
 
     note = None
     if asset_category == "OPT":
@@ -251,12 +251,12 @@ async def _build_intraday_chart(client: TradierClient, underlying: str, entry_da
         t, _ = entry_fills[0]
         avg = sum(x[1] for x in entry_fills) / len(entry_fills)
         markers.append({"time": _epoch(_floor_5min(t)), "position": "belowBar",
-                         "color": "#34c98c", "shape": "arrowUp", "text": f"{symbol} entry ${avg:.2f}"})
+                         "color": "#157a4d", "shape": "arrowUp", "text": f"{symbol} entry ${avg:.2f}"})
     if exit_fills:
         t, _ = exit_fills[-1]
         avg = sum(x[1] for x in exit_fills) / len(exit_fills)
         markers.append({"time": _epoch(_floor_5min(t)), "position": "aboveBar",
-                         "color": "#ef6b6b", "shape": "arrowDown", "text": f"{symbol} exit ${avg:.2f}"})
+                         "color": "#c23b3b", "shape": "arrowDown", "text": f"{symbol} exit ${avg:.2f}"})
     note = None
     if asset_category == "OPT":
         note = "Chart is the underlying's intraday price -- Tradier doesn't have usable intraday option premium history (trade-prints only). Markers show the option's actual fill times/prices."
@@ -313,20 +313,20 @@ function renderOneChart(cd, container) {
   }
   const chart = LightweightCharts.createChart(container, {
     width: container.clientWidth || 860, height: 300,
-    layout: { background: { color: '#12141c' }, textColor: '#8b93a7' },
-    grid: { vertLines: { color: '#262b38' }, horzLines: { color: '#262b38' } },
-    rightPriceScale: { borderColor: '#262b38' },
-    timeScale: { borderColor: '#262b38', timeVisible: cd.type === 'intraday', secondsVisible: false },
+    layout: { background: { color: '#ffffff' }, textColor: '#6b7280' },
+    grid: { vertLines: { color: '#e1e4ea' }, horzLines: { color: '#e1e4ea' } },
+    rightPriceScale: { borderColor: '#e1e4ea' },
+    timeScale: { borderColor: '#e1e4ea', timeVisible: cd.type === 'intraday', secondsVisible: false },
     crosshair: { mode: LightweightCharts.CrosshairMode.Normal },
   });
   const candleSeries = chart.addCandlestickSeries({
-    upColor: '#34c98c', downColor: '#ef6b6b', borderVisible: false,
-    wickUpColor: '#34c98c', wickDownColor: '#ef6b6b',
+    upColor: '#157a4d', downColor: '#c23b3b', borderVisible: false,
+    wickUpColor: '#157a4d', wickDownColor: '#c23b3b',
   });
   candleSeries.setData(cd.candles);
   if (cd.markers && cd.markers.length) candleSeries.setMarkers(cd.markers);
   if (cd.sma20 && cd.sma20.length) {
-    chart.addLineSeries({ color: '#5b8def', lineWidth: 2 }).setData(cd.sma20);
+    chart.addLineSeries({ color: '#3f6fd8', lineWidth: 2 }).setData(cd.sma20);
   }
   chart.timeScale().fitContent();
   if (cd.note) {
@@ -353,7 +353,7 @@ DETAIL_CSS = BASE_CSS + """
   .context { color: var(--muted); font-style: italic; font-size: 12.5px; margin-top: 8px; }
   .tags { margin-top: 10px; display: flex; gap: 6px; flex-wrap: wrap; }
   .pnl-line { font-size: 15px; margin-bottom: 14px; }
-  .chart-box { border: 1px solid var(--border); border-radius: 8px; padding: 10px; background: #12141c; margin-bottom: 8px; }
+  .chart-box { border: 1px solid var(--border); border-radius: 8px; padding: 10px; background: var(--panel); margin-bottom: 8px; }
   .chart-note { color: var(--muted); font-size: 11.5px; font-style: italic; margin-top: 6px; }
   .chart-empty { color: var(--muted); font-size: 12.5px; padding: 16px; }
   .chart-pair-label { font-size: 11px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin: 4px 0; }
@@ -431,7 +431,7 @@ SUMMARY_CSS = BASE_CSS + """
     color: var(--muted); padding: 6px 10px; border-bottom: 1px solid var(--border); white-space: nowrap;
   }
   tbody tr { border-bottom: 1px solid var(--border); cursor: pointer; }
-  tbody tr:hover { background: rgba(255,255,255,0.03); }
+  tbody tr:hover { background: rgba(0,0,0,0.03); }
   td { padding: 8px 10px; font-size: 13px; }
   td.ticker { font-weight: 600; white-space: nowrap; }
   td.dates { white-space: nowrap; color: var(--muted); font-size: 12.5px; }
@@ -445,13 +445,50 @@ def _strategy_rows(rows: list[dict], spec: dict) -> list[dict]:
     return [r for r in rows if spec["key"] in (r.get("tags") or []) and not (excl & set(r.get("tags") or []))]
 
 
+def _multileg_entry_premium(conn, underlying: str, entry_date: str) -> float | None:
+    """Total premium PAID to open a systematic multi-leg options structure (straddle, etc.):
+    finds the matched-timestamp cluster of >=2 distinct conids opening that day (the systematic-
+    strategy signature used throughout this project -- see [[project_daily_trade_journal]]) and
+    sums trade_price * |quantity| * 100 (options contract multiplier) across just those legs.
+    This is the "capital deployed" basis for a per-trade percent return. None if no fills found."""
+    df = pd.read_sql(
+        """SELECT conid, trade_datetime, quantity, trade_price FROM journal_trades
+           WHERE underlying_symbol=%s AND trade_date=%s AND asset_category='OPT'
+             AND open_close IN ('O','C;O')""",
+        conn, params=[underlying, entry_date],
+    )
+    if df.empty:
+        return None
+    best = None
+    for _, g in df.groupby("trade_datetime"):
+        if g["conid"].nunique() < 2:
+            continue
+        premium = float((g["trade_price"] * g["quantity"].abs()).sum() * 100)
+        if best is None or len(g) > best[0]:
+            best = (len(g), premium)
+    if best:
+        return best[1]
+    # No matched-timestamp cluster (single-leg day?) -- best-effort fallback: everything that day.
+    return float((df["trade_price"] * df["quantity"].abs()).sum() * 100)
+
+
+def _attach_pct_returns(conn, srows: list[dict]) -> None:
+    """Adds '_pctReturn' (realized/unrealized P&L as % of premium paid) to each row in place."""
+    for r in srows:
+        premium = _multileg_entry_premium(conn, r["underlying"], r["entryDate"])
+        pnl = r.get("realizedPnl")
+        r["_pctReturn"] = (pnl / premium * 100) if premium and pnl is not None else None
+
+
 def _strategy_stats(srows: list[dict]) -> dict:
     closed = [r for r in srows if r.get("exitDate")]
     open_ = [r for r in srows if not r.get("exitDate")]
     closed_pnls = [r["realizedPnl"] for r in closed if r.get("realizedPnl") is not None]
     open_pnls = [r["realizedPnl"] for r in open_ if r.get("realizedPnl") is not None]
+    closed_pcts = [r["_pctReturn"] for r in closed if r.get("_pctReturn") is not None]
     wins = [p for p in closed_pnls if p > 0]
     s_closed = pd.Series(closed_pnls, dtype="float64")
+    s_pcts = pd.Series(closed_pcts, dtype="float64")
     return {
         "n_total": len(srows),
         "n_closed": len(closed),
@@ -460,6 +497,8 @@ def _strategy_stats(srows: list[dict]) -> dict:
         "total_realized": s_closed.sum() if len(s_closed) else 0.0,
         "avg_realized": s_closed.mean() if len(s_closed) else None,
         "median_realized": s_closed.median() if len(s_closed) else None,
+        "avg_pct": s_pcts.mean() if len(s_pcts) else None,
+        "median_pct": s_pcts.median() if len(s_pcts) else None,
         "total_unrealized": sum(open_pnls),
     }
 
@@ -468,45 +507,62 @@ def _stat_cell(label: str, value: str) -> str:
     return f'<div class="stat-cell"><div class="label">{label}</div><div class="value">{value}</div></div>'
 
 
+def _fmt_pct(v: float | None) -> str:
+    if v is None:
+        return "—"
+    cls = "pnl-pos" if v >= 0 else "pnl-neg"
+    sign = "+" if v >= 0 else ""
+    return f'<span class="{cls}">{sign}{v:.1f}%</span>'
+
+
 def render_summary_page(rows: list[dict]) -> str:
-    blocks = []
-    for spec in STRATEGIES:
-        srows = _strategy_rows(rows, spec)
-        st = _strategy_stats(srows)
-        combined = st["total_realized"] + st["total_unrealized"]
-        cells = [
-            _stat_cell("Trades", str(st["n_total"])),
-            _stat_cell("Closed / Open", f'{st["n_closed"]} / {st["n_open"]}'),
-            _stat_cell("Win rate (closed)", f'{st["win_rate"]:.0f}%' if st["win_rate"] is not None else "—"),
-            _stat_cell("Total realized", fmt_pnl(st["total_realized"])),
-            _stat_cell("Avg / trade (closed)", fmt_pnl(st["avg_realized"]) if st["avg_realized"] is not None else "—"),
-            _stat_cell("Median / trade (closed)", fmt_pnl(st["median_realized"]) if st["median_realized"] is not None else "—"),
-            _stat_cell("Open (unrealized)", fmt_pnl(st["total_unrealized"])),
-            _stat_cell("Combined total", fmt_pnl(combined)),
-        ]
-        srows_sorted = sorted(srows, key=lambda r: r["entryDate"] or "")
-        if srows_sorted:
-            trow_html = "".join(
-                f'<tr onclick="location.href=\'trades/{r["detailFile"]}\'">'
-                f'<td class="ticker">{r["underlying"]}</td>'
-                f'<td class="dates">{r["entryDate"] or ""} &rarr; {r["exitDate"] or "open"}</td>'
-                f'<td>{badge_html(r.get("entryVerdict"))}</td>'
-                f'<td>{badge_html(r.get("exitVerdict"))}</td>'
-                f'<td class="pnl">{fmt_pnl(r.get("realizedPnl"))}</td>'
-                f"</tr>"
-                for r in srows_sorted
-            )
-            table_html = f"""<table>
-  <thead><tr><th>Ticker</th><th>Entry / Exit</th><th>Entry</th><th>Exit</th><th>P&amp;L</th></tr></thead>
+    conn = _get_conn()
+    try:
+        blocks = []
+        for spec in STRATEGIES:
+            srows = _strategy_rows(rows, spec)
+            _attach_pct_returns(conn, srows)
+            st = _strategy_stats(srows)
+            combined = st["total_realized"] + st["total_unrealized"]
+            cells = [
+                _stat_cell("Trades", str(st["n_total"])),
+                _stat_cell("Closed / Open", f'{st["n_closed"]} / {st["n_open"]}'),
+                _stat_cell("Win rate (closed)", f'{st["win_rate"]:.0f}%' if st["win_rate"] is not None else "—"),
+                _stat_cell("Total realized", fmt_pnl(st["total_realized"])),
+                _stat_cell("Avg / trade (closed)", fmt_pnl(st["avg_realized"]) if st["avg_realized"] is not None else "—"),
+                _stat_cell("Median / trade (closed)", fmt_pnl(st["median_realized"]) if st["median_realized"] is not None else "—"),
+                _stat_cell("Avg % return (closed)", _fmt_pct(st["avg_pct"])),
+                _stat_cell("Median % return (closed)", _fmt_pct(st["median_pct"])),
+                _stat_cell("Open (unrealized)", fmt_pnl(st["total_unrealized"])),
+                _stat_cell("Combined total", fmt_pnl(combined)),
+            ]
+            srows_sorted = sorted(srows, key=lambda r: r["entryDate"] or "")
+            if srows_sorted:
+                trow_html = "".join(
+                    f'<tr onclick="location.href=\'trades/{r["detailFile"]}\'">'
+                    f'<td class="ticker">{r["underlying"]}</td>'
+                    f'<td class="dates">{r["entryDate"] or ""} &rarr; {r["exitDate"] or "open"}</td>'
+                    f'<td>{badge_html(r.get("entryVerdict"))}</td>'
+                    f'<td>{badge_html(r.get("exitVerdict"))}</td>'
+                    f'<td class="pnl">{fmt_pnl(r.get("realizedPnl"))}</td>'
+                    f'<td class="pnl">{_fmt_pct(r.get("_pctReturn"))}</td>'
+                    f"</tr>"
+                    for r in srows_sorted
+                )
+                table_html = f"""<table>
+  <thead><tr><th>Ticker</th><th>Entry / Exit</th><th>Entry</th><th>Exit</th><th>P&amp;L</th><th>Return %</th></tr></thead>
   <tbody>{trow_html}</tbody>
 </table>"""
-        else:
-            table_html = '<div class="empty">No trades yet.</div>'
-        blocks.append(f"""<div class="strategy-block">
+            else:
+                table_html = '<div class="empty">No trades yet.</div>'
+            blocks.append(f"""<div class="strategy-block">
   <div class="strategy-name">{spec['label']}</div>
   <div class="stat-grid">{''.join(cells)}</div>
+  <div class="note">Return % = P&amp;L as a percent of premium paid to open the structure (capital deployed for that trade), not account equity.</div>
   {table_html}
 </div>""")
+    finally:
+        conn.close()
 
     return f"""<!doctype html>
 <html lang="en">
@@ -557,7 +613,7 @@ INDEX_TEMPLATE = """<!doctype html>
   }
   thead th:hover { color: var(--text); }
   tbody tr { border-bottom: 1px solid var(--border); vertical-align: top; cursor: pointer; }
-  tbody tr:hover { background: rgba(255,255,255,0.03); }
+  tbody tr:hover { background: rgba(0,0,0,0.03); }
   td { padding: 10px; font-size: 13px; }
   td.ticker { font-weight: 600; white-space: nowrap; }
   td.dates { white-space: nowrap; color: var(--muted); font-size: 12.5px; }
@@ -566,7 +622,7 @@ INDEX_TEMPLATE = """<!doctype html>
   .tags { margin-top: 4px; display: flex; gap: 4px; flex-wrap: wrap; }
   .tag { cursor: pointer; }
   .tag:hover { border-color: var(--accent); }
-  .tag.active { background: var(--accent); color: #0f1115; }
+  .tag.active { background: var(--accent); color: var(--panel); }
   .context { color: var(--muted); font-size: 12px; font-style: italic; }
   .empty { color: var(--muted); padding: 40px; text-align: center; }
 </style>
