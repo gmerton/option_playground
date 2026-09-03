@@ -134,6 +134,14 @@ def fmt_pnl(v: float | None) -> str:
     return f'<span class="{cls}">{sign}${v:,.2f}</span>'
 
 
+def fmt_date_compact(d: str | None) -> str:
+    """'2026-08-12' -> '8/12/26' (no leading zeros, 2-digit year)."""
+    if not d:
+        return ""
+    y, m, day = d.split("-")
+    return f"{int(m)}/{int(day)}/{y[2:]}"
+
+
 def detail_filename(review: dict) -> str:
     safe_ticker = re.sub(r"[^A-Za-z0-9]", "", review["underlying"]) or "X"
     d = review["entryDate"] or "unknown"
@@ -543,7 +551,8 @@ def render_summary_page(rows: list[dict]) -> str:
                 trow_html = "".join(
                     f'<tr onclick="location.href=\'trades/{r["detailFile"]}\'">'
                     f'<td class="ticker">{r["underlying"]}</td>'
-                    f'<td class="dates">{r["entryDate"] or ""} &rarr; {r["exitDate"] or "open"}</td>'
+                    f'<td class="dates">{fmt_date_compact(r["entryDate"])} &rarr; {fmt_date_compact(r["exitDate"]) or "open"}</td>'
+                    f'<td>{r.get("vehicle") or "—"}</td>'
                     f'<td>{badge_html(r.get("entryVerdict"))}</td>'
                     f'<td>{badge_html(r.get("exitVerdict"))}</td>'
                     f'<td class="pnl">{fmt_pnl(r.get("realizedPnl"))}</td>'
@@ -552,7 +561,7 @@ def render_summary_page(rows: list[dict]) -> str:
                     for r in srows_sorted
                 )
                 table_html = f"""<table>
-  <thead><tr><th>Ticker</th><th>Entry / Exit</th><th>Entry</th><th>Exit</th><th>P&amp;L</th><th>Return %</th></tr></thead>
+  <thead><tr><th>Ticker</th><th>Entry / Exit</th><th>Vehicle</th><th>Entry</th><th>Exit</th><th>P&amp;L</th><th>Return %</th></tr></thead>
   <tbody>{trow_html}</tbody>
 </table>"""
             else:
@@ -578,10 +587,13 @@ def render_summary_page(rows: list[dict]) -> str:
 <body>
 <a class="back" href="trade_reviews.html">&larr; All reviews</a>
 <h1>Strategy Performance</h1>
-<div class="sub">Aggregated from the reviewed book. Generated __GENERATED_AT__.</div>
+<div class="sub">
+  Aggregated from the reviewed book. Generated __GENERATED_AT__. &middot;
+  <a href="#top-bottom" style="color:var(--accent);">Jump to top/bottom trades &darr;</a>
+</div>
 <h2>Performance by strategy</h2>
 {''.join(blocks)}
-<h2>Top / bottom trades</h2>
+<h2 id="top-bottom">Top / bottom trades</h2>
 {top_bottom_html}
 </body>
 </html>
@@ -592,7 +604,8 @@ def _pnl_trade_row(r: dict) -> str:
     return (
         f'<tr onclick="location.href=\'trades/{r["detailFile"]}\'">'
         f'<td class="ticker">{r["underlying"]}</td>'
-        f'<td class="dates">{r["entryDate"] or ""} &rarr; {r["exitDate"] or "open"}</td>'
+        f'<td class="dates">{fmt_date_compact(r["entryDate"])} &rarr; {fmt_date_compact(r["exitDate"]) or "open"}</td>'
+        f'<td>{r.get("vehicle") or "—"}</td>'
         f'<td>{badge_html(r.get("entryVerdict"))}</td>'
         f'<td class="pnl">{fmt_pnl(r.get("realizedPnl"))}</td>'
         f"</tr>"
@@ -611,7 +624,7 @@ def _render_top_bottom(rows: list[dict], n: int = 10) -> str:
             return f'<div class="empty">{empty_msg}</div>'
         rows_html = "".join(_pnl_trade_row(r) for r in trades)
         return f"""<table>
-  <thead><tr><th>Ticker</th><th>Entry / Exit</th><th>Entry</th><th>P&amp;L</th></tr></thead>
+  <thead><tr><th>Ticker</th><th>Entry / Exit</th><th>Vehicle</th><th>Entry</th><th>P&amp;L</th></tr></thead>
   <tbody>{rows_html}</tbody>
 </table>"""
 
@@ -844,15 +857,18 @@ def _compute_directions(rows: list[dict]) -> None:
     """Adds 'direction' to each row in place: LONG/SHORT for single-instrument
     trades (from the actual opening fill's buy/sell, not stored anywhere else),
     or STRADDLE/CONDOR/SPREAD for systematic multi-leg structures, where a
-    single LONG/SHORT label would misrepresent the position."""
+    single LONG/SHORT label would misrepresent the position. Also adds 'vehicle',
+    a short human label (e.g. 'long stock', 'short put', 'long straddle') built
+    from that same buy/sell fact plus put_call for single-leg options trades."""
     conid_list = sorted({r["_conid"] for r in rows if r.get("_conid") is not None})
     first_fill = {}
+    first_pc = {}
     if conid_list:
         conn = _get_conn()
         try:
             placeholders = ",".join(["%s"] * len(conid_list))
             df = pd.read_sql(
-                f"""SELECT conid, trade_date, trade_datetime, buy_sell FROM journal_trades
+                f"""SELECT conid, trade_date, trade_datetime, buy_sell, put_call FROM journal_trades
                     WHERE conid IN ({placeholders}) AND open_close IN ('O', 'C;O')
                     ORDER BY conid, trade_date, trade_datetime""",
                 conn, params=conid_list,
@@ -860,21 +876,36 @@ def _compute_directions(rows: list[dict]) -> None:
         finally:
             conn.close()
         first_fill = df.groupby(["conid", "trade_date"])["buy_sell"].first().to_dict()
+        first_pc = df.groupby(["conid", "trade_date"])["put_call"].first().to_dict()
 
     for r in rows:
         tags = r.get("tags") or []
         if "straddle_screener" in tags:
             r["direction"] = "STRADDLE"
+            r["vehicle"] = "long straddle"
             continue
         if "iron_condor" in tags:
             r["direction"] = "CONDOR"
+            r["vehicle"] = "iron condor"
             continue
         if "systematic_spread_likely" in tags:
             r["direction"] = "SPREAD"
+            r["vehicle"] = "spread"
             continue
         conid, ed = r.get("_conid"), r.get("entryDate")
-        bs = first_fill.get((conid, pd.Timestamp(ed).date())) if conid is not None and ed else None
+        key = (conid, pd.Timestamp(ed).date()) if conid is not None and ed else None
+        bs = first_fill.get(key) if key else None
         r["direction"] = "LONG" if bs == "BUY" else ("SHORT" if bs == "SELL" else None)
+        side = "long" if bs == "BUY" else "short" if bs == "SELL" else None
+        if side is None:
+            r["vehicle"] = None
+        elif r.get("assetCategory") == "STK":
+            r["vehicle"] = f"{side} stock"
+        elif r.get("assetCategory") == "OPT":
+            pc = first_pc.get(key) if key else None
+            r["vehicle"] = f"{side} {'put' if pc == 'P' else 'call' if pc == 'C' else 'option'}"
+        else:
+            r["vehicle"] = None
 
 
 def main() -> None:
