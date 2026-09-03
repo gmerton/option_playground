@@ -57,7 +57,17 @@ from lib.journal.price_cache import get_daily_history_cached, get_intraday_bars_
 from lib.tradier.tradier_client_wrapper import TradierClient
 
 INDEX_OUT = Path("data/journal/trade_reviews.html")
+SUMMARY_OUT = Path("data/journal/summary.html")
 TRADES_DIR = Path("data/journal/trades")
+
+# Performance-by-strategy definitions for the summary page. A row matches a strategy if it
+# carries `tag` AND does not carry any tag in `exclude_tags` (used to split systematic runs of a
+# strategy from a discretionary trade that merely resembles one -- e.g. the PANW straddle is
+# tagged 'discretionary', not 'straddle_screener', precisely so it's excluded here automatically).
+# Add more entries as other systematic strategies (GLD/TLT/XLE spreads, etc.) get their own tag.
+STRATEGIES = [
+    {"key": "straddle_screener", "label": "Long Straddles (systematic)", "exclude_tags": ["discretionary"]},
+]
 
 LIGHTWEIGHT_CHARTS_SCRIPT = (
     '<script src="https://unpkg.com/lightweight-charts@4.1.3/dist/lightweight-charts.standalone.production.js"></script>'
@@ -400,6 +410,122 @@ renderChart(CHART_DATA, document.getElementById('chart'));
 """
 
 
+# ── Summary page (performance by strategy) ─────────────────────────────────
+
+SUMMARY_CSS = BASE_CSS + """
+  body { padding: 24px 28px 50px; }
+  a.back { color: var(--accent); text-decoration: none; font-size: 12.5px; }
+  a.back:hover { text-decoration: underline; }
+  h1 { font-size: 20px; margin: 0 0 4px; }
+  .sub { color: var(--muted); font-size: 12.5px; margin-bottom: 22px; }
+  h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin: 28px 0 10px; }
+  .strategy-block { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px; margin-bottom: 18px; }
+  .strategy-name { font-size: 15px; font-weight: 600; margin-bottom: 12px; }
+  .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 14px; margin-bottom: 4px; }
+  .stat-cell .label { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .03em; }
+  .stat-cell .value { font-size: 18px; font-variant-numeric: tabular-nums; margin-top: 2px; }
+  .note { color: var(--muted); font-size: 12px; font-style: italic; margin-top: 12px; }
+  table { border-collapse: collapse; width: 100%; margin-top: 14px; }
+  thead th {
+    text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: .04em;
+    color: var(--muted); padding: 6px 10px; border-bottom: 1px solid var(--border); white-space: nowrap;
+  }
+  tbody tr { border-bottom: 1px solid var(--border); cursor: pointer; }
+  tbody tr:hover { background: rgba(255,255,255,0.03); }
+  td { padding: 8px 10px; font-size: 13px; }
+  td.ticker { font-weight: 600; white-space: nowrap; }
+  td.dates { white-space: nowrap; color: var(--muted); font-size: 12.5px; }
+  td.pnl { white-space: nowrap; text-align: right; font-variant-numeric: tabular-nums; }
+  .empty { color: var(--muted); padding: 20px 0; }
+"""
+
+
+def _strategy_rows(rows: list[dict], spec: dict) -> list[dict]:
+    excl = set(spec.get("exclude_tags", []))
+    return [r for r in rows if spec["key"] in (r.get("tags") or []) and not (excl & set(r.get("tags") or []))]
+
+
+def _strategy_stats(srows: list[dict]) -> dict:
+    closed = [r for r in srows if r.get("exitDate")]
+    open_ = [r for r in srows if not r.get("exitDate")]
+    closed_pnls = [r["realizedPnl"] for r in closed if r.get("realizedPnl") is not None]
+    open_pnls = [r["realizedPnl"] for r in open_ if r.get("realizedPnl") is not None]
+    wins = [p for p in closed_pnls if p > 0]
+    s_closed = pd.Series(closed_pnls, dtype="float64")
+    return {
+        "n_total": len(srows),
+        "n_closed": len(closed),
+        "n_open": len(open_),
+        "win_rate": (len(wins) / len(closed_pnls) * 100) if closed_pnls else None,
+        "total_realized": s_closed.sum() if len(s_closed) else 0.0,
+        "avg_realized": s_closed.mean() if len(s_closed) else None,
+        "median_realized": s_closed.median() if len(s_closed) else None,
+        "total_unrealized": sum(open_pnls),
+    }
+
+
+def _stat_cell(label: str, value: str) -> str:
+    return f'<div class="stat-cell"><div class="label">{label}</div><div class="value">{value}</div></div>'
+
+
+def render_summary_page(rows: list[dict]) -> str:
+    blocks = []
+    for spec in STRATEGIES:
+        srows = _strategy_rows(rows, spec)
+        st = _strategy_stats(srows)
+        combined = st["total_realized"] + st["total_unrealized"]
+        cells = [
+            _stat_cell("Trades", str(st["n_total"])),
+            _stat_cell("Closed / Open", f'{st["n_closed"]} / {st["n_open"]}'),
+            _stat_cell("Win rate (closed)", f'{st["win_rate"]:.0f}%' if st["win_rate"] is not None else "—"),
+            _stat_cell("Total realized", fmt_pnl(st["total_realized"])),
+            _stat_cell("Avg / trade (closed)", fmt_pnl(st["avg_realized"]) if st["avg_realized"] is not None else "—"),
+            _stat_cell("Median / trade (closed)", fmt_pnl(st["median_realized"]) if st["median_realized"] is not None else "—"),
+            _stat_cell("Open (unrealized)", fmt_pnl(st["total_unrealized"])),
+            _stat_cell("Combined total", fmt_pnl(combined)),
+        ]
+        srows_sorted = sorted(srows, key=lambda r: r["entryDate"] or "")
+        if srows_sorted:
+            trow_html = "".join(
+                f'<tr onclick="location.href=\'trades/{r["detailFile"]}\'">'
+                f'<td class="ticker">{r["underlying"]}</td>'
+                f'<td class="dates">{r["entryDate"] or ""} &rarr; {r["exitDate"] or "open"}</td>'
+                f'<td>{badge_html(r.get("entryVerdict"))}</td>'
+                f'<td>{badge_html(r.get("exitVerdict"))}</td>'
+                f'<td class="pnl">{fmt_pnl(r.get("realizedPnl"))}</td>'
+                f"</tr>"
+                for r in srows_sorted
+            )
+            table_html = f"""<table>
+  <thead><tr><th>Ticker</th><th>Entry / Exit</th><th>Entry</th><th>Exit</th><th>P&amp;L</th></tr></thead>
+  <tbody>{trow_html}</tbody>
+</table>"""
+        else:
+            table_html = '<div class="empty">No trades yet.</div>'
+        blocks.append(f"""<div class="strategy-block">
+  <div class="strategy-name">{spec['label']}</div>
+  <div class="stat-grid">{''.join(cells)}</div>
+  {table_html}
+</div>""")
+
+    return f"""<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Strategy Performance</title>
+<style>{SUMMARY_CSS}</style>
+</head>
+<body>
+<a class="back" href="trade_reviews.html">&larr; All reviews</a>
+<h1>Strategy Performance</h1>
+<div class="sub">Aggregated from the reviewed book. Generated __GENERATED_AT__.</div>
+<h2>Performance by strategy</h2>
+{''.join(blocks)}
+</body>
+</html>
+"""
+
+
 # ── Index page ───────────────────────────────────────────────────────────────
 
 INDEX_TEMPLATE = """<!doctype html>
@@ -448,7 +574,7 @@ INDEX_TEMPLATE = """<!doctype html>
 <body>
 <header>
   <h1>Trade Reviews</h1>
-  <div class="sub">Entry/exit quality judged on facts at the time, not outcome. Click a row for its chart. Generated __GENERATED_AT__.</div>
+  <div class="sub">Entry/exit quality judged on facts at the time, not outcome. Click a row for its chart. Generated __GENERATED_AT__. &middot; <a class="back" href="summary.html" style="color:var(--accent);">Strategy performance &rarr;</a></div>
   <div class="controls">
     <input type="text" id="search" placeholder="Search ticker, reason, tags…">
     <select id="direction"><option value="">Direction: all</option></select>
@@ -666,10 +792,15 @@ def main() -> None:
 
     public_rows = [{k: v for k, v in r.items() if k != "_conid"} for r in rows]
     html = INDEX_TEMPLATE.replace("__DATA_JSON__", json.dumps(public_rows))
-    html = html.replace("__GENERATED_AT__", pd.Timestamp.now().strftime("%Y-%m-%d %H:%M"))
+    generated_at = pd.Timestamp.now().strftime("%Y-%m-%d %H:%M")
+    html = html.replace("__GENERATED_AT__", generated_at)
     INDEX_OUT.parent.mkdir(parents=True, exist_ok=True)
     INDEX_OUT.write_text(html)
-    print(f"Wrote {INDEX_OUT} (index) + {len(rows)} files in {TRADES_DIR}/")
+
+    summary_html = render_summary_page(rows).replace("__GENERATED_AT__", generated_at)
+    SUMMARY_OUT.write_text(summary_html)
+
+    print(f"Wrote {INDEX_OUT} (index) + {SUMMARY_OUT} (summary) + {len(rows)} files in {TRADES_DIR}/")
 
 
 if __name__ == "__main__":
