@@ -858,17 +858,28 @@ def _compute_directions(rows: list[dict]) -> None:
     trades (from the actual opening fill's buy/sell, not stored anywhere else),
     or STRADDLE/CONDOR/SPREAD for systematic multi-leg structures, where a
     single LONG/SHORT label would misrepresent the position. Also adds 'vehicle',
-    a short human label (e.g. 'long stock', 'short put', 'long straddle') built
-    from that same buy/sell fact plus put_call for single-leg options trades."""
+    a short human label (e.g. 'long stock', 'short put $150 (12 DTE)', 'long
+    straddle') built from that same buy/sell fact plus put_call/strike/expiry
+    for single-leg options trades. Generic multi-leg 'spread' rows are refined
+    to a precise vertical-spread name (e.g. 'bull put spread') by
+    _refine_spread_vehicles() afterward, once their legs are known.
+
+    No historical option delta is available (Tradier greeks aren't captured at
+    fill time, and there's no reliable historical-IV source for these dates --
+    see [[reference_options_daily_v3]]'s "IV lags price ~3mo" caveat), so
+    strike is the fallback used instead, same as the raw fill data itself."""
     conid_list = sorted({r["_conid"] for r in rows if r.get("_conid") is not None})
     first_fill = {}
     first_pc = {}
+    first_strike = {}
+    first_expiry = {}
     if conid_list:
         conn = _get_conn()
         try:
             placeholders = ",".join(["%s"] * len(conid_list))
             df = pd.read_sql(
-                f"""SELECT conid, trade_date, trade_datetime, buy_sell, put_call FROM journal_trades
+                f"""SELECT conid, trade_date, trade_datetime, buy_sell, put_call, strike, expiry
+                    FROM journal_trades
                     WHERE conid IN ({placeholders}) AND open_close IN ('O', 'C;O')
                     ORDER BY conid, trade_date, trade_datetime""",
                 conn, params=conid_list,
@@ -877,6 +888,8 @@ def _compute_directions(rows: list[dict]) -> None:
             conn.close()
         first_fill = df.groupby(["conid", "trade_date"])["buy_sell"].first().to_dict()
         first_pc = df.groupby(["conid", "trade_date"])["put_call"].first().to_dict()
+        first_strike = df.groupby(["conid", "trade_date"])["strike"].first().to_dict()
+        first_expiry = df.groupby(["conid", "trade_date"])["expiry"].first().to_dict()
 
     for r in rows:
         tags = r.get("tags") or []
@@ -890,7 +903,7 @@ def _compute_directions(rows: list[dict]) -> None:
             continue
         if "systematic_spread_likely" in tags:
             r["direction"] = "SPREAD"
-            r["vehicle"] = "spread"
+            r["vehicle"] = "spread"  # refined below once legs are looked up
             continue
         conid, ed = r.get("_conid"), r.get("entryDate")
         key = (conid, pd.Timestamp(ed).date()) if conid is not None and ed else None
@@ -903,9 +916,60 @@ def _compute_directions(rows: list[dict]) -> None:
             r["vehicle"] = f"{side} stock"
         elif r.get("assetCategory") == "OPT":
             pc = first_pc.get(key) if key else None
-            r["vehicle"] = f"{side} {'put' if pc == 'P' else 'call' if pc == 'C' else 'option'}"
+            kind = "put" if pc == "P" else "call" if pc == "C" else "option"
+            detail = ""
+            strike = first_strike.get(key) if key else None
+            if strike is not None and pd.notna(strike):
+                detail += f" ${float(strike):g}"
+            expiry = first_expiry.get(key) if key else None
+            if expiry is not None and pd.notna(expiry) and ed:
+                dte = (pd.Timestamp(expiry).date() - pd.Timestamp(ed).date()).days
+                detail += f" ({dte} DTE)"
+            r["vehicle"] = f"{side} {kind}{detail}"
         else:
             r["vehicle"] = None
+
+    _refine_spread_vehicles(rows)
+
+
+def _refine_spread_vehicles(rows: list[dict]) -> None:
+    """For rows generically labeled 'spread' (tag systematic_spread_likely), determines the
+    precise 2-leg vertical spread name (bull/bear call/put spread) from the actual opening legs.
+    Leaves the generic 'spread' label alone if a day's legs don't form a clean 2-leg, same-type
+    vertical (more/fewer legs, mixed put+call, or missing strike data)."""
+    targets = [r for r in rows if r.get("vehicle") == "spread"]
+    if not targets:
+        return
+    pairs = sorted({(r["underlying"], r["entryDate"]) for r in targets})
+    conn = _get_conn()
+    try:
+        legs_by_pair: dict[tuple, list[dict]] = {}
+        for underlying, entry_date in pairs:
+            df = pd.read_sql(
+                """SELECT conid, put_call, buy_sell, strike FROM journal_trades
+                   WHERE underlying_symbol=%s AND trade_date=%s AND asset_category='OPT'
+                     AND open_close IN ('O','C;O')""",
+                conn, params=[underlying, entry_date],
+            )
+            legs_by_pair[(underlying, entry_date)] = df.to_dict("records")
+    finally:
+        conn.close()
+
+    for r in targets:
+        legs = legs_by_pair.get((r["underlying"], r["entryDate"])) or []
+        legs = list({leg["conid"]: leg for leg in legs}.values())  # dedupe repeat fills
+        if len(legs) != 2 or legs[0]["put_call"] != legs[1]["put_call"]:
+            continue  # not a clean 2-leg vertical -- leave the generic label
+        pc = legs[0]["put_call"]
+        long_leg = next((l for l in legs if l["buy_sell"] == "BUY"), None)
+        short_leg = next((l for l in legs if l["buy_sell"] == "SELL"), None)
+        if long_leg is None or short_leg is None or long_leg is short_leg:
+            continue
+        long_k, short_k = float(long_leg["strike"]), float(short_leg["strike"])
+        if pc == "C":
+            r["vehicle"] = "bull call spread" if long_k < short_k else "bear call spread"
+        else:
+            r["vehicle"] = "bull put spread" if short_k > long_k else "bear put spread"
 
 
 def main() -> None:
