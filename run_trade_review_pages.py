@@ -437,6 +437,8 @@ SUMMARY_CSS = BASE_CSS + """
   td.dates { white-space: nowrap; color: var(--muted); font-size: 12.5px; }
   td.pnl { white-space: nowrap; text-align: right; font-variant-numeric: tabular-nums; }
   .empty { color: var(--muted); padding: 20px 0; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; align-items: start; }
+  @media (max-width: 700px) { .two-col { grid-template-columns: 1fr; } }
 """
 
 
@@ -564,6 +566,8 @@ def render_summary_page(rows: list[dict]) -> str:
     finally:
         conn.close()
 
+    top_bottom_html = _render_top_bottom(rows, n=10)
+
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -577,9 +581,50 @@ def render_summary_page(rows: list[dict]) -> str:
 <div class="sub">Aggregated from the reviewed book. Generated __GENERATED_AT__.</div>
 <h2>Performance by strategy</h2>
 {''.join(blocks)}
+<h2>Top / bottom trades</h2>
+{top_bottom_html}
 </body>
 </html>
 """
+
+
+def _pnl_trade_row(r: dict) -> str:
+    return (
+        f'<tr onclick="location.href=\'trades/{r["detailFile"]}\'">'
+        f'<td class="ticker">{r["underlying"]}</td>'
+        f'<td class="dates">{r["entryDate"] or ""} &rarr; {r["exitDate"] or "open"}</td>'
+        f'<td>{badge_html(r.get("entryVerdict"))}</td>'
+        f'<td class="pnl">{fmt_pnl(r.get("realizedPnl"))}</td>'
+        f"</tr>"
+    )
+
+
+def _render_top_bottom(rows: list[dict], n: int = 10) -> str:
+    """Ranks CLOSED trades (realized P&L only -- unrealized snapshots are too stale/noisy to
+    rank meaningfully) across the whole book, not just one strategy."""
+    closed = [r for r in rows if r.get("exitDate") and r.get("realizedPnl") is not None]
+    winners = sorted(closed, key=lambda r: r["realizedPnl"], reverse=True)[:n]
+    losers = sorted(closed, key=lambda r: r["realizedPnl"])[:n]
+
+    def table(trades: list[dict], empty_msg: str) -> str:
+        if not trades:
+            return f'<div class="empty">{empty_msg}</div>'
+        rows_html = "".join(_pnl_trade_row(r) for r in trades)
+        return f"""<table>
+  <thead><tr><th>Ticker</th><th>Entry / Exit</th><th>Entry</th><th>P&amp;L</th></tr></thead>
+  <tbody>{rows_html}</tbody>
+</table>"""
+
+    return f"""<div class="two-col">
+  <div class="strategy-block">
+    <div class="strategy-name">Top {n} winners (realized)</div>
+    {table(winners, "No closed trades yet.")}
+  </div>
+  <div class="strategy-block">
+    <div class="strategy-name">Top {n} losers (realized)</div>
+    {table(losers, "No closed trades yet.")}
+  </div>
+</div>"""
 
 
 # ── Index page ───────────────────────────────────────────────────────────────
