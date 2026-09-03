@@ -87,6 +87,13 @@ def badge_html(v: str | None) -> str:
     return f'<span class="badge badge-{v}">{v.replace("_", " ")}</span>'
 
 
+def direction_badge_html(v: str | None) -> str:
+    if not v:
+        return '<span class="badge badge-n_a">—</span>'
+    cls = "badge-good" if v == "LONG" else "badge-bad" if v == "SHORT" else "badge-neutral"
+    return f'<span class="badge {cls}">{v}</span>'
+
+
 def fmt_pnl(v: float | None) -> str:
     if v is None:
         return ""
@@ -336,7 +343,7 @@ def render_detail_page(review: dict, chart_data: dict) -> str:
 <div class="dates">{review['entryDate']} &rarr; {review['exitDate'] or 'open'}</div>
 <div class="pnl-line">{pnl_label}: {fmt_pnl(review['realizedPnl'])}</div>
 
-<div class="verdicts">{badge_html(review['entryVerdict'])} {badge_html(review['exitVerdict'])}</div>
+<div class="verdicts">{direction_badge_html(review.get('direction'))} {badge_html(review['entryVerdict'])} {badge_html(review['exitVerdict'])}</div>
 
 <div class="block">
   <h2>Entry</h2>
