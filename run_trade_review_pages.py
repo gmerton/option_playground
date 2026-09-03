@@ -412,6 +412,7 @@ INDEX_TEMPLATE = """<!doctype html>
   <div class="sub">Entry/exit quality judged on facts at the time, not outcome. Click a row for its chart. Generated __GENERATED_AT__.</div>
   <div class="controls">
     <input type="text" id="search" placeholder="Search ticker, reason, tags…">
+    <select id="direction"><option value="">Direction: all</option></select>
     <select id="entryVerdict"><option value="">Entry verdict: all</option></select>
     <select id="exitVerdict"><option value="">Exit verdict: all</option></select>
     <span class="stat" id="stat"></span>
@@ -422,6 +423,7 @@ INDEX_TEMPLATE = """<!doctype html>
     <thead>
       <tr>
         <th data-key="underlying">Ticker</th>
+        <th data-key="direction">Dir</th>
         <th data-key="entryDate">Entry / Exit</th>
         <th data-key="entryVerdict">Entry</th>
         <th data-key="exitVerdict">Exit</th>
@@ -441,6 +443,11 @@ function badge(v) {
   if (!v) return '<span class="badge badge-n_a">—</span>';
   return `<span class="badge badge-${v}">${v.replace(/_/g,' ')}</span>`;
 }
+function directionBadge(v) {
+  if (!v) return '<span class="badge badge-n_a">—</span>';
+  const cls = v === 'LONG' ? 'badge-good' : v === 'SHORT' ? 'badge-bad' : 'badge-neutral';
+  return `<span class="badge ${cls}">${v}</span>`;
+}
 function fmtPnl(v) {
   if (v === null || v === undefined) return '';
   const cls = v >= 0 ? 'pnl-pos' : 'pnl-neg';
@@ -448,21 +455,23 @@ function fmtPnl(v) {
   return `<span class="${cls}">${sign}$${v.toFixed(2)}</span>`;
 }
 function populateFilters() {
-  const ev = new Set(), xv = new Set();
-  DATA.forEach(r => { if (r.entryVerdict) ev.add(r.entryVerdict); if (r.exitVerdict) xv.add(r.exitVerdict); });
+  const ev = new Set(), xv = new Set(), dir = new Set();
+  DATA.forEach(r => { if (r.entryVerdict) ev.add(r.entryVerdict); if (r.exitVerdict) xv.add(r.exitVerdict); if (r.direction) dir.add(r.direction); });
   const fill = (sel, set) => { [...set].sort().forEach(v => {
     const o = document.createElement('option'); o.value = v; o.textContent = v.replace(/_/g,' '); sel.appendChild(o);
   }); };
   fill(document.getElementById('entryVerdict'), ev);
   fill(document.getElementById('exitVerdict'), xv);
+  fill(document.getElementById('direction'), dir);
 }
-function matches(r, q, ev, xv, tag) {
+function matches(r, q, ev, xv, dir, tag) {
   if (ev && r.entryVerdict !== ev) return false;
   if (xv && r.exitVerdict !== xv) return false;
+  if (dir && r.direction !== dir) return false;
   if (tag && !r.tags.includes(tag)) return false;
   if (!q) return true;
   q = q.toLowerCase();
-  const hay = [r.underlying, r.symbol, r.entryReason, r.exitReason, r.marketContext, ...r.tags]
+  const hay = [r.underlying, r.symbol, r.entryReason, r.exitReason, r.marketContext, r.direction, ...r.tags]
     .filter(Boolean).join(' ').toLowerCase();
   return hay.includes(q);
 }
@@ -470,7 +479,8 @@ function render() {
   const q = document.getElementById('search').value.trim();
   const ev = document.getElementById('entryVerdict').value;
   const xv = document.getElementById('exitVerdict').value;
-  let rows = DATA.filter(r => matches(r, q, ev, xv, activeTag));
+  const dir = document.getElementById('direction').value;
+  let rows = DATA.filter(r => matches(r, q, ev, xv, dir, activeTag));
   rows.sort((a, b) => {
     let av = a[sortKey], bv = b[sortKey];
     if (av === null || av === undefined) av = '';
@@ -488,6 +498,7 @@ function render() {
     const tagsHtml = r.tags.map(t => `<span class="tag ${t === activeTag ? 'active' : ''}" data-tag="${t}">${t}</span>`).join('');
     tr.innerHTML = `
       <td class="ticker">${r.underlying}${r.symbol !== r.underlying ? `<div class="reason">${r.symbol}</div>` : ''}</td>
+      <td>${directionBadge(r.direction)}</td>
       <td class="dates">${r.entryDate || ''} → ${r.exitDate || 'open'}</td>
       <td>${badge(r.entryVerdict)}<div class="reason">${r.entryReason || ''}</div></td>
       <td>${badge(r.exitVerdict)}<div class="reason">${r.exitReason || ''}</div>
@@ -520,6 +531,7 @@ document.querySelectorAll('thead th').forEach(th => {
 document.getElementById('search').addEventListener('input', render);
 document.getElementById('entryVerdict').addEventListener('change', render);
 document.getElementById('exitVerdict').addEventListener('change', render);
+document.getElementById('direction').addEventListener('change', render);
 populateFilters();
 render();
 </script>
@@ -551,6 +563,43 @@ async def _build_all(reviews: list[dict], no_charts: bool) -> None:
         conn.close()
 
 
+def _compute_directions(rows: list[dict]) -> None:
+    """Adds 'direction' to each row in place: LONG/SHORT for single-instrument
+    trades (from the actual opening fill's buy/sell, not stored anywhere else),
+    or STRADDLE/CONDOR/SPREAD for systematic multi-leg structures, where a
+    single LONG/SHORT label would misrepresent the position."""
+    conid_list = sorted({r["_conid"] for r in rows if r.get("_conid") is not None})
+    first_fill = {}
+    if conid_list:
+        conn = _get_conn()
+        try:
+            placeholders = ",".join(["%s"] * len(conid_list))
+            df = pd.read_sql(
+                f"""SELECT conid, trade_date, trade_datetime, buy_sell FROM journal_trades
+                    WHERE conid IN ({placeholders}) AND open_close IN ('O', 'C;O')
+                    ORDER BY conid, trade_date, trade_datetime""",
+                conn, params=conid_list,
+            )
+        finally:
+            conn.close()
+        first_fill = df.groupby(["conid", "trade_date"])["buy_sell"].first().to_dict()
+
+    for r in rows:
+        tags = r.get("tags") or []
+        if "straddle_screener" in tags:
+            r["direction"] = "STRADDLE"
+            continue
+        if "iron_condor" in tags:
+            r["direction"] = "CONDOR"
+            continue
+        if "systematic_spread_likely" in tags:
+            r["direction"] = "SPREAD"
+            continue
+        conid, ed = r.get("_conid"), r.get("entryDate")
+        bs = first_fill.get((conid, pd.Timestamp(ed).date())) if conid is not None and ed else None
+        r["direction"] = "LONG" if bs == "BUY" else ("SHORT" if bs == "SELL" else None)
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--no-charts", action="store_true", help="skip Tradier entirely (fast, text-only detail pages)")
@@ -560,6 +609,7 @@ def main() -> None:
     rows = [_row_to_json(r) for _, r in df.iterrows()]
     for r in rows:
         r["detailFile"] = detail_filename(r)
+    _compute_directions(rows)
 
     print(f"Building {len(rows)} detail pages" + (" (--no-charts)" if a.no_charts else " (Tradier calls, cached per-symbol)") + "...")
     asyncio.run(_build_all(rows, a.no_charts))

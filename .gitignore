@@ -39,3 +39,8 @@ data/carter_mastering_the_trade/backtests/opening_gap/gap_trades.csv
 
 # Keep small curated root files that happen to be .csv by adding them explicitly:
 #   git add -f <file>
+
+# Trade journal generated output (run_trade_review_pages.py / run_daily_journal.py) --
+# deployed to CloudFront via deploy_trade_journal.sh, not meant to live in git.
+# journal_trade_reviews (MySQL) is the source of truth; this is a rebuildable artifact.
+data/journal/
