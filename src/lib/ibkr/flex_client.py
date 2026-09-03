@@ -34,21 +34,24 @@ GET_URL = (
     "/Universal/servlet/FlexStatementService.GetStatement"
 )
 
-QUERY_ID      = "1415008"
+QUERY_ID      = os.environ.get("IBKR_FLEX_QUERY_ID", "1415008")   # trade confirms
+NAV_QUERY_ID  = os.environ.get("IBKR_FLEX_NAV_QUERY_ID", "1605053")   # activity/NAV
 VERSION       = "3"
 POLL_INTERVAL = 5    # seconds between polls
-MAX_POLLS     = 36   # give up after 3 minutes
+MAX_POLLS     = int(os.environ.get("IBKR_FLEX_MAX_POLLS", "36"))   # 36*5s = 3 min default
 
 HEADERS = {"User-Agent": "python-requests/2.0"}
 
 
 # ── Internal helpers ─────────────────────────────────────────────────────────
 
-def _send_request(token: str, from_date: str, to_date: str) -> str:
+def _send_request(token: str, from_date: str, to_date: str, query_id: str | None = None) -> str:
     """Kick off the Flex query. Returns the ReferenceCode string."""
     resp = requests.get(
         SEND_URL,
-        params={"t": token, "q": QUERY_ID, "fd": from_date, "td": to_date, "v": VERSION},
+        params={k: v for k, v in {
+            "t": token, "q": query_id or QUERY_ID,
+            "fd": from_date, "td": to_date, "v": VERSION}.items() if v is not None},
         headers=HEADERS,
         timeout=30,
     )
@@ -108,6 +111,7 @@ def fetch_flex_query(
     from_date: str | None = None,
     to_date: str | None = None,
     token: str | None = None,
+    query_id: str | None = None,
 ) -> str:
     """
     Fetch IBKR Flex query results as a raw XML string.
@@ -124,13 +128,13 @@ def fetch_flex_query(
     if not token:
         raise RuntimeError("IBKR_FLEX_TOKEN environment variable is not set")
 
-    today = date.today().strftime("%Y%m%d")
-    from_date = from_date or today
-    to_date   = to_date   or today
-
-    print(f"Submitting Flex query {QUERY_ID}  {from_date} → {to_date} ...")
+    # Leave dates as None to let the query's configured Period govern. Activity Flex
+    # queries with a set Period reject an explicit fd/td range with
+    # "Fail: Statement is not available". Trade-confirm queries accept a range.
+    span = f"{from_date} → {to_date}" if (from_date or to_date) else "query's own period"
+    print(f"Submitting Flex query {query_id or QUERY_ID}  {span} ...")
     request_ts = datetime.now()
-    ref_code = _send_request(token, from_date, to_date)
+    ref_code = _send_request(token, from_date, to_date, query_id)
     print(f"  ReferenceCode: {ref_code}  (submitted at {request_ts.strftime('%H:%M:%S')})")
 
     print("Retrieving statement ...")
@@ -169,13 +173,21 @@ def parse_flex_xml(xml_text: str) -> dict[str, pd.DataFrame]:
 
     records: dict[str, list[dict]] = {}
 
+    def collect(tag: str, attrib: dict) -> None:
+        records.setdefault(tag, []).append(attrib)
+
     for stmt in root.iter("FlexStatement"):
         for section in stmt:
-            for element in section:
-                tag = element.tag
-                if tag not in records:
-                    records[tag] = []
-                records[tag].append(element.attrib)
+            if len(section):
+                # Container section (e.g. <Trades><Trade .../></Trades>) — the
+                # rows are the children.
+                for element in section:
+                    collect(element.tag, element.attrib)
+            elif section.attrib:
+                # Leaf section that carries its data as its own attributes
+                # (e.g. <ChangeInNAV mtm="..." commissions="..."/>). Without this
+                # branch such sections parse to nothing at all.
+                collect(section.tag, section.attrib)
 
     return {tag: pd.DataFrame(rows) for tag, rows in records.items() if rows}
 

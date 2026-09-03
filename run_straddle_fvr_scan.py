@@ -132,7 +132,8 @@ async def quote_straddle(client, tkr, spot):
         return {"dte": dte, "cost": cost, "ba": max(v[0] for v in vals),
                 "oi": min(v[1] for v in vals),
                 "strikes": f"{legs['call']['strike']:g}C/{legs['put']['strike']:g}P"}
-    except Exception:
+    except Exception as e:
+        print(f"  (quote_straddle {tkr} failed: {type(e).__name__}: {e})")
         return None
 
 

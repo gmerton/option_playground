@@ -1,0 +1,19 @@
+{
+  "video_id": "9SgNXrWTefY",
+  "url": "https://www.youtube.com/watch?v=9SgNXrWTefY",
+  "title": "Which Charts Are Worth Trading? (Technical Analysis Test)",
+  "channel": "TheOneLanceB",
+  "channel_id": "UCzksXiC-Ju-DTIZmMiaOVfQ",
+  "stream_date": "2026-07-25",
+  "duration": "20:11",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

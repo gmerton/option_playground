@@ -1,0 +1,19 @@
+{
+  "video_id": "uMJXA_I9HDw",
+  "url": "https://www.youtube.com/watch?v=uMJXA_I9HDw",
+  "title": "Trading $100K Into $20 Million With Only One Setup | The VCP Strategy",
+  "channel": "TraderLion",
+  "channel_id": "UCMgOSW62URSxzPCcNXyohLw",
+  "stream_date": "2026-07-29",
+  "duration": "1:12:22",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

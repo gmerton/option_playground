@@ -17,14 +17,27 @@ Convention and the standing open question: [README.md](README.md).
 | [Risk framework (long-form)](principles/risk-framework-longform.md) | sizing / risk philosophy | 3/5 | partly EOD | no | ⚠ **Deflates the 6× thesis.** He caps position at **~25% of account independently of risk** ("at max 25%… I don't want to be 50% in just because my risk-reward"), so the stop-tightness lever is **bounded** — and my sim's 30% cap was if anything generous. But it isolates the lever the sims genuinely lack: **conviction risk varies 10× by grade** ($10k B → $100k A) while every backtest holds risk flat at 0.3%. ⟹ **test tier-weighted risk before buying minute bars.** |
 | [No man's land + bobblehead + epistemics](principles/no-mans-land-and-process.md) | veto / process | 3/5 | EOD ⭐ (the veto) | no | **Third independent statement against Carter's Squeeze**: contracting volatility = "price action that looks tradable but isn't" = stand aside. Second-order argument is the good one — paper cuts shrink risk tolerance so you *skip the real setup* (the Nikola story). Epistemics come out **well**: he defines TA as non-predictive EV-hunting, names mechanisms (big-order absorption, forced liquidation) and counterparties. ⚠ His critique that academic TA studies use "simple rules on stocks that are not in play" **partly lands against my own method.** |
 | [MTF, news, playbook, tape, scalping](principles/remaining-five.md) | mixed | 2.5/5 | 1 EOD ⭐ | no | ⭐ **Testable rule 3 sources now agree on**: fade outsized moves **only when there is NO fresh news** — he says it twice, Carter's veto list leads with news gaps, and the repo's gap study never conditioned on catalyst at all. Could rescue a setup currently written off at 1/5. Plus: intraday chart gets **80% weight** over daily when trading intraday; playbook step 2 = **"who's trapped"** (the counterparty question as a routine field — steal it). Tape/scalping ⚠ prop-dependent, parked. |
+| [Setup grading — chart nuance](principles/setup-grading-chart-nuance.md) | setup quality / entry grading | 2.5/5 | EOD ⭐⭐ | no | ⭐ **Most operationalizable setup material in the KB, weakest evidence in it.** 12 hand-drawn charts, 4 archetypes (breakout / trend-break bounce / turtle soup / **bouncy-ball short**), each graded with a reason. Discriminators the repo's scorecard does NOT have: **pullback depth vs the prior leg**, **range contraction before the trigger**, **level cleanliness**, and the "**price acceptance**" veto (tight bars at the lows = buyers absent = no play). ⭐ [18:03] states the tightness-vs-fragility mechanism — a quality pattern places its own invalidation close by. ⭐ [19:41] the **next video maps grade → size**: the missing first link to the 6× lever. ⚠ He drew every chart *including the outcomes*, then claims "this isn't retrospective hindsight analysis whatsoever" — zero numbers, zero base rates, 3 cherry-picked winners, course pitch mid-video. ⭐ **Collides productively with `crash_leader_reversion_study.md`** — he says decline *shape* discriminates, that study says *regime* does; event set already on disk to test both. |
 | [Anchored VWAP — trend context, not a level](principles/anchored-vwap.md) | regime / trend-context | 2/5 | EOD-testable | no | **Coherent mechanism, honestly presented — but NOT the entry-location tool this KB was opened to find.** He explicitly refuses to use (A)VWAP as a level: "I am not buying or selling simply because we get above or below that line." It is a directional veto (don't short above it unless capitulated) plus a swing trailing-exit structure. ⚠ Null hypothesis unaddressed: AVWAP is a volume-weighted MA with a hand-picked start, and nothing shows the weighting/anchor beats a fixed-lookback trend filter. ⭐ One fully mechanical rule extracts and is the cheapest open test in the repo. |
 
 ---
 
 ## Priority queue
 
-**21 videos ingested · ALL written up (2026-07-26/27)** (~348k chars). Two co-equal tracks — see [README.md](README.md).
-Nothing below is written up yet except AVWAP.
+**22 videos ingested · ALL written up** (2026-07-26/27, +`9SgNXrWTefY` 2026-08-02). Two co-equal
+tracks — see [README.md](README.md). Nothing below is written up yet except AVWAP.
+
+### ⚠ Next ingest — named by him, not yet in the manifest queue
+
+- [ ] **The setup-grading → sizing video** that `9SgNXrWTefY`@[19:41] forward-references ("grade
+      your setup A through D and directly influence your sizing"). This is the **most on-point
+      unwatched video for the standing open question** — it is the join between setup quality and
+      the 6× sizing lever. ⚠ **Not in `channel_videos.txt` — the manifest is stale.** `9SgNXrWTefY`
+      is line 1 (newest) and is dated 2026-07-25, so the manifest predates the sequel. The only
+      sizing titles in it (`eDdpTNB04ws`, `tIB72PAeZLU`) are both already written up and neither is
+      the A–D grading video. **Regenerate the manifest via yt-dlp before hunting for it.**
+- [ ] **Ariel Hernandez** — named at [19:19] alongside Kyle Williams as a practitioner of the same
+      nuance. Possible cross-source check; not currently in any KB.
 
 ### Track A — SETUPS (testable on data already on disk)
 

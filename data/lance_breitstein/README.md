@@ -69,6 +69,51 @@ Every principle gets sorted into one of:
 - **Process / unfalsifiable** — review routines, journaling, sizing discipline, psychology.
   Record faithfully, do not fake a backtest.
 
+## ⚠⚠ The timeframe problem — read this before testing ANY setup here
+
+**His bars have no fixed interval.** He says so directly (`9SgNXrWTefY`@[10:33]): "this could be
+two-minute bars, 15-minute bars, hour-long bars, or even daily bars — the concepts remain the
+same." Every setup in this KB inherits that ambiguity, and it is the single biggest obstacle to
+testing him honestly.
+
+**Why it is worse than it sounds.** His patterns are specified in **bar counts**, not in time or
+volatility: "one bar of consolidation is not enough," "prior bar highs," "tight bars," price
+"above the level, below the level." A bar-count specification is not a property of the price path
+— it is a property of the *(price path, bar interval)* pair. The same real-world path is a
+waterfall on daily bars and a slow grind on 1-minute bars. Two consequences:
+
+1. **Unbounded degrees of freedom.** A discretionary trader can nearly always find *some* interval
+   on which a given chart reads as an A setup. This is a larger hindsight risk than any of his
+   hand-drawn illustrations, because unlike the drawings it survives into live trading.
+2. **⚠ Evidence is asymmetric — do not over-claim from a null.** A daily-bar test that fails does
+   **not** refute him; he can always say he meant 2-minute bars. A daily-bar test that *passes* is
+   genuine confirmation. State this in the write-up whenever reporting a negative result.
+
+**The fix: restate every nuance in scale-free / ATR-normalized terms.** Most of his features
+survive the translation unchanged, which is itself evidence they are about structure rather than
+about bar size:
+
+| feature | scale-free? |
+|---|---|
+| pullback depth as % of the prior leg | ✅ already a ratio |
+| range contraction before the trigger | ✅ as recent ATR ÷ leg ATR |
+| "tight" bars / "price acceptance" bars | ✅ once divided by the instrument's own ATR |
+| progressively lower bounce highs (bouncy ball) | ✅ sequence property |
+| waterfall / acceleration | ✅ as last-third slope ÷ first-third slope |
+| **"one bar of consolidation is not enough"** | ⚠️ pure bar count — needs a time or ATR restatement |
+| **level cleanliness (count of crossings)** | ⚠️ rises mechanically with bar count — normalize per unit time |
+
+Only those last two genuinely resist it. And note that **he supplies the missing normalization
+himself without noticing**: the magnitude floor at `9SgNXrWTefY`@[06:11] — the move must have
+"covered ground" ($10, not 10 cents) — is a *magnitude-relative-to-normal-range* criterion, i.e.
+ATR units. His scope caveat implies exactly the normalization his pattern definitions lack.
+
+**⭐ This also converts the fractal claim from an escape hatch into a test.** Run identical
+normalized definitions at daily / 3-day / weekly resampled bars off `broad_history` (already on
+disk). If effect size is comparable across intervals, "the concepts remain the same" is supported
+and the intraday extrapolation gets much more credible. If it decays monotonically with interval,
+the claim is false and every intraday-only principle here needs re-reading.
+
 ## Layout
 
 ```

@@ -1,0 +1,375 @@
+[00:00] So recently I had a number of people ask me to create more videos on option strategies for small accounts. So in this video I'm going to share with you an S&P option strategy that you can
+
+[00:10] trade if you have a small account that is not only safe but it also has a high win rate and more importantly it is net profitable over the long term if you trade it correctly. So first of all
+
+[00:22] let's talk about the advantages of trading S&P. So there are a few main advantages. So the very first main advantage is that it's cash settle. That means to say there is no assignment of
+
+[00:33] shares. And this is something that I find a lot of beginners tend to do and I get a lot of emails is that they actually get assigned on their option trades. So maybe they have a short put
+
+[00:43] on or maybe they have some put credit spreads on and now their trade is in the money and that's where they get into assignment of shares and then they could get even into a margin call when they
+
+[00:53] don't have enough cash to actually fulfill the obligation to buy those shares. But with the S&P you don't have this problem anymore because there's no assignment of shares whatsoever.
+
+[01:02] Everything is cash settled. So as you can see over here at the bottom this is from the CBOE website. So you can go over there to take a look and you can see they say down here trading account
+
+[01:12] is being credited or debited in cash. So that's why it's called cash settle. Now the next main advantage is that this is the European style options which means to say it can only be assigned or
+
+[01:23] exercised at expiration. That means to say no early assignment. So this is where you can actually hold the trade all the way to expiration which is what a lot of beginners like to do. They like
+
+[01:34] to hold all the way to the expiration because they want to realize the full profit of the trade. Well, you can actually do that on SBX because there is no early assignment. And finally, this
+
+[01:44] is only if you are a US resident and that is you have potential favorable tax treatment. As you can see over here, this is mentioned as well in the table. Capital gains may benefit from the 60%
+
+[01:56] 40% tax treatment. So, if you're in the US, then definitely go ahead to their website and they will let you know a little bit more about this. Now, here's one very distinct difference is that if
+
+[02:06] you have a small account, then I would suggest that you start off trading the mini S&P first. So, the ticker symbol for the mini SPX is XSP. You don't want to start off trading the S&P first, but
+
+[02:18] start off with the mini S&P. And you might be wondering why trade the mini S&P first. Well, the main reason is because of the risk, the risk element here. So the mini S&P is onetenth the
+
+[02:31] size of the S&P. So that means that it's less riskier and you can actually position size better. So over here you can see that I have two option chain. On the left hand side is from S&P and the
+
+[02:42] right hand side is mini SPX. So I want to compare both of them to explain to you why it's less riskier if you have a small account trading on the mini S&P. So let's just say for example you want
+
+[02:53] to risk maximum of $350 per trade. So as you can see over here at the bottom, you can see that the max loss is pretty much the same. So what I've done is I've constructed a very simple strategy
+
+[03:05] called the put credit spread on both S&P and mini S&P to show you the difference. So first of all, they both have the same risk. So you might be saying, okay, Davis, since they are both the same
+
+[03:16] risk, why don't I just put it on the S&P? Well, here's the main difference. If you take a look at where the longp put strike is for the S&P, you can see it's 5475. Whereas on the mini SPX for
+
+[03:29] the same risk that you put on for the trade, your long put is being stretched further out to 543. So remember, mini SPX is onetenth the size of S&P. That means to say if you were to construct
+
+[03:41] the same exact spread on SPX, your long put would actually be at 5430. which means to say your risk is actually going to be much bigger. So what is the difference between these two? Well, the
+
+[03:54] difference is where your max loss is. And this is very important because you see over here for the S&P, let's just say the market actually goes down to 5480 and it goes to 548 or mini S&P. So
+
+[04:08] basically it's the same movement because mini SPX again just one10enth of S&P. So when the market comes down to 5480, all it takes for the S&P to have a max loss on the trade is just all the way down
+
+[04:21] here past 5475 at expiration. So at expiration, let's just say for example, it lands at 5470. On SPX, you're going to lose everything that you risk here, $350.
+
+[04:34] But what about the mini SPX? So mini SPX is going to be at 547 because remember again it's just onetenth the size. So if the market goes to 5470 on SPX it just means that on a mini XPX it actually
+
+[04:48] went to 547. So if it expired here on your S&P you lose everything that you risk 350 but on mini XPX you actually don't lose the everything because it's not past this long put down here. only
+
+[05:02] when it goes all the way past the longp put then you're going to have the max loss. So if the market just lands at 547 expiration then you're going to lose much lesser than the max loss. So this
+
+[05:13] is where a lot of beginners don't realize or don't understand as well. So on mini SPX if you're going to put on the trade with the same risk as S&P is going to be harder for the market to
+
+[05:24] take you out for a backs loss. Whereas for SPX, it just takes a very small move, right? 5475 equals to 547.5 on the mini XPX. So, it's a very small move for you to be taking the max loss.
+
+[05:37] And if you were to take a look at the max profit, as you can see on both sides here, you can see that the max profit in XPX is yes, it's more, but it's only slightly more. As you can see over here,
+
+[05:48] it's slightly more by $9 only. So for $9 more, you're actually taking on a much bigger risk because your longp put is so much closer to where the current market is compared to the mini SPX. So that is
+
+[06:01] why if you have a small account, start off with mini S&P first and then later on when your account grows and I would say maybe 50,000 and more, then you can start to go to the S&P. So if I was to
+
+[06:12] plot this on the chart, you can see visually how close the longp put is to where the current market price is. So you can see current market price is somewhere here. The market just have to
+
+[06:23] drop a little bit past the shortput for you to hit the max loss. Whereas on the mini S&P, it takes a much bigger move for you to eventually get a max loss on this. Okay. So now that I've got this
+
+[06:35] out of the way, some people might pull out the XSP option chain and then they will go, "But Davis, there's no liquidity because the open interest is so low." Right? You can take a look at
+
+[06:46] the option chain on the right hand side. You can see that some strike prices have zero open interest and a number of them have very few open interest as you can see one one two two. So this is where
+
+[06:58] many beginners think that because the open interest is low it's going to be very difficult to get filled or very difficult to exit the trade if you enter into the trade and that cannot be
+
+[07:08] further from the truth. So first of all in terms of the bid and r spread yes it is slightly wider than the spx but that doesn't mean you cannot get filled. So here's the very important point that you
+
+[07:20] need to understand. Many people have the misconception that if there's little to zero open interest you cannot enter or exit the trade when you want to. But that is definitely not true because the
+
+[07:31] open interest just indicates the number of outstanding options contracts that have been traded but haven't been settled or closed. But that doesn't mean you cannot enter exit because a number
+
+[07:40] of people the misconception really lies is that oh if only one or two people trade there that means it's very hard for me to get out because I don't have that many people to trade against when I
+
+[07:50] want to get out. But that's not true because why it's not you and I. It's not traders that actually take the opposite side of the trade that we want to put in but rather it's the market makers.
+
+[08:01] Market makers are the one that's taking our trades and they are obligated to take our trades. Now provided it's at a price that they are willing to buy and sell at. So this is very important
+
+[08:12] concept to understand when you're trading options is that this prices that you see down here the bid and r spread all these are being quoted by the market makers. That's why they're called market
+
+[08:22] makers. They make the market which also means these are the prices which they are willing to transact at. Which means to say let's say if you want to sell an option let's just say for example 541 I
+
+[08:35] want to sell the put option at 541 and you can see the open interest is zero does it mean I cannot get filled no it means that if you were to sell it at 8.43 43. That is the price you want.
+
+[08:46] Let's just say you're going to get filled. You're guaranteed to get filled because this is the price that the market makers have already said they're willing to buy from you. Now, the upside
+
+[08:56] is the price where they're willing to sell it to you at. So, you can see this is their spread. So, if you're willing to buy from them at 9.03 or you're willing to sell to them at 8.43, you
+
+[09:07] will get filled and it's actually already shown in the actual order ticket itself. So, as you can see over here, if I was to click the 541 at the bid and I was to sell this put option down here,
+
+[09:19] you notice that at the bottom there's this slider over here. You can see that on the left hand side it says net. This means natural. It means to say this is the price that you will be guaranteed to
+
+[09:29] get filled at that point of time if you lower your price to what the market makers is willing to take your price at. And on the other side of the spectrum, you have what is called OP. And mostly I
+
+[09:40] think this is what is called opposite just the opposite side of the price. And to me this is what I call the dream price because it is the price which you want to sell at right who wants to sell
+
+[09:50] at a much lower price. We always want to sell an option at a higher premium. So you can see down here 9.31 this is the dream price because you will never be filled over here. So this is where the
+
+[10:00] mid comes in. So usually when you place the order you start off with the mid but that doesn't mean you will get filled. So, this is where a lot of people make the mistake thinking, "Oh, I've already
+
+[10:10] placed this order at the mid at 9.10, but I don't get filled. I tried to lower it down by a few cents. Maybe I lower it down to $9, but I still don't got fuel. There's no liquidity in this
+
+[10:21] underlying." Well, that's not true. It's not that there's no liquidity. It's just that you haven't lowered your price enough for the market makers to be willing to take on your trade. They want
+
+[10:31] to make sure that it's at the price that they're able to actually hash their trades at. So that's what the market makers actually do. They don't actually trade against your positions. Instead,
+
+[10:40] what the market makers do is that they take your trade and then they will hedge it in the open market. So in order for them to actually do this to hedge, they want to make sure that the price is
+
+[10:51] according to their own you know algorithm. So everything is all done with an algorithm. It's not some person manually looking at the price and say I like the price maybe I want to take it.
+
+[11:00] No, all this is all happening very fast in split second. So they have the algorithms to know what is the price that they're willing to take your order at. So if you lowered the price and you
+
+[11:11] still haven't gotten filled, that means it's just not at a price where the market makers is willing to take on your trade. So if you look at this slider down here, it's like as though you want
+
+[11:21] to sell your car. Let's just say you have driven your car for quite some time and you want to upgrade to the new car. So you want to sell your existing car. for you, you always want the highest
+
+[11:33] price possible. So maybe you are going to say, "Okay, I want to sell this at $910." Let's just say I want to sell the car at $910. And then you want to sell it to a car dealer. So the dealer will
+
+[11:46] be saying to you, "No, the best price I want to buy is at $873. If you sell it to me at $873, I will buy the car from you." But you're going to say, "No, I don't want that." So this is
+
+[11:57] where the whole negotiation takes place. you're going to say, "Oh, I want 900." Then the dealer is going to say, "No, I want maybe 880." Then you might say, "You want 895?" So on and so forth. So
+
+[12:09] this is exactly what's happening in the option market as well. As you can see over here, this slider from the mid to the natural, you're going to get filled somewhere in between. So this is where
+
+[12:19] you want to adjust it low enough until finally as close as to the 8.73, but definitely you do not want to go to 8.73 because that's the worst price you can get filled at. So this is where
+
+[12:30] negotiation takes place and even though if you see open interest is low you still can get filled because remember again it's not you and I that's taking the opposite side of the trades is the
+
+[12:39] market makers. Okay hopefully I've settled this issue once and for all because I get quite a lot of question on this. So now let's move on to the strategy. So what is the strategy we're
+
+[12:49] going to trade on S&P or rather the mini S&P and that is the condor. So the condor comes in two types right? There are two flavors for the condor. First you have the put condor. So this is
+
+[13:01] where if you're a little bit more bearish, you think the market is going to go down. Then you put on the put condor. So the put condor consists of two simple strategies. On one end you
+
+[13:10] have the put credit spread at the bottom and then you have the put debit spread. So over here you might be saying, hm, this looks a little bit familiar. Doesn't this look like the iron condor?
+
+[13:21] And the answer is yes, but there's a slight difference. And the difference is that you notice this debit spread down here, this put debit spread, the width is actually much smaller than this put
+
+[13:33] credit spread down here because the whole idea here is to use the put credit spread to finance the purchase of the put debit spread. And when you do it this way, there's no risk to the upside.
+
+[13:44] So let me just show you an example of what I mean over here. So let's just say you sold the put credit spread for $1.37. So down here you receive $1.37. This is the premium that you have. So in
+
+[13:57] order to purchase this put debit spread, you want to spend within this amount down here. That means you don't want to go past $1.37. So let's just say you purchase this for about $1.7.
+
+[14:09] So what is the spillover? The spillover is that you have a net credit of 37. So what does this do? So what this does is that let's just say you are wrong on the market direction. The market doesn't go
+
+[14:20] down. Instead, it goes all the way up. Then guess what? You actually do not lose any money on this trade. You still get a profit. So over here you can see this is how the actual profit zone of
+
+[14:31] the condor looks like the put condor. So if the market was to go inside down here, this is where we have our maximum profit. We make the most down here. So how much do we make? I'm going to show
+
+[14:43] it to you later on when we go over to option chain. I'm going to construct it for you so you can see for yourself. But what you need to know is that because you have a put debit spread down here,
+
+[14:51] we actually want the market to go down. And on the other hand, down here, we have a put credit spread, which means we want the market to actually go up. So you can see we have a combination of two
+
+[15:00] different strategies down here to form this strategy over here. So ideally, what we want is for the market to come down and stay within this zone down here. And this zone can be pretty wide.
+
+[15:11] So if you've constructed in a way where it's pretty wide, then guess what? You're going to make the most inside this zone. And if the market was to go up above this put debit spread, let's
+
+[15:20] just say you're wrong on your direction. That's fine because you still have a profit. So the only place we will start to take a loss is if the market really goes all the way down. That means to go
+
+[15:31] past this put credit spread at the bottom. So if you construct this properly, it's going to be a high win rate. But at the same time, that doesn't mean that you're not going to have
+
+[15:39] losses. Don't forget if you have a high win rate, let's just say you have something like a 85% win rate. That means to say 85% of the time you will win. It also means that 15% of the time
+
+[15:50] you're going to lose. And from this structure down here, you're not going to lose as much, but you're definitely going to have loss. What's important is that over the long term, you're going to
+
+[15:59] be net profitable. Now, some people have asked me, "But Davis, can I do the opposite? Can I do the call condor?" And the answer is yes. And in fact, this is the other part of the strategy. So, in
+
+[16:09] this case, maybe you're slightly more bullish, then you can construct the call condor. So, it's very similar to the put condor and it's just the opposite. So, you have the call credit spread at the
+
+[16:20] top and you're going to use this to finance this call debit spread. So, again, very similar to the put condor and it's just the opposite. So, if you were to take a look at the max profit
+
+[16:30] zone down here. So, in case if the market actually crashes, then you don't have to worry as well because over here you still can be in a profit because you have a net credit of 37 cents on the
+
+[16:41] trade. So, one of the very common questions I get whenever I talk about this strategy is, "Davis, why use the condor instead of a simple credit spread? Why you want to make things so
+
+[16:53] complicated?" Well, it's because it's a different strategy. So, let me just compare the credit spread and the condor so you can see side by side. And there are actually
+
+[17:03] some advantages of the condor. So, in order to compare them, I need to compare apples to apples. That is where I need to construct both of them with the same max risk. So as you can see over here on
+
+[17:15] the left hand side I've constructed the put spread and you can see the max loss is $494 and on the right hand side I've constructed the put condor the max loss is about $4.89. So very close about $5
+
+[17:27] difference. So now that we have the max risk the same and we both are using the same short strike we can have some comparison down here. So the condor in this case actually have a few advantages
+
+[17:38] over the put spread. So the very first advantage is that it has a higher win rate. You can see over here if I was to construct the same short strike with the same risk the win rate is slightly
+
+[17:48] higher by about 2% as you can see in this case down here. Now you might be saying but David is 2% is so small. Yes, in one trade it's going to be very small. But if you're going to put this
+
+[17:57] over thousands of trades which you will eventually have if you continue to trade this 2% edge can actually be pretty big. Because if you think about it that's what the casino business is about.
+
+[18:07] Because the casino business all their games they have a very slight edge over the player. But this slight edge if you were to play out over a large sample size is going to be net profitable for
+
+[18:18] them. So similarly over here although it's 2% it can be a big difference over the long term. Now next it's also harder to hit the max loss. So remember I already made the comparison earlier with
+
+[18:30] the S&P and the mini S&P. This is similar as well because if you take a look at the put spread down here, the long put is at 524 for us to construct the risk of about $490.
+
+[18:41] But on the put condor for us to construct the same risk, we can actually stretch our long put a little bit further away to 5:1. So this is about three points away. So it makes it
+
+[18:52] slightly harder to hit the max loss with the put condor. And also it has a higher max profit. So this is the big key difference between the put spread and the put condor. So you can see over here
+
+[19:04] the put spread you notice the max profit is only $106. But if you use the put condor and you have the embedded put debit spread you notice that the max profit is so much
+
+[19:15] higher than the put spread. So when you have a higher max profit this also translate to a better risk-to-reward ratio. So this was what I was saying earlier. Even though if you lose, you
+
+[19:27] don't lose that much compared to how much you can possibly make when you make the max profit on the trade. So you can see over here the max loss and the max profit, the risk-to-reward is roughly
+
+[19:39] almost one is to one. Whereas if you were to take a look at the put spread over here, you can see that you know you're risking $500 about there to make only about $100. So it's not that good
+
+[19:50] of a risk-to-reward compared to the put condor. And that is why generally the put condor can be a better trade compared to the put spread if you compare side to side. Now of course they
+
+[20:00] are both different strategies. That doesn't mean that you totally don't put on the put spread. The put spread is if you are very bullish. If you think that the market is going to keep going all
+
+[20:08] the way up then you put on the put spread. But if you're uncertain or you're a little bit bearish then you can actually put on the put condor because you do have quite a good protection in
+
+[20:17] this embedded debit spread. Now next you might be asking but Davis what about the iron condor? If you compare it to the iron condor, you know, are there still advantages as well? And the answer is
+
+[20:27] yes. So, while the iron condor actually has a wider max profit zone because it's stretched out much further past the current uh market price, the condor actually still have some advantages. And
+
+[20:38] the advantages are actually pretty similar. As you can see over here, first thing you notice that the pop is so much smaller for the iron condor if I was to construct using the same short put
+
+[20:49] spread. And then on the call spread side I'm going to use the same delta that I used for this short put. So if you construct it in that manner and you compare the risk right the same amount
+
+[20:59] of risk then what you notice is that the win rate pales in comparison to the put condor. At the same time if you take a look at the risk-to-reward ratio the risk-to-reward ratio also is still not
+
+[21:10] as good as the put condor. Now you might be thinking but Davis this might not be a fair comparison because they are you know the pop is different. So what if you compare the iron condor with the
+
+[21:19] same pop? So that's what I did. So what I've done is that I've adjusted the iron condor now. So that the pop is similar to the put condor. So as you can see the iron condor is about 72% put condor
+
+[21:29] slightly above. But take a look at the risk-to-reward. You can see that the risk-to-reward again is still not as favorable. You can see the risk-to-reward for the iron condor is
+
+[21:38] roughly 1 is to5 whereas the put condor again pretty much close to 1 is to1. Okay. So, now that I've got the comparisons out of the way, let's head on over to the option chain and I'm
+
+[21:48] going to show you how to construct it because it's a very versatile construct whereby you can change it to get the desired kind of structure that you want. By the way, if you like this video so
+
+[21:57] far, please subscribe and also click the thumbs up button and also do get your free copy of the options income blueprint where I share the top three options strategies that help you
+
+[22:06] generate a consistent income each month trading just one to two hours a day. Right? So, if you want to go ahead to get this copy, just head on over to optionswithdavis.com/bloopprint.
+
+[22:16] All right, back to the video. Okay, so now I'm here in my option chain. So, we're going to be constructing the put condor and it is going to be pretty simple once you understand the different
+
+[22:26] parts there is to this strategy. So, let me just draw out the P&L graph so you have an idea how it looks like. So this is actually the P&L graph for the put condor and this line which I'm drawing
+
+[22:38] down here is the $0 line which means to say anything that is above this line that you see on this graph down here is in a profit. All right. So I'm just going to put a all right let me just put
+
+[22:50] a plus sign down here and anything that's below this zero line obviously is going to be in a loss. So the line which I'm drawing down here this dotted line is where the break even is and this line
+
+[23:02] over here on the right hand side this is where the market price is. So you notice that there are actually four legs for this strategy. So how we're going to construct it basically is we are going
+
+[23:13] to have a credit spread a put credit spread which is this two points down here. This is where you have the short put all right and then here is the long put. So you notice the width is bigger
+
+[23:24] than the debit spread on the right hand side. So what we're going to do is we're going to receive the credit for putting on this uh put credit spread here. And from there part of this credit is going
+
+[23:33] to be used to finance this purchase of a smaller debit spread. Right? So this is the debit spread. This is the short put. And then this will be the long put. So I'm going to show you on the option
+
+[23:43] chain later. But I just want you to see a visual of how this looks like because when you see this, you will realize right that it is actually a pretty high win rate strategy. In fact, it can go up
+
+[23:54] to like 90 90 plus% uh depending on what you want for this strategy. Right? If you want a very high win rate, you can certainly craft. So, and all it comes down to is where you decide this short
+
+[24:05] put down here. So, what is the delta that we're going to go for? So, there is a range for you to choose from that is not just one. So for example, uh let me just remove all these drawings first. So
+
+[24:17] if you want to be a little bit more aggressive, you want to get a little bit more premium, more max profit out of this uh max profit zone, which I just showed you just now, which is the 10th,
+
+[24:26] then you can go for a higher delta, right? Maybe you want to go for 15 or even 20 delta. But if you want to make it a little bit more conservative where you want to prioritize the win rate, you
+
+[24:36] want a higher win rate and a lower chance to get into the max lo zone, then you can consider the lower deltas as well. So for just this uh example, right, this video I'm just going to
+
+[24:46] choose maybe somewhere around 700 as the strike price, right? So this will be the short put uh for the credit spread side. Now we need to construct the longput side for this credit spread. So how do
+
+[24:59] we do that? How do we know where are we to construct this long put? So a very simple rule of thumb basically just comes down to what is the max risk you want for this trade. So let's say for
+
+[25:11] example your max risk for this trade you want to put on say $1,000 as an example. All right. So let's say for example $1,000 is the max risk for this trade. I'm just going to put down here 1K. This
+
+[25:26] will be the max risk. Then all you got to do is to adjust uh the strikes accordingly. So 1k risk for this trade basically you're looking at somewhere around 10 11 points wide. So 700 I'm
+
+[25:38] just going to go down to around $6.90. Right? You can just confirm this by looking at the max loss down here. Right? As you can see the max loss is about $951 which is pretty much around
+
+[25:49] $1,000. So this is how we define the max risk for this trade. Now let's say for example you have a smaller account. Let's say you do have $1,000. Let's say maybe it's going to be say $700, right?
+
+[26:01] Say $700. Then all you got to do is just adjust accordingly, which is where we adjust the long put side. So you're going to just shift it down until you finally see around 700 bucks. As you can
+
+[26:12] see over here, it is 759. So 759 is somewhere just slightly above 700. And uh it will reduce again once we construct the debit spread. Okay. So now that we have constructed this uh credit
+
+[26:26] spread site, the next thing to do is to construct the debit spread. So one thing I want you to take a look at is this credit over here. So you notice down here that there is a 40 cents credit.
+
+[26:36] Now we are going to use part of this credit to finance the purchase of a debit spread. So if I was to go all the way to the at the money, I'm going to construct my debit spread over here. And
+
+[26:48] the reason I want to do this is because I want to have as wide of a 10 as possible whereby uh at the current market price if the market comes down I do have the chance for it to enter into
+
+[26:58] the 10. So as I've drawn the P&L curve just now for you to see this is where the debit spread is. Okay. So this is where the current market price is. So if I construct a debit spread right at the
+
+[27:10] money, which means to say from this point when we construct this uh trade, if the market just drops and let's just say it, you know, ends up here at uh expiration, then we're going to have the
+
+[27:22] profit. Now question is, can I adjust this uh tent or rather this debit spread to be further out of money? That means it turns out to be something like this instead. So you can see this is a
+
+[27:33] slightly different construct from the one above, but essentially it's kind of the same. So what we're doing is just we're just shifting this in. So if we shift this in, what will happen is that
+
+[27:42] we can have a higher max profit. All right? So if you compare these two, this one will have a slightly lower max profit compared to this one, but this one will have a bigger or a wider max
+
+[27:56] profit zone for you to enter into it, right? For a chance for you to actually get a max profit. So as you can see, it is a trade-off. So which one you want to go for really depends on what it is that
+
+[28:05] you want. So let us construct this. So I'm going to construct one that is at the money and I'm going to show you how to adjust it so that you know uh how you going to make it so that there's no risk
+
+[28:14] to the upside and it has a high win rate. Okay. So I'm going to construct the debit spread. All right. I'm going to construct one that is 770 and start off with 769. Okay. So you can see over
+
+[28:24] here that we have constructed a 1.1 white debit spread and then there is roughly about 5 cents credit and the max loss is 695. So this is how I will construct it uh based off of uh this
+
+[28:36] risk per trade that we have. So the max risk is $700, right? So 5 cents per credit is pretty fine because uh this is where we're going to have no risk to the upside. And take a look at the pop down
+
+[28:46] here. You can see the pop is about 94%. So this is what I mean by you're able to get a pretty high win rate. Now if you can have slightly more risk per trade, you can adjust the trade slightly more
+
+[28:59] defensive. So what do I mean by more defensive? That means to say you can actually have a further away strike price for your credit spread. So for example, if based on the current $700,
+
+[29:11] if I want to shift it to say 695 strike price, right? Let me just adjust this to until we reach about 700 max loss. You notice that we're not getting any uh credit for this, right? Which is not
+
+[29:22] exactly what we want. Uh we want to at least have some credit so that there's no risk to the upside. So that means to say this debit spread down here can't actually kind of make this work because
+
+[29:32] this is the mid price. If we want to get filled uh most likely is that we're going to get filled lower. You have to give up a few cents in order to get filled, right? Because the spread on XSP
+
+[29:42] is not exactly the tightest. So you do have to make some leeway when you want to eventually get filled. Okay. So over here what we want to do to make this work is that we may have to shift this
+
+[29:52] further out of the money as you can see over here. Right? You can see once I shift this further out the money I'm going to get some credit. So this is where adjusting the strike prices uh is
+
+[30:02] where you want to you know spend time doing to see the kind of construct you get. So you can see the further I push it out of the money the more credit I'm going to get to make this structure
+
+[30:11] work. So there are a few different ways that you can do this. So the thing I was telling you about uh about increasing this risk per trade. So let's say for example I have 1K. Now I can actually
+
+[30:21] make it more defensive by shifting this further out of the money. As you can see the short put strike price we have now is below the 700 which we initially used which means to say you're going to have
+
+[30:33] you know uh a lower chance a relatively slightly lower chance for you to get uh the max loss. And over here the debit spread we can actually try and get it back at the at
+
+[30:44] the money uh point where the current market price is. All right. So one thing we haven't adjusted is to the new risk per trade. So you can see the max loss is 700. So how can we adjust the risk
+
+[30:55] per trade so that you know we can maximize the buying power of what we plan to use. So all you got to do is just adjust this long put down here. So as you adjust this you can see that the
+
+[31:05] max loss is increasing. So there you go. All right. So we have increased this to close to $1,000 which works for this structure. And since we still have some credit, we can actually just push this
+
+[31:17] back to at the money. And there we go. We're going to have a net credit. So this is how you actually construct the put condor. Now, at the start, you might feel a little bit confused, but once you
+
+[31:27] start to play around the strikes, you know, just analyze it, just shift the strikes around and take a look at how it actually affects your max loss, your max profit, as well as the credit and the
+
+[31:37] pop. Then you will find a way to make this eventually work out for you. So remember again there are a few ways to do this structure. If you want it to be a little bit more defensive then this is
+
+[31:47] where you might want to shift it a little bit lower where the credit spread is lower. But if you want it to be a little bit more aggressive where you get more max profit in the tent then you
+
+[31:56] want to shift it higher. So let me just show it to you. So this structure down here we have a max profit of $111 a,000 max risk. Now what if we shift this much higher? Let's say I'm pretty
+
+[32:08] aggressive. Let me shift this to let's say 20 deltas. So, I'm going to shift the long put accordingly. Remember, very important that you shift the long put as well for the put credit spread side.
+
+[32:17] Otherwise, this is what you're going to see. You're going to see your max loss is going to be so huge. So, always double check your numbers before you send in the trade. Otherwise, you're
+
+[32:25] going to be in for a big shock if you didn't realize that the max loss have increased because you forgot to adjust this long put side. So, I'm going to shift this. All right. So, $1,7 is
+
+[32:36] around there. The $1,000 risk. Now, take a look at our max profit. Our max profit has gone from 100 slightly over 100 bucks 111 I think now it's 193 and guess what we can even increase this further
+
+[32:50] by adjusting the uh debit spread to lower the credit up front. All right so if I was to shift this there we go you can see now we have $256 same risk right even slightly lower now
+
+[33:01] let's see whether can we push this for even more max profit inside the 10. There we go. You can see the max profit right now is $322 and the max loss is $878. By adjusting this debit spread,
+
+[33:14] the bigger the debit spread, the lower the max loss is going to be based on the spread width which we have chosen. Now, if you want to just bring this back to the 1K again, all you got to do just
+
+[33:24] shift this out. All right, so I'm going to shift this to something like this. And there we go. So, initially we had about $111 max profit and about a,000 max loss. Now we have about $300 in max
+
+[33:37] profit [snorts] and close to about $1,000 in max loss. So as you can see this is the trade-off. The previous structure we had a lower max profit but we had a higher pop of around 90 plus%.
+
+[33:49] But for this we have a higher max profit but we have a lower pop. So at the end of the day it really comes down to what you want for your structure. And it is very very versatile. All you got to do
+
+[33:59] is just shift the strike prices to find the structure that you want.

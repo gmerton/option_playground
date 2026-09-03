@@ -1,0 +1,19 @@
+{
+  "video_id": "wNaiAmbrLLs",
+  "url": "https://www.youtube.com/watch?v=wNaiAmbrLLs",
+  "title": "The ONE Options Strategy I will ALWAYS have in my account",
+  "channel": "Options With Davis",
+  "channel_id": "UC8V7hO071gTZezX_YqF_YCw",
+  "stream_date": "2026-08-08",
+  "duration": "34:08",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

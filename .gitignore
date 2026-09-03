@@ -29,3 +29,13 @@ data/carter_mastering_the_trade/backtests/risk_architecture/polygon_history/
 
 # Per-trade dumps (rebuild by rerunning the study that emits them)
 data/carter_mastering_the_trade/backtests/opening_gap/gap_trades.csv
+
+# ── Root-level backtest/study output (regenerable — do NOT commit) ────────────
+# ~148MB of these got staged on 2026-08-08. Every one rebuilds from a script that
+# IS committed (run_track2_pull.py, run_xsp_spread_v2.py, run_calendar.py, ...).
+# Scoped to the repo root on purpose: 237 CSVs under data/ and backtests/ are
+# curated inputs or published results and stay tracked.
+/*.csv
+
+# Keep small curated root files that happen to be .csv by adding them explicitly:
+#   git add -f <file>

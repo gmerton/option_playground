@@ -723,3 +723,395 @@ def upsert_trades(df: pd.DataFrame) -> int:
         conn.close()
 
     return affected
+
+
+# ── Daily trade journal (run_daily_journal.py) ─────────────────────────────────
+#
+# Separate from `trades` above: that table is fed by the trade-confirms Flex
+# query (id 1415008) and its upsert_trades() expects that query's schema
+# (orderID, execID, amount, commission, price, ...). The NAV/Activity query
+# (id 1605053) used by the journal has a different Trade section shape — no
+# orderID/execID/amount/commission, tradePrice instead of price — plus an
+# OpenPosition section the trade-confirms query doesn't have at all. These
+# journal_* tables mirror that query's own schema rather than force-fitting it
+# into `trades`. Expect to adjust these as the journaling routine matures.
+
+def create_journal_tables() -> None:
+    """Create journal_nav, journal_trades, journal_open_positions if missing."""
+    conn = _get_conn()
+    try:
+        cur = conn.cursor()
+        cur.execute("""
+            CREATE TABLE IF NOT EXISTS journal_nav (
+                report_date  DATE PRIMARY KEY,
+                nav          DECIMAL(14,2),
+                day_pnl      DECIMAL(14,2),
+                created_at   TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            )
+        """)
+        cur.execute("""
+            CREATE TABLE IF NOT EXISTS journal_trades (
+                trade_id          BIGINT UNSIGNED PRIMARY KEY,  -- IBKR tradeID
+                conid             BIGINT UNSIGNED NOT NULL,
+                trade_date        DATE NOT NULL,
+                symbol            VARCHAR(48)  NOT NULL,
+                underlying_symbol VARCHAR(32)  NOT NULL,
+                asset_category    VARCHAR(10)  NOT NULL,
+                put_call          CHAR(1),
+                strike            DECIMAL(12,4),
+                expiry            DATE,
+                buy_sell          VARCHAR(4)   NOT NULL,
+                open_close        VARCHAR(4),                    -- 'O' / 'C' / 'C;O' (reversal fill)
+                quantity          DECIMAL(14,4) NOT NULL,
+                trade_price       DECIMAL(14,4),
+                trade_datetime    DATETIME,                      -- fill time, IBKR-reported (assumed ET)
+                realized_pnl      DECIMAL(14,4),                 -- fifoPnlRealized
+                transaction_type  VARCHAR(20),
+                created_at        TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                INDEX idx_trade_date (trade_date),
+                INDEX idx_underlying (underlying_symbol)
+            )
+        """)
+        # Migration: widen open_close for tables created before 'C;O' reversal
+        # fills were discovered (a single fill that both closes and reopens).
+        cur.execute("""
+            ALTER TABLE journal_trades MODIFY COLUMN open_close VARCHAR(4)
+        """)
+        # Migration: add trade_datetime for tables created before intraday
+        # chart markers needed the exact fill time (not just the date).
+        # (MySQL -- unlike MariaDB -- has no ADD COLUMN IF NOT EXISTS, hence the check.)
+        cur.execute("""
+            SELECT COUNT(*) FROM information_schema.columns
+            WHERE table_schema = DATABASE() AND table_name = 'journal_trades'
+              AND column_name = 'trade_datetime'
+        """)
+        if cur.fetchone()[0] == 0:
+            cur.execute("ALTER TABLE journal_trades ADD COLUMN trade_datetime DATETIME")
+        cur.execute("""
+            CREATE TABLE IF NOT EXISTS journal_open_positions (
+                report_date       DATE NOT NULL,
+                conid             BIGINT UNSIGNED NOT NULL,
+                symbol            VARCHAR(48)  NOT NULL,
+                underlying_symbol VARCHAR(32)  NOT NULL,
+                asset_category    VARCHAR(10)  NOT NULL,
+                put_call          CHAR(1),
+                strike            DECIMAL(12,4),
+                expiry            DATE,
+                side              VARCHAR(5),
+                position          DECIMAL(14,4) NOT NULL,
+                open_price        DECIMAL(14,4),
+                mark_price        DECIMAL(14,4),
+                position_value    DECIMAL(14,4),
+                unrealized_pnl    DECIMAL(14,4),
+                created_at        TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                PRIMARY KEY (report_date, conid),
+                INDEX idx_underlying (underlying_symbol)
+            )
+        """)
+        conn.commit()
+        cur.close()
+    finally:
+        conn.close()
+
+
+def upsert_journal_nav(report_date: date, nav: float | None, day_pnl: float | None) -> None:
+    conn = _get_conn()
+    try:
+        cur = conn.cursor()
+        cur.execute("""
+            INSERT INTO journal_nav (report_date, nav, day_pnl)
+            VALUES (%s, %s, %s)
+            ON DUPLICATE KEY UPDATE nav = VALUES(nav), day_pnl = VALUES(day_pnl)
+        """, (report_date, _safe_float(nav), _safe_float(day_pnl)))
+        conn.commit()
+        cur.close()
+    finally:
+        conn.close()
+
+
+def _parse_ibkr_datetime(v) -> datetime | None:
+    """Convert IBKR 'YYYYMMDD;HHMMSS' fill timestamp to a datetime, or None."""
+    try:
+        s = str(v)
+        return datetime.strptime(s, "%Y%m%d;%H%M%S")
+    except (TypeError, ValueError):
+        return None
+
+
+def upsert_journal_trades(df: pd.DataFrame) -> int:
+    """Upsert rows from the NAV/Activity query's Trade section. Idempotent on tradeID."""
+    if df.empty:
+        return 0
+    sql = """
+        INSERT INTO journal_trades
+            (trade_id, conid, trade_date, symbol, underlying_symbol, asset_category,
+             put_call, strike, expiry, buy_sell, open_close, quantity, trade_price,
+             trade_datetime, realized_pnl, transaction_type)
+        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+        ON DUPLICATE KEY UPDATE
+            conid             = VALUES(conid),
+            trade_date        = VALUES(trade_date),
+            symbol            = VALUES(symbol),
+            underlying_symbol = VALUES(underlying_symbol),
+            asset_category    = VALUES(asset_category),
+            put_call          = VALUES(put_call),
+            strike            = VALUES(strike),
+            expiry            = VALUES(expiry),
+            buy_sell          = VALUES(buy_sell),
+            open_close        = VALUES(open_close),
+            quantity          = VALUES(quantity),
+            trade_price       = VALUES(trade_price),
+            trade_datetime    = VALUES(trade_datetime),
+            realized_pnl      = VALUES(realized_pnl),
+            transaction_type  = VALUES(transaction_type)
+    """
+    rows = [
+        (
+            int(r.tradeID),
+            int(r.conid),
+            _parse_ibkr_date(r.tradeDate),
+            str(r.symbol),
+            str(r.underlyingSymbol),
+            str(r.assetCategory),
+            str(r.putCall) if str(getattr(r, "putCall", "")) not in ("", "nan") else None,
+            _safe_float(getattr(r, "strike", None)),
+            _parse_ibkr_date(getattr(r, "expiry", None)),
+            str(r.buySell),
+            str(r.openCloseIndicator) if str(getattr(r, "openCloseIndicator", "")) not in ("", "nan") else None,
+            _safe_float(r.quantity),
+            _safe_float(r.tradePrice),
+            _parse_ibkr_datetime(getattr(r, "dateTime", None)),
+            _safe_float(getattr(r, "fifoPnlRealized", None)),
+            str(getattr(r, "transactionType", "")) or None,
+        )
+        for r in df.itertuples(index=False)
+    ]
+    conn = _get_conn()
+    try:
+        cursor = conn.cursor()
+        cursor.executemany(sql, rows)
+        conn.commit()
+        affected = cursor.rowcount
+        cursor.close()
+    finally:
+        conn.close()
+    return affected
+
+
+def upsert_journal_open_positions(df: pd.DataFrame) -> int:
+    """Upsert rows from the NAV/Activity query's OpenPosition section.
+    Idempotent on (report_date, conid) — re-running the same day's pull is safe."""
+    if df.empty:
+        return 0
+    sql = """
+        INSERT INTO journal_open_positions
+            (report_date, conid, symbol, underlying_symbol, asset_category,
+             put_call, strike, expiry, side, position, open_price, mark_price,
+             position_value, unrealized_pnl)
+        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+        ON DUPLICATE KEY UPDATE
+            symbol            = VALUES(symbol),
+            underlying_symbol = VALUES(underlying_symbol),
+            asset_category    = VALUES(asset_category),
+            put_call          = VALUES(put_call),
+            strike            = VALUES(strike),
+            expiry            = VALUES(expiry),
+            side              = VALUES(side),
+            position          = VALUES(position),
+            open_price        = VALUES(open_price),
+            mark_price        = VALUES(mark_price),
+            position_value    = VALUES(position_value),
+            unrealized_pnl    = VALUES(unrealized_pnl)
+    """
+    rows = [
+        (
+            _parse_ibkr_date(r.reportDate),
+            int(r.conid),
+            str(r.symbol),
+            str(r.underlyingSymbol),
+            str(r.assetCategory),
+            str(r.putCall) if str(getattr(r, "putCall", "")) not in ("", "nan") else None,
+            _safe_float(getattr(r, "strike", None)),
+            _parse_ibkr_date(getattr(r, "expiry", None)),
+            str(getattr(r, "side", "")) or None,
+            _safe_float(r.position),
+            _safe_float(getattr(r, "openPrice", None)),
+            _safe_float(getattr(r, "markPrice", None)),
+            _safe_float(getattr(r, "positionValue", None)),
+            _safe_float(getattr(r, "fifoPnlUnrealized", None)),
+        )
+        for r in df.itertuples(index=False)
+    ]
+    conn = _get_conn()
+    try:
+        cursor = conn.cursor()
+        cursor.executemany(sql, rows)
+        conn.commit()
+        affected = cursor.rowcount
+        cursor.close()
+    finally:
+        conn.close()
+    return affected
+
+
+# ── Trade cycle reconstruction + qualitative review ────────────────────────────
+#
+# journal_trades is fill-level; a real "trade" is a flat-to-flat position cycle
+# that can span several fills across several days (or several separate cycles
+# for a repeatedly-traded name -- naively grouping by conid over the whole
+# window conflates these, see [[project_daily_trade_journal]]). This section
+# reconstructs cycles properly and stores our qualitative read on each one.
+
+def reconstruct_trade_cycles() -> pd.DataFrame:
+    """Segment journal_trades into flat-to-flat position cycles per conid.
+
+    A cycle starts when the running signed position (BUY positive / SELL
+    negative, ordered by trade_date then trade_id as a same-day sequence proxy)
+    leaves zero, and ends when it returns to exactly zero. A cycle still open
+    at the end of the loaded data has exit_date = None and still_open = True.
+
+    Returns one row per cycle: conid, symbol, underlying_symbol, asset_category,
+    put_call, strike, expiry, entry_date, exit_date, first_side ('LONG'/'SHORT'),
+    n_fills, max_abs_qty, realized_pnl, still_open.
+    """
+    conn = _get_conn()
+    try:
+        df = pd.read_sql("""
+            SELECT conid, symbol, underlying_symbol, asset_category, put_call, strike, expiry,
+                   trade_date, trade_id, quantity, realized_pnl
+            FROM journal_trades
+            ORDER BY conid, trade_date, trade_id
+        """, conn)
+    finally:
+        conn.close()
+
+    df["trade_date"] = pd.to_datetime(df["trade_date"])
+    cycles = []
+    for conid, g in df.groupby("conid"):
+        g = g.reset_index(drop=True)
+        running = 0.0
+        rows_in_cycle = []
+        for _, r in g.iterrows():
+            rows_in_cycle.append(r)
+            running += r["quantity"]
+            if abs(running) < 1e-6:
+                cyc = pd.DataFrame(rows_in_cycle)
+                cycles.append(_cycle_row(g, cyc, still_open=False))
+                rows_in_cycle = []
+        if rows_in_cycle:
+            cyc = pd.DataFrame(rows_in_cycle)
+            cycles.append(_cycle_row(g, cyc, still_open=True))
+
+    return pd.DataFrame(cycles)
+
+
+def _cycle_row(g: pd.DataFrame, cyc: pd.DataFrame, still_open: bool) -> dict:
+    return {
+        "conid": g["conid"].iloc[0],
+        "symbol": g["symbol"].iloc[0],
+        "underlying_symbol": g["underlying_symbol"].iloc[0],
+        "asset_category": g["asset_category"].iloc[0],
+        "put_call": g["put_call"].iloc[0],
+        "strike": g["strike"].iloc[0],
+        "expiry": g["expiry"].iloc[0],
+        "entry_date": cyc["trade_date"].min().date(),
+        "exit_date": None if still_open else cyc["trade_date"].max().date(),
+        "first_side": "LONG" if cyc.iloc[0]["quantity"] > 0 else "SHORT",
+        "n_fills": len(cyc),
+        "max_abs_qty": cyc["quantity"].cumsum().abs().max(),
+        "realized_pnl": cyc["realized_pnl"].sum(),
+        "still_open": still_open,
+    }
+
+
+def create_trade_review_table() -> None:
+    """Create journal_trade_reviews if missing."""
+    conn = _get_conn()
+    try:
+        cur = conn.cursor()
+        cur.execute("""
+            CREATE TABLE IF NOT EXISTS journal_trade_reviews (
+                id                INT AUTO_INCREMENT PRIMARY KEY,
+                underlying_symbol VARCHAR(32)  NOT NULL,
+                symbol            VARCHAR(48)  NOT NULL,
+                conid             BIGINT UNSIGNED,
+                asset_category    VARCHAR(10),
+                entry_date        DATE NOT NULL,
+                exit_date         DATE,                  -- NULL if still open
+                entry_verdict     VARCHAR(20),            -- free text: 'good' / 'bad' / 'gray_area' / ...
+                entry_reason      TEXT,
+                exit_verdict      VARCHAR(20),            -- 'good' / 'too_soon' / 'too_late' / 'held_too_long' / 'n_a' / 'gray_area'
+                exit_reason       TEXT,
+                market_context    TEXT,                   -- sector/market backdrop notes at the time
+                tags              VARCHAR(255),            -- comma-separated short tags, e.g. 'chasing_extension,sector_rollover'
+                realized_pnl      DECIMAL(14,4),           -- snapshot for convenience, not authoritative
+                created_at        TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                updated_at        TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+                INDEX idx_underlying_entry (underlying_symbol, entry_date),
+                INDEX idx_entry_date (entry_date)
+            )
+        """)
+        conn.commit()
+        cur.close()
+    finally:
+        conn.close()
+
+
+def add_trade_review(
+    underlying_symbol: str,
+    symbol: str,
+    entry_date: date,
+    exit_date: date | None,
+    *,
+    conid: int | None = None,
+    asset_category: str | None = None,
+    entry_verdict: str | None = None,
+    entry_reason: str | None = None,
+    exit_verdict: str | None = None,
+    exit_reason: str | None = None,
+    market_context: str | None = None,
+    tags: str | None = None,
+    realized_pnl: float | None = None,
+) -> int:
+    """Insert one review row. Returns the new row's id.
+
+    No update-in-place key is enforced (a trade can reasonably get more than
+    one review row over time, e.g. revisited later) -- to correct a row, query
+    by (underlying_symbol, entry_date) and UPDATE/DELETE by id directly.
+    """
+    conn = _get_conn()
+    try:
+        cur = conn.cursor()
+        cur.execute("""
+            INSERT INTO journal_trade_reviews
+                (underlying_symbol, symbol, conid, asset_category, entry_date, exit_date,
+                 entry_verdict, entry_reason, exit_verdict, exit_reason, market_context,
+                 tags, realized_pnl)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+        """, (underlying_symbol, symbol, conid, asset_category, entry_date, exit_date,
+              entry_verdict, entry_reason, exit_verdict, exit_reason, market_context,
+              tags, _safe_float(realized_pnl)))
+        conn.commit()
+        review_id = cur.lastrowid
+        cur.close()
+    finally:
+        conn.close()
+    return review_id
+
+
+def get_trade_reviews(underlying_symbol: str | None = None, entry_date: date | None = None) -> pd.DataFrame:
+    """Query reviews, optionally filtered by underlying symbol and/or entry date."""
+    conn = _get_conn()
+    try:
+        sql = "SELECT * FROM journal_trade_reviews WHERE 1=1"
+        params = []
+        if underlying_symbol:
+            sql += " AND underlying_symbol = %s"
+            params.append(underlying_symbol.upper())
+        if entry_date:
+            sql += " AND entry_date = %s"
+            params.append(entry_date)
+        sql += " ORDER BY entry_date, underlying_symbol"
+        return pd.read_sql(sql, conn, params=params)
+    finally:
+        conn.close()
