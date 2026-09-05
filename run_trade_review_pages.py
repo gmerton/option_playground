@@ -513,6 +513,61 @@ def _strategy_stats(srows: list[dict]) -> dict:
     }
 
 
+VEHICLE_BUCKETS = ["Long Stock", "Short Stock", "Long Vol", "Short Vol"]
+
+
+def _vehicle_bucket(vehicle: str | None) -> str | None:
+    """Maps a row's precise vehicle label (from _compute_directions) to a broad
+    long/short stock-vs-vol category. Long Vol = outright long premium (long call,
+    long put, long straddle -- pure long gamma/vega). Short Vol = anything that
+    caps/sells premium (short call, short put, any vertical spread, iron condor --
+    even a debit vertical partially offsets its own vega, so verticals are grouped
+    here rather than with outright long options, per how the strategy is actually
+    used in this book). Returns None for stock-vs-vol-ambiguous or unclassifiable
+    rows (the same ~17 rows that already show no direction -- see _compute_directions)."""
+    if not vehicle:
+        return None
+    if vehicle == "long stock":
+        return "Long Stock"
+    if vehicle == "short stock":
+        return "Short Stock"
+    if vehicle.startswith("long call") or vehicle.startswith("long put") or vehicle == "long straddle":
+        return "Long Vol"
+    if (vehicle.startswith("short call") or vehicle.startswith("short put")
+            or "spread" in vehicle or vehicle == "iron condor"):
+        return "Short Vol"
+    return None
+
+
+def _render_vehicle_breakdown(rows: list[dict]) -> str:
+    blocks = []
+    for bucket in VEHICLE_BUCKETS:
+        brows = [r for r in rows if _vehicle_bucket(r.get("vehicle")) == bucket]
+        st = _strategy_stats(brows)
+        combined = st["total_realized"] + st["total_unrealized"]
+        cells = [
+            _stat_cell("Trades", str(st["n_total"])),
+            _stat_cell("Closed / Open", f'{st["n_closed"]} / {st["n_open"]}'),
+            _stat_cell("Win rate (closed)", f'{st["win_rate"]:.0f}%' if st["win_rate"] is not None else "—"),
+            _stat_cell("Total realized", fmt_pnl(st["total_realized"])),
+            _stat_cell("Avg / trade (closed)", fmt_pnl(st["avg_realized"]) if st["avg_realized"] is not None else "—"),
+            _stat_cell("Median / trade (closed)", fmt_pnl(st["median_realized"]) if st["median_realized"] is not None else "—"),
+            _stat_cell("Open (unrealized)", fmt_pnl(st["total_unrealized"])),
+            _stat_cell("Combined total", fmt_pnl(combined)),
+        ]
+        blocks.append(f"""<div class="strategy-block">
+  <div class="strategy-name">{bucket}</div>
+  <div class="stat-grid">{''.join(cells)}</div>
+</div>""")
+    n_unclassified = sum(1 for r in rows if _vehicle_bucket(r.get("vehicle")) is None)
+    note = (
+        f'<div class="note">{n_unclassified} reviews have no vehicle classification (mostly '
+        f'positions whose true opening fill predates the 30-day Flex window -- see the Direction '
+        f'column on the index) and are excluded from every bucket above.</div>'
+    )
+    return "".join(blocks) + note
+
+
 def _stat_cell(label: str, value: str) -> str:
     return f'<div class="stat-cell"><div class="label">{label}</div><div class="value">{value}</div></div>'
 
@@ -576,6 +631,7 @@ def render_summary_page(rows: list[dict]) -> str:
         conn.close()
 
     top_bottom_html = _render_top_bottom(rows, n=10)
+    vehicle_html = _render_vehicle_breakdown(rows)
 
     return f"""<!doctype html>
 <html lang="en">
@@ -589,10 +645,13 @@ def render_summary_page(rows: list[dict]) -> str:
 <h1>Strategy Performance</h1>
 <div class="sub">
   Aggregated from the reviewed book. Generated __GENERATED_AT__. &middot;
+  <a href="#by-vehicle" style="color:var(--accent);">Jump to by vehicle &darr;</a> &middot;
   <a href="#top-bottom" style="color:var(--accent);">Jump to top/bottom trades &darr;</a>
 </div>
 <h2>Performance by strategy</h2>
 {''.join(blocks)}
+<h2 id="by-vehicle">Performance by vehicle</h2>
+{vehicle_html}
 <h2 id="top-bottom">Top / bottom trades</h2>
 {top_bottom_html}
 </body>
