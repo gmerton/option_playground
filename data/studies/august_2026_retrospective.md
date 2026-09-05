@@ -132,13 +132,15 @@ Readings:
 3. **8/18 (10-day advancer average < 50%, second straight sub-35% day)** → stop initiating momentum longs, hold only the groups still making highs (miners, crypto, biotech), and flip the breakdown screen on: volume breakdowns below the 50-day low from 8/17 on lost another 2.6% in 10 days.
 4. **Avoid all month**: leader breakouts to 52-week highs, extended names into earnings (the bottom-40 list is nearly all of these), semis after the H1 bounce (SOXL +26% H1, −22% H2), defense (XAR +12% H1, −14% H2), airlines, regional banks, retail.
 
-## 6. Implications for the machinery
+## 6. Implications for the machinery — ⚠ REVISED 2026-09-05 after validation
 
-- **The preferred list / Trend Template universe was on the wrong side of August by construction.** Template certifies established trends; August paid for broken trends turning. This is a regime statement, not a reason to abandon the template — but the book had no vehicle for the laggard-turn regime at all.
-- **Add a laggard-turn screen as a second candidate source**: stock ≥30% off 52-wk high, below 200-day, positive 21-day return (turned in July), then the same breakout trigger (close > 50d high on ≥1.5× volume). The Part III study already supports it out of sample; August is an in-sample confirmation of the same idea at the stock level.
-- **Breadth as a regime gate for pullback/U&R entries**: those setups only worked while the 10-day advancer average was above 50%. Cheap to add to `market_conditions.py` (the rotation study proposed breadth as a lead-time tool; this is a different, entry-gating use).
-- **EP-chasing on the gap day had negative expectancy in August**; the house scan's "broke pivot on light vol" names were not the problem — the problem was chasing anything already up 10%.
-- Group RS tables in the daily report ranked semis, defense, and insurance highly on 7/31 (63-day RS). All three lost money in August. Again: descriptive, not predictive.
+The three proposals originally written here (a laggard-turn candidate screen, a breadth gate on pullback/U&R entries, and "stop initiating longs when the 10-day advancer average drops below 50%") were encoded as rolling rules and tested on 2019–2026 in `trailing_regime_validation.md`. **None survive**: the laggard-vs-leader spread does not persist (corr −0.11), laggard breakouts lose in 7 of 8 years (−1.35pp excess), the breadth gate does not separate outcomes, and weak breadth has preceded *higher* 21-session returns. The August pattern was real; it was not forecastable from the trailing 30 days.
+
+What stands:
+- The preferred list / Trend Template universe was on the wrong side of August, and there is no validated rule that would have told you so in advance. That is a regime-diversification statement, not a screen.
+- The existing vetoes (no breakouts below the 200-day or with 6-mo return < −10%; no chasing +10% gap days) are confirmed by the long sample.
+- Group RS tables ranked semis, defense, and insurance highly on 7/31 (63-day RS). All three lost money in August. Descriptive, not predictive — same as the rotation study said.
+- `run_trailing_retro.py` reproduces this study for any trailing window as a post-mortem tool; it prints its own non-persistence numbers.
 
 ## 7. Where the book's own August went (from `data/journal/summary.html`, generated 9/4)
 
