@@ -108,6 +108,25 @@ def main():
     for lab, mask in (("all A", np.ones(len(df), bool)), ("after SETUP", df.after_setup.values), ("ADR 4-7 & off52>-15 & stack<=40", m.values), ("after SETUP & ADR 4-7 & off52>-15 & stack<=40", (m & df.after_setup).values), ("after SETUP & off52>-15", (df.after_setup & (df.off52 > -15)).values)):
         g = df[mask]; by = g.groupby("y").R.mean()
         print(f"  {lab:48s} n={len(g):5d} xs10 {100*g.xs10.mean():+.2f} r21 {100*g.r21.mean():+.2f} R {g.R.mean():+.2f} med {g.R.median():+.2f} win {100*(g.R>0).mean():.0f}% | R by year: " + " ".join(f"{y}:{v:+.2f}" for y, v in by.items()))
+    # ---- regime conditioning (feedback 2026-09-08: studies must weight current conditions) ----
+    spy = raw[raw.ticker == "SPY"].set_index("date").close.sort_index() if (raw.ticker == "SPY").any() else None
+    if spy is None:
+        spy = pd.read_parquet(a.panel); spy = spy[spy.ticker == "SPY"].set_index("date").close.sort_index(); spy.index = pd.to_datetime(spy.index)
+    s50s, s200s = spy.rolling(50).mean(), spy.rolling(200).mean()
+    adv = (C.pct_change(fill_method=None) > 0).where(elig).mean(axis=1); adv10 = adv.rolling(10).mean()
+    trend = pd.Series(np.where((spy > s50s) & (s50s > s200s), "up", np.where(spy < s200s, "bear", "chop")), index=spy.index).reindex(idx).ffill()
+    breadth = pd.Series(np.where(adv10 >= 0.5, "B+", "B-"), index=idx)
+    state = (trend + "/" + breadth)
+    today = state.iloc[-1]
+    print(f"\n=== REGIME CONDITIONING: state = SPY trend (up: >50>200 | chop | bear: <200) / 10d advancer avg (B+ >=50%) — TODAY = {today} ({idx[-1].date()}) ===")
+    for name in ("A_breakout15", "B_catalyst", "SETUP_day"):
+        dd, jj2, r2, xs2, tr2 = res[name]; st = state.reindex(dd).values
+        g = pd.DataFrame({"state": st, "xs10": xs2[10], "r21": r2[21], "R": tr2[:, 1]}).groupby("state").agg(n=("R", "size"), xs10=("xs10", "mean"), r21=("r21", "mean"), R=("R", "mean"), Rwin=("R", lambda x: (x > 0).mean()))
+        g[["xs10", "r21"]] *= 100; g["Rwin"] *= 100; g["TODAY"] = np.where(g.index == today, "<==", "")
+        print(f"  {name}:"); print("   " + g.round(2).to_string().replace("\n", "\n   "))
+    st = state.reindex(d_all).values; dfp = df[m.values].copy(); dfp["state"] = st[m.values]
+    g = dfp.groupby("state").agg(n=("R", "size"), xs10=("xs10", "mean"), R=("R", "mean"), Rwin=("R", lambda x: (x > 0).mean())); g[["xs10"]] *= 100; g["Rwin"] *= 100; g["TODAY"] = np.where(g.index == today, "<==", "")
+    print("  PRECISION tier:"); print("   " + g.round(2).to_string().replace("\n", "\n   "))
     # SETUP -> does it break within 10 sessions, and does that break outperform?
     s = ev["SETUP_day"].fillna(False).astype(bool); brk = (C >= piv15) & (C.shift(1) < piv15)
     brk_next10 = brk.shift(-1).rolling(10).max().shift(-9).fillna(0).astype(bool) if False else pd.DataFrame(np.zeros(C.shape, bool), index=idx, columns=cols)
