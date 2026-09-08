@@ -114,20 +114,19 @@ def load_options(ticker: str) -> pd.DataFrame:
         df["trade_date"] = pd.to_datetime(df["trade_date"]).dt.date
         df["expiry"]     = pd.to_datetime(df["expiry"]).dt.date
         cached_max = df["trade_date"].max()
-        if cached_max >= staleness_threshold:
-            print(f"  Loaded {len(df):,} rows from parquet cache (max date: {cached_max}).")
+        if "bid" not in df.columns or "ask" not in df.columns:
+            print("  Parquet cache lacks bid/ask (needed for the cost model) -- refreshing from MySQL ...")
+        else:
+            if cached_max >= staleness_threshold:
+                print(f"  Loaded {len(df):,} rows from parquet cache (max date: {cached_max}).")
+                return df
+            print(f"  Parquet cache stale (max date: {cached_max}, threshold: {staleness_threshold}). Using it (source data ends 2026-02).")
             return df
-        print(f"  Parquet cache stale (max date: {cached_max}, threshold: {staleness_threshold}).")
-        answer = input("  Refresh from MySQL? (~2 GB RAM) [y/N] ").strip().lower()
-        if answer != "y":
-            print("  Using stale cache.")
-            return df
-        print("  Refreshing from MySQL ...")
     else:
         print(f"  No parquet cache found, fetching from MySQL ...")
 
     sql = f"""
-        SELECT trade_date, expiry, strike, mid, delta, cp
+        SELECT trade_date, expiry, strike, mid, delta, cp, bid, ask
         FROM options_cache
         WHERE ticker = '{ticker}'
           AND trade_date >= '{START_DATE}'
@@ -330,6 +329,28 @@ def sim_strangle(
                 days=(expiry - entry_date).days, exit_date=expiry)
 
 
+
+# ── transaction costs (2026-09-08, playbook review) ──────────────────────────
+# lib.studies.costs: $0.0065/share/leg/side commission + 25% of each leg's entry bid-ask, paid on entry
+# and again on any exit that trades (expiry settlement pays nothing). --no-costs reproduces the old mid-fill tables.
+from lib.studies.costs import sim_cost as _sim_cost
+APPLY_COSTS = True
+
+def _net(sim: dict, rows) -> dict:
+    ba = []
+    for r in rows:
+        try:
+            b, a = float(r["bid"]), float(r["ask"])
+            ba.append(max(0.0, a - b) if (b == b and a == a) else 0.0)
+        except Exception:
+            ba.append(0.0)
+    traded = len(rows) if str(sim.get("exit", "")) in ("profit_take", "stop_loss") else 0
+    c = _sim_cost(ba, traded, len(rows))
+    out = dict(sim); out["pnl_gross"] = sim["pnl"]; out["cost"] = c
+    if APPLY_COSTS:
+        out["pnl"] = sim["pnl"] - c
+    return out
+
 # ── Trade entry for each strategy ────────────────────────────────────────────
 
 def enter_trade(
@@ -364,6 +385,7 @@ def enter_trade(
                                 short_row["strike"], long_row["strike"],
                                 "P", credit, daily_map_p, stock_map,
                                 margin=margin, ann_target=ann_target)
+        sim = _net(sim, [short_row, long_row])
         return dict(strategy=strategy, entry_val=credit, margin=margin, **sim)
 
     elif strategy == "bear_call_spread":
@@ -382,6 +404,7 @@ def enter_trade(
                                 short_row["strike"], long_row["strike"],
                                 "C", credit, daily_map_c, stock_map,
                                 margin=margin, ann_target=ann_target)
+        sim = _net(sim, [short_row, long_row])
         return dict(strategy=strategy, entry_val=credit, margin=margin, **sim)
 
     elif strategy in ("short_strangle_sym", "short_strangle_skew"):
@@ -400,6 +423,7 @@ def enter_trade(
         sim = sim_strangle(edate, call_row["expiry"],
                            call_row["strike"], put_row["strike"],
                            credit, True, daily_map_c, daily_map_p, stock_map)
+        sim = _net(sim, [call_row, put_row])
         return dict(strategy=strategy, entry_val=credit, margin=margin, **sim)
 
     elif strategy == "long_straddle":
@@ -416,6 +440,7 @@ def enter_trade(
         sim = sim_strangle(edate, call_row["expiry"],
                            call_row["strike"], put_row["strike"],
                            cost, False, daily_map_c, daily_map_p, stock_map)
+        sim = _net(sim, [call_row, put_row])
         return dict(strategy=strategy, entry_val=cost, margin=margin, **sim)
 
     return None
@@ -446,6 +471,7 @@ def enter_bear_call_spread(
     sim = sim_credit_spread(edate, short_row["expiry"],
                             short_row["strike"], long_row["strike"],
                             "C", credit, daily_map_c, stock_map)
+    sim = _net(sim, [short_row, long_row])
     return dict(strategy="bear_call_spread", entry_val=credit, margin=margin, **sim)
 
 
@@ -521,10 +547,14 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--ticker",     default="TLT", help="Ticker symbol (default: TLT)")
     parser.add_argument("--no-stop",    action="store_true", help="Disable 2× stop loss on credit legs")
+    parser.add_argument("--no-costs",   action="store_true", help="Mid-fill P&L (reproduces the pre-2026-09 playbook tables)")
     parser.add_argument("--ann-target", type=float, default=100.0,
                         help="Annualized ROC profit target in %% (e.g. 100 = 100%%). "
                              "Pass 0 to use legacy 50%% fixed take.")
     args = parser.parse_args()
+    global APPLY_COSTS
+    APPLY_COSTS = not args.no_costs
+    print(f"  Cost model: {'OFF (mid fills)' if args.no_costs else 'ON ($0.65/leg + 25% of bid-ask per traded side)'}")
     ticker = args.ticker.upper()
     if args.no_stop:
         global STOP_MULT

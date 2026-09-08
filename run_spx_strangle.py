@@ -72,6 +72,8 @@ def pull_from_athena(dte_max_load: int) -> pd.DataFrame:
         expiry,
         strike,
         CAST((bid + ask) / 2.0 AS DOUBLE) AS mid,
+        CAST(bid AS DOUBLE)                AS bid,
+        CAST(ask AS DOUBLE)                AS ask,
         CAST(delta AS DOUBLE)              AS delta,
         cp,
         date_diff('day', trade_date, expiry) AS dte
@@ -98,7 +100,10 @@ def load_options(dte_target: int, refresh: bool = False) -> pd.DataFrame:
         print(f"Loading SPX options from cache: {cache_file}")
         df = pd.read_parquet(cache_file)
         print(f"  {len(df):,} rows")
-    else:
+        if "bid" not in df.columns or "ask" not in df.columns:
+            print("  cache lacks bid/ask (needed for the cost model) -- refreshing from Athena")
+            refresh = True
+    if refresh or not cache_file.exists():
         df = pull_from_athena(dte_max_load)
         _CACHE_DIR.mkdir(parents=True, exist_ok=True)
         df.to_parquet(cache_file, index=False)
@@ -266,6 +271,25 @@ def sim_strangle(
                 days=(expiry - entry_date).days, exit_date=expiry)
 
 
+
+# ── transaction costs (2026-09-08, playbook review) ──────────────────────────
+from lib.studies.costs import sim_cost as _sim_cost
+APPLY_COSTS = True
+
+def _net(sim: dict, rows) -> dict:
+    ba = []
+    for r in rows:
+        try:
+            b, a = float(r["bid"]), float(r["ask"]); ba.append(max(0.0, a - b) if (b == b and a == a) else 0.0)
+        except Exception:
+            ba.append(0.0)
+    traded = len(rows) if str(sim.get("exit", "")) in ("profit_take", "stop_loss") else 0
+    c = _sim_cost(ba, traded, len(rows))
+    out = dict(sim); out["pnl_gross"] = sim["pnl"]; out["cost"] = c
+    if APPLY_COSTS:
+        out["pnl"] = sim["pnl"] - c
+    return out
+
 # ── Reporting ─────────────────────────────────────────────────────────────────
 
 def print_matrix(df: pd.DataFrame, metric_col: str, title: str, fmt: str,
@@ -404,6 +428,7 @@ def main() -> None:
                         help="Target DTE (default: 20)")
     parser.add_argument("--refresh", action="store_true",
                         help="Force re-query from Athena even if cache exists")
+    parser.add_argument("--no-costs", action="store_true", help="Mid-fill P&L (reproduces the pre-2026-09 playbook tables)")
     parser.add_argument("--regime", default="ALL",
                         help="Regime filter (or ALL)")
     parser.add_argument("--vix-min", type=float, default=None,
@@ -420,6 +445,9 @@ def main() -> None:
     parser.add_argument("--delta-min", type=float, default=0.20,
                         help="Minimum delta included in the sweep (default: 0.20; use 0.10 to include 0.10/0.15)")
     args = parser.parse_args()
+    global APPLY_COSTS
+    APPLY_COSTS = not args.no_costs
+    print(f"  Cost model: {'OFF (mid fills)' if args.no_costs else 'ON ($0.65/leg + 25% of bid-ask per traded side)'}")
 
     stop_mult     = args.stop_mult
     require_200ma = args.require_200ma
@@ -531,6 +559,7 @@ def main() -> None:
                     call_wing_strike=call_wing_strike,
                     put_wing_strike=put_wing_strike,
                 )
+                sim = _net(sim, [call_row, put_row] + ([cw_row, pw_row] if wing_delta is not None else []))
                 results.append({
                     "call_delta":  cd,
                     "put_delta":   pd_,

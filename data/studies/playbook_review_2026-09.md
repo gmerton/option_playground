@@ -43,3 +43,44 @@
 ## What can carry capital now, on the current evidence
 
 Today's screener produced four entries at VIX 15.7: QQQ bullish-low-IV bull put 0.45/0.35, SPY double calendar, GLD bull put, and a UVIX bear call. Of those, the SPY double calendar is the only one with a cost-modeled backtest, QQQ bullish-low-IV is the most-sampled regime row, and GLD is a plain 87%-win spread on a liquid chain. The UVIX call spread carries a high-contango warning and Tier C weight. That is a reasonable place to start at framework size, with the 25% open-risk cap, while the cost-model re-run decides what else gets funded.
+
+---
+
+# Part 2 — After-cost re-run (2026-09-08, same day)
+
+Cost model added to every engine (`src/lib/studies/costs.py`, copied from the dc_time_machine study): $0.0065/share per leg per side commission plus 25% of each leg's quoted entry bid-ask, paid on entry and again on any exit that trades. A leg that settles at expiry pays no exit cost. Entry bid-ask is the exit proxy (exit quotes are not stored). `--no-costs` reproduces the old mid-fill tables. Engines patched: `put_spread_study.py`, `calendar_study.py` (ROCnet/WinNet columns in every table), `run_tlt_strategy_study.py`, `run_tlt_regime_switch.py`, `run_spx_strangle.py`.
+
+## Results, gross (playbook) vs net (after costs)
+
+| Playbook | Framework tier | Gross ROC / win (playbook) | Net ROC / win | Cost per share | Verdict |
+|---|---|---|---|---|---|
+| XLU put calendar, FVF ≤ 0.90 | A (#1) | +78.8% / 93.5% | **−54.0% / 10.8%** | $0.136 on a $0.130 debit | dead |
+| XLV put calendar, FVF ≤ 0.90 | A (#2) | +49.0% / 87.1% | **−94.8% / 8.1%** | $0.235 on a $0.208 debit | dead |
+| XLP put calendar, FVF ≤ 0.90 | A (#3) | +54.7% / 82.1% | **−129.1% / 7.7%** | $0.135 on a $0.112 debit | dead |
+| XLE bull put, bearish-high-IV | A (#4) | +35.5% / 84.6% | not reproducible (see data note) | | blocked |
+| SPX condor 0.20c/0.40p, bullish-high-IV + 200MA | A (#7-equiv) | +11.2% / 95.7% | **+10.9% / 95.7%** | ~$0.30 on $74 credit | survives |
+| SPX condor 0.20c/0.30p, bearish-high-IV | B | +10.4% / 78.9% | **+9.8% / 78.9%** | | survives |
+| QQQ bull put, bearish-high-IV | B | +25.3% / 79.7% (this engine) | **+22.5% / 79.7%** | ~$0.05 | survives |
+| QQQ bull put, bullish-high-IV | A | +11.6% / 76.5% | **+9.4% / 76.5%** | | survives |
+| QQQ bull put, bullish-low-IV | C | +13.5% / 76.9% | **+10.6% / 76.5%** | | survives |
+| SPY bull put, bearish-high-IV | B | +7.5% / 94.7% (playbook) | **+20.2% / 77.3%** (this engine's fixed deltas) | | survives |
+| SPY bull put, bullish-low-IV | C | | **+4.1% / 76.9%** | | marginal |
+| SOXX bull put 0.35/0.30, always on | C | +9 to +32% per year | **−31% (2018), +9, +3, −19, −6, −1, +7, +7, +27 (2026 partial)** | ~$0.12 on $1.50 credit | marginal, 4 of 8 full years negative |
+| GLD bull put 0.30/0.25, VIX<25 | C | +2 to +17% per year | **−17, +7, 0, −12, +3, −4, +11, +9** | ~$0.05 | marginal, positive only 2024–26 |
+| TLT regime switch | C | +5.6% / 87.6% overall | **−10.0% total; every regime negative (−3.7% to −16.7%), win 35–50%** | ~$0.075 on $0.24–0.49 credits | dead |
+| XLF regime switch | B | +6.1% / 74.8% | **−4.6% total; bull put −8.8%, bear call −8.1%, strangles ≈ +1%** | ~$0.04 on $0.16–0.21 credits | dead |
+
+Read the QQQ/SPY rows as the engine's fixed-delta strategy study rather than the playbook's regime-optimized deltas; the point is the *gap* between gross and net on the same trades, which is 2 to 3 points of ROC on QQQ and SPY, 10 to 17 points on TLT, XLF and SOXX, and more than 100 points on the calendars.
+
+## What this means
+
+- **The framework's top three strategies are artifacts of mid pricing.** On a $0.11 to $0.21 debit, the round-trip cost is $0.13 to $0.24. The FVF signal is real (win rate rises monotonically as the factor falls) but it cannot be monetized in these products at these sizes. Tier A rows 1 to 3 are removed.
+- **TLT and XLF regime switching are dead after costs.** Credits of $0.16 to $0.49 a share against $0.04 to $0.08 of cost, exited early on an annualized-ROC target, leaves nothing. The 87.6% win rate becomes 35 to 50 percent.
+- **SPX is the one Tier A that is unaffected.** Large-dollar options with tight spreads relative to premium. The remaining concerns from Part 1 stand (2020 concentration in the bullish-high-IV row, one −74% trade in 2022).
+- **QQQ and SPY bull puts survive with a 2 to 3 point haircut**, which makes them the workhorses. SPY bullish-low-IV at +4.1% net is thin; QQQ bullish-low-IV at +10.6% net on 221 trades is the best-sampled positive row in the whole book.
+- **SOXX and GLD are marginal**, positive in the AI-bull years and negative in most others. Keep only if credits at entry exceed roughly 3 times the modeled cost.
+- **XLE cannot be evaluated**: `data/cache/XLE_stock.parquet` is split-adjusted (XLE 45.38 on 2024-06-03) while `options_cache` strikes are not, so every settlement in the engine is wrong (bull puts 2% win, straddles −974%). The March playbook numbers presumably came from an unadjusted cache; rebuild the stock cache on the strike basis before re-running.
+
+## Framework changes applied
+
+Tier A after costs: **SPX bullish-high-IV condor, QQQ bearish-high-IV bull put.** Tier B: SPX bearish-high-IV condor, QQQ bullish-high-IV and bullish-low-IV bull puts, SPY bearish-high-IV bull put, SPY double calendar (already cost-modeled). Tier C: SOXX, GLD, SPY bullish-low-IV. Removed: XLU/XLV/XLP calendars, TLT regime switch, XLF regime switch. Blocked pending data fix: XLE. The Friday screener still prints the old tiers; `strategy_registry.py` needs the same edit before its ENTER labels can be trusted.

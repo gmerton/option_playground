@@ -1,5 +1,16 @@
 # Capital Allocation Framework
 
+> ## ⚠ POST-COST STATUS — 2026-09-08 (read before using any table below)
+> The rankings below are **mid-fill, zero-commission** numbers. `data/studies/playbook_review_2026-09.md` Part 2 re-ran every
+> engine with a cost model ($0.65/leg + 25% of entry bid-ask per traded side). Result:
+> **Removed (net-negative after costs):** XLU / XLV / XLP put calendars (ranks 1–3), TLT regime switch, XLF regime switch.
+> **Blocked (data):** XLE (stock cache split-adjusted vs unadjusted strikes).
+> **Tier A after costs:** SPX bullish-high-IV condor (+10.9% net), QQQ bearish-high-IV bull put (+22.5% net).
+> **Tier B:** SPX bearish-high-IV condor (+9.8%), QQQ bullish-high-IV (+9.4%) and bullish-low-IV (+10.6%) bull puts,
+> SPY bearish-high-IV bull put, SPY double calendar (own cost model). **Tier C:** SOXX, GLD, SPY bullish-low-IV (all marginal).
+> Priority scores have NOT been recomputed on net ROC yet; the fix list in the review covers that.
+
+
 **Purpose:** When multiple signals fire on the same Friday, this framework determines
 which strategies get priority access to capital and how much to deploy.
 

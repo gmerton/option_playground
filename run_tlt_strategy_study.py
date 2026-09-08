@@ -78,7 +78,7 @@ def load_options(ticker: str) -> pd.DataFrame:
     delta_min  = min(all_deltas) - MAX_DELTA_ERR
     delta_max  = max(all_deltas) + MAX_DELTA_ERR
     sql = f"""
-        SELECT trade_date, expiry, strike, mid, delta, cp,
+        SELECT trade_date, expiry, strike, mid, delta, cp, bid, ask,
                DATEDIFF(expiry, trade_date) AS dte
         FROM options_cache
         WHERE ticker = '{ticker}'
@@ -191,6 +191,28 @@ def find_option(
         return None
     return subset.loc[subset["_derr"].idxmin()]
 
+
+
+# ── transaction costs (2026-09-08, playbook review) ──────────────────────────
+# lib.studies.costs: $0.0065/share/leg/side commission + 25% of each leg's entry bid-ask, paid on entry
+# and again on any exit that trades (expiry settlement pays nothing). --no-costs reproduces the old mid-fill tables.
+from lib.studies.costs import sim_cost as _sim_cost
+APPLY_COSTS = True
+
+def _net(sim: dict, rows) -> dict:
+    ba = []
+    for r in rows:
+        try:
+            b, a = float(r["bid"]), float(r["ask"])
+            ba.append(max(0.0, a - b) if (b == b and a == a) else 0.0)
+        except Exception:
+            ba.append(0.0)
+    traded = len(rows) if str(sim.get("exit", "")) in ("profit_take", "stop_loss") else 0
+    c = _sim_cost(ba, traded, len(rows))
+    out = dict(sim); out["pnl_gross"] = sim["pnl"]; out["cost"] = c
+    if APPLY_COSTS:
+        out["pnl"] = sim["pnl"] - c
+    return out
 
 # ── Simulation ────────────────────────────────────────────────────────────────
 
@@ -365,7 +387,11 @@ def print_section(df_sub: pd.DataFrame, label: str) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--ticker", default="TLT", help="Ticker symbol (default: TLT)")
+    parser.add_argument("--no-costs", action="store_true", help="Mid-fill P&L (reproduces the pre-2026-09 playbook tables)")
     args = parser.parse_args()
+    global APPLY_COSTS
+    APPLY_COSTS = not args.no_costs
+    print(f"  Cost model: {'OFF (mid fills)' if args.no_costs else 'ON ($0.65/leg + 25% of bid-ask per traded side)'}")
     ticker = args.ticker.upper()
 
     print(f"Loading {ticker} option data...")
@@ -415,6 +441,7 @@ def main() -> None:
                     sim = sim_spread(edate, cs_short["expiry"],
                                      cs_short["strike"], cs_long["strike"],
                                      "C", credit, daily_map_c, stock_map)
+                    sim = _net(sim, [cs_short, cs_long])
                     results.append({"strategy": "bear_call_spread", "edate": edate,
                                     "regime": regime_label, "entry_val": credit, **sim, **reg})
 
@@ -428,6 +455,7 @@ def main() -> None:
                     sim = sim_spread(edate, ps_short["expiry"],
                                      ps_short["strike"], ps_long["strike"],
                                      "P", credit, daily_map_p, stock_map)
+                    sim = _net(sim, [ps_short, ps_long])
                     results.append({"strategy": "bull_put_spread", "edate": edate,
                                     "regime": regime_label, "entry_val": credit, **sim, **reg})
 
@@ -444,6 +472,7 @@ def main() -> None:
                 put_sim  = sim_spread(edate, ps_short["expiry"],
                                       ps_short["strike"], ps_long["strike"],
                                       "P", put_credit, daily_map_p, stock_map)
+                call_sim = _net(call_sim, [cs_short, cs_long]); put_sim = _net(put_sim, [ps_short, ps_long])
                 ic_pnl    = call_sim["pnl"] + put_sim["pnl"]
                 ic_credit = call_credit + put_credit
                 exits = {call_sim["exit"], put_sim["exit"]}
@@ -473,6 +502,7 @@ def main() -> None:
                                    atm_call["strike"], atm_put["strike"],
                                    entry_val, is_short,
                                    daily_map_c, daily_map_p, stock_map)
+                sim = _net(sim, [atm_call, atm_put])
                 results.append({"strategy": label, "edate": edate,
                                 "regime": regime_label, "entry_val": entry_val,
                                 **sim, **reg})
