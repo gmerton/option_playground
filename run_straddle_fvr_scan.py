@@ -140,6 +140,7 @@ async def quote_straddle(client, tkr, spot):
 async def main() -> None:
     ap = argparse.ArgumentParser(description="Live FVR scan for the long-straddle universe")
     ap.add_argument("--extended", action="store_true", help="include the 3-4-fold list (0.5x size)")
+    ap.add_argument("--universe", default=None, help="ticker file to scan instead of the retired core/extended lists, e.g. data/watchlist/straddle_pool_323.txt (the playbook's current universe)")
     ap.add_argument("--min-fvr", type=float, default=1.20, help="report floor (signal tiers unchanged)")
     ap.add_argument("--concurrency", type=int, default=4)
     args = ap.parse_args()
@@ -148,9 +149,12 @@ async def main() -> None:
     if not key:
         sys.exit("TRADIER_API_KEY not set")
 
-    universe = [(t, "core") for t in CORE]
-    if args.extended:
-        universe += [(t, "ext") for t in EXTENDED]
+    if args.universe:
+        universe = [(x.strip(), "pool") for x in open(args.universe) if x.strip() and not x.startswith("#")]
+    else:
+        universe = [(t, "core") for t in CORE]
+        if args.extended:
+            universe += [(t, "ext") for t in EXTENDED]
 
     sem = asyncio.Semaphore(args.concurrency)
     async with TradierClient(api_key=key) as client:
