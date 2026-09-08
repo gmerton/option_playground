@@ -1,0 +1,18 @@
+{
+  "id": "dMuOgHJcYVs",
+  "url": "https://www.youtube.com/watch?v=dMuOgHJcYVs",
+  "title": "9/8/2026 Watchlist video",
+  "channel": "Ariel Hernandez",
+  "channel_url": "https://www.youtube.com/channel/UCn8hF9X6MGDtbTBb6w3JUYA",
+  "upload_date": "2026-09-07",
+  "recorded_evening_of": "2026-09-07",
+  "for_session": "2026-09-08",
+  "duration_seconds": 1175,
+  "access": "members-only (RS Insider tier)",
+  "capture": {
+    "date": "2026-09-07",
+    "method": "YouTube auto-captions (asr, en) captured from the logged-in player's timedtext request via the Chrome extension; yt-dlp cannot fetch members-only captions anonymously and the timedtext URL returns an empty body without the player's proof-of-origin token",
+    "transcript_note": "auto-captions, lightly paragraphed by timestamp; speaker's ticker names as transcribed (Palunteer=PLTR, Marll=MRVL, Octa=OKTA, SNX/SNXX=SanDisk leveraged ETF, MSFU=MSFT 2x, NVDL=NVDA 2x)"
+  },
+  "tickers": ["AMD","CRCL","DELL","HOOD","IBIT","ETHA","INTC","MSFT","MU","SNDK","SKHY","WDC","LITE","NVDA","OKTA","PLTR","SMTC","SPCX","TGTX","TSM","MRVL","HPE","NOW","POET"]
+}
