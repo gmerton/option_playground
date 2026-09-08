@@ -16,7 +16,7 @@ one citation are *thin* until repeated.
 - **Preferred entry = morning wash → stops going down → "620 setup" → reclaim of VWAP, so there is
   a low to risk off; or a pullback into the 5/10/20-day with the same trigger.** Require the group
   to be acting well at the moment of entry so price "pushes away from cost quickly." `@08:08`,
-  `@15:07`, `@17:40`, `@03:48` (DELL: check-back into the rising 5-day) (4 / 1). ⚠ "620 setup" undefined.
+  `@15:07`, `@17:40`, `@03:48` (DELL: check-back into the rising 5-day) (4 / 1). **"620 setup" = Gil Morales's 5-minute 6 EMA / 20 EMA cross with MACD(6,20) confirmation; the bullish 6-over-20 cross after an intraday pullback is the entry bar and its low the stop** (definition from Virtue of Selfish Investing; Chart Academy lists the 620 among his core tactics).
 - **On gap-up days, the names to watch are the ones that back-test, go flat or red, hold, and turn
   green again — that is the pullback spot inside the gap.** `@12:25` (1 / 1) *(thin)*
 - **Level-based triggers when the base is tight: "good above X, below X leave it alone."** OKTA 173,

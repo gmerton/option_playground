@@ -64,9 +64,10 @@ that we do not is the leveraged-ETF vehicle.
    2019–2026 liquid panel. Which one separates 10/21-day forward returns better?
 2. **"Gap-up into a declining 50 SMA" veto:** events where open gaps ≥2% with price < 50 SMA and the
    50 falling → forward returns vs the same gap with a rising 50. Cheap on the panel.
-3. **Morning wash → VWAP reclaim on gap-up days:** this is `ibkr_bot/fade_watch.py`'s RECLAIM-BUY.
-   His version adds "the group must be acting well at that moment." Log his stated triggers and
-   compare with fade_watch alerts on the same names.
+3. **Morning wash → 620 cross → VWAP reclaim on gap-up days:** the 620 is the 5-minute 6/20 EMA cross
+   (Morales); the VWAP reclaim is `ibkr_bot/fade_watch.py`'s RECLAIM-BUY. His version adds "the group
+   must be acting well at that moment." Cheap to add a 6/20 EMA state to fade_watch's 1-minute/5-minute
+   feed and log both triggers on the same names.
 4. **"Held up best during the correction" as a selection feature:** rank names within an industry by
    drawdown from the group's peak; test whether the shallowest-drawdown quintile leads the next leg.
 

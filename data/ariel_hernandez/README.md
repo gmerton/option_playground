@@ -19,8 +19,9 @@ nightly call gets scored against what the chart actually did.
 - **Leveraged ETFs as the default vehicle** (MSFU, NVDL, a SanDisk 2x). Path-dependent decay and
   wider spreads are never discussed. Our vehicle study (`data/studies/august_2026_vehicle_study.md`)
   is the check on this.
-- **Proprietary-sounding jargon:** "620 setup" is his intraday trigger and is never defined in the
-  watchlist videos. Until it is reconstructed from a stream where he draws it, it is a black box.
+- **Jargon is borrowed, not proprietary:** "620 setup" is Gil Morales's 5-minute 6/20 EMA cross with
+  a MACD(6,20) (Virtue of Selfish Investing). Fully public and mechanical, so it is testable; it is
+  also the same object as the 5-minute pullback triggers in Luk's KB and our `fade_watch.py`.
 - **Winners-only recall:** in this video the only losers mentioned are a flat HOOD and a SanDisk
   ETF sold on a weak close. Keep a running tally of stated positions and how they resolved.
 
@@ -69,4 +70,4 @@ the browser cookie jar.
 ## Ticker resolution (auto-caption artifacts)
 
 Palunteer → PLTR · Marll → MRVL · Octa → OKTA · SNX / SNXX → SanDisk leveraged ETF (exact symbol
-unconfirmed) · MSFU → MSFT 2x · NVDL → NVDA 2x · poet → POET.
+unconfirmed) · MSFU → MSFT 2x · NVDL → NVDA 2x · poet → POET · "620 setup" → 5-min 6/20 EMA cross (Morales).
