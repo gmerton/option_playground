@@ -110,6 +110,13 @@ def main():
     block("SETUP (stacked, within 5% under the pivot, contraction <=0.6x, volume dry-up <=0.8x)", S, ["px", "piv", "vs_pivot%", "contr", "dryup", "adr", "stack_d", "off52%", "addv_M", "precision", "industry"], "vs_pivot%", note="set alerts at the pivot; this is the list to be early on")
     txt = "\n".join(lines); print(txt)
     OUT.mkdir(exist_ok=True); (OUT / f"adhikary_scan_{d.date()}.txt").write_text(txt + "\n")
+    # alert export: one row per actionable level (pivot buy-stops for SETUP/A, exhaustion candidates flagged)
+    al = []
+    for tk, r in S.iterrows(): al.append(dict(ticker=tk, alert="buy-stop", level=round(r.piv, 2), kind="SETUP pivot", precision=r.precision, adr=round(r.adr, 1), note=f"contr {r.contr:.2f} dryup {r.dryup:.2f} off52 {r['off52%']:.0f}%"))
+    for tk, r in A.iterrows(): al.append(dict(ticker=tk, alert="broke-today", level=round(r.piv, 2), kind="A breakout", precision=r.precision, adr=round(r.adr, 1), note=f"rvol {r.rvol:.2f} pos {r.pos:.2f}"))
+    for tk, r in B.iterrows(): al.append(dict(ticker=tk, alert="catalyst", level=round(r.piv, 2), kind="B catalyst (no validated edge)", precision="", adr=round(r.adr, 1), note=f"gap {r['gap%']:.1f}% rvol {r.rvol:.2f}"))
+    pd.DataFrame(al).to_csv(OUT / f"alerts_{d.date()}.csv", index=False); pd.DataFrame(al).to_csv(OUT / "alerts_latest.csv", index=False)
+    print(f"\nalerts -> {OUT / f'alerts_{d.date()}.csv'} ({len(al)} rows; precision=YES rows first in your alert tool)")
 
 if __name__ == "__main__":
     main()

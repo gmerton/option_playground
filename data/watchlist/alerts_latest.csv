@@ -1,0 +1,32 @@
+ticker,alert,level,kind,precision,adr,note
+ACN,buy-stop,195.32,SETUP pivot,,3.5,contr 0.37 dryup 0.55 off52 -35%
+CART,buy-stop,52.68,SETUP pivot,,3.7,contr 0.39 dryup 0.65 off52 -3%
+CCC,buy-stop,7.68,SETUP pivot,,4.5,contr 0.30 dryup 0.57 off52 -24%
+CPRT,buy-stop,34.63,SETUP pivot,,3.4,contr 0.40 dryup 0.63 off52 -33%
+CTSH,buy-stop,65.42,SETUP pivot,,3.2,contr 0.26 dryup 0.64 off52 -27%
+CVNA,buy-stop,76.8,SETUP pivot,,4.8,contr 0.35 dryup 0.59 off52 -23%
+DOCS,buy-stop,27.32,SETUP pivot,,6.7,contr 0.14 dryup 0.48 off52 -66%
+ELF,buy-stop,110.0,SETUP pivot,,4.3,contr 0.36 dryup 0.67 off52 -27%
+ELVN,buy-stop,62.0,SETUP pivot,,3.5,contr 0.55 dryup 0.73 off52 -5%
+EPAM,buy-stop,121.53,SETUP pivot,,4.1,contr 0.56 dryup 0.73 off52 -47%
+FTI,buy-stop,80.7,SETUP pivot,,3.1,contr 0.53 dryup 0.68 off52 -1%
+GPN,buy-stop,95.88,SETUP pivot,,3.1,contr 0.45 dryup 0.69 off52 -3%
+HALO,buy-stop,111.15,SETUP pivot,,3.3,contr 0.28 dryup 0.75 off52 -1%
+HL,buy-stop,21.69,SETUP pivot,,4.9,contr 0.36 dryup 0.74 off52 -39%
+HOG,buy-stop,28.65,SETUP pivot,,3.2,contr 0.43 dryup 0.61 off52 -7%
+MAN,buy-stop,63.88,SETUP pivot,,3.6,contr 0.39 dryup 0.54 off52 -3%
+MTDR,buy-stop,60.38,SETUP pivot,,3.0,contr 0.38 dryup 0.67 off52 -10%
+MU,buy-stop,1036.13,SETUP pivot,,4.6,contr 0.44 dryup 0.59 off52 -19%
+NE,buy-stop,48.01,SETUP pivot,,3.1,contr 0.47 dryup 0.69 off52 -15%
+NTRA,buy-stop,343.18,SETUP pivot,,3.4,contr 0.32 dryup 0.75 off52 -4%
+NWL,buy-stop,6.31,SETUP pivot,,4.5,contr 0.28 dryup 0.79 off52 -13%
+OSK,buy-stop,159.26,SETUP pivot,,3.1,contr 0.56 dryup 0.62 off52 -12%
+PGY,buy-stop,23.68,SETUP pivot,,5.4,contr 0.40 dryup 0.56 off52 -49%
+SMCI,buy-stop,40.6,SETUP pivot,,6.1,contr 0.41 dryup 0.61 off52 -33%
+STEP,buy-stop,52.67,SETUP pivot,,4.9,contr 0.38 dryup 0.78 off52 -32%
+TVTX,buy-stop,68.03,SETUP pivot,,3.2,contr 0.33 dryup 0.76 off52 -4%
+ZTS,buy-stop,78.75,SETUP pivot,,3.5,contr 0.44 dryup 0.72 off52 -50%
+CNH,broke-today,13.89,A breakout,YES,4.5,rvol 1.51 pos 0.90
+DHT,broke-today,20.62,A breakout,,3.3,rvol 1.61 pos 0.76
+INSW,broke-today,103.03,A breakout,,3.5,rvol 1.33 pos 0.70
+MRX,broke-today,75.76,A breakout,YES,5.0,rvol 1.97 pos 0.97
