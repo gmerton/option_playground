@@ -420,6 +420,10 @@ def compute_calendar_metrics(df: pd.DataFrame) -> pd.DataFrame:
     df["roc"]            = df["net_pnl"] / df["net_debit"].clip(lower=0.001)
     df["annualized_roc"] = df["roc"] * 365 / df["days_held"].clip(lower=1)
     df["is_win"]         = df["net_pnl"] > 0
+    # after-cost view (lib.studies.costs): $0.0065/sh/leg/side + 25% of entry bid-ask per traded side; short leg settles at expiry
+    from lib.studies.costs import add_calendar_costs
+    df = add_calendar_costs(df, exit_type="exit_type")
+    df["annualized_roc_net"] = df["roc_net"] * 365 / df["days_held"].clip(lower=1)
     df["is_open"]        = ~df["exit_found"].fillna(False)
     return df
 
@@ -627,6 +631,8 @@ def print_calendar_summary(
             "otm_pct": otm / n * 100,
             "avg_debit": closed["net_debit"].mean(),
             "avg_days": closed["days_held"].mean(),
+            "roc_net": closed["roc_net"].mean() * 100,
+            "win_net": closed["is_win_net"].mean() * 100,
         }
 
     width = 80
@@ -649,8 +655,8 @@ def print_calendar_summary(
     hdr1 = f"  {'Delta':>6}"
     hdr2 = f"  {'':>6}"
     for lbl in thresh_labels:
-        hdr1 += f"  {lbl:^33}"
-        hdr2 += f"  {'N':>4} {'Win%':>5} {'ROC%':>6} {'AnnROC%':>8} {'OTM%':>5}"
+        hdr1 += f"  {lbl:^48}"
+        hdr2 += f"  {'N':>4} {'Win%':>5} {'ROC%':>6} {'AnnROC%':>8} {'OTM%':>5} {'ROCnet':>7} {'WinNet':>6}"
     print(hdr1)
     print(hdr2)
     print("  " + "-" * (width - 2))
@@ -673,15 +679,17 @@ def print_calendar_summary(
                     f" {st['roc']:>+5.1f}%"
                     f" {st['ann_roc']:>+7.1f}%"
                     f" {st['otm_pct']:>4.0f}%"
+                    f" {st['roc_net']:>+6.1f}%"
+                    f" {st['win_net']:>5.1f}%"
                 )
             else:
-                row += f"  {'—':^33}"
+                row += f"  {'—':^48}"
         print(row)
 
     print("  " + "-" * (width - 2))
     print(
         f"  N = closed trades (split-spanning excluded)  "
-        f"OTM% = short put expired worthless"
+        f"OTM% = short put expired worthless  ROCnet/WinNet = after $0.65/leg commission + 25% of entry bid-ask per traded side"
     )
     print(f"{bar}\n")
 
@@ -714,9 +722,9 @@ def print_calendar_year_detail(
     print(f"\n  delta={delta_target:.2f}  {vt_label}  — per-year")
     print(
         f"  {'Year':>4}  {'N':>3}  {'Win%':>5}  {'ROC%':>6}  "
-        f"{'AnnROC%':>8}  {'OTM%':>5}  {'AvgDebit':>8}  {'AvgDays':>7}"
+        f"{'AnnROC%':>8}  {'OTM%':>5}  {'AvgDebit':>8}  {'AvgDays':>7}  {'ROCnet':>7}  {'WinNet':>6}  {'Cost/sh':>7}"
     )
-    print("  " + "-" * 68)
+    print("  " + "-" * 96)
 
     closed["_year"] = pd.to_datetime(closed["entry_date"]).dt.year
     for yr, grp in closed.groupby("_year"):
@@ -731,6 +739,9 @@ def print_calendar_year_detail(
             f"  {otm/n*100:>4.0f}%"
             f"  ${grp['net_debit'].mean():>6.2f}"
             f"  {grp['days_held'].mean():>7.1f}"
+            f"  {grp['roc_net'].mean()*100:>+6.1f}%"
+            f"  {grp['is_win_net'].mean()*100:>5.1f}%"
+            f"  ${grp['cost_per_share'].mean():>5.3f}"
         )
     print()
 
@@ -851,8 +862,8 @@ def print_fwd_vol_factor_sweep(
     print(f"\n  Forward Vol Factor Filter  ·  delta={delta_target:.2f}  {vix_lbl}")
     print(f"  fwd_vol_factor = sigma_fwd / short_iv  |  <1.0 = vol expected to fall (favorable)")
     print(f"  Overall avg factor: {avg_factor:.3f}  |  NaN entries (extreme backwardation): {nan_count}")
-    print(f"  {'max factor':>12}  {'N':>4}  {'Skip%':>6}  {'Win%':>5}  {'ROC%':>6}  {'AnnROC%':>8}  {'OTM%':>5}  {'AvgFactor':>9}")
-    print("  " + "-" * 72)
+    print(f"  {'max factor':>12}  {'N':>4}  {'Skip%':>6}  {'Win%':>5}  {'ROC%':>6}  {'AnnROC%':>8}  {'OTM%':>5}  {'AvgFactor':>9}  {'ROCnet':>7}  {'WinNet':>6}  {'AvgDebit':>8}  {'Cost/sh':>7}")
+    print("  " + "-" * 108)
 
     for thr in fwd_vol_thresholds:
         if thr is None:
@@ -877,6 +888,7 @@ def print_fwd_vol_factor_sweep(
         print(
             f"  {label:>12}  {n:>4}  {skip_pct:>5.1f}%  {win_pct:>4.1f}%"
             f"  {roc:>+5.1f}%  {ann_roc:>+7.1f}%  {otm_pct:>4.0f}%  {avg_f:>9.3f}"
+            f"  {grp['roc_net'].mean()*100:>+6.1f}%  {grp['is_win_net'].mean()*100:>5.1f}%  ${grp['net_debit'].mean():>6.3f}  ${grp['cost_per_share'].mean():>5.3f}"
         )
     print()
 

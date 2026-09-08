@@ -588,6 +588,10 @@ def compute_spread_metrics(df: pd.DataFrame) -> pd.DataFrame:
     df["annualized_roc"] = df["roc"] * 365 / df["days_held"].clip(lower=1)
     df["is_win"]         = df["net_pnl"] > 0
     df["is_open"]        = df["missing_exit_data"].fillna(False)
+    # after-cost view (lib.studies.costs): commission + 25% of each leg's entry bid-ask, entry and any traded exit
+    from lib.studies.costs import add_spread_costs
+    df = add_spread_costs(df, exit_type="exit_type", expiry_types=("expiry", "missing"), pnl_col="net_pnl", capital_col="max_loss", per_contract=True)
+    df["annualized_roc_net"] = df["roc_net"] * 365 / df["days_held"].clip(lower=1)
     return df
 
 
@@ -746,8 +750,8 @@ def print_fwd_vol_factor_sweep(
     print(f"\n  Forward Vol Factor Filter  ·  short={short_delta:.2f}  wing={wing_width:.2f}  {vix_lbl}")
     print(f"  fwd_vol_factor = sigma_fwd / near_iv  |  <1.0 = vol expected to fall (favorable for short puts)")
     print(f"  Overall avg factor: {avg_factor:.3f}  |  NaN entries: {nan_count}")
-    print(f"  {'max factor':>12}  {'N':>4}  {'Skip%':>6}  {'Win%':>5}  {'ROC%':>6}  {'AnnROC%':>8}  {'AvgFactor':>9}")
-    print("  " + "-" * 68)
+    print(f"  {'max factor':>12}  {'N':>4}  {'Skip%':>6}  {'Win%':>5}  {'ROC%':>6}  {'AnnROC%':>8}  {'AvgFactor':>9}  {'ROCnet':>7}  {'WinNet':>6}")
+    print("  " + "-" * 86)
 
     for thr in fwd_vol_thresholds:
         if thr is None:
@@ -772,6 +776,7 @@ def print_fwd_vol_factor_sweep(
         print(
             f"  {label:>12}  {n:>4}  {skip_pct:>5.1f}%  {win_pct:>4.1f}%"
             f"  {roc:>+5.2f}%  {ann_roc:>+7.1f}%  {avg_f:>9.3f}"
+            f"  {grp['roc_net'].mean()*100:>+6.2f}%  {grp['is_win_net'].mean()*100:>5.1f}%"
         )
     print()
 
@@ -927,9 +932,11 @@ def print_spread_sweep_summary(
             "roc":        closed["roc"].mean() * 100,
             "ann_roc":    closed["annualized_roc"].mean() * 100,
             "credit_pct": closed["credit_pct_of_width"].mean() * 100,
+            "roc_net":    closed["roc_net"].mean() * 100,
+            "win_net":    closed["is_win_net"].mean() * 100,
         }
 
-    width = 84
+    width = 120
     bar   = "=" * width
 
     _day_name = {0: "Mondays", 1: "Tuesdays", 2: "Wednesdays", 3: "Thursdays", 4: "Fridays"}.get(entry_weekday, f"weekday={entry_weekday}")
@@ -959,8 +966,8 @@ def print_spread_sweep_summary(
             hdr1 = f"  {'ShortΔ':>7}"
             hdr2 = f"  {'':>7}"
             for lbl in thresh_labels:
-                hdr1 += f"  {lbl:^33}"
-                hdr2 += f"  {'N(E%)':>5} {'Win%':>5} {'Pnl%':>6} {'ROC%':>6} {'AnnROC%':>8} {'Crd%':>4}"
+                hdr1 += f"  {lbl:^48}"
+                hdr2 += f"  {'N(E%)':>5} {'Win%':>5} {'Pnl%':>6} {'ROC%':>6} {'AnnROC%':>8} {'Crd%':>4} {'ROCnet':>7} {'WinNet':>6}"
             print(hdr1)
             print(hdr2)
             print("  " + "-" * (width - 2))
@@ -986,16 +993,18 @@ def print_spread_sweep_summary(
                             f" {st['roc']:>+5.2f}%"
                             f" {st['ann_roc']:>+7.1f}%"
                             f" {st['credit_pct']:>3.0f}%"
+                            f" {st['roc_net']:>+6.2f}%"
+                            f" {st['win_net']:>5.1f}%"
                         )
                     else:
-                        row += f"  {'—':^33}"
+                        row += f"  {'—':^48}"
                 print(row)
 
             print("  " + "-" * (width - 2))
             print(
                 f"  N = closed trades (split-spanning excluded)  "
                 f"E% = {int(profit_take_pct*100)}% profit take  "
-                f"Crd% = net_credit/spread_width"
+                f"Crd% = net_credit/spread_width  ROCnet/WinNet = after $0.65/leg commission + 25% of entry bid-ask per traded side"
             )
             print(bar)
 
@@ -1034,9 +1043,9 @@ def print_spread_year_detail(
     )
     print(
         f"  {'Year':>4}  {'N':>3}  {'E%':>4}  {'Win%':>5}  {'Pnl%':>6}  "
-        f"{'ROC%':>6}  {'AnnROC%':>8}  {'AvgDays':>7}  {'Crd%':>5}"
+        f"{'ROC%':>6}  {'AnnROC%':>8}  {'AvgDays':>7}  {'Crd%':>5}  {'ROCnet':>7}  {'WinNet':>6}"
     )
-    print("  " + "-" * 68)
+    print("  " + "-" * 86)
 
     closed["_year"] = pd.to_datetime(closed["entry_date"]).dt.year
     for yr, grp in closed.groupby("_year"):
@@ -1051,6 +1060,8 @@ def print_spread_year_detail(
             f"  {grp['annualized_roc'].mean()*100:>+7.1f}%"
             f"  {grp['days_held'].mean():>7.1f}"
             f"  {grp['credit_pct_of_width'].mean()*100:>4.0f}%"
+            f"  {grp['roc_net'].mean()*100:>+6.2f}%"
+            f"  {grp['is_win_net'].mean()*100:>5.1f}%"
         )
     print()
 
