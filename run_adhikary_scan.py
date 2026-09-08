@@ -16,6 +16,9 @@ Archetypes (recipe #5 pivot = highest high of the prior 15 sessions; #6 triggers
   SETUP         pre-breakout watch: stacked, within 5% under the pivot, 10d range <= 0.6x the prior
                 20d range, 5d volume <= 0.8x the 50d average (VCP contraction + dry-up)
 Vehicle (recipe #7): <=11 DTE near-ATM 0.5-0.9 delta; >=15 DTE OTM 0.2-0.35 delta; premium $0.5-6.
+Validation (data/studies/adhikary_detector_validation.md, 2019-2026): recipe-as-written A is ~flat (R +0.16, 29% win);
+the PRECISION tier (ADR 4-7, within 15% of the 52wk high, stacked 5-40d) is the cohort that held up (R +0.67, positive
+6 of 8 years); SETUP days raise P(break within 10s) 45%->57%; B has no edge; C on daily bars is INVERTED.
 Exit: grind -> trail the 20 EMA daily close; spike (option 3x in days) -> sell into strength.
 
 Usage: TRADIER_API_KEY=... PYTHONPATH=src python run_adhikary_scan.py [--asof YYYY-MM-DD] [--no-live]
@@ -89,6 +92,8 @@ def main():
         im = pd.read_csv(INDMAP).set_index("ticker").industry; base["industry"] = im.reindex(base.index).fillna("?").str.slice(0, 22)
     gate = (base.adr >= ADR_MIN) & (base.range52 >= RANGE52_MIN) & base.piv.notna()
     b = base[gate].copy()
+    # validated precision tier (data/studies/adhikary_detector_validation.md): ADR 4-7, within 15% of the 52wk high, stacked 5-40d
+    b["precision"] = np.where(b.adr.between(4, 7) & (b["off52%"] > -15) & b.stack_d.between(5, 40), "YES", "")
     A = b[(b.px >= b.piv) & (b.rvol >= 1.1) & (b.pos >= 0.5) & (b.stack_d >= 5) & (b["gap%"] < 5) & (b["chg%"] < 8)]
     B = b[((b["gap%"] >= 5) | (b["chg%"] >= 8)) & (b.rvol >= 2) & (b.px >= b.piv) & (b.pos >= 0.75)]
     Cx = b[(H.loc[d] >= H.shift(1).rolling(20).max().loc[d]) & (C.loc[d] < O.loc[d]) & (b.pos <= 0.30) & (b.rvol >= 2.3) & (b.ext20_adr >= 2) & stacked.loc[d]]
@@ -98,11 +103,11 @@ def main():
     def block(title, df, cols, sort, asc=False, note=""):
         lines.append(f"\n--- {title}: {len(df)} ---" + (f"  {note}" if note else ""))
         if len(df): lines.append(df.sort_values(sort, ascending=asc)[cols].round(2).to_string())
-    cA = ["px", "chg%", "piv", "vs_pivot%", "rvol", "pos", "adr", "stack_d", "contr", "dryup", "off52%", "addv_M", "industry"]
-    block("A  BREAKOUT (close clears the 15d pivot, RVOL>=1.1, stacked >=5d)", A, cA, "rvol", note="Tito enters the first decisive close through the pivot; real volume often comes the NEXT day")
+    cA = ["px", "chg%", "piv", "vs_pivot%", "rvol", "pos", "adr", "stack_d", "contr", "dryup", "off52%", "addv_M", "precision", "industry"]
+    block("A  BREAKOUT (close clears the 15d pivot, RVOL>=1.1, stacked >=5d)", A, cA, "rvol", note="precision=YES is the validated cohort (mean R +0.67 vs +0.16 for all A); the rest is context")
     block("B  CATALYST (gap/8%+ day on >=2x vol, clears pivot, closes near high)", B, ["px", "chg%", "gap%", "piv", "vs_pivot%", "rvol", "pos", "adr", "stack_d", "off52%", "addv_M", "industry"], "rvol", note="do not chase the AH pop; require the pivot to HOLD in the cash session")
-    block("C  EXHAUSTION SHORT (new 20d high, reversal close near low, >=2.3x vol, >=2 ADR over 20 SMA)", Cx, ["px", "chg%", "rvol", "pos", "ext20_adr", "adr", "off52%", "addv_M", "industry"], "rvol", note="0DTE/short-dated put, entered intraday once the high fails")
-    block("SETUP (stacked, within 5% under the pivot, contraction <=0.6x, volume dry-up <=0.8x)", S, ["px", "piv", "vs_pivot%", "contr", "dryup", "adr", "stack_d", "off52%", "addv_M", "industry"], "vs_pivot%", note="set alerts at the pivot; this is the list to be early on")
+    block("C  EXHAUSTION -- DAILY PROXY ONLY (validation 2019-26: this bar is a CONTINUATION signal on daily data, +1.8%/21s; do NOT short it from the daily bar)", Cx, ["px", "chg%", "rvol", "pos", "ext20_adr", "adr", "off52%", "addv_M", "industry"], "rvol", note="candidate-narrower for an intraday 0DTE fade only")
+    block("SETUP (stacked, within 5% under the pivot, contraction <=0.6x, volume dry-up <=0.8x)", S, ["px", "piv", "vs_pivot%", "contr", "dryup", "adr", "stack_d", "off52%", "addv_M", "precision", "industry"], "vs_pivot%", note="set alerts at the pivot; this is the list to be early on")
     txt = "\n".join(lines); print(txt)
     OUT.mkdir(exist_ok=True); (OUT / f"adhikary_scan_{d.date()}.txt").write_text(txt + "\n")
 
