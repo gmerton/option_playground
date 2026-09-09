@@ -47,6 +47,17 @@ class AlertPublisher:
         self._dirty = False
         LOCAL_DIR.mkdir(parents=True, exist_ok=True)
         install_page()
+        # never clobber a day that already has alerts (e.g. a restart, or an evening start
+        # that used to resolve to today's date): carry the existing alerts forward
+        prev = LOCAL_DIR / f"{session.isoformat()}.json"
+        if prev.exists():
+            try:
+                old = json.loads(prev.read_text())
+                if old.get("alerts"):
+                    self.doc["alerts"] = old["alerts"]
+                    self.doc["mode"] = old.get("mode", mode) if mode == "replay" else mode
+            except json.JSONDecodeError:
+                pass
 
     # ---- data ------------------------------------------------------------------
     def add(self, a) -> None:

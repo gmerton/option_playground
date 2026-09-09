@@ -19,8 +19,9 @@ import asyncio
 import os
 import subprocess
 import sys
-from datetime import date, datetime
+from datetime import date, datetime, time, timedelta
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 import pandas as pd
 
@@ -45,9 +46,21 @@ def _mac_alert(title: str, msg: str) -> None:
     subprocess.Popen(["afplay", "/System/Library/Sounds/Glass.aiff"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
 
+def live_session_date() -> date:
+    """The session the monitor is (or will be) watching: today in ET, or the next weekday
+    when started after the close -- so an evening start never overwrites today's files."""
+    now = datetime.now(ZoneInfo("America/New_York"))
+    d = now.date()
+    if now.time() >= time(16, 5):
+        d += timedelta(days=1)
+    while d.weekday() >= 5:
+        d += timedelta(days=1)
+    return d
+
+
 class Engine:
     def __init__(self, ctx: dict, detectors: list[str], session: date, dialog: bool,
-                 publisher: AlertPublisher | None = None):
+                 publisher: AlertPublisher | None = None, replay: bool = False):
         self.ctx = ctx
         self.publisher = publisher
         self.books = {s: SymbolBook(s) for s in ctx}
@@ -55,7 +68,7 @@ class Engine:
         self.detectors = [DETECTORS[d] for d in detectors]
         self.dialog = dialog
         LOGS.mkdir(parents=True, exist_ok=True)
-        self.log = LOGS / f"universe_alerts_{session.isoformat()}.log"
+        self.log = LOGS / f"universe_alerts_{session.isoformat()}{'_replay' if replay else ''}.log"
         self.fired: list[Alert] = []
 
     def on_closed_bar(self, sym: str, b: Bar) -> None:
@@ -78,7 +91,7 @@ class Engine:
 
 
 async def run_live(args) -> int:
-    session = date.today()
+    session = live_session_date()
     if args.symbols:
         universe = [s.upper() for s in args.symbols]
     else:
@@ -149,7 +162,7 @@ async def run_replay(args) -> int:
         print("replay needs symbols"); return 2
     ctx = await load_context(syms, session)
     pub = AlertPublisher(session, mode="replay", universe_n=len(ctx)) if args.publish else None
-    eng = Engine(ctx, args.detectors.split(","), session, dialog=False, publisher=pub)
+    eng = Engine(ctx, args.detectors.split(","), session, dialog=False, publisher=pub, replay=True)
     async with TradierClient(api_key=os.environ["TRADIER_API_KEY"]) as client:
         for sym in syms:
             if sym not in ctx:
