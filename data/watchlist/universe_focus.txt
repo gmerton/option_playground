@@ -26,7 +26,7 @@ TSLA
 QCOM
 QBTS
 
-# --- Ariel 9/9 watchlist not already above (CRAK = his short idea) ---
+# --- Ariel 9/9 watchlist not already above (CRAK left out: short idea, the detectors are long-only) ---
 CRCL
 HOOD
 IBIT
@@ -34,7 +34,6 @@ PLTR
 SNDK
 MRVL
 DELL
-CRAK
 
 # --- semis / memory / photonics reads ---
 MU
