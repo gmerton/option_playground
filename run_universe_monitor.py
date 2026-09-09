@@ -6,7 +6,10 @@ Live:    PYTHONPATH=src .venv/bin/python3 run_universe_monitor.py
 Replay:  PYTHONPATH=src .venv/bin/python3 run_universe_monitor.py --replay 2026-09-08 SPCX LITE
          (feeds Tradier 1-min timesales through the same books + detectors)
 
-Detectors: UR (undercut & reclaim), ORB9 (opening-range break above the daily 9 EMA).
+Detectors: long = UR (undercut & reclaim), ORB9 (opening-range break above the daily 9 EMA);
+short = BIR (bounce into a declining MA, first violation of higher lows; short universe only),
+FBO (failed breakout of the prior-day high / opening range; every name -- also the exit tell for a long).
+Short universe = data/watchlist/universe_short.txt + long-universe names below their 9 and 21 EMA.
 Delivery: terminal + data/watchlist/logs/universe_alerts_<date>.log + macOS dialog (--no-dialog),
 plus the journal website: data/journal/alerts/<date>.json mirrored to s3://gmerton-trade-journal/alerts/
 (read by alerts.html). Live publishes by default (--no-publish to skip); replay publishes only with --publish.
@@ -27,7 +30,7 @@ import pandas as pd
 
 from lib.alerts.bars import Bar, SymbolBook
 from lib.alerts.context import load_context
-from lib.alerts.detectors import DETECTORS, INDEX_SYMBOLS, Alert, IndexState, SymbolState
+from lib.alerts.detectors import DETECTORS, INDEX_SYMBOLS, SHORT_KINDS, Alert, IndexState, SymbolState
 from lib.alerts.publish import AlertPublisher
 from lib.alerts.stream import trades
 from lib.alerts.universe import build_universe
@@ -40,6 +43,12 @@ LOGS = REPO / "data" / "watchlist" / "logs"
 
 def _sound() -> None:
     subprocess.Popen(["afplay", "/System/Library/Sounds/Glass.aiff"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+
+def _read_list(p: Path) -> set[str]:
+    if not p.exists():
+        return set()
+    return {l.split("#")[0].strip().upper() for l in p.read_text().splitlines() if l.split("#")[0].strip()}
 
 
 def _mac_alert(title: str, msg: str) -> None:
@@ -65,14 +74,20 @@ def live_session_date() -> date:
 class Engine:
     def __init__(self, ctx: dict, detectors: list[str], session: date, dialog: bool,
                  publisher: AlertPublisher | None = None, replay: bool = False,
-                 sound: bool = False, index_gate: bool = False):
+                 sound: bool = False, index_gate: bool = False, short_syms: set[str] | None = None):
         self.ctx = ctx
         self.publisher = publisher
+        # BIR runs only on the short universe; FBO runs everywhere (a failed breakout is a fact
+        # about the day, and on a long-universe name it doubles as the exit signal); UR/ORB9 only
+        # on long-universe names.
+        self.short_syms = short_syms or set()
         self.books = {s: SymbolBook(s) for s in ctx}
         for s in INDEX_SYMBOLS:                       # index books: streamed, never detected on
             self.books.setdefault(s, SymbolBook(s))
         self.state = {s: SymbolState() for s in ctx}
         self.detectors = [DETECTORS[d] for d in detectors]
+        self.named_detectors = [(d, DETECTORS[d]) for d in detectors]
+        self.long_syms: set[str] = set(ctx) - (short_syms or set())
         self.dialog = dialog
         self.sound = sound
         self.index_gate = index_gate
@@ -87,14 +102,21 @@ class Engine:
         if sym not in self.ctx:                        # SPY/QQQ: state only
             return
         book, ctx, st = self.books[sym], self.ctx[sym], self.state[sym]
-        for det in self.detectors:
+        is_short_name = sym in self.short_syms
+        for name, det in self.named_detectors:
+            if name == "bir" and not is_short_name:
+                continue
+            if name in ("ur", "orb9") and is_short_name and sym not in self.long_syms:
+                continue
             a = det(book, ctx, st, b, self.idx)
             if a is not None:
                 self.emit(a)
 
     def emit(self, a: Alert) -> None:
         a.msg += self.idx.stamp(a.fields, a.t)
-        gated = self.index_gate and a.fields.get("index_above") is False
+        above = a.fields.get("index_above")
+        # mirrored gate: longs are gated while SPY is under VWAP, shorts while it is above
+        gated = self.index_gate and above is not None and (above is False if a.kind not in SHORT_KINDS else above is True)
         a.fields["gated"] = gated
         self.fired.append(a)
         line = f"[{a.t:%Y-%m-%d %H:%M}] {a.symbol:6s} {a.kind:5s} {'(gated) ' if gated else ''}{a.msg}"
@@ -117,13 +139,18 @@ async def run_live(args) -> int:
     else:
         universe, parts = build_universe(write=not args.no_rebuild, full=args.full)
         print("universe: " + ", ".join(f"{k}={len(v)}" for k, v in parts.items()) + f" -> {len(universe)} names")
-    ctx = await load_context(universe, session)
+    short_manual = _read_list(REPO / "data" / "watchlist" / "universe_short.txt")
+    ctx = await load_context(sorted(set(universe) | short_manual), session)
+    short_syms = short_manual | {s for s in universe if s in ctx and ctx[s].bearish}
+    if short_syms:
+        print(f"short universe ({len(short_syms)}): manual {len(short_manual)} + bearish-stacked from the long list "
+              f"{len(short_syms - short_manual)} -> " + " ".join(sorted(short_syms)))
     missing = sorted(set(universe) - set(ctx))
     if missing:
         print(f"  no daily context for {len(missing)}: {' '.join(missing[:20])}{' ...' if len(missing) > 20 else ''}")
     pub = None if args.no_publish else AlertPublisher(session, mode="live", universe_n=len(ctx))
     eng = Engine(ctx, args.detectors.split(","), session, dialog=not args.no_dialog, publisher=pub,
-                 sound=args.sound, index_gate=args.index_gate)
+                 sound=args.sound, index_gate=args.index_gate, short_syms=short_syms)
     print(f"[{datetime.now():%H:%M:%S}] streaming {len(ctx)} names + SPY/QQQ | detectors {args.detectors} | log {eng.log}"
           f"{' | publishing to the journal site' if pub else ''}{' | UR index-gated' if args.index_gate else ''}{' | sound on' if args.sound else ''}")
     print("  " + " ".join(sorted(ctx)))
@@ -183,8 +210,10 @@ async def run_replay(args) -> int:
         print("replay needs symbols"); return 2
     ctx = await load_context(syms, session)
     pub = AlertPublisher(session, mode="replay", universe_n=len(ctx)) if args.publish else None
+    # replay: every symbol is eligible for every requested detector (validation mode)
     eng = Engine(ctx, args.detectors.split(","), session, dialog=False, publisher=pub, replay=True,
-                 index_gate=args.index_gate)
+                 index_gate=args.index_gate, short_syms=set(syms))
+    eng.long_syms = set(syms)
     async with TradierClient(api_key=os.environ["TRADIER_API_KEY"]) as client:
         for isym in INDEX_SYMBOLS:
             im = await get_intraday_bars(isym, session, interval="1min", client=client)
@@ -218,7 +247,7 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("symbols", nargs="*", help="explicit symbols (live: overrides the universe)")
     ap.add_argument("--replay", metavar="YYYY-MM-DD", help="replay a past session from Tradier 1-min bars")
-    ap.add_argument("--detectors", default="ur,orb9")
+    ap.add_argument("--detectors", default="ur,orb9,bir,fbo", help="comma list of ur,orb9 (long) and bir,fbo (short)")
     ap.add_argument("--no-rebuild", action="store_true", help="use universe_latest.txt as-is")
     ap.add_argument("--full", action="store_true", help="preferred-list union instead of universe_focus.txt")
     ap.add_argument("--no-dialog", action="store_true")

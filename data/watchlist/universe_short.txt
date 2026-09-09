@@ -1,0 +1,3 @@
+# Short-watch universe for BIR alerts (one ticker per line). Long-list names below their
+# 9 and 21 EMA are added automatically at startup; nothing here is ever bought.
+CRAK

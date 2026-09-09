@@ -32,6 +32,20 @@ class DailyCtx:
     adr_pct: float
     avg_vol20: float
     high15: float
+    ema50: float = 0.0
+    sma50: float = 0.0
+    sma200: float = 0.0
+
+    def levels_above(self) -> list[tuple[str, float]]:
+        """Daily resistance candidates for the short-side detectors, named."""
+        out = [("9 EMA", self.ema9), ("21 EMA", self.ema21), ("50 EMA", self.ema50), ("50 SMA", self.sma50),
+               ("200 SMA", self.sma200), ("PDH", self.prev_high)]
+        return [(n, v) for n, v in out if v and v > 0]
+
+    @property
+    def bearish(self) -> bool:
+        """Below the 9 and 21 EMA at the prior close = the BIR daily gate."""
+        return self.prev_close < self.ema9 and self.prev_close < self.ema21
 
 
 def _ctx_from_hist(sym: str, hist: pd.DataFrame) -> DailyCtx:
@@ -46,13 +60,16 @@ def _ctx_from_hist(sym: str, hist: pd.DataFrame) -> DailyCtx:
         adr_pct=float(((hist["high"] / hist["low"] - 1).tail(20).mean()) * 100),
         avg_vol20=float(hist["volume"].tail(20).mean()),
         high15=float(hist["high"].tail(15).max()),
+        ema50=float(c.ewm(span=50, adjust=False).mean().iloc[-1]),
+        sma50=float(c.rolling(50).mean().iloc[-1]) if len(c) >= 50 else 0.0,
+        sma200=float(c.rolling(200).mean().iloc[-1]) if len(c) >= 200 else 0.0,
     )
 
 
 async def _one(sym: str, session: date, client: TradierClient, sem: asyncio.Semaphore) -> DailyCtx | None:
     async with sem:
         try:
-            d = await get_daily_history(sym, session - timedelta(days=120), session, client=client)
+            d = await get_daily_history(sym, session - timedelta(days=330), session, client=client)
         except Exception as exc:  # noqa: BLE001 - skip the symbol, keep the run
             print(f"  ! {sym}: {exc.__class__.__name__}")
             return None
@@ -70,7 +87,7 @@ async def _one(sym: str, session: date, client: TradierClient, sem: asyncio.Sema
 
 async def load_context(symbols: list[str], session: date, *, refresh: bool = False) -> dict[str, DailyCtx]:
     CACHE.mkdir(parents=True, exist_ok=True)
-    p = CACHE / f"alert_ctx_{session.isoformat()}.parquet"
+    p = CACHE / f"alert_ctx_v2_{session.isoformat()}.parquet"
     have: dict[str, DailyCtx] = {}
     if p.exists() and not refresh:
         df = pd.read_parquet(p)

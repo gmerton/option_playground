@@ -117,12 +117,19 @@ def gap_tag(book: SymbolBook, ctx: DailyCtx) -> str:
     return f" | GAP {gap_adr:+.1f} ADR (no hour-one gap buys)" if gap_adr >= GAP_WARN_ADR else ""
 
 
+class ShortState:
+    def __init__(self) -> None:
+        self.bir_fires: list[float] = []     # bounce highs already used
+        self.fbo_fired: set[str] = set()     # levels already used ("PDH", "OR")
+
+
 class SymbolState:
     def __init__(self) -> None:
         self.below_vwap_seen = False
         self.ur_fires: list[float] = []      # session lows at each UR fire
         self.orb_fired = False
         self.orb_disqualified = False
+        self.short = ShortState()
 
 
 def detect_ur(book: SymbolBook, ctx: DailyCtx, st: SymbolState, b: Bar, idx: IndexState | None = None) -> Alert | None:
@@ -165,7 +172,7 @@ def detect_ur(book: SymbolBook, ctx: DailyCtx, st: SymbolState, b: Bar, idx: Ind
            f"({-flush_adr:.2f} ADR, {tag}) | stop {lo:.2f} ({(b.close / lo - 1) * 100:.1f}%){ema_note} | "
            f"{adr_from_21(b.close, ctx):+.1f} ADR vs 21 EMA | vol pace {pace:.1f}x{gap_tag(book, ctx)}")
     return Alert(book.symbol, "UR", b.t, b.close, lo, msg, {
-        "low": round(lo, 2), "low_time": book.low_time.strftime("%H:%M"), "flush_adr": round(-flush_adr, 2),
+        "side": "long", "low": round(lo, 2), "low_time": book.low_time.strftime("%H:%M"), "flush_adr": round(-flush_adr, 2),
         "tag": tag, "stop_pct": round((b.close / lo - 1) * 100, 2), "below_ema9": b.close < ctx.ema9,
         "adr_vs_21": round(adr_from_21(b.close, ctx), 1), "vol_pace": round(pace, 1),
         "gap_adr": round((book.session_open / ctx.prev_close - 1) * 100 / ctx.adr_pct, 2) if ctx.adr_pct else 0.0})
@@ -206,11 +213,125 @@ def detect_orb9(book: SymbolBook, ctx: DailyCtx, st: SymbolState, b: Bar, idx: I
            f"stop {stop:.2f} ({(last5.close / stop - 1) * 100:.1f}%) | {adr_from_21(last5.close, ctx):+.1f} ADR vs 21 EMA | "
            f"vol pace {pace:.1f}x{' (light vol)' if pace < 1.2 else ''} | 15d high {ctx.high15:.2f}{gap_tag(book, ctx)}")
     return Alert(book.symbol, "ORB9", b.t, last5.close, stop, msg, {
-        "or_high": round(or_high, 2), "open_pct": round((book.session_open / ctx.prev_close - 1) * 100, 2),
+        "side": "long", "or_high": round(or_high, 2), "open_pct": round((book.session_open / ctx.prev_close - 1) * 100, 2),
         "ema9": round(ctx.ema9, 2), "stop_pct": round((last5.close / stop - 1) * 100, 2), "below_ema9": False,
         "adr_vs_21": round(adr_from_21(last5.close, ctx), 1), "vol_pace": round(pace, 1), "light_vol": pace < 1.2,
         "high15": round(ctx.high15, 2),
         "gap_adr": round((book.session_open / ctx.prev_close - 1) * 100 / ctx.adr_pct, 2) if ctx.adr_pct else 0.0})
 
 
-DETECTORS = {"ur": detect_ur, "orb9": detect_orb9}
+# --- short-side parameters ------------------------------------------------------------
+BIR_MIN_BOUNCE_ADR = 0.40      # rally from the session low into the level, in ADR
+BIR_TAG_PCT = 0.30             # high within this % of the level (floor; 0.1 ADR if larger) counts as a tag
+BIR_MAX_AGE_MIN = 60           # the bounce high must be within this many minutes of the trigger
+BIR_MAX_FIRES = 2
+STOP_BUFFER_ADR = 0.10         # stop = high * (1 + this * ADR)
+STOP_NOISE_ADR = 0.40          # stops closer than this are tagged "stop in noise" (SPCX/IONQ lesson)
+FBO_BY = time(15, 0)
+FBO_OR_BY = time(11, 30)       # the opening-range variant only counts in the first two hours
+FBO_MIN_PUSH_ADR = 0.15        # the breakout must have carried this far above the level (not a wick)
+FBO_NOT_BEFORE = time(9, 50)   # let the opening range form; a first-15-min failure is a gap-and-fade, not this pattern
+FBO_MAX_AGE_MIN = 90           # the failure must come within this long of the session high (else the stop is a day-range away)
+
+
+def _five(book: SymbolBook) -> list[Bar]:
+    return book.five_min_bars()
+
+
+def _stop_fields(entry: float, high: float, ctx: DailyCtx) -> tuple[float, dict]:
+    stop = high * (1 + STOP_BUFFER_ADR * ctx.adr_pct / 100)
+    dist_pct = (stop / entry - 1) * 100
+    dist_adr = dist_pct / ctx.adr_pct if ctx.adr_pct else 0.0
+    return stop, {"stop_pct": round(dist_pct, 2), "stop_adr": round(dist_adr, 2), "stop_in_noise": dist_adr < STOP_NOISE_ADR}
+
+
+def detect_bir(book: SymbolBook, ctx: DailyCtx, st: "SymbolState", b: Bar, idx: IndexState | None = None) -> Alert | None:
+    """Bounce Into Resistance (short). Daily gate: below the 9 and 21 EMA at the prior close.
+    Intraday: a rally of >= BIR_MIN_BOUNCE_ADR from the session low that tags a level above
+    (9/21/50 EMA, 50/200 SMA, prior-day high), then the first completed 5-min bar that closes
+    below the previous 5-min bar's low -- the first violation of the bounce's higher lows.
+    Stop above the bounce high. IONQ 9/8 (200 SMA), AXTI 9/8 (50 EMA), AAPL 9/9 (50 SMA)."""
+    ss = st.short
+    if not ctx.bearish or (b.t.minute + 1) % 5 != 0 or len(ss.bir_fires) >= BIR_MAX_FIRES:
+        return None
+    f5 = _five(book)
+    if len(f5) < 3:
+        return None
+    cur, prev = f5[-1], f5[-2]
+    if cur.close >= prev.low:                                   # need the violation of the prior 5-min low
+        return None
+    hist = f5[:-1]
+    hi_bar = max(hist, key=lambda x: x.high); hi = hi_bar.high
+    if (b.t - hi_bar.t).total_seconds() / 60 > BIR_MAX_AGE_MIN:
+        return None
+    if ss.bir_fires and hi <= ss.bir_fires[-1]:
+        return None
+    lo_before = min(x.low for x in hist if x.t <= hi_bar.t)
+    if (hi / lo_before - 1) * 100 / ctx.adr_pct < BIR_MIN_BOUNCE_ADR:
+        return None
+    band = max(BIR_TAG_PCT, 0.10 * ctx.adr_pct) / 100
+    tagged = [(n, v) for n, v in ctx.levels_above() if v >= lo_before and (abs(hi / v - 1) <= band or (lo_before < v <= hi and cur.close < v))]
+    if not tagged:
+        return None
+    name, level = min(tagged, key=lambda nv: abs(hi - nv[1]))
+    if cur.close >= level:
+        return None
+    ss.bir_fires.append(hi)
+    stop, sf = _stop_fields(cur.close, hi, ctx)
+    pace = vol_pace(book, ctx, b.t)
+    msg = (f"BIR short {cur.close:.2f} < prior 5m low {prev.low:.2f} | bounce {lo_before:.2f}->{hi:.2f}@{hi_bar.t:%H:%M} "
+           f"({(hi / lo_before - 1) * 100 / ctx.adr_pct:.2f} ADR) into {name} {level:.2f} | stop {stop:.2f} ({sf['stop_pct']:.1f}%, {sf['stop_adr']:.2f} ADR"
+           f"{', STOP IN NOISE -- size to it' if sf['stop_in_noise'] else ''}) | {adr_from_21(cur.close, ctx):+.1f} ADR vs 21 EMA | vol pace {pace:.1f}x")
+    return Alert(book.symbol, "BIR", b.t, cur.close, stop, msg, {"side": "short", "level": name, "level_px": round(level, 2),
+                 "bounce_high": round(hi, 2), "bounce_adr": round((hi / lo_before - 1) * 100 / ctx.adr_pct, 2), **sf,
+                 "adr_vs_21": round(adr_from_21(cur.close, ctx), 1), "vol_pace": round(pace, 1), "gap_adr": round((book.session_open / ctx.prev_close - 1) * 100 / ctx.adr_pct, 2) if ctx.adr_pct else 0.0})
+
+
+def detect_fbo(book: SymbolBook, ctx: DailyCtx, st: "SymbolState", b: Bar, idx: IndexState | None = None) -> Alert | None:
+    """Failed Breakout (short). The session traded above the prior-day high (or, after 09:45, the
+    15-min opening-range high), then a completed 5-min bar closes back below that level AND
+    below VWAP. Stop above the failed-breakout high. The mirror of ORB9; 'the better it looks
+    long, the better the failed-breakout short'. MU 9/1, SNDK/WDC climax cases."""
+    ss = st.short
+    if (b.t.minute + 1) % 5 != 0 or not (FBO_NOT_BEFORE <= b.t.time() <= FBO_BY) or book.session_open is None:
+        return None
+    f5 = _five(book)
+    if len(f5) < 2:
+        return None
+    cur = f5[-1]
+    hi_bar = max(f5[:-1], key=lambda x: x.high)
+    if (b.t - hi_bar.t).total_seconds() / 60 > FBO_MAX_AGE_MIN:
+        return None
+    levels = [("PDH", ctx.prev_high)]
+    orng = book.opening_range(15)
+    if orng is not None:
+        levels.append(("OR", orng[0]))
+    for name, level in levels:
+        if name in ss.fbo_fired or level <= 0:
+            continue
+        if name == "OR" and b.t.time() > FBO_OR_BY:
+            continue
+        if book.session_high <= level or cur.close >= level or cur.close >= cur.vwap:
+            continue
+        # it has to have LOOKED like a breakout: a completed 5-min bar closed above the level
+        # before this one, and the push carried at least FBO_MIN_PUSH_ADR above it
+        if not any(x.close > level for x in f5[:-1]):
+            continue
+        if (book.session_high / level - 1) * 100 / ctx.adr_pct < FBO_MIN_PUSH_ADR:
+            continue
+        ss.fbo_fired.add(name)
+        hi = book.session_high
+        stop, sf = _stop_fields(cur.close, hi, ctx)
+        pace = vol_pace(book, ctx, b.t)
+        was_orb = " | was an ORB9 long" if st.orb_fired else ""
+        msg = (f"FBO short {cur.close:.2f} < {name} {level:.2f} and VWAP {cur.vwap:.2f} after high {hi:.2f} | stop {stop:.2f} "
+               f"({sf['stop_pct']:.1f}%, {sf['stop_adr']:.2f} ADR{', STOP IN NOISE -- size to it' if sf['stop_in_noise'] else ''}) | "
+               f"{adr_from_21(cur.close, ctx):+.1f} ADR vs 21 EMA | vol pace {pace:.1f}x{was_orb}")
+        return Alert(book.symbol, "FBO", b.t, cur.close, stop, msg, {"side": "short", "level": name, "level_px": round(level, 2),
+                     "failed_high": round(hi, 2), **sf, "adr_vs_21": round(adr_from_21(cur.close, ctx), 1), "vol_pace": round(pace, 1),
+                     "was_orb9": bool(st.orb_fired), "gap_adr": round((book.session_open / ctx.prev_close - 1) * 100 / ctx.adr_pct, 2) if ctx.adr_pct else 0.0})
+    return None
+
+
+DETECTORS = {"ur": detect_ur, "orb9": detect_orb9, "bir": detect_bir, "fbo": detect_fbo}
+SHORT_KINDS = {"BIR", "FBO"}

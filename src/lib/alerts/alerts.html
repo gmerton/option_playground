@@ -28,7 +28,7 @@
   th { font-size: 12px; color: var(--muted); font-weight: 600; background: var(--chip-bg); position: sticky; top: 0; }
   td.msg { white-space: normal; color: var(--muted); font-size: 12px; min-width: 420px; }
   .kind { font-weight: 700; padding: 2px 7px; border-radius: 4px; background: var(--chip-bg); }
-  .kind.UR { color: var(--accent); } .kind.ORB9 { color: var(--good); }
+  .kind.UR { color: var(--accent); } .kind.ORB9 { color: var(--good); } .kind.BIR, .kind.FBO { color: var(--bad); }
   .tag { display: inline-block; font-size: 11px; padding: 1px 6px; border-radius: 4px; background: var(--chip-bg); margin-right: 4px; color: var(--gray); }
   .tag.warn { color: var(--bad); background: #fbeaea; }
   .tag.ok { color: var(--good); background: #e7f4ed; }
@@ -42,10 +42,10 @@
 <body>
 <header>
   <h1>Live Alerts</h1>
-  <div class="sub">UR = flush that undercut the prior-day low / tagged the 9-21 EMA, then a 1-min close back above VWAP (stop = session low). ORB9 = held the daily 9 EMA and VWAP, 5-min close above the 15-min opening range. Pattern hits, not entries: read the tags against the lens rules. &middot; <a href="trade_reviews.html">&larr; Trade reviews</a> &middot; <a href="summary.html">Strategy performance</a></div>
+  <div class="sub">Long: UR = flush that undercut the prior-day low / tagged the 9-21 EMA, then a 1-min close back above VWAP (stop = session low); ORB9 = held the daily 9 EMA and VWAP, 5-min close above the 15-min opening range. Short: BIR = bounce into a declining MA, first 5-min close below the prior 5-min low (stop above the bounce high); FBO = failed breakout of the prior-day high / opening range, 5-min close back below it and VWAP (stop above the failed high). Pattern hits, not entries: read the tags against the lens rules. &middot; <a href="trade_reviews.html">&larr; Trade reviews</a> &middot; <a href="summary.html">Strategy performance</a></div>
   <div class="controls">
     <select id="date"></select>
-    <select id="kind"><option value="">Kind: all</option><option value="UR">UR</option><option value="ORB9">ORB9</option></select>
+    <select id="kind"><option value="">Kind: all</option><option value="UR">UR</option><option value="ORB9">ORB9</option><option value="BIR">BIR (short)</option><option value="FBO">FBO (short)</option></select>
     <span class="status" id="status"><span class="dot"></span>loading…</span>
   </div>
 </header>
@@ -82,6 +82,9 @@
     if (a.adr_vs_21 !== undefined && a.adr_vs_21 <= 1) out.push('<span class="tag ok">&le;1 ADR from 21</span>');
     if (a.adr_vs_21 !== undefined && a.adr_vs_21 > 2) out.push('<span class="tag warn">extended</span>');
     if (a.tag) out.push(`<span class="tag">${a.tag}</span>`);
+    if (a.level) out.push(`<span class="tag">${a.level}${a.level_px ? ' ' + a.level_px : ''}</span>`);
+    if (a.stop_in_noise) out.push('<span class="tag warn">stop in noise</span>');
+    if (a.was_orb9) out.push('<span class="tag warn">was ORB9 long</span>');
     return out.join('');
   }
 
