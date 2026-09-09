@@ -57,3 +57,10 @@ ZM (lost 100 on light volume; needs a reclaim), AAPL (event), PLTR (< 21 EMA), Q
 
 ## Rules in force
 ≤1 ADR from the 21 EMA · no gap-up buys in the first hour · trigger not anticipation · stop ≤2% or size down to it · no same-day exit unless the stop is hit · stock (or ITM 45+ DTE call) if IV < 60%, put spread if extended/uncertain or IV > 60% · exits: grind → first close < 20 EMA, spike → sell into strength.
+
+## Added 9/8 evening — Ariel's 9/9 list reconciled
+His list: AMD, CRCL, HOOD, IBIT, INTC, OKTA, PLTR, SNDK, SPCX, TGTX, MRVL, HPE, DELL, HNGE; short idea CRAK. Six overlap our plan at the same levels (TGTX, OKTA, SPCX, INTC, AMD, HPE).
+- **HNGE added to B:** buy-stop 95.65 (15-day pivot 95.57), stop 91.00 (4.9% → half size). Stacked, 0.9 ADR from the 21 EMA, 3% off the high.
+- DELL, MRVL, IBIT: no level tomorrow. PLTR/SNDK/CRCL/HOOD stay off (closed at lows); his VWAP-reclaim entry would need a green morning first.
+- **CRAK short:** refiners 4.6 ADR extended at a new high on 2× volume — agrees with the DINO read. Not a trade tomorrow: illiquid ETF ($20M/day), daily exhaustion bar is a continuation signal in our data, and it is a short into a live US–Iran exchange. Only on an intraday failed-high reversal, and in VLO/MPC or a DINO put spread rather than CRAK.
+Scored detail: `data/ariel_hernandez/analysis/2026-09-08_watchlist_scored.md` (transcript pending captions).

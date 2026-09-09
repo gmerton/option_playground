@@ -1,0 +1,14 @@
+{
+  "id": "2DUvX2wN7UM",
+  "url": "https://www.youtube.com/watch?v=2DUvX2wN7UM",
+  "title": "Watchlist video for 9/9/2026",
+  "channel": "Ariel Hernandez",
+  "upload_date": "2026-09-08",
+  "recorded_evening_of": "2026-09-08",
+  "for_session": "2026-09-09",
+  "duration_seconds": 680,
+  "access": "members-only (RS Insider tier)",
+  "capture": {"date": "2026-09-08", "status": "TRANSCRIPT PENDING -- video was 23 minutes old at capture time and had no caption track yet (captionTracks empty). Re-run the Chrome intercept recipe from README once auto-captions exist."},
+  "tickers_per_gabe": ["AMD","CRCL","HOOD","IBIT","INTC","OKTA","PLTR","SNDK","SPCX","TGTX","MRVL","HPE","DELL","HNGE"],
+  "short_candidates_per_gabe": ["CRAK"]
+}
