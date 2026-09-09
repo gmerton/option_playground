@@ -49,13 +49,10 @@ AAPL
 NFLX
 ADBE
 CRM
-GOOGL
 NVDA
 NOW
 TSM
 
 # --- journal / one-off reads ---
 TXG
-IONQ
 AXTI
-ZM
