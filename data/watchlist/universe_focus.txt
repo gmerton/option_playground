@@ -1,0 +1,61 @@
+# Focus universe for run_universe_monitor.py (one ticker per line, # comments).
+# When this file exists the monitor streams ONLY these names plus the current
+# trade plan's tables; run with --full to use the preferred-list union instead.
+# Assembled 2026-09-08 from the names discussed 9/5-9/8.
+
+# --- 9/9 trade plan (A-D tiers + open positions) ---
+TGTX
+MSFT
+P
+ANET
+NTRA
+HALO
+UNH
+OKTA
+HPE
+INTC
+AMD
+SPCX
+GLW
+RVMD
+ILMN
+GH
+HNGE
+DINO
+TSLA
+QCOM
+QBTS
+
+# --- Ariel 9/9 watchlist not already above (CRAK = his short idea) ---
+CRCL
+HOOD
+IBIT
+PLTR
+SNDK
+MRVL
+DELL
+CRAK
+
+# --- semis / memory / photonics reads ---
+MU
+ALAB
+LITE
+COHR
+AAOI
+SMTC
+
+# --- mega caps from the software-dip discussion + Ariel 9/7 ---
+AAPL
+NFLX
+ADBE
+CRM
+GOOGL
+NVDA
+NOW
+TSM
+
+# --- journal / one-off reads ---
+TXG
+IONQ
+AXTI
+ZM
