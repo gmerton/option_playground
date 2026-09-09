@@ -7,7 +7,9 @@ Replay:  PYTHONPATH=src .venv/bin/python3 run_universe_monitor.py --replay 2026-
          (feeds Tradier 1-min timesales through the same books + detectors)
 
 Detectors: UR (undercut & reclaim), ORB9 (opening-range break above the daily 9 EMA).
-Delivery: terminal + data/watchlist/logs/universe_alerts_<date>.log + macOS dialog (--no-dialog).
+Delivery: terminal + data/watchlist/logs/universe_alerts_<date>.log + macOS dialog (--no-dialog),
+plus the journal website: data/journal/alerts/<date>.json mirrored to s3://gmerton-trade-journal/alerts/
+(read by alerts.html). Live publishes by default (--no-publish to skip); replay publishes only with --publish.
 Requires TRADIER_API_KEY.
 """
 from __future__ import annotations
@@ -25,6 +27,7 @@ import pandas as pd
 from lib.alerts.bars import Bar, SymbolBook
 from lib.alerts.context import load_context
 from lib.alerts.detectors import DETECTORS, Alert, SymbolState
+from lib.alerts.publish import AlertPublisher
 from lib.alerts.stream import trades
 from lib.alerts.universe import build_universe
 from lib.tradier.get_daily_history import get_intraday_bars
@@ -43,8 +46,10 @@ def _mac_alert(title: str, msg: str) -> None:
 
 
 class Engine:
-    def __init__(self, ctx: dict, detectors: list[str], session: date, dialog: bool):
+    def __init__(self, ctx: dict, detectors: list[str], session: date, dialog: bool,
+                 publisher: AlertPublisher | None = None):
         self.ctx = ctx
+        self.publisher = publisher
         self.books = {s: SymbolBook(s) for s in ctx}
         self.state = {s: SymbolState() for s in ctx}
         self.detectors = [DETECTORS[d] for d in detectors]
@@ -68,6 +73,8 @@ class Engine:
             fh.write(line + "\n")
         if self.dialog:
             _mac_alert(f"{a.symbol} {a.kind}", a.msg)
+        if self.publisher is not None:
+            self.publisher.add(a)
 
 
 async def run_live(args) -> int:
@@ -81,8 +88,12 @@ async def run_live(args) -> int:
     missing = sorted(set(universe) - set(ctx))
     if missing:
         print(f"  no daily context for {len(missing)}: {' '.join(missing[:20])}{' ...' if len(missing) > 20 else ''}")
-    eng = Engine(ctx, args.detectors.split(","), session, dialog=not args.no_dialog)
-    print(f"[{datetime.now():%H:%M:%S}] streaming {len(ctx)} names | detectors {args.detectors} | log {eng.log}")
+    pub = None if args.no_publish else AlertPublisher(session, mode="live", universe_n=len(ctx))
+    eng = Engine(ctx, args.detectors.split(","), session, dialog=not args.no_dialog, publisher=pub)
+    print(f"[{datetime.now():%H:%M:%S}] streaming {len(ctx)} names | detectors {args.detectors} | log {eng.log}"
+          f"{' | publishing to the journal site' if pub else ''}")
+    if pub:
+        pub.flush()
 
     async def sweeper():
         while True:
@@ -94,8 +105,11 @@ async def run_live(args) -> int:
                     eng.on_closed_bar(sym, b)
 
     sweep = asyncio.create_task(sweeper())
+    status = asyncio.create_task(pub.status_loop()) if pub else None
     try:
         async for sym, t, px, sz in trades(list(ctx)):
+            if pub:
+                pub.note_print(t)
             book = eng.books.get(sym)
             if book is None:
                 continue
@@ -104,6 +118,10 @@ async def run_live(args) -> int:
                 eng.on_closed_bar(sym, closed)
     finally:
         sweep.cancel()
+        if status:
+            status.cancel()
+        if pub:
+            pub.set_state("stopped")
     return 0
 
 
@@ -113,7 +131,8 @@ async def run_replay(args) -> int:
     if not syms:
         print("replay needs symbols"); return 2
     ctx = await load_context(syms, session)
-    eng = Engine(ctx, args.detectors.split(","), session, dialog=False)
+    pub = AlertPublisher(session, mode="replay", universe_n=len(ctx)) if args.publish else None
+    eng = Engine(ctx, args.detectors.split(","), session, dialog=False, publisher=pub)
     async with TradierClient(api_key=os.environ["TRADIER_API_KEY"]) as client:
         for sym in syms:
             if sym not in ctx:
@@ -132,6 +151,9 @@ async def run_replay(args) -> int:
             if not [a for a in eng.fired if a.symbol == sym]:
                 print(f"    (no alert) session low {book.session_low:.2f}@{book.low_time:%H:%M} "
                       f"open {book.session_open:.2f} high {book.session_high:.2f}")
+    if pub:
+        pub.set_state("replay complete")
+        print(f"published {len(eng.fired)} alerts -> data/journal/alerts/{session}.json + s3")
     return 0
 
 
@@ -143,6 +165,8 @@ def main() -> int:
     ap.add_argument("--no-rebuild", action="store_true", help="use universe_latest.txt as-is")
     ap.add_argument("--full", action="store_true", help="preferred-list union instead of universe_focus.txt")
     ap.add_argument("--no-dialog", action="store_true")
+    ap.add_argument("--no-publish", action="store_true", help="live: don't write the journal-site JSON / S3")
+    ap.add_argument("--publish", action="store_true", help="replay: also publish the replayed alerts")
     args = ap.parse_args()
     if "TRADIER_API_KEY" not in os.environ:
         print("TRADIER_API_KEY not set"); return 2

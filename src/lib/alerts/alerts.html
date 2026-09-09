@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Live Alerts</title>
+<style>
+  :root {
+    --bg: #f7f8fa; --panel: #ffffff; --border: #e1e4ea; --text: #1a1d24; --muted: #6b7280;
+    --good: #157a4d; --bad: #c23b3b; --neutral: #a3690a; --gray: #5b6272; --accent: #3f6fd8;
+    --chip-bg: #eef1f6;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 14px/1.45 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  header { background: var(--panel); border-bottom: 1px solid var(--border); padding: 18px 24px; }
+  h1 { margin: 0 0 4px; font-size: 20px; }
+  .sub { color: var(--muted); font-size: 13px; }
+  .sub a { color: var(--accent); text-decoration: none; }
+  .controls { display: flex; gap: 12px; align-items: center; margin-top: 12px; flex-wrap: wrap; }
+  select { padding: 6px 8px; border: 1px solid var(--border); border-radius: 6px; background: var(--panel); font: inherit; }
+  .status { font-size: 12px; color: var(--muted); }
+  .status .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--gray); margin-right: 6px; vertical-align: middle; }
+  .status .dot.live { background: var(--good); }
+  main { padding: 18px 24px; }
+  .wrap { overflow-x: auto; background: var(--panel); border: 1px solid var(--border); border-radius: 8px; }
+  table { border-collapse: collapse; width: 100%; min-width: 900px; }
+  th, td { padding: 8px 10px; border-bottom: 1px solid var(--border); text-align: left; white-space: nowrap; vertical-align: top; }
+  th { font-size: 12px; color: var(--muted); font-weight: 600; background: var(--chip-bg); position: sticky; top: 0; }
+  td.msg { white-space: normal; color: var(--muted); font-size: 12px; min-width: 420px; }
+  .kind { font-weight: 700; padding: 2px 7px; border-radius: 4px; background: var(--chip-bg); }
+  .kind.UR { color: var(--accent); } .kind.ORB9 { color: var(--good); }
+  .tag { display: inline-block; font-size: 11px; padding: 1px 6px; border-radius: 4px; background: var(--chip-bg); margin-right: 4px; color: var(--gray); }
+  .tag.warn { color: var(--bad); background: #fbeaea; }
+  .tag.ok { color: var(--good); background: #e7f4ed; }
+  .num { text-align: right; font-variant-numeric: tabular-nums; }
+  .empty { color: var(--muted); padding: 40px; text-align: center; }
+  tr.new td { background: #fff8e1; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Live Alerts</h1>
+  <div class="sub">UR = flush that undercut the prior-day low / tagged the 9-21 EMA, then a 1-min close back above VWAP (stop = session low). ORB9 = held the daily 9 EMA and VWAP, 5-min close above the 15-min opening range. Pattern hits, not entries: read the tags against the lens rules. &middot; <a href="trade_reviews.html">&larr; Trade reviews</a> &middot; <a href="summary.html">Strategy performance</a></div>
+  <div class="controls">
+    <select id="date"></select>
+    <select id="kind"><option value="">Kind: all</option><option value="UR">UR</option><option value="ORB9">ORB9</option></select>
+    <span class="status" id="status"><span class="dot"></span>loading…</span>
+  </div>
+</header>
+<main>
+  <div class="wrap"><table>
+    <thead><tr><th>Time</th><th>Ticker</th><th>Kind</th><th class="num">Price</th><th class="num">Stop</th><th class="num">Risk</th><th class="num">ADR vs 21</th><th class="num">Vol pace</th><th>Tags</th><th>Detail</th></tr></thead>
+    <tbody id="rows"></tbody>
+  </table></div>
+  <div class="empty" id="empty" hidden>No alerts for this session.</div>
+</main>
+<script>
+(function () {
+  const POLL_MS = 15000;
+  const $date = document.getElementById('date'), $kind = document.getElementById('kind');
+  const $rows = document.getElementById('rows'), $empty = document.getElementById('empty'), $status = document.getElementById('status');
+  let seen = new Set(), current = null, timer = null;
+  const bust = () => '?_=' + Date.now();
+
+  async function loadIndex() {
+    try {
+      const r = await fetch('alerts/index.json' + bust(), {cache: 'no-store'});
+      const idx = await r.json();
+      const prev = $date.value;
+      $date.innerHTML = idx.dates.map(d => `<option value="${d}">${d}</option>`).join('');
+      $date.value = idx.dates.includes(prev) ? prev : idx.dates[0];
+    } catch (e) { $status.innerHTML = '<span class="dot"></span>no alert index yet'; }
+  }
+
+  function tags(a) {
+    const out = [];
+    if (a.gap_adr >= 1) out.push(`<span class="tag warn">gap ${a.gap_adr.toFixed(1)} ADR</span>`);
+    if (a.below_ema9) out.push('<span class="tag warn">below 9 EMA</span>');
+    if (a.light_vol) out.push('<span class="tag">light vol</span>');
+    if (a.adr_vs_21 !== undefined && a.adr_vs_21 <= 1) out.push('<span class="tag ok">&le;1 ADR from 21</span>');
+    if (a.adr_vs_21 !== undefined && a.adr_vs_21 > 2) out.push('<span class="tag warn">extended</span>');
+    if (a.tag) out.push(`<span class="tag">${a.tag}</span>`);
+    return out.join('');
+  }
+
+  function render(doc) {
+    const kind = $kind.value;
+    const rows = (doc.alerts || []).filter(a => !kind || a.kind === kind).slice().reverse();
+    $rows.innerHTML = rows.map(a => {
+      const key = doc.date + a.t + a.symbol + a.kind, isNew = current === doc.date && !seen.has(key);
+      return `<tr class="${isNew ? 'new' : ''}"><td>${a.t}</td><td><b>${a.symbol}</b></td><td><span class="kind ${a.kind}">${a.kind}</span></td>
+        <td class="num">${a.price.toFixed(2)}</td><td class="num">${a.stop.toFixed(2)}</td><td class="num">${a.stop_pct !== undefined ? a.stop_pct.toFixed(1) + '%' : ''}</td>
+        <td class="num">${a.adr_vs_21 !== undefined ? a.adr_vs_21.toFixed(1) : ''}</td><td class="num">${a.vol_pace !== undefined ? a.vol_pace.toFixed(1) + 'x' : ''}</td>
+        <td>${tags(a)}</td><td class="msg">${a.msg}</td></tr>`;
+    }).join('');
+    (doc.alerts || []).forEach(a => seen.add(doc.date + a.t + a.symbol + a.kind));
+    $empty.hidden = rows.length > 0;
+    const st = doc.status || {}, live = st.state === 'streaming';
+    $status.innerHTML = `<span class="dot ${live ? 'live' : ''}"></span>${doc.mode || ''} · ${st.state || '?'} · ${doc.universe_n || 0} names` +
+      (st.last_print ? ` · last print ${st.last_print}` : '') + ` · updated ${doc.generated_at || ''}`;
+  }
+
+  async function load() {
+    const d = $date.value; if (!d) return;
+    try {
+      const r = await fetch(`alerts/${d}.json` + bust(), {cache: 'no-store'});
+      const doc = await r.json();
+      render(doc); current = d;
+    } catch (e) { $status.innerHTML = '<span class="dot"></span>could not load ' + d; }
+  }
+
+  async function tick() { await loadIndex(); await load(); }
+  $date.addEventListener('change', () => { seen = new Set(); load(); });
+  $kind.addEventListener('change', load);
+  tick(); timer = setInterval(tick, POLL_MS);
+})();
+</script>
+</body>
+</html>

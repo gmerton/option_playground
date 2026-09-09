@@ -24,7 +24,9 @@ BUCKET=gmerton-trade-journal
 DIST_ID=E2VZA7AMN3NFDL
 
 echo "Syncing data/journal/ -> s3://$BUCKET/ ..."
-aws s3 sync data/journal/ "s3://$BUCKET/" --delete
+# alerts/ is written directly to the bucket by run_universe_monitor.py; excluded so a
+# deploy from a checkout that lacks today's file can't delete it.
+aws s3 sync data/journal/ "s3://$BUCKET/" --delete --exclude "alerts/*"
 
 echo "Invalidating CloudFront cache ..."
 aws cloudfront create-invalidation --distribution-id "$DIST_ID" --paths "/*" \

@@ -747,7 +747,7 @@ INDEX_TEMPLATE = """<!doctype html>
 <body>
 <header>
   <h1>Trade Reviews</h1>
-  <div class="sub">Entry/exit quality judged on facts at the time, not outcome. Click a row for its chart. Generated __GENERATED_AT__. &middot; <a class="back" href="summary.html" style="color:var(--accent);">Strategy performance &rarr;</a></div>
+  <div class="sub">Entry/exit quality judged on facts at the time, not outcome. Click a row for its chart. Generated __GENERATED_AT__. &middot; <a class="back" href="summary.html" style="color:var(--accent);">Strategy performance &rarr;</a> &middot; <a class="back" href="alerts.html" style="color:var(--accent);">Live alerts &rarr;</a></div>
   <div class="controls">
     <input type="text" id="search" placeholder="Search ticker, reason, tags…">
     <select id="direction"><option value="">Direction: all</option></select>
@@ -1055,7 +1055,9 @@ def main() -> None:
     summary_html = render_summary_page(rows).replace("__GENERATED_AT__", generated_at)
     SUMMARY_OUT.write_text(summary_html)
 
-    print(f"Wrote {INDEX_OUT} (index) + {SUMMARY_OUT} (summary) + {len(rows)} files in {TRADES_DIR}/")
+    from lib.alerts.publish import install_page
+    install_page()                       # alerts.html lives in src/lib/alerts/, copied in so it deploys
+    print(f"Wrote {INDEX_OUT} (index) + {SUMMARY_OUT} (summary) + {len(rows)} files in {TRADES_DIR}/ + alerts.html")
 
 
 if __name__ == "__main__":

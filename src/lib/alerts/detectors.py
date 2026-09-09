@@ -16,7 +16,7 @@ entry) -> one-shot per session. Both were specified from the 2026-09-08 tape:
 """
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from datetime import datetime, time
 
 from .bars import Bar, SymbolBook
@@ -49,6 +49,7 @@ class Alert:
     price: float
     stop: float
     msg: str
+    fields: dict = field(default_factory=dict)   # structured copy of the tags for the website/JSON
 
 
 def vwap_band(adr_pct: float) -> float:
@@ -118,7 +119,11 @@ def detect_ur(book: SymbolBook, ctx: DailyCtx, st: SymbolState, b: Bar) -> Alert
     msg = (f"UR reclaim {b.close:.2f} > VWAP {b.vwap:.2f} | low {lo:.2f}@{book.low_time:%H:%M} "
            f"({-flush_adr:.2f} ADR, {tag}) | stop {lo:.2f} ({(b.close / lo - 1) * 100:.1f}%){ema_note} | "
            f"{adr_from_21(b.close, ctx):+.1f} ADR vs 21 EMA | vol pace {pace:.1f}x{gap_tag(book, ctx)}")
-    return Alert(book.symbol, "UR", b.t, b.close, lo, msg)
+    return Alert(book.symbol, "UR", b.t, b.close, lo, msg, {
+        "low": round(lo, 2), "low_time": book.low_time.strftime("%H:%M"), "flush_adr": round(-flush_adr, 2),
+        "tag": tag, "stop_pct": round((b.close / lo - 1) * 100, 2), "below_ema9": b.close < ctx.ema9,
+        "adr_vs_21": round(adr_from_21(b.close, ctx), 1), "vol_pace": round(pace, 1),
+        "gap_adr": round((book.session_open / ctx.prev_close - 1) * 100 / ctx.adr_pct, 2) if ctx.adr_pct else 0.0})
 
 
 def detect_orb9(book: SymbolBook, ctx: DailyCtx, st: SymbolState, b: Bar) -> Alert | None:
@@ -151,7 +156,12 @@ def detect_orb9(book: SymbolBook, ctx: DailyCtx, st: SymbolState, b: Bar) -> Ale
            f"({(book.session_open / ctx.prev_close - 1) * 100:+.1f}%) held 9 EMA {ctx.ema9:.2f} | "
            f"stop {stop:.2f} ({(last5.close / stop - 1) * 100:.1f}%) | {adr_from_21(last5.close, ctx):+.1f} ADR vs 21 EMA | "
            f"vol pace {pace:.1f}x{' (light vol)' if pace < 1.2 else ''} | 15d high {ctx.high15:.2f}{gap_tag(book, ctx)}")
-    return Alert(book.symbol, "ORB9", b.t, last5.close, stop, msg)
+    return Alert(book.symbol, "ORB9", b.t, last5.close, stop, msg, {
+        "or_high": round(or_high, 2), "open_pct": round((book.session_open / ctx.prev_close - 1) * 100, 2),
+        "ema9": round(ctx.ema9, 2), "stop_pct": round((last5.close / stop - 1) * 100, 2), "below_ema9": False,
+        "adr_vs_21": round(adr_from_21(last5.close, ctx), 1), "vol_pace": round(pace, 1), "light_vol": pace < 1.2,
+        "high15": round(ctx.high15, 2),
+        "gap_adr": round((book.session_open / ctx.prev_close - 1) * 100 / ctx.adr_pct, 2) if ctx.adr_pct else 0.0})
 
 
 DETECTORS = {"ur": detect_ur, "orb9": detect_orb9}
