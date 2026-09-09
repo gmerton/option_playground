@@ -28,4 +28,4 @@ PYEOF
 echo; echo "== 6/6 live-alert universe for tomorrow (edit $OUT/universe_focus.txt to change it)"
 $PY -m lib.alerts.universe 2>/dev/null
 echo; echo "alerts file: $OUT/alerts_latest.csv"
-echo "tomorrow 09:25 ET:  PYTHONPATH=src .venv/bin/python3 run_universe_monitor.py     (UR + ORB9 on the focus universe; --full for the preferred list)"
+echo "tomorrow 09:25 ET:  ./start_alerts.sh     (UR + ORB9 on the focus universe, terminal display; --full for the preferred list)"

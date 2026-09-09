@@ -92,10 +92,14 @@ async def run_live(args) -> int:
     eng = Engine(ctx, args.detectors.split(","), session, dialog=not args.no_dialog, publisher=pub)
     print(f"[{datetime.now():%H:%M:%S}] streaming {len(ctx)} names | detectors {args.detectors} | log {eng.log}"
           f"{' | publishing to the journal site' if pub else ''}")
+    print("  " + " ".join(sorted(ctx)))
+    print("  alerts print here as they fire; a heartbeat line every 5 min shows prints/alerts so far. Ctrl-C to stop.")
     if pub:
         pub.flush()
+    counters = {"prints": 0, "last_print": None}
 
     async def sweeper():
+        last_beat = datetime.now()
         while True:
             await asyncio.sleep(5)
             now = datetime.now()
@@ -103,11 +107,22 @@ async def run_live(args) -> int:
                 b = book.flush_if_stale(now)
                 if b is not None:
                     eng.on_closed_bar(sym, b)
+            if (now - last_beat).total_seconds() >= args.heartbeat * 60:
+                last_beat = now
+                lp = counters["last_print"].strftime("%H:%M:%S") if counters["last_print"] else "none"
+                stale = counters["last_print"] and (now - counters["last_print"]).total_seconds() > 120
+                print(f"[{now:%H:%M:%S}] heartbeat: {counters['prints']} prints, last {lp}"
+                      f"{'  !! no prints for 2+ min -- stream may be dead' if stale else ''}, "
+                      f"{len(eng.fired)} alerts so far", flush=True)
 
     sweep = asyncio.create_task(sweeper())
     status = asyncio.create_task(pub.status_loop()) if pub else None
     try:
         async for sym, t, px, sz in trades(list(ctx)):
+            counters["prints"] += 1
+            counters["last_print"] = datetime.now()
+            if counters["prints"] == 1:
+                print(f"[{datetime.now():%H:%M:%S}] first print received ({sym} {px:.2f}) -- stream is live", flush=True)
             if pub:
                 pub.note_print(t)
             book = eng.books.get(sym)
@@ -116,6 +131,8 @@ async def run_live(args) -> int:
             closed = book.on_trade(t, px, sz)
             if closed is not None:
                 eng.on_closed_bar(sym, closed)
+    except (KeyboardInterrupt, asyncio.CancelledError):
+        print(f"\n[{datetime.now():%H:%M:%S}] stopped -- {len(eng.fired)} alerts this session, log {eng.log}")
     finally:
         sweep.cancel()
         if status:
@@ -166,11 +183,15 @@ def main() -> int:
     ap.add_argument("--full", action="store_true", help="preferred-list union instead of universe_focus.txt")
     ap.add_argument("--no-dialog", action="store_true")
     ap.add_argument("--no-publish", action="store_true", help="live: don't write the journal-site JSON / S3")
+    ap.add_argument("--heartbeat", type=int, default=5, help="minutes between heartbeat lines (live)")
     ap.add_argument("--publish", action="store_true", help="replay: also publish the replayed alerts")
     args = ap.parse_args()
     if "TRADIER_API_KEY" not in os.environ:
         print("TRADIER_API_KEY not set"); return 2
-    return asyncio.run(run_replay(args) if args.replay else run_live(args))
+    try:
+        return asyncio.run(run_replay(args) if args.replay else run_live(args))
+    except KeyboardInterrupt:
+        return 0
 
 
 if __name__ == "__main__":
