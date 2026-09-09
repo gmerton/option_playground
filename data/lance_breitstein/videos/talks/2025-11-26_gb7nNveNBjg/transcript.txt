@@ -1,0 +1,239 @@
+[00:00] Every trade involves risk, but some traders take it way too far, swinging for the home run trade, trying to hit that one life-changing win only to blow up and lose it all. If you really want
+
+[00:11] to make it in this game long term, you have to understand how to manage risk. I'm Lance Brightstein, a market wizard with over $und00 million in trading profits, and I'm here sharing with you
+
+[00:21] my 15 biggest lessons from 15 years of managing risk. Safe to say, for this industry, I'm already a dinosaur. And thanks to these rules, I have no plans of going extinct. Lesson one, and the
+
+[00:32] most important lesson of all, always have a daily loss limit. Ideally, one enforced at your broker so that you can't override it. If you take nothing else from this video, take this, have a
+
+[00:43] hard stop on your day. I've been doing this for a long time. I've mentored traders who've made seven and eight figures P&L per year. And I've mentored traders who've lost everything. You know
+
+[00:53] what every blownup trader has in common? They all had just one bad day. I get emails constantly, "Lance, I had a great run and then one emotional day wiped it all out." It's not usually a bunch of
+
+[01:06] paper cuts that ruin a trader. It's usually a slippery slope of poor decision-making that ultimately leads to one big colossal mistake. I know stories of traders losing millions all at once
+
+[01:16] or losing 100% of their account after years of building. Sadly, there is no undo button in this game. Trust me, I've been right there with you before. If an undo button existed, I'd have mashed
+
+[01:28] that button a million times by now. I was fortunate to start my career at Trillium, a top trading firm. From day one, you have a set daily loss limit. Mine started at minus $150 per day. That
+
+[01:40] ingrained in me the understanding that once that amount is lost, there's no more trading. There's no more making it back, and there's no getting back involved, no matter how amazing an
+
+[01:49] opportunity there is. As a result, in practice, you often want to sit comfortably below that daily loss limit. Remember though, you want this instituted in the software or at your
+
+[01:59] broker. Our human emotions are far too feeble. You can't trust them under pressure or when we are tilted, which is when they matter most. So, automate the off switch. Lesson two, every trade must
+
+[02:09] have a stop, even if that stop is accepting a full loss of the position. Fellow market wizard Bruce Kovner said it best. You always want to know where you're getting out before you get in.
+
+[02:19] This is a practice that you want to become habit and a habit that you never ever break. By deciding your stop beforehand, it removes the bias and subjectivity that can come in once
+
+[02:28] you're in a position. Especially in the trading world, markets can move fast. If you decide your stop after you're in, you leave a gap in time where you are susceptible. Once you're down big, your
+
+[02:39] brain shifts from logic to survival. Your heart is racing, your chest is pounding, and a different part of your brain has taken over. And when [snorts and clears throat] you're in
+
+[02:46] survival mode, we tend to make decisions we regret. Every position you ever take, no exceptions. Know your stop before you enter. Lesson three is never let external goals determine your risk
+
+[02:58] appetite. Like with all of these, I learned this one the hard way. 2021, I was chasing a record. I wanted to set the highest annual P&L in Trillium's 20-year history. I was sitting around
+
+[03:07] $17 million on the year, aiming for 20 million. Then Avis Budget Group, ticker C, went parabolic off some random electric vehicle headline. It was a kind of move I'd crushed before.
+
+[03:18] Overextended, thin float meme energy. I thought, "This is the one. This is the trade that'll take me over the top." So, I sized in big, too big. When it started working, I got greedy. Then, it turned
+
+[03:29] against me fast. Within an hour, I was down over $2 million. That's when it hit me. I wasn't trading the chart. I was trading my external and arbitrary goal that the market didn't care about. You
+
+[03:40] can hear out the full story in the video linked in the description. I can't tell you how many times I've seen other traders make this mistake. In fact, this even famously happened recently in
+
+[03:48] Crypto Twitter World when on October 10th, 2025, a crypto whale that was very publicly trying to make $100 million in profits ended up losing $62 million when his leverage positions got liquidated
+
+[04:02] and an altcoin meltdown that got triggered. Anchoring to external and often arbitrary goals almost always leads to unintended and often awful consequences. Lesson four, never ever
+
+[04:13] open yourself up to game over. You can recover from any mistake except the one that takes you out of the game. Every trader who's lasted in this business takes measures to make sure it's never
+
+[04:23] game over. What might some of those be? Some traders wire out a certain percent of profits. Yes, doing so will slow your growth, but if you're doing well and growing, you'll end up where you need to
+
+[04:32] be eventually. Most traders make the mistake of trying to grow too fast, and most traders would benefit from being far more conservative than they think. All traders should keep a rainy day
+
+[04:42] fund. I know this sounds extreme, but I genuinely believe traders should work towards building reserves that'll cover them at least 2 years and ideally even build up a whole other capital base
+
+[04:51] invested in safe assets where if, god forbid, one account blows up, you can always reload. The saying that you only need to get rich once is so true. But as traders addicted to growth and a silly
+
+[05:02] scorecard, many fail to live by that motto. Trust me, the regret and pain of resetting back to zero is far, far worse than any upside you give away after a certain point. Two of my favorite books
+
+[05:12] on this subject are The Art of Spending Money and The Psychology of Money by Morgan Hzel. They're must-read classics. People way underestimate how successful they'll be just by simply compounding
+
+[05:22] their trading over time while staying in the game long enough. You cannot compound if you're out of the game. The math of trading only works when you survive long enough for your edge to
+
+[05:30] express itself. Protect downside first. Everything else is secondary. Lesson five. Position sizing is one of the most powerful risk management tools, particularly in volatile markets or when
+
+[05:40] gap risk is involved. You can have the perfect thesis and still blow up if you're oversized in something that moves against you first. The more volatility or gap risk a stock has, the smaller
+
+[05:51] your position needs to be, assuming expected value remains equal. It's about keeping your risk per trade constant in dollar terms, not in share count. In a volatile market, you might need to give
+
+[06:01] a stop three times as wide. To keep dollar risk constant, you'll need one-third the size. Volatility halts and overnight risk are also a silent killer for traders who don't respect sizing.
+
+[06:11] Once a stock halts, your stop is useless. You're locked in, and the next print could be dollars away. If your size too big, that's not just a bad trade. It could be career ending. The
+
+[06:21] same applies to overnight holds. Anytime you carry a position overnight, you're accepting a period when you won't be able to manage risk. A surprise headline, earnings leak, or geopolitical
+
+[06:30] event can gap a name against you before you even get a chance to react. All else held equal, smart traders reduce size anytime they are left open to overnight risk or halt risk. Especially for
+
+[06:42] overnight trading or swing trading, I find that the right amount of size tends to be far less than the intraday size you would otherwise be trading. If I had to pick a rule of thumb, my overnights
+
+[06:52] tend to be half the size, often a third the size of my regular intraday trading. What size is the right amount for you? Here's one of my favorite sizing heristics. You never want to size so
+
+[07:02] large that it changes how you behave in the trade. If your size causes hesitation, early exits, or emotional attachment, you've already lost discipline. The setup hasn't changed.
+
+[07:12] You have. Every trader has a personal threshold where they stop trading the setup and start trading their P&L. Find that point and stay below it. Lesson six sounds paradoxical, but it's not. Good
+
+[07:22] risk management means making the most out of your best setups. As Mike Bellfury of SMB Capital says, it is your job to swing the bat hard on your best setups. In trading, much like in poker,
+
+[07:32] most of your profits will come from only a few of your setups. In fact, myself and other top traders commonly make 80% of their profits in 1% or 5% of the trades. That may sound crazy, but it's
+
+[07:44] because pocket aces are so much better than 27. And if you're not making the aces count, you're not going to do well. You can't afford to bet the same on crappy setups as you do on good setups.
+
+[07:54] Beginner traders should start out betting uniformly, but over time, the best traders add skew to their best trades. What's the right amount to bet on your best setups? Again, there truly
+
+[08:03] isn't any broad advice I can give you. It depends the variance of your strategy, your comfort levels, your risk tolerances, and more. But at an elite level, top traders like myself are
+
+[08:14] making a 100 times or more in their best trades than their normal trades. Beginners might want to even start aiming to make 150% or 200% in their best trades. Obviously, while staying
+
+[08:26] within the limits of your risk rules for a far more comprehensive discussion on bet sizing, check out this hour-long conversation I had on the subject with 7igure P&L per year trader Kyle
+
+[08:35] Williams. Lesson seven is build a draw down protocol before you need one. Every trader eventually faces the dark month. That period where nothing works, confidence is shot, and you feel like
+
+[08:46] you forgot how to trade. The time to plan for that is not when you're already in it. After my first major six-figure loss, I created my draw down playbook. That protocol has saved my career
+
+[08:56] multiple times, which is why I detailed it all here in this video. Because when you're in draw down, logic erodess. You want to make it back faster. You push harder. That's the death spiral. Your
+
+[09:06] draw down plan needs to be automated and emotionless. Most traders only make these after the fact, but thanks to you watching my channel, you can be one of the lucky few who proactively prepare
+
+[09:16] for the inevitable. Lesson eight is one that often gets overlooked. Good risk management also means protecting your mental capital. Everyone obsesses over financial capital, but mental capital is
+
+[09:27] just as important. You can reload an account, you can't reload your composure. Working with Dr. Jonathan Katz, one of the top trading psychologists. I learned that risk
+
+[09:36] management begins before the market even opens. If you come in tired, stressed, or distracted, you're already at double your normal error rate. I now do a mental temp check each morning. If I'm
+
+[09:47] off, meaning I slept poorly, or I was arguing with someone, anxious, I immediately cut my risk limits because I know that version of me isn't capable of peak execution. If I'm ever not in the
+
+[09:58] right mental space, I'm reducing risk. Trading while tilted is like driving drunk. Sometimes you make it home fine, but eventually you crash. And the crash costs way more than just a hangover. But
+
+[10:09] still way less bad than a DUI. So yeah, don't drive drunk either. Another aspect of preserving mental capital is having rules for when to get flat if you're frustrated and even reducing the trades
+
+[10:20] you take. One other area often overlooked is there can be parts of your playbook that make money but just aren't worth the headache. they end up distracting you from your core
+
+[10:28] competencies and main money makers. We only have two eyeballs and so much attention at once. Lesson nine, risk management is a personal practice that gets developed through iteration. There
+
+[10:39] is not a one-sizefits-all objective answer. So many people ask me about my sizing or my stop-loss rules or my risk limits. I'm not sure it's all that helpful, like at all. In fact, I think
+
+[10:51] most people that want those answers, they're avoiding doing the difficult, uncomfortable, deep, reflective work that an area this important absolutely requires. You really need to think
+
+[11:02] through your trading. Ask yourself important questions about what you think you could actually stomach. Ask yourself your goals and then constantly improve your rules and systems based on every
+
+[11:13] vulnerability the market calls you out on. The truth about risk management is that it's a personal experience that you develop over time through constant iteration. My own risk management is
+
+[11:23] still evolving to this day. What I do won't be right for anyone else because we all have different risk tolerances, different values, and different [clears throat] life situations. This
+
+[11:32] was so apparent at Trillium, where I spent over a decade trading. Some traders were home run hitters like myself. Others were super consistent snipers. They made money every single
+
+[11:41] day. Most important is whether you are doing what is right for you and your aspirations and tolerances. I'm okay stomaching huge draw downs. As I've gotten older and also wealthier, my risk
+
+[11:51] tolerance has gone way down versus when I was young and had nothing because the money won't change my life anymore. A 20-year-old is going to risk way differently than a 50-year-old with
+
+[12:00] three kids and no nest egg. Nobody but you can decide. Also keep in mind risk management is going to look so different for swing traders versus intraday traders, for high probability snipers
+
+[12:10] versus home run hitters, for conservative traders versus the gunslingers. Nobody can tell you what percent of account to risk or what dollar amount or after how many losses
+
+[12:19] you should cut your risk or when you should worry about draw downs. All of that will depend on the exact details of your strategies and your own personality. I promise you there just is
+
+[12:28] not a universal answer. You need to do the work. If some universal answer existed, it would already be written about and laid out in a textbook. Look at it this way to understand my point.
+
+[12:38] If you're an angel investor, most angel investors risk a few percent or less of their wealth because their winners are very low probability. PE firms are home run hitters, so they must also risk low.
+
+[12:50] But let's say you're an arbitrageer with a 95% win rate. You can likely risk a ton more per trade than the two other groups. An appropriate riskmanagement system looks drastically different
+
+[12:59] across those three groups. Without me knowing all of your trading data and your personal tolerances, I cannot even begin to guide you. People repeatedly say they get what I'm saying, but then
+
+[13:09] still ask, can't you just generalize your rules? If you actually get what I'm saying, you'll understand why it can't be generalized. It's no different than asking someone what meal they should
+
+[13:19] eat. You don't know their health goals, their budget, their preferences, their allergies. without tons of information specific to them, it's practically nonsensical. I know they should eat
+
+[13:28] digestible food rather than nails or glass, but I don't know, is that advice even helpful? Traders need to look inward for these answers. Lesson 10: Expected value drives all trading
+
+[13:38] decisions. So many traders ask me when to add, which stop to use, when to hedge, whether to pyramid into trades, when to take profits, and more. Every single one of those can only be answered
+
+[13:49] through a complex analysis of expected value for each and every situation. Expected value is what helps us determine how to manage our trades, our sizing, and more. It is by far the most
+
+[14:00] important concept in all of trading. And there is absolutely no way to generalize it beyond that statement. In some situations when a trade is working in your favor, you want to add. And there
+
+[14:09] are some situations when a trade is working in your favor, so you want to reduce. If you don't have true mastery over the concept, you're not going to be able to intelligently answer any of
+
+[14:17] those questions I so often get asked. Lesson 11, beware of shorting. Shorting has multiple layers of complexity that don't exist when only buying stocks. Now, don't get me wrong, I've made tons
+
+[14:28] of money over my career from shorting stocks, but you need to be aware how infinitely more dangerous shorting is. For starters, buying a stock, you can only lose 100%. Yet, shorting a stock,
+
+[14:38] you can lose infinity. In fact, my biggest loss of my trading career came from exactly that situation. I shorted a stock that ended up rising over 200% and I lost more than $2 million in a matter
+
+[14:49] of 30 minutes. Particularly in low float and small market cap stocks. The risk of blowup can be significant. I've seen more traders blow up shorting small caps than in any other area of markets. It is
+
+[15:00] not unheard of for a ticker to squeeze over 300% or 500% higher in a day. There have also been instances where these smaller stocks get halted for volatility to the upside, then open again for
+
+[15:11] trading at crazy high prices. Another negative aspect of short selling, one of the most powerful benefits of buying stocks is that stocks can only go to zero. Yet, markets trend higher and can
+
+[15:20] go up many multiples. When shorting stocks, you are fighting the trend and at the best can only make 100%. Not to mention, shorting certain stocks can lead to paying extra fees or also losing
+
+[15:32] short availability. Shorting can be an incredible strategy, but for the multitude of reasons discussed here, the trader needs to understand that there are added layers of risk and complexity.
+
+[15:41] Rule 12, never risk an amount that will hurt your psychology. Earlier, I mentioned one of my favorite sizing heristuristics. Never size so large that affects how you trade the stock. My
+
+[15:50] other sizing heristic, never risk an amount that if lost will impact your confidence and positive momentum. So much of trading is about making progress day in and day out, improving on the
+
+[16:00] good days and the bad. Having mentored hundreds of traders, I found that huge draw downs absolutely ruin the momentum and work ethic of most traders. So many traders get frustrated and despondent
+
+[16:11] and lose that forward momentum. For that reason, I found it so important to do your best to never risk an amount that'll slow your growth. Yes, you could argue bigger winners will accelerate
+
+[16:20] your growth, but so often it just isn't worth it. Often in trading, the fastest way up the learning curve is slow and steady. The analogy I always give is the powerlter. You don't get strong by
+
+[16:30] lifting so heavy you get injured. In trading, you never want to injure yourself. A failed lift or a loss is fine, but don't do damage that'll take weeks or months to recover from. The
+
+[16:39] 13th rule, don't extrapolate your growth linearly. So many traders are trying to get rich quick and in doing so underestimate the power of compounding growth. This leads them to take far more
+
+[16:50] risk than they need to, leading to blow-ups for many. Let me explain. Many traders aren't okay with making 50K per year. So instead of building a strong foundation, they start to overreach.
+
+[16:59] They size bigger. They add leverage. They're trying to keep up with the big P&L numbers they see getting posted on social media. They have that image of their nice sports car plastered in their
+
+[17:08] mind, so they go for the speedrun. Only a very select few can ever pull it off, mostly through luck. But due to selection bias, those are the traders we end up seeing on social media. How many
+
+[17:18] thousands of traders blow up each year trying to keep up with that? Meanwhile, that 50K per year trader, he builds a solid foundation of consistency. he starts to gradually increase his size
+
+[17:28] and expand his playbook. The beauty of trading is that when it all starts to click, your P&L growth doesn't increase linearly. It goes exponential. Having mentored hundreds of traders, this
+
+[17:38] almost always ends up true. A typical P&L curve for many traders is to lose money in the first couple years, then break even the next. Once you start to make a living, often traders quickly
+
+[17:48] break the 100K barrier. Before long, with a good market, those traders can make hundreds of thousands of dollars per year. Then if you invest some of those savings, ah the amazing power of
+
+[17:57] compounding. Too many young traders though obsess over where they will be in year 1 or in year three. Play the long game. Recognize that if you do it properly, your P&L will go exponential,
+
+[18:07] especially when you intersect with favorable market conditions. Now the 14th lesson, build systems that enforce discipline. Part of being a discretionary trader means just that we
+
+[18:17] are humans making decisions. As a result, we will always be reliant upon our human emotions as well as our flaws. Willpower and discipline [clears throat] can be very fickle. Whenever possible,
+
+[18:28] you want to control your environment and build systems to help you where we often fail. James Clear talks about this in my favorite book, Atomic Habits. Resisting the cookie in front of you is very hard.
+
+[18:39] Making it a rule to never buy cookies at the grocery store far easier. Often times, when the weaker parts of our brain take over, we can't fight it. This holds true for daily stop limits,
+
+[18:48] trading on tilt, FOMO, and more. You want to write programs, build systems, and control your environment in every way possible so that you avoid the bad situations before they start. Tend to
+
+[18:59] get tilted from driving to work in traffic? Leaving for work earlier is far easier than calming yourself down in traffic. Tend to FOMO trade due to seeing others on social media make
+
+[19:08] money? Block the app. Our willpower is weak. Systems are powerful. Lesson 15. Risk never disappears. You cannot ever get rid of it after 15 years. This is the ultimate truth. You can never ever
+
+[19:21] ever get rid of risk. You can only do your best to manage it. Many traders I interact with want to grow their trading without losing more or capture more upside while never having a draw down.
+
+[19:32] You can't have yin without yang. Making money in trading only comes from embracing risk and uncertainty. Even for the best traders in the world, cutting size reduces blow-up risk but increases
+
+[19:42] opportunity cost. Having tighter risk limits means safer trading but potentially slower growth. There's no free lunch in this business, only intelligent trade-offs. If you take one
+
+[19:52] thing from this video, it's this. Your career will not end because you didn't make enough money. Almost every trader I see that blows up did it because they were trying to get rich quickly and took
+
+[20:02] on more risk than they should have in a pursuit of faster growth. Always control your downside. Stay in the game long enough while constantly working hard to improve, and the P&L will take care of
+
+[20:12] itself. That's how I've lasted 15 years in this game. That is how you can do the same. Thanks for watching. See you on the next one.

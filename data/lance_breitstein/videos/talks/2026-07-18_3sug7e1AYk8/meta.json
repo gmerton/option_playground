@@ -1,0 +1,19 @@
+{
+  "video_id": "3sug7e1AYk8",
+  "url": "https://www.youtube.com/watch?v=3sug7e1AYk8",
+  "title": "You're Solving the Wrong Trading Problems, Here's the Fix",
+  "channel": "TheOneLanceB",
+  "channel_id": "UCzksXiC-Ju-DTIZmMiaOVfQ",
+  "stream_date": "2026-07-18",
+  "duration": "10:07",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

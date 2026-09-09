@@ -1,0 +1,323 @@
+[00:00] I have a very controversial opinion, and all I ask is that you give me a few minutes to listen to
+
+[00:05] me. AI like Claude is great at creating the illusion of productivity, but I'm sure the way
+
+[00:09] you're using it now is n't improving your bottom line at all. In fact, I will explain
+
+[00:14] why Claude and AI are actually hurting your trading. I have the privilege of observing
+
+[00:19] traders of all skill levels at SMB Capital, Trillium, and in the retail sector. This allows me
+
+[00:24] to see the collective actions of the trading community and evaluate what is working and what is not. Now that I've
+
+[00:30] finished trading my health for wealth, making over a hundred million dollars on Wall Street
+
+[00:34] —a story detailed in the latest Market Wizards book—I'm here to share my
+
+[00:38] observations so you can improve your trading. The most obvious critical
+
+[00:41] realization I see right now is that traders are getting distracted by AI, and it's hurting their
+
+[00:46] trading. Traders have better tools than ever before, while also
+
+[00:50] living in an era with more informational content than ever before. Today, you
+
+[00:55] can conduct research faster, write code faster, and analyze more information than ever
+
+[01:00] before. However, for most traders, this did not seem to significantly change the results in any way.
+
+[01:05] If you're wondering if AI is going to eventually completely replace traders, I've already made
+
+[01:09] a video about that, so watch it later. But what I want to talk about today is more pressing, and it's
+
+[01:14] something I'm seeing with traders right now. Don't get me wrong, I use AI and I
+
+[01:18] think it's incredible. This won't be an old man's grumbling about you needing to
+
+[01:21] print out charts and study them by candlelight like I did. I'm not going to tell you how I
+
+[01:26] walked downhill through the snow to my trading floor in Chicago and then downhill through the snow back
+
+[01:30] home, although it's true. I use these AI tools all the time and believe that any
+
+[01:34] serious trader should at least understand what they are capable of. I am skeptical of
+
+[01:38] the assumption that because AI allows more work to be done , that work automatically
+
+[01:42] translates into profit. About 6 months ago, Claude improved significantly , and traders began
+
+[01:48] to use it obsessively everywhere. However, since then I don't see this converting into profit for
+
+[01:52] most traders. Yes, I understand that there are many algorithmic and quantitative traders who can definitely
+
+[01:57] use the vast computational capabilities of AI. I'm not addressing
+
+[02:01] all of you, as you are generally not my target audience. Ultimately, the market rewards
+
+[02:06] traders for only one thing: accurately expressing a bet on how the price will change over a certain period of time.
+
+[02:11] As I explain in this video, the success of this process is typically limited by four factors:
+
+[02:16] advantage, execution, opportunity, and risk. If you use AI
+
+[02:20] but it doesn't improve your efficiency in the aspect that is currently your " bottleneck," you
+
+[02:26] won't see any profit growth. There are probably a hundred things a trader could be
+
+[02:30] working on at any given time . Study more charts, explore more catalysts, or
+
+[02:34] even work on a new backtest. There is always something else you can do , which means that being busy at
+
+[02:39] trading says almost nothing about whether you are actually getting better. One of the traders
+
+[02:43] I trained was a prime example of this. This guy came into the office on weekends and worked
+
+[02:48] for hours, which sounds exactly like what I usually praise. But that was until we looked at
+
+[02:52] what he actually did. He spent most of this time reading analytical reports
+
+[02:56] and preparing watch lists. His preparation was not the main problem. He had difficulty
+
+[03:01] increasing the size of his positions because his attitude towards risk became uncomfortable as soon as the amounts
+
+[03:06] became significant. Give this trader Claude today and he will become a real machine for reading
+
+[03:10] analytical reports. He could summarize 20 reports in the time it previously took to
+
+[03:15] read three. He could assign one agent to track documents, another
+
+[03:18] to analyze income statements, and yet another to create a great morning digest. Then the
+
+[03:23] market bell rings, his best setup of the week appears, and he still enters at
+
+[03:27] a quarter of the required volume, because the real problem was never his ability to process
+
+[03:31] information. I think a lot of traders are doing something similar now. Ultimately, AI is even
+
+[03:36] harmful to traders, as its endless useful features distract them from doing the
+
+[03:41] most important work . AI is particularly tempting because its results are tangible. You see the
+
+[03:47] code he wrote or the report he created, and it gives a sense of productivity.
+
+[03:51] Working on real weaknesses is often much less satisfying. If you
+
+[03:55] continue to hesitate before entering, " play back" after losses, or close the
+
+[04:00] best trades too early, there is hardly a cool program that can simply make this problem go away.
+
+[04:05] That's why, when I train traders, I spend a lot of time trying to identify the one change that can have the
+
+[04:10] biggest impact on their annual financial results . Sometimes it's the position size, and
+
+[04:14] sometimes it's the fact that they have one very profitable strategy but lose half of their earnings
+
+[04:18] on mediocre trades. But the answer is different for every trader, and that's why I don't like general advice on
+
+[04:24] what traders should work on. Let's take a trader who makes 20 thousand on his best
+
+[04:28] strategy in a month, but loses 12 thousand on everything else. I'm probably not interested in giving him another
+
+[04:33] strategy to learn. He has already proven that he has something that works. I'm much more interested in why
+
+[04:39] he feels the need to open up all these other deals. If we can eliminate most of those
+
+[04:44] 12k losses without changing his winning strategy, we can potentially significantly improve his
+
+[04:50] performance without having to find new advantages. The biggest leaps in my career have occurred when
+
+[04:55] I deeply analyzed my current limitations and then effectively addressed them. Around
+
+[05:00] 2018, I was one of the top 10 traders at Trillium. But what kept me from taking a step to
+
+[05:05] the top was that I kept getting big drawdowns and losses at the beginning of reversal trades.
+
+[05:10] Not only was I taking big losses, but when the reversal finally happened, I was in the wrong
+
+[05:15] position and couldn't take the volume I should have . The need to better structure my trades eventually
+
+[05:20] led me to create the concept of the “right side of the V- shaped reversal” . Implementing this
+
+[05:24] concept, as I explained in this video, took my trading to the next level. While AI is
+
+[05:29] great and constantly improving, it has n't yet reached the level where it can independently diagnose this and
+
+[05:33] develop such a specific solution for me. On the contrary, if AI had existed back then, it could have easily
+
+[05:38] distracted me from finding my true limitation and developing the solution
+
+[05:42] I found. AI empowers you to view more stocks, consume more information, and generate more
+
+[05:48] ideas. But I don't necessarily want more ideas or more information. I want better ideas and better
+
+[05:53] information. And AI still lacks the complexity and attention to detail to perform the most important analysis
+
+[05:59] for you. In short: my trading course costs a lot, but so does university tuition. But , most likely, your
+
+[06:05] professor at the university did not earn a hundred million dollars and did not give you a direct
+
+[06:09] path to financial freedom. Most people fail in trading, and I came close to it too.
+
+[06:14] But I sincerely believe that if you strive for success in trading and have the financial means to do so, my course
+
+[06:19] is a much more profitable proposition than spending money on university education. Plus , we don't force you to
+
+[06:26] live with an unkempt roommate . The full curriculum can be found at oneandsbe.com, and if you
+
+[06:31] prefer free options— follow me here and we'll be like roommates.
+
+[06:35] Now let's get back to the video. Listen, there are many areas where AI can be extremely useful
+
+[06:41] . If you have thousands of transactions in your database, let it help you classify them and find certain
+
+[06:44] patterns. If you have a hypothesis about a setup but don't know how to program, use it
+
+[06:49] to create a test. And if you're manually doing repetitive work every night that a computer can do
+
+[06:53] , just automate it to save time. All of these are perfectly valid improvements. Ten
+
+[06:58] years ago, I would have loved to use some of them. But the main thing is this: with all this
+
+[07:02] time savings, you still need to direct some of it towards overcoming your current
+
+[07:06] trading limitation. If you don't do this, yes, you will save time, but you won't start making more
+
+[07:11] money. Don't get me wrong, it's great when your hourly rate increases simply
+
+[07:15] because of the time you save. I like AI for this very reason . But to break through in trading,
+
+[07:21] deep work is required. I get very uncomfortable when traders start delegating the thought process itself.
+
+[07:26] Part of the success in this work lies in developing judgments through an absurd amount of repetition
+
+[07:31] and, more importantly, through a large amount of time spent in deep reflection and
+
+[07:35] introspection. I spent years studying weekend schedules, analyzing mistakes, and gradually building a
+
+[07:40] mental database of what different situations looked and felt like . My early progress was the
+
+[07:45] result of focused practice and systematization of the process, not simply
+
+[07:48] consuming more information . If every time you see a chart, you immediately send it to Claude
+
+[07:54] with a question about the setup , Claude will learn your strategy faster than you. And that won't help much at 9:42 a.m.
+
+[07:59] when the stock is moving $3 and you need to decide whether it's worth taking the risk. Trading still
+
+[08:05] requires you to understand what is happening, make decisions under uncertainty, and
+
+[08:09] correctly size your position and execute the trade according to your system. A model can
+
+[08:14] help you organize and analyze your trade, but it won't make you act
+
+[08:18] correctly. She might suggest that you lose money every time you average into a
+
+[08:22] bad trade, and you won't be able to argue with that very apt explanation. Tomorrow you
+
+[08:26] can and most likely will average into the same bad deal again. What I mean is that our
+
+[08:31] limitation as traders is often not a lack of information. People have had access to
+
+[08:36] risk management books for decades, yet somehow we continue to find creative ways to destroy
+
+[08:41] ourselves. It is you I am addressing, Leopold Aschenbrenner. Despite all the books on behavioral
+
+[08:45] psychology, it's worth asking yourself why all these prejudices still remain relevant. So,
+
+[08:50] the way I would actually use AI as a trader is pretty simple. I would start with
+
+[08:54] my trading, not technology. I would review my week and try to determine where
+
+[09:00] money was made, where it was lost, and what opportunities I missed. And then, based on that, I would
+
+[09:05] identify the problem that has the greatest economic impact on my results. Let's say I find myself
+
+[09:11] consistently closing profitable trades too early. Now I have something worth exploring. I
+
+[09:15] can review these deals manually, but AI will help make it much faster. I could compare my
+
+[09:20] actual exits to subsequent price action, break down trades by setup and market environment,
+
+[09:24] see if position size changes my behavior, and examine my journal notes on those
+
+[09:29] exits. Maybe through this deep work I will find that when I trade regular volume, I
+
+[09:33] stick to my plan. But once the position size exceeds a certain dollar amount, I start
+
+[09:37] to take profits too quickly. This would be useful because AI helped me understand a real problem in
+
+[09:42] my trading. Maybe I need more systematic profit-taking rules,
+
+[09:46] or I just haven't yet developed enough resilience to the P&L fluctuations associated with large
+
+[09:49] positions. I don't know the answer until I look at the trader and the data. But at least now we are
+
+[09:54] asking a question that could significantly affect the outcome. The same can be done with
+
+[09:58] over-trading. Upload your trades into a system that categorizes them by strategy and
+
+[10:02] see what happens. Maybe your three specific setups brought in 40k last
+
+[10:06] quarter. Well, everything that was outside the strategy brought 18 thousand losses. I would be very happy about such a
+
+[10:11] discovery, because we don't need to invent new Renaissance-level technologies. We just might
+
+[10:15] need to stop selling all this junk. Psychological problems are
+
+[10:18] the most complex, as information alone rarely solves them. If you know you're trading
+
+[10:22] on emotion after a big loss, then making Claude write a 12-page report on why that's bad
+
+[10:26] probably won't do much good. You already know this is bad. Helpful work involves
+
+[10:31] identifying the first signs of loss of emotional control, reducing position sizes after certain
+
+[10:35] triggers, setting a daily limit, or physically leaving the workplace
+
+[10:39] before the quality of decisions deteriorates. Or, if you're going to use Claude, create an
+
+[10:43] automated program that will detect and block you from trying to play back. This is what
+
+[10:47] using AI to solve a real problem is all about. The difference between knowledge and action is one of the reasons why I am
+
+[10:52] always skeptical of traders who think that a new piece of information
+
+[10:56] will save them. There is already more free information about trading than anyone could possibly process in a
+
+[11:00] lifetime. I have seen traders understand a concept intellectually but be unable to
+
+[11:04] put it into practice for months. AI does give us much better access to information, but access to information is
+
+[11:09] not what prevented that trader from acting. In summary: if AI and the countless
+
+[11:13] projects that can be implemented with it actually distract you from the real work and
+
+[11:19] removing the main obstacle in trading, then your use of AI is harmful. Even
+
+[11:23] when AI automates something useful and saves you time, that value only becomes apparent
+
+[11:27] when you direct that time toward solving your main problem. If AI saves you
+
+[11:32] 5 hours a week on research, and you use those 5 hours to deeply analyze your
+
+[11:36] biggest trading mistake—that’s great. If AI saves 5 hours and you spend them
+
+[11:40] scrolling through financial Twitter or wondering if someone else's earnings screenshot is real—we've made huge
+
+[11:45] technological progress with zero personal time . So yes, traders should
+
+[11:49] use AI. I will, of course, use it too , and these tools will only get better. But I would be
+
+[11:54] much more impressed by a trader who can clearly tell me what the biggest obstacle to his
+
+[11:58] profitability is and what he is doing to fix it than someone who shows me 12 agents created over
+
+[12:02] the weekend. Next time before you open Claude or ChatGPT, start with analysis and reflection. Find out what
+
+[12:07] exactly is costing you money or preventing you from using more features. Then see if
+
+[12:12] AI can help you solve this problem faster. If possible, great. If not, you'll still have to
+
+[12:16] work , because markets have never paid anyone for a cool workflow. Thanks for
+
+[12:21] watching. Hit the subscribe button and see you in the next video.

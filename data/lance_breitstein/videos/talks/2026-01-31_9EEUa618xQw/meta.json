@@ -1,0 +1,19 @@
+{
+  "video_id": "9EEUa618xQw",
+  "url": "https://www.youtube.com/watch?v=9EEUa618xQw",
+  "title": "How Macro Market Conditions Make or Break Your Trading Strategies",
+  "channel": "TheOneLanceB",
+  "channel_id": "UCzksXiC-Ju-DTIZmMiaOVfQ",
+  "stream_date": "2026-01-31",
+  "duration": "5:47",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

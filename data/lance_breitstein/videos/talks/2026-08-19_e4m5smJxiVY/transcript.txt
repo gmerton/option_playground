@@ -1,0 +1,297 @@
+[00:00] Just last month, one hedge fund made $4 billion on a single deal. They weren't
+
+[00:04] smarter than everyone else, but they were operating in areas that most traders ignore. Most
+
+[00:09] traders don't share their strategies and advantages, but I've already made my fortune
+
+[00:13] on Wall Street, making over $100 million in career profits. Now that I'm
+
+[00:16] done trading my health for wealth, I'm sharing with you the five best
+
+[00:20] hidden sources of advantage in today's market. Technical analysis is great, and it's a big
+
+[00:25] part of my advantage, but one of the biggest mistakes private traders make is thinking that the chart
+
+[00:30] should be the only source of opportunities . Some of the best advantages I have ever seen have
+
+[00:35] belonged to traders who have developed expertise in areas that are incomprehensible to most of their
+
+[00:40] competitors. They then combine this specialized knowledge with excellent technical execution
+
+[00:44] . The schedule helped them close the deal, but it was their expertise that allowed them to see the opportunity early on
+
+[00:49] . One of the great things about trading is that there is more than one
+
+[00:54] way to make money, and that is what I love most about the Market Wizards series of books. Unlike many
+
+[00:59] professions where there is a fairly clear path to success, markets reward creativity. Every day,
+
+[01:03] thousands of different strategies are implemented simultaneously. The problem is that most
+
+[01:08] private traders voluntarily choose to play the same game as everyone else. They all follow the same
+
+[01:14] moving averages, the same breakout levels, and the same YouTube videos explaining the same
+
+[01:18] set of patterns. There is nothing wrong with that, but if you are competing for the same opportunities as
+
+[01:24] millions of other traders, you find yourself in the most crowded part of the
+
+[01:27] market. Instead, ask yourself another question. What knowledge could I develop that almost no one
+
+[01:33] else possesses? Just like in business, when you have the ability to combine two different areas of expertise
+
+[01:39] in a way that few can, the markets usually reward you handsomely for it. The same is true in
+
+[01:44] trading. When you combine two unique skills, you suddenly become a completely different type of
+
+[01:49] trader. You are no longer relying solely on analyzing price movements, but are able to spot
+
+[01:53] opportunities that most traders don't even realize exist.
+
+[01:57] Most gurus would keep it to themselves, but lucky you, I don't use it anymore anyway. So, here are five areas of
+
+[02:03] inspiration that have made me a lot of money. Advantage idea number one: exchange-traded debt instruments.
+
+[02:10] These are some of the most boring and underrated opportunities in the markets. This was a field
+
+[02:14] I mastered over a decade ago, relentlessly studying how these various securities traded.
+
+[02:20] Recently, this knowledge came in handy again in the case of STRC, where I sold puts in a situation that I understood
+
+[02:25] much better than the average market participant. STRC is a debt instrument that pays a variable
+
+[02:31] monthly dividend, has priority over common stock, and MSTR can adjust the dividend amount in
+
+[02:37] order to maintain the STRC price at the par value of $100. When STRC began to fall sharply in late June,
+
+[02:43] I sold puts on it as I saw a high probability of stabilization or a
+
+[02:47] rebound after capitulation on large volumes. My basic fundamental
+
+[02:51] view was that a dividend cut was an unlikely outcome. The company had built up a
+
+[02:55] significant cash reserve specifically to support the preferred dividend, and it
+
+[02:59] needed to maintain easy access to debt markets. Additionally, it is a question of
+
+[03:03] investor confidence in its broader digital lending strategy. High implied
+
+[03:07] volatility gave short-term puts a significant margin of safety even in the unlikely
+
+[03:11] scenario of a dividend cut. All technical indicators also pointed to this . A quick AI stress test
+
+[03:15] also confirmed that the probabilities favored this deal. Not only were few traders paying attention to this paper, even
+
+[03:22] fewer of them understood the opportunities that this sell-off opened up. Most traders completely
+
+[03:26] ignore these securities because they do not understand their place in the capital structure or
+
+[03:29] the principles of their pricing. If you become an expert in preferred stock,
+
+[03:33] convertible debt, or other little-studied instruments, you will periodically find
+
+[03:37] inefficiencies that simply aren't there in large- cap stocks. Sometimes these are just
+
+[03:42] attractive opportunities, and sometimes they can actually provide you with a monthly income.
+
+[03:46] While such situations are, of course, rare and require a deep understanding of the risks, it is
+
+[03:51] worth taking the time to acquire these skills for many of you. Although these securities are traded like stocks,
+
+[03:56] they behave more like bonds. Exchange-traded debt pays interest and is typically
+
+[04:00] repaid at a set price and date. Preferred stock occupies a niche between
+
+[04:04] debt and common stock. They usually pay dividends, and these
+
+[04:07] payments are made earlier than to holders of common shares. These differences help
+
+[04:11] determine how each security should be valued . Unlike common stocks, whose valuation
+
+[04:15] depends largely on expectations of future earnings, these securities are valued based on yield,
+
+[04:19] credit risk, and the likelihood that investors will ultimately receive their face value. If a
+
+[04:25] $25 preferred security is trading at $22, continues to pay dividends, and the issuer
+
+[04:30] remains fundamentally sound, the investor not only receives current income,
+
+[04:34] he also potentially earns capital gains as the security approaches par or is
+
+[04:39] eventually redeemed. Conversely, if interest rates rise or the issuer's credit rating
+
+[04:44] deteriorates, the required yield increases and the security may
+
+[04:47] trade at a discount to par. Understanding these relationships allows you to assess
+
+[04:51] fair value in a way that many stock traders don't even think about. And that
+
+[04:55] was a big part of the analysis I did for my STRc deal. I ended up creating an
+
+[05:00] entire video about this deal as part of my trading course, where I highlight the best opportunities of the
+
+[05:04] month each month. If you are interested in such things. Idea for advantage number two. A Neanderthal trader becomes a
+
+[05:10] biotechnology expert. Biotechnology is scary because it has its own language. You have phases one, two, and three of clinical
+
+[05:16] trials, FDA advisory committees, primary and secondary endpoints—the terminology is enough to make your head
+
+[05:23] spin. This complexity scares many traders away, but it is in complexity that opportunities can often be found. And if you
+
+[05:30] take the time to understand how clinical data should actually be interpreted, you will suddenly begin to evaluate that
+
+[05:36] information very differently than someone who is simply reacting to headlines. The market sometimes reacts too
+
+[05:41] sharply because participants do not understand what they are reading, and this creates opportunities for those who understand the
+
+[05:46] business. Let's take clinical trials. Most traders hear that a company
+
+[05:50] has reached its primary endpoint and immediately assume that this is a " bullish" signal. Well,
+
+[05:54] sometimes it is, and sometimes it is n't. A trial may technically meet its primary endpoint but
+
+[05:59] have such a small effect that doctors won't care, or regulators will
+
+[06:03] question its clinical significance. On the other hand, a company may not achieve statistical
+
+[06:08] significance on the primary endpoint, but obtain very strong secondary indicators, which will significantly increase
+
+[06:14] the likelihood of the drug's eventual approval. If you can understand what the purpose of
+
+[06:19] the trials was, what investors expected beforehand, and how the data compares to
+
+[06:24] competing treatments, you will be able to evaluate press releases through a completely different, better
+
+[06:29] lens than most . The same goes for the FDA process itself. Traders often think that
+
+[06:35] FDA approval is a simple yes or no decision, but there are many important steps leading up to it. There are IND filings,
+
+[06:41] fast-track status grants , advisory committee meetings, complete response letters,
+
+[06:46] PDUFA dates—all of which impact the assessment and likelihood of success. The result of the FDA advisory committee's 14-to-2 vote in
+
+[06:53] favor of approval may tell you more than the morning headline on the news. Similarly, understanding
+
+[06:58] why a full response letter was sent will help distinguish between a simple manufacturing issue and an
+
+[07:03] efficacy issue that could permanently devalue a drug. If all of this sounds like complete nonsense to you
+
+[07:08] , well, congratulations. You just proved my point. That is why the advantage and opportunities exist
+
+[07:14] for those who take the time to study these areas. Markets are generally efficient in the long
+
+[07:19] run, but they are significantly less efficient when participants are forced to interpret
+
+[07:23] highly specialized information in real time. The more technical and narrow
+
+[07:28] the information becomes, the fewer people are able to accurately factor it into the price. This is exactly the type of market environment
+
+[07:34] where information advantage can exist, and traders with such knowledge can
+
+[07:39] succeed. Advantage idea number three: mergers and acquisitions. Most people think that a buyout
+
+[07:43] is simply an agreement by one company to acquire another. In fact, there are dozens of moving
+
+[07:47] parts. Is this a strategic buyer or a private equity fund? Is
+
+[07:51] this a takeover, a merger of equal companies, or a reverse takeover? Why is one deal trading at a 2%
+
+[07:56] spread, while another is trading 20% ​​below the advertised bid price? What regulatory approvals
+
+[08:01] still need to be obtained? What are the financial risks? Professional merger arbitration funds spend
+
+[08:06] their entire careers studying these issues. Now imagine combining this expertise with the
+
+[08:11] flexibility and execution skills of an active trader. I like to think that when I was
+
+[08:15] at the peak of my trading activity at Trillium, it was one of my best areas of expertise, as well as
+
+[08:20] one of my most profitable. Through intensive training and data tracking, I was
+
+[08:24] able to get a very clear sense of exactly where the stock would end up after some of these headlines. This
+
+[08:29] allowed me to be much more aggressive and precise than the rest of the market. Many of these
+
+[08:33] opportunities still exist today. I also have a video on how to trade news headlines,
+
+[08:38] so watch that after this. Advantage idea number four: index rebalancing. It
+
+[08:43] was recently revealed that two Millennium units allegedly made nearly $4 billion in a single
+
+[08:48] month on large index rebalancing deals. This should come as no surprise to anyone who understands how much money is
+
+[08:54] forced to buy or sell when an index changes its composition. Sell-side analysts, quantitative
+
+[08:59] funds, and sophisticated hedge funds spend an enormous amount of time predicting these
+
+[09:03] changes because billions of dollars of passive capital have no choice but to
+
+[09:07] follow them. The most interesting thing is not that professionals are already doing it. The most interesting thing is that you
+
+[09:13] can study the same mechanisms. This field has certainly become much more efficient over
+
+[09:17] the past couple of decades, but that doesn't mean there's no money left in it. You may want to take the time
+
+[09:23] to study the criteria and scenarios under which companies are added to or removed from these indexes, as
+
+[09:28] well as the dynamics that occur during such rebalancing. Of course, you don't have a
+
+[09:32] team of analysts, I understand, but you don't need to operate with billions of dollars. You may just
+
+[09:39] understand these events well enough to benefit from the actions of large firms participating in rebalancing flows. The fifth
+
+[09:45] idea for advantage is ADR arbitration. ADR stands for American Depositary Receipt
+
+[09:51] . This is a stock in a company traded in another country, and it should reflect ownership interest in that
+
+[09:57] company in that other country. And this is another area that has recently become interesting again. We saw
+
+[10:03] SK Hynix trading at a significant premium in the US after its IPO, compared to its main listing.
+
+[10:09] Sometimes these premiums exist because converting shares is impractical or there are regulatory
+
+[10:15] restrictions. In other cases, these are simply temporary market distortions. Traders who have
+
+[10:19] access to multiple exchanges and are well -versed in cross-border settlements can
+
+[10:24] take advantage of these differences from time to time. Again, the advantage is not just in the graphics. The advantage is
+
+[10:28] understanding why two versions of essentially the same company are trading at different prices, and
+
+[10:32] knowing when that gap is likely to close and why. And then using the chart to
+
+[10:37] execute the deal correctly. Notice the common thread running through each of these
+
+[10:40] examples. None of them start with technical analysis. They start with expert knowledge.
+
+[10:45] Charts simply help you better execute a trade once you have already identified an opportunity. This is an
+
+[10:50] important distinction because it completely changes how you can think about advantage and
+
+[10:54] creating new strategies. One of the biggest advantages of individual traders is the
+
+[10:58] freedom to specialize. Large firms have mandates and face
+
+[11:01] bureaucracy. You are not. If you become obsessed with one little-known corner of the market that only offers
+
+[11:06] a few exceptional opportunities a year, good luck to you. Because many traders don't do that kind of
+
+[11:12] work. I have always believed that developing expert knowledge has a cumulative effect. Eventually, you reach a
+
+[11:16] point where you see things that other traders simply aren't trained to notice. This means you have accumulated
+
+[11:21] knowledge in a niche where very few people were willing to put in the effort. Well, I've given five examples, the
+
+[11:26] possibilities are really endless. Off the top of your head, you could specialize in analyst reports,
+
+[11:30] earnings reports, or secondary offerings of small- cap stocks. So don't
+
+[11:34] feel like you have to compete with every trader on Earth for the same setup. The markets are
+
+[11:39] too big for that. But if you are interested in this topic, take the time to figure out where your
+
+[11:43] knowledge and experience can give you a unique advantage. And ultimately, that is what the advantage is. When you
+
+[11:49] start thinking like this, you stop chasing after others and build your own unique strategies.
+
+[11:54] Thank you for watching. Hit the subscribe button and we'll see you in the next video.

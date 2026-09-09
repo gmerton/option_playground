@@ -1,0 +1,19 @@
+{
+  "video_id": "Z9THivbJ2mI",
+  "url": "https://www.youtube.com/watch?v=Z9THivbJ2mI",
+  "title": "The Claude Trading Trap Killing Your PnL",
+  "channel": "TheOneLanceB",
+  "channel_id": "UCzksXiC-Ju-DTIZmMiaOVfQ",
+  "stream_date": "2026-08-26",
+  "duration": "12:33",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

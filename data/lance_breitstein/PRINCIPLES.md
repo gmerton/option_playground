@@ -18,24 +18,34 @@ Convention and the standing open question: [README.md](README.md).
 | [No man's land + bobblehead + epistemics](principles/no-mans-land-and-process.md) | veto / process | 3/5 | EOD ⭐ (the veto) | no | **Third independent statement against Carter's Squeeze**: contracting volatility = "price action that looks tradable but isn't" = stand aside. Second-order argument is the good one — paper cuts shrink risk tolerance so you *skip the real setup* (the Nikola story). Epistemics come out **well**: he defines TA as non-predictive EV-hunting, names mechanisms (big-order absorption, forced liquidation) and counterparties. ⚠ His critique that academic TA studies use "simple rules on stocks that are not in play" **partly lands against my own method.** |
 | [MTF, news, playbook, tape, scalping](principles/remaining-five.md) | mixed | 2.5/5 | 1 EOD ⭐ | no | ⭐ **Testable rule 3 sources now agree on**: fade outsized moves **only when there is NO fresh news** — he says it twice, Carter's veto list leads with news gaps, and the repo's gap study never conditioned on catalyst at all. Could rescue a setup currently written off at 1/5. Plus: intraday chart gets **80% weight** over daily when trading intraday; playbook step 2 = **"who's trapped"** (the counterparty question as a routine field — steal it). Tape/scalping ⚠ prop-dependent, parked. |
 | [Setup grading — chart nuance](principles/setup-grading-chart-nuance.md) | setup quality / entry grading | 2.5/5 | EOD ⭐⭐ | no | ⭐ **Most operationalizable setup material in the KB, weakest evidence in it.** 12 hand-drawn charts, 4 archetypes (breakout / trend-break bounce / turtle soup / **bouncy-ball short**), each graded with a reason. Discriminators the repo's scorecard does NOT have: **pullback depth vs the prior leg**, **range contraction before the trigger**, **level cleanliness**, and the "**price acceptance**" veto (tight bars at the lows = buyers absent = no play). ⭐ [18:03] states the tightness-vs-fragility mechanism — a quality pattern places its own invalidation close by. ⭐ [19:41] the **next video maps grade → size**: the missing first link to the 6× lever. ⚠ He drew every chart *including the outcomes*, then claims "this isn't retrospective hindsight analysis whatsoever" — zero numbers, zero base rates, 3 cherry-picked winners, course pitch mid-video. ⭐ **Collides productively with `crash_leader_reversion_study.md`** — he says decline *shape* discriminates, that study says *regime* does; event set already on disk to test both. |
+| [Capitulation quantified + writeup template](principles/capitulation-and-trade-writeups.md) | setup (blowoff short) + review-process | 3/5 (hypothesis) | EOD ⭐ | no | ⭐ **Testable now:** blowoff = bar range ≥ 2× prior day AND volume ≥ 2× prior day after an accelerating run; both timeframes capitulating = strongest. Third source for the **no-news veto** on fades. Template adds two fields the journal lacks: the **analog ticker** and the **prior-gap cause**. `TexislSXpjs` (2023). |
+| [$MULN layup anatomy](principles/muln-layup-anatomy.md) | setup (catalyst long → overnight → day-2 failed drive) | 3/5 template · 1/5 evidence | overnight piece EOD ⭐ | no | ⭐ **Cross-source match for the repo's FBO short detector**: drive above the level, fail to hold, lower high, break below VWAP → short, stop at the highs (adds a *lower-high* gate worth testing). Holder psychology (99% out of the money = no supply) + **share turnover** (volume > float resets the cost basis) + skew = the overnight thesis. Timeframe weights 70/25/5. Pod-dependent. `-x1nbxasFcE` (2023). |
+| [15 risk-management lessons](principles/risk-management-15-lessons.md) | sizing + process | 3/5 | two rules testable on our journal | no | Numbers: broker-enforced **daily loss limit**; **overnight size = ½–⅓ of intraday**; 3× wider stop → ⅓ size; **80% of profits from 1–5% of trades, best trades 100× normal**. ⚠ **Contradicts Luk twice**: overnight (Luk: no stops, it evens out) and risk skew (Luk: constant 0.3%). Testable: exit quality vs position size; worst-day distribution → a loss limit. `gb7nNveNBjg` (2025-11). |
+| [Specialist-knowledge edges](principles/specialist-knowledge-edges.md) | edge-sourcing | 2/5 | index-rebalance EOD; rest need domain data | no | Preferreds (STRC put sale), biotech clinical literacy, M&A headlines, index rebalancing, **ADR premium — names SK Hynix's US line trading rich to Korea** (⚠ user held SKHY overnight the day this was written). Charts execute, knowledge finds. Course pitch mid-video. `e4m5smJxiVY` (2026-08). |
+| [Four constraints + the AI trap](notes/four-constraints-and-the-ai-trap.md) | review-process | process | unfalsifiable; the diagnosis is checkable | — | ⭐ **Best diagnostic frame in the KB:** edge → execution → opportunity → risk, strict hierarchy, fix the current bottleneck only. ⚠ **Lands on this repo**: the Sept-2026 journal reads execution-constrained while the week's tooling was opportunity work. AI earns its keep on trade-database diagnosis and guardrails, not idea generation. `3sug7e1AYk8`, `Z9THivbJ2mI` (2026). |
+| [Hot-streak protocol](notes/hot-streak-protocol.md) | psychology / risk process | process | one claim checkable on `journal_nav` | no | Six proactive steps; the rule underneath: aggression matches the **EV of the opportunity, not the emotional state**. Checkable: day-after-a-top-decile-day P&L (needs a quarter of data). `AVoMjAebyB4` (2026-06). |
+| [Macro regimes + playbook rotation](notes/macro-regimes-and-playbook-rotation.md) | regime | framing | untested | no | Rates / inflation / elections / strong vs weak economy → which playbook pays. Slower regimes than the repo's 30-day state (which showed no persistence); defined by opportunity type, not trailing returns — a different object, untested. `9EEUa618xQw` (2026-01). |
 | [Anchored VWAP — trend context, not a level](principles/anchored-vwap.md) | regime / trend-context | 2/5 | EOD-testable | no | **Coherent mechanism, honestly presented — but NOT the entry-location tool this KB was opened to find.** He explicitly refuses to use (A)VWAP as a level: "I am not buying or selling simply because we get above or below that line." It is a directional veto (don't short above it unless capitulated) plus a swing trailing-exit structure. ⚠ Null hypothesis unaddressed: AVWAP is a volume-weighted MA with a hand-picked start, and nothing shows the weighting/anchor beats a fixed-lookback trend filter. ⭐ One fully mechanical rule extracts and is the cheapest open test in the repo. |
 
 ---
 
 ## Priority queue
 
-**22 videos ingested · ALL written up** (2026-07-26/27, +`9SgNXrWTefY` 2026-08-02). Two co-equal
+**30 videos ingested · ALL written up** (2026-07-26/27, +`9SgNXrWTefY` 2026-08-02, +8 on 2026-09-09). Two co-equal
 tracks — see [README.md](README.md). Nothing below is written up yet except AVWAP.
 
-### ⚠ Next ingest — named by him, not yet in the manifest queue
+### ⚠ Next ingest — found, blocked on YouTube rate limits (2026-09-09)
 
-- [ ] **The setup-grading → sizing video** that `9SgNXrWTefY`@[19:41] forward-references ("grade
-      your setup A through D and directly influence your sizing"). This is the **most on-point
-      unwatched video for the standing open question** — it is the join between setup quality and
-      the 6× sizing lever. ⚠ **Not in `channel_videos.txt` — the manifest is stale.** `9SgNXrWTefY`
-      is line 1 (newest) and is dated 2026-07-25, so the manifest predates the sequel. The only
-      sizing titles in it (`eDdpTNB04ws`, `tIB72PAeZLU`) are both already written up and neither is
-      the A–D grading video. **Regenerate the manifest via yt-dlp before hunting for it.**
+- [ ] **`ubofAZwgd4w` "My Trade Grading System that Made Me $100,000,000 (A,B,C,D)"** — the
+      setup-grading → sizing sequel `9SgNXrWTefY`@[19:41] forward-references. **Manifest regenerated
+      2026-09-09 (143 videos); the video exists; three caption pulls returned HTTP 429.** Retry first
+      thing next session — it is still the most on-point unwatched video for the open question.
+- [ ] `jZ5-j7Q4GzY` "ICT is a Fraud, But Do His Trading Concepts Actually Work?" — same cross-source
+      format as the Qullamaggie reaction. 429 on 2026-09-09.
+- [ ] `mjfONTBf6M0` "Best Practices to Navigate High-Volatility Markets". 429 on 2026-09-09.
+- [ ] Also unwatched and relevant: `ZOHG-OnQuos` (trend), `ABzXM-9LonM` (3-step losing-trade
+      review), `_jWWfY_pesY` (daily routine), `sxjsqauWE9E` (reacting to Ross Cameron), `eWeGAYvjxh4`
+      (selling options, 4 rules), `U9UZ2U6bozQ` (0DTE warning).
 - [ ] **Ariel Hernandez** — named at [19:19] alongside Kyle Williams as a practitioner of the same
       nuance. Possible cross-source check; not currently in any KB.
 

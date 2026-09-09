@@ -1,0 +1,19 @@
+{
+  "video_id": "AVoMjAebyB4",
+  "url": "https://www.youtube.com/watch?v=AVoMjAebyB4",
+  "title": "Do THIS After Every Winning Trade",
+  "channel": "TheOneLanceB",
+  "channel_id": "UCzksXiC-Ju-DTIZmMiaOVfQ",
+  "stream_date": "2026-06-06",
+  "duration": "8:44",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}
