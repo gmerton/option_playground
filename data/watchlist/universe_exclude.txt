@@ -1,0 +1,2 @@
+# never stream these (short-watch names; the detectors are long-only)
+CRAK
