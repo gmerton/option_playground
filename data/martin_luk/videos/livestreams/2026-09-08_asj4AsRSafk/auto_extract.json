@@ -1,0 +1,198 @@
+{
+  "video_id": "asj4AsRSafk",
+  "date": "2026-09-08",
+  "title": "NO TRADE TODAY | 8 Sep 2026",
+  "observed_trades": [
+    {
+      "date": "2026-09-08",
+      "ticker": "QBTS",
+      "direction": "short",
+      "action": "stopped_out",
+      "setup": "Quantum basket shorts (QBTS/RGTI/IONQ from 8/27) stopped out at the open on the gap up.",
+      "entry_basis": "Group short from 8/27",
+      "stop": "Tight",
+      "source": "2026-09-08_asj4AsRSafk@13:58",
+      "confidence": "stated",
+      "notes": "'quantum are stopping me out at the open. Hopefully they're not going to reverse on this gap up.' Later 'if the quantums are getting rejected today and then go lower that will be very unfortunate' (21:19).",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-09-08",
+      "ticker": "RGTI",
+      "direction": "short",
+      "action": "stopped_out",
+      "setup": "Quantum basket short stopped out at the open.",
+      "entry_basis": "Group short from 8/27",
+      "stop": "Tight",
+      "source": "2026-09-08_asj4AsRSafk@13:58",
+      "confidence": "likely",
+      "notes": "Group stop-out; individual names not restated.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-09-08",
+      "ticker": "IONQ",
+      "direction": "short",
+      "action": "stopped_out",
+      "setup": "Quantum basket short stopped out at the open.",
+      "entry_basis": "Group short from 8/27",
+      "stop": "Tight",
+      "source": "2026-09-08_asj4AsRSafk@13:58",
+      "confidence": "likely",
+      "notes": "Group stop-out; individual names not restated.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-09-08",
+      "ticker": "SNDK",
+      "direction": "short",
+      "action": "cover",
+      "setup": "Covered the SanDisk short last week before today's 'stunning breakout'.",
+      "entry_basis": "Covered per the plan to cut shorts when QQQ closed above the 9/21",
+      "stop": "",
+      "source": "2026-09-08_asj4AsRSafk@50:46",
+      "confidence": "likely",
+      "notes": "'SNDK stunning breakout today. Yeah, that's why I covered my load last week' - caption 'SM'. Assumed to include the SK Hynix leg as well.",
+      "fill_timing": "last week"
+    },
+    {
+      "date": "2026-09-08",
+      "ticker": "NONE",
+      "direction": "flat",
+      "action": "hold",
+      "setup": "Deliberate no-trade day: sat out no matter what after trading too aggressively and poorly the prior weeks.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-09-08_asj4AsRSafk@04:47",
+      "confidence": "stated",
+      "notes": "Title of the stream. Semis 'look like a perfect short' (27:08) but he accepted missing it as the price of the rule.",
+      "fill_timing": "today"
+    }
+  ],
+  "principles": [
+    {
+      "category": "psychology",
+      "text": "Forced rest day: after weeks of trading too aggressively and badly, commit in advance to zero trades no matter what, and use the day to practice patience. Missing a 'perfect' short (semis) is accepted as the punishment for earlier impatience.",
+      "timestamp": "04:47"
+    },
+    {
+      "category": "posture",
+      "text": "Semis/memory pushed higher with follow-through but he already missed the entry, so it is not a time for longs; many names are still under the clouds rallying INTO moving averages, and SMH is still under the weekly 9 - needs more upside proof.",
+      "timestamp": "06:00"
+    },
+    {
+      "category": "mindset",
+      "text": "You don't have to be a genius or trade perfectly; how you handle the difficult periods matters more than the easy ones when everyone makes money. Improve bit by bit.",
+      "timestamp": "08:25"
+    },
+    {
+      "category": "entries",
+      "text": "Undercut-and-rally buys: does NOT wait for the candle close, and may not even wait for the reclaim of the key level if price overshoots support - buys the reversal on the 1/5/15-minute chart.",
+      "timestamp": "25:25"
+    },
+    {
+      "category": "entries",
+      "text": "Shorting near the high of day above all the EMAs and VWAP (SPCX post-IPO) is possible but harder and lower win rate; it needs a nailed entry near the open / swing high.",
+      "timestamp": "27:56"
+    },
+    {
+      "category": "study",
+      "text": "Chart-study method: scan a stock's meaningful trends and ask where the best risk/reward entry was that is (a) replicable and (b) identifiable in real time, not hindsight. Form a hypothesis (e.g. breakout after a pin bar), test it across the same stock's trends and then across tens/hundreds of stocks; discard rules with many counter-examples. His shift from breakouts to pullbacks came from seeing repeated wicks into the 9/21 that continued higher, giving a lower entry than the breakout; then define the intraday entry as a lower-timeframe breakout. Easier framing: 'where can I set the tightest stop?'",
+      "timestamp": "35:59"
+    },
+    {
+      "category": "exits",
+      "text": "A quick push into the 50 EMA after a fast downtrend with no consolidation and no support shown at the rising EMAs, prior lows or gaps: sell at least 50% at the 50 EMA (odds of resistance there and at the weekly 9 are high); he wouldn't buy that pullback at all, and might short it.",
+      "timestamp": "60:06"
+    },
+    {
+      "category": "market_read",
+      "text": "Data-center names locked out higher (IREN strong), LITE forming a VCP/cup-with-handle on daily and weekly with low volume (fine), software weak and not filling the gap down (PATH toward the 50 EMA), silver rejected overnight.",
+      "timestamp": "17:20"
+    },
+    {
+      "category": "entries",
+      "text": "Crypto pullback: next levels of interest are the weekly 21 or 9 (his chart's 13/30 EMA equivalents).",
+      "timestamp": "23:45"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "13:58",
+      "caption_text": "quantum",
+      "context": "stopping me out at the open",
+      "guess": "QBTS/RGTI/IONQ",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "15:16",
+      "caption_text": "Kyosia",
+      "context": "Japanese memory name getting a rejection",
+      "guess": "Kioxia (285A.T)",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "17:20",
+      "caption_text": "Path",
+      "context": "not finding support, heading to the 50 EMA",
+      "guess": "PATH",
+      "confidence": "confirmed"
+    },
+    {
+      "timestamp": "17:20",
+      "caption_text": "Be / N",
+      "context": "'Be is super strong. N is skipping into the unfilled gap'",
+      "guess": "BE / ?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "18:16",
+      "caption_text": "The light",
+      "context": "VCP / cup-with-handle forming, weekly and daily decent",
+      "guess": "LITE",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "32:52",
+      "caption_text": "IRN",
+      "context": "looks pretty strong; data center names",
+      "guess": "IREN",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "48:56",
+      "caption_text": "ESTs",
+      "context": "shaping up",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "50:46",
+      "caption_text": "SM",
+      "context": "stunning breakout today - 'that's why I covered my load last week'",
+      "guess": "SNDK",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "55:57",
+      "caption_text": "AHL",
+      "context": "viewer bought at the 150 MA bottom and sold the 40% bounce",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "64:33",
+      "caption_text": "EMD",
+      "context": "also going higher",
+      "guess": "AMD",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "67:56",
+      "caption_text": "Hammer",
+      "context": "building a decent flag",
+      "guess": "HMR?",
+      "confidence": "unsure"
+    }
+  ]
+}

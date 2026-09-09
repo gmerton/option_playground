@@ -1,0 +1,189 @@
+{
+  "video_id": "SaofxooZc8Q",
+  "date": "2026-09-02",
+  "title": "Getting too bearish | 2 Sep 2026",
+  "observed_trades": [
+    {
+      "date": "2026-09-02",
+      "ticker": "MU",
+      "direction": "short",
+      "action": "entry",
+      "setup": "Shorted Micron yesterday instead of SNDK because MU was the weaker of the two: looked like a breakout of the prior-day high, then rejected and closed below the anchored VWAP and the 9 EMA near the low of day - the 'trickiest' pattern that looks like a breakout but is a great short entry.",
+      "entry_basis": "Failed breakout of prior-day high; close below anchored VWAP and 9 EMA",
+      "stop": "",
+      "source": "2026-09-02_SaofxooZc8Q@11:43",
+      "confidence": "stated",
+      "notes": "'yesterday I shorted MU instead of SNDK, mainly because MU was weaker' (11:43).",
+      "fill_timing": "yesterday"
+    },
+    {
+      "date": "2026-09-02",
+      "ticker": "TSLA",
+      "direction": "short",
+      "action": "stopped_out",
+      "setup": "Tesla short stopped out at the open, then TSLA went straight down without giving another entry. Post-mortem: he shorted at the lows (extended to the downside); should have waited for the bounce into the anchored VWAP / hourly EMAs.",
+      "entry_basis": "Short near the lows after the breakdown",
+      "stop": "Tight; hit at the open",
+      "source": "2026-09-02_SaofxooZc8Q@15:18",
+      "confidence": "stated",
+      "notes": "'Tesla stops me out at the open' (15:18); post-mortem at 101:31-103:20; could not re-enter for lack of buying power (64:39).",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-09-02",
+      "ticker": "SNDK",
+      "direction": "short",
+      "action": "missed",
+      "setup": "Wanted to short SanDisk on the day's brutal breakdown (abnormal move on every timeframe) with a ~1% stop at the 5-minute candle high, but had no buying power after the TSLA loss and existing shorts.",
+      "entry_basis": "Breakdown from the prior candle low; stop at 5-min candle high (~1%)",
+      "stop": "~1% (5-min candle high)",
+      "source": "2026-09-02_SaofxooZc8Q@35:44",
+      "confidence": "stated",
+      "notes": "'I love to short SNDK too, but I ran off buying power again' (35:44); 'shorting here is definitely very aggressive... the best entries should be up here' (51:21). Caption 'SNK'/'SNTK'.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-09-02",
+      "ticker": "SPCX",
+      "direction": "short",
+      "action": "hold",
+      "setup": "SpaceX short (third try, from 8/27) finally breaking down; hoping for follow-through and a weak weekly close.",
+      "entry_basis": "Failed reclaim of the weekly 9",
+      "stop": "Very tight",
+      "source": "2026-09-02_SaofxooZc8Q@54:52",
+      "confidence": "stated",
+      "notes": "'finally the breakdown on SpaceX... I've tried this thing since Thursday' (54:52). Stopped out the next day per the 9/3 stream.",
+      "fill_timing": "2026-08-27"
+    },
+    {
+      "date": "2026-09-02",
+      "ticker": "DELL",
+      "direction": "short",
+      "action": "watch",
+      "setup": "'Dell could be a short too' but he stuck with the DRAM/memory shorts.",
+      "entry_basis": "Bounce into resistance",
+      "stop": "",
+      "source": "2026-09-02_SaofxooZc8Q@15:18",
+      "confidence": "likely",
+      "notes": "Caption 'Dow'. Same caption used for Dell on 8/27.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-09-02",
+      "ticker": "SQQQ",
+      "direction": "long",
+      "action": "missed",
+      "setup": "No buying power even for SQQQ as an index short proxy.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-09-02_SaofxooZc8Q@82:39",
+      "confidence": "stated",
+      "notes": "Mentioned in passing.",
+      "fill_timing": "today"
+    }
+  ],
+  "principles": [
+    {
+      "category": "posture",
+      "text": "Plan for both sides of the open: cover some shorts into an early dump (to free buying power for other shorts) or add shorts (DRAM names, SNDK) into a bounce.",
+      "timestamp": "03:59"
+    },
+    {
+      "category": "market_read",
+      "text": "A slow bleed (wide candles with gap downs, -15% in four sessions, no panic) tends to make a downtrend LONGER than a fast waterfall, which is better for short-term shorts; we haven't had a prolonged downtrend in years - most corrections have been fast flushes. QQQ still slightly below the 50 EMA, so wait to see how the market reacts.",
+      "timestamp": "07:19"
+    },
+    {
+      "category": "entries",
+      "text": "Trickiest short pattern: what looks like a breakout of the prior-day high that gets rejected and closes below the anchored VWAP and 9 EMA near the low of day (MU) - the market 'confirming the weakness'. Between two candidates, short the weaker one.",
+      "timestamp": "11:43"
+    },
+    {
+      "category": "posture",
+      "text": "Stay focused on the short side for the coming days unless the market proves otherwise; what would turn him long is the mirror image of what turned him short.",
+      "timestamp": "12:44"
+    },
+    {
+      "category": "market_read",
+      "text": "SPY hanging around the hourly 9 EMA is the tell: when SPY finds resistance at the hourly 9 EMA 'that's the time where the market really starts to tank.'",
+      "timestamp": "40:39"
+    },
+    {
+      "category": "risk",
+      "text": "Doesn't juggle positions (closing working positions to free buying power) for a more aggressive, lower-win-rate entry like shorting SNDK at the lows; the best entries were higher up and he missed them.",
+      "timestamp": "50:50"
+    },
+    {
+      "category": "process",
+      "text": "Journaling now = entries and exits only; the daily pre-market writing (ideas for the day + reflection on the previous day) was dropped after ~1-1.5 years. No trading stats (win rate, avg win/loss) are useful to him, but journaling is 100% crucial because it is the first step to identifying and fixing mistakes - the big lessons are in the losing trades that traders in drawdown refuse to look at.",
+      "timestamp": "85:15"
+    },
+    {
+      "category": "entries",
+      "text": "'1-minute breakout of the previous bar' in the first five minutes means the last 1-minute bar; later in the day it means the bar that touches the support/resistance level; a 5-minute bar is often better for the breakdown reference.",
+      "timestamp": "87:39"
+    },
+    {
+      "category": "entries",
+      "text": "A short on the extension before price reaches the 21 EMA is fine if the stop is tight (~1.5%) and the entry is the first violation of a clean string of higher lows on the 5/15-minute chart; if stopped and it rallies into the 21, take another shot. You don't have to wait for the touch.",
+      "timestamp": "90:54"
+    },
+    {
+      "category": "mindset",
+      "text": "Trade what you see: whether RDDT is forming a late-stage VCP is irrelevant - it can gap 30% either way tomorrow.",
+      "timestamp": "94:27"
+    },
+    {
+      "category": "exits",
+      "text": "Post-mortem on the TSLA stop-out: getting stopped when shorting at the lows means the entry was extended to the downside; next time wait for the bounce into the anchored VWAP / hourly EMAs. Pullbacks into resistance are the entry 'just because they work.'",
+      "timestamp": "101:31"
+    },
+    {
+      "category": "entries",
+      "text": "Shorting a rejection of the declining 9 EMA while the 9 is still well above the 21 is a lower-win-rate, more aggressive short (LITE example); he prefers the 9 close to the 21, though an entry right at the high of day / declining 9 is great.",
+      "timestamp": "108:58"
+    },
+    {
+      "category": "psychology",
+      "text": "Ran out of buying power after the TSLA loss and watched SNDK and TSLA collapse without him: 'a man with a broken leg trying to shoot a penalty kick'; lesson - be more patient on entries so capital is available for the best one.",
+      "timestamp": "68:46"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "06:25",
+      "caption_text": "D RM / DRAM",
+      "context": "'I'm going to short DRAM and SNDK today'",
+      "guess": "DRAM names (MU) or Dell+ARM",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "15:18",
+      "caption_text": "Dow",
+      "context": "could be a short too",
+      "guess": "DELL",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "35:44",
+      "caption_text": "SNK / SNTK",
+      "context": "abnormal breakdown on every timeframe",
+      "guess": "SNDK",
+      "confidence": "confirmed"
+    },
+    {
+      "timestamp": "103:20",
+      "caption_text": "the medals",
+      "context": "coming back too fast, not shorting them",
+      "guess": "metals (GLD/SLV)",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "105:46",
+      "caption_text": "light",
+      "context": "viewer shorted on rejection of the 9 EMA, still above rising 21/50",
+      "guess": "LITE",
+      "confidence": "likely"
+    }
+  ]
+}

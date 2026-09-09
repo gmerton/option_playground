@@ -1,0 +1,239 @@
+{
+  "video_id": "ECvUYIDbscQ",
+  "date": "2026-08-31",
+  "title": "Memory shorts | 31 Aug 2026",
+  "observed_trades": [
+    {
+      "date": "2026-08-31",
+      "ticker": "INTC",
+      "direction": "short",
+      "action": "entry",
+      "setup": "Intel rejected at the 9 EMA and the anchored VWAP from the swing high; shorted on the gap-up open despite already-large short exposure.",
+      "entry_basis": "Rejection at the 9 EMA / swing-high anchored VWAP",
+      "stop": "",
+      "source": "2026-08-31_ECvUYIDbscQ@16:30",
+      "confidence": "stated",
+      "notes": "'I got no buying power left after shorting Intel' (16:30); setup described at 12:09.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-08-31",
+      "ticker": "TSLA",
+      "direction": "short",
+      "action": "missed",
+      "setup": "Wanted to short Tesla again (weekly weakness, lower highs/lows since Dec 2025, below all EMAs) but had no buying power after INTC. A Thursday (8/27) short had already failed.",
+      "entry_basis": "Below all EMAs near the low of the prior range",
+      "stop": "",
+      "source": "2026-08-31_ECvUYIDbscQ@11:08",
+      "confidence": "stated",
+      "notes": "'shorted on Thursday but failed... I would also like to short Tesla, but I can't' (11:08-16:30). Tesla later pushed into the weekly 9 and daily 50 (29:54).",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-08-31",
+      "ticker": "SNDK",
+      "direction": "short",
+      "action": "hold",
+      "setup": "Holding the SanDisk short from last week; SNDK showing relative strength today, rejecting the swing high and anchored VWAP.",
+      "entry_basis": "Prior-week rejection at resistance / EMA cluster",
+      "stop": "Tight; 'let's see whether I get stopped out'",
+      "source": "2026-08-31_ECvUYIDbscQ@16:30",
+      "confidence": "stated",
+      "notes": "Caption 'SNTK'/'SNT'. 'SNDK is very strong today compared to the market weakness' (23:42); 'getting some rejection of the swing high' (55:24).",
+      "fill_timing": "last week"
+    },
+    {
+      "date": "2026-08-31",
+      "ticker": "SK Hynix",
+      "direction": "short",
+      "action": "hold",
+      "setup": "Holding the SK Hynix short from last week alongside SNDK.",
+      "entry_basis": "Prior-week rejection at resistance / EMA cluster",
+      "stop": "Tight",
+      "source": "2026-08-31_ECvUYIDbscQ@16:30",
+      "confidence": "stated",
+      "notes": "Caption 'SK Highix'. Not a US ticker.",
+      "fill_timing": "last week"
+    },
+    {
+      "date": "2026-08-31",
+      "ticker": "SPCX",
+      "direction": "short",
+      "action": "hold",
+      "setup": "SpaceX short (third try from 8/27) still open and 'hanging around'.",
+      "entry_basis": "Failed reclaim of the weekly 9",
+      "stop": "Very tight",
+      "source": "2026-08-31_ECvUYIDbscQ@07:34",
+      "confidence": "stated",
+      "notes": "Listed with SNDK/SK Hynix as the shorts still hanging around.",
+      "fill_timing": "2026-08-27"
+    },
+    {
+      "date": "2026-08-31",
+      "ticker": "DELL",
+      "direction": "short",
+      "action": "missed",
+      "setup": "Wanted to short Dell today but skipped because of earnings tomorrow.",
+      "entry_basis": "Bounce into resistance",
+      "stop": "",
+      "source": "2026-08-31_ECvUYIDbscQ@24:03",
+      "confidence": "likely",
+      "notes": "Caption 'D today, but tomorrow they got the earnings' - Dell is the name he tracked on 9/3 as well; ticker inferred.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-08-31",
+      "ticker": "AXTI",
+      "direction": "short",
+      "action": "watch",
+      "setup": "Flagged as a more aggressive short entry: rallying into the prior swing lows and the 60-minute 9 EMA but very extended from the daily EMAs, which lowers the odds.",
+      "entry_basis": "Rally into prior swing lows + 60-min 9 EMA",
+      "stop": "",
+      "source": "2026-08-31_ECvUYIDbscQ@17:14",
+      "confidence": "stated",
+      "notes": "Explicitly framed as a lower-win-rate entry that only works in a trending market; not stated as taken.",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-08-31",
+      "ticker": "AAPL",
+      "direction": "short",
+      "action": "watch",
+      "setup": "Lost the 9 EMA Friday, rejected at the 21 Thursday, below the 9 and 21 for a second week, gapping up at the open - 'great for the shorts'; may look for an entry.",
+      "entry_basis": "Gap up into the declining 9/21",
+      "stop": "",
+      "source": "2026-08-31_ECvUYIDbscQ@10:28",
+      "confidence": "unsure",
+      "notes": "Caption 'AAP'. Could be Apple (AAPL) or Advance Auto Parts (AAP); no fill stated.",
+      "fill_timing": "today"
+    }
+  ],
+  "principles": [
+    {
+      "category": "entries",
+      "text": "A gap up at the open after a weak close is 'great for the shorts' - it delivers the bounce into the declining 9/21 that the short entry needs.",
+      "timestamp": "11:08"
+    },
+    {
+      "category": "entries",
+      "text": "Shorting a rally into prior swing lows + the 60-minute 9 EMA while the stock is very extended from the daily EMAs is an aggressive, lower-win-rate entry: only works when the market is really trending, so be very selective with it.",
+      "timestamp": "17:14"
+    },
+    {
+      "category": "risk",
+      "text": "Skip a short when earnings are tomorrow, even if the chart is right.",
+      "timestamp": "24:03"
+    },
+    {
+      "category": "study",
+      "text": "When you're 50/50 on a trade, run it as an imaginary position and let the market grade it over a few days - a free test of the idea (used on the PSTG-type rejection at the hourly 9/21).",
+      "timestamp": "49:56"
+    },
+    {
+      "category": "entries",
+      "text": "High-R/R short pattern: a wide-range candle with a long upper wick, high volume and a weak close (below the prior day's low) after a big run, followed by a gap up into the 15-minute 9/21 EMA; the fade reads as a failed breakout / upthrust. Not far from the swing high, so the stop is tight.",
+      "timestamp": "58:59"
+    },
+    {
+      "category": "posture",
+      "text": "'This is not the right environment for taking any longs' - willing to take paper cuts and focus only on the short side while shorts have traction; even if MU takes out the prior week high, look for the failed-breakout short rather than the long.",
+      "timestamp": "55:09"
+    },
+    {
+      "category": "market_read",
+      "text": "Weakness shows up in individual names before the index: count how many stocks degrade from the leading to the mediocre to the lagging list, leaders (semis, CCJ, airlines, software) slowing, more mega caps below the 9 EMA than above, and small caps going illiquid and getting removed. The IWM breakdown is confirmation, not the trigger. Felt like late 2021 and Dec 2024/Jan 2025.",
+      "timestamp": "65:37"
+    },
+    {
+      "category": "entries",
+      "text": "Shorting weak vs strong stocks: neither has a clear edge. A beaten-down name gives a higher win rate but less follow-through; a strong name (still above all EMAs, 'pulling back from highs') gives higher R/R with a lower win rate. Stated as an unverified take.",
+      "timestamp": "70:42"
+    },
+    {
+      "category": "risk",
+      "text": "Progressive exposure is used much less now: tighter stops (<1% on shorts) and lower risk per trade let him size aggressively while keeping drawdowns small - three or four losses cost ~6-7% of account instead of the old 5%-risk, 2%-stop regime.",
+      "timestamp": "76:31"
+    },
+    {
+      "category": "market_read",
+      "text": "Breadth indicators (MMFI, S5FI, % of S&P above the 20/50) were tried and found less useful than browsing his own stock universe.",
+      "timestamp": "81:17"
+    },
+    {
+      "category": "mindset",
+      "text": "Can't fully reconstruct the step-by-step switch from bullish to bearish; the main trigger was Thursday's (8/27) gap up creating tons of short entries.",
+      "timestamp": "93:32"
+    },
+    {
+      "category": "process",
+      "text": "Tier-2 watchlist = small/micro caps under ~$5B, split at $200M dollar volume per day (more liquid ones get traded).",
+      "timestamp": "94:04"
+    },
+    {
+      "category": "posture",
+      "text": "Same chart, opposite trade depending on market context: SNDK's current pattern would be a LONG if QQQ were 25% off its highs (Apr 2025) but is a SHORT with QQQ 4% off highs after an 8000% run. Too many technical traders look only at the price action and ignore the context.",
+      "timestamp": "101:59"
+    },
+    {
+      "category": "entries",
+      "text": "Not a fan of buying a pullback right after a huge rejection candle (DOCS); nor buying platinum (PPLT) into prior lows with a weak weekly structure.",
+      "timestamp": "108:44"
+    },
+    {
+      "category": "entries",
+      "text": "Crypto: wait for the pullback into the weekly 9 before buying; they can break out now but he isn't interested.",
+      "timestamp": "118:02"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "10:28",
+      "caption_text": "AAP",
+      "context": "losing the 9 EMA Friday, rejected at the 21 Thursday, below 9/21 for a second week",
+      "guess": "AAPL or AAP",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "24:03",
+      "caption_text": "D",
+      "context": "wanted to short today but earnings tomorrow",
+      "guess": "DELL",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "49:31",
+      "caption_text": "this PR / PUR",
+      "context": "rejected exactly at the hourly 9/21; 'why short PUR after a 100% move' - post-earnings wide candle, then Friday upper-wick weak close",
+      "guess": "PSTG (Pure Storage)",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "61:51",
+      "caption_text": "XML",
+      "context": "could be a short here rallying into all the EMAs on the hourly, daily 9 and weekly 9",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "72:24",
+      "caption_text": "SST",
+      "context": "beaten-down short example with less follow-through despite a 50% move",
+      "guess": "SST? (System1)",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "96:42",
+      "caption_text": "palent",
+      "context": "looking very strong, potential leader of the next bull run",
+      "guess": "PLTR",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "108:09",
+      "caption_text": "DOCS",
+      "context": "viewer bought the hourly pullback",
+      "guess": "DOCS",
+      "confidence": "confirmed"
+    }
+  ]
+}

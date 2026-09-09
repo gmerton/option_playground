@@ -1,0 +1,246 @@
+{
+  "video_id": "x_29NiEqP8s",
+  "date": "2026-09-03",
+  "title": "EP93 | 3 Sep 2026",
+  "observed_trades": [
+    {
+      "date": "2026-09-03",
+      "ticker": "SPCX",
+      "direction": "short",
+      "action": "stopped_out",
+      "setup": "SpaceX short stopped out today; it cleared the prior swing high and the anchored VWAP so there is no level to re-short.",
+      "entry_basis": "Third-try short from 8/27",
+      "stop": "Very tight",
+      "source": "2026-09-03_x_29NiEqP8s@86:38",
+      "confidence": "stated",
+      "notes": "'this SpaceX I got stopped out today and it just goes straight up' (86:38).",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-09-03",
+      "ticker": "SNDK",
+      "direction": "short",
+      "action": "hold",
+      "setup": "Holding the SanDisk short through a strong bounce; rationale is group weakness (SK Hynix vulnerable), weekly emphasis, and low odds of a successful breakout from a one-week consolidation after a 7000% run.",
+      "entry_basis": "Range contraction after a parabolic run; failed-breakout thesis",
+      "stop": "Tight",
+      "source": "2026-09-03_x_29NiEqP8s@41:21",
+      "confidence": "stated",
+      "notes": "Caption 'SNDK'/'SNTK'/'S&T'. Plan (61:19-62:51, 104:00): cover most shorts if QQQ closes above the 9/21 and the ~715 gap level.",
+      "fill_timing": "last week"
+    },
+    {
+      "date": "2026-09-03",
+      "ticker": "SK Hynix",
+      "direction": "short",
+      "action": "hold",
+      "setup": "Holding the SK Hynix short; the South Korean chart still looks vulnerable under its supports.",
+      "entry_basis": "Below supports after an explosive run",
+      "stop": "Tight",
+      "source": "2026-09-03_x_29NiEqP8s@11:08",
+      "confidence": "stated",
+      "notes": "Caption 'SK Highness'.",
+      "fill_timing": "last week"
+    },
+    {
+      "date": "2026-09-03",
+      "ticker": "TSLA",
+      "direction": "short",
+      "action": "missed",
+      "setup": "Did not short Tesla (no buying power); a viewer noted he should be glad, as TSLA bounced.",
+      "entry_basis": "Undercut-and-reclaim of the rising 9 plus gap up",
+      "stop": "",
+      "source": "2026-09-03_x_29NiEqP8s@29:59",
+      "confidence": "stated",
+      "notes": "'be glad you didn't have buying power to short Tesla - yes.'",
+      "fill_timing": "today"
+    },
+    {
+      "date": "2026-09-03",
+      "ticker": "SLV",
+      "direction": "short",
+      "action": "watch",
+      "setup": "Silver and gold rallying into the anchored VWAP from the swing high; may short in the coming days but wants 15-minute (or 30-min/hourly) lows below the 9 EMA first.",
+      "entry_basis": "Rally into swing-high anchored VWAP; needs lower-timeframe weakness",
+      "stop": "",
+      "source": "2026-09-03_x_29NiEqP8s@75:39",
+      "confidence": "stated",
+      "notes": "Instrument not specified (silver/gold futures or ETFs).",
+      "fill_timing": "today"
+    }
+  ],
+  "principles": [
+    {
+      "category": "posture",
+      "text": "Choppy, selective market: strong names gapping higher while weak names bounce into the declining 9; 'maybe some shorts can work well and some longs can work well, but no trend in most names.' Still leaning short but more open-minded.",
+      "timestamp": "10:26"
+    },
+    {
+      "category": "entries",
+      "text": "Not a fan of buying at a declining weekly 60/150 EMA (crypto); wait for the pullback into the faster EMAs (13/20/30 on that chart) instead.",
+      "timestamp": "08:55"
+    },
+    {
+      "category": "mindset",
+      "text": "When he has to run out of buying power to make a trade, that trade generally doesn't work.",
+      "timestamp": "31:39"
+    },
+    {
+      "category": "mindset",
+      "text": "Stop asking 'what do you think about X' - build your own opinion and let the market judge it; the reasoning process matters more than the conclusion, especially from 'a guy with a 25% win rate.'",
+      "timestamp": "35:50"
+    },
+    {
+      "category": "posture",
+      "text": "SNDK short logic: group weakness (SK Hynix under all supports), weekly emphasis, and the dot-com analog - leaders form a bullish-looking pattern (cup/VCP/inside-week breakout) after the first leg down, and top after that breakout fails or the range breaks down. Markets move faster now, so worth a few tries.",
+      "timestamp": "42:45"
+    },
+    {
+      "category": "entries",
+      "text": "Rarely buys a pullback purely off the 50 EMA (tried it on cyber names, still not good at it); prefers a pullback into an EMA convergence where the 9/21/50 sit close together.",
+      "timestamp": "50:08"
+    },
+    {
+      "category": "process",
+      "text": "Routine: at the desk 30 minutes before the open with a quick checklist; scans, watchlist review and trade planning happen while the market is closed (Hong Kong morning, 30-60 min) to stay rational; journal right after the scans.",
+      "timestamp": "52:47"
+    },
+    {
+      "category": "market_read",
+      "text": "Stocks don't 'belong' to an index; the index helps time entries a little but isn't required. Most of his watchlist is tech and correlates with QQQ, and QQQ/SPY are highly correlated anyway.",
+      "timestamp": "56:10"
+    },
+    {
+      "category": "market_read",
+      "text": "Semis are somewhat extended to the downside but haven't shown a real volatility expansion (no -3% to -5% wide red candles); the current range contraction should be followed by an expansion, which is the trade on memory names, QQQ, SPY and IWM.",
+      "timestamp": "58:12"
+    },
+    {
+      "category": "exits",
+      "text": "Cover most (not all) shorts when QQQ closes strong above the 9/21 EMA and the gap level (~715) - the key level for short-term strength; reduce short exposure to protect profits, without becoming bullish.",
+      "timestamp": "61:19"
+    },
+    {
+      "category": "entries",
+      "text": "Opening range breakouts: pull the trigger when the 1-minute opening range is tight (under ~1.5% stop); when the first candle already spans 4-5% it's the hardest kind. Alternative entry: 1-minute pullback into the opening-range high.",
+      "timestamp": "66:03"
+    },
+    {
+      "category": "process",
+      "text": "Watchlist sizes today: 55 lagging / 31 mediocre / 46 leading. Counts grow in bull markets and shrink in corrections as names fall below the $200M dollar-volume threshold and move to tier 2.",
+      "timestamp": "69:20"
+    },
+    {
+      "category": "entries",
+      "text": "Pullback buys that go sideways: it's part of the game (8-9 of 10 can fail to follow through). When that happens the market is choppy or you're in the wrong stocks (defensives like KO don't trend).",
+      "timestamp": "71:40"
+    },
+    {
+      "category": "entries",
+      "text": "Silver/gold short: don't be early - want at least 15-minute (or 30-min/hourly) lows below the 9 EMA before shorting the rally into the anchored VWAP.",
+      "timestamp": "78:43"
+    },
+    {
+      "category": "risk",
+      "text": "A tiny stop that shakes you out (viewer's NVDA short) is what saves you if the name runs to 300; if NVDA really rejects here there will be plenty of entries through the 9/21/50, and when the strongest name cracks, other names will too.",
+      "timestamp": "80:55"
+    },
+    {
+      "category": "entries",
+      "text": "Re-entry after a stop-out: no systematic rule. Re-short if the name quickly reverses (5-minute long wick turning red) and the market/other shorts agree; don't re-short once it clears the swing high and the anchored VWAP (SPCX).",
+      "timestamp": "85:43"
+    },
+    {
+      "category": "market_read",
+      "text": "Uses no breadth metrics - they add noise to decision making.",
+      "timestamp": "91:08"
+    },
+    {
+      "category": "sizing",
+      "text": "Pre-calculate position size for a 1% stop and a 1.5% stop (e.g. 5k vs 3k) and interpolate for anything in between (1.3% stop -> ~4k).",
+      "timestamp": "92:55"
+    },
+    {
+      "category": "mindset",
+      "text": "Returns can't be compared across traders or years: higher return = higher drawdown, and each year favors a different style. Only advice: keep fixing your mistakes, minimize downside, and let the market give the reward.",
+      "timestamp": "96:00"
+    },
+    {
+      "category": "mindset",
+      "text": "He wants a choppy, difficult market: those are the periods that expose weaknesses and force improvement.",
+      "timestamp": "20:41"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "07:54",
+      "caption_text": "food / foot",
+      "context": "looking very well on daily and weekly, gapping higher; 'foot is getting a strong follow through'",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "11:53",
+      "caption_text": "spice / spy",
+      "context": "gapping higher; inside week on the Qs",
+      "guess": "SPY",
+      "confidence": "confirmed"
+    },
+    {
+      "timestamp": "16:15",
+      "caption_text": "HP",
+      "context": "down after earnings, weekly not looking good",
+      "guess": "HPE (or HPQ)",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "18:12",
+      "caption_text": "ESTs",
+      "context": "going higher, near the swing high anchored VWAP and declining 21",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "28:03",
+      "caption_text": "Apparently",
+      "context": "did a decent shake out on the anchored VWAP",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "29:35",
+      "caption_text": "Path",
+      "context": "heading higher, earnings tonight",
+      "guess": "PATH",
+      "confidence": "confirmed"
+    },
+    {
+      "timestamp": "29:35",
+      "caption_text": "This block",
+      "context": "strong reversal to the upside",
+      "guess": "SQ (Block)",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "32:52",
+      "caption_text": "This ETF",
+      "context": "extended to the downside",
+      "guess": "SMH",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "75:06",
+      "caption_text": "This end tap",
+      "context": "up 13% from the open",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "83:18",
+      "caption_text": "ONDS",
+      "context": "another bounce into the declining 9 would be a good short",
+      "guess": "ONDS",
+      "confidence": "confirmed"
+    }
+  ]
+}
