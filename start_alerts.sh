@@ -7,6 +7,9 @@
 # Preflight checks the environment LOUDLY before anything starts.
 set -u
 cd "$(dirname "$0")"
+# secrets live in ~/.trading_env (sourced by the shell profiles too); load it here so the
+# monitor works even from a shell that skipped its profile
+[ -f "$HOME/.trading_env" ] && source "$HOME/.trading_env"
 
 RED=$'\033[1;31m'; YEL=$'\033[1;33m'; GRN=$'\033[1;32m'; OFF=$'\033[0m'
 fail=0
@@ -15,8 +18,7 @@ banner() { echo; echo "$1#######################################################
 # --- required by this tool ---------------------------------------------------
 if [ -z "${TRADIER_API_KEY:-}" ]; then
   banner "$RED" "MISSING: TRADIER_API_KEY  (the market-data feed -- cannot start)"
-  echo "  fix: add   export TRADIER_API_KEY=<key>   to ~/.bash_profile (bash) or ~/.zprofile (zsh),"
-  echo "       then open a NEW terminal window, or run:  source ~/.bash_profile"
+  echo "  fix: add   export TRADIER_API_KEY=<key>   to ~/.trading_env"
   fail=1
 fi
 [ -x .venv/bin/python3 ] || { banner "$RED" "MISSING: .venv/bin/python3  (run the venv setup in CLAUDE.md)"; fail=1; }
@@ -24,7 +26,7 @@ fi
 # --- wanted by the rest of the desk (warn only; the monitor itself runs without them) ---
 for v in MYSQL_PASSWORD IBKR_FLEX_TOKEN ANTHROPIC_API_KEY; do
   if [ -z "${!v:-}" ]; then
-    banner "$YEL" "WARNING: $v is not set in this shell (journal/review scripts need it; the monitor does not)"
+    banner "$YEL" "WARNING: $v is not set (journal/review scripts need it; the monitor does not) -- add it to ~/.trading_env"
   fi
 done
 
