@@ -1526,13 +1526,16 @@ stopped out or covered almost everywhere by 9/8, ending flat on a self-imposed n
   1.5% stop (e.g. 5k vs 3k) and interpolated (1.3% → ~4k).
   `2026-08-31_ECvUYIDbscQ@76:31`, `2026-09-03_x_29NiEqP8s@92:55` (2 mentions / 2 videos)
 
-- **Running out of buying power to make a trade is itself a signal the trade won't work; don't
-  juggle working positions to fund an aggressive, lower-win-rate entry.** He was fully margined on
-  27 Aug (missed CRWV), 31 Aug (missed TSLA), and 2 Sep (missed the SNDK and TSLA collapses after a
-  TSLA stop-out) — "a man with a broken leg trying to shoot a penalty kick." The fix is patience on
-  entries so capital is available for the best one.
-  `2026-09-03_x_29NiEqP8s@31:39`, `2026-09-02_SaofxooZc8Q@50:50`, `2026-09-02_SaofxooZc8Q@68:46`,
-  `2026-08-27_5ACCeRUiR2k@96:19` (4 mentions / 3 videos)
+- **Don't juggle working positions to fund an aggressive, lower-win-rate entry.** Asked whether he
+  closes or trims working shorts to free buying power for a new one (SNDK at the lows on 2 Sep), he
+  said he tried it and it doesn't suit him — the best entries were higher up and he had missed
+  them. He was fully margined on 27 Aug (missed CRWV), 31 Aug (missed TSLA) and 2 Sep (missed the
+  SNDK and TSLA collapses after a TSLA stop-out) and lamented it ("a man with a broken leg trying to
+  shoot a penalty kick"); the lesson he draws is patience on entries so capital is there for the
+  best one. His 3 Sep line that "when I run out of buying power to make a trade, that trade
+  generally doesn't work" was a joke about the TSLA short he couldn't take, not a rule.
+  `2026-09-02_SaofxooZc8Q@50:50`, `2026-09-02_SaofxooZc8Q@68:46`, `2026-08-27_5ACCeRUiR2k@96:19`,
+  `2026-09-03_x_29NiEqP8s@31:39` (4 mentions / 3 videos)
 
 ### Exits & stops
 
