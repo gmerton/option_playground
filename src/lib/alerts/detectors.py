@@ -23,6 +23,11 @@ from .bars import Bar, SymbolBook
 from .context import DailyCtx
 from .volprofile import vol_frac
 
+try:  # only replay needs pandas here
+    import pandas as pd  # noqa: F401
+except ImportError:  # pragma: no cover
+    pd = None
+
 # --- UR parameters -----------------------------------------------------------------
 UR_LOW_BY = time(11, 0)        # the session low must be printed before this
 UR_MIN_FLUSH_ADR = 0.25        # open -> low, in ADR units, always required
@@ -39,6 +44,46 @@ ORB_BY = time(12, 0)
 ORB_MIN_PACE = 1.0             # cumulative volume vs. profile-projected, x avg20 (below 1.2 is tagged "light vol")
 GAP_WARN_ADR = 1.0             # tag alerts whose open gapped >= this many ADR (lens rule: no gap-up buys in hour one)
 ORB_HOLD_ADR = 0.15            # session low may undercut the 9 EMA by this many ADR (floor 0.3%)
+
+
+INDEX_SYMBOLS = ("SPY", "QQQ")
+
+
+class IndexState:
+    """SPY (and QQQ) position vs their own session VWAP, queried at an alert's bar time.
+    Live: fed by the index SymbolBooks. Replay: a per-minute frame of close/vwap."""
+
+    def __init__(self) -> None:
+        self.books: dict[str, SymbolBook] = {}
+        self.series: dict[str, "pd.DataFrame"] = {}
+
+    def pct(self, sym: str, t: datetime) -> float | None:
+        if sym in self.series:
+            s = self.series[sym]
+            s = s.loc[:t]
+            if s.empty:
+                return None
+            r = s.iloc[-1]
+            return (r["close"] / r["vwap"] - 1) * 100
+        b = self.books.get(sym)
+        if b is None:
+            return None
+        bar = b.cur or (b.bars[-1] if b.bars else None)
+        return None if bar is None or not bar.vwap else (bar.close / bar.vwap - 1) * 100
+
+    def above(self, t: datetime, sym: str = "SPY") -> bool | None:
+        p = self.pct(sym, t)
+        return None if p is None else bool(p > 0)
+
+    def stamp(self, fields: dict, t: datetime) -> str:
+        """Add spy_vs_vwap / qqq_vs_vwap / index_above to fields; return the message tag."""
+        sp, qq = self.pct("SPY", t), self.pct("QQQ", t)
+        fields["spy_vs_vwap"] = None if sp is None else round(float(sp), 2)
+        fields["qqq_vs_vwap"] = None if qq is None else round(float(qq), 2)
+        fields["index_above"] = None if sp is None else bool(sp > 0)      # plain bool: `is False` checks + JSON
+        if sp is None:
+            return ""
+        return f" | SPY {'>' if sp > 0 else '<'} VWAP ({sp:+.2f}%)"
 
 
 @dataclass
@@ -80,7 +125,7 @@ class SymbolState:
         self.orb_disqualified = False
 
 
-def detect_ur(book: SymbolBook, ctx: DailyCtx, st: SymbolState, b: Bar) -> Alert | None:
+def detect_ur(book: SymbolBook, ctx: DailyCtx, st: SymbolState, b: Bar, idx: IndexState | None = None) -> Alert | None:
     """Runs on every CLOSED 1-min bar."""
     if b.close < b.vwap * (1 - UR_ARM_BAND):
         st.below_vwap_seen = True
@@ -126,9 +171,13 @@ def detect_ur(book: SymbolBook, ctx: DailyCtx, st: SymbolState, b: Bar) -> Alert
         "gap_adr": round((book.session_open / ctx.prev_close - 1) * 100 / ctx.adr_pct, 2) if ctx.adr_pct else 0.0})
 
 
-def detect_orb9(book: SymbolBook, ctx: DailyCtx, st: SymbolState, b: Bar) -> Alert | None:
-    """Runs on every CLOSED 1-min bar; acts only when a 5-min bar has just completed."""
+def detect_orb9(book: SymbolBook, ctx: DailyCtx, st: SymbolState, b: Bar, idx: IndexState | None = None) -> Alert | None:
+    """Runs on every CLOSED 1-min bar; acts only when a 5-min bar has just completed.
+    HARD index gate: a continuation pattern never fires while SPY is under its VWAP
+    (all four ORB9 alerts on 2026-09-09 fired into a falling index and stopped)."""
     if st.orb_fired or st.orb_disqualified or book.session_open is None:
+        return None
+    if idx is not None and idx.above(b.t) is False:
         return None
     hold = ctx.ema9 * (1 - max(0.003, ORB_HOLD_ADR * ctx.adr_pct / 100))
     if book.session_open < hold or book.session_low < hold:

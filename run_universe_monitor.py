@@ -27,7 +27,7 @@ import pandas as pd
 
 from lib.alerts.bars import Bar, SymbolBook
 from lib.alerts.context import load_context
-from lib.alerts.detectors import DETECTORS, Alert, SymbolState
+from lib.alerts.detectors import DETECTORS, INDEX_SYMBOLS, Alert, IndexState, SymbolState
 from lib.alerts.publish import AlertPublisher
 from lib.alerts.stream import trades
 from lib.alerts.universe import build_universe
@@ -36,6 +36,10 @@ from lib.tradier.tradier_client_wrapper import TradierClient
 
 REPO = Path(__file__).resolve().parent
 LOGS = REPO / "data" / "watchlist" / "logs"
+
+
+def _sound() -> None:
+    subprocess.Popen(["afplay", "/System/Library/Sounds/Glass.aiff"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
 
 def _mac_alert(title: str, msg: str) -> None:
@@ -60,32 +64,48 @@ def live_session_date() -> date:
 
 class Engine:
     def __init__(self, ctx: dict, detectors: list[str], session: date, dialog: bool,
-                 publisher: AlertPublisher | None = None, replay: bool = False):
+                 publisher: AlertPublisher | None = None, replay: bool = False,
+                 sound: bool = False, index_gate: bool = False):
         self.ctx = ctx
         self.publisher = publisher
         self.books = {s: SymbolBook(s) for s in ctx}
+        for s in INDEX_SYMBOLS:                       # index books: streamed, never detected on
+            self.books.setdefault(s, SymbolBook(s))
         self.state = {s: SymbolState() for s in ctx}
         self.detectors = [DETECTORS[d] for d in detectors]
         self.dialog = dialog
+        self.sound = sound
+        self.index_gate = index_gate
+        self.idx = IndexState()
+        for s in INDEX_SYMBOLS:
+            self.idx.books[s] = self.books[s]
         LOGS.mkdir(parents=True, exist_ok=True)
         self.log = LOGS / f"universe_alerts_{session.isoformat()}{'_replay' if replay else ''}.log"
         self.fired: list[Alert] = []
 
     def on_closed_bar(self, sym: str, b: Bar) -> None:
+        if sym not in self.ctx:                        # SPY/QQQ: state only
+            return
         book, ctx, st = self.books[sym], self.ctx[sym], self.state[sym]
         for det in self.detectors:
-            a = det(book, ctx, st, b)
+            a = det(book, ctx, st, b, self.idx)
             if a is not None:
                 self.emit(a)
 
     def emit(self, a: Alert) -> None:
+        a.msg += self.idx.stamp(a.fields, a.t)
+        gated = self.index_gate and a.fields.get("index_above") is False
+        a.fields["gated"] = gated
         self.fired.append(a)
-        line = f"[{a.t:%Y-%m-%d %H:%M}] {a.symbol:6s} {a.kind:5s} {a.msg}"
-        print(f"\a{line}", flush=True)
+        line = f"[{a.t:%Y-%m-%d %H:%M}] {a.symbol:6s} {a.kind:5s} {'(gated) ' if gated else ''}{a.msg}"
+        print(("" if gated else "\a") + line, flush=True)
         with self.log.open("a") as fh:
             fh.write(line + "\n")
-        if self.dialog:
-            _mac_alert(f"{a.symbol} {a.kind}", a.msg)
+        if not gated:
+            if self.sound:
+                _sound()
+            if self.dialog:
+                _mac_alert(f"{a.symbol} {a.kind}", a.msg)
         if self.publisher is not None:
             self.publisher.add(a)
 
@@ -102,9 +122,10 @@ async def run_live(args) -> int:
     if missing:
         print(f"  no daily context for {len(missing)}: {' '.join(missing[:20])}{' ...' if len(missing) > 20 else ''}")
     pub = None if args.no_publish else AlertPublisher(session, mode="live", universe_n=len(ctx))
-    eng = Engine(ctx, args.detectors.split(","), session, dialog=not args.no_dialog, publisher=pub)
-    print(f"[{datetime.now():%H:%M:%S}] streaming {len(ctx)} names | detectors {args.detectors} | log {eng.log}"
-          f"{' | publishing to the journal site' if pub else ''}")
+    eng = Engine(ctx, args.detectors.split(","), session, dialog=not args.no_dialog, publisher=pub,
+                 sound=args.sound, index_gate=args.index_gate)
+    print(f"[{datetime.now():%H:%M:%S}] streaming {len(ctx)} names + SPY/QQQ | detectors {args.detectors} | log {eng.log}"
+          f"{' | publishing to the journal site' if pub else ''}{' | UR index-gated' if args.index_gate else ''}{' | sound on' if args.sound else ''}")
     print("  " + " ".join(sorted(ctx)))
     print("  alerts print here as they fire; a heartbeat line every 5 min shows prints/alerts so far. Ctrl-C to stop.")
     if pub:
@@ -131,7 +152,7 @@ async def run_live(args) -> int:
     sweep = asyncio.create_task(sweeper())
     status = asyncio.create_task(pub.status_loop()) if pub else None
     try:
-        async for sym, t, px, sz in trades(list(ctx)):
+        async for sym, t, px, sz in trades(sorted(set(ctx) | set(INDEX_SYMBOLS))):
             counters["prints"] += 1
             counters["last_print"] = datetime.now()
             if counters["prints"] == 1:
@@ -162,8 +183,14 @@ async def run_replay(args) -> int:
         print("replay needs symbols"); return 2
     ctx = await load_context(syms, session)
     pub = AlertPublisher(session, mode="replay", universe_n=len(ctx)) if args.publish else None
-    eng = Engine(ctx, args.detectors.split(","), session, dialog=False, publisher=pub, replay=True)
+    eng = Engine(ctx, args.detectors.split(","), session, dialog=False, publisher=pub, replay=True,
+                 index_gate=args.index_gate)
     async with TradierClient(api_key=os.environ["TRADIER_API_KEY"]) as client:
+        for isym in INDEX_SYMBOLS:
+            im = await get_intraday_bars(isym, session, interval="1min", client=client)
+            if im is not None:
+                im = im.copy(); im["vwap"] = (im["close"] * im["volume"]).cumsum() / im["volume"].cumsum()
+                eng.idx.series[isym] = im[["close", "vwap"]]
         for sym in syms:
             if sym not in ctx:
                 print(f"{sym}: no daily context"); continue
@@ -197,6 +224,8 @@ def main() -> int:
     ap.add_argument("--no-dialog", action="store_true")
     ap.add_argument("--no-publish", action="store_true", help="live: don't write the journal-site JSON / S3")
     ap.add_argument("--heartbeat", type=int, default=5, help="minutes between heartbeat lines (live)")
+    ap.add_argument("--sound", action="store_true", help="play the chime on each (ungated) alert, no dialog")
+    ap.add_argument("--index-gate", action="store_true", help="mark UR alerts 'gated' while SPY is under its VWAP (no sound/dialog); ORB9 is always index-gated")
     ap.add_argument("--publish", action="store_true", help="replay: also publish the replayed alerts")
     args = ap.parse_args()
     if "TRADIER_API_KEY" not in os.environ:

@@ -35,6 +35,8 @@
   .num { text-align: right; font-variant-numeric: tabular-nums; }
   .empty { color: var(--muted); padding: 40px; text-align: center; }
   tr.new td { background: #fff8e1; }
+  tr.gated td { opacity: 0.45; }
+  .idx.up { color: var(--good); } .idx.down { color: var(--bad); }
 </style>
 </head>
 <body>
@@ -49,7 +51,7 @@
 </header>
 <main>
   <div class="wrap"><table>
-    <thead><tr><th>Time</th><th>Ticker</th><th>Kind</th><th class="num">Price</th><th class="num">Stop</th><th class="num">Risk</th><th class="num">ADR vs 21</th><th class="num">Vol pace</th><th>Tags</th><th>Detail</th></tr></thead>
+    <thead><tr><th>Time</th><th>Ticker</th><th>Kind</th><th class="num">Price</th><th class="num">Stop</th><th class="num">Risk</th><th class="num">ADR vs 21</th><th class="num">Vol pace</th><th class="num">SPY vs VWAP</th><th>Tags</th><th>Detail</th></tr></thead>
     <tbody id="rows"></tbody>
   </table></div>
   <div class="empty" id="empty" hidden>No alerts for this session.</div>
@@ -88,10 +90,11 @@
     const rows = (doc.alerts || []).filter(a => !kind || a.kind === kind).slice().reverse();
     $rows.innerHTML = rows.map(a => {
       const key = doc.date + a.t + a.symbol + a.kind, isNew = current === doc.date && !seen.has(key);
-      return `<tr class="${isNew ? 'new' : ''}"><td>${a.t}</td><td><b>${a.symbol}</b></td><td><span class="kind ${a.kind}">${a.kind}</span></td>
+      const idx = a.spy_vs_vwap === undefined || a.spy_vs_vwap === null ? '' : `<span class="idx ${a.spy_vs_vwap > 0 ? 'up' : 'down'}">${a.spy_vs_vwap > 0 ? '+' : ''}${a.spy_vs_vwap.toFixed(2)}%</span>`;
+      return `<tr class="${isNew ? 'new' : ''} ${a.gated ? 'gated' : ''}"><td>${a.t}</td><td><b>${a.symbol}</b></td><td><span class="kind ${a.kind}">${a.kind}</span></td>
         <td class="num">${a.price.toFixed(2)}</td><td class="num">${a.stop.toFixed(2)}</td><td class="num">${a.stop_pct !== undefined ? a.stop_pct.toFixed(1) + '%' : ''}</td>
-        <td class="num">${a.adr_vs_21 !== undefined ? a.adr_vs_21.toFixed(1) : ''}</td><td class="num">${a.vol_pace !== undefined ? a.vol_pace.toFixed(1) + 'x' : ''}</td>
-        <td>${tags(a)}</td><td class="msg">${a.msg}</td></tr>`;
+        <td class="num">${a.adr_vs_21 !== undefined ? a.adr_vs_21.toFixed(1) : ''}</td><td class="num">${a.vol_pace !== undefined ? a.vol_pace.toFixed(1) + 'x' : ''}</td><td class="num">${idx}</td>
+        <td>${a.gated ? '<span class="tag warn">gated</span>' : ''}${tags(a)}</td><td class="msg">${a.msg}</td></tr>`;
     }).join('');
     (doc.alerts || []).forEach(a => seen.add(doc.date + a.t + a.symbol + a.kind));
     $empty.hidden = rows.length > 0;

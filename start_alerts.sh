@@ -3,7 +3,8 @@
 #   ./start_alerts.sh            focus universe (data/watchlist/universe_focus.txt + today's plan)
 #   ./start_alerts.sh --full     preferred-list union instead
 #   ./start_alerts.sh AMD LITE   explicit symbols only
-# Alerts print here and go to the journal site (alerts.html); no macOS dialogs.
+# Alerts print here (with a chime) and go to the journal site (alerts.html); no macOS dialogs.
+#   add --index-gate to mute UR alerts while SPY is under its VWAP (ORB9 is always gated).
 # Preflight checks the environment LOUDLY before anything starts.
 set -u
 cd "$(dirname "$0")"
@@ -45,4 +46,4 @@ if [ "$fail" -ne 0 ]; then
 fi
 echo "${GRN}preflight ok${OFF}: TRADIER_API_KEY set, venv present, AWS profile $AWS_PROFILE$( [ ${#extra[@]} -eq 0 ] && echo ' (publishing to the journal site)' )"
 export PYTHONPATH=src
-exec .venv/bin/python3 run_universe_monitor.py --no-dialog ${extra[@]+"${extra[@]}"} "$@"
+exec .venv/bin/python3 run_universe_monitor.py --no-dialog --sound ${extra[@]+"${extra[@]}"} "$@"

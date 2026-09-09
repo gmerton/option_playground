@@ -25,7 +25,8 @@ from lib.mysql_lib import get_pending_notes
 p = get_pending_notes(applied=False)
 print(p[["id","underlying_symbol","note_date"]].to_string(index=False) if len(p) else "none")
 PYEOF
-echo; echo "== 6/6 live-alert universe for tomorrow (edit $OUT/universe_focus.txt to change it)"
+echo; echo "== 6/6 live-alert scorecard for today, then the universe for tomorrow (edit $OUT/universe_focus.txt to change it)"
+$PY run_alert_scorecard.py 2>/dev/null | tail -8
 $PY -m lib.alerts.universe 2>/dev/null
 echo; echo "alerts file: $OUT/alerts_latest.csv"
 echo "tomorrow 09:25 ET:  ./start_alerts.sh     (UR + ORB9 on the focus universe, terminal display; --full for the preferred list)"
