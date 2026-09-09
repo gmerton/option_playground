@@ -25,6 +25,8 @@ from lib.mysql_lib import get_pending_notes
 p = get_pending_notes(applied=False)
 print(p[["id","underlying_symbol","note_date"]].to_string(index=False) if len(p) else "none")
 PYEOF
+echo; echo "== 5b process report card (grade per session; rubric in run_journal_grades.py)"
+MYSQL_PASSWORD="${MYSQL_PASSWORD:-}" $PY run_journal_grades.py 2>/dev/null | tail -12
 echo; echo "== 6/6 live-alert scorecard for today, then the universe for tomorrow (edit $OUT/universe_focus.txt to change it)"
 $PY run_alert_scorecard.py 2>/dev/null | tail -8
 $PY -m lib.alerts.universe 2>/dev/null
