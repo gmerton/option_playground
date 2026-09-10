@@ -44,6 +44,10 @@ if [ "$fail" -ne 0 ]; then
   banner "$RED" "NOT STARTED -- fix the items above and rerun ./start_alerts.sh"
   exit 1
 fi
+# before the bell: which plan levels are already dead from a gap, which holds gapped through their stops
+if [ "$(TZ=America/New_York date +%H%M)" -lt 0930 ]; then
+  .venv/bin/python3 run_premarket_gaps.py 2>/dev/null || echo "(pre-market check skipped)"
+fi
 echo "${GRN}preflight ok${OFF}: TRADIER_API_KEY set, venv present, AWS profile $AWS_PROFILE$( [ ${#extra[@]} -eq 0 ] && echo ' (publishing to the journal site)' )"
 export PYTHONPATH=src
 exec .venv/bin/python3 run_universe_monitor.py --no-dialog --sound ${extra[@]+"${extra[@]}"} "$@"
