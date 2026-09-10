@@ -36,13 +36,14 @@
   .empty { color: var(--muted); padding: 40px; text-align: center; }
   tr.new td { background: #fff8e1; }
   tr.gated td { opacity: 0.45; }
+  .dim { opacity: 0.6; font-size: 0.9em; }
   .idx.up { color: var(--good); } .idx.down { color: var(--bad); }
 </style>
 </head>
 <body>
 <header>
   <h1>Live Alerts</h1>
-  <div class="sub">Long: UR = flush that undercut the prior-day low / tagged the 9-21 EMA, then a 1-min close back above VWAP (stop = session low); ORB9 = held the daily 9 EMA and VWAP, 5-min close above the 15-min opening range. Short: BIR = bounce into a declining MA, first 5-min close below the prior 5-min low (stop above the bounce high); FBO = failed breakout of the prior-day high / opening range, 5-min close back below it and VWAP (stop above the failed high). Pattern hits, not entries: read the tags against the lens rules. &middot; <a href="trade_reviews.html">&larr; Trade reviews</a> &middot; <a href="summary.html">Strategy performance</a></div>
+  <div class="sub">Long: UR = flush that undercut the prior-day low / tagged the 9-21 EMA, then a 1-min close back above VWAP (stop = session low); ORB9 = held the daily 9 EMA and VWAP, 5-min close above the 15-min opening range. Short: BIR = bounce into a declining MA, first 5-min close below the prior 5-min low (stop above the bounce high); FBO = failed breakout of the prior-day high / opening range, 5-min close back below it and VWAP (stop above the failed high). Pattern hits, not entries: read the tags against the lens rules. Gated (dimmed) = long while SPY is under its VWAP, short while SPY is above it, or short on a name leading its group by 1.5%+. RS = day change minus SPY / minus the group mean. VWAP here is the live all-prints cumulative VWAP (replays use bar VWAP); it can differ from your platform's by ~0.1-0.3%. &middot; <a href="trade_reviews.html">&larr; Trade reviews</a> &middot; <a href="summary.html">Strategy performance</a></div>
   <div class="controls">
     <select id="date"></select>
     <select id="kind"><option value="">Kind: all</option><option value="UR">UR</option><option value="ORB9">ORB9</option><option value="BIR">BIR (short)</option><option value="FBO">FBO (short)</option></select>
@@ -51,7 +52,7 @@
 </header>
 <main>
   <div class="wrap"><table>
-    <thead><tr><th>Time</th><th>Ticker</th><th>Kind</th><th class="num">Price</th><th class="num">Stop</th><th class="num">Risk</th><th class="num">ADR vs 21</th><th class="num">Vol pace</th><th class="num">SPY vs VWAP</th><th>Tags</th><th>Detail</th></tr></thead>
+    <thead><tr><th>Time</th><th>Ticker</th><th>Kind</th><th class="num">Price</th><th class="num">Stop</th><th class="num">Risk</th><th class="num">ADR vs 21</th><th class="num">Vol pace</th><th class="num">SPY vs VWAP</th><th class="num">RS</th><th>Tags</th><th>Detail</th></tr></thead>
     <tbody id="rows"></tbody>
   </table></div>
   <div class="empty" id="empty" hidden>No alerts for this session.</div>
@@ -91,13 +92,21 @@
   function render(doc) {
     const kind = $kind.value;
     const rows = (doc.alerts || []).filter(a => !kind || a.kind === kind).slice().reverse();
+    const perMin = {};
+    rows.forEach(a => { if (a.kind === 'UR') { const k = a.t.slice(0, 5); perMin[k] = (perMin[k] || 0) + 1; } });
+    const flood = a => (a.kind === 'UR' && perMin[a.t.slice(0, 5)] >= 8) ? `<span class="tag warn" title="a market-wide reclaim, not a stock-specific one: trade the index or the best RS">market-wide (${perMin[a.t.slice(0, 5)]} names this minute)</span>` : '';
     $rows.innerHTML = rows.map(a => {
       const key = doc.date + a.t + a.symbol + a.kind, isNew = current === doc.date && !seen.has(key);
+      const rs = a => {
+        if (a.rs_spy === undefined || a.rs_spy === null) return '';
+        const g = a.rs_group === undefined || a.rs_group === null ? '' : ` <span class="dim">/ ${a.group} ${a.rs_group > 0 ? '+' : ''}${a.rs_group.toFixed(1)}</span>`;
+        return `<span class="idx ${a.rs_spy > 0 ? 'up' : 'down'}" title="day change minus SPY / minus group mean">${a.rs_spy > 0 ? '+' : ''}${a.rs_spy.toFixed(1)}%</span>${g}`;
+      };
       const idx = a.spy_vs_vwap === undefined || a.spy_vs_vwap === null ? '' : `<span class="idx ${a.spy_vs_vwap > 0 ? 'up' : 'down'}">${a.spy_vs_vwap > 0 ? '+' : ''}${a.spy_vs_vwap.toFixed(2)}%</span>`;
       return `<tr class="${isNew ? 'new' : ''} ${a.gated ? 'gated' : ''}"><td>${a.t}</td><td><b>${a.symbol}</b></td><td><span class="kind ${a.kind}">${a.kind}</span></td>
         <td class="num">${a.price.toFixed(2)}</td><td class="num">${a.stop.toFixed(2)}</td><td class="num">${a.stop_pct !== undefined ? a.stop_pct.toFixed(1) + '%' : ''}</td>
         <td class="num">${a.adr_vs_21 !== undefined ? a.adr_vs_21.toFixed(1) : ''}</td><td class="num">${a.vol_pace !== undefined ? a.vol_pace.toFixed(1) + 'x' : ''}</td><td class="num">${idx}</td>
-        <td>${a.gated ? '<span class="tag warn">gated</span>' : ''}${tags(a)}</td><td class="msg">${a.msg}</td></tr>`;
+        <td class="num">${rs(a)}</td><td>${a.gated ? '<span class="tag warn">gated</span>' : ''}${flood(a)}${tags(a)}</td><td class="msg">${a.msg}</td></tr>`;
     }).join('');
     (doc.alerts || []).forEach(a => seen.add(doc.date + a.t + a.symbol + a.kind));
     $empty.hidden = rows.length > 0;

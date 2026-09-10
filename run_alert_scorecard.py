@@ -25,7 +25,7 @@ from lib.tradier.tradier_client_wrapper import TradierClient
 
 LOGS = Path("data/watchlist/logs")
 KEEP = ["date", "t", "symbol", "kind", "side", "price", "stop", "stop_pct", "stop_adr", "tag", "level", "below_ema9", "adr_vs_21", "vol_pace",
-        "gap_adr", "light_vol", "spy_vs_vwap", "qqq_vs_vwap", "index_above", "gated"]
+        "gap_adr", "light_vol", "spy_vs_vwap", "qqq_vs_vwap", "index_above", "gated", "rs_spy", "rs_group", "group", "rs_leader", "level_type"]
 
 
 async def main() -> int:

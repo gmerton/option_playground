@@ -94,8 +94,17 @@ class Engine:
         self.idx = IndexState()
         for s in INDEX_SYMBOLS:
             self.idx.books[s] = self.books[s]
+        self.idx.universe_books = self.books
+        self.idx.universe_ctx = ctx
+        gp = REPO / "data" / "watchlist" / "universe_groups.csv"
+        if gp.exists():
+            for line in gp.read_text().splitlines()[1:]:
+                if "," in line:
+                    tk, g = line.split(",", 1); self.idx.groups[tk.strip().upper()] = g.strip()
         LOGS.mkdir(parents=True, exist_ok=True)
         self.log = LOGS / f"universe_alerts_{session.isoformat()}{'_replay' if replay else ''}.log"
+        if replay:
+            self.log.write_text("")          # a replay log is one run, not an accumulation
         self.fired: list[Alert] = []
 
     def on_closed_bar(self, sym: str, b: Bar) -> None:
@@ -117,6 +126,8 @@ class Engine:
         above = a.fields.get("index_above")
         # mirrored gate: longs are gated while SPY is under VWAP, shorts while it is above
         gated = self.index_gate and above is not None and (above is False if a.kind not in SHORT_KINDS else above is True)
+        if a.kind in SHORT_KINDS and a.fields.get("rs_leader"):
+            gated = True                              # don't short the day's group leader
         a.fields["gated"] = gated
         self.fired.append(a)
         line = f"[{a.t:%Y-%m-%d %H:%M}] {a.symbol:6s} {a.kind:5s} {'(gated) ' if gated else ''}{a.msg}"
@@ -140,7 +151,8 @@ async def run_live(args) -> int:
         universe, parts = build_universe(write=not args.no_rebuild, full=args.full)
         print("universe: " + ", ".join(f"{k}={len(v)}" for k, v in parts.items()) + f" -> {len(universe)} names")
     short_manual = _read_list(REPO / "data" / "watchlist" / "universe_short.txt")
-    ctx = await load_context(sorted(set(universe) | short_manual), session)
+    ctx = await load_context(sorted(set(universe) | short_manual | set(INDEX_SYMBOLS)), session)
+    
     short_syms = short_manual | {s for s in universe if s in ctx and ctx[s].bearish}
     if short_syms:
         print(f"short universe ({len(short_syms)}): manual {len(short_manual)} + bearish-stacked from the long list "
@@ -149,8 +161,9 @@ async def run_live(args) -> int:
     if missing:
         print(f"  no daily context for {len(missing)}: {' '.join(missing[:20])}{' ...' if len(missing) > 20 else ''}")
     pub = None if args.no_publish else AlertPublisher(session, mode="live", universe_n=len(ctx))
-    eng = Engine(ctx, args.detectors.split(","), session, dialog=not args.no_dialog, publisher=pub,
+    eng = Engine({k: v for k, v in ctx.items() if k not in INDEX_SYMBOLS}, args.detectors.split(","), session, dialog=not args.no_dialog, publisher=pub,
                  sound=args.sound, index_gate=args.index_gate, short_syms=short_syms)
+    eng.idx.prev_close = {s: ctx[s].prev_close for s in INDEX_SYMBOLS if s in ctx}
     print(f"[{datetime.now():%H:%M:%S}] streaming {len(ctx)} names + SPY/QQQ | detectors {args.detectors} | log {eng.log}"
           f"{' | publishing to the journal site' if pub else ''}{' | UR index-gated' if args.index_gate else ''}{' | sound on' if args.sound else ''}")
     print("  " + " ".join(sorted(ctx)))
@@ -208,18 +221,23 @@ async def run_replay(args) -> int:
     syms = [s.upper() for s in args.symbols]
     if not syms:
         print("replay needs symbols"); return 2
-    ctx = await load_context(syms, session)
+    ctx = await load_context(syms + list(INDEX_SYMBOLS), session)
+    idx_prev = {s: ctx[s].prev_close for s in INDEX_SYMBOLS if s in ctx}
+    ctx = {k: v for k, v in ctx.items() if k not in INDEX_SYMBOLS}
     pub = AlertPublisher(session, mode="replay", universe_n=len(ctx)) if args.publish else None
     # replay: every symbol is eligible for every requested detector (validation mode)
     eng = Engine(ctx, args.detectors.split(","), session, dialog=False, publisher=pub, replay=True,
                  index_gate=args.index_gate, short_syms=set(syms))
-    eng.long_syms = set(syms)
+    short_manual = _read_list(REPO / "data" / "watchlist" / "universe_short.txt")
+    eng.long_syms = set(syms) - short_manual
+    eng.idx.prev_close = idx_prev
     async with TradierClient(api_key=os.environ["TRADIER_API_KEY"]) as client:
         for isym in INDEX_SYMBOLS:
             im = await get_intraday_bars(isym, session, interval="1min", client=client)
             if im is not None:
                 im = im.copy(); im["vwap"] = (im["close"] * im["volume"]).cumsum() / im["volume"].cumsum()
                 eng.idx.series[isym] = im[["close", "vwap"]]
+        frames: dict[str, "pd.DataFrame"] = {}
         for sym in syms:
             if sym not in ctx:
                 print(f"{sym}: no daily context"); continue
@@ -229,13 +247,17 @@ async def run_replay(args) -> int:
             c = ctx[sym]
             print(f"--- {sym} {session}: prev close {c.prev_close:.2f} PDL {c.prev_low:.2f} 9EMA {c.ema9:.2f} "
                   f"21EMA {c.ema21:.2f} ADR {c.adr_pct:.1f}% avgvol {c.avg_vol20/1e6:.1f}M | {len(m)} bars")
+            frames[sym] = m
+        # feed every symbol minute by minute (lockstep) so group / index relative strength sees same-time data
+        rows = sorted(((t.to_pydatetime(), sym, r) for sym, m in frames.items() for t, r in m.iterrows()), key=lambda x: (x[0], x[1]))
+        for t, sym, r in rows:
+            b = Bar(t, float(r.open), float(r.high), float(r.low), float(r.close), float(r.volume), 0.0)
+            eng.books[sym].on_bar(b, bar_vwap=float(r.vwap) if "vwap" in r and pd.notna(r.vwap) else None)
+            eng.on_closed_bar(sym, b)
+        for sym in frames:
             book = eng.books[sym]
-            for t, r in m.iterrows():
-                b = Bar(t.to_pydatetime(), float(r.open), float(r.high), float(r.low), float(r.close), float(r.volume), 0.0)
-                book.on_bar(b, bar_vwap=float(r.vwap) if "vwap" in r and pd.notna(r.vwap) else None)
-                eng.on_closed_bar(sym, b)
             if not [a for a in eng.fired if a.symbol == sym]:
-                print(f"    (no alert) session low {book.session_low:.2f}@{book.low_time:%H:%M} "
+                print(f"    (no alert) {sym} session low {book.session_low:.2f}@{book.low_time:%H:%M} "
                       f"open {book.session_open:.2f} high {book.session_high:.2f}")
     if pub:
         pub.set_state("replay complete")
