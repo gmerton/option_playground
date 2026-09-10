@@ -1,0 +1,19 @@
+{
+  "video_id": "V79eSTp5duE",
+  "url": "https://www.youtube.com/watch?v=V79eSTp5duE",
+  "title": "VIX Rising | 3 Stocks Ready To Break Out + 1 Stock Im Buying (Options With Ryan)",
+  "channel": "Options With Ryan",
+  "channel_id": "UCQnIfbieTyf53CZBiyLAkjg",
+  "stream_date": "2026-09-10",
+  "duration": "22:01",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

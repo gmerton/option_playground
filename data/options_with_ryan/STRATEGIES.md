@@ -11,7 +11,7 @@ One row per SYSTEM; per-ticker wheel plans roll up under Wheel Core unless they 
 | LEAPS Dip-Buying | `leaps_dip_buying` | 1.5 | 7 | no | 70Δ/400DTE stock replacement with decent entry gates, ruined by inverted exits: cut winners +10–40%, hold losers through 65% drawdowns; evidence = one HOOD 12-month cherry-pick |
 | Bear-Market Wheel (Fed/VIX regime) | `wheel_bear_regime` | 1.5 | 5 | no | VIX-gated response rules are coherent (and echo our regime gates); the "predict bears via the Fed" claim fails a calendar check on his own 2022 example |
 
-## Cross-cutting findings (6 videos in)
+## Cross-cutting findings (7 videos in)
 
 - **"Premium collected ≠ profit" — now internally evidenced, not just suspected** (`recap_audit_2025H1.md`):
   the $218K recap pairs the premium headline with a volunteered "~22% return." Taking both at face value,
@@ -25,6 +25,7 @@ One row per SYSTEM; per-ticker wheel plans roll up under Wheel Core unless they 
 - **One quality bar recurs everywhere** (18-mo uptrend line, profitable, PE<100, double-beat earnings):
   it's really a momentum-survivorship filter — it retroactively blesses PLTR/HOOD/NVDA and excludes each
   loser after the fact (HIMS, AMD, LULU).
+- **Idea videos (`strategies/ideas_2026-09-10_vix_rising.md`, 1.5/5):** breakout calls on names he holds with covered calls *below* the targets (DRAM, WDC) — the premium headline and the breakout thesis cannot both be true; GOOGL bought under the 200-day against his own quality gate; gold-miner thesis on a metal below its 200-day. Usable: the DRAM 62.59 pivot and WDC's 500/520 map, both already ours.
 - **Consistent anti-Adhikary exit structure:** quick profits, patient losses, across both the long-options
   and short-premium books. Where Tito's edge is exit execution, Ryan's system is built to survive being
   wrong by never booking it.
