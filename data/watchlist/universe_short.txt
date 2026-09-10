@@ -3,3 +3,7 @@
 CRAK
 IONQ
 RGTI
+# 9/9 evening: rate-sensitive short ideas (XHB/IWM bearish-stacked; SCHW still 9>21>50 so BIR's daily gate holds it back until it breaks)
+XHB
+IWM
+SCHW
