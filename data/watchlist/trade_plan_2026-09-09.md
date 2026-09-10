@@ -103,3 +103,17 @@ Off the list: SPCX (at the 147 stop), TGTX (56.75 trigger printed at the open, n
 | Tue-Wed 9/15-16 | FOMC, statement Wed 14:00 ET | | 9/18 expiries (CF, QBTS, GAP, NNE, ALAB/COHR spreads) carry it |
 
 Straddles held into the prints (NNE, QBTS, GAP, 9/18) want the movement; a quiet print is their cost. Overnight longs (SKHY 80%, NET, GLW, DINO) carry two 8:30 prints in a row on a tape where the 10-year is at multi-year highs -- Breitstein's half-to-a-third overnight-size rule applies twice.
+
+## For 9/10 — from Ariel's 9/10 list, reconciled (added 9/9 evening; see ariel_hernandez/analysis/2026-09-09_watchlist_scored.md)
+
+| name | buy-stop | stop | note |
+|---|---|---|---|
+| MU | 1042.50 | VWAP at trigger (~1025) | his + ours; half size, 1.5× pace, SPY > VWAP |
+| SNDK | 1807.30 | 1764 | same gates; 1.8 ADR |
+| OKTA | 173.10 | 169.50 | unchanged B-tier line; "over 173 good" |
+| TER | 384.50 | 375 | back above the 50-day (369); half size |
+| ASML | 1751.00 | 1722 | 50-day reclaim; 2.2% ADR grinder |
+| PLTR | 172.00 | 168.60 | two-sided: also on the short list; a failed tag of 171.6 is the BIR short |
+| INTC / AMD | 106.75 / 526.80 | | only after a 2–3 day pause (INTC) / half size (AMD); both 2.3–2.5 ADR extended |
+
+Holds: NET (305 / close < 309.5), SKHY 80% (194.5 / close < 189.8), GLW (158.50 / close < 163.87), DINO (close < 103.2). PPI 08:30: first 15 minutes are gap territory.

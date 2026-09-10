@@ -1,0 +1,7 @@
+# Notes — 9/10/2026 watchlist (captured 9/9 evening via Chrome interceptor; members-only)
+
+Levels he states, in his words: INTC "build out a couple more days, then take out 106.70"; MU "could go almost from here... taking out 1040, really 1041-1042.40 (today's highs)"; NET "really nice push today, hopeful for an inside day tomorrow and continuation Friday"; NOW "potential unfilled gap at 125.80"; OKTA "over 173 good, below 173 not so good" (closes 172.91 / 172.74); HPE "a little extended; if you took it back through the 20 SMA, great"; PLTR "needs to get over 172 (today's high) to interest me; potentially a higher low off the support gap"; SNDK "pause here, or take out 1807 and back toward the highs"; HOOD "watch into the 10 SMA, maybe deeper to 107 / the 20 SMA"; CRCL "not much of a bid"; IBIT "digesting, fine above the 200 SMA". Radar: AMD, SMTC, TSM, ASML, TER (closed back above its 50-day), ALAB.
+
+Tape read: "very, very narrow breadth" — every S&P sector red except XLE; equal-weight weak; SPY above its 50-day since April, lost it in September ("regained it on the 8th, lost it on the 9th" — caption garbles 8th/9th as 'ETH'); "for all we know it could be five months below." Leans the Fed will NOT hike, but wants to be prepared; things "washed out" enough for a violent snap-back from pullback areas. PPI/CPI the rest of the week.
+
+Rules stated: "don't chase price, ever" — after 3-4 up days in a row you get hammered; buy "nice and tight against the 200-day"; keep losses "teeny-tiny," let winners work; "do we have to own the dead low on anything? No."

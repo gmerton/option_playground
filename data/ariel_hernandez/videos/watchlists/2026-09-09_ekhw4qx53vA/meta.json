@@ -1,0 +1,19 @@
+{
+  "video_id": "ekhw4qx53vA",
+  "url": "https://www.youtube.com/watch?v=ekhw4qx53vA",
+  "title": "9/10/2026 Watchlist video",
+  "channel": "Ariel Hernandez",
+  "stream_date": "2026-09-09",
+  "duration": "8:10",
+  "members_only": true,
+  "summary": "Nightly watchlist for 9/10. Narrow tape: every S&P group red except XLE, equal-weight weak; PPI/CPI ahead, leans no hike. Selective longs only (semis / memory / photonics / OKTA / NET); do not chase 3-4 up days; buy tight against the 200-day.",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions_via_chrome_interceptor",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "Chrome fetch/XHR interceptor on the player (yt-dlp cannot fetch members-only)",
+    "quality_note": "Auto-generated captions; 387 caption events grouped into ~15s blocks. Tickers mostly clean; 'ETH' at 07:33 = 'the 8th'/'the 9th'."
+  },
+  "supplemental_notes_file": "notes.md"
+}
