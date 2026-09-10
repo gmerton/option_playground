@@ -55,3 +55,20 @@ TSM
 # --- journal / one-off reads ---
 TXG
 AXTI
+
+# --- added 2026-09-09 (positions + reads) ---
+AMZN
+BE
+BMNR
+CBRS
+CF
+DRAM
+FTNT
+GOOGL
+LRCX
+NBIS
+ORCL
+NET
+PANW
+SKHY
+WDC
