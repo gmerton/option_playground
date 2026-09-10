@@ -11,6 +11,9 @@
 **Revision 2026-08-08 (b):** the 140-name approved list is **retired**. An honest
 walk-forward showed ticker qualification performs WORSE than no ticker selection at all
 (+14.72% vs +16.06% OOS). Trade the gates across the whole weekly pool instead.
+**Revision 2026-09-10:** path simulation on daily bid/ask (see *Re-centering and the real stop*).
+Re-centering REJECTED (every variant -3 to -7pp vs hold). The -50% stop's +7pp is a modelling artefact:
+a real close-based stop adds nothing (-0.25pp). **Honest expectation: ~+4% per trade after costs, not +14-16%.**
 **Revision 2026-08-11:** earnings tested — **flagged, not gated**. The IV-percentile
 gate already removes 98% of earnings trades as a byproduct. See *Earnings* below.
 **Correction 2026-08-08:** DTE relabelled 10 → **7**. Friday entry into the next Friday
@@ -191,6 +194,7 @@ trades perform. The finding above is about the unconditional population.
 | Position value drops to ≤50% of premium paid | **Exit immediately (stop-loss)** |
 | Expiry | Let expire (payout is settlement value) |
 | No other take-profit rule | Do not exit early on winners — let them run |
+| Stock moved far from the strike | **Do not re-center or flat-take** — tested 2026-09-10, −3 to −7pp per trade |
 
 **Why no profit cap:** The long straddle is a right-skewed payoff. OOS testing showed
 that any profit cap reduces Sharpe (Cap 100% drops Sharpe from +0.17 to −0.04).
@@ -204,6 +208,57 @@ with most remaining value being time premium that will decay before expiry.
 ⚠ The original wording of this rationale referenced "day 5–7 on a 10 DTE straddle" — that
 was based on the mislabelled DTE (see header). On a 7 DTE trade, day 5–7 *is* expiry. The
 stop's empirical support is unaffected; only the reasoning is restated.
+
+---
+
+## Re-centering and the real stop — 2026-09-10
+
+**Question:** when the stock has moved away from the strike, does it pay to sell the moved pair and
+buy a fresh ATM straddle (re-center), or to sell and go flat? And what does the −50% stop earn on a
+real price path instead of the `max(roc, −50%)` clip?
+
+**Method:** 19,270 gated trades, daily close bid/ask/delta from `options_daily_v3`, house cost model
+(25% of bid-ask + $0.0065/sh/leg per trade), expiry settled by put-call parity. Triggers: net delta of
+the held pair ≥ 0.35 / 0.50, or a move ≥ 0.5 / 0.75 / 1.0 × the entry straddle price; only with ≥2 more
+trading days to expiry. Full tables: `data/studies/straddle_recenter_study.md`.
+
+**Result — 7 DTE, both gates (n = 5,886), after costs unless noted:**
+
+| Variant | Mean | Win% | vs hold (paired t) |
+|---|---:|---:|---:|
+| Hold, pool-file payout, mid (this playbook's basis) | +8.15% | 43.7% | |
+| Hold, parity settlement, mid | +6.82% | 43.4% | |
+| −50% clip (this playbook's model) | +14.23% | 43.4% | |
+| **Hold, after costs** | **+4.14%** | 42.3% | |
+| Real −50% stop on the daily close | +3.89% | 41.3% | −0.25pp (−1.37) |
+| Re-center, move ≥ 0.75× implied, once | −0.25% | 40.6% | −4.40pp (−7.16) |
+| Re-center, move ≥ 1.0× implied, once | +0.71% | 41.4% | −3.43pp (−6.60) |
+| Re-center, net delta ≥ 0.35, unlimited | −2.87% | 38.4% | −7.01pp (−9.89) |
+| Sell and go flat, move ≥ 1.0× implied | +1.38% | 48.7% | −2.76pp (−4.65) |
+
+**1. Re-centering is rejected.** Every trigger, threshold and count loses 3.4–7.0pp per trade against
+holding, t −6.6 to −9.9; more re-centers are worse. Flat-take loses 2.8–5.9pp. It raises the win rate
+and median (the trade *feels* better) but cuts the mean — the same shape as the profit caps. Moves that
+trigger a re-center tend to keep running, and the convex tail is the whole edge. Rejected in 7 of 9
+years; the exceptions are 2018 (n=288) and 2026 (n=100, tie).
+
+**2. The −50% stop earns nothing on a real path.** The clip adds +7.4pp because it assumes every trade
+that ends below −50% was exited at exactly −50%. In practice 30% of trades finish below −50%, but most
+get there on the last day, which a close-based stop cannot reach: it catches only a third of them, and
+a third of the trades it does stop would have recovered (7.7% would have finished positive). Net
+−0.25pp (t −1.4). **Keep the stop only as a disaster guard, not as a return source.**
+
+**3. Settlement and costs.** The pool file's payout (`call_last_exp + put_last_exp`) counts a stale
+print on the out-of-the-money leg: +1.3pp vs true settlement. Measured entry/exit costs: −2.7pp
+(median entry bid-ask 5.9% of the straddle mid).
+
+**4. The longer hold has no edge.** 14-DTE entries on the same signals: +1.28% after costs (t +1.19);
+the real stop is worse (−1.08pp, 33% stopped) and re-centering is worse still. The edge lives at 7 DTE.
+Discretionary 2–3 week straddles (e.g. PANW 9/2→9/18) are outside the tested strategy.
+
+**Honest expectation, revised:** ≈ **+4% per trade after costs** (t +3.7), both gates, hold to expiry.
+The FVR-only superset is +1.3% (t +1.8): the IV-percentile gate is doing most of the work.
+⚠ Not tested: intraday re-centering (the data has closing marks only), rolling to a later expiry.
 
 ---
 

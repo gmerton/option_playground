@@ -26,14 +26,14 @@ def load_puts(ticker):
     df["delta"] = df.delta.abs().astype(float); df["dte"] = df.dte.astype(int); return df
 
 def main():
-    ap = argparse.ArgumentParser(); ap.add_argument("--iv", required=True); ap.add_argument("--ticker", default="QQQ"); a = ap.parse_args()
+    ap = argparse.ArgumentParser(); ap.add_argument("--iv", required=True); ap.add_argument("--ticker", default="QQQ"); ap.add_argument("--pairs", default="0.35/0.25,0.45/0.35,0.25/0.15"); a = ap.parse_args()
     E.APPLY_COSTS = True
     opts = load_puts(a.ticker); stock = E.load_stock(a.ticker); vix = E.load_vix(); reg = E.build_regime_map(stock, vix)
     stock_map = dict(zip(stock.trade_date, stock.close)); daily_p = {(r.trade_date, r.expiry, r.strike): r.mid for r in opts.itertuples(index=False)}
     iv = pd.read_parquet(a.iv); iv.index = pd.to_datetime(iv.index).date
     vixs = pd.Series(vix); vixs.index = pd.to_datetime(list(vixs.index)); vixs = vixs.sort_index(); vix_pct = vixs.rolling(252, min_periods=120).apply(lambda w: (w[:-1] < w[-1]).mean(), raw=True); vix_pct.index = vix_pct.index.date
     by_date = {d: g for d, g in opts.groupby("trade_date")}
-    pairs = [(0.35, 0.25), (0.45, 0.35), (0.25, 0.15)]
+    pairs = [tuple(float(x) for x in pr.split("/")) for pr in a.pairs.split(",")]
     rows = []
     for edate in sorted(by_date):
         if edate.weekday() != 4 or edate not in reg: continue
