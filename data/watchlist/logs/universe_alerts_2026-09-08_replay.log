@@ -1,0 +1,20 @@
+[2026-09-08 09:48] SPCX   UR    UR reclaim 147.26 > VWAP 146.93 | low 145.14@09:42 (-0.52 ADR, undercut PDL 147.32) | stop 145.14 (1.5%) | +1.1 ADR vs 21 EMA | vol pace 0.9x
+[2026-09-08 09:54] LITE   ORB9  ORB9 5-min close 922.00 > OR high 910.80 | open 897.56 (+1.9%) held 9 EMA 880.80 | stop 915.88 (0.7%) | +0.8 ADR vs 21 EMA | vol pace 1.1x (light vol) | 15d high 999.67
+[2026-09-08 09:56] TXG    UR    UR reclaim 62.12 > VWAP 62.04 | low 61.36@09:30 (-0.32 ADR, opened below 9 EMA 62.19) | stop 61.36 (1.2%) | still below 9 EMA 62.19 | +0.7 ADR vs 21 EMA | vol pace 0.2x
+[2026-09-08 09:59] GLW    ORB9  ORB9 5-min close 164.28 > OR high 163.63 | open 159.24 (+3.2%) held 9 EMA 149.58 | stop 162.35 (1.2%) | +1.7 ADR vs 21 EMA | vol pace 1.1x (light vol) | 15d high 176.94
+[2026-09-08 09:36] TGTX   UR    UR reclaim 54.98 > VWAP 54.71 | low 54.09@09:30 (-0.74 ADR, undercut PDL 55.56) | stop 54.09 (1.6%) | still below 9 EMA 55.35 | +0.4 ADR vs 21 EMA | vol pace 0.5x
+[2026-09-08 09:57] MU     UR    UR reclaim 1024.92 > VWAP 1023.84 | low 1009.16@09:44 (-0.59 ADR, deep flush) | stop 1009.16 (1.6%) | +1.9 ADR vs 21 EMA | vol pace 1.1x
+[2026-09-08 09:42] OKTA   UR    UR reclaim 168.72 > VWAP 168.23 | low 167.17@09:40 (-0.38 ADR, undercut PDL 167.47) | stop 167.17 (0.9%) | +1.8 ADR vs 21 EMA | vol pace 0.3x
+[2026-09-08 09:37] RVMD   UR    UR reclaim 207.93 > VWAP 207.60 | low 206.47@09:34 (-0.45 ADR, undercut PDL 207.48) | stop 206.47 (0.7%) | still below 9 EMA 210.27 | +0.1 ADR vs 21 EMA | vol pace 0.3x
+[2026-09-08 11:37] ILMN   UR    UR reclaim 214.72 > VWAP 214.47 | low 211.64@10:44 (-0.77 ADR, undercut PDL 213.95) | stop 211.64 (1.5%) | still below 9 EMA 215.92 | +0.5 ADR vs 21 EMA | vol pace 0.6x
+[2026-09-08 10:24] AMD    ORB9  ORB9 5-min close 497.10 > OR high 496.77 | open 488.92 (+2.4%) held 9 EMA 468.28 | stop 493.51 (0.7%) | +1.3 ADR vs 21 EMA | vol pace 1.4x | 15d high 517.35
+[2026-09-08 10:29] INTC   ORB9  ORB9 5-min close 103.27 > OR high 103.24 | open 100.85 (+5.3%) held 9 EMA 91.75 | stop 102.73 (0.5%) | +2.4 ADR vs 21 EMA | vol pace 1.4x | 15d high 105.97 | GAP +1.2 ADR (no hour-one gap buys)
+[2026-09-08 10:24] AXTI   ORB9  ORB9 5-min close 66.60 > OR high 65.68 | open 64.21 (+4.2%) held 9 EMA 61.57 | stop 65.64 (1.5%) | +0.2 ADR vs 21 EMA | vol pace 1.3x | 15d high 97.79
+[2026-09-08 09:55] MSFT   UR    UR reclaim 493.55 > VWAP 492.91 | low 491.20@09:53 (-0.88 ADR, undercut PDL 499.36) | stop 491.20 (0.5%) | still below 9 EMA 500.55 | +0.5 ADR vs 21 EMA | vol pace 0.5x
+[2026-09-08 09:44] IONQ   BIR   BIR short 43.22 < prior 5m low 43.37 | bounce 42.03->44.43@09:35 (1.01 ADR) into 200 SMA 44.22 | stop 44.68 (3.4%, 0.60 ADR) | +1.1 ADR vs 21 EMA | vol pace 2.4x | SPY < VWAP (-0.16%)
+[2026-09-08 14:14] IONQ   FBO   FBO short 39.60 < PDH 39.73 and VWAP 42.53 after high 44.43 | stop 44.68 (12.8%, 2.28 ADR) | -0.5 ADR vs 21 EMA | vol pace 2.2x | SPY > VWAP (+0.03%)
+[2026-09-08 09:44] AXTI   FBO   FBO short 62.31 < PDH 62.50 and VWAP 64.42 after high 65.68 | stop 66.39 (6.5%, 0.61 ADR) | -0.4 ADR vs 21 EMA | vol pace 1.0x | SPY < VWAP (-0.16%)
+[2026-09-08 09:44] IONQ   BIR   BIR short 43.22 < prior 5m low 43.37 | bounce 42.03->44.43@09:35 (1.01 ADR) into 200 SMA 44.22 | stop 44.68 (3.4%, 0.60 ADR) | +1.1 ADR vs 21 EMA | vol pace 2.4x | SPY < VWAP (-0.16%)
+[2026-09-08 14:14] IONQ   FBO   FBO short 39.60 < PDH 39.73 and VWAP 42.53 after high 44.43 | stop 44.68 (12.8%, 2.28 ADR) | -0.5 ADR vs 21 EMA | vol pace 2.2x | SPY > VWAP (+0.03%)
+[2026-09-08 09:44] AXTI   FBO   FBO short 62.31 < PDH 62.50 and VWAP 64.42 after high 65.68 | stop 66.39 (6.5%, 0.61 ADR) | -0.4 ADR vs 21 EMA | vol pace 1.0x | SPY < VWAP (-0.16%)
+[2026-09-08 09:44] IONQ   BIR   BIR short 43.22 < prior 5m low 43.37 | bounce 42.03->44.43@09:35 (1.01 ADR) into 200 SMA 44.22 | stop 44.68 (3.4%, 0.60 ADR) | +1.1 ADR vs 21 EMA | vol pace 2.4x | SPY < VWAP (-0.16%)

@@ -64,3 +64,42 @@ His list: AMD, CRCL, HOOD, IBIT, INTC, OKTA, PLTR, SNDK, SPCX, TGTX, MRVL, HPE, 
 - DELL, MRVL, IBIT: no level tomorrow. PLTR/SNDK/CRCL/HOOD stay off (closed at lows); his VWAP-reclaim entry would need a green morning first.
 - **CRAK short:** refiners 4.6 ADR extended at a new high on 2× volume — agrees with the DINO read. Not a trade tomorrow: illiquid ETF ($20M/day), daily exhaustion bar is a continuation signal in our data, and it is a short into a live US–Iran exchange. Only on an intraday failed-high reversal, and in VLO/MPC or a DINO put spread rather than CRAK.
 Scored detail: `data/ariel_hernandez/analysis/2026-09-08_watchlist_scored.md` (transcript pending captions).
+
+## Intraday addendum, 11:20 ET (after the 11:00 all-asset selloff)
+
+Gate for every alert below: **SPY 5-min close back above VWAP (763.40)**; QQQ 717.50 confirms. Nothing fires without it.
+
+Tier 1 -- relative strength through the dump, above the 9 EMA, <=1 ADR from the 21 EMA:
+
+| name | buy-stop | stop | why |
+|---|---|---|---|
+| ALAB | 309.70 (HOD) | 301.50 | +6.1% with SPY -0.6%, +1.6% over VWAP, 0.45 ADR from the 21 |
+| GH | 168.00 (HOD) | 163.90 | +2.8%, +0.8% over VWAP, reclaimed its own dip, 0.44 ADR |
+| NTRA | 330.70 (HOD) | 325.80 | +1.0%, over VWAP, 0.9 ADR; plan's B touch never came |
+| TXG | 66.70 (HOD) | 64.80 | at the high while the tape sold; +2.3% over VWAP, 1.8 ADR (a bit extended) |
+| COHR | 313.40 (HOD) | 305.00 | +2.7%, on VWAP, 0.9 ADR |
+| ANET | 197.00 (HOD) | 193.70 | flat on the day, on VWAP, 0.56 ADR; stop = LOD |
+| RVMD | 209.80 (plan D) | 205.00 | +0.9%, 0.26 ADR, just under VWAP 210.06 |
+| HNGE | 95.65 (plan B) | 91.00 | +0.5% over VWAP, 0.8 ADR; keep the 15-day pivot |
+
+Tier 2 -- memory/semi leaders, 1.3-2.8 ADR extended: half size, and only with volume pace >= 1.5x on the break. Stop = VWAP at the trigger.
+
+| name | buy-stop | stop |
+|---|---|---|
+| MRVL | 241.90 | 236.50 |
+| LITE | 1026.80 | 1008.00 |
+| MU | 1042.50 | 1025.00 |
+| DELL | 563.00 | 554.00 |
+| AMD | 526.80 | 519.00 |
+
+Off the list: SPCX (at the 147 stop), TGTX (56.75 trigger printed at the open, now under the 55.40 stop), OKTA (173.05 printed, now at the 169.50 stop), ILMN (broke 210.5), UNH, P, CRCL, HOOD (all >4% off their highs, below VWAP). GLW: add only on the 164-166 back-test, not on a reclaim.
+
+## Event calendar (added 9/9 evening)
+
+| Date | Event | Time | Bears on |
+|---|---|---|---|
+| Thu 9/10 | PPI (August) | 08:30 ET | pre-open print; treat the first 15 min as gap territory (no hour-one gap buys); ORB9 needs the index above VWAP anyway |
+| Fri 9/11 | CPI (August) | 08:30 ET | same; the QQQ bull-put decision is AFTER the print, not before; Friday straddle entries get the print priced out of them |
+| Tue-Wed 9/15-16 | FOMC, statement Wed 14:00 ET | | 9/18 expiries (CF, QBTS, GAP, NNE, ALAB/COHR spreads) carry it |
+
+Straddles held into the prints (NNE, QBTS, GAP, 9/18) want the movement; a quiet print is their cost. Overnight longs (SKHY 80%, NET, GLW, DINO) carry two 8:30 prints in a row on a tape where the 10-year is at multi-year highs -- Breitstein's half-to-a-third overnight-size rule applies twice.
