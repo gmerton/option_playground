@@ -61,4 +61,4 @@
 [ ] sfDrBnVop9k | Coherent (COHR) Wheel Strategy Explained | My 2026 Trading Game Plan - Options With Ryan
 [ ] 0LUyp2xJm-E | How I Use LEAPS Call Options To Build Early Retirement Wealth | Full 2026 Masterclass
 [ ] ZGGKgdcLF2w | NA
-V79eSTp5duE	VIX Rising | 3 Stocks Ready To Break Out + 1 Stock Im Buying (Options With Ryan)
+[x] V79eSTp5duE | VIX Rising | 3 Stocks Ready To Break Out + 1 Stock Im Buying (2026-09-10) — reviewed: strategies/ideas_2026-09-10_vix_rising.md
