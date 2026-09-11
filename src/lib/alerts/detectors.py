@@ -158,7 +158,7 @@ def gap_tag(book: SymbolBook, ctx: DailyCtx) -> str:
     return f" | GAP {gap_adr:+.1f} ADR (no hour-one gap buys)" if gap_adr >= GAP_WARN_ADR else ""
 
 
-LEVEL_RANK = {"200 SMA": 3, "50 SMA": 3, "50 EMA": 3, "21 EMA": 2, "9 EMA": 2, "VWAP": 2, "PDH": 1, "OR": 1}
+LEVEL_RANK = {"200 SMA": 3, "50 SMA": 3, "50 EMA": 3, "prior high": 3, "21 EMA": 2, "9 EMA": 2, "VWAP": 2, "PDH": 1, "OR": 1}
 
 
 def swing_lower_high(bars: list, hi_bar, hi: float, adr_pct: float) -> bool:
@@ -172,7 +172,9 @@ def swing_lower_high(bars: list, hi_bar, hi: float, adr_pct: float) -> bool:
 
 
 def level_type(name: str) -> str:
-    return "MA" if LEVEL_RANK.get(name, 1) >= 2 and name != "VWAP" else ("VWAP" if name == "VWAP" else "PRICE")
+    if name == "VWAP": return "VWAP"
+    if name == "prior high": return "SWING HIGH"
+    return "MA" if LEVEL_RANK.get(name, 1) >= 2 else "PRICE"
 
 
 def rs_tags(book: SymbolBook, ctx: DailyCtx, idx: "IndexState | None", t: datetime) -> tuple[dict, str]:
@@ -364,7 +366,7 @@ def detect_bir(book: SymbolBook, ctx: DailyCtx, st: "SymbolState", b: Bar, idx: 
     below the previous 5-min bar's low -- the first violation of the bounce's higher lows.
     Stop above the bounce high. IONQ 9/8 (200 SMA), AXTI 9/8 (50 EMA), AAPL 9/9 (50 SMA)."""
     ss = st.short
-    if not ctx.bearish or (b.t.minute + 1) % 5 != 0 or len(ss.bir_fires) >= BIR_MAX_FIRES or b.t.time() < BIR_NOT_BEFORE:
+    if not (ctx.bearish or getattr(ctx, 'day_state', '') == 'SHORT') or (b.t.minute + 1) % 5 != 0 or len(ss.bir_fires) >= BIR_MAX_FIRES or b.t.time() < BIR_NOT_BEFORE:
         return None
     f5 = _five(book)
     if len(f5) < 3:

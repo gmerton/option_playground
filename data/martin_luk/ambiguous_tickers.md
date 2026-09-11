@@ -4,7 +4,7 @@
 
 Two checks per video. **Ambiguous tickers**: spots where the auto-caption garbled a symbol — click the timestamp, check the chart, confirm the ticker. **Trades**: each trade with the day it was placed; ⬜ marks rows that need a glance — an unresolved ticker (`?`), an unresolved fill date, or a date *inferred* to a different day than the stream (e.g. he said "Thursday"). Rows with no ⬜ are same-session or he stated the date.
 
-**820** ticker flags · **206** trades to date-check · across **83** videos. Conf: 🟡 likely · ❓ unsure.
+**830** ticker flags · **215** trades to date-check · across **84** videos. Conf: 🟡 likely · ❓ unsure.
 
 ## Index — ticker flags by video
 
@@ -41,6 +41,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 - [2026-03-12 — Watchlist rules, AVWAP, $GLD $SLV shorts and more](#2026-03-12-watchlist-rules-avwap-gld-slv-shorts-and-more) · 11
 - [2026-03-02 — Memory shorts](#2026-03-02-memory-shorts) · 11
 - [2026-01-30 — Once in a decade](#2026-01-30-once-in-a-decade) · 11
+- [2026-09-10 — EP96](#2026-09-10-ep96) · 10
 - [2026-09-03 — EP93](#2026-09-03-ep93) · 10
 - [2026-06-22 — Weekend scan](#2026-06-22-weekend-scan) · 10
 - [2026-05-08 — Not euphoric enough](#2026-05-08-not-euphoric-enough) · 10
@@ -91,6 +92,40 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 - [2026-04-27 — Short term extension and oil strength](#2026-04-27-short-term-extension-and-oil-strength) · 5
 - [2026-07-01 — Clean](#2026-07-01-clean) · 4
 - [2025-11-26 — Oct trades](#2025-11-26-oct-trades) · 4
+
+
+## 2026-09-10 — EP96
+
+[▶ watch](https://www.youtube.com/watch?v=y5Cx9UfXgqs) · `data/martin_luk/videos/livestreams/2026-09-10_y5Cx9UfXgqs` · 10 ticker flags · 9 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [38:38](https://www.youtube.com/watch?v=y5Cx9UfXgqs&t=2318s) | dust | the inverse ETF on the gold miners ... precious metal short | DUST, held LONG = short gold miners (user-confirmed 2026-09-10) | ✅ |
+| ⬜ | [41:09](https://www.youtube.com/watch?v=y5Cx9UfXgqs&t=2469s) | exti / XTI / textio | small cap less than 5 billion market cap semi | AXTI | 🟡 |
+| ⬜ | [44:53](https://www.youtube.com/watch?v=y5Cx9UfXgqs&t=2693s) | arm | rallying into the anchored VWAP from the huge green pin bar; memory names strong | ARM | 🟡 |
+| ⬜ | [50:47](https://www.youtube.com/watch?v=y5Cx9UfXgqs&t=3047s) | the semi short | fake-out at the anchored VWAP from the swing high, sideways 1-2 hours | ? (on screen only) | ❓ |
+| ⬜ | [51:33](https://www.youtube.com/watch?v=y5Cx9UfXgqs&t=3093s) | island queue / in Q / ING | compared to RTI and QBTS ... most liquid | IONQ | 🟡 |
+| ⬜ | [54:53](https://www.youtube.com/watch?v=y5Cx9UfXgqs&t=3293s) | RTI / QT no QBTS | quantum group | RGTI / QBTS | 🟡 |
+| ⬜ | [07:06](https://www.youtube.com/watch?v=y5Cx9UfXgqs&t=426s) | SKH Highix | ADR 40-45% premium to the South Korean stock | SK Hynix ADR (SKHY) | ✅ |
+| ⬜ | [72:08](https://www.youtube.com/watch?v=y5Cx9UfXgqs&t=4328s) | basic shots / SpaceX | looking at the SPCX shorts after the weekly breakdown | SPCX | 🟡 |
+| ⬜ | [65:52](https://www.youtube.com/watch?v=y5Cx9UfXgqs&t=3952s) | 50 minute 9A | bounce into the anchor VWAP and the ... | 15-minute 9 EMA (not a ticker) | 🟡 |
+| ⬜ | [59:27](https://www.youtube.com/watch?v=y5Cx9UfXgqs&t=3567s) | gold / silver | precious-metal shorts | vehicle not stated: GLD/SLV or futures | ❓ |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [41:09](https://www.youtube.com/watch?v=y5Cx9UfXgqs&t=2469s) | AXTI | short · entry | yesterday | 2026-09-09 |
+| ⬜ | [49:42](https://www.youtube.com/watch?v=y5Cx9UfXgqs&t=2982s) | AXTI | short · stopped_out | yesterday | 2026-09-09 |
+| ⬜ | [45:47](https://www.youtube.com/watch?v=y5Cx9UfXgqs&t=2747s) | ARM | short · entry | yesterday | 2026-09-09 |
+| ⬜ | [50:47](https://www.youtube.com/watch?v=y5Cx9UfXgqs&t=3047s) | ? | short · entry | yesterday | 2026-09-09 |
+| ⬜ | [54:53](https://www.youtube.com/watch?v=y5Cx9UfXgqs&t=3293s) | IONQ | short · entry | yesterday | 2026-09-09 |
+| ⬜ | [59:27](https://www.youtube.com/watch?v=y5Cx9UfXgqs&t=3567s) | ? | short · entry | yesterday | 2026-09-09 |
+| ⬜ | [11:09](https://www.youtube.com/watch?v=y5Cx9UfXgqs&t=669s) | ? | short · stopped_out | yesterday | 2026-09-09 |
+| ⬜ | [38:38](https://www.youtube.com/watch?v=y5Cx9UfXgqs&t=2318s) | DUST | long · entry | yesterday | 2026-09-09 |
+| ⬜ | [63:16](https://www.youtube.com/watch?v=y5Cx9UfXgqs&t=3796s) | QQQ | short · entry | yesterday | 2026-09-09 |
 
 
 ## 2026-09-08 — NO TRADE TODAY
@@ -2650,5 +2685,5 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | · | [41:55](https://www.youtube.com/watch?v=56ECvN_79n0&t=2515s) | ASTS | long · exit | 2025-10-01 | 2025-10-01 |
 | · | [45:24](https://www.youtube.com/watch?v=56ECvN_79n0&t=2724s) | RGTI | long · exit | 2025-10-02 | 2025-10-02 |
 | · | [47:07](https://www.youtube.com/watch?v=56ECvN_79n0&t=2827s) | RCAT | long · exit | 2025-10-03 | 2025-10-03 |
-| · | [49:35](https://www.youtube.com/watch?v=56ECvN_79n0&t=2975s) | DUST | short · exit | 2025-10-20 | 2025-10-20 |
+| · | [49:35](https://www.youtube.com/watch?v=56ECvN_79n0&t=2975s) | DUST | long · exit | 2025-10-20 | 2025-10-20 |
 

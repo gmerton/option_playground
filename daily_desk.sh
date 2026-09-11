@@ -29,6 +29,7 @@ echo; echo "== 5b process report card (grade per session; rubric in run_journal_
 MYSQL_PASSWORD="${MYSQL_PASSWORD:-}" $PY run_journal_grades.py 2>/dev/null | tail -12
 echo; echo "== 6/6 live-alert scorecard for today, then the universe for tomorrow (edit $OUT/universe_focus.txt to change it)"
 $PY run_alert_scorecard.py 2>/dev/null | tail -8
+$PY run_alert_scorecard.py --oop 2>/dev/null | tail -2      # out-of-play alerts: saved, never shown -- scored for comparison
 $PY -m lib.alerts.universe 2>/dev/null
 echo; echo "alerts file: $OUT/alerts_latest.csv"
 echo "tomorrow 09:25 ET:  ./start_alerts.sh     (UR + ORB9 on the focus universe, terminal display; --full for the preferred list)"

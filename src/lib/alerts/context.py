@@ -16,6 +16,7 @@ import pandas as pd
 
 from lib.tradier.get_daily_history import get_daily_history
 from lib.tradier.tradier_client_wrapper import TradierClient
+from lib.alerts.daily_state import classify
 
 REPO = Path(__file__).resolve().parents[3]
 CACHE = REPO / "data" / "cache"
@@ -35,11 +36,16 @@ class DailyCtx:
     ema50: float = 0.0
     sma50: float = 0.0
     sma200: float = 0.0
+    day_state: str = "OUT"          # LONG | SHORT | OUT, from lib.alerts.daily_state (prior close)
+    day_reason: str = ""
+    ext21_close_adr: float = 0.0
+    res_level: float = 0.0
+    res_gap_adr: float = 99.0
 
     def levels_above(self) -> list[tuple[str, float]]:
         """Daily resistance candidates for the short-side detectors, named."""
         out = [("9 EMA", self.ema9), ("21 EMA", self.ema21), ("50 EMA", self.ema50), ("50 SMA", self.sma50),
-               ("200 SMA", self.sma200), ("PDH", self.prev_high)]
+               ("200 SMA", self.sma200), ("PDH", self.prev_high), ("prior high", self.res_level)]
         return [(n, v) for n, v in out if v and v > 0]
 
     @property
@@ -50,6 +56,7 @@ class DailyCtx:
 
 def _ctx_from_hist(sym: str, hist: pd.DataFrame) -> DailyCtx:
     c = hist["close"]
+    ds = classify(hist)
     return DailyCtx(
         symbol=sym,
         prev_close=float(c.iloc[-1]),
@@ -63,6 +70,8 @@ def _ctx_from_hist(sym: str, hist: pd.DataFrame) -> DailyCtx:
         ema50=float(c.ewm(span=50, adjust=False).mean().iloc[-1]),
         sma50=float(c.rolling(50).mean().iloc[-1]) if len(c) >= 50 else 0.0,
         sma200=float(c.rolling(200).mean().iloc[-1]) if len(c) >= 200 else 0.0,
+        day_state=ds.state, day_reason=ds.reason, ext21_close_adr=ds.ext21_adr,
+        res_level=ds.res_level, res_gap_adr=ds.res_gap_adr,
     )
 
 
@@ -87,7 +96,7 @@ async def _one(sym: str, session: date, client: TradierClient, sem: asyncio.Sema
 
 async def load_context(symbols: list[str], session: date, *, refresh: bool = False) -> dict[str, DailyCtx]:
     CACHE.mkdir(parents=True, exist_ok=True)
-    p = CACHE / f"alert_ctx_v2_{session.isoformat()}.parquet"
+    p = CACHE / f"alert_ctx_v5_{session.isoformat()}.parquet"   # v5 = daily in-play state v3 (no unconfirmed reclaims, room >= 0.5 ADR)
     have: dict[str, DailyCtx] = {}
     if p.exists() and not refresh:
         df = pd.read_parquet(p)

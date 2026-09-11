@@ -10,7 +10,7 @@ Detectors: long = UR (undercut & reclaim), ORB9 (opening-range break above the d
 short = BIR (bounce into a declining MA, first violation of higher lows; short universe only),
 FBO (failed breakout of the prior-day high / opening range; every name -- also the exit tell for a long).
 Short universe = data/watchlist/universe_short.txt + long-universe names below their 9 and 21 EMA.
-Delivery: terminal + data/watchlist/logs/universe_alerts_<date>.log + macOS dialog (--no-dialog),
+Delivery: terminal + data/watchlist/logs/universe_alerts_<date>.log (macOS pop-ups removed 2026-09-10),
 plus the journal website: data/journal/alerts/<date>.json mirrored to s3://gmerton-trade-journal/alerts/
 (read by alerts.html). Live publishes by default (--no-publish to skip); replay publishes only with --publish.
 Requires TRADIER_API_KEY.
@@ -18,6 +18,7 @@ Requires TRADIER_API_KEY.
 from __future__ import annotations
 
 import argparse
+import json
 import asyncio
 import os
 import subprocess
@@ -51,12 +52,34 @@ def _read_list(p: Path) -> set[str]:
     return {l.split("#")[0].strip().upper() for l in p.read_text().splitlines() if l.split("#")[0].strip()}
 
 
-def _mac_alert(title: str, msg: str) -> None:
-    safe_msg = msg.replace("\\", "").replace('"', "'")
-    script = ('tell application "System Events" to display dialog '
-              f'"{safe_msg}" with title "{title}" buttons {{"Dismiss"}} default button "Dismiss" with icon caution')
-    subprocess.Popen(["osascript", "-e", script], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-    subprocess.Popen(["afplay", "/System/Library/Sounds/Glass.aiff"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+_TTY = sys.stdout.isatty()
+
+
+def headline(a: Alert, gated: bool) -> str:
+    """Terminal alert line: ticker, LONG/SHORT, entry, stop (risk) first; time, kind and detail after."""
+    side = "SHORT" if a.kind in SHORT_KINDS else "LONG"
+    risk = abs(a.price - a.stop) / a.price * 100 if a.price else 0.0
+    sa = a.fields.get("stop_adr")
+    head = f"{a.symbol:<6s} {side:<5s} @ {a.price:.2f}  stop {a.stop:.2f} ({risk:.1f}%{f', {sa:.2f} ADR' if sa else ''})"
+    tail = f"  | {a.t:%H:%M} {a.kind}{' (gated)' if gated else ''} | {a.msg}"
+    if _TTY:
+        col = "\033[32m" if side == "LONG" else "\033[31m"
+        head = ("\033[2m" if gated else "\033[1m") + head.replace(side, col + side + "\033[39m", 1) + "\033[0m"
+    return head + tail
+
+
+def print_day_states(ctx: dict) -> None:
+    """Pre-market table: which direction each universe name is in play for today (daily chart, prior close)."""
+    by: dict[str, list[str]] = {"LONG": [], "SHORT": [], "OUT": []}
+    for s, c in sorted(ctx.items()):
+        if s in INDEX_SYMBOLS: continue
+        by.setdefault(getattr(c, "day_state", "OUT") or "OUT", []).append(s)
+    print(f"daily in-play: LONG {len(by['LONG'])} | SHORT {len(by['SHORT'])} | OUT {len(by['OUT'])}")
+    for k in ("LONG", "SHORT", "OUT"):
+        print(f"  {k:5s} " + " ".join(by.get(k, [])))
+    for s, c in sorted(ctx.items()):
+        if s not in INDEX_SYMBOLS and getattr(c, "day_state", "") == "SHORT":
+            print(f"    {s:6s} {c.day_reason}")
 
 
 def live_session_date() -> date:
@@ -72,10 +95,12 @@ def live_session_date() -> date:
 
 
 class Engine:
-    def __init__(self, ctx: dict, detectors: list[str], session: date, dialog: bool,
+    def __init__(self, ctx: dict, detectors: list[str], session: date,
                  publisher: AlertPublisher | None = None, replay: bool = False,
-                 sound: bool = False, index_gate: bool = False, short_syms: set[str] | None = None):
+                 sound: bool = False, index_gate: bool = False, short_syms: set[str] | None = None,
+                 day_gate: bool = True):
         self.ctx = ctx
+        self.day_gate = day_gate
         self.publisher = publisher
         # BIR runs only on the short universe; FBO runs everywhere (a failed breakout is a fact
         # about the day, and on a long-universe name it doubles as the exit signal); UR/ORB9 only
@@ -88,7 +113,6 @@ class Engine:
         self.detectors = [DETECTORS[d] for d in detectors]
         self.named_detectors = [(d, DETECTORS[d]) for d in detectors]
         self.long_syms: set[str] = set(ctx) - (short_syms or set())
-        self.dialog = dialog
         self.sound = sound
         self.index_gate = index_gate
         self.idx = IndexState()
@@ -103,9 +127,15 @@ class Engine:
                     tk, g = line.split(",", 1); self.idx.groups[tk.strip().upper()] = g.strip()
         LOGS.mkdir(parents=True, exist_ok=True)
         self.log = LOGS / f"universe_alerts_{session.isoformat()}{'_replay' if replay else ''}.log"
+        # out-of-play alerts (against the daily in-play direction) are never shown or published,
+        # only saved here for analysis: a plain log + a JSON-lines file with every field
+        self.oop_log = LOGS / f"universe_alerts_{session.isoformat()}{'_replay' if replay else ''}_oop.log"
+        self.oop_jsonl = LOGS / f"alerts_oop_{session.isoformat()}{'_replay' if replay else ''}.jsonl"
         if replay:
             self.log.write_text("")          # a replay log is one run, not an accumulation
+            self.oop_log.write_text(""); self.oop_jsonl.write_text("")
         self.fired: list[Alert] = []
+        self.oop: list[Alert] = []
 
     def on_closed_bar(self, sym: str, b: Bar) -> None:
         if sym not in self.ctx:                        # SPY/QQQ: state only
@@ -121,24 +151,49 @@ class Engine:
             if a is not None:
                 self.emit(a)
 
+    def _save_oop(self, a: Alert) -> None:
+        """Out of play: no terminal line, no sound, not published -- saved for analysis only."""
+        self.oop.append(a)
+        with self.oop_log.open("a") as fh:
+            fh.write(f"[{a.t:%Y-%m-%d %H:%M}] {a.symbol:6s} {a.kind:5s} {a.msg}\n")
+        rec = {"date": f"{a.t:%Y-%m-%d}", "t": a.t.strftime("%H:%M"), "symbol": a.symbol, "kind": a.kind,
+               "price": round(a.price, 2), "stop": round(a.stop, 2), "msg": a.msg, **a.fields}
+        with self.oop_jsonl.open("a") as fh:
+            fh.write(json.dumps(rec, default=str) + "\n")
+
     def emit(self, a: Alert) -> None:
         a.msg += self.idx.stamp(a.fields, a.t)
+        c0 = self.ctx.get(a.symbol)
+        if a.fields.get("stop_adr") is None and c0 is not None and c0.adr_pct and a.price:
+            a.fields["stop_adr"] = round(abs(a.price - a.stop) / a.price * 100 / c0.adr_pct, 2)   # longs: same risk-in-ADR the shorts carry
         above = a.fields.get("index_above")
         # mirrored gate: longs are gated while SPY is under VWAP, shorts while it is above
         gated = self.index_gate and above is not None and (above is False if a.kind not in SHORT_KINDS else above is True)
         if a.kind in SHORT_KINDS and a.fields.get("rs_leader"):
             gated = True                              # don't short the day's group leader
+        # daily in-play gate: an alert only counts in the direction the daily chart allows
+        c = self.ctx.get(a.symbol)
+        ds = getattr(c, "day_state", "") if c is not None else ""
+        a.fields["day_state"], a.fields["day_reason"] = ds, getattr(c, "day_reason", "")
+        want = "SHORT" if a.kind in SHORT_KINDS else "LONG"
+        if self.day_gate and ds and ds != want:
+            gated = True
+            a.fields["out_of_play"] = True
+        if ds:
+            a.msg += f" | day {ds}{' (OUT OF PLAY for this side)' if ds != want else ''}: {a.fields['day_reason']}"
         a.fields["gated"] = gated
+        if a.fields.get("out_of_play"):
+            self._save_oop(a)
+            return
         self.fired.append(a)
+        # the log keeps the machine format (the scorers parse it); the terminal leads with what you act on
         line = f"[{a.t:%Y-%m-%d %H:%M}] {a.symbol:6s} {a.kind:5s} {'(gated) ' if gated else ''}{a.msg}"
-        print(("" if gated else "\a") + line, flush=True)
+        print(("" if gated else "\a") + headline(a, gated), flush=True)
         with self.log.open("a") as fh:
             fh.write(line + "\n")
         if not gated:
             if self.sound:
                 _sound()
-            if self.dialog:
-                _mac_alert(f"{a.symbol} {a.kind}", a.msg)
         if self.publisher is not None:
             self.publisher.add(a)
 
@@ -153,7 +208,8 @@ async def run_live(args) -> int:
     short_manual = _read_list(REPO / "data" / "watchlist" / "universe_short.txt")
     ctx = await load_context(sorted(set(universe) | short_manual | set(INDEX_SYMBOLS)), session)
     
-    short_syms = short_manual | {s for s in universe if s in ctx and ctx[s].bearish}
+    short_syms = short_manual | {s for s in universe if s in ctx and (ctx[s].bearish or getattr(ctx[s], "day_state", "") == "SHORT")}
+    print_day_states(ctx)
     if short_syms:
         print(f"short universe ({len(short_syms)}): manual {len(short_manual)} + bearish-stacked from the long list "
               f"{len(short_syms - short_manual)} -> " + " ".join(sorted(short_syms)))
@@ -161,8 +217,8 @@ async def run_live(args) -> int:
     if missing:
         print(f"  no daily context for {len(missing)}: {' '.join(missing[:20])}{' ...' if len(missing) > 20 else ''}")
     pub = None if args.no_publish else AlertPublisher(session, mode="live", universe_n=len(ctx))
-    eng = Engine({k: v for k, v in ctx.items() if k not in INDEX_SYMBOLS}, args.detectors.split(","), session, dialog=not args.no_dialog, publisher=pub,
-                 sound=args.sound, index_gate=args.index_gate, short_syms=short_syms)
+    eng = Engine({k: v for k, v in ctx.items() if k not in INDEX_SYMBOLS}, args.detectors.split(","), session, publisher=pub,
+                 sound=args.sound, index_gate=args.index_gate, short_syms=short_syms, day_gate=not args.no_day_gate)
     eng.idx.prev_close = {s: ctx[s].prev_close for s in INDEX_SYMBOLS if s in ctx}
     print(f"[{datetime.now():%H:%M:%S}] streaming {len(ctx)} names + SPY/QQQ | detectors {args.detectors} | log {eng.log}"
           f"{' | publishing to the journal site' if pub else ''}{' | UR index-gated' if args.index_gate else ''}{' | sound on' if args.sound else ''}")
@@ -187,7 +243,7 @@ async def run_live(args) -> int:
                 stale = counters["last_print"] and (now - counters["last_print"]).total_seconds() > 120
                 print(f"[{now:%H:%M:%S}] heartbeat: {counters['prints']} prints, last {lp}"
                       f"{'  !! no prints for 2+ min -- stream may be dead' if stale else ''}, "
-                      f"{len(eng.fired)} alerts so far", flush=True)
+                      f"{len(eng.fired)} alerts so far ({len(eng.oop)} out of play, saved not shown)", flush=True)
 
     sweep = asyncio.create_task(sweeper())
     status = asyncio.create_task(pub.status_loop()) if pub else None
@@ -206,7 +262,8 @@ async def run_live(args) -> int:
             if closed is not None:
                 eng.on_closed_bar(sym, closed)
     except (KeyboardInterrupt, asyncio.CancelledError):
-        print(f"\n[{datetime.now():%H:%M:%S}] stopped -- {len(eng.fired)} alerts this session, log {eng.log}")
+        print(f"\n[{datetime.now():%H:%M:%S}] stopped -- {len(eng.fired)} alerts this session, log {eng.log}"
+              f" | {len(eng.oop)} out-of-play alerts saved to {eng.oop_jsonl.name}")
     finally:
         sweep.cancel()
         if status:
@@ -226,8 +283,9 @@ async def run_replay(args) -> int:
     ctx = {k: v for k, v in ctx.items() if k not in INDEX_SYMBOLS}
     pub = AlertPublisher(session, mode="replay", universe_n=len(ctx)) if args.publish else None
     # replay: every symbol is eligible for every requested detector (validation mode)
-    eng = Engine(ctx, args.detectors.split(","), session, dialog=False, publisher=pub, replay=True,
-                 index_gate=args.index_gate, short_syms=set(syms))
+    print_day_states(ctx)
+    eng = Engine(ctx, args.detectors.split(","), session, publisher=pub, replay=True,
+                 index_gate=args.index_gate, short_syms=set(syms), day_gate=not args.no_day_gate)
     short_manual = _read_list(REPO / "data" / "watchlist" / "universe_short.txt")
     eng.long_syms = set(syms) - short_manual
     eng.idx.prev_close = idx_prev
@@ -262,6 +320,7 @@ async def run_replay(args) -> int:
     if pub:
         pub.set_state("replay complete")
         print(f"published {len(eng.fired)} alerts -> data/journal/alerts/{session}.json + s3")
+    print(f"replay: {len(eng.fired)} alerts shown, {len(eng.oop)} out of play saved to {eng.oop_jsonl}")
     return 0
 
 
@@ -272,12 +331,13 @@ def main() -> int:
     ap.add_argument("--detectors", default="ur,orb9,bir,fbo", help="comma list of ur,orb9 (long) and bir,fbo (short)")
     ap.add_argument("--no-rebuild", action="store_true", help="use universe_latest.txt as-is")
     ap.add_argument("--full", action="store_true", help="preferred-list union instead of universe_focus.txt")
-    ap.add_argument("--no-dialog", action="store_true")
+    ap.add_argument("--no-dialog", action="store_true", help=argparse.SUPPRESS)   # deprecated no-op: macOS pop-ups removed 2026-09-10
     ap.add_argument("--no-publish", action="store_true", help="live: don't write the journal-site JSON / S3")
     ap.add_argument("--heartbeat", type=int, default=5, help="minutes between heartbeat lines (live)")
-    ap.add_argument("--sound", action="store_true", help="play the chime on each (ungated) alert, no dialog")
-    ap.add_argument("--index-gate", action="store_true", help="mark UR alerts 'gated' while SPY is under its VWAP (no sound/dialog); ORB9 is always index-gated")
+    ap.add_argument("--sound", action="store_true", help="play the chime on each (ungated) alert")
+    ap.add_argument("--index-gate", action="store_true", help="mark UR alerts 'gated' while SPY is under its VWAP (no sound); ORB9 is always index-gated")
     ap.add_argument("--publish", action="store_true", help="replay: also publish the replayed alerts")
+    ap.add_argument("--no-day-gate", action="store_true", help="don't dim alerts against the daily in-play direction")
     args = ap.parse_args()
     if "TRADIER_API_KEY" not in os.environ:
         print("TRADIER_API_KEY not set"); return 2

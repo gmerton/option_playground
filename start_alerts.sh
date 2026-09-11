@@ -50,4 +50,4 @@ if [ "$(TZ=America/New_York date +%H%M)" -lt 0930 ]; then
 fi
 echo "${GRN}preflight ok${OFF}: TRADIER_API_KEY set, venv present, AWS profile $AWS_PROFILE$( [ ${#extra[@]} -eq 0 ] && echo ' (publishing to the journal site)' )"
 export PYTHONPATH=src
-exec .venv/bin/python3 run_universe_monitor.py --no-dialog --sound ${extra[@]+"${extra[@]}"} "$@"
+exec .venv/bin/python3 run_universe_monitor.py --sound ${extra[@]+"${extra[@]}"} "$@"

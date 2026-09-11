@@ -82,3 +82,4 @@
 [2026-09-10 11:49] QCOM   ORB9  ORB9 5-min close 178.14 > OR high 175.00 | open 172.13 (-2.4%) held 9 EMA 169.87 | stop 177.59 (0.3%) | +2.0 ADR vs 21 EMA | vol pace 1.0x (light vol) | 15d high 183.49 | SPY > VWAP (+0.08%)
 [2026-09-10 11:54] SPCX   UR    UR reclaim 151.59 > VWAP 150.56 | low 144.89@09:30 (-0.36 ADR, undercut PDL 145.55) | stop 144.89 (4.6%) | +1.5 ADR vs 21 EMA | vol pace 0.6x | SPY > VWAP (+0.01%)
 [2026-09-10 11:59] CRWD   BIR   BIR short 212.16 < prior 5m low 212.74 | bounce 204.27->214.66@11:35 (0.95 ADR) into PDH 212.77 | stop 215.81 (1.7%, 0.32 ADR, STOP IN NOISE -- size to it) | +0.4 ADR vs 21 EMA | vol pace 0.5x | SPY < VWAP (-0.00%)
+[2026-09-10 13:34] GOOGL  BIR   BIR short 331.47 < prior 5m low 331.73 | bounce 327.75->332.39@13:20 (0.83 ADR) into PDH 331.85 | stop 332.96 (0.5%, 0.26 ADR, STOP IN NOISE -- size to it) | -1.8 ADR vs 21 EMA | vol pace 0.7x | SPY > VWAP (+0.01%)
