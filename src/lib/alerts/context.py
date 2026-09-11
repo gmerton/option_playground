@@ -41,6 +41,9 @@ class DailyCtx:
     ext21_close_adr: float = 0.0
     res_level: float = 0.0
     res_gap_adr: float = 99.0
+    sma10: float = 0.0              # parabolic-short cover targets
+    sma20: float = 0.0
+    up_days: int = 0
 
     def levels_above(self) -> list[tuple[str, float]]:
         """Daily resistance candidates for the short-side detectors, named."""
@@ -72,6 +75,7 @@ def _ctx_from_hist(sym: str, hist: pd.DataFrame) -> DailyCtx:
         sma200=float(c.rolling(200).mean().iloc[-1]) if len(c) >= 200 else 0.0,
         day_state=ds.state, day_reason=ds.reason, ext21_close_adr=ds.ext21_adr,
         res_level=ds.res_level, res_gap_adr=ds.res_gap_adr,
+        sma10=float(c.rolling(10).mean().iloc[-1]), sma20=float(c.rolling(20).mean().iloc[-1]), up_days=ds.up_days,
     )
 
 
@@ -96,7 +100,7 @@ async def _one(sym: str, session: date, client: TradierClient, sem: asyncio.Sema
 
 async def load_context(symbols: list[str], session: date, *, refresh: bool = False) -> dict[str, DailyCtx]:
     CACHE.mkdir(parents=True, exist_ok=True)
-    p = CACHE / f"alert_ctx_v5_{session.isoformat()}.parquet"   # v5 = daily in-play state v3 (no unconfirmed reclaims, room >= 0.5 ADR)
+    p = CACHE / f"alert_ctx_v6_{session.isoformat()}.parquet"   # v6 = + parabolic SHORT state, sma10/sma20/up_days
     have: dict[str, DailyCtx] = {}
     if p.exists() and not refresh:
         df = pd.read_parquet(p)

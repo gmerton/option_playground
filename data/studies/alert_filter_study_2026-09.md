@@ -36,7 +36,7 @@ No detector has an edge on its own. ORB9's mean is three trend-day outliers (DE 
 ## Caveats
 One 20-session period (late Aug to early Sep 2026). The universe was assembled from names that had recently moved (hindsight). Replays use bar VWAP, the live monitor uses all-prints VWAP. Hold-to-close scoring with no management. +0.16R is modest: keep scoring live before sizing up.
 
-Scripts: scratchpad score_all.py / eval_filters.py (log-based scorer), replay logs data/watchlist/logs/universe_alerts_<date>_replay.log.
+Scripts: `run_alert_study.py` (harness in `src/lib/alerts/study.py`: parse shown + out-of-play logs, score, enrich, reports `filters` / `extension` / `daystate`); replay logs `data/watchlist/logs/universe_alerts_<date>_replay[_oop].log`; scores cached in `logs/alert_study_scores.csv`.
 
 ## Daily in-play gate (added 2026-09-10, after Gabe's INTC 9/10 critique)
 
@@ -76,3 +76,24 @@ informational. FBO exhaustion n=10, not enough to judge.
 ⚠ The sub-state choices were made on these same 20 sessions. Both halves agree, but it's still
 in-sample. Keep scoring the live alerts.
 Not built: a daily-21-EMA reclaim trigger, which is the kind of move INTC made on 9/4.
+
+## Setup grade rubric v1 (2026-09-10) -- one rubric for the alerts AND the journal
+
+**Why:** on 9/10, 24 of 25 entries were alert-driven, yet the journal's prose verdicts and the alert engine's gates disagreed both ways (DE/SPCX graded "good" but hidden by the day gate; AAOI/PANW/TSLA shown but graded "gray"). Fix: a single function, `src/lib/alerts/grading.py::setup_grade()`, used by the monitor (A/B loud, C dimmed, F saved as out of play) and by the journal (`src/lib/journal/entry_grades.py` -> `journal_entry_grades` -> review verdicts A/B good, C gray_area, F bad -> report card entry points).
+
+| side | grade | rule | n | R | half A | half B |
+|---|---|---|---|---|---|---|
+| long | A | ORB9 at/after 10:00, day LONG | 20 | +2.41 | +2.60 | +2.18 |
+| long | B | ORB9 before 10:00, or UR/other after 10:00, day LONG | 101 | +0.22 | +0.22 | +0.21 |
+| long | C | UR/other before 10:00, day LONG | 55 | -0.18 | -0.51 | +0.02 |
+| long | F | daily chart not LONG | 415 | -0.05 | +0.12 | -0.17 |
+| short | C | day SHORT, at/after 10:30 (cap: no short edge yet) | 98 | +0.07 | +0.20 | -0.05 |
+| short | F | daily chart not SHORT, or before 10:30 | 385 | -0.15 | -0.09 | -0.20 |
+
+Reproduce: `PYTHONPATH=src .venv/bin/python3 run_alert_study.py --since 2026-08-13 --report grades`.
+
+**Tested and left OUT of the rubric** (no stable signal in the same 1,073 alerts): SPY vs VWAP (the old index gate; within day-SHORT names, shorts with SPY *under* VWAP did worse in both halves), relative strength vs SPY or vs group (inverted for longs: weaker-than-group +0.45R vs stronger +0.11R), STOP IN NOISE, still-below-9-EMA. They stay in the alert text as context; `--index-gate` is now a no-op.
+
+**Caveats:** cut points (10:00 / 10:30, ORB9 vs UR) were chosen on the full sample -- the halves test stability, not out-of-sample skill; A is n=20. Re-run the report weekly; if the grades stop ranking R, change `grading.py` and both consumers follow.
+
+**Journal side:** each stock entry (opening fills of one symbol/side within 5 min) is matched to a same-side alert 0-30 min earlier (live logs when present, else replay). Grade from the alert's time; execution = fill vs alert price in ADR (<=0.25 ok) and delay (<=10 min ok). Report-card entry component = setup 20 (share A/B) + execution 10 (share of alert entries ok). Re-grade 8/13-9/10: every session but 8/19 (B), 8/24 and 8/26 (C) is still D; 9/10 = 0 A / 1 B / 3 C / 21 F with execution ok on 18 of 22 alert entries -- the alerts were followed well; the wrong alerts were followed.

@@ -4,7 +4,7 @@
 #   ./start_alerts.sh --full     preferred-list union instead
 #   ./start_alerts.sh AMD LITE   explicit symbols only
 # Alerts print here (with a chime) and go to the journal site (alerts.html); no macOS dialogs.
-#   add --index-gate to mute UR alerts while SPY is under its VWAP (ORB9 is always gated).
+#   alerts are graded A/B (loud) / C (dimmed) / F (saved as out of play) by lib/alerts/grading.py; --index-gate is a no-op.
 # Preflight checks the environment LOUDLY before anything starts.
 set -u
 cd "$(dirname "$0")"

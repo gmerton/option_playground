@@ -1,0 +1,18 @@
+# group -> industry ETF shown on every alert (context only; NOT part of the setup grade).
+# Groups without a good ETF (optical, hardware, datacenter) show peer breadth only. Edit freely.
+group,etf
+semis,SMH
+software,IGV
+biotech,XBI
+cyber,CIBR
+memory,DRAM
+megacap,MGK
+quantum,QTUM
+crypto,IBIT
+health,XLV
+energy,XLE
+materials,XLB
+industrial,XLI
+space,ARKX
+power,GRID
+homebuilders,XHB

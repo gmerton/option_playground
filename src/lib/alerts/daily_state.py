@@ -4,7 +4,8 @@ as of the prior close. The universe stays fixed; this decides whether its intrad
   LONG   -1 <= ext21 <= +1 ADR, not a falling-EMA downtrend, not "above the 9 but still under the 21"
            (unconfirmed reclaim), and at least ROOM_MIN_ADR under the prior swing high: a pullback
            into rising EMAs or a base near the 21.
-  SHORT  (a) trend-down: below the 9 and 21 EMA with the 21 falling, not already stretched down
+  SHORT  (0) parabolic: >= 3 up days and >= 4 ADR over the 21 (or >= 5 up days and >= 3 ADR);
+         (a) trend-down: below the 9 and 21 EMA with the 21 falling, not already stretched down
            (ext21 >= -1.5 ADR);
          (b) exhaustion: >= +2 ADR over the 21 EMA and within EXH_BAND_ADR of a prior swing high.
   OUT    everything else: extended up (> +1 ADR) not at a prior high, stretched down (< -1.5 ADR in
@@ -32,6 +33,9 @@ RES_LOOKBACK = 60
 RES_SKIP = 5
 SWING_K = 3               # a swing high = the highest high within SWING_K sessions on each side
 SLOPE_DAYS = 5
+PARA_MIN_EXT = 4.0        # parabolic: >= this many ADR over the 21 EMA after >= PARA_MIN_UP up closes...
+PARA_MIN_UP = 3
+PARA_ALT_EXT, PARA_ALT_UP = 3.0, 5   # ...or >= 3 ADR after >= 5 up closes (a long streak is itself the extreme: CVI 9/10)
 ALLOW_FLUSH_REVERSAL = False   # True = names >1 ADR under the 21 are LONG-eligible for day trades (see study)
 
 
@@ -44,6 +48,7 @@ class DayState:
     ema21_rising: bool = False
     res_level: float = 0.0        # prior swing high (0 = none)
     res_gap_adr: float = 99.0     # (res_level - close) in ADR units; negative = closed above it
+    up_days: int = 0              # consecutive up closes into the prior close
 
 
 def swing_highs(h: pd.Series) -> list[float]:
@@ -71,14 +76,22 @@ def classify(hist: pd.DataFrame) -> DayState:
     close, ema9, ema21 = float(c.iloc[-1]), float(e9.iloc[-1]), float(e21.iloc[-1])
     ext21 = (close / ema21 - 1) * 100 / adr
     rising = bool(e21.iloc[-1] > e21.iloc[-1 - SLOPE_DAYS])
+    up = 0
+    for x in (c.diff() > 0).iloc[::-1]:
+        if not x: break
+        up += 1
     res = nearest_swing_high(h, close, adr)
     gap = (res / close - 1) * 100 / adr if res else 99.0
     s = DayState(ext21_adr=round(ext21, 2), ext9_pct=round((close / ema9 - 1) * 100, 2), ema21_rising=rising,
-                 res_level=round(res, 2), res_gap_adr=round(gap, 2))
+                 res_level=round(res, 2), res_gap_adr=round(gap, 2), up_days=up)
     below9, below21 = close < ema9, close < ema21
     # exhaustion first: an extended name at a prior high is a short candidate, never a long
     if ext21 >= EXH_MIN_EXT and res and -EXH_ABOVE_ADR <= gap <= EXH_BELOW_ADR:
         s.state, s.reason = "SHORT", f"exhaustion: +{ext21:.1f} ADR over the 21 EMA into the prior high {res:.2f}"
+        return s
+    # parabolic (Qullamaggie): a vertical multi-day run, no resistance needed -- short the crack, never the strength
+    if up >= PARA_MIN_UP and (ext21 >= PARA_MIN_EXT or (ext21 >= PARA_ALT_EXT and up >= PARA_ALT_UP)):
+        s.state, s.reason = "SHORT", f"parabolic: +{ext21:.1f} ADR over the 21 EMA after {up} up days"
         return s
     if below9 and below21 and not rising:
         if ext21 >= SHORT_MIN_EXT:

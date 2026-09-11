@@ -69,6 +69,8 @@ class IndexState:
         self.groups: dict[str, str] = {}                # ticker -> group
         self.universe_books: dict[str, SymbolBook] = {}
         self.universe_ctx: dict[str, DailyCtx] = {}
+        self.etf_for: dict[str, str] = {}               # group -> industry ETF (data/watchlist/group_etfs.csv)
+        self.ref_ctx: dict[str, DailyCtx] = {}          # daily context of index + industry ETFs
 
     def day_change(self, sym: str, t: datetime | None = None) -> float | None:
         pc = self.prev_close.get(sym)
@@ -97,6 +99,46 @@ class IndexState:
                 continue
             vals.append((bk.last_close() / k.prev_close - 1) * 100)
         return (sum(vals) / len(vals), g) if vals else None
+
+    def _last(self, sym: str, t: datetime | None) -> tuple[float, float | None] | None:
+        """(close, vwap) of a reference or universe symbol as of t: replay series, index book, or universe book."""
+        if sym in self.series:
+            s = self.series[sym]; s = s.loc[:t] if t is not None else s
+            return (float(s["close"].iloc[-1]), float(s["vwap"].iloc[-1])) if len(s) else None
+        b = self.books.get(sym) or self.universe_books.get(sym)
+        bar = None if b is None else (b.cur or (b.bars[-1] if b.bars else None))
+        return None if bar is None else (bar.close, bar.vwap or None)
+
+    def industry(self, sym: str, t: datetime) -> tuple[dict, str]:
+        """How the name's industry is doing: its ETF today (% and vs VWAP) + the ETF's daily in-play state,
+        and peer breadth for groups with 3+ members. Context for the trader only -- not in the setup grade
+        (the rotation and alert studies found group strength doesn't rank outcomes)."""
+        g = self.groups.get(sym)
+        if not g or g in ("index", "group"):
+            return {}, ""
+        f: dict = {"industry": g}; parts: list[str] = []
+        etf = self.etf_for.get(g)
+        if etf and etf != sym:
+            k = self.ref_ctx.get(etf) or self.universe_ctx.get(etf)
+            lv = self._last(etf, t)
+            if k is not None and lv is not None and k.prev_close:
+                chg = (lv[0] / k.prev_close - 1) * 100
+                vw = None if not lv[1] else (lv[0] / lv[1] - 1) * 100
+                ds = getattr(k, "day_state", "") or "?"
+                f.update(industry_etf=etf, industry_chg=round(chg, 2), industry_vs_vwap=None if vw is None else round(vw, 2),
+                         industry_day=ds, industry_ext21=getattr(k, "ext21_close_adr", None))
+                parts.append(f"{etf} {chg:+.1f}%{'' if vw is None else (' >VWAP' if vw > 0 else ' <VWAP')} (daily {ds})")
+        peers = [s2 for s2, g2 in self.groups.items() if g2 == g and s2 not in (sym, etf)]
+        vals = []
+        for s2 in peers:
+            k2 = self.universe_ctx.get(s2); lv2 = self._last(s2, t) if s2 in self.universe_books or s2 in self.series else None
+            if k2 is not None and lv2 is not None and k2.prev_close:
+                vals.append((lv2[0] / k2.prev_close - 1) * 100)
+        if len(vals) >= 2:
+            up = sum(v > 0 for v in vals)
+            f.update(industry_peers_up=up, industry_peers_n=len(vals), industry_peers_avg=round(sum(vals) / len(vals), 2))
+            parts.append(f"peers {up}/{len(vals)} green, avg {sum(vals) / len(vals):+.1f}%")
+        return (f, f"{g}: " + ", ".join(parts)) if parts else (f, "")
 
     def pct(self, sym: str, t: datetime) -> float | None:
         if sym in self.series:
@@ -193,7 +235,7 @@ def rs_tags(book: SymbolBook, ctx: DailyCtx, idx: "IndexState | None", t: dateti
             msg += f" | vs {g[1]} {chg - g[0]:+.1f}%"
             if chg - g[0] >= RS_SHORT_GATE_PCT:
                 out["rs_leader"] = True
-                msg += " (STRONGEST IN GROUP -- don't short it)"
+                msg += " (strongest in group)"
     return out, msg
 
 
@@ -201,6 +243,7 @@ class ShortState:
     def __init__(self) -> None:
         self.bir_fires: list[float] = []     # bounce highs already used
         self.fbo_fired: set[str] = set()     # levels already used ("PDH", "OR")
+        self.para_fired: set[str] = set()    # PARA variants already used ("ORL", "VWAP")
 
 
 class SymbolState:
@@ -276,7 +319,6 @@ def detect_ur(book: SymbolBook, ctx: DailyCtx, st: SymbolState, b: Bar, idx: Ind
     pace = vol_pace(book, ctx, b.t)
     ema_note = "" if b.close >= ctx.ema9 else f" | still below 9 EMA {ctx.ema9:.2f}"
     rsf, rsm = rs_tags(book, ctx, idx, b.t)
-    rsm = rsm.replace(" (STRONGEST IN GROUP -- don't short it)", " (strongest in group)")
     hl_note = f" | higher low {hl[0]:.2f}@{hl[1]:%H:%M}" if hl else " | NO HIGHER LOW YET"
     msg = (f"UR reclaim {b.close:.2f} > VWAP {b.vwap:.2f} | low {lo:.2f}@{book.low_time:%H:%M} "
            f"({-flush_adr:.2f} ADR, {tag}){hl_note} | stop {lo:.2f} ({(b.close / lo - 1) * 100:.1f}%){ema_note} | "
@@ -462,5 +504,55 @@ def detect_fbo(book: SymbolBook, ctx: DailyCtx, st: "SymbolState", b: Bar, idx: 
     return None
 
 
-DETECTORS = {"ur": detect_ur, "orb9": detect_orb9, "bir": detect_bir, "fbo": detect_fbo}
-SHORT_KINDS = {"BIR", "FBO"}
+PARA_MIN_EXT_ALERT = 2.0       # only extended-UP short names (parabolic / exhaustion), not trend-downs (those are BIR's)
+PARA_NOT_BEFORE = time(9, 45)  # after the 15-min opening range
+PARA_BY = time(15, 0)
+PARA_HIGH_AGE_MIN = 90         # VWAP variant: the new high must be this recent
+PARA_REQUIRE_RED = True        # Qullamaggie's "first red day": the 5-min close must be under the PRIOR close.
+                               # Replay 9/8-9/10 (BNO/USO/BWET/CVI): without it 7 of 7 PARA alerts fired on
+                               # ordinary pullbacks inside green days and all lost; with it, 1 of 7 survives.
+
+
+def detect_para(book: SymbolBook, ctx: DailyCtx, st: "SymbolState", b: Bar, idx: IndexState | None = None) -> Alert | None:
+    """Parabolic short (Qullamaggie). Daily gate: day SHORT and >= +2 ADR over the 21 EMA at the prior
+    close (parabolic or exhaustion). Trigger on a completed 5-min bar, once per variant:
+      ORL  - first 5-min close under the 15-min opening-range low, also under VWAP (the gap-up that fails);
+      VWAP - first 5-min close back under VWAP after a new high made after the opening range.
+    Both require the day to be RED (5-min close under the prior close): short the crack, never the strength.
+    Stop = high of day + STOP_BUFFER_ADR. Cover targets = the daily 10 and 20-day SMAs.
+    UNTESTED: no event study behind it yet (the daily-bar exhaustion fade tested backwards) -- size small."""
+    if getattr(ctx, "day_state", "") != "SHORT" or getattr(ctx, "ext21_close_adr", 0.0) < PARA_MIN_EXT_ALERT:
+        return None
+    if (b.t.minute + 1) % 5 != 0 or not (PARA_NOT_BEFORE <= b.t.time() <= PARA_BY):
+        return None
+    ss = st.short
+    orr, f5 = book.opening_range(15), _five(book)
+    if orr is None or len(f5) < 4 or len(ss.para_fired) >= 2:
+        return None
+    orh, orl = orr
+    cur, prev = f5[-1], f5[-2]
+    if PARA_REQUIRE_RED and cur.close >= ctx.prev_close:
+        return None                       # still a green day: the run hasn't cracked
+    variant = why = None
+    if "ORL" not in ss.para_fired and cur.close < orl and prev.close >= orl and cur.close < cur.vwap:
+        variant, why = "ORL", f"5-min close under the opening-range low {orl:.2f} and VWAP {cur.vwap:.2f}"
+    else:
+        hi_bar = max(f5[:-1], key=lambda x: x.high)
+        if ("VWAP" not in ss.para_fired and hi_bar.t.time() >= PARA_NOT_BEFORE and hi_bar.high >= orh
+                and cur.close < cur.vwap and prev.close >= prev.vwap and (b.t - hi_bar.t).total_seconds() / 60 <= PARA_HIGH_AGE_MIN):
+            variant, why = "VWAP", f"first 5-min close back under VWAP {cur.vwap:.2f} after the new high {hi_bar.high:.2f}@{hi_bar.t:%H:%M}"
+    if variant is None:
+        return None
+    ss.para_fired.add(variant)
+    stop, sf = _stop_fields(cur.close, book.session_high, ctx)
+    t1, t2 = getattr(ctx, "sma10", 0.0), getattr(ctx, "sma20", 0.0)
+    pace = vol_pace(book, ctx, b.t)
+    msg = (f"PARA short {cur.close:.2f} ({variant}) | {why}, red on the day ({(cur.close / ctx.prev_close - 1) * 100:+.1f}% vs prior close {ctx.prev_close:.2f}) | daily {ctx.day_reason} | cover targets 10-day {t1:.2f} / 20-day {t2:.2f}"
+           f" | stop {stop:.2f} ({sf['stop_pct']:.1f}%, {sf['stop_adr']:.2f} ADR{', STOP IN NOISE -- size to it' if sf['stop_in_noise'] else ''})"
+           f" | vol pace {pace:.1f}x | UNTESTED pattern: size small")
+    return Alert(book.symbol, "PARA", b.t, cur.close, stop, msg, {"side": "short", "variant": variant, "target10": round(t1, 2),
+                 "target20": round(t2, 2), "orl": round(orl, 2), "vol_pace": round(pace, 2), "untested": True, **sf})
+
+
+DETECTORS = {"ur": detect_ur, "orb9": detect_orb9, "bir": detect_bir, "fbo": detect_fbo, "para": detect_para}
+SHORT_KINDS = {"BIR", "FBO", "PARA"}

@@ -29,7 +29,7 @@
   td.msg { white-space: normal; color: var(--muted); font-size: 12px; min-width: 420px; }
   .kind { font-weight: 700; padding: 2px 7px; border-radius: 4px; background: var(--chip-bg); }
   .side { font-weight: 700; } .side.long { color: var(--good); } .side.short { color: var(--bad); }
-  .kind.UR { color: var(--accent); } .kind.ORB9 { color: var(--good); } .kind.BIR, .kind.FBO { color: var(--bad); }
+  .kind.UR { color: var(--accent); } .kind.ORB9 { color: var(--good); } .kind.BIR, .kind.FBO, .kind.PARA { color: var(--bad); }
   .tag { display: inline-block; font-size: 11px; padding: 1px 6px; border-radius: 4px; background: var(--chip-bg); margin-right: 4px; color: var(--gray); }
   .tag.warn { color: var(--bad); background: #fbeaea; }
   .tag.ok { color: var(--good); background: #e7f4ed; }
@@ -44,7 +44,7 @@
 <body>
 <header>
   <h1>Live Alerts</h1>
-  <div class="sub">Long: UR = flush that undercut the prior-day low / tagged the 9-21 EMA, then a 1-min close back above VWAP (stop = session low); ORB9 = held the daily 9 EMA and VWAP, 5-min close above the 15-min opening range. Short: BIR = bounce into a declining MA, first 5-min close below the prior 5-min low (stop above the bounce high); FBO = failed breakout of the prior-day high / opening range, 5-min close back below it and VWAP (stop above the failed high). Pattern hits, not entries: read the tags against the lens rules. Gated (dimmed) = long while SPY is under its VWAP, short while SPY is above it, or short on a name leading its group by 1.5%+, Alerts against a name's daily in-play direction are NOT shown (saved for analysis only). Day states come from the daily chart at the prior close: pullbacks and bases near the 21 EMA with room under the prior high are LONG; falling-EMA downtrends and names extended 2+ ADR into a prior swing high are SHORT; the rest are OUT. RS = day change minus SPY / minus the group mean. VWAP here is the live all-prints cumulative VWAP (replays use bar VWAP); it can differ from your platform's by ~0.1-0.3%. &middot; <a href="trade_reviews.html">&larr; Trade reviews</a> &middot; <a href="summary.html">Strategy performance</a></div>
+  <div class="sub">Long: UR = flush that undercut the prior-day low / tagged the 9-21 EMA, then a 1-min close back above VWAP (stop = session low); ORB9 = held the daily 9 EMA and VWAP, 5-min close above the 15-min opening range. Short: BIR = bounce into a declining MA, first 5-min close below the prior 5-min low (stop above the bounce high); FBO = failed breakout of the prior-day high / opening range, 5-min close back below it and VWAP (stop above the failed high). PARA = parabolic short on a name 2+ ADR over its 21 EMA after a vertical run: first 5-min close under the opening-range low and VWAP, or back under VWAP after a new high (stop above the high of day; cover into the 10/20-day averages; untested, size small). Pattern hits, not entries: read the tags against the lens rules. Gated (dimmed) = long while SPY is under its VWAP, short while SPY is above it, or short on a name leading its group by 1.5%+, Alerts against a name's daily in-play direction are NOT shown (saved for analysis only). Day states come from the daily chart at the prior close: pullbacks and bases near the 21 EMA with room under the prior high are LONG; falling-EMA downtrends and names extended 2+ ADR into a prior swing high are SHORT; the rest are OUT. RS = day change minus SPY / minus the group mean. VWAP here is the live all-prints cumulative VWAP (replays use bar VWAP); it can differ from your platform's by ~0.1-0.3%. &middot; <a href="trade_reviews.html">&larr; Trade reviews</a> &middot; <a href="summary.html">Strategy performance</a></div>
   <div class="controls">
     <select id="date"></select>
     <select id="kind"><option value="">Kind: all</option><option value="UR">UR</option><option value="ORB9">ORB9</option><option value="BIR">BIR (short)</option><option value="FBO">FBO (short)</option></select>
@@ -91,6 +91,16 @@
       const oop = a.out_of_play ? ' out of play' : '';
       out.unshift(`<span class="tag ${a.out_of_play ? 'warn' : 'ok'}" title="${(a.day_reason || '').replace(/"/g, '&quot;')}">day ${a.day_state}${oop}</span>`);
     }
+    if (a.industry_etf || a.industry_peers_n) {
+      const up = (a.industry_chg !== undefined && a.industry_chg !== null) ? a.industry_chg >= 0 : (a.industry_peers_avg >= 0);
+      const bits = [];
+      if (a.industry_etf) bits.push(`${a.industry_etf} ${a.industry_chg >= 0 ? '+' : ''}${a.industry_chg.toFixed(1)}%${a.industry_vs_vwap === null || a.industry_vs_vwap === undefined ? '' : (a.industry_vs_vwap > 0 ? ' &gt;VWAP' : ' &lt;VWAP')}`);
+      if (a.industry_peers_n) bits.push(`peers ${a.industry_peers_up}/${a.industry_peers_n}`);
+      out.unshift(`<span class="tag ${up ? 'ok' : 'warn'}" title="${(a.industry_txt || '').replace(/"/g, '&quot;')}">${a.industry}: ${bits.join(', ')}</span>`);
+    }
+    if (a.grade) {
+      out.unshift(`<span class="tag ${a.grade === 'A' || a.grade === 'B' ? 'ok' : 'warn'}" title="${(a.grade_why || '').replace(/"/g, '&quot;')}">grade ${a.grade}</span>`);
+    }
     return out.join('');
   }
 
@@ -108,7 +118,7 @@
         return `<span class="idx ${a.rs_spy > 0 ? 'up' : 'down'}" title="day change minus SPY / minus group mean">${a.rs_spy > 0 ? '+' : ''}${a.rs_spy.toFixed(1)}%</span>${g}`;
       };
       const idx = a.spy_vs_vwap === undefined || a.spy_vs_vwap === null ? '' : `<span class="idx ${a.spy_vs_vwap > 0 ? 'up' : 'down'}">${a.spy_vs_vwap > 0 ? '+' : ''}${a.spy_vs_vwap.toFixed(2)}%</span>`;
-      const side = (a.side || (a.kind === 'BIR' || a.kind === 'FBO' ? 'short' : 'long')).toUpperCase();
+      const side = (a.side || (['BIR', 'FBO', 'PARA'].includes(a.kind) ? 'short' : 'long')).toUpperCase();
       const risk = a.stop_pct !== undefined ? a.stop_pct : Math.abs(a.price - a.stop) / a.price * 100;
       return `<tr class="${isNew ? 'new' : ''} ${a.gated ? 'gated' : ''}"><td><b>${a.symbol}</b></td><td><span class="side ${side.toLowerCase()}">${side}</span></td>
         <td class="num"><b>${a.price.toFixed(2)}</b></td><td class="num"><b>${a.stop.toFixed(2)}</b></td><td class="num">${risk.toFixed(1)}%${a.stop_adr ? ' <span class="dim">' + a.stop_adr.toFixed(2) + ' ADR</span>' : ''}</td>

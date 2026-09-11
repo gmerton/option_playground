@@ -1,8 +1,11 @@
-# Short-watch universe for BIR alerts (one ticker per line). Long-list names below their
-# 9 and 21 EMA are added automatically at startup; nothing here is ever bought.
+# SHORT-WATCH UNIVERSE FOR BIR ALERTS (ONE TICKER PER LINE). LONG-LIST NAMES BELOW THEIR
+# 9 AND 21 EMA ARE ADDED AUTOMATICALLY AT STARTUP; NOTHING HERE IS EVER BOUGHT.
 CRAK
 IONQ
 RGTI
-# 9/9 evening: rate-sensitive short ideas (both bearish-stacked; SCHW dropped -- still 9>21>50)
+# 9/9 EVENING: RATE-SENSITIVE SHORT IDEAS (BOTH BEARISH-STACKED; SCHW DROPPED -- STILL 9>21>50)
 XHB
 IWM
+BWET
+USO
+CVI

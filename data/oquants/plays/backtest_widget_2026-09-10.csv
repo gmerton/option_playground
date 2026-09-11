@@ -1,0 +1,14 @@
+ticker,strategy,dte,mean_ret_pct,sd_pct,min_ret_pct,win_rate_pct,window_note
+QQQ,short_straddle,30,8.6,69.2,-241.2,61.2,~Jan2023-Aug2026
+QQQ,short_put,30,39.3,116.2,-555.6,77.1,~Jan2023-Aug2026
+SPY,short_straddle,30,10.2,62.5,-266.4,58.4,~Jan2023-Aug2026
+SPY,short_put,30,39.3,120.2,-605.8,80.2,~Jan2023-Aug2026
+IWM,short_straddle,30,4.8,67.6,-220.5,58.3,~Jan2023-Aug2026
+IWM,short_put,30,20.4,127.5,-425.3,72.4,~Jan2023-Aug2026
+TLT,short_straddle,30,9.6,70.7,-258.2,66.2,~Feb2023-Aug2026
+TLT,short_put,30,-9.9,147.2,-612.0,60.3,~Feb2023-Aug2026
+GLD,short_straddle,30,-7.1,85.6,-308.4,54.0,~Jan2023-Aug2026
+GLD,short_put,30,46.5,99.1,-301.4,81.7,~Jan2023-Aug2026
+XLE,short_straddle,30,10.4,69.7,-249.5,63.9,~Jan2023-Aug2026
+XLE,short_put,30,29.8,114.0,-442.1,71.8,~Jan2023-Aug2026
+USO,short_straddle,30,14.2,76.9,-454.9,67.7,~Jan2023-Aug2026
