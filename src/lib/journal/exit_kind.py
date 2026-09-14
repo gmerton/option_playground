@@ -33,7 +33,11 @@ async def bars_1min(sym: str, day: date, client: TradierClient) -> pd.DataFrame 
     if day < date.today() and p.exists():
         m = pd.read_parquet(p)
         return None if m.empty else m
-    m = await get_intraday_bars(sym, day, interval="1min", client=client)
+    try:
+        m = await get_intraday_bars(sym, day, interval="1min", client=client)
+    except Exception as exc:  # noqa: BLE001 -- past Tradier's ~20-session retention (HTTP 400): no bars, nothing cached
+        print(f"  ! {sym} {day}: no 1-min bars ({exc.__class__.__name__}); backfill with run_fetch_intraday_polygon.py")
+        return None
     if day < date.today():
         (m if m is not None else pd.DataFrame()).to_parquet(p)
     return m

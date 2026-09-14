@@ -1,31 +1,35 @@
 """Setup grade -- ONE rubric shared by the alert engine (what gets shown / dimmed / hidden) and the
 trade journal (how an entry is graded). If the two ever disagree, fix it HERE, not in either consumer.
 
-Rubric v1 (2026-09-10), built on the 20-session alert study (8/13-9/10, 1,073 alerts, 1-min-bar R):
+Rubric v2 (2026-09-13), from the 153-session replay (2/2-9/10/2026, 19,456 alerts, 1-min-bar R) split into the
+curated universe and a 39-name no-hindsight control set (data/studies/alert_filter_study_2026-09.md):
 
-  LONG   F  daily chart not LONG (the in-play gate)                        R -0.05 (n=415)
-         A  ORB9 at/after 10:00 ET on a day-LONG name                       R +2.41 (n=20; halves +2.60 / +2.18)
-         B  ORB9 before 10:00, or UR / any other entry at/after 10:00       R +0.22 (n=101; halves +0.22 / +0.21)
-            (LVL, the pivot break added 2026-09-13, grades as "other" until it has its own study; the engine
-            treats a day-OUT "no room" name as LONG for an LVL alert -- the break IS the resolution of no room)
-         C  UR / other entry before 10:00                                   R -0.18 (n=55)
-  SHORT  F  daily chart not SHORT, or before 10:30 ET                       R -0.15 (n=385)
-         C  day-SHORT name at/after 10:30 -- the best short cell found,     R +0.07 (n=97)
-            still no demonstrated edge, so shorts cap at C until one is found
+  LONG   F  daily chart not LONG (the in-play gate)             kept as the display gate; it does NOT rank R on
+                                                                 either set (curated hidden longs +0.17 vs allowed
+                                                                 +0.07; control -0.03 vs -0.11) -- pending a
+                                                                 point-in-time universe test
+         C  09:30-09:40, or after 12:00                          -0.15R on BOTH sets and every half (first ten
+                                                                 minutes); afternoon flat to negative on both
+         B  09:41-12:00 on a day-LONG name, any kind             09:41-10:00 +0.07 on both sets; nothing later
+                                                                 separates once the universe is controlled
+  SHORT  F  daily chart not SHORT, or before 10:30 ET            unchanged from v1
+         C  day-SHORT name at/after 10:30                        shorts ~0 / negative on both sets: still no edge
 
-Deliberately NOT in the rubric (tested, no stable signal in the same data): SPY vs VWAP (the old
-index gate -- for shorts it pointed the wrong way), relative strength vs SPY or vs group (inverted:
-longs weaker than their group did better), STOP IN NOISE, still-below-9-EMA. They stay in the alert
-text as context. Cut points were chosen on the full sample; the halves check stability, not
-out-of-sample skill -- re-validate with `run_alert_study.py --report grades` as sessions accrue.
+Dropped from v1: the A grade (ORB9 at/after 10:00) -- +0.70R on the curated names but -0.39R (83% stopped) on the
+control set, so it graded the universe, not the setup. The "before 10:00 = C" cut -- only the first ten minutes
+are bad; 09:41-10:00 is as good as anything later. Deliberately NOT in the rubric (tested, no stable signal): SPY
+vs VWAP, relative strength vs SPY or group, STOP IN NOISE, still-below-9-EMA. Re-validate with
+`run_alert_study.py --report grades`; the control set (universe_study_extra.txt) is part of every replay now.
+v1 (2026-09-10, 20 sessions): A = ORB9 >= 10:00, B = ORB9 early / other >= 10:00, C = other < 10:00.
 """
 from __future__ import annotations
 
 from dataclasses import dataclass
 
-RUBRIC_VERSION = "v1-2026-09-10"
+RUBRIC_VERSION = "v2-2026-09-13"
 SHORT_KINDS = ("BIR", "FBO", "PARA")
-LONG_AFTER = 10 * 60          # 10:00 ET, minutes since midnight
+LONG_OPEN_UNTIL = 9 * 60 + 40  # 09:40 ET: alerts at/before this minute are the opening flood (C)
+LONG_NOON = 12 * 60            # after 12:00 ET: afternoon entries are C
 SHORT_AFTER = 10 * 60 + 30    # 10:30 ET
 VERDICT = {"A": "good", "B": "good", "C": "gray_area", "F": "bad"}
 
@@ -72,7 +76,7 @@ def _hhmm(m: int) -> str:
 
 
 def setup_grade(side: str, kind: str | None, minute: int, day_state: str | None) -> Grade:
-    """side 'long'/'short'; kind = alert kind (UR/ORB9/BIR/FBO/PARA) or None for an entry no alert
+    """side 'long'/'short'; kind = alert kind (UR/ORB9/LVL/BIR/FBO/PARA) or None for an entry no alert
     matched; minute = ET minutes since midnight of the alert (or of the fill when unmatched);
     day_state = LONG/SHORT/OUT from lib.alerts.daily_state."""
     side = side.lower()
@@ -81,17 +85,17 @@ def setup_grade(side: str, kind: str | None, minute: int, day_state: str | None)
     day_ok = ds == want
     comp = [("day", ds, want, "pass" if day_ok else "fail")]
     if side == "long":
-        early = minute < LONG_AFTER
-        comp.append(("time", _hhmm(minute), ">=10:00", "marginal" if early else "pass"))
-        comp.append(("setup", kind or "no alert", "ORB9", "pass" if kind == "ORB9" else "marginal"))
+        opening, afternoon = minute <= LONG_OPEN_UNTIL, minute >= LONG_NOON
+        comp.append(("time", _hhmm(minute), "09:41-12:00", "marginal" if (opening or afternoon) else "pass"))
+        comp.append(("setup", kind or "no alert", "-", "no kind ranks once the universe is controlled (v2)"))
         if not day_ok:
             return Grade("F", f"daily chart is {ds}, not LONG (out of play for longs)", tuple(comp))
-        if kind == "ORB9":
-            return (Grade("B", "ORB9 before 10:00", tuple(comp)) if early
-                    else Grade("A", "ORB9 after 10:00 on a day-LONG name", tuple(comp)))
         what = kind or "entry without an alert"
-        return (Grade("C", f"{what} before 10:00", tuple(comp)) if early
-                else Grade("B", f"{what} after 10:00 on a day-LONG name", tuple(comp)))
+        if opening:
+            return Grade("C", f"{what} in the first ten minutes (09:30-09:40)", tuple(comp))
+        if afternoon:
+            return Grade("C", f"{what} after 12:00", tuple(comp))
+        return Grade("B", f"{what} 09:41-12:00 on a day-LONG name", tuple(comp))
     early = minute < SHORT_AFTER
     comp.append(("time", _hhmm(minute), ">=10:30", "fail" if early else "pass"))
     comp.append(("setup", kind or "no alert", "-", "cap C (no short edge yet)"))

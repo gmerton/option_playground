@@ -1,0 +1,43 @@
+# STUDY-ONLY control set for run_alert_study.py replays (NOT streamed by the live monitor).
+# The 40 largest stocks by 50-day dollar volume as of 2026-01-30 (the study's start) that were not already
+# on the focus/short lists -- chosen with no reference to how they moved since, to check the hindsight
+# bias of the curated universe. Added 2026-09-13.
+AVGO
+META
+GOOG
+WMT
+LLY
+JPM
+APP
+COST
+V
+CRWV
+COIN
+GEV
+XOM
+AMAT
+BAC
+GS
+JNJ
+BA
+CVNA
+MA
+HD
+GE
+CVX
+PG
+C
+CSCO
+CAT
+SOFI
+MRK
+INTU
+KLAC
+ABBV
+STX
+WFC
+ASTS
+APH
+BKNG
+WBD
+IBM

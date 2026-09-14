@@ -418,7 +418,8 @@ def precision_tier(ctx: DailyCtx) -> tuple[bool, str]:
 def detect_lvl(book: SymbolBook, ctx: DailyCtx, st: SymbolState, b: Bar, idx: IndexState | None = None) -> Alert | None:
     """Runs on every CLOSED 1-min bar. Fires once per level per session on the first 1-min close
     through it: above VWAP, volume pacing >= LVL_MIN_PACE, inside LVL_NOT_BEFORE..LVL_BY.
-    Stop = level - LVL_STOP_ADR ADR. Exit rule from the playbook rides on the daily chart (grind: trail
+    Stop = level - LVL_STOP_ADR ADR until the close, then the entry bar's low on a CLOSE basis (stop study
+    2026-09-13: intraday stops at that level halve the return). Exit rule from the playbook rides on the daily chart (grind: trail
     the 20 EMA close; spike: sell into strength), so the alert also carries the 20-day SMA."""
     if not st.levels or book.session_open is None:
         return None
@@ -446,7 +447,7 @@ def detect_lvl(book: SymbolBook, ctx: DailyCtx, st: SymbolState, b: Bar, idx: In
         catalyst = gap_open >= LVL_CATALYST_GAP_PCT or day_chg >= LVL_CATALYST_DAY_PCT
         cat_note = f" | CATALYST-SIZE move ({day_chg:+.1f}% on the day): B archetype, no validated edge" if catalyst else ""
         msg = (f"LVL break {b.close:.2f} > {name} {lv:.2f} | {'PRECISION tier' if prec else 'recipe grade'} ({prec_why}){cat_note} | "
-               f"stop {stop:.2f} ({(b.close / stop - 1) * 100:.1f}%, {LVL_STOP_ADR:.1f} ADR under the level) | "
+               f"stop {stop:.2f} ({(b.close / stop - 1) * 100:.1f}%, {LVL_STOP_ADR:.1f} ADR under the level; at the close reset to the entry bar's low, close basis) | "
                f"{adr_from_21(b.close, ctx):+.1f} ADR vs 21 EMA | vol pace {pace:.1f}x{' (light vol)' if pace < 1.2 else ''} | "
                f"day range pos {pos:.2f} | open {gap_open:+.1f}% | 20-day SMA trail {getattr(ctx, 'sma20', 0.0):.2f}{gap_tag(book, ctx)}{rsm}")
         return Alert(book.symbol, "LVL", b.t, b.close, stop, msg, {

@@ -86,3 +86,33 @@ ZETA
 CDW
 PTEN
 PARR
+
+# --- 9/13 sector balance (universe was 54% Technology): non-tech names passing the same gates ---
+# materials
+CLMT
+FCX
+WPM
+NUE
+# consumer
+DDS
+ANF
+BBY
+ADM
+CHEF
+# energy (refiner + services; tankers left out, BWET is the short)
+DK
+FTI
+# financials
+WT
+FCFS
+# healthcare
+HTFL
+OSCR
+# industrials
+FLR
+CNH
+# communication
+TIGO
+
+# --- added 2026-09-13 ---
+IBM

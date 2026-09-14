@@ -97,3 +97,112 @@ Reproduce: `PYTHONPATH=src .venv/bin/python3 run_alert_study.py --since 2026-08-
 **Caveats:** cut points (10:00 / 10:30, ORB9 vs UR) were chosen on the full sample -- the halves test stability, not out-of-sample skill; A is n=20. Re-run the report weekly; if the grades stop ranking R, change `grading.py` and both consumers follow.
 
 **Journal side:** each stock entry (opening fills of one symbol/side within 5 min) is matched to a same-side alert 0-30 min earlier (live logs when present, else replay). Grade from the alert's time; execution = fill vs alert price in ADR (<=0.25 ok) and delay (<=10 min ok). Report-card entry component = setup 20 (share A/B) + execution 10 (share of alert entries ok). Re-grade 8/13-9/10: every session but 8/19 (B), 8/24 and 8/26 (C) is still D; 9/10 = 0 A / 1 B / 3 C / 21 F with execution ok on 18 of 22 alert entries -- the alerts were followed well; the wrong alerts were followed.
+
+---
+
+## Extension to 153 sessions (2026-02-02 → 2026-09-10), run 2026-09-13
+
+Same detectors (current code, LVL included), same scoring (1-min bars, hold to stop or close, R on the alert's own
+stop), same hindsight universe (today's 87-name focus list + the short list). Bars for 2/2–8/12 came from Polygon
+(`run_fetch_intraday_polygon.py` → `data/cache/intraday_1min/`; Tradier keeps ~20 sessions). 13,002 alerts, 9,424 of
+them out of play. Halves = first / last 76 sessions. Log: `logs/long_study_2026-02-02_2026-08-12.log`.
+
+### Rubric v1 over 153 sessions
+
+| grade | n | avg R | t | half A | half B |
+|---|---|---|---|---|---|
+| A (ORB9 ≥10:00, day LONG) | 96 | +1.00 | 2.4 | +0.40 | +1.53 |
+| B | 745 | +0.08 | 2.0 | +0.07 | +0.09 |
+| C | 2,147 | −0.03 | −1.2 | −0.06 | +0.02 |
+| F | 10,014 | +0.05 | 1.4 | +0.09 | −0.01 |
+| long F (out of play) | 4,575 | **+0.17** | 2.4 | +0.28 | +0.04 |
+| short C (allowed) | 1,580 | −0.02 | | −0.07 | +0.05 |
+| short F | 5,439 | −0.06 | −5.1 | | |
+
+A > B > C still ranks. **The long-side day gate does not:** hidden longs made +0.17R vs +0.09R for the allowed
+ones; by sub-state "extended" +0.24 (n=1,905), "near the 21" +0.32, "no room" −0.06. ⚠ This is the direction the
+hindsight universe is biased in (names picked because they trended in 2026 keep trending), so it is NOT a licence
+to buy extended names — it is a reason to re-test the gate on a point-in-time universe before trusting it either way.
+
+### Time of day, all long alerts (UR + ORB9 + LVL)
+
+| bucket | n | avg R | win | half A | half B |
+|---|---|---|---|---|---|
+| 09:30–09:40 | 408 | **−0.16** | 33% | −0.07 | −0.23 |
+| 09:41–09:50 | 1,285 | +0.10 | 39% | +0.06 | +0.15 |
+| 09:51–10:00 | 866 | +0.04 | 40% | +0.16 | −0.08 |
+| 10:01–10:30 | 1,508 | +0.08 | 40% | +0.08 | +0.08 |
+| 10:31–12:00 | 1,451 | **+0.47** | 46% | +0.72 | +0.18 |
+| after 12:00 | 471 | −0.01 | 48% | −0.02 | −0.01 |
+
+**The "before 10:00 = C" cut is too broad.** Over 7 months only the first ten minutes are negative in both halves;
+09:41–09:50 is as good as 10:00–10:30. The best window is 10:30–12:00 (ORB9 there +1.77R, n=308), and the afternoon
+is flat. UR same-minute flood: 10+ names −0.18R, 5–9 names +0.22R. UR on a day-SHORT name +0.11R (t 2.6) vs +0.04 on
+a day-LONG name — the reclaim in a downtrend did best, the gate is inverted for UR too.
+
+### By kind
+
+| kind | n | avg R | t | stopped | win | note |
+|---|---|---|---|---|---|---|
+| ORB9 | 807 | +0.77 | 2.0 | 73% | 26% | late fires +1.62 vs fresh +0.23: trend days carry it |
+| UR | 4,761 | +0.06 | 3.0 | 40% | 44% | robust but small |
+| LVL | 415 | +0.04 | 1.2 | 15% | 48% | flat; precision tag +0.02 (n=80), catalyst-size days +0.11 (n=101) |
+| BIR | 3,488 | −0.05 | −3.4 | 32% | 44% | negative in every day-state |
+| FBO | 3,085 | −0.04 | −3.2 | 22% | 46% | negative |
+| PARA | 446 | −0.05 | −1.2 | 20% | 44% | negative |
+
+Shorts have no positive cell in 153 sessions: the cap at C is generous. LVL has no intraday edge yet; the precision
+tier, which quadrupled R on daily bars, does not separate on a 1-min alert scored to the close — the daily-close
+entry and the 20-EMA hold are what the validation measured, not a same-day trade.
+
+### Recommendations (NOT implemented — change `grading.py` only after a point-in-time universe re-test)
+
+1. Time cell for longs: C = 09:30–09:40 and after 12:00, not "before 10:00". Consider A for ORB9 only from 10:30.
+2. Long day gate: keep it as display context; do not widen it from this data (hindsight bias points the same way).
+3. Shorts stay informational; FBO remains the long-exit tell.
+4. LVL: informational until it has its own study on entries held past the day (the recipe's edge is multi-day).
+
+### Control set: 39 large caps chosen without hindsight (added 2026-09-13, same 153 sessions)
+
+`data/watchlist/universe_study_extra.txt` = the largest stocks by 50-day dollar volume as of 2026-01-30 that were not on
+the curated lists (AVGO, META, GOOG, WMT, LLY, JPM, ... IBM), study-only. 19,456 alerts on the 134-name universe; the
+split below is curated (focus + short lists, 95 names) vs control (39).
+
+| | curated n | curated R | halves | control n | control R | halves |
+|---|---|---|---|---|---|---|
+| all longs | 6,569 | **+0.14** | +0.23 / +0.06 | 2,615 | **−0.05** | +0.02 / −0.11 |
+| ORB9 | 891 | **+0.70** | +1.08 / +0.33 | 195 | **−0.39** | −0.41 / −0.37 (83% stopped) |
+| UR | 5,203 | +0.05 | +0.10 / +0.02 | 2,317 | −0.02 | +0.05 / −0.08 |
+| LVL | 475 | +0.07 | +0.04 / +0.11 | 103 | −0.10 | −0.00 / −0.21 |
+| all shorts | 7,748 | −0.05 | | 3,313 | −0.01 | |
+| longs 09:30–09:40 | 457 | −0.15 | −0.07 / −0.21 | 189 | −0.15 | −0.18 / −0.12 |
+| longs 09:41–10:00 | 2,351 | +0.07 | +0.10 / +0.05 | 958 | +0.07 | +0.14 / 0.00 |
+| longs 10:01–10:30 | 1,640 | +0.09 | | 622 | −0.16 | +0.01 / −0.31 |
+| longs 10:31–12:00 | 1,603 | +0.42 | +0.72 / +0.14 | 642 | −0.09 | −0.12 / −0.07 |
+| longs after 12:00 | 518 | 0.00 | | 204 | −0.05 | |
+| longs day-LONG (allowed) | 1,867 | +0.07 | | 699 | −0.11 | |
+| longs out of play | 4,702 | +0.17 | | 1,916 | −0.03 | |
+
+**What survives on the control set:** (1) the first ten minutes are negative on both sets and in every half (−0.15 /
+−0.15); (2) 09:41–10:00 is fine on both sets (+0.07 / +0.07, no negative half); (3) shorts have no edge anywhere;
+(4) the long day gate does not rank on either set (day-LONG names were the *worst* control cell, −0.11).
+
+**What does NOT survive — it was the curated universe, not the pattern:** ORB9's whole return (+0.70 curated,
+−0.39 control: the A grade is a universe artifact), the 10:30–noon "best window" (+0.42 vs −0.09), UR's small edge,
+and LVL's. On names picked without hindsight every long detector is ≈ 0 to negative. The alert engine is a pattern
+surfacer; the return came from WHICH names were on the list ([[feedback_conviction_selection_is_the_strategy]]).
+
+Caveat on the control itself: mega-caps are a different population (lower ADR, slower intraday trends), so "no edge
+on large caps" is not the same as "no edge on liquid 3–7% ADR names picked point-in-time". That test (a point-in-time
+universe built from the Adhikary/Minervini gates as of each month) is the next one to run before any rubric cell
+other than the time floor is trusted.
+
+**Rubric v2 that this supports (NOT applied):** C for longs only in 09:30–09:40 and after 12:00; B for everything
+else that is day-LONG. The ORB9-after-10:00 A grade is unsupported on the control set and should drop to B until a
+point-in-time test says otherwise. Shorts stay capped at C; day gate stays as display context.
+
+**Rubric v2 APPLIED 2026-09-13** (`grading.py`, `RUBRIC_VERSION = v2-2026-09-13`): longs C = 09:30–09:40 or after
+12:00, B = 09:41–12:00 on a day-LONG name (any kind), F = not day-LONG; ORB9's A dropped; shorts unchanged. Check on
+the same 153 sessions: curated B +0.09 (halves +0.09 / +0.10) vs C −0.19 (−0.31 / −0.10) — ranks. Control B −0.12 vs
+C −0.08 — nothing positive and no separation, i.e. the rubric grades the time floor, it does not claim an edge on
+names picked without hindsight. Journal entries re-grade under v2 on the next `run_journal_grades.py` run.

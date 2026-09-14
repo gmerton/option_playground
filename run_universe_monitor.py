@@ -4,7 +4,8 @@
 Live:    PYTHONPATH=src .venv/bin/python3 run_universe_monitor.py
          (universe = data/watchlist/universe_latest.txt, rebuilt at start unless --no-rebuild)
 Replay:  PYTHONPATH=src .venv/bin/python3 run_universe_monitor.py --replay 2026-09-08 SPCX LITE
-         (feeds Tradier 1-min timesales through the same books + detectors)
+         (feeds 1-min bars through the same books + detectors; bars come from data/cache/intraday_1min first --
+          backfill older sessions with run_fetch_intraday_polygon.py -- then Tradier, which keeps ~20 sessions)
 
 Detectors: long = UR (undercut & reclaim), ORB9 (opening-range break above the daily 9 EMA), LVL (first 1-min close
 through the 15-session pivot or a hand level -- data/watchlist/levels.csv `ticker,level,note` + alerts_latest.csv
@@ -38,7 +39,7 @@ from lib.alerts.grading import RUBRIC_VERSION, Grade, grade_alert, resolve, setu
 from lib.alerts.publish import AlertPublisher
 from lib.alerts.stream import trades
 from lib.alerts.universe import build_universe
-from lib.tradier.get_daily_history import get_intraday_bars
+from lib.journal.exit_kind import bars_1min   # cache-first 1-min bars (data/cache/intraday_1min), Tradier behind it
 from lib.tradier.tradier_client_wrapper import TradierClient
 
 REPO = Path(__file__).resolve().parent
@@ -404,14 +405,15 @@ async def run_replay(args) -> int:
     eng.long_syms = set(syms) - short_manual
     _extra = load_levels()
     for s_ in eng.long_syms:
-        eng.state[s_].levels = symbol_levels(ctx[s_], _extra.get(s_))
+        if s_ in ctx and s_ in eng.state:          # names with no daily history that day (not listed yet) have no state
+            eng.state[s_].levels = symbol_levels(ctx[s_], _extra.get(s_))
     eng.idx.prev_close = idx_prev
     eng.idx.ref_ctx = ref_ctx
     print_industries(eng)
     print_levels(eng)
     async with TradierClient(api_key=os.environ["TRADIER_API_KEY"]) as client:
         for isym in list(INDEX_SYMBOLS) + sorted(ref_only):
-            im = await get_intraday_bars(isym, session, interval="1min", client=client)
+            im = await bars_1min(isym, session, client)
             if im is not None:
                 im = im.copy(); im["vwap"] = (im["close"] * im["volume"]).cumsum() / im["volume"].cumsum()
                 eng.idx.series[isym] = im[["close", "vwap"]]
@@ -419,7 +421,7 @@ async def run_replay(args) -> int:
         for sym in syms:
             if sym not in ctx:
                 print(f"{sym}: no daily context"); continue
-            m = await get_intraday_bars(sym, session, interval="1min", client=client)
+            m = await bars_1min(sym, session, client)
             if m is None:
                 print(f"{sym}: no intraday bars"); continue
             c = ctx[sym]

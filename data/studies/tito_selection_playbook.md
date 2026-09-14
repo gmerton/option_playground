@@ -256,6 +256,16 @@ Captures most of the spike mechanically while you're not watching, which fits th
 
 This answers the open **stop-price** question with a fork: **grinds → 20-EMA-close trail; spikes → profit-target into strength.**
 
+**Initial stop — RESOLVED 2026-09-13** (`run_adhikary_stop_study.py`, `data/studies/adhikary_stop_study.md`; 6,712 recipe
+breakouts / 1,841 precision-tier, 2019-10 → 2026-09, same events + 20-EMA exit as the validation): **stop = the entry
+bar's low, judged on the daily CLOSE.** Precision tier: +2.57% mean, PF 1.64, R +0.64, median risk 4.2% (~0.8 ADR), 7% false
+stops. The same level watched INTRADAY halves the return (+1.51%, 71% stopped, 16% false stops) — manage on closes, full stop.
+"Close back under the pivot" is too tight (+1.78%, 15% false stops). Wider stops (pivot − 1 ADR, −8%, base low, or the
+trail alone) add only +0.1–0.4pp of return for 60–90% more risk per trade — worse per unit of risk; size on the entry-low
+risk. 10-day SMA trail is the worst rule tested (+0.45%, halves the average win) — the 20 EMA stays. Winners' heat: the
+median winner's worst close was 0.27 ADR under entry, the 80th percentile 0.84 ADR, so the entry-bar low sits exactly on
+the line that keeps 4 of 5 winners; a 7% false-stop rate is the cost and re-entry on the reclaim is the remedy.
+
 ### ⚠⚠ SURVIVORSHIP CAVEAT — read before using any of these numbers
 
 This is a **curated list of Tito's BEST trades** (per the source). The aggregate — **20/20 wins, median

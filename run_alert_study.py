@@ -8,7 +8,8 @@
   ... --shown-only      # drop out-of-play alerts (what the monitor actually showed)
   ... --rescore         # re-score everything (scores are cached in logs/alert_study_scores*.csv)
 
-Replays run the CURRENT detector code over the universe (universe_latest.txt + universe_short.txt)
+Replays run the CURRENT detector code over the universe (universe_latest.txt + universe_short.txt +
+universe_study_extra.txt, a study-only control set of large caps the live monitor never streams)
 and overwrite that date's replay logs. Tradier keeps ~20 sessions of 1-min bars, so replays only
 reach back about a month; scores and bars are cached so older sessions stay studyable.
 Harness logic: src/lib/alerts/study.py. Write-ups: data/studies/alert_filter_study_2026-09.md.
@@ -30,7 +31,8 @@ REPO = Path(__file__).resolve().parent
 
 def replay(start: str, end: str) -> None:
     wl = REPO / "data" / "watchlist"
-    syms = sorted({s.strip().upper() for f in ("universe_latest.txt", "universe_short.txt") if (wl / f).exists()
+    # universe_study_extra.txt = study-only control names (large caps picked with no hindsight); never streamed live
+    syms = sorted({s.strip().upper() for f in ("universe_latest.txt", "universe_short.txt", "universe_study_extra.txt") if (wl / f).exists()
                    for s in (wl / f).read_text().splitlines() if s.strip() and not s.startswith("#")})
     d, e = date.fromisoformat(start), date.fromisoformat(end)
     while d <= e:
