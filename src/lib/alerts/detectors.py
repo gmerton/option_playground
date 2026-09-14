@@ -13,6 +13,13 @@ entry) -> one-shot per session. Both were specified from the 2026-09-08 tape:
   ORB9 opening-range break  LITE: gap +1.9%, first-minute low held the daily 9 EMA
        above the 9 EMA      (0.4% above) and VWAP, 09:45 5-min close above the
                             15-min opening-range high, closed +11%.
+  LVL  level break          Adhikary breakout (2026-09-13): the first 1-min close through
+                            the 15-session pivot (highest high of the prior 15 sessions,
+                            ctx.high15) or a hand level (data/watchlist/levels.csv,
+                            alerts_latest.csv buy-stop rows), above VWAP, volume pacing
+                            >= 1.1x, not in the first 15 minutes. Tags the validated
+                            precision tier (ADR 4-7, within 15% of the 52wk high, SMA
+                            stack 5-40 sessions: R +0.67 vs +0.16 for every breakout).
 """
 from __future__ import annotations
 
@@ -53,6 +60,17 @@ ORB_BY = time(12, 0)
 ORB_MIN_PACE = 1.0             # cumulative volume vs. profile-projected, x avg20 (below 1.2 is tagged "light vol")
 GAP_WARN_ADR = 1.0             # tag alerts whose open gapped >= this many ADR (lens rule: no gap-up buys in hour one)
 ORB_HOLD_ADR = 0.15            # session low may undercut the 9 EMA by this many ADR (floor 0.3%)
+# --- LVL parameters ----------------------------------------------------------------
+LVL_NOT_BEFORE = time(9, 45)   # after the 15-min opening range (a gap through the level in minute one is a chase)
+LVL_BY = time(15, 30)          # a break in the last half hour can't be managed
+LVL_BAND = 0.0005              # the close must clear the level by this fraction (tick noise)
+LVL_MIN_PACE = 1.1             # recipe #6: modest volume expansion; tagged "light vol" below 1.2 like ORB9
+LVL_STOP_ADR = 0.5             # stop = level less this many ADR (a breakout that gives back half an ADR failed)
+LVL_DEDUPE = 0.0015            # levels within this fraction of each other are one level
+LVL_MAX_CHASE_ADR = 0.5        # once the close is this far over the level without the gates met, the level is spent (no late fire)
+LVL_PRECISION = dict(adr=(4.0, 7.0), off52_min=-15.0, stack=(5, 40))   # data/studies/adhikary_detector_validation.md
+LVL_CATALYST_GAP_PCT = 5.0     # open gap >= this, or...
+LVL_CATALYST_DAY_PCT = 8.0     # ...day change >= this at the break = the B (catalyst) archetype: no validated edge, tagged
 
 
 INDEX_SYMBOLS = ("SPY", "QQQ")
@@ -252,6 +270,8 @@ class SymbolState:
         self.ur_fires: list[float] = []      # session lows at each UR fire
         self.orb_fired = False
         self.orb_disqualified = False
+        self.levels: list[tuple[float, str]] = []   # (price, name) the LVL detector watches; set by the engine
+        self.lvl_fired: set[float] = set()
         self.short = ShortState()
 
 
@@ -370,6 +390,72 @@ def detect_orb9(book: SymbolBook, ctx: DailyCtx, st: SymbolState, b: Bar, idx: I
         "adr_vs_21": round(adr_from_21(last5.close, ctx), 1), "vol_pace": round(pace, 1), "light_vol": pace < 1.2,
         "high15": round(ctx.high15, 2),
         "gap_adr": round((book.session_open / ctx.prev_close - 1) * 100 / ctx.adr_pct, 2) if ctx.adr_pct else 0.0})
+
+
+def symbol_levels(ctx: DailyCtx, extra: list[tuple[float, str]] | None = None) -> list[tuple[float, str]]:
+    """The levels LVL watches for a name: the 15-session pivot from the daily context plus any hand /
+    scan levels, deduped within LVL_DEDUPE (the scan's yfinance pivot and Tradier's differ by cents)."""
+    out: list[tuple[float, str]] = []
+    if getattr(ctx, "high15", 0.0) and ctx.high15 > ctx.prev_close:
+        out.append((float(ctx.high15), "15d pivot"))
+    for lv, name in extra or []:
+        if lv > 0 and all(abs(lv / x - 1) > LVL_DEDUPE for x, _ in out):
+            out.append((float(lv), name))
+    return sorted(out)
+
+
+def precision_tier(ctx: DailyCtx) -> tuple[bool, str]:
+    """Adhikary precision cohort at the prior close: ADR 4-7%, within 15% of the 52wk high, SMA stack 5-40 sessions."""
+    adr_lo, adr_hi = LVL_PRECISION["adr"]; st_lo, st_hi = LVL_PRECISION["stack"]
+    hi52 = getattr(ctx, "hi52", 0.0) or 0.0
+    off52 = (ctx.prev_close / hi52 - 1) * 100 if hi52 else -99.0
+    sd = getattr(ctx, "stack_days", 0) or 0
+    ok = adr_lo <= ctx.adr_pct <= adr_hi and off52 > LVL_PRECISION["off52_min"] and st_lo <= sd <= st_hi
+    why = f"ADR {ctx.adr_pct:.1f}%, {off52:+.0f}% vs 52wk high, stack {sd}d"
+    return ok, why
+
+
+def detect_lvl(book: SymbolBook, ctx: DailyCtx, st: SymbolState, b: Bar, idx: IndexState | None = None) -> Alert | None:
+    """Runs on every CLOSED 1-min bar. Fires once per level per session on the first 1-min close
+    through it: above VWAP, volume pacing >= LVL_MIN_PACE, inside LVL_NOT_BEFORE..LVL_BY.
+    Stop = level - LVL_STOP_ADR ADR. Exit rule from the playbook rides on the daily chart (grind: trail
+    the 20 EMA close; spike: sell into strength), so the alert also carries the 20-day SMA."""
+    if not st.levels or book.session_open is None:
+        return None
+    if not (LVL_NOT_BEFORE <= b.t.time() <= LVL_BY):
+        return None
+    for lv, name in st.levels:
+        if lv in st.lvl_fired or b.close <= lv * (1 + LVL_BAND):
+            continue
+        if b.close > lv * (1 + LVL_MAX_CHASE_ADR * ctx.adr_pct / 100):
+            st.lvl_fired.add(lv)                   # ran away before the gates were met: a chase now, not an entry
+            continue
+        if b.vwap and b.close <= b.vwap:           # gates not met yet: keep watching while price holds near the level
+            continue
+        pace = vol_pace(book, ctx, b.t)
+        if pace < LVL_MIN_PACE:
+            continue
+        st.lvl_fired.add(lv)
+        stop = lv * (1 - LVL_STOP_ADR * ctx.adr_pct / 100)
+        prec, prec_why = precision_tier(ctx)
+        rng = book.session_high - book.session_low
+        pos = (b.close - book.session_low) / rng if rng > 0 else 1.0
+        rsf, rsm = rs_tags(book, ctx, idx, b.t)
+        gap_open = (book.session_open / ctx.prev_close - 1) * 100 if ctx.prev_close else 0.0
+        day_chg = (b.close / ctx.prev_close - 1) * 100 if ctx.prev_close else 0.0
+        catalyst = gap_open >= LVL_CATALYST_GAP_PCT or day_chg >= LVL_CATALYST_DAY_PCT
+        cat_note = f" | CATALYST-SIZE move ({day_chg:+.1f}% on the day): B archetype, no validated edge" if catalyst else ""
+        msg = (f"LVL break {b.close:.2f} > {name} {lv:.2f} | {'PRECISION tier' if prec else 'recipe grade'} ({prec_why}){cat_note} | "
+               f"stop {stop:.2f} ({(b.close / stop - 1) * 100:.1f}%, {LVL_STOP_ADR:.1f} ADR under the level) | "
+               f"{adr_from_21(b.close, ctx):+.1f} ADR vs 21 EMA | vol pace {pace:.1f}x{' (light vol)' if pace < 1.2 else ''} | "
+               f"day range pos {pos:.2f} | open {gap_open:+.1f}% | 20-day SMA trail {getattr(ctx, 'sma20', 0.0):.2f}{gap_tag(book, ctx)}{rsm}")
+        return Alert(book.symbol, "LVL", b.t, b.close, stop, msg, {
+            "side": "long", **rsf, "level": round(lv, 2), "level_name": name, "level_type": "PIVOT", "precision": prec, "catalyst": catalyst,
+            "stop_pct": round((b.close / stop - 1) * 100, 2), "below_ema9": b.close < ctx.ema9,
+            "adr_vs_21": round(adr_from_21(b.close, ctx), 1), "vol_pace": round(pace, 1), "light_vol": pace < 1.2,
+            "range_pos": round(pos, 2), "stack_days": getattr(ctx, "stack_days", 0), "sma20": round(getattr(ctx, "sma20", 0.0), 2),
+            "gap_adr": round((book.session_open / ctx.prev_close - 1) * 100 / ctx.adr_pct, 2) if ctx.adr_pct else 0.0})
+    return None
 
 
 # --- short-side parameters ------------------------------------------------------------
@@ -554,5 +640,5 @@ def detect_para(book: SymbolBook, ctx: DailyCtx, st: "SymbolState", b: Bar, idx:
                  "target20": round(t2, 2), "orl": round(orl, 2), "vol_pace": round(pace, 2), "untested": True, **sf})
 
 
-DETECTORS = {"ur": detect_ur, "orb9": detect_orb9, "bir": detect_bir, "fbo": detect_fbo, "para": detect_para}
+DETECTORS = {"ur": detect_ur, "orb9": detect_orb9, "lvl": detect_lvl, "bir": detect_bir, "fbo": detect_fbo, "para": detect_para}
 SHORT_KINDS = {"BIR", "FBO", "PARA"}

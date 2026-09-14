@@ -6,7 +6,6 @@
 # --- 9/9 trade plan (A-D tiers + open positions) ---
 TGTX
 MSFT
-P
 ANET
 NTRA
 HALO
@@ -76,3 +75,14 @@ WDC
 # --- 9/9 evening ideas ---
 DE
 IREN
+
+# --- added 2026-09-13 ---
+CHRD
+
+# --- 9/13 Adhikary precision cohort, coiling under the 15-day pivot (set the LVL detector on them) ---
+IOVA
+TEAM
+ZETA
+CDW
+PTEN
+PARR

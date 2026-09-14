@@ -201,3 +201,25 @@ vol; "de-escalation" = vol ×0.75. War persisting (vol ×1.2) improves every cel
 - [TT News: Surging tanker rates signal a deepening global energy crisis](https://www.ttnews.com/articles/surging-tanker-rates-energy)
 - [Energy Connects: OPEC+ keeps output policy unchanged for October](https://www.energyconnects.com/news/oil/2026/september/opecplus-keeps-output-policy-unchanged-for-october)
 - Market data: Tradier quotes/chains/history (9/10 close). Vendor dashboard: oquants.com/dashboard/volatility/USO (vendor data, not ours).
+
+## Update 9/13 evening: BWET is the primary candidate (trader's call)
+
+BWET ran another day on 9/11 (8th straight up close) and is now the most extended name in the whole
+universe. USO and CRAK have no short shape (extended but no level, no streak) and CVI is a slower
+grind, so BWET is the one parabolic short we watch first. Levels from the 9/11 close:
+
+| | BWET 9/11 |
+|---|---|
+| Close / high / low | 726.92 / 743.57 / 689.00 |
+| Up days | 8 |
+| Over the 21 EMA (479.95) | +8.0 ADR |
+| ADR20 | 6.45% (~47 points) |
+| Avg 20-day volume | 294k shares (~$210M/day) |
+| Cover 1, 10-day SMA | 525.95 |
+| Cover 2, 20-day SMA | 472.99 |
+
+Rules unchanged: no short while the day is green (5-min close must be under 726.92). Trigger = the
+PARA alert (opening-range-low break under VWAP, or first 5-min close back under VWAP after a new high
+made after 9:45). Stop = high of day + 0.1 ADR. Size small: the pattern is untested in our data and
+the 9/11 range alone was 7.9% (689-743). Cover targets are 28% and 35% below Friday's close, so take
+some off on the first flush rather than waiting for the 10-day.

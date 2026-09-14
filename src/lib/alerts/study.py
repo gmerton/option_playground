@@ -24,8 +24,8 @@ import pandas as pd
 LOGS = Path(__file__).resolve().parents[3] / "data" / "watchlist" / "logs"
 BARS = Path(__file__).resolve().parents[3] / "data" / "cache" / "intraday_1min"
 SHORT_KINDS = ("BIR", "FBO", "PARA")
-PAT = re.compile(r"\[(\d{4}-\d\d-\d\d) (\d\d:\d\d)\] (\S+)\s+(UR|ORB9|BIR|FBO|PARA)\s+(\(gated\) )?"
-                 r"(?:UR reclaim|ORB9 5-min close|BIR short|FBO short|PARA short) ([\d.]+).*?\| stop ([\d.]+)")
+PAT = re.compile(r"\[(\d{4}-\d\d-\d\d) (\d\d:\d\d)\] (\S+)\s+(UR|ORB9|LVL|BIR|FBO|PARA)\s+(\(gated\) )?"
+                 r"(?:UR reclaim|ORB9 5-min close|LVL break|BIR short|FBO short|PARA short) ([\d.]+).*?\| stop ([\d.]+)")
 TAGS = ("deep flush", "undercut PDL", "opened below", "tagged", "still below 9 EMA", "light vol", "STOP IN NOISE",
         "GAP", "was an ORB9 long", "STRONGEST IN GROUP", "strongest in group", "[MA]", "[PRICE]", "[VWAP]", "[SWING HIGH]")
 KEY = ["date", "t", "sym", "kind"]
@@ -189,7 +189,7 @@ def report_filters(S: pd.DataFrame) -> None:
 
 def report_extension(S: pd.DataFrame) -> None:
     S = S.assign(ext_b=pd.cut(S.ext21, [-99, -1, 0, 1, 2, 99], labels=["< -1 ADR", "-1..0", "0..+1", "+1..+2", "> +2 ADR"]))
-    for k in ("UR", "ORB9", "BIR", "FBO", "PARA"):
+    for k in ("UR", "ORB9", "LVL", "BIR", "FBO", "PARA"):
         print(f"\n== {k} by distance from the daily 21 EMA at the alert ==\n" + _tab(S[S.kind == k], "ext_b"))
 
 
@@ -198,7 +198,7 @@ def report_daystate(S: pd.DataFrame) -> None:
         print("(day state not computed)"); return
     print(f"\nday-state coverage {S.day_state.notna().mean():.0%} of {len(S)} alerts "
           f"({int(S.out_of_play.sum())} from out-of-play logs)")
-    for k in ("UR", "ORB9", "BIR", "FBO", "PARA"):
+    for k in ("UR", "ORB9", "LVL", "BIR", "FBO", "PARA"):
         print(f"\n== {k} by day state ==\n" + _tab(S[S.kind == k], "day_state"))
     print("\n== allowed by the daily gate vs blocked, by side ==\n" + _tab(S, ["side", "allowed"]))
     print("\n== long alerts by day sub-state ==\n" + _tab(S[S.side == "long"], "sub"))

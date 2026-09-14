@@ -1,0 +1,23 @@
+=== ADHIKARY SCAN — 2026-09-11 (cached close) | universe 1373 liquid, 669 pass ADR>=3.0% & 52wk range>=17.0% ===
+vehicle: <=11 DTE near-ATM 0.5-0.9d | >=15 DTE OTM 0.2-0.35d | premium $0.5-6 || exit: grind -> 20 EMA daily close; spike (3x) -> sell into strength
+
+--- A  BREAKOUT (close clears the 15d pivot, RVOL>=1.1, stacked >=5d): 3 ---  precision=YES is the validated cohort (mean R +0.67 vs +0.16 for all A); the rest is context
+            px  chg%     piv  vs_pivot%  rvol   pos   adr  stack_d  contr  dryup  off52%  addv_M precision             industry
+ticker                                                                                                                         
+QRVO    116.65  3.82  114.28       2.07  1.95  0.51  3.16        5   2.51   1.15    2.07  107.67                 Semiconductors
+DHT      22.00  2.66   21.59       1.90  1.70  0.72  3.18       38   0.73   1.21    1.90   56.98            Oil & Gas Midstream
+FRO      49.21  1.67   48.72       1.01  1.69  0.77  3.10       38   0.78   1.28    1.01   92.15            Oil & Gas Midstream
+
+--- B  CATALYST (gap/8%+ day on >=2x vol, clears pivot, closes near high): 0 ---  do not chase the AH pop; require the pivot to HOLD in the cash session
+
+--- C  EXHAUSTION -- DAILY PROXY ONLY (validation 2019-26: this bar is a CONTINUATION signal on daily data, +1.8%/21s; do NOT short it from the daily bar): 0 ---  candidate-narrower for an intraday 0DTE fade only
+
+--- SETUP (stacked, within 5% under the pivot, contraction <=0.6x, volume dry-up <=0.8x): 6 ---  set alerts at the pivot; this is the list to be early on
+            px     piv  vs_pivot%  contr  dryup   adr  stack_d  off52%  addv_M precision                industry
+ticker                                                                                                          
+PARR     84.65   85.39      -0.87   0.49   0.79  5.71       14   -2.73   74.07       YES  Oil & Gas Refining & M
+EPAM    117.91  121.53      -2.98   0.37   0.67  3.92       14  -47.01  149.90            Information Technology
+MDGL    534.49  552.08      -3.19   0.37   0.67  3.58        1  -13.09  160.51                     Biotechnology
+NUE     259.43  268.47      -3.37   0.54   0.74  3.41        2   -7.38  340.50                             Steel
+NOV      21.10   21.84      -3.38   0.53   0.73  3.15        6   -3.38   65.38            Oil & Gas Equipment & 
+NTRA    328.93  343.18      -4.15   0.28   0.71  3.22       25   -4.15  368.30            Diagnostics & Research

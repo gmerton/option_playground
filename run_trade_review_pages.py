@@ -51,6 +51,7 @@ import json
 from pathlib import Path
 
 import pandas as pd
+from urllib.parse import quote
 
 from lib.mysql_lib import _get_conn, get_trade_reviews
 from lib.journal.price_cache import get_daily_history_cached, get_intraday_bars_cached
@@ -556,8 +557,8 @@ def _render_vehicle_breakdown(rows: list[dict]) -> str:
             _stat_cell("Combined total", fmt_pnl(combined)),
         ]
         blocks.append(f"""<div class="strategy-block">
-  <div class="strategy-name">{bucket}</div>
-  <div class="stat-grid">{''.join(cells)}</div>
+  <a class="card-link" href="trade_reviews.html?vehicle={quote(bucket)}"><div class="strategy-name">{bucket}</div>
+  <div class="stat-grid">{''.join(cells)}</div><div class="view-all">View all {st["n_total"]} trades &rarr;</div></a>
 </div>""")
     n_unclassified = sum(1 for r in rows if _vehicle_bucket(r.get("vehicle")) is None)
     note = (
@@ -578,6 +579,13 @@ def _fmt_pct(v: float | None) -> str:
     cls = "pnl-pos" if v >= 0 else "pnl-neg"
     sign = "+" if v >= 0 else ""
     return f'<span class="{cls}">{sign}{v:.1f}%</span>'
+
+
+CARD_LINK_CSS = """
+  a.card-link { display: block; color: inherit; text-decoration: none; border-radius: 8px; margin: -6px; padding: 6px; }
+  a.card-link:hover { background: #f5f8ff; } a.card-link:hover .strategy-name { color: var(--accent); }
+  .view-all { font-size: 12px; color: var(--accent); margin-top: 8px; font-weight: 600; }
+"""
 
 
 def render_summary_page(rows: list[dict]) -> str:
@@ -622,8 +630,8 @@ def render_summary_page(rows: list[dict]) -> str:
             else:
                 table_html = '<div class="empty">No trades yet.</div>'
             blocks.append(f"""<div class="strategy-block">
-  <div class="strategy-name">{spec['label']}</div>
-  <div class="stat-grid">{''.join(cells)}</div>
+  <a class="card-link" href="trade_reviews.html?strategy={spec['key']}"><div class="strategy-name">{spec['label']}</div>
+  <div class="stat-grid">{''.join(cells)}</div><div class="view-all">View all {st["n_total"]} trades &rarr;</div></a>
   <div class="note">Return % = P&amp;L as a percent of premium paid to open the structure (capital deployed for that trade), not account equity.</div>
   {table_html}
 </div>""")
@@ -638,10 +646,10 @@ def render_summary_page(rows: list[dict]) -> str:
 <head>
 <meta charset="utf-8">
 <title>Strategy Performance</title>
-<style>{SUMMARY_CSS}</style>
+<style>{SUMMARY_CSS}{CARD_LINK_CSS}</style>
 </head>
 <body>
-<a class="back" href="trade_reviews.html">&larr; All reviews</a>
+<a class="back" href="index.html">&larr; Home</a> &middot; <a class="back" href="trade_reviews.html">All reviews</a>
 <h1>Strategy Performance</h1>
 <div class="sub">
   Aggregated from the reviewed book. Generated __GENERATED_AT__. &middot;
@@ -747,7 +755,7 @@ INDEX_TEMPLATE = """<!doctype html>
 <body>
 <header>
   <h1>Trade Reviews</h1>
-  <div class="sub">Entry/exit quality judged on facts at the time, not outcome. Click a row for its chart. Generated __GENERATED_AT__. &middot; <a class="back" href="summary.html" style="color:var(--accent);">Strategy performance &rarr;</a> &middot; <a class="back" href="alerts.html" style="color:var(--accent);">Live alerts &rarr;</a></div>
+  <div class="sub"><a class="back" href="index.html" style="color:var(--accent);">&larr; Home</a> &middot; Entry/exit quality judged on facts at the time, not outcome. Click a row for its chart. Generated __GENERATED_AT__. &middot; <a class="back" href="summary.html" style="color:var(--accent);">Strategy performance &rarr;</a> &middot; <a class="back" href="alerts.html" style="color:var(--accent);">Live alerts &rarr;</a> &middot; <a class="back" href="tito/index.html" style="color:var(--accent);">Tito's best trades &rarr;</a> &middot; <a class="back" href="tutorial/qcom/index.html" style="color:var(--accent);">QCOM entry tutorial &rarr;</a></div>
   <div class="controls">
     <input type="text" id="search" placeholder="Search ticker, reason, tags…">
     <select id="direction"><option value="">Direction: all</option></select>
@@ -756,6 +764,7 @@ INDEX_TEMPLATE = """<!doctype html>
     <select id="actionableVerdict"><option value="">Fix: all</option></select>
     <span class="stat" id="stat"></span>
   </div>
+  <div id="urlfilter" style="margin-top:8px;font-size:12.5px;"></div>
 </header>
 <main>
   <table id="tbl">
@@ -777,7 +786,25 @@ INDEX_TEMPLATE = """<!doctype html>
 
 <script>
 const DATA = __DATA_JSON__;
+const STRATEGIES = __STRATEGIES_JSON__;
 let sortKey = "entryDate", sortDir = 1, activeTag = null;
+// URL filters from the Performance page cards: ?vehicle=<bucket> or ?strategy=<key> (same rules as the summary page)
+const _params = new URLSearchParams(location.search);
+const urlVehicle = _params.get('vehicle'), urlStrategy = _params.get('strategy');
+const _spec = urlStrategy ? STRATEGIES.find(x => x.key === urlStrategy) : null;
+function vehicleBucket(v) {       // mirrors _vehicle_bucket() in run_trade_review_pages.py
+  if (!v) return null;
+  if (v === 'long stock') return 'Long Stock';
+  if (v === 'short stock') return 'Short Stock';
+  if (v.startsWith('long call') || v.startsWith('long put') || v === 'long straddle') return 'Long Vol';
+  if (v.startsWith('short call') || v.startsWith('short put') || v.includes('spread') || v === 'iron condor') return 'Short Vol';
+  return null;
+}
+function urlMatch(r) {
+  if (urlVehicle && vehicleBucket(r.vehicle) !== urlVehicle) return false;
+  if (_spec) { const ex = _spec.exclude_tags || []; if (!r.tags.includes(_spec.key) || r.tags.some(t => ex.includes(t))) return false; }
+  return true;
+}
 
 function badge(v) {
   if (!v) return '<span class="badge badge-n_a">—</span>';
@@ -811,6 +838,7 @@ function populateFilters() {
   fill(document.getElementById('actionableVerdict'), av);
 }
 function matches(r, q, ev, xv, dir, av, tag) {
+  if (!urlMatch(r)) return false;
   if (ev && r.entryVerdict !== ev) return false;
   if (xv && r.exitVerdict !== xv) return false;
   if (dir && r.direction !== dir) return false;
@@ -881,6 +909,10 @@ document.getElementById('search').addEventListener('input', render);
 document.getElementById('entryVerdict').addEventListener('change', render);
 document.getElementById('exitVerdict').addEventListener('change', render);
 document.getElementById('direction').addEventListener('change', render);
+if (urlVehicle || _spec) {
+  const n = DATA.filter(urlMatch).length;
+  document.getElementById('urlfilter').innerHTML = `Showing <b>${urlVehicle ? 'vehicle: ' + urlVehicle : (_spec ? _spec.label : urlStrategy)}</b> (${n} trades) &middot; <a href="trade_reviews.html" style="color:var(--accent);">clear filter</a> &middot; <a href="summary.html" style="color:var(--accent);">back to performance</a>`;
+}
 populateFilters();
 render();
 </script>
@@ -1046,7 +1078,7 @@ def main() -> None:
     asyncio.run(_build_all(rows, a.no_charts))
 
     public_rows = [{k: v for k, v in r.items() if k != "_conid"} for r in rows]
-    html = INDEX_TEMPLATE.replace("__DATA_JSON__", json.dumps(public_rows))
+    html = INDEX_TEMPLATE.replace("__DATA_JSON__", json.dumps(public_rows)).replace("__STRATEGIES_JSON__", json.dumps(STRATEGIES))
     generated_at = pd.Timestamp.now().strftime("%Y-%m-%d %H:%M")
     html = html.replace("__GENERATED_AT__", generated_at)
     INDEX_OUT.parent.mkdir(parents=True, exist_ok=True)

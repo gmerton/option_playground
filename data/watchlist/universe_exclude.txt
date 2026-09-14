@@ -1,2 +1,4 @@
 # never stream these (short-watch names; the detectors are long-only)
 CRAK
+# too illiquid for the intraday alerts (trader, 2026-09-11)
+P

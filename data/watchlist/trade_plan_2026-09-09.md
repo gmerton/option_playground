@@ -117,3 +117,12 @@ Straddles held into the prints (NNE, QBTS, GAP, 9/18) want the movement; a quiet
 | INTC / AMD | 106.75 / 526.80 | | only after a 2–3 day pause (INTC) / half size (AMD); both 2.3–2.5 ADR extended |
 
 Holds: NET (305 / close < 309.5), SKHY 80% (194.5 / close < 189.8), GLW (158.50 / close < 163.87), DINO (close < 103.2). PPI 08:30: first 15 minutes are gap territory.
+
+## Added 9/13 evening: shorts for 9/14
+
+- **BWET: primary parabolic short.** 8 up days, +8.0 ADR over the 21 EMA at 726.92. Only on a PARA alert
+  (red on the day + opening-range-low break under VWAP, or VWAP loss after a fresh high). Stop = HOD + 0.1 ADR.
+  Cover 1 = 10-day 525.95, cover 2 = 20-day 472.99; scale on the first flush. Small: untested pattern.
+  Detail: `data/studies/oil_spike_short_playbook_2026-09.md` (9/13 update).
+- USO / CRAK: OUT (extended, no level, no streak). CVI: SHORT parabolic but secondary (+3.4 ADR, 10 up days).
+- Exhaustion shorts at a prior high: HPE (63.44), SMTC (175.69). Trend-down shorts (BIR): see the 9/14 in-play table.

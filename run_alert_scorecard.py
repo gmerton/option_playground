@@ -27,7 +27,7 @@ from lib.tradier.tradier_client_wrapper import TradierClient
 
 LOGS = Path("data/watchlist/logs")
 KEEP = ["date", "t", "symbol", "kind", "side", "price", "stop", "stop_pct", "stop_adr", "tag", "level", "below_ema9", "adr_vs_21", "vol_pace",
-        "gap_adr", "light_vol", "spy_vs_vwap", "qqq_vs_vwap", "index_above", "gated", "rs_spy", "rs_group", "group", "rs_leader", "level_type", "day_state", "out_of_play"]
+        "gap_adr", "light_vol", "level_name", "precision", "stack_days", "spy_vs_vwap", "qqq_vs_vwap", "index_above", "gated", "rs_spy", "rs_group", "group", "rs_leader", "level_type", "day_state", "out_of_play"]
 
 
 async def main() -> int:
@@ -79,7 +79,7 @@ async def main() -> int:
     print(df[["t", "symbol", "kind", "side", "price", "stop", "stop_adr", "tag", "level", "adr_vs_21", "vol_pace", "spy_vs_vwap", "gated", "stopped", "result_pct"]].to_string(index=False))
     n_win = int((df.result_pct > 0).sum())
     print(f"\n{d}{' OUT-OF-PLAY' if oop else ''}: {len(df)} alerts | winners {n_win} | stopped {int(df.stopped.sum())} | avg {df.result_pct.mean():+.2f}%")
-    for name, mask in [("SPY above VWAP", df.index_above == True), ("UR", df.kind == "UR"), ("ORB9", df.kind == "ORB9"),  # noqa: E712
+    for name, mask in [("SPY above VWAP", df.index_above == True), ("UR", df.kind == "UR"), ("ORB9", df.kind == "ORB9"), ("LVL", df.kind == "LVL"),  # noqa: E712
                        ("BIR", df.kind == "BIR"), ("FBO", df.kind == "FBO"),
                        ("not gated", df.gated != True)]:  # noqa: E712
         a = df[mask]

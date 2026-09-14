@@ -19,7 +19,7 @@ import numpy as np
 import pandas as pd
 
 from lib.alerts import study
-from lib.alerts.grading import RUBRIC_VERSION, SHORT_KINDS, VERDICT, setup_grade
+from lib.alerts.grading import RUBRIC_VERSION, SHORT_KINDS, VERDICT, resolve, setup_grade
 from lib.mysql_lib import _get_conn
 
 EXEC_ERR = Path(__file__).resolve().parents[3] / "data" / "journal" / "execution_errors.csv"
@@ -40,9 +40,13 @@ def drop_execution_errors(t: pd.DataFrame) -> pd.DataFrame:
     t = t.copy()
     for r in e.itertuples():
         m = (t.underlying_symbol == r.underlying_symbol) & (pd.to_datetime(t.trade_datetime) == pd.Timestamp(r.trade_datetime)) & (t.buy_sell == r.buy_sell)
+        left = float(r.exclude_qty)          # consume across fills sharing the timestamp/side (e.g. RGTI 9/11: 158 + 104 at 10:40:59)
         for i in t.index[m]:
-            q = abs(float(t.at[i, "quantity"])) - float(r.exclude_qty)
-            t.at[i, "quantity"] = q if float(t.at[i, "quantity"]) > 0 else -q
+            if left <= 0:
+                break
+            q0 = float(t.at[i, "quantity"]); take = min(abs(q0), left); left -= take
+            q = abs(q0) - take
+            t.at[i, "quantity"] = q if q0 > 0 else -q
     return t[t.quantity.abs() > 1e-9]
 
 
@@ -113,28 +117,31 @@ def grade_day(d: date, t_day: pd.DataFrame) -> pd.DataFrame:
     ents = entries_for(t_day)
     if not ents:
         return pd.DataFrame()
-    ctx = asyncio.run(load_context(sorted({e["sym"] for e in ents}), d))
+    syms = {e["sym"] for e in ents}
+    ctx = asyncio.run(load_context(sorted(syms | {resolve(x, "long")[0] for x in syms}), d))
     al = alerts_for(d)
     rows = []
     for e in ents:
-        c = ctx.get(e["sym"]); ds = getattr(c, "day_state", None); adr = getattr(c, "adr_pct", None) or 3.0
+        c = ctx.get(e["sym"]); adr = getattr(c, "adr_pct", None) or 3.0
+        gsym, gside = resolve(e["sym"], e["side"])          # leveraged / inverse ETFs: the tracked index's day state
+        ds = getattr(ctx.get(gsym), "day_state", None)
         fm = e["dt"].hour * 60 + e["dt"].minute
         m = al[(al.sym == e["sym"]) & (al.side == e["side"]) & (al.mins <= fm) & (fm - al.mins <= MATCH_WINDOW_MIN)] if len(al) else al
         if len(m):
             a = m.sort_values("mins").iloc[-1]
-            g = setup_grade(e["side"], a.kind, int(a.mins), ds)
+            g = setup_grade(gside, a.kind, int(a.mins), ds)
             sign = 1 if e["side"] == "long" else -1
             slip = sign * (e["px"] - a.px) / a.px * 100 / adr
             delay = (e["dt"] - pd.Timestamp(f"{d} {a.t}")).total_seconds() / 60
             rows.append(dict(trade_date=d, underlying_symbol=e["sym"], t_fill=e["dt"], side=e["side"], qty=e["qty"], fill_px=round(e["px"], 4),
                              alert_kind=a.kind, alert_t=a.t, alert_px=a.px, alert_src=al.src.iloc[0], day_state=ds, setup_grade=g.grade,
-                             grade_why=g.why, slip_adr=round(slip, 3), delay_min=round(delay, 2),
+                             grade_why=(g.why if gsym == e["sym"] else f"on {gsym} ({gside}): {g.why}")[:160], slip_adr=round(slip, 3), delay_min=round(delay, 2),
                              exec_ok=int(slip <= SLIP_OK_ADR and delay <= DELAY_OK_MIN), rubric=RUBRIC_VERSION))
         else:
-            g = setup_grade(e["side"], None, fm, ds)
+            g = setup_grade(gside, None, fm, ds)
             rows.append(dict(trade_date=d, underlying_symbol=e["sym"], t_fill=e["dt"], side=e["side"], qty=e["qty"], fill_px=round(e["px"], 4),
                              alert_kind=None, alert_t=None, alert_px=None, alert_src=al.src.iloc[0] if len(al) else None, day_state=ds,
-                             setup_grade=g.grade, grade_why=g.why, slip_adr=None, delay_min=None, exec_ok=None, rubric=RUBRIC_VERSION))
+                             setup_grade=g.grade, grade_why=(g.why if gsym == e["sym"] else f"on {gsym} ({gside}): {g.why}")[:160], slip_adr=None, delay_min=None, exec_ok=None, rubric=RUBRIC_VERSION))
     return pd.DataFrame(rows)
 
 

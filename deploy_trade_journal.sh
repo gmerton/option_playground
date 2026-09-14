@@ -26,6 +26,7 @@ DIST_ID=E2VZA7AMN3NFDL
 echo "Syncing data/journal/ -> s3://$BUCKET/ ..."
 # alerts/ is written directly to the bucket by run_universe_monitor.py; excluded so a
 # deploy from a checkout that lacks today's file can't delete it.
+PYTHONPATH=src:. .venv/bin/python3 run_journal_home.py   # site home page (data/journal/index.html)
 aws s3 sync data/journal/ "s3://$BUCKET/" --delete --exclude "alerts/*"
 
 echo "Invalidating CloudFront cache ..."

@@ -6,6 +6,7 @@ RGTI
 # 9/9 EVENING: RATE-SENSITIVE SHORT IDEAS (BOTH BEARISH-STACKED; SCHW DROPPED -- STILL 9>21>50)
 XHB
 IWM
+# 9/13: BWET = PRIMARY parabolic short candidate; playbook data/studies/oil_spike_short_playbook_2026-09.md
 BWET
 USO
 CVI

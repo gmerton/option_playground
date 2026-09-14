@@ -1,0 +1,4 @@
+# Hand levels for the LVL detector (run_universe_monitor.py): ticker,level,note  -- # comments allowed.
+# The 15-session pivot is watched automatically for every long-universe name; list only OTHER lines here
+# (plan buy-stops, Ariel levels). Levels within 0.15% of the pivot are merged into it.
+OKTA,173.10,plan B-tier line (9/9)

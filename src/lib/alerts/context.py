@@ -1,7 +1,7 @@
 """Per-symbol daily context the intraday detectors need, from Tradier daily bars.
 
 prev_close / prev_high / prev_low, daily EMA9 / EMA21 (as of the prior close),
-ADR20 (%), avg20 volume. Cached per session date in data/cache/alert_ctx_<date>.parquet.
+ADR20 (%), avg20 volume, high15 (the 15-session pivot the LVL detector watches), hi52, stack_days. Cached per session date in data/cache/alert_ctx_<date>.parquet.
 Tradier concurrency is capped at 2 (higher -> ClientResponseError skips).
 """
 from __future__ import annotations
@@ -44,6 +44,8 @@ class DailyCtx:
     sma10: float = 0.0              # parabolic-short cover targets
     sma20: float = 0.0
     up_days: int = 0
+    hi52: float = 0.0               # 52-week high (prior close basis) -- LVL precision tag
+    stack_days: int = 0             # consecutive sessions with 10 > 20 > 50 SMA into the prior close
 
     def levels_above(self) -> list[tuple[str, float]]:
         """Daily resistance candidates for the short-side detectors, named."""
@@ -60,6 +62,12 @@ class DailyCtx:
 def _ctx_from_hist(sym: str, hist: pd.DataFrame) -> DailyCtx:
     c = hist["close"]
     ds = classify(hist)
+    s10, s20, s50 = c.rolling(10).mean(), c.rolling(20).mean(), c.rolling(50).mean()
+    stacked = ((s10 > s20) & (s20 > s50)).fillna(False)
+    stack_days = 0
+    for x in stacked.iloc[::-1]:
+        if not x: break
+        stack_days += 1
     return DailyCtx(
         symbol=sym,
         prev_close=float(c.iloc[-1]),
@@ -76,6 +84,7 @@ def _ctx_from_hist(sym: str, hist: pd.DataFrame) -> DailyCtx:
         day_state=ds.state, day_reason=ds.reason, ext21_close_adr=ds.ext21_adr,
         res_level=ds.res_level, res_gap_adr=ds.res_gap_adr,
         sma10=float(c.rolling(10).mean().iloc[-1]), sma20=float(c.rolling(20).mean().iloc[-1]), up_days=ds.up_days,
+        hi52=float(hist["high"].tail(252).max()), stack_days=stack_days,
     )
 
 
@@ -100,7 +109,7 @@ async def _one(sym: str, session: date, client: TradierClient, sem: asyncio.Sema
 
 async def load_context(symbols: list[str], session: date, *, refresh: bool = False) -> dict[str, DailyCtx]:
     CACHE.mkdir(parents=True, exist_ok=True)
-    p = CACHE / f"alert_ctx_v6_{session.isoformat()}.parquet"   # v6 = + parabolic SHORT state, sma10/sma20/up_days
+    p = CACHE / f"alert_ctx_v7_{session.isoformat()}.parquet"   # v7 = + hi52 / stack_days (LVL precision tag); v6 = parabolic SHORT state
     have: dict[str, DailyCtx] = {}
     if p.exists() and not refresh:
         df = pd.read_parquet(p)

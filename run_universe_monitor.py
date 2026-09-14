@@ -6,7 +6,9 @@ Live:    PYTHONPATH=src .venv/bin/python3 run_universe_monitor.py
 Replay:  PYTHONPATH=src .venv/bin/python3 run_universe_monitor.py --replay 2026-09-08 SPCX LITE
          (feeds Tradier 1-min timesales through the same books + detectors)
 
-Detectors: long = UR (undercut & reclaim), ORB9 (opening-range break above the daily 9 EMA);
+Detectors: long = UR (undercut & reclaim), ORB9 (opening-range break above the daily 9 EMA), LVL (first 1-min close
+through the 15-session pivot or a hand level -- data/watchlist/levels.csv `ticker,level,note` + alerts_latest.csv
+buy-stop rows -- above VWAP on 1.1x+ volume pace; tagged PRECISION for the validated Adhikary cohort);
 short = BIR (bounce into a declining MA, first violation of higher lows; short universe only),
 FBO (failed breakout of the prior-day high / opening range; every name -- also the exit tell for a long).
 Short universe = data/watchlist/universe_short.txt + long-universe names below their 9 and 21 EMA.
@@ -31,8 +33,8 @@ import pandas as pd
 
 from lib.alerts.bars import Bar, SymbolBook
 from lib.alerts.context import load_context
-from lib.alerts.detectors import DETECTORS, INDEX_SYMBOLS, SHORT_KINDS, Alert, IndexState, SymbolState
-from lib.alerts.grading import RUBRIC_VERSION, Grade, grade_alert
+from lib.alerts.detectors import DETECTORS, INDEX_SYMBOLS, SHORT_KINDS, Alert, IndexState, SymbolState, precision_tier, symbol_levels
+from lib.alerts.grading import RUBRIC_VERSION, Grade, grade_alert, resolve, setup_grade
 from lib.alerts.publish import AlertPublisher
 from lib.alerts.stream import trades
 from lib.alerts.universe import build_universe
@@ -44,8 +46,11 @@ LOGS = REPO / "data" / "watchlist" / "logs"
 EXT_UP_SHORT_ADR = 2.0          # a short on a name this far over its 21 EMA needs a red day to count
 
 
-def _sound() -> None:
-    subprocess.Popen(["afplay", "/System/Library/Sounds/Glass.aiff"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+SOUNDS = {"loud": "/System/Library/Sounds/Glass.aiff", "soft": "/System/Library/Sounds/Tink.aiff"}
+
+
+def _sound(kind: str = "loud") -> None:
+    subprocess.Popen(["afplay", SOUNDS[kind]], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
 
 def _read_list(p: Path) -> set[str]:
@@ -82,6 +87,51 @@ def load_group_etfs() -> dict[str, str]:
                 continue
             g, e = line.split(",", 1); out[g.strip()] = e.strip().upper()
     return out
+
+
+def load_levels() -> dict[str, list[tuple[float, str]]]:
+    """Hand / scan levels for the LVL detector, ticker -> [(price, name)]:
+    data/watchlist/levels.csv (`ticker,level,note`, # comments) and the Adhikary scan's alerts_latest.csv buy-stop rows.
+    The 15-session pivot itself comes from the daily context and needs no file."""
+    out: dict[str, list[tuple[float, str]]] = {}
+    wl = REPO / "data" / "watchlist"
+    p = wl / "levels.csv"
+    if p.exists():
+        for line in p.read_text().splitlines():
+            t = line.split("#", 1)[0].strip()
+            if not t or t.lower().startswith("ticker"):
+                continue
+            parts = [x.strip() for x in t.split(",")]
+            try:
+                out.setdefault(parts[0].upper(), []).append((float(parts[1]), parts[2] if len(parts) > 2 and parts[2] else "hand level"))
+            except (IndexError, ValueError):
+                print(f"  levels.csv: skipped '{line}'")
+    p = wl / "alerts_latest.csv"
+    if p.exists():
+        import csv
+        with p.open() as fh:
+            for r in csv.DictReader(fh):
+                if (r.get("alert") or "").strip() == "buy-stop":
+                    try:
+                        out.setdefault(r["ticker"].strip().upper(), []).append((float(r["level"]), (r.get("kind") or "scan level").strip()))
+                    except (KeyError, ValueError):
+                        pass
+    return out
+
+
+def print_levels(eng) -> None:
+    """Pre-market line: what LVL is watching, precision-tier names first."""
+    rows = []
+    for s in sorted(eng.long_syms):
+        st = eng.state.get(s); c = eng.ctx.get(s)
+        if st is None or c is None or not st.levels:
+            continue
+        prec, why = precision_tier(c)
+        rows.append((not prec, s, f"{s:6s} " + ", ".join(f"{n} {lv:.2f} ({(lv / c.prev_close - 1) * 100:+.1f}%)" for lv, n in st.levels)
+                     + (f"  PRECISION ({why})" if prec else f"  ({why})")))
+    print(f"LVL levels: {len(rows)} names ({sum(1 for r in rows if not r[0])} precision tier)")
+    for _, _, line in sorted(rows):
+        print("  " + line)
 
 
 def print_industries(eng) -> None:
@@ -138,6 +188,9 @@ class Engine:
         self.detectors = [DETECTORS[d] for d in detectors]
         self.named_detectors = [(d, DETECTORS[d]) for d in detectors]
         self.long_syms: set[str] = set(ctx) - (short_syms or set())
+        extra = load_levels()
+        for s_ in self.long_syms:
+            self.state[s_].levels = symbol_levels(ctx[s_], extra.get(s_))
         self.sound = sound
         self.index_gate = index_gate
         self.idx = IndexState()
@@ -174,7 +227,7 @@ class Engine:
         for name, det in self.named_detectors:
             if name == "bir" and not is_short_name:
                 continue
-            if name in ("ur", "orb9") and is_short_name and sym not in self.long_syms:
+            if name in ("ur", "orb9", "lvl") and is_short_name and sym not in self.long_syms:
                 continue
             a = det(book, ctx, st, b, self.idx)
             if a is not None:
@@ -205,6 +258,10 @@ class Engine:
         ds = getattr(c, "day_state", "") if c is not None else ""
         a.fields["day_state"], a.fields["day_reason"] = ds, getattr(c, "day_reason", "")
         want = "SHORT" if a.kind in SHORT_KINDS else "LONG"
+        if a.kind == "LVL" and ds == "OUT" and a.fields["day_reason"].startswith("no room"):
+            # the daily gate says "no room to the prior high"; a close through that high is the resolution, not a chase
+            a.fields["day_state_raw"], ds = ds, "LONG"
+            a.msg += " | day OUT (no room) -> LONG: the break resolves it"
         if self.day_gate and ds and ds != want:
             gated = True
             a.fields["out_of_play"] = True
@@ -218,7 +275,12 @@ class Engine:
             a.msg += f" | still GREEN on the day vs prior close {c.prev_close:.2f}: not cracked yet"
         if ds:
             a.msg += f" | day {ds}{' (OUT OF PLAY for this side)' if ds != want else ''}: {a.fields['day_reason']}"
-        g = grade_alert(a.kind, a.t.hour * 60 + a.t.minute, ds or None)
+        gsym, gside = resolve(a.symbol, "short" if a.kind in SHORT_KINDS else "long")
+        gds = ds
+        if gsym != a.symbol:                          # leveraged / inverse ETF: grade on the tracked index
+            k2 = self.idx.ref_ctx.get(gsym) or self.ctx.get(gsym)
+            gds = getattr(k2, "day_state", "") if k2 is not None else ds
+        g = setup_grade(gside, a.kind, a.t.hour * 60 + a.t.minute, gds or None)
         if a.fields.get("green_day_short"):
             g = Grade("F", "extended-up short still green on the day", g.components)
         a.fields.update(grade=g.grade, grade_why=g.why, rubric=RUBRIC_VERSION)
@@ -238,9 +300,8 @@ class Engine:
         print(("" if gated else "\a") + headline(a, gated), flush=True)
         with self.log.open("a") as fh:
             fh.write(line + "\n")
-        if not gated:
-            if self.sound:
-                _sound()
+        if self.sound:                            # A/B: loud chime; C (dimmed): soft chime; F never reaches here
+            _sound("loud" if not gated else "soft")
         if self.publisher is not None:
             self.publisher.add(a)
 
@@ -270,6 +331,7 @@ async def run_live(args) -> int:
     eng.idx.prev_close = {s: ctx[s].prev_close for s in INDEX_SYMBOLS if s in ctx}
     eng.idx.ref_ctx = {s: ctx[s] for s in set(INDEX_SYMBOLS) | etfs if s in ctx}
     print_industries(eng)
+    print_levels(eng)
     print(f"[{datetime.now():%H:%M:%S}] streaming {len(ctx)} names + SPY/QQQ | detectors {args.detectors} | log {eng.log}"
           f"{' | publishing to the journal site' if pub else ''}{' | UR index-gated' if args.index_gate else ''}{' | sound on' if args.sound else ''}")
     print("  " + " ".join(sorted(ctx)))
@@ -340,9 +402,13 @@ async def run_replay(args) -> int:
                  index_gate=args.index_gate, short_syms=set(syms), day_gate=not args.no_day_gate, tag=args.tag)
     short_manual = _read_list(REPO / "data" / "watchlist" / "universe_short.txt")
     eng.long_syms = set(syms) - short_manual
+    _extra = load_levels()
+    for s_ in eng.long_syms:
+        eng.state[s_].levels = symbol_levels(ctx[s_], _extra.get(s_))
     eng.idx.prev_close = idx_prev
     eng.idx.ref_ctx = ref_ctx
     print_industries(eng)
+    print_levels(eng)
     async with TradierClient(api_key=os.environ["TRADIER_API_KEY"]) as client:
         for isym in list(INDEX_SYMBOLS) + sorted(ref_only):
             im = await get_intraday_bars(isym, session, interval="1min", client=client)
@@ -382,14 +448,14 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("symbols", nargs="*", help="explicit symbols (live: overrides the universe)")
     ap.add_argument("--replay", metavar="YYYY-MM-DD", help="replay a past session from Tradier 1-min bars")
-    ap.add_argument("--detectors", default="ur,orb9,bir,fbo,para", help="comma list of ur,orb9 (long) and bir,fbo,para (short)")
+    ap.add_argument("--detectors", default="ur,orb9,lvl,bir,fbo,para", help="comma list of ur,orb9,lvl (long) and bir,fbo,para (short)")
     ap.add_argument("--tag", default="", help="replay: write logs as universe_alerts_<date>_replay_<tag>*.log (keeps the study's replay logs intact)")
     ap.add_argument("--no-rebuild", action="store_true", help="use universe_latest.txt as-is")
     ap.add_argument("--full", action="store_true", help="preferred-list union instead of universe_focus.txt")
     ap.add_argument("--no-dialog", action="store_true", help=argparse.SUPPRESS)   # deprecated no-op: macOS pop-ups removed 2026-09-10
     ap.add_argument("--no-publish", action="store_true", help="live: don't write the journal-site JSON / S3")
     ap.add_argument("--heartbeat", type=int, default=5, help="minutes between heartbeat lines (live)")
-    ap.add_argument("--sound", action="store_true", help="play the chime on each (ungated) alert")
+    ap.add_argument("--sound", action="store_true", help="chime on every shown alert: loud (Glass) for grade A/B, soft (Tink) for dimmed grade C")
     ap.add_argument("--index-gate", action="store_true", help="no-op since rubric v1 (2026-09-10): the setup grade in lib/alerts/grading.py decides loud / dimmed / out of play")
     ap.add_argument("--publish", action="store_true", help="replay: also publish the replayed alerts")
     ap.add_argument("--no-day-gate", action="store_true", help="don't dim alerts against the daily in-play direction")
