@@ -19,7 +19,7 @@ import asyncio
 import math
 import os
 import sys
-from datetime import date
+from datetime import timedelta, date
 from pathlib import Path
 from typing import Optional
 
@@ -320,12 +320,14 @@ STRATEGIES: list[dict] = [
         "dc_gap_max":    9,
         "profit_take":   0.50,
         "fwd_vol_warn":  None,
-        "note":          "BearishHI: 0.25P/0.10C hold to expiry; BullishLO: 0.25P/0.25C 50%PT; run alongside put spread at 1.5% each",
+        "note":          "rev 2026-09-15 (calendar path study): symmetric 0.35P/0.35C in BOTH traded regimes, HOLD to the short expiry "
+                         "(Bear_HiVIX sym35 +25.6% / 69% win vs the old 0.35P/0.10C +8.8%; Bull_LoVIX the 50% take cost ~2pp vs hold); "
+                         "run alongside the put spread at 1.5% each",
         "regime_strategies": {
-            "Bearish_HighIV": {"put_d": 0.25, "call_d": 0.10, "exit": "hold"},
+            "Bearish_HighIV": {"put_d": 0.35, "call_d": 0.35, "exit": "hold"},
             "Bearish_LowIV":  {"exit": "skip"},
-            "Bullish_HighIV": {"exit": "skip"},
-            "Bullish_LowIV":  {"put_d": 0.25, "call_d": 0.25, "exit": "50pct_take"},
+            "Bullish_HighIV": {"exit": "skip"},      # path study: sym35 +18% here too (halves +28 / -5) -- not enabled yet, unstable
+            "Bullish_LowIV":  {"put_d": 0.35, "call_d": 0.35, "exit": "hold"},
         },
     },
     {
@@ -353,53 +355,47 @@ STRATEGIES: list[dict] = [
         "note":          "PROVISIONAL; E&P upstream oil/gas; 60 DTE; +5.44% ROC 81.5% win; All VIX",
     },
     # ── Calendar strategies ───────────────────────────────────────────────────
+    # RETIRED 2026-09-15 (calendar path study, data/studies/calendar_path_study.md, 5,920 real-bid/ask calendars):
+    #   GLD / XLU / XLV / XLP put calendars -- entry bid-ask 18-470% of the debit; hold-to-expiry ROC after costs
+    #   GLD -3%, XLV -16/-25%, XLF -22/-24%, XLP -28/-40%, TLT -15% (XLU/XLE: single-digit trade counts). The Sept
+    #   review had already found them net-negative on the cost model; the paths confirm it. Kept: the liquid index ETFs.
+    # 2026-09-15 (calendar path study, double-calendar step): the IWM single put calendar was replaced by the symmetric
+    # 0.35-delta DOUBLE calendar (+25.6% ROC held, 64% win, both halves) and QQQ was added (+19.4%, both halves).
     {
-        "type":          "calendar",
-        "name":          "GLD Put Calendar",
-        "alloc_key":     "GLD calendar",
-        "ticker":        "GLD",
-        "min_gap":       25,
-        "max_gap":       50,
-        "min_iv_ratio":  1.0,
-        "profit_take":   0.25,
-        "fwd_vol_warn":  1.10,   # avg≈0.95; >1.10 = unfavorable for calendar
-        "note":          "backwardation only (iv_ratio ≥ 1.00); ~68% of Fridays eligible",
+        "type":          "double_calendar",
+        "name":          "IWM Double Calendar",
+        "alloc_key":     "IWM double cal",
+        "ticker":        "IWM",
+        "dte_target":    20,      # short ~20 DTE / long the next weekly (path study: 20/27d beat 12/19d on every name)
+        "dc_gap_min":    5,
+        "dc_gap_max":    9,
+        "profit_take":   None,
+        "fwd_vol_warn":  None,
+        "note":          "sym 0.35d double, hold: +25.6% ROC 20/27d (n=335, 64% win, halves +23/+28), +15.4% 12/19d; every exit rule worse than hold; Bear_LoVIX is the weak cell, Bull_LoVIX was negative pre-2022",
+        "regime_strategies": {   # symmetric 0.35 delta in every regime, HOLD to the short expiry (calendar path study 2026-09-15)
+            "Bearish_HighIV": {"put_d": 0.35, "call_d": 0.35, "exit": "hold"},
+            "Bearish_LowIV":  {"put_d": 0.35, "call_d": 0.35, "exit": "hold"},
+            "Bullish_HighIV": {"put_d": 0.35, "call_d": 0.35, "exit": "hold"},
+            "Bullish_LowIV":  {"put_d": 0.35, "call_d": 0.35, "exit": "hold"},
+        },
     },
     {
-        "type":          "calendar",
-        "name":          "XLU Put Calendar",
-        "alloc_key":     "XLU calendar",
-        "ticker":        "XLU",
-        "min_gap":       25,
-        "max_gap":       50,
-        "min_iv_ratio":  1.0,
-        "profit_take":   0.25,
-        "fwd_vol_warn":  1.00,   # avg=0.80; any >1.0 = unfavorable; ≤0.90 is optimal
-        "note":          "structurally in backwardation; enter every eligible Friday",
-    },
-    {
-        "type":          "calendar",
-        "name":          "XLV Put Calendar",
-        "alloc_key":     "XLV calendar",
-        "ticker":        "XLV",
-        "min_gap":       25,
-        "max_gap":       50,
-        "min_iv_ratio":  1.0,
-        "profit_take":   0.25,
-        "fwd_vol_warn":  1.00,   # avg=0.79; FVF≤0.90 = ~8 entries/yr; Tier A priority=286
-        "note":          "FVF≤0.90 gate; 87.1% win +49.0% ROC; correlated w/XLU+XLP on FOMC weeks; IBKR Pro + ≥5 cts",
-    },
-    {
-        "type":          "calendar",
-        "name":          "XLP Put Calendar",
-        "alloc_key":     "XLP calendar",
-        "ticker":        "XLP",
-        "min_gap":       25,
-        "max_gap":       50,
-        "min_iv_ratio":  1.0,
-        "profit_take":   0.25,
-        "fwd_vol_warn":  1.00,   # avg=0.81; FVF≤0.90 = ~10 entries/yr; Tier A priority=239
-        "note":          "FVF≤0.90 gate; 82.1% win +54.7% ROC; correlated w/XLU+XLV on FOMC weeks; IBKR Pro + ≥5 cts",
+        "type":          "double_calendar",
+        "name":          "QQQ Double Calendar",
+        "alloc_key":     "QQQ double cal",
+        "ticker":        "QQQ",
+        "dte_target":    20,      # short ~20 DTE / long the next weekly (path study: 20/27d beat 12/19d on every name)
+        "dc_gap_min":    5,
+        "dc_gap_max":    9,
+        "profit_take":   None,
+        "fwd_vol_warn":  None,
+        "note":          "sym 0.35d double, hold: +19.4% ROC 20/27d (n=326, 59% win, halves +11/+28), +14.3% 12/19d; same management; runs alongside the QQQ put spread at reduced size",
+        "regime_strategies": {   # symmetric 0.35 delta in every regime, HOLD to the short expiry (calendar path study 2026-09-15)
+            "Bearish_HighIV": {"put_d": 0.35, "call_d": 0.35, "exit": "hold"},
+            "Bearish_LowIV":  {"put_d": 0.35, "call_d": 0.35, "exit": "hold"},
+            "Bullish_HighIV": {"put_d": 0.35, "call_d": 0.35, "exit": "hold"},
+            "Bullish_LowIV":  {"put_d": 0.35, "call_d": 0.35, "exit": "hold"},
+        },
     },
 ]
 
@@ -428,10 +424,8 @@ TIER_MAP: dict[str, str] = {
     "CLS Bull Put Spread":      "P",
     "UUP ATM Short Straddle":   "C",
     "XOP Bull Put Spread":      "P",
-    "GLD Put Calendar":         "C",
-    "XLU Put Calendar":         "A",
-    "XLV Put Calendar":         "A",
-    "XLP Put Calendar":         "A",
+    "IWM Double Calendar":      "B",   # path study 2026-09-15 (sym 0.35d, hold); GLD/XLU/XLV/XLP calendars retired the same day
+    "QQQ Double Calendar":      "B",
 }
 
 # For regime strategies, tier depends on which regime fires
@@ -641,6 +635,36 @@ def fmt_fwd_vol(factor: Optional[float], warn_threshold: float) -> str:
 
 
 # ── MA50 helper for regime classification ────────────────────────────────────
+
+async def refresh_stock_cache(client: TradierClient, ticker: str, today: date) -> None:
+    """Bring data/cache/<T>_stock.parquet up to date from Tradier daily history (2026-09-15: QQQ/SPY/XLE caches had
+    stopped in March, so every 50MA regime call and RV20 on them was computed on six-month-old closes)."""
+    from lib.tradier.get_daily_history import get_daily_history
+    path = Path("data") / "cache" / f"{ticker}_stock.parquet"
+    try:
+        df = pd.read_parquet(path) if path.exists() else pd.DataFrame(columns=["trade_date", "close"])
+        last = pd.to_datetime(df["trade_date"]).max().date() if len(df) else today - timedelta(days=400)
+        if last >= today - timedelta(days=1):
+            return
+        d = await get_daily_history(ticker, last - timedelta(days=3), today, client=client)
+        if d is None or not len(d):
+            return
+        d = d.reset_index() if "date" not in d.columns else d
+        d = d.rename(columns={"index": "date"})
+        new = pd.DataFrame({"trade_date": pd.to_datetime(d["date"]).dt.date})
+        for col in ("open", "high", "low", "close", "volume"):
+            if col in df.columns and col in d.columns:
+                new[col] = d[col].values
+        if "close" not in new.columns:
+            new["close"] = d["close"].values
+        df["trade_date"] = pd.to_datetime(df["trade_date"]).dt.date
+        out = pd.concat([df, new[[c for c in new.columns if c in df.columns or c in ("trade_date", "close")]]], ignore_index=True)
+        out = out.drop_duplicates("trade_date", keep="last").sort_values("trade_date")
+        out.to_parquet(path, index=False)
+        print(f"  (stock cache {ticker}: {last} -> {out.trade_date.max()})")
+    except Exception as exc:  # noqa: BLE001 -- a stale cache is better than a crash; the MA line shows the date
+        print(f"  (stock cache {ticker}: refresh failed: {type(exc).__name__})")
+
 
 def get_ma50(ticker: str) -> Optional[float]:
     """Load 50-day simple MA from cached stock parquet. Returns None on any failure."""
@@ -1305,10 +1329,13 @@ def screen_calendar(
         f"  iv_ratio:    {iv_ratio:.3f}"
         f"  ({'✓ backwardation' if iv_ratio >= min_iv_ratio else '✗ contango — skip'})"
     )
-    lines.append(
-        f"  Take profit: close when spread ≥ ${net_debit * (1 + profit_take):.2f}/share"
-        f"  (+{int(profit_take * 100)}% ROC)"
-    )
+    if profit_take is None:
+        lines.append("  Exit:        HOLD to the short expiry (path study 2026-09-15: every exit rule tested lost to holding)")
+    else:
+        lines.append(
+            f"  Take profit: close when spread ≥ ${net_debit * (1 + profit_take):.2f}/share"
+            f"  (+{int(profit_take * 100)}% ROC)"
+        )
 
     # Gate checks
     if sp is None or sp > MAX_SPREAD_PCT:
@@ -1776,8 +1803,10 @@ async def run(today: date, capital: Optional[float] = None, risk_pct: float = 0.
             print("ERROR: Could not fetch VIX. Markets may be closed.", file=sys.stderr)
             sys.exit(1)
 
-        # MA50 for regime-switching strategies (loaded from cached parquet)
+        # MA50 for regime-switching strategies (cached parquet, refreshed from Tradier first -- it had gone stale)
         ma50_for: dict[str, Optional[float]] = {}
+        for t in sorted({strat["ticker"] for strat in STRATEGIES}):
+            await refresh_stock_cache(client, t, today)
         for strat in regime_strats + double_cal_strats:
             t = strat["ticker"]
             if t not in ma50_for:
@@ -1839,7 +1868,7 @@ async def run(today: date, capital: Optional[float] = None, risk_pct: float = 0.
             if strat_type == "calendar":
                 header_detail = (
                     f"0.50Δ  {strat_dte}DTE short / {strat['min_gap']}–{strat['max_gap']}d gap"
-                    f"  iv_ratio≥{strat['min_iv_ratio']:.2f}  {int(profit_take * 100)}% take"
+                    f"  iv_ratio≥{strat['min_iv_ratio']:.2f}  {'HOLD to short expiry' if profit_take is None else f'{int(profit_take * 100)}% take'}"
                 )
             elif strat_type == "double_calendar":
                 header_detail = (

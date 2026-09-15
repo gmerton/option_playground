@@ -271,3 +271,57 @@ regardless of the index, which restates the earlier finding that ORB9's return i
 the group-aware gate live (a loosening the data does not contradict, and it restores the leaders on divergence days
 such as CRWD 9/14), keep every ORB9 tagged, and re-cut this table when the second half has more sessions. Do not
 promote "SPY below + group leading" to a grade cell.
+
+
+### UR on VWAP chop (2026-09-15, `run_ur_chop_study.py`, 7,651 UR alerts, curated + control)
+
+Prompted by HOOD / IREN 09:47 on 9/15: HOOD's "reclaim" was about the 6th crossing of a flat VWAP since 09:35; IREN
+had held VWAP since 09:32 and fired after a 4-cent graze. Features from the cached bars at the alert: reclaim margin
+over VWAP (ADR), deepest close under VWAP in the prior 10 bars (ADR), consecutive bars under VWAP before the reclaim,
+VWAP crossings in the prior 15 bars.
+
+| UR cohort | n | R | win | stop |
+|---|---|---|---|---|
+| dip shallower than 0.03 ADR (a graze) | 628 | −0.08 | 41% | 39% |
+| dip 0.03–0.1 ADR | 2,692 | +0.03 | 42% | 40% |
+| dip 0.1–0.25 ADR | 2,998 | +0.06 | 43% | 42% |
+| dip deeper than 0.5 ADR | 31 | +0.34 | 68% | 26% |
+| 0–1 VWAP crossings in 15 bars | 3,190 | +0.03 | 45% | 35% |
+| 5–6 crossings | 794 | +0.03 | 40% | 47% |
+| 7+ crossings | 156 | +0.14 | 44% | 46% |
+| reclaim margin > 0.2 ADR (already ran) | 172 | −0.14 | 40% | 37% |
+| CHOP = 5+ crossings or graze | 4,458 | +0.02 | 42% | 40% |
+| not chop | 3,193 | +0.05 | 44% | 41% |
+
+Nothing separates on all four splits; the graze cell is mildly negative (3 of 4 splits) and the deep-flush cell is
+the only clearly good one but has 31 alerts. The chop shape is not a losing shape, it is the same ~0R coin flip as
+the rest of UR. Decision: no gate. The alert now carries a "VWAP CHOP (n crossings, dip x ADR)" tag so the reader
+can see a non-decisive reclaim at a glance; the deep-flush count keeps accruing.
+
+
+### FLAT day state, the 9-EMA hold as a tag, and "name leads a weak group" (2026-09-15 evening re-replay, 153 sessions)
+
+Prompted by ILMN 9/15 (+6.8% on a −2.3% XBI day, no alert): day-SHORT off −0.1 ADR under flat EMAs; ORB9's 9-EMA hold
+disqualified the 10:45 break by $0.30; and with both fixed the group-aware index gate still held (SPY and XBI under VWAP).
+Re-replayed with FLAT (within 0.3 ADR of both EMAs → either side), the 9-EMA hold demoted to a tag, ORB9 carrying RS
+tags, and the daily-setup text. 22,403 scored alerts.
+
+| cohort | n | R | win | curA | curB | ctlA | ctlB |
+|---|---|---|---|---|---|---|---|
+| ALL long alerts on FLAT names | 942 | **+0.20** | 44% | +0.54 | +0.14 | +0.45 | −0.19 |
+| long alerts on LONG names | 2,211 | −0.01 | 38% | +0.04 | +0.03 | −0.07 | −0.14 |
+| ORB9 on FLAT names | 160 | +0.81 | 29% | +3.01 | +0.39 | +2.62 | −0.87 |
+| short alerts on FLAT names | 632 | −0.07 | 44% | | | | |
+| ORB9, 9 EMA held | 1,236 | +0.50 | 24% | +0.98 | +0.35 | −0.40 | −0.16 |
+| ORB9, 9 EMA NOT held (previously never fired) | 659 | +0.09 | 27% | +0.07 | −0.05 | +0.20 | +0.48 |
+| ORB9, SPY < VWAP, group NOT leading, NAME leads its group ≥ +1.5% (the ILMN case) | 82 | −0.08 | 24% | +0.04 | −0.25 | n/a | n/a |
+| ORB9, SPY < VWAP, group leading | 235 | +0.32 | 26% | | | | |
+
+Readings: (1) **FLAT is the best long day-state cell** (3 of 4 splits positive; the old LONG cell is ~0) -- names sitting on
+their EMAs were being assigned a side by a coin flip and half of them hidden; keep FLAT, shorts on FLAT names stay C.
+(2) **The 9-EMA hold had merit on the curated names (held +0.98/+0.35 vs not-held +0.07/−0.05) and is inverted on the
+control set (−0.40/−0.16 vs +0.20/+0.48)** -- not a robust gate either way; it stays a tag and the not-held breaks
+stay visible with the tag. (3) **"Name leads a weak group" does NOT earn the group-leading exemption** (−0.08R, n=82,
+both curated halves ≤ +0.04): ILMN-type breaks stay gated; the exemption remains for a LEADING group only.
+(4) The daily-setup text is on every alert from here; it separated nothing on same-day R (pb50 +0.10 vs +0.09) and
+the ILMN-style swing trigger is +0.6pp/10s on the panel with flipping year signs -- context, not a gate.

@@ -1,3 +1,8 @@
+> **Revision 2026-09-15 (calendar path study, `calendar_path_study.md`):** both traded regimes now use the SYMMETRIC
+> 0.35P / 0.35C structure and HOLD to the short expiry. On real bid/ask 2018–2026 the Bear_HiVIX asymmetric 0.35P/0.10C
+> made +8.8% (12/19d) vs +25.6% for 0.35/0.35 (69% win, both halves); in Bull_LoVIX the 50% take cost ~2pp against hold.
+> The 20/27-day version scored higher still (+12.5% vs +7.5% on SPY) but the 12-DTE short leg is kept for now.
+
 # SPY Double Calendar Spread — Trading Playbook
 
 **Last updated:** 2026-06-26

@@ -17,7 +17,6 @@ Writes data/watchlist/premarket_industries_<date>.csv. start_alerts.sh runs it b
 """
 from __future__ import annotations
 import argparse, asyncio, os, sys
-from concurrent.futures import ThreadPoolExecutor
 from datetime import date, datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -59,18 +58,43 @@ def etf_for_group() -> dict[str, str]:
     return m
 
 
-def premarket_price(sym: str) -> tuple[float | None, str]:
-    """(price, source): yfinance pre-market print if there is one, else the last regular print."""
-    try:
-        import yfinance as yf
-        fi = yf.Ticker(sym).fast_info
-        pm = fi.get("preMarketPrice") if hasattr(fi, "get") else getattr(fi, "pre_market_price", None)
-        if pm:
-            return float(pm), "pre"
-        last = fi.get("lastPrice") if hasattr(fi, "get") else getattr(fi, "last_price", None)
-        return (float(last), "last") if last else (None, "none")
-    except Exception:  # noqa: BLE001
-        return None, "none"
+async def premarket_prices(symbols: list[str]) -> dict[str, tuple[float | None, str]]:
+    """{sym: (price, source)}. Tradier's quote carries no pre-market LAST, but its bid/ask are live in the
+    pre-market (bid_date = now), so the mid is the price -- one batched call for everything. Missing ones fall
+    back to yfinance 1-min bars with extended hours (the fast_info preMarketPrice field is empty, 9/15/2026)."""
+    import time as _time
+    from lib.tradier.tradier_client_wrapper import TradierClient
+    out: dict[str, tuple[float | None, str]] = {}
+    now_ms = _time.time() * 1000
+    async with TradierClient(api_key=os.environ["TRADIER_API_KEY"]) as t:
+        for i in range(0, len(symbols), 50):
+            chunk = symbols[i:i + 50]
+            try:
+                q = (await t.get_json("/markets/quotes", params={"symbols": ",".join(chunk), "greeks": "false"}))["quotes"].get("quote", [])
+            except Exception:  # noqa: BLE001
+                q = []
+            if isinstance(q, dict): q = [q]
+            for x in q:
+                bid, ask, bd = x.get("bid") or 0, x.get("ask") or 0, x.get("bid_date") or 0
+                fresh = bd and (now_ms - bd) < 30 * 60 * 1000          # a quote refreshed in the last 30 minutes
+                if bid > 0 and ask > 0 and fresh and (ask / bid - 1) < 0.03:
+                    out[x["symbol"]] = ((bid + ask) / 2, "pre-mid")
+    missing = [s for s in symbols if s not in out]
+    if missing:
+        try:
+            import yfinance as yf
+            d = yf.download(missing, period="1d", interval="1m", prepost=True, progress=False, auto_adjust=True, group_by="ticker", threads=True)
+            for s in missing:
+                try:
+                    x = (d[s] if len(missing) > 1 else d).dropna(subset=["Close"])
+                    if len(x): out[s] = (float(x.Close.iloc[-1]), "pre-bar")
+                except Exception:  # noqa: BLE001
+                    pass
+        except Exception:  # noqa: BLE001
+            pass
+    for s in symbols:
+        out.setdefault(s, (None, "none"))
+    return out
 
 
 async def daily(symbols: list[str], session: date):
@@ -100,8 +124,7 @@ def main() -> int:
     members = {} if a.no_members else {g: [t for t, gg in gmap.items() if gg == g] for g in set(gmap.values())}
     syms = [e for e, _ in etfs] + [t for ts in members.values() for t in ts]
     ctx, rets = asyncio.run(daily(sorted(set(syms)), session))
-    with ThreadPoolExecutor(8) as ex:
-        px = dict(zip(syms, ex.map(premarket_price, syms)))
+    px = asyncio.run(premarket_prices(sorted(set(syms))))
     def move(s):
         c = ctx.get(s); p, src = px.get(s, (None, "none"))
         if c is None or p is None or not c.prev_close or not c.adr_pct:
@@ -125,8 +148,8 @@ def main() -> int:
                          members=n, up=up, down=dn, mem_avg=avg, hot=hot))
     df = pd.DataFrame(rows); df["absadr"] = df.gap_adr.abs(); df = df.sort_values("absadr", ascending=False).drop(columns="absadr")
     src = df.src.value_counts().to_dict()
-    print(f"PRE-MARKET INDUSTRIES  {session}  {now:%H:%M} ET  | price source: {src}  (pre = pre-market print; last = last regular print, i.e. NO pre-market data yet)")
-    print(f"HOT = ETF >= {HOT_ADR:.0f} ADR from the prior close, or >= {int(100*MEMBERS_FRAC)}% of >= {MEMBERS_MIN} tracked members moving >= {MEMBER_ADR} ADR the same way")
+    print(f"PRE-MARKET INDUSTRIES  {session}  {now:%H:%M} ET  | price source: {src}  (pre-mid = live Tradier bid/ask mid; pre-bar = yfinance extended-hours bar; none = no quote)")
+    print(f"HOT = ETF >= {HOT_ADR:.1f} ADR from the prior close, or >= {int(100*MEMBERS_FRAC)}% of >= {MEMBERS_MIN} tracked members moving >= {MEMBER_ADR} ADR the same way")
     pd.set_option("display.width", 220)
     show = df.copy()
     for col in ("gap_pct", "ret1d", "ret5d", "mem_avg"): show[col] = show[col].map(lambda v: "" if v is None or pd.isna(v) else f"{v:+.1f}%")

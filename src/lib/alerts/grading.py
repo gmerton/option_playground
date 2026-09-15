@@ -87,7 +87,7 @@ def setup_grade(side: str, kind: str | None, minute: int, day_state: str | None,
     side = side.lower()
     want = "LONG" if side == "long" else "SHORT"
     ds = day_state or "?"
-    day_ok = ds == want
+    day_ok = ds == want or ds == "FLAT"          # FLAT (on both EMAs, 2026-09-15): either side is in play
     comp = [("day", ds, want, "pass" if day_ok else "fail")]
     if side == "long":
         opening, afternoon = minute <= LONG_OPEN_UNTIL, minute >= LONG_NOON

@@ -44,3 +44,4 @@ data/carter_mastering_the_trade/backtests/opening_gap/gap_trades.csv
 # deployed to CloudFront via deploy_trade_journal.sh, not meant to live in git.
 # journal_trade_reviews (MySQL) is the source of truth; this is a rebuildable artifact.
 data/journal/
+data/cache/calendar_path/

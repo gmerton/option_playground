@@ -308,3 +308,15 @@ PROVISIONAL (fund last, half size):
 
 *Framework written: 2026-03-22*
 *Based on all active playbooks as of this date.*
+
+
+> **2026-09-15 — calendar roster pruned on the path study (`calendar_path_study.md`).** GLD / XLU / XLV / XLP put
+> calendars are RETIRED from the Friday screener: on real daily bid/ask with the house cost model they lose 3–40% of
+> the debit held to expiry (thin markets). **Added: IWM put calendar, Tier B** (ATM, short ~20 DTE / next weekly long,
+> HOLD to the short expiry, no stop, no re-centre, no term-structure gate): +9% / +14% ROC held, ~45% win, second-half
+> driven. SPY (+4/+7%) and QQQ (+6%) single calendars are positive too but SPY is already covered by the double calendar.
+
+> **2026-09-15, later:** the IWM entry became a symmetric 0.35Δ DOUBLE calendar (20/27d, hold: +25.6% ROC, 64% win),
+> a QQQ symmetric double calendar was added (Tier B, +19.4%), and the SPY double calendar switched to 0.35/0.35 hold in
+> both of its traded regimes. All from the double-calendar step of `calendar_path_study.md`.
+> Playbook for the double calendars (IWM / QQQ / SPY / mega-cap stocks): `double_calendar_playbook.md`.

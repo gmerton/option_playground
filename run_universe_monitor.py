@@ -188,12 +188,12 @@ def print_industries(eng) -> None:
 
 def print_day_states(ctx: dict) -> None:
     """Pre-market table: which direction each universe name is in play for today (daily chart, prior close)."""
-    by: dict[str, list[str]] = {"LONG": [], "SHORT": [], "OUT": []}
+    by: dict[str, list[str]] = {"LONG": [], "SHORT": [], "FLAT": [], "OUT": []}
     for s, c in sorted(ctx.items()):
         if s in INDEX_SYMBOLS: continue
         by.setdefault(getattr(c, "day_state", "OUT") or "OUT", []).append(s)
-    print(f"daily in-play: LONG {len(by['LONG'])} | SHORT {len(by['SHORT'])} | OUT {len(by['OUT'])}")
-    for k in ("LONG", "SHORT", "OUT"):
+    print(f"daily in-play: LONG {len(by['LONG'])} | SHORT {len(by['SHORT'])} | FLAT {len(by['FLAT'])} | OUT {len(by['OUT'])}")
+    for k in ("LONG", "SHORT", "FLAT", "OUT"):
         print(f"  {k:5s} " + " ".join(by.get(k, [])))
     for s, c in sorted(ctx.items()):
         if s not in INDEX_SYMBOLS and getattr(c, "day_state", "") == "SHORT":
@@ -333,6 +333,9 @@ class Engine:
         if getattr(c, "day_state_prior", ""):
             a.fields["day_state_prior"] = c.day_state_prior
         want = "SHORT" if a.kind in SHORT_KINDS else "LONG"
+        flat = ds == "FLAT"                       # on both EMAs: either side is in play (the log keeps the word FLAT)
+        if flat:
+            a.fields["day_state_flat"] = True; ds = want
         if a.kind == "LVL" and ds == "OUT" and "no room" in a.fields["day_reason"]:
             # the daily gate says "no room to the prior high"; a close through that high is the resolution, not a chase
             a.fields["day_state_raw"], ds = ds, "LONG"
@@ -349,7 +352,15 @@ class Engine:
             a.fields["green_day_short"] = True
             a.msg += f" | still GREEN on the day vs prior close {c.prev_close:.2f}: not cracked yet"
         if ds:
-            a.msg += f" | day {ds}{' (OUT OF PLAY for this side)' if ds != want else ''}: {a.fields['day_reason']}"
+            a.msg += f" | day {'FLAT' if flat else ds}{' (OUT OF PLAY for this side)' if ds != want else ''}: {a.fields['day_reason']}"
+        # daily setup, context only (2026-09-15 ILMN: pullback to the rising 50, RS leader, and no alert said so)
+        if c is not None:
+            spy_ctx = self.idx.ref_ctx.get("SPY") or self.ctx.get("SPY")
+            rs20 = getattr(c, "ret20_pct", 0.0) - getattr(spy_ctx, "ret20_pct", 0.0) if spy_ctx is not None else None
+            parts = [x for x in (getattr(c, "setup", "") or "").split("; ") if x]
+            if rs20 is not None: parts.append(f"RS20 vs SPY {rs20:+.1f}pp")
+            a.fields.update(setup=getattr(c, "setup", ""), rs20_spy=None if rs20 is None else round(rs20, 2), contr10_20=getattr(c, "contr10_20", None), pct_vs_sma50=getattr(c, "pct_vs_sma50", None))
+            if parts: a.msg += " | daily: " + ", ".join(parts)
         gsym, gside = resolve(a.symbol, "short" if a.kind in SHORT_KINDS else "long")
         gds = ds
         if gsym != a.symbol:                          # leveraged / inverse ETF: grade on the tracked index
@@ -392,7 +403,7 @@ async def run_live(args) -> int:
     etfs = set(load_group_etfs().values()); ref_only = etfs - set(universe) - short_manual
     ctx = await load_context(sorted(set(universe) | short_manual | set(INDEX_SYMBOLS) | etfs), session)
     
-    short_syms = short_manual | {s for s in universe if s in ctx and (ctx[s].bearish or getattr(ctx[s], "day_state", "") == "SHORT")}
+    short_syms = short_manual | {s for s in universe if s in ctx and (ctx[s].bearish or getattr(ctx[s], "day_state", "") in ("SHORT", "FLAT"))}
     print_day_states({k: v for k, v in ctx.items() if k not in ref_only})
     if short_syms:
         print(f"short universe ({len(short_syms)}): manual {len(short_manual)} + bearish-stacked from the long list "

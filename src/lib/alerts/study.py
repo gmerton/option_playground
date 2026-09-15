@@ -58,7 +58,7 @@ def parse_logs(paths: list[Path]) -> pd.DataFrame:
             d, t, s, k, g, px, st = m.groups()
             f = lambda rx: (lambda mm: float(mm.group(1)) if mm else np.nan)(re.search(rx, l))
             lt = re.search(r"\[(MA|PRICE|VWAP|SWING HIGH)\]", l)
-            ds = re.search(r"\| day (LONG|SHORT|OUT)\b", l)
+            ds = re.search(r"\| day (LONG|SHORT|OUT|FLAT)\b", l)
             rows.append(dict(date=d, t=t, sym=s, kind=k, gated=bool(g) or oop, out_of_play=oop, px=float(px), stop=float(st),
                              tags="|".join(x for x in TAGS if x in l), spy=f(r"SPY [<>] VWAP \(([+-][\d.]+)%\)"),
                              rs_spy=f(r"RS vs SPY ([+-][\d.]+)%"), rs_grp=f(r"\| vs \S+ ([+-][\d.]+)%"),
@@ -145,7 +145,7 @@ def enrich(S: pd.DataFrame, day_state: bool = True) -> pd.DataFrame:
             rows += [dict(date=d, sym=s, day_state=c.day_state, day_reason=c.day_reason, ext_close=c.ext21_close_adr,
                           res_gap=c.res_gap_adr) for s, c in ctx.items()]
         S = S.merge(pd.DataFrame(rows), on=["date", "sym"], how="left")
-        S["allowed"] = ((S.side == "long") & (S.day_state == "LONG")) | ((S.side == "short") & (S.day_state == "SHORT"))
+        S["allowed"] = ((S.side == "long") & (S.day_state.isin(["LONG", "FLAT"]))) | ((S.side == "short") & (S.day_state.isin(["SHORT", "FLAT"])))
         S["sub"] = S.day_reason.fillna("").str.extract(
             r"^(exhaustion|trend-down|pullback into|near the rising|near the 21|reclaiming|no room|extended|stretched|[+-]\d|short history)")[0]
     return S

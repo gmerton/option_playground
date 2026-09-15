@@ -39,11 +39,12 @@ PARA_MIN_EXT = 4.0        # parabolic: >= this many ADR over the 21 EMA after >=
 PARA_MIN_UP = 3
 PARA_ALT_EXT, PARA_ALT_UP = 3.0, 5   # ...or >= 3 ADR after >= 5 up closes (a long streak is itself the extreme: CVI 9/10)
 ALLOW_FLUSH_REVERSAL = False   # True = names >1 ADR under the 21 are LONG-eligible for day trades (see study)
+FLAT_ADR = 0.3                 # within this many ADR of BOTH the 9 and 21 EMA = FLAT: eligible either side (ILMN 9/15/2026 was -0.1 ADR and tagged SHORT)
 
 
 @dataclass
 class DayState:
-    state: str = "OUT"            # LONG | SHORT | OUT
+    state: str = "OUT"            # LONG | SHORT | OUT | FLAT (on both EMAs: either side)
     reason: str = ""
     ext21_adr: float = 0.0
     ext9_pct: float = 0.0
@@ -70,7 +71,7 @@ def nearest_swing_high(h: pd.Series, close: float, adr: float) -> float:
 
 
 def _decide(ext21: float, rising: bool, below9: bool, below21: bool, up: int, res: float, gap: float,
-            ext9_pct: float) -> DayState:
+            ext9_pct: float, adr: float = 0.0) -> DayState:
     """The decision ladder, shared by classify (prior close) and reclassify_open (today's open as a provisional close)."""
     s = DayState(ext21_adr=round(ext21, 2), ext9_pct=round(ext9_pct, 2), ema21_rising=rising,
                  res_level=round(res, 2), res_gap_adr=round(gap, 2), up_days=up)
@@ -81,6 +82,11 @@ def _decide(ext21: float, rising: bool, below9: bool, below21: bool, up: int, re
     # parabolic (Qullamaggie): a vertical multi-day run, no resistance needed -- short the crack, never the strength
     if up >= PARA_MIN_UP and (ext21 >= PARA_MIN_EXT or (ext21 >= PARA_ALT_EXT and up >= PARA_ALT_UP)):
         s.state, s.reason = "SHORT", f"parabolic: +{ext21:.1f} ADR over the 21 EMA after {up} up days"
+        return s
+    ext9_adr = (ext9_pct / adr) if adr else 99.0
+    if abs(ext21) <= FLAT_ADR and abs(ext9_adr) <= FLAT_ADR:
+        # sitting on both EMAs: a coin flip dressed as a state. Eligible either side; the daily-setup text says the rest.
+        s.state, s.reason = "FLAT", f"on the 9/21 EMAs ({ext21:+.1f} ADR from the 21, {ext9_adr:+.1f} from the 9): either side"
         return s
     if below9 and below21 and not rising:
         if ext21 >= SHORT_MIN_EXT:
@@ -128,7 +134,7 @@ def classify(hist: pd.DataFrame) -> DayState:
         up += 1
     res = nearest_swing_high(h, close, adr)
     gap = (res / close - 1) * 100 / adr if res else 99.0
-    s = _decide(ext21, rising, close < ema9, close < ema21, up, res, gap, (close / ema9 - 1) * 100)
+    s = _decide(ext21, rising, close < ema9, close < ema21, up, res, gap, (close / ema9 - 1) * 100, adr)
     s.ema21_slope5_pct = round((ema21 / float(e21.iloc[-1 - SLOPE_DAYS]) - 1) * 100, 3)
     return s
 
@@ -154,6 +160,6 @@ def reclassify_open(ctx, open_px: float) -> DayState:
     up = (ctx.up_days + 1) if open_px > ctx.prev_close else 0
     res = ctx.res_level or 0.0
     gap = (res / open_px - 1) * 100 / adr if res else 99.0
-    s = _decide(ext21, rising, open_px < e9n, open_px < e21n, up, res, gap, (open_px / e9n - 1) * 100)
+    s = _decide(ext21, rising, open_px < e9n, open_px < e21n, up, res, gap, (open_px / e9n - 1) * 100, adr)
     s.reason = f"gap {100 * (open_px / ctx.prev_close - 1):+.1f}% ({(open_px / ctx.prev_close - 1) * 100 / adr:+.1f} ADR) -> {s.reason}"
     return s

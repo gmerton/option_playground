@@ -53,6 +53,8 @@ UR_HL_MIN_BARS = 2             #   each leg of the swing (low->peak, peak->highe
 RS_SHORT_GATE_PCT = 1.5        # shorts on a name this far stronger than its group (day change) are gated, like the index gate
 UR_ARM_BAND = 0.0010           # a 1-min close this far under VWAP arms the reclaim
 UR_TRIG_BAND = 0.0010          # reclaim trigger: close must clear VWAP by this fraction
+UR_CHOP_CROSSES = 5            # tag only (no gate): VWAP crossings in the prior 15 bars at/above this = 'VWAP chop'
+UR_CHOP_DIP_ADR = 0.03         # tag only: the deepest close under VWAP in the prior 10 bars shallower than this = a graze, not a flush
                                # (dance protection = UR_MAX_FIRES + new-low requirement, not a wide band)
 # --- ORB9 parameters ---------------------------------------------------------------
 ORB_MINUTES = 15
@@ -339,15 +341,25 @@ def detect_ur(book: SymbolBook, ctx: DailyCtx, st: SymbolState, b: Bar, idx: Ind
         return None
     st.ur_fires.append(lo)
     st.below_vwap_seen = False
+    # VWAP-chop tag (2026-09-15 HOOD/IREN: the "reclaim" was the 6th crossing of a flat VWAP / a 4-cent graze).
+    # run_ur_chop_study.py: neither feature separates R on 7,651 UR alerts (chop ~0R like everything else), so this
+    # is display context only -- it tells the reader the reclaim was not decisive.
+    recent = [x for x in book.bars if x.vwap][-16:]
+    signs = [1 if x.close > x.vwap else -1 for x in recent]
+    crosses = sum(1 for i in range(1, len(signs)) if signs[i] != signs[i - 1])
+    dips = [(x.close / x.vwap - 1) * 100 / ctx.adr_pct for x in recent[-11:-1]] if ctx.adr_pct else []
+    dip_adr = min(dips) if dips else 0.0
+    chop = crosses >= UR_CHOP_CROSSES or dip_adr > -UR_CHOP_DIP_ADR
+    chop_note = (f" | VWAP CHOP ({crosses} crossings in 15 min, dip {dip_adr:+.2f} ADR): not a decisive reclaim" if chop else "")
     pace = vol_pace(book, ctx, b.t)
     ema_note = "" if b.close >= ctx.ema9 else f" | still below 9 EMA {ctx.ema9:.2f}"
     rsf, rsm = rs_tags(book, ctx, idx, b.t)
     hl_note = f" | higher low {hl[0]:.2f}@{hl[1]:%H:%M}" if hl else " | NO HIGHER LOW YET"
     msg = (f"UR reclaim {b.close:.2f} > VWAP {b.vwap:.2f} | low {lo:.2f}@{book.low_time:%H:%M} "
            f"({-flush_adr:.2f} ADR, {tag}){hl_note} | stop {lo:.2f} ({(b.close / lo - 1) * 100:.1f}%){ema_note} | "
-           f"{adr_from_21(b.close, ctx):+.1f} ADR vs 21 EMA | vol pace {pace:.1f}x{gap_tag(book, ctx)}{rsm}")
+           f"{adr_from_21(b.close, ctx):+.1f} ADR vs 21 EMA | vol pace {pace:.1f}x{gap_tag(book, ctx)}{rsm}{chop_note}")
     return Alert(book.symbol, "UR", b.t, b.close, lo, msg, {
-        "side": "long", **rsf, "low": round(lo, 2), "low_time": book.low_time.strftime("%H:%M"), "flush_adr": round(-flush_adr, 2),
+        "side": "long", **rsf, "low": round(lo, 2), "vwap_crosses15": crosses, "vwap_dip_adr": round(dip_adr, 3), "vwap_chop": chop, "low_time": book.low_time.strftime("%H:%M"), "flush_adr": round(-flush_adr, 2),
         "tag": tag, "stop_pct": round((b.close / lo - 1) * 100, 2), "below_ema9": b.close < ctx.ema9,
         "adr_vs_21": round(adr_from_21(b.close, ctx), 1), "vol_pace": round(pace, 1),
         "gap_adr": round((book.session_open / ctx.prev_close - 1) * 100 / ctx.adr_pct, 2) if ctx.adr_pct else 0.0})
@@ -355,6 +367,7 @@ def detect_ur(book: SymbolBook, ctx: DailyCtx, st: SymbolState, b: Bar, idx: Ind
 
 def detect_orb9(book: SymbolBook, ctx: DailyCtx, st: SymbolState, b: Bar, idx: IndexState | None = None) -> Alert | None:
     """Runs on every CLOSED 1-min bar; acts only when a 5-min bar has just completed.
+    9-EMA hold (open and session low above the daily 9 EMA - ORB_HOLD_ADR) is a TAG since 2026-09-15, not a gate.
     Index gate, group-aware: suppressed while SPY is under its VWAP UNLESS the name's group is leading (its ETF
     above its own VWAP, or 2/3+ of 3+ peers green). Was a hard SPY gate until 2026-09-14, which left ZERO ORB9
     data with the index under VWAP (0 of 1,086 in the 153-session study); ORB_INDEX_GATE=False collects everything."""
@@ -369,9 +382,7 @@ def detect_orb9(book: SymbolBook, ctx: DailyCtx, st: SymbolState, b: Bar, idx: I
     if ORB_INDEX_GATE and spy_below and not group_leading:
         return None
     hold = ctx.ema9 * (1 - max(0.003, ORB_HOLD_ADR * ctx.adr_pct / 100))
-    if book.session_open < hold or book.session_low < hold:
-        st.orb_disqualified = True
-        return None
+    held_9ema = not (book.session_open < hold or book.session_low < hold)    # tag only since 2026-09-15 (ILMN blocked by $0.30 on an untested rule)
     if b.t.time() > ORB_BY:
         st.orb_disqualified = True
         return None
@@ -390,17 +401,20 @@ def detect_orb9(book: SymbolBook, ctx: DailyCtx, st: SymbolState, b: Bar, idx: I
         return None
     st.orb_fired = True
     stop = max(or_low, last5.low)
+    rsf, rsm = rs_tags(book, ctx, idx, b.t)
     idx_note = (" | SPY < VWAP but GROUP LEADING" if (spy_below and group_leading) else
                 " | SPY < VWAP (gate off)" if spy_below else "")
+    if not held_9ema:
+        idx_note += f" | 9 EMA NOT held (low {book.session_low:.2f} vs {ctx.ema9:.2f}, {(book.session_low / ctx.ema9 - 1) * 100 / ctx.adr_pct:+.2f} ADR)"
     msg = (f"ORB9 5-min close {last5.close:.2f} > OR high {or_high:.2f} | open {book.session_open:.2f} "
            f"({(book.session_open / ctx.prev_close - 1) * 100:+.1f}%) held 9 EMA {ctx.ema9:.2f} | "
            f"stop {stop:.2f} ({(last5.close / stop - 1) * 100:.1f}%) | {adr_from_21(last5.close, ctx):+.1f} ADR vs 21 EMA | "
-           f"vol pace {pace:.1f}x{' (light vol)' if pace < 1.2 else ''} | 15d high {ctx.high15:.2f}{gap_tag(book, ctx)}{idx_note}")
+           f"vol pace {pace:.1f}x{' (light vol)' if pace < 1.2 else ''} | 15d high {ctx.high15:.2f}{gap_tag(book, ctx)}{idx_note}{rsm}")
     return Alert(book.symbol, "ORB9", b.t, last5.close, stop, msg, {
-        "side": "long", "or_high": round(or_high, 2), "open_pct": round((book.session_open / ctx.prev_close - 1) * 100, 2),
+        "side": "long", **rsf, "or_high": round(or_high, 2), "open_pct": round((book.session_open / ctx.prev_close - 1) * 100, 2),
         "ema9": round(ctx.ema9, 2), "stop_pct": round((last5.close / stop - 1) * 100, 2), "below_ema9": False,
         "adr_vs_21": round(adr_from_21(last5.close, ctx), 1), "vol_pace": round(pace, 1), "light_vol": pace < 1.2,
-        "high15": round(ctx.high15, 2), "spy_below": bool(spy_below), "group_leading": group_leading,
+        "high15": round(ctx.high15, 2), "spy_below": bool(spy_below), "group_leading": group_leading, "held_9ema": held_9ema,
         "gap_adr": round((book.session_open / ctx.prev_close - 1) * 100 / ctx.adr_pct, 2) if ctx.adr_pct else 0.0})
 
 
