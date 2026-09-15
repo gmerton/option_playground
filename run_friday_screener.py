@@ -313,6 +313,7 @@ STRATEGIES: list[dict] = [
     {
         "type":          "double_calendar",
         "name":          "SPY Double Calendar",
+        "long_widen_pct": 1.0,   # 2026-09-15 step 7: DOUBLE DIAGONAL -- longs 1% of spot wider than the shorts (paired +$0.33/spread, t=19.6; ROC on max risk 12/19d +15.6 vs +12.1, 20/27d +22.5 vs +19.1; 67-72% win)
         "alloc_key":     "SPY double cal",
         "ticker":        "SPY",
         "dte_target":    12,
@@ -364,6 +365,7 @@ STRATEGIES: list[dict] = [
     {
         "type":          "double_calendar",
         "name":          "IWM Double Calendar",
+        "long_widen_pct": 1.0,   # 2026-09-15 step 7: DOUBLE DIAGONAL -- longs 1% of spot wider than the shorts (paired +$0.33/spread, t=19.6; ROC on max risk 12/19d +15.6 vs +12.1, 20/27d +22.5 vs +19.1; 67-72% win)
         "alloc_key":     "IWM double cal",
         "ticker":        "IWM",
         "dte_target":    20,      # short ~20 DTE / long the next weekly (path study: 20/27d beat 12/19d on every name)
@@ -382,6 +384,7 @@ STRATEGIES: list[dict] = [
     {
         "type":          "double_calendar",
         "name":          "QQQ Double Calendar",
+        "long_widen_pct": 1.0,   # 2026-09-15 step 7: DOUBLE DIAGONAL -- longs 1% of spot wider than the shorts (paired +$0.33/spread, t=19.6; ROC on max risk 12/19d +15.6 vs +12.1, 20/27d +22.5 vs +19.1; 67-72% win)
         "alloc_key":     "QQQ double cal",
         "ticker":        "QQQ",
         "dte_target":    20,      # short ~20 DTE / long the next weekly (path study: 20/27d beat 12/19d on every name)
@@ -1379,9 +1382,9 @@ def screen_double_calendar(
 
     Structure:
       Short legs: ~12 DTE expiry  (sell put at put_d delta + sell call at call_d delta)
-      Long  legs: same strikes, +7d expiry (buy them)
+      Long  legs: same strikes (double calendar) or long_widen_pct wider (double diagonal), next weekly (buy them)
       Net debit = (long_put_mid - short_put_mid) + (long_call_mid - short_call_mid)
-      Max loss = net debit paid.
+      Max risk = net debit + wider wing width (= net debit for the calendar).
     """
     ticker      = strat["ticker"]
     profit_take = strat["profit_take"]
@@ -1455,25 +1458,24 @@ def screen_double_calendar(
     put_strike  = short_put["strike"]
     call_strike = short_call["strike"]
 
-    # 5. Long put at same strike
-    long_put = next(
-        (c for c in long_chain
-         if c.get("option_type") == "put" and c["strike"] == put_strike and (c.get("bid") or 0) > 0),
-        None,
-    )
+    # 5/6. Long legs. widen = 0 -> same strikes (double calendar). widen > 0 -> DOUBLE DIAGONAL: long put at the
+    # largest long-expiry strike <= Kp x (1 - widen), long call at the smallest >= Kc x (1 + widen)
+    # (calendar path study step 7, 2026-09-15: 1% wider beat the calendar on every ticker / regime / 8 of 9 years).
+    widen = float(strat.get("long_widen_pct", 0) or 0) / 100.0
+    lp_cands = [c for c in long_chain if c.get("option_type") == "put" and (c.get("bid") or 0) > 0
+                and (c["strike"] == put_strike if widen == 0 else c["strike"] <= put_strike * (1 - widen))]
+    lc_cands = [c for c in long_chain if c.get("option_type") == "call" and (c.get("bid") or 0) > 0
+                and (c["strike"] == call_strike if widen == 0 else c["strike"] >= call_strike * (1 + widen))]
+    long_put  = max(lp_cands, key=lambda c: c["strike"]) if lp_cands else None
+    long_call = min(lc_cands, key=lambda c: c["strike"]) if lc_cands else None
     if long_put is None:
-        lines.append(f"  No ${put_strike:.2f}P with positive bid on {long_expiry}")
+        lines.append(f"  No long put {'at' if widen == 0 else 'at/below'} ${put_strike * (1 - widen):.2f} with positive bid on {long_expiry}")
         return {"enter": False, "lines": lines, "summary": "SKIP  (no long put)", "active_regime": regime}
-
-    # 6. Long call at same strike
-    long_call = next(
-        (c for c in long_chain
-         if c.get("option_type") == "call" and c["strike"] == call_strike and (c.get("bid") or 0) > 0),
-        None,
-    )
     if long_call is None:
-        lines.append(f"  No ${call_strike:.2f}C with positive bid on {long_expiry}")
+        lines.append(f"  No long call {'at' if widen == 0 else 'at/above'} ${call_strike * (1 + widen):.2f} with positive bid on {long_expiry}")
         return {"enter": False, "lines": lines, "summary": "SKIP  (no long call)", "active_regime": regime}
+    lp_strike, lc_strike = long_put["strike"], long_call["strike"]
+    width_p, width_c = put_strike - lp_strike, lc_strike - call_strike
 
     # 6b. Long-leg BA gates — same threshold as the short legs. Without this,
     # an illiquid back-month with a 100%+ wide quote sneaks through and the
@@ -1496,9 +1498,13 @@ def screen_double_calendar(
     lc_mid  = mid_price(long_call)
     net_debit = (lp_mid - sp_mid) + (lc_mid - sc_mid)
 
-    if net_debit <= 0:
+    max_risk = net_debit + max(width_p, width_c)     # only one wing can be breached at the short expiry
+    if widen == 0 and net_debit <= 0:
         lines.append(f"  Net debit ≤ 0 (${net_debit:.3f}) — data issue")
         return {"enter": False, "lines": lines, "summary": "SKIP  (negative debit)", "active_regime": regime}
+    if max_risk <= 0.01:
+        lines.append(f"  Max risk ≤ 0 (${max_risk:.3f}) — data issue")
+        return {"enter": False, "lines": lines, "summary": "SKIP  (bad max risk)", "active_regime": regime}
 
     sp_delta = (short_put.get("greeks")  or {}).get("delta")
     sc_delta = (short_call.get("greeks") or {}).get("delta")
@@ -1516,7 +1522,7 @@ def screen_double_calendar(
         f"  mid ${sp_mid:.2f}  Δ {sp_d_str}  BA {pba_str}"
     )
     lines.append(
-        f"  Long  put  ${put_strike:.2f}P  {long_expiry}"
+        f"  Long  put  ${lp_strike:.2f}P  {long_expiry}"
         f"  mid ${lp_mid:.2f}  Δ {(long_put.get('greeks') or {}).get('delta', 0):+.3f}"
         f"  BA {lpba_str}"
     )
@@ -1525,16 +1531,21 @@ def screen_double_calendar(
         f"  mid ${sc_mid:.2f}  Δ {sc_d_str}  BA {cba_str}"
     )
     lines.append(
-        f"  Long  call ${call_strike:.2f}C  {long_expiry}"
+        f"  Long  call ${lc_strike:.2f}C  {long_expiry}"
         f"  mid ${lc_mid:.2f}  Δ {(long_call.get('greeks') or {}).get('delta', 0):+.3f}"
         f"  BA {lcba_str}"
     )
     lines.append(f"")
-    lines.append(f"  Net debit:   ${net_debit:.3f}/shr  (${net_debit * 100:.2f}/contract)")
-    lines.append(f"  Max loss:    ${net_debit:.3f}/shr  = net debit paid")
+    if widen == 0:
+        lines.append(f"  Net debit:   ${net_debit:.3f}/shr  (${net_debit * 100:.2f}/contract)")
+        lines.append(f"  Max loss:    ${net_debit:.3f}/shr  = net debit paid")
+    else:
+        lines.append(f"  Structure:   DOUBLE DIAGONAL, longs {widen * 100:.1f}% wider (put wing ${width_p:.2f}, call wing ${width_c:.2f})")
+        lines.append(f"  Net {'debit' if net_debit >= 0 else 'CREDIT'}:  ${abs(net_debit):.3f}/shr  (${abs(net_debit) * 100:.2f}/contract)")
+        lines.append(f"  Max risk:    ${max_risk:.3f}/shr  (${max_risk * 100:.2f}/contract) = net debit + wider wing; SIZE ON THIS")
 
     if rs["exit"] == "hold":
-        lines.append(f"  Exit:        hold to expiry (BearishHI — let large moves run)")
+        lines.append(f"  Exit:        HOLD to the short expiry -- shorts settle, sell both longs at the close (every exit rule tested lost to hold)")
     else:
         take_at = net_debit * (1.0 + profit_take)
         lines.append(
@@ -1545,10 +1556,13 @@ def screen_double_calendar(
     exit_label = "hold" if rs["exit"] == "hold" else "50%PT"
     summary = (
         f"{regime}  short ${put_strike:.2f}P({sp_d_str})/${call_strike:.2f}C({sc_d_str})"
-        f"  debit ${net_debit:.3f}  [{exit_label}]"
+        + (f"  long ${lp_strike:.2f}P/${lc_strike:.2f}C" if widen else "")
+        + f"  {'debit' if net_debit >= 0 else 'credit'} ${abs(net_debit):.3f}"
+        + (f"  max risk ${max_risk:.3f}" if widen else "")
+        + f"  [{exit_label}]"
     )
     return {"enter": True, "lines": lines, "summary": summary,
-            "max_loss_per_contract": net_debit * 100, "active_regime": regime}
+            "max_loss_per_contract": max_risk * 100, "active_regime": regime}
 
 
 # ── Allocation sizing ─────────────────────────────────────────────────────────

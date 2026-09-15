@@ -1,3 +1,5 @@
+> **2026-09-15 evening:** SPY entries are now DOUBLE DIAGONALS -- long legs 1% of spot wider than the 0.35-delta shorts, sized on max risk = net debit + wing width. See `double_calendar_playbook.md` (structure update) and `calendar_path_study.md` step 7.
+
 > **Revision 2026-09-15 (calendar path study, `calendar_path_study.md`):** both traded regimes now use the SYMMETRIC
 > 0.35P / 0.35C structure and HOLD to the short expiry. On real bid/ask 2018–2026 the Bear_HiVIX asymmetric 0.35P/0.10C
 > made +8.8% (12/19d) vs +25.6% for 0.35/0.35 (69% win, both halves); in Bull_LoVIX the 50% take cost ~2pp against hold.

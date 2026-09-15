@@ -200,3 +200,24 @@ Self-reported, "clean stats… the last 3 months" (Feb–Apr 2026): `@38:30`
   no-loss structure" claims and should be compared head-to-head).
 </content>
 </invoke>
+
+## Re-review 2026-09-15 against the calendar path study (real bid/ask paths, `data/studies/calendar_path_study.md`)
+
+Gabe re-sent the video after the double-calendar work of 2026-09-15. The June verdict stands; three of his claims can
+now be checked on real four-leg bid/ask paths rather than the June SPY skeleton:
+
+| his claim | our data now | verdict |
+|---|---|---|
+| 30–40Δ shorts, deliberately close to the money | sym 0.35Δ is the best strike set in the study (+12 / +19% held on IWM/QQQ/SPY); 0.25Δ and asym weak | **agrees** (the June test already found this -- it is why the playbook moved 0.25 → 0.35) |
+| back leg 1–4 days behind the front (Fri/Mon) | not in the path study (gap 5–35d); June skeleton: +3-day gap = ~$0.80 debit, fills eat ~12 pts of ROC, net-negative 2018–26 | **still rejected** on the testable part |
+| enter when front IV / back IV spikes ("backwardation", Flux tool) | step-7 term-structure cut on 7-day-gap doubles: ratio ≤ 0.90 +4%, flat +15%, ≥ 1.03 **+26%**, monotone in both halves within ticker | **directionally SUPPORTED** -- the one thing in the video our data backs that the Ravish video gets backwards; the tool itself stays proprietary and intraday |
+| transform at +5–10% into a credit condor with credit ≥ debit + wing | untestable intraday; the EOD-testable half is "take profit early": pt25 −4 to −8pp vs hold, pt50 −2 to −4, monotone, so a 5–10% take would sit below pt25 | **rejected as an exit**; the "risk-free" arithmetic is still true post-transform, the EV question (floor $300 vs closing a ~$1k winner) is still open |
+| no hard stop, size for the full loss | stop40/60 −1 to −2pp vs hold (rarely trigger) | agrees, hold is right |
+| "60% transform, 25% of those pin" -- dollars only, Feb–Apr 2026 | unchanged: unverifiable | unchanged |
+
+**Net:** the *entry* half of his method (tight strikes, front IV rich vs back) is what our study rewards; the *gap* he
+uses (1–4 days) is what the June test says the fills destroy; and the *transform* is an early profit take by another
+name, which loses to holding on every structure we have measured. A better use of his term-structure idea is the
+7-day-gap double diagonal now in the playbook, entered when the front/back ratio is flat or inverted. Conviction stays
+2 / 5; the IV-ratio entry is the salvageable piece and is already recorded as a soft entry preference in the calendar
+study (not a gate: 16 true inversions in the sample).

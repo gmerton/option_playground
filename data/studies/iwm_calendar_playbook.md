@@ -1,3 +1,5 @@
+> **2026-09-15 evening:** IWM entries are now DOUBLE DIAGONALS -- long legs 1% of spot wider than the 0.35-delta shorts, sized on max risk = net debit + wing width. See `double_calendar_playbook.md` (structure update) and `calendar_path_study.md` step 7.
+
 # IWM double calendar playbook (2026-09-15)
 
 Source: `data/studies/calendar_path_study.md`, double-calendar step (real daily bid/ask 2018-11 → 2026-07, house cost

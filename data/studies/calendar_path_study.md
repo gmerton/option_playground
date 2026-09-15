@@ -2197,3 +2197,82 @@ same way the inversion EXIT was the worst rule in the study. Do not avoid a flat
 if anything it is the better entry. A steep contango (ratio ≤ 0.90) is the one cell to treat as a soft veto on the
 12/19 structure (+4% and one half at zero). Not added to the playbook gate yet -- 16 true inversions is too few to
 rule on, and the ratio is partly a VIX proxy that the regime cells already carry. Cut data: `dcal_iv_ratio_cut.parquet`.
+
+## Double DIAGONAL vs double calendar (step 7, 2026-09-15 evening): same entries, long legs one step wider
+
+Prompted by the Options With Ravish video (`data/options_with_ravish/`). `run_ddiag_path_sim.py`: identical Friday
+entries, expiries and 0.35-delta SHORT strikes as the sym35 doubles on IWM / QQQ / SPY; the long put moves to the
+largest long-expiry strike <= Kp x (1 - w) and the long call to the smallest >= Kc x (1 + w), w = 0.5% and 1.0% of
+spot (w = 0 is the calendar itself, the paired control). 1,971 paired entry triples. Max risk = cost + wider wing
+width (only one wing can be breached at the short expiry); ROC below is on MAX RISK, the fair convention for a
+diagonal -- ROC on the debit is meaningless once the structure is near-zero cost or a credit.
+
+| hold | debit | max risk | $ P&L / spread | ROC on max risk | win | halves A / B | breach loss ($, ST > 1% past a short) |
+|---|---|---|---|---|---|---|---|
+| 12/19d calendar (w=0) | 2.66 | 2.73 | +0.36 | +12.1% | 60% | +9.6 / +14.6 | −0.49 |
+| 12/19d diagonal w=0.5% | 1.16 | 3.46 | +0.52 | +14.4% | 63% | +13.0 / +15.7 | −0.42 |
+| 12/19d diagonal w=1.0% | 0.19 | 4.19 | +0.65 | +15.6% | 67% | +15.2 / +16.0 | −0.35 |
+| 20/27d calendar (w=0) | 1.81 | 1.87 | +0.41 | +19.1% | 60% | +14.8 / +23.4 | |
+| 20/27d diagonal w=0.5% | 0.36 | 2.69 | +0.60 | +20.9% | 68% | +16.4 / +25.2 | |
+| 20/27d diagonal w=1.0% | −0.61 (credit) | 3.45 | +0.79 | +22.5% | 72% | +19.1 / +25.9 | |
+
+Paired on the same entries: w=1.0% beats the calendar by $0.33/spread (t = 19.6), better in 72% of entries; w=0.5%
+by $0.18 (t = 16.1), 69%. Better on all three tickers (IWM 15→20 / 26→30, QQQ 14→18 / 20→24, SPY 7→9 / 12→14), in
+every regime cell except 20/27d Bear_HiVIX (32 → 30, flat), in 8 of 9 years (2019, the calendar's losing year, goes
+−6 → +2 and −11 → +2). Tail: worst 5% is −51% of max risk vs −74% for the calendar (in dollars −2.00 vs −1.61, on a
+max risk 1.5x larger); the worst single trade is smaller in dollars. The vega claim holds: when VIX fell > 3 points
+over the trade the calendar made +0.2 / +6.0% and the diagonal +5.7 / +12.6%; when VIX rose 0.5–3 the calendar is
+1–4pp better. Management: pt25 still −3 to −7pp, stops ~0, hold still wins.
+
+**Reading:** widening the longs one step is a straight improvement on these three ETFs -- more dollars per spread,
+higher ROC on a fairly measured risk, higher win rate, smaller breach losses, and the weak-year / falling-VIX cells
+are where it helps most. The cost is a bigger max risk per spread (4.19 vs 2.73 on 12/19d), which is what the ROC
+already divides by. Not yet checked: stocks (the tight-market cut), w beyond 1%, and whether the wider long strikes
+stay ≤ 25% bid-ask on thinner names. Results: `results_ddiag.parquet`.
+
+**Proposal for `double_calendar_playbook.md`:** long legs 1% of spot wider than the shorts on IWM / QQQ / SPY
+(double diagonal), size on max risk = net debit + wing width, everything else unchanged (hold to short expiry, every
+regime, bid-ask gate on the four legs).
+
+## Earnings position (2026-09-15 evening, prompted by the tastylive "double calendar vs iron condor" segment)
+
+The blanket "no earnings inside (entry, long expiry]" stock rule (−3pp pooled) was a wide-market artefact. On the
+tight cut (BA ≤ 25%, sym35, 90 names, hold) split by WHERE the earnings date falls:
+
+| earnings | 12/19d n | ROC | win | A / B | 20/27d n | ROC | win | A / B |
+|---|---|---|---|---|---|---|---|---|
+| before the short expiry | 311 | +1.4% | 50% | +1.2 / +1.7 | 178 | +10.4% | 60% | +12.5 / +9.5 |
+| between short and long expiry | 851 | +10.4% | 66% | +8.4 / +13.0 | 540 | +15.1% | 66% | +9.6 / +19.1 |
+| none | 4,839 | +7.2% | 58% | +6.1 / +8.7 | 2,262 | +7.4% | 56% | +6.8 / +7.8 |
+
+"Between" is positive every year 2018–2026 (+4 to +19), 3–4 days from short expiry to the event beats 5–7 (+15.1 vs
++10.9, n=453 / 931); hold beats pt25/pt50/stop40/drop_far in every cell. Mechanism: the short decays into a rising
+pre-event IV and the long is sold at the IV peak; the tastylive placement (short absorbs the crush) puts the crush on
+the long leg too and its extra front premium is what the bid-ask eats. **Proposal for the stock rule: allow (prefer)
+earnings between the expiries; avoid earnings before the short expiry on 12/19d.** Not applied to the playbook yet.
+
+### Step 7b: the double diagonal on stocks (2026-09-15, `run_ddiag_path_sim.py --universe-file ...`)
+
+Same paired design on the 60-name straddle pool and the 30-name generalisation set, tight cut defined on the
+same-strike calendar row (BA ≤ 25% of debit, ex-earnings) so the three widths are compared on identical entries.
+ROC on max risk.
+
+| set | structure | calendar | diagonal 0.5% | diagonal 1.0% | win (cal → 1%) | halves (1%) | paired $ / t | better in |
+|---|---|---|---|---|---|---|---|---|
+| 60 stocks | 12/19d, n=3,094 | +6.5% | +9.4% | **+9.9%** | 57 → 66% | +9.5 / +10.4 | +$0.17 / 12.0 | 72% |
+| 60 stocks | 20/27d, n=1,565 | +6.3% | +9.7% | **+10.1%** | 55 → 63% | +7.4 / +11.8 | | |
+| 30 stocks | 12/19d, n=455 | +7.3% | +9.5% | **+9.8%** | 56 → 65% | +8.3 / +11.8 | +$0.17 / 10.1 | 71% |
+| 30 stocks | 20/27d, n=131 | +4.5% | +7.6% | **+7.8%** | 58 → 63% | +7.0 / +8.2 | | |
+
+By year: 60-set 8 of 9 years ≥ the calendar (2018 the exception, both > +16%); 30-set 8 of 8. By ticker: the lift
+comes from the middle and bottom of the roster (PLTR −1 → +5, BAC −7 → +3, INTC +1 → +8, CVX 0 → +8, QCOM +7 → +11;
+30-set FDX +4 → +8, ORCL +3 → +7, TSM +7 → +11) while the top mega-caps are flat (TSLA / META / GOOG ~+15 either
+way, ADBE / MA +12). It does not rescue AAL (−13 → −4) or ANET / CVX-type wide names outside the cut.
+
+**Gate note:** the diagonal's own bid-ask cannot be expressed as % of debit (debit → 0 or a credit), so the stock
+gate stays defined on the SAME-STRIKE calendar's four-leg bid-ask (≤ 25% of its debit) or on max risk; use the
+calendar quote as the liquidity test, then place the diagonal.
+
+**Conclusion:** the 1% diagonal is a straight improvement on stocks as well as ETFs: +3 to +3.5pp ROC on max risk,
++8-10pp win rate, more dollars per spread, both halves, both universes, nearly every year. The stock playbook entry
+(queued screener build) should be the diagonal, sized on max risk, with the calendar-quote liquidity gate.
