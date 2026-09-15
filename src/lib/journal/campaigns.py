@@ -9,10 +9,10 @@ Rules, deterministic from journal_trades (rebuilt from scratch every run, so it 
   * Fills are applied to LOTS keyed by (underlying, expiry, put/call, strike). An opening fill joins the lot's
     existing campaign if the lot is already open; otherwise it needs a campaign:
       - if the same ticket also CLOSES lots, the opening fills inherit that campaign (a roll);
-      - else if it legs into an open lot (same expiry + put/call, opposite sign) it joins that lot's campaign;
+      - else if a SINGLE-leg ticket legs into an open lot (same expiry + put/call, opposite sign) it joins that campaign;
       - else all opening fills in the ticket share one NEW campaign (the legs of a spread opened together).
-  * A closing fill belongs to the campaign of the lot it closes. A ticket that closes lots from several
-    campaigns merges them.
+  * A closing fill belongs to the campaign of the lot it closes. A ROLL ticket that closes lots from several
+    campaigns merges them; a pure-close ticket that closes several spreads at once does not.
   * A campaign is CLOSED when every lot in it is flat; EXPIRED if its open lots are all past expiry (IBKR usually
     books an expiry as a 16:20 fill at 0.00, but not always). Realized P&L = the sum of the linked fills' realized_pnl.
 
@@ -72,7 +72,13 @@ def build_campaigns(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
                 k = (r.expiry, r.put_call, float(r.strike))
                 if k in lots and lots[k]["camp"] is not None:
                     touched.add(lots[k]["camp"])
-            if len(touched) > 1:                        # merge into the oldest
+            if len(touched) > 1 and opens.empty:
+                # a pure-close ticket that happens to close SEVERAL spreads (CRWD 9/14: the 195/185 and the rolled
+                # 190/180 in one order) is not a roll: each close stays with its own campaign, nothing merges
+                touched_multi = True
+            else:
+                touched_multi = False
+            if len(touched) > 1 and not touched_multi:      # merge into the oldest
                 keep = min(touched)
                 for cid in touched - {keep}:
                     for k, lot in lots.items():
@@ -81,17 +87,19 @@ def build_campaigns(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
                         if l["campaign_id"] == cid: l["campaign_id"] = keep
                     camps[keep]["merged"].append(cid); camps.pop(cid, None)
                 touched = {keep}
-            camp_for_opens = next(iter(touched)) if touched else None
+            camp_for_opens = (next(iter(touched)) if (touched and not touched_multi) else None)
             is_roll = bool(touched) and not opens.empty
             if camp_for_opens is None and not opens.empty:
                 # opening legs of a NEW spread -- unless they extend lots already open (adding to a position) or LEG INTO
                 # a spread on an open lot: same expiry + put/call, opposite sign (FTNT 9/14: a 190C sold against a held 170C)
                 existing = {lots[(r.expiry, r.put_call, float(r.strike))]["camp"] for r in opens.itertuples()
                             if (r.expiry, r.put_call, float(r.strike)) in lots and abs(lots[(r.expiry, r.put_call, float(r.strike))]["qty"]) > 1e-9}
-                for r in opens.itertuples():
-                    for k, lot in lots.items():
-                        if k[0] == r.expiry and k[1] == r.put_call and abs(lot["qty"]) > 1e-9 and lot["qty"] * _side_qty(r) < 0 and lot["camp"] is not None:
-                            existing.add(lot["camp"])
+                single_leg = len({(r.expiry, r.put_call, float(r.strike)) for r in opens.itertuples()}) == 1
+                if single_leg:                       # a two-leg ticket is a NEW spread even if a related lot is open (CRWD 9/3 195/185 next to 200/190)
+                    for r in opens.itertuples():
+                        for k, lot in lots.items():
+                            if k[0] == r.expiry and k[1] == r.put_call and abs(lot["qty"]) > 1e-9 and lot["qty"] * _side_qty(r) < 0 and lot["camp"] is not None:
+                                existing.add(lot["camp"])
                 existing.discard(None)
                 if existing:
                     camp_for_opens = min(existing)

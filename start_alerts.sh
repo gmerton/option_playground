@@ -47,6 +47,8 @@ fi
 # before the bell: which plan levels are already dead from a gap, which holds gapped through their stops
 if [ "$(TZ=America/New_York date +%H%M)" -lt 0930 ]; then
   .venv/bin/python3 run_premarket_gaps.py 2>/dev/null || echo "(pre-market check skipped)"
+  # which industries are hot before the bell (ETF + member pre-market moves in ADR units; context, not a gate)
+  .venv/bin/python3 run_premarket_industries.py 2>/dev/null || echo "(pre-market industries skipped)"
 fi
 echo "${GRN}preflight ok${OFF}: TRADIER_API_KEY set, venv present, AWS profile $AWS_PROFILE$( [ ${#extra[@]} -eq 0 ] && echo ' (publishing to the journal site)' )"
 export PYTHONPATH=src

@@ -140,6 +140,39 @@ def _rs_at_fill(sym: str, d: date, dt, ctx: dict) -> float | None:
         return None
 
 
+def _apply_gap_reclass(ctx: dict, d: date) -> None:
+    """Mirror run_universe_monitor._gap_reclassify: an open >= GAP_RECLASS_ADR from the prior close re-runs the
+    day state with the open as a provisional close (a gap-down on a day-SHORT name is left alone)."""
+    try:
+        import os
+        from lib.alerts.daily_state import GAP_RECLASS_ADR, reclassify_open
+        from lib.journal.exit_kind import bars_1min
+        from lib.tradier.tradier_client_wrapper import TradierClient
+
+        async def opens():
+            out = {}
+            async with TradierClient(api_key=os.environ["TRADIER_API_KEY"]) as client:
+                for s_ in ctx:
+                    b = await bars_1min(s_, d, client)
+                    if b is not None and not b.empty and "open" in b:
+                        out[s_] = float(b.open.iloc[0])
+            return out
+        op = asyncio.run(opens())
+        for s_, o in op.items():
+            c = ctx[s_]
+            if not c.prev_close or not c.adr_pct:
+                continue
+            gap_adr = (o / c.prev_close - 1) * 100 / c.adr_pct
+            if abs(gap_adr) < GAP_RECLASS_ADR or (c.day_state == "SHORT" and gap_adr < 0):
+                continue
+            ds = reclassify_open(c, o)
+            if ds.state != c.day_state:
+                c.day_state_prior, c.day_state = c.day_state, ds.state
+                c.day_reason = f"{ds.reason} [gap-reclassified from {c.day_state_prior}]"
+    except Exception:  # noqa: BLE001 -- no bars, no re-classification (prior-close state stands)
+        return
+
+
 def grade_day(d: date, t_day: pd.DataFrame) -> pd.DataFrame:
     from lib.alerts.context import load_context
     ents = entries_for(t_day)
@@ -147,6 +180,7 @@ def grade_day(d: date, t_day: pd.DataFrame) -> pd.DataFrame:
         return pd.DataFrame()
     syms = {e["sym"] for e in ents}
     ctx = asyncio.run(load_context(sorted(syms | {resolve(x, "long")[0] for x in syms} | {"SPY"}), d))
+    _apply_gap_reclass(ctx, d)                            # same gap-day rule the engine applies at the first bar
     al = alerts_for(d)
     rows = []
     for e in ents:

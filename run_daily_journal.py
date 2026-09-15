@@ -133,7 +133,9 @@ def build_journal(
         o_qty = o_rows["quantity"].sum() if has_o else 0
         o_px = (o_rows["tradePrice"] * o_rows["quantity"]).sum() / o_qty if has_o and o_qty else None
         c_qty = c_rows["quantity"].sum() if has_c else 0
-        c_pnl = c_rows["fifoPnlRealized"].sum() if has_c else 0
+        # IBKR spreads fifoPnlRealized across BOTH legs of a same-day round trip (MRVL 9/14: +72.27 on the opening
+        # sell, +2.36 on the closing buy); only the sum across every fill of the day is the trade's P&L
+        c_pnl = rows["fifoPnlRealized"].sum() if has_c else 0
         n_fills = len(rows)
         if has_o and has_c:
             roundtrip.append((sym, n_fills, o_qty, c_qty, c_pnl, still_open))
