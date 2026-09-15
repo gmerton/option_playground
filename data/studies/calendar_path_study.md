@@ -2170,3 +2170,30 @@ FDX +4.5, ORCL +4.5, TSM +3.7.
 **Conclusion for the stock version:** the edge generalises to whatever name has a tight market that Friday; the
 gate is the live bid-ask (≤ 25% of the debit, ideally ≤ 10%) plus debit ≥ ~$1.50 and no earnings in the window --
 not the sector, not the price, not the pool. Expect ~+7% held, ~56% win, about a third of the index-ETF edge.
+
+## Term structure at entry (2026-09-15 evening): short-leg IV / long-leg IV on the sym35 ETF doubles
+
+Question: does the relationship between the two expiries' IV predict the hold return? Ratio = mean of (short IV / long IV)
+on the put side and the call side, from the same bid/ask-IV chain rows the sim priced off. 2,018 IWM/QQQ/SPY sym35 entries.
+Median ratio 0.99 (10th pct 0.92, 90th pct 1.04) -- for a 7-day gap the two expiries almost always price within 5% of each
+other; a real inversion (>1.10) is 16 entries.
+
+| sym35 HOLD ROC by ratio | 12/19d n | ROC | halves | 20/27d n | ROC | halves |
+|---|---|---|---|---|---|---|
+| ≤ 0.90 (steep contango, "textbook" calendar entry) | 132 | +3.8% | +0.5 / +4.6 | 10 | +24.8 | thin |
+| 0.90–0.97 | 335 | +6.3% | −0.4 / +11.6 | 202 | +12.6 | +6.0 / +20.2 |
+| 0.97–1.03 (flat) | 424 | +15.3% | +13.9 / +17.1 | 668 | +20.7 | +16.6 / +24.9 |
+| 1.03–1.10 (mild inversion) | 115 | +25.7% | +19.5 / +40.5 | 120 | +20.8 | +21.0 / +20.6 |
+| > 1.10 | 12 | +46.4 | thin | 0 | | |
+
+Within-ticker terciles (removes the ticker level): 12/19d low +4.1 / mid +12.1 / high +20.9 (both halves monotone:
++0.3/+10.1/+15.6 and +6.0/+14.3/+30.1); 20/27d low +15.2 / mid +20.5 / high +21.7. Above-1.0 entries beat below-1.0
+in 6 of 9 years. Ratio correlates +0.36 with VIX, so part of this is "buy the double when vol is elevated"; the
+rest is that a steep front discount means the short leg has little premium to decay relative to what the long leg
+bleeds. SPY is the exception (flat across buckets, n small in the tails).
+
+**Reading:** the textbook rule "enter calendars when the front is cheap relative to the back" is inverted here, the
+same way the inversion EXIT was the worst rule in the study. Do not avoid a flat or mildly inverted term structure;
+if anything it is the better entry. A steep contango (ratio ≤ 0.90) is the one cell to treat as a soft veto on the
+12/19 structure (+4% and one half at zero). Not added to the playbook gate yet -- 16 true inversions is too few to
+rule on, and the ratio is partly a VIX proxy that the regime cells already carry. Cut data: `dcal_iv_ratio_cut.parquet`.

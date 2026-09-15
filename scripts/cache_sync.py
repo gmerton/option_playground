@@ -40,6 +40,10 @@ MANIFEST = [
     ("ibkr_bot/data", "dir"),                        # perishable IBKR 1-min stock + option BID_ASK bars
     ("data/models/grid_lgbm.pkl", "file"),           # orphan: no script writes or reads it
     ("data/cache/iv_condor_options.parquet", "file"),  # orphan: run_iv_condor_study.py caches iv_strangle_*/iv_straddle_* only
+    ("data/cache/intraday_1min", "dir"),             # 1-min bars for the 153-session alert study: Tradier keeps ~20 sessions,
+                                                     # Polygon free tier = 5 calls/min (the backfill took days) and only 2 years back
+    ("data/cache/calendar_path", "dir"),             # calendar path study: option-chain pulls off options_daily_v3 (hours of Athena
+                                                     # scans over a 4B-row table per universe) + parity spot + sim results/reports
 ]
 
 
