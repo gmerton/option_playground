@@ -60,6 +60,9 @@ ORB_BY = time(12, 0)
 ORB_MIN_PACE = 1.0             # cumulative volume vs. profile-projected, x avg20 (below 1.2 is tagged "light vol")
 GAP_WARN_ADR = 1.0             # tag alerts whose open gapped >= this many ADR (lens rule: no gap-up buys in hour one)
 ORB_HOLD_ADR = 0.15            # session low may undercut the 9 EMA by this many ADR (floor 0.3%)
+ORB_INDEX_GATE = True          # False = never suppress on the index (study mode: collect every ORB9 and tag it)
+ORB_GROUP_PEERS_MIN = 3        # a group "leads" when its ETF is above ITS VWAP, or >= ORB_GROUP_PEERS_FRAC of >= this many peers are green
+ORB_GROUP_PEERS_FRAC = 0.67
 # --- LVL parameters ----------------------------------------------------------------
 LVL_NOT_BEFORE = time(9, 45)   # after the 15-min opening range (a gap through the level in minute one is a chase)
 LVL_BY = time(15, 30)          # a break in the last half hour can't be managed
@@ -352,11 +355,18 @@ def detect_ur(book: SymbolBook, ctx: DailyCtx, st: SymbolState, b: Bar, idx: Ind
 
 def detect_orb9(book: SymbolBook, ctx: DailyCtx, st: SymbolState, b: Bar, idx: IndexState | None = None) -> Alert | None:
     """Runs on every CLOSED 1-min bar; acts only when a 5-min bar has just completed.
-    HARD index gate: a continuation pattern never fires while SPY is under its VWAP
-    (all four ORB9 alerts on 2026-09-09 fired into a falling index and stopped)."""
+    Index gate, group-aware: suppressed while SPY is under its VWAP UNLESS the name's group is leading (its ETF
+    above its own VWAP, or 2/3+ of 3+ peers green). Was a hard SPY gate until 2026-09-14, which left ZERO ORB9
+    data with the index under VWAP (0 of 1,086 in the 153-session study); ORB_INDEX_GATE=False collects everything."""
     if st.orb_fired or st.orb_disqualified or book.session_open is None:
         return None
-    if idx is not None and idx.above(b.t) is False:
+    # index gate, group-aware (2026-09-14: cyber gapped +6% while SPY sat under VWAP and CRWD/PANW could never fire).
+    # SPY under VWAP suppresses the break ONLY if the name's group is not leading; both facts are tagged either way.
+    spy_below = idx is not None and idx.above(b.t) is False
+    grp_fields, _ = idx.industry(book.symbol, b.t) if idx is not None else ({}, "")
+    vw = grp_fields.get("industry_vs_vwap"); pu, pn = grp_fields.get("industry_peers_up"), grp_fields.get("industry_peers_n")
+    group_leading = bool((vw is not None and vw > 0) or (pn and pn >= ORB_GROUP_PEERS_MIN and pu / pn >= ORB_GROUP_PEERS_FRAC))
+    if ORB_INDEX_GATE and spy_below and not group_leading:
         return None
     hold = ctx.ema9 * (1 - max(0.003, ORB_HOLD_ADR * ctx.adr_pct / 100))
     if book.session_open < hold or book.session_low < hold:
@@ -380,15 +390,17 @@ def detect_orb9(book: SymbolBook, ctx: DailyCtx, st: SymbolState, b: Bar, idx: I
         return None
     st.orb_fired = True
     stop = max(or_low, last5.low)
+    idx_note = (" | SPY < VWAP but GROUP LEADING" if (spy_below and group_leading) else
+                " | SPY < VWAP (gate off)" if spy_below else "")
     msg = (f"ORB9 5-min close {last5.close:.2f} > OR high {or_high:.2f} | open {book.session_open:.2f} "
            f"({(book.session_open / ctx.prev_close - 1) * 100:+.1f}%) held 9 EMA {ctx.ema9:.2f} | "
            f"stop {stop:.2f} ({(last5.close / stop - 1) * 100:.1f}%) | {adr_from_21(last5.close, ctx):+.1f} ADR vs 21 EMA | "
-           f"vol pace {pace:.1f}x{' (light vol)' if pace < 1.2 else ''} | 15d high {ctx.high15:.2f}{gap_tag(book, ctx)}")
+           f"vol pace {pace:.1f}x{' (light vol)' if pace < 1.2 else ''} | 15d high {ctx.high15:.2f}{gap_tag(book, ctx)}{idx_note}")
     return Alert(book.symbol, "ORB9", b.t, last5.close, stop, msg, {
         "side": "long", "or_high": round(or_high, 2), "open_pct": round((book.session_open / ctx.prev_close - 1) * 100, 2),
         "ema9": round(ctx.ema9, 2), "stop_pct": round((last5.close / stop - 1) * 100, 2), "below_ema9": False,
         "adr_vs_21": round(adr_from_21(last5.close, ctx), 1), "vol_pace": round(pace, 1), "light_vol": pace < 1.2,
-        "high15": round(ctx.high15, 2),
+        "high15": round(ctx.high15, 2), "spy_below": bool(spy_below), "group_leading": group_leading,
         "gap_adr": round((book.session_open / ctx.prev_close - 1) * 100 / ctx.adr_pct, 2) if ctx.adr_pct else 0.0})
 
 

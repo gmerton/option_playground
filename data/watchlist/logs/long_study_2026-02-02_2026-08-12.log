@@ -855,3 +855,180 @@ allowed
 False    2924  0.02  1.12  32%  45%  0.08 -0.03   72/153
 True     1009  0.04  1.18  32%  45%  0.05  0.03   63/153
 == Sun Sep 13 21:26:52 PDT 2026 done
+== Mon Sep 14 18:37:22 PDT 2026 re-replay 2/2-9/10 with the ORB9 index gate OFF (every break tagged spy_below / group_leading)
+2026-02-02: rc=0 replay: 27 alerts shown, 95 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-02-02_replay.jsonl
+2026-02-03: rc=0 replay: 17 alerts shown, 114 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-02-03_replay.jsonl
+2026-02-04: rc=0 replay: 13 alerts shown, 129 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-02-04_replay.jsonl
+2026-02-05: rc=0 replay: 24 alerts shown, 154 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-02-05_replay.jsonl
+2026-02-06: rc=0 replay: 25 alerts shown, 93 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-02-06_replay.jsonl
+2026-02-09: rc=0 replay: 24 alerts shown, 112 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-02-09_replay.jsonl
+2026-02-10: rc=0 replay: 20 alerts shown, 92 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-02-10_replay.jsonl
+2026-02-11: rc=0 replay: 14 alerts shown, 82 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-02-11_replay.jsonl
+2026-02-12: rc=0 replay: 15 alerts shown, 74 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-02-12_replay.jsonl
+2026-02-13: rc=0 replay: 25 alerts shown, 122 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-02-13_replay.jsonl
+2026-02-16: rc=0 replay: 0 alerts shown, 0 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-02-16_replay.jsonl
+2026-02-17: rc=0 replay: 24 alerts shown, 101 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-02-17_replay.jsonl
+2026-02-18: rc=0 replay: 30 alerts shown, 68 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-02-18_replay.jsonl
+2026-02-19: rc=0 replay: 22 alerts shown, 93 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-02-19_replay.jsonl
+2026-02-20: rc=0 replay: 39 alerts shown, 127 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-02-20_replay.jsonl
+2026-02-23: rc=0 replay: 11 alerts shown, 89 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-02-23_replay.jsonl
+2026-02-24: rc=0 replay: 36 alerts shown, 107 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-02-24_replay.jsonl
+2026-02-25: rc=0 replay: 24 alerts shown, 84 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-02-25_replay.jsonl
+2026-02-26: rc=0 replay: 29 alerts shown, 98 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-02-26_replay.jsonl
+2026-02-27: rc=0 replay: 38 alerts shown, 78 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-02-27_replay.jsonl
+2026-03-02: rc=0 replay: 36 alerts shown, 121 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-03-02_replay.jsonl
+2026-03-03: rc=0 replay: 44 alerts shown, 115 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-03-03_replay.jsonl
+2026-03-04: rc=0 replay: 46 alerts shown, 81 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-03-04_replay.jsonl
+2026-03-05: rc=0 replay: 29 alerts shown, 105 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-03-05_replay.jsonl
+2026-03-06: rc=0 replay: 54 alerts shown, 112 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-03-06_replay.jsonl
+2026-03-09: rc=0 replay: 46 alerts shown, 129 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-03-09_replay.jsonl
+2026-03-10: rc=0 replay: 57 alerts shown, 93 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-03-10_replay.jsonl
+2026-03-11: rc=0 replay: 46 alerts shown, 70 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-03-11_replay.jsonl
+2026-03-12: rc=0 replay: 32 alerts shown, 80 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-03-12_replay.jsonl
+2026-03-13: rc=0 replay: 25 alerts shown, 87 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-03-13_replay.jsonl
+2026-03-16: rc=0 replay: 26 alerts shown, 89 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-03-16_replay.jsonl
+2026-03-17: rc=0 replay: 29 alerts shown, 88 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-03-17_replay.jsonl
+2026-03-18: rc=0 replay: 33 alerts shown, 99 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-03-18_replay.jsonl
+2026-03-19: rc=0 replay: 35 alerts shown, 117 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-03-19_replay.jsonl
+2026-03-20: rc=0 replay: 24 alerts shown, 79 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-03-20_replay.jsonl
+2026-03-23: rc=0 replay: 34 alerts shown, 116 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-03-23_replay.jsonl
+2026-03-24: rc=0 replay: 39 alerts shown, 85 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-03-24_replay.jsonl
+2026-03-25: rc=0 replay: 24 alerts shown, 93 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-03-25_replay.jsonl
+2026-03-26: rc=0 replay: 26 alerts shown, 95 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-03-26_replay.jsonl
+2026-03-27: rc=0 replay: 24 alerts shown, 77 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-03-27_replay.jsonl
+2026-03-30: rc=0 replay: 14 alerts shown, 76 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-03-30_replay.jsonl
+2026-03-31: rc=0 replay: 43 alerts shown, 151 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-03-31_replay.jsonl
+2026-04-01: rc=0 replay: 23 alerts shown, 89 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-04-01_replay.jsonl
+2026-04-02: rc=0 replay: 32 alerts shown, 85 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-04-02_replay.jsonl
+2026-04-03: rc=0 replay: 0 alerts shown, 0 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-04-03_replay.jsonl
+2026-04-06: rc=0 replay: 27 alerts shown, 80 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-04-06_replay.jsonl
+2026-04-07: rc=0 replay: 23 alerts shown, 64 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-04-07_replay.jsonl
+2026-04-08: rc=0 replay: 12 alerts shown, 67 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-04-08_replay.jsonl
+2026-04-09: rc=0 replay: 9 alerts shown, 88 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-04-09_replay.jsonl
+2026-04-10: rc=0 replay: 10 alerts shown, 97 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-04-10_replay.jsonl
+2026-04-13: rc=0 replay: 19 alerts shown, 115 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-04-13_replay.jsonl
+2026-04-14: rc=0 replay: 17 alerts shown, 103 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-04-14_replay.jsonl
+2026-04-15: rc=0 replay: 27 alerts shown, 93 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-04-15_replay.jsonl
+2026-04-16: rc=0 replay: 18 alerts shown, 121 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-04-16_replay.jsonl
+2026-04-17: rc=0 replay: 17 alerts shown, 98 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-04-17_replay.jsonl
+2026-04-20: rc=0 replay: 28 alerts shown, 97 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-04-20_replay.jsonl
+2026-04-21: rc=0 replay: 35 alerts shown, 103 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-04-21_replay.jsonl
+2026-04-22: rc=0 replay: 11 alerts shown, 83 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-04-22_replay.jsonl
+2026-04-23: rc=0 replay: 23 alerts shown, 106 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-04-23_replay.jsonl
+2026-04-24: rc=0 replay: 20 alerts shown, 85 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-04-24_replay.jsonl
+2026-04-27: rc=0 replay: 25 alerts shown, 100 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-04-27_replay.jsonl
+2026-04-28: rc=0 replay: 25 alerts shown, 106 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-04-28_replay.jsonl
+2026-04-29: rc=0 replay: 21 alerts shown, 94 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-04-29_replay.jsonl
+2026-04-30: rc=0 replay: 38 alerts shown, 120 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-04-30_replay.jsonl
+2026-05-01: rc=0 replay: 24 alerts shown, 140 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-05-01_replay.jsonl
+2026-05-04: rc=0 replay: 34 alerts shown, 109 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-05-04_replay.jsonl
+2026-05-05: rc=0 replay: 21 alerts shown, 110 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-05-05_replay.jsonl
+2026-05-06: rc=0 replay: 25 alerts shown, 127 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-05-06_replay.jsonl
+2026-05-07: rc=0 replay: 34 alerts shown, 111 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-05-07_replay.jsonl
+2026-05-08: rc=0 replay: 22 alerts shown, 105 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-05-08_replay.jsonl
+2026-05-11: rc=0 replay: 33 alerts shown, 134 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-05-11_replay.jsonl
+2026-05-12: rc=0 replay: 25 alerts shown, 126 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-05-12_replay.jsonl
+2026-05-13: rc=0 replay: 19 alerts shown, 105 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-05-13_replay.jsonl
+2026-05-14: rc=0 replay: 15 alerts shown, 97 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-05-14_replay.jsonl
+2026-05-15: rc=0 replay: 30 alerts shown, 140 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-05-15_replay.jsonl
+2026-05-18: rc=0 replay: 24 alerts shown, 116 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-05-18_replay.jsonl
+2026-05-19: rc=0 replay: 43 alerts shown, 112 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-05-19_replay.jsonl
+2026-05-20: rc=0 replay: 37 alerts shown, 104 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-05-20_replay.jsonl
+2026-05-21: rc=0 replay: 38 alerts shown, 101 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-05-21_replay.jsonl
+2026-05-22: rc=0 replay: 15 alerts shown, 77 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-05-22_replay.jsonl
+2026-05-25: rc=0 replay: 0 alerts shown, 0 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-05-25_replay.jsonl
+2026-05-26: rc=0 replay: 24 alerts shown, 101 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-05-26_replay.jsonl
+2026-05-27: rc=0 replay: 40 alerts shown, 129 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-05-27_replay.jsonl
+2026-05-28: rc=0 replay: 30 alerts shown, 108 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-05-28_replay.jsonl
+2026-05-29: rc=0 replay: 22 alerts shown, 106 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-05-29_replay.jsonl
+2026-06-01: rc=0 replay: 34 alerts shown, 140 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-06-01_replay.jsonl
+2026-06-02: rc=0 replay: 32 alerts shown, 116 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-06-02_replay.jsonl
+2026-06-03: rc=0 replay: 19 alerts shown, 111 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-06-03_replay.jsonl
+2026-06-04: rc=0 replay: 23 alerts shown, 112 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-06-04_replay.jsonl
+2026-06-05: rc=0 replay: 16 alerts shown, 100 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-06-05_replay.jsonl
+2026-06-08: rc=0 replay: 26 alerts shown, 95 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-06-08_replay.jsonl
+2026-06-09: rc=0 replay: 25 alerts shown, 113 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-06-09_replay.jsonl
+2026-06-10: rc=0 replay: 33 alerts shown, 122 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-06-10_replay.jsonl
+2026-06-11: rc=0 replay: 30 alerts shown, 160 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-06-11_replay.jsonl
+2026-06-12: rc=0 replay: 49 alerts shown, 115 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-06-12_replay.jsonl
+2026-06-15: rc=0 replay: 12 alerts shown, 89 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-06-15_replay.jsonl
+2026-06-16: rc=0 replay: 20 alerts shown, 101 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-06-16_replay.jsonl
+2026-06-17: rc=0 replay: 30 alerts shown, 87 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-06-17_replay.jsonl
+2026-06-18: rc=0 replay: 28 alerts shown, 99 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-06-18_replay.jsonl
+2026-06-19: rc=0 replay: 0 alerts shown, 0 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-06-19_replay.jsonl
+2026-06-22: rc=0 replay: 25 alerts shown, 127 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-06-22_replay.jsonl
+2026-06-23: rc=0 replay: 32 alerts shown, 121 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-06-23_replay.jsonl
+2026-06-24: rc=0 replay: 32 alerts shown, 95 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-06-24_replay.jsonl
+2026-06-25: rc=0 replay: 26 alerts shown, 136 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-06-25_replay.jsonl
+2026-06-26: rc=0 replay: 27 alerts shown, 102 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-06-26_replay.jsonl
+2026-06-29: rc=0 replay: 20 alerts shown, 121 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-06-29_replay.jsonl
+2026-06-30: rc=0 replay: 26 alerts shown, 73 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-06-30_replay.jsonl
+2026-07-01: rc=0 replay: 27 alerts shown, 112 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-07-01_replay.jsonl
+2026-07-02: rc=0 replay: 22 alerts shown, 117 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-07-02_replay.jsonl
+2026-07-03: rc=0 replay: 0 alerts shown, 0 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-07-03_replay.jsonl
+2026-07-06: rc=0 replay: 16 alerts shown, 74 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-07-06_replay.jsonl
+2026-07-07: rc=0 replay: 16 alerts shown, 101 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-07-07_replay.jsonl
+2026-07-08: rc=0 replay: 32 alerts shown, 107 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-07-08_replay.jsonl
+2026-07-09: rc=0 replay: 28 alerts shown, 79 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-07-09_replay.jsonl
+2026-07-10: rc=0 replay: 19 alerts shown, 82 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-07-10_replay.jsonl
+2026-07-13: rc=0 replay: 22 alerts shown, 81 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-07-13_replay.jsonl
+2026-07-14: rc=0 replay: 25 alerts shown, 101 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-07-14_replay.jsonl
+2026-07-15: rc=0 replay: 23 alerts shown, 76 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-07-15_replay.jsonl
+2026-07-16: rc=0 replay: 29 alerts shown, 93 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-07-16_replay.jsonl
+2026-07-17: rc=0 replay: 32 alerts shown, 121 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-07-17_replay.jsonl
+2026-07-20: rc=0 replay: 19 alerts shown, 82 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-07-20_replay.jsonl
+2026-07-21: rc=0 replay: 20 alerts shown, 84 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-07-21_replay.jsonl
+2026-07-22: rc=0 replay: 32 alerts shown, 69 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-07-22_replay.jsonl
+2026-07-23: rc=0 replay: 30 alerts shown, 105 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-07-23_replay.jsonl
+2026-07-24: rc=0 replay: 26 alerts shown, 68 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-07-24_replay.jsonl
+2026-07-27: rc=0 replay: 18 alerts shown, 114 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-07-27_replay.jsonl
+2026-07-28: rc=0 replay: 29 alerts shown, 118 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-07-28_replay.jsonl
+2026-07-29: rc=0 replay: 22 alerts shown, 106 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-07-29_replay.jsonl
+2026-07-30: rc=0 replay: 22 alerts shown, 147 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-07-30_replay.jsonl
+2026-07-31: rc=0 replay: 28 alerts shown, 144 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-07-31_replay.jsonl
+2026-08-03: rc=0 replay: 39 alerts shown, 118 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-08-03_replay.jsonl
+2026-08-04: rc=0 replay: 26 alerts shown, 105 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-08-04_replay.jsonl
+2026-08-05: rc=0 replay: 18 alerts shown, 121 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-08-05_replay.jsonl
+2026-08-06: rc=0 replay: 28 alerts shown, 104 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-08-06_replay.jsonl
+2026-08-07: rc=0 replay: 23 alerts shown, 99 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-08-07_replay.jsonl
+2026-08-10: rc=0 replay: 23 alerts shown, 88 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-08-10_replay.jsonl
+2026-08-11: rc=0 replay: 27 alerts shown, 72 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-08-11_replay.jsonl
+2026-08-12: rc=0 replay: 23 alerts shown, 80 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-08-12_replay.jsonl
+2026-08-13: rc=0 replay: 21 alerts shown, 60 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-08-13_replay.jsonl
+2026-08-14: rc=0 replay: 24 alerts shown, 56 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-08-14_replay.jsonl
+2026-08-17: rc=0 replay: 21 alerts shown, 65 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-08-17_replay.jsonl
+2026-08-18: rc=0 replay: 30 alerts shown, 81 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-08-18_replay.jsonl
+2026-08-19: rc=0 replay: 37 alerts shown, 85 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-08-19_replay.jsonl
+2026-08-20: rc=0 replay: 26 alerts shown, 96 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-08-20_replay.jsonl
+2026-08-21: rc=0 replay: 31 alerts shown, 96 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-08-21_replay.jsonl
+2026-08-24: rc=0 replay: 35 alerts shown, 105 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-08-24_replay.jsonl
+2026-08-25: rc=0 replay: 10 alerts shown, 88 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-08-25_replay.jsonl
+2026-08-26: rc=0 replay: 24 alerts shown, 83 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-08-26_replay.jsonl
+2026-08-27: rc=0 replay: 21 alerts shown, 110 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-08-27_replay.jsonl
+2026-08-28: rc=0 replay: 20 alerts shown, 110 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-08-28_replay.jsonl
+2026-08-31: rc=0 replay: 26 alerts shown, 71 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-08-31_replay.jsonl
+2026-09-01: rc=0 replay: 45 alerts shown, 87 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-09-01_replay.jsonl
+2026-09-02: rc=0 replay: 32 alerts shown, 113 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-09-02_replay.jsonl
+2026-09-03: rc=0 replay: 34 alerts shown, 118 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-09-03_replay.jsonl
+2026-09-04: rc=0 replay: 29 alerts shown, 97 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-09-04_replay.jsonl
+2026-09-07: rc=0 replay: 0 alerts shown, 0 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-09-07_replay.jsonl
+2026-09-08: rc=0 replay: 24 alerts shown, 98 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-09-08_replay.jsonl
+2026-09-09: rc=0 replay: 20 alerts shown, 97 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-09-09_replay.jsonl
+2026-09-10: rc=0 replay: 29 alerts shown, 129 out of play saved to /Users/gmerton/v2/options_playground/data/watchlist/logs/alerts_oop_2026-09-10_replay.jsonl
+scoring 895 new alerts (18661 cached)
+19518 scored alerts, 153 sessions 2026-02-02 .. 2026-09-10 | half A = first 76 sessions | 15445 out of play | replay logs
+
+== SETUP GRADE v2.1-2026-09-14 (lib/alerts/grading.py): must rank R in both halves ==
+           n  avgR     t stop  win     A     B days_pos
+grade                                                  
+B       1863  0.03  0.96  45%  41%  0.02  0.04   64/153
+C       2719 -0.01 -0.79  28%  46% -0.06  0.04   68/153
+F      14936  0.03  1.14  34%  43%  0.06 -0.01   68/153
+                n  avgR     t stop  win     A     B days_pos
+side  grade                                                 
+long  B      1863  0.03  0.96  45%  41%  0.02  0.04   64/153
+      C       299 -0.15 -2.80  36%  35% -0.20 -0.12   48/126
+      F      6713  0.12  2.38  43%  41%  0.20  0.03   75/153
+short C      2420  0.00  0.17  28%  47% -0.05  0.07   76/152
+      F      8223 -0.05 -5.18  27%  45% -0.06 -0.04   64/153
+== Mon Sep 14 18:51:12 PDT 2026 done (orb9 gate study)

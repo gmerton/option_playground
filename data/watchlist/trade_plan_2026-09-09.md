@@ -126,3 +126,18 @@ Holds: NET (305 / close < 309.5), SKHY 80% (194.5 / close < 189.8), GLW (158.50 
   Detail: `data/studies/oil_spike_short_playbook_2026-09.md` (9/13 update).
 - USO / CRAK: OUT (extended, no level, no streak). CVI: SHORT parabolic but secondary (+3.4 ADR, 10 up days).
 - Exhaustion shorts at a prior high: HPE (63.44), SMTC (175.69). Trend-down shorts (BIR): see the 9/14 in-play table.
+
+## Open positions — added 9/14 midday (from Gabe's fills; journal picks up the exact prices from Flex)
+
+| position | reference alert | stop / rule | note |
+|---|---|---|---|
+| OKTA call | LVL 09:52 @177.40 (plan line 173.10), ORB9 09:54 @177.49, LVL 10:03 @179.84 (15d pivot) | at the close: entry bar's low, CLOSE basis (today's low 170.22 so far); trail = 20-day SMA close | +8% day = catalyst-size (B archetype); precision-tier name; grind → 20 EMA trail, spike (3x) → sell strength |
+| IREN shares | UR 09:44 @42.81 | CLOSED 9/14 pm on a loss of VWAP (discretionary day-trade exit; the rule stop 41.78 was never touched) | peaked ~+1R midday |
+| PLTR straddle (~11 DTE) | screen 9/14: FVR 1.27, IVpct 16%, half size | hold to expiry; no re-centre, no flat-take | earnings T+50 |
+| UBER straddle (~11 DTE) | screen 9/14: FVR 1.25, IVpct 26%, half size | hold to expiry; no re-centre, no flat-take | earnings T+51 |
+| BWET short | PARA 09:49 @700.91 (hidden: short before 10:30 = F) | closed (round trip) | tanker gapped down 3.6% at the open, bounced to 790, 748 midday |
+| FTNT 10/16 170C, 190C sold against it 9/14 | bought 9/2 @4.35; 190C sold ~3.25 → 170/190 call spread, net ~1.10 | max loss ~1.10; hold; take 50-75% of the 20 width if it gets there; cap 190 (+12%) | broke 165.75 + all EMAs on the cyber day 9/14; 52wk high 173.89 next; earnings 11/4 after expiry |
+| CRWD spreads | 10/16 190/180 x2 + 9/18 195/185 | CLOSED 9/14 | campaign P&L in the journal once Flex lands |
+| QQQ 10/2 710/703 bull put | Friday screener 9/14, Bullish_LowIV cell (0.45/0.35Δ, no stop), ~2.30 cr | hold to expiry per the playbook; 1.5% alloc (SPY dcal also on) | FOMC Wed inside the hold |
+| MRVL short | BIR 14:29 @222.74 (C, gated): bounce 218.96->224.09 into the 21 EMA 224.15; gap-reclassified day SHORT | stop 225.30 (0.21 ADR, in noise); covers: 50 EMA 221.25 / VWAP 219.80 / 10-day 220.10 / open 215.98 | intraday trend was UP all day (higher lows from 213.63); closed near the high |
+| ALAB bull put, ROLLED 9/14 -> 10/2 240/230 x2 | 9/18 250/240 (avg cr 1.59) closed ~2.9, 10/2 240/230 sold ~2.05 (net debit ~0.85 on the roll); campaign net so far ~ +0.75/sh | short 240 = 8% under 261.76 (1.3 ADR), 18 DTE; line: a close under ~245 -> roll again or close; FOMC Wed inside | journal tracks the roll as one campaign (lib/journal/campaigns.py) |

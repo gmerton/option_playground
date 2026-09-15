@@ -8,7 +8,7 @@
   ... --shown-only      # drop out-of-play alerts (what the monitor actually showed)
   ... --rescore         # re-score everything (scores are cached in logs/alert_study_scores*.csv)
 
-Replays run the CURRENT detector code over the universe (universe_latest.txt + universe_short.txt +
+Replays run the CURRENT detector code (ORB9 index gate OFF, so every break is collected and tagged) over the universe (universe_latest.txt + universe_short.txt +
 universe_study_extra.txt, a study-only control set of large caps the live monitor never streams)
 and overwrite that date's replay logs. Tradier keeps ~20 sessions of 1-min bars, so replays only
 reach back about a month; scores and bars are cached so older sessions stay studyable.
@@ -37,7 +37,7 @@ def replay(start: str, end: str) -> None:
     d, e = date.fromisoformat(start), date.fromisoformat(end)
     while d <= e:
         if d.weekday() < 5:
-            r = subprocess.run([sys.executable, "run_universe_monitor.py", *syms, "--replay", d.isoformat(), "--index-gate"],
+            r = subprocess.run([sys.executable, "run_universe_monitor.py", *syms, "--replay", d.isoformat(), "--index-gate", "--orb-no-index-gate"],
                                cwd=REPO, capture_output=True, text=True)
             last = [l for l in r.stdout.splitlines() if l.startswith("replay:")]
             print(f"{d}: rc={r.returncode} {last[0] if last else ''}", flush=True)

@@ -13,6 +13,9 @@ curated universe and a 39-name no-hindsight control set (data/studies/alert_filt
          B  09:41-12:00 on a day-LONG name, any kind             09:41-10:00 +0.07 on both sets; nothing later
                                                                  separates once the universe is controlled
   SHORT  F  daily chart not SHORT, or before 10:30 ET            unchanged from v1
+         F  name >= +3% vs SPY on the day at the alert (v2.1)    -0.16R n=1,347, negative on BOTH sets and BOTH
+                                                                 halves, -0.13R even after 10:30 (GH 9/14: day-SHORT
+                                                                 from Friday, +7% on the day, BIR kept firing)
          C  day-SHORT name at/after 10:30                        shorts ~0 / negative on both sets: still no edge
 
 Dropped from v1: the A grade (ORB9 at/after 10:00) -- +0.70R on the curated names but -0.39R (83% stopped) on the
@@ -26,11 +29,12 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
-RUBRIC_VERSION = "v2-2026-09-13"
+RUBRIC_VERSION = "v2.1-2026-09-14"
 SHORT_KINDS = ("BIR", "FBO", "PARA")
 LONG_OPEN_UNTIL = 9 * 60 + 40  # 09:40 ET: alerts at/before this minute are the opening flood (C)
 LONG_NOON = 12 * 60            # after 12:00 ET: afternoon entries are C
 SHORT_AFTER = 10 * 60 + 30    # 10:30 ET
+SHORT_RS_VETO_PCT = 3.0       # v2.1: a short on a name this far ABOVE SPY on the day is F (day leader)
 VERDICT = {"A": "good", "B": "good", "C": "gray_area", "F": "bad"}
 
 # Leveraged / inverse ETFs are graded on the index they track, with the side flipped for inverse funds.
@@ -75,10 +79,11 @@ def _hhmm(m: int) -> str:
     return f"{m // 60:02d}:{m % 60:02d}"
 
 
-def setup_grade(side: str, kind: str | None, minute: int, day_state: str | None) -> Grade:
+def setup_grade(side: str, kind: str | None, minute: int, day_state: str | None, rs_spy: float | None = None) -> Grade:
     """side 'long'/'short'; kind = alert kind (UR/ORB9/LVL/BIR/FBO/PARA) or None for an entry no alert
     matched; minute = ET minutes since midnight of the alert (or of the fill when unmatched);
-    day_state = LONG/SHORT/OUT from lib.alerts.daily_state."""
+    day_state = LONG/SHORT/OUT from lib.alerts.daily_state; rs_spy = the name's day change minus SPY's, in %,
+    at the alert / fill (None = unknown, no veto)."""
     side = side.lower()
     want = "LONG" if side == "long" else "SHORT"
     ds = day_state or "?"
@@ -99,12 +104,16 @@ def setup_grade(side: str, kind: str | None, minute: int, day_state: str | None)
     early = minute < SHORT_AFTER
     comp.append(("time", _hhmm(minute), ">=10:30", "fail" if early else "pass"))
     comp.append(("setup", kind or "no alert", "-", "cap C (no short edge yet)"))
+    strong = rs_spy is not None and rs_spy >= SHORT_RS_VETO_PCT
+    comp.append(("rs_spy", "?" if rs_spy is None else f"{rs_spy:+.1f}%", f"< +{SHORT_RS_VETO_PCT:.0f}%", "fail" if strong else "pass"))
     if not day_ok:
         return Grade("F", f"daily chart is {ds}, not SHORT (out of play for shorts)", tuple(comp))
+    if strong:
+        return Grade("F", f"short on a day leader ({rs_spy:+.1f}% vs SPY): -0.16R cell, never shown", tuple(comp))
     if early:
         return Grade("F", "short before 10:30", tuple(comp))
     return Grade("C", "day-SHORT name after 10:30 (shorts cap at C)", tuple(comp))
 
 
-def grade_alert(kind: str, minute: int, day_state: str | None) -> Grade:
-    return setup_grade("short" if kind in SHORT_KINDS else "long", kind, minute, day_state)
+def grade_alert(kind: str, minute: int, day_state: str | None, rs_spy: float | None = None) -> Grade:
+    return setup_grade("short" if kind in SHORT_KINDS else "long", kind, minute, day_state, rs_spy)

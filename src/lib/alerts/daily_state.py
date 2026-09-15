@@ -17,6 +17,8 @@ resistance (not the window max: INTC's June 142 high would hide the 8/13 107.57 
 INTC 9/10/2026: prior close +2.5 ADR over the 21, 0.3 ADR under the 8/13 high (107.57) -> SHORT.
 INTC 9/4/2026 (prior close 9/3): over the 9, under the 21 -> OUT (unconfirmed reclaim; the move was a
 daily-21-EMA reclaim, which no intraday detector trades yet).
+GAP DAYS: the state is re-run at the first bar with the open as a provisional close when the open is >= GAP_RECLASS_ADR
+from the prior close (reclassify_open) -- TER 9/14/2026 opened -7.6% under every EMA and would otherwise stay LONG.
 """
 from __future__ import annotations
 from dataclasses import dataclass
@@ -49,6 +51,7 @@ class DayState:
     res_level: float = 0.0        # prior swing high (0 = none)
     res_gap_adr: float = 99.0     # (res_level - close) in ADR units; negative = closed above it
     up_days: int = 0              # consecutive up closes into the prior close
+    ema21_slope5_pct: float = 0.0  # 21 EMA vs 5 sessions ago, % (reclassify_open shifts the window by a day)
 
 
 def swing_highs(h: pd.Series) -> list[float]:
@@ -66,25 +69,11 @@ def nearest_swing_high(h: pd.Series, close: float, adr: float) -> float:
     return min(cands) if cands else 0.0
 
 
-def classify(hist: pd.DataFrame) -> DayState:
-    """hist: daily bars (open/high/low/close) up to and including the PRIOR session, oldest first."""
-    c, h, l = hist["close"].astype(float), hist["high"].astype(float), hist["low"].astype(float)
-    if len(c) < 30:
-        return DayState(reason="short history")
-    e9, e21 = c.ewm(span=9, adjust=False).mean(), c.ewm(span=21, adjust=False).mean()
-    adr = float((h / l - 1).tail(20).mean() * 100) or 1.0
-    close, ema9, ema21 = float(c.iloc[-1]), float(e9.iloc[-1]), float(e21.iloc[-1])
-    ext21 = (close / ema21 - 1) * 100 / adr
-    rising = bool(e21.iloc[-1] > e21.iloc[-1 - SLOPE_DAYS])
-    up = 0
-    for x in (c.diff() > 0).iloc[::-1]:
-        if not x: break
-        up += 1
-    res = nearest_swing_high(h, close, adr)
-    gap = (res / close - 1) * 100 / adr if res else 99.0
-    s = DayState(ext21_adr=round(ext21, 2), ext9_pct=round((close / ema9 - 1) * 100, 2), ema21_rising=rising,
+def _decide(ext21: float, rising: bool, below9: bool, below21: bool, up: int, res: float, gap: float,
+            ext9_pct: float) -> DayState:
+    """The decision ladder, shared by classify (prior close) and reclassify_open (today's open as a provisional close)."""
+    s = DayState(ext21_adr=round(ext21, 2), ext9_pct=round(ext9_pct, 2), ema21_rising=rising,
                  res_level=round(res, 2), res_gap_adr=round(gap, 2), up_days=up)
-    below9, below21 = close < ema9, close < ema21
     # exhaustion first: an extended name at a prior high is a short candidate, never a long
     if ext21 >= EXH_MIN_EXT and res and -EXH_ABOVE_ADR <= gap <= EXH_BELOW_ADR:
         s.state, s.reason = "SHORT", f"exhaustion: +{ext21:.1f} ADR over the 21 EMA into the prior high {res:.2f}"
@@ -120,4 +109,51 @@ def classify(hist: pd.DataFrame) -> DayState:
     kind = ("pullback into the rising 9/21 EMAs" if (below9 and below21) else
             "near the rising 21 EMA" if rising else "near the 21 EMA")
     s.reason = f"{kind} ({ext21:+.1f} ADR)" + (f", {gap:.1f} ADR to the prior high {res:.2f}" if res and 0 < gap < 99 else "")
+    return s
+
+
+def classify(hist: pd.DataFrame) -> DayState:
+    """hist: daily bars (open/high/low/close) up to and including the PRIOR session, oldest first."""
+    c, h, l = hist["close"].astype(float), hist["high"].astype(float), hist["low"].astype(float)
+    if len(c) < 30:
+        return DayState(reason="short history")
+    e9, e21 = c.ewm(span=9, adjust=False).mean(), c.ewm(span=21, adjust=False).mean()
+    adr = float((h / l - 1).tail(20).mean() * 100) or 1.0
+    close, ema9, ema21 = float(c.iloc[-1]), float(e9.iloc[-1]), float(e21.iloc[-1])
+    ext21 = (close / ema21 - 1) * 100 / adr
+    rising = bool(e21.iloc[-1] > e21.iloc[-1 - SLOPE_DAYS])
+    up = 0
+    for x in (c.diff() > 0).iloc[::-1]:
+        if not x: break
+        up += 1
+    res = nearest_swing_high(h, close, adr)
+    gap = (res / close - 1) * 100 / adr if res else 99.0
+    s = _decide(ext21, rising, close < ema9, close < ema21, up, res, gap, (close / ema9 - 1) * 100)
+    s.ema21_slope5_pct = round((ema21 / float(e21.iloc[-1 - SLOPE_DAYS]) - 1) * 100, 3)
+    return s
+
+
+GAP_RECLASS_ADR = 1.0     # an open this many ADR away from the prior close re-runs the ladder with the open as the close
+
+
+def reclassify_open(ctx, open_px: float) -> DayState:
+    """Today's open as a provisional close (2026-09-14: TER/MRVL/LITE/DRAM gapped ~7% under every daily EMA and were
+    still tagged day-LONG from Friday's close). EMAs update exactly from the stored values; the 21-EMA slope uses the
+    stored 5-day slope shifted one day; up-day streak resets on a gap down; the prior swing high is unchanged."""
+    adr = ctx.adr_pct or 1.0
+    e9n = ctx.ema9 + (2 / 10) * (open_px - ctx.ema9)
+    e21n = ctx.ema21 + (2 / 22) * (open_px - ctx.ema21)
+    slope = getattr(ctx, "ema21_slope5_pct", None)
+    if slope is None or (slope == 0.0 and not getattr(ctx, "ema21_rising", False)):
+        rising_prev = bool(getattr(ctx, "ema21_rising", False)) or ("rising" in (getattr(ctx, "day_reason", "") or ""))
+        rising = rising_prev and e21n >= ctx.ema21           # no slope stored (old cache): a gap that pulls the EMA down ends "rising"
+    else:
+        e21_5ago = ctx.ema21 / (1 + slope / 100)
+        rising = e21n > e21_5ago
+    ext21 = (open_px / e21n - 1) * 100 / adr
+    up = (ctx.up_days + 1) if open_px > ctx.prev_close else 0
+    res = ctx.res_level or 0.0
+    gap = (res / open_px - 1) * 100 / adr if res else 99.0
+    s = _decide(ext21, rising, open_px < e9n, open_px < e21n, up, res, gap, (open_px / e9n - 1) * 100)
+    s.reason = f"gap {100 * (open_px / ctx.prev_close - 1):+.1f}% ({(open_px / ctx.prev_close - 1) * 100 / adr:+.1f} ADR) -> {s.reason}"
     return s

@@ -7,6 +7,8 @@ Replay:  PYTHONPATH=src .venv/bin/python3 run_universe_monitor.py --replay 2026-
          (feeds 1-min bars through the same books + detectors; bars come from data/cache/intraday_1min first --
           backfill older sessions with run_fetch_intraday_polygon.py -- then Tradier, which keeps ~20 sessions)
 
+Gap days: at the first bar, an open >= 1 ADR from the prior close re-runs the daily in-play state with the open as a
+provisional close (GAP lines in the log; a gap-down on a day-SHORT name is left alone -- that is the crack).
 Detectors: long = UR (undercut & reclaim), ORB9 (opening-range break above the daily 9 EMA), LVL (first 1-min close
 through the 15-session pivot or a hand level -- data/watchlist/levels.csv `ticker,level,note` + alerts_latest.csv
 buy-stop rows -- above VWAP on 1.1x+ volume pace; tagged PRECISION for the validated Adhikary cohort);
@@ -34,12 +36,14 @@ import pandas as pd
 
 from lib.alerts.bars import Bar, SymbolBook
 from lib.alerts.context import load_context
+from lib.alerts.daily_state import GAP_RECLASS_ADR, reclassify_open
 from lib.alerts.detectors import DETECTORS, INDEX_SYMBOLS, SHORT_KINDS, Alert, IndexState, SymbolState, precision_tier, symbol_levels
 from lib.alerts.grading import RUBRIC_VERSION, Grade, grade_alert, resolve, setup_grade
 from lib.alerts.publish import AlertPublisher
 from lib.alerts.stream import trades
 from lib.alerts.universe import build_universe
 from lib.journal.exit_kind import bars_1min   # cache-first 1-min bars (data/cache/intraday_1min), Tradier behind it
+from lib.tradier.get_daily_history import get_intraday_bars
 from lib.tradier.tradier_client_wrapper import TradierClient
 
 REPO = Path(__file__).resolve().parent
@@ -135,6 +139,44 @@ def print_levels(eng) -> None:
         print("  " + line)
 
 
+async def seed_books_from_today(eng: "Engine", session: date, client: TradierClient) -> int:
+    """Mid-session start (2026-09-14 restart bug): rebuild every book -- open, high/low, opening range, cumulative
+    VWAP -- from today's 1-min bars so the gap re-classification sees the TRUE open and the detectors a real VWAP.
+    Detectors are NOT run on the seeded bars (their alerts already printed before the restart); ORB9 is disqualified
+    if the seed reaches past 10:00 and LVL levels the session high already exceeded are marked spent."""
+    now = datetime.now(ZoneInfo("America/New_York"))
+    if now.time() <= time(9, 31) or session != now.date():
+        return 0
+    from lib.alerts.detectors import ORB_BY
+    sem = asyncio.Semaphore(2); n = 0
+    async def one(sym: str):
+        nonlocal n
+        async with sem:
+            try:
+                m = await get_intraday_bars(sym, session, interval="1min", client=client)
+            except Exception:  # noqa: BLE001
+                return
+        if m is None or m.empty:
+            return
+        book = eng.books[sym]
+        for t, r in m.iterrows():
+            b = Bar(t.to_pydatetime(), float(r.open), float(r.high), float(r.low), float(r.close), float(r.volume), 0.0)
+            book.on_bar(b, bar_vwap=float(r.vwap) if "vwap" in r and pd.notna(r.vwap) else None)
+        n += 1
+        if sym in eng.state:
+            st = eng.state[sym]
+            if now.time() > time(10, 0):
+                st.orb_disqualified = True
+            for lv, _ in st.levels:
+                if book.session_high >= lv:
+                    st.lvl_fired.add(lv)
+    await asyncio.gather(*(one(s) for s in list(eng.books)))
+    for sym in list(eng.ctx):
+        if sym not in eng.reclassed and eng.books[sym].session_open is not None:
+            eng._gap_reclassify(sym, now.replace(tzinfo=None))
+    return n
+
+
 def print_industries(eng) -> None:
     """Pre-market line: each industry ETF's daily in-play state (same classifier as the stocks)."""
     rows = []
@@ -219,10 +261,40 @@ class Engine:
             self.oop_log.write_text(""); self.oop_jsonl.write_text("")
         self.fired: list[Alert] = []
         self.oop: list[Alert] = []
+        self.reclassed: set[str] = set()      # names whose day state was re-run at the open (gap days)
+
+    def _gap_reclassify(self, sym: str, t: datetime) -> None:
+        """First bar of the session: if the open is >= GAP_RECLASS_ADR from the prior close, re-run the day-state ladder
+        with the open as a provisional close (2026-09-14: TER/MRVL/LITE/DRAM/SNDK gapped ~7% under every daily EMA and
+        fired UR longs as day-LONG names). A gap DOWN on a day-SHORT name is left alone: that gap is the crack the
+        parabolic / exhaustion short waits for."""
+        self.reclassed.add(sym)
+        book, ctx = self.books[sym], self.ctx[sym]
+        if book.session_open is None or not ctx.prev_close or not ctx.adr_pct:
+            return
+        gap_adr = (book.session_open / ctx.prev_close - 1) * 100 / ctx.adr_pct
+        if abs(gap_adr) < GAP_RECLASS_ADR or (ctx.day_state == "SHORT" and gap_adr < 0):
+            return
+        ds = reclassify_open(ctx, book.session_open)
+        if ds.state == ctx.day_state:
+            return
+        prior = ctx.day_state
+        ctx.day_state_prior, ctx.day_state = prior, ds.state
+        ctx.day_reason = f"{ds.reason} [gap-reclassified from {prior}]"
+        if ds.state == "SHORT":
+            self.short_syms.add(sym)
+        elif sym in self.short_syms and sym in self.long_syms:      # auto-added short, not a manual short-list name
+            self.short_syms.discard(sym)
+        line = f"[{t:%Y-%m-%d %H:%M}] {sym:6s} GAP   day {prior} -> {ds.state}: {ctx.day_reason}"
+        print(line, flush=True)
+        with self.log.open("a") as fh:
+            fh.write(line + "\n")
 
     def on_closed_bar(self, sym: str, b: Bar) -> None:
         if sym not in self.ctx:                        # SPY/QQQ: state only
             return
+        if sym not in self.reclassed:
+            self._gap_reclassify(sym, b.t)
         book, ctx, st = self.books[sym], self.ctx[sym], self.state[sym]
         is_short_name = sym in self.short_syms
         for name, det in self.named_detectors:
@@ -258,8 +330,10 @@ class Engine:
         c = self.ctx.get(a.symbol)
         ds = getattr(c, "day_state", "") if c is not None else ""
         a.fields["day_state"], a.fields["day_reason"] = ds, getattr(c, "day_reason", "")
+        if getattr(c, "day_state_prior", ""):
+            a.fields["day_state_prior"] = c.day_state_prior
         want = "SHORT" if a.kind in SHORT_KINDS else "LONG"
-        if a.kind == "LVL" and ds == "OUT" and a.fields["day_reason"].startswith("no room"):
+        if a.kind == "LVL" and ds == "OUT" and "no room" in a.fields["day_reason"]:
             # the daily gate says "no room to the prior high"; a close through that high is the resolution, not a chase
             a.fields["day_state_raw"], ds = ds, "LONG"
             a.msg += " | day OUT (no room) -> LONG: the break resolves it"
@@ -281,7 +355,7 @@ class Engine:
         if gsym != a.symbol:                          # leveraged / inverse ETF: grade on the tracked index
             k2 = self.idx.ref_ctx.get(gsym) or self.ctx.get(gsym)
             gds = getattr(k2, "day_state", "") if k2 is not None else ds
-        g = setup_grade(gside, a.kind, a.t.hour * 60 + a.t.minute, gds or None)
+        g = setup_grade(gside, a.kind, a.t.hour * 60 + a.t.minute, gds or None, a.fields.get("rs_spy"))
         if a.fields.get("green_day_short"):
             g = Grade("F", "extended-up short still green on the day", g.components)
         a.fields.update(grade=g.grade, grade_why=g.why, rubric=RUBRIC_VERSION)
@@ -333,6 +407,11 @@ async def run_live(args) -> int:
     eng.idx.ref_ctx = {s: ctx[s] for s in set(INDEX_SYMBOLS) | etfs if s in ctx}
     print_industries(eng)
     print_levels(eng)
+    async with TradierClient(api_key=os.environ["TRADIER_API_KEY"]) as _seed_client:
+        seeded = await seed_books_from_today(eng, session, _seed_client)
+    if seeded:
+        print(f"[{datetime.now():%H:%M:%S}] mid-session start: seeded {seeded} books from today's 1-min bars "
+              f"(true open / VWAP / range restored; gap re-classification run on the real open)")
     print(f"[{datetime.now():%H:%M:%S}] streaming {len(ctx)} names + SPY/QQQ | detectors {args.detectors} | log {eng.log}"
           f"{' | publishing to the journal site' if pub else ''}{' | UR index-gated' if args.index_gate else ''}{' | sound on' if args.sound else ''}")
     print("  " + " ".join(sorted(ctx)))
@@ -461,9 +540,13 @@ def main() -> int:
     ap.add_argument("--index-gate", action="store_true", help="no-op since rubric v1 (2026-09-10): the setup grade in lib/alerts/grading.py decides loud / dimmed / out of play")
     ap.add_argument("--publish", action="store_true", help="replay: also publish the replayed alerts")
     ap.add_argument("--no-day-gate", action="store_true", help="don't dim alerts against the daily in-play direction")
+    ap.add_argument("--orb-no-index-gate", action="store_true", help="study mode: ORB9 never suppressed on the index (every break fires, tagged spy_below / group_leading)")
     args = ap.parse_args()
     if "TRADIER_API_KEY" not in os.environ:
         print("TRADIER_API_KEY not set"); return 2
+    if args.orb_no_index_gate:
+        import lib.alerts.detectors as _det
+        _det.ORB_INDEX_GATE = False
     try:
         return asyncio.run(run_replay(args) if args.replay else run_live(args))
     except KeyboardInterrupt:

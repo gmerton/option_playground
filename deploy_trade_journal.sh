@@ -28,6 +28,10 @@ echo "Syncing data/journal/ -> s3://$BUCKET/ ..."
 # deploy from a checkout that lacks today's file can't delete it.
 PYTHONPATH=src:. .venv/bin/python3 run_journal_home.py   # site home page (data/journal/index.html)
 aws s3 sync data/journal/ "s3://$BUCKET/" --delete --exclude "alerts/*"
+# S3 serves HTML as bare text/html; without an explicit charset the browser may guess Windows-1252 and turn
+# en dashes into "â€“" (seen 2026-09-14 on the QCOM tutorial). Restamp every HTML object with charset=utf-8.
+aws s3 cp "s3://$BUCKET/" "s3://$BUCKET/" --recursive --exclude "*" --include "*.html" --exclude "alerts/*" \
+  --content-type "text/html; charset=utf-8" --metadata-directive REPLACE --only-show-errors
 
 echo "Invalidating CloudFront cache ..."
 aws cloudfront create-invalidation --distribution-id "$DIST_ID" --paths "/*" \

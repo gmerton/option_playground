@@ -206,3 +206,68 @@ point-in-time test says otherwise. Shorts stay capped at C; day gate stays as di
 the same 153 sessions: curated B +0.09 (halves +0.09 / +0.10) vs C −0.19 (−0.31 / −0.10) — ranks. Control B −0.12 vs
 C −0.08 — nothing positive and no separation, i.e. the rubric grades the time floor, it does not claim an edge on
 names picked without hindsight. Journal entries re-grade under v2 on the next `run_journal_grades.py` run.
+
+### Shorts: search for any cell that earns a B (2026-09-13, 11,061 short alerts, curated + control)
+
+No short cohort is positive on both universes and both halves: not by kind, time bucket, day state, SPY vs VWAP,
+extension, level type, or in-play vs hidden. Profit-target covers (cover at +0.25R … +2R if the MFE reaches it, else
+hold-to-close) do not fix it either: best −0.01R at +0.25R (73% win, losers eat it), and every target is negative on
+the curated set in both halves. Half the shorts do reach +0.5R MFE, a quarter reach +1R, so the entries are not
+random — the exits and the losers are the problem, and no simple exit rescues them. Nearest to a cell, 3 of 4 splits
+positive but small: PARA 10:30–12:00 (+0.05 / +0.11, n=160), FBO 10:30–11:00 (n=1,079). Worst cell anywhere:
+shorts on names >4 ADR over the 21 EMA, −0.22R, negative in all four splits (n=274) — the BWET-shaped trade.
+Shorts stay capped at C = "unproven setup"; the journal keeps scoring trader-selected shorts separately so a
+discretionary cohort can earn its own cell if it accumulates a positive record.
+
+### Gap days and the VWAP reclaim (2026-09-14, `run_gap_reclaim_study.py`, 153 sessions, curated + control)
+
+Prompted by 9/14: MRVL / TER / LITE / DRAM / SNDK fired UR after semis gapped ~7% down and were still tagged day-LONG
+from Friday's close. Gap = open vs prior close in ADR units; group gap = mean of the name's group; halves × sets.
+
+| UR cohort | n | R | win | stopped | 4 splits |
+|---|---|---|---|---|---|
+| name gap-down 1–1.5 ADR | 163 | **−0.13** | 33% | 44% | 3 of 4 negative |
+| name gap-down 0.5–1 ADR | 1,048 | +0.10 | 42% | 45% | mixed |
+| name gap-down 0.15–0.5 ADR | 2,880 | +0.06 | 42% | 44% | mixed |
+| flat open | 1,955 | 0.00 | | | |
+| name gap-UP 0.15–0.5 / >0.5 ADR | 937 / 446 | −0.02 / −0.01 | | | ~0 everywhere |
+| gap-down ≥0.5 ADR, alert 09:30–09:40 | 204 | **−0.31** | 25% | 63% | |
+| gap-down ≥0.5 ADR, alert 09:41–10:00 | 537 | **+0.22** | 42% | 49% | **all 4 positive** |
+| group gap ≤ −2%, alert 09:30–09:40 | 150 | **−0.41** | 22% | 69% | curated only |
+| group gap ≤ −2%, alert 09:41–10:00 / 10–12 | 445 / 405 | +0.16 / +0.11 | | | curated only |
+| group ≤ −2% AND name ≤ −1 ADR (the MRVL/TER case), 09:41–10:00 | 50 | +0.11 | 40% | 44% | both halves + (curated only) |
+| QQQ gap ≤ −1.5% (a broad gap-down day) | 380 | **+0.41** | 53% | 31% | **all 4 positive** |
+| QQQ gap −1.5..−0.75% | 1,711 | −0.05 | 37% | 49% | |
+
+Readings. (1) The asymmetry is real but reversed from the intuition: gap-UP reclaims are the flat ones (~0 in every
+split); modest gap-DOWN reclaims are the better cohort. (2) Timing dominates direction: a reclaim in the first ten
+minutes on a gapped-down name or group is the worst cell in the whole study (−0.31 / −0.41, 63–69% stopped); the same
+reclaim after 09:40 is the best robust UR cell (+0.22, positive on both universes and both halves). (3) A name gap of
+1–1.5 ADR is negative regardless of time → the open-time re-classification at 1 ADR (built 9/14) is supported; the
+MRVL/TER sub-cell after 09:40 is +0.11 on n=50, so the gate costs a little recall there — precision over recall.
+(4) The biggest index gap-downs (QQQ ≤ −1.5%, 9/14 qualified at −1.6%) are the best UR days, +0.41 robust; the
+9/14 losses (ZETA 09:40, NUE 10:13) were the opening-window and the ordinary-failure cases, not the gap cases.
+Being under the daily 9 EMA at the reclaim does not separate on ≥1 ADR gaps (−0.00 vs −0.23 above it).
+
+### ORB9 with the index gate OFF (2026-09-14 evening re-replay, 153 sessions, every break collected and tagged)
+
+Until 9/14 ORB9 could not fire while SPY was under its VWAP, so there was no data on that cell (0 of 1,086). With the
+gate off the replay yields 1,431 ORB9 alerts, 319 of them with SPY under VWAP. Group-leading = the name's industry
+ETF above its own VWAP, or 2/3+ of 3+ tracked peers green (control-set names carry no group, so their cells are NaN).
+
+| ORB9 cohort | n | R | win | stopped | curA | curB | ctlA | ctlB |
+|---|---|---|---|---|---|---|---|---|
+| SPY above VWAP (the old shown set) | 1,112 | +0.49 | 23% | 75% | +1.05 | +0.32 | −0.41 | −0.39 |
+| SPY below VWAP, all | 319 | +0.07 | 23% | 76% | −0.41 | +0.36 | −0.55 | +1.05 |
+| SPY below, group NOT leading | 159 | −0.09 | 20% | 79% | −0.34 | −0.40 | −0.55 | +1.05 |
+| SPY below, group LEADING | 160 | +0.24 | 26% | 73% | −0.46 | +0.68 | n/a | n/a |
+| SPY below, 10:00–10:30 | 99 | +0.35 | 25% | 74% | −0.61 | +0.61 | −1.00 | +2.56 |
+| SPY below, 10:30–12:00 | 101 | −0.12 | 16% | 82% | −0.86 | +0.61 | −1.00 | +0.24 |
+
+Reading. The group-aware rule shipped 9/14 (suppress only when SPY is under VWAP AND the group is not leading) is
+DIRECTIONALLY supported: leading +0.24R / 26% win / 73% stopped vs not-leading −0.09R / 20% / 79%. It is NOT robust:
+the leading cell flips sign across halves (−0.46 / +0.68) on n=160, and every ORB9 cell is negative on the control set
+regardless of the index, which restates the earlier finding that ORB9's return is the curated universe. Decision: keep
+the group-aware gate live (a loosening the data does not contradict, and it restores the leaders on divergence days
+such as CRWD 9/14), keep every ORB9 tagged, and re-cut this table when the second half has more sessions. Do not
+promote "SPY below + group leading" to a grade cell.

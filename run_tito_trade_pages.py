@@ -311,7 +311,8 @@ def trade_page(d: dict) -> str:
             ("Underlying", f"close {i.get('und_entry_close', '—')} on entry day, {i.get('und_move_to_exp', '—')}% to expiry")]
     if i["ticker"] in PROXY_NOTE: rows.insert(0, ("⚠ Proxy", PROXY_NOTE[i["ticker"]]))
     tbl = "".join(f"<tr><th>{a}</th><td>{b}</td></tr>" for a, b in rows)
-    return f"""<title>Tito #{i['n']} {e(i['ticker'])} {i['cp']} +{i['ret']:,.0f}%</title>
+    return f"""<meta charset="utf-8">
+<title>Tito #{i['n']} {e(i['ticker'])} {i['cp']} +{i['ret']:,.0f}%</title>
 <style>{DETAIL_CSS}
  table.facts {{ border-collapse: collapse; width: 100%; font-size: 13px; }}
  table.facts th {{ text-align: left; color: var(--muted); font-weight: 500; padding: 5px 12px 5px 0; width: 230px; vertical-align: top; }}
@@ -347,7 +348,8 @@ def index_page(ds: list[dict]) -> str:
                     f"<td>{i['setup']}</td><td>{i.get('cat_tag') or '&mdash;'}</td><td>{i['expiry']} {k}{' (BITO proxy)' if i['ticker'] in PROXY_NOTE else ''}</td><td class='num'>{i['dte']}</td><td class='num'>{i['days_in']}</td>"
                     f"<td class='num'>{i['entry_px']:.2f}</td><td class='num'><b>+{i['ret']:,.0f}%</b> ({i['ret_x']}x)</td>"
                     f"<td class='num'>{fmt_x(i.get('x_at_exp_from_his_entry'))}</td><td class='num'>{fmt_x(i.get('x_max_eod_from_his_entry'))}</td><td class='num'>{fmt_x((i.get('scale') or {}).get('s50'))}</td><td>{reached}</td></tr>")
-    return f"""<title>Tito's Best Trades</title>
+    return f"""<meta charset="utf-8">
+<title>Tito's Best Trades</title>
 <style>{BASE_CSS}
  body {{ padding: 24px 28px 50px; }} h1 {{ font-size: 22px; margin: 10px 0 4px; }} .sub {{ color: var(--muted); font-size: 12.5px; margin-bottom: 16px; max-width: 980px; }}
  a.back {{ color: var(--accent); text-decoration: none; font-size: 12.5px; }}

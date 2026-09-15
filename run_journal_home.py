@@ -34,7 +34,7 @@ def main() -> int:
     for href, title, desc in SECTIONS:
         ok = (ROOT / href).exists()
         cards.append(f'<a class="card{"" if ok else " missing"}" href="{href}"><h2>{title}</h2><p>{desc}{"" if ok else " (not generated yet)"}</p></a>')
-    page = (f"<title>Trading Journal</title>\n<style>{BASE_CSS}{CSS}</style>\n<h1>Trading journal</h1>\n"
+    page = (f"<meta charset=\"utf-8\">\n<title>Trading Journal</title>\n<style>{BASE_CSS}{CSS}</style>\n<h1>Trading journal</h1>\n"
             f'<div class="sub">Private site. Updated {datetime.now():%Y-%m-%d %H:%M}.</div>\n<div class="grid">{"".join(cards)}</div>\n')
     (ROOT / "index.html").write_text(page)
     print(f"wrote {ROOT / 'index.html'} ({sum(1 for h, *_ in SECTIONS if (ROOT / h).exists())}/{len(SECTIONS)} sections present)")

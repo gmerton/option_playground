@@ -45,6 +45,9 @@ class DailyCtx:
     sma20: float = 0.0
     up_days: int = 0
     hi52: float = 0.0               # 52-week high (prior close basis) -- LVL precision tag
+    ema21_rising: bool = False      # 21 EMA above its value 5 sessions ago (for the gap-day re-classification)
+    ema21_slope5_pct: float = 0.0
+    day_state_prior: str = ""       # set by the engine when a gap re-classification changed the state (original state)
     stack_days: int = 0             # consecutive sessions with 10 > 20 > 50 SMA into the prior close
 
     def levels_above(self) -> list[tuple[str, float]]:
@@ -85,6 +88,7 @@ def _ctx_from_hist(sym: str, hist: pd.DataFrame) -> DailyCtx:
         res_level=ds.res_level, res_gap_adr=ds.res_gap_adr,
         sma10=float(c.rolling(10).mean().iloc[-1]), sma20=float(c.rolling(20).mean().iloc[-1]), up_days=ds.up_days,
         hi52=float(hist["high"].tail(252).max()), stack_days=stack_days,
+        ema21_rising=bool(ds.ema21_rising), ema21_slope5_pct=float(ds.ema21_slope5_pct),
     )
 
 

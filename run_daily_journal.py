@@ -9,6 +9,8 @@ the whole portfolio for the most recent available session:
   - Closed today (exits -- for evaluating exits; flags same-day round trips)
   - Held, untouched today (no fills at all -- for "should we have closed this?")
   - A raw fills table (overtrading pulse: total fills / unique symbols)
+  - Option campaigns touched today: a spread and everything it was rolled into, as ONE entity
+    (lib/journal/campaigns.py; tables journal_campaigns / journal_campaign_trades, rebuilt each run)
   - An empty Notes section per bucket for the daily journaling conversation
 
 NAV data lands ~1 session behind (see [[project_ibkr_flex_nav]] memory), so
@@ -239,6 +241,13 @@ def main() -> None:
         n_pos = upsert_journal_open_positions(opl)
         n_tr = upsert_journal_trades(trl)
         print(f"DB: upserted {n_pos} open positions, {n_tr} trades, NAV row for {_fmt_date(report_date)}")
+        # option campaigns: rolls chained into one entity (lib/journal/campaigns.py); section goes before the notes
+        try:
+            from lib.journal.campaigns import journal_section
+            sec = journal_section(pd.Timestamp(_fmt_date(report_date)).date())
+            md = md.replace("## Overtrading notes", sec + "## Overtrading notes", 1)
+        except Exception as exc:  # noqa: BLE001 -- the journal must still be written
+            print(f"campaign section skipped: {exc.__class__.__name__}: {exc}")
 
     JOURNAL_DIR.mkdir(parents=True, exist_ok=True)
     out_path = JOURNAL_DIR / f"{_fmt_date(report_date)}.md"

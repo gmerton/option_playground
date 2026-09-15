@@ -125,7 +125,8 @@ CSS = """
  table.pnl { border-collapse: collapse; width: 100%; font-size: 13px; } table.pnl td, table.pnl th { padding: 5px 8px; border-bottom: 1px solid var(--border); text-align: left; } td.num { text-align: right; }
 """
 
-PAGE = """<title>__TITLE__</title>
+PAGE = """<meta charset="utf-8">
+<title>__TITLE__</title>
 <style>__CSS__</style>
 __LWC__
 <a class="back" href="../../index.html">&larr; Home</a> &middot; <a class="back" href="../../trade_reviews.html">Trade journal</a>

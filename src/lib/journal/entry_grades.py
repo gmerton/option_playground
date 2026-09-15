@@ -112,13 +112,41 @@ def entries_for(t_day: pd.DataFrame) -> list[dict]:
     return out
 
 
+def _rs_at_fill(sym: str, d: date, dt, ctx: dict) -> float | None:
+    """Name's day change minus SPY's at the fill minute, in % (v2.1 short veto); None if bars are missing."""
+    try:
+        import os
+        from lib.journal.exit_kind import bars_1min
+        from lib.tradier.tradier_client_wrapper import TradierClient
+        c, cs = ctx.get(sym), ctx.get("SPY")
+        if c is None or cs is None or not c.prev_close or not cs.prev_close:
+            return None
+        hm = pd.Timestamp(dt).strftime("%H:%M")
+
+        async def _both():
+            async with TradierClient(api_key=os.environ["TRADIER_API_KEY"]) as client:
+                return await bars_1min(sym, d, client), await bars_1min("SPY", d, client)
+        b_sym, b_spy = asyncio.run(_both())
+        out = []
+        for b, pc in ((b_sym, c.prev_close), (b_spy, cs.prev_close)):
+            if b is None or b.empty:
+                return None
+            bb = b[b.index.strftime("%H:%M") <= hm]
+            if bb.empty:
+                return None
+            out.append((float(bb.close.iloc[-1]) / pc - 1) * 100)
+        return out[0] - out[1]
+    except Exception:  # noqa: BLE001 -- no RS, no veto
+        return None
+
+
 def grade_day(d: date, t_day: pd.DataFrame) -> pd.DataFrame:
     from lib.alerts.context import load_context
     ents = entries_for(t_day)
     if not ents:
         return pd.DataFrame()
     syms = {e["sym"] for e in ents}
-    ctx = asyncio.run(load_context(sorted(syms | {resolve(x, "long")[0] for x in syms}), d))
+    ctx = asyncio.run(load_context(sorted(syms | {resolve(x, "long")[0] for x in syms} | {"SPY"}), d))
     al = alerts_for(d)
     rows = []
     for e in ents:
@@ -129,7 +157,8 @@ def grade_day(d: date, t_day: pd.DataFrame) -> pd.DataFrame:
         m = al[(al.sym == e["sym"]) & (al.side == e["side"]) & (al.mins <= fm) & (fm - al.mins <= MATCH_WINDOW_MIN)] if len(al) else al
         if len(m):
             a = m.sort_values("mins").iloc[-1]
-            g = setup_grade(gside, a.kind, int(a.mins), ds)
+            rs = float(a.rs_spy) if ("rs_spy" in m and pd.notna(a.rs_spy)) else (_rs_at_fill(e["sym"], d, e["dt"], ctx) if e["side"] == "short" else None)
+            g = setup_grade(gside, a.kind, int(a.mins), ds, rs)
             sign = 1 if e["side"] == "long" else -1
             slip = sign * (e["px"] - a.px) / a.px * 100 / adr
             delay = (e["dt"] - pd.Timestamp(f"{d} {a.t}")).total_seconds() / 60
@@ -138,7 +167,8 @@ def grade_day(d: date, t_day: pd.DataFrame) -> pd.DataFrame:
                              grade_why=(g.why if gsym == e["sym"] else f"on {gsym} ({gside}): {g.why}")[:160], slip_adr=round(slip, 3), delay_min=round(delay, 2),
                              exec_ok=int(slip <= SLIP_OK_ADR and delay <= DELAY_OK_MIN), rubric=RUBRIC_VERSION))
         else:
-            g = setup_grade(gside, None, fm, ds)
+            rs = _rs_at_fill(e["sym"], d, e["dt"], ctx) if e["side"] == "short" else None
+            g = setup_grade(gside, None, fm, ds, rs)
             rows.append(dict(trade_date=d, underlying_symbol=e["sym"], t_fill=e["dt"], side=e["side"], qty=e["qty"], fill_px=round(e["px"], 4),
                              alert_kind=None, alert_t=None, alert_px=None, alert_src=al.src.iloc[0] if len(al) else None, day_state=ds,
                              setup_grade=g.grade, grade_why=(g.why if gsym == e["sym"] else f"on {gsym} ({gside}): {g.why}")[:160], slip_adr=None, delay_min=None, exec_ok=None, rubric=RUBRIC_VERSION))

@@ -27,7 +27,7 @@ SHORT_KINDS = ("BIR", "FBO", "PARA")
 PAT = re.compile(r"\[(\d{4}-\d\d-\d\d) (\d\d:\d\d)\] (\S+)\s+(UR|ORB9|LVL|BIR|FBO|PARA)\s+(\(gated\) )?"
                  r"(?:UR reclaim|ORB9 5-min close|LVL break|BIR short|FBO short|PARA short) ([\d.]+).*?\| stop ([\d.]+)")
 TAGS = ("deep flush", "undercut PDL", "opened below", "tagged", "still below 9 EMA", "light vol", "STOP IN NOISE",
-        "GAP", "was an ORB9 long", "STRONGEST IN GROUP", "strongest in group", "[MA]", "[PRICE]", "[VWAP]", "[SWING HIGH]")
+        "GAP", "was an ORB9 long", "GROUP LEADING", "SPY < VWAP (gate off)", "STRONGEST IN GROUP", "strongest in group", "[MA]", "[PRICE]", "[VWAP]", "[SWING HIGH]")
 KEY = ["date", "t", "sym", "kind"]
 
 
@@ -212,8 +212,9 @@ def report_grades(S: pd.DataFrame) -> None:
     that, the rubric is wrong and both the alert display and the journal grades inherit the error."""
     from lib.alerts.grading import RUBRIC_VERSION, setup_grade
     S = S.copy()
-    S["grade"] = [setup_grade(sd, k, int(m), ds if isinstance(ds, str) else None).grade
-                  for sd, k, m, ds in zip(S.side, S.kind, S.mins, S.day_state)]
+    rs = S.rs_spy if "rs_spy" in S else pd.Series([None] * len(S), index=S.index)
+    S["grade"] = [setup_grade(sd, k, int(m), ds if isinstance(ds, str) else None, None if pd.isna(r) else float(r)).grade
+                  for sd, k, m, ds, r in zip(S.side, S.kind, S.mins, S.day_state, rs)]
     print(f"\n== SETUP GRADE {RUBRIC_VERSION} (lib/alerts/grading.py): must rank R in both halves ==")
     print(_tab(S, "grade"))
     print(_tab(S, ["side", "grade"]))
