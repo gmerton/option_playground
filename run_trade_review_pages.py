@@ -56,6 +56,7 @@ from urllib.parse import quote
 from lib.mysql_lib import _get_conn, get_trade_reviews
 from lib.journal.price_cache import get_daily_history_cached, get_intraday_bars_cached
 from lib.tradier.tradier_client_wrapper import TradierClient
+from lib.journal.sortable import SORT_CSS, SORT_JS, sort_date, sort_num, th
 
 INDEX_OUT = Path("data/journal/trade_reviews.html")
 SUMMARY_OUT = Path("data/journal/summary.html")
@@ -448,7 +449,7 @@ SUMMARY_CSS = BASE_CSS + """
   .empty { color: var(--muted); padding: 20px 0; }
   .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; align-items: start; }
   @media (max-width: 700px) { .two-col { grid-template-columns: 1fr; } }
-"""
+""" + SORT_CSS
 
 
 def _strategy_rows(rows: list[dict], spec: dict) -> list[dict]:
@@ -613,18 +614,19 @@ def render_summary_page(rows: list[dict]) -> str:
             if srows_sorted:
                 trow_html = "".join(
                     f'<tr onclick="location.href=\'trades/{r["detailFile"]}\'">'
-                    f'<td class="ticker">{r["underlying"]}</td>'
-                    f'<td class="dates">{fmt_date_compact(r["entryDate"])} &rarr; {fmt_date_compact(r["exitDate"]) or "open"}</td>'
-                    f'<td>{r.get("vehicle") or "—"}</td>'
-                    f'<td>{badge_html(r.get("entryVerdict"))}</td>'
-                    f'<td>{badge_html(r.get("exitVerdict"))}</td>'
-                    f'<td class="pnl">{fmt_pnl(r.get("realizedPnl"))}</td>'
-                    f'<td class="pnl">{_fmt_pct(r.get("_pctReturn"))}</td>'
+                    f'<td class="ticker" data-v="{r["underlying"]}">{r["underlying"]}</td>'
+                    f'<td class="dates" data-v="{sort_date(r["entryDate"])}">{fmt_date_compact(r["entryDate"]) or "—"}</td>'
+                    f'<td class="dates" data-v="{sort_date(r["exitDate"])}">{fmt_date_compact(r["exitDate"]) or "open"}</td>'
+                    f'<td data-v="{r.get("vehicle") or ""}">{r.get("vehicle") or "—"}</td>'
+                    f'<td data-v="{r.get("entryVerdict") or ""}">{badge_html(r.get("entryVerdict"))}</td>'
+                    f'<td data-v="{r.get("exitVerdict") or ""}">{badge_html(r.get("exitVerdict"))}</td>'
+                    f'<td class="pnl" data-v="{sort_num(r.get("realizedPnl"))}">{fmt_pnl(r.get("realizedPnl"))}</td>'
+                    f'<td class="pnl" data-v="{sort_num(r.get("_pctReturn"))}">{_fmt_pct(r.get("_pctReturn"))}</td>'
                     f"</tr>"
                     for r in srows_sorted
                 )
-                table_html = f"""<table>
-  <thead><tr><th>Ticker</th><th>Entry / Exit</th><th>Vehicle</th><th>Entry</th><th>Exit</th><th>P&amp;L</th><th>Return %</th></tr></thead>
+                table_html = f"""<table class="grid">
+  <thead><tr>{th("Ticker")}{th("Entry date", True)}{th("Exit date", True)}{th("Vehicle")}{th("Entry grade")}{th("Exit grade")}{th("P&amp;L", True)}{th("Return %", True)}</tr></thead>
   <tbody>{trow_html}</tbody>
 </table>"""
             else:
@@ -655,6 +657,7 @@ def render_summary_page(rows: list[dict]) -> str:
   Aggregated from the reviewed book. Generated __GENERATED_AT__. &middot;
   <a href="#by-vehicle" style="color:var(--accent);">Jump to by vehicle &darr;</a> &middot;
   <a href="#top-bottom" style="color:var(--accent);">Jump to top/bottom trades &darr;</a>
+  <br>Click any column header to re-sort a table \u2014 ticker, entry date, exit date and P&amp;L are in every grid.
 </div>
 <h2>Performance by strategy</h2>
 {''.join(blocks)}
@@ -662,6 +665,7 @@ def render_summary_page(rows: list[dict]) -> str:
 {vehicle_html}
 <h2 id="top-bottom">Top / bottom trades</h2>
 {top_bottom_html}
+<script>{SORT_JS}</script>
 </body>
 </html>
 """
@@ -670,11 +674,12 @@ def render_summary_page(rows: list[dict]) -> str:
 def _pnl_trade_row(r: dict) -> str:
     return (
         f'<tr onclick="location.href=\'trades/{r["detailFile"]}\'">'
-        f'<td class="ticker">{r["underlying"]}</td>'
-        f'<td class="dates">{fmt_date_compact(r["entryDate"])} &rarr; {fmt_date_compact(r["exitDate"]) or "open"}</td>'
-        f'<td>{r.get("vehicle") or "—"}</td>'
-        f'<td>{badge_html(r.get("entryVerdict"))}</td>'
-        f'<td class="pnl">{fmt_pnl(r.get("realizedPnl"))}</td>'
+        f'<td class="ticker" data-v="{r["underlying"]}">{r["underlying"]}</td>'
+        f'<td class="dates" data-v="{sort_date(r["entryDate"])}">{fmt_date_compact(r["entryDate"]) or "—"}</td>'
+        f'<td class="dates" data-v="{sort_date(r["exitDate"])}">{fmt_date_compact(r["exitDate"]) or "open"}</td>'
+        f'<td data-v="{r.get("vehicle") or ""}">{r.get("vehicle") or "—"}</td>'
+        f'<td data-v="{r.get("entryVerdict") or ""}">{badge_html(r.get("entryVerdict"))}</td>'
+        f'<td class="pnl" data-v="{sort_num(r.get("realizedPnl"))}">{fmt_pnl(r.get("realizedPnl"))}</td>'
         f"</tr>"
     )
 
@@ -690,8 +695,8 @@ def _render_top_bottom(rows: list[dict], n: int = 10) -> str:
         if not trades:
             return f'<div class="empty">{empty_msg}</div>'
         rows_html = "".join(_pnl_trade_row(r) for r in trades)
-        return f"""<table>
-  <thead><tr><th>Ticker</th><th>Entry / Exit</th><th>Vehicle</th><th>Entry</th><th>P&amp;L</th></tr></thead>
+        return f"""<table class="grid">
+  <thead><tr>{th("Ticker")}{th("Entry date", True)}{th("Exit date", True)}{th("Vehicle")}{th("Entry grade")}{th("P&amp;L", True)}</tr></thead>
   <tbody>{rows_html}</tbody>
 </table>"""
 

@@ -17,6 +17,8 @@ from datetime import datetime
 from html import escape
 from pathlib import Path
 
+from lib.journal.sortable import SORT_JS
+
 try:  # the site's shared palette; run_daily_journal.py runs from the repo root
     from run_trade_review_pages import BASE_CSS
 except Exception:  # noqa: BLE001 -- keep the page renderable standalone
@@ -61,34 +63,6 @@ PAGE_CSS = """
  .note { color: var(--muted); font-size: 11.5px; margin: 7px 0 0; }
 """
 
-SORT_JS = """
-document.querySelectorAll('table.grid').forEach(function (tbl) {
-  var heads = tbl.tHead.rows[0].cells;
-  Array.prototype.forEach.call(heads, function (th, i) {
-    th.addEventListener('click', function () {
-      var dir = th.dataset.dir === 'asc' ? 'desc' : 'asc';
-      Array.prototype.forEach.call(heads, function (h) {
-        delete h.dataset.dir; h.classList.remove('sorted');
-        var a = h.querySelector('.arrow'); if (a) a.textContent = '\\u25B4\\u25BE';
-      });
-      th.dataset.dir = dir; th.classList.add('sorted');
-      var arrow = th.querySelector('.arrow');
-      if (arrow) arrow.textContent = dir === 'asc' ? '\\u25B4' : '\\u25BE';
-      var numeric = th.classList.contains('num');
-      var body = tbl.tBodies[0];
-      var rows = Array.prototype.slice.call(body.rows);
-      rows.sort(function (a, b) {
-        var x = a.cells[i].dataset.v, y = b.cells[i].dataset.v;
-        var xe = (x === undefined || x === ''), ye = (y === undefined || y === '');
-        if (xe || ye) return xe && ye ? 0 : (xe ? 1 : -1);  // blanks last, both ways
-        var c = numeric ? (parseFloat(x) - parseFloat(y)) : x.localeCompare(y);
-        return dir === 'asc' ? c : -c;
-      });
-      rows.forEach(function (r) { body.appendChild(r); });
-    });
-  });
-});
-"""
 
 # (label, key, kind) -- kind drives alignment and the sort comparator.
 # 'text' sorts lexically, everything else numerically ('date' keys are ISO, so
