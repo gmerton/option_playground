@@ -1,5 +1,7 @@
 # Option playbook review — September 2026
 
+> **Sequel: `audit_review_2026-09-16.md` (16 Sept).** The calendar path study built after this review was invalidated by a path-truncation bug and re-run clean (no edge); the bull-put and long-straddle engines were audited for the same flaw and passed; both survivors were re-scored at the monthly unit, where neither clears t 2 alone but the pair does. Finding #7 below (backtests frozen after July 2026) is superseded: bid/ask actually ends March 2026, IV mid-May, prints-only from June.
+
 *2026-09-08. A fresh skeptical pass over the 30 option playbooks in `data/studies/` (mostly written March 2026), the allocation framework, and the Friday screener, using what this month's work established about fills, stale tables, and regime dependence. Purpose: decide which playbooks can carry surplus buying power today, which need rework, and which should be retired.*
 
 ## Headline findings

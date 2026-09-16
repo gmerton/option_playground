@@ -1,5 +1,7 @@
 # Capital Allocation Framework
 
+> **⚠ Read `audit_review_2026-09-16.md` first.** After the September audits the only strategies with a defensible edge are the 7-DTE long straddle and the bull put spread, and **neither clears a monthly t of 2 alone — the 50/50 pair does (t 2.5, correlation −0.25)**. All calendar structures are withdrawn (no edge on clean data) and their framework rows are void. Size the two survivors as paired sleeves, not as independent line items.
+
 > ## ⚠ POST-COST STATUS — 2026-09-08 (read before using any table below)
 > The rankings below are **mid-fill, zero-commission** numbers. `data/studies/playbook_review_2026-09.md` Part 2 re-ran every
 > engine with a cost model ($0.65/leg + 25% of entry bid-ask per traded side). Result:

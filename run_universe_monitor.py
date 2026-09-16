@@ -37,7 +37,7 @@ import pandas as pd
 from lib.alerts.bars import Bar, SymbolBook
 from lib.alerts.context import load_context
 from lib.alerts.daily_state import GAP_RECLASS_ADR, reclassify_open
-from lib.alerts.detectors import DETECTORS, INDEX_SYMBOLS, SHORT_KINDS, Alert, IndexState, SymbolState, precision_tier, symbol_levels
+from lib.alerts.detectors import DETECTORS, INDEX_SYMBOLS, SHORT_KINDS, Alert, IndexState, SymbolState, adr_from_21, precision_tier, symbol_levels
 from lib.alerts.grading import RUBRIC_VERSION, Grade, grade_alert, resolve, setup_grade
 from lib.alerts.publish import AlertPublisher
 from lib.alerts.stream import trades
@@ -49,6 +49,7 @@ from lib.tradier.tradier_client_wrapper import TradierClient
 REPO = Path(__file__).resolve().parent
 LOGS = REPO / "data" / "watchlist" / "logs"
 EXT_UP_SHORT_ADR = 2.0          # a short on a name this far over its 21 EMA needs a red day to count
+EXT_DRIFT_ADR    = 0.5          # day_reason is a prior-close/open snapshot; say so once the name has moved this far since
 
 
 SOUNDS = {"loud": "/System/Library/Sounds/Glass.aiff", "soft": "/System/Library/Sounds/Tink.aiff"}
@@ -353,6 +354,17 @@ class Engine:
             a.msg += f" | still GREEN on the day vs prior close {c.prev_close:.2f}: not cracked yet"
         if ds:
             a.msg += f" | day {'FLAT' if flat else ds}{' (OUT OF PLAY for this side)' if ds != want else ''}: {a.fields['day_reason']}"
+            # day_reason describes the DAILY bar as of the prior close (or the open, after a gap re-classification).
+            # By mid-session the name can be nowhere near that description: AMD 2026-09-16 alerted at +2.2 ADR over the
+            # 21 EMA while the daily text still read "near the rising 21 EMA (+0.9 ADR)". Print the live extension
+            # whenever it has drifted, so one line cannot describe the same stock two ways. (2026-09-16)
+            if c is not None and getattr(c, "adr_pct", 0.0):
+                live = adr_from_21(a.price, c)
+                daily = getattr(c, "ext21_close_adr", 0.0)
+                a.fields["ext21_live_adr"] = round(live, 2)
+                a.fields["ext21_drift_adr"] = round(live - daily, 2)
+                if abs(live - daily) >= EXT_DRIFT_ADR:
+                    a.msg += f" -- NOW {live:+.1f} ADR vs 21 EMA ({live - daily:+.1f} since)"
         # daily setup, context only (2026-09-15 ILMN: pullback to the rising 50, RS leader, and no alert said so)
         if c is not None:
             spy_ctx = self.idx.ref_ctx.get("SPY") or self.ctx.get("SPY")

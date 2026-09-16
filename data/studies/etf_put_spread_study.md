@@ -1,5 +1,7 @@
 # Pooled ETF bull put spreads: when does a one-sided put credit spread pay? (2026-09-10)
 
+> **⚠ Superseded in part by `etf_put_spread_exit_rule_2026-09-16.md`.** §2 below tested a 50% take *bundled with* a 2× stop and concluded "hold to expiry". Separating them, a **50% take with NO stop** at 45 DTE / 0.35Δ-0.25Δ gives +6.9%/trade, weekly t 5.8, 19 of 20 names positive. The stop was doing the damage, not the take. That result depends on excluding the 7.1% of trades whose exit marks are missing (the engine otherwise assumes max loss); the gaps are shown to be unrelated to stress.
+
 Script: `run_etf_put_spread_regression.py`; trades in `data/studies/etf_put_spread_trades.csv`.
 
 **Setup.** 21 unleveraged ETFs from `options_cache` (SPY QQQ IWM GLD TLT XOP XBI XLK XLE XLV EEM GDX

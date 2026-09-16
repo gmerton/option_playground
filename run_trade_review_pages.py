@@ -67,8 +67,20 @@ TRADES_DIR = Path("data/journal/trades")
 # strategy from a discretionary trade that merely resembles one -- e.g. the PANW straddle is
 # tagged 'discretionary', not 'straddle_screener', precisely so it's excluded here automatically).
 # Add more entries as other systematic strategies (GLD/TLT/XLE spreads, etc.) get their own tag.
+# A spec matches either by TAG (`key` must be one of the row's tags -- the original mechanism) or, when
+# `vehicles`/`symbol_any` are present, by the row's computed vehicle. Vehicle is derived from the actual opening
+# legs in _refine_spread_vehicles(), so it separates a real 2-leg vertical from a 4-leg condor without trusting
+# the free-text symbol. `dedupe_campaign` keeps one row per campaign (preferring the primary), so a rolled
+# spread counts once -- straddles never roll, which is why the original spec did not need it.
 STRATEGIES = [
     {"key": "straddle_screener", "label": "Long Straddles (systematic)", "exclude_tags": ["discretionary"]},
+    {"key": "put_spreads", "label": "Put Spreads (excl. iron condors)",
+     "vehicles": ["bull put spread", "bear put spread"],
+     # rescues the handful whose legs could not be resolved, so vehicle stayed the generic "spread"
+     "symbol_any": ["put spread", "put credit spread"],
+     # a condor's put side is not a put-spread trade: drop it however it is labelled
+     "exclude_symbol_any": ["condor"], "exclude_tags": ["iron_condor"],
+     "dedupe_campaign": True},
 ]
 
 LIGHTWEIGHT_CHARTS_SCRIPT = (
@@ -460,8 +472,35 @@ SUMMARY_CSS = BASE_CSS + """
 
 
 def _strategy_rows(rows: list[dict], spec: dict) -> list[dict]:
+    """Rows belonging to one strategy card. See the STRATEGIES comment for the two matching modes."""
     excl = set(spec.get("exclude_tags", []))
-    return [r for r in rows if spec["key"] in (r.get("tags") or []) and not (excl & set(r.get("tags") or []))]
+    vehicles = set(spec.get("vehicles", []))
+    sym_any = [x.lower() for x in spec.get("symbol_any", [])]
+    sym_not = [x.lower() for x in spec.get("exclude_symbol_any", [])]
+    out: list[dict] = []
+    for r in rows:
+        tags = set(r.get("tags") or [])
+        if excl & tags:
+            continue
+        sym = (r.get("symbol") or "").lower()
+        if any(x in sym for x in sym_not):
+            continue
+        if vehicles or sym_any:
+            if not ((r.get("vehicle") or "") in vehicles or any(x in sym for x in sym_any)):
+                continue
+        elif spec["key"] not in tags:
+            continue
+        out.append(r)
+    if spec.get("dedupe_campaign"):
+        best: dict = {}
+        for i, r in enumerate(out):
+            cid = r.get("campaignId")
+            k = ("c", cid) if cid is not None else ("r", i)
+            cur = best.get(k)
+            if cur is None or (r.get("isPrimary") and not cur.get("isPrimary")):
+                best[k] = r
+        out = list(best.values())
+    return out
 
 
 def _multileg_entry_premium(conn, underlying: str, entry_date: str) -> float | None:
@@ -814,7 +853,9 @@ function vehicleBucket(v) {       // mirrors _vehicle_bucket() in run_trade_revi
 }
 function urlMatch(r) {
   if (urlVehicle && vehicleBucket(r.vehicle) !== urlVehicle) return false;
-  if (_spec) { const ex = _spec.exclude_tags || []; if (!r.tags.includes(_spec.key) || r.tags.some(t => ex.includes(t))) return false; }
+  // membership is resolved server-side by _strategy_rows() and shipped as row_ids, so this list always
+  // matches the card it was clicked from (campaign dedupe included)
+  if (_spec && !(_spec.row_ids || []).includes(r.id)) return false;
   return true;
 }
 
@@ -1099,7 +1140,13 @@ def main() -> None:
     asyncio.run(_build_all(rows, a.no_charts))
 
     public_rows = [{k: v for k, v in r.items() if k != "_conid"} for r in rows]
-    html = INDEX_TEMPLATE.replace("__DATA_JSON__", json.dumps(public_rows)).replace("__STRATEGIES_JSON__", json.dumps(STRATEGIES))
+    # One source of truth: resolve each strategy's membership here (same _strategy_rows the summary card uses,
+    # campaign dedupe included) and ship the row ids, rather than re-implementing the matcher in JavaScript.
+    # Resolve membership on the SAME primary-only set the summary card aggregates (a non-primary review points at
+    # a campaign whose primary row already carries the full P&L), so the card's count and its list always agree.
+    _primary_rows = [r for r in public_rows if r.get("isPrimary")]
+    strategies_out = [dict(sp, row_ids=[r["id"] for r in _strategy_rows(_primary_rows, sp)]) for sp in STRATEGIES]
+    html = INDEX_TEMPLATE.replace("__DATA_JSON__", json.dumps(public_rows)).replace("__STRATEGIES_JSON__", json.dumps(strategies_out))
     generated_at = pd.Timestamp.now().strftime("%Y-%m-%d %H:%M")
     html = html.replace("__GENERATED_AT__", generated_at)
     INDEX_OUT.parent.mkdir(parents=True, exist_ok=True)
