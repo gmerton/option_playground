@@ -1046,6 +1046,170 @@ def _cycle_row(g: pd.DataFrame, cyc: pd.DataFrame, still_open: bool) -> dict:
     }
 
 
+# ── Reviews keyed to structures, not contracts ────────────────────────────────
+#
+# A review row is keyed to one contract (conid), but most trades here are
+# multi-leg structures, so a review could store ONE LEG's realized P&L and
+# present it as the trade's (GLD review 36: +$772.51 = the short legs only, true
+# structure P&L +$250.05), and one structure could be reviewed several times.
+#
+# journal_campaigns already solves this for options -- it groups a spread and
+# everything it was rolled into as one entity and computes structure-level P&L,
+# rebuilt from fills on every journal run. So reviews get a foreign key to it
+# rather than a recomputation of their own.
+#
+# structure_pnl is written ALONGSIDE realized_pnl, never over it: the original
+# stays auditable, and readers prefer structure_pnl when it is present.
+# Stock reviews have no campaign (campaigns are options-only) and need none --
+# for a single instrument the contract IS the structure.
+
+def add_review_campaign_columns() -> None:
+    """Add campaign_id / structure_pnl to journal_trade_reviews if missing."""
+    conn = _get_conn()
+    try:
+        cur = conn.cursor()
+        for col, ddl in (
+            ("campaign_id", "ADD COLUMN campaign_id INT NULL"),
+            ("structure_pnl", "ADD COLUMN structure_pnl DECIMAL(14,4) NULL"),
+            ("is_primary", "ADD COLUMN is_primary TINYINT(1) NOT NULL DEFAULT 1"),
+        ):
+            cur.execute("""SELECT COUNT(*) FROM information_schema.columns
+                           WHERE table_schema = DATABASE() AND table_name = 'journal_trade_reviews'
+                             AND column_name = %s""", (col,))
+            if cur.fetchone()[0] == 0:
+                cur.execute(f"ALTER TABLE journal_trade_reviews {ddl}")
+        cur.execute("""SELECT COUNT(*) FROM information_schema.statistics
+                       WHERE table_schema = DATABASE() AND table_name = 'journal_trade_reviews'
+                         AND index_name = 'idx_campaign'""")
+        if cur.fetchone()[0] == 0:
+            cur.execute("ALTER TABLE journal_trade_reviews ADD INDEX idx_campaign (campaign_id)")
+        conn.commit()
+    finally:
+        conn.close()
+
+
+def sync_review_campaigns() -> dict:
+    """Point every OPTION review at its journal_campaigns row and cache that
+    campaign's structure-level P&L in structure_pnl.
+
+    Matching, most specific first:
+      1. the review's conid appears in the campaign's linked fills, and the
+         campaign's date range covers the review's entry date
+      2. no conid (a labelled structure like "NBIS (iron condor: ...)"):
+         same underlying and the campaign opens on the review's entry date
+      3. a review about a ROLL, whose entry date is the roll rather than the
+         original open: same underlying and the campaign's span covers it
+    A review that matches nothing is left untouched (campaign_id stays NULL) --
+    silence beats a wrong key. Idempotent; safe to re-run.
+    """
+    add_review_campaign_columns()
+    conn = _get_conn()
+    try:
+        rv = pd.read_sql("""SELECT id, underlying_symbol, asset_category, conid, entry_date, exit_date
+                            FROM journal_trade_reviews""", conn)
+        camps = pd.read_sql("""SELECT campaign_id, underlying, first_date, last_date, status, realized_pnl
+                               FROM journal_campaigns""", conn)
+        links = pd.read_sql("""SELECT c.campaign_id, t.conid
+                               FROM journal_campaign_trades c
+                               JOIN journal_trades t ON t.trade_id = c.trade_id""", conn)
+        if camps.empty:
+            return {"matched": 0, "unmatched": 0, "skipped_stock": 0, "corrected": 0}
+
+        camps["first_date"] = pd.to_datetime(camps["first_date"]).dt.date
+        camps["last_date"] = pd.to_datetime(camps["last_date"]).dt.date
+        by_conid: dict[int, set] = {}
+        for r in links.itertuples():
+            by_conid.setdefault(int(r.conid), set()).add(int(r.campaign_id))
+        cmap = {int(r.campaign_id): r for r in camps.itertuples()}
+
+        updates, unmatched, skipped = [], 0, 0
+        for r in rv.itertuples():
+            if str(r.asset_category or "") == "STK":
+                skipped += 1
+                continue
+            entry, exit_ = r.entry_date, r.exit_date
+            cands = []
+            if pd.notna(r.conid):
+                for cid in by_conid.get(int(r.conid), ()):
+                    c = cmap[cid]
+                    if c.first_date <= entry <= c.last_date:
+                        cands.append(c)
+            if not cands:
+                for c in camps.itertuples():
+                    if c.underlying == r.underlying_symbol and c.first_date == entry:
+                        cands.append(c)
+            if not cands:
+                # 3. a review written about a ROLL: its entry date is the roll,
+                #    but the campaign's first_date is the original open, so match
+                #    on the campaign's span instead of its start.
+                for c in camps.itertuples():
+                    if c.underlying == r.underlying_symbol and c.first_date <= entry <= c.last_date:
+                        cands.append(c)
+            if not cands:
+                unmatched += 1
+                continue
+            # prefer the campaign that opens on the entry date, then the one
+            # whose close is nearest the review's exit
+            cands.sort(key=lambda c: (c.first_date != entry,
+                                      abs((c.last_date - (exit_ or c.last_date)).days)))
+            best = cands[0]
+            updates.append((int(best.campaign_id), float(best.realized_pnl), int(r.id)))
+
+        cur = conn.cursor()
+        cur.executemany(
+            "UPDATE journal_trade_reviews SET campaign_id=%s, structure_pnl=%s WHERE id=%s", updates)
+
+        # Every review of a campaign now shows that campaign's full P&L, so summing
+        # them would count one structure several times. Exactly one row per campaign
+        # is primary (lowest id, deterministic) -- aggregates use those, while each
+        # duplicate keeps its own page and its 'duplicate_review' tag.
+        cur.execute("UPDATE journal_trade_reviews SET is_primary = 1")
+        cur.execute("""
+            UPDATE journal_trade_reviews r
+            JOIN (SELECT campaign_id, MIN(id) keep FROM journal_trade_reviews
+                  WHERE campaign_id IS NOT NULL GROUP BY campaign_id) k
+              ON k.campaign_id = r.campaign_id
+            SET r.is_primary = 0
+            WHERE r.id <> k.keep
+        """)
+        conn.commit()
+
+        corrected = pd.read_sql("""SELECT COUNT(*) n FROM journal_trade_reviews
+                                   WHERE structure_pnl IS NOT NULL AND realized_pnl IS NOT NULL
+                                     AND ABS(structure_pnl - realized_pnl) > 1.0""", conn)["n"][0]
+        dups = pd.read_sql("SELECT COUNT(*) n FROM journal_trade_reviews WHERE is_primary = 0",
+                           conn)["n"][0]
+        return {"matched": len(updates), "unmatched": unmatched, "skipped_stock": skipped,
+                "corrected": int(corrected), "non_primary": int(dups)}
+    finally:
+        conn.close()
+
+
+def tag_duplicate_reviews(tag: str = "duplicate_review") -> int:
+    """Tag every review that shares a campaign with another (source='derived').
+
+    Non-destructive: the rows stay, they just become queryable as duplicates.
+    """
+    create_review_tag_table()
+    conn = _get_conn()
+    try:
+        df = pd.read_sql("""SELECT id, campaign_id FROM journal_trade_reviews
+                            WHERE campaign_id IS NOT NULL""", conn)
+        dup_campaigns = df.groupby("campaign_id").size()
+        dup_campaigns = set(dup_campaigns[dup_campaigns > 1].index)
+        hits = [(int(r.id), tag) for r in df.itertuples() if r.campaign_id in dup_campaigns]
+        cur = conn.cursor()
+        cur.execute("DELETE FROM journal_review_tags WHERE source='derived' AND tag=%s", (tag,))
+        if hits:
+            cur.executemany(
+                "INSERT INTO journal_review_tags (review_id, tag, source) VALUES (%s, %s, 'derived') "
+                "ON DUPLICATE KEY UPDATE source='derived'", hits)
+        conn.commit()
+        return len(hits)
+    finally:
+        conn.close()
+
+
 # ── Review tags (queryable) ────────────────────────────────────────────────────
 #
 # journal_trade_reviews.tags is a comma-joined string, so the only query against

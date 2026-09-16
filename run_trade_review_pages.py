@@ -174,7 +174,14 @@ def _row_to_json(r: pd.Series) -> dict:
         "actionableAnalysis": s(r.get("actionable_analysis")),
         "actionableVerdict": s(r.get("actionable_verdict")),
         "tags": [t.strip() for t in (r.get("tags") or "").split(",") if t.strip()],
-        "realizedPnl": s(r.get("realized_pnl")),
+        # structure_pnl is the campaign's P&L (the whole spread, rolls included);
+        # realized_pnl is the older per-contract copy, kept for audit. Prefer the
+        # structure -- a review of one leg of a condor is not that trade's P&L.
+        # See sync_review_campaigns() in mysql_lib.
+        "realizedPnl": s(r["structure_pnl"]) if pd.notna(r.get("structure_pnl")) else s(r.get("realized_pnl")),
+        "campaignId": int(r["campaign_id"]) if pd.notna(r.get("campaign_id")) else None,
+        "storedLegPnl": s(r.get("realized_pnl")),
+        "isPrimary": bool(r.get("is_primary", 1)),
     }
 
 
@@ -1073,6 +1080,15 @@ def main() -> None:
     ap.add_argument("--no-charts", action="store_true", help="skip Tradier entirely (fast, text-only detail pages)")
     a = ap.parse_args()
 
+    # Re-key reviews to their campaigns and refresh the tag layer BEFORE loading
+    # the rows -- the pages must render the corrected structure P&L, not the copy
+    # that was in the table when the last build ran.
+    from lib.mysql_lib import (sync_review_campaigns, sync_review_tags,
+                               tag_duplicate_reviews, tag_reviews_with_earnings)
+    print(f"campaign keys: {sync_review_campaigns()}")
+    print(f"tags: {sync_review_tags()} mirrored, {tag_reviews_with_earnings()} 'earnings', "
+          f"{tag_duplicate_reviews()} 'duplicate_review'")
+
     df = get_trade_reviews()
     rows = [_row_to_json(r) for _, r in df.iterrows()]
     for r in rows:
@@ -1089,15 +1105,16 @@ def main() -> None:
     INDEX_OUT.parent.mkdir(parents=True, exist_ok=True)
     INDEX_OUT.write_text(html)
 
-    summary_html = render_summary_page(rows).replace("__GENERATED_AT__", generated_at)
+    # Aggregate over one row per structure: several reviews can point at the same
+    # campaign and each now carries that campaign's full P&L (see is_primary in
+    # sync_review_campaigns). The duplicates keep their own detail pages.
+    primary = [r for r in rows if r["isPrimary"]]
+    if len(primary) != len(rows):
+        print(f"summary aggregates {len(primary)} primary reviews ({len(rows) - len(primary)} duplicates collapsed)")
+    summary_html = render_summary_page(primary).replace("__GENERATED_AT__", generated_at)
     SUMMARY_OUT.write_text(summary_html)
 
     # keep the queryable tag layer in step with the reviews the pages were built from
-    from lib.mysql_lib import sync_review_tags, tag_reviews_with_earnings
-    n_tags = sync_review_tags()
-    n_earn = tag_reviews_with_earnings()
-    print(f"tags: {n_tags} mirrored into journal_review_tags, {n_earn} reviews tagged 'earnings'")
-
     from lib.alerts.publish import install_page
     install_page()                       # alerts.html lives in src/lib/alerts/, copied in so it deploys
     print(f"Wrote {INDEX_OUT} (index) + {SUMMARY_OUT} (summary) + {len(rows)} files in {TRADES_DIR}/ + alerts.html")
