@@ -4,8 +4,11 @@
 **Perspective:** Buyer — profit when stock moves more than implied by premium
 **Universe:** 323-ticker weekly-optionable pool — see *Approved-List Rebuild* below.
 ⚠ The 140-name approved list is **SUPERSEDED**; ticker qualification failed OOS testing.
-**Last updated:** 2026-08-11
-**Status:** Research complete. Ready to trade.
+**Last updated:** 2026-09-15
+**Status:** Research complete. Trading, with two caveats added 2026-09-15 — see
+*Independent VRP validation* at the bottom. The entry mechanism is now corroborated by a
+measurement that shares no code with this backtest; the **magnitude is not statistically
+resolved**, and the **tail concentration is a live sizing risk**.
 **Revision 2026-08-08:** added an IV-percentile entry gate (condition 3). Single-leg
 (call-only / put-only) variants tested and rejected. See *Gate Revision* below.
 **Revision 2026-08-08 (b):** the 140-name approved list is **retired**. An honest
@@ -471,3 +474,133 @@ large upside winners. Clustered in leveraged ETFs (TQQQ, UPRO).
 
 *Playbook written: 2026-03-22*
 *Based on: silver.option_legs_settled, 987 tickers, 2018–2026*
+
+## Gate 3 reference source — rebuilt live off IBKR (2026-09-16)
+
+`silver.fwd_vol_daily` ends **2026-02-20** and cannot be extended: the builder prices the ATM put from v3's
+bid/ask, and v3 lost bid/ask in March 2026 (stored IV survives to mid-May, then prints only). So the live screen was
+ranking today's IV against a window that stopped seven months ago.
+
+**The staleness is material at the single-name level, even though the index regime is unchanged.** VIX over the stale
+window vs the months since is flat (mean 19.0 vs 18.7, 30th pctile 16.4 both, today at the 24th pctile in each). But
+ranking the *same* IBKR IV30 series in the pre-Feb-2026 window against the months since, on 20 names:
+
+| window effect (old-window pctile − recent-window pctile) | median | mean | max | verdict flips at the ≤30 gate |
+|---|---|---|---|---|
+| 20 liquid names, 2026-09-15 | +27.5pp | +23.9pp | 55pp | **10 of 20** |
+
+Sixteen of twenty are positive, i.e. single-name IV drifted **up** since February, so the stale reference makes names
+look more expensive than they are and the ≤30 gate was too strict. Index vol is not a proxy for single-name vol here.
+
+**What the screen does now** (`run_straddle_screen.py`, `--iv-source ibkr|athena`): gates 2 and 4 (FVR, liquidity) run
+first, then IBKR `reqHistoricalData(OPTION_IMPLIED_VOLATILITY)` supplies a trailing-1y IV30 distribution for the
+survivors only — typically ~10 names, far inside IB's 60-requests-per-10-minutes budget (capped at 50). Both
+percentiles print side by side with the source per row; it falls back to the stale table when TWS is absent. The
+live-port guard in `ibkr_bot/conn.py` is respected, not bypassed (the screen only calls reqHistoricalData).
+
+**Effect on 2026-09-15 (full 331-name pool):** 54 passed FVR, 88 liquidity, 10 both; 7 qualified on the IBKR gate.
+Four of those seven — WMT, MSFT, V, BROS — were blocked by the stale table (53 / 70 / 41 / 38%) and clear easily on
+current data (26 / 18 / 19 / 24%). AMC has no fwd_vol_daily history at all and is only screenable this way.
+
+⚠ **Not the identical metric.** IBKR publishes a 30-day composite IV; the study gated on ~10-DTE ATM put IV, chosen
+because the trade is ~7 DTE. The +4.14%/trade result was measured on the 10-DTE metric, so the IBKR gate is the same
+idea on a less event-sensitive tenor. Watch one consequence: the old gate removed ~98% of earnings trades as a
+byproduct precisely because 10-day IV spikes into a print, and a 30-day composite will do that less. All seven
+qualifiers on 2026-09-15 had earnings at T+43 or later, so nothing leaked that day, but if earnings-in-window
+qualifiers start appearing, promote the earnings flag to a gate.
+
+---
+
+# Independent VRP validation (2026-09-15)
+
+A new stage-one screen measures the variance risk premium directly, without simulating a
+single straddle: `vrp = ATM implied vol − realized vol over the matching forward window`
+(`run_vrp_panel.py`, `src/lib/studies/vrp_panel.py`). Because it shares no code, no cache
+and no settlement logic with this playbook's backtest, it is a genuine outside check on the
+entry mechanism. Joined to 128,447 trades from `data/cache/long_straddle_features.parquet`
+via `run_vrp_straddle_reconcile.py`. Full write-up: `data/studies/vrp_straddle_reconcile.md`.
+
+## The headwind this strategy trades into
+
+On the 331-name straddle pool, 2018 to 2026, short-dated ATM implied vol is **rich by +4.13
+vol points** (t 8.74, 82% of days positive). That is measured over the same 7 to 14 day
+horizon this strategy buys. Unconditionally, a long straddle here is buying vol that is
+systematically overpriced. Everything below is about how the gates escape that.
+
+## The gates work, and they work for the stated reason
+
+Each gate cuts the premium the trade faces. Monotonically, on both axes:
+
+| cell | n | premium faced | winsorized mean ROC | ex-top-1% mean |
+|------|---|---------------|---------------------|----------------|
+| no gates | 72,272 | +2.29 vol pts | −0.21% | −3.03% |
+| gate 2 only (FVR ≥ 1.20) | 23,227 | +1.37 | +2.54% | −0.24% |
+| **gates 2+3 (this playbook)** | **13,167** | **+0.79** | **+3.74%** | **+1.00%** |
+| gates 2+3 with IVpct ≤ 15 | 8,884 | +0.48 | +5.29% | +2.60% |
+
+This is the strongest corroboration the strategy has. An independent estimator says the
+entry conditions select vol that is genuinely cheap relative to what follows, and the
+winsorized +3.74% lines up with the playbook's stated ~+4% per trade.
+
+**Gate 2 is the workhorse, not gate 3.** FVR ≥ 1.20 alone moves the winsorized mean from
+−1.31% to +3.06% and halves the premium faced. Gate 3 adds on top of it, but only at the
+extreme: within the gate-2 population the ≤15 percentile bucket returns +5.29% while the
+15–30 band returns +0.51%. An earlier read of this data called gate 3 useless; that was
+measured on the **ungated** population and was wrong. Inside the population this playbook
+actually trades, gate 3 helps.
+
+## ⚠ Caveat 1 — the magnitude is not statistically resolved
+
+Every name in the pool enters on the same Fridays. Pooling 13,167 trades therefore does
+**not** give 13,167 independent observations; it gives about 331 dates. Collapsing each date
+to a cross-sectional mean and correcting for that:
+
+```
+  cell                     trades   dates    mean    t_NW   boot 95% CI      hurdle
+  gates 2+3 (playbook)     13,167     331   +2.97%   1.19   [-0.73, +8.78]    3.29
+  gates 2+3, IVpct <= 15    8,884     290   +3.71%   1.53   [-0.54, +8.82]    3.29
+  gate 2 only              23,227     369   +1.67%   1.02   [-0.94, +5.49]    3.29
+```
+
+None of these clear the multiple-testing hurdle, and every interval includes zero. This is
+**not** evidence the edge is absent — the point estimates are positive, consistently ordered,
+and the mechanism is independently corroborated above. It is evidence that the sample cannot
+distinguish +4% from 0% with the confidence the "research complete" label implies. Trade it
+as a promising position, not a settled one.
+
+## ⚠ Caveat 2 — the return is almost entirely tail, and gating does not fix that
+
+```
+  share of total return from the top 0.1% of trades
+    no gates              100.0%
+    gate 2 only            98.8%
+    gates 2+3 (playbook)   98.9%   <- gating does NOT reduce tail dependence
+  playbook cell: median ROC -14.3%, win rate 42.9%, ex-top-1% mean +1.00%
+```
+
+The gates raise the average and leave the **shape** untouched. Roughly 13 trades out of
+13,167 carry the result. The practical consequences:
+
+- **Size for the distribution, not the mean.** An expectancy that needs one trade in a
+  thousand is not carry and must not be sized like carry.
+- **Breadth is not optional.** Taking a handful of gated entries per month gives a high
+  chance of never touching the tail that produces the return.
+- **Never cut the tail.** Any profit-take or stop that truncates the top of the distribution
+  removes the edge itself. This is consistent with the 2026-09-10 revision, which already
+  rejected re-centering and found the −50% stop to be a modelling artefact.
+
+## Proposal (NOT applied — needs Gabe's yes)
+
+**Tighten gate 3 from IV percentile ≤ 30 to ≤ 15.** It improves every metric monotonically
+(premium faced +0.79 → +0.48, winsorized mean +3.74% → +5.29%, ex-top-1% +1.00% → +2.60%,
+win rate 42.9% → 43.4%) at the cost of about a third of the entries. Given caveat 2, fewer
+entries is a real cost, so this is a judgement call between per-trade quality and the breadth
+needed to catch the tail. Not applied.
+
+## Note on gate 2's data source
+
+Gate 2 reads `fvr_put_30_90` from `silver.fwd_vol_daily`, which is **stale since 2026-02-20**
+and cannot be rebuilt from `options_daily_v3` (no stored IV after mid-May 2026). The live
+screen already works around this by sourcing the trailing distribution from IBKR. Since gate
+2 is now shown to be the workhorse of the entry logic, that workaround is load-bearing and
+should not be allowed to silently degrade.
