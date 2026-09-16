@@ -99,3 +99,26 @@ Generated 2026-09-10 by run_straddle_recenter_pull.py / _sim.py / _report.py. 19
     2025  n=  709  hold   +8.53  stop   +6.35  rc   +0.29  take   +1.28
     2026  n=   98  hold   +6.77  stop   +5.19  rc   +5.59  take   +6.75
 ```
+
+## Audit for the path-truncation flaw (2026-09-16)
+
+After the calendar path study was invalidated (its pull's strike window cut the daily path after ~2% moves and the sim
+marked trades before the loss finished -- see `calendar_path_study.md` erratum), this study was checked for the same
+mechanism. It does not have it:
+
+- **Pull window is wide enough:** strikes within ±15% of the entry strike for a 7-day trade. Only 2.3% of trades
+  moved more than 15% by expiry, and those are still settled correctly because settlement is |S_T − K| with S_T from
+  put-call parity at the nearest quoted strike -- parity holds at any strike, so the spot is recovered even when the
+  ATM strikes have left the window.
+- **Dropped trades are not the movers:** the sim drops a trade only when the path lacks the entry or expiry day. That
+  is 44 of 13,459 FVR-passing trades (0.3%) and 5 of the 5,891 both-gates trades, all with a zero pool payout (no
+  expiry-day prints), none with a large move. Adding them back at their pool payout moves the mean by −0.1pp.
+- **Settlement tracks the independent pool payout at every move size:** sim gross vs pool payout by |S_T − K| / K:
+  ≤ 2% −0.611 vs −0.596; 2–5% +0.103 vs +0.107; 5–10% +0.781 vs +0.793; 10–15% +1.255 vs +1.277; > 15% +1.905 vs
+  +2.014 (the last-print payout runs slightly above parity, as the study already noted).
+- **Crash windows show the gains a long straddle should show:** Feb–Mar 2020 +103% (n=20), Apr 2025 +120% (n=11),
+  Dec 2018 +20%, Aug 2024 +17%.
+- Re-run reproduces the headline: both-gates hold after costs **+4.14%, t 3.7, n = 5,886**; every year but 2019
+  positive.
+
+**The long-straddle result stands.** (Results file regenerated at `data/cache/straddle_recenter/recenter_results.parquet`.)
