@@ -23,7 +23,8 @@ from datetime import date, timedelta
 from pathlib import Path
 import numpy as np, pandas as pd
 
-CACHE = Path("data/cache/calendar_path"); SLIP, COMM = 0.25, 0.0065
+import os
+CACHE = Path(os.environ.get("CALPATH_CACHE", "data/cache/calendar_path")); SLIP, COMM = 0.25, 0.0065
 STRUCTS = {"ETF": (20, 5, 27), "DCAL": (12, 3, 19)}       # short target, tol, long target
 GAP_LO, GAP_HI = 5, 35
 PT = (0.25, 0.50, 0.75); STOPS = (0.40, 0.60); RECENTER_SIGS = (1.0, 2.0); INV_RATIO = 1.05; MIN_LEFT = 2
@@ -101,19 +102,27 @@ def simulate_ticker(t: str, closes: pd.DataFrame, vix: pd.Series, spy_regime: pd
                 if a.empty or b.empty: continue
                 a, b = a.iloc[0], b.iloc[0]
                 path.append(dict(d=dd, S=float(cl.get(dd, np.nan)), s_mid=a.mid, s_ba=a.ba, l_mid=b.mid, l_ba=b.ba, s_iv=a.iv, l_iv=b.iv))
-            if not path: continue
-            P = pd.DataFrame(path)
-            # settlement at the short expiry: short at intrinsic, long sold at mid - slip
             ST = float(cl.get(se, np.nan))
-            last = P.iloc[-1]
-            if pd.notna(ST) and last.d == se:
-                settle = (last.l_mid - SLIP * last.l_ba - COMM) - max(K - ST, 0.0)
-            else:   # no quote on the expiry date: close both at the last available marks
-                settle = (last.l_mid - SLIP * last.l_ba - COMM) - (last.s_mid + SLIP * last.s_ba + COMM)
+            if not path and pd.isna(ST): continue
+            # settlement (fix 2026-09-16): the short settles at intrinsic on the expiry close; the long is sold at the expiry-day
+            # mark when the chain has it, else at INTRINSIC (floor). The old rule closed both at the last available marks, which
+            # -- when a leg had left the pull's strike window after a big move -- marked the trade before the loss finished.
+            truncated = 0
+            if pd.notna(ST):
+                ge = by_day.get(se); lrow = ge[(ge.expiry == le) & (ge.strike == K)] if ge is not None else None
+                if lrow is not None and len(lrow):
+                    lr = lrow.iloc[0]; lval = lr.mid - SLIP * lr.ba - COMM
+                else:
+                    lval = max(K - ST, 0.0); truncated = 1
+                settle = lval - max(K - ST, 0.0)
+            else:
+                last = pd.DataFrame(path).iloc[-1]; settle = (last.l_mid - SLIP * last.l_ba - COMM) - (last.s_mid + SLIP * last.s_ba + COMM); truncated = 1
+            if not path: path = [dict(d=d, S=spot if "spot" in dir() else np.nan, s_mid=0, s_ba=0, l_mid=0, l_ba=0, s_iv=np.nan, l_iv=np.nan)]
+            P = pd.DataFrame(path); last = P.iloc[-1]
             def close_at(row):  # exit both legs at that day's marks
                 return (row.l_mid - SLIP * row.l_ba - COMM) - (row.s_mid + SLIP * row.s_ba + COMM)
             marks = P.l_mid - P.s_mid
-            res = dict(base); res["hold"] = settle - cost; res["hold_days"] = len(P)
+            res = dict(base); res["hold"] = settle - cost; res["hold_days"] = len(P); res["truncated"] = truncated
             left = [(se - x).days for x in P.d]
             for x in PT:
                 hit = P[(marks >= debit * (1 + x)) & (pd.Series(left) > 0)]

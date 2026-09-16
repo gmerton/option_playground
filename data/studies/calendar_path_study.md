@@ -218,6 +218,20 @@ group    variant   n    roc    med   win      t      A      B  d_vs_hold  t_pair
   all  inversion 531 -44.30 -35.38  9.42 -13.83 -36.69 -50.97     -35.61     -6.26
 ```
 
+
+> ⚠️ **ERRATUM 2026-09-16 — the results in steps 4–12 below are INVALID.** The chain pull kept only strikes within
+> ±6% of each day's close (±12% in the long-dated cache; a 0.05–0.95 delta filter on stocks). After any ~2% move a
+> wing or long leg left the window, the daily path stopped, and the sim marked the trade at the last date all four
+> legs were present -- before the loss finished. 52% of diagonal paths and 87% of paths with a >3% move were cut off.
+> With settlement at intrinsic on the expiry close (condor: exact; calendar / diagonal: shorts at intrinsic, longs at
+> the expiry-day mark or an intrinsic floor), the ETF results on the 12% cache are: 12/19d calendar +3.5%, diagonal
+> +2.8%, condor +0.8%; 20/27d calendar −2.2%, diagonal −2.5%, condor −6.6%; win 47–57%; 2018 / 2019 / 2020 / 2023
+> negative; monthly t ≈ 0. On the same entries the old sim recorded +15% / +12% on 3–5% and >5% moves where the truth
+> is −61% / −96%. **There is no edge to allocate to in these structures on 2018–2026 data as measured.** The playbook
+> and the Friday screener entries built on these steps are withdrawn pending a clean re-pull (wide window, no delta
+> filter) and a full re-run. See "Erratum" at the end of the file for the corrected tables.
+
+
 ## The deployable cut: SPY / QQQ / IWM with entry bid-ask <= 10% of the debit
 
 ### DCAL structure, liquid cut
@@ -2513,3 +2527,103 @@ front-month wings are cheap and the back-month long is dead weight. The 0.10Δ-w
 playbook is unchanged; the condor is an ETF structure only. 30-name generalisation set (only run to 1% width): the same shape -- condor 2% wings +5.6 / +8.6% vs the 1%
 diagonal +10.2 / +10.7% (paired −$0.57 / −$0.75, t −5.2 / −3.8, condor better in 38–39%), 0.10Δ wings +1.7 / +2.4%;
 between-expiries cell calendar 9.7 / 16.8 > diagonal 9.0 / 14.0 > condor 2.0 / 5.7. Confirmed on both universes.
+
+
+## Erratum (2026-09-16): corrected settlement, 12%-window cache, IWM / QQQ / SPY
+
+| structure | 12/19d ROC | win | A / B | 20/27d ROC | win | A / B | full-loss trades | old sim, same entries (20/27d) |
+|---|---|---|---|---|---|---|---|---|
+| same-strike calendar | +3.5% | 54% | −1.2 / +8.0 | −2.2% | 49% | −5.4 / +0.8 | 6–13% | +19.1% |
+| 2% diagonal | +2.8% | 57% | −0.1 / +5.7 | −2.5% | 52% | −5.1 / 0.0 | 1–4% | +24.8% |
+| condor, 2% wings | +0.8% | 54% | −4.8 / +6.4 | −6.6% | 47% | −12.2 / −1.2 | 23–30% | +37.8% |
+| condor, 0.10Δ wings | +3.0% | 60% | +0.2 / +5.8 | −0.8% | 56% | −3.0 / +1.5 | 5–6% | +22.0% |
+
+Condor 20/27d by size of the move to expiry, old vs corrected: < 1% +83 → +84; 1–2% +64 → +72; 2–3% +28 → +27;
+**3–5% +15 → −61; > 5% +12 → −96** (n = 244 and 234 of 1,019). The old sim was right inside 3% and wrong beyond it,
+which is where every loss lives. By year (20/27d, corrected): 2018 −7 / −18 / −32, 2019 −20 / −13 / −21, 2020 −5 /
+−11 / −29, 2021 0 / +5 / +8, 2022 +6 / +5 / +4, 2023 −11 / −9 / −15, 2024 +13 / +2 / +1, 2025 +2 / +1 / −1
+(calendar / diagonal / condor). Crash windows (Dec 2018, Feb–Mar 2020, Aug 2024, Apr 2025) are full losses on all
+three ETFs. Calendar / diagonal figures are a lower bound (missing expiry-day long rows floored at intrinsic; 3–11%
+of trades); the condor figures are exact given the entry credit. The single-calendar sim (steps 1–3) shares the path
+logic and its numbers are suspect in the same direction. Stocks: re-run pending.
+
+## Clean re-run (2026-09-16 late): 30%-window pull, no delta filter, corrected settlement -- IWM / QQQ / SPY, 2018-11 → 2026-02
+
+`data/cache/calendar_path_clean/` (157 MB). Path truncation is now 0.8–2.1% of trades (expiry-day rows genuinely missing),
+so these numbers replace every ETF figure in steps 1–12. Hold to the short expiry, ROC on max risk (cost for the
+single calendar), house cost model.
+
+| structure | 12/19d ROC | win | A / B | p05 | full loss | 20/27d ROC | win | A / B | p05 | full loss | monthly t | months + |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| single ATM calendar | +2.1% | 46% | −3.2 / +7.3 | −122 | 9% | −8.6% | 38% | −16.8 / −0.5 | −167 | 13% | −0.8 | 44% |
+| double calendar (0.35Δ, same strikes) | +4.4% | 55% | +0.7 / +8.0 | −100 | 6% | −1.6% | 49% | −4.2 / +0.8 | −117 | 12% | +0.5 | 48% |
+| double diagonal 1% | +3.4% | 56% | +0.5 / +6.3 | −82 | 3% | −2.4% | 51% | −5.1 / +0.3 | −99 | 6% | +0.3 | 52% |
+| double diagonal 2% | +3.1% | 57% | +0.6 / +5.7 | −77 | 1% | −2.3% | 52% | −4.6 / 0.0 | −90 | 4% | +0.3 | 55% |
+| iron condor, 2% wings | +0.8% | 54% | −4.8 / +6.4 | −100 | 23% | −6.6% | 47% | −12.2 / −1.2 | −100 | 30% | −0.7 | 50% |
+| iron condor, 0.10Δ wings | +2.9% | 60% | +0.1 / +5.8 | −89 | 5% | −0.8% | 56% | −3.0 / +1.4 | −100 | 6% | +0.7 | 56% |
+
+By ticker (20/27d): IWM 0 / +2 / −0, QQQ −5 / −6 / −13, SPY 0 / −3 / −7 (calendar / diagonal 2% / condor). By year
+(20/27d, calendar / diagonal / condor): 2018 −10 / −19 / −32, 2019 −20 / −13 / −21, 2020 0 / −9 / −29, 2021 0 / +5 /
++8, 2022 +7 / +5 / +4, 2023 −11 / −9 / −15, 2024 +13 / +2 / +1, 2025 +2 / +1 / −1. By regime (both structures):
+Bear_HiVIX −0 / −3 / −13, Bear_LoVIX −7 / −6 / −17, Bull_HiVIX +3 / +3 / +1, Bull_LoVIX +3 / +2 / +2. Exits: hold
+still beats pt25 / pt50 / stops / day-before on every structure, but from ~+3, not +20.
+
+**Conclusions that replace steps 1–12:**
+1. **No index-ETF calendar, diagonal or condor in this family has a measurable edge after costs on 2018–2026.**
+   The best cell is the 12/19d double calendar at +4.4% with a monthly t of 0.5, 55% win, a 6% full-loss rate and
+   two of eight years below −9%. Everything at 20/27d is negative. The condor is the worst at both horizons.
+2. The apparent edges in steps 4–12 (+12 to +41%) were the path-truncation artefact: the old sim marked trades after
+   >2–3% moves before the loss finished. The ORDERINGS the study reported (diagonal > calendar, condor > diagonal,
+   hold > every exit, 0.35Δ > 0.25Δ) were mostly artefacts too; on clean data the structures are within a few points
+   of each other and of zero.
+3. The June skeleton engine (`backtests/dc_time_machine/`, +2.0–2.2% net for the 0.25Δ SPY double) was the honest
+   number all along; the pre-study IWM single put calendar (Tier B) reads −3.3% at 20/27d here and should be
+   re-examined on its own engine before it is traded again.
+4. What is genuinely established: the cost model matters (single-name and thin-ETF bid-asks kill these), bull regimes
+   are mildly positive and bear regimes negative for every structure (a short-gamma trade, not a vol-term trade), and
+   the tail is a full loss on the crash weeks (Dec 2018, Feb–Mar 2020, Aug 2024, Apr 2025) for every structure.
+
+**Playbook:** `double_calendar_playbook.md` stays withdrawn; the IWM / QQQ / SPY screener entries stay on hold (recommend
+removing them); the stock screener is reference-only pending the clean stock run (below).
+
+### Audit of the bull put spread engine for the same flaw (2026-09-16)
+
+`lib.studies.put_spread_study` (SPY / QQQ regime put spreads, paid-to-wait study) was checked for the truncation
+mechanism. It does not have it: (1) its data (`data/cache/SPY_options.parquet`, MySQL `options_cache` for QQQ) is the
+FULL chain with no price window -- on 2020-03-16 SPY puts run 50–440 and QQQ 90–335 -- and deep-ITM legs are marked
+through expiry (SPY 325/315P for 2020-03-20 quoted to the last day at 93 / 83); (2) expiry settlement uses each leg's
+last / mid on the expiry date, which equals intrinsic for ITM legs; (3) the crash windows show the losses: SPY 0.35 /
+0.25, 20 DTE, 50% take -- Dec 2018 mean −39% (min −100), Feb–Mar 2020 −31% (−100), H1 2022 −14% (−100), Aug 2024
+−11% (−99), Apr 2025 −21% (−100); full-loss share 12% of trades; mean ROC on margin +2.0% (20 DTE) / +3.3% (45 DTE)
+at 85–88% win. 'missing' exits are 3–6 trades, all at the data end (2026), not in crash weeks. The only filter,
+`delta <> 0`, drops deep-OTM legs, which can only lose winners. **The bull put spread results stand.**
+
+## Clean re-run, STOCKS (2026-09-16 late): 26-name roster, delta mode with NO delta filter, corrected settlement
+
+`data/cache/calendar_path_clean_stk/` (truncation 0.3–2.5%). Tight cut = the same-strike calendar's four-leg bid-ask
+≤ 25% of its debit; hold to the short expiry; ROC on max risk. Earnings position from the calendar's two expiries.
+
+| earnings | structure | 12/19d n | ROC | win | A / B | 20/27d n | ROC | win | A / B |
+|---|---|---|---|---|---|---|---|---|---|
+| none | double calendar | 3,363 | −14.2% | 47% | −18.2 / −9.6 | 1,892 | −17.8% | 44% | −27.2 / −12.2 |
+| none | diagonal 2% | 3,363 | −8.3% | 51% | −10.1 / −6.2 | 1,892 | −11.9% | 48% | −16.4 / −9.2 |
+| none | condor 2% wings | 3,362 | −9.0% | 45% | −10.4 / −7.4 | 1,892 | −14.1% | 40% | −16.9 / −12.4 |
+| none | condor 0.10Δ wings | 3,362 | −4.6% | 54% | −4.7 / −4.6 | 1,892 | −7.6% | 52% | −7.6 / −7.7 |
+| between the expiries | double calendar | 360 | −18.5% | 52% | −31.9 / +0.4 | 263 | −5.2% | 47% | −11.1 / −1.3 |
+| between the expiries | diagonal 2% | 360 | −12.6% | 53% | −20.9 / −0.9 | 263 | −5.6% | 48% | −9.7 / −2.9 |
+| before the short expiry | double calendar | 226 | −2.6% | 48% | +3.6 / −8.3 | 149 | +4.8% | 49% | +9.4 / +2.7 |
+| before the short expiry | diagonal 2% | 226 | −3.1% | 53% | +2.3 / −8.2 | 149 | +8.3% | 60% | +23.4 / +1.6 |
+
+Monthly t on the tight cut (ex before-short): calendar −3.9, diagonal −4.4, condor −5.0, wide condor −3.4 --
+**significantly negative**. No-earnings cell by year (12/19d, calendar / diagonal): every year 2018–2024 negative
+(2021 −58 / −29, 2022 −23 / −12), 2025 +5 / +1. The between-expiries cell, the study's former "best stock cell", is
+−5 to −19%; by ticker only MSFT (+7), HD (+6), NVDA (+5), JPM (+5) are above zero on the calendar and none clears +8.
+The only positive cells are "earnings before the short expiry" at 20/27d (+5 to +13%, n = 149, first half only) --
+the tastylive placement the old sim called the worst -- too small and one-sided to act on. Without the cut (all
+entries) every structure is −4 to −18%.
+
+**Conclusion for stocks:** worse than the ETFs. On single names the same-strike double calendar loses 14–18% of max
+risk per trade after costs on the liquid roster, the diagonal 8–12%, the condors 5–14%; the earnings placement does
+not rescue it. The stock screener (`run_stock_dcal_screener.py`) is retired as a signal; its file stays with the hold
+banner for reference. The pre-study playbook rule "no earnings in the window" was never the issue; the issue is that
+these structures do not pay on stocks at all at this cost model.

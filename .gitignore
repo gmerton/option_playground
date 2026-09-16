@@ -45,3 +45,6 @@ data/carter_mastering_the_trade/backtests/opening_gap/gap_trades.csv
 # journal_trade_reviews (MySQL) is the source of truth; this is a rebuildable artifact.
 data/journal/
 data/cache/calendar_path/
+data/cache/calendar_path_clean/
+data/cache/calendar_path_clean_stk/
+data/cache/calendar_path_long/

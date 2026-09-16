@@ -29,7 +29,8 @@ import argparse
 _ap = argparse.ArgumentParser(); _ap.add_argument("--cp", default="P", choices=["P", "C", "PC"]); _ap.add_argument("--tickers", nargs="*", default=None)
 _ap.add_argument("--universe-file", default=None); _ap.add_argument("--kwin", type=float, default=None)
 _ap.add_argument("--mode", default="window", choices=["window", "delta"])   # delta = |delta| 0.05..0.95, no price window (split-proof)
-_ap.add_argument("--max-dte", type=int, default=40); _ap.add_argument("--outdir", default="data/cache/calendar_path")   # long-dated study: --max-dte 85 --outdir data/cache/calendar_path_long
+_ap.add_argument("--max-dte", type=int, default=40); _ap.add_argument("--outdir", default="data/cache/calendar_path")
+_ap.add_argument("--no-delta-filter", action="store_true")   # delta mode: keep every strike (the 0.05-0.95 filter dropped deep ITM/OTM legs after big moves -> path truncation, erratum 2026-09-16)   # long-dated study: --max-dte 85 --outdir data/cache/calendar_path_long
 _A = _ap.parse_args(); CP = _A.cp
 if _A.tickers: TICKERS = [t.upper() for t in _A.tickers]
 if _A.universe_file: TICKERS = [l.strip().upper() for l in open(_A.universe_file) if l.strip()]
@@ -87,7 +88,7 @@ def main() -> int:
                 SELECT o.trade_date, o.expiry, o.strike, o.cp, o.bid, o.ask, o.delta, o.bid_iv, o.ask_iv, o.open_interest
                 FROM "{S3TABLES_CATALOG}"."{DB}"."{TABLE}" o
                 WHERE {tick_sql} AND o.cp {cp_sql} AND o.trade_date BETWEEN DATE '{yr}-01-01' AND DATE '{yr}-12-31'
-                  AND date_diff('day', o.trade_date, o.expiry) BETWEEN 0 AND {MAX_DTE} AND abs(o.delta) BETWEEN 0.05 AND 0.95""")
+                  AND date_diff('day', o.trade_date, o.expiry) BETWEEN 0 AND {MAX_DTE}{'' if _A.no_delta_filter else ' AND abs(o.delta) BETWEEN 0.05 AND 0.95'}""")
             else:
                 tw = w[["ticker", "date", "k_lo", "k_hi"]].rename(columns={"date": "trade_date"})
                 wr.s3.to_parquet(df=tw, path=path, dataset=True, database=DB, table=name, compression="snappy", mode="overwrite",

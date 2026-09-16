@@ -1,4 +1,12 @@
-# Double calendar / diagonal / condor playbook (2026-09-15, rev 2026-09-16)
+# Double calendar / diagonal / condor playbook (2026-09-15, rev 2026-09-16) — ⚠️ WITHDRAWN 2026-09-16
+
+> **Every number in this playbook came from a sim whose daily path was cut off after ~2% moves (chain pull strike
+> window), so losses beyond 3% never registered. Corrected settlement on the ETFs: calendar +3.5 / −2.2%, diagonal
+> +2.8 / −2.5%, condor +0.8 / −6.6% (12/19d / 20/27d), win ~50%, monthly t ≈ 0, 2018–2020 and 2023 negative.
+> There is no measured edge (confirmed on the clean re-run: best cell +4.4%, t 0.5; 20/27d negative). The Friday
+> screener's IWM / QQQ / SPY entries were REMOVED 2026-09-16; the stock screener is RETIRED: on the clean stock run every structure loses 5–18% of max risk per trade on the liquid roster (monthly t −3.4 to −5.0).** Erratum with the corrected tables:
+> `calendar_path_study.md`.
+
 
 Source: `calendar_path_study.md` (steps 1–11, real daily bid/ask 2018-11 → 2026-07, house cost model on four legs,
 hold-to-expiry settlement). Supersedes the per-ticker calendar notes; `spy_double_calendar_playbook.md` and

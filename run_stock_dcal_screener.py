@@ -140,6 +140,7 @@ async def run(a) -> list[dict]:
 
 
 def main() -> int:
+    print("\n  ⚠ ON HOLD (2026-09-16): the calendar path study behind these rules truncated its daily path after ~2% moves; corrected ETF edge ≈ 0 and the stock re-run is pending. Output is for reference only -- not entries. See calendar_path_study.md erratum.\n")
     ap = argparse.ArgumentParser()
     ap.add_argument("--date", type=date.fromisoformat, default=date.today()); ap.add_argument("--tickers", nargs="*", default=ROSTER)
     ap.add_argument("--widen", type=float, default=2.0)   # step 7e: stocks plateau from 1% (+10.1) to 2% (+10.9); 2% = the ETF rule; ap.add_argument("--dte", type=int, default=20); ap.add_argument("--concurrency", type=int, default=3)

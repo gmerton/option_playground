@@ -311,28 +311,6 @@ STRATEGIES: list[dict] = [
         },
     },
     {
-        "type":          "double_calendar",
-        "name":          "SPY Double Calendar",
-        "long_widen_pct": 2.0,   # wings 2% of spot beyond each short (step 7d width sweep)
-        "same_expiry_wings": True,   # 2026-09-16 step 11: IRON CONDOR -- wings in the SAME expiry as the shorts beat the next-week diagonal on paired entries (12/19d +31.8 vs +19.1, 20/27d +41.4 vs +27.0 on max risk; every ticker/regime/year); hold to expiry, size on width - credit
-        "alloc_key":     "SPY double cal",
-        "ticker":        "SPY",
-        "dte_target":    20,      # 2026-09-16: 20 like IWM/QQQ (12 landed on SPY's Mon/Wed expiries; the study is Friday weeklies; SPY condor 20/27d +30% vs 12/19d +23%)
-        "dc_gap_min":    5,
-        "dc_gap_max":    9,
-        "profit_take":   0.50,
-        "fwd_vol_warn":  None,
-        "note":          "rev 2026-09-16: IRON CONDOR in ALL regimes (step 11); earlier rev 2026-09-15: symmetric 0.35P/0.35C in BOTH traded regimes, HOLD to the short expiry "
-                         "(Bear_HiVIX sym35 +25.6% / 69% win vs the old 0.35P/0.10C +8.8%; Bull_LoVIX the 50% take cost ~2pp vs hold); "
-                         "run alongside the put spread at 1.5% each",
-        "regime_strategies": {   # 2026-09-16: all four regimes -- the SPY condor (2% wings) was positive in every cell in BOTH halves
-            "Bearish_HighIV": {"put_d": 0.35, "call_d": 0.35, "exit": "hold"},   # 12/19d +47% / 20/27d +40%
-            "Bearish_LowIV":  {"put_d": 0.35, "call_d": 0.35, "exit": "hold"},   # +11% / +28% (n=31; halves +14/+9, +35/+21)
-            "Bullish_HighIV": {"put_d": 0.35, "call_d": 0.35, "exit": "hold"},   # +31% / +48%
-            "Bullish_LowIV":  {"put_d": 0.35, "call_d": 0.35, "exit": "hold"},   # +16% / +21%
-        },
-    },
-    {
         "type":          "straddle",
         "name":          "UUP ATM Short Straddle",
         "alloc_key":     "UUP straddle",
@@ -361,48 +339,6 @@ STRATEGIES: list[dict] = [
     #   GLD / XLU / XLV / XLP put calendars -- entry bid-ask 18-470% of the debit; hold-to-expiry ROC after costs
     #   GLD -3%, XLV -16/-25%, XLF -22/-24%, XLP -28/-40%, TLT -15% (XLU/XLE: single-digit trade counts). The Sept
     #   review had already found them net-negative on the cost model; the paths confirm it. Kept: the liquid index ETFs.
-    # 2026-09-15 (calendar path study, double-calendar step): the IWM single put calendar was replaced by the symmetric
-    # 0.35-delta DOUBLE calendar (+25.6% ROC held, 64% win, both halves) and QQQ was added (+19.4%, both halves).
-    {
-        "type":          "double_calendar",
-        "name":          "IWM Double Calendar",
-        "long_widen_pct": 2.0,   # wings 2% of spot beyond each short (step 7d width sweep)
-        "same_expiry_wings": True,   # 2026-09-16 step 11: IRON CONDOR -- wings in the SAME expiry as the shorts beat the next-week diagonal on paired entries (12/19d +31.8 vs +19.1, 20/27d +41.4 vs +27.0 on max risk; every ticker/regime/year); hold to expiry, size on width - credit
-        "alloc_key":     "IWM double cal",
-        "ticker":        "IWM",
-        "dte_target":    20,      # short ~20 DTE / long the next weekly (path study: 20/27d beat 12/19d on every name)
-        "dc_gap_min":    5,
-        "dc_gap_max":    9,
-        "profit_take":   None,
-        "fwd_vol_warn":  None,
-        "note":          "sym 0.35d double, hold: +25.6% ROC 20/27d (n=335, 64% win, halves +23/+28), +15.4% 12/19d; every exit rule worse than hold; Bear_LoVIX is the weak cell, Bull_LoVIX was negative pre-2022",
-        "regime_strategies": {   # symmetric 0.35 delta in every regime, HOLD to the short expiry (calendar path study 2026-09-15)
-            "Bearish_HighIV": {"put_d": 0.35, "call_d": 0.35, "exit": "hold"},
-            "Bearish_LowIV":  {"put_d": 0.35, "call_d": 0.35, "exit": "hold"},
-            "Bullish_HighIV": {"put_d": 0.35, "call_d": 0.35, "exit": "hold"},
-            "Bullish_LowIV":  {"put_d": 0.35, "call_d": 0.35, "exit": "hold"},
-        },
-    },
-    {
-        "type":          "double_calendar",
-        "name":          "QQQ Double Calendar",
-        "long_widen_pct": 2.0,   # wings 2% of spot beyond each short (step 7d width sweep)
-        "same_expiry_wings": True,   # 2026-09-16 step 11: IRON CONDOR -- wings in the SAME expiry as the shorts beat the next-week diagonal on paired entries (12/19d +31.8 vs +19.1, 20/27d +41.4 vs +27.0 on max risk; every ticker/regime/year); hold to expiry, size on width - credit
-        "alloc_key":     "QQQ double cal",
-        "ticker":        "QQQ",
-        "dte_target":    20,      # short ~20 DTE / long the next weekly (path study: 20/27d beat 12/19d on every name)
-        "dc_gap_min":    5,
-        "dc_gap_max":    9,
-        "profit_take":   None,
-        "fwd_vol_warn":  None,
-        "note":          "sym 0.35d double, hold: +19.4% ROC 20/27d (n=326, 59% win, halves +11/+28), +14.3% 12/19d; same management; runs alongside the QQQ put spread at reduced size",
-        "regime_strategies": {   # symmetric 0.35 delta in every regime, HOLD to the short expiry (calendar path study 2026-09-15)
-            "Bearish_HighIV": {"put_d": 0.35, "call_d": 0.35, "exit": "hold"},
-            "Bearish_LowIV":  {"put_d": 0.35, "call_d": 0.35, "exit": "hold"},
-            "Bullish_HighIV": {"put_d": 0.35, "call_d": 0.35, "exit": "hold"},
-            "Bullish_LowIV":  {"put_d": 0.35, "call_d": 0.35, "exit": "hold"},
-        },
-    },
 ]
 
 DTE_TARGET     = 20
@@ -430,8 +366,6 @@ TIER_MAP: dict[str, str] = {
     "CLS Bull Put Spread":      "P",
     "UUP ATM Short Straddle":   "C",
     "XOP Bull Put Spread":      "P",
-    "IWM Double Calendar":      "B",   # path study 2026-09-15 (sym 0.35d, hold); GLD/XLU/XLV/XLP calendars retired the same day
-    "QQQ Double Calendar":      "B",
 }
 
 # For regime strategies, tier depends on which regime fires
@@ -451,10 +385,6 @@ REGIME_TIER_MAP: dict[str, dict[str, str]] = {
     "SPY Regime-Switching": {
         "Bearish_HighIV": "B", "Bearish_LowIV": "A",
         "Bullish_HighIV": "B", "Bullish_LowIV": "C",
-    },
-    "SPY Double Calendar": {
-        "Bearish_HighIV": "A", "Bearish_LowIV": "C",
-        "Bullish_HighIV": "C", "Bullish_LowIV": "C",
     },
 }
 
@@ -1394,6 +1324,13 @@ def screen_double_calendar(
     profit_take = strat["profit_take"]
     lines: list[str] = []
 
+    # 0. 2026-09-16 HOLD: the calendar path study behind the condor / diagonal / double-calendar rules truncated its daily
+    #    path after ~2% moves (chain-pull strike window), hiding every loss beyond 3%. Corrected ETF results are ~0
+    #    (calendar +3.5 / -2.2, diagonal +2.8 / -2.5, condor +0.8 / -6.6 on 12/19 / 20/27d). Entries print for reference
+    #    but are NOT entries until the study is re-run on a clean pull. Set on_hold=False on a strategy to re-enable.
+    if strat.get("on_hold", True):
+        lines.append("  ⚠ ON HOLD (2026-09-16): the study behind this entry had a path-truncation bug; corrected edge ≈ 0. See calendar_path_study.md erratum.")
+        return {"enter": False, "lines": lines, "summary": "SKIP  (ON HOLD -- study erratum 2026-09-16)"}
     # 1. Regime classification
     if spot is None or ma50 is None:
         lines.append("  Cannot classify regime: spot or MA50 unavailable")

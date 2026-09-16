@@ -38,5 +38,5 @@
 4. Score Ariel's nightly calls (`data/ariel_hernandez/analysis/`) — hit rate accrues per video.
 
 
-### Friday (added 2026-09-15): stock double calendars / diagonals
-`PYTHONPATH=src:. .venv/bin/python3 run_stock_dcal_screener.py` after the Friday screener, **during market hours** (the bid-ask gate fails on after-hours quotes). ENTER rows: structure already chosen by earnings position; size on the max-risk column; hold to the short expiry. MARGINAL = earnings before the short expiry, not an entry. Playbook: `double_calendar_playbook.md` rule 3.
+### Friday: stock double calendars / diagonals -- ⚠ ON HOLD 2026-09-16
+The study behind `run_stock_dcal_screener.py` had a path-truncation bug (see `calendar_path_study.md` erratum); on the clean ETF re-run no calendar / diagonal / condor has an edge. The clean stock run (2026-09-16) shows every structure losing 5–18% per trade on single names; the screener is RETIRED. Do not act on its output. The IWM / QQQ / SPY double-calendar entries were removed from the Friday screener the same day.

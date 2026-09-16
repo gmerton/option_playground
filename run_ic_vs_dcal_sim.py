@@ -61,14 +61,17 @@ def simulate(t, closes, vix, spy_up):
                     if any(v is None for v in (a, b, c, e)): continue
                     rows.append(dict(d=dd, mark=a.mid + b.mid - c.mid - e.mid, close_cost=buy(a) + buy(b) - sell(c) - sell(e)))
                 Pth = pd.DataFrame(rows)
-                if Pth.empty: continue
-                last = Pth.iloc[-1]; left = pd.Series([(se - x).days for x in Pth.d])
-                if pd.notna(ST) and last.d == se:
+                if pd.isna(ST) and Pth.empty: continue
+                # settlement is pure intrinsic at expiry -- never depends on chain rows (the pull's price/delta window drops
+                # deep-ITM legs after big moves, which truncated the path and hid the losses before this fix, 2026-09-16)
+                if pd.notna(ST):
                     hold = credit - (max(Kp - ST, 0) - max(Kpl - ST, 0)) - (max(ST - Kc, 0) - max(ST - Kcl, 0))
                 else:
-                    hold = credit - last.close_cost
+                    hold = credit - Pth.iloc[-1].close_cost
+                if Pth.empty: Pth = pd.DataFrame([dict(d=d, mark=credit, close_cost=credit)])
+                last = Pth.iloc[-1]; left = pd.Series([(se - x).days for x in Pth.d]); truncated = int(last.d != se)
                 res = dict(ticker=t, struct=sname, ic=ic, entry=d, spot=spot, short_exp=se, Kp=Kp, Kc=Kc, Kpl=Kpl, Kcl=Kcl, credit=credit, width=width, maxrisk=maxrisk,
-                           vix=vix.get(d, np.nan), spy_up=spy_up.get(d, np.nan), ST=ST, hold=hold)
+                           vix=vix.get(d, np.nan), spy_up=spy_up.get(d, np.nan), ST=ST, hold=hold, truncated=truncated)
                 hit = Pth[(Pth.mark <= 0.5 * credit) & (left > 0)]; res["pt50"] = (credit - hit.iloc[0].close_cost) if len(hit) else hold
                 hit = Pth[(Pth.mark >= 2.0 * credit) & (left > 0)]; res["stop2x"] = (credit - hit.iloc[0].close_cost) if len(hit) else hold
                 early = Pth[left >= 1]; res["exit_m1"] = (credit - early.iloc[-1].close_cost) if len(early) else hold

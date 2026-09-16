@@ -74,15 +74,22 @@ def simulate(t, closes, vix, spy_up, widens, deltas=(0.35,)):
                     if any(v is None for v in (a, b, c, e)): continue
                     rows.append(dict(d=dd, S=float(cl.get(dd, np.nan)), sp=a.mid, spb=a.ba, lp=b.mid, lpb=b.ba, sc=c.mid, scb=c.ba, lc=e.mid, lcb=e.ba))
                 Pth = pd.DataFrame(rows)
-                if Pth.empty: continue
-                last = Pth.iloc[-1]; left = pd.Series([(se - x).days for x in Pth.d]); marks = (Pth.lp - Pth.sp) + (Pth.lc - Pth.sc)
-                if pd.notna(ST) and last.d == se:
-                    fin = (last.lp - SLIP * last.lpb - COMM) - max(Kp - ST, 0) + (last.lc - SLIP * last.lcb - COMM) - max(ST - Kc, 0)
+                if Pth.empty and pd.isna(ST): continue
+                # settlement (fix 2026-09-16): the shorts settle at intrinsic on the expiry close; the longs are sold at the
+                # expiry-day mark when the chain has it, otherwise at INTRINSIC (a floor: the pull's price/delta window drops
+                # deep-ITM/OTM legs after big moves, which used to truncate the path and mark the trade before the damage)
+                if pd.notna(ST):
+                    lp_row = leg(Pd[se], le, Kpl) if se in Pd else None; lc_row = leg(Cd[se], le, Kcl) if se in Cd else None
+                    lp_val = (lp_row.mid - SLIP * lp_row.ba - COMM) if lp_row is not None else max(Kpl - ST, 0)
+                    lc_val = (lc_row.mid - SLIP * lc_row.ba - COMM) if lc_row is not None else max(ST - Kcl, 0)
+                    fin = lp_val - max(Kp - ST, 0) + lc_val - max(ST - Kc, 0); truncated = int(lp_row is None or lc_row is None)
                 else:
-                    fin = close_all(last)
+                    fin = close_all(Pth.iloc[-1]); truncated = 1
+                if Pth.empty: Pth = pd.DataFrame([dict(d=d, S=spot, sp=0, spb=0, lp=0, lpb=0, sc=0, scb=0, lc=0, lcb=0)])
+                last = Pth.iloc[-1]; left = pd.Series([(se - x).days for x in Pth.d]); marks = (Pth.lp - Pth.sp) + (Pth.lc - Pth.sc)
                 res = dict(ticker=t, struct=sname, widen=w, widen_p=wp, widen_c=wc, delta=DP, entry=d, spot=spot, Kp=Kp, Kc=Kc, Kpl=Kpl, Kcl=Kcl, short_exp=se, long_exp=le,
                            debit=dbp + dbc, cost=cost, maxrisk=maxrisk, ba_pct=100 * ba / max(dbp + dbc, 0.01), vix=vix.get(d, np.nan), spy_up=spy_up.get(d, np.nan),
-                           width_pct=100 * (Kc - Kp) / spot, ST=ST)
+                           width_pct=100 * (Kc - Kp) / spot, ST=ST, truncated=truncated)
                 res["hold"] = fin - cost; res["days"] = len(Pth)
                 for m in (1, 2):      # exit_m1 / exit_m2: close at the last mark >= m calendar days before the short expiry
                     early = Pth[left >= m]; res[f"exit_m{m}"] = (close_all(early.iloc[-1]) - cost) if len(early) else res["hold"]
