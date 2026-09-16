@@ -972,13 +972,15 @@ def reconstruct_trade_cycles() -> pd.DataFrame:
 
     Returns one row per cycle: conid, symbol, underlying_symbol, asset_category,
     put_call, strike, expiry, entry_date, exit_date, first_side ('LONG'/'SHORT'),
-    n_fills, max_abs_qty, realized_pnl, still_open.
+    n_fills, max_abs_qty, realized_pnl, still_open, and the quantity-weighted
+    entry_price / exit_price (opening-side and closing-side fills of the cycle;
+    exit_price is None while the cycle is still open).
     """
     conn = _get_conn()
     try:
         df = pd.read_sql("""
             SELECT conid, symbol, underlying_symbol, asset_category, put_call, strike, expiry,
-                   trade_date, trade_id, quantity, realized_pnl
+                   trade_date, trade_id, quantity, trade_price, realized_pnl
             FROM journal_trades
             ORDER BY conid, trade_date, trade_id
         """, conn)
@@ -1005,7 +1007,24 @@ def reconstruct_trade_cycles() -> pd.DataFrame:
     return pd.DataFrame(cycles)
 
 
+def _vwap(rows: pd.DataFrame) -> float | None:
+    """Quantity-weighted average fill price (weights are absolute quantities)."""
+    if rows.empty:
+        return None
+    w = rows["quantity"].abs()
+    px = pd.to_numeric(rows["trade_price"], errors="coerce")
+    ok = w.notna() & px.notna() & (w > 0)
+    if not ok.any() or w[ok].sum() == 0:
+        return None
+    return float((px[ok] * w[ok]).sum() / w[ok].sum())
+
+
 def _cycle_row(g: pd.DataFrame, cyc: pd.DataFrame, still_open: bool) -> dict:
+    # The cycle's first fill sets the direction: same-sign fills are entries
+    # (the initial open plus any adds), opposite-sign fills are exits.
+    entry_sign = 1 if cyc.iloc[0]["quantity"] > 0 else -1
+    entries = cyc[cyc["quantity"] * entry_sign > 0]
+    exits = cyc[cyc["quantity"] * entry_sign < 0]
     return {
         "conid": g["conid"].iloc[0],
         "symbol": g["symbol"].iloc[0],
@@ -1014,8 +1033,11 @@ def _cycle_row(g: pd.DataFrame, cyc: pd.DataFrame, still_open: bool) -> dict:
         "put_call": g["put_call"].iloc[0],
         "strike": g["strike"].iloc[0],
         "expiry": g["expiry"].iloc[0],
-        "entry_date": cyc["trade_date"].min().date(),
-        "exit_date": None if still_open else cyc["trade_date"].max().date(),
+        "entry_date": (entries["trade_date"].min().date() if not entries.empty
+                       else cyc["trade_date"].min().date()),
+        "exit_date": None if still_open or exits.empty else exits["trade_date"].max().date(),
+        "entry_price": _vwap(entries),
+        "exit_price": _vwap(exits),
         "first_side": "LONG" if cyc.iloc[0]["quantity"] > 0 else "SHORT",
         "n_fills": len(cyc),
         "max_abs_qty": cyc["quantity"].cumsum().abs().max(),

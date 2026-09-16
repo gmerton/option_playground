@@ -12,6 +12,7 @@ ROOT = Path("data/journal")
 SECTIONS = [
     ("trade_reviews.html", "Trade journal", "Every reviewed trade: entry and exit verdicts, the rubric grade, and a chart per trade."),
     ("summary.html", "Performance", "Strategy performance, top and bottom trades, and results by vehicle."),
+    ("days/index.html", "Daily grids", "One page per session: opens, closes, round trips and untouched holds, sortable by ticker, entry, exit or P&amp;L."),
     ("alerts.html", "Live alerts", "Today's alert monitor feed: setups graded A/B (loud), C (dimmed), with industry context."),
     ("tutorial/qcom/index.html", "Tutorial: QCOM entries", "A flip book of 12 QCOM entries (8/31 to 9/11): judge each setup before you see the verdict."),
     ("tito/index.html", "Tito's best trades", "His 20 curated winners with daily charts, option paths, commentary and the scale-out rule."),
