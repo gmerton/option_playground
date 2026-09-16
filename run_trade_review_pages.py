@@ -1092,6 +1092,12 @@ def main() -> None:
     summary_html = render_summary_page(rows).replace("__GENERATED_AT__", generated_at)
     SUMMARY_OUT.write_text(summary_html)
 
+    # keep the queryable tag layer in step with the reviews the pages were built from
+    from lib.mysql_lib import sync_review_tags, tag_reviews_with_earnings
+    n_tags = sync_review_tags()
+    n_earn = tag_reviews_with_earnings()
+    print(f"tags: {n_tags} mirrored into journal_review_tags, {n_earn} reviews tagged 'earnings'")
+
     from lib.alerts.publish import install_page
     install_page()                       # alerts.html lives in src/lib/alerts/, copied in so it deploys
     print(f"Wrote {INDEX_OUT} (index) + {SUMMARY_OUT} (summary) + {len(rows)} files in {TRADES_DIR}/ + alerts.html")

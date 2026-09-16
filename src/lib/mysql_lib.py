@@ -1046,6 +1046,123 @@ def _cycle_row(g: pd.DataFrame, cyc: pd.DataFrame, still_open: bool) -> dict:
     }
 
 
+# ── Review tags (queryable) ────────────────────────────────────────────────────
+#
+# journal_trade_reviews.tags is a comma-joined string, so the only query against
+# it is LIKE '%x%' -- which matches substrings of unrelated tags and can't be
+# indexed. This is the same table, normalized: one row per (review, tag), so
+# "every earnings trade" is a join, not a string scan. The string column stays
+# as the human-readable copy; sync_review_tags() rebuilds this from it.
+
+def create_review_tag_table() -> None:
+    """Create journal_review_tags if missing."""
+    conn = _get_conn()
+    try:
+        cur = conn.cursor()
+        cur.execute("""
+            CREATE TABLE IF NOT EXISTS journal_review_tags (
+                review_id  INT NOT NULL,
+                tag        VARCHAR(64) NOT NULL,
+                source     VARCHAR(16) NOT NULL DEFAULT 'manual',  -- manual | derived
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                PRIMARY KEY (review_id, tag),
+                INDEX idx_tag (tag),
+                INDEX idx_tag_source (tag, source)
+            )
+        """)
+        conn.commit()
+    finally:
+        conn.close()
+
+
+def sync_review_tags() -> int:
+    """Mirror every review's comma-joined tags string into journal_review_tags.
+
+    Idempotent: manual rows are replaced wholesale, derived rows (written by
+    tag_reviews_with_earnings and friends) are left alone.
+    """
+    create_review_tag_table()
+    conn = _get_conn()
+    try:
+        df = pd.read_sql("SELECT id, tags FROM journal_trade_reviews WHERE tags IS NOT NULL AND tags <> ''", conn)
+        pairs = [(int(r.id), t.strip()[:64])
+                 for r in df.itertuples() for t in str(r.tags).split(",") if t.strip()]
+        cur = conn.cursor()
+        cur.execute("DELETE FROM journal_review_tags WHERE source = 'manual'")
+        if pairs:
+            cur.executemany(
+                "INSERT INTO journal_review_tags (review_id, tag, source) VALUES (%s, %s, 'manual') "
+                "ON DUPLICATE KEY UPDATE tag = VALUES(tag)", pairs)
+        conn.commit()
+        return len(pairs)
+    finally:
+        conn.close()
+
+
+def tag_reviews_with_earnings(tag: str = "earnings") -> int:
+    """Tag every review whose hold spans a CONFIRMED earnings date (source='derived').
+
+    Derived rather than hand-typed so the tag means the same thing on all 644
+    reviews and can be recomputed when earnings_report is refreshed. An open
+    review (no exit_date) is measured to today.
+    """
+    create_review_tag_table()
+    conn = _get_conn()
+    try:
+        rv = pd.read_sql(
+            "SELECT id, underlying_symbol, entry_date, exit_date FROM journal_trade_reviews", conn)
+        er = pd.read_sql(
+            "SELECT ticker, raw_date, date_status FROM earnings_report WHERE date_status = 'Confirmed'", conn)
+        er["raw_date"] = pd.to_datetime(er["raw_date"], errors="coerce").dt.date
+        er = er.dropna(subset=["raw_date"])
+        by_ticker: dict[str, list] = {}
+        for r in er.itertuples():
+            by_ticker.setdefault(r.ticker, []).append(r.raw_date)
+
+        today = date.today()
+        hits = []
+        for r in rv.itertuples():
+            dates = by_ticker.get(r.underlying_symbol)
+            if not dates or r.entry_date is None:
+                continue
+            end = r.exit_date or today
+            if any(r.entry_date <= d <= end for d in dates):
+                hits.append((int(r.id), tag))
+        cur = conn.cursor()
+        cur.execute("DELETE FROM journal_review_tags WHERE source = 'derived' AND tag = %s", (tag,))
+        if hits:
+            cur.executemany(
+                "INSERT INTO journal_review_tags (review_id, tag, source) VALUES (%s, %s, 'derived') "
+                "ON DUPLICATE KEY UPDATE source = 'derived'", hits)
+        conn.commit()
+        return len(hits)
+    finally:
+        conn.close()
+
+
+def reviews_by_tag(*tags: str, match_all: bool = False) -> pd.DataFrame:
+    """Reviews carrying any (or all) of `tags` -- an indexed join, not a LIKE scan."""
+    if not tags:
+        raise ValueError("pass at least one tag")
+    ph = ",".join(["%s"] * len(tags))
+    having = "HAVING COUNT(DISTINCT t.tag) = %s" if match_all else ""
+    sql = f"""
+        SELECT r.*, GROUP_CONCAT(DISTINCT t.tag ORDER BY t.tag) AS matched_tags
+        FROM journal_trade_reviews r
+        JOIN journal_review_tags t ON t.review_id = r.id
+        WHERE t.tag IN ({ph})
+        GROUP BY r.id
+        {having}
+        ORDER BY r.entry_date, r.id
+    """
+    params = list(tags) + ([len(tags)] if match_all else [])
+    conn = _get_conn()
+    try:
+        return pd.read_sql(sql, conn, params=params)
+    finally:
+        conn.close()
+
+
 def create_trade_review_table() -> None:
     """Create journal_trade_reviews if missing."""
     conn = _get_conn()
