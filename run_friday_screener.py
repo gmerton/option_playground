@@ -313,22 +313,23 @@ STRATEGIES: list[dict] = [
     {
         "type":          "double_calendar",
         "name":          "SPY Double Calendar",
-        "long_widen_pct": 1.0,   # 2026-09-15 step 7: DOUBLE DIAGONAL -- longs 1% of spot wider than the shorts (paired +$0.33/spread, t=19.6; ROC on max risk 12/19d +15.6 vs +12.1, 20/27d +22.5 vs +19.1; 67-72% win)
+        "long_widen_pct": 2.0,   # wings 2% of spot beyond each short (step 7d width sweep)
+        "same_expiry_wings": True,   # 2026-09-16 step 11: IRON CONDOR -- wings in the SAME expiry as the shorts beat the next-week diagonal on paired entries (12/19d +31.8 vs +19.1, 20/27d +41.4 vs +27.0 on max risk; every ticker/regime/year); hold to expiry, size on width - credit
         "alloc_key":     "SPY double cal",
         "ticker":        "SPY",
-        "dte_target":    12,
+        "dte_target":    20,      # 2026-09-16: 20 like IWM/QQQ (12 landed on SPY's Mon/Wed expiries; the study is Friday weeklies; SPY condor 20/27d +30% vs 12/19d +23%)
         "dc_gap_min":    5,
         "dc_gap_max":    9,
         "profit_take":   0.50,
         "fwd_vol_warn":  None,
-        "note":          "rev 2026-09-15 (calendar path study): symmetric 0.35P/0.35C in BOTH traded regimes, HOLD to the short expiry "
+        "note":          "rev 2026-09-16: IRON CONDOR in ALL regimes (step 11); earlier rev 2026-09-15: symmetric 0.35P/0.35C in BOTH traded regimes, HOLD to the short expiry "
                          "(Bear_HiVIX sym35 +25.6% / 69% win vs the old 0.35P/0.10C +8.8%; Bull_LoVIX the 50% take cost ~2pp vs hold); "
                          "run alongside the put spread at 1.5% each",
-        "regime_strategies": {
-            "Bearish_HighIV": {"put_d": 0.35, "call_d": 0.35, "exit": "hold"},
-            "Bearish_LowIV":  {"exit": "skip"},
-            "Bullish_HighIV": {"exit": "skip"},      # path study: sym35 +18% here too (halves +28 / -5) -- not enabled yet, unstable
-            "Bullish_LowIV":  {"put_d": 0.35, "call_d": 0.35, "exit": "hold"},
+        "regime_strategies": {   # 2026-09-16: all four regimes -- the SPY condor (2% wings) was positive in every cell in BOTH halves
+            "Bearish_HighIV": {"put_d": 0.35, "call_d": 0.35, "exit": "hold"},   # 12/19d +47% / 20/27d +40%
+            "Bearish_LowIV":  {"put_d": 0.35, "call_d": 0.35, "exit": "hold"},   # +11% / +28% (n=31; halves +14/+9, +35/+21)
+            "Bullish_HighIV": {"put_d": 0.35, "call_d": 0.35, "exit": "hold"},   # +31% / +48%
+            "Bullish_LowIV":  {"put_d": 0.35, "call_d": 0.35, "exit": "hold"},   # +16% / +21%
         },
     },
     {
@@ -365,7 +366,8 @@ STRATEGIES: list[dict] = [
     {
         "type":          "double_calendar",
         "name":          "IWM Double Calendar",
-        "long_widen_pct": 1.0,   # 2026-09-15 step 7: DOUBLE DIAGONAL -- longs 1% of spot wider than the shorts (paired +$0.33/spread, t=19.6; ROC on max risk 12/19d +15.6 vs +12.1, 20/27d +22.5 vs +19.1; 67-72% win)
+        "long_widen_pct": 2.0,   # wings 2% of spot beyond each short (step 7d width sweep)
+        "same_expiry_wings": True,   # 2026-09-16 step 11: IRON CONDOR -- wings in the SAME expiry as the shorts beat the next-week diagonal on paired entries (12/19d +31.8 vs +19.1, 20/27d +41.4 vs +27.0 on max risk; every ticker/regime/year); hold to expiry, size on width - credit
         "alloc_key":     "IWM double cal",
         "ticker":        "IWM",
         "dte_target":    20,      # short ~20 DTE / long the next weekly (path study: 20/27d beat 12/19d on every name)
@@ -384,7 +386,8 @@ STRATEGIES: list[dict] = [
     {
         "type":          "double_calendar",
         "name":          "QQQ Double Calendar",
-        "long_widen_pct": 1.0,   # 2026-09-15 step 7: DOUBLE DIAGONAL -- longs 1% of spot wider than the shorts (paired +$0.33/spread, t=19.6; ROC on max risk 12/19d +15.6 vs +12.1, 20/27d +22.5 vs +19.1; 67-72% win)
+        "long_widen_pct": 2.0,   # wings 2% of spot beyond each short (step 7d width sweep)
+        "same_expiry_wings": True,   # 2026-09-16 step 11: IRON CONDOR -- wings in the SAME expiry as the shorts beat the next-week diagonal on paired entries (12/19d +31.8 vs +19.1, 20/27d +41.4 vs +27.0 on max risk; every ticker/regime/year); hold to expiry, size on width - credit
         "alloc_key":     "QQQ double cal",
         "ticker":        "QQQ",
         "dte_target":    20,      # short ~20 DTE / long the next weekly (path study: 20/27d beat 12/19d on every name)
@@ -1382,9 +1385,10 @@ def screen_double_calendar(
 
     Structure:
       Short legs: ~12 DTE expiry  (sell put at put_d delta + sell call at call_d delta)
-      Long  legs: same strikes (double calendar) or long_widen_pct wider (double diagonal), next weekly (buy them)
-      Net debit = (long_put_mid - short_put_mid) + (long_call_mid - short_call_mid)
-      Max risk = net debit + wider wing width (= net debit for the calendar).
+      Long  legs: same strikes (double calendar) or long_widen_pct wider (double diagonal), next weekly (buy them);
+                  or, with same_expiry_wings, long_widen_pct wider in the SAME expiry = IRON CONDOR (study step 11)
+      Net debit = (long_put_mid - short_put_mid) + (long_call_mid - short_call_mid)   (negative = credit)
+      Max risk = net debit + wider wing width (= net debit for the calendar; = width - credit for the condor).
     """
     ticker      = strat["ticker"]
     profit_take = strat["profit_take"]
@@ -1410,7 +1414,9 @@ def screen_double_calendar(
         lines.append(f"  {regime}: no double calendar edge in this regime — skip")
         return {"enter": False, "lines": lines, "summary": f"SKIP  ({regime})", "active_regime": regime}
 
-    # 2. Expiry pair
+    # 2. Expiry pair (a same-expiry condor only needs the short expiry)
+    if strat.get("same_expiry_wings") and short_expiry and not long_expiry:
+        long_expiry = short_expiry
     if not short_expiry or not long_expiry:
         lines.append(
             f"  Could not find expiry pair (need ~{strat['dte_target']} DTE short + "
@@ -1462,6 +1468,9 @@ def screen_double_calendar(
     # largest long-expiry strike <= Kp x (1 - widen), long call at the smallest >= Kc x (1 + widen)
     # (calendar path study step 7, 2026-09-15: 1% wider beat the calendar on every ticker / regime / 8 of 9 years).
     widen = float(strat.get("long_widen_pct", 0) or 0) / 100.0
+    condor = bool(strat.get("same_expiry_wings")) and widen > 0
+    if condor:                       # IRON CONDOR: the "long legs" are wings in the SHORT expiry (study step 11)
+        long_chain, long_expiry = short_chain, short_expiry
     lp_cands = [c for c in long_chain if c.get("option_type") == "put" and (c.get("bid") or 0) > 0
                 and (c["strike"] == put_strike if widen == 0 else c["strike"] <= put_strike * (1 - widen))]
     lc_cands = [c for c in long_chain if c.get("option_type") == "call" and (c.get("bid") or 0) > 0
@@ -1499,6 +1508,11 @@ def screen_double_calendar(
     net_debit = (lp_mid - sp_mid) + (lc_mid - sc_mid)
 
     max_risk = net_debit + max(width_p, width_c)     # only one wing can be breached at the short expiry
+    if condor:
+        max_risk = max(width_p, width_c) + net_debit     # net_debit is negative (a credit): width - credit
+        if net_debit >= 0:
+            lines.append(f"  Condor is not a credit (${net_debit:.3f}) — data issue")
+            return {"enter": False, "lines": lines, "summary": "SKIP  (no credit)", "active_regime": regime}
     if widen == 0 and net_debit <= 0:
         lines.append(f"  Net debit ≤ 0 (${net_debit:.3f}) — data issue")
         return {"enter": False, "lines": lines, "summary": "SKIP  (negative debit)", "active_regime": regime}
@@ -1539,13 +1553,19 @@ def screen_double_calendar(
     if widen == 0:
         lines.append(f"  Net debit:   ${net_debit:.3f}/shr  (${net_debit * 100:.2f}/contract)")
         lines.append(f"  Max loss:    ${net_debit:.3f}/shr  = net debit paid")
+    elif condor:
+        lines.append(f"  Structure:   IRON CONDOR, all four legs {short_expiry}, wings {widen * 100:.1f}% of spot (put wing ${width_p:.2f}, call wing ${width_c:.2f})")
+        lines.append(f"  Credit:      ${abs(net_debit):.3f}/shr  (${abs(net_debit) * 100:.2f}/contract) = {100 * abs(net_debit) / max_risk:.0f}% of max risk")
+        lines.append(f"  Max risk:    ${max_risk:.3f}/shr  (${max_risk * 100:.2f}/contract) = wider wing - credit; SIZE ON THIS")
+        lines.append(f"  Breakevens:  ${put_strike + net_debit:.2f} / ${call_strike - net_debit:.2f}  (full credit if {ticker} settles between ${put_strike:.2f} and ${call_strike:.2f})")
     else:
         lines.append(f"  Structure:   DOUBLE DIAGONAL, longs {widen * 100:.1f}% wider (put wing ${width_p:.2f}, call wing ${width_c:.2f})")
         lines.append(f"  Net {'debit' if net_debit >= 0 else 'CREDIT'}:  ${abs(net_debit):.3f}/shr  (${abs(net_debit) * 100:.2f}/contract)")
         lines.append(f"  Max risk:    ${max_risk:.3f}/shr  (${max_risk * 100:.2f}/contract) = net debit + wider wing; SIZE ON THIS")
 
     if rs["exit"] == "hold":
-        lines.append(f"  Exit:        HOLD to the short expiry -- shorts settle, sell both longs at the close (every exit rule tested lost to hold)")
+        lines.append(f"  Exit:        HOLD to expiry -- all four legs settle (every exit rule tested lost to hold; the last day is worth ~10pp)" if condor else
+                     f"  Exit:        HOLD to the short expiry -- shorts settle, sell both longs at the close (every exit rule tested lost to hold)")
     else:
         take_at = net_debit * (1.0 + profit_take)
         lines.append(
@@ -1556,7 +1576,7 @@ def screen_double_calendar(
     exit_label = "hold" if rs["exit"] == "hold" else "50%PT"
     summary = (
         f"{regime}  short ${put_strike:.2f}P({sp_d_str})/${call_strike:.2f}C({sc_d_str})"
-        + (f"  long ${lp_strike:.2f}P/${lc_strike:.2f}C" if widen else "")
+        + (f"  {'wings' if condor else 'long'} ${lp_strike:.2f}P/${lc_strike:.2f}C{' [IC ' + short_expiry + ']' if condor else ''}" if widen else "")
         + f"  {'debit' if net_debit >= 0 else 'credit'} ${abs(net_debit):.3f}"
         + (f"  max risk ${max_risk:.3f}" if widen else "")
         + f"  [{exit_label}]"

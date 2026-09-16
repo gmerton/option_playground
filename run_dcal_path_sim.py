@@ -20,8 +20,11 @@ from datetime import timedelta
 from pathlib import Path
 import numpy as np, pandas as pd
 
-CACHE = Path("data/cache/calendar_path"); SLIP, COMM = 0.25, 0.0065
-STRUCTS = {"DCAL": (12, 3, 19), "ETF": (20, 5, 27)}; GAP_LO, GAP_HI = 5, 35
+import os
+CACHE = Path(os.environ.get("CALPATH_CACHE", "data/cache/calendar_path")); SLIP, COMM = 0.25, 0.0065
+# CALPATH_STRUCTS="M30g7:30:5:37,M30g14:30:5:44,L49g7:49:7:56,L49g27:49:7:76" -> name:short_dte:short_tol:long_dte
+STRUCTS = ({k: (int(a), int(b), int(c)) for k, a, b, c in (x.split(":") for x in os.environ["CALPATH_STRUCTS"].split(","))}
+           if os.environ.get("CALPATH_STRUCTS") else {"DCAL": (12, 3, 19), "ETF": (20, 5, 27)}); GAP_LO, GAP_HI = 5, 35
 SETS = {"sym25": (0.25, 0.25), "sym35": (0.35, 0.35), "asym35_10": (0.35, 0.10)}
 PT = (0.25, 0.50, 0.75); STOPS = (0.40, 0.60); INV = 1.05; MIN_LEFT = 2; RECENTER_SIG = 2.0
 

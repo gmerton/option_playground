@@ -15,20 +15,26 @@ from pathlib import Path
 import numpy as np, pandas as pd
 from run_dcal_path_sim import load, leg, CACHE, SLIP, COMM, STRUCTS, GAP_LO, GAP_HI
 
-DP, DC = 0.35, 0.35; PT = (0.25, 0.50, 0.75); STOPS = (0.40, 0.60)
+PT = (0.25, 0.50, 0.75); STOPS = (0.40, 0.60)
 
 
-def simulate(t, closes, vix, spy_up, widens):
+def parse_widen(tok: str):
+    """'2' -> (2.0, 2.0, 2.0) symmetric; '2:1' -> (2.0, 1.0, '2:1') put-side 2%, call-side 1%. Third item = label."""
+    if ":" in tok:
+        a, b = tok.split(":"); return float(a), float(b), tok
+    return float(tok), float(tok), str(float(tok))     # label is always a string ('0.0', '2.0', '2:1')
+
+
+def simulate(t, closes, vix, spy_up, widens, deltas=(0.35,)):
     P, C = load(t, "P"), load(t, "C")
     if P.empty or C.empty: return []
     cl = closes[closes.ticker == t].set_index("date").close.sort_index()
     Pd = {d: g for d, g in P.groupby("trade_date")}; Cd = {d: g for d, g in C.groupby("trade_date")}
     days = sorted(set(Pd) & set(Cd)); out = []
 
-    def long_strikes(d, le, Kp, Kc, w):
-        if w == 0: return Kp, Kc
+    def long_strikes(d, le, Kp, Kc, wp, wc):
         ks_p = np.array(sorted(Pd[d][Pd[d].expiry == le].strike.unique())); ks_c = np.array(sorted(Cd[d][Cd[d].expiry == le].strike.unique()))
-        lp = ks_p[ks_p <= Kp * (1 - w / 100)]; lc = ks_c[ks_c >= Kc * (1 + w / 100)]
+        lp = ks_p[ks_p <= Kp * (1 - wp / 100)] if wp > 0 else ks_p[ks_p == Kp]; lc = ks_c[ks_c >= Kc * (1 + wc / 100)] if wc > 0 else ks_c[ks_c == Kc]
         if not len(lp) or not len(lc): return None, None
         return float(lp.max()), float(lc.min())
 
@@ -46,15 +52,18 @@ def simulate(t, closes, vix, spy_up, widens):
             gp, gc = Pd[d], Cd[d]
             sp = gp[(gp.expiry == se) & gp.delta.notna()]; sc = gc[(gc.expiry == se) & gc.delta.notna()]
             if sp.empty or sc.empty: continue
-            Kp = float(sp.iloc[(sp.delta + DP).abs().argsort()[:1]].strike.iloc[0]); Kc = float(sc.iloc[(sc.delta - DC).abs().argsort()[:1]].strike.iloc[0])
-            if Kp >= spot or Kc <= spot: continue
-            for w in widens:
-                Kpl, Kcl = long_strikes(d, le, Kp, Kc, w)
+            for DP in deltas:
+              DC = DP
+              Kp = float(sp.iloc[(sp.delta + DP).abs().argsort()[:1]].strike.iloc[0]); Kc = float(sc.iloc[(sc.delta - DC).abs().argsort()[:1]].strike.iloc[0])
+              if Kp >= spot or Kc <= spot: continue
+              for wtok in widens:
+                wp, wc, w = parse_widen(str(wtok))
+                Kpl, Kcl = long_strikes(d, le, Kp, Kc, wp, wc)
                 if Kpl is None: continue
                 legs = dict(sp=leg(gp, se, Kp), lp=leg(gp, le, Kpl), sc=leg(gc, se, Kc), lc=leg(gc, le, Kcl))
                 if any(v is None for v in legs.values()): continue
                 dbp = legs["lp"].mid - legs["sp"].mid; dbc = legs["lc"].mid - legs["sc"].mid
-                if w == 0 and (dbp <= 0.01 or dbc <= 0.0): continue
+                if (wp == 0 and wc == 0) and (dbp <= 0.01 or dbc <= 0.0): continue
                 ba = sum(v.ba for v in legs.values()); cost = dbp + dbc + SLIP * ba + 4 * COMM
                 wp, wc = Kp - Kpl, Kcl - Kc; maxrisk = cost + max(wp, wc)
                 if maxrisk <= 0.01: continue
@@ -71,10 +80,12 @@ def simulate(t, closes, vix, spy_up, widens):
                     fin = (last.lp - SLIP * last.lpb - COMM) - max(Kp - ST, 0) + (last.lc - SLIP * last.lcb - COMM) - max(ST - Kc, 0)
                 else:
                     fin = close_all(last)
-                res = dict(ticker=t, struct=sname, widen=w, entry=d, spot=spot, Kp=Kp, Kc=Kc, Kpl=Kpl, Kcl=Kcl, short_exp=se, long_exp=le,
+                res = dict(ticker=t, struct=sname, widen=w, widen_p=wp, widen_c=wc, delta=DP, entry=d, spot=spot, Kp=Kp, Kc=Kc, Kpl=Kpl, Kcl=Kcl, short_exp=se, long_exp=le,
                            debit=dbp + dbc, cost=cost, maxrisk=maxrisk, ba_pct=100 * ba / max(dbp + dbc, 0.01), vix=vix.get(d, np.nan), spy_up=spy_up.get(d, np.nan),
                            width_pct=100 * (Kc - Kp) / spot, ST=ST)
                 res["hold"] = fin - cost; res["days"] = len(Pth)
+                for m in (1, 2):      # exit_m1 / exit_m2: close at the last mark >= m calendar days before the short expiry
+                    early = Pth[left >= m]; res[f"exit_m{m}"] = (close_all(early.iloc[-1]) - cost) if len(early) else res["hold"]
                 pnl = marks - cost   # mark-to-mid P&L path (no exit slippage until closed)
                 for x in PT:
                     hit = Pth[(pnl >= maxrisk * x) & (left > 0)]; res[f"pt{int(100*x)}"] = (close_all(hit.iloc[0]) - cost) if len(hit) else res["hold"]
@@ -85,7 +96,7 @@ def simulate(t, closes, vix, spy_up, widens):
 
 
 def main() -> int:
-    ap = argparse.ArgumentParser(); ap.add_argument("--tickers", nargs="*", default=["IWM", "SPY", "QQQ"]); ap.add_argument("--widen", nargs="*", type=float, default=[0, 0.5, 1.0])
+    ap = argparse.ArgumentParser(); ap.add_argument("--tickers", nargs="*", default=["IWM", "SPY", "QQQ"]); ap.add_argument("--widen", nargs="*", default=["0", "0.5", "1.0"]); ap.add_argument("--delta", nargs="*", type=float, default=[0.35])
     ap.add_argument("--out", default=str(CACHE / "results_ddiag.parquet")); ap.add_argument("--universe-file", default=None); a = ap.parse_args()
     if a.universe_file: a.tickers = [l.strip().upper() for l in open(a.universe_file) if l.strip()]
     closes = pd.read_parquet(CACHE / "closes.parquet"); closes["date"] = pd.to_datetime(closes.date).dt.date
@@ -97,7 +108,7 @@ def main() -> int:
     spy = closes[closes.ticker == "SPY"].set_index("date").close.sort_index(); spy_up = (spy > spy.rolling(50).mean()).astype(float)
     rows = []
     for t in a.tickers:
-        r = simulate(t, closes, vix, spy_up, a.widen); rows += r; print(f"{t}: {len(r)} rows", flush=True)
+        r = simulate(t, closes, vix, spy_up, a.widen, tuple(a.delta)); rows += r; print(f"{t}: {len(r)} rows", flush=True)
     R = pd.DataFrame(rows)
     if R.empty: print("no rows"); return 1
     ep = CACHE / "earnings.parquet"

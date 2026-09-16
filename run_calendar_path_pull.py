@@ -29,15 +29,21 @@ import argparse
 _ap = argparse.ArgumentParser(); _ap.add_argument("--cp", default="P", choices=["P", "C", "PC"]); _ap.add_argument("--tickers", nargs="*", default=None)
 _ap.add_argument("--universe-file", default=None); _ap.add_argument("--kwin", type=float, default=None)
 _ap.add_argument("--mode", default="window", choices=["window", "delta"])   # delta = |delta| 0.05..0.95, no price window (split-proof)
+_ap.add_argument("--max-dte", type=int, default=40); _ap.add_argument("--outdir", default="data/cache/calendar_path")   # long-dated study: --max-dte 85 --outdir data/cache/calendar_path_long
 _A = _ap.parse_args(); CP = _A.cp
 if _A.tickers: TICKERS = [t.upper() for t in _A.tickers]
 if _A.universe_file: TICKERS = [l.strip().upper() for l in open(_A.universe_file) if l.strip()]
 START, END = date(2018, 11, 1), date(2026, 7, 10)
-K_WIN, MAX_DTE = 0.06, 40
+K_WIN, MAX_DTE = 0.06, _A.max_dte
 ALIASES = {"META": ["FB", "META"]}          # ticker renames inside the window
 MODE = _A.mode
 if _A.kwin: K_WIN = _A.kwin
-OUT = Path("data/cache/calendar_path"); OUT.mkdir(parents=True, exist_ok=True)
+OUT = Path(_A.outdir); OUT.mkdir(parents=True, exist_ok=True)
+_MAIN = Path("data/cache/calendar_path")
+if OUT != _MAIN:      # a second cache (longer DTE) reuses the main cache's closes / earnings
+    import shutil
+    for _f in ("closes.parquet", "earnings.parquet"):
+        if (_MAIN / _f).exists() and not (OUT / _f).exists(): shutil.copy(_MAIN / _f, OUT / _f)
 
 
 async def closes(only: list[str] | None = None) -> pd.DataFrame:

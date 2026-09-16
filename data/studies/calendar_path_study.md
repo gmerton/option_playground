@@ -2276,3 +2276,240 @@ calendar quote as the liquidity test, then place the diagonal.
 **Conclusion:** the 1% diagonal is a straight improvement on stocks as well as ETFs: +3 to +3.5pp ROC on max risk,
 +8-10pp win rate, more dollars per spread, both halves, both universes, nearly every year. The stock playbook entry
 (queued screener build) should be the diagonal, sized on max risk, with the calendar-quote liquidity gate.
+
+### Step 7c: diagonal vs calendar by earnings position (2026-09-15, stocks, tight cut, earnings included)
+
+| earnings | structure | calendar ROC / win | diagonal 1% ROC / win | halves (cal → diag) | paired $ / t |
+|---|---|---|---|---|---|
+| between the expiries | 12/19d n=604 | **+11.2% / 67%** | +10.2% / 69% | +9.4/+12.8 → +9.4/+11.0 | +$0.06 / 6.4 |
+| between the expiries | 20/27d n=392 | **+16.7% / 67%** | +13.9% / 68% | +12.8/+18.4 → +11.5/+15.0 | |
+| before the short expiry | 12/19d n=255 | +1.7% / 51% | **+6.9% / 56%** | +1.6/+1.8 → +7.9/+6.0 | +$0.18 / 8.9 |
+| before the short expiry | 20/27d n=137 | +10.5% / 60% | **+16.9% / 69%** | +15.4/+8.7 → +23.7/+14.3 | |
+| none | 12/19d n=3,549 | +6.6% / 57% | **+9.9% / 66%** | +4.8/+8.2 → +8.6/+11.0 | +$0.17 / 13.3 |
+| none | 20/27d n=1,696 | +6.2% / 55% | **+9.9% / 63%** | +3.2/+7.3 → +6.9/+11.1 | |
+
+**The diagonal's edge disappears in the one cell that profits from rising IV.** With earnings between the expiries
+the dollars per spread are the same (+$0.6 / +$0.8) but the diagonal carries ~20% more max risk, so ROC on max risk
+falls 1–3pp and both halves agree. Mechanism is the vega story from step 7 in reverse: the same-strike long carries
+more vega into the pre-earnings IV build, which is exactly what this cell is paid for; the diagonal gives some of that
+up. In the crush cell (earnings before the short expiry) the diagonal does what it did on falling VIX: 12/19d goes
+from a coin flip (+1.7%) to +6.9%, 20/27d from +10.5 to +16.9. Timing inside the between cell is unchanged (3–4 days
+short-exp→earnings +17/+14 vs 5–7 days +12/+11). Hold still beats pt25 (+11.7 vs +8.9); stops neutral.
+
+**Rule:** earnings between the expiries → same-strike double CALENDAR (no widening). No earnings → 1% diagonal.
+Earnings before the short expiry → diagonal if traded at all (20/27d +17%; 12/19d +7%, still the weakest cell).
+
+### Step 7d: how wide? Diagonal width sweep on the ETFs (2026-09-15, `--widen 0 1 1.5 2 3`)
+
+Paired on identical IWM / QQQ / SPY entries that had strikes at every width (859 at 12/19d, 753 at 20/27d). ROC on max
+risk = net debit + wider wing.
+
+| width | 12/19d ROC | win | A / B | 20/27d ROC | win | A / B | $ / spread | max risk | worst 5% (% max risk) | worst 5% ($) |
+|---|---|---|---|---|---|---|---|---|---|---|
+| calendar | +11.2 | 60% | +7.8 / +14.5 | +16.2 | 56% | +10.6 / +21.8 | +0.35 | 2.34 | −78 | −1.73 |
+| 1.0% | +15.0 | 67% | +14.2 / +15.8 | +21.3 | 71% | +17.6 / +25.2 | +0.70 | 3.93 | −56 | −2.23 |
+| 1.5% | +17.8 | 71% | +17.7 / +17.9 | +23.6 | 75% | +20.7 / +26.6 | +0.97 | 4.88 | −42 | −2.09 |
+| **2.0%** | **+19.1** | 76% | +19.5 / +18.6 | **+25.2** | 79% | +22.9 / +27.5 | +1.24 | 5.95 | −26 | −1.77 |
+| 3.0% | +18.8 | 87% | +19.8 / +17.7 | +22.0 | 89% | +20.4 / +23.7 | +1.68 | 8.53 | −7 | −0.56 |
+
+Each step to 2% adds on a paired basis (1→1.5 +$0.26 t=18, 1.5→2 +$0.27 t=21, wider better in ~80% of entries); at 3%
+dollars still rise (+$0.43, t=17) but max risk grows faster, so ROC falls on both structures. By ticker: IWM 17.7 →
+27.3 (2%) → 22.9 (3%), QQQ 14.3 → 23.0 → 20.4, SPY 9.5 → 16.7 → 18.0. By regime, 2% is best or within 0.5pp of best
+in every cell (Bear_LoVIX 7 → 25, Bull_LoVIX 10 → 19, Bear_HiVIX 27 → 30, Bull_HiVIX 22 → 26); 3% loses 4–7pp in
+the high-VIX cells. By year: 2019 (the calendar's loser) −8 → +13 (2%) → +17 (3%); the vol-spike years 2018 / 2026 run
+the other way (47 → 43 → 26, 45 → 37 → 27). By VIX path: width wins when VIX falls (fell > 3: −9 → +14 → +15), 3%
+gives back when VIX rises > 3 (16 → 25 → 20). Management unchanged: hold beats pt25 at every width, stops neutral.
+
+At 3% the long puts sit ~4.5% under spot, the structure is a ~$2.40 credit on ~$8.50 max risk, wins ~90% because the
+credit covers most breaches -- a front-month iron condor with back-month wings, not a calendar. **Decision (Gabe,
+2026-09-15): the ETF playbook moves to 2% wide** (1.5% is within 1–2pp on a smaller max risk if a lower dollar risk
+per spread is wanted). Stocks at the same widths: step 7e below when the run lands.
+
+## Triple calendar (2026-09-15 evening): double + a middle ATM calendar, synthesised from the matched paths
+
+A triple calendar (Vipul, Theta Profits KB) = the sym35 double + an ATM calendar in the middle, same two expiries.
+The study already has both pieces on the same IWM / QQQ / SPY Friday entries and expiries (`results.parquet` ATM
+singles, `results_dcal*.parquet` sym35 doubles), so the triple is their sum, hold to the short expiry.
+
+| structure | 12/19d ROC | win | A / B | 20/27d ROC | win | A / B |
+|---|---|---|---|---|---|---|
+| double sym35 | **+12.4%** | 60% | +10.2 / +14.5 | **+19.1%** | 59% | +14.9 / +23.4 |
+| single ATM calendar | +6.0% | 46% | −1.3 / +13.2 | +2.4% | 40% | −8.6 / +13.4 |
+| triple = double + ATM | +10.1% | 53% | +6.2 / +14.0 | +13.4% | 53% | +6.7 / +20.0 |
+
+Paired: triple − double = −2.2pp (t = −3.7, triple better in 37% of entries) at 12/19d and −5.8pp (t = −6.5, 28%) at
+20/27d. The middle calendar is the weak component (first half negative on both structures) and it dilutes the double.
+
+Where the middle helps -- when the underlying pins near entry -- the double already makes +40 / +50%; the triple gets
++68 / +90% there but pays for it everywhere else (1–2% away: 39 → 33, 63 → 56; 2–3%: −0.5 → −10.5, 32 → 15; > 3%:
+−27 → −39, −11 → −27). At a 7-day gap the sym35 double has no sag to fill (its shorts sit 2.4–3.4% apart): the
+"fill the middle" argument belongs to wide-strike doubles, not to this one. His +10% target sits below pt25, which
+already costs 5pp on the double and cuts the triple to +6.1%. **Verdict: no. The double diagonal is the structure;
+adding an ATM calendar lowers ROC, win rate and first-half return on the same entries.**
+
+### Step 7e: diagonal width on stocks (2026-09-15, 60-name pool, tight cut, paired 0 / 1 / 1.5 / 2 / 3%)
+
+| width | 12/19d ROC (n=3,032) | win | A / B | 20/27d ROC (n=1,547) | win | A / B | max risk 12/19 | paired $ vs cal / t |
+|---|---|---|---|---|---|---|---|---|
+| calendar | +6.8 | 58% | +5.9 / +7.9 | +6.4 | 55% | +2.7 / +8.7 | 1.68 | |
+| 1.0% | +10.1 | 67% | +9.6 / +10.6 | +10.2 | 63% | +7.5 / +11.9 | 2.53 | +0.17 / 11.8 |
+| 1.5% | +10.3 | 67% | +10.0 / +10.6 | +10.3 | 64% | +7.7 / +11.9 | 2.92 | +0.23 / 15.0 |
+| 2.0% | +10.9 | 68% | +10.5 / +11.3 | +10.7 | 65% | +8.6 / +12.0 | 3.31 | +0.29 / 17.8 |
+| 3.0% | +10.9 | 71% | +10.5 / +11.4 | +10.8 | 67% | +8.9 / +12.1 | 4.23 | +0.41 / 22.3 |
+
+On stocks the step that matters is calendar → 1% (+3.3pp); 1 → 2% adds +0.7pp on both structures (both halves up,
+every year 2019–2026 up or flat) and 3% adds nothing on ROC. Unlike the ETFs there is no roll-over at 3% (stock
+strikes are coarser, so "3%" is often the same strike as 2%), and the VIX-fell cells keep improving with width
+(fell > 3: +0.2 → +5.7 → +7.6 → +9.3). Hold beats pt25 at every width. **Decision: the stock screener uses the same 2%
+as the ETFs** (one rule; 1% captures ~90% of the gain if a smaller max risk per spread is wanted).
+
+## Step 8: longer-dated doubles (2026-09-16, `data/cache/calendar_path_long/`, chains to 85 DTE, IWM / QQQ / SPY)
+
+Prompted by the My Trading Journey recipe (front ~49 DTE, back ~76). Four structures on the same Friday entries as
+the playbook cells, sym35 shorts, calendar / 1% / 2% diagonal, hold to the short expiry, ROC on max risk. The
+"7-day gap" at a 49-day front resolved to ~19 days on average (the next listed expiry), so the two 49-day rows are
+near-duplicates (gaps 19 and 24 days).
+
+| structure (front / gap) | width | n | ROC / trade | win | A / B | ROC per day of capital | worst 5% |
+|---|---|---|---|---|---|---|---|
+| **12 / 7d** (playbook 12/19) | 2% | 1,038 | **+19.2%** | 77% | +19.6 / +18.9 | **1.55% / day** | −27% |
+| **20 / 7d** (playbook 20/27) | 2% | 1,015 | **+24.8%** | 79% | +23.6 / +25.9 | **1.22% / day** | −20% |
+| 30 / 7d | cal · 2% | 813 · 1,068 | +1.0 · +3.0 | 47 · 53% | −6.9/+6.6 · +1.9/+4.1 | 0.04 · 0.11 | −112 · −82 |
+| 30 / 14d | cal · 2% | 989 · 1,085 | +2.9 · +4.7 | 50 · 54% | −1.8/+7.6 · +3.3/+6.1 | 0.11 · 0.17 | −88 · −69 |
+| 47 / 19d | cal · 2% | 750 · 1,080 | +16.2 · +15.5 | 56 · 63% | +20.2/+12.0 · +18.2/+12.9 | 0.35 · 0.33 | −72 · −61 |
+| 47 / 24d (the MTJ recipe) | cal · 2% | 745 · 1,080 | +17.3 · +15.4 | 61 · 64% | +19.6/+14.7 · +17.4/+13.5 | 0.37 · 0.33 | −65 · −55 |
+
+Readings: (1) **The 30-day front is a dead zone**: ~+1–5% per trade, first half negative, worst tail of the set, and
+the diagonal does not rescue it (SPY −3%, QQQ +1%, 2019 −19%, 2023 −6%). (2) **The 47-day front works per trade**
+(+15–17%, both halves, all three tickers positive, every regime positive) but earns it over 47 days: **0.33–0.37% of
+max risk per day against 1.2–1.5% for the playbook cells**, a quarter of the capital efficiency. It also has the
+playbook's bad years (2019 ≈ 0, 2023 −1) without the playbook's good ones. (3) **Widening the longs does not help at
+47 days** (calendar +17.3 vs 2% +15.4): the vega-sold-for-theta trade that pays at 12–20 days is not there when both
+legs are far out. (4) Management: hold beats pt25 everywhere, by 5–6pp on the long structures. (5) By regime the
+long structures follow the same order as the short ones (high-VIX best) at roughly 40% of the level.
+
+**Verdict:** no change to the playbook. The 12/19 and 20/27 cells are the trade; the MTJ 49/76 structure is a
+valid but 4× slower version of it, and anything with a ~30-day front should not be traded as a double calendar at all.
+Stocks (11 mega-caps) at the same structures: step 8b when the pull lands.
+
+## Step 9: four remaining levers on the ETF diagonal (2026-09-16, IWM / QQQ / SPY, paired entries, hold, ROC on max risk)
+
+Bar for a playbook change: more DOLLARS on paired entries, positive in both halves, on all three tickers.
+
+**9a. Short delta 0.40 / 0.45 (at 2% width).** 0.40: 12/19d +21.7 vs +19.4, 20/27d +28.6 vs +24.9 -- but the paired
+dollar difference is zero (+$0.007, t 0.3; +$0.003, t 0.1; better in 49-50% of entries): the ROC rises only because
+the max risk shrinks (5.6 vs 6.1) while win rate falls 5-6pp (77 → 71, 79 → 74) and the 5% tail worsens (−27 → −38,
+−20 → −33). SPY 20/27d is lower (20.0 vs 20.8). 0.45 loses dollars (−$0.15 t −3.9, −$0.25 t −6.1). **Keep 0.35.**
+
+**9b. Close 1-2 days before the short expiry.** Costs 4-6pp (t −5 to −12) for one day early and 7-10pp for two, on the
+calendar and the diagonal alike; the win rate does not improve. The last day is where the short legs finish decaying
+to intrinsic. **Hold to the short expiry stays.**
+
+**9c. Asymmetric widening (put% : call%).** Symmetric 2% beats every mix on paired dollars: 2:1 −$0.19 / −$0.22 (t −6 /
+−8), 1:2 −$0.38 / −$0.45 (t −13 / −16), put-only 2:0 −$0.43 / −$0.53, call-only 0:2 −$0.79 / −$1.09. Widening the
+call side alone is the worst structure in the set (ROC +3 / +4) -- the put-side widening carries the edge and the
+call side needs it too. **Symmetric.**
+
+**9d. Gap 14 days at the 12 and 20-day fronts.** More dollars per spread (+$0.11 / +$0.09 at 2% width, t 11 / 7; +$0.23
+/ +$0.33 for the calendar) on 1.25-1.8x the max risk, so ROC on max risk FALLS at 2% width (12/19d 16.7 vs 19.2, 20/27d
+20.7 vs 24.8) on every ticker and every year 2018-2026. For the same-strike calendar the gaps are a wash on ROC
+(11.8 vs 12.4, 19.9 vs 19.1) with a better tail at 14 days (−48 vs −71) on 1.8x the capital. **Keep 7 days for the
+diagonal**; a 14-day gap is a legitimate lower-variance calendar variant if capital is not the constraint.
+
+**Net of step 9: no playbook change.** The structure is at a local optimum on strike delta, width symmetry, gap and
+exit timing; the remaining levers each moved dollars by less than $0.01-0.30 per spread and none cleared the bar.
+Data files: `results_opt_delta.parquet`, `results_opt_asym.parquet` (also carries `exit_m1` / `exit_m2`),
+`results_opt_gap.parquet`.
+
+## Step 10: rolling the short legs against a longer-dated long (2026-09-16, ETFs, `run_dcal_roll_sim.py`)
+
+Campaign: buy the longs once at ~27 / 40 / 55 DTE (same-strike or 2% wider than the first shorts), sell 0.35Δ shorts on the
+weekly nearest 12 DTE, settle them at intrinsic at each expiry and sell the next weekly against the same longs
+(re-struck at the new 0.35Δ, capped at the long strike; or fixed at the first strikes) until the longs are within 5 days;
+then sell the longs. Baseline = the sum of independent 12/19d entries (same width) on every Friday inside the window,
+i.e. "re-enter fresh". ROC on the campaign's initial max risk; the fresh baseline on ~2 overlapping max risks.
+
+| longs at | width / shorts | n | days | rolls | campaign ROC | win | A / B | fresh ROC (peak cap) | campaign − fresh, $ / spread | t | campaign better |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 27 | 2% / re-struck | 1,003 | 19 | 1.0 | +6.3% | 60% | +3.2 / +9.1 | +19.4% | −$1.65 | −13 | 35% |
+| 40 | 2% / re-struck | 890 | 33 | 2.9 | +5.7% | 59% | +0.4 / +10.7 | +34.3% | −$3.49 | −15 | 33% |
+| 55 | 2% / re-struck | 724 | 42 | 4.3 | +9.0% | 59% | +4.5 / +13.4 | +44.1% | −$4.24 | −14 | 32% |
+| 40 | 2% / fixed | 879 | 32 | 2.8 | +8.1% | 56% | +4.7 / +11.2 | +33.8% | −$2.93 | −17 | 27% |
+| 40 | same-strike / re-struck | 717 | 33 | 2.9 | +11.5% | 60% | +3.0 / +16.4 | +23.8% | −$0.49 | −3 | 51% |
+| 55 | same-strike / re-struck | 642 | 43 | 4.3 | +12.1% | 59% | +7.7 / +15.9 | +27.0% | −$0.53 | −3 | 52% |
+
+Per day of capital (2% width, re-struck): campaign 0.17–0.32% vs fresh 1.0% -- a fifth to a third. Worse on every
+ticker, every year 2018–2026, every regime; the campaign's 5% tail is −90 to −106% of initial risk vs −27% for the
+weekly diagonal (the far-dated long carries the vega and the re-struck shorts get settled against it on the moves).
+Where the money goes (40 DTE, 2%): long cost $7.48, first credit $4.98, roll credits $15.70, settlements + long
+decay eat all but $0.51. Fixed strikes are no better than re-struck; same-strike calendars lose less in dollars
+(the long is more valuable to keep) but still lose per day.
+
+**Verdict: rejected.** Buying the long once and rolling weeklies against it is dominated by re-entering the 12/19d
+diagonal every Friday. The playbook stays weekly, independent entries. (Fills: the campaign pays 2 fills per roll
+versus 4 per fresh entry, and it still loses -- the cost saving is not where the edge is.)
+
+## Step 11: iron condor vs double diagonal on the same entries (2026-09-16, ETFs, `run_ic_vs_dcal_sim.py`)
+
+Same Friday entries, same 0.35Δ shorts on the same short expiry. IC_w2 = wings at the diagonal's long strikes but in the
+SHORT expiry (2.3% of spot); IC_d10 = wings at 0.10Δ (3.7%). Credit at mid − 25% BA − comm on all four legs; hold =
+settle at intrinsic (no exit fills). Max risk = wider wing − credit. 765 paired entries at 12/19d, 651 at 20/27d.
+
+| structure | 12/19d: credit / max risk | ROC | win | A / B | 20/27d ROC | win | A / B | ROC per day | $ / spread (pooled) | 5% / 1% tail (% max risk) | months + | monthly t |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| same-strike calendar | −2.72 / 2.77 | +11.0% | 60% | +6.7 / +15.3 | +19.5% | 59% | +17.1 / +22.1 | 0.90 / 0.96 | +0.39 | −75 / −116 | 72% | 6.3 |
+| 2% diagonal (playbook) | +1.38 / 6.40 | +19.1% | 77% | +19.0 / +19.1 | +27.0% | 82% | +26.3 / +27.8 | 1.54 / 1.33 | +1.31 | −29 / −58 | 97% | 16.5 |
+| **iron condor, wings at the diagonal's long strikes, same expiry** | +3.11 / 4.87 | **+31.8%** | 75% | +32.5 / +31.2 | **+41.4%** | 81% | +41.1 / +41.8 | **2.58 / 2.04** | +1.49 | −45 / −84 | 99% | 16.0 |
+| iron condor, 0.10Δ wings | +3.62 / 8.19 | +20.5% | 84% | +19.4 / +21.6 | +21.8% | 88% | +21.5 / +22.1 | 1.67 / 1.07 | **+1.77** | −22 / −59 | 99% | 19.1 |
+
+Paired vs the diagonal: IC_w2 +$0.17 / spread (t 5.7 / 7.2, better in 62–64% of entries) on 25% LESS max risk;
+IC_d10 +$0.45 (t 8.7 / 7.3, 65–75%) on 40% more. Better on all three tickers (IWM 24 → 41 / 34 → 54, QQQ 20 → 34 /
+30 → 45, SPY 14 → 23 / 21 → 30), in every regime cell (Bear_LoVIX 20 → 30, Bear_HiVIX 34 → 62), every year 2018–2026
+(2019 14 → 23, 2022 31 → 53), and at every VIX level (< 15: 14 → 19; > 30: 38 → 80). By VIX path the condor wins when
+VIX falls (fell > 3: 20 → 41) and only ties when VIX rises > 3 (25.0 vs 25.7) -- the one case the back-month longs
+are for. By settlement distance: inside 1% the condor makes +66 vs +38; 1–2% +40 vs +24; beyond 2% both ≈ 0.
+Management: hold beats pt50 (31.8 vs 26.1; 41.4 vs 34.0) and the 2x-credit stop rarely triggers; the last day is
+worth 10pp (exit_m1 21.3). The worst ten condor trades are the same 2.5–4% moves that hurt the diagonal, losing $1–3
+more each (the diagonal's longs retain some value); the dollar 1% tail is −$4.1 vs −$3.4.
+
+**Reading:** on the index ETFs the next-week long legs are a cost, not a hedge. Buying the wings in the SAME expiry
+at the same strikes keeps every dollar of the diagonal's edge, adds $0.17, needs a quarter less capital, and only
+gives back on the sharp-VIX-spike weeks where the two tie. The double calendar → diagonal → condor sequence is the
+study walking from "long the back month" to "not long the back month," and each step paid. Bernich's "transform"
+target (a front-month condor) is the better trade from the open, not something to earn; tastylive's "the condor
+gives you more time to be right" is correct on this data.
+
+**Proposal (not applied):** replace the IWM / QQQ / SPY double-diagonal screener entries with the same-expiry iron
+condor at the same strikes (0.35Δ shorts, wings ~2% of spot, ~20 DTE, hold to expiry, no profit take), sized on
+max risk = width − credit; keep the diagonal only as the structure for stocks with earnings between the expiries
+(untested for the condor) and re-run the condor comparison on the stock tight cut before changing that side.
+
+## Step 12: iron condor vs double diagonal on STOCKS (2026-09-16, 60-name pool, tight cut, earnings included)
+
+Same paired design as step 11 on the stock pool: tight cut on the same-strike calendar's quote (four-leg bid-ask ≤ 25%
+of debit), 2,930 paired entries at 12/19d and 1,829 at 20/27d, hold, ROC on max risk.
+
+| structure | 12/19d ROC | win | A / B | 20/27d ROC | win | A / B | paired $ vs 2% diagonal |
+|---|---|---|---|---|---|---|---|
+| same-strike calendar | +9.7% | 62% | +7.8 / +11.2 | +9.7% | 59% | +6.8 / +10.8 | |
+| 1% diagonal | +12.2% | 70% | +10.9 / +13.2 | +12.3% | 66% | +9.6 / +13.3 | |
+| **2% diagonal (playbook)** | **+12.4%** | 71% | +11.4 / +13.1 | **+12.6%** | 67% | +10.3 / +13.5 | |
+| condor, 2% wings, same expiry | +7.6% | 63% | +6.2 / +8.7 | +10.1% | 64% | +8.7 / +10.6 | −$0.28 (t −18 / −10), condor better in 32–39% |
+| condor, 0.10Δ wings | +2.3% | 70% | +2.1 / +2.5 | +3.0% | 72% | +2.4 / +3.2 | −$0.27 / −$0.21 (t −14 / −6) |
+
+By earnings position (ROC, 12/19d · 20/27d): none -- calendar 9.7 · 7.7, diagonal 12.8 · 11.7, condor 8.6 · 10.9;
+between the expiries -- calendar **14.0 · 19.0**, diagonal 12.0 · 14.8, condor 5.1 · 7.6; before the short expiry --
+calendar 2.4 · 10.5, diagonal 8.2 · 17.8, condor 0.9 · 7.5. The condor loses in every cell; worst where the back-month
+long carries an event. By ticker (no-earnings cell) only TSLA (+24 vs +20) and NVDA (+19 vs +12) prefer the condor;
+AAPL, MSFT, GOOGL, JPM, V lose 5–8pp with it. By year the condor is behind or level every year but 2022 and 2026,
+and 2018 (the vol year) is +0.1 vs +23. By VIX path the condor never leads.
+
+**Why the opposite of the ETFs:** single-name OTM wings in the front expiry are dear (skew, wider markets), so the
+same-expiry hedge costs more than the next-week long that also keeps value into an event; on the index ETFs the
+front-month wings are cheap and the back-month long is dead weight. The 0.10Δ-wing condor is the extreme case:
++2–3% because the far wings on stocks eat the credit.
+
+**Verdict: stocks stay diagonal (no earnings) / same-strike calendar (earnings between the expiries).** Rule 3 of the
+playbook is unchanged; the condor is an ETF structure only. 30-name generalisation set (only run to 1% width): the same shape -- condor 2% wings +5.6 / +8.6% vs the 1%
+diagonal +10.2 / +10.7% (paired −$0.57 / −$0.75, t −5.2 / −3.8, condor better in 38–39%), 0.10Δ wings +1.7 / +2.4%;
+between-expiries cell calendar 9.7 / 16.8 > diagonal 9.0 / 14.0 > condor 2.0 / 5.7. Confirmed on both universes.

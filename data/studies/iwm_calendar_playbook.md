@@ -1,4 +1,6 @@
-> **2026-09-15 evening:** IWM entries are now DOUBLE DIAGONALS -- long legs 1% of spot wider than the 0.35-delta shorts, sized on max risk = net debit + wing width. See `double_calendar_playbook.md` (structure update) and `calendar_path_study.md` step 7.
+> **2026-09-16:** the ETF structure is now the SAME-EXPIRY IRON CONDOR at the same strikes (0.35Δ shorts, ~2% wings, ~20 DTE, hold to expiry, size on width − credit): +31.8 / +41.4% on max risk vs the diagonal's +19.1 / +27.0% on paired entries, every ticker / regime / year. See `double_calendar_playbook.md` (step 11).
+
+> **2026-09-15 evening:** IWM entries are now DOUBLE DIAGONALS -- long legs 2% of spot wider than the 0.35-delta shorts (rev from 1% the same evening, width sweep), sized on max risk = net debit + wing width. See `double_calendar_playbook.md` (structure update) and `calendar_path_study.md` step 7.
 
 # IWM double calendar playbook (2026-09-15)
 

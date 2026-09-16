@@ -47,3 +47,6 @@ event is the best stock cell in the whole study. Score 3/5 as education, 1.5/5 a
 earnings allowed, PREFERRED, when it falls between the short and the long expiry (ideally 3-4 days after the short);
 avoid it only when it falls before the short expiry on the 12/19 structure. The old blanket rule came from the pooled
 90-name table where wide-market names dominated.
+
+## Follow-up 2026-09-16: the condor tested head-to-head (study step 11)
+On the same ETF entries and strikes, the same-expiry iron condor beat the double diagonal (+31.8 vs +19.1% and +41.4 vs +27.0% on max risk, every regime and year). Their point 5 -- the condor keeps working when the calendar's short-vega window is gone -- is what the data shows. Score as education raised to 3.5/5; the earnings-placement critique stands.

@@ -221,3 +221,5 @@ name, which loses to holding on every structure we have measured. A better use o
 7-day-gap double diagonal now in the playbook, entered when the front/back ratio is flat or inverted. Conviction stays
 2 / 5; the IV-ratio entry is the salvageable piece and is already recorded as a soft entry preference in the calendar
 study (not a gate: 16 true inversions in the sample).
+
+**2026-09-16 addendum (study step 11):** the front-month iron condor he 'transforms' into is, on the same ETF entries, the better trade from the open (+32 / +41% vs the diagonal's +19 / +27% on max risk). The transform is a detour through the weaker structure.

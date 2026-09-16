@@ -36,3 +36,7 @@
 2. Intraday C-archetype (0DTE fade) test — needs minute data; the daily proxy is refuted.
 3. Options-vehicle overlay on the precision tier (his 0.2–0.35Δ ≥15 DTE rule) with sell-the-spike, on real prints.
 4. Score Ariel's nightly calls (`data/ariel_hernandez/analysis/`) — hit rate accrues per video.
+
+
+### Friday (added 2026-09-15): stock double calendars / diagonals
+`PYTHONPATH=src:. .venv/bin/python3 run_stock_dcal_screener.py` after the Friday screener, **during market hours** (the bid-ask gate fails on after-hours quotes). ENTER rows: structure already chosen by earnings position; size on the max-risk column; hold to the short expiry. MARGINAL = earnings before the short expiry, not an entry. Playbook: `double_calendar_playbook.md` rule 3.

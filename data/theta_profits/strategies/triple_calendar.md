@@ -185,3 +185,12 @@ All **self-reported**; the only artifact shown is an on-screen **2025 spreadshee
 - **Next step (on command only):** backtest the skeleton under `backtests/triple_calendar/`, sharing
   the SPX/QQQ calendar engine with `backtests/dc_time_machine/`, and A/B it against both a double and
   the user's own +7-gap SPY dcal.
+
+## Tested 2026-09-15 (calendar path study, synthesised from the matched single + double paths)
+
+On IWM / QQQ / SPY with his 7-day gap: the ATM middle calendar is the weakest piece of the structure (+6.0% / +2.4%
+held, 46 / 40% win, first half negative) and adding it to the sym35 double LOWERS the result on the same entries:
+12/19d +12.4% → +10.1% (t = −3.7), 20/27d +19.1% → +13.4% (t = −6.5), win 60% → 53%. It only wins when the underlying
+pins within 1% of entry, where the double already makes +40–50%. His +10% target is below the pt25 rule that costs
+the double 5pp. Conviction 2 → **1.5 / 5**: the rule discipline is fine, the structure is a dilution of the better
+trade. Full table in `data/studies/calendar_path_study.md` ("Triple calendar").
