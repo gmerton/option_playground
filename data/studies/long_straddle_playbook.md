@@ -4,11 +4,14 @@
 **Perspective:** Buyer — profit when stock moves more than implied by premium
 **Universe:** 323-ticker weekly-optionable pool — see *Approved-List Rebuild* below.
 ⚠ The 140-name approved list is **SUPERSEDED**; ticker qualification failed OOS testing.
-**Last updated:** 2026-09-15
+**Last updated:** 2026-09-16
 **Status:** Research complete. Trading, with two caveats added 2026-09-15 — see
 *Independent VRP validation* at the bottom. The entry mechanism is now corroborated by a
 measurement that shares no code with this backtest; the **magnitude is not statistically
 resolved**, and the **tail concentration is a live sizing risk**.
+**Revision 2026-09-16:** added an **RSI(14) < 70** entry gate (condition 5). Entries at RSI ≥ 70
+lost ~12pp/trade; the walk-forward held in 7 of 8 years (within-week placebo p = 0.0002).
+Sleeve +4.14% → +5.38%/trade, monthly t 1.78 → 2.17. See *RSI Gate* below.
 **Revision 2026-08-08:** added an IV-percentile entry gate (condition 3). Single-leg
 (call-only / put-only) variants tested and rejected. See *Gate Revision* below.
 **Revision 2026-08-08 (b):** the 140-name approved list is **retired**. An honest
@@ -67,6 +70,12 @@ trades. Only the label and the stop rationale were wrong. **Other DTEs are untes
    - Requires ≥60 prior observations to compute; names without that history are skipped.
 4. **Liquid chain** — verify bid > 0 / ask > 0 / OI > 0 on both legs in broker before entering
    - Approved list includes some thinly-traded names; always confirm fills are realistic
+5. **RSI(14) < 70** *(added 2026-09-16 — see RSI Gate below)*
+   - Wilder RSI on daily adjusted closes, read on entry day (the backtest read the entry-day close).
+   - RSI ≥ 70 ≈ 2.8 ADR above the 21 EMA: the same "extended" flag in different units.
+   - Checked by `run_straddle_screen.py` (column `RSI`, near misses say `RSI>=70`) and
+     `run_straddle_iv_gate.py` (`passes_all`). Helper: `src/lib/commons/rsi.py`.
+   - No RSI reading (thin history) → not blocked.
 
 ---
 
@@ -91,6 +100,38 @@ skip the weakest FVR signals first.
 > per full-size trade against a 3% cap you can fund roughly two positions at a time
 > regardless, so you were already turning away more signals than you could take.
 > The selectivity is effectively free.
+
+---
+
+## RSI Gate — added 2026-09-16
+
+Full study: `data/studies/rsi_conditioning_study_2026-09-16.md` (sections B, D, E, F). Scripts
+`run_rsi_conditioning_study.py`, `run_rsi_straddle_walkforward.py`.
+
+**Finding.** On the 5,886 gated trades (2018-04 → 2026-02), entries with RSI(14) ≥ 70 averaged
+**−6.1%** (median −29%) vs +5.4% for the rest. Within-week regression −12.8pp, t −3.4. RSI < 30 is
+not a problem (only 63 trades); the gate is one-sided.
+
+| check | result |
+|---|---|
+| each year, fixed 70 | skip helped mean, median and ex-top-1% in **7 of 8** full years (2020 lost: skipped tail winners) |
+| expanding window 2020–26 | none +5.83% t_m 2.15 → **fixed 70 +6.95% t_m 2.51** |
+| within-week placebo (5,000 shuffles) | real lift +1.24pp vs 95th pct +0.56, **p = 0.0002** |
+| cutoff plateau | smooth from 60 to 80, no spike at 70 |
+| breadth | 176 tickers; leave-one-ticker-out gap −10.9 to −12.7pp; 77% of tickers show it |
+
+**Effect on the sleeve (in-sample):** n 5,886 → 5,250, mean +4.14% → **+5.38%**, monthly t 1.78 →
+**2.17**, mean ex-top-1% +0.33% → +1.63%, top-1% share of return 92% → 70%.
+
+**Why it works — it is NOT the call.** Within the same week, extended names' straddles are cheaper
+(−0.39% of spot) but the stock moves even less (−0.86%), so the move beats breakeven 8pts less
+often. The call leg is no worse (−5.5pp, t −0.7); the **put leg** takes the loss (−19.9pp, t −2.9)
+because extended names drift slightly up.
+
+**Why 70 and not 60.** Skipping ≥ 60 raises the mean more (+6.74%) but drops a third of trades for no
+gain in monthly t. 70 is the textbook level and was set before any results were seen.
+
+⚠ **Does not fix the strategy's core weakness.** The sleeve is still carried by its tail.
 
 ---
 

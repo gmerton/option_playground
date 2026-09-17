@@ -7,6 +7,10 @@ mid-July 2026, so iv_put_10 cannot be read from the tables. This pulls 6-14 DTE 
 from v3, inverts Black-Scholes against the yfinance close, takes the median per day (>=2 prints),
 and ranks the latest level against the ticker's own trailing 252 days.
 
+Also applies playbook gate 5 (added 2026-09-16): RSI(14) < 70 on the same yfinance closes
+(lib.commons.rsi; evidence data/studies/rsi_conditioning_study_2026-09-16.md). `passes_all` =
+gate 3 AND gate 5; a name with no RSI reading is not blocked.
+
 Usage (pairs with run_straddle_fvr_scan.py --universe data/watchlist/straddle_pool_323.txt):
   AWS_PROFILE=... PYTHONPATH=src python run_straddle_iv_gate.py --tickers GAP,KGC,QBTS [--out csv]
   AWS_PROFILE=... PYTHONPATH=src python run_straddle_iv_gate.py --from-scan data/watchlist/straddle_scan_latest.txt
@@ -17,6 +21,7 @@ from math import log, sqrt, exp
 from scipy.stats import norm
 from scipy.optimize import brentq
 from lib.athena_lib import athena
+from lib.commons.rsi import RSI_MAX, latest_rsi, rsi_gate
 warnings.filterwarnings("ignore")
 ap = argparse.ArgumentParser(); ap.add_argument("--tickers", default=None); ap.add_argument("--from-scan", default=None); ap.add_argument("--min-fvr", type=float, default=1.20); ap.add_argument("--out", default=None); a = ap.parse_args()
 if a.from_scan:
@@ -44,5 +49,13 @@ for t, g in q.groupby("ticker"):
     if len(daily) < 60: rows.append(dict(ticker=t, n_days=len(daily), note="insufficient history")); continue
     last = daily.iloc[-1]; hist = daily.iv.iloc[:-1].tail(252)
     rows.append(dict(ticker=t, last_date=daily.index[-1].date(), n_days=len(hist), iv_7_14d=round(100 * last.iv, 1), pctile=round(100 * (hist < last.iv).mean()), p30_level=round(100 * hist.quantile(.3), 1), passes_gate3=bool((hist < last.iv).mean() <= 0.30)))
-out = pd.DataFrame(rows); print(out.to_string(index=False))
+out = pd.DataFrame(rows)
+out["rsi14"] = out.ticker.map(lambda t: round(latest_rsi(spot.get(t)), 1))
+out["passes_rsi"] = out.rsi14.map(rsi_gate)
+if "passes_gate3" not in out.columns: out["passes_gate3"] = np.nan
+out["passes_all"] = out.passes_gate3.eq(True) & out.passes_rsi.ne(False)
+print(out.to_string(index=False))
+blocked = out[out.passes_gate3.eq(True) & out.passes_rsi.eq(False)].ticker.tolist()
+print(f"\ngate 3 (IV pct<=30) AND gate 5 (RSI14<{RSI_MAX:.0f}): {', '.join(out[out.passes_all].ticker) or 'none'}"
+      + (f"   | blocked by RSI>={RSI_MAX:.0f}: {', '.join(blocked)}" if blocked else ""))
 if a.out: out.to_csv(a.out, index=False)

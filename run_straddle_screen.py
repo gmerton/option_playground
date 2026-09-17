@@ -11,6 +11,12 @@ Gates checked, in playbook order:
   3. IV pct <= 30       — today's ~7 DTE ATM put IV ranked against that ticker's OWN
                           trailing history
   4. liquidity          — bid-ask <= 25% of mid on both straddle legs, OI > 0
+  5. RSI(14) < 70       — (added 2026-09-16) skip names stretched ~2.8 ADR above the 21 EMA.
+                          Those straddles lost ~12pp/trade; the loss is on the put leg (the
+                          name moves less than even its cheaper straddle implies).
+                          Evidence: data/studies/rsi_conditioning_study_2026-09-16.md (B, D, F).
+                          Read from yfinance adjusted closes (lib.commons.rsi). A name with
+                          no reading is NOT blocked; its RSI column shows n/a.
 
 EARNINGS ARE FLAGGED, NOT GATED. Tested 2026-08-11 on 38,768 trades: an earnings
 event inside the holding window cuts hold-to-expiry return from +4.79% to +0.13%
@@ -36,6 +42,13 @@ on ~10-DTE ATM put IV. Both answer "is this name's vol cheap against its own yea
 the printed columns let you see where they disagree; treat a large gap as a reason to
 look at the name rather than to trust either number.
 
+DATA SOURCE (rev 2026-09-16). FVR and the straddle quotes come from Tradier by default.
+`--data-source ibkr` uses ibkr_bot/straddle_chain.py instead (frozen quotes + model greeks, so an
+evening run reads the close; falls back to Tradier if IBKR can't be reached). It is slower: IBKR
+needs a ~5s gap between market-data batches, so a full pool takes several minutes. Use it when the
+Tradier quota is exhausted. Liquid names agree across
+sources to within ~0.02 FVR; thin chains can differ a lot (GAP 1.39 vs 1.88, TEVA 1.18 vs 1.76 on 9/16).
+
 Requires TWS/Gateway for the `ib` source. The live-port guard in ibkr_bot/conn.py is
 respected, not bypassed -- run with IB_PORT=7496 IB_ALLOW_LIVE=1 for live TWS (this
 script only ever calls reqHistoricalData; it places no orders).
@@ -46,6 +59,7 @@ Usage:
   ... --tickers AAPL MU        # screen a subset
   ... --min-fvr 1.10           # widen the report (gate unchanged at 1.20)
   ... --iv-source athena       # skip IBKR, gate on the stale table (old behaviour)
+  ... --data-source ibkr       # FVR + straddle quotes from IBKR instead of Tradier (slower)
 """
 from __future__ import annotations
 
@@ -55,12 +69,14 @@ import os
 import sys
 import time
 from datetime import date
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
 import awswrangler as wr
 
 from run_straddle_fvr_scan import scan_one, quote_straddle
+from lib.commons.rsi import RSI_MAX, latest_rsi_yf
 from lib.mysql_lib import _get_engine
 from lib.tradier.tradier_client_wrapper import TradierClient
 
@@ -142,6 +158,18 @@ def ibkr_iv_pctile(tickers: list[str], client_id: int = 47) -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
+def gather_ibkr(tickers: list[str], client_id: int = 49):
+    """Same (results, quotes) as gather(), sourced from IBKR. Read-only."""
+    sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "ibkr_bot"))
+    from conn import connect_ib
+    from straddle_chain import scan_and_quote
+    ib = connect_ib(client_id=client_id, timeout=15)
+    try:
+        return scan_and_quote(ib, tickers)
+    finally:
+        ib.disconnect()
+
+
 async def gather(tickers: list[str], conc: int):
     async with TradierClient(api_key=os.environ["TRADIER_API_KEY"]) as c:
         sem = asyncio.Semaphore(conc)
@@ -161,14 +189,25 @@ def main() -> None:
     ap.add_argument("--iv-source", choices=["ibkr", "athena"], default="ibkr",
                     help="reference for the IV percentile gate (default ibkr, falls back to athena)")
     ap.add_argument("--ib-client-id", type=int, default=47)
+    ap.add_argument("--data-source", choices=["tradier", "ibkr"], default="tradier",
+                    help="where FVR and straddle quotes come from (default tradier; ibkr is slower)")
     a = ap.parse_args()
 
     tickers = a.tickers or [l.strip() for l in open(POOL) if l.strip()]
     print(f"screening {len(tickers)} names — gates: FVR>={FVR_GATE}, "
-          f"IVpct<={IVPCT_GATE:.0f}, BA<={BA_MAX:.0f}%")
+          f"IVpct<={IVPCT_GATE:.0f}, BA<={BA_MAX:.0f}%, RSI14<{RSI_MAX:.0f}")
     print(f"today: {date.today():%A %Y-%m-%d}\n")
 
-    res, quotes = asyncio.run(gather(tickers, a.concurrency))
+    src = a.data_source
+    if src == "ibkr":
+        try:
+            res, quotes = gather_ibkr(tickers)
+        except (SystemExit, Exception) as exc:     # noqa: BLE001 — gateway absent / live-port guard
+            print(f"  (IBKR data source unavailable: {str(exc).strip().splitlines()[0]}) — falling back to Tradier")
+            src = "tradier"
+    print(f"data source: {src}")
+    if src == "tradier":
+        res, quotes = asyncio.run(gather(tickers, a.concurrency))
     ok = sorted({r["tkr"] for r in res if not r.get("err")})
     hist = trailing_iv(ok)
     earn = next_earnings(ok)
@@ -215,11 +254,21 @@ def main() -> None:
     d["iv_src"] = np.where(d.ib_pctile.notna(), "ib", np.where(d.ath_pctile.notna(), "athena", "none"))
     d["ivpct"] = d.ib_pctile.fillna(d.ath_pctile)
     d["g_iv"] = d.ivpct <= IVPCT_GATE
-    d["pass_all"] = d.g_fvr & d.g_iv.fillna(False) & d.g_liq
+    # Gate 5, RSI(14) < 70. Read for every FVR >= report-floor name so near misses show it too.
+    rsi_names = list(d.loc[d.fvr >= min(a.min_fvr, FVR_GATE), "tkr"])
+    rsi = latest_rsi_yf(rsi_names) if rsi_names else {}
+    d["rsi14"] = d.tkr.map(rsi)
+    d["g_rsi"] = ~(d.rsi14 >= RSI_MAX)          # NaN reading -> not blocked
+    d["pass_all"] = d.g_fvr & d.g_iv.fillna(False) & d.g_liq & d.g_rsi
 
     print(f"scanned {len(d)} ok, {errs} errors")
+    if errs:
+        why = pd.Series([r["err"] for r in res if r.get("err")]).value_counts()
+        print("  errors: " + ", ".join(f"{k} {v}" for k, v in why.items()))
     print(f"  FVR>={FVR_GATE}: {d.g_fvr.sum()}   liquidity: {int(d.g_liq.sum())}"
-          f"   both: {int((d.g_fvr & d.g_liq).sum())}   +IVpct<={IVPCT_GATE:.0f}: {int(d.pass_all.sum())}")
+          f"   both: {int((d.g_fvr & d.g_liq).sum())}"
+          f"   +IVpct<={IVPCT_GATE:.0f}: {int((d.g_fvr & d.g_liq & d.g_iv.fillna(False)).sum())}"
+          f"   +RSI14<{RSI_MAX:.0f}: {int(d.pass_all.sum())}")
     nib = int((d.iv_src == "ib").sum())
     if nib:
         cmp_ = d[(d.iv_src == "ib") & d.ath_pctile.notna()]
@@ -235,7 +284,7 @@ def main() -> None:
     if q.empty:
         print("  none")
     else:
-        print(f"  {'tkr':<7}{'spot':>9}{'FVR':>8}{'IV%ib':>7}{'IV%ath':>8}{'src':>7}{'DTE':>5}"
+        print(f"  {'tkr':<7}{'spot':>9}{'FVR':>8}{'IV%ib':>7}{'IV%ath':>8}{'src':>7}{'RSI':>5}{'DTE':>5}"
               f"{'strad$':>9}{'BA%':>7}{'OI':>7}{'size':>7}   earnings")
         for x in q.itertuples(index=False):
             if x.earn_days is None:
@@ -246,7 +295,8 @@ def main() -> None:
                 eflag = f"T+{x.earn_days}"
             ib = f"{x.ib_pctile:.0f}%" if pd.notna(x.ib_pctile) else "-"
             at = f"{x.ath_pctile:.0f}%" if pd.notna(x.ath_pctile) else "-"
-            print(f"  {x.tkr:<7}{x.spot:>9.2f}{x.fvr:>8.3f}{ib:>7}{at:>8}{x.iv_src:>7}{x.dte:>5.0f}"
+            rs = f"{x.rsi14:.0f}" if pd.notna(x.rsi14) else "n/a"
+            print(f"  {x.tkr:<7}{x.spot:>9.2f}{x.fvr:>8.3f}{ib:>7}{at:>8}{x.iv_src:>7}{rs:>5}{x.dte:>5.0f}"
                   f"{x.cost:>9.2f}{x.ba:>7.1f}{int(x.oi):>7}"
                   f"{'FULL' if x.fvr>=1.40 else 'half':>7}   {eflag}")
         nwin = int(q.earn_in_win.sum())
@@ -259,15 +309,32 @@ def main() -> None:
     near = d[(~d.pass_all) & (d.fvr >= a.min_fvr)].sort_values("fvr", ascending=False).head(12)
     if len(near):
         print(f"\n  --- near misses (FVR >= {a.min_fvr}) ---")
-        print(f"  {'tkr':<7}{'FVR':>8}{'IVpct':>8}{'src':>7}{'BA%':>7}   blocked by")
+        print(f"  {'tkr':<7}{'FVR':>8}{'IVpct':>8}{'src':>7}{'BA%':>7}{'RSI':>6}   blocked by")
         for x in near.itertuples(index=False):
             why = ", ".join(w for w, ok in
-                            [("FVR", x.g_fvr), ("IVpct", bool(x.g_iv)), ("liquidity", bool(x.g_liq))] if not ok)
+                            [("FVR", x.g_fvr), ("IVpct", bool(x.g_iv)), ("liquidity", bool(x.g_liq)),
+                             (f"RSI>={RSI_MAX:.0f}", bool(x.g_rsi))] if not ok)
             iv = f"{x.ivpct:.0f}%" if pd.notna(x.ivpct) else "n/a"
             ba = f"{x.ba:.1f}" if pd.notna(x.ba) else "n/a"
-            print(f"  {x.tkr:<7}{x.fvr:>8.3f}{iv:>8}{x.iv_src:>7}{ba:>7}   {why}")
+            rs = f"{x.rsi14:.0f}" if pd.notna(x.rsi14) else "n/a"
+            print(f"  {x.tkr:<7}{x.fvr:>8.3f}{iv:>8}{x.iv_src:>7}{ba:>7}{rs:>6}   {why}")
     d.to_csv("straddle_screen_latest.csv", index=False)
-    print(f"\n  full results -> straddle_screen_latest.csv")
+    # Forward archive: one dated file per run, so the live record accumulates and
+    # can be scored later against realised straddle P&L. Never overwrite a past day.
+    # A --tickers subset is a spot check, not the day's record: never let it replace the archive.
+    if a.tickers:
+        print(f"\n  full results -> straddle_screen_latest.csv  (subset run: not archived)")
+        return
+    # A run where most names errored (IBKR pacing, Tradier quota) is not the day's record either.
+    if errs > 0.25 * (len(d) + errs):
+        print(f"\n  ⚠ {errs} of {len(d) + errs} names errored — NOT archived "
+              f"(full results -> straddle_screen_latest.csv). Re-run once the source recovers.")
+        return
+    arch = Path("data/watchlist/straddle_screen")
+    arch.mkdir(parents=True, exist_ok=True)
+    stamp = arch / f"straddle_screen_{date.today():%Y-%m-%d}.csv"
+    d.to_csv(stamp, index=False)
+    print(f"\n  full results -> straddle_screen_latest.csv  (archived -> {stamp})")
 
 
 if __name__ == "__main__":

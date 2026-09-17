@@ -1,0 +1,47 @@
+##### 1. FIXED RSI>=70 SKIP, EACH YEAR
+ year    n  n_skip  all_mean  kept_mean  lift  skip_mean  skip_median  all_median  kept_median  all_ex_top1  kept_ex_top1
+ 2018  288      18      5.06       5.68  0.62      -4.24         1.97      -13.54       -14.88         1.22          1.59
+ 2019  765      97     -6.91      -4.90  2.01     -20.77       -37.32      -22.06       -18.97       -10.32         -8.13
+ 2020  163      19     20.70      17.57 -3.13      44.42       -31.48      -12.68       -10.71        10.47          9.79
+ 2021 1156      81      4.04       4.88  0.84      -7.16       -34.84      -19.50       -18.07         0.61          1.47
+ 2022  296      30      6.90       9.73  2.82     -18.11       -24.02       -7.11        -6.13         2.97          5.37
+ 2023 1368     180      5.99       8.17  2.18      -8.41       -26.46      -14.61       -12.08         2.80          5.02
+ 2024 1031     135      4.05       4.89  0.83      -1.49       -23.17      -14.59       -14.18         0.72          1.79
+ 2025  719      73      5.56       5.89  0.33       2.62       -26.93      -15.51       -15.34         0.14          0.41
+ 2026  100       3     17.45      17.78  0.33       6.71       -47.51       -8.43        -6.33        14.33         14.57
+years skip helped the mean: 7/8 full years (+2026 partial: yes); median helped: 7/8; ex-top-1% helped: 7/8
+
+##### 2. EXPANDING WINDOW: cutoff chosen on years < N, applied to N
+ test_year  is_years  chosen  is_best_mean  is_none_mean  oos_all  oos_kept  oos_fixed70
+      2020 2018-2019      60          1.50         -3.64    20.70     16.27        17.57
+      2021 2018-2020      60          3.64         -0.38     4.04      8.06         4.88
+      2022 2018-2021      60          5.98          1.77     6.90      7.63         9.73
+      2023 2018-2022      60          6.17          2.34     5.99      8.59         8.17
+      2024 2018-2023      60          6.97          3.58     4.05      4.04         4.89
+      2025 2018-2024      60          6.39          3.67     5.56      5.96         5.89
+      2026 2018-2025      60          6.34          3.91    17.45     26.77        17.78
+
+pooled 2020-2026 test years:
+                          n  mean  median    win  ex_top1  t_month
+no filter            4833.0  5.83  -15.39  43.24     1.95     2.15
+walk-forward cutoff  3143.0  7.76  -12.38  44.67     3.78     2.41
+fixed 70             4312.0  6.95  -13.46  43.97     3.13     2.51
+
+##### 3. WITHIN-WEEK PLACEBO (5,000 shuffles of RSI inside each entry week)
+real mean lift +1.24pp  placebo mean -0.01  95th pct +0.56  p = 0.0002
+real median lift +1.80pp  placebo mean +0.16  95th pct +0.69  p = 0.0000
+
+##### 4. PLATEAU: kept sleeve by cutoff (full sample, in-sample by construction)
+                   n  mean  median    win  ex_top1  t_month  n_skipped
+none          5886.0  4.14  -16.30  42.34     0.33     1.78        0.0
+>=60 skipped  3757.0  6.74  -13.36  43.84     2.80     2.15     2129.0
+>=65 skipped  4610.0  6.19  -13.96  43.54     2.39     2.21     1276.0
+>=70 skipped  5250.0  5.38  -14.49  43.16     1.63     2.17      636.0
+>=75 skipped  5649.0  4.69  -15.65  42.63     0.84     1.92      237.0
+>=80 skipped  5824.0  4.13  -16.31  42.32     0.28     1.77       62.0
+>=85 skipped  5873.0  4.11  -16.33  42.31     0.29     1.78       13.0
+
+##### 5. BREADTH
+skipped trades 636 across 176 tickers; top-5 tickers by count: {'NFLX': 20, 'NOW': 15, 'CMG': 12, 'MS': 11, 'BKNG': 11}
+skipped-minus-kept gap, full: -11.47pp; leave-one-ticker-out range -12.72 .. -10.86pp (most influential ticker: IYR)
+tickers with >=3 trades each side: 98; share where RSI>=70 trades underperform: 77%

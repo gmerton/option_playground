@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Evening desk routine (run ~15:45 ET for the live read, or after the close). Writes everything to data/watchlist/.
-# Requires: AWS_PROFILE, TRADIER_API_KEY, MYSQL_PASSWORD in the environment; .venv activated or use the paths below.
+# Requires: AWS_PROFILE, TRADIER_API_KEY, MYSQL_PASSWORD in the environment; TWS/Gateway open on Fridays (straddle screen); .venv activated or use the paths below.
 set -u
 cd "$(dirname "$0")"
 PY=.venv/bin/python3; export PYTHONPATH=src
@@ -12,10 +12,12 @@ $PY run_adhikary_scan.py 2>/dev/null | tee "$OUT/adhikary_$D.txt" | sed -n 1,60p
 echo; echo "== 3/6 breakout scan on the preferred list (house Luk/Qullamaggie EOD screen)"
 $PY run_preferred_breakouts.py 2>/dev/null | tail -25
 if [ "$(date +%u)" = 5 ] || [ "${STRADDLE:-0}" = 1 ]; then
-  echo; echo "== 4/6 long-straddle gates (Friday entry day): FVR on the 323 pool, then the print-based IV percentile gate"
-  $PY run_straddle_fvr_scan.py --universe data/watchlist/straddle_pool_323.txt --concurrency 2 2>/dev/null | tee "$OUT/straddle_scan_$D.txt" | tail -30
-  cp "$OUT/straddle_scan_$D.txt" "$OUT/straddle_scan_latest.txt"
-  $PY run_straddle_iv_gate.py --from-scan "$OUT/straddle_scan_latest.txt" --out "$OUT/straddle_ivgate_$D.csv" 2>/dev/null
+  echo; echo "== 4/6 long-straddle screen (Friday entry day): all 5 playbook gates on the 323 pool (Tradier data; IBKR for the IV percentile)"
+  # IBKR is used for the IV-percentile gate (falls back to the stale Athena table if TWS is closed).
+  # Live TWS by default; override IB_PORT=4002 (paper Gateway) in the environment if that is what is running.
+  # Read-only: historical IV only, no orders. Writes data/watchlist/straddle_screen/straddle_screen_<date>.csv.
+  IB_PORT="${IB_PORT:-7496}" IB_ALLOW_LIVE="${IB_ALLOW_LIVE:-1}" PYTHONPATH=src:. \
+    $PY run_straddle_screen.py 2>/dev/null | grep -v "^Unknown contract\|^Error " | tee "$OUT/straddle_screen_$D.txt" | sed -n '/data source/p; /QUALIFIERS/,$p'
 else
   echo; echo "== 4/6 straddle gates: skipped (not Friday; STRADDLE=1 to force)"
 fi
