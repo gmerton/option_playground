@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.gmerton.morning-journal</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>/Users/gmerton/v2/options_playground/morning_journal.sh</string>
+  </array>
+  <key>WorkingDirectory</key><string>/Users/gmerton/v2/options_playground</string>
+  <key>StartCalendarInterval</key>
+  <dict><key>Hour</key><integer>8</integer><key>Minute</key><integer>0</integer></dict>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key><string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    <key>HOME</key><string>/Users/gmerton</string>
+    <key>AWS_PROFILE</key><string>clarinut-gmerton</string>
+  </dict>
+  <key>StandardOutPath</key><string>/Users/gmerton/v2/options_playground/data/journal/logs/launchd_morning.out</string>
+  <key>StandardErrorPath</key><string>/Users/gmerton/v2/options_playground/data/journal/logs/launchd_morning.err</string>
+  <key>RunAtLoad</key><false/>
+</dict>
+</plist>
