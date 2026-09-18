@@ -54,7 +54,9 @@ for i in range(D):                                                              
     row = C[i, :last[i] + 1]; idx = np.where(~np.isnan(row), np.arange(len(row)), 0); np.maximum.accumulate(idx, out=idx); C[i, :last[i] + 1] = row[idx]
     O[i, :last[i] + 1] = np.where(np.isnan(O[i, :last[i] + 1]), C[i, :last[i] + 1], O[i, :last[i] + 1])
 W = np.where(np.isnan(W) | (W <= 0), C, W)
-day_open = O[:, 0]; day_close = C[np.arange(D), last]
+first = np.array([np.where(~np.isnan(O[i]))[0].min() if (~np.isnan(O[i])).any() else 0 for i in range(D)])
+day_open = O[np.arange(D), first]; day_close = C[np.arange(D), last]
+ok_day = np.isfinite(day_open) & np.isfinite(day_close) & (last - first >= 300)      # skip sessions with a broken tape
 with np.errstate(invalid="ignore", divide="ignore"):
     vwap = np.cumsum(W * V, axis=1) / np.cumsum(V, axis=1)
 move = np.abs(C / day_open[:, None] - 1)
@@ -69,6 +71,8 @@ else:
 equity = 100_000.0 if a.mode == "paper" else a.capital
 rows = []
 for t in range(a.lookback + 1, D):
+    if not ok_day[t] or not np.isfinite(day_close[t - 1]):
+        continue
     sig = np.nanmean(move[t - a.lookback:t], axis=0)
     hi, lo = max(day_open[t], day_close[t - 1]), min(day_open[t], day_close[t - 1])
     ub, lb = hi * (1 + sig), lo * (1 - sig)
