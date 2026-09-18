@@ -538,12 +538,79 @@ def _attach_pct_returns(conn, srows: list[dict]) -> None:
         r["_pctReturn"] = (pnl / premium * 100) if premium and pnl is not None else None
 
 
+_PANEL_CLOSES = None
+
+
+def _underlying_close_on(conn, symbol: str, day) -> float | None:
+    """Underlying close on `day` (an expiry): liquid panel first (fast, no quota), Tradier daily history as fallback."""
+    global _PANEL_CLOSES
+    if _PANEL_CLOSES is None:
+        try:
+            pnl = pd.read_parquet("data/cache/liquid_panel_2019.parquet", columns=["date", "ticker", "close"])
+            pnl = pnl[pnl["date"] >= "2026-01-01"]; pnl["date"] = pd.to_datetime(pnl["date"]).dt.date
+            _PANEL_CLOSES = pnl.set_index(["ticker", "date"])["close"].to_dict()
+        except Exception:
+            _PANEL_CLOSES = {}
+    v = _PANEL_CLOSES.get((symbol, day))
+    if v is not None:
+        return float(v)
+    try:
+        from lib.journal.price_cache import get_daily_history_cached
+        d = get_daily_history_cached(symbol, day - pd.Timedelta(days=7), day)
+        if d is not None and len(d):
+            d = d.reset_index(); d["date"] = pd.to_datetime(d["date"]).dt.date
+            hit = d[d["date"] == day]
+            if len(hit): return float(hit["close"].iloc[0])
+    except Exception:
+        pass
+    return None
+
+
+def _attach_hold_to_expiry(conn, srows: list[dict]) -> None:
+    """Adds '_holdPnl': what the structure would have made if every opening leg had been held to ITS expiry and
+    settled at intrinsic value (underlying close on the expiry date), minus the opening cost. Only defined once the
+    expiry has passed (else None -> 'pending'). Commissions ignored. This is the playbook's own exit rule for
+    straddles (hold to expiry), so the gap to realized P&L is the price of the early exit."""
+    ids = sorted({r["campaignId"] for r in srows if r.get("campaignId") is not None})
+    if not ids:
+        for r in srows: r["_holdPnl"] = None
+        return
+    ph = ",".join(["%s"] * len(ids))
+    legs = pd.read_sql(
+        f"""SELECT ct.campaign_id, t.conid, t.put_call, t.strike, t.expiry, t.buy_sell, t.quantity, t.trade_price, t.trade_date, t.underlying_symbol
+            FROM journal_campaign_trades ct JOIN journal_trades t ON t.trade_id = ct.trade_id
+            WHERE ct.campaign_id IN ({ph}) AND t.open_close IN ('O','C;O') AND t.asset_category='OPT'""",
+        conn, params=ids)
+    legs["trade_date"] = pd.to_datetime(legs["trade_date"]).dt.date
+    today = pd.Timestamp.today().date()
+    by_camp = {}
+    for cid, g in legs.groupby("campaign_id"):
+        g = g[g["trade_date"] == g["trade_date"].min()]          # the ORIGINAL open, not later rolls
+        cost, settle, pending = 0.0, 0.0, False
+        for leg in g.itertuples():
+            q = abs(float(leg.quantity)) * (1 if leg.buy_sell == "BUY" else -1)
+            cost += q * float(leg.trade_price) * 100
+            exp = pd.Timestamp(leg.expiry).date()
+            if exp >= today:
+                pending = True; continue
+            u = _underlying_close_on(conn, leg.underlying_symbol, exp)
+            if u is None:
+                pending = True; continue
+            k = float(leg.strike)
+            intrinsic = max(u - k, 0.0) if leg.put_call == "C" else max(k - u, 0.0)
+            settle += q * intrinsic * 100
+        by_camp[int(cid)] = None if pending else settle - cost
+    for r in srows:
+        r["_holdPnl"] = by_camp.get(r["campaignId"]) if r.get("campaignId") is not None else None
+
+
 def _strategy_stats(srows: list[dict]) -> dict:
     closed = [r for r in srows if r.get("exitDate")]
     open_ = [r for r in srows if not r.get("exitDate")]
     closed_pnls = [r["realizedPnl"] for r in closed if r.get("realizedPnl") is not None]
     open_pnls = [r["realizedPnl"] for r in open_ if r.get("realizedPnl") is not None]
     closed_pcts = [r["_pctReturn"] for r in closed if r.get("_pctReturn") is not None]
+    held = [(r["realizedPnl"], r["_holdPnl"]) for r in closed if r.get("_holdPnl") is not None and r.get("realizedPnl") is not None]
     wins = [p for p in closed_pnls if p > 0]
     s_closed = pd.Series(closed_pnls, dtype="float64")
     s_pcts = pd.Series(closed_pcts, dtype="float64")
@@ -558,6 +625,9 @@ def _strategy_stats(srows: list[dict]) -> dict:
         "avg_pct": s_pcts.mean() if len(s_pcts) else None,
         "median_pct": s_pcts.median() if len(s_pcts) else None,
         "total_unrealized": sum(open_pnls),
+        "hold_n": len(held),
+        "hold_realized": sum(a for a, _ in held) if held else None,
+        "hold_total": sum(b for _, b in held) if held else None,
     }
 
 
@@ -642,6 +712,7 @@ def render_summary_page(rows: list[dict]) -> str:
         for spec in STRATEGIES:
             srows = _strategy_rows(rows, spec)
             _attach_pct_returns(conn, srows)
+            _attach_hold_to_expiry(conn, srows)
             st = _strategy_stats(srows)
             combined = st["total_realized"] + st["total_unrealized"]
             cells = [
@@ -655,6 +726,7 @@ def render_summary_page(rows: list[dict]) -> str:
                 _stat_cell("Median % return (closed)", _fmt_pct(st["median_pct"])),
                 _stat_cell("Open (unrealized)", fmt_pnl(st["total_unrealized"])),
                 _stat_cell("Combined total", fmt_pnl(combined)),
+                _stat_cell("If held to expiry (expired, closed)", (f'{fmt_pnl(st["hold_total"])} vs {fmt_pnl(st["hold_realized"])} realized, n={st["hold_n"]}') if st.get("hold_total") is not None else "—"),
             ]
             srows_sorted = sorted(srows, key=lambda r: r["entryDate"] or "")
             if srows_sorted:
@@ -668,11 +740,12 @@ def render_summary_page(rows: list[dict]) -> str:
                     f'<td data-v="{r.get("exitVerdict") or ""}">{badge_html(r.get("exitVerdict"))}</td>'
                     f'<td class="pnl" data-v="{sort_num(r.get("realizedPnl"))}">{fmt_pnl(r.get("realizedPnl"))}</td>'
                     f'<td class="pnl" data-v="{sort_num(r.get("_pctReturn"))}">{_fmt_pct(r.get("_pctReturn"))}</td>'
+                    f'<td class="pnl" data-v="{sort_num(r.get("_holdPnl"))}">{fmt_pnl(r.get("_holdPnl")) if r.get("_holdPnl") is not None else "pending"}</td>'
                     f"</tr>"
                     for r in srows_sorted
                 )
                 table_html = f"""<table class="grid">
-  <thead><tr>{th("Ticker")}{th("Entry date", True)}{th("Exit date", True)}{th("Vehicle")}{th("Entry grade")}{th("Exit grade")}{th("P&amp;L", True)}{th("Return %", True)}</tr></thead>
+  <thead><tr>{th("Ticker")}{th("Entry date", True)}{th("Exit date", True)}{th("Vehicle")}{th("Entry grade")}{th("Exit grade")}{th("P&amp;L", True)}{th("Return %", True)}{th("Held to expiry", True)}</tr></thead>
   <tbody>{trow_html}</tbody>
 </table>"""
             else:
@@ -680,7 +753,7 @@ def render_summary_page(rows: list[dict]) -> str:
             blocks.append(f"""<div class="strategy-block">
   <a class="card-link" href="trade_reviews.html?strategy={spec['key']}"><div class="strategy-name">{spec['label']}</div>
   <div class="stat-grid">{''.join(cells)}</div><div class="view-all">View all {st["n_total"]} trades &rarr;</div></a>
-  <div class="note">Return % = P&amp;L as a percent of premium paid to open the structure (capital deployed for that trade), not account equity.</div>
+  <div class="note">Return % = P&amp;L as a percent of premium paid to open the structure (capital deployed for that trade), not account equity. Held to expiry = what the original legs would have made settled at intrinsic on their expiry date (the playbook's own exit), before commissions; "pending" until the expiry has passed.</div>
   {table_html}
 </div>""")
     finally:
