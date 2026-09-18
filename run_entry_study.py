@@ -83,6 +83,20 @@ def simulate(bars, i, j, kind, execution, day_adr):
             if execution == "close-judged":
                 if Cv[i, j] < stop: trades.append(trade(entry, Cv[i, j], stop)); break        # stopped on the entry-day close
                 trades.append(trade(entry, daily_hold(i, j, entry, stop, i + 1), stop)); break
+            if execution.startswith("disaster"):
+                # Gabe's 9/18 setup: a WIDE resting stop (X ADR below entry) executed intraday, the tight level (session low)
+                # judged at the close, a same-day exit if the close is back under the reference level (PDL for a reclaim,
+                # OR high for an ORB break), then daily-close management with the stop at the session low.
+                pdl_rule = execution.endswith("+pdl"); mult = float(execution.split(":")[1].replace("+pdl", ""))
+                dstop = entry * (1 - mult * day_adr / 100); out = None
+                for q in range(k + 1, n):
+                    if px[q] < dstop: out = q; break
+                if out is not None:
+                    trades.append(trade(entry, px[out], stop)); stopped += 1; break
+                c = Cv[i, j]; ref_lvl = (or_hi if kind == "ORB" else Lv[i - 1, j])
+                if c < stop or (pdl_rule and c < ref_lvl):
+                    trades.append(trade(entry, c, stop)); break                                 # judged at the close
+                trades.append(trade(entry, daily_hold(i, j, entry, min(lo.min(), day_low_close), i + 1), stop)); break
             # intraday execution: first 1-min close below the stop
             out = None
             for q in range(k + 1, n):
@@ -98,6 +112,7 @@ def simulate(bars, i, j, kind, execution, day_adr):
     return dict(pct=pct, R=R, stopped=int(stopped > 0), n_entries=entries, risk_pct=100 * (trades[0][0] * 0 + 1) * 0 + 0)  # risk filled below
 
 
+EXECS = ("close-judged", "intraday", "intraday+re", "disaster:0.5", "disaster:1.0", "disaster:1.0+pdl", "disaster:1.5+pdl")
 rows = []
 files = {f: True for f in os.listdir(CACHE)}
 for s in syms:
@@ -114,7 +129,7 @@ for s in syms:
         base = trade(Cv[i, j], daily_hold(i, j, Cv[i, j], Lv[i, j], i + 1), Lv[i, j])
         rec = dict(date=d, sym=s, control=s in extra, close_pct=base[0], close_R=base[1], close_risk=100 * (Cv[i, j] / Lv[i, j] - 1))
         for kind in ("ORB", "RECLAIM"):
-            for ex in ("close-judged", "intraday", "intraday+re"):
+            for ex in EXECS:
                 r = simulate(bars, i, j, kind, ex, day_adr)
                 if r: rec[f"{kind}_{ex}_pct"] = r["pct"]; rec[f"{kind}_{ex}_R"] = r["R"]; rec[f"{kind}_{ex}_stopped"] = r["stopped"]; rec[f"{kind}_{ex}_n"] = r["n_entries"]
         # initial risk of the ORB / RECLAIM entry (from the first trigger) for the return-per-1%-risked metric
@@ -134,6 +149,7 @@ def line(x, pcol, lab, rcol=None, stcol=None, riskcol=None):
     m = y.groupby("date")[pcol].mean(); t = m.mean() / (m.std(ddof=1) / sqrt(len(m)))
     s = f"  {lab:<44} n={len(y):4d}  ret {y[pcol].mean():+6.2f}% (t_day {t:+4.1f})  median {y[pcol].median():+6.2f}%  win {100*(y[pcol]>0).mean():3.0f}%"
     if rcol: s += f"  R {y[rcol].mean():+6.2f}"
+    s += f"  p5 {y[pcol].quantile(.05):+5.1f}%  worst {y[pcol].min():+5.1f}%"
     if stcol and stcol in y: s += f"  stopped same day {100*y[stcol].mean():3.0f}%"
     if riskcol and riskcol in y: s += f"  initial stop {y[riskcol].median():.1f}% away  ret/1% risked {y[pcol].mean()/y[riskcol].median():+.2f}"
     print(s)
@@ -144,7 +160,7 @@ for lab, X in (("ALL (curated = hindsight)", D), ("BLIND CONTROL SET only", D[D[
     line(X, "close_pct", "CLOSE entry, stop = day low, daily management", "close_R", None, "close_risk")
     for kind in ("ORB", "RECLAIM"):
         print(f"  -- {kind} --")
-        for ex in ("close-judged", "intraday", "intraday+re"):
+        for ex in EXECS:
             line(X, f"{kind}_{ex}_pct", f"{kind} {ex}", f"{kind}_{ex}_R", f"{kind}_{ex}_stopped", "ORB_risk" if kind == "ORB" else None)
         sub = X.dropna(subset=[f"{kind}_intraday+re_pct"])
         if len(sub): print(f"     re-entry: name-days with >1 entry {100*(sub[f'{kind}_intraday+re_n']>1).mean():.0f}%, mean entries {sub[f'{kind}_intraday+re_n'].mean():.2f}")

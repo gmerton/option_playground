@@ -26,3 +26,23 @@ Return per 1% initially risked: CLOSE +2.54 (all) / +1.75 (control) vs ORB +1.90
 5. What this cannot test: their discretion about WHICH day and which trigger, and selling winners into strength intraday. What it does test -- the mechanical version of "tight stop + intraday exit + re-entry" on qualified names -- has no edge over the daily-close process. One regime (Feb-Sep 2026), 63 names.
 
 **Verdict.** Close the entry study. The house process stands: buy the daily close (or a pivot buy-stop -- a wash), stop = the day's low judged on the close, manage on closes. Get tight stops by picking days whose low sits 1.5-3% under the close, not by moving the entry to the intraday low. Alerts stay information, not triggers.
+
+## Addendum 2026-09-18 — the "disaster stop" (Gabe's live setup on SNDK / CRM / NOW)
+
+Variant added to `run_entry_study.py`: a WIDE resting stop X ADR below the entry executed intraday; the tight level (session low) judged at the close; optionally a same-day exit if the close is back under the reference level (PDL for a reclaim, OR high for an ORB break); then daily-close management with the stop at the session low. Same 2,450 layer-2 name-days, Feb–Sep 2026.
+
+| execution (return per name-day) | RECLAIM all | RECLAIM control | ORB all | ORB control | stopped same day (all) |
+|---|---|---|---|---|---|
+| tight stop executed intraday | +2.27% | +1.96% | +4.85% | +1.51% | 64% / 23% |
+| tight stop judged at the close | +4.01% | +3.10% | +5.11% | +2.21% | 0% |
+| **disaster 1.0 ADR** | **+4.21%** | +3.10% | **+5.41%** | +2.13% | 6% / 4% |
+| disaster 1.0 ADR + same-day exit if close < PDL / OR high | +4.01% | +3.20% | +3.97% | +1.75% | 6% / 4% |
+| disaster 1.5 ADR + same-day rule | +4.05% | **+3.33%** | +3.97% | +1.74% | 1% |
+| disaster 0.5 ADR | +3.57% | +3.20% | +5.05% | +2.21% | 29% / 23% |
+| CLOSE entry (baseline) | +5.94% (all) / +3.89% (control) | | | | |
+
+Tail: p5 of the tight-intraday reclaim −5.1% vs −6.9% with the 1-ADR disaster stop; worst cases (−18 to −24%) are identical across variants — they are multi-day gap losses the day-one stop never touches.
+
+**Reading.** (1) The disaster-stop package recovers what the tight intraday stop gives away: +4.2% vs +2.3% on reclaims, +5.4% vs +4.9% on ORB, and it matches or slightly beats judging the tight stop at the close. It is the best intraday-executed variant on both universes. (2) The wide stop almost never fires (4–6% of days at 1 ADR) — its job is the crash, not the noise, and it costs ~1.8pp of p5 tail for ~2pp of mean. (3) **The same-day "back under the OR high" exit HURTS ORB entries** (+5.41 → +3.97%): breaks that close back inside the range recover often enough that closing them is a mistake. For reclaims the PDL rule is neutral (+4.21 → +4.01 all, +3.10 → +3.20 control) — keep it as a discipline rule, not an edge. (4) None of this beats buying the close (+5.94%); it closes most of the gap. "Cut losses early" survives at the daily level (stop at the session low, judged on the close) — what does not survive is executing that stop on 1-minute bars.
+
+**Rule for the three live positions:** SNDK (ORB): resting stop ~1 ADR below entry (1,595), judge 1,686.50 at the close, do NOT auto-exit on a close back under 1,669. CRM / NOW (reclaims): resting stop ~1 ADR below (230 / 131), judge the session low at the close, PDL rule optional.
