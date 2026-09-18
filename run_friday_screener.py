@@ -772,7 +772,7 @@ def screen_regime_spread(
         lines.append(f"  Spread:      ${s_strike:.2f}/${l_strike:.2f}  width ${width:.2f}  credit/width {credit_pct:.1f}%")
         lines.append(f"  Max loss:    ${max_loss:.3f}/shr  (${max_loss * 100:.2f}/contract)")
         stop_mult = rs.get("stop_multiple", 2.0)
-        lines.append(f"  Take profit: close spread at ≤ ${take_at:.3f}  (keep {int(profit_take * 100)}% = ${keep:.3f}/shr)")
+        lines.append("  Management: HOLD to expiry -- no profit take, no stop (etf_put_spread_study 2026-09-10: 50%-take / 2x-stop = -4.3%/trade, t -5.4; paid_to_wait: closing on the break -8.3% net); size to the max loss")
         if stop_mult is None:
             lines.append(f"  Stop loss:   NONE — hold to profit take or expiry (no stop this regime)"  )
         else:
@@ -834,7 +834,7 @@ def screen_regime_spread(
 
         lines.append(f"  Combined credit:  ${credit:.3f}/shr  (${credit * 100:.2f}/contract)")
         lines.append(f"  Strikes:          call ${c_strike:.2f} / put ${p_strike:.2f}")
-        lines.append(f"  Take profit: close strangle at ≤ ${take_at:.3f}  (keep {int(profit_take * 100)}% = ${keep:.3f}/shr)")
+        lines.append("  Management: HOLD to expiry -- no profit take, no stop (etf_put_spread_study 2026-09-10: 50%-take / 2x-stop = -4.3%/trade, t -5.4; paid_to_wait: closing on the break -8.3% net); size to the max loss")
         lines.append(f"  Stop loss:   close strangle at ≥ ${credit * 2:.3f}  (2× credit)")
 
         summary = (
@@ -893,7 +893,7 @@ def screen_regime_spread(
         lines.append(f"  Total debit:    ${debit:.3f}/shr  (${debit * 100:.2f}/contract)")
         lines.append(f"  Strikes:        call ${c_strike:.2f} / put ${p_strike:.2f}")
         lines.append(f"  Max loss:       ${debit:.3f}/shr  (${debit * 100:.2f}/contract)  — fully defined")
-        lines.append(f"  Take profit:    close when straddle value ≥ ${take_at:.3f}  (+{int(profit_take * 100)}%)")
+        lines.append("  Management:     HOLD to expiry; sell a SPIKE into strength (structure >= +100% within days); -50% stop (long_straddle_playbook: no profit cap -- capping at 100% drops Sharpe +0.17 -> -0.04)")
         lines.append(f"  Stop loss:      close when straddle value ≤ ${stop_at:.3f}  (−40% of debit)")
 
         summary = (
@@ -983,7 +983,7 @@ def screen_straddle(
     lines.append("")
     lines.append(f"  Combined credit:  ${credit:.3f}/shr  (${credit * 100:.2f}/contract)")
     lines.append(f"  ATM strike:       ${strike:.2f}")
-    lines.append(f"  Take profit: close straddle at ≤ ${take_at:.3f}  (keep {int(profit_take * 100)}% = ${keep:.3f}/shr)")
+    lines.append("  Management: HOLD to expiry -- no profit take, no stop (etf_put_spread_study 2026-09-10: 50%-take / 2x-stop = -4.3%/trade, t -5.4; paid_to_wait: closing on the break -8.3% net); size to the max loss")
     lines.append(f"  Stop loss:   close straddle at ≥ ${credit * 2:.3f}  (2× credit)")
 
     summary = (
@@ -1100,8 +1100,7 @@ def screen_spread(
         lines.append(f"  Spread:      ${s_strike:.2f}/${l_strike:.2f}  width ${width:.2f}  credit/width {credit_pct:.1f}%")
         lines.append(f"  Max loss:    ${max_loss:.3f}/shr  (${max_loss * 100:.2f}/contract)")
         lines.append(
-            f"  Take profit: close spread at ≤ ${take_at:.3f}"
-            f"  (keep {int(profit_take * 100)}% = ${keep:.3f}/shr)"
+            "  Management: HOLD to expiry -- no profit take, no stop (etf_put_spread_study 2026-09-10; size to the max loss)"
         )
         cp_c       = "C" if cp == "call" else "P"
         s_delta    = (short.get("greeks") or {}).get("delta")
@@ -1121,8 +1120,7 @@ def screen_spread(
         strike  = short.get("strike", 0.0)
         lines.append(f"  Premium:     ${short_mid:.3f}/shr  (${short_mid * 100:.2f}/contract)")
         lines.append(
-            f"  Take profit: close at ≤ ${take_at:.3f}"
-            f"  (keep {int(profit_take * 100)}% = ${keep:.3f}/shr)"
+            "  Management: HOLD to expiry -- no profit take, no stop (etf_put_spread_study 2026-09-10; size to the max loss)"
         )
         cp_c       = "C" if cp == "call" else "P"
         s_delta    = (short.get("greeks") or {}).get("delta")

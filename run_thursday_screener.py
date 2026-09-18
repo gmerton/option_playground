@@ -36,7 +36,7 @@ from lib.commons.moving_averages import get_sma
 
 # ── Universe ──────────────────────────────────────────────────────────────────
 #
-# Backtested 1-DTE bull put spread edge (0.15Δ short / 0.10Δ long, 50% take):
+# Backtested 1-DTE bull put spread edge (0.15Δ short / 0.10Δ long; the backtest used a 50% take -- management is now HOLD, per etf_put_spread_study 2026-09-10):
 #   COST  +3.93% ROC (20MA)   WMT   +3.57% ROC (20MA)
 #   MSFT  +3.26% ROC (none)   META  +3.21% ROC (20MA, critical)
 #   HD    +3.39% ROC (50MA)   AAPL  +2.65% ROC (20MA)
@@ -245,10 +245,7 @@ def _screen_ticker(
     lines.append("")
     lines.append(f"  Net credit:  ${credit:.3f}/shr  (${credit * 100:.2f}/contract)  credit/width {credit_pct:.1f}%")
     lines.append(f"  Spread:      ${s_strike:.2f}P / ${l_strike:.2f}P  width ${width:.2f}  max loss ${max_loss:.3f}/shr")
-    lines.append(
-        f"  Take profit: close ≤ ${take_at:.3f}  "
-        f"(keep {int(PROFIT_TAKE_PCT * 100)}% = ${keep:.3f}/shr  ROC {roc_at_take:.1f}%)"
-    )
+    lines.append(f"  Management:  HOLD to expiry (1 DTE -- it settles tomorrow); no profit take, no stop; max ROC {credit / max_loss * 100:.1f}% on the max loss")
 
     s_delta   = (short.get("greeks") or {}).get("delta")
     l_delta   = (long.get("greeks")  or {}).get("delta")
@@ -256,7 +253,7 @@ def _screen_ticker(
     ld_str    = f"{abs(float(l_delta)):.2f}Δ" if l_delta is not None else "?Δ"
     summary   = (
         f"short ${s_strike:.2f}P({sd_str}) / buy ${l_strike:.2f}P({ld_str})"
-        f"   net ${credit:.3f}cr   width ${width:.2f}   ROC@50% {roc_at_take:.1f}%"
+        f"   net ${credit:.3f}cr   width ${width:.2f}   max ROC {credit / max_loss * 100:.1f}%"
     )
 
     return {"enter": True, "lines": lines, "summary": summary,
@@ -373,7 +370,7 @@ async def run(today: date, ma_window: int, override_ma: bool = False) -> None:
     )
     print(f"  THURSDAY SHORT-DTE SCREENER  ·  {today}  ·  VIX: {vix_str}")
     print(f"  Bull Put Spread  ·  ~{SHORT_DELTA:.0%}Δ short / ~{LONG_DELTA:.0%}Δ long  ·  "
-          f"0–5 DTE  ·  {PROFIT_TAKE_PCT:.0%} profit take  ·  trend: {ma_note}")
+          f"0–5 DTE  ·  hold to expiry  ·  trend: {ma_note}")
     print(f"{BAR}")
 
     enters: list[tuple[str, dict]] = []
