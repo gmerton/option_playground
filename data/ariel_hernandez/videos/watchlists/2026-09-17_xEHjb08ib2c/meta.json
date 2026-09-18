@@ -14,7 +14,7 @@
     "lang": "en",
     "format": "timestamped_text_mm_ss",
     "tool": "Chrome fetch/XHR interceptor on the player (yt-dlp cannot fetch members-only)",
-    "quality_note": "Auto-generated captions, 314 events. 'GCT' at 02:02 unresolved (level 537.0 / 524.0 'high-volume close from the earnings gap'; no panel name matches at 537 or 53.7). 'Palunteer' = PLTR, 'Octa' = OKTA, 'Rubric' = RBRK, 'Mags' = MAGS, 'NIM at 72' unresolved (breadth oscillator?), 'CAT data' unresolved."
+    "quality_note": "Auto-generated captions, 314 events. 'GCT' at 02:02 = GigaCloud Technology (levels 53.70 / 52.40; caption dropped the decimal). 'Palunteer' = PLTR, 'Octa' = OKTA, 'Rubric' = RBRK, 'Mags' = MAGS, 'NIM at 72' unresolved (breadth oscillator?), 'CAT data' unresolved."
   },
   "supplemental_notes_file": "notes.md"
 }

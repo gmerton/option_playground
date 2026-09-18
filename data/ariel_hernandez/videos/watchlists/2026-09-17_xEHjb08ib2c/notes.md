@@ -2,7 +2,7 @@
 
 **Stated positions:** AMD (bought Monday 9/14 "off the flattening 20-day", trimmed today, stop = rising 10 SMA, will trail the 20 SMA in a few weeks); GOOGL (small add today taking out yesterday's high, stop = 200 SMA; wants a breakout in a "really good market" before adding); OKTA (bought Monday). Attempted SPCX over 155 today, "could not get going" (outcome not stated).
 
-**Tickers (auto-caption decodes):** Palunteer = PLTR · Octa = OKTA · Rubric = RBRK · Mags = MAGS (Roundhill Magnificent Seven ETF), FNGU = its 3x proxy · Cyber = CIBR · SNDK = SanDisk · Net = NET · Service Now = NOW · Snowflake = SNOW. **GCT @02:02 UNRESOLVED** — a name he "had taken off the radar", trigger 537.0 (yesterday's high), 524.0 = high-volume close from the earnings gap-up, "< 4x ATR from the 50". No liquid-panel name had yesterday's high at 537 or 53.7; PYPL (53.83 / 52.94) is the nearest at the small scale but the name does not fit. Ask Gabe.
+**Tickers (auto-caption decodes):** Palunteer = PLTR · Octa = OKTA · Rubric = RBRK · Mags = MAGS (Roundhill Magnificent Seven ETF), FNGU = its 3x proxy · Cyber = CIBR · SNDK = SanDisk · Net = NET · Service Now = NOW · Snowflake = SNOW. **GCT = GigaCloud Technology (resolved by Gabe 2026-09-17)** — levels are 53.70 (yesterday's high, our 15-day pivot 53.71) and 52.40 (high-volume close from the earnings gap). Not in the liquid panel: 50-day ADDV $29M is under the $30M panel floor, which is why the price search failed.
 
 **Unresolved jargon:** "NIM at 72" @11:09 (a breadth/oscillator reading he likes — NYMO/NAMO?); "CAT data tomorrow evening" @11:11 (COT? CTA positioning?).
 

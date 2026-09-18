@@ -10,6 +10,7 @@ Optimistic, not forcing: "earn the right to size up", sitting in a few good name
 
 | | close | ADR | ext (ADR) | stack | off hi | layer 2 | his call | our read |
 |---|---|---|---|---|---|---|---|---|
+| **GCT** (GigaCloud; resolved by Gabe) | 53.15 | 4.7 | 0.9 | 10>20>50 yes | −5.5% | no — ADDV $29M, under our $50M gate | 53.70 = yesterday's high, on a pickup in volume; 52.40 = high-volume close from the earnings gap, held; "< 4x ATR from the 50" | Passes his own checks: 2.6 ATR above the 50, 0.9 ADR over the 21 EMA (inside the August-lens location rule), tight 3-week range 50.5–53.7 with volume drying to 0.4–0.9x, 15-day pivot 53.71. Would be a layer-2 name on everything but liquidity ($29M/day vs our $50M floor; ~$2.5M option-free stock trade is fine, chains will be thin). His level = our pivot to the cent. Watch: close > 53.71 on ≥1.1x volume; stop = that day's low. |
 | **AMD** (owns) | 545.09 | 3.5 | 2.8 | 0 (reclaimed the 50, not stacked) | −6.8% | no | not buyable tomorrow; trimmed; stop = rising 10 SMA | Agree it is off the list: 2.8 ADR over the 21 EMA is a chase by the August lens. His trim-then-trail is the house exit shape. |
 | **INTC** | 108.80 | 4.4 | 2.5 | 0 | −23.6% | no | neckline 106.70 broke today; wants a 2-day low-volume pullback, then the higher low mid next week | Not a leader by our definition (24% off the high; a laggard turn). He is also NOT buying the break -- he wants the pullback. Our pullback test says that entry is break-even on daily bars; his version is intraday. Watch, no trade for us. |
 | **GOOGL** (owns) | 347.33 | 1.8 | 0.8 | 0 | −14.9% | no | 349.50 = today's high, on volume, holding the 50 SMA; added a piece today over yesterday's high, stop = 200 SMA; weekly double bottom into the rising weekly 50 | ADR 1.8% -- outside every scan gate; a premium-selling underlier for us, not a breakout stock. His weekly-over-daily read is a rule we have not tested. |
@@ -37,4 +38,4 @@ Optimistic, not forcing: "earn the right to size up", sitting in a few good name
 
 ## Follow-up (score at the 9/25 close)
 
-GOOGL 349.50 · NOW 140.55 · PLTR 178 · INTC pullback-then-higher-low · MAGS 70.80 · NET 334.60 · RBRK 107.91 · SPCX 150 hold / 155 · his AMD trail (10 SMA). Record which levels printed, on what volume, and the 5-session result from the trigger.
+GCT 53.70 · GOOGL 349.50 · NOW 140.55 · PLTR 178 · INTC pullback-then-higher-low · MAGS 70.80 · NET 334.60 · RBRK 107.91 · SPCX 150 hold / 155 · his AMD trail (10 SMA). Record which levels printed, on what volume, and the 5-session result from the trigger.
