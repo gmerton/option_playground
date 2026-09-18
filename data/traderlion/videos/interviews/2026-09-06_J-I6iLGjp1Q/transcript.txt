@@ -1,0 +1,963 @@
+[00:00] And I'm looking at these premiums and I'm going, I can't believe it. I could generate 8% option premium in one month. 9%. Look at this. This is nuts. I'm in. The most important rule in my humble
+
+[00:11] opinion that I've developed with the BCI methodology is that you never ever sell an option if there's an upcoming earnings report. That is a lesson I learned early on. Undertaking these
+
+[00:23] contractual obligations. We are paid the option premium. So we the option sellers set the parameters strike price and expiration date of these contracts and we know the premiums we're generating
+
+[00:36] ahead of time so we could see if it aligns with what our strategy goals are. I'm going to just let it lie, put the money in the bank and move on to something else. Maybe come back to
+
+[00:45] Marvel another time. So, my max return for this particular trade on both contracts was in fact realized and that gave me a 5.13% 5-day return and that annualizes out to 266%
+
+[00:57] if I was just calculating 52 time frame. If you could tell if a line is going up or down or if you could tell if it's above or below zero, you could read a price chart and you could see the
+
+[01:10] [snorts] trade status. What happened? Well, Marvel absolutely went not only did it go to the moon Richard, it went to Mars. It went beyond. It went up $18.96
+
+[01:20] from the trade inception of 14,535. The cost [snorts] of the shares is 16317. So, what's my final return? 1.49% 28.6% annualized on a stock which are if I bought 200 shares, I would have lost
+
+[01:36] $1,114. So I think you could see with clarity for this particular trade that if you're concerned about the market, go with an in the money covered call and still
+
+[01:45] generate significant return and have all that insurance on your trade. I would say take your time, invest 3 to four months to learn the nuances, the three essential skill sets, stock selection,
+
+[01:58] option selection, position management. the 3 to four months invested will be well worth your time because now you'll be in a position to beat the market on a consistent basis and many years
+
+[02:09] substantially, which is what I've been doing now for 30 years. Hey everyone, welcome back to another episode. As always, we bring top traders, US investing champions, and market wizards
+
+[02:18] here onto the show to share their journeys, their methods, their strategies, and the key principles that they want to pass on to you guys to save you time, save you money, and improve
+
+[02:27] your trading performance. And if you love learning from great traders, we have two exclusive bonuses just for you. Down below in description, you'll find two resources. The first is a breakdown
+
+[02:38] of today's interview with key quotes, key takeaways, and key concepts that you can apply right away to your trading. Second, just below that is something I'm very, very proud of. It is 10 lessons
+
+[02:49] from market wizards. This combines a 100 plus interviews that I've done just like this one and combines all that knowledge into one place. again 100% free. So again, these are located down below in
+
+[03:00] the description. Check them out, share them with fellow traders and happy studying. And just one more reminder, if you enjoy these podcasts, please go ahead and double check down below that
+
+[03:09] you're subscribed and leave a like. That helps us out immensely and helps us continue to bring on great guests. Uh so thanks so much in advance. Uh sit back, relax, get your notebooks ready, and
+
+[03:19] enjoy. All right, welcome everybody to the Trailine podcast. I'm your host, Richard Mglin. This episode is powered by Dy Charts. To learn more, check out the
+
+[03:32] link down below in the description. Join us today is Dr. Alan Elman. He's an extremely experienced options trader, uh, trading options since 1995. He's the author of nine best-selling books on the
+
+[03:43] subject, and today I'm really looking forward to learning more about his style, his approach, and he's got some sample trades as well that we're going to go through. So Allan, thank you so
+
+[03:52] much for your time. Um, and welcome. Great to have you. Great to be with you. Looking forward to this conversation. Absolutely. Absolutely. And we were
+
+[03:58] connected by Dr. Eric Wish, who of course I learned from. Uh, so this should be excellent. Um, and Allan, I always like to bring it back to the very beginning. Uh, and I'd love to hear kind
+
+[04:07] of how you first got into trading, got into the business, and what started kind of you exploring options and and having that be kind of your trading style. Richard, this is my second professional
+
+[04:19] career. uh the the doctor in front of my name. A lot of people think I'm a PhD in finance. Not the case. I was a dentist and uh I had a practice uh in New York. I had a staff of 15 and uh I had a
+
+[04:35] pretty good gig going on there. But what happened, Richard, was in the mid 1990s, I realized that despite my good fortune in dentistry, at some point in time, I would need a passive form of income. And
+
+[04:48] I really had no idea how to self-invest. And I knew that it just wasn't in my DNA to hand my money over to somebody and say, "Here, invest for me." Not that there's anything wrong with that if you
+
+[05:02] find the right person, but I knew it wouldn't be for me. So, I started teaching myself how to self-invest in both the stock market and in the real estate market. Now, I always had a bit
+
+[05:13] of a knack for math. And so I started developing all these rules and guidelines and algorithms and spreadsheets and so on and so forth for both real estate and the stock market
+
+[05:25] and I was doing very well in both venues. uh at the beginning uh and then what happened was in 2006 I was invited to do a presentation in front of 250 real estate investors
+
+[05:42] regarding some deals that I was executing in Austin, Texas. Nothing to do with the stock market. And I'm giving this uh how I took one property I owned in New York and converted into five in
+
+[05:54] Texas and it was all real estate. But one sentence, Richard, came out of my mouth during that presentation that was about to change everything for me. I said that I purchased my first
+
+[06:07] investment property with the profits that I earned from selling stock options. Well, after the seminar was over, people were coming up to me asking me not about real estate, how do you do
+
+[06:20] that stock option thing? And then I got phone calls and emails. So, I said to my wife, "Well, maybe I should write a seminar on covered calls, which was my go-to strategy back then." The woman who
+
+[06:33] owned a real estate club was very generous to me and said I could send out an eblast to all of our members. I rented out a room in a local Holiday Inn. Sold out. I couldn't believe it.
+
+[06:44] So, then I wrote three more advanced on the same topic. Sold out. Ultimately, Richard, that led to publication of my first book uh cashing in on covered calls in 2007. That went to number one
+
+[06:57] on Amazon on options. And then of course I started getting, you know, you started getting invited all over the country to speak. And uh every month my wife and I were in a different city
+
+[07:10] uh doing my dentistry. And in 2011, I said, you know what? I can't do both anymore. I have to make a career choice. Either I'm going to stick with dentistry or I'm going to move on to educating rel
+
+[07:23] relating to the stock market and stock options. So, I chose plan B uh and I devoted full-time to the bluecollar investor which is celebrating its 20th anniversary in January. So, uh Richard,
+
+[07:36] no regrets, but that's how I I moved from my career as a dentist. I spent 40 years in dentistry and now doing uh education on stock options and um I've been so fortunate to have two careers
+
+[07:51] that I really enjoy and love doing. Yeah. Fantastic. And do you remember what your first stock option trade was or were there at the beginning some very meaningful trades that you were like,
+
+[08:02] "Okay, I need to figure this out because I can see the potential here." Uh but you know, there's still work to be done at the very beginning when you're just learning. Well, you know, Richard, I I
+
+[08:10] can't give you the very first trade that I made, but I can give you something that I vividly recollect when I was executing that trade because I had I had been doing just stocks and I was using
+
+[08:22] my formulas. You you your the trade trade alliance viewers will see the screening process that I use in the upcoming slides and I've been using that improving on it over the years for 30
+
+[08:34] years now. Uh but I I have this very specific screening process for specific for options and I was using it back then for stocks and um doing very well. But then when I moved to options, actually I
+
+[08:51] could tell you this, Richard. I was reading an article in a dental journal about this dentist that was talking about IRA and how he was selling options in IRA. And I was doing stocks at the
+
+[09:04] time and I said, "Wait a minute, options are very risky, aren't they? How how does our government and our brokerage allow options in an IRA?" So I started looking into it and that's how I came
+
+[09:15] across covered call writing. I had been doing just buying and selling stock. In any case, let me tell you my memory of the first trade. I can't tell you what the underlying was, but I could tell you
+
+[09:24] this is for a fact. So, here I am fairly experienced buying and selling stock using my guidelines. And now I figure out what covered call I'm going to write. I enter it into my
+
+[09:38] computer and I was so scared to click the button uh to to execute that trade that my finger was frozen in midair. That's how frightened I was for my first trade. Am
+
+[09:52] I doing the right thing? Is this you know and I had prepared myself. I had learned as you know I realized at the time you know the information that was out there that there was a lot more to
+
+[10:03] it. intuitively I just knew that there was a lot more to it and that's why I kind of threw everything out the window and I just developed my own system but uh back then I was you know I had a
+
+[10:14] small account and I was selecting maybe each month like five to seven stocks and uh and even at the beginning when I wasn't quite as good at it then as I am today even back then I was beating the
+
+[10:30] market so uh I was very fortunate it was a a little scary because you know options have a reputation of being risky and many option strategies are in fact risky where you have great potential but
+
+[10:43] the kind of strategies that I use and and you'll see that as we discuss this today are low risk they're not no risk but they are lowrisk strategies where you have plenty of protection to the
+
+[10:56] downside yet still generating significant annualized returns. Excellent. And I'm looking forward to diving into the examples you prepped. Uh just a few more background questions
+
+[11:05] just to get kind of get that context when you were first starting out either just stock trading or with the options. Um what were some of the earliest mistakes that you made or you know
+
+[11:16] learning moments? Maybe there's a trade that you had kind of an aha moment about, you know, something and it completely changed how you viewed things. Um, do any come to mind, you
+
+[11:24] know, either key mistakes that you made that you had to learn how to correct or just a trade that kind of turned the corner for you in terms of establishing your system?
+
+[11:33] Actually, I could think of two two responses to that question, Richard. Uh, the f the first one, uh, there's a company, Taser, uh, and it it develops these stun guns.
+
+[11:44] Well, back in the day when it first came out, they were doing all these trials at various police stations across the country and um news would come out that was very favorable to the company and
+
+[11:56] then all of a sudden different news would come out that was not so favorable. As a result, the price of the stock was like a roller coaster ride. Uh in in options lingo, it's high
+
+[12:08] volatility. Can go up a lot and it can go down a lot. Well, the amount of option premium that we can generate when we sell an option is directly related to the implied volatility of that
+
+[12:22] underlying security. For an for as an example, you're going to get a lot more premium writing options on Intel than you will on Walmart, right? But anyway, let's get back to Taser now. So, Tasar
+
+[12:35] was was Taser was going up and down like crazy every month. And at the time, I wasn't as experienced as I am today. And I'm looking at these premiums and I'm going, I can't believe it. I could
+
+[12:47] generate 8% option premium in one month. 9%. Look at this. This is nuts. I'm in. And I started writing covered calls on Taser without realizing that the good news was the option premium. The bad
+
+[13:03] news was the risk to the downside. And I lost quite a bit of money on Taser over, you know, over a period of probably many, many months before I recognized the fact that one of the important
+
+[13:14] things we have to do is integrate implied volatility into the way we structure our trades so that it aligns with our personal risk tolerance, which is not the same for every investor. you
+
+[13:28] know, I I am a lowrisk in I'm willing to incur some risk, but not a whole lot of risk and I'm still able to generate as as you'll see shortly significant annualized return. So, that's that's one
+
+[13:41] thing that comes to mind. There's another more more general uh concept that I learned early on. So, here I am screening which what I thought was a very good screening procedure and
+
+[13:53] it is. It got better over the years, but it was back then too. and I'm carefully writing uh covered calls. Uh I had learned my lesson, my taser lesson, and then every once in a while I get
+
+[14:06] hammered over the head with a big loss. And I'm saying, "What? What happened here? How could this be?" And I started researching it out. Here's what I found out, Richard.
+
+[14:17] Every three months, these publicly traded companies come out with earnings reports. and and and the earnings report can be favorable and they could be
+
+[14:29] disappointing which means that the price of the stock can go to the moon or it could fall precipitously. Now the most important rule in my humble opinion that I've developed with the BCI
+
+[14:43] methodology is that you never ever sell an option if there's an upcoming earnings report. That is a lesson I learned early on. These are lowrisk strategies. So when when there's an
+
+[14:58] upcoming earnings report, all of a sudden you're going to see the implied volatility of that underlying be so much more magnified that at any other time. So uh you you must avoid earnings
+
+[15:10] reports because if it's going to go to the moon, why cap the upside with a covered call? And if it's going to fall precipitously, maybe you don't want that particular security in your portfolio
+
+[15:22] that particular week or month depending on what type of expirations you're using. So th those are two uh lessons learned that come to mind that was very very early on back in the 90s that I've
+
+[15:34] kept going decades later. Yeah. Excellent. And a lot of our audience are growth stock traders. Um, I'm sure there there's uh quite a few options traders as well. But for the
+
+[15:44] folks watching who maybe aren't as familiar with some of the terms you're talking about, covered calls, you know, uh, strike prices, all that. Um, could you kind of go through maybe some of the
+
+[15:54] key building block concepts that you'll be kind of referencing throughout today that people need to understand so they can get the most out of the uh, the strategies you're talking about?
+
+[16:03] Sure. Uh, so let me start with um, just defining the term option. Uh an option is a contract and it's based on typically a stock or an exchangeraded fund. So for every options contract
+
+[16:19] that's bought or sold, it's it it leverages 100 shares of that underlying security. Now uh the buyer, let's look at it from the buyer's perspective first. The buyer of an option has the
+
+[16:34] right but not the obligation to either buy or sell 100 shares of that underlying security. Now uh a call option which relates to the covered call aspect of today's
+
+[16:47] discussion gives the buyer of that option the right to purchase 100 shares of that stock uh at a certain price which is called the strike price by a specific date which is known as the
+
+[17:00] expiration date. Now uh a put option on the other hand gives the buyer of that option the right but not the obligation to sell a 100 shares per contract of that underlying security by the strike
+
+[17:16] price by the expiration date. So that gives you an idea of what option is all about. So, let me then define uh covered call writing. And this this is a strategy that may
+
+[17:28] appeal to a lot of Trader Lion viewers because I'm sure many or most uh of your members have portfolios of stocks or ETFs and they can actually generate a third income stream by writing covered
+
+[17:44] calls against these shares that they already own. Um but in any case, covered call writing uh let me just break down the three words. Covered means you buy the stock or already own the stock. So
+
+[17:56] you know your cost basis. This is as opposed to selling naked call options which is a much riskier strategy. So covered, we own the shares. We know the cost basis. Call is the type of option
+
+[18:09] we're selling. We're selling some unknown person because everything's done online on your computer. We're selling some unknown person the right but not the obligation to buy our shares from us
+
+[18:21] at a price that we determine the strike price by a date that we determine the expiration date in return for undertaking this contractual obligation we are paid handsomely in the form of an
+
+[18:35] option premium. Now, selling cash secured puts uh is a a lot of people think it's the same, but it's not really the same. I use it more uh in a volatile, uncertain,
+
+[18:50] bare market environment compared to covered calls, and we can talk about that later if you'd like. But when we sell a cash secured put, we're not buying the stock, but we're agreeing to
+
+[19:02] buy the stock at the strike price, which is lower than current market value, the way I do it, by the expiration date. Now, our broker is going to require us to set aside a certain amount of cash in
+
+[19:19] case the put buyer, that guy over there, we don't even know who it is, decides to exercise that option and sell their shares to us. So, we have to set aside a certain amount of
+
+[19:31] cash. And uh the amount of cash we have to set aside, I'll quickly give you the formula is the strike price that we're agreeing to buy the shares for minus the premium we receive. So in with covered
+
+[19:43] calls, we get the stock first. With cash secured puts, we set aside the cash. We don't buy the stock. And then in both strategies, in return for undertaking these contractual obligations, we are
+
+[19:56] paid the option premium. So, we the option sellers set the parameters, strike price and expiration date of these contracts and we know the premiums we're generating ahead of time so we
+
+[20:09] could see if it aligns with what our strategy goals are. Hey everyone, just want to jump in here real quick and let you know that this episode is brought to you by DFW, which is the platform I use
+
+[20:18] every single day to find new trading ideas, monitor existing positions, identify new leading themes, and analyze the markets. You guys deserve a platform that keeps innovating and brings you the
+
+[20:29] most up-to-date tools to trade the market. And at DFW, almost every single week, we're launching a new feature or system update. Here's what makes DFW different. The screener comes loaded
+
+[20:38] with preset screens from actual market wizards and top traders. So, you're starting from the setups that the best in the world actually use. And when you're flipping through results, you've
+
+[20:46] got many charts right there, so you can visually scan through hundreds of stocks all at once. That alone saves me so much time every single week. The charting is built for how we actually trade.
+
+[20:56] Multiple time frames, unlimited indicators included anchor, VWAP, enhanced volume, custom indicators like RMV, and the built-in RS rating. You've got custom dashboards to track the
+
+[21:06] market, themes, and real-time sector rotation, so you always know where the money's flowing. Best yet, we just launched the Deep View AI terminal, which brings all your research into Deep
+
+[21:15] View with easy to use preset prompts or your own custom ones. You can even identify gap catalyst with just a right click. So go ahead and try it out today. We set up an exclusive offer for all
+
+[21:26] Trailine podcast listeners. So to activate your trial today, check out the link down below in the description or visit dv.com/mpodcast. That's dv.com/mpodcast.
+
+[21:35] And with that, let's get back to the interview. Excellent. No, that that's very helpful, I'm sure, especially for folks newer to options. Uh and you prepared some
+
+[21:44] excellent slides here. um let's dive deeper into your strategy and uh walk through things and and first I know we already mentioned your background but was there anything else here that you
+
+[21:54] want to mention and highlight that would give good good context for today's discussion? Well, um I've been uh I've been using this strategy for 30 years and uh geez I never expected this to
+
+[22:06] happen, Richard. Uh but uh I am loving every minute of it. And over those uh in the last 19 and a half years, uh I have actually authored nine books uh and written over 700 journal articles. I
+
+[22:21] write a new one every week and produced over 600 videos and I do a couple of videos now uh every week as well. And I've had the good fortune of speaking all over the country in various menus.
+
+[22:32] You could see it on the slide. I don't have to go through them. Uh one of the most humbling things, Richard, that happened to me was about three years ago. I'm in Las Vegas doing a
+
+[22:41] presentation for the Money Show and after the presentation, one of the attendees runs up to me and sticks his phone in my face and he says to me, "Hey Allan, I just asked Chat GPT who is the
+
+[22:55] best teacher of covered calls and look, your name came up first." That was a very humbling experience. So, um, you know, going from root canals and crowns to being, uh, given a lot of accolades
+
+[23:09] for options, uh, as I said, I I feel like first of all, I have an amazing team that supports me and of course all the people out there that have put BCI on the financial map. So, it's kind of a
+
+[23:20] team effort. Uh, I've also had the good fortune of uh, testifying at multi-million dollar option trials as an expert witness. And I've done a lot of work. A lot of your
+
+[23:30] members may have heard of the American Association for Individual Investors. I wrote an article in their August journal and I'm be be doing a lot of work for them moving forward as well. So, it's
+
+[23:41] been a great ride and of course um being part of Trader Lion is also a very humbling experience for No, it's great to meet you and and chat with you uh and and learn more from you.
+
+[23:52] Uh it's funny because um back in 2019 when I took Dr. for Eric Wish's class at the University of Maryland. Uh he had his recommended book section either the first day or also at the end and your
+
+[24:03] books were right there if you want to learn options. That was the number one resource that he mentioned. So uh it's it's great to kind of connect the dots and get to talk with you. And we're
+
+[24:11] going to be working together on on a project uh that uh I'm really excited about working with Dr. Wish Les Mason as well. Um a kind of one-of-a-kind workshop where you'll kind of learn all
+
+[24:21] these different uh three core strategies. And if you're interested in that, we'll have a page down below that you can enter your information and uh we'll let you guys know as soon as
+
+[24:31] that's properly announced. So again, click the link down below if you're interested in learning more uh from Allan, Dr. Wish, and also Les Mason. Uh he'll be presenting on ETFs, Dr. Wish,
+
+[24:40] his methodology on growth stocks, and Allan of course on uh options. So I'm really excited for about for that as well. Um for for the trials, I want to actually hear a little bit more about
+
+[24:50] that. Um Allan, were there any kind of fun stories from that? What was that kind of experience like being an expert witness? Um, okay. I'm kind of limited in what I
+
+[24:59] talk about, but I will say this. I will say this. Um, a wealth management company was using covered call writing for an elderly
+
+[25:10] couple and, um, they really didn't know how to use the strategy properly based on what the couple was asking for. and it resulted in losses in the many millions of
+
+[25:24] dollars. It was egregious. And uh I when they contacted me, when the legal team contacted me to become an expert witness, my first reaction was, "How did you know to call me? I feel like I've
+
+[25:39] been preparing for this case for 30 years." And uh the the story had a happy ending. Well, that's great. That's awesome. All right, so let's dive in. Uh I know you
+
+[25:49] prepared for sample trades. Um anything you want to mention from a high level before we get into these trades that again kind of would give good information for people understand
+
+[25:59] understand what's going on? Yeah, I think I think it's important for u trader lion members to keep an eye. I'm going to be showing uh spreadsheets which I uh based on the size of the
+
+[26:10] slides I think you'll be able to read everything pretty clearly. Uh, I want you to see the protection that you get when you structure these trades and then look at the annualized returns. Don't
+
+[26:21] look at the dollar amounts. I sell between 125 and 150 contracts every month. So, you're going to be seeing like two, three, four, five contracts with these examples. So, it represents a
+
+[26:35] small dollar amount. But then I want you to take a look at the annualized returns so you can get a perspective and compare it to other strategies. And let me just say this also because um you know I I
+
+[26:49] attend these these conventions all over the country 10 12 times a year and um I always make sure to let people know that these are low-risk strategies. They are not no risk strategies. So take a look
+
+[27:05] at the risk and then in uh in January when we do that all day event I'm going to talk about ways of quantifying the risk and metrics we have to quantify to really get into the detail of how to
+
+[27:17] protect yourself. So as we go through these four examples keep a keep an eye on the annualized returns and the protection that you have. And let me just say one more thing before we get
+
+[27:27] going on these Richard is that in the last year and a half to two years I've been very very defensive in how I've been structuring my trades. I am not at all comfortable
+
+[27:38] with um even though the stock market is is gone up so far this year uh better than average so far. I still I still am not comfortable with the economy the way it's going and the stock market. So,
+
+[27:52] I've been structuring my trades more defensively. That doesn't mean I'm right about that, but it that's how it aligns with my personal risk tolerance and keep an eye on the annualized returns that
+
+[28:03] I'm still able to generate despite structuring my trades so defensively. So, I'm going to be showing two covered calls. One is a weekly fiveday, and the other is multi-week, you know, somewhere
+
+[28:16] between three and four weeks. Uh, and then I'm going to do the same for cash secured puts. What I'm not going to get into today and I will get into in January for that event is man trade
+
+[28:27] management and uh what you're seeing there on the right side of this screenshot just so your members know there is so much you could do to not only enter your trade appropriately but
+
+[28:39] then manage your trade. This book that I wrote this was my eighth book. It has 27 chapters of exit strategy information for the two strategies I'm going to talk about today. So uh many times you don't
+
+[28:52] have to do anything at all but uh when you do you should be prepared to react whether it's because the price of the stock started tanking despite you know the screening that you're doing or if it
+
+[29:03] went to the moon way better than you expected. Can you get more than a max return when you sell options? The answer is yes you can. And all that information is in this book but we're in this
+
+[29:16] discussion today. it that is outside the scope of this particular discussion. Excellent. And Alan, actually before we get into the trades, since you mentioned risk, and I know you're going to define
+
+[29:26] it uh more at the workshop, um it's actually one of my favorite questions to ask different traders because different styles uh you know, view risk differently. How would you personally
+
+[29:36] define risk in the markets? And what is maybe one key way that you manage it to make sure you're managing your risk? Okay, so risk can be defined in a lot of different ways depending on what your
+
+[29:47] strategy goals are. So, let me give you one of the more common ones. Okay, let's say um a Trade Allian member has a portfolio of stocks that they've owned for a long long time,
+
+[29:58] lowcost basis stocks in taxable accounts, right? They're generating uh income, not income, but they're appreciating from the value of the shares going up over the years and
+
+[30:09] decades. And maybe they're also generating dividend income as well. Well, you can integrate covered call writing into those portfolios, but in a very
+
+[30:20] different way than the way I do it, which is more traditional, and that is they're adding one more metric, and that is they don't want their shares sold because they don't want to incur
+
+[30:32] any negative capital gains issues. So, what they're going to do is if the stock is trading at 300, right? Let's say Apple was recently at 300. And I would probably sell the 305 if I didn't care
+
+[30:49] about losing my shares. And I'd be generating maybe a 2.5% initial return with another possible 4% on share appreciation. Maybe in one month I can get five and a half percent on that
+
+[31:02] trade. If it's sold, it's sold. Who cares? Okay. But let's say you own Apple at 300. You may have bought it at 50, right? And then all the splits and everything. Um, and you don't want it
+
+[31:15] sold. Well, you're not going to use a 305 strike price. You might go up to 330. Now, you're going to get a lot less income, but you're going to get somewhere between an additional 4 and
+
+[31:26] 15% a year over and above your share appreciation you've been getting all these years and decades. and dividend income. So why not take advantage of that? Okay, now let's get back to the
+
+[31:38] risk. So what is the risk of the price going from 300 to higher than 330? What is that risk factor? And there's a metric called delta and one of the three definitions of delta, it's the
+
+[31:53] approximate probability based on that particular price of Apple and the strike price and the expiration date. It's the probability of the price of Apple going from 300 to above 330.
+
+[32:07] And you might see in the option chain, which is a price list of of the options for that stock, you might see a delta of 8%. That's your risk factor, 8%. Now um you know you may be selling a cash
+
+[32:22] secured put and uh you don't want the price of the stock dropping below the deep out of the money put strike which is much lower than current market value. What's the risk of that? Well, you could
+
+[32:33] use delta also. There's you can also use implied volatility and there's specific formulas for that. That's something I think we should reserve for January. I actually developed a spreadsheet for
+
+[32:43] that one. Excellent. Well, let's go ahead and dive right in, Alan, and let's talk about this first one. Uh so on Marvel covered call writing a weekly example.
+
+[32:52] Yeah. All of these were taken from uh one of my option portfolios. This one I I took um because it shows you how you can use different strikes for the same stock in the same expiration. A lot of
+
+[33:06] people think that if you're selling five contracts, let's say, uh that they all have to be in out of the money higher or in the money lower. No, you could break it up. Now, I refer to that in my books
+
+[33:20] and videos as lattering the strikes. Uh, I borrowed that from the bond market, but um, you could use different strike prices. So, let's say you are, for example, bullish on the market, but not
+
+[33:34] so much. You're slightly bullish on the market, and you're selling five contracts. Well, you could sell three out of the money, more aggressive, and two in the money, more defensive. and
+
+[33:44] and this this is a good example of using both aggressive and defensive strikes for uh Marvel. So let's uh let's go to the next slide and I'll show you now why I selected um
+
+[33:57] Marvel and and one second. You mentioned in the money and out of the money. I just wanted to pause here and if you could define those terms because again some people might not be super familiar
+
+[34:06] with it what that exactly means. Okay. So, uh, let's let's say for example, you have a stock, uh, let's say, uh, Trader Lion, Inc., uh, the ticker is TL on the New York Stock
+
+[34:17] Exchange, by the way, Rich. Uh, let's say it's trading at $48 a share, right? Now, you could sell the $50 out of the money strike higher than current market value, and that you're
+
+[34:30] going to get a premium on that, right? But not only you going to get a premium on that, but you also have an opportunity for that price of the stock to go from 48 to 50 and generate another
+
+[34:41] $2 in share appreciation. So when you're selling an out ofthe- money covered call, you have an opportunity for two income streams, one premium, two share appreciation. Now if it goes higher than
+
+[34:53] 50, you don't participate in that. That is the main disadvantage of coveret call writing. The upside is capped. However, if you get 5 7% in a month, I I don't think that's a reason to break out the
+
+[35:05] Kleenex, you know, but in in any case, that's out of the money. Now, in the money, let's say uh trade a line again is trading at 48. You sell the 45 in the money call. That means you're agreeing
+
+[35:18] to sell it for 45. And uh let's say you get a $5 premium on that. Can we count that $5 as all profit? Well, no, because we're losing $3 on the sale of the stock. It's trading at 48. We're selling
+
+[35:32] it at 45. So, that $3 difference is called intrinsic value of the premium. That is not profit. But the other $2 is called time value or extrinsic value. And that is in fact profit. But we are
+
+[35:48] in fact receiving $5 of premium when the stock is trading at 48. So, what's your break even? 43, right? Whereas if you got $2 premium selling the 50 call, your break even is
+
+[36:01] 46. So in one case with the out- ofthe- money strike higher than current market value, the advantage is two income streams. And when selling an in the money strike, agreeing to sell your
+
+[36:12] shares at a lower price than current market value, the advantage is protection to the downside while still generating s significant amount of time value annualized.
+
+[36:24] Well explained. Thank you. I'm sure people who are new to options definitely appreciate that. All right, let's go ahead and dive right in. So here we are uh on the next slide with Marvel. Okay.
+
+[36:32] So, this is a uh a screenshot of our nine-page report which we provide to our premium members each week. Uh we start forming this report at 4 pm Friday when the market closes and we send it out to
+
+[36:45] our members usually about midnight Saturday night. The screening process which is [clears throat] a little too detailed to get into here uh is on the blue bar on the top starting with symbol
+
+[36:55] on the left all the way to comments on the right. So, uh that's my screening process. But I will tell you this, it consists of fundamental analysis, sales and earnings growth, technical analysis.
+
+[37:06] I'll show you that actually in one of the upcoming slides. So we have to do it now. And then some common sense principles like diversification, cash allocation, avoiding earnings reports,
+
+[37:16] things like that. A lot of thought went into this screening process. And it is specific for short-term options. Now a lot of people also use it for buying and selling stock. These are extremely high
+
+[37:28] quality securities and it's updated every week. So I highlighted for uh your members in the brown row Marvel technology and let's just going left to right now. You can see that it's in the
+
+[37:40] chips industry and that's the fourth column and that's ranked A that the week that I entered the trade. It was ranked B the week before. Now if you move over two columns to the uh mean analyst
+
+[37:52] rating or MAR 1.42. Now the mean analyst rating runs from one to five. One being the best. 1.0 is the best. Every analyst loves the heck out of this stock. Five is the worst. So
+
+[38:05] 142 is very very good. Excellent. Now adjacent to that is the onbalance volume or OBV. And you see an up arrow. That means that more cash is flowing into that security on up days than on down
+
+[38:19] days. So that's another bullish signal. Now I highlighted Richard uh with that red arrow the um implied volatility we talked about this earlier that the implied volatility is directly related
+
+[38:33] to the premium and the risk of the trade. Now 60.6% I would categorize as robust not modest robust. Now, actually, it's pretty good for option selling if we're looking to
+
+[38:48] generate significant returns and also significant protection to the downside. So, the 40 to 60% IV range, 30 to 60, let's say, is uh is my sweet spot. But, of course, I'll use others generate a
+
+[39:03] little less money uh because some money is better than no money. And uh you'll see also uh that the near the money open interest or option liquidity. You see a Y there. That means there's adequate
+
+[39:15] option liquidity. And uh over to the right we have the X dividend date and the earnings dates. Uh those are two dates you have to keep an eye on. And there is uh there are weeklys available
+
+[39:25] and that's what I use in this particular case. I use the weekly option. All right. So, that's the reason why Marvel was one of the securities that were in my portfolio
+
+[39:35] that particular week. And if we move to the next slide, I'll show you a three-month uh comparison chart of Marvel with the S&P 500. And by the way, this chart will also help define implied
+
+[39:46] volatility. So, you'll notice all the whips saws with that orange line, Marvel on the top. Compare that to the minor whips of the S&P 500, the blue line on the bottom. And over the past three
+
+[39:59] months, and again, we're going back to the day that I executed these trades. Uh, at that time, Marvel in the last three months was up 70% compared to the S&P 6 2.68%.
+
+[40:11] So, in addition to um the screening, it had been outperforming the market uh substantially. Now, uh, in the next slide, uh, Richard, I'm going to show, uh, I I know probably a significant
+
+[40:24] number of your members are familiar with technical analysis, but I'm sure many aren't. So, uh, I'm going to say this to those that aren't. If you could tell if a line is going up
+
+[40:38] or down, or if you could tell if it's above or below zero, you could read a price chart. Okay. Now, obviously that's simplifying it significantly, but I'm
+
+[40:52] just going to go through one to four, and you're going to see this with each trade that I made. I'm going to show you the price chart because at the beginning, it could be very
+
+[41:00] intimidating, but after you've set your settings the same, and you know, you may set it differently than I do, but I'm happy to tell you how I set mine. Uh, and then you just use different stocks
+
+[41:11] with the same settings. you'll be able to tell within three seconds or less technically it's in or technically it's out. Now, number one are moving averages which uh dictate the trend. Uh now, I
+
+[41:25] don't use simple moving averages. Like if I was just looking to buy and sell stocks long-term, I probably use 50 and 200 day simple moving averages, but these are short-term trades. They're
+
+[41:35] weekly or monthly trades, I need to see that line moving quickly if it's going to change. So, I use what's called exponential moving averages, which weigh the more recent pricing more
+
+[41:44] significantly. Now, the blue line with that number one top arrow, red arrow, is the 20-day EMA, exponential moving average, and the uh second arrow to the bottom, the red line, is the 100 day.
+
+[41:56] So, you want to see the more recent prices higher than the older prices, which we have. and you want to see the trend going up and the price bars or candlesticks at or above the 20-day blue
+
+[42:08] line EMA. So, we have a bullish number one moving average trend. Now, number two, without getting into the all the definitions, it's the MACD histogram, which are those blue bars, and they
+
+[42:20] represent trend and momentum. And you want to see those bars above zero, and certainly they are at number two with the blue out. Now number three is another momentum indicator called the
+
+[42:31] stochastic oscillator and that's the black line you see there. Now you could see it's gone up and then consolidated a little bit to the right and it's above the 80th percentile which some people
+
+[42:42] define as overbought. But I've seen I've seen technical charts with an overbought for months and months and months. So right now until it starts dropping below that 80 I'm considering that a bullish
+
+[42:53] signal as well. And finally the volume number four at the bottom is the volume weakening or is it sta is it staying pretty robust and it's staying pretty robust means that one two and three are
+
+[43:05] in fact significant. One other thing with volume that you may want to look at I do is that if number one trend is a rocket ship heading to the moon which is beautiful thing to see but the volume is
+
+[43:20] going in the other direction that's called negative volume divergence and that rocket ship might be running out of fuel. So that is a slight red flag and let me just bring that into what you
+
+[43:32] asked me before about in the money and out of the money. If I see a chart that's mixed, I'm more likely to favor in the money covered calls for that reason. So these trades can be
+
+[43:45] structured differently depending on the technical chart, the overall market assessment, your personal risk tolerance. There are in fact a lot of factors. All right, so let's now go to
+
+[43:58] the next slide and let's start making some money. Ask one uh one question before we move on. Uh just to clarify. So um this screenshot is at the time of that you
+
+[44:07] placed the trade. Is that right? So this is what it was looking like when you were entering the trade. Yep. So um do you favor stocks that are already trending or do you try to get involved
+
+[44:17] when they're just breaking through resistance for for this strategy? No, I I I prefer stocks that are trending higher. Um because remember now these are short-term trades. the these
+
+[44:31] are weekly it's you know it's there's a lot of screening services out there and um but most of them are based on buying and selling stock they're not weekly trades and uh so if if I'm going to
+
+[44:45] enter a weekly trade I would like I would like to see a stock that's trending higher and it has momentum at on my side as well and that's why I selected these particular indicators to
+
+[44:57] trend to momentum and we we confirm it with volume. So look, to me, technical analysis is as much an art as it is a science. And you get a hundred people in the room, uh, chart technicians, are
+
+[45:11] they all going to agree on how to analyze a chart? No, they're not going to all agree. But you know based on the type of strategies that I'm using and also to be honest with you Richard the
+
+[45:22] success that I've had using them over the last three decades um I started with these parameters and I haven't changed them. I've changed other things like the MAR I showed you before I added the OBV
+
+[45:34] I added uh you know so certain things I have improved but these chart technical have worked so well for me for short-term option trading. Well, let's keep diving
+
+[45:44] in. And here's the details uh of the of the trade. So, walk us through it. So, yeah. So, April 20th of this year, Marvel was trading 14535. Now, I I'm going to use the in the money. Remember,
+
+[45:56] I'm going to agree to sell my shares at a lower price. 133 strike. It the expiration date 424, right? So, it's Monday to Friday. No weekend risk. And it's an in the money strike because
+
+[46:08] I'm agreeing to sell my shares at a lower price than current market value. The spreadsheet that I'm going to show you shortly uh will really I hope crystallize how you break down the
+
+[46:19] premium you get from an in the money strike. Uh and the bid price on that was $13.35. So option prices are quoted in a per share basis. What that means is for
+
+[46:30] every contract that we sell, we're going to generate $1,335. Now, is that profit? No way. Right? Because we bought the shares at 14535, but we're selling them at 133. What does
+
+[46:47] that mean? We're losing $12.35 on the sale of the stock. Well, that has to be deducted from the 1335 premium. That's $12.35 intrinsic value. That leaves $1 time
+
+[47:02] value or extrinsic value, right? So, uh the spreadsheet will will do all this. So, if if all those watching this video say, "Oh my god, I got to do the math." No, you don't have to do the math. I
+
+[47:15] have developed spreadsheets that will do all the math for you. Do not worry about a thing. All right. So the in the money strike is going to offer as you'll see significant initial returns time value
+
+[47:27] only with huge protection to the downside. You're going to see that now I also sold the contract of the 15750 strike which is out of the money higher than current market value of 14535.
+
+[47:42] Remember that's the strike that gives you two potential income streams. one from premium and the other from share appreciation and that one had a bid price of a $1.13. All right. So, uh the
+
+[47:57] out of the money strikes had the advantage of the two income streams and the in the money strike had the advantage of the protection to the downside. Now, if I may, Richard, in the
+
+[48:08] next slide, I want to show you members an overview of our trade management calculator or TMC. Now, this is a spreadsheet that I developed along with uh Barry Bergman, BCI managing director.
+
+[48:22] Barry is an Excel expert. I'm good on creating all the formulas and telling them where to put them. And um it took us a year and a half. Richard, there are 2400 formulas in this spreadsheet. And
+
+[48:33] there's nothing else like it anywhere. So, let me show you uh give you an overview and then I'm going to tell your viewers what they're actually going to see moving forward. because if I started
+
+[48:43] putting numbers into what they see now, they'll never read anything. All right, so uh you see the top part is covered calls, the bottom part is cash secured puts. So they're pretty much the same.
+
+[48:52] Let's look at the covered call part. In number one in the blue cells is where you enter your trade, which is what I just showed you on the last slide. You'll see that in the next slide.
+
+[49:02] Number two is your initial trade results in the white cells per trade and number three in the green cells below that number three is your initial calculations for your entire portfolio.
+
+[49:17] So if you entered let's say 50 trades that would give you your total returns how many contracts so on and so forth how much premium all that uh your entire portfolio. Now, the middle section four,
+
+[49:31] five, and six is what sets this aside from every other spreadsheet. Number four in those blue cells, there are over 20 different exit strategy opportunities. There's a drop down
+
+[49:43] there, and you just put in the exit strategy that you want to use. Now, you may not have to do anything. You may not have to touch that trade, but if you do, the spreadsheet gives you the
+
+[49:55] opportunity to make that adjustment. And then after you do that in the white cells, you will get your post adjusted returns per trade. And then in number six, your post adjusted returns for the
+
+[50:07] entire portfolio in those green cells below the number six. And section seven is a trade journal. Uh Richard, I'm sure you you would agree with me that making notations regarding these trades, you
+
+[50:21] know, oh this the price of the stock went down because the Fed made an announcement that disappointed and the whole market tank and then when you go back to kind of review your trades, it's
+
+[50:32] a very useful learning tool and that's why we added that journal on to the spreadsheet probably six months after it first came out. So, this actually we we made available to our members about
+
+[50:43] three and a half years ago. And I'll tell you, it's it's like getting an alarm system in your house. Once you have it, you can't be without it. I use it all the time for everything. So,
+
+[50:54] that's what you're going to now you're going to be seeing not the whole thing, of course, you're going to be seeing the trade entry number one piggybacked on top of the initial calculations number
+
+[51:03] two. So, let's go to the next slide and you could see exactly what I'm talking about. So uh the top part of the screenshot now you see that uh the price was 14535
+
+[51:14] and the two strike prices uh were 133 in the money and 15750 out of the money. You'll recall the premiums 1335 and $1.113. Now uh I did one contract of each. Now let's look at the bottom part
+
+[51:29] of the screenshot starting with the left in that red oval. It it calculates it's a fiveday trade. Okay, we already knew that. Monday to Friday. Now take a look at the top white row next to the top
+
+[51:40] five. It'll break down that 1335 premium into a dollar of time value and and 1235 of intrinsic value. That is not profit, but it does represent huge protection to the downside. So when the spreadsheet
+
+[51:55] calculates your initial profit, it's based on a dollar, not 1335. Now let's look in the yellow cell. You could see the break even price point is 132. from 14535. What that means is when
+
+[52:09] you sell the in the money strike that's price that stock can go from 14535 all the way down to 132 and you still haven't lost a penny. All right, so that shows the protection you have. Now the
+
+[52:23] brown cells on the top row and the brown brown cells, can we still generate a significant return based on $1? It's a a five-day return of 75% 54.89% annualized. You got to look at the
+
+[52:38] percents and the annualized returns. Now, if you look in the purple cell, it says 8.5% and that represents protection to break even. So, that's 8.5% from 14535 down to
+
+[52:52] 132. How much did we collect in premium? Time value premium 100 bucks. All right, let's look now at the 157 uh the bottom number five. That's alltime value. The only intrinsic value if it's an in the
+
+[53:07] money strike. This is an out of the money strike. It's alltime value. Uh but the price of the stock can go up another $12.15. Wow. So there's huge opportunity on the
+
+[53:18] upside. What's the break even? Well, out of the money is going to give you a much higher break even. It's 14422. That's why you're not getting as much protection. You're getting a little bit,
+
+[53:30] but you're not getting much protection when you sell that out of the money strike, but you are creating an opportunity for that second income stream. You'll notice, Richard, that the
+
+[53:38] returns are very, very similar 78 and 56% very, very similar to the endm. But instead of having downside protection of 850 in the purple cell, you have an opportunity of another additional in the
+
+[53:52] blue cell 8.36. So, if that happens, and uh spoiler alert, it did, you can actually have a return of over 9% for those five days. How much premium did we collect? $113.
+
+[54:07] All right. So, uh let's now move on to the next slide. And I'm going to actually show you a screenshot confirming the trade that I just told you about. Starting from the bottom, I
+
+[54:17] bought 200 shares at 14535. And you could see the the two option contracts in the money and out of the money that I sold. Now, uh let's go to the next slide and you could see the trade status. What
+
+[54:34] happened? Well, Marvel absolutely went not only did it go to the moon, Richard, it went to Mars. It went beyond it. It went up $18.96 uh from the trade inception of 14535.
+
+[54:47] So, both strikes expired in the money. That means the price of the stock was higher than both strikes. Now, I allowed exercise. When I say allowed, what that means is if I didn't want to sell my
+
+[54:59] shares, I could have bought back the options before 400 p.m. Eastern time on expiration Friday, but I felt like, you know what, I really made so much money on on these trades. Uh, I'm going to
+
+[55:11] just let it lie, put the money in the bank, and move on to something else. Maybe come back to Marvel another time. So, my max return for this particular trade on both contracts was in fact
+
+[55:21] realized and that gave me a 5.13% 5-day return and that annualizes out to 266% if I was just calculating 52 time frames, not counting weekends. I I went a little lower on that one. So, that's
+
+[55:37] um that was a uh combination of an aggressive and a defensive cover call trade. One in the money and one out of the money. If you want to see a graphic representation of the trade start to
+
+[55:49] finish, here you go. The trade entry on the left. And then, as I said, you're looking at Marvel now sitting on planet Mars at $164. And, uh, good money was made on that
+
+[56:01] particular trade. So, uh, ju you know, just to summarize in the next slide, I just want to highlight the fact that these trades could be structured traditionally or more aggressively. uh
+
+[56:14] just move to the next slide please Richard uh and uh that you remember it had a robust implied volatility of 60%. Uh those are the kind of stocks that you can structure so such that you can
+
+[56:28] actually get both huge protection to the downside and very very significant uh premium and share appreciation if it all works out. Sometimes it doesn't.
+
+[56:42] Most of the time if you do things right and you've mastered the three required skill sets, what underlying stocks am I going to use? What options am I going to use? And we talked earlier about trade
+
+[56:53] management. Once you've mastered those, most of your trades will turn out successfully, but not all of them. And the ones that are losers, you can mitigate using exit strategies.
+
+[57:04] All right, how about we do another one, Richard? Okay, this is a this is a three-week trade on Amphanol uh lister on the New York Stock
+
+[57:13] Exchange AP. Uh and it's I executed the trade on 629 and expiration was uh July 17th of this year. All right. So, uh once again, this is similar uh screenshot. Why did I
+
+[57:29] choose this stock? Well, once again, in the electronics industry, currently ranked A. It was ranked A last week as well. The mean analyst rating, the analysts love it, 1.57. Remember, it's
+
+[57:41] 1:5 one is the best onbalance volume. Uh OBV, that's a bullish signal there. And uh if you take a look in the earnings date, you notice how I highlight the earnings date in red there. Didn't
+
+[57:54] interfere. I'm very I can't stress enough how important it is to circumvent earnings dates. And maybe maybe in January we'll talk about X dividend dates also. Um but earnings dates it's
+
+[58:07] really important to avoid those and you're taking kind of the risk out of the trades. You could see the uh open interest uh there's a Y next to the red highlighted earnings date and uh it's
+
+[58:19] been on our list now for three weeks. Okay. So that's why I chose this stock. And in the next slide you can go back to that. You could see in the last month at the time I entered the trade that the
+
+[58:29] stock was up about 10% and the S&P the blue line at the bottom was down two and a half percent. So it was dramatically outperforming the market the S&P 500 over the past month. Now um let's go to
+
+[58:44] that detailed chart I showed you before and the four parameters. So the exponential moving average is on the top. All right. Can you tell if the blue line is higher than the red line? Could
+
+[58:55] you tell if the lines are ascending? Are the price bars at or above the 20-day EMA blue line? We have a bullish uh trend exponential moving average. Number two, the MAD histogram, remember that's
+
+[59:08] trended momentum is above the zero line. Uh and the stochastic oscillator number three, the black line was ascending and now it's consolidating still above the 80th percentile. So that I call bullish
+
+[59:22] as well. And you could see volume number four at the bottom is holding up. So again, the technical chart is also bullish. Now let's turn Richard to the option chain. Now an option chain is a
+
+[59:36] price list of the options associated with a particular security stock or ETF. Now, you could see here that with Amphenol trading at 16317, I was looking to go in the money like
+
+[59:51] I've been doing with most of my trades uh trading uh defensively. So, I'm looking at the 150 strike. Now, you can see the bid air spread is 1390 to660. So, let me take a second to explain that
+
+[60:05] to those of you viewers not familiar with bid air spreads. Um the bid is the price when we sell and if uh when we sell the option and if we were buying an option we'd buy it at the ask price and
+
+[60:16] the difference is called the spread and it's pocketed by the gazillionaire market makers but we we can actually negotiate a better price with the market makers.
+
+[60:26] Some brokerages will do this for you but I like to make sure I'm doing it my way. And so uh you could you could set a limit order in between and get a better price. In this case, as you'll see,
+
+[60:37] because I believe I have a broker screenshot of this, I was able to negotiate a price of$,560, not 13.90. But I did want to show you viewers what an option chain looks like. All right,
+
+[60:48] let's feed this into the uh trade management calculator. And 150 in the money strike. I have a note here that has a delta of 78%. Let me get into that after I go through the calculations,
+
+[61:00] Richard. Um so you see on the top 16317 150 in the money strike 1560 is that all profit? No. Why? Because 1317 is our loss on the stock side. We buy at 16317 sell at 150. I did two two uh contracts
+
+[61:19] 200 shares. Okay. On the bottom row now it's a 19-day trade and the the premium of 1560 is broken up into time value of 243. That's our actual profit and intrinsic value or protection to the
+
+[61:34] downside of 1317. What's our break even price point in the yellow cell? 14757 from 16317. So if it drops all the way down to 14757,
+
+[61:47] we haven't lost a penny. Now let's look in the brown cells, get into the meat and potatoes of how much money we made. Because after all, Richard, that's why we're doing these exercises here. We
+
+[61:57] want to make some money. So, uh, the return is, uh, on the time value component only, 1.62% and that annualizes out to 31%. So, that's how much money we're making.
+
+[62:09] Again, you must use percentiles, not dollar amounts, to get a complete understanding of what we're actually accomplishing here. Now, let me define for you downside protection. What that
+
+[62:20] means 8.07%. What that means is we are guaranteed a 1.62 62 19day TR trade result 31% annual wise as long as the stock does not drop by more than 8.07%.
+
+[62:36] That's what that means. How much cash did we take in in time value premium? $486 for the two contracts and that's based on the premium of $243 time value only.
+
+[62:48] All right. So you could see here once again we have great protection to the downside and we have very nice uh annualized returns as well. Let me show you the broker confirmation statement
+
+[62:59] here and you could see here that I bought 200 shares at 16317 and sold the two contracts at 1560. So what happened? Okay, well [clears throat] the the stock
+
+[63:14] didn't behave as well as Marvel did, but I could care less, right? What happened was the stock dropped uh to uh 15760 on expiration Friday. That, ladies and
+
+[63:28] gentlemen, was a loss of $557 per share. Uh but it was 760 above the call strike, which remember was 150. It was even better than that. It was 10:03 above the break even price. So, I didn't
+
+[63:46] really even break a sweat even though the stock price was declining over those 19 days. Now, my share loss, let's just calculate everything out here. My share loss was $13.17
+
+[63:59] a share. Most of that was expected in the intrinsic value component. My option credit, you recall, was $1,560. So, my net credit was what I started out with was $243.
+
+[64:12] The cost of the shares now I'm using a different basis is 16317. So what's my final return? 1.49% 28.6% annualized on a stock which are if I
+
+[64:26] bought 200 shares I would have lost $1,114. So, I think you could see with clarity for this particular trade that if you're concerned about the market or if it just
+
+[64:37] helps you sleep better at night, you know what the heck, go with an in the money covered call and still generate significant return and have all that insurance on your trade. And by the way,
+
+[64:48] if you think about it, Richard, we all have tons of insurance, right? You know, medical, car, homeowners, we what's the commonality? The commonality is we pay for those premiums. when
+
+[64:58] you're doing an in the money strike that insurance is paid for not by us but by the option buyer in the form of intrinsic value. So in any case a lot of people that do covered calls don't think
+
+[65:09] to use in the money strikes but I do and I hope uh many of your members if they end up using these strategies consider it certain market conditions. So to kind of summarize this particular trade and
+
+[65:21] uh kind of reiterate what we said already is that you can craft these trades traditionally with out of the money or defensively within the money and which way you should go. There's no
+
+[65:31] I can't tell you. It depends on your personal risk tolerance. What's your overall market assessment? I already told you I've been concerned for most of this year. uh but didn't stop me from
+
+[65:42] being fully invested in making very good money and beating the market uh significantly in so far in the year 2026. So um are we ready to go to push?
+
+[65:53] Richard, can I ask uh two questions before we go on, but I'd love to get that. Uh first, um what will lead you to be more inclined to do more aggressively
+
+[66:05] positioning? Is it your conviction in the stock? uh how strong the trend is. What will drive you to have uh more of an aggressive um trade versus more in the money if that makes sense?
+
+[66:16] Yes, it does. Um and and and it's really a question that's so important to option traders whether you're starting out or whether you're been doing it for a long long time. And I'll tell you the formula
+
+[66:28] that I use. The most important thing to me in dictating the percent I I don't do all aggressive or all defensive. I do a certain amount and I I let my members know each week, you know, the ratio that
+
+[66:41] I'm using. So, I've been doing like twothirds defensive for most of this year. But what dictates my decision is mainly the overall market because, as you know,
+
+[66:53] that is the main driving force behind most of the stocks. You know, they'll they'll go in the direction that the market goes. There'll always be exceptions. 2008, you know, it was
+
+[67:03] awful, but there were stocks that did well in 2008. Uh, so number one would be um the direction of the market uh and or your assessment of the market. But number two is we looked at technical
+
+[67:16] charts so far. Uh if that technical chart is all bullish, it's not mixed. I mean, if it's mostly uh bearish, I'm not going to use that stock. But if it's if it's all bullish, I'm more likely to
+
+[67:28] favor an out ofthe- money covered call than I am an in the money covered call. So here's what I would do. I would take a look at the overall market and say, "Okay, I'm leaning I'm leaning bearish
+
+[67:38] on the market or at least uncertain." All right, let me use that word. At least uncertain in the market. So I'm going to use I decide ahead of time, I told you 125, 150 contracts. I'm gonna
+
+[67:50] do twothirds of them defensive and I'm gonna do one-third of them aggressive. Which one-third are going to be aggressive? Those are the ones that have the elite technical charts. That's
+
+[67:59] that's how I do it. And so, um, it it's worked really really well for me over the years. And you know what? If I do an in the money call like with Marvel and it goes to the moon, I don't feel like,
+
+[68:12] you know what, if I did a different strategy, I could have made even more money. No, I structured it the way I was comfortable doing it based on factors that I feel were important and it was
+
+[68:21] the right trade to make for me at the time that I made it. So, I hope that answered your question. Overall, Mark, perfectly. And it's really cool how the principles you're using to dictate your
+
+[68:32] trades are like the exact same thing how we do it. It's just we're trading the stock and we trade it our way, but we're still looking at market environment. we're still focusing on the chips or or
+
+[68:42] whatever themes or groups are acting well that have strong charts. So it it's all about structuring the trade after we get those inputs which is cool. Um the second question I had and this might be
+
+[68:52] a larger discussion so feel free to give kind of overarching principles but um for when you're deciding your strike price what are kind of the key things that you're looking at uh for both an in
+
+[69:04] the in the money as well as out of the money um trade option trade. Okay. So you saw in the examples that I provided so far that for an in the money strike there was an intrinsic value and a time
+
+[69:17] value component. For an out of the money strike it's all time value. So what you have to do is before you enter a trade you have to pre-state what you're trying to accomplish. Right? If you don't know
+
+[69:29] how much money you're looking to make how the heck would you know what strike price to select? Right? So, um, for me, and I've archived this for decades on my website, my goal when I structure my
+
+[69:42] trades initially for stocks are 2 to 4% a month for my initial trade structuring. If I'm doing weeklies, it's a half a percent to 1% a week. That's how I structure my trades. Now, for
+
+[69:56] ETFs, which are less volatile because, you know, they're a basket of stocks. Some going up, some going down. So I'm going to make a general statement. There are exceptions to this. ETFs generally
+
+[70:08] will give you will have less implied volatility and lower premiums. So uh I'm going to look for 2 to 4. Let's just go regular 2 to 4% a month. And if I'm selling an out of the money strike, 2 to
+
+[70:21] 4% a month time value. In the money strike, 2 to 4% time value. Uh and and that's the strike that I go to. Now, if I'm very bullish on the market, I'm going out of the money, I'll go to the
+
+[70:32] 2% much higher strike and give that stock a chance to go up even higher. So, I could tweak even that. But my range, I pre-stated 2 to 4%. Now, let me just add one more thing. In my mother's
+
+[70:46] portfolio, I use 1 to 3% uh for covered calls because, you know, she she doesn't need that much money. if I could generate $400 to $800 a month in her account uh w
+
+[71:00] with being slightly more conservative. So it varies from person to person but I'm happy to share with you Richard the way I do it with my two to 4% half to one on week.
+
+[71:11] No that answered my question perfectly. All right let's keep going and let's talk about the cash secure puts with EQT. Okay, so just to refresh uh the audience, uh when you sell uh in the BCI
+
+[71:22] methodology, we only sell out of the money cash secured puts. So it's a little tricky for those new to options because out of the money for covered calls means higher than current market
+
+[71:31] value, but out of the money for cash secured puts means lower. So, um, when you sell an out- of-the- money cash secured put, which are really the only kind that I sell, um, 99% of the time
+
+[71:44] anyway, so we're agreeing to buy the shares at a lower price than it's currently trading for. So, let's say, uh, Trader Lion is trading at 48. I might sell the $40 out of the money put
+
+[71:57] for $2. So, uh, and I'm generating good premium. And if the shares are put to me, what's my break even? 40 minus 2, $38 a share. So, that kind of gives you a little bit of a a background as to how
+
+[72:11] selling cash secured puts work. And uh the first stock that I'm going to show you is EQT uh listed on the New York Stock Exchange. Evidently, I did a four contract defensive. When I do off uh
+
+[72:26] traditional for cashi puts versus defensive, that just means I went deeper out of the money lower than I normally would if I want to create more defense, as you'll see in a second. And this was
+
+[72:40] a five-day trade, Monday to Friday, 39 to 313. Okay, so we're going to start off the same way we did our others. You could see the screening process showed that it was in the uh energy sector uh
+
+[72:54] ranked A at the time that I executed the trade. Uh mean analyst rating of 1.69 very very good OB on balance volume uh bullish signal and uh you could see that the implied volatility is 38.7%.
+
+[73:11] Now the others that I showed you with the covered calls was higher. remember it was like 60. This one is 38.7. I would call that modest implied volatility. I mean it's
+
+[73:22] still like two and a half times the uh S&P but um it's modest. So what would we expect with an implied volatility of 38% probably a little lower premium right with a little less risk. All right you
+
+[73:37] could see that the um open interest is um there's adequate liquidity there. That's what that Y is next to the 38.7. Weeklys are available and that's what I used. And by the way, every stock has a
+
+[73:51] weekly the last week of a monthly contract. Some people say, "Well, that there's no weeklys with that stock." I say, "Oh, yes, there is. The last week of a
+
+[73:59] monthly, you show me a stock that doesn't have a weekly, the last week of a month." Anyway, uh and it just joined our our list. Uh this was the first week that it was on our list. And you could
+
+[74:09] see the earnings dates don't don't interfere or the X dividend date. So that's why this was one of the many stocks in my portfolio that particular week. This is a oneweek uh comparison
+
+[74:20] chart with the S&P and it looks like it was up 11%. The S&P was down almost 1% in that last month. So it was definitely outperforming the overall market. And if we could look at a technical
+
+[74:34] chart now, uh you could see that the um exponential moving average bullish. You could see the MACD histogram, the blue bars above zero and bullish. You could see the stochastic oscillator. I'm going
+
+[74:46] to call that bullish. Even though it's starting to trend down a bit, it's still above the 80th percentile, which is a key signal. So, if it drops below that, I would consider that a slight red flag.
+
+[74:57] And I might have considered this a mixed price chart, but at the time I still considered it a bullish chart. And you could see the volume number four is holding up quite well. Let's go to the
+
+[75:08] option chain now. Uh on 39, uh EQ was trading at 6244. Now remember, any put strike that I select is going to be lower because that means out of the money. And the uh 59
+
+[75:21] out of the money cash secured put had a bid price of 25 cents. Well, somebody might say, "Allan, you got to be kidding me. You're talking about a quarter, 25 cents. What are you nuts?" Well, again,
+
+[75:34] you got to look at percentiles and annualized returns. And remember, I do 125 to 150 contracts. These are only four of them. So, uh, you have to focus on percentages, which you will see in a
+
+[75:46] second. Now, again, I've been leaning defensive, as I've been telling you for the last hour or so, and this was certainly uh no exception. Let's feed this information
+
+[75:58] into the BCI trade management calculator. This would be on the lower half of that spreadsheet now. And you could see on the top, you know, EQT 6244 59 out of the money put strike 2500
+
+[76:11] contracts. Now in the bottom row, it's a fiveday trade Monday to Friday. No weekend risk. It's all time value $25 per contract. And uh the cash required to secure that
+
+[76:24] put I gave you the formula earlier. It's the put strike 59 minus the put premium 25. That is the amount of cash. You're not buying the stock when you sell a put. You are setting aside the cash in
+
+[76:37] your account in case the option buyer elects to exercise that option and sell their shares to us. That protects the broker. All right. Now, let's look in the brown cells and see what that $25 a
+
+[76:51] contract means. It means a43% return, 31% annualized. So, not so bad. I mean, we can get a CD for that. We'd all be pretty happy. Uh the the amount of cash we're generating into our
+
+[77:04] account, $100, 25, 400 shares. And if the price of the stock goes below 59 and we allow exercise, we will purchase EQT at a break even price point of 5875 in the yellow cell, which represents a
+
+[77:23] discount of 5.91%. I want to stop for a second here, Richard, and just let your members know the following. When you sell a cash secured put, there are only two outcomes. either you've generated
+
+[77:39] cash, in this case a 31% annualized return, or you've purchased the stock at a discount from when the trade was entered, in this case 5.91%. Now, that does not mean you're only
+
+[77:54] going to make a profit when you sell a cash secured put because if the price of the stock ends up below 5875, that's when you start losing money and that's where your position management
+
+[78:07] skill set must kick in. Okay, so um let me show you the broker statement now just to show you what it looks like. four contracts of the 59 put at 25 cents and then let me tell you about the trade
+
+[78:21] status at the end of the week Friday at 4 pm uh it closed at 6437 actually went up went up a buck 93 so that means that the put option which was out of the money to start with remained out of the
+
+[78:36] money and I realized that 31% annualized return the cash the $100 cash which was mine anyway no matter what happened was now also realized because there was no concern about the shares being put to me
+
+[78:50] at a lower price and the cash that I had set aside to secure that put was now freed up on Monday to then either secure another put or use it to buy a stock for a covered fall whatever I decided to do
+
+[79:03] it was money now freed up. So to summarize in the next slide for this particular trade, this was a defensive trade. Um [clears throat] now modest IV implied volatility securities can still
+
+[79:17] generate significant returns and give you protection to the downside. The higher implied volatility, you know, you can get more protection and maybe more premium, but uh you still can get
+
+[79:30] significant with a stock like this. I have no problem at all generating a 31% annualized return and realizing it. I have no problem at all. And once again, selling cash secured puts have only two
+
+[79:44] outcomes, but they can be losses if the stock drops below break even. On our last example, Richard, I have a uh longerdated cash secured put. Uh this one is a 26 day trade on Rambus RMBBS on
+
+[79:59] the NASDAQ and I entered this trade on 9:22 and expiration Friday was 1017. So if we can go to the uh screening now you could see that uh it was in the
+
+[80:14] chips industry and that was ranked A at the time A the previous week as well. The mean analyst rating 1.55 very good. Now notice the onbalance volume had a down arrow to it. Uh oh. That was um the
+
+[80:31] one blemish on this screen, but everything else was so amazing that I just had to include this in my portfolio. I wasn't going to let that one little thing keep me from getting
+
+[80:44] this stock. And if you notice also RMBBS is in bold and shop is in bold, but the other two aren't. The reason for that, what that tells us, you'll see it in a second, is that the four technical
+
+[80:56] parameters were all bullish when we did the technical analysis. All bullish. It was not a mixed chart. So for our members that want to focus in on the strongest technical charts, they could
+
+[81:07] just look at the bold stocks in our reports. All right. So, um, okay. So, now let's look at a three-month price chart with the S&P. And you could see that Rambus was up 70% over the last
+
+[81:20] three months and the S&P was up 10 and a half percent. So obviously outperforming. Once again, look at the whipsaws in Rambis. Uh the high implied volatility compared to the S&P 500. You
+
+[81:33] know, that's when one stock compared to 500 stocks. You know, you're going to get less implied volatility with uh some stocks going up and down. Same thing difference between uh individual stocks
+
+[81:45] and ETFs. Generally speaking, always exceptions. All right, looking at the technical chart now. Number one of the exponential moving averages. By now, you could see it's all bullish. You could
+
+[81:55] see the crossover in that black circle when the uh shorter term moved ahead on number one on the top where the shorter term moved above the longer term, the blue line uh on the top number one. Uh
+
+[82:07] and so uh that that crossover over there I circled in black right there. And then from there was off to the moon. Number two, the MACD histogram. The blue bar is very bullish. Number three, stochastic
+
+[82:19] oscillator. Hey, that's going up very nice and uh volume is holding up very well. So, I looked at this as a bullish chart and I wanted this stock in my portfolio.
+
+[82:30] Okay, so let's now go on to uh the next slide and look at the option chain. Remember, we're on puts. We're only selling out of the money puts lower than current market value. So, I went all the
+
+[82:42] way down with Rambus trading at 10490. I went all the way down to the 90 out of the money put a 26 day expiration 1017 and that showed a bid price of a $130 per share, $130 per contract.
+
+[82:58] And uh the amount of premium I collected, you'll see it in a second, $390. So, [clears throat] out of the money puts can offer substantial protection to
+
+[83:08] the downside. Don't mean to sound like a broken record, but this is all important stuff to those that want to set trades up for significant returns and still have a lot of production to the
+
+[83:18] downside. Richard, let's feed this into the spreadsheet. Now, you could see the entry on the top. On the bottom, the break even goes from 10490 all the way down to 8870. You can drop that amount
+
+[83:30] before you lose even a penny. So, for this 26-day trade in the brown cells, you could see the return was 1.47%. 47% 20.5% annualized return. How much protection? This one had a huge amount
+
+[83:45] of protection in the purple cell 15.44%. That means Rambus can drop by 15.5% in 26 days and we still haven't lost a penny. But yet, we've generated an annualized return of over 20%.
+
+[84:03] Let me show you the broker screenshot where I executed this trade. This is a broker confirmation and my 26 day uh return was realized. My 20 and a half% annualized return was realized and all
+
+[84:17] along I had that beautiful downside protection of 15%. I did not have to break a sweat with this trade. Let's see what happens now at expiration. Well, guess what folks? Rambus went down $864.
+
+[84:36] How badly was I hurt? Uh oh. I wasn't hurt at all. As a matter of fact, it ended up $6.26, still above that 90 put strike. That means the 90 strike expired out of the
+
+[84:49] money, which means worthless, which means we realized our max return. It also expired 756 above that break even price point. So I that $390 was in my cash account. It was in my bank. I could
+
+[85:05] have gone to the mall, but I probably left it in there. And I realized my 20.57% annualized return despite the fact that it dropped $864
+
+[85:18] during those 26 days. So, if we could kind of summarize that last trade, and I've been talking about this with all the trades, Richard, you can generate, and I want to impress this on all of
+
+[85:29] your members, you can structure your trades to generate extremely significant annualized returns and still have a lot of protection to the downside. Now, with covered calls,
+
+[85:42] uh, if we're in a normal, and I define normal is up 10 to 12% a year, to a bull market, even better than that, then I'm going to go out of the money most of the time and take advantage of share
+
+[85:53] appreciation. And even though those premium returns will still be impressive, you can get so much more from share price appreciation as well and set your strikes so much higher. So
+
+[86:04] trades could be structured depending on what's going on in the market, your personal risk tolerance, chart technicals, there's a lot of factors that play into it, but once you do your
+
+[86:13] first couple of dozen, even though this might seem intimidating initially, uh once you do your first couple of dozen, it becomes second nature. If I could just give you one analogy, Richard, that
+
+[86:25] I use in my seminars, you know, because it kind of reminded me of this. when I was uh turning 18, uh my father took me out to learn how to drive, right? So on Sunday mornings, which is the only day
+
+[86:38] he didn't work, he took me to a parking lot of a supermarket. There were no cars in there, right? And I'm driving around in the supermarket with no cars around. I'm feeling pretty good. I'm pretty cool
+
+[86:49] guy. I could drive around and I'm not worried about anything. And then one day he said to me, "Hey Allan, it's time to hit the highway." And I said, "65 miles an hour, the Taconic State Highway in
+
+[87:01] New York, the roads are winding. I got all these signs. It was so intimidating." But what happens? You start doing it. And then after a while, you kind of just get in your car and go.
+
+[87:11] And that's what's going to happen to your members that decide that these strategies are right for them, but it's not right for everybody. But if they decide to do it and then they master
+
+[87:20] these strategies, it will become second nature. I promise. Excellent. All right. So, we've got a few questions here. Ellen, first kind of looking at
+
+[87:30] overall portfolio construction. You presented two main strategies today. How do you decide, you know, how much of your portfolio to dedicate to one versus the other? Does the market environment
+
+[87:42] play a part? Does the opportunity set that's available when you go through your screening process play a part? How do you kind of make that overall decision? I prefer cover call writing uh
+
+[87:52] in normal to bull markets because you have the opportunity for the second income spree. So um my the the short answer is it's the overall market assessment that dictates
+
+[88:06] which strategy I prefer. I use both. I have multiple option portfolios. I do a lot of contracts uh every month and every week. So, uh, I'm always going to have puts in there, but lately I've been
+
+[88:17] favoring puts because I consider that more of a defensive approach to selling options. But over the 30 years, uh, I would say probably threearters have been covered calls where I can take advantage
+
+[88:30] of that second income stream. Excellent. And then, um, diving a little bit more into the screening process, you you showed, you know, the results of your screens and and how you selected
+
+[88:39] ones. um how much h what differentiates uh opportunity more? Is it the results in that screen or is it looking at the chart itself and looking at price price volume action or is it a little bit of
+
+[88:54] both? Because you've of course got the the fundamental aspect also in the screen results that of course you're also considering. So what differentiates I guess uh a chart from another and an
+
+[89:04] opportunity from another to make you focus on it? the the way I felt comfortable uh approaching the screening process and this has gone all the way back into the 90s.
+
+[89:14] I always felt that fundamental analysis was my primary stop for starting the screening process and the reason for that is is that the institutional investors just love securities that have
+
+[89:27] strong fundamentals. Just look at how they react to earnings reports, right? So I always felt like if the uh institutional guys love a stock because it's strong fundamentally then I like
+
+[89:40] that stock too. And so that's my starting point. Then I move on to the technical screens. You know back in the you you probably don't remember this. You may not have even been born but u in
+
+[89:52] the mid 90s um there were two sets of thinking when it went to buying stocks. You had the fundamentalists that everything was about market fundamentals. PE ratio was everything. I
+
+[90:07] mean uh so uh you couldn't buy a stock without having a low PE ratio. But uh and then there was a whole sect of people that says forget fundamentals just look at the charts. The charts tell
+
+[90:18] you everything you need to know. And I remember thinking back then what the heck is wrong with doing both? Why not screen for fundamentals? take the elite performing fundamental stocks and then
+
+[90:31] technically an analyze them you know using whatever indicators a lot of indicators using the ones that you feel are appropriate for the particular strategy you're using and then throw in
+
+[90:42] some common sense parameters that may not fit either category like avoiding earnings reports we talked about uh diversification cash allocation things of that nature and then you have really
+
+[90:54] everything you need to know so when you have a watch list at that point in time. You have left no bases unturned. You have done everything you can to find to find elite underlying securities for
+
+[91:07] these strategies. So there is no one particular uh prong, you know, the three prongs uh fundamental, technical, common sense, they're all important as far as I'm
+
+[91:18] concerned, but I definitely start with fundamental. I move on to technical and then we add in those common sense. Everything on my list, I have confidence in everything. And then I just take a
+
+[91:28] look and I see, well, wait a minute now. I have already have five computer hardware stocks in my portfolio. I'm not going to add another one. You know, that goes to the diversification. Uh, how
+
+[91:39] much cash do I have available? I'm still invested so much. How much do I have available? And how do I want to divide that up? I have spreadsheets for everything. We have diversification cash
+
+[91:48] allocation spreadsheets in addition to the TMC that I've been showing you in today's presentation. So I I know I might have gone off a little and I think uh from from our side uh you know a lot
+
+[92:00] of our our viewers we're techno fundamentalists. We're Nicholas Darvis O'Neal we're we're fundamentals plus technicals best of both worlds. So we're on this we're on the same page uh in
+
+[92:08] that that regard. Perfect. Um Allan, I want to ask you, you know, this this presentation could have been, you know, the the first time some viewers have been exposed to options. Um what would
+
+[92:20] be your recommended resources for folks who want to learn more? They got a taste today and want to educate themselves and and continue to improve and explore more.
+
+[92:29] Well, I'm kind of biased towards my website. Um, we have on our website, you could see the, uh, link at the bottom of this screenshot here. We have, uh, free options training.
+
+[92:41] So, um, what I would suggest is go to the website and then on the top, uh, click on the link that says free training and I would start with covered call writing. We have an eight-part
+
+[92:52] video tutorial. Uh, they're about 10 to 12 minutes each. Uh, if I can give an analogy, Richard, um, those cliff notes we used to use in school, uh, if you didn't want to read a book, you'd
+
+[93:05] read the cliff notes, uh, monarch notes, whatever they call them. It's like an overview of the strategy. So, uh, I would take that course and if you like what you see, then uh, there's many
+
+[93:17] other resources um, on the website. Uh, you can contact me, Allan at the bluecollar investor, al- antheblueinvestor.com. I answer all my emails. Uh, another
+
+[93:28] reliable website for options is the Options Industry Council, uh, OIC.com. They have a lot of free training there also. I've done a lot of work for them. I've written articles for them. Uh, so,
+
+[93:41] uh, they're they're a reliable site, too. But my specialty is they do all different option strategies. I do the two that, uh, we talked about today. So I start with the free training and see
+
+[93:53] if it's something that aligns with your uh trading style and your trading goals and if so then we can bring it up to higher levels. And also in the workshop in in January can you give a kind of
+
+[94:04] brief breakdown of what you'll be covering um and you know why why people should be interested? Well, uh, my two presentations are going to include, uh, portfolio overwriting, which I briefly
+
+[94:15] alluded to earlier in this podcast, and that's for folks that have existing, uh, portfolios of stocks and ETFs uh, in taxable accounts. And, uh, you want to generate a third
+
+[94:30] income stream. There's a specific way of doing that. There are metrics we have that will determine the risk of exercise. And so uh if you're looking for a way to generate an additional 4 to
+
+[94:43] 15% annually on those portfolios, that is going to be one of my presentations. The second presentation I'm doing is some people refer to it as the wheel strategy. Uh I call it the put call put
+
+[94:57] or PCP strategy. Um I I feel it's more descriptive than the wheel strategy. But basically what that is, it's integrating both covered call writing and selling cash secured puts into one multi-tiered
+
+[95:12] option selling strategy. So when one is exercised, you can then move that either cash or stock into the other. And every single week or month, either you're generating cash flow or you're buying a
+
+[95:24] stock at a discount. So I'm going to actually show how it's done, give you the metrics on how to determine how to set up your trades. We'll talk about trade management
+
+[95:35] and I'll also uh give you spreadsheets to determine how to archive your trades. Excellent. Yeah, looking forward to it. Um Allan, this is this has been really great. Like I said, you know, on on this
+
+[95:46] podcast, we try to introduce people to all different types of styles. There's so many different ways to trade and uh I think you know, you've shared some really valuable stuff uh with uh with us
+
+[95:55] today and and hopefully people continue to learn more uh about options. Um, if you had to leave everybody with one message today, uh, one overarching concept that you want to make sure
+
+[96:05] people remember, what would be the key thing that they should walk away with today? I would say this. Uh I if you are considering this strategy and if my
+
+[96:16] presentation kind of sparked an interest in maybe doing this, I would say take your time, invest 3 to four months to learn the nuances, the three essential skill sets, stock selection, option
+
+[96:32] selection, position management. Give yourself a few months to not only learn and educate, but also paper trade and practice these strategies. Make sure that it aligns with your trading style
+
+[96:45] and your personal risk tolerance. Now, if you do that and you give you the three to four months invested will be well worth your time because now you'll be in a position to beat the market on a
+
+[96:58] consistent basis and many years substantially, which is what I've been doing now for 30 years. So, it may or may not be right for you and your family. It certainly was for me. But
+
+[97:09] give yourself a few months to make that decision. And from there, I think you'll find that it was well worth the time and effort and due diligence you put into the uh pre-investing time.
+
+[97:22] Great. Well, Alan, thank you so much again for putting this excellent presentation together and walking us through it. Uh we really appreciate it. To everybody watching, I hope you guys
+
+[97:30] enjoyed. Uh leave a like down below if you did. Subscribe if you're new to the channel and we'll see you guys in the next one. Cheers. [music]
+
+[97:42] [music]

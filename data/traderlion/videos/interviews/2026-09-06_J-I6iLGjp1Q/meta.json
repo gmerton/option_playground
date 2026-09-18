@@ -1,0 +1,19 @@
+{
+  "video_id": "J-I6iLGjp1Q",
+  "url": "https://www.youtube.com/watch?v=J-I6iLGjp1Q",
+  "title": "Dr. Ellman Has Traded Options for 30 Years, Here\u2019s What Actually Works",
+  "channel": "TraderLion",
+  "channel_id": "UCMgOSW62URSxzPCcNXyohLw",
+  "stream_date": "2026-09-06",
+  "duration": "1:37:45",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

@@ -1,3 +1,12 @@
+> **⚠ ERRATUM 2026-09-16 (same day): the +6.92% headline is overstated.** The condor study
+> (`etf_condor_call_side_2026-09-16.md` §0) found that 2.4% of credit-spread wings carry returns
+> above the theoretical ceiling `credit/margin` — i.e. a negative exit value, which is a crossed or
+> stale mark, not a trade. The `credit/width ≤ 0.50` and `margin ≥ 0.10` filters used here do NOT
+> catch them. Re-scored with the ceiling filter the put spread is **+5.70%/trade, weekly t 4.87,
+> monthly t 3.13**. It survives, smaller. That study also shows the edge is substantially long-beta:
+> the mirror-image bear call spread earns −2.66%, and the direction-neutral condor earns +0.36%
+> at monthly t 0.60.
+
 # ETF bull put spreads: the exit rule is the edge (2026-09-16)
 
 Follow-up to `etf_put_spread_study.md` (10 Sept), which concluded there is **no unconditional edge after costs**

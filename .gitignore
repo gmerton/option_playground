@@ -51,3 +51,6 @@ data/cache/calendar_path_long/
 data/cache/vrp_panel/
 data/cache/skew_vertical/
 data/cache/shortdte_names/
+data/cache/call_grid/
+data/cache/intraday_hist/
+data/studies/pullback_entry_events.csv
