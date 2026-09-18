@@ -1,5 +1,5 @@
 """
-IBKR data source for the long-straddle screen: FVR and ~10-DTE straddle quotes without Tradier.
+IBKR data source for the long-straddle screen: FVR and ~7-DTE straddle quotes without Tradier.
 
 Returns the same shapes as run_straddle_fvr_scan.scan_one / quote_straddle so
 run_straddle_screen.py can switch sources with `--data-source ibkr`:
@@ -163,8 +163,10 @@ def scan_and_quote(ib, tickers: list[str], quote_min_fvr: float = 1.0, log=print
         p30 = [mk(e30, k, "P") for k in ks]
         p90 = [mk(e90, k, "P") for k in ks]
         wk = [x for x in dted if 6 <= x[1] <= 17]
+        # Friday expiries only when listed (Mon/Wed weeklies are untested tenors); target 7 DTE
+        wk = [x for x in wk if datetime.strptime(x[0], "%Y%m%d").weekday() == 4] or wk
         plan[t] = dict(e30=e30, t30=t30, e90=e90, t90=t90, p30=p30, p90=p90, ch=ch, ks=ks,
-                       wk=min(wk, key=lambda x: abs(x[1] - 10)) if wk else None)
+                       wk=min(wk, key=lambda x: abs(x[1] - 7)) if wk else None)
         legs += p30 + p90
 
     log(f"  IBKR: ATM put IVs, {len(legs)} contracts")
@@ -192,7 +194,7 @@ def scan_and_quote(ib, tickers: list[str], quote_min_fvr: float = 1.0, log=print
         res[t] = {"tkr": t, "spot": spot[t], "iv30": iv30, "iv90": iv90,
                   "t30": p["t30"], "t90": p["t90"], "fvr": math.sqrt(var_fwd) / iv30}
 
-    # ---- ~10 DTE straddle quotes for the plausible names
+    # ---- ~7 DTE straddle quotes for the plausible names
     want = [t for t, r in res.items() if not r.get("err") and r["fvr"] >= quote_min_fvr]
     quotes, sq = {}, {}
     for t in want:

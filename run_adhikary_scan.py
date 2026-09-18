@@ -34,6 +34,7 @@ from lib.tradier.tradier_client_wrapper import TradierClient
 
 warnings.filterwarnings("ignore"); pd.set_option("display.width", 250); pd.set_option("display.max_rows", 200)
 REPO = Path(__file__).resolve().parent
+from lib.commons.ma_stack import stack_run
 PANEL = REPO / "data" / "cache" / "liquid_panel_2019.parquet"
 INDMAP = REPO / "data" / "ticker_industry_map.csv"
 OUT = REPO / "data" / "watchlist"
@@ -78,7 +79,7 @@ def main():
     range52 = (hi52 - lo52) / C * 100
     pivot = H.shift(1).rolling(PIVOT_N).max()
     avgv = V.shift(1).rolling(50).mean(); rvol = V / (avgv * elapsed)
-    stacked = (s10 > s20) & (s20 > s50); stack_days_last = stacked.iloc[::-1].cumprod().sum()  # trailing run length, last row only
+    stack_days = stack_run(C, adr=adr); stacked = stack_days > 0; stack_days_last = stack_days.iloc[-1]   # 10>20>50, with the house slack (0.25 ADR, lib.commons.ma_stack)
     rng = (H - L); pos = (C - L) / rng.replace(0, np.nan)
     gap = O / C.shift(1) - 1; chg = C / C.shift(1) - 1
     r10 = (H.rolling(10).max() - L.rolling(10).min()); r20p = (H.shift(10).rolling(20).max() - L.shift(10).rolling(20).min())

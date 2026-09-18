@@ -9,6 +9,10 @@ echo "== 1/6 regime read (descriptive; see run_regime_validation.py for why it i
 $PY run_trailing_retro.py --window 21 2>/dev/null | sed -n 1,25p | tee "$OUT/regime_$D.txt"
 echo; echo "== 2/6 Adhikary scan (precision=YES + SETUP pivots are the actionable rows)"
 $PY run_adhikary_scan.py 2>/dev/null | tee "$OUT/adhikary_$D.txt" | sed -n 1,60p
+echo; echo "== 2c industry clusters of the scan's qualifiers (watchlist pointer, NOT a signal: group strength has no edge, see group_move_study_2026-09-17.md)"
+# Reads the liquid panel; refresh it first (~75s) so the leader counts and their 5/10/21-session trend are current.
+$PY run_build_liquid_panel.py >/dev/null 2>&1 || echo "  (panel refresh failed; clusters use the cached panel)"
+PYTHONPATH=src:. $PY run_scan_clusters.py 2>/dev/null | tee "$OUT/clusters_$D.txt" | cut -c1-220
 echo; echo "== 3/6 breakout scan on the preferred list (house Luk/Qullamaggie EOD screen)"
 $PY run_preferred_breakouts.py 2>/dev/null | tail -25
 if [ "$(date +%u)" = 5 ] || [ "${STRADDLE:-0}" = 1 ]; then

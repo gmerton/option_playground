@@ -1,0 +1,61 @@
+screening 331 names — gates: FVR>=1.2, IVpct<=30, BA<=25%, RSI14<70
+today: Thursday 2026-09-17
+
+data source: tradier
+  IBKR IV percentile for 42 FVR+liquidity survivors: BROS GAP TTWO DBX FDX BKNG CSCO TPR MSFT M ROST RCAT SYM MRK FTNT OKTA AVGO PLTR UNP XLK TXN CELH NFLX RDDT WMT IBM TQQQ MDB NVDA NVDL XHB BURL ASTS TJX LVS V BSX GILD IOT GOOG LUNR MAR
+  IBKR returned 42 of 42 (as of 2026-09-17)
+scanned 322 ok, 9 errors
+  errors: no near expiry 4, no ATM IV 2, TypeError 2, negative fwd var 1
+  FVR>=1.2: 74   liquidity: 185   both: 42   +IVpct<=30: 29   +RSI14<70: 29
+  IV source: ib for 42 name(s), athena for 227   |ib-athena| median 15pp, max 52pp, verdict differs on 14/41
+
+====================================================================================
+  QUALIFIERS (29)
+====================================================================================
+  tkr         spot     FVR  IV%ib  IV%ath    src  RSI  DTE   strad$    BA%     OI   size   earnings
+  BROS       41.22   1.503    20%     40%     ib   26    8     2.18   16.7      2   FULL   T+49.0
+  GAP        20.76   1.451     6%     18%     ib   48    8     0.93   19.7    229   FULL   T+64.0
+  TTWO      208.92   1.425    28%     80%     ib   35    8     9.45   15.7    196   FULL   T+50.0
+  FDX       305.96   1.346    20%     28%     ib   40    8    10.43   13.6     11   half   T+41.0
+  TPR       119.20   1.315    10%     25%     ib   38    8     4.90   13.0      3   half   T+50.0
+  MSFT      495.92   1.282    24%     62%     ib   55   11    15.55    9.0      6   half   T+42.0
+  M          21.79   1.276     8%     22%     ib   45    8     1.04   24.0    115   half   T+77.0
+  RCAT        7.25   1.274     2%      3%     ib   36    8     0.77   17.5    413   half   T+57.0
+  SYM        44.59   1.263    10%      4%     ib   59    8     2.98   19.6     13   half   T+68.0
+  MRK       146.98   1.258    24%     36%     ib   57    8     4.75   14.7     23   half   T+42.0
+  AVGO      348.12   1.240     2%      7%     ib   39   11    15.20    6.8     80   half   T+85.0
+  PLTR      176.88   1.240    20%     21%     ib   56    8     9.90    3.2    394   half   T+47.0
+  UNP       280.87   1.240    17%     39%     ib   33    8     7.85   20.9      2   half   T+36.0
+  XLK       188.18   1.234    19%     43%     ib   56    8     4.89   18.9     10   half   T+nan
+  CELH       28.41   1.231    14%     37%     ib   44    8     1.79   18.2    109   half   T+50.0
+  RDDT      152.07   1.226     2%      2%     ib   46    8     9.93    9.7     11   half   T+43.0
+  TQQQ       71.32   1.222     7%     34%     ib   51   11     4.39   23.7     12   half   T+nan
+  MDB       398.89   1.221    30%     61%     ib   53    8    26.25   23.4      1   half   T+75.0
+  NVDA      218.76   1.221     0%     11%     ib   51   11     8.50    2.7    278   half   T+63.0
+  NVDL       33.86   1.221     3%     12%     ib   50    8     2.37   10.3    554   half   T+nan
+  XHB        97.64   1.220    24%     21%     ib   36    8     3.42   17.9     20   half   T+nan
+  ASTS       63.05   1.211     0%      2%     ib   50    8     5.16    5.9    133   half   T+54.0
+  LVS        41.41   1.211    19%     26%     ib   31    8     1.55   16.0      9   half   T+35.0
+  V         370.92   1.211    16%     37%     ib   50    8     9.03   11.6     32   half   T+41.0
+  GILD      149.70   1.208    25%     33%     ib   63    8     4.62   10.5      1   half   T+43.0
+  IOT        40.16   1.208    27%     61%     ib   52    8     2.70   16.7      8   half   T+78.0
+  GOOG      341.89   1.206    22%     37%     ib   51    8    11.80    4.4    138   half   T+42.0
+  LUNR       14.93   1.204     0%     19%     ib   47    8     1.46   11.3    156   half   T+48.0
+  MAR       334.95   1.202    22%     44%     ib   40    8    10.95   25.0     24   half   T+48.0
+
+  --- near misses (FVR >= 1.1) ---
+  tkr         FVR   IVpct    src    BA%   RSI   blocked by
+  ASPI      8.781      0% athena  100.0    38   liquidity
+  VOD       5.561     20% athena    n/a    69   liquidity
+  EWU       4.234     n/a   none    n/a    48   IVpct, liquidity
+  AMLP      3.742     n/a   none    n/a    49   IVpct, liquidity
+  ACHR      2.733      3% athena   37.5    44   liquidity
+  AVXL      2.624     n/a   none    n/a    34   IVpct, liquidity
+  UUP       1.901     n/a   none    n/a    63   IVpct, liquidity
+  AMRN      1.772     n/a   none    n/a    46   IVpct, liquidity
+  MSTY      1.475     40% athena    n/a    54   IVpct, liquidity
+  SMMT      1.471     29% athena   40.0    64   liquidity
+  STEM      1.400     n/a   none    n/a    36   IVpct, liquidity
+  NKTR      1.390     n/a   none    n/a    42   IVpct, liquidity
+
+  full results -> straddle_screen_latest.csv  (archived -> data/watchlist/straddle_screen/straddle_screen_2026-09-17.csv)

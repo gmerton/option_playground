@@ -95,14 +95,17 @@ async def scan_one(client, tkr, sem):
 
 
 async def quote_straddle(client, tkr, spot):
-    """~10 DTE ATM straddle quote for a qualifier: (dte, cost, worst BA%, min OI)."""
+    """~7 DTE ATM straddle quote for a qualifier: (dte, cost, worst BA%, min OI). Target 7 = next Friday from a Friday entry (playbook relabel 2026-08-08); Friday expiries preferred."""
     try:
         exps = await list_expirations(tkr, client=client)
         today = date.today()
         cands = [(e, (date.fromisoformat(e) - today).days) for e in exps if 6 <= (date.fromisoformat(e) - today).days <= 17]
         if not cands:
             return None
-        exp, dte = min(cands, key=lambda x: abs(x[1] - 10))
+        # Friday expiries only when listed: names with Mon/Wed weeklies otherwise win on distance
+        # (11-DTE Monday, 6-DTE Wednesday) and those tenors are untested.
+        cands = [x for x in cands if date.fromisoformat(x[0]).weekday() == 4] or cands
+        exp, dte = min(cands, key=lambda x: abs(x[1] - 7))
         chain = await list_contracts_for_expiry(tkr, exp, client=client,
                                                 min_strike=spot * 0.9, max_strike=spot * 1.1)
         legs = {}

@@ -24,7 +24,9 @@ def tstat(x):
     x = pd.Series(x).dropna(); return x.mean() / (x.std(ddof=1) / np.sqrt(len(x))) if len(x) > 2 else np.nan
 
 def main():
-    ap = argparse.ArgumentParser(); ap.add_argument("--panel", default="data/cache/liquid_panel_2019.parquet"); a = ap.parse_args()
+    ap = argparse.ArgumentParser(); ap.add_argument("--panel", default="data/cache/liquid_panel_2019.parquet")
+    ap.add_argument("--stack-fuzz", type=int, default=None, help="tolerate MA-stack violations of <= N sessions (lib.commons.ma_stack); default = the house STACK_FUZZ")
+    ap.add_argument("--stack-tol", type=float, default=None, help="magnitude slack, fraction: 0.01 -> 10d > 0.99 x 20d"); ap.add_argument("--stack-tol-adr", type=float, default=None, help="magnitude slack in ADR units"); a = ap.parse_args()
     raw = pd.read_parquet(a.panel); raw = raw[~raw.ticker.isin(["SPY", "QQQ", "IWM", "RSP"])]
     p = Panel.from_long(raw); O = raw.pivot(index="date", columns="ticker", values="open").sort_index()
     C, H, L, V = p.close, p.high, p.low, p.dolvol / p.close
@@ -34,10 +36,9 @@ def main():
     hi52, lo52 = H.shift(1).rolling(252, min_periods=120).max(), L.shift(1).rolling(252, min_periods=120).min(); range52 = (hi52 - lo52) / C * 100
     piv15, piv50 = H.shift(1).rolling(15).max(), H.shift(1).rolling(50).max()
     avgv = V.shift(1).rolling(50).mean(); rvol = V / avgv
-    stacked = (s10 > s20) & (s20 > s50)
-    stack_days = stacked.astype(int).copy(); arr = stack_days.values
-    for i in range(1, len(arr)): arr[i] = np.where(arr[i] > 0, arr[i - 1] + 1, 0)
-    stack_days = pd.DataFrame(arr, index=C.index, columns=C.columns)
+    from lib.commons.ma_stack import stack_run, STACK_FUZZ
+    stack_days = stack_run(C, a.stack_fuzz, a.stack_tol, a.stack_tol_adr, adr=adr); stacked = stack_days > 0
+    print(f"MA stack: fuzz days {a.stack_fuzz}, tol pct {a.stack_tol}, tol ADR {a.stack_tol_adr} (None = house default); stacked share of all ticker-days {100*stacked.values.mean():.1f}%")
     pos = (C - L) / (H - L).replace(0, np.nan); gap = O / C.shift(1) - 1; chg = C.pct_change(fill_method=None)
     r10 = H.rolling(10).max() - L.rolling(10).min(); r20p = H.shift(10).rolling(20).max() - L.shift(10).rolling(20).min(); contr = r10 / r20p
     dry = V.shift(1).rolling(5).mean() / avgv; ext20 = (C / s20 - 1) * 100 / adr
