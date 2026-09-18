@@ -32,6 +32,28 @@ EXIT = {"INVALIDATION": ("good", "same-day exit at the trade's worst price after
         "UNKNOWN": ("gray_area", "same-day exit; 1-min bars unavailable to classify")}
 
 
+SPIKE_MULT, SPIKE_DAYS, STOP_LOSS = 1.0, 5, -0.50   # structure +100% within 5 sessions = a spike (>= ~3x on the winning leg); -50% = the playbook stop
+
+
+def straddle_exit_verdict(realized: float | None, debit: float | None, entry, exit_, expiry) -> tuple[str, str, str]:
+    """Playbook exit rules for a long straddle (long_straddle_playbook.md): hold to expiry; sell a SPIKE into strength;
+    exit at the -50% stop. Returns (exit_verdict, exit_reason, tag). Live check 2026-09-18: in the Aug-Sep book the
+    spike exits were worth ~+$4.4k vs holding (RDDT +$1,622 realized vs -$983 held), so a spike sale is graded good."""
+    if realized is None or not debit or debit <= 0:
+        return "gray_area", "structure closed; opening cost unavailable", "exit_unclassified"
+    ret = realized / debit; days = (pd.Timestamp(exit_) - pd.Timestamp(entry)).days
+    at_expiry = expiry is not None and pd.Timestamp(exit_).date() >= pd.Timestamp(expiry).date() - pd.Timedelta(days=1)
+    if at_expiry:
+        return "good", f"held to expiry ({ret*100:+.0f}% on premium) -- the playbook exit", "exit_hold_to_expiry"
+    if ret >= SPIKE_MULT and days <= SPIKE_DAYS:
+        return "good", f"spike sold into strength: {ret*100:+.0f}% on premium in {days} days (rule: sell a spike, do not wait for expiry)", "exit_spike"
+    if ret <= STOP_LOSS:
+        return "good", f"-50% stop: {ret*100:+.0f}% on premium after {days} days -- the playbook stop", "exit_stop_50"
+    if ret > 0:
+        return "too_soon", f"early profit take: {ret*100:+.0f}% on premium after {days} days, before expiry and short of a spike (rule: hold to expiry)", "exit_early_profit"
+    return "too_soon", f"early loss exit: {ret*100:+.0f}% on premium after {days} days, above the -50% stop (rule: hold to expiry)", "exit_early_loss"
+
+
 def straddle_tags(cp, d0, screen_dir: Path) -> list[str]:
     """A campaign is a LONG STRADDLE when its legs are one call + one put, same strike and expiry, both opened long
     (net_qty > 0, or 0 once closed with both legs having been bought). The summary page's straddle card keys on the
@@ -128,12 +150,18 @@ def main() -> int:
         tags += straddle_tags(cp, d0, screen_dir)
         still_open = str(cp.status).lower() != "closed"
         if still_open: tags.append("open_position")
+        xv, xr = ("n_a", None) if still_open else ("gray_area", "structure closed; exit not yet reviewed against its playbook")
+        if not still_open and "long_straddle" in tags:
+            op = opening.copy(); op["signed"] = op["quantity"].abs() * op["buy_sell"].map({"BUY": 1, "SELL": -1})
+            px = pd.read_sql(f"SELECT trade_id, trade_price FROM journal_trades WHERE trade_id IN ({','.join(['%s']*len(op))})", _get_conn(), params=[int(x) for x in op.trade_id]).set_index("trade_id")["trade_price"]
+            debit = float((op.set_index("trade_id")["signed"] * px).sum() * 100)
+            xv, xr, xt = straddle_exit_verdict(float(cp.realized_pnl) if pd.notna(cp.realized_pnl) else None, debit, d0, cp.last_date, op["expiry"].iloc[0] if len(op) else None)
+            tags.append(xt)
         er = f"Option structure: {cp.label}; {int(cp.n_fills)} fills, {int(cp.n_rolls)} roll(s), net premium {cp.net_premium:+.2f}. " + \
              ("Legs filled on one timestamp -- systematic signature." if systematic else "Legs filled at different times.")
         if not a.dry_run:
             add_trade_review(cp.underlying, label, d0, None if still_open else pd.to_datetime(cp.last_date).date(), asset_category="OPT", conid=first_conid,
-                             entry_verdict="gray_area", entry_reason=er, exit_verdict="n_a" if still_open else "gray_area",
-                             exit_reason=None if still_open else "structure closed; exit not yet reviewed against its playbook", tags=",".join(tags),
+                             entry_verdict="gray_area", entry_reason=er, exit_verdict=xv, exit_reason=xr, tags=",".join(tags),
                              realized_pnl=None if still_open else cp.realized_pnl)
         n_new += 1
     print(f"reviews written: {n_new}  ({'dry run' if a.dry_run else 'persisted'})")
