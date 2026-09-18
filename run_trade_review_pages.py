@@ -1085,6 +1085,7 @@ def _refine_spread_vehicles(rows: list[dict]) -> None:
     if not targets:
         return
     pairs = sorted({(r["underlying"], r["entryDate"]) for r in targets})
+    camp_ids = sorted({r["campaignId"] for r in targets if r.get("campaignId") is not None})
     conn = _get_conn()
     try:
         legs_by_pair: dict[tuple, list[dict]] = {}
@@ -1096,11 +1097,28 @@ def _refine_spread_vehicles(rows: list[dict]) -> None:
                 conn, params=[underlying, entry_date],
             )
             legs_by_pair[(underlying, entry_date)] = df.to_dict("records")
+        # Preferred source: the campaign's OWN opening legs. A day with several structures on one underlying
+        # (2026-09-17 MSTR: a 110/120 put spread plus two long calls) is not a "clean 2-leg vertical" at the
+        # underlying level, which left the spread labelled generically and off the Put Spreads card.
+        legs_by_camp: dict[int, list[dict]] = {}
+        if camp_ids:
+            ph = ",".join(["%s"] * len(camp_ids))
+            cdf = pd.read_sql(
+                f"""SELECT ct.campaign_id, t.conid, t.put_call, t.buy_sell, t.strike, t.trade_date
+                    FROM journal_campaign_trades ct JOIN journal_trades t ON t.trade_id = ct.trade_id
+                    WHERE ct.campaign_id IN ({ph}) AND t.open_close IN ('O','C;O')""",
+                conn, params=camp_ids,
+            )
+            for cid, g in cdf.groupby("campaign_id"):
+                first = g["trade_date"].min()
+                legs_by_camp[int(cid)] = g[g["trade_date"] == first].to_dict("records")
     finally:
         conn.close()
 
     for r in targets:
-        legs = legs_by_pair.get((r["underlying"], r["entryDate"])) or []
+        legs = legs_by_camp.get(r["campaignId"]) if r.get("campaignId") is not None else None
+        if not legs:
+            legs = legs_by_pair.get((r["underlying"], r["entryDate"])) or []
         legs = list({leg["conid"]: leg for leg in legs}.values())  # dedupe repeat fills
         if len(legs) != 2 or legs[0]["put_call"] != legs[1]["put_call"]:
             continue  # not a clean 2-leg vertical -- leave the generic label

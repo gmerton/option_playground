@@ -95,7 +95,10 @@ def main() -> int:
         label = f"{cp.underlying} ({cp.label})"[:48]
         if (cp.underlying, d0, label) in have: continue
         opening = legs[pd.to_datetime(legs.trade_datetime).dt.date == d0]
-        systematic = opening["trade_datetime"].nunique() < opening["symbol"].nunique()      # 2+ legs on one timestamp
+        systematic = bool(len(opening)) and opening.groupby("trade_datetime")["symbol"].nunique().max() >= 2   # 2+ legs on one timestamp
+        first_conid = None
+        if len(opening):
+            first_conid = int(pd.read_sql("SELECT conid FROM journal_trades WHERE trade_id=%s", _get_conn(), params=[int(opening.iloc[0].trade_id)]).iloc[0, 0])
         tags = [batch, "option_structure", "systematic_spread_likely" if systematic else "single_leg_or_legged_in"]
         if "straddle" in str(cp.label).lower():
             f = screen_dir / f"straddle_screen_{d0.isoformat()}.csv"
@@ -107,7 +110,7 @@ def main() -> int:
         er = f"Option structure: {cp.label}; {int(cp.n_fills)} fills, {int(cp.n_rolls)} roll(s), net premium {cp.net_premium:+.2f}. " + \
              ("Legs filled on one timestamp -- systematic signature." if systematic else "Legs filled at different times.")
         if not a.dry_run:
-            add_trade_review(cp.underlying, label, d0, None if still_open else pd.to_datetime(cp.last_date).date(), asset_category="OPT",
+            add_trade_review(cp.underlying, label, d0, None if still_open else pd.to_datetime(cp.last_date).date(), asset_category="OPT", conid=first_conid,
                              entry_verdict="gray_area", entry_reason=er, exit_verdict="n_a" if still_open else "gray_area",
                              exit_reason=None if still_open else "structure closed; exit not yet reviewed against its playbook", tags=",".join(tags),
                              realized_pnl=None if still_open else cp.realized_pnl)

@@ -1105,9 +1105,9 @@ def sync_review_campaigns() -> dict:
     add_review_campaign_columns()
     conn = _get_conn()
     try:
-        rv = pd.read_sql("""SELECT id, underlying_symbol, asset_category, conid, entry_date, exit_date
+        rv = pd.read_sql("""SELECT id, underlying_symbol, asset_category, conid, entry_date, exit_date, symbol
                             FROM journal_trade_reviews""", conn)
-        camps = pd.read_sql("""SELECT campaign_id, underlying, first_date, last_date, status, realized_pnl
+        camps = pd.read_sql("""SELECT campaign_id, underlying, first_date, last_date, status, realized_pnl, label
                                FROM journal_campaigns""", conn)
         links = pd.read_sql("""SELECT c.campaign_id, t.conid
                                FROM journal_campaign_trades c
@@ -1148,9 +1148,13 @@ def sync_review_campaigns() -> dict:
             if not cands:
                 unmatched += 1
                 continue
-            # prefer the campaign that opens on the entry date, then the one
-            # whose close is nearest the review's exit
-            cands.sort(key=lambda c: (c.first_date != entry,
+            # prefer the campaign whose label appears in the review's symbol (several structures
+            # can open on one underlying the same day -- 2026-09-17 MSTR had a put spread and two
+            # long calls, and all three reviews were keyed to the first campaign), then the one
+            # that opens on the entry date, then the one whose close is nearest the review's exit
+            sym = str(r.symbol or "")
+            cands.sort(key=lambda c: (not (str(c.label or "") and str(c.label) in sym),
+                                      c.first_date != entry,
                                       abs((c.last_date - (exit_ or c.last_date)).days)))
             best = cands[0]
             updates.append((int(best.campaign_id), float(best.realized_pnl), int(r.id)))
