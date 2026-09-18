@@ -664,6 +664,56 @@ def compute_vrp(
     return (iv30 - rv20) * 100   # percentage points
 
 
+# Empirical breach odds for a short put strike placed N ADR below spot, leaders 2019-2026, 19-session hold
+# (strike-placement backtest 2026-09-18; identical across extension buckets -- only the cushion matters).
+_BREACH_TABLE = [(1.0, 33.0), (1.5, 27.0), (1.75, 24.0), (2.0, 21.0), (2.5, 17.0), (3.0, 13.0)]
+
+
+def _breach_odds(cushion_adr: float) -> float:
+    xs = [c for c, _ in _BREACH_TABLE]; ys = [p for _, p in _BREACH_TABLE]
+    if cushion_adr <= xs[0]:
+        return min(50.0, ys[0] + (xs[0] - cushion_adr) * 18)          # ~42% at 0.5 ADR
+    if cushion_adr >= xs[-1]:
+        return max(5.0, ys[-1] - (cushion_adr - xs[-1]) * 6)
+    for (x0, y0), (x1, y1) in zip(_BREACH_TABLE, _BREACH_TABLE[1:]):
+        if x0 <= cushion_adr <= x1:
+            return y0 + (y1 - y0) * (cushion_adr - x0) / (x1 - x0)
+    return ys[-1]
+
+
+def price_the_odds(ticker: str, spot: float, short_strike: float, credit: float, width: float, chain: list[dict], expiry: Optional[str], today: date) -> str:
+    """One line per credit spread: cushion in ADR -> empirical breach odds -> break-even credit vs the quoted credit,
+    plus ATM IV vs RV20. This is the comparison that separated MPC (IV/RV 1.4, 26% of width, ~24% odds) from
+    PANW/CRWD (IV/RV 0.78, 26-30%, ~30% odds) on 2026-09-18. Table is from single names; read ETF rows loosely."""
+    path = Path("data") / "cache" / f"{ticker}_stock.parquet"
+    try:
+        df = pd.read_parquet(path).sort_values("trade_date")
+        if {"high", "low"} <= set(df.columns) and len(df) >= 21:
+            adr = float(((df["high"] / df["low"] - 1) * 100).tail(20).mean())
+        else:
+            adr = float(pd.Series(df["close"].values).pct_change().abs().tail(20).mean() * 100 * 1.6)   # crude fallback
+    except Exception:
+        return "  Odds check:  n/a (no stock cache)"
+    if not adr or spot <= 0 or width <= 0:
+        return "  Odds check:  n/a"
+    cushion = (spot / short_strike - 1) * 100 / adr if short_strike < spot else -(short_strike / spot - 1) * 100 / adr
+    odds = _breach_odds(max(cushion, 0.01)); be = odds / (100 - odds) * 100
+    quoted = credit / width * 100
+    tag = "RICH" if quoted >= be * 1.15 else ("THIN" if quoted < be * 0.85 else "FAIR")
+    vrp = compute_vrp(ticker, chain, expiry, today)
+    ivrv = ""
+    if vrp is not None:
+        try:
+            closes = pd.read_parquet(path).sort_values("trade_date")["close"].tail(21).tolist()
+            lr = [math.log(closes[i + 1] / closes[i]) for i in range(20)]; mu = sum(lr) / 20
+            rv20 = math.sqrt(sum((r - mu) ** 2 for r in lr) / 19) * math.sqrt(252) * 100
+            iv30 = rv20 + vrp; ivrv = f"  |  ATM IV {iv30:.0f}% vs RV20 {rv20:.0f}% (ratio {iv30 / rv20:.2f}{'; implied BELOW realized' if iv30 < rv20 else ''})"
+        except Exception:
+            ivrv = f"  |  IV - RV {vrp:+.1f} pp"
+    return (f"  Odds check:  short strike {cushion:.1f} ADR below spot -> ~{odds:.0f}% breach by expiry (leaders 2019-26) -> break-even credit "
+            f"~{be:.0f}% of width; quoted {quoted:.0f}% = {tag}{ivrv}")
+
+
 # ── Regime-switching screener ─────────────────────────────────────────────────
 
 def screen_regime_spread(
@@ -771,6 +821,8 @@ def screen_regime_spread(
         lines.append(f"  Net credit:  ${credit:.3f}/shr  (${credit * 100:.2f}/contract)")
         lines.append(f"  Spread:      ${s_strike:.2f}/${l_strike:.2f}  width ${width:.2f}  credit/width {credit_pct:.1f}%")
         lines.append(f"  Max loss:    ${max_loss:.3f}/shr  (${max_loss * 100:.2f}/contract)")
+        if cp == "put":
+            lines.append(price_the_odds(strat["ticker"], spot, s_strike, credit, width, chain, expiry, today))
         stop_mult = rs.get("stop_multiple", 2.0)
         lines.append("  Management: HOLD to expiry -- no profit take, no stop (etf_put_spread_study 2026-09-10: 50%-take / 2x-stop = -4.3%/trade, t -5.4; paid_to_wait: closing on the break -8.3% net); size to the max loss")
         if stop_mult is None:
@@ -1099,6 +1151,13 @@ def screen_spread(
         lines.append(f"  Net credit:  ${credit:.3f}/shr  (${credit * 100:.2f}/contract)")
         lines.append(f"  Spread:      ${s_strike:.2f}/${l_strike:.2f}  width ${width:.2f}  credit/width {credit_pct:.1f}%")
         lines.append(f"  Max loss:    ${max_loss:.3f}/shr  (${max_loss * 100:.2f}/contract)")
+        if cp == "put":
+            spot_est = next((float(c.get("underlying_price") or 0) for c in chain if c.get("underlying_price")), None)
+            if not spot_est:   # estimate spot from the chain: the put closest to 0.50 delta
+                atm = min((c for c in chain if (c.get("greeks") or {}).get("delta") is not None), key=lambda c: abs(abs(float(c["greeks"]["delta"])) - 0.5), default=None)
+                spot_est = float(atm["strike"]) if atm else None
+            if spot_est:
+                lines.append(price_the_odds(strat["ticker"], spot_est, s_strike, credit, width, chain, expiry, today))
         lines.append(
             "  Management: HOLD to expiry -- no profit take, no stop (etf_put_spread_study 2026-09-10; size to the max loss)"
         )
