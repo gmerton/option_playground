@@ -135,6 +135,10 @@ async def _one(sym: str, session: date, client: TradierClient, sem: asyncio.Sema
     if "date" not in d.columns:            # helper returns the date as the index
         d = d.reset_index().rename(columns={"index": "date"})
     d["date"] = pd.to_datetime(d["date"]).dt.date
+    for c in ("open", "high", "low", "close", "volume"):   # Tradier can return "NA" strings on a broken day (hit 2026-09-18)
+        if c in d.columns:
+            d[c] = pd.to_numeric(d[c], errors="coerce")
+    d = d.dropna(subset=["close"])
     hist = d[d["date"] < session]          # strip the in-progress session bar
     if len(hist) < 25:
         return None

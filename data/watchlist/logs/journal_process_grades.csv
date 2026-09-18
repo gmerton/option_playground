@@ -1,2 +1,4 @@
 date,fills,symbols,stock_round_trips,rt_invalidation,rt_noise_stop,rt_discretionary,doubled,disc_entries,disc_good,disc_bad,too_soon,pct_good,entry_src,entries_ABCF,exec_ok_of_alert,s_entry,score,grade,nav_pnl
-2026-09-14,73,24,10,4,3,3,0,0,0,0,0,,rubric,0/2/5/4,7/8,10,63,C,-658.0
+2026-09-15,50,19,8,0,6,2,1,0,0,0,0,,rubric,0/2/0/8,0/0,10,53,D,-55.0
+2026-09-16,69,22,9,3,6,0,1,0,0,0,0,,rubric,0/5/4/2,5/5,10,56,C,-1550.0
+2026-09-17,98,31,13,3,10,1,6,0,0,0,0,,rubric,0/7/2/9,2/4,5,20,D,378.0
