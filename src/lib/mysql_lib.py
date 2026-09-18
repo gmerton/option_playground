@@ -988,19 +988,43 @@ def reconstruct_trade_cycles() -> pd.DataFrame:
         conn.close()
 
     df["trade_date"] = pd.to_datetime(df["trade_date"])
+    # Seed each conid with the position held at the FIRST open-positions snapshot, so a position that predates
+    # the trade history (the Flex window opens 2026-08-03) does not shift every later cycle off zero. Without it
+    # CRWD's 9/17 75-share round trip was invisible: 30 shares sold on 8/5 had been bought before the window,
+    # so the running quantity sat at -30 and never crossed zero (caught 2026-09-18).
+    seed = {}
+    try:
+        conn = _get_conn()
+        first = pd.read_sql("SELECT MIN(report_date) d FROM journal_open_positions", conn)["d"][0]
+        if first is not None:
+            snap = pd.read_sql("SELECT conid, position FROM journal_open_positions WHERE report_date=%s", conn, params=[first])
+            seed = dict(zip(snap["conid"].astype(int), snap["position"].astype(float)))
+            df = df[df["trade_date"] > pd.Timestamp(first)]          # fills on/before the snapshot are inside it
+    except Exception:
+        seed = {}
+    finally:
+        try: conn.close()
+        except Exception: pass
     cycles = []
     for conid, g in df.groupby("conid"):
         g = g.reset_index(drop=True)
-        running = 0.0
+        running = float(seed.get(int(conid), 0.0))
         rows_in_cycle = []
+        if abs(running) > 1e-6:                     # an inherited position: the open cycle it belongs to is unobservable
+            open_seed = True
+        else:
+            open_seed = False
         for _, r in g.iterrows():
             rows_in_cycle.append(r)
             running += r["quantity"]
             if abs(running) < 1e-6:
                 cyc = pd.DataFrame(rows_in_cycle)
-                cycles.append(_cycle_row(g, cyc, still_open=False))
+                if open_seed:                      # fills that closed the inherited position: not a cycle we can grade
+                    open_seed = False
+                else:
+                    cycles.append(_cycle_row(g, cyc, still_open=False))
                 rows_in_cycle = []
-        if rows_in_cycle:
+        if rows_in_cycle and not open_seed:
             cyc = pd.DataFrame(rows_in_cycle)
             cycles.append(_cycle_row(g, cyc, still_open=True))
 
