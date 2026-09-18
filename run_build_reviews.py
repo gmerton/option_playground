@@ -32,6 +32,31 @@ EXIT = {"INVALIDATION": ("good", "same-day exit at the trade's worst price after
         "UNKNOWN": ("gray_area", "same-day exit; 1-min bars unavailable to classify")}
 
 
+def straddle_tags(cp, d0, screen_dir: Path) -> list[str]:
+    """A campaign is a LONG STRADDLE when its legs are one call + one put, same strike and expiry, both opened long
+    (net_qty > 0, or 0 once closed with both legs having been bought). The summary page's straddle card keys on the
+    tag `straddle_screener`; straddles that were not that day's screen picks get `discretionary` instead so the
+    card stays "systematic" (the earlier hand-written reviews used the same two tags)."""
+    import json
+    try: legs = json.loads(cp.legs) if isinstance(cp.legs, str) else list(cp.legs)
+    except Exception: return []
+    if len(legs) != 2 or {l["pc"] for l in legs} != {"C", "P"}: return []
+    if legs[0]["strike"] != legs[1]["strike"] or legs[0]["expiry"] != legs[1]["expiry"]: return []
+    if any(float(l.get("net_qty", 0)) < 0 for l in legs): return []
+    tags = ["long_straddle"]
+    f = screen_dir / f"straddle_screen_{d0.isoformat()}.csv"
+    if f.exists():
+        sc = pd.read_csv(f); hit = sc[sc.tkr == cp.underlying]
+        on_screen = bool(len(hit)) and bool(hit.iloc[0].get("pass_all", False))
+        tags.append("straddle_screener" if on_screen else "discretionary")
+        tags.append("screen_pick" if on_screen else "not_on_screen")
+    else:
+        pool = Path("data/watchlist/straddle_pool_323.txt")
+        in_pool = pool.exists() and cp.underlying in {x.strip() for x in pool.read_text().split()}
+        tags.append("straddle_screener" if in_pool else "discretionary"); tags.append("screen_unverified")
+    return tags
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(); ap.add_argument("--since", required=True); ap.add_argument("--until", default=None); ap.add_argument("--dry-run", action="store_true")
     a = ap.parse_args(); since = pd.Timestamp(a.since).date(); until = pd.Timestamp(a.until).date() if a.until else date.today()
@@ -100,11 +125,7 @@ def main() -> int:
         if len(opening):
             first_conid = int(pd.read_sql("SELECT conid FROM journal_trades WHERE trade_id=%s", _get_conn(), params=[int(opening.iloc[0].trade_id)]).iloc[0, 0])
         tags = [batch, "option_structure", "systematic_spread_likely" if systematic else "single_leg_or_legged_in"]
-        if "straddle" in str(cp.label).lower():
-            f = screen_dir / f"straddle_screen_{d0.isoformat()}.csv"
-            if f.exists():
-                sc = pd.read_csv(f); hit = sc[(sc.tkr == cp.underlying)]
-                tags.append("screen_pick" if len(hit) and bool(hit.iloc[0].get("pass_all", False)) else "not_on_screen")
+        tags += straddle_tags(cp, d0, screen_dir)
         still_open = str(cp.status).lower() != "closed"
         if still_open: tags.append("open_position")
         er = f"Option structure: {cp.label}; {int(cp.n_fills)} fills, {int(cp.n_rolls)} roll(s), net premium {cp.net_premium:+.2f}. " + \
