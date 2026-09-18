@@ -1,0 +1,20 @@
+{
+  "video_id": "xEHjb08ib2c",
+  "url": "https://www.youtube.com/watch?v=xEHjb08ib2c",
+  "title": "9/18/2026 Watchlist video",
+  "channel": "Ariel Hernandez",
+  "stream_date": "2026-09-17",
+  "for_session": "2026-09-18",
+  "duration": "12:18",
+  "members_only": true,
+  "summary": "Nightly watchlist for 9/18. Optimistic but not forcing it ('earn the right to size up'; paper cuts, not sized up). Owns AMD (trimmed, stop = rising 10 SMA), GOOGL (small add today over yesterday's high, stop = 200 SMA), OKTA (bought Monday). Levels: GOOGL 349.50, NOW 140.55, PLTR 178, INTC neckline 106.70 (broke today, wants a 2-day pullback), MU 1040, SNDK 1800, SPCX 155 (failed today; wants a wash to 150 + VWAP reclaim, 152 entry / 150 stop). MAGS = textbook VCP (14.5 -> 9 -> 4 -> 3%), FNGU as the vehicle. Cyber/software (NET, CRWD, OKTA, RBRK, PANW, CIBR) 'incredibly strong' -- gap-downs bought.",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions_via_chrome_interceptor",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "Chrome fetch/XHR interceptor on the player (yt-dlp cannot fetch members-only)",
+    "quality_note": "Auto-generated captions, 314 events. 'GCT' at 02:02 unresolved (level 537.0 / 524.0 'high-volume close from the earnings gap'; no panel name matches at 537 or 53.7). 'Palunteer' = PLTR, 'Octa' = OKTA, 'Rubric' = RBRK, 'Mags' = MAGS, 'NIM at 72' unresolved (breadth oscillator?), 'CAT data' unresolved."
+  },
+  "supplemental_notes_file": "notes.md"
+}
