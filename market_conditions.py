@@ -45,6 +45,10 @@ SECTOR_MAP: Dict[str, str] = {
     "DOCN": "IGV", "PLTR": "IGV", "CRWD": "CIBR", "PANW": "CIBR", "ZS": "CIBR",
     "NET": "IGV", "SNOW": "IGV", "DDOG": "IGV", "MDB": "IGV", "NOW": "IGV",
     "APH": "XLK", "APP": "IGV",
+    # crypto (coin ETF as the group; the equities are 2-3x leveraged versions of it)
+    "MSTR": "IBIT", "COIN": "IBIT", "BLSH": "IBIT", "CRCL": "IBIT", "GLXY": "IBIT", "MARA": "IBIT", "RIOT": "IBIT",
+    "CLSK": "IBIT", "HUT": "IBIT", "CIFR": "IBIT", "IREN": "IBIT", "WULF": "IBIT", "BTDR": "IBIT", "CORZ": "IBIT",
+    "SBET": "ETHA", "BMNR": "ETHA",
     # industrials / power / aero
     "CMI": "XLI", "GEV": "XLI", "ETN": "XLI", "PWR": "XLI", "VRT": "XLI",
     "FTAI": "JETS", "GE": "XAR", "RTX": "XAR", "LMT": "XAR", "HWM": "XAR",
@@ -108,6 +112,8 @@ INDUSTRIES = [
     ("URA", "Uranium"),
     ("KWEB", "China Internet"),
     ("ARKK", "Hi-growth/Innovation"),
+    ("IBIT", "Crypto (Bitcoin)"),
+    ("ETHA", "Crypto (Ether)"),
 ]
 
 # ---- metrics --------------------------------------------------------------

@@ -244,10 +244,10 @@ BLDR,Industrials,Building Products & Equipment,"Builders FirstSource, Inc."
 BLFS,Healthcare,Medical Instruments & Supplies,"BioLife Solutions, Inc."
 BLK,Financial Services,Asset Management,"BlackRock, Inc."
 BLLN,Healthcare,Diagnostics & Research,"BillionToOne, Inc."
-BLSH,Technology,Software - Infrastructure,Bullish
+BLSH,Technology,Crypto,Bullish
 BLZE,Technology,Software - Infrastructure,"Backblaze, Inc."
 BMI,Technology,Scientific & Technical Instruments,"Badger Meter, Inc."
-BMNR,Financial Services,Capital Markets,"BitMine Immersion Technologies,"
+BMNR,Financial Services,Crypto,"BitMine Immersion Technologies,"
 BMO,Financial Services,Banks - Diversified,Bank Of Montreal
 BMRN,Healthcare,Biotechnology,BioMarin Pharmaceutical Inc.
 BMY,Healthcare,Drug Manufacturers - General,Bristol-Myers Squibb Company
@@ -272,7 +272,7 @@ BRX,Real Estate,REIT - Retail,Brixmor Property Group Inc.
 BRZE,Technology,Software - Application,"Braze, Inc."
 BSX,Healthcare,Medical Devices,Boston Scientific Corporation
 BSY,Technology,Software - Application,"Bentley Systems, Incorporated"
-BTDR,Technology,Software - Application,Bitdeer Technologies Group
+BTDR,Technology,Crypto,Bitdeer Technologies Group
 BTSG,Healthcare,Health Information Services,"BrightSpring Health Services, I"
 BTU,Energy,Thermal Coal,Peabody Energy Corporation
 BULL,Technology,Software - Application,Webull Corporation
@@ -352,7 +352,7 @@ CHWY,Consumer Cyclical,Internet Retail,"Chewy, Inc."
 CHYM,Technology,Software - Application,"Chime Financial, Inc."
 CI,Healthcare,Healthcare Plans,The Cigna Group
 CIEN,Technology,Communication Equipment,Ciena Corporation
-CIFR,Technology,Information Technology Services,Cipher Digital Inc.
+CIFR,Technology,Crypto,Cipher Digital Inc.
 CINF,Financial Services,Insurance - Property & Casualty,Cincinnati Financial Corporatio
 CL,Consumer Defensive,Household & Personal Products,Colgate-Palmolive Company
 CLBK,Financial Services,Banks - Regional,"Columbia Financial, Inc."
@@ -361,7 +361,7 @@ CLF,Basic Materials,Steel,Cleveland-Cliffs Inc.
 CLH,Industrials,Waste Management,"Clean Harbors, Inc."
 CLMT,Basic Materials,Specialty Chemicals,"Calumet, Inc"
 CLS,Technology,Electronic Components,"Celestica, Inc."
-CLSK,Financial Services,Capital Markets,"CleanSpark, Inc."
+CLSK,Financial Services,Crypto,"CleanSpark, Inc."
 CLX,Consumer Defensive,Household & Personal Products,Clorox Company (The)
 CM,Financial Services,Banks - Diversified,Canadian Imperial Bank of Comme
 CMC,Industrials,Metal Fabrication,Commercial Metals Company
@@ -386,7 +386,7 @@ COF,Financial Services,Credit Services,Capital One Financial Corporati
 COGT,Healthcare,Biotechnology,"Cogent Biosciences, Inc."
 COHR,Technology,Scientific & Technical Instruments,Coherent Corp.
 COHU,Technology,Semiconductor Equipment & Materials,"Cohu, Inc."
-COIN,Financial Services,Financial Data & Stock Exchanges,"Coinbase Global, Inc."
+COIN,Financial Services,Crypto,"Coinbase Global, Inc."
 COKE,Consumer Defensive,Beverages - Non-Alcoholic,"Coca-Cola Consolidated, Inc."
 COLB,Financial Services,Banks - Regional,"Columbia Banking System, Inc."
 COLD,Real Estate,REIT - Industrial,"Americold Realty Trust, Inc."
@@ -396,7 +396,7 @@ COO,Healthcare,Medical Instruments & Supplies,"The Cooper Companies, Inc."
 COP,Energy,Oil & Gas E&P,ConocoPhillips
 COR,Healthcare,Medical Distribution,"Cencora, Inc."
 CORT,Healthcare,Biotechnology,Corcept Therapeutics Incorporat
-CORZ,Technology,Software - Infrastructure,"Core Scientific, Inc."
+CORZ,Technology,Crypto,"Core Scientific, Inc."
 COST,Consumer Defensive,Discount Stores,Costco Wholesale Corporation
 COUR,Consumer Defensive,Education & Training Services,"Coursera, Inc."
 CP,Industrials,Railroads,Canadian Pacific Kansas City Li
@@ -410,7 +410,7 @@ CPT,Real Estate,REIT - Residential,Camden Property Trust
 CR,Industrials,Specialty Industrial Machinery,Crane Company
 CRBG,Financial Services,Asset Management,Corebridge Financial Inc.
 CRC,Energy,Oil & Gas E&P,California Resources Corporatio
-CRCL,Financial Services,Capital Markets,"Circle Internet Group, Inc."
+CRCL,Financial Services,Crypto,"Circle Internet Group, Inc."
 CRDO,Technology,Semiconductors,Credo Technology Group Holding 
 CRGY,Energy,Oil & Gas E&P,Crescent Energy Company
 CRH,Basic Materials,Building Materials,CRH PLC
@@ -706,7 +706,7 @@ GLNG,Energy,Oil & Gas Midstream,Golar LNG Limited
 GLOB,Technology,Information Technology Services,Globant S.A.
 GLPI,Real Estate,REIT - Specialty,"Gaming and Leisure Properties, "
 GLW,Technology,Electronic Components,Corning Incorporated
-GLXY,Financial Services,Capital Markets,Galaxy Digital Inc.
+GLXY,Financial Services,Crypto,Galaxy Digital Inc.
 GM,Consumer Cyclical,Auto Manufacturers,General Motors Company
 GME,Consumer Cyclical,Specialty Retail,GameStop Corporation
 GMED,Healthcare,Medical Devices,"Globus Medical, Inc."
@@ -784,7 +784,7 @@ HUBS,Technology,Software - Application,"HubSpot, Inc."
 HUM,Healthcare,Healthcare Plans,Humana Inc.
 HUN,Basic Materials,Chemicals,Huntsman Corporation
 HURN,Industrials,Consulting Services,Huron Consulting Group Inc.
-HUT,Financial Services,Capital Markets,Hut 8 Corp.
+HUT,Financial Services,Crypto,Hut 8 Corp.
 HWC,Financial Services,Banks - Regional,Hancock Whitney Corporation
 HWM,Industrials,Aerospace & Defense,Howmet Aerospace Inc.
 HXL,Industrials,Aerospace & Defense,Hexcel Corporation
@@ -836,7 +836,7 @@ IPGP,Technology,Semiconductor Equipment & Materials,IPG Photonics Corporation
 IQV,Healthcare,Diagnostics & Research,"IQVIA Holdings, Inc."
 IR,Industrials,Specialty Industrial Machinery,Ingersoll Rand Inc.
 IRDM,Communication Services,Telecom Services,Iridium Communications Inc
-IREN,Financial Services,Capital Markets,IREN LIMITED
+IREN,Financial Services,Crypto,IREN LIMITED
 IRM,Real Estate,REIT - Specialty,Iron Mountain Incorporated (Del
 IRON,Healthcare,Biotechnology,"Disc Medicine, Inc."
 IRT,Real Estate,REIT - Residential,"Independence Realty Trust, Inc."
@@ -981,7 +981,7 @@ MAN,Industrials,Staffing & Employment Services,ManpowerGroup
 MANE,Healthcare,Biotechnology,"Veradermics, Incorporated"
 MANH,Technology,Software - Application,"Manhattan Associates, Inc."
 MAR,Consumer Cyclical,Lodging,Marriott International
-MARA,Financial Services,Capital Markets,"MARA Holdings, Inc."
+MARA,Financial Services,Crypto,"MARA Holdings, Inc."
 MAS,Industrials,Building Products & Equipment,Masco Corporation
 MAT,Consumer Cyclical,Leisure,"Mattel, Inc."
 MATX,Industrials,Marine Shipping,"Matson, Inc."
@@ -1055,7 +1055,7 @@ MSGE,Communication Services,Entertainment,Madison Square Garden Entertain
 MSGS,Communication Services,Entertainment,Madison Square Garden Sports Co
 MSI,Technology,Communication Equipment,"Motorola Solutions, Inc."
 MSM,Industrials,Industrial Distribution,"MSC Industrial Direct Company, "
-MSTR,Technology,Software - Application,Strategy Inc
+MSTR,Technology,Crypto,Strategy Inc
 MT,Basic Materials,Steel,Arcelor Mittal NY Registry Shar
 MTB,Financial Services,Banks - Regional,M&T Bank Corporation
 MTCH,Communication Services,Internet Content & Information,"Match Group, Inc."
@@ -1360,7 +1360,7 @@ SANM,Technology,Electronic Components,Sanmina Corporation
 SARO,Industrials,Aerospace & Defense,"StandardAero, Inc."
 SBAC,Real Estate,REIT - Specialty,SBA Communications Corporation
 SBCF,Financial Services,Banks - Regional,Seacoast Banking Corporation of
-SBET,Financial Services,Capital Markets,"SharpLink, Inc."
+SBET,Financial Services,Crypto,"SharpLink, Inc."
 SBLK,Industrials,Marine Shipping,Star Bulk Carriers Corp.
 SBRA,Real Estate,REIT - Healthcare Facilities,"Sabra Health Care REIT, Inc."
 SBUX,Consumer Cyclical,Restaurants,Starbucks Corporation
@@ -1679,7 +1679,7 @@ WTS,Industrials,Specialty Industrial Machinery,"Watts Water Technologies, Inc."
 WTTR,Energy,Oil & Gas Equipment & Services,"Select Water Solutions, Inc."
 WTW,Financial Services,Insurance Brokers,Willis Towers Watson Public Lim
 WU,Financial Services,Credit Services,Western Union Company (The)
-WULF,Financial Services,Capital Markets,TeraWulf Inc.
+WULF,Financial Services,Crypto,TeraWulf Inc.
 WWD,Industrials,Aerospace & Defense,"Woodward, Inc."
 WY,Real Estate,REIT - Specialty,Weyerhaeuser Company
 WYFI,Technology,Information Technology Services,"WhiteFiber, Inc."
@@ -1711,3 +1711,4 @@ ZM,Technology,Software - Application,"Zoom Communications, Inc."
 ZS,Technology,Software - Infrastructure,"Zscaler, Inc."
 ZTS,Healthcare,Drug Manufacturers - Specialty & Generic,Zoetis Inc.
 ZWS,Industrials,Pollution & Treatment Controls,Zurn Elkay Water Solutions Corp
+RIOT,Financial Services,Crypto,"Riot Platforms, Inc."
