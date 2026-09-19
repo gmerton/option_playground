@@ -1,0 +1,28 @@
+signals: 1,430 on 175 names / 157 sessions (9.11 per session) | median leg 0.73 ADR, bounces 3 | control 4,290
+
+=== BOUNCY BALL (5-min structure, 1-min fills) — R per trade ===
+                     n  meanR   medR     win       t   ctrl   edge
+stop_close      1430.0 -0.573 -1.169  18.112 -11.622 -0.111 -0.462
+t1R             1430.0 -0.411 -1.116  37.762 -10.913 -0.245 -0.167
+t2R             1430.0 -0.408 -1.144  27.343  -9.867 -0.184 -0.224
+vwap_reclaim    1430.0 -0.562 -1.156  17.832 -11.709 -0.293 -0.269
+time30          1430.0 -0.464 -1.050  28.112 -12.965 -0.256 -0.208
+trail_5m_highs  1430.0 -0.481 -0.660  20.769 -14.910 -0.334 -0.147
+next_close      1430.0 -0.669 -1.192  13.427  -7.303 -0.313 -0.356
+
+=== by half ===
+                Feb-May   n1  Jun-Sep   n2
+stop_close       -0.572  653   -0.573  777
+t1R              -0.435  653   -0.391  777
+t2R              -0.399  653   -0.414  777
+vwap_reclaim     -0.575  653   -0.550  777
+time30           -0.474  653   -0.455  777
+trail_5m_highs   -0.429  653   -0.525  777
+next_close       -0.576  653   -0.746  777
+
+=== by depth of the down leg ===
+            stop_close    t1R    t2R  vwap_reclaim  time30  trail_5m_highs  next_close     n
+leg_adr                                                                                     
+(0.5, 1.0]      -0.555 -0.416 -0.419        -0.544  -0.484          -0.499      -0.715  1144
+(1.0, 2.0]      -0.643 -0.403 -0.374        -0.633  -0.386          -0.408      -0.520   278
+(2.0, 4.0]      -0.655 -0.054  0.034        -0.655  -0.204          -0.470       0.748     8

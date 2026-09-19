@@ -1,0 +1,16 @@
+{
+  "video_id": "wqs29JP9IkI",
+  "url": "https://www.youtube.com/watch?v=wqs29JP9IkI",
+  "title": "🚨The 5 Names I'm Buying On Pullbacks Today🚨(Live Q&A)",
+  "channel": "Swing Trading and Coffee",
+  "stream_date": "2026-09-18",
+  "duration": "38:47",
+  "view_count_at_capture": 251,
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "local_asr",
+    "tool": "faster-whisper small.en (int8, CPU), via .venv; audio from yt-dlp bestaudio",
+    "format": "timestamped_text_mm_ss",
+    "quality_note": "YouTube had generated NO captions for this stream when captured (~3h after it ended), so add_luk_video.py could not be used. ASR mis-hears tickers: 'Nebius'=NBIS, 'KALAC'=KLAC, 'Exxon'=XOM (he also says 'Axon' for the same position), 'Moderna'=MRNA, 'Nutanix'=NTNX, 'SLT'=SOL (Solana), 'Sandisk'=SNDK. Dollar figures for crypto are garbled ('82 bucks', '$7.57' = SPY 757)."
+  }
+}

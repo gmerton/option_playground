@@ -1,0 +1,51 @@
+  ! AEHR 2026-08-13: no 1-min bars (ClientResponseError); backfill with run_fetch_intraday_polygon.py
+  ! DELL 2026-08-13: no 1-min bars (ClientResponseError); backfill with run_fetch_intraday_polygon.py
+  ! DINO 2026-08-13: no 1-min bars (ClientResponseError); backfill with run_fetch_intraday_polygon.py
+  ! MU 2026-08-13: no 1-min bars (ClientResponseError); backfill with run_fetch_intraday_polygon.py
+  ! SPCX 2026-08-13: no 1-min bars (ClientResponseError); backfill with run_fetch_intraday_polygon.py
+  ! SPY 2026-08-13: no 1-min bars (ClientResponseError); backfill with run_fetch_intraday_polygon.py
+  ! SPY 2026-08-13: no 1-min bars (ClientResponseError); backfill with run_fetch_intraday_polygon.py
+  ! SPY 2026-08-13: no 1-min bars (ClientResponseError); backfill with run_fetch_intraday_polygon.py
+  ! SPY 2026-08-13: no 1-min bars (ClientResponseError); backfill with run_fetch_intraday_polygon.py
+  ! SPY 2026-08-13: no 1-min bars (ClientResponseError); backfill with run_fetch_intraday_polygon.py
+  ! SPY 2026-08-13: no 1-min bars (ClientResponseError); backfill with run_fetch_intraday_polygon.py
+  ! AEHR 2026-08-14: no 1-min bars (ClientResponseError); backfill with run_fetch_intraday_polygon.py
+  ! CIEN 2026-08-14: no 1-min bars (ClientResponseError); backfill with run_fetch_intraday_polygon.py
+  ! CRDO 2026-08-14: no 1-min bars (ClientResponseError); backfill with run_fetch_intraday_polygon.py
+  ! FCEL 2026-08-14: no 1-min bars (ClientResponseError); backfill with run_fetch_intraday_polygon.py
+  ! SMCI 2026-08-14: no 1-min bars (ClientResponseError); backfill with run_fetch_intraday_polygon.py
+  ! KRE 2026-08-17: no 1-min bars (ClientResponseError); backfill with run_fetch_intraday_polygon.py
+  ! CRDO 2026-08-18: no 1-min bars (ClientResponseError); backfill with run_fetch_intraday_polygon.py
+  ! CRDO 2026-08-19: no 1-min bars (ClientResponseError); backfill with run_fetch_intraday_polygon.py
+  ! CRDO 2026-08-19: no 1-min bars (ClientResponseError); backfill with run_fetch_intraday_polygon.py
+  ! CRDO 2026-08-19: no 1-min bars (ClientResponseError); backfill with run_fetch_intraday_polygon.py
+closed stock cycles since 2026-08-13: 340 (2026-08-13 -> 2026-09-17), 278 same-day / 62 held overnight
+
+=== same-day round trips vs held overnight ===
+                    n   total  mean  median   win    best  worst
+held overnight   62.0  2764.0  45.0   -45.0  40.0  1518.0 -452.0
+same day        278.0 -8291.0 -30.0   -41.0  19.0   280.0 -156.0
+
+=== split by whether an alert fired the entry ===
+                         n   total  mean  median   win    best  worst
+same day, alert       60.0 -2377.0 -40.0   -44.0  18.0   102.0 -156.0
+same day, no alert   218.0 -5914.0 -27.0   -40.0  20.0   280.0 -140.0
+overnight, alert       3.0   226.0  75.0    47.0  67.0   274.0  -95.0
+overnight, no alert   59.0  2538.0  43.0   -46.0  39.0  1518.0 -452.0
+
+=== alert-triggered entries only, by grade ===
+                       n   total   mean  median    win   best  worst
+overnight, grade C   1.0   -95.0  -95.0   -95.0    0.0  -95.0  -95.0
+overnight, grade F   2.0   320.0  160.0   160.0  100.0  274.0   47.0
+same day, grade B   16.0  -486.0  -30.0   -42.0   19.0  102.0  -89.0
+same day, grade C   14.0  -428.0  -31.0   -30.0   29.0   75.0 -123.0
+same day, grade F   30.0 -1463.0  -49.0   -48.0   13.0   29.0 -156.0
+
+=== holding period of closed cycles ===
+               n   total   mean  median    win    best  worst
+held_days                                                    
+same day   278.0 -8291.0  -30.0   -41.0   19.0   280.0 -156.0
+1 day       25.0  -825.0  -33.0   -67.0   32.0   564.0 -452.0
+2-3 d       11.0   789.0   72.0   -47.0   36.0  1008.0 -201.0
+4-7 d       19.0  -165.0   -9.0   -65.0   32.0   809.0 -227.0
+8+ d         7.0  2964.0  423.0   263.0  100.0  1518.0   77.0
