@@ -48,6 +48,16 @@ PYTHONPATH=src python -m lib.trade_reviewer.cli -p PHIN
 
 Requires: `ANTHROPIC_API_KEY`, `TRADIER_API_KEY`, `MYSQL_PASSWORD`
 
+### Daily Trade Journal
+
+One command per session (morning after; Flex NAV data lands ~1 session behind). Pull -> rubric review rows -> process grade -> review pages -> S3/CloudFront deploy:
+```bash
+./journal_day.sh                  # latest session
+./journal_day.sh --no-deploy      # stop after the pages
+./journal_day.sh --date 20260918 --force   # backfill/regenerate a session (--force loses hand-written notes)
+```
+Requires: `IBKR_FLEX_TOKEN`, `MYSQL_PASSWORD`, `TRADIER_API_KEY`, `AWS_PROFILE`. The individual steps are `run_daily_journal.py`, `run_build_reviews.py`, `run_journal_grades.py`, `run_trade_review_pages.py`, `deploy_trade_journal.sh`.
+
 ### Pre-Market Watchlist
 
 Daily watchlist scanner inspired by Martin Luk and Qullamaggie (Stage 2 / EMA stack / pivot).

@@ -10,7 +10,8 @@ process grade uses -- no prose judgement (feedback: one rubric for alerts + jour
                vertical, condor, single leg -- is the unit, not the leg). Entry verdict gray_area with the structure
                named; matched-timestamp legs are tagged systematic. Straddles that appear on that day's straddle
                screen archive (data/watchlist/straddle_screen/straddle_screen_<date>.csv, pass_all) are tagged screen_pick.
-Then: apply_pending_notes() (attaches the notes staged before the Flex pull), sync_review_campaigns(), sync_review_tags().
+Then: apply_pending_notes() (attaches the notes staged before the Flex pull), sync_review_campaigns(), close_out_option_reviews()
+(stamps exit date / P&L / playbook exit verdict on reviews written while the structure was still open once it closes or expires), sync_review_tags().
 Idempotent per (underlying_symbol, entry_date, symbol): existing rows are left alone.
 
 Usage: MYSQL_PASSWORD=... TRADIER_API_KEY=... PYTHONPATH=src .venv/bin/python3 run_build_reviews.py --since 2026-09-14 [--until 2026-09-17]
@@ -77,6 +78,60 @@ def straddle_tags(cp, d0, screen_dir: Path) -> list[str]:
         in_pool = pool.exists() and cp.underlying in {x.strip() for x in pool.read_text().split()}
         tags.append("straddle_screener" if in_pool else "discretionary"); tags.append("screen_unverified")
     return tags
+
+
+def close_out_option_reviews(screen_dir: Path, dry_run: bool = False) -> int:
+    """Reviews are written once (idempotent per underlying/entry/label), so one written while the structure was still
+    open never learned that it closed later -- the summary card kept NNE/QBTS/GAP/SRPT as 'open, $0 unrealized' after
+    their worthless legs expired on 9/18 (the profitable leg had been sold days earlier). For every OPT review with no
+    exit_date whose campaign is now CLOSED (every lot flat; IBKR books an expiry as a 0.00 fill) or EXPIRED (open lots
+    all past expiry, no fill booked): stamp the exit date (last fill, or the expiry), the campaign P&L, the playbook
+    exit verdict for long straddles (gray_area + needs_exit_review otherwise), and swap the open_position tag."""
+    conn = _get_conn()
+    rv = pd.read_sql("""SELECT id, underlying_symbol, symbol, entry_date, campaign_id, tags FROM journal_trade_reviews
+                        WHERE asset_category='OPT' AND exit_date IS NULL AND campaign_id IS NOT NULL""", conn)
+    if rv.empty: conn.close(); return 0
+    ids = ",".join(str(int(c)) for c in rv.campaign_id.unique())
+    camps = pd.read_sql(f"SELECT * FROM journal_campaigns WHERE campaign_id IN ({ids}) AND status IN ('closed','expired')", conn)
+    if camps.empty: conn.close(); return 0
+    ctr = pd.read_sql(f"""SELECT ct.campaign_id, t.trade_datetime, t.quantity, t.buy_sell, t.trade_price, t.expiry
+                          FROM journal_campaign_trades ct JOIN journal_trades t ON t.trade_id = ct.trade_id
+                          WHERE ct.campaign_id IN ({ids})""", conn)
+    ctr["d"] = pd.to_datetime(ctr.trade_datetime).dt.date
+    updates = []
+    for r in rv.itertuples():
+        cp = camps[camps.campaign_id == r.campaign_id]
+        if cp.empty: continue
+        cp = cp.iloc[0]; d0 = pd.to_datetime(cp.first_date).date(); legs = ctr[ctr.campaign_id == r.campaign_id]
+        op = legs[legs.d == d0].copy(); op["signed"] = op.quantity.abs() * op.buy_sell.map({"BUY": 1, "SELL": -1})
+        debit = float((op.signed * op.trade_price).sum() * 100) if len(op) else None
+        expiry = pd.to_datetime(op.expiry.iloc[0]).date() if len(op) else None
+        expired = str(cp.status).lower() == "expired"
+        if expired:   # the lots still open (net_qty != 0) are the ones that expired; take their latest expiry
+            import json
+            open_lots = [l for l in json.loads(cp.legs) if abs(float(l.get("net_qty", 0))) > 1e-9]
+            exit_ = max(pd.to_datetime(l["expiry"]).date() for l in open_lots) if open_lots else pd.to_datetime(cp.last_date).date()
+        else:
+            exit_ = pd.to_datetime(cp.last_date).date()
+        tags = [t for t in str(r.tags or "").split(",") if t.strip() and t != "open_position"]
+        # straddle_tags() cannot tell a closed SHORT straddle from a long one (net_qty is 0 either way), so require a
+        # net debit at the open before applying the long-straddle playbook (NFLX 9/17 76C/76P was sold, not bought)
+        if ("long_straddle" in tags or straddle_tags(cp, d0, screen_dir)) and debit is not None and debit > 0:
+            xv, xr, xt = straddle_exit_verdict(float(cp.realized_pnl) if pd.notna(cp.realized_pnl) else None, debit, d0, exit_, expiry)
+        else:
+            xv, xr, xt = "gray_area", "structure closed; exit not yet reviewed against its playbook", "needs_exit_review"
+        if expired:
+            xr = (xr or "") + " (no expiry fill booked by IBKR; exit date = the expiry, P&L = the fills on record)"; tags.append("expired_no_fill")
+        if xt not in tags: tags.append(xt)
+        sym = str(r.symbol or "").replace(", still open", "").replace(" still open", "")
+        updates.append((exit_, float(cp.realized_pnl) if pd.notna(cp.realized_pnl) else None, xv, xr, ",".join(tags), sym, int(r.id)))
+        print(f"  close-out: {r.underlying_symbol} {d0} -> exit {exit_} {xv} ({xt}) P&L {cp.realized_pnl:+.2f}")
+    if updates and not dry_run:
+        cur = conn.cursor()
+        cur.executemany("UPDATE journal_trade_reviews SET exit_date=%s, realized_pnl=%s, exit_verdict=%s, exit_reason=%s, tags=%s, symbol=%s WHERE id=%s", updates)
+        conn.commit()
+    conn.close()
+    return len(updates)
 
 
 def main() -> int:
@@ -166,7 +221,12 @@ def main() -> int:
         n_new += 1
     print(f"reviews written: {n_new}  ({'dry run' if a.dry_run else 'persisted'})")
     if not a.dry_run:
-        print("notes attached:", apply_pending_notes()); print("campaign sync:", sync_review_campaigns()); print("tags synced:", sync_review_tags())
+        print("notes attached:", apply_pending_notes()); print("campaign sync:", sync_review_campaigns())
+    # reviews written while the structure was open: stamp the exit once the campaign closes/expires (runs after the
+    # campaign sync so freshly written reviews already carry their campaign_id)
+    print("closed out:", close_out_option_reviews(screen_dir, a.dry_run))
+    if not a.dry_run:
+        print("tags synced:", sync_review_tags())
     return 0
 
 

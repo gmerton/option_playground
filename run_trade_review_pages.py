@@ -555,8 +555,13 @@ def _underlying_close_on(conn, symbol: str, day) -> float | None:
     if v is not None:
         return float(v)
     try:
-        from lib.journal.price_cache import get_daily_history_cached
-        d = get_daily_history_cached(symbol, day - pd.Timedelta(days=7), day)
+        # get_daily_history_cached is async (and needs a client); the summary page renders after _build_all's loop
+        # has finished, so drive it with its own short loop. Calling it bare returned a coroutine, len() raised, and
+        # every name outside the liquid panel (NVO, ETHA, ...) showed "pending" forever.
+        async def _fetch():
+            async with TradierClient(api_key=os.environ["TRADIER_API_KEY"]) as client:
+                return await get_daily_history_cached(symbol, day - pd.Timedelta(days=7), day, client=client)
+        d = asyncio.run(_fetch())
         if d is not None and len(d):
             d = d.reset_index(); d["date"] = pd.to_datetime(d["date"]).dt.date
             hit = d[d["date"] == day]
