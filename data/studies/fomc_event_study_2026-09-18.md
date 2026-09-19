@@ -56,3 +56,25 @@ company news:
 
 **Catalysts that reveal something about the company change the odds; scheduled macro does not.** Next step is
 therefore earnings coverage (241 of 1,743 panel names today), not more macro dates.
+
+---
+
+## ⚠ ERRATUM (same day) — the earnings-proximity finding does NOT survive a control
+
+The table above ("0–3 days after earnings +0.42R vs −0.07R at 46d+") compared days-since-earnings buckets
+across all breakouts with **no control cohort**. Re-run through `lib.studies.pattern_test` on the same 241
+earnings-covered names, same arms, 10-session hold:
+
+| cohort | n | mean R | same-name random control |
+|---|---|---|---|
+| breakout 0–3 days after earnings | 258 | **−0.06** | +0.73 |
+| breakout away from earnings, same names | 1,833 | **−0.05** | +1.03 |
+
+**No difference between the cohorts, and both lose to their controls.** The original gap came from the bucket
+mix (which names report, and when), not from the catalyst. **Do not use days-since-earnings as a screen gate.**
+
+The delayed-bump test (`delayed_earnings_2026-09-18.md`) fails the same way: Tito's "good report, late move"
+cohort earns +0.23R against a +0.69R control.
+
+The FOMC conclusion above is unchanged, and the event-convexity result stands — it was measured against a
+control from the start.
