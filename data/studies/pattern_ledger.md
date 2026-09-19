@@ -3,7 +3,7 @@
 _Every entry pattern tested with `lib.studies.pattern_test`, newest last._
 
 **Bar to pass:** beats the same-name random control, positive in both halves, |t| >= 3.
-**Multiple testing:** 9 patterns tested so far — at 5% significance, expect ~0.5 to clear by chance. Discount accordingly.
+**Multiple testing:** 17 patterns tested so far — at 5% significance, expect ~0.9 to clear by chance. Discount accordingly.
 
 | tested | name | timeframe | n | best_arm | meanR | ctrl | edge | t | half1 | half2 | passed | note |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -16,3 +16,11 @@ _Every entry pattern tested with `lib.studies.pattern_test`, newest last._
 | 2026-09-18 | in-play up mover (+4% on 2x vol) | daily | 9294 | t1R | -0.236 | -0.074 | -0.162 | -8.823 | -0.31 | -0.188 | False | Tito-frequency universe, long continuation |
 | 2026-09-18 | in-play down mover (-4% on 2x vol) | daily | 8693 | ema20 | -0.082 | 0.075 | -0.158 | -2.215 | 0.037 | -0.174 | False | Tito-frequency universe, short continuation |
 | 2026-09-18 | Archetype D: buy high-beta before FOMC | event | 55 | buy T-1, sell decision close | 0.497 | -0.006 | 0.503 | 1.501 | 0.855 | 0.2 | False | returns in %, not R; edge flips sign across k (T-1 +0.50, T-2 -0.01, T-3 +0.23, T-5 -0.60) = noise; pre-FOMC drift real but t<2 |
+| 2026-09-18 | earnings drift, good+MUTED | daily | 437 | trail_bar | 0.205 | 0.113 | 0.092 | 2.12 | 0.191 | 0.213 | False | buy the close after the earnings reaction, no price trigger |
+| 2026-09-18 | earnings drift, good+BIG | daily | 1069 | ema20 | 0.028 | 0.105 | -0.076 | 1.893 | 0.028 | 0.029 | False | buy the close after the earnings reaction, no price trigger |
+| 2026-09-18 | earnings drift, bad reaction | daily | 3684 | stop_hold | 0.097 | -0.09 | 0.187 | 0.384 | 0.099 | 0.096 | False | buy the close after the earnings reaction, no price trigger |
+| 2026-09-18 | delayed bump after good+MUTED earnings | daily | 335 | t1R | -0.19 | 0.052 | -0.242 | -2.238 | -0.133 | -0.226 | False | first close above the reaction-day high, 3-20 sessions after a good report |
+| 2026-09-18 | delayed bump after good+BIG earnings | daily | 796 | t1R | -0.361 | -0.139 | -0.222 | -5.773 | -0.428 | -0.312 | False | first close above the reaction-day high, 3-20 sessions after a good report |
+| 2026-09-18 | breakout 0-3d after earnings | daily | 258 | t1R | -0.213 | 0.131 | -0.343 | -2.168 | -0.239 | -0.19 | False | the earnings-proximity finding, now with the same-name control |
+| 2026-09-18 | breakout, no earnings nearby (same names) | daily | 1833 | t1R | -0.33 | 0.164 | -0.494 | -7.155 | -0.398 | -0.28 | False | control cohort: same 241 names, breakouts away from earnings |
+| 2026-09-19 | 1-DTE long ATM straddle at the close before expiry (COHR) | daily | 152995 | open@fair value, bid/ask<10% & ratio_max>=2 | -0.074 | -0.302 | 0.228 | -12.1 | -0.256 | -0.262 | False | UNITS = return on premium, not R; ctrl = ungated base rate. Every exit ~-30%; gate monotonic but never positive; open>close only 29% (25% on 3.06M panel days); hindsight extreme +23% unattainable (10:30 exit captures 49%). data/studies/one_day_straddle_study.md |
