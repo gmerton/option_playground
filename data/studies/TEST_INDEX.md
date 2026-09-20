@@ -1,0 +1,149 @@
+# Test index — every strategy and claim tested, one line each
+
+_Started 2026-09-19. One row per test: what was asked, the verdict, and where the detail lives. Newest work
+is at the top of each section. Verdict vocabulary: **IN BOOK** (traded, survives costs and audits) ·
+**MARGINAL** (positive but below the bar or thin) · **FAIL** (tested, no edge) · **INVERTED** (the opposite
+of the claim holds) · **INVALIDATED / WITHDRAWN** (an earlier positive result was an artefact) ·
+**DESCRIPTIVE** (measured, not a tradeable claim). Pattern-harness rows also live in
+[pattern_ledger.md](pattern_ledger.md) (bar: beats the same-name random control, both halves positive, |t| ≥ 3)._
+
+## 0. What survives (the book as of 2026-09-19)
+
+| what | verdict | detail |
+|---|---|---|
+| **7-DTE long straddle + bull put spread as a PAIR** — the two surviving option strategies, corr −0.25; the blend clears t 2.5 where neither leg does alone (1.8 / 1.2) | **IN BOOK** — the pair is the unit, size small | [audit_review_2026-09-16.md](audit_review_2026-09-16.md) §4, [long_straddle_playbook.md](long_straddle_playbook.md) |
+| **SPX condors (bullish-high-IV + 200MA; bearish-high-IV) and QQQ / SPY bull puts by regime**, after the cost model | **IN BOOK** — Tier A/B (+9.4 to +22.5% net) | [playbook_review_2026-09.md](playbook_review_2026-09.md), [capital_allocation_framework.md](capital_allocation_framework.md) |
+| **Equity swing: buy the daily close of a precision-tier breakout** (ADR 4–7, <15% off high, EMA stack 5–40d, RVOL ≥ 1.8), stop = day's low on the close, exit on a close under the 20 EMA | **IN BOOK** — +0.67–0.79R; ⚠ not yet run against the same-name random control | [exit_timing_study_2026-09-18.md](exit_timing_study_2026-09-18.md), [adhikary_detector_validation.md](adhikary_detector_validation.md), [daily_routine.md](daily_routine.md) |
+| **Size lever = exclusion** (trade A+B grades only, +0.29R OOS) rather than scaling risk by grade (+0.08R, more drawdown) | **IN BOOK** | [size_lever_2026-09-18.md](size_lever_2026-09-18.md) |
+
+## 1. Option premium selling
+
+| test | verdict | detail |
+|---|---|---|
+| ETF playbooks re-scored with the cost model (commission + 25% of bid/ask): XLU/XLV/XLP put calendars, TLT, XLF | **INVALIDATED** — negative after costs (calendars −54 to −129% net) | [playbook_review_2026-09.md](playbook_review_2026-09.md) |
+| SOXX always-on bull put; GLD bull put VIX<25 | **MARGINAL** — 4 of 8 years negative / positive only 2024–26 | same |
+| ETF bull put spreads: is the exit rule the edge? (50% take, no stop, hold to expiry) | **DESCRIPTIVE** — the exit rule carries the put-spread result; it is mostly directional beta | [etf_put_spread_exit_rule_2026-09-16.md](etf_put_spread_exit_rule_2026-09-16.md), [etf_put_spread_study.md](etf_put_spread_study.md) |
+| Does the put-spread exit rule generalise to bear calls / condors on ETFs? | **FAIL** — nothing on the call side; ETF condor +0.36%/trade, t 0.6 | [etf_condor_call_side_2026-09-16.md](etf_condor_call_side_2026-09-16.md) |
+| Own-IV-percentile gate on QQQ / IWM bull puts | **FAIL** — high own-IV is a mild VETO on the index, not an edge (≥80th pct = veto) | [qqq_iv_gate_study.md](qqq_iv_gate_study.md), [iwm_iv_gate_study.md](iwm_iv_gate_study.md) |
+| Paid-to-wait single-name put spreads (7-yr real quotes) | **MARGINAL** — generic rule −3.3% net; IV ≥ 60th pct gate +5.7% net / 78% win; never close on the break; 2021–22 negative | [paid_to_wait_study.md](paid_to_wait_study.md) |
+| "More like CF + XLE" profile (3 wins) — does it carry an edge? | **FAIL** — three wins at an 80% base rate is the base rate; breach odds depend only on cushion in ADR (2 ADR ≈ 21%, 3 ≈ 13%) | [ema_strike_breach_study_2026-09-17.md](ema_strike_breach_study_2026-09-17.md) |
+| Short-dated (10-DTE) premium selling on single names | **FAIL** — net negative (costs = 136% of gross); liquidity is the gate, tradeable set = SPY + NVDA/AMZN/AAPL/V | [vrp_shortdte_names_study.md](vrp_shortdte_names_study.md) |
+| Variance risk premium panel (measure IV − realised directly) | **DESCRIPTIVE / real** — 10d premium +1.75vp t 8.9, 17/17 years; 30d/90d/term-structure absent; FVR doesn't sort | [vrp_panel_study.md](vrp_panel_study.md), [vrp_straddle_reconcile.md](vrp_straddle_reconcile.md) |
+| FVR (10/30d ratio) → short straddle P&L regression | **FAIL** — zero predictive power | [fvr_straddle_regression_playbook.md](fvr_straddle_regression_playbook.md) |
+| QQQ VRP regression (oquants-style single-ticker model) | **DESCRIPTIVE** — at the breakevens; not a verdict on flies | [qqq_vrp_regression.md](qqq_vrp_regression.md) |
+| BCI cash-secured puts / covered calls vs holding stock at the same delta (326 names, 8 yrs) | **FAIL** — stock-at-same-delta minus costs; filters add nothing; selling through earnings earned MORE | [bci_csp_study_2026-09-17.md](bci_csp_study_2026-09-17.md) |
+| CSP expansion (breakout-screen rejects as the CSP universe) | **DESCRIPTIVE** — gate stack + candidate list only; superseded by the BCI result | [csp_expansion_playbook.md](csp_expansion_playbook.md) |
+| UVXY: reverse wheel; short put / short call sweeps; combined bear call + short put | reverse wheel **FAIL** (max DD > total profit in every variant); combined strategy **Tier C, no stop by design** | [uvxy_reverse_wheel.md](uvxy_reverse_wheel.md), [uvxy_strategy_playbook.md](uvxy_strategy_playbook.md), [uvxy_combined_strategy.md](uvxy_combined_strategy.md) |
+| SPX short strangle by regime | **IN BOOK (Tier B)** — as the condor above | [spx_strangle_playbook.md](spx_strangle_playbook.md) |
+
+## 2. Long volatility
+
+| test | verdict | detail |
+|---|---|---|
+| 7-DTE long ATM straddle, pool of ~323 names, FVR + IV-percentile gate | **IN BOOK (as the pair)** — honest expectation ~+4%/trade after costs; ⚠ P&L is 99.9% from the top 0.1% of trades | [long_straddle_playbook.md](long_straddle_playbook.md), [vrp_straddle_reconcile.md](vrp_straddle_reconcile.md) |
+| Straddle re-centering / flat-take / −50% stop | **FAIL** — re-center −3 to −7pp; the stop clip is an artefact; 14-DTE no edge | [straddle_recenter_study.md](straddle_recenter_study.md) |
+| Straddle → call / put / straddle by trend | **FAIL / not adopted** — gain is bull-market beta that always-call already has | [straddle_directional_legs_2026-09-16.md](straddle_directional_legs_2026-09-16.md) |
+| RSI(14) as a gate: put spreads, straddle, Ryan's RSI+BB swing | put spreads: RSI = VIX proxy (**FAIL**); **straddle: skip RSI ≥ 70 — walk-forward PASSED, adopted as gate 5**; Ryan swing 1.5/5 | [rsi_conditioning_study_2026-09-16.md](rsi_conditioning_study_2026-09-16.md) |
+| 1-DTE long ATM straddle at the close before expiry (COHR generalised, 153k trades) | **FAIL** — every exit ≈ −30% of premium; premise false (open > close only 25–29% of days); bid/ask is the whole P&L | [one_day_straddle_study.md](one_day_straddle_study.md) |
+| Long-call strategy (step 1: does the straddle's IV-pct gate transfer?) | **FAIL (step 1)** — gate kills weekly t and 2022; benchmark is always-call +9.5%; call prefers high IV pct + mild uptrend | [call_strategy_project.md](call_strategy_project.md) |
+| "Buy a QQQ LEAP every ≥ 1% down day" | **FAIL** — no edge vs any day (12mo −5.8pp, t −0.7) | [qqq_dip_leap_study_2026-09-17.md](qqq_dip_leap_study_2026-09-17.md) |
+| Event convexity: 0.12Δ / 0.25Δ calls bought the session before FOMC / elections | **MARGINAL / real tail** — beats random dates on every exit (sell-5d +30.7% vs −3.6%); lottery sizing, sell within 5 sessions | [event_convexity_2026-09-18.md](event_convexity_2026-09-18.md) |
+| Momentum-skew verticals (oquants #3) on real quotes | **FAIL as a strategy** — the skewness premium is measurable (~15pp/unit move) but the realised P&L does not pay | [momentum_skew_vertical_study.md](momentum_skew_vertical_study.md) |
+| Sleeping Giants: cheap LEAP on a multi-year base (Tito note 2) | **MARGINAL** — convex edge holds OOS; exit lever unbuilt; IV-rank gate TODO | `Adhikary/sleeping_giants_*.csv`, `src/lib/sleeping_giants/` |
+
+## 3. Calendars and diagonals
+
+| test | verdict | detail |
+|---|---|---|
+| Single / double put calendars, diagonals, condors on ETFs and stocks (path study) | **INVALIDATED then FAIL** — steps 4–12 of the original were a path-truncation artefact; clean re-run: no edge on ETFs, stocks lose 8–18%; playbook and screener entries withdrawn | [calendar_path_study.md](calendar_path_study.md), [double_calendar_playbook.md](double_calendar_playbook.md), [audit_review_2026-09-16.md](audit_review_2026-09-16.md) §1 |
+| XLU / XLV / XLP / GLD put calendars (FVF ≤ 0.90, iv_ratio) | **INVALIDATED** — negative after costs on real bid/ask; retired 2026-09-15 | [playbook_review_2026-09.md](playbook_review_2026-09.md), the four `*_calendar_playbook.md` files |
+| SPY double calendar 0.35Δ; IWM put calendar (hold to short expiry) | SPY **Tier B** (own cost model, gains concentrated 2021/24/25); IWM **Tier B** | [spy_double_calendar_playbook.md](spy_double_calendar_playbook.md), [iwm_calendar_playbook.md](iwm_calendar_playbook.md) |
+| oquants forward-factor calendars | **FAIL** — the signal does not replicate on index ETFs | [oquants_forward_factor_replication.md](oquants_forward_factor_replication.md) |
+| Earnings placement for double calendars (tastylive segment) | **INVERTED vs the creator** — pre-earnings = worst placement (+1.4%); earnings BETWEEN the expiries = best (+10–15%, 66% win) | `data/tastylive/`, [calendar_path_study.md](calendar_path_study.md) |
+
+## 4. Equity swing — entries, exits, stops, size
+
+| test | verdict | detail |
+|---|---|---|
+| Entry timing on layer-2 name-days: close vs ORB / intraday low / pivot buy-stop, with intraday stop execution | **FAIL for intraday entries** — the CLOSE beats every intraday entry (t to −3.4); tightness comes from day structure, not entry timing | [entry_study_2026-09-17.md](entry_study_2026-09-17.md) |
+| Exit timing: same-day exits vs holding, our pool and Gabe's own book | **DESCRIPTIVE / decisive** — same-day exits are the negative bucket in both books (scalp −0.13R vs trail +0.89R; 278 same-day cycles −$8.3k, 19% win) | [exit_timing_study_2026-09-18.md](exit_timing_study_2026-09-18.md) |
+| Where tight stops come from + can regime be fed back (breakout pool, 3,539 events) | **DESCRIPTIVE** — entries 0–1.5% above the low stop out 76%; the paying months cannot be forecast (47% positive, top decile = 68% of R) → fixed small size, no switch | [breakout_regime_and_stop_distance_2026-09-17.md](breakout_regime_and_stop_distance_2026-09-17.md) |
+| Adhikary breakout initial-stop rules (entry low / ADR / EMA) | **DESCRIPTIVE** — no stop rule turns the generic breakout positive; precision cohort is the lever | [adhikary_stop_study.md](adhikary_stop_study.md) |
+| Adhikary archetype detectors A/B/C validated 2019–26 | **MARGINAL** — recipe ≈ flat; precision tier (ADR 4–7, <15% off high, stack 5–40d) +0.67R; B no edge; C daily bar INVERTED | [adhikary_detector_validation.md](adhikary_detector_validation.md), [tito_selection_playbook.md](tito_selection_playbook.md) |
+| Pullback entries on leaders (Luk / Ariel EMA pullbacks) on daily bars | **FAIL vs the breakout** — +1.2–2.4%/trade (t ≤ 1.4) below the breakout entry; Luk's ≤3%-above-low version NEGATIVE | [pullback_entry_study_2026-09-17.md](pullback_entry_study_2026-09-17.md) |
+| Size lever: scale risk by grade vs flat vs exclusion | **PASS for exclusion only** — A+B only +0.29R OOS; 10× spread +0.08R; ⚠ stop-distance cell fails as a grade | [size_lever_2026-09-18.md](size_lever_2026-09-18.md) |
+| Vehicle choice for August 2026 entries (stock / calls / short puts / put spreads) | **DESCRIPTIVE** — no vehicle fixes entries; calls worst; put spread cuts loss 60–70% but forfeits the +5% winners | [august_2026_vehicle_study.md](august_2026_vehicle_study.md) |
+| August 2026 trades through the Luk / Tito lens | **DESCRIPTIVE** — leak = entries 1–2 ADR over the 21 EMA + same-day round trips (−$7.9k) + stops blown past 2% | [august_2026_luk_tito_lens.md](august_2026_luk_tito_lens.md), [august_2026_retrospective.md](august_2026_retrospective.md) |
+| Alert grading rubric (one rubric for alerts + journal) | **DESCRIPTIVE / adopted** — `src/lib/alerts/grading.py`; A/B good, C gray, F bad | [alert_filter_study_2026-09.md](alert_filter_study_2026-09.md), [journal_process_grades.md](journal_process_grades.md) |
+
+## 5. Intraday triggers and alerts
+
+| test | verdict | detail |
+|---|---|---|
+| Stage A: UR / ORB9 / LVL intraday long triggers (11,227 fires) | **FAIL** — every arm −0.10 to −0.13R; a RANDOM entry in the same name-day beats the trigger on every arm | [stage_a_intraday_2026-09-18.md](stage_a_intraday_2026-09-18.md) |
+| Alert funnel: do intraday alerts add anything once a name passed layer 2? | **FAIL** — alert day +3.85% = no-alert day +4.14%; alert-price entry + session-low stop is worse than the close entry (t −3.2) | [alert_funnel_test_2026-09-17.md](alert_funnel_test_2026-09-17.md) |
+| Alert detectors replayed over 20 sessions (1,073 alerts) | **DESCRIPTIVE** — which detectors survive at the R level; feeds the rubric | [alert_filter_study_2026-09.md](alert_filter_study_2026-09.md) |
+| QQQ intraday noise-band momentum (Zarattini–Aziz–Barbon replication) at $10k fixed | **MARGINAL** — engine replicates the paper; in Gabe's game 2.5%/yr, Sharpe 0.28, dead 2009–17 | [qqq_noise_band_replication_2026-09-17.md](qqq_noise_band_replication_2026-09-17.md) |
+| TQQQ / SQQQ rule lab (17 years) | **FAIL for "consistent"** — every gated rule has 3–5 losing years vs QQQ's 2; one reasonable config (long-only, 200-day gate, 50% TQQQ, no SQQQ) | [tqqq_lab/RESULTS.md](tqqq_lab/RESULTS.md) |
+
+## 6. Reversion, counter-trend and capitulation
+
+| test | verdict | detail |
+|---|---|---|
+| Buying the crash (anti-Minervini): deep drawdowns from a 252d high | **REGIME BET, not selection** — pays only in a broken tape; **veto: never in a healthy tape** (median −20%/252d) | [crash_leader_reversion_study.md](crash_leader_reversion_study.md) |
+| Breitstein "boring stock, violent move" (drop ≥ k× own ADR, low prior ADR) | **INVERTED** — normalising and the boring gate SHRINK the reversion (60d +3.2% vs raw ≥15% drop +23.3%); the raw cell's reversion is entirely weak-tape; below SPY in a healthy tape | [breitstein_tests/boring_violent_2026-09-19.md](breitstein_tests/boring_violent_2026-09-19.md) |
+| Breitstein counter-trend long (≥3 ADR below the 20 EMA + prior-bar-high break), A/B vs the bare trigger | **FAIL** — every arm negative (−0.15R slow / −0.33R t1R); bare trigger ≈ control; deeper extension and the volume flush are worse | [breitstein_tests/counter_trend_long_2026-09-19.md](breitstein_tests/counter_trend_long_2026-09-19.md) |
+| Breitstein "bouncy ball" short (daily and intraday) | **FAIL** — daily −0.34R vs control +0.34/+0.48; intraday −0.41 to −0.67R, 18% win | [bouncy_ball_2026-09-18.md](bouncy_ball_2026-09-18.md) |
+| Pullback-short screen (arrival signal) | **FAIL** — raw signal −1.5%/10d, worse in a weak tape → rejection-watch list only | `run_pullback_shorts.py`, memory `project_pullback_short_screen` |
+
+## 7. Regimes, catalysts and rotation
+
+| test | verdict | detail |
+|---|---|---|
+| Breitstein high-vol regime gate: split the 20d breakout by cross-sectional realised vol, watch which exit wins | **FAIL / no switch** — fast exit worst in BOTH halves, H−L ±0.02R, 12/12 cells; p90 cell lifts every arm = beta | [breitstein_tests/hivol_gate_split_2026-09-19.md](breitstein_tests/hivol_gate_split_2026-09-19.md) |
+| Trailing-30-day regime rules from August 2026 (breadth, own results, stop-out share) validated 2019–26 | **FAIL** — none survives; weak breadth is a mild BUY; the August pattern was real but not forecastable | [trailing_regime_validation.md](trailing_regime_validation.md), [august_2026_retrospective.md](august_2026_retrospective.md) |
+| Industry rotation detection (the 2026 insurance rally, forensically) | **FAIL to front-run** — leading-group filtering INVERTED (bottom-3 sectors beat top-3, t 2.6); by-products: RVOL gate 1.2 → 1.8, vetoes below 200sma / 6mo < −10% | [industry_rotation_detection_study.md](industry_rotation_detection_study.md) |
+| Catching multi-month group moves early (31 ETFs, 2006–26) | **DESCRIPTIVE** — 12 legs/yr of ≥ +20pp; joining after the first +5pp relative signal is measured, not an edge claim | [group_move_study_2026-09-17.md](group_move_study_2026-09-17.md) |
+| FOMC as a catalyst (buy high-beta before the decision) | **FAIL** — pre-FOMC drift visible but t < 2 and sign flips across entry day | [fomc_event_study_2026-09-18.md](fomc_event_study_2026-09-18.md) |
+| Earnings proximity / "good earnings, delayed bump" (Tito) | **RETRACTED / FAIL** — proximity finding was bucket mix; delayed bump loses to the same-name control (−0.19 to −0.36R) | [delayed_earnings_2026-09-18.md](delayed_earnings_2026-09-18.md) |
+| What moved after each election (5 elections) | **DESCRIPTIVE** — not a sample | [election_cycles_2026-09-18.md](election_cycles_2026-09-18.md) |
+| Oil transmission map (USO / XOP / XLE capture, lag, continuation) | **DESCRIPTIVE** — no lag, no continuation edge; the trade dies once the equity has run >10% | [oil_spike_short_playbook_2026-09.md](oil_spike_short_playbook_2026-09.md) |
+| Cameron / Breitstein "80% chance of doubling the loss after breaching max loss" on Gabe's journal | **QUEUED** (Breitstein test 1) | memory `project_breitstein_test_queue` |
+| Margin expansion in the cost model for short premium in high-IV regimes | **QUEUED** (Breitstein test 5, design note first) | same |
+
+## 8. Ticker playbooks (single-ticker option systems, mostly 2026-03 → 05)
+
+Status after the September 2026 cost re-score. Playbook files are in this directory as `<ticker>_*_playbook.md`.
+
+| ticker / system | status |
+|---|---|
+| SPX condors (2 regimes), QQQ bull puts (3 regimes), SPY bearish-high-IV bull put | **survive** — Tier A/B |
+| SPY double calendar, IWM put calendar, SPY bullish-low-IV bull put, SOXX, GLD | **marginal / Tier B–C** |
+| XLE bull put (bearish-high-IV) | **blocked** — not reproducible from the split-adjusted cache; episodic only |
+| XLU / XLV / XLP put calendars, TLT regime switch, XLF regime switch | **dead after costs** |
+| INDA, UUP, BJ, USO, SQQQ, UVXY, UVIX, ASHR, TMF, CLS, GEV, XOP | **Tier C fillers / provisional** — liquidity re-check before any entry; ≤ 2 years of data for the provisional set |
+| YINN, FXI, EEM | **removed / discarded** (do not re-analyse YINN) |
+
+## 9. Creator knowledge bases (claims tested, not just reviewed)
+
+Each KB folder under `data/<creator>/` carries a skeptic-default leaderboard; only claims that reached a test are listed here.
+
+| creator / claim | verdict | detail |
+|---|---|---|
+| Lance Breitstein — bouncy ball, boring/violent, counter-trend long, high-vol gate (4 tests) | **4 FAIL** (one inverted) | `data/lance_breitstein/PRINCIPLES.md`, §6–7 above |
+| Tito Adhikary — 4 archetypes, delayed bump, sleeping giants, event convexity | precision tier + convexity **MARGINAL**; rest **FAIL** | `data/studies/Adhikary/`, §2, §4, §7 |
+| Martin Luk / Ariel Hernandez — EMA pullback entries, tight-stop version | **FAIL on daily bars** (intraday version untested) | §4 |
+| BCI (TraderLion) — covered calls / CSPs | **FAIL** | §1 |
+| oquants — forward-factor calendars, momentum-skew verticals, VRP ETF | **FAIL / mechanism only** | §1, §3 |
+| Options With Ravish — double calendar management (early TP, re-center, low-VIX entry) | **INVERTED** by the path study; his double DIAGONAL idea was the better cell before the study was invalidated | `data/options_with_ravish/`, §3 |
+| tastylive — double calendar vs condor, earnings placement | **INVERTED** (earnings between the expiries is the best cell) | §3 |
+| Options With Ryan — RSI+BB swing on SPY/QQQ | **FAIL** (1.5/5) | §2 |
+| Theta Profits — 0DTE long strangle and 30 others | **FAIL** (all ≤ 2.5/5; EOD floor −26%/trade) | `data/theta_profits/` |
+| Paycheck To Portfolio — leveraged income system | **not tested** (1.5/5 on review; 2022 stress test queued) | `data/paycheck2portfolio/` |
+
+## Standing rules this index enforces
+
+- A pattern test goes through `lib.studies.pattern_test` and lands in [pattern_ledger.md](pattern_ledger.md) with its same-name random control; 20+ patterns tested, 0 passed.
+- Path simulations settle at intrinsic and are checked on crash weeks before any number is reported (the calendar study's +20–40% was a truncation artefact).
+- Gabe's own trades are conformance and cost evidence only, never setup evidence.
+- New tests append a row here in the same session they land.
