@@ -1,0 +1,109 @@
+panel (1939, 1739); all-breakout days 8,250; precision days 2,023
+
+
+================ precision-tier breakout (house), next-open entry | hold 5 ================
+
+=== precision-tier breakout (house), next-open entry (daily) — 1,944 signals, 554 names, 2019-10-23 -> 2026-09-17 ===
+                n  meanR   medR     win    p90      t   ctrl   edge
+stop_hold  1944.0 -0.037 -0.259  43.930  2.064 -0.542  0.731 -0.768
+t1R        1944.0 -0.275 -0.101  47.788  1.000 -7.512  0.151 -0.425
+t2R        1944.0 -0.170 -0.205  45.113  2.000 -3.916  0.387 -0.557
+trail_bar  1944.0 -0.062 -0.406  37.037  1.851 -0.952  0.639 -0.702
+ema20      1944.0 -0.037 -0.259  43.930  2.064 -0.545  0.625 -0.662
+
+by half (n 765 / 1179):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.200         0.069
+t1R             -0.353        -0.224
+t2R             -0.298        -0.086
+trail_bar       -0.245         0.056
+ema20           -0.199         0.068
+
+best arm by edge: t1R | passes the bar (beats control, both halves positive, |t|>=3): no
+
+
+================ precision-tier breakout (house), next-open entry, hold 60 | hold 60 ================
+
+=== precision-tier breakout (house), next-open entry, hold 60 (daily) — 1,944 signals, 554 names, 2019-10-23 -> 2026-09-17 ===
+                n  meanR   medR     win    p90      t   ctrl   edge
+stop_hold  1944.0  0.145 -1.206  23.971  6.848  1.026  1.238 -1.093
+t1R        1944.0 -0.302 -1.012  49.640  1.000 -7.474  0.173 -0.475
+t2R        1944.0 -0.193 -1.109  39.095  2.000 -4.269  0.507 -0.700
+trail_bar  1944.0 -0.106 -0.497  32.510  1.934 -2.095  0.824 -0.930
+ema20      1944.0  0.080 -1.072  30.504  4.024  0.504  1.047 -0.967
+
+by half (n 765 / 1179):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.088         0.296
+t1R             -0.396        -0.242
+t2R             -0.330        -0.105
+trail_bar       -0.354         0.055
+ema20           -0.155         0.232
+
+best arm by edge: t1R | passes the bar (beats control, both halves positive, |t|>=3): no
+
+
+================ all breakouts (generic pool), next-open entry | hold 5 ================
+
+=== all breakouts (generic pool), next-open entry (daily) — 7,898 signals, 1090 names, 2019-10-07 -> 2026-09-17 ===
+                n  meanR   medR     win    p90       t   ctrl   edge
+stop_hold  7898.0 -0.093 -0.280  42.770  1.969  -0.881  0.636 -0.729
+t1R        7898.0 -0.284 -0.115  46.999  1.000 -10.342  0.115 -0.399
+t2R        7898.0 -0.199 -0.226  43.973  2.000  -5.668  0.334 -0.534
+trail_bar  7898.0 -0.098 -0.387  36.895  1.825  -1.115  0.560 -0.658
+ema20      7898.0 -0.093 -0.282  42.758  1.969  -0.872  0.552 -0.645
+
+by half (n 3002 / 4896):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.206        -0.024
+t1R             -0.334        -0.254
+t2R             -0.280        -0.150
+trail_bar       -0.210        -0.030
+ema20           -0.205        -0.024
+
+best arm by edge: t1R | passes the bar (beats control, both halves positive, |t|>=3): no
+
+
+================ all breakouts (generic pool), next-open entry, hold 60 | hold 60 ================
+
+=== all breakouts (generic pool), next-open entry, hold 60 (daily) — 7,898 signals, 1090 names, 2019-10-07 -> 2026-09-17 ===
+                n  meanR   medR     win    p90       t   ctrl   edge
+stop_hold  7897.0 -0.095 -1.229  22.211  5.401  -0.423  1.040 -1.135
+t1R        7898.0 -0.333 -1.030  48.506  1.000 -11.083  0.135 -0.468
+t2R        7898.0 -0.255 -1.116  37.541  2.000  -6.531  0.437 -0.693
+trail_bar  7898.0 -0.137 -0.469  32.540  1.831  -2.071  0.680 -0.817
+ema20      7897.0 -0.165 -1.082  28.302  3.069  -1.254  0.774 -0.939
+
+by half (n 3002 / 4896):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.212        -0.023
+t1R             -0.382        -0.303
+t2R             -0.345        -0.201
+trail_bar       -0.291        -0.043
+ema20           -0.348        -0.053
+
+best arm by edge: t1R | passes the bar (beats control, both halves positive, |t|>=3): no
+
+
+################ SUMMARY ################
+                                                     pool  hold       arm    n  meanR    win       t  ctrl   edge
+         precision-tier breakout (house), next-open entry     5 stop_hold 1944 -0.037 43.930  -0.542 0.731 -0.768
+         precision-tier breakout (house), next-open entry     5       t1R 1944 -0.275 47.788  -7.512 0.151 -0.425
+         precision-tier breakout (house), next-open entry     5       t2R 1944 -0.170 45.113  -3.916 0.387 -0.557
+         precision-tier breakout (house), next-open entry     5 trail_bar 1944 -0.062 37.037  -0.952 0.639 -0.702
+         precision-tier breakout (house), next-open entry     5     ema20 1944 -0.037 43.930  -0.545 0.625 -0.662
+precision-tier breakout (house), next-open entry, hold 60    60 stop_hold 1944  0.145 23.971   1.026 1.238 -1.093
+precision-tier breakout (house), next-open entry, hold 60    60       t1R 1944 -0.302 49.640  -7.474 0.173 -0.475
+precision-tier breakout (house), next-open entry, hold 60    60       t2R 1944 -0.193 39.095  -4.269 0.507 -0.700
+precision-tier breakout (house), next-open entry, hold 60    60 trail_bar 1944 -0.106 32.510  -2.095 0.824 -0.930
+precision-tier breakout (house), next-open entry, hold 60    60     ema20 1944  0.080 30.504   0.504 1.047 -0.967
+            all breakouts (generic pool), next-open entry     5 stop_hold 7898 -0.093 42.770  -0.881 0.636 -0.729
+            all breakouts (generic pool), next-open entry     5       t1R 7898 -0.284 46.999 -10.342 0.115 -0.399
+            all breakouts (generic pool), next-open entry     5       t2R 7898 -0.199 43.973  -5.668 0.334 -0.534
+            all breakouts (generic pool), next-open entry     5 trail_bar 7898 -0.098 36.895  -1.115 0.560 -0.658
+            all breakouts (generic pool), next-open entry     5     ema20 7898 -0.093 42.758  -0.872 0.552 -0.645
+   all breakouts (generic pool), next-open entry, hold 60    60 stop_hold 7897 -0.095 22.211  -0.423 1.040 -1.135
+   all breakouts (generic pool), next-open entry, hold 60    60       t1R 7898 -0.333 48.506 -11.083 0.135 -0.468
+   all breakouts (generic pool), next-open entry, hold 60    60       t2R 7898 -0.255 37.541  -6.531 0.437 -0.693
+   all breakouts (generic pool), next-open entry, hold 60    60 trail_bar 7898 -0.137 32.540  -2.071 0.680 -0.817
+   all breakouts (generic pool), next-open entry, hold 60    60     ema20 7897 -0.165 28.302  -1.254 0.774 -0.939

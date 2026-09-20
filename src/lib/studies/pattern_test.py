@@ -12,9 +12,15 @@ exit arms, the same-name random control, the split sample, day-clustered t-stats
 
     run_daily("my pattern", my_pattern, note="the idea in one line")
 
-Why the control matters: every pattern tested so far (UR/ORB9/LVL triggers, the bouncy ball at two
-timeframes) was matched or beaten by a RANDOM entry in the same name over the same window. A pattern that
-does not beat that control is finding days, not moments -- see data/studies/pattern_ledger.md.
+Why the control matters: a pattern that does not beat a random entry is finding days, not moments -- see
+data/studies/pattern_ledger.md.
+
+⚠ 2026-09-19: the original control (control="month": random session in the same calendar month, same name)
+has LOOK-AHEAD -- it draws sessions from before the signal in a name known to be about to fire, which
+inflated it ~3x on the house breakout. Use control="post" (random later session, timing) and control="xname"
+(random other name, same date, selection). Rows dated before 2026-09-19 used "month" and are due a re-run.
+Also: R_CLIP = 10 removes a quarter of a breakout book's gross; report a cap-20 / stop-floor variant for
+right-tail strategies (see breitstein_tests/precision_tier_control_2026-09-19.md).
 
 Bar to pass: beats its control, positive in both halves, |t| >= 3 on day-clustered means.
 """
@@ -76,13 +82,15 @@ def daily_signals(hit: pd.DataFrame, stop: pd.DataFrame, side: str = "long",
                              stop=stop.values[ii + off, jj], side=side))
 
 
-def _daily_arms(P: DailyPanel, j: int, i: int, stop: float, side: str, hold: int) -> dict | None:
-    """Enter at the next session's open; R = move in favour / risk. Long and short share one code path."""
+def _daily_arms(P: DailyPanel, j: int, i: int, stop: float, side: str, hold: int,
+                entry_at: str = "next_open") -> dict | None:
+    """Enter at the next session's open (default) or at the signal bar's close; R = move in favour / risk.
+    Long and short share one code path."""
     O, C, H, L, E = P.open.values, P.close.values, P.high.values, P.low.values, P.ema20.values
     if i + 1 >= len(C):
         return None
     sgn = 1.0 if side == "long" else -1.0
-    entry = O[i + 1, j] * (1 + sgn * SLIP)
+    entry = (C[i, j] if entry_at == "close" else O[i + 1, j]) * (1 + sgn * SLIP)
     risk = sgn * (entry - stop)
     if not np.isfinite(entry) or not np.isfinite(risk) or risk / entry < MIN_RISK or risk / entry > 0.25:
         return None
@@ -168,35 +176,63 @@ def append_ledger(**row) -> None:
 
 
 def run_daily(name: str, pattern, *, hold: int = 5, controls: int = 3, split: str = "2023-01-01",
-              note: str = "", panel: DailyPanel | None = None, ledger: bool = True) -> pd.DataFrame:
-    """pattern(P) -> signal table (from daily_signals). Control = same name, random session, same month.
-    ledger=False for parameter sweeps: report only, no ledger row (keeps the multiple-testing count honest)."""
+              note: str = "", panel: DailyPanel | None = None, ledger: bool = True,
+              entry_at: str = "next_open", control: str = "month") -> pd.DataFrame:
+    """pattern(P) -> signal table (from daily_signals).
+    ledger=False for parameter sweeps: report only, no ledger row (keeps the multiple-testing count honest).
+    entry_at="close" enters at the signal bar's close (the house process); the control then enters at the
+    random session's close with the same stop distance in %.
+    control =
+      "month"  same name, random session in the SAME MONTH (the original). ⚠ includes sessions BEFORE the signal,
+               which are hindsight-selected (the name is about to fire) -- inflates the control for continuation
+               patterns, deflates it for reversal patterns. Kept for comparability with the ledger before 2026-09-19.
+      "post"   same name, random session in the 20 sessions AFTER the signal (no look-ahead): is the signal DAY a
+               better entry than a random later day in a name known to have fired?
+      "xname"  random eligible OTHER name, same date, same stop %: does the NAME selection matter?"""
     P = panel or load_panel()
     S = pattern(P)
     idx = P.close.index
     recs, ctrl, keys = [], [], {(int(r.j), int(r.i)) for r in S.itertuples()}
     for r in S.itertuples(index=False):
-        o = _daily_arms(P, int(r.j), int(r.i), float(r.stop), r.side, hold)
+        o = _daily_arms(P, int(r.j), int(r.i), float(r.stop), r.side, hold, entry_at)
         if not o:
             continue
         recs.append({**o, "sym": r.sym, "date": str(pd.Timestamp(r.date).date()), "side": r.side})
         d = pd.Timestamp(r.date)
-        same_month = np.flatnonzero((idx.year == d.year) & (idx.month == d.month))
-        cand = [k for k in same_month if (int(r.j), int(k)) not in keys and k + hold + 2 < len(idx)
-                and P.elig.values[k, int(r.j)]]
+        px = P.close.values if entry_at == "close" else P.open.values
+        off = 0 if entry_at == "close" else 1
+        stop_pct = float(r.stop) / px[int(r.i) + off, int(r.j)] - 1
+        i0 = int(r.i)
+        if control == "xname":
+            ok = np.flatnonzero(P.elig.values[i0] & np.isfinite(px[i0 + off]))
+            cand = [jj for jj in ok if jj != int(r.j) and (int(jj), i0) not in keys]
+            if not cand:
+                continue
+            for jj in RNG.choice(cand, size=min(controls, len(cand)), replace=False):
+                jj = int(jj)
+                co = _daily_arms(P, jj, i0, px[i0 + off, jj] * (1 + stop_pct), r.side, hold, entry_at)
+                if co:
+                    ctrl.append({**co, "sym": P.close.columns[jj], "date": str(idx[i0].date()), "side": r.side})
+            continue
+        if control == "post":
+            window = range(i0 + 1, min(i0 + 21, len(idx)))
+        else:
+            window = np.flatnonzero((idx.year == d.year) & (idx.month == d.month))
+        cand = [k for k in window if (int(r.j), int(k)) not in keys and k + hold + 2 < len(idx)
+                and P.elig.values[k, int(r.j)] and np.isfinite(px[k + off, int(r.j)])]
         if not cand:
             continue
-        stop_pct = float(r.stop) / P.open.values[int(r.i) + 1, int(r.j)] - 1
         for k in RNG.choice(cand, size=min(controls, len(cand)), replace=False):
             k = int(k)
-            co = _daily_arms(P, int(r.j), k, P.open.values[k + 1, int(r.j)] * (1 + stop_pct), r.side, hold)
+            co = _daily_arms(P, int(r.j), k, px[k + off, int(r.j)] * (1 + stop_pct), r.side, hold, entry_at)
             if co:
                 ctrl.append({**co, "sym": r.sym, "date": str(idx[k].date()), "side": r.side})
     T, K = pd.DataFrame(recs), pd.DataFrame(ctrl)
     if T.empty:
         print(f"{name}: no signals"); return T
     T.to_parquet(REPO / f"data/cache/pattern_{name.replace(' ', '_').lower()}_daily.parquet", index=False)
-    return _report(name, T, K, DAILY_ARMS, split, note, "daily", ledger=ledger)
+    print(f"control = {control} ({len(K):,} control trades)")
+    return _report(name, T, K, DAILY_ARMS, split, note + f"; ctrl={control}", "daily", ledger=ledger)
 
 
 def run_intraday(name: str, pattern, *, controls: int = 3, split: str = "2026-06-01",
