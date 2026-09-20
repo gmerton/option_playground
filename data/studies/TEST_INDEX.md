@@ -141,6 +141,62 @@ Each KB folder under `data/<creator>/` carries a skeptic-default leaderboard; on
 | Theta Profits — 0DTE long strangle and 30 others | **FAIL** (all ≤ 2.5/5; EOD floor −26%/trade) | `data/theta_profits/` |
 | Paycheck To Portfolio — leveraged income system | **not tested** (1.5/5 on review; 2022 stress test queued) | `data/paycheck2portfolio/` |
 
+## 10. Queued and discussed, not yet run
+
+Everything that has a spec or a decision behind it but no result. **Status:** QUEUED (specced, run on
+command) · PARKED (discussed, no spec or deliberately shelved) · SUPERSEDED (the question was answered
+elsewhere or the strategy it served is dead). Rough cost in the last column.
+
+### Queued — specced, ready
+
+| test | what it would settle | status / where | cost |
+|---|---|---|---|
+| **Cameron's "80% chance of doubling the loss after breaching max loss"** on Gabe's journal: for sessions whose intraday P&L first crosses a fixed limit (−$500 / −$1,000 / 1% NAV), what share closes at ≤ 2× the breach, vs sessions that touch half the limit and recover | whether a hard-coded daily loss limit belongs in the desk routine | QUEUED (Breitstein test 1), memory `project_breitstein_test_queue` | ½ day |
+| **Margin expansion in the cost model** for short premium in high-IV regimes (`costs.py` has commission + 25% of bid/ask only) | whether the surviving put spreads / condors carry a hidden regime cost | QUEUED (Breitstein test 5), design note first | design note |
+| **Long straddle entry slippage** — recompute arm 4 paying a realistic fraction of the entry spread (−0.95pp ROC per 1% over mid); the −50% stop clip is 55% of the headline and needs daily contract marks | the honest straddle edge; the largest remaining unknown in the book's best strategy | QUEUED 2026-08-08, [RESEARCH_QUEUE.md](RESEARCH_QUEUE.md) | 1 day + a marks pull |
+| **Roster friction audit** — every confirmed strategy at 25% and 50% of bid/ask crossed, ranked by edge that survives (each leg ≈ −1.5pp) | which Tier A/B rows are mid-price mirages | deferred by Gabe 2026-08-08, [RESEARCH_QUEUE.md](RESEARCH_QUEUE.md) | ½ day |
+| **Delta-matched beta check on 30-DTE single-name selling** (positive, but no 30d premium exists in the VRP panel → likely direction) | whether the one positive short-dated cell is premium or beta | QUEUED, memory `project_vrp_shortdte_names` | ½ day |
+| **VIX ≥ 25 equity-ETF put-spread exits** on the pooled panel (+4.5% train, +10.1% with uptrend; 2022 negative) | an exit rule for the high-VIX cell | QUEUED, research queue #3 | ½ day |
+| **Long-dated double calendars / diagonals** (front ~49 DTE, back ~76, ~0.22Δ, mega-caps; My Trading Journey) — needs a 45–85 DTE pull, the cache caps at 40 | whether the calendar structure lives at a horizon the path study never covered | QUEUED, research queue #2 | pull + 1 day |
+| **Anchored-VWAP trailing exit** as a seventh exit rule in the risk-architecture harness (anchor = highest-volume session of the trailing N days; exit on first close below); null = a fixed-lookback trend filter does the same | whether the volume weighting adds anything over `close < 50 EMA` | QUEUED, `data/lance_breitstein/PRINCIPLES.md` "Extracted test" | ½ day |
+| **Right side of the V** — A/B the unconditional gap fade (left side) against the same fade after a turn trigger (break of prior bar high / trendline / MA) | his unifying concept; retro-explains the gap study | QUEUED, `principles/right-side-of-the-v.md` | ½ day |
+| **In-play gate as range expansion RELATIVE to the name's own normal** (vs the absolute ADR ≥ 3.5% gate) | a cheap upgrade to the universe gate, no new data | QUEUED, `principles/in-play-stocks.md` | ½ day |
+| **Capitulation blowoff short**: bar range ≥ 2× prior day AND volume ≥ 2× prior day after an accelerating run | the one mechanical rule in the capitulation write-ups | QUEUED, `principles/capitulation-and-trade-writeups.md`; ⚠ prior poor after tests 2–3 | ½ day |
+| **FBO short lower-high gate** (MULN anatomy: drive above the level, fail, lower high, break VWAP) on the existing FBO detector | whether the lower-high condition sharpens the detector | QUEUED, `principles/muln-layup-anatomy.md` | ½ day intraday |
+| **Qullamaggie partial-then-trail exit** (sell ⅓–½ on day 3–5, stop to breakeven, trail 10/20-day) vs our full 20 EMA exit — the earlier "fast trails lose" result tested a full exit, not his | a fair exit comparison on the precision tier | QUEUED, `principles/qullamaggie-system-relayed.md` | ½ day |
+| **Precision-tier breakout through the pattern harness** with the same-name random control (never done; +0.79R is uncontrolled) | whether the house entry beats a random session in the same names | QUEUED, flagged in [pattern_ledger.md](pattern_ledger.md) | ¼ day |
+| **Sleeping Giants exit lever + IV-rank gate** (win 47%, median −9%, mean +59%: the exit is a second alpha) | whether the convex LEAP idea is tradeable at the median | QUEUED, memory `project_sleeping_giants` | 1 day |
+| **Options-vehicle overlay on the precision tier** (Tito's 0.2–0.35Δ ≥ 15 DTE calls with sell-the-spike) on real prints | whether the vehicle study's "no vehicle fixes entries" holds for good entries | QUEUED, [daily_routine.md](daily_routine.md) open builds #3 | 1 day |
+| **Paycheck To Portfolio 2022 proxy stress test** (high-beta leveraged-income book through 2022) | whether the system survives a bear year it has never seen | QUEUED on command, `data/paycheck2portfolio/` | ½ day |
+| **Grader improvements** (not tests): zero-trade-day rows, time-block subscores 09:30–11 / 11–12 / 12–14 / 14–16, "easiest layup not taken" from the layer-2 day state | the report card Breitstein describes | QUEUED, do when touching `run_journal_grades.py` | ½ day |
+
+### Parked — discussed, shelved or waiting on data
+
+| test | why parked | where |
+|---|---|---|
+| **Intraday versions of the daily nulls**: Luk/Ariel EMA-pullback entry on 5/15-min bars, the 620 setup (6/20 EMA cross after a morning wash + VWAP reclaim), Adhikary archetype C (0DTE fade), counter-trend VWAP-veto arm | need minute data beyond the ~1-month 1-min cache; Stage A already priced the intraday trigger family at −0.10 to −0.13R; **don't fund Polygon history for these** | [daily_routine.md](daily_routine.md) #1–2, [pullback_entry_study_2026-09-17.md](pullback_entry_study_2026-09-17.md), `principles/trend-definition-and-counter-trend-entry.md` |
+| **Tito precision-tier true OOS** (run the detector on 2023 + 2025, pull bars, re-test; current n = 17, selection-biased) | data pull | memory `project_tito_playbook` |
+| **QQQ intraday project #2–6**: TQQQ rebalance flow, trend-day classifier by 10:00 (the one supervised-ML fit), and three more | Gabe: "make notes, we might come back" | [qqq_noise_band_replication_2026-09-17.md](qqq_noise_band_replication_2026-09-17.md), memory `project_qqq_intraday_ml` |
+| **IBKR minute option bid/ask dataset** (4 GOOG expiries pulled) | paused 2026-08-21 by Gabe before scaling up | memory `project_intraday_option_quotes` |
+| **Long-call strategy steps 3+** (step 2 found the gate horizon-specific, not pooled) | next step undefined | [call_strategy_project.md](call_strategy_project.md) |
+| **Calendar path study open items**: stock sym35 double screener, rolling the short legs (campaign), Bull-HiVIX SPY dcal cell (+18%, unstable halves) | the structure has no edge on the clean run; only the SPY/IWM Tier B cells remain | [calendar_path_study.md](calendar_path_study.md) |
+| **Steenbarger: "the index is very probably higher a month after a panic"** (index-level, distinct from the single-name crash veto) | low value; likely beta | memory `project_breitstein_test_queue` parked list |
+| **"99.9% of charts are D"** vs the funnel's layer-2 pass rate | descriptive; measures our D-line looseness, not an edge | same |
+| **No-news veto on fades** (4 independent statements: Breitstein ×2, Carter, tastylive) | needs a news/catalyst field; earnings proxy gave no support in test 2 | same, [breitstein_tests/boring_violent_2026-09-19.md](breitstein_tests/boring_violent_2026-09-19.md) |
+| **Float as a universe variable** (Cameron: < 100M shares) | never tested; needs shares outstanding in the Polygon cache | `principles/ross-cameron-system-relayed.md` |
+| **IPO lockup expiry (90–180d) event study**; overnight-momentum IPO strategy | structural blind spot (SMA200 + 400-bar minimums exclude every IPO); clean mechanical event, not yet built | `principles/ipo-strategies.md` |
+| **Theta Profits next-best skeletons** (SPY dcal variants, ATM SPX put spreads) | none beat Gabe's own SPY dcal on the skeleton; low priority | `data/theta_profits/` |
+| **Ariel Hernandez nightly-call scoring** (hit rate accrues per video) | bookkeeping, not a test | [daily_routine.md](daily_routine.md) #4 |
+
+### Superseded — the question was answered or the strategy died
+
+| item | why |
+|---|---|
+| Extend the put-calendar franchise to XLI / XLK / XLB / XLY / XLC / XLRE (Track 1, 2026-08-08) | the parent calendars are negative after costs and the calendar structure has no edge on the clean path study |
+| oquants forward-factor calendar replication (research queue #1) | closed by the VRP panel: the 30→90 forward premium it reaches for is absent (t 1.45) |
+| "More like CF + XLE" chain pull (research queue #4) | three wins at an 80% base rate; breach odds depend only on cushion in ADR |
+| Tier-weighted risk (10× by grade) before buying minute bars | done as the size-lever study: exclusion wins, the spread does not |
+
 ## Standing rules this index enforces
 
 - A pattern test goes through `lib.studies.pattern_test` and lands in [pattern_ledger.md](pattern_ledger.md) with its same-name random control; 20+ patterns tested, 0 passed.
