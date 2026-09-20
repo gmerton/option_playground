@@ -36,6 +36,11 @@ pd.set_option("display.width", 240)
 BARS = Path("data/cache/intraday_1min")
 SLIP, LEG_ADR, TIGHT = 0.0010, 0.5, 0.6
 RNG = np.random.default_rng(20260918)
+import sys as _sys
+CONTROL = _sys.argv[_sys.argv.index("--control") + 1] if "--control" in _sys.argv else "month"
+assert CONTROL in ("month", "post", "xname"), CONTROL
+from collections import defaultdict as _dd
+DAY_SYMS: dict[str, list[str]] = _dd(list)
 ARMS = ["stop_close", "t1R", "t2R", "vwap_reclaim", "time30", "trail_5m_highs", "next_close"]
 
 DAILY = pd.read_parquet("data/cache/stage_a_daily.parquet")
@@ -143,6 +148,8 @@ def arms_from(b: pd.DataFrame, i0: int, entry: float, stop: float, sym: str, day
 
 def main() -> None:
     files = sorted(BARS.glob("*.parquet"))
+    for _q in files:
+        DAY_SYMS[_q.name.rsplit("_", 1)[1][:-8]].append(_q.name.rsplit("_", 1)[0])
     sig, recs, ctrl = [], [], []
     for p in files:
         sym, day = p.name.rsplit("_", 1)[0], p.name.rsplit("_", 1)[1][:-8]
@@ -167,6 +174,23 @@ def main() -> None:
                 stop_pct = s["stop"] / entry - 1
                 lo_i = int(b.index.searchsorted(pd.Timestamp(f"{day} 09:45")))
                 hi_i = int(b.index.searchsorted(pd.Timestamp(f"{day} 15:30")))
+                if CONTROL == "xname":              # random other name with bars that day, same minute, same stop %
+                    others = [x for x in DAY_SYMS.get(day, []) if x != sym]
+                    for s2 in RNG.choice(others, size=min(3, len(others)), replace=False) if others else []:
+                        b2 = pd.read_parquet(BARS / f"{s2}_{day}.parquet")
+                        if not {"open", "high", "low", "close"} <= set(b2.columns) or ("vwap" in b.columns and "vwap" not in b2.columns):
+                            continue
+                        b2 = b2[~b2.index.duplicated(keep="first")].sort_index()
+                        k = int(b2.index.searchsorted(b.index[i0], side="left"))
+                        if k >= len(b2) - 2:
+                            continue
+                        e = float(b2.iloc[k].open) * (1 - SLIP)
+                        co = arms_from(b2, k, e, e * (1 + stop_pct), str(s2), day)
+                        if co:
+                            ctrl.append({**co, "sym": str(s2), "date": day})
+                    continue
+                if CONTROL == "post":               # random later bar the same name-day
+                    lo_i = i0 + 1
                 if hi_i - lo_i > 10:
                     for k in RNG.choice(np.arange(lo_i, hi_i), size=min(3, hi_i - lo_i), replace=False):
                         e = float(b.iloc[int(k)].open) * (1 - SLIP)
@@ -176,7 +200,10 @@ def main() -> None:
     T, K = pd.DataFrame(recs), pd.DataFrame(ctrl)
     if T.empty:
         print("no signals"); return
-    T.to_parquet("data/cache/bouncy_ball_intraday.parquet", index=False)
+    sfx = "" if CONTROL == "month" else f"_{CONTROL}"
+    T.to_parquet(f"data/cache/bouncy_ball_intraday{sfx}.parquet", index=False)
+    K.to_parquet(f"data/cache/bouncy_ball_intraday_control{sfx}.parquet", index=False)
+    print(f"control = {CONTROL}")
     print(f"signals: {len(T):,} on {T.sym.nunique()} names / {T.date.nunique()} sessions "
           f"({len(T) / T.date.nunique():.2f} per session) | median leg {T.leg_adr.median():.2f} ADR, "
           f"bounces {T.n_bounces.median():.0f} | control {len(K):,}")

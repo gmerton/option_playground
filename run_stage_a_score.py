@@ -41,6 +41,14 @@ BARS = Path("data/cache/intraday_1min")
 SLIP = 0.0010
 RNG = np.random.default_rng(20260918)
 ARMS = ["stop_close", "t1R", "t2R", "vwap_loss", "time30", "next_close", "swing_trail"]
+import sys as _sys
+CONTROL = _sys.argv[_sys.argv.index("--control") + 1] if "--control" in _sys.argv else "month"
+assert CONTROL in ("month", "post", "xname"), CONTROL
+from collections import defaultdict as _dd
+DAY_SYMS: dict[str, list[str]] = _dd(list)
+for _q in BARS.glob("*.parquet"):
+    _sym, _day = _q.name.rsplit("_", 1)[0], _q.name.rsplit("_", 1)[1][:-8]
+    DAY_SYMS[_day].append(_sym)
 
 
 @lru_cache(maxsize=4096)
@@ -49,6 +57,8 @@ def bars(sym: str, day: str) -> pd.DataFrame | None:
     if not p.exists():
         return None
     b = pd.read_parquet(p)
+    if "vwap" not in b.columns or "volume" not in b.columns:
+        return None
     b = b[~b.index.duplicated(keep="first")].sort_index()
     cv = (b.vwap * b.volume).cumsum() / b.volume.cumsum().replace(0, np.nan)
     b = b.assign(cum_vwap=cv)
@@ -175,19 +185,41 @@ def main() -> None:
             continue
         recs.append({**s, "date": r.date, "sym": r.symbol, "kind": r.kind, "grade": r.grade,
                      "oop": bool(r.out_of_play), "day_state": r.day_state, "hhmm": r.t})
-        # random-entry control: same name-day, same dollar risk
+        # random-entry control, same dollar/percent risk:
+        #   month  (original) same name-day, random bar 09:45-15:30 -- includes PRE-trigger minutes = look-ahead
+        #   post   same name-day, random bar AFTER the trigger (timing)
+        #   xname  random OTHER symbol with bars that day, same minute, same risk % (selection)
         lo = int(b.index.searchsorted(pd.Timestamp(f"{r.date} 09:45")))
         hi = int(b.index.searchsorted(pd.Timestamp(f"{r.date} 15:30")))
+        e0 = float(b.iloc[i0].open) * (1 + SLIP)
+        risk_px = e0 - float(r.stop)
+        if CONTROL == "xname":
+            others = [s for s in DAY_SYMS.get(r.date, []) if s != r.symbol]
+            for s2 in RNG.choice(others, size=min(5, len(others)), replace=False) if others else []:
+                b2 = bars(str(s2), r.date)
+                if b2 is None:
+                    continue
+                k = int(b2.index.searchsorted(t, side="right"))
+                if k >= len(b2) - 2:
+                    continue
+                e = float(b2.iloc[k].open) * (1 + SLIP)
+                cs = score_one(str(s2), r.date, e * (1 - risk_px / e0), k, b2)
+                if cs:
+                    ctrl.append({**cs, "date": r.date, "sym": str(s2), "kind": r.kind})
+            continue
+        if CONTROL == "post":
+            lo = i0 + 1
         if hi - lo > 10:
-            risk_px = float(b.iloc[i0].open) * (1 + SLIP) - float(r.stop)
             for k in RNG.choice(np.arange(lo, hi), size=min(5, hi - lo), replace=False):
                 e = float(b.iloc[int(k)].open) * (1 + SLIP)
                 cs = score_one(r.symbol, r.date, e - risk_px, int(k), b)
                 if cs:
                     ctrl.append({**cs, "date": r.date, "sym": r.symbol, "kind": r.kind})
     T, C = pd.DataFrame(recs), pd.DataFrame(ctrl)
-    T.to_parquet("data/cache/stage_a_trades.parquet", index=False)
-    C.to_parquet("data/cache/stage_a_control.parquet", index=False)
+    sfx = "" if CONTROL == "month" else f"_{CONTROL}"
+    T.to_parquet(f"data/cache/stage_a_trades{sfx}.parquet", index=False)
+    C.to_parquet(f"data/cache/stage_a_control{sfx}.parquet", index=False)
+    print(f"control = {CONTROL}")
     print(f"scored {len(T):,} alerts ({dropped} dropped: no bars / bad stop / late fire), "
           f"{len(C):,} control entries\n")
 

@@ -65,6 +65,7 @@ of the claim holds) · **INVALIDATED / WITHDRAWN** (an earlier positive result w
 
 | test | verdict | detail |
 |---|---|---|
+| **Pattern-ledger re-run with honest controls** (19 daily patterns × `post` timing + `xname` selection; the original same-month control had look-ahead) | **still 0 for 19** — the month control was inflated +0.14…+0.21R for continuation patterns and deflated −0.48…−0.86R for reversal patterns, so every old `edge` was mostly the control; honest edges −0.09…+0.26R, none |t| ≥ 3. Closest: earnings drift good+MUTED +0.27R, beats both controls by +0.25, t 2.65 | [ledger_rerun/ledger_rerun_2026-09-19.md](ledger_rerun/ledger_rerun_2026-09-19.md) |
 | Entry timing on layer-2 name-days: close vs ORB / intraday low / pivot buy-stop, with intraday stop execution | **FAIL for intraday entries** — the CLOSE beats every intraday entry (t to −3.4); tightness comes from day structure, not entry timing | [entry_study_2026-09-17.md](entry_study_2026-09-17.md) |
 | Exit timing: same-day exits vs holding, our pool and Gabe's own book | **DESCRIPTIVE / decisive** — same-day exits are the negative bucket in both books (scalp −0.13R vs trail +0.89R; 278 same-day cycles −$8.3k, 19% win) | [exit_timing_study_2026-09-18.md](exit_timing_study_2026-09-18.md) |
 | Where tight stops come from + can regime be fed back (breakout pool, 3,539 events) | **DESCRIPTIVE** — entries 0–1.5% above the low stop out 76%; the paying months cannot be forecast (47% positive, top decile = 68% of R) → fixed small size, no switch | [breakout_regime_and_stop_distance_2026-09-17.md](breakout_regime_and_stop_distance_2026-09-17.md) |
@@ -81,6 +82,7 @@ of the claim holds) · **INVALIDATED / WITHDRAWN** (an earlier positive result w
 
 | test | verdict | detail |
 |---|---|---|
+| **Stage A + bouncy ball intraday re-scored with honest controls** (random LATER minute / random other watchlist name at the same minute) | **FAIL, unchanged** — every intraday arm within ±0.03R of both controls; swing-arm gap flips sign with the control (noise); bouncy short −0.41…−0.67R on signal AND both controls | [ledger_rerun/ledger_rerun_2026-09-19.md](ledger_rerun/ledger_rerun_2026-09-19.md) |
 | Stage A: UR / ORB9 / LVL intraday long triggers (11,227 fires) | **FAIL** — every arm −0.10 to −0.13R; a RANDOM entry in the same name-day beats the trigger on every arm | [stage_a_intraday_2026-09-18.md](stage_a_intraday_2026-09-18.md) |
 | Alert funnel: do intraday alerts add anything once a name passed layer 2? | **FAIL** — alert day +3.85% = no-alert day +4.14%; alert-price entry + session-low stop is worse than the close entry (t −3.2) | [alert_funnel_test_2026-09-17.md](alert_funnel_test_2026-09-17.md) |
 | Alert detectors replayed over 20 sessions (1,073 alerts) | **DESCRIPTIVE** — which detectors survive at the R level; feeds the rubric | [alert_filter_study_2026-09.md](alert_filter_study_2026-09.md) |
@@ -152,7 +154,6 @@ elsewhere or the strategy it served is dead). Rough cost in the last column.
 
 | test | what it would settle | status / where | cost |
 |---|---|---|---|
-| **⚠ Re-run the pattern ledger with the honest controls** (`control="post"` timing + `"xname"` selection; the original same-month control has look-ahead and inflated the control ~3× on the house breakout). Priority: in-play movers, earnings drift, bouncy ball, Stage A's random-minute-same-day control (same flaw) | whether "0 for 25, random beats the pattern" was the patterns or the control | QUEUED 2026-09-19, [breitstein_tests/precision_tier_control_2026-09-19.md](breitstein_tests/precision_tier_control_2026-09-19.md) | 1 day |
 | **Cameron's "80% chance of doubling the loss after breaching max loss"** on Gabe's journal: for sessions whose intraday P&L first crosses a fixed limit (−$500 / −$1,000 / 1% NAV), what share closes at ≤ 2× the breach, vs sessions that touch half the limit and recover | whether a hard-coded daily loss limit belongs in the desk routine | QUEUED (Breitstein test 1), memory `project_breitstein_test_queue` | ½ day |
 | **Margin expansion in the cost model** for short premium in high-IV regimes (`costs.py` has commission + 25% of bid/ask only) | whether the surviving put spreads / condors carry a hidden regime cost | QUEUED (Breitstein test 5), design note first | design note |
 | **Long straddle entry slippage** — recompute arm 4 paying a realistic fraction of the entry spread (−0.95pp ROC per 1% over mid); the −50% stop clip is 55% of the headline and needs daily contract marks | the honest straddle edge; the largest remaining unknown in the book's best strategy | QUEUED 2026-08-08, [RESEARCH_QUEUE.md](RESEARCH_QUEUE.md) | 1 day + a marks pull |
@@ -200,7 +201,7 @@ elsewhere or the strategy it served is dead). Rough cost in the last column.
 
 ## Standing rules this index enforces
 
-- A pattern test goes through `lib.studies.pattern_test` and lands in [pattern_ledger.md](pattern_ledger.md) with its random controls (`post` for timing, `xname` for selection; the pre-2026-09-19 `month` control has look-ahead). 25 rows under the old control, 0 passed; the first honest-control row (the house breakout) is a marginal pass.
+- A pattern test goes through `lib.studies.pattern_test` and lands in [pattern_ledger.md](pattern_ledger.md) with its random controls (`post` for timing, `xname` for selection; the pre-2026-09-19 `month` control has look-ahead). All 25 pre-2026-09-19 rows were re-scored against both honest controls the same day ([ledger_rerun](ledger_rerun/ledger_rerun_2026-09-19.md)): still 0 passes; quote the RERUN rows' `ctrl`/`edge`, never the `month` rows'. `post` is now the harness default.
 - Path simulations settle at intrinsic and are checked on crash weeks before any number is reported (the calendar study's +20–40% was a truncation artefact).
 - Gabe's own trades are conformance and cost evidence only, never setup evidence.
 - New tests append a row here in the same session they land.

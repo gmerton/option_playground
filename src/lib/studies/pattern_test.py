@@ -18,7 +18,8 @@ data/studies/pattern_ledger.md.
 ⚠ 2026-09-19: the original control (control="month": random session in the same calendar month, same name)
 has LOOK-AHEAD -- it draws sessions from before the signal in a name known to be about to fire, which
 inflated it ~3x on the house breakout. Use control="post" (random later session, timing) and control="xname"
-(random other name, same date, selection). Rows dated before 2026-09-19 used "month" and are due a re-run.
+(random other name, same date, selection). Every pre-re-run row was re-scored against both on 2026-09-19
+(data/studies/ledger_rerun/ledger_rerun_2026-09-19.md): the default is now "post"; run "xname" alongside.
 Also: R_CLIP = 10 removes a quarter of a breakout book's gross; report a cap-20 / stop-floor variant for
 right-tail strategies (see breitstein_tests/precision_tier_control_2026-09-19.md).
 
@@ -177,7 +178,7 @@ def append_ledger(**row) -> None:
 
 def run_daily(name: str, pattern, *, hold: int = 5, controls: int = 3, split: str = "2023-01-01",
               note: str = "", panel: DailyPanel | None = None, ledger: bool = True,
-              entry_at: str = "next_open", control: str = "month") -> pd.DataFrame:
+              entry_at: str = "next_open", control: str = "post") -> pd.DataFrame:
     """pattern(P) -> signal table (from daily_signals).
     ledger=False for parameter sweeps: report only, no ledger row (keeps the multiple-testing count honest).
     entry_at="close" enters at the signal bar's close (the house process); the control then enters at the
@@ -185,7 +186,8 @@ def run_daily(name: str, pattern, *, hold: int = 5, controls: int = 3, split: st
     control =
       "month"  same name, random session in the SAME MONTH (the original). ⚠ includes sessions BEFORE the signal,
                which are hindsight-selected (the name is about to fire) -- inflates the control for continuation
-               patterns, deflates it for reversal patterns. Kept for comparability with the ledger before 2026-09-19.
+               patterns, deflates it for reversal patterns. NOT the default since the 2026-09-19 re-run
+               (data/studies/ledger_rerun/); kept only to reproduce the pre-re-run rows.
       "post"   same name, random session in the 20 sessions AFTER the signal (no look-ahead): is the signal DAY a
                better entry than a random later day in a name known to have fired?
       "xname"  random eligible OTHER name, same date, same stop %: does the NAME selection matter?"""
