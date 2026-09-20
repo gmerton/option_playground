@@ -103,7 +103,7 @@
       entry study). If our gates pass ~1% of name-days we are calibrated to him; if we pass 10% we
       are running a much looser D line than he claims to, which bears directly on
       `feedback_precision_over_recall`.
-- [ ] ⭐ **"Boring stock, violent move" [06:15].** The one genuinely testable mechanic in the video,
+- [x] ⭐ **"Boring stock, violent move" [06:15].** ✅ TESTED 2026-09-19 → `data/studies/breitstein_tests/boring_violent_2026-09-19.md`: **fails, inverted** — the boring leg and the ADR normalisation both SHRINK the reversion (A 60d +3.2% vs raw ≥15% drop +23.3%); the reversion that exists is the weak-tape regime (raw cell 60d +38% below the 21 EMA vs +2% above); below SPY at every horizon in a healthy tape. The one genuinely testable mechanic in the video,
       on daily bars already on disk: rank selloffs by **drop% ÷ the name's own trailing ADR** and
       cross it with **low prior ADR** (the "boring" leg). Prediction: reversion is concentrated
       where prior ADR is low and the shock/ADR ratio is extreme. This is a real refinement of
