@@ -1,0 +1,174 @@
+index,ticker,eff_date,anchor_date,ann_date,kind,anchor_close,adr20,ext21_adr,runup_ann_to_anchor_pct,pre_bars,post_bars,reason
+SP500,RDDT,2026-08-18,2026-08-17,,replacement,164.5,5.995,-0.177,,603,23,Equity Residential (now Vivmark Residential) acquired AvalonBay Communities.
+SP500,FERG,2026-08-05,2026-08-04,2026-07-31,replacement,254.5603,2.679,3.362,12.878,1907,32,"An investor consortium comprising Saudi Arabia's Public Investment Fund (PIF), Silver Lake, and Affinity Partners acquir"
+SP500,MRVL,2026-06-22,2026-06-18,2026-06-05,rebalance,310.5034,10.159,2.019,-1.849,1876,63,Market capitalization changes.
+SP500,FLEX,2026-06-22,2026-06-18,2026-06-05,rebalance,147.61,6.049,0.439,-7.46,1876,63,Market capitalization changes.
+NDX,ALAB,2026-06-22,2026-06-18,2026-06-11,rebalance,417.07,9.371,2.503,26.056,564,63,Quarterly index reconstitution. Nasdaq-100 moved to a regular quarterly rebalancing schedule.
+NDX,CRWV,2026-06-22,2026-06-18,2026-06-11,rebalance,117.95,7.265,1.215,23.366,308,63,Quarterly index reconstitution. Nasdaq-100 moved to a regular quarterly rebalancing schedule.
+NDX,NBIS,2026-06-22,2026-06-18,2026-06-11,rebalance,286.69,9.881,2.14,35.429,416,63,Quarterly index reconstitution. Nasdaq-100 moved to a regular quarterly rebalancing schedule.
+NDX,RKLB,2026-06-22,2026-06-18,2026-06-11,rebalance,107.24,8.544,-0.596,2.085,1397,63,Quarterly index reconstitution. Nasdaq-100 moved to a regular quarterly rebalancing schedule.
+NDX,TER,2026-06-22,2026-06-18,2026-06-11,rebalance,437.7519,6.794,1.875,25.988,1876,63,Quarterly index reconstitution. Nasdaq-100 moved to a regular quarterly rebalancing schedule.
+NDX,LITE,2026-05-18,2026-05-15,,rebalance,970.7,8.025,0.564,,1853,86,CoStar did not meet the minimum monthly weight requirements.
+SP500,VEEV,2026-05-07,2026-05-06,2026-04-30,replacement,167.35,4.161,0.152,5.77,1846,93,Devon Energy acquired Coterra Energy.
+NDX,SNDK,2026-04-20,2026-04-17,,rebalance,920.99,8.142,2.057,,295,106,Atlassian did not meet the minimum monthly weight requirements.
+SP500,CASY,2026-04-09,2026-04-08,2026-04-06,replacement,757.2764,2.974,2.279,2.011,1826,113,Blackstone Inc. and TPG Inc. acquired Hologic.
+SP500,VRT,2026-03-23,2026-03-20,2026-03-06,rebalance,255.7641,5.046,0.172,2.479,1814,125,Market capitalization changes.
+SP500,LITE,2026-03-23,2026-03-20,2026-03-06,rebalance,706.35,9.767,0.848,8.532,1814,125,Market capitalization changes.
+SP500,COHR,2026-03-23,2026-03-20,2026-03-06,rebalance,253.63,8.706,0.138,-0.095,1814,125,Market capitalization changes.
+SP500,CIEN,2026-02-09,2026-02-06,2026-02-04,replacement,271.32,7.693,1.16,-1.881,1785,154,Thoma Bravo L.P. acquired Dayforce.
+NDX,WMT,2026-01-20,2026-01-16,,other,118.9426,1.77,2.178,,1771,168,Walmart transferred its listing from NYSE to NASDAQ and replaced AstraZeneca in the index. AstraZeneca was preparing to 
+NDX,FER,2025-12-22,2025-12-19,2025-12-13,rebalance,65.7458,1.606,0.537,-0.539,1753,186,Annual index reconstitution.
+NDX,WDC,2025-12-22,2025-12-19,2025-12-13,rebalance,180.8881,6.514,1.227,2.688,1753,186,Annual index reconstitution.
+NDX,STX,2025-12-22,2025-12-19,2025-12-13,rebalance,294.8596,5.717,1.06,3.032,1753,186,Annual index reconstitution.
+NDX,MPWR,2025-12-22,2025-12-19,2025-12-13,rebalance,932.2386,3.716,-0.219,-0.993,1753,186,Annual index reconstitution.
+NDX,INSM,2025-12-22,2025-12-19,2025-12-13,rebalance,174.84,3.811,-2.464,-11.253,1753,186,Annual index reconstitution.
+SP500,CRH,2025-12-22,2025-12-19,2025-12-05,rebalance,123.0409,2.322,0.791,2.784,1753,186,Market capitalization changes.
+NDX,ALNY,2025-12-22,2025-12-19,2025-12-13,rebalance,400.23,3.893,-1.292,0.674,1753,186,Annual index reconstitution.
+SP500,FIX,2025-12-22,2025-12-19,,rebalance,939.3967,5.247,-0.271,,1753,186,Market capitalization changes.
+SP500,CVNA,2025-12-22,2025-12-19,,rebalance,90.044,5.067,1.55,,1753,186,Market capitalization changes.
+SP500,ARES,2025-12-11,2025-12-10,2025-12-10,replacement,171.1987,3.231,3.636,1.18,1746,193,Mars Inc. acquired Kellanova.
+SP500,SNDK,2025-11-28,2025-11-26,,replacement,215.04,12.27,-0.102,,199,202,Omnicom Group acquired (The) Interpublic Group.
+SP500,EME,2025-09-22,2025-09-19,2025-09-05,rebalance,630.7687,2.552,0.54,-1.335,1689,250,Market capitalization changes.
+SP500,HOOD,2025-09-22,2025-09-19,2025-09-05,rebalance,124.78,4.547,2.205,21.252,1041,250,Market capitalization changes.
+SP500,APP,2025-09-22,2025-09-19,2025-09-05,rebalance,649.59,4.427,4.482,29.926,1114,250,Market capitalization changes.
+SP500,IBKR,2025-08-28,2025-08-27,2025-08-25,replacement,61.4513,3.022,-0.659,-0.978,1673,266,Sycamore Partners acquired Walgreen Boots Alliance.
+NDX,TRI,2025-07-28,2025-07-25,,other,194.5505,1.854,0.056,,1650,289,Thomson Reuters transferred its listing from NYSE to NASDAQ and replaced Ansys in the index.
+SP500,XYZ,2025-07-23,2025-07-22,2025-07-18,replacement,79.27,3.108,4.565,12.074,1647,292,Chevron acquired Hess.
+SP500,TTD,2025-07-18,2025-07-17,2025-07-14,replacement,81.44,3.415,2.532,8.039,1644,295,Synopsys acquired Ansys.
+SP500,DDOG,2025-07-09,2025-07-08,2025-07-02,replacement,145.94,3.113,3.205,10.285,1457,302,Hewlett Packard Enterprise acquired Juniper Networks.
+SP500,COIN,2025-05-19,2025-05-16,2025-05-12,replacement,266.46,5.068,4.617,33.685,1029,336,Capital One acquired Discover Financial.
+NDX,SHOP,2025-05-19,2025-05-16,,rebalance,110.75,4.299,2.647,,1603,336,MongoDB did not meet the minimum monthly weight requirements.
+SP500,DASH,2025-03-24,2025-03-21,2025-03-07,rebalance,190.62,4.925,0.132,5.835,1075,375,Market capitalization changes.
+SP500,TKO,2025-03-24,2025-03-21,2025-03-07,rebalance,146.644,4.141,0.069,2.242,1564,375,Market capitalization changes.
+SP500,WSM,2025-03-24,2025-03-21,2025-03-07,rebalance,159.9807,5.301,-1.71,-10.294,1564,375,Market capitalization changes.
+SP500,EXE,2025-03-24,2025-03-21,2025-03-07,rebalance,102.8645,2.954,1.297,12.195,1033,375,Market capitalization changes.
+NDX,AXON,2024-12-23,2024-12-20,2024-12-13,rebalance,631.69,3.891,0.241,-0.742,1504,435,Annual index reconstitution.
+NDX,PLTR,2024-12-23,2024-12-20,2024-12-13,rebalance,80.55,6.335,2.263,10.041,1064,435,Annual index reconstitution.
+NDX,MSTR,2024-12-23,2024-12-20,2024-12-13,rebalance,364.2,12.266,-0.132,-7.137,1504,435,Annual index reconstitution.
+SP500,WDAY,2024-12-23,2024-12-20,2024-12-06,rebalance,273.04,3.486,0.55,3.936,1504,435,Market capitalization changes.
+SP500,LII,2024-12-23,2024-12-20,2024-12-18,replacement,617.8244,2.747,-0.994,-4.457,1504,435,Novo Holdings A/S acquired Catalent.
+SP500,APO,2024-12-23,2024-12-20,2024-12-06,rebalance,166.5616,2.958,-0.047,-2.675,1504,435,Market capitalization changes.
+SP500,TPL,2024-11-26,2024-11-25,2024-11-21,replacement,531.8994,4.537,3.921,11.257,1486,453,ConocoPhillips acquired Marathon Oil.
+NDX,APP,2024-11-18,2024-11-15,,rebalance,291.09,5.783,5.791,,905,459,Dollar Tree did not meet the minimum monthly weight requirements.
+SP500,PLTR,2024-09-23,2024-09-20,2024-09-06,rebalance,37.2,3.786,2.633,23.342,1000,499,Market capitalization changes.
+SP500,DELL,2024-09-23,2024-09-20,2024-09-06,rebalance,113.9499,3.732,1.232,9.649,1440,499,Market capitalization changes.
+SP500,ERIE,2024-09-23,2024-09-20,2024-09-06,rebalance,503.5204,2.537,1.321,5.053,1440,499,Market capitalization changes.
+NDX,SMCI,2024-07-22,2024-07-19,,rebalance,79.678,6.609,-0.985,,1396,543,WBA did not meet the minimum monthly weight requirements.
+SP500,GDDY,2024-06-24,2024-06-21,2024-06-07,rebalance,137.66,1.807,0.042,-0.721,1377,562,Market capitalization changes.
+SP500,CRWD,2024-06-24,2024-06-21,2024-06-07,rebalance,95.1575,4.228,1.252,11.789,1266,562,Market capitalization changes.
+SP500,KKR,2024-06-24,2024-06-21,2024-06-07,rebalance,107.2904,3.034,0.719,9.378,1377,562,Market capitalization changes.
+SP500,VST,2024-05-08,2024-05-07,2024-05-03,replacement,80.5378,5.172,1.953,2.341,1346,593,ExxonMobil acquired Pioneer Natural Resources.
+SP500,CPAY,2024-03-25,2024-03-22,2024-03-12,other,303.26,1.951,1.674,3.318,1315,624,FLEETCOR Technologies changed its name to Corpay.
+SP500,SMCI,2024-03-18,2024-03-15,2024-03-01,rebalance,106.883,10.87,0.749,23.404,1310,629,Market capitalization changes.
+SP500,DECK,2024-03-18,2024-03-15,2024-03-01,rebalance,151.6333,2.41,0.861,1.587,1310,629,Market capitalization changes.
+NDX,LIN,2024-03-18,2024-03-15,2024-03-08,replacement,453.328,1.345,2.428,0.929,1310,629,Splunk was acquired by Cisco.
+NDX,CCEP,2023-12-18,2023-12-15,,rebalance,60.6422,1.632,2.195,,1249,690,Annual index reconstitution.
+NDX,ROP,2023-12-18,2023-12-15,,rebalance,531.4702,1.264,1.342,,1249,690,Annual index reconstitution.
+NDX,MDB,2023-12-18,2023-12-15,,rebalance,420.17,3.799,1.262,,1249,690,Annual index reconstitution.
+NDX,DASH,2023-12-18,2023-12-15,,rebalance,101.57,2.692,1.888,,760,690,Annual index reconstitution.
+NDX,CDW,2023-12-18,2023-12-15,,rebalance,214.0461,1.656,2.408,,1249,690,Annual index reconstitution.
+SP500,BLDR,2023-12-18,2023-12-15,2023-12-01,rebalance,162.51,3.423,3.769,21.177,1249,690,Market capitalization changes.
+SP500,JBL,2023-12-18,2023-12-15,2023-12-01,rebalance,132.2308,2.809,2.55,15.253,1249,690,Market capitalization changes.
+SP500,UBER,2023-12-18,2023-12-15,2023-12-01,rebalance,61.86,2.411,2.593,9.72,1160,690,Market capitalization changes.
+NDX,TTWO,2023-12-14,2023-12-13,,replacement,163.12,1.784,3.096,,1247,692,Seagen merged with Pfizer.
+SP500,HUBB,2023-10-18,2023-10-17,2023-10-13,rebalance,288.3117,2.788,-0.973,-3.183,1207,732,Market capitalization changes.
+SP500,LULU,2023-10-18,2023-10-17,2023-10-13,other,412.94,2.337,3.259,10.429,1207,732,Acquisition of Activision Blizzard by Microsoft.
+SP500,BX,2023-09-18,2023-09-15,,rebalance,103.4433,2.147,2.739,,1185,754,Market capitalization changes.
+SP500,ABNB,2023-09-18,2023-09-15,,rebalance,142.75,2.602,1.009,,695,754,Market capitalization changes.
+SP500,KVUE,2023-08-25,2023-08-24,2023-08-21,other,20.7107,2.851,0.064,3.454,78,769,Johnson & Johnson offered to exchange the shares of Kenvue held for shares of Johnson & Johnson in a split-off exchange 
+NDX,TTD,2023-07-17,2023-07-14,2023-07-13,replacement,88.0,2.933,4.009,4.13,1141,798,Activision Blizzard was acquired by Microsoft.
+NDX,ON,2023-06-20,2023-06-16,2023-06-14,rebalance,90.15,3.687,0.826,-2.719,1123,816,Rivian did not meet the minimum monthly weight requirements.
+SP500,PANW,2023-06-20,2023-06-16,2023-06-02,rebalance,123.265,3.133,3.762,13.718,1123,816,Market capitalization changes.
+NDX,GEHC,2023-06-07,2023-06-06,2023-05-30,other,82.4699,2.67,1.684,5.738,118,824,Fiserv transferred its listing from NASDAQ to the NYSE.
+SP500,AXON,2023-05-04,2023-05-03,2023-05-01,other,220.88,2.411,0.223,4.827,1092,847,The Federal Deposit Insurance Corporation (FDIC) placed First Republic Bank into receivership.
+SP500,FICO,2023-03-20,2023-03-17,2023-03-03,rebalance,654.94,2.694,-1.403,-4.739,1060,879,Market capitalization changes.
+SP500,BG,2023-03-15,2023-03-14,2023-03-13,other,94.65,2.269,3.44,13.042,1057,882,The FDIC placed Signature Bank into FDIC Receivership.
+SP500,PODD,2023-03-15,2023-03-14,2023-03-10,other,312.77,4.08,1.813,10.473,1057,882,"The FDIC placed SVB's main subsidiary, Silicon Valley Bank, into receivership."
+SP500,STLD,2022-12-22,2022-12-21,2022-12-19,replacement,99.4,3.595,0.181,3.762,1002,937,Johnson & Johnson acquired Abiomed.
+NDX,GFS,2022-12-19,2022-12-16,,rebalance,59.9436,4.183,-1.121,,287,940,Annual index reconstitution.
+NDX,FANG,2022-12-19,2022-12-16,,rebalance,116.4899,3.621,-1.387,,999,940,Annual index reconstitution.
+NDX,BKR,2022-12-19,2022-12-16,,rebalance,26.1464,2.913,-0.264,,999,940,Annual index reconstitution.
+SP500,FSLR,2022-12-19,2022-12-16,2022-12-12,rebalance,155.08,4.08,-0.42,2.729,999,940,Market capitalization changes.
+NDX,WBD,2022-12-19,2022-12-16,,rebalance,9.91,5.308,-1.77,,999,940,Annual index reconstitution.
+NDX,RIVN,2022-12-19,2022-12-16,,rebalance,22.48,6.053,-3.178,,278,940,Annual index reconstitution.
+NDX,CSGP,2022-12-19,2022-12-16,,rebalance,77.98,2.502,-1.208,,999,940,Annual index reconstitution.
+NDX,ENPH,2022-11-21,2022-11-18,2022-11-12,rebalance,311.94,6.489,1.058,6.825,980,959,Okta did not meet the minimum monthly weight requirements.
+SP500,ACGL,2022-11-01,2022-10-31,2022-10-27,replacement,54.6767,3.07,5.258,17.852,966,973,Elon Musk acquired Twitter.
+SP500,TRGP,2022-10-12,2022-10-11,2022-10-06,replacement,60.3239,4.195,0.392,-0.423,952,987,Elliott Investment Management acquired Nielsen Holdings.
+SP500,PCG,2022-10-03,2022-09-30,2022-09-23,replacement,12.2856,3.445,-0.376,-3.549,945,994,Vista Equity Partners acquired Citrix Systems.
+SP500,EQT,2022-10-03,2022-09-30,2022-09-23,replacement,38.4314,5.199,-1.403,-8.694,945,994,Prologis acquired Duke Realty.
+SP500,CSGP,2022-09-19,2022-09-16,2022-09-02,rebalance,70.45,2.539,-1.579,0.657,935,1004,Market capitalization changes.
+SP500,INVH,2022-09-19,2022-09-16,2022-09-02,rebalance,32.0366,2.252,-1.313,0.848,935,1004,Market capitalization changes.
+SP500,ON,2022-06-21,2022-06-17,2022-06-03,rebalance,52.46,4.839,-2.022,-17.503,873,1066,Market capitalization changes.
+SP500,KDP,2022-06-21,2022-06-17,2022-06-03,rebalance,30.6013,2.205,-1.242,-2.746,873,1066,Market capitalization changes.
+SP500,VICI,2022-06-08,2022-06-07,2022-06-03,replacement,24.9542,3.229,1.885,2.196,865,1074,Oracle acquired Cerner.
+SP500,WBD,2022-04-11,2022-04-08,2022-04-07,replacement,24.43,4.869,-0.819,2.132,825,1114,WarnerMedia and Discovery merged to create Warner Bros. Discovery.
+SP500,CPT,2022-04-04,2022-04-01,2022-03-29,replacement,146.5287,2.283,1.426,2.201,820,1119,M&T Bank acquired People's United Financial.
+SP500,MOH,2022-03-02,2022-03-01,2022-02-25,replacement,311.88,3.741,0.49,1.414,797,1142,S&P Global acquired IHS Markit.
+NDX,AZN,2022-02-22,2022-02-18,2022-02-10,replacement,108.6246,2.0,1.044,4.65,791,1148,Xilinx was acquired by AMD.
+SP500,NDSN,2022-02-15,2022-02-14,2022-02-10,replacement,209.8607,2.896,-1.49,-5.993,787,1152,Advanced Micro Devices acquired Xilinx.
+NDX,ODFL,2022-01-24,2022-01-21,2022-01-13,rebalance,144.7157,2.778,-3.474,-8.477,771,1168,Peloton did not meet the minimum monthly weight requirements.
+SP500,WTW,2022-01-10,2022-01-07,2022-01-07,other,218.0368,1.769,-0.792,-1.186,762,1177,Willis Towers Watson changed its ticker symbol from WLTW to WTW.
+NDX,PANW,2021-12-20,2021-12-17,,rebalance,88.3567,4.233,0.181,,748,1191,Annual index reconstitution. Cerner was acquired by Oracle Corporation and rebranded as Oracle Health.
+NDX,DDOG,2021-12-20,2021-12-17,,rebalance,170.16,7.023,-0.213,,568,1191,Annual index reconstitution.
+NDX,ZS,2021-12-20,2021-12-17,,rebalance,304.87,6.661,-0.417,,748,1191,Annual index reconstitution.
+SP500,SEDG,2021-12-20,2021-12-17,2021-12-03,rebalance,288.85,6.039,-1.458,-9.321,748,1191,Market capitalization changes.
+NDX,FTNT,2021-12-20,2021-12-17,,rebalance,66.766,4.934,0.52,,748,1191,Annual index reconstitution.
+SP500,FDS,2021-12-20,2021-12-17,2021-12-03,rebalance,449.0839,2.253,0.915,0.57,748,1191,Market capitalization changes.
+NDX,ABNB,2021-12-20,2021-12-17,,rebalance,157.91,5.548,-1.703,,258,1191,Annual index reconstitution.
+SP500,EPAM,2021-12-14,2021-12-13,2021-12-07,replacement,685.0,4.461,1.304,19.588,744,1195,Canadian Pacific acquired Kansas City Southern.
+SP500,MTCH,2021-09-20,2021-09-17,2021-09-03,rebalance,150.8761,3.607,0.933,6.818,684,1255,Market capitalization changes.
+SP500,BRO,2021-09-20,2021-09-17,2021-09-03,rebalance,55.0124,1.614,-0.342,-2.929,684,1255,Market capitalization changes.
+SP500,TECH,2021-08-30,2021-08-27,2021-08-24,replacement,120.9589,2.489,1.268,3.149,670,1269,Analog Devices acquired Maxim Integrated Products.
+NDX,CRWD,2021-08-26,2021-08-25,2021-08-24,replacement,67.5,3.881,2.014,9.845,557,1271,Maxim Integrated Products was acquired by Analog Devices.
+NDX,HON,2021-07-21,2021-07-20,2021-07-14,replacement,204.0247,1.721,1.52,2.49,642,1297,Alexion Pharmaceuticals was acquired by AstraZeneca.
+SP500,MRNA,2021-07-21,2021-07-20,2021-07-15,replacement,307.33,6.382,3.855,24.597,642,1297,AstraZeneca acquired Alexion Pharmaceuticals.
+SP500,CRL,2021-05-14,2021-05-13,2021-05-10,replacement,321.01,2.615,-0.533,-6.288,596,1343,Teledyne Technologies acquired FLIR Systems.
+SP500,PTC,2021-04-20,2021-04-19,2021-04-15,replacement,139.8,3.101,-0.316,-4.612,578,1361,Siemens Healthineers acquired Varian Medical Systems.
+SP500,NXPI,2021-03-22,2021-03-19,2021-03-12,rebalance,183.3006,4.775,1.447,7.504,558,1381,Market capitalization changes.
+SP500,PENN,2021-03-22,2021-03-19,2021-03-12,rebalance,117.37,8.274,-0.206,-10.384,558,1381,Market capitalization changes.
+SP500,GNRC,2021-03-22,2021-03-19,2021-03-12,rebalance,305.63,5.763,-0.567,-7.876,558,1381,Market capitalization changes.
+SP500,CZR,2021-03-22,2021-03-19,2021-03-12,rebalance,89.32,6.009,-0.49,-11.345,558,1381,Market capitalization changes.
+SP500,TRMB,2021-01-21,2021-01-20,2021-01-15,other,71.42,3.072,1.433,2.218,517,1422,
+SP500,ENPH,2021-01-07,2021-01-06,2020-12-30,replacement,203.38,6.574,3.439,19.495,508,1431,LVMH Moet Hennessy-Louis Vuitton SE acquired Tiffany & Co.
+NDX,AEP,2020-12-21,2020-12-18,2020-12-11,rebalance,67.799,2.003,-0.61,0.982,497,1442,Annual index reconstitution.
+NDX,MRVL,2020-12-21,2020-12-18,2020-12-11,rebalance,46.4719,2.789,2.412,10.72,497,1442,Annual index reconstitution.
+NDX,MTCH,2020-12-21,2020-12-18,2020-12-11,rebalance,148.8886,3.776,2.078,5.261,497,1442,Annual index reconstitution.
+NDX,OKTA,2020-12-21,2020-12-18,2020-12-11,rebalance,271.81,4.543,2.215,9.694,497,1442,Annual index reconstitution.
+NDX,PTON,2020-12-21,2020-12-18,2020-12-11,rebalance,139.84,5.591,2.84,18.519,312,1442,Annual index reconstitution.
+NDX,TEAM,2020-12-21,2020-12-18,2020-12-11,rebalance,247.78,3.372,2.67,9.063,497,1442,Annual index reconstitution.
+NDX,KDP,2020-10-19,2020-10-16,2020-10-10,rebalance,25.7331,2.162,1.532,1.744,453,1486,Western Digital did not meet the minimum monthly weight requirements.
+SP500,POOL,2020-10-07,2020-10-06,2020-10-01,replacement,302.7622,2.856,1.035,-1.952,445,1494,Morgan Stanley acquired E*Trade.
+SP500,ETSY,2020-09-21,2020-09-18,2020-09-04,rebalance,111.75,5.36,-0.631,-3.83,433,1506,Market capitalization changes.
+SP500,TER,2020-09-21,2020-09-18,2020-09-04,rebalance,74.6852,3.315,-1.615,-6.786,433,1506,Market capitalization changes.
+NDX,MRNA,2020-07-20,2020-07-17,2020-07-13,rebalance,94.85,8.206,4.443,51.493,389,1550,CoStar did not meet the minimum monthly weight requirements.
+SP500,BIO,2020-06-22,2020-06-19,2020-06-12,rebalance,451.96,3.218,-0.425,3.037,370,1569,Market capitalization changes.
+SP500,TDY,2020-06-22,2020-06-19,2020-06-12,other,320.97,3.465,-1.879,-6.1,370,1569,
+SP500,TYL,2020-06-22,2020-06-19,2020-06-12,rebalance,333.21,3.581,-1.291,-5.311,370,1569,Market capitalization changes.
+NDX,DOCU,2020-06-22,2020-06-19,2020-06-12,rebalance,161.42,5.866,1.74,8.408,370,1569,United Airlines did not meet the minimum monthly weight requirements.
+SP500,WST,2020-05-22,2020-05-21,2020-05-18,rebalance,207.6971,3.545,1.666,-1.471,350,1589,Market capitalization changes.
+SP500,DPZ,2020-05-12,2020-05-11,2020-05-06,rebalance,346.1228,3.414,1.268,1.623,342,1597,Market capitalization changes.
+SP500,DXCM,2020-05-12,2020-05-11,2020-05-06,replacement,105.34,5.176,4.401,15.669,342,1597,Allergan was acquired by AbbVie.
+NDX,ZM,2020-04-30,2020-04-29,2020-04-23,rebalance,146.48,8.656,0.11,-2.509,260,1605,WTW did not meet the minimum monthly weight requirements.
+NDX,DXCM,2020-04-20,2020-04-17,2020-04-10,rebalance,80.85,7.944,2.427,17.485,326,1613,American Airlines did not meet the minimum monthly weight requirements.
+SP500,HWM,2020-04-01,2020-03-31,2020-05-05,other,12.1316,10.604,-1.64,3.062,314,1625,Arconic separated into 2 companies - Howmet remained in the index.
+SP500,IR,2020-03-02,2020-02-28,2020-02-27,replacement,32.5995,3.106,-2.999,-8.28,292,1647,"Gardner Denver acquired Ingersoll Rand's industrial businesses then changed its name to the ""new"" Ingersoll Rand Inc."
+SP500,PAYC,2020-01-28,2020-01-27,2020-01-22,replacement,304.1621,2.439,3.092,4.253,269,1670,Centene acquired Wellcare.
+SP500,LYV,2019-12-23,2019-12-20,2019-12-13,rebalance,71.55,3.271,1.74,3.053,246,1693,Market capitalization changes.
+SP500,ZBRA,2019-12-23,2019-12-20,2019-12-13,rebalance,252.49,2.078,0.27,-2.242,246,1693,Market capitalization changes.
+SP500,STE,2019-12-23,2019-12-20,2019-12-13,rebalance,140.8769,1.508,-0.356,-2.486,246,1693,Market capitalization changes.
+NDX,CDW,2019-12-23,2019-12-20,2019-12-13,rebalance,131.7491,1.527,3.059,5.205,246,1693,Annual index reconstitution.
+NDX,CPRT,2019-12-23,2019-12-20,2019-12-13,rebalance,22.68,1.88,1.355,2.532,246,1693,Annual index reconstitution.
+NDX,CSGP,2019-12-23,2019-12-20,2019-12-13,rebalance,60.437,2.282,1.154,6.358,246,1693,Annual index reconstitution.
+SP500,ODFL,2019-12-09,2019-12-06,2019-12-02,replacement,59.5257,1.877,-1.016,-3.712,236,1703,BB&T acquired SunTrust to form Truist Financial.
+SP500,WRB,2019-12-05,2019-12-04,2019-11-27,replacement,26.4383,1.54,-0.056,-1.473,234,1705,CBS acquired Viacom to form ViacomCBS.
+NDX,EXC,2019-11-21,2019-11-20,2019-11-18,replacement,25.4045,1.558,0.477,0.755,225,1714,Celgene was acquired by Bristol Myers Squibb.
+SP500,NOW,2019-11-21,2019-11-20,2019-11-18,replacement,56.6,3.166,3.282,8.863,225,1714,Bristol-Myers Squibb acquired Celgene.
+SP500,LVS,2019-10-03,2019-10-02,2019-09-20,rebalance,51.4019,2.557,-0.183,-1.876,190,1749,Market capitalization changes.
+SP500,CDW,2019-09-23,2019-09-20,2019-09-17,replacement,110.5162,2.576,1.773,7.133,182,1757,Global Payments acquired TSS.
+SP500,LDOS,2019-08-09,2019-08-08,2019-08-01,replacement,76.1699,2.331,1.312,2.192,152,1787,Occidental Petroleum acquired Anadarko Petroleum.
+SP500,IEX,2019-08-09,2019-08-08,2019-08-01,rebalance,148.5972,1.837,-0.733,-3.626,152,1787,Market capitalization changes.
+SP500,TMUS,2019-07-15,2019-07-12,2019-07-09,replacement,75.5416,2.033,2.113,5.051,133,1806,IBM acquired Red Hat.
+SP500,MKTX,2019-07-01,2019-06-28,2019-06-24,replacement,297.4761,3.259,0.424,-3.501,124,1815,L3 was acquired by Harris Corporation.
+SP500,AMCR,2019-06-11,2019-06-10,2019-06-03,replacement,39.3905,0.0,,0.0,110,1829,BMS changed to AMCR post merger with Amcor; subsequently renamed to Amcor.
+SP500,DD,2019-06-03,2019-05-31,2019-05-28,other,70.5095,2.702,-1.826,-1.802,104,1835,DWDP changed to DD after spinning off Corteva.
