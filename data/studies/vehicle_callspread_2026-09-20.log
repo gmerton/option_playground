@@ -1,0 +1,47 @@
+call spread constructible on 93 of 158 repriced trades
+call spread: median width $2.2, median debit $1.79 (20% of width, max 412%)
+repriced 158 of 166 closed stock longs | median ATM IV 75% | hold med 0d | move med -1.05%
+
+PER CONTRACT vs 100 SHARES:
+  stock                      n 158  total   -15568  win  24%  mean    -99  worst -4432  best +9992
+  ATM call                   n 158  total   -24821  win  14%  mean   -157  worst -3269  best +5590
+  short 30d put              n 158  total    -6298  win  22%  mean    -40  worst -864  best +2486
+  put spread 30/15           n 158  total    -4744  win  18%  mean    -30  worst -617  best +1251
+  CALL spread 30/15 (debit)  n  93  total      +37  win  17%  mean     +0  worst -212  best +1144
+
+RISK-EQUALIZED to the stock's 2% stop risk:
+  stock                  n 158  total   -15568  win  24%  mean    -99
+  call                   n 158  total    -5923  win  14%  mean    -37
+  short put stopped 2x   n 158  total    -1375  win  22%  mean     -9
+  put spread             n 158  total    -1472  win  18%  mean     -9
+  CALL spread (debit)    n  93  total    -2605  win  17%  mean    -28
+  same-day     n= 83 | stock  -14119 | call  -11966 | short put   -8673 | spread   -4195 | call spread   -1309
+  1-3 days     n= 39 | stock   -1191 | call   -5351 | short put    -333 | spread    -811 | call spread    +846
+  4+ days      n= 36 | stock    -258 | call   -7504 | short put   +2708 | spread    +262 | call spread    +501
+  extended     n= 73 | stock  -12725 | call  -17197 | short put   -2663 | spread   -2390 | call spread   +1072
+  not extended n= 85 | stock   -2843 | call   -7624 | short put   -3635 | spread   -2353 | call spread   -1035
+
+
+=== MATCHED SAMPLE: the 93 trades where ALL FIVE vehicles exist ===
+(the table above compares the call spread's 93 rows against the other arms' 158 -- composition, not vehicle)
+
+PER CONTRACT:
+  stock                total    +7897  win  33%  mean    +85  worst -4432  best +9992
+  ATM call             total    -3601  win  19%  mean    -39  worst -3269  best +5590
+  short 30d put        total     +917  win  30%  mean    +10  worst -864  best +2486
+  put spread 30/15     total     -177  win  28%  mean     -2  worst -617  best +1251
+  CALL spread 30/15    total      +37  win  17%  mean     +0  worst -212  best +1144
+
+RISK-EQUALIZED to the stock's 2% stop risk:
+  stock                  total    +7897  win  33%  mean    +85
+  call                   total    -1779  win  19%  mean    -19
+  short put stopped 2x   total      -57  win  30%  mean     -1
+  put spread             total     -199  win  28%  mean     -2
+  CALL spread (debit)    total    -2605  win  17%  mean    -28
+
+BY BUCKET (matched):
+  same-day     n= 45 | stock   -7107 | call   -6090 | short put   -4444 | put spr   -1993 | CALL spr   -1309
+  1-3 days     n= 18 | stock   +9387 | call   +4510 | short put   +1858 | put spr    +846 | CALL spr    +846
+  4+ days      n= 30 | stock   +5617 | call   -2021 | short put   +3503 | put spr    +970 | CALL spr    +501
+  extended     n= 29 | stock   +9007 | call   +1479 | short put   +3014 | put spr   +1348 | CALL spr   +1072
+  not extended n= 64 | stock   -1111 | call   -5080 | short put   -2097 | put spr   -1525 | CALL spr   -1035
