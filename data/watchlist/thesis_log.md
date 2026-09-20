@@ -52,17 +52,21 @@ call should cost a premium, not a position. Size as a lottery ticket.
   close. The rest is most likely the quarterly re-weighting SNDK earns in indices it is ALREADY in (NDX
   quarterly reconstitution + S&P float/share-count updates, all effective 9/21) after its market cap ran.
   Not verified to the dollar; the decomposition does not change the conclusion.
-- **Expected consequence:** rebalance demand is a one-time purchase, not a re-rating. The last ~$50 of Friday's
-  close (1,740 pre-auction -> 1,791.82) has no natural follow-on bid. Horizon: 1-10 sessions.
+- **Expected consequence:** ~~the pop gives it back~~ **TESTED 2026-09-20 AND NOT SUPPORTED.** 173 S&P 500 /
+  NDX adds 2019-26: holding from the auction close returns -1.00% at T+5 (40% win vs ~51% for every control),
+  but the pre-registered test came in at t -0.83 against a bar of 3, and no arm reaches |t| 1.4 against post /
+  xname / extension-matched controls. A give-back is the way to bet if forced; it is not a tradeable claim,
+  and extension does not sort it. **Do not sell on flow logic.** See index_add_study_2026-09-20.md.
+  What survives is mechanical, not statistical: the auction close is not a trend close, so read the day off
+  1,740, not 1,791.82.
 - **Vehicle:** already on: 4 shares, $7,167 = 8.8% of NAV. No add.
 - **Already priced?** Yes, by construction — +17.9% in two sessions off the 9/16 close, +26% off the 20-day
   low, +2.11 ADR over the 21 EMA at Friday's close.
 - **Invalidator:** SNDK holds and extends on real (non-auction) volume in the first 2-3 sessions after the
   effective date — then the move is the memory cycle, not the rebalance. The other side: a close back under
   1,686.50 says the auction pop was the whole trade.
-- **Untested:** no index-flow study in the book yet — `data/studies/index_adds_events.csv` (173 events,
-  2019-2026) is the event set built to settle it. Closest tested analogues: event convexity (sell within 5
-  sessions) and the oil transmission map (the trade dies once the equity has run >10%).
+- **Tested:** `data/studies/index_add_study_2026-09-20.md` (173 events, 2019-2026) — FAIL, no index-add
+  reversal. The question is closed; "index add" is not a reason to buy, hold, fade or size differently.
 - **Size:** open risk to the close-judged stop (1,686.50) = $50 = 0.06% of NAV; to the 1,595 resting stop
   = $416 = 0.51% of NAV.
 - **Outcome:**
