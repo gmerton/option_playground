@@ -1,0 +1,82 @@
+3,377 constructible spreads | 755 event / 2,622 control
+median width $5.0 | median debit $0.68 (12% of width) | median MAX return 700%
+median long delta 0.250 | median short delta 0.120 | median DTE 30
+
+=== spread — event (755) ===
+          n  mean  median   p_2x  p_5x  p_10x  p_tot_loss     best
+hold  754.0 -9.47 -100.00  13.53  9.81   0.53       78.78  1727.42
+5d    755.0 -3.59  -45.83  14.44  1.72   0.00       18.54   810.26
+10d   755.0  0.79  -75.00  17.22  5.30   0.00       38.41   891.45
+
+=== spread — control (2,622) ===
+           n   mean  median   p_2x  p_5x  p_10x  p_tot_loss     best
+hold  2620.0 -11.24 -100.00  13.09  8.93   1.22       79.47  1601.75
+5d    2622.0 -23.56  -51.27   8.43  0.46   0.00       16.59   631.58
+10d   2622.0 -16.02  -79.48  12.51  3.32   0.23       35.62  1457.38
+
+=== naked25 — event (755) ===
+          n   mean  median   p_2x  p_5x  p_10x  p_tot_loss     best
+hold  754.0   2.27  -98.19  11.67  7.56   2.65       69.36  4072.84
+5d    755.0  23.47  -37.25  15.76  3.58   1.06        4.90  2035.59
+10d   755.0  20.75  -65.91  15.89  5.30   1.46       19.74  2202.73
+
+=== naked25 — control (2,622) ===
+           n  mean  median   p_2x  p_5x  p_10x  p_tot_loss     best
+hold  2620.0  1.10  -98.46  12.25  7.63   2.67       71.49  4361.54
+5d    2622.0 -1.01  -38.90  11.52  1.60   0.19        1.07  2145.61
+10d   2622.0  2.16  -66.82  12.85  4.50   0.92       14.30  2778.38
+
+=== naked12 — event (755) ===
+          n   mean  median   p_2x  p_5x  p_10x  p_tot_loss     best
+hold  754.0   0.69  -96.67   7.16  5.44   2.65       61.14  6388.37
+5d    755.0  25.40  -50.72  13.51  4.64   1.72        3.31  3976.23
+10d   755.0  15.54  -71.93  12.98  4.90   1.59       18.01  3832.10
+
+=== naked12 — control (2,622) ===
+           n  mean  median   p_2x  p_5x  p_10x  p_tot_loss     best
+hold  2620.0  1.13  -96.67   7.14  5.38   2.98       60.84  7380.00
+5d    2622.0 -6.49  -50.00  10.07  2.21   0.53        1.83  4060.00
+10d   2622.0  0.37  -72.25  10.56  4.04   1.37       12.36  7553.33
+
+
+=== EVENT MINUS CONTROL (percentage points) — this is the finding ===
+
+--- house fill: mid +/- 25% of spread, per leg ---
+              event_mean  control_mean  gap_pp  p5x_gap_pp  tot_loss_evt
+spread_hold        -9.47        -11.24    1.76        0.88         78.68
+spread_5d          -3.59        -23.56   19.97        1.26         18.54
+spread_10d          0.79        -16.02   16.81        1.98         38.41
+naked25_hold        2.27          1.10    1.17       -0.08         69.27
+naked25_5d         23.47         -1.01   24.48        1.97          4.90
+naked25_10d        20.75          2.16   18.59        0.80         19.74
+naked12_hold        0.69          1.13   -0.44        0.05         61.06
+naked12_5d         25.40         -6.49   31.89        2.42          3.31
+naked12_10d        15.54          0.37   15.17        0.86         18.01
+
+--- mid-to-mid, zero friction ---
+              event_mean  control_mean  gap_pp  p5x_gap_pp  tot_loss_evt
+spread_hold        20.42         19.03    1.39        0.18         72.85
+spread_5d          33.72         13.18   20.54        1.50         11.52
+spread_10d         36.96         20.68   16.27        1.22         28.48
+naked25_hold       15.03         14.15    0.88       -0.18         57.88
+naked25_5d         35.76         11.57   24.19        1.50          2.52
+naked25_10d        33.82         14.82   19.00        1.23         14.97
+naked12_hold       30.80         30.31    0.49        0.05         41.59
+naked12_5d         55.24         19.16   36.08        2.57          1.72
+naked12_10d        43.85         26.46   17.39        0.94         10.60
+
+=== friction cost: house fill minus mid, event entries, mean pp ===
+    spread hold:  -29.90 pp
+    spread   5d:  -37.31 pp
+    spread  10d:  -36.16 pp
+   naked25 hold:  -12.76 pp
+   naked25   5d:  -12.29 pp
+   naked25  10d:  -13.07 pp
+   naked12 hold:  -30.10 pp
+   naked12   5d:  -29.84 pp
+   naked12  10d:  -28.31 pp
+
+=== does the cap bind? share of EVENT trades whose naked leg beat the spread's max ===
+  hold:   4.2% of event trades had the long leg exceed the spread's capped max return
+    5d:   1.7% of event trades had the long leg exceed the spread's capped max return
+   10d:   2.4% of event trades had the long leg exceed the spread's capped max return
