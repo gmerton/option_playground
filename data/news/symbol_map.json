@@ -1,0 +1,9 @@
+{
+ "note": "ticker -> EXCHANGE:TICKER for the TradingView MCP. The prefix must be exact; the provider rejects a wrong one and says not to retry alternates.",
+ "updated": "2026-09-20T15:47:34",
+ "map": {
+  "CF": "NYSE:CF",
+  "NVDA": "NASDAQ:NVDA",
+  "SNDK": "NASDAQ:SNDK"
+ }
+}

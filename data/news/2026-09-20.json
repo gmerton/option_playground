@@ -1,0 +1,82 @@
+{
+ "schema": 1,
+ "date": "2026-09-20",
+ "source": "tradingview-mcp",
+ "pulled_at": "2026-09-20T15:48:39",
+ "universe": [
+  "CF",
+  "NVDA",
+  "SNDK",
+  "TGTX"
+ ],
+ "items": [
+  {
+   "ticker": "CF",
+   "published": "2026-09-15T08:04:00-04:00",
+   "headline": "CF Jumps 24% in the Past 3 Months: What's Driving the Stock?",
+   "url": "https://www.tradingview.com/news/zacks:c18ad80c4094b:0-cf-jumps-24-in-the-past-3-months-what-s-driving-the-stock/",
+   "summary": "",
+   "provider": "Zacks",
+   "story": "",
+   "tags": []
+  },
+  {
+   "ticker": "CF",
+   "published": "2026-09-17T11:05:55-04:00",
+   "headline": "CF, NUE lead top 10 large-cap U.S. materials stocks with strong momentum grades",
+   "url": "https://www.tradingview.com/news/seekingalpha:46ebee3fd094b:0-cf-nue-lead-top-10-large-cap-u-s-materials-stocks-with-strong-momentum-grades/",
+   "summary": "",
+   "provider": "Seeking Alpha",
+   "story": "",
+   "tags": [
+    "multi-symbol"
+   ]
+  },
+  {
+   "ticker": "CF",
+   "published": "2026-09-18T07:37:48-04:00",
+   "headline": "These materials stocks stand out for strong dividend growth",
+   "url": "https://www.tradingview.com/news/seekingalpha:54c7adda4094b:0-these-materials-stocks-stand-out-for-strong-dividend-growth/",
+   "summary": "",
+   "provider": "Seeking Alpha",
+   "story": "",
+   "tags": [
+    "multi-symbol"
+   ]
+  },
+  {
+   "ticker": "SNDK",
+   "published": "2026-09-18T13:49:40-04:00",
+   "headline": "Why is SanDisk stock gaining 8% today?",
+   "url": "https://www.tradingview.com/news/invezz:27a73055a094b:0-why-is-sandisk-stock-gaining-8-today/",
+   "summary": "",
+   "provider": "Invezz",
+   "story": "",
+   "tags": [
+    "multi-symbol"
+   ]
+  },
+  {
+   "ticker": "SNDK",
+   "published": "2026-09-19T04:07:19-04:00",
+   "headline": "Trader Loracle's Short Positions in Sandisk and HYPE Face Large Unrealized Losses",
+   "url": "https://www.tradingview.com/news/binance_news:19db64244094b:0-trader-loracle-s-short-positions-in-sandisk-and-hype-face-large-unrealized-losses/",
+   "summary": "",
+   "provider": "Binance News",
+   "story": "",
+   "tags": []
+  },
+  {
+   "ticker": "SNDK",
+   "published": "2026-09-20T17:14:00-04:00",
+   "headline": "3 Bullish Setups for the Week Ahead",
+   "url": "https://www.tradingview.com/news/zacks:af7174a18094b:0-3-bullish-setups-for-the-week-ahead/",
+   "summary": "",
+   "provider": "Zacks",
+   "story": "",
+   "tags": [
+    "multi-symbol"
+   ]
+  }
+ ]
+}

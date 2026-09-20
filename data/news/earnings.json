@@ -1,0 +1,34 @@
+{
+ "schema": 1,
+ "source": "tradingview-mcp",
+ "pulled_at": "2026-09-20T15:47:34",
+ "rows": {
+  "CF": {
+   "ticker": "CF",
+   "next_release": "2026-09-30",
+   "last_release": "2026-08-05",
+   "eps_forecast": 3.02,
+   "revenue_forecast": 1794308302,
+   "name": "CF Industries Holdings, Inc.",
+   "pulled_at": "2026-09-20T15:47:34"
+  },
+  "NVDA": {
+   "ticker": "NVDA",
+   "next_release": "2026-10-31",
+   "last_release": "2026-08-26",
+   "eps_forecast": 2.47,
+   "revenue_forecast": 108704835183,
+   "name": "NVIDIA Corporation",
+   "pulled_at": "2026-09-20T15:47:34"
+  },
+  "SNDK": {
+   "ticker": "SNDK",
+   "next_release": "2026-09-30",
+   "last_release": "2026-08-05",
+   "eps_forecast": 46.12,
+   "revenue_forecast": 10636460049,
+   "name": "Sandisk Corporation",
+   "pulled_at": "2026-09-20T15:47:34"
+  }
+ }
+}
