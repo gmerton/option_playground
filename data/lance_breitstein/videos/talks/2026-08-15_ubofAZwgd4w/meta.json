@@ -1,0 +1,19 @@
+{
+  "video_id": "ubofAZwgd4w",
+  "url": "https://www.youtube.com/watch?v=ubofAZwgd4w",
+  "title": "My Trade Grading System that Made Me $100M (A,B,C,D)",
+  "channel": "TheOneLanceB",
+  "channel_id": "UCzksXiC-Ju-DTIZmMiaOVfQ",
+  "stream_date": "2026-08-15",
+  "duration": "11:06",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

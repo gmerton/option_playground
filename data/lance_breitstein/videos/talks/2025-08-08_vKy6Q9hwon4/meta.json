@@ -1,0 +1,19 @@
+{
+  "video_id": "vKy6Q9hwon4",
+  "url": "https://www.youtube.com/watch?v=vKy6Q9hwon4",
+  "title": "Copy My Trading Report Card That Made Me $100 Million",
+  "channel": "TheOneLanceB",
+  "channel_id": "UCzksXiC-Ju-DTIZmMiaOVfQ",
+  "stream_date": "2025-08-08",
+  "duration": "12:16",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

@@ -1,0 +1,19 @@
+{
+  "video_id": "U9UZ2U6bozQ",
+  "url": "https://www.youtube.com/watch?v=U9UZ2U6bozQ",
+  "title": "Watch Before Trading 0DTE Options",
+  "channel": "TheOneLanceB",
+  "channel_id": "UCzksXiC-Ju-DTIZmMiaOVfQ",
+  "stream_date": "2026-04-04",
+  "duration": "10:05",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

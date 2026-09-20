@@ -1,0 +1,19 @@
+{
+  "video_id": "vGqaqTUxMG4",
+  "url": "https://www.youtube.com/watch?v=vGqaqTUxMG4",
+  "title": "Can YOU Spot the 4 KEY Days!?",
+  "channel": "TheOneLanceB",
+  "channel_id": "UCzksXiC-Ju-DTIZmMiaOVfQ",
+  "stream_date": "2025-05-31",
+  "duration": "11:27",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

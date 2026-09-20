@@ -1,0 +1,19 @@
+{
+  "video_id": "M-rpkVekvOQ",
+  "url": "https://www.youtube.com/watch?v=M-rpkVekvOQ",
+  "title": "The 60-Day Trading Routine to Becoming Profitable",
+  "channel": "TheOneLanceB",
+  "channel_id": "UCzksXiC-Ju-DTIZmMiaOVfQ",
+  "stream_date": "2026-09-12",
+  "duration": "6:18",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

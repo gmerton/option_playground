@@ -1,0 +1,129 @@
+[00:00] There is one system that I apply to every single trade I take and it determines how much size I trade with. Whereas most traders view a chart setup as binary, you either take the trade or
+
+[00:09] you don't, I'm grading every opportunity A through D based on the quality of the setup. And if you're not doing this, it has the potential to take your trading to that next level. So, let me explain
+
+[00:19] how to do it, why to do it, and provide you real examples. I'm Lance and after 15 years of sacrificing my health for wealth trading, I've achieved all my goals as a trader. I made my bag up,
+
+[00:29] featured in Market Wizards, and now I love mentoring [music] traders like you. So, I'm here to level the playing field and give you the same education I gave traders on Wall Street,
+
+[00:38] so that you can learn [music] from someone real how to sacrifice your health for that oh-so-good wealth. So, here's the thing, most traders treat every trade like it's the same quality.
+
+[00:47] As a result, they size it the same, even when it's not. Much like in poker, different chart setups are of different quality, just like the poker hands are. In trading, that doesn't mean any given
+
+[00:58] chart setup will win every time, just that the expected value of some are better than others and we want to treat them as such. To help us do that, I have traders that I work with using A through
+
+[01:09] D scale like in school, but you can use whatever makes sense to you. I even also use pluses and minuses because of all the nuances in between. But, the main point is just to emphasize that chart
+
+[01:19] setups fall on a spectrum of quality. D for me is a no trade. That's it. A D means you pass on it. Doesn't matter how much you want it, doesn't matter that you've been bored all day, a D trade is
+
+[01:30] equivalent to the dozens of hands you fold in poker. Except in trading, there are millions of combinations of awful chart setups. Literally, 99.9% of charts are D grade or worse and you want to
+
+[01:41] totally skip over them. Because while an occasional one will work, same as the fact that a 2-7 hand in poker can win some hands, but loses over the long run, D setups will bleed you dry over time. A
+
+[01:52] C grade setup for me is small capital or a feeler trade. It's equivalent to limping into the pot in poker cuz you want to see what happens. It's a real setup, but most of the stars are just
+
+[02:02] not aligning. Maybe two boxes are checked in Q arm. Maybe the market environment isn't cooperating. C trades get a fraction of your normal size. You're basically paying a small fee to
+
+[02:12] stay engaged and to be positioned in case the setup improves. Because you're putting on some risk, this means it's at least marginally break even expected value or better. If you don't fully
+
+[02:22] understand the expected value concept, be sure to check out this video. B is your bread and butter. Normal everyday trade. Your standard size. Most of your trades, if you're doing this like I do,
+
+[02:31] should be B trades. The setup checks the boxes. Nothing is exceptional, nothing is broken, and it's a positive expected value trade. This is the trade you take hundreds of times per year, and your
+
+[02:41] edge plays out through repetition. B trades are boring, and boring is good. Boring pays the bills. An A grade setup is exceptional. This is the one. Everything lines up. The chart, the
+
+[02:52] catalyst, the market, the tape, all of it is pointing in the same direction. Depending on how you define it, an A trade might be the best trade of the day or the handful of best trades of the
+
+[03:01] month. And when they show up, this is where you size up. Most traders P&L, if you actually break it down, comes from a small number of these trades. The A system is about recognizing those trades
+
+[03:12] before they play out, not after. Now, for all of these, I have plusses and minuses, like I mentioned before. But before anyone in the comments starts asking, "Lance, what exactly makes an A
+
+[03:22] trade an A versus a B?" Stop and listen carefully. These grades and the plusses and minuses, it's all subjective, completely subjective. My A is not your A trade. A B plus for me might mean
+
+[03:33] something totally different for you. There is no formal definition of these trades engraved in the Bible or anywhere else. You define the grades based on your strategy, your risk tolerance, and
+
+[03:43] your historical data. The point is not to copy my rubric. The point is to have a rubric, to force yourself before every single trade to intentionally and systematically ask, how good is this
+
+[03:55] trade? Because the moment you ask that question, you've already separated yourself from the guy who's just clicking buttons based on vibes. And that brings me to the bigger idea here,
+
+[04:04] which is this. Most of trading, good trading, is essentially a rubric across different variables and nuances. Think about how a teacher grades an essay. It's not one thing. It's how the series
+
+[04:15] of qualities come together. Each category gets scored and the total determines the grade. A paper can have beautiful writing and a garbage argument and land a C. Trades work the exact same
+
+[04:24] way. Every setup is a collection of variables. Some are checked, some aren't. Some are strongly checked and some are barely checked. The higher the total score, the better the trade and
+
+[04:34] the more size it deserves. Real quick, I know some of you are skeptical of trading courses and you have every right to be thanks to all the influencer BS out there. But clearly you're consuming
+
+[04:44] my content for a reason. I deliver value to your trading. If that's true, why would it be any different for my trading course? I've spent over a year making it and it's used by top traders and pro
+
+[04:54] trading firms. So if you're serious about improving, check out the full curriculum at the onelanceb.com or a free works better for you, follow me here. Half of you viewing this aren't
+
+[05:04] following me and that is kind of like you text somebody each week but you never save their contact info. Super awkward. Now, back to the vid. Now keep in mind, different setups and different
+
+[05:15] strategies have different criteria. You cannot grade a capitulation trade with a breakout rubric. That's like grading a math test with a history essay rubric. The variables that make a panic sell-off
+
+[05:25] an A+ trade are almost the opposite of the variables that make a breakout an A+ trade. So you need a separate scorecard for every setup in your playbook. Let me show you exactly what I mean with two
+
+[05:36] simplified sample rubrics, capitulation trades and breakout trades. For capitulation trades, and these are panic sell-offs where everyone's puking at once and you're stepping in to catch the
+
+[05:45] reversal, I'm looking at five main variables. Again, just to simplify. Variable one, rate of change. How fast is this thing falling? A stock that grinds down 3% over a day is not
+
+[05:56] capitulation. That's just a down day. I want to see the kind of candle that makes people physically sick just looking at their account. The faster and more extreme the move, the more force
+
+[06:05] the selling, the more likely you get that elastic snapback. The slow bleed, lower grade, waterfall, now we're talking. Criteria two, how boring the stock is. People overlook this one, but
+
+[06:15] it's huge. I want a boring stock. A sleepy, nobody cares, low beta name that suddenly drops 15% in a day. That's unusual, and that kind of move in a boring name is way more likely to be an
+
+[06:26] overreaction. But a volatile momentum name that swings 15% every other Tuesday, a big drop there is just, well, a Tuesday. The move means nothing. Boring stock, violent move, that's the
+
+[06:37] combo. One recent example of this was a long trade I made in STRC. Boring preferred security, large sharp move. Criteria three, what the daily chart looks like. Zoom out. Is this stock
+
+[06:48] falling into multi-year support? Is it in a longer-term uptrend that's just getting a flush? Or is it a broken chart steadily grinding lower? Catching capitulation in a fundamentally healthy
+
+[06:58] chart at a major level, that's a check. Catching a falling knife in a chart that's been dying for 6 months, that's how you donate money to the market. Criteria four, what does the intraday
+
+[07:06] chart look like? Because I'm generally an intraday trader, the quality of the intraday chart ends up being the most important trait. In other words, this accounts for far more points than
+
+[07:16] anything else on the rubric. Everything else would need to line up absolutely perfectly if the intraday wasn't so good. And even then, I still might not take it. Criteria five, whether there
+
+[07:25] was news. For capitulation, I generally want no news, or old news that's clearly overblown relative to the move. If a stock drops 20% because earnings were catastrophic and guidance got slashed,
+
+[07:37] that's not capitulation. That's just repricing the news into that equity. The stock is supposed to be lower, but a 20% drop on no news or on some two-day-old analyst downgrade that doesn't actually
+
+[07:48] change the business, that's going to grab my attention. So, then we grade it. Say a boring utility type name drops 12% over two hours on no news into long-term support and the tape shows a huge
+
+[07:59] climax, that is going to be an A with a higher score and odds are I'm going to size up on it. Now, let's flip to breakouts and watch how the entire scorecard changes. Criteria one, the
+
+[08:10] quality of the consolidation. This is the foundation. How long has a stock been forming a base and how tightly has it been coiling all that energy? A stock that chopped sideways sloppily for five
+
+[08:20] days, there's nothing there. Long, tight, clean consolidation grades high on my list. Short, loose, messy consolidation grades low. Criteria two, the volume. Volume fuels breakouts. You
+
+[08:31] need interest and emotional reactions that lead to traders of all time frames piling in. Volume is a confirmation that everyone else was also paying attention to this level and finding it meaningful.
+
+[08:41] Criteria three, in-play stock that's ideally trading on news. What's the character of the stock and what's the story behind it? Is this a leader in a hot sector with a real narrative or is
+
+[08:51] it some random laggard drifting into a level? The best breakouts come from in-play stocks within hot sectors that are moving on material fresh catalysts. Criteria four, the overall market
+
+[09:01] conditions. And notice, this variable barely matters to me for capitulation trades because of those are more idiosyncratic dislocations, but for breakouts I need a cooperative market
+
+[09:11] generally. Breakouts in a strong uptrending market have the wind at their back. Breakouts in a choppier downtrending market heal constantly. It doesn't matter how great the base is. If
+
+[09:21] the indices are getting sold, most breakouts are traps. This one variable can single-handedly downgrade an A setup to a C or worse. Criteria five, quality of the daily chart. The best breakouts
+
+[09:32] align on multiple time frames. That's because you want the swing traders, the intraday traders, the hedge funds, and everyone else on your side. Really great daily charts pull in everyone. Notice
+
+[09:42] how many of these trades are totally different than for capitulation trades. Different setup, different rubric. So, how do you actually implement this? Three steps. First, write your rubrics
+
+[09:52] down, physically. For every setup in your playbook, list the four to six variables that matter the most. If you can't list them, you don't have a clearly defined setup. You're just
+
+[10:00] trading feelings. Second, grade every trade before you enter them and write the grade in your trading journal, not after. This helps hold you accountable and avoid hindsight bias. Third, and
+
+[10:10] this is the most important part, after a few months, go back and compare your grades to your results. Are your A trades actually outperforming your B trades? If yes, your rubric is real and
+
+[10:20] you should be sizing more aggressively on your A trades. If no, your criteria are wrong and now you know exactly what to fix. The grades turn your journal into actual data. There's a reason why
+
+[10:30] all the traders at SMB Capital live and die by this framework. It's because grading your trades and sizing them accordingly forces you to refine your process and have your sizing reflect the
+
+[10:40] opportunity, much like in poker. This is the difference between going broke or walking away from the table with a fat stack. Drop a comment with the variables that you use in your trading rubrics. I
+
+[10:49] read all these comments and I'm genuinely curious what boxes you guys are checking. If this video helped, hit the like button, subscribe if you're new, and I'll see you in the next one.

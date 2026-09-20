@@ -1,0 +1,19 @@
+{
+  "video_id": "eWeGAYvjxh4",
+  "url": "https://www.youtube.com/watch?v=eWeGAYvjxh4",
+  "title": "How to Sell Options Like a Wall Street Trader (My 4 Golden Rules)",
+  "channel": "TheOneLanceB",
+  "channel_id": "UCzksXiC-Ju-DTIZmMiaOVfQ",
+  "stream_date": "2026-05-09",
+  "duration": "11:55",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

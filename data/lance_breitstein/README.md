@@ -1,6 +1,6 @@
 # Lance Breitstein — Trading Knowledge Base
 
-Channel: [`@TheOneLanceB`](https://www.youtube.com/@TheOneLanceB) — 143 videos (manifest regenerated 2026-09-09), manifest in
+Channel: [`@TheOneLanceB`](https://www.youtube.com/@TheOneLanceB) — 145 videos (manifest regenerated 2026-09-09, +2 added by hand 2026-09-19), manifest in
 `channel_videos.txt`.
 
 Professional prop trader (ex-Bright Trading / SMB lineage), **intraday**, primarily

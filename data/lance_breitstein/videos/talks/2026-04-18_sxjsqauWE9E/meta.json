@@ -1,0 +1,19 @@
+{
+  "video_id": "sxjsqauWE9E",
+  "url": "https://www.youtube.com/watch?v=sxjsqauWE9E",
+  "title": "Reacting to Ross Cameron\u2019s Momentum Trading Strategy (Is He Legit?)",
+  "channel": "TheOneLanceB",
+  "channel_id": "UCzksXiC-Ju-DTIZmMiaOVfQ",
+  "stream_date": "2026-04-18",
+  "duration": "22:36",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

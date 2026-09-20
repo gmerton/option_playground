@@ -1,0 +1,19 @@
+{
+  "video_id": "ZOHG-OnQuos",
+  "url": "https://www.youtube.com/watch?v=ZOHG-OnQuos",
+  "title": "99% of Traders Don't Know How to Trade with the Trend",
+  "channel": "TheOneLanceB",
+  "channel_id": "UCzksXiC-Ju-DTIZmMiaOVfQ",
+  "stream_date": "2025-12-20",
+  "duration": "11:41",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}
