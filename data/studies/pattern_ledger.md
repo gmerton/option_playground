@@ -3,7 +3,7 @@
 _Every entry pattern tested with `lib.studies.pattern_test`, newest last._
 
 **Bar to pass:** beats the same-name random control, positive in both halves, |t| >= 3.
-**Multiple testing:** 21 patterns tested so far — at 5% significance, expect ~1.1 to clear by chance. Discount accordingly.
+**Multiple testing:** 23 patterns tested so far — at 5% significance, expect ~1.2 to clear by chance. Discount accordingly.
 
 | tested | name | timeframe | n | best_arm | meanR | ctrl | edge | t | half1 | half2 | passed | note |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -28,3 +28,5 @@ _Every entry pattern tested with `lib.studies.pattern_test`, newest last._
 | 2026-09-19 | 20d breakout ADR>=3, LOW-vol regime (panel p80, 1 ADR stop, hold 5) | daily | 24514 | t1R | -0.224 | 0.144 | -0.368 | -10.464 | -0.217 | -0.229 | False | Breitstein test 4 (high-vol gate SPLIT, not a new entry); regime = cross-sectional median 20d RV vs expanding-252 p80 |
 | 2026-09-19 | boring stock, violent move (drop >= 4x own ADR, ADR bottom tercile) | daily | 628 | ema20 | -0.158 | -0.608 | 0.45 | -3.554 | -0.007 | -0.242 | False | Breitstein test 2; stop = signal-bar low; ctrl = same name, random session, same month |
 | 2026-09-19 | violent move, any ADR (drop >= 4x own ADR) | daily | 1644 | stop_hold | -0.417 | -0.862 | 0.444 | -2.915 | -1.09 | -0.102 | False | Breitstein test 2; stop = signal-bar low; ctrl = same name, random session, same month; A/B leg for the boring-stock cell |
+| 2026-09-19 | counter-trend long: >=3 ADR below 20 EMA + prior-bar-high break | daily | 9015 | stop_hold | -0.154 | -0.482 | 0.328 | -1.726 | -0.223 | -0.096 | False | Breitstein test 3 |
+| 2026-09-19 | prior-bar-high break in a down leg, <3 ADR below 20 EMA (no extension gate) | daily | 155515 | ema20 | -0.084 | -0.146 | 0.062 | -4.161 | -0.102 | -0.072 | False | Breitstein test 3; B arm of the A/B |

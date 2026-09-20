@@ -6,7 +6,7 @@
 > long below VWAP *unless it capitulates*. Both are specced below; the long side of the prior-bar
 > break has never been tested.
 > **Type:** entry-location (+ trend definition, veto) · **Conviction:** 2.5/5
-> **Testability:** EOD for the counter-trend entry ⭐ · intraday-needed for the VWAP veto · **Tested?** no
+> **Testability:** EOD for the counter-trend entry ⭐ · intraday-needed for the VWAP veto · **Tested?** ✅ yes, 2026-09-19 — **fails** (see result at the end)
 > **Source:** `ZOHG-OnQuos`@[02:15–10:40] — "99% of Traders Don't Know How to Trade with the Trend" (2025-12-20),
 > with the setup precondition quantified in `vGqaqTUxMG4`@[03:28] — "Can YOU Spot the 4 KEY Days!?" (2025-05-31)
 
@@ -175,3 +175,18 @@ names trading **above** session VWAP for ≥ 15 consecutive minutes; control coh
 detector firing **below** VWAP without a preceding capitulation bar (bar range ≥ 2× the trailing
 30-minute mean range). Stop = session low at entry. Side: long. This tests the veto as a *filter on
 an existing detector*, which is what it is — not as a standalone entry.
+
+## ✅ Result (2026-09-19)
+
+`run_counter_trend_long.py` → `data/studies/breitstein_tests/counter_trend_long_2026-09-19.md`. Liquid panel,
+9,015 A signals / 155k B signals, 2019-10 → 2026-09.
+
+- **A (≥3 ADR below the 20 EMA + prior-bar-high break): every arm negative**, −0.15R (slow) to −0.33R (`t1R`),
+  both halves negative, 38% win. **B (the trigger without the gate): −0.08R, edge vs control ≈ 0** — the trigger
+  alone selects nothing.
+- The extension gate makes the absolute result WORSE and only looks better "vs control" because the same-name
+  control in those names is −0.43R (they keep falling). Day selection inside a losing name selection.
+- Deeper (≥5 ADR) −0.24 to −0.47R; + the 2× volume flush −0.23 to −0.46R, 33% win. More capitulation = worse.
+- `trail_bar` ties `ema20` in A and loses in 6/8 cells; `t1R` worst everywhere.
+- Mirror of the bouncy-ball short confirmed: counter-trend break entries on daily bars are 0 for 2.
+- Intraday VWAP-veto arm not run (parked; Stage A already priced the detector family at −0.10 to −0.13R).
