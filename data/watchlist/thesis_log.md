@@ -38,6 +38,29 @@ call should cost a premium, not a position. Size as a lottery ticket.
 
 ## Open
 
+### 2026-09-20 — SNDK: the Nasdaq-100 add is a FLOW event, and the flow already happened
+- **Reasoning:** Gabe is long 4 SNDK from 1,698.90 (9/18, ORB9 alert at 10:09). He reports the catalyst as
+  inclusion in the Nasdaq-100. Friday 9/18 was the third Friday (quarterly rebalance / effective before
+  Monday's open), and the tape shows the index trade: SNDK +3.25% between 15:30 and the close on 1.98M
+  shares in the last ten minutes (11% of the day's volume) while QQQ +0.31%, SPY +0.10%, MU +0.79%,
+  WDC +0.65%, STX +0.27%. That is a closing-auction print, not a trend close.
+- **Expected consequence:** index demand is a one-time purchase, not a re-rating. The last ~$50 of Friday's
+  close (1,740 pre-auction -> 1,791.82) has no natural follow-on bid; the academic base rate for index adds is
+  a run-up into the effective date and a partial reversal after it. Horizon: 1-10 sessions.
+- **Vehicle:** already on: 4 shares, $7,167 = 8.8% of NAV. No add.
+- **Already priced?** Yes, by construction — +17.9% in two sessions off the 9/16 close, +26% off the 20-day
+  low, +2.11 ADR over the 21 EMA at Friday's close. Every buyer the announcement created has now bought.
+- **Invalidator:** SNDK holds and extends on real (non-auction) volume in the first 2-3 sessions after the
+  effective date — then the move is the memory cycle, not the add, and the 20-EMA trail is the right frame.
+  The other side: a close back under 1,686.50 says the auction pop was the whole trade.
+- **Untested:** we have no index-inclusion study in the book. The closest tested analogues are the event-
+  convexity result (pre-event optionality pays, sell within 5 sessions) and the oil transmission map (the
+  trade dies once the equity has already run >10%). Both lean the same way. Neither is this event.
+- **Size:** open risk to the close-judged stop (1,686.50) = $50 = 0.06% of NAV; to the 1,595 resting stop
+  = $416 = 0.51% of NAV.
+- **Outcome:**
+- **Scored:**
+
 ### 2026-09-18 — energy equities have not priced the crude move (SEED ENTRY, Gabe to confirm or delete)
 - **Reasoning:** crude is +8.7% over 20 sessions on supply/geopolitical risk; energy equities normally capture
   roughly half of a crude move within the same window, and they have not.
