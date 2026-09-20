@@ -125,7 +125,7 @@ def _stats(x: pd.DataFrame, arm: str) -> dict:
 
 
 def _report(name: str, T: pd.DataFrame, K: pd.DataFrame, arms: list[str], split: str,
-            note: str, timeframe: str) -> pd.DataFrame:
+            note: str, timeframe: str, ledger: bool = True) -> pd.DataFrame:
     tab = pd.DataFrame({a: _stats(T, a) for a in arms}).T
     tab["ctrl"] = [K[a].dropna().mean() if len(K) and a in K else np.nan for a in arms]
     tab["edge"] = tab.meanR - tab.ctrl
@@ -141,9 +141,10 @@ def _report(name: str, T: pd.DataFrame, K: pd.DataFrame, arms: list[str], split:
     row = tab.loc[best]
     passed = (np.isfinite(row.get("edge", np.nan)) and row.edge > 0 and abs(row.t) >= 3
               and h1[best].mean() > 0 and h2[best].mean() > 0)
-    append_ledger(name=name, timeframe=timeframe, n=len(T), best_arm=best, meanR=row.meanR,
-                  ctrl=row.get("ctrl", np.nan), edge=row.get("edge", np.nan), t=row.t,
-                  half1=h1[best].mean(), half2=h2[best].mean(), passed=passed, note=note)
+    if ledger:
+        append_ledger(name=name, timeframe=timeframe, n=len(T), best_arm=best, meanR=row.meanR,
+                      ctrl=row.get("ctrl", np.nan), edge=row.get("edge", np.nan), t=row.t,
+                      half1=h1[best].mean(), half2=h2[best].mean(), passed=passed, note=note)
     print(f"\nbest arm by edge: {best} | passes the bar (beats control, both halves positive, |t|>=3): "
           f"{'YES' if passed else 'no'}")
     return tab
@@ -167,8 +168,9 @@ def append_ledger(**row) -> None:
 
 
 def run_daily(name: str, pattern, *, hold: int = 5, controls: int = 3, split: str = "2023-01-01",
-              note: str = "", panel: DailyPanel | None = None) -> pd.DataFrame:
-    """pattern(P) -> signal table (from daily_signals). Control = same name, random session, same month."""
+              note: str = "", panel: DailyPanel | None = None, ledger: bool = True) -> pd.DataFrame:
+    """pattern(P) -> signal table (from daily_signals). Control = same name, random session, same month.
+    ledger=False for parameter sweeps: report only, no ledger row (keeps the multiple-testing count honest)."""
     P = panel or load_panel()
     S = pattern(P)
     idx = P.close.index
@@ -194,7 +196,7 @@ def run_daily(name: str, pattern, *, hold: int = 5, controls: int = 3, split: st
     if T.empty:
         print(f"{name}: no signals"); return T
     T.to_parquet(REPO / f"data/cache/pattern_{name.replace(' ', '_').lower()}_daily.parquet", index=False)
-    return _report(name, T, K, DAILY_ARMS, split, note, "daily")
+    return _report(name, T, K, DAILY_ARMS, split, note, "daily", ledger=ledger)
 
 
 def run_intraday(name: str, pattern, *, controls: int = 3, split: str = "2026-06-01",

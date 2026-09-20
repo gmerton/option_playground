@@ -7,7 +7,7 @@
 > and size**, not direction. ⚠ Its central instruction — shorten the horizon, cut overnight exposure
 > — is the losing bucket in both of our books.
 > **Type:** regime + sizing · **Conviction:** 2.5/5
-> **Testability:** EOD ⭐ (the gate) · process/unfalsifiable (the rest) · **Tested?** no
+> **Testability:** EOD ⭐ (the gate) · process/unfalsifiable (the rest) · **Tested?** ✅ yes, 2026-09-19 — **no switch** (see result at the end)
 > **Source:** `mjfONTBf6M0` — "Best Practices to Navigate High-Volatility Markets" (2025-04-10),
 > recorded the day after the 9 Apr 2025 tariff-pause rally
 
@@ -184,3 +184,18 @@ def breakout_lovol(P):                                                 # arm B: 
 - **Bar to pass:** beats the same-name random control, positive in both halves, |t| ≥ 3 — noting
   that here the *interesting* statistic is the **A-vs-B difference in best arm**, which the ledger
   row will not capture on its own. Record it in the note field.
+
+## ✅ Result (2026-09-19)
+
+Run as specced: `run_hivol_gate_split.py` → `data/studies/breitstein_tests/hivol_gate_split_2026-09-19.md`
+(log + summary csv alongside). 41,795 signals 2020-02 → 2026-09; regime HIGH = 25.4% of sessions.
+
+- **The switch does not exist on daily bars.** Per exit arm, HIGH − LOW = −0.02 to +0.02R at p80;
+  `t1R` (his fast exit) is the **worst** arm in **both** halves (−0.22 vs slow arms −0.07/−0.09) and
+  in all 12 sweep cells (p70/p80/p90, 1/2 ADR stop, hold 5/20, VIX-defined regime).
+- Both arms negative, both lose to the same-name random control by 0.4–0.7R → nothing to gate.
+- Only sign of life: the p90 cell (n 3,363) is +0.12–0.20R better across every arm and the slow arms
+  turn +0.03 — a high-vol tape lifts everything (gap-study high-VIX tercile again), it does not
+  change which exit wins. Beta, not horizon. Control is +0.50 there, so still no entry.
+- Conclusion for the repo: **regime management = fixed small sizing, no switch** stands unchanged.
+  The exit-timing result (fast/same-day exits are the losing bucket) generalises across regimes.

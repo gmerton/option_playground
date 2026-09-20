@@ -1,0 +1,316 @@
+panel 1939 sessions x 1743 names; market RV (ann. %, cross-sectional median) p50 29.2 p80 36.9 p90 42.0 max 122.9 on 2020-04-06
+HIGH-vol (p80) episodes: 21; the 8 longest:
+   2026-04-08 -> 2026-08-26  (98 sessions)
+   2020-02-12 -> 2020-06-16  (87 sessions)
+   2022-04-29 -> 2022-07-12  (50 sessions)
+   2026-02-03 -> 2026-03-24  (35 sessions)
+   2022-02-15 -> 2022-04-01  (33 sessions)
+   2025-04-03 -> 2025-05-08  (25 sessions)
+   2022-11-02 -> 2022-12-02  (22 sessions)
+   2020-11-09 -> 2020-11-24  (12 sessions)
+
+
+================ panel pct=0.8 stop=1.0ADR hold=5 | regime defined 2020-02-12 -> 2026-09-18, HIGH share 25.4% of sessions ================
+
+=== 20d breakout ADR>=3, HIGH-vol regime (panel p80, 1 ADR stop, hold 5) (daily) — 17,281 signals, 1415 names, 2020-02-12 -> 2026-08-26 ===
+                 n  meanR   medR     win    p90      t   ctrl   edge
+stop_hold  17281.0 -0.087 -0.193  44.471  1.677 -1.169  0.561 -0.648
+t1R        17281.0 -0.216 -0.081  48.035  1.000 -5.654  0.150 -0.367
+t2R        17281.0 -0.151 -0.172  45.136  2.000 -2.897  0.356 -0.507
+trail_bar  17281.0 -0.083 -0.324  38.262  1.575 -1.757  0.484 -0.567
+ema20      17281.0 -0.087 -0.196  44.419  1.675 -1.155  0.399 -0.486
+
+by half (n 7332 / 9949):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.277         0.053
+t1R             -0.352        -0.116
+t2R             -0.306        -0.037
+trail_bar       -0.234         0.029
+ema20           -0.276         0.052
+
+best arm by edge: t1R | passes the bar (beats control, both halves positive, |t|>=3): no
+
+=== 20d breakout ADR>=3, LOW-vol regime (panel p80, 1 ADR stop, hold 5) (daily) — 24,514 signals, 1105 names, 2020-06-17 -> 2026-09-17 ===
+                 n  meanR   medR     win    p90       t   ctrl   edge
+stop_hold  24514.0 -0.070 -0.202  44.407  1.746  -0.751  0.575 -0.645
+t1R        24514.0 -0.224 -0.091  47.760  1.000 -10.464  0.144 -0.368
+t2R        24514.0 -0.153 -0.182  45.044  2.000  -5.288  0.360 -0.513
+trail_bar  24514.0 -0.089 -0.352  37.717  1.619  -1.448  0.498 -0.587
+ema20      24514.0 -0.070 -0.205  44.342  1.746  -0.727  0.431 -0.501
+
+by half (n 9427 / 15087):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.085        -0.060
+t1R             -0.217        -0.229
+t2R             -0.156        -0.152
+trail_bar       -0.106        -0.078
+ema20           -0.085        -0.060
+
+best arm by edge: t1R | passes the bar (beats control, both halves positive, |t|>=3): no
+
+##### panel p80 / 1 ADR / hold 5: per-arm HIGH vs LOW #####
+           HIGH_meanR  HIGH_ctrl  HIGH_edge  HIGH_t  HIGH_win   HIGH_n  LOW_meanR  LOW_ctrl  LOW_edge   LOW_t  LOW_win    LOW_n  diff_meanR(H-L)  diff_edge(H-L)
+stop_hold      -0.087      0.561     -0.648  -1.169    44.471  17281.0     -0.070     0.575    -0.645  -0.751   44.407  24514.0           -0.018          -0.003
+t1R            -0.216      0.150     -0.367  -5.654    48.035  17281.0     -0.224     0.144    -0.368 -10.464   47.760  24514.0            0.008           0.001
+t2R            -0.151      0.356     -0.507  -2.897    45.136  17281.0     -0.153     0.360    -0.513  -5.288   45.044  24514.0            0.002           0.006
+trail_bar      -0.083      0.484     -0.567  -1.757    38.262  17281.0     -0.089     0.498    -0.587  -1.448   37.717  24514.0            0.006           0.020
+ema20          -0.087      0.399     -0.486  -1.155    44.419  17281.0     -0.070     0.431    -0.501  -0.727   44.342  24514.0           -0.017           0.015
+  HIGH: best by meanR = trail_bar (-0.083) | best by edge = t1R (-0.367)
+  LOW: best by meanR = ema20 (-0.070) | best by edge = t1R (-0.368)
+
+
+================ panel pct=0.7 stop=1.0ADR hold=5 | regime defined 2020-02-12 -> 2026-09-18, HIGH share 40.3% of sessions ================
+
+=== 20d breakout ADR>=3, HIGH-vol regime (panel p70, 1 ADR stop, hold 5) (daily) — 23,635 signals, 1438 names, 2020-02-12 -> 2026-09-01 ===
+                 n  meanR   medR     win    p90      t   ctrl   edge
+stop_hold  23635.0 -0.085 -0.182  44.544  1.658 -1.035  0.573 -0.658
+t1R        23635.0 -0.216 -0.081  47.920  1.000 -7.124  0.161 -0.377
+t2R        23635.0 -0.151 -0.163  45.191  2.000 -3.479  0.368 -0.519
+trail_bar  23635.0 -0.090 -0.324  38.138  1.562 -1.859  0.489 -0.579
+ema20      23635.0 -0.085 -0.185  44.493  1.657 -1.029  0.420 -0.505
+
+by half (n 10732 / 12903):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.205         0.014
+t1R             -0.303        -0.143
+t2R             -0.251        -0.067
+trail_bar       -0.192        -0.005
+ema20           -0.203         0.014
+
+best arm by edge: t1R | passes the bar (beats control, both halves positive, |t|>=3): no
+
+=== 20d breakout ADR>=3, LOW-vol regime (panel p70, 1 ADR stop, hold 5) (daily) — 18,160 signals, 970 names, 2020-08-11 -> 2026-09-17 ===
+                 n  meanR   medR     win    p90      t   ctrl   edge
+stop_hold  18160.0 -0.066 -0.221  44.290  1.809 -0.734  0.556 -0.622
+t1R        18160.0 -0.227 -0.095  47.814  1.000 -9.522  0.121 -0.348
+t2R        18160.0 -0.154 -0.200  44.939  2.000 -4.938  0.338 -0.492
+trail_bar  18160.0 -0.082 -0.364  37.687  1.652 -1.220  0.481 -0.563
+ema20      18160.0 -0.066 -0.224  44.218  1.808 -0.704  0.412 -0.478
+
+by half (n 6027 / 12133):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.105        -0.047
+t1R             -0.227        -0.227
+t2R             -0.168        -0.148
+trail_bar       -0.110        -0.068
+ema20           -0.106        -0.047
+
+best arm by edge: t1R | passes the bar (beats control, both halves positive, |t|>=3): no
+
+##### panel p70 / 1 ADR / hold 5: per-arm HIGH vs LOW #####
+           HIGH_meanR  HIGH_ctrl  HIGH_edge  HIGH_t  HIGH_win   HIGH_n  LOW_meanR  LOW_ctrl  LOW_edge  LOW_t  LOW_win    LOW_n  diff_meanR(H-L)  diff_edge(H-L)
+stop_hold      -0.085      0.573     -0.658  -1.035    44.544  23635.0     -0.066     0.556    -0.622 -0.734   44.290  18160.0           -0.019          -0.036
+t1R            -0.216      0.161     -0.377  -7.124    47.920  23635.0     -0.227     0.121    -0.348 -9.522   47.814  18160.0            0.011          -0.029
+t2R            -0.151      0.368     -0.519  -3.479    45.191  23635.0     -0.154     0.338    -0.492 -4.938   44.939  18160.0            0.004          -0.027
+trail_bar      -0.090      0.489     -0.579  -1.859    38.138  23635.0     -0.082     0.481    -0.563 -1.220   37.687  18160.0           -0.008          -0.016
+ema20          -0.085      0.420     -0.505  -1.029    44.493  23635.0     -0.066     0.412    -0.478 -0.704   44.218  18160.0           -0.018          -0.026
+  HIGH: best by meanR = ema20 (-0.085) | best by edge = t1R (-0.377)
+  LOW: best by meanR = stop_hold (-0.066) | best by edge = t1R (-0.348)
+
+
+================ panel pct=0.9 stop=1.0ADR hold=5 | regime defined 2020-02-12 -> 2026-09-18, HIGH share 5.7% of sessions ================
+
+=== 20d breakout ADR>=3, HIGH-vol regime (panel p90, 1 ADR stop, hold 5) (daily) — 3,363 signals, 1057 names, 2020-02-25 -> 2026-08-12 ===
+                n  meanR   medR     win    p90      t   ctrl   edge
+stop_hold  3363.0  0.032  0.039  51.442  1.426 -1.660  0.499 -0.466
+t1R        3363.0 -0.040  0.121  54.475  1.000 -2.229  0.205 -0.244
+t2R        3363.0 -0.001  0.056  51.829  1.570 -1.612  0.376 -0.377
+trail_bar  3363.0 -0.011 -0.172  43.087  1.317 -2.111  0.401 -0.412
+ema20      3363.0  0.032  0.031  51.293  1.424 -1.660  0.331 -0.299
+
+by half (n 1446 / 1917):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.136         0.159
+t1R             -0.126         0.025
+t2R             -0.133         0.098
+trail_bar       -0.172         0.111
+ema20           -0.137         0.159
+
+best arm by edge: t1R | passes the bar (beats control, both halves positive, |t|>=3): no
+
+=== 20d breakout ADR>=3, LOW-vol regime (panel p90, 1 ADR stop, hold 5) (daily) — 38,432 signals, 1414 names, 2020-02-12 -> 2026-09-17 ===
+                 n  meanR   medR     win    p90       t   ctrl   edge
+stop_hold  38432.0 -0.087 -0.229  43.820  1.747  -0.835  0.581 -0.667
+t1R        38432.0 -0.237 -0.111  47.297  1.000 -11.741  0.142 -0.379
+t2R        38432.0 -0.166 -0.206  44.492  2.000  -5.808  0.361 -0.527
+trail_bar  38432.0 -0.093 -0.356  37.492  1.628  -1.637  0.505 -0.598
+ema20      38432.0 -0.086 -0.231  43.768  1.747  -0.806  0.429 -0.515
+
+by half (n 15313 / 23119):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.172        -0.030
+t1R             -0.290        -0.201
+t2R             -0.230        -0.123
+trail_bar       -0.161        -0.048
+ema20           -0.171        -0.030
+
+best arm by edge: t1R | passes the bar (beats control, both halves positive, |t|>=3): no
+
+##### panel p90 / 1 ADR / hold 5: per-arm HIGH vs LOW #####
+           HIGH_meanR  HIGH_ctrl  HIGH_edge  HIGH_t  HIGH_win  HIGH_n  LOW_meanR  LOW_ctrl  LOW_edge   LOW_t  LOW_win    LOW_n  diff_meanR(H-L)  diff_edge(H-L)
+stop_hold       0.032      0.499     -0.466  -1.660    51.442  3363.0     -0.087     0.581    -0.667  -0.835   43.820  38432.0            0.119           0.201
+t1R            -0.040      0.205     -0.244  -2.229    54.475  3363.0     -0.237     0.142    -0.379 -11.741   47.297  38432.0            0.197           0.134
+t2R            -0.001      0.376     -0.377  -1.612    51.829  3363.0     -0.166     0.361    -0.527  -5.808   44.492  38432.0            0.164           0.149
+trail_bar      -0.011      0.401     -0.412  -2.111    43.087  3363.0     -0.093     0.505    -0.598  -1.637   37.492  38432.0            0.082           0.186
+ema20           0.032      0.331     -0.299  -1.660    51.293  3363.0     -0.086     0.429    -0.515  -0.806   43.768  38432.0            0.118           0.216
+  HIGH: best by meanR = stop_hold (0.032) | best by edge = t1R (-0.244)
+  LOW: best by meanR = ema20 (-0.086) | best by edge = t1R (-0.379)
+
+
+================ panel pct=0.8 stop=2.0ADR hold=5 | regime defined 2020-02-12 -> 2026-09-18, HIGH share 25.4% of sessions ================
+
+=== 20d breakout ADR>=3, HIGH-vol regime (panel p80, 2 ADR stop, hold 5) (daily) — 17,331 signals, 1416 names, 2020-02-12 -> 2026-08-26 ===
+                 n  meanR   medR     win    p90      t   ctrl   edge
+stop_hold  17331.0 -0.039 -0.041  47.424  0.859 -0.691  0.321 -0.360
+t1R        17331.0 -0.075 -0.036  47.735  1.000 -2.234  0.222 -0.297
+t2R        17331.0 -0.052 -0.041  47.447  0.864 -1.065  0.299 -0.351
+trail_bar  17331.0 -0.031 -0.156  39.155  0.792 -1.256  0.255 -0.286
+ema20      17331.0 -0.037 -0.048  47.060  0.857 -0.751  0.209 -0.246
+
+by half (n 7306 / 10025):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.152         0.044
+t1R             -0.162        -0.011
+t2R             -0.155         0.023
+trail_bar       -0.114         0.029
+ema20           -0.148         0.044
+
+best arm by edge: ema20 | passes the bar (beats control, both halves positive, |t|>=3): no
+
+=== 20d breakout ADR>=3, LOW-vol regime (panel p80, 2 ADR stop, hold 5) (daily) — 24,634 signals, 1105 names, 2020-06-17 -> 2026-09-17 ===
+                 n  meanR   medR     win    p90      t   ctrl   edge
+stop_hold  24634.0 -0.023 -0.042  47.613  0.904 -0.327  0.319 -0.342
+t1R        24634.0 -0.064 -0.034  47.974  1.000 -3.967  0.214 -0.278
+t2R        24634.0 -0.035 -0.041  47.658  0.910 -1.177  0.293 -0.328
+trail_bar  24634.0 -0.036 -0.165  38.938  0.826 -1.083  0.259 -0.295
+ema20      24634.0 -0.024 -0.048  47.268  0.898 -0.127  0.226 -0.250
+
+by half (n 9476 / 15158):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.029        -0.019
+t1R             -0.063        -0.065
+t2R             -0.037        -0.033
+trail_bar       -0.045        -0.031
+ema20           -0.033        -0.019
+
+best arm by edge: ema20 | passes the bar (beats control, both halves positive, |t|>=3): no
+
+##### panel p80 / 2 ADR / hold 5: per-arm HIGH vs LOW #####
+           HIGH_meanR  HIGH_ctrl  HIGH_edge  HIGH_t  HIGH_win   HIGH_n  LOW_meanR  LOW_ctrl  LOW_edge  LOW_t  LOW_win    LOW_n  diff_meanR(H-L)  diff_edge(H-L)
+stop_hold      -0.039      0.321     -0.360  -0.691    47.424  17331.0     -0.023     0.319    -0.342 -0.327   47.613  24634.0           -0.016          -0.018
+t1R            -0.075      0.222     -0.297  -2.234    47.735  17331.0     -0.064     0.214    -0.278 -3.967   47.974  24634.0           -0.011          -0.019
+t2R            -0.052      0.299     -0.351  -1.065    47.447  17331.0     -0.035     0.293    -0.328 -1.177   47.658  24634.0           -0.017          -0.023
+trail_bar      -0.031      0.255     -0.286  -1.256    39.155  17331.0     -0.036     0.259    -0.295 -1.083   38.938  24634.0            0.005           0.009
+ema20          -0.037      0.209     -0.246  -0.751    47.060  17331.0     -0.024     0.226    -0.250 -0.127   47.268  24634.0           -0.013           0.005
+  HIGH: best by meanR = trail_bar (-0.031) | best by edge = ema20 (-0.246)
+  LOW: best by meanR = stop_hold (-0.023) | best by edge = ema20 (-0.250)
+
+
+================ panel pct=0.8 stop=1.0ADR hold=20 | regime defined 2020-02-12 -> 2026-09-18, HIGH share 25.4% of sessions ================
+
+=== 20d breakout ADR>=3, HIGH-vol regime (panel p80, 1 ADR stop, hold 20) (daily) — 17,281 signals, 1415 names, 2020-02-12 -> 2026-08-26 ===
+                 n  meanR   medR     win    p90      t   ctrl   edge
+stop_hold  17281.0 -0.019 -1.104  35.177  3.346 -0.592  1.098 -1.117
+t1R        17281.0 -0.241  0.153  50.518  1.000 -6.028  0.209 -0.450
+t2R        17281.0 -0.166 -1.065  40.999  2.000 -2.766  0.526 -0.692
+trail_bar  17281.0 -0.091 -0.389  34.460  1.688 -1.508  0.618 -0.710
+ema20      17281.0 -0.067 -1.023  31.775  3.100 -1.089  0.650 -0.717
+
+by half (n 7332 / 9949):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.210         0.122
+t1R             -0.341        -0.168
+t2R             -0.283        -0.080
+trail_bar       -0.264         0.035
+ema20           -0.261         0.075
+
+best arm by edge: t1R | passes the bar (beats control, both halves positive, |t|>=3): no
+
+=== 20d breakout ADR>=3, LOW-vol regime (panel p80, 1 ADR stop, hold 20) (daily) — 24,514 signals, 1105 names, 2020-06-17 -> 2026-09-17 ===
+                 n  meanR   medR     win    p90       t   ctrl   edge
+stop_hold  24514.0  0.022 -1.120  33.299  3.735   1.103  1.145 -1.123
+t1R        24514.0 -0.289 -0.666  48.764  1.000 -12.541  0.174 -0.464
+t2R        24514.0 -0.202 -1.083  39.284  2.000  -6.378  0.486 -0.688
+trail_bar  24514.0 -0.090 -0.436  33.254  1.791  -1.668  0.642 -0.733
+ema20      24514.0 -0.002 -1.050  31.129  3.552   0.515  0.712 -0.714
+
+by half (n 9427 / 15087):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.146         0.127
+t1R             -0.306        -0.279
+t2R             -0.254        -0.169
+trail_bar       -0.145        -0.056
+ema20           -0.174         0.105
+
+best arm by edge: t1R | passes the bar (beats control, both halves positive, |t|>=3): no
+
+##### panel p80 / 1 ADR / hold 20: per-arm HIGH vs LOW #####
+           HIGH_meanR  HIGH_ctrl  HIGH_edge  HIGH_t  HIGH_win   HIGH_n  LOW_meanR  LOW_ctrl  LOW_edge   LOW_t  LOW_win    LOW_n  diff_meanR(H-L)  diff_edge(H-L)
+stop_hold      -0.019      1.098     -1.117  -0.592    35.177  17281.0      0.022     1.145    -1.123   1.103   33.299  24514.0           -0.041           0.006
+t1R            -0.241      0.209     -0.450  -6.028    50.518  17281.0     -0.289     0.174    -0.464 -12.541   48.764  24514.0            0.048           0.014
+t2R            -0.166      0.526     -0.692  -2.766    40.999  17281.0     -0.202     0.486    -0.688  -6.378   39.284  24514.0            0.036          -0.004
+trail_bar      -0.091      0.618     -0.710  -1.508    34.460  17281.0     -0.090     0.642    -0.733  -1.668   33.254  24514.0           -0.001           0.023
+ema20          -0.067      0.650     -0.717  -1.089    31.775  17281.0     -0.002     0.712    -0.714   0.515   31.129  24514.0           -0.065          -0.003
+  HIGH: best by meanR = stop_hold (-0.019) | best by edge = t1R (-0.450)
+  LOW: best by meanR = stop_hold (0.022) | best by edge = t1R (-0.464)
+
+
+================ vix pct=0.8 stop=1.0ADR hold=5 | regime defined 2019-12-31 -> 2026-09-18, HIGH share 14.9% of sessions ================
+
+=== 20d breakout ADR>=3, HIGH-vol regime (vix p80, 1 ADR stop, hold 5) (daily) — 5,082 signals, 947 names, 2020-02-03 -> 2026-04-07 ===
+                n  meanR   medR     win    p90      t   ctrl   edge
+stop_hold  5082.0 -0.146 -0.177  44.431  1.474 -0.049  0.529 -0.674
+t1R        5082.0 -0.241 -0.101  47.324  1.000 -2.887  0.191 -0.431
+t2R        5082.0 -0.169 -0.162  45.081  2.000 -0.818  0.375 -0.544
+trail_bar  5082.0 -0.126 -0.310  38.567  1.468 -0.671  0.464 -0.590
+ema20      5082.0 -0.146 -0.179  44.412  1.474 -0.037  0.344 -0.490
+
+by half (n 4476 / 606):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.149        -0.123
+t1R             -0.231        -0.309
+t2R             -0.162        -0.218
+trail_bar       -0.132        -0.084
+ema20           -0.149        -0.124
+
+best arm by edge: t1R | passes the bar (beats control, both halves positive, |t|>=3): no
+
+=== 20d breakout ADR>=3, LOW-vol regime (vix p80, 1 ADR stop, hold 5) (daily) — 36,861 signals, 1401 names, 2019-12-31 -> 2026-09-17 ===
+                 n  meanR   medR     win    p90       t   ctrl   edge
+stop_hold  36861.0 -0.066 -0.201  44.464  1.759  -1.182  0.570 -0.636
+t1R        36861.0 -0.218 -0.082  47.967  1.000 -11.984  0.135 -0.353
+t2R        36861.0 -0.149 -0.179  45.110  2.000  -6.269  0.351 -0.500
+trail_bar  36861.0 -0.080 -0.345  37.877  1.621  -1.931  0.492 -0.572
+ema20      36861.0 -0.066 -0.203  44.399  1.758  -1.158  0.423 -0.489
+
+by half (n 12431 / 24430):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.171        -0.013
+t1R             -0.290        -0.181
+t2R             -0.239        -0.103
+trail_bar       -0.170        -0.034
+ema20           -0.171        -0.013
+
+best arm by edge: t1R | passes the bar (beats control, both halves positive, |t|>=3): no
+
+##### vix p80 / 1 ADR / hold 5: per-arm HIGH vs LOW #####
+           HIGH_meanR  HIGH_ctrl  HIGH_edge  HIGH_t  HIGH_win  HIGH_n  LOW_meanR  LOW_ctrl  LOW_edge   LOW_t  LOW_win    LOW_n  diff_meanR(H-L)  diff_edge(H-L)
+stop_hold      -0.146      0.529     -0.674  -0.049    44.431  5082.0     -0.066     0.570    -0.636  -1.182   44.464  36861.0           -0.080          -0.038
+t1R            -0.241      0.191     -0.431  -2.887    47.324  5082.0     -0.218     0.135    -0.353 -11.984   47.967  36861.0           -0.023          -0.079
+t2R            -0.169      0.375     -0.544  -0.818    45.081  5082.0     -0.149     0.351    -0.500  -6.269   45.110  36861.0           -0.020          -0.044
+trail_bar      -0.126      0.464     -0.590  -0.671    38.567  5082.0     -0.080     0.492    -0.572  -1.931   37.877  36861.0           -0.047          -0.018
+ema20          -0.146      0.344     -0.490  -0.037    44.412  5082.0     -0.066     0.423    -0.489  -1.158   44.399  36861.0           -0.080          -0.001
+  HIGH: best by meanR = trail_bar (-0.126) | best by edge = t1R (-0.431)
+  LOW: best by meanR = ema20 (-0.066) | best by edge = t1R (-0.353)
+
+
+################ SUMMARY: best exit arm per half, every config ################
+  src  pct  stop  hold HIGH_best  HIGH_meanR  HIGH_ema20  HIGH_t1R HIGH_edge_best  HIGH_n  LOW_best  LOW_meanR  LOW_ema20  LOW_t1R LOW_edge_best  LOW_n
+panel  0.8 1 ADR     5 trail_bar      -0.083      -0.087    -0.216            t1R   17281     ema20     -0.070     -0.070   -0.224           t1R  24514
+panel  0.7 1 ADR     5     ema20      -0.085      -0.085    -0.216            t1R   23635 stop_hold     -0.066     -0.066   -0.227           t1R  18160
+panel  0.9 1 ADR     5 stop_hold       0.032       0.032    -0.040            t1R    3363     ema20     -0.086     -0.086   -0.237           t1R  38432
+panel  0.8 2 ADR     5 trail_bar      -0.031      -0.037    -0.075          ema20   17331 stop_hold     -0.023     -0.024   -0.064         ema20  24634
+panel  0.8 1 ADR    20 stop_hold      -0.019      -0.067    -0.241            t1R   17281 stop_hold      0.022     -0.002   -0.289           t1R  24514
+  vix  0.8 1 ADR     5 trail_bar      -0.126      -0.146    -0.241            t1R    5082     ema20     -0.066     -0.066   -0.218           t1R  36861
+
+summary csv: data/studies/breitstein_tests/hivol_gate_split_summary_2026-09-19.csv
