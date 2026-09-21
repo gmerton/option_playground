@@ -17,11 +17,12 @@ Sleeve +4.14% → +5.38%/trade, monthly t 1.78 → 2.17. See *RSI Gate* below.
 **Revision 2026-08-08 (b):** the 140-name approved list is **retired**. An honest
 walk-forward showed ticker qualification performs WORSE than no ticker selection at all
 (+14.72% vs +16.06% OOS). Trade the gates across the whole weekly pool instead.
-**Revision 2026-09-20:** entry costs MEASURED on real bid/ask (median spread 6.5% of mid, sensitivity
--0.86pp per 1% over mid) and the -50% stop path-simulated on real daily marks. Confirms 2026-09-10
-independently and extends it: at mid a path stop is worth nothing, and once the EXIT spread crossing is
-included it costs -3.84pp. **Do not run the stop.** Arm-4 honest expectation ~**+6.7%/trade** unstopped
-at a realistic fill. See *Honest expectations (arm 4)*.
+**Revision 2026-09-20 — THE STOP IS REMOVED.** Entry costs MEASURED on real bid/ask (median spread
+6.5% of mid, sensitivity -0.86pp per 1% over mid), and the -50% stop path-simulated on real daily
+marks: at mid it is worth nothing, and once the EXIT spread crossing is counted it costs -3.84pp.
+A 20-cell sweep of depth x timing found **0 of 20 variants beat no stop**. **Exit rule is now hold to
+expiry, no stop** (see *Exit Rules*). Arm-4 honest expectation **+6.7%/trade** unstopped at a realistic
+fill -- real entry quotes, real exit paths, no modelled assumption left in the number.
 
 **Revision 2026-09-10:** path simulation on daily bid/ask (see *Re-centering and the real stop*).
 Re-centering REJECTED (every variant -3 to -7pp vs hold). The -50% stop's +7pp is a modelling artefact:
@@ -241,23 +242,49 @@ trades perform. The finding above is about the unconditional population.
 
 | Condition | Action |
 |-----------|--------|
-| Position value drops to ≤50% of premium paid | **Exit immediately (stop-loss)** |
+| **Any loss, at any depth** | ⭐ **No stop. Hold.** Changed 2026-09-20 — see below |
 | Expiry | Let expire (payout is settlement value) |
-| No other take-profit rule | Do not exit early on winners — let them run |
+| No take-profit rule | Do not exit early on winners — let them run |
 | Stock moved far from the strike | **Do not re-center or flat-take** — tested 2026-09-10, −3 to −7pp per trade |
 
-**Why no profit cap:** The long straddle is a right-skewed payoff. OOS testing showed
-that any profit cap reduces Sharpe (Cap 100% drops Sharpe from +0.17 to −0.04).
-The large wins are not anomalies — they are the strategy.
+**Why no profit cap:** the long straddle is a right-skewed payoff. OOS testing showed any profit cap
+reduces Sharpe (Cap 100% drops Sharpe from +0.17 to −0.04). The large wins are not anomalies — they
+are the strategy.
 
-**Why stop at −50%:** Removing trades that lose >50% of premium improves OOS Sharpe
-from +0.072 (hold to expiry) to +0.170 — a 2.4× improvement, positive in every
-test year 2021–2025. On a ~7 DTE straddle a position down 50% is typically 2–4 days in,
-with most remaining value being time premium that will decay before expiry.
+### ⭐ Why no stop — the −50% rule was REMOVED 2026-09-20
 
-⚠ The original wording of this rationale referenced "day 5–7 on a 10 DTE straddle" — that
-was based on the mislabelled DTE (see header). On a 7 DTE trade, day 5–7 *is* expiry. The
-stop's empirical support is unaffected; only the reasoning is restated.
+The −50% stop was modelled as a loss clip, `max(roc, −50)`, which assumed you always exit at exactly
+−50%. Path-simulated on real daily marks for both legs of all 4,573 arm-4 entries, it does not work:
+
+| arm 4, folds 2021–25, measured entry fill | mean |
+|---|---:|
+| **no stop** | ⭐ **+6.73%** |
+| −50% stop, path-simulated, selling the bid | +2.89% |
+
+- **At mid a path stop is worth nothing** (+8.86% vs +8.77% unstopped). The clip's entire +6.69pp was
+  the −50%-exactly assumption. This reproduces the 2026-09-10 finding on a different arm.
+- **You exit at a median −59.7% / mean −64.3%, not −50%** — a 7-DTE straddle gaps through the level.
+- **Stopping means selling, so you cross the spread a second time.** A held straddle settles at
+  intrinsic and pays the spread once; a stopped one pays it twice.
+- Of the 41.8% that breach, **69.8% would have done better held and 7.6% would have finished
+  positive**. The never-stopped cohort returns **+54.33%** — that is where the strategy's money is.
+
+**And no other stop level or timing helps.** Twenty combinations swept (exit at −50/−65/−75/−85/−90%
+× DTE gate any/≤3/≤2/≤1): **0 of 20 beat no stop.** Deeper is better at every timing and later is
+better at every depth — so the theta intuition is right — but the gradient's limit is *don't stop*.
+Best cell (−90% at ≤1 DTE) still loses 0.71pp. The reason is the spread: on a straddle worth **under
+15% of cost the bid/ask is 16% of mid (mean 27%)** against ~8% normally, so **the cost of cutting
+peaks exactly when you want to cut**.
+
+⚠ The published −50%/any-DTE rule was the **worst cell in that 20-cell grid** — the only variant with
+a negative fold — not merely mis-calibrated.
+
+**Risk note:** removing the stop does not raise the maximum loss. A long straddle is already
+defined-risk — you cannot lose more than the premium either way. The stop only realised a bounded
+loss early, at a worse price. **Size so the full premium can be lost.**
+
+Studies: [straddle_stop_path_2026-09-20.md](straddle_stop_path_2026-09-20.md),
+[straddle_stop_sweep_2026-09-20.md](straddle_stop_sweep_2026-09-20.md).
 
 ---
 
