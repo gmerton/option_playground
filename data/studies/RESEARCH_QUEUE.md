@@ -4,7 +4,14 @@ Scoped-but-not-yet-run work. Newest at top. Move to a playbook once complete.
 
 ---
 
-## Long straddle — measure entry slippage (QUEUED 2026-08-08)
+## Long straddle — measure entry slippage (✅ DONE 2026-09-20 — see `straddle_slippage_2026-09-20.md`)
+
+> **Result:** measured spread median 6.5% of mid; sensitivity **−0.86pp per 1% over mid** (the guess
+> below said −0.95, close). Arm 4 holds at **+13.57% at a realistic fill**, +11.78% at the full ask,
+> every fold positive. ⚠ The playbook doc's +12.61%/+5.76% does not reproduce — reconcile it.
+> **The −50% stop clip is now the largest remaining assumption** and still needs daily marks.
+
+### Original entry (2026-08-08)
 
 **Why:** every straddle number in `long_straddle_playbook.md` prices at **mid with zero
 slippage**. Sensitivity is **−0.95pp of ROC per 1% paid over mid**, so at a realistic

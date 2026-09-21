@@ -1,0 +1,30 @@
+loading the published pool + gates (imported from run_straddle_rebuild_wf)
+  45,388 -> 44,500 after sentinel + $0.5 min-cost
+  41,757 gated-universe trades, 317 tickers
+  pulled 85,097 legs -> data/cache/straddle_entry_quotes.parquet
+  both legs quoted: 41,746 of 41,757 (100.0%)
+
+  measured entry spread: median 6.5% of mid, mean 8.4%, p90 17.6%
+  CSV mid $6.69 vs quoted mid $6.69 (agreement check)
+
+  arm 4 (full pool + both gates), folds 2021-2025: 4,573 trades
+
+================================================================================================
+  ARM 4 vs ENTRY FILL  (f = fraction of the half-spread paid; f=0 is the published number)
+================================================================================================
+   f  pct_over_mid  mean_nostop  mean_stop50  median  win_pct  2021  2022  2023  2024  2025
+0.00          0.00         8.77        15.46  -12.10    44.48 14.97 18.02 15.25 13.19 18.88
+0.10          0.44         8.35        15.07  -12.35    44.39 14.55 17.54 14.94 12.82 18.39
+0.25          1.10         7.74        14.50  -12.92    44.17 13.92 16.85 14.49 12.27 17.67
+0.50          2.20         6.73        13.57  -13.88    43.78 12.91 15.72 13.76 11.39 16.50
+1.00          4.39         4.79        11.78  -15.45    42.71 10.98 13.60 12.34  9.69 14.28
+
+  published (f=0, stop -50%): +15.46%
+  f=0.1   (0.4% over mid): +15.07%   (-0.39pp)
+  f=0.25  (1.1% over mid): +14.50%   (-0.96pp)
+  f=0.5   (2.2% over mid): +13.57%   (-1.90pp)
+  f=1.0   (4.4% over mid): +11.78%   (-3.68pp)
+
+  MEASURED sensitivity: -0.86pp of ROC per 1% paid over mid (playbook's parameterised guess was -0.95)
+
+  no-stop floor at f=0.5: +6.73%  (the -50% clip is an assumption, not a path sim)
