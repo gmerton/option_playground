@@ -62,9 +62,12 @@ def main():
     addv = (C * V).tail(50).mean(); uni = addv[addv >= ADDV_MIN].index
     O, H, L, C, V = O[uni], H[uni], L[uni], C[uni], V[uni]
     elapsed = 1.0; label = str(C.index[-1].date()) + " (cached close)"
-    if not a.no_live and not a.asof:
+    now = datetime.now(ZoneInfo("America/New_York")); mins = (now.hour - 9) * 60 + now.minute - 30
+    # live only once today's session has opened: before 09:30 ET or on a weekend the "quotes" are the prior
+    # session's, and appending them as a new bar duplicates that session (2026-09-20: a Sunday-night run
+    # appended Friday as a fake Monday bar, pro-rated RVOL at 10%, and emptied the A/B lists)
+    if not a.no_live and not a.asof and now.weekday() < 5 and mins >= 0:
         Q = asyncio.run(quotes(list(uni)))
-        now = datetime.now(ZoneInfo("America/New_York")); mins = (now.hour - 9) * 60 + now.minute - 30
         elapsed = float(np.clip(mins / 390, 0.1, 1.0))
         today = pd.Timestamp(now.date())
         row = {k: pd.Series({s: Q[s].get(k) for s in uni if s in Q and Q[s].get("last")}, dtype=float) for k in ("open", "high", "low", "last", "volume")}

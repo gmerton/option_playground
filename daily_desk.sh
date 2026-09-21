@@ -5,6 +5,10 @@ set -u
 cd "$(dirname "$0")"
 PY=.venv/bin/python3; export PYTHONPATH=src
 D=$(date +%F); OUT=data/watchlist; mkdir -p "$OUT"
+# The regime read and the liquid-panel build read the local copy of the nightly Lambda day-matrix; pull it first
+# (2026-09-20: a 9/04 local copy silently produced a two-week-old regime read).
+aws s3 cp s3://gmerton-stock-data/breakouts/minervini_matrix.parquet data/cache/minervini_matrix.parquet --only-show-errors \
+  || echo "  (day-matrix pull failed; regime read uses the local copy -- check its as-of date)"
 echo "== 1/6 regime read (descriptive; see run_regime_validation.py for why it is not a forecast)"
 $PY run_trailing_retro.py --window 21 2>/dev/null | sed -n 1,25p | tee "$OUT/regime_$D.txt"
 echo; echo "== 1b open book (Flex snapshot + live Tradier marks): what expires and what it is worth"
