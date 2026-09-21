@@ -8,7 +8,9 @@ Scoped-but-not-yet-run work. Newest at top. Move to a playbook once complete.
 
 > **Result:** measured spread median 6.5% of mid; sensitivity **−0.86pp per 1% over mid** (the guess
 > below said −0.95, close). Arm 4 holds at **+13.57% at a realistic fill**, +11.78% at the full ask,
-> every fold positive. ⚠ The playbook doc's +12.61%/+5.76% does not reproduce — reconcile it.
+> every fold positive. ✅ The playbook doc's +12.61%/+5.76% was **traced and fixed 2026-09-20**: that
+> block was **full pool + FVR gate only** (no IV gate), mislabelled as arm 4 since 2026-09-02 — it made
+> the honest configuration look ~2.9pp worse than it is. Real arm 4 is +15.46% at mid, +13.57% filled.
 > **The −50% stop clip is now the largest remaining assumption** and still needs daily marks.
 
 ### Original entry (2026-08-08)

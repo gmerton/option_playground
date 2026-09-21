@@ -388,21 +388,35 @@ and is being scored on 2021–25. Their apparent edge is look-ahead. **Arm 4 is 
 configuration.** Its only look-ahead is the pool's weekly-coverage definition, which is a
 liquidity criterion rather than a performance one.
 
-### Honest expectations (arm 4)
+### Honest expectations (arm 4) — corrected and cost-measured 2026-09-20
 
-| Basis | Mean | Median | Win% |
-|---|---:|---:|---:|
-| Hold to expiry, mid pricing | **+5.76%** | −14.29% | 43.3% |
-| With −50% stop clip | **+12.61%** | −14.29% | 43.3% |
+> ⚠ **The numbers previously in this block were the wrong population.** They read +5.76% / +12.61%,
+> which is **full pool + FVR gate only** — no IV gate — not arm 4. Traced 2026-09-20 by reproducing
+> every variant: FVR-only on folds 2021–25 gives +5.76 / +12.62, median −14.15, win 43.4%, matching
+> the old block to rounding. The error dates to the block's first commit (2026-09-02) and made the
+> honest configuration look **~2.9pp worse than it is**. The fold table above (+16.06 mean) was always
+> right; this block disagreed with it.
 
-⚠ **The stop clip contributes +6.85pp — 55% of the headline** — by rescuing 29.6% of trades.
-It is an assumption that you always exit at exactly −50%, not a path simulation. Treat
-+16% as the optimistic bound and ~+6% as the assumption-free floor.
+Arm 4 = full pool + **both** gates, folds 2021–25, **n 4,573**. Entry costs are now **measured** from
+real bid/ask on both legs of every entry (100% quote coverage) — see
+[straddle_slippage_2026-09-20.md](straddle_slippage_2026-09-20.md). Cost is one-sided: the position
+settles at expiry, so you only cross on the way in. Measured entry spread: **median 6.5% of mid**.
 
-⚠ **Entry costs are not modelled anywhere in this document.** Sensitivity: **−0.95pp per 1%
-paid over mid**. Cost is one-sided (expiry settles, so you only cross on entry). At a realistic
-1–3% over mid on a $6.48 average straddle, deduct **1–3pp**. A pull including bid/ask would
-replace this parameterised guess with a measurement — not yet done.
+| Entry fill | Mean, no stop | **Mean, −50% stop clip** | Median | Win% |
+|---|---:|---:|---:|---:|
+| mid (the old basis) | +8.77% | **+15.46%** | −12.10% | 44.5% |
+| **realistic — half the spread (2.2% over mid)** | **+6.73%** | **+13.57%** | −13.88% | 43.8% |
+| full ask (4.4% over mid) | +4.79% | +11.78% | −15.45% | 42.7% |
+
+**Measured slippage sensitivity: −0.86pp of ROC per 1% paid over mid** (this document previously
+carried a parameterised guess of −0.95pp — close, and now retired). **Every fold stays positive at
+every fill level**; the worst single cell is 2024 at the full ask, +9.69%.
+
+⚠ **The stop clip contributes +6.69pp — 43% of the headline** — by rescuing 29.3% of trades. It is an
+assumption that you always exit at exactly −50%, **not a path simulation**. Treat **+13.6%** as the
+realistic expectation and **+6.7%** as the assumption-free floor. Replacing the clip with a real path
+simulation needs daily marks on the specific contracts and is now the **largest remaining unknown in
+this strategy**.
 
 **Capacity is not binding:** median **37 qualifying signals per week** against ~2 fundable
 positions under the 3% cap. You will always be choosing among far more signals than you can
