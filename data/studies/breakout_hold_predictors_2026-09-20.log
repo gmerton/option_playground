@@ -1,0 +1,110 @@
+43,970 scored breakouts | held 23.6% | meanR all +0.014 | held +1.273 | failed -0.374
+
+====================================================================================================
+UNIVARIATE: quintile of each feature -> held% and meanR of every breakout in the bucket
+====================================================================================================
+
+--- ext_above_level_ADR ---
+                          n  held_pct  meanR
+ext_above_level_ADR                         
+(-0.0009999617, 0.11]  8794    13.657  0.011
+(0.11, 0.244]          8794    16.921  0.033
+(0.244, 0.429]         8794    19.365  0.010
+(0.429, 0.755]         8794    25.438  0.020
+(0.755, 15.465]        8794    42.404 -0.003
+    held% spread  28.7pp | meanR spread +0.036 | monotonicity |rho| 0.50
+
+--- dist_21ema_ADR ---
+                    n  held_pct  meanR
+dist_21ema_ADR                        
+(-0.705, 1.771]  8794    18.911  0.071
+(1.771, 2.221]   8794    19.786  0.021
+(2.221, 2.699]   8794    21.856  0.024
+(2.699, 3.41]    8794    24.585 -0.006
+(3.41, 18.089]   8794    32.647 -0.039
+    held% spread  13.7pp | meanR spread +0.110 | monotonicity |rho| 0.90
+
+--- rvol20 ---
+                   n  held_pct  meanR
+rvol20                               
+(0.115, 0.832]  8794    17.148 -0.027
+(0.832, 1.031]  8794    18.524 -0.002
+(1.031, 1.258]  8794    21.071  0.030
+(1.258, 1.66]   8794    25.142  0.017
+(1.66, 17.21]   8794    35.899  0.054
+    held% spread  18.8pp | meanR spread +0.081 | monotonicity |rho| 0.90
+
+--- adr_pct ---
+                    n  held_pct  meanR
+adr_pct                               
+(2.999, 3.332]   8794    23.664  0.020
+(3.332, 3.769]   8794    23.152 -0.008
+(3.769, 4.428]   8794    23.982  0.012
+(4.428, 5.645]   8794    23.982  0.035
+(5.645, 30.706]  8794    23.004  0.012
+    held% spread   1.0pp | meanR spread +0.044 | monotonicity |rho| 0.20
+
+--- range_pos ---
+                    n  held_pct  meanR
+range_pos                             
+(-0.001, 0.593]  8794    21.799  0.014
+(0.593, 0.759]   8794    23.289  0.042
+(0.759, 0.861]   8794    23.084  0.008
+(0.861, 0.937]   8794    24.448 -0.010
+(0.937, 1.0]     8794    25.165  0.017
+    held% spread   3.4pp | meanR spread +0.051 | monotonicity |rho| 0.20
+
+--- gap_ADR ---
+                      n  held_pct  meanR
+gap_ADR                                 
+(-2.641, -0.0267]  8794    19.252  0.027
+(-0.0267, 0.11]    8794    20.844  0.030
+(0.11, 0.262]      8794    21.435  0.012
+(0.262, 0.516]     8794    22.959  0.014
+(0.516, 21.033]    8794    33.295 -0.012
+    held% spread  14.0pp | meanR spread +0.041 | monotonicity |rho| 0.80
+
+--- pct_off_52w_high ---
+                        n  held_pct  meanR
+pct_off_52w_high                          
+(-95.827, -29.266]   8714    21.127 -0.019
+(-29.266, -14.498]   8714    22.802 -0.011
+(-14.498, -1.776]    8713    25.353  0.059
+(-1.776, 0.0]       17428    24.329  0.022
+    held% spread   4.2pp | meanR spread +0.078 | monotonicity |rho| 0.80
+
+--- sma_stacked ---
+                 n  held_pct  meanR
+sma_stacked                        
+0.0          16395    23.721  0.022
+1.0          27575    23.460  0.009
+    held% spread   0.3pp | meanR spread +0.013 | monotonicity |rho| 1.00
+
+--- dolvol_musd ---
+                          n  held_pct  meanR
+dolvol_musd                                 
+(9.497, 89.692]        8794    17.899 -0.014
+(89.692, 151.447]      8794    21.662 -0.025
+(151.447, 268.545]     8794    23.755  0.011
+(268.545, 587.153]     8794    25.836  0.047
+(587.153, 154377.712]  8794    28.633  0.052
+    held% spread  10.7pp | meanR spread +0.077 | monotonicity |rho| 0.90
+
+
+====================================================================================================
+RANKED BY meanR SPREAD (the tradeable one)
+====================================================================================================
+            feature  held_spread_pp  meanR_spread  monotonic           best_bucket  best_meanR  worst_meanR
+     dist_21ema_ADR          13.737         0.110        0.9       (-0.705, 1.771]       0.071       -0.039
+             rvol20          18.751         0.081        0.9         (1.66, 17.21]       0.054       -0.027
+   pct_off_52w_high           4.226         0.078        0.8     (-14.498, -1.776]       0.059       -0.019
+        dolvol_musd          10.735         0.077        0.9 (587.153, 154377.712]       0.052       -0.025
+          range_pos           3.366         0.051        0.2        (0.593, 0.759]       0.042       -0.010
+            adr_pct           0.978         0.044        0.2        (4.428, 5.645]       0.035       -0.008
+            gap_ADR          14.044         0.041        0.8       (-0.0267, 0.11]       0.030       -0.012
+ext_above_level_ADR          28.747         0.036        0.5         (0.11, 0.244]       0.033       -0.003
+        sma_stacked           0.261         0.013        1.0                   0.0       0.022        0.009
+
+baseline meanR (no gate): +0.014
+A feature is a gate only if meanR sorts monotonically AND the best bucket clears the baseline
+by enough to survive the 0.4R entry-timing effect already measured.
