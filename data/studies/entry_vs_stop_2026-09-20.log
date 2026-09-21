@@ -1,0 +1,25 @@
+panel 1939 sessions x 1743 names | house breakouts 44,062
+controls drawn: 43,344
+
+
+======================================================================================
+STOP = 1 ADR below the entry close
+======================================================================================
+hold  sig_raw  ctl_raw  raw_gap  sig_R  ctl_R  R_gap  sig_stopped  ctl_stopped  sig_ext_adr  ctl_ext_adr
+  5d    0.040    0.451   -0.411  0.014  0.103 -0.089       48.383       47.961        0.520       -2.091
+ 10d    0.614    0.874   -0.259  0.051  0.140 -0.089       62.431       61.949        0.520       -2.091
+ 21d    1.549    1.623   -0.074  0.123  0.199 -0.076       73.124       73.191        0.521       -2.091
+
+  raw_gap > 0 and R_gap < 0  =>  the ENTRY is fine, the STOP is doing the damage (B)
+  raw_gap < 0                =>  genuinely a worse entry price (A)
+
+======================================================================================
+STOP = 2 ADR below the entry close
+======================================================================================
+hold  sig_raw  ctl_raw  raw_gap  sig_R  ctl_R  R_gap  sig_stopped  ctl_stopped  sig_ext_adr  ctl_ext_adr
+  5d    0.040    0.451   -0.411  0.009  0.062 -0.053       18.121       18.411        0.520       -2.091
+ 10d    0.614    0.874   -0.259  0.047  0.100 -0.053       32.970       33.193        0.520       -2.091
+ 21d    1.549    1.623   -0.074  0.111  0.151 -0.040       48.602       49.947        0.521       -2.091
+
+  raw_gap > 0 and R_gap < 0  =>  the ENTRY is fine, the STOP is doing the damage (B)
+  raw_gap < 0                =>  genuinely a worse entry price (A)
