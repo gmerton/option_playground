@@ -1,0 +1,167 @@
+panel 2019-01-02 -> 2026-09-18 (1939 sessions x 1743 names)
+SPY first-FTDs total 28, inside the panel window: 8
+  2019-01-15, 2020-04-06, 2020-06-16, 2022-03-15, 2022-05-04, 2023-10-06, 2023-11-01, 2025-03-19
+
+house breakouts in panel: 44,062
+
+
+====================================================================================
+WINDOW 5 sessions after an FTD | 2.3% of sessions | 905 of 44,062 breakouts fall inside
+====================================================================================
+control = post (2,699 control trades)
+
+=== 20d breakout ADR>=3, POST-FTD (5d window) (daily) — 900 signals, 472 names, 2020-04-06 -> 2025-03-25 ===
+               n  meanR   medR     win    p90      t   ctrl   edge
+stop_hold  900.0 -0.196 -0.152  44.556  1.066 -1.917  0.045 -0.241
+t1R        900.0 -0.236 -0.131  45.889  1.000 -2.204 -0.046 -0.190
+t2R        900.0 -0.212 -0.152  44.556  1.071 -2.029 -0.002 -0.210
+trail_bar  900.0 -0.247 -0.361  33.111  0.991 -2.070  0.019 -0.266
+ema20      900.0 -0.197 -0.165  44.333  1.066 -1.903  0.033 -0.230
+
+by half (n 664 / 236):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.071        -0.550
+t1R             -0.119        -0.565
+t2R             -0.089        -0.559
+trail_bar       -0.177        -0.446
+ema20           -0.075        -0.538
+
+best arm by edge: t1R | passes the bar (beats control, both halves positive, |t|>=3): no
+control = post (123,683 control trades)
+
+=== 20d breakout ADR>=3, OTHER (5d window) (daily) — 41,471 signals, 1453 names, 2019-10-01 -> 2026-09-17 ===
+                 n  meanR   medR     win    p90       t   ctrl   edge
+stop_hold  41471.0 -0.072 -0.197  44.561  1.736  -0.740  0.028 -0.100
+t1R        41471.0 -0.219 -0.081  48.009  1.000 -11.775 -0.160 -0.059
+t2R        41471.0 -0.148 -0.175  45.215  2.000  -5.598 -0.070 -0.078
+trail_bar  41471.0 -0.081 -0.338  38.150  1.614  -1.764  0.010 -0.092
+ema20      41471.0 -0.071 -0.198  44.506  1.735  -0.714  0.009 -0.081
+
+by half (n 16671 / 24800):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.163        -0.010
+t1R             -0.276        -0.180
+t2R             -0.218        -0.102
+trail_bar       -0.155        -0.032
+ema20           -0.162        -0.010
+
+best arm by edge: t1R | passes the bar (beats control, both halves positive, |t|>=3): no
+
+##### window 5d: POST-FTD vs OTHER, per exit arm #####
+           POST-FTD_meanR  POST-FTD_ctrl  POST-FTD_edge  POST-FTD_t  POST-FTD_win  POST-FTD_n  OTHER_meanR  OTHER_ctrl  OTHER_edge  OTHER_t  OTHER_win  OTHER_n  diff_meanR  diff_edge
+stop_hold          -0.196          0.045         -0.241      -1.917        44.556       900.0       -0.072       0.028      -0.100   -0.740     44.561  41471.0      -0.125     -0.142
+t1R                -0.236         -0.046         -0.190      -2.204        45.889       900.0       -0.219      -0.160      -0.059  -11.775     48.009  41471.0      -0.017     -0.131
+t2R                -0.212         -0.002         -0.210      -2.029        44.556       900.0       -0.148      -0.070      -0.078   -5.598     45.215  41471.0      -0.063     -0.132
+trail_bar          -0.247          0.019         -0.266      -2.070        33.111       900.0       -0.081       0.010      -0.092   -1.764     38.150  41471.0      -0.166     -0.174
+ema20              -0.197          0.033         -0.230      -1.903        44.333       900.0       -0.071       0.009      -0.081   -0.714     44.506  41471.0      -0.125     -0.149
+
+
+====================================================================================
+WINDOW 10 sessions after an FTD | 4.6% of sessions | 1,879 of 44,062 breakouts fall inside
+====================================================================================
+control = post (5,592 control trades)
+
+=== 20d breakout ADR>=3, POST-FTD (10d window) (daily) — 1,868 signals, 650 names, 2020-04-06 -> 2025-04-01 ===
+                n  meanR   medR     win    p90      t   ctrl   edge
+stop_hold  1868.0 -0.082 -0.082  47.109  1.282 -1.457  0.067 -0.148
+t1R        1868.0 -0.122 -0.027  49.358  1.000 -1.921 -0.054 -0.068
+t2R        1868.0 -0.093 -0.077  47.377  1.313 -1.597  0.011 -0.103
+trail_bar  1868.0 -0.126 -0.272  38.437  1.163 -1.559  0.042 -0.168
+ema20      1868.0 -0.081 -0.085  47.002  1.282 -1.446  0.057 -0.138
+
+by half (n 1440 / 428):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.022        -0.282
+t1R             -0.081        -0.259
+t2R             -0.044        -0.257
+trail_bar       -0.095        -0.231
+ema20           -0.023        -0.276
+
+best arm by edge: t1R | passes the bar (beats control, both halves positive, |t|>=3): no
+control = post (120,788 control trades)
+
+=== 20d breakout ADR>=3, OTHER (10d window) (daily) — 40,503 signals, 1434 names, 2019-10-01 -> 2026-09-17 ===
+                 n  meanR   medR     win    p90       t   ctrl   edge
+stop_hold  40503.0 -0.074 -0.204  44.444  1.748  -0.707  0.021 -0.095
+t1R        40503.0 -0.223 -0.085  47.900  1.000 -11.855 -0.168 -0.055
+t2R        40503.0 -0.152 -0.181  45.100  2.000  -5.644 -0.078 -0.075
+trail_bar  40503.0 -0.083 -0.343  38.024  1.624  -1.754  0.004 -0.087
+ema20      40503.0 -0.074 -0.207  44.387  1.747  -0.682  0.004 -0.078
+
+by half (n 15895 / 24608):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.172        -0.011
+t1R             -0.287        -0.182
+t2R             -0.228        -0.104
+trail_bar       -0.161        -0.032
+ema20           -0.171        -0.011
+
+best arm by edge: t1R | passes the bar (beats control, both halves positive, |t|>=3): no
+
+##### window 10d: POST-FTD vs OTHER, per exit arm #####
+           POST-FTD_meanR  POST-FTD_ctrl  POST-FTD_edge  POST-FTD_t  POST-FTD_win  POST-FTD_n  OTHER_meanR  OTHER_ctrl  OTHER_edge  OTHER_t  OTHER_win  OTHER_n  diff_meanR  diff_edge
+stop_hold          -0.082          0.067         -0.148      -1.457        47.109      1868.0       -0.074       0.021      -0.095   -0.707     44.444  40503.0      -0.008     -0.054
+t1R                -0.122         -0.054         -0.068      -1.921        49.358      1868.0       -0.223      -0.168      -0.055  -11.855     47.900  40503.0       0.102     -0.013
+t2R                -0.093          0.011         -0.103      -1.597        47.377      1868.0       -0.152      -0.078      -0.075   -5.644     45.100  40503.0       0.060     -0.029
+trail_bar          -0.126          0.042         -0.168      -1.559        38.437      1868.0       -0.083       0.004      -0.087   -1.754     38.024  40503.0      -0.043     -0.081
+ema20              -0.081          0.057         -0.138      -1.446        47.002      1868.0       -0.074       0.004      -0.078   -0.682     44.387  40503.0      -0.007     -0.060
+
+
+====================================================================================
+WINDOW 21 sessions after an FTD | 9.0% of sessions | 3,868 of 44,062 breakouts fall inside
+====================================================================================
+control = post (11,407 control trades)
+
+=== 20d breakout ADR>=3, POST-FTD (21d window) (daily) — 3,815 signals, 845 names, 2020-04-06 -> 2025-04-16 ===
+                n  meanR   medR     win    p90      t   ctrl   edge
+stop_hold  3815.0 -0.143 -0.185  43.512  1.313 -0.244  0.080 -0.223
+t1R        3815.0 -0.218 -0.149  45.321  1.000 -1.599 -0.080 -0.138
+t2R        3815.0 -0.171 -0.178  43.696  1.358 -0.583  0.006 -0.177
+trail_bar  3815.0 -0.167 -0.322  36.409  1.239 -0.510  0.056 -0.223
+ema20      3815.0 -0.142 -0.188  43.460  1.313 -0.235  0.069 -0.212
+
+by half (n 2950 / 865):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.205         0.067
+t1R             -0.265        -0.058
+t2R             -0.228         0.024
+trail_bar       -0.232         0.053
+ema20           -0.205         0.070
+
+best arm by edge: t1R | passes the bar (beats control, both halves positive, |t|>=3): no
+control = post (114,973 control trades)
+
+=== 20d breakout ADR>=3, OTHER (21d window) (daily) — 38,556 signals, 1417 names, 2019-10-01 -> 2026-09-17 ===
+                 n  meanR   medR     win    p90       t   ctrl   edge
+stop_hold  38556.0 -0.068 -0.196  44.665  1.769  -0.975  0.016 -0.084
+t1R        38556.0 -0.219 -0.071  48.226  1.000 -12.172 -0.173 -0.046
+t2R        38556.0 -0.148 -0.173  45.350  2.000  -6.011 -0.081 -0.066
+trail_bar  38556.0 -0.077 -0.340  38.204  1.642  -1.986  0.000 -0.077
+ema20      38556.0 -0.067 -0.198  44.605  1.769  -0.949  0.001 -0.068
+
+by half (n 14385 / 24171):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.150        -0.018
+t1R             -0.271        -0.188
+t2R             -0.210        -0.111
+trail_bar       -0.140        -0.039
+ema20           -0.149        -0.018
+
+best arm by edge: t1R | passes the bar (beats control, both halves positive, |t|>=3): no
+
+##### window 21d: POST-FTD vs OTHER, per exit arm #####
+           POST-FTD_meanR  POST-FTD_ctrl  POST-FTD_edge  POST-FTD_t  POST-FTD_win  POST-FTD_n  OTHER_meanR  OTHER_ctrl  OTHER_edge  OTHER_t  OTHER_win  OTHER_n  diff_meanR  diff_edge
+stop_hold          -0.143          0.080         -0.223      -0.244        43.512      3815.0       -0.068       0.016      -0.084   -0.975     44.665  38556.0      -0.075     -0.139
+t1R                -0.218         -0.080         -0.138      -1.599        45.321      3815.0       -0.219      -0.173      -0.046  -12.172     48.226  38556.0       0.001     -0.093
+t2R                -0.171          0.006         -0.177      -0.583        43.696      3815.0       -0.148      -0.081      -0.066   -6.011     45.350  38556.0      -0.024     -0.111
+trail_bar          -0.167          0.056         -0.223      -0.510        36.409      3815.0       -0.077       0.000      -0.077   -1.986     38.204  38556.0      -0.091     -0.146
+ema20              -0.142          0.069         -0.212      -0.235        43.460      3815.0       -0.067       0.001      -0.068   -0.949     44.605  38556.0      -0.075     -0.143
+
+
+================ VERDICT INPUTS ================
+   5d window: POST-FTD best arm stop_hold meanR -0.196 (edge -0.241, n 900) | OTHER same arm meanR -0.072 (edge -0.100) | diff -0.125
+  10d window: POST-FTD best arm ema20 meanR -0.081 (edge -0.138, n 1868) | OTHER same arm meanR -0.074 (edge -0.078) | diff -0.007
+  21d window: POST-FTD best arm ema20 meanR -0.142 (edge -0.212, n 3815) | OTHER same arm meanR -0.067 (edge -0.068) | diff -0.075
+
+Ariel is right only if POST-FTD carries a materially higher meanR AND a better edge over
+its own control than OTHER does. Same-ish numbers = the FTD is a calendar label, not selection.
