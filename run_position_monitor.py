@@ -1,326 +1,147 @@
 #!/usr/bin/env python3
 """
-Position monitor — checks all open strategy positions against live Tradier
-quotes and recommends actions (hold, close, expiry approaching).
+Position monitor — the open book, grouped into structures, with broker basis and live marks.
+
+Source is `journal_open_positions`: the IBKR Flex open-position snapshot written by
+run_daily_journal.py, one row per leg with the broker's own `open_price` (true cost basis),
+`mark_price` and `unrealized_pnl`.
+
+Why not journal_campaigns: its `net_premium` is CUMULATIVE cash for the campaign including rolls,
+so it is not an entry price -- on 2026-09-18 it implied a 3.90 credit on a 2.00-wide SLS spread,
+which would make any "max risk" figure nonsense. The Flex snapshot has no such problem.
+(It also replaced `strategy_positions`, a March-2026 experiment dropped 2026-09-20 whose last
+8 "open" rows had all expired by May.)
+
+The snapshot lands one session late, so `--live` re-marks every option leg against Tradier for a
+current read; without it you get the broker's marks as of the snapshot date.
+
+Structures are inferred from the legs (same underlying + expiry, sign of `position` = direction),
+so straddles, verticals, calendars and singles all come out without a stored position_type.
 
 Usage:
-    PYTHONPATH=src python run_position_monitor.py
-
-Requires: TRADIER_API_KEY, MYSQL_PASSWORD
+    MYSQL_PASSWORD=... PYTHONPATH=src .venv/bin/python3 run_position_monitor.py
+    ... run_position_monitor.py --live          # re-mark against Tradier (needs TRADIER_API_KEY)
+    ... run_position_monitor.py --expiring 7    # only structures inside 7 DTE
 """
-
 from __future__ import annotations
 
-import asyncio
-import os
-import sys
-from datetime import date, timedelta
-from typing import Optional
+import argparse, asyncio, os, sys, warnings
+from datetime import date
+warnings.filterwarnings("ignore")
 
-from lib.tradier.tradier_client_wrapper import TradierClient
-from lib.commons.list_contracts import list_contracts_for_expiry
-from lib.commons.get_underlying_price import get_underlying_price
-from lib.mysql_lib import get_open_positions
-from lib.economic_calendar import print_upcoming_events
+import pandas as pd
+from lib.mysql_lib import _get_conn
+
+MULT = {"OPT": 100, "STK": 1}
 
 
-# ── Quote helpers ─────────────────────────────────────────────────────────────
-
-def _mid(contract: dict) -> Optional[float]:
-    bid = contract.get("bid") or 0.0
-    ask = contract.get("ask") or 0.0
-    if bid > 0 and ask > 0:
-        return (bid + ask) / 2.0
-    last = contract.get("last") or 0.0
-    return float(last) if last else None
+def latest_snapshot() -> tuple[date, pd.DataFrame]:
+    c = _get_conn()
+    d = pd.read_sql("SELECT MAX(report_date) d FROM journal_open_positions", c).d[0]
+    df = pd.read_sql(f"SELECT * FROM journal_open_positions WHERE report_date = '{d}'", c)
+    return d, df
 
 
-def _find_contract(
-    chain: list[dict],
-    strike: float,
-    put_call: str,
-) -> Optional[dict]:
-    for c in chain:
-        if (
-            abs(float(c.get("strike", 0)) - strike) < 0.01
-            and c.get("option_type", "").lower() == put_call.lower()
-        ):
-            return c
-    return None
+def classify(g: pd.DataFrame) -> str:
+    if (g.asset_category == "STK").all():
+        return "stock"
+    pcs = set(g.put_call.dropna()); longs = (g.position > 0).sum(); shorts = (g.position < 0).sum()
+    ks = g.strike.dropna().nunique()
+    if pcs == {"C", "P"}:
+        if not shorts: return "long straddle/strangle"
+        if not longs:  return "short straddle/strangle"
+        return "iron condor/fly"
+    pc = "call" if pcs == {"C"} else "put"
+    if len(g) == 1 or ks == 1:
+        return f"{'long' if g.position.iloc[0] > 0 else 'short'} {pc}"
+    # (position x open_price) is the position's VALUE, so a spread opened for a CREDIT is
+    # negative -- you owe it back. Credit put spread = bull put; credit call spread = bear call.
+    val = (g.position * g.open_price).sum()
+    if pc == "put":  return "bull put spread" if val < 0 else "bear put spread"
+    return "bear call spread" if val < 0 else "bull call spread"
 
 
-async def _fetch_chain(
-    ticker: str,
-    expiry: date,
-    client: TradierClient,
-) -> list[dict]:
-    try:
-        return await list_contracts_for_expiry(
-            ticker, expiry.isoformat(), client=client
-        )
-    except Exception as e:
-        print(f"  WARNING: chain fetch failed {ticker}/{expiry}: {e}", file=sys.stderr)
-        return []
+async def live_marks(df: pd.DataFrame) -> dict:
+    from lib.tradier.tradier_client_wrapper import TradierClient
+    from lib.commons.list_contracts import list_contracts_for_expiry
+    key = os.environ.get("TRADIER_API_KEY")
+    if not key:
+        print("  (--live needs TRADIER_API_KEY; falling back to broker marks)", file=sys.stderr)
+        return {}
+    o = df[df.asset_category == "OPT"]
+    want = {(r.underlying_symbol, str(r.expiry)[:10]) for r in o.itertuples()}
+    out = {}
+    async with TradierClient(api_key=key) as cl:
+        for tk, ex in sorted(want):
+            try:
+                for c in await list_contracts_for_expiry(tk, ex, client=cl):
+                    b, a = c.get("bid") or 0, c.get("ask") or 0
+                    m = (b + a) / 2 if b > 0 and a > 0 else (c.get("last") or 0)
+                    if m:
+                        out[(tk, ex, float(c["strike"]), c["option_type"][0].upper())] = float(m)
+            except Exception as e:
+                print(f"  WARN {tk}/{ex}: {type(e).__name__}", file=sys.stderr)
+    return out
 
 
-# ── Action logic ──────────────────────────────────────────────────────────────
+async def main(argv) -> int:
+    ap = argparse.ArgumentParser(description="Open book by structure, broker basis + live marks")
+    ap.add_argument("--live", action="store_true", help="re-mark options against Tradier")
+    ap.add_argument("--expiring", type=int, default=None)
+    a = ap.parse_args(argv)
 
-def evaluate_position(pos: dict, chains: dict[tuple, list[dict]], today: date) -> dict:
-    """
-    Returns a dict with:
-        action:   'CLOSE' | 'HOLD' | 'EXPIRY_SOON' | 'DATA_ERROR'
-        reason:   str
-        pnl_pct:  float | None   (% of entry_value recovered/lost)
-        detail:   list[str]
-    """
-    detail: list[str] = []
-    ticker       = pos["ticker"]
-    position_type = pos["position_type"]
-    entry_value  = pos["entry_value"]   # credit (>0) for spreads, debit (<0) for calendars
-    pt_pct       = pos["profit_target_pct"]
-    contracts    = pos["contracts"]
-    expiry       = pos["expiry"]
-    legs         = pos["legs"]
-
-    dte = (expiry - today).days
-    detail.append(f"  Expiry: {expiry}  ({dte} DTE)")
-
-    # Locate short and long legs
-    short_leg = next((l for l in legs if l["leg_role"] == "open_short"), None)
-    long_leg  = next((l for l in legs if l["leg_role"] == "open_long"),  None)
-
-    if not short_leg:
-        return {"action": "DATA_ERROR", "reason": "no open_short leg found",
-                "pnl_pct": None, "detail": detail}
-
-    # Fetch current quotes
-    put_call = (short_leg["put_call"] or "P").upper()
-    cp_str   = "put" if put_call == "P" else "call"
-
-    short_chain = chains.get((ticker, short_leg["trade_expiry"]), [])
-    short_contract = _find_contract(short_chain, short_leg["trade_strike"], cp_str)
-
-    long_contract = None
-    if long_leg:
-        long_chain = chains.get((ticker, long_leg["trade_expiry"]), [])
-        long_contract = _find_contract(long_chain, long_leg["trade_strike"], cp_str)
-
-    short_mid = _mid(short_contract) if short_contract else None
-    long_mid  = _mid(long_contract)  if long_contract  else None
-
-    if short_mid is None:
-        return {"action": "DATA_ERROR", "reason": "no quote for short leg",
-                "pnl_pct": None, "detail": detail}
-
-    # ── Credit spread (bull_put_spread, bear_call_spread) ─────────────────────
-    if position_type in ("bull_put_spread", "bear_call_spread"):
-        if long_mid is None:
-            return {"action": "DATA_ERROR", "reason": "no quote for long leg",
-                    "pnl_pct": None, "detail": detail}
-
-        ann_target     = pos.get("ann_target")          # e.g. 1.0 = 100% annualized; None = fixed %
-        entry_date     = pos["entry_date"]
-        hold_days      = max((today - entry_date).days, 1)
-
-        # Margin = spread_width - credit (Reg T max loss)
-        spread_width   = abs(pos["short_strike"] - pos["long_strike"])
-        margin         = max(spread_width - entry_value, 0.01)
-
-        # Current cost to close = buy back short, sell long
-        current_spread = short_mid - long_mid
-        pnl_per_share  = entry_value - current_spread
-        pnl_pct        = pnl_per_share / entry_value * 100
-        total_pnl      = pnl_per_share * 100 * contracts
-
-        cp_label = "C" if position_type == "bear_call_spread" else "P"
-        detail.append(f"  Short ${short_leg['trade_strike']:.2f}{cp_label}  entry ${short_leg['price']:.2f}  current ${short_mid:.2f}")
-        detail.append(f"  Long  ${long_leg['trade_strike']:.2f}{cp_label}  entry ${long_leg['price']:.2f}  current ${long_mid:.2f}")
-        detail.append("")
-        detail.append(f"  Entry credit:     ${entry_value:.4f}/shr  (margin ${margin:.4f}/shr)")
-        detail.append(f"  Current spread:   ${current_spread:.4f}/shr  (cost to close)")
-        detail.append(f"  Days held:        {hold_days}d")
-
-        if ann_target is not None:
-            # Annualized ROC mode
-            roc_now     = pnl_per_share / margin
-            ann_roc_now = roc_now * (365.0 / hold_days)
-            target_pct  = ann_target * 100
-            # Today's equivalent spread threshold for reaching the ann target
-            req_roc     = ann_target * (hold_days / 365.0)
-            req_pnl     = req_roc * margin
-            target_spread = entry_value - req_pnl
-
-            detail.append(f"  Profit target:    ann ROC ≥ {target_pct:.0f}%  "
-                          f"→ today's spread ≤ ${target_spread:.4f}  "
-                          f"(need {req_roc*100:.1f}% ROC in {hold_days}d)")
-            detail.append(f"  P&L if closed now: ${pnl_per_share:+.4f}/shr  "
-                          f"({roc_now*100:+.1f}% ROC, {ann_roc_now*100:+.0f}% ann)  "
-                          f"${total_pnl:+.0f} total ({contracts} contracts)")
-            target_met = ann_roc_now >= ann_target
-            target_desc = f"ann ROC {ann_roc_now*100:+.0f}% ≥ target {target_pct:.0f}%"
-            miss_desc   = f"ann ROC {ann_roc_now*100:+.0f}% < target {target_pct:.0f}% ({hold_days}d held)"
-        else:
-            # Fixed % mode (legacy)
-            target_spread = entry_value * (1.0 - pt_pct)
-            detail.append(f"  Profit target:    close when spread ≤ ${target_spread:.4f}  (keep {int(pt_pct*100)}%)")
-            detail.append(f"  P&L if closed now: ${pnl_per_share:+.4f}/shr  ({pnl_pct:+.1f}%)  ${total_pnl:+.0f} total ({contracts} contracts)")
-            target_met  = current_spread <= target_spread
-            target_desc = f"spread ${current_spread:.4f} ≤ ${target_spread:.4f} ({pnl_pct:.1f}% ROC)"
-            miss_desc   = f"spread ${current_spread:.4f} > target ${target_spread:.4f} ({pnl_pct:+.1f}% ROC so far)"
-
-        if dte <= 1:
-            action = "EXPIRY_SOON"
-            reason = "Expiry tomorrow — close both legs at market"
-        elif target_met:
-            action = "CLOSE"
-            reason = f"Profit target reached: {target_desc}"
-        elif dte <= 3:
-            action = "EXPIRY_SOON"
-            reason = f"Expiry in {dte} days — monitor closely"
-        else:
-            action = "HOLD"
-            reason = miss_desc
-
-    # ── Calendar (put_calendar, call_calendar) ────────────────────────────────
-    elif position_type in ("put_calendar", "call_calendar"):
-        if long_mid is None:
-            return {"action": "DATA_ERROR", "reason": "no quote for long leg",
-                    "pnl_pct": None, "detail": detail}
-
-        # For a long calendar: current value = long_mid - short_mid
-        # entry_value is stored as negative (debit paid) — use abs
-        debit       = abs(entry_value)
-        current_val = long_mid - short_mid   # current spread value
-        target_val  = debit * (1.0 + pt_pct)
-        pnl_per_share = current_val - debit
-        pnl_pct       = pnl_per_share / debit * 100
-        total_pnl     = pnl_per_share * 100 * contracts
-
-        detail.append(f"  Short ${short_leg['trade_strike']:.2f}P {short_leg['trade_expiry']}  entry ${short_leg['price']:.2f}  current ${short_mid:.2f}")
-        detail.append(f"  Long  ${long_leg['trade_strike']:.2f}P {long_leg['trade_expiry']}  entry ${long_leg['price']:.2f}  current ${long_mid:.2f}")
-        detail.append("")
-        detail.append(f"  Entry debit:       ${debit:.4f}/shr")
-        detail.append(f"  Current value:     ${current_val:.4f}/shr")
-        detail.append(f"  Profit target:     close when value ≥ ${target_val:.4f}  (+{int(pt_pct*100)}% ROC)")
-        detail.append(f"  P&L if closed now: ${pnl_per_share:+.4f}/shr  ({pnl_pct:+.1f}%)  ${total_pnl:+.0f} total ({contracts} contracts)")
-
-        if dte <= 1:
-            action = "EXPIRY_SOON"
-            reason = "Short leg expires tomorrow — close both legs at market"
-        elif current_val >= target_val:
-            action = "CLOSE"
-            reason = (
-                f"Profit target reached: value ${current_val:.4f} ≥ ${target_val:.4f} "
-                f"(+{pnl_pct:.1f}% ROC)"
-            )
-        elif dte <= 3:
-            action = "EXPIRY_SOON"
-            reason = f"Short expiry in {dte} days — monitor closely"
-        else:
-            action = "HOLD"
-            reason = (
-                f"Value ${current_val:.4f} < target ${target_val:.4f} "
-                f"({pnl_pct:+.1f}% ROC so far)"
-            )
-
+    snap, df = latest_snapshot()
+    today = date.today()
+    lag = (today - snap).days
+    print(f"Flex snapshot {snap} ({lag}d old) | {len(df)} legs: "
+          + ", ".join(f"{k} {v}" for k, v in df.asset_category.value_counts().items()))
+    marks = await live_marks(df) if a.live else {}
+    if a.live:
+        print(f"live marks: {len(marks)} contracts re-quoted\n")
     else:
-        return {"action": "DATA_ERROR", "reason": f"unknown position_type {position_type}",
-                "pnl_pct": None, "detail": detail}
+        print()
 
-    return {"action": action, "reason": reason, "pnl_pct": pnl_pct, "detail": detail}
+    df["expiry_s"] = df.expiry.astype(str).str[:10]
+    rows = []
+    for (u, ex), g in df.groupby(["underlying_symbol", "expiry_s"], dropna=False):
+        kind = classify(g)
+        m = MULT.get(g.asset_category.iloc[0], 100)
+        basis = (g.position * g.open_price * m).sum()
+        bmark = (g.position * g.mark_price * m).sum()
+        lmark = bmark
+        if marks and (g.asset_category == "OPT").all():
+            v, ok = 0.0, True
+            for r in g.itertuples():
+                k = (r.underlying_symbol, r.expiry_s, float(r.strike), str(r.put_call)[:1].upper())
+                if k not in marks: ok = False; break
+                v += r.position * marks[k] * m
+            if ok: lmark = v
+        dte = (pd.Timestamp(ex).date() - today).days if ex and ex != "None" else None
+        if a.expiring is not None and (dte is None or dte > a.expiring):
+            continue
+        # NB: one (underlying, expiry) cell can hold two unrelated positions -- a bull put and a
+        # long call on the same name and expiry merge into one row and read as an odd structure.
+        rows.append(dict(u=u, kind=kind, dte=dte, legs=len(g),
+                         qty=int(g.position.abs().max()), basis=basis, mark=lmark,
+                         pnl=lmark - basis, broker_pnl=g.unrealized_pnl.sum()))
 
+    D = pd.DataFrame(rows).sort_values(["dte", "u"], na_position="last")
+    col = "P&L(live)" if marks else "P&L"
+    print(f"{'ticker':<7}{'structure':<24}{'DTE':>5}{'legs':>5}{'basis$':>10}{'mark$':>10}{col:>11}   note")
+    for r in D.itertuples():
+        dte = "  --" if r.dte is None or pd.isna(r.dte) else f"{r.dte:>4.0f}"
+        note = ""
+        if r.dte is not None and not pd.isna(r.dte):
+            if r.dte < 0: note = "EXPIRED, reconcile"
+            elif r.dte <= 2: note = "<<< EXPIRES"
+        print(f"{r.u:<7}{r.kind:<24}{dte:>5}{r.legs:>5}{r.basis:>10,.0f}{r.mark:>10,.0f}{r.pnl:>11,.0f}   {note}")
 
-# ── Main ──────────────────────────────────────────────────────────────────────
-
-async def run(today: date) -> None:
-    api_key = os.environ.get("TRADIER_API_KEY")
-    if not api_key:
-        print("ERROR: TRADIER_API_KEY not set.", file=sys.stderr)
-        sys.exit(1)
-
-    positions = get_open_positions()
-    if not positions:
-        print("No open positions.")
-        return
-
-    W   = 72
-    BAR = "═" * W
-    bar = "─" * W
-
-    async with TradierClient(api_key=api_key) as client:
-
-        # Collect all (ticker, expiry) pairs needed
-        expiry_pairs: set[tuple[str, date]] = set()
-        for pos in positions:
-            for leg in pos["legs"]:
-                expiry_pairs.add((pos["ticker"], leg["trade_expiry"]))
-
-        # Fetch all chains in parallel
-        pairs = list(expiry_pairs)
-        chains_raw = await asyncio.gather(
-            *[_fetch_chain(t, e, client) for t, e in pairs]
-        )
-        chains: dict[tuple, list[dict]] = {
-            pair: ch for pair, ch in zip(pairs, chains_raw)
-        }
-
-        # Spot prices
-        unique_tickers = list({pos["ticker"] for pos in positions})
-        spots_raw = await asyncio.gather(
-            *[get_underlying_price(t, client=client) for t in unique_tickers]
-        )
-        spot_for = dict(zip(unique_tickers, spots_raw))
-
-    print(f"\n{BAR}")
-    print(f"  POSITION MONITOR  ·  {today}")
-    print(f"{BAR}")
-    print()
-    print_upcoming_events(lookahead_days=7)
-
-    action_icons = {
-        "CLOSE":       "⚠️   CLOSE NOW",
-        "EXPIRY_SOON": "⏰  EXPIRY SOON",
-        "HOLD":        "✅  HOLD",
-        "DATA_ERROR":  "❌  DATA ERROR",
-    }
-
-    results = []
-    for pos in positions:
-        name   = pos["strategy_name"]
-        ticker = pos["ticker"]
-        spot   = spot_for.get(ticker)
-
-        print(f"\n{bar}")
-        spot_str = f"  {ticker}: ${spot:.2f}" if spot else ""
-        print(f"  {name}  ·  {pos['contracts']} contract(s)  ·  entered {pos['entry_date']}{spot_str}")
-        print(bar)
-
-        result = evaluate_position(pos, chains, today)
-        for line in result["detail"]:
-            print(line)
-
-        icon = action_icons.get(result["action"], result["action"])
-        print(f"\n  {icon}  —  {result['reason']}")
-        results.append((name, result))
-
-    # Summary
-    print(f"\n{BAR}")
-    print(f"  SUMMARY  ·  {today}")
-    print(f"{BAR}")
-    for name, result in results:
-        icon = action_icons.get(result["action"], result["action"])
-        pnl_str = f"  ({result['pnl_pct']:+.1f}%)" if result["pnl_pct"] is not None else ""
-        print(f"  {icon}   {name:<30}{pnl_str}")
-    print(f"{BAR}\n")
-
-
-def main() -> None:
-    import argparse
-    parser = argparse.ArgumentParser(description="Monitor open strategy positions")
-    parser.add_argument("--date", type=date.fromisoformat, default=date.today())
-    args = parser.parse_args()
-    asyncio.run(run(args.date))
+    print(f"\nnet: basis ${D.basis.sum():,.0f} -> mark ${D.mark.sum():,.0f} = ${D.pnl.sum():+,.0f}")
+    if not marks:
+        print(f"broker unrealized (snapshot): ${D.broker_pnl.sum():+,.0f}")
+    print(f"\nstructure mix:\n{D.groupby('kind').agg(n=('u','size'), legs=('legs','sum')).to_string()}")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(asyncio.run(main(sys.argv[1:])))

@@ -1,0 +1,20 @@
+id,strategy_name,ticker,position_type,status,contracts,entry_date,expiry,short_strike,long_strike,entry_value,profit_target_pct,close_date,notes,created_at
+1,GLD Bull Put Spread,GLD,bull_put_spread,closed,3,2026-03-04,2026-03-27,454.0,448.0,1.6067,0.5,2026-03-18,"Entered per GLD Bull Put Spread playbook (VIX<25, 0.30Δ/0.25Δ, 50% take)",2026-03-04 12:52:31
+2,CLS Bull Put Spread,CLS,bull_put_spread,closed,1,2026-03-10,2026-03-27,247.5,230.0,3.7,0.5,2026-03-13,"0.25Δ/0.15Δ 20DTE, screener entry 2026-03-10",2026-03-10 09:53:25
+3,SQQQ Bear Call Spread,SQQQ,bear_call_spread,closed,5,2026-03-10,2026-03-27,70.5,73.5,0.8,0.5,2026-03-13,"0.50Δ/0.40Δ 20DTE, screener entry 2026-03-10",2026-03-10 09:53:26
+4,TLT Bull Put Spread,TLT,bull_put_spread,closed,25,2026-03-06,2026-03-20,87.5,87.0,0.11,0.5,2026-03-11,"Non-standard TLT put spread (not screener bear call), 25 contracts, 2026-03-06",2026-03-10 09:53:26
+5,TMF Bear Call Spread,TMF,bear_call_spread,closed,20,2026-03-09,2026-03-27,41.0,41.5,0.12,0.5,2026-03-11,"0.35Δ/0.25Δ 20DTE, screener entry 2026-03-09",2026-03-10 09:53:26
+6,XLU Put Calendar,XLU,put_calendar,closed,10,2026-03-09,2026-03-27,47.0,47.0,-0.367,0.25,2026-03-18,"ATM 0.50Δ calendar, short 2026-03-27 / long 2026-04-24, 10 contracts",2026-03-10 09:53:26
+7,UVXY Bear Call Spread,UVXY,bear_call_spread,closed,5,2026-03-10,2026-03-27,46.5,50.0,0.7,0.5,2026-03-13,"0.50Δ/0.40Δ 20DTE, screener entry 2026-03-10",2026-03-10 09:53:26
+8,TLT Bear Call Spread,TLT,bear_call_spread,closed,25,2026-03-11,2026-04-02,88.5,89.5,0.26,0.7,2026-03-20,"0.35Δ/0.25Δ 22DTE, VIX≥20 entry, 70% take. Short $88.50C/Long $89.50C @ $0.25 credit.",2026-03-11 11:25:30
+9,TMF Bear Call Spread,TMF,bear_call_spread,closed,20,2026-03-11,2026-04-02,38.5,39.5,0.25,0.5,2026-03-20,"0.35Δ/0.25Δ 22DTE, screener entry 2026-03-11. Avg short $0.665, avg long $0.415.",2026-03-11 11:32:57
+10,XLF Bull Put Spread,XLF,bull_put_spread,closed,15,2026-03-11,2026-03-31,48.0,47.0,0.18,0.5,2026-03-13,"0.35Δ/0.25Δ 20DTE, screener entry 2026-03-11, reduced size (fwd_vol 1.47 elevated). Avg short $0.695, avg long $0.515.",2026-03-11 11:32:57
+11,XLE Bull Put Spread,XLE,bull_put_spread,open,5,2026-03-16,2026-05-15,55.0,52.0,0.68,0.5,,"PROVISIONAL; 0.30Δ/0.20Δ 60DTE, All VIX, 50% take. Short $55P/Long $52P @ $0.68cr (5 contracts).",2026-03-16 07:57:05
+12,XLE Bull Put Spread,XLE,bull_put_spread,open,10,2026-03-18,2026-05-15,56.0,53.0,0.67,0.5,,,2026-03-18 08:39:56
+13,TLT Bear Call Spread,TLT,bear_call_spread,open,25,2026-03-18,2026-04-10,88.5,89.5,0.18,0.7,,"Bear call spread 88.5/89.5 C, VIX≥20 Bearish_HighIV entry, 23 DTE",2026-03-18 11:56:55
+14,GLD Put Calendar,GLD,put_calendar,closed,2,2026-03-20,2026-04-10,420.0,420.0,-5.455,0.25,2026-03-25,Apr10/May15 $420P calendar. Debit $5.455avg. iv_ratio 1.138. 25% ROC take.,2026-03-20 08:59:17
+15,XLU Put Calendar,XLU,put_calendar,open,50,2026-03-20,2026-04-10,46.0,46.0,-0.47,0.25,,Apr10/May15 $46P calendar. Debit $0.470avg. iv_ratio 1.159. 25% ROC take.,2026-03-20 08:59:17
+16,QQQ Bull Put Spread,QQQ,bull_put_spread,open,1,2026-03-20,2026-04-10,559.0,540.0,2.87,0.5,,Bearish_HighIV regime. $559P/$540P Apr10. No stop loss. Credit $2.87.,2026-03-20 08:59:17
+17,XLF Regime-Switching,XLF,bull_put_spread,open,20,2026-03-24,2026-04-10,48.5,47.5,0.2215,0.5,,BearishHI; short 48.50P / long 47.50P; 20 cts; entry 2026-03-24,2026-03-24 10:09:32
+18,XLU Put Calendar,XLU,put_calendar,open,20,2026-03-26,2026-04-17,45.0,45.0,-0.37,0.25,,Apr17/May15 $45P calendar. Debit $0.37avg. iv_ratio 1.068. 25% ROC take.,2026-03-26 08:14:19
+19,XLV Put Calendar,XLV,put_calendar,open,8,2026-03-26,2026-04-17,147.0,147.0,-1.16,0.25,,Apr17/May15 $147P calendar. Debit $1.16avg. iv_ratio 1.063. 25% ROC take.,2026-03-26 08:14:19
