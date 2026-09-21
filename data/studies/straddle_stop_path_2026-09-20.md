@@ -55,8 +55,13 @@ bounded loss early, at a worse price, and forfeits the trades that would have co
 **Dropping the stop is worth +3.84pp.** Per fold, unstopped and filled: every year positive.
 With the stop, 2025 is −0.32%.
 
-⚠ Marks are **daily closes**. A real intraday stop triggers more often and at worse prices, so every
-number here is an **upper bound** on the stop's value. The conclusion only strengthens.
+⚠ Marks are **daily closes**, and the same-day review corrected the earlier claim that an intraday stop
+would be *worse*. It cuts both ways: an intraday stop **triggers more often** (bad) but **exits nearer
+−50%** instead of the daily-close overshoot to −64% (good). On the stopped cohort a perfect −50% fill
+less the exit spread is ≈ −55%, against −54.75% held — roughly **neutral**, not a loss. So the honest
+statement is: the stop does not help under either mark convention; it clearly hurts on daily marks and
+is about break-even under an idealised intraday fill. The no-stop conclusion rests on the exit-spread
+cost, the 20-cell sweep, and the independent 2026-09-10 result — not on the mark convention.
 
 ## Convergence
 

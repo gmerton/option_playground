@@ -1,7 +1,8 @@
 # Is earnings vol overpriced? (the oquants "sell the event" claim) — 2026-09-20
 
-**VERDICT: NULL after costs · MECHANISM.** The premium is **real at mid** and **does not survive the
-bid/ask**. Crossing the spread costs **171% of the gross premium**. And the selectivity lever — sell
+**VERDICT: NULL after costs on the whole set · PARKED on liquid names · MECHANISM.** The premium is
+**real at mid**, **does not survive the bid/ask unconditionally**, and **does survive on the top
+~40% by volume** (see the review section) — below the t bar. Crossing the spread costs **171% of the gross premium**. And the selectivity lever — sell
 the richest implied moves — makes it **worse** after costs, not better.
 
 **Why measured, not simulated.** Our only prior evidence was the tastylive "earnings between the
@@ -58,6 +59,22 @@ inference is strong and points the wrong way: a condor is **four legs against th
 today's event-spread study measured that a second leg **triples** the friction bill (−37.3pp vs −12.3pp).
 A cheaper, capped structure risks less premium but pays more spread per unit of premium sold. Nothing
 here suggests the condor rescues a bet the straddle cannot carry; it should be measured before use.
+
+## ⚠ Same-day review: the liquidity-gated cell is a PARKED candidate
+
+The gates study framed `avg_volume` as a cost proxy and moved on. Re-examined with a day-clustered t
+and year-by-year, short ATM straddle **selling at the BID**:
+
+| cell | n | mean | win | t (day) | neg years |
+|---|---|---|---|---|---|
+| all events | 3,163 | −0.065% | 57.8% | −0.50 | 4/8 |
+| **volume top 40%** | 1,265 | **+0.284%** | 59.9% | 1.12 | **1/8** |
+| **avg_volume ≥ 5M** | 1,034 | **+0.281%** | 60.4% | 0.83 | **1/8** |
+| ≥5M at a mid−25%-spread limit fill | 1,034 | **+0.438%** | | | |
+
+Positive after costs, 7 of 8 years, right direction, small edge, t ≈ 1. **PARKED**, not NULL — the
+premium survives on liquid names; the t bar is what it fails. Note 2026 is the negative year in most
+cells (a partial year, 158 events).
 
 ## What this settles
 

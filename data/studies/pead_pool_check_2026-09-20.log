@@ -1,0 +1,42 @@
+
+##### STRADDLE-POOL names only: 5,322 events, 472 good+MUTED #####
+control = post (1,184 control trades)
+
+=== tape good+MUTED | STRADDLE-POOL names only (daily) — 413 signals, 150 names, 2019-10-03 -> 2026-09-14 ===
+               n  meanR   medR     win    p90      t   ctrl   edge
+stop_hold  413.0  0.181  0.040  52.300  1.677  1.893 -0.063  0.244
+t1R        413.0 -0.001  0.193  55.448  1.000  0.006 -0.140  0.139
+t2R        413.0  0.075  0.057  53.027  2.000  1.062 -0.099  0.174
+trail_bar  413.0  0.131 -0.160  38.983  1.427  1.589 -0.045  0.176
+ema20      413.0  0.063 -0.139  43.341  1.206  0.771 -0.054  0.117
+
+by half (n 177 / 236):
+           <2023-01-01  >=2023-01-01
+stop_hold        0.094         0.245
+t1R             -0.055         0.040
+t2R             -0.013         0.141
+trail_bar        0.049         0.192
+ema20           -0.039         0.140
+
+best arm by edge: stop_hold | passes the bar (beats control, both halves positive, |t|>=3): no
+
+##### NON-pool names only: 30,926 events, 2655 good+MUTED #####
+control = post (4,029 control trades)
+
+=== tape good+MUTED | NON-pool names only (daily) — 2,304 signals, 880 names, 2019-10-03 -> 2026-09-14 ===
+                n  meanR   medR     win    p90      t   ctrl   edge
+stop_hold  2304.0  0.073  0.018  50.694  1.563  1.012 -0.069  0.141
+t1R        2304.0 -0.037  0.100  54.167  1.000 -1.795 -0.120  0.083
+t2R        2304.0  0.029  0.048  51.780  2.000 -0.333 -0.087  0.116
+trail_bar  2304.0  0.015 -0.164  39.453  1.153  0.136 -0.087  0.102
+ema20      2304.0  0.043 -0.104  44.184  1.226  0.803 -0.048  0.091
+
+by half (n 920 / 1384):
+           <2023-01-01  >=2023-01-01
+stop_hold        0.115         0.045
+t1R             -0.034        -0.040
+t2R              0.045         0.018
+trail_bar        0.033         0.004
+ema20            0.100         0.006
+
+best arm by edge: stop_hold | passes the bar (beats control, both halves positive, |t|>=3): no
