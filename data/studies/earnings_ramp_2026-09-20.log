@@ -1,0 +1,24 @@
+3,163 events | entry dates -3bd, -5bd, -10bd before the pre-print session
+  chains from cache: 254,953 rows
+
+================================================================================================================
+  PRE-EARNINGS RAMP: buy the ATM straddle N business days out, sell it on the pre-print session (% of cost)
+================================================================================================================
+  entry        n    IV in->out  ramp vp     MID   LIMIT   CROSS  t(lim) win(lim)  rt spread  neg yrs (lim)
+  -3bd     2,572  0.700->1.103   +40.3   -3.42  -10.03  -15.67  -22.81    21.4%      16.1%  8/8
+  -5bd     2,262  0.626->1.093   +46.7   -6.89  -13.34  -18.83  -26.11    17.5%      16.3%  8/8
+  -10bd     1,762  0.532->1.101   +56.9  -14.31  -20.70  -26.09  -36.89    10.3%      16.5%  8/8
+
+  IV ramp = ATM implied vol on the pre-print session minus at entry, in vol points (the mechanism).
+  rt spread = round-trip bid/ask as % of the mid straddle cost (median). Theta is inside the MID number.
+
+================================================================================================================
+  LIQUIDITY SPLIT (the review's check), -5bd entry, % of cost
+================================================================================================================
+  cell                           n     MID   LIMIT   CROSS  t(lim)  rt spread  neg yrs
+  ALL                        2,262   -6.89  -13.34  -18.83  -26.11      16.3%  8/8
+  volume q5                    453   -9.79  -12.85  -15.64  -15.18       7.1%  8/8
+  volume top 40%               905   -8.98  -12.85  -16.39  -19.21      10.0%  8/8
+  avg_volume >= 5M             673   -9.56  -13.21  -16.56  -18.06       8.4%  8/8
+
+  by year, -5bd, LIMIT fill: {2019: -9.5, 2020: -21.0, 2021: -18.5, 2022: -14.8, 2023: -10.8, 2024: -6.9, 2025: -13.1, 2026: -22.8}
