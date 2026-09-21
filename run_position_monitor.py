@@ -62,25 +62,41 @@ def classify(g: pd.DataFrame) -> str:
 
 
 async def live_marks(df: pd.DataFrame) -> dict:
+    """Re-quote exactly the legs held, keyed by OCC symbol.
+
+    The snapshot's `symbol` column is already the OCC contract id (space-padded root), which
+    /markets/quotes accepts directly -- so the whole book is one request for exactly the contracts
+    held. The first cut of this pulled every strike of all 47 (ticker, expiry) chains and then
+    looked up 81 of them: 5,865 contracts over 47 requests to read 81 numbers.
+    """
     from lib.tradier.tradier_client_wrapper import TradierClient
-    from lib.commons.list_contracts import list_contracts_for_expiry
     key = os.environ.get("TRADIER_API_KEY")
     if not key:
         print("  (--live needs TRADIER_API_KEY; falling back to broker marks)", file=sys.stderr)
         return {}
-    o = df[df.asset_category == "OPT"]
-    want = {(r.underlying_symbol, str(r.expiry)[:10]) for r in o.itertuples()}
-    out = {}
+    # equities go in the same request -- /markets/quotes takes both, and the 8 stock legs are the
+    # larger half of the book, so leaving them on a 2-day-old broker mark would make the net line stale
+    occ = sorted({str(s).replace(" ", "") for s in df["symbol"]})
+    out, CHUNK = {}, 100
     async with TradierClient(api_key=key) as cl:
-        for tk, ex in sorted(want):
+        for i in range(0, len(occ), CHUNK):
+            part = occ[i:i + CHUNK]
             try:
-                for c in await list_contracts_for_expiry(tk, ex, client=cl):
-                    b, a = c.get("bid") or 0, c.get("ask") or 0
-                    m = (b + a) / 2 if b > 0 and a > 0 else (c.get("last") or 0)
-                    if m:
-                        out[(tk, ex, float(c["strike"]), c["option_type"][0].upper())] = float(m)
+                d = await cl.get_json("/markets/quotes",
+                                      params={"symbols": ",".join(part), "greeks": "false"})
             except Exception as e:
-                print(f"  WARN {tk}/{ex}: {type(e).__name__}", file=sys.stderr)
+                print(f"  WARN quotes chunk {i//CHUNK}: {type(e).__name__}", file=sys.stderr)
+                continue
+            q = (d.get("quotes") or {}).get("quote")
+            for r in ([q] if isinstance(q, dict) else (q or [])):
+                b, a = r.get("bid") or 0, r.get("ask") or 0
+                m = (b + a) / 2 if b > 0 and a > 0 else (r.get("last") or 0)
+                if m:
+                    out[r["symbol"]] = float(m)
+    miss = [o for o in occ if o not in out]
+    if miss:
+        print(f"  ({len(miss)} leg(s) with no quote, keeping the broker mark: {', '.join(miss[:5])})",
+              file=sys.stderr)
     return out
 
 
@@ -97,7 +113,7 @@ async def main(argv) -> int:
           + ", ".join(f"{k} {v}" for k, v in df.asset_category.value_counts().items()))
     marks = await live_marks(df) if a.live else {}
     if a.live:
-        print(f"live marks: {len(marks)} contracts re-quoted\n")
+        print(f"live marks: {len(marks)} of {len(df)} legs re-quoted (options + stock, 1 request per 100)\n")
     else:
         print()
 
@@ -109,10 +125,10 @@ async def main(argv) -> int:
         basis = (g.position * g.open_price * m).sum()
         bmark = (g.position * g.mark_price * m).sum()
         lmark = bmark
-        if marks and (g.asset_category == "OPT").all():
+        if marks:
             v, ok = 0.0, True
             for r in g.itertuples():
-                k = (r.underlying_symbol, r.expiry_s, float(r.strike), str(r.put_call)[:1].upper())
+                k = str(r.symbol).replace(" ", "")
                 if k not in marks: ok = False; break
                 v += r.position * marks[k] * m
             if ok: lmark = v
