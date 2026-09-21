@@ -143,13 +143,13 @@ Each KB folder under `data/<creator>/` carries a skeptic-default leaderboard; on
 | tastylive — double calendar vs condor, earnings placement | **INVERTED** (earnings between the expiries is the best cell) | §3 |
 | Options With Ryan — RSI+BB swing on SPY/QQQ | **FAIL** (1.5/5) | §2 |
 | Theta Profits — 0DTE long strangle and 30 others | **FAIL** (all ≤ 2.5/5; EOD floor −26%/trade) | `data/theta_profits/` |
-| **Debit call spread as a vehicle** (long 30Δ / short 15Δ added to the August vehicle study; matched 93 trades where all 5 vehicles exist) | **FAIL — no change to the ranking.** Risk-equalized it is the WORST option vehicle (−2,605 vs put spread −199, short put −57) and has the lowest win rate of the five (17%). A directional vehicle on flat-to-down entries: loses like the call, then caps the rare winner. ⚠ friction invisible (v3 = prints only) and skew ignored — both flatter it, and it still finishes last | [vehicle_callspread_2026-09-20.md](vehicle_callspread_2026-09-20.md) |
-| **Can the breakout hold/fail split be called at entry?** (9 book features vs the bimodal target, 43,970 breakouts) | **NO.** Spread available **1.647R**; best single gate (dist to 21 EMA) **+0.057R over baseline, t ~2**; best combo +0.112R on n=696, t 1.39, and gates do NOT stack. ⭐ **The best CLASSIFIER is the worst GATE** — extension has a 28.7pp held% spread but 0.036 meanR spread (mechanical, near-tautological). `sma_stacked` INVERTS. → the +1.27R cohort is unknowable at entry | [breakout_hold_predictors_2026-09-20.md](breakout_hold_predictors_2026-09-20.md) |
-| **Retrace entry** — house breakout, entry deferred until price returns to the breakout level (6 cells) | **MARGINAL-FAIL.** B beats A in all 6 cells and the edge flips −0.101 → **+0.065**, both halves positive, B−C = +0.53R confirms entry timing — but **t 0.48** vs the |t|≥3 bar, so not adoptable. ⭐ **Bigger finding: the breakout book is BIMODAL — 23.6% never return = +1.27R, 76.4% return = −0.37R** (survivorship, not a rule). The lever is predicting that split, not the entry price | [retrace_entry_2026-09-20.md](retrace_entry_2026-09-20.md) |
-| **Is the breakout's negative R an entry or a stop problem?** (44,062 house breakouts vs same-name later controls, with and without stops) | ⭐ **ENTRY.** Raw gap negative at every horizon with NO stop (−0.41pp at 5d), and stop-out rates identical (48.4% vs 48.0%) so the stop cannot be the cause. Mechanism measured: breakout entry sits **+0.52 ADR above the prior 20d high vs −2.09 ADR for the control — 2.6 ADR of price paid**. Panel-scale version of the August 1-ADR location rule | [entry_vs_stop_2026-09-20.md](entry_vs_stop_2026-09-20.md) |
-| **FTD → do SINGLE NAMES work better?** (the actual Ariel claim; house breakout split by post-FTD window, honest `post` controls) | **FAIL, with a twist.** Post-FTD breakouts are WORSE (5d −0.196R vs −0.072R) and miss their own control by more. But the post-FTD **controls** are +0.045–0.080R vs +0.000–0.028R elsewhere → the names are better, the **breakout entry** is the wrong way in. ⚠ effective n = **8 FTD episodes**, not 900+ trades | [ftd_names_2026-09-20.md](ftd_names_2026-09-20.md) |
-| **O'Neil Follow-Through Day** as a regime-entry switch (SPY 1993–2026, QQQ, IWM; 4 param cells; bootstrap null) | **FAIL.** No edge vs other correction days at +5/+10/+21d; **IWM negative in 10 of 12 cells** (p to .97); the up-%/volume gates barely beat a naive 'wait 4 days into the rally attempt' arm (−0.9 to +0.7pp at 10–21d). Only +63d SPY/QQQ survives, which is 'drawdowns recover over a quarter', not timing. 3rd failure of trailing-regime timing | [ftd_2026-09-20.md](ftd_2026-09-20.md) |
-| **Event convexity expressed as a debit spread** (long 0.25Δ / short 0.12Δ, 3,377 spreads, 53 event dates) | **FAIL as a vehicle — but the queued hypothesis was WRONG.** The cap binds on 1.7% of trades and costs −2.0pp (t −0.45) at mid; the second leg's FRICTION costs −27.1pp (t −5.51). Event premium survives capping (+20pp gap). ⚠ Bonus: 0.12Δ beats 0.25Δ by +19.5pp at mid (t 2.73) but +1.9pp (t 0.29) at real fills — the far-OTM preference is a mid-price artefact | [event_spread_2026-09-20.md](event_spread_2026-09-20.md) |
+| **Debit call spread as a vehicle** (long 30Δ / short 15Δ added to the August vehicle study; matched 93 trades where all 5 vehicles exist) | **NULL** (+METHOD) — no change to the ranking. Risk-equalized it is the WORST option vehicle (−2,605 vs put spread −199, short put −57) and has the lowest win rate of the five (17%). A directional vehicle on flat-to-down entries: loses like the call, then caps the rare winner. ⚠ friction invisible (v3 = prints only) and skew ignored — both flatter it, and it still finishes last | [vehicle_callspread_2026-09-20.md](vehicle_callspread_2026-09-20.md) |
+| **Can the breakout hold/fail split be called at entry?** (9 book features vs the bimodal target, 43,970 breakouts) | **NULL · METHOD · REFRAME** — settled at this power. Spread available **1.647R**; best single gate (dist to 21 EMA) **+0.057R over baseline, t ~2**; best combo +0.112R on n=696, t 1.39, and gates do NOT stack. ⭐ **The best CLASSIFIER is the worst GATE** — extension has a 28.7pp held% spread but 0.036 meanR spread (mechanical, near-tautological). `sma_stacked` INVERTS. → the +1.27R cohort is unknowable at entry | [breakout_hold_predictors_2026-09-20.md](breakout_hold_predictors_2026-09-20.md) |
+| **Retrace entry** — house breakout, entry deferred until price returns to the breakout level (6 cells) | **PARKED · REFRAME** — 2 of 3 bar criteria (beats control, both halves positive; **t 0.48**). B beats A in all 6 cells and the edge flips −0.101 → **+0.065**, both halves positive, B−C = +0.53R confirms entry timing — but **t 0.48** vs the |t|≥3 bar, so not adoptable. ⭐ **Bigger finding: the breakout book is BIMODAL — 23.6% never return = +1.27R, 76.4% return = −0.37R** (survivorship, not a rule). The lever is predicting that split, not the entry price | [retrace_entry_2026-09-20.md](retrace_entry_2026-09-20.md) |
+| **Is the breakout's negative R an entry or a stop problem?** (44,062 house breakouts vs same-name later controls, with and without stops) | ⭐ **MECHANISM** (verdict: the ENTRY, not the stop). Raw gap negative at every horizon with NO stop (−0.41pp at 5d), and stop-out rates identical (48.4% vs 48.0%) so the stop cannot be the cause. Mechanism measured: breakout entry sits **+0.52 ADR above the prior 20d high vs −2.09 ADR for the control — 2.6 ADR of price paid**. Panel-scale version of the August 1-ADR location rule | [entry_vs_stop_2026-09-20.md](entry_vs_stop_2026-09-20.md) |
+| **FTD → do SINGLE NAMES work better?** (the actual Ariel claim; house breakout split by post-FTD window, honest `post` controls) | **UNDERPOWERED · MECHANISM** — eff. n **8 FTD episodes**, not 900+ trades; settles only by extending the panel pre-2019. Post-FTD breakouts are WORSE (5d −0.196R vs −0.072R) and miss their own control by more. But the post-FTD **controls** are +0.045–0.080R vs +0.000–0.028R elsewhere → the names are better, the **breakout entry** is the wrong way in. ⚠ effective n = **8 FTD episodes**, not 900+ trades | [ftd_names_2026-09-20.md](ftd_names_2026-09-20.md) |
+| **O'Neil Follow-Through Day** as a regime-entry switch (SPY 1993–2026, QQQ, IWM; 4 param cells; bootstrap null) | **NULL** (+METHOD: naive-arm control) — eff. n 16–37 signals, ~144 tests run. No edge vs other correction days at +5/+10/+21d; **IWM negative in 10 of 12 cells** (p to .97); the up-%/volume gates barely beat a naive 'wait 4 days into the rally attempt' arm (−0.9 to +0.7pp at 10–21d). Only +63d SPY/QQQ survives, which is 'drawdowns recover over a quarter', not timing. 3rd failure of trailing-regime timing | [ftd_2026-09-20.md](ftd_2026-09-20.md) |
+| **Event convexity expressed as a debit spread** (long 0.25Δ / short 0.12Δ, 3,377 spreads, 53 event dates) | **NULL as a vehicle · MECHANISM · METHOD** — eff. n **53 event dates** (not 3,377 spreads). The queued hypothesis was WRONG: The cap binds on 1.7% of trades and costs −2.0pp (t −0.45) at mid; the second leg's FRICTION costs −27.1pp (t −5.51). Event premium survives capping (+20pp gap). ⚠ Bonus: 0.12Δ beats 0.25Δ by +19.5pp at mid (t 2.73) but +1.9pp (t 0.29) at real fills — the far-OTM preference is a mid-price artefact | [event_spread_2026-09-20.md](event_spread_2026-09-20.md) |
 | Options With Ravish — super bull call spread (OTM debit spread) | **not tested** (2.5/5 on review 2026-09-20; mechanics correct, no selection rule; 3:1 payoff = the market's price for ~25% odds, not an edge; 2 vehicle tests queued §10) | `data/options_with_ravish/super_bull_call_spread_2026-09_review.md` |
 | Paycheck To Portfolio — leveraged income system | **not tested** (1.5/5 on review; 2022 stress test queued) | `data/paycheck2portfolio/` |
 
@@ -208,9 +208,43 @@ elsewhere or the strategy it served is dead). Rough cost in the last column.
 | "More like CF + XLE" chain pull (research queue #4) | three wins at an 80% base rate; breach odds depend only on cushion in ADR |
 | Tier-weighted risk (10× by grade) before buying minute bars | done as the size-lever study: exclusion wins, the spread does not |
 
+## Verdict scheme (adopted 2026-09-20)
+
+"Pass / fail" was losing information. A test has **two independent outcomes**: what it says about the
+*idea*, and what it gave *us*. Rows carry one **VERDICT** and, where it applies, one or more **YIELD**
+tags.
+
+### VERDICT — what the evidence says about the idea
+
+| verdict | meaning | what to do with it |
+|---|---|---|
+| **ADOPTED** | clears the bar (beats its honest control, both halves positive, \|t\| ≥ 3) and is live | it is in §0 and on the desk |
+| **PARKED** | right direction, consistent across cells, **below the bar** | a live candidate; re-test when data or power improves — do not re-derive from scratch |
+| **NULL** | tested at adequate power, no effect | settled. Do not re-run without a new angle |
+| **INVERTED** | significant in the **opposite** direction | ⭐ actionable as a **veto**, not a null — the strongest kind of negative |
+| **UNDERPOWERED** | direction unresolved and the sample cannot resolve it | **not settled.** Says what data would settle it |
+| **RETRACTED** | previously reported, later found wrong | the old number is poison; say what was wrong |
+
+### YIELD — what the test gave us regardless of its verdict
+
+- **MECHANISM** — explains *why* something works or fails (friction not capping; 2.6 ADR of entry location)
+- **METHOD** — a durable lesson about how to test (the best classifier is the worst gate; honest controls)
+- **REFRAME** — changed the question itself (the breakout book is bimodal)
+
+A NULL with a MECHANISM or METHOD tag was a **good test**. A row with no yield tag and a NULL verdict
+was a dead end, and that is worth knowing too.
+
+### Effective n, always
+
+Report the **clustering unit**, not the trade count — they diverge by orders of magnitude and the trade
+count is what fools you. 3,377 event spreads were **53 event dates**; 900 post-FTD breakouts were
+**8 FTD episodes**; 27,523 retrace entries still only reached t 0.48. Where they differ, the row states
+effective n and the verdict is set from it.
+
 ## Standing rules this index enforces
 
 - A pattern test goes through `lib.studies.pattern_test` and lands in [pattern_ledger.md](pattern_ledger.md) with its random controls (`post` for timing, `xname` for selection; the pre-2026-09-19 `month` control has look-ahead). All 25 pre-2026-09-19 rows were re-scored against both honest controls the same day ([ledger_rerun](ledger_rerun/ledger_rerun_2026-09-19.md)): still 0 passes; quote the RERUN rows' `ctrl`/`edge`, never the `month` rows'. `post` is now the harness default.
 - Path simulations settle at intrinsic and are checked on crash weeks before any number is reported (the calendar study's +20–40% was a truncation artefact).
 - Gabe's own trades are conformance and cost evidence only, never setup evidence.
-- New tests append a row here in the same session they land.
+- New tests append a row here in the same session they land, with a VERDICT from the scheme above and effective n where it differs from the trade count.
+- Rows predating 2026-09-20 keep their original wording until they are next touched; re-label on contact, not in a sweep (a bulk re-read would mislabel work whose context is not in front of us).
