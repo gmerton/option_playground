@@ -7,6 +7,15 @@ PY=.venv/bin/python3; export PYTHONPATH=src
 D=$(date +%F); OUT=data/watchlist; mkdir -p "$OUT"
 echo "== 1/6 regime read (descriptive; see run_regime_validation.py for why it is not a forecast)"
 $PY run_trailing_retro.py --window 21 2>/dev/null | sed -n 1,25p | tee "$OUT/regime_$D.txt"
+echo; echo "== 1b open book (Flex snapshot + live Tradier marks): what expires and what it is worth"
+# Source is journal_open_positions (broker basis + mark), NOT journal_campaigns -- campaign
+# net_premium is cumulative cash including rolls, so it cannot give a cost basis. Snapshot lands
+# one session late, so --live re-marks the option legs. Full table in the log; only the urgent
+# rows and the totals reach the terminal.
+MYSQL_PASSWORD="${MYSQL_PASSWORD:-}" $PY run_position_monitor.py --live 2>/dev/null \
+  | tee "$OUT/positions_$D.txt" | sed -n '1,2p; /EXPIRES\|EXPIRED/p; /^net:/,$p'
+echo "  full table: $OUT/positions_$D.txt"
+
 echo; echo "== 2/6 Adhikary scan (precision=YES + SETUP pivots are the actionable rows)"
 $PY run_adhikary_scan.py 2>/dev/null | tee "$OUT/adhikary_$D.txt" | sed -n 1,60p
 echo; echo "== 2c industry clusters of the scan's qualifiers (watchlist pointer, NOT a signal: group strength has no edge, see group_move_study_2026-09-17.md)"
