@@ -1,0 +1,301 @@
+
+==============================================================================
+SPY  1993-01-29 -> 2026-09-18  (8,467 sessions)
+
+  [DD>=5%, up>=1.0%]  28 first-FTDs | 2,740 correction sessions (32% of history)
+
+--- SPY: FTD vs other correction days (DD5%/1.0%) ---
+horizon  n  ftd_mean  pool_mean  edge_pp  p_boot
+    +5d 28      0.19       0.29    -0.10    0.57
+   +10d 28      0.25       0.50    -0.25    0.63
+   +21d 28      1.17       1.00     0.17    0.45
+   +63d 28      5.42       2.56     2.86    0.06
+
+--- SPY: FTD vs ALL days (being invested) (DD5%/1.0%) ---
+horizon  n  ftd_mean  pool_mean  edge_pp  p_boot
+    +5d 28      0.19       0.20    -0.01    0.52
+   +10d 28      0.25       0.39    -0.14    0.60
+   +21d 28      1.17       0.81     0.35    0.35
+   +63d 28      5.42       2.42     3.01    0.01
+    naive 'day-4 of the attempt' arm: 103 signals
+
+--- SPY: does the RULE beat just waiting 4 days? (DD5%/1.0%) ---
+horizon  ftd  naive_day4  rule_edge_pp
+    +5d 0.19       -0.06          0.24
+   +10d 0.25        0.40         -0.14
+   +21d 1.17        1.51         -0.34
+   +63d 5.42        3.67          1.75
+
+  [DD>=8%, up>=1.0%]  16 first-FTDs | 1,897 correction sessions (22% of history)
+
+--- SPY: FTD vs other correction days (DD8%/1.0%) ---
+horizon  n  ftd_mean  pool_mean  edge_pp  p_boot
+    +5d 16      1.47       0.22     1.26    0.08
+   +10d 16      0.65       0.37     0.28    0.41
+   +21d 16      1.22       0.68     0.54    0.38
+   +63d 16      5.48       1.77     3.72    0.09
+
+--- SPY: FTD vs ALL days (being invested) (DD8%/1.0%) ---
+horizon  n  ftd_mean  pool_mean  edge_pp  p_boot
+    +5d 16      1.47       0.19     1.28    0.02
+   +10d 16      0.65       0.39     0.27    0.37
+   +21d 16      1.22       0.82     0.41    0.37
+   +63d 16      5.48       2.42     3.07    0.05
+    naive 'day-4 of the attempt' arm: 51 signals
+
+--- SPY: does the RULE beat just waiting 4 days? (DD8%/1.0%) ---
+horizon  ftd  naive_day4  rule_edge_pp
+    +5d 1.47       -0.22          1.69
+   +10d 0.65        0.70         -0.05
+   +21d 1.22        2.12         -0.89
+   +63d 5.48        2.89          2.60
+
+  [DD>=5%, up>=1.7%]  16 first-FTDs | 2,740 correction sessions (32% of history)
+
+--- SPY: FTD vs other correction days (DD5%/1.7%) ---
+horizon  n  ftd_mean  pool_mean  edge_pp  p_boot
+    +5d 16      1.32       0.28     1.04    0.10
+   +10d 16      1.06       0.50     0.57    0.31
+   +21d 16      1.43       1.00     0.43    0.40
+   +63d 16      5.84       2.57     3.27    0.10
+
+--- SPY: FTD vs ALL days (being invested) (DD5%/1.7%) ---
+horizon  n  ftd_mean  pool_mean  edge_pp  p_boot
+    +5d 16      1.32       0.19     1.13    0.03
+   +10d 16      1.06       0.39     0.68    0.19
+   +21d 16      1.43       0.81     0.61    0.30
+   +63d 16      5.84       2.42     3.42    0.03
+    naive 'day-4 of the attempt' arm: 103 signals
+
+--- SPY: does the RULE beat just waiting 4 days? (DD5%/1.7%) ---
+horizon  ftd  naive_day4  rule_edge_pp
+    +5d 1.32       -0.06          1.38
+   +10d 1.06        0.40          0.67
+   +21d 1.43        1.51         -0.08
+   +63d 5.84        3.67          2.17
+
+  [DD>=10%, up>=1.0%]  16 first-FTDs | 1,635 correction sessions (19% of history)
+
+--- SPY: FTD vs other correction days (DD10%/1.0%) ---
+horizon  n  ftd_mean  pool_mean  edge_pp  p_boot
+    +5d 16      1.07       0.16     0.91    0.17
+   +10d 16      0.99       0.25     0.75    0.28
+   +21d 16      1.23       0.51     0.71    0.34
+   +63d 16      3.28       1.20     2.08    0.24
+
+--- SPY: FTD vs ALL days (being invested) (DD10%/1.0%) ---
+horizon  n  ftd_mean  pool_mean  edge_pp  p_boot
+    +5d 16      1.07       0.19     0.88    0.06
+   +10d 16      0.99       0.39     0.61    0.23
+   +21d 16      1.23       0.82     0.41    0.38
+   +63d 16      3.28       2.42     0.86    0.31
+    naive 'day-4 of the attempt' arm: 48 signals
+
+--- SPY: does the RULE beat just waiting 4 days? (DD10%/1.0%) ---
+horizon  ftd  naive_day4  rule_edge_pp
+    +5d 1.07       -0.03          1.10
+   +10d 0.99        0.70          0.30
+   +21d 1.23        1.64         -0.42
+   +63d 3.28        2.55          0.73
+
+==============================================================================
+QQQ  1999-03-10 -> 2026-09-18  (6,925 sessions)
+
+  [DD>=5%, up>=1.0%]  37 first-FTDs | 3,069 correction sessions (44% of history)
+
+--- QQQ: FTD vs other correction days (DD5%/1.0%) ---
+horizon  n  ftd_mean  pool_mean  edge_pp  p_boot
+    +5d 37      1.00       0.23     0.78    0.14
+   +10d 37      0.76       0.44     0.32    0.38
+   +21d 37      2.11       0.98     1.13    0.22
+   +63d 37      7.07       2.70     4.37    0.04
+
+--- QQQ: FTD vs ALL days (being invested) (DD5%/1.0%) ---
+horizon  n  ftd_mean  pool_mean  edge_pp  p_boot
+    +5d 37      1.00       0.25     0.76    0.09
+   +10d 37      0.76       0.49     0.27    0.37
+   +21d 37      2.11       1.03     1.08    0.17
+   +63d 37      7.07       3.13     3.94    0.02
+    naive 'day-4 of the attempt' arm: 122 signals
+
+--- QQQ: does the RULE beat just waiting 4 days? (DD5%/1.0%) ---
+horizon  ftd  naive_day4  rule_edge_pp
+    +5d 1.00        0.32          0.69
+   +10d 0.76        0.88         -0.11
+   +21d 2.11        2.10          0.01
+   +63d 7.07        4.86          2.21
+
+  [DD>=8%, up>=1.0%]  17 first-FTDs | 2,283 correction sessions (33% of history)
+
+--- QQQ: FTD vs other correction days (DD8%/1.0%) ---
+horizon  n  ftd_mean  pool_mean  edge_pp  p_boot
+    +5d 17      0.74       0.17     0.57    0.31
+   +10d 17      1.43       0.28     1.14    0.23
+   +21d 17      0.30       0.44    -0.15    0.53
+   +63d 17      8.73       1.48     7.25    0.03
+
+--- QQQ: FTD vs ALL days (being invested) (DD8%/1.0%) ---
+horizon  n  ftd_mean  pool_mean  edge_pp  p_boot
+    +5d 17      0.74       0.25     0.50    0.28
+   +10d 17      1.43       0.49     0.93    0.20
+   +21d 17      0.30       1.04    -0.74    0.68
+   +63d 17      8.73       3.13     5.60    0.03
+    naive 'day-4 of the attempt' arm: 89 signals
+
+--- QQQ: does the RULE beat just waiting 4 days? (DD8%/1.0%) ---
+horizon  ftd  naive_day4  rule_edge_pp
+    +5d 0.74        0.24          0.50
+   +10d 1.43        0.29          1.13
+   +21d 0.30        1.20         -0.91
+   +63d 8.73        3.68          5.06
+
+  [DD>=5%, up>=1.7%]  27 first-FTDs | 3,069 correction sessions (44% of history)
+
+--- QQQ: FTD vs other correction days (DD5%/1.7%) ---
+horizon  n  ftd_mean  pool_mean  edge_pp  p_boot
+    +5d 27      1.52       0.22     1.29    0.06
+   +10d 27      1.75       0.44     1.31    0.12
+   +21d 27      2.45       0.98     1.47    0.19
+   +63d 27      7.38       2.71     4.67    0.05
+
+--- QQQ: FTD vs ALL days (being invested) (DD5%/1.7%) ---
+horizon  n  ftd_mean  pool_mean  edge_pp  p_boot
+    +5d 27      1.52       0.25     1.27    0.03
+   +10d 27      1.75       0.49     1.26    0.08
+   +21d 27      2.45       1.03     1.42    0.13
+   +63d 27      7.38       3.13     4.25    0.03
+    naive 'day-4 of the attempt' arm: 122 signals
+
+--- QQQ: does the RULE beat just waiting 4 days? (DD5%/1.7%) ---
+horizon  ftd  naive_day4  rule_edge_pp
+    +5d 1.52        0.32          1.20
+   +10d 1.75        0.88          0.87
+   +21d 2.45        2.10          0.35
+   +63d 7.38        4.86          2.52
+
+  [DD>=10%, up>=1.0%]  17 first-FTDs | 1,923 correction sessions (28% of history)
+
+--- QQQ: FTD vs other correction days (DD10%/1.0%) ---
+horizon  n  ftd_mean  pool_mean  edge_pp  p_boot
+    +5d 17     -0.09       0.13    -0.22    0.57
+   +10d 17     -0.00       0.12    -0.12    0.53
+   +21d 17     -0.16       0.13    -0.29    0.55
+   +63d 17      6.78       0.58     6.20    0.07
+
+--- QQQ: FTD vs ALL days (being invested) (DD10%/1.0%) ---
+horizon  n  ftd_mean  pool_mean  edge_pp  p_boot
+    +5d 17     -0.09       0.25    -0.34    0.66
+   +10d 17     -0.00       0.50    -0.50    0.67
+   +21d 17     -0.16       1.04    -1.20    0.77
+   +63d 17      6.78       3.14     3.64    0.10
+    naive 'day-4 of the attempt' arm: 68 signals
+
+--- QQQ: does the RULE beat just waiting 4 days? (DD10%/1.0%) ---
+horizon   ftd  naive_day4  rule_edge_pp
+    +5d -0.09       -0.04         -0.05
+   +10d -0.00       -0.12          0.12
+   +21d -0.16        0.35         -0.50
+   +63d  6.78        0.45          6.33
+
+==============================================================================
+IWM  2000-05-26 -> 2026-09-18  (6,617 sessions)
+
+  [DD>=5%, up>=1.0%]  30 first-FTDs | 3,543 correction sessions (54% of history)
+
+--- IWM: FTD vs other correction days (DD5%/1.0%) ---
+horizon  n  ftd_mean  pool_mean  edge_pp  p_boot
+    +5d 30     -0.55       0.29    -0.84    0.89
+   +10d 30      0.62       0.54     0.08    0.49
+   +21d 30      1.10       1.15    -0.05    0.53
+   +63d 30      2.42       3.47    -1.05    0.70
+
+--- IWM: FTD vs ALL days (being invested) (DD5%/1.0%) ---
+horizon  n  ftd_mean  pool_mean  edge_pp  p_boot
+    +5d 30     -0.55       0.19    -0.74    0.90
+   +10d 30      0.62       0.36     0.26    0.38
+   +21d 30      1.10       0.76     0.35    0.39
+   +63d 30      2.42       2.24     0.18    0.46
+    naive 'day-4 of the attempt' arm: 116 signals
+
+--- IWM: does the RULE beat just waiting 4 days? (DD5%/1.0%) ---
+horizon   ftd  naive_day4  rule_edge_pp
+    +5d -0.55        0.21         -0.77
+   +10d  0.62        0.68         -0.06
+   +21d  1.10        2.06         -0.95
+   +63d  2.42        4.08         -1.66
+
+  [DD>=8%, up>=1.0%]  26 first-FTDs | 2,697 correction sessions (41% of history)
+
+--- IWM: FTD vs other correction days (DD8%/1.0%) ---
+horizon  n  ftd_mean  pool_mean  edge_pp  p_boot
+    +5d 26     -0.92       0.31    -1.24    0.94
+   +10d 26     -1.11       0.59    -1.70    0.94
+   +21d 26     -1.45       1.28    -2.73    0.97
+   +63d 26      0.25       3.88    -3.63    0.94
+
+--- IWM: FTD vs ALL days (being invested) (DD8%/1.0%) ---
+horizon  n  ftd_mean  pool_mean  edge_pp  p_boot
+    +5d 26     -0.92       0.19    -1.11    0.96
+   +10d 26     -1.11       0.37    -1.48    0.96
+   +21d 26     -1.45       0.77    -2.22    0.96
+   +63d 26      0.25       2.25    -2.00    0.83
+    naive 'day-4 of the attempt' arm: 89 signals
+
+--- IWM: does the RULE beat just waiting 4 days? (DD8%/1.0%) ---
+horizon   ftd  naive_day4  rule_edge_pp
+    +5d -0.92       -0.16         -0.77
+   +10d -1.11        0.02         -1.14
+   +21d -1.45        0.86         -2.31
+   +63d  0.25        3.47         -3.22
+
+  [DD>=5%, up>=1.7%]  24 first-FTDs | 3,543 correction sessions (54% of history)
+
+--- IWM: FTD vs other correction days (DD5%/1.7%) ---
+horizon  n  ftd_mean  pool_mean  edge_pp  p_boot
+    +5d 24     -0.52       0.29    -0.81    0.86
+   +10d 24      0.60       0.54     0.06    0.49
+   +21d 24      1.66       1.15     0.52    0.38
+   +63d 24      1.40       3.48    -2.07    0.82
+
+--- IWM: FTD vs ALL days (being invested) (DD5%/1.7%) ---
+horizon  n  ftd_mean  pool_mean  edge_pp  p_boot
+    +5d 24     -0.52       0.19    -0.71    0.87
+   +10d 24      0.60       0.36     0.24    0.39
+   +21d 24      1.66       0.75     0.91    0.24
+   +63d 24      1.40       2.24    -0.84    0.66
+    naive 'day-4 of the attempt' arm: 116 signals
+
+--- IWM: does the RULE beat just waiting 4 days? (DD5%/1.7%) ---
+horizon   ftd  naive_day4  rule_edge_pp
+    +5d -0.52        0.21         -0.73
+   +10d  0.60        0.68         -0.08
+   +21d  1.66        2.06         -0.40
+   +63d  1.40        4.08         -2.68
+
+  [DD>=10%, up>=1.0%]  25 first-FTDs | 2,241 correction sessions (34% of history)
+
+--- IWM: FTD vs other correction days (DD10%/1.0%) ---
+horizon  n  ftd_mean  pool_mean  edge_pp  p_boot
+    +5d 25      0.45       0.33     0.12    0.46
+   +10d 25     -0.14       0.56    -0.70    0.74
+   +21d 25     -0.50       1.29    -1.79    0.88
+   +63d 25      3.50       4.08    -0.58    0.60
+
+--- IWM: FTD vs ALL days (being invested) (DD10%/1.0%) ---
+horizon  n  ftd_mean  pool_mean  edge_pp  p_boot
+    +5d 25      0.45       0.18     0.27    0.34
+   +10d 25     -0.14       0.36    -0.50    0.72
+   +21d 25     -0.50       0.76    -1.27    0.85
+   +63d 25      3.50       2.24     1.26    0.27
+    naive 'day-4 of the attempt' arm: 77 signals
+
+--- IWM: does the RULE beat just waiting 4 days? (DD10%/1.0%) ---
+horizon   ftd  naive_day4  rule_edge_pp
+    +5d  0.45        0.12          0.33
+   +10d -0.14        0.33         -0.47
+   +21d -0.50        1.04         -1.54
+   +63d  3.50        4.37         -0.87
+
+
+Bar: to justify a regime switch, the FTD must beat OTHER CORRECTION DAYS (it timed the turn)
+AND beat ALL DAYS (it beat simply being invested), with a bootstrap p well under 0.05.
