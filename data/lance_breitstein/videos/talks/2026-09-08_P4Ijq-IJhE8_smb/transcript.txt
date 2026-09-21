@@ -1,0 +1,1031 @@
+[00:00:00] But what I really am here to present
+[00:00:01] today is a capitulation fade trade and
+[00:00:04] how elite traders identify the market
+[00:00:06] extremes. Capitulation, waving the all
+[00:00:08] white flag.
+[00:00:10] What really does this mean? It's the
+[00:00:12] extreme selling or buying that's driven
+[00:00:15] by emotion, margin calls, and traders
+[00:00:17] caught off sides. It's that final
+[00:00:20] exhaustion move lower or higher where
+[00:00:23] everybody is finally throwing in the in
+[00:00:25] the towel. The longs are giving up, the
+[00:00:27] shorts are crying uncle, and these
+[00:00:30] situations often create short-term
+[00:00:32] imbalances that create opportunities for
+[00:00:34] reversal traders.
+[00:00:36] So,
+[00:00:37] with these setups and these
+[00:00:39] opportunities, the trade, of course, is
+[00:00:41] going to be what I termed buying on the
+[00:00:44] right side of the V, meaning once that
+[00:00:46] turn is is in. So, if something gets too
+[00:00:48] euphoric, you short the backside of the
+[00:00:51] move lower. If something is getting too
+[00:00:53] panicked, you buy the backside of the
+[00:00:54] move and try and catch the move higher.
+[00:00:58] The beauty of capitulation is this.
+[00:01:01] The easiest money in markets with the
+[00:01:04] least amount of pain,
+[00:01:06] the type of trading that leaves you
+[00:01:09] happy and stress-free is trend
+[00:01:11] following.
+[00:01:12] Now,
+[00:01:13] I chose to not do trend following
+[00:01:15] because I don't like happiness and I
+[00:01:17] would prefer stress and struggle and
+[00:01:19] pain. And for whatever reason, because
+[00:01:23] of my trainer that I was being mentored
+[00:01:25] by, he really focused on reversals and
+[00:01:29] mean reversion. And you would take a lot
+[00:01:32] of heat doing that. But the beauty of
+[00:01:35] these trades is that they can be very
+[00:01:36] reactionary.
+[00:01:38] With a lot of trend following, you need
+[00:01:40] to identify the setup, you need to be
+[00:01:41] filtering, you need to be scanning.
+[00:01:44] But with reactionary trading like mean
+[00:01:45] reversion, you let the kind of blow up
+[00:01:48] and the euphoria or the panic happen and
+[00:01:51] you skate to where the puck is. You can
+[00:01:53] be purely reacting. So, I don't need to
+[00:01:56] be proactive, I don't need to be looking
+[00:01:58] at anything. Once these big moves
+[00:01:59] happen, I can find them and then step
+[00:02:02] in. And these mean reversion trades, the
+[00:02:05] beauty of them is that when done
+[00:02:07] properly, they are some of the highest
+[00:02:09] probability, high reward setups in
+[00:02:11] markets.
+[00:02:13] And they apply to all time frames and
+[00:02:14] all products, and they have been pretty
+[00:02:17] much the staple of my career. Notably in
+[00:02:20] 2024, it was one of the biggest trades
+[00:02:23] I've ever done, which was in the Nikkei,
+[00:02:26] and this was a classic mean reversion
+[00:02:28] capitulation trade. So, we are going to
+[00:02:30] be dissecting some of that. And
+[00:02:34] the way you I think about executing a
+[00:02:36] trade is first you need to be able to
+[00:02:38] identify the setup, then you need to be
+[00:02:40] able to execute within your system and
+[00:02:42] your playbook.
+[00:02:44] What I really, really, really want to do
+[00:02:46] here is focus on the identification side
+[00:02:48] of things, because the secret sauce is
+[00:02:50] always in the details.
+[00:02:53] And what so often happens for me
+[00:02:55] is I will say, "Oh, look at this setup
+[00:02:58] that I traded." And then people will
+[00:03:00] say, "Oh, just like this one here." And
+[00:03:03] they'll show me four different charts
+[00:03:05] that could not be any more dissimilar.
+[00:03:07] And so, I think one of the great things
+[00:03:09] we can do with this time is get very,
+[00:03:11] very nuanced on what I'm looking for and
+[00:03:16] allowing you to hone your own view of
+[00:03:19] the market for this type of setup.
+[00:03:21] Cuz ultimately, we all know you can't
+[00:03:23] just blindly short every up move and you
+[00:03:25] can't buy every down move. Markets are
+[00:03:27] very, very efficient. The places where
+[00:03:29] we have meaningful edge, it's so, so
+[00:03:33] specific.
+[00:03:35] If you were to look at SMB's P&amp;L,
+[00:03:37] where they make the big money is in such
+[00:03:39] a small subset of trades. And the desk
+[00:03:42] during those trades tends to all hone in
+[00:03:45] on them. We all know the big
+[00:03:46] opportunities, like the MSTR
+[00:03:49] capitulation or the SMCI trade that some
+[00:03:51] of the prior speakers have discussed or
+[00:03:53] even silver previously. And some might
+[00:03:57] right now in the current moment be
+[00:03:59] thinking about oil.
+[00:04:00] And my challenge to you all right now,
+[00:04:02] before I dive into this, is to ask is
+[00:04:05] oil the same as these?
+[00:04:08] Is oil one of these capitulation trades?
+[00:04:11] We'll find out.
+[00:04:12] But what it really comes down to is
+[00:04:14] stacking as many variables in your
+[00:04:16] favor. And so even with some of the some
+[00:04:18] of the handouts, um I know um
+[00:04:22] was it um
+[00:04:24] Oh god, was it Jeff that was doing that
+[00:04:26] made the joke about the scorecard block
+[00:04:28] and and and doing all that? I think it
+[00:04:30] was Jeff, yeah. And um
+[00:04:32] ultimately what I did for this is also
+[00:04:34] give you a cheat sheet based on these
+[00:04:36] variables. Because what I'm doing in my
+[00:04:38] head is I have this framework of the
+[00:04:40] variables that I'm going to cover, and
+[00:04:42] I'm really rating every setup mentally
+[00:04:46] by these variables.
+[00:04:47] And the more the better. So here's a
+[00:04:49] prerequisite. For every single thing I
+[00:04:52] do, it needs to be an in-play stock. It
+[00:04:56] is the foundation of all of my trading.
+[00:04:59] Pretty much every trader I work with,
+[00:05:03] not not everyone, but most, at least
+[00:05:05] 95%, they are solely focused on in-play
+[00:05:08] stocks. What is an in-play stock? It is
+[00:05:10] a stock moving on huge volume, huge
+[00:05:13] trading ranges greater than average, and
+[00:05:16] it's often initiated by news or a
+[00:05:18] technical pattern.
+[00:05:19] So large ranges, large volatility, lot
+[00:05:21] of price discovery, lot of emotion
+[00:05:23] discovery, lot of emotions, um that's
+[00:05:26] what allows us to have edge.
+[00:05:28] So now the variable number one,
+[00:05:31] acceleration in speed of the move.
+[00:05:35] So often I say it's not about how far a
+[00:05:38] stock goes, it is about the rate of
+[00:05:41] change in price over time.
+[00:05:44] So So the math magicians in the
+[00:05:46] audience,
+[00:05:47] we have uh
+[00:05:49] you know what what you all would call an
+[00:05:51] asymptote.
+[00:05:52] And uh you know, I'm I don't remember
+[00:05:54] math too well. ChatGPT can help me for
+[00:05:56] that. But what you can see is
+[00:05:59] essentially a waterfall pattern or vice
+[00:06:02] versa, you see um
+[00:06:05] See, this is where I could beautiful.
+[00:06:06] You see that guy, which is kind of you
+[00:06:07] know, the inverse waterfall. And so it's
+[00:06:10] not about just how far it goes. Stocks
+[00:06:13] and anything, look how big the move in
+[00:06:16] silver was November, December, October,
+[00:06:18] November, December. Something as boring
+[00:06:20] as silver went up from the lows in last
+[00:06:23] April, something like three, four X in
+[00:06:25] less than a year.
+[00:06:27] But if you were shorting that move
+[00:06:28] saying, "Oh my god, silver can't go up
+[00:06:30] 100%." Well, guess what? You know, you
+[00:06:32] blew up by October, probably. So, number
+[00:06:35] one variable, acceleration.
+[00:06:38] Not just how far you're going. Are we
+[00:06:40] accelerating?
+[00:06:42] And the way I think of that is the
+[00:06:43] slope. You don't want something linear
+[00:06:45] at a slope of one or negative one. You
+[00:06:48] want something that's going and then
+[00:06:50] accelerates.
+[00:06:52] So, increase in price over time is
+[00:06:54] everything and the most important
+[00:06:56] variable in whether a leg is
+[00:06:58] sustainable.
+[00:06:59] &gt;&gt; [snorts]
+[00:06:59] &gt;&gt; The slope of the move is more important
+[00:07:01] than the length. I do not care if
+[00:07:03] something is up 10, 20, 100, 1,000%.
+[00:07:07] What I care most about is how it is
+[00:07:09] going there. The flatter, low slope
+[00:07:11] moves are often the most sustainable.
+[00:07:16] and for the most part, just for ease,
+[00:07:18] I'm going to be using the laser pointer
+[00:07:19] on this uh right one for you all. So,
+[00:07:22] what I mean by that, this is a chart of
+[00:07:25] MS CR back uh this was uh when it did
+[00:07:27] its little exhaustion gap.
+[00:07:29] Notice this acceleration here.
+[00:07:32] Over here, we're pretty steady.
+[00:07:34] Here, big bar, big bar, big bar, really,
+[00:07:38] really big gap. So, if If were to graph
+[00:07:40] the slope, it's pretty linear, it starts
+[00:07:43] to accelerate, we go asymptote.
+[00:07:45] Not this linear patch right here. All of
+[00:07:48] that is linear. And so, if you were to
+[00:07:51] ask me,
+[00:07:52] did I short here?
+[00:07:54] No, I didn't. Why? Because it's it's not
+[00:07:56] got that asymptote shape. If you were to
+[00:07:58] ask me, did I short anything in here?
+[00:08:00] No. The only place to really short,
+[00:08:02] where we really got truly parabolic,
+[00:08:04] is up around here. And sure enough, you
+[00:08:06] know, that is the opportunity. But for
+[00:08:08] most stocks and most things, 99% of the
+[00:08:11] time, it's not this. Like think about
+[00:08:14] how many tickers there are. How many
+[00:08:15] things are trading. How many days, how
+[00:08:17] many intraday moves. We are looking for
+[00:08:19] the 0.001%
+[00:08:22] and nearly everything else is highly
+[00:08:24] efficient.
+[00:08:26] Variable number two, multiple days in
+[00:08:29] the same direction.
+[00:08:30] In an ideal world, I'd love to see three
+[00:08:33] or more days. The more days, the better.
+[00:08:37] Particularly when coupled with the first
+[00:08:39] variable. Now look, again, I said all of
+[00:08:41] this makes up a really big mental
+[00:08:44] checklist. So, it's okay if sometimes if
+[00:08:46] you get just two days in a row, if
+[00:08:48] everything else is amazing.
+[00:08:50] And it's okay if something doesn't go
+[00:08:52] truly parabolic if it's something like
+[00:08:54] nine days down in a row, right?
+[00:08:56] Everything's on a spectrum is how I
+[00:08:57] think about this stuff.
+[00:09:00] this part from purely this variable was
+[00:09:02] actually quite appealing. It doesn't
+[00:09:04] have a lot of the other variables that
+[00:09:06] we're going to talk about, but we did
+[00:09:07] go, you know, 1 2 3 4 5 6 7, something
+[00:09:10] like eight down days in a row. If we
+[00:09:12] contrast that over here, we might get a
+[00:09:15] down day, but we get an up day. We get a
+[00:09:17] down day. We get an up day. That type of
+[00:09:19] down up down up, that is not really the
+[00:09:22] waterfall clear price action. Now again,
+[00:09:25] that doesn't mean it's not going to
+[00:09:26] bounce, it doesn't mean I'll never play
+[00:09:28] it, but again, this is all how we're
+[00:09:29] building that framework and putting all
+[00:09:31] of these on a spectrum.
+[00:09:34] Significantly above or below the
+[00:09:36] Bollinger Bands. For those that don't
+[00:09:38] know Bollinger Bands,
+[00:09:39] it takes a 20 period moving average. Of
+[00:09:41] course, you can pick whatever period and
+[00:09:43] it's two standard deviations away from
+[00:09:45] that. It is how I visually
+[00:09:48] judge just price expansion and how far
+[00:09:50] something's gone.
+[00:09:52] Then the beauty with with them is you
+[00:09:54] can measure how far away you are
+[00:09:56] in terms of dollars or also percent.
+[00:09:59] So, if we take the silver example I was
+[00:10:02] talking about,
+[00:10:04] a lot of people might get get trapped in
+[00:10:06] here and say, "Oh my god, one day up,
+[00:10:07] two day up, three day up." Or you can
+[00:10:09] look and just say, "Look,
+[00:10:11] dollar-wise and percent-wise, silver's
+[00:10:13] gone really far. But we're not hitting
+[00:10:16] the variables over here, right? This is
+[00:10:17] going very, very steady. This is the
+[00:10:20] only day where we're above the Bollinger
+[00:10:23] Band, but we're not that far above it.
+[00:10:25] Where do we really, really, really
+[00:10:27] extend?
+[00:10:28] All the way over here. Look how far we
+[00:10:30] got there. And even as a percentage away
+[00:10:33] from the Bollinger Band, it's really
+[00:10:34] far. And a percentage from the moving
+[00:10:36] average is really, really juicy.
+[00:10:38] So, I often view the potential reward,
+[00:10:41] like if the moving average is the
+[00:10:42] equilibrium,
+[00:10:44] and I view that as reward should we mean
+[00:10:47] revert to the equilibrium, I want us to
+[00:10:49] be as far away from that equilibrium as
+[00:10:51] possible cuz that distance there, that's
+[00:10:54] all reward. And only in this bar, where
+[00:10:56] we put in a really nice reversal, were
+[00:10:59] we far above that Bollinger Band.
+[00:11:01] So, the beauty of this variable is it
+[00:11:03] keeps you out of a trouble a lot, right?
+[00:11:05] Most people are taking so many paper
+[00:11:06] cuts
+[00:11:07] fighting stuff like this, where it's
+[00:11:10] still it's still pretty much in the
+[00:11:12] range. You know, this is getting above
+[00:11:14] the Bollinger Band, but not that far.
+[00:11:15] And this is barely above. So, a lot of
+[00:11:17] people are fighting, fighting, fighting.
+[00:11:19] And they'll And they'll say, "Lance, I'm
+[00:11:20] taking so many paper cuts. Like how do
+[00:11:22] you not take paper cuts and all these
+[00:11:23] losses?"
+[00:11:25] The answer to that, to improve your win
+[00:11:27] rate and get that really high up there,
+[00:11:29] to have positive expected value, is
+[00:11:32] you're aligning all these nuances.
+[00:11:34] Variable number four, and this is also
+[00:11:37] one of the most important ones that a
+[00:11:38] lot of people sleep on, especially in
+[00:11:40] retail world, where many retail traders
+[00:11:42] do not have the Bloomberg, they do not
+[00:11:44] have the Reuters, they don't have all
+[00:11:46] the news quacks. So, fresh news often
+[00:11:49] signifies a fundamental change to the
+[00:11:52] value of the company.
+[00:11:54] Often I'm looking for moves that occur
+[00:11:56] multiple days after the news or a
+[00:11:59] technical breakout. In general, I try
+[00:12:01] not to fade fresh news.
+[00:12:04] So, guess what?
+[00:12:06] Let's say a a stock comes out with some
+[00:12:09] earnings or some other piece of news,
+[00:12:11] and all of a sudden it gaps down 30%.
+[00:12:16] If you're thinking of mean reversion far
+[00:12:18] too simplistically, you're going to say,
+[00:12:19] "Oh my god, this is so juicy. We're so
+[00:12:21] far below
+[00:12:22] the lower Bollinger Band, we're so far
+[00:12:24] away from the moving average." But, what
+[00:12:26] is news? News is a fundamental, or at
+[00:12:29] least potential, for the fundamental
+[00:12:32] repricing of a company.
+[00:12:34] Mean reversion
+[00:12:36] is a bet that the equilibrium is the
+[00:12:38] right price, and we're going to go back
+[00:12:40] to there. But, when something has news,
+[00:12:42] all of a sudden it's not the same,
+[00:12:43] right? If Apple is trading at $100, and
+[00:12:47] they say all of a sudden we're earning
+[00:12:49] half as much, and it goes down to $50,
+[00:12:52] it shouldn't mean revert. The company's
+[00:12:54] earning half as much. It's probably
+[00:12:55] worth half as much, right?
+[00:12:57] So, at a very simplistic level, you need
+[00:13:00] to be extremely careful of when there's
+[00:13:02] fresh news. Now, take uh the situation
+[00:13:06] in the oil market.
+[00:13:08] So, many people are comparing oil to
+[00:13:10] silver.
+[00:13:13] Silver, there wasn't really fresh news.
+[00:13:16] Like, you could argue as a theme dollar
+[00:13:18] debasement, but there wasn't anything
+[00:13:20] really triggering that final leg, or
+[00:13:22] really any of those legs, right?
+[00:13:25] There wasn't an "Oh my god, 30% of the
+[00:13:27] world's silver has disappeared and got
+[00:13:29] missing. It wasn't anything like that.
+[00:13:31] It wasn't oh my god, all of a sudden
+[00:13:32] silver is used to power chat GPT. There
+[00:13:35] wasn't a fundamental reason causing
+[00:13:37] this. Now, if we look at oil,
+[00:13:40] of course there is a fundamental
+[00:13:41] difference. Right now, there are not
+[00:13:44] meaningful supplies of oil
+[00:13:46] going through the Strait of Hormuz.
+[00:13:48] That's a meaningful supply disruption.
+[00:13:50] That's a fundamental repricing of oil.
+[00:13:53] If that supply comes offline, what is
+[00:13:56] the right price for oil? So, if I'm
+[00:13:58] trying to mean revert oil and say, "Oh
+[00:14:00] my god, you know,
+[00:14:02] um
+[00:14:04] just uh WTI crude oil went from 60-ish,
+[00:14:07] 65-ish to 90, I'm going to expect a 50%
+[00:14:11] retracement." Well, guess what? It
+[00:14:12] doesn't work that way. Not if all this
+[00:14:14] supply is gone. The other issue with
+[00:14:17] this is what if that supply stays off?
+[00:14:21] Or what if things escalate? There's no
+[00:14:23] reason why oil can't go to 110, 130, or
+[00:14:26] especially with front month fruit
+[00:14:28] futures, if something really crazy
+[00:14:29] happens, there's no upper bound.
+[00:14:31] Right? So, you need to be so careful
+[00:14:34] with fresh news.
+[00:14:36] Where that gray area happens is
+[00:14:38] obviously the war in Iran is going on.
+[00:14:42] You need to be very careful because if
+[00:14:44] something starts at 65, then we gap to
+[00:14:46] 90,
+[00:14:48] nothing too significant changes, but
+[00:14:50] then we go to 100, 110, 130, then we
+[00:14:53] exhaustion gap to 150, and it's days
+[00:14:55] after that news,
+[00:14:57] it's you know, it is subjective to judge
+[00:14:59] what's meaningful, what's what's
+[00:15:00] different, and that becomes fuel over
+[00:15:02] time, but then that's where you get
+[00:15:04] interested in. And there are definitely
+[00:15:06] moves that are kicked off by news, but
+[00:15:09] then there's no significant news, and
+[00:15:10] it's just pure price action after that.
+[00:15:12] Uh this was one of the rare earth um
+[00:15:16] minors
+[00:15:17] uh back uh last year. So, we had a piece
+[00:15:20] of news right here. So this for the most
+[00:15:23] part on day one news here, I I don't
+[00:15:26] really have any interest in shorting
+[00:15:29] that. This is is fresh to or sorry, I
+[00:15:31] flipped my charts. This had news here.
+[00:15:34] So up here though,
+[00:15:36] right? This was day one of the news. We
+[00:15:38] then kind of made that move. Then we got
+[00:15:40] so much bigger and really got far above
+[00:15:43] that Bollinger Band. There was no fresh
+[00:15:45] news this day. This was the fresh news.
+[00:15:47] Days later we really got so crazy
+[00:15:49] extended. Not the day where we do a
+[00:15:52] fresh news. And it's not to say that
+[00:15:54] this can't pull back, right? Like this
+[00:15:57] this was kind of like a doji-esque
+[00:15:59] candle. This did pull back considerably.
+[00:16:01] But my eagerness to short something like
+[00:16:03] that is going to be way way different
+[00:16:05] because this is trading on fresh news,
+[00:16:08] whereas this is just pure price action.
+[00:16:10] So that's the point I wanted to
+[00:16:11] differentiate. Variable number five,
+[00:16:14] huge increase in volume multiples above
+[00:16:17] average.
+[00:16:19] The longer I've been trading,
+[00:16:22] the more and more I've come to focus on
+[00:16:24] volume as a variable. And I think
+[00:16:28] everything at the end of the day comes
+[00:16:29] down to sentiment
+[00:16:31] and volume.
+[00:16:33] And that's what tells the real story.
+[00:16:34] And so often huge volume often signifies
+[00:16:37] the panic or euphoria. The more extreme,
+[00:16:40] the more people are getting flushed out.
+[00:16:42] And what's happening on on a
+[00:16:44] psychological basis is all the volume
+[00:16:48] that might have had a higher cost basis.
+[00:16:50] If if you're doing five times the float
+[00:16:54] way way way lower, pretty much the
+[00:16:56] average holder is getting a new cost
+[00:16:57] basis. If everybody was holding a stock
+[00:17:00] at $100, we totally panic flush out down
+[00:17:03] to $40, and we do 100 x the volume, the
+[00:17:07] average cost basis isn't now 100 and the
+[00:17:10] average person isn't now down 60%.
+[00:17:12] They're now averaging $40, and if that
+[00:17:15] stock starts to bounce, they're in the
+[00:17:17] money. It's a totally different
+[00:17:18] psychology.
+[00:17:20] And you'll see so often on the big
+[00:17:21] moves, even if you look back on silver,
+[00:17:25] and gold, it's really the volume that so
+[00:17:27] often tells the story.
+[00:17:30] I love seeing
+[00:17:31] um multiple average daily volumes, and I
+[00:17:34] love seeing a huge percentage of the
+[00:17:36] float. And
+[00:17:39] if you look at some of these examples,
+[00:17:43] so this right here, massive massive
+[00:17:46] volume capitulation.
+[00:17:48] Um we've got a lot of the other
+[00:17:49] variables we've discussed, you know, 1 2
+[00:17:51] 3 4 5 days down, huge volume
+[00:17:54] capitulation. Now, on some of these
+[00:17:55] other days,
+[00:17:57] you know, we're not getting the volume.
+[00:17:59] All of this volume is in line with that
+[00:18:03] The best plays, you want to get volume
+[00:18:05] that just makes all the other bars
+[00:18:07] totally dwarfed.
+[00:18:09] So, volume is going to be so so critical
+[00:18:11] in aligning a lot of this stuff.
+[00:18:14] The other thing I'll do in practice
+[00:18:17] is, let's say silver is trading. Um
+[00:18:21] I'll be looking what the volume has done
+[00:18:23] between 9:30 and 10:30, and you can go
+[00:18:26] back to some of the prior days. And you
+[00:18:28] want to compare it not to even here, but
+[00:18:30] what did what did the volume do 9:30 to
+[00:18:33] 10:30 on the day before, when it's
+[00:18:35] already elevated? If all of a sudden
+[00:18:38] you're doing multiples of already
+[00:18:39] elevated volume, that is a really really
+[00:18:42] good sign. Because, of course, we don't
+[00:18:44] know the full daily bar's volume until
+[00:18:45] the end of the day, but that's how I
+[00:18:47] kind of extrapolate it. Variable number
+[00:18:49] six, and I think this is one a lot of
+[00:18:51] people sleep on, and it's so so
+[00:18:54] important.
+[00:18:55] The more legs in the same direction in
+[00:18:58] the move, the better.
+[00:19:00] More and more people end up chasing on
+[00:19:02] the later legs, thinking the trend will
+[00:19:03] keep going. Consecutive legs increase
+[00:19:06] the odds of a reversal, and consecutive
+[00:19:09] legs increase the reward on a reversal.
+[00:19:13] If we take something like this MSTR
+[00:19:15] chart, what happened was this was almost
+[00:19:17] the mini leg, we kind of pull back a
+[00:19:19] lot, this was almost the second leg,
+[00:19:21] this was the third leg. So often when
+[00:19:23] things make that third and often final
+[00:19:26] leg, you get the really big capitulation
+[00:19:29] cuz all the people that didn't want to
+[00:19:31] buy and were unsure here, a lot of them
+[00:19:33] end up kind of chasing here, then this
+[00:19:36] on the really extended leg is when
+[00:19:38] people lose just all signs of reason or
+[00:19:41] if you're short, you know, you're
+[00:19:42] thinking, "Oh my god, this is just going
+[00:19:44] to keep going to infinity." And the more
+[00:19:47] legs, then all of a sudden rather than
+[00:19:49] the reward being to here, if I'm
+[00:19:51] shorting all the way up here, the reward
+[00:19:54] isn't just a retracement of this final
+[00:19:56] leg, it's a retrace retracement of this
+[00:19:58] whole overall move where that move back
+[00:20:00] to the moving average becomes really
+[00:20:02] realistic.
+[00:20:04] if we look on this other chart, this
+[00:20:06] here is kind of the range.
+[00:20:09] I'm I have no interest in shorting this
+[00:20:11] first leg. This to me is the first leg
+[00:20:13] of the move.
+[00:20:15] I'm not interested because this is the
+[00:20:17] range and we're just breaking out of
+[00:20:18] there.
+[00:20:19] Right? So many people are going to be
+[00:20:22] wanting to buy that pullback.
+[00:20:24] Um
+[00:20:26] because it's it's just so close to that
+[00:20:28] break of resistance.
+[00:20:29] And something that goes so euphoric like
+[00:20:31] this,
+[00:20:32] you know, people were already probably
+[00:20:34] chasing here, so then you get so many
+[00:20:36] people less willing to buy here once it
+[00:20:38] turns. So those legs, the best moves
+[00:20:41] will always be multiple multiple legs.
+[00:20:43] And um it really is just something
+[00:20:45] beautiful where like the probabilities
+[00:20:47] of the trade working increase so much.
+[00:20:49] Variable number seven, minimal
+[00:20:51] consolidation during the move.
+[00:20:53] Consolidation to me is price acceptance.
+[00:20:56] That that's the market saying that at
+[00:20:58] least for this moment in time, we all
+[00:21:00] agree on the price, nothing to see here,
+[00:21:01] nothing special. We're not going to get
+[00:21:03] some big mean reversion. So, if we're
+[00:21:05] trying to get mean reversion, the less
+[00:21:08] price acceptance the better. You do not
+[00:21:11] want to see the stock consolidating
+[00:21:13] throughout the move. So, this is gold.
+[00:21:17] And
+[00:21:19] here,
+[00:21:20] you know, we see
+[00:21:22] we see the price acceptance, right? You
+[00:21:24] know, this made a leg, we pull back, we
+[00:21:25] start to make another leg. We have a
+[00:21:26] bunch of bars going across. You know,
+[00:21:29] one, two, three, four bars going across.
+[00:21:31] Where do we not get any price
+[00:21:33] acceptance?
+[00:21:35] We kind of just go one, two, three,
+[00:21:37] four. We do get a little doji bar, which
+[00:21:39] can be a little bit of price acceptance,
+[00:21:41] but then we go really big, really big,
+[00:21:44] really big. So, now think about this.
+[00:21:47] Just based on the variables I've
+[00:21:48] discussed on this presentation.
+[00:21:51] We had a bunch of, you know, minus this
+[00:21:53] one, but we had a bunch of up bars in a
+[00:21:55] row. These up bars really accelerated.
+[00:21:58] And now if I were to graph this, if we
+[00:22:00] had this line,
+[00:22:01] this was linear slope, we start to go
+[00:22:05] asymptotic. And now this bar here, this
+[00:22:08] is the one that's really far above the
+[00:22:10] Bollinger band, really far away from the
+[00:22:12] moving average, and this isn't moving on
+[00:22:14] fresh news.
+[00:22:16] So, see how I start to build this
+[00:22:17] framework of all these variables? And
+[00:22:19] all of this is going on in my head.
+[00:22:22] So, I'm rating all of these things and
+[00:22:24] doing that mental checklist.
+[00:22:27] And I'm also staying out of trouble
+[00:22:29] because here we just broke out of the
+[00:22:31] range. This is almost just the first
+[00:22:32] leg. The bars are small. Here we have a
+[00:22:35] lot of price consolidation. So, people
+[00:22:37] will always
+[00:22:39] ask, like, but how do you not take the
+[00:22:41] losses on the way up? A lot of that is
+[00:22:45] being mindful of these variables. And
+[00:22:47] it's okay to, you know, maybe you take a
+[00:22:50] little stab early, a little stab early,
+[00:22:52] but when it gets really, really good is
+[00:22:54] when everything aligns. Variable number
+[00:22:57] eight, extreme sentiment.
+[00:23:01] Some key words you always want to be
+[00:23:02] aware of. And this is where I love
+[00:23:04] Twitter. Uh
+[00:23:05] although I I never want to be caught
+[00:23:07] saying those words. Don't don't quote me
+[00:23:09] on that. Look for the words
+[00:23:11] uninvestable,
+[00:23:12] can't afford to not have exposure, new
+[00:23:15] paradigm,
+[00:23:17] or cheap at any price.
+[00:23:20] There's so many times over the years
+[00:23:22] that we have seen these. We've seen
+[00:23:24] these with Bitcoin. We've seen these
+[00:23:26] with silver and gold.
+[00:23:28] One of the funniest tweets probably of
+[00:23:30] all time was Lucas the short bear who
+[00:23:34] was shorting silver having the pretty
+[00:23:37] much the whole internet just bag on him
+[00:23:40] for being short biased on silver and
+[00:23:43] gold. And people in the responses were
+[00:23:45] saying, "Oh, you know, greatest
+[00:23:47] investor/trader of all time. You don't
+[00:23:50] get it. Dollar debasement. Oh, you don't
+[00:23:53] get it. New paradigm. You know, the
+[00:23:55] dollar's dead. Metals are the only safe
+[00:23:57] haven. Yada yada yada." Well, guess
+[00:23:59] what? If you looked at the chart of the
+[00:24:01] dollar during all that chaos,
+[00:24:04] the
+[00:24:05] like UUP, which is just a dollar index,
+[00:24:07] UUP was right where it was a few months
+[00:24:10] prior. UUP was right where it was a year
+[00:24:13] earlier. And UUP was right where it was
+[00:24:15] 3 years earlier. So, for dollar
+[00:24:17] debasement, the dollar's dead, new
+[00:24:19] paradigm, nothing was really new about
+[00:24:21] it. What was new about it was the
+[00:24:23] narrative. The narrative and sentiment.
+[00:24:26] And so, what you what happened was you
+[00:24:27] had this fever pitch of oh my god, the
+[00:24:29] dollar is actually going to zero. And oh
+[00:24:32] my god, the only way to protect my money
+[00:24:34] is to be in silver and gold.
+[00:24:36] If you are ever scrambling to buy silver
+[00:24:39] and gold, the odds of you being late for
+[00:24:42] that scramble is very, very high. The
+[00:24:45] other thing we've seen, this was maybe I
+[00:24:47] think 2022,
+[00:24:49] uh JP Morgan came out and said Chinese
+[00:24:52] stocks were uninvestable.
+[00:24:54] They were so uninvestable that within a
+[00:24:56] week they were all 50% higher. And
+[00:24:59] that's because you see these things
+[00:25:01] happen at the extremes.
+[00:25:03] How often have we heard
+[00:25:06] you know, the new tech? Oh, it's you
+[00:25:08] need this you need AI exposure. You need
+[00:25:10] this you need that. You don't need
+[00:25:11] anything. The only thing that can hurt
+[00:25:13] you is unforced errors because of
+[00:25:15] emotions. And so you so want to be aware
+[00:25:18] of sentiment. Even back during the the
+[00:25:20] 2025 tariffs,
+[00:25:22] remember what was happening to Tesla?
+[00:25:24] And Elon Musk actually called this you
+[00:25:26] know, quite quite perfectly.
+[00:25:29] He had a town hall meeting when Tesla
+[00:25:30] had gone from four something to like
+[00:25:32] 200-ish.
+[00:25:34] And he urged his employees not to sell
+[00:25:36] stock. And he said, I know it feels like
+[00:25:39] the Armageddon out there. Like let me
+[00:25:41] tell you I've seen this before. This is
+[00:25:43] not the time to sell.
+[00:25:45] You know, every headline is negative
+[00:25:47] about us. People are literally burning
+[00:25:49] Teslas in the streets. And when the
+[00:25:51] world reaches those extremes for so many
+[00:25:54] reasons, so many things in life tends to
+[00:25:56] be cyclical and we swing back to the
+[00:25:59] equilibrium.
+[00:26:00] Guess what? We don't hear articles
+[00:26:03] anymore about people burning Teslas in
+[00:26:05] the street. We don't have
+[00:26:07] I mean one Musk isn't as involved in the
+[00:26:09] government. That changed. And it's not
+[00:26:12] this fury of sentiment. And so often
+[00:26:15] those peaks in sentiment just can't be
+[00:26:17] sustained. Especially nowadays when the
+[00:26:19] human attention span is so short.
+[00:26:21] There's a new crisis. In fact, there's
+[00:26:23] probably been 20 since then. And
+[00:26:25] rightfully so, Tesla ended up going 100%
+[00:26:28] from there. It was pretty much the
+[00:26:29] literal bottom. We did kind of double
+[00:26:31] bottom, but it never really went lower.
+[00:26:33] Why? Because when sentiment is so bad,
+[00:26:37] you have such a cushion. It's not that
+[00:26:39] it can't go lower, but you have a
+[00:26:41] massive psychological cushion.
+[00:26:43] When nobody wants to own Tesla, when
+[00:26:45] funds are dumping it, when I forget who
+[00:26:48] it was, when people are on stage saying,
+[00:26:50] "Oh my god, you know, burn all the
+[00:26:51] shares, whatever." That's usually a good
+[00:26:53] sign that you're close to a bottom.
+[00:26:55] You can use um CNBC, Twitter, whatever
+[00:26:58] to all gauge that.
+[00:27:00] So, here's one of the famous quotes. JP
+[00:27:03] Morgan upgrades Chinese stocks that were
+[00:27:05] recently deemed uninvestable. Takes to
+[00:27:08] to uh I can't read what what that used
+[00:27:10] to be, but blah blah blah internet
+[00:27:11] companies just months after their
+[00:27:13] bearish call. The oopsies uh you know,
+[00:27:16] they're not as uninvestable as we
+[00:27:17] thought. Turns out we actually made the
+[00:27:18] bottom in them.
+[00:27:20] Um what you don't want to be involved in
+[00:27:22] is you know, Chipotle's fairly priced. I
+[00:27:25] don't I don't care about stocks that are
+[00:27:27] fairly priced. I want stuff for this
+[00:27:30] mean reversion that's absolutely crazy
+[00:27:32] euphoric. Like even remember SMCI in
+[00:27:35] 2023
+[00:27:37] maybe 22, I can't remember. 23, I think.
+[00:27:39] Um maybe 24, I don't know. Anyhow,
+[00:27:44] there were Twitter polls.
+[00:27:46] Where do you think SMCI is going? Now,
+[00:27:48] keep in mind the stock had just gone
+[00:27:50] from 250 or so to $1,200.
+[00:27:55] I saw some poll where it was you know,
+[00:27:57] is this going above 2,000?
+[00:27:59] It was like something like 33% of people
+[00:28:02] said it's going above 2,000. And it's
+[00:28:04] like, wait. You didn't want to buy this
+[00:28:06] at 250. You didn't buy want to buy it at
+[00:28:08] 300 or 400 or 500.
+[00:28:11] Now that we're at 1,200, you think it's
+[00:28:13] going above 2,000? Like this is the
+[00:28:15] exact moment when it's actually least
+[00:28:17] likely to keep on doubling, you know?
+[00:28:19] Like when it's chilling in a
+[00:28:21] consolidation and then breaks out,
+[00:28:23] that's most likely to double. Once it's
+[00:28:25] gone 250 to 500 to 1,000 to 1,200, it is
+[00:28:28] probabilistically
+[00:28:30] the least likely to keep on doubling,
+[00:28:32] you know?
+[00:28:34] and so that is what happens with
+[00:28:36] sentiment. It's all reflective thinking
+[00:28:38] that drives the narrative. And what was
+[00:28:40] so interesting about the silver move and
+[00:28:43] why I was so kind of in supportive of
+[00:28:46] the short bear and the bear camp, which
+[00:28:47] I guess is is the same,
+[00:28:49] is you would see this narrative of oh my
+[00:28:53] god, you know, China's buying up all the
+[00:28:55] physical silver. Oh my god, physical
+[00:28:57] demand, blah blah blah, you know, dollar
+[00:28:59] debasement. I would look at the chart at
+[00:29:01] the of the dollar and I would say, wait,
+[00:29:04] the dol- the dollar's down a percent
+[00:29:06] lower than where it was yesterday and
+[00:29:07] it's where it was 3 months ago. Why is
+[00:29:10] silver up 10% today? That doesn't
+[00:29:12] logically make sense.
+[00:29:14] You know, or like people would say,
+[00:29:17] um,
+[00:29:18] this this physical demand and the hedge
+[00:29:21] fund buy and this and that. I would try
+[00:29:23] and find where that was coming from.
+[00:29:25] There was no source, there was no proof,
+[00:29:27] there was no like government buying that
+[00:29:29] could be verified. It was all price
+[00:29:32] driving the narrative, but that can't
+[00:29:34] last forever and that's the stuff I want
+[00:29:36] to be involved in. Variable number nine,
+[00:29:39] the more boring the better and this is a
+[00:29:43] wonderful exercise to do.
+[00:29:45] What defines something that is boring?
+[00:29:50] You have the larger the market cap,
+[00:29:52] which makes it better, the more boring
+[00:29:54] the security, the better, and the more
+[00:29:56] diversified the company.
+[00:29:59] Let's say Berkshire Hathaway is at $400.
+[00:30:04] How eager would you be to buy Berkshire
+[00:30:06] Hathaway tomorrow at $200?
+[00:30:09] Think we'd be quite eager, right? I
+[00:30:11] think it's safe to say that, you know,
+[00:30:12] the thousand plus diversified
+[00:30:14] businesses, the brand, the goodwill of
+[00:30:16] Berkshire Hathaway did not get halved
+[00:30:18] over this weekend.
+[00:30:20] What about Apple?
+[00:30:22] Think we're all pretty pretty confident
+[00:30:24] in that.
+[00:30:26] Now, what if micro cap biotech of
+[00:30:29] sketchy repute goes from 5 cents to 3
+[00:30:33] cents on Monday?
+[00:30:35] How confident are you that that's going
+[00:30:36] to bounce?
+[00:30:38] If If all of a sudden Dogecoin drops
+[00:30:40] 50%, how confident are you that that's
+[00:30:43] going to bounce?
+[00:30:45] What about
+[00:30:47] US Treasuries?
+[00:30:49] If the US Treasury drops 50% in one day,
+[00:30:54] man, that's a probably a pretty good bet
+[00:30:56] that unless something really, really
+[00:30:57] crazy happened where none of us are
+[00:30:59] probably on our screens, it's probably a
+[00:31:01] good bet that that's going to bounce.
+[00:31:03] And so this variable, if we're doing
+[00:31:05] mean reversion, is so important.
+[00:31:07] You want to know what tends to be
+[00:31:08] really, really, really boring?
+[00:31:12] A block of a metal that can't do
+[00:31:13] anything, right?
+[00:31:16] If you look at a 15-year chart of
+[00:31:18] silver,
+[00:31:19] silver hasn't done anything. And if you
+[00:31:21] were to stroll out and look at the
+[00:31:22] silver chart, what you would see is
+[00:31:24] whoops, I don't want to do that. What
+[00:31:26] you would see is an asymptote of this is
+[00:31:28] silver chilling for 15 years, then boop.
+[00:31:32] And that's what we saw over the last
+[00:31:33] couple months.
+[00:31:34] And the point is
+[00:31:36] is like most of this stuff that's
+[00:31:39] boring, that's super well diversified,
+[00:31:41] that's super big market cap,
+[00:31:44] the fundamentals and the actual true,
+[00:31:46] like {quote} {unquote} value, doesn't
+[00:31:49] tend to change that much.
+[00:31:51] You want to know what does change?
+[00:31:53] Sentiment and narrative. It's sentiment
+[00:31:55] and narrative that drove silver.
+[00:31:57] Right? It's not the actual, you know,
+[00:31:59] {quote} {unquote} value of that. Same if
+[00:32:01] if Berkshire Hathaway panics. So even um
+[00:32:04] I talked about one of my best reversal
+[00:32:06] trades ever when the Nikkei panicked.
+[00:32:09] Part of what made the Nikkei panic so
+[00:32:11] appealing is the Nikkei represents the
+[00:32:14] Japanese stock market.
+[00:32:17] What are the odds that because of a
+[00:32:19] small, you know how I talked about like
+[00:32:21] silver moving while the dollar was right
+[00:32:22] where it was?
+[00:32:24] What triggered that Nikkei move was a
+[00:32:26] move in the yen.
+[00:32:28] The only issue is the yen didn't do
+[00:32:30] anything that that crazy. The yen just
+[00:32:32] went back to levels it it it previously
+[00:32:35] was at.
+[00:32:36] Meanwhile, the Nikkei was falling
+[00:32:39] like 30% over the course of a couple
+[00:32:41] days. Did the Japanese economy and stock
+[00:32:43] market actually change? Did the whole
+[00:32:46] country's future value fall 30%?
+[00:32:51] You never know, but it's a bet I'm
+[00:32:52] willing to take, right? Same for stuff
+[00:32:54] like silver. Same for some of these
+[00:32:57] conglomerates, right? Like
+[00:32:59] Coca-Cola's been around 100 plus years.
+[00:33:02] Stuff like that is going to be stable.
+[00:33:03] Not always, you got to be careful,
+[00:33:05] right? But I'm way more likely to bet on
+[00:33:06] these things reverting
+[00:33:09] and being more narrative than
+[00:33:10] fundamental change than a biotech. If we
+[00:33:13] look at some of these charts,
+[00:33:15] um this was I know it gets cut off. This
+[00:33:18] was actually Berkshire Hathaway. This
+[00:33:20] was Berkshire Hathaway making a really
+[00:33:22] big move. We had a massive gap. Um
+[00:33:25] and sure enough, guess what? Massive gap
+[00:33:27] down. We retrace and we go all the way
+[00:33:29] back to where we were.
+[00:33:31] Um this was I believe this was a biotech
+[00:33:34] I chose. I think uh I think this was
+[00:33:37] um BMRN BioMarin, I believe. And you
+[00:33:42] know, this I'm going to be less
+[00:33:43] interested in mean reverting. I'm going
+[00:33:45] to be far less interested in buying into
+[00:33:47] something like that. Something like
+[00:33:49] Berkshire Hathaway that's super
+[00:33:51] diversified, super large, way more
+[00:33:53] appealing. And if you follow these
+[00:33:54] charts, if you look for the big flush
+[00:33:57] outs, the big panics in these large
+[00:33:59] stable companies like Berkshire
+[00:34:00] Hathaway, what do you know? They tend to
+[00:34:02] bounce well. Um not a coincidence. My
+[00:34:04] final variable for you all.
+[00:34:07] Anytime when market structure
+[00:34:10] and non-fundamentals
+[00:34:12] are magnifying the move.
+[00:34:14] What do I mean by that?
+[00:34:16] Always pay attention to margin calls.
+[00:34:18] Always pay attention to forced
+[00:34:20] liquidations and other forms of forced
+[00:34:22] selling or buying.
+[00:34:24] You want to find the players offsides
+[00:34:26] that are forced to close positions at
+[00:34:27] prices that are unhinged from
+[00:34:29] fundamentals.
+[00:34:31] In the silver move, you want to know
+[00:34:33] what I did here as fact and know as
+[00:34:35] true?
+[00:34:36] The margin was increasing.
+[00:34:38] So, if you were short a lot of silver
+[00:34:40] and it kept going, going, I know as a
+[00:34:42] fact margin was
+[00:34:44] uh you know, margin rates were
+[00:34:45] increasing and so a lot of people
+[00:34:47] probably weren't able to hold that
+[00:34:48] position.
+[00:34:49] That's real. That's real forced market
+[00:34:52] structure that creates a price move,
+[00:34:55] often which can divorce itself from the
+[00:34:57] underlying fundamentals. Cuz I promise
+[00:34:59] you, those couple of those final days in
+[00:35:01] silver, there was nothing fundamental
+[00:35:03] driving that move. What was driving it
+[00:35:05] is a lot of the forced selling and
+[00:35:06] buying.
+[00:35:08] And so, what I want to highlight,
+[00:35:11] this is Circle
+[00:35:13] um following its IPO, right? So,
+[00:35:15] investment bankers get together
+[00:35:18] and they say, "What's the appropriate
+[00:35:19] value for this company?"
+[00:35:22] Very smart bankers did that and they
+[00:35:24] said $30.
+[00:35:26] Okay.
+[00:35:27] Let's say the bankers are idiots.
+[00:35:30] The stock opened $60 and then traded to
+[00:35:33] 80-something. Within a couple weeks, we
+[00:35:35] were at close to $300.
+[00:35:38] What's more likely?
+[00:35:40] The investment banks that spent months
+[00:35:41] valuing this company were off by a
+[00:35:45] uh you know, factor of like 10
+[00:35:48] or that the low float and the market
+[00:35:50] structure and everything else ended up
+[00:35:52] really creating something crazy in this.
+[00:35:54] So, what you saw is the margin
+[00:35:57] rate increasing, increasing, increasing
+[00:35:59] on this, especially into that final move
+[00:36:01] to 300. So, then what you see,
+[00:36:04] oops.
+[00:36:07] What you see
+[00:36:09] is this was after it started to crack.
+[00:36:11] The right here, there was a buyer at 245
+[00:36:14] on the tape. He would drop for a split
+[00:36:16] second, come right back.
+[00:36:18] Why would somebody just buy for hours
+[00:36:21] and hours a stock
+[00:36:24] at 9x where it was priced a few weeks
+[00:36:27] ago.
+[00:36:28] Why would someone want buy millions and
+[00:36:30] millions of shares?
+[00:36:32] They don't want to buy, they have no
+[00:36:33] choice.
+[00:36:34] No no rational person, for the most
+[00:36:37] part, unless something really crazy
+[00:36:39] happened, says, "I want to buy millions
+[00:36:41] of shares 9x
+[00:36:42] higher a few weeks later when nothing
+[00:36:45] has changed and none of none of them
+[00:36:48] say, 'Oh, I'm just going to do it as
+[00:36:49] blatantly as possible at the same
+[00:36:50] price.'"
+[00:36:51] This is, "Hey, you need to close this
+[00:36:53] position or you're bankrupt." And and
+[00:36:55] this is your broker forcing you to do
+[00:36:56] it. And so this was the footprint
+[00:36:59] saying that guess what?
+[00:37:01] This price move up here, this is not
+[00:37:04] fundamental. This is forced buying.
+[00:37:07] Someone has to buy millions and millions
+[00:37:09] and millions of shares that they might
+[00:37:10] have shorted at 70 bucks or 90 bucks or
+[00:37:13] 110 or 130 and they can't hold at after
+[00:37:16] it's gone to 300 and the margin gets
+[00:37:18] jacked. So that's the footprint
+[00:37:22] of there being
+[00:37:23] a mispricing
+[00:37:25] due to this forced buying. Then the
+[00:37:27] buyer breaks
+[00:37:29] boom, it's gone. And it pretty much
+[00:37:31] never came back to those levels.
+[00:37:33] Um this is just pure noise, right?
+[00:37:35] There's no real clear signature here.
+[00:37:37] This on the tape you could see the 245,
+[00:37:39] we break, we're gone. So that's the
+[00:37:41] final piece.
+[00:37:44] So
+[00:37:45] look, I know the the
+[00:37:47] next question of course is is how do you
+[00:37:49] then trade this stuff? I get that.
+[00:37:52] For this topic, I could really only
+[00:37:53] cover one or the other and the way more
+[00:37:55] important piece is to build the
+[00:37:56] foundation first. So that's all the
+[00:37:59] variables I used to spot this.
+[00:38:02] Then I define the trend
+[00:38:05] and how I look for a break of that trend
+[00:38:07] and it's either, you know, a trendline
+[00:38:09] breaks, the break of prior bar lows, or
+[00:38:12] something capitulates intraday, or you
+[00:38:14] get a break of the the forced buyer. So
+[00:38:18] trading it is kind of the 201 lesson and
+[00:38:21] I really wanted to focus on all those
+[00:38:23] nuances to help you get the win rate up
+[00:38:25] and identify the right setups.

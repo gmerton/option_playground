@@ -1,0 +1,530 @@
+
+######## SHORT fades: 33,295 signals, 1603 dates, 1499 names
+variable hit rates %: {'v1_accel': np.float64(17.9), 'v2_days': np.float64(27.6), 'v3_bb': np.float64(5.5), 'v5_vol': np.float64(1.8), 'v6_legs': np.float64(34.6), 'v7_nocons': np.float64(12.8), 'v9_boring': np.float64(59.9)}
+score distribution: {0: 5072, 1: 12190, 2: 9855, 3: 4053, 4: 1525, 5: 483, 6: 111, 7: 6}
+
+=== capitulation scorecard short score 0-1 (post): 17,262 signals, 1476 dates ===
+control = post (50,627 control trades)
+
+=== capitulation scorecard short score 0-1 (post) (daily) — 17,003 signals, 1465 names, 2019-10-01 -> 2026-09-16 ===
+                 n  meanR   medR     win    p90       t   ctrl   edge
+stop_hold  17003.0 -0.203 -0.562  38.658  1.817  -3.248 -0.128 -0.075
+t1R        17003.0 -0.287 -0.287  44.904  1.000 -11.980 -0.236 -0.050
+t2R        17003.0 -0.247 -0.503  40.011  2.000  -7.951 -0.186 -0.061
+trail_bar  17003.0 -0.167 -0.361  31.659  1.204  -3.684 -0.118 -0.050
+ema20      17003.0 -0.062 -0.093  41.028  0.530  -3.799 -0.089  0.027
+
+by half (n 5888 / 11115):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.137        -0.238
+t1R             -0.254        -0.304
+t2R             -0.193        -0.276
+trail_bar       -0.146        -0.178
+ema20           -0.039        -0.074
+
+best arm by edge: ema20 | passes the bar (beats control, both halves positive, |t|>=3): no
+
+=== capitulation scorecard short score 0-1 (xname): 17,262 signals, 1476 dates ===
+control = xname (51,009 control trades)
+
+=== capitulation scorecard short score 0-1 (xname) (daily) — 17,003 signals, 1465 names, 2019-10-01 -> 2026-09-16 ===
+                 n  meanR   medR     win    p90       t   ctrl   edge
+stop_hold  17003.0 -0.203 -0.562  38.658  1.817  -3.248 -0.194 -0.009
+t1R        17003.0 -0.287 -0.287  44.904  1.000 -11.980 -0.291  0.005
+t2R        17003.0 -0.247 -0.503  40.011  2.000  -7.951 -0.255  0.008
+trail_bar  17003.0 -0.167 -0.361  31.659  1.204  -3.684 -0.165 -0.002
+ema20      17003.0 -0.062 -0.093  41.028  0.530  -3.799 -0.120  0.058
+
+by half (n 5888 / 11115):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.137        -0.238
+t1R             -0.254        -0.304
+t2R             -0.193        -0.276
+trail_bar       -0.146        -0.178
+ema20           -0.039        -0.074
+
+best arm by edge: ema20 | passes the bar (beats control, both halves positive, |t|>=3): no
+
+=== capitulation scorecard short score 2 (post): 9,855 signals, 1400 dates ===
+control = post (28,853 control trades)
+
+=== capitulation scorecard short score 2 (post) (daily) — 9,679 signals, 1233 names, 2019-10-01 -> 2026-09-17 ===
+                n  meanR   medR     win    p90       t   ctrl   edge
+stop_hold  9679.0 -0.176 -0.483  39.508  1.847  -5.100 -0.159 -0.017
+t1R        9679.0 -0.287 -0.260  45.118  1.000 -12.682 -0.252 -0.035
+t2R        9679.0 -0.240 -0.435  40.665  2.000  -8.883 -0.207 -0.033
+trail_bar  9679.0 -0.154 -0.330  32.204  1.197  -5.747 -0.140 -0.015
+ema20      9679.0 -0.054 -0.079  41.192  0.519  -3.860 -0.094  0.040
+
+by half (n 3783 / 5896):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.145        -0.196
+t1R             -0.275        -0.295
+t2R             -0.223        -0.251
+trail_bar       -0.153        -0.155
+ema20           -0.045        -0.061
+
+best arm by edge: ema20 | passes the bar (beats control, both halves positive, |t|>=3): no
+
+=== capitulation scorecard short score 2 (xname): 9,855 signals, 1400 dates ===
+control = xname (29,037 control trades)
+
+=== capitulation scorecard short score 2 (xname) (daily) — 9,679 signals, 1233 names, 2019-10-01 -> 2026-09-17 ===
+                n  meanR   medR     win    p90       t   ctrl   edge
+stop_hold  9679.0 -0.176 -0.483  39.508  1.847  -5.100 -0.185  0.009
+t1R        9679.0 -0.287 -0.260  45.118  1.000 -12.682 -0.283 -0.004
+t2R        9679.0 -0.240 -0.435  40.665  2.000  -8.883 -0.250  0.010
+trail_bar  9679.0 -0.154 -0.330  32.204  1.197  -5.747 -0.156  0.002
+ema20      9679.0 -0.054 -0.079  41.192  0.519  -3.860 -0.101  0.047
+
+by half (n 3783 / 5896):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.145        -0.196
+t1R             -0.275        -0.295
+t2R             -0.223        -0.251
+trail_bar       -0.153        -0.155
+ema20           -0.045        -0.061
+
+best arm by edge: ema20 | passes the bar (beats control, both halves positive, |t|>=3): no
+
+=== capitulation scorecard short score 3 (post): 4,053 signals, 1068 dates ===
+control = post (11,900 control trades)
+
+=== capitulation scorecard short score 3 (post) (daily) — 3,987 signals, 996 names, 2019-10-01 -> 2026-09-17 ===
+                n  meanR   medR     win    p90      t   ctrl   edge
+stop_hold  3987.0 -0.203 -0.403  39.654  1.674 -5.604 -0.171 -0.032
+t1R        3987.0 -0.255 -0.178  45.573  1.000 -8.860 -0.251 -0.004
+t2R        3987.0 -0.214 -0.355  40.983  2.000 -6.420 -0.216  0.002
+trail_bar  3987.0 -0.144 -0.305  33.308  1.178 -4.626 -0.132 -0.012
+ema20      3987.0 -0.061 -0.067  42.313  0.490 -3.841 -0.086  0.025
+
+by half (n 1506 / 2481):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.144        -0.239
+t1R             -0.224        -0.274
+t2R             -0.163        -0.245
+trail_bar       -0.112        -0.164
+ema20           -0.046        -0.070
+
+best arm by edge: ema20 | passes the bar (beats control, both halves positive, |t|>=3): no
+
+=== capitulation scorecard short score 3 (xname): 4,053 signals, 1068 dates ===
+control = xname (11,961 control trades)
+
+=== capitulation scorecard short score 3 (xname) (daily) — 3,987 signals, 996 names, 2019-10-01 -> 2026-09-17 ===
+                n  meanR   medR     win    p90      t   ctrl   edge
+stop_hold  3987.0 -0.203 -0.403  39.654  1.674 -5.604 -0.151 -0.052
+t1R        3987.0 -0.255 -0.178  45.573  1.000 -8.860 -0.254 -0.001
+t2R        3987.0 -0.214 -0.355  40.983  2.000 -6.420 -0.207 -0.007
+trail_bar  3987.0 -0.144 -0.305  33.308  1.178 -4.626 -0.131 -0.013
+ema20      3987.0 -0.061 -0.067  42.313  0.490 -3.841 -0.098  0.037
+
+by half (n 1506 / 2481):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.144        -0.239
+t1R             -0.224        -0.274
+t2R             -0.163        -0.245
+trail_bar       -0.112        -0.164
+ema20           -0.046        -0.070
+
+best arm by edge: ema20 | passes the bar (beats control, both halves positive, |t|>=3): no
+
+=== capitulation scorecard short score 4 (post): 1,525 signals, 641 dates ===
+control = post (4,475 control trades)
+
+=== capitulation scorecard short score 4 (post) (daily) — 1,503 signals, 708 names, 2019-10-17 -> 2026-09-16 ===
+                n  meanR   medR     win    p90      t   ctrl   edge
+stop_hold  1503.0 -0.151 -0.298  42.582  1.624 -3.118 -0.089 -0.063
+t1R        1503.0 -0.211 -0.141  47.505  1.000 -5.344 -0.172 -0.038
+t2R        1503.0 -0.178 -0.281  43.313  2.000 -4.178 -0.129 -0.049
+trail_bar  1503.0 -0.116 -0.281  34.398  1.130 -2.293 -0.076 -0.040
+ema20      1503.0 -0.035 -0.041  44.711  0.464 -2.738 -0.070  0.035
+
+by half (n 542 / 961):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.149        -0.153
+t1R             -0.174        -0.231
+t2R             -0.133        -0.204
+trail_bar       -0.081        -0.136
+ema20            0.018        -0.065
+
+best arm by edge: ema20 | passes the bar (beats control, both halves positive, |t|>=3): no
+
+=== capitulation scorecard short score 4 (xname): 1,525 signals, 641 dates ===
+control = xname (4,509 control trades)
+
+=== capitulation scorecard short score 4 (xname) (daily) — 1,503 signals, 708 names, 2019-10-17 -> 2026-09-16 ===
+                n  meanR   medR     win    p90      t   ctrl   edge
+stop_hold  1503.0 -0.151 -0.298  42.582  1.624 -3.118 -0.130 -0.021
+t1R        1503.0 -0.211 -0.141  47.505  1.000 -5.344 -0.245  0.034
+t2R        1503.0 -0.178 -0.281  43.313  2.000 -4.178 -0.197  0.019
+trail_bar  1503.0 -0.116 -0.281  34.398  1.130 -2.293 -0.095 -0.021
+ema20      1503.0 -0.035 -0.041  44.711  0.464 -2.738 -0.079  0.044
+
+by half (n 542 / 961):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.149        -0.153
+t1R             -0.174        -0.231
+t2R             -0.133        -0.204
+trail_bar       -0.081        -0.136
+ema20            0.018        -0.065
+
+best arm by edge: ema20 | passes the bar (beats control, both halves positive, |t|>=3): no
+
+=== capitulation scorecard short score 5+ (post): 600 signals, 347 dates ===
+control = post (1,767 control trades)
+
+=== capitulation scorecard short score 5+ (post) (daily) — 592 signals, 390 names, 2019-10-14 -> 2026-09-16 ===
+               n  meanR   medR     win    p90      t   ctrl   edge
+stop_hold  592.0 -0.265 -0.322  40.709  1.421 -3.364 -0.045 -0.220
+t1R        592.0 -0.300 -0.245  43.750  1.000 -5.091 -0.160 -0.140
+t2R        592.0 -0.269 -0.313  41.385  1.572 -4.066 -0.098 -0.170
+trail_bar  592.0 -0.216 -0.268  32.264  0.902 -3.915 -0.046 -0.170
+ema20      592.0 -0.071 -0.071  42.399  0.433 -2.041 -0.039 -0.032
+
+by half (n 204 / 388):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.158        -0.321
+t1R             -0.207        -0.349
+t2R             -0.176        -0.317
+trail_bar       -0.148        -0.252
+ema20           -0.072        -0.070
+
+best arm by edge: ema20 | passes the bar (beats control, both halves positive, |t|>=3): no
+
+=== capitulation scorecard short score 5+ (xname): 600 signals, 347 dates ===
+control = xname (1,776 control trades)
+
+=== capitulation scorecard short score 5+ (xname) (daily) — 592 signals, 390 names, 2019-10-14 -> 2026-09-16 ===
+               n  meanR   medR     win    p90      t   ctrl   edge
+stop_hold  592.0 -0.265 -0.322  40.709  1.421 -3.364 -0.233 -0.032
+t1R        592.0 -0.300 -0.245  43.750  1.000 -5.091 -0.223 -0.076
+t2R        592.0 -0.269 -0.313  41.385  1.572 -4.066 -0.215 -0.054
+trail_bar  592.0 -0.216 -0.268  32.264  0.902 -3.915 -0.148 -0.068
+ema20      592.0 -0.071 -0.071  42.399  0.433 -2.041 -0.146  0.075
+
+by half (n 204 / 388):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.158        -0.321
+t1R             -0.207        -0.349
+t2R             -0.176        -0.317
+trail_bar       -0.148        -0.252
+ema20           -0.072        -0.070
+
+best arm by edge: ema20 | passes the bar (beats control, both halves positive, |t|>=3): no
+
+######## LONG fades: 38,061 signals, 1613 dates, 1514 names
+variable hit rates %: {'v1_accel': np.float64(17.8), 'v2_days': np.float64(25.8), 'v3_bb': np.float64(5.2), 'v5_vol': np.float64(2.7), 'v6_legs': np.float64(42.4), 'v7_nocons': np.float64(18.2), 'v9_boring': np.float64(60.5)}
+score distribution: {0: 4931, 1: 12998, 2: 11779, 3: 5389, 4: 2033, 5: 776, 6: 138, 7: 17}
+
+=== capitulation scorecard long score 0-1 (post): 17,929 signals, 1450 dates ===
+control = post (52,135 control trades)
+
+=== capitulation scorecard long score 0-1 (post) (daily) — 17,741 signals, 1491 names, 2019-10-03 -> 2026-09-17 ===
+                 n  meanR   medR     win    p90      t   ctrl   edge
+stop_hold  17741.0  0.003 -0.188  45.708  1.983 -0.245  0.005 -0.003
+t1R        17741.0 -0.128  0.101  51.981  1.000 -8.356 -0.149  0.021
+t2R        17741.0 -0.061 -0.124  47.252  2.000 -3.732 -0.081  0.020
+trail_bar  17741.0 -0.044 -0.272  36.469  1.395 -1.991 -0.031 -0.012
+ema20      17741.0 -0.043 -0.069  42.912  0.550 -3.714 -0.029 -0.014
+
+by half (n 6262 / 11479):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.050         0.032
+t1R             -0.168        -0.106
+t2R             -0.103        -0.039
+trail_bar       -0.087        -0.020
+ema20           -0.037        -0.047
+
+best arm by edge: t1R | passes the bar (beats control, both halves positive, |t|>=3): no
+
+=== capitulation scorecard long score 0-1 (xname): 17,929 signals, 1450 dates ===
+control = xname (53,223 control trades)
+
+=== capitulation scorecard long score 0-1 (xname) (daily) — 17,741 signals, 1491 names, 2019-10-03 -> 2026-09-17 ===
+                 n  meanR   medR     win    p90      t   ctrl   edge
+stop_hold  17741.0  0.003 -0.188  45.708  1.983 -0.245 -0.024  0.027
+t1R        17741.0 -0.128  0.101  51.981  1.000 -8.356 -0.148  0.020
+t2R        17741.0 -0.061 -0.124  47.252  2.000 -3.732 -0.094  0.033
+trail_bar  17741.0 -0.044 -0.272  36.469  1.395 -1.991 -0.055  0.012
+ema20      17741.0 -0.043 -0.069  42.912  0.550 -3.714 -0.053  0.010
+
+by half (n 6262 / 11479):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.050         0.032
+t1R             -0.168        -0.106
+t2R             -0.103        -0.039
+trail_bar       -0.087        -0.020
+ema20           -0.037        -0.047
+
+best arm by edge: t2R | passes the bar (beats control, both halves positive, |t|>=3): no
+
+=== capitulation scorecard long score 2 (post): 11,779 signals, 1325 dates ===
+control = post (34,273 control trades)
+
+=== capitulation scorecard long score 2 (post) (daily) — 11,595 signals, 1302 names, 2019-10-01 -> 2026-09-17 ===
+                 n  meanR   medR     win    p90      t   ctrl   edge
+stop_hold  11595.0  0.053 -0.081  48.012  1.976  0.496  0.062 -0.008
+t1R        11595.0 -0.086  0.178  53.885  1.000 -6.119 -0.107  0.021
+t2R        11595.0 -0.011 -0.021  49.530  2.000 -2.443 -0.026  0.015
+trail_bar  11595.0 -0.017 -0.242  37.594  1.418 -0.174 -0.009 -0.008
+ema20      11595.0 -0.023 -0.063  43.588  0.570 -1.598 -0.010 -0.013
+
+by half (n 5352 / 6243):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.044         0.136
+t1R             -0.148        -0.032
+t2R             -0.073         0.042
+trail_bar       -0.086         0.042
+ema20           -0.017        -0.028
+
+best arm by edge: t1R | passes the bar (beats control, both halves positive, |t|>=3): no
+
+=== capitulation scorecard long score 2 (xname): 11,779 signals, 1325 dates ===
+control = xname (34,785 control trades)
+
+=== capitulation scorecard long score 2 (xname) (daily) — 11,595 signals, 1302 names, 2019-10-01 -> 2026-09-17 ===
+                 n  meanR   medR     win    p90      t   ctrl   edge
+stop_hold  11595.0  0.053 -0.081  48.012  1.976  0.496 -0.015  0.068
+t1R        11595.0 -0.086  0.178  53.885  1.000 -6.119 -0.137  0.051
+t2R        11595.0 -0.011 -0.021  49.530  2.000 -2.443 -0.083  0.072
+trail_bar  11595.0 -0.017 -0.242  37.594  1.418 -0.174 -0.064  0.047
+ema20      11595.0 -0.023 -0.063  43.588  0.570 -1.598 -0.055  0.032
+
+by half (n 5352 / 6243):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.044         0.136
+t1R             -0.148        -0.032
+t2R             -0.073         0.042
+trail_bar       -0.086         0.042
+ema20           -0.017        -0.028
+
+best arm by edge: t2R | passes the bar (beats control, both halves positive, |t|>=3): no
+
+=== capitulation scorecard long score 3 (post): 5,389 signals, 985 dates ===
+control = post (15,412 control trades)
+
+=== capitulation scorecard long score 3 (post) (daily) — 5,218 signals, 1089 names, 2019-10-03 -> 2026-09-17 ===
+                n  meanR   medR     win    p90      t   ctrl   edge
+stop_hold  5218.0  0.011 -0.021  49.425  1.841  1.022  0.077 -0.065
+t1R        5218.0 -0.097  0.178  54.868  1.000 -3.320 -0.096 -0.001
+t2R        5218.0 -0.023  0.041  50.920  2.000 -0.556 -0.008 -0.016
+trail_bar  5218.0 -0.082 -0.237  37.371  1.242 -0.509 -0.012 -0.069
+ema20      5218.0 -0.045 -0.074  43.101  0.574 -1.659 -0.012 -0.033
+
+by half (n 2609 / 2609):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.083         0.106
+t1R             -0.160        -0.035
+t2R             -0.091         0.044
+trail_bar       -0.144        -0.020
+ema20           -0.047        -0.044
+
+best arm by edge: t1R | passes the bar (beats control, both halves positive, |t|>=3): no
+
+=== capitulation scorecard long score 3 (xname): 5,389 signals, 985 dates ===
+control = xname (15,654 control trades)
+
+=== capitulation scorecard long score 3 (xname) (daily) — 5,218 signals, 1089 names, 2019-10-03 -> 2026-09-17 ===
+                n  meanR   medR     win    p90      t   ctrl   edge
+stop_hold  5218.0  0.011 -0.021  49.425  1.841  1.022 -0.046  0.057
+t1R        5218.0 -0.097  0.178  54.868  1.000 -3.320 -0.161  0.064
+t2R        5218.0 -0.023  0.041  50.920  2.000 -0.556 -0.099  0.075
+trail_bar  5218.0 -0.082 -0.237  37.371  1.242 -0.509 -0.102  0.021
+ema20      5218.0 -0.045 -0.074  43.101  0.574 -1.659 -0.083  0.038
+
+by half (n 2609 / 2609):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.083         0.106
+t1R             -0.160        -0.035
+t2R             -0.091         0.044
+trail_bar       -0.144        -0.020
+ema20           -0.047        -0.044
+
+best arm by edge: t2R | passes the bar (beats control, both halves positive, |t|>=3): no
+
+=== capitulation scorecard long score 4 (post): 2,033 signals, 561 dates ===
+control = post (5,889 control trades)
+
+=== capitulation scorecard long score 4 (post) (daily) — 1,976 signals, 826 names, 2019-10-01 -> 2026-09-17 ===
+                n  meanR   medR     win    p90      t   ctrl   edge
+stop_hold  1976.0 -0.082 -0.083  47.672  1.805 -0.751  0.155 -0.237
+t1R        1976.0 -0.196  0.098  51.872  1.000 -3.270 -0.045 -0.151
+t2R        1976.0 -0.135 -0.055  48.482  2.000 -1.669  0.045 -0.180
+trail_bar  1976.0 -0.125 -0.224  36.741  1.235 -2.198  0.022 -0.147
+ema20      1976.0 -0.110 -0.119  37.551  0.484 -2.799  0.014 -0.124
+
+by half (n 1085 / 891):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.285         0.164
+t1R             -0.397         0.049
+t2R             -0.335         0.109
+trail_bar       -0.267         0.048
+ema20           -0.142        -0.072
+
+best arm by edge: ema20 | passes the bar (beats control, both halves positive, |t|>=3): no
+
+=== capitulation scorecard long score 4 (xname): 2,033 signals, 561 dates ===
+control = xname (5,928 control trades)
+
+=== capitulation scorecard long score 4 (xname) (daily) — 1,976 signals, 826 names, 2019-10-01 -> 2026-09-17 ===
+                n  meanR   medR     win    p90      t   ctrl   edge
+stop_hold  1976.0 -0.082 -0.083  47.672  1.805 -0.751 -0.066 -0.016
+t1R        1976.0 -0.196  0.098  51.872  1.000 -3.270 -0.195 -0.001
+t2R        1976.0 -0.135 -0.055  48.482  2.000 -1.669 -0.144  0.009
+trail_bar  1976.0 -0.125 -0.224  36.741  1.235 -2.198 -0.157  0.032
+ema20      1976.0 -0.110 -0.119  37.551  0.484 -2.799 -0.123  0.013
+
+by half (n 1085 / 891):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.285         0.164
+t1R             -0.397         0.049
+t2R             -0.335         0.109
+trail_bar       -0.267         0.048
+ema20           -0.142        -0.072
+
+best arm by edge: trail_bar | passes the bar (beats control, both halves positive, |t|>=3): no
+
+=== capitulation scorecard long score 5+ (post): 931 signals, 304 dates ===
+control = post (2,702 control trades)
+
+=== capitulation scorecard long score 5+ (post) (daily) — 910 signals, 536 names, 2019-10-04 -> 2026-09-14 ===
+               n  meanR   medR     win    p90      t   ctrl   edge
+stop_hold  910.0 -0.286 -0.231  43.736  1.500 -0.169  0.152 -0.438
+t1R        910.0 -0.362 -0.133  46.593  1.000 -1.257 -0.042 -0.320
+t2R        910.0 -0.290 -0.174  44.945  2.000 -0.004  0.042 -0.332
+trail_bar  910.0 -0.314 -0.315  33.297  1.050 -0.559  0.008 -0.322
+ema20      910.0 -0.145 -0.166  32.857  0.378 -1.706  0.020 -0.165
+
+by half (n 524 / 386):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.583         0.117
+t1R             -0.658         0.039
+t2R             -0.600         0.131
+trail_bar       -0.548         0.003
+ema20           -0.142        -0.149
+
+best arm by edge: ema20 | passes the bar (beats control, both halves positive, |t|>=3): no
+
+=== capitulation scorecard long score 5+ (xname): 931 signals, 304 dates ===
+control = xname (2,730 control trades)
+
+=== capitulation scorecard long score 5+ (xname) (daily) — 910 signals, 536 names, 2019-10-04 -> 2026-09-14 ===
+               n  meanR   medR     win    p90      t   ctrl   edge
+stop_hold  910.0 -0.286 -0.231  43.736  1.500 -0.169 -0.378  0.092
+t1R        910.0 -0.362 -0.133  46.593  1.000 -1.257 -0.441  0.079
+t2R        910.0 -0.290 -0.174  44.945  2.000 -0.004 -0.401  0.111
+trail_bar  910.0 -0.314 -0.315  33.297  1.050 -0.559 -0.388  0.074
+ema20      910.0 -0.145 -0.166  32.857  0.378 -1.706 -0.210  0.065
+
+by half (n 524 / 386):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.583         0.117
+t1R             -0.658         0.039
+t2R             -0.600         0.131
+trail_bar       -0.548         0.003
+ema20           -0.142        -0.149
+
+best arm by edge: t2R | passes the bar (beats control, both halves positive, |t|>=3): no
+
+
+################ SUMMARY: mean R by score bucket (post control) ################
+
+short / stop_hold  (Spearman meanR vs bucket order = -0.30)
+bucket     n  dates  meanR    win      t   ctrl   edge  ctrl_xname  edge_xname     h1     h2
+   0-1 17003   1476 -0.203 38.658 -3.248 -0.128 -0.075      -0.194      -0.009 -0.137 -0.238
+     2  9679   1400 -0.176 39.508 -5.100 -0.159 -0.017      -0.185       0.009 -0.145 -0.196
+     3  3987   1068 -0.203 39.654 -5.604 -0.171 -0.032      -0.151      -0.052 -0.144 -0.239
+     4  1503    641 -0.151 42.582 -3.118 -0.089 -0.063      -0.130      -0.021 -0.149 -0.153
+    5+   592    347 -0.265 40.709 -3.364 -0.045 -0.220      -0.233      -0.032 -0.158 -0.321
+
+short / t1R  (Spearman meanR vs bucket order = -0.10)
+bucket     n  dates  meanR    win       t   ctrl   edge  ctrl_xname  edge_xname     h1     h2
+   0-1 17003   1476 -0.287 44.904 -11.980 -0.236 -0.050      -0.291       0.005 -0.254 -0.304
+     2  9679   1400 -0.287 45.118 -12.682 -0.252 -0.035      -0.283      -0.004 -0.275 -0.295
+     3  3987   1068 -0.255 45.573  -8.860 -0.251 -0.004      -0.254      -0.001 -0.224 -0.274
+     4  1503    641 -0.211 47.505  -5.344 -0.172 -0.038      -0.245       0.034 -0.174 -0.231
+    5+   592    347 -0.300 43.750  -5.091 -0.160 -0.140      -0.223      -0.076 -0.207 -0.349
+
+short / t2R  (Spearman meanR vs bucket order = +0.00)
+bucket     n  dates  meanR    win      t   ctrl   edge  ctrl_xname  edge_xname     h1     h2
+   0-1 17003   1476 -0.247 40.011 -7.951 -0.186 -0.061      -0.255       0.008 -0.193 -0.276
+     2  9679   1400 -0.240 40.665 -8.883 -0.207 -0.033      -0.250       0.010 -0.223 -0.251
+     3  3987   1068 -0.214 40.983 -6.420 -0.216  0.002      -0.207      -0.007 -0.163 -0.245
+     4  1503    641 -0.178 43.313 -4.178 -0.129 -0.049      -0.197       0.019 -0.133 -0.204
+    5+   592    347 -0.269 41.385 -4.066 -0.098 -0.170      -0.215      -0.054 -0.176 -0.317
+
+short / trail_bar  (Spearman meanR vs bucket order = +0.00)
+bucket     n  dates  meanR    win      t   ctrl   edge  ctrl_xname  edge_xname     h1     h2
+   0-1 17003   1476 -0.167 31.659 -3.684 -0.118 -0.050      -0.165      -0.002 -0.146 -0.178
+     2  9679   1400 -0.154 32.204 -5.747 -0.140 -0.015      -0.156       0.002 -0.153 -0.155
+     3  3987   1068 -0.144 33.308 -4.626 -0.132 -0.012      -0.131      -0.013 -0.112 -0.164
+     4  1503    641 -0.116 34.398 -2.293 -0.076 -0.040      -0.095      -0.021 -0.081 -0.136
+    5+   592    347 -0.216 32.264 -3.915 -0.046 -0.170      -0.148      -0.068 -0.148 -0.252
+
+long / stop_hold  (Spearman meanR vs bucket order = -0.70)
+bucket     n  dates  meanR    win      t  ctrl   edge  ctrl_xname  edge_xname     h1    h2
+   0-1 17741   1450  0.003 45.708 -0.245 0.005 -0.003      -0.024       0.027 -0.050 0.032
+     2 11595   1325  0.053 48.012  0.496 0.062 -0.008      -0.015       0.068 -0.044 0.136
+     3  5218    985  0.011 49.425  1.022 0.077 -0.065      -0.046       0.057 -0.083 0.106
+     4  1976    561 -0.082 47.672 -0.751 0.155 -0.237      -0.066      -0.016 -0.285 0.164
+    5+   910    304 -0.286 43.736 -0.169 0.152 -0.438      -0.378       0.092 -0.583 0.117
+
+long / t1R  (Spearman meanR vs bucket order = -0.70)
+bucket     n  dates  meanR    win      t   ctrl   edge  ctrl_xname  edge_xname     h1     h2
+   0-1 17741   1450 -0.128 51.981 -8.356 -0.149  0.021      -0.148       0.020 -0.168 -0.106
+     2 11595   1325 -0.086 53.885 -6.119 -0.107  0.021      -0.137       0.051 -0.148 -0.032
+     3  5218    985 -0.097 54.868 -3.320 -0.096 -0.001      -0.161       0.064 -0.160 -0.035
+     4  1976    561 -0.196 51.872 -3.270 -0.045 -0.151      -0.195      -0.001 -0.397  0.049
+    5+   910    304 -0.362 46.593 -1.257 -0.042 -0.320      -0.441       0.079 -0.658  0.039
+
+long / t2R  (Spearman meanR vs bucket order = -0.70)
+bucket     n  dates  meanR    win      t   ctrl   edge  ctrl_xname  edge_xname     h1     h2
+   0-1 17741   1450 -0.061 47.252 -3.732 -0.081  0.020      -0.094       0.033 -0.103 -0.039
+     2 11595   1325 -0.011 49.530 -2.443 -0.026  0.015      -0.083       0.072 -0.073  0.042
+     3  5218    985 -0.023 50.920 -0.556 -0.008 -0.016      -0.099       0.075 -0.091  0.044
+     4  1976    561 -0.135 48.482 -1.669  0.045 -0.180      -0.144       0.009 -0.335  0.109
+    5+   910    304 -0.290 44.945 -0.004  0.042 -0.332      -0.401       0.111 -0.600  0.131
+
+long / trail_bar  (Spearman meanR vs bucket order = -0.90)
+bucket     n  dates  meanR    win      t   ctrl   edge  ctrl_xname  edge_xname     h1     h2
+   0-1 17741   1450 -0.044 36.469 -1.991 -0.031 -0.012      -0.055       0.012 -0.087 -0.020
+     2 11595   1325 -0.017 37.594 -0.174 -0.009 -0.008      -0.064       0.047 -0.086  0.042
+     3  5218    985 -0.082 37.371 -0.509 -0.012 -0.069      -0.102       0.021 -0.144 -0.020
+     4  1976    561 -0.125 36.741 -2.198  0.022 -0.147      -0.157       0.032 -0.267  0.048
+    5+   910    304 -0.314 33.297 -0.559  0.008 -0.322      -0.388       0.074 -0.548  0.003
+
+
+################ per-variable split (trail_bar, all buckets pooled, post runs) ################
+
+short:
+      var  n_yes  R_yes   R_no   diff  t1R_yes  t1R_no
+ v1_accel   5853 -0.158 -0.159  0.002   -0.270  -0.282
+  v2_days   9010 -0.136 -0.168  0.032   -0.248  -0.292
+    v3_bb   1798 -0.093 -0.163  0.070   -0.217  -0.283
+   v5_vol    591 -0.037 -0.161  0.125   -0.172  -0.282
+  v6_legs  11345 -0.143 -0.168  0.024   -0.267  -0.286
+v7_nocons   4193 -0.156 -0.160  0.004   -0.246  -0.285
+v9_boring  19630 -0.182 -0.126 -0.056   -0.301  -0.248
+  v4 (earnings-covered names only: 241 names, 8466 trades):
+           stop_hold          t1R          t2R        trail_bar       
+                size   mean  size   mean  size   mean      size   mean
+fresh_news                                                            
+False           7602 -0.284  7602 -0.343  7602 -0.305      7602 -0.207
+True             864 -0.270   864 -0.299   864 -0.276       864 -0.259
+
+long:
+      var  n_yes  R_yes   R_no   diff  t1R_yes  t1R_no
+ v1_accel   6671 -0.080 -0.045 -0.035   -0.149  -0.114
+  v2_days   9697 -0.036 -0.057  0.022   -0.114  -0.122
+    v3_bb   1900 -0.126 -0.048 -0.078   -0.197  -0.116
+   v5_vol   1004 -0.194 -0.048 -0.146   -0.209  -0.118
+  v6_legs  15781 -0.065 -0.042 -0.024   -0.090  -0.142
+v7_nocons   6705 -0.185 -0.022 -0.162   -0.199  -0.103
+v9_boring  22561 -0.060 -0.039 -0.020   -0.135  -0.097
+  v4 (earnings-covered names only: 241 names, 8421 trades):
+           stop_hold          t1R          t2R        trail_bar       
+                size   mean  size   mean  size   mean      size   mean
+fresh_news                                                            
+False           7723  0.094  7723 -0.087  7723  0.001      7723 -0.001
+True             698  0.112   698 -0.034   698  0.056       698  0.053
