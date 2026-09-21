@@ -173,6 +173,7 @@ elsewhere or the strategy it served is dead). Rough cost in the last column.
 
 | test | what it would settle | status / where | cost |
 |---|---|---|---|
+| **Pre-earnings ramp on a 30–45 DTE tenor** — same trade as `run_earnings_ramp_test.py` but the back tenor instead of the front expiry | whether less theta beats a smaller ramp (term structure); the front-expiry version lost −3 to −14% at mid with theta > vega. The ramp analogue of the calendar back-leg test | QUEUED 2026-09-20, declined for now; one Athena pull, `earnings_ramp_2026-09-20.md` | 1 hr |
 | **Cameron's "80% chance of doubling the loss after breaching max loss"** on Gabe's journal: for sessions whose intraday P&L first crosses a fixed limit (−$500 / −$1,000 / 1% NAV), what share closes at ≤ 2× the breach, vs sessions that touch half the limit and recover | whether a hard-coded daily loss limit belongs in the desk routine | QUEUED (Breitstein test 1), memory `project_breitstein_test_queue` | ½ day |
 | **Margin expansion in the cost model** for short premium in high-IV regimes (`costs.py` has commission + 25% of bid/ask only) | whether the surviving put spreads / condors carry a hidden regime cost | QUEUED (Breitstein test 5), design note first | design note |
 | **Roster friction audit** — every confirmed strategy at 25% and 50% of bid/ask crossed, ranked by edge that survives (each leg ≈ −1.5pp) | which Tier A/B rows are mid-price mirages | deferred by Gabe 2026-08-08, [RESEARCH_QUEUE.md](RESEARCH_QUEUE.md) | ½ day |
