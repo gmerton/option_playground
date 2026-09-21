@@ -26,13 +26,15 @@ Usage: AWS_PROFILE=clarinut-gmerton PYTHONPATH=src:. .venv/bin/python3 run_earni
            > data/studies/earnings_calendar_2026-09-20.log
 """
 from __future__ import annotations
-import os, uuid, warnings
+import os, sys, uuid, warnings
 import numpy as np, pandas as pd, awswrangler as wr
 warnings.filterwarnings("ignore"); pd.set_option("display.width", 230)
 from lib.athena_lib import athena, _ensure_glue_db, _drop_temp_targets_table
 from lib.constants import DB, GLUE_CATALOG, S3TABLES_CATALOG, TABLE, TMP_S3_PREFIX
 
-ENTRY_CACHE, EXIT_CACHE = "data/cache/earn_cal_entry.parquet", "data/cache/earn_cal_exit.parquet"
+BACK = int(sys.argv[sys.argv.index("--back") + 1]) if "--back" in sys.argv else 0   # 0 = next expiry
+TAG = f"_b{BACK}" if BACK else ""
+ENTRY_CACHE, EXIT_CACHE = f"data/cache/earn_cal_entry{TAG}.parquet", f"data/cache/earn_cal_exit{TAG}.parquet"
 
 
 def tmp(df, dtype):
@@ -53,10 +55,18 @@ def main():
     T["expiry"] = pd.to_datetime(T.expiry)
     # back expiry = the next listed expiry after the front, from the term-structure pull
     exp = T[["row_id", "expiry"]].drop_duplicates().merge(d[["row_id", "front"]], on="row_id")
-    nxt = exp[exp.expiry > exp.front].groupby("row_id").expiry.min().rename("back")
+    cand = exp[exp.expiry > exp.front].copy()
+    if BACK:
+        # the further-out geometry oquants / tastylive use: nearest listed expiry to front + BACK days
+        cand["miss"] = ((cand.expiry - cand.front).dt.days - BACK).abs()
+        nxt = cand.loc[cand.groupby("row_id").miss.idxmin(), ["row_id", "expiry"]].set_index("row_id").expiry.rename("back")
+    else:
+        nxt = cand.groupby("row_id").expiry.min().rename("back")
     d = d.merge(nxt, on="row_id")
     d["gap_days"] = (d.back - d.front).dt.days
-    d = d[d.gap_days.between(3, 45)]
+    lo, hi = (max(BACK - 12, 3), BACK + 12) if BACK else (3, 45)
+    d = d[d.gap_days.between(lo, hi)]
+    print(f"back leg: {'nearest to front+%dd' % BACK if BACK else 'next expiry'}  (accepted gap {lo}-{hi}d)")
     print(f"{len(d):,} events with a usable back expiry | median front {d.front_dte.median():.0f} DTE, "
           f"back gap {d.gap_days.median():.0f}d")
 
@@ -120,7 +130,7 @@ def main():
                                  "real": 100 * (val_real - deb_real) / d.spot_raw,
                                  "debit": deb_mid, "ok": ok, "yr": d.pre_date.dt.year,
                                  "slope": d.ts_slope, "ivrv": d.iv30_rv30, "vol": d.avg_volume})
-    print("=" * 96); print("  EARNINGS CALENDAR — long the back, short the front (% of spot)"); print("=" * 96)
+    print("=" * 96); print(f"  EARNINGS CALENDAR — long the back, short the front (% of spot)  [back = {'+%dd' % BACK if BACK else 'next expiry'}]"); print("=" * 96)
     for lab, r in res.items():
         r = r[r.ok]
         print(f"\n  {lab}  (n {len(r):,}, median debit ${r.debit.median():.2f})")

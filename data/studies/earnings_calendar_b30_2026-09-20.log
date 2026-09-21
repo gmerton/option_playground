@@ -1,0 +1,36 @@
+back leg: nearest to front+30d  (accepted gap 18-42d)
+3,162 events with a usable back expiry | median front 2 DTE, back gap 28d
+  entry quotes 11,570 rows | exit marks 5,276 rows
+  fully quoted both legs at entry AND the back leg at front expiry: 2,612 events (282 names)
+
+================================================================================================
+  EARNINGS CALENDAR — long the back, short the front (% of spot)  [back = +30d]
+================================================================================================
+
+  call calendar  (n 2,592, median debit $1.17)
+    MID pricing          mean  +0.149%  median  +0.031%  win  51.0%  worst   -7.59%
+    paying the spread    mean  -1.199%  median  -0.814%  win  27.3%  worst  -31.07%
+    by year (real): {2019: -0.67, 2020: -1.34, 2021: -1.13, 2022: -1.27, 2023: -0.85, 2024: -1.24, 2025: -1.46, 2026: -2.22}  negative years 8/8
+
+  put calendar  (n 2,602, median debit $1.15)
+    MID pricing          mean  +0.296%  median  +0.145%  win  54.8%  worst  -10.55%
+    paying the spread    mean  -1.155%  median  -0.751%  win  30.3%  worst  -35.92%
+    by year (real): {2019: -0.68, 2020: -1.18, 2021: -1.04, 2022: -1.2, 2023: -0.75, 2024: -1.29, 2025: -1.44, 2026: -2.41}  negative years 8/8
+
+  DOUBLE calendar  (n 2,604, median debit $2.30)
+    MID pricing          mean  +0.466%  median  +0.239%  win  53.6%  worst  -12.19%
+    paying the spread    mean  -2.358%  median  -1.565%  win  27.7%  worst  -66.99%
+    by year (real): {2019: -1.35, 2020: -2.47, 2021: -2.18, 2022: -2.55, 2023: -1.61, 2024: -2.5, 2025: -2.89, 2026: -4.63}  negative years 8/8
+
+================================================================================================
+  DOES ts_slope SORT THE CALENDAR? (the gate on its own vehicle)
+================================================================================================
+                                  n    MID   REAL
+slope                                            
+(-0.09230000000000001, -0.023]  521  0.759 -2.828
+(-0.023, -0.0144]               521  0.421 -2.442
+(-0.0144, -0.00947]             520  0.540 -2.121
+(-0.00947, -0.00574]            521  0.328 -1.693
+(-0.00574, 0.0363]              521  0.281 -2.706
+
+  gate ts_slope <= -0.00406: n 2,322 (89%)  MID +0.510  REAL -2.224   vs ungated MID +0.466  REAL -2.358
