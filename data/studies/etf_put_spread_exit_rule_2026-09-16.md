@@ -1,3 +1,5 @@
+> **⚠ 2026-09-20: `data/cache/etf_putspread_recon.parquet` is SUPERSEDED. Do not use it.** It is a stale early build (its take-50 cfg gives SPY −0.3%, not the +5.4% below). The canonical roster trades are `data/cache/rsi_putspread.parquet` (from `etf_condor_recon.parquet` via `run_rsi_conditioning_study.py`; +5.68%/trade, n 6,739). A committed rebuild script is queued (TEST_INDEX §10).
+
 > **⚠ ERRATUM 2026-09-16 (same day): the +6.92% headline is overstated.** The condor study
 > (`etf_condor_call_side_2026-09-16.md` §0) found that 2.4% of credit-spread wings carry returns
 > above the theoretical ceiling `credit/margin` — i.e. a negative exit value, which is a crossed or
