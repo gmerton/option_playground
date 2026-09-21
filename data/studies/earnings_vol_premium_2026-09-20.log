@@ -1,0 +1,66 @@
+11,896 earnings events with a pre-print close, 455 names
+  pulled 119,754 rows -> data/cache/earnings_vol_chains.parquet
+  ATM straddle priced on 4,477 events (38% coverage)
+
+================================================================================================
+  IS EARNINGS VOL OVERPRICED? (ATM straddle, front expiry after the print)
+================================================================================================
+  events 4,477 | names 392 | median DTE 3
+  implied move   median  6.70%   mean  7.92%
+  realised |move| to expiry   median  5.08%   mean  7.19%
+  realised |move| on the day  median  4.17%   mean  6.02%
+
+  SHORT-STRADDLE premium (cost - payoff), % of spot, MID pricing:
+     mean +0.601%   median +1.315%   win 61.0%
+
+  by year:
+          size   mean
+pre_date             
+2019       530  0.131
+2020       538  1.077
+2021       531  0.535
+2022       581  0.397
+2023       629  0.636
+2024       746  0.282
+2025       764  0.902
+2026       158  1.455
+
+================================================================================================
+  DOES IT SORT? (selectivity — the 'not blindly' part)
+================================================================================================
+
+--- implied move size ---
+                             size   mean
+implied_pct                             
+(1.3130000000000002, 4.301]   896 -0.042
+(4.301, 5.765]                895  0.120
+(5.765, 7.853]                895  0.370
+(7.853, 11.06]                895  0.859
+(11.06, 83.193]               896  1.700
+
+--- DTE to expiry ---
+              size   mean
+dte                      
+(0.999, 2.0]  1698  0.485
+(2.0, 3.0]     790  0.804
+(3.0, 4.0]     457  0.263
+(4.0, 9.0]     940  0.331
+(9.0, 11.0]    592  1.355
+
+--- spot price (size proxy) ---
+                   size   mean
+spot_raw                      
+(1.024, 24.45]      896  1.137
+(24.45, 46.08]      895  0.850
+(46.08, 81.625]     896  0.779
+(81.625, 169.94]    894 -0.048
+(169.94, 5620.85]   896  0.289
+
+--- past surprise% ---
+                     size   mean
+surprise_pct                    
+(-11277.251, -3.48]   894  1.035
+(-3.48, 3.704]        891  0.451
+(3.704, 10.426]       892  0.855
+(10.426, 27.536]      892  0.311
+(27.536, 18281.82]    893  0.334
