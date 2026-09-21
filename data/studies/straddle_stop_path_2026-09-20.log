@@ -1,0 +1,24 @@
+  45,388 -> 44,500 after sentinel + $0.5 min-cost
+arm 4: 4,573 trades, folds 2021-2025
+  pulled 43,203 leg-days -> data/cache/straddle_stop_paths.parquet
+  4,572 of 4,573 trades have both legs marked on >=1 day (100.0%)
+
+============================================================================================
+  THE -50% STOP: ASSUMPTION vs PATH
+============================================================================================
+  no stop, mid entry                         +8.77%
+  CLIP assumption max(roc,-50), mid entry   +15.46%   <- the published +15.46%
+  PATH: mid entry / sell at mid              +8.86%   stopped 33.1%  median exit -60.0%  mean exit -64.9%
+  PATH: mid entry / sell the bid             +4.80%   stopped 41.8%  median exit -59.7%  mean exit -64.3%
+  PATH: filled entry / sell the bid          +2.89%   stopped 42.7%  median exit -59.6%  mean exit -64.0%
+
+  per fold (filled entry / sell the bid):
+    2021    +2.47%   n 1,156
+    2022    +4.48%   n 296
+    2023    +5.69%   n 1,369
+    2024    +1.42%   n 1,033
+    2025    -0.32%   n 719
+
+  the clip overstates by +12.57pp vs the honest path (entry filled, exit crossing the spread)
+  ⚠ marks are DAILY closes; a real intraday stop triggers more often and worse, so this
+     is still an upper bound on the stop's value.
