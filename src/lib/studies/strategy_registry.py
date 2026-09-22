@@ -400,6 +400,25 @@ ALL_STRATEGIES: list[Strategy] = [
             "Size at 2–3% max until longer track record accumulates",
         ],
     ),
+    # 2026-09-22 (data/studies/multiple_testing_correction_2026-09-22.md, run_tierab_significance.py): the only
+    # regime cells that survive the ledger-wide correction are the bearish-high-IV index put sales -- SPY bull put
+    # 0.25/0.15 (t 6.07) and SPX condor 0.20c/0.30p (t 5.21); QQQ's same-regime cell (t 3.53) is the same trade.
+    # They fire in the same stress episodes, so they share ONE allocation instead of one each.
+    Strategy(
+        name="Index stress bucket",
+        # per-year mean net ROC of the three bearish-high-IV cells combined, 2018-2026 (224 trades)
+        per_year_roc=[2.29, 2.13, 7.02, 7.78, 8.54, 11.73, 7.86, 7.71, 7.85],
+        avg_trade_roc=7.53,
+        win_rate=88.8,
+        avg_concurrent=2,
+        freq_per_year=28,
+        note="Below 50MA + VIX>=20: SPY bull put 0.25/0.15 / SPX condor 0.20c/0.30p / QQQ bull put 0.25/0.15 -- ONE position.",
+        portfolio_alloc=3_000,
+        caveats=[
+            "SPY and SPX certified (t 6.1 / 5.2); QQQ same trade but uncertified alone -- prefer SPY/SPX legs",
+            "~43% of trades fall in one stress year -- episodic, not a steady earner",
+        ],
+    ),
 ]
 
 STRATEGY_MAP: dict[str, Strategy] = {s.name: s for s in ALL_STRATEGIES}

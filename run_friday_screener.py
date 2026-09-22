@@ -374,19 +374,30 @@ REGIME_TIER_MAP: dict[str, dict[str, str]] = {
         "Bearish_HighIV": "B", "Bearish_LowIV": "C",
         "Bullish_HighIV": "C", "Bullish_LowIV": "C",
     },
+    # 2026-09-22 ledger-wide correction (data/studies/multiple_testing_correction_2026-09-22.md):
+    #   S = the certified index stress bucket (one shared allocation), U = uncertified -> skip or 1 token contract
     "QQQ Regime-Optimized": {
-        "Bearish_HighIV": "B", "Bearish_LowIV": "A",
-        "Bullish_HighIV": "A", "Bullish_LowIV": "B",
+        "Bearish_HighIV": "S", "Bearish_LowIV": "U",      # t 3.53 (same trade as SPY/SPX) / t 1.74
+        "Bullish_HighIV": "U", "Bullish_LowIV": "U",      # t 1.04 / t -0.87 month-weighted (no edge)
     },
     "XLE Regime-Gated": {
         "Bearish_HighIV": "A", "Bearish_LowIV": "C",
         "Bullish_HighIV": "C", "Bullish_LowIV": "C",
     },
     "SPY Regime-Switching": {
-        "Bearish_HighIV": "B", "Bearish_LowIV": "A",
-        "Bullish_HighIV": "B", "Bullish_LowIV": "C",
+        "Bearish_HighIV": "S", "Bearish_LowIV": "U",      # t 6.07 certified / long straddle, no t on file
+        "Bullish_HighIV": "U", "Bullish_LowIV": "C",      # no t on file / skip
     },
 }
+TIER_NOTE = {
+    "S": "certified stress bucket -- ONE position across SPY/SPX/QQQ",
+    "U": "UNCERTIFIED (2026-09-22) -- skip or 1 token contract",
+}
+STRESS_BUCKET = "Index stress bucket"
+
+
+def regime_tier(name: str, regime: Optional[str]) -> Optional[str]:
+    return REGIME_TIER_MAP.get(name, {}).get(regime) if regime else None
 
 
 # ── Pure helpers (no I/O) ─────────────────────────────────────────────────────
@@ -1607,11 +1618,15 @@ def _print_sizing(
             continue
         strat = strat_meta[name]
         akey  = strat.get("alloc_key", name)
+        tier  = regime_tier(name, result.get("active_regime"))
+        if tier == "S":
+            akey = STRESS_BUCKET          # SPY / QQQ bearish-high-IV share one allocation
         if akey not in entered:
             entered[akey] = {
                 "alloc_key":            akey,
                 "sub_names":            [name],
                 "max_loss_per_contract": result.get("max_loss_per_contract"),
+                "token":                tier == "U",
             }
         else:
             entered[akey]["sub_names"].append(name)
@@ -1662,7 +1677,9 @@ def _print_sizing(
         mlpc = info["max_loss_per_contract"]
 
         # Fixed allocation column (primary)
-        if reg and reg.portfolio_alloc > 0:
+        if info.get("token"):
+            alloc_str, risk_str, fixed_cts_str = "token", "—", "1*"
+        elif reg and reg.portfolio_alloc > 0:
             alloc_str       = f"${reg.portfolio_alloc:,}"
             risk_per_trade  = reg.risk_per_trade
             risk_str        = f"${risk_per_trade:,}"
@@ -1672,13 +1689,18 @@ def _print_sizing(
             else:
                 fixed_cts_str = "—"
             fixed_total += reg.portfolio_alloc
+            if akey == STRESS_BUCKET and len(info["sub_names"]) > 1:
+                fixed_cts_str += " total"   # split across the legs, not per leg
         else:
             alloc_str     = "—"
             risk_str      = "—"
             fixed_cts_str = "—"
 
         # Sharpe-weighted column (secondary)
-        if mlpc and mlpc > 0:
+        if info.get("token"):
+            mlpc_str   = f"${mlpc:.2f}" if mlpc else "undefined (naked)"
+            sh_cts_str = "—"               # no Sharpe sizing for an uncertified regime
+        elif mlpc and mlpc > 0:
             sh_cts     = int(sa / mlpc)
             mlpc_str   = f"${mlpc:.2f}"
             sh_cts_str = str(sh_cts)
@@ -1704,6 +1726,8 @@ def _print_sizing(
         "\n  Fixed model: contracts = (portfolio_alloc / avg_concurrent) / max_loss_per_contract"
         "\n  Sharpe-wtd: distributes 20% of portfolio across today's active strategies by Sharpe ratio"
         "\n  For UVXY combined: risk_per_trade = $2,500 (call spread leg); put runs same $"
+        "\n  Index stress bucket: SPY + QQQ (+ SPX condor) bearish-high-IV = ONE allocation; contracts are the TOTAL, prefer SPY/SPX"
+        "\n  1* = uncertified regime (2026-09-22 correction): skip, or 1 token contract at most"
         "\n  Always round down contracts; verify fills before sizing up"
     )
     print("═" * W + "\n")
@@ -2058,7 +2082,7 @@ async def run(today: date, capital: Optional[float] = None, risk_pct: float = 0.
                 tier = REGIME_TIER_MAP[name].get(active_regime, "?")
             else:
                 tier = TIER_MAP.get(name, "?")
-            tier_tag  = f"  [Tier {tier}]"
+            tier_tag  = f"  [Tier {tier}{' -- ' + TIER_NOTE[tier] if tier in TIER_NOTE else ''}]"
             date_tag  = f"  [{today}]" if result.get("enter") else ""
             print(f"  {verdict}   {name:<28}  {result['summary']}{exp_str}{fwd_tag}{tier_tag}{date_tag}")
         print(f"{BAR}\n")

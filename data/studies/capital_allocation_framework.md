@@ -2,6 +2,18 @@
 
 > **⚠ Read `audit_review_2026-09-16.md` first.** After the September audits the only strategies with a defensible edge are the 7-DTE long straddle and the bull put spread, and **neither clears a monthly t of 2 alone — the 50/50 pair does (t 2.5, correlation −0.25)**. All calendar structures are withdrawn (no edge on clean data) and their framework rows are void. Size the two survivors as paired sleeves, not as independent line items.
 
+> ## ⛔ CERTIFICATION STATUS — 2026-09-22 (supersedes the tiers below)
+> The ledger-wide multiple-testing correction (`multiple_testing_correction_2026-09-22.md`, `run_tierab_significance.py`)
+> computed a t for every regime cell, month-clustered and net of costs, charged for the delta × wing × stop sweep it came from.
+> **Certified — ONE shared allocation, the "Index stress bucket" ($3,000, contracts are the total across legs):**
+> below 50MA + VIX ≥ 20 → **SPY bull put 0.25/0.15 (t 6.07)** and **SPX condor 0.20c/0.30p (t 5.21)**; QQQ bull put 0.25/0.15
+> (t 3.53) is the same trade but uncertified alone — prefer the SPY/SPX legs. ~43% of these trades fall in one stress year.
+> **Uncertified → skip or 1 token contract:** QQQ bullish-low-IV (−4.8% month-weighted, t −0.87 — no edge), QQQ bullish-high-IV
+> (t 1.04), QQQ bearish-low-IV (t 1.74), SPX bullish-high-IV + 200MA condor (t 2.26, 51% in one year — the old Tier A),
+> SPY bullish-high-IV bull put and SPY bearish-low-IV straddle (no t on file).
+> The Friday screener prints these as `[Tier S]` / `[Tier U]` and sizes them accordingly (`run_friday_screener.py`,
+> `strategy_registry.py` "Index stress bucket"). The SPY double calendar still has no t on file.
+
 > ## ⚠ POST-COST STATUS — 2026-09-08 (read before using any table below)
 > The rankings below are **mid-fill, zero-commission** numbers. `data/studies/playbook_review_2026-09.md` Part 2 re-ran every
 > engine with a cost model ($0.65/leg + 25% of entry bid-ask per traded side). Result:
