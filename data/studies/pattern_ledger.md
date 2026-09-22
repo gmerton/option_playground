@@ -3,7 +3,7 @@
 _Every entry pattern tested with `lib.studies.pattern_test`, newest last._
 
 **Bar to pass:** beats the same-name random control, positive in both halves, |t| >= 3.
-**Multiple testing:** 68 patterns tested so far — at 5%% significance, expect ~3.4 to clear by chance. Discount accordingly.
+**Multiple testing:** 70 patterns tested so far — at 5% significance, expect ~3.5 to clear by chance. Discount accordingly.
 
 | tested | name | timeframe | n | best_arm | meanR | ctrl | edge | t | half1 | half2 | passed | note |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -75,3 +75,5 @@ _Every entry pattern tested with `lib.studies.pattern_test`, newest last._
 | 2026-09-21 | levels 2026-09-21: ORH HOLD | intraday | 7746 | vwap_flip | -0.077 | -0.058 | -0.02 | -6.802 | -0.058 | -0.098 | False | pre-registered level_trigger_test_2026-09-21.md |
 | 2026-09-22 | close-strength 2026-09-22: WEAK close | house day-low stop | daily | 8137 | t1R | -0.62 | -0.66 | 0.04 | -16.85 | -0.662 | -0.592 | False | pre-registered close-in-range test; house breakout, close entry; ctrl=post |
 | 2026-09-22 | close-strength 2026-09-22: STRONG close | house day-low stop | daily | 8556 | ema20 | -0.02 | 0.021 | -0.04 | 1.809 | -0.189 | 0.102 | False | pre-registered close-in-range test; house breakout, close entry; ctrl=post |
+| 2026-09-22 | DR-EP 2026-09-22: A catalyst-day close [post] | daily | 6815 | ema20 | -0.173 | -0.126 | -0.047 | -4.698 | -0.35 | -0.07 | False | pre-registered DR-EP; catalyst = gap>=3% & RVOL>=1.8; retrace = giveback then new high; ctrl=post |
+| 2026-09-22 | DR-EP 2026-09-22: B DR-EP catalyst+retrace [post] | daily | 2702 | ema20 | -0.067 | -0.007 | -0.061 | 0.211 | -0.193 | 0.012 | False | pre-registered DR-EP; catalyst = gap>=3% & RVOL>=1.8; retrace = giveback then new high; ctrl=post |

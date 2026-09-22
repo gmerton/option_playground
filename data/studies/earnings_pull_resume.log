@@ -1,0 +1,21 @@
+resume: 458 cached, 1,285 still to fetch
+pulling earnings history for 1,285 panel names (3 workers)...
+BF.B: No earnings dates found, symbol may be delisted
+BH.A: No earnings dates found, symbol may be delisted
+BRK.B: No earnings dates found, symbol may be delisted
+CCXI: No earnings dates found, symbol may be delisted
+CRML: No earnings dates found, symbol may be delisted
+  200/1,285  ok 194  fail 6  45s
+IWM: No earnings dates found, symbol may be delisted
+  400/1,285  ok 284  fail 116  137s
+JLHL: No earnings dates found, symbol may be delisted
+  600/1,285  ok 426  fail 174  207s
+  800/1,285  ok 582  fail 218  272s
+QQQ: No earnings dates found, symbol may be delisted
+  1,000/1,285  ok 671  fail 329  365s
+  1,200/1,285  ok 871  fail 329  410s
+
+89,068 earnings events | 1,336 tickers (104% of the panel) | failed 407
+  with surprise%: 86,600 (97%)
+  timing: {'BMO': 44968, 'AMC': 42709, 'midday': 1391}
+  dates 1998-09-30 -> 2027-02-19  ->  data/cache/earnings_yf.parquet
