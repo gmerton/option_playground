@@ -349,8 +349,8 @@ MAX_SPREAD_PCT = 0.25   # max (ask-bid)/mid on the short leg
 # ── Tier lookup tables ────────────────────────────────────────────────────────
 
 TIER_MAP: dict[str, str] = {
-    "UVXY Bear Call Spread":    "C",
-    "UVXY Short Put":           "C",
+    "UVXY Bear Call Spread":    "U",   # 2026-09-22: no t on file, naked put leg -> uncertified until tested
+    "UVXY Short Put":           "U",
     "UVIX Bear Call Spread":    "C",
     "TLT Bear Call Spread":     "C",
     "TMF Bear Call Spread":     "P",
@@ -1618,7 +1618,7 @@ def _print_sizing(
             continue
         strat = strat_meta[name]
         akey  = strat.get("alloc_key", name)
-        tier  = regime_tier(name, result.get("active_regime"))
+        tier  = regime_tier(name, result.get("active_regime")) or TIER_MAP.get(name)
         if tier == "S":
             akey = STRESS_BUCKET          # SPY / QQQ bearish-high-IV share one allocation
         if akey not in entered:
