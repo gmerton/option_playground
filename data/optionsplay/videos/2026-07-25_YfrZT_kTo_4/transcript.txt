@@ -1,0 +1,809 @@
+[00:00] $9 of potential risk for every single
+[00:03] trade. And this is really where this
+[00:06] trade starts to break down. 90% win rate
+[00:08] sounds very good, but this is really
+[00:10] what we call picking up pennies in front
+[00:13] of a a of a freight train. Because yes,
+[00:16] you'll win quite often, but the one
+[00:19] trade that you lose, you're going to
+[00:20] likely lose uh many times when you
+[00:23] actually go out to that 90% win rate
+[00:25] type credit spreads, you're actually
+[00:27] risking a lot more than just $9 for
+[00:29] every $1 you can potentially make. $9
+[00:32] for every $1 you can potentially make.
+[00:39] Okay, good afternoon.
+[00:42] And welcome back to our
+[00:45] Growth Lab series. This is week three of
+[00:49] our where your next trade comes from
+[00:51] Growth Lab series. My name is Tony
+[00:53] Zhang, I'm the chief strategist here at
+[00:55] OptionsPlay.
+[00:57] And we're going to be talking about one
+[00:58] of the most popular options strategies,
+[01:02] which are credit spreads.
+[01:04] And specifically, we're going to be
+[01:05] talking about how you can find the best
+[01:09] setups using credit spreads using the
+[01:11] tools that are available to you here at
+[01:14] OptionsPlay.
+[01:16] Now, like I said, this is the third week
+[01:19] in our Growth Lab series for the month
+[01:21] of July where we're
+[01:24] discussing different
+[01:26] various ways to generate ideas using the
+[01:29] OptionsPlay platform. And today we're
+[01:31] going to be covering the credit spread
+[01:33] opportunity report that are that is
+[01:35] inside your dashboard available at
+[01:38] dashboard.optionsplay.com.
+[01:41] Now, if you want access to the dashboard
+[01:43] and the tools that will be using during
+[01:46] today's session, that is all available
+[01:48] to you here at OptionsPlay. If you are a
+[01:50] brand new to OptionsPlay, you can sign
+[01:52] up for a free 14-day trial at the link
+[01:55] here on your screen, which I will post
+[01:58] here into the chat window.
+[02:00] Um or you can just point your phone to
+[02:02] the QR code uh to get access to that
+[02:05] 14-day free trial to see everything that
+[02:09] we're we'll be showing you during
+[02:11] today's session. That will include
+[02:13] access to the webinar, access to
+[02:15] previously recorded sessions, and the
+[02:18] slides for today's session.
+[02:21] So,
+[02:22] what we're going to cover it today is a
+[02:24] single option strategy that is arguably
+[02:27] one of the most popular option
+[02:29] strategies that is incredibly versatile
+[02:32] and adaptable to various market
+[02:36] outlooks, various market conditions,
+[02:38] which is a credit spread. So, uh what
+[02:42] I'll do is I'll start off by giving uh
+[02:44] just a high-level overview of a credit
+[02:46] spread if any of you are relatively new
+[02:49] to this specific strategy and why it's
+[02:52] such a flexible and ver- versatile
+[02:54] strategy for a lot of different use
+[02:56] cases, a lot of different market
+[02:58] outlooks. Um so, especially for those of
+[03:02] you that are relatively new to options
+[03:04] trading, it's a strategy that I highly
+[03:06] recommend
+[03:07] uh that you learn, especially if you're
+[03:10] just starting out with options, to get a
+[03:13] better sense of how to utilize these
+[03:15] strategies consistently because it's one
+[03:17] of those strategies that you can use in
+[03:19] almost all market conditions. You don't
+[03:22] necessarily have to have a strong
+[03:23] directional view on a specific stock or
+[03:26] ETF. It's something that you can
+[03:28] generally use in a lot of different
+[03:30] market conditions. So, when we talk
+[03:32] about a credit spread, number one is a
+[03:34] strategy that you can trade in either
+[03:36] direction. So,
+[03:38] regardless of whether you're new to
+[03:39] options,
+[03:41] uh
+[03:41] regardless of whether you have lots of
+[03:43] experience trading stocks or options,
+[03:47] whether you have a bullish or bearish
+[03:48] view on a specific stock or even
+[03:50] potentially a neutral view on a specific
+[03:52] stock, this is a type of strategy that
+[03:55] you can potentially use for all of those
+[03:58] directional
+[04:00] views. More importantly, as an as you
+[04:04] know, as an option strategy, it's one
+[04:06] with defined risk.
+[04:08] There's lots of different option
+[04:10] strategies that you can trade. Some of
+[04:12] them have substantially more risk than
+[04:15] others, but this is one where before you
+[04:18] get into every single trade, you know
+[04:20] exactly how much money you can
+[04:21] potentially make versus how much money
+[04:24] you can potentially lose. This way you
+[04:26] have full control over how much you are
+[04:29] control how much risk that you're
+[04:31] taking. So, if you ever find yourself in
+[04:33] a position where you quote-unquote lost
+[04:36] too much on that last trade, this is
+[04:39] something that you have full control
+[04:41] over in the sense of the number of
+[04:43] contracts that you can trade because you
+[04:45] know exactly how much you can risk per
+[04:48] contract. Now,
+[04:50] what I find most interesting about this
+[04:52] specific strategy and why it's most
+[04:54] versatile is especially for beginners
+[04:57] when it comes to options trading because
+[05:00] picking a direction and a magnitude is
+[05:03] what a beginner options traders many
+[05:05] times struggle with. But this is really
+[05:08] where
+[05:09] not only does two out of the three
+[05:12] potential positions or directions that a
+[05:15] stock can move is going to be beneficial
+[05:18] to you because
+[05:19] once you get into a trade, the stock can
+[05:21] move higher, it can move lower, or it
+[05:23] can move sideways. And in two out of
+[05:27] those three scenarios, a credit spread
+[05:29] will be profitable. And not only will it
+[05:31] be profitable, it is likely going to be
+[05:35] will provide you full profits in two out
+[05:38] of the three possible scenarios. So,
+[05:40] especially for beginners where you are
+[05:42] not used to picking, you know, not only
+[05:44] a direction and potentially a magnitude,
+[05:47] this is really helpful as a starting
+[05:49] point, as a strategy that allows you to
+[05:52] take a mild directional view and still
+[05:54] potentially be profitable using this
+[05:56] type of strategy. And lastly, this is
+[05:59] the option structure where time works in
+[06:02] your favor.
+[06:04] You might be new to options, you might
+[06:06] have experience trading options, but you
+[06:07] probably even at the at a as a at a
+[06:10] beginner level have learned that if you
+[06:13] buy a call or buy a put option, time
+[06:16] works against you. Time is always you're
+[06:18] always up against the clock. In this
+[06:21] particular case, you're doing the exact
+[06:22] opposite. You're essentially the
+[06:24] strategy driver of a credit spread is
+[06:26] you're selling a call or put and this is
+[06:29] really where time is working in your
+[06:31] favor. So, each day that passes,
+[06:33] especially if the stock is not moving in
+[06:35] the wrong direction, is going to be a
+[06:38] day that's going to be relatively
+[06:39] favorable for this particular strategy.
+[06:42] So, it's incredibly versatile. It's an
+[06:45] instruction it's an it's incredibly
+[06:48] flexible, which is why it's suitable for
+[06:51] almost all options investors, especially
+[06:54] if you are relatively new to trading
+[06:56] options.
+[06:58] So, what I'm going to do is I'm going to
+[07:00] walk you through just at the very high
+[07:02] level the structure of a credit spread.
+[07:05] Many of you that are subscribers here at
+[07:08] Options Play, you are probably quite
+[07:10] familiar with credit spreads, but for
+[07:13] those of you that are relatively new,
+[07:15] just a quick walk through of some of the
+[07:16] more important um
+[07:20] uh
+[07:21] things to understand from a construction
+[07:23] perspective. Essentially, what you're
+[07:25] doing is you are selling a option and
+[07:28] then buying back another option against
+[07:31] it. So, in this particular case, let's
+[07:32] say I have a $100 stock.
+[07:34] What you're going to do is you're going
+[07:35] to Whoops. What you're going to do is
+[07:37] you're going to sell a $100 put option
+[07:40] and [clears throat] then buy a $95 put
+[07:42] option against that. And what this
+[07:45] allows you to do is profit in like like
+[07:48] I said two out of three possible
+[07:50] scenarios. If the stock is currently at
+[07:53] $100 between now and the expiration
+[07:56] date, the stock can either move up, it
+[07:58] can either move sideways meaning it just
+[07:59] stays put, or it can move lower. And in
+[08:04] the scenario where the stock moves in
+[08:06] the direction you expect it to if this
+[08:08] is a bull put spread, if the stock
+[08:10] rises, you keep the full credit. Now,
+[08:13] what's really interesting about this
+[08:14] type of strategy is that if the stock
+[08:16] doesn't move and it just stays at 100
+[08:19] between now and the expiration date, you
+[08:21] still keep the full credit. Only if the
+[08:24] stock were to break below your strike
+[08:27] price, the lower strike price do you
+[08:29] experience a loss on the specific
+[08:31] strategy. And what's even interesting is
+[08:33] that the stock can actually move against
+[08:35] you, but as if the stock stays above the
+[08:38] break even price of $98. Let's say at
+[08:41] expiration the stock is at $99. So, you
+[08:44] think the stock's going to go up, it's
+[08:45] currently at 100, but it drifts down to
+[08:47] $99. Even in that scenario, you're still
+[08:50] going to be profitable. So, it's a
+[08:53] strategy where
+[08:55] you're not necessarily predicting where
+[08:57] the stock is going to go. What you're
+[08:59] doing is you're ruling out one
+[09:01] direction. So, stock's at 100, you're
+[09:04] essentially saying I don't think it's
+[09:05] going to move much lower from here.
+[09:07] That's all you need in order to sell a
+[09:09] credit spread. Does that make sense
+[09:11] everyone? Please type one into the chat
+[09:13] window if that makes sense to you.
+[09:24] Perfect. And the goal here is that once
+[09:27] you sell a credit spread, you want to
+[09:30] for the stock to stay above the break
+[09:32] even price of the strategy. Now, one
+[09:35] other really important
+[09:38] I think concept to understand. Because
+[09:41] in a credit spread, you have two strike
+[09:43] prices. You're selling one put option,
+[09:45] you're buying another put option.
+[09:46] There's a concept of what we call the
+[09:49] width, which is the distance between the
+[09:51] two strike prices. If you're selling the
+[09:53] 100 and you're buying the 95, the
+[09:55] distance between those two strike prices
+[09:57] is $5.
+[09:59] Now, what you collect in terms of
+[10:01] income, the rest of that that width is
+[10:04] going to be your total risk. So, in this
+[10:07] $5 wide credit spread, because I'm
+[10:09] collecting $2, because every single
+[10:12] contract represents 100 shares, I'm
+[10:15] going to collect a total of $200 in
+[10:17] potential profits on this particular
+[10:20] trade. Because the width is $5 and I've
+[10:23] collected two, that must mean that my
+[10:26] total risk is going to be 300. So,
+[10:29] there's a relationship between how much
+[10:31] money you can potentially make versus
+[10:33] how much of money you can potentially
+[10:35] lose. And it's defined by the width of
+[10:38] the strategy. And this is going to be
+[10:41] really important to understand as we go
+[10:43] along in the session, because what we're
+[10:47] really looking for when we're selling
+[10:48] credit spreads is to find credit spreads
+[10:51] where the risk reward is as favorable in
+[10:54] our in our
+[10:57] in our favor as possible as possible
+[11:00] given on where the options prices are.
+[11:03] We can't control the options prices, but
+[11:06] we can look at strategies where the risk
+[11:09] reward is most favorable for us. And
+[11:13] that's really the crux of what we want
+[11:15] to spend our time today exploring,
+[11:18] because
+[11:20] the success of an option strategy, the
+[11:23] the probability of success, the
+[11:26] probability of profit, it all comes down
+[11:29] to this relationship between risk to
+[11:32] reward. Now, many of you that have
+[11:35] traded credit spreads, you might have
+[11:38] found that there are certain types of
+[11:40] credit spreads that have very high win
+[11:43] rates.
+[11:44] 70, 80, even 90. We've We've even hear
+[11:48] of
+[11:48] of traders selling credit spreads that
+[11:50] have 95% win rates. Doesn't that sound
+[11:54] amazing if you could win 95% of the
+[11:56] time? Well, that's really where the
+[11:59] trade-off here is something that we have
+[12:02] to understand because
+[12:05] the benefits of what we discussed with
+[12:08] the credit spreads, the flexibility, the
+[12:10] versatility that this strategy provides,
+[12:13] the fact that you don't have to have a
+[12:15] directional view, you're essentially
+[12:16] just ruling out one directional view,
+[12:19] there's one trade-off for all of that,
+[12:21] which is the fact that you're going to
+[12:23] risk more than what you can potentially
+[12:25] make on this specific strategy. So, it's
+[12:28] a very key defining
+[12:31] aspect of this particular trade that we
+[12:33] have to respect, that we have to
+[12:36] understand, that we have to
+[12:39] um ensure that it doesn't break our
+[12:42] um overall profitability because
+[12:46] you're going to find in a lot of
+[12:47] different types of credit spreads,
+[12:49] right? Um I I would say probably the
+[12:52] most
+[12:53] typical credit spread is where you're
+[12:55] risking $2 for every $1 in potential
+[12:59] reward.
+[13:00] Um however, we tend to find that a lot
+[13:03] of people find those higher probability
+[13:06] of success strategies to be incredibly
+[13:08] attractive. Why wouldn't I want to sell
+[13:10] something that has 75% win rate versus
+[13:13] 60% win rate or 80% win rate or 90% win
+[13:17] rate, right? Um you know, a lot of
+[13:19] people fall to this fallacy of if I just
+[13:22] have a higher win rates, I'm going to be
+[13:24] more profitable in the long run. But,
+[13:26] the one thing that we don't tend to
+[13:31] understand so well, which is something
+[13:33] this is a theme that we have across the
+[13:35] board as investors, is exponential
+[13:38] growth. Exponential growth is something
+[13:40] that humans have a tough time grasping
+[13:43] how things ramp up so quickly because
+[13:46] when you search for strategies that have
+[13:48] roughly 67% win rate, you're going to,
+[13:51] you know, just from a from a
+[13:54] um an efficient market perspective,
+[13:56] you're generally going to find credit
+[13:58] spreads that have about a two to one
+[14:00] risk reward ratio.
+[14:02] However, if let's say you start moving
+[14:03] up the chain, you start looking for
+[14:05] credit spreads that are out of the
+[14:06] money, that have 75, 80, 90% win rates,
+[14:10] what happens is that when you go from
+[14:12] let's say 67 to 75% win rates, instead
+[14:15] of risking $2 for every $1 you can
+[14:18] potentially make, you're now risking
+[14:19] roughly $3 for every $1 you can
+[14:22] potentially make. Now, that doesn't seem
+[14:24] like a huge jump from going from 67 to
+[14:28] 75. But what happens if you go from 75
+[14:31] to 83? You know, from an efficient
+[14:34] market perspective, you're now risking
+[14:36] from $2 for every $1 you can potentially
+[14:39] make, you're now risking $5 for every $1
+[14:42] you can potentially make. So going up by
+[14:45] less than 20% win rate, you are risking
+[14:48] more than double in terms of what you
+[14:50] can potentially make. And if you do move
+[14:53] this to the extreme, where you go from
+[14:54] 67 to 90, right? Which certainly is a
+[14:57] big jump in terms of win rates, you are
+[15:01] going from $2 of potential risk out to
+[15:04] roughly $9 of potential risk for every
+[15:08] single trade. And this is really where
+[15:11] this trade starts to break down. 90% win
+[15:14] rate sounds very good, but this is
+[15:15] really what we call picking up pennies
+[15:18] in front of a a freight of a freight
+[15:20] train because yes, you'll win quite
+[15:23] often, but the one trade that you lose,
+[15:25] you're going to likely lose
+[15:27] uh many times when you actually go out
+[15:29] to the 90% win rate type credit spread.
+[15:32] You're actually risking a lot more than
+[15:33] just $9 for every $1 you can potentially
+[15:36] make. $9 for every $1 you potentially
+[15:38] make assumes a more assumes a a
+[15:43] an efficient market and
+[15:46] many times at these edges, you tend to
+[15:48] find those markets are not particularly
+[15:50] efficient. The fills you're going to get
+[15:52] at those really far out of the money put
+[15:54] options are just not going to be
+[15:56] particularly good and you'll be risking
+[15:58] not just $9 for every $1 you can
+[16:00] potentially make. You might be risking
+[16:02] 10, 12, 15 dollars for every $1 you can
+[16:05] potentially make. So yes, you're making
+[16:07] a dollar every single week, every single
+[16:09] month, but you know, you just need one
+[16:11] bad month where you're giving away 15
+[16:13] bucks,
+[16:14] uh you know, on one trade. So this is
+[16:17] really where from our perspective,
+[16:19] whenever you are looking at credit
+[16:21] spreads, the minimum
+[16:24] uh
+[16:25] risk reward ratio that we look for is
+[16:28] two to one.
+[16:29] Anything worse than two to one, we find
+[16:32] is going to be tough to be profitable in
+[16:34] the long run. Because if you're taking
+[16:36] on trades that have a three to one risk
+[16:38] reward ratio, you need to be right 75%
+[16:42] of your trades just to break even.
+[16:44] That's a tough
+[16:46] bar to clear on every single trade, you
+[16:50] know, throughout the year to be right
+[16:51] 75% of the time just to break even,
+[16:54] which means that you have to be right
+[16:56] more than 75% of the time to be
+[16:58] profitable. That's incredibly hard to
+[17:00] do, which is why when we look at credit
+[17:03] spreads, we generally will try to risk
+[17:05] no more than two to one risk reward
+[17:08] ratio, but in reality, what we're able
+[17:10] to do is find a lot of trades that are
+[17:12] actually much closer to a one and a half
+[17:16] dollar of risk for every one dollar you
+[17:18] can potentially make, which means that
+[17:20] you only have to be right roughly 60% of
+[17:23] the time to break even. That's a much
+[17:25] lower bar, much more realistic
+[17:29] win rate to shoot for in order to be a
+[17:32] profitable trader. Does that make sense
+[17:35] everyone? Please type two into the chat
+[17:37] window if that makes sense to you.
+[17:41] Now, here's the thing. What I'm talking
+[17:42] about here right now is all fairly
+[17:45] theoretical. It's based on
+[17:48] you know, theoretical risk reward and
+[17:50] win rates, but I think what we really
+[17:52] need to look at is some real world
+[17:54] examples to help bring this home and
+[17:56] help make this concrete for especially
+[17:59] for those of you if you're not familiar
+[18:02] yet with selling credit spreads. So,
+[18:05] this is really where we have built our
+[18:08] credit spread opportunity report. You
+[18:10] can see it live in our dashboard. So, if
+[18:13] you go to dashboard.optionsplay.com,
+[18:15] you have this rates explore reports
+[18:17] explorer and the first one is going to
+[18:19] be the credit spread report. Again, this
+[18:21] is available to you at
+[18:22] dashboard.optionsplay.com.
+[18:25] If you have a options play account
+[18:27] whether you have a free trial or a paid
+[18:29] subscription, you can go to a
+[18:31] dashboard.optionsplay.com
+[18:33] once you're logged into options play and
+[18:35] that will get you access to the the
+[18:39] credit spread opportunity report. That's
+[18:40] what we're going to discuss during
+[18:42] today's session, okay? Now, if you look
+[18:45] at this report,
+[18:47] this is really where we are scanning the
+[18:49] entire universe of stocks for you and
+[18:54] and it gives you
+[18:56] the highest yielding opportunities
+[18:59] ranked from top to bottom. So, what
+[19:01] we're really looking at, what we're
+[19:02] ranking it by is this premium to width.
+[19:06] How much premium are we collecting
+[19:08] versus how much what is the width of the
+[19:12] of the trade. And the higher that ratio,
+[19:15] the better the risk-reward in is in our
+[19:18] favor. We're going to go through some
+[19:19] calculations here in a second so you can
+[19:21] see, you know, what is the difference
+[19:23] between the top versus worst-performing
+[19:25] strategy in terms of risk-reward and
+[19:28] what type of win rates do you need in
+[19:30] order to be profitable. Essentially, the
+[19:32] ones at the top of the list require the
+[19:34] lowest win rates in order to be
+[19:37] profitable in the long run. So,
+[19:39] essentially, what we're saying is that
+[19:41] we're trying to help you find an edge
+[19:44] from an options pricing perspective,
+[19:46] which is arguably the hardest part to do
+[19:49] because you can't possibly screen
+[19:53] uh you know, a universe of hundreds of
+[19:55] stocks for which ones have the best
+[19:58] options pricing in real-time and compare
+[20:01] them across hundreds of symbols at once.
+[20:03] It's just not possible to do, which is
+[20:06] why we built this opportunity report.
+[20:08] However, if you just look at options
+[20:11] pricing alone, you know, that gives you
+[20:13] a relatively small edge in trading. What
+[20:17] we do is we take a look at
+[20:19] um the directional view first. We only
+[20:22] look for stocks that have signaled that
+[20:25] have generated a buy or sell signal
+[20:27] today. So, we're looking for stocks that
+[20:29] have a directional edge first looking at
+[20:32] the uh the signal as well as the
+[20:35] relative strength and um
+[20:38] and trends of the stock. That is what
+[20:40] the directional edge indicator provides
+[20:43] here at OptionsPlay.
+[20:44] Um and then when only when we find
+[20:46] stocks that have a directional signal, a
+[20:49] directional edge, and is liquid, meaning
+[20:53] we're not bothering to look for stocks
+[20:55] that are not liquid because what's the
+[20:56] point in finding a credit spread that
+[20:58] you can't get filled on, and then
+[21:00] lastly, we rank all of those
+[21:02] opportunities based on where you're
+[21:04] going to get the best edge from an
+[21:06] options trading perspective, options
+[21:08] pricing perspective. And that is what
+[21:11] the credit spread opportunity report
+[21:13] does. It essentially automates all of
+[21:16] the important things that you need to
+[21:18] look for in an ideal credit spread, puts
+[21:22] it into a report for you, and then ranks
+[21:24] it from best to worst. So, if you look
+[21:26] at the these stocks, if you see all of
+[21:29] these are bull put spreads, meaning
+[21:30] these are all stocks that have generated
+[21:33] a bullish strategy in Options Play.
+[21:37] Now, but however, not only are these
+[21:40] ones that have generated a bullish
+[21:41] signal here in Options Play, what we're
+[21:43] looking for is which one of these have
+[21:46] the best edge from an options trading
+[21:49] perspective, and that's what Palo Alto
+[21:51] does. Snow Snowflake, Datadog, SE, those
+[21:55] are the stocks that are going to provide
+[21:58] it it provides the
+[22:02] the the highest risk the best risk
+[22:04] reward from a trading perspective. So,
+[22:07] what you're doing here is you're not
+[22:09] just screening anymore. You're presented
+[22:11] with the best possible options
+[22:14] opportunities in your in your account at
+[22:17] one time. So, um
+[22:20] what I do what I want to do is I want to
+[22:22] walk you through this one by one. So,
+[22:24] um number one, we're looking for stocks
+[22:27] that have only generated a buy or sell
+[22:29] signal. Buy signals will generate a bull
+[22:32] put spread. Sell signals will generate a
+[22:35] bear call spread. So, there are two
+[22:37] types of credit spreads. We didn't go
+[22:39] over in our examples both, we only
+[22:41] looked at the bull put spread before in
+[22:43] our
+[22:45] in our platform I'm sorry, in our in our
+[22:48] example before, but you are you have
+[22:51] mirror images of each other. You have
+[22:53] bull put spreads for bullish credit
+[22:55] spreads, and you have the same, but
+[22:57] mirror images of each other depending on
+[22:59] your directional
+[23:02] view. So, in this list here that you see
+[23:06] here, they're all bull put spreads.
+[23:07] These are all stocks that have generated
+[23:09] a buy signal for today. If you scroll
+[23:11] further down the list, you will see some
+[23:13] sell signals that will generate that
+[23:16] bear call spread. Um
+[23:19] And again, a bull put spread is
+[23:20] essentially betting on the stock will
+[23:22] either rise or stay flat. And a bear
+[23:25] call spread is betting that the stock
+[23:27] will decline or stay flat. Um in all of
+[23:31] in two out of those three cases, this is
+[23:33] a strategy that will be profitable. So,
+[23:36] this is really why it's so flexible and
+[23:38] why so many traders love this,
+[23:40] especially beginners who are not
+[23:42] confident in their ability to um
+[23:46] choose a directional view, especially if
+[23:48] they feel that the stock's going to make
+[23:49] a big move on because if you buy a call
+[23:51] option, you need the stock to make a big
+[23:54] move in order to be profitable. Here,
+[23:57] you don't need that. It's much more
+[23:58] flexible, much more versatile strategy.
+[24:01] Okay? Then what we're looking for are
+[24:04] stocks that are liquid enough. So, there
+[24:06] could be 300 names that have generated a
+[24:09] a buy or sell signal.
+[24:11] You know, we we're going to find that
+[24:12] probably close to 80% of those, 85% of
+[24:16] those are not particularly liquid from
+[24:18] an options trading perspective. So, we
+[24:20] filter out 80, sometimes upwards of 90%
+[24:24] of the signals that have generated a a
+[24:27] buy or sell signal out of the uh
+[24:31] of the scans because if you can't trade
+[24:34] options on it, that's really where
+[24:36] you're going to see um
+[24:39] where you're just not going to have uh
+[24:41] you know, a good experience because if
+[24:43] you're not going to be able to uh
+[24:45] because you could have a great uh
+[24:47] security that you like from a
+[24:49] directional perspective, but if you
+[24:51] can't find a great option strategy that
+[24:53] you can get filled at, then what's the
+[24:55] the of all of that? So, scru- uh
+[24:57] filtering out by options liquidity is
+[24:59] one of the most important things that we
+[25:02] do here at OptionsPlay, okay? And then
+[25:05] lastly, once we have a directional view,
+[25:08] once we have uh filtered out from a
+[25:11] liquidity perspective, then what we do
+[25:13] is we set up a credit spread on all of
+[25:15] those remaining names and then rank it
+[25:18] from top to bottom, and that's what
+[25:19] you're seeing here on your screen. The
+[25:22] reason that Palo Alto Networks is at the
+[25:24] top list is because in a credit spread,
+[25:28] these are all uh you can call it
+[25:30] identable identical credit spreads,
+[25:32] meaning we're using the same methodology
+[25:35] to to construct these credit spreads. As
+[25:37] you can see, these are all 36 days to
+[25:39] expiration. They are using the same uh
+[25:42] methodology to construct the short
+[25:45] strike versus the long strike, and Palo
+[25:48] Alto gives me uh potentially nearly
+[25:51] $1,600 worth of risk for roughly $1,900
+[25:56] worth I'm sorry, $1,600 worth of
+[25:58] potential reward for roughly $1,900
+[26:01] of risk. If you do the math behind that,
+[26:03] that's risking only $1.21
+[26:06] for every $1 you can potentially make.
+[26:09] So, as we showed you before, you know,
+[26:11] most credit spreads will risk somewhere
+[26:13] between around $2 for every $1 you can
+[26:16] potentially make. Here, I'm only risking
+[26:18] $1.21
+[26:20] for every $1 you can potentially make,
+[26:22] which is why Palo Alto is at the top of
+[26:25] the list. So, these are all bullish
+[26:28] stocks. These are all stocks that have
+[26:29] generated a buy signal, but from a
+[26:32] credit spread perspective, Palo Alto's
+[26:35] going to give you by far the best risk
+[26:37] reward um that is also very liquid. Then
+[26:41] we move down to Lululemon. Lululemon,
+[26:44] one of the things as you can see, it you
+[26:46] know, it has from a directional
+[26:48] perspective um you know, a bearish tilt.
+[26:51] So, you know, for some of you that are
+[26:53] that want to trade with the direction of
+[26:55] the market or trend with the trend, that
+[26:58] might not be the best trade for you.
+[26:59] Lululemon is much more of a counter
+[27:01] trend trade. Essentially, the stock has
+[27:04] fallen so much, maybe it's due for a
+[27:07] bounce. And
+[27:09] you see that priced in the option right
+[27:11] now. If you sold a put credit spread
+[27:13] here on Lululemon, for every
+[27:16] you know, for nearly $400 of potential
+[27:18] reward, you're only risking $500, which
+[27:21] is a $1.33
+[27:24] in terms of actually Lululemon is
+[27:26] actually even a little better than that.
+[27:28] It's actually closer around $1.25.
+[27:31] Um
+[27:32] But I I
+[27:33] I took this out because it's got that
+[27:35] strong bear.
+[27:37] I took that out for an example. We
+[27:39] definitely use that
+[27:41] directional edge sometimes to help you
+[27:43] determine whether you're trading with
+[27:45] the trend or trading against the trend.
+[27:47] And
+[27:48] one is not better than the other. It's
+[27:50] just a completely different mindset of
+[27:52] how you're screening for ideas. You
+[27:55] know, trading with the trend is
+[27:56] something that most people are
+[27:57] comfortable with. Counter trend is not
+[27:59] something that everyone is is
+[28:01] comfortable with, but there are a lot of
+[28:03] counter trend traders out there that
+[28:05] love counter trend setups because that's
+[28:07] really where they feel that they have
+[28:08] the most edge. You know, they're looking
+[28:11] for stocks where everyone is bearish on.
+[28:13] They're looking for those bottom fishing
+[28:15] opportunities. So, Lululemon would fall
+[28:17] into that particular category. If you
+[28:19] look at Snow um Snowflake,
+[28:21] um for every
+[28:23] roughly $1,300 in potential reward,
+[28:26] you're risking $1,700.
+[28:28] That's a risk reward of about $1.33.
+[28:32] So, as you can see, even the worst one,
+[28:33] GE V, you know, this was if you look
+[28:36] kind of this was the bigger
+[28:39] uh list that we have here that I had,
+[28:42] you know, where you're risking $6,300
+[28:45] for $4,100 potential reward, your risk
+[28:48] reward is still only $1.53.
+[28:50] In this report, we do not show you any
+[28:53] credit spreads that have a risk reward
+[28:56] worse than two to one. So, you will not
+[28:59] find a credit spread where you're
+[29:00] risking $3 for every $1 you can
+[29:03] potentially make. You are only going to
+[29:05] find credit spreads where the worst risk
+[29:07] reward is you're risking $2 for every $1
+[29:10] you can potentially make. So, this
+[29:12] report essentially automates everything
+[29:14] that you're looking for, a directional
+[29:16] view, a from a liquidity perspective,
+[29:20] and finds credit spreads that have the
+[29:22] best yielding opportunities ranked from
+[29:25] top to bottom that is available to you
+[29:27] directly on the Options Play platform.
+[29:31] Does that make sense, everyone? Please
+[29:32] type three into the chat window if that
+[29:34] makes sense to you.
+[29:39] Perfect. So, we essentially built this
+[29:42] so that you don't have to go hunting for
+[29:45] ideas. You the ideas are already are
+[29:48] ready.
+[29:50] Uh we've already done all the scanning.
+[29:51] We've already done all the filtering. It
+[29:54] just gives you a list that you just now
+[29:56] have to choose from. And what you have
+[29:58] want to do is you want to choose from
+[29:59] the best possible scenarios all the way
+[30:02] to the way down.
+[30:04] Um and the ones at the top are going to
+[30:06] be the ones that have the best risk
+[30:08] reward ratio for you.
+[30:10] Now, I know there's a couple of comments
+[30:13] here. I'll address that here in 1 second
+[30:14] in terms of, you know, sort of right now
+[30:16] if you're looking at the dashboard, why
+[30:19] you can't sort by directional edge. I'll
+[30:21] address that here in 1 second.
+[30:23] Um but it's just just a quick overview
+[30:25] of what we discussed here today. What
+[30:27] we're essentially doing is we're
+[30:29] scanning the entire universe for stocks
+[30:31] that have generated a buy or sell signal
+[30:33] today that are liquid enough to where
+[30:36] you can get filled on both legs
+[30:38] essentially at the midpoint or very
+[30:39] close to the midpoint. And then what
+[30:41] we're doing is we're sorting it for you
+[30:43] where the ones with the best risk reward
+[30:46] are at the very top, and anything under
+[30:48] two to one gets thrown away. So, most
+[30:51] days you're going to see essentially a
+[30:52] few dozen stocks at most on those types
+[30:55] of strategies. You're not going to find
+[30:57] more
+[30:58] typically than a few dozens
+[31:00] ideas. So, we're really taking thousands
+[31:03] of an ideas down to just a handful that
+[31:06] you can view, and then in reality, you
+[31:08] know, if you look at the top 10, those
+[31:10] are really going to be the best
+[31:12] performing possible credit spreads, and
+[31:14] that's really where you want to spend
+[31:16] most of your time is in the top 10
+[31:19] within that credit spread opportunity
+[31:20] report because that's where you're going
+[31:22] to find the best yielding opportunities.
+[31:25] So,
+[31:26] with that, that covers what I wanted to
+[31:28] share with you here today. I hope that
+[31:30] this is helpful in giving you a better
+[31:32] understanding with regards to,
+[31:34] you know, what a credit spread is, why
+[31:36] you should be taking a look at it if
+[31:38] you're not already using credit spreads,
+[31:40] and more importantly, how Options Play
+[31:42] helps you surface the best possible
+[31:45] credit spread opportunities where you
+[31:46] have a directional edge, a
+[31:49] options pricing edge, and you're
+[31:52] filtering out all the stocks that are
+[31:53] not liquid from this report, and is
+[31:56] updated for you directly on your Options
+[31:59] Play dashboard.
+[32:01] If you're watching this as a recording,
+[32:03] just know that attending these education
+[32:05] sessions live and participating in the
+[32:08] Q&amp;A is reserved only for Options Play
+[32:11] members.
+[32:12] As a member, you'll get live access to
+[32:14] our weekly sessions and the ability to
+[32:17] ask questions in real time.
+[32:20] And with your membership, you'll receive
+[32:22] full access to the tools and research
+[32:24] you saw during today's session.
+[32:27] So, start your free 14-day trial at
+[32:29] optionsplay.com and join us live for the
+[32:32] next trading session.
+[33:34] &gt;&gt; Mhm.
