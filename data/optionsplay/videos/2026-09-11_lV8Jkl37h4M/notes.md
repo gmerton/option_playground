@@ -38,11 +38,16 @@ headline recommendations (express a directional view as a debit spread rather th
    sweep is the counterexample — *the spread, not the signal, decided 13 of 13 outcomes*, and it is the reason the
    screener's filler layer got retired.
 
-## Queued tests (cheap, from this video)
+## Tests run 2026-09-22 (both from this video)
 
-- **Skew percentile as a signal** (his 14:08 claim): build a 25-delta put-minus-call IV percentile on SPY from
-  `options_daily_v3` and test forward SPY returns / realised vol by percentile bucket, vs a VIX-level control.
-  One test, pre-registered; the GEX regime result is the benchmark to beat.
-- **IV rank as a vehicle chooser** (his 32:11 matrix): on single names, does entry IV rank sort the outcome of a
-  debit call spread vs a bull put spread at *real fills*? We have the panel, the quotes and the cost model; this is
-  the honest version of his cheat sheet.
+- **Skew as a signal (@14:08): NULL.** `run_skew_signal.py`, SPY 25-delta skew at ~30 DTE, 1,796 sessions.
+  Forward 21d Q5−Q1 +1.72% (NW t 1.44); 10d and 5d weaker; forward realised vol +8.2pp (t 2.06) but +15.7 / +1.0
+  across halves, and skew adds **nothing** beyond the VIX level in a joint regression (t 1.23 return / −1.22 vol,
+  vs vix_pct t +6.54). His "95th-percentile skew into FOMC" reading is interpretation, not signal.
+- **IV rank as a vehicle chooser (@32:11): NULL for his flip.** `run_ivrank_vehicle.py`, 4,742 paired entries on
+  18 liquid names at real fills. The flip has the right sign but t 0.68 (DiD +15.4pp bullish, halves +38.3 / +8.3).
+  Sideways finding: per dollar at risk the call debit spread beat the put credit spread in *every* IV-rank tercile
+  in this 2019–26 bull sample — which is not his rule either, and cuts against our own "calls are the worst
+  vehicle" note (that one was dollar-equalised, mid-priced, n 93).
+- ⚠ Both runs re-taught the same lesson: the first vehicle run printed −38% on bull puts because panel closes are
+  split-adjusted while v3 strikes are raw. Spot is now recovered from the chain (delta → d1 → S).
