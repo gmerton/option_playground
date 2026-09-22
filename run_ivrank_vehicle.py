@@ -35,8 +35,8 @@ from __future__ import annotations
 import os, warnings
 from math import sqrt
 import numpy as np, pandas as pd
-from scipy.stats import norm
 from lib.athena_lib import athena
+from lib.studies.chain_spot import spot_from_chain
 
 warnings.filterwarnings("ignore"); pd.set_option("display.width", 240)
 CACHE = "data/cache/ivrank_vehicle_chains.parquet"
@@ -74,12 +74,7 @@ def pick(g: pd.DataFrame, target: float) -> pd.Series | None:
 raw = pull()
 raw["trade_date"] = pd.to_datetime(raw.trade_date).dt.normalize()
 raw["expiry"] = pd.to_datetime(raw.expiry).dt.normalize()
-# raw spot implied by each leg (r=0): invert the delta for d1, then back out S from the strike
-_T = raw.dte.clip(lower=1) / 365.0
-_p = np.where(raw.cp == "C", raw.d.abs().clip(0.01, 0.99), (1 + raw.d).clip(0.01, 0.99))
-_d1 = norm.ppf(_p)
-raw["s_imp"] = raw.strike * np.exp(_d1 * raw.iv * np.sqrt(_T) - 0.5 * raw.iv ** 2 * _T)
-SPOT = raw.groupby(["ticker", "trade_date"]).s_imp.median()
+SPOT = spot_from_chain(raw, delta="d")   # RAW spot from the chain; see lib/studies/chain_spot.py
 panel = pd.read_parquet("data/cache/liquid_panel_2019.parquet"); panel["date"] = pd.to_datetime(panel.date)
 C = panel.pivot(index="date", columns="ticker", values="close").sort_index()
 s50 = C.rolling(50).mean()
