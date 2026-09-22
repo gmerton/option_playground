@@ -1,3 +1,6 @@
+> ## ⚠ NO t ON FILE — 2026-09-22. Same status as the IWM calendar.
+> The clean calendar path re-run found **no edge in any ETF calendar**; every other calendar in the book is retired. This one survived on pre-erratum numbers and has never been given a test statistic. Treat as unsupported until measured.
+
 > **2026-09-16, later:** SPY's regime gate is removed -- the condor enters in all four regimes (every cell positive in both halves). Bear_LoVIX and Bull_HiVIX were skipped under the old calendar rules only.
 
 > **2026-09-16:** the ETF structure is now the SAME-EXPIRY IRON CONDOR at the same strikes (0.35Δ shorts, ~2% wings, ~20 DTE, hold to expiry, size on width − credit): +31.8 / +41.4% on max risk vs the diagonal's +19.1 / +27.0% on paired entries, every ticker / regime / year. See `double_calendar_playbook.md` (step 11).
@@ -11,8 +14,6 @@
 
 # SPY Double Calendar Spread — Trading Playbook
 
-> ## ⚠ NO t ON FILE — 2026-09-22. Same status as the IWM calendar.
-> The clean calendar path re-run found **no edge in any ETF calendar**; every other calendar in the book is retired. This one survived on pre-erratum numbers and has never been given a test statistic. Treat as unsupported until measured.
 
 
 **Last updated:** 2026-06-26
