@@ -1,17 +1,17 @@
-group,claim,t,k,use,source,p,p_k,BH5_M131,BH10_M131,Holm_M131,BH5_M406,BH10_M406,Holm_M406,HLZ_t3,verdict
+group,claim,t,k,use,source,p,p_k,BH5_M133,BH10_M133,Holm_M133,BH5_M408,BH10_M408,Holm_M408,HLZ_t3,verdict
 book,"Straddle + bull put PAIR (50/50 blend, monthly)",2.5,3,in book,§0 pair; capital_allocation_framework,0.012419330651552268,0.03679718818791,False,False,False,False,False,False,False,NOT CERTIFIED
-book,"7-DTE straddle, both gates, after costs (hold)",3.7,8,in book,straddle_recenter_study (arms x DTE),0.0002155994669547765,0.0017234947690604185,True,True,False,True,True,False,True,CONFIRMED
+book,"7-DTE straddle, both gates, after costs (hold)",3.7,8,in book,straddle_recenter_study (arms x DTE),0.0002155994669547765,0.0017234947690604185,True,True,False,False,True,False,True,SUPPORTED
 book,Bull put spread leg alone (monthly),1.2,1,in book (pair leg),§0 pair,0.23013934044341644,0.23013934044341644,False,False,False,False,False,False,False,NOT CERTIFIED
 book,"Precision-tier breakout, close entry, cap 20 (date-clustered)",3.3,10,in book,precision_tier_control; tier picked in adhikary validation,0.0009668482847675552,0.009626525318785606,False,True,False,False,False,False,True,WEAK
 book,"  same, MONTH-weighted (2026-09-22)",-0.04,1,caveat,oneil pyramid run,0.9680931262943385,0.9680931262943385,False,False,False,False,False,False,False,NOT CERTIFIED
-book,"Size lever = exclusion (A+B only, +0.29R OOS)",,3,in book,size_lever_2026-09-18 (no t),,,False,False,False,False,False,False,False,NO t ON FILE
+book,"Size lever = exclusion (A+B minus C, OOS, month-clustered)",0.57,3,in book,missing_tstats,0.5686776980926482,0.9197572612777594,False,False,False,False,False,False,False,NOT CERTIFIED
 book,QQQ bull put Bearish_HighIV 0.25/0.15 (Tier A),3.53,54,in book,tierab_significance,0.0004155596669612429,0.022194873475074983,False,False,False,False,False,False,True,NOT CERTIFIED
 book,QQQ bull put Bullish_HighIV 0.45/0.35 2x stop (Tier B),1.04,54,in book,tierab_significance,0.2983399006619628,0.9999999950926599,False,False,False,False,False,False,False,NOT CERTIFIED
 book,QQQ bull put Bullish_LowIV 0.45/0.35 (Tier B),-0.87,54,in book,tierab_significance,0.3843004042073923,0.9999999999957742,False,False,False,False,False,False,False,NOT CERTIFIED
 book,SPY bull put Bearish_HighIV 0.25/0.15 (Tier B),6.07,54,in book,tierab_significance,1.279102500219326e-09,6.907153216051398e-08,True,True,True,True,True,True,True,CONFIRMED
 book,SPX condor Bullish_HighIV+200MA 0.20c/0.40p (Tier A),2.26,49,in book,tierab_significance,0.023821250837094136,0.6931415370651369,False,False,False,False,False,False,False,NOT CERTIFIED
 book,SPX condor Bearish_HighIV 0.20c/0.30p (Tier B),5.21,49,in book,tierab_significance,1.8884063144885917e-07,9.253149004795347e-06,True,True,True,True,True,True,True,CONFIRMED
-book,SPY double calendar / IWM put calendar (Tier B),,6,in book,calendar playbooks (no t),,,False,False,False,False,False,False,False,NO t ON FILE
+book,SPY double calendar / IWM put calendar (Tier B),,6,in book,no t; superseded by the clean path re-run = no edge on ETFs,,,False,False,False,False,False,False,False,NO t ON FILE
 index,SPY negative dealer gamma -> +8% realised vol beyond VIX,7.7,3,vol input,§7 GEX regime,1.3606623081547799e-14,4.0967229608668276e-14,True,True,True,True,True,True,True,CONFIRMED
 index,SPY 1-day SHORT straddle on positive-gamma days,5.6,2,-> fly paper trade,§2 gex_spy_straddle,2.143518051662178e-08,4.2870360594804424e-08,True,True,True,True,True,True,True,CONFIRMED
 index,SPY 1-day 2x iron fly on positive-gamma days,3.4,2,paper trading from 9/22,§2 iron fly,0.0006738585313537617,0.001347262977387187,True,True,False,True,True,False,True,CONFIRMED
@@ -26,9 +26,10 @@ parked,"Earnings vol premium, liquid names, at the bid",1.1,3,PARKED,§9 earning
 parked,Retrace entry vs breakout,0.48,6,PARKED,§9 retrace,0.6312273930324451,0.9974849193216041,False,False,False,False,False,False,False,NOT CERTIFIED
 parked,Gap-share selection sort (edge vs same-name control),1.71,9,PARKED,§5 gap share,0.0872658730480638,0.5603585807550118,False,False,False,False,False,False,False,NOT CERTIFIED
 parked,Event-convexity 0.12d over 0.25d at real fills,0.29,2,strike choice,§2 event convexity,0.7718162376022454,0.947932170578005,False,False,False,False,False,False,False,NOT CERTIFIED
-parked,Event convexity calls vs random dates,,4,lottery sizing,event_convexity (no t),,,False,False,False,False,False,False,False,NO t ON FILE
-parked,Sleeping Giants cheap LEAPs,,3,MARGINAL,(no t),,,False,False,False,False,False,False,False,NO t ON FILE
-parked,"Paid-to-wait put spreads, IV >= 60th pct gate",,4,MARGINAL,paid_to_wait (no t),,,False,False,False,False,False,False,False,NO t ON FILE
+parked,"Event convexity calls vs random dates (sell-5d, Welch)",1.96,8,lottery sizing,missing_tstats,0.04999579029644087,0.33655605000217126,False,False,False,False,False,False,False,NOT CERTIFIED
+parked,Sleeping Giants cheap LEAPs (best arm B),2.76,4,MARGINAL,missing_tstats,0.005780136152452295,0.02292085610673056,False,False,False,False,False,False,False,NOT CERTIFIED
+parked,Paid-to-wait IV gate: gated minus ungated,2.29,6,MARGINAL,missing_tstats,0.022021316648822772,0.12506390720346527,False,False,False,False,False,False,False,NOT CERTIFIED
+parked,Paid-to-wait IV gate: gated cohort alone,1.53,6,MARGINAL,missing_tstats,0.12601672892795687,0.5543245422084316,False,False,False,False,False,False,False,NOT CERTIFIED
 veto/mech,"Buy the CLOSE, not an intraday entry (paired)",3.4,4,house process,§4 entry study,0.0006738585313537617,0.0026927108372440944,True,True,False,False,True,False,True,SUPPORTED
 veto/mech,ORB9 stop floor 0.6 ADR,3.4,4,adopted,§5 ORB9 stop floor,0.0006738585313537617,0.0026927108372440944,True,True,False,False,True,False,True,SUPPORTED
 veto/mech,Alert-price entry worse than the close entry,3.2,2,alerts = info only,§5 alert funnel,0.0013742758758316944,0.002746663117480508,True,True,False,False,True,False,True,SUPPORTED
@@ -39,4 +40,4 @@ veto/mech,"Earnings calendar loses at every back leg (liquid, limit fill)",3.3,3
 veto/mech,Event call as a debit spread: 2nd leg friction,5.51,2,veto,§9 event spread,3.588336987169418e-08,7.176673832987035e-08,True,True,True,True,True,True,True,CONFIRMED
 veto/mech,Intraday alert arms lose (Stage A stop-close),4.3,5,no day-trading book,§5 Stage A,1.7079810941983592e-05,8.539613756042286e-05,True,True,True,True,True,True,True,CONFIRMED
 veto/mech,VWAP double-rejection short worse than random,6.2,2,veto,§5,5.646316074086535e-10,1.129263127452873e-09,True,True,True,True,True,True,True,CONFIRMED
-veto/mech,Straddle -50% stop is a cost (0/20 variants beat hold),,20,stop removed,stop_path/sweep (no single t),,,False,False,False,False,False,False,False,NO t ON FILE
+veto/mech,Straddle: no-stop minus the path stop,0.97,20,stop removed,"missing_tstats; the -3.84pp figure adds the exit crossing, not in this file",0.33204649212705917,0.99968744626051,False,False,False,False,False,False,False,NOT CERTIFIED

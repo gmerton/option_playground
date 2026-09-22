@@ -4,6 +4,8 @@ _2026-09-22 · `run_multiple_testing_correction.py` · data `multiple_testing_co
 
 ## Verdict
 
+> **Updated twice same day** — the six acted-on claims that had no statistic were computed (`run_missing_tstats.py`) and folded in at M 133/408: size lever t 0.57 (and it is the precision tier again, not a separate lever), event convexity t 1.96, paid-to-wait gate t 2.29, Sleeping Giants t 2.76, straddle stop-removal t 0.97 — **all NOT CERTIFIED**. Final tally: **13 CONFIRMED · 6 SUPPORTED · 1 WEAK · 21 NOT CERTIFIED · 1 NO t** (the SPY/IWM calendars).
+>
 > **Updated same day** — the Tier A/B regime playbooks now have a t (see the Update section at the end): 14 CONFIRMED · 5 SUPPORTED · 1 WEAK · 15 NOT CERTIFIED · 6 NO t. Only the bearish-high-IV SPY bull put and SPX condor certify; both Tier A labels and QQQ bullish-low-IV fail. The counts directly below are the first pass.
 
 **Of the 36 claims we act on, 11 are CONFIRMED, 5 SUPPORTED, 2 WEAK, 11 NOT CERTIFIED, and 7 have no test statistic

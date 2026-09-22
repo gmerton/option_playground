@@ -1,0 +1,17 @@
+claim,stat,t,n,units,note
+"size lever: A+B (= precision tier), OOS",-0.01,-0.05,1234,R/trade,
+"size lever: C (the excluded rest), OOS",-0.121,-0.83,3899,R/trade,
+"size lever: (A+B) - C, OOS",0.083,0.57,44,R/trade,what exclusion buys; the +0.29R claim was A+B vs the whole pool
+event calls sell_5d vs control (Welch),29.224,1.96,53,pp of premium,53 event vs 167 control dates
+event calls sell_10d vs control (Welch),25.556,1.5,53,pp of premium,53 event vs 167 control dates
+event calls hold_expiry vs control (Welch),9.662,0.47,53,pp of premium,53 event vs 167 control dates
+"paid-to-wait: gated (IV pct >= 60), net ROC",0.074,1.53,129,ROC,the +5.7% claim
+"paid-to-wait: ungated, net ROC",-0.097,-1.79,253,ROC,
+paid-to-wait: gated - ungated,0.16,2.29,37,ROC,months where both fire
+sleeping giants arm A,43.013,2.35,116,ROC %,
+sleeping giants arm B,93.972,2.76,81,ROC %,
+sleeping giants 2022plus,41.674,2.15,118,ROC %,
+sleeping giants pre2022_OOS,68.473,2.35,79,ROC %,
+"straddle: hold, net of costs",0.053,1.79,5886,%/trade,the in-book strategy
+straddle: no-stop minus path stop,0.004,0.97,5886,%/trade,the 'drop the stop' claim
+straddle: with the -50% path stop,0.049,1.67,5886,%/trade,

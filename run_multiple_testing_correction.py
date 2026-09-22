@@ -34,7 +34,9 @@ C = [
     ("book", "Bull put spread leg alone (monthly)", 1.2, 1, "in book (pair leg)", "§0 pair"),
     ("book", "Precision-tier breakout, close entry, cap 20 (date-clustered)", 3.3, 10, "in book", "precision_tier_control; tier picked in adhikary validation"),
     ("book", "  same, MONTH-weighted (2026-09-22)", -0.04, 1, "caveat", "oneil pyramid run"),
-    ("book", "Size lever = exclusion (A+B only, +0.29R OOS)", None, 3, "in book", "size_lever_2026-09-18 (no t)"),
+    # t computed 2026-09-22 (run_missing_tstats.py). NB A+B == the precision tier in that file, so this is the
+    # same selection as the breakout row, not an independent lever; the honest contrast is A+B minus C.
+    ("book", "Size lever = exclusion (A+B minus C, OOS, month-clustered)", 0.57, 3, "in book", "missing_tstats"),
     # Tier A/B regime playbooks: t computed 2026-09-22 (run_tierab_significance.py, month-clustered, net of costs);
     # k = the sweep each cell was picked from (QQQ/SPY 27 delta x wing combos x stop/no-stop = 54; SPX 7x7 = 49)
     ("book", "QQQ bull put Bearish_HighIV 0.25/0.15 (Tier A)", 3.53, 54, "in book", "tierab_significance"),
@@ -43,7 +45,7 @@ C = [
     ("book", "SPY bull put Bearish_HighIV 0.25/0.15 (Tier B)", 6.07, 54, "in book", "tierab_significance"),
     ("book", "SPX condor Bullish_HighIV+200MA 0.20c/0.40p (Tier A)", 2.26, 49, "in book", "tierab_significance"),
     ("book", "SPX condor Bearish_HighIV 0.20c/0.30p (Tier B)", 5.21, 49, "in book", "tierab_significance"),
-    ("book", "SPY double calendar / IWM put calendar (Tier B)", None, 6, "in book", "calendar playbooks (no t)"),
+    ("book", "SPY double calendar / IWM put calendar (Tier B)", None, 6, "in book", "no t; superseded by the clean path re-run = no edge on ETFs"),
     # --- index-option discoveries ---
     ("index", "SPY negative dealer gamma -> +8% realised vol beyond VIX", 7.7, 3, "vol input", "§7 GEX regime"),
     ("index", "SPY 1-day SHORT straddle on positive-gamma days", 5.6, 2, "-> fly paper trade", "§2 gex_spy_straddle"),
@@ -60,9 +62,10 @@ C = [
     ("parked", "Retrace entry vs breakout", 0.48, 6, "PARKED", "§9 retrace"),
     ("parked", "Gap-share selection sort (edge vs same-name control)", 1.71, 9, "PARKED", "§5 gap share"),
     ("parked", "Event-convexity 0.12d over 0.25d at real fills", 0.29, 2, "strike choice", "§2 event convexity"),
-    ("parked", "Event convexity calls vs random dates", None, 4, "lottery sizing", "event_convexity (no t)"),
-    ("parked", "Sleeping Giants cheap LEAPs", None, 3, "MARGINAL", "(no t)"),
-    ("parked", "Paid-to-wait put spreads, IV >= 60th pct gate", None, 4, "MARGINAL", "paid_to_wait (no t)"),
+    ("parked", "Event convexity calls vs random dates (sell-5d, Welch)", 1.96, 8, "lottery sizing", "missing_tstats"),
+    ("parked", "Sleeping Giants cheap LEAPs (best arm B)", 2.76, 4, "MARGINAL", "missing_tstats"),
+    ("parked", "Paid-to-wait IV gate: gated minus ungated", 2.29, 6, "MARGINAL", "missing_tstats"),
+    ("parked", "Paid-to-wait IV gate: gated cohort alone", 1.53, 6, "MARGINAL", "missing_tstats"),
     # --- adopted mechanics / vetoes (claims that CHANGE behaviour) ---
     ("veto/mech", "Buy the CLOSE, not an intraday entry (paired)", 3.4, 4, "house process", "§4 entry study"),
     ("veto/mech", "ORB9 stop floor 0.6 ADR", 3.4, 4, "adopted", "§5 ORB9 stop floor"),
@@ -74,7 +77,7 @@ C = [
     ("veto/mech", "Event call as a debit spread: 2nd leg friction", 5.51, 2, "veto", "§9 event spread"),
     ("veto/mech", "Intraday alert arms lose (Stage A stop-close)", 4.3, 5, "no day-trading book", "§5 Stage A"),
     ("veto/mech", "VWAP double-rejection short worse than random", 6.2, 2, "veto", "§5"),
-    ("veto/mech", "Straddle -50% stop is a cost (0/20 variants beat hold)", None, 20, "stop removed", "stop_path/sweep (no single t)"),
+    ("veto/mech", "Straddle: no-stop minus the path stop", 0.97, 20, "stop removed", "missing_tstats; the -3.84pp figure adds the exit crossing, not in this file"),
 ]
 D = pd.DataFrame(C, columns=["group", "claim", "t", "k", "use", "source"])
 D["p"] = D.t.map(lambda t: 2 * norm.sf(abs(t)) if t is not None and np.isfinite(t) else np.nan)
@@ -99,7 +102,7 @@ def holm_keep(pk: pd.Series, M: int, a: float = 0.05) -> pd.Series:
     return keep
 
 
-for M in (131, 406):   # +6: the Tier A/B row split into its 7 cells
+for M in (133, 408):   # +6 Tier A/B cells, +2 for the paid-to-wait split
     for q in (0.05, 0.10):
         D[f"BH{int(q*100)}_M{M}"] = bh_keep(D.p_k, M, q)
     D[f"Holm_M{M}"] = holm_keep(D.p_k, M)
@@ -108,9 +111,9 @@ D["HLZ_t3"] = D.t.map(lambda t: t is not None and np.isfinite(t) and abs(t) >= 3
 
 def verdict(r):
     if r.t is None or not np.isfinite(r.t): return "NO t ON FILE"
-    if r.BH5_M131 and r.BH5_M406: return "CONFIRMED"
-    if r.BH5_M131 or (r.BH10_M131 and r.BH10_M406): return "SUPPORTED"
-    if r.BH10_M131: return "WEAK"
+    if r.BH5_M133 and r.BH5_M408: return "CONFIRMED"
+    if r.BH5_M133 or (r.BH10_M133 and r.BH10_M408): return "SUPPORTED"
+    if r.BH10_M133: return "WEAK"
     return "NOT CERTIFIED"
 
 
@@ -119,18 +122,18 @@ D["verdict"] = D.apply(verdict, axis=1)
 def t_needed(M, q, k, rank):
     p = rank / M * q; p1 = 1 - (1 - p) ** (1 / k); return norm.isf(p1 / 2)
 pd.set_option("display.width", 250); pd.set_option("display.max_colwidth", 70)
-show = D[["group", "claim", "t", "k", "p_k", "BH5_M131", "BH10_M131", "BH5_M406", "Holm_M131", "HLZ_t3", "verdict"]]
+show = D[["group", "claim", "t", "k", "p_k", "BH5_M133", "BH10_M133", "BH5_M408", "Holm_M133", "HLZ_t3", "verdict"]]
 print(show.to_string(index=False, float_format=lambda x: f"{x:.2g}"))
-print("\nreference: Bonferroni-style t needed for ONE claim at k=1: M=131 ->", round(norm.isf(0.05 / 131 / 2), 2),
-      "; M=406 ->", round(norm.isf(0.05 / 406 / 2), 2))
+print("\nreference: Bonferroni-style t needed for ONE claim at k=1: M=133 ->", round(norm.isf(0.05 / 133 / 2), 2),
+      "; M=408 ->", round(norm.isf(0.05 / 408 / 2), 2))
 print(D.verdict.value_counts().to_string())
 
 # markdown write-up table
-lines = ["| group | claim | t | k | Šidák p | BH 5% M131 | BH 10% M131 | BH 5% M406 | Holm M131 | |t|≥3 | verdict | use |", "|---|---|---|---|---|---|---|---|---|---|---|---|"]
+lines = ["| group | claim | t | k | Šidák p | BH 5% M133 | BH 10% M133 | BH 5% M408 | Holm M133 | |t|≥3 | verdict | use |", "|---|---|---|---|---|---|---|---|---|---|---|---|"]
 yn = lambda b: "✓" if b else "·"
 for r in D.itertuples():
     tt = "—" if r.t is None or not np.isfinite(r.t) else f"{r.t:+.2f}"
     pk = "—" if not np.isfinite(r.p_k) else f"{r.p_k:.1e}"
-    lines.append(f"| {r.group} | {r.claim.strip()} | {tt} | {r.k} | {pk} | {yn(r.BH5_M131)} | {yn(r.BH10_M131)} | {yn(r.BH5_M406)} | {yn(r.Holm_M131)} | {yn(r.HLZ_t3)} | **{r.verdict}** | {r.use} |")
+    lines.append(f"| {r.group} | {r.claim.strip()} | {tt} | {r.k} | {pk} | {yn(r.BH5_M133)} | {yn(r.BH10_M133)} | {yn(r.BH5_M408)} | {yn(r.Holm_M133)} | {yn(r.HLZ_t3)} | **{r.verdict}** | {r.use} |")
 print("\n".join(lines))
 D.to_csv("data/studies/multiple_testing_correction_2026-09-22.csv", index=False)
