@@ -442,6 +442,7 @@ def main() -> None:
     parser.add_argument("--wing-delta", type=float, default=None,
                         help="Add protective wings at this delta, converting strangle to IC "
                              "(ROC denominator becomes wing_width - net_credit, matching spread framework)")
+    parser.add_argument("--dump", default=None, help="write the trade-level results (every delta cell) to this CSV")
     parser.add_argument("--delta-min", type=float, default=0.20,
                         help="Minimum delta included in the sweep (default: 0.20; use 0.10 to include 0.10/0.15)")
     args = parser.parse_args()
@@ -595,6 +596,8 @@ def main() -> None:
     elif vix_max is not None:
         regime_lbl += f"  ·  VIX < {vix_max}"
     print_results(df, "SPX", regime_lbl)
+    if args.dump:
+        df.assign(roc_net=df["pnl"] / df["max_loss"], roc_gross=df["pnl_gross"] / df["max_loss"]).to_csv(args.dump, index=False)
 
 
 if __name__ == "__main__":

@@ -35,7 +35,14 @@ C = [
     ("book", "Precision-tier breakout, close entry, cap 20 (date-clustered)", 3.3, 10, "in book", "precision_tier_control; tier picked in adhikary validation"),
     ("book", "  same, MONTH-weighted (2026-09-22)", -0.04, 1, "caveat", "oneil pyramid run"),
     ("book", "Size lever = exclusion (A+B only, +0.29R OOS)", None, 3, "in book", "size_lever_2026-09-18 (no t)"),
-    ("book", "SPX condors / QQQ-SPY bull puts by regime (Tier A/B)", None, 30, "in book", "playbook_review (no t)"),
+    # Tier A/B regime playbooks: t computed 2026-09-22 (run_tierab_significance.py, month-clustered, net of costs);
+    # k = the sweep each cell was picked from (QQQ/SPY 27 delta x wing combos x stop/no-stop = 54; SPX 7x7 = 49)
+    ("book", "QQQ bull put Bearish_HighIV 0.25/0.15 (Tier A)", 3.53, 54, "in book", "tierab_significance"),
+    ("book", "QQQ bull put Bullish_HighIV 0.45/0.35 2x stop (Tier B)", 1.04, 54, "in book", "tierab_significance"),
+    ("book", "QQQ bull put Bullish_LowIV 0.45/0.35 (Tier B)", -0.87, 54, "in book", "tierab_significance"),
+    ("book", "SPY bull put Bearish_HighIV 0.25/0.15 (Tier B)", 6.07, 54, "in book", "tierab_significance"),
+    ("book", "SPX condor Bullish_HighIV+200MA 0.20c/0.40p (Tier A)", 2.26, 49, "in book", "tierab_significance"),
+    ("book", "SPX condor Bearish_HighIV 0.20c/0.30p (Tier B)", 5.21, 49, "in book", "tierab_significance"),
     ("book", "SPY double calendar / IWM put calendar (Tier B)", None, 6, "in book", "calendar playbooks (no t)"),
     # --- index-option discoveries ---
     ("index", "SPY negative dealer gamma -> +8% realised vol beyond VIX", 7.7, 3, "vol input", "§7 GEX regime"),
@@ -92,7 +99,7 @@ def holm_keep(pk: pd.Series, M: int, a: float = 0.05) -> pd.Series:
     return keep
 
 
-for M in (125, 400):
+for M in (131, 406):   # +6: the Tier A/B row split into its 7 cells
     for q in (0.05, 0.10):
         D[f"BH{int(q*100)}_M{M}"] = bh_keep(D.p_k, M, q)
     D[f"Holm_M{M}"] = holm_keep(D.p_k, M)
@@ -101,9 +108,9 @@ D["HLZ_t3"] = D.t.map(lambda t: t is not None and np.isfinite(t) and abs(t) >= 3
 
 def verdict(r):
     if r.t is None or not np.isfinite(r.t): return "NO t ON FILE"
-    if r.BH5_M125 and r.BH5_M400: return "CONFIRMED"
-    if r.BH5_M125 or (r.BH10_M125 and r.BH10_M400): return "SUPPORTED"
-    if r.BH10_M125: return "WEAK"
+    if r.BH5_M131 and r.BH5_M406: return "CONFIRMED"
+    if r.BH5_M131 or (r.BH10_M131 and r.BH10_M406): return "SUPPORTED"
+    if r.BH10_M131: return "WEAK"
     return "NOT CERTIFIED"
 
 
@@ -112,18 +119,18 @@ D["verdict"] = D.apply(verdict, axis=1)
 def t_needed(M, q, k, rank):
     p = rank / M * q; p1 = 1 - (1 - p) ** (1 / k); return norm.isf(p1 / 2)
 pd.set_option("display.width", 250); pd.set_option("display.max_colwidth", 70)
-show = D[["group", "claim", "t", "k", "p_k", "BH5_M125", "BH10_M125", "BH5_M400", "Holm_M125", "HLZ_t3", "verdict"]]
+show = D[["group", "claim", "t", "k", "p_k", "BH5_M131", "BH10_M131", "BH5_M406", "Holm_M131", "HLZ_t3", "verdict"]]
 print(show.to_string(index=False, float_format=lambda x: f"{x:.2g}"))
-print("\nreference: Bonferroni-style t needed for ONE claim at k=1: M=125 ->", round(norm.isf(0.05 / 125 / 2), 2),
-      "; M=400 ->", round(norm.isf(0.05 / 400 / 2), 2))
+print("\nreference: Bonferroni-style t needed for ONE claim at k=1: M=131 ->", round(norm.isf(0.05 / 131 / 2), 2),
+      "; M=406 ->", round(norm.isf(0.05 / 406 / 2), 2))
 print(D.verdict.value_counts().to_string())
 
 # markdown write-up table
-lines = ["| group | claim | t | k | Šidák p | BH 5% M125 | BH 10% M125 | BH 5% M400 | Holm M125 | |t|≥3 | verdict | use |", "|---|---|---|---|---|---|---|---|---|---|---|---|"]
+lines = ["| group | claim | t | k | Šidák p | BH 5% M131 | BH 10% M131 | BH 5% M406 | Holm M131 | |t|≥3 | verdict | use |", "|---|---|---|---|---|---|---|---|---|---|---|---|"]
 yn = lambda b: "✓" if b else "·"
 for r in D.itertuples():
     tt = "—" if r.t is None or not np.isfinite(r.t) else f"{r.t:+.2f}"
     pk = "—" if not np.isfinite(r.p_k) else f"{r.p_k:.1e}"
-    lines.append(f"| {r.group} | {r.claim.strip()} | {tt} | {r.k} | {pk} | {yn(r.BH5_M125)} | {yn(r.BH10_M125)} | {yn(r.BH5_M400)} | {yn(r.Holm_M125)} | {yn(r.HLZ_t3)} | **{r.verdict}** | {r.use} |")
+    lines.append(f"| {r.group} | {r.claim.strip()} | {tt} | {r.k} | {pk} | {yn(r.BH5_M131)} | {yn(r.BH10_M131)} | {yn(r.BH5_M406)} | {yn(r.Holm_M131)} | {yn(r.HLZ_t3)} | **{r.verdict}** | {r.use} |")
 print("\n".join(lines))
 D.to_csv("data/studies/multiple_testing_correction_2026-09-22.csv", index=False)
