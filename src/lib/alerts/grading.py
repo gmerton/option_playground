@@ -27,9 +27,19 @@ v1 (2026-09-10, 20 sessions): A = ORB9 >= 10:00, B = ORB9 early / other >= 10:00
 """
 from __future__ import annotations
 
+# v3 (2026-09-21) -- the daily in-play gate is CONTEXT, not a grade driver. History (git): the gate came from a 20-session
+# replay (0bb80a5, 9/10: longs +0.07R -> +0.34R, curated names, hindsight); the 153-session study with the no-hindsight
+# control set found it does NOT rank R on either set (4c06a7c, 9/13) and v2 kept it "pending a point-in-time universe
+# test" that was never run. On Gabe's own 282 closed stock entries 8/13-9/21 the grades were inverted (B -0.73%,
+# C -0.65%, F -0.02% mean return). So a day-state mismatch no longer makes an F; it is recorded as a component. The
+# monitor still HIDES out-of-play alerts from the display (Gabe 2026-09-10) -- that is a display filter, separate
+# from the grade. Remaining F rules are the supported ones: shorts on names >= +3% vs SPY (v2.1, -0.16R both sets and
+# halves) and shorts before 10:30; plus the monitor's green-day rule for extended-up shorts. The day-gate re-test is
+# queued in TEST_INDEX (point-in-time universe masks, universe_test_2026-09-21).
+
 from dataclasses import dataclass
 
-RUBRIC_VERSION = "v2.1-2026-09-14"
+RUBRIC_VERSION = "v3-2026-09-21"
 SHORT_KINDS = ("BIR", "FBO", "PARA")
 LONG_OPEN_UNTIL = 9 * 60 + 40  # 09:40 ET: alerts at/before this minute are the opening flood (C)
 LONG_NOON = 12 * 60            # after 12:00 ET: afternoon entries are C
@@ -54,6 +64,17 @@ LEVERAGED: dict[str, tuple[str, int]] = {
     "NVDL": ("NVDA", 1), "TSLL": ("TSLA", 1), "TSLQ": ("TSLA", -1), "MSFU": ("MSFT", 1), "AAPU": ("AAPL", 1),
     "AMZU": ("AMZN", 1), "CONL": ("COIN", 1),
 }
+
+
+def effective_day_state(kind: str | None, day_state: str | None, day_reason: str | None) -> tuple[str | None, str]:
+    """ONE place for day-state exceptions, used by BOTH the alert monitor and the journal grader (they diverged on
+    2026-09-13 when this rule lived only in the monitor: ALAB/NET 9/21 graded B live, F in the journal).
+    LVL on a day-OUT 'no room' name counts as LONG: the close through the prior high is what resolves 'no room'.
+    ⚠ Unvalidated -- LVL has no study of its own; with v3 the day state no longer drives the grade anyway, so this
+    only affects the display filter and the recorded state."""
+    if kind == "LVL" and day_state == "OUT" and "no room" in (day_reason or ""):
+        return "LONG", "day OUT (no room) -> LONG: the break resolves it"
+    return day_state, ""
 
 
 def resolve(symbol: str, side: str) -> tuple[str, str]:
@@ -88,31 +109,29 @@ def setup_grade(side: str, kind: str | None, minute: int, day_state: str | None,
     want = "LONG" if side == "long" else "SHORT"
     ds = day_state or "?"
     day_ok = ds == want or ds == "FLAT"          # FLAT (on both EMAs, 2026-09-15): either side is in play
-    comp = [("day", ds, want, "pass" if day_ok else "fail")]
+    comp = [("day", ds, want, "pass" if day_ok else "context (v3: no longer a grade driver)")]
     if side == "long":
         opening, afternoon = minute <= LONG_OPEN_UNTIL, minute >= LONG_NOON
         comp.append(("time", _hhmm(minute), "09:41-12:00", "marginal" if (opening or afternoon) else "pass"))
         comp.append(("setup", kind or "no alert", "-", "no kind ranks once the universe is controlled (v2)"))
-        if not day_ok:
-            return Grade("F", f"daily chart is {ds}, not LONG (out of play for longs)", tuple(comp))
         what = kind or "entry without an alert"
+        ctx = "" if day_ok else f" (daily chart {ds}: context, unvalidated)"
         if opening:
-            return Grade("C", f"{what} in the first ten minutes (09:30-09:40)", tuple(comp))
+            return Grade("C", f"{what} in the first ten minutes (09:30-09:40){ctx}", tuple(comp))
         if afternoon:
-            return Grade("C", f"{what} after 12:00", tuple(comp))
-        return Grade("B", f"{what} 09:41-12:00 on a day-LONG name", tuple(comp))
+            return Grade("C", f"{what} after 12:00{ctx}", tuple(comp))
+        return Grade("B", f"{what} 09:41-12:00{' on a day-LONG name' if day_ok else ctx}", tuple(comp))
     early = minute < SHORT_AFTER
     comp.append(("time", _hhmm(minute), ">=10:30", "fail" if early else "pass"))
     comp.append(("setup", kind or "no alert", "-", "cap C (no short edge yet)"))
     strong = rs_spy is not None and rs_spy >= SHORT_RS_VETO_PCT
     comp.append(("rs_spy", "?" if rs_spy is None else f"{rs_spy:+.1f}%", f"< +{SHORT_RS_VETO_PCT:.0f}%", "fail" if strong else "pass"))
-    if not day_ok:
-        return Grade("F", f"daily chart is {ds}, not SHORT (out of play for shorts)", tuple(comp))
+    ctx = "" if day_ok else f" (daily chart {ds}: context, unvalidated)"
     if strong:
         return Grade("F", f"short on a day leader ({rs_spy:+.1f}% vs SPY): -0.16R cell, never shown", tuple(comp))
     if early:
         return Grade("F", "short before 10:30", tuple(comp))
-    return Grade("C", "day-SHORT name after 10:30 (shorts cap at C)", tuple(comp))
+    return Grade("C", f"short after 10:30 (shorts cap at C){ctx}", tuple(comp))
 
 
 def grade_alert(kind: str, minute: int, day_state: str | None, rs_spy: float | None = None) -> Grade:

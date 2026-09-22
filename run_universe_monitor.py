@@ -38,7 +38,7 @@ from lib.alerts.bars import Bar, SymbolBook
 from lib.alerts.context import load_context
 from lib.alerts.daily_state import GAP_RECLASS_ADR, reclassify_open
 from lib.alerts.detectors import DETECTORS, INDEX_SYMBOLS, SHORT_KINDS, Alert, IndexState, SymbolState, adr_from_21, precision_tier, symbol_levels
-from lib.alerts.grading import RUBRIC_VERSION, Grade, grade_alert, resolve, setup_grade
+from lib.alerts.grading import RUBRIC_VERSION, Grade, effective_day_state, grade_alert, resolve, setup_grade
 from lib.alerts.publish import AlertPublisher
 from lib.alerts.stream import trades
 from lib.alerts.universe import build_universe
@@ -322,8 +322,8 @@ class Engine:
         c0 = self.ctx.get(a.symbol)
         if a.fields.get("stop_adr") is None and c0 is not None and c0.adr_pct and a.price:
             a.fields["stop_adr"] = round(abs(a.price - a.stop) / a.price * 100 / c0.adr_pct, 2)   # longs: same risk-in-ADR the shorts carry
-        # Display gate = the setup grade (lib/alerts/grading.py) -- the SAME rubric the journal grades entries
-        # with: A/B loud, C dimmed, F saved as out of play. The old index-vs-VWAP and group-leader gates are
+        # Loud / dimmed = the setup grade (lib/alerts/grading.py) -- the SAME rubric the journal grades entries
+        # with: A/B loud, C dimmed, F saved as out of play; the daily in-play gate below is a separate display filter. The old index-vs-VWAP and group-leader gates are
         # context in the text only: the 20-session study found no stable edge in either (for shorts the index
         # gate pointed the wrong way). --index-gate is kept as a no-op flag.
         gated = False
@@ -337,10 +337,12 @@ class Engine:
         flat = ds == "FLAT"                       # on both EMAs: either side is in play (the log keeps the word FLAT)
         if flat:
             a.fields["day_state_flat"] = True; ds = want
-        if a.kind == "LVL" and ds == "OUT" and "no room" in a.fields["day_reason"]:
-            # the daily gate says "no room to the prior high"; a close through that high is the resolution, not a chase
-            a.fields["day_state_raw"], ds = ds, "LONG"
-            a.msg += " | day OUT (no room) -> LONG: the break resolves it"
+        eff, note = effective_day_state(a.kind, ds, a.fields["day_reason"])   # shared with the journal grader
+        if note:
+            a.fields["day_state_raw"], ds = ds, eff
+            a.msg += f" | {note}"
+        # DISPLAY filter (Gabe 2026-09-10: out-of-play alerts are saved, never shown). Since rubric v3 this is NOT part
+        # of the grade: the day gate did not rank R in the 153-session study or on Gabe's own entries.
         if self.day_gate and ds and ds != want:
             gated = True
             a.fields["out_of_play"] = True

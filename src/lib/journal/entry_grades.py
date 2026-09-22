@@ -19,7 +19,7 @@ import numpy as np
 import pandas as pd
 
 from lib.alerts import study
-from lib.alerts.grading import RUBRIC_VERSION, SHORT_KINDS, VERDICT, resolve, setup_grade
+from lib.alerts.grading import RUBRIC_VERSION, SHORT_KINDS, VERDICT, effective_day_state, resolve, setup_grade
 from lib.mysql_lib import _get_conn
 
 EXEC_ERR = Path(__file__).resolve().parents[3] / "data" / "journal" / "execution_errors.csv"
@@ -191,6 +191,7 @@ def grade_day(d: date, t_day: pd.DataFrame) -> pd.DataFrame:
         m = al[(al.sym == e["sym"]) & (al.side == e["side"]) & (al.mins <= fm) & (fm - al.mins <= MATCH_WINDOW_MIN)] if len(al) else al
         if len(m):
             a = m.sort_values("mins").iloc[-1]
+            ds, _ = effective_day_state(a.kind, ds, getattr(ctx.get(gsym), "day_reason", ""))   # same exception as the monitor
             rs = float(a.rs_spy) if ("rs_spy" in m and pd.notna(a.rs_spy)) else (_rs_at_fill(e["sym"], d, e["dt"], ctx) if e["side"] == "short" else None)
             g = setup_grade(gside, a.kind, int(a.mins), ds, rs)
             sign = 1 if e["side"] == "long" else -1
