@@ -5,10 +5,14 @@ PRE-REGISTERED: data/studies/gex_spy_ironfly_2026-09-21.md -- implements that sp
 Same days / entry / expiry / ATM strike / GEX sign as run_gex_spy_straddle.py; wings at K +/- w x (straddle mid),
 nearest listed strike, w in {1.0, 2.0}. House fills: shorts at mid - 25% BA, longs at mid + 25% BA, $0.0065/sh/leg.
 
-Usage: PYTHONPATH=src:. .venv/bin/python3 run_gex_spy_ironfly.py | tee data/studies/gex_spy_ironfly_2026-09-21.log
+Usage: PYTHONPATH=src:. .venv/bin/python3 run_gex_spy_ironfly.py [--ticker QQQ]
+
+2026-09-22: --ticker added for the QQQ replication (pre-registered in gex_qqq_ironfly_2026-09-22.md).
+Default SPY behaviour and output paths are unchanged.
 """
 from __future__ import annotations
 
+import argparse
 import warnings
 
 import numpy as np
@@ -35,10 +39,10 @@ def streak(neg: pd.Series) -> int:
     return best
 
 
-def main():
-    bars = base.daily_bars("SPY")
-    _, net, _ = base.gex_series("SPY", bars)
-    q = pd.read_parquet("data/cache/gex/SPY_short_expiry_quotes.parquet")
+def main(tk: str = "SPY", tag: str = "spy_ironfly_2026-09-21"):
+    bars = base.daily_bars(tk)
+    _, net, _ = base.gex_series(tk, bars)
+    q = pd.read_parquet(f"data/cache/gex/{tk}_short_expiry_quotes.parquet")
     q["trade_date"] = pd.to_datetime(q.trade_date); q["expiry"] = pd.to_datetime(q.expiry)
     days = bars.index
     nxt = pd.Series(days[1:], index=days[:-1])
@@ -86,7 +90,7 @@ def main():
     X["NEG"] = X.gex < 0
     X["half"] = np.where(X.day < base.SPLIT, "2010-2017", "2018-2026")
     X["month"] = X.day.dt.to_period("M")
-    print(f"SPY 1-day iron flies: {X.day.nunique():,} days; per wing width: {X.groupby('w').size().to_dict()}")
+    print(f"{tk} 1-day iron flies: {X.day.nunique():,} days; per wing width: {X.groupby('w').size().to_dict()}")
 
     out = []
     for w, gw in X.groupby("w"):
@@ -108,8 +112,12 @@ def main():
     print("\nby year, POS days, mean return on max risk (%):")
     X["yr"] = X.day.dt.year
     print(X[~X.NEG].pivot_table(index="w", columns="yr", values="ret_risk", aggfunc="mean").round(1).to_string())
-    X.drop(columns="month").to_csv("data/studies/gex_spy_ironfly_2026-09-21.csv", index=False)
+    X.drop(columns="month").to_csv(f"data/studies/gex_{tag}.csv", index=False)
 
 
 if __name__ == "__main__":
-    main()
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--ticker", default="SPY")
+    a = ap.parse_args()
+    tag = "spy_ironfly_2026-09-21" if a.ticker == "SPY" else f"{a.ticker.lower()}_ironfly_2026-09-22"
+    main(a.ticker, tag)
