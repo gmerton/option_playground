@@ -49,19 +49,8 @@ STRATEGIES: list[dict] = [
     # ── Spread strategies ─────────────────────────────────────────────────────
     # RETIRED 2026-09-22 (run_uvxy_significance.py): UVXY bear call 0.50/0.40 + VIX<20 naked put is net-NEGATIVE after
     #   costs (-3.46%/trade, t -2.65, 1 of 9 years positive); the call spread pays ~13% of its max loss in costs.
-    {
-        "type":          "spread",
-        "name":          "UVIX Bear Call Spread",
-        "alloc_key":     "UVIX calls",
-        "ticker":        "UVIX",
-        "cp":            "call",
-        "short_delta":   0.50,
-        "long_delta":    0.40,
-        "vix_cond":      None,
-        "profit_take":   0.50,
-        "fwd_vol_warn":  1.50,   # avg=1.421 (steep contango); >1.50 = extreme
-        "note":          "2x VIX decay; enter every Friday; check dollar credit > $0.10",
-    },
+    # RETIRED 2026-09-22 (run_uvxy_significance.py --ticker UVIX --no-put): UVIX bear call 0.50/0.40 is net-NEGATIVE
+    #   after costs (-8.8%/trade, t -2.81, 1 of 5 years); round-trip costs ~= the median $0.25 credit.
     {
         "type":          "spread",
         "name":          "TLT Bear Call Spread",
@@ -325,21 +314,20 @@ MAX_SPREAD_PCT = 0.25   # max (ask-bid)/mid on the short leg
 # ── Tier lookup tables ────────────────────────────────────────────────────────
 
 TIER_MAP: dict[str, str] = {
-    "UVIX Bear Call Spread":    "U",   # 2026-09-22: net -8.8%/trade after costs, t -2.81 (run_uvxy_significance.py --ticker UVIX --no-put)
-    "TLT Bear Call Spread":     "C",
-    "TMF Bear Call Spread":     "P",
-    "GLD Bull Put Spread":      "C",
-    "USO Bull Put Spread":      "C",
-    "SOXX Bull Put Spread":     "C",
-    "INDA Bull Put Spread":     "A",
-    "ASHR Bull Put Spread":     "C",
-    "SQQQ Bear Call Spread":    "C",
-    "BJ Bull Put Spread":       "B",
-    "ASHR Bear Call Spread":    "C",
-    "GEV Bull Put Spread":      "P",
-    "CLS Bull Put Spread":      "P",
+    "TLT Bear Call Spread":     "U",   # 2026-09-22 cost+t check: t 0.88
+    "TMF Bear Call Spread":     "U",   # 2026-09-22 cost+t check: NET -1.7%
+    "GLD Bull Put Spread":      "U",   # 2026-09-22 cost+t check: t 1.33
+    "USO Bull Put Spread":      "U",   # 2026-09-22 cost+t check: t 0.69
+    "SOXX Bull Put Spread":     "U",   # 2026-09-22 cost+t check: t 0.54
+    "INDA Bull Put Spread":     "U",   # 2026-09-22 cost+t check: t 0.17
+    "ASHR Bull Put Spread":     "U",   # 2026-09-22 cost+t check: NET -5.1%
+    "SQQQ Bear Call Spread":    "U",   # 2026-09-22 cost+t check: NET -2.3%
+    "BJ Bull Put Spread":       "U",   # 2026-09-22 cost+t check: t 1.44
+    "ASHR Bear Call Spread":    "U",   # 2026-09-22 cost+t check: month -0.5%
+    "GEV Bull Put Spread":      "U",   # 2026-09-22 cost+t check: t 2.98, k 60, 2024+
+    "CLS Bull Put Spread":      "U",   # 2026-09-22 cost+t check: t 1.03
     "UUP ATM Short Straddle":   "C",
-    "XOP Bull Put Spread":      "P",
+    "XOP Bull Put Spread":      "U",   # 2026-09-22 cost+t check: NET -3.1%
 }
 
 # For regime strategies, tier depends on which regime fires
