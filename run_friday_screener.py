@@ -65,19 +65,7 @@ STRATEGIES: list[dict] = [
         "vrp_min":       -2.5,   # skip Q1 (VRP < -2.5 pp): 60.9% win / -4.9% avg ROC
         "note":          "only when VIX ≥ 20 (fear = TLT under pressure)",
     },
-    {
-        "type":          "spread",
-        "name":          "TMF Bear Call Spread",
-        "alloc_key":     "TMF calls",
-        "ticker":        "TMF",
-        "cp":            "call",
-        "short_delta":   0.35,
-        "long_delta":    0.25,
-        "vix_cond":      None,
-        "profit_take":   0.50,
-        "fwd_vol_warn":  1.20,   # avg=1.101; >1.20 = elevated
-        "note":          "3x TLT decay; all VIX; ⚠ watch-list only — 2yr usable history",
-    },
+    # RETIRED 2026-09-22 (run_tierc_significance.py): TMF Bear Call Spread -- net -1.7%/trade after costs.
     {
         "type":          "spread",
         "name":          "GLD Bull Put Spread",
@@ -146,32 +134,8 @@ STRATEGIES: list[dict] = [
         "fwd_vol_warn":  1.20,   # avg unknown; thin liquidity (~7/yr)
         "note":          "India growth tailwind — no VIX filter; enforce 25% BA strictly",
     },
-    {
-        "type":          "spread",
-        "name":          "ASHR Bull Put Spread",
-        "alloc_key":     "ASHR puts",
-        "ticker":        "ASHR",
-        "cp":            "put",
-        "short_delta":   0.25,
-        "long_delta":    0.15,
-        "vix_cond":      None,
-        "profit_take":   0.50,
-        "fwd_vol_warn":  1.20,   # avg=1.074; condor put leg
-        "note":          "condor put leg — range-bound China A-shares; no VIX filter",
-    },
-    {
-        "type":          "spread",
-        "name":          "SQQQ Bear Call Spread",
-        "alloc_key":     "SQQQ calls",
-        "ticker":        "SQQQ",
-        "cp":            "call",
-        "short_delta":   0.50,
-        "long_delta":    0.40,
-        "vix_cond":      None,
-        "profit_take":   0.50,
-        "fwd_vol_warn":  1.30,   # avg=1.253; ≤1.30 is a useful light screen
-        "note":          "3x inverse QQQ structural decay; all VIX; 2 losing years (2018, 2022)",
-    },
+    # RETIRED 2026-09-22 (run_tierc_significance.py): ASHR Bull Put Spread -- net -5.1%/trade after costs (win 87% -> 61%; $0.14 credit vs $0.07 cost).
+    # RETIRED 2026-09-22 (run_tierc_significance.py): SQQQ Bear Call Spread -- net -2.3%/trade after costs.
     {
         "type":          "regime_spread",
         "name":          "QQQ Regime-Optimized",
@@ -204,19 +168,7 @@ STRATEGIES: list[dict] = [
         "fwd_vol_warn":  None,   # monthly-only chain; fwd_vol not computable
         "note":          "monthly-only options; 45 DTE; 94.2% win, 1 losing year (2023)",
     },
-    {
-        "type":          "spread",
-        "name":          "ASHR Bear Call Spread",
-        "alloc_key":     "ASHR calls",
-        "ticker":        "ASHR",
-        "cp":            "call",
-        "short_delta":   0.20,
-        "long_delta":    0.10,
-        "vix_cond":      None,
-        "profit_take":   0.50,
-        "fwd_vol_warn":  1.20,   # avg=1.137; condor call leg
-        "note":          "condor call leg — range-bound China A-shares; no VIX filter",
-    },
+    # RETIRED 2026-09-22 (run_tierc_significance.py): ASHR Bear Call Spread -- net +1.2%/trade but -0.5% month-weighted, t -0.16.
     {
         "type":          "spread",
         "name":          "GEV Bull Put Spread",
@@ -285,20 +237,7 @@ STRATEGIES: list[dict] = [
         "fwd_vol_warn":  None,
         "note":          "ATM only (OTM illiquid); 73.1% win +17.4% ROC; verify chain in broker",
     },
-    {
-        "type":          "spread",
-        "name":          "XOP Bull Put Spread",
-        "alloc_key":     "XOP puts",
-        "ticker":        "XOP",
-        "cp":            "put",
-        "short_delta":   0.35,
-        "long_delta":    0.25,
-        "dte_target":    60,
-        "vix_cond":      None,
-        "profit_take":   0.50,
-        "fwd_vol_warn":  1.20,   # E&P higher beta to crude; flag >1.20
-        "note":          "PROVISIONAL; E&P upstream oil/gas; 60 DTE; +5.44% ROC 81.5% win; All VIX",
-    },
+    # RETIRED 2026-09-22 (run_tierc_significance.py): XOP Bull Put Spread -- net -3.1%/trade after costs (3 of 9 years positive).
     # ── Calendar strategies ───────────────────────────────────────────────────
     # RETIRED 2026-09-15 (calendar path study, data/studies/calendar_path_study.md, 5,920 real-bid/ask calendars):
     #   GLD / XLU / XLV / XLP put calendars -- entry bid-ask 18-470% of the debit; hold-to-expiry ROC after costs
@@ -315,19 +254,14 @@ MAX_SPREAD_PCT = 0.25   # max (ask-bid)/mid on the short leg
 
 TIER_MAP: dict[str, str] = {
     "TLT Bear Call Spread":     "U",   # 2026-09-22 cost+t check: t 0.88
-    "TMF Bear Call Spread":     "U",   # 2026-09-22 cost+t check: NET -1.7%
     "GLD Bull Put Spread":      "U",   # 2026-09-22 cost+t check: t 1.33
     "USO Bull Put Spread":      "U",   # 2026-09-22 cost+t check: t 0.69
     "SOXX Bull Put Spread":     "U",   # 2026-09-22 cost+t check: t 0.54
     "INDA Bull Put Spread":     "U",   # 2026-09-22 cost+t check: t 0.17
-    "ASHR Bull Put Spread":     "U",   # 2026-09-22 cost+t check: NET -5.1%
-    "SQQQ Bear Call Spread":    "U",   # 2026-09-22 cost+t check: NET -2.3%
     "BJ Bull Put Spread":       "U",   # 2026-09-22 cost+t check: t 1.44
-    "ASHR Bear Call Spread":    "U",   # 2026-09-22 cost+t check: month -0.5%
     "GEV Bull Put Spread":      "U",   # 2026-09-22 cost+t check: t 2.98, k 60, 2024+
     "CLS Bull Put Spread":      "U",   # 2026-09-22 cost+t check: t 1.03
     "UUP ATM Short Straddle":   "C",
-    "XOP Bull Put Spread":      "U",   # 2026-09-22 cost+t check: NET -3.1%
 }
 
 # For regime strategies, tier depends on which regime fires

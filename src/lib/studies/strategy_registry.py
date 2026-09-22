@@ -201,7 +201,7 @@ ALL_STRATEGIES: list[Strategy] = [
         avg_concurrent=2,
         freq_per_year=24,
         note="Bull put spread 0.25Δ/0.15Δ (0.10Δ wing). All VIX. 550% ann-ROC profit target. Iron condor put leg.",
-        portfolio_alloc=3_000,
+        portfolio_alloc=0,   # RETIRED 2026-09-22: -5.1% net after costs (run_tierc_significance.py)
         caveats=[
             "per_year_roc from original 0.05Δ wing / 50% fixed take study — shapes are representative",
             "Current params (0.10Δ wing + 550% target): IS 87.4% win +3.8% ROC; OOS 88.2% win +11.8% ROC",
@@ -217,7 +217,7 @@ ALL_STRATEGIES: list[Strategy] = [
         avg_concurrent=2,
         freq_per_year=29,
         note="Bear call spread 0.20Δ/0.10Δ. All VIX. 50% fixed profit take. Iron condor call leg.",
-        portfolio_alloc=3_000,
+        portfolio_alloc=0,   # RETIRED 2026-09-22: -0.5% month-weighted net after costs (run_tierc_significance.py)
         caveats=[
             "Ann-target optimization rejected — exits at 7.7d with +1.5% OOS ROC vs 14d/+10.5% baseline",
             "Run alongside ASHR puts (condor) — correlation is negative",
@@ -232,7 +232,7 @@ ALL_STRATEGIES: list[Strategy] = [
         avg_concurrent=2,
         freq_per_year=47,
         note="Bear call spread 0.35Δ/0.05Δ. All VIX. 50% take. 0.05Δ wing exception: 0.10Δ costs -5.4pp ROC.",
-        portfolio_alloc=2_000,
+        portfolio_alloc=0,   # RETIRED 2026-09-22: -1.7% net after costs (run_tierc_significance.py)
         caveats=[
             "WATCH LIST — only 2 usable years post-split (2024–2025); pre-2024 has 1–7 trades/year",
             "2022 (worst rate year in 40yr) had only 3 trades — strategy is undertested in stress",
@@ -281,7 +281,7 @@ ALL_STRATEGIES: list[Strategy] = [
         avg_concurrent=2,
         freq_per_year=38,
         note="Bear call spread 0.50Δ/0.40Δ. VIX-gated. Structural decay from SQQQ 3× leverage.",
-        portfolio_alloc=3_000,
+        portfolio_alloc=0,   # RETIRED 2026-09-22: -2.3% net after costs (run_tierc_significance.py)
         caveats=[
             "SQQQ price/strikes shift dramatically after each reverse split — verify current chain",
             "2022 losing year (-13.17%): prolonged bear market lifted SQQQ above short calls",
