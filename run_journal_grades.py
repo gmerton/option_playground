@@ -28,6 +28,9 @@ Writes data/studies/journal_process_grades.md + data/watchlist/logs/journal_proc
 from __future__ import annotations
 
 import argparse
+import warnings
+
+warnings.filterwarnings("ignore", message="pandas only supports SQLAlchemy")   # pymysql conn; the warning echoed its own source line into morning_journal.sh's log
 import sys
 from pathlib import Path
 

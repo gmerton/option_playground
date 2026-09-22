@@ -41,7 +41,7 @@ echo "-- journal day: $DAY"
 $PY run_build_reviews.py --since "$DAY" --until "$DAY" 2>&1 | grep -v -i "warn" | tail -4 || { echo "!! review builder failed"; exit 1; }
 
 # 3. process grade (rubric entry grades + the session report card)
-$PY run_journal_grades.py --since "$DAY" 2>&1 | grep -v -i "warn" | grep -E "^$DAY|grade" | head -3 || { echo "!! grades failed"; exit 1; }
+$PY run_journal_grades.py --since "$DAY" 2>&1 | grep -v -i "warn" | grep -E "^ *$DAY|grade" | head -3 || { echo "!! grades failed"; exit 1; }
 
 # 4. pages
 $PY run_trade_review_pages.py $CHARTS 2>&1 | grep -v -i "warn" | grep "Wrote" || { echo "!! page build failed"; exit 1; }
