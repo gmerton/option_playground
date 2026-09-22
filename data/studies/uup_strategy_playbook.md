@@ -1,7 +1,12 @@
 # UUP Strategy Playbook — ATM Short Straddle
 
+> ## ⛔ RETIRED 2026-09-22 — do not trade this. Numbers below are MID-PRICED and do not survive real fills.
+> Net +0.5%/trade but **month-weighted −0.23%, t −0.31**; median credit $0.35 against a 14%-of-mid spread. The March playbook's +17.4% was mid-priced.
+> Evidence: `uup_straddle_2026-09-22.csv`. Removed from `run_friday_screener.py`; registry allocation zeroed.
+
+
 **Last updated:** 2026-03-19
-**Status:** Backtested 2018–2023 (full data). 2024–2025 data sparse — treat as provisional. Strategy fires on regime-independent basis. ROC corrected to Reg T capital-at-risk basis.
+**Status:** ⛔ **RETIRED 2026-09-22** — see the banner above. The line that stood here ("ready for live trading" etc.) was written on mid-priced numbers and is superseded.
 
 ---
 

@@ -1,7 +1,12 @@
 # XLF Regime-Switching Strategy — Trading Playbook
 
+> ## ⛔ RETIRED 2026-09-22 (flagged 2026-09-08, removal never applied until now) — do not trade this. Numbers below are MID-PRICED and do not survive real fills.
+> Net **−4.6%** after costs.
+> Evidence: `playbook_review_2026-09.md`. Removed from `run_friday_screener.py`; registry allocation zeroed.
+
+
 **Last updated:** 2026-03-19
-**Status:** Backtested 2018–2026. ROC corrected to Reg T capital-at-risk basis. BearishHI upgraded to 0.40Δ/0.30Δ. Ready for live trading.
+**Status:** ⛔ **RETIRED 2026-09-22** — see the banner above. The line that stood here ("ready for live trading" etc.) was written on mid-priced numbers and is superseded.
 
 ---
 

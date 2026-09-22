@@ -1,7 +1,11 @@
 # XLV Bull Put Spread — Trading Playbook
 
+> ## ⛔ RETIRED 2026-09-15 — the XLV calendar is out (calendar path study: negative after costs on real bid/ask).
+> See `xlv_calendar_playbook.md`. Numbers below are mid-priced.
+
+
 **Last updated:** 2026-03-03
-**Status:** Parameters confirmed. Ready for live trading consideration.
+**Status:** superseded — see the banner above.
 
 ---
 

@@ -1,7 +1,12 @@
 # ASHR Iron Condor — Trading Playbook
 
+> ## ⛔ RETIRED 2026-09-22 — do not trade this. Numbers below are MID-PRICED and do not survive real fills.
+> Bull put **−5.1%**, bear call ≈0 after costs.
+> Evidence: `tierc_significance_2026-09-22.csv`. Removed from `run_friday_screener.py`; registry allocation zeroed.
+
+
 **Last updated:** 2026-03-19
-**Status:** Parameters confirmed. Put spread upgraded to 0.10Δ wing + 550% ann-ROC profit target. Ready for live trading.
+**Status:** ⛔ **RETIRED 2026-09-22** — see the banner above. The line that stood here ("ready for live trading" etc.) was written on mid-priced numbers and is superseded.
 
 ---
 

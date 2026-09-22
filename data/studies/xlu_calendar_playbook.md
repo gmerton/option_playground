@@ -1,7 +1,12 @@
 # XLU Put Calendar Spread — Trading Playbook
 
+> ## ⛔ RETIRED 2026-09-15 — do not trade this. Numbers below are MID-PRICED and do not survive real fills.
+> Calendar path study: **negative after costs on real bid/ask** (the clean re-run found no edge in any ETF calendar).
+> Evidence: `calendar_path_study.md`. Removed from `run_friday_screener.py`; registry allocation zeroed.
+
+
 **Last updated:** 2026-03-05
-**Status:** Parameters updated with forward vol factor findings.
+**Status:** ⛔ **RETIRED 2026-09-15** — see the banner above. The line that stood here ("ready for live trading" etc.) was written on mid-priced numbers and is superseded.
 
 ---
 

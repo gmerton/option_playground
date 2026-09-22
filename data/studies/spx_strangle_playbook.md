@@ -1,7 +1,12 @@
 # SPX Short Strangle — Trading Playbook
 
+> ## ⚠ SPLIT STATUS 2026-09-22 — only ONE cell is certified.
+> **Certified:** bearish-high-IV condor 0.20c/0.30p (**t 5.21**) — but it fires on the SAME stress episodes as the SPY bull put, so the two are **ONE position** ("Index stress bucket", $3,000 total), not two.
+> **NOT certified:** bullish-high-IV + 200MA condor (t 2.26, 51% of trades in one year) — this was the old Tier A label, unearned.
+
+
 **Last updated:** 2026-03-24
-**Status:** Parameters confirmed. Two active regimes. IC mode (0.10Δ wings) used for framework-consistent ROC. Ready for live trading.
+**Status:** superseded — see the banner above.
 
 ---
 

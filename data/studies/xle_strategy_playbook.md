@@ -1,7 +1,11 @@
 # XLE Strategy Playbook — Regime-Gated Bull Put Spread
 
+> ## ⚠ BLOCKED (data) — 2026-09-22. Cannot be re-costed, so it cannot be trusted.
+> The stock cache is split-adjusted while v3 strikes are raw (median 3.1% mismatch), so the post-cost re-run could not be completed. Numbers below are mid-priced and pre-certification.
+
+
 **Last updated:** 2026-03-18
-**Status:** Backtested 2018–2026. Single tradeable regime confirmed. Ready for live trading.
+**Status:** superseded — see the banner above.
 
 ---
 

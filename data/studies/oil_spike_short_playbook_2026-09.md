@@ -1,5 +1,9 @@
 # Oil-spike short playbook: USO / BWET / CVI (written 2026-09-10, evening)
 
+> ## ⚠ UNTESTED 2026-09-22 — no test statistic, no cost model, not in the screener.
+> An idea doc, not a validated strategy.
+
+
 Idea: fade the Iran-war oil and tanker spike with Qullamaggie's parabolic short, expressed with
 defined-risk options. Data is from the 9/10 close. Everything here is analysis, not tested edge. Our
 own evidence on fading exhaustion is negative, and nothing we have covers war-driven commodity moves.

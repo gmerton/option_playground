@@ -1,5 +1,9 @@
 # QQQ Options Strategy — Trading Playbook
 
+> ## ⛔ NOT CERTIFIED 2026-09-22 — and the most-traded cell has NO edge.
+> **QQQ bullish-low-IV (the cell entered live 2026-09-08) is −4.8% month-weighted, t −0.87.** Bullish-high-IV t 1.04, bearish-low-IV t 1.74. Bearish-high-IV (t 3.53) is the same trade as the certified SPY/SPX stress sale but fails its own 54-cell sweep — prefer the SPY/SPX legs. Token size only.
+
+
 **Last updated:** 2026-03-18
 **Status:** Research complete. Regime-optimized with per-regime deltas and stop rules.
 

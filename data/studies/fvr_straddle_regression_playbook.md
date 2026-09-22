@@ -1,5 +1,9 @@
 # FVR → Short Straddle P&L Regression — Study Playbook
 
+> ## ⛔ FAILED — FVR has zero predictive power over short-straddle P&L.
+> Superseded by the VRP panel, which measures the premium directly. Kept for the FVR table schema only.
+
+
 **Last updated:** 2026-03-22
 **Status:** 10-30d interval tested and rejected. 30-90d confirmed as superior predictor.
 

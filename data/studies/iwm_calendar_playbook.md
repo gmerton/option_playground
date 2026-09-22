@@ -4,6 +4,10 @@
 
 # IWM double calendar playbook (2026-09-15)
 
+> ## ⚠ NO t ON FILE — 2026-09-22. One of the last acted-on claims without a test statistic.
+> The clean calendar path re-run (`calendar_path_study.md`, after the 2026-09-16 truncation erratum) found **no edge in any ETF calendar**. This was added Tier B on the pre-erratum evidence. Treat as unsupported until measured.
+
+
 Source: `data/studies/calendar_path_study.md`, double-calendar step (real daily bid/ask 2018-11 → 2026-07, house cost
 model on four legs). The single ATM put calendar (+9% / +14%) was replaced the same day by the symmetric 0.35-delta
 double calendar.

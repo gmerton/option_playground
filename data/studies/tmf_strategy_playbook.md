@@ -1,7 +1,12 @@
 # TMF Bear Call Spread — Trading Playbook
 
+> ## ⛔ RETIRED 2026-09-22 — do not trade this. Numbers below are MID-PRICED and do not survive real fills.
+> Net **−1.7%/trade** after costs.
+> Evidence: `tierc_significance_2026-09-22.csv`. Removed from `run_friday_screener.py`; registry allocation zeroed.
+
+
 **Last updated:** 2026-03-19
-**Status:** Directionally confirmed. 0.35Δ/0.05Δ wing confirmed optimal. 50% fixed profit take confirmed (ann-target rejected). Data limited to ~2 usable years — treat as watch list until more post-split history accumulates.
+**Status:** ⛔ **RETIRED 2026-09-22** — see the banner above. The line that stood here ("ready for live trading" etc.) was written on mid-priced numbers and is superseded.
 
 ---
 

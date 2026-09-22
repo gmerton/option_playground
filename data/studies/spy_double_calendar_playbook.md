@@ -11,8 +11,12 @@
 
 # SPY Double Calendar Spread — Trading Playbook
 
+> ## ⚠ NO t ON FILE — 2026-09-22. Same status as the IWM calendar.
+> The clean calendar path re-run found **no edge in any ETF calendar**; every other calendar in the book is retired. This one survived on pre-erratum numbers and has never been given a test statistic. Treat as unsupported until measured.
+
+
 **Last updated:** 2026-06-26
-**Status:** Backtested 2018–2026. Two tradeable regimes confirmed. Ready for live trading.
+**Status:** superseded — see the banner above.
 
 > **Revision 2026-06-26 — tighter short strikes (0.25Δ → 0.35Δ).** A regime-gated, after-cost
 > backtest confirms that pulling the short strikes closer to the money improves both traded regimes:

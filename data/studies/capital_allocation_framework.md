@@ -120,6 +120,9 @@ Provisional strategies: take at half the recommended size until 3+ years accumul
 ## Tier Definitions
 
 ### Tier A — Score ≥ 50 (Rare, High-Quality)
+
+> ⛔ **VOID as a ranking — 2026-09-22.** Every score below is mid-priced. The certification pass (`tierab_significance_2026-09-22.csv`, `tierc_significance_2026-09-22.csv`) certified **exactly one bucket** (index stress: SPY bull put t 6.07 + SPX condor t 5.21, sized as ONE position) and **0 of 13** Tier-C spreads. XLU/XLV/XLP/GLD calendars (ranks 1–3 here) are RETIRED; UVXY, UVIX, SQQQ, TMF, ASHR, XOP, XLF and UUP are retired from the screener. Read the tier lists as history, not instructions.
+
 *These signals fire infrequently. When they appear, fund them first — you may not get
 another chance for weeks. Take at full recommended size regardless of other signals.*
 
@@ -131,6 +134,9 @@ can fire simultaneously on FOMC weeks. Cap combined calendar debit at 3% ($3,000
 all three. When >1 fires, take the two with the lowest FVF first.
 
 ### Tier B — Score 20–49 (Selective, Good Edge)
+
+> ⛔ **VOID as a ranking — 2026-09-22.** Every score below is mid-priced. The certification pass (`tierab_significance_2026-09-22.csv`, `tierc_significance_2026-09-22.csv`) certified **exactly one bucket** (index stress: SPY bull put t 6.07 + SPX condor t 5.21, sized as ONE position) and **0 of 13** Tier-C spreads. XLU/XLV/XLP/GLD calendars (ranks 1–3 here) are RETIRED; UVXY, UVIX, SQQQ, TMF, ASHR, XOP, XLF and UUP are retired from the screener. Read the tier lists as history, not instructions.
+
 *Fires less than 20 weeks/year or offers meaningfully above-average edge.
 Take at full size; reduce to 75% only if Tier A signals are crowding capital.*
 
@@ -138,6 +144,9 @@ SPY BearishHI put spread, SPY BullishHI put spread, XLF BearishHI,
 QQQ BearishHI, TLT BullishLO, Long Straddle (FVR ≥ 1.40), BJ
 
 ### Tier C — Score < 20 (Standard / Always-On)
+
+> ⛔ **VOID as a ranking — 2026-09-22.** Every score below is mid-priced. The certification pass (`tierab_significance_2026-09-22.csv`, `tierc_significance_2026-09-22.csv`) certified **exactly one bucket** (index stress: SPY bull put t 6.07 + SPX condor t 5.21, sized as ONE position) and **0 of 13** Tier-C spreads. XLU/XLV/XLP/GLD calendars (ranks 1–3 here) are RETIRED; UVXY, UVIX, SQQQ, TMF, ASHR, XOP, XLF and UUP are retired from the screener. Read the tier lists as history, not instructions.
+
 *Fires frequently or has lower per-trade edge. These form the base of the book.
 Reduce these first when total exposure would be exceeded.*
 
@@ -272,7 +281,7 @@ The priority score is a guide, not a rule. Override in these cases:
 ## Quick Reference Card
 
 ```
-TIER A (fund first, always):
+TIER A (fund first, always):        [⛔ VOID 2026-09-22 — mid-priced; see the certification banner at the top]
   XLU cal     Score 347  → $2,000
   XLE BearHI  Score 174  → $3,000
   SPY BearLO  Score 136  → straddle at 1.5%

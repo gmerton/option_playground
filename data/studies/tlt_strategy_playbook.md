@@ -1,7 +1,12 @@
 # TLT Regime-Switching Options Strategy — Trading Playbook
 
+> ## ⚠ TIER U — UNCERTIFIED 2026-09-22. Still in the screener, but token size only (1 contract), no Sharpe sizing.
+> `run_tierc_significance.py`: **+2.3%, insignificant** net of costs, month-clustered — does not clear the bar. The headline ROC/win-rate below is **mid-priced** and is the artefact pattern that killed every small-credit spread in this book (UVIX: +11%/93% win at mid → −8.8% at fills).
+> ⚠ The TLT **regime switch** was removed after costs on 2026-09-08; only the bear call spread remains in the screener.
+
+
 **Last updated:** 2026-03-19
-**Status:** All defined-risk spreads + annualized ROC profit target (100%). Ready for live trading.
+**Status:** ⚠ **TIER U — uncertified 2026-09-22.** Token size only. The line that stood here was written on mid-priced numbers and is superseded; see the banner above.
 
 ---
 

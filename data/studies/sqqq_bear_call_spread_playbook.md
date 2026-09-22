@@ -1,7 +1,12 @@
 # SQQQ Bear Call Spread — Trading Playbook
 
+> ## ⛔ RETIRED 2026-09-22 — do not trade this. Numbers below are MID-PRICED and do not survive real fills.
+> Net **−2.3%/trade** after costs.
+> Evidence: `tierc_significance_2026-09-22.csv`. Removed from `run_friday_screener.py`; registry allocation zeroed.
+
+
 **Last updated:** 2026-03-06
-**Status:** Parameters confirmed. Ready for live trading consideration.
+**Status:** ⛔ **RETIRED 2026-09-22** — see the banner above. The line that stood here ("ready for live trading" etc.) was written on mid-priced numbers and is superseded.
 
 ---
 

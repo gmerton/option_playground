@@ -1,7 +1,11 @@
 # XLF Bull Put Spread — Trading Playbook
 
+> ## ⛔ RETIRED 2026-09-22 — XLF is out of the screener (net −4.6% after costs, flagged 2026-09-08).
+> See `xlf_strategy_playbook.md`. Numbers below are mid-priced.
+
+
 **Last updated:** 2026-03-05
-**Status:** Parameters confirmed. Ready for live trading consideration.
+**Status:** superseded — see the banner above.
 
 ---
 

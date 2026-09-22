@@ -1,7 +1,11 @@
 # Celestica (CLS) Bull Put Spread — Trading Playbook
 
+> ## ⚠ TIER U — UNCERTIFIED 2026-09-22. Still in the screener, but token size only (1 contract), no Sharpe sizing.
+> `run_tierc_significance.py`: **+3.2%, insignificant** net of costs, month-clustered — does not clear the bar. The headline ROC/win-rate below is **mid-priced** and is the artefact pattern that killed every small-credit spread in this book (UVIX: +11%/93% win at mid → −8.8% at fills).
+
+
 **Last updated:** 2026-03-09
-**Status:** PROVISIONAL — viable options data only from 2024 onward (~2 years). Strong numbers but narrow regime. Deploy small; revisit after 2027 data available.
+**Status:** ⚠ **TIER U — uncertified 2026-09-22.** Token size only. The line that stood here was written on mid-priced numbers and is superseded; see the banner above.
 
 ---
 

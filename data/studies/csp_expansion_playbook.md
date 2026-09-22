@@ -1,5 +1,9 @@
 # CSP Expansion Playbook — adding cash-secured puts deliberately
 
+> ## ⛔ SUPERSEDED 2026-09-17 by the BCI cash-secured-put study.
+> `bci_csp_study_2026-09-17.md` (326 names, 8 yrs): CSPs = **stock at the same delta minus costs**, and selling THROUGH earnings earned more. This doc is descriptive history.
+
+
 > Created 2026-07-14 from the top-down triage + live screen of 26 low-ADR quality names.
 > Premise: the breakout screen's **rejects are the CSP universe** — strong uptrend, at/near highs, low
 > realized vol, names you'd own. Same top-down signal, opposite vehicle.

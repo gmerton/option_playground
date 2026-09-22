@@ -1,5 +1,10 @@
 # SPY Regime-Switching Options Strategy — Trading Playbook
 
+> ## ⚠ SPLIT STATUS 2026-09-22 — only the bearish-high-IV cell is certified.
+> **Certified:** bull put 0.25/0.15 below 50MA + VIX ≥ 20 (**t 6.07**), shared with the SPX condor as ONE position.
+> **No t on file:** bullish-high-IV bull put, bearish-low-IV straddle, and the double calendar. Treat as unsupported.
+
+
 **Last updated:** 2026-03-21
 **Status:** Research complete. Double calendar added for Bearish_HighIV and Bullish_LowIV.
 

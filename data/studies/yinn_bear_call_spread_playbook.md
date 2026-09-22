@@ -1,7 +1,11 @@
 # YINN Bear Call Spread — Trading Playbook
 
+> ## ⛔ RETIRED — YINN was removed 2026-03-09 and is on the do-not-re-analyse list.
+> Kept for history only. Numbers below are mid-priced.
+
+
 **Last updated:** 2026-03-09
-**Status:** Parameters confirmed. Ready for live trading consideration.
+**Status:** superseded — see the banner above.
 
 ---
 
