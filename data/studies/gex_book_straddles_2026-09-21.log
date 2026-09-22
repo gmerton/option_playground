@@ -1,0 +1,16 @@
+trades 5,886; with SPY GEX at entry 5,684 (dropped 202); dates 315 2018-04-20 -> 2026-02-13
+
+(date_mean = mean of per-date means, %; for NEG-POS rows date_mean = difference, trade_mean column = Welch t across dates)
+sample   gamma  dates  trades  date_mean  trade_mean  median   win  top1pct_share
+  full     NEG    139  2059.0       3.06        3.39  -15.63 43.13         122.51
+  full     POS    176  3625.0       0.02        4.54  -16.21 42.07          78.71
+  full NEG-POS    315     NaN       3.03        0.55     NaN   NaN            NaN
+    H1     NEG     58   528.0       6.35       -2.61  -19.74 39.77        -202.06
+    H1     POS     99  1864.0      -2.22        4.07  -17.37 41.36          83.33
+    H1 NEG-POS    157     NaN       8.58        0.86     NaN   NaN            NaN
+    H2     NEG     81  1531.0       0.70        5.46  -13.87 44.28          68.71
+    H2     POS     77  1761.0       2.91        5.04  -15.39 42.82          71.47
+    H2 NEG-POS    158     NaN      -2.21       -0.35     NaN   NaN            NaN
+half cut: 2022-08-19
+
+PASS (NEG-POS > 0, |t| >= 3 across dates, > 0 both halves): no

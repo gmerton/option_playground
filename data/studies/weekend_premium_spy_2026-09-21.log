@@ -1,0 +1,31 @@
+1,942 1-day entries; weekend 412 (first 2012-12-31), weekday 1530
+
+== W1: weekend vs weekday, 2x fly return on max risk at the real fill (%) ==
+entries    sample    n   fly     t  straddle  realised_over_implied   win
+weekday       all 1530 -0.94 -0.67      4.03                   0.95 54.71
+weekday 2010-2017  406  2.32  0.89     10.59                   0.87 58.62
+weekday 2018-2026 1124 -2.11 -1.27      1.66                   0.98 53.29
+weekend       all  412  3.38  1.31     10.52                   0.89 58.74
+weekend 2010-2017    6  1.42  0.10     11.94                   0.79 66.67
+weekend 2018-2026  406  3.41  1.30     10.50                   0.89 58.62
+weekend minus weekday +4.32pp (Welch t 1.47); halves present for weekend: ['2010-2017', '2018-2026']
+PASS W1: no
+
+== W2: weekend x gamma cells (fly %, n) and regression ==
+               mean  size     t
+weekday / NEG -6.09   813 -3.11
+weekday / POS  4.91   717  2.46
+weekend / NEG -2.44   201 -0.62
+weekend / POS  8.92   211  2.66
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept     -6.0912      1.959     -3.110      0.002      -9.930      -2.252
+WKND           3.6540      4.396      0.831      0.406      -4.962      12.270
+POS           10.9999      2.796      3.934      0.000       5.520      16.480
+WKND:POS       0.3572      5.873      0.061      0.952     -11.155      11.869
+==============================================================================
+weekday-only: POS +4.91% (n 717, t 2.46) vs NEG -6.09% (n 813) -> difference +11.00pp, Welch t 3.94
+   2010-2017: weekday POS +7.39% (n 170) vs NEG -1.34%
+   2018-2026: weekday POS +4.14% (n 547) vs NEG -8.04%
+PASS W2 (gamma edge survives without weekends): YES

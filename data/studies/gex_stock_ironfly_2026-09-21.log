@@ -1,0 +1,26 @@
+5,952 flies on 741 entry dates; earnings-screened out 296; median ATM straddle bid-ask 4.4% of mid (SPY was 1.1%)
+
+== 2x iron fly, return on max risk at the real fill (%); t across entry dates ==
+      condition gamma  flies  dates  ret_risk  t_dates  half1    t1  half2    t2   win  usd_mean  worst_usd
+A own-stock GEX   POS   4415    728     -1.94    -1.88  -2.70 -1.37  -1.53 -1.30 55.31    -10.72   -4882.85
+A own-stock GEX   NEG   1241    496     -1.45    -0.67   1.94 -0.31  -2.97 -0.62 55.28    -23.52   -6058.85
+A own-stock GEX   ALL   5656    738     -1.83    -1.43  -1.79 -0.81  -1.86 -1.19 55.30    -13.53   -6058.85
+      B SPY GEX   POS   2728    334      0.85     0.58  -1.24 -0.17   1.80  0.87 56.93     15.12   -5519.10
+      B SPY GEX   NEG   2912    402     -4.43    -2.28  -2.39 -0.92  -5.65 -2.22 53.64    -40.01   -6058.85
+      B SPY GEX   ALL   5640    736     -1.87    -1.47  -1.88 -0.86  -1.87 -1.19 55.23    -13.35   -6058.85
+PASS A own-stock GEX: no
+PASS B SPY GEX: no
+
+per name (all entries / own-POS / SPY-POS, mean % on risk; n; median bid-ask %):
+       all    n    ba  own_POS  spy_POS
+tk                                     
+AAPL   0.8  706   2.5      0.9      5.1
+AMD    1.7  486   3.0      1.4      4.6
+AMZN  -2.9  670   5.0     -1.7      0.4
+AVGO  -5.8  485  11.1     -3.6     -4.5
+GOOGL -7.2  565   7.9     -6.9     -2.9
+META   3.9  187   2.8      2.0     10.0
+MSFT  -3.2  644   4.4     -3.7     -2.4
+NFLX   1.1  703   5.6     -0.2      2.4
+NVDA  -6.1  597   3.6     -7.2     -6.6
+TSLA   2.1  613   3.1      3.0      7.9

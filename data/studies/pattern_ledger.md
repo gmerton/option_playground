@@ -3,7 +3,7 @@
 _Every entry pattern tested with `lib.studies.pattern_test`, newest last._
 
 **Bar to pass:** beats the same-name random control, positive in both halves, |t| >= 3.
-**Multiple testing:** 50 patterns tested so far — at 5% significance, expect ~2.5 to clear by chance. Discount accordingly.
+**Multiple testing:** 69 patterns tested so far — at 5% significance, expect ~3.5 to clear by chance. Discount accordingly.
 
 | tested | name | timeframe | n | best_arm | meanR | ctrl | edge | t | half1 | half2 | passed | note |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -57,3 +57,22 @@ _Every entry pattern tested with `lib.studies.pattern_test`, newest last._
 | 2026-09-19 | ORB9 opening-range break | intraday | 2246 | swing_trail | 0.461 | 0.691 | -0.23 | 1.232 | nan | nan | False | RERUN 2026-09-19 with honest controls; ctrl=post (random LATER minute, same name-day); xname = random other name with bars that day, same minute; xname ctrl 0.312 edge +0.149; intraday arms edge -0.02..+0.04 post / -0.02..+0.03 xname, all arms -0.25..-0.30R |
 | 2026-09-19 | LVL pivot break | intraday | 685 | swing_trail | 0.89 | 1.142 | -0.253 | 2.44 | nan | nan | False | RERUN 2026-09-19 with honest controls; ctrl=post (random LATER minute, same name-day); xname = random other name with bars that day, same minute; xname ctrl 0.803 edge +0.087; intraday arms edge within +/-0.015 on both controls |
 | 2026-09-19 | Bouncy ball (Breitstein short) | intraday | 1430 | t2R | -0.408 | -0.459 | 0.051 | -9.867 | -0.435 | -0.391 | False | RERUN 2026-09-19 with honest controls; ctrl=post (random LATER minute, same name-day); xname = random other name with bars that day, same minute; xname ctrl -0.422 edge +0.015; every arm -0.41..-0.67R on signal AND both controls: shorting these name-days loses regardless of the trigger |
+| 2026-09-21 | universe test 2026-09-21: house breakout in TT | daily | 1517 | stop_hold | -0.108 | -0.246 | 0.138 | -0.059 | -0.159 | -0.082 | False | pre-registered universe test; house = close entry, day-low stop, hold 60; ctrl=post |
+| 2026-09-21 | universe test 2026-09-21: house breakout in AH | daily | 2499 | t1R | -0.27 | -0.212 | -0.058 | -6.971 | -0.235 | -0.29 | False | pre-registered universe test; house = close entry, day-low stop, hold 60; ctrl=post |
+| 2026-09-21 | universe test 2026-09-21: house breakout in INT | daily | 1192 | stop_hold | 0.077 | -0.134 | 0.211 | 1.832 | 0.033 | 0.101 | False | pre-registered universe test; house = close entry, day-low stop, hold 60; ctrl=post |
+| 2026-09-21 | universe test 2026-09-21: house breakout in HYB-A | daily | 1229 | stop_hold | 0.195 | -0.025 | 0.22 | 2.844 | -0.067 | 0.33 | False | pre-registered universe test; house = close entry, day-low stop, hold 60; ctrl=post |
+| 2026-09-21 | universe test 2026-09-21: house breakout in HYB-B | daily | 1221 | stop_hold | -0.048 | -0.126 | 0.079 | 1.734 | -0.047 | -0.048 | False | pre-registered universe test; house = close entry, day-low stop, hold 60; ctrl=post |
+| 2026-09-21 | VWAP rejection short 2nd touch 2026-09-21 | intraday | 1900 | vwap_flip | -0.258 | -0.268 | 0.011 | -9.178 | -0.298 | -0.216 | False | pre-registered (SNDK 9/21); flush>=0.3ADR by 10:30, falling VWAP, touch within 0.15%, rejection close <= VWAP-0.1ADR, stop touch-high+0.1ADR; arm 2nd |
+| 2026-09-21 | VWAP rejection short 1st touch 2026-09-21 | intraday | 2703 | next_close | -0.276 | -0.363 | 0.087 | -3.622 | -0.454 | -0.104 | False | pre-registered (SNDK 9/21); flush>=0.3ADR by 10:30, falling VWAP, touch within 0.15%, rejection close <= VWAP-0.1ADR, stop touch-high+0.1ADR; arm 1st |
+| 2026-09-21 | levels 2026-09-21: PDH BREAK | intraday | 5784 | vwap_flip | -0.092 | -0.07 | -0.022 | -11.125 | -0.074 | -0.112 | False | pre-registered level_trigger_test_2026-09-21.md |
+| 2026-09-21 | levels 2026-09-21: PDH HOLD | intraday | 5532 | time30 | -0.083 | -0.066 | -0.017 | -11.255 | -0.075 | -0.092 | False | pre-registered level_trigger_test_2026-09-21.md |
+| 2026-09-21 | levels 2026-09-21: PDL BREAK | intraday | 4834 | t1R | -0.065 | -0.104 | 0.039 | -2.555 | -0.02 | -0.109 | False | pre-registered level_trigger_test_2026-09-21.md |
+| 2026-09-21 | levels 2026-09-21: PDL HOLD | intraday | 5607 | stop_close | -0.07 | -0.103 | 0.033 | -2.559 | -0.019 | -0.119 | False | pre-registered level_trigger_test_2026-09-21.md |
+| 2026-09-21 | levels 2026-09-21: EMA21 BREAK | intraday | 2736 | time30 | -0.088 | -0.092 | 0.003 | -9.641 | -0.076 | -0.101 | False | pre-registered level_trigger_test_2026-09-21.md |
+| 2026-09-21 | levels 2026-09-21: EMA21 HOLD | intraday | 2943 | time30 | -0.087 | -0.088 | 0.001 | -9.904 | -0.08 | -0.095 | False | pre-registered level_trigger_test_2026-09-21.md |
+| 2026-09-21 | levels 2026-09-21: SMA50 BREAK | intraday | 1550 | vwap_flip | -0.07 | -0.065 | -0.005 | -6.023 | -0.068 | -0.073 | False | pre-registered level_trigger_test_2026-09-21.md |
+| 2026-09-21 | levels 2026-09-21: SMA50 HOLD | intraday | 1562 | time30 | -0.09 | -0.083 | -0.008 | -8.543 | -0.097 | -0.084 | False | pre-registered level_trigger_test_2026-09-21.md |
+| 2026-09-21 | levels 2026-09-21: AVWAP BREAK | intraday | 3696 | stop_close | -0.071 | -0.073 | 0.002 | -2.623 | -0.018 | -0.129 | False | pre-registered level_trigger_test_2026-09-21.md |
+| 2026-09-21 | levels 2026-09-21: AVWAP HOLD | intraday | 4039 | t1R | -0.064 | -0.074 | 0.01 | -3.066 | -0.029 | -0.099 | False | pre-registered level_trigger_test_2026-09-21.md |
+| 2026-09-21 | levels 2026-09-21: ORH BREAK | intraday | 10427 | vwap_flip | -0.079 | -0.077 | -0.002 | -5.541 | -0.058 | -0.102 | False | pre-registered level_trigger_test_2026-09-21.md |
+| 2026-09-21 | levels 2026-09-21: ORH HOLD | intraday | 7746 | vwap_flip | -0.077 | -0.058 | -0.02 | -6.802 | -0.058 | -0.098 | False | pre-registered level_trigger_test_2026-09-21.md |

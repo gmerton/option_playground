@@ -1,0 +1,10 @@
+Straddle price^2 used as the implied variance of the day (pi/2 scaling ignored: ratios compare POS vs NEG, not levels)
+
+2010-17 POS            n  172 | realised/implied variance: total 1.19 = overnight 0.63 + trading hours 0.62 (cross -0.06) | overnight share of realised 50%
+2010-17 NEG            n  241 | realised/implied variance: total 1.20 = overnight 0.50 + trading hours 0.65 (cross +0.05) | overnight share of realised 44%
+2018-26 POS            n  756 | realised/implied variance: total 1.02 = overnight 0.48 + trading hours 0.62 (cross -0.08) | overnight share of realised 44%
+2018-26 NEG            n  774 | realised/implied variance: total 1.55 = overnight 0.71 + trading hours 0.84 (cross +0.01) | overnight share of realised 46%
+all  POS               n  928 | realised/implied variance: total 1.04 = overnight 0.50 + trading hours 0.62 (cross -0.08) | overnight share of realised 44%
+all  NEG               n 1015 | realised/implied variance: total 1.51 = overnight 0.68 + trading hours 0.81 (cross +0.01) | overnight share of realised 46%
+
+POS minus NEG, per unit of implied variance: overnight -0.19, trading hours -0.19

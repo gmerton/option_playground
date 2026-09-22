@@ -1,0 +1,27 @@
+SPY 1-day straddles: 1,943 days 2010-03-31 -> 2026-02-23; negative-GEX 1,015, positive 928; median bid-ask 1.1% of mid
+
+== Mechanism: realised/implied move ratio on NEG, controlling for log VIX(t-1) (Newey-West, 5 lags) ==
+  full       n  1943  b_NEG +0.169  t +4.72  | ratio NEG 1.010  POS 0.853
+  2010-2017  n   413  b_NEG +0.082  t +0.89  | ratio NEG 0.906  POS 0.819
+  2018-2026  n  1530  b_NEG +0.213  t +5.50  | ratio NEG 1.042  POS 0.861
+
+== Returns on premium (%), by gamma sign ==
+   sample gamma    n  implied  ratio  long_mid  long_fill  t_long  short_fill  t_short  short_win  worst_short_pct
+     full   POS  928     0.53   0.85    -14.72     -15.72   -6.63       13.68     5.61      66.81          -603.50
+     full   NEG 1015     0.84   1.01      1.00      -0.05   -0.02       -2.10    -0.86      55.07          -510.16
+2010-2017   POS  172     0.45   0.82    -18.12     -20.10   -2.95       16.04     2.24      72.09          -603.50
+2010-2017   NEG  241     0.70   0.91     -9.42     -11.67   -2.60        6.97     1.47      60.17          -413.72
+2018-2026   POS  756     0.56   0.86    -13.94     -14.72   -5.97       13.15     5.23      65.61          -287.59
+2018-2026   NEG  774     0.89   1.04      4.24       3.56    1.27       -4.92    -1.73      53.49          -510.16
+
+short on EVERY day: +5.44% (t 3.13, n 1943); short on POS days only +13.68% -> difference +8.24pp (POS vs NEG gap +15.78pp, Welch t 4.57)
+worst short days (POS): [-604.0, -518.0, -350.0]% of credit; $ per straddle worst -1,060, mean +36.9
+
+PASS item 2 (long on NEG): no | PASS item 1 (short on POS): YES
+
+by year (long_fill on NEG / short_fill on POS, %):
+yr         2010  2011  2012  2013  2014  2015  2016  2017  2018  2019  2020   2021   2022   2023   2024   2025  2026
+long_NEG  -31.8 -12.8  -2.4 -13.7   6.2  10.2 -25.0 -26.5   4.0   6.9   7.0   15.5   -0.3   -1.2    5.6    7.6 -12.5
+n_NEG      21.0  34.0  33.0  24.0  26.0  33.0  36.0  34.0  78.0  55.0  65.0   39.0  140.0  148.0   98.0  128.0  23.0
+short_POS  40.8  12.9  43.0  35.5  25.3  15.6  -6.4  16.0  -5.6  18.0   9.1   16.5   -1.6   15.0   12.6   23.6  -1.8
+n_POS       5.0   7.0   7.0  17.0  16.0  19.0  34.0  67.0  63.0  96.0  89.0  114.0   27.0   95.0  147.0  113.0  12.0

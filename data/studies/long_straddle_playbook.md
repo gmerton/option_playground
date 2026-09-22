@@ -33,7 +33,7 @@ gate already removes 98% of earnings trades as a byproduct. See *Earnings* below
 expiry is a 7-day gap; the query targeted 10 DTE with ±5 tolerance, so 7 won ~always.
 Observed: **88.0% of trades at DTE 7, 7.8% at 14, only 0.2% at an actual 10** (mean 7.71,
 median 7). No result changes — every backtest in this document was already run on 7-DTE
-trades. Only the label and the stop rationale were wrong. **Other DTEs are untested.**
+trades. Only the label and the stop rationale were wrong. ~~Other DTEs are untested.~~ **8–11 DTE tested 2026-09-21: NULL — enter Fridays only** (7 DTE +6.91% at a real fill; Mon–Thu entries 5.7–8.5pp worse on the same name and expiry; `straddle_dte_study_2026-09-21.md`).
 
 ---
 

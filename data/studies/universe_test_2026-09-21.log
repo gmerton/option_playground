@@ -1,0 +1,308 @@
+panel (1939, 1738), 2019-01-02 -> 2026-09-18; test window 2020-01-01 ->
+
+== Q3. Walkability ==
+  arm  names_med  names_p10  names_p90  monthly_turnover  adr_med  addv_med_m
+   TT       66.0       28.0      108.0              39.9      2.8       422.9
+   AH       72.0       19.0      148.0              39.9      3.7       327.8
+  INT       35.0        9.0       62.0              38.7      3.5       523.3
+HYB-A       20.0        5.0       65.0              50.6      5.6       357.5
+HYB-B       18.0        5.0       66.4              53.3      5.2       285.1
+
+== Q1. Does the universe select? member forward return vs the eligible panel, same dates (%) ==
+horizon   arm  dates  member_ret  panel_ret  excess    t  half1  half2  pos_dates
+     5d    TT    334        0.32       0.23    0.08 0.68   0.12   0.05      55.09
+     5d    AH    331        0.61       0.26    0.24 1.85   0.16   0.31      54.68
+     5d   INT    322        0.76       0.24    0.41 2.39   0.46   0.37      56.21
+     5d HYB-A    312        0.92       0.23    0.54 2.19   0.51   0.56      58.01
+     5d HYB-B    312        0.68       0.20    0.43 1.90   0.32   0.52      55.45
+    20d    TT     82        1.58       1.16    0.48 1.00   0.72   0.29      57.32
+    20d    AH     83        2.15       1.13    1.07 2.08   0.98   1.15      56.63
+    20d   INT     78        2.60       1.17    1.60 2.47   1.81   1.46      61.54
+    20d HYB-A     78        3.83       1.00    1.94 1.91   1.27   2.49      57.69
+    20d HYB-B     77        3.38       1.03    2.17 2.33   1.66   2.57      58.44
+
+
+====================================================================================================
+universe test 2026-09-21: house breakout in ALL: 8,156 breakouts
+====================================================================================================
+control = post (22,412 control trades)
+
+=== universe test 2026-09-21: house breakout in ALL (daily) — 8,152 signals, 1098 names, 2020-01-02 -> 2026-09-17 ===
+                n  meanR   medR     win    p90       t   ctrl   edge
+stop_hold  8152.0 -0.023 -1.244  21.749  5.916   0.502  0.069 -0.093
+t1R        8152.0 -0.317 -1.027  48.933  1.000 -10.618 -0.249 -0.068
+t2R        8152.0 -0.252 -1.125  37.402  2.000  -6.139 -0.159 -0.093
+trail_bar  8152.0 -0.092 -0.474  34.335  2.019  -0.762 -0.023 -0.070
+ema20      8152.0 -0.117 -1.097  28.238  3.189  -0.652 -0.012 -0.105
+
+by half (n 3020 / 5132):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.099         0.021
+t1R             -0.326        -0.311
+t2R             -0.309        -0.218
+trail_bar       -0.212        -0.022
+ema20           -0.282        -0.020
+
+best arm by edge: t1R | passes the bar (beats control, both halves positive, |t|>=3): no
+control = xname (24,456 control trades)
+
+=== universe test 2026-09-21: house breakout in ALL [xname in-mask] (daily) — 8,152 signals, 1098 names, 2020-01-02 -> 2026-09-17 ===
+                n  meanR   medR     win    p90       t   ctrl   edge
+stop_hold  8152.0 -0.023 -1.244  21.749  5.916   0.502 -0.008 -0.015
+t1R        8152.0 -0.317 -1.027  48.933  1.000 -10.618 -0.233 -0.084
+t2R        8152.0 -0.252 -1.125  37.402  2.000  -6.139 -0.147 -0.104
+trail_bar  8152.0 -0.092 -0.474  34.335  2.019  -0.762 -0.075 -0.017
+ema20      8152.0 -0.117 -1.097  28.238  3.189  -0.652 -0.101 -0.016
+
+by half (n 3020 / 5132):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.099         0.021
+t1R             -0.326        -0.311
+t2R             -0.309        -0.218
+trail_bar       -0.212        -0.022
+ema20           -0.282        -0.020
+
+best arm by edge: stop_hold | passes the bar (beats control, both halves positive, |t|>=3): no
+
+
+====================================================================================================
+universe test 2026-09-21: house breakout in TT: 1,520 breakouts
+====================================================================================================
+control = post (4,302 control trades)
+
+=== universe test 2026-09-21: house breakout in TT (daily) — 1,517 signals, 313 names, 2020-01-07 -> 2026-09-17 ===
+                n  meanR   medR     win    p90      t   ctrl   edge
+stop_hold  1517.0 -0.108 -1.278  20.567  6.134 -0.059 -0.246  0.138
+t1R        1517.0 -0.278  1.000  50.956  1.000 -5.530 -0.267 -0.011
+t2R        1517.0 -0.202 -1.108  39.420  2.000 -2.422 -0.163 -0.039
+trail_bar  1517.0 -0.026 -0.482  35.399  2.317  0.334  0.006 -0.033
+ema20      1517.0 -0.066 -1.099  29.005  3.669  0.099 -0.043 -0.023
+
+by half (n 515 / 1002):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.159        -0.082
+t1R             -0.239        -0.298
+t2R             -0.144        -0.231
+trail_bar       -0.109         0.016
+ema20           -0.027        -0.086
+
+best arm by edge: stop_hold | passes the bar (beats control, both halves positive, |t|>=3): no
+control = xname (4,551 control trades)
+
+=== universe test 2026-09-21: house breakout in TT [xname in-mask] (daily) — 1,517 signals, 313 names, 2020-01-07 -> 2026-09-17 ===
+                n  meanR   medR     win    p90      t   ctrl   edge
+stop_hold  1517.0 -0.108 -1.278  20.567  6.134 -0.059 -0.105 -0.003
+t1R        1517.0 -0.278  1.000  50.956  1.000 -5.530 -0.254 -0.024
+t2R        1517.0 -0.202 -1.108  39.420  2.000 -2.422 -0.188 -0.014
+trail_bar  1517.0 -0.026 -0.482  35.399  2.317  0.334 -0.065  0.039
+ema20      1517.0 -0.066 -1.099  29.005  3.669  0.099 -0.121  0.055
+
+by half (n 515 / 1002):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.159        -0.082
+t1R             -0.239        -0.298
+t2R             -0.144        -0.231
+trail_bar       -0.109         0.016
+ema20           -0.027        -0.086
+
+best arm by edge: ema20 | passes the bar (beats control, both halves positive, |t|>=3): no
+
+
+====================================================================================================
+universe test 2026-09-21: house breakout in AH: 2,502 breakouts
+====================================================================================================
+control = post (7,099 control trades)
+
+=== universe test 2026-09-21: house breakout in AH (daily) — 2,499 signals, 392 names, 2020-01-02 -> 2026-09-17 ===
+                n  meanR   medR     win    p90      t   ctrl   edge
+stop_hold  2499.0  0.114 -1.264  22.209  7.295  2.145  0.183 -0.069
+t1R        2499.0 -0.270  1.000  51.140  1.000 -6.971 -0.212 -0.058
+t2R        2499.0 -0.200 -1.118  39.256  2.000 -3.140 -0.085 -0.115
+trail_bar  2499.0 -0.057 -0.475  35.214  2.163  0.189  0.061 -0.118
+ema20      2499.0  0.008 -1.106  28.812  4.044  1.170  0.069 -0.061
+
+by half (n 913 / 1586):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.071         0.220
+t1R             -0.235        -0.290
+t2R             -0.220        -0.188
+trail_bar       -0.156         0.000
+ema20           -0.194         0.125
+
+best arm by edge: t1R | passes the bar (beats control, both halves positive, |t|>=3): no
+control = xname (7,497 control trades)
+
+=== universe test 2026-09-21: house breakout in AH [xname in-mask] (daily) — 2,499 signals, 392 names, 2020-01-02 -> 2026-09-17 ===
+                n  meanR   medR     win    p90      t   ctrl   edge
+stop_hold  2499.0  0.114 -1.264  22.209  7.295  2.145 -0.001  0.115
+t1R        2499.0 -0.270  1.000  51.140  1.000 -6.971 -0.280  0.010
+t2R        2499.0 -0.200 -1.118  39.256  2.000 -3.140 -0.169 -0.030
+trail_bar  2499.0 -0.057 -0.475  35.214  2.163  0.189 -0.107  0.050
+ema20      2499.0  0.008 -1.106  28.812  4.044  1.170 -0.143  0.151
+
+by half (n 913 / 1586):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.071         0.220
+t1R             -0.235        -0.290
+t2R             -0.220        -0.188
+trail_bar       -0.156         0.000
+ema20           -0.194         0.125
+
+best arm by edge: ema20 | passes the bar (beats control, both halves positive, |t|>=3): no
+
+
+====================================================================================================
+universe test 2026-09-21: house breakout in INT: 1,194 breakouts
+====================================================================================================
+control = post (3,399 control trades)
+
+=== universe test 2026-09-21: house breakout in INT (daily) — 1,192 signals, 225 names, 2020-01-07 -> 2026-09-17 ===
+                n  meanR   medR     win    p90      t   ctrl   edge
+stop_hold  1192.0  0.077 -1.253  22.315  7.168  1.832 -0.134  0.211
+t1R        1192.0 -0.249  1.000  52.181  1.000 -4.487 -0.296  0.047
+t2R        1192.0 -0.132 -1.095  41.275  2.000 -0.879 -0.170  0.038
+trail_bar  1192.0  0.038 -0.444  36.577  2.501  1.278  0.043 -0.005
+ema20      1192.0  0.078 -1.092  30.285  4.277  1.762 -0.001  0.079
+
+by half (n 426 / 766):
+           <2023-01-01  >=2023-01-01
+stop_hold        0.033         0.101
+t1R             -0.182        -0.286
+t2R             -0.033        -0.187
+trail_bar       -0.039         0.082
+ema20            0.124         0.053
+
+best arm by edge: stop_hold | passes the bar (beats control, both halves positive, |t|>=3): no
+control = xname (3,576 control trades)
+
+=== universe test 2026-09-21: house breakout in INT [xname in-mask] (daily) — 1,192 signals, 225 names, 2020-01-07 -> 2026-09-17 ===
+                n  meanR   medR     win    p90      t   ctrl   edge
+stop_hold  1192.0  0.077 -1.253  22.315  7.168  1.832  0.019  0.058
+t1R        1192.0 -0.249  1.000  52.181  1.000 -4.487 -0.260  0.011
+t2R        1192.0 -0.132 -1.095  41.275  2.000 -0.879 -0.181  0.048
+trail_bar  1192.0  0.038 -0.444  36.577  2.501  1.278 -0.071  0.109
+ema20      1192.0  0.078 -1.092  30.285  4.277  1.762 -0.076  0.154
+
+by half (n 426 / 766):
+           <2023-01-01  >=2023-01-01
+stop_hold        0.033         0.101
+t1R             -0.182        -0.286
+t2R             -0.033        -0.187
+trail_bar       -0.039         0.082
+ema20            0.124         0.053
+
+best arm by edge: ema20 | passes the bar (beats control, both halves positive, |t|>=3): no
+
+
+====================================================================================================
+universe test 2026-09-21: house breakout in HYB-A: 1,231 breakouts
+====================================================================================================
+control = post (3,528 control trades)
+
+=== universe test 2026-09-21: house breakout in HYB-A (daily) — 1,229 signals, 270 names, 2020-01-07 -> 2026-09-17 ===
+                n  meanR   medR     win    p90      t   ctrl   edge
+stop_hold  1229.0  0.195 -1.258  22.295  8.179  2.844 -0.025  0.220
+t1R        1229.0 -0.244  1.000  52.319  1.000 -4.039 -0.255  0.012
+t2R        1229.0 -0.135 -1.107  41.172  2.000 -1.372 -0.129 -0.006
+trail_bar  1229.0 -0.001 -0.513  35.069  2.356  0.826  0.061 -0.062
+ema20      1229.0  0.170 -1.106  31.001  4.759  2.630  0.130  0.040
+
+by half (n 418 / 811):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.067         0.330
+t1R             -0.230        -0.251
+t2R             -0.177        -0.114
+trail_bar       -0.080         0.039
+ema20           -0.019         0.267
+
+best arm by edge: stop_hold | passes the bar (beats control, both halves positive, |t|>=3): no
+control = xname (3,682 control trades)
+
+=== universe test 2026-09-21: house breakout in HYB-A [xname in-mask] (daily) — 1,229 signals, 270 names, 2020-01-07 -> 2026-09-17 ===
+                n  meanR   medR     win    p90      t   ctrl   edge
+stop_hold  1229.0  0.195 -1.258  22.295  8.179  2.844 -0.084  0.279
+t1R        1229.0 -0.244  1.000  52.319  1.000 -4.039 -0.329  0.085
+t2R        1229.0 -0.135 -1.107  41.172  2.000 -1.372 -0.242  0.106
+trail_bar  1229.0 -0.001 -0.513  35.069  2.356  0.826 -0.064  0.063
+ema20      1229.0  0.170 -1.106  31.001  4.759  2.630 -0.117  0.287
+
+by half (n 418 / 811):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.067         0.330
+t1R             -0.230        -0.251
+t2R             -0.177        -0.114
+trail_bar       -0.080         0.039
+ema20           -0.019         0.267
+
+best arm by edge: ema20 | passes the bar (beats control, both halves positive, |t|>=3): no
+
+
+====================================================================================================
+universe test 2026-09-21: house breakout in HYB-B: 1,222 breakouts
+====================================================================================================
+control = post (3,427 control trades)
+
+=== universe test 2026-09-21: house breakout in HYB-B (daily) — 1,221 signals, 337 names, 2020-01-07 -> 2026-09-17 ===
+                n  meanR   medR     win    p90      t   ctrl   edge
+stop_hold  1221.0 -0.048 -1.265  20.557  6.312  1.734 -0.126  0.079
+t1R        1221.0 -0.304  0.103  50.041  1.000 -4.507 -0.255 -0.048
+t2R        1221.0 -0.226 -1.115  38.657  2.000 -1.766 -0.159 -0.067
+trail_bar  1221.0 -0.093 -0.558  32.105  2.226  0.462 -0.019 -0.074
+ema20      1221.0  0.004 -1.117  28.829  4.049  1.923  0.000  0.004
+
+by half (n 417 / 804):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.047        -0.048
+t1R             -0.257        -0.328
+t2R             -0.170        -0.255
+trail_bar       -0.116        -0.081
+ema20            0.001         0.006
+
+best arm by edge: stop_hold | passes the bar (beats control, both halves positive, |t|>=3): no
+control = xname (3,660 control trades)
+
+=== universe test 2026-09-21: house breakout in HYB-B [xname in-mask] (daily) — 1,221 signals, 337 names, 2020-01-07 -> 2026-09-17 ===
+                n  meanR   medR     win    p90      t   ctrl   edge
+stop_hold  1221.0 -0.048 -1.265  20.557  6.312  1.734 -0.128  0.080
+t1R        1221.0 -0.304  0.103  50.041  1.000 -4.507 -0.368  0.064
+t2R        1221.0 -0.226 -1.115  38.657  2.000 -1.766 -0.298  0.072
+trail_bar  1221.0 -0.093 -0.558  32.105  2.226  0.462 -0.118  0.025
+ema20      1221.0  0.004 -1.117  28.829  4.049  1.923 -0.181  0.185
+
+by half (n 417 / 804):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.047        -0.048
+t1R             -0.257        -0.328
+t2R             -0.170        -0.255
+trail_bar       -0.116        -0.081
+ema20            0.001         0.006
+
+best arm by edge: ema20 | passes the bar (beats control, both halves positive, |t|>=3): no
+
+
+== Q2. House breakout inside each universe (R; hold 60, close entry, day-low stop) ==
+universe      exit    n  names  dates  meanR      t  ctrl_post  edge_post  ctrl_xname  edge_xname  half1  half2
+     ALL     ema20 8152   1098   1360 -0.117 -0.652     -0.012     -0.105      -0.101      -0.016 -0.282 -0.020
+     ALL stop_hold 8152   1098   1360 -0.023  0.502      0.069     -0.093      -0.008      -0.015 -0.099  0.021
+     ALL       t2R 8152   1098   1360 -0.252 -6.139     -0.159     -0.093      -0.147      -0.104 -0.309 -0.218
+      TT     ema20 1517    313    732 -0.066  0.099     -0.043     -0.023      -0.121       0.055 -0.027 -0.086
+      TT stop_hold 1517    313    732 -0.108 -0.059     -0.246      0.138      -0.105      -0.003 -0.159 -0.082
+      TT       t2R 1517    313    732 -0.202 -2.422     -0.163     -0.039      -0.188      -0.014 -0.144 -0.231
+      AH     ema20 2499    392    904  0.008  1.170      0.069     -0.061      -0.143       0.151 -0.194  0.125
+      AH stop_hold 2499    392    904  0.114  2.145      0.183     -0.069      -0.001       0.115 -0.071  0.220
+      AH       t2R 2499    392    904 -0.200 -3.140     -0.085     -0.115      -0.169      -0.030 -0.220 -0.188
+     INT     ema20 1192    225    642  0.078  1.762     -0.001      0.079      -0.076       0.154  0.124  0.053
+     INT stop_hold 1192    225    642  0.077  1.832     -0.134      0.211       0.019       0.058  0.033  0.101
+     INT       t2R 1192    225    642 -0.132 -0.879     -0.170      0.038      -0.181       0.048 -0.033 -0.187
+   HYB-A     ema20 1229    270    616  0.170  2.630      0.130      0.040      -0.117       0.287 -0.019  0.267
+   HYB-A stop_hold 1229    270    616  0.195  2.844     -0.025      0.220      -0.084       0.279 -0.067  0.330
+   HYB-A       t2R 1229    270    616 -0.135 -1.372     -0.129     -0.006      -0.242       0.106 -0.177 -0.114
+   HYB-B     ema20 1221    337    606  0.004  1.923      0.000      0.004      -0.181       0.185  0.001  0.006
+   HYB-B stop_hold 1221    337    606 -0.048  1.734     -0.126      0.079      -0.128       0.080 -0.047 -0.048
+   HYB-B       t2R 1221    337    606 -0.226 -1.766     -0.159     -0.067      -0.298       0.072 -0.170 -0.255
+
+
+== HYBRID RULE: beats BOTH parents (TT, AH) in BOTH halves ==
+  HYB-A: Q1 20d excess beats both parents in both halves: True | Q2 ema20 meanR beats both parents in both halves: True  -> ADOPT-candidate
+  HYB-B: Q1 20d excess beats both parents in both halves: True | Q2 ema20 meanR beats both parents in both halves: False  -> ADOPT-candidate
+EXIT 0

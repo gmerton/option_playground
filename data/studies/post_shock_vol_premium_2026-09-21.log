@@ -1,0 +1,32 @@
+SPY 2009-12-02 -> 2026-02-27: 283 shock days in 156 episodes (89 DOWN)
+
+== Short ATM straddle, return on credit at the real fill (%); POST coefficient vs VIX-decile-matched normal days, episode-clustered t ==
+ h    n  post_n  post_eps  post_short  normal_short  b_POST  t_POST  b_half1    t1  b_half2    t2  b_ratio  t_ratio  b_DOWN  t_DOWN   b_UP  t_UP  post_fly  b_fly  t_fly
+ 1 1956     507       146        8.46          4.55    3.96    1.03    17.13  2.16     0.02  0.00    -0.04    -1.06    0.52    0.12   9.11  1.44      2.14   2.93   1.07
+ 5 3508     932       148        3.91          3.77    0.06    0.01     1.29  0.22    -1.54 -0.24    -0.00    -0.06    1.01    0.21  -1.31 -0.16     -1.62  -0.31  -0.10
+10 3175     839       124       -2.00          8.56  -10.75   -1.76    -4.54 -0.58   -14.32 -1.86     0.11     1.74   -3.53   -0.52 -20.67 -2.08     -4.49  -5.75  -1.58
+PASS h=1: no
+PASS h=5: no
+PASS h=10: no
+
+== ten worst post-shock episodes (mean short-straddle return across the window's entries, h=5 and h=10) ==
+h            5     10  start, first move %
+episode                                   
+63.0    -153.1 -200.3   (2015-08-10, 1.28)
+85.0    -136.2 -220.3   (2018-01-02, 0.71)
+74.0    -127.1 -136.7    (2017-02-03, 0.7)
+91.0     -89.6  -56.1  (2018-10-04, -0.79)
+51.0     -83.3 -112.4  (2014-02-03, -2.23)
+83.0     -80.7  -80.5   (2017-11-16, 0.85)
+86.0     -80.1  -92.3   (2018-01-11, 0.72)
+30.0     -73.3    NaN  (2012-06-21, -2.25)
+29.0     -71.1    NaN  (2012-06-01, -2.55)
+5.0      -63.3    NaN  (2010-06-29, -3.08)
+
+== DIAGNOSTIC (not a verdict): weekend, 1-day straddles from gex_spy_straddle_2026-09-21.csv ==
+                        n  realised_over_implied  short_ret_pct
+era              gap                                           
+before           1    847                  0.939          4.486
+                 3    195                  0.886         10.237
+daily-expiry era 1    664                  0.964          3.063
+                 3    164                  0.861         13.432
