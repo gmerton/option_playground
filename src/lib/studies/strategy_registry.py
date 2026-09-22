@@ -150,7 +150,7 @@ ALL_STRATEGIES: list[Strategy] = [
         avg_concurrent=2,
         freq_per_year=42,
         note="Regime-switch (4 regimes). $23.79 cum 2018-2026. Reg T ROC. Strangles: 2–3%.",
-        portfolio_alloc=4_000,
+        portfolio_alloc=0,   # RETIRED 2026-09-22: -4.6% net after costs (2026-09-08 review)
         caveats=[
             "per_year_roc uses credit as denominator for strangle years (inflated 10-13×); spread years are accurate",
             "Correct Reg T avg_trade_roc = +6.1% (strangles: $6-7/share margin vs $0.43-0.99 credit)",
@@ -184,7 +184,7 @@ ALL_STRATEGIES: list[Strategy] = [
         avg_concurrent=1,
         freq_per_year=13,
         note="ATM short straddle ~0.50Δ. No regime gate. ~13 entries/yr. $14.26 cum 2018-2026. Reg T ROC.",
-        portfolio_alloc=2_000,
+        portfolio_alloc=0,   # RETIRED 2026-09-22: +0.5%/trade, month-weighted -0.2%, t -0.31 (2026-09-22)
         caveats=[
             "per_year_roc uses credit as denominator (inflated); correct Reg T margin = 0.20×$28 + $0.44 = $6.04/share",
             "Correct Reg T avg_trade_roc = +2.3% (prior +17.4% used ~$0.44 credit as denominator)",

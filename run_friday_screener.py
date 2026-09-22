@@ -93,21 +93,7 @@ STRATEGIES: list[dict] = [
         "fwd_vol_warn":  1.20,   # avg=1.08; >1.20 = elevated (sweet spot ≤1.10)
         "note":          "oil IV premium — no VIX filter; post-restructuring (Jul 2020+)",
     },
-    {
-        "type":          "regime_spread",
-        "name":          "XLF Regime-Switching",
-        "alloc_key":     "XLF regime",
-        "ticker":        "XLF",
-        "profit_take":   0.50,
-        "fwd_vol_warn":  None,
-        "note":          "4-regime switch by 50MA×VIX; $21.74 cum 2018-2025",
-        "regime_strategies": {
-            "Bearish_HighIV": {"structure": "bull_put_spread",  "short_d": 0.35, "long_d": 0.25},
-            "Bearish_LowIV":  {"structure": "short_strangle",   "call_d":  0.20, "put_d":  0.25},
-            "Bullish_HighIV": {"structure": "short_strangle",   "call_d":  0.35, "put_d":  0.40},
-            "Bullish_LowIV":  {"structure": "bear_call_spread", "short_d": 0.35, "long_d": 0.25},
-        },
-    },
+    # RETIRED 2026-09-22: XLF Regime-Switching -- net -4.6% after costs in the 2026-09-08 review (bull put -8.8%, bear call -8.1%); never removed then.
     {
         "type":          "spread",
         "name":          "SOXX Bull Put Spread",
@@ -227,16 +213,7 @@ STRATEGIES: list[dict] = [
             "Bullish_LowIV":  {"structure": "skip"},
         },
     },
-    {
-        "type":          "straddle",
-        "name":          "UUP ATM Short Straddle",
-        "alloc_key":     "UUP straddle",
-        "ticker":        "UUP",
-        "profit_take":   0.50,
-        "max_ba_pct":    0.35,
-        "fwd_vol_warn":  None,
-        "note":          "ATM only (OTM illiquid); 73.1% win +17.4% ROC; verify chain in broker",
-    },
+    # RETIRED 2026-09-22: UUP ATM Short Straddle -- net +0.5%/trade, month-weighted -0.2%, t -0.31 (run_uup_straddle_significance.py); 14% bid-ask on a $0.35 credit.
     # RETIRED 2026-09-22 (run_tierc_significance.py): XOP Bull Put Spread -- net -3.1%/trade after costs (3 of 9 years positive).
     # ── Calendar strategies ───────────────────────────────────────────────────
     # RETIRED 2026-09-15 (calendar path study, data/studies/calendar_path_study.md, 5,920 real-bid/ask calendars):
@@ -261,15 +238,10 @@ TIER_MAP: dict[str, str] = {
     "BJ Bull Put Spread":       "U",   # 2026-09-22 cost+t check: t 1.44
     "GEV Bull Put Spread":      "U",   # 2026-09-22 cost+t check: t 2.98, k 60, 2024+
     "CLS Bull Put Spread":      "U",   # 2026-09-22 cost+t check: t 1.03
-    "UUP ATM Short Straddle":   "C",
 }
 
 # For regime strategies, tier depends on which regime fires
 REGIME_TIER_MAP: dict[str, dict[str, str]] = {
-    "XLF Regime-Switching": {
-        "Bearish_HighIV": "B", "Bearish_LowIV": "C",
-        "Bullish_HighIV": "C", "Bullish_LowIV": "C",
-    },
     # 2026-09-22 ledger-wide correction (data/studies/multiple_testing_correction_2026-09-22.md):
     #   S = the certified index stress bucket (one shared allocation), U = uncertified -> skip or 1 token contract
     "QQQ Regime-Optimized": {
