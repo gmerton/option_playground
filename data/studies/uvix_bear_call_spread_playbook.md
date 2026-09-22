@@ -1,5 +1,7 @@
 # UVIX Bear Call Spread — Trading Playbook
 
+> ⛔ **2026-09-22: net-NEGATIVE after costs** (`run_uvxy_significance.py --ticker UVIX --no-put`): +11.0%/trade and 93% win at mid become **−8.8%/trade, 46% win, t −2.81, 1 of 5 years** with the house cost model — costs (~$0.26/share round trip) ≈ the median $0.25 credit. Screener: Tier U. Do not fund.
+
 **Last updated:** 2026-03-05
 **Status:** Parameters confirmed. Ready for live trading consideration.
 

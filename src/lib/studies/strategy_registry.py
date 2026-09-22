@@ -74,8 +74,8 @@ ALL_STRATEGIES: list[Strategy] = [
         win_rate=74.6,
         avg_concurrent=4,   # 2 positions × 2 legs (call spread + put) each
         freq_per_year=40,
-        note="Bear call spread always + short put when VIX<20. Equal-capital blend.",
-        portfolio_alloc=10_000,
+        note="RETIRED 2026-09-22: net -3.46%/trade after costs (t -2.65). Bear call spread always + short put when VIX<20.",
+        portfolio_alloc=0,   # was 10_000; run_uvxy_significance.py
         caveats=["Put leg is naked short — undefined max loss; size conservatively"],
     ),
 

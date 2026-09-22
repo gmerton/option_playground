@@ -47,32 +47,8 @@ from lib.studies.strategy_registry import STRATEGY_MAP
 
 STRATEGIES: list[dict] = [
     # ── Spread strategies ─────────────────────────────────────────────────────
-    {
-        "type":          "spread",
-        "name":          "UVXY Bear Call Spread",
-        "alloc_key":     "UVXY combined",
-        "ticker":        "UVXY",
-        "cp":            "call",
-        "short_delta":   0.50,
-        "long_delta":    0.40,
-        "vix_cond":      None,
-        "profit_take":   0.50,
-        "fwd_vol_warn":  1.50,   # avg=1.34; >1.50 = extreme contango (vol spike loading)
-        "note":          "structural decay trade — enter every Friday",
-    },
-    {
-        "type":          "spread",
-        "name":          "UVXY Short Put",
-        "alloc_key":     "UVXY combined",
-        "ticker":        "UVXY",
-        "cp":            "put",
-        "short_delta":   0.40,
-        "long_delta":    None,
-        "vix_cond":      ("lt", 20),
-        "profit_take":   0.50,
-        "fwd_vol_warn":  1.50,   # same underlying as call spread
-        "note":          "only when VIX < 20; skip in elevated-fear regimes",
-    },
+    # RETIRED 2026-09-22 (run_uvxy_significance.py): UVXY bear call 0.50/0.40 + VIX<20 naked put is net-NEGATIVE after
+    #   costs (-3.46%/trade, t -2.65, 1 of 9 years positive); the call spread pays ~13% of its max loss in costs.
     {
         "type":          "spread",
         "name":          "UVIX Bear Call Spread",
@@ -349,9 +325,7 @@ MAX_SPREAD_PCT = 0.25   # max (ask-bid)/mid on the short leg
 # ── Tier lookup tables ────────────────────────────────────────────────────────
 
 TIER_MAP: dict[str, str] = {
-    "UVXY Bear Call Spread":    "U",   # 2026-09-22: no t on file, naked put leg -> uncertified until tested
-    "UVXY Short Put":           "U",
-    "UVIX Bear Call Spread":    "C",
+    "UVIX Bear Call Spread":    "U",   # 2026-09-22: net -8.8%/trade after costs, t -2.81 (run_uvxy_significance.py --ticker UVIX --no-put)
     "TLT Bear Call Spread":     "C",
     "TMF Bear Call Spread":     "P",
     "GLD Bull Put Spread":      "C",
@@ -1725,7 +1699,6 @@ def _print_sizing(
     print(
         "\n  Fixed model: contracts = (portfolio_alloc / avg_concurrent) / max_loss_per_contract"
         "\n  Sharpe-wtd: distributes 20% of portfolio across today's active strategies by Sharpe ratio"
-        "\n  For UVXY combined: risk_per_trade = $2,500 (call spread leg); put runs same $"
         "\n  Index stress bucket: SPY + QQQ (+ SPX condor) bearish-high-IV = ONE allocation; contracts are the TOTAL, prefer SPY/SPX"
         "\n  1* = uncertified regime (2026-09-22 correction): skip, or 1 token contract at most"
         "\n  Always round down contracts; verify fills before sizing up"
