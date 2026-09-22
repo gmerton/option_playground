@@ -65,6 +65,10 @@ ORB_HOLD_ADR = 0.15            # session low may undercut the 9 EMA by this many
 ORB_INDEX_GATE = True          # False = never suppress on the index (study mode: collect every ORB9 and tag it)
 ORB_GROUP_PEERS_MIN = 3        # a group "leads" when its ETF is above ITS VWAP, or >= ORB_GROUP_PEERS_FRAC of >= this many peers are green
 ORB_GROUP_PEERS_FRAC = 0.67
+ORB_STOP_FLOOR_ADR = 0.60      # ORB9 stop is at least this far under the entry (2026-09-21, CBRS stopped by a 0.06-ADR stop).
+                               # The structural stop (max of OR low, trigger-bar low) was median 0.15 ADR, 96% under 0.4.
+                               # Re-scored 1,782 ORB9 alerts at a 0.10% round trip: structural +0.14R t0.6 (trimmed -0.15,
+                               # 2nd half -0.08) vs floor 0.6 +0.08R t3.4, both halves +, stop-outs 73% -> 17%. 0 = off.
 # --- LVL parameters ----------------------------------------------------------------
 LVL_NOT_BEFORE = time(9, 45)   # after the 15-min opening range (a gap through the level in minute one is a chase)
 LVL_BY = time(15, 30)          # a break in the last half hour can't be managed
@@ -400,7 +404,11 @@ def detect_orb9(book: SymbolBook, ctx: DailyCtx, st: SymbolState, b: Bar, idx: I
     if pace < ORB_MIN_PACE:
         return None
     st.orb_fired = True
-    stop = max(or_low, last5.low)
+    struct_stop = max(or_low, last5.low)
+    adr_px = last5.close * ctx.adr_pct / 100 if ctx.adr_pct else 0.0
+    stop = min(struct_stop, last5.close - ORB_STOP_FLOOR_ADR * adr_px) if adr_px else struct_stop
+    stop_adr = (last5.close - stop) / adr_px if adr_px else 0.0
+    floor_note = f", floored from {struct_stop:.2f}" if stop < struct_stop else ""
     rsf, rsm = rs_tags(book, ctx, idx, b.t)
     idx_note = (" | SPY < VWAP but GROUP LEADING" if (spy_below and group_leading) else
                 " | SPY < VWAP (gate off)" if spy_below else "")
@@ -408,11 +416,12 @@ def detect_orb9(book: SymbolBook, ctx: DailyCtx, st: SymbolState, b: Bar, idx: I
         idx_note += f" | 9 EMA NOT held (low {book.session_low:.2f} vs {ctx.ema9:.2f}, {(book.session_low / ctx.ema9 - 1) * 100 / ctx.adr_pct:+.2f} ADR)"
     msg = (f"ORB9 5-min close {last5.close:.2f} > OR high {or_high:.2f} | open {book.session_open:.2f} "
            f"({(book.session_open / ctx.prev_close - 1) * 100:+.1f}%) held 9 EMA {ctx.ema9:.2f} | "
-           f"stop {stop:.2f} ({(last5.close / stop - 1) * 100:.1f}%) | {adr_from_21(last5.close, ctx):+.1f} ADR vs 21 EMA | "
+           f"stop {stop:.2f} ({(last5.close / stop - 1) * 100:.1f}%, {stop_adr:.2f} ADR{floor_note}) | {adr_from_21(last5.close, ctx):+.1f} ADR vs 21 EMA | "
            f"vol pace {pace:.1f}x{' (light vol)' if pace < 1.2 else ''} | 15d high {ctx.high15:.2f}{gap_tag(book, ctx)}{idx_note}{rsm}")
     return Alert(book.symbol, "ORB9", b.t, last5.close, stop, msg, {
         "side": "long", **rsf, "or_high": round(or_high, 2), "open_pct": round((book.session_open / ctx.prev_close - 1) * 100, 2),
-        "ema9": round(ctx.ema9, 2), "stop_pct": round((last5.close / stop - 1) * 100, 2), "below_ema9": False,
+        "ema9": round(ctx.ema9, 2), "stop_pct": round((last5.close / stop - 1) * 100, 2), "stop_adr": round(stop_adr, 2),
+        "struct_stop": round(struct_stop, 2), "below_ema9": False,
         "adr_vs_21": round(adr_from_21(last5.close, ctx), 1), "vol_pace": round(pace, 1), "light_vol": pace < 1.2,
         "high15": round(ctx.high15, 2), "spy_below": bool(spy_below), "group_leading": group_leading, "held_9ema": held_9ema,
         "gap_adr": round((book.session_open / ctx.prev_close - 1) * 100 / ctx.adr_pct, 2) if ctx.adr_pct else 0.0})

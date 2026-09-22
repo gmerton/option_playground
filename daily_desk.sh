@@ -9,6 +9,29 @@ D=$(date +%F); OUT=data/watchlist; mkdir -p "$OUT"
 # (2026-09-20: a 9/04 local copy silently produced a two-week-old regime read).
 aws s3 cp s3://gmerton-stock-data/breakouts/minervini_matrix.parquet data/cache/minervini_matrix.parquet --only-show-errors \
   || echo "  (day-matrix pull failed; regime read uses the local copy -- check its as-of date)"
+# The preferred list is S3-owned (written nightly by the preferred-list-refresh Lambda); the breakout scan, the
+# reversal monitor and the alert monitor's --full universe read the LOCAL copy. Pull it every run
+# (2026-09-21: the local file was two months stale, from 2026-07-23). Keep the local copy if the pull fails or
+# comes back suspiciously short (the refresh Lambda itself refuses to write fewer than 20 names).
+LIST_TMP=$(mktemp)
+if aws s3 cp s3://gmerton-stock-data/breakouts/preferred_tickers.txt "$LIST_TMP" --only-show-errors \
+   && [ "$(grep -c . "$LIST_TMP")" -ge 20 ]; then
+  mv "$LIST_TMP" data/preferred_tickers.txt
+  N_LIST=$(grep -c . data/preferred_tickers.txt)
+  REFRESH=$(aws s3 cp s3://gmerton-stock-data/breakouts/refresh_latest.txt - 2>/dev/null)
+  N_REF=$(echo "$REFRESH" | sed -n 's/.*list: \([0-9]*\).*/\1/p' | head -1)
+  echo "  preferred list: $N_LIST names, refresh Lambda: $(echo "$REFRESH" | head -1 | sed 's/.*data through/data through/')"
+  # the list was written by something other than the last refresh (e.g. an old deploy pushed a local copy)
+  [ -n "$N_REF" ] && [ "$N_REF" != "$N_LIST" ] && \
+    echo "  ⚠ LIST MISMATCH: the refresh Lambda wrote $N_REF names but S3 now holds $N_LIST -- something overwrote it after the refresh"
+else
+  rm -f "$LIST_TMP"
+  echo "  (preferred-list pull failed or too short; scans use the local copy from $(date -r data/preferred_tickers.txt +%F))"
+fi
+# SPY positive-gamma 1-day iron fly, forward paper trade (data/studies/gex_spy_ironfly_2026-09-21.md): settle due
+# trades, compute live GEX, log the signal and a paper fly if gamma is positive. Needs 15:30 ET or later; idempotent.
+echo "== 0 GEX iron-fly paper trade"
+$PY run_gex_fly_paper.py --close 2>&1 | grep -v "^\[dry\]" | tail -6
 echo "== 1/6 regime read (descriptive; see run_regime_validation.py for why it is not a forecast)"
 $PY run_trailing_retro.py --window 21 2>/dev/null | sed -n 1,25p | tee "$OUT/regime_$D.txt"
 echo; echo "== 1b open book (Flex snapshot + live Tradier marks): what expires and what it is worth"

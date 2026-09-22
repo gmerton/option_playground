@@ -325,3 +325,29 @@ stay visible with the tag. (3) **"Name leads a weak group" does NOT earn the gro
 both curated halves ≤ +0.04): ILMN-type breaks stay gated; the exemption remains for a LEADING group only.
 (4) The daily-setup text is on every alert from here; it separated nothing on same-day R (pb50 +0.10 vs +0.09) and
 the ILMN-style swing trigger is +0.6pp/10s on the panel with flipping year signs -- context, not a gate.
+
+
+### ORB9 stop floor (2026-09-21)
+
+Prompted by CBRS 9/21: ORB9 at 10:14 @209.46, stop = trigger-bar low 208.69 = **0.06 ADR** (ADR 5.8% ≈ $12), stopped at
+10:20 by an ordinary 1-min bar while the break (OR high 207.05) never failed. ORB9 built its stop as max(OR low,
+trigger-bar low) and never went through the STOP IN NOISE check the short detectors use.
+
+`run_orb9_stop_floor_study.py` re-scored all 1,782 cached ORB9 alerts (2/2–9/10, same entries, hold to stop/close):
+structural stop median **0.15 ADR, 96% under 0.4 ADR**. R net of a round-trip cost (curated 1,411 / control 371):
+
+| stop | cost 0 | cost 0.10% | trimmed top 1% @0.10% | halves @0.10% | stopped | control @0.10% |
+|---|---|---|---|---|---|---|
+| structural | +0.43 (t1.9) | +0.14 (t0.6) | −0.15 | +0.32 / −0.08 | 73% | −0.33 |
+| floor 0.25 ADR | +0.14 | +0.07 | +0.05 | −0.00 / +0.15 | 54% | −0.19 |
+| floor 0.4 ADR | +0.13 | +0.08 (t2.6) | +0.07 | +0.05 / +0.13 | 35% | −0.11 |
+| **floor 0.6 ADR** | +0.11 | **+0.08 (t3.4)** | +0.07 | **+0.05 / +0.11** | 17% | −0.03 |
+| floor 1.0 ADR | +0.07 | +0.05 (t3.4) | +0.04 | +0.03 / +0.06 | 5% | −0.03 |
+
+The structural stop's mean is a few huge multiples on tiny risk; costs fall on 0.68% median risk vs 2.08% at 0.4 ADR,
+so it goes negative once trimmed or costed. **Adopted `ORB_STOP_FLOOR_ADR = 0.60`** (stop = min(structural,
+entry − 0.6 ADR); alert text shows `0.60 ADR, floored from X`; fields `stop_adr`, `struct_stop`). Size to the wider
+stop (≈¼ the shares at equal risk). This is stop mechanics, not an edge: the control set stays ≈0 at every floor and
+Stage A (trigger ≈ random entry) stands. Grade unchanged (rubric v2: no kind ranks on the control set). Replay CBRS
+9/21 with the floor: stop 203.05, session low after the alert 208.62 → not stopped. ⚠ Curated universe = hindsight;
+the floor was picked on the full sample (halves test stability only).

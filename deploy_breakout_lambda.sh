@@ -92,10 +92,21 @@ echo ">> build/lib (closure only): $(du -sh build/lib | cut -f1)"
 echo ">> Package: $(du -h breakout_function.zip | cut -f1) zipped, "\
 "$(du -sh build | cut -f1) unzipped"
 
-# ---- 2. upload code + ticker universe to S3 ---------------------------------
-echo ">> Uploading code + ticker list to s3://$BUCKET/..."
+# ---- 2. upload code to S3; the ticker universe is S3-owned -------------------
+# The preferred list in S3 is written nightly by the preferred-list-refresh Lambda (and by
+# run_refresh_preferred.py --push). Never push the local copy over it: on 2026-09-20 this step
+# replaced the fresh 89-name list with a July 23 local file. Seed S3 only if it has no list yet;
+# otherwise pull S3 down so the local copy (read by the desk scans) stays current.
+echo ">> Uploading code to s3://$BUCKET/$CODE_KEY..."
 aws s3 cp breakout_function.zip "s3://$BUCKET/$CODE_KEY" --only-show-errors
-aws s3 cp data/preferred_tickers.txt "s3://$BUCKET/$PREFIX/preferred_tickers.txt" --only-show-errors
+LIST_URI="s3://$BUCKET/$PREFIX/preferred_tickers.txt"
+if aws s3 ls "$LIST_URI" >/dev/null 2>&1; then
+  aws s3 cp "$LIST_URI" data/preferred_tickers.txt --only-show-errors
+  echo ">> Ticker list: kept S3's copy ($(grep -c . data/preferred_tickers.txt) names), synced it to data/preferred_tickers.txt"
+else
+  aws s3 cp data/preferred_tickers.txt "$LIST_URI" --only-show-errors
+  echo ">> Ticker list: none in S3 yet, seeded from data/preferred_tickers.txt"
+fi
 
 # ---- 3. create or update the function ----------------------------------------
 ENV_VARS="Variables={TRADIER_API_KEY=$TRADIER_API_KEY,BREAKOUT_BUCKET=$BUCKET,BREAKOUT_PREFIX=$PREFIX}"

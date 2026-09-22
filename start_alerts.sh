@@ -51,5 +51,19 @@ if [ "$(TZ=America/New_York date +%H%M)" -lt 0930 ]; then
   .venv/bin/python3 run_premarket_industries.py 2>/dev/null || echo "(pre-market industries skipped)"
 fi
 echo "${GRN}preflight ok${OFF}: TRADIER_API_KEY set, venv present, AWS profile $AWS_PROFILE$( [ ${#extra[@]} -eq 0 ] && echo ' (publishing to the journal site)' )"
+# Account give-back alarm (run_pnl_alarm.py): read-only IBKR day P&L, chimes when the day gives back $500 off its
+# high (and again at 40% off once the high > $1,000). Runs alongside the monitor in this terminal, stops at 16:00 ET.
+# Needs TWS open with the API on; if it isn't, the alarm prints why and exits without affecting the monitor.
+# Skip it with PNL_ALARM=0 ./start_alerts.sh
+if [ "${PNL_ALARM:-1}" != 0 ]; then
+  .venv/bin/python3 run_pnl_alarm.py 2> >(grep -v "^Error \|Unknown contract" >&2) | sed -u 's/^/[P\&L] /' &
+  echo "${GRN}P&L give-back alarm started${OFF} (lines prefixed [P&L]; PNL_ALARM=0 to skip)"
+fi
+# GEX iron-fly paper trade, 0DTE-at-the-open variant (secondary evidence): at 09:45 ET, if the last close signal was
+# positive gamma, log a paper 0DTE fly. Waits in the background; skipped if the monitor starts after 10:30 ET.
+if [ "$(TZ=America/New_York date +%H%M)" -lt 1030 ]; then
+  ( while [ "$(TZ=America/New_York date +%H%M)" -lt 0945 ]; do sleep 30; done
+    .venv/bin/python3 run_gex_fly_paper.py --open 2>&1 | sed -u 's/^/[GEX fly] /' ) &
+fi
 export PYTHONPATH=src
 exec .venv/bin/python3 run_universe_monitor.py --sound ${extra[@]+"${extra[@]}"} "$@"
