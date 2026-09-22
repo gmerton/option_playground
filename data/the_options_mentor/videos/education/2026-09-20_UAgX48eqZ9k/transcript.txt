@@ -1,0 +1,97 @@
+[00:17] Hello again everyone and welcome to the options mentor. Well, the market volatility coming out once again as we get below 15 on the VIX. There's some complacency there. Even with this war
+
+[00:29] going on. We did see, you know, earlier in the week when oil was higher, the market was quite tense. But now oil is down light sweet crude around 95 bucks. they uh are feeling a little better
+
+[00:42] about themselves even though inflation of course is is uh here and the Fed acknowledged that by raising rates and the market expects another rate um increase by the end of the year as we're
+
+[00:56] trying to or the Fed's trying to tamp down inflation and the market of course is much more subdued but the you know we're not you know near the all-time highs but we do have much lower
+
+[01:10] volatility, meaning there is some complacency, a little less worry in the market at this moment. Now, that can change any time. And as we get into this week, which isn't really full of market
+
+[01:22] news, you know, big reports or anything, uh we'll be relying, I suppose, mainly on, you know, what goes on in the Middle East or any other news that comes out. So, let's take a look at things here.
+
+[01:36] And if we just start out, I'm going to start out here by looking at the VIX chart. And we can see once again it's drifted lower. Been down here before, but always remember it can go right back
+
+[01:47] up. And we can see that here, right? Pretty intensely. That's kind of how volatility is. It normally would drift lower and really spike hard higher. So we're seeing it now in one of the lower
+
+[02:00] areas of the last several months. Right. [music] We've been a little lower, not much. a little below 14 as we're in 14.81 now and uh you know before that you got
+
+[02:13] to go way back here all the way back to January. So we're feeling good here towards the end of the year. We'll have to see how that holds on. Uh remember also there is a midterm election coming
+
+[02:26] up in November and that can often cause those big national election can often cause volatility as the market gets concerned about um who's getting elected and many times what they really like is
+
+[02:39] they like Congress [clears throat] to be pretty split so nothing can get done. That's what the market likes best. Probably best for all of us many times if nothing gets done. But u anyway,
+
+[02:50] they'll be uh looking at that. All right, so let's go over here and look at SPX real quick on the charts. And uh you can see tried to uh get back up towards 7700, well below, as I mentioned, the
+
+[03:04] all-time highs. Uh, in fact, there'll be some resistance along the way, probably at 7,700 and then again at 7750 before we could ever get up there. So, we'll have to see
+
+[03:17] if the market can pull that off here towards the end of the year. Might take, you know, a couple of months and get in that Santa Claus rally type of mode. Uh, but uh we'll see on that. So, what do we
+
+[03:29] do? Well, what can we do? The same thing, right? If the VIX is below 15, I just don't think there's a better trade than the calendar. Now, we can look at it in different ways, uh maybe different
+
+[03:42] configurations or different expirations, but I still think it's your best choice. Now, here I've modeled the 9th, uh which tomorrow, Monday, will be uh let's see how far out that is. Probably like 15
+
+[03:55] days, 19 days. All right. So, it will be 19 days out tomorrow or 18. And uh we have it here 4 days wide. I just placed it at the money based on Friday's close. Of course, if you like calendars and
+
+[04:09] you're know what you're doing with them and want to put one on tomorrow, you maybe wait till midday and see where we're trading. You can put a calendar right around that. It can be a little
+
+[04:18] above or a little below if you like. Um and uh here we see it's 7:55 27 theta. But here's what's interesting. Remember, I've talked a lot lately about how calls and puts for calendars, uh,
+
+[04:33] you know, calls for a long time were wider, of course, more expensive, the calendars, and the puts were more narrow. Then the puts got to be very similar. And so, hey, you know, you
+
+[04:43] could use them if they're similar. Well, when I looked at this again, if we look, 7750 and 7775 are boundaries of our break evens.
+
+[04:57] If we do it with puts now our boundaries below 7750 and around 7570 so things contracted yes it's cheaper but I think the calendar that's calls if this is how it's going
+
+[05:13] to shape out is a much better choice and I do like to look at this anymore every time I set up a calendar to see uh what I think of it you know what to Um, how does it look? Is it is it basically the
+
+[05:29] same? Then maybe I'll use puts. If you want something cheaper, you know, puts are usually cheaper. So, other than that, as long as they're really configured the same, I've considered
+
+[05:40] them interchangeable. Now, you notice I use the ninth. Some may say may say, why didn't you use the second? Well, I don't normally go that close anymore anyway, which would be um
+
+[05:52] a week from this Friday. But another reason I'm avoiding the second is the non-farm payrolls. I found those Fridays to be very problematic the last two or three times. Uh so I'm going to avoid
+
+[06:04] it. I don't want to have shorts on in a second. Short options and then have them not decay properly or the volatility stays elevated in them so you can't see any decay. And here you
+
+[06:16] are in expiration week made making no money or very little because the shorts just won't give in on the volatility which you can see often here it is outweighs your theta decay.
+
+[06:29] So that's why I'm going to avoid it and just go out to the ninth and avoid that nonsense with any tension around the non-farm payrolls. Now I expect that'll come and go and I'm going to be watching
+
+[06:40] it each time to see if the market is really paying a lot of attention to it. If it is, then we're probably going to have to stay away from in the future until that recedes a bit. Now, another
+
+[06:51] thing I like to look at, of course, is going maybe 5 days wide since we're under 15. Let's look at 13 uh the 4-day wide real quick. So, we have 27 theta 68 Vega. It costs us $7 a half. If we go 5
+
+[07:07] days now, it costs us Wow. Not quite double, but a lot more money. 1230 26 Theta 84 vacant. We're not getting much for that. We're just not getting much for the
+
+[07:21] money. Now, the idea is that [snorts] that one day further can speed your time decay, and it probably will over time. Uh, but it just doesn't look like a good value proposition here. So, I'm going to
+
+[07:33] stick with the 4-day wide and get that slightly less expensive trade. You can do wider if you like. uh when we're below uh 15 uh but I don't want to do it unless there's a compelling reason for
+
+[07:47] it to go to that extra expense and increase volatility risk which you'd also haven't I mean a volatility it's not likely to go a whole lot lower here but if it did well the further you are
+
+[07:59] from your short to your long expiration the more that's going to hurt you and uh this week I I'm thinking we have a decent chance of complacency see if there isn't some other acting on the
+
+[08:13] market. We will have to see how that works out. You know what? If you'd like to be with me every day and see how that changes, you check out the links in my description and [snorts] you can see
+
+[08:23] that there how to join me over uh on my Slack and have seven live meetings with me a week. Also, my email's there if you want to call about any or write about any questions or one-on-one mentoring.
+
+[08:35] And I have courses there for sale. I wanted to let you know that next Sunday I will have my latest course out which will have a spread in it I've never covered before in a course. This will be
+
+[08:47] the 20 26 spread update. I'm thinking about filming it over the next couple of days and I'll have it up soon and I'll definitely have the link in this description probably before next Sunday
+
+[09:00] where you can uh write me and acquire your own copy of that. So, the idea will be you'll email me. I'll send it to you along with the presentation because I think you're really going to like it as
+
+[09:11] I update when and how we get into every spread and how we manage it, how we adjust it. Things change every year. And even as I went back and redid this year from last year, it's drastic. You go
+
+[09:22] back two years, it's night and day how much how we manage things or set trades up has changed. Every year it changes. It's best to have the latest information and I'll be providing it in that course
+
+[09:36] along with my very popular double diagonal fly. Uh maybe I'll show you one of those next week as I introduce the course and you will get all the ins and outs on that when I do it, adjust it,
+
+[09:47] that type of thing. It'll all be in the course uh for you. So I encourage you to look at my links now in the description and certainly in the future with that new course coming out. It's always very
+
+[09:59] popular uh when I do my spread updates. Uh so other than that folks, I hope you have a really great week here uh and a good trading week and I hope that you'll join me here next week for another
+
+[10:14] edition of Options Mentor and check out my new course that will help you get the basics down of the way I trade. All right, folks. I'll talk to you next week. Bye-bye.
+
+[10:29] [music]

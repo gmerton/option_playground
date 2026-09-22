@@ -1,0 +1,19 @@
+{
+  "video_id": "KML09tRtHM8",
+  "url": "https://www.youtube.com/watch?v=KML09tRtHM8",
+  "title": "Claude Tested Over 25,000 ICT Strategies (Here's What Works)",
+  "channel": "AI Pathways",
+  "channel_id": "UCJ-KJeHzrnZkGX7qAM2V74Q",
+  "stream_date": "2026-08-06",
+  "duration": "19:34",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

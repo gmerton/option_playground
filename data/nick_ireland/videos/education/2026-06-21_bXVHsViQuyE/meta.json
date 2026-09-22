@@ -1,0 +1,19 @@
+{
+  "video_id": "bXVHsViQuyE",
+  "url": "https://www.youtube.com/watch?v=bXVHsViQuyE",
+  "title": "Why I stopped trading price action & only use gamma exposure ($1k/day strategy)",
+  "channel": "Nick Ireland",
+  "channel_id": "UCPXummHvUVhmezfuwq4EJ4Q",
+  "stream_date": "2026-06-21",
+  "duration": "23:07",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

@@ -1,0 +1,223 @@
+[00:00] In this video, I used Claw to run over 25,000 back tests of one of the most popular day trading strategies on the internet, ICT Silver Bullet. This whole process covered 16 years of 1 minute
+
+[00:12] futures data tested on NQ and ES with over 10 million simulated trades. Now, the reason why it's 25,000 versions and not just one is because we counted all the different ways that traders would
+
+[00:23] define ICT rules. So, in this video, I tested the exact version, the way it's taught, the versions people usually trade day-to-day, as well as a 25,000 config sample to capture everything in
+
+[00:35] between. And what we found is that one part of the ICT framework does actually work, but most of the famous rules don't. So, I'll go over exactly which parts of the ICT framework do work,
+
+[00:46] which parts don't, and how you can test this comprehensively yourself as well. Now, if it's your first time on the channel, my name is Brendan. I studied math and econ at UCLA, spent three years
+
+[00:56] in investment banking at Raymond James, and have spent the past two years building out trading systems for clients. And as always, this is not financial advice, and I'm not
+
+[01:05] guaranteeing any profits. I'm just showing you all the data and methodology behind these tests and how you can leverage them as well. So before diving into results, let me go over what this
+
+[01:14] ICT framework really is. ICT is a framework for reading price and silver bullet is just the most famous setup built from it. And the easiest way I can explain the setup is through this chart
+
+[01:24] here. So number one, what we have is a liquidity level. So this is just an obvious low on the chart where a bunch of traders have their stop losses sitting. Now this is the first core idea
+
+[01:34] of ICT that price moves to where the orders are. And then number two here is this sweep. So this is the idea playing out. So as you can see here, price dips below the level. This takes out all the
+
+[01:46] stops, grabs that liquidity, and then comes right back up. So number three here is displacement. This is just a strong fast move in the opposite direction. Now this exact fast move is
+
+[01:57] what creates number four which is the fair value gap. So because this move was so fast it left behind a small zone that price basically skipped over where the candles don't overlap. And this is the
+
+[02:10] second core idea of ICT which is basically that fast moves leave gaps behind and price tends to come back and fill those gaps. So that core idea is exactly what number five is here. So you
+
+[02:22] wait for price to retrace back down into that gap and that's your entry. And then to complete the framework, we have number six here, which is the target. This is just the liquidity on the other
+
+[02:35] side. So the obvious highs sitting above. And now the signature part of this silver bullet strategy is actually the timing. So it's only traded in three 1-hour windows. The first is 3 to 4:00
+
+[02:46] a.m. as you can see here, London time and then 10 to 11:00 a.m. and then 2 to 3:00 p.m. New York time. So these are the three boxes on the bottom of the screen here. So now this strategy here
+
+[02:58] comes with some pretty big claims attached. It's pitched as an everyday model, something that repeats every single day that you can generate income from. The idea theoretically is that you
+
+[03:08] would consistently make profits and then the win rates that get quoted around this whole entire system run around 70 to 80%. So what we're going to test today is this entire model, the claims
+
+[03:20] from the ICT framework. And then finally, we're going to test these three special hours here to make sure that they do align with the claims and the methodology of the framework. Now the
+
+[03:29] problem with testing ICT is that the rules here are pretty discretionary. So, if you ask five different ICT traders what counts as a liquidity sweep, you'll pretty much get five different answers.
+
+[03:40] So, it basically teaches you the concepts, but every trader just quietly fills in their own numbers, like how big a gap counts or what counts as a sweep without ever writing any of it down. So,
+
+[03:51] people trading this usually tend to never really check their own work. They're just doing this all based on feel. That's exactly why I use Claude for this entire methodology that I'm
+
+[04:01] going to show you. So Claude can take the way you trade, force it into explicit rules, and then test those rules across years of data in a few sessions. So this way we can essentially
+
+[04:11] remove the vagueness that normally protects a strategy like this ICT framework from being tested. And really quickly, if you are interested in testing out your own strategies or just
+
+[04:20] learning how to use AI to build out these full in-depth testing or trading systems, I currently run the largest AI focused trading community on school. So make sure to click the link in the
+
+[04:29] description if you're interested. So because of the discretionary nature of ICT, we actually turned every single judgment call into a dial here on the left hand side. So what counts as
+
+[04:40] liquidity, how big the gap has to be, where you enter, where the stop goes, which window you trade, and which bias you use. These are all the different moving parts that every ICT trader would
+
+[04:51] essentially define on their own. So, if we do multiply out every single one of these dials that people use, you get close to 258 million distinct versions of this strategy. Now, this number alone
+
+[05:02] pretty much explains why no two ICT traders ever trade the same exact thing. Now, obviously, we can't run all 258 million. So, what we did instead here is run a uniform random sample of 25,000 of
+
+[05:16] them. So, you can think of this like voting polls. You don't need to call every single voter to know the results within a fraction of a percent. And you don't need to run every single version
+
+[05:25] to know what the whole central territory looks like. Now, the second most important thing is that ICT traders don't actually spread out evenly across these 258 million versions. Most people
+
+[05:35] cluster around the same defaults. So like entries at 50% of the gap, stops behind the swings, 2:1 targets, and then they drift apart on some of the more fuzzy stuff. This includes things like
+
+[05:47] what counts as liquidity and how to read bias. So on top of these 25,000 random samples here, the popular versions also get tested directly by name. So you'll see these as the three names here as
+
+[05:59] taught on the 5-minute chart as taught on the one minute chart. So these two here are supposed to be the closest thing to a textbook version of this ICT silver bullet built straight from how
+
+[06:10] it's taught. And then we have this asraded version here. And this is kind of like the loose version that people actually run every single day. So counting any recent swing as liquidity
+
+[06:21] re-entering after exits, things like that. So to make it more simple, this 25,000 random sample pretty much covers the entire gamut of the ICT framework. And then we go over named versions that
+
+[06:33] cover the exact spots where traders tend to usually live at. Now, one thing I want to make clear here is that we didn't just ask Claude if ICT worked. That doesn't work because AI's opinion
+
+[06:43] is not a true comprehensive test. So what I did instead was purchase 16 years of one minute futures data. So over 11 million bars of NQ and ES. Then with that data, I used claw to build out a
+
+[06:55] full back testing system in layers with around 10 million simulated trades. So here on the right hand side, you can actually see the same testing stack. So every trade paid real commission. Every
+
+[07:05] stopout paid slippage on top. If a candle touched the stop and the target in the same minute, we just counted it as a loss. Every config here got compared against literal coin flips with
+
+[07:15] the same exact risk setup. We also corrected for luck across all 25,000 tests. The reason for this is because if you run enough back tests, something will look amazing just purely by
+
+[07:24] accident. Then all the survivors got run cold on ES with zero adjustments. And then finally, the last two years of data stayed completely locked away until the very end of the test. So moving on here,
+
+[07:36] this panel shows exactly what we tested and what we didn't. So we can see that we covered fair value gaps, liquidity sweeps, displacement, market structure shifts, several different ways of
+
+[07:46] reading bias, and every window plus every other hour of the session. And then to the right, what we didn't test was order blocks as entries, the subhour macro windows, news day filters, and
+
+[07:57] forex and gold. And then our funnel here actually shows all of our 25,000 configurations and what they filter down to. So out of all these back tests, only 9,481
+
+[08:07] even produced 100 trades. This was the minimum that you could really grade. 6,190 made money after costs. 2,191 cleared a decent risk adjusted bar. 1,614 survived the luck correction. And
+
+[08:22] then we're just left with 420 that actually held up on ES. So to put it plainly, only 1.7% of all the versions of this ICT framework actually survived this full stack. And just a quick
+
+[08:33] spoiler here on our named version. So if you recall again, we had three different named versions. 1 minute, 5 minute taught by the textbook as well as an asraded version that shows the ICT rules
+
+[08:44] that most traders typically use when you see them trading it online. So the five-minute textbook version, as it's taught exactly, survives the first two stages. So it trades and even makes a
+
+[08:55] little bit of money, but then it dies right at the riskadjusted bar. The one minute textbook version of this ICT silver bullet actually made its way all the way to the very last stage and then
+
+[09:04] dies on the ES check. And then the loose as traded version, which is the version that most ICT traders crowd around, actually makes it through every single stage into that final 1.7%. Diving into
+
+[09:16] the claims of the ICT framework, the first is 70 to 80% win rate that gets quoted everywhere. This red band here at the top is the quoted range and then the bars are what we actually measured. So
+
+[09:27] the top versions came in between 34 to 48%. And even the surviving configurations, so the best versions out of all 25,000 back tests centered around 52%. Now, interestingly, there actually
+
+[09:39] was a 70% win rate in the space. Uh, exactly five configurations out of the 25,000 found it. Every single one of them got there the same exact way by taking quick one profits around 20 times
+
+[09:50] a year. And then now just to be clear, this is just a win rate, but plenty of these actually did make money overall. They just made it winning less than half the time with 2:1 targets and timed
+
+[10:01] exits. So overall, it could be profitable. It's just that at these win rates across thousands of traders, you're going to run into people with a bunch of incredible months and then some
+
+[10:10] people that just blow their accounts in a few months as well. Next, what we tested here on the right hand side are the famous hours of the ICT framework. So what we did here is run the same
+
+[10:20] exact logic as a single window strategy on every single hour of the future session. We wanted to see if the silver bullet hours really were special. They should theoretically sit at the top of
+
+[10:29] the chart. But as you can see, they pretty much sit inside the pack. So the 2 p.m. window did fine. The London did fine. And then the 10 a.m. window, which is the main one that everyone focuses
+
+[10:39] on, actually came out very slightly negative. And we ran this test across not only the textbook version, we ran the same exact test on the best performing configurations. and the
+
+[10:48] window still sat pretty much in the middle of the rest of the pack of all these hours. So the conclusion here is just that the edge isn't really in the hours that you're actually trading this
+
+[10:57] ICT strategy. Now that's a perfect transition as to what rules actually do matter. So what I did here is build up the strategy one rule at a time and then score it at every single step and
+
+[11:08] everything else stays fixed through the whole way. So the only thing really changing are the rules every step. So if we started with just fair value gap entries and nothing else running all day
+
+[11:17] long towards a 33 then if we add the sweep requirement it jumps it to a 69 and this is basically the only rule in this entire stack that adds something to this framework. Once we add things like
+
+[11:28] the displacement filter takes it down a bit. Restricting it to the famous hours takes it down a little bit again. And then if you were to add the 15-minute bias, which is the structure that most
+
+[11:38] silver bullet guides teach, it drops it all the way down to 0.16. And across the entire 25,000 sample, the best performing versions either ran no bias at all or a really simple daily one. So
+
+[11:50] basically, more of the rule book that you follow after the sweep, the worse it gets. Now, bias itself isn't fully useless. We also ran a version with a perfect crystal ball bias that knows the
+
+[12:00] day's direction in advance. Now obviously this is a look ahead bias but just to show you since it is discretionary if you did have the right bias then yes this would theoretically
+
+[12:09] beat out everything else. Now this pretty much lines up with what we see in the final results shortly which is that if we were to look at the loose as traded version that a lot of people run.
+
+[12:18] It keeps the gap it keeps the sweep. So the two rungs that score the highest pretty much drops the bias that craters everything and then it just trades a lot. Now, just to see how often these
+
+[12:28] strategies do trade, because the model does get pitched, this kind of like a setup that repeats every single day. If we were to follow the astop version on the five minute charts exactly, it's
+
+[12:38] only going to fire around 34 times a year. On one minute charts, it's around 133 times a year. So, about every other day. And then as traded, which again is kind of like the loose version that a
+
+[12:49] lot of people run. This counts any recent swing as liquidity and re-entering after exits, it comes to around 1,96 trades a year. So this comes out to around 68 trades a day and is the
+
+[13:01] more commonly run version of ICT that you see around places like YouTube. Now, the real question for a day trading strategy like ICT Silver Bullet isn't whether it beats buy and hold because
+
+[13:12] nobody uses it for that. The idea here with the strategy is daily income. So the framing is that you would essentially run this um have it replace like your income because you're able to
+
+[13:21] make winning trades every single day. So this is exactly how we graded it. Uh the book version or the as taught version pretty much fails this test. It loses more days than it wins, more weeks than
+
+[13:30] it wins, and more months than it wins. But the high frequency versions like this as traded, 1996 times a year actually do look like income at the monthly level with around 62 to 68%
+
+[13:41] positive months. And to be clear, this asshed version did make real money over the full test as you'll see. So the question isn't whether it's profitable, it's whether it pays like an income,
+
+[13:50] right? So if you were to dive a bit deeper and look at, you know, the best configuration, it had a streak of losing 19 days in a row. Now, that's obviously not going to act like income to you. And
+
+[14:01] if you did want to replace your income, something like this over a month where you just show up and lose every single day does kind of go against that case. Now, we also did a couple consistency
+
+[14:10] checks before the final test. We just wanted to see if the strategies transferred. So, 420 out of the 1614 survivors that stayed profitable when we ran them cold on ES with no retuning, no
+
+[14:23] adjustments at all. This just showed that 420 out of the 1614 survivors stayed profitable when we then ran them cold on ES. And this was with no retuning and no adjustments at all. Now
+
+[14:34] here we have the final test which is that hold out I talked about earlier where we froze and locked away two years of data. So this is the two full years of data that nothing in the study ever
+
+[14:44] touched. So no configuration saw these two years of data. No filter was tuned on it and we ran it exactly one time. So whatever this showed was going into the video. Here we can see that the best
+
+[14:54] survivor made $455,000 in those two years on a single contract with the sharp 13 all 24 months positive. Now, obviously, this isn't realistic at all. This is essentially
+
+[15:05] the most fine-tuned version of the Strat that you'll see, but this was the best one out of those 25,000 configurations. Now, more interestingly is the loose as traded version. It actually made
+
+[15:16] $251,000, and even the textbook versions stayed positive just on pretty small samples. Now, this is pretty promising given that when a strategy is overfit, completely falls apart the moment you
+
+[15:28] give it data that it's never seen before. But here, you can see they held up. So there obviously is validity to the ICT framework. Now there are two caveats which is mostly the market.
+
+[15:37] These two recent years were strong rising market. So this is going to be as friendly as it gets for a strategy that buys dips after sweeps. So I would treat this more as a ceiling not like as an
+
+[15:48] expectation. And the second thing is that even with every cost and slippage counted for this is still on paper fills. What I mean by that is that when price smashes through your order you
+
+[15:57] always get filled and those are mostly your losers. When price just taps your level and then bounces, which is your winner, other orders are ahead of yours, and you often don't get filled. So, this
+
+[16:08] is assuming perfect fills, but in real life, you would keep all your losers and miss some of your winners as well. Now, here's the entire 16 years on one equity curve chart. So, the colored lines here
+
+[16:18] are just the named versions plus the best survivors all in one single contract the entire time. And then everything to the right of this dotted line is the hold out. So, these are the
+
+[16:27] two locked away years that you watched get tested. Now, like I mentioned earlier, sometimes people say that you just need experience and screen time to get better at ICT. So, what we did here
+
+[16:37] is actually measure how good that discretion would theoretically need to be. And the answer is 17.2%. So, that's a share of losing trades you would need to correctly skip in advance to turn
+
+[16:48] what's being stated as like a textbook version to a solid strategy. Now, some people can't actually do this. It's just can't be proven through a back test. So now going into the most important part
+
+[16:58] of the video, which is what actually survived and what parts of the ICT framework do work. This is what made pretty much all the money. The first thing is to require the liquidity sweep
+
+[17:09] just because it's the only rule that really adds an edge. The second is to take your direction from the sweep. So you fade the side that just got run because that's where all the information
+
+[17:17] is. Third is entering on the one minute gap that the reversal leaves behind. And this is again because the 5-minute versions underperformed. Fourth is basically trading every single setup and
+
+[17:28] trading often because the edge per trade is pretty small and the money comes from frequency as we've shown. Fifth, we have dropping the 15-minute bias since it just makes things worse. And sixth, you
+
+[17:39] don't need to wait for the special trading hour windows. So basically, the version of ICT that survives all this testing is the simplest one. It's really just one real signal, simple entry,
+
+[17:48] basic risk management, and then trading a lot. Now, if this strategy does sound familiar, it's basically because it's the same idea as mean reversion. So, a sweep and a snapback is just mean
+
+[17:59] reversion on a one minute chart with different vocabulary around it. Now, if you want to build this testing system yourself, it's the same format as always. The whole system is built in
+
+[18:08] layers, and each layer is a separate prompt. The first one builds the data layer, so it pulls and cleans all the futures data. The second builds the detectors, so the gaps, sweeps, and
+
+[18:18] structure shifts. The third builds the engine that simulates every trade with real costs. The fourth runs the 25,000 configuration sweep all the validations. And then the last one builds the
+
+[18:29] dashboard that you've been looking at this whole time. And the bigger point here is that this isn't really about the silver bullet. Whatever style you trade, if it currently lives in your head just
+
+[18:38] as a feel, you can do the same exact method here, turn it into rules, and actually find out if it works. And like I mentioned in my previous videos, you can literally just screenshot the
+
+[18:48] prompts that I'm showing you here and feed them to an AI model. So you can build it either in the web app, so like claw.ai, or you can use claude code, which is a little bit more advanced. But
+
+[18:57] you'll have one single place to edit all your code and continually update it as well. Now, if you enjoyed this video, make sure to leave a like, comment, and subscribe as it greatly helps out the
+
+[19:06] channel. And if you do want to go deeper, like I mentioned, my community is in the description if you're interested. We have full in-depth guides on building out these trading systems as
+
+[19:14] well as premium data sources. So, if you're interested in building a test just like this, we have premium futures data with scripts that you can run. So, make sure to click the link if you're
+
+[19:23] interested.

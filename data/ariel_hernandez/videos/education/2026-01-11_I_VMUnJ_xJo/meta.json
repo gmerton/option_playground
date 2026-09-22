@@ -1,0 +1,19 @@
+{
+  "video_id": "I_VMUnJ_xJo",
+  "url": "https://www.youtube.com/watch?v=I_VMUnJ_xJo",
+  "title": "Building a Universe List!",
+  "channel": "Ariel Hernandez",
+  "channel_id": "UCn8hF9X6MGDtbTBb6w3JUYA",
+  "stream_date": "2026-01-11",
+  "duration": "27:54",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

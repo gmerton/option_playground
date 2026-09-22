@@ -1,0 +1,19 @@
+{
+  "video_id": "UAgX48eqZ9k",
+  "url": "https://www.youtube.com/watch?v=UAgX48eqZ9k",
+  "title": "Time spread in SPX options remaining attarctive in low volatility",
+  "channel": "The Options Mentor",
+  "channel_id": "UCwEFHXPxJuAdesgQiXR6AuQ",
+  "stream_date": "2026-09-20",
+  "duration": "10:37",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

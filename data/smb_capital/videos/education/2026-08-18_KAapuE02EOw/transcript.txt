@@ -1,0 +1,133 @@
+[00:00] If I gave 10 traders the exact same market setup and the exact same account size, why would some consistently grow their account while others slowly lose money?
+
+[00:10] Most people think the answer is being better at predicting the market. I don't think that's the biggest reason. I think it's understanding risk. One of the biggest mistakes I see newer
+
+[00:21] options traders make is assuming they need to take bigger risks because they have a smaller account. In reality, the opposite is usually true.
+
+[00:31] When your account is small, protecting capital is what allows you to stay in the game long enough for probability to work in your favor. That's where vertical spreads come in.
+
+[00:42] I use both credit spreads and debit spreads in my own trading today. They're not just a strategy for small accounts. They're a professional risk management
+
+[00:51] tool because they let you define your maximum risk before you place the trade. In this lesson, you'll learn why vertical spreads are one of the most capital efficient strategies for small
+
+[01:04] accounts and why the amount of time until expiration changes the directional risk of the trade. Why a 20 delta spread at zero DTE is very different than a 20 delta spread at
+
+[01:16] 30 to 45 days even though they have the same theoretical probability. How gamma changes the economics of a spread as expiration approaches and how
+
+[01:26] probability and defined risk can help you build consistency instead of relying on one big winner. Let's get started. Most small accounts don't fail because of bad market conditions. They fail
+
+[01:38] because of uncontrolled risk. One oversized loss can erase weeks of gains. Without the capital, there's no more trades to make. Growing a small account begins with one
+
+[01:51] rule, protecting your capital first. Vertical spreads aren't a bigger shortcut. They're professional risk management tool used by institutional traders every day.
+
+[02:04] And why would they use this? One, defined maximum loss. You know your worst-case loss before entering a trade. They're very capital efficient. Lower capital requirements than just
+
+[02:17] buying the option outright. You have a defined max gain. Reward is capped and clearly calculated at entry. And you give yourself a repeatable process. And this might be the most
+
+[02:29] important part. A structured framework you can apply trade after trade. Let's look at the anatomy of a vertical spread. When you enter this in your broker, you
+
+[02:39] can do it as one order. Let's start with the bull put credit This is on the put side since the profit driver of the trade is the put you're selling. The long you're buying is the
+
+[02:51] insurance if you're wrong on the trade. And is what defines the risk of the trade, as well. In this visual, you're selling the 100 put and buying the 95 long below it.
+
+[03:04] This is how your broker is going to look at the trade. Your wing width multiplied by 100 is your risk. Your broker knows you took in a $100
+
+[03:14] credit. So, your total needed in your account for this trade is $400. The max margin minus the credit you took in. Now, due to taking in a credit, your break-even on this trade
+
+[03:28] is $99. $1 credit or $100 below the spot price of what you're trading. Defined risk doesn't mean no risk. And what does defined really mean? Your risk is capped,
+
+[03:45] but it still exists. You know the maximum loss before you enter. You know the maximum gain before you enter. The profit diagram is not a surprise.
+
+[03:56] It's a contract you sign at the entry of the trade. So, the real lesson in this is defined risk shifts the question from how bad can this get to is this worth the
+
+[04:07] trade-off? Two spreads can share the same 20 delta and look identical on paper, yet expose you to very different levels of directional risk. Delta provides a theoretical probability
+
+[04:22] estimate of where a strike finishes relative to the stock price at expiration. [clears throat] If you sell a 20 delta put, the market is saying there is a
+
+[04:35] theoretical 80% chance that that put is going to expire worthless. The same delta doesn't mean the same trade. Two spreads can share the same 20 delta
+
+[04:48] and look identical on paper, yet expose you to very different levels of directional risk. And in the world where zero DTE is very, very popular,
+
+[04:58] I want to show you how your risk changes from going from a longer-term, say 30 to 45 DTE, to a very short-term zero DTE trade. And a lot of that is due to the
+
+[05:11] extrinsic value you're selling and how the market makers are going to be pricing in the market. So, let's take a second and let's go into Option Net Explorer and I'll show you exactly what
+
+[05:20] I mean. So, now we're in Option Net Explorer and I want to explain to you what we were saying about the difference from a 30-day expiration spread and a zero DTE
+
+[05:30] spread. So, I want to start with the zero DTE and show you exactly what I mean by that. If we look at the distance from the money
+
+[05:41] of our short that we're selling at a 20 delta, all right, this is a 19, just below 20, to where the spot prices of the market. We are at 47 points away from the
+
+[05:52] market. Now, if we go to a 30-day spread, 29 days here, and go out to a 20 delta, we're selling all the way down at 7,100.
+
+[06:06] That's 302 points away from the market. Yes, there is more time in this trade, but what are you getting with that time? You're getting more room for the market
+
+[06:18] to channel and giving you a bigger cushion into the actual trade itself. In this current market, we've seen the price move well over 50 points in a day.
+
+[06:30] Going further out in time, you're giving up the quick profit for more controlled risk on the downside. And when we get into risk and we talk about the difference from the
+
+[06:44] DTE of 30 to zero, the Greek that is affected the most is gamma. And gamma measures how fast a delta changes when a stock moves. As expiration approaches, gamma accelerates
+
+[06:59] rapidly. Small moves create large swings in your spread's value. Zero DTE, you're going to have sharp spikes right near expiration. It's very highly sensitive to market moves.
+
+[07:15] As you go further out in time, gamma becomes lower. The market move isn't going to be as dramatic onto your P&L as it is on a zero DTE. And we talked a lot about
+
+[07:28] risk. And as the risk comes into the trade, it comes in as you get closer to expiration much faster than when you're longer term. So, let's jump back into Option Net
+
+[07:41] Explorer and I'm going to show you what I mean by that. Let's start again with our zero DTE option spread here. So, if we look, again, just to recap, we're selling at the 19 delta, we went
+
+[07:52] down and sold below 25 points to cap our risk, and here we're buying the 7330. We are collecting $2,580, and our total margin taken out of our
+
+[08:06] account is 22,240, and this is selling 10 contracts. Let's look at where we talked about the accelerator gamma in this trade. We are negative 1.81 gamma. So, every
+
+[08:19] time that this moves against us, our deltas are going to change by 1.81. Watch what happens for a 20-point move in the market. We are down 10% already in a 10-point
+
+[08:34] move down in the market. Let's get to our 30-day spread. Let's do the exact same thing. Here, we're taking in a little bit more capital or credit because we are selling
+
+[08:48] further out in time, collecting more extrinsic value, which lowers our margin a little bit, selling the same 10 contracts. Here, we're going to 7100, going down to 7075 to buy that
+
+[08:59] protection. Our gamma is 0.04. That's roughly 40 times less than going zero DTE. A 10-point move in the market
+
+[09:14] is going to bring us less than 2% down on the trade. And that's the effect of gamma on your positions, and why going further out in time is
+
+[09:26] going to help you protect your capital even more when selling credit spreads. Now, let's talk about one more great aspect to vertical spreads, and the fact that you're able to have a
+
+[09:40] very capital efficient spread on is going to allow you to spread risk across multiple opportunities. Because vertical spreads are capital efficient and small accounts can
+
+[09:51] participate in multiple trades simultaneously. This is going to allow you to trade different stocks, different sectors, and different expiration cycles.
+
+[10:02] Having multiple spreads is going to reduce your dependence on one single trade to carry your account. Your edge is expressed more often. More trades means probability has more room
+
+[10:16] to work in your favor. Let's go through four common mistakes that people make and that you should avoid when selling credit spreads. The number one
+
+[10:28] is trading too close to expiration. Without understanding gamma, near expiration spreads can move against you faster than you can respond. Number two,
+
+[10:38] chasing premium. Selling spreads that are too close to the money to collect more credit. This is ignoring the elevated risk that comes with it.
+
+[10:49] Number three, ignoring probability. Selecting strikes based on feel rather than a systematic probability based framework. And finally, confusing probability with
+
+[11:01] certainty. High probability is an edge over time, not a guaranteed on any individual trade. So, let's put this all together. Every trade follows the same framework.
+
+[11:15] The power of vertical spreads isn't in any single trade. It's in the repeatability of the process. Each step reinforces the next, building a disciplined habit that
+
+[11:27] compounds over time. Your goal isn't to predict every move. The goal is to structure trades so that risk is controlled before the trade ever begins.
+
+[11:40] And we start with our market thesis. That's going to be the basis for every single trade. Then you're going to choose your spread,
+
+[11:48] select your expiration, define your directional risk, and then apply the probabilities to that particular trade. Growing a small account isn't about
+
+[11:58] finding one incredible trade. It's about building a repeatable process. Vertical spreads won't eliminate losing trades,
+
+[12:07] but they give you something every trader needs, defined risk. Understanding how time changes the behavior of a spread, how gamma affects your position, and how probability works
+
+[12:19] over a large sample of trades allows you to make better decisions before you ever click the buy or sell button. If there's one takeaway from this lesson, it's this. The goal isn't to
+
+[12:30] predict the market perfectly. The goal is to structure your trades so one mistake doesn't define your account. That's what vertical spreads allow you to do. And that's why they've remained
+
+[12:41] an important part of my trading today. Now, if you'd like to learn three more options strategies that our pro traders use, including the unique options trick that allows you to make money while you
+
+[12:54] wait to buy stocks or ETFs at the price you want, and the options income strategy that allows you to make consistent money whether the market goes up or down or sideways, and how to make
+
+[13:07] money on a stock or index trade even if you're wrong on the direction, then click the link that's appearing right now at the top right-hand corner of your screen. That will open up the free
+
+[13:19] workshop registration page in a new window, so don't worry, you won't lose this video. Or you can register directly for free at optionsclass.com.

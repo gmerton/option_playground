@@ -1,0 +1,19 @@
+{
+  "video_id": "yyMDu2bowVI",
+  "url": "https://www.youtube.com/watch?v=yyMDu2bowVI",
+  "title": "Options Trading University Review | Som Shares His 1 Year Trading Journey (Options With Ryan)",
+  "channel": "Options With Ryan",
+  "channel_id": "UCQnIfbieTyf53CZBiyLAkjg",
+  "stream_date": "2026-09-19",
+  "duration": "17:59",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

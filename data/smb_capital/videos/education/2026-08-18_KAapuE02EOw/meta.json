@@ -1,0 +1,19 @@
+{
+  "video_id": "KAapuE02EOw",
+  "url": "https://www.youtube.com/watch?v=KAapuE02EOw",
+  "title": "How to Grow a Small Options Account (quickly)",
+  "channel": "SMB Capital",
+  "channel_id": "UCg3B_joekBGJ1s_4fRjsMKA",
+  "stream_date": "2026-08-18",
+  "duration": "13:38",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

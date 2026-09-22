@@ -1,0 +1,19 @@
+{
+  "video_id": "GRtri91nTwQ",
+  "url": "https://www.youtube.com/watch?v=GRtri91nTwQ",
+  "title": "Give me 6 Minutes and I'll Make you Dangerously Good at Trading",
+  "channel": "Brando Trades",
+  "channel_id": "UC_lAwo5I3Mm508xgyWk-z0Q",
+  "stream_date": "2026-04-05",
+  "duration": "6:02",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}
