@@ -3,7 +3,7 @@
 _Every entry pattern tested with `lib.studies.pattern_test`, newest last._
 
 **Bar to pass:** beats the same-name random control, positive in both halves, |t| >= 3.
-**Multiple testing:** 69 patterns tested so far — at 5% significance, expect ~3.5 to clear by chance. Discount accordingly.
+**Multiple testing:** 68 patterns tested so far — at 5%% significance, expect ~3.4 to clear by chance. Discount accordingly.
 
 | tested | name | timeframe | n | best_arm | meanR | ctrl | edge | t | half1 | half2 | passed | note |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -37,9 +37,6 @@ _Every entry pattern tested with `lib.studies.pattern_test`, newest last._
 | 2026-09-19 | in-play up mover (+4% on 2x vol) | daily | 13331 | ema20 | -0.076 | -0.023 | -0.053 | -0.424 | -0.11 | -0.056 | False | RERUN 2026-09-19 of the 2026-09-18/19 row with honest controls; ctrl=post (timing); xname ctrl -0.060 edge -0.017; bar = beats BOTH controls + halves + |t|>=3 |
 | 2026-09-19 | in-play down mover (-4% on 2x vol) | daily | 13955 | ema20 | -0.058 | -0.148 | 0.09 | -2.63 | 0.063 | -0.14 | False | RERUN 2026-09-19 of the 2026-09-18/19 row with honest controls; ctrl=post (timing); xname ctrl -0.041 edge -0.017; bar = beats BOTH controls + halves + |t|>=3 |
 | 2026-09-19 | Bouncy ball (Breitstein short) | daily | 1404 | stop_hold | -0.085 | -0.203 | 0.118 | 0.419 | 0.082 | -0.17 | False | RERUN 2026-09-19 of the 2026-09-18/19 row with honest controls; ctrl=post (timing); xname ctrl -0.153 edge +0.068; bar = beats BOTH controls + halves + |t|>=3 |
-| 2026-09-19 | 20d breakout ADR>=3, HIGH-vol regime (panel p80, 1 ADR stop, hold 5) | daily | 17281 | t1R | -0.216 | -0.166 | -0.05 | -5.654 | -0.352 | -0.116 | False | RERUN 2026-09-19 of the 2026-09-18/19 row with honest controls; ctrl=post (timing); xname ctrl -0.158 edge -0.058; bar = beats BOTH controls + halves + |t|>=3 |
-| 2026-09-19 | 20d breakout ADR>=3, LOW-vol regime (panel p80, 1 ADR stop, hold 5) | daily | 24514 | t1R | -0.224 | -0.164 | -0.06 | -10.464 | -0.217 | -0.229 | False | RERUN 2026-09-19 of the 2026-09-18/19 row with honest controls; ctrl=post (timing); xname ctrl -0.130 edge -0.094; bar = beats BOTH controls + halves + |t|>=3 |
-| 2026-09-19 | boring stock, violent move (drop >= 4x own ADR, ADR bottom tercile) | daily | 628 | ema20 | -0.158 | -0.132 | -0.026 | -3.554 | -0.007 | -0.242 | False | RERUN 2026-09-19 of the 2026-09-18/19 row with honest controls; ctrl=post (timing); xname ctrl -0.190 edge +0.032; bar = beats BOTH controls + halves + |t|>=3 |
 | 2026-09-19 | violent move, any ADR (drop >= 4x own ADR) | daily | 1644 | ema20 | -0.134 | -0.108 | -0.026 | -3.205 | -0.082 | -0.158 | False | RERUN 2026-09-19 of the 2026-09-18/19 row with honest controls; ctrl=post (timing); xname ctrl -0.072 edge -0.062; bar = beats BOTH controls + halves + |t|>=3 |
 | 2026-09-19 | counter-trend long: >=3 ADR below 20 EMA + prior-bar-high break | daily | 9015 | trail_bar | -0.149 | -0.054 | -0.094 | -2.447 | -0.189 | -0.115 | False | RERUN 2026-09-19 of the 2026-09-18/19 row with honest controls; ctrl=post (timing); xname ctrl -0.176 edge +0.027; bar = beats BOTH controls + halves + |t|>=3 |
 | 2026-09-19 | prior-bar-high break in a down leg, <3 ADR below 20 EMA (no extension gate) | daily | 155514 | ema20 | -0.084 | -0.098 | 0.014 | -4.161 | -0.102 | -0.072 | False | RERUN 2026-09-19 of the 2026-09-18/19 row with honest controls; ctrl=post (timing); xname ctrl -0.111 edge +0.027; bar = beats BOTH controls + halves + |t|>=3 |
@@ -76,3 +73,5 @@ _Every entry pattern tested with `lib.studies.pattern_test`, newest last._
 | 2026-09-21 | levels 2026-09-21: AVWAP HOLD | intraday | 4039 | t1R | -0.064 | -0.074 | 0.01 | -3.066 | -0.029 | -0.099 | False | pre-registered level_trigger_test_2026-09-21.md |
 | 2026-09-21 | levels 2026-09-21: ORH BREAK | intraday | 10427 | vwap_flip | -0.079 | -0.077 | -0.002 | -5.541 | -0.058 | -0.102 | False | pre-registered level_trigger_test_2026-09-21.md |
 | 2026-09-21 | levels 2026-09-21: ORH HOLD | intraday | 7746 | vwap_flip | -0.077 | -0.058 | -0.02 | -6.802 | -0.058 | -0.098 | False | pre-registered level_trigger_test_2026-09-21.md |
+| 2026-09-22 | close-strength 2026-09-22: WEAK close | house day-low stop | daily | 8137 | t1R | -0.62 | -0.66 | 0.04 | -16.85 | -0.662 | -0.592 | False | pre-registered close-in-range test; house breakout, close entry; ctrl=post |
+| 2026-09-22 | close-strength 2026-09-22: STRONG close | house day-low stop | daily | 8556 | ema20 | -0.02 | 0.021 | -0.04 | 1.809 | -0.189 | 0.102 | False | pre-registered close-in-range test; house breakout, close entry; ctrl=post |
