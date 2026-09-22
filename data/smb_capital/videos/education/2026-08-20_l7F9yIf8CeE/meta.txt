@@ -1,0 +1,8 @@
+title: Revealing My Secret Relative Strength Breakout Strategy
+channel: SMB Capital
+url: https://www.youtube.com/watch?v=l7F9yIf8CeE
+duration: 17:33
+views_at_review: 31166
+upload_date: 2026-08-20
+reviewed: 2026-09-22
+captions: yt-dlp auto-subs (en), clean pull, ~2,880 words
