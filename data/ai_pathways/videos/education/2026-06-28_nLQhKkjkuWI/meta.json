@@ -1,0 +1,23 @@
+{
+  "video_id": "nLQhKkjkuWI",
+  "url": "https://www.youtube.com/watch?v=nLQhKkjkuWI",
+  "title": "Claude Tested Over 9,000 Trading Strategies (Here's What Works)",
+  "channel": "AI Pathways",
+  "channel_id": "UCJ-KJeHzrnZkGX7qAM2V74Q",
+  "stream_date": "2026-06-28",
+  "duration": "19:54",
+  "views_at_review": 377000,
+  "summary": "9,000 daily-bar backtests of classic strategy families (trend, mean reversion, momentum, volume, volatility, pattern) across 30 liquid assets and 15 years, walk-forward validated through a six-filter funnel down to 524 survivors. Headline: mean reversion is the only family positive on average and is ~64% of survivors; trend works only on specific names (Apple, Nvidia). Closes with an untested 'layers' framework (base signal -> risk/sizing -> uncorrelated signals -> HMM regime switching) and a Skool community pitch.",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions, ~4,270 words; clean pull. A few garbles noted in notes.md."
+  },
+  "supplemental_notes_file": "notes.md",
+  "review_file": "../../../2026-06-28_9000_strategies_review.md",
+  "reviewed": "2026-09-22",
+  "score": "2/5"
+}

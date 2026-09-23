@@ -1,0 +1,77 @@
+Rebuilding the 20-ETF bull put roster from committed code (2026-09-22)
+  0.35/0.24999999999999997 delta, 45 DTE +/-5, Friday entries, 50% take, no stop, 2018-01-01 -> 2026-02-28
+
+  ASHR: 368 raw trades  (0.3% missing exit)
+  EEM: 392 raw trades  (0.8% missing exit)
+  FXI: 398 raw trades  (2.0% missing exit)
+  GDX: 398 raw trades  (0.8% missing exit)
+  GLD: 407 raw trades  (0.7% missing exit)
+  INDA: 256 raw trades  (0.0% missing exit)
+  IWM: 411 raw trades  (1.5% missing exit)
+  QQQ: 409 raw trades  (1.7% missing exit)
+  SOXX: 206 raw trades  (1.9% missing exit)
+  SPY: 409 raw trades  (1.5% missing exit)
+  TLT: 409 raw trades  (0.5% missing exit)
+  USO: 277 raw trades  (1.4% missing exit)
+  XBI: 406 raw trades  (1.0% missing exit)
+  XLE: 409 raw trades  (0.7% missing exit)
+  XLF: 379 raw trades  (0.5% missing exit)
+  XLK: 409 raw trades  (1.2% missing exit)
+  XLP: 392 raw trades  (0.5% missing exit)
+  XLU: 393 raw trades  (0.5% missing exit)
+  XLV: 403 raw trades  (0.7% missing exit)
+  XOP: 401 raw trades  (0.2% missing exit)
+
+raw 7,532 trades -> 7,222 after filters
+  dropped by credit/width > 0.50          50
+  dropped by margin < 0.10                16
+  dropped by exit_type == missing         69
+  dropped by expiry > 2026-03-31          19
+
+                             n    mean %  median %   win %   week t  month t
+REBUILD (this script)    7,222     4.349    19.778    83.8     4.46     2.66
+REFERENCE (cache)        6,739     5.678    19.988    86.5     4.85     3.12
+
+REBUILD after costs      7,222    -6.777    11.668    74.5    -6.98    -4.76
+  cost drag +11.13pp/trade = 256% of the gross edge
+
+per ticker (rebuild vs reference cache, and the rebuild's after-cost mean):
+          n  mean  n_ref  mean_ref  d_n  d_mean    net
+ticker                                                
+ASHR    342  1.73    312      2.01   30   -0.28 -20.29
+EEM     374 -1.54    352      0.46   22   -2.00 -14.62
+FXI     377  1.96    347      4.17   30   -2.22  -9.76
+GDX     383  9.40    365      9.58   18   -0.18  -3.88
+GLD     404  8.34    377     11.07   27   -2.73   4.21
+INDA    227  5.07    196      4.32   31    0.75 -24.86
+IWM     405  0.83    381      2.05   24   -1.21  -1.51
+QQQ     402  6.63    380      8.16   22   -1.52   5.07
+SOXX    196  6.70    188      8.19    8   -1.49  -8.95
+SPY     403  4.88    386      5.42   17   -0.54   3.88
+TLT     405 -2.07    377     -0.93   28   -1.15 -10.79
+USO     259  8.02    236     10.30   23   -2.28 -10.22
+XBI     388  2.33    364      4.78   24   -2.45 -10.72
+XLE     395  3.27    371      4.58   24   -1.32  -5.18
+XLF     370  5.70    346      6.52   24   -0.82  -5.86
+XLK     399  8.34    379     10.13   20   -1.79  -0.98
+XLP     362  4.86    333      6.30   29   -1.44 -11.20
+XLU     365  8.28    336      8.95   29   -0.67  -4.18
+XLV     380  4.42    349      6.60   31   -2.18  -8.72
+XOP     386  2.38    364      2.67   22   -0.29 -10.32
+
+missing-exit diagnostic (is the exclusion outcome-related?)
+  69 missing of 7,532 (0.9%)
+  their share of entries by year:
+            missing  all  rate %
+entry_date                      
+2018            0.0  872     0.0
+2019            3.0  917     0.3
+2020            0.0  910     0.0
+2021            0.0  965     0.0
+2022            0.0  972     0.0
+2023            5.0  956     0.5
+2024            1.0  896     0.1
+2025            3.0  898     0.3
+2026           57.0  146    39.0
+
+wrote /Users/gmerton/v2/options_playground/data/cache/etf_putspread_roster.parquet

@@ -154,11 +154,26 @@ def lambda_handler(event, context):
     close, high, low, dolvol = frames
     t = build_table(close, high, low, dolvol, slope_days=20)
     out = screen(t, RS_MIN, ADDV_MIN)
-    passing = sorted(out[out.pass_all].index)
-    if len(passing) < MIN_LIST_SIZE:
-        msg = f"only {len(passing)} passers — refusing to overwrite the list"
+    # 2026-09-22: the published universe is the INTERSECTION of the Trend Template and Ariel's
+    # momentum scan. TT alone does not select (20d excess +0.48pp, t 1.00, last of five universes)
+    # and its edge over the same-name random-later control is negative; INT has the best
+    # control-adjusted edge (+0.079R) and halves the list. See universe_test_2026-09-21.md and
+    # trend_template_ablation_2026-09-22.md. Not certified — nothing there reached |t| >= 3.
+    passing = sorted(out[out.pass_int].index)
+    n_tt, n_ah = int(out.pass_tt.sum()), int(out.pass_ah.sum())
+
+    # The sanity guard must fire on BAD DATA, not on a bad tape. INT legitimately shrinks toward
+    # zero in a bear market (nothing sits 70% above its 252d low), and refusing to publish then
+    # would freeze a stale list of names that no longer qualify — the exact failure this guard is
+    # supposed to prevent. So gate on the broad, stable TT count and let INT be as small as the
+    # market makes it.
+    if n_tt < MIN_LIST_SIZE:
+        msg = (f"only {n_tt} Trend Template passers (INT {len(passing)}) — "
+               f"suspect data, refusing to overwrite the list")
         log(msg)
         return {"status": "refused", "detail": msg, "equity_rows": equity_rows}
+    if not passing:
+        log(f"INT is empty with {n_tt} TT passers — publishing manual adds only (risk-off tape)")
 
     manual = sorted({ln.strip().upper() for ln in _get_text(s3, MANUAL_KEY).splitlines() if ln.strip()})
     new = sorted(set(passing) | set(manual))
@@ -172,7 +187,8 @@ def lambda_handler(event, context):
     _put_text(s3, LIST_KEY, "\n".join(new) + "\n")
 
     report = (f"preferred-list refresh — data through {asof}\n"
-              f"template passers: {len(passing)}  manual: {len(manual)}  list: {len(new)}\n"
+              f"universe = INT (Trend Template AND Ariel momentum scan), since 2026-09-22\n"
+              f"TT: {n_tt}  AH: {n_ah}  INT: {len(passing)}  manual: {len(manual)}  list: {len(new)}\n"
               f"vs previous ({len(old)}): +{len(adds)} / -{len(drops)}\n"
               f"ADDS:  {', '.join(adds) or '(none)'}\nDROPS: {', '.join(drops) or '(none)'}\n"
               f"equity_daily rows appended: {equity_rows}"

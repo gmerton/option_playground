@@ -1,0 +1,22 @@
+{
+  "video_id": "9rBgnMnDp_0",
+  "url": "https://www.youtube.com/watch?v=9rBgnMnDp_0",
+  "title": "Which Trading Psychology Concepts Actually Work? (Tested With Claude)",
+  "channel": "AI Pathways",
+  "channel_id": "UCJ-KJeHzrnZkGX7qAM2V74Q",
+  "stream_date": "2026-09-04",
+  "duration": "23:11",
+  "views_at_review": "6.4k",
+  "summary": "83 scraped 'trading psychology' concepts turned into mechanical rules and run over 10,000 simulated trading years of a synthetic win/loss stream (37% win rate, $500 risk, ~2R winners, 750 trades/yr, $50k account). No market data, no instrument, no strategy. Verdicts: revenge trading 'true but for the wrong reason' (it is just bigger size); hesitation and profit targets cost money; stand-down-after-2-losses pays only if outcomes are autocorrelated; sizing up after hot streaks = zero; being picky ~zero, sizing up A+ setups = +$32k/yr; 1% risk per trade is the one unambiguous rule. Ends with four copy-paste Claude prompts to run the same math on your own broker CSV.",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp --js-runtimes node",
+    "quality_note": "Auto-generated captions, good quality. See notes.md for the two garbles."
+  },
+  "supplemental_notes_file": "notes.md",
+  "review_file": "../../../2026-09-04_trading_psychology_review.md",
+  "score": "2.5/5"
+}

@@ -180,6 +180,9 @@ def build_table(close, high, low, dolvol, slope_days: int) -> pd.DataFrame:
     t["hi252"] = last(hi252)
     t["lo252"] = last(lo252)
     t["addv"] = last(addv)
+    # Share volume for the Ariel arm. dolvol is persisted as close*volume (see
+    # pull_matrices), so shares = dolvol/close is exact, not an approximation.
+    t["shares50"] = last((dolvol / close).rolling(50, min_periods=50).mean())
 
     def ratio(n):
         return close.iloc[-1] / close.iloc[-1 - n] if len(close) > n else pd.Series(index=close.columns, dtype=float)
@@ -189,7 +192,29 @@ def build_table(close, high, low, dolvol, slope_days: int) -> pd.DataFrame:
     return t
 
 
+AH_LOW_MULT = 1.70          # at least 70% above the 252d low
+AH_SHARES_MIN = 2e6         # 50d average shares/day
+AH_PRICE_MIN = 7.0
+AH_ADDV_MIN = 100e6
+
+
 def screen(t: pd.DataFrame, rs_min: float, addv_min: float) -> pd.DataFrame:
+    """Score every name on BOTH universes and emit explicit flags.
+
+    pass_tt   Minervini Trend Template (c1-c8 + the liquidity floor) — what we ran alone until 2026-09-22
+    pass_ah   Ariel Hernandez's momentum scan
+    pass_int  the intersection = the production universe from 2026-09-22
+
+    Why the intersection (universe_test_2026-09-21 + trend_template_ablation_2026-09-22): TT alone does not
+    select — 20d excess +0.48pp at t 1.00, last of five universes tested — and its edge over the same-name
+    random-later control is NEGATIVE (-0.023R). INT has the best control-adjusted edge of any arm (+0.079R),
+    the best 5d t (2.39), 20d t 2.47, and it halves the list (66 -> 35 names in the test panel) while raising
+    median ADR 2.8% -> 3.5%. It is also a strict SUBSET of TT, so it can never introduce an unfamiliar name.
+    ⚠ Not certified: nothing in that test reached |t| >= 3. This is "the best-evidenced of five", not an edge.
+
+    `pass_all` is kept as an alias of pass_tt so existing callers do not change behaviour silently; the
+    consumer picks the column it wants.
+    """
     c = pd.DataFrame(index=t.index)
     c["c1"] = (t.price > t.sma150) & (t.price > t.sma200)
     c["c2"] = t.sma150 > t.sma200
@@ -200,6 +225,17 @@ def screen(t: pd.DataFrame, rs_min: float, addv_min: float) -> pd.DataFrame:
     c["c7"] = t.price >= 0.75 * t.hi252
     c["c8"] = t.rs_pct >= rs_min
     c["cL"] = t.addv > addv_min
-    out = t.join(c)
-    out["pass_all"] = c.all(axis=1)
+
+    a = pd.DataFrame(index=t.index)
+    a["a1"] = t.price >= AH_LOW_MULT * t.lo252
+    a["a2"] = t.price > t.sma50
+    a["a3"] = t.shares50 >= AH_SHARES_MIN
+    a["a4"] = t.price > AH_PRICE_MIN
+    a["a5"] = t.addv >= AH_ADDV_MIN
+
+    out = t.join(c).join(a)
+    out["pass_tt"] = c.all(axis=1)
+    out["pass_ah"] = a.all(axis=1)
+    out["pass_int"] = out.pass_tt & out.pass_ah
+    out["pass_all"] = out.pass_tt          # back-compat alias; do not repurpose
     return out

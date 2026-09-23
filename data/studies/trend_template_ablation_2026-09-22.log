@@ -1,0 +1,38 @@
+panel (1940, 1725), window 2020-01-01 -> 2026-09-21
+full Trend Template: median 66 names/day
+multiple testing: 20 cells, Sidak -> |t| >= 3.02
+
+
+======================================================================================================================
+20d horizon — dropping each criterion (delta > 0 means the criterion SUBTRACTS)
+======================================================================================================================
+         dropped  names  adr_med  excess_raw  d_raw  d_adj  t_adj     h1     h2  agree          verdict
+     — full TT —     66    2.833       0.575  0.000  0.000    NaN  0.000  0.000   True                 
+ c1 close>150sma     66    2.833       0.575  0.000  0.000    NaN  0.000  0.000   True inert/unresolved
+ c2 close>200sma     66    2.833       0.575  0.000  0.000    NaN  0.000  0.000   True inert/unresolved
+      c3 150>200     70    2.849       0.513 -0.062 -0.053 -1.031 -0.060 -0.047   True inert/unresolved
+   c4 200 rising     66    2.837       0.552 -0.023 -0.028 -1.144 -0.045 -0.014   True inert/unresolved
+       c5 50>150     69    2.863       0.556 -0.019 -0.006 -0.131 -0.014 -0.000   True inert/unresolved
+  c6 close>50sma     77    2.904       0.601  0.027  0.038  0.290  0.091 -0.003  False inert/unresolved
+c7 >=30% off low     67    2.807       0.482 -0.093 -0.067 -1.794 -0.121 -0.025   True inert/unresolved
+c8 within 25% hi     67    2.875       0.515 -0.060 -0.082 -1.392 -0.031 -0.122   True inert/unresolved
+       c9 RS>=70     98    2.491       0.442 -0.132 -0.090 -0.951 -0.032 -0.135   True inert/unresolved
+ c10 ADDV>=$200M    166    2.896       0.356 -0.219 -0.259 -1.463 -0.110 -0.376   True inert/unresolved
+
+======================================================================================================================
+5d horizon — dropping each criterion (delta > 0 means the criterion SUBTRACTS)
+======================================================================================================================
+         dropped  names  adr_med  excess_raw  d_raw  d_adj  t_adj     h1     h2  agree          verdict
+     — full TT —     66    2.833       0.115  0.000  0.000    NaN  0.000  0.000   True                 
+ c1 close>150sma     66    2.833       0.115  0.000  0.000    NaN  0.000  0.000   True inert/unresolved
+ c2 close>200sma     66    2.833       0.115  0.000  0.000    NaN  0.000  0.000   True inert/unresolved
+      c3 150>200     70    2.849       0.105 -0.010 -0.017 -1.244 -0.004 -0.027   True inert/unresolved
+   c4 200 rising     66    2.837       0.117  0.002  0.001  0.220  0.007 -0.004  False inert/unresolved
+       c5 50>150     69    2.863       0.132  0.017  0.020  1.381  0.025  0.016   True inert/unresolved
+  c6 close>50sma     77    2.904       0.141  0.026  0.026  0.817  0.025  0.027   True inert/unresolved
+c7 >=30% off low     67    2.807       0.099 -0.016 -0.012 -1.350 -0.027 -0.000   True inert/unresolved
+c8 within 25% hi     67    2.875       0.107 -0.008 -0.011 -0.793  0.019 -0.035  False inert/unresolved
+       c9 RS>=70     98    2.491       0.089 -0.026 -0.019 -0.799 -0.010 -0.027   True inert/unresolved
+ c10 ADDV>=$200M    166    2.896       0.057 -0.058 -0.072 -1.697 -0.046 -0.093   True inert/unresolved
+
+names = median universe size/day · d_adj = ADR-matched paired change vs full TT (pp) · bar |t| >= 3.02 + halves agree
