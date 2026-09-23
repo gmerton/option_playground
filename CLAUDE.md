@@ -126,6 +126,48 @@ These are hard-won; violating them has produced wrong results more than once.
 - **The trade journal is not evidence for setup selection** — it is admissible only for conformance,
   execution quality and cost realism. It is also structurally underpowered for certifying an edge.
 - Quiet mode: verbose output goes to a log file under `data/studies/`; surface a short summary plus the path.
+- **Review the negatives for false negatives.** After a run of nulls, re-check each: did "wider data" actually
+  change the universe? Is a "cost proxy" cell really a positive after-cost strategy?
+- **Pull all results — never truncate data the owner will act on.**
+- **Creator patterns have no fixed timeframe.** Bars may be 1-minute or daily; normalise to ATR/scale-free
+  before testing. A daily-bar null does **not** refute an intraday pattern.
+- **Be pragmatic about data unevenness** — note the caveat and continue; don't halt on it.
+
+## Working rules
+
+How the owner wants the work done. These are his standing instructions, not inferences — follow them
+unless he says otherwise in the moment.
+
+- **Commit directly to `main`.** Personal repo; no feature-branch-by-default. Commit and push straight to
+  `main` unless told otherwise.
+- **His trades are not evidence.** Assume he is a bad trader. His log is admissible for conformance,
+  execution and cost realism **only** — never for setup selection, and never as a benchmark. This is the
+  rule most likely to be got wrong by someone new, and it is expensive: treating the journal as evidence
+  for selection will manufacture confident, wrong conclusions.
+- **Flag same-day round trips every time** the day's fills are pulled, unprompted — he asked for the
+  reminder explicitly ("it's how I learn"). It is the largest measured leak in the book: August, 132 round
+  trips, −$7,884; across his log, 278 same-day cycles, −$8.3k at a 19% win rate. Report the count and the
+  dollar total even on a good day; one session is noise, the running tally is the point.
+- **Precision over recall** — rather miss winners than admit losers.
+- **Conviction selection IS the strategy.** The intraday machinery is execution insurance on discretionary
+  picks, not a source of return.
+- **Don't grade planned vs unplanned.** He doesn't report every plan, so absence from the sheet means
+  nothing. Grade the trade's characteristics.
+- **Incremental delivery**: plumbing first, defer strategy decisions.
+- **Weight current market conditions** — report setup expectancy *conditioned* on today's regime (SPY trend
+  × breadth) and mark today's row, rather than quoting an unconditional average.
+- **Quote every stop two ways**: width (`stop/ADR` — under ~0.5, widen and cut size) **and** execution
+  ("judged on the CLOSE, not intraday"). A resting intraday stop is a different trade from the one the
+  research supports; if he is running one, say so and price the difference.
+- **No background polling.** When data isn't ready (Flex, a scheduled job), report status and expected
+  timing, then stop. He will ask again.
+- **ASCII filenames only** — git escapes non-ASCII in `--name-only`, so grep-based audits silently miss
+  those files.
+
+⚠ **This section exists because memory does not travel.** The `~/.claude/projects/.../memory/` store is
+account- and machine-local and is not in git, so these rules would otherwise be lost when switching Claude
+accounts or machines. Keep durable behavioural rules here; leave situational project state in memory,
+where going stale is harmless.
 
 ## Key patterns
 
