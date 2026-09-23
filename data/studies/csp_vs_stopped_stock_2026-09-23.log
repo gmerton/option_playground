@@ -1,0 +1,157 @@
+CSP vs stopped stock -- 201,849 trades, 326 names, 2018-01-05 -> 2026-02-20; SPY ER terciles 0.150 / 0.313
+Sidak threshold for the 24 secondary cells: |t| >= 3.07
+
+##############################################################################################################
+# tenor M  (100,644 trades, t clustered by month)
+##############################################################################################################
+
+levels (% of collateral per trade):
+  a PUT           +0.360 (t +1.26, n_cl 98)
+  d HOLD          +0.493 (t +2.62, n_cl 98)
+  b REST T05      +0.125 (t +1.76, n_cl 98)
+  c CLOSE T05     +0.201 (t +2.18, n_cl 98)
+  b REST LOW      +0.095 (t +1.39, n_cl 98)
+  c CLOSE LOW     +0.170 (t +1.84, n_cl 98)
+  b REST T10      +0.205 (t +2.19, n_cl 98)
+  c CLOSE T10     +0.288 (t +2.54, n_cl 98)
+
+-- stop T05: REST hit 84.3%  CLOSE hit 73.7%  whipsaw (REST-stopped, stock ended above entry) 46.7%
+  a - b (put minus resting stop)    +0.235 (t +0.84, n_cl 98)  | halves H1 2018-21 -0.005 (t -0.10)  H2 2022-26 +0.441 (t +2.77) <== PRIMARY
+                                   regime: CHOPPY +0.048 (t -0.03)  MID +0.432 (t +0.54)  TREND +0.226 (t +0.89)
+  a - c (put minus close stop)      +0.159 (t +0.56, n_cl 98)  | halves H1 2018-21 -0.067 (t -0.25)  H2 2022-26 +0.354 (t +2.79)
+                                   regime: CHOPPY -0.020 (t -0.25)  MID +0.365 (t +0.36)  TREND +0.134 (t +0.58)
+  c - b (close minus resting)       +0.076 (t +2.35, n_cl 98)  | halves H1 2018-21 +0.062 (t +1.89)  H2 2022-26 +0.087 (t +1.59)
+                                   regime: CHOPPY +0.068 (t +1.88)  MID +0.068 (t +1.78)  TREND +0.091 (t +1.55)
+  interaction (a-b CHOPPY minus TREND): -0.255 (Welch t -0.55; 71 vs 70 clusters)
+
+-- stop LOW: REST hit 83.8%  CLOSE hit 73.3%  whipsaw (REST-stopped, stock ended above entry) 46.6%
+  a - b (put minus resting stop)    +0.265 (t +1.00, n_cl 98)  | halves H1 2018-21 +0.073 (t +0.08)  H2 2022-26 +0.431 (t +2.74)
+                                   regime: CHOPPY +0.040 (t -0.05)  MID +0.504 (t +0.73)  TREND +0.254 (t +1.02)
+  a - c (put minus close stop)      +0.190 (t +0.71, n_cl 98)  | halves H1 2018-21 -0.004 (t -0.11)  H2 2022-26 +0.357 (t +2.78)
+                                   regime: CHOPPY -0.003 (t -0.20)  MID +0.404 (t +0.56)  TREND +0.169 (t +0.80)
+  c - b (close minus resting)       +0.076 (t +2.15, n_cl 98)  | halves H1 2018-21 +0.078 (t +1.61)  H2 2022-26 +0.074 (t +1.42)
+                                   regime: CHOPPY +0.043 (t +1.39)  MID +0.100 (t +1.55)  TREND +0.085 (t +1.28)
+  interaction (a-b CHOPPY minus TREND): -0.281 (Welch t -0.62; 71 vs 70 clusters)
+
+-- stop T10: REST hit 72.0%  CLOSE hit 61.7%  whipsaw (REST-stopped, stock ended above entry) 39.0%
+  a - b (put minus resting stop)    +0.155 (t +0.54, n_cl 98)  | halves H1 2018-21 -0.092 (t -0.31)  H2 2022-26 +0.368 (t +2.82)
+                                   regime: CHOPPY -0.048 (t -0.36)  MID +0.371 (t +0.37)  TREND +0.144 (t +0.63)
+  a - c (put minus close stop)      +0.072 (t +0.18, n_cl 98)  | halves H1 2018-21 -0.167 (t -0.49)  H2 2022-26 +0.278 (t +2.65)
+                                   regime: CHOPPY -0.109 (t -0.55)  MID +0.269 (t +0.04)  TREND +0.058 (t +0.21)
+  c - b (close minus resting)       +0.083 (t +2.84, n_cl 98)  | halves H1 2018-21 +0.075 (t +2.13)  H2 2022-26 +0.090 (t +1.93)
+                                   regime: CHOPPY +0.061 (t +2.11)  MID +0.102 (t +1.94)  TREND +0.086 (t +1.53)
+  interaction (a-b CHOPPY minus TREND): -0.292 (Welch t -0.66; 71 vs 70 clusters)
+
+by year, a - b and a - d (stop T05):
+          a      d  b_T05  c_T05  ab_T05  ac_T05
+year                                            
+2018 -0.363 -0.245 -0.129 -0.195  -0.234  -0.167
+2019  0.470  0.487  0.093  0.192   0.377   0.278
+2020 -0.257  1.080  0.716  0.883  -0.973  -1.140
+2021  0.895  0.631  0.144  0.190   0.750   0.705
+2022  0.249 -0.029 -0.140 -0.189   0.389   0.439
+2023  0.692  0.513  0.139  0.205   0.553   0.488
+2024  0.557  0.754  0.077  0.187   0.480   0.370
+2025  0.657  0.825  0.150  0.369   0.507   0.288
+2026 -0.624 -0.356 -0.069 -0.027  -0.555  -0.598
+
+##############################################################################################################
+# tenor W  (101,205 trades, t clustered by week)
+##############################################################################################################
+
+levels (% of collateral per trade):
+  a PUT           +0.061 (t +0.87, n_cl 412)
+  d HOLD          +0.058 (t +1.09, n_cl 412)
+  b REST T05      +0.012 (t +0.35, n_cl 412)
+  c CLOSE T05     +0.031 (t +0.77, n_cl 412)
+  b REST LOW      +0.008 (t +0.23, n_cl 412)
+  c CLOSE LOW     +0.025 (t +0.62, n_cl 412)
+  b REST T10      +0.037 (t +0.94, n_cl 412)
+  c CLOSE T10     +0.058 (t +1.30, n_cl 412)
+
+-- stop T05: REST hit 69.5%  CLOSE hit 52.5%  whipsaw (REST-stopped, stock ended above entry) 34.5%
+  a - b (put minus resting stop)    +0.049 (t +0.85, n_cl 412)  | halves H1 2018-21 -0.027 (t -0.36)  H2 2022-26 +0.114 (t +1.87)
+                                   regime: CHOPPY -0.005 (t -0.21)  MID +0.092 (t +1.06)  TREND +0.061 (t +0.68)
+  a - c (put minus close stop)      +0.030 (t +0.57, n_cl 412)  | halves H1 2018-21 -0.040 (t -0.57)  H2 2022-26 +0.090 (t +1.77)
+                                   regime: CHOPPY -0.002 (t -0.18)  MID +0.070 (t +0.94)  TREND +0.022 (t +0.31)
+  c - b (close minus resting)       +0.019 (t +1.29, n_cl 412)  | halves H1 2018-21 +0.013 (t +0.66)  H2 2022-26 +0.024 (t +1.13)
+                                   regime: CHOPPY -0.003 (t -0.23)  MID +0.022 (t +0.84)  TREND +0.038 (t +1.37)
+  interaction (a-b CHOPPY minus TREND): -0.083 (Welch t -0.62; 137 vs 138 clusters)
+
+-- stop LOW: REST hit 69.3%  CLOSE hit 52.6%  whipsaw (REST-stopped, stock ended above entry) 35.9%
+  a - b (put minus resting stop)    +0.053 (t +0.92, n_cl 412)  | halves H1 2018-21 -0.021 (t -0.28)  H2 2022-26 +0.117 (t +1.91)
+                                   regime: CHOPPY -0.004 (t -0.19)  MID +0.107 (t +1.20)  TREND +0.057 (t +0.63)
+  a - c (put minus close stop)      +0.036 (t +0.69, n_cl 412)  | halves H1 2018-21 -0.035 (t -0.49)  H2 2022-26 +0.096 (t +1.87)
+                                   regime: CHOPPY +0.007 (t -0.08)  MID +0.070 (t +0.92)  TREND +0.030 (t +0.42)
+  c - b (close minus resting)       +0.017 (t +1.11, n_cl 412)  | halves H1 2018-21 +0.014 (t +0.61)  H2 2022-26 +0.020 (t +0.97)
+                                   regime: CHOPPY -0.011 (t -0.55)  MID +0.036 (t +1.18)  TREND +0.027 (t +0.98)
+  interaction (a-b CHOPPY minus TREND): -0.077 (Welch t -0.58; 137 vs 138 clusters)
+
+-- stop T10: REST hit 48.6%  CLOSE hit 35.0%  whipsaw (REST-stopped, stock ended above entry) 20.3%
+  a - b (put minus resting stop)    +0.024 (t +0.40, n_cl 412)  | halves H1 2018-21 -0.054 (t -0.74)  H2 2022-26 +0.091 (t +1.65)
+                                   regime: CHOPPY -0.021 (t -0.39)  MID +0.069 (t +0.89)  TREND +0.024 (t +0.28)
+  a - c (put minus close stop)      +0.003 (t -0.04, n_cl 412)  | halves H1 2018-21 -0.063 (t -0.94)  H2 2022-26 +0.059 (t +1.30)
+                                   regime: CHOPPY -0.025 (t -0.45)  MID +0.031 (t +0.44)  TREND +0.002 (t +0.02)
+  c - b (close minus resting)       +0.021 (t +1.71, n_cl 412)  | halves H1 2018-21 +0.009 (t +0.57)  H2 2022-26 +0.031 (t +1.78)
+                                   regime: CHOPPY +0.004 (t +0.20)  MID +0.038 (t +1.57)  TREND +0.021 (t +0.92)
+  interaction (a-b CHOPPY minus TREND): -0.059 (Welch t -0.47; 137 vs 138 clusters)
+
+by year, a - b and a - d (stop T05):
+          a      d  b_T05  c_T05  ab_T05  ac_T05
+year                                            
+2018 -0.199 -0.116 -0.035 -0.076  -0.164  -0.123
+2019  0.142  0.082 -0.017  0.012   0.159   0.130
+2020 -0.103  0.125  0.147  0.199  -0.250  -0.302
+2021  0.175  0.109  0.044  0.053   0.131   0.122
+2022  0.023 -0.109 -0.127 -0.152   0.151   0.175
+2023  0.129  0.087  0.051  0.060   0.078   0.069
+2024  0.102  0.120  0.017  0.048   0.085   0.054
+2025  0.152  0.127  0.017  0.092   0.136   0.060
+2026  0.180  0.149  0.035  0.069   0.145   0.111
+
+summary (data/studies/csp_vs_stopped_stock_2026-09-23.csv):
+tenor stop      contrast   mean      t  n_cl     h1    h2  passes_sidak
+    M  T05            ab  0.235  0.839    98 -0.005 0.441         False
+    M  T05            ac  0.159  0.556    98 -0.067 0.354         False
+    M  T05            cb  0.076  2.353    98  0.062 0.087         False
+    M  T05 ab_chop-trend -0.255 -0.554   141    NaN   NaN         False
+    M  LOW            ab  0.265  1.002    98  0.073 0.431         False
+    M  LOW            ac  0.190  0.706    98 -0.004 0.357         False
+    M  LOW            cb  0.076  2.151    98  0.078 0.074         False
+    M  LOW ab_chop-trend -0.281 -0.620   141    NaN   NaN         False
+    M  T10            ab  0.155  0.536    98 -0.092 0.368         False
+    M  T10            ac  0.072  0.180    98 -0.167 0.278         False
+    M  T10            cb  0.083  2.838    98  0.075 0.090         False
+    M  T10 ab_chop-trend -0.292 -0.660   141    NaN   NaN         False
+    W  T05            ab  0.049  0.849   412 -0.027 0.114         False
+    W  T05            ac  0.030  0.570   412 -0.040 0.090         False
+    W  T05            cb  0.019  1.294   412  0.013 0.024         False
+    W  T05 ab_chop-trend -0.083 -0.621   275    NaN   NaN         False
+    W  LOW            ab  0.053  0.918   412 -0.021 0.117         False
+    W  LOW            ac  0.036  0.688   412 -0.035 0.096         False
+    W  LOW            cb  0.017  1.110   412  0.014 0.020         False
+    W  LOW ab_chop-trend -0.077 -0.576   275    NaN   NaN         False
+    W  T10            ab  0.024  0.402   412 -0.054 0.091         False
+    W  T10            ac  0.003 -0.040   412 -0.063 0.059         False
+    W  T10            cb  0.021  1.706   412  0.009 0.031         False
+    W  T10 ab_chop-trend -0.059 -0.475   275    NaN   NaN         False
+
+# EXPLORATORY (not pre-registered): risk per arm
+M
+        mean     sd  worst1pct  cluster_sharpe
+a      0.360  6.302    -40.981           0.128
+d      0.493  8.182    -16.907           0.265
+b_T05  0.125  6.286     -5.557           0.178
+c_T05  0.201  6.666     -7.874           0.220
+b_T10  0.205  6.664     -7.557           0.221
+c_T10  0.288  7.487     -9.460           0.256
+  2020 only: {'a': -0.26, 'd': 1.08, 'b_T05': 0.72, 'c_T05': 0.88} | ex-2020 a - b T05: 0.392
+W
+        mean     sd  worst1pct  cluster_sharpe
+a      0.061  3.093    -19.160           0.043
+d      0.058  3.092     -8.871           0.054
+b_T05  0.012  2.277     -4.574           0.017
+c_T05  0.031  2.528     -6.155           0.038
+b_T10  0.037  2.516     -5.647           0.046
+c_T10  0.058  2.963     -6.903           0.064
+  2020 only: {'a': -0.1, 'd': 0.12, 'b_T05': 0.15, 'c_T05': 0.2} | ex-2020 a - b T05: 0.088
