@@ -1,0 +1,134 @@
+
+## N = 3 contractions (PRIMARY)
+
+N                3.000
+signals       1704.000
+names          688.000
+paired        1620.000
+vcp_mean         0.281
+vcp_med         -3.468
+vcp_win         30.692
+vcp_held        13.732
+stop_med         9.577
+pool_n       42876.000
+pool_mean        0.565
+pool_held       13.252
+pool_t           4.485
+vcp_t            0.808
+diff             1.364
+diff_t           3.428
+ctl_mean        -0.871
+ctl_held        11.944
+h1               0.847
+h2               1.784
+n1             726.000
+n2             894.000
+
+per year (paired):
+        n   vcp   ctl  diff
+date                       
+2019    6 -3.59 -3.96  0.36
+2020  336  2.13 -0.20  2.34
+2021  221 -2.82 -2.23 -0.59
+2022  163 -2.47 -2.21 -0.26
+2023  134  0.81 -0.89  1.70
+2024  154 -0.10 -0.99  0.89
+2025  275  5.06  0.78  4.28
+2026  331 -1.08 -1.24  0.16
+
+## N = 2 contractions (exploratory)
+
+N                2.000
+signals       5317.000
+names         1035.000
+paired        5030.000
+vcp_mean         0.345
+vcp_med         -3.206
+vcp_win         32.537
+vcp_held        14.651
+stop_med        10.354
+pool_n       42876.000
+pool_mean        0.565
+pool_held       13.252
+pool_t           4.485
+vcp_t            2.058
+diff             1.287
+diff_t           3.595
+ctl_mean        -0.771
+ctl_held        11.617
+h1               1.418
+h2               1.194
+n1            2094.000
+n2            2936.000
+
+per year (paired):
+         n   vcp   ctl  diff
+date                        
+2019    21  1.90 -3.18  5.08
+2020   897  3.45  0.23  3.22
+2021   746 -1.76 -1.38 -0.38
+2022   430 -1.50 -2.10  0.60
+2023   413  0.15 -0.38  0.52
+2024   535  0.22 -0.65  0.86
+2025   894  2.70  0.00  2.69
+2026  1094 -1.06 -1.45  0.38
+
+
+# harness rows (entry at close, hold 60)
+control = post (4,546 control trades)
+
+=== vcp damped sine N3 (daily) — 1,665 signals, 675 names, 2019-10-16 -> 2026-09-18 ===
+                n  meanR   medR     win    p90      t   ctrl   edge
+stop_hold  1665.0  0.111 -1.034  36.937  3.017  1.054  0.252 -0.142
+t1R        1665.0 -0.079  0.373  52.072  1.000 -3.011 -0.018 -0.061
+t2R        1665.0 -0.007 -1.019  41.622  2.000 -0.859  0.085 -0.092
+trail_bar  1665.0 -0.030 -0.147  37.658  0.788 -1.394 -0.022 -0.008
+ema20      1665.0 -0.026 -0.373  30.390  1.243 -0.220  0.009 -0.034
+
+by half (n 744 / 921):
+           <2023-01-01  >=2023-01-01
+stop_hold        0.197         0.041
+t1R             -0.061        -0.093
+t2R              0.056        -0.058
+trail_bar       -0.031        -0.029
+ema20           -0.094         0.030
+
+best arm by edge: trail_bar | passes the bar (beats control, both halves positive, |t|>=3): no
+control = xname (4,995 control trades)
+
+=== vcp damped sine N3 xname (daily) — 1,665 signals, 675 names, 2019-10-16 -> 2026-09-18 ===
+                n  meanR   medR     win    p90      t   ctrl   edge
+stop_hold  1665.0  0.111 -1.034  36.937  3.017  1.054  0.228 -0.117
+t1R        1665.0 -0.079  0.373  52.072  1.000 -3.011  0.046 -0.125
+t2R        1665.0 -0.007 -1.019  41.622  2.000 -0.859  0.134 -0.142
+trail_bar  1665.0 -0.030 -0.147  37.658  0.788 -1.394  0.005 -0.035
+ema20      1665.0 -0.026 -0.373  30.390  1.243 -0.220  0.012 -0.038
+
+by half (n 744 / 921):
+           <2023-01-01  >=2023-01-01
+stop_hold        0.197         0.041
+t1R             -0.061        -0.093
+t2R              0.056        -0.058
+trail_bar       -0.031        -0.029
+ema20           -0.094         0.030
+
+best arm by edge: trail_bar | passes the bar (beats control, both halves positive, |t|>=3): no
+control = post (14,144 control trades)
+
+=== vcp damped sine N2 (daily) — 5,142 signals, 1029 names, 2019-10-16 -> 2026-09-18 ===
+                n  meanR   medR     win    p90      t   ctrl   edge
+stop_hold  5142.0  0.165 -1.020  39.323  2.925  3.341  0.266 -0.100
+t1R        5142.0 -0.044  0.542  52.898  1.000 -2.114  0.003 -0.047
+t2R        5142.0  0.037 -0.930  43.213  2.000  1.266  0.104 -0.067
+trail_bar  5142.0 -0.018 -0.134  38.506  0.790 -0.651 -0.010 -0.009
+ema20      5142.0  0.001 -0.312  32.575  1.175  0.709  0.012 -0.011
+
+by half (n 2156 / 2986):
+           <2023-01-01  >=2023-01-01
+stop_hold        0.272         0.088
+t1R              0.022        -0.091
+t2R              0.137        -0.035
+trail_bar       -0.011        -0.024
+ema20           -0.006         0.006
+
+best arm by edge: trail_bar | passes the bar (beats control, both halves positive, |t|>=3): no

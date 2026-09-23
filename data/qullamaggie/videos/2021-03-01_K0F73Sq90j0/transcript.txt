@@ -1,0 +1,2062 @@
+[00:00:03] markets
+[00:00:03] speculation and risk this is the chat
+[00:00:06] with traders podcast
+[00:00:08] hosted by aaron field
+[00:00:11] what's good my friends welcome to yet
+[00:00:13] another episode of
+[00:00:15] chat with traders this is number two one
+[00:00:19] two now my guest is someone who several
+[00:00:22] listeners have requested
+[00:00:24] and also the person who stan gluesman
+[00:00:26] made reference to
+[00:00:28] in the previous episode it's swedish
+[00:00:31] swing trader christian kulamagi
+[00:00:34] christian's been trading the u.s equity
+[00:00:37] market
+[00:00:38] full time since 2011 and although he got
+[00:00:41] off to a rocky start
+[00:00:43] he's arrived at a very rare
+[00:00:46] level of trading success i guess you
+[00:00:49] could say
+[00:00:50] christian is a member of the eight
+[00:00:52] figure club
+[00:00:53] having realized tens of millions in
+[00:00:56] trading profits
+[00:00:58] which is only more impressive given the
+[00:01:00] fact that he's a self-funded
+[00:01:02] independent trader well trader
+[00:01:05] gamer i know christian thinks of it more
+[00:01:08] as
+[00:01:08] a video game nowadays so things we talk
+[00:01:12] about
+[00:01:12] to start with we go back to 2011
+[00:01:15] and discuss christian's beginnings which
+[00:01:18] includes his origins
+[00:01:19] as a day trader from there we get into
+[00:01:22] how he evolved into a swing trader
+[00:01:24] how he discovered and researched
+[00:01:26] profitable setups
+[00:01:28] and then we do a deep dive into one of
+[00:01:30] his setups
+[00:01:31] a breakout strategy last of all
+[00:01:34] links to everything mentioned and
+[00:01:36] referenced throughout this episode
+[00:01:39] can be found in the show notes at
+[00:01:41] chatwithtraders.com
+[00:01:43] two one two all right
+[00:01:47] here we go ladies and gents my guest
+[00:01:49] christian
+[00:01:52] kulamagi
+[00:01:54] christian i wanted to ask you first
+[00:01:56] thing uh
+[00:01:57] when did you actually start trading what
+[00:01:59] year was it
+[00:02:01] it was uh in 2011.
+[00:02:04] okay i started investing in 2010. okay
+[00:02:08] and when you started trading did you go
+[00:02:10] like straight into it full time or was
+[00:02:12] it just sort of a bit of a
+[00:02:13] a side hustle it was
+[00:02:16] uh i i went into it full time pretty
+[00:02:19] much uh
+[00:02:19] from the beginning it was um just um
+[00:02:23] i was uh in the final months of my uh
+[00:02:26] like getting my degree in biomedical
+[00:02:29] laboratory science
+[00:02:30] and then i got into this trading thing
+[00:02:33] and uh
+[00:02:34] it completely took over i i just focused
+[00:02:38] 100
+[00:02:39] on that so i kind of just dropped out of
+[00:02:40] school just in the end
+[00:02:42] uh to focus on the trading thing so yeah
+[00:02:44] you could say i went all in
+[00:02:46] oh so you didn't even finish your degree
+[00:02:49] no oh
+[00:02:50] wow okay that's that's a real commitment
+[00:02:53] did you have a part-time job or anything
+[00:02:55] like that at the time
+[00:02:57] yes i actually have a i was working as a
+[00:03:00] security guard like a
+[00:03:01] mall cop or something similar um
+[00:03:05] as uh yeah some part time while i was
+[00:03:07] studying so
+[00:03:08] i had uh options in case the trading
+[00:03:11] stuff wouldn't work out
+[00:03:13] so i had you know security net
+[00:03:16] you know i could you know just finish my
+[00:03:18] degree or i could you know
+[00:03:20] do the security guard work yeah you had
+[00:03:22] a little bit of income is
+[00:03:23] some support yes so how much money did
+[00:03:26] you start out trading with
+[00:03:29] about 5 000 us dollars
+[00:03:32] was my first attempt
+[00:03:36] that was your first attempt okay so i
+[00:03:38] presume there was probably
+[00:03:39] multiple attempts then yes in the first
+[00:03:43] couple of years i blew up three or four
+[00:03:45] times
+[00:03:46] and i started with the first time i
+[00:03:49] started with 5000 and the other times i
+[00:03:52] had like three
+[00:03:53] three four thousand us dollars
+[00:03:57] something similar how long did it take
+[00:03:59] you to blow up each of those accounts
+[00:04:01] like were they each short-lived or was
+[00:04:02] it just kind of
+[00:04:04] uh small losses over time just slowly
+[00:04:08] grinding away at your account yeah
+[00:04:11] so the first time it's kind of funny i
+[00:04:13] actually paper traded
+[00:04:15] for a week or two because you know i
+[00:04:17] read around that everyone said you
+[00:04:18] should paper trade in beginning so i
+[00:04:20] paid for traded and i doubled that at
+[00:04:22] my paper trading account in uh in two
+[00:04:25] weeks
+[00:04:26] and then i started uh trading with real
+[00:04:27] money and i was like
+[00:04:29] yeah i'm gonna be rich this is like may
+[00:04:32] 2011. and i i was thinking hey i'll be
+[00:04:34] rich uh
+[00:04:36] by fall uh what happened in reality i
+[00:04:39] lost most of that money in the first two
+[00:04:41] months
+[00:04:42] then i went back to my security guard uh
+[00:04:45] job and
+[00:04:47] for six months or so saved up money
+[00:04:50] started again
+[00:04:52] with a few thousand three thousand maybe
+[00:04:54] blew up again
+[00:04:56] and uh a few months to
+[00:04:59] six months of intervals and it actually
+[00:05:03] the first one was the shortest
+[00:05:05] but every time i blew up i learned
+[00:05:06] something new i improved a little bit
+[00:05:09] and it took a longer longer
+[00:05:12] between the times to blew up and did it
+[00:05:15] rattle your confidence when you were
+[00:05:17] losing this money
+[00:05:19] oh yes absolutely absolutely
+[00:05:23] it was a horrible experience that was my
+[00:05:25] life savings
+[00:05:27] at that time i was maybe 21 years old
+[00:05:30] and
+[00:05:30] i had saved up for you know three years
+[00:05:34] so as i understand it today you're
+[00:05:38] you're mostly a swing trader if not
+[00:05:40] entirely a swing trader
+[00:05:42] but when you first got started
+[00:05:45] you were day trading so i'm just curious
+[00:05:48] to hear a little bit about what was your
+[00:05:49] experience like
+[00:05:51] when you were day trading
+[00:05:54] i got into day trading because
+[00:05:57] the people i found on the internet on
+[00:05:59] social media they were mostly day
+[00:06:01] traders so that's what i
+[00:06:02] did too and that i didn't really know
+[00:06:06] there was any other types of trading
+[00:06:08] and so i thought trading was day trading
+[00:06:11] and in the beginning i really didn't
+[00:06:13] have any method or a system or anything
+[00:06:16] i had no idea i just followed what other
+[00:06:18] people did
+[00:06:19] that i perceived to be good at trading
+[00:06:23] but i really had no con
+[00:06:26] like i didn't really know what else in
+[00:06:28] the beginning what a stop loss was
+[00:06:30] i didn't know position sizing i just
+[00:06:32] went all in on all trades
+[00:06:35] and i didn't know anything about like
+[00:06:37] trailing stops or like profit taking and
+[00:06:40] what to expect from a certain
+[00:06:42] setup as i in the beginning i really
+[00:06:44] didn't know
+[00:06:45] anything i just did things randomly and
+[00:06:48] it was obviously very stressful and
+[00:06:52] scary were you trading the u.s market
+[00:06:54] right from the get-go or did you
+[00:06:56] experiment on your local market there
+[00:06:59] yes i did start with the us markets i
+[00:07:02] i realized early that's that's where the
+[00:07:04] uh that's where the action is
+[00:07:07] so i never actually bothered with a
+[00:07:09] swedish stock market
+[00:07:11] um at all when it comes to trading i
+[00:07:14] just focused completely on the u.s
+[00:07:18] that's where that's my trading software
+[00:07:21] and all of that it was
+[00:07:23] just u.s markets only i didn't even
+[00:07:25] bother getting
+[00:07:26] anything for the swedish stock market
+[00:07:28] okay
+[00:07:29] so what point did you begin gravitating
+[00:07:32] towards
+[00:07:33] swing trading
+[00:07:36] it took if it was uh maybe a couple of
+[00:07:40] years after it became
+[00:07:41] profitable or maybe a year after i
+[00:07:44] became profitable in 2013 about
+[00:07:46] two years exactly two years after i
+[00:07:49] started trading i realized
+[00:07:53] i looked at a lot of stocks i looked at
+[00:07:54] charts and
+[00:07:56] i actually went through all this uh
+[00:07:59] stocks in the u.s markets and i realized
+[00:08:01] that
+[00:08:02] the big moves take months weeks and
+[00:08:06] and years to play out day trading
+[00:08:10] is you know it's it's really hard to
+[00:08:13] catch like a hundred percent move or
+[00:08:15] fifty percent move unless you're lucky
+[00:08:18] and get into one of these micro small
+[00:08:20] cap
+[00:08:20] high flyers really early and you know
+[00:08:23] that have to double on the day but it's
+[00:08:25] it's very hard to catch those
+[00:08:28] so i realized i i and i also found
+[00:08:31] other people on social media that were
+[00:08:34] actually swing trading so i learned
+[00:08:35] about swing trading and i also read some
+[00:08:37] books
+[00:08:38] where that talked about swing and
+[00:08:40] position trading which is a little bit
+[00:08:41] longer term swing trading
+[00:08:44] so that's how i gravitated into it i
+[00:08:46] realized it's
+[00:08:48] has better risk reward and you're not
+[00:08:51] fighting near your entry all the time
+[00:08:54] in day trading you're always near your
+[00:08:56] entry most of the time but in swing
+[00:08:58] trading if you get a really
+[00:09:00] if you catch a big one you know
+[00:09:03] it's gonna be the stock is gonna be
+[00:09:05] above your stop for a long long time you
+[00:09:07] don't have to worry about it you don't
+[00:09:09] have to constantly
+[00:09:10] look at look at the stock and monitor it
+[00:09:14] i realized that it's also much more
+[00:09:18] scalable
+[00:09:19] like back then i still had a very small
+[00:09:21] account but i
+[00:09:23] i realized it that you know if my
+[00:09:25] accounts would grow
+[00:09:26] it's easier with a with a bigger account
+[00:09:29] because in day trading
+[00:09:31] especially the types of stocks they
+[00:09:32] traded mostly micro and
+[00:09:35] not micro caps norm yeah micro cap studs
+[00:09:37] micro and small caps
+[00:09:39] they weren't many of them weren't super
+[00:09:42] liquid
+[00:09:42] and even i had some issues with liquid
+[00:09:45] and slippage and some stocks they traded
+[00:09:47] so that's also something i i realized
+[00:09:50] kind of
+[00:09:50] early that gravitated into swing trading
+[00:09:54] but the process took a couple of years
+[00:09:56] before i went from
+[00:09:57] a 95 day trading to 95
+[00:10:01] swing trading it wasn't an overnight
+[00:10:03] thing it took it took
+[00:10:04] it took time one step at a time it was
+[00:10:07] very uncomfortable
+[00:10:08] um in the beginning holding stuff
+[00:10:10] overnight because i had been
+[00:10:12] brainwashed with that oh holding stocks
+[00:10:14] overnight is
+[00:10:16] very dangerous you can't control your
+[00:10:17] risk but it's it's not true you can
+[00:10:20] control
+[00:10:21] your risk it's called position sizing
+[00:10:23] and also
+[00:10:24] if you check out if you check the like
+[00:10:26] the earning states and if you if
+[00:10:29] it happens to be like a biotech company
+[00:10:31] make sure there's no
+[00:10:32] pending data or fda
+[00:10:35] decisions you know it's not that
+[00:10:37] dangerous
+[00:10:39] the iterating is much more hazardous i
+[00:10:41] would say
+[00:10:42] okay it's interesting that well from the
+[00:10:45] sounds of it
+[00:10:46] that you did actually start to see some
+[00:10:48] consistency and some profitability
+[00:10:51] uh day trading before you actually did
+[00:10:54] make that switch across to
+[00:10:56] or eventually switch across to swing
+[00:10:58] trading
+[00:11:00] absolutely i i i
+[00:11:03] i probably made my first million mostly
+[00:11:05] day trading
+[00:11:06] all right yeah yeah but
+[00:11:10] everything after that has mostly been
+[00:11:13] so yeah yeah absolutely i was profitable
+[00:11:16] uh consistently profitable
+[00:11:17] for uh for a couple of years before i
+[00:11:20] went
+[00:11:21] uh mostly swing trading obviously it was
+[00:11:25] a hybrid approach for a while there in
+[00:11:27] between
+[00:11:28] okay that really is quite interesting
+[00:11:30] actually i mean if you've made a million
+[00:11:32] dollars day trading
+[00:11:33] and then but you still see bigger
+[00:11:35] opportunities in swing trading
+[00:11:37] you know when you did make that first
+[00:11:39] million dollars
+[00:11:41] how did your mindset towards trading
+[00:11:43] change like
+[00:11:44] did you did you envision that you would
+[00:11:48] go on as you have done today to make
+[00:11:50] tens of millions of dollars like did you
+[00:11:52] see that as like
+[00:11:53] sort of your your trajectory now like
+[00:11:56] you
+[00:11:57] knew that was coming it was now just a
+[00:11:59] matter of time or did you still have
+[00:12:01] some doubts about
+[00:12:02] how big you could get as a trader
+[00:12:05] yes in the early years when i um
+[00:12:09] in the first few years after i started
+[00:12:10] making money
+[00:12:12] i it was still like i it was still at
+[00:12:15] times hard to believe it since the first
+[00:12:17] two years when i was mostly losing money
+[00:12:19] it was such a
+[00:12:22] horrible experience like i got scars for
+[00:12:25] life i was constantly depressed and
+[00:12:28] and when i started consistently make
+[00:12:29] money it felt like
+[00:12:31] unreal it's like is this really
+[00:12:33] happening like i can actually make a
+[00:12:35] living off of this
+[00:12:36] is it just pure luck but after a while i
+[00:12:39] realized like okay no i mean it's the
+[00:12:42] same
+[00:12:42] i'm what i'm pretty much doing i'm just
+[00:12:44] trading the same patterns that occur
+[00:12:46] over and over again
+[00:12:48] and if i can you know find the same
+[00:12:52] patterns that applies to swing trading i
+[00:12:54] i can
+[00:12:55] i can scale it up and uh me
+[00:12:58] and the the way i saw it was i would
+[00:13:01] make the same amount of money
+[00:13:03] but with less effort because day trading
+[00:13:05] is really a lot of effort
+[00:13:07] but the way
+[00:13:10] i didn't maybe really see it scaling up
+[00:13:15] [Music]
+[00:13:17] as like it wasn't really my first
+[00:13:19] priority what i wanted to do was
+[00:13:21] like make the same amount of money but
+[00:13:24] with less
+[00:13:25] less effort uh because i was really i
+[00:13:28] was getting tired of sitting like
+[00:13:30] you know from open to the close in front
+[00:13:33] of the computer looking for trades
+[00:13:35] when i saw some other people who were
+[00:13:37] swing trading who were mostly
+[00:13:39] doing their entries maybe first hour of
+[00:13:42] the day and then it was just monitoring
+[00:13:44] their positions the rest of the time
+[00:13:45] they really didn't do much
+[00:13:47] the rest of the day or they and uh yeah
+[00:13:51] so that's really what i was after like
+[00:13:54] i'm i'm a lazy person so what can i say
+[00:13:58] gotcha i'd like to know a bit about
+[00:14:02] when you did kind of make that
+[00:14:05] that transition across to more of a
+[00:14:07] swing trader
+[00:14:09] like how did you seek out how did you
+[00:14:11] discover the setups that you were going
+[00:14:14] to trade like what was that
+[00:14:15] process like the i'm talking about the
+[00:14:18] research
+[00:14:18] and the studying here to find the sort
+[00:14:20] of patterns that you would
+[00:14:22] go after yeah so the
+[00:14:25] setup ideas i got from from
+[00:14:28] a guy a stockpi that's where i got the
+[00:14:31] step setup idea and i also
+[00:14:34] read a book by william o'neill how to
+[00:14:37] make money in stocks
+[00:14:39] uh and that's where i really got these
+[00:14:42] set up
+[00:14:42] ideas that these you know stocks move in
+[00:14:45] the same patterns
+[00:14:47] as they have done for a hundred years so
+[00:14:50] what i
+[00:14:50] did i i went into my uh
+[00:14:54] shouting software and pretty much went
+[00:14:56] through every single
+[00:14:57] u.s stock and i looked for those
+[00:15:00] specific patterns that i had uh stumbled
+[00:15:03] upon
+[00:15:03] thanks to the book and that this guy
+[00:15:06] stopped me
+[00:15:07] and i realized wow i mean it's the same
+[00:15:09] patterns like nothing is
+[00:15:10] different it's to say it was the same
+[00:15:12] patterns in the
+[00:15:13] early 1900s and even late 1800s
+[00:15:17] it was the same patterns in the 50s same
+[00:15:20] patterns in the 80s in the 90s and it's
+[00:15:23] the same patterns now
+[00:15:25] that was maybe what could it be maybe
+[00:15:27] 2015 or something
+[00:15:29] so i realized wow this is if i learned
+[00:15:31] this if i
+[00:15:32] really mastered this these setups like
+[00:15:34] this one setup
+[00:15:36] which is a just breakout setup and the
+[00:15:39] variations of those
+[00:15:41] of that setup i i can really wow
+[00:15:44] like it felt like i had stumbled upon a
+[00:15:47] gold mine really
+[00:15:50] and how did you begin to build
+[00:15:51] confidence in those setups
+[00:15:54] it was a combination of studying the
+[00:15:58] patterns what i did i
+[00:15:59] built the data database in evernote
+[00:16:02] which is pretty much a note-taking
+[00:16:04] software i took screenshots of all the
+[00:16:06] setups
+[00:16:07] before after uh both on the daily and
+[00:16:10] like the
+[00:16:11] intraday time frames just to look at how
+[00:16:13] what
+[00:16:14] what how does a good setup look like at
+[00:16:16] the start of the move
+[00:16:18] or before the move when it starts
+[00:16:20] breaking out and
+[00:16:21] like a few weeks a few months after like
+[00:16:24] how does it how does it act
+[00:16:26] um and i looked at all these variations
+[00:16:29] that's how i built the confidence and i
+[00:16:31] started uh trading the setup myself
+[00:16:33] too and i saw some success and and it
+[00:16:36] felt like i was always improving i was
+[00:16:39] always
+[00:16:39] learning a new variation or you know
+[00:16:42] something
+[00:16:42] something new so that's really how i
+[00:16:45] built the confidence
+[00:16:46] it really like i say on my stream too
+[00:16:49] like everyone should do it whatever
+[00:16:51] setup if you stumble upon a setup and
+[00:16:52] you want to trade it
+[00:16:54] like back test it like like look through
+[00:16:56] like look through
+[00:16:57] hundreds if not thousands of examples of
+[00:16:59] that setup and build a database
+[00:17:02] and go through that database once in a
+[00:17:05] while uh
+[00:17:06] just scroll through it that's how you
+[00:17:07] memorize this
+[00:17:09] it's so it's all about pattern
+[00:17:10] recognition really trading is all about
+[00:17:12] pattern recognition and you can
+[00:17:14] it could be just purely technical and
+[00:17:16] you can also
+[00:17:17] combine it with fundamentals like i do i
+[00:17:20] also look at
+[00:17:20] theme what's the theme what's the
+[00:17:23] earnings revenues i look at the news
+[00:17:25] overall like what's driving what what's
+[00:17:28] driving the stock
+[00:17:30] so i found some similarities there too
+[00:17:32] it's the same things that have worked
+[00:17:34] for
+[00:17:34] a 100 years really that's how you build
+[00:17:37] the confidence that's how you do it
+[00:17:39] there's no other way well let's go into
+[00:17:42] this a lot further i'd love to do a deep
+[00:17:43] dive
+[00:17:44] on this particular strategy i mean as i
+[00:17:46] understand it i think
+[00:17:47] there's there's kind of three different
+[00:17:49] setups which are
+[00:17:50] your main types of plays nowadays
+[00:17:54] um i mean we we could go through and we
+[00:17:56] could talk a little bit about each of
+[00:17:57] those setups but
+[00:17:58] i think it would be most beneficial just
+[00:18:01] to
+[00:18:02] pick on this one particular setup and go
+[00:18:05] and go deep on that so
+[00:18:08] before we do just summarize for me
+[00:18:12] the objective of this strategy like what
+[00:18:14] is the goal here what is it trying to
+[00:18:16] achieve
+[00:18:18] yeah so the simplest of the
+[00:18:22] uh three methods i use is it's just a
+[00:18:25] breakout
+[00:18:28] on the on the daily daily time time
+[00:18:30] frame you really don't need any
+[00:18:32] intraday to look at the intraday time
+[00:18:34] frame for that i usually do i use the 60
+[00:18:36] min charts too
+[00:18:37] just to get a little bit of a zoomed in
+[00:18:40] view if you look at the stock like any
+[00:18:43] stock that say
+[00:18:44] doubles or triples or quadruples or
+[00:18:47] whatever
+[00:18:48] period of months or years it's pretty
+[00:18:51] much the same patterns you have a leg
+[00:18:52] higher
+[00:18:54] obviously not every stock moves like
+[00:18:55] this there is but but
+[00:18:57] a lot of them do they they move like
+[00:19:00] stairs
+[00:19:01] okay so let's say you you have a stock
+[00:19:04] or a stair with say
+[00:19:05] 10 10 steps okay let's looks like
+[00:19:09] it's like any stock that's gone up for
+[00:19:11] three four years
+[00:19:13] so you have a leg higher and then it
+[00:19:15] usually goes sideways or pull backs
+[00:19:18] pulls back and uh many times
+[00:19:21] what happens is the volatility contracts
+[00:19:24] like it gets tighter
+[00:19:26] and then you have the next step higher
+[00:19:28] and the same thing happens goes sideways
+[00:19:30] or pulls back and it gets
+[00:19:31] uh like builds a range
+[00:19:34] where volatility ideally not always but
+[00:19:37] the volatility usually
+[00:19:39] like the range gets tighter
+[00:19:43] so our goal is to identify
+[00:19:46] that those stair steps and buy it
+[00:19:49] just as it is about to break out uh
+[00:19:53] into the next uh into the next step
+[00:19:56] obviously you can have different time
+[00:19:58] frames on these
+[00:19:59] uh things you can you know hold them for
+[00:20:02] maybe three to five days or
+[00:20:04] and just settle into strength or you can
+[00:20:07] try to hold for
+[00:20:08] bigger moves uh like even try to hold
+[00:20:11] through the next several steps uh
+[00:20:15] and maybe use the moving averages like i
+[00:20:17] do the 10 and 20 day moving averages
+[00:20:19] trailing stops and try to
+[00:20:21] go for a bigger move uh do fewer trades
+[00:20:24] that way
+[00:20:25] um or do more trades by just buying
+[00:20:28] breakouts and selling after three the
+[00:20:31] day three or five
+[00:20:33] because that's how they that's how
+[00:20:35] stocks move they move in momentum bursts
+[00:20:37] as uh this guy stopped me where i
+[00:20:39] learned to set up from
+[00:20:41] and you you know and i verified it
+[00:20:43] myself this is really how stocks move
+[00:20:45] if you identify the right right stocks
+[00:20:48] obviously like abs
+[00:20:50] like momentum is a big thing the
+[00:20:52] stronger the stock the better
+[00:20:53] which is counterintuitive for many
+[00:20:55] people but that
+[00:20:57] that's true uh like the stocks that make
+[00:20:59] the biggest moves are usually that keep
+[00:21:02] doing the biggest moves and i'm talking
+[00:21:03] about like real stocks
+[00:21:05] that go like like mid and large caps
+[00:21:08] mainly
+[00:21:09] uh not these like pump stocks that are
+[00:21:11] really really popular right now these
+[00:21:14] like micro small gaps that go up on
+[00:21:16] total hype and make a 200
+[00:21:18] move in a day that's not really the
+[00:21:19] types i i trade even though if i still
+[00:21:22] was a day trader
+[00:21:23] those are the stocks i would trade
+[00:21:25] because those are the ones are the
+[00:21:27] biggest intraday range but just to
+[00:21:28] clarify
+[00:21:29] that that's not really uh what i
+[00:21:33] what i do anymore uh i look for stocks
+[00:21:36] have look like like this like when i
+[00:21:39] talk about the first leg higher
+[00:21:41] those moves are usually several weeks
+[00:21:45] and sometimes even several months
+[00:21:49] and there's obviously many variations of
+[00:21:51] that but that's
+[00:21:52] uh that's how stocks move pretty much
+[00:21:54] like you can look at any stock look at
+[00:21:56] tesla that's a perfect perfect
+[00:21:58] stair-step platter and look at look at
+[00:22:00] nio like
+[00:22:01] just take some big flyers big you know
+[00:22:04] some of the leading stocks recently look
+[00:22:07] at something like apple over the years
+[00:22:09] or google
+[00:22:10] obviously those are maybe a bit slower
+[00:22:12] type of movers but
+[00:22:14] it's the same patterns just you can
+[00:22:16] choose to
+[00:22:17] we what uh how fast of a mooc
+[00:22:21] of a stock you want to trade and
+[00:22:23] obviously you want to be in the fastest
+[00:22:25] moving
+[00:22:26] stocks what do you
+[00:22:29] typically do do you hold for that
+[00:22:32] uh kind of initial burst of momentum and
+[00:22:35] sell
+[00:22:36] after a few days post breakout or do you
+[00:22:39] generally try and write it through a few
+[00:22:42] steps as you describe
+[00:22:44] yes i do it it depends on the stock
+[00:22:48] like if there is um like if a stock has
+[00:22:51] a run up
+[00:22:52] into catalyst like an earnings or
+[00:22:56] or anything a presentation um
+[00:22:59] if it's a very hot stock in a very hot
+[00:23:01] sector um
+[00:23:02] i usually i like my
+[00:23:06] core uh belief like i want to hold
+[00:23:09] stocks for as long as possible
+[00:23:12] i really don't want to sell them until i
+[00:23:14] absolutely have to or
+[00:23:16] feel like it'll feel like i have to for
+[00:23:18] any any type of reason
+[00:23:21] uh but i usually sell some like the
+[00:23:23] first
+[00:23:24] move higher if you buy a successful
+[00:23:26] breakout that's the most
+[00:23:29] like that that's uh the most predictable
+[00:23:32] part of the move so what i usually i
+[00:23:34] always sell some into that first burst
+[00:23:37] uh to lock in a little bit of profits
+[00:23:39] maybe i sell 20
+[00:23:40] or 25 or it can vary a lot
+[00:23:44] uh just lock in some profits and and uh
+[00:23:47] now i can now it's a stress-free trade
+[00:23:49] pretty much
+[00:23:50] even if it would stop me out i i would
+[00:23:53] still
+[00:23:54] worst case scenario break even or maybe
+[00:23:56] even make money
+[00:23:57] depending on how much i move the stop
+[00:23:58] higher but sometimes
+[00:24:01] if it's an earnings are just a few days
+[00:24:04] away
+[00:24:05] and i still buy it because it looks
+[00:24:07] really good um
+[00:24:08] i and if i don't have a big profit
+[00:24:10] padding i really don't like to hold
+[00:24:13] all my positions into earnings sorting
+[00:24:15] to any type of catalyst i just sell it
+[00:24:18] i don't want to risk it like you know
+[00:24:20] things could go
+[00:24:21] anyway you never know and uh
+[00:24:25] yeah i just want to control my risk as
+[00:24:27] much as possible
+[00:24:28] i don't really like to gamble over
+[00:24:31] over earnings for example if i really
+[00:24:33] don't have a big profit padding already
+[00:24:36] right um now you briefly
+[00:24:39] touched on stock selection there i just
+[00:24:42] like to go into that a little more
+[00:24:44] um you said you mostly trading these
+[00:24:46] these larger caps
+[00:24:48] um how do you scan and how do you
+[00:24:50] identify the stocks like what exactly
+[00:24:52] are you looking for
+[00:24:53] in a company yes so
+[00:24:56] i scan for uh i also
+[00:25:00] like uh like i like you said i mostly
+[00:25:02] take large caps nowadays but
+[00:25:04] uh just a few years ago i traded a lot
+[00:25:06] of when
+[00:25:07] my accounts were much smaller i traded a
+[00:25:09] lot of mid caps and small caps too
+[00:25:11] i'm just forced to trade the large caps
+[00:25:13] nowadays because they are the most
+[00:25:15] um but it's the same it applies to any
+[00:25:18] uh
+[00:25:19] market cap stock really so what i scam
+[00:25:21] for is the strongest stocks
+[00:25:23] with a certain uh with a certain
+[00:25:25] liquidity like i use 150 million dollar
+[00:25:28] cut off
+[00:25:28] but just like two years ago i had i
+[00:25:30] think i had like 20 million
+[00:25:32] dollar dollar volume cut off on my scans
+[00:25:36] and what i do i scan for the strongest
+[00:25:38] stocks the strongest
+[00:25:39] two percent of stocks in
+[00:25:43] different time frames like the one month
+[00:25:46] three month
+[00:25:47] six month 12 month and 18 month time
+[00:25:50] frames
+[00:25:51] to cat to find all the biggest movers
+[00:25:54] over these time frames like i said
+[00:25:56] before it's the biggest move
+[00:25:58] uh movers the strongest stocks that make
+[00:26:01] keep on making the biggest moves
+[00:26:04] so that that's how i find those the most
+[00:26:07] liquid stocks
+[00:26:09] that i can find that are that are the
+[00:26:11] strongest
+[00:26:13] in an ideal scenario like what criteria
+[00:26:16] do you want
+[00:26:17] checked off before you actually get into
+[00:26:19] the market
+[00:26:21] like before you hit that buy button what
+[00:26:23] exactly do you want to see
+[00:26:27] yes so obviously
+[00:26:31] i want the big absolute momentum
+[00:26:35] and also a big relative momentum towards
+[00:26:38] other other stocks it has to be a very
+[00:26:40] very strong stock
+[00:26:42] um over any time frame let's say
+[00:26:45] a stock has trip sorry doubled over the
+[00:26:48] past three months
+[00:26:49] yeah so so that's like that's a lot of
+[00:26:52] momentum in a stock
+[00:26:54] so what i want to see is like it's very
+[00:26:57] hard to
+[00:26:58] describe this um like it's it's very
+[00:27:01] intuitive
+[00:27:02] you can't really scan for this like i
+[00:27:05] you know people i always ask if you
+[00:27:06] could like scan for these patterns and i
+[00:27:09] always say just scan for the strongest
+[00:27:11] moving stocks the patterns you have to
+[00:27:13] learn yourself but
+[00:27:14] like linearity like how orderly
+[00:27:17] is the pullback or the sideways
+[00:27:20] consolidation after the previous leg
+[00:27:23] higher in the stock
+[00:27:25] it's very hard to describe it but what i
+[00:27:27] usually want to see is
+[00:27:30] let's let's say i've stopped doubles in
+[00:27:32] three months and then it pulls back
+[00:27:34] maybe it retraces
+[00:27:36] a third of its move and usually when
+[00:27:38] stocks pull back
+[00:27:40] like these momentum stocks they pull
+[00:27:41] back to the 10 and the 20 day moving
+[00:27:43] averages
+[00:27:44] and i want to see how they act around
+[00:27:46] those moving averages what i want to see
+[00:27:48] is they start building
+[00:27:49] like either they bounce dire off the
+[00:27:52] moving average
+[00:27:53] let's say the 20 day or if it starts
+[00:27:56] building
+[00:27:57] higher lows above the 20 day and then
+[00:28:00] just getting like the short gets tighter
+[00:28:02] over the next few weeks or the next few
+[00:28:05] uh that that's that's called linearity
+[00:28:08] um
+[00:28:08] like people post like on my stream
+[00:28:11] people post
+[00:28:12] setups all the time like do you think
+[00:28:14] this is a good setup or
+[00:28:16] or is that a good setup and
+[00:28:19] like and this is this is the hard part
+[00:28:23] like
+[00:28:24] identifying a good setup like a really
+[00:28:26] good setup versus something that's
+[00:28:28] random and mediocre because that's also
+[00:28:31] going to reflect on your
+[00:28:32] results if you trade the random setups
+[00:28:35] your
+[00:28:35] results are going to be random too you
+[00:28:38] want to find really fun
+[00:28:39] the outlier stocks like you also want to
+[00:28:42] see if
+[00:28:43] did it does it have relative strength
+[00:28:45] like the best um
+[00:28:46] time to trade this breakout method is
+[00:28:49] after a
+[00:28:50] pullback in the markets you want to see
+[00:28:52] the stocks that held up the most that
+[00:28:54] had big moves previously and held up the
+[00:28:56] most and
+[00:28:58] if you mastered this setup if you trade
+[00:29:00] this setup
+[00:29:01] like coming out of a small correction
+[00:29:04] or a like say a 5 10 15
+[00:29:08] correction in the overall indices that's
+[00:29:10] almost like free money for this type of
+[00:29:12] setup because if you can identify these
+[00:29:14] stocks that held up the most
+[00:29:16] during the correction that maybe went
+[00:29:19] down
+[00:29:20] initially in the correction but after as
+[00:29:22] the correction went on
+[00:29:24] these stocks stopped going down and
+[00:29:26] actually maybe started building higher
+[00:29:27] lows
+[00:29:28] and that's that's telling you something
+[00:29:30] if you have a stock that's gone up a lot
+[00:29:32] and then it stops going down when the
+[00:29:34] market goes down you know the stock is
+[00:29:35] trying to tell you something
+[00:29:37] um and that that's that's what leading
+[00:29:39] stocks too like
+[00:29:40] every bull market this is obviously i'm
+[00:29:42] gonna talk more about it later
+[00:29:44] you obviously need uh uh up trending or
+[00:29:47] sideways market to trade this method um
+[00:29:50] you have leading stocks like leading
+[00:29:52] stocks and stocks that go up the most
+[00:29:54] are the most liquid and those are really
+[00:29:57] the stocks you want to trade
+[00:29:59] um and they are they're mostly mid and
+[00:30:02] large caps but
+[00:30:03] even a small cap can be a leading stock
+[00:30:06] uh and those are really the stocks that
+[00:30:10] they they don't go down when the market
+[00:30:12] goes down it's like you
+[00:30:14] try to push uh uh
+[00:30:18] like uh like a tennis ball underwater it
+[00:30:21] just
+[00:30:21] pops back up and that that's really
+[00:30:24] those are the type of
+[00:30:25] stocks you want to find when trading
+[00:30:27] this method
+[00:30:28] i know another thing which you like to
+[00:30:30] look for
+[00:30:31] because you kind of said it a little
+[00:30:33] earlier and i think i may have read this
+[00:30:36] on your twitter this isn't a word for
+[00:30:38] word quote but
+[00:30:39] it was something to the extent of you
+[00:30:41] don't want to be
+[00:30:42] blindly trading momentum and chart
+[00:30:44] patterns you also want to see
+[00:30:47] or have a fundamental angle to the trade
+[00:30:50] as well
+[00:30:51] um would you mind explaining that a
+[00:30:53] little more
+[00:30:55] yes now to clarify you can make a just
+[00:30:58] trading of momentum and shock patterns
+[00:31:00] you can make a very good living
+[00:31:03] but i think if you can combine
+[00:31:07] some type of fundamentals because at the
+[00:31:09] end of the day there are some type of
+[00:31:11] fundamentals that drive these stocks
+[00:31:13] like the fundamentals are fuel and
+[00:31:16] momentum is like what happens
+[00:31:18] after the fuel if like
+[00:31:22] so if you can identify what the fuel is
+[00:31:25] many times like if you go back like
+[00:31:28] like i did study the biggest winning
+[00:31:30] stocks most of the time
+[00:31:34] uh for big big moves multi-year moves
+[00:31:37] it's usually
+[00:31:38] fundamental related like you can clearly
+[00:31:41] identify the fundamentals
+[00:31:42] it may have a lot of like big earnings
+[00:31:45] and or revenue growth
+[00:31:47] uh so that's something that's if you can
+[00:31:50] find the fastest growing stocks
+[00:31:52] and combined with this method you will
+[00:31:54] have a big edge
+[00:31:56] a lot of stocks don't have any earnings
+[00:31:58] or revenue at all
+[00:32:00] they're more like story stocks concept
+[00:32:02] stocks and right now we see a lot of
+[00:32:05] these types of stocks it could they they
+[00:32:07] could be anything like
+[00:32:08] battery related anything uh like battery
+[00:32:12] metal
+[00:32:13] related like lithium stocks are really
+[00:32:15] hot right now
+[00:32:16] and a lot of these stocks have very
+[00:32:19] little or no earnings right now
+[00:32:22] but if you know what the driver is we
+[00:32:24] know we know that
+[00:32:26] obviously like electric cars are a very
+[00:32:28] big thing and electrification is a big
+[00:32:30] thing
+[00:32:31] and that's that's a piece of
+[00:32:32] fundamentals you can add
+[00:32:35] if you if you know what these stocks are
+[00:32:38] like the group and you you trade those
+[00:32:42] stocks you know these uh
+[00:32:44] these these uh patterns and these stocks
+[00:32:46] you will have a big edge versus
+[00:32:48] trading something that's like super
+[00:32:51] random just
+[00:32:52] random stock you don't even know what it
+[00:32:54] is like i i think
+[00:32:56] if you can identify these groups that
+[00:32:59] are hot
+[00:33:00] they may be hot because of earnings and
+[00:33:02] revenue growth big earnings and revenue
+[00:33:04] growth
+[00:33:05] or they could be hot because of
+[00:33:07] something else for example like this
+[00:33:09] lithium and battery stocks
+[00:33:11] that most most of them are really like
+[00:33:13] concept and storage stocks
+[00:33:15] they many of them don't even have a
+[00:33:16] product like this qs
+[00:33:18] is a battery stock in the us markets and
+[00:33:21] they they don't they won't have any
+[00:33:23] revenue for at least five years but they
+[00:33:25] have this
+[00:33:26] exciting battery technology and that's
+[00:33:29] something identified early like wow
+[00:33:31] like i read up on it i knew all these
+[00:33:33] electric car
+[00:33:34] stocks were super hot and other battery
+[00:33:37] related things were hot so i kept
+[00:33:39] track of this thing and once i saw it
+[00:33:42] getting a lot of momentum and
+[00:33:43] volume and i ended identified my type of
+[00:33:46] setup on it like i i did some
+[00:33:48] decent size on it and that gave me
+[00:33:50] conviction versus
+[00:33:52] let's say i would have traded it and i
+[00:33:54] didn't know what it was oh
+[00:33:55] what a nice uh momentum stock with a
+[00:33:58] perfect little flag breakup i wouldn't
+[00:34:00] have done as much size on it
+[00:34:02] and i also tried to hold it for longer
+[00:34:06] so i i think like if i would take the
+[00:34:08] fundamentals out of my trading my
+[00:34:10] profitability would drop a lot
+[00:34:12] so like fundamentals can they they they
+[00:34:14] do play a big role at least for me
+[00:34:16] personally
+[00:34:17] i it it helps me give a conviction
+[00:34:21] it's really what it comes down to
+[00:34:24] now when you get into these positions
+[00:34:28] are you timing your entries intraday
+[00:34:30] like how are you
+[00:34:32] how do you approach that part how do you
+[00:34:34] actually get into the market
+[00:34:36] i buy everything at once uh
+[00:34:39] very aggressively i would add i'm a very
+[00:34:42] aggressive trader
+[00:34:43] with entries and exits that causes some
+[00:34:45] problems with the size i trade
+[00:34:48] because i i create these big weeks even
+[00:34:50] on
+[00:34:51] some pretty liquid stocks just because
+[00:34:53] i'm so aggressive
+[00:34:54] with my interest exits but that's how i
+[00:34:55] trade like i don't want to bother with
+[00:34:58] you know use spending several minutes
+[00:35:00] getting into a stock
+[00:35:01] trying to get in between the bid and ask
+[00:35:04] and get these uh
+[00:35:05] ecn rebates and like i don't i don't
+[00:35:08] bother with that
+[00:35:09] i just want to get in and out in a few
+[00:35:12] seconds
+[00:35:14] and that yeah and i i just with a
+[00:35:16] breakout method i just buy
+[00:35:18] everything at once and then i scale out
+[00:35:21] i usually scale some into strength
+[00:35:23] and then i use a like a trailing stop
+[00:35:26] it's usually a 10 or
+[00:35:27] 20 day moving average for the rest okay
+[00:35:30] and if the trade doesn't go your way for
+[00:35:32] whatever reason i guess
+[00:35:33] here we're sort of moving on a little
+[00:35:35] bit to risk and sizing
+[00:35:37] if the trade doesn't go your way where
+[00:35:40] are you
+[00:35:40] going to stop out
+[00:35:43] of the day so what i do is i i buy the
+[00:35:47] opening range highs and the opening
+[00:35:48] range highs is when the stock takes out
+[00:35:51] uh obviously it has to be a breakout
+[00:35:53] first um
+[00:35:55] so it's not like like so the opening
+[00:35:58] range size could be the
+[00:35:59] first one minute on the one-minute
+[00:36:01] candle five-minute candle or
+[00:36:02] or the 60-minute candle so
+[00:36:06] whatever like let's say a stock uh
+[00:36:10] breaks a range it happens to be on the
+[00:36:12] first one-minute candle
+[00:36:14] so i wait for that one first minute
+[00:36:16] candle to uh
+[00:36:17] finish and then i brought uh by when it
+[00:36:20] takes out
+[00:36:21] the highs for the day and then i use the
+[00:36:23] low sorry day
+[00:36:24] as my stop and it goes for the 5 and the
+[00:36:26] 60 minute candles
+[00:36:28] also sometimes let's say a stock
+[00:36:32] breaks it breaks the first one minute
+[00:36:35] opening range highs
+[00:36:36] but it may not be a breakout it may not
+[00:36:38] still be in a range
+[00:36:41] and then it keeps on going and maybe it
+[00:36:44] goes up another
+[00:36:45] three five percent or something uh and
+[00:36:48] then
+[00:36:48] it's obvious that it's a breakout then i
+[00:36:50] made by the
+[00:36:52] five minute breakout instead because
+[00:36:54] that's when a breakout happens
+[00:36:56] so those are really like very simple
+[00:36:59] entries and exits it's just a one minute
+[00:37:01] first minute range the five minute range
+[00:37:03] and 60 minute range and the stop is
+[00:37:05] always at lowest of the day
+[00:37:07] sorry would you mind just clarifying
+[00:37:09] that a little bit
+[00:37:10] are you looking for a breakout on the
+[00:37:12] the one minute five minute or
+[00:37:14] 60 minute okay so
+[00:37:17] okay yeah so the breakout has to be
+[00:37:20] obvious on the daily chart
+[00:37:22] but let's say a stock is in a range like
+[00:37:25] you are watching stock like for for a
+[00:37:28] potential breakout and it opens up let's
+[00:37:30] say it
+[00:37:31] opens up break even and then it goes up
+[00:37:34] a few percent um on the first one minute
+[00:37:38] on the first one minute candle so the
+[00:37:40] first one minute candle finalizes but
+[00:37:42] this
+[00:37:43] is a stock may still be inside of that
+[00:37:45] range
+[00:37:46] and you're talking about the range on
+[00:37:47] the daily chart yes exactly
+[00:37:50] exactly it's not a breakout on a daily
+[00:37:53] chart yet
+[00:37:54] so you don't know it's going to break
+[00:37:56] out right so you're not going to buy
+[00:37:58] that first one minute candle because it
+[00:38:00] looks just another day
+[00:38:02] inside of a range like i buy breakouts i
+[00:38:04] don't anticipate them
+[00:38:06] i don't like i i buy them as they break
+[00:38:08] out
+[00:38:09] um so to make it like to simplify it
+[00:38:13] like i i mostly buy uh
+[00:38:16] like when it's when it's obvious it's
+[00:38:19] starting to break out just as it's
+[00:38:21] starting to break out
+[00:38:23] preferably many times i also buy when
+[00:38:26] it's obvious it's already breaking out
+[00:38:28] and i wish i was in from earlier
+[00:38:30] but i used this like opening range highs
+[00:38:32] the one minute five minutes 60 minute
+[00:38:35] like candles and the lows of that those
+[00:38:36] candles too to manage my stop
+[00:38:39] okay so even though you're a swing
+[00:38:42] trader there are often
+[00:38:43] times when you'll buy the breakout so
+[00:38:46] you know presumably the high of the day
+[00:38:48] at that point
+[00:38:49] um and then you may also get stopped out
+[00:38:51] within the same day
+[00:38:53] does that happen quite frequently oh
+[00:38:55] yeah it can happen
+[00:38:56] you know sometimes i buy something and
+[00:38:58] i'm i get stopped at two minutes later
+[00:39:00] that happens all the time especially if
+[00:39:03] you use like the first one minute
+[00:39:05] opening range highs the failure rate is
+[00:39:06] a bit higher
+[00:39:07] actually much higher versus the five
+[00:39:10] minute and 60 minute but
+[00:39:12] uh the pros are that you get in earlier
+[00:39:15] on the ones that work so there's pros
+[00:39:17] and cons
+[00:39:19] uh but but yeah yeah it happens all the
+[00:39:21] time like my win
+[00:39:22] rate last year and i had insane returns
+[00:39:26] last year was only about
+[00:39:27] 35 and the year before
+[00:39:30] 2019 it was 25 so yeah
+[00:39:34] you you have to get used to get stopped
+[00:39:36] out a lot and sometimes within
+[00:39:38] many times the same day and many times
+[00:39:41] within a few minutes
+[00:39:42] that's the name of the game that's
+[00:39:44] that's really
+[00:39:45] yeah that's how it is let's say you do
+[00:39:48] get stopped out on a particular name are
+[00:39:52] i mean i presume you don't take that off
+[00:39:54] your your radar
+[00:39:55] all together you you re-watch that for
+[00:39:58] or you continue watching that for a
+[00:40:00] re-entry
+[00:40:02] yeah absolutely if it's a good-looking
+[00:40:04] like it happens a lot that they
+[00:40:06] especially when i buy the first
+[00:40:08] one-minute opening range highs
+[00:40:10] when it breaks out on the first one
+[00:40:11] minute uh
+[00:40:13] the like i said it just said the failure
+[00:40:15] it is a bit higher on the one minute
+[00:40:17] breakouts and what happens a lot of
+[00:40:21] is you know i get stopped out and just
+[00:40:23] few minutes later
+[00:40:25] the stock takes out the highs again so
+[00:40:27] you know i get back in it takes
+[00:40:28] it it takes out the highs so
+[00:40:32] yeah it happens a lot i can i can buy
+[00:40:34] stock it stopped out and re-buy it
+[00:40:37] you know within a few minutes uh
+[00:40:40] sometimes
+[00:40:41] no it doesn't happen that often but you
+[00:40:43] know it happens so
+[00:40:45] and you can't you can't hesitate if it's
+[00:40:46] a good setup you gotta you gotta get it
+[00:40:48] back in
+[00:40:49] even if it means you have to re-buy it
+[00:40:52] but that's that's just yeah that's how
+[00:40:54] it is but you also have to
+[00:40:56] you know i'm also very aggressive and
+[00:40:58] you know if i get stopped out i get
+[00:41:00] stopped out i don't i don't think i just
+[00:41:02] get out
+[00:41:04] i've seen i i've seen too many scenarios
+[00:41:06] you know when
+[00:41:07] things just keep going uh lower and uh
+[00:41:10] you know you hesitate and now suddenly
+[00:41:12] your stop is twice as big as it would
+[00:41:14] have been
+[00:41:14] and now it's three times as big and it's
+[00:41:17] you know free supplemental power not
+[00:41:19] overthink things i just get in
+[00:41:21] and i just get out so how do you manage
+[00:41:23] your positions let's say
+[00:41:25] you've bought a breakout it's
+[00:41:26] successfully moving higher
+[00:41:29] how do you manage it going forward like
+[00:41:31] i know you use uh
+[00:41:32] trailing stops you've spoken a little
+[00:41:33] bit about um taking partial profits into
+[00:41:36] strength
+[00:41:37] which is great but what about the stop
+[00:41:39] management
+[00:41:43] yes so initially my stop is always
+[00:41:46] low low sodium day uh and once the
+[00:41:50] moving averages the 10 and the 20
+[00:41:52] uh the moving averages it depends on the
+[00:41:54] stock the faster moving stops are you
+[00:41:56] stocks i moved uh i used the 10 day and
+[00:41:59] the slow we're moving once i use the 20
+[00:42:01] day and
+[00:42:02] sometimes i you know it depends it
+[00:42:05] depends really
+[00:42:06] um on a lot of things but once the
+[00:42:09] moving averages start to catch up i also
+[00:42:12] start to trail
+[00:42:13] let's say i've decided i'm going to use
+[00:42:16] 10-day on a certain stock and once it
+[00:42:18] starts
+[00:42:20] moving higher like the 10-day catches up
+[00:42:23] to my initial stops
+[00:42:25] and moves higher then i start moving in
+[00:42:28] my stop
+[00:42:29] uh with the 10-day so what i do i
+[00:42:32] wait for the first close like i have one
+[00:42:35] absolute stop where i like
+[00:42:37] okay i get out no matter what and the
+[00:42:39] trailing stop
+[00:42:40] is for like if it violates it intraday
+[00:42:43] i'm not worried
+[00:42:45] um i only wait for the close
+[00:42:48] like let's say um if it's like 10 15
+[00:42:51] minutes before they close and it's
+[00:42:52] kind of obvious it's gonna close below
+[00:42:55] that moving average that's when i close
+[00:42:57] the rest of my position
+[00:42:58] but intraday violations are very common
+[00:43:01] and that
+[00:43:02] that's something that got me all the
+[00:43:04] time previously when i was still
+[00:43:05] learning and experimenting with this
+[00:43:08] method
+[00:43:09] like as soon as the price uh like
+[00:43:12] undercut the the moving average my
+[00:43:16] i i just closed it and then the stock
+[00:43:19] just went straight up from there
+[00:43:21] and closed green on the day like it it
+[00:43:23] it touched the moving average or
+[00:43:24] undercut it a bit and then it just
+[00:43:26] rebounded and yeah so very important
+[00:43:30] wait for the close
+[00:43:31] um for that trailing stop and then you
+[00:43:33] also have that
+[00:43:35] stop where you're like i'm gonna get out
+[00:43:36] no matter what
+[00:43:39] do you ever add to a winning position
+[00:43:42] only if there's a good setup i don't
+[00:43:45] that just because
+[00:43:46] something is you know going my way like
+[00:43:48] i said i just you know buy everything at
+[00:43:50] once i know some people who trade
+[00:43:52] similar setups than this like breakout
+[00:43:54] type of setups
+[00:43:55] uh like dan sanger uh
+[00:43:58] i'm sure you heard about him like he
+[00:44:00] that's that's also a guy that
+[00:44:02] trades these types of setups i learned a
+[00:44:04] lot from like i know he scales in
+[00:44:07] he buys like fifty percent and thirty
+[00:44:09] percent and twenty percent
+[00:44:11] uh as the stock goes higher so there's
+[00:44:13] many different ways to do it i
+[00:44:15] i really don't i only do it
+[00:44:18] if if i'm in for a longer move i use
+[00:44:22] maybe the 20-day moving average which is
+[00:44:24] a bit slower
+[00:44:25] and the stock builds the next uh step
+[00:44:28] let's say i've been in a stock for a
+[00:44:30] month or two already
+[00:44:32] and uh it has a new a new setup
+[00:44:36] develops and uh you know
+[00:44:39] that i would buy it and i would treat it
+[00:44:40] as a new a new position
+[00:44:42] even though i'm already in it so those
+[00:44:44] ads let's say i double my position in
+[00:44:46] the stock
+[00:44:47] that that new position i i treat it as a
+[00:44:51] new trade
+[00:44:52] with the same with the same rules for
+[00:44:54] that new
+[00:44:55] uh like i used like a described earlier
+[00:44:59] so it's a new trade and the
+[00:45:02] position i had earlier i treated that
+[00:45:05] trade separately
+[00:45:07] if that makes sense that does make
+[00:45:09] perfect sense i'm following
+[00:45:11] okay i have some questions just around
+[00:45:14] swing trading in general
+[00:45:16] when you're swing trading you're
+[00:45:19] you know you're holding numerous
+[00:45:21] positions for weeks and even months at a
+[00:45:23] time
+[00:45:24] sometimes uh you're much more
+[00:45:27] susceptible to moves of the broader
+[00:45:30] market how do you deal with that
+[00:45:34] yes um absolutely so
+[00:45:38] it helps getting into at times where the
+[00:45:41] market already had a
+[00:45:43] correction like for example uh early
+[00:45:46] november
+[00:45:47] uh last year uh the nasdaq had been uh
+[00:45:51] in a correction for a couple of months
+[00:45:53] uh it had a correction bounced a little
+[00:45:56] bit had an
+[00:45:56] another leg lower and uh there were a
+[00:46:00] lot of stocks that that
+[00:46:02] other leg lowered they were just holding
+[00:46:05] uh they were just screaming at me they
+[00:46:07] wanted to go higher
+[00:46:08] so that that's that's the best time
+[00:46:11] to uh buy these things
+[00:46:15] and usually when you had a correction
+[00:46:18] multi-month correction it usually
+[00:46:20] takes a few months before you get
+[00:46:22] another pullback in the markets
+[00:46:24] um unless obviously on a bear market
+[00:46:28] my point is you want to get in the
+[00:46:30] stocks that show relative strength to
+[00:46:32] the market that are stronger than the
+[00:46:34] overall market and that really helps
+[00:46:36] holding through these these corrections
+[00:46:39] you you know corrections always happens
+[00:46:42] uh and it really helps you
+[00:46:45] and these stocks you know if you buy the
+[00:46:47] stocks that already proven
+[00:46:49] they're stronger than the market and
+[00:46:51] shown relative strength
+[00:46:52] they're gonna keep showing that relative
+[00:46:54] strength usually
+[00:46:56] uh for uh for some more time
+[00:47:01] uh but yes this is a this is a very the
+[00:47:04] market overall market is very important
+[00:47:06] for this type of trading
+[00:47:08] uh like all this like breakouts
+[00:47:12] you know they don't exist in a in a
+[00:47:14] falling market like even if you happen
+[00:47:16] to get one
+[00:47:16] just you know don't don't touch it it's
+[00:47:19] gonna fail
+[00:47:20] most likely uh so it's very important
+[00:47:22] also to study
+[00:47:27] when this type of trading works and when
+[00:47:29] it doesn't
+[00:47:30] and in up trending and sideways markets
+[00:47:33] this type of trading works really really
+[00:47:35] well
+[00:47:35] and down trading markets not so much um
+[00:47:39] that's that's when it's time to sit in
+[00:47:41] cash
+[00:47:42] do less and uh do trade with smaller
+[00:47:45] size if you're trading this
+[00:47:47] particular type of setup so the market
+[00:47:50] where market is super
+[00:47:52] super important to be aware of um at
+[00:47:55] least the market
+[00:47:56] sentiment um like you don't have to look
+[00:47:58] at day-to-day moves in the markets like
+[00:48:00] i rarely do i i most of the time i don't
+[00:48:02] know if the market is up or down on a
+[00:48:04] day i just look at my
+[00:48:05] the stocks on my watch list and my scans
+[00:48:08] and my portfolio and that
+[00:48:10] and they're usually not telling the
+[00:48:13] same story sometimes the markets like
+[00:48:15] the nasdaq can be down on a day and
+[00:48:17] everything in my portfolio is green
+[00:48:19] and sometimes the market is up on the
+[00:48:21] day and everything my portfolio is read
+[00:48:23] so
+[00:48:24] when i say be very aware of the market
+[00:48:26] i'm talking more about the overall
+[00:48:29] sentiment and the trend of the market
+[00:48:31] and that's also something you kind i
+[00:48:33] have to learn with experience
+[00:48:37] it's not something you really read into
+[00:48:39] a book you just have to go
+[00:48:41] through it through a few cycles you have
+[00:48:43] to see a few set
+[00:48:44] ups you have to see a few crazy
+[00:48:48] bull runs you have to see a few sideways
+[00:48:50] shopping markets to really understand
+[00:48:53] these uh relationships
+[00:48:56] it takes time yeah yeah because i mean
+[00:48:58] that's going to be one of the most
+[00:49:00] frustrating things as a swing trader
+[00:49:03] to have you know what you think is a
+[00:49:05] great position on it's been going well
+[00:49:08] and then all of a sudden there's a few
+[00:49:09] bad days in the the broader market
+[00:49:11] and um you know you get stopped out
+[00:49:14] purely as a
+[00:49:16] just for neither reason than the
+[00:49:17] market's coming off
+[00:49:20] but as you said like if you're in stocks
+[00:49:22] which are
+[00:49:24] generally stronger than the market
+[00:49:25] that's that's less of an
+[00:49:27] issue you know on a portfolio level do
+[00:49:30] you limit the number of
+[00:49:31] open positions you have at any one time
+[00:49:36] i don't really have a limit uh what
+[00:49:38] usually happens coming off a correction
+[00:49:41] um like all the methods i trade i
+[00:49:45] i usually don't uh trade much when the
+[00:49:48] market is a correction but let's look at
+[00:49:50] an example like
+[00:49:51] last year with a kobe sell-off that
+[00:49:54] lasted
+[00:49:55] about four weeks in from like mid
+[00:49:58] mid february to mid march if i remember
+[00:50:01] correctly so i
+[00:50:02] so when the market bottomed uh mid-march
+[00:50:05] i think it was i really didn't have a
+[00:50:07] lot of things going on in my portfolio i
+[00:50:09] may have had a few positions here and
+[00:50:11] there
+[00:50:12] so and then the market started
+[00:50:15] this big big big bull market that
+[00:50:18] started from
+[00:50:18] from that point and i was a little bit
+[00:50:20] late to it i really didn't believe the
+[00:50:22] bounce at first but then i started
+[00:50:23] seeing this enormous amount of setup
+[00:50:26] so i got into them i i went from a
+[00:50:28] couple of positions to seven positions
+[00:50:30] to 15 positions and what happens when
+[00:50:33] the market is on a
+[00:50:34] multi-month run uh usually is i end up
+[00:50:38] with a lot of positions
+[00:50:40] because i take some partial profits and
+[00:50:42] some and then i roll that money into
+[00:50:44] new positions new breakouts
+[00:50:48] and i can end up with you know 20 25
+[00:50:51] and i've had 30 positions sometimes
+[00:50:54] actually so far every time i ended up
+[00:50:58] with 30 positions
+[00:51:00] it happened three times in the past 12
+[00:51:02] months every time
+[00:51:04] in the next few days the market pulled
+[00:51:07] uh you know started uh like a multi-week
+[00:51:10] or month multi-month pullback or
+[00:51:12] sideways
+[00:51:12] consolidation so that's a really good
+[00:51:15] proprietary indicator i have
+[00:51:19] so yeah no i really don't have an upper
+[00:51:21] limit but i have a i've had 30 positions
+[00:51:24] a few times but ideally i try to keep it
+[00:51:26] between 15
+[00:51:27] 20 after 20 it starts getting a little
+[00:51:31] bit hard to keep track of them all but
+[00:51:32] again like i said before
+[00:51:34] in swing trading and especially when i
+[00:51:36] have a lot of positions
+[00:51:37] it means they are all working very well
+[00:51:40] some some of my positions may be up
+[00:51:41] hundred percent two hundred percent even
+[00:51:43] if it's some
+[00:51:44] some of these uh crazier smaller caps
+[00:51:47] like right now the
+[00:51:49] uh crypto related stocks that make big
+[00:51:52] big moves i've
+[00:51:53] i had a i have a few double doubles in
+[00:51:56] my portfolio right now
+[00:51:57] and when they're up that much and
+[00:51:59] already you know you sold some
+[00:52:01] uh to lock in profits the partial
+[00:52:03] positions
+[00:52:04] you really don't even have to look at
+[00:52:06] them you can look at you can look at
+[00:52:07] them
+[00:52:08] you know a couple of times per day like
+[00:52:10] you don't have to monitor them and
+[00:52:12] that's that's
+[00:52:12] uh that's the good part about swing
+[00:52:14] trading if you
+[00:52:16] you know and you have this uh bull runs
+[00:52:19] yeah it's it's a low effort type of
+[00:52:22] trading you also have obvious have to
+[00:52:24] put in a lot of effort at first to learn
+[00:52:26] all of these things
+[00:52:27] um these patterns the fundamental
+[00:52:30] drivers of the stocks the overall market
+[00:52:32] it takes many years to put it together
+[00:52:34] but once you get it
+[00:52:36] it's a fairly low effort type of trading
+[00:52:39] you don't have to
+[00:52:40] fanatically look for trades and uh you
+[00:52:43] know constantly getting not get out of
+[00:52:45] stuff like you have in day trading
+[00:52:47] as you just said you've got a couple
+[00:52:49] positions in your portfolio there which
+[00:52:51] are up 100 to 200
+[00:52:54] it made me think i should ask you
+[00:52:55] earlier you said that your win rate was
+[00:52:58] around about
+[00:52:58] 34 uh last year
+[00:53:02] what's kind of the the the ratio
+[00:53:05] obviously it varies greatly here but
+[00:53:07] what's that
+[00:53:07] you know you yeah your ratio of we're
+[00:53:10] talking average win to average loss
+[00:53:14] you know that's a very good question and
+[00:53:17] i have no idea
+[00:53:18] i i i gave up uh doing
+[00:53:21] doing that type of stuff many years ago
+[00:53:25] like looking at the micro stuff in my
+[00:53:29] um i i really don't have an idea i
+[00:53:32] i get i get that question a lot on my
+[00:53:34] stream too
+[00:53:35] and i i really only know my win rate
+[00:53:38] because so many people kept asking me
+[00:53:40] about it so i went back to my journal
+[00:53:42] and looked it up
+[00:53:43] and i think i think if you get the big
+[00:53:46] stuff right you don't have to worry
+[00:53:48] about the little stuff
+[00:53:49] and yeah i i yeah i i honestly i don't
+[00:53:52] know
+[00:53:53] okay no i appreciate the transparency
+[00:53:56] let me ask you this question then i
+[00:53:58] might phrase it a little differently
+[00:54:01] you know come the end of the year if you
+[00:54:03] look back
+[00:54:04] at the majority of your gains do they
+[00:54:07] come from just a few
+[00:54:08] big winners like you know i can't think
+[00:54:10] of what the name of it is but it's kind
+[00:54:12] of like that 80 20 rule like do you find
+[00:54:14] absolutely oh yeah yeah yeah it's so all
+[00:54:17] about the
+[00:54:18] small losses and big winners and there's
+[00:54:21] maybe
+[00:54:22] you know i don't again i don't have any
+[00:54:23] data on that but i i know intuitively
+[00:54:26] there's a
+[00:54:27] few few big winners that where most of
+[00:54:30] my money comes from
+[00:54:31] most of the other stuff they kind of
+[00:54:33] break even but maybe
+[00:54:35] i don't know 10 to 20 of my trades
+[00:54:37] that's where
+[00:54:38] maybe not 10 but definitely like maybe
+[00:54:40] 20 of my trades that's where all my
+[00:54:42] money comes from
+[00:54:43] uh really uh the big ones and those are
+[00:54:46] like i
+[00:54:47] i've said it also in my stream a lot
+[00:54:49] like i'm a home run trader
+[00:54:50] i don't i know a lot of traders they try
+[00:54:53] to make you know go for a
+[00:54:54] higher win rate and try to make money on
+[00:54:57] more trades
+[00:54:58] uh but you know that's that's the style
+[00:55:00] i've chosen it works for me
+[00:55:02] like try to catch the big ones and uh
+[00:55:06] have a very high uh or actually a very
+[00:55:09] low win
+[00:55:09] rate have a very very low win rate so
+[00:55:11] most of my trades
+[00:55:14] uh just you know even themselves out and
+[00:55:16] then go for that
+[00:55:18] i again i don't have any numbers but
+[00:55:20] maybe that 20
+[00:55:21] or 15 percent of the trades that really
+[00:55:23] that's that's where the money is for me
+[00:55:26] yeah low win rate high payoff yeah
+[00:55:30] christian i'd like to ask you just a
+[00:55:31] couple i guess more general
+[00:55:34] questions about you as a trader even at
+[00:55:37] your level
+[00:55:39] what challenges do you still deal with
+[00:55:41] on a daily basis
+[00:55:44] i've gotten a rid of a lot of challenges
+[00:55:47] over the years
+[00:55:49] but the things i still struggle with
+[00:55:52] are i would say over
+[00:55:56] trading because i do
+[00:55:59] i'm a little bit addicted to trading um
+[00:56:01] i'm not gonna lie
+[00:56:03] i i do i do like i do like to trade
+[00:56:06] even when i know i shouldn't uh
+[00:56:09] so that does take that uh
+[00:56:13] you know that that's something that
+[00:56:15] takes a chunk of my
+[00:56:16] returns every year and also patience
+[00:56:20] uh is something like i i'm
+[00:56:23] like i know i should use the 10 and the
+[00:56:25] 20 day moving averages
+[00:56:27] um as my trailing stop so many times
+[00:56:29] when a stock just goes straight up
+[00:56:31] and especially it's been an issue the
+[00:56:33] past uh 12 months or so
+[00:56:36] or 11 months since we've had this big
+[00:56:38] big great bull market after the code
+[00:56:40] sell-off
+[00:56:42] like the moves are insane like
+[00:56:44] everything is super charged versus
+[00:56:47] earlier years versus you know the eight
+[00:56:50] previous years i had been trading before
+[00:56:52] or nine um and it's kind of been hard to
+[00:56:58] adapt to those like everything just
+[00:56:59] keeps going up and up and what i do
+[00:57:01] is i just you know i'm like oh [&nbsp;__&nbsp;] [&nbsp;__&nbsp;]
+[00:57:04] it this stock is up so much it can't go
+[00:57:06] higher uh like for example i had to
+[00:57:10] straighten
+[00:57:10] nvx which is one of these vaccine stocks
+[00:57:14] i it went up i think it doubled or so in
+[00:57:17] two weeks and i'm like this it's not
+[00:57:19] gonna go higher so i just sold the
+[00:57:21] position
+[00:57:22] it got it it started getting a bit
+[00:57:24] stretched from the 10-day moving
+[00:57:26] average which i was intending to use as
+[00:57:28] my trailing stop
+[00:57:30] and at first the stocks actually went
+[00:57:33] lower
+[00:57:33] after i sold it and
+[00:57:37] a few weeks later it doubled again and
+[00:57:39] now i was like okay
+[00:57:41] um yeah like overriding these
+[00:57:45] like i try to override these moving
+[00:57:47] averages trailing stocks
+[00:57:49] stops like outsmart them but i just
+[00:57:52] can't do it
+[00:57:53] like like but no i i wish i was a robot
+[00:57:56] that just
+[00:57:57] followed the method 100 i just can't
+[00:58:00] my entries are so good like i'm so good
+[00:58:03] at the entries but my exits are just so
+[00:58:05] bad
+[00:58:05] i just can't follow my own rules and
+[00:58:08] it's it's costing me money in the past
+[00:58:10] you know this great me bull market we've
+[00:58:13] had
+[00:58:14] it's just yeah that's
+[00:58:17] yeah it's kind of annoying but the issue
+[00:58:20] is i guess sometimes it it pays off
+[00:58:22] to override those rules and then
+[00:58:25] not so much yeah but
+[00:58:29] most of the time it doesn't pay to
+[00:58:31] overwrite those rules
+[00:58:32] um i i would say again i don't have an
+[00:58:35] exact data but just
+[00:58:36] intuitively three quarters of the time
+[00:58:38] it doesn't pay
+[00:58:40] so the logical thing to do
+[00:58:43] would be to not override my own
+[00:58:46] cell rules but i still keep doing it and
+[00:58:49] the people in my chat they're gonna make
+[00:58:51] it fun of me because they know like hey
+[00:58:54] christians just sold because uh he
+[00:58:55] thought it was overextended let's buy it
+[00:58:57] it's probably gonna double again
+[00:59:00] you know so right so those are my two
+[00:59:02] biggest struggles
+[00:59:04] overriding my cell rules and over
+[00:59:07] i never like i know a lot of people have
+[00:59:10] problems with taking
+[00:59:11] taking their losses like they they have
+[00:59:14] very hard times
+[00:59:15] scaling out when they get stopped out
+[00:59:17] they they just hope it comes back
+[00:59:20] that's something that's an issue i never
+[00:59:22] really had i only remember a few times
+[00:59:24] in my career
+[00:59:26] that i've done it just and i got really
+[00:59:30] burnt a few times and after that
+[00:59:32] really i've never had an issue taking
+[00:59:34] taking losses
+[00:59:35] and i know that's a big issue a lot of
+[00:59:37] people have and people also write to me
+[00:59:39] on twitter and ask me about it all the
+[00:59:42] those are my my struggles still those
+[00:59:45] two
+[00:59:46] in what ways has your attitude to risk
+[00:59:48] changed
+[00:59:49] as your buying power has you know
+[00:59:51] obviously massively increased over the
+[00:59:53] last few years yeah so
+[00:59:56] something i have done really like i
+[01:00:00] i i've done successfully is
+[01:00:03] i've managed to scale my trading up
+[01:00:06] massively
+[01:00:07] like if i double my account my risk and
+[01:00:10] my
+[01:00:11] size will double also it's there's a lag
+[01:00:15] but it's usually a few months but it
+[01:00:17] will eventually double too
+[01:00:19] so i'm always bringing my my my my
+[01:00:22] risk and my size up in relative it's in
+[01:00:26] relative terms and percentage terms it
+[01:00:28] all stays the same the position sizes
+[01:00:30] and the percentage risk
+[01:00:31] relative relation to the account but i
+[01:00:34] know a lot of people they just take
+[01:00:36] money out of their accounts all the time
+[01:00:37] to put it away and other stuff
+[01:00:40] but i've never done that i've always i
+[01:00:42] only take out money when i
+[01:00:44] really have to like to pay living
+[01:00:46] expenses or to pay taxes
+[01:00:49] and other than that i just use the the
+[01:00:52] account to grow my account
+[01:00:54] all the time and i also i
+[01:00:57] i should mention i use marching quite a
+[01:00:59] bit um
+[01:01:00] and i only i only use it when things are
+[01:01:03] going well
+[01:01:04] when i deserve the use margin i think
+[01:01:07] marching is something you have to
+[01:01:09] deserve
+[01:01:09] it's not a privilege just because it's
+[01:01:13] doesn't mean you should use it
+[01:01:15] unfortunately a lot of people do use it
+[01:01:17] and they use it the wrong way they start
+[01:01:18] using margin when things are not
+[01:01:20] they may use in margin when things are
+[01:01:22] not going well
+[01:01:24] but that's not how you do it you have to
+[01:01:27] gain some ground let's say every year
+[01:01:31] but no matter where you reset this but
+[01:01:33] let's say in the beginning of the year
+[01:01:35] if if you if you if you do if you do
+[01:01:37] well that's when you start
+[01:01:39] using some margin uh because if things
+[01:01:41] are going well you should you should
+[01:01:43] push those periods
+[01:01:44] and then there are periods you shouldn't
+[01:01:46] uh trade a margin at all and maybe you
+[01:01:49] shouldn't even be trading at all
+[01:01:51] so this taking it's it's all very
+[01:01:54] relative this um risk
+[01:01:58] approach i have oh my attitude
+[01:02:02] risk yeah i think it has matured um
+[01:02:07] i was a bit more reckless in the
+[01:02:08] beginning like like i said before i went
+[01:02:11] all in
+[01:02:12] um on all stocks because i didn't know
+[01:02:15] better
+[01:02:16] and but that was also when i was much i
+[01:02:19] had a much smaller account like i
+[01:02:21] wouldn't be able to trade you
+[01:02:22] i mean if you have a small account and
+[01:02:24] want to do swing trading obviously you
+[01:02:25] can't be holding
+[01:02:26] 15 20 positions like i do uh it's maybe
+[01:02:30] smarter to hold
+[01:02:31] fewer positions um but again like
+[01:02:34] position sizing
+[01:02:35] i realized yeah especially when you kind
+[01:02:38] of hold things overnight
+[01:02:39] you can't have everything in two or
+[01:02:42] three stocks you gotta diversify a bit
+[01:02:44] more because i've seen too many stocks
+[01:02:45] up and down fifty percent and
+[01:02:48] it's just not worth it so
+[01:02:52] and also the margin related things when
+[01:02:54] i first got a margin account
+[01:02:56] in the beginning i traded with swedish
+[01:02:58] brokers these u.s markets with swedish
+[01:03:00] brokers there was no march
+[01:03:02] in there and i opened us accounts and
+[01:03:05] then suddenly i could use margin i
+[01:03:07] really didn't know how to handle that
+[01:03:08] like oh my god i'm a
+[01:03:10] insane amount of buying power let's use
+[01:03:12] it um
+[01:03:13] but i got burned a few times and you
+[01:03:16] know i kind of matured and i realized
+[01:03:18] like you
+[01:03:18] kind of can't trade that way you kind of
+[01:03:22] you kind of have to deserve the risk
+[01:03:24] um and also even if you're not using any
+[01:03:27] leverage or margin in your trading
+[01:03:30] which is fine you can have incredible
+[01:03:32] returns never using any type of leverage
+[01:03:35] i just like to you know spice it up a
+[01:03:37] little bit when things are going well
+[01:03:39] um because you know again i studied from
+[01:03:42] history i know that
+[01:03:43] bull runs again lasts for a long long
+[01:03:45] time and
+[01:03:46] you you wanna you really want to
+[01:03:48] capitalize it if you
+[01:03:49] if you're a swing trader because as
+[01:03:51] swing trader you
+[01:03:52] you know you gotta sit think mostly in
+[01:03:54] cash for long long time so periods too
+[01:03:57] so you you got to make the fun more fun
+[01:04:00] while it lasts last question for you
+[01:04:06] why do you think your level of trading
+[01:04:08] success is so rare
+[01:04:10] obviously everyone sets out with the the
+[01:04:13] ultimate dream of
+[01:04:14] uh making as much money as you have from
+[01:04:16] the markets
+[01:04:18] but very few are able to achieve it um
+[01:04:20] and you know from what you've described
+[01:04:22] here and
+[01:04:23] your strategy it all sounds fairly
+[01:04:25] simple
+[01:04:27] not to discredit any of the the hard
+[01:04:29] work you've put in
+[01:04:30] but no you know why do you think so few
+[01:04:32] make it to the big time
+[01:04:34] i'm glad you i'm actually very glad to
+[01:04:36] set it that it all
+[01:04:37] it's very simple because it is i'm
+[01:04:40] always trying to take things away
+[01:04:42] i think there's an inverse correlation
+[01:04:44] between the amount of indicators and
+[01:04:46] profitability for example
+[01:04:49] um i think people focus a lot on the
+[01:04:52] wrong things
+[01:04:53] instead of they look at a lot of
+[01:04:55] indicators instead of focusing on a
+[01:04:57] price and what's really really
+[01:04:59] moving a stock and how the stock is
+[01:05:02] like i really focus on the it's just
+[01:05:04] purely a price
+[01:05:05] a lot and try to listen to what the
+[01:05:08] market what the stocks are trying to
+[01:05:09] tell me
+[01:05:11] uh a lot of people uh they just focus on
+[01:05:14] a lot on other people's opinions they
+[01:05:17] they may be watching cnbc and they you
+[01:05:20] know there's maybe some bear porn going
+[01:05:22] on or
+[01:05:23] you know some uh hedge fund manager
+[01:05:25] that's panicking on cnbc
+[01:05:27] and you know that that's gonna affect
+[01:05:29] you right and what what
+[01:05:31] and that's gonna affect your trading too
+[01:05:32] like oh wow the
+[01:05:34] professionals are really scared maybe i
+[01:05:36] should be too scared too
+[01:05:37] and vice versa and i i
+[01:05:40] think if you can tune all of it out
+[01:05:42] everyone's opinions out
+[01:05:44] like even even the billionaires the
+[01:05:46] hedge fund managers
+[01:05:48] what i realized over the years they're
+[01:05:50] like they had they are
+[01:05:52] wrong a lot too but they have to say
+[01:05:54] they use they they do it the same way
+[01:05:56] like i do when they're wrong they lose
+[01:05:59] small and when they're right they win
+[01:06:00] big
+[01:06:01] so i really can't pay attention to all
+[01:06:04] any of opinions just focus on what the
+[01:06:07] market is doing
+[01:06:08] focus on what the leading stocks are
+[01:06:10] doing or whatever
+[01:06:11] method you trade like just focus on
+[01:06:14] how is that method working is it working
+[01:06:16] well or is it not working at all
+[01:06:18] are there setups are there no setups
+[01:06:20] that's really what you should pay
+[01:06:22] attention to
+[01:06:23] that's that's one big part i see a lot
+[01:06:25] of even successful traders struggle with
+[01:06:28] they these this other opinions
+[01:06:31] do snuck in instead of just listening
+[01:06:34] purely on the market
+[01:06:36] and also i think also just purely
+[01:06:38] education
+[01:06:40] i think a lot of people even some pretty
+[01:06:43] decent successful traders i think they
+[01:06:45] would do even better if they really went
+[01:06:48] back and looked at
+[01:06:48] thousands of examples of the of that oh
+[01:06:51] that setup they trade or the setups they
+[01:06:54] trade
+[01:06:54] and really nail down all the variations
+[01:06:57] of those and look at it look at also
+[01:06:59] maybe the overall
+[01:07:00] market like what was the overall market
+[01:07:02] doing when there were
+[01:07:04] a lot of setups and when there when when
+[01:07:06] that setup worked really well
+[01:07:07] versus what was the market doing when
+[01:07:10] there weren't any setups and
+[01:07:11] the setups weren't working any well i
+[01:07:14] think
+[01:07:15] that that's gonna improve your edge by
+[01:07:18] by significant margin looking at all
+[01:07:20] these variations
+[01:07:22] um and then there's also the the
+[01:07:25] leverage
+[01:07:25] part uh you can either hurt yourself or
+[01:07:28] you can supercharge your returns
+[01:07:31] uh by using leverage but you gotta do it
+[01:07:33] the right way
+[01:07:34] um uh
+[01:07:37] and also scaling your trading that's
+[01:07:39] also something
+[01:07:40] like i've seen there's a i know i know a
+[01:07:42] lot of traders that say
+[01:07:44] pretty much trade the same size they've
+[01:07:46] been trading for
+[01:07:47] 10 years they trade the same setup like
+[01:07:50] they mastered
+[01:07:51] their setup they really know what
+[01:07:53] they're doing but they haven't been able
+[01:07:56] scale their trading and that's also
+[01:07:59] a big thing that i think sets me apart
+[01:08:03] from
+[01:08:03] i see a lot a lot traders too and that's
+[01:08:06] how you really can make a return
+[01:08:08] especially in the crazy bull market
+[01:08:11] we've had in the past
+[01:08:12] year like it's gonna make a difference
+[01:08:15] of you making
+[01:08:17] 100 versus making 900
+[01:08:20] it's you know scaling it up as account
+[01:08:23] as your account grows um it's not going
+[01:08:25] to happen instantly like if you double
+[01:08:27] your account
+[01:08:28] uh let's say in a month uh i know that's
+[01:08:31] a
+[01:08:31] maybe no that's unrealistic maybe even
+[01:08:34] though you can't do it
+[01:08:35] especially if you're a day trader and
+[01:08:37] use
+[01:08:38] like a margin um but you know let's say
+[01:08:41] double your account in a certain time
+[01:08:43] frame like eventually
+[01:08:44] your size should double to your size and
+[01:08:46] your risk
+[01:08:47] and i i see a lot of people too they
+[01:08:50] just they they
+[01:08:51] can't they can't like
+[01:08:54] they can't push it like um obviously
+[01:08:57] every time you size it up and you take
+[01:08:59] that first big loss
+[01:09:01] after you sized your trading up it all
+[01:09:03] it hurts
+[01:09:04] but you also you always have to think in
+[01:09:06] percentage terms like i always cringe
+[01:09:09] when people also
+[01:09:10] another reason to never pay attention to
+[01:09:13] any type of financial media like i
+[01:09:14] always cringe
+[01:09:16] when they when they talk about points oh
+[01:09:18] the tao is up to a thousand points it's
+[01:09:21] such a useless thing to say it doesn't
+[01:09:24] really
+[01:09:24] you know there's no context at all like
+[01:09:27] why don't you just say percent because
+[01:09:28] one percent is always one percent
+[01:09:31] no matter if what if the dow is at 5000
+[01:09:34] or at 50 000 right
+[01:09:36] but a thousand points like a thousand
+[01:09:39] points meant
+[01:09:40] a very different thing five years ago
+[01:09:42] versus today
+[01:09:43] um so always thinking in your trading
+[01:09:46] too in percentage terms like
+[01:09:48] think about percentage risk like oh i'm
+[01:09:50] going to take a percentage return
+[01:09:53] oh sorry a risk on this trade and the
+[01:09:55] and since my accounts have grown
+[01:09:57] a lot that percentage risk is going to
+[01:10:00] be higher than it was say a few weeks
+[01:10:01] ago
+[01:10:02] but it was always thinking percentages i
+[01:10:04] think that's a very useful exercise
+[01:10:07] that may take your training to another
+[01:10:09] level instead of maybe thinking about
+[01:10:11] points um it's just
+[01:10:14] you know instead of thinking about like
+[01:10:16] points or
+[01:10:17] in in dollar terms like absolute taller
+[01:10:20] terms
+[01:10:21] uh like let's say you risk a thousand
+[01:10:24] bucks
+[01:10:25] usually on your trades but your accounts
+[01:10:27] have doubled
+[01:10:29] and you're scared to take and you're
+[01:10:32] scared to even risk 1500 bucks but
+[01:10:34] actually in percentage terms if your
+[01:10:37] accounts have doubled you should be
+[01:10:38] risking 2 000 bucks
+[01:10:40] so maybe get used to that 1500 bucks
+[01:10:42] risk first and then you push it to that
+[01:10:44] 2000 bucks
+[01:10:45] risk just as an example
+[01:10:49] so those are the three or four
+[01:10:52] things i think that may improve
+[01:10:57] most traders uh returns um
+[01:11:00] the you know three four concepts that
+[01:11:02] really really help
+[01:11:04] yeah very wise i love that
+[01:11:07] actually one more question i lied
+[01:11:11] i promise this is the last one
+[01:11:14] since you've seen this type of success
+[01:11:16] that you've had in trading
+[01:11:18] how has your life changed not much
+[01:11:23] like i used to like in my earlier years
+[01:11:26] like between 2013 when i started my
+[01:11:29] evernote project or 2014 i started just
+[01:11:33] you know just saving articles like i
+[01:11:35] started um
+[01:11:37] like i started everything trading
+[01:11:39] related i read a lot of books i read a
+[01:11:41] lot of articles i
+[01:11:42] studied a lot of these successful
+[01:11:44] traders like dan sanger
+[01:11:46] like i studied everything he had written
+[01:11:48] this all his newsletters back to the 90s
+[01:11:50] i read through them
+[01:11:51] i looked at the patterns he was looking
+[01:11:53] for so i spent a lot of time on
+[01:11:57] on especially on the weekends like
+[01:12:00] studying
+[01:12:01] like i tried to absorb everything i
+[01:12:03] looked at every single angle
+[01:12:05] every single method i don't know how
+[01:12:07] many thousands
+[01:12:08] probably 10 000 hours plus that i've
+[01:12:10] spent
+[01:12:12] just doing studying uh over the years
+[01:12:15] now i feel like i i
+[01:12:18] i don't do that as much anymore because
+[01:12:21] there's just not much
+[01:12:22] new ones it's the same patterns it's the
+[01:12:25] same concepts and i feel like
+[01:12:27] i have a pretty good grasp grasp of
+[01:12:29] these things and i don't have to spend
+[01:12:31] this much as much time doing like just
+[01:12:34] studying um
+[01:12:36] like i do it uh but not as much so
+[01:12:40] you asked me when uh
+[01:12:44] when we started this call what i did
+[01:12:46] yesterday since yesterday was a day off
+[01:12:48] in the markets and i spent the whole day
+[01:12:50] playing computer games that's how my
+[01:12:53] life has changed i went from
+[01:12:55] studying everything market related to
+[01:12:58] doing
+[01:12:58] things that i enjoy doing on my days off
+[01:13:02] okay well that's a pretty simple answer
+[01:13:05] yeah
+[01:13:06] more free time on the weekends and uh
+[01:13:08] more time for video games
+[01:13:10] absolutely more social life and more
+[01:13:13] more uh
+[01:13:14] time spending on hobbies okay okay well
+[01:13:18] christian it's been an absolute pleasure
+[01:13:19] speaking with you and i greatly
+[01:13:21] appreciate your time
+[01:13:22] for anyone who's listening who might
+[01:13:24] want to uh
+[01:13:26] find out more about yourself uh where's
+[01:13:28] the best place to go
+[01:13:29] you know twitter etc yeah
+[01:13:33] you can pretty much go to any of my
+[01:13:34] social media but twitter
+[01:13:36] um there's also a link in the in in my
+[01:13:39] bio where you get to my blog and you can
+[01:13:41] read up on
+[01:13:41] uh you know there's a you know blog
+[01:13:44] posts
+[01:13:45] about me and my methods my setups and
+[01:13:48] also my twitch stream
+[01:13:50] um where i stream uh every market day i
+[01:13:54] should usually stream the first hour and
+[01:13:56] a half or so you can see me
+[01:13:58] trade real time i talk about
+[01:14:02] the setups you can ask me questions um
+[01:14:06] and uh yeah close to twitter and twitch
+[01:14:10] okay and what's the link for your blog
+[01:14:12] because i think for anyone who's
+[01:14:14] you know listened this far through the
+[01:14:16] podcast it would probably be a good idea
+[01:14:18] for them to actually
+[01:14:19] uh put some visuals to you know some of
+[01:14:21] the things we've been speaking about
+[01:14:22] here and and those are definitely on
+[01:14:24] your blog
+[01:14:25] what's the link yeah it's uh
+[01:14:29] shorts and stories.com
+[01:14:32] chartsandstories.com
+[01:14:33] okay and your twitter handle is uh at
+[01:14:36] the caller maggie
+[01:14:40] q-u-l-l-a-m-a-g-g-i-e
+[01:14:42] and that's also the handle my twitch
+[01:14:44] handle and my youtube handle
+[01:14:46] okay excellent uh and folks listening
+[01:14:49] those links can also be found at
+[01:14:54] two 1 2 as this is episode 212.
+[01:14:58] christian once again very much
+[01:15:00] appreciate it thanks a lot for doing the
+[01:15:02] podcast
+[01:15:03] let's chat soon thank you very much
+[01:15:06] i'm very grateful uh that you asked me
+[01:15:10] to be here
+[01:15:10] and i'm very happy thank you so much
+[01:15:12] aaron my pleasure
+[01:15:15] you've reached the end of this episode
+[01:15:17] of chat with traders
+[01:15:19] but rest assured there are more episodes
+[01:15:21] loaded with
+[01:15:22] real market insight and zero hype on the
+[01:15:25] way
+[01:15:25] soon so to stay updated with each great
+[01:15:28] new release
+[01:15:29] subscribe to the podcast and itunes and
+[01:15:31] we'd love it if you leave a rating and
+[01:15:33] review
+[01:15:34] we'll catch you next time on chat with
+[01:15:36] traders
