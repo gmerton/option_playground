@@ -1,0 +1,89 @@
+APPLY — 7 day(s)
+
+============================================================================================
+2024-04-11
+============================================================================================
+  rows  3,063,893   distinct(all cols)  1,505,231   distinct(contract)  1,501,554   [34s]
+  ⓘ note: 3,677 contract(s) hold conflicting variants (pre-existing source defect). BOTH variants are preserved — only byte-identical copies are removed.
+  → every duplicate group is byte-identical; 1,558,662 excess rows (50.87%) are safe to remove
+  backup written: data/backups/v3_repair/2024-04-11_deduped.parquet (33 MB) — recoverable if the insert fails
+  deleting the day ...
+  re-inserting deduped rows ...
+  VERIFY: 1,505,231 rows after (expected 1,505,231) — ✓ OK
+
+============================================================================================
+2024-04-12
+============================================================================================
+  rows  3,053,415   distinct(all cols)  1,526,707   distinct(contract)  1,523,030   [40s]
+  ⓘ note: 3,677 contract(s) hold conflicting variants (pre-existing source defect). BOTH variants are preserved — only byte-identical copies are removed.
+  → every duplicate group is byte-identical; 1,526,708 excess rows (50.00%) are safe to remove
+  backup written: data/backups/v3_repair/2024-04-12_deduped.parquet (33 MB) — recoverable if the insert fails
+  deleting the day ...
+  re-inserting deduped rows ...
+  VERIFY: 1,526,707 rows after (expected 1,526,707) — ✓ OK
+
+============================================================================================
+2024-04-17
+============================================================================================
+  rows  2,983,843   distinct(all cols)  1,491,921   distinct(contract)  1,488,238   [35s]
+  ⓘ note: 3,683 contract(s) hold conflicting variants (pre-existing source defect). BOTH variants are preserved — only byte-identical copies are removed.
+  → every duplicate group is byte-identical; 1,491,922 excess rows (50.00%) are safe to remove
+  backup written: data/backups/v3_repair/2024-04-17_deduped.parquet (33 MB) — recoverable if the insert fails
+  deleting the day ...
+  re-inserting deduped rows ...
+  VERIFY: 1,491,921 rows after (expected 1,491,921) — ✓ OK
+
+============================================================================================
+2024-04-18
+============================================================================================
+  rows  3,213,338   distinct(all cols)  1,606,667   distinct(contract)  1,602,418   [37s]
+  ⓘ note: 4,249 contract(s) hold conflicting variants (pre-existing source defect). BOTH variants are preserved — only byte-identical copies are removed.
+  → every duplicate group is byte-identical; 1,606,671 excess rows (50.00%) are safe to remove
+  backup written: data/backups/v3_repair/2024-04-18_deduped.parquet (35 MB) — recoverable if the insert fails
+  deleting the day ...
+  re-inserting deduped rows ...
+  VERIFY: 1,606,667 rows after (expected 1,606,667) — ✓ OK
+
+============================================================================================
+2024-04-19
+============================================================================================
+  rows  3,228,134   distinct(all cols)  1,614,065   distinct(contract)  1,610,656   [35s]
+  ⓘ note: 3,409 contract(s) hold conflicting variants (pre-existing source defect). BOTH variants are preserved — only byte-identical copies are removed.
+  → every duplicate group is byte-identical; 1,614,069 excess rows (50.00%) are safe to remove
+  backup written: data/backups/v3_repair/2024-04-19_deduped.parquet (34 MB) — recoverable if the insert fails
+  deleting the day ...
+  re-inserting deduped rows ...
+  VERIFY: 1,614,065 rows after (expected 1,614,065) — ✓ OK
+
+============================================================================================
+2024-08-12
+============================================================================================
+  rows  2,851,692   distinct(all cols)  1,425,846   distinct(contract)  1,422,126   [31s]
+  ⓘ note: 3,720 contract(s) hold conflicting variants (pre-existing source defect). BOTH variants are preserved — only byte-identical copies are removed.
+  → every duplicate group is byte-identical; 1,425,846 excess rows (50.00%) are safe to remove
+  backup written: data/backups/v3_repair/2024-08-12_deduped.parquet (32 MB) — recoverable if the insert fails
+  deleting the day ...
+  re-inserting deduped rows ...
+  VERIFY: 1,425,846 rows after (expected 1,425,846) — ✓ OK
+
+============================================================================================
+2024-12-06
+============================================================================================
+  rows  3,125,584   distinct(all cols)  1,562,792   distinct(contract)  1,558,914   [38s]
+  ⓘ note: 3,878 contract(s) hold conflicting variants (pre-existing source defect). BOTH variants are preserved — only byte-identical copies are removed.
+  → every duplicate group is byte-identical; 1,562,792 excess rows (50.00%) are safe to remove
+  backup written: data/backups/v3_repair/2024-12-06_deduped.parquet (35 MB) — recoverable if the insert fails
+  deleting the day ...
+  re-inserting deduped rows ...
+  VERIFY: 1,562,792 rows after (expected 1,562,792) — ✓ OK
+
+============================================================================================
+SUMMARY
+       day   status  before   after
+2024-04-11 repaired 3063893 1505231
+2024-04-12 repaired 3053415 1526707
+2024-04-17 repaired 2983843 1491921
+2024-04-18 repaired 3213338 1606667
+2024-04-19 repaired 3228134 1614065
+2024-08-12 repaired 2851692 1425846
+2024-12-06 repaired 3125584 1562792

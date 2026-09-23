@@ -196,8 +196,9 @@ Discovered the expensive way. Each one looks like a different problem than it is
   a Series and either crashes or silently takes the wrong row. Root cause (found 2026-09-23):
   `import_historicaldata.py` was INSERT-only, so re-running it over a loaded date appended a whole
   duplicate set. **It is now idempotent** (deletes the day before inserting), and a day-level scan of all
-  4,220 sessions found the damage is exactly **9 days**, 0.31% of the table: 2014-01-02 (repaired),
-  seven 2024 days (2024-04-11/12/17/18/19, 08-12, 12-06), and **2025-07-03**. ⚠ 2025-07-03 is different —
+  4,220 sessions found the damage is exactly **9 days**, 0.31% of the table. **8 are REPAIRED and verified
+  (2026-09-23)** -- 2014-01-02 and the seven 2024 days (04-11/12/17/18/19, 08-12, 12-06); 11,413,838 rows
+  removed, table 4,142,170,035 -> 4,130,756,197, every day back to a ~1.0 local ratio. **2025-07-03 remains.** ⚠ 2025-07-03 is different —
   a *partial* 1.64x overlap where 53% of duplicate groups have **conflicting** bid/ask, i.e. a re-pull
   against changed vendor data. Deduping it would CHOOSE a price; it is deliberately left alone.
   Repair tool: `repair_v3_duplicate_days.py` (removes byte-identical copies only, never dedupes on a key).

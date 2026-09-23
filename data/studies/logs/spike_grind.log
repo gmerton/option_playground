@@ -1,0 +1,60 @@
+building the breakout panel...
+deduped 205,756 duplicate contract-days (0.47%) — bid/ask identical in every case
+chains: 43,954,360 call-days, 198 names, 2019-01-02 -> 2026-05-01, 1.85 GB in memory
+
+walking paths once, resolving all 8 cells on the same walk ...
+    25/198 names, 466 trades, 51s
+    50/198 names, 884 trades, 81s
+    75/198 names, 1,297 trades, 116s
+    100/198 names, 1,792 trades, 143s
+    125/198 names, 2,216 trades, 177s
+    150/198 names, 2,683 trades, 215s
+    175/198 names, 3,117 trades, 246s
+
+3,428 call trades · 197 names · 2019-06-25 -> 2026-02-20
+median entry delta 0.275, median DTE 36, paths that went dark (settled at ZERO): 2.7%
+
+================================================================================================
+PATH-COVERAGE GUARD — long-call spike vs grind exit
+================================================================================================
+  trades 3,428   coverage: median 83.3%  mean 77.2%  p10 45.8%  p90 96.8%
+  floor 60% -> 2,756 resolved, 672 UNRESOLVED (19.6% — report as its own bucket, never as wins)
+
+  headline vs coverage floor (a real edge is flat here; an artefact decays):
+ floor    n  pct_kept   mean  median  win_pct
+ 0.000 3428   100.000 -0.234  -0.854   14.557
+ 0.250 3352    97.783 -0.218  -0.849   14.887
+ 0.500 3023    88.186 -0.184  -0.840   16.308
+ 0.750 2219    64.732 -0.137  -0.812   19.288
+ 0.900 1309    38.186 -0.379  -0.795   17.341
+
+  ✓ Coverage is adequate and the headline does not depend on it. Still quote the median coverage and the unresolved share next to the result.
+
+====================================================================================================================================
+PRIMARY — ARM B (spike override) minus ARM A (20-EMA trail), same trades, paired
+====================================================================================================================================
+  single-day >= 2.0 ADR            n 3,428 | A   -23.4% | B   -22.3% | C   -19.8% | B-A   +1.2pp t +0.18 | halves   +2.9/  -1.8
+
+  win%   A 14.6   B 19.3   C 22.8
+  median A -85.4%  B -84.0%  C -95.2%
+  sd     A 201pp  B 158pp  C 166pp
+  p99    A +834%  B +671%  C +675%   <- does the spike rule cap the tail that IS the edge?
+
+  PRE-REGISTERED PASS: NO
+
+  ⚠ convention sensitivity — dark paths settled at ZERO (used above) vs DROPPED:
+     settle dark at 0: B-A +1.2pp   |   drop dark (n 3,335): B-A +0.7pp
+
+====================================================================================================================================
+EXPLORATORY sweep (Sidak over 8 cells -> |t| >= 2.73; house bar 3.0 governs)
+====================================================================================================================================
+  single-day >= 1.5 ADR            n 3,428 | A   -23.4% | B   -18.1% | C   -17.4% | B-A   +5.4pp t +1.46 | halves  +11.0/  +2.3
+  single-day >= 2.0 ADR            n 3,428 | A   -23.4% | B   -22.3% | C   -19.8% | B-A   +1.2pp t +0.18 | halves   +2.9/  -1.8
+  single-day >= 2.5 ADR            n 3,428 | A   -23.4% | B   -22.8% | C   -19.6% | B-A   +0.6pp t +0.07 | halves   +0.7/  -0.3
+  single-day >= 3.0 ADR            n 3,428 | A   -23.4% | B   -22.9% | C   -18.4% | B-A   +0.5pp t -0.22 | halves   +0.6/  -2.0
+  cumulative >= 1.5 ADR            n 3,428 | A   -23.4% | B   -12.9% | C    -9.6% | B-A  +10.5pp t +2.38 | halves  +24.5/  +2.2
+  cumulative >= 2.0 ADR            n 3,428 | A   -23.4% | B   -12.5% | C    -9.0% | B-A  +10.9pp t +2.40 | halves  +21.6/  +4.1
+  cumulative >= 2.5 ADR            n 3,428 | A   -23.4% | B   -12.4% | C    -8.5% | B-A  +11.0pp t +2.12 | halves  +16.4/  +5.8
+  cumulative >= 3.0 ADR            n 3,428 | A   -23.4% | B   -10.9% | C    -6.5% | B-A  +12.5pp t +2.51 | halves  +16.7/  +6.9
+
+wrote data/studies/spike_vs_grind_exit_2026-09-23.csv
