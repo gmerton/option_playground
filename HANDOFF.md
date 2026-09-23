@@ -67,5 +67,15 @@ name. Expect nulls; treat a positive as suspect until it survives real fills and
 ## Where the live numbers are — do not trust any copy
 
 Positions and NAV: query IBKR live (TWS on 7496). The `journal_open_positions` snapshot is a session
-behind. Stops in this repo are computed at **1 ADR below the current close** — the tested "disaster stop",
-the best intraday-executed variant — and are recomputed, never stored.
+behind.
+
+**Stops — two of them, and they execute differently.** Full definitions in
+**`data/studies/stop_definitions.md`** (canonical; fix any doc that disagrees with it).
+* **Disaster stop — 1 ADR below the current close.** The best *intraday-executed* variant: **rest it with
+  the broker.** Its job is the crash, not the noise; it fires 4–6% of days. Recomputed daily, never stored.
+* **Tight stop — the session low (0.4–0.8 ADR). Judged on the CLOSE.** Resting this one intraday is the
+  thing the entry study rejects.
+
+⚠ Quoting the close-judged rule against the 1-ADR level is a mistake that was actually made on 2026-09-23.
+"Hard stop" is the trade reviewer's retrospective grading criterion, not a live level, and **"emergency
+stop" is not a term in this repo**.

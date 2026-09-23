@@ -60,6 +60,11 @@ the episodic pivot is most powerful when the stock has been basing, not already 
 EXIT_PRINCIPLES = """\
 EXIT RULE 1 — Initial Stop Loss Placement (O'Neill + Luk + Qullamaggie)
 
+⚠ TERMINOLOGY: this "hard stop" is an ENTRY-TIME rule used RETROSPECTIVELY to grade whether a past trade's
+stop was placed correctly. It is NOT either of the two live stops the desk maintains on an open position
+(1-ADR disaster stop, which rests intraday; and the session-low tight stop, which is judged on the close).
+See data/studies/stop_definitions.md before quoting any of these terms back to the trader.
+
 Place a hard stop immediately upon entry. Use the tighter of:
   (a) The low of the breakout candle (entry day's low) — Luk's and Qullamaggie's
       primary stop. For episodic pivots, use the low of the 1-min or 5-min entry candle.

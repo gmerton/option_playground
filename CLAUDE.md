@@ -157,9 +157,18 @@ unless he says otherwise in the moment.
 - **Incremental delivery**: plumbing first, defer strategy decisions.
 - **Weight current market conditions** — report setup expectancy *conditioned* on today's regime (SPY trend
   × breadth) and mark today's row, rather than quoting an unconditional average.
-- **Quote every stop two ways**: width (`stop/ADR` — under ~0.5, widen and cut size) **and** execution
-  ("judged on the CLOSE, not intraday"). A resting intraday stop is a different trade from the one the
-  research supports; if he is running one, say so and price the difference.
+- **Quote every stop two ways** — width and execution — and name **which of the two live stops** you mean.
+  ⚠ **They execute differently and getting this backwards is a known error (2026-09-23):**
+  - **Disaster stop = 1.0 ADR below the current close → RESTS WITH THE BROKER, executes INTRADAY.** Its
+    job is the crash, not the noise; it fires 4–6% of days.
+  - **Tight stop = the session low (0.4–0.8 ADR) → JUDGED ON THE CLOSE.** Resting *this* one intraday is
+    what the research rejects (DINO 2026-09-22: correct 0.75-ADR width, filled at the post-entry low
+    15:51, closed above the day-low stop nine minutes later; cost ~$11.56 plus the position).
+  Always give `stop/ADR` for the tight one; under ~0.5 ADR, widen it and cut size (a weak close is a
+  *sizing* problem, never a selection one). ⚠ Don't overclaim: the 1-ADR cell is ≈+0.03R and does not beat
+  its control, and no stop variant beats buying the close. **"Hard stop"** is the trade reviewer's
+  retrospective entry-quality criterion, not a live level; **"emergency stop" does not exist here** — ask
+  which live stop is meant. **Canonical definitions: `data/studies/stop_definitions.md`.**
 - **No background polling.** When data isn't ready (Flex, a scheduled job), report status and expected
   timing, then stop. He will ask again.
 - **ASCII filenames only** — git escapes non-ASCII in `--name-only`, so grep-based audits silently miss

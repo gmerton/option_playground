@@ -217,8 +217,11 @@ premium and a legitimate screen-level shortcut) wrapped in a philosophy that doe
 our sizing work:
 
 - We size from **`risk ÷ (entry − stop)`** with the stop at ~**1 ADR** — a *structural* distance, not a
-  probability envelope. And we quote it two ways: `stop/ADR` (under ~0.5 → widen and cut size) and
-  "judged on the CLOSE, not intraday".
+  probability envelope. And we quote it two ways: `stop/ADR` (under ~0.5 → widen and cut size) and the
+  execution mode. ⚠ **Corrected 2026-09-23:** this line previously paired the 1-ADR level with "judged on
+  the CLOSE, not intraday", which is the wrong combination. The **1-ADR disaster stop RESTS intraday**
+  (its job is the crash; it fires 4–6% of days); the **close-judged** rule belongs to the **tight**
+  session-low stop. Canonical: `data/studies/stop_definitions.md`.
 - The **size lever is EXCLUSION**: trading A+B grades only = **+0.29R OOS** vs flat 0.00; scaling risk by
   grade = **+0.08R with more drawdown**. ⚠ And the 2026-09-22 t-run found "A+B only" **IS** the precision
   tier re-counted (A+B OOS R = precision-only R = +0.286; A+B minus C = +0.083R, **t 0.57**).
