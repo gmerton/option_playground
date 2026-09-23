@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Remove exact duplicate rows from the 8 double-loaded sessions in silver.options_daily_v3.
+Remove exact duplicate rows from the 9 duplicated sessions in silver.options_daily_v3.
 
 WHAT HAPPENED (measured 2026-09-23). `import_historicaldata.py` was INSERT-only, so re-running it over an
 already-loaded date appended a whole duplicate set instead of replacing it. A day-level scan of all 4,220
@@ -9,16 +9,28 @@ sessions 2010-2026 found exactly NINE affected days, 12.86M excess rows of 4.14B
     2014-01-02                                                   ratio 2.05
     2024-04-11 / 04-12 / 04-17 / 04-18 / 04-19                   ratio 2.03 - 2.20
     2024-08-12, 2024-12-06                                       ratio 1.97 / 2.06
-    2025-07-03                                                   ratio 1.64   <- EXCLUDED, see below
+    2025-07-03                                                   ratio 1.64   <- NOT repairable, see below
 
 The importer was made idempotent the same day (it now calls `athena_delete_day()` before every insert),
 so this is a one-off cleanup of damage already done, not a recurring chore.
 
-⛔ 2025-07-03 IS DELIBERATELY NOT IN THE DEFAULT LIST. It is a PARTIAL overlap (1.64x, not ~2x) and 53%
-of its duplicate groups have DIFFERING bid/ask/last -- two different observations of the same contract-day,
-consistent with a re-pull against changed vendor data. Deduping it means CHOOSING a price, and we do not
-know which source is authoritative. A visible duplicate is better than an invisible wrong price. It needs
-a decision first; the guard below would refuse it anyway.
+⛔ 2025-07-03 IS NOT REPAIRABLE BY THIS SCRIPT, and three earlier claims about it were wrong. Verified
+2026-09-23 against the table itself:
+  * It has **ZERO byte-identical rows** — 2,606,336 rows, 2,606,336 distinct. Every row differs somewhere,
+    so `drop_duplicates()` removes nothing and the script correctly reports the day "clean".
+  * The duplication is real: 1,021,059 contract-keys carry more than one row. What differs is mostly the
+    GREEKS at trailing decimals — delta differs in 733,295 groups, gamma 466,476, bid_iv 334,801 — while
+    **498,795 groups (48.8%) agree on every economic field** (bid, ask, last, open_interest, volume).
+    Only **72,919 (7.1%)** disagree on bid/ask; 505,640 disagree on `last`.
+  * All five Iceberg data files for the day share one query prefix (20260221_203603_00286) = ONE INSERT on
+    2026-02-21. The duplication was already in that write's source. `$path` cannot separate the variants,
+    so recency is not available as a tiebreak.
+  * ⚠ Superseded claims, recorded so they are not repeated: "a partial re-pull against changed vendor
+    data" (no — single insert), "53% of groups have differing prices" (no — 7.1% on bid/ask; the 53% came
+    from a 5-ticker sample containing SPY, one of the worst-affected names), and "~950k identical copies
+    can be removed losslessly" (no — there are none).
+Collapsing this day would require choosing one row per contract, which is exactly the operation this
+script refuses. Left as-is deliberately; read-time dedupe is documented in CLAUDE.md.
 
 THE SAFETY PROPERTY. The repair keeps `df.drop_duplicates()` over EVERY column and nothing else. That is
 lossless by construction: it deletes only byte-identical copies, and where a contract holds two genuinely
@@ -58,7 +70,7 @@ from lib.constants import CATALOG, DB, GLUE_CATALOG, S3_OUTPUT, S3TABLES_CATALOG
 
 CLEAN_DAYS = ["2014-01-02", "2024-04-11", "2024-04-12", "2024-04-17",
               "2024-04-18", "2024-04-19", "2024-08-12", "2024-12-06"]
-CONFLICTED = {"2025-07-03"}          # never repaired by this script; needs a source decision
+CONFLICTED: set[str] = set()   # ⚠ was {"2025-07-03"} — lifted 2026-09-23, see below
 
 KEY = ["ticker", "expiry", "strike", "cp"]
 COLS = ["trade_date", "strike", "expiry", "cp", "last", "bid", "ask", "bid_iv", "ask_iv",
@@ -115,8 +127,8 @@ def repair(d: str, apply: bool) -> dict:
         print("  ✓ already clean — nothing to remove.")
         return dict(day=d, status="clean")
 
-    print(f"  → every duplicate group is byte-identical; {n_total - n_all:,} excess rows "
-          f"({100*(n_total-n_all)/n_total:.2f}%) are safe to remove")
+    print(f"  → {n_total - n_all:,} BYTE-IDENTICAL excess rows ({100*(n_total-n_all)/n_total:.2f}%) "
+          f"are safe to remove; any conflicting variants noted above are kept")
     if not apply:
         print("  (dry run — pass --apply to write)")
         return dict(day=d, status="dry_run", excess=n_total - n_all)
