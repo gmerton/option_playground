@@ -248,10 +248,84 @@ def collapse_greeks(d: str, apply: bool, econ: list[str] | None = None) -> dict:
     return dict(day=d, status="collapsed" if ok else "MISMATCH", before=n_total, after=after)
 
 
+
+def collapse_conservative(d: str, apply: bool) -> dict:
+    """Final pass to UNIQUENESS: one row per contract, keeping the WIDEST-SPREAD observation.
+
+    ⚠ THIS IS THE ONLY OPERATION HERE THAT CHOOSES BETWEEN GENUINELY DIFFERENT PRICES. The two passes
+    before it discarded fields that cannot affect a result (greeks; `last`, which nothing fills at). This
+    one resolves rows whose BID/ASK differ, which IS what engines fill at.
+
+    The safeguard is the direction of the choice, not a claim about which quote is true: keeping the
+    widest spread means a lower bid AND a higher ask, i.e. you sell worse and buy worse under every
+    variant. It can only make a backtest more conservative, never flatter it. Measured on 2025-07-03
+    (72,919 affected contracts): median bid gap $0.034 / ask gap $0.042; 75.2% of gaps already sit inside
+    25% of the quoted spread — the slippage the house cost model assumes — 96.7% inside the full spread,
+    and only 2,430 exceed it. Zero crossed quotes.
+
+    Authorised by the owner 2026-09-23: "I'd still like to strive for uniqueness."
+    """
+    print(f"\n{'='*92}\n{d}  —  CONSERVATIVE COLLAPSE TO UNIQUENESS (keep widest spread)\n{'='*92}")
+    t0 = time.time()
+    df = read_day(d).reset_index(drop=True)
+    n_total = len(df)
+    multi = df.duplicated(subset=KEY, keep=False)
+    n_groups_multi = int(df.loc[multi, KEY].drop_duplicates().shape[0])
+    print(f"  rows {n_total:>10,}   contracts with >1 row: {n_groups_multi:,}   [{time.time()-t0:.0f}s]")
+
+    df["_spread"] = pd.to_numeric(df["ask"], errors="coerce") - pd.to_numeric(df["bid"], errors="coerce")
+    # widest spread wins; NaN spreads sort last so a real quote is always preferred
+    order = df.sort_values("_spread", ascending=False, kind="mergesort", na_position="last")
+    keep_idx = order.drop_duplicates(subset=KEY, keep="first").index
+    clean = df.loc[sorted(keep_idx), COLS]
+    print(f"  → {n_total - len(clean):,} rows removed ({100*(n_total-len(clean))/n_total:.2f}%), "
+          f"{len(clean):,} kept — one row per contract")
+
+    dupes_left = int(clean.duplicated(subset=KEY).sum())
+    if dupes_left:
+        print(f"  ⛔ ABORT — {dupes_left} contracts still carry >1 row.")
+        return dict(day=d, status="aborted")
+    print("  ✓ verified: every contract now has exactly ONE row")
+
+    if not apply:
+        print("  (dry run — pass --apply to write)")
+        return dict(day=d, status="dry_run", removed=n_total - len(clean))
+
+    for c in ("open_interest", "volume"):
+        clean[c] = pd.to_numeric(clean[c], errors="coerce").astype("Int64")
+    BACKUP.mkdir(parents=True, exist_ok=True)
+    bak = BACKUP / f"{d}_unique.parquet"
+    clean.to_parquet(bak, index=False)
+    print(f"  backup written: {bak} ({bak.stat().st_size/1e6:.0f} MB)")
+
+    tmp = f"tmp_uq_{uuid.uuid4().hex}"
+    tmp_path = TMP_S3_PREFIX.rstrip("/") + f"/{tmp}/"
+    _ensure_glue_db(DB)
+    wr.s3.to_parquet(df=clean, path=tmp_path, dataset=True, database=DB, table=tmp,
+                     compression="snappy", mode="overwrite", dtype=GLUE_DTYPE)
+    try:
+        print("  deleting the day ...")
+        run_ddl(f"DELETE FROM \"{DB}\".\"{TABLE}\" WHERE trade_date = DATE '{d}'")
+        print("  re-inserting ...")
+        run_ddl(f'INSERT INTO "{DB}"."{TABLE}" SELECT {", ".join(COLS)} FROM "{GLUE_CATALOG}"."{DB}"."{tmp}"')
+    finally:
+        wr.catalog.delete_table_if_exists(database=DB, table=tmp)
+        wr.s3.delete_objects(tmp_path)
+
+    after = count_day(d)
+    ok = after == len(clean)
+    print(f"  VERIFY: {after:,} rows after (expected {len(clean):,}) — {'✓ OK' if ok else '✗ MISMATCH'}")
+    if not ok:
+        print(f"  ⚠ RESTORE FROM {bak}")
+    return dict(day=d, status="unique" if ok else "MISMATCH", before=n_total, after=after)
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--date", action="append", help="repeatable; defaults to the 8 clean days")
     ap.add_argument("--apply", action="store_true", help="actually write (default is a dry run)")
+    ap.add_argument("--unique", action="store_true",
+                    help="collapse to ONE row per contract, keeping the widest-spread (most conservative) quote")
     ap.add_argument("--relax-last", action="store_true",
                     help="with --collapse-greeks: allow `last` to differ (bid/ask/OI/volume must still agree)")
     ap.add_argument("--collapse-greeks", action="store_true",
@@ -260,7 +334,9 @@ def main() -> None:
     days = a.date or CLEAN_DAYS
     print(f"{'APPLY' if a.apply else 'DRY RUN'} — {len(days)} day(s)"
           f"{' — GREEK-ROUNDING COLLAPSE' if a.collapse_greeks else ''}")
-    if a.collapse_greeks:
+    if a.unique:
+        out = [collapse_conservative(d, a.apply) for d in days]
+    elif a.collapse_greeks:
         econ = ECON_QUOTE if a.relax_last else ECON
         out = [collapse_greeks(d, a.apply, econ) for d in days]
     else:

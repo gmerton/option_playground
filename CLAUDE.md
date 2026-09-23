@@ -200,26 +200,21 @@ Discovered the expensive way. Each one looks like a different problem than it is
 - **`run_trade_review_pages.py` is a pure renderer** (zero DB writes) and is safe to re-run. **`run_build_reviews.py`
   is NOT** — re-running it over past dates re-creates existing reviews under new labels (425 duplicates on
   2026-09-21). Never rebuild reviews for a date that already has them.
-- **`options_daily_v3` is the RAW table; `options_cache` is the deduped one.** Pulling paths straight from
-  v3 needs a `drop_duplicates(subset=[ticker, expiry, strike, trade_date])` or a single-date lookup returns
-  a Series and either crashes or silently takes the wrong row. Root cause (found 2026-09-23):
-  `import_historicaldata.py` was INSERT-only, so re-running it over a loaded date appended a whole
-  duplicate set. **It is now idempotent** (deletes the day before inserting), and a day-level scan of all
-  4,220 sessions found the damage was exactly **9 days**. **ALL 9 ARE NOW REPAIRED AND VERIFIED
-  (2026-09-23)**: 12,361,583 rows removed, table **4,142,170,035 -> 4,129,808,452**, and a full rescan
-  shows **0 sessions above 1.5x their local median**. Two different operations were needed:
-  * **8 days byte-lossless** (2014-01-02 + 2024-04-11/12/17/18/19, 08-12, 12-06) -- exact duplicate rows
-    only, never a keyed dedupe, so no price was ever chosen. 11,413,838 rows.
-  * **2025-07-03 needed a keyed collapse** (947,745 rows) because it had **zero** byte-identical rows --
-    every row differed in greeks at trailing decimals. Collapsed in two authorised stages: first where
-    every economic field matched (greeks only), then allowing `last` to differ once measured that 99.7%
-    of those gaps sat INSIDE the quoted bid-ask spread and we price at fills, never `last`.
-    ⚠ **73,317 contracts on that date still carry two rows with genuinely different BID/ASK** and were
-    deliberately left -- bid/ask is what engines fill at, so choosing would be picking a price. Resolving
-    them needs a temporal-consistency test against 07-02 / 07-07. Read-time dedupe still applies. ⚠ 2025-07-03 is different —
-  a *partial* 1.64x overlap where 53% of duplicate groups have **conflicting** bid/ask, i.e. a re-pull
-  against changed vendor data. Deduping it would CHOOSE a price; it is deliberately left alone.
-  Repair tool: `repair_v3_duplicate_days.py` (removes byte-identical copies only, never dedupes on a key).
+- **`options_daily_v3` duplicate episode — FIXED AND VERIFIED 2026-09-23.** `import_historicaldata.py` was
+  INSERT-only, so re-running it over an already-loaded date appended a whole duplicate set. **It is now
+  idempotent** (deletes the day before inserting). A scan of all 4,220 sessions found exactly **9** damaged
+  days; all are repaired. **12,441,196 rows removed, 4,142,170,035 -> 4,129,729,... ; an exact per-year
+  check over a 5-ticker sample now returns ZERO duplicate groups in every year 2010-2026**, i.e. the table
+  is unique on `(ticker, expiry, strike, cp, trade_date)`. The blanket "always dedupe when reading v3"
+  workaround is **no longer required** — but it is cheap insurance, and re-verify if ingestion changes.
+  ⚠ **2025-07-03 needed a different, weaker operation and this matters when reading that date.** It had
+  **zero** byte-identical rows (every row differed in greeks at trailing decimals), so it was collapsed on
+  the contract key in three authorised stages, each gated on the discarded field being unable to change a
+  result: greeks only, then `last` (99.7% of gaps sat inside the quoted spread; nothing fills at `last`),
+  then finally **73,317 contracts whose BID/ASK genuinely differed** — resolved by keeping the
+  **widest-spread** row. That is the only place in the table where a price was chosen; the choice is
+  deliberately pessimistic (lower bid, higher ask), so results on that date can only be conservative.
+  Tooling: `repair_v3_duplicate_days.py` (`--collapse-greeks` / `--relax-last` / `--unique`).
 - **MySQL is bound to `127.0.0.1`.** Nothing in the cloud can reach it, which is why the journal site's
   presentation had to be split from its data before CI could deploy it.
 
