@@ -10,6 +10,7 @@ scripts are one-time studies, not tools.
 
 | file | what it answers |
 |---|---|
+| **`HANDOFF.md`** | **Picking this up cold?** Start here. The *why* and the *right now*: what changed recently and is not obvious from the code, what is in flight, what is knowingly broken. Dated — trust the files below it where they disagree. |
 | **`OPERATIONS.md`** | **What do I actually RUN, and when.** The whole repo reduces to ~13 top-level commands; everything else is orchestrator-invoked or a dead study script. Start here. |
 | `data/studies/TEST_INDEX.md` | What has already been tested, with the verdict — one line per test, plus §10 for what's queued. **Check before proposing any study; most ideas here have been run.** |
 | `data/studies/daily_routine.md` | What to *act on* vs ignore each day (which signals carry expectancy). Different question from OPERATIONS.md. |
@@ -168,6 +169,30 @@ unless he says otherwise in the moment.
 account- and machine-local and is not in git, so these rules would otherwise be lost when switching Claude
 accounts or machines. Keep durable behavioural rules here; leave situational project state in memory,
 where going stale is harmless.
+
+## Gotchas that cost an hour
+
+Discovered the expensive way. Each one looks like a different problem than it is.
+
+- **IB Gateway/TWS binds IPv6.** Do NOT probe its port with a `/dev/tcp` IPv4 loopback test — it reports
+  closed on a port that is listening. Use `lsof -nP -iTCP -sTCP:LISTEN | grep 7496`. Live TWS is **7496**,
+  paper Gateway **4002**.
+- **API handshake times out although the port is open** → a stale clientId. Retry with a **fresh clientId**,
+  then restart the Gateway if it persists. Use `reqAllOpenOrders()` to audit every stop, not just your own
+  session's.
+- **Cancel TWS orders via clientId 0 only**, and never stack stops on one position — audit before placing.
+  Live account **U21036520**.
+- **The real open book is the `journal_open_positions` Flex snapshot** (broker basis + mark), not a
+  reconstruction from fills. ⚠ It lands **one session late**; for today's positions query IBKR live.
+  Flex **trade confirms (query 1415008) land same-day**; the **NAV/Activity query (1605053) is a session
+  behind** — a distinction that matters constantly.
+- **TradingView MCP OAuth dies with a CloudFront 403** if you authenticate while signed out. **Sign in to
+  tradingview.com first**, then authenticate.
+- **`run_trade_review_pages.py` is a pure renderer** (zero DB writes) and is safe to re-run. **`run_build_reviews.py`
+  is NOT** — re-running it over past dates re-creates existing reviews under new labels (425 duplicates on
+  2026-09-21). Never rebuild reviews for a date that already has them.
+- **MySQL is bound to `127.0.0.1`.** Nothing in the cloud can reach it, which is why the journal site's
+  presentation had to be split from its data before CI could deploy it.
 
 ## Key patterns
 

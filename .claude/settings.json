@@ -1,0 +1,40 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(head:*)",
+      "Bash(tail:*)",
+      "Bash(wc:*)",
+      "Bash(grep:*)",
+      "Bash(find:*)",
+      "Bash(du:*)",
+      "Bash(diff:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git show:*)",
+      "Bash(git ls-files:*)",
+      "Bash(git check-ignore:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(PYTHONPATH=src .venv/bin/python3:*)",
+      "Bash(PYTHONPATH=src:. .venv/bin/python3:*)",
+      "Bash(.venv/bin/python3:*)",
+      "Bash(.venv/bin/yt-dlp:*)",
+      "Bash(aws s3 ls:*)",
+      "Bash(aws s3api head-object:*)",
+      "Bash(aws codepipeline get-pipeline:*)",
+      "Bash(aws codepipeline list-pipeline-executions:*)",
+      "Bash(aws codepipeline list-action-executions:*)",
+      "Bash(aws codebuild batch-get-projects:*)",
+      "Bash(aws codebuild list-builds-for-project:*)",
+      "Bash(aws codebuild batch-get-builds:*)",
+      "Bash(aws lambda get-function-configuration:*)",
+      "Bash(aws logs tail:*)",
+      "Bash(lsof:*)",
+      "Bash(crontab -l)",
+      "Bash(date:*)"
+    ]
+  }
+}
