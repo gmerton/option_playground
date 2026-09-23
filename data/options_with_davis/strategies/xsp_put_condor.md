@@ -116,7 +116,7 @@ He also describes the mirror-image **call condor** for a bullish tilt. Same logi
 
 ## Backtest (2026-08-08) — claim refuted
 
-`run_davis_condor_study.py` · output `davis_condor_study.csv` · XSP 2018-01-01 → 2026-02-20,
+`run_davis_condor_study.py` · output `../../../studies/davis_condor_study.csv` · XSP 2018-01-01 → 2026-02-20,
 Friday entry and expiry, held to expiry, no management. Settlement from put-call parity on the
 expiry chain. Condor vs a put credit spread on the **same short strike**, long strike chosen from
 the live chain so max loss matches — Davis's own comparison method. Priced at mid and again with
