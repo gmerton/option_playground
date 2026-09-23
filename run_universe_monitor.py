@@ -13,7 +13,10 @@ Detectors: long = UR (undercut & reclaim), ORB9 (opening-range break above the d
 through the 15-session pivot or a hand level -- data/watchlist/levels.csv `ticker,level,note` + alerts_latest.csv
 buy-stop rows -- above VWAP on 1.1x+ volume pace; tagged PRECISION for the validated Adhikary cohort);
 short = BIR (bounce into a declining MA, first violation of higher lows; short universe only),
-FBO (failed breakout of the prior-day high / opening range; every name -- also the exit tell for a long).
+FBO (failed breakout of the prior-day high / opening range). ⛔ RETIRED AS A SHORT ENTRY 2026-09-23 --
+    -0.148%/trade on 3,175 curated alerts, WORSE than control in both halves, no stop floor helps
+    (data/studies/alert_triggers_2026-09-23.md). It now fires only on LONG-universe names, where it
+    serves its other role as the exit tell for a long -- a role that study did not measure.
 Short universe = data/watchlist/universe_short.txt + long-universe names below their 9 and 21 EMA.
 Delivery: terminal + data/watchlist/logs/universe_alerts_<date>.log (macOS pop-ups removed 2026-09-10),
 plus the journal website: data/journal/alerts/<date>.json mirrored to s3://gmerton-trade-journal/alerts/
@@ -302,6 +305,14 @@ class Engine:
             if name == "bir" and not is_short_name:
                 continue
             if name in ("ur", "orb9", "lvl") and is_short_name and sym not in self.long_syms:
+                continue
+            # ⛔ FBO RETIRED AS A SHORT ENTRY (2026-09-23, alert_triggers_2026-09-23.md). Scored as a
+            # short trade on 3,175 curated alerts it earned -0.148%/trade (t -3.80) and was WORSE than
+            # the name control by -0.126pp in both halves; no stop floor helps (0.6 ADR made it -0.163%).
+            # It keeps its SECOND role, which that study never measured: on a long-universe name a failed
+            # breakout is the exit tell. So it now fires ONLY where that role applies, never on a
+            # short-only name where it would be an entry.
+            if name == "fbo" and is_short_name and sym not in self.long_syms:
                 continue
             a = det(book, ctx, st, b, self.idx)
             if a is not None:
