@@ -165,14 +165,106 @@ def repair(d: str, apply: bool) -> dict:
     return dict(day=d, status="repaired" if ok else "MISMATCH", before=n_total, after=after)
 
 
+
+# ── greek-rounding collapse ───────────────────────────────────────────────────────────────────────────
+ECON = ["bid", "ask", "last", "open_interest", "volume"]
+# Relaxed guard: `last` may differ. Justified 2026-09-23 on 2025-07-03 — of 449,063 groups where ONLY
+# `last` differed, 99.7% had the gap INSIDE the quoted bid-ask spread and 97.2% had both variants inside
+# the quote. Every engine prices at real fills on bid/ask, never `last`, and the gap is smaller than the
+# modelled transaction cost (25% of bid/ask + commission), so the choice cannot move any result.
+ECON_QUOTE = ["bid", "ask", "open_interest", "volume"]
+
+
+def collapse_greeks(d: str, apply: bool, econ: list[str] | None = None) -> dict:
+    """Keep ONE row per contract, but ONLY where every economic field is identical across the variants.
+
+    ⚠ THIS IS NOT THE LOSSLESS OPERATION. `repair()` removes byte-identical rows and can never choose.
+    This one DOES choose a row — it is authorised only for groups where bid, ask, last, open_interest and
+    volume all agree, so the choice cannot change any P&L; what is discarded is greek precision at
+    trailing decimals. Groups where ANY economic field differs are left completely alone.
+
+    Authorised by the owner 2026-09-23 for 2025-07-03: "pick one row per contract, I'm indifferent to
+    which if it's just a difference in rounding of greeks."
+    """
+    econ = econ or ECON
+    print(f"\n{'='*92}\n{d}  —  COLLAPSE (guard: {'+'.join(econ)} must all agree)\n{'='*92}")
+    t0 = time.time()
+    df = read_day(d).reset_index(drop=True)
+    n_total = len(df)
+
+    # a contract group is collapsible iff it carries exactly ONE distinct (KEY + economic) tuple
+    h = pd.util.hash_pandas_object(df[KEY + econ], index=False)
+    nvar = h.groupby([df[k] for k in KEY]).transform("nunique")
+    collapsible = nvar.eq(1)
+    dup_in_group = df.duplicated(subset=KEY, keep="first")
+    drop = collapsible & dup_in_group
+    keep = ~drop
+
+    n_groups_collapsed = int(df.loc[collapsible, KEY].drop_duplicates().shape[0])
+    n_groups_left = int(df.loc[~collapsible, KEY].drop_duplicates().shape[0])
+    print(f"  rows {n_total:>10,}   [{time.time()-t0:.0f}s]")
+    print(f"  collapsible groups (economics identical, greeks differ): {n_groups_collapsed:>9,}")
+    print(f"  groups LEFT ALONE (an economic field differs):           {n_groups_left:>9,}")
+    print(f"  → {int(drop.sum()):,} rows would be removed ({100*drop.mean():.2f}%), {int(keep.sum()):,} kept")
+
+    # verification: every row we drop must belong to a group whose economics are genuinely constant
+    bad = df.loc[drop].groupby(KEY, dropna=False)[econ].nunique(dropna=False).gt(1).any(axis=1).sum()
+    if bad:
+        print(f"  ⛔ ABORT — {bad} collapsed groups do NOT have constant economics (hash collision?).")
+        return dict(day=d, status="aborted")
+    print(f"  ✓ verified: every collapsed group has identical {'/'.join(econ)}")
+
+    if not apply:
+        print("  (dry run — pass --apply to write)")
+        return dict(day=d, status="dry_run", removed=int(drop.sum()))
+
+    clean = df.loc[keep, COLS]
+    for c in ("open_interest", "volume"):
+        clean[c] = pd.to_numeric(clean[c], errors="coerce").astype("Int64")
+    BACKUP.mkdir(parents=True, exist_ok=True)
+    bak = BACKUP / f"{d}_greekcollapse.parquet"
+    clean.to_parquet(bak, index=False)
+    print(f"  backup written: {bak} ({bak.stat().st_size/1e6:.0f} MB)")
+
+    tmp = f"tmp_gc_{uuid.uuid4().hex}"
+    tmp_path = TMP_S3_PREFIX.rstrip("/") + f"/{tmp}/"
+    _ensure_glue_db(DB)
+    wr.s3.to_parquet(df=clean, path=tmp_path, dataset=True, database=DB, table=tmp,
+                     compression="snappy", mode="overwrite", dtype=GLUE_DTYPE)
+    try:
+        print("  deleting the day ...")
+        run_ddl(f"DELETE FROM \"{DB}\".\"{TABLE}\" WHERE trade_date = DATE '{d}'")
+        print("  re-inserting ...")
+        run_ddl(f'INSERT INTO "{DB}"."{TABLE}" SELECT {", ".join(COLS)} FROM "{GLUE_CATALOG}"."{DB}"."{tmp}"')
+    finally:
+        wr.catalog.delete_table_if_exists(database=DB, table=tmp)
+        wr.s3.delete_objects(tmp_path)
+
+    after = count_day(d)
+    ok = after == int(keep.sum())
+    print(f"  VERIFY: {after:,} rows after (expected {int(keep.sum()):,}) — {'✓ OK' if ok else '✗ MISMATCH'}")
+    if not ok:
+        print(f"  ⚠ RESTORE FROM {bak}")
+    return dict(day=d, status="collapsed" if ok else "MISMATCH", before=n_total, after=after)
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--date", action="append", help="repeatable; defaults to the 8 clean days")
     ap.add_argument("--apply", action="store_true", help="actually write (default is a dry run)")
+    ap.add_argument("--relax-last", action="store_true",
+                    help="with --collapse-greeks: allow `last` to differ (bid/ask/OI/volume must still agree)")
+    ap.add_argument("--collapse-greeks", action="store_true",
+                    help="keep one row per contract where ONLY the greeks differ (chooses a row; see collapse_greeks)")
     a = ap.parse_args()
     days = a.date or CLEAN_DAYS
-    print(f"{'APPLY' if a.apply else 'DRY RUN'} — {len(days)} day(s)")
-    out = [repair(d, a.apply) for d in days]
+    print(f"{'APPLY' if a.apply else 'DRY RUN'} — {len(days)} day(s)"
+          f"{' — GREEK-ROUNDING COLLAPSE' if a.collapse_greeks else ''}")
+    if a.collapse_greeks:
+        econ = ECON_QUOTE if a.relax_last else ECON
+        out = [collapse_greeks(d, a.apply, econ) for d in days]
+    else:
+        out = [repair(d, a.apply) for d in days]
     print(f"\n{'='*92}\nSUMMARY")
     print(pd.DataFrame(out).to_string(index=False))
 

@@ -1,0 +1,19 @@
+APPLY — 1 day(s) — GREEK-ROUNDING COLLAPSE
+
+============================================================================================
+2025-07-03  —  GREEK-ROUNDING COLLAPSE
+============================================================================================
+  rows  2,606,336   [29s]
+  collapsible groups (economics identical, greeks differ): 1,056,714
+  groups LEFT ALONE (an economic field differs):             522,264
+  → 498,798 rows would be removed (19.14%), 2,107,538 kept
+  ✓ verified: every collapsed group has identical bid/ask/last/open_interest/volume
+  backup written: data/backups/v3_repair/2025-07-03_greekcollapse.parquet (47 MB)
+  deleting the day ...
+  re-inserting ...
+  VERIFY: 2,107,538 rows after (expected 2,107,538) — ✓ OK
+
+============================================================================================
+SUMMARY
+       day    status  before   after
+2025-07-03 collapsed 2606336 2107538
