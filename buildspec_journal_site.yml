@@ -60,6 +60,19 @@ phases:
 
   post_build:
     commands:
+      # ⛔ GUARD: never publish the shell unless its data half is already on the bucket.
+      # A split page needs BOTH objects, and CI only ever publishes one — the .json comes from the 08:00
+      # journal job / deploy_trade_journal.sh. On 2026-09-23 the shell shipped before the data had ever
+      # been uploaded and the live page fetched a 404. Existence is the right check: the 08:00 job keeps
+      # it fresh, and a stale-but-present file still renders.
+      - |
+        if ! aws s3api head-object --bucket "$BUCKET" --key trade_reviews_data.json >/dev/null 2>&1; then
+          echo "!! s3://$BUCKET/trade_reviews_data.json is MISSING."
+          echo "!! Publishing the shell now would serve a page that fetches a 404."
+          echo "!! Fix: run ./deploy_trade_journal.sh once locally to publish the data half, then retry."
+          exit 1
+        fi
+        echo "data half present on the bucket — safe to publish the shell"
       # Explicit single-object copy. charset=utf-8 is required: S3 serves bare text/html and the browser
       # then guesses Windows-1252, which turns en dashes into mojibake (seen 2026-09-14).
       - >
