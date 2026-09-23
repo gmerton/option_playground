@@ -734,7 +734,9 @@ def render_summary_page(rows: list[dict]) -> str:
                 _stat_cell("Combined total", fmt_pnl(combined)),
                 _stat_cell("If held to expiry (expired, closed)", (f'{fmt_pnl(st["hold_total"])} vs {fmt_pnl(st["hold_realized"])} realized, n={st["hold_n"]}') if st.get("hold_total") is not None else "—"),
             ]
-            srows_sorted = sorted(srows, key=lambda r: r["entryDate"] or "")
+            # Pre-sort to match the grid's default (exit date DESC, blanks last) so the rows do not visibly
+            # re-shuffle when SORT_JS applies it on load. See th(default_sort=...) in lib.journal.sortable.
+            srows_sorted = sorted(srows, key=lambda r: (r["exitDate"] or "", r["entryDate"] or ""), reverse=True)
             if srows_sorted:
                 trow_html = "".join(
                     f'<tr onclick="location.href=\'trades/{r["detailFile"]}\'">'
@@ -751,7 +753,7 @@ def render_summary_page(rows: list[dict]) -> str:
                     for r in srows_sorted
                 )
                 table_html = f"""<table class="grid">
-  <thead><tr>{th("Ticker")}{th("Entry date", True)}{th("Exit date", True)}{th("Vehicle")}{th("Entry grade")}{th("Exit grade")}{th("P&amp;L", True)}{th("Return %", True)}{th("Held to expiry", True)}</tr></thead>
+  <thead><tr>{th("Ticker")}{th("Entry date", True)}{th("Exit date", True, default_sort="desc")}{th("Vehicle")}{th("Entry grade")}{th("Exit grade")}{th("P&amp;L", True)}{th("Return %", True)}{th("Held to expiry", True)}</tr></thead>
   <tbody>{trow_html}</tbody>
 </table>"""
             else:
@@ -821,6 +823,7 @@ def _render_top_bottom(rows: list[dict], n: int = 10) -> str:
             return f'<div class="empty">{empty_msg}</div>'
         rows_html = "".join(_pnl_trade_row(r) for r in trades)
         return f"""<table class="grid">
+  <!-- NO default_sort here: this grid is the Top/bottom trades RANKING. Winners are pre-sorted P&L descending and losers ascending, so a single exit-date default would destroy the ranking the grid exists to show. Browse grids sort by exit date; ranking grids keep their rank order. -->
   <thead><tr>{th("Ticker")}{th("Entry date", True)}{th("Exit date", True)}{th("Vehicle")}{th("Entry grade")}{th("P&amp;L", True)}</tr></thead>
   <tbody>{rows_html}</tbody>
 </table>"""
@@ -921,7 +924,10 @@ INDEX_TEMPLATE = """<!doctype html>
 // deploy on a commit, while the 08:00 journal job rewrites only the .json. Changing a column no longer needs
 // the database, the generator, or a local script. Keep it that way -- do not inline data back into the HTML.
 let DATA = [], STRATEGIES = [];
-let sortKey = "entryDate", sortDir = 1, activeTag = null;
+// Default sort: exit date DESCENDING (most recently closed first), the journal-wide convention set
+// 2026-09-23. The comparator coerces null to '', so still-open trades land at the bottom here, matching
+// the "blanks last" rule the shared grids in lib.journal.sortable use.
+let sortKey = "exitDate", sortDir = -1, activeTag = null;
 // URL filters from the Performance page cards: ?vehicle=<bucket> or ?strategy=<key> (same rules as the summary page)
 const _params = new URLSearchParams(location.search);
 const urlVehicle = _params.get('vehicle'), urlStrategy = _params.get('strategy');
