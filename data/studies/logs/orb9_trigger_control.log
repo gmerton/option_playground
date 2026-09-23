@@ -1,0 +1,23 @@
+curated ORB9 alerts: 1,411 over 152 dates, 87 names
+scored 1,411, skipped 0
+
+========================================================================================================
+ORB9 trigger vs a random minute in its OWN window — curated names, 0.6 ADR stop
+========================================================================================================
+
+  FULL  n=1,411
+    SIGNAL +0.351%   POST(random minute) +0.775%   EDGE -0.425pp   date-clustered t -8.50
+    XNAME(other curated name, same minute) +1.029%   EDGE -0.687pp   t -6.01
+
+  half A  n=762
+    SIGNAL +0.295%   POST(random minute) +0.735%   EDGE -0.440pp   date-clustered t -5.80
+    XNAME(other curated name, same minute) +1.052%   EDGE -0.753pp   t -8.36
+
+  half B  n=649
+    SIGNAL +0.416%   POST(random minute) +0.823%   EDGE -0.407pp   date-clustered t -6.26
+    XNAME(other curated name, same minute) +1.002%   EDGE -0.609pp   t -3.29
+
+  halves agree: True
+  PRE-REGISTERED PASS: NO
+
+wrote data/studies/orb9_trigger_control_2026-09-23.csv

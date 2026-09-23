@@ -132,6 +132,41 @@ These are hard-won; violating them has produced wrong results more than once.
 - **Pull all results — never truncate data the owner will act on.**
 - **Creator patterns have no fixed timeframe.** Bars may be 1-minute or daily; normalise to ATR/scale-free
   before testing. A daily-bar null does **not** refute an intraday pattern.
+### ⛔ Verify before asserting — the 2026-09-23 error set
+
+Every one of these was caught within minutes of being stated, which means the checking was possible and
+simply ran *after* the claim. The order is the fix. Each rule carries the case that produced it.
+
+- **A summary is not a source. Verify at the primary artefact before a claim drives a decision.**
+  TEST_INDEX rows, HANDOFF bullets, queue items and *this file* are summaries and they carry errors.
+  §286 read "precision-tier OOS … n = 17"; the 17 belongs to the archetype-C **fade**, the tier's n is
+  ~1,824 — and its requested 2023+2025 window was *inside* the fitting sample, so the queued test was not
+  a test. CLAUDE.md itself stated the stop rule backwards (see `stop_definitions.md`).
+- **Check the distribution before characterising a population.** One instance is not a rate.
+  "FBO emits sub-0.5-ADR stops" came from a single 0.48 observation; the median is **0.50** with only 16%
+  under 0.4. "53% of 2025-07-03 groups have conflicting prices" came from a 5-ticker sample that happened
+  to include SPY, one of the worst names; the true figure is **7.1%**.
+- **Name what the control varies — it is usually not what you want.** The 2026-09-19 `xname` control
+  varies the **name**, so its +0.60R measured breakout-vs-random-*stock*, not the precision filter; read
+  as validating the tier, it was wrong. ORB9's name-split control had the same defect: moving the names
+  when the question was the **trigger**. Holding the name-day fixed and moving only the entry minute
+  flipped ORB9 from "+0.352%, t 4.21" to **−0.425pp vs a random minute, t −8.50**.
+- **⭐ A clean result is a bug until proven otherwise.** Almost everything here fails; a large, monotone,
+  high-t finding is an artefact until the alternative is excluded, and **outcome conditioning is the first
+  thing to check**. The UR band sweep returned a perfect monotone gradient at **t 27.8** — 84% of its
+  entries sat exactly on the dip low of a reclaim the sample guaranteed would succeed. Same shape as the
+  retracted exhaustion fade.
+- **Never evaluate an alternative threshold on a sample selected by the original threshold.** The alerts
+  existed *because* the live band fired; any other band is then scored only where the original succeeded.
+- **Do not emit a number in actionable form unless it is actionable.** A column of levels invites action
+  whatever the footnote says: a "tight stop" table built from today's rolling session low (the concept is
+  the **entry bar's** low) drove three live exits, two of them winners, with 12 of its 17 rows already
+  flagged "TOO TIGHT" in the same message.
+- **Judge stop-width changes in PERCENT, not R.** `R = return ÷ risk`, so moving the stop moves the
+  denominator. ORB9's base R of 0.431 was inflated by near-zero stops; on % return the floor nearly
+  doubled the result. Widening flatters R in one direction and penalises it in the other — neither is the
+  trade getting better.
+
 - **Be pragmatic about data unevenness** — note the caveat and continue; don't halt on it.
 
 ## Working rules
