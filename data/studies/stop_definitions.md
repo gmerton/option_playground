@@ -13,7 +13,7 @@ grading criterion, and one does not exist in this repo at all.
 
 | | **Disaster stop** | **Tight stop** |
 |---|---|---|
-| width | **1.0 ADR** below the current close | the **session low** (or entry-day low) — typically 0.4–0.8 ADR |
+| width | **1.0 ADR** below the current close | the **ENTRY BAR's low**, fixed at entry — typically 0.4–0.8 ADR |
 | execution | ⭐ **RESTING, EXECUTED INTRADAY** | ⭐ **JUDGED ON THE CLOSE** |
 | what it is for | the crash | ordinary trade management |
 | how often it fires | **4–6% of days** | often |
@@ -36,6 +36,26 @@ resting stop ≈ 106.22 = **0.75 ADR — the width was correct**, only $0.39 tig
 **106.69** that would have kept the position alive. Cost ≈ **$11.56 plus the position**.
 
 The width was never the problem. Resting it was.
+
+---
+
+## ⛔ THE TIGHT STOP IS NOT A TRAILING LEVEL — READ THIS BEFORE QUOTING ONE
+
+The tight stop is the **entry bar's low, fixed when the trade is opened.** It is NOT today's session low,
+and for a position held more than a day or two it is usually stale and far away. Its real job is
+**retrospective**: it is how the reviewer grades whether an entry was well-constructed.
+
+⚠ **Harm actually caused, 2026-09-23.** A "tight stop" table was produced for 17 open positions using
+**today's rolling session low**. That number is self-referential — the level IS the low, so it can only be
+touched by the stock making a new low, at which point the level moves. It printed at 0.01–0.02 ADR on
+several names and **drove three unnecessary exits, two of them winners** (NBIS +1.13 ADR above basis,
+SNDK +0.87 ADR). Twelve of the seventeen rows were flagged "TOO TIGHT" in the same table and that did not
+prevent the harm, because a column of levels invites action whatever the footnote says.
+
+**The rule, with no ambiguity: for an OPEN position there is exactly ONE stop to quote — the 1-ADR
+disaster stop, resting with the broker.** Do not produce a per-position "tight stop" column for open
+positions at all. Quote the entry-bar low only when (a) grading a completed trade, or (b) sizing a NEW
+entry on its entry day.
 
 ---
 
@@ -86,9 +106,17 @@ A 0.60 ADR floor is adopted **for ORB9 only**; UR and FBO still emit sub-0.5-ADR
 
 ## How to answer "what is my stop?"
 
-Always give **both** live stops with their execution mode attached, never one number:
+**For an OPEN position — give ONE number, the disaster stop, and nothing else:**
 
-> 1-ADR **disaster stop 70.81** — rest this with the broker; it fires ~5% of days and its job is the crash.
-> Tight stop at the session low **75.34** — judged on the **close**; do not rest it.
+> **TXG disaster stop 70.74** — rest this with the broker. It fires ~5% of days; its job is the crash.
 
-And state `stop/ADR` for the tight one. If it is under ~0.5 ADR, say so and give the resized share count.
+Do **not** add a tight-stop column. See the ⛔ section above: doing exactly that on 2026-09-23 caused
+three unnecessary exits.
+
+**For a NEW entry being sized, on its entry day** — then the entry-bar low is live and both numbers apply:
+
+> Entry 30.13, entry-bar low **29.53 = 0.45 ADR — too tight.** Widen to the 1-ADR stop at **28.80** and
+> cut size to `shares × (0.45 ÷ 1.0)` to hold dollar risk constant.
+
+**For a COMPLETED trade being graded** — the entry-bar low is the benchmark: was it ≤ 0.5 ADR, was it
+rested intraday when it should have been judged on the close, did it fill at the post-entry low?
