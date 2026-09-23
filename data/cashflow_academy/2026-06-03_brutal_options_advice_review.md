@@ -24,7 +24,7 @@ shown.
 | 4 | Buying into earnings buys priced-in vol and eats the crush [10:32–13:55] | Pre-earnings ramp: front straddle loses **even at mid** (−3.4/−6.9/−14.3%, 8/8 years negative), with theta > vega. Earnings vol premium: real at mid (+0.601%), so the average straddle buyer overpays | **AGREE for the buyer.** ⚠ The implied remedy, "take profits from the crush as a seller" [13:55], **dies on the spread**: −0.428% at the bid, 7/8 years negative, crossing = 171% of gross. Only PARKED on the top ~40% by volume (+0.284%, t 1.1). The richest events are the worst sells at the bid |
 | 4a | NVDA example: "priced to move well over 10%", calls −$6 / puts −$2.50 [12:15–13:22] | Stock is down 1.5% in the example, so the calls also lost **delta**, not just vega. Part of the asymmetry he shows as "crush" is direction. The ">10%" implied move isn't shown on screen, and our stored IV ends mid-May 2026, so we can't check it | **MUDDLED.** Vega and delta are conflated in the one live example |
 | 5 | Theta is steepest near expiry: sell short-dated [16:05] | 10-DTE single-name selling = **FAIL** net of costs (above). BCI covered calls / CSPs vs stock at the same delta = **FAIL**. That's the video his CTA sends viewers to next | **CONTRADICTED** outside liquid index products |
-| 5a | If buying, buy ~3 months out and exit with ~2 left [16:05] | Mechanically consistent with the ramp finding (theta > vega on the front tenor). **Not tested here** as a rule. Our long-call benchmark (always-call +9.5%) doesn't split by tenor/exit window | **UNTESTED — plausible, cheap to test** |
+| 5a | If buying, buy ~3 months out and exit with ~2 left [16:05] | Mechanically consistent with the ramp finding (theta > vega on the front tenor). **Not tested here** as a rule. Our long-call benchmark (always-call +9.5%) doesn't split by tenor/exit window | **TESTED 2026-09-23: NULL at house fills (A−C −0.05% of spot, t −1.09), INVERTED at the full cross (t −3.75).** The mid tenor is the worst arm; tenors trade gamma for theta at a fair price → [`tenor_window_calls_2026-09-23.md`](../studies/tenor_window_calls_2026-09-23.md) |
 
 ## What's wrong with it
 
@@ -47,9 +47,10 @@ The mechanics are correct and the risk hygiene is sound, which is enough to rule
 thesis, sellers beat buyers, is contradicted by our ledger in its general form, and the funnel points to a
 FAIL.
 
-## Queued
+## Follow-up test (2026-09-23)
 
-- **Tenor-window long call**: buy ~90 DTE, exit at ~60, vs buy ~60 exit ~30 vs buy ~30 hold to expiry,
-  same names/dates, real fills, `call_spread_study`/long-call engine. Settles claim 5a. Low prior on an
-  *edge*; the question is whether the window reduces the theta bleed enough to beat the always-call
-  benchmark after the wider spread on longer tenors. ½ day. **Not run.**
+**Tenor-window long call: NULL · INVERTED at the full cross.** 50,564 paired ATM calls, same entry and exit dates.
+At house fills, buy-90/sell-at-63 vs buy-28/hold is −0.049% of spot (t −1.09). At the full cross the beginner arm
+wins (t −3.75). The claim's middle arm is the worst (B−C t −3.78). The theta saving is real when the stock goes
+nowhere, and it's paid back as lost gamma on big moves. Score unchanged at 2/5: the one concrete rule in the video
+doesn't survive. [`tenor_window_calls_2026-09-23.md`](../studies/tenor_window_calls_2026-09-23.md)
