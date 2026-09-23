@@ -1,5 +1,7 @@
 # UVXY Combined Strategy — Trading Playbook
 
+> ⛔ **SUPERSEDED (banner added 2026-09-23).** Pre-cost sweep from 2026-03. The costed, significance-tested re-runs are in TEST_INDEX §1 (`run_uvxy_significance.py`, 2026-09-22) and the name sits in **Tier C**. Trust those, not the numbers below.
+
 > ⛔ **2026-09-22: net-NEGATIVE after costs** (`run_uvxy_significance.py`): the +5.60% below is at mid. With the house cost model the combined trade is **−3.46%/trade, t −2.65, 1 of 9 years positive**; the call spread pays ~13% of its max loss in costs (−7.4% net). The naked put leg alone is +4.2% net, t 1.8 — not certified. Screener: Tier U (token only). Do not fund.
 
 **Last updated:** 2026-08-06

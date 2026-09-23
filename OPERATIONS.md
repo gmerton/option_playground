@@ -122,6 +122,13 @@ Same five steps as the automated morning chain. **Do not run it for today's sess
 | `AWS_PROFILE=clarinut-gmerton ./sync_journal_cache.sh push` (or `pull`) | backs up `data/cache/journal_{daily,intraday}/` ↔ `s3://gmerton-trade-journal-cache`. The parquet cache is git-ignored — **this bucket is its only copy.** | A lost/rebuilt checkout means a cold-cache rebuild. Run occasionally. |
 | CodeBuild `buildspec.yml` | zips `src/` → `options_toolkit_prod` Lambda (deployed, no schedule). | — |
 
+**`run_index_audit.py` — run after any study lands.** Checks TEST_INDEX against the study docs on disk:
+orphans (a doc with no row) and broken links (a row pointing at a missing file). Exit code 1 on either, so
+it can gate a commit. Added 2026-09-23 after three same-day instances: the Davis XSP condor was fully
+backtested with no row, §286 carried another study's `n`, and that afternoon's own alert study shipped
+unindexed. Docs closed by a status banner (SUPERSEDED/RETIRED/WITHDRAWN) count as a terminal state, not
+an orphan.
+
 **`run_eod_scan.sh` — SUPERSEDED, do not use.** It is a cron entrypoint for `run_preferred_breakouts.py`, but `crontab -l` shows **no crontab installed**, so it has never fired on a schedule. The same scan now runs in the cloud as the `preferred-breakout-eod` Lambda, and `daily_desk.sh` step 3 runs it interactively. Per the house rule, check `s3://gmerton-stock-data/breakouts/eod_latest.txt` before scanning locally at all.
 
 ---

@@ -1,5 +1,7 @@
 # UVXY Reverse Wheel — Tested and REJECTED
 
+> ⛔ **SUPERSEDED (banner added 2026-09-23).** Pre-cost sweep from 2026-03. The costed, significance-tested re-runs are in TEST_INDEX §1 (`run_uvxy_significance.py`, 2026-09-22) and the name sits in **Tier C**. Trust those, not the numbers below.
+
 **Run date:** 2026-08-10
 **Verdict:** Rejected. Max drawdown exceeds total profit in every variant, including
 defined-risk versions. The existing bear-call-spread playbook dominates it on every axis.
