@@ -256,6 +256,11 @@ def run_intraday(name: str, pattern, *, controls: int = 3, split: str = "2026-06
         b = b[~b.index.duplicated(keep="first")].sort_index()
         if len(b) < 60 or not np.isfinite(a_pct):
             continue
+        # Running SESSION VWAP. ⚠ The cached `vwap` column is the vendor's PER-BAR VWAP (identical to
+        # `price` on every row), NOT this. Reading it as session VWAP made a 2026-09-23 study's
+        # "pullback to VWAP" fire on 100% of signals. Same expression as `lib.journal.exit_kind.
+        # session_vwap()`, duplicated deliberately: importing that module here would pull TradierClient
+        # and aiohttp into a harness 20+ study scripts import.
         cv = (b.vwap * b.volume).cumsum() / b.volume.cumsum().replace(0, np.nan)
         for s in pattern(sym, day, b, a_pct):
             i0 = int(b.index.searchsorted(pd.Timestamp(s["t"]), side="right"))

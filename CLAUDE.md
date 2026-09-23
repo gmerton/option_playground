@@ -250,6 +250,13 @@ Discovered the expensive way. Each one looks like a different problem than it is
   **widest-spread** row. That is the only place in the table where a price was chosen; the choice is
   deliberately pessimistic (lower bid, higher ask), so results on that date can only be conservative.
   Tooling: `repair_v3_duplicate_days.py` (`--collapse-greeks` / `--relax-last` / `--unique`).
+- **The cached 1-min `vwap` column is PER-BAR, not session VWAP.** In
+  `data/cache/intraday_1min/*.parquet` it is byte-identical to `price` on every row — the vendor's
+  per-minute VWAP, which is the correct primitive. ⚠ Read as session VWAP it silently ruins any
+  "price pulled back to VWAP" test: `close <= vwap` is near a coin flip each minute, so such a
+  condition fires on ~100% of signals (2026-09-23, `orb_retest_vs_break_2026-09-23.md`). Use
+  **`lib.journal.exit_kind.session_vwap(bars)`** — `cumsum(vwap × volume) / cumsum(volume)`. The
+  live detectors are unaffected (`lib/alerts/bars.py` computes its own from the stream).
 - **MySQL is bound to `127.0.0.1`.** Nothing in the cloud can reach it, which is why the journal site's
   presentation had to be split from its data before CI could deploy it.
 

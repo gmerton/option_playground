@@ -15,6 +15,7 @@ import asyncio
 import os
 from datetime import date
 
+import numpy as np
 import pandas as pd
 
 from pathlib import Path
@@ -24,6 +25,21 @@ from lib.tradier.get_daily_history import get_intraday_bars
 
 NEAR_WORST_ADR = 0.15
 CACHE = Path(__file__).resolve().parents[3] / "data" / "cache" / "intraday_1min"
+
+
+def session_vwap(bars: pd.DataFrame) -> pd.Series:
+    """Running session VWAP from cached 1-min bars.
+
+    ⚠ USE THIS. The cached `vwap` column is the vendor's PER-BAR VWAP — byte-identical to `price` on
+    every row — NOT the running session VWAP. Comparing `close <= bars.vwap` is therefore close to a coin
+    flip each minute: a study that read it as session VWAP had its "pullback to VWAP" fire on **100.0%**
+    of signals (2026-09-23, `orb_retest_vs_break_2026-09-23.md`).
+
+    The per-bar value is the correct primitive — session VWAP derives from it, so the cache is right and
+    only the reading was wrong. Per-bar vwap x volume is that minute's price-volume sum, so the running
+    VWAP is the cumulative ratio below. Same expression `lib/studies/pattern_test.py` has always used.
+    """
+    return (bars.vwap * bars.volume).cumsum() / bars.volume.cumsum().replace(0, np.nan)
 
 
 async def bars_1min(sym: str, day: date, client: TradierClient) -> pd.DataFrame | None:
