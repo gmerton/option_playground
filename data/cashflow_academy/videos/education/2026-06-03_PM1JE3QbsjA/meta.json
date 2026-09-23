@@ -1,0 +1,23 @@
+{
+  "video_id": "PM1JE3QbsjA",
+  "url": "https://www.youtube.com/watch?v=PM1JE3QbsjA",
+  "title": "25 Years Of Brutal Options Trading Advice In 17 Minutes",
+  "channel": "The Cashflow Academy",
+  "presenter": "Corey Halliday",
+  "upload_date": "2026-06-03",
+  "duration": "17:28",
+  "views_at_review": "215,354",
+  "type": "education",
+  "instrument": "single-name options (NVDA used as the worked example), no trade taken",
+  "summary": "Five 'brutal truths' for beginners: (1) buying options without education puts you at a strategic disadvantage vs sellers; (2) don't buy far-OTM 'lottery ticket' calls; (3) size on max loss and its probability, never on reward; (4) buying into earnings pays for priced-in vol and eats the crush (live NVDA chain the day after its print); (5) theta is steepest near expiry, so sell short-dated and, if buying, buy ~3 months out and exit with ~2 left. Closes with a funnel to the channel's covered-call video.",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en-orig",
+    "format": "timestamped_text_mm_ss_30s_paragraphs",
+    "tool": "yt-dlp --sub-langs en.* (no JS runtime; captions still fetched)",
+    "quality_note": "Clean auto captions; on-screen chain values are narrated, not visible to us."
+  },
+  "review_file": "../../../2026-06-03_brutal_options_advice_review.md",
+  "score": "2/5"
+}
