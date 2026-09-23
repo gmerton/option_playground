@@ -1,11 +1,12 @@
 # Daily routine — what to run, what to act on
 
-*2026-09-08. Turns the September studies into a fixed sequence. `daily_desk.sh` runs steps 1–5 (incl. 1b open book) and writes to `data/watchlist/`. Every number a scanner prints is descriptive of the current tape; the validations say which parts carry expectancy.*
+*2026-09-08. Turns the September studies into a fixed sequence. `daily_desk.sh` runs steps 0–5 (incl. 1b open book) and writes to `data/watchlist/`. Every number a scanner prints is descriptive of the current tape; the validations say which parts carry expectancy.*
 
 ## Evening (15:45 ET for a live read, or after the close)
 
 | step | command | act on | ignore |
 |---|---|---|---|
+| 0 GEX fly paper trade | `run_gex_fly_paper.py --close` (from 15:30 ET; idempotent) → `data/paper/gex_fly_signals.csv`, `gex_fly_trades.csv` | nothing tonight — it settles due flies and logs a paper fly when SPY gamma is positive; the forward sample is reviewed after ~6 months / ~100 flies ([gex_spy_ironfly_2026-09-21.md](gex_spy_ironfly_2026-09-21.md)). A skipped evening is a hole in that sample | the day's single fly result |
 | 1 Regime | `run_trailing_retro.py` | the state line (SPY trend × breadth) — it selects which row of each study's conditional table applies today | the trailing style spread and "what worked last 30 days" as forecasts (no persistence, `trailing_regime_validation.md`) |
 | **1b Open book** | `run_position_monitor.py --live` → `data/watchlist/positions_<date>.txt` | **anything tagged `<<< EXPIRES` (≤2 DTE)** — decide close/roll/let-expire tonight, not at the bell. The 7-DTE straddles and the bull put block are the evidenced pair: check both are still on and roughly balanced. `EXPIRED, reconcile` = a leg past expiry still showing open | the net P&L line as a performance read — it is a mark, not a decision, and the stock legs dominate it. ⚠ one (underlying, expiry) cell can merge two unrelated positions into one odd-looking row |
 | 2 Adhikary scan | `run_adhikary_scan.py` → `alerts_latest.csv` | **SETUP rows with `precision=YES`**: set a buy-stop at the pivot. A-block rows with `precision=YES` that broke today on a close in the upper half | B catalysts (no validated edge); the C block (daily bar is a continuation signal, never short it) |
@@ -29,7 +30,7 @@
 ## Monthly
 
 - `run_trade_lens.py --start --end --out …` — score the month against the Luk/Tito rules; compare to August (`august_2026_luk_tito_lens.md`).
-- `run_build_liquid_panel.py` — refresh the long-history panel, then re-run `run_regime_validation.py` and `run_adhikary_validation.py` so the conditional tables include the newest regime.
+- Re-run `run_regime_validation.py` and `run_adhikary_validation.py` so the conditional tables include the newest regime. (The long-history panel they read, `run_build_liquid_panel.py`, is refreshed nightly by `daily_desk.sh` step 2c — do not run it by hand.)
 - Re-read the conditional row for today's state before trusting any pooled number (feedback: weight current conditions).
 
 ## Open builds, in priority order

@@ -156,6 +156,6 @@ Verify each still isn't imported (`grep -rl "<name>" *.sh *.py src/`) before mov
 
 ## Reconciliation with the older docs
 
-- **`data/studies/daily_routine.md` — mostly current, two stale spots.** It is a *what to act on* doc (which signals to trust), not an ops map, and it is worth keeping for that. Stale: (a) it lists `run_build_liquid_panel.py` under **Monthly**, but `daily_desk.sh` has run it nightly since the clusters step was added; (b) it has no step 0 — `daily_desk.sh` now opens with the `run_gex_fly_paper.py --close` settle. Its Friday-dcal ON HOLD banner is correct.
-- **`CLAUDE.md` (repo root) is the biggest trap.** It documents `journal_day.sh`, `premarket_watchlist.py` (last touched 2026-03) and the March-era `lib.*` finders (`credit_spread_finder`, `leap_finder`, `fly_finder`, `sepa`, `ff`) as if they were the routine — and **never mentions `daily_desk.sh`, `start_alerts.sh`, or `morning_journal.sh`**, which are the three things that actually run every day. Treat its "Running Scripts" section as a historical list of library entry points, not as the routine.
+- **`data/studies/daily_routine.md`** — a *what to act on* doc (which signals to trust), not an ops map; it defers to this file for what runs. Reconciled 2026-09-23 (liquid-panel refresh moved to nightly, step 0 GEX settle added).
+- **`CLAUDE.md` (repo root)** — rewritten 2026-09-22 around the three orchestrators; it now points here for the full map and lists the March-era `lib.*` finders as ad-hoc entry points, not the routine. Consistent with this file.
 - **`/Users/gmerton/CLAUDE.md`** (workspace level) has nothing on this repo beyond pointing at it. Nothing to reconcile.
