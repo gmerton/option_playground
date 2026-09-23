@@ -4,12 +4,12 @@
 
 | date | grade | score | entry pts | stock entries A/B/C/F (rubric) | exec ok / alert entries | fills | stock round trips (invalidation / noise-stop / discretionary) | doubled | too-soon exits | NAV P&L |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-21 | **C** | 61 | 20/30 | 0/8/3/0 | 6/6 | 69 | 4 (1 / 3 / 0) | 2 | 3 | +3,180 |
+| 2026-09-22 | **D** | 53 | 15/30 | 0/8/3/0 | 4/6 | 71 | 6 (3 / 2 / 0) | 3 | 2 | +1,135 |
 
 ## By grade
 
 | grade | days | avg NAV P&L | avg fills | avg stock round trips |
 |---|---|---|---|---|
-| C | 1 | +3,180 | 69 | 4 |
+| D | 1 | +1,135 | 71 | 6 |
 
 Correlation between the process score and NAV day P&L: **+nan** over 1 days.

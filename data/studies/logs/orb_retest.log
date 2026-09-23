@@ -1,0 +1,34 @@
+curated ORB9 alerts: 1,411 over 152 dates
+
+scored 1,411, skipped 0
+
+
+==============================================================================================================
+RETEST = pullback to session VWAP
+==============================================================================================================
+  retest fires on 39.1% of breaks (551 of 1,411)
+  ⚠ on the 860 days it never comes back, the BREAK arm earned +1.264% — that is what waiting forfeits
+
+  (1) PAIRED — events where the retest fires (the TIMING question), n=551
+      rt_vwap +0.321%  vs BREAK         -1.076%   edge +1.396pp   t +14.98
+      rt_vwap +0.321%  vs RANDOM minute -0.003%   edge +0.324pp   t +4.45
+
+  (2) STRATEGY — full population, no-retest days scored as NO TRADE 0.0%, n=1,411
+      retest +0.125%  vs BREAK         +0.351%   edge -0.225pp   t -0.57   halves -0.162/-0.300
+      retest +0.125%  vs RANDOM minute +0.726%   edge -0.601pp   t -5.56   halves -0.599/-0.604  <<< no pass
+
+==============================================================================================================
+RETEST = pullback to the opening-range midpoint
+==============================================================================================================
+  retest fires on 14.4% of breaks (203 of 1,411)
+  ⚠ on the 1,208 days it never comes back, the BREAK arm earned +0.813% — that is what waiting forfeits
+
+  (1) PAIRED — events where the retest fires (the TIMING question), n=203
+      rt_mid +0.219%  vs BREAK         -2.403%   edge +2.622pp   t +10.88
+      rt_mid +0.219%  vs RANDOM minute -0.356%   edge +0.576pp   t +6.68
+
+  (2) STRATEGY — full population, no-retest days scored as NO TRADE 0.0%, n=1,411
+      retest +0.032%  vs BREAK         +0.351%   edge -0.319pp   t -0.62   halves -0.250/-0.400
+      retest +0.032%  vs RANDOM minute +0.726%   edge -0.695pp   t -4.92   halves -0.687/-0.704  <<< no pass
+
+wrote data/studies/orb_retest_vs_break_2026-09-23.csv
