@@ -13,6 +13,10 @@ Three separate instances turned up on 2026-09-23 alone:
 CHECKS
   1. ORPHANS   — a study doc with no reference anywhere in TEST_INDEX.
   2. BROKEN    — a TEST_INDEX link pointing at a file that does not exist.
+  2b. OVERSIZE — a TRACKED file above MAX_MB. Per-trade dumps rebuild from their committed script, so
+     they do not belong in git: ~148MB was staged this way on 2026-08-08 and a 59MB CSV again on
+     2026-09-23, the second swept in by `git add -A data/studies`. GitHub warns at 50MB and the repo
+     history is already ~950MB.
   3. Playbooks and `*_analysis_summary` are reported separately: §8 covers them generically and they
      carry their own status banners, so they are not expected to have individual rows.
   4. A doc whose head carries a STATUS BANNER (SUPERSEDED / RETIRED / WITHDRAWN / INVALIDATED) is
@@ -34,6 +38,7 @@ import sys
 S = pathlib.Path(__file__).resolve().parent / "data" / "studies"
 IDX = S / "TEST_INDEX.md"
 GENERIC = ("playbook", "analysis_summary")          # covered by §8, banner-managed
+MAX_MB = 20.0                                       # tracked-file size ceiling
 # Reference/process docs that are deliberately NOT test rows; they are linked from CLAUDE.md / HANDOFF.md.
 EXEMPT = {"TEST_INDEX.md", "stop_definitions.md", "daily_routine.md",
           "capital_allocation_framework.md", "pattern_ledger.md"}
@@ -76,7 +81,22 @@ def main() -> int:
     for b in broken:
         print(f"  {b}")
 
-    bad = len(orphans) + len(broken)
+    import subprocess
+    big = []
+    try:
+        files = subprocess.run(["git", "ls-files", "-z"], capture_output=True, text=True,
+                               cwd=S.parent.parent, check=True).stdout.split("\0")
+        for rel in filter(None, files):
+            fp = S.parent.parent / rel
+            if fp.is_file() and fp.stat().st_size > MAX_MB * 1e6:
+                big.append((fp.stat().st_size / 1e6, rel))
+    except Exception as e:  # noqa: BLE001 -- not a git checkout, or git missing; skip the check
+        print(f"\n(size check skipped: {type(e).__name__})")
+    print(f"\nOVERSIZE — tracked files over {MAX_MB:.0f}MB: {len(big)}")
+    for mb, rel in sorted(big, reverse=True):
+        print(f"  {mb:7.1f} MB  {rel}")
+
+    bad = len(orphans) + len(broken) + len(big)
     print(f"\n{'✓ clean' if not bad else f'⛔ {bad} issue(s)'}")
     return 1 if bad else 0
 

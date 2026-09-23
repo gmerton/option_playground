@@ -53,5 +53,10 @@ data/cache/skew_vertical/
 data/cache/shortdte_names/
 data/cache/call_grid/
 data/cache/intraday_hist/
+# Per-trade dumps under data/studies/ that are too big to version. Each rebuilds from its
+# committed script; the study's .md and *_summary_*.csv carry the result. 2026-09-23: a 59MB
+# tenor_window CSV was swept in by `git add -A data/studies` and GitHub rejected it at 50MB.
+# Check with `run_index_audit.py`, which now fails on any tracked file over 20MB.
+data/studies/tenor_window_calls_2026-09-23.csv
 data/studies/pullback_entry_events.csv
 data/journal/logs/
