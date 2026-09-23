@@ -1,0 +1,14 @@
+{
+  "video_id": "O6vgCjCXjR4",
+  "url": "https://www.youtube.com/watch?v=O6vgCjCXjR4",
+  "title": "9/23/2026 Watchlist video",
+  "channel": "Ariel Hernandez",
+  "channel_id": "UCn8hF9X6MGDtbTBb6w3JUYA",
+  "upload_date": "2026-09-22T16:41:20-07:00",
+  "for_session": "2026-09-23",
+  "length_seconds": 602,
+  "access_tier": "members-only (RS Insider)",
+  "capture_method": "Chrome timedtext fetch/XHR interceptor (yt-dlp fails on members-only); json3 events parsed to [mm:ss] lines, 256 caption lines, 11,781 chars",
+  "captured_at": "2026-09-22",
+  "tickers": ["MRVL","ARM","TSM","ASML","AMZN","NVDA","GOOGL","FTNT","OKTA","CRWD","RBRK","HPE","IGV","MSFT","NEM","GDX","WPM","AEM","GFI","AU","IAG","NOW","NTAP","PANW","PLTR","MU","SNDK","AMD","TGTX","XBI","SPCX","IONQ","INFQ","MAGS","XLK"]
+}
