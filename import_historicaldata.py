@@ -121,6 +121,32 @@ def _dates_already_in_v3(dates: list) -> set:
     return set(pd.to_datetime(df["trade_date"]).dt.date)
 
 
+def athena_delete_day(trade_date: date) -> None:
+    """Remove any existing rows for this trade_date before re-inserting it.
+
+    ⚠ THIS IS WHY IT EXISTS. This importer was INSERT-only, so a second run over an already-loaded
+    date appended a whole duplicate set rather than replacing it. Measured 2026-09-23: exact duplicates
+    (every column identical) in **2014** and **2024** -- 2024 at 2.87% excess rows with groups of 3,
+    i.e. loaded three times. The `existing_dates` skip is not sufficient protection: it is bypassed by
+    --from-date and by any stale or failed skip query. `run_backfill_options_v3.py` already does
+    delete-then-insert for exactly this reason; this brings the importer in line with it.
+
+    The write is one trade_date per call, so the date is the natural idempotency boundary.
+    """
+    sql = f"""
+    DELETE FROM "{DB}"."{TABLE}"
+    WHERE trade_date = DATE '{trade_date.isoformat()}'
+    """
+    qid = wr.athena.start_query_execution(
+        sql=sql,
+        database=DB,
+        workgroup=WORKGROUP,
+        data_source=CATALOG,
+        s3_output=S3_OUTPUT,
+    )
+    wr.athena.wait_query(query_execution_id=qid)
+
+
 def athena_insert(tmp_table: str) -> None:
     """INSERT rows from a Glue temp table into options_daily_v3."""
     sql = f"""
@@ -163,6 +189,7 @@ def process_day(trade_date: date, df_raw: pd.DataFrame, dry_run: bool) -> dict:
         dtype=GLUE_DTYPE,
     )
     try:
+        athena_delete_day(trade_date)   # idempotency: replace the day, never append to it
         athena_insert(tmp_table)
     finally:
         wr.catalog.delete_table_if_exists(database=DB, table=tmp_table)
