@@ -1,0 +1,29 @@
+chains: 12,986,346 call-days (0 dupes dropped), 18 names, 2019-01-02 -> 2026-05-01
+spot recovered for 32,432 ticker-days
+
+936 PMCC cycles · 18 names · 2019-01-02 -> 2026-01-02
+median long: delta 0.80, 79 DTE, cost $3,523
+credits collected $4,572 vs bought back $5,634 -> net $-1,062 per cycle-set
+
+========================================================================================================
+PRIMARY — ARM B (PMCC) minus ARM A (hold the long call), paired
+========================================================================================================
+  n 936   mean diff -20.55pp   month-clustered t -4.93   halves -16.56 / -20.46
+  PRE-REGISTERED PASS: NO
+
+========================================================================================================
+⚠ THE TAIL — reported at the same size as the mean (pre-registered)
+========================================================================================================
+        A hold the long  B PMCC
+mean               31.3    10.7
+median             20.2    16.6
+win%               60.4    62.6
+sd                 93.6    54.0
+p10              -100.0   -68.8
+p90               148.0    70.7
+p99               298.0   135.4
+
+  ⭐ read p90/p99 before the mean: a PMCC that wins the median while truncating the right tail
+     is a RISK result, not a return result — the 21-DTE and spike-branch shape from today.
+
+wrote data/studies/pmcc_study_2026-09-23.csv
