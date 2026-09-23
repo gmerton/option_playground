@@ -1,0 +1,71 @@
+version: 0.2
+
+# CI/CD for the preferred-list-refresh Lambda (nightly Minervini/INT universe refresh).
+# Triggered by CodePipeline `preferred-list-refresh` on push to main.
+#
+# SCOPE: update the function CODE only. Deliberately NOT managed here, exactly as in
+# buildspec_breakout.yml:
+#   * the AWSSDKPandas layer — PINNED to v24. v29 segfaults on any pyarrow parquet read under
+#     runtime python:3.12.mainlinev2.v18. A build must never re-pin it.
+#   * env vars — POLYGON_API_KEY is a secret held in the shell profile, not in CI. Keeping the
+#     build code-only means this pipeline never needs it.
+#   * memory / timeout / ephemeral storage, and the EventBridge rule `preferred-list-refresh-nightly`.
+# Those are set once by deploy_refresh_lambda.sh. Run that script when any of them change.
+#
+# ⛔ This build must NEVER write s3://gmerton-stock-data/breakouts/preferred_tickers.txt.
+# That key is owned by this Lambda at runtime. buildspec_breakout.yml used to copy the repo's
+# checked-in copy over it on every push, which resurrected a stale list (measured 2026-09-22: 59
+# current names destroyed, 70 dead ones restored). Removed there; never add it here.
+
+env:
+  variables:
+    FUNCTION: "preferred-list-refresh"
+    ARTIFACT_ZIP: "refresh_function.zip"
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.12
+    commands:
+      - python --version
+
+  build:
+    commands:
+      - rm -rf refresh_build "$ARTIFACT_ZIP" && mkdir -p refresh_build
+      # --no-deps: the managed layer already ships urllib3/certifi matched to its botocore.
+      # Bundling our own shadows the layer's copies and crashes the runtime.
+      - >
+        pip install --platform manylinux2014_x86_64 --implementation cp
+        --python-version 3.12 --only-binary=:all: --no-deps -t refresh_build
+        polygon-api-client websockets
+      # Copy ONLY this Lambda's import closure — mirrors deploy_refresh_lambda.sh MODS.
+      - |
+        for m in \
+          constants.py \
+          minervini/scan.py \
+          minervini/equity_daily.py \
+          interface/refresh_lambda.py; do
+          mkdir -p "refresh_build/lib/$(dirname "$m")"
+          cp "src/lib/$m" "refresh_build/lib/$m"
+        done
+      - for d in "" "minervini/" "interface/"; do touch "refresh_build/lib/${d}__init__.py"; done
+      - find refresh_build -type d \( -name tests -o -name __pycache__ \) -prune -exec rm -rf {} +
+      # Fail early if the handler or the screen it depends on didn't make it in.
+      - test -f refresh_build/lib/interface/refresh_lambda.py
+      - test -f refresh_build/lib/minervini/scan.py
+      # Guard the universe definition: the published list is the INTERSECTION as of 2026-09-22.
+      # If this grep fails, someone reverted the switch without updating this buildspec.
+      - grep -q "pass_int" refresh_build/lib/interface/refresh_lambda.py
+      - (cd refresh_build && zip -qr9 "../$ARTIFACT_ZIP" .)
+      - echo "package size:" && du -h "$ARTIFACT_ZIP"
+
+  post_build:
+    commands:
+      - aws lambda update-function-code --function-name "$FUNCTION" --zip-file "fileb://$ARTIFACT_ZIP" --no-cli-pager
+      - aws lambda wait function-updated --function-name "$FUNCTION"
+      - echo "Deployed code for $FUNCTION (layer, env, schedule untouched)."
+      - echo "Verify after tonight's run: aws s3 cp s3://gmerton-stock-data/breakouts/refresh_latest.txt -"
+
+artifacts:
+  files:
+    - refresh_function.zip

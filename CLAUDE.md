@@ -2,117 +2,137 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+An options + equity-swing trading research desk: it screens live setups, runs historical studies against
+Athena/S3 Tables, and keeps a graded trade journal. It is a research repo first — most of the 230+ root
+scripts are one-time studies, not tools.
+
+## ⚠ Read these first
+
+| file | what it answers |
+|---|---|
+| **`OPERATIONS.md`** | **What do I actually RUN, and when.** The whole repo reduces to ~13 top-level commands; everything else is orchestrator-invoked or a dead study script. Start here. |
+| `data/studies/TEST_INDEX.md` | What has already been tested, with the verdict — one line per test, plus §10 for what's queued. **Check before proposing any study; most ideas here have been run.** |
+| `data/studies/daily_routine.md` | What to *act on* vs ignore each day (which signals carry expectancy). Different question from OPERATIONS.md. |
+
 ## Setup
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
-pip install pandas pyarrow awswrangler boto3 sqlparse aiohttp polygon-api-client requests pandas-ta anthropic yfinance
+pip install pandas pyarrow awswrangler boto3 sqlparse aiohttp polygon-api-client requests pandas-ta anthropic yfinance scipy statsmodels
 ```
 
-AWS authentication is required. Set your profile:
+**Always use `.venv/bin/python3`** — the system `python3` lacks these packages. Run everything from the repo
+root with `PYTHONPATH=src`.
+
+Secrets live in **`~/.trading_env`** (sourced by the shell profiles and by `start_alerts.sh` /
+`morning_journal.sh`; `daily_desk.sh` and `journal_day.sh` do *not* source it). Keys used:
+`AWS_PROFILE=clarinut-gmerton`, `TRADIER_API_KEY`, `MYSQL_PASSWORD`, `IBKR_FLEX_TOKEN`, `ANTHROPIC_API_KEY`.
+
+Canonical invocation:
 ```bash
-aws configure list-profiles
-export AWS_PROFILE=clarinut-gmerton
+AWS_PROFILE=clarinut-gmerton MYSQL_PASSWORD=... PYTHONPATH=src .venv/bin/python3 <script>.py
 ```
 
-The Tradier API key must be set as an environment variable:
-```bash
-export TRADIER_API_KEY=<your key>
-```
+## Running things
 
-## Running Scripts
+**See `OPERATIONS.md` for the full map.** The short version — the desk is three shell orchestrators, and
+**if an orchestrator calls a script, never call that script yourself**:
 
-All scripts are run from the repo root with `PYTHONPATH=src`:
-```bash
-PYTHONPATH=src python -m lib.commons.credit_spread_finder
-PYTHONPATH=src python -m lib.leaps.leap_finder
-PYTHONPATH=src python -m lib.fly.fly_finder
-PYTHONPATH=src python -m lib.interface.sepa
-PYTHONPATH=src python -m lib.forward.ff
-```
+- **`morning_journal.sh`** — *automated*, 08:00 daily via launchd (`com.gmerton.morning-journal.plist`).
+  Builds yesterday's journal, grades it, deploys the site. You read the output; you don't run it.
+- **`start_alerts.sh`** — launch ~09:25 ET, leave running to the close. Intraday alerts + the pre-market gap
+  and industry pulls. Writes `data/journal/alerts/<date>.json`, which the evening scorecard needs.
+- **`daily_desk.sh`** — the evening desk: regime, open book, scans, clusters, grades, and tomorrow's focus
+  universe. Pulls the Minervini matrix and preferred list from S3 first — do not bypass that.
 
-### Trade Reviewer
+Periodic: `run_friday_screener.py` (Fri), `run_putspread_scan.py` (Thu — carries the tested IV≥60th-pctile
+gate; **`run_thursday_screener.py` is superseded and ungated**), and a monthly re-validation trio.
 
-Review a past trade against O'Neill/CANSLIM principles (interactive menu of recent buys):
-```bash
-PYTHONPATH=src python -m lib.trade_reviewer.cli
-```
+On demand: `./journal_day.sh --date <YYYYMMDD>` is **backfill only** now that launchd runs the same chain
+daily; the trade reviewer (`python -m lib.trade_reviewer.cli [-p TICKER]`, needs `ANTHROPIC_API_KEY`); and
+`run_pullback_shorts.py`, `run_straddle_iv_gate.py`, `run_news_pull.py`.
 
-Evaluate a prospective trade in real time (during market hours):
-```bash
-PYTHONPATH=src python -m lib.trade_reviewer.cli -p TICKER
-# e.g.
-PYTHONPATH=src python -m lib.trade_reviewer.cli -p PHIN
-```
+⚠ **Scripts that look operational but are traps** (details in `OPERATIONS.md`): `premarket_check.py` /
+`premarket_defense.py` (hand-edited `HOLDINGS` frozen 2026-06-15), `run_thursday_screener.py` (no IV gate),
+`run_stock_dcal_screener.py` (retired strategy), `run_minervini_scan.py` / `run_refresh_preferred.py`
+(the Lambda owns the S3 list — running these locally re-creates a stale-list overwrite), `run_eod_scan.sh`
+(prescribes crontab lines that were never installed; the `preferred-breakout-eod` Lambda does this now).
 
-Requires: `ANTHROPIC_API_KEY`, `TRADIER_API_KEY`, `MYSQL_PASSWORD`
-
-### Daily Trade Journal
-
-One command per session (morning after; Flex NAV data lands ~1 session behind). Pull -> rubric review rows -> process grade -> review pages -> S3/CloudFront deploy:
-```bash
-./journal_day.sh                  # latest session
-./journal_day.sh --no-deploy      # stop after the pages
-./journal_day.sh --date 20260918 --force   # backfill/regenerate a session (--force loses hand-written notes)
-```
-Requires: `IBKR_FLEX_TOKEN`, `MYSQL_PASSWORD`, `TRADIER_API_KEY`, `AWS_PROFILE`. The individual steps are `run_daily_journal.py`, `run_build_reviews.py`, `run_journal_grades.py`, `run_trade_review_pages.py`, `deploy_trade_journal.sh`.
-
-### Pre-Market Watchlist
-
-Daily watchlist scanner inspired by Martin Luk and Qullamaggie (Stage 2 / EMA stack / pivot).
-
-EOD prep — run after market close (~7pm ET):
-```bash
-PYTHONPATH=src python premarket_watchlist.py --mode eod
-PYTHONPATH=src python premarket_watchlist.py --mode eod --universe nyse
-```
-
-Pre-market enrichment — run 8–9am ET (adds yfinance gap data):
-```bash
-PYTHONPATH=src python premarket_watchlist.py --mode premarket
-```
-
-Custom ticker list:
-```bash
-PYTHONPATH=src python premarket_watchlist.py --mode eod --universe NVDA,MSFT,AAPL
-```
-
-Requires: `TRADIER_API_KEY`. Pre-market mode also requires `yfinance` (`pip install yfinance`).
+Cloud jobs (EventBridge, both enabled): `preferred-breakout-eod` weeknights 23:15 UTC,
+`preferred-list-refresh-nightly` Tue–Sat 07:30 UTC.
 
 ## Architecture
 
-The codebase is an options strategy research and screening tool with two data paths:
+### 1. Live market data (Tradier)
+- **`src/lib/tradier/tradier_client_wrapper.py`** — async client (`TradierClient`), an async context manager.
+  Always `async with TradierClient(api_key=...) as client:` so one session is shared.
+- **`src/lib/commons/`** — async wrappers: `list_expirations.py`, `list_contracts.py`,
+  `get_underlying_price.py`, `get_daily_history.py`, plus indicator helpers (`moving_averages.py`,
+  `high_low.py`, `pivot_detector.py`, `vol_compression.py`, `volume_breakout.py`).
 
-### 1. Live Market Data (Tradier API)
-- **`src/lib/tradier/tradier_client_wrapper.py`** — async HTTP client (`TradierClient`) used as an async context manager. Always use `async with TradierClient(api_key=...) as client:` to share a single session.
-- **`src/lib/commons/`** — shared async helper functions that wrap Tradier API calls:
-  - `list_expirations.py` — fetch available expiration dates
-  - `list_contracts.py` — fetch option chains for a given expiry
-  - `get_underlying_price.py` — fetch spot price
-  - `get_daily_history.py` / `tradier/get_daily_history.py` — OHLCV history for technical indicators
-  - `moving_averages.py`, `high_low.py`, `pivot_detector.py`, `vol_compression.py`, `volume_breakout.py` — technical screening indicators
+### 2. Historical data (Athena / S3 Tables)
+- **`src/lib/athena_lib.py`** — `athena(sql)` via `awswrangler`. `ctas_approach=False` is required because
+  `data_source` is not `AwsDataCatalog`.
+- **The table is `silver.options_daily_v3`**, not `_v2` (see `src/lib/constants.py`; this doc said `_v2` for
+  months). ~4.07B rows, 2010→2026, 11.5k tickers, partitioned `bucket[5](ticker) + year(trade_date)` — chunk
+  queries by ticker-year (~6s each) rather than pre-narrowing.
+- ⚠ **v3 strikes and greeks are RAW** (never split-adjusted) while every price panel we keep is adjusted —
+  median 3.1% mismatch, and a full split factor for a name that split in-sample. Recover spot from the chain
+  itself (`src/lib/studies/chain_spot.py`) for any settlement or moneyness calculation.
+- ⚠ Coverage cliffs: bid/ask ends ~Mar 2026, stored IV ends ~mid-May 2026, later rows are prints-only.
+- Cross-catalog JOINs need both sides fully qualified. Athena DDL does **not** work on S3 Tables (use
+  `aws s3tables` / boto3), and `writeOrder` causes `HIVE_WRITER_DATA_ERROR`.
+- **`stocks.options_cache` (MySQL)** is a synced *subset* of v3 (DTE 0–65, deduped). Its sync filters
+  `bid > 0 AND ask > 0 AND delta IS NOT NULL`, exempting expiry-day rows — so **every zero-bid quote is
+  missing except at expiry**. That silently breaks exit scans on winning spreads; pull from v3 when
+  completeness matters.
 
-### 2. Historical Data (AWS Athena / S3 Tables)
-- **`src/lib/athena_lib.py`** — core `athena(sql)` function using `awswrangler`. The main table is `silver.options_daily_v2` in the S3 Tables catalog (`awsdatacatalog/s3tablescatalog/gm-equity-tbl-bucket`). `ctas_approach=False` is required because `data_source` is not `AwsDataCatalog`.
-- **`src/lib/constants.py`** — all Athena/S3 connection constants (`CATALOG`, `DB`, `TABLE`, `WORKGROUP`, `S3_OUTPUT`, etc.).
-- Athena queries join against temporary Glue tables (written to S3 via `wr.s3.to_parquet`) for batch lookups. Both catalogs must be fully-qualified in cross-catalog JOINs: `"<S3TABLES_CATALOG>"."silver"."options_daily_v2"` vs `"AwsDataCatalog"."silver"."<tmp_table>"`.
+### Strategy and study modules
+- **`src/lib/data/Leg.py`** — `Leg` (immutable: direction, option type, delta target, DTE) and `Strategy`.
+  Legs are written in trader language and resolved to contracts later.
+- **`src/lib/studies/`** — the backtest engines: `put_spread_study.py`, `call_spread_study.py`,
+  `straddle_study.py`, `calendar_study.py`, `iron_butterfly_study.py`, `vrp_panel.py`, `ticker_config.py`.
+- **`src/lib/studies/pattern_test.py`** — the equity pattern harness. A new pattern is ~20 lines; the harness
+  owns fills, arms, same-name and cross-name controls, sample splits and t-stats, and it writes into
+  `data/studies/pattern_ledger.md`. **Use it for any new equity setup test.**
+- **`src/lib/studies/costs.py`** — the house cost model ($0.65/contract/leg/side + 25% of the quoted
+  bid-ask). Every engine applies it; `--no-costs` reproduces the old pre-cost tables.
+- Screeners/finders under `src/lib/commons/credit_spread_finder.py`, `lib/fly/`, `lib/leaps/`,
+  `lib/double_calendar/`, `lib/interface/sepa.py`, `lib/forward/ff.py` are importable modules and ad-hoc
+  entry points, **not** part of the daily routine. `premarket_watchlist.py` is historical (last touched
+  2026-03); the live equivalent runs inside `daily_desk.sh` / `start_alerts.sh`.
 
-### Strategy Modules
-- **`src/lib/data/Leg.py`** — core data model. `Leg` is an immutable dataclass representing one side of a trade (direction, option type, delta target, DTE). `Strategy` wraps a list of `Leg`s. Legs are specified in "trader language" (delta + DTE) and resolved to concrete contracts later.
-- **`src/lib/commons/credit_spread_finder.py`** — screens stocks for put/call credit spread, iron condor, and iron butterfly setups using live Tradier data. Computes RV20, IV30, VRP, ADX, and 25-delta skew.
-- **`src/lib/fly/fly_finder.py`** — finds ATM butterfly setups (short 2x ATM, long wings) using near-term expirations.
-- **`src/lib/leaps/leap_finder.py`** — finds LEAP collar plays (long stock + protective ATM put + covered call) on low-priced stocks (<$30), screening expirations ≥5 months out.
-- **`src/lib/double_calendar/double_calendar.py`** — double calendar spread analysis (near 10–15 DTE front leg, 7–14 DTE further back leg).
-- **`src/lib/interface/sepa.py`** — SEPA (Stan Weinstein / Mark Minervini) momentum screening (MA rules, 52-week range, pivot signals) using Tradier daily history.
-- **`src/lib/forward/ff.py`** — forward volatility ("vol of vol") calculation between two expiries.
+### Lambda deployment
+`buildspec.yml` packages `src/` into `function.zip` → the `options_toolkit_prod` Lambda via CodeBuild.
+`deploy_breakout_lambda.sh` / `deploy_refresh_lambda.sh` deploy the two scheduled scan Lambdas;
+`deploy_trade_journal.sh` pushes the journal site to S3/CloudFront.
 
-### Lambda Deployment
-`buildspec.yml` packages `src/` into `function.zip` and deploys to the `options_toolkit_prod` Lambda function via AWS CodeBuild.
+## Research conventions
 
-## Key Patterns
+These are hard-won; violating them has produced wrong results more than once.
 
-- All live data helpers are `async` and accept a `TradierClient` instance. Older modules sometimes use bare `aiohttp` sessions directly — prefer the `TradierClient` wrapper for new code.
-- `RuntimeError` is used as the standard exception for non-fatal screening failures (e.g., missing data, insufficient liquidity). Callers typically swallow these to skip symbols.
-- Ticker lists (NYSE, NASDAQ, curated watchlists) live in `src/lib/commons/nyse_arca_list.py`.
-- The `src/lib/earnings/` module handles earnings-specific option queries and caching against Athena.
+- **Price at real fills, never mid.** A mid-priced backtest is how this book fools itself — a 2026-09-22 cost
+  sweep killed nine strategies that looked good at mid. Report gross and after-cost side by side.
+- **Pre-register the test** in the script's docstring before running it: universe, arms, control, the bar, and
+  the multiple-testing charge. State the primary cell in advance; everything else is exploratory.
+- **The bar is |t| ≥ 3 with both halves of the sample the same sign** — and when you test many cells, the
+  Šidák/BH-corrected threshold governs instead, not the raw 3.
+- **Always have a control**, and prefer one that holds the confound fixed (same name later, same day other
+  name, exposure-matched buy-and-hold). A result with no benchmark cannot be distinguished from beta.
+- **Chronological halves do not catch a regime in the back half** — check per-year too.
+- Verdicts use the scheme in TEST_INDEX: ADOPTED / PARKED / NULL / INVERTED / UNDERPOWERED / RETRACTED, plus
+  a YIELD tag (MECHANISM / METHOD / REFRAME) for what a null still taught us.
+- **The trade journal is not evidence for setup selection** — it is admissible only for conformance,
+  execution quality and cost realism. It is also structurally underpowered for certifying an edge.
+- Quiet mode: verbose output goes to a log file under `data/studies/`; surface a short summary plus the path.
+
+## Key patterns
+
+- Live data helpers are `async` and take a `TradierClient`. Older modules use bare `aiohttp` — prefer the
+  wrapper in new code.
+- `RuntimeError` is the standard non-fatal screening failure (missing data, thin liquidity); callers swallow
+  it to skip a symbol.
+- Ticker lists live in `src/lib/commons/nyse_arca_list.py`; the generated preferred list is S3-owned.
+- `src/lib/earnings/` handles earnings-specific option queries and Athena caching.
+- ASCII filenames only — git escapes non-ASCII in `--name-only`, so grep-based audits silently miss them.

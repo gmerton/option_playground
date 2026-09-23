@@ -52,12 +52,19 @@ phases:
 
   post_build:
     commands:
-      # 1) update the Lambda code (layer/env/schedule untouched)
+      # update the Lambda code (layer/env/schedule untouched)
       - aws lambda update-function-code --function-name "$FUNCTION" --zip-file "fileb://$ARTIFACT_ZIP" --no-cli-pager
       - aws lambda wait function-updated --function-name "$FUNCTION"
-      # 2) sync the ticker universe the function reads at runtime
-      - aws s3 cp data/preferred_tickers.txt "s3://$BUCKET/$PREFIX/preferred_tickers.txt"
-      - echo "Deployed code + ticker list for $FUNCTION."
+      - echo "Deployed code for $FUNCTION."
+      # ⛔ REMOVED 2026-09-22 — this build used to run:
+      #     aws s3 cp data/preferred_tickers.txt s3://$BUCKET/$PREFIX/preferred_tickers.txt
+      # The preferred list is S3-OWNED: `preferred-list-refresh` regenerates it nightly. Copying the
+      # repo's checked-in copy over it resurrected a stale list on every push to main. Measured
+      # 2026-09-22: the local file (last committed 2026-07-27, 109 names) would have destroyed 59
+      # current names and resurrected 70 dead ones, on top of that morning's refresh. The same fault
+      # was fixed in deploy_breakout_lambda.sh on 2026-09-21 but was missed here, so it stayed live
+      # in CI. Nothing in a build may write that key. `data/preferred_tickers.txt` is a historical
+      # artefact only — read the list from S3.
 
 artifacts:
   files:
