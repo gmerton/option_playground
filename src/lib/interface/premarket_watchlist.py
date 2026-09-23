@@ -252,9 +252,18 @@ async def score_ticker(client: TradierClient, ticker: str, *,
     prev_green = bool(closes[-2] > opens[-2]) if n >= 2 else False
     prev_high  = round(highs[-2], 2) if n >= 2 else None
 
-    # ── Potent: Stage2 + EMA Lead + ADR + prev green + near pivot (within 8%) ─
+    # ── Potent: Stage2 + EMA Lead + ADR + near pivot (within 8%) ──────────────
+    # `prev_green` was REMOVED from this gate 2026-09-22. It had never been tested, and it was
+    # the sole reason NTAP (9/9 Trend Template, RS pct 92, 0.21 ADR off its 21 EMA, 3.9% under
+    # its pivot) was absent from that night's watchlist — its prior candle closed $2 red.
+    # Measured on the liquid panel, conditioned on the same ema_lead state this gate requires and
+    # paired by date: green minus red is −0.013pp at 5d (t −0.16, halves disagree) and −0.196pp at
+    # 20d (t −0.64). No forecasting value, and if anything the sign favours red. Meanwhile the gate
+    # discarded 46.5% of EMA-lead name-days. Same lesson as close_strength_2026-09-22.md, one level
+    # coarser: candle shape looks meaningful and measures nothing. `prev_green` is still computed
+    # and reported below (run_breakout_scorecard.py displays it) — it just no longer vetoes.
     near_pivot = (pivot_dist_pct is not None) and (-8 <= pivot_dist_pct <= 8)
-    is_potent = bool(ema_lead and prev_green and near_pivot)
+    is_potent = bool(ema_lead and near_pivot)
 
     # ── Leader: Stage2 + EMA Lead + 1m>15% + 3m>30% ─────────────────────────
     is_leader = bool(
