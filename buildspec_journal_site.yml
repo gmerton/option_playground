@@ -1,0 +1,65 @@
+version: 0.2
+
+# CI/CD for the journal site's PRESENTATION layer (2026-09-23).
+# Triggered by CodePipeline `journal-site` on push to main, path-filtered to the page generator.
+#
+# WHY THIS EXISTS: the trade-reviews page used to be one 1.3 MB file with the data inlined, so changing a
+# column meant regenerating from MySQL and running deploy_trade_journal.sh by hand. The page is now split:
+#   trade_reviews.html        13 KB presentation shell  <- THIS build deploys it, on a commit
+#   trade_reviews_data.json   ~1.2 MB data              <- the 08:00 journal job writes it, untouched here
+# So a cosmetic change is a static-file deploy. No database, no generator run, no local script.
+#
+# ⛔ THIS BUILD MUST NEVER RUN `aws s3 sync --delete`.
+# CI does not build the .json, the ~773 per-trade pages under trades/, summary.html, alerts.html, or
+# alerts/* (which run_universe_monitor.py writes straight to the bucket). A mirroring sync from a CI
+# checkout would delete every one of them. Copy explicit files only. deploy_trade_journal.sh is the ONLY
+# thing allowed to mirror, because it runs from a full local build.
+#
+# ⚠ Scope: only the reviews index is split so far. summary.html and alerts.html still inline their data and
+# are therefore still local-build-and-deploy. Split them the same way to bring them under CI.
+
+env:
+  variables:
+    BUCKET: "gmerton-trade-journal"
+    DIST_ID: "E2VZA7AMN3NFDL"
+    PAGE: "trade_reviews.html"
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.12
+    commands:
+      # Only what the module-level imports need; --template-only never opens a connection.
+      - pip install --quiet pandas mysql-connector-python aiohttp
+
+  build:
+    commands:
+      # Writes the shell ONLY. No DB, no Tradier, no data file.
+      - PYTHONPATH=src python run_trade_review_pages.py --template-only
+      - test -s "data/journal/$PAGE"
+      # Guard: if the data ever gets inlined back in, the file balloons and the split is broken. Fail loudly
+      # rather than shipping a 1.3 MB "template" that would also be stale the moment it is built.
+      - |
+        SZ=$(wc -c < "data/journal/$PAGE")
+        echo "template size: $SZ bytes"
+        if [ "$SZ" -gt 262144 ]; then
+          echo "!! $PAGE is $SZ bytes (>256 KB) — data has been inlined back into the template."
+          echo "!! CI must not deploy a data-carrying page; see buildspec_journal_site.yml."
+          exit 1
+        fi
+      # Guard: the shell must still fetch its data, or the deployed page renders empty.
+      - grep -q "trade_reviews_data.json" "data/journal/$PAGE"
+
+  post_build:
+    commands:
+      # Explicit single-object copy. charset=utf-8 is required: S3 serves bare text/html and the browser
+      # then guesses Windows-1252, which turns en dashes into mojibake (seen 2026-09-14).
+      - >
+        aws s3 cp "data/journal/$PAGE" "s3://$BUCKET/$PAGE"
+        --content-type "text/html; charset=utf-8" --only-show-errors
+      # Invalidate ONLY this path, not /*. A full invalidation would evict the whole site mid-session and
+      # burn the free-tier allowance on every cosmetic commit.
+      - >
+        aws cloudfront create-invalidation --distribution-id "$DIST_ID" --paths "/$PAGE"
+        --query "Invalidation.{Id:Id,Status:Status}" --output table
+      - echo "Deployed $PAGE. https://d1z4hclel0mtsn.cloudfront.net/$PAGE"

@@ -59,6 +59,7 @@ from lib.tradier.tradier_client_wrapper import TradierClient
 from lib.journal.sortable import SORT_CSS, SORT_JS, sort_date, sort_num, th
 
 INDEX_OUT = Path("data/journal/trade_reviews.html")
+INDEX_DATA_OUT = Path("data/journal/trade_reviews_data.json")   # data half of the index; see _build_all()
 SUMMARY_OUT = Path("data/journal/summary.html")
 TRADES_DIR = Path("data/journal/trades")
 
@@ -884,7 +885,7 @@ INDEX_TEMPLATE = """<!doctype html>
 <body>
 <header>
   <h1>Trade Reviews</h1>
-  <div class="sub"><a class="back" href="index.html" style="color:var(--accent);">&larr; Home</a> &middot; Entry/exit quality judged on facts at the time, not outcome. Click a row for its chart. Generated __GENERATED_AT__. &middot; <a class="back" href="summary.html" style="color:var(--accent);">Strategy performance &rarr;</a> &middot; <a class="back" href="alerts.html" style="color:var(--accent);">Live alerts &rarr;</a> &middot; <a class="back" href="tito/index.html" style="color:var(--accent);">Tito's best trades &rarr;</a> &middot; <a class="back" href="tutorial/qcom/index.html" style="color:var(--accent);">QCOM entry tutorial &rarr;</a></div>
+  <div class="sub"><a class="back" href="index.html" style="color:var(--accent);">&larr; Home</a> &middot; Entry/exit quality judged on facts at the time, not outcome. Click a row for its chart. Generated <span id="genat">&hellip;</span>. &middot; <a class="back" href="summary.html" style="color:var(--accent);">Strategy performance &rarr;</a> &middot; <a class="back" href="alerts.html" style="color:var(--accent);">Live alerts &rarr;</a> &middot; <a class="back" href="tito/index.html" style="color:var(--accent);">Tito's best trades &rarr;</a> &middot; <a class="back" href="tutorial/qcom/index.html" style="color:var(--accent);">QCOM entry tutorial &rarr;</a></div>
   <div class="controls">
     <input type="text" id="search" placeholder="Search ticker, reason, tags…">
     <select id="direction"><option value="">Direction: all</option></select>
@@ -901,9 +902,10 @@ INDEX_TEMPLATE = """<!doctype html>
       <tr>
         <th data-key="underlying">Ticker</th>
         <th data-key="direction">Dir</th>
-        <th data-key="entryDate">Entry / Exit</th>
-        <th data-key="entryVerdict">Entry</th>
-        <th data-key="exitVerdict">Exit</th>
+        <th data-key="entryDate">Entry</th>
+        <th data-key="exitDate">Exit</th>
+        <th data-key="entryVerdict">Entry grade</th>
+        <th data-key="exitVerdict">Exit grade</th>
         <th data-key="actionableVerdict">Fix</th>
         <th data-key="realizedPnl">P&amp;L</th>
       </tr>
@@ -914,13 +916,16 @@ INDEX_TEMPLATE = """<!doctype html>
 </main>
 
 <script>
-const DATA = __DATA_JSON__;
-const STRATEGIES = __STRATEGIES_JSON__;
+// DATA and STRATEGIES are loaded from trade_reviews_data.json at the bottom of this script, NOT inlined.
+// That split is deliberate: this file is then a pure presentation asset (template + CSS + JS) that CI/CD can
+// deploy on a commit, while the 08:00 journal job rewrites only the .json. Changing a column no longer needs
+// the database, the generator, or a local script. Keep it that way -- do not inline data back into the HTML.
+let DATA = [], STRATEGIES = [];
 let sortKey = "entryDate", sortDir = 1, activeTag = null;
 // URL filters from the Performance page cards: ?vehicle=<bucket> or ?strategy=<key> (same rules as the summary page)
 const _params = new URLSearchParams(location.search);
 const urlVehicle = _params.get('vehicle'), urlStrategy = _params.get('strategy');
-const _spec = urlStrategy ? STRATEGIES.find(x => x.key === urlStrategy) : null;
+let _spec = null;        // resolved after STRATEGIES loads
 function vehicleBucket(v) {       // mirrors _vehicle_bucket() in run_trade_review_pages.py
   if (!v) return null;
   if (v === 'long stock') return 'Long Stock';
@@ -1006,7 +1011,8 @@ function render() {
     tr.innerHTML = `
       <td class="ticker">${r.underlying}${r.symbol !== r.underlying ? `<div class="reason">${r.symbol}</div>` : ''}</td>
       <td>${directionBadge(r.direction)}</td>
-      <td class="dates">${r.entryDate || ''} → ${r.exitDate || 'open'}</td>
+      <td class="dates">${r.entryDate || '—'}</td>
+      <td class="dates">${r.exitDate || 'open'}</td>
       <td>${badge(r.entryVerdict)}<div class="reason">${r.entryReason || ''}</div></td>
       <td>${badge(r.exitVerdict)}<div class="reason">${r.exitReason || ''}</div>
           ${r.marketContext ? `<div class="context">${r.marketContext}</div>` : ''}
@@ -1040,12 +1046,29 @@ document.getElementById('search').addEventListener('input', render);
 document.getElementById('entryVerdict').addEventListener('change', render);
 document.getElementById('exitVerdict').addEventListener('change', render);
 document.getElementById('direction').addEventListener('change', render);
-if (urlVehicle || _spec) {
-  const n = DATA.filter(urlMatch).length;
-  document.getElementById('urlfilter').innerHTML = `Showing <b>${urlVehicle ? 'vehicle: ' + urlVehicle : (_spec ? _spec.label : urlStrategy)}</b> (${n} trades) &middot; <a href="trade_reviews.html" style="color:var(--accent);">clear filter</a> &middot; <a href="summary.html" style="color:var(--accent);">back to performance</a>`;
-}
-populateFilters();
-render();
+// ── Bootstrap: load the data, then paint. Cache-busted so a same-day rewrite of the JSON is picked up
+// even while CloudFront still serves this HTML.
+fetch('trade_reviews_data.json?v=' + Date.now())
+  .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+  .then(d => {
+    DATA = d.rows || [];
+    STRATEGIES = d.strategies || [];
+    _spec = urlStrategy ? STRATEGIES.find(x => x.key === urlStrategy) : null;
+    const g = document.getElementById('genat');
+    if (g) g.textContent = d.generatedAt || '';
+    if (urlVehicle || _spec) {
+      const n = DATA.filter(urlMatch).length;
+      document.getElementById('urlfilter').innerHTML = `Showing <b>${urlVehicle ? 'vehicle: ' + urlVehicle : (_spec ? _spec.label : urlStrategy)}</b> (${n} trades) &middot; <a href="trade_reviews.html" style="color:var(--accent);">clear filter</a> &middot; <a href="summary.html" style="color:var(--accent);">back to performance</a>`;
+    }
+    populateFilters();
+    render();
+  })
+  .catch(err => {
+    const e = document.getElementById('empty');
+    e.textContent = 'Could not load trade_reviews_data.json (' + err.message + '). The page shell deployed but the data file did not.';
+    e.style.display = 'block';
+    document.getElementById('stat').textContent = 'data unavailable';
+  });
 </script>
 </body>
 </html>
@@ -1215,7 +1238,18 @@ def _refine_spread_vehicles(rows: list[dict]) -> None:
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--no-charts", action="store_true", help="skip Tradier entirely (fast, text-only detail pages)")
+    ap.add_argument("--template-only", action="store_true",
+                    help="write ONLY the presentation shell (trade_reviews.html) and exit. No database, no "
+                         "Tradier, no data file. This is what CI/CD runs on a commit so a cosmetic change "
+                         "(a column, a style) ships without a local rebuild.")
     a = ap.parse_args()
+
+    if a.template_only:
+        INDEX_OUT.parent.mkdir(parents=True, exist_ok=True)
+        INDEX_OUT.write_text(INDEX_TEMPLATE)
+        print(f"wrote {INDEX_OUT} ({INDEX_OUT.stat().st_size/1024:.0f} KB, template only — "
+              f"data stays in {INDEX_DATA_OUT.name}, written by the 08:00 journal job)")
+        return
 
     # Re-key reviews to their campaigns and refresh the tag layer BEFORE loading
     # the rows -- the pages must render the corrected structure P&L, not the copy
@@ -1242,11 +1276,19 @@ def main() -> None:
     # a campaign whose primary row already carries the full P&L), so the card's count and its list always agree.
     _primary_rows = [r for r in public_rows if r.get("isPrimary")]
     strategies_out = [dict(sp, row_ids=[r["id"] for r in _strategy_rows(_primary_rows, sp)]) for sp in STRATEGIES]
-    html = INDEX_TEMPLATE.replace("__DATA_JSON__", json.dumps(public_rows)).replace("__STRATEGIES_JSON__", json.dumps(strategies_out))
     generated_at = pd.Timestamp.now().strftime("%Y-%m-%d %H:%M")
-    html = html.replace("__GENERATED_AT__", generated_at)
     INDEX_OUT.parent.mkdir(parents=True, exist_ok=True)
-    INDEX_OUT.write_text(html)
+    # Template and data are written SEPARATELY (2026-09-23). The .html is a pure presentation asset with no
+    # data in it, so a cosmetic change (a column, a style) is a static-file commit that CI/CD deploys on push
+    # -- no database, no generator run, no deploy script. The 08:00 journal job rewrites only the .json.
+    # ⚠ Any CI deploy of the .html must NOT use `aws s3 sync --delete`: CI never builds the .json or the ~773
+    # per-trade pages, and a mirroring sync would delete them. Copy explicit files instead.
+    INDEX_OUT.write_text(INDEX_TEMPLATE)
+    INDEX_DATA_OUT.write_text(json.dumps(
+        {"generatedAt": generated_at, "rows": public_rows, "strategies": strategies_out},
+        separators=(",", ":")))
+    print(f"wrote {INDEX_OUT} (template, {INDEX_OUT.stat().st_size/1024:.0f} KB) "
+          f"+ {INDEX_DATA_OUT} (data, {INDEX_DATA_OUT.stat().st_size/1024:.0f} KB)")
 
     # Aggregate over one row per structure: several reviews can point at the same
     # campaign and each now carries that campaign's full P&L (see is_primary in
