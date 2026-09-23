@@ -1,0 +1,642 @@
+[00:00:00] in this video I'll showare the thought
+[00:00:01] process and four steps I always use When
+[00:00:03] developing a new trading strategy the
+[00:00:05] approach is generic and compatible with
+[00:00:06] almost every strategy I've shown bits of
+[00:00:08] this process in my past videos but I
+[00:00:10] wanted to make a standalone dedicated
+[00:00:11] video I can reference back to in the
+[00:00:13] future the four steps are insample
+[00:00:15] excellence in Sample Monte Carlo
+[00:00:17] permutation test walk forward test and
+[00:00:19] walk forward Monte Carlo permutation
+[00:00:21] test I'll show an example going through
+[00:00:23] all four steps and generalize the
+[00:00:24] concepts so you can try with your own
+[00:00:26] strategies first I'll show how I assess
+[00:00:28] a trading strategy use a moving average
+[00:00:30] crossover as an example we load in
+[00:00:32] Candlestick data and compute a fast and
+[00:00:34] slow moving average at each bar we check
+[00:00:36] if the fast moving average is above the
+[00:00:38] slow moving average we create a signal
+[00:00:40] that denotes the position of the
+[00:00:42] strategy at each bar one means we have a
+[00:00:44] long position following that bar and
+[00:00:45] zero means we have no position
+[00:00:47] regardless of what the strategy is one
+[00:00:49] should be able to create a similar
+[00:00:50] signal a value denoting the position of
+[00:00:52] the strategy after each bar now if we
+[00:00:55] compute Clos to close returns and shift
+[00:00:57] them forward by one bar we can multiply
+[00:00:59] the positions signal by the shifted
+[00:01:01] returns to get a return for each bar
+[00:01:02] that is attributable to the strategy
+[00:01:04] these strategy returns at the same
+[00:01:06] granularity of the bars are what I use
+[00:01:08] to compute objective functions such as
+[00:01:10] the profit factor or the sharp ratio by
+[00:01:12] having a return for each bar instead of
+[00:01:14] each trade objective functions are ped
+[00:01:16] much more data and the calculations and
+[00:01:18] results are much more stable the book
+[00:01:20] testing and tuning market trading
+[00:01:21] systems provides convincing Arguments
+[00:01:23] for why these higher granularity returns
+[00:01:25] are superior it's where I got the idea
+[00:01:27] and I'm thoroughly convinced both from
+[00:01:29] what the book says and and my own
+[00:01:30] experience I'll scrap the moving average
+[00:01:32] crossover because it's lame and instead
+[00:01:34] I'll use the slightly more interesting
+[00:01:36] Don and channel breakout strategy I
+[00:01:38] showed in my previous video briefly the
+[00:01:40] strategy goes long when the current
+[00:01:41] close is the highest over a given look
+[00:01:43] back and it goes short when the current
+[00:01:45] close is the lowest over a given look
+[00:01:47] back the idea of this is to trade in the
+[00:01:49] direction of range breakouts so we can
+[00:01:51] ride the trend when extended Trends
+[00:01:52] occur the code for the Donan breakout is
+[00:01:55] short and the output is a signal Vector
+[00:01:57] it will have a value on each bar
+[00:01:58] denoting the strategy's position one or
+[00:02:00] ne1 the strategy needs a look back so we
+[00:02:03] can test several and pick the best
+[00:02:05] here's a grid search to do that we look
+[00:02:06] through a wide variety of lookback
+[00:02:08] values and find the one with the best
+[00:02:10] profit factor I ran the optimization on
+[00:02:12] hourly Bitcoin data from 2016 through
+[00:02:14] 2019 over those four years the best look
+[00:02:17] back was 19 with a profit factor of 1.08
+[00:02:20] I first like to look at the ins sample
+[00:02:22] performance since these are log Returns
+[00:02:24] the cumulative sum of the strategy
+[00:02:26] returns will give us a crude back test
+[00:02:28] cool so what are we actually doing here
+[00:02:31] well we're optimizing a mediocre Trend
+[00:02:32] follower but more generally we have an
+[00:02:34] idea for a trading strategy a set of
+[00:02:36] development or ins sample data and a way
+[00:02:39] to fit optimize or select the best
+[00:02:41] version of the strategy for the data
+[00:02:43] these are the generic components for
+[00:02:45] essentially every trading strategy
+[00:02:47] whether we're optimizing a look back for
+[00:02:48] a trend follower selecting the best
+[00:02:50] chart patterns or training a fancy
+[00:02:52] neural network this is how trading
+[00:02:54] strategies are optimized so with that in
+[00:02:56] mind let's look at our insample
+[00:02:57] performance again currently we're in the
+[00:02:59] development stage here I ask myself two
+[00:03:02] questions is this excellent and is it
+[00:03:04] obviously overfit these are ins sample
+[00:03:06] results so they should be pretty damn
+[00:03:08] good maybe you could come up with some
+[00:03:09] threshold for an objective function to
+[00:03:11] decide if it is excellent but really I
+[00:03:13] think it depends on the nature of the
+[00:03:14] strategy I'm inly look if the strategy
+[00:03:16] has periods of inconsistency I would
+[00:03:18] drill down and really look at what is
+[00:03:20] happening when the strategy is working
+[00:03:21] poorly versus working well maybe there
+[00:03:23] are ways one could improve this strategy
+[00:03:25] maybe some YouTuber made a video about
+[00:03:27] improving the very strategy you're
+[00:03:29] looking at but this is the development
+[00:03:30] stage this is the time to study your
+[00:03:32] strategy test potential improvements and
+[00:03:35] refine your optimization process if this
+[00:03:37] was a strategy I was working on I'd
+[00:03:39] study it and try to improve it further I
+[00:03:41] would not say this is excellent I expect
+[00:03:43] a bit more from insample performance
+[00:03:45] than this but to keep the video going
+[00:03:47] I'll say it looks good enough here now
+[00:03:48] the other question is this obviously
+[00:03:50] overfit this one is a bit harder to
+[00:03:52] answer I suppose one gets a feel for it
+[00:03:54] eventually but if your results are
+[00:03:56] suspiciously good like a 100% win rate
+[00:03:58] you're probably over fitting or maybe
+[00:04:00] you just accidentally allowed a future
+[00:04:02] leak which obviously needs to be fixed
+[00:04:04] but if you suspect overfitting you may
+[00:04:05] want to dial back the complexity of the
+[00:04:07] strategy ultimately the answer to this
+[00:04:10] question in the development stage should
+[00:04:11] either be yes or not obviously I'll show
+[00:04:14] an obviously overfit strategy later once
+[00:04:16] we're satisfied with our ample results
+[00:04:18] the question becomes was this excellent
+[00:04:20] ins sample performance found due to
+[00:04:22] patterns intrinsic in the data or was
+[00:04:24] the good and Sample performance found
+[00:04:26] just because our optimization process
+[00:04:28] was powerful enough to find something in
+[00:04:29] noise in other words is data mining bias
+[00:04:32] the main contributor to our excellence
+[00:04:33] in Sample performance the problem with
+[00:04:35] optimization is it works if we compare
+[00:04:38] multiple configurations of a strategy
+[00:04:40] one will be the best but it will always
+[00:04:42] have a data mining or selection bias of
+[00:04:45] course if we optimize even a great
+[00:04:46] strategy there will be some data mining
+[00:04:48] bias but a good strategy's insample
+[00:04:51] performance will mostly be from patterns
+[00:04:53] in the data but if our strategy is trash
+[00:04:55] then its insample performance will be
+[00:04:57] entirely due to data mining bias our
+[00:04:59] null hypothesis is that our strategy is
+[00:05:02] garbage we will use the ins sample Monte
+[00:05:04] Carlo permutation test to disprove our
+[00:05:06] null hypothesis so how does this test
+[00:05:08] work we optimized the Donan breakout on
+[00:05:11] these four years of price data and our
+[00:05:12] optimized strategy has a profit factor
+[00:05:14] of 1.08 but if we create a random
+[00:05:17] permutation of this data we get
+[00:05:18] something like this and this random
+[00:05:20] permutation any legitimate patterns that
+[00:05:22] existed in the real data are no longer
+[00:05:24] present the permutation is just noise
+[00:05:27] with nearly identical statistical
+[00:05:29] properties
+[00:05:30] if we optimize the Donan breakout on
+[00:05:31] this permeated data we get a profit
+[00:05:33] factor of 1.02 the optimized strategy
+[00:05:36] did better on real data than it did on
+[00:05:38] permuted data this gives a small amount
+[00:05:40] of evidence that our null hypothesis is
+[00:05:42] false because if the optimized strategy
+[00:05:44] did just as good or better on random
+[00:05:46] data we could presume the main
+[00:05:48] contributor to the good and Sample
+[00:05:50] performance we saw was from data mining
+[00:05:52] bias but this was only one permutation
+[00:05:54] if we created many more and on each
+[00:05:56] permutation we optimized the strategy we
+[00:05:58] could get an idea of how powerful the
+[00:06:00] data mining bias induced by our
+[00:06:02] optimization is if the optimized
+[00:06:04] strategy profit factor of 1.08 that we
+[00:06:07] found on real data is better than what
+[00:06:08] we found on the vast majority of
+[00:06:10] permutations we can disprove our null
+[00:06:12] hypothesis I don't think there's any
+[00:06:14] value in looking at the equity curves of
+[00:06:15] permutations as we can simply compute
+[00:06:17] the objective function on each of these
+[00:06:19] but I think this helps visualize what
+[00:06:21] we're actually doing and it looks cool
+[00:06:23] now I'll show the algorithm I'm using to
+[00:06:24] generate these permutations of price
+[00:06:26] this function has a few parameters the
+[00:06:28] first is the data it takes either a data
+[00:06:30] frame of open high low close prices or a
+[00:06:33] list of such data frames the option for
+[00:06:35] the list of data frames is for permuting
+[00:06:37] multiple markets I'll talk about this
+[00:06:39] option later start index is where the
+[00:06:41] permutation starts when set to the
+[00:06:43] default zero the function will permute
+[00:06:45] all the data given we will use this
+[00:06:47] parameter later when we talk about the
+[00:06:48] walk forward permutation test since we
+[00:06:51] pass data is either a list of data
+[00:06:52] frames or a single data frame we handle
+[00:06:54] that first if it's a single data frame I
+[00:06:56] put it into a list and set end markets
+[00:06:58] to one if we have multiple markets we
+[00:07:00] ensure that their indexes are identical
+[00:07:02] then we allocate space to store relative
+[00:07:05] prices for each market and bar and the
+[00:07:07] first bar of each market the first bar
+[00:07:09] will be unchanged it has a size of four
+[00:07:11] to handle the Open high low and close
+[00:07:13] price now we compute prices on each bar
+[00:07:16] relative to that Bar's open we Loop
+[00:07:18] through each of the markets and get the
+[00:07:20] logarithmic prices I copy the first bar
+[00:07:23] at the start index here the open is
+[00:07:25] subtracted from the high low and close
+[00:07:27] prices since we're dealing with log
+[00:07:28] prices we're essentially recording the
+[00:07:30] percentage off the open of each of these
+[00:07:32] prices the relative open is the current
+[00:07:35] open minus the prior close the gap then
+[00:07:37] we copy over these prices into the
+[00:07:39] arrays we made earlier now we get the
+[00:07:41] indices of the real data we'll use these
+[00:07:43] to shuffle the relative prices we
+[00:07:45] Shuffle the indices once for the
+[00:07:46] intrabar quantities and again for the
+[00:07:49] gaps the gaps have little effect on
+[00:07:51] crypto data the crypto Market never
+[00:07:53] actually closes so the open of one bar
+[00:07:55] will usually only be at most a few ticks
+[00:07:57] away from the prior bars close but for
+[00:07:59] daily stock data the open can be quite
+[00:08:01] far away from the prior close after
+[00:08:03] shuffling we can now string together our
+[00:08:05] permutation we Loop through each market
+[00:08:07] and allocate space to store the permuted
+[00:08:09] bars we get the log prices of the real
+[00:08:11] data we copy it into the permuted data
+[00:08:14] before the start index if the start
+[00:08:16] index is set to zero nothing happens
+[00:08:18] here then we copy the start bar the
+[00:08:20] first bar of the permutation we loop
+[00:08:22] from the start bar to the end of the
+[00:08:23] data we first set the open price the
+[00:08:25] zero is the index of the open and the
+[00:08:27] three is the index of the close to to
+[00:08:29] get the permuted bars open we add the
+[00:08:31] relative open value to the prior bars
+[00:08:33] close then we add the relative high low
+[00:08:36] and close to that open value to get the
+[00:08:38] rest of the permuted bars prices after
+[00:08:40] the loop we exponentiate the prices to
+[00:08:42] get them to the normal scale and add the
+[00:08:44] bars to a data frame the function will
+[00:08:46] return either a single data frame or a
+[00:08:48] list of data frames the same as what was
+[00:08:50] passed to the function now we can pass
+[00:08:52] in a data frame of real data and we're
+[00:08:54] returned to a data frame of permuted
+[00:08:55] data the first open and last close are
+[00:08:58] exactly the same on both the real and
+[00:09:00] permuted data so the overall trend of
+[00:09:02] the data is preserved but the path the
+[00:09:04] price takes between those two prices is
+[00:09:06] completely different the goal of a
+[00:09:08] permutation algorithm is to create bars
+[00:09:10] that have the same statistical
+[00:09:11] properties as the original if we compute
+[00:09:13] some Clos to close returns we can see
+[00:09:15] that the mean standard deviation skew
+[00:09:17] and cryosis are all nearly identical now
+[00:09:19] let's load in ethereum data for the same
+[00:09:21] time period here's a plot of Bitcoin and
+[00:09:24] ethereum in 2018 and 2019 we can see
+[00:09:27] that they're obviously correlated and if
+[00:09:29] we per them together the correlation
+[00:09:31] between the two markets stays the same I
+[00:09:32] won't cover the multimarket case here
+[00:09:34] Beyond this but if your strategy
+[00:09:36] involves two or more markets the
+[00:09:38] permutation tests can still be applied
+[00:09:40] while the algorithm produces
+[00:09:41] permutations with many similar
+[00:09:43] statistical properties to the original
+[00:09:45] it is not without its flaws as price is
+[00:09:47] not a random walk real prices have
+[00:09:50] volatility clustering and long memory
+[00:09:52] both of which could be a topic for a
+[00:09:53] different time but the permutation
+[00:09:55] algorithm will destroy both of these
+[00:09:56] properties if your strategy is heavily
+[00:09:58] focused on one of these properties or
+[00:10:00] some other property that the permutation
+[00:10:02] algorithm doesn't preserve the Monte
+[00:10:04] Carlo permutation tests can be
+[00:10:06] optimistically biased but this really
+[00:10:08] isn't a horrid problem as if your
+[00:10:10] strategy cannot pass the permutation
+[00:10:11] tests even with a potential optimistic
+[00:10:14] bias then you know your strategy is
+[00:10:16] probably overfitting now that we've gone
+[00:10:18] over the bar permutation algorithm we
+[00:10:19] can return to where we were we optimized
+[00:10:22] the Donan breakout on hourly Bitcoin
+[00:10:24] data from 2016 through 2019 and the best
+[00:10:27] look back gave a profit factor of 1.0 08
+[00:10:29] when we optimized the strategy on many
+[00:10:31] different price permutations we found
+[00:10:33] that the results were worse than what we
+[00:10:35] got on real prices we've essentially
+[00:10:37] already done the in Sample permutation
+[00:10:38] test but now I'll show you the code and
+[00:10:40] how to apply it first we load our data
+[00:10:42] and get the four years we're using to
+[00:10:44] train we call the optimized Donan
+[00:10:46] function and this gives us our real
+[00:10:48] profit Factor now we can do the
+[00:10:49] permutation test we set the number of
+[00:10:51] permutations then Loop that many times
+[00:10:54] we get a permutation of the bars and
+[00:10:55] optimize our strategy on them to get a
+[00:10:57] permuted profit Factor if the
+[00:10:59] permutation profit factor is just as
+[00:11:01] good or better than the real profit
+[00:11:03] Factor we increment the permutation was
+[00:11:05] better count after the loop we can
+[00:11:07] calculate a quas I value the number of
+[00:11:09] times the permutation was better divided
+[00:11:11] by the total number of permutations this
+[00:11:13] value is roughly the probability that
+[00:11:15] our real profit Factor was found mainly
+[00:11:17] due to data mining bias this next part
+[00:11:20] isn't really necessary but I like to
+[00:11:21] plot a histogram of the profit factors
+[00:11:24] or whatever objective function we used
+[00:11:26] from the permutations then add a line
+[00:11:28] showing where in the the distribution
+[00:11:30] the real profit Factor fell I ran this
+[00:11:32] test with 1,000 permutations and got
+[00:11:34] this only a couple permutations did
+[00:11:36] better than the original so the P value
+[00:11:38] is very low 0.3% if a sufficient amount
+[00:11:41] of permutations are done the permutation
+[00:11:43] distribution should be roughly bell
+[00:11:45] shaped if the distribution looks really
+[00:11:47] weird there's probably an issue with
+[00:11:48] your code I like to see the P value
+[00:11:50] below 1% so I would call this a pass now
+[00:11:53] I'll quickly show you a strategy that is
+[00:11:55] overfit this function fits a decision
+[00:11:58] tree we compute three indicators just
+[00:12:00] basic price differences then create a
+[00:12:02] classification Target whether the next
+[00:12:03] 24 hours go up or down then we create a
+[00:12:06] decision Tree Train it with our
+[00:12:08] indicators and Target and return the
+[00:12:10] model notice that I've set the minimum
+[00:12:12] samples per Leaf very low this is one of
+[00:12:14] the key regularization parameters and
+[00:12:16] it's pretty much guaranteed to overfit
+[00:12:18] to test the model we can use this
+[00:12:20] function we compute the same indicators
+[00:12:22] and use them to predict the model then
+[00:12:24] we can use the model's predictions to
+[00:12:26] create a position Vector we'll go long
+[00:12:27] when the tree predicts the price will go
+[00:12:29] up and we'll go short when the tree
+[00:12:31] predicts the price will go down then
+[00:12:32] finally we compute the profer factor of
+[00:12:34] that signal here are the ins sample
+[00:12:36] results for our decision tree again this
+[00:12:38] is when I ask myself is this obviously
+[00:12:40] overfit the answer is yes generally
+[00:12:42] speaking if your back test ever looks
+[00:12:44] like this you have a future leak or
+[00:12:45] you're horribly overfit but if we didn't
+[00:12:47] know any better we can use the ins
+[00:12:48] sample permutation test to crush our
+[00:12:50] dreams and the test does the job the
+[00:12:53] model performs just as good or better on
+[00:12:55] the permutations when you see this it's
+[00:12:58] time to throw your strategy idea in the
+[00:13:00] trash ideally you should use the test
+[00:13:02] with as many permutations as possible I
+[00:13:04] think 1,000 is a reasonable minimum this
+[00:13:07] of course means we have to optimize our
+[00:13:08] strategy 1,000 times and it will
+[00:13:11] probably take some time if optimizing
+[00:13:12] your strategy 1,000 times is simply not
+[00:13:15] feasible you probably have a very
+[00:13:17] complex strategy or a very poorly coded
+[00:13:20] strategy in which case I suppose 100
+[00:13:22] would be sufficient but I would say
+[00:13:24] that's a hard minimum this test provides
+[00:13:26] a quas IP value that roughly indicates
+[00:13:28] the probability that your end sample
+[00:13:30] results were primarily found from data
+[00:13:32] mining bias I generally don't continue
+[00:13:34] if it is over 1% but don't treat that
+[00:13:37] like a Target this is a measure if a
+[00:13:39] measure becomes a Target it is no longer
+[00:13:41] a good measure basically if you fiddle
+[00:13:43] with your strategy enough you could
+[00:13:45] probably make this test pass on anything
+[00:13:47] so don't overuse it we've now seen the
+[00:13:49] insample permutation test pass the Donan
+[00:13:52] Channel breakout and reject the decision
+[00:13:54] tree nonsense but why even do this
+[00:13:57] couldn't we just try the strategy on 20
+[00:13:59] 20 data if it worked on data that wasn't
+[00:14:01] used for the optimization then the
+[00:14:03] strategy is probably not overfit well
+[00:14:05] sure we could but once out of sample
+[00:14:07] data is used even once it is no longer
+[00:14:09] truly out of sample suppose we optimize
+[00:14:11] strategy a on 2016 through 2019 then
+[00:14:14] test it on 2020 data and we find our out
+[00:14:17] of sample results to be decent but then
+[00:14:19] we come up with another idea strategy B
+[00:14:22] we optimize strategy B just the same on
+[00:14:24] 2016 through 2019 then we also test it
+[00:14:27] on 2020 we find that strategy B did
+[00:14:29] better than strategy a so one might
+[00:14:31] think the new idea was better but now
+[00:14:33] there is a selection bias strategy B did
+[00:14:36] better compared to strategy a the
+[00:14:38] results of B on 2020 data are inflated
+[00:14:41] by selection bias now realistically I've
+[00:14:43] already tested many things on 2020 data
+[00:14:46] and it definitely isn't out of sample
+[00:14:47] for me rather it is a validation set it
+[00:14:50] is a good idea to walk forward and
+[00:14:52] optimize strategy testing it on data it
+[00:14:54] did not use to optimize that is how the
+[00:14:57] strategy will have to trade in reality
+[00:14:58] after all all and if we test a strategy
+[00:15:00] on data it did not use to optimize the
+[00:15:02] results will not benefit from any data
+[00:15:04] mining bias however if we walk forward
+[00:15:07] test 100 different strategies on 2020
+[00:15:09] data and select the best one there will
+[00:15:11] be a massive selection bias selection
+[00:15:14] bias can allow us to effectively overfit
+[00:15:16] the validation data despite it not being
+[00:15:18] used for strategy optimization every
+[00:15:20] time we reuse out of sample data or
+[00:15:22] rather validation data the selection
+[00:15:24] bias is adding up this is why we use the
+[00:15:26] ample permutation test we can detect
+[00:15:29] that our idea is bad before we waste the
+[00:15:31] out of sample data or stack up even more
+[00:15:33] selection bias on the validation data
+[00:15:36] anyways with all that in mind our
+[00:15:38] optimization of the Donan breakouts look
+[00:15:40] back passed the insample permutation
+[00:15:42] test so now let's walk forward the Donan
+[00:15:45] breakout this function will return the
+[00:15:47] walk forward signal one of the
+[00:15:48] parameters is the train look back how
+[00:15:50] much data to optimize on I have it set
+[00:15:53] to optimize on the last four years by
+[00:15:55] default assuming hourly data is used the
+[00:15:57] train step is how often we reoptimize I
+[00:16:00] set it to 30 days ideally you should
+[00:16:02] retrain strategies as often as is
+[00:16:05] feasible but to make the code run fast
+[00:16:07] enough to accommodate my brain rot I
+[00:16:09] used 30 days we set the index of the
+[00:16:11] next optimization and loop through all
+[00:16:13] the data every time the index is equal
+[00:16:15] to the next train variable we reoptimize
+[00:16:18] compute the new signal and increment the
+[00:16:20] optimization index by the train step
+[00:16:22] this is pretty inefficient code but it's
+[00:16:24] simple and it works here are the results
+[00:16:26] of the Walk forward signal on 2020 data
+[00:16:28] it had a profit factor of 1.04 which is
+[00:16:31] worse than what we saw in Sample
+[00:16:33] generally that is to be expected as
+[00:16:35] these results do not benefit from any
+[00:16:37] data mining bias the only bias in play
+[00:16:39] here is the potential selection bias if
+[00:16:41] we had already walked forward tested
+[00:16:43] other strategies using this data at this
+[00:16:46] stage I ask myself is this worth trading
+[00:16:48] the answer is subjective it depends on
+[00:16:50] your standards maybe you have higher or
+[00:16:52] lower standards than me for me I
+[00:16:54] wouldn't bother with this it kind of
+[00:16:55] sucks but the line did go up and to keep
+[00:16:58] the video going I'll say this is good
+[00:16:59] enough to get these results we optimized
+[00:17:02] the Donan breakout on these four years
+[00:17:04] of data these four years are the first
+[00:17:06] training fold of the Walk forward after
+[00:17:08] the first training fold the walk forward
+[00:17:10] function can output a signal that we can
+[00:17:12] test since our walk forward results were
+[00:17:14] satisfactory we're assuming that
+[00:17:15] whatever patterns the strategy learned
+[00:17:17] or optimized on from past data were also
+[00:17:19] present in this future unseen data but
+[00:17:22] what if our optimized strategy is
+[00:17:24] actually worthless what is the chance a
+[00:17:25] worthless strategy could have achieved
+[00:17:27] walk forward results just as good as
+[00:17:29] what we found if we generate a
+[00:17:30] permutation of the data after the first
+[00:17:32] training fold any legitimate patterns in
+[00:17:34] this data will no longer be present
+[00:17:36] there are no legitimate patterns in this
+[00:17:38] permutation if we walk forward the same
+[00:17:40] strategy on this permutation and compute
+[00:17:42] its profit Factor we get an estimate of
+[00:17:44] a profit factor that a worthless
+[00:17:46] strategy could produce and if we
+[00:17:48] generate many permutations we get a
+[00:17:49] distribution of what worthless
+[00:17:51] strategies can produce if our real walk
+[00:17:53] forward results are to be attributed to
+[00:17:55] patterns learned from past data
+[00:17:56] reoccurring in this future data then
+[00:17:58] then our real walk forward profit Factor
+[00:18:00] should be better than the vast majority
+[00:18:02] of profit factors produced by worthless
+[00:18:04] strategies this is the walk forward
+[00:18:06] permutation test you will notice the
+[00:18:08] code is very similar to the ins sample
+[00:18:10] permutation test we load in our data and
+[00:18:12] set the train window to 4 years then we
+[00:18:14] compute the walk forward signal with the
+[00:18:16] signal we can compute our real walk
+[00:18:18] forward profit Factor then we set the
+[00:18:21] number of permutations and loop through
+[00:18:23] them we call the same get permutation
+[00:18:25] function but we set the start index to
+[00:18:27] the train window to only permute dat
+[00:18:29] after the first training fold we compute
+[00:18:31] the profit factor of the Walk forward
+[00:18:32] signal in the same way then we compare
+[00:18:35] the profit Factor found on the
+[00:18:36] permutation to the profit Factor we
+[00:18:38] found on real data we compute our quas
+[00:18:40] IP value and make a histogram of the
+[00:18:42] permutation profit factors I ran the
+[00:18:44] test with 200 permutations and got this
+[00:18:47] the P value is 22% roughly meaning
+[00:18:50] there's a 22% chance the walk forward
+[00:18:52] profit factor of 1.04 could have been
+[00:18:54] achieved by a worthless strategy in
+[00:18:57] other words a 22% chance our walk
+[00:18:59] forward results were just dumb luck
+[00:19:01] ideally this probability is very low and
+[00:19:03] a great strategy will have a very low P
+[00:19:05] value I tend to be slightly more lenient
+[00:19:07] with this test don't get me wrong these
+[00:19:09] results are not good but they're only
+[00:19:11] from 2020 just one year generally I'm
+[00:19:13] willing to accept around a 5% P value on
+[00:19:16] just one year of data but if we had done
+[00:19:18] the walk forward permutation test on two
+[00:19:20] or more years of data then I won't
+[00:19:22] accept a P value above 1% I also used
+[00:19:25] just 200 permutations this is because
+[00:19:28] the walk forward permutation test can
+[00:19:29] take forever to run even on an extremely
+[00:19:32] simple strategy this is the test to
+[00:19:34] start before going to sleeve overall I
+[00:19:36] don't think these results are good
+[00:19:38] enough and I would not trade the Donan
+[00:19:40] Channel with an optimized look back
+[00:19:41] going forward if you want you can test
+[00:19:43] the strategy in 2021 and Beyond to
+[00:19:46] verify it sucks for yourself I learned
+[00:19:48] about these two permutation tests from
+[00:19:50] the book permutation and randomization
+[00:19:52] tests for trading system development by
+[00:19:54] Timothy Masters the author has a PHD in
+[00:19:57] statistics and is the goat of Al rmic
+[00:19:59] trading this video only covers two of
+[00:20:01] the Min tests covered in the book and
+[00:20:03] the book provides much more detail than
+[00:20:04] I did here my copy is very beaten up and
+[00:20:07] I've spilled coffee on it several times
+[00:20:09] as I always have it on my desk if you're
+[00:20:11] serious about algorithmic trading this
+[00:20:12] is a must read I'll leave a link to it
+[00:20:15] below the Donan Channel with an
+[00:20:16] optimized look back did not farewell
+[00:20:18] against the walk forward permutation
+[00:20:20] test in my experience optimizing look
+[00:20:22] backs of indicators rarely generalize as
+[00:20:25] well rather when dealing with strategies
+[00:20:27] that require a look back I find a stable
+[00:20:29] look back value meaning a large variety
+[00:20:31] of look backs have decent performance
+[00:20:33] then I pick a reasonable look back value
+[00:20:35] and stick with it then look to improve
+[00:20:37] the strategy with the chosen look back
+[00:20:39] there are many tests and tools to help
+[00:20:41] validate trading strategies and I only
+[00:20:43] covered two of them in this video some
+[00:20:45] tests or tools are more useful for
+[00:20:46] certain types of strategies but I always
+[00:20:48] use these two tests regardless of the
+[00:20:51] strategy I will not use a trading
+[00:20:53] strategy if it did not have very low P
+[00:20:55] values for both the ins sample and walk
+[00:20:57] forward permutation test
+[00:20:59] this video has been a rough outline of
+[00:21:00] how I develop and validate a trading
+[00:21:02] strategy but the process and steps
+[00:21:04] should be applicable to most strategies
+[00:21:06] and certainly all price-based strategies
+[00:21:09] no process is bulletproof if you are
+[00:21:11] irresponsible with your development
+[00:21:13] process no amount of fancy tests can
+[00:21:15] save you but this is what I do and I'll
+[00:21:17] keep doing it until I find a better way
+[00:21:19] here we compared The Profit factor of a
+[00:21:21] trading strategy between the real price
+[00:21:23] and price permutations you can use
+[00:21:25] permutation tests in many different ways
+[00:21:27] in my previous video I compared the
+[00:21:29] percentage of times price bounced off a
+[00:21:31] moving average between the real price
+[00:21:35] permutation tests to help verify or
+[00:21:37] disprove any assumptions or theories you
+[00:21:39] may have about the markets

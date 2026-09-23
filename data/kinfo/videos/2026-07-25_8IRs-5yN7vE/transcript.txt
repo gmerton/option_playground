@@ -1,0 +1,1817 @@
+[00:00:00] It's crazy that It's crazy that
+[00:00:01] isn't it? It's absolutely crazy.
+[00:00:03] People don't People don't talk about
+[00:00:04] what you've just talked about there.
+[00:00:05] &gt;&gt; H Wayne right there, typically the best
+[00:00:08] at manipulating the stock.
+[00:00:10] &gt;&gt; He's up $10 million,
+[00:00:14] and we put together a a very special
+[00:00:16] presentation covering the insights, the
+[00:00:18] patterns, and the live trades from a $10
+[00:00:21] million trader.
+[00:00:22] &gt;&gt; Anyone can learn this stuff. You don't
+[00:00:24] need a CFA. So, here's what I want to
+[00:00:26] show you today. I have both big wins and
+[00:00:28] painful losses. The first thing I do
+[00:00:31] every morning is boot up my computer and
+[00:00:33] I pull up the scanner. I dump the PR
+[00:00:36] into cloud, and I have AI analyze it for
+[00:00:38] me.
+[00:00:38] &gt;&gt; $184,000,
+[00:00:40] and this was at 160%.
+[00:00:43] How did you make 100 Yeah,
+[00:00:44] &gt;&gt; after it ran 200%. Buy the rumor, sell
+[00:00:48] the news. This is a strategy that I have
+[00:00:51] done time and time again that's made me
+[00:00:54] millions over the years.
+[00:00:55] The
+[00:00:56] IPO's coming out, I believe in around
+[00:00:59] October-ish. That's another uh catalyst
+[00:01:02] that I'm looking to play.
+[00:01:03] &gt;&gt; Well, that's it. That's a million dollar
+[00:01:04] tip if uh
+[00:01:06] if you're going to go on on a podcast.
+[00:01:07] Holy
+[00:01:10] Welcome to Transparent Traders. Today,
+[00:01:12] we have a very special episode because
+[00:01:14] we have David Viverito. He's up $10
+[00:01:17] million, second
+[00:01:19] on the all-time leaderboard, and today
+[00:01:20] we put together a very special
+[00:01:22] presentation because we're going to aim
+[00:01:24] to teach you exactly how he trades. So,
+[00:01:27] we're covering the insights, the
+[00:01:29] patterns, and the live trades
+[00:01:31] from a $10 million trader.
+[00:01:35] David, total total privilege to have you
+[00:01:37] on here. Like, really
+[00:01:39] &gt;&gt; Yeah, thank you for having me.
+[00:01:40] &gt;&gt; Like, honestly, the pleasure is all
+[00:01:42] mine. There There is more pleasure on my
+[00:01:44] side than than anything. It's a It's
+[00:01:46] We're really pleased to get you on. If
+[00:01:47] you had like one end goal for what you'd
+[00:01:49] want to deliver and help people learn
+[00:01:51] today in this 60-minute episode, what
+[00:01:53] would it be?
+[00:01:54] &gt;&gt; Learn how to research stocks. Digging
+[00:01:56] into the news, um digging into the
+[00:01:58] dilution,
+[00:02:00] um
+[00:02:01] things like that. I I combine the the
+[00:02:04] technicals with the fundamentals, and
+[00:02:07] when they both align, uh that usually
+[00:02:09] creates a really solid setup.
+[00:02:10] &gt;&gt; Before we get into an- everything, let's
+[00:02:13] just take a quick look at your journey
+[00:02:14] just for a couple of minutes, and then
+[00:02:15] we'll get into all of the stuff.
+[00:02:18] So, first of all, what do them three
+[00:02:19] letters mean, CFA?
+[00:02:21] &gt;&gt; Chartered Financial Analyst.
+[00:02:23] Um
+[00:02:24] &gt;&gt; How'd you get that?
+[00:02:26] &gt;&gt; I I got it after I graduated college. I
+[00:02:29] didn't know exactly
+[00:02:32] where I would end up. Um
+[00:02:35] so, I decided to start pursuing my CFA
+[00:02:38] for
+[00:02:39] solely for job reasons. It It's the
+[00:02:41] equivalent of a master's degree,
+[00:02:44] essentially.
+[00:02:45] &gt;&gt; Has that helped you in your trading much
+[00:02:46] or
+[00:02:49] &gt;&gt; Probably not.
+[00:02:51] &gt;&gt; [laughter]
+[00:02:53] &gt;&gt; All right. So, what today we're going to
+[00:02:54] share exactly what has helped you in
+[00:02:56] your trading, and we'll we'll not cover
+[00:02:58] the the CFA stuff. So, first of all,
+[00:03:00] just introduce yourself.
+[00:03:01] Walk me through your your background.
+[00:03:04] &gt;&gt; Yeah. Well, I started trading in 1999.
+[00:03:08] I got $2,000 from graduating high
+[00:03:11] school,
+[00:03:13] and I ended up losing that losing all
+[00:03:16] that money in the dot-com bubble. I
+[00:03:18] realized I didn't know what I
+[00:03:20] what I was doing.
+[00:03:21] Uh I knew I was interested in trading
+[00:03:24] stocks and the markets, and it was it
+[00:03:26] was a huge passion of mine. And because
+[00:03:29] of that, I actually went to college, and
+[00:03:32] I got a finance degree degree.
+[00:03:34] And I ended up graduating in 2003.
+[00:03:38] And
+[00:03:40] and October of 2003, I I landed a a job
+[00:03:43] at a at a local hedge fund.
+[00:03:46] And there I was just doing some basic
+[00:03:49] stuff, uh tracking P&amp;L, and helping
+[00:03:53] track systematic trading systems and
+[00:03:57] and slowly my
+[00:03:59] slowly I became
+[00:04:01] I got more opportunity to grow and in
+[00:04:05] 2006 I began to run my own merger
+[00:04:09] arbitrage portfolio inside the fund.
+[00:04:12] And that just kept leading to one thing
+[00:04:15] after another. I kept expanding my
+[00:04:17] playbook. In 2008 during the whole
+[00:04:20] housing crisis I did other arbitrage
+[00:04:24] type strategies.
+[00:04:25] And after that died I had to reinvent
+[00:04:28] myself again and I started trading penny
+[00:04:30] stocks.
+[00:04:31] Uh,
+[00:04:33] all the good promotion like awesome
+[00:04:35] penny stock promotions, things like
+[00:04:37] that. So and I would I would I would go
+[00:04:39] long and short those penny stock
+[00:04:41] promotions.
+[00:04:43] Uh, when that when that started dying,
+[00:04:46] um,
+[00:04:48] uh, actually the then uh, marijuana
+[00:04:51] stocks in 2014.
+[00:04:54] Um, though most of those tickers were
+[00:04:57] over the counter. So that that was right
+[00:05:00] up my alley and I I did the same thing.
+[00:05:03] Go long and short
+[00:05:05] uh, cannabis stocks. And one one of the
+[00:05:08] strategies that strategies that I'll be
+[00:05:10] talking about today is
+[00:05:13] going long a forward looking catalyst.
+[00:05:16] And during that time with the whole
+[00:05:18] cannabis stocks
+[00:05:19] marijuana was um, being legalized and
+[00:05:23] you know, first Colorado and then
+[00:05:25] then another few other states and things
+[00:05:27] like that. So there was a a lot of
+[00:05:29] catalyst to to uh, to get long leading
+[00:05:33] into the catalyst. And that was a very
+[00:05:36] profitable strategy and time for me.
+[00:05:42] &gt;&gt; Can I just share go ahead because like
+[00:05:44] when when I'm like reading some of your
+[00:05:46] background and portfolio like we hear
+[00:05:47] words like hedge fund, we hear words
+[00:05:49] like merger arbitrage portfolio.
+[00:05:52] Like but then I've saw the setups that
+[00:05:54] you trade and I've already seen
+[00:05:56] disclaimer a lot of this deck and and a
+[00:05:58] lot of the stuff that you do is is not
+[00:06:01] so complicated crazy complicated. So
+[00:06:03] like how complicated is your trading and
+[00:06:05] how complicated complicated does it need
+[00:06:07] to be to make money?
+[00:06:09] &gt;&gt; Yeah, it doesn't have to be complicated.
+[00:06:12] I don't typically trade do merger
+[00:06:15] arbitrage anymore.
+[00:06:19] I'm mostly small cap trader.
+[00:06:22] And but I I I am looking into more large
+[00:06:25] cap type strategies, but it
+[00:06:27] it's not complicated. Anyone anyone can
+[00:06:29] learn this stuff. You don't need a CFA.
+[00:06:32] You don't need to get a degree.
+[00:06:34] You just need to to learn and study and
+[00:06:37] there's so many good resources out
+[00:06:38] there.
+[00:06:39] &gt;&gt; You don't have to be like super
+[00:06:41] intelligent
+[00:06:42] to make a lot of
+[00:06:43] &gt;&gt; No,
+[00:06:44] I am I'm not the
+[00:06:45] I'm definitely not the smartest person
+[00:06:47] in the
+[00:06:48] world, but what I can say is that I
+[00:06:50] applied myself and I and I worked hard
+[00:06:53] in school and I worked hard after
+[00:06:55] school. Um
+[00:06:57] Just learning more about stocks,
+[00:06:59] constantly adapting, constantly
+[00:07:02] researching new ideas. And yeah, with my
+[00:07:05] background I think I think it shows that
+[00:07:07] that that persistence.
+[00:07:09] &gt;&gt; See see this is really important because
+[00:07:11] I've heard I've heard people recently
+[00:07:13] say in interviews and it was on it was
+[00:07:15] on one of the the young market it was on
+[00:07:17] the young market with Ed Book I I heard
+[00:07:19] this and a lot of the top traders that
+[00:07:21] to have success it was
+[00:07:24] so time consuming it was almost an
+[00:07:26] addiction.
+[00:07:28] Is that what you mean when you say apply
+[00:07:30] yourself like to that level?
+[00:07:32] &gt;&gt; Yeah, I was I was definitely addicted
+[00:07:35] ever since 1999 I've been addicted to
+[00:07:38] the markets.
+[00:07:39] Now in 2021 and 2025, you know, when I
+[00:07:43] was going through my drawdown, I I
+[00:07:45] got to say I wasn't you know, I wasn't
+[00:07:48] loving trading anymore. So, it it it it
+[00:07:50] does get hard and challenging at times.
+[00:07:53] But, uh persistence is the key. You you
+[00:07:55] just got to keep just got to keep
+[00:07:57] chugging along, showing up every day.
+[00:08:00] &gt;&gt; And and by not applying yourself, what
+[00:08:01] what does that mean? Does like how many
+[00:08:04] hours in a day does applying yourself
+[00:08:05] mean?
+[00:08:07] &gt;&gt; Yeah, I would say I
+[00:08:09] you got to you got to make this a
+[00:08:10] full-time job at least.
+[00:08:13] You know, there there's there's a lot to
+[00:08:15] be done. A lot a lot of research, a lot
+[00:08:17] of prep before the market open. During
+[00:08:19] the trading day, you got to be
+[00:08:21] constantly monitoring positions,
+[00:08:23] checking for news. If it's slower, great
+[00:08:26] time to work on other strategies,
+[00:08:29] enhancing your playbook.
+[00:08:31] Yeah, building relationships with
+[00:08:32] others. There
+[00:08:34] there's always something to do. In 2025,
+[00:08:37] uh
+[00:08:38] things changed a a little bit. Uh
+[00:08:42] Greg Shabica and Jon uh my two partners
+[00:08:44] and friends, um
+[00:08:47] basically, Greg is pretty much
+[00:08:50] semi-retired now and
+[00:08:53] and I took over the responsibility of uh
+[00:08:56] starting a new fund funded by the three
+[00:08:59] of us.
+[00:09:00] And that's where Helium Master Trading
+[00:09:02] came about. And early 2021,
+[00:09:06] um I had a really good stretch in the
+[00:09:09] markets.
+[00:09:11] And then
+[00:09:13] and then I went through a four-year-long
+[00:09:16] drawdown.
+[00:09:18] And from 2020 from mid-2021 to 2025.
+[00:09:23] And that was just
+[00:09:25] that just wrecked me mentally. It It was
+[00:09:27] just so tough.
+[00:09:28] And and I I started doing things that I
+[00:09:31] don't normally do. I I
+[00:09:33] I I just started running like a
+[00:09:36] portfolio. I was like real bullish on
+[00:09:38] gold and silver and I was running like
+[00:09:41] long short portfolio and I
+[00:09:44] I was just getting nowhere plus my small
+[00:09:46] cap trading was suffering.
+[00:09:48] And I would take like with my small cap
+[00:09:50] trading I'd take two steps forward, two
+[00:09:52] steps back and I had
+[00:09:55] then I went through a divorce, a
+[00:09:57] separation and a divorce in 2022 and I
+[00:10:00] just between the market and the changing
+[00:10:03] environment and my personal life
+[00:10:07] it was it was just a huge struggle for
+[00:10:09] and I had a I had to find myself again.
+[00:10:14] And it and things didn't start clicking
+[00:10:15] and so as you could see in 2025 I
+[00:10:19] I had a nice run in 2025 and it's still
+[00:10:21] going in 2026.
+[00:10:24] &gt;&gt; Yeah, it's it's crazy like when the when
+[00:10:26] people say that
+[00:10:28] in trading you'll you'll really find out
+[00:10:31] trading will help you show the person
+[00:10:32] that you are and it'll expose your
+[00:10:34] vulnerabilities. But then at the same
+[00:10:36] time you you can't trade with any level
+[00:10:38] of success unless you're in tune with
+[00:10:40] who you are as well and that what
+[00:10:41] happened to you is you got lost a little
+[00:10:43] bit and
+[00:10:44] then your trading got lost too.
+[00:10:46] &gt;&gt; I definitely got lost.
+[00:10:49] &gt;&gt; Did you did you hold on to that gold and
+[00:10:52] that portfolio of gold and silver
+[00:10:53] actually? You must have made a 100 times
+[00:10:55] your money if you had if you had held
+[00:10:56] on.
+[00:10:57] &gt;&gt; Well, let's just say I messed that up
+[00:10:59] too. I I I sold too early.
+[00:11:03] &gt;&gt; Yeah, it it went all the way up and all
+[00:11:04] the way down but um
+[00:11:07] you you are fortunately you're in a
+[00:11:08] place where
+[00:11:10] you live in a trade rather than trade to
+[00:11:12] live. You you've finally reached that
+[00:11:13] kind of that point.
+[00:11:16] And I mean and on that subject can you
+[00:11:19] just walk me through uh Trader Pods
+[00:11:21] which is a new initiative that you've
+[00:11:23] launched to help other traders?
+[00:11:26] &gt;&gt; Yeah, just a a few months ago my wife
+[00:11:30] recently started traderpods.org.
+[00:11:33] Uh traderpods is a it's just a free
+[00:11:35] social trading community where traders
+[00:11:38] from all over the world can come
+[00:11:40] together and grow. The core idea is
+[00:11:43] small pods, which is a great way to
+[00:11:46] enhance your playbook, backtest new
+[00:11:49] strategies, keep each other accountable,
+[00:11:52] whatever you want to do with with your
+[00:11:54] small little pod. Um beyond the pods,
+[00:11:57] there's a main trading chat where I'm
+[00:12:00] there. I I share my trade ideas in real
+[00:12:02] time.
+[00:12:04] Yeah, there's the main main trading chat
+[00:12:06] right there.
+[00:12:08] And uh the dashboard works very similar
+[00:12:11] to Twitter.
+[00:12:13] Uh there's forums that that works
+[00:12:16] similar to Reddit.
+[00:12:18] And then there's also a map feature
+[00:12:21] where you can find and and meet traders
+[00:12:23] near you. And it's all completely free.
+[00:12:26] So.
+[00:12:28] &gt;&gt; No, that's it's amazing what you're
+[00:12:29] talking initiative to uh build this. And
+[00:12:32] if anyone is a biotech trader, I have a
+[00:12:34] community in a little pod. So uh please
+[00:12:37] jump on and join. We'll put the the link
+[00:12:39] below in the description. And so what I
+[00:12:41] love about this is your And why I think
+[00:12:43] traderpods is cool is you're literally
+[00:12:45] going to give insights into into your
+[00:12:46] strategy for free.
+[00:12:48] Um you've made $10 million, so you're
+[00:12:50] not going to do it in 45 minutes. But I
+[00:12:51] like the idea that if anyone's got
+[00:12:53] questions, they can just go to traderpod
+[00:12:55] and ask you for free. So like
+[00:12:56] &gt;&gt; Yeah. Yeah, I'm I'm here to help.
+[00:12:58] &gt;&gt; So here's what I want to show you today.
+[00:13:00] Uh 2026 has been a standout year for me.
+[00:13:03] Both um
+[00:13:05] I have both big wins and painful losses.
+[00:13:08] Um and these three trades that I want to
+[00:13:11] talk to you about today, they capture
+[00:13:13] that full picture because I think you'll
+[00:13:15] learn more from saying not just what
+[00:13:18] worked well, but also
+[00:13:21] uh what I did wrong and did not work for
+[00:13:24] So the the first one is a day one news
+[00:13:28] trade MOBX. It was my single best long
+[00:13:31] of the year.
+[00:13:32] And it was just the right catalyst in
+[00:13:35] the right environment and I'll walk you
+[00:13:37] through my exact day one research
+[00:13:39] process.
+[00:13:41] Uh the second is the risk lesson, SIDU,
+[00:13:44] S I D U. I shorted the squeeze. I kept
+[00:13:47] adding when it went against me.
+[00:13:50] And even though my thesis was right in
+[00:13:52] the end, I still lost almost $200,000 on
+[00:13:56] that trade.
+[00:13:57] And that just goes to show you when you
+[00:14:01] allow one stubborn loss and how that
+[00:14:04] just keeps snowballing.
+[00:14:06] And the third one is one of my favorite
+[00:14:10] A+ setups, a forward-looking catalyst
+[00:14:13] play.
+[00:14:14] Um and this was all centered around the
+[00:14:16] whole SpaceX IPO hype. And I knew space
+[00:14:20] I knew space stocks would run in into it
+[00:14:23] and they would fade after, so I went
+[00:14:25] long months ahead and then short on the
+[00:14:27] news. It was one thesis, five tickers,
+[00:14:30] both directions, long and short.
+[00:14:33] &gt;&gt; Don, and just before we get into this,
+[00:14:34] like thank you for taking the time to to
+[00:14:36] go through this with us because a lot of
+[00:14:38] traders will do the interviews, but
+[00:14:40] you'll not get you'll not get many
+[00:14:41] 10-million traders being like, "Look,
+[00:14:43] this is how I think. This is the set
+[00:14:45] setup. These are the buttons." So, first
+[00:14:47] of all, thank you for your transparency.
+[00:14:49] It's the right podcast to do it on.
+[00:14:51] So,
+[00:14:51] &gt;&gt; Oh, you're welcome.
+[00:14:53] &gt;&gt; So, first of all,
+[00:14:54] like what what what's your general
+[00:14:56] process for finding these day one longs?
+[00:14:59] David's about to jump in with strategy,
+[00:15:01] just a very quick message. 50% off
+[00:15:03] Kinfolk for life is now available. $12 a
+[00:15:07] month, cancel anytime to see what some
+[00:15:08] of the best retail traders out there are
+[00:15:11] doing and much, much more. The link is
+[00:15:13] in the description with the coupon to
+[00:15:15] claim that. Click that now and also I
+[00:15:16] hope you love this episode, one of the
+[00:15:18] best ones that I've ever recorded. All I
+[00:15:20] ask is that if you love the content, if
+[00:15:22] you like it, if you've learned
+[00:15:23] something, comment below, tell a friend,
+[00:15:26] and please hit subscribe. Cheers.
+[00:15:28] &gt;&gt; First thing I do every morning is boot
+[00:15:31] up my computer and I pull up the
+[00:15:33] scanner.
+[00:15:34] And the scanner's real basic. It just
+[00:15:36] shows the largest percent percent
+[00:15:39] gainers on the day premarket. Um
+[00:15:42] typically anything under 40%
+[00:15:45] I I I ignore um on the small cap side
+[00:15:49] anyway.
+[00:15:50] And as soon as a ticker shows up on the
+[00:15:53] scanner, uh it's gapping up over 40%, I
+[00:15:56] start digging into the news. And the
+[00:15:58] first thing I do is I go to
+[00:16:00] dilutiontracker.com
+[00:16:02] and I look at the float. That's the most
+[00:16:05] number one important thing for me
+[00:16:07] because
+[00:16:09] I've been burned before trading super
+[00:16:11] low float stocks. They're scary. I just
+[00:16:13] don't want that risk. Anything under 1
+[00:16:15] million float, I'm likely not shorting
+[00:16:18] unless I have a very good reason to and
+[00:16:21] it would be also be on the smaller side.
+[00:16:24] Um from there on dilution tracker, I
+[00:16:27] look at both the historical and
+[00:16:29] potential dilution. Like who are they
+[00:16:32] underwriter who are who are the
+[00:16:33] underwriters? Who are the offering
+[00:16:35] participants? When do they like to raise
+[00:16:38] and how? Are there any warrants? Are
+[00:16:39] there any convertibles outstanding? Any
+[00:16:42] ATMs, SPAs?
+[00:16:44] I also like to look at the institutional
+[00:16:47] ownership is
+[00:16:49] as well.
+[00:16:50] And then I then I check for the news.
+[00:16:52] Like why is the stock moving? It And if
+[00:16:56] there is a PR I take that PR, I copy it,
+[00:16:59] and I dump the PR into Claude. And I
+[00:17:02] have AI analyze it for me. It's It's
+[00:17:04] that simple. And then
+[00:17:07] And then I talk to Claude and I ask it
+[00:17:09] questions. And Claude's kind of like
+[00:17:11] learned what questions I typically ask
+[00:17:14] it. So it usually just now spits out
+[00:17:16] everything I look for.
+[00:17:19] And uh things I look for is that is this
+[00:17:22] news repeated or has is a similar news
+[00:17:25] have been in the past? Was this news
+[00:17:27] known already?
+[00:17:29] Is there any forward-looking catalyst?
+[00:17:31] And I also lately I've been trying to
+[00:17:34] stay away from China related tickers.
+[00:17:37] So, I also have plugged in uh if there's
+[00:17:40] any ties
+[00:17:42] ties to China.
+[00:17:44] And then from there, I
+[00:17:46] &gt;&gt; No, I was just going to say that's a
+[00:17:47] really really clever and simple way to
+[00:17:49] use AI. That's all I was going to say.
+[00:17:52] &gt;&gt; Yeah. Yeah, it's very simple. Everyone
+[00:17:54] should be using it. So.
+[00:17:56] Yeah, and then from there, I pull up the
+[00:17:58] daily chart. I look at previous big
+[00:18:01] volume days in the past and
+[00:18:03] you could pull up the intraday moves on
+[00:18:06] how that stock traded that day. Are
+[00:18:08] there any reverse splits?
+[00:18:11] Uh I also go back and I if the company
+[00:18:15] is known to do a lot of offerings, I
+[00:18:17] also
+[00:18:19] do like a timeline thing. Like I look at
+[00:18:22] when they typically like to raise. Are
+[00:18:24] they raising on like a day-one news
+[00:18:27] event?
+[00:18:28] Or do they like to raise, you know,
+[00:18:30] premarket, maybe during the trading day,
+[00:18:32] after hours?
+[00:18:34] Like
+[00:18:35] when does a company like to raise? It
+[00:18:38] So, that kind of gives me insight on why
+[00:18:41] this move is happening.
+[00:18:42] &gt;&gt; See, that that's something that I've
+[00:18:44] heard other millionaire traders say and
+[00:18:47] and I'm hearing you say it as well. So,
+[00:18:49] it's like one of those little niche not
+[00:18:51] a niche secret, but it's something that
+[00:18:52] I hear only the top traders talking
+[00:18:54] about. And it's that thing of like who
+[00:18:56] the underwriters are and when do they
+[00:18:58] raise? So, like by that, you mean like
+[00:19:00] is it like is it Canaccord Genuity or
+[00:19:02] who who are the underwriters? Do you can
+[00:19:04] you name like a couple of them that you
+[00:19:05] look for?
+[00:19:07] &gt;&gt; Yeah, I mean typically H.C. Wainwright
+[00:19:10] is
+[00:19:11] you know, out of like the third-tier
+[00:19:13] underwriters, they
+[00:19:15] they're typically the best at
+[00:19:17] manipulating the stock.
+[00:19:18] So, uh if it's HC Wainwright, I'm
+[00:19:21] usually a little bit uh this might the
+[00:19:24] stock might be a little bit more tricky
+[00:19:26] to on the short side. So, everybody else
+[00:19:30] or uh you know, I don't I don't really
+[00:19:32] have any other insight beyond that. You
+[00:19:34] know, I kind of trade them all the same.
+[00:19:37] &gt;&gt; Uh but that's that's a really good
+[00:19:38] insight cuz I heard Eddy trades say
+[00:19:40] something like that as well. He was
+[00:19:42] like, "Oh, it's HC Wainwright, so you've
+[00:19:44] got to expect some tricks on the tape
+[00:19:46] and stuff like that." And I'm like, "I
+[00:19:47] just never
+[00:19:48] &gt;&gt; Exactly.
+[00:19:49] &gt;&gt; I just never anticipated that you could
+[00:19:51] get manipulated because of an
+[00:19:52] underwriter." But the underwriter who
+[00:19:53] does the offering also manages
+[00:19:56] is could also be responsible for the
+[00:19:59] being the them behind the tape.
+[00:20:02] &gt;&gt; Y- Yeah, yeah, yeah, for sure. They want
+[00:20:04] to get price and volume up so that they
+[00:20:06] could get off the biggest offering they
+[00:20:08] can.
+[00:20:09] &gt;&gt; So, so they are responsible for being
+[00:20:11] the market maker as well.
+[00:20:13] &gt;&gt; Yes.
+[00:20:14] Yes.
+[00:20:15] &gt;&gt; It's crazy that It's crazy that
+[00:20:19] Uh people don't people don't talk about
+[00:20:21] what you've just talked about there. So,
+[00:20:22] that is a killer killer killer point
+[00:20:25] that uh is tremendous value already. So,
+[00:20:28] talk me through talk me through this
+[00:20:30] trade now. So,
+[00:20:32] what made this trade the best long of
+[00:20:35] the year for you?
+[00:20:38] &gt;&gt; Yeah, so the setup was easy.
+[00:20:40] Uh it came on March 3rd, which happened
+[00:20:43] also be the day day four of the Iran war
+[00:20:46] at 7:30
+[00:20:48] MOBX announced a US Navy Tomahawk
+[00:20:51] missile component order.
+[00:20:53] It was just the right catalyst in the
+[00:20:55] right environment with being only day
+[00:20:57] four in the Iran war.
+[00:20:59] Uh you know, the US Navy is over there
+[00:21:02] in the strait shooting off Tomahawk
+[00:21:03] missiles, and uh this was a PR on
+[00:21:07] on that exact same thing. And
+[00:21:10] and I just saw that as a A+ opportunity.
+[00:21:15] &gt;&gt; But the thing is though, you don't need
+[00:21:16] to know I mean, if you don't know that
+[00:21:18] the Iran war is going on when the Iran
+[00:21:20] war is going on, you're you're hiding
+[00:21:21] under a rock. But like, you don't need
+[00:21:23] to know all of the nitty-gritty of every
+[00:21:25] of every answer because Claude's just
+[00:21:26] telling you this information, right?
+[00:21:27] You're saying, "Claude has a press
+[00:21:28] release. Does this relate to anything in
+[00:21:30] the news right now?" And Claude will
+[00:21:32] say,
+[00:21:33] "Actually, there's a massive war and
+[00:21:35] America is shooting all of these
+[00:21:36] Tomahawks."
+[00:21:37] &gt;&gt; Yeah. Yeah, I actually did ask
+[00:21:41] Claude at the that day on what missiles
+[00:21:44] were being used to make sure that it was
+[00:21:47] the Tomahawk missile, and it was the
+[00:21:49] primary missile.
+[00:21:50] &gt;&gt; Holy
+[00:21:52] And it's that simple. It's It's not that
+[00:21:55] simple, but it's that simple.
+[00:21:57] &gt;&gt; Yeah, it just gave me the extra
+[00:21:58] conviction that
+[00:22:01] um, that this would get more attention.
+[00:22:05] &gt;&gt; Okay. Now, so that this is your trade
+[00:22:07] verified on Profit. $184,000.
+[00:22:13] you took it from 0.44 to 1.15,
+[00:22:17] uh, from March 3rd to March 4th. If
+[00:22:19] anyone wants to like look it up or
+[00:22:20] anything, but I guess we can just And
+[00:22:23] this was a 160%.
+[00:22:27] How do you make 160%?
+[00:22:28] &gt;&gt; Yeah, and that's after it ran 200%.
+[00:22:31] &gt;&gt; You made 160%.
+[00:22:35] That's a crazy That's a That's a huge
+[00:22:37] That's a huge, uh, Uh, is this typical?
+[00:22:40] Or is this This is why it's the number
+[00:22:42] one.
+[00:22:43] &gt;&gt; Oh, definitely. In the small cap market,
+[00:22:45] I mean, there's moves. Stock could go up
+[00:22:47] thousands of percent. So, it's happening
+[00:22:50] more and more.
+[00:22:51] &gt;&gt; And you can hit these
+[00:22:53] But you're mostly short. But so, why
+[00:22:54] would you be mostly short when you can
+[00:22:56] hit these when you can get caught 100%
+[00:22:58] down and you can make 100% long? Why do
+[00:23:00] you Why do you short? it?
+[00:23:02] &gt;&gt; Yeah, I would I would I would say why
+[00:23:04] short is because a lot of the news for
+[00:23:06] small caps are they're just fluff.
+[00:23:09] They're just ways to for the company to
+[00:23:13] get price and volume up. Maybe they
+[00:23:15] needed to get their price over a dollar
+[00:23:17] to remain listed on NASDAQ or
+[00:23:20] you know, maybe they're looking to do an
+[00:23:22] offering. Maybe they're looking at to
+[00:23:24] bail out previous offering participants.
+[00:23:27] So
+[00:23:29] It's
+[00:23:31] Sometimes the games could be a little
+[00:23:32] much, but
+[00:23:34] uh it's a game that I know and I've been
+[00:23:35] doing for for over 10 years.
+[00:23:38] &gt;&gt; This is March 3rd. So there's not really
+[00:23:40] a lot of There's not really a lot of
+[00:23:42] volume. This thing is trading at about
+[00:23:44] 20 cents and out of nowhere
+[00:23:46] you get this massive green bar. Do you
+[00:23:48] look for anything on the daily
+[00:23:49] specifically?
+[00:23:51] &gt;&gt; Uh for this setup, no.
+[00:23:54] Not really.
+[00:23:55] I mean, the stock was very oversold from
+[00:23:57] what I remember. It was It was down and
+[00:24:00] out. Yeah, it was trading 44 you know,
+[00:24:02] it was trading under 40 cents and like
+[00:24:07] I I just
+[00:24:08] &gt;&gt; The worst of it.
+[00:24:09] &gt;&gt; Yeah, you
+[00:24:11] Yeah, it was it was more about the news
+[00:24:14] being the right news in the right
+[00:24:15] environment for me.
+[00:24:17] &gt;&gt; Yeah, so it's it's funny you say that
+[00:24:19] cuz a lot of people are like, "I'm a
+[00:24:21] technical trader and I'm technical until
+[00:24:23] I die." But you're basically saying
+[00:24:26] technicals don't matter too much. Yeah,
+[00:24:28] it's it's all about It's all about the
+[00:24:30] news and the fundamentals.
+[00:24:32] &gt;&gt; Yeah, exactly. Like if if I would just
+[00:24:34] be a technical short trader, I would be
+[00:24:36] probably shorting this. So
+[00:24:38] &gt;&gt; You bought this stock.
+[00:24:41] Like how how Do you know how all you
+[00:24:45] &gt;&gt; Yeah.
+[00:24:45] &gt;&gt; If you were a beginner, I would say you
+[00:24:47] were chasing.
+[00:24:49] &gt;&gt; Well, I would say no, I wasn't chasing.
+[00:24:53] But this stock
+[00:24:55] The stock did jump over 200% and really
+[00:24:59] fast on the news when the news came out
+[00:25:01] at 7:30.
+[00:25:04] The stock then pulled back and kind of
+[00:25:06] went sideways. One thing I look for
+[00:25:09] with longs and also staying out of the
+[00:25:12] short is when there's shallow pullbacks.
+[00:25:15] So so early on the stock had that
+[00:25:19] shallow pullback and around 8:05 I
+[00:25:22] started accumulating
+[00:25:24] that that pullback.
+[00:25:27] And it it did drift sideways
+[00:25:31] and it it didn't break out until around
+[00:25:33] 11:10. So it traded sideways for like 3
+[00:25:37] hours.
+[00:25:39] And I had I had a pretty big position
+[00:25:41] and I did get chopped up a little bit.
+[00:25:44] But what kept me
+[00:25:46] in the in the trade was the conviction
+[00:25:49] on the catalyst. Missiles during an Iran
+[00:25:52] war.
+[00:25:53] And I
+[00:25:55] &gt;&gt; Government contract, sorry. Was that a
+[00:25:56] government contract? It must have been
+[00:25:58] obviously cuz it was a
+[00:25:59] &gt;&gt; Yeah. Government high getting, yeah.
+[00:26:02] &gt;&gt; I don't know if it was directly to the
+[00:26:03] government or some kind of third party
+[00:26:06] or whatnot, but
+[00:26:07] I don't remember that.
+[00:26:09] &gt;&gt; But yeah,
+[00:26:10] &gt;&gt; [clears throat]
+[00:26:10] &gt;&gt; it's just with Norton as well. We we
+[00:26:12] couldn't get the split chart of this. So
+[00:26:16] So the only chart we could get was
+[00:26:17] hourly. So David wasn't in fact buying
+[00:26:20] like the top of this 1-minute candle or
+[00:26:22] anything. This is actually 1-hour
+[00:26:23] candle.
+[00:26:24] So the the intraday that you were
+[00:26:25] trading is a little bit different. So
+[00:26:27] when you talking about those shallow
+[00:26:28] pullbacks, it's it's a different price
+[00:26:30] action the way you can see here.
+[00:26:32] &gt;&gt; But yeah.
+[00:26:32] &gt;&gt; You can you can kind of see it with the
+[00:26:35] two red bars. You can see, you know, my
+[00:26:37] buy and it it did I was red on the trade
+[00:26:41] for the first few hours for sure.
+[00:26:43] And um
+[00:26:46] but I stayed convicted in it and the
+[00:26:49] stock was holding relatively strong.
+[00:26:52] And it didn't it didn't break out until
+[00:26:54] around 11:10.
+[00:26:57] And after it broke out, I was just
+[00:27:00] selling all the way up in the strength.
+[00:27:04] And I I was out about 3/5 of the
+[00:27:07] position by the close.
+[00:27:09] And then I held the rest for an
+[00:27:11] overnight gap.
+[00:27:15] man, it happened to be my best long of
+[00:27:17] the year.
+[00:27:19] &gt;&gt; So, yeah, and you you bought this
+[00:27:21] probably I don't know how much up. Like
+[00:27:23] you you just said it was a 150 200% up
+[00:27:25] already. But sometimes the higher up it
+[00:27:27] is the better because you know most
+[00:27:29] retail short sellers are just shorting
+[00:27:31] it anyway because it's up too much.
+[00:27:33] &gt;&gt; Yeah, exactly.
+[00:27:34] &gt;&gt; 50% it's up too much. And they haven't
+[00:27:37] probably looked at the news.
+[00:27:38] Or they haven't they haven't took it
+[00:27:40] seriously. Is this short blown up or is
+[00:27:43] this this news is unbelievable and it's
+[00:27:46] going to change the company forever? Or
+[00:27:47] is it a bit of both? Do you think?
+[00:27:49] &gt;&gt; Well, I don't think I think the company
+[00:27:51] is likely lower now. So, I'm not sure
+[00:27:54] that news changed the company. But
+[00:27:56] um yeah, it was it's probably a
+[00:27:57] combination of uh shorts covering.
+[00:28:01] Uh to to aggressive on the shorts were
+[00:28:05] covering and uh you know, the long
+[00:28:07] momentum just based on the news.
+[00:28:10] &gt;&gt; Yeah, it's cuz you you can almost um
+[00:28:14] you can see the ball is like it they got
+[00:28:16] bigger bigger then explode. And I just I
+[00:28:18] can just picture a bunch of shorts just
+[00:28:21] accounts being blown there, but
+[00:28:24] Uh any reason why you didn't want to
+[00:28:25] hold overnight?
+[00:28:27] &gt;&gt; I did I did hold overnight. I held a
+[00:28:29] piece. So, I sold 3/5 by the close. And
+[00:28:34] then I held the rest overnight. I just
+[00:28:36] wanted to take some profits just just in
+[00:28:38] case they came out with an offering or
+[00:28:41] or whatnot.
+[00:28:43] And uh premarket, we did get the gap up.
+[00:28:46] But as you could see there, it was kind
+[00:28:47] of
+[00:28:49] rolling down a little bit. So, I'm glad
+[00:28:52] I I did sell pre-market.
+[00:28:54] &gt;&gt; Yeah, yeah. So, you had that final kind
+[00:28:57] of 4:00 a.m. squeeze, and then it it
+[00:28:59] didn't it didn't keep the momentum.
+[00:29:04] Yeah, I would just say uh conviction was
+[00:29:06] the key to this one. It was It was just
+[00:29:09] I was convicted that I had the right
+[00:29:11] catalyst in the right environment. I I
+[00:29:13] trade uh most of my trades. I do I do
+[00:29:16] use hotkeys, but for most exits, I I
+[00:29:21] scale I scale out of the trade using
+[00:29:24] what I call a D-WAP. It works similar to
+[00:29:28] it It has a time component like a T-WAP,
+[00:29:30] and then also has a price component
+[00:29:33] where it become I could set uh
+[00:29:36] price points where I want to be fully
+[00:29:38] out of so many shares that I give it.
+[00:29:43] uh as it approaches that price of when I
+[00:29:46] want to
+[00:29:47] uh get out, it will automatically put
+[00:29:49] out orders for me to sell.
+[00:29:52] &gt;&gt; Nice. Can I just ask, what's what's your
+[00:29:55] What do you think generates the best uh
+[00:29:57] ROI for a trader? And obviously, it it
+[00:29:59] depends on what the trader's personality
+[00:30:01] is and what the best style, but maybe
+[00:30:02] for you, where do you find the most
+[00:30:04] value? Is it in day trading or swing
+[00:30:06] trading?
+[00:30:09] &gt;&gt; I I'm typically more of a day trader. If
+[00:30:13] I do take swings, uh
+[00:30:16] I I would say a lot of them are just
+[00:30:18] overnight for just a day or two.
+[00:30:20] Uh
+[00:30:21] but I I do I do run a a small portfolio
+[00:30:25] of longer-term swings.
+[00:30:28] And one of them uh
+[00:30:31] the third trade, the forward-looking
+[00:30:32] catalyst was a longer-terms uh swing
+[00:30:35] trade idea.
+[00:30:37] &gt;&gt; Yeah, we'll take a look at that. And
+[00:30:38] then just for like newer traders, like
+[00:30:40] how does a new trader do this? Like how
+[00:30:42] they manage the risk on this cuz it's
+[00:30:43] like it's up 200% before you've even
+[00:30:45] bought it.
+[00:30:46] Like say someone's got a $2,000 account.
+[00:30:48] How do they How do they do this trade?
+[00:30:52] &gt;&gt; I would say
+[00:30:54] uh size accordingly to their account.
+[00:30:58] I trade with a big account so the risk
+[00:31:00] that I was taking ultimately was small
+[00:31:04] relative to the account size. So the
+[00:31:07] stock could have went to zero and I
+[00:31:09] would have been totally fine.
+[00:31:12] I would I would say always have stops
+[00:31:14] though. Uh some people use uh they have
+[00:31:17] like a max loss day stop where if they
+[00:31:21] hit a certain P&amp;L that they they just
+[00:31:25] their broker will just blow them out.
+[00:31:27] I don't typically trade that way but I
+[00:31:30] know you know, for a smaller trader
+[00:31:32] sometimes that works better. I like to
+[00:31:34] scale in and out of trades. So I like to
+[00:31:38] start small, get a feeler for it, add
+[00:31:43] and let the position grow as it's as
+[00:31:45] it's working.
+[00:31:48] &gt;&gt; I like add to the winner rather than add
+[00:31:49] to the loser.
+[00:31:51] &gt;&gt; Yes, but I
+[00:31:54] The second trade I did not do that.
+[00:31:57] &gt;&gt; That's That's a perfect Perfect segue.
+[00:32:02] &gt;&gt; Okay, so talk talk me through this.
+[00:32:04] &gt;&gt; Uh yeah, this was uh Sidus
+[00:32:08] on April 2nd. The stock
+[00:32:12] Space stocks were hot. The The Artemis 2
+[00:32:15] the crew left Earth's orbit.
+[00:32:18] And Sidus was the strongest space stock
+[00:32:21] on the day. It was up 50%
+[00:32:25] and they have nothing to do with
+[00:32:27] Artemis. They had no hardware within the
+[00:32:31] the shuttle. So I looked at Sidus
+[00:32:35] was the they're pretty toxic diluter.
+[00:32:39] So, they've they've done lots of
+[00:32:41] offerings in the past and the setup for
+[00:32:44] me was that
+[00:32:46] that I thought a potential offering was
+[00:32:49] was coming. Sidhu raised five times in
+[00:32:51] 2025.
+[00:32:53] And in December 2025
+[00:32:57] it was just
+[00:32:59] almost to the T. Like
+[00:33:01] uh on December 22nd, there was a big gap
+[00:33:04] up on heavy volume and then an offering
+[00:33:06] came after the close.
+[00:33:09] A few days later on December 26th, it
+[00:33:12] gaps up again uh even at higher prices
+[00:33:15] and then they announced another offering
+[00:33:17] uh shortly before the close.
+[00:33:20] So, Sidhu to me has when there's
+[00:33:24] unexplained strength and heavy volume
+[00:33:27] and there is serial diluter, I felt
+[00:33:30] strongly that a raise was coming.
+[00:33:32] So, one thing that I did ignore was
+[00:33:36] uh how space stocks were were very
+[00:33:38] strong. It was just a hot group, hot
+[00:33:41] sector.
+[00:33:42] Um Artemis 2
+[00:33:45] had that going for it plus the whole
+[00:33:48] SpaceX IPO coming in the summer and
+[00:33:50] overall like on the daily charts, Sidhu
+[00:33:52] wasn't overextended. It was like near
+[00:33:55] lows. It was like trading around two and
+[00:33:57] then it popped up to three. It was
+[00:33:59] nowhere
+[00:34:00] um overextended on the daily and I took
+[00:34:05] I took a big trade with
+[00:34:07] I felt like it was an A+ trade based on
+[00:34:10] the offering potential, but it was not
+[00:34:12] an A+ trade based on the technicals and
+[00:34:15] that's where I went wrong.
+[00:34:17] &gt;&gt; Yeah, so and then so I'm just trying to
+[00:34:20] think as well cuz I was mentioning the
+[00:34:21] difference There's two questions I've
+[00:34:23] got uh
+[00:34:24] but the first one is
+[00:34:27] what's the difference between the day
+[00:34:28] one of the best trade of the year and
+[00:34:30] and what's the difference between the
+[00:34:31] day one of the worst trade of the year?
+[00:34:32] Just to kind of spell it out for new
+[00:34:34] traders cuz they're like, "Hey, you went
+[00:34:35] long and short on the on a day one.
+[00:34:38] Well, how?"
+[00:34:39] &gt;&gt; Yeah, I would I would say this one
+[00:34:42] not all the stars aligned with Sidu
+[00:34:44] because it did have a a positive
+[00:34:46] positive catalyst with the Artemis 2
+[00:34:51] leaving Earth's orbit, plus it also had
+[00:34:54] the whole
+[00:34:56] SpaceX IPO catalyst coming up in a few
+[00:34:59] months.
+[00:35:02] the sector was strong and and I did not
+[00:35:04] respect that strength.
+[00:35:06] &gt;&gt; Yeah. Uh so, this is So, actually both
+[00:35:09] both both both trades that you just
+[00:35:11] shown us all good day ones. It kind of
+[00:35:14] kind of because Sidu had the the
+[00:35:16] dilution thing that threw you off, the
+[00:35:17] fact that the serial diluted is you put
+[00:35:19] too much conviction into that.
+[00:35:21] &gt;&gt; I I did. I I put too too much And and I
+[00:35:25] thought I had a good average. Like, I
+[00:35:26] waited like
+[00:35:28] I wasn't in too early. I waited for it
+[00:35:30] to be up 50 over 50% on the day and I
+[00:35:33] didn't start shorting it till the end of
+[00:35:35] the day and I I thought for sure an
+[00:35:37] offering was coming after the close.
+[00:35:40] And when the offering did not come after
+[00:35:42] the close like I thought, I told myself
+[00:35:45] I was like, "Well, I have a great
+[00:35:47] average. They'll raise tomorrow morning
+[00:35:49] then or at least they'll get a
+[00:35:51] pullback."
+[00:35:53] And that's where I got And that's where
+[00:35:54] I got stubborn.
+[00:35:57] &gt;&gt; Yeah, so I mean, the stock was pretty
+[00:36:01] much in the twos. It popped up to the
+[00:36:03] threes. So, I think that it was up 50%.
+[00:36:07] You were you were short at about 50% up
+[00:36:09] on a on a on a first green day.
+[00:36:12] &gt;&gt; Mhm.
+[00:36:15] the next morning pre-market
+[00:36:17] it was gapping down a tiny bit.
+[00:36:21] So, right before the open, it was it was
+[00:36:23] gapping down.
+[00:36:25] I thought, "Great. Let me just wait for
+[00:36:27] a little bit more weakness. I'll get
+[00:36:29] out. You know, no offering came again in
+[00:36:32] the morning. So, I was like, oh, I need
+[00:36:34] to get out.
+[00:36:35] &gt;&gt; Yeah, yeah.
+[00:36:36] &gt;&gt; Well,
+[00:36:37] the opening came and the stock ripped
+[00:36:40] and it ripped hard and I did not have
+[00:36:42] stops out in place like I normally do.
+[00:36:46] And then then it caught me, oh, well,
+[00:36:49] it's turning into a better setup. It's
+[00:36:51] even higher now at at better prices.
+[00:36:54] And on the day two, I basically fought
+[00:36:57] it back and forth and then when I
+[00:37:00] finally gave up, it was near the high of
+[00:37:02] the day.
+[00:37:03] Which you could kind of see that candle.
+[00:37:07] Fullish, nearly full.
+[00:37:09] &gt;&gt; Yeah, it was a round almost $4 and I was
+[00:37:13] I think I was almost fully out
+[00:37:16] on day two. Then day three came around
+[00:37:19] and I was like, okay, well, I'm smaller
+[00:37:22] size now. I got room to add.
+[00:37:24] Yeah. I still think they're going to
+[00:37:26] raise and that it's still a good setup
+[00:37:29] and I was just stubborn and it started
+[00:37:32] rolling over pre-market and I I kept
+[00:37:36] adding and then I loaded up on the
+[00:37:40] and then I loaded up on the red and
+[00:37:42] green move thinking like, okay, well,
+[00:37:43] it's gapping down now it moved green.
+[00:37:47] and that is one of my setups when a
+[00:37:50] stock gaps down and then it goes red to
+[00:37:52] green.
+[00:37:53] I short that. Well,
+[00:37:56] ended up getting chopped up again.
+[00:37:59] Yeah.
+[00:38:00] &gt;&gt; this drop, yeah. So, this
+[00:38:02] &gt;&gt; Yeah, it was
+[00:38:03] &gt;&gt; deep
+[00:38:03] &gt;&gt; I was adding all into that weakness
+[00:38:05] pre-market.
+[00:38:06] &gt;&gt; Yeah. So, it's red there. You've got the
+[00:38:08] stock red then the actual line's about
+[00:38:10] 380 or something like that.
+[00:38:12] And you're and then it it's blown
+[00:38:14] through green.
+[00:38:15] &gt;&gt; Yeah, and I did
+[00:38:17] &gt;&gt; Yeah, I did keep some ammo
+[00:38:19] for higher and when it made that red and
+[00:38:21] green move, I loaded up again.
+[00:38:24] But then it kept going higher
+[00:38:27] and higher and I kept getting chopped
+[00:38:29] up, you know, covering some,
+[00:38:31] re-shorting, covering some, re-shorting.
+[00:38:35] and then finally I gave up.
+[00:38:38] I gave up on day
+[00:38:40] day three and I covered near the top
+[00:38:42] again.
+[00:38:43] And I lost almost $200,000 on the on
+[00:38:48] that trade overall over those three
+[00:38:50] days.
+[00:38:52] &gt;&gt; Can I just ask was there ever a time
+[00:38:55] uh where you were green again on the
+[00:38:56] trade? Was there ever a time like for
+[00:38:58] example
+[00:39:00] this this
+[00:39:01] this pre-market kind of thing? This dip
+[00:39:04] &gt;&gt; Yeah, I think
+[00:39:06] I was probably
+[00:39:07] Yeah, I I was I was a little green
+[00:39:10] pre-market on day two.
+[00:39:12] Yeah, for a very short period of time,
+[00:39:15] but it it wasn't enough. I was I wanted
+[00:39:17] more. I I thought it would
+[00:39:20] have a deeper pullback, you know, give
+[00:39:22] me 250.
+[00:39:24] Just never came.
+[00:39:25] &gt;&gt; No, but like two things are amazing
+[00:39:28] about I mean two things are amazing
+[00:39:29] about this. The first one is
+[00:39:31] like how many times do you know that
+[00:39:33] you're in trouble on a stock? You get
+[00:39:35] back to break even, but you think, "Ah,
+[00:39:36] I'm
+[00:39:37] I'm going for the big win now. I'm going
+[00:39:39] for the big win." And it's always just a
+[00:39:41] brief green period before it explodes.
+[00:39:46] &gt;&gt; Yeah, and I got into the trade thinking
+[00:39:49] like, "Oh, they're going to raise after
+[00:39:50] the close." That that is
+[00:39:53] what I predicted and that didn't happen
+[00:39:56] and I should have got out and I should
+[00:39:57] have reset.
+[00:39:59] But instead I ended up fighting it for
+[00:40:01] two more days.
+[00:40:03] &gt;&gt; Yeah, and how much
+[00:40:03] &gt;&gt; And I could have gotten out for a small
+[00:40:04] loss
+[00:40:06] or a small gain.
+[00:40:08] &gt;&gt; there? What's the loss if you cover?
+[00:40:10] Like I like look
+[00:40:13] I'm like not a very good I'm by all
+[00:40:15] standards a bad trader, but like
+[00:40:19] what's what you lose there? Cuz like I
+[00:40:20] understand that you think, "Well, I've
+[00:40:22] got a I've got a good position. It's
+[00:40:24] going to do an offering after hours all
+[00:40:25] pre-market. What's wrong with holding?"
+[00:40:27] Like I kind of get that.
+[00:40:29] But um
+[00:40:31] but like what would you have lost if you
+[00:40:32] just stopped out
+[00:40:34] after day after day two on that rip?
+[00:40:38] &gt;&gt; Yeah, maybe I would have lost like 25
+[00:40:40] grand.
+[00:40:41] &gt;&gt; Yeah, which is totally
+[00:40:44] it's like a not a big loss for you.
+[00:40:46] &gt;&gt; Yeah. Yeah, it's it's more of a normal
+[00:40:49] loss.
+[00:40:51] Something you just wipe your hands of it
+[00:40:53] and move on.
+[00:40:54] But instead, I got into that that fight
+[00:40:58] it mode. You know, like shh. You stop
+[00:41:01] out of some, you re-short, you stop out
+[00:41:03] of some again, and you're just getting
+[00:41:04] chopped up all the way up.
+[00:41:08] &gt;&gt; So like
+[00:41:09] &gt;&gt; And and the stock's increasing in price,
+[00:41:11] and and I believe I was getting bigger
+[00:41:14] and bigger
+[00:41:19] &gt;&gt; But I mean at least you stopped out in
+[00:41:20] the end. That's the good thing, cuz some
+[00:41:22] people some some people can't. They'll
+[00:41:24] just ride it the whole way.
+[00:41:26] &gt;&gt; Yeah. Yeah. I have a pain threshold, and
+[00:41:30] and when something becomes too
+[00:41:32] frustrating and I know I'm wrong, I just
+[00:41:35] I just blow out and and and I let it go.
+[00:41:39] &gt;&gt; So like I mean for me, the biggest
+[00:41:40] lesson there that you've said is
+[00:41:44] when your plan doesn't work anymore,
+[00:41:46] like you should get out. Like when the
+[00:41:47] plan doesn't work, get out. Is is there
+[00:41:49] any other like takeaways that you've
+[00:41:51] picked up from that?
+[00:41:54] &gt;&gt; Uh yeah. So overall
+[00:41:57] on that, I was right. CD did end up
+[00:42:00] raising on April 19th.
+[00:42:04] So I was right on the offering, but my
+[00:42:07] timing was off.
+[00:42:11] the irony was I was bullish on space
+[00:42:14] overall. I was long DXYZ
+[00:42:17] into the whole Artemis two and space and
+[00:42:20] the leading up to the SpaceX IPO.
+[00:42:23] And I I I just let
+[00:42:25] Sid U is a low-quality name that's going
+[00:42:27] to raise and I just let that become more
+[00:42:31] of an emotional position instead of just
+[00:42:34] a trade. It was just
+[00:42:36] I had the thesis right, but it was the
+[00:42:38] wrong technical setup and it was not an
+[00:42:42] nearly an A+ setup on the technicals.
+[00:42:46] And I paid the price.
+[00:42:48] &gt;&gt; But I think like you know what I like
+[00:42:50] about that other than I'm sorry you lost
+[00:42:51] 200,000? It's like it it shows that
+[00:42:54] someone who's made 10 million dollars is
+[00:42:56] still human. Like someone who's made 10
+[00:42:58] million does make mistakes sometimes,
+[00:43:01] but you do some stuff wrong, but you do
+[00:43:03] a lot of stuff right and that that's the
+[00:43:05] difference. I mean, is there any other
+[00:43:07] differences? Like what makes you a 10
+[00:43:08] million trader? What what makes you
+[00:43:10] better than the 90% who lose?
+[00:43:11] &gt;&gt; You have to learn from your mistakes. So
+[00:43:15] I will probably never trade Sid U again.
+[00:43:21] &gt;&gt; But
+[00:43:22] uh I mean
+[00:43:23] I I was too hung up on the whole
+[00:43:24] offering potential. A- and that's that's
+[00:43:27] what what got me. It It was not Sure,
+[00:43:30] from a fundamental standpoint, it was a
+[00:43:33] it was an A+ short, but my timing based
+[00:43:35] on the technicals, it wasn't an A+
+[00:43:38] short, but I was sizing it like it was.
+[00:43:41] So, when both the fundamentals and
+[00:43:44] technical align, that's when you have a
+[00:43:46] really good A+ trade. For Sid U, it was
+[00:43:50] just not ready. It was a hot sector and
+[00:43:53] I I just let my emotions get get the
+[00:43:56] best of me. I I didn't I didn't want to
+[00:43:57] lose.
+[00:43:58] &gt;&gt; Food set up.
+[00:44:00] The long catalyst showed the hype. So,
+[00:44:04] most traders can't go long and short on
+[00:44:06] setups. How do you go How do you manage
+[00:44:08] to go long and short on setups? Because
+[00:44:09] most traders flip-flop and they lose
+[00:44:11] both ways.
+[00:44:16] Yeah, I
+[00:44:17] I had a plan and
+[00:44:19] I did uh at Traders for a Cause, I did I
+[00:44:23] had this all pre- pre-planned in my head
+[00:44:25] at the start of the year and I even
+[00:44:27] shared some of the ideas with people I
+[00:44:29] talked about at Traders for a Cause uh
+[00:44:31] earlier this year.
+[00:44:35] I would say I didn't trade this plan
+[00:44:36] perfectly,
+[00:44:38] but
+[00:44:40] it ended up being a very nice trade for
+[00:44:42] me this year.
+[00:44:45] Basically, the the SpaceX IPO, it's the
+[00:44:48] it would it's the biggest IPO of all
+[00:44:50] time
+[00:44:51] and I knew it was coming out sometime in
+[00:44:53] the summer 2026
+[00:44:56] and it would be dominating
+[00:44:59] the news
+[00:45:00] this whole SpaceX IPO coming out for
+[00:45:06] I I thought space stocks were just
+[00:45:08] really going to run
+[00:45:11] uh into the SpaceX IPO coming out in
+[00:45:14] sympathy.
+[00:45:15] So, it's a classic buy the rumor, sell
+[00:45:18] the news.
+[00:45:19] And and this is a strategy that I have
+[00:45:25] millions over the years. And the vehicle
+[00:45:28] that I chose the main vehicle that I
+[00:45:30] chose was DXYZ, which is a closed-end
+[00:45:34] fund that holds uh private companies
+[00:45:38] that are venture-backed.
+[00:45:39] And SpaceX happened to be its largest
+[00:45:42] holding at the time at around 15%.
+[00:45:46] So, my plan was to buy DXYZ along with
+[00:45:50] other quality space names, not space
+[00:45:53] names like Virgin Galactic, but quality
+[00:45:55] space names,
+[00:45:57] and sell into the strength before the
+[00:45:59] SpaceX IPO.
+[00:46:01] And then then go short after the SpaceX
+[00:46:04] IPO. And that's what I did.
+[00:46:06] &gt;&gt; [snorts]
+[00:46:07] &gt;&gt; And there's a there's an interesting
+[00:46:09] thing with um SpaceX and how they only
+[00:46:12] IPO'd a very small percentage of the
+[00:46:14] float and how that that's all going to
+[00:46:16] get released in the coming weeks, I
+[00:46:17] think. So, that might help the short
+[00:46:19] thesis. I'd be curious to to hear your
+[00:46:21] thoughts on
+[00:46:22] on that. Maybe we can get back to it.
+[00:46:24] We'll We'll just keep on this for now.
+[00:46:27] &gt;&gt; Okay.
+[00:46:28] &gt;&gt; Like SpaceX was an easy one because it
+[00:46:30] was like the biggest news of all time.
+[00:46:31] But like how do you normally Like what's
+[00:46:34] the next hot sector? Like can you tell
+[00:46:35] me that? Like what's what's the next
+[00:46:37] futuristic thing? Do we know? Or have
+[00:46:39] you
+[00:46:39] &gt;&gt; Well, the
+[00:46:40] the Anthropic IPO is coming out.
+[00:46:44] &gt;&gt; I believe in around Octoberish.
+[00:46:48] So, that's another kind of list that I'm
+[00:46:51] looking to play.
+[00:46:53] &gt;&gt; No, that's a great tip. And what does
+[00:46:54] that mean? Does that mean like short
+[00:46:55] software, short like short Adobe
+[00:46:57] Photoshop, and short software names, and
+[00:47:00] and long what?
+[00:47:02] &gt;&gt; Well, the XYZ owns a
+[00:47:05] large I think around a 18% position in
+[00:47:08] Anthropic.
+[00:47:10] So, I I've actually already started a
+[00:47:13] long in the XYZ and I'm doing the same
+[00:47:17] game plan.
+[00:47:18] &gt;&gt; Well, that's a that's a million-dollar
+[00:47:20] tip if I
+[00:47:21] &gt;&gt; Yeah, there you go.
+[00:47:22] &gt;&gt; on the podcast. Holy
+[00:47:25] But what what do you think about Google
+[00:47:26] and Microsoft cuz they've all bought
+[00:47:27] Anthropic as well. I mean, but still
+[00:47:30] big, but they're not going to be able to
+[00:47:31] buy
+[00:47:31] &gt;&gt; so they're so big and their ownership
+[00:47:33] percentage Yeah, compared to how big
+[00:47:35] they are is just so small. So,
+[00:47:38] &gt;&gt; Yeah, I know.
+[00:47:38] &gt;&gt; For sure.
+[00:47:40] &gt;&gt; That is another That is another absolute
+[00:47:43] golden nugget. Let's just quickly have a
+[00:47:45] look at the daily. So, is is there any
+[00:47:47] kind of rule that you have on like
+[00:47:48] buying so many days before buy the rumor
+[00:47:51] sell the news?
+[00:47:52] Do you have any kind of rule or
+[00:47:53] anything?
+[00:47:54] &gt;&gt; Not really. I don't have any uh
+[00:47:57] It's just all kind of feel.
+[00:47:59] So, with DXYZ, I knew the SpaceX IPO was
+[00:48:02] coming out in the summer, likely June.
+[00:48:06] So, uh
+[00:48:07] on 3/11, I just started small.
+[00:48:11] And then on 3/24,
+[00:48:14] that's when the SpaceX valuation raise
+[00:48:17] hit the news, and DXYZ actually popped
+[00:48:20] on volume on that. And then I
+[00:48:23] And then after that happened, I was
+[00:48:24] like, "Okay, this is starting to get
+[00:48:26] more attention. I'm adding to a winner."
+[00:48:28] So, I doubled my size.
+[00:48:31] And then it gapped up the next day, and
+[00:48:33] I actually doubled my size again, which
+[00:48:36] happened to be a little bit of a chase
+[00:48:38] and a short-term top. But I still had
+[00:48:41] ammo I I was still in the add mode, and
+[00:48:44] I still wanted more ammo.
+[00:48:47] after that after that 3/25 add, it did
+[00:48:51] kind of sit around and pull back a
+[00:48:53] little bit, and I added more into that
+[00:48:56] on 3/27.
+[00:48:58] And then I sat with my positions for
+[00:49:00] weeks.
+[00:49:01] And then when it started running, I
+[00:49:03] started just scaling out. And I ended up
+[00:49:06] scaling out from October
+[00:49:09] I'm sorry, from April 29th through May
+[00:49:13] 7th the first time.
+[00:49:16] And unfortunately, I kind of missed the
+[00:49:17] parabolic
+[00:49:20] uh the parabolic leg. I sold too early.
+[00:49:24] Um but the stock did have a nice
+[00:49:26] pullback. And I bought
+[00:49:29] And I bought that pullback heavily again
+[00:49:31] in between May 14th through May 20th.
+[00:49:35] And then I sold that second that that
+[00:49:38] second leg higher, and I was all out by
+[00:49:40] May 22nd.
+[00:49:43] &gt;&gt; Obviously, you would have never
+[00:49:44] predicted a move as big as this. You put
+[00:49:46] yourself in the right place at the right
+[00:49:50] So, do you ever get scared when you're
+[00:49:51] buying that dip in the 47s?
+[00:49:54] Let me see if I can show you it.
+[00:49:56] When you buying this dip now, are you
+[00:49:57] not at just a little bit scared
+[00:49:58] thinking, what if like it's not going to
+[00:50:00] go straight back down, right? It's It's
+[00:50:02] going to It's going to bounce. It's like
+[00:50:04] the the penny stock and framework button
+[00:50:07] &gt;&gt; Yeah, it was still the SpaceX IPO was
+[00:50:09] like a month away. So, I figured it
+[00:50:13] it was hot. It It got a little too
+[00:50:17] too euphoric. It was trading above its
+[00:50:20] net asset value. I was like, okay, well,
+[00:50:23] I'm going to I sold
+[00:50:25] and I was looking to buy the dip. That
+[00:50:27] was all all part of my plan. So, I was I
+[00:50:29] was looking I welcomed that dip, for
+[00:50:31] sure.
+[00:50:33] &gt;&gt; But, I mean, ultimately, your first buy
+[00:50:35] was at 29, your final exit was at 64,
+[00:50:38] 64. Obviously, you're in and out a lot,
+[00:50:43] It's crazy, yeah? 100%.
+[00:50:46] Yeah, it was a very nice trade.
+[00:50:47] Hopefully, it'll pay off for the
+[00:50:50] for the Anthropic IPO coming up.
+[00:50:53] &gt;&gt; Jesus Christ, that's a million dollar
+[00:50:55] tip there. So.
+[00:50:56] &gt;&gt; Yeah, and actually, DXYZ, I estimate
+[00:50:59] that it is actually trading under the
+[00:51:02] net asset value right now.
+[00:51:04] So, net asset value,
+[00:51:06] um, I would assume is around like $35.
+[00:51:09] And they should come be coming out
+[00:51:12] pretty soon with an uh their updated net
+[00:51:14] asset value, and I'm hoping it'll pop on
+[00:51:16] that, and then we got the Anthropic IPO
+[00:51:18] coming up.
+[00:51:21] hoping it'll pay off for that as well.
+[00:51:23] &gt;&gt; I'm buying I'm buying this stock as soon
+[00:51:25] as I get off this call. So.
+[00:51:27] So, but when you when you say when you
+[00:51:29] say and that that's not like the right
+[00:51:31] behavior. You shouldn't just take other
+[00:51:33] people's tips, but like you're not just
+[00:51:34] a random person. You're like a 10
+[00:51:35] million, top of the leaderboard, second
+[00:51:37] top, verified on Kim for
+[00:51:39] all of it. But, like
+[00:51:42] when you say net asset value, are you
+[00:51:44] saying like this fund owns
+[00:51:47] 30% or they have it a 30% stake in
+[00:51:50] Anthropic. The valuation of Anthropic
+[00:51:52] should be this, therefore the fund
+[00:51:53] should be that. Is it kind of Is that
+[00:51:55] how you work it out?
+[00:51:56] &gt;&gt; Yeah, exactly. And you you could use
+[00:51:58] Cloud to help you
+[00:51:59] look through all the holdings, try to
+[00:52:02] update
+[00:52:03] get try to get the new valuation because
+[00:52:06] all the companies are private, right?
+[00:52:09] try to get updated valuations of those
+[00:52:12] private companies and you can kind of
+[00:52:13] work backwards and kind of come up with
+[00:52:16] a estimated net asset value.
+[00:52:19] &gt;&gt; Beautiful.
+[00:52:20] &gt;&gt; And that's kind of what I did. So,
+[00:52:22] Rocket Lab
+[00:52:24] was another long.
+[00:52:26] Yeah, Rocket Lab. Unfortunately, I
+[00:52:29] wanted to buy I want to have a basket of
+[00:52:31] space stocks and I kind of One mistake I
+[00:52:34] made was with a whole Iran war and
+[00:52:37] volatility.
+[00:52:39] I was just
+[00:52:40] I just let that get in my head too much
+[00:52:43] and I and I focused on DXY Z. Um, I did
+[00:52:46] end up buying some Rocket Lab
+[00:52:48] cuz I thought DXY Z was trading at a
+[00:52:50] premium to net asset value and I was
+[00:52:52] fully out, so I decided I wanted to
+[00:52:55] rotate into other space stocks and then
+[00:52:58] I ended up just trading Rocket Lab as
+[00:53:01] one
+[00:53:01] as
+[00:53:03] one space stock.
+[00:53:06] on May 22nd, I bought some Rocket Lab
+[00:53:10] and I sold it the 28th. It was It was a
+[00:53:13] pretty stress-free trade.
+[00:53:16] &gt;&gt; Is this like anything technical here?
+[00:53:17] Like it's a breakout or
+[00:53:20] &gt;&gt; Yeah, it was a breakout on the daily for
+[00:53:22] sure if I remember correctly.
+[00:53:24] &gt;&gt; Yeah, so this is your little
+[00:53:26] the daily. So, you
+[00:53:28] &gt;&gt; Yeah, so it was kind of breaking out on
+[00:53:29] the daily.
+[00:53:31] &gt;&gt; And then it was a breakout like a
+[00:53:32] successful breakout and you you got out
+[00:53:33] when it
+[00:53:36] &gt;&gt; Yeah, I didn't I didn't want to
+[00:53:37] be greedy with it and
+[00:53:40] I knew I wanted to be out before the
+[00:53:43] SpaceX IPO came out. So
+[00:53:47] &gt;&gt; Uh anything with um entries intraday
+[00:53:50] that you've kind of focused on? I just
+[00:53:52] said it was that you kind of buying the
+[00:53:53] intraday high or the pre-market high. Do
+[00:53:55] you you prefer to buy strength rather
+[00:53:56] than weakness when you buy in?
+[00:54:00] &gt;&gt; I I I just uh decided I wanted to get
+[00:54:03] long. So I I got long. I wasn't really
+[00:54:05] too Yeah, it was more of a
+[00:54:09] you know, a swing trade for me. So
+[00:54:12] So with those I I focused less on like
+[00:54:14] the intraday
+[00:54:16] chart.
+[00:54:17] &gt;&gt; Yeah, I love I love that style of of how
+[00:54:19] you're looking at it and how you're
+[00:54:20] trading. And uh and it and to that's a
+[00:54:23] month that I dipped a hold through, by
+[00:54:24] the way. I mean, you're you're long and
+[00:54:25] you're up pretty you're up pretty good
+[00:54:27] in your long.
+[00:54:28] Uh you're you're long from about 130 or
+[00:54:30] in the 150s.
+[00:54:33] What happens? How do you hold through
+[00:54:35] something like this?
+[00:54:38] &gt;&gt; Well, it's I mean, it's easier because
+[00:54:40] still green on the trade. But uh I'm
+[00:54:43] sure I was sweating a little bit and I
+[00:54:45] think I did sell
+[00:54:47] I think I sold the next day
+[00:54:49] cuz it was starting the volatility was
+[00:54:51] starting to get a little bit too high
+[00:54:53] for my comfort. And uh yeah, I sold the
+[00:54:57] next There you go. There's my sell the
+[00:54:58] next day.
+[00:55:00] &gt;&gt; Yeah, I mean
+[00:55:01] &gt;&gt; Usually when you get wide and loose
+[00:55:03] volatility like that, I start looking to
+[00:55:05] sell.
+[00:55:08] &gt;&gt; Yeah, and then in terms of your position
+[00:55:09] sizes, I mean, do you have a loose sleep
+[00:55:11] at night when you're trading or every
+[00:55:14] trade is within your comfort zone? Like
+[00:55:16] how how how would you give advice
+[00:55:18] managing risk?
+[00:55:19] &gt;&gt; Yeah, sometimes it does affect sleep. I
+[00:55:22] guess that's the nature of the job. Uh
+[00:55:24] especially with the whole Iran war and
+[00:55:27] this and that coming up. The war is on,
+[00:55:29] the war is off, the war is back on.
+[00:55:32] You know, big weekend gaps.
+[00:55:35] So it was it was hard. It was hard. So,
+[00:55:38] the trade
+[00:55:40] it looks easy in hindsight, but in real
+[00:55:41] time it definitely plays off some
+[00:55:43] emotions.
+[00:55:45] &gt;&gt; This era of social media and and having
+[00:55:48] a president that
+[00:55:49] consistently tweets and these tweets
+[00:55:52] move the markets. Has that made trading
+[00:55:55] more difficult? Are are the war on the
+[00:55:58] war off all of the the back and forth?
+[00:56:00] Does that make trading harder or does it
+[00:56:02] create more opportunities?
+[00:56:04] &gt;&gt; I would say that it it creates more
+[00:56:06] opportunities.
+[00:56:09] I know there's probably a lot of people
+[00:56:11] that that have algos just based on Trump
+[00:56:14] tweets and and Iran news war and I think
+[00:56:17] people made a lot of money doing it.
+[00:56:19] Yeah, something that we're looking into
+[00:56:21] add into our playbook. How to trade off
+[00:56:24] a
+[00:56:25] political news and things like that. It
+[00:56:27] It's something that we are looking at.
+[00:56:29] &gt;&gt; Uh the next stock is
+[00:56:32] uh ASTI. Is this another kind of
+[00:56:35] aversion or is this something where
+[00:56:37] you've gone short afterwards?
+[00:56:38] &gt;&gt; I ended up uh shorting a basket of three
+[00:56:42] space stocks.
+[00:56:43] Uh all three I I consider more of the
+[00:56:46] lower quality names.
+[00:56:49] And I shorted ASTI, MNTS, and SPCE.
+[00:56:57] And basically all three of those I
+[00:56:59] shorted on the IPO day and I covered
+[00:57:04] And I covered a few days later uh when
+[00:57:07] they unwound. And they actually ended up
+[00:57:09] going a lot lower, unfortunately. I
+[00:57:11] covered too early, but
+[00:57:14] you know, that's the nature of the game,
+[00:57:16] right?
+[00:57:17] It's hard to get in at the top and
+[00:57:19] bottom.
+[00:57:21] &gt;&gt; Uh it's pretty dep- I mean, it's pretty
+[00:57:22] good. It's like 20% on it, but I mean,
+[00:57:24] this is just literally sell the news.
+[00:57:26] Just literally, you know, once the IPO
+[00:57:27] is done. And space space went up a
+[00:57:29] couple of days, didn't it? But you're
+[00:57:31] still [clears throat]
+[00:57:31] you still
+[00:57:32] &gt;&gt; it's weak.
+[00:57:33] SpaceX Yeah, SpaceX itself was strong
+[00:57:37] for the first few days, but the space
+[00:57:39] names were weak.
+[00:57:41] And I I was a little worried of this
+[00:57:44] of the other space names bouncing just
+[00:57:46] based on the SpaceX IPO strength.
+[00:57:51] Yeah, but they ended up just kind of
+[00:57:53] keep fading.
+[00:57:55] And they did pull back
+[00:57:58] that that week heading into the SpaceX
+[00:58:00] IPO. All the SpaceX the whole group
+[00:58:03] pulled that pretty hard into that IPO
+[00:58:07] day. So the whole uh
+[00:58:10] short set up for me was weaker than I
+[00:58:13] was hoping for. So I I did short with
+[00:58:16] reduced size.
+[00:58:18] Just because that they already pulled
+[00:58:20] back so much and it wasn't as good of a
+[00:58:22] setup anymore.
+[00:58:24] &gt;&gt; What what's normally the rule on that?
+[00:58:25] Is it like the weakest short fall first
+[00:58:27] or do you have to wait for the strongest
+[00:58:29] one to fall and the weakest ones fall
+[00:58:31] after or it can happen any any way?
+[00:58:35] &gt;&gt; Yeah, I didn't I didn't quite look at it
+[00:58:37] like that. I just I just knew I wanted
+[00:58:39] to be short some lower quality space
+[00:58:42] names. So I picked three that I was
+[00:58:45] comfortable with and just kind of stuck
+[00:58:47] with those. But yeah, usually the weaker
+[00:58:49] ones roll over first and then the leader
+[00:58:51] finally gives out and vice versa on the
+[00:58:53] way up. You know, usually it's the
+[00:58:55] leaders that break out first and then
+[00:58:57] the weaker sympathy names tend to start
+[00:59:00] following after that.
+[00:59:03] &gt;&gt; Yeah, and what's what's the stop here?
+[00:59:04] Do you have like some sort of
+[00:59:07] button like I need to get out if this
+[00:59:08] happens?
+[00:59:09] &gt;&gt; Yeah, I didn't I didn't have a hard stop
+[00:59:12] in. It was more It was more just based
+[00:59:14] on the whole catalyst type trade. But
+[00:59:18] yeah, if if any of the shorts kept
+[00:59:21] making new highs against me, I I would
+[00:59:23] definitely be reducing and getting out.
+[00:59:26] &gt;&gt; Fair enough. We're going to just quickly
+[00:59:27] uh show this trade.
+[00:59:32] So, there's the short.
+[00:59:33] And then, nice cover couple of days 2
+[00:59:36] days later. That's why I was asking you
+[00:59:37] the questions about the swing trading
+[00:59:39] cuz I saw a couple of like 2-day things.
+[00:59:45] You're not like getting the perfect top
+[00:59:47] short entry of like I guess I'm short
+[00:59:49] the high of the day at 9:35. Like, you
+[00:59:52] short middle middle middle of the pack,
+[00:59:54] right? Like, you
+[00:59:56] any you Is
+[00:59:57] &gt;&gt; Yeah, typically I don't
+[01:00:00] Yeah, typically I don't short midday or
+[01:00:03] I don't like to. But, this was just all
+[01:00:06] based on the SpaceX IPO catalyst. SpaceX
+[01:00:09] IPO started trading. I was watching the
+[01:00:12] other space stocks
+[01:00:14] in sympathy to that, and I just started
+[01:00:18] shorting them.
+[01:00:19] &gt;&gt; Yeah, it's like this is the time that I
+[01:00:21] now feel comfortable to take a short.
+[01:00:23] It's basically that rather than
+[01:00:25] &gt;&gt; the best entry.
+[01:00:28] SPCE
+[01:00:29] &gt;&gt; That's another one I did.
+[01:00:32] &gt;&gt; The same same thing same day. We can see
+[01:00:35] the the
+[01:00:35] &gt;&gt; Yeah, around the same time.
+[01:00:37] &gt;&gt; push again.
+[01:00:39] So, have a quick look at this one.
+[01:00:43] Same similar price action, I guess.
+[01:00:52] Little I don't know if that's a slightly
+[01:00:53] earlier entry, but similar entry as
+[01:00:55] well, yeah.
+[01:00:56] &gt;&gt; Yeah, I think I shorted all three around
+[01:00:58] the same time, and I covered around the
+[01:01:00] same time, same way.
+[01:01:03] &gt;&gt; And then, MNTS similar same same kind of
+[01:01:06] thing. Just just a just a just a chill
+[01:01:08] 31,000. Just a just a chill
+[01:01:11] Just a chill 31.
+[01:01:13] &gt;&gt; MNTS was the most tricky, I I believe. I
+[01:01:19] If I remember correctly.
+[01:01:23] &gt;&gt; Uh it's cuz it opened quite a bit lower,
+[01:01:24] I guess, than the previous day.
+[01:01:30] Anything you want to talk about or you
+[01:01:32] want to keep going?
+[01:01:34] &gt;&gt; Yeah, not really.
+[01:01:39] It was just all based on the sell the
+[01:01:41] news. SpaceX IPO is out and trading. I
+[01:01:44] wanted to get short
+[01:01:46] other space stocks.
+[01:01:48] What I did do right is I was I was all
+[01:01:50] out of the longs by late May.
+[01:01:53] Uh which which was 3 weeks before the
+[01:01:57] June 12th IPO of SpaceX. And luckily, I
+[01:02:01] did not buy anything back into the
+[01:02:03] weakness. They just
+[01:02:05] they just kind of
+[01:02:06] were weak all the way at
+[01:02:08] pretty earlier than I expected. And uh
+[01:02:13] Yeah, but
+[01:02:14] So, I I had great sells on the longs.
+[01:02:17] And unfortunately, it wasn't the best
+[01:02:20] setup because they the the space
+[01:02:23] group they were so weak heading into the
+[01:02:26] SpaceX IPO that
+[01:02:29] unfortunately, it it was more it wasn't
+[01:02:31] an A+ setup anymore. So, I I did do with
+[01:02:34] reduced size on the shorts.
+[01:02:37] &gt;&gt; Yeah, this might sound a bit basic for
+[01:02:38] you, but I'm just just for like newer
+[01:02:40] traders who really don't know what
+[01:02:42] they're doing as much. How do you find
+[01:02:44] like the stocks in each category and how
+[01:02:46] do you decide which is good and which is
+[01:02:47] bad?
+[01:02:50] &gt;&gt; Yeah,
+[01:02:51] in my
+[01:02:52] I have a custom scanner page and there I
+[01:02:55] just put in a all all the space stocks
+[01:02:58] that I was looking at. I think I have
+[01:03:00] like 20.
+[01:03:01] So, I was just watching them
+[01:03:04] casually and I knew the ones that I felt
+[01:03:08] were the most
+[01:03:10] the the weakest ones and
+[01:03:13] just based off of the fundamentals.
+[01:03:16] And Rocket Lab was one of the you know,
+[01:03:19] was one of the leaders in the group for
+[01:03:21] sure. So, that's why I picked that as
+[01:03:23] the long.
+[01:03:25] &gt;&gt; So, like is that just like a botch out
+[01:03:27] like a history of like those Gotham
+[01:03:29] crops, big red candles, dilutions, no
+[01:03:32] revenues, stuff like that?
+[01:03:34] &gt;&gt; Yeah, it was more based on dilution
+[01:03:36] offering potential. I figured some of
+[01:03:38] the weaker ones might want to do an
+[01:03:40] offering.
+[01:03:42] Play off the whole SpaceX IPO.
+[01:03:45] I the the the one more regret with the
+[01:03:47] whole setup. I I do feel like I
+[01:03:50] undersized the whole setup. Uh the the
+[01:03:53] the space ETF uh NAT ticker symbol NASA
+[01:03:57] that ran 75%
+[01:04:00] from April to the end of the May.
+[01:04:02] And basically I only traded DXYZ mostly
+[01:04:07] and a little bit of Rocket Lab instead
+[01:04:09] of the whole basket that I planned. And
+[01:04:11] you know, maybe just just buying the ETF
+[01:04:15] would have been would have been the
+[01:04:16] better approach
+[01:04:18] along with DXYZ and
+[01:04:21] I In fairness to myself, the the Iran
+[01:04:24] war was still going on pretty heavy.
+[01:04:27] There was extreme volatility across the
+[01:04:29] market and
+[01:04:31] so I guess it I guess sizing down in
+[01:04:33] that that environment was defensible.
+[01:04:37] But in hindsight, I felt like this whole
+[01:04:39] setup definitely
+[01:04:41] should have been bigger.
+[01:04:42] &gt;&gt; I understand how the the walk in through
+[01:04:45] it off because you you have no idea cuz
+[01:04:47] at the end of the day the market did
+[01:04:49] crash.
+[01:04:50] The irony is the market did crash on the
+[01:04:52] brink of the Iran war news.
+[01:04:55] But it only lasted probably a month and
+[01:04:58] then you had the the SOXX like just
+[01:05:01] ripped to the highest levels in the
+[01:05:03] craziest ETF run ever seen.
+[01:05:06] &gt;&gt; On
+[01:05:06] &gt;&gt; Yes. Back of off the back of the war and
+[01:05:08] the war escalating and the peace deal
+[01:05:10] and then it's back on and
+[01:05:13] So, yeah, it didn't have much of a But
+[01:05:14] you didn't know it wouldn't have that
+[01:05:15] much effect. You didn't know. Like you
+[01:05:16] didn't know if the market was going to
+[01:05:17] crash because of the war not. So,
+[01:05:20] &gt;&gt; Yeah. Yeah, it's
+[01:05:22] &gt;&gt; So, that's why you did it.
+[01:05:23] &gt;&gt; Easy in hindsight, but it's so hard in
+[01:05:25] real time for sure.
+[01:05:26] &gt;&gt; So, yeah, what's the vibes for you?
+[01:05:29] &gt;&gt; Risk management is key. Um I learned a
+[01:05:31] lot from my
+[01:05:34] big stubborn loss in K bio
+[01:05:36] uh where you never know what's lurking
+[01:05:39] around the corner.
+[01:05:40] You can't You can't always uh predict
+[01:05:43] everything and
+[01:05:46] you know, having these big outsized
+[01:05:48] losses just wreck you mentally and then
+[01:05:52] and then usually when those happen you
+[01:05:54] you miss other good trades that come up
+[01:05:57] after and you you're just not capable of
+[01:06:00] trading them appropriately after big
+[01:06:03] losses. So, there's definitely
+[01:06:04] opportunity cost as well
+[01:06:07] that a lot of people don't think about
+[01:06:09] when it comes to big losses.
+[01:06:11] Uh definitely need to be adaptable. Like
+[01:06:14] I just come and go.
+[01:06:16] I've had to reinvent myself multiple
+[01:06:18] times. My strategies have definitely
+[01:06:20] changed over the years.
+[01:06:22] And you need to
+[01:06:23] evolve.
+[01:06:25] And you also need to be resilient. Like
+[01:06:28] I went through a 4-year drawdown and and
+[01:06:31] that was hard.
+[01:06:32] And to keep showing up and keep trying
+[01:06:36] and I had to size way down. It It was
+[01:06:39] embarrassing for me.
+[01:06:41] And there there will be long stretches
+[01:06:44] where things are just not working for
+[01:06:46] you. Things aren't aren't clicking and
+[01:06:48] you just need to size down. You need to
+[01:06:51] show up and you need to work on your
+[01:06:52] playbook
+[01:06:54] until things start clicking again.
+[01:06:58] and another thing is just be aware of
+[01:07:01] your your tendencies. Be self-aware.
+[01:07:03] Like I have a problem when I research a
+[01:07:06] stock too much and I I it's a piece of
+[01:07:08] crap. I know they're going to do an
+[01:07:09] offering, and sometimes that leads me to
+[01:07:12] believe
+[01:07:13] be stubborn, especially with Sidu.
+[01:07:16] And and that's why it's good for me to
+[01:07:19] connect both it needs to be a
+[01:07:21] fundamental setup and a technical setup
+[01:07:23] for me
+[01:07:24] to to be trading with size.
+[01:07:27] &gt;&gt; The mental resilience and the
+[01:07:28] adaptability, I mean, risk management's
+[01:07:30] obviously huge. Everything you've said
+[01:07:31] is huge, but it's the
+[01:07:34] it's like it's so difficult to find an
+[01:07:36] edge in the market. Like, do you know
+[01:07:37] them first few years when nothing works?
+[01:07:40] Like, it's so difficult to find an edge
+[01:07:41] in the market, then you finally find an
+[01:07:43] edge, you've start making some money,
+[01:07:45] and then it's like so difficult to
+[01:07:47] accept that that edge doesn't work
+[01:07:48] anymore, and you've got to do it all
+[01:07:50] again. Like, that's that's what kills a
+[01:07:52] lot of people, I think.
+[01:07:53] &gt;&gt; Yeah, and it it's been slower in the
+[01:07:55] small-cap market the last few weeks.
+[01:07:57] It's It's It's a great time to be
+[01:07:59] working on enhancing your playbook.
+[01:08:02] Adapting to the new environment.
+[01:08:07] Maybe
+[01:08:08] adding new strategies to your playbook
+[01:08:10] or enhancing them. Figure out where you
+[01:08:14] know, where to take tighter risk. How
+[01:08:16] can I take more profit? Things like
+[01:08:18] that.
+[01:08:20] &gt;&gt; And it's not impossible, right? Like
+[01:08:21] Like, you've just launched Trader Pods,
+[01:08:23] where there's a big community of
+[01:08:25] everyone talking about different setups,
+[01:08:27] different styles, different ways to make
+[01:08:28] money. There's a million podcasts where
+[01:08:30] you've just shown three different
+[01:08:31] strategies on how you trade, and it's
+[01:08:34] easy for to start back testing that.
+[01:08:36] Like, it's really easy. Like, there's
+[01:08:37] books
+[01:08:38] I'm just like going through Young Market
+[01:08:40] Wizards right now. They talk about
+[01:08:41] different strategies there.
+[01:08:43] Like, there's a million ways to It's all
+[01:08:44] on the internet for free. Like, there's
+[01:08:46] a million ways to
+[01:08:48] to figure it out. You just got to have
+[01:08:49] the passion, I think.
+[01:08:50] &gt;&gt; Yeah, Trader Pods is a is a great way to
+[01:08:53] to collaborate with other
+[01:08:56] like-minded traders like you, and
+[01:08:59] be working on playbooks together or
+[01:09:01] encouraging each other and supporting
+[01:09:04] each other sharing ideas.
+[01:09:08] &gt;&gt; Uh we've gone an hour and 20 and it's
+[01:09:11] been like literally an hour and 20
+[01:09:13] minutes of just pure value and like
+[01:09:16] total trading knowledge like from your
+[01:09:18] 10 million dollar brain to the to the
+[01:09:20] internet.
+[01:09:22] You've been more than generous with your
+[01:09:24] &gt;&gt; Oh, thank you.
+[01:09:25] &gt;&gt; other
+[01:09:26] Do you have any other final final
+[01:09:28] shout-outs or things that you want to
+[01:09:29] say or any other links? We'll put them
+[01:09:31] in the descriptions.
+[01:09:33] &gt;&gt; Yeah, yeah. I would just say come check
+[01:09:35] out Trader Pods. Follow me on X.
+[01:09:40] I I have been posting less on Twitter
+[01:09:42] lately
+[01:09:43] um just cuz my focus is on sharing I my
+[01:09:46] trade ideas and research
+[01:09:48] uh on Trader Pods. So, if if you want my
+[01:09:51] trade ideas and and research in real
+[01:09:55] uh just sign up for a free account at
+[01:09:56] traderpods.org.
+[01:09:59] &gt;&gt; All right, man. Thank you so much for
+[01:10:00] your time. It's been incredible.
+[01:10:05] &gt;&gt; [music]

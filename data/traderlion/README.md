@@ -44,6 +44,15 @@ videos/interviews/<date>_<id>/   transcript.txt · meta.json · notes.md
 backtests/<slug>/          (created on demand) test scripts + results.
 ```
 
+## Videos
+
+| Date | Video | Guest | Notes | Verdict |
+|---|---|---|---|---|
+| 2023-10-04 | [The Perfect VCP Trading Setup](https://www.youtube.com/watch?v=M_tD6X0CSOI) (38 min) | Mark Minervini | [notes](videos/interviews/2023-10-04_M_tD6X0CSOI/notes.md) | **2/5.** "VCP" is said once and never defined. FTD + first-to-new-highs is already NULL/UNDERPOWERED here. Useful for: [30:41] "fastest are extended -> wait for a subsequent entry" (= our entry-extension finding). Codable VCP spec + pre-registered test design in the notes (NOT RUN) |
+| 2026-07-22 | kCLiSsIZ7L4 | Pradeep Bonde | [review](2026-07-22_bonde_episodic_pivot_review.md) | Episodic pivot; DR-EP tested 2026-09-22 -> NULL |
+| 2026-07-29 | [Trading $100K Into $20M, VCP](https://www.youtube.com/watch?v=uMJXA_I9HDw) | Ritchie II / Hedgepath / Weissman (MPA) | [setup](setups/minervini_vcp_low_risk_entry.md) | 2.5/5 |
+| 2026-09-06 | J-I6iLGjp1Q | Alan Ellman (BCI) | [setup](setups/bci_covered_calls_cash_secured_puts.md) | 1/5 after test |
+
 ## Adding a video
 
 ```bash

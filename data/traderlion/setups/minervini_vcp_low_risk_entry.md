@@ -195,3 +195,49 @@ breakouts (RVOL ≥1.8):
 Report CAGR-equivalent, max drawdown, and **return per unit of risk** — the metric Ritchie says
 matters. That directly tests whether "financing the risk" improves risk-adjusted return or merely
 truncates winners, which is the real question and one the video cannot answer about itself.
+
+---
+
+## 11. Codable spec from the 2023-10-04 video (added 2026-09-23)
+
+Source: [The Perfect VCP Trading Setup with Mark Minervini](https://www.youtube.com/watch?v=M_tD6X0CSOI)
+(TraderLion, 2023-10-04, 38 min). Full review, claim table and test design are in
+[notes.md](../videos/interviews/2023-10-04_M_tD6X0CSOI/notes.md) (verdict **2/5**).
+
+⚠ **Minervini defines almost nothing on camera.** "VCP" is spoken once ([29:14], repeated in the teaser at [00:13]):
+*"it tightens up, it meets my signature VCP."* From the video itself we get:
+- "nice tight right sides" [16:34];
+- within 25% of a new high [30:02];
+- a consolidation within a long-term uptrend [30:19];
+- the fastest names are extended, so wait for a subsequent entry [30:41].
+
+The contraction count and depth schedule come from his book (*Trade Like a Stock Market Wizard*, 2013, not in the
+repo; verify before quoting). The "1-2-3 contractions" and volume dry-up come from this KB's 2026-07-29 MPA panel
+([62:58], [05:12]). Everything else is a house default.
+
+Compact spec (the full table with sources and sensitivity grids is in the notes):
+
+| Element | Default | Sensitivity |
+|---|---|---|
+| Prior uptrend | Trend Template member the day before the base starts; >= 30% advance into the base high | 20 / 30 / 50% |
+| Base length | 15-65 sessions from the left-side high | 10-40 / 15-65 / 25-130 |
+| Depth cap | base <= 35% deep; pivot within 25% of the 52wk high | 25 / 35 / 50% |
+| Contractions | N >= 2 swing-high -> swing-low pullbacks (5-bar fractals), each depth <= 0.75x the prior, higher lows | N 2/3; r 0.5 / 0.75 / 0.9 |
+| Final contraction | <= 1.0 ADR20 and <= 10% | 0.6 / 1.0 / 1.5 ADR |
+| Volume dry-up | last-contraction mean volume <= 0.7x the first; minimum-volume day of the base in the last 10 sessions | 0.5 / 0.7 / 0.9 |
+| Pivot | high of the final contraction | -- |
+| Trigger | **CLOSE** > pivot, RVOL >= 1.5 (house: the close beats every intraday entry) | 1.0 / 1.5 / 1.8 |
+| Extension cap | (close - pivot)/ADR <= 0.5 | 0.25 / 0.5 / 1.0 |
+| Stop | final contraction's low, **judged on the close**. Report stop/ADR. The disaster stop (1 ADR, resting) is a separate variant | -- |
+| Exit | ema20 trail, hold 60 (the precision-tier book's exit) | fixed in advance |
+
+**Test:** `pattern_test`, liquid panel 2019-10 -> 2026-09.
+- **Primary:** VCP vs a **same-name, non-VCP house breakout within +/-60 sessions**, paired on **% return**, not R
+  (the stop widths differ). `post` and `xname` are reported alongside.
+- **Bar:** |t| >= 3, Sidak over 5 registered tests, both halves the same sign, per-year table. The grid is run only as
+  a neighbourhood-robustness check with `ledger=False`.
+- **To add anything, VCP must beat the house breakout in the same names AND raise the held-the-level share above the
+  breakout's 23.6%.** That would make the bimodal +1.27R cohort callable at entry.
+
+`src/lib/commons/vol_compression.py` is an ATR/range screen, not a contraction detector. The detector needs writing
+(~60-80 lines). **Status: spec written, NOT RUN (TEST_INDEX §10 VCP row, still QUEUED).**
