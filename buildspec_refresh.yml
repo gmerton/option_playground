@@ -64,7 +64,9 @@ phases:
       - aws lambda update-function-code --function-name "$FUNCTION" --zip-file "fileb://$ARTIFACT_ZIP" --no-cli-pager
       - aws lambda wait function-updated --function-name "$FUNCTION"
       - echo "Deployed code for $FUNCTION (layer, env, schedule untouched)."
-      - echo "Verify after tonight's run: aws s3 cp s3://gmerton-stock-data/breakouts/refresh_latest.txt -"
+      # NB keep "colon-space" out of unquoted commands -- YAML parses `foo: bar` as a mapping, and
+      # CodeBuild then fails DOWNLOAD_SOURCE with "Expected Commands[n] to be of string type".
+      - echo "Verify after tonight's run -- aws s3 cp s3://gmerton-stock-data/breakouts/refresh_latest.txt -"
 
 artifacts:
   files:
