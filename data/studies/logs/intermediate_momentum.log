@@ -1,0 +1,11 @@
+# Intermediate-horizon momentum (Novy-Marx 2012) on the precision tier (pre-registration in the docstring)
+
+A factor check (192 months): IH top decile +0.72pp (t +1.82), bottom -0.71pp (t -1.81), top - bottom +1.43pp (t +2.06)
+
+## PRIMARY: INTERMEDIATE (12->7m) tercile at entry (1,916 tier trades)
+  top 975: +0.37%/trade (R +0.053) | bottom 538: +0.03% (R -0.009) | top - bottom +0.15pp, t +0.19, halves -2.35 / +1.68
+  bar (|t| >= 3, halves same sign): FAIL
+  by quintile (%/trade): Q1 -0.16  Q2 +0.35  Q3 +1.65  Q4 +0.86  Q5 -0.39
+
+## secondary: RECENT (6->2m) tercile at entry (2,012 tier trades)
+  top 1,249: +0.44%/trade (R +0.067) | bottom 288: +2.49% (R +0.563) | top - bottom -3.36pp, t -2.79, halves -0.24 / -4.76
