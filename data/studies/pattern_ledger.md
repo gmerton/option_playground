@@ -3,7 +3,7 @@
 _Every entry pattern tested with `lib.studies.pattern_test`, newest last._
 
 **Bar to pass (daily, from 2026-09-23):** paired edge t >= 3 on the best arm, both halves' paired edge > 0, and p_search < 0.003 (label-permutation null over the best-of-arms pick). Grid rows also carry p_opt (the whole grid re-run under each permutation). Rows before 2026-09-23 used the unpaired rule (|t| on raw R + point edge > 0) and have no edge_t / p_search.
-**Multiple testing:** 74 patterns tested so far — at 5% significance, expect ~3.7 to clear by chance. Discount accordingly.
+**Multiple testing:** 75 patterns tested so far — at 5% significance, expect ~3.8 to clear by chance. Discount accordingly.
 
 | tested | name | timeframe | n | best_arm | meanR | ctrl | edge | t | edge_t | p_search | p_opt | half1 | half2 | passed | note |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -81,3 +81,4 @@ _Every entry pattern tested with `lib.studies.pattern_test`, newest last._
 | 2026-09-23 | kell wedge pop | daily | 3588 | ema20 | 0.072 | 0.0684 | 0.0037 | 0.6112 |  |  |  | -0.0188 | 0.1461 | False | Kell wedge pop per kell_wedge_pop.md s7, stop = base low (floor 0.5 ADR); ctrl=post |
 | 2026-09-23 | rmv15 gate on house breakout | daily | 16003 | t1R | -0.3612 | -0.3213 | -0.0399 | -13.1013 | 0.7968 | 0.4938 |  | -0.4283 | -0.2979 | False | WL-3a Deepvue RMV15<=10 in t-3..t-1, house breakout, day-low stop; ctrl=post |
 | 2026-09-23 | adx14<=12 gate on house breakout HOLDOUT 2010-2019 | daily | 440 | ema20 | 0.0679 | -0.1341 | 0.202 | 0.4432 | 2.6832 | 0.0375 |  | -0.1706 | 0.3 | False | holdout confirmation of the WL-3a ADX lead; liquid_panel_2009, 2010-01 -> 2019-09; ctrl=post |
+| 2026-09-23 | EP base-break (earnings gap>=5% RVOL>=3 close>252d high) | daily | 296 | t2R | 0.1498 | -0.1016 | 0.2514 | 1.4434 | 2.2821 | 0.0435 |  | 0.0418 | 0.2155 | False | WL-5d Qullamaggie EP out of a long base; liquid_panel_2009, 2010+; ctrl=post |

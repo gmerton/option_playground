@@ -1,0 +1,90 @@
+# EP base-break [WL-5d] -- 12,223 earnings reactions 2010+; gap>=5% & RVOL>=3: BASE-BREAK 309, NO-BREAK 463
+
+## secondary: % per trade (close entry, day-low stop on the close, 20-EMA trail, max 60)
+BASE-BREAK n  308 | mean +0.69% (t vs 0 +1.34) | median -1.50% | win 39% | halves +0.44/+0.84
+NO-BREAK   n  463 | mean +1.18% (t vs 0 +2.09) | median -1.72% | win 36% | halves +0.49/+1.43
+BASE-BREAK - NO-BREAK: -0.49pp, Welch t -0.64 | halves -0.05 / -0.59
+per year (%):
+date    2010   2011   2012  2013   2014   2015   2016   2017   2018   2019   2020   2021   2022   2023   2024   2025   2026
+n_brk  11.00   6.00   6.00  9.00  13.00  22.00  18.00  32.00  13.00  12.00  11.00  19.00   3.00  31.00  47.00  35.00  20.00
+brk    -0.98  -1.96  -2.85  0.49   0.57  -0.72   0.77   2.54  -0.11   1.53  -0.14   0.18   3.18   0.47   1.45   1.46  -0.05
+n_nob   6.00  11.00  15.00  9.00  14.00  22.00  22.00  27.00  31.00  43.00  21.00  25.00  44.00  49.00  48.00  50.00  26.00
+nob     0.60  -1.83   1.09  0.23   0.50  -0.81   0.55   2.18  -0.71   2.03   1.04  -0.89   0.50   3.30   0.29   2.88   2.95
+
+
+# PRIMARY: harness, paired rule (close entry, day-low stop, hold 60)
+control = post (strata: median 20 candidates, 3 paired per signal)
+
+=== EP base-break (earnings gap>=5% RVOL>=3 close>252d high) (daily) — 296 signals, 114 names, 2010-01-21 -> 2026-06-02 ===
+               n  meanR   medR     win    p90      t   ctrl   edge  p_edge  edge_t
+stop_hold  296.0  0.384 -1.137  34.459  5.699  1.787 -0.059  0.443   0.443   2.064
+t1R        296.0 -0.056  1.000  59.459  1.000 -0.398 -0.151  0.095   0.095   1.238
+t2R        296.0  0.150 -0.210  49.662  2.000  1.443 -0.102  0.251   0.251   2.282
+trail_bar  296.0  0.122 -0.147  43.581  1.870  1.163 -0.061  0.183   0.183   1.530
+ema20      296.0  0.084 -0.572  39.527  3.606  0.549 -0.197  0.281   0.281   1.818
+
+by half (n 112 / 184):
+           <2018-01-01  >=2018-01-01
+stop_hold        0.195         0.499
+t1R             -0.156         0.005
+t2R              0.042         0.216
+trail_bar       -0.192         0.314
+ema20           -0.064         0.174
+
+paired edge by half (t2R): +0.136 / +0.321 | best-arm paired edge t +2.28 | p_search (best of 5 arms, 2000 label perms) 0.0435
+paired edge by year (t2R; chronological halves miss a back-half regime):
+y       2010   2011   2012   2013    2014    2015    2016    2017    2018    2019  2020    2021   2022    2023    2024   2025    2026
+size  10.000  6.000  6.000  9.000  13.000  22.000  17.000  29.000  13.000  12.000  11.0  19.000  3.000  30.000  44.000  33.00  19.000
+mean  -0.261  0.626  0.423  0.202  -0.536   0.547   0.322  -0.027   1.465  -0.069   0.6   0.607  1.288   0.223  -0.312   0.15   1.106
+
+best arm: t2R | passes the bar (paired edge t >= 3, both halves' paired edge > 0, p_search < 0.003): no
+control = xname (strata: median 20 candidates, 3 paired per signal)
+
+=== EP base-break xname (daily) — 298 signals, 115 names, 2010-01-21 -> 2026-08-26 ===
+               n  meanR   medR     win    p90      t   ctrl   edge  p_edge  edge_t
+stop_hold  297.0  0.378 -1.139  34.343  5.685  1.761 -0.188  0.566   0.566   2.935
+t1R        297.0 -0.060  1.000  59.259  1.000 -0.462 -0.272  0.212   0.212   2.729
+t2R        297.0  0.144 -0.398  49.495  2.000  1.394 -0.150  0.295   0.295   2.704
+trail_bar  298.0  0.116 -0.160  43.289  1.863  1.114 -0.106  0.222   0.222   1.937
+ema20      297.0  0.079 -0.578  39.394  3.548  0.514 -0.206  0.284   0.285   1.929
+
+by half (n 112 / 186):
+           <2018-01-01  >=2018-01-01
+stop_hold        0.195         0.489
+t1R             -0.156        -0.003
+t2R              0.042         0.207
+trail_bar       -0.192         0.301
+ema20           -0.064         0.165
+
+paired edge by half (stop_hold): +0.377 / +0.680 | best-arm paired edge t +2.94 | p_search (best of 5 arms, 2000 label perms) 0.0035
+paired edge by year (stop_hold; chronological halves miss a back-half regime):
+y       2010   2011   2012   2013    2014   2015    2016   2017    2018   2019    2020    2021   2022    2023    2024    2025    2026
+size  10.000  6.000  6.000  9.000  13.000  22.00  17.000  29.00  13.000  12.00  11.000  19.000  3.000  30.000  44.000  33.000  20.000
+mean  -0.567  0.723 -0.286  0.758   0.071   0.34   0.608   0.68   3.256   0.32   0.129  -0.123  0.204   0.261   1.139   0.433   0.386
+
+best arm: stop_hold | passes the bar (paired edge t >= 3, both halves' paired edge > 0, p_search < 0.003): no
+control = post (strata: median 20 candidates, 3 paired per signal)
+
+=== EP no-break (DR-EP A analogue on earnings) post (daily) — 426 signals, 126 names, 2010-02-17 -> 2026-05-28 ===
+               n  meanR   medR     win    p90      t   ctrl   edge  p_edge  edge_t
+stop_hold  426.0  0.015 -1.240  26.526  5.568  0.026 -0.044  0.059   0.059   0.355
+t1R        426.0 -0.357  1.000  51.174  1.000 -4.693 -0.260 -0.096  -0.096  -1.466
+t2R        426.0 -0.176 -1.082  42.723  2.000 -2.095 -0.113 -0.063  -0.063  -1.004
+trail_bar  426.0  0.017 -0.349  40.376  2.809  0.065 -0.056  0.073   0.073   0.533
+ema20      426.0  0.073 -0.808  35.211  3.338  0.365  0.003  0.070   0.070   0.263
+
+by half (n 116 / 310):
+           <2018-01-01  >=2018-01-01
+stop_hold        0.467        -0.154
+t1R             -0.043        -0.474
+t2R              0.205        -0.318
+trail_bar        0.312        -0.094
+ema20            0.323        -0.020
+
+paired edge by half (trail_bar): +0.517 / -0.093 | best-arm paired edge t +0.53 | p_search (best of 5 arms, 2000 label perms) 0.5827
+paired edge by year (trail_bar; chronological halves miss a back-half regime):
+y      2010    2011   2012   2013   2014    2015    2016    2017    2018    2019   2020    2021   2022    2023    2024    2025    2026
+size  5.000  11.000  15.00  9.000  9.000  20.000  22.000  25.000  28.000  40.000  20.00  24.000  43.00  46.000  43.000  47.000  19.000
+mean  0.091   0.286   0.29  0.905 -0.351   0.284   0.539   1.178  -0.401  -0.202  -0.18   0.615   0.99  -0.778  -0.491   0.124  -0.642
+
+best arm: trail_bar | passes the bar (paired edge t >= 3, both halves' paired edge > 0, p_search < 0.003): no
