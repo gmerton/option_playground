@@ -54,6 +54,11 @@ name. Expect nulls; treat a positive as suspect until it survives real fills and
 * **Alerts → end-of-day only** — the owner wants to de-emphasise intraday alerts. Not yet implemented.
 * **`journal_campaigns` and spread rolls** — he rolled several spreads across expiries on 9/22; whether
   the campaign keying threaded them correctly is unverified.
+* **The live-alert universe is fed by stale hand-kept inputs** (found 2026-09-23, parked by the owner to
+  revisit). `start_alerts.sh` streams `universe_focus.txt` (last edited 9/14) + the newest `trade_plan_*.md`
+  (9/09) — `lib.alerts.universe` only unions them, it never refreshes them. So the evening desk's new names
+  (9/23: OKTA, CRWD, TEAM, FSLY, CNH…) are not watched unless added by hand. Decide: auto-feed the focus file
+  from the Adhikary scan / breakout scan / clusters, or keep it curated and add a staleness warning.
 * **Defer the heavy imports** in `run_trade_review_pages.py` so the journal-site build stops needing a
   database driver to write a static file.
 
