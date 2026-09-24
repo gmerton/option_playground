@@ -1,0 +1,31 @@
+  flow 2010: 215,297
+  flow 2011: 227,495
+  flow 2012: 233,421
+  flow 2013: 245,575
+  flow 2014: 257,456
+  flow 2015: 269,319
+  flow 2016: 280,801
+  flow 2017: 287,207
+  flow 2018: 298,054
+  flow 2019: 309,973
+  flow 2020: 324,959
+  flow 2021: 349,091
+  flow 2022: 370,988
+  flow 2023: 379,832
+  flow 2024: 394,135
+  flow 2025: 404,402
+  flow 2026: 312,846
+# Call-buying bursts [A1] -- 38,769 bursts, 1254 names, 2010-02-01 -> 2026-04-30; median day-t return of burst names +0.30%
+
+## PRIMARY +5 sessions: burst +0.001% vs date/return/ADR-matched control +0.058% | diff -0.039pp t -1.24 (dates 4020) | halves -0.017 / -0.059
+per year (diff, pp):
+date     2010     2011     2012     2013     2014     2015     2016     2017     2018     2019     2020     2021     2022     2023     2024     2025    2026
+size  218.000  235.000  239.000  245.000  251.000  247.000  249.000  248.000  250.000  250.000  253.000  251.000  251.000  250.000  252.000  249.000  82.000
+mean   -0.127   -0.111    0.071    0.271    0.106   -0.159   -0.005   -0.199   -0.035   -0.035   -0.186   -0.097   -0.138    0.217    0.004   -0.269   0.136
+  SPY gamma POSITIVE (prior day)   n 17691 | diff +0.009pp t +0.20
+  SPY gamma NEGATIVE (prior day)   n 19534 | diff -0.083pp t -1.84
+  same-name PRE-window control: diff -0.108pp t -1.71
+
+## secondary +1 sessions: burst -0.238% vs date/return/ADR-matched control -0.198% | diff -0.035pp t -2.75 (dates 4020) | halves +0.000 / -0.067
+
+## secondary +10 sessions: burst +0.279% vs date/return/ADR-matched control +0.358% | diff -0.073pp t -1.67 (dates 4020) | halves -0.057 / -0.089
