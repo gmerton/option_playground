@@ -1,0 +1,21 @@
+# Undervalued #2: insider cluster buying (pre-registration in the docstring)
+
+purchase lines used 41,816; events: CLUSTER 583 (313 names) | SINGLE 3,297
+
+cell                                  n    ex20    ex60    t60   ex120  %+60
+CLUSTER                             583   -0.74   -1.68  -2.23   -3.29    44
+SINGLE                            3,297   +0.15   +0.12   1.00   +0.12    49
+CLUSTER, beaten-down                246   -2.03   -4.21  -2.48   -7.12    41
+CLUSTER, not beaten                 337   +0.20   +0.15   0.04   -0.49    45
+CLUSTER, officer-led                363   -1.02   -2.68  -2.75   -4.95    40
+CLUSTER, total >= $1M               287   -0.84   -1.79  -1.55   -3.41    40
+SINGLE, beaten-down                 706   +0.33   +0.03   0.52   -0.47    48
+
+## PRIMARY: CLUSTER 60d excess -1.68pp (median -2.19), t -2.23; halves -2.05 (n 159) / -1.55 (n 424); CLUSTER - SINGLE -2.03pp (t -2.44)
+  bar (t >= 3, both halves > 0, CLUSTER > SINGLE): FAIL
+  CLUSTER per year ex60: 2010 -1.4  2011 -1.7  2012 -2.2  2013 -1.6  2014 -4.8  2015 -1.7  2016 +0.6  2017 -4.7  2018 +0.3  2019 -0.7  2020 -6.0  2021 +3.2  2022 +3.1  2023 -2.2  2024 +0.1  2025 -4.0  2026 -5.5
+
+## ROBUSTNESS (post-run, exploratory): 60d excess vs same-INDUSTRY eligible peers
+  CLUSTER                n   407  industry-matched ex60 -0.01 (t -0.53)   [ADR-matched -1.36]
+  CLUSTER, beaten-down   n   174  industry-matched ex60 +0.54 (t +0.15)   [ADR-matched -4.24]
+  SINGLE                 n  2357  industry-matched ex60 +0.39 (t +1.86)   [ADR-matched -0.05]
