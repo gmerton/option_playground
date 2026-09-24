@@ -1,0 +1,46 @@
+names in panel: ['BLSH', 'BMNR', 'BTDR', 'CIFR', 'CLSK', 'COIN', 'CORZ', 'CRCL', 'GLXY', 'HOOD', 'HUT', 'IREN', 'MARA', 'MSTR', 'RIOT', 'SBET', 'WULF']
+equal-weight crypto index (7/1=1): 07-01:1.00 07-07:0.96 07-10:0.98 07-15:0.97 07-20:0.95 07-23:1.01 07-28:0.93 07-31:0.92 08-05:0.93 08-10:0.88 08-13:0.91 08-18:0.88 08-21:1.01 08-26:1.04 08-31:1.04 09-03:1.12 09-09:1.09 09-14:1.10 09-17:1.06
+
+sharpest 10-session surge: 2026-08-13 -> 2026-08-27  +18.6%
+      off3y  off1y  base126_width  pos_in_base  above200  sma50_slope first_126d_break  surge  after  rvol_break
+t                                                                                                               
+MSTR -82.12 -75.69         140.80         0.13     False       -22.29             None  41.50  22.63         NaN
+SBET -94.91 -74.26          88.57         0.47     False        -3.37       2026-08-27  40.51  12.39        1.05
+BMNR -88.64 -74.50          88.36         0.49     False        -6.45       2026-08-24  40.13  10.22        1.81
+BTDR -68.49 -68.49         199.60         0.13     False       -10.56             None  29.34  15.98         NaN
+MARA -72.98 -60.72         130.11         0.22     False        -6.72             None  28.88  11.88         NaN
+CRCL -74.79 -54.22         153.12         0.24     False       -21.67             None  25.02   0.27         NaN
+COIN -65.39 -61.73          59.84         0.18     False        -8.42             None  23.92   5.42         NaN
+BLSH -76.71 -76.71         138.10         0.24     False       -18.97             None  22.13  19.61         NaN
+GLXY -54.38 -54.38         119.72         0.23     False       -11.43             None  20.72   3.08         NaN
+CLSK -53.40 -51.21         139.63         0.32     False        -4.88             None  12.41  13.98         NaN
+HOOD -35.42 -35.42          89.01         0.63      True         6.78             None  10.46  12.34         NaN
+RIOT -36.64 -36.64         163.65         0.41      True        -6.31             None   8.69  15.80         NaN
+HUT  -41.09 -41.09         234.76         0.41      True        -3.23             None   5.04  18.70         NaN
+WULF -45.34 -45.34         129.19         0.20     False        -9.97             None   1.10   5.82         NaN
+CIFR -44.86 -44.86         157.17         0.27     False        -2.72             None   0.90  12.70         NaN
+IREN -41.77 -41.77         144.41         0.38     False       -14.71             None  -9.45  16.53         NaN
+CORZ -35.06 -35.06         124.63         0.37     False        -5.31             None -10.92   4.20         NaN
+
+medians: {'off3y': -54.38, 'off1y': -54.22, 'base126_width': 138.1, 'pos_in_base': 0.27, 'sma50_slope': -6.72, 'surge': 20.72, 'after': 12.39, 'rvol_break': 1.43}
+
+group EW low 2026-07-29; group-level signals by day (8/10 -> 9/03):
+  08-10  %>20EMA  23.5  EW vs low  +4.9%  EW>20d False  EW>50d False
+  08-11  %>20EMA  29.4  EW vs low  +6.7%  EW>20d False  EW>50d False
+  08-12  %>20EMA  29.4  EW vs low  +9.0%  EW>20d False  EW>50d False
+  08-13  %>20EMA  35.3  EW vs low  +8.4%  EW>20d False  EW>50d False
+  08-14  %>20EMA  29.4  EW vs low  +8.3%  EW>20d False  EW>50d False
+  08-17  %>20EMA  47.1  EW vs low +11.4%  EW>20d False  EW>50d False
+  08-18  %>20EMA  29.4  EW vs low  +4.9%  EW>20d False  EW>50d False
+  08-19  %>20EMA  52.9  EW vs low +10.7%  EW>20d True  EW>50d False
+  08-20  %>20EMA  64.7  EW vs low +17.7%  EW>20d True  EW>50d True
+  08-21  %>20EMA  64.7  EW vs low +19.4%  EW>20d True  EW>50d True
+  08-24  %>20EMA  58.8  EW vs low +18.3%  EW>20d True  EW>50d True
+  08-25  %>20EMA  76.5  EW vs low +24.5%  EW>20d True  EW>50d True
+  08-26  %>20EMA  64.7  EW vs low +21.5%  EW>20d True  EW>50d True
+  08-27  %>20EMA  70.6  EW vs low +26.5%  EW>20d True  EW>50d True
+  08-28  %>20EMA  47.1  EW vs low +16.6%  EW>20d True  EW>50d True
+  08-31  %>20EMA  52.9  EW vs low +20.0%  EW>20d True  EW>50d True
+  09-01  %>20EMA  47.1  EW vs low +14.8%  EW>20d True  EW>50d False
+  09-02  %>20EMA  52.9  EW vs low +17.1%  EW>20d True  EW>50d True
+  09-03  %>20EMA  88.2  EW vs low +30.8%  EW>20d True  EW>50d True

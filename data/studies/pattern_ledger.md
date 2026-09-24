@@ -3,7 +3,7 @@
 _Every entry pattern tested with `lib.studies.pattern_test`, newest last._
 
 **Bar to pass (daily, from 2026-09-23):** paired edge t >= 3 on the best arm, both halves' paired edge > 0, and p_search < 0.003 (label-permutation null over the best-of-arms pick). Grid rows also carry p_opt (the whole grid re-run under each permutation). Rows before 2026-09-23 used the unpaired rule (|t| on raw R + point edge > 0) and have no edge_t / p_search.
-**Multiple testing:** 77 patterns tested so far — at 5% significance, expect ~3.9 to clear by chance. Discount accordingly.
+**Multiple testing:** 79 patterns tested so far — at 5% significance, expect ~4.0 to clear by chance. Discount accordingly.
 
 | tested | name | timeframe | n | best_arm | meanR | ctrl | edge | t | edge_t | p_search | p_opt | half1 | half2 | passed | note |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -84,3 +84,5 @@ _Every entry pattern tested with `lib.studies.pattern_test`, newest last._
 | 2026-09-23 | EP base-break (earnings gap>=5% RVOL>=3 close>252d high) | daily | 296 | t2R | 0.1498 | -0.1016 | 0.2514 | 1.4434 | 2.2821 | 0.0435 |  | 0.0418 | 0.2155 | False | WL-5d Qullamaggie EP out of a long base; liquid_panel_2009, 2010+; ctrl=post |
 | 2026-09-24 | failed-retest breakdown short | daily | 1718 | t1R | -0.3964 | -0.4496 | 0.0531 | -8.7258 | 0.53 | 0.5607 |  | -0.397 | -0.3961 | False | FDX template; first close below the range low after a failed retest; stop 1 ADR close-judged [PRIMARY hold 20]; ctrl=post |
 | 2026-09-24 | failed-retest breakdown short | daily | 1787 | t1R | -0.3802 | -0.4612 | 0.081 | -8.6565 | 1.4585 | 0.1844 |  | -0.397 | -0.3713 | False | FDX template; first close below the range low after a failed retest; stop 1 ADR close-judged [PRIMARY hold 20]; ctrl=xname |
+| 2026-09-24 | long-base breakout (beaten >=30% off 3y high) [post] | daily | 120 | stop_hold | -0.0392 | -0.2327 | 0.1936 | 0.25 | 1.0231 | 0.3713 |  | 0.3293 | -0.0959 | False | Gabe 9/24 second rule set; Tito/Luk long base; ctrl=post |
+| 2026-09-24 | long-base breakout (beaten >=30% off 3y high) [xname] | daily | 124 | trail_bar | -0.0929 | -0.1514 | 0.0585 | -0.3513 | 0.4569 | 0.6192 |  | -0.0376 | -0.1011 | False | Gabe 9/24 second rule set; Tito/Luk long base; ctrl=xname |
