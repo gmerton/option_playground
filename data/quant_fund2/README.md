@@ -30,3 +30,13 @@ lower floor is operationally fine — but whether $5–50M names help the breako
 (the liquid panel is built at the $50M floor; same small-cap blocker as the dilution fade / Mari). **Data lead:** he
 uses a survivorship-free 24-year US database from Financial Modeling Prep (~11,700 symbols) — a candidate source for
 the blocked value + quality test (#3); check price and point-in-time fundamentals before choosing it over Polygon/Sharadar.
+
+### Citation check for #3 (2026-09-24, against each paper's own abstract / text)
+| article's claim | what the paper says | verdict |
+|---|---|---|
+| Jegadeesh & Titman (1993): momentum "strongest in size deciles 1–3, weakest in decile 10" | three size SUBSAMPLES (not deciles); profits "approximately the same magnitude" in each, "not confined to any particular subsample"; the largest-firm subsample "somewhat" lower; significant after costs in all three | **overstated** (the small-cap-strongest result is Hong, Lim & Stein 2000) |
+| Asness (1997): "works best on a broad universe; mega-cap-only momentum underperforms" | the paper is about the value × momentum INTERACTION: momentum strongest among expensive (low-value) stocks, value strongest among losers | **misattributed** — says nothing about universe breadth |
+| Fama & French (2008): momentum "pervasive across regions … largest in small caps" | *Dissecting Anomalies*: momentum is "pervasive; [it shows] up in all size groups (micro, small, and big)" (US only; "regions" is their 2012 paper) | **wrong paper, and it cuts AGAINST the article** — momentum works in big stocks too |
+| Novy-Marx (2012): intermediate (12→7-month) momentum is the robust form, "strongest outside mega-caps" | first half correct; the paper highlights a value-weighted LARGE-stock intermediate-momentum strategy earning ~10%/yr, 1927–2010 | **half right; the size claim is contradicted** |
+**Net:** 1 of 4 citations supports the claim it is attached to. The literature cited actually says momentum survives in large,
+liquid stocks — consistent with our $50M-ADDV universe, not a reason to widen it. Score for #3 lowered to 2.5/5.
