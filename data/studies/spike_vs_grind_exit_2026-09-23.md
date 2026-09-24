@@ -21,7 +21,8 @@ of his system the four selection nulls never touched.
 
 ⚠ It is also **not a loser-cutting rule**. Our exit ledger is 0-for-many, but every rule killed there
 conditions on P&L. The 21-DTE rule certified the same day (t +4.26) precisely because it removes exposure
-at a fixed, P&L-independent event. A spike rule conditions on a **move**.
+at a fixed, P&L-independent event. [⚠ RETRACTED 2026-09-24, FIX-1: that run dropped worthless-expiry winners;
+re-run 21-DTE − hold = −$0.52/share, t −2.42 — a risk reducer only, not a return rule.] A spike rule conditions on a **move**.
 
 ## Method
 

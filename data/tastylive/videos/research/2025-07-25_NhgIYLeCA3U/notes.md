@@ -63,7 +63,7 @@ looking like an edge.
 | 08:44–09:18 | The bearish strangle underperforms, with the lowest volatility and largest loss, because of "stair step up, elevator down" | ✅ The ranking is the delta ranking again. "Lowest largest loss" makes sense: the put is 16Δ, and the crash side is the one that gaps |
 | 09:48–10:11 | A strangle wants time to pass, vol to collapse and the market in range, and that happens most "in low IV environments… drifting higher slowly" | ⚠ **Contradicted on the vol half.** Our VRP panel: the 90d premium by VIX is **−0.51vp at VIX < 15**, +2.53 (t 4.10) at 20–25, +3.45 (t 4.85) at > 25. The SPX strangle playbook: "LowIV regimes (VIX < 20) have near-zero or negative ROC across all delta combos." Low-IV grind-up is where *win rate* is highest and *premium* is thinnest. The one certified short-premium bucket is the opposite regime: **VIX ≥ 20 after a selloff** (SPY bull put t 6.07, SPX condor t 5.21, one bet) |
 | 11:40–11:48 | "In the heat of the moment in April [2025]… I was throwing on bullish trades only" | **Agrees with our certified cell, anecdotally.** Selling index put premium after a selloff at high VIX *is* the bearish-high-IV bucket. n = 1 |
-| 07:50–08:23 | Trade small; all of these are "decent trades over time as long as you are trading small" | **Sizing: agrees.** "Decent trades over time" for the neutral SPY strangle: **consistent with our corrected number** (+$1.13/share held, real fills, 2018–2026; see below). Not yet shown with a t or at the 21-DTE exit |
+| 07:50–08:23 | Trade small; all of these are "decent trades over time as long as you are trading small" | **Sizing: agrees.** "Decent trades over time" for the neutral SPY strangle: **consistent with our corrected number** (+$1.13/share held, real fills, 2018–2026; see below). At the 21-DTE exit it does worse, not better: **21-DTE close − hold −$0.52/share, month-clustered t −2.42** (NULL on return, leaning INVERTED; risk reducer only: sd $9.33 vs $17.09, worst −$291 vs −$617) (re-run 2026-09-24, FIX-1) |
 
 ### What their researchers' data showed vs our strangle finding
 
@@ -77,6 +77,9 @@ looking like an edge.
   through 2020 and 2022. What's left of the disagreement is magnitude, the 21-DTE exit (not yet re-run on the full sample)
   and t (not computed). Answer to Gabe's question (1): **they didn't abandon neutral strangles, and our "it loses at real
   fills" finding doesn't stand.** It needs a clean re-run before either side of the claim is cited.
+- ✅ **Re-run 2026-09-24 (FIX-1, 44 names, n 14,367):** hold **+$0.23/share, 74% win**; 21-DTE close **−$0.29, 64% win**;
+  21-DTE − hold **−$0.52, t −2.42**. So "loses at real fills" is retracted (≈ flat held), and their 21-DTE close is the
+  *weaker* arm on return; it only cuts risk.
 
 ### Settlement caveat on our strangle panel
 
@@ -100,6 +103,8 @@ winners.**
   toward the early exit: on a full-credit winner, holding beats closing at 21 DTE.
 - **The PASS needs a re-run** with settlement at intrinsic from chain-recovered spot (no bid filter on expiry day) before
   anything cites it. **The TEST_INDEX row isn't edited here (per instructions). Flagged to the caller.**
+  ✅ **Done 2026-09-24 (FIX-1): PASS RETRACTED.** n 14,367: 21-DTE close − hold **−$0.52/share, month-clustered
+  t −2.42**, halves −0.63/−0.40 → NULL on return, leaning INVERTED; risk reducer only (TEST_INDEX §1).
 - Same failure family as the `run_iv_condor_study.py` INVALID row, pointing the other way: that one booked missing marks
   as wins; this one deletes the wins.
 

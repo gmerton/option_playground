@@ -56,15 +56,15 @@ no edge.
 | @ | claim | our evidence |
 |---|---|---|
 | 00:57 | Price retracement isn't tradeable in the stock; options change that | ✅ **Agrees on the stock half.** Our equity-timing ledger is full of this (breakout +0.014R, intraday triggers ≈ a random later minute). The options half is asserted here, not shown. |
-| 03:09 / 07:46 | 21-DTE management doubles the probability of a return to the initial price | ⚠ **Mechanical, not a finding.** The managed arm resets its anchor at the roll and gets two shorter windows. The quantity that matters is P&L, and we have measured it directly. **21-DTE management on a 45 DTE / 20Δ short strangle** (TEST_INDEX §1, `exit_21dte_2026-09-23.csv`, 7,265 strangles, 44 names, real fills): **PASS, paired +$1.53/share, month-clustered t +4.26**, variance halved (sd 11.86 vs 23.58, worst −$259 vs −$617/share). ⚠ **But both arms lose:** held −$2.55, managed −$1.02 per share (re-read at the CSV: resolved n 6,558, held 51% win, managed 55% win). SPY alone: held −$1.77, managed −$0.46 per share. So "more likely to stay in range" does become a real variance and loss reduction, **on a trade that still has negative expectancy at real fills.** |
+| 03:09 / 07:46 | 21-DTE management doubles the probability of a return to the initial price | ⚠ **Mechanical, not a finding.** The managed arm resets its anchor at the roll and gets two shorter windows. The quantity that matters is P&L, and we have measured it directly. **21-DTE management on a 45 DTE / 20Δ short strangle** (TEST_INDEX §1, `exit_21dte_2026-09-23_fixed.csv`, 14,367 strangles, 44 names, real fills): ~~PASS, paired +$1.53/share, t +4.26; both arms lose (−$2.55 / −$1.02)~~ (corrected 2026-09-24, FIX-1: original run dropped worthless-expiry winners). Fixed: **21-DTE close − hold −$0.52/share, month-clustered t −2.42** (NULL on return, leaning INVERTED; risk reducer only: sd $9.33 vs $17.09, worst −$291 vs −$617). Held **+$0.23/share, 74% win**; managed **−$0.29, 64% win**. So "more likely to stay in range" becomes a variance and tail reduction, **paid for with return**: managing earns less than holding. |
 | 05:05 | 1-SD 45-day strangle ≈ +4% / −12% | Plausible for put skew on SPY (a 16Δ put sits much further OTM than a 16Δ call). Not checked; descriptive only. |
 | 06:57 | 68% stay within 1 SD | ⚠ **68% is the textbook normal-distribution figure**, not a result. If the band is implied 1 SD, our VRP panel says realized should beat it: 10d premium **+1.75 vp, t_NW 8.93, 17/17 years**. The 30d premium is only +0.78 (t 2.08), so at their tenor the excess is small. Either way, "exactly 68%" is more likely a band drawn from realized vol. |
-| 07:56–08:14 | "Exiting a position before expiration increases the probability of the stock remaining within a narrow range, which is beneficial for premium sellers" | **Half right.** The 21-DTE exit is beneficial *relative to holding* (t 4.26, as above). It isn't beneficial in absolute terms on the 20Δ strangle: managed is still −$1.02/share across the panel and −$0.46 on SPY. They never show the managed trade's absolute P&L. |
+| 07:56–08:14 | "Exiting a position before expiration increases the probability of the stock remaining within a narrow range, which is beneficial for premium sellers" | **Half right, on risk only.** The 21-DTE exit cuts variance and the tail, but on return it is *worse* than holding (−$0.52/share, t −2.42; managed −$0.29 vs held +$0.23 across the panel; corrected 2026-09-24, FIX-1 — the old "beneficial relative to holding, t 4.26" was the buggy run). They never show the managed trade's absolute P&L. |
 
 ## What I would take
 
-1. **Nothing new.** The part of the claim that matters (21-DTE management beats holding) is already our one certified
-   exit rule, measured at real fills with a paired control. This video's version is a price-path statistic that
+1. **Nothing new.** The part of the claim that matters (21-DTE management beats holding) was measured at real fills
+   with a paired control, and after FIX-1 (2026-09-24) the answer is **no on return** (−$0.52/share, t −2.42), yes on risk. This video's version is a price-path statistic that
    doesn't reach P&L.
 2. **A caution for reading tastylive:** "doubles your odds" here means the odds of a price event, not of a winning
    trade. Check which "probability" a slide is about before relaying it.
@@ -73,5 +73,5 @@ no edge.
 
 - **Nothing worth queuing.** The price-return probability has no P&L content, and the P&L version has already run.
 - The only live open question it touches: **does the managed 45/21 strangle turn positive under a forward-knowable
-  liquidity filter?** Our 21-DTE row's lead has the hold arm at +$1.74/share / 72% win when mark coverage ≥ 90%,
+  liquidity filter?** Our 21-DTE row's lead has the hold arm at +$1.74/share / 72% win when mark coverage ≥ 90% (fixed run: +$2.75 / 86% at ≥ 90%, FIX-1 2026-09-24),
   but coverage is not knowable at entry. That's already recorded in TEST_INDEX §1; nothing new here.

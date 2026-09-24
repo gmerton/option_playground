@@ -33,8 +33,8 @@ to check against our ledger.
 ### Tier 1 — his standard trade, checkable against our real-fill results
 | video | title | our nearest result |
 |---|---|---|
-| IyddBat9m1o | Managing at 21 Days Doubles Your Odds (Options Jive) | 21-DTE rule **PASS** (+$1.53, t 4.26) but on a **losing** 45-DTE strangle (−$2.55 held / −$1.02 managed) |
-| 7j10VtUH2G8 | We Tested 10 Years of SPY Strangles Across Every Volatility Regime (Market Measures) | certified bucket = index put sale in bearish-high-IV; single-name 45-DTE strangle negative |
+| IyddBat9m1o | Managing at 21 Days Doubles Your Odds (Options Jive) | 21-DTE rule ~~PASS (+$1.53, t 4.26) on a losing strangle~~ → **NULL on return, leaning INVERTED** (−$0.52/share, t −2.42; hold +$0.23 / managed −$0.29), risk reducer only (corrected 2026-09-24, FIX-1) |
+| 7j10VtUH2G8 | We Tested 10 Years of SPY Strangles Across Every Volatility Regime (Market Measures) | certified bucket = index put sale in bearish-high-IV; single-name 45-DTE strangle ≈ flat (+$0.23/share held; "negative" corrected 2026-09-24, FIX-1) |
 | VRelP3ORlrA | Stop Selling Strangles When the Market Drops 3%? The Data Says Wrong (Market Measures) | ⭐ same claim as our one certified cell (sell after a selloff) |
 | NhgIYLeCA3U | I Abandoned Neutral Strangles After This Research | tastylive's own researchers walking back the flagship trade |
 | Wt90xWeRuMQ | I Stopped Trading Strangles After This Study | same (`project_tastylive_kb` has a related note) |

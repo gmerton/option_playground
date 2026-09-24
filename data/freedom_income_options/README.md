@@ -18,8 +18,10 @@ money or simulated, and on which delta is "Tom's".
 
 - Sosnoff's own rule set (45-DTE ~20Δ strangle, 21-DTE management, IV rank): [OptionsPlay interview
   notes](../optionsplay/videos/2024-10-14_pQlGgcyrUoQ/notes.md) and the [More Tom KB](../more_tom/README.md).
-- The 21-DTE exit was tested directly: PASS as an exit (paired +$1.53, t 4.26), but **both arms are negative**
-  (TEST_INDEX §1, `data/studies/exit_21dte_2026-09-23.csv`; SPY rows −$1.77 held vs −$0.46 managed).
+- The 21-DTE exit was tested directly: ~~PASS as an exit (paired +$1.53, t 4.26), both arms negative~~ (corrected 2026-09-24, FIX-1: original run dropped worthless-expiry winners).
+  Fixed: 21-DTE close − hold **−$0.52/share, month-clustered t −2.42** (hold +$0.23, 74% win; 21-DTE −$0.29, 64% win; n 14,367) → **NULL on return, leaning INVERTED; a risk reducer only** (sd $9.33 vs $17.09, worst −$291 vs −$617) (TEST_INDEX §1,
+  `data/studies/exit_21dte_2026-09-23_fixed.csv`; the old SPY rows −$1.77 held / −$0.46 managed came from the buggy
+  run and are not re-derived).
 - The certified index put sale: `data/studies/tierab_significance_2026-09-22.csv` (SPY bull put Bearish_HighIV
   t 6.07, SPX condor t 5.21, one bet).
 - **Gap:** a naked 10Δ index put at 45/50%/21 DTE, always-on, at real fills, has never been run. Neither has

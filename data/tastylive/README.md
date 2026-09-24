@@ -13,6 +13,8 @@ mid and give no test statistic, so each entry here checks what the study actuall
 
 ## Cross-references
 
-- tastytrade's 21-DTE management rule was tested directly: **PASS as an exit (paired +$1.53, t 4.26) on a trade that
-  loses in both arms** (TEST_INDEX §1, `exit_21dte_2026-09-23.csv`).
+- tastytrade's 21-DTE management rule was tested directly: ~~PASS as an exit (paired +$1.53, t 4.26) on a trade that
+  loses in both arms~~ (corrected 2026-09-24, FIX-1: original run dropped worthless-expiry winners). Fixed: **NULL on return, leaning INVERTED** (21-DTE close − hold −$0.52/share,
+  t −2.42; hold +$0.23, 21-DTE −$0.29), a **risk reducer only** (sd $9.33 vs $17.09, worst −$291 vs −$617)
+  (TEST_INDEX §1, `exit_21dte_2026-09-23_fixed.csv`).
 - Tom Sosnoff's 45-DTE / 20Δ strangle and the IV-rank vs credit/width sort: TEST_INDEX §1 and §9.

@@ -63,11 +63,11 @@ It's a capital-efficiency discussion. It isn't evidence that either structure ha
 | 01:43–03:28 | Strangles excel on 0–2% moves, condors on > 5% drops; "consider early exit when SPY moves > 2%" | ⚠ **Outcome-conditioned buckets.** Every short-premium structure wins when the realised move is small. That's the payoff diagram, not a finding. "Exit when SPY moves > 2%" is a **P&L-conditioned stop**, and every such exit in our ledger is negative (straddle −50% stop −3.84pp; profit locks, BE stops and trims all cost). tastylive's own 2023 rolling study found exit-at-breach the worst arm (32% win) |
 | 04:28–05:06, 07:28 | Strangles win 10–15% more often, partly because "you can take strangles off when they hit a certain profit target" | ✅ Mechanically right. ❌ **Not edge.** Win rate is the metric our ledger most often finds moving against expectancy (premium-to-width: win falls 79.6 → 75.7 while net ROC rises −2.96 → +4.07, t 3.74) |
 | 05:24–06:04 | 2020 hurt strangles; size down in "uncertain" years (2018, 2020) and up in recoveries (2021–23) | ⚠ **Hindsight labels.** "Uncertain" and "recovery" are only knowable afterwards. Our tested version, **sell index premium after a selloff at VIX ≥ 20**, is the *opposite* sizing rule (size up into the stress, not down). It's the one bucket that certifies (SPY bull put t 6.07, SPX condor t 5.21). "Regime can't be forecast" is our broader result (breakout-regime feedback, strategy localisation persistence ρ −0.01) |
-| 06:35–07:18 | The cumulative strangle P&L "offsets" 2020; keep doing it year after year | ⚠ **Unresolved on our data, and our old answer was wrong.** The ledger's 21-DTE study reported that the 45-DTE 20Δ strangle loses at real fills (44 names: hold −$2.55, 21-DTE close −$1.02; SPY −$1.77 / −$0.46). **But that sample drops every trade whose two legs both expired worthless** (settlement caveat below). With them restored, SPY held to expiry is **+$1.13/share, median +$3.72, 75% win (n 402)**, and 2020 is inside that. So their "cumulative P&L offsets 2020" is *consistent* with our corrected SPY number, but it isn't tested at the 21-DTE exit or with a t |
+| 06:35–07:18 | The cumulative strangle P&L "offsets" 2020; keep doing it year after year | ⚠ **Unresolved on our data, and our old answer was wrong.** The ledger's 21-DTE study reported that the 45-DTE 20Δ strangle loses at real fills (44 names: hold −$2.55, 21-DTE close −$1.02; SPY −$1.77 / −$0.46). **But that sample drops every trade whose two legs both expired worthless** (settlement caveat below). With them restored, SPY held to expiry is **+$1.13/share, median +$3.72, 75% win (n 402)**, and 2020 is inside that. So their "cumulative P&L offsets 2020" is *consistent* with our corrected SPY number. **Re-run 2026-09-24 (FIX-1, 44 names, n 14,367):** hold **+$0.23/share, 74% win**; 21-DTE close **−$0.29** — ≈ flat, not a loser |
 | 10:13–11:34 | Condors earn 12–15% premium/BP, 2–3× strangles; but "we pay our bills with dollars, not percents" | ✅ **The dollars-vs-percent point is right and it's our capital rule** (the put spread ties up 4–7× the capital of a debit spread; judge on $/risk and on delta). ⚠ But premium/BP is a *collected* ratio, not a *realised* one. At real fills the condor's extra 2 legs cost 25% of their spread each way |
 | 11:44–12:16 | Allocate 0.5–2% per defined-risk trade, 3–7% per undefined-risk trade | **Consistent with our sizing rule** (size by max loss; the certified bucket is capped at $3,000 total). The 3–7% of BP for a naked strangle is a **margin** number. A −50% of BP loss (their own 12:21 figure) on a 7% allocation is −3.5% of the account per position in a crash, and the positions are correlated |
 | 12:21–12:31 | Strangles can lose > 50% of BP; the condor max loss stays < 65% of BP | ✅ Consistent with our tail numbers: the SPY hold arm's worst is −$82.88 on a $3.71 credit (2020-02-07), −22× credit. The certified SPX cell uses 0.10Δ wings, and its worst trade is −41.9% of risk vs −100% for the SPY bull put |
-| 13:55–14:28 | Max-loss ratios fell in 2021–25 "because we've started to close everything at 21 DTE" | ✅ **Our 21-DTE test agrees on the mechanism.** The close halves the variance (sd $11.86 vs $23.58) and the worst trade (−$259 vs −$617). ⚠ But 2021–25 was also a lower-stress period, so their before/after comparison confounds rule and regime. Ours is paired, but it's on a winner-depleted sample (caveat below). The variance cut probably survives; the mean result needs a re-run |
+| 13:55–14:28 | Max-loss ratios fell in 2021–25 "because we've started to close everything at 21 DTE" | ✅ **Our 21-DTE test agrees on the mechanism.** The close halves the variance (sd $11.86 vs $23.58) and the worst trade (−$259 vs −$617). ⚠ But 2021–25 was also a lower-stress period, so their before/after comparison confounds rule and regime. Ours is paired. **Re-run 2026-09-24 (FIX-1):** the variance cut survives (sd $9.33 vs $17.09, worst −$291 vs −$617); the mean does not — 21-DTE close − hold **−$0.52/share, t −2.42** (NULL leaning INVERTED) |
 | 15:07–15:21 | Everything falters in explosive volatility, "only about 10% of the time" | The truth of the matter: the tail *is* the P&L. Corrected SPY hold arm: median +$3.72 vs mean +$1.13. The tail takes ~70% of the median trade back, and 2020-02 entries alone lost up to −$82.88 on a $3.71 credit |
 
 ### Why "stopped trading strangles"?
@@ -82,6 +82,7 @@ They didn't. What the data showed them:
 that question our certified answer is narrow: a **skewed, VIX-gated, winged** SPX version after selloffs certifies (t 5.21).
 The ledger's broad "the naked 45-DTE strangle loses at real fills" result is **invalid as it stands**: the hold arm dropped
 the both-legs-worthless winners. Corrected SPY is +$1.13/share held. The unconditional strangle is **open**, not failed.
+**Re-run 2026-09-24 (FIX-1):** 44-name panel held +$0.23/share (74% win) — ≈ flat, no edge shown, not a loser.
 
 ### Settlement caveat on our strangle panel
 
@@ -104,14 +105,15 @@ winners.**
   reliable as stated.** The **21-DTE PASS (+$1.53, t 4.26)** is computed on the same winner-depleted sample, so it's biased
   toward the early exit: on a full-credit winner, holding beats closing at 21 DTE.
 - **The PASS needs a re-run** with settlement at intrinsic from chain-recovered spot (no bid filter on expiry day) before
-  anything cites it. **The TEST_INDEX row isn't edited here (per instructions). Flagged to the caller.**
+  anything cites it. ✅ **Done 2026-09-24 (FIX-1): PASS RETRACTED.** n 14,367: 21-DTE close − hold **−$0.52/share,
+  month-clustered t −2.42**, halves −0.63/−0.40 → NULL on return, leaning INVERTED; risk reducer only (TEST_INDEX §1). **The TEST_INDEX row isn't edited here (per instructions). Flagged to the caller.**
 - Same failure family as the `run_iv_condor_study.py` INVALID row, pointing the other way: that one booked missing marks
   as wins; this one deletes the wins.
 
 ## What I would take
 
 1. **"Wings are a capital decision, not an edge decision"** is right, and it matches Sosnoff within a name.
-2. **The 21-DTE close cuts the tail.** Their before/after agrees with our paired result on variance. Our mean PASS needs re-running (caveat).
+2. **The 21-DTE close cuts the tail.** Their before/after agrees with our paired result on variance. On return it costs: −$0.52/share, t −2.42 (PASS retracted 2026-09-24, FIX-1).
 3. **Size by max loss, not by margin.** Their own −50%-of-BP figure shows why.
 
 ## Not tested, could be

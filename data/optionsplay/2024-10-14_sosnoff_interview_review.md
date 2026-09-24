@@ -316,6 +316,10 @@ manufacture a confirmation of exactly the claim under test.
 21-DTE arm on *risk* (drawdown, worst trade) and roughly flat on mean return — i.e. the rule buys path, not edge,
 which is close to what he actually claims.
 
+**Result (run 2026-09-23 with a path-coverage guard; corrected 2026-09-24, FIX-1: the first run dropped
+worthless-expiry winners and printed a spurious PASS +$1.53, t 4.26):** 21-DTE close − hold **−$0.52/share, month-clustered t −2.42** (halves −0.63/−0.40; hold +$0.23, 74% win; 21-DTE −$0.29, 64% win) → **PASS: NO**. The prior held on risk
+(sd $9.33 vs $17.09, worst −$291 vs −$617) and was slightly optimistic on return: the rule buys path and **costs** a little edge (TEST_INDEX §1).
+
 ### Declined
 
 * **Overby's VIX Sept/Oct seasonality** — his co-panelist half-refuted the adjacent version on air, our August

@@ -76,6 +76,8 @@ winners.**
   toward the early exit: on a full-credit winner, holding beats closing at 21 DTE.
 - **The PASS needs a re-run** with settlement at intrinsic from chain-recovered spot (no bid filter on expiry day) before
   anything cites it. **The TEST_INDEX row isn't edited here (per instructions). Flagged to the caller.**
+  ✅ **Done 2026-09-24 (FIX-1): PASS RETRACTED.** n 14,367: 21-DTE close − hold **−$0.52/share, month-clustered
+  t −2.42**, halves −0.63/−0.40 → NULL on return, leaning INVERTED; risk reducer only (TEST_INDEX §1).
 - Same failure family as the `run_iv_condor_study.py` INVALID row, pointing the other way: that one booked missing marks
   as wins; this one deletes the wins.
 

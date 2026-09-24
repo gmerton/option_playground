@@ -40,8 +40,9 @@ Don't forecast price. Trade **implied volatility**:
 
 **What our data says his book is.** One piece of it is the single certified short-premium result we have. That's
 **selling index put risk after a selloff when implied vol is high** (SPY bull put t 6.07 + SPX condor t 5.21, one
-bet). The generic, always-on version of the same rules loses on single names after real fills:
-- 45/20Δ strangles across 44 liquid names are negative in both exit arms;
+bet). The generic, always-on version of the same rules does not pay on single names after real fills:
+- 45/20Δ strangles across 44 liquid names are ≈ flat held (+$0.23/share, 74% win), and managing at 21 DTE
+  earns *less* (−$0.29/share), not more (corrected 2026-09-24, FIX-1: original run dropped worthless-expiry winners);
 - 10-DTE selling costs 136% of gross.
 
 His philosophy of what *not* to trust (charts, news, forecasts, intraday triggers) is the part our equity ledger
@@ -68,7 +69,7 @@ independently confirms.
 
 | # | rule | source | verdict | one-line evidence |
 |---|---|---|---|---|
-| 11 | **Core trade: ~45-DTE short strangle at ~20Δ (just outside the expected move)**, slight skew for a lean; 75% undefined / 25% defined | OptionsPlay; Freedom Income (ES 10Δ put variant) | **CONTRADICTED on single names · UNTESTED on futures** | 7,265 strangles / 44 liquid names / 2018–26, real fills: **hold −2.55, 21-DTE −1.02 per share, both negative**, medians ≈ 0 (verified at `data/studies/exit_21dte_2026-09-23.csv`). 30d VRP +0.78vp, t 2.08: absent at his tenor. The index version certifies **only in the bearish-high-IV regime** (SPX condor t 5.21) |
+| 11 | **Core trade: ~45-DTE short strangle at ~20Δ (just outside the expected move)**, slight skew for a lean; 75% undefined / 25% defined | OptionsPlay; Freedom Income (ES 10Δ put variant) | **NULL on single names (≈ flat, no edge) · UNTESTED on futures** | 14,367 strangles / 44 liquid names / 9 yrs, real fills: **hold +$0.23/share (74% win), 21-DTE close −$0.29 (64% win)** — ≈ flat, not the "both negative −2.55 / −1.02" first reported (corrected 2026-09-24, FIX-1: original run dropped worthless-expiry winners); `data/studies/exit_21dte_2026-09-23_fixed.csv`. The hold mean rises with the path-coverage floor (+2.75 at ≥90%): coverage proxies liquidity. 30d VRP +0.78vp, t 2.08: absent at his tenor. The index version certifies **only in the bearish-high-IV regime** (SPX condor t 5.21) |
 | 12 | IV exceeds realised: "realised is higher only ~15% of the time", and that's why you sell | More Tom `wR5M8Z6qhcI` | **PARTIAL** | Right sign; realised beats implied **25% (10d) / 29% (30d, 90d)**, not 15%; the premium is significant only at 10d |
 | 13 | ~1 SD strikes, not 2 SD ("too cheap"); **sell near-the-money premium**: "eat like a bird, poop like an elephant"; "I like to sell the $6 call" | More Tom `s9JYik5DV7k`; p_X8dyNXlUE 08:18–08:35 | **AGREES** (1-day) / UNTESTED (45-DTE sweep) | SPY 1-day, positive gamma: **2× fly +5.8% vs 16/5Δ condor +1.8% vs 16/5Δ put spread +1.9%**, "the edge is AT the money". Credit/width top quintile +6.52% net (t 2.40) |
 | 14 | Probability of profit is a dial, **not an edge** ("right 80% of the time doesn't mean you make money") | 9vwnX5mTT9M 05:38; OptionsPlay | **AGREES** | Across credit/width quintiles win rate *falls* 79.6→75.7 while net ROC *rises* −2.96→+4.07 (t 3.74) |
@@ -83,7 +84,7 @@ independently confirms.
 
 | # | rule | source | verdict | one-line evidence |
 |---|---|---|---|---|
-| 21 | **Manage at 21 DTE**, regardless of P&L (roll or close) | OptionsPlay; C6vrj2zu6Hc 18:28 | **AGREES on risk, not return** ⭐ | First exit rule to certify: paired **+$1.53/strangle, t 4.26**, halves +1.07/+2.17, sd halved, worst −$617 → −$259, but **both arms negative**. It removes gamma, not losers |
+| 21 | **Manage at 21 DTE**, regardless of P&L (roll or close) | OptionsPlay; C6vrj2zu6Hc 18:28 | **AGREES on risk only · NULL on return, leaning INVERTED** | ~~First exit rule to certify: paired +$1.53/strangle, t 4.26~~ (corrected 2026-09-24, FIX-1: original run dropped worthless-expiry winners). Fixed: 21-DTE close − hold **−$0.52/share, month-clustered t −2.42**, halves −0.63/−0.40 → pre-registered PASS: **NO** (managing earns *less*: the early close pays a second round trip). Risk only: sd $9.33 vs $17.09, worst −$291 vs −$617, worst 1% −$23 vs −$46. It removes gamma, and costs return |
 | 22 | Take profits early: 50% of max (25% for straddles / 0DTE) | C6vrj2zu6Hc 16:04; p_X8dyNXlUE 04:44 | **UNTESTED** (in isolation) | The 50%-take arm of the queued 21-DTE design was never run; ungated SPY 45-DTE 50%-take put spread only t 1.2 monthly (Freedom Income row) |
 | 23 | **Never roll a loser out and wider** ("a $3 spread became a $9 spread") | More Tom `qo9466KD_u8` | **AGREES** | Credit spreads: the 50%-take / 2×-stop exit lost −4.3%/trade (t −5.4) vs +0.6% held, both halves (`etf_put_spread_study.md` §2); the same 50% take with **no** stop is +5.70%/trade, weekly t 4.87 (`etf_put_spread_exit_rule_2026-09-16.md`); paid-to-wait: never close on the break. (⚠ corrected 2026-09-24: this row used to cite −9.51pp / re-entry t 1.55, which is the long 7-DTE **straddle's** −50% stop, not a credit-spread result) |
 | 24 | Instead, sell the opposite-side spread "to reduce basis" | More Tom `qo9466KD_u8`, `FZfndYs_nXc` | **UNTESTED** (negative prior) | Every call-side premium result is negative: ETF condor call side t 0.6, UVXY bear call −7.4% (t −3.65), UVIX −8.8%. It's a margin argument, not an edge argument |
@@ -105,16 +106,19 @@ independently confirms.
 
 | tag | rules |
 |---|---|
-| AGREES | 1, 3, 6, 7, 13, 14, 16, 21 (risk only), 23, 28 |
+| AGREES | 1, 3, 6, 7, 13, 14, 16, 21 (risk only; return NULL leaning INVERTED, corrected 2026-09-24), 23, 28 |
 | PARTIAL | 4, 10, 12, 15, 19, 25, 26, 27 |
-| CONTRADICTED | 2, 5, 11 (single names), 17, 18 (unfiltered), 20, 29 |
+| CONTRADICTED | 2, 5, 17, 18 (unfiltered), 20, 29 |
+| NULL | 11 (single names: ≈ flat held; was CONTRADICTED on the retracted "both arms negative", FIX-1 2026-09-24) |
 | UNTESTED | 8, 9, 22, 24, 30 (+ 11 on futures) |
 
 **Where he is right**, he's right about **what not to trust**: charts, forecasts, news, POP, rolling losers,
-illiquid chains. And about **two mechanics**: the 21-DTE gamma truncation, and near-the-money over penny premium.
+illiquid chains. And about **two mechanics**: the 21-DTE gamma truncation (a risk cut only; it costs return,
+corrected 2026-09-24 FIX-1), and near-the-money over penny premium.
 
-**Where he is wrong**, it's about **the return of the trade itself**. Always-on 45/20Δ strangles and unfiltered
-1×-EM 0DTE flies lose at real fills. The part of his book that pays is conditional:
+**Where he is wrong**, it's about **the return of the trade itself**. Always-on 45/20Δ strangles earn ≈ nothing
+at real fills (+$0.23/share held; corrected 2026-09-24 FIX-1 from "lose"), managing them at 21 DTE earns less,
+and unfiltered 1×-EM 0DTE flies lose. The part of his book that pays is conditional:
 - index put risk sold after a selloff (the certified bucket);
 - the 1-day fly only on positive-dealer-gamma days at 2× wings.
 
@@ -132,10 +136,11 @@ fails" would be an unsupported statement.
   chair", 11:45). `data/tastylive/index/README.md` counts it among "the 4 titles that are Sosnoff himself". Only 3
   are, and `9vwnX5mTT9M` is probable rather than confirmed (no self-identification in the captions).
 - ⚠ **TEST_INDEX row inconsistency:** the Freedom Income row quotes the 21-DTE arms as "−$0.46 vs −$1.77". The
-  primary CSV reproduces the §1 row instead: hold −2.547, 21-DTE −1.016, diff +1.531, n 6,558 resolved of 7,265.
-  The §1 row is correct. ⚠ The $ means are price-weighted: pre-split AMZN supplies the 5 worst trades. The result
-  survives without AMZN (−2.32 / −0.82) and in ROC terms (−134% vs −60% of credit, mean). Medians are ≈ 0 (hold
-  −0.10, 21-DTE +0.12 per share).
+  primary CSV reproduced the §1 row instead: hold −2.547, 21-DTE −1.016, diff +1.531, n 6,558 resolved of 7,265.
+  ⛔ **Both are superseded (RETRACTED 2026-09-24, FIX-1):** that run dropped every both-legs-worthless strangle
+  (a zero-bid filter hit expiry day), removing hold-to-expiry winners. The re-run (`exit_21dte_2026-09-23_fixed.csv`,
+  n 14,367): hold **+$0.23**, 21-DTE **−$0.29**, diff **−$0.52, t −2.42** per share. The AMZN / ROC / median
+  checks quoted here were made on the buggy sample and no longer apply.
 - ⚠ **Doc error:** `data/optionsplay/videos/2026-07-25_YfrZT_kTo_4/notes.md` lists ARM B's ROC series against the
   wings in reverse order. The CSV maps **0.10Δ → +2.98, 0.15Δ → +3.10, 0.20Δ → +2.66, 0.25Δ → −0.04**, so the
   narrowest wing is the loser. That changes "dialling your own width buys nothing" to **"anything but the
@@ -146,7 +151,8 @@ fails" would be an unsupported statement.
 1. **Wing-width confirmation on the in-book index bull put.** Pre-registered narrowest-vs-0.20Δ, ~1 h on
    `run_premium_to_width.py`. Prior: replicates, because it's friction.
 2. **50%-take arm on the existing 21-DTE strangle harness.** Rule 22 is his most-repeated untested rule. It's
-   cheap because the path-coverage guard exists.
+   cheap because the path-coverage guard exists. (Prior after FIX-1: an early take pays a second round trip,
+   the mechanism that sank the 21-DTE close on return.)
 3. **VIX term structure as a gate inside the certified bucket.** ⚠ Best-of-k on the one certified cell, with a
    handful of episodes, so it's probably UNDERPOWERED.
 
@@ -195,7 +201,7 @@ disagree in direction. Section refs are to `data/studies/TEST_INDEX.md`.
 | C2 | ⭐ **Long 7-DTE straddle gated on LOW own-IV percentile**: ≤20th pct mid +9.19 vs +5.05 ungated, monotone plateau (§2). **Short-straddle mirror:** IVpct ≤ 30 short **−4.51 [−9.02, −0.47]** (significant against the seller); IVpct ≥ 85 short +3.19 **[−2.86, +8.57]** (CI includes 0) (§5) | **AGAINST** (the edge is to **buy** low, not sell high) | SUPPORTED t 3.7 |
 | C3 | Paid-to-wait (setup names): IV ≥ 60th pct +5.7% net vs −3.3% ungated (trade-weighted); month-weighted the gate is +7.4% (**t 1.53**) and the gated−ungated gap +16pp (t 2.29), **NOT CERTIFIED** after Šidák (⚠ corrected 2026-09-24: 2.29 is the gap's t, not the gate's; `missing_tstats_2026-09-22.csv`); 2021 −17%, 2022 −19% (§1, §0 missing-t row) | weak FOR | not certified |
 | C4 | Earnings vol premium: +0.601% at mid, **−0.428% at the bid**, crossing costs 171% of gross; **the selectivity lever inverts**: the richest implied-move quintile is the WORST at the bid (§9). calculator.py `iv30/rv30 ≥ 1.25` is **harmful**, and its quintiles invert (cheapest IV/RV best) (§9) | **AGAINST** | NULL / INVERTED |
-| C5 | 45-DTE / 20Δ strangles on 44 liquid names, real fills: hold −2.55, 21-DTE −1.02 per share, both negative (§1 21-DTE); 10-DTE single-name selling: costs 136% of gross (§1) | AGAINST (unconditional per-name selling) | FAIL |
+| C5 | 45-DTE / 20Δ strangles on 44 liquid names, real fills: hold **+$0.23**, 21-DTE **−$0.29** per share, ≈ flat, managing worse (§1 21-DTE) (corrected 2026-09-24, FIX-1: original run dropped worthless-expiry winners); 10-DTE single-name selling: costs 136% of gross (§1) | AGAINST (unconditional per-name selling) | NULL (45 DTE) / FAIL (10 DTE) |
 | C6 | Mega-cap 1-day 2× fly by own gamma: **−1.9%**; stock straddle spread 4.4% of mid = 4× SPY (§2) | AGAINST (per-name transfer of B4) | FAIL |
 | C7 | Vol-ETP call spreads (sell rich vol-product premium): UVXY −7.4% net (t −3.65), UVIX −8.8% (t −2.81) (§1) | AGAINST (friction) | INVERTED after costs |
 | C8 | tastylive `2025-02-11_t7_7MUgXj2E` extends the index result to "we use IV rank for individual stocks" with **no per-name evidence** (TSLA is scored on the VIX change) | claim only | contradicted by C1/C2 |
@@ -226,3 +232,6 @@ disagree in direction. Section refs are to `data/studies/TEST_INDEX.md`.
    off; never rank single names by their own IV."** It isn't "sell whatever has high IV rank". None of the five
    videos in this wave overturns that. Three are neutral (term structure, earnings season, jade lizard), and two
    support only its index half (VIX-bucket strangles, VIX expansions).
+
+
+**SPY slices re-derived from the fixed CSV (2026-09-24, FIX-1)** — replaces the flagged SPY figures in the video notes (saFY8btmLZ0, VRelP3ORlrA, 7j10VtUH2G8, Freedom Income): SPY n 400, hold **+$1.09/share (75% win)** vs managed **+$0.31 (70%)**; 2020 hold −$2.32 vs managed −$1.88 (was −$8.48 / −$3.50); post-May-2020 managed − hold **−$1.15, t −2.32** (held +$2.14); worst managed −$51.7 / worst held −$82.9 (unchanged — the bug dropped winners, not losers).

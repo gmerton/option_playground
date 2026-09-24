@@ -85,9 +85,11 @@ def build(ticker: str) -> pd.DataFrame:
     # Found by the tastylive review; SPY hold-to-expiry flipped from -$1.77 to about +$1.13/share when restored.
     df = df[((df["bid"] > 0) & (df["ask"] > 0)) | (df["trade_date"] == df["expiry"])]
     rows = []
-    fridays = sorted(d for d in df["trade_date"].unique() if pd.Timestamp(d).weekday() == 4)
+    by_day = dict(tuple(df.groupby("trade_date")))            # index once: the per-Friday rescans were O(Fridays x rows)
+    by_exp = dict(tuple(df.groupby("expiry")))
+    fridays = sorted(d for d in by_day if pd.Timestamp(d).weekday() == 4)
     for d in fridays:
-        day = df[df["trade_date"] == d]
+        day = by_day[d]
         cand = day[(day["dte"] >= DTE_TARGET - DTE_TOL) & (day["dte"] <= DTE_TARGET + DTE_TOL)]
         if cand.empty:
             continue
@@ -101,7 +103,7 @@ def build(ticker: str) -> pd.DataFrame:
         if credit <= 0:
             continue
 
-        life = df[(df["expiry"] == exp) & (df["trade_date"] > d)]
+        life = by_exp[exp]; life = life[life["trade_date"] > d]
         legs = life[((life["cp"] == "P") & (life["strike"] == sp["strike"]))
                     | ((life["cp"] == "C") & (life["strike"] == sc["strike"]))]
         both = legs.groupby("trade_date")["cp"].nunique()

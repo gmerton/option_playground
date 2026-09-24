@@ -86,6 +86,6 @@ bigger credit is **not** a bigger edge: the question is premium minus expected p
 
 - **Nothing genuinely new.**
   - VIX-bucketed SPY 45/16Δ strangles: already specced as the VIX-rank sweep in
-    `2025-02-25__QYaqicT5dg/notes.md` "Not tested, could be" and adjacent to the 21-DTE row, where both arms lose.
+    `2025-02-25__QYaqicT5dg/notes.md` "Not tested, could be" and adjacent to the 21-DTE row (hold ≈ flat +$0.23/share, 21-DTE close −$0.29; the old "both arms lose" was corrected 2026-09-24, FIX-1).
   - TSLA per-name IV buckets: answered by the IV rank vs cw row.
   - VIX mean reversion: descriptive, priced by the futures curve, and answered operationally by the post-shock row.
