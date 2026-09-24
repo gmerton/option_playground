@@ -1,0 +1,18 @@
+fills in unexpired contracts: 403 of 1224 option fills
+  no quote bar at the fill minute: 0 · zero/crossed quote: 0 · fill far outside quote: 3
+scored fills 400 · orders 248 · trading days 35
+
+PRIMARY: mean fraction of the quoted spread paid vs mid, per order (model assumes 0.25)
+  mean +0.133  95% CI [+0.111, +0.154] (day-block bootstrap)  median +0.143  -> CONSERVATIVE (model too harsh)
+
+SECONDARY (exploratory)
+  single                       n  169  mean +0.153 [+0.116, +0.183]  median +0.174  $/ct vs mid +4.11
+  combo                        n   79  mean +0.092 [+0.066, +0.120]  median +0.090  $/ct vs mid +2.62
+  opening                      n  145  mean +0.108 [+0.076, +0.136]  median +0.118  $/ct vs mid +2.62
+  closing                      n   96  mean +0.173 [+0.131, +0.216]  median +0.181  $/ct vs mid +5.40
+  spread tight (2.5% of mid)   n   83  mean +0.141 [+0.086, +0.180]  median +0.187  $/ct vs mid +1.60
+  spread mid (6.1% of mid)     n   82  mean +0.128 [+0.090, +0.179]  median +0.112  $/ct vs mid +4.33
+  spread wide (16.5% of mid)   n   83  mean +0.132 [+0.092, +0.173]  median +0.140  $/ct vs mid +4.99
+  August                       n   95  mean +0.141 [+0.103, +0.178]  median +0.153  $/ct vs mid +4.02
+  September                    n  153  mean +0.129 [+0.098, +0.152]  median +0.140  $/ct vs mid +3.40
+  legs at or better than mid: 30% · at/through far touch (s >= 0.5): 6%
