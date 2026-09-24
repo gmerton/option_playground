@@ -1,0 +1,269 @@
+[00:00:00] How does volatility change over time for
+[00:00:02] strangles and straddles? How do you
+[00:00:04] think it changes?
+[00:00:05] Oof, it's a good question, but I have to
+[00:00:08] think that
+[00:00:10] volatility is going to going to change
+[00:00:12] over time with the higher implied
+[00:00:14] volatility all the time. I mean, subject
+[00:00:17] to change daily. Yes. I mean, when
+[00:00:19] you're getting big moves like this, when
+[00:00:21] we were seeing
+[00:00:21] >> Volatility of P&L. Oh, volatility of
+[00:00:23] P&L.
+[00:00:25] Volatility of P&L, it's going to move
+[00:00:26] big with direction. And time. As you got
+[00:00:29] closer. Yep, yep. Sure.
+[00:00:32] I mean, even you you look at when you
+[00:00:35] have a 240 point handle move like we did
+[00:00:37] yesterday top to bottom.
+[00:00:38] >> Oh, everything's going to be all over
+[00:00:41] the place. Your P&L moves and and the
+[00:00:43] volatility of your portfolio. That's why
+[00:00:45] we try to I think I wish I don't know if
+[00:00:47] they're going to get to it in this
+[00:00:48] segment. Rolling at 21 days takes all of
+[00:00:52] doesn't take all of it, takes a big part
+[00:00:54] of it out of the equation.
+[00:00:55] >> Yes.
+[00:00:57] Uh so, straddles generate higher
+[00:00:59] volatility than strangles because of the
+[00:01:01] larger delta and the gamma that you have
+[00:01:03] in these. Any small movements in the
+[00:01:05] underlying price could cause a bigger
+[00:01:07] P&L change for the straddle. So,
+[00:01:09] generally speaking, the straddles are
+[00:01:11] going to be meatier positions. They're
+[00:01:13] going to move uh with greater velocity
+[00:01:15] in terms of your P&L. The the the swing
+[00:01:18] of a $100 on a straddle is going to be
+[00:01:20] way well, is going to be way faster
+[00:01:23] based on the movements in the stock
+[00:01:25] versus a a strangle that's out of the
+[00:01:27] money, it's not going to move as fast
+[00:01:29] for the same dollar amount. Um and that
+[00:01:31] just goes hand in hand with risk.
+[00:01:34] And so, although strategies with larger
+[00:01:36] uh deltas such as straddles yield higher
+[00:01:38] P&L per contract, so you have higher
+[00:01:42] potential value per contract, they also
+[00:01:45] exhibit greater volatility in the
+[00:01:47] average P&L. Um and so, on this next
+[00:01:50] slide here,
+[00:01:51] when you look at a spy strangle, 16
+[00:01:54] delta versus a 50 delta straddle, your
+[00:01:56] median P&L on the strangle is going to
+[00:01:59] be less than the the straddle, of
+[00:02:01] course, but you're going to have a
+[00:02:02] higher win win rate. The real key here
+[00:02:05] is that your average volatility is going
+[00:02:07] to be way way less, so you have about
+[00:02:09] 25% swings in either direction versus a
+[00:02:13] straddle, which is going to have these
+[00:02:14] wider swings. That's just because you're
+[00:02:16] closer at the money, and this also going
+[00:02:19] to be influenced by the duration and the
+[00:02:21] other things that come in like gamma and
+[00:02:23] delta on those positions get much more
+[00:02:25] volatile as you get closer to
+[00:02:27] expiration, which is what we're going to
+[00:02:29] kind of look at here.
+[00:02:32] And so, today we're going to look at how
+[00:02:34] volatility changes over time with
+[00:02:36] different
+[00:02:37] strangles. We study we looked at a study
+[00:02:41] in spy, 45-day strangles with delta
+[00:02:44] levels of 16, 30, and 50, uh the 50 50
+[00:02:47] being the straddle, uh and recorded
+[00:02:50] their weekly P&L changes as a percentage
+[00:02:53] of the underlying price. So, uh just
+[00:02:56] giving you an idea of how these are
+[00:02:57] changing week to week in terms of the
+[00:02:59] overall P&L on those positions.
+[00:03:04] No words from you. No, I mean, you're
+[00:03:06] doing a good job and it's all up there
+[00:03:08] on the slides, so
+[00:03:10] pretty We have we have honed in the
+[00:03:12] slides a little bit. What's that?
+[00:03:13] >> Spoke to the boys. Spoke to the boys and
+[00:03:15] I was like, "Guys,
+[00:03:17] you know, we're Batistas, okay? You
+[00:03:19] can't give us these 40 different I
+[00:03:23] examples
+[00:03:23] >> examples. I told them I'm like, "Hey, we
+[00:03:25] can kind of cut it down. We could cut it
+[00:03:26] down a little bit. Maybe we do multiple
+[00:03:28] segments on the
+[00:03:29] >> There's probably a lot more Batistas out
+[00:03:30] there than than there are, you know.
+[00:03:33] We're the man of the people, man. Yeah.
+[00:03:35] >> Man of the people.
+[00:03:36] >> That's right. That's right.
+[00:03:37] We discovered that P&L volatility
+[00:03:39] gradually rises as we approach
+[00:03:41] expiration, but this increase slows down
+[00:03:44] closer to the actual expiration date.
+[00:03:47] Why is that? Well, because your 16 delta
+[00:03:49] strangles are going to be way way lower
+[00:03:52] deltas as you get closer to expiration,
+[00:03:55] assuming they're out of the money. So,
+[00:03:56] at a certain point, you know, you're
+[00:03:58] just it's really all risk, but if you're
+[00:04:00] far enough out of the money, it's really
+[00:04:02] not going to change. The problem is is
+[00:04:04] that, you know, you have that tail risk
+[00:04:06] on for basically no reward.
+[00:04:08] >> Sure.
+[00:04:08] And there's actually a little subtle
+[00:04:10] color change in there. I hope you can
+[00:04:12] you can see it with that line going
+[00:04:13] across the
+[00:04:15] uh the middle there uh trying to show
+[00:04:17] you how, you know,
+[00:04:19] it changes drastically the closer
+[00:04:21] >> That's as you get that's time. That's
+[00:04:23] just the time.
+[00:04:24] >> Yep.
+[00:04:24] Yep. Well, time decays. I mean, one day
+[00:04:27] at a time, you know that. One day at a
+[00:04:29] time. Build a big wall.
+[00:04:31] So, when we get into the 30 delta
+[00:04:34] >> That's for a house, nothing else. I
+[00:04:35] don't want I don't want to, you know,
+[00:04:37] that was an old um Oh, you weren't being
+[00:04:40] political there. No, I was not being
+[00:04:41] political there. I was actually being I
+[00:04:43] think AA one brick at a time. Anyway, go
+[00:04:46] ahead.
+[00:04:47] Uh
+[00:04:48] >> I've never been to AA. So, as we move to
+[00:04:50] a higher delta uh strangle here,
+[00:04:52] volatility accelerates more quickly. Why
+[00:04:55] is that? Well, because by expiration,
+[00:04:57] the volatility of 30 delta strangle is
+[00:05:00] double that of a 16 delta strangle. The
+[00:05:02] 16 delta strangle at expiration,
+[00:05:04] assuming the stock chops around and goes
+[00:05:06] in kind of
+[00:05:07] exactly the motion you would you would
+[00:05:09] expect it to be, those deltas might be
+[00:05:10] one at expiration. [clears throat]
+[00:05:12] >> Mhm. The 30 delta are still going to be
+[00:05:13] like probably like five or 10 delta
+[00:05:15] options, assuming you get the choppiness
+[00:05:18] in the middle just because you're
+[00:05:19] starting closer to at the money. And so,
+[00:05:22] you're you're going to have this wider
+[00:05:23] variance in P&L um as you get closer to
+[00:05:27] expiration. And at at a certain point,
+[00:05:29] you know, the risk-reward probably skews
+[00:05:32] against you, but this is just kind of a
+[00:05:34] visual of how much more volatility in
+[00:05:36] P&L you you're going to see as you get
+[00:05:39] closer to expiration. You know, after
+[00:05:40] the first two or three weeks, your P&L
+[00:05:43] volatility is going to be 40 or 50%
+[00:05:45] higher than what you started with. And
+[00:05:47] so, you know, if you're
+[00:05:49] like kind of trying to mitigate the
+[00:05:52] volatility of of your P&L in either
+[00:05:54] direction,
+[00:05:55] that's why we're looking to manage
+[00:05:56] around that time.
+[00:05:57] >> That's correct. Pretty pretty simple
+[00:05:59] explanation.
+[00:06:00] >> Mhm.
+[00:06:01] As you get to a 50 delta option, 50
+[00:06:04] delta option is an at the money option,
+[00:06:06] and so, your P&L volatility is going to
+[00:06:09] be heavily skewed toward time. Those
+[00:06:11] options can the you have a lot of gamma
+[00:06:13] risk, and so, you can go from a 50 delta
+[00:06:16] position or basically a zero delta
+[00:06:18] position to a 100 delta position very
+[00:06:20] quickly as you get closer to expiration.
+[00:06:23] And so, volatility spikes significantly
+[00:06:25] each week. Each week you hold the
+[00:06:28] straddle, the more the the more the P&L
+[00:06:31] volatility is going to increase. The
+[00:06:33] first week you might see $50 swings in
+[00:06:36] either direction. The next week is going
+[00:06:38] to be like, you know, $75 swings. And
+[00:06:40] then it's going to be $150 swings. And
+[00:06:42] then it's going to be $200 swings in
+[00:06:44] either direction. And then 300 like it's
+[00:06:46] it's a big jump week to week um with
+[00:06:49] those options because they're getting
+[00:06:51] close The delta move and the gamma of
+[00:06:53] those options is much much greater than
+[00:06:56] the out of the money strangle. It's and
+[00:06:57] this is generally why we trade mostly
+[00:07:00] out of the money premium. We trade
+[00:07:02] mostly strangles versus straddles
+[00:07:04] because the strangles are a little less
+[00:07:06] volatile from a P&L perspective.
+[00:07:09] Volatility coming in here a little bit
+[00:07:10] in the market up 28 cents now. You mean
+[00:07:12] S&P's down 28. We'll see if market's a
+[00:07:15] little bit of a bid here.
+[00:07:17] Exiting positions at 21 days can
+[00:07:20] significantly reduce the volatility for
+[00:07:22] straddles
+[00:07:23] or for straddles, managing the position
+[00:07:25] even earlier can further improve the
+[00:07:27] balance between profitability and
+[00:07:29] volatility.
+[00:07:30] Um and you can see
+[00:07:32] the 42% reduction is if you manage those
+[00:07:36] uh
+[00:07:37] trades at 21 days or at 28 days versus
+[00:07:41] the 21 days at 33%. You can see across
+[00:07:44] the board managing positions going to
+[00:07:46] reduce your P&L volatility. And that's
+[00:07:48] what you want to see, right? I mean, you
+[00:07:49] want to have that volatility of your of
+[00:07:51] your P&L to be I think it's probably the
+[00:07:54] biggest change in our thinking as retail
+[00:07:58] traders, at least everything we put out
+[00:07:59] to you. Cuz in years past, we would say,
+[00:08:02] "You know what? You got to go all the
+[00:08:03] way to expiration. That's when when
+[00:08:05] options expire the quickest." I mean,
+[00:08:07] that's the that's the easiest thing to
+[00:08:08] look at. But we didn't look at how much
+[00:08:10] volatility the overall market would give
+[00:08:13] you that price that you would have to
+[00:08:14] pay. And if you held on into expiration
+[00:08:17] going into the expiration that we have
+[00:08:19] now, like I mean, if you were still
+[00:08:20] trading March options, you had humongous
+[00:08:23] swings. I mean, I got emails yesterday
+[00:08:25] from people saying, you know, some of
+[00:08:26] these zero-day options, they were they
+[00:08:28] were basically at zero, one, two, three
+[00:08:30] cents, and they became, you know,
+[00:08:32] dollars wide. You can't keep everything.
+[00:08:34] You mean S&P's down 19 as we did catch a
+[00:08:37] little bit of a bid here, which is
+[00:08:38] pretty cool. Go ahead, I'm sorry.
+[00:08:40] That's it. Couple takeaways? Let's do
+[00:08:42] it.
+[00:08:43] Couple takeaways it is. Aggressive
+[00:08:44] strategies like straddles often show
+[00:08:47] higher P&L volatility and sharper
+[00:08:49] increases in volatility as expiration
+[00:08:51] approaches. So, as you get closer to
+[00:08:52] expiration and you have a straddle
+[00:08:54] position, you should expect the P&L
+[00:08:57] volatility, profit or loss, to be much
+[00:09:00] much wider than when you start that
+[00:09:02] trade. To keep volatility within a
+[00:09:04] manageable range, traders should plan to
+[00:09:06] exit positions ahead of expiration. If
+[00:09:08] you want to avoid the big swings, you're
+[00:09:11] rolling at 21 days,
+[00:09:14] two weeks, you know, one week before,
+[00:09:16] sometime before expiration. We're not
+[00:09:18] really holding any trades to expiration.
+[00:09:21] No, we are not.
+[00:09:22] >> Rarely, if ever.

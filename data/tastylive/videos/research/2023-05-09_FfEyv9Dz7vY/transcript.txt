@@ -1,0 +1,523 @@
+[00:00:00] so managing a tested earnings strangle
+[00:00:03] now I have this situation happening in
+[00:00:05] JPMorgan right now like this is a a
+[00:00:07] trade that I have on right now that
+[00:00:08] we're gonna we're gonna manage and we're
+[00:00:10] going to adjust together as a team as a
+[00:00:12] unit but this is something that's going
+[00:00:14] to happen to you whether you have one on
+[00:00:15] now or not it's going to happen to you
+[00:00:17] at some point in your trading career
+[00:00:19] there's no question right like you trade
+[00:00:20] enough you get you you know you get
+[00:00:22] involved in enough earnings trades you
+[00:00:24] kind of mix it up with these earnings
+[00:00:25] announcements which of course we have
+[00:00:26] all the Heavy Hitters coming on down the
+[00:00:28] shoots the next two or three weeks I
+[00:00:30] think next week is Netflix and
+[00:00:33] Tesla I think our next week
+[00:00:36] and then the following week is the real
+[00:00:37] Heavy Hitters you know your Apple your
+[00:00:39] Amazon your Google your meta but then of
+[00:00:42] course the real real Heavy Hitters your
+[00:00:44] proctoring gambles your IBM's your
+[00:00:46] McDonald's is like I think those guys
+[00:00:48] are coming on down the shoes uh the
+[00:00:50] following week but nevertheless
+[00:00:51] you're going to have a test history
+[00:00:53] angle or two or five or ten in your
+[00:00:55] trading career what do you do like how
+[00:00:57] do you handle that situation I thought
+[00:00:58] let's talk about that and then we'll
+[00:01:00] take what we've learned and we'll apply
+[00:01:01] it to my JP Morgan situation so Ryan go
+[00:01:04] ahead and bring us into the uh bring us
+[00:01:05] into the slide deck here today on this
+[00:01:07] beautiful Friday afternoon 77 degrees
+[00:01:09] outside so sometimes an earning strategy
+[00:01:12] such as a short strangle can quickly
+[00:01:14] move away from you from an explosive
+[00:01:16] stock move just like JPMorgan here is
+[00:01:18] how to adjust your strategy if that
+[00:01:20] happens now I want it to be
+[00:01:23] guys I want to be a man of the people
+[00:01:24] today
+[00:01:25] but I wanted to appeal of I wanted to
+[00:01:27] appeal to all people from all walks of
+[00:01:29] life from all backgrounds from All
+[00:01:31] Nations so I'm not just giving you my
+[00:01:34] thoughts I'm obviously giving you all of
+[00:01:35] my thoughts but I thought I would also
+[00:01:37] kind of sprinkle in just a little bit of
+[00:01:39] bomb nozzing off just a little bit of
+[00:01:41] pony but
+[00:01:43] be happy and everybody feeling good
+[00:01:44] about their chosen management style and
+[00:01:47] management approach so you can see I
+[00:01:49] have a couple of columns more patient
+[00:01:51] Allah Dr Jim more aggressive Allah Pony
+[00:01:55] babista Shooter McGavin those types of
+[00:01:58] individuals so how should you handle how
+[00:02:01] should you handle a strangle that is
+[00:02:04] busted from an earnings move well I
+[00:02:06] effectively want to work through at
+[00:02:08] least three scenarios then we'll kind of
+[00:02:09] see where the wind blows us when we take
+[00:02:10] a look at JP Morgan there in a couple of
+[00:02:12] minutes so number one what do you do if
+[00:02:14] you're not tested so this is actually
+[00:02:16] the situation that I find myself in with
+[00:02:18] JP Morgan now people have been emailing
+[00:02:20] me people have been tweeting at me you
+[00:02:22] know earlier today like all right what's
+[00:02:23] Dr Jim going to do with this JPMorgan
+[00:02:25] strangle and Ramon actually hit it you
+[00:02:28] know on the head he said Dr Jam is going
+[00:02:30] to do nothing well he is correct I'm not
+[00:02:32] going to do anything but I do want to
+[00:02:33] spend at least you know 9 or 13 minutes
+[00:02:35] talking about why I'm not going to do
+[00:02:37] anything if you're not tested that
+[00:02:40] simply means the stock is between your
+[00:02:42] two short strikes right now even if it's
+[00:02:44] really close to one of your short
+[00:02:45] strikes which is the case that I found
+[00:02:46] myself in with JP Morgan right now I
+[00:02:49] suggest doing nothing I suggest then I
+[00:02:52] and I posit that the strategy is
+[00:02:54] actually working the strategy is
+[00:02:55] actually doing what you have politely
+[00:02:57] asked it to do so give it a chance to
+[00:02:59] keep doing more give it a chance to keep
+[00:03:01] working for you on your behalf for your
+[00:03:03] betterment so that's kind of the do
+[00:03:05] nothing approach
+[00:03:07] what about if you're not tested and you
+[00:03:10] want to be a bit more aggressive like
+[00:03:12] maybe you watch a little bit too much of
+[00:03:13] you know Bob noznoff maybe you watch a
+[00:03:15] little bit too much of a pony babista
+[00:03:17] hey I've been there too right I've
+[00:03:19] absolutely been there we all make
+[00:03:20] mistakes
+[00:03:21] what you can do is you can roll when you
+[00:03:24] get to 20 Delta so when you start a
+[00:03:26] strangle right when you start off
+[00:03:27] strangle it's a neutral strategy you
+[00:03:29] effectively have zero Delta so when you
+[00:03:32] accumulate 20 Deltas on either side it
+[00:03:34] depends on which side of the stock would
+[00:03:35] be moving once you get to 20 you could
+[00:03:38] consider being more aggressive with
+[00:03:39] rolling the untested side in so in this
+[00:03:42] case with JP Morgan as we're going to
+[00:03:43] see in my portfolio in a minute this
+[00:03:45] would effectively be you know me rolling
+[00:03:47] my puts up to tighten up that strangle
+[00:03:49] now of course in classic Dr Jim style we
+[00:03:53] have to at least examine briefly the
+[00:03:55] game is in the goddesses of both so if I
+[00:03:57] don't do anything what is the Gimme well
+[00:03:59] the Gimme is you know I maintain all of
+[00:04:02] the real estate between my two short
+[00:04:03] strikes what's the gotcha the gotcha is
+[00:04:05] I'm not maximizing extrinsic value and I
+[00:04:07] am going to remain a bit more
+[00:04:08] directional on the trade what happens if
+[00:04:12] I am more aggressive what's the Gimme
+[00:04:14] well the Gimme is I'm gonna be building
+[00:04:16] up and stockpiling and really maximizing
+[00:04:18] that extrinsic value but what's the
+[00:04:20] gotcha the big gotcha is you're you're
+[00:04:22] exposing yourself more and more to
+[00:04:23] whipsaw risk you're exposing yourself
+[00:04:25] more and more to just natural Ebbs and
+[00:04:27] flows in the market where the market
+[00:04:28] comes back and just you know just a a
+[00:04:31] very normal you know kind of back and
+[00:04:33] forth stock price movement and now all
+[00:04:34] of a sudden you end up being tested on
+[00:04:36] the other side and so you have to kind
+[00:04:37] of be ready to be quite Nimble and quite
+[00:04:39] agile when it comes to you know managing
+[00:04:42] these types of strategies which is quite
+[00:04:43] surprising because I can't speak for
+[00:04:45] y'all but when I think about non-stop
+[00:04:47] the words that come to my mind are not
+[00:04:49] Nimble and agile and agile but
+[00:04:51] nevertheless I digress what if you are
+[00:04:54] what if you are tested well if you're
+[00:04:56] tested on you know in either a scenario
+[00:04:58] whether it be more patient or more
+[00:04:59] aggressive I think the slam dunk you
+[00:05:02] know layup move that all of us would
+[00:05:04] agree on is rolling out in time right I
+[00:05:07] can add duration to the trade I can roll
+[00:05:09] out in time I can boost my account value
+[00:05:11] you know that way that's going to soften
+[00:05:13] up the Greeks it's going to give me more
+[00:05:14] credits to play with it's going to widen
+[00:05:16] my breakevens everybody agrees on this I
+[00:05:18] mean one of these core tenets of tasty
+[00:05:21] live tasty nation is duration over
+[00:05:25] Direction and so if you roll out when
+[00:05:27] you're tested then you're really tapping
+[00:05:29] into that philosophy and that
+[00:05:31] relationship
+[00:05:32] what if the stock moves so aggressively
+[00:05:35] such that one of your sides it's not
+[00:05:37] really just tested anymore it is
+[00:05:39] actually in the money by some
+[00:05:40] significant amount right could be a
+[00:05:42] couple dollars could be five dollars you
+[00:05:43] know significant in this context is
+[00:05:45] going to be largely dependent upon you
+[00:05:47] know the stock price and the strikes
+[00:05:48] that you have and there's a couple kind
+[00:05:50] of you know fluid factors that you would
+[00:05:51] have to take into account but what
+[00:05:53] happens if you move in the money well
+[00:05:55] again this is where you know Dr Jim
+[00:05:57] might differ from a bomb noznov I prefer
+[00:06:01] to go we're going to agree on going
+[00:06:03] inverted with our strangles like you
+[00:06:04] know going into the inverted strangle is
+[00:06:06] a classic move to make right now to
+[00:06:08] really kind of you know boost the
+[00:06:09] extrinsic value take more risk off the
+[00:06:11] table and really neutralize that
+[00:06:13] directional risk however I personally
+[00:06:15] prefer and I'm going to show you what I
+[00:06:17] mean by baby inversion and full
+[00:06:18] inversion here in a minute I prefer to
+[00:06:20] choose baby inverted strangles people
+[00:06:22] who have been following the show for a
+[00:06:24] while you know what I'm talking about
+[00:06:24] we've done these before I haven't done
+[00:06:26] one in a while because as luck would
+[00:06:28] have it and this is pure luck I have not
+[00:06:30] been in an inverted strangle in at least
+[00:06:32] several weeks now so that is 100 luck
+[00:06:35] but I'm sure there'll be another one
+[00:06:36] around the corner anytime that I'm
+[00:06:38] probably going to be this JP mortgage
+[00:06:39] strategy actually but once the stock
+[00:06:42] moves in the money to where the strike
+[00:06:43] is in the money I like kind of
+[00:06:45] sandbagging in the stock price and
+[00:06:46] choosing a baby inverted strangle to me
+[00:06:49] this
+[00:06:49] this patient way of adjusting the
+[00:06:51] strategy which allows you to tap into
+[00:06:53] Marketplace cyclicality a little bit
+[00:06:55] more effectively now is there another
+[00:06:57] way that you could do this of course
+[00:06:58] right you could be more aggressive with
+[00:07:00] your inverted strangle and you could
+[00:07:02] roll like right up to the at the money
+[00:07:03] strike which I'm going to show you what
+[00:07:04] I mean by this in JP Morgan here in a
+[00:07:06] second we're going to have to kind of
+[00:07:07] pretend and use our imagination because
+[00:07:09] you know the stock hasn't gone in the
+[00:07:11] money yeah but I think we'll be able to
+[00:07:12] get far enough to where this will start
+[00:07:13] to make some sense to you guys you go
+[00:07:15] through a full inverted strangle where
+[00:07:17] you choose the at the money strike now
+[00:07:18] again where are we at when it comes to
+[00:07:20] these two things well if I choose a baby
+[00:07:22] inverted strangle I'm not going to be
+[00:07:24] locking in as big of a loss but I am
+[00:07:26] going to be more directional so there's
+[00:07:28] you know a gimme and there's I gotcha if
+[00:07:30] I choose the full inverted strangle I
+[00:07:32] could be locking in a loss and I'm going
+[00:07:34] to be less directional so I could be
+[00:07:36] locking in a loss that's the gotcha I'm
+[00:07:38] I'm going to be less directional a lot
+[00:07:40] more neutral on the strategy that is
+[00:07:42] going to be the Gimme you know I guess
+[00:07:43] another gimme and gotcha here would be I
+[00:07:45] gotcha with being more patient is I'm
+[00:07:47] not uh collecting as much extrinsic
+[00:07:49] value and a gimme with being more
+[00:07:51] aggressive is I will be collecting more
+[00:07:53] expensive value now which one are you
+[00:07:55] going to choose which one should you
+[00:07:57] choose well
+[00:07:59] this is my show and so I'm going to give
+[00:08:01] you all my take now I know I know that
+[00:08:04] Obama a Tom sosnov a pony bobisto a Tony
+[00:08:07] Batista might not necessarily agree with
+[00:08:10] this and that's okay that's what makes a
+[00:08:11] market as they say should you be more
+[00:08:13] patient or more aggressive I personally
+[00:08:15] think it largely depends on your trading
+[00:08:17] style and your temperament I actually
+[00:08:19] don't know that there's an optimal Point
+[00:08:21] here I actually don't know that there's
+[00:08:22] many optimal points that exist at all in
+[00:08:24] the world of trading I mean there's some
+[00:08:26] things that we've really like
+[00:08:27] systematized and really kind of made as
+[00:08:29] black and white as we can I mean getting
+[00:08:31] in at 45 days to go and you know certain
+[00:08:33] levels of like portfolio Theta and Delta
+[00:08:36] Theta ratios and things like that but
+[00:08:37] even still I mean these are largely just
+[00:08:38] reference points I mean these are
+[00:08:40] largely just really really good
+[00:08:41] reference points to utilize I think it's
+[00:08:43] really difficult to actually you know
+[00:08:46] discover points of optimality points of
+[00:08:49] like true optimality in the world of
+[00:08:52] trading because it's always gaming
+[00:08:53] notches it's always trade-offs it's
+[00:08:54] always gives and takes it's always gives
+[00:08:56] and gets from a Jimmy chill fans out
+[00:08:58] there and so I don't know that there's a
+[00:09:00] better or best option when it comes to
+[00:09:02] being more patient versus being more
+[00:09:04] aggressive being more aggressive now
+[00:09:06] naturally the people that you know
+[00:09:07] gravitate to one side are going to sell
+[00:09:09] that's definitely better and here are
+[00:09:10] all the reasons why and people that
+[00:09:11] gravitate to the other side are going to
+[00:09:13] say no my side is better and here are
+[00:09:14] all the other reasons why and I mean I
+[00:09:16] think that's good that's fun that's what
+[00:09:17] makes a market you know we all you know
+[00:09:19] do what we do for reasons behind doing
+[00:09:21] what we do and so it makes sense to have
+[00:09:23] you know a good solid defense of how
+[00:09:26] you're choosing to trade but I don't
+[00:09:27] think that in this situation there's a
+[00:09:30] clear-cut winner so Ryan go ahead and
+[00:09:31] bring us back into the portfolio here
+[00:09:33] let me show you guys with my JPMorgan
+[00:09:36] trade let's talk about this just a
+[00:09:37] little bit NASDAQ coming back to zero
+[00:09:39] and if this thing goes on it's over guys
+[00:09:41] like I'm done like I'm not coming back
+[00:09:43] next week like it's absolutely it's over
+[00:09:45] if we take a look if we take a look at
+[00:09:47] this JP more now it's definitely gonna
+[00:09:48] be honest if we take a look at this
+[00:09:49] JPMorgan trade so again we're gonna have
+[00:09:52] to use a little bit of our imaginations
+[00:09:53] here on this Friday afternoon because
+[00:09:55] I'm not I'm not in the money yet so
+[00:09:57] right now I have not you know been fully
+[00:10:00] tested and so when I started to explore
+[00:10:03] like going inverted or I start to you
+[00:10:05] know uh explore you know the baby
+[00:10:07] inverted strangle the fully grown
+[00:10:09] inverted strangle Etc we're going to
+[00:10:11] have to kind of use our imagination in
+[00:10:13] terms of you know where the stock price
+[00:10:14] might be when I would choose to do this
+[00:10:16] so if I go into the trade page here so
+[00:10:19] again just to be really clear because
+[00:10:21] now I know JP Morgan I mean it's
+[00:10:23] breathing on that 140 call strike I mean
+[00:10:26] it's right there man like you can just
+[00:10:27] you can like reach out and you can touch
+[00:10:29] that 140 call strike I'm not gonna do
+[00:10:31] anything I'm gonna sit I'm gonna wait
+[00:10:33] I'm gonna absolutely wait it might
+[00:10:35] happen Monday it might happen by the
+[00:10:36] close today you know it might happen
+[00:10:37] really really soon but I like the I like
+[00:10:40] the the strategy
+[00:10:42] and the adjustment approach to not do
+[00:10:45] anything and so I'm gonna sit tight and
+[00:10:46] do nothing but if we take a closer look
+[00:10:48] at JP Morgan
+[00:10:50] you can see that you know here's my 120
+[00:10:52] strike
+[00:10:54] so let's say that
+[00:10:57] well let's talk about a couple of things
+[00:10:58] so number one right some of you might be
+[00:11:01] wondering well wait a minute Jim what if
+[00:11:03] let me go back to the position tab
+[00:11:04] actually so if I go into the positions
+[00:11:06] tab so you can see that I've actually
+[00:11:09] I've actually picked up a pretty good
+[00:11:10] amount of Delta on this strategy
+[00:11:12] cause I'm minus 40 Delta which makes
+[00:11:15] sense because you know one of my one of
+[00:11:17] my options is nearly zero Delta that's
+[00:11:19] going to be the short put the other
+[00:11:21] option is nearly minus 50 Delta that's
+[00:11:22] going to be the short call so it makes
+[00:11:24] sense when you net those two guys
+[00:11:25] together they're going to be somewhere
+[00:11:26] around like minus 40 Delta Okay so if I
+[00:11:30] wanted to roll the untested side up I'm
+[00:11:33] not going to do that for the reasons
+[00:11:34] I've already talked about but if I was
+[00:11:35] going to do that how might I do that
+[00:11:37] what might I look at what might I
+[00:11:38] analyze when it comes to when it comes
+[00:11:40] to that well if I go into the trade page
+[00:11:42] here
+[00:11:43] I would probably want to look to where
+[00:11:45] can I get to
+[00:11:47] that would really you know kind of
+[00:11:49] neutralize that Delta if I wanted to you
+[00:11:52] know be purely neutral on the strategy
+[00:11:54] well here that's going to be you know I
+[00:11:57] would effectively be taking my 120
+[00:11:59] strike
+[00:12:00] out of five Delta and I'd probably roll
+[00:12:02] it up to maybe a 135 strike
+[00:12:05] I probably wouldn't go all the way to
+[00:12:06] the straddle although you could you know
+[00:12:08] you go all the way up to the 135 strike
+[00:12:09] then you're left for the 135 140
+[00:12:11] strangle now that would neutralize your
+[00:12:15] Delta that would bring in a pretty nice
+[00:12:16] chunk of additional uh credit I mean you
+[00:12:18] roll in from hold on you roll in from
+[00:12:21] let's see here
+[00:12:22] 25 cents right there all the way up to
+[00:12:25] two dollars right there you pick up
+[00:12:26] another dollar 75 so I mean that's a
+[00:12:29] really significant really sizable credit
+[00:12:30] that you would be collecting on that
+[00:12:32] adjustment
+[00:12:33] that's a gimme that's a huge gimme right
+[00:12:35] that's a great give me you're maximizing
+[00:12:37] exchange of value you're really getting
+[00:12:38] even more time Decay you know kind of
+[00:12:40] working for you
+[00:12:42] they got you here though is man you now
+[00:12:44] have basically a a straddle on your head
+[00:12:47] you have a super tight strangle on your
+[00:12:48] hands you know you only have 135 to 140
+[00:12:50] in terms of the distance between the two
+[00:12:52] short tracks so you've given up you've
+[00:12:53] effectively surrendered all of the real
+[00:12:56] stay between your to your your two
+[00:12:57] shorts which I think is extremely
+[00:12:59] valuable now again if you want to be
+[00:13:01] more aggressive then this is what you
+[00:13:03] would do and you would just you know be
+[00:13:04] ready to be you know Nimble agile you
+[00:13:06] know all these just natural time Styles
+[00:13:08] and off characteristics you'd be ready
+[00:13:09] for these things you're ready to kind of
+[00:13:12] engage with these features and and
+[00:13:13] characteristics
+[00:13:15] if however you want to be a bit more
+[00:13:17] conservative a bit more patient you can
+[00:13:18] do nothing which is what I'm gonna do
+[00:13:20] but let's also explore and then I want
+[00:13:22] to get to all y'all's questions man
+[00:13:24] before the market is truly on this is
+[00:13:26] unbelievable
+[00:13:28] if let's say let's just say that JP
+[00:13:31] Morgan let's say this thing went up to
+[00:13:33] I'm even gonna grab my final Jeopardy
+[00:13:35] pen so let's say the GPU Market is now
+[00:13:37] 138.
+[00:13:39] let's say that JPMorgan went up to 150
+[00:13:42] which this could happen right I mean
+[00:13:43] this could happen next week this could
+[00:13:45] happen you know later today I mean this
+[00:13:46] could happen you know sometime fairly
+[00:13:48] soon if that was if that happened then
+[00:13:50] this this option this 140 this guy would
+[00:13:53] be in the money now right so now I'm not
+[00:13:55] in a situation where I'm not tested I've
+[00:13:57] actually been pretty significantly
+[00:13:58] tested on the call side and so now I
+[00:14:00] need to figure out okay what am I going
+[00:14:02] to do what am I going to do how am I
+[00:14:04] going to handle that you know and and
+[00:14:06] what's my next move well this is where
+[00:14:08] going inverted to some kind of inverted
+[00:14:10] strangle makes a lot of sense now what
+[00:14:12] do I mean when I say A baby inverted
+[00:14:14] strangle versus you know a fully grown
+[00:14:16] inverted strangle well again we're
+[00:14:17] pretending that JP Morgan is at 150. so
+[00:14:20] these prices that you see are not going
+[00:14:21] to be indicative of what the prices
+[00:14:23] would be if JP Morgan was 150 because
+[00:14:26] right now GP Morgan is not 150 it's only
+[00:14:28] 138. so you gotta you got to kind of
+[00:14:30] work with me in terms of using your
+[00:14:31] imagination and kind of uh extrapolating
+[00:14:34] forward you know out what the prices
+[00:14:36] might be and what it might look like but
+[00:14:38] I would take this 120 put I'll take this
+[00:14:40] guy right here
+[00:14:41] and if I rolled it up to I'm going to
+[00:14:43] grab two different colors
+[00:14:45] if I wanted this to be a fully grown
+[00:14:47] inverted triangle I'd probably roll it
+[00:14:49] all the way up to the 150 strike because
+[00:14:51] you know keep in mind if the stock price
+[00:14:53] is 150 and my strike price is 150 this
+[00:14:56] is going to be my at the money
+[00:14:58] my at the money strike and we know that
+[00:15:00] the money options have the greatest
+[00:15:01] amount of extrinsic value and so I would
+[00:15:03] be maximizing my extrinsic value
+[00:15:04] collection I would be neutralizing my
+[00:15:06] directional risk my directional risk
+[00:15:09] quite a bit and so this is probably you
+[00:15:11] know the most aggressive strategy I
+[00:15:13] suppose you could also put forth well
+[00:15:15] I'm going to roll even above the at the
+[00:15:16] money strike to really neutralize my
+[00:15:19] directional risk you could do that too
+[00:15:20] but that would not be maximizing
+[00:15:21] extrinsic value so I think this is
+[00:15:23] probably the best example best version
+[00:15:25] of a fully grown
+[00:15:27] inverted strangle okay what if I wanted
+[00:15:29] to go to a baby inverted strangle well
+[00:15:32] I'm going to grab a different color for
+[00:15:33] this one for me this would be maybe
+[00:15:35] rolling to like the 145 strike
+[00:15:38] so you can see this is not the at the
+[00:15:40] money strike right this is going to be
+[00:15:43] you know still a little bit out of the
+[00:15:45] money
+[00:15:45] from the standpoint of
+[00:15:48] if the stock was at 150. if the stock
+[00:15:51] was at 150 then a 145 put is still out
+[00:15:55] of the money so that's actually an o
+[00:15:58] so if I you know if if I'm in a
+[00:16:00] situation where you know the 145
+[00:16:03] put is is a little bit out of the money
+[00:16:05] because the Stock's up to 150. I kind of
+[00:16:08] like this situation because what ends up
+[00:16:11] happening is I'm a little bit more
+[00:16:13] directional to the downside but on my my
+[00:16:16] width of my inverted triangle is not as
+[00:16:18] wide as it would be if I went to the
+[00:16:20] fully grown and I might have a greater
+[00:16:23] potential for profitability in that
+[00:16:24] cycle and so this is largely why I
+[00:16:27] choose to sandbag the stock this is what
+[00:16:29] I meant by sandbagging the stock if I
+[00:16:31] roll up to the 145 strike the stock is
+[00:16:33] at 150 I'm not going all the way quite
+[00:16:35] to where the stock is I'm still kind of
+[00:16:37] counting on a little bit of marketplace
+[00:16:38] cyclicality which don't get me wrong I
+[00:16:39] mean you can get third right of course I
+[00:16:41] mean we're trading you can get burned
+[00:16:42] doing all the things that we do right
+[00:16:44] that kind of goes without saying but you
+[00:16:46] need to make sure that you understand
+[00:16:47] what you're signing up for here which in
+[00:16:48] this case it's being a little bit more a
+[00:16:50] little bit more directional so I hope
+[00:16:52] this made sense to you guys

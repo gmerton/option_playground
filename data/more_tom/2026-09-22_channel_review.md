@@ -55,7 +55,7 @@ refutation of him. This is a limit on our evidence, not a verdict on his.
 | claim | our evidence |
 |---|---|
 | Spread scanners are useless without an option-volume gate first | our hardest-won result: "liquidity is the gate"; credit/width discriminates only *within* a liquid universe |
-| Don't roll a losing put out and wider | roll test: stop −9.51pp on the breach cohort, **69.8% did better held**; re-entry NULL t 1.55 |
+| Don't roll a losing put out and wider | roll test: stop −9.51pp on the breach cohort, **69.8% did better held**; re-entry NULL t 1.55. ⚠ *(corrected 2026-09-24: that 69.8% is the LONG 7-DTE straddle's −50% stop (`straddle_stop_path_2026-09-20.md`), not a short-premium roll — rolling a losing short put/strangle out and wider is UNTESTED here)* |
 | Outlier risk is managed by **position size only** | every non-size tail management INVERTED: straddle −50% stop is a cost (+6.73% unstopped vs +2.89%), BE+1R −0.08R, "extended → tighten" −0.19R t −2.8, 10-EMA trail −0.47R t −4.8 |
 | Don't benchmark yourself against outlier traders | the journal is structurally underpowered — n ≈ 1,854 needed for t = 3 vs 272 campaigns |
 | Open interest is a tradability gate, never a signal | exactly how we use it |

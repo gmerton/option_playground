@@ -74,6 +74,12 @@ HMnAjgCyXp4 (SPX jade lizard, 3 yrs) · YX1ER-r3Lxg (Ultimate Guide to Strangles
 (before trading iron condors) · rF0baGqUk30 (strangles vs iron condors, Jim Schultz) · kPco6uly26E / FfEyv9Dz7vY
 (managing a strangle that moves against you).
 
+## Status (2026-09-24)
+Reviewed: all of Tier 1 (11) and Tier 2 (4); Tier 3 except msuajz2Tduo and GYugqsK6CV8 (both already answered by the
+ledger: regime forecasting fails, skew NULL); Tier 5 HMnAjgCyXp4, kPco6uly26E, FfEyv9Dz7vY, rF0baGqUk30; plus the
+untiered xccHQzd8fLk and wkYzOi4G0Vc. Remaining = the Tier 4 0DTE cluster (not priceable on EOD v3) and Tier 5
+YX1ER-r3Lxg / d5fHYF4eZJo (overview episodes).
+
 ## Suggested review order
 Tier 1 as one batch of 11 (one KB, one ledger cross-check), plus Tier 2 (4 Sosnoff-in-person videos) → then decide
 on Tier 3. Each has a transcript on the public channel, so yt-dlp works locally (no Chrome needed).

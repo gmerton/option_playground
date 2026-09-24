@@ -1,0 +1,327 @@
+[00:00:00] Jim Schultz here for Calculated Risk,
+[00:00:01] and don't forget before we get started,
+[00:00:02] the best ways you can help us by liking
+[00:00:03] the video or subscribing to the channel.
+[00:00:06] Either one of those guys really helps us
+[00:00:08] out a lot. So, there will come a time in
+[00:00:10] your option selling journey, in your
+[00:00:12] premium selling adventure, when you
+[00:00:15] might not have a bias on the stock.
+[00:00:17] You might not necessarily want to play
+[00:00:18] it to the upside or the downside. And
+[00:00:20] here's the good news, you don't have to.
+[00:00:23] You don't need to choose direction. You
+[00:00:25] don't have to You don't have to pick a
+[00:00:26] directional side. You can absolutely,
+[00:00:28] unequivocally play things from a neutral
+[00:00:31] standpoint. You can sell both sides of
+[00:00:33] the market and really lean into the
+[00:00:35] non-directional elements of time and
+[00:00:37] volatility.
+[00:00:39] And the best ways to do that are with an
+[00:00:42] iron condor or a short strangle. So,
+[00:00:45] let's go.
+[00:00:47] So, before we get into the specific
+[00:00:49] strategies themselves, let's just kind
+[00:00:50] of lay the groundwork. Let's set the
+[00:00:52] stage for what we're trying to
+[00:00:53] accomplish. If I have a neutral bias,
+[00:00:55] then I'm effectively going to be selling
+[00:00:57] premium on both sides of the market, and
+[00:00:59] I just want the stock or the index,
+[00:01:01] wherever I happen to be trading, to stay
+[00:01:03] within that range. As long as it stays
+[00:01:05] within a certain range, then I'm going
+[00:01:07] to be in really good shape. Now,
+[00:01:09] sometimes those ranges can be a little a
+[00:01:12] bit of a
+[00:01:13] disillusion from the standpoint of you
+[00:01:16] are going to be tested. Like, they can
+[00:01:17] look super wide. Like, you can look
+[00:01:19] super roomy on both sides of the market
+[00:01:21] and think this thing's never going to
+[00:01:22] get hit, when indeed it does in fact get
+[00:01:25] hit. So, you've got to be ready with
+[00:01:26] your adjustments in place, your
+[00:01:28] mechanics in place, and all those
+[00:01:29] things. But, this is the basic idea. I'm
+[00:01:31] selling premium above the market, and
+[00:01:33] I'm selling premium below the market.
+[00:01:35] Okay, so of those two, let's start with
+[00:01:37] my preferred choice, the short strangle.
+[00:01:41] I mean, I would rank this as in my top
+[00:01:43] two strategies. Now, it's not number
+[00:01:45] one, because then it would be in the top
+[00:01:47] one, but it is But, it is in my top two
+[00:01:50] favorite strategies. The short put is
+[00:01:52] number one, but the short strangle is a
+[00:01:54] very, very strong second. So, again, I'm
+[00:01:56] selling premium above. I'm going to sell
+[00:01:58] a call above where the stock is,
+[00:02:00] typically right around that one standard
+[00:02:02] deviation marker. I'm going to sell a
+[00:02:03] put below where the stock is, again,
+[00:02:07] deviation marker. But, the basic idea is
+[00:02:09] I just want the stock to meander between
+[00:02:12] those two short strikes, and I've got
+[00:02:14] the adjustments ready. I've got the
+[00:02:16] mechanics ready. Like, I've got the game
+[00:02:18] plan laid out for what I'm going to do
+[00:02:19] in the event that the stock starts
+[00:02:21] moving towards my strike, or to my
+[00:02:22] strike, or through my strike. Whatever
+[00:02:24] the case may be. And so, with the short
+[00:02:26] strangle, it's really, really
+[00:02:27] advantageous because you can make so
+[00:02:29] many adjustments in the event that
+[00:02:31] things go wrong. But, also, you have
+[00:02:33] unfiltered exposure to the Greeks,
+[00:02:36] right? Unfiltered exposure to theta,
+[00:02:38] unfiltered exposure to Vega. Now, those
+[00:02:40] gimmies come with some gotchas. At least
+[00:02:43] one. You do have undefined risk on both
+[00:02:46] sides of the market. So, you have to
+[00:02:48] understand that you don't have a safety
+[00:02:50] net in place. Like, you have taken the
+[00:02:51] training wheels straight off the
+[00:02:53] bicycle. And so, just understand that
+[00:02:55] that is, indeed, what you're signing up
+[00:02:57] for with the short strangle.
+[00:02:59] Okay, so if that doesn't sound super
+[00:03:00] appealing to you, you might be thinking,
+[00:03:02] "Well, wait a minute, Jim. That kind of
+[00:03:03] gives me the heebie-jeebies a little
+[00:03:04] bit. Like, that kind of twists up the
+[00:03:06] old knickers just a wee little bit. Is
+[00:03:08] there something we can do to maybe
+[00:03:09] define that risk?" And there is. You can
+[00:03:11] choose an iron condor. Now, I've been
+[00:03:13] very clear, I've been very honest, I've
+[00:03:16] been very forthcoming on my show from
+[00:03:18] Theory to Practice every day at 2:30 on
+[00:03:19] the tastytrade network. I don't love
+[00:03:22] iron condors. I don't. I just don't.
+[00:03:25] Because they're really hard to make
+[00:03:26] money, you can't really make
+[00:03:27] adjustments, and they're kind of a
+[00:03:29] little bit of a disillusion in terms of
+[00:03:31] you see that wide range, you think, "Oh,
+[00:03:32] there's no way this thing's not going to
+[00:03:34] work." And then all of a sudden it
+[00:03:35] doesn't work. Like, you think, "Oh my
+[00:03:36] gosh, there's no way I don't make
+[00:03:37] money." Then all of a sudden you don't
+[00:03:38] make money. You're like, "Man, what
+[00:03:39] happened with an iron condor?" So, I
+[00:03:41] don't love it for a number of reasons.
+[00:03:43] But, if you're just starting out and
+[00:03:44] you're brand new, it is a very valuable
+[00:03:47] tool in the toolbox. Because a lot of
+[00:03:48] new traders don't even know that that
+[00:03:50] can play neutral. They kind of assume
+[00:03:52] I've got to pick up and I've got to pick
+[00:03:53] down. I've got to pick bullish. I've got
+[00:03:55] to pick bearish. That's not true at all.
+[00:03:57] You can absolutely unequivocally play it
+[00:03:59] to the neutral side, if you will. And
+[00:04:02] one of the best ways to do that, if
+[00:04:03] you're starting out, is an iron condor.
+[00:04:05] Because, remember, if you're just
+[00:04:07] getting going, your goal is not to make
+[00:04:09] money.
+[00:04:10] Your goal is to learn. Your goal is to
+[00:04:12] put reps in. Your goal is to gain
+[00:04:13] experience. The money will come. All
+[00:04:15] that stuff will come down the road.
+[00:04:16] Right now, you've got to put the reps in
+[00:04:18] and gain the experience. And one of the
+[00:04:20] ways you can do that is with an iron
+[00:04:22] condor, which is effectively just the
+[00:04:25] defined risk version of a short
+[00:04:26] strangle. So, again, I sell a call
+[00:04:28] above, but then I but then I buy a
+[00:04:31] I sell a call above, but then I buy a
+[00:04:33] call a little further above. So, a
+[00:04:34] little further out of the money to cap
+[00:04:36] that risk to the upside. And then on the
+[00:04:38] put side, I sell that put below, but
+[00:04:40] then I buy a put a little further below.
+[00:04:43] Again, to cap that risk on the trade and
+[00:04:45] cap my unlimited risk to the downside.
+[00:04:48] So, that is how an iron condor sets up
+[00:04:50] in theory. Let's take a look at what
+[00:04:52] these guys look like in practice inside
+[00:04:54] the tasty platform.
+[00:04:56] Okay, so here I am inside of my tasty
+[00:04:58] trade platform. The first thing we want
+[00:05:01] to understand is when I go to the trade
+[00:05:03] page, whatever I decide to do, whether
+[00:05:06] it be a short strangle or an iron
+[00:05:07] condor, these are both going to be well
+[00:05:10] suited for something with high implied
+[00:05:12] volatility or high implied volatility
+[00:05:14] rank. So, if I go to
+[00:05:16] my watch list and I go to a tasty
+[00:05:18] default watch list, let's say. If I sort
+[00:05:22] my watch list by IV rank from high to
+[00:05:24] low, this is going to give me all of the
+[00:05:27] stocks with the highest implied
+[00:05:29] volatility rank from high to low. So,
+[00:05:31] much like all the other short premium
+[00:05:33] strategies that we might deploy,
+[00:05:36] a short strangle or an iron condor is
+[00:05:38] going to be well suited for high implied
+[00:05:41] volatility rank.
+[00:05:43] Now, right now in the marketplace, you
+[00:05:44] can see a lot of these individual stocks
+[00:05:45] have earnings coming out like Microsoft,
+[00:05:48] like Chipotle, like Disney, like Meta,
+[00:05:50] etc. And so you might want to avoid
+[00:05:53] those until the earnings day itself and
+[00:05:55] maybe trade them as a specific earnings
+[00:05:57] play. But if I wanted to scroll down a
+[00:05:59] little bit on the screen to find
+[00:06:01] something that was maybe not associated
+[00:06:03] with earnings, then you can see that
+[00:06:05] there are still a number of stocks or
+[00:06:08] indexes like XLU.
+[00:06:10] That's an index IV rank of 53.4, that's
+[00:06:13] really good. GDXJ, that's going to be
+[00:06:15] one of the gold miners. IV rank of 51
+[00:06:18] and a half, that's really good. And so
+[00:06:20] when it comes to finding opportunities
+[00:06:21] not associated with earnings, it most
+[00:06:23] certainly can be done. You just have to
+[00:06:25] roll up the sleeves a little bit and
+[00:06:26] maybe invest another 11 or 13 seconds to
+[00:06:29] get you where you're trying to go. And
+[00:06:31] so XLU or GDXJ might be a really good
+[00:06:34] option right here.
+[00:06:36] So let's say we go into GDXJ. I click on
+[00:06:38] that guy. I go to my trade page and I
+[00:06:40] open up maybe September with 53 days to
+[00:06:42] go. It's a little closer to 45 days to
+[00:06:44] go. Anywhere between 30 and 60, I think
+[00:06:46] is completely fine. So if I wanted to
+[00:06:48] set up a short strangle, again, I want
+[00:06:51] to sell call above, I want to sell a put
+[00:06:53] below. Using the expected move on the
+[00:06:56] tasty platform is a really great way to
+[00:07:00] kind of visually see where that one
+[00:07:03] standard deviation marker kind of sits
+[00:07:05] in the distribution right now. So if I
+[00:07:08] go to the downside first, it looks like
+[00:07:10] on the downside, I'm right around this
+[00:07:13] 83 or 84 strike. So my delta here is
+[00:07:17] going to be 15 to 17. And so when it
+[00:07:20] comes to setting up, you know, the put
+[00:07:21] option of my strangle, this is kind of
+[00:07:24] what I would be looking to start with.
+[00:07:26] So maybe I sell Yeah, maybe I sell like
+[00:07:28] an 83
+[00:07:29] for the purposes of what I'm doing here
+[00:07:32] with this GDXJ strangle. Now I go to the
+[00:07:35] call side.
+[00:07:36] And again, I'm looking to go right
+[00:07:38] around the outside of that expected
+[00:07:40] move. So right here I'm probably looking
+[00:07:41] for something around a 115 or maybe 116.
+[00:07:45] And so, this is right around about a 23,
+[00:07:48] 24, 21 delta, wherever you might go.
+[00:07:51] There's some serious upside skew right
+[00:07:53] now in GDXJ, which is totally fine. But,
+[00:07:56] let's say I sell the 23. So, now I've
+[00:07:57] got a 23 delta call ahead about a 16
+[00:08:02] delta put. So, the the net delta on the
+[00:08:05] position is going to be a little bit
+[00:08:06] skewed to the call side, and I'm short
+[00:08:08] that call. So, my net delta is going to
+[00:08:10] be about minus seven or so.
+[00:08:12] My credit collected on this is $4. My
+[00:08:15] buying power on this is only about a
+[00:08:16] thousand dollars, which is great. So,
+[00:08:18] you could fit this into, you know, a
+[00:08:19] twenty thousand dollar account, even a
+[00:08:21] fifteen thousand dollar account pretty
+[00:08:22] easily from a sizing standpoint. But,
+[00:08:25] take a look at what happens when I go to
+[00:08:28] Let me delete that. If I go to the curve
+[00:08:30] view,
+[00:08:32] you guys can see what this guy looks
+[00:08:35] like. If I zoom out just a little bit,
+[00:08:37] let me see if I can get this the right
+[00:08:40] I'm going to say, yeah, that's fine. You
+[00:08:42] can see that this is your big range,
+[00:08:44] right? This is your big wide range where
+[00:08:46] you can make money on the trade. Well,
+[00:08:47] look what happens on both sides.
+[00:08:49] You have unlimited risk on the upside.
+[00:08:51] You have unlimited risk on the downside.
+[00:08:54] So, again, I think it's a great
+[00:08:55] strategy. It is in the top two for me
+[00:08:56] personally, but you just have to
+[00:08:58] understand that your maximum loss is not
+[00:09:01] capped.
+[00:09:02] It is unlimited effectively on both
+[00:09:05] sides of the market.
+[00:09:07] Okay, that's true. But, make note of how
+[00:09:09] high this theta is. I've got nine
+[00:09:10] dollars, almost ten dollars of theta on
+[00:09:13] this strategy. Let's go back to the
+[00:09:14] table view.
+[00:09:15] And you can see if I buy wings on both
+[00:09:18] sides and turn this into an iron condor,
+[00:09:21] like let's say, you know, I buy, you
+[00:09:23] know, like a 78 put on the downside, and
+[00:09:26] then I buy, so I'm making basically a
+[00:09:28] five dollar wide iron condor, and then I
+[00:09:30] buy a 121 call on the upside. And so,
+[00:09:33] this changes the dynamic of the strategy
+[00:09:36] considerably. I'm collecting a lot less,
+[00:09:38] only a dollar fifty. My theta has
+[00:09:40] dropped rather significantly down to
+[00:09:42] only two dollars a day now, but my
+[00:09:45] buying power effect is a lot less
+[00:09:46] because my maximum loss is a lot less.
+[00:09:49] So now my risk is defined, my worst case
+[00:09:50] scenario is known on entry. If I go back
+[00:09:53] to the curve view here, you're going to
+[00:09:54] be able to see this pretty clearly.
+[00:09:55] Still have a pretty wide range in terms
+[00:09:57] of making money, and now on the upside,
+[00:10:01] my risk is capped. You can see right
+[00:10:02] there. On the downside, my risk is
+[00:10:04] capped. You can see right there. And so
+[00:10:06] that is a really nice way to turn a
+[00:10:09] neutral strategy that was a short
+[00:10:11] strangle into a defined risk version if
+[00:10:14] you don't feel comfortable taking
+[00:10:16] unlimited risk. And again, if you're
+[00:10:17] just starting out, this is where you
+[00:10:19] should live with defined risk. Okay, so
+[00:10:21] iron condors and short strangles. So how
+[00:10:23] do you choose? Well, I think a couple of
+[00:10:24] things. Number one, again, if you're a
+[00:10:25] beginner, iron condors only. If you're a
+[00:10:27] little bit more experienced, this is
+[00:10:28] when you start to consider short
+[00:10:30] strangles. Account size also comes into
+[00:10:32] play. If you're working with smaller
+[00:10:33] accounts, so 15, 20, 25,000 or less, of
+[00:10:36] course, iron condors probably pretty
+[00:10:38] exclusively. But if you have more
+[00:10:40] capital, or 30, 40, 50,000 and more, now
+[00:10:42] you can certainly bring a lot more short
+[00:10:44] strangles into the mix. And then the
+[00:10:45] last thing to consider is your skill
+[00:10:46] level. Like skills and abilities are
+[00:10:48] going to need to be higher on a short
+[00:10:49] strangle because there are more
+[00:10:51] decisions you're going to need to make
+[00:10:52] over the life of the position. Whereas
+[00:10:54] in iron condor, there might be a couple
+[00:10:55] of things you can do to roll around the
+[00:10:57] edges, but for the most part, it's going
+[00:10:58] to be a set it and forget it type of
+[00:11:00] strategy. So hopefully that makes sense,
+[00:11:02] and I'll see you guys in the next one.

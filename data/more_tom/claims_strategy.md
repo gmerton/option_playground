@@ -133,7 +133,7 @@ So: keep his §6 mechanism as the explanation for why puts cost more. Do not act
 
 Three separable claims in `qo9466KD_u8`:
 
-**(a) "Don't roll out and wider" — AGREES, and we have a direct measurement.**
+**(a) "Don't roll out and wider" — AGREES in direction only; the measurement below is ADJACENT, not direct.** ⚠ *(corrected 2026-09-24: that 69.8% is the LONG 7-DTE straddle's −50% stop (`straddle_stop_path_2026-09-20.md`), not a short-premium roll — rolling a losing short put/strangle out and wider is UNTESTED here)*
 Our 2026-09-22 test of "roll at −50% if it requalifies" split it into a stop half and a re-entry half:
 the **stop is a cost** (−3.84pp on the book, **−9.51pp on the breach cohort, 69.8% of stopped trades were
 better held**) and the **re-entry is NULL** (+4.8% after a ≥50% loser, n 879, 198 dates, **t 1.55**, vs
@@ -284,7 +284,7 @@ one); regime/market-timing rules of the "don't buy at highs" family (contradicte
 compute for, and he reaches them by trading experience rather than by measurement: **the liquidity gate on
 spread scanning** (our 136%-of-gross cost result, and the credit/width finding that a rich spread in a junk
 name is more risk, not more edge); **don't roll a loser out and wider** (our roll test, −9.51pp on the
-breach cohort, 69.8% better held); and **the paying-the-offer argument** that is the whole reason our cost
+breach cohort, 69.8% better held — adjacent evidence only: a long-straddle stop, not a short-premium roll); and **the paying-the-offer argument** that is the whole reason our cost
 sweep killed nine strategies. His skew mechanism is correct, his VRP sign is correct at the short end, his
 under-hedge instinct matches our put-overlay null, and his "you're not selling at fair value, you're hoping
 to stay inside the range" is a more honest statement of short-premium risk than most creators manage. He

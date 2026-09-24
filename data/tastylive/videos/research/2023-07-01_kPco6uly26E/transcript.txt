@@ -1,0 +1,468 @@
+[00:00:00] Roku strangle anatomy of a trade what I
+[00:00:03] like about this one is that you've
+[00:00:05] highlighted your Delta adjustments as
+[00:00:07] well yeah you've got the visual of
+[00:00:09] course the classic visual of yes
+[00:00:11] management so let's Dive In
+[00:00:16] all right so this Roku position I closed
+[00:00:19] this morning and so this is the whole
+[00:00:21] trade here we started on the 12th May
+[00:00:23] 12th so it's been a little over a month
+[00:00:25] month and a half ish started with the 50
+[00:00:27] 60 strangle stock trading around 56 sold
+[00:00:31] at 2.67 Cents Only use six seven eight
+[00:00:34] hundred bucks in buying power you know
+[00:00:36] something a stock that I trade quite
+[00:00:39] frequently I'm comfortable trading it it
+[00:00:41] moves it has pops and volatility it has
+[00:00:44] contractions and volatilities good good
+[00:00:46] little starter position for uh account
+[00:00:49] in my in the 25 to 50 000 range
+[00:00:52] definitely a good one to start with it's
+[00:00:54] only at 267 you can see my breakeven's
+[00:00:56] 47 60 and 67 ish just standard setup
+[00:01:01] here is basically a 20 Delta short
+[00:01:04] option on either side you can see over
+[00:01:06] the course of like a couple days and I
+[00:01:08] don't know I forget if this was an
+[00:01:09] earnings trade or not I'm gonna say it
+[00:01:11] wasn't uh but it could have been at that
+[00:01:14] point in time earnings were around that
+[00:01:17] that time so maybe it was but the stock
+[00:01:20] rallied or sorry the stock sold off
+[00:01:23] couple dollars over the next three or SO
+[00:01:26] trading days I rolled down the call I
+[00:01:28] mean I'm being pretty aggressive here at
+[00:01:30] 31 days you know you could have rolled
+[00:01:33] this out in time if you wanted to I
+[00:01:34] decided just to flatten out the Delta
+[00:01:36] here by rolling down the call did that
+[00:01:38] at 217. you can see I'm collecting
+[00:01:41] almost five bucks in premium my
+[00:01:43] breakevens are moving a little bit
+[00:01:44] giving myself a little bit more room to
+[00:01:46] the downside into the move down uh and
+[00:01:49] reducing the upside break even in
+[00:01:52] exchange for doing that
+[00:01:54] a couple more days go by five six days
+[00:01:57] go by I roll up the short put so you can
+[00:02:00] see I'm rolling back at the stock
+[00:02:02] rallies back to 56. I got a week has
+[00:02:05] passed I got 24 days to go till
+[00:02:06] expiration roll up the put for a dollar
+[00:02:09] 64. I mean the stocks moving two or
+[00:02:11] three dollars a day so these aren't tiny
+[00:02:13] little moves here we're talking about
+[00:02:14] you know five percent up or down moves
+[00:02:17] in just a couple days so you're
+[00:02:18] definitely getting some movement here
+[00:02:19] again just collecting premium it's high
+[00:02:22] volatility it's liquid I'm just you know
+[00:02:24] managing my Deltas here
+[00:02:27] uh about what 10 days go by Ish nine ten
+[00:02:30] days go by I take this position roll it
+[00:02:34] out and I roll up on the call side so
+[00:02:36] this is one of the adjustments that you
+[00:02:37] can do with naked naked short positions
+[00:02:39] it is it allows you some flexibility and
+[00:02:41] I have another adjustment later on in
+[00:02:43] here but it allows you some flexibility
+[00:02:45] to move and adjust your strikes because
+[00:02:48] you're selling so much extrinsic value
+[00:02:49] when you're rolling out in time that
+[00:02:52] extrinsic value is is even greater than
+[00:02:55] if you're rolling in the same expiration
+[00:02:57] so I'm taking my position from the 55
+[00:03:00] straddle I'm reducing my exposure a
+[00:03:03] little bit my short Delta here with the
+[00:03:05] stock basically at 60 by Rolling that
+[00:03:08] call up five dollars and doing the whole
+[00:03:11] package at a dollar twenty five so that
+[00:03:13] roll up of four dollars of intrinsic
+[00:03:16] value didn't didn't really cost me
+[00:03:17] anything right I'm doing this at a
+[00:03:19] dollar 25 credits synthetically I'm
+[00:03:22] taking off another five dollars of
+[00:03:24] intrinsic value so I'm really getting
+[00:03:26] like six dollars and change in in real
+[00:03:28] value out of this position with that
+[00:03:31] role
+[00:03:32] collecting more premium dollar 25 puts
+[00:03:34] me at 773 you can see my breakeven's
+[00:03:36] kind of going back to where I started
+[00:03:38] here but with a ton more premium than
+[00:03:40] what I started with without the money
+[00:03:42] strikes as well
+[00:03:44] of course we get a two-day move of about
+[00:03:47] ten dollars we go from 59 to 68 and
+[00:03:50] change I mean these are very very big
+[00:03:52] moves and you'll see them on the chart
+[00:03:54] uh when we get towards the end here but
+[00:03:57] you know there's not much you can do
+[00:03:59] into an eight dollar nine dollar Face
+[00:04:02] Ripper to the upside here I roll up the
+[00:04:04] short put collect another Buck I've now
+[00:04:06] got the 60 straddle and the the
+[00:04:08] adjustment I did on the fifth actually
+[00:04:10] helped my position because I rolled to
+[00:04:12] much higher extrinsic value at the money
+[00:04:15] option rather than keeping that 55
+[00:04:18] strike call which is in has intrinsic
+[00:04:21] value and is a much heavier Delta so the
+[00:04:24] adjustment in hindsight helped me uh but
+[00:04:27] there's nothing you can do against you
+[00:04:29] know a 20 move in the stock price in the
+[00:04:32] span of two days so I do that I roll up
+[00:04:36] the the put I'm sitting at the 60
+[00:04:38] straddle I got eight dollars in change
+[00:04:40] in in total premium on the position so
+[00:04:42] lots of of value to Decay over time and
+[00:04:46] and hopefully collect
+[00:04:48] so jumping on to the next slide
+[00:04:51] here got a couple more uh adjustments so
+[00:04:56] uh after you know four or five more days
+[00:05:00] you have a move from 68 to 73 so we're
+[00:05:02] talking about over a week or a little
+[00:05:05] over a week the stock goes from about 60
+[00:05:07] to the mid 70s right it's a it's a 20 to
+[00:05:11] 25 move in the stock price
+[00:05:15] I had to do something so I had to go
+[00:05:17] roll it invert it I roll the put up I go
+[00:05:20] inverted by five dollars you can see I
+[00:05:21] have the 65 strike short put the 60
+[00:05:23] strike short call I have that five
+[00:05:25] dollar inversion again I'm collecting
+[00:05:28] premium but I've now got five dollars of
+[00:05:30] intrinsic value that's on the table here
+[00:05:32] that's my inversion it means that I can
+[00:05:34] only make up to 4.88 cents on this
+[00:05:38] position 488 bucks would be my best case
+[00:05:41] scenario it's obviously not what I'm
+[00:05:42] targeting I'm targeting to get out of
+[00:05:44] this position to scratch this position I
+[00:05:46] mean keep in mind we started this trade
+[00:05:49] with the stock at 56. it's now in the
+[00:05:51] mid 70s okay so the Stock's gone up 40
+[00:05:54] or 50 percent in the span of the of this
+[00:05:57] one month time frame my ideal situation
+[00:06:01] here is to exit out of scratch I'm not
+[00:06:04] looking to profit on this trade I just
+[00:06:06] want to get out of this trade I can
+[00:06:08] re-establish it I can move on to
+[00:06:10] something else you know this getting
+[00:06:12] back to a scratch would take a
+[00:06:15] two thousand dollar loser had I done
+[00:06:17] nothing down to to zero and that's a
+[00:06:20] huge uh huge difference so the last
+[00:06:23] adjustment I did was something that Tom
+[00:06:25] likes to do pretty frequently is buying
+[00:06:27] the guts and then selling the wings
+[00:06:29] essentially moving the position from a
+[00:06:32] straddle a very uh very high extrinsic
+[00:06:35] value at the money position
+[00:06:37] to a lesser extrinsic value out of the
+[00:06:40] money position but one that will Decay a
+[00:06:43] lot quicker because we know that the
+[00:06:44] tail of the distribution will go to zero
+[00:06:47] quicker
+[00:06:48] I'm buying the guts the closer at the
+[00:06:51] money position selling the wings selling
+[00:06:53] the out of the money position I'm doing
+[00:06:54] this at a 6.75 debit so slight debit
+[00:06:59] really my real debit on this position is
+[00:07:01] about a dollar seventy five and that's
+[00:07:03] because I'm taking off that five dollars
+[00:07:06] of intrinsic value that I otherwise
+[00:07:08] would have had to take off at some point
+[00:07:10] so the 675 debit is really a debit of a
+[00:07:13] dollar 75 because that five dollars is
+[00:07:16] getting pulled off the table as well of
+[00:07:19] course moving the break evens 56 and 73
+[00:07:21] stocks trading at 64. it's right between
+[00:07:24] my short strikes that's the best case
+[00:07:27] scenario for the position best time to
+[00:07:29] do this sort of adjustment
+[00:07:32] and then today I ended up closing the
+[00:07:34] position you can see the stock stayed
+[00:07:36] kind of sideways over the last four or
+[00:07:39] five trading days
+[00:07:41] um and I closed the trade out for a 32
+[00:07:43] Cent loss or 32 dollars after watching
+[00:07:47] this stock
+[00:07:48] whipsaw around it was absolutely nuts
+[00:07:51] yeah it was a nice little adjustment and
+[00:07:53] this is kind of a
+[00:07:55] example of
+[00:07:57] the contacts that we use when we say you
+[00:08:00] know you're not going to be able to get
+[00:08:01] out of this position in this expiration
+[00:08:03] like you're gonna have to fight this
+[00:08:05] position to get back to zero you got to
+[00:08:07] stay small enough to be able to fight
+[00:08:09] that position to be able to roll up and
+[00:08:12] down and roll out and buy the guts and
+[00:08:14] sell the wings like all those
+[00:08:15] adjustments uh hinge on having a small
+[00:08:19] enough to position to where you can hold
+[00:08:22] the position into moves like this yeah
+[00:08:25] and when you're managing these positions
+[00:08:27] the expectation of getting out for a
+[00:08:30] scratch or profit is completely
+[00:08:32] dependent on how much
+[00:08:34] credit you have relative to whatever the
+[00:08:37] position is so in this case when you
+[00:08:40] have a Str you went from a inverted
+[00:08:42] strangle to a regular strangle you pay
+[00:08:45] to debit but you still had a three
+[00:08:47] dollar credit with the 10 point out of
+[00:08:49] the money strangle so yeah when you have
+[00:08:51] a credit of three dollars on a sixty
+[00:08:54] dollar product you have the ability to
+[00:08:55] get out for a scratch or profitability
+[00:08:57] in this cycle if it was only like a
+[00:08:59] dollar or something like that after
+[00:09:01] buying the gut selling Wings maybe we
+[00:09:03] don't do that maybe we just keep the
+[00:09:04] inversion maybe roll it out in time as
+[00:09:06] well that's what we typically do is
+[00:09:07] we'll roll it out in time and then we'll
+[00:09:09] buy the gut sell the wings which is
+[00:09:11] doing the same thing but adding more
+[00:09:13] time to the position to be to beef up
+[00:09:16] the credit but in this case you didn't
+[00:09:18] need to because you already had a nine
+[00:09:20] dollar credit and you saw that the debit
+[00:09:22] was six dollars leaving you with three
+[00:09:24] dollars and change which is a feasible
+[00:09:26] amount to decay in the same cycle yes
+[00:09:29] when you get to that like if that was a
+[00:09:32] dollar credit I would have had to roll
+[00:09:34] this like net dollar of extrinsic value
+[00:09:37] positive extrinsic value through all the
+[00:09:39] rolls I would have had to roll this
+[00:09:40] another cycle to get out of this for a
+[00:09:43] scratch at three dollars and change
+[00:09:44] that's typically what those strangles
+[00:09:47] trade at I mean just for reference I
+[00:09:49] started the position at 2.67 cents
+[00:09:52] for the strangle which was at way lower
+[00:09:54] strikes so I'm basically back to that
+[00:09:57] point but with the stock much much
+[00:09:59] higher and we could see that in the in
+[00:10:02] the visual here on the next slide as we
+[00:10:05] look at all these adjustments and the
+[00:10:07] risk profile and everything so we
+[00:10:08] started in the mid 50s and you know this
+[00:10:11] is kind of your I wouldn't call this for
+[00:10:15] lack about her words tail type events I
+[00:10:17] mean you don't expect stocks to move 40
+[00:10:20] 50 percent in 30 days but having high
+[00:10:24] implied volatility it allows you the
+[00:10:26] flexibility to manage this position move
+[00:10:28] your risk and again when you when you
+[00:10:30] think back to the original
+[00:10:32] strangle that I had and the the amount
+[00:10:36] of extrinsic value I had on that
+[00:10:37] position it was the same amount of
+[00:10:39] extrinsic value that I stayed with at
+[00:10:41] the end so all the adjustments allowed
+[00:10:44] me to kind of track the stock price
+[00:10:46] to get to the same point where I was at
+[00:10:49] when I started the trade like it's
+[00:10:52] it's 20 Delta strangle with the stock at
+[00:10:55] you know fifty three dollars having the
+[00:10:58] same value as as selling the strangle at
+[00:11:01] 63 dollars like it's it's the same sort
+[00:11:03] of position
+[00:11:05] at the end of all these adjustments but
+[00:11:08] you know it's another one where some
+[00:11:10] people look and say well you should have
+[00:11:12] just done nothing and rolled the whole
+[00:11:14] you know the strangle the whole time and
+[00:11:16] that's
+[00:11:17] certainly something you can do if you
+[00:11:19] can take the heat up to 75 you know like
+[00:11:23] if you can take the eight nine
+[00:11:27] thousand dollar
+[00:11:28] you know pain to the upside and then
+[00:11:31] play it to the downside then fine you
+[00:11:33] sit with it but for me I like to be just
+[00:11:35] be mechanical and reduce my Delta
+[00:11:38] exposure and that's what we'll get to on
+[00:11:40] the next slide unless you have something
+[00:11:41] to comment on this one yeah I think it's
+[00:11:44] really just a matter of like there's
+[00:11:46] always that oh I could have just done
+[00:11:47] this but what happens if the stock goes
+[00:11:50] from 75 to 100 now you're just now
+[00:11:52] you're just done yeah you're just short
+[00:11:53] stock yeah and you might not want to be
+[00:11:55] where this is a much more neutral
+[00:11:57] extrinsic value focused trade rather
+[00:11:58] than a directional stock price trade
+[00:12:01] which is what would happen if you did
+[00:12:02] nothing on the definitely outside the
+[00:12:05] expected move from 55 to 75 the current
+[00:12:08] expected move for 200 days out is 20
+[00:12:10] points and that you realize that in two
+[00:12:12] weeks yes so you have to do something
+[00:12:15] and it's it just doesn't make sense like
+[00:12:17] if you had a short put on and we're
+[00:12:18] seeing this rally to 75 if you did
+[00:12:20] nothing your short puts worthless so
+[00:12:22] there's no reason to have that on and
+[00:12:24] then if you just leave the short call on
+[00:12:25] again you now you need a directional
+[00:12:27] move in the stock price to be profitable
+[00:12:29] where when you're adjust making these
+[00:12:30] adjustments as you can see by these
+[00:12:32] green dotted lines you don't need a
+[00:12:34] directional move in the stock the stock
+[00:12:36] could have stayed at 75 and over the
+[00:12:38] course of a couple Cycles you would have
+[00:12:40] pushed your break even up to the stock
+[00:12:42] price rather than needing the stock
+[00:12:43] price to come back down to your strikes
+[00:12:45] yeah and that's the big difference is
+[00:12:47] focusing on what you can control versus
+[00:12:51] what you can't and what you can control
+[00:12:53] is where your breakevens are where your
+[00:12:56] risk is where your strikes are you can't
+[00:12:58] control where Roku is going to be
+[00:13:00] in uh three weeks and two hours you just
+[00:13:04] you'll never know nobody does so what
+[00:13:07] you do know is what can I do to
+[00:13:09] manipulate these strikes I can roll this
+[00:13:10] out in time I can buy the godseller
+[00:13:12] wings and roll out in time I can do it
+[00:13:13] in the same cycle and that's what you
+[00:13:15] did you just you put your breakevens
+[00:13:18] where the stock price is and then a
+[00:13:21] couple days pass and you're able to
+[00:13:23] close it yeah and going back to the in
+[00:13:25] the where I go inverted and that's like
+[00:13:28] the point that people have the the
+[00:13:30] hardest time
+[00:13:32] making that adjustment and at that point
+[00:13:36] the risk reward moving forward is
+[00:13:41] if I had knock on and inverted you have
+[00:13:44] more wrist to the upside because you
+[00:13:46] don't have the same sort of Delta
+[00:13:47] protection you're not reducing your
+[00:13:49] Delta exposure you're leaning short of
+[00:13:51] course the stock comes down and I would
+[00:13:53] have been better off not going inverted
+[00:13:55] but that's the question you have to ask
+[00:13:56] yourself is like okay the stock keeps
+[00:13:58] going up my losses are going to get
+[00:14:00] bigger and bigger and are going to move
+[00:14:03] more volatile
+[00:14:05] um the p l the loss is going to be more
+[00:14:07] volatile to the upside just because
+[00:14:09] you're getting more stat statically
+[00:14:11] short Delta you got to kind of make that
+[00:14:14] that decision on your own and for me
+[00:14:16] it's easier to just reduce the Delta and
+[00:14:18] play it neutral because I know even if
+[00:14:20] it continues higher I'll just roll out
+[00:14:22] to the next expiration adjust the
+[00:14:24] strikes a little bit and flatten out the
+[00:14:25] Delta and continue to move it along as
+[00:14:28] the stock uh you know bounces around
+[00:14:32] I like it uh
+[00:14:34] Delta slide yep yeah so this because we
+[00:14:38] got the question all the time of like
+[00:14:40] when do you make the adjustment what are
+[00:14:42] you what are you looking for what are
+[00:14:43] you doing
+[00:14:44] um for me I'm always trying to you know
+[00:14:47] if I'm starting out with a strangle at
+[00:14:49] 20 Deltas or 25 or 30 Delta on either
+[00:14:51] side and I'm basically flat Delta I'm
+[00:14:54] not trying to do like micro adjustments
+[00:14:57] to where I'm always at zero right you
+[00:15:00] got to kind of take a little bit of heat
+[00:15:01] on either side of this of of the of the
+[00:15:05] trade but at a certain point you you you
+[00:15:07] want to get back to a more manageable
+[00:15:09] Delta and all of my adjustments
+[00:15:11] throughout the the duration of this
+[00:15:13] trade I'm usually adjusting when I'm you
+[00:15:17] know 40 Deltas or 50 Deltas or 60 Deltas
+[00:15:20] somewhere around that range overall
+[00:15:22] meaning I start with zero Delta stock
+[00:15:25] goes up and my put goes basically to a
+[00:15:28] zero Delta or three Delta five Delta
+[00:15:31] is at a 50 Delta or 60 Delta where I'm
+[00:15:33] net
+[00:15:34] 50 to 60 Deltas in One Direction and at
+[00:15:38] that point I'm rolling whatever the
+[00:15:40] untested side is the short option I'm
+[00:15:43] rolling that up or down to collect
+[00:15:45] around 20 or 30 Deltas to get me back to
+[00:15:48] uh 20 or 30 Delta position rather than
+[00:15:52] the 60 Delta heavy position and this is
+[00:15:56] all of my adjustments my net Delta after
+[00:15:58] the adjustments and you can see you know
+[00:16:01] all of my adjustments put me back to
+[00:16:03] somewhere between
+[00:16:05] 30 plus or minus Deltas on this position
+[00:16:08] I'm never
+[00:16:09] I'm not waiting until the Delta of the
+[00:16:11] position is 90 and then adjusting it
+[00:16:14] gets to 60 maybe 70 and I roll up the to
+[00:16:17] the 30 Delta put if it gets to 70 long
+[00:16:20] Delta I roll down to the 30 Delta call
+[00:16:23] it's a mechanical process it collects
+[00:16:25] premium reduces your Delta makes you
+[00:16:28] flatter on the on the the position so
+[00:16:31] you just kind of need the stock to
+[00:16:32] cooperate for a period of time and you
+[00:16:34] can exit the trade and
+[00:16:36] scratch it and that's really that's
+[00:16:39] really the key here is that your Deltas
+[00:16:42] were between 30 and positive 35 negative
+[00:16:44] 35 which means you didn't need the stock
+[00:16:48] to do much that's the difference if you
+[00:16:50] wait till your Delta's at 90 you're done
+[00:16:52] yeah now you need the stocks to sell and
+[00:16:55] if it doesn't you're just stuck and that
+[00:16:57] was the point I was making with the
+[00:16:58] inversion is like at that point you have
+[00:17:00] to say okay am I fine with being short
+[00:17:02] 70 Deltas here yeah you know that's the
+[00:17:05] question because if you get the
+[00:17:07] continued move to the upside now your
+[00:17:08] short 90 deltas and every dollar move is
+[00:17:12] one to one against you or for you I'd
+[00:17:14] rather flatten it out and
+[00:17:16] focus on extrinsic value focus on
+[00:17:18] extrinsic value let time do the work for
+[00:17:20] me
+[00:17:21] Etc a couple questions from the YouTube
+[00:17:24] chat specific to this uh what made you
+[00:17:27] roll down the call if your put was not
+[00:17:28] tested likely a Delta adjustment yeah
+[00:17:31] small small Delta adjustment at that at
+[00:17:34] that point
+[00:17:36] Roku is a stock that has a lot of
+[00:17:38] extrinsic value so when you see this
+[00:17:40] three or four dollar down move those
+[00:17:42] options get cheap quickly right and the
+[00:17:44] and the roles I'm not doing rolls for 30
+[00:17:47] cents or 40 cents or 50 cents I'm
+[00:17:49] getting dollars yeah you know for the
+[00:17:51] the reversal against you doesn't hurt as
+[00:17:54] much because of the high extrinsic value
+[00:17:57] that's in that stock if you're trading
+[00:17:58] something like like I don't know when
+[00:18:00] we're going through the s p 100 like
+[00:18:02] looking at WBA you know if you were
+[00:18:05] short puts there those whacked you yeah
+[00:18:08] because this is a low volatility stock I
+[00:18:11] mean this it's got 29 implied volatility
+[00:18:14] yeah it if you're short puts in Roku
+[00:18:17] you're not really getting hurt on the
+[00:18:19] downside but your calls are getting
+[00:18:20] vaporized yeah
+[00:18:24] thank you

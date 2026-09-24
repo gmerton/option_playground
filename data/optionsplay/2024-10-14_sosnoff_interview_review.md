@@ -241,7 +241,7 @@ vs flat 0.00), not spreading thin.
 * **Law of large numbers as a standalone justification** — incoherent alongside the no-edge claim.
 * **Overby's adjustment rule** (flip the losing butterfly into a short vertical in the direction that just hurt
   you, "following the trend") — no evidence offered; adjacent to our roll test, where **69.8% of the breach cohort
-  did better held** and the stop cost −9.51pp, and to the NULL pyramid.
+  did better held** and the stop cost −9.51pp, and to the NULL pyramid. ⚠ *(corrected 2026-09-24: that 69.8% is the LONG 7-DTE straddle's −50% stop (`straddle_stop_path_2026-09-20.md`), not a short-premium roll — rolling a losing short put/strangle out and wider is UNTESTED here)*
 * **Overby's VIX Sept/Oct seasonality** — unsourced, and partly refuted on air by his co-panelist.
 * **The VIX butterfly anecdote** — n=1, winners-only, no P&L. Discounted entirely, per house rule on testimonials.
 
@@ -328,7 +328,7 @@ worthless-expiry winners and printed a spurious PASS +$1.53, t 4.26):** 21-DTE c
 * **The skip-strike butterfly** — butterflies are the structure family the calendar/path erratum burned us on,
   evaluation is entirely path-dependent (see Q2's blocker), and the motivation is one winners-only anecdote.
 * **The "flip the loser into a short vertical, following the trend" adjustment** — no evidence offered, and it is
-  adjacent to two settled results (roll test: 69.8% better held; pyramid: NULL).
+  adjacent to two settled results (roll test: 69.8% better held — a long-straddle stop, not a short-premium roll; pyramid: NULL).
 * **0DTE "manage before noon"** — Stage A settled the intraday-trigger question across 11,227 alerts, and the
   1-DTE straddle study found every exit ≈ −30% of premium. Already answered in spirit.
 * **Futures strangles** — cannot be tested; we have no futures options data and nothing here justifies buying
