@@ -1,0 +1,16 @@
+# Overnight-return persistence as a trade (pre-registration in the docstring)
+
+200 months 2010-02 -> 2026-09; top/bottom decile of trailing-252 mean overnight return
+
+ARM A overnight-only, NET 4 bp/day (PRIMARY)    +0.346%/month  t  +2.63  halves +0.537 / +0.173  60% +
+ARM A overnight-only, gross                     +1.183%/month  t  +9.01  halves +1.376 / +1.008  81% +
+ARM A top - bottom decile, gross                +1.867%/month  t +10.08  halves +2.075 / +1.679  80% +
+top decile INTRADAY excess (the give-back)      -0.758%/month  t  -3.49  halves -1.249 / -0.315  38% +
+ARM B hold top decile close-to-close            +0.420%/month  t  +1.62  halves +0.123 / +0.689  55% +
+
+PRIMARY bar (t >= 3, both halves > 0): FAIL
+ARM A gross by year (%/month): 2010 +3.14  2011 +1.61  2012 +1.00  2013 +1.48  2014 +1.28  2015 +1.00  2016 +0.54  2017 +1.10  2018 +0.76  2019 +0.54  2020 +1.30  2021 +0.77  2022 +0.76  2023 +0.38  2024 +1.03  2025 +1.28  2026 +2.68
+
+## DATA CHECK (post-run): panel (yfinance) open vs the first 1-min bar's open, same name-day, n 1195
+  median |open diff| 0.002%, mean signed -0.263%; close diff median |.| 0.068%
+  share of name-days with |open diff| > 0.5%: 18.6%
