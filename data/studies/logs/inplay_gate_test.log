@@ -1,0 +1,23 @@
+house breakout, ADR >= 2 liquidity floor, 2019-10-01 ->; 16,915 events. PRIMARY = 20d ADR-matched excess; house process in %
+
+                  arm    n  per_yr  med_adr  share_adr_lt3  fwd20  excess20      t     h1    h2 yrs_pos  house_pct  house_med  vs_abs_t    win  upgrade
+ABS (adr>=3) baseline 8242    1177    3.932          0.000  1.215    -0.165 -0.625 -1.117 0.425     3/8     -0.243     -3.709       NaN 28.464    False
+              REL 1.5 4954     708    2.799         58.983  0.656    -0.102 -0.573 -0.722 0.247     3/8     -0.186     -3.072     0.323 33.004    False
+    REL 2.0 *PRIMARY* 1729     247    2.631         68.190  0.626    -0.170 -1.421 -1.333 0.415     3/8     -0.237     -2.606    -0.876 33.835    False
+              REL 3.0  233      33    2.411         80.258  0.822     0.597  0.956 -0.420 1.067     5/8      0.302     -1.745     0.337 37.339    False
+          ABS+REL 1.5 2032     290    3.652          0.000  0.989    -0.259 -1.171 -1.388 0.413     3/8      0.056     -4.030     0.907 32.776    False
+          ABS+REL 2.0  550      79    3.531          0.000  0.776    -0.714 -1.744 -2.569 0.377     3/8      0.348     -3.377     0.131 34.364    False
+          ABS+REL 3.0   46       7    3.608          0.000  2.286     1.361  0.451 -2.015 3.411     4/8      1.330     -0.610     0.568 43.478    False
+
+by year, 20d ADR-matched excess (pp):
+  ABS (adr>=3) baseline  2019 -4.33  2020 -1.63  2021 -1.26  2022 +0.33  2023 -0.05  2024 +1.11  2025 -0.60  2026 +1.10
+  REL 2.0 *PRIMARY*      2019 -0.75  2020 -0.57  2021 -1.85  2022 -1.59  2023 -0.28  2024 +0.82  2025 +0.40  2026 +0.67
+  ABS+REL 2.0            2019 -3.27  2020 -1.14  2021 -3.35  2022 -3.34  2023 +0.35  2024 +0.28  2025 -0.79  2026 +1.24
+
+quiet names waking up (ADR 2-3, the class ABS excludes), by range ratio:
+  rr 0-1.5: n  5751  excess +0.02pp (t -0.98)  house -0.47%
+  rr 1.5-2: n  1743  excess -0.04pp (t +0.94)  house -0.25%
+  rr 2-3: n   992  excess +0.02pp (t +0.16)  house -0.62%
+  rr 3-+: n   187  excess +0.41pp (t +0.96)  house +0.05%
+
+upgrades: 0 of 6
