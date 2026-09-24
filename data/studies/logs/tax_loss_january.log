@@ -1,0 +1,26 @@
+# Undervalued #4: January tax-loss reversal (pre-registration in the docstring)
+
+Januaries 2011–2026 (16 years); bottom-decile losers per year: median 58
+
+year  n   Jan excess   first-10d   deep(<=-40%) n / excess   other-month avg
+2011   31     +2.70       +2.46       0 /    +nan          -0.62
+2012   33     +3.64       +1.36      18 /   +6.06          -0.14
+2013   34     -0.22       -0.34       4 /  +19.56          -1.48
+2014   39     +0.98       -0.17       3 /   +3.79          -0.21
+2015   45     -3.52       -3.04       5 /  -12.92          -1.81
+2016   47     +4.27       +0.94      26 /   +1.79          +1.81
+2017   52     +1.81       +3.43       7 /   -1.14          -0.05
+2018   56     -2.90       +0.81       6 /   -3.74          +0.26
+2019   63     +2.80       +2.30      42 /   +2.34          -0.13
+2020   61     -7.67       -2.68       2 /  -49.54          -0.79
+2021   70     -1.29       +1.33      17 /   -3.55          +0.41
+2022   77     +2.64       +1.71      21 /   -1.38          -2.57
+2023   78     +7.76       +2.43     139 /   +8.98          -0.00
+2024   86     -2.71       -0.99       9 /   -0.51          -1.15
+2025  101     -3.49       -2.04      34 /   -1.60          -1.03
+2026  121     -2.59       -0.43      44 /   -2.00          +0.04
+
+## PRIMARY: January excess of the bottom decile +0.14pp (median +0.38), t +0.14 across 16 years, 50% of years +
+  January minus other months (paired by year): +0.60pp, t +0.65
+  bar (t >= 3 and January > other months): FAIL
+  secondary: first 10 sessions +0.44 (t +0.91); deep losers (<= -40%) -2.26 (t -0.59); other-month losers overall -0.46 (t -1.94)
