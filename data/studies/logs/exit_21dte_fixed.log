@@ -1,0 +1,38 @@
+44 tickers with deep chains: AAPL, AMZN, ASHR, CLS, COST, EEM, FXI, GDX, GEV, GLD, GME, GOOGL, HD, IBIT...
+
+14,367 strangles · 44 names · 9 years
+
+
+================================================================================================
+PATH-COVERAGE GUARD — 45 DTE short strangle, 21-DTE exit test
+================================================================================================
+  trades 14,367   coverage: median 84.6%  mean 77.7%  p10 46.4%  p90 96.7%
+  floor 60% -> 11,692 resolved, 2,675 UNRESOLVED (18.6% — report as its own bucket, never as wins)
+
+  headline vs coverage floor (a real edge is flat here; an artefact decays):
+ floor     n  pct_kept  mean  median  win_pct
+ 0.000 14367   100.000 0.231   0.877   73.899
+ 0.250 13997    97.425 0.288   0.907   74.445
+ 0.500 12728    88.592 0.496   1.057   76.045
+ 0.750  9591    66.757 1.018   1.497   78.803
+ 0.900  4667    32.484 2.752   2.357   85.751
+
+  ✓ Coverage is adequate and the headline does not depend on it. Still quote the median coverage and the unresolved share next to the result.
+
+ARM B resolved honestly on 100.0% of trades (0 had no session with BOTH legs quoted inside 21 DTE)
+⚠ unresolved B trades are concentrated in WINNERS (legs decay to a zero bid, which the cache drops)
+
+================================================================================================
+PRIMARY — ARM B (exit at 21 DTE) minus ARM A (hold to expiry), same trades, paired
+================================================================================================
+  n 14,367   mean diff $-0.52/strangle   month-clustered t -2.42   halves -0.63 / -0.40
+  ARM A  mean $+0.23  ROC -37.8%  win 73.9%  sd $17.09  worst $-617
+  ARM B  mean $-0.29  ROC -79.7%  win 63.8%  sd $9.33  worst $-291
+
+  PRE-REGISTERED PASS: NO
+
+  ⚠ convention sensitivity — does the answer depend on how unresolved B trades are treated?
+     drop unresolved (used above): -0.52   |   default them to the expiry outcome: -0.52
+     tail: ARM A worst 1% $-46 vs ARM B worst 1% $-23
+
+wrote data/studies/exit_21dte_2026-09-23_fixed.csv
