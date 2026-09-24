@@ -1,0 +1,101 @@
+# Strategy localisation [WL-2b] -- 26 strategies with >= 24 months (2010-03-01 -> 2026-09-01)
+OPT TMF Bear Call Spread              27
+OPT TLT Bear Call Spread              30
+OPT BJ Bull Put Spread                45
+OPT ASHR Bear Call Spread             48
+OPT QQQ bull put Bullish_LowIV        49
+EQ earnings drift good+muted          57
+OPT SQQQ Bear Call Spread             58
+OPT USO Bull Put Spread               61
+EQ boring stock violent move          64
+OPT ASHR Bull Put Spread              69
+EQ VCP damped sine                    75
+EQ precision-tier breakout            79
+EQ bouncy ball (short)                80
+OPT GLD Bull Put Spread               80
+EQ Kell wedge pop                     81
+EQ DR-EP catalyst+retrace             84
+EQ in-play down mover (short)         84
+EQ in-play up mover                   84
+EQ counter-trend long                 84
+EQ all breakouts                      84
+EQ reclaim                            84
+OPT UVXY combined                     88
+OPT XOP Bull Put Spread               89
+OPT ETF 45-DTE put-spread roster      92
+OPT ETF 7-DTE long straddle           95
+OPT SPY 1-day iron fly (all days)    184
+
+## 1. PRIMARY: localisation persistence (trailing t-8..t-3 vs month t, strategy-demeaned, pooled Spearman)
+rho -0.0111 | two-sided permutation p 0.7701 | null rho p2.5/p97.5 -0.0662 / +0.0213
+
+per strategy (descriptive, no verdict of its own):
+                         strategy  months  paired    rho
+         OPT TLT Bear Call Spread      30      16 -0.271
+       EQ precision-tier breakout      79      74 -0.197
+           OPT BJ Bull Put Spread      45      36 -0.174
+         OPT TMF Bear Call Spread      27      21 -0.153
+ OPT ETF 45-DTE put-spread roster      92      87 -0.143
+              EQ in-play up mover      84      79 -0.142
+                 EQ all breakouts      84      79 -0.112
+        EQ DR-EP catalyst+retrace      84      79 -0.102
+      OPT ETF 7-DTE long straddle      95      90 -0.102
+          OPT XOP Bull Put Spread      89      84 -0.078
+               EQ VCP damped sine      75      69 -0.067
+        OPT ASHR Bear Call Spread      48      37 -0.054
+    EQ in-play down mover (short)      84      79 -0.043
+           EQ bouncy ball (short)      80      75 -0.025
+     EQ boring stock violent move      64      58 -0.000
+         OPT ASHR Bull Put Spread      69      60  0.014
+OPT SPY 1-day iron fly (all days)     184     179  0.015
+                       EQ reclaim      84      79  0.027
+        OPT SQQQ Bear Call Spread      58      54  0.030
+            EQ counter-trend long      84      79  0.042
+          OPT USO Bull Put Spread      61      51  0.080
+   OPT QQQ bull put Bullish_LowIV      49      32  0.091
+                OPT UVXY combined      88      83  0.125
+          OPT GLD Bull Put Spread      80      66  0.208
+                EQ Kell wedge pop      81      77  0.225
+     EQ earnings drift good+muted      57      50  0.387
+
+## 2. Rotation: top 3 by trailing score vs equal weight (strategy-std units)
+in-sample 2021-2023    months  36 | mean diff -0.083 sd-units | t -0.66 | top-3 beat EW in 53% of months
+HELD-OUT 2024+         months  33 | mean diff +0.180 sd-units | t +2.02 | top-3 beat EW in 70% of months
+held-out p vs random-3 null: 0.0225
+
+## 3. Regime sweep: VIX tercile x SPY vs 200d SMA (state at prior month end)
+VIXlo|SPY>200     93
+VIXmid|SPY>200    47
+VIXhi|SPY<200     23
+VIXhi|SPY>200     20
+VIXmid|SPY<200     6
+
+max |t| over 99 strategy x cell tests: 3.53 | permutation p_max 0.3643 (null max|t| p50 3.23, p99 5.92)
+
+top 20 cells by |t|:
+                         strategy           cell  n  cell_z  rest_z      t
+    EQ in-play down mover (short)  VIXlo|SPY>200 19   0.529  -0.154  3.526
+    EQ in-play down mover (short)  VIXhi|SPY<200 15  -0.813   0.177 -2.627
+          OPT GLD Bull Put Spread  VIXlo|SPY>200 24   0.291  -0.125  2.117
+          OPT GLD Bull Put Spread VIXmid|SPY>200 33  -0.287   0.202 -2.037
+     EQ boring stock violent move  VIXhi|SPY>200 10  -0.483   0.089 -2.033
+     EQ boring stock violent move  VIXhi|SPY<200 10   0.685  -0.127  2.029
+     EQ boring stock violent move  VIXlo|SPY>200 16  -0.433   0.144 -1.992
+     EQ earnings drift good+muted  VIXhi|SPY>200 10  -0.482   0.102 -1.778
+OPT SPY 1-day iron fly (all days)  VIXhi|SPY<200 21  -0.268   0.004 -1.771
+          OPT XOP Bull Put Spread  VIXlo|SPY>200 22  -0.341   0.112 -1.633
+                EQ Kell wedge pop  VIXhi|SPY>200 17  -0.256   0.068 -1.417
+      OPT ETF 7-DTE long straddle VIXmid|SPY>200 36   0.157  -0.096  1.272
+   OPT QQQ bull put Bullish_LowIV VIXmid|SPY>200 23   0.188  -0.166  1.262
+         OPT ASHR Bull Put Spread  VIXhi|SPY<200 12  -0.263   0.055 -1.249
+            EQ counter-trend long  VIXhi|SPY>200 17  -0.313   0.079 -1.249
+          OPT XOP Bull Put Spread VIXmid|SPY>200 32   0.155  -0.087  1.177
+     EQ boring stock violent move VIXmid|SPY>200 27   0.162  -0.118  1.155
+        OPT ASHR Bear Call Spread  VIXlo|SPY>200 12   0.340  -0.113  1.149
+           OPT BJ Bull Put Spread  VIXlo|SPY>200 11   0.424  -0.137  1.128
+          OPT GLD Bull Put Spread  VIXhi|SPY<200  7   0.275  -0.026  1.081
+
+cells clearing the family-wise |t| threshold 6.30 (p < 0.003): 0
+Empty DataFrame
+Columns: [strategy, cell, n, cell_z, rest_z, t]
+Index: []
