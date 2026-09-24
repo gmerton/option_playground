@@ -1,0 +1,402 @@
+[00:00:00] We received a query or a bunch of
+[00:00:02] queries about which strategy to find or
+[00:00:05] undefined yields more premium per buying
+[00:00:07] power dollar
+[00:00:09] around the 5% moves. Let that be the
+[00:00:13] threshold for this. To answer, we
+[00:00:16] explored the potential of iron condors
+[00:00:19] to generate premium per per buying power
+[00:00:22] dollar, which is going to be high. You
+[00:00:24] know that. Why strangles outperform on
+[00:00:27] P&amp;L despite their higher capital needs,
+[00:00:29] the specific market conditions where
+[00:00:31] each strategy excels, and how to combine
+[00:00:33] both for an optimized trading strategy.
+[00:00:37] This a heavy arse piece. Lots in here.
+[00:00:41] Very cool.
+[00:00:42] Whether you manage a small account or a
+[00:00:44] large portfolio, this data offers
+[00:00:46] valuable insights into capital
+[00:00:48] deployment for option trades. Like I
+[00:00:51] said, this is a PhD course wrapped into
+[00:00:54] about a 10-minute segment here.
+[00:00:56] All right.
+[00:00:57] Mr. Preston.
+[00:00:59] Helmet.
+[00:01:01] On. 10 years worth of data, 16 delta
+[00:01:03] strangles, and a 10 16 delta iron
+[00:01:06] condor. That means we sell the 16 delta
+[00:01:08] strike, we buy the 10 delta strike. So,
+[00:01:09] everything's short at the 16 delta
+[00:01:11] strike. The iron condor, we just buy the
+[00:01:13] 10s.
+[00:01:14] 45 days to expiration, managed at 21
+[00:01:16] days. Remember this Friday is 21 DT.
+[00:01:19] Consider thresholds down 5%, up 5%, and
+[00:01:23] examine the price move and yearly
+[00:01:24] performance. All that stuff at the
+[00:01:26] bottom of the page, win rate, premium to
+[00:01:28] buying power, max loss, everything.
+[00:01:30] Okay. You're going to have to take a
+[00:01:31] quick a good look on your screen to read
+[00:01:33] all this cuz it's a little heavy.
+[00:01:35] There's There's a lot of print, and
+[00:01:36] there's a lot of um uh new screen
+[00:01:40] graphics for you, okay? So, TP, the
+[00:01:43] consider the potential of strangles in
+[00:01:45] scenarios where a slight upward market
+[00:01:48] movement of 0 to 2% is anticipated. Iron
+[00:01:52] condors may be more suitable when
+[00:01:54] predicting market drops exceeding 5% to
+[00:01:57] potentially limit losses.
+[00:01:59] But it's important to be cautious with
+[00:02:01] strangles in strongly bearish markets
+[00:02:03] due to increased risk of substantial
+[00:02:06] losses.
+[00:02:07] So, what's what's interesting about this
+[00:02:10] slide is
+[00:02:12] the direction of the P&amp;L is the same.
+[00:02:15] When the strangles lose, the iron
+[00:02:16] condors lose and vice versa. It's just
+[00:02:19] that the P&amp;L of the iron condor is a
+[00:02:22] little less big on the profits and and
+[00:02:25] on the losses. In other words, it has
+[00:02:27] smaller profits and losses.
+[00:02:30] It That's not surprising because they're
+[00:02:32] they're basically the same trade. When I
+[00:02:34] When I tell people that iron condors and
+[00:02:36] strangles are the same trade, they say,
+[00:02:39] "Well, why do you call them different
+[00:02:41] things? Obviously, they're different."
+[00:02:42] No, you're betting that the index, the
+[00:02:44] stock isn't going to move outside a
+[00:02:46] certain range. The only reason you're
+[00:02:49] using an iron condor, that you're buying
+[00:02:51] those wings to turn the strangle into an
+[00:02:53] iron condor, is for capital. And when
+[00:02:56] you do that, you also
+[00:02:59] define your define your risk, so you
+[00:03:01] have lower losses when the market's down
+[00:03:03] plus 5%, but you also make significantly
+[00:03:07] less money than the short strangles.
+[00:03:10] Yeah, I mean, this scrap's pretty easy
+[00:03:12] to read. The The you know, inside a
+[00:03:14] reasonable range of, you know, not down
+[00:03:17] that much, unchanged, the strangles do
+[00:03:20] great. And when you get outside that
+[00:03:21] range, you know, the iron condors, you
+[00:03:24] know, outperform because they protect
+[00:03:26] you against unlimited loss.
+[00:03:28] So, for win rates,
+[00:03:29] target range-bound markets between 0 and
+[00:03:33] 2% movement for the highest probability
+[00:03:36] of success,
+[00:03:37] consider early exit strategies when the
+[00:03:39] SPY moves greater than 2% in either
+[00:03:42] direction, and implement a risk
+[00:03:44] management strategy mechanism, um, and
+[00:03:47] position sizing rules for great moves
+[00:03:49] greater than 5%.
+[00:03:51] Now, easier said than done because we
+[00:03:53] all have kind of crazy rules for 5%
+[00:03:55] moves, but way easier said than done.
+[00:03:58] It's just,
+[00:03:59] you know, it's it's a it's a good way to
+[00:04:02] look at where this how big the sweet
+[00:04:04] spot really is in trading world. That's
+[00:04:07] it.
+[00:04:08] So, what am I looking at here?
+[00:04:10] The purple line is strangles, right? In
+[00:04:13] other words, the probability of making
+[00:04:15] money on a series of strangle trades.
+[00:04:18] You know, you did the the study did
+[00:04:20] hundreds of these tests, right? So,
+[00:04:22] hundreds of these strangles, what
+[00:04:24] percentage of them made money versus
+[00:04:26] what percent iron condors made money.
+[00:04:28] Strangles always have a higher profit
+[00:04:33] um rate than iron condors. That's partly
+[00:04:37] because as you
+[00:04:40] short strangles make money faster
+[00:04:44] than an iron condor. An iron condor
+[00:04:46] typically, you have to wait longer for
+[00:04:48] the because you have lower theta,
+[00:04:51] um the the
+[00:04:52] probability of profit is small a little
+[00:04:54] bit smaller. Yes, you have a higher
+[00:04:56] return on capital, but you have to hold
+[00:04:58] that position a little bit longer. You
+[00:05:00] can take strangles off when they're when
+[00:05:03] they hit a certain profit target. I
+[00:05:05] think that's what's giving them the
+[00:05:06] consistently higher win rates.
+[00:05:09] Yeah, it's clean as can be. Okay, so now
+[00:05:12] here we get into a little bit a little
+[00:05:14] bit more we we get to go back and
+[00:05:16] basically look at 10 years worth of data
+[00:05:18] here.
+[00:05:19] Okay? And we're looking at 10 years
+[00:05:20] worth of strangles versus 10 years worth
+[00:05:23] of iron condors. And you can see here,
+[00:05:26] you know, in 2020 when the market
+[00:05:28] crapped out because of the
+[00:05:30] pandemic, you know, the strangles were
+[00:05:32] challenged. But when you look at 10
+[00:05:34] years return, this is why sometimes we
+[00:05:36] opt for, you know,
+[00:05:38] we we opt for the riskier strategy
+[00:05:42] because over time we get paid the most
+[00:05:44] amount of money.
+[00:05:46] During periods of high market
+[00:05:47] uncertainty, such as 2018 and 20,
+[00:05:50] it's beneficial to reduce your strangle
+[00:05:52] position sizes. Conversely, during
+[00:05:55] recovery economic recovery periods like
+[00:05:57] 2021 to 2023,
+[00:06:00] um
+[00:06:01] you might
+[00:06:03] you want to increase your allocation to
+[00:06:04] strangles. And iron condors were more
+[00:06:07] consistent year after year.
+[00:06:08] I I mean, that's just
+[00:06:10] I don't know, common sense.
+[00:06:11] It's obvious. The
+[00:06:13] The The point I want to emphasize to to
+[00:06:15] people is that
+[00:06:17] trading is a job. In other words, it's
+[00:06:20] it's something you will always do.
+[00:06:22] So, I predict that I will be trading 20
+[00:06:26] years from now. As long as I can raise
+[00:06:28] my my hand up to the
+[00:06:31] button to hit a bid, I will be trading.
+[00:06:35] What you're seeing is the cumulative P&amp;L
+[00:06:38] of the short strangles offsets the loss
+[00:06:42] in in 2020.
+[00:06:43] That's what that tells me. If I can just
+[00:06:45] con- consistently do these trades, as
+[00:06:49] long as I have the capital to do them,
+[00:06:52] the the the bad years, the bad quarters,
+[00:06:54] the bad months, I can work through
+[00:06:56] those. As long as I have a long This is
+[00:07:00] a complete inversion of the whole
+[00:07:03] long-term strategy approach. I you know,
+[00:07:05] I'm going to buy a mutual fund and hold
+[00:07:06] it for 50 years.
+[00:07:08] That that's not it.
+[00:07:10] This is I'm going to employ short
+[00:07:12] premium strategies year after year after
+[00:07:15] year, and that's how I'm going to get
+[00:07:17] paid.
+[00:07:18] Yeah, I mean, this is yeah. I mean, it's
+[00:07:20] it's
+[00:07:21] you would be very you'd be very happy to
+[00:07:24] walk away with this track record.
+[00:07:26] Okay, so in terms of yearly performance,
+[00:07:28] strangles generally
+[00:07:29] tend to achieve win rates that are 10 to
+[00:07:31] 15% higher across various market
+[00:07:33] conditions.
+[00:07:35] And I think that stays pretty consistent
+[00:07:36] there. It's important to keep an eye on
+[00:07:39] iron condors win rates, especially if
+[00:07:41] they fall below 60% as they as this may
+[00:07:44] indicate a need to reassess the
+[00:07:46] strategy.
+[00:07:48] And
+[00:07:50] we're just talking about positions here.
+[00:07:51] So, that that's fine.
+[00:07:53] But, um
+[00:07:53] Right.
+[00:07:54] Yeah, I mean, again, different ways to
+[00:07:56] present it, different views, and
+[00:08:01] both cases here look strong. Nothing
+[00:08:04] you know, I don't know anything you want
+[00:08:05] to comment here.
+[00:08:05] There's nothing so
+[00:08:06] Is it 10 year
+[00:08:07] There's nothing surprising here. What's
+[00:08:09] nice about this particular presentation,
+[00:08:11] though, is the graphics.
+[00:08:13] I don't you know, we we've
+[00:08:15] This is
+[00:08:17] Yes, did we know this? Of course, but
+[00:08:19] having having it displayed in nice clean
+[00:08:22] graphics like this, we never had that
+[00:08:23] before.
+[00:08:25] Yeah, you were using new graphics. We
+[00:08:27] wrote our own set of new graphics here,
+[00:08:29] so just have some fun with it. Here's
+[00:08:30] where we get down to. This is um little
+[00:08:33] bit different view. Iron condors
+[00:08:35] consistently can collect higher premium
+[00:08:37] relative to the buying power deployed.
+[00:08:40] So, this is premium to buying power
+[00:08:42] ratio. And of course, they're going to
+[00:08:45] use significantly less capital.
+[00:08:48] So, here's the question I have.
+[00:08:50] If I short a strangle and it cost $2,000
+[00:08:53] of buying power,
+[00:08:55] and I look at iron condors, and I go,
+[00:08:58] let's say, five points wide,
+[00:09:01] do I do one iron condor and use up, you
+[00:09:04] know, $500 of buying power, or do or do
+[00:09:06] I do four? Do I match up the buying
+[00:09:09] power requirements between
+[00:09:12] to raise the requirement on the iron
+[00:09:14] condors to what a short strangle would
+[00:09:16] be? What's your What are your thoughts
+[00:09:18] about increasing size like that?
+[00:09:22] I'm I'm
+[00:09:23] I I prefer I I prefer not to match up
+[00:09:26] the buying power. I prefer that the you
+[00:09:30] trade them independent because
+[00:09:34] I like the higher pop of the strangles,
+[00:09:36] so I don't increase the buying power of
+[00:09:37] the condor. So, for example, my
+[00:09:40] allocation in the condors might be 1%,
+[00:09:42] my allocation on the on the
+[00:09:45] naked strangles might be 3 and 1/2 or
+[00:09:47] 4%. So, it's okay. They don't have to
+[00:09:50] match.
+[00:09:53] It's a different expectation. You're
+[00:09:56] you're you're shooting for a different
+[00:09:57] expectation with iron condors than you
+[00:10:00] are with strangles. That's all it is.
+[00:10:02] Exactly. Exactly.
+[00:10:04] You don't want to mess up your
+[00:10:06] You don't want to mess up your your
+[00:10:08] mechanics for that. Let's go next slide.
+[00:10:13] In terms of yearly performance, iron
+[00:10:15] condors maintain 12 to 15% premium
+[00:10:19] premium bu- premium over buying power in
+[00:10:22] that ratio across
+[00:10:25] different market cycles.
+[00:10:26] Two to three times higher than
+[00:10:28] strangles. So, um
+[00:10:30] you know, but that's just because it's
+[00:10:32] defined risk so you don't So, you put up
+[00:10:34] a lot less capital.
+[00:10:36] The premium
+[00:10:36] point I got to I got to say is we we pay
+[00:10:41] our bills with dollars, not percents.
+[00:10:44] Okay?
+[00:10:45] That yes, you can have a higher return
+[00:10:48] on capital on a short iron condor.
+[00:10:50] Great, that's awesome. That is
+[00:10:52] absolutely true. And if if you want to
+[00:10:56] manage your capital using iron condors,
+[00:10:59] do it. You'll get a higher return on on
+[00:11:01] the buying power.
+[00:11:03] But you'll make more dollars
+[00:11:06] on short strangles.
+[00:11:08] If I have
+[00:11:10] big bills to pay I'm not saying this is
+[00:11:12] how you you necessarily do it or why you
+[00:11:14] do it, but if I have if I have to make
+[00:11:17] more money, short strangles are going to
+[00:11:19] outperform iron condors even though they
+[00:11:22] have a lower buying power to excuse me,
+[00:11:26] premium to buying power ratio, return on
+[00:11:28] capital. That's what it is. It's dollars
+[00:11:30] versus percents.
+[00:11:32] That's it. I mean, it's that simple.
+[00:11:34] It's It's dollars versus percents. Yep.
+[00:11:36] And uh this is just a good view You
+[00:11:38] know, listen, you you you define your
+[00:11:40] risk, you you use this capital. Our our
+[00:11:42] ratio, just so everybody knows, our
+[00:11:44] ratio's somewhere between 3:1 and 6:1.
+[00:11:48] That's the way we Like if I'm sending an
+[00:11:50] email to somebody, you know, I'll say
+[00:11:52] something to the effect of .5 to 2% for
+[00:11:56] defined risk of capital allocation.
+[00:11:58] That's against your buying power versus
+[00:12:01] versus 3 to 7% undefined risk. So,
+[00:12:03] defined risk .5 to 2, undefined risk .
+[00:12:08] uh 3.
+[00:12:10] 0 to 7. When you look at that ratio,
+[00:12:12] it's anywhere from 3x to 6x.
+[00:12:16] And that's it. That's what this is.
+[00:12:17] That's the difference. How much more you
+[00:12:19] have to use for strangles. So, strangles
+[00:12:21] can experience losses
+[00:12:24] if a greater than 50% of buying power in
+[00:12:26] extreme market moves. Iron condor's max
+[00:12:28] losses can remain under 65% of buying
+[00:12:31] power even in the worst scenarios.
+[00:12:33] The risk of larger loss can be
+[00:12:35] significantly higher for strangles in
+[00:12:37] strong bear markets. And of course, so
+[00:12:40] we looked at, you know, down 5% is way
+[00:12:43] uglier than up 5%. That's for sure.
+[00:12:45] So, here's what this is what this This
+[00:12:48] is a very interesting slide.
+[00:12:50] This is not the return on capital, but
+[00:12:53] your loss on capital.
+[00:12:56] Okay? How much money did I lose relative
+[00:12:59] to the premium I put up?
+[00:13:01] Because you put up a smaller amount of
+[00:13:04] capital on an iron condor,
+[00:13:07] a moderate loss on an iron condor gives
+[00:13:10] you a much higher You you you your loss
+[00:13:13] is basically the buying power.
+[00:13:15] Okay? The losses The loss is equal to
+[00:13:18] the max losses is the buying power.
+[00:13:21] Because a short strangle has a much
+[00:13:23] higher buying power requirement,
+[00:13:26] a big loss is a smaller percentage of
+[00:13:29] that margin requirement. That's why you
+[00:13:31] see these numbers on the down 5% up 5%
+[00:13:35] where the iron condors have losses that
+[00:13:38] are bigger
+[00:13:40] the ratio of the loss to the buying
+[00:13:42] power is bigger on iron condors in these
+[00:13:45] down 5% up 5% moves. That's what this
+[00:13:48] graphic is telling you.
+[00:13:51] There you go. Actually, it's bigger
+[00:13:53] across the board.
+[00:13:55] So, in 2018 and 2020, the risk-adjusted
+[00:13:58] performance was at its lowest with the
+[00:14:00] highest max
+[00:14:01] loss to buying power ratios. Iron
+[00:14:04] condors have maintained a notably more
+[00:14:06] consistent risk profile across different
+[00:14:08] market cycles. In recent years 21 to 25,
+[00:14:12] there's been improvement in risk
+[00:14:13] management reflected by lower maximum
+[00:14:16] loss ratios.
+[00:14:18] Just because we've started to close
+[00:14:19] everything at 21 DTE, which has really
+[00:14:23] even including five risk trades, which
+[00:14:25] has really changed uh
+[00:14:28] you know, the the
+[00:14:30] lower max loss ratio. We have fewer max
+[00:14:33] losses because we manage early, period.
+[00:14:38] Iron condors can be capital efficient
+[00:14:40] um but have a lower win rates compared
+[00:14:42] to strangles. However, strangles offer
+[00:14:44] higher returns with more risk,
+[00:14:47] especially in bear markets.
+[00:14:49] Conservatively, you can use iron condors
+[00:14:51] as your core
+[00:14:53] and add strangles when the markets are
+[00:14:55] range bound.
+[00:14:56] Strangles perform well in slightly
+[00:14:57] bullish markets and iron condors excel
+[00:15:00] in stable ones.
+[00:15:01] Strangles are more profitable, but
+[00:15:03] they're volatile. And both strangles
+[00:15:05] both strategies fall
+[00:15:07] falter in highly volatile markets.
+[00:15:10] Everything we do falters in periods of
+[00:15:14] explosive volatility.
+[00:15:15] That's just the nature of the business.
+[00:15:18] Right. That only happens about 10 or 10%
+[00:15:21] of the time. That's why we do it.
+[00:15:23] To be consistent applying strict sizing
+[00:15:25] and management early for
+[00:15:27] for and manage early for strangles, a
+[00:15:30] balanced strategy using iron condors,
+[00:15:32] their stability, and strangles potential
+[00:15:35] is supported by all the data we have
+[00:15:37] over the last 4 years. Everything.

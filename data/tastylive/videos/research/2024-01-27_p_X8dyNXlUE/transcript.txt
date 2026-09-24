@@ -1,0 +1,337 @@
+[00:00:00] [Music]
+[00:00:05] toas toas we are back my friend you know
+[00:00:08] what that means time for a little bit
+[00:00:09] more tasty live with this Market measure
+[00:00:12] sponsored by the CBOE snov sponsored by
+[00:00:15] the CB our friends
+[00:00:18] CB yes I'm even the scp's up three
+[00:00:20] NASDAQ up 11 I hope you bought the dip
+[00:00:22] Russell up 12 the Dow down 100 don't buy
+[00:00:25] the dip
+[00:00:26] there I am
+[00:00:30] bu hold on one second can't keep a good
+[00:00:33] Nvidia down it's only down
+[00:00:36] $2.70 now can't keep a good Nvidia down
+[00:00:40] it's trading almost $10 lower than what
+[00:00:42] it is now I know I got in two tranches
+[00:00:45] 30 minutes later I needed to get in
+[00:00:47] three tranches darn you Nvidia darn you
+[00:00:51] you just did an SPX trade we're going to
+[00:00:52] be talking about zero day options you
+[00:00:55] yeah I've done 50 trades already this
+[00:00:57] morning
+[00:00:58] so been I've been AC last days good
+[00:01:01] morning it's been active yesterday we
+[00:01:02] were active we did over 100 trades today
+[00:01:04] we did 50 trades um it's cool I like
+[00:01:07] that I like when I'm busy um I'm Tom
+[00:01:10] good positions again I'm Tom S he's Tony
+[00:01:12] Batista yeah have good positions when
+[00:01:14] they work yeah you had bad positions
+[00:01:16] yesterday good two days ago I bad
+[00:01:17] positions um it's 911 it's Tuesday
+[00:01:21] January 23rd and um happy birthday Mom
+[00:01:27] oh happy birthday wow one two three
+[00:01:30] happy birthday Joan there you go
+[00:01:35] 91 oh she going to shoot me for saying
+[00:01:37] that
+[00:01:39] 1991
+[00:01:42] 1991 yeah that's awesome man that's
+[00:01:44] phenomenal good for you good that's a
+[00:01:46] that's a that's a that's a good good
+[00:01:48] better good for you better for her
+[00:01:51] yeah yes that's awesome is she going
+[00:01:54] skiing with you too no no no she that
+[00:01:56] going skiing too okay that's what maybe
+[00:01:58] her skiing days are over officially over
+[00:02:01] I understand I understand hopefully um
+[00:02:05] but she's encouraging she's encouraging
+[00:02:07] me she's like yeah that's awesome she's
+[00:02:09] like you'll be fine yeah cuz she's got
+[00:02:11] other siblings other children don't
+[00:02:13] remember my mom ever
+[00:02:15] skiing my mom never skied I don't
+[00:02:18] remember my mom ski she says she did but
+[00:02:21] um closest my mom got to was going down
+[00:02:23] at the B at Prospect Park a skiing uh
+[00:02:27] yeah the closest my mom got to Colorado
+[00:02:29] too
+[00:02:34] Market measure sponsored by the CBOE did
+[00:02:36] I just do here I mess something off uh
+[00:02:39] bu
+[00:02:43] bum now let me see being directional in
+[00:02:46] zero days oo being directional in zero
+[00:02:51] days what does that mean so anyway I did
+[00:02:54] a zero day trade just so you know I'll
+[00:02:56] tell people cuz I promised somebody that
+[00:02:58] I would tell them what we did sold the
+[00:03:00] straddle 4850 uh in the zero days and
+[00:03:03] you bought the wings we like to go at
+[00:03:06] the expected move which would be 120
+[00:03:08] points but there were some uh issues
+[00:03:11] with some of the strikes they went to to
+[00:03:13] $50 and $100 over a certain price so you
+[00:03:16] were only able to buy the 4760 and the
+[00:03:20] 4950 as the wings so you did the whole
+[00:03:23] pack into a straddle I did the 4850
+[00:03:27] 4860 close some I just in case you know
+[00:03:32] sure yeah both options would probably
+[00:03:34] have pretty close to a 50 Delta yeah
+[00:03:36] we'll see um being directional in zeros
+[00:03:40] let's take a look pretty interesting
+[00:03:42] piece
+[00:03:44] here semipassive investment means
+[00:03:46] picking up assets and making directional
+[00:03:48] assumptions on them strategic option
+[00:03:50] Traders on the other hand can place
+[00:03:51] traits that will profit based on a
+[00:03:53] market assumption one of the advantages
+[00:03:55] of trading short premium is the ability
+[00:03:56] to profit even when you're directionally
+[00:03:58] wrong as long as it's not too wrong so
+[00:04:01] let's see how this works when it comes
+[00:04:03] to zero
+[00:04:05] daysy doie let's do it this new going be
+[00:04:08] a lot like the 45 day time frame yeah
+[00:04:11] it's going to be a lot like 45 day time
+[00:04:13] frame using 10 months of intraday data
+[00:04:15] collected every 10 minutes we examine
+[00:04:16] the performance of people that write to
+[00:04:18] me that why' you every minute I'm like
+[00:04:20] cuz it's just too much data okay this is
+[00:04:23] this is fine you get the same results
+[00:04:25] but we can do we can we can process a
+[00:04:27] lot more these studies
+[00:04:30] take even with today's computing power
+[00:04:33] and Ai and everything else these studies
+[00:04:35] still take hours to
+[00:04:37] run We examined the performance of the
+[00:04:39] zero DT vertical spread sold if the
+[00:04:41] market open um and we closed if they
+[00:04:44] reached 25% of Max profit that's the
+[00:04:46] important thing we allowed them to
+[00:04:48] expire otherwise so at 25% of Max profit
+[00:04:51] we took our profits with the short
+[00:04:53] strikes either at the money or 10 20 and
+[00:04:55] $30 out of the money so we're selling
+[00:04:57] call spreads and put spreads mhm and the
+[00:05:00] long strikes
+[00:05:01] $30 further out of the money these are
+[00:05:03] wide spreads we're doing directionally
+[00:05:06] wide spreads we contrasted the overall
+[00:05:08] performance of those when the trade was
+[00:05:10] directionally right or wrong on that day
+[00:05:13] okay a short put vertical was deemed
+[00:05:16] directionally right if the X close on
+[00:05:17] that day was higher than its open that's
+[00:05:20] how that's the only way we can do it
+[00:05:21] okay to deem it directionally right okay
+[00:05:24] okay let's us let us take a
+[00:05:28] look so first thing we're to look at is
+[00:05:31] put spreads overall if you just sold put
+[00:05:33] spreads for the last 10 months and you
+[00:05:36] took profits at
+[00:05:37] 25% and you sold the at the money short
+[00:05:40] strike the now again we've had a huge
+[00:05:42] rally sure it's only a matter of how
+[00:05:44] much do you want to make here in
+[00:05:45] hindsight because high but it's not
+[00:05:48] rocket science sure but um there have
+[00:05:50] been some directly correct you get paid
+[00:05:52] yeah if you're directly correct if you
+[00:05:53] sold putot spreads every day for the
+[00:05:55] last 10 months your average p&amp;l per day
+[00:05:58] this just a one lot your your win rate
+[00:06:00] was in the mid90s cuz we sell a little
+[00:06:02] bit out of the money so that your win
+[00:06:04] rate was in the 95 range and your p&amp;l
+[00:06:06] was pretty damn strong MH for just
+[00:06:08] selling you know $30 wide put spreads um
+[00:06:11] let's go to the next slide and that's
+[00:06:13] with some losses in there because you
+[00:06:14] have a cabar put spreads when correct
+[00:06:17] that means you sell a put spread but the
+[00:06:19] market closed higher on the day so
+[00:06:21] obviously the win rate is going to be
+[00:06:22] 100% And the average p&amp;l is going to be
+[00:06:26] huge um and the SAR you never you never
+[00:06:29] lost cuz you're cor why you selling a
+[00:06:31] straddle or synthetic straddle you just
+[00:06:33] sell P spreads I mean they work all the
+[00:06:34] time if we go up it's yes right if we go
+[00:06:38] up for sure let's go to the next slide
+[00:06:43] so now put spreads went wrong okay
+[00:06:45] here's your thing there is a very
+[00:06:47] interesting takeaway from this slide
+[00:06:49] first of all your put spreads when
+[00:06:50] you're wrong the percent when you're
+[00:06:52] wrong see the percent of the win rates
+[00:06:54] still really high because when you're
+[00:06:56] wrong the market didn't close down that
+[00:06:57] much so when you're wrong it still
+[00:06:59] worked cuz we were in a bull market the
+[00:07:01] difference is your average p&amp;l uh you
+[00:07:03] didn't make any money you know of course
+[00:07:06] if you sold the at the money you lost
+[00:07:07] money the 10 $10 out of the money which
+[00:07:09] is generally where we're at when you go
+[00:07:11] to $20 out of the money on the Zero DTS
+[00:07:13] just so you know you're you're trading a
+[00:07:17] pretty cheap option I'm going to look
+[00:07:19] right now sure zero DT $20 out of the
+[00:07:21] money on the put spread like we're at 55
+[00:07:23] you sell 35 you're selling you're
+[00:07:24] selling a $155 put yeah yeah yeah so
+[00:07:28] you're not selling
+[00:07:30] that that's why the that's why the win
+[00:07:32] rate's still so high cuz you're far out
+[00:07:34] there sure sure sure you you got
+[00:07:37] a 20% chance of a touch yeah you're more
+[00:07:41] likely in this market you could probably
+[00:07:42] lose on the call side when wrong but
+[00:07:44] let's see so the put side you know you
+[00:07:46] were you were F you basically you were
+[00:07:49] fine basically selling puts has worked
+[00:07:51] in this bull market that's masters of
+[00:07:53] the obvious but sure let's go to the
+[00:07:55] next slide let's look at call spreads so
+[00:07:57] call spreads overall still did really
+[00:08:00] well except that you made a lot less
+[00:08:02] money in fact if you sold out- of the-
+[00:08:04] money call spreads cuz some of the
+[00:08:05] losers were pretty bad you actually lost
+[00:08:07] money so with a 94% win rate you
+[00:08:10] actually lost money selling far out of
+[00:08:11] the money far out of the money that's a
+[00:08:13] $30 out of the money call spread and
+[00:08:15] just to put that into context $30 out of
+[00:08:18] the money call spread you're only
+[00:08:20] selling a 55 or 60 Cent or a dollar call
+[00:08:23] something in that range 50 this is the
+[00:08:24] old eat like a bird poop like an
+[00:08:26] elephant when you when you're going this
+[00:08:27] selling like 50 cents or a dollar like
+[00:08:29] like for me today I sold a $6 call you
+[00:08:32] know cuz that's what I like to sell so
+[00:08:35] um uh the and the average p is negative
+[00:08:38] for those far out of the money options
+[00:08:39] because when you had losers they were
+[00:08:40] bad and on the winner side even though
+[00:08:42] you want even though you won high
+[00:08:45] percentage you didn't make that much
+[00:08:46] money so selling calls selling call
+[00:08:48] spreads didn't work out as well and
+[00:08:50] selling calls when a market goes to
+[00:08:51] all-time highs yeah it doesn't work out
+[00:08:53] well but this is why selling this
+[00:08:54] triangle also worked because everything
+[00:08:55] is pretty good here still M let's go to
+[00:08:58] the next one non-directional really is
+[00:09:00] what you're trying to say in this case
+[00:09:02] yes M um let's go to the next slide
+[00:09:05] perfect so when you're correct well of
+[00:09:08] course you're going to make money 100%
+[00:09:10] of the time and there's going to be no
+[00:09:10] cabar because you're never this is when
+[00:09:12] this is when you sell the call spread
+[00:09:13] the Mark goes down M your payouts are
+[00:09:15] huge MH across the board so if you're
+[00:09:19] bearish and you sell call spreads in the
+[00:09:21] zero DTS you got paid these are only
+[00:09:25] 25% of Max profit right you're not
+[00:09:28] taking it just you're just this is 25%
+[00:09:31] of Max
+[00:09:32] profit let's go to the next slide this
+[00:09:34] is call spreads when wrong and that
+[00:09:37] means you sold a call spread the market
+[00:09:38] went higher these numbers are ugly
+[00:09:41] across the board you still have a high
+[00:09:42] win percentage but you got slapped no
+[00:09:46] matter what you did and this is way
+[00:09:48] better than selling puts I mean way
+[00:09:50] worse than selling puts selling puts
+[00:09:52] worked out kind of no matter what but
+[00:09:54] selling calls absolutely did not
+[00:10:01] okay so can you go back one slide for
+[00:10:04] one second
+[00:10:06] Beth um I just want you to take a look
+[00:10:09] the cabar numbers at the bottom that's
+[00:10:10] your worst 5% of you know that's your
+[00:10:11] average of your 5% of your worst
+[00:10:13] occurrences those are way worse than the
+[00:10:16] put side and it's rare to see this
+[00:10:18] because usually the most of the big
+[00:10:19] losses are on the put side but when
+[00:10:21] you're tune Zero D DTS the difference
+[00:10:23] between zero DTS and 45 DTS is on 45 DTS
+[00:10:27] the risk is always the downside when
+[00:10:29] you're doing the the zeros the risk at
+[00:10:33] least the last 10 months has been to the
+[00:10:35] upside that's all I wanted to point out
+[00:10:37] here yeah when you look at the skew
+[00:10:38] there's really not too much skew in the
+[00:10:41] zero days right now maybe a strike no
+[00:10:44] yeah MH so let's go to the next one so
+[00:10:50] in many ways the zero DTE options are
+[00:10:55] just like longer dated options they're
+[00:10:58] just
+[00:11:00] faster okay makes sense yeah
+[00:11:04] and when
+[00:11:06] placing um out of the money directional
+[00:11:09] Define risk trades being directionally
+[00:11:12] right is important when trading close to
+[00:11:14] out the money but further out of the
+[00:11:16] money even being wrong can be profitable
+[00:11:19] now we also saw when being right can be
+[00:11:21] a loser MH that's the beauty of options
+[00:11:23] you can be wrong and make money you can
+[00:11:26] be right and lose money that's one of
+[00:11:27] the cool things that's not beautiful if
+[00:11:29] you're right and you lose money I know
+[00:11:30] but that's one of the cool things about
+[00:11:31] option
+[00:11:33] trading strategy so important over the
+[00:11:35] recent past being willing to take the
+[00:11:38] additional risk trading closer to the at
+[00:11:40] the money has been able to make up for
+[00:11:42] the large losses and come out more
+[00:11:44] profitable net in the end as a
+[00:11:46] self-directed investor picking a
+[00:11:48] direction is your prerogative just
+[00:11:50] remember to pick a distance out of the
+[00:11:51] money that fits your desired level of
+[00:11:55] risk this is why that straddle which is
+[00:11:57] the at the money and strangle which
+[00:11:59] which is out of the money swap that we
+[00:12:01] do statistically has a nice chance of
+[00:12:04] being profitable I mean that's why it's
+[00:12:05] worked out so well from a lot of the
+[00:12:07] research that we've done here well again
+[00:12:09] what I think is cool here and I'm just
+[00:12:11] going to do something here what I think
+[00:12:13] is really cool here you're just going to
+[00:12:14] do something here you're going to try to
+[00:12:15] close it I'm going try to show the trade
+[00:12:18] while we're doing TR yeah yeah quick 70
+[00:12:20] 80 90 bucks per contract one of the
+[00:12:23] things I want to point out here is that
+[00:12:25] when you're when you're trading the zero
+[00:12:27] DTS it's it's very important to
+[00:12:29] understand that the risk kind of goes
+[00:12:31] gets flipped upside down and there's a
+[00:12:33] little bit more risk on a very
+[00:12:35] short-term level basis to the upside in
+[00:12:36] the ZTS then there's downside especially
+[00:12:38] when we're at all-time highs it doesn't
+[00:12:40] mean the downside is free money at all
+[00:12:42] just based on the last 10 months that's
+[00:12:45] the way the numbers have played out very
+[00:12:47] good sir let's say a quick 90 second
+[00:12:49] break NASDAQ turned red again down by
+[00:12:52] about eight even the S smps are still up
+[00:12:55] about five Russell's up nine the leader
+[00:12:57] of the group uh to the upside and the
+[00:12:59] Dow down 62 we take a quick 90 second
+[00:13:02] break um what do we got coming up next
+[00:13:05] oh joy you're friend in mine Mr Scott sh
+[00:13:07] in tasty trade world headquarters

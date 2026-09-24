@@ -1,0 +1,338 @@
+[00:00:00] It's good. One bad trade.
+[00:00:02] &gt;&gt; Don't spoil the whole bunch of
+[00:00:05] girls. I think that was a Is that a Is
+[00:00:08] that a Michael Jackson or Jackson 5
+[00:00:10] song? We were playing a lot of that this
+[00:00:12] morning. Maybe that's why I'm thinking
+[00:00:13] about it.
+[00:00:15] No help from the
+[00:00:16] &gt;&gt; Oh, from the peanut gallery.
+[00:00:19] &gt;&gt; With big moves becoming the norm, will
+[00:00:21] they stay the norm?
+[00:00:24] &gt;&gt; Say it again. What What What
+[00:00:25] &gt;&gt; Big moves becoming the norm. Like you're
+[00:00:27] having these huge moves every day. Will
+[00:00:29] they stay like that?
+[00:00:30] &gt;&gt; Do you think so?
+[00:00:31] &gt;&gt; Yeah. At these at these numbers at these
+[00:00:34] lofty numbers which can go
+[00:00:36] &gt;&gt; they just split everything?
+[00:00:39] &gt;&gt; Split the Split the Dow, split the
+[00:00:41] Nasdaq, split the
+[00:00:43] &gt;&gt; Split the stocks. I mean, you need to
+[00:00:45] get The stocks have so much gamma.
+[00:00:47] &gt;&gt; Yeah.
+[00:00:48] &gt;&gt; Stocks move a lot. You can
+[00:00:51] You'll move them. You know, you can't
+[00:00:52] [snorts] move Netflix.
+[00:00:55] Can't move an Apple.
+[00:00:58] &gt;&gt; I don't know. They seem to move pretty
+[00:01:00] good when the when I have positions on
+[00:01:02] the Coke yesterday. They moved They
+[00:01:03] moved just fine. I think splits are a
+[00:01:05] thing of the past.
+[00:01:06] &gt;&gt; Really?
+[00:01:07] &gt;&gt; I do.
+[00:01:08] &gt;&gt; Yeah, you think people just want their
+[00:01:09] big number.
+[00:01:10] &gt;&gt; I agree.
+[00:01:12] &gt;&gt; Need the liquidity, though.
+[00:01:15] &gt;&gt; Anyway,
+[00:01:16] &gt;&gt; Mhm.
+[00:01:16] &gt;&gt; Some may ask, "Why not just sell further
+[00:01:18] out of the money premium where the
+[00:01:20] strikes almost never get tested?"
+[00:01:22] &gt;&gt; Okay. Okay.
+[00:01:23] &gt;&gt; Doesn't that sound amazing?
+[00:01:25] &gt;&gt; Why not sell the 95 pop?
+[00:01:28] Why not?
+[00:01:30] &gt;&gt; We're going to try and answer that.
+[00:01:33] &gt;&gt; So, we've gotten questions on this many
+[00:01:35] many times. Um looking at low delta
+[00:01:38] strategies and kind of asking the
+[00:01:41] question of like, "What am I missing
+[00:01:42] here? It's a 95% pop. Why not just do
+[00:01:45] this? Why would you sell the 30 delta?"
+[00:01:47] Um today we're going to look at how
+[00:01:49] strangles can actually have much more
+[00:01:50] risk than is seen on the surface. So,
+[00:01:52] we're talking about that tail risk um
+[00:01:54] and and looking at kind of quantifying
+[00:01:56] that for you here.
+[00:01:58] So, the study, it's going to be 20
+[00:02:01] uh 15 to present. So, you got uh 11
+[00:02:04] years ish of time frame there. Sold
+[00:02:06] separately and managed all at 21 days.
+[00:02:09] We're looking at 25 delta strangles, 20
+[00:02:11] delta, 16, and five deltas. We're going
+[00:02:13] to compare the average P&amp;L as a
+[00:02:15] percentage of the credit received. So,
+[00:02:18] keep in mind that this number as you get
+[00:02:21] into the lower deltas,
+[00:02:23] a higher percentage doesn't mean
+[00:02:25] better total profit.
+[00:02:27] &gt;&gt; Mhm. [clears throat]
+[00:02:28] &gt;&gt; Cuz the total profit is going to be
+[00:02:29] higher much higher on a 25 delta. It's
+[00:02:31] just the the the percentage of the
+[00:02:33] credit. So, you sell it at a dollar and
+[00:02:35] you and you buy it at 50 cents, it's 50%
+[00:02:38] credit. It's not the same as selling
+[00:02:40] something at $5 and buying it back at
+[00:02:42] 250. A lot more juice on that trade. Um
+[00:02:45] and then
+[00:02:46] uh
+[00:02:47] we're going to look at that cred- the
+[00:02:48] percentage of the credit received before
+[00:02:51] and after some outlier moves like 2020
+[00:02:54] and 2025 and then, you know, the one
+[00:02:56] that we just had here. And then we're
+[00:02:57] going to look at the single worst loss
+[00:02:59] as a multiple of the credit received. I
+[00:03:02] think this is
+[00:03:03] kind of the more important
+[00:03:05] &gt;&gt; piece to this whole thing.
+[00:03:07] &gt;&gt; Um cuz it tells you about some of that
+[00:03:09] the tail risk. It tells you how much how
+[00:03:11] much you have to do to get back,
+[00:03:13] you know,
+[00:03:14] when even.
+[00:03:16] &gt;&gt; Okay.
+[00:03:18] &gt;&gt; Uh so, before we look at the results,
+[00:03:20] the general problem with super low delta
+[00:03:23] strangles stems from the super low
+[00:03:24] credits you collect relative to the
+[00:03:27] outliers that you have the potential to
+[00:03:29] see and that sometimes do happen. So, um
+[00:03:32] you know, one outlier move for a five
+[00:03:33] delta strangle could take multiple years
+[00:03:36] to recover from uh and excuse the
+[00:03:38] average expectation of that strategy for
+[00:03:41] a long time. So, you have to keep in
+[00:03:42] mind that, you know, just looking at it
+[00:03:43] from a one I think it's hard to look at
+[00:03:45] this from a one contract perspective,
+[00:03:47] but when you're doing this many, many
+[00:03:49] times,
+[00:03:50] it starts to add up here. So,
+[00:03:52] um
+[00:03:53] with big outlier moves, the five delta
+[00:03:56] strangles performed without the the big
+[00:03:59] moves. Sorry. They performed
+[00:04:01] [clears throat]
+[00:04:02] the best keeping 31% of the credit since
+[00:04:05] the strikes are rarely tested. You have
+[00:04:07] to keep in mind, too, you're managing
+[00:04:09] this at 50%. So, these these the when
+[00:04:12] you're looking at non-outlier moves, so
+[00:04:15] basically the best of the best in all
+[00:04:18] cases, you're going to hit those 50%
+[00:04:20] marks a lot of the time and you're not
+[00:04:22] going to be tested on those spreads.
+[00:04:23] It's a higher percentage.
+[00:04:26] That said, it is not a higher total
+[00:04:29] value. Like you are making more in the
+[00:04:31] best case scenario on a 30 delta
+[00:04:33] strangle versus five delta strangle
+[00:04:36] all the time cuz you're looking at the
+[00:04:37] best case scenario, you'd want to sell
+[00:04:40] as much premium as possible.
+[00:04:41] &gt;&gt; Yeah. Yeah, agreed.
+[00:04:43] &gt;&gt; So, once you once you put the outliers
+[00:04:45] into the data, the 5% the five delta
+[00:04:48] drops
+[00:04:49] uh the most from 31.4% to an 18.2%
+[00:04:54] because of the small premium you're
+[00:04:55] getting. There's a lot of you're eating
+[00:04:57] like a bird
+[00:04:58] &gt;&gt; poop like an elephant kind of thing.
+[00:05:00] &gt;&gt; Thank you.
+[00:05:00] &gt;&gt; Yep. Yep. Yep.
+[00:05:02] &gt;&gt; Um
+[00:05:04] So, on a buying power basis, the
+[00:05:06] rankings flip. So, the 25 So, when you
+[00:05:09] when you incorporate buying power, which
+[00:05:11] you have to incorporate, you're getting
+[00:05:14] a lot more bang for your buck with the
+[00:05:16] 30 delta option. One When you're talking
+[00:05:18] about
+[00:05:19] uh weighting them to the same amount of
+[00:05:23] capital.
+[00:05:24] &gt;&gt; The 25 delta strangle returns 1.16%
+[00:05:28] of the buying power per trade um without
+[00:05:31] the the outliers, more than double the
+[00:05:33] five deltas um
+[00:05:35] uh that are at 0.49%. So, the wider
+[00:05:38] strangles collect enough premium to use
+[00:05:40] capital more efficiently. So, here, you
+[00:05:43] know, when you're looking at the this
+[00:05:44] data, the 25 delta strangle at from an
+[00:05:47] average P&amp;L as a percentage of the
+[00:05:49] buying power is going to be the highest
+[00:05:51] number. You're going to get the most
+[00:05:52] bang for your buck when you're selling
+[00:05:54] somewhere between a 20-delta
+[00:05:56] strangle. That's the spot. And that
+[00:05:58] number might not look like a lot, but
+[00:06:00] when you're looking at this on a
+[00:06:02] multiple, you know, how many times
+[00:06:03] you're doing this a year, if you
+[00:06:05] incorporate weeklies, you know, if
+[00:06:07] you're doing this every week in the
+[00:06:09] weeklies, you know, you could have 52 of
+[00:06:11] these, 50 of these. And this is they're
+[00:06:14] not all going to be winners, but you're
+[00:06:16] looking at the numbers, it starts to add
+[00:06:18] up. It's not just one every monthly
+[00:06:21] expiration. You can't think of it like
+[00:06:23] that. Cuz you're doing this multiple
+[00:06:24] underlyings, multiple trades. You might
+[00:06:26] have 10 of these sort of trades on.
+[00:06:28] &gt;&gt; Sure.
+[00:06:29] I
+[00:06:30] I and I I know I mean, I love what the
+[00:06:32] direction we're going in here and, you
+[00:06:34] know, staying small and keeping
+[00:06:35] everything in
+[00:06:37] it still sucks.
+[00:06:38] &gt;&gt; Yeah, I mean, it sucks.
+[00:06:40] &gt;&gt; There's no
+[00:06:41] There's no
+[00:06:42] doubt about it. I mean, it's This is
+[00:06:47] This is part of the thing I wish never
+[00:06:48] existed. You know what I mean? This way
+[00:06:50] it'd be a much easier game.
+[00:06:52] &gt;&gt; I
+[00:06:52] Yes, certainly.
+[00:06:55] &gt;&gt; [clears throat]
+[00:06:56] &gt;&gt; Uh so, when we look at the worst single
+[00:06:57] losses, um
+[00:06:59] it tells kind of the same story. The
+[00:07:01] five Delta strangle lost 44.2 times its
+[00:07:04] credit. So, we're using credit here, not
+[00:07:07] buying power, because it it's trying to
+[00:07:09] to kind of show you
+[00:07:12] how much it takes for you to get back to
+[00:07:15] even. If you're looking at the credit.
+[00:07:17] &gt;&gt; So, in that same sort of tail risk
+[00:07:19] situation, your 25-delta loses 13x the
+[00:07:23] credit. And that This doesn't
+[00:07:25] incorporate We're We're looking at this
+[00:07:27] binary. You're managing at 21 days.
+[00:07:29] You're eating loss. You're not rolling
+[00:07:32] the trade. You're not managing the
+[00:07:34] trade. You're not putting extra
+[00:07:35] contracts on. You're not, you know,
+[00:07:37] &gt;&gt; You're not being stupid. You're not
+[00:07:39] You're staying mechanical. just
+[00:07:40] &gt;&gt; This This is not This is just
+[00:07:43] &gt;&gt; Snapshots.
+[00:07:44] &gt;&gt; It's a snapshot of that one trade. This
+[00:07:46] doesn't incorporate the opportunities
+[00:07:48] that you take advantage of into that
+[00:07:50] downside move where you put on, you
+[00:07:52] know, more
+[00:07:54] &gt;&gt; Something that worked for you.
+[00:07:55] &gt;&gt; a put spread that's at
+[00:07:57] &gt;&gt; You want to buy a stock at 100, it's 90.
+[00:07:59] &gt;&gt; You buy the stock. You put a diagonal
+[00:08:01] spread on. You do a butterfly. Uh you
+[00:08:04] know, like there's a hundred other
+[00:08:05] things that you are doing other than the
+[00:08:07] this one trade. Like the This is not
+[00:08:10] This is just [clears throat]
+[00:08:11] the the tail risk scenario for one
+[00:08:14] position. And so when you're looking at
+[00:08:16] a 20 or 25 delta
+[00:08:19] position, it's a much more digestible
+[00:08:21] situation when you think about what
+[00:08:24] COVID was. You know, that was 5 years
+[00:08:26] ago. It was a a big move. You know, like
+[00:08:29] that's kind of your worst-case scenario.
+[00:08:31] But if you're over-leveraged and you're
+[00:08:33] doing a lot more five deltas versus, you
+[00:08:36] know, one or two of the 25 deltas, it's
+[00:08:38] going to start to to really add up and
+[00:08:40] that's really the key here.
+[00:08:43] Perfect.
+[00:08:44] &gt;&gt; So since the outlier on a five delta
+[00:08:46] strangle tends to be so much more severe
+[00:08:48] as a multiple of the credit compared to
+[00:08:50] the higher delta strangles, it becomes
+[00:08:52] nearly impossible to size up. So even
+[00:08:54] though you get a much smaller credit,
+[00:08:56] each dollar in credit you receive could
+[00:08:58] be exposed to way way more than twice
+[00:09:02] the outlier risk than each dollar of
+[00:09:04] credit on the larger, you know, the
+[00:09:06] higher delta strangle. What it's saying
+[00:09:07] is
+[00:09:08] rather than doing, you know, five or 10
+[00:09:10] contracts of the five delta, do two or
+[00:09:14] three contracts of the 25 delta, it's
+[00:09:16] going to ultimately, although it's
+[00:09:18] closer at the money, be a much less
+[00:09:21] risky trade
+[00:09:24] for you in the long run. Cuz you're
+[00:09:25] going to get these tail events.
+[00:09:27] &gt;&gt; Yes.
+[00:09:27] &gt;&gt; They're not They don't go away.
+[00:09:29] &gt;&gt; No, they don't go away.
+[00:09:30] &gt;&gt; It's always a part of markets. So
+[00:09:31] &gt;&gt; It's always a part of the markets.
+[00:09:34] &gt;&gt; So we kind of extrapolate that further
+[00:09:35] here in the takeaway. So, smaller delta
+[00:09:37] strangles carry a much higher pop, but
+[00:09:40] they're prone to more outlier risk as a
+[00:09:42] multiple of how much premium they carry.
+[00:09:44] Um and this is further extrapolated if
+[00:09:46] you're doing these in a multiple
+[00:09:49] in a bigger size than you would a more
+[00:09:51] risky at-the-money strangle.
+[00:09:53] So, currently a five delta strangle on
+[00:09:55] Amazon is trading for around $2 and a 25
+[00:09:58] delta strangle is trading at about $10.
+[00:10:00] So, a lot of people look at this and
+[00:10:01] say, "I'm going to do five of the the
+[00:10:04] five deltas to get that $10 in credit."
+[00:10:08] It's not the same. Five versus one at
+[00:10:11] the at the closer strike. And here's
+[00:10:13] here's the takeaway. If you wanted to
+[00:10:15] trade five of those to get the same
+[00:10:17] premium as the 25 delta and the and the
+[00:10:19] higher pop, you would actually be ca-
+[00:10:21] carrying way more than twice the total
+[00:10:24] outlier risk of that 25 delta strangle.
+[00:10:27] It would be like 10 or 15 times the risk
+[00:10:31] because of the added contracts. So, the
+[00:10:33] one the if Amazon were to go up or down
+[00:10:37] 30% on a one contract 25 delta strangle,
+[00:10:41] you might, you know, lose
+[00:10:43] 20x, let's just say, of the credit. It
+[00:10:46] the it's going to be less than that.
+[00:10:47] It's going to be like
+[00:10:48] 5x.
+[00:10:50] &gt;&gt; Whereas, your 5x times 5x on the five
+[00:10:55] delta cuz you have five contracts,
+[00:10:57] you're losing 5x if five times five, so
+[00:10:59] five to the fifth power.
+[00:11:01] &gt;&gt; Not to mention the more buying power you
+[00:11:03] use on entry, which then allows you to
+[00:11:05] That doesn't allow you to make the
+[00:11:06] trades that you were talking about a
+[00:11:07] moment ago from an opportunity
+[00:11:09] standpoint. It's a It's a It's a
+[00:11:11] horrible spiral lower.
+[00:11:14] &gt;&gt; Yes, everything across the board.
+[00:11:16] &gt;&gt; Besides the monetary loss.
+[00:11:18] &gt;&gt; Yes, the main takeaway here
+[00:11:20] is to don't don't size your trades based
+[00:11:22] on the probabilities.
+[00:11:24] Um think of the credit received and the
+[00:11:26] tail risk per unit of credit because one
+[00:11:28] bad trade can wipe out a lot of good
+[00:11:31] trades. So, lower delta is not safer
+[00:11:34] in in the sense of
+[00:11:37] the risk. The the adding risk to higher
+[00:11:40] pop trades is not the same as lesser
+[00:11:42] contracts in lower pop trades.

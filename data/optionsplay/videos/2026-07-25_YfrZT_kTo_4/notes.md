@@ -35,7 +35,7 @@ options are. Note the win rate FALLS as credit/width rises (79.6 → 75.7) while
 argument, and the reverse of how most retail sellers pick strikes.
 
 **ARM B — the coordinate check: same name, same date, only the wing moves** (0.25/0.20/0.15/0.10Δ long leg).
-Net ROC is NOT monotone in credit/width (+2.98 / +3.10 / +2.66 / −0.04), and the realised win rate tracks the
+Net ROC by long leg, narrowest to widest wing: 0.25Δ ($3) **−0.04** / 0.20Δ ($5) **+2.66** / 0.15Δ ($10) **+3.10** / 0.10Δ ($15) **+2.98** (⚠ corrected 2026-09-23: an earlier version paired these ROCs with the wings in reverse order; source `data/studies/premium_to_width_2026-09-22.csv`). So ROC is NOT monotone in credit/width: the narrowest wing is the one that fails, and wings past ~0.20Δ are flat, and the realised win rate tracks the
 break-even win rate within 0.5–3pp. **Dialling credit/width by changing your own width buys nothing** — which is the
 caveat his presentation misses: the ratio informs when it varies ACROSS names, not when you dial it yourself.
 

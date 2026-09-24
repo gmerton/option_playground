@@ -1,0 +1,349 @@
+[00:00:00] But yeah, trading bullish strangles,
+[00:00:04] it works. Done.
+[00:00:07] &gt;&gt; Simple, you know. Come on.
+[00:00:09] &gt;&gt; Um, no, all kidding aside, the this is
+[00:00:12] definitely interesting when you consider
+[00:00:14] the market that we're in,
+[00:00:15] &gt;&gt; the bullish market, the low VIX. What do
+[00:00:18] you do in a market like this? Maybe you
+[00:00:20] skew your strangles to the upside with
+[00:00:22] bullish uh delta versus neutral. Yes,
+[00:00:26] maybe not. Let's figure it out.
+[00:00:29] Stock markets keep moving higher despite
+[00:00:31] various global uncertainties. The
+[00:00:33] strength makes bullish option strategies
+[00:00:35] more appealing like selling naked puts
+[00:00:36] or covered calls which profit from
+[00:00:38] upward price movement. Uh yeah, if
+[00:00:41] you've been selling puts in pretty much
+[00:00:43] anything, you're doing just fine. Free
+[00:00:44] money unless it's UNH
+[00:00:47] &gt;&gt; or Chipotle.
+[00:00:48] &gt;&gt; There a couple there's a couple tails
+[00:00:49] here and there, but
+[00:00:50] &gt;&gt; yeah, but spy QQQ, you're golden.
+[00:00:53] &gt;&gt; Yeah,
+[00:00:53] &gt;&gt; golden.
+[00:00:54] &gt;&gt; Straight up and to the right.
+[00:00:56] &gt;&gt; Looked perfect.
+[00:00:57] &gt;&gt; Yeah. So, how do we optimize this or
+[00:00:59] potentially optimize this? We'll take a
+[00:01:01] look.
+[00:01:03] Uh, when examining premium income
+[00:01:05] potential, 30 delta puts typically
+[00:01:08] generate higher premiums compared to 16
+[00:01:10] delta strangles over extended periods.
+[00:01:13] And that makes sense. You're basically
+[00:01:16] removing risk on both sides. You're
+[00:01:18] shifting your risk to the downside.
+[00:01:19] You're replicating your premium in the
+[00:01:21] short call by moving your put higher.
+[00:01:23] &gt;&gt; So, instead of a 16 delta, you're moving
+[00:01:25] it up to a 30. And we talk about that
+[00:01:27] all the time like for earnings strangles
+[00:01:29] like just get rid of one side and move
+[00:01:31] the other side in. Get rid of that risk.
+[00:01:32] Give yourself the ability to make money
+[00:01:34] on delta
+[00:01:35] &gt;&gt; versus uh if all crush that might not
+[00:01:37] happen until earnings.
+[00:01:38] &gt;&gt; And it plays into put skew as well. So
+[00:01:41] you know selling the 30 delta put uh is
+[00:01:44] going to be meteor than the the combined
+[00:01:46] premium that you get from this the 16
+[00:01:48] delta strangle which is what you see
+[00:01:49] here the average premium of $3.80 80s
+[00:01:53] versus the $311 or $310 strangle. I do
+[00:01:57] want to preface this too because and you
+[00:02:00] have to take and one of the reasons why
+[00:02:02] we always talk about win rate with any
+[00:02:04] sort of really long back test and we're
+[00:02:06] looking two decades here 20 years a lot
+[00:02:09] of lot of data the relative amount of
+[00:02:12] premium is way different. So 10 15 years
+[00:02:16] ago the 16 delta strangle on spy which
+[00:02:20] was you know at a had a two handle
+[00:02:23] you know 200 was a lot lower than the
+[00:02:26] relative premium now. And so you know
+[00:02:28] the the premium amounts skew and the the
+[00:02:31] P&amp;L values skew a lot towards the here
+[00:02:34] and now because the size of the market
+[00:02:36] has just gotten so much bigger.
+[00:02:39] You have to keep that in mind.
+[00:02:40] &gt;&gt; Yep. Yep. Yep. Yep.
+[00:02:44] For those seeking upward participation
+[00:02:46] while maintaining downside hedging, a
+[00:02:49] bullish strangle with net positive delta
+[00:02:51] would be an interesting alternative. How
+[00:02:52] does this adjusted approach compare
+[00:02:54] against the traditional delta neutral
+[00:02:56] strangles uh that you can deploy in any
+[00:02:59] environment?
+[00:03:00] &gt;&gt; Let's take a look.
+[00:03:03] We looked at two different 45day spy
+[00:03:05] strangles over the past two decades. 16
+[00:03:07] delta strangles and 30 to 16 delta
+[00:03:11] strangles leaning bullish. So, shifting
+[00:03:13] that put up.
+[00:03:15] &gt;&gt; we close all positions at the 21day
+[00:03:16] mark.
+[00:03:18] &gt;&gt; Got to imagine the long delta helps you
+[00:03:20] a little bit here.
+[00:03:22] &gt;&gt; It does. Does uh bullish strangles had
+[00:03:26] better returns even though they were a
+[00:03:27] bit more volatile and could lose more
+[00:03:30] money on the downside. Of course,
+[00:03:31] because you're moving your strike
+[00:03:33] higher, you take on intrinsic value risk
+[00:03:35] sooner
+[00:03:36] &gt;&gt; than the $16 delta strangle. The put
+[00:03:39] side break evens closer. So market drops
+[00:03:42] had more impact. Return on capital was
+[00:03:44] better than neutral strangles simply
+[00:03:46] because if your put has more premium
+[00:03:49] there and you're not tested as much or
+[00:03:52] as frequently on the downside, you're
+[00:03:54] going to make more money with the
+[00:03:55] juicier shortput. Simple as that.
+[00:03:58] &gt;&gt; Yes.
+[00:03:59] &gt;&gt; Um
+[00:04:00] &gt;&gt; the success rates being just about the
+[00:04:02] same is is interesting, which would
+[00:04:04] which wouldn't be a shock. I mean,
+[00:04:07] you're getting you're getting paid more
+[00:04:10] on the six on the 30 delta put and the
+[00:04:14] 16 delta call. That's a meteor position.
+[00:04:16] So, you're going to have a much higher
+[00:04:18] return on capital, but you you know, you
+[00:04:20] can see your your
+[00:04:22] everything else is basically the same
+[00:04:24] here. There's been a a bullish skew,
+[00:04:28] but it's stayed relatively
+[00:04:31] rangebound between, you know, the
+[00:04:34] standard deviation.
+[00:04:35] &gt;&gt; Yeah. And it's not about where the short
+[00:04:37] call is, it's about where your shortput
+[00:04:38] is, which is why
+[00:04:40] &gt;&gt; your return on capital volatility is
+[00:04:42] lower with a neutral strangle. Your
+[00:04:44] largest loss is lower with the neutral
+[00:04:46] strangle.
+[00:04:47] &gt;&gt; Uh but you you would have made more if
+[00:04:50] you leaned a little bullish into a
+[00:04:51] market that is bullish.
+[00:04:53] &gt;&gt; Yes. Makes sense.
+[00:04:54] &gt;&gt; Not a shock. Yes.
+[00:04:57] &gt;&gt; Next slide. We compare the bullish
+[00:04:58] strangles to just selling 30 delta p
+[00:05:01] puts. The strangle made less money and
+[00:05:03] had lower win rate. The call side
+[00:05:05] reduced the profits naturally.
+[00:05:08] &gt;&gt; The strangle was less volatile and had
+[00:05:10] smaller maximum losses. It's a
+[00:05:11] compromise that gives us some upside
+[00:05:13] while controlling risk better than the
+[00:05:14] naked puts. So,
+[00:05:17] um, you know, I would still I'm still
+[00:05:22] leaning in the boat of you should always
+[00:05:25] analyze both sides of the trade, right?
+[00:05:27] &gt;&gt; Yeah.
+[00:05:28] &gt;&gt; You have if you have a short call on,
+[00:05:30] make sure it's worthwhile. Make sure the
+[00:05:32] premium's there. uh it can help you in
+[00:05:35] terms of risk management for sure. Um,
+[00:05:37] but in a lot of cases, if you want to
+[00:05:40] lean bullish, maybe you just go with a
+[00:05:41] short put or especially in earnings
+[00:05:44] cases, like SPY is different, but
+[00:05:46] especially in earnings cases, I think
+[00:05:48] this is a case to make for uh maybe
+[00:05:51] ditching one side, just leaning leaning
+[00:05:53] bullish or bearish if you wanted to.
+[00:05:55] &gt;&gt; But interesting to see the premium
+[00:05:59] is much lower with just the short put.
+[00:06:02] Uh success rate about the same, higher
+[00:06:04] success rate in a bullish market, of
+[00:06:06] course.
+[00:06:07] But uh definitely lower return on
+[00:06:09] capital volatility and your largest loss
+[00:06:11] is slightly lower with the strangle
+[00:06:12] because you have that short call pre.
+[00:06:14] &gt;&gt; Yeah, I mean we know obviously that the
+[00:06:17] market has gone up significantly and it
+[00:06:19] has certainly been a mostly upside move,
+[00:06:21] but we know from experience as well as
+[00:06:24] just customers that tweet in or or chat
+[00:06:29] in or email in, you know, it's it's easy
+[00:06:32] to sell the puts and have no problems
+[00:06:34] all the way up. And then when something
+[00:06:36] happens when there's a 1% down move or a
+[00:06:39] sustained down move, that's when
+[00:06:41] everybody gets a little freaked out and
+[00:06:43] and has some issues. And so, you know, I
+[00:06:47] know that there, you know, you're you're
+[00:06:48] hitting a higher profit with just one
+[00:06:51] side, but you can see selling both
+[00:06:54] sides, although you don't, you know,
+[00:06:56] have as high a return on capital, your
+[00:06:59] P&amp;L volatility is reduced, your m your
+[00:07:02] your biggest losses are reduced, which,
+[00:07:05] you know, when when seems like 90% of
+[00:07:08] the time the market is up, seems like
+[00:07:11] why would I ever have anything on the on
+[00:07:12] the upside? it does come into play in
+[00:07:15] terms of reducing your overall
+[00:07:17] volatility of returns in both directions
+[00:07:20] which over a long period of time is very
+[00:07:22] very helpful because you're going to go
+[00:07:24] through periods where the hits the
+[00:07:26] fan.
+[00:07:28] So
+[00:07:30] &gt;&gt; can't always just look at like the
+[00:07:32] highest upside. We get that question all
+[00:07:34] the time of like I'm bullish here.
+[00:07:36] What's the highest upside? And it's like
+[00:07:37] well the highest upside is going to have
+[00:07:39] lower probability. You need more of a
+[00:07:42] directional move. I mean, anytime you
+[00:07:44] have higher upside reward, it's going to
+[00:07:46] be a lower probability trade. And so,
+[00:07:48] you know, there's always that push and
+[00:07:50] pull.
+[00:07:50] &gt;&gt; Yeah. And like we've talked about as
+[00:07:52] well, the most important thing is
+[00:07:54] trading small and having a sustainable
+[00:07:56] strategy.
+[00:07:57] &gt;&gt; And both of these, regardless of which
+[00:07:59] one you choose, both of these are
+[00:08:00] sustainable strategies.
+[00:08:01] &gt;&gt; One's not better than the other.
+[00:08:06] &gt;&gt; It's different depending on the market
+[00:08:07] scenario that you're in.
+[00:08:09] &gt;&gt; But I think this also shows that you can
+[00:08:12] have a short put on. You can have a
+[00:08:13] neutral strangle. You can have a bullish
+[00:08:14] strangle. They're all going to be decent
+[00:08:16] trades over time as long as you are
+[00:08:19] trading small enough to where you can
+[00:08:20] maintain and withstand any variance.
+[00:08:23] &gt;&gt; Yes, when you look at the largest loss
+[00:08:24] numbers, you will see that.
+[00:08:26] &gt;&gt; Plus, of course, try to fade the Fed,
+[00:08:30] which is what we're going to talk about
+[00:08:31] in the next slide. So, to complete the
+[00:08:34] picture, we also looked at bearish
+[00:08:36] strangles for comparison. and we flipped
+[00:08:39] the deltas from bullish to bearish in
+[00:08:41] the same market environment.
+[00:08:44] Uh, and these ones didn't do so hot.
+[00:08:48] &gt;&gt; Mhm.
+[00:08:48] &gt;&gt; So, bearish strangles underperformed
+[00:08:50] both alternatives while showing the
+[00:08:52] lowest volatility among all three
+[00:08:53] approaches. The returns were below
+[00:08:55] expectations. The strategy appears
+[00:08:57] better suited for traders holding
+[00:08:58] bearish market assumptions.
+[00:09:00] Now, what's interesting is the success
+[00:09:03] rate is lower, of course, if you have a
+[00:09:05] 30 delta short call and a 60 16 delta
+[00:09:08] short put.
+[00:09:10] &gt;&gt; Return on capital volatility was the
+[00:09:12] lowest of these three.
+[00:09:15] &gt;&gt; And the largest loss was the lowest.
+[00:09:18] Now, why is that? Stair step up,
+[00:09:21] elevator down.
+[00:09:22] &gt;&gt; Yes. So your big your your losses are
+[00:09:26] are much smaller relative to the other
+[00:09:29] sets which means that your distribution
+[00:09:31] is going to be much tighter.
+[00:09:33] &gt;&gt; You know you're removing the tail or
+[00:09:35] some of the tail.
+[00:09:37] &gt;&gt; Uh you still made a little bit
+[00:09:40] annualized return on capital
+[00:09:43] &gt;&gt; um leaning short but I think it I think
+[00:09:46] it brings in the question of like what
+[00:09:48] is what is the objective of a strangle?
+[00:09:52] It's to have time pass volatility
+[00:09:55] collapse and have the market stay within
+[00:09:57] your range.
+[00:09:58] &gt;&gt; Where does that happen the most on a
+[00:10:01] frequency basis? In low IV environments
+[00:10:04] when the market's chopping around and
+[00:10:06] maybe we're drifting higher slowly. This
+[00:10:08] is why you're seeing better results with
+[00:10:09] the bullish strangle versus bearish
+[00:10:11] strangle. And even in a bearish strangle
+[00:10:12] environment, if the market is tanking, I
+[00:10:16] don't think the bearish strangle is what
+[00:10:17] you want to have on. You want to have on
+[00:10:19] &gt;&gt; diagonal spreads.
+[00:10:20] &gt;&gt; Diagonal spreads. the micro the
+[00:10:22] microstatic delta position.
+[00:10:25] &gt;&gt; So
+[00:10:26] &gt;&gt; this is any of the either of these
+[00:10:28] trades, even the the bullish strangle of
+[00:10:31] a 30 delta 16 delta call, that's a
+[00:10:34] neutral to bullish.
+[00:10:36] &gt;&gt; The other trade is a neutral to bearish.
+[00:10:38] That's why the probabilities are working
+[00:10:39] out to be positive, you know, to be in
+[00:10:43] line with what you would expect, but
+[00:10:45] they're good, you know, success rates.
+[00:10:48] But that's why they're they're good
+[00:10:50] success rates is because it's neutral.
+[00:10:51] It's not purely directional.
+[00:10:53] &gt;&gt; Yep.
+[00:10:54] &gt;&gt; One way totally
+[00:10:56] &gt;&gt; very nice takeaways last couple of
+[00:10:59] takeaways here. Bullish strangles have
+[00:11:02] positive delta exposure. So they perform
+[00:11:04] much better when markets go up
+[00:11:05] consistently. We get higher returns but
+[00:11:07] also accept more volatility compared to
+[00:11:09] neutral strangles. And the bullish
+[00:11:12] strangles sit strategically between
+[00:11:13] selling naked puts and neutral
+[00:11:15] strangles. If you think about it
+[00:11:17] conceptually, we get solid returns from
+[00:11:19] the put side while having much better
+[00:11:20] downside protection and less overall
+[00:11:22] volatility than naked puts alone.
+[00:11:26] Totally get it. Uh and yeah, I think
+[00:11:28] when the premium is there, it it makes
+[00:11:31] sense to have something on. Um I think
+[00:11:35] you have to take this and adjust it for
+[00:11:39] the environment you're in. Like in the
+[00:11:42] heat of the moment in April, was I
+[00:11:44] throwing on strangles and spy? No, I was
+[00:11:46] throwing out bullish trades only.
+[00:11:48] &gt;&gt; So, it's like you have to you have to
+[00:11:50] take this for what it is and realize,
+[00:11:52] okay, if there's a sharp selloff, do I
+[00:11:54] want to have upside risk if I believe
+[00:11:55] there's going to be a reversal? Maybe
+[00:11:57] not. Maybe that's when you go with the
+[00:11:58] short puts for a couple months. Now, the
+[00:12:00] VIX is in the teens. It's a much better
+[00:12:02] environment uh to have the neutral
+[00:12:05] strangles on or the bullish leaning
+[00:12:07] strangles on in my opinion because now
+[00:12:10] we're at highs. Uh I think it's going to
+[00:12:12] be harder for us to just continue to rip
+[00:12:14] higher. We might grind higher over time,
+[00:12:17] but a strangle is going to be uh
+[00:12:18] beneficial to that. If that's the case,
+[00:12:20] &gt;&gt; we're by the dippers though. As Tom,
+[00:12:22] &gt;&gt; we are uh
+[00:12:23] &gt;&gt; we just buy the dip. It's
+[00:12:24] &gt;&gt; we are millennial
+[00:12:25] &gt;&gt; silly millennial traders. They just they
+[00:12:28] just buy the dip.
+[00:12:30] Worst thing ever.
+[00:12:32] &gt;&gt; Good stuff. But
+[00:12:33] &gt;&gt; yeah, good one. That was great.
+[00:12:36] &gt;&gt; If you're not subscribed, subscribe
+[00:12:38] right here. And if you want to meet me
+[00:12:40] and the team in person at our next live
+[00:12:43] event, hit the link at the top of the
+[00:12:45] description.

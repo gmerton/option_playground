@@ -1,0 +1,248 @@
+[00:00:00] We're bucketing these into three. So,
+[00:00:02] we're looking at upward trending stocks
+[00:00:05] like an Nvidia. We'll say a downward
+[00:00:08] trending stock like Rivian. And then
+[00:00:10] we'll say XLRE, which is our real estate
+[00:00:14] ETF,
+[00:00:16] as our kind of channel trading. You
+[00:00:19] know, it's kind of in the middle of the
+[00:00:20] of the range.
+[00:00:22] So,
+[00:00:24] despite the recent growth growth in the
+[00:00:26] market, there remains a chance of price
+[00:00:27] correction or volatility. That's always
+[00:00:29] present. Traders who seek a neutral
+[00:00:31] position without a specific direction in
+[00:00:33] mind may be curious about the
+[00:00:34] probability for a stock to retrace to a
+[00:00:37] certain tight range or its original
+[00:00:40] price. It goes to kind of the question
+[00:00:41] of
+[00:00:42] that we're getting on the on confirm us
+[00:00:45] in sand is like are gaps filled?
+[00:00:48] &gt;&gt; Fills, yes. That's like kind of what
+[00:00:50] we're talking about.
+[00:00:51] &gt;&gt; about that.
+[00:00:51] &gt;&gt; Yeah, is there some sort of tradeability
+[00:00:54] to a retracement in price? I would say
+[00:00:57] there isn't.
+[00:00:59] But, there is in options because you're
+[00:01:01] not just trading options.
+[00:01:03] Mhm. To gain [clears throat] an
+[00:01:04] understanding of this, we conducted an
+[00:01:05] analysis of spy for each 45-day cycle
+[00:01:09] and record the probability of the
+[00:01:10] underlying price returning to its
+[00:01:12] initial price point on a daily basis.
+[00:01:15] And what you'll see here,
+[00:01:17] which is not a shock to anybody,
+[00:01:20] that as expected, the probability of a
+[00:01:24] stock returning to its original price
+[00:01:26] decreases quickly as the time passes.
+[00:01:30] if you have a, you know, $3 move today
+[00:01:33] in a stock,
+[00:01:34] it has a much higher probability of
+[00:01:36] being back at its price
+[00:01:38] tomorrow. Yeah.
+[00:01:39] &gt;&gt; 10 days from now or 20 days from now or
+[00:01:42] 50 days from now, there is no
+[00:01:44] significance to it being back at its
+[00:01:47] price. There's no like there there's no
+[00:01:49] quantifiable thing. Like it's obvious
+[00:01:51] that, you know, one day the stock goes
+[00:01:53] up, the next day the stock goes down,
+[00:01:54] and you're back at the same price.
+[00:01:56] That's fine. That's I can I can say
+[00:01:58] that. You can you can use that as
+[00:02:02] a reason to trade a stock price. Stock's
+[00:02:05] up today, you know, I'm betting it's
+[00:02:07] going to be down tomorrow. That there is
+[00:02:09] there
+[00:02:10] it's not better than a 50/50 shot is is
+[00:02:13] what the point I'm I'm trying to make
+[00:02:14] here. But, as time passes,
+[00:02:17] the reversion of price is inconclusive.
+[00:02:20] There's not a uh
+[00:02:22] uh there's nothing you can kind of glean
+[00:02:24] from this. Short term, sometimes you
+[00:02:26] have, you know, stock goes up 10, next
+[00:02:28] day it's down 10. And it goes nowhere.
+[00:02:30] That's that's more likely than the stock
+[00:02:33] going up $10 today and then over 10 days
+[00:02:36] going, you know, sideways and then back
+[00:02:38] down 10 days. That's $10. That's much
+[00:02:41] more unlikely.
+[00:02:42] Perfect. Agreed.
+[00:02:44] So, on average, prices revert back to
+[00:02:46] the original trading value twice within
+[00:02:48] a period of 45 days. And we're talking
+[00:02:50] about spy here. So, spy, essentially
+[00:02:53] what it's saying is that, you know,
+[00:02:54] within a 45-day window, you should if
+[00:02:57] you're just starting at point A, you
+[00:02:59] should expect to have point A, you know,
+[00:03:01] be touched once or twice throughout that
+[00:03:04] duration. And that's that just goes with
+[00:03:06] choppiness on a 40-day window.
+[00:03:09] However, the probability doubles if the
+[00:03:11] positions are managed at 21 days. So,
+[00:03:13] when you're rolling positions, you're
+[00:03:15] getting back to like a new mean. You're
+[00:03:18] you're re-centering that position. And
+[00:03:19] so, you're making it much more likely
+[00:03:22] when you're rolling that a position kind
+[00:03:24] of reverts back to where your range is.
+[00:03:26] It goes to the point of like if
+[00:03:28] something goes too far in one direction
+[00:03:30] and you roll at 21 days, you're putting
+[00:03:33] yourself in a better position for that
+[00:03:34] stock to come back to where you
+[00:03:37] originally put your trade on. Sure. And
+[00:03:39] I know you're talking about SPY. SPY
+[00:03:42] here, which is a lot 500 different
+[00:03:44] stocks, lot smaller moves. You go to an
+[00:03:46] AMD, it's had 10 gaps in the last 30
+[00:03:50] days. I mean, if you can consider a gap,
+[00:03:53] you know,
+[00:03:54] that space where it doesn't fill, it
+[00:03:57] hasn't filled any of those. So, I mean,
+[00:03:59] everything's subject to change. But, if
+[00:04:00] you're looking at an
+[00:04:01] ETF with 500 different stocks, yeah,
+[00:04:05] you're much more inclined to fill the
+[00:04:07] gap than anything else just because of
+[00:04:09] the probabilistic move.
+[00:04:10] &gt;&gt; And you have much more two-sided action.
+[00:04:13] Yes.
+[00:04:14] &gt;&gt; Like stocks are binary in that Yes.
+[00:04:16] they're momentum driven, there's news,
+[00:04:18] there's earnings, there's
+[00:04:21] CEO changes, there's product changes,
+[00:04:24] there's, you know, stock offerings,
+[00:04:26] there's all sorts of things that kind of
+[00:04:27] can move
+[00:04:29] stocks in a binary nature, whereas uh
+[00:04:31] something like an ETF like spy, you
+[00:04:33] expect to see much more range
+[00:04:36] uh bound price movement. Correct.
+[00:04:38] &gt;&gt; Which is what this kind of telling you.
+[00:04:40] Correct.
+[00:04:41] And that's why the volatility's
+[00:04:42] typically lower in an SPY than it would
+[00:04:44] be in an AMD or some other Nvidia or
+[00:04:46] whatever else you're looking at.
+[00:04:49] So, reverting to the exact initial price
+[00:04:51] point may seem too good to be true for
+[00:04:53] neutral traders. What about tight swing
+[00:04:56] ranges in between two strikes? So, when
+[00:04:58] we trade neutral strategies, you're
+[00:05:00] playing for this kind of choppy
+[00:05:02] sideways, you know, back and forth sort
+[00:05:04] of trade.
+[00:05:05] Based on our observations, the typical
+[00:05:08] difference between strike prices and the
+[00:05:10] underlying price for a 45-day one
+[00:05:12] standard deviation strangle is
+[00:05:14] approximately 4% on the upside to 12% on
+[00:05:18] the downside. So, this is
+[00:05:19] telling you that obviously there's put
+[00:05:21] skew. Your calls are going to be way
+[00:05:22] closer to at the money. So, what we're
+[00:05:24] going to examine is the likelihood of
+[00:05:26] the underlying price remaining within
+[00:05:28] one, two, or three percent of the stock
+[00:05:31] price at 21 days to expiration
+[00:05:35] on these positions. So, basically, what
+[00:05:36] is the probability of the price
+[00:05:38] remaining in between your two strikes
+[00:05:41] throughout? And you what would you guess
+[00:05:43] this to be?
+[00:05:44] So, you're doing a one standard
+[00:05:46] deviation strangle. What's the
+[00:05:48] probability that it and let's just call
+[00:05:50] it 4% on either side. What's the
+[00:05:52] probability that it stays within 3% on
+[00:05:54] either side? This should be 70 or more?
+[00:05:58] No, the one standard deviation is Oh,
+[00:06:01] six
+[00:06:02] Yeah, so that's what you said, one
+[00:06:03] standard deviation, isn't Yeah, yeah,
+[00:06:04] yeah. One standard deviation is going
+[00:06:05] &gt;&gt; So, I'm going a little bit higher than
+[00:06:06] the What's inside slightly.
+[00:06:09] Oh, what's inside slightly? Yeah, one
+[00:06:11] standard deviation.
+[00:06:13] Huh.
+[00:06:13] Then I would think that it's going to be
+[00:06:15] even higher than that, right? I mean, my
+[00:06:17] thinking is from the other side.
+[00:06:19] &gt;&gt; No, like the straddle.
+[00:06:20] Basically, what we're quantifying here
+[00:06:22] is that
+[00:06:23] what's the probability that the stock
+[00:06:26] stays in the straddle range?
+[00:06:29] 80% of the time? I mean, I don't know.
+[00:06:32] More? We're going to we're going to see
+[00:06:33] here. Okay, go ahead. You're you're
+[00:06:35] right there. You're right there.
+[00:06:37] &gt;&gt; Okay.
+[00:06:38] So, closing positions at 21 days has a
+[00:06:40] significantly higher chance of the stock
+[00:06:42] &gt;&gt; Okay, 68%. I mean, but I said 70. Yeah,
+[00:06:45] yeah. I mean, I was just
+[00:06:47] giving it a little bit more room. You're
+[00:06:50] [clears throat] you're perfect. I'm I
+[00:06:51] was I was going for the straddle, like
+[00:06:53] 50/50, like
+[00:06:54] &gt;&gt; Yeah. you know, like it it is exactly
+[00:06:56] what it is. So, the one standard
+[00:06:57] deviation, it ends up being 68%. The the
+[00:07:01] two I didn't think it would be on the
+[00:07:02] exact number. I thought that volatility
+[00:07:04] would be a little bit exaggerated.
+[00:07:06] That's why I went to 70. Yeah. percent.
+[00:07:09] You got it. Mhm.
+[00:07:10] Uh
+[00:07:11] &gt;&gt; I tried. So, the probabilities play out
+[00:07:13] here. The probability
+[00:07:15] uh increases though when you roll and
+[00:07:18] manage trades at 21 days because you're
+[00:07:20] you're re-centering that position,
+[00:07:22] you're moving that position further out
+[00:07:23] in time, giving yourself that extra time
+[00:07:26] as well on that trade.
+[00:07:28] And I remember somebody else who
+[00:07:30] He mad at me when I was off by 2%. Go
+[00:07:32] ahead.
+[00:07:33] You're really morphing into a some
+[00:07:36] a piece of work. Takeaways, go ahead.
+[00:07:38] No, no, I wasn't mad. I wasn't mad. I
+[00:07:41] was I was going for the straddle. I
+[00:07:43] wanted the straddle price.
+[00:07:44] &gt;&gt; Got you. 50. Got you.
+[00:07:46] Managing positions at 21 days has twice
+[00:07:49] the chance of a stock price returning to
+[00:07:52] its initial price point compared to
+[00:07:53] holding to expiration. What this tells
+[00:07:56] you is that adding time allows you to to
+[00:08:00] capture more of that two-sided price
+[00:08:03] movement in SPY specifically. Exiting a
+[00:08:06] position before expiration increases the
+[00:08:08] probability of the stock remaining
+[00:08:10] within a narrow range, which is
+[00:08:12] beneficial for premium sellers.
+[00:08:14] Boom. Boom.
+[00:08:16] Even the S&amp;P's down 38, Nasdaq down 280.
+[00:08:20] That's a 1% move. Everything else is
+[00:08:22] down half a percent. The Dow is the only
+[00:08:24] outlier up 114.
+[00:08:26] Volatility hasn't moved up 45 cents.
+[00:08:28] Bonds have sold off a little bit,
+[00:08:30] 113.10, down 12 ticks. I mean, they've
+[00:08:32] sold off a little bit from the last time
+[00:08:33] I quoted them is what I mean. Oil's
+[00:08:35] under 100, up $3.40.
+[00:08:38] Gold is down just about 100 at 45.80.
+[00:08:42] That's a 2% move. Silver down 3 and
+[00:08:44] 1/2%. Has not quoted itself a bit or
+[00:08:45] anything else like that.

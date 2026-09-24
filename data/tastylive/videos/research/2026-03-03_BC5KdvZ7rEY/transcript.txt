@@ -1,0 +1,250 @@
+[00:00:00] Let's uh let's go uh to a market measure
+[00:00:02] here sponsored by the CBO. What are the
+[00:00:05] success rates of the top sector ETFs? Uh
+[00:00:09] we're going to be looking at a couple
+[00:00:10] sector um ETFs and looking at strangles
+[00:00:13] in those. So, a little bit different
+[00:00:14] than what we typically look at.
+[00:00:16] &gt;&gt; Mhm.
+[00:00:17] Typically spy.
+[00:00:18] Um
+[00:00:20] And so, we've known that individual
+[00:00:21] stocks gener- generally have a
+[00:00:23] consistent success rate similar to
+[00:00:25] indices. So, you know, volatility is
+[00:00:27] volatility whether it's in spy or or
+[00:00:29] Apple or anything else. You know, you
+[00:00:31] you have relatively the same sort of um
+[00:00:33] expected win rates there. But
+[00:00:35] additionally, their success rates are
+[00:00:37] often higher than the theoretical
+[00:00:38] expectations. So, across the board,
+[00:00:40] volatility is overstated. So, when
+[00:00:42] volatility is high, it typically
+[00:00:45] contracts and that that that implied
+[00:00:47] volatility is typically overstated.
+[00:00:50] Today, we're going to examine the
+[00:00:51] success rates across different sectors.
+[00:00:53] And so,
+[00:00:55] um
+[00:00:56] the study is that we're going to analyze
+[00:00:58] strangle performance from the top five
+[00:01:00] holdings of the five most popular sector
+[00:01:03] ETFs. So, we're looking at XLE, XLK,
+[00:01:07] XLF, XLV, which is healthcare, and the
+[00:01:10] utilities, which is XLU.
+[00:01:12] And we
+[00:01:13] we tested the success rates
+[00:01:16] of selling 16 delta strangles with 45
+[00:01:19] days to go till expiration. We're also
+[00:01:21] going to look at 30 delta strangles with
+[00:01:23] 45 days to go till expiration. Um and
+[00:01:26] just see,
+[00:01:27] what's the best bang for your buck?
+[00:01:29] &gt;&gt; Sure.
+[00:01:30] Let's do it.
+[00:01:32] And so, first, these five sectors
+[00:01:34] exhibit low to intermediate positive
+[00:01:37] correlations. I mean, everything has
+[00:01:38] some sort of positive correlation. Like
+[00:01:40] even today on a day where the, you know,
+[00:01:42] oil's up 6% and e-minis are down, you
+[00:01:45] have like an XOM, which is down a a
+[00:01:46] handful. Just kind of goes to tell you
+[00:01:48] when volatility goes high,
+[00:01:51] you can you can kind of throw out the
+[00:01:53] correlations. Correlations Correlations
+[00:01:55] is a low volatility
+[00:01:58] environment situation. This this sort
+[00:02:00] of, you know, everything is kind of
+[00:02:01] highly correlated when volatility comes
+[00:02:04] But you can see across the board all
+[00:02:05] these sector ETFs
+[00:02:06] light to medium correlation. Very good.
+[00:02:11] Yeah, I mean
+[00:02:12] correlation subject to change. Yes, very
+[00:02:15] much.
+[00:02:17] So here are the top five largest
+[00:02:18] holdings in each ETF. Their average
+[00:02:20] correlation against each other is .29
+[00:02:23] which I consider to be very little if
+[00:02:26] not no correlation here.
+[00:02:29] In- including the low to intermediate
+[00:02:30] positive correlation, this makes them a
+[00:02:33] good basket of underlying stocks. So
+[00:02:36] we're talking about like, you know, the
+[00:02:37] first basket is going to be XOM, Nvidia,
+[00:02:39] BRKB,
+[00:02:41] UNH, NEE. And they're all .29%
+[00:02:45] or .29 correlation. So there's really
+[00:02:47] not a huge correlation across the board.
+[00:02:50] And we're going to do different baskets
+[00:02:51] here across
+[00:02:53] uh
+[00:02:55] from, you know, the the most the highest
+[00:02:56] weighting to the fifth highest
+[00:02:57] weighting.
+[00:03:01] And so that we we found that all the
+[00:03:03] ETFs and their top five stocks within
+[00:03:05] these ETFs achieved a success rate
+[00:03:07] higher than the theoretical 68%. This is
+[00:03:10] on a one standard deviation strangle and
+[00:03:12] that's goes to basically everything
+[00:03:14] we've ever done with volatility being
+[00:03:15] overstated relative
+[00:03:18] implied volatility overstated relative
+[00:03:20] to realized volatility.
+[00:03:22] Um and their results here were pretty
+[00:03:24] close to consistent. So you can see
+[00:03:26] across the board the ETFs, you know,
+[00:03:28] selling a $16 strangle, you expect there
+[00:03:30] to be a 68% probability of success. You
+[00:03:33] hit that mark if not more on all of
+[00:03:36] these. 72% in technology, 77 in energy,
+[00:03:39] etc. In the individual names, you can
+[00:03:42] see it gets a little bit more volatile
+[00:03:43] from from side to side here.
+[00:03:46] But, you know, you're basically in line
+[00:03:48] with the ETFs themselves. Most these
+[00:03:50] underlying, especially the top holdings
+[00:03:53] are reflected in those ETFs. So, it's
+[00:03:55] pretty pretty consistent across the
+[00:03:56] board.
+[00:03:59] Very good.
+[00:04:00] You looking at any of these ETFs before
+[00:04:02] we get this? I know you just did the
+[00:04:02] financials a little bit, but do you look
+[00:04:04] at any of the financial ETFs as a as a
+[00:04:06] play here?
+[00:04:08] As like a XLF or something like that?
+[00:04:10] &gt;&gt; Sure, we can get into some of those. And
+[00:04:12] maybe you It's only down a dollar, but
+[00:04:14] that doesn't tell the whole story. I
+[00:04:15] mean, it's down from around 56. Uh IV
+[00:04:17] rank is now 53. That's about as high as
+[00:04:19] it's been.
+[00:04:22] I think if you want to be more
+[00:04:23] conservative with short premium, you go
+[00:04:25] to those those trades. They They Goldman
+[00:04:27] Sachs position, you know, you do the
+[00:04:29] strangle there and you could see a
+[00:04:31] 50-point face ripper. You know, like
+[00:04:33] what I mean? Like I Like I I I would be
+[00:04:34] more comfortable with Or Or Or to the
+[00:04:37] downside, right? So, that So, you're
+[00:04:38] just mentioning something there.
+[00:04:40] &gt;&gt; for sure. So, another way of getting
+[00:04:42] bigger and smaller is when you go Like I
+[00:04:45] said, you know, maybe ramp up your
+[00:04:47] positions when volatility is high, the
+[00:04:48] way it is right now. Another way to ramp
+[00:04:50] up and get smaller would be to go into
+[00:04:53] an ETF as opposed to an individual stock
+[00:04:56] like a Goldman Sachs or anything else
+[00:04:57] like that, right? You go into the ETFs
+[00:04:59] makes it um a bigger strategy, more risk
+[00:05:03] in something that moves a little bit
+[00:05:05] less. So, you're kind of you know,
+[00:05:07] you're hedging your overall bet on on on
+[00:05:11] on the trade. Good.
+[00:05:13] &gt;&gt; [clears throat]
+[00:05:14] &gt;&gt; Volatility just at its highs again.
+[00:05:15] Tried to market tried to lift its head a
+[00:05:17] little bit. Every time it's been getting
+[00:05:18] slapped. Slapped.
+[00:05:20] Will wash out. A little bit? Yeah, it
+[00:05:23] sort of feels like Yeah. Uh 3% usually
+[00:05:25] does.
+[00:05:26] &gt;&gt; Yeah. For 30 diff For a 30 delta
+[00:05:28] strangle, uh we saw the similar pattern
+[00:05:31] here. So, all success rates were higher
+[00:05:32] than the expected 58%. So, when you're
+[00:05:35] selling the 30 delta, you have about a
+[00:05:36] 60% probability of success. Um And you
+[00:05:39] could see the ETFs, you know, that the
+[00:05:42] ETFs, the implied volatility, typically
+[00:05:44] overstated because if it was uh if it
+[00:05:46] was correctly stated so to speak. It's
+[00:05:48] always correct in the moment. There's no
+[00:05:50] you know that's just what the price that
+[00:05:52] is is what it is.
+[00:05:54] You would expect these numbers to be a
+[00:05:55] lot lower. They are much higher than
+[00:05:58] what implied volatility is saying. The
+[00:06:00] same thing can be said for the stocks
+[00:06:01] themselves. You know you're still
+[00:06:03] volatility is still overstated in both
+[00:06:05] ETFs and the individual names. That's
+[00:06:08] kind of what we're getting at here.
+[00:06:12] Almost a million E-mini S&amp;P's have
+[00:06:14] traded already by 9:30.
+[00:06:16] &gt;&gt; good sign for you? Is that good or bad?
+[00:06:20] I mean you expect it to be that way.
+[00:06:22] &gt;&gt; Yeah, of course. I don't think it's I
+[00:06:23] don't know if the size is obviously the
+[00:06:25] size is unusual for an hour into the the
+[00:06:28] trading day here. Usually we get that
+[00:06:30] kind of number you know the end of the
+[00:06:32] the trading day. So volume is obviously
+[00:06:34] high, but you would expect that across
+[00:06:35] the board.
+[00:06:36] The worst thing that I see right now for
+[00:06:39] the market is just the way it's been
+[00:06:41] stair-stepping down.
+[00:06:43] Like if you weren't
+[00:06:44] &gt;&gt; the big move. You want the flush.
+[00:06:46] &gt;&gt; 130-40 handles up, 25-30-40 handles
+[00:06:48] lower, up, down trading. Right now
+[00:06:52] [clears throat] you've just been met
+[00:06:53] with pressure, pressure, pressure. I
+[00:06:55] think that's the the worst thing for the
+[00:06:57] market at the moment.
+[00:07:00] Go ahead. I'm sorry to interrupt.
+[00:07:01] &gt;&gt; I'm I'm with you. It's not good. And I'm
+[00:07:03] wrong by 25 handles or so.
+[00:07:05] Yeah, we're okay.
+[00:07:07] I ain't no
+[00:07:08] &gt;&gt; not blaming you yet. I'm not coming for
+[00:07:09] the house yet.
+[00:07:11] Similar to our observations with the
+[00:07:13] technology stocks, the technology ETFs
+[00:07:16] yielded slightly lower success rates
+[00:07:17] than other sectors. You have a lot of
+[00:07:20] volatility in that sector specifically
+[00:07:22] over the last couple years. So
+[00:07:24] the last thing that we're going to look
+[00:07:25] at here is examining the relationship
+[00:07:27] between the success rate and the IV or
+[00:07:29] the premium level. So the premium
+[00:07:31] divided by the underlying price. This
+[00:07:33] tells you how much you're getting paid
+[00:07:34] for the risk put on in these trades.
+[00:07:38] So
+[00:07:40] we didn't find any strong relationship
+[00:07:42] between this success rate and the
+[00:07:43] underlying IV or the premium level. So,
+[00:07:46] the success rates for these ETFs are
+[00:07:48] fairly consistent. There's no like
+[00:07:50] There's nothing more that you have to do
+[00:07:52] than look at IV ranks tell you if
+[00:07:54] volatility's high, the actual implied
+[00:07:56] volatility, and then just the the the
+[00:07:58] price of the underlying. There's no like
+[00:08:00] special, okay, if it's, you know, the
+[00:08:02] the stock is $300, I want to see, you
+[00:08:05] know, $7 of premium. If it's this this
+[00:08:07] much There's There's nothing really
+[00:08:09] special there. You just look at IV.
+[00:08:11] Correct. Couple takeaways. Success rates
+[00:08:13] for ETFs across different sectors and
+[00:08:16] their main holdings are all higher than
+[00:08:18] the theoretical suggested rates. This
+[00:08:20] just tells you that implied volatility
+[00:08:22] is typically overstated to realized. The
+[00:08:24] success rates for these ETFs are
+[00:08:27] slightly higher than that of SPY, but
+[00:08:28] are consistent with low variance. That's
+[00:08:30] because these have higher volatility.
+[00:08:32] You go to a sector ETF, it's going to
+[00:08:34] generally have higher volatility than
+[00:08:35] the market itself.

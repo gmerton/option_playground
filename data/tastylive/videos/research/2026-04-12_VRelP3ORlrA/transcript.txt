@@ -1,0 +1,266 @@
+[00:00:00] Markets just crashed, time to sell
+[00:00:02] strangles. Question. Hmm, do
+[00:00:05] [clears throat] you think so?
+[00:00:07] Uh yeah, that's what I've been pointing
+[00:00:09] to. I said iron condors for those with
+[00:00:11] smaller accounts.
+[00:00:12] &gt;&gt; saying that the move we've had is a
+[00:00:14] crash. We're just No, no, no, no. But we
+[00:00:16] we had a
+[00:00:17] of the you know, like into a big down
+[00:00:20] move.
+[00:00:20] &gt;&gt; had a big move down. We've rallied back.
+[00:00:22] What do you do now? But this is more of
+[00:00:24] just a general look. Like big move down
+[00:00:26] is a time to to deploy some capital. So
+[00:00:29] &gt;&gt; Okay. When the market sells off, many
+[00:00:31] people may be hesitant to sell strangles
+[00:00:33] because of the risk of getting whipsawed
+[00:00:35] at the upside or the continuation of a
+[00:00:38] rapid down move. So even in the chat
+[00:00:40] today, like people are like, "I'm trying
+[00:00:42] to get some long delta to neutralize,
+[00:00:44] you know, my positions here, but I would
+[00:00:46] just like I'm not bullish." And you
+[00:00:48] know, a lot of market psychology comes
+[00:00:51] into play
+[00:00:53] um
+[00:00:54] in general in trading.
+[00:00:55] &gt;&gt; Yeah, yeah, yeah, yeah, for sure.
+[00:00:58] So, can we profit from market panics? Uh
+[00:01:01] we're going to explore the hypothesis
+[00:01:02] and see how we performed when we have
+[00:01:04] sell-offs of varying magnitudes. And so
+[00:01:07] we're going to be looking at strangles
+[00:01:09] after certain uh moves in the market. So
+[00:01:12] the study that we're doing is spy from
+[00:01:14] 2020 uh and we're we're starting after
+[00:01:18] the the big part of the COVID move. So
+[00:01:20] we're look we're trying to kind of
+[00:01:22] isolate not extreme moves, but like two
+[00:01:26] or three percent down moves, which are
+[00:01:28] big moves. They're not
+[00:01:30] crashes, so to speak. Um
+[00:01:33] and so uh we got a handful of years here
+[00:01:36] of data. We sold the 16s uh delta
+[00:01:39] strangle 45 days to expiration. And the
+[00:01:41] way these go, you might think that um
+[00:01:44] you might think that the study might
+[00:01:46] have not a lot of occurrences, but we do
+[00:01:48] these essentially every day or every
+[00:01:51] time we can hit a 45-day expiration. So
+[00:01:54] zero day or with uh SPY options, you you
+[00:01:58] get an a number of them every single
+[00:02:00] week. It's not just like using the
+[00:02:01] monthly expirations. There's not 10
+[00:02:03] occurrences or 12 occurrences each year.
+[00:02:05] There's like 200. You know, about 100
+[00:02:09] and something because you're doing these
+[00:02:11] at each increment so that you get a data
+[00:02:12] set, a bigger data set. It's same thing
+[00:02:15] with with any other study we do cuz we
+[00:02:17] can you don't you want more occurrences
+[00:02:19] to smooth out
+[00:02:21] how those those react.
+[00:02:23] Um and so we're going to manage these at
+[00:02:25] 21 days. Again, that management is going
+[00:02:27] to just depend on each single trade.
+[00:02:29] Compare the average P&amp;L, the premium,
+[00:02:31] the win rate, the ROI of the trades when
+[00:02:33] the trade was initiated on the on a day
+[00:02:36] where the market sold off. And we're
+[00:02:38] bucketing the bucketing these into four
+[00:02:40] categories. So we're doing any day, just
+[00:02:43] so just generally speaking. We're going
+[00:02:45] to talk about down days of um
+[00:02:48] up to 1%
+[00:02:50] down days of 2% and then down days of of
+[00:02:53] three or more percent there.
+[00:02:55] Um
+[00:02:56] So
+[00:02:57] you'll um you'll see how these how these
+[00:03:00] look. These are these are extreme moves
+[00:03:02] that you're looking at. Which which
+[00:03:04] we've had as a
+[00:03:05] &gt;&gt; Extreme moves, but not like limit crash,
+[00:03:08] you know, craziness like Trump tariff
+[00:03:10] overnight moves where you're getting 7,
+[00:03:12] 10, 15%.
+[00:03:15] So as the market sells off more
+[00:03:18] both profits and returns increase,
+[00:03:21] showing strong performance during larger
+[00:03:23] down moves. And so these are trades
+[00:03:25] where you're you're you're selling the
+[00:03:27] strangle into these certain moves. So
+[00:03:30] all the trades bucketed together in the
+[00:03:31] six year um $105
+[00:03:35] uh average P&amp;L from the entry to the
+[00:03:38] close.
+[00:03:39] As [clears throat] you get further down
+[00:03:41] the the vol the the move in terms of
+[00:03:44] volatility of the move, these get
+[00:03:46] bigger, right? So you're talking about
+[00:03:48] I'm from uh
+[00:03:50] any down day to down 2%, which in the
+[00:03:53] last six years has kind of been where
+[00:03:56] volatility has been projected, right? So
+[00:03:58] you've had a high volatility, you know,
+[00:04:01] the 1% move in either direction is
+[00:04:03] roughly as uh you know,
+[00:04:06] 16 to 18 VIX. And we've had much higher
+[00:04:08] than that. So it's been uh you know,
+[00:04:10] that's kind of inside that's at the
+[00:04:12] expected move. You could see all those
+[00:04:14] perform slightly better just by doing it
+[00:04:16] into a down move. Uh but you get even
+[00:04:20] better results
+[00:04:22] by deploying capital into those big down
+[00:04:24] moves. Those 3% down moves, that has
+[00:04:26] been
+[00:04:27] significantly better. Those occurrences
+[00:04:29] are much fewer are much more fewer and
+[00:04:32] far between, but it has been better. And
+[00:04:35] you can see that in the in the down 3%.
+[00:04:37] Your average P&amp;L
+[00:04:39] per those
+[00:04:41] entry points is more than double
+[00:04:44] when you just take the basket of
+[00:04:46] occurrences. And you can see that from a
+[00:04:47] return on capital sample you can see
+[00:04:49] other part of the coin.
+[00:04:51] Volatility is low lower.
+[00:04:54] Capital requirement is higher. So you're
+[00:04:56] getting paid less and using more
+[00:04:58] capital. When volatility when you have a
+[00:05:00] big move in in the market and volatility
+[00:05:02] expands, you're getting paid more and
+[00:05:04] putting up less capital. And so your
+[00:05:06] return on on capital actually increases
+[00:05:09] when volatility increases and you have
+[00:05:12] this fear in the market. So that even
+[00:05:14] further not only are you making more per
+[00:05:16] trade, but you're making more as a
+[00:05:18] percentage of the capital you're
+[00:05:20] outlaying for that trade. So it's
+[00:05:22] double. I mean, you could you could see
+[00:05:24] it here, 1% versus almost 3%. Yeah, 2
+[00:05:28] and 1/2% is a Numbers work in your
+[00:05:30] favor.
+[00:05:30] &gt;&gt; Yeah, that's a huge that's a huge swing.
+[00:05:33] That's a huge swing. Most definitely. So
+[00:05:35] when it's scary, you got to kind of lay
+[00:05:37] some risk out. Doesn't mean you watch
+[00:05:39] your size. Yeah, right. Yeah, you watch
+[00:05:41] your size. Yep.
+[00:05:43] So even win rates stay the same uh
+[00:05:47] or stay relatively stable even as
+[00:05:49] sell-offs get larger with only a modest
+[00:05:51] decline overall. So you know, obviously
+[00:05:54] when volatility expands and when you're
+[00:05:56] having big moves you're good you're
+[00:05:58] going to be susceptible to
+[00:06:01] bigger losing trades potential, right?
+[00:06:04] And you can see here your your win rate
+[00:06:07] goes down, but the average P&amp;L of those
+[00:06:10] trades goes up. So you you have more
+[00:06:13] risk, more reward, more opportunity on
+[00:06:15] those trades. You're your reward as a
+[00:06:18] relative to your risk is a lot higher.
+[00:06:20] So you know, you you only get you might
+[00:06:22] get five of these or 10 of these in this
+[00:06:24] data set. I don't know how many 3% moves
+[00:06:27] we've probably had a lot actually in the
+[00:06:28] last six years. It's probably more than
+[00:06:31] normal Yes. if you just took a six-year
+[00:06:34] snapshot last you know, 50 years.
+[00:06:37] Probably more.
+[00:06:40] But that said is your win rate does go
+[00:06:42] down, but the actual amount that you're
+[00:06:45] winning on your trades can be a lot
+[00:06:46] higher.
+[00:06:48] Good job. Well said.
+[00:06:50] So why do we see greater expected
+[00:06:51] profits from strangles when the market
+[00:06:53] sells off even though prices move uh
+[00:06:56] prices move the the price moves tend to
+[00:06:59] be large. So you the question is like
+[00:07:02] you're short vol into a vol spike, why
+[00:07:04] you making more money? And it's because
+[00:07:06] volatility
+[00:07:07] tracks. Yeah, over over time or possibly
+[00:07:10] faster than prices going to move in the
+[00:07:12] direction that you need. That's where it
+[00:07:14] really comes down to. Now, if you put it
+[00:07:16] on prior to volatility expansion, you
+[00:07:19] get you get the worst of both moves
+[00:07:21] though, right? You got the the the delta
+[00:07:23] move. You're going to get longer as it
+[00:07:25] goes down, you're going to get shorter
+[00:07:26] as it goes higher. And you got the
+[00:07:28] volatility expansion. It's not a very
+[00:07:30] good feeling. No. No, it is not.
+[00:07:33] The deeper sell-offs drive higher
+[00:07:35] premium collection and smaller relative
+[00:07:38] drawdowns, meaning increased volatility
+[00:07:39] not only pays more, but also has
+[00:07:41] cushions for premium sellers. So
+[00:07:44] when volatility expands, you're way
+[00:07:46] further out of the money relative to
+[00:07:47] when volatility is is low. And so you
+[00:07:50] can see here with the average premium
+[00:07:54] uh relative to the buying power of the
+[00:07:56] trade
+[00:07:58] on a big down move, you're getting
+[00:08:00] [clears throat] paid about 8% relative
+[00:08:02] to the buying power. Whereas with lesser
+[00:08:05] uh moves or just in general, it's
+[00:08:07] usually about the premium is
+[00:08:11] 5% relative to the buying power. So if
+[00:08:13] you use
+[00:08:14] uh
+[00:08:15] $1,000 in buying power, it's usually
+[00:08:18] about $50 in premium, like 5% of that.
+[00:08:23] And so when you get to higher
+[00:08:24] volatility, that moves to like 80 cents
+[00:08:27] versus $1,000 in buying power. And I'm
+[00:08:29] just using a number.
+[00:08:30] &gt;&gt; numbers, yeah. Wait, it's higher than
+[00:08:32] that. Um your largest loss as a
+[00:08:35] percentage of that buying power also
+[00:08:37] decreases. So you're using less buying
+[00:08:40] power and the losses are actually coming
+[00:08:42] in lesser than that.
+[00:08:43] So you're getting it's the best of both
+[00:08:45] worlds. Correct.
+[00:08:48] Couple takeaways for you. So single down
+[00:08:50] days or short short-term sell-offs
+[00:08:53] provide excellent opportunities to sell
+[00:08:55] strangles due to the higher P&amp;L and
+[00:08:56] premium you collect. That said, there's
+[00:08:59] a lot of times where those sell-offs
+[00:09:00] continue. So you can't be
+[00:09:03] gung-ho with these positions. Now a lot
+[00:09:05] of times you get that move and you sell
+[00:09:07] that strangle and the next day you could
+[00:09:09] take that money and run. That's correct.
+[00:09:10] &gt;&gt; doing that all year. Yes.
+[00:09:13] &gt;&gt; Generally That's what we talk about
+[00:09:13] being nimble, right? That's what we've
+[00:09:15] been talking about. Yes.
+[00:09:17] No no piggies here. Generally selling
+[00:09:19] strangles after down days saw an
+[00:09:21] increase in average P&amp;Ls for the
+[00:09:23] strangles because you typically see uh
+[00:09:27] volatility um
+[00:09:28] contraction
+[00:09:30] after the increase that you see into the
+[00:09:32] down move. So sometimes selling into
+[00:09:35] heightened volatility can be risky if
+[00:09:37] the markets continue to move in your
+[00:09:39] against you and in a strong way. That's
+[00:09:41] obviously going to be a risk. And down
+[00:09:43] days can can sometimes be the beginning
+[00:09:45] of larger moves, which we've seen, which
+[00:09:48] is further you know, uh
+[00:09:51] further reason why you need to just keep
+[00:09:53] size in check.

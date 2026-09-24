@@ -1,0 +1,137 @@
+[00:00:00] we're going to talk about ivr so the
+[00:00:03] best performing ivrs by
+[00:00:07] year I think you're going to like this
+[00:00:10] okay
+[00:00:11] okay um over a long span of research
+[00:00:16] we've repeatedly seen repeatedly seen
+[00:00:19] that short premium positions generally
+[00:00:21] perform better in high ivr because of
+[00:00:25] this many Traders choose only to sell
+[00:00:27] premium in underlyings when ivr is is
+[00:00:30] above a predetermined threshold we do
+[00:00:32] that here at Tasty like 30 okay too high
+[00:00:36] of an ivr threshold however and you'll
+[00:00:38] wind up hardly placing any trades so
+[00:00:41] where is The Sweet Spot for ivr
+[00:00:43] thresholds where is it fallen and how is
+[00:00:45] it varied from year to
+[00:00:47] year we've never really looked at
+[00:00:50] this next slide
+[00:00:53] please we did a study we looked at 5
+[00:00:55] years of of daily option data in the Spy
+[00:00:58] we computed the ivr levels using the vix
+[00:01:01] we considered 20 Delta triangles at each
+[00:01:04] 45-day opportunity with all trades Clos
+[00:01:07] to 21 days contingent on the ivr being
+[00:01:09] above thresholds of zero which just
+[00:01:12] means we put the trades on no matter
+[00:01:15] what okay and each year we found the
+[00:01:18] best performing ivr threshold We
+[00:01:20] examined how each of these thresholds
+[00:01:21] performed if they were used during other
+[00:01:23] years now one of the things here that
+[00:01:25] you're going to see this is the lowest
+[00:01:29] common denom domator to give us the most
+[00:01:31] amount of Trades like we like over 30
+[00:01:33] because we we it's it's it may be fewer
+[00:01:36] trades but we have the opportunity to
+[00:01:38] pick and choose this is only using
+[00:01:42] spy right so you're going to be limited
+[00:01:45] to the number of Trades the reason that
+[00:01:46] we do what we do on that Tony and I do
+[00:01:49] what we do on tasty is because we have
+[00:01:52] so many different underlyings we can
+[00:01:53] trade we're not limited to just
+[00:01:55] spy this study is limited to just spy so
+[00:01:59] it's a little bit confusing in that
+[00:02:01] regard this is only if you trade it spy
+[00:02:03] let's go to next slide all right so in
+[00:02:06] their own year so in 2020 the best ivr
+[00:02:10] threshold now this only
+[00:02:12] spy was the ivr had to be at least
+[00:02:16] 13 now if you're thinking about that
+[00:02:18] well why do you guys say 30 because this
+[00:02:20] is only spy we say 30 because we have
+[00:02:22] the opportunity to trade
+[00:02:23] everything but we we wanted to show you
+[00:02:26] was that if you only traded spy the best
+[00:02:29] threshold was at a minimum of
+[00:02:31] 13 in 2021 it didn't matter just trade
+[00:02:35] whatever you want every single 45 day
+[00:02:38] cycle worked 2022 had to be over 30 to
+[00:02:41] make money 2023 over8 and 2024 over 15
+[00:02:47] now these are just for that one specific
+[00:02:50] year and you can see the number of
+[00:02:53] Trades were placed in the
+[00:02:55] Spy the worst loss bottom of the page
+[00:02:58] not too bad
+[00:03:00] this is 20 Delta
+[00:03:02] strangles um what's so interesting about
+[00:03:05] this to me is that it shows other than
+[00:03:07] 20121 it shows that although the Spy
+[00:03:10] threshold was was kind of low you can
+[00:03:12] imagine how the individual stock
+[00:03:13] threshold is going to be significantly
+[00:03:15] higher sure sure if you go to the next
+[00:03:19] slide so now this is applied throughout
+[00:03:22] the entire 5year period so the numbers
+[00:03:25] are going to be a little bit different
+[00:03:27] but if you took the same if you took the
+[00:03:29] same threat threshold and applied it
+[00:03:31] through 5 years this just shows you what
+[00:03:34] kind of consistency it delivers you know
+[00:03:37] and all the numbers you know obviously
+[00:03:39] this is this is the best you can do um
+[00:03:42] in spy but 130 38 and 15 but all the p&amp;l
+[00:03:47] numbers remained high and you did place
+[00:03:50] about four or five times as many trades
+[00:03:54] and the worst loss numbers were actually
+[00:03:57] lower now you're saying well I'm not
+[00:03:59] sure what to take out of this yeah what
+[00:04:01] what yeah right what I'm trying to look
+[00:04:02] I mean I see 2021 as because all that's
+[00:04:05] saying is that it didn't matter you just
+[00:04:08] had to do it every 45 days no matter
+[00:04:10] what in 2020 if it was ever below 13 you
+[00:04:13] couldn't it didn't work and was in 2022
+[00:04:16] if it was below 30 it didn't work in
+[00:04:18] 2023 if it was below 8 it didn't work
+[00:04:20] and in 2024 it was below 15 it didn't
+[00:04:22] work now there might only been one or
+[00:04:23] two or three instances the point being
+[00:04:26] here is that what we want people to do
+[00:04:29] is to recognize ize that this is just
+[00:04:31] spy and there are years when it requires
+[00:04:35] that you have to have over 30 just in
+[00:04:36] the Spy to make money there are other
+[00:04:38] years like the year before that where it
+[00:04:39] didn't matter you just put on all the
+[00:04:41] time so our threshold of 30 across the
+[00:04:43] board for all underlyings really makes a
+[00:04:46] lot more sense now yeah yeah yeah yeah
+[00:04:50] let's go to the next slide Beth
+[00:04:53] please so using ivr thresholds to
+[00:04:56] determine good opportunities for selling
+[00:04:57] premium has generally been a successful
+[00:04:59] approach
+[00:05:00] but the best thresholds to use have
+[00:05:02] varied substantially over time in
+[00:05:05] general a higher ivr threshold resulted
+[00:05:08] in a safer year-to-year
+[00:05:11] performance in the best years such as
+[00:05:13] 2021 Traders did best if they're willing
+[00:05:15] to place trades regardless of IV in the
+[00:05:18] harder years waiting for IV to rise
+[00:05:21] above 15 or 30 was the better approach
+[00:05:24] so why not do it all the time these
+[00:05:26] specific values are particular spy and
+[00:05:31] this strategy and these mechanics in
+[00:05:33] general you need to decide for yourself
+[00:05:35] how much you want to risk do you want to
+[00:05:36] take selling premium in low ivr but when
+[00:05:38] ivr Rises don't be afraid to get a
+[00:05:40] little more active I I like it I like it
+[00:05:43] I mean it's a look back so it's a little
+[00:05:44] bit you know kind of like in hindsight
+[00:05:48] but I like it about the mechanical part
+[00:05:50] of it yep I do

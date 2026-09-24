@@ -13,7 +13,7 @@ Trading Backtesting & Research, Trading Trends, Guest Interviews, tasty Original
 cap, not the playlists' true size. For those shows the index holds the **latest ~100 episodes only**; older
 Sosnoff-era episodes aren't in it.
 
-⚠ **Only 4 titles are Sosnoff himself** (70 match "Tom"/"Tony", mostly Tom Lee and Tom Preston). He left for Lossdog
+⚠ **Only 4 titles name Sosnoff, and review found only 3 have him on camera** (C6vrj2zu6Hc doesn't) (70 match "Tom"/"Tony", mostly Tom Lee and Tom Preston). He left for Lossdog
 (see `data/more_tom/README.md`). The recent catalogue is tastylive's research desk (Julia Spina et al.) testing *his
 doctrine* — 45 DTE, 16–30Δ, 50% take, 21-DTE management, IV rank, sell after spikes — which is exactly what we want
 to check against our ledger.
@@ -50,7 +50,7 @@ to check against our ledger.
 |---|---|
 | 9vwnX5mTT9M | The Real Reason Why Tom Sosnoff Won't Trade Stock |
 | eUTCEbx2pco | Use Tom Sosnoff's Daily Routine to Analyze Trades |
-| C6vrj2zu6Hc | The Dark Side of Tom Sosnoff's Iron Condor Strategy |
+| C6vrj2zu6Hc | The Dark Side of Tom Sosnoff's Iron Condor Strategy (⚠ reviewed 2026-09-23: Sosnoff is NOT on camera — house doctrine only) |
 | p_X8dyNXlUE | How Tom Sosnoff Trades 0DTE Vertical Spreads |
 
 ### Tier 3 — volatility regime and VIX (his "sell the spike" core)

@@ -1,0 +1,254 @@
+[00:00:00] [Music]
+[00:00:05] up here even the s p is up 28 volatility
+[00:00:09] down 14 cents
+[00:00:11] bonds down 14. to roll or not to roll
+[00:00:15] that is the question let's take a look
+[00:00:18] all our Market measures are sponsored by
+[00:00:20] our exchange partner the CBOE
+[00:00:23] and stay tuned because the CBOE and
+[00:00:26] tasty are going to do something special
+[00:00:28] together very soon we're going to be
+[00:00:30] announcing it I think you guys are going
+[00:00:31] to like it
+[00:00:32] when the strikes of our short premium
+[00:00:35] trade when when the strikes of our short
+[00:00:38] premium trade get tested you will always
+[00:00:42] hear us mention rolling the call down
+[00:00:44] that's on a down move or rolling the put
+[00:00:46] up all morning Tony just commented wow
+[00:00:49] Tom you've been rolling up puts all
+[00:00:50] morning yes I have made
+[00:00:54] 29 adjustments to the upside today of
+[00:00:57] rolling puts up on existing positions
+[00:01:00] correct yes yes I had made 41 trades so
+[00:01:03] far today 29 of them 29 of them have
+[00:01:07] been rolling up puts on short positions
+[00:01:10] to adjust my deltas
+[00:01:13] um what is the purpose of this tactic
+[00:01:15] and today we'll use our research to
+[00:01:18] explain why we do it there was also an
+[00:01:21] email that came in on confirm and send
+[00:01:23] and the question was does aggressively
+[00:01:26] adjusting your positions help or not and
+[00:01:29] it just so happens that we had a market
+[00:01:31] measure set up for this today let's go
+[00:01:34] next slide
+[00:01:35] I said the advantage is marginal but it
+[00:01:38] can reduce your outlier risk
+[00:01:40] dramatically let's see what this piece
+[00:01:42] of research which is the most which is
+[00:01:44] brand new
+[00:01:45] so what is rolling when the putter call
+[00:01:47] side of a trade is being approached by
+[00:01:49] the underlying we will roll the untested
+[00:01:52] side this is when we would close out the
+[00:01:54] side of the short premium trade that is
+[00:01:57] not being breached
+[00:01:58] and reopen a similar position with a
+[00:02:01] strike closer to the underlying price
+[00:02:03] all that means is we're selling a
+[00:02:06] vertical spread right buying back our
+[00:02:08] short and we're selling a higher strike
+[00:02:10] on the put side or we're buying back a
+[00:02:12] short and selling a lower strike on the
+[00:02:14] call side so if the Market's going up
+[00:02:16] we're rolling up puts which means we are
+[00:02:19] essentially selling a put credit spread
+[00:02:22] the Market's going down we're rolling
+[00:02:24] down calls which means we are selling a
+[00:02:26] call Credit spread let's go to the next
+[00:02:29] slide
+[00:02:32] why do we roll so by closing out the
+[00:02:34] option that is untested and opening a
+[00:02:36] similar position closer to the
+[00:02:38] underlying price you generally collect a
+[00:02:40] credit and you lower your net Delta
+[00:02:43] exposure on the position well actually
+[00:02:45] you'll always collect a credit in that
+[00:02:47] situation and you will lower your net
+[00:02:50] exposure on the position our goal is to
+[00:02:53] take about half the risk off every time
+[00:02:54] we do that
+[00:02:55] the result is a lower probability of
+[00:02:58] making Max profit of course if you make
+[00:03:01] an adjustment you are going to reduce
+[00:03:03] your probability of making Max profit
+[00:03:05] because you're going to take a wide
+[00:03:06] spread and you're going to make it into
+[00:03:08] a narrow spread
+[00:03:10] in and you're doing that in exchange for
+[00:03:13] lower risk and a higher probability to
+[00:03:16] reduce your loss or to scratch the trade
+[00:03:19] obviously that when you make a
+[00:03:23] aggressive defensive role it is
+[00:03:27] defensive in nature it's being
+[00:03:30] proactively defensive
+[00:03:33] let's go to the next slide
+[00:03:38] so how does our research
+[00:03:40] support the concept of rolling since
+[00:03:43] 2005 we looked at this 17 years worth of
+[00:03:46] data we sold 16 Delta strangles 45 days
+[00:03:48] to expiration held to expiration no
+[00:03:51] early Management in this study in order
+[00:03:53] to focus on rolling we recorded only the
+[00:03:56] trades where the Spy breached the put or
+[00:03:58] the call side we compared the average
+[00:04:00] penal the win rate
+[00:04:02] we looked at exiting the trade when
+[00:04:04] Strikers preached continued to hold the
+[00:04:06] expiration and rolling the untested side
+[00:04:08] to make a straddling and Holt
+[00:04:09] exploration I need to say a couple
+[00:04:11] things about this number one
+[00:04:13] we do this in every underlying not just
+[00:04:16] the Spy strangles and in most underlines
+[00:04:19] you know they have richer volatility
+[00:04:21] than the Spy so bigger respected mood
+[00:04:23] second we rarely ever wait until the
+[00:04:28] underlying
+[00:04:30] um is breached I need to put it a call
+[00:04:32] side which means we are much more
+[00:04:34] aggressive way before we get to us to a
+[00:04:38] breach
+[00:04:38] and lastly we never hold until
+[00:04:42] expiration so there are a couple of
+[00:04:44] aspects of this study that we don't
+[00:04:46] really do but in order to get it
+[00:04:48] consistent we had to put those in there
+[00:04:49] so just remember we don't usually hold
+[00:04:52] to expiration and we don't usually wait
+[00:04:54] until something's breached but we
+[00:04:56] couldn't arbitrarily just pick some
+[00:04:57] Delta okay
+[00:04:59] so let's go to the next slide that's a
+[00:05:02] good point to bring out yep
+[00:05:04] so before we get to the results we
+[00:05:05] should point out that this study takes
+[00:05:07] one specific example of rolling and the
+[00:05:10] results should not be compared to
+[00:05:11] personal trades but rather used to
+[00:05:13] compare the effectiveness enrolling in
+[00:05:15] general which is essentially what I was
+[00:05:17] just kind of saying but in a different
+[00:05:20] way
+[00:05:22] um let's go to the next slide
+[00:05:25] so here we go so rolling the trade
+[00:05:28] gave you a better chance to break even
+[00:05:30] than either closing right away or
+[00:05:32] holding with no action closing right
+[00:05:34] away would be using a stop order and
+[00:05:36] holding with no action would be just
+[00:05:37] letting go and see what happens
+[00:05:39] when rolling you lose the ability to
+[00:05:41] make Max profit on the original trade
+[00:05:43] but on average doing nothing so more
+[00:05:44] losses than the occasional full swing
+[00:05:47] reversal so since 2005 looking at just
+[00:05:51] 16 Delta positions
+[00:05:53] um in the spies and and using the 16
+[00:05:55] Delta strangle
+[00:05:57] um when you exited the trade when this
+[00:06:01] when the underlying was breached that's
+[00:06:02] a stop order by the way
+[00:06:04] your win rate on stop orders was when
+[00:06:07] using stop orders was only 32 percent
+[00:06:09] and your average p l was a loss that
+[00:06:13] makes
+[00:06:14] this is only with when your underlying
+[00:06:16] is tested okay so this is not including
+[00:06:19] all your winning trades this this is
+[00:06:22] only for trades when the strike is
+[00:06:26] tested winners and losers there's a lot
+[00:06:28] of Trades that never test the strikes
+[00:06:29] sure this is when things go horribly
+[00:06:31] wrong
+[00:06:32] that's when things go wrong
+[00:06:34] um when when the strike is breached so
+[00:06:36] the first thing is exit a trade when the
+[00:06:39] strike is preached that's the worst
+[00:06:41] thing you can do That's a classic stop
+[00:06:43] order we've always argued here at Tasty
+[00:06:45] that stop orders
+[00:06:47] it's the absolute worst way we have
+[00:06:49] stops on spreads because of customer
+[00:06:51] demand but it's the worst way to trade
+[00:06:53] next when you held to expiration
+[00:06:57] um the you can see that the
+[00:07:00] um that everything kind of middle you
+[00:07:02] know Works its way back into some kind
+[00:07:04] of you know normalized territory there
+[00:07:06] are still some outliers but your 58
+[00:07:09] chance success with the 55 loss and then
+[00:07:13] when you rolled to Australia
+[00:07:16] and which is essentially taking you know
+[00:07:18] the side up to right up to that middle
+[00:07:20] price
+[00:07:22] um that was the the best in the end the
+[00:07:25] average pre-number was only down five
+[00:07:26] dollars you essentially mitigated the
+[00:07:28] risk and your win rate went up to 65.
+[00:07:31] you actually doubled the win rate from
+[00:07:33] using stop orders now just think about
+[00:07:36] now again this isn't exactly what I do
+[00:07:39] just to be very clear this isn't exactly
+[00:07:41] what Tony does this isn't exactly what I
+[00:07:44] do we roll early we when we get towards
+[00:07:47] the straddle we'll we'll buy back the
+[00:07:50] guts and we'll sell the wings we'll
+[00:07:51] uninvert we'll re-center
+[00:07:54] um but you can see here it's there's
+[00:07:58] a little bit more Advantage than what I
+[00:08:01] called kind of marginal this morning
+[00:08:04] um just because I didn't want to get
+[00:08:05] into a complete discussion on
+[00:08:07] statistical significance
+[00:08:09] um and because we're using a lot of
+[00:08:10] equities and there's a lot of other
+[00:08:11] factors involved but I think it's really
+[00:08:13] important here
+[00:08:15] you can see that doing something is
+[00:08:19] better than doing nothing which we've
+[00:08:20] always talked about and will always I
+[00:08:23] mean there's nothing that's ever
+[00:08:25] from our research ever shown anything to
+[00:08:27] be any different whether it's your p l
+[00:08:30] of your overall account uh volatility or
+[00:08:33] the volatility of the trade itself
+[00:08:37] that is correct let's go to the last
+[00:08:41] so since roughly a third of all 16 Delta
+[00:08:44] strangles saw at least one breach
+[00:08:45] throughout their 45-day cycle knowing
+[00:08:48] how to use a defensive tactic
+[00:08:50] like rolling will often come into use
+[00:08:53] rolling the untested side reduces Delta
+[00:08:57] exposure increases the next credit the
+[00:08:59] net credit and increases the probability
+[00:09:02] of breaking even an exchange for giving
+[00:09:04] up Max profit potential on the original
+[00:09:06] trade
+[00:09:07] obviously if you're making adjustments
+[00:09:09] it's in some form defensive we rarely
+[00:09:12] make offensive adjustments occasionally
+[00:09:14] make an offensive adjustment but it's
+[00:09:15] rare
+[00:09:16] and yeah well that's just because the
+[00:09:18] stock cooperated right maybe you leave
+[00:09:20] one way or the other on a strangle or in
+[00:09:22] a position and you're adding something
+[00:09:24] or or reducing Delta one way or taking
+[00:09:27] advantage of that
+[00:09:29] yeah so anyway you can see here there it
+[00:09:32] was a it's an important study because it
+[00:09:36] kind of confirms and validates a lot of
+[00:09:38] what we do it it really reduces the
+[00:09:42] Delta exposure which means that you're
+[00:09:44] getting rid of a lot of outlier risk in
+[00:09:46] the process of doing that and you're not
+[00:09:48] going to let like something generally
+[00:09:50] just take you down because obviously you
+[00:09:51] can have losing trades but you're not
+[00:09:53] gonna let somebody take it down
+[00:09:55] like the bat taking you down right let's
+[00:09:59] take a quick 90 second break and come
+[00:10:00] back oh joy we got Mr Scott Sheridan
+[00:10:03] coming in the house this is safety live

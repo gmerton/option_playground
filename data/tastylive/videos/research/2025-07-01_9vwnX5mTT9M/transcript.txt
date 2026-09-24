@@ -1,0 +1,221 @@
+[00:00:00] Stock returns are static. Options are
+[00:00:02] strategic. We've said that a couple
+[00:00:03] times before in our life. Yes, we have.
+[00:00:05] Stock returns are are static. You know
+[00:00:09] what that means? That means there's not
+[00:00:11] a hell of a lot that you can do. Yeah.
+[00:00:16] You know, it's a directional play. Yeah,
+[00:00:17] it's a directional play. That's it.
+[00:00:19] Strategic about it. We've been talking
+[00:00:21] about it's not just stock returns are
+[00:00:23] static. We've been talking for a long
+[00:00:25] time about lots of different types of
+[00:00:27] returns. Um, when you trade futures,
+[00:00:31] futures are static. When you trade um
+[00:00:36] when you trade
+[00:00:38] uh spot forex, like Pete was talking
+[00:00:40] about this morning, those are static.
+[00:00:41] Mhm. Um, so stocks are static, but so
+[00:00:44] are futures, and so are, you know,
+[00:00:47] what's static? Digital assets. Yeah.
+[00:00:49] Yeah. Yeah. Um, so you trade crypto and
+[00:00:51] you trade anything like that, those are
+[00:00:53] static as well. Um, so most investments,
+[00:00:57] you know what's static? real estate. You
+[00:00:59] know what? Static collectibles because
+[00:01:02] there's very little strategy other than
+[00:01:04] you think you're buying low or or you if
+[00:01:07] you if you think you're buying high,
+[00:01:08] then you think you're going to be able
+[00:01:09] to sell it higher. But there's very
+[00:01:11] little strategy, right? We're just we're
+[00:01:13] just talking about buying something
+[00:01:16] because you think it's cheap relative to
+[00:01:17] where you think it's going to be.
+[00:01:19] Strategic means there's a lot of things
+[00:01:20] you can do. And essentially, you know,
+[00:01:23] maybe even if you're wrong, you can
+[00:01:24] still make money. When looking at nearly
+[00:01:26] any stock or any one of the other
+[00:01:28] products or or asset class I talked
+[00:01:30] about when looking at any stock's return
+[00:01:33] distribution, they're all similar,
+[00:01:34] nearly normal with some skew, some skew,
+[00:01:37] particular um some skew, similar
+[00:01:41] probability in either direction, which
+[00:01:43] is not really fair because of positive
+[00:01:44] drift. It's a little bit everything
+[00:01:47] should be skewed to the upside. So, a
+[00:01:49] little asymmetric. Um but because these
+[00:01:52] distributions are inherent to the
+[00:01:54] underlying they are inter
+[00:01:56] interchangeable or unchangeable to the
+[00:01:57] investor. So thus eliminating the
+[00:02:00] possibility for strategic investing. The
+[00:02:02] only risk you look at is historical
+[00:02:05] volatility or how to spread out the
+[00:02:06] distributions based on a standard
+[00:02:07] deviation. Um this is pretty much the
+[00:02:12] same for every investment which is what
+[00:02:14] the guys are saying here and this is
+[00:02:16] typical for any kind of static
+[00:02:18] investment when trading options. The
+[00:02:20] distribution of potential outcomes is
+[00:02:21] set by you. Since you pick the options
+[00:02:24] in your portfolio, then you choose the
+[00:02:25] skew, you choose the tail risk, you
+[00:02:28] choose the width and the mean of the
+[00:02:29] distribution um based on the implied
+[00:02:32] volatility of the underlying, the delta
+[00:02:33] of the options, the strategy of the
+[00:02:34] legs, the days to expiration, and
+[00:02:37] whether it's correlated or um
+[00:02:40] uncorrelated underlines. So, it is a
+[00:02:43] very different type of investment. There
+[00:02:46] was a question that came up earlier
+[00:02:47] today about should you know why
+[00:02:50] shouldn't you just be passive and the
+[00:02:52] answer is kind of here how about all
+[00:02:54] these things we just talked about that
+[00:02:57] at least opportunistically and learning
+[00:02:59] wise it it could be pretty valuable with
+[00:03:01] everything else you do in your life.
+[00:03:03] some tips on adjusting or managing
+[00:03:04] outlier or tail risk. If you um
+[00:03:10] and this is just for you know things
+[00:03:12] where where
+[00:03:14] well let let's talk about this. When you
+[00:03:16] adjust your portfolio of short
+[00:03:18] strangles, puts, calls, whatever it is,
+[00:03:21] you can choose to have wings, no wings.
+[00:03:24] You can reduce some of the tail risk.
+[00:03:25] You can reduce mostly all the tail risk.
+[00:03:28] It's just up to you. Okay? But when you
+[00:03:31] have a stock portfolio that's static,
+[00:03:33] you don't have any of those choices.
+[00:03:35] There's no way to have a reduction in
+[00:03:37] risk. There's no way to reduce some of
+[00:03:39] the tail risk. You can't you can't sell
+[00:03:43] a
+[00:03:45] there's no derivative strategy that you
+[00:03:47] can use against piece of real estate
+[00:03:49] against a long stock unless you use
+[00:03:52] options of course against futures unless
+[00:03:54] you use options against Bitcoin unless
+[00:03:56] you use options. So the point being here
+[00:03:58] is there's no real way to reduce risk.
+[00:04:01] You can't say a stop order is risk
+[00:04:03] reduction. You can't say that reducing
+[00:04:06] size is necessarily risk reduction.
+[00:04:09] Right. Right. I don't think so. I don't
+[00:04:11] think any of those I mean it's the only
+[00:04:12] thing you can do but I don't think it is
+[00:04:15] the definition of reducing risk. Um
+[00:04:19] let's um you okay over there? So good.
+[00:04:23] No. Somebody just sent me a headline. I
+[00:04:25] don't know if you saw this, but Trump
+[00:04:27] just said that he's going to look into
+[00:04:28] deporting Elon.
+[00:04:32] Saw that, too. Yeah. He's going to get
+[00:04:33] Doge after him. I saw
+[00:04:36] I got to take everything with a smile. I
+[00:04:37] know. I am. I'm smiling. I'm laughing.
+[00:04:39] It's too good. How about adjusting daily
+[00:04:42] portfolio? So if you have a option
+[00:04:45] position on, you know, you can look at
+[00:04:48] things like you can change the duration,
+[00:04:50] you can manage the trade early, you can
+[00:04:53] um you can do something against your
+[00:04:57] trade like hedge it orbit, whatever you
+[00:05:00] want to do. Um when you're buying stock,
+[00:05:04] what are you doing? You're just picking
+[00:05:05] a price and you're hoping you're right.
+[00:05:07] When you when you buy any asset, sure
+[00:05:09] and you're betting on what? You're
+[00:05:11] betting on positive drift. positive
+[00:05:13] drift. It's okay. What about adjusting
+[00:05:16] for asymmetric risk? So, for example,
+[00:05:19] when you have a portfolio,
+[00:05:22] you can increase the delta of the short
+[00:05:23] strikes, you can go if volatility is
+[00:05:27] high, you can collect larger credits. If
+[00:05:30] volatility is low, like it is now, you
+[00:05:32] can reduce your risk. Okay? Um, you can
+[00:05:35] set your probability to whatever you
+[00:05:38] want it to be. See, most people don't
+[00:05:40] know this about investing, but you can
+[00:05:41] say something like, you know what, I
+[00:05:43] want to be right 80% of the time. Sure,
+[00:05:46] no problem. Doesn't mean you make money.
+[00:05:48] Just means you're right 80% of the time.
+[00:05:49] Sure. You know, but you can set it
+[00:05:51] whatever you want. If you do a if you're
+[00:05:54] trading a stock or any other asset
+[00:05:56] that's static, you don't have that
+[00:05:58] option. It's it is what it is. So, in
+[00:06:01] other words, is it a 50-50 shot?
+[00:06:03] Probably. Over time, maybe it's much
+[00:06:05] better than that. But you don't get you
+[00:06:08] don't get to choose. You don't get to
+[00:06:10] set your probability of success. If
+[00:06:12] you're selling an out of the money put
+[00:06:14] on a stock you like, you can set it up
+[00:06:16] so you have an 80% chance of winning.
+[00:06:18] It's just a math equation, right? Yep.
+[00:06:21] And this is the last one here. What
+[00:06:23] about um when you want to adjust your
+[00:06:28] expected return? So you can um you can
+[00:06:33] for example when you're trading options
+[00:06:35] you can move your deltas closer to at
+[00:06:37] the money options closer to at the money
+[00:06:39] so you can take more risk. You can move
+[00:06:41] it way further away and statistically
+[00:06:44] take less risk. Okay. Or or just have a
+[00:06:47] greater probability. You can choose a
+[00:06:50] delta that's a fraction of the share
+[00:06:52] price. So you can say you know what I
+[00:06:54] like this underlying but I'm only
+[00:06:55] willing to commit 25%. like choose a
+[00:06:58] delta of 25. I'm willing to commit to a
+[00:07:01] 50 delta option or delta, you know, the
+[00:07:03] equivalent of of 50 shares of stock or
+[00:07:06] the equivalent of five or 10 shares of
+[00:07:08] stock where and it's a capital efficient
+[00:07:12] way of doing it. Whereas in the stock
+[00:07:15] itself,
+[00:07:17] it's always just about positive drift.
+[00:07:20] All your dependencies are on positive
+[00:07:21] drift. I'm not saying that it's
+[00:07:24] necessarily bad. It's just a different
+[00:07:25] approach to investing. it gives you a
+[00:07:28] lot less optionality. So options have
+[00:07:30] many dimensions or they have a lot of
+[00:07:32] options have a lot of optionality and
+[00:07:36] they're always adjustable for active
+[00:07:39] traders. And you know what that's
+[00:07:41] something we probably couldn't have said
+[00:07:42] 25 years ago or or because the
+[00:07:45] technology just wasn't there to do it.
+[00:07:47] Now you can do whatever you want on your
+[00:07:49] platform. You can literally do any
+[00:07:51] strategy um with any underlying in
+[00:07:54] virtually any product. So there's it's
+[00:07:57] it's almost inexcusable not to use it.
+[00:07:59] That's why they're so popular. By you
+[00:08:01] adjusting the options in portfolio,
+[00:08:02] you're able to con to construct a
+[00:08:04] distribution that your portfolio will
+[00:08:06] follow that has unique skew, spread,
+[00:08:08] tails, mean and probabilities. A
+[00:08:11] distribution of stock returns is already
+[00:08:13] set in stone by whatever underlying you
+[00:08:15] trade. The only adjustable attribute is
+[00:08:18] the general spread, which is the
+[00:08:20] volatility of returns. Um it's just a
+[00:08:23] different way of looking at things. It's
+[00:08:25] not saying that stock returns are bad by
+[00:08:28] any stretch because this year stock
+[00:08:29] returns have been great. It's just
+[00:08:31] saying that the options are different in
+[00:08:34] that they're strategic and it gives you
+[00:08:36] more um more choices, more flexibility.

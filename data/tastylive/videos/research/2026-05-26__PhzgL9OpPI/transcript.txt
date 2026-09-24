@@ -1,0 +1,396 @@
+[00:00:00] I have I have some strong thoughts on
+[00:00:02] this that I will share at the end.
+[00:00:04] Uh but let's dive right in.
+[00:00:06] Trading bullish strangles. Stock markets
+[00:00:08] keep moving higher despite various
+[00:00:09] global uncertainties. That is true. The
+[00:00:12] strength makes bullish option strategies
+[00:00:14] more appealing like selling naked puts
+[00:00:15] or covered calls which profit from
+[00:00:18] upward price movement. As you can see,
+[00:00:20] this is a chart of SPX
+[00:00:22] uh over the years and
+[00:00:24] I mean, it's nuts. We In 2012, we were
+[00:00:27] at 1,000 SPX. Now we're sitting at
+[00:00:30] what? 7,500. Just crazy gains to the
+[00:00:33] upside.
+[00:00:34] Uh
+[00:00:35] trading bullish strangles. When
+[00:00:37] examining premium income potential, 30
+[00:00:40] delta puts typically generate higher
+[00:00:42] premiums compared to 16 delta strangles
+[00:00:45] over extended periods. The premium
+[00:00:47] advantage can potentially lead to better
+[00:00:49] success rates and improved performance
+[00:00:52] during sustained uptrends. So,
+[00:00:55] just taking out a little bit more
+[00:00:57] uh risk in terms of intrinsic value,
+[00:01:00] picking up some more premium by being
+[00:01:02] more aggressive. Uh and a 30 delta put
+[00:01:05] is still pretty significantly out of the
+[00:01:07] money compared to a 16 uh delta put.
+[00:01:11] But, you can ultimately make up for
+[00:01:14] the same amount of premium. And
+[00:01:15] sometimes I I say this too, like if
+[00:01:17] you're looking at selling a strangle on
+[00:01:19] a product and you're selling the put
+[00:01:21] for, let's say, two bucks and the the
+[00:01:23] call for like 50 cents, just get rid of
+[00:01:25] the call and move the put slightly
+[00:01:26] higher. Make Make up that premium, get
+[00:01:28] rid of the upside risk. Uh and I think
+[00:01:30] that is something that you can do in
+[00:01:32] this situation, too.
+[00:01:34] Uh on slide two, we can show the
+[00:01:38] uh premium for the 30 delta put relative
+[00:01:40] to the 16 delta strangle. So, again,
+[00:01:42] sometimes and I would say always, if
+[00:01:44] you're selling a strangle,
+[00:01:46] you want to make sure that you have
+[00:01:48] premium both sides, like meaningful
+[00:01:50] premium on both sides. Otherwise, just
+[00:01:52] move the put up. Or if you're bearish,
+[00:01:54] maybe you move the call down, but I
+[00:01:55] don't like selling naked calls
+[00:01:56] personally. Uh but you can make up the
+[00:01:59] premium by just moving the put a little
+[00:02:01] bit higher and removing all risk to the
+[00:02:04] upside there relative to a 16 delta
+[00:02:06] strangle.
+[00:02:09] On the next slide, for those seeking
+[00:02:11] upward participation while maintaining
+[00:02:12] downside hedging, a bullish strangle
+[00:02:14] with net positive delta would be an
+[00:02:16] interesting alternative. How does this
+[00:02:18] adjusted approach compare against
+[00:02:21] traditional delta neutrals?
+[00:02:25] Let's find out.
+[00:02:27] We looked at two different 45-day spy
+[00:02:29] strangles over the past two decades. So,
+[00:02:32] we looked at these 16 delta strangles
+[00:02:34] for your neutral strangle and then a 30
+[00:02:38] put uh 16 delta call strangle with a
+[00:02:41] bullish lean and closed all positions at
+[00:02:44] 21 days from expiration.
+[00:02:48] The bullish strangles had better returns
+[00:02:50] even though they were a bit more
+[00:02:52] volatile and could lose more money,
+[00:02:54] which makes sense. Uh if you compare a
+[00:02:56] strangle to a straddle, straddles are
+[00:02:57] going to be more volatile, but you're
+[00:02:59] picking up more money and
+[00:03:01] uh you know, you can make more just
+[00:03:03] selling stra- straddles because you
+[00:03:04] start with more premium and you can keep
+[00:03:07] more premium if you get the timing
+[00:03:08] right.
+[00:03:09] but put side break even is closer, so
+[00:03:12] market drops have more impact, but the
+[00:03:14] return on capital was better than
+[00:03:16] neutral strangles and you can see this
+[00:03:18] here. So,
+[00:03:19] very similar success rates
+[00:03:22] uh when you look at the one center
+[00:03:23] deviation verse 30 delta uh put 16 delta
+[00:03:26] call on the right, uh the annualized
+[00:03:29] return on capital was significantly
+[00:03:31] better. So, I'll take that all day. Same
+[00:03:33] success rate with almost twice the
+[00:03:35] annualized return on capital. Uh a
+[00:03:38] little bit less return on capital
+[00:03:40] volatility with the neutral strangle
+[00:03:43] and the largest loss was
+[00:03:45] just a little bit less than your 30
+[00:03:48] delta 16 delta setup. Um but I think
+[00:03:51] when you when you think about the
+[00:03:52] product you're trading, right? You're
+[00:03:54] trading the S&amp;P 500, the more it goes
+[00:03:56] down,
+[00:03:58] the more inclined I am to just stay in
+[00:04:00] and take on those deltas because we've
+[00:04:01] seen the probabilities of reversals to
+[00:04:03] the upside get substantially higher as
+[00:04:07] you go down 10%, 15%, 20%.
+[00:04:12] On the next slide here, we compare the
+[00:04:13] bullish strangle to just selling 30
+[00:04:14] delta puts. The strangle made less money
+[00:04:17] and had a lower win rate. The call side
+[00:04:20] had reduced the profits, but the
+[00:04:21] strangle was less volatile and had
+[00:04:22] smaller maximum losses. It's a
+[00:04:24] compromise that gives us some upside
+[00:04:26] while controlling risk better than naked
+[00:04:28] puts.
+[00:04:29] So, just the 30 delta put relative to
+[00:04:32] the 30 delta put and the short call, uh,
+[00:04:35] success rate was higher, annualized
+[00:04:37] return on capital was higher because you
+[00:04:39] just don't have to deal with the upside
+[00:04:40] at all in this situation. Uh, but this
+[00:04:43] is where I kind of want to add in my own
+[00:04:46] layer of complexity here because I've
+[00:04:50] had success with two separate instances
+[00:04:52] of
+[00:04:53] no upside strangles in IBIT. And then,
+[00:04:56] also in the micro e-minis, but we can
+[00:04:58] touch on it, uh, at the end of the
+[00:05:01] segment here. But, yeah, any any
+[00:05:03] thoughts on the the difference so far
+[00:05:05] with these setups?
+[00:05:08] &gt;&gt; No, I'm not surprised. I mean, you we
+[00:05:10] saw the chart at the beginning. Uh, I
+[00:05:12] know this study is going back what over
+[00:05:13] the last two decades or so. Um,
+[00:05:16] you're we're looking at market cap
+[00:05:18] weighted indices. So, you know, the
+[00:05:21] biggest companies just get bigger given
+[00:05:24] the passive flow over time. Of course,
+[00:05:26] there can be periods of volatility.
+[00:05:28] We've had large drawdowns as a result.
+[00:05:30] But, not really surprised when the
+[00:05:32] majority of investors and majority of
+[00:05:34] capital flows are, you know, buying
+[00:05:36] assets and there is that positive upward
+[00:05:39] drift over time. Um,
+[00:05:42] yeah, I wish I could add more, Mike,
+[00:05:44] but, um,
+[00:05:45] I think you you know, you hit on a great
+[00:05:46] point. You go in here and at times you
+[00:05:48] see high volatility, you see high IVR
+[00:05:50] rank.
+[00:05:51] And you want to put on a neutral
+[00:05:52] strategy or range bound strategy that's
+[00:05:54] going to benefit from that.
+[00:05:56] But in doing so, if you just quickly go
+[00:05:58] in there and you look at okay, I'm going
+[00:05:59] to do a one standard deviation move. I'm
+[00:06:01] going to do 16 delta for my strike
+[00:06:02] selection on both sides.
+[00:06:04] Well, there's the skew that typically
+[00:06:07] exists on the put side. So, the puts
+[00:06:08] that are that distance away, the same
+[00:06:10] distance as the calls are going to be a
+[00:06:11] little bit richer in terms of the price.
+[00:06:13] But quite often in these very low vol
+[00:06:16] environments where you grind higher,
+[00:06:18] it's not like there's massive volatility
+[00:06:20] to the upside, at least not in say the
+[00:06:22] S&amp;P 500, maybe in individual names like
+[00:06:24] Micron, which we're seeing today.
+[00:06:26] But quite often, you're just not selling
+[00:06:28] an option for very much money.
+[00:06:31] Yes, you're going to get a larger
+[00:06:32] credit. But you add that risk as it just
+[00:06:36] grinds up. And you go out there, you go
+[00:06:37] out a month and a half, you go out two
+[00:06:38] months, you sell that call. Well, what
+[00:06:40] can happen
+[00:06:42] in two months? And so, I am less prone
+[00:06:45] to to sell strangles personally than I
+[00:06:47] am just to sell a cash secured puts,
+[00:06:49] naked puts, whatever.
+[00:06:51] Um because again, quite often, you're
+[00:06:52] just not getting paid
+[00:06:54] to sell that upside risk. And I think as
+[00:06:57] well, we often, I know I do, overlook,
+[00:06:59] well, what is the implied versus
+[00:07:01] realized vol anyways? Is there even much
+[00:07:03] of a premium in there to sell that 40
+[00:07:06] cent call option that today with a month
+[00:07:09] and a half to go is a, you know, one
+[00:07:10] standard deviation away. But the delta
+[00:07:13] move in the grind higher even in lower
+[00:07:15] volatility, um ends up hurting you. So,
+[00:07:17] not surprised.
+[00:07:18] &gt;&gt; Yeah, especially in these super strong
+[00:07:20] markets where it's just like up into the
+[00:07:22] right every single day. Like you're
+[00:07:23] going to take more heat um having a
+[00:07:26] short call, period. Um and really the
+[00:07:30] only the only way to get out of that
+[00:07:31] heat is if you do get a sell-off or just
+[00:07:33] a neutral chop to where you can take
+[00:07:35] that premium out, but
+[00:07:37] uh again, I want to I want to touch on
+[00:07:39] something at the end of this segment
+[00:07:41] real quick.
+[00:07:42] Uh but let's move on to the next slide
+[00:07:43] here.
+[00:07:45] To complete the picture, we also looked
+[00:07:46] at a bearish strangle for comparison.
+[00:07:48] Oh, no. We just flipped the deltas from
+[00:07:50] the bullish version to see how it
+[00:07:51] performed in the same market
+[00:07:53] environment. And I can tell you it's not
+[00:07:55] going to be good.
+[00:07:57] Uh,
+[00:07:57] bearish strangles underperformed both
+[00:07:59] alternatives while showing the lowest
+[00:08:01] volatility among all three approaches.
+[00:08:04] Returns were below expectation. The
+[00:08:06] strategy appears to be better suited for
+[00:08:08] traders holding bearish market
+[00:08:09] assumptions.
+[00:08:11] Or maybe offsetting deltas. Like there's
+[00:08:13] there's always, you know, a way that you
+[00:08:15] can make this uh, type of thing work
+[00:08:18] holistically, but
+[00:08:19] uh, not in equities. Like not in Micron.
+[00:08:21] You're going to have a real hard time if
+[00:08:23] you're doing this in something like
+[00:08:24] that. But again, doing doing neutral,
+[00:08:28] slightly bullish, slightly bearish
+[00:08:29] strategies, especially undefined risk,
+[00:08:31] it's a lot easier to manage if you're
+[00:08:33] doing it in an an index or an ETF that
+[00:08:36] doesn't move 30%, 40% in a day. Like
+[00:08:39] that's when you can get into the
+[00:08:40] troublesome situations, but uh, yeah. At
+[00:08:44] the end of the day,
+[00:08:46] still interesting to see that uh, you
+[00:08:48] had a slightly positive annualized
+[00:08:50] return on capital, likely because during
+[00:08:53] those periods of downside movement and
+[00:08:55] just chopping sideways, you had your
+[00:08:57] ability to make some money there. Uh,
+[00:08:59] but lower success rate, significantly
+[00:09:02] lower annualized ROC, uh,
+[00:09:04] and of course that's going to be
+[00:09:07] it's going to happen when you have this
+[00:09:08] uh, up into the right market that we've
+[00:09:10] been trading.
+[00:09:11] &gt;&gt; Well, also consider you can get near or
+[00:09:13] at least historically you've been able
+[00:09:15] to be closer to it at times. Not
+[00:09:17] probably over the 20-year period here
+[00:09:18] because we had a period of zero interest
+[00:09:20] rates. But uh, recently you can get a 5%
+[00:09:23] or 4% return on capital on your cash
+[00:09:26] position.
+[00:09:28] Versus like perpetually being kind of
+[00:09:31] betting on the market not going up.
+[00:09:33] Yeah, it doesn't mean that it's going to
+[00:09:33] go down, but not going up um, is is
+[00:09:36] tough in my opinion.
+[00:09:37] &gt;&gt; 100%
+[00:09:39] &gt;&gt; Couple of takeaways here. Bullish
+[00:09:40] strangles have positive delta exposure,
+[00:09:42] so they perform much better when markets
+[00:09:43] go up consistently. We get higher
+[00:09:45] returns, but also accept more volatility
+[00:09:47] compared to neutral strangles. And the
+[00:09:49] bullish strangle sits strategically
+[00:09:51] between selling naked puts and neutral
+[00:09:54] strangles. We get solid returns from the
+[00:09:56] put side while having much better
+[00:09:58] downside protection and less overall
+[00:10:00] volatility than naked puts alone. Uh and
+[00:10:04] I would take this one as
+[00:10:05] &gt;&gt; a step further. Uh
+[00:10:06] IBIT. I had a year-long strangle. I do a
+[00:10:09] year-long strangle every single year in
+[00:10:10] some kind of product. I did it in
+[00:10:12] DraftKings once. Uh
+[00:10:14] I've done it in IBIT, but my whole
+[00:10:17] strategy with IBIT was I will not take
+[00:10:20] upside risk. So, even though I had a
+[00:10:21] strangle on,
+[00:10:23] instead of waiting until 21 days and
+[00:10:25] just accepting the upside risk, I would
+[00:10:27] shift the whole thing up. So, like if I
+[00:10:29] was tested on the call side, I would
+[00:10:31] shift the entire strangle up, so my
+[00:10:33] short call being tested turned into my
+[00:10:35] short put being tested. And that really
+[00:10:37] opened my eyes to a situation where you
+[00:10:40] can just manipulate the whole thing, and
+[00:10:42] as long as you're comfortable shifting
+[00:10:44] your deltas higher,
+[00:10:45] and for me, if I'm picking up thousands
+[00:10:48] of dollars of premium over the course of
+[00:10:49] a year, I would still rather have my put
+[00:10:52] be in the money, which is going to
+[00:10:53] reflect a covered call or a spread
+[00:10:54] profile. I'm doing the same thing in the
+[00:10:56] micro e-minis here
+[00:10:58] uh this year, where I started with uh
+[00:11:01] 60 what? A 66 100 71 100 strangle
+[00:11:06] at the end of last year. I now have a
+[00:11:09] 7600 straddle,
+[00:11:11] and it's up $1600 right now. What's
+[00:11:14] crazy though is I've picked up 534
+[00:11:17] points of premium, which in SPX terms is
+[00:11:20] $53,000. You could close that trade
+[00:11:22] right now for a net a net win of 33
+[00:11:25] grand on one contract into this big rip
+[00:11:28] to the upside. So,
+[00:11:29] &gt;&gt; That's through managing your deltas.
+[00:11:30] &gt;&gt; Exactly. And that's there is something
+[00:11:32] to be said about having the call on just
+[00:11:35] in case there's a market sell-off, you
+[00:11:36] get the premium out of the call, even if
+[00:11:38] you're manipulating it higher over and
+[00:11:39] over. You just need one one week 5%
+[00:11:42] sell-off and you can buy back that call
+[00:11:43] and just lean long with the short put or
+[00:11:45] manipulate it as you see fit, but yeah,
+[00:11:48] I think
+[00:11:49] this will be a core position that I have
+[00:11:51] going forward as kind of a blend of this
+[00:11:53] where I have the bullish lean, but I
+[00:11:55] don't take the upside delta. If my If my
+[00:11:57] call is getting tested or about to go in
+[00:11:59] the money, I just shift the whole thing
+[00:12:01] up because especially in a product like
+[00:12:03] the S&amp;P 500, regardless of whether it's
+[00:12:05] an MES or SPX or spy, you're playing
+[00:12:08] into that up into the right drift that
+[00:12:10] happens passively over time. You're
+[00:12:12] still collecting more premium by keeping
+[00:12:14] the call on and even right now, this is
+[00:12:17] still a position where I've made more
+[00:12:20] than 50% of the premium that I've
+[00:12:21] collected this year and we've already
+[00:12:23] had war, sell-off, rebound, a crazy
+[00:12:26] rebound to the upside, but I'm just
+[00:12:28] managing my deltas, never taking on
+[00:12:29] upside risk, shifting the whole thing
+[00:12:31] higher, closing my eyes and just doing
+[00:12:33] it and it's been a really great trade.
+[00:12:35] So,
+[00:12:36] uh kind of blending everything all at
+[00:12:38] once, but just never taking upside risk
+[00:12:40] in the S&amp;P 500 in a market like this can
+[00:12:43] work out and it can really help you just
+[00:12:45] offset all of those delta losses that
+[00:12:47] you would have taken if you just let it
+[00:12:48] go.
+[00:12:49] &gt;&gt; Absolutely. Yeah, you have to actively
+[00:12:50] manage it. And I want to clear one thing
+[00:12:52] up for uh Minute Made in the chat just
+[00:12:54] asking about what's on the slides here.
+[00:12:56] So, in the trading bullish strategy
+[00:12:58] slide, slide seven, I believe, we're
+[00:12:59] looking at the 30 delta put, 16 delta
+[00:13:03] call, so closer there on the put side.
+[00:13:06] And then on the last one, it's just
+[00:13:08] flipped, so you've got the uh the 16
+[00:13:11] delta put, 30 delta call and that's the
+[00:13:13] one where we saw a pretty poor return on
+[00:13:15] capital, relatively speaking.
+[00:13:17] &gt;&gt; Yeah. So, yeah, the the one standard
+[00:13:19] deviation
+[00:13:21] uh on slide nine on the left there is
+[00:13:23] just your neutral strangle, 30 delta
+[00:13:26] put, 16 delta call right next to it, and
+[00:13:28] then 16 delta put, 30 delta call. So,
+[00:13:31] you're you're just leaning slightly
+[00:13:33] uh bullish or bearish in either
+[00:13:34] direction, but if you can take it a step
+[00:13:36] further and just shift your delta and
+[00:13:38] adjust your delta as it moves, you can
+[00:13:41] uh really get out of harm's way for the
+[00:13:44] most part. Uh you still got to trade
+[00:13:46] small enough to where you can withstand
+[00:13:47] any variance. That's the key here.
+[00:13:49] Um but yeah, great segment.
