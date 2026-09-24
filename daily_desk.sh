@@ -45,7 +45,12 @@ echo "  full table: $OUT/positions_$D.txt"
 
 # The Adhikary scan and the cluster view both read the liquid panel; refresh it first (~75s). Off-hours the scan
 # scores the panel's last cached close, so a stale panel meant a stale scan (2026-09-23: an evening run scored 9/21).
-$PY run_build_liquid_panel.py >/dev/null 2>&1 || echo "  (panel refresh failed; the scan and clusters use the cached panel)"
+# The builder also fills sessions yfinance silently drops (2026-09-22) from Polygon; its gap-check lines are shown here.
+if PANEL_LOG=$($PY run_build_liquid_panel.py 2>&1); then
+  echo "$PANEL_LOG" | grep -E "gap check|WARN|dropped today|^wrote" | sed 's/^/  /'
+else
+  echo "  (panel refresh failed; the scan and clusters use the cached panel)"; echo "$PANEL_LOG" | tail -3 | sed 's/^/  /'
+fi
 echo; echo "== 2/6 Adhikary scan (precision=YES + SETUP pivots are the actionable rows)"
 $PY run_adhikary_scan.py 2>/dev/null | tee "$OUT/adhikary_$D.txt" | sed -n 1,60p
 echo; echo "== 2c industry clusters of the scan's qualifiers (watchlist pointer, NOT a signal: group strength has no edge, see group_move_study_2026-09-17.md)"
