@@ -1,0 +1,44 @@
+control = post (strata: median 20 candidates, 3 paired per signal)
+
+=== RESCORE row26 variant [post] (daily) — 1,801 signals, 505 names, 2019-10-23 -> 2026-06-22 ===
+                n  meanR   medR     win    p90      t   ctrl   edge  p_edge  edge_t
+stop_hold  1801.0  0.723 -1.221  24.153  7.581  4.646  0.500  0.223   0.223   1.710
+t1R        1801.0 -0.254  1.000  51.027  1.000 -6.017 -0.189 -0.065  -0.065  -0.464
+t2R        1801.0 -0.121 -1.102  40.700  2.000 -2.280 -0.128  0.007   0.007   1.085
+trail_bar  1801.0  0.002 -0.481  34.259  2.209 -0.378  0.031 -0.029  -0.029  -0.012
+ema20      1801.0  0.514 -1.075  31.594  4.628  3.873  0.239  0.275   0.275   2.893
+
+by half (n 759 / 1042):
+           <2023-01-01  >=2023-01-01
+stop_hold        0.355         0.991
+t1R             -0.300        -0.222
+t2R             -0.220        -0.050
+trail_bar       -0.247         0.184
+ema20            0.101         0.815
+
+paired edge by half (ema20): -0.009 / +0.481 | best-arm paired edge t +2.89 | p_search (best of 5 arms, 2000 label perms) 0.0325
+
+best arm: ema20 | passes the bar (paired edge t >= 3, both halves' paired edge > 0, p_search < 0.003): no
+ROW26 post: ema20 n 1801 meanR 0.514 raw t 3.87 paired edge +0.275 edge_t +2.89 | best ema20 edge_t +2.89 p_search 0.0325
+control = xname (strata: median 20 candidates, 3 paired per signal)
+
+=== RESCORE row26 variant [xname] (daily) — 1,958 signals, 549 names, 2019-10-23 -> 2026-09-17 ===
+                n  meanR   medR     win    p90      t   ctrl   edge  p_edge  edge_t
+stop_hold  1958.0  0.612 -1.217  23.596  6.965  4.306  0.174  0.437   0.437   2.974
+t1R        1958.0 -0.265  1.000  50.511  1.000 -6.461 -0.160 -0.106  -0.106  -2.539
+t2R        1958.0 -0.159 -1.106  39.632  2.000 -2.901 -0.054 -0.104  -0.104  -1.870
+trail_bar  1958.0 -0.030 -0.498  33.708  2.107 -0.869 -0.054  0.024   0.024  -0.344
+ema20      1958.0  0.402 -1.080  30.490  4.216  3.389 -0.036  0.438   0.438   3.518
+
+by half (n 761 / 1197):
+           <2023-01-01  >=2023-01-01
+stop_hold        0.351         0.777
+t1R             -0.302        -0.242
+t2R             -0.223        -0.118
+trail_bar       -0.250         0.110
+ema20            0.097         0.596
+
+paired edge by half (ema20): +0.160 / +0.615 | best-arm paired edge t +3.52 | p_search (best of 5 arms, 2000 label perms) 0.0015
+
+best arm: ema20 | passes the bar (paired edge t >= 3, both halves' paired edge > 0, p_search < 0.003): YES
+ROW26 xname: ema20 n 1958 meanR 0.402 raw t 3.39 paired edge +0.438 edge_t +3.52 | best ema20 edge_t +3.52 p_search 0.0015

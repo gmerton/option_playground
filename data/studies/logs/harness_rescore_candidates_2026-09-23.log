@@ -1,0 +1,51 @@
+control = post (strata: median 20 candidates, 3 paired per signal)
+
+=== CAND house breakout in HYB-A [post] (daily) — 1,172 signals, 259 names, 2020-01-07 -> 2026-06-22 ===
+                n  meanR   medR     win    p90      t   ctrl   edge  p_edge  edge_t
+stop_hold  1172.0  0.229 -1.260  22.440  8.480  2.906 -0.117  0.347   0.347   4.146
+t1R        1172.0 -0.234  1.000  52.645  1.000 -3.885 -0.278  0.044   0.044   1.818
+t2R        1172.0 -0.114 -1.107  41.724  2.000 -1.100 -0.185  0.071   0.071   1.927
+trail_bar  1172.0  0.011 -0.502  35.410  2.351  0.899  0.031 -0.020  -0.020   0.612
+ema20      1172.0  0.212 -1.103  31.314  4.952  2.855  0.027  0.185   0.185   2.702
+
+by half (n 410 / 762):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.067         0.389
+t1R             -0.235        -0.233
+t2R             -0.178        -0.079
+trail_bar       -0.098         0.069
+ema20           -0.029         0.342
+
+paired edge by half (stop_hold): +0.068 / +0.497 | best-arm paired edge t +4.15 | p_search (best of 5 arms, 2000 label perms) 0.0015
+paired edge by year (stop_hold; chronological halves miss a back-half regime):
+y        2020     2021    2022    2023     2024     2025     2026
+size  156.000  173.000  81.000  92.000  131.000  290.000  249.000
+mean    0.029    0.033   0.218   0.844    0.589    0.556    0.251
+
+best arm: stop_hold | passes the bar (paired edge t >= 3, both halves' paired edge > 0, p_search < 0.003): YES
+6,874 earnings reactions on 242 names | good 25%
+control = xname (strata: median 20 candidates, 3 paired per signal)
+
+=== CAND earnings drift good+MUTED [xname] (daily) — 437 signals, 178 names, 2019-10-03 -> 2026-09-04 ===
+               n  meanR   medR     win    p90      t   ctrl   edge  p_edge  edge_t
+stop_hold  437.0  0.272  0.199  57.208  1.791  2.652  0.014  0.259   0.259   2.741
+t1R        437.0  0.044  0.294  59.497  1.000  0.486 -0.142  0.186   0.186   3.167
+t2R        437.0  0.152  0.212  57.895  2.000  2.153 -0.052  0.204   0.204   3.101
+trail_bar  437.0  0.202 -0.086  45.309  1.440  2.105 -0.031  0.233   0.233   2.255
+ema20      437.0  0.160 -0.030  47.597  1.463  1.623 -0.012  0.172   0.172   1.446
+
+by half (n 169 / 268):
+           <2023-01-01  >=2023-01-01
+stop_hold        0.186         0.327
+t1R              0.020         0.060
+t2R              0.089         0.192
+trail_bar        0.191         0.208
+ema20            0.053         0.228
+
+paired edge by half (t1R): +0.126 / +0.224 | best-arm paired edge t +3.17 | p_search (best of 5 arms, 2000 label perms) 0.0020
+paired edge by year (t1R; chronological halves miss a back-half regime):
+y       2019    2020    2021   2022    2023    2024    2025    2026
+size  23.000  42.000  58.000  46.00  95.000  72.000  64.000  37.000
+mean   0.245   0.096   0.073   0.16   0.128   0.223   0.314   0.318
+
+best arm: t1R | passes the bar (paired edge t >= 3, both halves' paired edge > 0, p_search < 0.003): YES

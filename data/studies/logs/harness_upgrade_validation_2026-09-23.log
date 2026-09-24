@@ -1,0 +1,182 @@
+## 1. NULL CALIBRATION (random signals, 500 perms)
+control = post (strata: median 20 candidates, 3 paired per signal)
+
+=== null1 (daily) — 1,954 signals, 922 names, 2019-10-03 -> 2026-08-14 ===
+                n  meanR   medR     win    p90       t   ctrl   edge  p_edge  edge_t
+stop_hold  1954.0 -0.274 -1.383  25.896  6.436  -2.104 -0.253 -0.021  -0.021   0.109
+t1R        1954.0 -0.563  0.040  50.051  1.000 -11.382 -0.526 -0.037  -0.037   0.247
+t2R        1954.0 -0.471 -1.168  40.686  2.000  -7.546 -0.413 -0.059  -0.059  -0.021
+trail_bar  1954.0 -0.186 -0.846  32.344  3.829  -1.382 -0.139 -0.047  -0.047   0.430
+ema20      1954.0 -0.242 -0.744  31.679  3.080  -2.129 -0.173 -0.069  -0.069   0.052
+
+by half (n 771 / 1183):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.429        -0.173
+t1R             -0.605        -0.536
+t2R             -0.515        -0.443
+trail_bar       -0.293        -0.116
+ema20           -0.386        -0.148
+
+paired edge by half (trail_bar): -0.135 / +0.010 | best-arm paired edge t +0.43 | p_search (best of 5 arms, 500 label perms) 0.6088
+
+best arm: trail_bar | passes the bar (paired edge t >= 3, both halves' paired edge > 0, p_search < 0.003): no
+   -> seed 1: took 3s
+control = post (strata: median 20 candidates, 3 paired per signal)
+
+=== null2 (daily) — 1,976 signals, 923 names, 2019-10-01 -> 2026-08-18 ===
+                n  meanR   medR     win    p90       t   ctrl   edge  p_edge  edge_t
+stop_hold  1976.0 -0.332 -1.443  26.012  6.021  -4.006 -0.270 -0.062  -0.062  -0.978
+t1R        1976.0 -0.631 -0.430  49.747  1.000 -12.707 -0.584 -0.047  -0.047  -1.750
+t2R        1976.0 -0.527 -1.196  40.435  2.000  -8.994 -0.456 -0.071  -0.071  -1.647
+trail_bar  1976.0 -0.249 -0.882  33.249  3.500  -3.616 -0.183 -0.066  -0.066  -1.150
+ema20      1976.0 -0.242 -0.771  32.642  3.518  -3.419 -0.229 -0.013  -0.013  -0.290
+
+by half (n 806 / 1170):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.652        -0.112
+t1R             -0.745        -0.553
+t2R             -0.665        -0.432
+trail_bar       -0.543        -0.048
+ema20           -0.497        -0.066
+
+paired edge by half (ema20): -0.240 / +0.144 | best-arm paired edge t -0.29 | p_search (best of 5 arms, 500 label perms) 0.8323
+
+best arm: ema20 | passes the bar (paired edge t >= 3, both halves' paired edge > 0, p_search < 0.003): no
+   -> seed 2: took 3s
+control = post (strata: median 20 candidates, 3 paired per signal)
+
+=== null3 (daily) — 2,008 signals, 948 names, 2019-10-03 -> 2026-08-17 ===
+                n  meanR   medR     win    p90       t   ctrl   edge  p_edge  edge_t
+stop_hold  2008.0 -0.356 -1.450  26.046  5.713  -4.661 -0.496  0.140   0.140   0.266
+t1R        2008.0 -0.581  0.280  50.299  1.000 -11.937 -0.618  0.037   0.037   0.352
+t2R        2008.0 -0.429 -1.164  41.982  2.000  -7.519 -0.488  0.059   0.059   0.438
+trail_bar  2008.0 -0.177 -0.831  33.566  4.004  -2.492 -0.250  0.073   0.073   0.224
+ema20      2008.0 -0.304 -0.754  31.574  2.953  -4.311 -0.331  0.027   0.027   0.018
+
+by half (n 803 / 1205):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.579        -0.208
+t1R             -0.623        -0.552
+t2R             -0.454        -0.413
+trail_bar       -0.305        -0.091
+ema20           -0.404        -0.237
+
+paired edge by half (t2R): +0.081 / +0.044 | best-arm paired edge t +0.44 | p_search (best of 5 arms, 500 label perms) 0.6228
+
+best arm: t2R | passes the bar (paired edge t >= 3, both halves' paired edge > 0, p_search < 0.003): no
+   -> seed 3: took 3s
+control = post (strata: median 20 candidates, 3 paired per signal)
+
+=== null4 (daily) — 1,978 signals, 964 names, 2019-10-02 -> 2026-08-17 ===
+                n  meanR   medR     win    p90       t   ctrl   edge  p_edge  edge_t
+stop_hold  1978.0 -0.043 -1.364  28.918  6.429  -0.830 -0.285  0.243   0.243   1.200
+t1R        1978.0 -0.471  1.000  52.781  1.000 -10.110 -0.580  0.109   0.109   2.370
+t2R        1978.0 -0.314 -1.146  43.731  2.000  -5.568 -0.471  0.157   0.157   2.098
+trail_bar  1978.0 -0.004 -0.691  36.603  3.901   0.130 -0.248  0.244   0.244   2.423
+ema20      1978.0 -0.023 -0.637  35.693  3.758   0.306 -0.250  0.227   0.227   2.763
+
+by half (n 792 / 1186):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.054        -0.035
+t1R             -0.432        -0.498
+t2R             -0.290        -0.331
+trail_bar        0.001        -0.007
+ema20           -0.105         0.032
+
+paired edge by half (ema20): +0.130 / +0.292 | best-arm paired edge t +2.76 | p_search (best of 5 arms, 500 label perms) 0.0200
+
+best arm: ema20 | passes the bar (paired edge t >= 3, both halves' paired edge > 0, p_search < 0.003): no
+   -> seed 4: took 3s
+control = post (strata: median 20 candidates, 3 paired per signal)
+
+=== null5 (daily) — 2,010 signals, 968 names, 2019-10-01 -> 2026-08-18 ===
+                n  meanR   medR     win    p90       t   ctrl   edge  p_edge  edge_t
+stop_hold  2010.0 -0.443 -1.450  25.025  5.543  -3.996 -0.362 -0.081  -0.081  -0.584
+t1R        2010.0 -0.522  1.000  51.990  1.000 -10.911 -0.580  0.058   0.058   1.294
+t2R        2010.0 -0.412 -1.180  42.338  2.000  -7.209 -0.489  0.077   0.077   1.153
+trail_bar  2010.0 -0.182 -0.764  34.577  3.488  -1.980 -0.187  0.006   0.006   0.172
+ema20      2010.0 -0.212 -0.764  33.682  2.835  -2.435 -0.276  0.063   0.063   0.835
+
+by half (n 810 / 1200):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.423        -0.456
+t1R             -0.497        -0.540
+t2R             -0.400        -0.420
+trail_bar       -0.157        -0.198
+ema20           -0.256        -0.183
+
+paired edge by half (t1R): +0.087 / +0.039 | best-arm paired edge t +1.29 | p_search (best of 5 arms, 500 label perms) 0.2415
+
+best arm: t1R | passes the bar (paired edge t >= 3, both halves' paired edge > 0, p_search < 0.003): no
+   -> seed 5: took 3s
+
+## 2. POWER (random signals + 0.3R planted)
+control = post (strata: median 20 candidates, 3 paired per signal)
+
+=== plant (daily) — 1,954 signals, 922 names, 2019-10-03 -> 2026-08-14 ===
+                n  meanR   medR     win    p90      t   ctrl   edge  p_edge  edge_t
+stop_hold  1954.0  0.026 -1.083  26.868  6.736  0.755 -0.253  0.279   0.279   2.896
+t1R        1954.0 -0.263  0.340  50.409  1.300 -5.003 -0.526  0.263   0.263   5.910
+t2R        1954.0 -0.171 -0.868  41.300  2.300 -2.395 -0.413  0.241   0.241   4.605
+trail_bar  1954.0  0.114 -0.546  37.462  4.129  2.170 -0.139  0.253   0.253   3.660
+ema20      1954.0  0.058 -0.444  38.792  3.380  1.535 -0.173  0.231   0.231   3.412
+
+by half (n 771 / 1183):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.129         0.127
+t1R             -0.305        -0.236
+t2R             -0.215        -0.143
+trail_bar        0.007         0.184
+ema20           -0.086         0.152
+
+paired edge by half (t1R): +0.200 / +0.303 | best-arm paired edge t +5.91 | p_search (best of 5 arms, 500 label perms) 0.0020
+
+best arm: t1R | passes the bar (paired edge t >= 3, both halves' paired edge > 0, p_search < 0.003): YES
+
+## 3. GRID, no plant: house breakout ADR {3,4} x lookback {10,20,40}
+
+=== GRID brk grid null: 6 cells x 5 arms, control=post ===
+                   params      n best_arm  edge_t  p_edge    eh1    eh2
+0  {'adr': 3.0, 'lb': 10}  60057      t1R  -1.871  -0.059 -0.093 -0.035
+1  {'adr': 3.0, 'lb': 20}  41598      t1R  -1.646  -0.057 -0.081 -0.041
+2  {'adr': 3.0, 'lb': 40}  29164    ema20  -0.753  -0.109 -0.227 -0.034
+3  {'adr': 4.0, 'lb': 10}  32224    ema20  -1.537  -0.084 -0.265  0.053
+4  {'adr': 4.0, 'lb': 20}  21773    ema20  -0.935  -0.086 -0.295  0.065
+5  {'adr': 4.0, 'lb': 40}  15068      t2R  -0.926  -0.039 -0.038 -0.040
+
+best cell {'adr': 3.0, 'lb': 40} arm ema20: paired edge t -0.75, halves -0.227/-0.034
+plateau share (edge t >= 2 & both halves > 0): 0% | median/best t ratio nan
+p_opt (whole grid re-run on 300 label perms): 0.9900  [null max-t p50 1.72, p99 4.03]
+passes (best cell paired t >= 3, halves > 0, p_opt < 0.003): no
+
+## 4. GRID, +0.3R planted in cell 4 only
+
+=== GRID brk grid spike: 6 cells x 5 arms, control=post ===
+                   params      n best_arm  edge_t  p_edge    eh1    eh2
+0  {'adr': 3.0, 'lb': 10}  60057      t1R  -1.871  -0.059 -0.093 -0.035
+1  {'adr': 3.0, 'lb': 20}  41598      t1R  -1.646  -0.057 -0.081 -0.041
+2  {'adr': 3.0, 'lb': 40}  29164    ema20  -0.753  -0.109 -0.227 -0.034
+3  {'adr': 4.0, 'lb': 10}  32224    ema20  -1.537  -0.084 -0.265  0.053
+4  {'adr': 4.0, 'lb': 20}  21773      t1R  10.058   0.239  0.194  0.272
+5  {'adr': 4.0, 'lb': 40}  15068      t2R  -0.926  -0.039 -0.038 -0.040
+
+best cell {'adr': 4.0, 'lb': 20} arm t1R: paired edge t +10.06, halves +0.194/+0.272
+plateau share (edge t >= 2 & both halves > 0): 17% | median/best t ratio -0.12
+p_opt (whole grid re-run on 300 label perms): 0.0033  [null max-t p50 1.72, p99 4.03]
+passes (best cell paired t >= 3, halves > 0, p_opt < 0.003): no
+
+## 5. GRID, +0.3R planted in ALL cells
+
+=== GRID brk grid plateau: 6 cells x 5 arms, control=post ===
+                   params      n best_arm  edge_t  p_edge    eh1    eh2
+0  {'adr': 3.0, 'lb': 10}  60057      t1R  13.788   0.241  0.207  0.265
+1  {'adr': 3.0, 'lb': 20}  41598      t1R  13.173   0.243  0.219  0.259
+2  {'adr': 3.0, 'lb': 40}  29164      t1R  11.841   0.248  0.260  0.240
+3  {'adr': 4.0, 'lb': 10}  32224      t1R  10.559   0.239  0.182  0.282
+4  {'adr': 4.0, 'lb': 20}  21773      t1R  10.058   0.239  0.194  0.272
+5  {'adr': 4.0, 'lb': 40}  15068      t1R   8.910   0.268  0.288  0.256
+
+best cell {'adr': 3.0, 'lb': 10} arm t1R: paired edge t +13.79, halves +0.207/+0.265
+plateau share (edge t >= 2 & both halves > 0): 100% | median/best t ratio 0.81
+p_opt (whole grid re-run on 300 label perms): 0.0033  [null max-t p50 1.72, p99 4.02]
+passes (best cell paired t >= 3, halves > 0, p_opt < 0.003): no

@@ -23,7 +23,10 @@ inflated it ~3x on the house breakout. Use control="post" (random later session,
 Also: R_CLIP = 10 removes a quarter of a breakout book's gross; report a cap-20 / stop-floor variant for
 right-tail strategies (see breitstein_tests/precision_tier_control_2026-09-19.md).
 
-Bar to pass: beats its control, positive in both halves, |t| >= 3 on day-clustered means.
+Bar to pass (daily, from 2026-09-23 [WL-2]): PAIRED edge t >= 3 on the best arm (each signal minus its own controls,
+date-clustered), both halves' paired edge > 0, and p_search < 0.003 from a label-permutation null that charges the
+best-of-arms pick. run_grid() prices a whole pre-registered grid as one test (p_opt) and reports plateau vs spike.
+Intraday runs still use the legacy unpaired rule (|t| on raw R + point edge > 0).
 """
 from __future__ import annotations
 
@@ -133,11 +136,172 @@ def _stats(x: pd.DataFrame, arm: str) -> dict:
                 p90=s.quantile(0.9), t=d.mean() / d.std() * np.sqrt(len(d)) if len(d) > 2 else np.nan)
 
 
+# ---------------------------------------------------------------------------------------------------------------
+# 2026-09-23 upgrade ([WL-2], design: data/neurotrader/videos/2025-03-03_NLBXgSmRBgU/notes.md)
+#   A  PAIRED EDGE t. Each signal is paired with the mean of ITS OWN controls; t is on per-date means of
+#      (R_signal - R_ctrl). "Beats the control" is now a significance statement, not `edge > 0`.
+#   B  LABEL-PERMUTATION NULL for the best-of-arms pick. Each signal's matched STRATUM (the signal plus its candidate
+#      controls: same name next 20 sessions for "post", same date other names for "xname") has the "signal" label
+#      re-assigned at random; the max-over-arms edge t is recomputed; p_search = share of permutations >= observed.
+#      Exact conditional null: name, date, vol regime and cross-section are held fixed by construction.
+#   D  run_grid(): the whole pre-registered grid is re-run under each permutation (shared keys, so correlated cells
+#      stay correlated) -> p_opt, the optimisation-aware p; plus a plateau metric (spike vs plateau).
+# Pass (daily): paired edge t >= 3 on the best arm, both halves' paired edge > 0, p_search < 0.003.
+# Halves are a CONSISTENCY check, not out-of-sample (true OOS = the forward lockbox from 2026-09-22).
+# ---------------------------------------------------------------------------------------------------------------
+PERMS = 2000
+P_BAR = 0.003
+_M64 = np.uint64(0xFFFFFFFFFFFFFFFF)
+
+
+def _mix64(x: np.ndarray) -> np.ndarray:
+    """splitmix64 finaliser -> uniform [0,1). Deterministic keys shared across grid cells."""
+    with np.errstate(over="ignore"):
+        z = x.astype(np.uint64) + np.uint64(0x9E3779B97F4A7C15)
+        z = (z ^ (z >> np.uint64(30))) * np.uint64(0xBF58476D1CE4E5B9)
+        z = (z ^ (z >> np.uint64(27))) * np.uint64(0x94D049BB133111EB)
+        z = z ^ (z >> np.uint64(31))
+    return (z >> np.uint64(11)).astype(np.float64) / float(1 << 53)
+
+
+def _build_strata(P: DailyPanel, S: pd.DataFrame, hold: int, entry_at: str, control: str, size: int,
+                  plant: float = 0.0) -> dict | None:
+    """For every signal: arms of the signal (member 0) and of up to `size` candidate controls (members 1..).
+    Returns R[s, m, arm] (NaN = no member), member coordinates (session k, name j) for the permutation keys,
+    stratum dates, and the legacy T/K tables."""
+    idx = P.close.index
+    px = P.close.values if entry_at == "close" else P.open.values
+    off = 0 if entry_at == "close" else 1
+    keys = {(int(r.j), int(r.i)) for r in S.itertuples()}
+    A = len(DAILY_ARMS)
+    Rs, Ks, Js, dates, recs = [], [], [], [], []
+    for r in S.itertuples(index=False):
+        i0, j0 = int(r.i), int(r.j)
+        o = _daily_arms(P, j0, i0, float(r.stop), r.side, hold, entry_at)
+        if not o:
+            continue
+        stop_pct = float(r.stop) / px[i0 + off, j0] - 1
+        mem = [(i0, j0, o)]
+        if control == "xname":
+            ok = np.flatnonzero(P.elig.values[i0] & np.isfinite(px[i0 + off]))
+            cand = [jj for jj in ok if jj != j0 and (int(jj), i0) not in keys]
+            if cand:
+                rng = np.random.default_rng((i0 * 1_000_003 + j0) % (2 ** 32))
+                for jj in rng.choice(cand, size=min(size, len(cand)), replace=False):
+                    co = _daily_arms(P, int(jj), i0, px[i0 + off, int(jj)] * (1 + stop_pct), r.side, hold, entry_at)
+                    if co:
+                        mem.append((i0, int(jj), co))
+        else:
+            if control == "post":
+                window = range(i0 + 1, min(i0 + 21, len(idx)))
+            else:
+                d = pd.Timestamp(r.date)
+                window = np.flatnonzero((idx.year == d.year) & (idx.month == d.month))
+            for k in window:
+                k = int(k)
+                if (j0, k) in keys or k + hold + 2 >= len(idx) or not P.elig.values[k, j0] \
+                        or not np.isfinite(px[k + off, j0]):
+                    continue
+                co = _daily_arms(P, j0, k, px[k + off, j0] * (1 + stop_pct), r.side, hold, entry_at)
+                if co:
+                    mem.append((k, j0, co))
+                if len(mem) > size:
+                    break
+        if len(mem) < 2:
+            continue
+        R = np.full((size + 1, A), np.nan)
+        kk = np.full(size + 1, -1, dtype=np.int64)
+        jj_ = np.full(size + 1, -1, dtype=np.int64)
+        for m, (k, j, arms) in enumerate(mem[:size + 1]):
+            R[m] = [arms[a] for a in DAILY_ARMS]
+            kk[m], jj_[m] = k, j
+        R[0] += plant                                              # test hook: plant an effect in the real signal
+        Rs.append(R); Ks.append(kk); Js.append(jj_)
+        dates.append(str(idx[i0].date()))
+        recs.append({**{a: R[0, n] for n, a in enumerate(DAILY_ARMS)}, "sym": r.sym, "date": str(idx[i0].date()),
+                     "side": r.side})
+    if not Rs:
+        return None
+    return dict(R=np.stack(Rs), k=np.stack(Ks), j=np.stack(Js), dates=np.array(dates), T=pd.DataFrame(recs))
+
+
+def _date_t(diff: np.ndarray, codes: np.ndarray, nd: int) -> float:
+    ok = np.isfinite(diff)
+    if ok.sum() < 20:
+        return np.nan
+    c = np.bincount(codes[ok], minlength=nd)
+    s = np.bincount(codes[ok], weights=diff[ok], minlength=nd)
+    m = s[c > 0] / c[c > 0]
+    return float(m.mean() / m.std(ddof=1) * np.sqrt(len(m))) if len(m) > 2 and m.std(ddof=1) > 0 else np.nan
+
+
+def _pick(st: dict, u: np.ndarray, controls: int) -> tuple[np.ndarray, np.ndarray]:
+    """Given keys u[s, m] (inf = no member), the lowest key is the signal and the next `controls` are its controls.
+    Returns (signal R [s, arm], control-mean R [s, arm])."""
+    order = np.argsort(u, axis=1)
+    R = st["R"]
+    s_ix = np.arange(len(R))
+    sig = R[s_ix, order[:, 0]]
+    cix = order[:, 1:1 + controls]
+    cval = R[s_ix[:, None], cix]                                    # [s, c, arm]
+    valid = np.isfinite(np.take_along_axis(u, cix, axis=1))[:, :, None]
+    cval = np.where(valid, cval, np.nan)
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore", RuntimeWarning)
+        return sig, np.nanmean(cval, axis=1)
+
+
+def _obs_keys(st: dict) -> np.ndarray:
+    """Observed labelling: member 0 is the signal; controls = a fixed random draw among the others."""
+    valid = st["k"] >= 0
+    u = np.where(valid, _mix64(st["k"] * 7919 + st["j"] * 104_729 + 1) + 1.0, np.inf)
+    u[:, 0] = -1.0
+    return u
+
+
+def _perm_keys(st: dict, p: int) -> np.ndarray:
+    valid = st["k"] >= 0
+    return np.where(valid, _mix64((st["k"] * 2_654_435_761 + st["j"]) * 1_000_003 + (p + 1) * 0x5851F42D), np.inf)
+
+
+def _paired(st: dict, u: np.ndarray, controls: int, codes: np.ndarray, nd: int) -> np.ndarray:
+    sig, ctl = _pick(st, u, controls)
+    return np.array([_date_t(sig[:, a] - ctl[:, a], codes, nd) for a in range(sig.shape[1])])
+
+
+def _stratum_stats(st: dict, controls: int, split: str, perms: int) -> dict:
+    """Observed paired edge (per arm), its t and halves, and the permutation null of the max-over-arms t."""
+    codes_s = pd.Series(st["dates"])
+    codes, uniq = pd.factorize(codes_s)
+    nd = len(uniq)
+    u0 = _obs_keys(st)
+    sig, ctl = _pick(st, u0, controls)
+    diff = sig - ctl
+    first = codes_s.values < split
+    out = {}
+    for a, arm in enumerate(DAILY_ARMS):
+        d = diff[:, a]
+        out[arm] = dict(pctrl=np.nanmean(ctl[:, a]), pedge=np.nanmean(d), edge_t=_date_t(d, codes, nd),
+                        eh1=np.nanmean(d[first]) if first.any() else np.nan,
+                        eh2=np.nanmean(d[~first]) if (~first).any() else np.nan)
+    for a, arm in enumerate(DAILY_ARMS):
+        out[arm]["diff"] = diff[:, a]
+    obs = max((v["edge_t"] for v in out.values() if np.isfinite(v["edge_t"])), default=np.nan)
+    null = np.array([np.nanmax(_paired(st, _perm_keys(st, p), controls, codes, nd)) for p in range(perms)])
+    p_search = (np.sum(null >= obs) + 1) / (perms + 1) if (perms and np.isfinite(obs)) else np.nan
+    return dict(arms=out, obs_max_t=obs, p_search=p_search, null=null, codes=codes, nd=nd, dates=codes_s.values)
+
+
 def _report(name: str, T: pd.DataFrame, K: pd.DataFrame, arms: list[str], split: str,
-            note: str, timeframe: str, ledger: bool = True) -> pd.DataFrame:
+            note: str, timeframe: str, ledger: bool = True, paired: dict | None = None) -> pd.DataFrame:
+    """paired=None keeps the pre-2026-09-23 behaviour (raw-R t + point `edge > 0`), still used by intraday runs and
+    by run_level_trigger_test.py. With `paired` (from _stratum_stats) the pass rule is the paired one."""
     tab = pd.DataFrame({a: _stats(T, a) for a in arms}).T
     tab["ctrl"] = [K[a].dropna().mean() if len(K) and a in K else np.nan for a in arms]
     tab["edge"] = tab.meanR - tab.ctrl
+    if paired:
+        tab["p_edge"] = [paired["arms"][a]["pedge"] for a in arms]
+        tab["edge_t"] = [paired["arms"][a]["edge_t"] for a in arms]
     print(f"\n=== {name} ({timeframe}) — {len(T):,} signals, {T.sym.nunique()} names, "
           f"{pd.to_datetime(T.date).min().date()} -> {pd.to_datetime(T.date).max().date()} ===")
     print(tab.round(3).to_string())
@@ -146,16 +310,34 @@ def _report(name: str, T: pd.DataFrame, K: pd.DataFrame, arms: list[str], split:
                            f">={split}": {a: h2[a].mean() for a in arms}}).round(3)
     print(f"\nby half (n {len(h1)} / {len(h2)}):")
     print(halves.to_string())
-    best = tab.edge.idxmax() if tab.edge.notna().any() else tab.meanR.idxmax()
+    if paired:
+        best = tab.edge_t.idxmax() if tab.edge_t.notna().any() else tab.meanR.idxmax()
+        pa = paired["arms"][best]
+        n_perm = len(paired["null"])
+        if n_perm and 1 / (n_perm + 1) >= P_BAR:
+            print(f"⚠ {n_perm} permutations cannot reach p < {P_BAR} (floor {1 / (n_perm + 1):.4f}); no verdict")
+        passed = bool(np.isfinite(pa["edge_t"]) and pa["edge_t"] >= 3 and pa["eh1"] > 0 and pa["eh2"] > 0
+                      and paired["p_search"] < P_BAR)
+        extra = dict(edge_t=pa["edge_t"], p_search=paired["p_search"], ehalf1=pa["eh1"], ehalf2=pa["eh2"])
+        print(f"\npaired edge by half ({best}): {pa['eh1']:+.3f} / {pa['eh2']:+.3f} | best-arm paired edge t "
+              f"{pa['edge_t']:+.2f} | p_search (best of {len(arms)} arms, {len(paired['null'])} label perms) "
+              f"{paired['p_search']:.4f}")
+        yr = pd.DataFrame({"y": pd.to_datetime(paired["dates"]).year, "d": pa["diff"]}).dropna()
+        yt = yr.groupby("y").d.agg(["size", "mean"]).round(3).T
+        print(f"paired edge by year ({best}; chronological halves miss a back-half regime):\n{yt.to_string()}")
+        bar = f"paired edge t >= 3, both halves' paired edge > 0, p_search < {P_BAR}"
+    else:
+        best = tab.edge.idxmax() if tab.edge.notna().any() else tab.meanR.idxmax()
+        passed = bool(np.isfinite(tab.loc[best].get("edge", np.nan)) and tab.loc[best].edge > 0
+                      and abs(tab.loc[best].t) >= 3 and h1[best].mean() > 0 and h2[best].mean() > 0)
+        extra = {}
+        bar = "beats control, both halves positive, |t|>=3 (legacy, unpaired)"
     row = tab.loc[best]
-    passed = (np.isfinite(row.get("edge", np.nan)) and row.edge > 0 and abs(row.t) >= 3
-              and h1[best].mean() > 0 and h2[best].mean() > 0)
     if ledger:
         append_ledger(name=name, timeframe=timeframe, n=len(T), best_arm=best, meanR=row.meanR,
                       ctrl=row.get("ctrl", np.nan), edge=row.get("edge", np.nan), t=row.t,
-                      half1=h1[best].mean(), half2=h2[best].mean(), passed=passed, note=note)
-    print(f"\nbest arm by edge: {best} | passes the bar (beats control, both halves positive, |t|>=3): "
-          f"{'YES' if passed else 'no'}")
+                      half1=h1[best].mean(), half2=h2[best].mean(), passed=passed, note=note, **extra)
+    print(f"\nbest arm: {best} | passes the bar ({bar}): {'YES' if passed else 'no'}")
     return tab
 
 
@@ -165,12 +347,16 @@ def append_ledger(**row) -> None:
     if LEDGER.exists():
         df = pd.concat([pd.read_csv(LEDGER), df], ignore_index=True)
     df.to_csv(LEDGER, index=False)
-    cols = ["tested", "name", "timeframe", "n", "best_arm", "meanR", "ctrl", "edge", "t", "half1", "half2", "passed", "note"]
-    d = df.reindex(columns=cols).round(3).astype(str)
+    cols = ["tested", "name", "timeframe", "n", "best_arm", "meanR", "ctrl", "edge", "t", "edge_t", "p_search",
+            "p_opt", "half1", "half2", "passed", "note"]
+    d = df.reindex(columns=cols).round(4).astype(str).replace("nan", "")
     md = ("| " + " | ".join(cols) + " |\n| " + " | ".join("---" for _ in cols) + " |\n"
           + "\n".join("| " + " | ".join(r) + " |" for r in d.values))
     hdr = (f"# Pattern ledger\n\n_Every entry pattern tested with `lib.studies.pattern_test`, newest last._\n\n"
-           f"**Bar to pass:** beats the same-name random control, positive in both halves, |t| >= 3.\n"
+           f"**Bar to pass (daily, from 2026-09-23):** paired edge t >= 3 on the best arm, both halves' paired edge "
+           f"> 0, and p_search < {P_BAR} (label-permutation null over the best-of-arms pick). Grid rows also carry "
+           f"p_opt (the whole grid re-run under each permutation). Rows before 2026-09-23 used the unpaired rule "
+           f"(|t| on raw R + point edge > 0) and have no edge_t / p_search.\n"
            f"**Multiple testing:** {len(df)} patterns tested so far — at 5% significance, expect "
            f"~{0.05 * len(df):.1f} to clear by chance. Discount accordingly.\n\n")
     LEDGER_MD.write_text(hdr + md + "\n")
@@ -178,7 +364,8 @@ def append_ledger(**row) -> None:
 
 def run_daily(name: str, pattern, *, hold: int = 5, controls: int = 3, split: str = "2023-01-01",
               note: str = "", panel: DailyPanel | None = None, ledger: bool = True,
-              entry_at: str = "next_open", control: str = "post") -> pd.DataFrame:
+              entry_at: str = "next_open", control: str = "post", strata: int = 20, perms: int = PERMS,
+              plant: float = 0.0) -> pd.DataFrame:
     """pattern(P) -> signal table (from daily_signals).
     ledger=False for parameter sweeps: report only, no ledger row (keeps the multiple-testing count honest).
     entry_at="close" enters at the signal bar's close (the house process); the control then enters at the
@@ -190,51 +377,80 @@ def run_daily(name: str, pattern, *, hold: int = 5, controls: int = 3, split: st
                (data/studies/ledger_rerun/); kept only to reproduce the pre-re-run rows.
       "post"   same name, random session in the 20 sessions AFTER the signal (no look-ahead): is the signal DAY a
                better entry than a random later day in a name known to have fired?
-      "xname"  random eligible OTHER name, same date, same stop %: does the NAME selection matter?"""
+      "xname"  random eligible OTHER name, same date, same stop %: does the NAME selection matter?
+    2026-09-23: every signal now carries a STRATUM of up to `strata` candidate controls; `controls` of them are its
+    paired controls; `perms` label permutations price the best-of-arms pick (p_search). perms=0 skips the null.
+    plant = test hook only (adds a constant R to the real signal)."""
     P = panel or load_panel()
     S = pattern(P)
-    idx = P.close.index
-    recs, ctrl, keys = [], [], {(int(r.j), int(r.i)) for r in S.itertuples()}
-    for r in S.itertuples(index=False):
-        o = _daily_arms(P, int(r.j), int(r.i), float(r.stop), r.side, hold, entry_at)
-        if not o:
-            continue
-        recs.append({**o, "sym": r.sym, "date": str(pd.Timestamp(r.date).date()), "side": r.side})
-        d = pd.Timestamp(r.date)
-        px = P.close.values if entry_at == "close" else P.open.values
-        off = 0 if entry_at == "close" else 1
-        stop_pct = float(r.stop) / px[int(r.i) + off, int(r.j)] - 1
-        i0 = int(r.i)
-        if control == "xname":
-            ok = np.flatnonzero(P.elig.values[i0] & np.isfinite(px[i0 + off]))
-            cand = [jj for jj in ok if jj != int(r.j) and (int(jj), i0) not in keys]
-            if not cand:
-                continue
-            for jj in RNG.choice(cand, size=min(controls, len(cand)), replace=False):
-                jj = int(jj)
-                co = _daily_arms(P, jj, i0, px[i0 + off, jj] * (1 + stop_pct), r.side, hold, entry_at)
-                if co:
-                    ctrl.append({**co, "sym": P.close.columns[jj], "date": str(idx[i0].date()), "side": r.side})
-            continue
-        if control == "post":
-            window = range(i0 + 1, min(i0 + 21, len(idx)))
-        else:
-            window = np.flatnonzero((idx.year == d.year) & (idx.month == d.month))
-        cand = [k for k in window if (int(r.j), int(k)) not in keys and k + hold + 2 < len(idx)
-                and P.elig.values[k, int(r.j)] and np.isfinite(px[k + off, int(r.j)])]
-        if not cand:
-            continue
-        for k in RNG.choice(cand, size=min(controls, len(cand)), replace=False):
-            k = int(k)
-            co = _daily_arms(P, int(r.j), k, px[k + off, int(r.j)] * (1 + stop_pct), r.side, hold, entry_at)
-            if co:
-                ctrl.append({**co, "sym": r.sym, "date": str(idx[k].date()), "side": r.side})
-    T, K = pd.DataFrame(recs), pd.DataFrame(ctrl)
-    if T.empty:
-        print(f"{name}: no signals"); return T
+    st = _build_strata(P, S, hold, entry_at, control, strata, plant)
+    if st is None:
+        print(f"{name}: no signals"); return pd.DataFrame()
+    T = st["T"]
+    sig, ctl = _pick(st, _obs_keys(st), controls)
+    K = pd.DataFrame(ctl, columns=DAILY_ARMS)                       # per-signal control means (legacy columns)
     T.to_parquet(REPO / f"data/cache/pattern_{name.replace(' ', '_').lower()}_daily.parquet", index=False)
-    print(f"control = {control} ({len(K):,} control trades)")
-    return _report(name, T, K, DAILY_ARMS, split, note + f"; ctrl={control}", "daily", ledger=ledger)
+    paired = _stratum_stats(st, controls, split, perms)
+    print(f"control = {control} (strata: median {np.median((st['k'] >= 0).sum(axis=1) - 1):.0f} candidates, "
+          f"{controls} paired per signal)")
+    tab = _report(name, T, K, DAILY_ARMS, split, note + f"; ctrl={control}", "daily", ledger=ledger, paired=paired)
+    tab.attrs.update(p_search=paired["p_search"], null=paired["null"])
+    return tab
+
+
+def run_grid(name: str, pattern_factory, grid: list[dict], *, hold: int = 5, controls: int = 3,
+             split: str = "2023-01-01", note: str = "", panel: DailyPanel | None = None, ledger: bool = True,
+             entry_at: str = "next_open", control: str = "post", strata: int = 20, perms: int = PERMS,
+             plant_cell: int | None = None, plant: float = 0.0) -> pd.DataFrame:
+    """Pre-registered parameter grid, priced as ONE test. pattern_factory(P, **cell) -> signal table.
+    Reports the surface (best-arm paired edge t per cell, halves), a plateau metric, and p_opt: the share of label
+    permutations in which the max over ALL cells x arms is >= the observed max. Permutation keys are shared across
+    cells (keyed by session x name), so overlapping cells stay as correlated as they really are.
+    Writes one ledger row per grid. plant_cell / plant = test hooks."""
+    P = panel or load_panel()
+    cells = []
+    for c, prm in enumerate(grid):
+        st = _build_strata(P, pattern_factory(P, **prm), hold, entry_at, control, strata,
+                           plant if plant_cell in (c, -1) else 0.0)
+        if st is None:
+            continue
+        stats = _stratum_stats(st, controls, split, 0)
+        best = max(stats["arms"], key=lambda a: (stats["arms"][a]["edge_t"]
+                                                  if np.isfinite(stats["arms"][a]["edge_t"]) else -np.inf))
+        b = stats["arms"][best]
+        cells.append(dict(cell=c, params=prm, st=st, codes=stats["codes"], nd=stats["nd"], n=len(st["R"]),
+                          best_arm=best, edge_t=b["edge_t"], p_edge=b["pedge"], eh1=b["eh1"], eh2=b["eh2"]))
+    if not cells:
+        print(f"{name}: no signals in any cell"); return pd.DataFrame()
+    surf = pd.DataFrame([{k: v for k, v in c.items() if k not in ("st", "codes", "nd")} for c in cells])
+    obs = np.nanmax(surf.edge_t)
+    null = np.empty(perms)
+    for p in range(perms):
+        null[p] = max(np.nanmax(_paired(c["st"], _perm_keys(c["st"], p), controls, c["codes"], c["nd"]))
+                      for c in cells)
+    p_opt = (np.sum(null >= obs) + 1) / (perms + 1) if perms else np.nan
+    good = (surf.edge_t >= 2) & (surf.eh1 > 0) & (surf.eh2 > 0)
+    plateau = good.mean()
+    ratio = surf.edge_t.median() / obs if obs > 0 else np.nan
+    bi = surf.edge_t.idxmax()
+    b = surf.loc[bi]
+    print(f"\n=== GRID {name}: {len(surf)} cells x {len(DAILY_ARMS)} arms, control={control} ===")
+    print(surf.drop(columns=["cell"]).round(3).to_string())
+    print(f"\nbest cell {b.params} arm {b.best_arm}: paired edge t {b.edge_t:+.2f}, halves {b.eh1:+.3f}/{b.eh2:+.3f}"
+          f"\nplateau share (edge t >= 2 & both halves > 0): {plateau:.0%} | median/best t ratio {ratio:.2f}"
+          f"\np_opt (whole grid re-run on {perms} label perms): {p_opt:.4f}  [null max-t p50 {np.median(null):.2f}, "
+          f"p99 {np.quantile(null, 0.99):.2f}]")
+    if perms and 1 / (perms + 1) >= P_BAR:
+        print(f"⚠ {perms} permutations cannot reach p < {P_BAR} (floor {1 / (perms + 1):.4f}); no verdict")
+    passed = bool(b.edge_t >= 3 and b.eh1 > 0 and b.eh2 > 0 and p_opt < P_BAR)
+    print(f"passes (best cell paired t >= 3, halves > 0, p_opt < {P_BAR}): {'YES' if passed else 'no'}")
+    if ledger:
+        append_ledger(name=f"GRID {name}", timeframe="daily", n=int(b.n), best_arm=f"{b.best_arm} @ {b.params}",
+                      meanR=np.nan, ctrl=np.nan, edge=b.p_edge, t=np.nan, edge_t=b.edge_t, p_search=np.nan,
+                      p_opt=p_opt, half1=b.eh1, half2=b.eh2, passed=passed,
+                      note=note + f"; {len(surf)} cells, plateau {plateau:.0%}, median/best {ratio:.2f}; ctrl={control}")
+    surf.attrs.update(p_opt=p_opt, plateau=plateau, ratio=ratio, null=null)
+    return surf
 
 
 def run_intraday(name: str, pattern, *, controls: int = 3, split: str = "2026-06-01",

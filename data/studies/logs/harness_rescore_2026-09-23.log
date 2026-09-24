@@ -1,0 +1,274 @@
+6,874 earnings reactions on 242 names | good 25%
+
+
+====================================================================================================
+RESCORE precision-tier breakout (house), CLOSE entry, hold 60 | control post | old: t 3.29, edge +0.144, PASSED (IN BOOK)
+====================================================================================================
+control = post (strata: median 20 candidates, 3 paired per signal)
+
+=== RESCORE precision-tier breakout (house), CLOSE entry, hold 60 [post] (daily) — 1,851 signals, 515 names, 2019-10-23 -> 2026-06-22 ===
+                n  meanR   medR     win    p90      t   ctrl   edge  p_edge  edge_t
+stop_hold  1851.0  0.253 -1.228  24.041  7.782  1.635  0.104  0.149   0.149   1.187
+t1R        1851.0 -0.263  1.000  51.162  1.000 -6.346 -0.194 -0.069  -0.069  -0.814
+t2R        1851.0 -0.135 -1.106  40.681  2.000 -2.862 -0.128 -0.008  -0.008   0.507
+trail_bar  1851.0 -0.026 -0.487  34.198  2.286 -1.255  0.025 -0.051  -0.051  -0.767
+ema20      1851.0  0.232 -1.081  31.442  4.757  1.533  0.093  0.139   0.139   1.357
+
+by half (n 779 / 1072):
+           <2023-01-01  >=2023-01-01
+stop_hold        0.010         0.430
+t1R             -0.307        -0.231
+t2R             -0.236        -0.062
+trail_bar       -0.272         0.153
+ema20           -0.051         0.438
+
+paired edge by half (ema20): -0.085 / +0.302 | best-arm paired edge t +1.36 | p_search (best of 5 arms, 2000 label perms) 0.3238
+
+best arm: ema20 | passes the bar (paired edge t >= 3, both halves' paired edge > 0, p_search < 0.003): no
+
+
+====================================================================================================
+RESCORE precision-tier breakout (house), CLOSE entry, hold 60 | control xname | old: t 3.29, edge +0.144, PASSED (IN BOOK)
+====================================================================================================
+control = xname (strata: median 20 candidates, 3 paired per signal)
+
+=== RESCORE precision-tier breakout (house), CLOSE entry, hold 60 [xname] (daily) — 2,013 signals, 558 names, 2019-10-23 -> 2026-09-17 ===
+                n  meanR   medR     win    p90      t   ctrl   edge  p_edge  edge_t
+stop_hold  2013.0  0.181 -1.224  23.497  7.091  1.250  0.046  0.135   0.135   0.707
+t1R        2013.0 -0.273  1.000  50.671  1.000 -6.785 -0.177 -0.096  -0.096  -2.466
+t2R        2013.0 -0.169 -1.107  39.692  2.000 -3.436 -0.077 -0.092  -0.092  -1.913
+trail_bar  2013.0 -0.054 -0.500  33.731  2.184 -1.721 -0.080  0.026   0.026  -0.604
+ema20      2013.0  0.146 -1.085  30.402  4.245  0.989 -0.091  0.237   0.237   1.815
+
+by half (n 781 / 1232):
+           <2023-01-01  >=2023-01-01
+stop_hold        0.007         0.291
+t1R             -0.310        -0.250
+t2R             -0.238        -0.126
+trail_bar       -0.274         0.085
+ema20           -0.054         0.273
+
+paired edge by half (ema20): +0.048 / +0.356 | best-arm paired edge t +1.81 | p_search (best of 5 arms, 2000 label perms) 0.1114
+
+best arm: ema20 | passes the bar (paired edge t >= 3, both halves' paired edge > 0, p_search < 0.003): no
+
+
+====================================================================================================
+RESCORE earnings drift, good+MUTED | control post | old: t 2.65, PARKED
+====================================================================================================
+control = post (strata: median 20 candidates, 3 paired per signal)
+
+=== RESCORE earnings drift, good+MUTED [post] (daily) — 426 signals, 175 names, 2019-10-03 -> 2026-08-20 ===
+               n  meanR   medR     win    p90      t   ctrl   edge  p_edge  edge_t
+stop_hold  426.0  0.277  0.198  57.042  1.812  2.628  0.010  0.268   0.268   2.285
+t1R        426.0  0.045  0.293  59.390  1.000  0.462 -0.101  0.146   0.146   2.319
+t2R        426.0  0.154  0.206  57.746  2.000  2.119 -0.024  0.179   0.179   2.440
+trail_bar  426.0  0.211 -0.073  45.775  1.452  2.137  0.002  0.209   0.209   2.078
+ema20      426.0  0.165 -0.029  47.653  1.507  1.651  0.012  0.153   0.153   1.586
+
+by half (n 162 / 264):
+           <2023-01-01  >=2023-01-01
+stop_hold        0.207         0.321
+t1R              0.036         0.050
+t2R              0.106         0.184
+trail_bar        0.202         0.216
+ema20            0.061         0.228
+
+paired edge by half (t2R): +0.181 / +0.177 | best-arm paired edge t +2.44 | p_search (best of 5 arms, 2000 label perms) 0.0205
+
+best arm: t2R | passes the bar (paired edge t >= 3, both halves' paired edge > 0, p_search < 0.003): no
+
+
+====================================================================================================
+RESCORE earnings drift, good+MUTED | control xname | old: t 2.65, PARKED
+====================================================================================================
+control = xname (strata: median 20 candidates, 3 paired per signal)
+
+=== RESCORE earnings drift, good+MUTED [xname] (daily) — 437 signals, 178 names, 2019-10-03 -> 2026-09-04 ===
+               n  meanR   medR     win    p90      t   ctrl   edge  p_edge  edge_t
+stop_hold  437.0  0.272  0.199  57.208  1.791  2.652  0.014  0.259   0.259   2.741
+t1R        437.0  0.044  0.294  59.497  1.000  0.486 -0.142  0.186   0.186   3.167
+t2R        437.0  0.152  0.212  57.895  2.000  2.153 -0.052  0.204   0.204   3.101
+trail_bar  437.0  0.202 -0.086  45.309  1.440  2.105 -0.031  0.233   0.233   2.255
+ema20      437.0  0.160 -0.030  47.597  1.463  1.623 -0.012  0.172   0.172   1.446
+
+by half (n 169 / 268):
+           <2023-01-01  >=2023-01-01
+stop_hold        0.186         0.327
+t1R              0.020         0.060
+t2R              0.089         0.192
+trail_bar        0.191         0.208
+ema20            0.053         0.228
+
+paired edge by half (t1R): +0.126 / +0.224 | best-arm paired edge t +3.17 | p_search (best of 5 arms, 2000 label perms) 0.0020
+
+best arm: t1R | passes the bar (paired edge t >= 3, both halves' paired edge > 0, p_search < 0.003): YES
+
+
+====================================================================================================
+RESCORE house breakout in HYB-A | control post | old: t 2.84 (stop_hold), not passed
+====================================================================================================
+control = post (strata: median 20 candidates, 3 paired per signal)
+
+=== RESCORE house breakout in HYB-A [post] (daily) — 1,172 signals, 259 names, 2020-01-07 -> 2026-06-22 ===
+                n  meanR   medR     win    p90      t   ctrl   edge  p_edge  edge_t
+stop_hold  1172.0  0.229 -1.260  22.440  8.480  2.906 -0.117  0.347   0.347   4.146
+t1R        1172.0 -0.234  1.000  52.645  1.000 -3.885 -0.278  0.044   0.044   1.818
+t2R        1172.0 -0.114 -1.107  41.724  2.000 -1.100 -0.185  0.071   0.071   1.927
+trail_bar  1172.0  0.011 -0.502  35.410  2.351  0.899  0.031 -0.020  -0.020   0.612
+ema20      1172.0  0.212 -1.103  31.314  4.952  2.855  0.027  0.185   0.185   2.702
+
+by half (n 410 / 762):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.067         0.389
+t1R             -0.235        -0.233
+t2R             -0.178        -0.079
+trail_bar       -0.098         0.069
+ema20           -0.029         0.342
+
+paired edge by half (stop_hold): +0.068 / +0.497 | best-arm paired edge t +4.15 | p_search (best of 5 arms, 2000 label perms) 0.0015
+
+best arm: stop_hold | passes the bar (paired edge t >= 3, both halves' paired edge > 0, p_search < 0.003): YES
+
+
+====================================================================================================
+RESCORE house breakout in HYB-A | control xname | old: t 2.84 (stop_hold), not passed
+====================================================================================================
+control = xname (strata: median 20 candidates, 3 paired per signal)
+
+=== RESCORE house breakout in HYB-A [xname] (daily) — 1,222 signals, 269 names, 2020-01-07 -> 2026-09-18 ===
+                n  meanR   medR     win    p90      t   ctrl   edge  p_edge  edge_t
+stop_hold  1222.0  0.196 -1.258  22.586  8.149  2.803  0.084  0.112   0.112   2.102
+t1R        1222.0 -0.247  1.000  52.209  1.000 -4.031 -0.141 -0.105  -0.105  -1.199
+t2R        1222.0 -0.135 -1.107  41.326  2.000 -1.367 -0.047 -0.089  -0.089  -0.666
+trail_bar  1222.0 -0.008 -0.512  35.025  2.328  0.742 -0.062  0.054   0.054   1.270
+ema20      1222.0  0.168 -1.106  31.097  4.764  2.589 -0.080  0.248   0.248   2.984
+
+by half (n 410 / 812):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.067         0.329
+t1R             -0.235        -0.252
+t2R             -0.178        -0.114
+trail_bar       -0.098         0.037
+ema20           -0.029         0.267
+
+paired edge by half (ema20): +0.061 / +0.343 | best-arm paired edge t +2.98 | p_search (best of 5 arms, 2000 label perms) 0.0060
+
+best arm: ema20 | passes the bar (paired edge t >= 3, both halves' paired edge > 0, p_search < 0.003): no
+
+
+====================================================================================================
+RESCORE vcp damped sine N3 | control post | old: NULL today (edge -0.008)
+====================================================================================================
+control = post (strata: median 20 candidates, 3 paired per signal)
+
+=== RESCORE vcp damped sine N3 [post] (daily) — 1,520 signals, 633 names, 2019-10-16 -> 2026-06-22 ===
+                n  meanR   medR     win    p90      t   ctrl   edge  p_edge  edge_t
+stop_hold  1520.0  0.159 -1.039  37.237  3.184  1.505  0.212 -0.053  -0.053  -1.744
+t1R        1520.0 -0.056  1.000  53.224  1.000 -2.382 -0.034 -0.022  -0.022  -1.214
+t2R        1520.0  0.027 -1.021  42.303  2.000 -0.307  0.053 -0.026  -0.026  -1.441
+trail_bar  1520.0 -0.018 -0.139  38.224  0.800 -1.013 -0.028  0.011   0.011   0.194
+ema20      1520.0 -0.004 -0.372  30.724  1.313  0.197 -0.000 -0.003  -0.003  -0.406
+
+by half (n 743 / 777):
+           <2023-01-01  >=2023-01-01
+stop_hold        0.199         0.121
+t1R             -0.059        -0.053
+t2R              0.057        -0.002
+trail_bar       -0.030        -0.006
+ema20           -0.093         0.082
+
+paired edge by half (trail_bar): +0.011 / +0.010 | best-arm paired edge t +0.19 | p_search (best of 5 arms, 2000 label perms) 0.7636
+
+best arm: trail_bar | passes the bar (paired edge t >= 3, both halves' paired edge > 0, p_search < 0.003): no
+
+
+====================================================================================================
+RESCORE vcp damped sine N3 | control xname | old: NULL today (edge -0.008)
+====================================================================================================
+control = xname (strata: median 20 candidates, 3 paired per signal)
+
+=== RESCORE vcp damped sine N3 [xname] (daily) — 1,665 signals, 675 names, 2019-10-16 -> 2026-09-18 ===
+                n  meanR   medR     win    p90      t   ctrl   edge  p_edge  edge_t
+stop_hold  1665.0  0.111 -1.034  36.937  3.017  1.054  0.223 -0.113  -0.113  -1.719
+t1R        1665.0 -0.079  0.373  52.072  1.000 -3.011  0.030 -0.109  -0.109  -3.171
+t2R        1665.0 -0.007 -1.019  41.622  2.000 -0.859  0.104 -0.111  -0.111  -2.584
+trail_bar  1665.0 -0.030 -0.147  37.658  0.788 -1.394  0.013 -0.043  -0.043  -1.674
+ema20      1665.0 -0.026 -0.373  30.390  1.243 -0.220  0.015 -0.041  -0.041  -0.175
+
+by half (n 744 / 921):
+           <2023-01-01  >=2023-01-01
+stop_hold        0.197         0.041
+t1R             -0.061        -0.093
+t2R              0.056        -0.058
+trail_bar       -0.031        -0.029
+ema20           -0.094         0.030
+
+paired edge by half (ema20): -0.127 / +0.029 | best-arm paired edge t -0.18 | p_search (best of 5 arms, 2000 label perms) 0.8861
+
+best arm: ema20 | passes the bar (paired edge t >= 3, both halves' paired edge > 0, p_search < 0.003): no
+
+
+====================================================================================================
+RESCORE kell wedge pop | control post | old: NULL today (edge +0.004)
+====================================================================================================
+control = post (strata: median 20 candidates, 3 paired per signal)
+
+=== RESCORE kell wedge pop [post] (daily) — 3,200 signals, 1086 names, 2019-10-08 -> 2026-03-25 ===
+                n  meanR   medR     win    p90      t   ctrl   edge  p_edge  edge_t
+stop_hold  3200.0  0.514 -1.078  34.219  5.263  1.516  0.517 -0.004  -0.004  -1.415
+t1R        3200.0 -0.011  1.000  55.656  1.000 -2.834  0.022 -0.033  -0.033  -0.046
+t2R        3200.0  0.147 -1.033  44.875  2.000  0.239  0.182 -0.035  -0.035   0.078
+trail_bar  3200.0  0.000 -0.171  37.875  1.014 -0.824  0.018 -0.017  -0.017  -1.074
+ema20      3200.0  0.093 -0.404  33.594  1.872  0.710  0.055  0.038   0.038   0.081
+
+by half (n 1611 / 1589):
+           <2023-01-01  >=2023-01-01
+stop_hold        0.401         0.628
+t1R             -0.074         0.052
+t2R              0.073         0.222
+trail_bar       -0.068         0.069
+ema20           -0.019         0.206
+
+paired edge by half (ema20): -0.021 / +0.098 | best-arm paired edge t +0.08 | p_search (best of 5 arms, 2000 label perms) 0.8186
+
+best arm: ema20 | passes the bar (paired edge t >= 3, both halves' paired edge > 0, p_search < 0.003): no
+
+
+====================================================================================================
+RESCORE kell wedge pop | control xname | old: NULL today (edge +0.004)
+====================================================================================================
+control = xname (strata: median 20 candidates, 3 paired per signal)
+
+=== RESCORE kell wedge pop [xname] (daily) — 3,588 signals, 1163 names, 2019-10-08 -> 2026-09-17 ===
+                n  meanR   medR     win    p90      t   ctrl   edge  p_edge  edge_t
+stop_hold  3588.0  0.441 -1.079  33.222  5.095  1.429  0.507 -0.066  -0.066  -2.008
+t1R        3588.0 -0.045  1.000  54.013  1.000 -3.187  0.019 -0.064  -0.064  -2.117
+t2R        3588.0  0.097 -1.036  43.367  2.000 -0.158  0.168 -0.071  -0.071  -1.784
+trail_bar  3588.0 -0.020 -0.186  36.984  0.991 -1.307  0.032 -0.052  -0.052  -1.653
+ema20      3588.0  0.072 -0.431  32.274  1.839  0.611  0.045  0.027   0.027   0.804
+
+by half (n 1612 / 1976):
+           <2023-01-01  >=2023-01-01
+stop_hold        0.400         0.474
+t1R             -0.075        -0.022
+t2R              0.072         0.118
+trail_bar       -0.068         0.019
+ema20           -0.019         0.146
+
+paired edge by half (ema20): +0.011 / +0.040 | best-arm paired edge t +0.80 | p_search (best of 5 arms, 2000 label perms) 0.5072
+
+best arm: ema20 | passes the bar (paired edge t >= 3, both halves' paired edge > 0, p_search < 0.003): no
+
+
+                                                  row control                                   old  best_arm    n   meanR   raw_t  legacy_edge  paired_edge  edge_t  ema20_edge_t  ema20_paired_edge  p_search
+precision-tier breakout (house), CLOSE entry, hold 60    post t 3.29, edge +0.144, PASSED (IN BOOK)     ema20 1851  0.2318  1.5329       0.1392       0.1392  1.3567        1.3567             0.1392    0.3238
+precision-tier breakout (house), CLOSE entry, hold 60   xname t 3.29, edge +0.144, PASSED (IN BOOK)     ema20 2013  0.1460  0.9889       0.2366       0.2366  1.8148        1.8148             0.2366    0.1114
+                           earnings drift, good+MUTED    post                        t 2.65, PARKED       t2R  426  0.1542  2.1193       0.1786       0.1786  2.4401        1.5864             0.1527    0.0205
+                           earnings drift, good+MUTED   xname                        t 2.65, PARKED       t1R  437  0.0443  0.4859       0.1860       0.1860  3.1673        1.4457             0.1718    0.0020
+                              house breakout in HYB-A    post        t 2.84 (stop_hold), not passed stop_hold 1172  0.2293  2.9064       0.3466       0.3466  4.1456        2.7016             0.1851    0.0015
+                              house breakout in HYB-A   xname        t 2.84 (stop_hold), not passed     ema20 1222  0.1679  2.5888       0.2482       0.2482  2.9840        2.9840             0.2482    0.0060
+                                   vcp damped sine N3    post              NULL today (edge -0.008) trail_bar 1520 -0.0179 -1.0130       0.0105       0.0105  0.1937       -0.4062            -0.0034    0.7636
+                                   vcp damped sine N3   xname              NULL today (edge -0.008)     ema20 1665 -0.0256 -0.2197      -0.0407      -0.0407 -0.1752       -0.1752            -0.0407    0.8861
+                                       kell wedge pop    post              NULL today (edge +0.004)     ema20 3200  0.0931  0.7097       0.0379       0.0379  0.0805        0.0805             0.0379    0.8186
+                                       kell wedge pop   xname              NULL today (edge +0.004)     ema20 3588  0.0720  0.6112       0.0271       0.0271  0.8039        0.8039             0.0271    0.5072
