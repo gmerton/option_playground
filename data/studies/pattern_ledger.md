@@ -3,7 +3,7 @@
 _Every entry pattern tested with `lib.studies.pattern_test`, newest last._
 
 **Bar to pass:** beats the same-name random control, positive in both halves, |t| >= 3.
-**Multiple testing:** 71 patterns tested so far — at 5% significance, expect ~3.6 to clear by chance. Discount accordingly.
+**Multiple testing:** 72 patterns tested so far — at 5% significance, expect ~3.6 to clear by chance. Discount accordingly.
 
 | tested | name | timeframe | n | best_arm | meanR | ctrl | edge | t | half1 | half2 | passed | note |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -78,3 +78,4 @@ _Every entry pattern tested with `lib.studies.pattern_test`, newest last._
 | 2026-09-22 | DR-EP 2026-09-22: A catalyst-day close [post] | daily | 6815 | ema20 | -0.173 | -0.126 | -0.047 | -4.698 | -0.35 | -0.07 | False | pre-registered DR-EP; catalyst = gap>=3% & RVOL>=1.8; retrace = giveback then new high; ctrl=post |
 | 2026-09-22 | DR-EP 2026-09-22: B DR-EP catalyst+retrace [post] | daily | 2702 | ema20 | -0.067 | -0.007 | -0.061 | 0.211 | -0.193 | 0.012 | False | pre-registered DR-EP; catalyst = gap>=3% & RVOL>=1.8; retrace = giveback then new high; ctrl=post |
 | 2026-09-23 | vcp damped sine N3 | daily | 1665 | trail_bar | -0.03 | -0.022 | -0.008 | -1.394 | -0.031 | -0.029 | False | Gabe damped-sine VCP, 3 decreasing contractions, close>pivot, stop=last trough; ctrl=post |
+| 2026-09-23 | kell wedge pop | daily | 3588 | ema20 | 0.072 | 0.068 | 0.004 | 0.611 | -0.019 | 0.146 | False | Kell wedge pop per kell_wedge_pop.md s7, stop = base low (floor 0.5 ADR); ctrl=post |
