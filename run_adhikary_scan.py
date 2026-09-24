@@ -2,8 +2,9 @@
 """
 Live scan for Tito Adhikary-style setups (data/studies/tito_selection_playbook.md, recipe v1).
 
-Universe: names liquid on the panel (ADDV >= $50M), ADR%(20d) >= 3 (recipe #1), 52-week range
->= 17% of price. Today's bar = Tradier quote (open/high/low/last/volume) stamped onto daily history
+Universe: names liquid on the panel (ADDV >= $50M), ADR%(20d) >= 3 (recipe #1). (The recipe's 52-week range >= 17%
+gate was DELETED 2026-09-24: it bound on 11 of 671,700 ADR >= 3 name-days and 0 of 50,847 breakouts -- redundant,
+precision_gate_ablation_2026-09-24.md.) Today's bar = Tradier quote (open/high/low/last/volume) stamped onto daily history
 (data/cache/liquid_panel_2019.parquet, yfinance adjusted); intraday RVOL is pro-rated by session
 elapsed, so a mid-session run over-weights early volume -- re-run near the close for the real read.
 
@@ -38,7 +39,7 @@ from lib.commons.ma_stack import stack_run
 PANEL = REPO / "data" / "cache" / "liquid_panel_2019.parquet"
 INDMAP = REPO / "data" / "ticker_industry_map.csv"
 OUT = REPO / "data" / "watchlist"
-ADDV_MIN, ADR_MIN, RANGE52_MIN, PIVOT_N = 50e6, 3.0, 17.0, 15
+ADDV_MIN, ADR_MIN, PIVOT_N = 50e6, 3.0, 15
 
 async def quotes(symbols):
     out = {}
@@ -78,8 +79,7 @@ def main():
     s10, s20, s50 = C.rolling(10).mean(), C.rolling(20).mean(), C.rolling(50).mean()
     e20 = C.ewm(span=20, adjust=False).mean()
     adr = (H / L - 1).shift(1).rolling(20).mean() * 100
-    hi52, lo52 = H.shift(1).rolling(252, min_periods=120).max(), L.shift(1).rolling(252, min_periods=120).min()
-    range52 = (hi52 - lo52) / C * 100
+    hi52 = H.shift(1).rolling(252, min_periods=120).max()
     pivot = H.shift(1).rolling(PIVOT_N).max()
     avgv = V.shift(1).rolling(50).mean(); rvol = V / (avgv * elapsed)
     stack_days = stack_run(C, adr=adr); stacked = stack_days > 0; stack_days_last = stack_days.iloc[-1]   # 10>20>50, with the house slack (0.25 ADR, lib.commons.ma_stack)
@@ -90,11 +90,11 @@ def main():
     ext20 = (C / s20 - 1) * 100 / adr
     d = C.index[-1]
     base = pd.DataFrame({"px": C.loc[d], "chg%": 100 * chg.loc[d], "gap%": 100 * gap.loc[d], "piv": pivot.loc[d], "vs_pivot%": 100 * (C.loc[d] / pivot.loc[d] - 1),
-                         "rvol": rvol.loc[d], "pos": pos.loc[d], "adr": adr.loc[d], "range52": range52.loc[d], "stack_d": stack_days_last, "contr": contraction.loc[d],
+                         "rvol": rvol.loc[d], "pos": pos.loc[d], "adr": adr.loc[d], "stack_d": stack_days_last, "contr": contraction.loc[d],
                          "dryup": dryup.loc[d], "ext20_adr": ext20.loc[d], "off52%": 100 * (C.loc[d] / hi52.loc[d] - 1), "addv_M": addv[uni] / 1e6})
     if INDMAP.exists():
         im = pd.read_csv(INDMAP).set_index("ticker").industry; base["industry"] = im.reindex(base.index).fillna("?").str.slice(0, 22)
-    gate = (base.adr >= ADR_MIN) & (base.range52 >= RANGE52_MIN) & base.piv.notna()
+    gate = (base.adr >= ADR_MIN) & base.piv.notna()
     b = base[gate].copy()
     # validated precision tier (data/studies/adhikary_detector_validation.md): ADR 4-7, within 15% of the 52wk high, stacked 5-40d
     b["precision"] = np.where(b.adr.between(4, 7) & (b["off52%"] > -15) & b.stack_d.between(5, 40), "YES", "")
@@ -102,7 +102,7 @@ def main():
     B = b[((b["gap%"] >= 5) | (b["chg%"] >= 8)) & (b.rvol >= 2) & (b.px >= b.piv) & (b.pos >= 0.75)]
     Cx = b[(H.loc[d] >= H.shift(1).rolling(20).max().loc[d]) & (C.loc[d] < O.loc[d]) & (b.pos <= 0.30) & (b.rvol >= 2.3) & (b.ext20_adr >= 2) & stacked.loc[d]]
     S = b[stacked.loc[d] & (b["vs_pivot%"].between(-5, 0)) & (b.contr <= 0.6) & (b.dryup <= 0.8)]
-    lines = [f"=== ADHIKARY SCAN — {label} | universe {len(uni)} liquid, {int(gate.sum())} pass ADR>={ADR_MIN}% & 52wk range>={RANGE52_MIN}% ===",
+    lines = [f"=== ADHIKARY SCAN — {label} | universe {len(uni)} liquid, {int(gate.sum())} pass ADR>={ADR_MIN}% ===",
              "vehicle: <=11 DTE near-ATM 0.5-0.9d | >=15 DTE OTM 0.2-0.35d | premium $0.5-6 || exit: grind -> 20 EMA daily close; spike (3x) -> sell into strength"]
     def block(title, df, cols, sort, asc=False, note=""):
         lines.append(f"\n--- {title}: {len(df)} ---" + (f"  {note}" if note else ""))

@@ -36,3 +36,10 @@ Tier itself: excess +0.80pp, house +0.80%/trade (median −4.0%), 31% win.
   in-sample, survivor panel; "no edge from the gate" is not "edge from removing it". Admitting them adds ~1,070 trades
   at the same (thin) expectancy — a recall change, and the owner rule is precision over recall.
 - RVOL ≥ 1.1, upper-half close, gap, day caps: never tested alone before; all NULL. The gap cap binds on only 30 events.
+
+## Decisions (Gabe, 2026-09-24)
+
+1. **52wk range ≥ 17%: DELETED** from the live desk scan (`run_adhikary_scan.py`). Checked scan-wide first, because
+   there it gated every list (A/B/C/SETUP), not only the tier: it bound on **11 of 671,700** ADR ≥ 3 name-days and
+   **0 of 50,847** pivot crosses — a no-op everywhere. Research scripts keep it for reproducibility.
+2. **EMA stack ≥ 5 sessions: KEPT** (precision over recall).
