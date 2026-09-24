@@ -84,6 +84,11 @@ Cloud jobs (EventBridge, both enabled): `preferred-breakout-eod` weeknights 23:1
 - ⚠ Coverage cliffs: bid/ask ends ~Mar 2026, stored IV ends ~mid-May 2026, later rows are prints-only.
 - Cross-catalog JOINs need both sides fully qualified. Athena DDL does **not** work on S3 Tables (use
   `aws s3tables` / boto3), and `writeOrder` causes `HIVE_WRITER_DATA_ERROR`.
+- **`silver.options_flow_daily` (Glue catalog, query with `data_source="AwsDataCatalog"`)** — per-(ticker, day)
+  options FLOW derived from v3: call/put volume and OI (all and ≤30 DTE), short-dated OTM volume by delta band,
+  $ premium, delta-weighted share volume. 19.2M rows, all tickers, 2010→2026, built in Athena by
+  `run_build_options_flow_daily.py` (idempotent per year; ~15 s and ~2 GB scanned per year). ⚠ After ~Apr 2026 v3 is
+  prints-only: delta columns go NULL and volumes drop ~60% — end flow studies at 2026-04.
 - **`stocks.options_cache` (MySQL)** is a synced *subset* of v3 (DTE 0–65, deduped). Its sync filters
   `bid > 0 AND ask > 0 AND delta IS NOT NULL`, exempting expiry-day rows — so **every zero-bid quote is
   missing except at expiry**. That silently breaks exit scans on winning spreads; pull from v3 when
