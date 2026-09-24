@@ -204,6 +204,9 @@ unless he says otherwise in the moment.
   its control, and no stop variant beats buying the close. **"Hard stop"** is the trade reviewer's
   retrospective entry-quality criterion, not a live level; **"emergency stop" does not exist here** — ask
   which live stop is meant. **Canonical definitions: `data/studies/stop_definitions.md`.**
+- **Decide local vs cloud before running any test.** If local is clearly better (small panel, cached data,
+  minutes of CPU), just run it locally. Otherwise (hours of CPU, big Athena pulls, jobs that should outlive
+  the laptop session), ask him first. Say which you chose and why (Gabe, 2026-09-23).
 - **No background polling.** When data isn't ready (Flex, a scheduled job), report status and expected
   timing, then stop. He will ask again.
 - **ASCII filenames only** — git escapes non-ASCII in `--name-only`, so grep-based audits silently miss
