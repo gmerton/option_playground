@@ -3,6 +3,8 @@
 Retail options education + platform (Tony Zhang, chief strategist). Webinars are teaching sessions that double as
 demos of the OptionsPlay screener/strategy picker. Captions come down cleanly with yt-dlp (no interceptor needed).
 
+**Channel index:** `index/` (827 videos, tiered for review, 2026-09-24). See `index/README.md`.
+
 `videos/<date>_<id>/` holds `transcript.txt`, `meta.json`, `notes.md` (the scored review).
 
 ⚠ **Caption trap (found 2026-09-22 on `pQlGgcyrUoQ`):** some videos here default to an `en` auto-caption track that
