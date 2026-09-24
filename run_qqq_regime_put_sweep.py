@@ -70,7 +70,12 @@ def _load_options_cache(ticker: str, start: "date", fetch_end: "date") -> pd.Dat
     # Only load options within a useful DTE window — cuts memory significantly
     max_dte = DTE_TARGET + DTE_TOL + 10
 
-    if cache_path.exists():
+    if cache_path.exists() and pd.read_parquet(cache_path, columns=["trade_date"]).empty:
+        # 2026-09-23: an empty cache file (0 rows) made max() NaN and crashed the staleness check below.
+        # Treat it as missing so the MySQL fetch runs; an empty fetch is never saved (see below).
+        print(f"  Parquet cache {cache_path.name} is empty -- ignoring it and fetching from MySQL ...")
+        df = None
+    elif cache_path.exists():
         df = pd.read_parquet(cache_path)
         df["trade_date"] = pd.to_datetime(df["trade_date"]).dt.date
         df["expiry"]     = pd.to_datetime(df["expiry"]).dt.date
