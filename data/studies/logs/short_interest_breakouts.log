@@ -1,0 +1,18 @@
+# Short interest x house breakout [BB-1] -- 44,986 breakouts with a published SI report, 2018-02-01 -> 2026-09-21
+          n   mean  median     win   held
+arm                                      
+HIGH   6590  0.209  -3.346  26.920  0.129
+LOW   11628  0.917  -3.247  28.027  0.137
+mid   26768  0.260  -3.191  27.062  0.128
+
+## PRIMARY: HIGH-DTC minus LOW-DTC breakouts, same date: -0.550pp  t -1.40  (dates 1321) | halves -0.446 / -0.618
+per year (pp):
+date    2018     2019     2020     2021     2022     2023     2024     2025    2026
+size  67.000  110.000  181.000  166.000  129.000  137.000  159.000  203.000  169.00
+mean   0.802    0.971   -2.994    0.888   -0.968   -3.105   -1.405    0.569    0.98
+held-the-level share HIGH - LOW: +0.6pp (t +0.71)
+
+## exploratory
+squeeze (HIGH DTC & RVOL >= 2) - LOW: -1.333pp t -1.48 (dates 634)
+DTC rising (>= 1.25x) - falling (<= 0.8x): -0.188pp t -0.54 (dates 1379)
+classic anomaly, all eligible names, 20d fwd, top - bottom DTC quintile: -0.324pp t -1.48 (dates 108) | halves -0.010 / -0.595
