@@ -11,13 +11,14 @@ process grade uses -- no prose judgement (feedback: one rubric for alerts + jour
                named; matched-timestamp legs are tagged systematic. Straddles that appear on that day's straddle
                screen archive (data/watchlist/straddle_screen/straddle_screen_<date>.csv, pass_all) are tagged screen_pick.
 Then: apply_pending_notes() (attaches the notes staged before the Flex pull), sync_review_campaigns(), close_out_option_reviews()
-(stamps exit date / P&L / playbook exit verdict on reviews written while the structure was still open once it closes or expires), sync_review_tags().
+(stamps exit date / P&L / playbook exit verdict on reviews written while the structure was still open once it closes or expires),
+close_out_stock_reviews() (the same for stock reviews, from the flat-to-flat cycle), sync_review_tags().
 Idempotent per (underlying_symbol, entry_date, symbol): existing rows are left alone.
 
 Usage: MYSQL_PASSWORD=... TRADIER_API_KEY=... PYTHONPATH=src .venv/bin/python3 run_build_reviews.py --since 2026-09-14 [--until 2026-09-17]
 """
 from __future__ import annotations
-import argparse, os, warnings
+import argparse, os, re, warnings
 from datetime import date
 from pathlib import Path
 import pandas as pd
@@ -78,6 +79,50 @@ def straddle_tags(cp, d0, screen_dir: Path) -> list[str]:
         in_pool = pool.exists() and cp.underlying in {x.strip() for x in pool.read_text().split()}
         tags.append("straddle_screener" if in_pool else "discretionary"); tags.append("screen_unverified")
     return tags
+
+
+def close_out_stock_reviews(dry_run: bool = False) -> int:
+    """The stock twin of close_out_option_reviews. A stock review written while the position was open kept
+    exit_date NULL forever (SNDK long 9/18, sold 9/23, still 'open' on the site; 29 such rows on 2026-09-23).
+    For every STK review with no exit_date, find the flat-to-flat cycle that holds its entry date (same conid, or
+    same underlying when conid is missing); once that cycle is flat, stamp its exit date and swap open_position for
+    needs_exit_review. The cycle P&L goes only on the review dated the cycle's first day -- an '(add)' review in the
+    same cycle gets the exit date but no P&L, so the summary cannot count the cycle twice."""
+    conn = _get_conn()
+    rv = pd.read_sql("""SELECT id, underlying_symbol, symbol, conid, entry_date, tags FROM journal_trade_reviews
+                        WHERE asset_category='STK' AND exit_date IS NULL""", conn)
+    if rv.empty: conn.close(); return 0
+    cyc = reconstruct_trade_cycles(); cyc = cyc[cyc.asset_category == "STK"]
+    updates = []
+    for r in rv.itertuples():
+        d = pd.to_datetime(r.entry_date).date()
+        c = cyc[cyc.conid == int(r.conid)] if pd.notna(r.conid) else cyc[cyc.underlying_symbol == r.underlying_symbol]
+        c = c[(c.entry_date <= d) & (c.still_open | (c.exit_date >= d))].sort_values("entry_date")
+        # several cycles can touch one day (AMD 9/16: a same-day round trip AND the still-held entry); the label's
+        # '@price' is the cycle's entry price, so use it to pick -- and skip rather than guess when it can't
+        m = re.search(r"@([\d.]+)", str(r.symbol or ""))
+        if m and len(c) > 1:
+            c = c[(c.entry_price - float(m.group(1))).abs() <= 0.005 * float(m.group(1))]
+        if len(c) != 1:
+            if len(c) > 1 or m: print(f"  close-out skipped (ambiguous cycle): {r.underlying_symbol} {d} '{r.symbol}'")
+            continue
+        c = c.iloc[0]
+        if bool(c.still_open): continue
+        opener = c.entry_date == d
+        pnl = float(c.realized_pnl) if opener and pd.notna(c.realized_pnl) else None
+        xr = f"closed {c.exit_date} after a multi-day hold; exit not yet reviewed"
+        if not opener: xr += f" (cycle opened {c.entry_date}; its P&L {c.realized_pnl:+.2f} sits on that review)"
+        tags = [t for t in str(r.tags or "").split(",") if t.strip() and t != "open_position"]
+        if "needs_exit_review" not in tags: tags.append("needs_exit_review")
+        sym = str(r.symbol or "").replace(", open", "").replace(" (open)", "")
+        updates.append((c.exit_date, pnl, "gray_area", xr, ",".join(tags), sym, int(r.id)))
+        print(f"  close-out: {r.underlying_symbol} {d} -> exit {c.exit_date} P&L {'' if pnl is None else f'{pnl:+.2f}'}{'' if opener else ' (add; P&L on the opener)'}")
+    if updates and not dry_run:
+        cur = conn.cursor()
+        cur.executemany("UPDATE journal_trade_reviews SET exit_date=%s, realized_pnl=%s, exit_verdict=%s, exit_reason=%s, tags=%s, symbol=%s WHERE id=%s", updates)
+        conn.commit()
+    conn.close()
+    return len(updates)
 
 
 def close_out_option_reviews(screen_dir: Path, dry_run: bool = False) -> int:
@@ -225,6 +270,7 @@ def main() -> int:
     # reviews written while the structure was open: stamp the exit once the campaign closes/expires (runs after the
     # campaign sync so freshly written reviews already carry their campaign_id)
     print("closed out:", close_out_option_reviews(screen_dir, a.dry_run))
+    print("stock closed out:", close_out_stock_reviews(a.dry_run))
     if not a.dry_run:
         print("tags synced:", sync_review_tags())
     return 0
