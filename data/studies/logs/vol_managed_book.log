@@ -1,0 +1,26 @@
+# Volatility-managed sizing of the book (pre-registration in the docstring)
+
+## BRK precision-tier breakouts (R): 2,016 trades, 83 months, mean weight 0.74 (1/var)
+  unmanaged: mean/month +3.813  Sharpe 0.41  worst month -63.75
+  managed 1/var: mean/month +1.336  Sharpe 0.20  worst month -47.82  | alpha -0.945/month (t -0.68), beta 0.60, halves alpha -2.933 / +0.383
+  managed 1/vol: mean/month +2.577  Sharpe 0.32  worst month -44.48  | alpha -0.512/month (t -0.57), beta 0.81, halves alpha -2.065 / +0.418
+  PRIMARY bar (1/var alpha > 0, t >= 3, both halves > 0): FAIL
+  per-trade return by market-vol tercile: high vol (small w) +0.206  mid +0.124  low vol (large w) +0.140
+
+## PUT certified bearish-high-IV SPY/QQQ bull puts (net ROC): 153 trades, 41 months, mean weight 0.27 (1/var)
+  unmanaged: mean/month +0.241  Sharpe 1.48  worst month -1.61
+  managed 1/var: mean/month +0.073  Sharpe 1.74  worst month -0.57  | alpha +0.020/month (t +1.21), beta 0.22, halves alpha +0.022 / +0.017
+  managed 1/vol: mean/month +0.137  Sharpe 1.56  worst month -1.06  | alpha +0.012/month (t +0.73), beta 0.52, halves alpha +0.010 / +0.015
+  per-trade return by market-vol tercile: high vol (small w) +0.052  mid +0.070  low vol (large w) +0.072
+
+## ETF put roster, Friday, 50% take (net ROC): 7,494 trades, 98 months, mean weight 0.79 (1/var)
+  unmanaged: mean/month -1.919  Sharpe -0.47  worst month -48.96
+  managed 1/var: mean/month -2.930  Sharpe -0.62  worst month -90.91  | alpha -1.289/month (t -1.24), beta 0.86, halves alpha -3.714 / +1.185
+  managed 1/vol: mean/month -2.589  Sharpe -0.61  worst month -62.00  | alpha -0.798/month (t -1.31), beta 0.93, halves alpha -2.233 / +0.661
+  per-trade return by market-vol tercile: high vol (small w) +0.003  mid -0.032  low vol (large w) -0.047
+
+## BRK with VIX instead of RV20 (secondary): 2,016 trades, 83 months, mean weight 0.83 (1/var)
+  unmanaged: mean/month +3.813  Sharpe 0.41  worst month -63.75
+  managed 1/var: mean/month +2.660  Sharpe 0.33  worst month -50.09  | alpha -0.470/month (t -0.50), beta 0.82, halves alpha -1.583 / -0.474
+  managed 1/vol: mean/month +3.260  Sharpe 0.37  worst month -58.71  | alpha -0.299/month (t -0.54), beta 0.93, halves alpha -1.155 / -0.183
+  per-trade return by market-vol tercile: high vol (small w) +0.110  mid +0.339  low vol (large w) +0.021
