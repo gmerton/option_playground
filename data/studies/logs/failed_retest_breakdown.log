@@ -1,0 +1,161 @@
+events: 1,791 on 699 names; FDX: ['2022-09-02', '2023-05-31', '2023-09-12', '2024-09-20', '2026-09-16']
+control = post (strata: median 20 candidates, 3 paired per signal)
+
+=== failed-retest breakdown short (daily) — 1,718 signals, 685 names, 2019-10-02 -> 2026-08-20 ===
+                n  meanR   medR     win    p90      t   ctrl   edge  p_edge  edge_t
+stop_hold  1718.0 -0.404 -1.237  23.399  2.906 -3.899 -0.396 -0.008  -0.008   0.063
+t1R        1718.0 -0.396 -1.079  45.576  1.000 -8.726 -0.450  0.053   0.053   0.530
+t2R        1718.0 -0.425 -1.186  32.014  2.000 -6.961 -0.449  0.024   0.024   0.094
+trail_bar  1718.0 -0.270 -0.611  31.024  1.701 -4.137 -0.226 -0.044  -0.044  -0.859
+ema20      1718.0 -0.396 -1.167  23.050  2.580 -4.567 -0.328 -0.067  -0.067  -0.624
+
+by half (n 624 / 1094):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.307        -0.460
+t1R             -0.397        -0.396
+t2R             -0.455        -0.408
+trail_bar       -0.281        -0.264
+ema20           -0.283        -0.460
+
+paired edge by half (t1R): +0.109 / +0.021 | best-arm paired edge t +0.53 | p_search (best of 5 arms, 2000 label perms) 0.5607
+paired edge by year (t1R; chronological halves miss a back-half regime):
+y       2019     2020     2021     2022     2023     2024     2025     2026
+size  42.000  145.000  174.000  263.000  285.000  272.000  328.000  209.000
+mean   0.373    0.194    0.053    0.056    0.115   -0.009   -0.049    0.045
+
+best arm: t1R | passes the bar (paired edge t >= 3, both halves' paired edge > 0, p_search < 0.003): no
+control = xname (strata: median 20 candidates, 3 paired per signal)
+
+=== failed-retest breakdown short (daily) — 1,787 signals, 696 names, 2019-10-02 -> 2026-09-22 ===
+                n  meanR   medR     win    p90      t   ctrl   edge  p_edge  edge_t
+stop_hold  1787.0 -0.367 -1.227  24.566  2.943 -3.705 -0.441  0.074   0.074   1.327
+t1R        1787.0 -0.380 -1.073  46.111  1.000 -8.657 -0.461  0.081   0.081   1.459
+t2R        1787.0 -0.400 -1.179  32.848  2.000 -6.808 -0.454  0.054   0.054   0.868
+trail_bar  1787.0 -0.246 -0.579  31.505  1.728 -3.910 -0.321  0.074   0.074   0.620
+ema20      1787.0 -0.359 -1.157  24.175  2.654 -4.358 -0.383  0.025   0.025   0.035
+
+by half (n 624 / 1163):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.307        -0.399
+t1R             -0.397        -0.371
+t2R             -0.455        -0.370
+trail_bar       -0.281        -0.228
+ema20           -0.283        -0.400
+
+paired edge by half (t1R): +0.082 / +0.080 | best-arm paired edge t +1.46 | p_search (best of 5 arms, 2000 label perms) 0.1844
+paired edge by year (t1R; chronological halves miss a back-half regime):
+y       2019     2020     2021     2022     2023     2024     2025    2026
+size  42.000  145.000  174.000  263.000  285.000  272.000  328.000  278.00
+mean   0.346    0.023    0.023    0.111    0.049    0.069    0.067    0.14
+
+best arm: t1R | passes the bar (paired edge t >= 3, both halves' paired edge > 0, p_search < 0.003): no
+control = post (strata: median 20 candidates, 3 paired per signal)
+
+=== failed-retest breakdown short h5 (daily) — 1,764 signals, 694 names, 2019-10-02 -> 2026-09-11 ===
+                n  meanR   medR     win    p90      t   ctrl   edge  p_edge  edge_t
+stop_hold  1764.0 -0.193 -0.507  39.796  1.949 -2.691 -0.195  0.003   0.003   0.133
+t1R        1764.0 -0.331 -0.343  44.728  1.000 -7.843 -0.353  0.022   0.022   0.469
+t2R        1764.0 -0.257 -0.466  40.533  2.000 -4.814 -0.288  0.030   0.030   0.604
+trail_bar  1764.0 -0.205 -0.518  35.544  1.839 -3.338 -0.186 -0.019  -0.019  -0.346
+ema20      1764.0 -0.192 -0.508  39.796  1.949 -2.654 -0.181 -0.011  -0.011   0.307
+
+by half (n 624 / 1140):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.197        -0.190
+t1R             -0.341        -0.326
+t2R             -0.256        -0.258
+trail_bar       -0.200        -0.208
+ema20           -0.196        -0.189
+
+paired edge by half (t2R): +0.114 / -0.016 | best-arm paired edge t +0.60 | p_search (best of 5 arms, 0 label perms) nan
+paired edge by year (t2R; chronological halves miss a back-half regime):
+y       2019    2020     2021     2022     2023     2024     2025     2026
+size  42.000  145.00  174.000  263.000  285.000  272.000  328.000  255.000
+mean   0.196    0.27   -0.017    0.101    0.092    0.003   -0.063   -0.095
+
+best arm: t2R | passes the bar (paired edge t >= 3, both halves' paired edge > 0, p_search < 0.003): no
+control = xname (strata: median 20 candidates, 3 paired per signal)
+
+=== failed-retest breakdown short h5 (daily) — 1,787 signals, 696 names, 2019-10-02 -> 2026-09-22 ===
+                n  meanR   medR     win    p90      t   ctrl   edge  p_edge  edge_t
+stop_hold  1787.0 -0.179 -0.478  40.235  1.961 -2.560 -0.271  0.092   0.092   1.204
+t1R        1787.0 -0.322 -0.315  45.104  1.000 -7.754 -0.415  0.093   0.093   2.297
+t2R        1787.0 -0.246 -0.441  40.963  2.000 -4.703 -0.367  0.121   0.121   2.554
+trail_bar  1787.0 -0.194 -0.508  35.926  1.843 -3.215 -0.257  0.063   0.063   0.438
+ema20      1787.0 -0.178 -0.486  40.235  1.961 -2.522 -0.263  0.085   0.085   1.184
+
+by half (n 624 / 1163):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.197        -0.170
+t1R             -0.341        -0.312
+t2R             -0.256        -0.241
+trail_bar       -0.200        -0.191
+ema20           -0.196        -0.168
+
+paired edge by half (t2R): +0.135 / +0.113 | best-arm paired edge t +2.55 | p_search (best of 5 arms, 0 label perms) nan
+paired edge by year (t2R; chronological halves miss a back-half regime):
+y       2019     2020     2021     2022     2023     2024     2025     2026
+size  42.000  145.000  174.000  263.000  285.000  272.000  328.000  278.000
+mean   0.371    0.152    0.024    0.163    0.063    0.083    0.187    0.105
+
+best arm: t2R | passes the bar (paired edge t >= 3, both halves' paired edge > 0, p_search < 0.003): no
+control = post (strata: median 20 candidates, 3 paired per signal)
+
+=== failed-retest breakdown short h60 (daily) — 1,668 signals, 661 names, 2019-10-02 -> 2026-06-22 ===
+                n  meanR   medR     win    p90      t   ctrl   edge  p_edge  edge_t
+stop_hold  1668.0 -0.668 -1.313  13.549  2.554 -6.267 -0.684  0.017   0.017   0.177
+t1R        1668.0 -0.396 -1.081  45.743  1.000 -8.426 -0.464  0.068   0.068   0.833
+t2R        1668.0 -0.438 -1.204  31.535  2.000 -6.778 -0.479  0.041   0.041   0.430
+trail_bar  1668.0 -0.268 -0.611  31.055  1.718 -3.799 -0.239 -0.029  -0.029  -0.526
+ema20      1668.0 -0.461 -1.171  21.703  1.945 -5.417 -0.369 -0.092  -0.092  -1.160
+
+by half (n 624 / 1044):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.626        -0.693
+t1R             -0.400        -0.393
+t2R             -0.467        -0.421
+trail_bar       -0.281        -0.260
+ema20           -0.387        -0.505
+
+paired edge by half (t1R): +0.108 / +0.044 | best-arm paired edge t +0.83 | p_search (best of 5 arms, 0 label perms) nan
+paired edge by year (t1R; chronological halves miss a back-half regime):
+y       2019     2020     2021     2022     2023     2024     2025     2026
+size  42.000  145.000  174.000  263.000  285.000  272.000  328.000  159.000
+mean   0.386    0.191    0.052    0.056    0.122   -0.004   -0.044    0.171
+
+best arm: t1R | passes the bar (paired edge t >= 3, both halves' paired edge > 0, p_search < 0.003): no
+control = xname (strata: median 20 candidates, 3 paired per signal)
+
+=== failed-retest breakdown short h60 (daily) — 1,787 signals, 696 names, 2019-10-02 -> 2026-09-22 ===
+                n  meanR   medR     win    p90      t   ctrl   edge  p_edge  edge_t
+stop_hold  1787.0 -0.606 -1.299  15.445  2.894 -5.964 -0.748  0.141   0.141   1.634
+t1R        1787.0 -0.380 -1.074  46.223  1.000 -8.647 -0.469  0.088   0.088   1.769
+t2R        1787.0 -0.410 -1.191  32.457  2.000 -6.815 -0.472  0.061   0.061   1.098
+trail_bar  1787.0 -0.245 -0.579  31.505  1.728 -3.781 -0.322  0.077   0.077   0.716
+ema20      1787.0 -0.415 -1.158  22.999  2.107 -5.196 -0.429  0.014   0.014  -0.282
+
+by half (n 624 / 1163):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.626        -0.596
+t1R             -0.400        -0.370
+t2R             -0.467        -0.380
+trail_bar       -0.281        -0.226
+ema20           -0.387        -0.430
+
+paired edge by half (t1R): +0.091 / +0.087 | best-arm paired edge t +1.77 | p_search (best of 5 arms, 0 label perms) nan
+paired edge by year (t1R; chronological halves miss a back-half regime):
+y       2019     2020     2021     2022     2023     2024     2025     2026
+size  42.000  145.000  174.000  263.000  285.000  272.000  328.000  278.000
+mean   0.371    0.012    0.034    0.127    0.062    0.087    0.066    0.139
+
+best arm: t1R | passes the bar (paired edge t >= 3, both halves' paired edge > 0, p_search < 0.003): no
+
+PRIMARY hold 20, arm ema20: short P&L -1.07% mean, -2.44% median, win 24%, n 1787 | stock move = the negative of this
+date   2019   2020    2021    2022    2023    2024   2025    2026
+size  42.00  145.0  174.00  263.00  285.00  272.00  328.0  278.00
+mean  -1.59   -0.1   -2.01   -0.93   -0.94   -1.27   -1.5   -0.46
+
+PRIMARY hold 20, arm stop_hold: short P&L -1.08% mean, -2.69% median, win 25%, n 1787 | stock move = the negative of this
+date   2019    2020    2021    2022    2023    2024    2025    2026
+size  42.00  145.00  174.00  263.00  285.00  272.00  328.00  278.00
+mean  -1.86   -0.37   -2.14   -0.77   -0.91   -1.31   -1.42   -0.49
