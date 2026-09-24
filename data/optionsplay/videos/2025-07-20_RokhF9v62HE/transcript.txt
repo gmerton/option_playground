@@ -1,0 +1,776 @@
+[00:00:00] Okay, good afternoon and welcome back
+[00:00:03] everyone to another session of our
+[00:00:05] options education webinar series. My
+[00:00:07] name is Tony Zang. I'm the chief
+[00:00:09] strategist here at OptionsPlay. We are
+[00:00:12] kicking off another earning season and
+[00:00:15] we are going to discuss how we
+[00:00:17] identified the best trading stocks for
+[00:00:19] trading for earning season and do a
+[00:00:23] review of the upcoming week with regards
+[00:00:26] to uh the opportunities that we feel
+[00:00:29] have the best possibility of making a
+[00:00:32] big move on earnings and how you can
+[00:00:34] potentially capture that utilizing
+[00:00:36] options.
+[00:00:38] Now what we are going to discuss here
+[00:00:39] today is purely for education and
+[00:00:41] demonstration purposes. It is not a
+[00:00:43] solicitation or recommendation to buy or
+[00:00:46] sell any of the specific securities as
+[00:00:48] example purposes during today's session.
+[00:00:52] Now, my goal today is to show you how to
+[00:00:55] identify stocks that have the the
+[00:00:56] highest chance of making a big move on
+[00:00:58] earnings and talk showing you the
+[00:01:01] three-step process that we use to
+[00:01:03] identify stocks that will make a big
+[00:01:06] move on earnings so that um
+[00:01:10] and and more importantly, you know, how
+[00:01:12] to access that list every single week,
+[00:01:15] you know, which is our new AI powered
+[00:01:17] research report that has these specific
+[00:01:20] stocks with the highest probability of
+[00:01:22] making a big move on earnings. So, a lot
+[00:01:26] that we're going to cover during today's
+[00:01:27] session, but we're we're going to spend
+[00:01:28] as much time as possible using the
+[00:01:30] platform going through the specific
+[00:01:32] symbols that are going to reporting that
+[00:01:34] are going to be reporting next week and
+[00:01:37] how you can use that every single week
+[00:01:39] to find explosive moves for trading
+[00:01:42] options. Now, most of you are familiar
+[00:01:45] with our earnings calendar. Um it is
+[00:01:48] something that you can find on the
+[00:01:50] options play platform. If you're not
+[00:01:52] familiar within the options play
+[00:01:54] platform on the upper right hand corner
+[00:01:57] you can click on uh the hamburger menu
+[00:01:59] and within that there is an earnings um
+[00:02:02] uh link that you can click on and that
+[00:02:04] takes you to our earnings calendar. Now,
+[00:02:07] the earnings calendar is incredibly
+[00:02:09] powerful because on any given day, there
+[00:02:12] are sometimes hundreds of symbols that
+[00:02:15] are reporting uh especially during the
+[00:02:18] meteor part of earnings season. So, when
+[00:02:21] you have a day where there are
+[00:02:23] potentially two, three, 400 symbols
+[00:02:26] reporting on a given day, how do you
+[00:02:28] know which ones you want to trade and
+[00:02:29] how do you narrow it down? So, first of
+[00:02:32] all, our earnings calendar is designed
+[00:02:34] to give you a clear understanding of
+[00:02:37] which symbols on a given day uh is most
+[00:02:41] likely going to be uh sorry, the
+[00:02:44] earnings calendar is telling you which
+[00:02:45] out of out of all of the stocks that are
+[00:02:48] reporting, which ones are most liquid.
+[00:02:50] And just by that alone, what you're
+[00:02:53] going to do is filter out the vast
+[00:02:55] majority. you're going to filter out
+[00:02:56] about 97 98% of the symbols that are
+[00:03:00] reporting on a given day just by looking
+[00:03:02] at options liquidity. So the ones that
+[00:03:05] are highlighted in green are the ones
+[00:03:07] that are most liquid. The ones that are
+[00:03:09] highlighted in yellow are somewhat
+[00:03:11] liquid. And anything that doesn't have a
+[00:03:13] color on it, meaning it's white, means
+[00:03:16] that those symbols are not liquid and
+[00:03:18] it's not worth even thinking about when
+[00:03:21] it comes to earning season. So in the
+[00:03:24] meteor part of earning seasons, you can
+[00:03:25] see on a given day, there generally are
+[00:03:28] a handful, you know, usually about a
+[00:03:30] dozen or so stocks that are uh what we
+[00:03:32] consider incredibly liquid from an
+[00:03:35] options trading perspective. And that
+[00:03:36] gives you a good sense for which symbols
+[00:03:39] you could potentially trade on earnings.
+[00:03:42] And it's sorted for you based on um uh
+[00:03:45] before a market uh before whether it's
+[00:03:48] reporting before or after the market
+[00:03:50] close. So on a given day, anything that
+[00:03:52] has an asterisk sign, which is always at
+[00:03:54] the top of the list for that given day,
+[00:03:56] those are the symbols that report in the
+[00:03:58] morning before the market opens. And the
+[00:04:00] ones without a asterisk sign uh are the
+[00:04:03] ones that report in the afternoon. So
+[00:04:05] it's organized in a way that's
+[00:04:06] relatively easy for you to find
+[00:04:09] opportunities. And then what that means
+[00:04:11] is that on any given day, you basically
+[00:04:13] have a handful of stocks that you can
+[00:04:15] look at for the next morning or the next
+[00:04:18] afternoon that you can research to
+[00:04:20] potentially trade for earnings. And it
+[00:04:22] significantly reduces the amount of
+[00:04:25] research that you typically have to do
+[00:04:27] on earnings because it immediately
+[00:04:29] filters out 98 99% of the trades that
+[00:04:33] you 99% of the symbols that are
+[00:04:35] reporting on a given day. Now, here's
+[00:04:38] the thing is that just because these are
+[00:04:39] all the symbols that you could trade
+[00:04:41] doesn't mean that these are the symbols
+[00:04:43] that you should trade. So, what I want
+[00:04:45] to do is I want to walk you through a
+[00:04:46] three-step process uh that we use to
+[00:04:49] identify when you have a list of liquid
+[00:04:52] symbols, which ones should you trade.
+[00:04:55] And then what we'll do is we will then
+[00:04:57] go through um and showing you kind of
+[00:05:00] from next week's um earnings which ones
+[00:05:04] meet all of the criterias of these of
+[00:05:06] the exact three-step process that I'm
+[00:05:09] going to walk you through here right
+[00:05:10] now. It's going to be relatively simple.
+[00:05:13] Um but the proven earning strategy that
+[00:05:15] we have that I want you to be able to
+[00:05:17] follow along is a simple three-step
+[00:05:20] process. What we're looking for is
+[00:05:22] absolute trend, relative strength, and
+[00:05:26] combined fundamentals. We need all three
+[00:05:28] things to align with each other. The
+[00:05:31] first one is absolute trend. This is
+[00:05:34] fairly straightforward. We're just
+[00:05:35] looking for the trend of the stock to be
+[00:05:38] trending in one direction or another.
+[00:05:41] So, either the stock is trending higher
+[00:05:43] or the stock is trending lower.
+[00:05:45] relatively simple to uh look at a chart
+[00:05:48] and see whether a stock is trending in
+[00:05:51] one direction or another. The second
+[00:05:53] thing we look at is relative strength.
+[00:05:55] Uh what we want to do is we want to see
+[00:05:58] relative strength that aligns with the
+[00:06:00] stock's overall trend. So, if you have a
+[00:06:02] stock that's trending higher, not only
+[00:06:05] do we want to see that stock trending
+[00:06:07] higher going into earnings, we want to
+[00:06:09] see that stock outperform the market as
+[00:06:12] it trends higher when it goes into the
+[00:06:14] earnings uh report because that is a
+[00:06:17] good sign that potentially there is some
+[00:06:20] level of accumulation whether that's
+[00:06:22] institutional accumulation or
+[00:06:24] accumulation by uh a vast amount of
+[00:06:26] retail traders combined. um that gives
+[00:06:29] you a good sense that uh traders are
+[00:06:32] buying or picking up the stock faster
+[00:06:34] than they are the rest of the market
+[00:06:36] going into the earnings announcement.
+[00:06:38] Vice versa, if you have a stock that's
+[00:06:40] trending lower, we don't necessarily
+[00:06:42] just want to see the stocks trending
+[00:06:44] lower. We want to see that it's not only
+[00:06:45] trending lower, but it's underperforming
+[00:06:48] the market. And that gives us a sense
+[00:06:49] that potentially either a large group of
+[00:06:52] retail traders or institutional traders
+[00:06:54] are distributing that stock ahead of the
+[00:06:56] earning season. Meaning they don't want
+[00:06:58] to own the stock going into that
+[00:07:00] earnings report and they're selling that
+[00:07:02] stock at a faster pace at a faster clip
+[00:07:05] than they are with the rest of the
+[00:07:07] market. And then lastly, what we're
+[00:07:09] looking for are fundamentals that align
+[00:07:12] with the first two. Uh so the first two
+[00:07:15] are really kind of looking at the
+[00:07:17] technicals, right? uh trend is looking
+[00:07:19] at the chart, relative strength is
+[00:07:21] looking at the chart relative to the
+[00:07:23] market. And the third one we look at are
+[00:07:25] fundamentals. And for those of you that
+[00:07:27] follow us every single week, you know
+[00:07:29] that we look at valuations with respect
+[00:07:32] to growth and profitability. We
+[00:07:35] generally want to see stocks that are
+[00:07:36] undervalued relative to uh the growth
+[00:07:39] and profitability compared to its peers
+[00:07:42] or stocks that are overvalued compared
+[00:07:44] to the growth and profitability versus
+[00:07:47] its peers. So um this is a simple method
+[00:07:52] that we use but if you use this specific
+[00:07:56] method you'll see that on a given week
+[00:07:58] if let's say there are 10 uh I'm sorry
+[00:08:01] on a given day if there are 10 um liquid
+[00:08:05] optionable symbols this proven earning
+[00:08:08] strategy will likely filter out again
+[00:08:11] eight or nine out of those 10 symbols on
+[00:08:13] a given day. So you really just have a
+[00:08:16] handful, one or two of what we consider
+[00:08:20] are the best opportunities for earning
+[00:08:22] season that you should trade. So just to
+[00:08:25] be clear, the earnings calendar gives
+[00:08:28] you a good sense for which ones you
+[00:08:31] could trade and this particular earnings
+[00:08:34] strategy will help you identify which
+[00:08:37] ones you should trade. These are the
+[00:08:40] stocks that meet all three criterias are
+[00:08:42] the ones that we believe have the
+[00:08:44] highest probability of making that big
+[00:08:46] move on earnings, meaning they're likely
+[00:08:48] going to surprise to the upside. So,
+[00:08:51] when the earnings number comes out, uh
+[00:08:54] these are the stocks that are likely to
+[00:08:55] make a big jump higher or a big jump
+[00:08:58] lower. Uh the ones that you uh ideally
+[00:09:02] want to trade on earnings. Does that
+[00:09:04] make sense everyone? Please type one
+[00:09:06] into the chat window if that makes sense
+[00:09:08] to you.
+[00:09:16] Perfect. So, let's just go through a
+[00:09:18] couple examples of this on stocks that
+[00:09:20] meet these specific criterias and we'll
+[00:09:23] go through them one by one and we'll
+[00:09:25] look at the underlying fundamentals for
+[00:09:28] each one. So uh looking at MADNA this is
+[00:09:31] a good example of both relative of
+[00:09:34] absolute and relative strength. What
+[00:09:36] we're looking for are stocks that have
+[00:09:38] outperform uh you know itself. So Madna
+[00:09:41] has been kind of trading sideways for
+[00:09:43] quite some time between call it 24 and
+[00:09:46] 29 a $5 trading range for uh roughly
+[00:09:50] three months. And it recently just broke
+[00:09:52] out a couple of weeks ago. And here's
+[00:09:56] the thing is that on a breakout
+[00:09:59] that's not enough to say, okay, this is
+[00:10:02] a good trade for earnings because the
+[00:10:05] market's been in a in in a positive
+[00:10:07] market. So, if this stock is just going
+[00:10:09] along with the market, that's not enough
+[00:10:11] evidence to say, you know, this is
+[00:10:13] potentially a good trade going into
+[00:10:16] earnings. What you want to see is that
+[00:10:18] alongside with that uh that breakout
+[00:10:21] here, it has outperformed the S&P 500
+[00:10:24] during that breakout. That's a much
+[00:10:26] better sign that we'd like to see going
+[00:10:28] into earnings. So that's what we mean by
+[00:10:30] absolute and relative strength. Now if
+[00:10:33] we look at Madna from a um uh from from
+[00:10:38] a um
+[00:10:43] valuation perspective, right? So Madna
+[00:10:46] trades at uh you know 10 times forward
+[00:10:48] earnings while the uh the market is
+[00:10:51] trading somewhere between um uh you know
+[00:10:54] 10 10 and 11 times forward earnings. So
+[00:10:57] you know it's trading roughly in line
+[00:10:59] with uh the rest of the market. So this
+[00:11:01] is really where we look at this
+[00:11:03] particular stock. You look at growth
+[00:11:05] expectations you know EPS growth of
+[00:11:07] around 18% versus the markets around 14.
+[00:11:10] Uh you know this is a stock that's
+[00:11:11] that's expected to grow faster than the
+[00:11:14] market. So this is really where we think
+[00:11:16] that uh Madna, you know, with the
+[00:11:20] relatively strong technicals and the
+[00:11:22] strong fundamentals, this is a potential
+[00:11:24] opportunity for earnings. Um the second
+[00:11:28] opportunity that I want to just kind of
+[00:11:29] give you a sense for is T-Mobile. And
+[00:11:32] for those of you that have been
+[00:11:33] following us, we've we've had a bearish
+[00:11:35] view on T-Mobile here for multiple weeks
+[00:11:38] now. Um we've been bearish on this
+[00:11:40] particular stock ever since it broke
+[00:11:42] down below 250. Uh, so the stock's now
+[00:11:44] trading at 226. It's continued to move
+[00:11:47] lower here. Um, this is one, as you can
+[00:11:49] see, recently it broke below that 230
+[00:11:52] support level here. And not only did it
+[00:11:54] Whoops. Not only did it break below that
+[00:11:56] support level, it also uh continues to
+[00:11:59] underperform the S&P 500 as it moves
+[00:12:02] lower. So, it's not just moving lower,
+[00:12:05] it's being distributed relative to the
+[00:12:07] rest of the market. And T-Mobile trades
+[00:12:10] at 22 times forward earnings versus the
+[00:12:12] industry is around 11 times forward
+[00:12:14] earnings or 10 times forward earnings.
+[00:12:16] So we're talking about a stock that's
+[00:12:18] trading at more than double the industry
+[00:12:20] valuation. Even though a T-Mobile does
+[00:12:23] grow a little bit faster than the
+[00:12:24] industry and slightly more profitable,
+[00:12:27] but not profitable enough in my opinion
+[00:12:29] to justify a valuation that's more than
+[00:12:32] double its com its peers. You know, both
+[00:12:34] AT&T and mobile fall into this
+[00:12:36] particular category. They've both
+[00:12:38] underperformed the market. They both um
+[00:12:41] uh have been trending lower and they
+[00:12:44] both have valuations that are higher
+[00:12:46] than the industry average. And for those
+[00:12:48] reasons, we believe that there's further
+[00:12:51] downside, especially going into that
+[00:12:53] earnings report. There's a risk that
+[00:12:55] potentially those stocks will
+[00:12:57] underperform going uh you know, after
+[00:12:59] the earnings report. So, it's a
+[00:13:02] relatively simple process, but even
+[00:13:05] going through that simple process takes
+[00:13:07] quite a bit of time and research to do
+[00:13:10] all of the work because on a given day
+[00:13:12] there could be 15 20 symbols that report
+[00:13:15] and it takes a lot of time to go through
+[00:13:17] 15 20 different charts and go through 15
+[00:13:20] to 20 different fundamentals. Which is
+[00:13:22] why we've built our new AI research
+[00:13:25] report that comes out every single
+[00:13:26] Monday during our Monday morning trade
+[00:13:29] ideas report. And we go over that during
+[00:13:32] our Monday morning uh webinar uh Monday
+[00:13:35] morning trade ideas session for those of
+[00:13:37] you that are members uh that have access
+[00:13:39] to that uh report and access to that
+[00:13:41] session. Um, this is really where we
+[00:13:43] look at uh this is really where we look
+[00:13:46] at kind of all of these things that we
+[00:13:47] were that I was referring to with
+[00:13:49] regards to um looking at the technicals,
+[00:13:53] looking at the fundamentals and then we
+[00:13:55] are uh publishing our earnings navigator
+[00:13:58] research every single Monday morning.
+[00:14:00] So, this is something that I'm giving
+[00:14:03] you a preview for what next Monday
+[00:14:05] morning's report is going to look like
+[00:14:07] because next week is kind of the big we
+[00:14:11] kick off a big week in terms of
+[00:14:12] earnings. And we have, I believe, one,
+[00:14:15] two, three,
+[00:14:17] eight uh stocks out of all the stocks
+[00:14:19] that are reporting next week um that
+[00:14:22] have um an earnings uh opportunity. So,
+[00:14:25] let's take a look at the earnings
+[00:14:27] calendar real quick. Um,
+[00:14:30] let me just log into that uh real quick.
+[00:14:34] Sorry.
+[00:14:47] All right. So, here's the earn ear
+[00:14:48] earnings calendar for next week. Um, as
+[00:14:52] you can see, you know, there's a good
+[00:14:53] number of of stocks that are reporting
+[00:14:55] next week. And you know there are
+[00:14:57] probably as you can see here uh call it
+[00:15:01] 30 stocks that we consider in very
+[00:15:04] liquid from an options trading
+[00:15:06] perspective. So it's it's it's it's
+[00:15:10] certainly a much further it's it's a
+[00:15:12] significantly reduced list of stocks
+[00:15:14] that you have to research 30 stocks
+[00:15:16] versus a few hundred you know that are
+[00:15:18] reporting next week. But you know what
+[00:15:20] we wanted to do is actually do the
+[00:15:22] research for you looking at the trends,
+[00:15:25] looking at the relative strength, and
+[00:15:26] looking at the fundamentals and giving
+[00:15:28] you a sense for which stocks have uh you
+[00:15:31] know the best opportunity of a big move.
+[00:15:33] They're colorcoded for you based on
+[00:15:35] whether it's bullish or bearish. So out
+[00:15:38] of the bullish ones, we have Alphabet,
+[00:15:40] Dowo Chemical, Union Pacific, and
+[00:15:42] Newmont Mining. On the bearish side, we
+[00:15:44] have Tesla, Philip Morris, T-Mobile, and
+[00:15:47] AT&T.
+[00:15:49] Uh, I'm sorry. Dow Chemical was was uh
+[00:15:51] bearish. Sorry, I apologize. Uh, it's
+[00:15:53] it's Alphabet, uh, Union Pacific, and
+[00:15:57] Pneumont Mining. That's bullish. So,
+[00:15:59] let's take a look at those particular
+[00:16:00] stocks using the options play platform.
+[00:16:03] And let's take a look at some
+[00:16:04] opportunities here. The first one I want
+[00:16:06] to take a look at here is Alphabet. Um,
+[00:16:09] so
+[00:16:11] for those of you that have been
+[00:16:12] following, I've been bullish on Alphabet
+[00:16:14] here for quite a few weeks here.
+[00:16:16] Alphabet generated a buy signal when it
+[00:16:18] pulled back here to this uh to this
+[00:16:21] trend line a couple of weeks ago,
+[00:16:23] probably closer to three weeks ago now.
+[00:16:25] Um and this is the stock has had a
+[00:16:27] really nice rally since it generated
+[00:16:29] that buy signal. That was a trend
+[00:16:31] following buy signal that we got on our
+[00:16:33] platform. Um and not only did did we had
+[00:16:37] a really nice rally from there, it
+[00:16:39] recently broke out above this 180 level
+[00:16:42] here. So we broke out above 180. As you
+[00:16:44] can see, the trends are positive. It's
+[00:16:46] outperformed the S&P 500 during that
+[00:16:49] time. And what we're looking for is a
+[00:16:51] continuation higher. Here we have a gap
+[00:16:53] fill here at 202. That's our upside
+[00:16:55] target here for Alphabet. Um that's in
+[00:16:58] our equity research report that we put
+[00:16:59] out every Monday and Thursday. You got
+[00:17:01] you got another update on that this uh
+[00:17:04] this morning. Um and the valuations here
+[00:17:09] for Alphabet look incredibly uh
+[00:17:11] compelling. you're trading at about 19
+[00:17:13] times forward earnings with net margins
+[00:17:16] that exceed 30%. You know, the industry
+[00:17:19] uh average net margins around 7%. So
+[00:17:22] when when you have a stock that's that
+[00:17:24] has, you know, profitability that's head
+[00:17:26] and shoulders above the industry, yet it
+[00:17:29] trades at the same valuation at the rest
+[00:17:32] of its industry. That's really where you
+[00:17:34] have a compelling opportunity where uh
+[00:17:36] based on the numbers that come out here
+[00:17:38] tomorrow, we could potentially I'm
+[00:17:40] sorry, next week, we could potentially
+[00:17:42] see a big move here to the upside on on
+[00:17:45] Alphabet as uh as a particular stock.
+[00:17:48] So, these are the types of trades that
+[00:17:50] we like to place going into the earnings
+[00:17:53] announcement. Now, um how do you want to
+[00:17:55] place these trades? Well, this is really
+[00:17:57] where you can look at um IV rank to help
+[00:18:00] you gauge, you know, perhaps what might
+[00:18:02] be a right a good strategy for this. As
+[00:18:05] you can see, IV rank right now for
+[00:18:06] considering we're heading into earnings
+[00:18:08] at 22%. Is relatively low. And what that
+[00:18:11] tells me is that you can potentially
+[00:18:13] have a uh an opportunity where you could
+[00:18:16] look at buying options rather than
+[00:18:18] selling options as more advantageous.
+[00:18:21] So, um, this is really where when it
+[00:18:23] comes to earnings, I typically would
+[00:18:24] like to go for a shorterdated expiration
+[00:18:27] rather than a longerdated one,
+[00:18:28] especially when I'm trading something
+[00:18:29] like a debit spread. Um, you know, so
+[00:18:32] you can either look at selling, you can
+[00:18:34] either look at a straight call option,
+[00:18:36] right? So, being basically buying maybe
+[00:18:39] a August uh slightly out of the money
+[00:18:41] call option like an August 185 call for
+[00:18:44] $7.28.
+[00:18:46] Or you might want to look at a a a
+[00:18:49] vertical spread here. Um where you might
+[00:18:51] look at the 185 um you know my upside
+[00:18:54] target is 200 202. So I'd be looking at
+[00:18:57] maybe a 18520 call spread. As you can
+[00:19:00] see that's $487.
+[00:19:03] So in my perspective you know one trade
+[00:19:05] one cost 728 one cost $4.87. I'm more
+[00:19:09] likely to go with that one that cost 487
+[00:19:12] because by reducing my risk on the
+[00:19:14] trade, I'm going to significantly
+[00:19:15] increase my potential return on this
+[00:19:18] particular trade. So, this is really
+[00:19:20] what um this as you can see if the stock
+[00:19:23] does reach my 202 target here, that's
+[00:19:26] the target that I have here in the P&L
+[00:19:28] simulator. If I've just bought the call
+[00:19:30] option, I look, you know, 142% return is
+[00:19:33] nothing to sneeze at, right? But as you
+[00:19:35] can see, the strategy here on the right,
+[00:19:37] the vertical spread will give me a 208%
+[00:19:40] return uh if I traded that even though
+[00:19:42] it's exceeding the upper strike of my
+[00:19:45] vertical spread. Um so here I'm selling
+[00:19:48] the 200. I'm I'm looking at this. What
+[00:19:50] happens if it goes to 202 and a half,
+[00:19:52] even though it exceeds my upper strike,
+[00:19:54] I'm still getting a significantly higher
+[00:19:56] return on that vertical spread because
+[00:19:59] the vertical spread costs so much less.
+[00:20:02] It's taking so much so much lower amount
+[00:20:05] of capital to get in that it's going to
+[00:20:07] significantly increase my return if I am
+[00:20:09] correct on the trade. And more
+[00:20:11] importantly, if I'm wrong on the trade,
+[00:20:14] I'm risking substantially less on that
+[00:20:16] vertical spread. So, I am inclined to
+[00:20:19] trade something like an August 15th
+[00:20:21] 185200 here on Alphabet going into
+[00:20:25] earnings. And what we can do is we can
+[00:20:27] even paper trade this um uh using the
+[00:20:30] options play paper trading portfolio.
+[00:20:33] And what we can do is we can add this
+[00:20:35] trade to our portfolio. And what I'll do
+[00:20:37] is I'll do a session here in two weeks
+[00:20:39] time where we'll come back and we'll
+[00:20:41] look at all of these trades together,
+[00:20:42] how they've performed. We'll look at
+[00:20:44] kind of uh you know the earnings
+[00:20:46] navigator, how it worked out and how all
+[00:20:48] of these trades and we can collectively
+[00:20:50] look together and see how these um uh
+[00:20:54] how these how these perform. Okay, the
+[00:20:57] next one we'll take a look at here is
+[00:20:59] Tesla. Uh let's just look at the uh this
+[00:21:02] is the navigator research, right? So the
+[00:21:04] first we just looked at here is
+[00:21:06] Alphabet. Now let's take a look at
+[00:21:07] Tesla. Um, this is really, you know,
+[00:21:12] this reports here on the 23rd. Um, and
+[00:21:15] oh, sorry, it looks like Al Alphabet
+[00:21:17] reports on the 23rd as well. I have that
+[00:21:20] wrong on that one. I'll I'll rectify
+[00:21:22] that when it goes out in the earnings
+[00:21:24] navigator. Uh, the next one I want to
+[00:21:26] take a look at here is Tesla. And we've
+[00:21:28] talked about Tesla as well in our
+[00:21:30] earnings uh, and our equity research.
+[00:21:32] Uh, this is one of the stocks that we
+[00:21:34] have a bearish view on. As you can see,
+[00:21:36] it recently just generated a bearish
+[00:21:38] trend following uh signal here today.
+[00:21:41] Right? So that as you can see here at
+[00:21:43] the bottom of your screen and this is
+[00:21:44] really one of the great things about the
+[00:21:46] options plate platform is that um it'll
+[00:21:49] give you kind of signals. And the other
+[00:21:50] thing you can do is you can actually
+[00:21:52] look at just out of all the trade ideas
+[00:21:54] which ones um are you know have also
+[00:21:58] aligned with kind of whether it's
+[00:22:00] overvalued or undervalued. As you can
+[00:22:02] see, Tesla is actually one of the stocks
+[00:22:04] that, you know, has generated a bearish
+[00:22:06] trade idea and is considered overvalued.
+[00:22:09] And that's actually how we help identify
+[00:22:11] these as a potential opportunity for uh
+[00:22:15] for earnings. Uh you know, someone Joe
+[00:22:17] saying, Tesla always makes me nervous.
+[00:22:19] You know, Tesla makes me nervous all the
+[00:22:21] time as well, which is why if I'm ever
+[00:22:23] going to trade options on if I'm ever
+[00:22:24] going to trade Tesla on earnings, I'm
+[00:22:26] always going to trade options to limit
+[00:22:29] my overall risk, right? So, you know, as
+[00:22:31] you can see, Tesla has been recently
+[00:22:32] trending lower here a little bit. It's
+[00:22:34] underperformed the market as it trended
+[00:22:36] lower. Uh, this is really where we're
+[00:22:38] looking for some potential downside
+[00:22:39] here. But the story is really rooted in
+[00:22:42] fundamentals. Tesla trades at 166 times
+[00:22:45] forward earnings. The the industry
+[00:22:48] median um is around 11 times forward
+[00:22:51] earnings. So, you're talking about an a
+[00:22:53] valuation that's 15 times higher than
+[00:22:56] the industry. So, you know, you could
+[00:22:58] you could say everything you want about
+[00:23:01] uh you know, what's optimistic about
+[00:23:03] Tesla, robo taxi, uh humanoids, um
+[00:23:07] battery technology, um
+[00:23:11] better better cars coming out, whatever
+[00:23:13] it is, I really find it incredibly
+[00:23:16] difficult to justify a valuation that's
+[00:23:18] 15 times higher. So, for those reasons,
+[00:23:21] I'm going to take a bearish view on
+[00:23:23] Tesla going into earnings. So the best
+[00:23:26] way in my opinion is to also use a
+[00:23:28] similar type structure. Um now Ivy rank
+[00:23:31] here for Tesla is a little bit higher at
+[00:23:33] 34%.
+[00:23:35] So you could potentially look at selling
+[00:23:37] options here as well. But you know if
+[00:23:39] you look at selling a call spread here,
+[00:23:41] look at the August 29th 320 370 call
+[00:23:44] spread. See the risk-to-reward ratio
+[00:23:46] here is quite poor. You're risking
+[00:23:48] 1,500. Sorry, you're risking 3500 to
+[00:23:51] potentially make 1,500. that's not uh a
+[00:23:54] credit spread that I feel like uh is the
+[00:23:58] right um uh the right risk-to-reward
+[00:24:01] ratio for me going into an earnings
+[00:24:03] announcement. Um so in this particular
+[00:24:05] case, I think I would be opting for the
+[00:24:08] debit spread. I also would probably look
+[00:24:10] at the August monthly expiration. Um
+[00:24:13] earlier today, I was looking at the
+[00:24:14] 315280
+[00:24:16] put spread. Um,
+[00:24:19] you can trade this for a little over uh
+[00:24:21] $1,100. $1163
+[00:24:24] gives you about a 2:1 risk-toreward
+[00:24:26] ratio on uh on a move lower here. Uh, as
+[00:24:30] you can see, the expected move here for
+[00:24:32] Tesla is 6.72%.
+[00:24:36] Whoops. 6.72%.
+[00:24:38] So, let's take a look at that. 6.72%.
+[00:24:41] So 320 uh let's call it 320 times
+[00:24:47] 672%
+[00:24:49] is is around $21. So you're talking
+[00:24:51] about a stock moving from around 319 to
+[00:24:54] call it three let's call it 39 uh $298
+[00:24:59] or so. Um you know what does that look
+[00:25:01] like here for each of these strategies?
+[00:25:03] Not a not a not a significant return on
+[00:25:06] either one of these particular trades.
+[00:25:08] So, this is one that, you know, you
+[00:25:10] might want to take a look at and say
+[00:25:11] whether or not this makes sense to you.
+[00:25:13] Uh, so let's let's just kind of put this
+[00:25:16] back up here. Um,
+[00:25:20] 298.
+[00:25:22] Uh, so 298 on the day after expiration.
+[00:25:30] Let's say on the Friday after
+[00:25:32] expiration, you're looking at about, you
+[00:25:34] know, these two strategies are very
+[00:25:36] similar. whether you buy the put or buy
+[00:25:38] the put spread um around a 52 53%
+[00:25:41] return. So, you know, if these two have
+[00:25:43] a very similar return, I'm always going
+[00:25:45] to trade the one with the lower risk uh
+[00:25:47] in terms of the trade cost uh because
+[00:25:49] then it lowers my absolute risk on the
+[00:25:52] overall trade. So, if I trade the same
+[00:25:54] number of contracts between the put and
+[00:25:55] the put vertical, if I expect a similar
+[00:25:58] return, but one has lower risk, I'm
+[00:26:00] always going to take the one lower risk.
+[00:26:01] And that's why that strategy on the
+[00:26:03] right has a higher options play score.
+[00:26:06] So hopefully this gives you a sense for
+[00:26:08] kind of how we are looking at earning
+[00:26:10] season. Let's let's just also trade this
+[00:26:12] into our paper trading portfolio so we
+[00:26:14] have something to look back on in a
+[00:26:16] couple of weeks time. But as you can see
+[00:26:18] this is really where we can basically
+[00:26:20] take um you know the stocks that we
+[00:26:23] publish in our in our um weekly re
+[00:26:26] weekly earnings navigator. And again uh
+[00:26:29] for those of you that missed it, this is
+[00:26:30] something that we published during our
+[00:26:32] Monday morning research report. So, we
+[00:26:34] publish a Mon Monday morning research
+[00:26:36] equity research report for all of our
+[00:26:38] members. Uh, we also do a Monday morning
+[00:26:40] trade ideas webinar to go over those
+[00:26:42] equity ideas. Uh, and that's where we um
+[00:26:46] publish these earnings navigators trades
+[00:26:48] for the upcoming week. So, I'm just
+[00:26:50] giving you a preview of what is coming
+[00:26:52] in that earnings navigator research on
+[00:26:55] Monday morning next week right now so
+[00:26:57] that you can see how this process works.
+[00:27:00] We're going to go through a couple of
+[00:27:01] more examples and then what we'll do is
+[00:27:03] we will uh wrap this up and we'll come
+[00:27:06] back here in a couple of weeks and look
+[00:27:07] at how those strategies performed in a
+[00:27:10] couple of weeks. Um what's another one
+[00:27:13] we want to take a look? Let's look at
+[00:27:14] T-Mobile because T-Mobile is another one
+[00:27:16] that's been in our equity research
+[00:27:18] report.
+[00:27:19] We have had a bearish view here on
+[00:27:21] T-Mobile. Uh like I said, trades at 22
+[00:27:24] times forward earnings. Uh the stock has
+[00:27:26] been trending lower for quite some time
+[00:27:28] now. It's underperformed the S&P 500. IV
+[00:27:31] rank is is 42%. So, this might be a
+[00:27:34] better trade for selling premium here.
+[00:27:36] Let's take a look at that. That looks
+[00:27:38] much better. Selling that 23240 call
+[00:27:40] spread will will, you know, uh risk 548
+[00:27:44] to make 452. That's a much more balanced
+[00:27:46] risk-to-reward ratio on a credit spread.
+[00:27:49] So, that would be one that I'd probably
+[00:27:50] be more inclined to be selling premium
+[00:27:53] on rather than buying premium. And also,
+[00:27:55] if you look at just generally speaking,
+[00:27:57] the expected move for T-Mobile is a it's
+[00:28:00] a smaller move that's expected about
+[00:28:02] 4.37%.
+[00:28:03] So, because I'm not expecting that
+[00:28:05] explosive big move, you know, this is
+[00:28:07] really where, you know, selling premium
+[00:28:09] might be more suitable. And as you can
+[00:28:11] see, the the the platform really helps
+[00:28:13] you structure these trades very simply,
+[00:28:16] very easily so that you can kind of
+[00:28:18] focus your attention on research and not
+[00:28:21] have to pull up an options chain, figure
+[00:28:23] out what strategy to trade, what
+[00:28:24] expiration date, what strike price. It
+[00:28:26] really does a lot of that work for you.
+[00:28:28] Click on the trade button. We'll enter
+[00:28:30] this into our paper trading portfolio,
+[00:28:32] uh, and we'll track that here as well.
+[00:28:35] And for those of you that don't have a
+[00:28:36] paper trading portfolio set up yet, uh
+[00:28:38] when you click on the trade button on
+[00:28:40] any of these specific strategies, uh you
+[00:28:42] can create a new personal portfolio by
+[00:28:45] clicking on this um this plus arrow here
+[00:28:47] right here. So, if you don't have any
+[00:28:49] portfolios set up yet, this is a great
+[00:28:51] way for you to track you know either a
+[00:28:53] paper trading portfolio that you want to
+[00:28:55] make or if you have um you know a live
+[00:28:58] portfolio that you are trading, you
+[00:29:00] know, especially if you have multiple uh
+[00:29:02] trading accounts, you know, if you just
+[00:29:04] simply create one for your let's say
+[00:29:05] your Schwab account, one for your Tasty
+[00:29:07] Trade account, one for whatever
+[00:29:08] brokerage firm you have, every single
+[00:29:10] time you place a trade, you just enter
+[00:29:11] it into options play. You can put the
+[00:29:13] the price at which you got filled. So,
+[00:29:15] let's say you got filled uh you know,
+[00:29:17] let's say you got filled on this at
+[00:29:19] let's say Whoops.
+[00:29:23] Let's say you got filled at 450 on this
+[00:29:25] credit spread. You can put in your
+[00:29:27] premiums that you got filled at, enter
+[00:29:28] it into your paper trading portfolio,
+[00:29:30] and now you can track all of these
+[00:29:32] trades in the portfolio tool within
+[00:29:35] Options Play. And we'll take a look at
+[00:29:36] that here in a couple of weeks of these
+[00:29:38] specific trades that we made. Um and you
+[00:29:41] can look at you know specific portfolios
+[00:29:44] and it really uh makes it easy for you
+[00:29:46] to track you know all of your portfolios
+[00:29:48] in one place. Um so we look at all the
+[00:29:51] positions and then give you uh
+[00:29:53] notifications you know for example if
+[00:29:55] something has generated a bearish uh
+[00:29:57] position uh for today um or if there are
+[00:29:59] anything that have generated a stop-loss
+[00:30:02] or takerit in this particular case. Um I
+[00:30:04] don't currently have anything right now
+[00:30:06] on that. Um but this will give you kind
+[00:30:09] of alerts as far as um opportunities to
+[00:30:12] take profit and cut losses. So as you
+[00:30:14] can see the Alphabet trade that we just
+[00:30:16] entered is here. Uh the T-Mobile trade
+[00:30:18] that we entered is here and the Tesla
+[00:30:20] trade we entered is right here. We'll
+[00:30:21] come back here, like I said, in a couple
+[00:30:23] of weeks and we'll look at how these
+[00:30:24] strategies perform and uh collectively
+[00:30:28] look at trading uh look at how these uh
+[00:30:31] how we can potentially uh adjust any of
+[00:30:34] these positions if necessary in a few
+[00:30:36] weeks. Um and it'll also give us a sense
+[00:30:38] for how the earnings navigator performed
+[00:30:40] during that time. So with that, that
+[00:30:42] covers what I wanted to share with you
+[00:30:44] here today. Hopefully this gives you a
+[00:30:46] good sense for how to approach earning
+[00:30:48] season and how to find the best trading
+[00:30:50] opportunities every single week using
+[00:30:52] your options play platform with your
+[00:30:54] membership. The the earnings research is
+[00:30:58] our earnings navigator to help you
+[00:31:00] identify the best stocks for earning

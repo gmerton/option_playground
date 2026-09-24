@@ -1,0 +1,279 @@
+[00:00:00] Okay, welcome. Today we're going to be
+[00:00:01] doing a trend following trading
+[00:00:04] tutorial. How you can find the best
+[00:00:06] setups to follow the trend trading
+[00:00:09] equities and options. This is part of
+[00:00:12] our options play growth lab series where
+[00:00:15] we empower you to trade sustainably and
+[00:00:18] confidently and help you become a better
+[00:00:20] trader. My goal today is simply to show
+[00:00:23] you a simple back battle tested strategy
+[00:00:26] that have been useful in identifying
+[00:00:28] trend following trading setups. We'll
+[00:00:30] talk about the specific indicators that
+[00:00:32] we use to generate these high quality
+[00:00:34] trend following signals and then showing
+[00:00:37] you how you can find these automated
+[00:00:39] signals using options play and the rules
+[00:00:42] for trading these types of setups
+[00:00:44] including some pro tips on hitting some
+[00:00:47] home runs using options with these types
+[00:00:50] of strategies. So following the trend is
+[00:00:54] very easy to understand. It's natural.
+[00:00:57] You're going with the flow and it's
+[00:00:59] something that every trader inherently
+[00:01:01] can get a feeling for and trade. They
+[00:01:05] typically have higher probability of
+[00:01:06] success because you're going along with
+[00:01:08] the primary trend. They tend to provide
+[00:01:11] quick and fast results with tight stops
+[00:01:14] and strong risk-to-reward, but only if
+[00:01:17] you are trading them correctly and
+[00:01:19] you're not just chasing momentum here.
+[00:01:21] So, what I want to talk about is how you
+[00:01:23] can find these highquality setups that
+[00:01:25] have these high risk-to-reward or strong
+[00:01:28] risk-to-reward setups and they typically
+[00:01:31] will trigger multiple signals in a row.
+[00:01:33] You might find one, two, three, four
+[00:01:37] signals that all trigger within weeks of
+[00:01:40] each other on the same symbol over and
+[00:01:43] over again when you trade these trend
+[00:01:46] following setups. Now, I'm going to show
+[00:01:48] you the very simple set of indicators
+[00:01:50] that I use to scan for these highquality
+[00:01:53] setups. First thing, what you need to do
+[00:01:55] is identify a primary trend. And what
+[00:01:57] we're using is a long period momentum, a
+[00:02:00] long look back period. We're using 50
+[00:02:02] period momentum indicator to identify
+[00:02:05] the primary trend. And then what we're
+[00:02:07] looking for is a pullback from that
+[00:02:09] primary trend. And the way we define
+[00:02:12] that pullback is we wait for price
+[00:02:14] action to pull back below the 26-day
+[00:02:18] exponential moving average. And then
+[00:02:20] what we're looking for is the resumption
+[00:02:22] of that primary trend above that moving
+[00:02:25] average to validate the trend following
+[00:02:27] signal. So an example of this is looking
+[00:02:31] at this particular chart. I have the 50
+[00:02:33] period CCI at the bottom. So this is a
+[00:02:36] momentum indicator looking back 50
+[00:02:38] periods. Whenever it turns positive,
+[00:02:40] that is when you have a bullish trend.
+[00:02:43] And what I'm looking for is within that
+[00:02:45] positive uh primary trend. I'm looking
+[00:02:48] for pullbacks below the red line, which
+[00:02:50] is this 26 period exponential moving
+[00:02:53] average. And when you have that crossing
+[00:02:55] back over, that's your valid trend
+[00:02:58] following signal. What you're looking
+[00:02:59] for are movements in in the primary
+[00:03:02] trend, a pullback, and then that
+[00:03:04] consumption in that trend. Pullback of
+[00:03:07] the primary trend, resumption in that
+[00:03:09] trend. Pullback in the primary trend,
+[00:03:11] resumption in that trend. These are how
+[00:03:13] you find the high quality trend
+[00:03:16] following setups. You don't want to just
+[00:03:17] wait for breakouts and then chase that
+[00:03:19] momentum only to see that momentum pull
+[00:03:21] back here. You want to be patient and
+[00:03:23] wait for the pullback. And the 26 period
+[00:03:26] me exponential moving average is the key
+[00:03:28] here on how much or how big of a healthy
+[00:03:32] pullback you're looking for in order to
+[00:03:34] justify the resumption in that trend. So
+[00:03:38] strategy best practices price action
+[00:03:40] should always confirm the primary trend.
+[00:03:43] That means that you can get these valid
+[00:03:45] signals before the the price action has
+[00:03:48] shifted. This is an example of one where
+[00:03:50] the trend has turned positive. You get
+[00:03:52] the pullback here, but as you can see,
+[00:03:54] price action hasn't broken out here.
+[00:03:56] What you want to see is first price
+[00:03:57] action breakout, then the pullback
+[00:04:00] before you start taking these types of
+[00:04:01] trades. So price action is king. First
+[00:04:04] confirm that price action has confirmed
+[00:04:06] your primary trend before you start
+[00:04:08] applying these strategies. The second
+[00:04:10] thing is you can have a higher
+[00:04:12] confidence signal by waiting for the
+[00:04:14] crossover above that 26 period
+[00:04:17] exponential moving average. The more
+[00:04:19] aggressive way to trade this is to trade
+[00:04:22] it as soon as it crosses below the 26
+[00:04:24] period moving average. And then the more
+[00:04:26] conservative entry is waiting for it to
+[00:04:28] cross back above it to enter this trade.
+[00:04:31] And what you can do is you can place
+[00:04:33] really tight stops below the recent low.
+[00:04:36] So, for example, if you're taking this
+[00:04:38] particular trade, you can put your stops
+[00:04:40] very tightly below the recent lows so
+[00:04:43] that you have a very strong
+[00:04:45] risk-to-reward relative to the trades
+[00:04:48] that you're making. So, when you're
+[00:04:51] trading these types of strategies,
+[00:04:52] you're going to be able to get these
+[00:04:53] high quality signals that have really
+[00:04:56] strong risk-to-rewards with really tight
+[00:04:58] stops, and you have a high probability
+[00:05:00] of success. Now the question is how can
+[00:05:02] you find ex how can you find trading
+[00:05:05] setups just like this every single day
+[00:05:07] day in and day out reliably and that's
+[00:05:09] where you can rely on the options play
+[00:05:12] platform to do so. If you go to our idea
+[00:05:14] section under technical ideas you can
+[00:05:17] screen for just trend following ideas
+[00:05:20] and you can screen just for bullish and
+[00:05:22] bearish ideas. So you can and my
+[00:05:25] recommendation to you is to remove the
+[00:05:27] option symbols that are not liquid from
+[00:05:29] here and then you can look at just
+[00:05:31] bullish ideas or just bearish ideas.
+[00:05:33] Given the current market conditions
+[00:05:34] we're in, I think it's probably better
+[00:05:36] to look for some bearish ideas. And what
+[00:05:38] you can do is you can quickly go through
+[00:05:40] a list of every single stock in this
+[00:05:42] particular list has triggered this trend
+[00:05:44] following signal. So let's take a look
+[00:05:46] at a few that have triggered it. Let's
+[00:05:48] take a look at Dollar Tree for example.
+[00:05:53] Just want to show you some examples of
+[00:05:54] this. Right. So, this is a stock that
+[00:05:56] has just started perhaps a new bearish
+[00:05:59] trend. Um, started to rally here and
+[00:06:01] we're looking for that potential
+[00:06:03] continuation lower here. May not be from
+[00:06:05] a price action perspective quite yet of
+[00:06:08] what I would call a bearish trend. So,
+[00:06:09] let's take a look at some other ones.
+[00:06:11] Let's take a look at Broadcom. Um, this
+[00:06:13] one is probably going to be a little bit
+[00:06:14] more. Uh so here as you can see now
+[00:06:17] we're just perhaps starting to break
+[00:06:18] down below some support levels here
+[00:06:20] maybe in the very early innings of a
+[00:06:22] bearish trend here. But what we're
+[00:06:24] looking for is the is the start of a
+[00:06:26] primary bearish trend. And we're looking
+[00:06:28] for these rallies above the 26 period
+[00:06:30] moving average. And now this has the
+[00:06:33] potential to continue moving lower. And
+[00:06:35] when you're patient to wait for these
+[00:06:36] rallies, that's when your risk-to-reward
+[00:06:38] looks incredibly attractive. And that's
+[00:06:41] when you can also use the options play
+[00:06:42] platform to help you structure the
+[00:06:44] options play on the back of it. This
+[00:06:47] way, as you can see, here's a trade that
+[00:06:48] you're risking around $2,900 per
+[00:06:51] contract to make over $6,000 if you are
+[00:06:54] correct on this type of trade. So, not
+[00:06:56] only do you have a high probability
+[00:06:58] success on the trading setup, you also
+[00:07:00] have a really strong riskreward on the
+[00:07:02] options setup here as well. Let's see if
+[00:07:05] there another another one that we can
+[00:07:06] take a look at here. Um, let's look at
+[00:07:10] um
+[00:07:12] some of these might not have started
+[00:07:14] their bearish trend just yet, but we'll
+[00:07:15] take a look at a few just to see. Uh,
+[00:07:17] here's here's a here's one, right? ABV.
+[00:07:19] Um, you could say that this has already
+[00:07:21] started a bit of a bearish trend here.
+[00:07:23] Not a not a strong bearish trend, but
+[00:07:25] certainly a higher lows and lower highs.
+[00:07:28] So, now we've got this rally here. This
+[00:07:30] is prime for a potential move here to
+[00:07:32] the downside. Look at previously if you
+[00:07:34] had waited for some of these rallies
+[00:07:36] here. Look at how fast the stock moved
+[00:07:38] to the downside. You are in and out of
+[00:07:40] this trade within a couple of weeks. And
+[00:07:42] this is really where you're able to
+[00:07:44] extract maximum value out of these types
+[00:07:46] of trades using option strategies. So I
+[00:07:49] would use perhaps even a shorter time
+[00:07:51] frame here because these are swing
+[00:07:52] trades. I'd be looking at maybe a weekly
+[00:07:55] option, maybe two to three weeks out.
+[00:07:57] I'm looking at buying an at the money
+[00:07:58] put and then selling at a one standard
+[00:08:01] deviation out roughly for the March 6
+[00:08:04] would be the 215s. And this would be the
+[00:08:06] type of trade that I'd be looking for to
+[00:08:07] risk 551 to make 949 if the stock is
+[00:08:11] below 215 at expiration. This stock was
+[00:08:14] at 215 just about a week and a half ago.
+[00:08:16] Right? So essentially what I'm saying is
+[00:08:18] that if it returns back to where it was
+[00:08:20] a week and a half ago, I'm getting paid
+[00:08:22] nearly 2:1 risk-to-reward ratio on this
+[00:08:25] type of trade. So the platform provides
+[00:08:27] you with the signals and gives you the
+[00:08:29] options trade that you can structure to
+[00:08:32] take advantage of these types of trend
+[00:08:34] following systems. So just to review
+[00:08:38] how to hit home runs using this type of
+[00:08:40] strategy. There are ways that you can
+[00:08:42] many ways that you can trade this
+[00:08:43] particular strategy, but my
+[00:08:44] recommendation is to simply enter an an
+[00:08:48] initial position as soon as you see the
+[00:08:50] signal being uh triggered. So the first
+[00:08:52] time you get the signal on the options
+[00:08:54] play platform, enter a small position in
+[00:08:57] in the direction that you think the
+[00:08:59] stock is going to move in. And then once
+[00:09:01] the stock crosses over the EMA, that's
+[00:09:04] when you can enter the full position. So
+[00:09:06] if you typically risk 2% on your trades,
+[00:09:08] maybe as soon as it pulls back, enter 1%
+[00:09:11] half the position. Once you get the
+[00:09:13] confirmation, the higher probability
+[00:09:15] confidence signal, enter the full
+[00:09:17] position. And then if you get the once
+[00:09:19] you get the full bar a full bar above
+[00:09:22] that moving average that's when you can
+[00:09:25] add to that position and depend you can
+[00:09:27] depend you can add depending on your
+[00:09:28] risk tolerance somewhere between an
+[00:09:30] additional 2 to 3% on top of that so
+[00:09:33] that your total risk that you're taking
+[00:09:34] normally maybe you're risking 2% but
+[00:09:37] maybe once you have that high quality
+[00:09:38] signal you can risk up to potentially 5%
+[00:09:41] as long as you place this tight stop
+[00:09:43] loss you can still ultimately risk
+[00:09:45] probably somewhere in the 2 to 3% range
+[00:09:47] of your total portfolio on a trade like
+[00:09:49] this. And when you trade these types of
+[00:09:52] signals, you should be able to exit this
+[00:09:54] trade no more than two to three weeks
+[00:09:55] out. That's it. These types of trades
+[00:09:58] are relatively quick. You're in and out
+[00:10:00] within two to three weeks. That's how
+[00:10:01] you can trade these trend following
+[00:10:03] setups very, very successfully.
+[00:10:06] If you want access to the tools I'm
+[00:10:08] showing you here today, including a
+[00:10:10] recording of today's session, you can
+[00:10:12] sign up for a free trial at
+[00:10:13] optionsplay.com. that will give you a
+[00:10:15] free 14-day trial to the tools that I'm
+[00:10:18] showing you here today so that you can
+[00:10:20] take a look at these highquality trend
+[00:10:22] following signals. See how you can set
+[00:10:24] up your options strategies on the back
+[00:10:26] of it, paper trade them over your 14-day
+[00:10:29] period before you commit to your
+[00:10:31] subscription. Thank you so much and I
+[00:10:33] hope you have a great trading day.

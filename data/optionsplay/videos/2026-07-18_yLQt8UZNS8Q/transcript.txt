@@ -1,0 +1,753 @@
+[00:00:00] Earning season is an incredibly busy
+[00:00:03] time of the year. There is um hundreds,
+[00:00:07] sometimes hundreds of stocks that you
+[00:00:09] could potentially look at on a given
+[00:00:10] day. Where do you start?
+[00:00:14] Our goal is to help you narrow that down
+[00:00:16] to a handful of stocks each day so that
+[00:00:19] if you're going to spend your time
+[00:00:20] researching stocks, doing your homework,
+[00:00:23] you better be focused on where you want
+[00:00:25] to do that homework. And this earnings
+[00:00:27] calendar provides you with that short
+[00:00:29] list so that
+[00:00:36] okay, good afternoon and welcome back
+[00:00:38] everyone to our growth lab series. My
+[00:00:41] name is Tony Zang and I'm the chief
+[00:00:42] strategist here at OptionsPlay and we
+[00:00:45] are kicking off another earnings season.
+[00:00:47] And today we're going to be specifically
+[00:00:49] going over the new Options Play
+[00:00:52] dashboard and the new earnings calendar
+[00:00:54] that you'll find in that dashboard to
+[00:00:56] help you find explosive options trades
+[00:00:59] in the upcoming earnings season. Let's
+[00:01:03] go ahead and get started. This is the
+[00:01:05] second part of our series in July
+[00:01:07] focused on helping you find where your
+[00:01:11] next trade comes from and specifically
+[00:01:13] trying to
+[00:01:15] find emerging leadership from trades
+[00:01:18] before the rest of the crowd does so. Um
+[00:01:23] options trading our earning season
+[00:01:25] obviously is uh a highlight of the
+[00:01:29] quarter uh where you have about a
+[00:01:32] three-w weekek
+[00:01:34] time frame where you're going to get a
+[00:01:36] lot of information coming from corporate
+[00:01:38] earnings you're going to get a lot of
+[00:01:40] big moves and with the AI industry
+[00:01:42] recently under pressure I expect this
+[00:01:45] quarter is going to be one where we are
+[00:01:48] going to see some big moves up and down.
+[00:01:52] So, we really want to talk through what
+[00:01:55] tools we have in place to help you
+[00:01:57] identify which stocks can make those big
+[00:02:00] moves up and down and by how much and
+[00:02:04] talk a little bit about the option
+[00:02:05] strategies that you can utilize for
+[00:02:08] capturing those explosive moves. Now, if
+[00:02:12] you're brand new to options play and you
+[00:02:14] are uh and you want access to the tools
+[00:02:17] that we'll be showing you today, you can
+[00:02:19] find them at new.optionsplay.
+[00:02:20] optionsplay.com/registration
+[00:02:23] for a free 14-day trial or you can
+[00:02:26] point, excuse me, or you can point your
+[00:02:29] phone to the QR code on your screen. And
+[00:02:32] I just posted that link into the chat
+[00:02:34] window so that you can uh sign up for a
+[00:02:36] free trial here at Adoptions Play. That
+[00:02:38] will give you access to the tools that
+[00:02:40] I'm showing you during today's session.
+[00:02:42] It'll give you access to today's
+[00:02:44] recording as well as slides afterwards.
+[00:02:46] And you can also watch all of our
+[00:02:48] previously recorded sessions on this
+[00:02:51] particular series in the new dashboard
+[00:02:53] that I'll be showing you today. Now, if
+[00:02:56] you already have an OptionsPlay account,
+[00:02:57] you can follow along live by going to
+[00:02:59] dashboard.optionsplay.com
+[00:03:02] if you're already signed into your
+[00:03:03] OptionsPlay account. It will take you
+[00:03:05] directly into the dashboard without
+[00:03:08] having to sign up. And this way, you'll
+[00:03:10] be able to follow along with our
+[00:03:11] sessions live today as we go along.
+[00:03:16] So, let's go ahead and get started. I'm
+[00:03:18] going to start off with a recap of how
+[00:03:21] Q1 shaped up and what our expectations
+[00:03:25] here are for Q2.
+[00:03:28] Q1 grew EPS at 28% year-over-year. This
+[00:03:32] is by far the highest growth we've seen
+[00:03:36] in terms of earnings in uh in terms of
+[00:03:39] S&P 500 corporate earnings since Q4 2021
+[00:03:43] which if any of you recall is
+[00:03:46] essentially coming out of COVID. So a
+[00:03:49] very low base um that [clears throat] we
+[00:03:52] were on was when was the last time we
+[00:03:54] were able to see 28%
+[00:03:56] EPS growth and and that compares to uh
+[00:04:01] you know expecting the quarter at about
+[00:04:03] 13%. So we started the quarter last
+[00:04:05] quarter expecting uh S&P earnings growth
+[00:04:08] to come in around 13%. We ended the
+[00:04:10] quarter at 28%. That's just how big of
+[00:04:15] outperformance we saw last quarter. And
+[00:04:17] it really speaks to why we continue to
+[00:04:21] see strength in the S&P 500 despite what
+[00:04:25] has been a pretty challenging quarter
+[00:04:26] from a global um geopolitical
+[00:04:29] perspective.
+[00:04:31] Uh revenues grew about 11%
+[00:04:33] year-over-year. 84% of companies beat on
+[00:04:36] EPS. 81% beat on revenue. So we
+[00:04:39] basically saw four out of five companies
+[00:04:42] be top and bottom line. So it was
+[00:04:45] overall a really strong quarter. Now the
+[00:04:47] one thing to understand is that the
+[00:04:50] outperformance or the difference between
+[00:04:52] the 13% we're expecting at the beginning
+[00:04:54] of the quarter versus the 28% that we
+[00:04:57] that we got at the end of the quarter.
+[00:05:00] Most of that came from the magnificent
+[00:05:03] 7. Nearly 61% of that outperformance
+[00:05:06] came from just those seven stocks alone.
+[00:05:09] So technology was the primary driver of
+[00:05:13] that.
+[00:05:15] [clears throat] And interestingly
+[00:05:16] enough, those were the se those seven
+[00:05:18] companies were the ones that were
+[00:05:19] largely left out in the AI rally uh in
+[00:05:24] the last couple of months. that is now
+[00:05:26] starting to see a rotation back into
+[00:05:28] those names over the last couple of
+[00:05:30] weeks as the semiconductor industry
+[00:05:33] comes under pressure. So
+[00:05:37] going into this earnings uh quarter so
+[00:05:40] far EPS growth is expected to grow at
+[00:05:44] around 23.6%.
+[00:05:47] So that's a really high growth rate uh
+[00:05:50] expecting and that's up from 18% uh at
+[00:05:54] the end of March. So we expect earnings
+[00:05:57] to grow faster than we did uh about a
+[00:06:00] quarter ago. Um and the and you know
+[00:06:03] history shows that many times the final
+[00:06:06] number will come in higher than
+[00:06:08] expected. So we may see another record
+[00:06:11] quarter in terms of EPS growth after
+[00:06:14] last quarter was one of the strongest
+[00:06:17] we've seen since coming out of the COVID
+[00:06:19] pandemic. Revenue numbers are expected
+[00:06:22] to to increase again to around 12.3%
+[00:06:25] which would be the highest we've seen
+[00:06:27] since 2022.
+[00:06:29] A lot of that is going to be driven by
+[00:06:31] energy because of oil prices in the
+[00:06:34] previous quarter. We expect the energy
+[00:06:36] sector to have
+[00:06:39] generated a a ton of free cash flow as a
+[00:06:42] result of that and that's going to all
+[00:06:43] flow through to the bottom line.
+[00:06:45] Technology is the big part of that and
+[00:06:47] the only sector expecting to decline
+[00:06:49] from EPS is going to be healthcare but
+[00:06:52] we'll take a look at that here in a
+[00:06:53] second. So far we've had the banks
+[00:06:57] reporting earnings which gives us some
+[00:07:00] sense for how the quarter may shape up.
+[00:07:02] 89% of those have beat on earnings. So,
+[00:07:06] we've seen a really strong um we've seen
+[00:07:10] a really strong start to the earnings
+[00:07:13] season with banks not only beating on
+[00:07:16] earnings but also providing a strong
+[00:07:19] guidance and outlook for the rest of the
+[00:07:21] year both for the banks as well as for
+[00:07:24] the consumer. Uh a lot of times the
+[00:07:26] banks give us a read on how strength of
+[00:07:29] the strength of the consumer and
+[00:07:34] excuse me and in this particular quarter
+[00:07:36] we're seeing strength across the board
+[00:07:38] and that really is reflected in uh the
+[00:07:41] the the rotation that we continue to see
+[00:07:44] here in the markets over the last few
+[00:07:46] weeks. Semiconductors have remained
+[00:07:48] under pressure and remains further under
+[00:07:51] pressure. Yet the rest of the market is
+[00:07:54] booming. Uh if you look at today, NASDAQ
+[00:07:57] down nearly 1%, the equate S&P 500 up
+[00:08:01] nearly 1%. So as everyone is selling te
+[00:08:05] uh semiconductor and and and memory,
+[00:08:08] they're essentially buying everything
+[00:08:10] else across the board. So that's how we
+[00:08:13] are shaping up so far heading into Q2.
+[00:08:17] Now out of the 11 sectors, 10 of them
+[00:08:20] are expecting growth. The biggest ones
+[00:08:22] we're expecting is going to be in energy
+[00:08:24] and tech, which is not particularly
+[00:08:27] surprising given the AI trade as well as
+[00:08:31] uh the spike in oil prices. Now, we
+[00:08:33] obviously expect that energy
+[00:08:36] growth to contract by a substantial
+[00:08:39] amount as oil prices have come down
+[00:08:41] substantially since the ceasefire. Now,
+[00:08:44] I will say as the Iran war escalation
+[00:08:47] seems to have started back up again,
+[00:08:50] that could come back into play and this
+[00:08:52] is probably one of the most important
+[00:08:56] indicators that we're paying attention
+[00:08:58] to here right now because a few weeks
+[00:09:00] ago we were inflation expectations have
+[00:09:04] come down substantially. our
+[00:09:06] expectations of further rate hikes in
+[00:09:08] 2026. We're starting to repric that. Um
+[00:09:12] inflation prints this week have come in
+[00:09:15] cooler than expected. Everything was
+[00:09:17] heading in the right direction with the
+[00:09:19] ceasefire, but with tensions in the
+[00:09:21] Middle East flaring up again. Is that
+[00:09:24] going to cause a reinflation re uh is
+[00:09:27] that going to respspark inflation? Is
+[00:09:29] that going to bring rate hikes back on
+[00:09:32] the table for 2026? If that does, that
+[00:09:35] certainly puts the equity rally or or
+[00:09:39] certainly puts on a substantial headwind
+[00:09:41] for the equity rally and I think that's
+[00:09:44] part of why the equity markets have
+[00:09:46] struggled to break out to new all-time
+[00:09:48] highs um at the moment. So, those are
+[00:09:52] some of the things that we're paying
+[00:09:53] attention to here right now. Now, what I
+[00:09:56] want to focus today's attention on is
+[00:09:58] the new options play dashboard. If you
+[00:10:01] haven't heard over the last week or so,
+[00:10:04] we've just launched a new Options Play
+[00:10:06] dashboard that's available to all
+[00:10:08] Options Play subscribers. And in that
+[00:10:11] new dashboard is a earnings calendar
+[00:10:13] that has been revamped specifically for
+[00:10:16] options traders. So, this is the new
+[00:10:19] dashboard. If you want to know how to
+[00:10:21] access it, you can either go directly to
+[00:10:23] dashboard.optionsplay.com
+[00:10:24] optionsplay.com or if you're on your
+[00:10:27] OptionsPplay platform, you can click on
+[00:10:29] the um uh news and education resource
+[00:10:34] and that will take you directly to the
+[00:10:36] dashboard. Um but I think the easiest
+[00:10:39] way to get to it is just simply bookmark
+[00:10:41] dashboard.optionsplay.com.
+[00:10:43] That's going to be the future of the
+[00:10:44] options play platform. And inside the
+[00:10:47] dashboard, you will see the earnings
+[00:10:49] calendar. the earnings calendar. You can
+[00:10:51] also expand and see a full screen of it.
+[00:10:55] This way you can get the full view of it
+[00:10:57] and you can see both grid and card
+[00:11:00] views. This way depending on how you'd
+[00:11:03] like to view it. Our old earnings
+[00:11:04] calendar was similar to the card view um
+[00:11:08] [cough]
+[00:11:08] which will give you a sense for how um
+[00:11:11] the stock is performing um uh you know
+[00:11:16] with with either uh with whichever view
+[00:11:19] you prefer. So,
+[00:11:22] one of the things that we are looking at
+[00:11:24] here right now is how you can use this
+[00:11:26] earnings calendar to quickly identify uh
+[00:11:30] stocks that may potentially be making a
+[00:11:32] big move in one direction or another.
+[00:11:36] So,
+[00:11:38] the the the earnings calendar provides
+[00:11:41] some filters that I think are really
+[00:11:44] important for options traders. And the
+[00:11:46] first thing that I want to take a look
+[00:11:48] at here is liquidity. Um, we'll talk
+[00:11:51] about liquidity, we'll talk about
+[00:11:52] directional edge, we'll talk about IV
+[00:11:54] rank, we'll talk about all of these
+[00:11:56] things in terms of helping you
+[00:11:57] understand. But when we're looking at
+[00:12:00] the new earnings calendar, there's going
+[00:12:01] to be a few things that I think are
+[00:12:03] really important for us to go through
+[00:12:04] today. The first one is going to be the
+[00:12:06] directional edge. This is our new
+[00:12:09] directional
+[00:12:11] um indicator that combines our
+[00:12:14] proprietary one-mon and six-month trend
+[00:12:17] indicator along with the relative
+[00:12:20] strength indicator. Those two indicators
+[00:12:23] al provided together give you a view on
+[00:12:27] the directional view of the particular
+[00:12:29] stock. So, um, we'll take a look at some
+[00:12:32] of the stocks like the ones that are
+[00:12:34] reporting today like GE, Netflix, United
+[00:12:36] Healthcare, and where they sit from a
+[00:12:38] directional edge perspective, what we're
+[00:12:41] generally looking for. Um, we'll take a
+[00:12:43] look at liquidity, we'll look at IV
+[00:12:46] rank, and we'll look at expected move
+[00:12:48] and how all of these help us um, gauge a
+[00:12:52] specific name coming up for earnings and
+[00:12:55] help us form a directional view. So the
+[00:12:58] first thing we want to take a look at
+[00:12:59] here is scanning for direction using
+[00:13:03] directional edge. So you can actually
+[00:13:06] filter the dashboard based on just
+[00:13:09] stocks that are either strong bullish or
+[00:13:12] strong bearish and that will give you
+[00:13:14] stocks that have the highest probability
+[00:13:17] of making a explosive move a directional
+[00:13:21] move rather on earnings because stocks
+[00:13:24] that are strong bullish or strong
+[00:13:26] bearish are stocks where the relative
+[00:13:28] strength and trends are aligned with
+[00:13:31] each other. So for example, if we take a
+[00:13:33] look at GE
+[00:13:35] on our platform,
+[00:13:40] the reason GE is showing up as a strong
+[00:13:42] um strong bull is because of the fact
+[00:13:45] that the one month and six-month trends
+[00:13:47] are trending higher and you have a
+[00:13:49] relative strength of eight out of 10. Or
+[00:13:52] if you look at United Healthcare,
+[00:13:56] you have one month and six months trends
+[00:13:58] that have remained green the whole time.
+[00:14:00] Relative strength of nine of nine out of
+[00:14:02] 10. So you have trends and relative
+[00:14:04] strength that are reporting that are all
+[00:14:06] trending in the right direction. Um
+[00:14:10] versus uh the
+[00:14:12] um
+[00:14:14] uh intuitive surgical law.
+[00:14:23] As you can see, one month and six month
+[00:14:25] trends are bearish. Relative strength of
+[00:14:27] two out of 10. Uh so weak relative
+[00:14:30] strength, bearish trends. This is what
+[00:14:32] we're looking for on the bearish side.
+[00:14:35] So the new earnings calendar essentially
+[00:14:38] allows you to filter the earnings
+[00:14:41] calendar based on just stocks that have
+[00:14:44] a strong directional edge indicator. Uh
+[00:14:47] you can also look at if you want to
+[00:14:49] expand out to maybe improving or
+[00:14:52] deteriorating. Uh but generally speaking
+[00:14:54] we want to I'm sorry uh you know you can
+[00:14:57] stay you can have bullish and bearish as
+[00:14:59] well. Um uh but you know strong bull and
+[00:15:02] strong bare is generally what I would uh
+[00:15:04] focus on when it comes to earnings
+[00:15:07] because that's going to give you stocks
+[00:15:08] that have the highest chance of making a
+[00:15:11] strong directional move on earnings.
+[00:15:15] Does that make sense everyone? Please
+[00:15:16] type one into the chat window if that
+[00:15:18] makes sense to you.
+[00:15:23] So looking at the upcoming upcoming
+[00:15:25] earnings calendar. Um one thing to also
+[00:15:28] look at here is under the time cal uh
+[00:15:31] time
+[00:15:32] column uh means before market AMC is
+[00:15:36] after market close. So for example,
+[00:15:40] given today's the 16th, you have
+[00:15:41] Intuitive Surgical and Amazon, I'm
+[00:15:44] sorry, and Netflix that are reporting
+[00:15:45] after the close. Both of those have poor
+[00:15:47] relative strength. Both of them have
+[00:15:50] poor bearish trends. So that leads us to
+[00:15:53] believe that these are stocks that could
+[00:15:55] potentially be making a b a bearish
+[00:15:58] um
+[00:16:00] move on earnings after the close here
+[00:16:03] today. Um, looking at uh now generally
+[00:16:07] speaking, we don't see a lot of stocks
+[00:16:09] that report earnings on Fridays or
+[00:16:11] Mondays. Mondays, you know, as we get
+[00:16:14] later into the season, we do see more of
+[00:16:16] it, but we do tend to see more um
+[00:16:19] earnings on Tuesdays, Wednesdays,
+[00:16:21] Thursdays, generally speaking. So,
+[00:16:24] looking out the next seven days, you can
+[00:16:26] filter um the earnings calendar just by
+[00:16:28] stocks that are reporting today or the
+[00:16:30] next seven days or the next 30 days. You
+[00:16:33] can also filter before or after market.
+[00:16:36] So you can say only show me stocks that
+[00:16:37] are reporting after the close.
+[00:16:40] So you have a lot of different opport
+[00:16:42] ways to sort and filter this list based
+[00:16:45] on what you're looking for. But I would
+[00:16:47] start my filters based on directional
+[00:16:50] edge. That's a first step in finding
+[00:16:53] stocks that are likely going to make
+[00:16:55] explosive moves in one direction or
+[00:16:57] another. [cough and clears throat]
+[00:17:01] The next thing we want to take a look at
+[00:17:02] here is liquidity. Um, when if you're
+[00:17:05] going to be trading options on these
+[00:17:07] stocks, liquidity is obviously going to
+[00:17:09] be a big concern of yours to be able to
+[00:17:12] get in and out, especially in fastmoving
+[00:17:14] markets. I would recommend that you
+[00:17:17] start with looking at only stocks that
+[00:17:19] are very liquid and only when you sort
+[00:17:23] of get towards the end of the season
+[00:17:25] when you know there are not as many
+[00:17:27] names that are reporting may you might
+[00:17:30] look at some um somewhat liquid names.
+[00:17:33] If you're looking for opportunities or
+[00:17:36] willing to be a little bit more
+[00:17:37] speculative but you're going to have
+[00:17:39] plenty of opportunities in just very
+[00:17:42] liquid names. So, as you can see, these
+[00:17:44] are all the stocks are reporting in the
+[00:17:45] next seven days that have a strong
+[00:17:47] directional uh edge and are very liquid.
+[00:17:52] I've also selected stocks that are
+[00:17:53] optionable. Um, but almost, you know,
+[00:17:56] all very liquid stocks are generally
+[00:17:59] going to be optionable.
+[00:18:01] So, looking at stocks that are, you
+[00:18:03] know, that have not reported, that's
+[00:18:05] Intuitive, Surgical, Netflix. These are
+[00:18:07] both bearish. You have Chub and Charles
+[00:18:10] Schwab on Tuesday. These are both strong
+[00:18:13] bullish stocks. Um, and you have CME
+[00:18:15] Group on Wednesday, that's bearish. GE,
+[00:18:18] Alphabet,
+[00:18:20] IBM, AT&T,
+[00:18:23] TE Connectivity, Tesla, Texas
+[00:18:25] Instruments, United Rents, Newmont, ST
+[00:18:28] Micro, Micro Electronics, and Union
+[00:18:30] Pacific. Those are the stocks that are
+[00:18:33] reporting in the next seven days that
+[00:18:35] have a strong directional view that are
+[00:18:37] very liquid and optionable. This should
+[00:18:40] give you plenty of opportunities to look
+[00:18:42] at. And the goal of this earnings
+[00:18:45] calendar is to give you a short list of
+[00:18:48] what to pay attention to because
+[00:18:50] earnings calendar, I'm sorry, earning
+[00:18:53] season is an incredibly busy time of the
+[00:18:56] year. There is um hundreds, sometimes
+[00:19:00] hundreds of stocks that you could
+[00:19:02] potentially look at on a given day.
+[00:19:04] Where do you start? Our goal is to help
+[00:19:07] you narrow that down to a handful of
+[00:19:10] stocks each day so that if you're going
+[00:19:12] to spend your time researching stocks,
+[00:19:14] doing your homework, you better be
+[00:19:16] focused on where you want to do that
+[00:19:18] homework. And this earnings calendar
+[00:19:20] provides you with that short list so
+[00:19:23] that if you like any of these stocks,
+[00:19:25] once you do your homework, you know that
+[00:19:28] there's an options that are very liquid
+[00:19:30] for you to trade for that specific
+[00:19:31] stock. you know that there is a strong
+[00:19:34] directional view from a technical
+[00:19:36] analysis perspective that aligns with
+[00:19:38] your directional view and now you have
+[00:19:41] the basis for
+[00:19:43] um stocks that could potentially be
+[00:19:45] making big moves heading into earnings.
+[00:19:48] Does that make sense to everyone? Please
+[00:19:49] type two into the chat window if that
+[00:19:51] makes sense to you.
+[00:19:58] Perfect. So, the next thing we want to
+[00:20:00] take a look at here is a new indicator
+[00:20:02] that's part of our earnings calendar,
+[00:20:04] which is expected move. And what we're
+[00:20:07] doing is we're using the options market
+[00:20:10] to price what's the options market
+[00:20:12] telling us the expected move for the
+[00:20:14] stock is going to be. Um, giving us a
+[00:20:18] sense for uh and that's this column here
+[00:20:21] over over here on the right hand side.
+[00:20:23] And you have it both in the grid view as
+[00:20:25] well as in the column view. Both of them
+[00:20:28] will allow you to um see the expected
+[00:20:31] move of a specific stock. So as you can
+[00:20:34] see GE Vernova 13.1 expected move,
+[00:20:37] Google 8 1.5%, IBM 12 1.5%. So the
+[00:20:42] bigger the expected move, the more that
+[00:20:45] the options market is implying uh that
+[00:20:47] stock can make a big move here to the
+[00:20:49] upside uh upside or downside. So it's
+[00:20:52] not directional in nature in terms of
+[00:20:54] the expected move. It's really um um
+[00:20:58] it's really based on the the underlying
+[00:21:02] options. So, let's take a look at
+[00:21:07] um let's take a look at the grid view
+[00:21:10] here again. So, let's look at what
+[00:21:12] stocks are reporting uh that are
+[00:21:13] expecting to see some big moves here. As
+[00:21:16] you can see, it's colorcoded. Um you
+[00:21:18] have Intuitive Surgical, Netflix, these
+[00:21:20] are all expecting big moves over 10%.
+[00:21:24] You have GE, IBM,
+[00:21:28] uh, TEL, Texas Instruments, United
+[00:21:31] Rentals, and, uh, ST Micro Electronics.
+[00:21:34] These are all the stocks that are
+[00:21:35] expecting to make big moves heading into
+[00:21:38] earnings. So, if you're looking for
+[00:21:39] stocks that can make big moves, that's
+[00:21:42] really where you want to focus your
+[00:21:44] attentions on for the specific uh,
+[00:21:48] earning upcoming earning season. You can
+[00:21:50] also filter by sector or industry if
+[00:21:52] you'd like. Um, but generally speaking,
+[00:21:54] if you're only looking at very liquid
+[00:21:56] names, you're only going to have a
+[00:21:58] handful of stocks to take a look at on
+[00:22:00] any given day. So, that will help you uh
+[00:22:06] sort and filter and come up with a short
+[00:22:08] list of stocks that you want to be
+[00:22:10] paying attention to heading into the
+[00:22:13] earnings season.
+[00:22:15] And lastly, what you want to take a look
+[00:22:18] at here is IV rank because that's going
+[00:22:20] to help you choose a structure for the
+[00:22:24] options trade. Generally speaking, IV
+[00:22:28] rank is
+[00:22:30] giving you an indication of whether
+[00:22:32] options are relatively cheap or
+[00:22:34] expensive. The higher the IV rank, the
+[00:22:36] more expensive the options are. The
+[00:22:38] cheaper the lower the IV rank, the
+[00:22:40] cheaper the options are. So, um, I've
+[00:22:44] created this T-chart here that'll help
+[00:22:46] give you some thoughts around what type
+[00:22:49] of option strategy might be suitable for
+[00:22:53] your directional views. So, if you have
+[00:22:55] a stock that has a strong bull but a low
+[00:22:59] IV rank, that's really where you might
+[00:23:01] want to consider buying some premium
+[00:23:03] like a call debit spread. But if you
+[00:23:06] have a strong bull with a high IV rank,
+[00:23:08] then you might consider selling premium
+[00:23:10] such as a put credit spread. Um, and if
+[00:23:13] you're looking at a strong bear with
+[00:23:14] cheap options, you might want to buy a
+[00:23:16] put spread. And if you have a a bearish
+[00:23:18] spread um that has high IV rank, you
+[00:23:21] might consider selling a call spread.
+[00:23:24] So, let's take a look at
+[00:23:26] the stocks in our list here. Um
+[00:23:29] [clears throat]
+[00:23:32] if we look at
+[00:23:35] uh let's look at intuitive surgical that
+[00:23:38] reports after the close here today you
+[00:23:39] have a strong bear here but as you can
+[00:23:42] see IV rank is 100. So this is this is a
+[00:23:46] stock that can make a big move with
+[00:23:48] options that are very expensive and has
+[00:23:50] a strong bear. So, this is where, you
+[00:23:52] know, maybe we might want to take a look
+[00:23:54] at um intuitive surgical inside of
+[00:23:57] options play and consider looking at
+[00:24:00] setting up a bearish um
+[00:24:05] uh we'll take a look at a bearish put
+[00:24:08] spread. I'm sorry, a bearish call spread
+[00:24:10] here. Um, so if I'm looking at at
+[00:24:13] selling some premium here, I might look
+[00:24:15] at this August 28th 400450 put spread
+[00:24:18] here because that's going to be the the
+[00:24:20] put I'm sorry, the call spread here. Um,
+[00:24:23] because that's going to be a more
+[00:24:25] favorable um, option strategy than
+[00:24:27] buying a put spread because puts are
+[00:24:29] going to be fairly expensive right now.
+[00:24:32] So, you can use this tool to help you
+[00:24:35] gauge. Same thing here for Netflix.
+[00:24:38] Netflix reporting after the close. Let's
+[00:24:40] take a look at Netflix.
+[00:24:46] Netflix, as you can see, on a strong
+[00:24:49] downward trajectory here. Um, but
+[00:24:52] because IV rank is very high, options
+[00:24:54] are very expensive. Um, you might want
+[00:24:56] to consider selling some premium here in
+[00:24:59] this particular case rather than buying
+[00:25:01] premium. So, if you select the high
+[00:25:02] implied volatility um uh button, that's
+[00:25:07] going to help you automatically set up a
+[00:25:10] call credit spread that's going to be
+[00:25:12] bearish on Netflix heading into
+[00:25:14] earnings. So, [snorts]
+[00:25:17] this is where you can combine the power
+[00:25:20] of the new earnings calendar with the
+[00:25:24] tools inside of OptionsPlay to help you
+[00:25:26] structure the options trade without
+[00:25:29] having to pull up an options chain,
+[00:25:31] without having to structure your
+[00:25:33] strategy, your expiration dates, your
+[00:25:35] strike prices, then do your analytics.
+[00:25:38] The tool does all, [cough]
+[00:25:42] excuse me, the tool does all of the work
+[00:25:44] for you so that you can just start have
+[00:25:47] a starting point at the very least to
+[00:25:49] start doing some research and you can
+[00:25:51] make modifications if you'd like. For
+[00:25:53] example, if you might say, you know, I
+[00:25:55] don't want to trade the weekly option.
+[00:25:56] I'd rather trade the monthly options.
+[00:25:59] Uh, you know, converting that maybe to
+[00:26:00] the August or maybe because of earnings
+[00:26:02] coming up, you might want to trade a
+[00:26:04] shortated option. This gives you the
+[00:26:06] ability to um modify these these
+[00:26:10] structures yourself uh further and find
+[00:26:12] perhaps fine-tune these strategies to
+[00:26:14] the ones that you prefer. But this is
+[00:26:17] really where um this is really where you
+[00:26:20] can find uh where you can structure the
+[00:26:23] trade once you find a specific idea that
+[00:26:26] you like from the earnings calendar.
+[00:26:30] Um uh we'll go through a few more ideas
+[00:26:33] or a few more structures. Um let's take
+[00:26:35] a look at uh Charles Schwab for example.
+[00:26:39] Strong bullish stock, relatively
+[00:26:41] inexpensive options. Or even if you look
+[00:26:43] at this one here, uh Tesla, strong
+[00:26:46] bearish stock. Options are actually very
+[00:26:48] inexpensive here. Let's take a look at
+[00:26:50] Tesla.
+[00:26:59] So Tesla as you can see one month and
+[00:27:01] six month trends are bearish. uh
+[00:27:03] relative strength is really is pretty
+[00:27:05] poor at 3 out of 10. You know, this is
+[00:27:09] the type of stock that could potentially
+[00:27:11] see an explosive move here to the
+[00:27:13] downside. And because options are very
+[00:27:15] inexpensive heading into earnings, I
+[00:27:18] might be more inclined to simply buy a
+[00:27:20] put spread here, looking at that
+[00:27:22] September 390 315 put. But the given
+[00:27:25] earnings, maybe I might use a
+[00:27:27] shortedated option, maybe even a 30-day
+[00:27:30] option, looking at buying the at the
+[00:27:32] money put. Um, selling maybe something a
+[00:27:35] one standard deviation way. Um, usually
+[00:27:38] these are the types of trades where I'd
+[00:27:39] be where I'd be even willing to be a
+[00:27:42] little bit more aggressive like buying
+[00:27:43] an out-ofthe- money put option, maybe a
+[00:27:45] 385 or maybe even a 380. And the way and
+[00:27:49] the reason to do that is because if I'm
+[00:27:51] expecting a big move here to the
+[00:27:52] downside, I want to try to risk as less
+[00:27:55] as possible to potentially make as much
+[00:27:57] as possible. So risking $1,200 to make
+[00:28:00] $3,200
+[00:28:02] if the stock tanks over the next few
+[00:28:05] weeks. Um if it if earnings comes out
+[00:28:07] poor, you know, these are the types of
+[00:28:09] trade structures that I generally prefer
+[00:28:11] heading into earnings. um if I'm going
+[00:28:14] to be buying some premium is I want to
+[00:28:16] try to collect as much I want to pay as
+[00:28:18] little as possible and have as strong
+[00:28:21] risk-to-reward as possible when I'm
+[00:28:22] buying a put or call debit spread.
+[00:28:27] So that's how you can quickly use the
+[00:28:30] options play platform and the new
+[00:28:32] dashboard to help you find these
+[00:28:34] explosive options moves. Uh filter them
+[00:28:37] so that you only find the most liquid
+[00:28:39] names that have uh a high probability of
+[00:28:43] making a big move using that expected
+[00:28:46] move indicator to give you a sense for
+[00:28:47] how big of a move you can potentially
+[00:28:49] expect. and then using the IV rank to
+[00:28:53] help you determine um what's the right
+[00:28:56] option strategy uh for this specific
+[00:28:59] earnings uh for that for that specific
+[00:29:03] name. So this is all available to you in
+[00:29:07] the new earnings calendar which is
+[00:29:09] available on our new dashboard at
+[00:29:11] dashboard.optionsplay.com.
+[00:29:15] So, in a nutshell, that's what I wanted
+[00:29:17] to share with you here today. Really
+[00:29:19] short and sweet, but a lot of
+[00:29:21] information now available to you in the
+[00:29:25] earnings calendar on the new dashboard.
+[00:29:28] Now, I saw a question here saying, "Hey,
+[00:29:30] Tony, where can we find that cheat sheet
+[00:29:32] for the IV rank buying either a debit or
+[00:29:34] credit spread?" So, in the new
+[00:29:36] dashboard,
+[00:29:38] there is now a section in the new
+[00:29:40] dashboard for all of our webinars. So,
+[00:29:44] um, this is really where you can look at
+[00:29:47] previously recorded webinars and
+[00:29:49] download the slides for each of these
+[00:29:52] webinars. So, once the session completes
+[00:29:54] today, you'll see a new listing for
+[00:29:57] today's session. And afterwards, you'll
+[00:29:59] be able to click on that link to
+[00:30:01] download the slides because the cheat
+[00:30:02] sheet that you're referring to is going
+[00:30:04] to be embedded in the slides from today.
+[00:30:08] So, if you want to go back and watch our
+[00:30:10] session from last week, which we covered
+[00:30:12] our early breakout detector, a key
+[00:30:15] indicator or key um signal that we
+[00:30:18] generate on a daily basis to help you
+[00:30:21] find trade ideas early on, as early as
+[00:30:24] possible in an overall trend um that we
+[00:30:27] cover uh you can watch that recording
+[00:30:29] and download this slide. So all
+[00:30:32] previously recorded webinars are now
+[00:30:34] available to you here on the dashboard
+[00:30:36] and you can download the slides and
+[00:30:38] follow along and have all the cheat
+[00:30:41] sheets that are embedded in these slides
+[00:30:45] available to you again on the new
+[00:30:47] dashboard.
+[00:30:50] So with that, let's turn this over to
+[00:30:53] our Q&A section. Now, while you type
+[00:30:57] your questions into the Q&A window here
+[00:30:59] at the bottom of your screen, [gasps]
+[00:31:02] if you're new to OptionsPlay, check and
+[00:31:04] you want to check out what we discussed
+[00:31:06] here today. Type your questions um uh go
+[00:31:10] to new.optionsplay.com/registration
+[00:31:12] or you can point your phone to that QR
+[00:31:15] code here on your screen. I'll post that
+[00:31:17] link here into the chat window if anyone
+[00:31:19] wants to sign up for that free third 40
+[00:31:22] 14-day trial and get access to the new
+[00:31:25] dashboard which includes this earnings
+[00:31:27] calendar that I just showed you here
+[00:31:30] today. And if you sign up next week,
+[00:31:32] we're going to be covering the income
+[00:31:35] reports on the dashboard. will cover uh
+[00:31:38] cover calls, cash secured puts over the
+[00:31:40] next couple of weeks to show you how you
+[00:31:42] can find ideas for the wheel strategy
+[00:31:45] using the new dashboard. So, every
+[00:31:47] single week we're going to be focusing
+[00:31:49] on idea generation for the month of
+[00:31:51] July. Last week we covered the early
+[00:31:54] breakout detector. This week we're
+[00:31:55] covering the earnings calendar and next
+[00:31:57] week and the week after we'll be
+[00:31:59] reviewing the wheel strategy and the
+[00:32:01] tools available to help you generate
+[00:32:04] maximum income in your portfolio um
+[00:32:07] using the wheel strategy. What you saw
+[00:32:10] today is just a small part of how
+[00:32:12] options play helps traders transform
+[00:32:15] towards profitability. to access our
+[00:32:18] full platform, including daily options
+[00:32:20] ideas, weekly research, and membersonly
+[00:32:24] live education with Q&A. You can start a
+[00:32:28] 14-day trial at optionsplay.com.
+[00:32:32] Our goal is to help you become
+[00:32:34] disciplined and become a profitable
+[00:32:37] trader through a continuous learning
+[00:32:40] process. Visit optionsplay.com and start
+[00:32:43] your free trial. and I'll see you at our
+[00:32:45] next live member session.

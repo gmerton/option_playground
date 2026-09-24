@@ -1,0 +1,2859 @@
+[00:00:00] okay good afternoon and welcome back
+[00:00:02] everyone to our options education
+[00:00:04] webinar series
+[00:00:05] my name is tony zhang i'm the chief
+[00:00:07] strategist here at options play
+[00:00:09] and today we're here to talk about a
+[00:00:10] strategy that we have not covered here
+[00:00:12] before
+[00:00:13] which are straddles and strangles and
+[00:00:16] i'm specifically referring to
+[00:00:18] selling straddles and strangles we're
+[00:00:20] not here to talk about buying straddles
+[00:00:21] and strangles because
+[00:00:22] that is a strategy that is almost uh an
+[00:00:26] entirely losing money losing
+[00:00:28] proposition in terms of buying straddles
+[00:00:30] and triangles
+[00:00:31] there is almost virtually
+[00:00:34] no way to make money buying calls buying
+[00:00:37] straddles or strangles
+[00:00:38] long term are there individual
+[00:00:40] opportunities to make
+[00:00:41] profits on that sure but over the long
+[00:00:43] run it's a strategy that almost
+[00:00:45] is is impossible to make money from so
+[00:00:47] we're talking about specifically sorting
+[00:00:49] straddles and triangles now this is a
+[00:00:50] more advanced strategy
+[00:00:52] number one it requires options level
+[00:00:54] four or five depending on what brokerage
+[00:00:56] firm
+[00:00:57] you trade with it requires a high amount
+[00:00:59] of margin
+[00:01:00] in terms of capital to enter one of
+[00:01:02] these trades so it's not for
+[00:01:04] trading accounts that have two three
+[00:01:06] five thousand dollars
+[00:01:08] and it is a strategy that has truly
+[00:01:11] unlimited risk
+[00:01:12] if anyone's been paying attention here
+[00:01:14] to the markets to strategies like
+[00:01:16] uh the short naked shorts that hedge
+[00:01:18] funds have taken on gamestop
+[00:01:20] if you had shorted a strangle on a stock
+[00:01:22] like game stock you would be
+[00:01:24] suffering the same kind of losses as
+[00:01:26] those hedge funds with have
+[00:01:27] unlimited losses to the upside so this
+[00:01:30] is not a strategy that's for
+[00:01:32] someone who's starting out it's
+[00:01:33] certainly only for strategies that are
+[00:01:35] typically
+[00:01:36] um for first for first of all uh clients
+[00:01:39] with larger accounts
+[00:01:41] uh more sophisticated understanding of
+[00:01:43] options and generally if you're trading
+[00:01:45] these you know we'll talk about what
+[00:01:46] type of
+[00:01:47] of stocks or etfs you might want to sell
+[00:01:50] these types of strategies on so let's go
+[00:01:51] ahead and get started
+[00:01:52] before we do what we're going to discuss
+[00:01:54] here today is purely for education and
+[00:01:56] demonstration purposes
+[00:01:58] it is not a solicitation or
+[00:02:00] recommendation to buy or sell any
+[00:02:02] specific securities
+[00:02:04] and i um so we'll start off by talking
+[00:02:06] about straddles
+[00:02:07] and we'll introduce strangles the two
+[00:02:09] are very similar to each other but there
+[00:02:11] are some slight differences in terms of
+[00:02:13] the option greeks
+[00:02:14] so we'll talk a little bit about what
+[00:02:15] the differences are about
+[00:02:17] of those option greeks from both
+[00:02:19] straddles and strangles how they differ
+[00:02:21] from each other
+[00:02:22] um from a from a mechanics perspective
+[00:02:25] the two are very similar
+[00:02:26] but they have very different optimal
+[00:02:29] strategies in terms of
+[00:02:31] how do you go about managing them when
+[00:02:32] do you go about taking profits
+[00:02:34] when you go about cutting losses how do
+[00:02:36] you go about rolling them and the trade
+[00:02:38] management
+[00:02:38] they're quite different from each other
+[00:02:40] from that perspective and then at the
+[00:02:41] end we'll open this up for
+[00:02:43] q a so again um we're only talking about
+[00:02:47] short straddles and strangles here
+[00:02:48] and the primary question that i want to
+[00:02:51] help investors
+[00:02:52] answer today is really why you know are
+[00:02:55] short straddles and strangles
+[00:02:57] even traded by investors if they truly
+[00:02:59] have
+[00:03:00] unlimited risk you know we usually talk
+[00:03:02] about options as a strategy to
+[00:03:04] limit risk i think that's really a big
+[00:03:07] part of what
+[00:03:08] what i teach here at options play is how
+[00:03:11] you can leverage options
+[00:03:12] to take directional views or views in
+[00:03:14] the broader markets
+[00:03:15] and do so in a way with limited risk
+[00:03:18] this is one of the few strategies that
+[00:03:19] we'll talk about that truly have
+[00:03:21] unlimited risk um and you must
+[00:03:24] understand the risks that you're taking
+[00:03:25] with this type of strategy so it's
+[00:03:27] not for uh someone who's starting out so
+[00:03:30] my name is tony zhang i'm the chief
+[00:03:32] strategist here at options play
+[00:03:34] and what i want to share with you today
+[00:03:36] are the optimal strategies around
+[00:03:38] selling
+[00:03:39] option premiums like this why
+[00:03:41] professional investors
+[00:03:42] love this type of strategy despite the
+[00:03:44] fact they have unlimited
+[00:03:46] risk and for those of you that are
+[00:03:48] starting out with options if you're
+[00:03:49] learning and you're trying to find some
+[00:03:50] new strategies and you're trying to get
+[00:03:52] some ideas as far as how you can utilize
+[00:03:55] options in your portfolio
+[00:03:57] one of the ways that you can do do so is
+[00:03:59] by watching cnbc every single friday
+[00:04:02] at 5 30 p.m there's a show called
+[00:04:04] options action
+[00:04:05] me mike and carter are on that show
+[00:04:07] every single week where we present to
+[00:04:09] you
+[00:04:09] three ideas on a stock or an etf we'll
+[00:04:12] lay out as far as what our directional
+[00:04:15] view on that stock etf
+[00:04:16] or sector or market is and then more
+[00:04:19] importantly we'll show you how we
+[00:04:20] leverage that view using
+[00:04:22] options now we'll typically not look at
+[00:04:24] selling straddles and strangles
+[00:04:26] on cnbc because again it requires a high
+[00:04:29] amount of margin
+[00:04:30] it has unlimited risk those are
+[00:04:32] typically not the type of strategies
+[00:04:34] that we would talk about
+[00:04:35] to the general public we usually talk
+[00:04:38] about strategies that all have limited
+[00:04:40] risk
+[00:04:41] but today i'm i am going to explore to
+[00:04:43] you uh
+[00:04:44] a short straddle and strangle which is
+[00:04:46] again a more advanced strategy
+[00:04:47] but has certain benefits so let's just
+[00:04:50] talk a little bit about what a short
+[00:04:52] straddle
+[00:04:53] looks like i'm going to use a fictitious
+[00:04:55] stock to start off with and then we can
+[00:04:56] look at some real stocks
+[00:04:58] with as an example using options play so
+[00:05:02] first of all just to define the strategy
+[00:05:04] itself a short straddle and a short
+[00:05:06] strangle are used
+[00:05:07] when you have a neutral view on an
+[00:05:10] underlying stock
+[00:05:11] or etf so not like buying a call or a
+[00:05:14] put when you're bullish or bearish
+[00:05:15] it's for a stock that you think is not
+[00:05:17] going to move very much and we'll talk a
+[00:05:19] little bit about
+[00:05:20] you know how you go about finding stocks
+[00:05:22] that you don't think is are
+[00:05:24] is going to move very much and one of
+[00:05:26] the metrics you can
+[00:05:27] gauge to get a better sense for when a
+[00:05:29] stock may not be may not move very much
+[00:05:32] so when you have stockxyz trading at 100
+[00:05:36] and you feel the stocks not going to
+[00:05:38] move very much over the next
+[00:05:40] week two weeks three weeks one of the
+[00:05:42] strategies that you can trade is a short
+[00:05:44] straddle now a short straddle will
+[00:05:46] consist
+[00:05:47] of selling a call option and a put
+[00:05:49] option at the exact same strike
+[00:05:52] so the stock is currently at one hundred
+[00:05:54] dollars i would sell an at the money
+[00:05:55] call
+[00:05:56] i would sell them at the money put let's
+[00:05:58] say for the call option i collect four
+[00:05:59] dollars in terms of a credit
+[00:06:01] i sell the one of the hundred dollar put
+[00:06:03] for four dollars credit
+[00:06:04] in total what i'm going to do is i'm
+[00:06:06] going to collect eight dollars
+[00:06:08] in order to sell the straddle now the
+[00:06:11] per
+[00:06:11] the premium that i collect from the
+[00:06:13] straddle that is the buffer that i get
+[00:06:16] from the strike price that i sold the
+[00:06:19] straddle at
+[00:06:20] at which the stock cannot exceed that
+[00:06:22] amount in order for me to break even
+[00:06:25] so what you have here is a strategy that
+[00:06:27] has a limited reward
+[00:06:28] just like when you short a put or short
+[00:06:30] a call or sell a credit spread whenever
+[00:06:33] you're selling an option strategy
+[00:06:35] you always have limited reward in this
+[00:06:37] particular case
+[00:06:38] normally if let's say i was mutual on
+[00:06:41] this stock and i just sold a 100
+[00:06:43] put option my reward is limited four
+[00:06:46] dollars now because i sold the put
+[00:06:48] and the call i've effectively doubled my
+[00:06:50] potential reward here from four dollars
+[00:06:52] to eight dollars and for that i'm taking
+[00:06:56] on
+[00:06:56] unlimited risk now when you sell a put
+[00:06:58] option
+[00:06:59] the stock can't go below zero so your
+[00:07:01] risk is limited to in this particular
+[00:07:03] case
+[00:07:04] ninety six dollars a share if you have
+[00:07:06] just sold a put
+[00:07:07] if you sell just the call this side you
+[00:07:09] do have truly
+[00:07:11] unlimited risk because if the stock
+[00:07:12] keeps going higher and higher and higher
+[00:07:14] you're going to lose more and more money
+[00:07:16] so you're really taking on
+[00:07:18] the risk of one side in exchange for the
+[00:07:21] premium
+[00:07:22] on both sides because the stock can't be
+[00:07:25] below this level and above that level
+[00:07:29] at the same time it has to be one or the
+[00:07:31] other right the stock either can drop
+[00:07:32] very much or it can um
+[00:07:36] rally significantly those are your two
+[00:07:38] possibilities beyond
+[00:07:39] the stock simply staying within a
+[00:07:41] neutral range
+[00:07:42] so the stocks moves very little stays
+[00:07:45] within this range
+[00:07:46] which in this particular case is between
+[00:07:48] 92 and 108
+[00:07:49] that's when you'll be profitable if it
+[00:07:51] exceeds that range
+[00:07:52] below 92 or above 108 that's when you
+[00:07:55] have losses
+[00:07:56] and the further the stock moves away
+[00:07:58] from that 100
+[00:07:59] strike price the more you have to lose
+[00:08:02] but again
+[00:08:03] when you just sell a put option all you
+[00:08:05] have is a four dollar buffer
+[00:08:07] when you sell a straddle you now have
+[00:08:10] effectively double an
+[00:08:11] eight dollar buffer so that's the that's
+[00:08:13] the role
+[00:08:14] if you will of why someone might want to
+[00:08:17] sell a straddle versus selling a naked
+[00:08:19] call
+[00:08:20] or a naked put because you are
+[00:08:21] effectively taking on very similar risk
+[00:08:23] profile
+[00:08:24] in exchange for double the amount of
+[00:08:26] premium or the double amount of
+[00:08:28] of buffer that you have before the
+[00:08:31] strategy is profitable
+[00:08:32] does that make sense everyone please
+[00:08:34] type one into the chat window
+[00:08:36] if that makes sense to you as far as
+[00:08:38] just the general structure
+[00:08:40] of this strategy okay so
+[00:08:44] what i want to discuss now a little bit
+[00:08:45] as far as that you know
+[00:08:47] i think everyone for the most part
+[00:08:49] understands this strategy but
+[00:08:51] the challenge with this strategy is the
+[00:08:53] fact that it requires a high amount of
+[00:08:55] margin because what you have to account
+[00:08:56] for
+[00:08:57] is the margin requirement to sell this
+[00:08:59] 100 put
+[00:09:01] the margin requirement to sell a naked
+[00:09:03] 100 call option against it
+[00:09:05] so generally speaking the margin
+[00:09:07] requirement on a short straddle or a
+[00:09:09] short strangle
+[00:09:11] is the greater of the two sides
+[00:09:13] uncovered short margins so if you
+[00:09:15] calculate the uh the margin requirement
+[00:09:19] for a naked call
+[00:09:20] the margin required for naked put
+[00:09:21] whichever one is greater
+[00:09:23] plus the premium of the of the um
+[00:09:27] other side that's how you get the margin
+[00:09:29] requirement of a short straddle
+[00:09:31] so generally speaking for a 100 stock
+[00:09:35] the amount of margin that's going to be
+[00:09:36] required to sell that is going to be
+[00:09:38] somewhere in the 20 to 30 percent range
+[00:09:41] so if you sold a 100 stock naked put or
+[00:09:44] make a call
+[00:09:45] you're going to have roughly about you
+[00:09:48] know
+[00:09:49] eighteen hundred two thousand dollars in
+[00:09:51] margin for that
+[00:09:52] here you're gonna need a little bit more
+[00:09:54] about two thousand to three thousand
+[00:09:55] dollars now this
+[00:09:56] this generally depends on the volatility
+[00:09:59] of the stock the more volatile the stock
+[00:10:01] is
+[00:10:02] the more a margin requirement you're
+[00:10:04] going to need on that particular trade
+[00:10:06] so let's talk a little bit about the the
+[00:10:09] strategy and as far as
+[00:10:10] what you're actually doing when you're
+[00:10:12] selling the straddle and to do that we
+[00:10:14] have to understand a little bit more
+[00:10:16] about the option greeks so when you're
+[00:10:19] selling a straddle
+[00:10:20] what you're effectively doing is you're
+[00:10:21] selling both the call and the put
+[00:10:23] now when you sell a caller or a put
+[00:10:26] you're effectively short volatility
+[00:10:27] you're short the vega
+[00:10:29] and when you're short of straddle you're
+[00:10:30] effectively doubling
+[00:10:32] the short volatility aspect that you
+[00:10:34] have in this particular strategy
+[00:10:37] the other thing that you have working in
+[00:10:38] your favor is a
+[00:10:40] short theta because time decay time
+[00:10:42] decay works in your favor
+[00:10:44] when you're selling an option in this
+[00:10:47] particular case what you're getting
+[00:10:48] is double that time decay right so
+[00:10:51] instead of just selling a call option
+[00:10:52] and collecting the premium for that
+[00:10:54] you're selling a call and a put you're
+[00:10:56] collecting premium on both
+[00:10:57] sides and because you're selling a call
+[00:11:00] or put
+[00:11:01] at the current price of the stock this
+[00:11:04] strategy is actually delta neutral
+[00:11:06] initially meaning when you sell let's
+[00:11:09] say a 50 delta call
+[00:11:10] and you sell a 50 delta put the call
+[00:11:13] side has a positive
+[00:11:15] 50 delta or rather 50 negative 50 delta
+[00:11:18] rather because you're selling it
+[00:11:19] and the put side has a positive 50 delta
+[00:11:22] because you're selling
+[00:11:23] the put and the two offset each other to
+[00:11:25] basically whoops
+[00:11:27] so and on the put side you're basically
+[00:11:29] long 50 deltas
+[00:11:31] on the on the call side your short 50
+[00:11:33] deltas
+[00:11:34] so the two offset each other to
+[00:11:35] effectively be delta neutrals your net
+[00:11:38] delta on this particular trade
+[00:11:40] is effectively zero however
+[00:11:43] as the trade if the stock starts to
+[00:11:45] drift if after you sell the stock
+[00:11:47] i sell the straddle and the stock starts
+[00:11:49] to drift either higher
+[00:11:51] or lower this is really where the start
+[00:11:53] where you start to get delta
+[00:11:54] exposure so the goal of a short straddle
+[00:11:59] is so that the delta exposure that you
+[00:12:02] have
+[00:12:02] meaning the drift in the underlying
+[00:12:04] stock what you want to do is make sure
+[00:12:06] that the stock doesn't drift too
+[00:12:07] far or else what you're going to lose to
+[00:12:10] delta
+[00:12:11] is going to overcome what you're gaining
+[00:12:14] on the short volatility
+[00:12:15] and short theta side so for any one of
+[00:12:18] you that's here on this webinar
+[00:12:20] if you feel that i'm getting way over in
+[00:12:23] if you feel that you're getting way over
+[00:12:25] um in your head as far as what i'm
+[00:12:27] talking about in terms of deltas
+[00:12:28] uh you know gammas thetas vegas
+[00:12:32] um we do have a webinar
+[00:12:35] separately on option greeks which i
+[00:12:37] highly recommend that you go and take a
+[00:12:39] look
+[00:12:39] but again that's why i said in the
+[00:12:41] beginning this is a more advanced
+[00:12:42] webinar
+[00:12:43] it's only for those of you that have a
+[00:12:45] little bit more experience trading
+[00:12:47] options but that gives you a sense for
+[00:12:49] what you're trying to do here because
+[00:12:51] what you're doing when you're selling a
+[00:12:52] straddle is you're hoping
+[00:12:54] that the stock doesn't move very much
+[00:12:56] meaning volatility doesn't expand you
+[00:12:58] don't have a big move in the underlying
+[00:12:59] stock that causes volatility to expand
+[00:13:02] uh what you're hoping is that this it's
+[00:13:05] not that you're hoping
+[00:13:06] time decay is going to work in your
+[00:13:08] favor on a short straddle
+[00:13:09] and you actually get double the time
+[00:13:11] decay and all you're hoping is that the
+[00:13:13] stock doesn't make a big move
+[00:13:15] and that delta basically overcomes what
+[00:13:18] you're gaining here on these two
+[00:13:20] so you can think of the short vega and
+[00:13:22] short theta as
+[00:13:23] positives for your strategy and the
+[00:13:25] delta if the stock
+[00:13:26] doesn't move then delta is also going to
+[00:13:29] work in your favor and that's how you
+[00:13:30] get a positive trade and that's how you
+[00:13:32] get
+[00:13:33] a profit at expiration so at expiration
+[00:13:36] if the stock doesn't move
+[00:13:37] then delta's working your favor or it's
+[00:13:39] not working against you rather
+[00:13:41] i think what's a more accurate statement
+[00:13:44] for if the stock doesn't move
+[00:13:46] is that delta stays neutral so you just
+[00:13:48] basically remain neutral
+[00:13:49] and what you're gaining here is vega and
+[00:13:52] theta
+[00:13:53] now if the stock makes a big move what
+[00:13:55] you're going to see here
+[00:13:57] instead is that um you're going to have
+[00:14:00] uh whoops you're going to have
+[00:14:05] volatility and theta work in your favor
+[00:14:07] but delta becomes
+[00:14:08] much much larger and offsets the gains
+[00:14:11] that you have from vega
+[00:14:12] and theta so that's what happens when
+[00:14:15] the stock makes a big move higher
+[00:14:17] or a big move layer move lower and
+[00:14:19] that's when you have
+[00:14:20] losses on this particular strategy does
+[00:14:22] that make sense again
+[00:14:24] please type two if that makes sense to
+[00:14:26] you
+[00:14:28] and for those of you that are uh asking
+[00:14:30] you know is this going to be recorded
+[00:14:31] the answer is yes
+[00:14:32] you know this is an advanced topic so we
+[00:14:34] always make sure the recordings are
+[00:14:36] available
+[00:14:36] along with the slides so that you can
+[00:14:38] follow along and take it at your own
+[00:14:40] pace maybe
+[00:14:41] go back and do some reading on the
+[00:14:43] greeks understand
+[00:14:44] vega theta and delta and then come back
+[00:14:47] and
+[00:14:48] and try to re uh understand these
+[00:14:50] concepts again
+[00:14:51] so effectively the way to profit from a
+[00:14:54] short straddle
+[00:14:55] is if the stock does not drift too much
+[00:14:58] to offset the gains that you have
+[00:15:00] from theta and vega that's the goal of
+[00:15:02] selling the straddle
+[00:15:04] now when should you generally go about
+[00:15:06] doing this
+[00:15:07] we talk about selling stratas meaning
+[00:15:09] when you sell the at the money call or
+[00:15:11] put the exact same strike price
+[00:15:13] as the current price of the stock this
+[00:15:16] is generally suitable for
+[00:15:18] stocks that are generally lower priced
+[00:15:20] under a hundred dollars
+[00:15:22] you don't generally want to sell
+[00:15:23] straddles on stocks like amazon they're
+[00:15:25] trading at three thousand dollars thirty
+[00:15:26] five hundred dollars
+[00:15:28] you wanna do it on low price stocks
+[00:15:31] the other thing that you wanna generally
+[00:15:32] look for is high iv rank wanna come back
+[00:15:35] to this and talk a little bit about
+[00:15:37] what high iv rank is but it's really
+[00:15:39] looking at the implied volatility of an
+[00:15:41] option looking at how it's uh currently
+[00:15:44] trading with respect to the
+[00:15:45] to the the range of ivs that we have
+[00:15:48] seen over the past year
+[00:15:49] and and you're trying to sell options
+[00:15:52] that have high iv
+[00:15:53] basically what you're what you're
+[00:15:55] targeting are stocks that have very
+[00:15:57] really high vega because something with
+[00:15:59] a high amount of implied volatility
+[00:16:01] has a higher probability of moving lower
+[00:16:04] implied volatility because you're short
+[00:16:06] vega you want volatility to come down
+[00:16:08] so if you want volatility come down you
+[00:16:10] naturally want to find stocks where
+[00:16:12] volatility is elevated the more elevated
+[00:16:15] implied volatility currently is
+[00:16:17] the higher the probability it's going to
+[00:16:18] come down that's how you get vega to
+[00:16:20] work in your favor
+[00:16:22] theta is always going to work in your
+[00:16:23] favor and then your goal is that if you
+[00:16:25] can
+[00:16:25] maximize the vega part which
+[00:16:29] ma which means that you have a higher
+[00:16:30] chance of this coming down
+[00:16:32] you know theta is going to come work in
+[00:16:33] your favor and what you're hoping is
+[00:16:35] that delta does not exceed
+[00:16:37] the gains that you have on a short
+[00:16:40] volatility
+[00:16:41] and short time decay so that's why we
+[00:16:44] generally
+[00:16:45] uh seek something with a high iv rank
+[00:16:48] and then what you're trying to do is
+[00:16:49] you're just trying to collect as much of
+[00:16:51] a percentage of the stock price because
+[00:16:53] in this example here we're collecting
+[00:16:55] eight percent
+[00:16:56] of the stock price so when you're
+[00:16:58] collecting eight percent of the stock
+[00:16:59] price
+[00:17:00] that means the stock can move up to
+[00:17:03] one way or another before the strategy
+[00:17:06] is profitable so if instead
+[00:17:07] instead of risking instead of collecting
+[00:17:09] eight percent if you collected ten
+[00:17:10] percent
+[00:17:11] then the stock has to move ten percent
+[00:17:13] before the strategy is is unprofitable
+[00:17:15] if you collect fifteen percent then the
+[00:17:17] stock has to move 15
+[00:17:19] so the higher the iv rank generally
+[00:17:22] speaking the larger
+[00:17:23] a percentage of the stock price you're
+[00:17:25] going to collect and the larger
+[00:17:26] percentage of stock price you collect
+[00:17:27] the bigger buffer you have from taking
+[00:17:30] losses
+[00:17:31] on this type of on this type of strategy
+[00:17:33] and lastly
+[00:17:34] you generally want to target stocks that
+[00:17:36] have no earnings
+[00:17:37] or catalysts that are coming up because
+[00:17:40] if you have an earnings
+[00:17:41] coming up in a few days that is the
+[00:17:43] catalyst that could drive that stock to
+[00:17:45] move significantly higher
+[00:17:47] or significantly lower now there are
+[00:17:50] some professionals there are plenty of
+[00:17:51] professionals i would say
+[00:17:52] that actually do like selling strangles
+[00:17:54] going into earnings
+[00:17:56] and those are usually based on you know
+[00:17:58] a multiple factors of them believing the
+[00:18:01] stocks
+[00:18:01] not going to make a big move on earnings
+[00:18:04] and they're effectively trying to look
+[00:18:05] for stocks
+[00:18:06] that have elevated implied volatility
+[00:18:08] now stocks generally do have elevated
+[00:18:10] and implied volatility going
+[00:18:12] up into earnings now if you have other
+[00:18:14] models that show you that you don't
+[00:18:16] think the stock's going to make a big
+[00:18:17] move
+[00:18:18] on on earnings that is one way that you
+[00:18:20] can do it but i generally recommend for
+[00:18:23] most
+[00:18:23] uh investors that are starting out with
+[00:18:25] this type of strategy
+[00:18:27] is to target stocks that don't have a
+[00:18:29] catalyst coming up
+[00:18:31] when you're shorting a straddle or a
+[00:18:33] strangle does that make sense please
+[00:18:35] type
+[00:18:35] three into the chat window if that makes
+[00:18:37] sense to you
+[00:18:42] okay so let's now talk a little bit
+[00:18:45] about a strangle which is very similar
+[00:18:47] in nature
+[00:18:48] but it's also at the same time quite
+[00:18:51] different so
+[00:18:52] what we're doing here is the same thing
+[00:18:53] we have a neutral view on stockxyz
+[00:18:56] but instead of selling and at the money
+[00:18:58] call and at the money put
+[00:19:00] what we're going to sell is an out of
+[00:19:02] the money call and an out of the money
+[00:19:04] put
+[00:19:05] now when you sell an out of the money
+[00:19:06] calling out of the money put what you're
+[00:19:08] going to do is you're going to collect a
+[00:19:09] lot less so
+[00:19:10] before we're collecting four dollars on
+[00:19:11] each side here now i'm only collecting
+[00:19:14] two dollars on each side so what i'm
+[00:19:15] going to do is i'm going to limit the
+[00:19:17] amount
+[00:19:17] of potential profit that i have on this
+[00:19:20] trade
+[00:19:21] so now instead of potentially making
+[00:19:23] eight dollars on the trade i'm only
+[00:19:25] making potentially four dollars on this
+[00:19:27] but the offset that i'm doing is the
+[00:19:30] fact that when i'm selling an
+[00:19:31] out the money call or put and i'm
+[00:19:33] collecting less capital
+[00:19:35] um my i'm actually widening out the
+[00:19:38] breakeven price here because
+[00:19:40] i'm basically going from 95. sorry
+[00:19:44] um this is incorrect this should say
+[00:19:47] 91 and 109. i apologize
+[00:19:52] for this this should say 91 to 109
+[00:19:56] because i'm collecting four dollars and
+[00:20:00] my breakeven price is 95 dollars minus
+[00:20:02] four dollars
+[00:20:03] or 105 plus four dollars which is
+[00:20:07] 91 and 109. so i apologize for this i
+[00:20:10] will correct this before i send
+[00:20:12] this out but as you can see before what
+[00:20:14] i was doing
+[00:20:15] is that i was collecting eight dollars
+[00:20:18] and my breakeven price is 92 and 108
+[00:20:21] now i'm collecting four dollars but my
+[00:20:24] break-even price is actually even
+[00:20:25] further
+[00:20:26] away because i'm selling that out of the
+[00:20:28] money um
+[00:20:29] strangle instead of a straddle so you
+[00:20:32] basically have the same risk to reward
+[00:20:34] ratio as you have before
+[00:20:36] now what you're doing is you're
+[00:20:37] collecting less premium
+[00:20:39] but you have a larger buffer the stock
+[00:20:41] can move
+[00:20:42] a larger amount before you're
+[00:20:44] unprofitable
+[00:20:45] on this type of trade now there's quite
+[00:20:47] a few differences here also
+[00:20:49] as well when it comes to this type of
+[00:20:51] strategy now
+[00:20:52] from a strangle perspective you have the
+[00:20:54] same
+[00:20:55] short volatility and short theta as you
+[00:20:58] do on a short straddle
+[00:20:59] but the one thing that does that is
+[00:21:02] quite different from a short straddle in
+[00:21:03] the strangle
+[00:21:04] is that you still start out delta
+[00:21:06] neutral but as a stock
+[00:21:08] drifts higher or lower the changes in
+[00:21:11] delta happen
+[00:21:11] actually a lot slower because you're not
+[00:21:15] selling an at the money call or a put so
+[00:21:17] as a stock moves away
+[00:21:18] you immediately start to have that delta
+[00:21:21] exposure on both sides
+[00:21:22] on one side here the stock needs to move
+[00:21:24] a significant amount
+[00:21:26] before your short put or short call
+[00:21:29] becomes
+[00:21:29] in the money and that delta starts to
+[00:21:32] starts to play a factor in this so the
+[00:21:34] delta drift is much smaller
+[00:21:36] so you really focus a lot more on the
+[00:21:38] short volatility
+[00:21:40] the short vega and the short theta part
+[00:21:43] you're just collecting less premium
+[00:21:45] and it's happening at a slightly lower
+[00:21:46] pace but the offset is the fact that
+[00:21:49] delta is going to drift much slower okay
+[00:21:53] now when we're talking about a short
+[00:21:56] strangle
+[00:21:57] this is really where you have um this is
+[00:22:00] generally used for stocks that are a
+[00:22:02] little higher
+[00:22:03] so stocks that are over 100 but also
+[00:22:06] you also don't want to sell strangles
+[00:22:07] generally speaking on stocks that are
+[00:22:09] over
+[00:22:09] 500 number one it just requires a large
+[00:22:12] amount of capital
+[00:22:13] it also has a large amount of risk right
+[00:22:16] because a 500 dollar stock
+[00:22:18] going to zero is going to hurt a lot
+[00:22:19] more than a 100
+[00:22:21] stock going to zero so unless you have a
+[00:22:23] very very sizable account
+[00:22:26] um generally speaking we tend to find
+[00:22:27] that when you're selling strangles
+[00:22:29] you do it on a strat on a stock that's
+[00:22:31] anywhere from 100 to 500
+[00:22:34] anything greater than that you're gonna
+[00:22:35] find that the margin requirements are
+[00:22:36] too high
+[00:22:37] anything lower than that you might find
+[00:22:39] that the premiums are not quite high
+[00:22:41] enough
+[00:22:41] that you might want to sell a straddle
+[00:22:44] instead for stocks that are
+[00:22:45] under 100 but you still want to do it on
+[00:22:48] stocks that have high iv rank
+[00:22:50] meaning you don't want to do it on a
+[00:22:51] stock that currently has relatively
+[00:22:54] low volatility and you also want to try
+[00:22:56] to collect as
+[00:22:57] large of a percentage of the stock price
+[00:22:59] as possible because
+[00:23:00] the larger the percentage that you
+[00:23:02] collect the wider the break-even price
+[00:23:05] on this strategy is going to be and for
+[00:23:07] those of you that are looking at this
+[00:23:08] type of strategy
+[00:23:09] you know you might notice that selling a
+[00:23:11] strength a strangle
+[00:23:12] looks kind of like a butterfly um
+[00:23:15] because that's exactly what a butterfly
+[00:23:16] is is you're selling the strangle
+[00:23:18] and then instead what you're also doing
+[00:23:20] in addition to that as you're buying a
+[00:23:21] lower put
+[00:23:22] and buying a lower call so that you
+[00:23:24] don't have unlimited risk of the
+[00:23:26] downside
+[00:23:27] that you limit your risk to both sides
+[00:23:29] so that's what a butter that's how a
+[00:23:31] butterfly is effectively constructed
+[00:23:33] and then a strangle is similar to the
+[00:23:35] nature to an iron condor or some type of
+[00:23:37] condor
+[00:23:38] because that's exactly how an iron
+[00:23:40] condor is constructed because what
+[00:23:41] you're doing is you're buying that out
+[00:23:43] of the money caller put
+[00:23:44] further out of the money caller put so
+[00:23:46] that you don't have unlimited losses
+[00:23:48] you actually limit your losses here to
+[00:23:50] the downside so that's part of why i'm
+[00:23:52] introducing
+[00:23:53] straddles and strangles here so that we
+[00:23:55] can then take this education
+[00:23:57] and uh take it to the next level which
+[00:24:00] for those of you that perhaps
+[00:24:01] you don't want to take on that unlimited
+[00:24:03] risk factor you can turn it into a
+[00:24:04] butterfly
+[00:24:05] you can turn it into an iron condor for
+[00:24:07] those of you that like to trade that
+[00:24:09] uh to like to trade that strategy but
+[00:24:10] the underlying
+[00:24:12] trade that you're making when you're
+[00:24:13] trading a butterfly or a condor is
+[00:24:16] actually a short straddle
+[00:24:17] and a short string does that make sense
+[00:24:19] everyone please type 4 into the chat
+[00:24:21] window
+[00:24:22] if that makes sense to you but the rules
+[00:24:25] for the two strategies are very similar
+[00:24:27] you generally want to do them on high iv
+[00:24:29] rank stocks
+[00:24:31] you generally want to collect as large
+[00:24:32] of a percentage as possible of the stock
+[00:24:34] price
+[00:24:35] and you generally want to do it when
+[00:24:36] there are no earnings or catalysts
+[00:24:39] on the calendar so you know catalysts
+[00:24:41] outside of earnings
+[00:24:43] are things like if a stock is about to
+[00:24:45] do a big product release
+[00:24:46] right um that might be a catalyst that
+[00:24:49] could have a
+[00:24:50] major impact on the stock itself and i'm
+[00:24:53] thinking about things like
+[00:24:54] when when apple announces that they're
+[00:24:56] gonna launch a new product and
+[00:24:58] they have an event scheduled for it or
+[00:25:00] if tesla is putting out their battery
+[00:25:02] day you know a big
+[00:25:03] event like that those are the types of
+[00:25:05] things that you want to look out for
+[00:25:07] and avoid when you're selling the
+[00:25:08] straddle and strangle because those are
+[00:25:10] the types of events
+[00:25:11] that can potentially move the stock
+[00:25:13] substantially higher or substantially
+[00:25:15] lower
+[00:25:15] okay so let's just take a look look at
+[00:25:18] like when should you sell
+[00:25:20] straddles and triangles and this is
+[00:25:21] really where i think
+[00:25:23] a lot of investors um you know when you
+[00:25:25] when you look at a chart
+[00:25:26] it is obvious for a lot of investors to
+[00:25:29] say
+[00:25:30] hey you know a stock that i've noticed
+[00:25:32] has been trading in that range for a
+[00:25:33] while
+[00:25:34] i think this is a good time to sell a
+[00:25:36] straddle and a strangle
+[00:25:37] and intuitively that makes a lot of
+[00:25:40] sense you've identified a stock it's
+[00:25:42] trading in a range let me sell a
+[00:25:43] straddle and strangle
+[00:25:45] and and many times that's what i hear
+[00:25:46] from investors who say
+[00:25:48] hey i've identified a stock it's trading
+[00:25:50] in a range i think i want to sell an
+[00:25:52] iron condor
+[00:25:53] and i can't help but just again
+[00:25:56] reiterate
+[00:25:57] when you look at a chart and you look at
+[00:25:59] when do stocks
+[00:26:00] tend whoops when do when do stocks tend
+[00:26:04] to trade in a range like this
+[00:26:06] they usually tend to follow big moves
+[00:26:09] meaning after the stock makes a big move
+[00:26:12] that's when we tend to find
+[00:26:13] consolidation ranges or consolidation
+[00:26:16] periods
+[00:26:16] after which a stock trades within a
+[00:26:18] range so
+[00:26:20] it's actually when you've identified a
+[00:26:22] range rarely is that actually a good
+[00:26:24] time
+[00:26:25] to sell a straddle and a strangle if
+[00:26:27] anything
+[00:26:28] at the end of the by the time that
+[00:26:30] you've identified the stock is trading
+[00:26:32] with the range
+[00:26:33] that's actually when it's more likely to
+[00:26:35] have a bigger move
+[00:26:36] so what we tend to find is that stocks
+[00:26:39] that make big moves
+[00:26:40] are the ones that are more likely to
+[00:26:42] trade sideways as you can see here
+[00:26:44] when you have these big moves you tend
+[00:26:45] to have stocks that trade sideways
+[00:26:47] it doesn't work all the time right
+[00:26:49] sometimes the stock makes a big move in
+[00:26:50] one direction
+[00:26:51] and then immediately reverses in the
+[00:26:53] opposite direction this is by no
+[00:26:55] means a um an exact science
+[00:26:58] but this is certainly something that i
+[00:27:00] have noticed as a technical analyst
+[00:27:02] myself
+[00:27:03] and another way that you can analyze
+[00:27:05] this another way that you can
+[00:27:06] look for these is at the bottom here i
+[00:27:09] have a chart of the implied volatility
+[00:27:11] now this is jpmorgan chase it doesn't
+[00:27:14] really matter what time frame this is
+[00:27:16] this is the implied volatility here
+[00:27:18] chart of jpmorgan chase
+[00:27:20] and as you can see here for the most
+[00:27:21] part it trades within a range of
+[00:27:23] somewhere between 35 36
+[00:27:25] to the upside and about 15 here to the
+[00:27:28] downside so what iv
+[00:27:30] rank measures is where does where is the
+[00:27:33] stock within this particular range
+[00:27:35] so i put a i put a bar here i put a line
+[00:27:38] here
+[00:27:38] at the middle so you can consider this
+[00:27:40] middle as
+[00:27:41] um iv rank of fifty percent that's
+[00:27:44] exactly what iv ranked fifty percent
+[00:27:46] means
+[00:27:47] it means that what is the low that we've
+[00:27:48] seen over the past year
+[00:27:50] what is that i'm sorry what is the low
+[00:27:51] and what is the high and what is the
+[00:27:53] middle of that so
+[00:27:54] if it's between 15 and 35 that means
+[00:27:57] this
+[00:27:57] middle line is drawn somewhere around 25
+[00:28:01] and what you want to do is you want to
+[00:28:03] identify when jpm is above
+[00:28:06] 25 when the iv percentile or iv
+[00:28:09] implied volatility is above 25
+[00:28:13] the reason for this is because these
+[00:28:15] spikes that you see
+[00:28:16] are generally after the stock makes a
+[00:28:19] big move and after the stock makes a big
+[00:28:21] move
+[00:28:21] these are generally times that you may
+[00:28:24] see stocks
+[00:28:24] trade in a sideways fashion it doesn't
+[00:28:26] work all the time and not
+[00:28:28] and sometimes when you get a big move to
+[00:28:30] the upside uh you know iv
+[00:28:32] is actually at the lower end of the
+[00:28:33] spectrum but from my perspective that's
+[00:28:35] still an
+[00:28:36] opportunity to sell um but here's
+[00:28:38] another one where you have a spike here
+[00:28:40] in the implied volatility and then the
+[00:28:42] stock traded sideways
+[00:28:43] here's another spike that you see but as
+[00:28:45] you can see the trade the stock doesn't
+[00:28:47] trade sideways
+[00:28:48] it moves substantially higher here so
+[00:28:50] this is not something that
+[00:28:51] is going to work every single time but
+[00:28:54] generally speaking you're going to find
+[00:28:55] that
+[00:28:56] after a big move you have a higher
+[00:28:58] probability of the stock trading
+[00:28:59] sideways rather than than the stock um
+[00:29:03] after you've identified a range that's
+[00:29:05] when it's least likely
+[00:29:06] to actually continue to trading in that
+[00:29:09] range that makes sense everyone please
+[00:29:10] type 5 into the chat window
+[00:29:13] if that makes sense to you so one of the
+[00:29:15] best ways to try to identify the optimal
+[00:29:18] opportunity to sell
+[00:29:19] a straddle or strangle which at the end
+[00:29:22] if you want to you can turn
+[00:29:23] into a butterfly or a condor is to look
+[00:29:25] for stocks
+[00:29:26] that have exceeded their 50 range here
+[00:29:30] so
+[00:29:31] when you're looking at a page like this
+[00:29:33] this allows you to identify
+[00:29:35] opportunities when you want to sell that
+[00:29:37] straddle and strangle
+[00:29:39] on this particular stock
+[00:29:42] so what we have created here at options
+[00:29:45] play is what we call an
+[00:29:46] at the money straddle report now this is
+[00:29:48] something that i'm
+[00:29:49] currently still tinkering with and i'm
+[00:29:51] still working on improving
+[00:29:53] but this is something that you have
+[00:29:54] available to you here whoops
+[00:29:56] um this is a report that you can have
+[00:29:58] access to we are in the process of
+[00:30:00] adding this
+[00:30:01] uh to the platform so that everyone can
+[00:30:03] have access to it but i'm giving
+[00:30:05] everyone here on this webinar early
+[00:30:08] access to this report
+[00:30:10] and the way that this report works is
+[00:30:11] similar to the credit spread report
+[00:30:13] that many of you are currently
+[00:30:15] leveraging in your trading and what it
+[00:30:16] does is it
+[00:30:18] tells you it sorts it based on how much
+[00:30:20] premium you're collecting
+[00:30:22] as a percentage of the stock price and
+[00:30:25] it also tells you iv rank
+[00:30:27] and earnings date now what you see is
+[00:30:29] that stocks that have the highest amount
+[00:30:31] of premium that you're collecting so
+[00:30:33] for example plug power it's a stock
+[00:30:36] but the 65 and a half straddle meaning
+[00:30:39] the at the money straddle
+[00:30:41] is collecting 21.35
+[00:30:44] meaning the stock has to move 33 in one
+[00:30:47] direction
+[00:30:48] or another in the next 45 days roughly
+[00:30:51] before this strategy is unprofitable
+[00:30:54] so just let's just plug this in here
+[00:30:56] plug power at 65.35
+[00:31:04] notice how this was after a big move
+[00:31:06] here already now plug power has actually
+[00:31:08] been
+[00:31:08] on this report here for a few days um
+[00:31:11] but let's see let's go to
+[00:31:13] uh neutral short string short straddle
+[00:31:16] sorry
+[00:31:18] short straddle we'll do the march 5th
+[00:31:21] 65 and a half uh strangle
+[00:31:25] a straddle rather as you can see the
+[00:31:27] break-even price is
+[00:31:28] 43.50 or 87.50 so just to put that into
+[00:31:32] context 4350
+[00:31:34] is down here and i probably have to zoom
+[00:31:37] in to get to 85.50 here so
+[00:31:40] 43.50 is around here
+[00:31:43] and 875 is
+[00:31:46] up here so the stock would have to
+[00:31:50] exceed that level
+[00:31:52] or go below that level by march 5th
+[00:31:56] in order for this strategy to be
+[00:31:58] unprofitable if it's anywhere within
+[00:32:00] this range between
+[00:32:01] 40 uh 43 and a half and 87 and a half
+[00:32:05] that's when this straddle will be
+[00:32:07] profitable so
+[00:32:08] this report is something that we're
+[00:32:09] still working on to try to improve and
+[00:32:11] provide
+[00:32:12] you know kind of the best scenarios for
+[00:32:14] you for you
+[00:32:15] for you to sell a straddle or strangle
+[00:32:18] on now
+[00:32:19] the thing about iv ranks is that it's a
+[00:32:21] very crude and very
+[00:32:22] simple calculation and in turn there are
+[00:32:26] some limitations and the big limitation
+[00:32:28] that we generally have with iv
+[00:32:29] rank is the fact that in the month of
+[00:32:32] february during the coronavirus
+[00:32:34] normally volatilities look like this um
+[00:32:36] during the coronavirus we had this huge
+[00:32:38] spike
+[00:32:39] which kind of which kind of derails
+[00:32:42] the upper bound of the range which
+[00:32:44] normally would be down here or so
+[00:32:46] whoops
+[00:32:53] normally the upper bound of the range
+[00:32:55] would be somewhere here but because of
+[00:32:57] the pandemic
+[00:32:58] we have the upper bound of the range
+[00:33:00] over here which means that
+[00:33:02] normally you know you would what would
+[00:33:05] be
+[00:33:05] a normal range would look like this and
+[00:33:07] the 50 rank would be somewhere here
+[00:33:10] now the 50 rank is somewhere over here
+[00:33:13] so you need a much bigger spike in
+[00:33:15] implied volatility get it above 50
+[00:33:18] in terms of iv rank until february of
+[00:33:21] next year so this is just kind of
+[00:33:23] so just to give you a little bit of an
+[00:33:25] understanding of kind of how the sausage
+[00:33:26] is made
+[00:33:27] in the background but iv rank which
+[00:33:29] normally is a good measure in
+[00:33:31] normal times of when implied volatility
+[00:33:34] is high or low
+[00:33:34] we tend to find that this has been
+[00:33:36] skewed a little bit again because of the
+[00:33:38] pandemic this year
+[00:33:39] so anything over that 30 now i would say
+[00:33:42] is on the higher end of the spectrum
+[00:33:44] here we do have to make that adjustment
+[00:33:46] until we get
+[00:33:47] past march of 2021 when we can where the
+[00:33:53] where the
+[00:33:53] high implied volatilities from february
+[00:33:55] and march are basically
+[00:33:57] uh taken off then we go back to more of
+[00:33:59] that 50 percent range here for iv rank
+[00:34:01] but right now plug power for example is
+[00:34:04] one a potential candidate
+[00:34:05] um you have quite a few that are coming
+[00:34:08] up but they have earnings coming up so
+[00:34:09] february 4th so
+[00:34:10] you know pinterest and snapchat high iv
+[00:34:13] rank
+[00:34:14] but earnings are coming up plug power is
+[00:34:16] one that doesn't have earnings coming up
+[00:34:18] until
+[00:34:18] march 4th you have two
+[00:34:22] chinese the
+[00:34:25] chinese electric vehicle companies now
+[00:34:27] the one thing is that
+[00:34:29] right now we don't have iv ranks on some
+[00:34:31] of those names at the moment
+[00:34:33] but another one that we have is dbx but
+[00:34:35] that also reports earnings fairly
+[00:34:37] quickly
+[00:34:38] um chewy doesn't report earnings until
+[00:34:40] april relatively
+[00:34:41] elevated applied volatility uh pvd
+[00:34:45] doesn't report earnings until march 10th
+[00:34:47] with very high iv ranks
+[00:34:48] these are all opportunities to
+[00:34:50] potentially look at now again
+[00:34:52] what we're still working on is getting
+[00:34:53] the strangles up out there
+[00:34:55] in terms of this type of report but this
+[00:34:57] is something that i'm working on
+[00:34:58] actively this week
+[00:34:59] i'm hoping to continue to improve this
+[00:35:01] so that we have access to this
+[00:35:04] for everyone so that you can have access
+[00:35:06] to these types of reports
+[00:35:07] and we're going to continue to improve
+[00:35:09] them and we're going to probably sort
+[00:35:11] out some of these low iv ranks
+[00:35:13] so for example we'll probably remove
+[00:35:15] some of the real
+[00:35:16] really low iv ranks and just show you
+[00:35:18] the high iv rank ones
+[00:35:20] and show you where there are
+[00:35:21] opportunities to sell straddles and
+[00:35:22] strangles
+[00:35:23] like for example facebook um now
+[00:35:25] facebook is a high priced stock so i
+[00:35:27] probably wouldn't sell straddles on this
+[00:35:29] probably look to sell strangles
+[00:35:31] on this so those are some of the
+[00:35:32] adjustments that are coming up but i
+[00:35:34] wanted to share this report everyone so
+[00:35:36] that you can see it
+[00:35:36] another way that you can look at this is
+[00:35:38] looking at the liquidity report right
+[00:35:40] the liquidity report is something that
+[00:35:42] you all have access to on your options
+[00:35:44] play platform
+[00:35:45] when you click on the liquidity link
+[00:35:46] here at the bottom of your screen
+[00:35:48] that gives you this report and what you
+[00:35:50] can do is you can sort that report by
+[00:35:52] iv rank and iv rank will tell you when a
+[00:35:54] stock is
+[00:35:56] coming on what the iv rank currently is
+[00:35:58] and when the next earnings date is so
+[00:36:00] baidu
+[00:36:01] relatively higher price stock that does
+[00:36:03] doesn't report earnings for another 28
+[00:36:05] days
+[00:36:06] uh pdd doesn't report earnings for 41
+[00:36:08] days with relatively high implied
+[00:36:10] volatility
+[00:36:11] um logitech another one with a
+[00:36:13] relatively high implied volatility
+[00:36:15] um facebook um some of these edu
+[00:36:18] same thing so we have some names here
+[00:36:20] that allow you to potentially find these
+[00:36:22] types of opportunities
+[00:36:23] and again we're going to continue to
+[00:36:25] improve this report so that we have
+[00:36:27] better access to these types of
+[00:36:29] opportunities for everyone
+[00:36:30] but for everyone here on the webinar you
+[00:36:32] get early access
+[00:36:34] so that you can start taking a look
+[00:36:37] so let's talk a little bit about the
+[00:36:39] optimal strategy here so generally
+[00:36:40] speaking whenever we're selling
+[00:36:42] straddles or strangles
+[00:36:43] we generally go out roughly about 45
+[00:36:46] days to expiration
+[00:36:47] and when you're a straddle then it's
+[00:36:49] just very easy you
+[00:36:50] sell the at the money call or put if
+[00:36:53] you're selling a strangle this is really
+[00:36:55] where you have
+[00:36:56] quite a bit of wiggle room um you can
+[00:36:59] sell anywhere from a 15 to 30 delta
+[00:37:02] call or put now as far as which one you
+[00:37:05] sell
+[00:37:05] is really dependent on how much risk
+[00:37:07] you're going to take the further out you
+[00:37:09] go
+[00:37:10] in terms of deltas meaning the wider
+[00:37:11] your your strangles are
+[00:37:13] the less risk you're taking because the
+[00:37:14] stock needs to make an extreme move
+[00:37:17] before you're unprofitable but the
+[00:37:19] further out you go
+[00:37:20] the less potential profit that you have
+[00:37:22] the less max reward that you have the
+[00:37:26] the less premium you're collecting does
+[00:37:28] that make sense everyone
+[00:37:29] please type uh six into the chat window
+[00:37:31] if that makes sense to you
+[00:37:33] uh i see some people saying that the
+[00:37:35] link does not work
+[00:37:37] let me just check that real quick
+[00:37:51] okay i will take a look at that and try
+[00:37:53] to fix that for everyone before
+[00:37:56] we finish here today um
+[00:37:58] [Music]
+[00:37:59] i know it's a link that should work but
+[00:38:01] i will
+[00:38:17] whoops
+[00:38:28] that shouldn't be the case i'm not sure
+[00:38:30] why that's happening
+[00:38:31] anyone with the link
+[00:38:42] if that does not work i will make sure
+[00:38:44] that i fix that
+[00:39:04] okay i'm gonna i'm gonna fix this before
+[00:39:07] we
+[00:39:08] finish here today let me just finish
+[00:39:10] this and i will get back to making sure
+[00:39:12] that that links
+[00:39:13] works for everyone but like i said when
+[00:39:15] you're selling a strangle
+[00:39:16] you generally you have a pretty wide
+[00:39:18] wiggle room selling a 15 delta is pretty
+[00:39:21] far away from the current price of the
+[00:39:22] stock
+[00:39:23] gives you a lot more buffer before the
+[00:39:25] strategy is profitable
+[00:39:27] is unprofitable but it gives you much
+[00:39:29] smaller potential reward if you sell a
+[00:39:31] closer to the current price uh strangle
+[00:39:35] a 30 delta for example you're going to
+[00:39:37] get a smaller buffer but you're going to
+[00:39:39] collect more premium so
+[00:39:41] more a higher potential reward here but
+[00:39:44] when you're trading straddles and
+[00:39:45] strangles
+[00:39:46] the the there's a main difference here
+[00:39:48] between managing these two strategies
+[00:39:51] number one when you're selling a
+[00:39:52] straddle
+[00:39:53] like i said the delta drift starts to
+[00:39:55] play as a factor against the short call
+[00:39:58] or put
+[00:39:58] the short on vega and theta um
+[00:40:02] in your in your strategy much quicker so
+[00:40:05] when you're showing when you're selling
+[00:40:06] a straddle you actually have to take
+[00:40:08] profit
+[00:40:09] profits very very quickly generally
+[00:40:11] speaking you're actually only holding on
+[00:40:13] to a trade like this
+[00:40:15] for about two weeks so you're going from
+[00:40:17] starting out about 45 days
+[00:40:19] and generally speaking within 30 days to
+[00:40:21] expiration so about two weeks time
+[00:40:23] you're generally going to be taking
+[00:40:25] profits and
+[00:40:26] you know for those of you that sell
+[00:40:28] credit spreads you're aware you're
+[00:40:29] familiar with
+[00:40:30] taking cred uh taking profits at 50 max
+[00:40:33] gain
+[00:40:33] but when you're selling straddles you
+[00:40:34] have to take profits very quickly at
+[00:40:37] about 25
+[00:40:38] of max gain is generally speaking the
+[00:40:40] optimal time to take profits
+[00:40:43] on a straddle when you're taking a
+[00:40:44] strangle because you have a lot more
+[00:40:46] room that deltas
+[00:40:47] even if the stock starts to drift a
+[00:40:49] little you're not going to start seeing
+[00:40:50] um significant decreases in dnl as a
+[00:40:53] result of it
+[00:40:54] those for strangles you tend to hold on
+[00:40:56] to them for a little longer closer to
+[00:40:57] three
+[00:40:58] three and a half weeks and for those
+[00:41:00] you're going to take profits similar to
+[00:41:01] credit spreads
+[00:41:02] at 50 of max gain so the
+[00:41:06] the management of the two strategies to
+[00:41:08] when you want to take profits is going
+[00:41:10] to be different
+[00:41:10] on straddles you want to take profits
+[00:41:12] quickly on strangles you have a little
+[00:41:14] bit more wiggle room and you can wait
+[00:41:16] for
+[00:41:16] a little bit more premium collection
+[00:41:18] before you take profits
+[00:41:20] as far as managing losses here this is
+[00:41:23] really where
+[00:41:24] because of the fact that these
+[00:41:25] strategies have unlimited losses
+[00:41:27] you want to make sure that you you keep
+[00:41:29] a very tight lid here on when you choose
+[00:41:32] to cut your losses here so when you have
+[00:41:34] a fifty percent of max
+[00:41:36] gain of a loss so let's say you collect
+[00:41:39] eight dollars in premium
+[00:41:40] on a straddle once you lose roughly
+[00:41:43] about four dollars on this trade
+[00:41:45] it's time to start cutting your losses
+[00:41:47] and moving on to the next trade because
+[00:41:48] you're only
+[00:41:49] you're you're taking profits at 25
+[00:41:51] percent of max gain
+[00:41:53] when you've lost 50 percent of max gain
+[00:41:55] it's time to cut your losses
+[00:41:56] um and generally speaking if you're
+[00:41:58] going to roll this type of strategy so
+[00:42:00] if let's say
+[00:42:01] you sold something for eight dollars it
+[00:42:03] now trades at let's say six dollars
+[00:42:05] and you and you want to take profits
+[00:42:06] that's when you can roll the strategy to
+[00:42:08] the next 45-day option
+[00:42:10] but what you want to do is you want to
+[00:42:12] do it too so that you roll it to another
+[00:42:15] day straddle or 45 day at the money
+[00:42:18] straddle
+[00:42:18] again once you choose to either cut your
+[00:42:21] losses
+[00:42:22] or take profits either one you can roll
+[00:42:24] your strategy
+[00:42:25] but you want to roll it to another 45
+[00:42:27] day at the money
+[00:42:29] straddle here in this particular
+[00:42:30] scenario now in a strangle here you have
+[00:42:33] a little bit more
+[00:42:34] wiggle room here so you have uh whoops
+[00:42:37] so you have
+[00:42:41] so let's say in this particular case you
+[00:42:43] sold the 95
+[00:42:46] and the 105 when the stock was trading
+[00:42:48] at
+[00:42:49] 100. so what you have is the option of
+[00:42:53] when the stock let's say let's say you
+[00:42:54] sell the strangle and the stock starts
+[00:42:56] to move up to the 105
+[00:42:58] right so the the put side is profitable
+[00:43:01] the call side
+[00:43:02] is now losing money on this trade one
+[00:43:04] adjustment that you can make
+[00:43:06] is you can move you can basically roll
+[00:43:08] the 95
+[00:43:10] put to now a 100 put so what you're
+[00:43:13] doing is you're buying back the 95
+[00:43:15] put let's say you originally sold this
+[00:43:17] for two dollars
+[00:43:19] and by the time the stock drifts up to
+[00:43:21] 105 maybe now this is only trading at
+[00:43:23] let's say
+[00:43:24] one dollar or maybe even 50 cents so
+[00:43:27] what you do is you take profit on this
+[00:43:29] one dollar
+[00:43:29] you roll it up to 100 and maybe at that
+[00:43:32] point what you're doing is you're
+[00:43:33] collecting another
+[00:43:34] two dollars oops
+[00:43:39] another two dollars by rolling the 95 to
+[00:43:41] the 100 put so
+[00:43:42] now what you really are owning is the
+[00:43:45] 105
+[00:43:46] whoops the 100 105 uh strangle here
+[00:43:51] by rolling up that 95 what you your new
+[00:43:54] position
+[00:43:54] is you now have a 100 105
+[00:43:58] triangle but let's say you originally
+[00:44:00] collected two dollars here
+[00:44:02] on this side as well because you've now
+[00:44:05] made one dollar
+[00:44:06] on this you've collected another two
+[00:44:08] dollars on this side
+[00:44:10] so what you've effectively uh collected
+[00:44:12] now here on this side is a total of
+[00:44:14] three dollars and still on this side you
+[00:44:17] still collected two dollars
+[00:44:18] initially you collected four dollars on
+[00:44:20] this right because you have two
+[00:44:22] and two now because you rolled this side
+[00:44:24] you took your one dollar profit
+[00:44:26] rolled it up to the one hundred dollars
+[00:44:28] collected another two dollars now your
+[00:44:30] total premium you've collected is five
+[00:44:32] dollars instead of four dollars
+[00:44:34] now you have a slightly higher buffer
+[00:44:36] than what you had before before you had
+[00:44:38] a four dollar buffer
+[00:44:39] now you have a five dollar buffer so
+[00:44:41] that's one way that you can manage this
+[00:44:43] and you can do this both ways right if
+[00:44:44] the stock starts to move lower instead
+[00:44:46] then you can roll the 105 side up down
+[00:44:49] to the 100 but
+[00:44:50] whatever way the stock moves you can
+[00:44:52] start rolling the
+[00:44:54] the untested side of the side that is
+[00:44:55] profitable
+[00:44:57] higher so now what you're going to do is
+[00:44:58] you're going to have a narrower strangle
+[00:45:00] but you're going to collect more premium
+[00:45:02] which gives you
+[00:45:02] a little bit more buffer now it's not
+[00:45:04] going to be a night and day right
+[00:45:06] because now you're collecting
+[00:45:07] an extra dollar an extra dollar is going
+[00:45:09] to
+[00:45:10] is not going to be a whole lot in terms
+[00:45:12] of if the stock continues to rally let's
+[00:45:13] say the stock goes up to
+[00:45:15] 120 right now instead of losing
+[00:45:18] uh before when you collected four
+[00:45:20] dollars and the stock went to 120 you
+[00:45:22] would have lost 16
+[00:45:23] but by rolling it up you're only gonna
+[00:45:25] lose fifteen dollars it's not going to
+[00:45:27] be
+[00:45:27] that big of a difference but you are
+[00:45:29] collecting a little bit more premium
+[00:45:31] on this particular trade but but at the
+[00:45:33] end of the day even when you roll this
+[00:45:34] type of strategy
+[00:45:36] um you're not going to have a big move
+[00:45:39] in my opinion
+[00:45:40] in one way or another by rolling the
+[00:45:42] strategy it's going to give you a little
+[00:45:43] bit more premium a little bit more
+[00:45:45] downside protection
+[00:45:46] but it's generally speaking not going to
+[00:45:47] be night and day
+[00:45:49] so that covers what i wanted to share
+[00:45:51] with you here today just to give you a
+[00:45:53] taste of what
+[00:45:54] selling the straddle and triangle is
+[00:45:56] looks like like i said me and my team
+[00:45:58] are still continuing to work on this at
+[00:45:59] the money straddle report to give you
+[00:46:01] better opportunities for selling these
+[00:46:03] types of strategies but the report gives
+[00:46:05] you a good starting point in terms of tr
+[00:46:08] opportunities in terms of finding these
+[00:46:10] opportunities
+[00:46:11] and let me just take two seconds and fix
+[00:46:14] that report for
+[00:46:15] everyone so that you can access that so
+[00:46:18] that you can access this report here so
+[00:46:20] just give me one
+[00:46:21] second and i'm going to do that real
+[00:46:23] quick but and when
+[00:46:24] in that in that time while i fix that
+[00:46:27] report for everyone
+[00:46:29] i just want to thank everyone for taking
+[00:46:31] the time out here this afternoon
+[00:46:33] what i'll do is i'll open this up for q
+[00:46:34] a we have both
+[00:46:36] the q a section at the bottom of your
+[00:46:38] screen
+[00:46:39] and there's a chat window so please
+[00:46:41] bring up your q a window
+[00:46:43] any questions that you have regarding
+[00:46:44] straddles type it into the q a window
+[00:46:46] and i'll answer your questions um in the
+[00:46:49] future
+[00:46:50] just but just give me one minute to fix
+[00:46:52] that report
+[00:46:54] so that you guys can have access to that
+[00:46:56] real quick
+[00:47:37] you
+[00:47:56] okay that link seems to be fixed
+[00:47:59] now let me just post that for everyone
+[00:48:03] here one more time
+[00:48:06] this should now work
+[00:48:09] whoops wrong link actually i apologize
+[00:48:14] the second link the um at the money
+[00:48:17] straddle
+[00:48:18] report so this link on your screen this
+[00:48:21] link should now work
+[00:48:22] for you to
+[00:48:25] access the report
+[00:48:30] perfect someone just said it works so
+[00:48:33] let's turn
+[00:48:34] to the questions here i see a lot of
+[00:48:38] questions so let's see
+[00:48:39] uh paul saying i almost let never let an
+[00:48:42] option expire worthless but many people
+[00:48:44] say that they
+[00:48:45] do what are the examples where there is
+[00:48:46] zero risk of something happening
+[00:48:48] by monday so paul i actually recently
+[00:48:50] recorded a video on this
+[00:48:52] this is a very very important thing um
+[00:48:55] you know a lot of
+[00:48:56] investors who sell you know for those of
+[00:48:58] you that sell credit spreads for those
+[00:48:59] of you that sell
+[00:49:00] you know if you're selling straddles and
+[00:49:02] strangles you might find that there
+[00:49:04] are times where um
+[00:49:08] you might find that there are times
+[00:49:10] where there are um
+[00:49:11] [Music]
+[00:49:12] options that you that you think are
+[00:49:14] going to expire worthless
+[00:49:16] but actually um especially stocks that
+[00:49:19] you think are going to expire worthless
+[00:49:20] i just
+[00:49:21] posted a link here uh in the channel on
+[00:49:23] i'm sorry
+[00:49:24] in the chat window there's a youtube
+[00:49:26] video i highly highly recommend
+[00:49:28] that you guys take a look at that
+[00:49:30] because that is an
+[00:49:32] example of which when we had an issue
+[00:49:41] that was an example where a client had
+[00:49:43] sold the credit spread
+[00:49:44] uh had only you know a max loss at the
+[00:49:47] time of about 21 000
+[00:49:50] they thought that the credit spread
+[00:49:51] expired worthless but because the stock
+[00:49:53] moved
+[00:49:54] after the close on friday even though
+[00:49:56] the the
+[00:49:57] option expired worthless on friday by
+[00:50:00] the time that the
+[00:50:01] the market opened up on monday
+[00:50:04] the other side of the trade anticipated
+[00:50:06] that the stock was going to make a big
+[00:50:08] move over the weekend because of what
+[00:50:09] happened right after the close
+[00:50:11] actually exercise the short side of a
+[00:50:14] credit spread
+[00:50:15] the um the investor
+[00:50:18] who you know for one reason or another
+[00:50:21] number one may not have known that they
+[00:50:23] needed to exercise
+[00:50:24] their long options or maybe did not have
+[00:50:27] the the cash in order to exercise their
+[00:50:29] long
+[00:50:30] long options ended up with about a six
+[00:50:33] hundred thousand dollar loss
+[00:50:35] on a trade that should only have had a
+[00:50:37] twenty one thousand dollar loss
+[00:50:38] or max loss on a credit spread so we
+[00:50:40] usually think of credit spreads as
+[00:50:42] a strategy that has um that has a
+[00:50:44] limited risk but in this
+[00:50:46] very unusual set of events caused this
+[00:50:49] investor to lose 600 000
+[00:50:51] on that particular trade um so this is
+[00:50:54] why
+[00:50:55] we always encourage you even if you
+[00:50:57] think the stock's going even if you have
+[00:50:58] an option that you think is going to
+[00:50:59] expire worthless it's going to be
+[00:51:01] you're just going to let it expire
+[00:51:02] because you know it's just going to roll
+[00:51:04] off
+[00:51:05] there's always that slight chance that
+[00:51:07] something happens after the close on
+[00:51:09] friday
+[00:51:10] that causes someone who's on the other
+[00:51:12] side of that trade
+[00:51:13] to say i'm going to exercise this trade
+[00:51:15] even though it's worthless right you're
+[00:51:16] thinking to yourself it's worthless
+[00:51:19] why why don't i you know but but that
+[00:51:21] person still chooses exercise because
+[00:51:23] they saw something happen right after
+[00:51:25] the close on friday you know
+[00:51:26] not a lot of stocks report earnings on
+[00:51:28] fridays but sometimes
+[00:51:29] you know this was a pharmaceutical stock
+[00:51:31] that had an fda um
+[00:51:33] decision come in at about 4 15 right
+[00:51:35] after close on friday
+[00:51:37] it was based on that news that even
+[00:51:39] though the option had expired out of the
+[00:51:40] money and worthless
+[00:51:42] that that just because something's
+[00:51:44] worthless doesn't mean that someone
+[00:51:45] can't um exercise that put or call
+[00:51:49] someone can still exercise a worthless
+[00:51:51] call or a put if they choose to do so
+[00:51:53] because it might not be worthwhile or
+[00:51:57] economical
+[00:51:58] on the price of friday's closed but
+[00:52:00] perhaps they're anticipating where the
+[00:52:02] stock's going to open on monday and
+[00:52:03] they're choosing
+[00:52:04] to exercise that call or put so for
+[00:52:06] those reasons always
+[00:52:07] always always when you think something's
+[00:52:09] about to expire worthless
+[00:52:11] um close it down right it doesn't cost
+[00:52:14] you more than a penny or two to close it
+[00:52:15] out
+[00:52:16] before expiration do it it's going to
+[00:52:19] save you potentially thousands of
+[00:52:21] dollars
+[00:52:22] if and when you have a big move that
+[00:52:25] happens after the close on friday
+[00:52:27] uh chris is asking does ibraheem
+[00:52:29] correlate to beta
+[00:52:31] uh no first of all beta is a very slow
+[00:52:34] moving figure beta's calculated over a
+[00:52:35] five year period so
+[00:52:37] um is it correlated to beta yeah i guess
+[00:52:41] it's it is correlated to beta but
+[00:52:43] it but beta is not very sensitive beta's
+[00:52:45] not going to move on a day-to-day basis
+[00:52:47] certainly not very large right
+[00:52:49] you don't you generally don't see beta
+[00:52:51] increase in value going into earnings
+[00:52:53] and then collapsing right after earnings
+[00:52:55] iv rank does iv rank is a much more
+[00:52:57] sensitive
+[00:52:58] measure of implied volatility beta's
+[00:53:01] measured over
+[00:53:02] five years uh iv rank is really
+[00:53:04] measuring the 30 day volatility
+[00:53:09] is there an option level required for
+[00:53:10] these strategies yes level
+[00:53:12] four or five so depending on your
+[00:53:14] brokerage firm that you have so yes
+[00:53:16] these are
+[00:53:16] uh again high higher risk higher
+[00:53:19] requires higher amount of margin
+[00:53:21] means that require the higher amount of
+[00:53:23] capital and also requires a higher
+[00:53:25] amount
+[00:53:26] of of um
+[00:53:29] uh sorry what was i trying to say higher
+[00:53:31] amount of capital unlimited risk
+[00:53:33] um and require the higher options level
+[00:53:35] in order to trade these
+[00:53:37] uh james is saying is there a way to
+[00:53:38] manage the trade to keep it delta
+[00:53:39] neutral
+[00:53:40] james yes there is in theory one one a
+[00:53:43] way to
+[00:53:43] keep it delta neutral and it's the buy
+[00:53:45] and buy and sell stock
+[00:53:47] right so if you short this 100 put and
+[00:53:49] the stock starts to decline in value
+[00:53:51] what you can do is you can start
+[00:53:52] shorting stock to offset the
+[00:53:54] the the stock continuing to move lower
+[00:53:57] here so
+[00:53:58] you can but it's not something that you
+[00:54:00] have to constantly dealt a hedge right
+[00:54:02] so
+[00:54:02] if the stock moves lower here you might
+[00:54:04] have to short 10 shares of the stock if
+[00:54:06] it starts to move even lower you might
+[00:54:07] have to short then 20 shares of the
+[00:54:09] stock
+[00:54:09] and then it starts to move back you have
+[00:54:10] to then buy back 10 shares of that stock
+[00:54:13] to remain delta neutral so
+[00:54:14] you can but it's not something that's
+[00:54:17] easily done i would say by most retail
+[00:54:19] investors
+[00:54:21] do you roll the untested side of the
+[00:54:22] strangle 45 days to expiration
+[00:54:25] great question by charles charles is
+[00:54:27] basically asking
+[00:54:28] if this start if this trade starts to
+[00:54:30] drift higher and i'm rolling this 95
+[00:54:33] put up to the 100 put do i sell a new
+[00:54:36] 45-day put or do i sell the same
+[00:54:38] expiration
+[00:54:39] so whenever we're talking about rolling
+[00:54:41] the untested side of a strangle here
+[00:54:43] you're always selling the same
+[00:54:45] expiration that you were originally in
+[00:54:47] so you're not selling the new 45-day
+[00:54:49] option
+[00:54:50] so let's say the 45 day option that you
+[00:54:52] sold is now
+[00:54:53] uh you know i don't know 28 days or 30
+[00:54:56] days from expiration then you're selling
+[00:54:58] the 28 or 30 day expiration
+[00:55:00] not a new 45 day expiration that's a
+[00:55:03] great question charles
+[00:55:04] they're actually saying if new additions
+[00:55:06] are made to any of these lists would it
+[00:55:07] be possible to get alerts
+[00:55:09] so naresh so what we're doing with these
+[00:55:11] types of reports is we're updating them
+[00:55:12] every single hour on the same time every
+[00:55:15] single hour so for example with this at
+[00:55:17] the money straddle report
+[00:55:18] they're updated every single hour at
+[00:55:32] whoops
+[00:55:34] um these as you can see this was updated
+[00:55:36] at 320 here
+[00:55:37] um right before the close here so this
+[00:55:39] is really how you can utilize this
+[00:55:41] to find uh this this strategy here
+[00:55:45] um so it'll tell you when it's updated
+[00:55:46] so it's updated on the
+[00:55:48] 20 minute 20 minutes after every single
+[00:55:50] hour
+[00:55:53] if i only underlying equity does that
+[00:55:55] affect the strategy at
+[00:55:56] all it absolutely does so for example
+[00:55:58] this is a short straddle here that you
+[00:56:00] can see here on plug power
+[00:56:02] if i add the stock as you can see what
+[00:56:04] it looks like is effectively a cover
+[00:56:06] call if you sell a straddle on a
+[00:56:09] on a um on a stock that you own
+[00:56:12] your strategy is gonna vary it's gonna
+[00:56:14] look very similar in terms
+[00:56:16] of risk profile as a cover call meaning
+[00:56:18] you're still going to have
+[00:56:19] downside risk but you're not going to
+[00:56:21] have the same upside risk because when
+[00:56:23] the stock
+[00:56:26] rallies the losses that you have on the
+[00:56:28] call side are offset by the gains that
+[00:56:30] you have on the underlying stock so yes
+[00:56:32] it does affect it
+[00:56:36] very much looking forward to the
+[00:56:38] butterfly slash iron condor education
+[00:56:40] i've tried a few of these and like them
+[00:56:42] but want to know more um so dean
+[00:56:44] um yeah absolutely so in order to
+[00:56:47] understand butter uh
+[00:56:48] butterflies and condors you must
+[00:56:50] understand straddles and strangles
+[00:56:52] because
+[00:56:52] strat butterflies and condors are really
+[00:56:54] just short straddles and strangles
+[00:56:56] but what you're doing is you're buying
+[00:56:58] the out of the money calls and puts to
+[00:57:00] offset that unlimited risk
+[00:57:01] right so for example um let me remove
+[00:57:04] the security here
+[00:57:06] uh when you're selling a straddle here
+[00:57:08] what you're doing with a
+[00:57:09] with the condor and a butterfly with a
+[00:57:11] butterfly whoops
+[00:57:12] what you're doing here is that you're
+[00:57:14] basically saying that i don't want to
+[00:57:15] take on that unlimited risk
+[00:57:17] so i'm going to buy a lower a higher
+[00:57:19] call so maybe a 70
+[00:57:21] call and i'm going to buy that lower put
+[00:57:24] let's say a 60 59 and a half put
+[00:57:28] and what that's going to do is create
+[00:57:29] that butterfly here so let me i think 60
+[00:57:32] and a half is what i need
+[00:57:33] 65 and a half no 61. there we go
+[00:57:37] um that's how you create a butterfly
+[00:57:39] right a butterfly is really just a short
+[00:57:41] straddle
+[00:57:41] but you're buying those out of the money
+[00:57:43] calls and puts to offset that
+[00:57:45] unlimited risk factor it does change the
+[00:57:48] strategy
+[00:57:48] completely to be perfectly honest but
+[00:57:52] in order to understand that butterfly or
+[00:57:53] condor you must first understand the
+[00:57:55] straddle and the triangle because
+[00:57:57] that's how they're constructed uh
+[00:58:00] tony is actually sorry it was a little
+[00:58:01] late but did you cover when the strategy
+[00:58:03] is best used for market timing wise um i
+[00:58:06] did i talked about it here so if you
+[00:58:07] want to watch the recording here
+[00:58:09] i talked a little bit about from a
+[00:58:11] timing perspective what you're looking
+[00:58:12] for
+[00:58:13] generally speaking you're looking for a
+[00:58:14] big move after a big move is when you
+[00:58:16] have generally a higher probability
+[00:58:18] of the stock moving sideways it's not
+[00:58:20] always the case
+[00:58:21] but we tend to find that after a big
+[00:58:23] move the stock tends to make a sideways
+[00:58:26] move
+[00:58:26] a lot of investors do the opposite they
+[00:58:28] find a stock that's
+[00:58:30] trading in a range and then they sell a
+[00:58:31] strangle or straddle but actually that
+[00:58:33] is
+[00:58:34] the opposite we tend to find that's when
+[00:58:35] the stock has the opportunity to make
+[00:58:37] the biggest move
+[00:58:44] uh is there is a potential good time to
+[00:58:47] do a trade is just
+[00:58:48] after earnings when less move is
+[00:58:50] expected um
+[00:58:51] in theory that is potentially one of
+[00:58:54] those cases but
+[00:58:55] after earnings is usually when implied
+[00:58:57] volatility is lower
+[00:58:58] so that is not from that perspective not
+[00:59:01] the most
+[00:59:02] ideal time so that might be where that's
+[00:59:05] after when you have a big move
+[00:59:07] um but usually it's not immediately
+[00:59:08] after earnings it's usually after a
+[00:59:10] little bit after the earnings event then
+[00:59:12] you have
+[00:59:13] that opportunity uh ramses is saying i'm
+[00:59:16] new
+[00:59:16] and all i do is naked put and calls what
+[00:59:19] would you recommend me to
+[00:59:21] do to get to learn the basics i don't
+[00:59:23] know all the strategies
+[00:59:24] um ramses if you're talking about just
+[00:59:26] buying calls or puts
+[00:59:28] so i highly recommend you follow our
+[00:59:29] youtube channel we have a lot of
+[00:59:31] education a lot of different strategies
+[00:59:33] that can help you get
+[00:59:34] started before you graduate to some of
+[00:59:37] these more advanced strategies
+[00:59:38] so you can follow us here on youtube
+[00:59:40] which is up youtube.com
+[00:59:43] optionsplay which i will post as a link
+[00:59:45] into the chat window
+[00:59:53] uh vincent is saying you recently
+[00:59:55] mentioned that your you have running
+[00:59:56] stop loss orders and all your credit and
+[00:59:58] debit spreads can you explain
+[01:00:00] how you select your loss limit on each
+[01:00:02] type of spread
+[01:00:03] um if you're talking about like when how
+[01:00:06] do i determine
+[01:00:08] where i splice my stop losses or limits
+[01:00:10] so vincent i
+[01:00:11] have videos on both credit and debit
+[01:00:13] spreads on our youtube channel
+[01:00:15] on both of those videos i explain
+[01:00:17] exactly where i want to place my stop
+[01:00:19] losses and my limit orders
+[01:00:21] so i i suggest that you take a time
+[01:00:23] watch those videos and
+[01:00:24] i actually explained to you exactly
+[01:00:26] they're a little different with each one
+[01:00:28] so um so please watch those videos and
+[01:00:30] you can learn a little bit more
+[01:00:32] how do we apply straddles to very long
+[01:00:34] term like over 365 days
+[01:00:36] i would not recommend you to do anything
+[01:00:39] longer than 45 days because
+[01:00:41] the whole point of us of a straddle is
+[01:00:43] to is to double
+[01:00:45] your short theta that's really the the
+[01:00:47] essence of short straddles and triangles
+[01:00:49] is you're trying to double the amount of
+[01:00:51] premium that you're collecting
+[01:00:52] and double the amount of time decay that
+[01:00:54] you're collecting when you sell a 360
+[01:00:57] five-day straddle your theta is
+[01:00:59] virtually zero meaning the amount of
+[01:01:01] income that you're collecting per day is
+[01:01:03] versus zero and as soon as the stock
+[01:01:05] starts to move higher or lower
+[01:01:07] you're gonna start losing money so you
+[01:01:08] basically have no
+[01:01:10] theta and yet you have this one thing
+[01:01:12] that can potentially really hurt you
+[01:01:14] which is the stock starting to drift
+[01:01:16] higher or lower so for those reasons
+[01:01:18] never ever sell a 365-day one-year
+[01:01:22] straddle
+[01:01:23] or strangle for that matter i'm new to
+[01:01:26] these two would you recommend one over
+[01:01:28] the other to get one's
+[01:01:29] feet wet so short strangles if you're
+[01:01:32] choosing between the two
+[01:01:33] short strangles has a little less risk
+[01:01:36] involved in them so that's why i would
+[01:01:38] say between the two if you're starting
+[01:01:40] out start
+[01:01:40] on the strangle side rather than
+[01:01:42] straddles uh
+[01:01:44] if we expect big movement in a stock not
+[01:01:46] sure which direction what is the view
+[01:01:47] about buying a short-term straddle so
+[01:01:50] uh so here's the thing um i will tell
+[01:01:52] you in the long run that is a losing
+[01:01:54] proposition
+[01:01:55] in terms of buying especially a short
+[01:01:57] dated triangle because that's really
+[01:01:59] when you have
+[01:01:59] the highest amount of short time decay
+[01:02:02] working against you
+[01:02:03] um now here's the thing is that you said
+[01:02:06] that you think that the stock's going to
+[01:02:08] make a big move but you're not sure
+[01:02:10] which direction
+[01:02:12] um unless you're talking about earnings
+[01:02:14] right
+[01:02:15] um meaning the stock you're i'm not sure
+[01:02:18] what a scenario you're in where you
+[01:02:20] think the stock's going to make a big
+[01:02:21] move but you have no idea which
+[01:02:23] direction that it's going to go in
+[01:02:25] you know you're much better off picking
+[01:02:27] a direction and hoping that you're right
+[01:02:29] because you have a much higher
+[01:02:30] probability of making money on that
+[01:02:32] than you do on a straddle or a strangle
+[01:02:34] because you're effectively
+[01:02:36] automatically losing money on one side
+[01:02:38] right so if you flip this
+[01:02:40] around if the stock makes a big move
+[01:02:43] this way
+[01:02:44] you're automatically going to lose money
+[01:02:46] on this side and you have to overcome
+[01:02:48] losing money on this side and overcoming
+[01:02:51] the premium you're paying on this side
+[01:02:53] so you're basically
+[01:02:54] putting yourself in a position where you
+[01:02:57] have an almost
+[01:02:58] guaranteed uh way of of losing money
+[01:03:01] in this particular case especially in
+[01:03:03] with one week to go
+[01:03:05] uh because all you're paying for is time
+[01:03:07] premium you're paying double the amount
+[01:03:08] of time premium and you have to overcome
+[01:03:10] that
+[01:03:10] in a week so unless you have some and
+[01:03:14] and chances are if you're expecting a
+[01:03:16] big movement in the underlying stock and
+[01:03:18] you don't know what
+[01:03:19] which movement it's going to be that
+[01:03:21] means there's clearly some kind of
+[01:03:22] catalyst
+[01:03:23] event right earnings coming up a product
+[01:03:25] release something like that
+[01:03:27] that's going to be priced into the
+[01:03:28] market you know it's not like
+[01:03:30] uh you know a call or a put is going to
+[01:03:32] cost more
+[01:03:33] if everyone is expecting there's going
+[01:03:35] to be a big move
+[01:03:36] so for those reasons buying a call
+[01:03:39] buying a straddle buying a strangle is
+[01:03:41] almost
+[01:03:41] never ever a profitable position a
+[01:03:44] profitable strategy in the long run
+[01:03:47] you know are there individual
+[01:03:48] opportunities that you can find that you
+[01:03:50] can make money going along a straddle or
+[01:03:52] strangle
+[01:03:53] yes but to do it over and over again and
+[01:03:56] be profitable
+[01:03:57] i don't think you can pick any one
+[01:03:59] trader that is
+[01:04:00] successful in that in my opinion
+[01:04:04] leonard's saying i recall in a previous
+[01:04:06] webinar you did with tom stosen off a
+[01:04:07] strangle-like strategy was
+[01:04:10] used to effectively help offset losses
+[01:04:11] from the written a naked
+[01:04:13] put position trading at 50 delta i
+[01:04:15] believe the strategy was to sell a 25
+[01:04:17] delta
+[01:04:18] call resulting in something like a
+[01:04:19] strangle can you discuss further
+[01:04:21] so sure um you know what that basically
+[01:04:24] was
+[01:04:24] was basically ins let's say you didn't
+[01:04:27] sell this 105 call
+[01:04:28] let's say you just sold the 95 put um
+[01:04:31] let's say you just sold the 95 put and
+[01:04:34] the stock starts to trade lower here
+[01:04:36] what you can do is you can then sell a a
+[01:04:39] a a naked call option and turn it into a
+[01:04:42] short strangle
+[01:04:42] you're going to collect a little bit of
+[01:04:44] premium but again just like
+[01:04:46] rolling the the just like rolling this
+[01:04:48] it's similar to rolling this
+[01:04:50] to a lower premium what you're doing is
+[01:04:51] you're just collecting a little bit more
+[01:04:53] premium it's not going to make this
+[01:04:54] night and day right because the stock
+[01:04:56] starts if the strategy starts to lose
+[01:04:58] money you're going to lose serious money
+[01:04:59] and collecting an extra dollar or two is
+[01:05:02] usually not going to
+[01:05:03] change the scenario significantly it's
+[01:05:06] just going to dampen dampen
+[01:05:08] the amount of losses that you have but
+[01:05:10] that's really what what he means is if
+[01:05:12] you're just selling a naked call or a
+[01:05:13] naked put
+[01:05:14] and the stock starts to go against you
+[01:05:16] you can turn it into a short strangle
+[01:05:18] which gives you a little bit more buffer
+[01:05:21] right usually maybe a dollar or two more
+[01:05:23] um and then if the stock kind of comes
+[01:05:25] back in your favor or starts to trade
+[01:05:27] within that
+[01:05:28] the range of the strangle that's when
+[01:05:30] you can start making a little bit of
+[01:05:32] money on that particular trade
+[01:05:33] but that's really what he meant when he
+[01:05:35] went when he said about like
+[01:05:37] uh turning a short call or short put
+[01:05:39] into a strangle
+[01:05:42] a thief is saying if buying or selling
+[01:05:44] strangles which delta would you prefer
+[01:05:46] so again on a strangle about 7 15 to 20
+[01:05:50] 30 deltas is usually where most traders
+[01:05:53] will trade
+[01:05:53] again the higher the delta the more
+[01:05:56] premium you're collecting but the more
+[01:05:57] risk you're taking
+[01:05:58] 15 deltas less premium that you're
+[01:06:01] collecting
+[01:06:02] but also less risk that you're taking
+[01:06:08] uh ursol is saying hi tony how would you
+[01:06:10] evaluate a short put
+[01:06:12] option given you want to own the stock
+[01:06:14] at a discount do you look at the
+[01:06:16] standard deviation
+[01:06:17] or iv so yeah you would look at iv
+[01:06:19] generally speaking i don't know
+[01:06:20] standard deviation doesn't oh i mean a a
+[01:06:24] a standard deviation that's further away
+[01:06:26] certainly would gen would mean that
+[01:06:28] there's a higher iv but you generally
+[01:06:29] want to look at you don't want to just
+[01:06:31] look at high iv you want to look at high
+[01:06:33] iv
+[01:06:33] rank right because something could have
+[01:06:36] high iv because it's just generally
+[01:06:38] speaking more volatile
+[01:06:39] what you want to do is not just sell
+[01:06:40] something that's more volatile
+[01:06:42] you want to sell something that's
+[01:06:43] relatively expensive compared to itself
+[01:06:46] right so um you know just to give you
+[01:06:49] just to kind of
+[01:06:50] put it into context you know jpm
+[01:06:53] normally has a volatility between 15 and
+[01:06:56] and
+[01:06:57] and 35 but that's because jpm is not
+[01:06:59] very volatile other stocks
+[01:07:01] may be ranging between 80 and 100 right
+[01:07:04] whatever that range is
+[01:07:05] it doesn't matter the fact that an op
+[01:07:07] and something is at 80
+[01:07:09] but if 80 is a lower end of that of that
+[01:07:11] stock's implied volatility you don't
+[01:07:13] want to sell it just because it's 80
+[01:07:15] you want to sell it when it's higher
+[01:07:17] compared to itself so that's why iv
+[01:07:19] rank is a measure that we use to
+[01:07:21] determine whether implied volatility is
+[01:07:23] relatively high or low
+[01:07:29] also weekly option on short put
+[01:07:32] harder to get in and out and exit so
+[01:07:34] only when an option is
+[01:07:36] newly listed do the spreads get a little
+[01:07:39] wider here but once it's listed by about
+[01:07:41] two to three days
+[01:07:42] you'll see the spreads are in line with
+[01:07:44] pretty much what you see here
+[01:07:45] on the monthly options so no weekly
+[01:07:47] options are not harder in my opinion to
+[01:07:49] get in and out of
+[01:07:54] do you send out alerts when a new idea
+[01:07:56] gets added yes so you know naresh we
+[01:07:58] send you an email all members get an
+[01:08:00] email at 6 00
+[01:08:01] a.m eastern time every single morning
+[01:08:03] with new alerts to either close a
+[01:08:05] position or enter a new position
+[01:08:07] um so if you have a membership then you
+[01:08:10] get those emails at six a.m eastern time
+[01:08:17] i've seen a few conflicting responses
+[01:08:20] regarding closing risk defined trades
+[01:08:22] vertical
+[01:08:22] credit spreads within 21 days to
+[01:08:24] expiration should you look to close
+[01:08:26] these within 21 days the recent
+[01:08:28] kc works video said that if the risk is
+[01:08:30] defined the gamma might be negligible so
+[01:08:32] it would not necessarily need to close
+[01:08:34] within 21 days if it's out of the money
+[01:08:36] so sam the the difference between
+[01:08:38] closing and out of the money credit
+[01:08:40] spread at 21 days versus holding it to
+[01:08:42] expiration
+[01:08:43] uh is actually marginally it's roughly
+[01:08:46] the same
+[01:08:47] which is why we prefer closing it at 21
+[01:08:50] days to expiration
+[01:08:52] because then you can roll that capital
+[01:08:54] into a new trade
+[01:08:55] it's really more about the mechanical
+[01:08:57] rules around not holding a trade to
+[01:09:00] and one of the examples that we showed
+[01:09:02] you in the youtube video is
+[01:09:03] why we generally prefer not to hold it
+[01:09:06] to expiration
+[01:09:07] you can't hold that to expiration there
+[01:09:09] are additional risks in doing so
+[01:09:11] but the marginal gains that you have and
+[01:09:13] holding it to 21 days to expiration
+[01:09:15] instead of rolling into another trade
+[01:09:17] and trying to collect premium there
+[01:09:18] the difference between the two
+[01:09:19] strategies are very similar and that's
+[01:09:21] part of why
+[01:09:22] what you heard on tasty trade is saying
+[01:09:24] that it's negligible
+[01:09:25] meaning you know whether you you collect
+[01:09:28] the other 50
+[01:09:29] of the trade by holding another 21 days
+[01:09:31] versus taking profits and then moving on
+[01:09:33] to the next trade and collecting another
+[01:09:34] 50
+[01:09:35] somewhere else the difference between
+[01:09:37] the two are negligible so that's that's
+[01:09:39] what we mean by that
+[01:09:42] what's your view on the current state of
+[01:09:44] the market so jack this is something i
+[01:09:45] talked about a little bit on
+[01:09:47] tuesday you know i was talking about
+[01:09:48] just how complacent the markets were
+[01:09:51] we got that pull back here on wednesday
+[01:09:53] so far it looks like markets have
+[01:09:55] stabilized here
+[01:09:56] you know we are in this very tight
+[01:09:58] uptrend here you know
+[01:09:59] basically was talking about how we've
+[01:10:00] been uh trading against the top of the
+[01:10:03] the range round of that range we've
+[01:10:05] managed to tag the bottom of this range
+[01:10:07] we're starting to bounce a little higher
+[01:10:08] here
+[01:10:09] i think for now we're back on status quo
+[01:10:11] we're just going to be trading in this
+[01:10:12] very tight range this is exactly what we
+[01:10:14] saw here
+[01:10:15] in february of last year january and
+[01:10:18] february last year where the markets are
+[01:10:19] grinding slowly like this
+[01:10:21] higher and higher and the higher and the
+[01:10:23] more complacent the markets get in this
+[01:10:25] particular state
+[01:10:26] the bigger the opportunity of a big move
+[01:10:28] here to the downside or more violent and
+[01:10:30] fast pullback we see here to the
+[01:10:32] downside so
+[01:10:33] we got a little bit taste of that here
+[01:10:34] on wednesday i think that we
+[01:10:36] i don't think that this is quite um the
+[01:10:39] sell-off that we're looking for i think
+[01:10:40] this might continue to grind a little
+[01:10:42] bit higher here
+[01:10:43] i think now is the time to sell cover
+[01:10:45] calls collect premium
+[01:10:47] because when this when you do get an
+[01:10:48] acceleration here to the downside
+[01:10:50] that is when you need to buy puts but
+[01:10:53] you don't want to go out and buy puts
+[01:10:54] now
+[01:10:54] you want to collect premium now so that
+[01:10:56] you can have the premium to buy puts
+[01:10:59] in a little bit um if i have stocks
+[01:11:02] that do the on the limited risk if i use
+[01:11:05] the short straddles
+[01:11:06] i'm not sure that that's a question if
+[01:11:08] you don't mind i'm answering
+[01:11:09] uh rephrasing that um rey is saying what
+[01:11:12] tv show is toning on at what time
+[01:11:14] it is called options action it is at 5
+[01:11:17] 30
+[01:11:18] p.m eastern time on cnbc every friday
+[01:11:21] it's where you can learn a little bit of
+[01:11:23] more about the ideas that we have but
+[01:11:25] more importantly
+[01:11:26] the option strategies that we trade off
+[01:11:29] of those ideas to take the directional
+[01:11:31] view
+[01:11:32] with limited risk in your example your
+[01:11:35] risk was unlimited how is it better than
+[01:11:37] a spread from a risk reward ratio
+[01:11:39] perspective
+[01:11:40] so it really comes down to the premium
+[01:11:42] that you collect right so for example if
+[01:11:44] we let's just go back to plug power here
+[01:11:46] right i was showing you how if you sold
+[01:11:48] an at the money straddle
+[01:11:52] um whoops let's do straddle here for one
+[01:11:55] second
+[01:11:56] i'm collecting 26 bucks on a 65
+[01:12:00] stock if you trade a defined risk
+[01:12:02] strategy like let's say a short put
+[01:12:04] vertical
+[01:12:06] um let's do something like this
+[01:12:11] i'm collecting seven dollars and twenty
+[01:12:13] cents so
+[01:12:15] as you can see a defined risk strategy
+[01:12:18] collects only
+[01:12:19] seven dollars an unlimited strategy
+[01:12:21] collects more than
+[01:12:22] three times that 26 dollars so the
+[01:12:25] question is really
+[01:12:26] yes you have unlimited risk but if you
+[01:12:29] have three times the buffer in this
+[01:12:30] particular case a 26
+[01:12:32] buffer how far does the stock need to
+[01:12:34] move and
+[01:12:35] keep in mind unlimited what does
+[01:12:37] unlimited risk mean unlimited risk means
+[01:12:39] that if the stock goes to infinity
+[01:12:41] you can lose in infinite amounts of
+[01:12:42] money but we're talking about between
+[01:12:44] now and march 19th
+[01:12:45] right and and i will say the whole
+[01:12:48] gamestop thing
+[01:12:49] does change the the dynamics of what is
+[01:12:51] the possibility of this stock going to
+[01:12:54] 200 300 i would say before game stock we
+[01:12:57] would say that
+[01:12:57] probability zero right even if the stock
+[01:12:59] going to 100
+[01:13:01] you know would still only result in
+[01:13:03] about a 15 loss on this particular trade
+[01:13:05] so
+[01:13:06] would you want to take in 26 dollars in
+[01:13:08] exchange for losing 15
+[01:13:10] even if the stock rockets up to 100 i
+[01:13:13] would say a lot of investors would say
+[01:13:15] i'll take that risk i'll take the risk
+[01:13:17] of collecting 26 dollars
+[01:13:19] in exchange for even if the stock gets
+[01:13:20] to 100 i'm only losing 15. right only if
+[01:13:23] the stock goes to 115
+[01:13:25] do i start losing more than what i'm
+[01:13:28] collecting
+[01:13:28] so that's really why you know someone
+[01:13:30] might want to take on limited risk and i
+[01:13:32] think that's a great question and that's
+[01:13:33] what i was trying to answer here
+[01:13:35] in this particular webinar uh
+[01:13:39] question for later i was not attentive
+[01:13:41] why is it necessary to consider high iv
+[01:13:43] rank stocks so angelo really just comes
+[01:13:45] down to the fact that when you identify
+[01:13:46] stocks with high iv
+[01:13:48] rank it tends to be after the stock has
+[01:13:51] made a big move
+[01:13:52] and that's when you tend to have a more
+[01:13:55] sideways action here so as you can see
+[01:13:56] here when iv rank is high
+[01:13:58] this was after a big move and the stock
+[01:14:00] moves sideways here it doesn't happen
+[01:14:02] all the time but as you can see here
+[01:14:04] again
+[01:14:04] uh iv rank is high the stock made a big
+[01:14:07] move
+[01:14:08] meaning uh expansions in iv
+[01:14:11] usually are are accompanied when the
+[01:14:13] when the stock makes a big move
+[01:14:15] after the stock makes a big move that's
+[01:14:17] generally when you're going to have a
+[01:14:19] higher probability of stock trading
+[01:14:20] sideways
+[01:14:21] and that's why selling strangles or
+[01:14:23] straddles during that time when iv is
+[01:14:25] high
+[01:14:26] is what we're going to find a better uh
+[01:14:28] a proposition here for this strategy
+[01:14:30] um okay i've answered a lot of questions
+[01:14:33] but there are a lot more here
+[01:14:35] um let's see i'm trying to answer as
+[01:14:37] many questions as i have time for here
+[01:14:39] today
+[01:14:41] um
+[01:14:47] uh are you gonna integrate the short
+[01:14:48] strangles and short straddles yes so
+[01:14:51] i'm gonna have a single report where
+[01:14:52] both straddles and strangles
+[01:14:54] live on the same report again i think
+[01:14:56] it'll be designed where
+[01:14:57] you know lower price stocks will have
+[01:14:59] straddles higher price stocks will have
+[01:15:01] strangles
+[01:15:02] on that report um at any time
+[01:15:05] after a friday expiration does the buyer
+[01:15:07] have the right to exercise
+[01:15:08] is there an absolute time so roger it
+[01:15:10] depends on your brokerage firm most
+[01:15:11] brokerage returns give you anywhere from
+[01:15:13] about 45 minutes to about an
+[01:15:15] hour to exercise after the close so pay
+[01:15:18] attention to
+[01:15:19] if you even if you have an option that
+[01:15:21] expired worthless at expiration
+[01:15:23] pay attention to the news pay attention
+[01:15:25] to the after hours on that stock after
+[01:15:27] if you just let it expire because
+[01:15:29] something could happen in that window
+[01:15:31] and you know
+[01:15:32] not many stocks report earnings after
+[01:15:34] the close on friday but nike did
+[01:15:36] recently that was one
+[01:15:37] example of which you know some people
+[01:15:40] were caught out perhaps by that
+[01:15:41] um another example is when perhaps an
+[01:15:44] fda
+[01:15:45] approval or something like that happens
+[01:15:47] after hours on the close
+[01:15:49] that could be another catalyst that's
+[01:15:50] actually what happened in biogen for the
+[01:15:52] customer who lost six hundred thousand
+[01:15:54] dollars
+[01:15:54] so you know pay attention to what
+[01:15:56] happens after the close
+[01:15:57] if you have options that expired
+[01:15:59] worthless and you think to yourself
+[01:16:01] i don't have to do anything because at
+[01:16:02] the friday closed it was worthless think
+[01:16:04] again
+[01:16:06] could you show on your website where we
+[01:16:07] go for the link to the strata report so
+[01:16:09] we don't have a link on the report on
+[01:16:11] the
+[01:16:11] on the um platform yet but that's why
+[01:16:13] i'm giving everyone
+[01:16:15] early access uh through the webinar you
+[01:16:17] just have to click on the link here
+[01:16:19] on your chat window which i just posted
+[01:16:22] uh which i will just post again here on
+[01:16:24] your screen
+[01:16:28] so if you go to the chat window i just
+[01:16:30] posted the link here again
+[01:16:36] not sure if your question when is a good
+[01:16:38] time to buy straddles and strangles so
+[01:16:40] you know you can try to buy straddles
+[01:16:42] and strangles and iv is very low
+[01:16:44] but again that i can
+[01:16:47] assure you if you back test that
+[01:16:49] strategy it is
+[01:16:50] not a profitable strategy in any
+[01:16:53] scenario
+[01:16:55] how do you ever adjust the trading range
+[01:16:56] slider and options play above or below
+[01:16:59] one standard deviation
+[01:17:00] uh when building a trade on securities
+[01:17:02] that have high beta
+[01:17:04] high volatility so douglas you know the
+[01:17:06] uh
+[01:17:07] the trading range simulator already
+[01:17:08] accounts for the high or low implied
+[01:17:11] volatility so
+[01:17:12] generally speaking you don't need to
+[01:17:14] make adjustments to it and if you make
+[01:17:16] adjustments to it my
+[01:17:17] suggestion to you is make minor
+[01:17:19] adjustments you never want to make
+[01:17:21] huge adjustments because what you're
+[01:17:23] effectively doing when you make huge
+[01:17:25] adjustments is you're basically saying
+[01:17:26] the options market on every single other
+[01:17:28] market participant in the world
+[01:17:30] has just gotten the the the options
+[01:17:32] expectation completely wrong
+[01:17:35] and you could make that case now with
+[01:17:37] with gamestop happening
+[01:17:39] um that you know market makers
+[01:17:42] completely got the implied volatility of
+[01:17:44] of gamestop completely wrong uh but
+[01:17:46] largely i would say
+[01:17:48] the vast majority of stocks when you
+[01:17:49] look at the implied volatilities
+[01:17:51] and this is this is back tested to you
+[01:17:54] know
+[01:17:55] over the past 20 30 years that you know
+[01:17:58] exp
+[01:17:58] implied volatility while not 100
+[01:18:01] accuracy what the future volatility is
+[01:18:03] is very very close so when you make
+[01:18:06] adjustments to the trading range
+[01:18:07] simulator
+[01:18:08] make small adjustments so if you think
+[01:18:09] that the option markets are under
+[01:18:11] pricing the volatility meaning you think
+[01:18:13] there's going to be more volatility than
+[01:18:14] the markets it's expecting
+[01:18:16] make it a little wider and vice versa if
+[01:18:18] you think that the markets are
+[01:18:19] overstating volatility you think it's
+[01:18:21] going to be a little lower than that
+[01:18:22] make it a little narrower so that's how
+[01:18:24] you adjust the
+[01:18:26] standard deviations uh why are various
+[01:18:29] cell
+[01:18:30] squares showing highlights um with gc
+[01:18:33] next to them in the strata report
+[01:18:35] um great question i'm not exactly sure i
+[01:18:37] have to go figure that out i've never
+[01:18:38] seen this before on any of the other
+[01:18:40] reports so this is one of the things i'm
+[01:18:42] gonna go figure out i think it's because
+[01:18:43] these are people logging in and using it
+[01:18:45] um so i'm gonna have to figure that out
+[01:18:48] and see what i can do
+[01:18:49] oh yeah i might have to turn this off
+[01:18:52] just so that
+[01:18:54] we don't see these i'll have to figure
+[01:18:56] out a way to turn these off
+[01:18:59] um okay
+[01:19:03] look um what i do want to do is i don't
+[01:19:05] have enough time to go
+[01:19:06] over everything else but i do answer
+[01:19:10] every question here but i do want to do
+[01:19:11] one quick
+[01:19:13] comment just here on gamestop because i
+[01:19:15] i can
+[01:19:16] continue to get inundated with questions
+[01:19:18] about gamestop and i just want to talk a
+[01:19:20] little bit about
+[01:19:22] what we're seeing what my views are on
+[01:19:24] this you know a lot of questions as to
+[01:19:25] how this is going to end
+[01:19:27] so i just want to do a quick review of
+[01:19:30] what we see here with gamestop i i did a
+[01:19:33] video here
+[01:19:35] earlier this week just talking about how
+[01:19:37] to analyze gamestop in terms of a trade
+[01:19:39] here
+[01:19:40] so let me just pull this up and show you
+[01:19:43] what i'm referring to
+[01:19:46] so gamestop you know closed at 197 is
+[01:19:49] now trading at 261 overnight i mean i
+[01:19:51] don't necessarily know i need to review
+[01:19:53] what's currently happening i think most
+[01:19:55] investors here are familiar with what's
+[01:19:57] happening here
+[01:19:58] effectively you have two sides of a coin
+[01:20:01] you have one hedge fund that is
+[01:20:03] exceedingly that had created a very
+[01:20:04] large short position here in gamestop
+[01:20:06] was very publicly
+[01:20:08] public about it and then you on the
+[01:20:10] other side you have
+[01:20:11] uh a message forum wall street bets on
+[01:20:14] reddit that basically
+[01:20:15] is uh pushing against that short bet
+[01:20:18] and buying a lot of this stock now
+[01:20:22] as far as and trying to create a short
+[01:20:24] squeeze meaning short forcing the the
+[01:20:26] hedge fund that is short the stock
+[01:20:28] to have to buy it back and and cause
+[01:20:30] them to to
+[01:20:31] to um generate some margin calls so that
+[01:20:35] the hedge funds are forced to buy this
+[01:20:36] back
+[01:20:37] and and get out of their short position
+[01:20:39] here so far
+[01:20:40] we don't have a clear winner or loser
+[01:20:42] here at the moment here but one thing i
+[01:20:44] want to point out here is that there
+[01:20:46] seems to be a bit of a balance here that
+[01:20:47] has been tipped
+[01:20:49] in main street's favor so a long time i
+[01:20:52] think a lot of investors feel that wall
+[01:20:53] street is in control
+[01:20:55] main treat is usually the one that gets
+[01:20:56] left behind or the main street is the
+[01:20:58] one that gets left holding the bag here
+[01:21:00] and i think this is a a bit of a
+[01:21:03] revolution if you will that's currently
+[01:21:05] happening right now with gamestop
+[01:21:06] where you have main street trying to tip
+[01:21:09] the balance into their
+[01:21:11] favor and you know at the end of the day
+[01:21:13] we've seen
+[01:21:14] fights like this happen out in the
+[01:21:16] broader markets here and i think
+[01:21:17] probably one of the most famous ones
+[01:21:19] is uh call uh eichmann and uh
+[01:21:22] i'm sorry carl icahn and bill ackman on
+[01:21:25] herbalife bill ackman had a very public
+[01:21:28] sizable short position in herbalife and
+[01:21:30] carl icahn decided to take the opposite
+[01:21:32] uh trade and
+[01:21:33] and buy that stock and buy a
+[01:21:34] considerable amount of that stock to
+[01:21:36] to squeeze uh bill ackman out of that
+[01:21:39] trade right so what we're seeing play
+[01:21:41] out here in gamestop
+[01:21:42] is really not that different from that
+[01:21:44] and
+[01:21:45] you know this the the the
+[01:21:49] the way that these investors the
+[01:21:50] millennials in in this wall street bets
+[01:21:54] message group and it's not necessarily
+[01:21:55] just millennials anymore i think you do
+[01:21:57] have some
+[01:21:58] smart money some day traders some
+[01:22:00] professional traders along on this trade
+[01:22:01] as well
+[01:22:02] uh participating um but you know this is
+[01:22:05] something that i think has started
+[01:22:06] pretty much since
+[01:22:08] occupy wall street where a lot of
+[01:22:10] millennials have felt that
+[01:22:11] um things are not in their favor that
+[01:22:14] they have a general distrust in the
+[01:22:16] financial institutions
+[01:22:17] in high frequency trading and this is
+[01:22:20] one way to potentially try to get back
+[01:22:22] at wall street um so you know i i don't
+[01:22:25] think this is anything new this really
+[01:22:27] stems from a lot of the
+[01:22:28] inequality that we're starting to see
+[01:22:30] emerge and the wage gap that we're
+[01:22:31] starting to emerge
+[01:22:32] in this country and this is one way to
+[01:22:36] in theory play the same game that hedge
+[01:22:38] funds have been playing for a long time
+[01:22:40] with each other where now it's just
+[01:22:42] instead of one against the other you
+[01:22:43] have
+[01:22:44] a large amount of smaller investors
+[01:22:47] playing up against
+[01:22:48] you know one large or two hedge funds
+[01:22:50] here in this particular case and there's
+[01:22:52] no doubt that this is
+[01:22:54] market manipulation or what we would
+[01:22:56] classically call a pump and dump scheme
+[01:22:58] if there was one party on one side doing
+[01:23:01] this but because
+[01:23:02] it's not a single party you have
+[01:23:05] thousands hundreds of thousands
+[01:23:06] and millions of traders on one side and
+[01:23:08] there's not one
+[01:23:10] entity doing this you know it's hard to
+[01:23:12] put that into the pump and dump scheme
+[01:23:15] um category and also pump and dump
+[01:23:18] schemes generally speaking require
+[01:23:20] uh you know falsifying information or
+[01:23:22] distributing false information about a
+[01:23:25] specific stock
+[01:23:26] with the intention of pumping it up and
+[01:23:28] dumping it
+[01:23:29] this doesn't quite fall into the same
+[01:23:31] category so it's really
+[01:23:32] hard to categorize this but it certainly
+[01:23:36] falls under the market manipulation
+[01:23:38] um category but because you don't have a
+[01:23:41] single investor here it's difficult to
+[01:23:42] kind of
+[01:23:43] um to go after
+[01:23:46] but you still have the same issues that
+[01:23:49] that a classic
+[01:23:50] pump and dump scheme has which is when
+[01:23:53] you acquire
+[01:23:54] a lot of shares at a lower price um down
+[01:23:57] here
+[01:24:00] whoops
+[01:24:02] you acquire a lot of shares you know
+[01:24:04] down here and you see a lot of
+[01:24:05] accumulation in the stock in multiple
+[01:24:07] stages between uh 40 bucks and about 140
+[01:24:12] bucks or so
+[01:24:13] um what happens is that you know
+[01:24:16] when you have this big run-up in this
+[01:24:18] underlying stock
+[01:24:20] unless everyone holds on to this forever
+[01:24:22] and never intends to ever make a profit
+[01:24:25] just to show that they can pump up the
+[01:24:27] stock price
+[01:24:28] you have the problem of eventually all
+[01:24:32] these
+[01:24:32] people that are invested want to make
+[01:24:35] money on this particular trade
+[01:24:36] in order for them to make money they
+[01:24:38] have to sell and if you bought
+[01:24:40] 10 000 of the stock down here in order
+[01:24:43] to sell the stock up here
+[01:24:44] you're gonna have to find a buyer that
+[01:24:46] has to spend a hundred thousand dollars
+[01:24:47] to buy the same number of stocks
+[01:24:49] from you and the question is at what
+[01:24:52] point are there no more
+[01:24:53] investors left willing to spend the
+[01:24:56] hundred thousand dollars to buy the
+[01:24:57] stock that you bought for ten thousand
+[01:24:59] dollars
+[01:25:00] a a couple of weeks back um so that's
+[01:25:03] the problem that we tend to
+[01:25:04] that we currently find ourselves in and
+[01:25:06] the question from a lot of investors is
+[01:25:08] how does this all end um and that's a
+[01:25:10] really good question and
+[01:25:12] from my perspective there's really two
+[01:25:14] ways that this could end one
+[01:25:15] is regulation comes in and tries to stop
+[01:25:18] this and to some degree we've already
+[01:25:20] seen
+[01:25:20] uh regulation not from the government
+[01:25:22] entities but regulation from the
+[01:25:24] brokerage firms preventing
+[01:25:26] individuals from continuing to buy this
+[01:25:28] stock that's one artificial way that you
+[01:25:30] could potentially
+[01:25:31] end this per se i don't think that in
+[01:25:33] itself is going to end well
+[01:25:34] because if you stop the buying in this
+[01:25:37] stock that doesn't stop them from
+[01:25:38] pumping up a different stock
+[01:25:40] and it becomes a cat and mouse game so
+[01:25:42] if you just keep stopping people from
+[01:25:44] buying stocks that's never going to work
+[01:25:46] so i don't think that's a long-term
+[01:25:48] solution i'd certainly think it's going
+[01:25:49] to
+[01:25:49] anger a lot of investors that want to
+[01:25:52] buy the stock that can't do
+[01:25:54] it the second one is really regulations
+[01:25:56] comes in
+[01:25:57] and for one way or another decides to
+[01:25:59] prevent retail traders from buying out
+[01:26:01] of the money call options or speculating
+[01:26:03] in this particular way
+[01:26:04] that also i don't think is going to end
+[01:26:06] very well uh because that's just
+[01:26:08] artificially stopping you know something
+[01:26:10] and that's likely gonna come back and
+[01:26:12] bite us
+[01:26:13] in the ass with a vengeance you know if
+[01:26:15] you stop retail investors from trading
+[01:26:17] this they might end up trading something
+[01:26:18] different that's less regulated
+[01:26:20] but that doesn't stop the movement from
+[01:26:22] happening um
+[01:26:23] from my perspective really the only way
+[01:26:25] to correctly
+[01:26:27] potentially uh stop some of this if you
+[01:26:30] will
+[01:26:31] and i'm not sure what stop is the right
+[01:26:32] thing that you necessarily want to do
+[01:26:35] is really think rethinking how option
+[01:26:38] pricing
+[01:26:38] how options are priced so for example
+[01:26:41] before in the 87 market crash
+[01:26:43] calls and puts were roughly traded at
+[01:26:45] the equal amount so if you bought a
+[01:26:47] 50 a 25 delta caller 25 delta put
+[01:26:50] they're a price roughly the same but
+[01:26:52] after the 87 crashed what we realized is
+[01:26:54] that markets go down
+[01:26:55] much faster than they go up so market
+[01:26:58] makers naturally adjusted put
+[01:27:00] volatility's
+[01:27:01] higher so that's why we have what we
+[01:27:02] call the put call sku
+[01:27:04] meaning puts generally speaking a 25
+[01:27:06] delta put is going to cost more than a
+[01:27:08] 25 delta
+[01:27:09] call now maybe as a result of gamestop
+[01:27:12] as a result of some of these stocks that
+[01:27:14] we've seen
+[01:27:15] we might see a bit of a skewed back in
+[01:27:16] the other favor where there's a higher
+[01:27:18] now a higher probability that the stock
+[01:27:20] goes from twenty dollars to two hundred
+[01:27:22] dollars in a few days
+[01:27:23] that market makers simply were not
+[01:27:25] pricing incorrectly we were still
+[01:27:27] pricing
+[01:27:28] gamestop out of the money options at you
+[01:27:30] know
+[01:27:31] a hundred fifty two hundred percent vol
+[01:27:32] when reality
+[01:27:34] it was actually closer to six to seven
+[01:27:35] hundred percent ball
+[01:27:37] and market makers that sold those calls
+[01:27:39] had to eventually buy a lot of stock to
+[01:27:40] kind of keep
+[01:27:41] up with um hedging their portfolios or
+[01:27:43] hedging their risk
+[01:27:44] and that created this feedback loop that
+[01:27:46] allowed
+[01:27:48] you know relatively small retail
+[01:27:51] investors
+[01:27:52] who who are you know normally no
+[01:27:54] rational investor would throw a hundred
+[01:27:56] percent of their portfolio in
+[01:27:58] way out of the money call options but
+[01:28:00] you know this group of investors
+[01:28:02] realized that they could create this
+[01:28:04] feedback loop that creates this
+[01:28:06] this giant turn of events by buying
+[01:28:09] really far out of the call options
+[01:28:11] buying a lot of stock and driving the
+[01:28:14] price up which causes market makers then
+[01:28:16] have to buy the stock just to hedge
+[01:28:18] their positions
+[01:28:19] and creating again this feedback loop
+[01:28:21] over and over and over again and that's
+[01:28:23] why we've seen
+[01:28:24] what we're seeing here right now now
+[01:28:29] again at the end of the day the use
+[01:28:31] whether this is market
+[01:28:33] manipulation or not whether this is a
+[01:28:35] pump and dump or a scheme or not is
+[01:28:37] in my opinion irrelevant because all the
+[01:28:40] investors that bought here
+[01:28:42] and here and here unless they plan on
+[01:28:44] holding this forever and never taking
+[01:28:46] profits on their trades which
+[01:28:48] you know if you look at the message
+[01:28:49] boards and you see you know all the
+[01:28:51] all the comments about i'm going to be
+[01:28:52] able to pay off my student loans i'm
+[01:28:54] going to be able to
+[01:28:55] start my own business i'm going to be
+[01:28:56] able to do x y and z with this
+[01:28:58] you know those things are all great and
+[01:29:00] i and i support that if you're able to
+[01:29:01] make that kind of money
+[01:29:04] in the markets right especially if
+[01:29:05] you're able to make it legally and
+[01:29:07] largely what they're doing is not
+[01:29:09] illegal in my opinion or certainly
+[01:29:10] doesn't fall into the
+[01:29:12] uh clearly being illegal the problem is
+[01:29:15] that in order to take profits to pay off
+[01:29:17] your student loans to
+[01:29:19] to start a business to do x y and z you
+[01:29:21] have to sell
+[01:29:22] and the question is who are you going to
+[01:29:24] sell to
+[01:29:26] largely it's going to be other retail
+[01:29:28] investors and it's still
+[01:29:29] always going to be the investors that
+[01:29:31] got in early that are going to be the
+[01:29:33] ones that get
+[01:29:34] the ability to sell at a profit everyone
+[01:29:37] else that gets in later in the game is
+[01:29:38] going to have to be the ones that buy
+[01:29:40] this stock
+[01:29:41] otherwise immediately when someone down
+[01:29:43] here that has
+[01:29:44] tens of thousands of shares sells
+[01:29:46] immediately it's just gonna blow through
+[01:29:47] all of the bid prices
+[01:29:49] and drive the stock down immediately so
+[01:29:51] for now
+[01:29:52] as you can see looking at this chart
+[01:29:54] there's a little very little volume here
+[01:29:56] so very little selling very little
+[01:29:58] buying
+[01:29:59] first of all no buying because the
+[01:30:01] brokerage firms have stopped
+[01:30:02] um the ability to buy but for also no
+[01:30:05] selling at the moment so that's why the
+[01:30:07] stock is
+[01:30:08] currently still trading at these
+[01:30:09] elevated uh prices
+[01:30:11] but the second anyone chooses to hit the
+[01:30:14] exit exit
+[01:30:15] um exit that's really where we're going
+[01:30:18] to see that crash here
+[01:30:19] how long can these investors continue to
+[01:30:21] hold this for how long
+[01:30:22] how much capital is there behind a
+[01:30:24] message board with four million
+[01:30:26] uh users behind it i don't know you
+[01:30:29] don't know no one knows
+[01:30:30] this is what we're all trying to figure
+[01:30:31] out right now but they have managed
+[01:30:34] to figure out a way to leverage their
+[01:30:35] capital through uh
+[01:30:38] option market makers that have to hedge
+[01:30:40] their positions and have successfully
+[01:30:41] been able to try
+[01:30:42] the stock this high but again the
+[01:30:44] problem is someone has to sell
+[01:30:47] and the second that starts to happen
+[01:30:48] it's going to create that effect down
+[01:30:50] to the downside so for those reasons i
+[01:30:52] think that this is just a cat and mouse
+[01:30:54] game here in the
+[01:30:55] in the in the meantime the one thing i
+[01:30:57] will comment a lot of
+[01:30:59] these investors currently feel that they
+[01:31:01] have more opportunity to squeeze the
+[01:31:03] stock higher because they see that the
+[01:31:04] short interest on the stock is still
+[01:31:06] very high
+[01:31:07] but i will say for those of you that are
+[01:31:11] thinking that you know you haven't
+[01:31:12] squeezed out the hedge funds
+[01:31:14] think and i'm not saying that the hedge
+[01:31:16] funds have or have not covered their
+[01:31:18] short positions they very well could
+[01:31:19] have
+[01:31:20] they very well could not have but the
+[01:31:22] one thing i want to remind investors is
+[01:31:24] that
+[01:31:26] you don't have to cover your short
+[01:31:27] position in order to close out your
+[01:31:29] position
+[01:31:30] so a lot of investors feel that you know
+[01:31:32] to to close out their position they have
+[01:31:33] to cover their shorts
+[01:31:34] as a hedge fund as a sophisticated hedge
+[01:31:36] fund there are many other ways that you
+[01:31:38] can
+[01:31:38] close out your position without covering
+[01:31:40] your short you can
+[01:31:42] buy the stock meaning you can have a
+[01:31:44] short and long stock position at the
+[01:31:45] same time there's nothing that stops you
+[01:31:47] from doing so so you could effectively
+[01:31:49] be
+[01:31:49] hedged out of the position but not have
+[01:31:51] to cover your shorts
+[01:31:52] you can also cover your shorts using
+[01:31:54] options you can the hedge fund
+[01:31:55] themselves could be along these options
+[01:31:57] or long a forward or long a swap or an
+[01:32:00] otc derivative that there's that they're
+[01:32:02] hedged with
+[01:32:03] there are lots of ways that a hedge fund
+[01:32:05] could in theory
+[01:32:06] synthetically close out their positions
+[01:32:08] without actually covering their shorts
+[01:32:11] so that's one thing that's another thing
+[01:32:12] that we need to remember you know the
+[01:32:14] hedge fund that initially shorted this
+[01:32:16] position can now be massively
+[01:32:17] long without having to cover their
+[01:32:19] shorts there are a lot of
+[01:32:21] ways that a hedge fund could get
+[01:32:22] themselves out of this trade without
+[01:32:25] closing their short position so those
+[01:32:27] are some of the things i want to
+[01:32:28] just to get out there because i've
+[01:32:30] gotten so many questions here over the
+[01:32:32] past few days regarding this
+[01:32:33] i hope that this was helpful in giving
+[01:32:35] you some light
+[01:32:36] as to what's currently going on how this
+[01:32:39] is all going to end
+[01:32:41] um you know i certainly hope that this
+[01:32:43] doesn't end by
+[01:32:44] some heavy-handed regulation that comes
+[01:32:46] in and stops retail traders from trading
+[01:32:48] options um but i can't help but think
+[01:32:51] that there
+[01:32:51] could be something like that coming down
+[01:32:53] the line so i just want to let people
+[01:32:55] understand what's currently going on
+[01:32:56] what's going through my head and
+[01:32:58] hopefully giving you some insights into
+[01:33:00] how this might all play out so with that
+[01:33:02] i just want to thank everyone for taking
+[01:33:04] the time out here this afternoon
+[01:33:07] you a better understanding of
+[01:33:09] straddles and strangles and also what's
+[01:33:11] currently going on with gamestop so
+[01:33:14] please if you're watching this on
+[01:33:15] youtube feel free to leave a comment
+[01:33:17] below i'd like to hear
+[01:33:18] as far as what your thoughts are and
+[01:33:20] what's currently going on at this market
+[01:33:22] how you think this is all going to
+[01:33:24] resolve itself and please hit subscribe
+[01:33:26] to our youtube channel so that you can
+[01:33:28] stay up to date on anything that we put
+[01:33:29] out here in the future
+[01:33:31] thank you so much i hope you guys have a
+[01:33:32] great evening and i'll see you guys here
+[01:33:34] tomorrow morning

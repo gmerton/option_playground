@@ -1,0 +1,1212 @@
+[00:00:00] Good afternoon and welcome back everyone
+[00:00:02] to our options education webinar series.
+[00:00:05] My name is Tony Zang. I'm the chief
+[00:00:06] strategist here at OptionsPlay and we
+[00:00:09] have a very special event here for you
+[00:00:11] this afternoon where we are going to be
+[00:00:13] talking about an algorithm that we have
+[00:00:15] built powered by AI to specifically help
+[00:00:18] you identify trading setups for
+[00:00:20] earnings. Um, we did a session here
+[00:00:23] about a week ago, a week and a half ago
+[00:00:26] on just the upcoming earning season and
+[00:00:29] we briefly touched up on this. Uh, but
+[00:00:31] you know, a lot of you came back with
+[00:00:33] more questions around it and we sent you
+[00:00:35] a um uh we sent you a email uh last
+[00:00:41] Friday with the first earnings
+[00:00:42] navigator. So, we got a lot of questions
+[00:00:44] about it. So this week we decided that
+[00:00:46] we were going to just dedicate a
+[00:00:48] relatively short but sweet session to
+[00:00:51] just understanding what the earnings
+[00:00:53] navigator is and what the new services
+[00:00:56] going to provide you with you if you are
+[00:00:59] a member here at optionsplay.com.
+[00:01:01] Um just a reminder what we do here on
+[00:01:04] these sessions is to empower you to grow
+[00:01:07] your account sustainably and confidently
+[00:01:10] uh by providing by making sure that you
+[00:01:12] have access to um the uh by making sure
+[00:01:16] that you have access to the the right
+[00:01:19] tools. Um so that make sure that you
+[00:01:22] have the right tools to help you grow
+[00:01:24] your trading account. And that means
+[00:01:25] that you have access to uh education
+[00:01:28] that spans a full gamut of what's
+[00:01:31] required to help you grow your trading
+[00:01:32] account from technical analysis to
+[00:01:35] fundamental analysis to even mindset and
+[00:01:37] psychology as well as access to the
+[00:01:39] tools that can help you um navigate the
+[00:01:43] markets. Uh those are some of the things
+[00:01:45] we're going to show you during today's
+[00:01:46] session. Um and then when you look at
+[00:01:48] the
+[00:01:50] um when you look at the
+[00:01:55] uh the tools that we provide, what we're
+[00:01:58] trying to make sure is that we're
+[00:01:59] continuously improving the tools to
+[00:02:02] automate as many steps as possible of
+[00:02:05] the things that we do in as part of our
+[00:02:08] process to identify stocks and trade
+[00:02:10] opportunities in the market. What we're
+[00:02:12] trying to do with with the earnings
+[00:02:14] navigators we're doing today is we want
+[00:02:17] to show you how we've uh continuously
+[00:02:19] improve our process to try to bring more
+[00:02:22] ideas and more uh uh more ideas to your
+[00:02:25] fingertips as part of your membership
+[00:02:27] here at
+[00:02:28] optionsplate.com. Now what we are going
+[00:02:30] to discuss here today is purely for
+[00:02:32] education and demonstration purposes. It
+[00:02:34] is not a solicitation or recommendation
+[00:02:36] to buy or sell any of the specific
+[00:02:39] securities that we'll be using as
+[00:02:40] example purposes during today's session.
+[00:02:43] But my primary goal today is to show you
+[00:02:46] how to identify stocks that have the
+[00:02:48] highest chance of making a big move on
+[00:02:51] earnings. Um earning season is
+[00:02:54] incredibly
+[00:02:55] uh volatile. It's also a a time where
+[00:02:58] there's a lot of opportunity over a very
+[00:03:00] short period of time. So, what we're
+[00:03:03] trying to do here is making sure that
+[00:03:04] you have access to the tools that can
+[00:03:06] help you identify the best trading
+[00:03:08] setups on earning season. Um, so today,
+[00:03:12] what we're going to go over is the
+[00:03:13] three-step approach to identifying
+[00:03:15] stocks that will make a big move on
+[00:03:17] earnings. uh walk you through it step by
+[00:03:19] step and then show you the earnings
+[00:03:21] navigator which is our new AI powered
+[00:03:23] weekly research report with the symbols
+[00:03:25] that have the highest probability of
+[00:03:27] making those big moves for the upcoming
+[00:03:30] earnings week. So
+[00:03:33] um for those of you that are a that you
+[00:03:35] know that are asking for uh whether this
+[00:03:38] session is recorded and that you can
+[00:03:40] have access to the slides the answer is
+[00:03:42] yes to both. Um, and also just to have
+[00:03:45] access to the tools that I'll be showing
+[00:03:47] you during today's session, you just
+[00:03:49] need to currently have a free trial or a
+[00:03:51] membership here at optionsplay.com in
+[00:03:54] order to access all of that. So, if you
+[00:03:56] don't currently have access to a free
+[00:03:58] trial or you currently don't have a
+[00:04:00] membership here at optionsplay.com, you
+[00:04:02] can sign up at on your phone by pointing
+[00:04:05] your phone to that QR code or going to
+[00:04:09] optionsplay.com/signup. It's a free
+[00:04:10] 30-day trial. It doesn't require credit
+[00:04:12] cards. It takes 10 seconds to set up and
+[00:04:15] it will give you access to the
+[00:04:16] recording, the slides as well as the
+[00:04:19] earnings navigator that I'm going to
+[00:04:20] show you during today's session and I'll
+[00:04:24] come back to this here in one second um
+[00:04:26] uh at the end uh for those of you that
+[00:04:29] do want to sign up here for that free
+[00:04:30] trial. So, at the core of what we do
+[00:04:33] here at OptionsPlay for earnings is our
+[00:04:36] earnings calendar. And our earnings
+[00:04:38] calendar is built in a way specifically
+[00:04:40] for options traders because on any given
+[00:04:43] day, especially in the meaty part of of
+[00:04:46] earning season, which is where we are
+[00:04:48] right now, um there are typically a few
+[00:04:52] hundred companies that report on a given
+[00:04:54] day. And most earnings calendars uh sort
+[00:04:58] that uh list of securities that are
+[00:05:00] reporting on a given day in alphabetical
+[00:05:02] order which makes it very difficult to
+[00:05:04] figure out who's reporting on that day
+[00:05:06] and which ones are relevant to your
+[00:05:09] trading needs. So what we do is instead
+[00:05:11] of sorting it by alphabetical order, we
+[00:05:14] sort our earnings calendar based on
+[00:05:16] options liquidity. The more liquid
+[00:05:19] something is, the higher it is on that
+[00:05:21] list. So the go sorry. So, and and if
+[00:05:25] you can see anything that's colorcoded
+[00:05:27] in green, those are the most liquid
+[00:05:29] symbols that are reporting on a given
+[00:05:31] day for options traders. Anything in
+[00:05:34] yellow are somewhat liquid. So, if
+[00:05:36] you've exhausted the list of very liquid
+[00:05:39] symbols, you can go into the uh somewhat
+[00:05:42] liquid symbols, but I would certainly
+[00:05:44] avoid anything that's not highlighted in
+[00:05:47] color because those are all the symbols
+[00:05:49] that are not liquid at all for options
+[00:05:53] traders. So, if you're trading earnings,
+[00:05:55] you know, especially during this
+[00:05:56] volatile period, you want to make sure
+[00:05:58] that you have um the ability to get in
+[00:06:01] and out relatively quickly. So,
+[00:06:03] liquidity is paramount when you're
+[00:06:05] trading options around earnings. So, our
+[00:06:08] earnings calendar is designed to help
+[00:06:10] you understand what symbols could you
+[00:06:13] trade it when earning season is coming
+[00:06:15] up. So, for example, if we're looking at
+[00:06:18] um the earnings calendar for today,
+[00:06:21] April 30th, you have Caterpillar, Etsy,
+[00:06:23] and Western Digital that reported in the
+[00:06:26] morning. Those are the three symbols
+[00:06:27] that have um the asterisk sign next to
+[00:06:29] it. The asterisk sign denotes a symbol
+[00:06:32] that reports out before the market. And
+[00:06:34] anything without the asterk signs are
+[00:06:36] the ones that are reporting after the
+[00:06:37] close. So, you have Robin Hood, you have
+[00:06:39] Meta and Microsoft, Qualcomm, those are
+[00:06:41] the big ones reporting this afternoon.
+[00:06:44] So, you know, when I'm looking at this
+[00:06:46] earnings calendar, I basically say, you
+[00:06:48] know, I'm thinking to myself, there are
+[00:06:49] four possible uh opportunities this
+[00:06:52] afternoon that I could potentially
+[00:06:54] trade. And what that does is it simply
+[00:06:56] narrows down my research substantially.
+[00:06:58] You know, instead of looking at a
+[00:07:00] hundred, you know, a few hundred
+[00:07:01] different stocks and figuring out which
+[00:07:02] ones I want to research, I know those
+[00:07:04] are the only four that I'm really going
+[00:07:05] to spend some time analyzing. And what I
+[00:07:08] want to walk you through is how do I
+[00:07:10] analyze those four stocks? What am I
+[00:07:12] looking for? um you know what are the
+[00:07:14] three steps that I need to see before I
+[00:07:16] can uh decide that I want to take an
+[00:07:19] earnings um uh trade on it and then from
+[00:07:22] there that's how I'm going to decide
+[00:07:24] whether or not this is the right trade
+[00:07:26] structure for me. Okay. So let's walk
+[00:07:29] you through um how I identify stocks for
+[00:07:33] earnings. Meaning how to identify stocks
+[00:07:35] that can potentially make a big move on
+[00:07:38] earnings. And for any of you that have
+[00:07:39] followed me on CNBC for the last few
+[00:07:41] years, whenever I do an earnings play on
+[00:07:44] CNBC, I will always lay out all three
+[00:07:47] items uh when I'm putting out an
+[00:07:49] earnings trade on CNBC. And those three
+[00:07:53] things are absolute trend, relative
+[00:07:55] strength, and fundamentals. I have to
+[00:07:58] look at all three. And all three have to
+[00:08:00] be satisfied before they they are
+[00:08:04] considered a real earnings play. uh for
+[00:08:08] me and and those are the ones that I
+[00:08:10] will trade uh and if you ever follow me
+[00:08:12] on CNBC those are the ones that I will
+[00:08:14] use and identify as a trading setup for
+[00:08:17] earnings and these are the stocks that
+[00:08:19] have been proven to make big moves on
+[00:08:21] earnings. Now first thing is absolute
+[00:08:24] trend which is simply that stocks that
+[00:08:26] are trending in one direction or
+[00:08:27] another. What you want to see are stocks
+[00:08:29] that are moving uh prior to earnings.
+[00:08:32] And we're really looking for is the, you
+[00:08:34] know, let's call it the the previous
+[00:08:36] week to the previous month uh going into
+[00:08:39] earnings. You know, is it heading in one
+[00:08:41] direction or another? And then what you
+[00:08:44] want to do is you want to not only see
+[00:08:45] the stock heading heading in one
+[00:08:47] direction or another, you want to see
+[00:08:49] you want to see relative strength in uh
+[00:08:52] along with that directional move. So, if
+[00:08:55] you have a stock that has been trending
+[00:08:56] higher here over the last month going
+[00:08:58] into the earnings announcement, not only
+[00:09:00] do you want to see that stock is moving
+[00:09:02] higher, you want to see that stock as uh
+[00:09:04] the relative strength is also continuing
+[00:09:07] to improve, meaning it's outperforming
+[00:09:09] the market and what that shows is
+[00:09:11] accumulation. That's a good sign that
+[00:09:13] institutions are buying that stock
+[00:09:15] faster than they're buying the rest of
+[00:09:17] the market. or vice versa. If you're
+[00:09:18] looking at a bearish trade where the
+[00:09:20] stock is trending lower, you want to see
+[00:09:23] the stock is not only trending lower,
+[00:09:24] but it's underperforming the market. And
+[00:09:26] that's a sign of distribution. Meaning
+[00:09:29] institutions are dumping that stock
+[00:09:31] faster than they're dumping the rest of
+[00:09:33] the market. So that's really kind of
+[00:09:35] what you're looking for in terms of from
+[00:09:37] a technical setup, from a charting
+[00:09:39] perspective. You want to see both
+[00:09:41] absolute and relative strength or
+[00:09:43] absolute and relative weakness um in
+[00:09:46] conjunction with each other. Does that
+[00:09:48] make sense everyone? Please type one
+[00:09:49] into the chat window if that makes sense
+[00:09:51] to you. And I'll show you a couple of
+[00:09:52] chart setups just so that you clearly
+[00:09:55] understand what I mean from that
+[00:09:56] absolute trend and relative strength
+[00:09:58] perspective. um you know and those two
+[00:10:02] things that we're looking at are based
+[00:10:04] on the technicals or based on the chart
+[00:10:06] of the underlying stock. The third thing
+[00:10:09] we're looking for is really
+[00:10:10] fundamentals. What we're trying and this
+[00:10:12] is the part that's going to be uh a
+[00:10:14] little harder to define for some users
+[00:10:16] depending on how whether or not you look
+[00:10:18] at fundamentals and where you get your
+[00:10:20] fundamentals. But largely the the
+[00:10:23] thought process there is you want to
+[00:10:25] find stocks that are at a disconnect
+[00:10:27] with the fundamentals because th the
+[00:10:29] disconnect that you have with the
+[00:10:31] fundamentals is what provides the
+[00:10:32] opportunities for the big move on
+[00:10:35] earnings. If something is trading
+[00:10:36] significantly below its its fair value
+[00:10:39] then earnings is really what can sort of
+[00:10:43] uh um uh what's the right word? earnings
+[00:10:47] is what is what many times can can drive
+[00:10:50] that stock to be revalued at its true
+[00:10:53] valuation as new information comes out.
+[00:10:56] And vice versa, if a company is
+[00:10:58] overvalued, uh it's usually earnings uh
+[00:11:01] that kind of brings investors back to
+[00:11:04] reality sometimes and uh forces that
+[00:11:07] stock to rerate at a lower valuation
+[00:11:10] based on the new information that comes
+[00:11:12] out from earnings. So the larger the
+[00:11:15] disconnect that you have between the
+[00:11:17] current stocks valuation and the and the
+[00:11:19] fundamentals, that's really where you
+[00:11:21] find some of the best opportunities for
+[00:11:24] big moves on earnings. Um, and we'll go
+[00:11:26] through some examples of that here as
+[00:11:28] well. But you know, a good example of
+[00:11:30] that is, uh, for example, Northrup
+[00:11:33] Grumman. Um, this is an example of a
+[00:11:35] stock that is exhibiting absolute
+[00:11:37] strength. Right? So, as you can see,
+[00:11:38] it's very clear that the stock is
+[00:11:40] trending higher, but as it trends
+[00:11:42] higher, it's actually also outperforming
+[00:11:44] the S&P 500. You want to see both
+[00:11:48] absolute and relative strength in
+[00:11:50] conjunction with each other to take a
+[00:11:52] bullish setup going into earnings. And
+[00:11:54] then you want to take uh, you know, a
+[00:11:56] stock that's perhaps trending lower and
+[00:11:58] breaking below support and also
+[00:12:00] underperforming the S&P 500 to take a
+[00:12:03] bearish view going into earnings. You
+[00:12:05] generally want to see both aligning with
+[00:12:07] each other before you want to take a
+[00:12:09] directional view going into earnings
+[00:12:11] because just absolute weakness in itself
+[00:12:14] is not enough. If many times a stock can
+[00:12:16] be trending lower, but just because it's
+[00:12:19] trending lower doesn't mean that it's
+[00:12:20] outperforming the market, right? So you
+[00:12:22] h you can have stocks that are trending
+[00:12:24] lower, but it's outperforming the
+[00:12:26] market. That's not a good candidate for
+[00:12:28] a bearish trade for earnings. and vice
+[00:12:30] versa. If you have a stock that's
+[00:12:32] trending higher, but it's still but it's
+[00:12:33] trending higher at a rate that's slower
+[00:12:35] than the rest of the market, that's also
+[00:12:37] not a stock that you want to buy going
+[00:12:39] into earnings. So, absolute and relative
+[00:12:42] strength or weakness that aligns with
+[00:12:44] each other is number one, the first
+[00:12:46] thing that you're looking for when
+[00:12:47] you're screening for earnings plays. And
+[00:12:49] then once you've identified stocks that
+[00:12:52] have both absolute and relative weakness
+[00:12:54] and keep in mind, you know, for every
+[00:12:56] stock that you look at, you know, the
+[00:12:58] number of stocks that have both, um, oh,
+[00:13:01] sorry,
+[00:13:03] um, I apologize. Um, so just just to
+[00:13:07] reiterate, um, absolute and relative
+[00:13:09] strength are the two technical
+[00:13:10] indicators that you're looking at. And
+[00:13:12] then
+[00:13:13] um fundamentals is really what you're
+[00:13:16] looking for in terms of the disconnect
+[00:13:18] between where it currently is trading
+[00:13:20] versus sort of what you deem as perhaps
+[00:13:23] is a realistic fair value for that
+[00:13:25] particular stock. So when we're looking
+[00:13:27] at Northrumman, what we're looking for
+[00:13:28] is a stock that's trending higher here.
+[00:13:31] Uh that's breaking above resistance, but
+[00:13:33] at the same time also outperforming the
+[00:13:35] S&P 500. um you want to see both in
+[00:13:38] conjunction with with each other in
+[00:13:41] order to justify a bullish uh uh uh set
+[00:13:44] setup and for example in Bristol Meyers
+[00:13:46] that's breaking below support. Not only
+[00:13:48] do you want to see a stock that's
+[00:13:50] breaking support, you also want to see
+[00:13:51] it underperform the S&P 500. Um those
+[00:13:54] two things are really important. And I
+[00:13:56] would say
+[00:13:58] that it's only probably about 20% of the
+[00:14:03] time when you get both, right? Meaning a
+[00:14:06] lot of times what you'll get is absolute
+[00:14:08] strength but you know you don't get
+[00:14:10] relative strength alongside with that or
+[00:14:12] vice versa if you get um absolute
+[00:14:14] weakness but you're not seeing uh
+[00:14:16] relative weakness alongside with that as
+[00:14:18] well. I would say only about 20 to 30%
+[00:14:21] of the time are you going to find stocks
+[00:14:24] where both the absolute and relative uh
+[00:14:26] you know are aligning with each other.
+[00:14:28] So you know what that means is that
+[00:14:30] about 60 to 70% of the stocks that
+[00:14:32] you're looking at you know won't fit
+[00:14:34] this particular criteria. So be aware of
+[00:14:36] that. You know, the vast majority of
+[00:14:38] stocks that you look at won't fit this
+[00:14:40] criteria, but the few that do, those are
+[00:14:42] the ones that you want to look further
+[00:14:44] into the fundamentals. Does that make
+[00:14:46] sense everyone? Please type two into the
+[00:14:47] chat window if that makes sense to
+[00:14:52] you. Perfect. Okay. So then this is
+[00:14:56] really where we look at the
+[00:14:57] fundamentals. This is really where
+[00:14:59] valuation and profitability are probably
+[00:15:02] the two more most important things to
+[00:15:04] look at as a starting point. You can
+[00:15:06] look at growth rates and growth rates
+[00:15:08] matter at the end of the day, but um
+[00:15:10] it's definitely one of the things that
+[00:15:12] you you know the the the valuation and
+[00:15:14] profitability are the two most important
+[00:15:16] metrics that I look at. Um so for
+[00:15:19] example, if you look at something like
+[00:15:20] North of Grumman, um you know that's
+[00:15:22] current currently trading at about 19
+[00:15:24] times forward earnings when the industry
+[00:15:25] average is 28. that means the stock is
+[00:15:28] trading well below the industry average
+[00:15:30] for this particular stock. Um that's a
+[00:15:33] good sign number one for a potential
+[00:15:35] undervalued stock. But it's something
+[00:15:37] that's really only undervalued if it's
+[00:15:40] actually more profitable in my opinion
+[00:15:43] um than its industry. Meaning just
+[00:15:46] because something is trading at a lower
+[00:15:47] valuation doesn't mean it's justified,
+[00:15:49] right? Meaning I'm sorry, it very well
+[00:15:52] could be justified. So, for example, if
+[00:15:54] a stock is trading at a lower valuation
+[00:15:56] than its industry, maybe it's not as
+[00:15:58] profitable, maybe it's not growing as
+[00:16:00] fast. Those are all legitimate reasons
+[00:16:02] for why a stock is trading at a lower
+[00:16:05] valuation. So, what you really want to
+[00:16:07] make sure is that you see uh a stock
+[00:16:09] that's trading um you know, at below
+[00:16:12] average valuation with potentially
+[00:16:14] higher than average profitability. And
+[00:16:16] that's what Northrumman uh you know is
+[00:16:19] currently screening for. So that's an
+[00:16:21] example of, you know, a stock that is
+[00:16:23] exhibiting um absolute strength,
+[00:16:26] exhibiting relative strength, and
+[00:16:28] fundamentals that are somewhat
+[00:16:30] disconnected from uh the the fair value.
+[00:16:33] Right? This is a stock that's more
+[00:16:34] profitable than the industry, yet it
+[00:16:36] trades at a valuation that's
+[00:16:37] substantially lower. that provides the
+[00:16:40] potential um for you know new
+[00:16:43] information to come out and for
+[00:16:45] investors to say ah you know what maybe
+[00:16:47] this 19 times forward earnings on this
+[00:16:49] particular stock is a little low this
+[00:16:52] should be trading maybe at 22 23 times
+[00:16:55] forward earnings with the new
+[00:16:56] information coming out and that's what
+[00:16:58] causes stocks to jump instantly on
+[00:17:01] earnings and that's what we're trying to
+[00:17:02] capture is that in instantaneous move on
+[00:17:05] earnings utilizing perhaps an option
+[00:17:08] strategy to do so. And this is the this
+[00:17:11] is the trading setup that I look for in
+[00:17:13] order to find these particular stocks
+[00:17:15] that have this type of movement. The
+[00:17:17] other way that you can look at this is
+[00:17:19] you know stocks that have very high
+[00:17:21] valuation but you know either average or
+[00:17:23] below average um profitability. A good
+[00:17:26] example of that maybe is Walmart um you
+[00:17:29] know trading at higher than expected
+[00:17:30] value higher than average industry
+[00:17:32] valuations yet um net margins that are
+[00:17:35] actually below the industry. Costco is
+[00:17:38] another good example of that. You know,
+[00:17:40] stocks that are trading at much higher
+[00:17:42] valuations than the industry even though
+[00:17:44] it's not any more profitable than the
+[00:17:46] rest of the industry. So, uh there are
+[00:17:49] there are different ways that you can
+[00:17:51] potentially do uh you can look at this,
+[00:17:53] but I from my perspective the the quick
+[00:17:55] and dirty way is to look at valuation
+[00:17:57] versus net margins. And then if those
+[00:18:00] things all align, you can then look at
+[00:18:02] kind of growth rates. But growth rates,
+[00:18:04] you know, are not the end all be all.
+[00:18:07] Profitability and valuation in my
+[00:18:09] opinion are the two most important
+[00:18:11] indicators when you're looking for
+[00:18:13] fundamentals and trying to understand
+[00:18:14] whether a stock is disconnected from
+[00:18:16] reality or not. Does that make sense
+[00:18:19] everyone? Please type three into the
+[00:18:20] chat window if that makes sense to
+[00:18:25] you. Perfect. Okay. So, I think you know
+[00:18:28] the the the trading setup that I just
+[00:18:31] explained is it's really not that
+[00:18:34] difficult to to understand, right? Um,
+[00:18:36] however, you know, the one thing that I
+[00:18:39] have found it difficult to do, um, is
+[00:18:42] that every single step of what I just
+[00:18:44] explained to you is a pretty manual
+[00:18:47] process. Meaning, you have to look at
+[00:18:49] the earnings calendar. You then have to
+[00:18:51] pull up the chart for that specific
+[00:18:53] stock, look at the absolute, look at the
+[00:18:54] relative weakness, and like I said,
+[00:18:56] about 70% of the time, at least 70% of
+[00:18:59] the time, you're not going to find
+[00:19:00] alignment between absolute and relative
+[00:19:02] strength. Um so you know 70% of the
+[00:19:05] charts that you look at you end up just
+[00:19:06] throwing away and saying I got to find
+[00:19:08] the new one right and then in that 20
+[00:19:10] 30% of the time when you do find stocks
+[00:19:12] where the absolute and relative strength
+[00:19:14] um does align uh then you do your your
+[00:19:18] deep dive fundamentals and even if you
+[00:19:20] do some quick and dirty uh you know
+[00:19:22] evaluation like I do you know that still
+[00:19:24] is going to take you a couple of minutes
+[00:19:26] to understand you know what is the
+[00:19:28] industry uh medians what are the
+[00:19:30] industry averages compare the two get a
+[00:19:32] sense for whether something is
+[00:19:33] disconnected or not and how
+[00:19:35] disconnected. It's a pretty manual
+[00:19:37] process and it's something that for
+[00:19:39] years and years and years I did manually
+[00:19:42] and you know to some degree because it
+[00:19:44] was done manually it limits the amount
+[00:19:46] of opportunities that I can potentially
+[00:19:48] trade and sometimes I don't know that
+[00:19:50] I'm always trading the best possible
+[00:19:52] opportunities because I can't possibly
+[00:19:54] look through every single opportunity.
+[00:19:57] Um so that's why we created the earnings
+[00:19:59] navigator. Um, and you know, using the
+[00:20:01] power of AI, this is really the first
+[00:20:03] time that we've been able to completely
+[00:20:05] automate the entire process that I'm
+[00:20:08] showing you. We're able to evaluate a
+[00:20:10] chart. We're able to evaluate the
+[00:20:12] fundamentals on an on on using AI. So,
+[00:20:15] I've basically built these um um
+[00:20:20] uh these um models using AI to basically
+[00:20:24] do the analysis for me. uh do the
+[00:20:26] ranking, doing the scoring and then
+[00:20:28] showing me only the best possible
+[00:20:31] opportunities looking at the earnings
+[00:20:33] calendar. So our AI basically pulls
+[00:20:36] fundamentals, pulls technicals, looks at
+[00:20:38] the looks at the charts, look at the
+[00:20:40] fundamentals and only number one
+[00:20:42] identifies stocks where all three things
+[00:20:44] are aligned. Then it looks at the
+[00:20:46] earnings calendar to check for liquidity
+[00:20:48] and only when things all match up do
+[00:20:51] things end up on our earnings navigator.
+[00:20:53] And this is something that we're
+[00:20:55] publishing once a week, every single
+[00:20:57] Friday afternoon for the following week.
+[00:21:00] So what you see here on your screen
+[00:21:01] right now is what we published last
+[00:21:03] Friday for this current week. Um, and if
+[00:21:06] you look at today, we have three
+[00:21:08] different stocks that are reporting
+[00:21:10] today that have met all three criterias.
+[00:21:12] We have Meta, we have Microsoft, and we
+[00:21:15] have Qualcomm. Those three stocks are
+[00:21:17] not only significantly undervalued, but
+[00:21:19] they're also stocks with either um
+[00:21:22] strong relative strength or improving
+[00:21:24] relative strength and absolute strength
+[00:21:27] here as well. Um and as you can see,
+[00:21:29] Meta and Qualcomm have pretty sizable
+[00:21:31] expected moves about 8 to 9%. Microsoft
+[00:21:34] is about 5 a.5%. And that just gives you
+[00:21:37] a sense for what the options market is
+[00:21:39] implying of what the potential move is
+[00:21:42] on that specific stock. And those are
+[00:21:44] things that you can use to help you uh
+[00:21:46] figure out, you know, strike prices that
+[00:21:48] you might want to trade on these
+[00:21:50] particular um on these particular
+[00:21:53] setups. But this is something that we
+[00:21:55] built to fully automate everything that
+[00:21:57] I typically would use on an uh to try to
+[00:22:00] find an earnings um earnings opportunity
+[00:22:04] and doing so in a way that's fully
+[00:22:05] automated because the the old way of
+[00:22:08] doing things was just too manual and
+[00:22:09] there was no way to really automate it
+[00:22:11] without the use of AI. So now with the
+[00:22:13] with the um use of AI, this is something
+[00:22:16] that we have been able to automate and
+[00:22:19] is emailed out to all of our members on
+[00:22:21] Friday afternoons uh every single week
+[00:22:24] for the following week's earnings
+[00:22:26] report. So what you're seeing here,
+[00:22:27] which is this week's earnings report, we
+[00:22:29] sent out last Friday afternoon.
+[00:22:31] hopefully giving you a lot of time to do
+[00:22:33] a little bit of extra homework over the
+[00:22:35] weekend to make sure that you agree and
+[00:22:38] you understand how to use this uh so
+[00:22:40] that you can have these uh trading
+[00:22:42] setups for the following week. Um and
+[00:22:45] it's pretty straightforward to to
+[00:22:47] understand. It's pretty self-explanatory
+[00:22:50] and it really is designed to help you
+[00:22:52] quickly identify trading opportunities
+[00:22:55] on stocks that have all three things
+[00:22:57] that I've just talked you through. Um,
+[00:22:59] and making sure that all three things
+[00:23:01] are aligned before you decide to pull
+[00:23:03] the trigger on a specific
+[00:23:13] stock. So, let's just take a look at a
+[00:23:16] couple of stocks. Let's look at uh Meta
+[00:23:18] and let's look at Qualcomm real quick.
+[00:23:19] Let's look at Meta. And um, so Meta is
+[00:23:22] currently trading around 536. It's down
+[00:23:24] 18 bucks today on the back of the GDP
+[00:23:27] print. Um, so, so things are looking a
+[00:23:29] little weak going into this earnings
+[00:23:31] report. Um, so we do have to factor that
+[00:23:34] in into our into our thought process
+[00:23:36] into into how we think about this. But I
+[00:23:39] do think the stock being down three and
+[00:23:41] a half% here today does actually
+[00:23:44] potentially provide a a better
+[00:23:46] opportunity for if you are trying to go
+[00:23:49] long. um you know if Meta does report
+[00:23:52] stronger than expected earnings um the
+[00:23:55] fact that it's down 3 and a half% might
+[00:23:57] actually increase the move that you see
+[00:23:59] here to the upside. So um this is
+[00:24:01] something that I think is important to
+[00:24:02] look at and generally speaking when
+[00:24:04] you're trading these you generally want
+[00:24:05] to use shorterdated options uh to
+[00:24:08] potentially take that bigger move. Um,
+[00:24:10] so for example, if you're looking at,
+[00:24:11] you know, trading at 536 right now, you
+[00:24:13] might want to look at something around a
+[00:24:15] 50 to 45 delta uh strike price. Maybe
+[00:24:18] something around a 545 uh 547 and a half
+[00:24:21] or 547 uh 547 and a half, for example,
+[00:24:24] as a potential call option to buy. You
+[00:24:27] know, that's currently costing about
+[00:24:28] $2,300 per contract. Not cheap, but it's
+[00:24:32] also $537 stock. Um, so you have to keep
+[00:24:35] that in mind. we're looking at about
+[00:24:37] about 5% of the stock's value that you
+[00:24:39] are risking on this particular trade.
+[00:24:43] Um, and then looking at let's say
+[00:24:46] Microsoft, let's look at Microsoft for a
+[00:24:49] second
+[00:24:54] here. Microsoft is only down about 1%
+[00:24:57] here today. Maybe a better candidate for
+[00:24:59] earnings this afternoon. Uh, looking at,
+[00:25:02] let's say, the May 16th expiration. If
+[00:25:04] you're looking at, let's say, a 50
+[00:25:06] delta, let's call it a 392.5 run, that's
+[00:25:10] costing you $10.80 on a four nearly $400
+[00:25:13] stock. That's only risking a little
+[00:25:15] over, let's call it 3% of the stock's
+[00:25:18] value. Um, you know, so you're risking a
+[00:25:21] quite a bit less here when you're
+[00:25:22] trading Microsoft earnings than you are
+[00:25:24] on Meta Earnings, you know, and just
+[00:25:26] look at the overall chart here, right?
+[00:25:28] You have a stock that is kind of just
+[00:25:30] trading against this major resistance
+[00:25:32] level. Is earnings the catalyst that can
+[00:25:34] drive it higher? That's kind of the
+[00:25:36] thought process here, right? You know,
+[00:25:37] when you have these trading setups where
+[00:25:39] the stock is kind of struggling, um it's
+[00:25:41] kind of it's kind of forming this bottom
+[00:25:44] here and it's just trading against that
+[00:25:46] resistance level, it really sometimes
+[00:25:48] needs an earnings catalyst or catalyst
+[00:25:50] to kind of break to break that out of
+[00:25:52] that that breakout here or break out
+[00:25:54] break out above that resistance level.
+[00:25:56] And earnings many times could be that
+[00:25:58] catalyst. Um, and then let's look at
+[00:26:09] Qualcomm. Qualcomm $146 stock here. As
+[00:26:13] you can see, um, you know, trading up
+[00:26:15] against this 150 resistance level is
+[00:26:17] earnings. What what it needs to kind of
+[00:26:19] get back above those levels here. Let's
+[00:26:22] take a look at maybe looking at a May
+[00:26:24] option that expires in May, which is
+[00:26:26] about 14 days. Uh if you look at kind of
+[00:26:28] the 147 or 148s, you know, that's
+[00:26:31] costing
+[00:26:32] $5.65 on aund call it $50 stock, you're
+[00:26:36] looking at a little over 3% of the
+[00:26:37] stock's value that you are risking. So
+[00:26:39] out of these three, I think I probably
+[00:26:41] might trade Qualcomm. Um just because,
+[00:26:45] you know, from the expected move, you're
+[00:26:46] you're expecting about close to a 9%
+[00:26:48] move, yet I'm only risking about 3% of
+[00:26:51] the stock's value to buy this May 148
+[00:26:54] call option. That's a call option that's
+[00:26:56] only about two bucks out of the money.
+[00:26:58] Um, and uh could potentially give you a
+[00:27:02] nice return if it does make that 9% move
+[00:27:05] to the upside on earnings. Uh, it's
+[00:27:07] significantly undervalued and it's
+[00:27:09] showing both um, you know,
+[00:27:12] uh, uh, you know, um, it's showing both
+[00:27:16] absolute and relative strength here
+[00:27:18] going into that earnings announcement.
+[00:27:19] So this is something that we are uh we
+[00:27:22] particularly like here for this
+[00:27:24] particular trading setup and uh this is
+[00:27:27] how we identify them. So going forward
+[00:27:30] if you have either a subscription or a
+[00:27:32] free trial to options play you get
+[00:27:34] access to this earnings navigator which
+[00:27:36] like I said is emailed to you every
+[00:27:38] single Friday afternoon for the next
+[00:27:41] week's earnings announcement. So next
+[00:27:43] week we'll have another uh big earnings
+[00:27:46] week. A lot of consumer names coming up.
+[00:27:48] You have Disney, you have um Shopify,
+[00:27:52] you have um
+[00:27:55] uh trying to find what else is is uh was
+[00:27:58] was on the earnings calendar for next
+[00:28:00] week. You've got Disney, you've got
+[00:28:02] Uber, you've got AMD, you've got
+[00:28:05] Shopify, you've got
+[00:28:09] um Pal uh No, that's that's not
+[00:28:12] Palunteer, that's Planet Fitness. Um and
+[00:28:15] uh so next week is actually, you know,
+[00:28:17] we already have kind of an an earnings
+[00:28:19] calendar that's starting to to to
+[00:28:23] um slow down. This week is really the
+[00:28:25] big earnings week. Next week it's
+[00:28:27] starting to slow down a little bit, but
+[00:28:28] you still have plenty of names reporting
+[00:28:30] next week. The following week, we
+[00:28:32] obviously have fewer, but some big names
+[00:28:34] is there. You have Walmart, you have
+[00:28:35] John Deere, you have Applied Materials,
+[00:28:37] um you have Alibaba, you have Cisco.
+[00:28:39] Those are some big names that are
+[00:28:40] reporting. And those are some of the
+[00:28:41] ones that you can see some big moves.
+[00:28:43] You have Cisco, you have Palo Alto
+[00:28:45] Networks. Those are ones that I think
+[00:28:47] could see some big moves. And Walmart as
+[00:28:49] well. Um, so that's really what the
+[00:28:51] earnings navigator is designed to do is
+[00:28:53] to help you identify which stocks have
+[00:28:56] the highest probability of making a big
+[00:28:58] move on earnings and helping you
+[00:29:00] identify stocks that all three things
+[00:29:02] are aligned with each other.
+[00:29:10] Now with that, that is what I wanted to
+[00:29:12] share with you here today. I tr I was
+[00:29:14] trying to make the session short and
+[00:29:15] sweet, not the full hour, but I just
+[00:29:18] wanted to make sure that everyone
+[00:29:19] understood how the earnings navigator
+[00:29:21] works. What you're getting was part of
+[00:29:23] your subscription here at OptionsPlay.
+[00:29:25] So, if you want access to the earnings
+[00:29:27] navigator and you don't currently have
+[00:29:28] an account here at OptionsPlay, you can
+[00:29:30] sign up at
+[00:29:31] optionsplay.comsignup or point your
+[00:29:33] phone to to that QR code on your screen.
+[00:29:36] Um, so what I'll do now is I'll open
+[00:29:38] this up for Q&A. I will um there's a Q&A
+[00:29:42] button at the bottom of your screen.
+[00:29:44] Please type your questions into the Q&A
+[00:29:45] window and I'll try to answer a few
+[00:29:48] questions before I have to sign off.
+[00:30:15] what does the number next to the symbol
+[00:30:17] indicate? Um, so I guess the question is
+[00:30:19] really on the earnings calendar here.
+[00:30:21] Um, the symbol on the next to the
+[00:30:23] earnings calendar is liquidity. One is
+[00:30:25] the most liquid options, two are
+[00:30:27] somewhat liquid, three are not liquid at
+[00:30:29] all. Um so our earnings calendar is
+[00:30:32] always
+[00:30:34] um our our earnings calendar is always
+[00:30:37] based on
+[00:30:44] liquidity. Um the earnings navigator
+[00:30:46] comes to you in an email. Um, so if you
+[00:30:49] have a subscription, you we send that to
+[00:30:51] you in an email on
+[00:30:54] um on
+[00:30:58] uh to your to your email address that is
+[00:31:00] registered for your options play
+[00:31:02] account. Um there's a question say how
+[00:31:04] do you calculate the expected moves?
+[00:31:06] That's a really good question. So if you
+[00:31:08] look at Qualcomm um we'll use
+[00:31:11] a a straddle here. Um what you basically
+[00:31:15] are looking at is the at the money
+[00:31:16] straddle. So, as you can see, um the at
+[00:31:18] the money straddle here is around
+[00:31:20] $9.40. Uh so, what you do is you take
+[00:31:22] the $940 and this is the straddle that
+[00:31:25] expires this week, right? Um so, you
+[00:31:27] take the
+[00:31:28] $9.40 um 940 and you divide that by uh
+[00:31:32] 145. So, you get a 6 and a half% move.
+[00:31:35] So, um you know, things have changed
+[00:31:37] quite a bit in terms of the expected
+[00:31:38] move here, um since uh last Friday. So,
+[00:31:42] you know, last Friday the expected move
+[00:31:43] was closer to 9%. Now it's only about uh
+[00:31:47] 6 and a half% on Falcom, but you
+[00:31:50] basically take this the cost of the at
+[00:31:51] the money straddle and that's kind of
+[00:31:53] generally speaking how you calculate the
+[00:31:55] expected
+[00:31:59] move. Do we use the usual guidelines to
+[00:32:01] trade credit spreads on these stocks?
+[00:32:03] Yes. If you if you're going to use a
+[00:32:05] credit spread with the stocks on the
+[00:32:07] earnings navigator, then yes. Um that is
+[00:32:10] uh you would use the standard credit
+[00:32:12] spread to uh trade uh trade these
+[00:32:15] earnings uh trades. Do you trade place a
+[00:32:19] trade before or after the earnings
+[00:32:20] announcement? You can't place the trade
+[00:32:22] after the earnings announcement because
+[00:32:24] at that point it'd be too late. You got
+[00:32:25] to do it before. So Qualcomm reports
+[00:32:27] this afternoon. So you got to you got to
+[00:32:29] put in your trades now before the market
+[00:32:31] closes at 4
+[00:32:33] p.m. Do you prefer call or vertical? So,
+[00:32:36] you know, when we identify stocks like
+[00:32:38] this where we think that there's going
+[00:32:40] to be a big move in one direction, um,
+[00:32:42] you know, many times I will just use a
+[00:32:44] simple call option because the call
+[00:32:46] option gives me that unlimited upside
+[00:32:48] potential. The vertical is good for, you
+[00:32:51] know, when you feel that there's not
+[00:32:52] going to make be a big move um or or or
+[00:32:55] let's say it's a really highric stock
+[00:32:57] and you're using a vertical to uh to
+[00:33:00] reduce the total risk on the trade. Uh,
+[00:33:02] that's when I'll use a vertical. So, if
+[00:33:04] you look at Meta, when it's a $500, it's
+[00:33:07] a $500 stock, you might want to use a
+[00:33:09] vertical there. It just reduces the
+[00:33:11] overall capital outlay you need on the
+[00:33:13] on the trade. But for Qualcomm, when
+[00:33:15] it's a $145 stock, maybe you might want
+[00:33:17] to just use a call option and get that
+[00:33:20] unlimited
+[00:33:21] upside. Do you buy a week or two in
+[00:33:24] advance or a day or two? So, generally
+[00:33:26] speaking, you know, for earnings plays,
+[00:33:27] a lot of times I'll buy them the day of.
+[00:33:29] So the day or you know the day of or the
+[00:33:31] day before depending on if it's a
+[00:33:33] morning or afternoon uh earnings
+[00:33:35] announcement. If it's if it's um an
+[00:33:37] afternoon earning announcement then
+[00:33:39] usually many times I'll trade it uh you
+[00:33:41] know basically right before the close.
+[00:33:43] If it is um in the morning then I'll
+[00:33:46] basically trade it also uh
+[00:33:50] uh right before the close for the next
+[00:33:53] day.
+[00:33:56] Um yes, uh we certainly are looking at
+[00:33:59] adding the options n the earnings
+[00:34:01] navigator to the platform as well. Um
+[00:34:04] but in the short run, what we're doing
+[00:34:05] is we're we're trying to get this out to
+[00:34:07] you as quickly as possible. We just
+[00:34:08] built the algorithm last week, so we
+[00:34:10] wanted to get it out to you as quickly
+[00:34:11] as possible and the easiest way to do
+[00:34:13] that at the time was just through the
+[00:34:15] email. But yes, we are trying to bring
+[00:34:16] it onto the platform as well. Um if the
+[00:34:20] move goes against you, what's your
+[00:34:21] recommendation for setting stops? uh if
+[00:34:23] the trade goes against you, you really
+[00:34:25] don't need stops. You should just be
+[00:34:26] getting out. Um uh you know, if there's
+[00:34:30] I I don't think you really need stops at
+[00:34:32] that point. You know, if if the trade's
+[00:34:34] not working out, you simply meaning if
+[00:34:36] the direction of the move is not the
+[00:34:38] intent was not your expected direction,
+[00:34:41] just get out of the trade. Doesn't
+[00:34:42] matter whether you're down 10% or 30% or
+[00:34:45] 50% or 70%, just get out of the trade.
+[00:34:48] Um you don't need stops to to to tell
+[00:34:50] you to get out of the trade.
+[00:34:53] Um, it's only sent out during earning
+[00:34:55] season. Uh, generally speaking, yes,
+[00:34:57] because we're only targeting the most
+[00:34:59] liquid names on this list, right? So, as
+[00:35:01] you get towards the end of the season,
+[00:35:03] um, you know, you might only have a
+[00:35:04] couple of names and maybe nothing even
+[00:35:06] matches on our list. So, it's really
+[00:35:09] probably six to seven weeks out of the
+[00:35:12] earning season that you're going to get
+[00:35:13] the earnings navigator from
+[00:35:17] us.
+[00:35:27] Would you suggest selling covered put
+[00:35:30] from Microsoft and Qualcomm? Um, if if
+[00:35:33] by covered put you mean a short put, um,
+[00:35:36] that definitely is a potential strategy
+[00:35:39] that you can use.
+[00:35:41] Um, especially if it's a if it's a stock
+[00:35:44] that you wouldn't mind owning um going
+[00:35:46] into earnings. Uh yes, short a short
+[00:35:48] short puts is a valid strategy for this
+[00:35:51] uh for the earnings
+[00:35:55] navigator. Do you suggest buying an
+[00:35:57] outright call option if you're bullish
+[00:35:58] on a stock ahead of earnings? Yeah,
+[00:36:00] generally speaking, a call option is a
+[00:36:02] good uh strategy for it because like I
+[00:36:04] said, what we're trying to identify are
+[00:36:06] stocks that are going to make a big move
+[00:36:08] and call options, you know, allow you to
+[00:36:10] capture that big move fully. uh you know
+[00:36:14] and because you're only holding on to it
+[00:36:16] potentially for a couple of days, you
+[00:36:18] know, you're not too worried. You're not
+[00:36:20] too worried about time decay or uh you
+[00:36:23] know, volatility crush. You're really
+[00:36:24] just in and out of those of that trade.
+[00:36:27] So, call options many times is a good uh
+[00:36:30] good uh strategy for
+[00:36:35] it. Microsoft goes X dividend on 515. Is
+[00:36:39] a good idea to buy call options expiring
+[00:36:41] on 516? Well, generally speaking, you
+[00:36:43] know, this type of strategy, I wouldn't
+[00:36:45] hold to expiration. So, in this
+[00:36:46] particular case, I wouldn't worry about
+[00:36:48] that. Um, my goal with something like
+[00:36:51] that, if I bought a call option, would
+[00:36:53] not be hold it to
+[00:36:56] expiration. Um, Bill, if you're a member
+[00:36:58] and you're not getting these earnings
+[00:37:00] emails, please send us an email at
+[00:37:02] info@optionsplay.com and we'll happy to
+[00:37:04] we're happy to look into your account
+[00:37:06] and see what um where why that might be
+[00:37:09] the case. Um the the earnings navigator
+[00:37:12] is not available on the site. It is only
+[00:37:14] available um we are emailing it to all
+[00:37:16] of our
+[00:37:19] members. Do you prefer trading names
+[00:37:21] that report prior or to opening or after
+[00:37:24] closing? Um you know the big names tend
+[00:37:26] to report after the close. You tend to
+[00:37:29] have a lot more consumer names that tend
+[00:37:31] to report in the mornings. Um, I don't
+[00:37:34] particularly have a preference, but you
+[00:37:36] know, it tends to be a lot of the names
+[00:37:37] that I trade are afternoon um,
+[00:37:43] reports. Um, how do I access the tool?
+[00:37:47] Um, which tool are you specifically
+[00:37:50] referring to, if you don't mind
+[00:37:52] clarifying?
+[00:38:04] Um Bob, your question with regards to
+[00:38:06] Ichimoku clouds. Um I haven't had a
+[00:38:10] chance to take a look at that. Let's
+[00:38:11] just quickly look at that. Um it's a
+[00:38:14] little bit off topic, but I'm happy to
+[00:38:16] to just at least take a look. Um
+[00:38:25] um you're right. It is just up against
+[00:38:27] resistance. You do have the
+[00:38:34] um do have
+[00:38:36] this Yeah, it's hard to say, right? But,
+[00:38:39] you know, my point is that earnings is
+[00:38:42] is potentially the catalyst that pierces
+[00:38:44] through the cloud, right? Yes, you're up
+[00:38:46] against the cloud and that could be uh
+[00:38:48] you know could find some weakness here,
+[00:38:51] you know, but you could also have just
+[00:38:52] drawn basic support and resistance
+[00:38:54] levels and kind of had the same view,
+[00:38:56] right? That uh you've got this major
+[00:38:59] resistance level coming through and that
+[00:39:00] perhaps that's a reason for it to be
+[00:39:02] trading lower here. But, you know, what
+[00:39:04] we what we're seeing here is, you know,
+[00:39:06] trends that are improving as you can
+[00:39:08] see. But not only are trends improving,
+[00:39:10] but it's outperforming the S&P 500 as it
+[00:39:13] does that. And that is really what
+[00:39:15] provides the potential catalyst for this
+[00:39:17] to to to trade higher going into
+[00:39:20] earnings. And clearly because it's
+[00:39:21] outperforming the S&P going into
+[00:39:23] earnings, you know, that's sign that
+[00:39:25] institutions are accumulating this a
+[00:39:27] little bit faster than the rest of the
+[00:39:29] market. So, um, you know, when you see
+[00:39:32] institutional accumulation going into
+[00:39:34] earnings, you know, that is a that is
+[00:39:36] the sign of some edge. Um, and that's
+[00:39:39] why I particularly use it for earnings.
+[00:39:46] Uh yes, this webinar will be available
+[00:39:49] via
+[00:39:55] recording. So now you know which way to
+[00:39:57] play these earnings when companies like
+[00:39:59] Tesla miss top and bottom don't give
+[00:40:01] guidance, but the stock still rallies.
+[00:40:02] You're absolutely right. You know,
+[00:40:04] there's sometimes markets do weird
+[00:40:06] things. Um uh there's nothing you can do
+[00:40:10] about that. there's just nothing you can
+[00:40:12] do about that. Um, you can do all the
+[00:40:14] research in the world and be right and
+[00:40:16] sometimes markets just move in the
+[00:40:18] opposite direction. And that's just
+[00:40:20] unfortunately something we have to live
+[00:40:22] with as traders in the
+[00:40:31] market. You do not really forecast
+[00:40:34] earning size or direction. I'm not sure
+[00:40:36] what you mean because um you know the
+[00:40:39] expected move is the size of the
+[00:40:42] expected move and direction is based on
+[00:40:44] whether a stock is overvalued or
+[00:40:45] undervalued. Um so we are forecasting
+[00:40:57] both. What indicator is used to
+[00:41:00] determine relative strength? You're just
+[00:41:01] comparing the stock's returns versus the
+[00:41:04] S&P, right? So, the stock is up 10% and
+[00:41:07] the S&P is up 5%. Then you have an
+[00:41:09] outperformance of 5%. You're looking for
+[00:41:12] how much has the stock moved relative to
+[00:41:14] the S&P
+[00:41:16] 500. Um, does volatility weigh into your
+[00:41:19] research? Not for the earnings
+[00:41:20] navigator. Volatility goes into our
+[00:41:23] strike selection. um you know uh
+[00:41:26] everything with regards to the option
+[00:41:28] strategy selection but not in the
+[00:41:30] earnings navigator
+[00:41:42] um the straddle was you know Eva the the
+[00:41:45] the straddle for Qualcomm was only to
+[00:41:47] calculate expected move we're not using
+[00:41:49] the straddle to trade it um we're using
+[00:41:51] a call option to trade Qualcom
+[00:41:55] top. Um, you know, a 50 delta is usually
+[00:41:58] a a good a good uh starting point for
+[00:42:01] these types of trades. Who's trading
+[00:42:04] after hours? Um, anyone can trade after
+[00:42:07] hours. Most brokerage firms provide
+[00:42:09] after hours trading. You can trade after
+[00:42:11] hours. You just can't trade options
+[00:42:12] after hours. You can only trade stocks
+[00:42:14] after
+[00:42:20] hours. Um in Qualcomm the platform shows
+[00:42:24] uh that the that the that the trends are
+[00:42:27] bearish. Yeah. So you know a stock can
+[00:42:29] be bearish and have a and can be
+[00:42:32] undervalued, right? And actually if you
+[00:42:34] think about it um you know the most
+[00:42:36] undervalued stocks are the most bearish
+[00:42:38] stocks, right? Because how does
+[00:42:39] something get undervalued? It has to
+[00:42:41] sell off. It has to trade lower, right?
+[00:42:43] We all know the concept of buy low, sell
+[00:42:45] high. But how do you actually buy low,
+[00:42:48] sell high? You can only buy low and sell
+[00:42:50] high if you buy stocks that are in a
+[00:42:52] bearish trend. You can only sell high if
+[00:42:54] you on stocks that are in a bullish
+[00:42:56] trend. So, it is counterintuitive, but
+[00:42:58] that is I would say a lot of investing
+[00:43:01] and trading is a bit
+[00:43:02] counterintuitive. Um, you know, a lot of
+[00:43:04] times you think, oh, I should only buy
+[00:43:06] stocks that are already in a bullish
+[00:43:07] trend. But by definition, if a stock's
+[00:43:10] already in a bullish trend, then you're
+[00:43:11] sort of late to the game, right? You're
+[00:43:13] basically buying high and hoping the
+[00:43:14] stock goes higher instead of really
+[00:43:16] buying low, selling high. Um, so yeah,
+[00:43:20] it it it does it it sounds a little bit
+[00:43:23] a counter or sorry, it is
+[00:43:24] counterintuitive, but uh like I said, a
+[00:43:27] lot of investing is sort of
+[00:43:33] counterintuitive.
+[00:43:35] Um, how would you suggest a setup to a
+[00:43:38] trading structure for undervalued mild
+[00:43:41] mildly stock? Yeah, great question. So,
+[00:43:43] you know, for those mildly un mildly
+[00:43:46] undervalued stocks, you know, I think
+[00:43:48] probably something along the lines of a
+[00:43:50] a credit spread is probably a better
+[00:43:53] strategy for those types of stocks where
+[00:43:54] you're expecting the stock to make a
+[00:43:56] relatively small move or, you know, a a
+[00:43:59] debit spread that's kind of straddling
+[00:44:01] the current price of the stock uh is
+[00:44:03] another way that you can do it. So, for
+[00:44:04] example, if you look at Microsoft here,
+[00:44:07] um let me just adjust this to the May
+[00:44:08] expiration for a second. Um, you know,
+[00:44:11] if you look at something like, uh, you
+[00:44:13] know, where a debit spread where you're
+[00:44:15] doing an equal, um, let me, the stock's
+[00:44:18] at 390. So, let's say you do a
+[00:44:20] 385 395 um, debit spread. You know, you
+[00:44:25] know, this type of spread, you know,
+[00:44:26] that might be something that you might
+[00:44:28] want to use if it's more mildly uh,
+[00:44:31] undervalued as opposed to something
+[00:44:32] that's significantly
+[00:44:34] undervalued. Do you suggest roles for
+[00:44:36] additional profits? Absolutely. Um, if
+[00:44:38] you feel that especially on something
+[00:44:40] where you know something was
+[00:44:41] significantly undervalued and now the
+[00:44:43] stock has kind of come back to a more
+[00:44:46] fair valued and you think there's more
+[00:44:48] room to grow, that's really where you
+[00:44:50] could roll that and continue to look for
+[00:44:52] further
+[00:44:59] upside. Uh, yeah, last Friday was the
+[00:45:02] first time we sent out the earnings
+[00:45:03] navigator. So, the next one you're going
+[00:45:04] to get it again is on is this
+[00:45:09] Friday. Uh, yeah, the earnings navigator
+[00:45:12] right now is not on the platform. It is
+[00:45:14] only available by email to all of our
+[00:45:30] members. Um, yeah. And even in the email
+[00:45:33] that we sent you with the earnings
+[00:45:35] navigator, we suggest um you know an
+[00:45:38] option strategy for this uh for these
+[00:45:41] stocks. You know last week we suggested
+[00:45:43] you know shortdated you know out of the
+[00:45:45] money call option as a starting point
+[00:45:47] for a lot of these
+[00:45:51] stocks. If the expected move is 8% could
+[00:45:54] also go down by 8%. Yeah, that's exactly
+[00:45:56] what 8% expected move is is that it can
+[00:45:58] move 8% higher or 8% lower. Meaning 68%
+[00:46:01] of the time it's going to be within 8%
+[00:46:04] higher or 8% lower. That's what the
+[00:46:07] expected move is is meant to tell you.
+[00:46:10] Is your preference for call options for
+[00:46:12] Qualcomm May 9th or May 16th? Um yeah, I
+[00:46:15] would say either one is okay.
+[00:46:18] Um really is more of a personal
+[00:46:20] preference. I would, you know, I
+[00:46:22] probably would do the May 16th because
+[00:46:24] those are the monthly options. Those are
+[00:46:26] just generally speaking. Um I I sorry I
+[00:46:29] take that back. You know, a lot of times
+[00:46:31] the weekly options have dollar strikes
+[00:46:32] and the monthly options have two and a
+[00:46:34] half dollar strikes or $5 strikes,
+[00:46:36] right? So a lot of times I do prefer
+[00:46:38] trading the weekly options because you
+[00:46:39] just have more choices in terms of
+[00:46:41] strike
+[00:46:45] prices. So just to be clear, the
+[00:46:47] earnings navigator does not have a view
+[00:46:48] on every earnings. It only h what it
+[00:46:51] only does is identifies when stocks meet
+[00:46:53] have all three criterias that I laid out
+[00:46:56] during the of the session. You know,
+[00:46:59] only if a stock meets all three
+[00:47:00] criterias, does it make it onto the
+[00:47:02] earnings navigator. If something is, you
+[00:47:04] know, has absolute strength but doesn't
+[00:47:06] have relative strength and, you know,
+[00:47:08] isn't uh you know, isn't significantly
+[00:47:10] overvalued or undervalued, it's just not
+[00:47:12] in our report and from my perspective is
+[00:47:15] not worth trading. Um, so I would say
+[00:47:17] the vast majority of the stocks the
+[00:47:19] earnings navigator doesn't have a view
+[00:47:20] on. It's only the stocks where all three
+[00:47:23] things are aligned does it tell you um
+[00:47:25] doesn't make it onto the earnings
+[00:47:28] navigator. Um, okay. Uh, unfortunately
+[00:47:31] that's all the time that I have to
+[00:47:32] answer questions. I hope that that this
+[00:47:35] session really helps you better
+[00:47:36] understand what the earnings navigator
+[00:47:39] is and I hope that you guys see value in
+[00:47:41] it. And please let us know if there are
+[00:47:43] any questions that you have further on
+[00:47:45] this tool because we're very excited
+[00:47:47] about it. You know, I have been trading
+[00:47:48] these types of strategies for years and
+[00:47:50] years and years. But I've been searching
+[00:47:51] for these strategies manually. So, I'm
+[00:47:54] really excited that I now have an
+[00:47:55] automated process using AI to be able to
+[00:47:58] identify these top performing
+[00:48:00] opportunities for earning season. And
+[00:48:02] I'm for one very excited to be trading
+[00:48:04] some of these. Um, and I'm glad that you
+[00:48:06] guys now have access to all of them as
+[00:48:08] well here at members here at
+[00:48:10] optionsplay.com. And I just want to
+[00:48:12] again thank you for those of you that
+[00:48:13] are members and supporting us and
+[00:48:15] allowing us to continue to do this day
+[00:48:17] in and day out. Um, with that, thank you
+[00:48:19] so much. I hope you guys have a great
+[00:48:21] trading day and I'll see you guys here
+[00:48:23] next

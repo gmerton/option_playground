@@ -97,6 +97,11 @@ high-probability trend following) · yLQt8UZNS8Q (2026-07-18, the few earnings s
 uT_CZY7SdSE (2026-02-08, protect investments at zero cost, i.e. collars) · d7iqTz7m9es (2021-09-14, 7 min, "Index
 Options Strategies Backtested") · NrIvJ0F4i6M (2021-01-28, selling straddles and strangles).
 
+## Status (2026-09-24, later)
+✅ Tiers 4 and 5 reviewed (10 videos, 1.5–2.5/5; scores in `../README.md`). Remaining: Tier 2 (Sosnoff on OptionsPlay,
+low marginal value — the doctrine is covered by More Tom + tastylive) and Tier 3 (0DTE, not priceable on EOD v3;
+7t2EROvIVSg is the only one claiming a backtest).
+
 ## Suggested review order
 1. Tier 1 as one batch of 11 (one KB, one ledger cross-check). It answers the stock-selection question directly.
 2. Then the 3 most recent Sosnoff sessions from Tier 2.

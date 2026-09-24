@@ -1,0 +1,170 @@
+[00:00:00] Welcome to OptionsPlay.
+[00:00:02] In this video, I'm going to share with
+[00:00:03] you a massive backtest that we just
+[00:00:06] completed on the Nasdaq 100 and the S&P
+[00:00:09] 500 for technical indicators and options
+[00:00:13] strategies.
+[00:00:14] I want to share with you the best
+[00:00:16] technical indicators to use when trading
+[00:00:18] indices that have been backed by 21
+[00:00:21] years of data and how to structure
+[00:00:23] optimized options strategies based on
+[00:00:25] the last 7 years of data. Let's get
+[00:00:28] started.
+[00:00:37] To start, we're going to explore the
+[00:00:39] technical analysis backtest and the
+[00:00:41] indicators first. But before we dive
+[00:00:43] into the data, I want to show you how we
+[00:00:45] set up the backtest. We started this
+[00:00:47] project by calculating a benchmark
+[00:00:49] first. We randomly selected a thousand
+[00:00:52] different dates from the past 21 years
+[00:00:55] and calculated the win rate and average
+[00:00:57] return of the equity market over 7, 14,
+[00:01:00] 21, 30, and 45-day periods. This
+[00:01:04] benchmark allows us to see if the
+[00:01:06] indicators that we test can beat the
+[00:01:08] market. Remember, it's not good enough
+[00:01:10] that an indicator wins more than just
+[00:01:12] 50% of the time because over a 30-day
+[00:01:14] period, the Nasdaq 100 averaged a return
+[00:01:18] of 106 basis points and was up 63.8%
+[00:01:22] of the time. And the S&P 500 returned 74
+[00:01:25] basis points and was up 65% of the time.
+[00:01:28] Using this data, we were able to test
+[00:01:30] buy signals on technical indicators and
+[00:01:32] calculate how well that each performed.
+[00:01:35] Our backtesting offered six very
+[00:01:37] interesting insights on both the Nasdaq
+[00:01:39] 100 and the S&P 500. The first
+[00:01:42] observation that we made that jumped out
+[00:01:44] to me was the absolute return.
+[00:01:47] Using the same indicators, the Nasdaq
+[00:01:49] 100 outperformed the S&P 500 by 15 basis
+[00:01:54] points.
+[00:01:55] Moreover, the outperformance on NDX was
+[00:01:57] greater than SPX over their benchmarks.
+[00:02:00] In our testing, trades with holding
+[00:02:02] periods of 30 and 21 days had the
+[00:02:05] highest outperformance over the
+[00:02:06] benchmark using technical indicators.
+[00:02:09] RSI crossing the 30 oversold threshold
+[00:02:13] was by far the best performing indicator
+[00:02:15] for both the Nasdaq and the S&P.
+[00:02:18] However, it was a very rare signal, but
+[00:02:20] it did produce returns that typically
+[00:02:22] were more than double the benchmark.
+[00:02:25] Now, I often receive the question
+[00:02:26] regarding which moving average is best.
+[00:02:29] While the best moving average is always
+[00:02:31] going to depend on your holding period,
+[00:02:34] we did find that exponential moving
+[00:02:36] averages performed better for indices
+[00:02:39] over simple moving averages. We also
+[00:02:41] found that longer EMAs, 100- and
+[00:02:44] 200-days, also performed better than
+[00:02:46] shorter period EMAs, even over a shorter
+[00:02:49] holding period. This is likely due to
+[00:02:52] the number of publications and
+[00:02:53] investment managers that track these
+[00:02:55] important moving averages and use them
+[00:02:57] to time entry signals. But most
+[00:03:00] importantly, our observations saw that
+[00:03:02] despite strong win rates and substantial
+[00:03:05] returns, even the best indicators had a
+[00:03:08] surprisingly high number of consecutive
+[00:03:11] false signals. And this simply further
+[00:03:13] emphasizes the importance of risk
+[00:03:16] management when using a technical
+[00:03:18] strategy.
+[00:03:20] Armed with this data, which showed us
+[00:03:21] that using technical analysis can be
+[00:03:23] used to outperform the market, we then
+[00:03:26] tested popular option strategies using
+[00:03:28] various expiration dates and strike
+[00:03:30] prices to determine the optimal
+[00:03:33] strategies to trade index options on the
+[00:03:35] Nasdaq 100 and the S&P 500.
+[00:03:39] We ran a total of 210 backtests on both
+[00:03:42] the NDX and SPX over the past 7 years of
+[00:03:45] historical data. And we tested four
+[00:03:48] popular option strategies: long calls,
+[00:03:51] short puts, long debit vertical spreads,
+[00:03:54] and short credit vertical spreads to
+[00:03:56] find the performance and optimal
+[00:03:58] settings for each one. We found some
+[00:04:01] very insightful metrics for options
+[00:04:03] traders to be familiar with when
+[00:04:04] selecting an optimal option strategy.
+[00:04:07] Buying an out-of-the-money call option
+[00:04:10] provided the highest absolute return, a
+[00:04:12] very popular strategy. However, it also
+[00:04:15] had the highest volatility and risk.
+[00:04:18] 60 to 65%
+[00:04:20] of these trades actually ended in a
+[00:04:22] loss, where just a few {quote} {unquote}
+[00:04:25] home runs turned these strategies
+[00:04:27] profitable.
+[00:04:28] So, it's important to understand that
+[00:04:30] these strategies suffered through a long
+[00:04:32] losing streak of 27 consecutive losing
+[00:04:36] trades. That's tough to come back from.
+[00:04:39] Versus buying in-the-money call options,
+[00:04:41] on the other hand, had slightly lower
+[00:04:43] absolute return. However, it had 62%
+[00:04:47] winners, and the highest win streak had
+[00:04:49] 17 consecutive winning trades with only
+[00:04:52] eight consecutive losing trades. To
+[00:04:55] combine the best of both worlds, buying
+[00:04:57] a debit vertical spread provided
+[00:04:59] absolute returns that were almost as
+[00:05:01] high as buying out-of-the-money calls
+[00:05:04] with far smaller risk and about a 60%
+[00:05:07] win rate. This really shows you how
+[00:05:09] vertical spreads help combine the best
+[00:05:11] of both worlds with returns similar to
+[00:05:14] buying out-of-the-money calls, but
+[00:05:16] having win rates and risks that are
+[00:05:18] closer to buying in-the-money calls.
+[00:05:21] Short puts had by far the highest win
+[00:05:23] rate, 80 to 81% of trades. However, this
+[00:05:27] is also the strategy that had the lowest
+[00:05:29] absolute return and suffered through
+[00:05:31] some of the largest drawdown despite
+[00:05:33] generating a very consistent and stable
+[00:05:36] income stream.
+[00:05:37] Selling a put credit vertical spread was
+[00:05:40] able to improve on short puts with
+[00:05:42] higher returns and lower drawdowns,
+[00:05:45] while only reducing the win rate from
+[00:05:47] about 80% to 77%
+[00:05:50] Moreover, short put credit spreads on
+[00:05:53] indices suffered through the smallest
+[00:05:55] losing streak of any strategy with only
+[00:05:57] four losing trades in a row. So, to
+[00:06:00] summarize, spreads were able to maximize
+[00:06:03] the benefits of buying calls and selling
+[00:06:05] puts while minimizing the risks and
+[00:06:08] trade-offs of each strategy. Trading
+[00:06:10] technical and option strategies may
+[00:06:12] sometimes feel like there's an almost
+[00:06:14] infinite set of possibilities. So, I
+[00:06:16] hope that this information is helpful to
+[00:06:18] help point you in the right direction.
+[00:06:21] If you're interested in the full
+[00:06:22] backtesting report or recording of the
+[00:06:25] full webinar that I've hosted on this
+[00:06:27] topic, I'll leave the links in the
+[00:06:29] section below.
+[00:06:30] If you enjoyed this, please subscribe to
+[00:06:32] our channel and like this video. It
+[00:06:34] really helps us. And don't forget to hit
+[00:06:37] the notification bell so that you'll
+[00:06:38] receive a reminder the next time I
+[00:06:40] upload a video in this series. And
+[00:06:43] please, let us know how your experience
+[00:06:45] with trading using technical strategies,
+[00:06:47] which indicators work best for you, and
+[00:06:49] what option strategies you've had the
+[00:06:51] most success with. With that, thank you
+[00:06:54] so much and have a great trading day.

@@ -1,0 +1,796 @@
+[00:00:00] Okay, good afternoon and welcome back
+[00:00:02] everyone to our Options Play Growth Lab
+[00:00:05] series. My name is Tony Zang. I'm the
+[00:00:07] chief strategist here at OptionsPlay.
+[00:00:10] And today we're going to be talking
+[00:00:12] about a topic that I think is going to
+[00:00:14] be fairly relevant for a lot of traders
+[00:00:17] in the current market condition that we
+[00:00:19] are in, which is how to protect your
+[00:00:22] portfolio for zero cost.
+[00:00:25] Um,
+[00:00:27] we have
+[00:00:29] gold and silver crashing again today.
+[00:00:32] You have Bitcoin near 52- week lows. You
+[00:00:36] have the tech stocks, specifically the
+[00:00:39] software stocks, selling off across the
+[00:00:42] board. Um, there certainly are a lot of
+[00:00:45] cracks starting to show. On top of the
+[00:00:47] fact that you have interest rates
+[00:00:49] hovering above 4.2%, 2% covering around
+[00:00:52] 4.3%
+[00:00:54] and uh you know we're on we're we're
+[00:00:57] looking at um employment number data
+[00:01:00] coming out tomorrow morning that could
+[00:01:02] potentially be a a big mover here of the
+[00:01:05] markets. So a lot of concern uh to say
+[00:01:12] it lightly that we see here in the
+[00:01:13] markets overall. Um you know long-term
+[00:01:17] structurally speaking
+[00:01:20] uh it it's um I would say that you know
+[00:01:24] things still look fairly constructive if
+[00:01:26] you look at the uh the earnings that
+[00:01:29] we're seeing here across the board. But
+[00:01:32] uh shortterm there certainly is a lot of
+[00:01:35] volatility and some concern. So I want
+[00:01:37] to talk about a single strategy that can
+[00:01:39] help you protect your portfolio for zero
+[00:01:42] cost um in this market condition that
+[00:01:45] we're in. Now, these Thursday Growth Lab
+[00:01:48] series are designed to empower you to
+[00:01:50] trade sustainably and confidently by
+[00:01:53] ensuring that we go through best
+[00:01:55] practices for various strategies um
+[00:01:58] various trading um techniques that can
+[00:02:01] help you grow your account sustainably
+[00:02:04] for the long run. Now, before we get
+[00:02:06] started, what we are going to discuss
+[00:02:08] here today is purely for education and
+[00:02:10] demonstration purposes. It is not a
+[00:02:12] solicitation or recommendation to buy or
+[00:02:15] sell any of the specific securities that
+[00:02:18] I'll be using as example purposes during
+[00:02:21] today's session. My goal is to show you
+[00:02:24] how to protect your positions uh your
+[00:02:26] equity positions and potentially your
+[00:02:28] portfolio as well from the mark from a
+[00:02:31] market downturn. And specifically, I
+[00:02:34] want to do it uh show you how you do it
+[00:02:36] at zero cost or near zero cost. So, um,
+[00:02:42] what we're going to go over today is
+[00:02:44] help you understand, whoops, help you
+[00:02:46] understand what a protective collar is,
+[00:02:49] how it works, and how it protects your
+[00:02:52] positions against a downturn. And then
+[00:02:54] we'll talk about the best practices for
+[00:02:56] trade entry and exit rules for this
+[00:03:00] specific strategy. All right. So, what
+[00:03:02] we're going to talk about here today is
+[00:03:04] um a protective collar strategy. And in
+[00:03:08] the protective collar strategy, it's
+[00:03:10] it's
+[00:03:12] it may sound like a complicated
+[00:03:15] strategy, but it's actually quite
+[00:03:17] simple. So, I'm going to break it down
+[00:03:18] into its individual components to help
+[00:03:20] you better understand it. So,
+[00:03:24] essentially what we're doing is we're
+[00:03:25] taking an equity position that you own.
+[00:03:28] So, a stock or ETF that you own in your
+[00:03:30] portfolio. And what we're going to do is
+[00:03:32] we're going to trade options on top of
+[00:03:35] or overlay option strategies on top of
+[00:03:38] your equity position. That's going to
+[00:03:41] help you limit your downside
+[00:03:43] uh on that specific security. And we're
+[00:03:46] going to achieve this by trading two
+[00:03:49] separate legs. We're going to sell
+[00:03:51] essentially what is a cover call and
+[00:03:54] then use the premium of that cover call
+[00:03:56] to buy a downside put. Um, and the goal
+[00:03:59] here is to try to do that at essentially
+[00:04:02] zero cost so that you are you get the
+[00:04:05] downside protection without having to
+[00:04:07] pay 2 3% of the stocks uh stock's value
+[00:04:12] to get that downside protection. So the
+[00:04:16] when you break it down a collar strategy
+[00:04:18] into its two components, the first one
+[00:04:20] is selling an upside call. So you're
+[00:04:23] essentially selling a cover call against
+[00:04:25] the stock position that you own. And the
+[00:04:28] general rule of thumb that we have with
+[00:04:30] selling that cover call um is going to
+[00:04:33] be different than if you were just to
+[00:04:35] sell if you were generally selling a
+[00:04:37] cover call for income. Because when
+[00:04:39] you're selling a cover call for income,
+[00:04:41] your primary goal is capital
+[00:04:44] appreciation. Uh you own the stock
+[00:04:48] because you believe the stock's going to
+[00:04:49] rise in value. And the rules for selling
+[00:04:53] cover calls is optimized to uh to
+[00:04:58] maximize the capital appreciation of
+[00:05:01] that specific stock, not the income
+[00:05:03] part. But when you are more concerned
+[00:05:07] about a downturn, uh upside is
+[00:05:11] potentially less of a concern. Meaning
+[00:05:13] you're more concerned about what if the
+[00:05:15] stock were to drop 10%. Think about
+[00:05:18] Microsoft uh you know on earnings,
+[00:05:22] right? The stock dropped 6% the sixth
+[00:05:23] day and the first day, four four 5% the
+[00:05:27] second day and just continue moving
+[00:05:29] lower from there. Um, you know, this is
+[00:05:31] the type of position that you would use
+[00:05:33] if you were concerned about that kind of
+[00:05:35] downturn in your stock, especially with
+[00:05:39] earning seasons coming up and you're
+[00:05:41] concerned that earnings could be a
+[00:05:42] catalyst that drives the stock lower in
+[00:05:45] the short run, but you believe in the
+[00:05:47] stock in the long run. So, when you are
+[00:05:50] in that specific scenario, the cover
+[00:05:54] call that you would sell, you would want
+[00:05:56] to adjust. Essentially, what you're
+[00:05:58] doing is you're adjusting to a more
+[00:06:00] aggressive cover call. Normally, we sell
+[00:06:03] about a 10 to 15 delta cover call. Here,
+[00:06:06] we're going to be selling a much more
+[00:06:07] aggressive 30-day, 30 delta cover call.
+[00:06:12] Um,
+[00:06:13] and for those of you that are not
+[00:06:15] familiar, a 30 delta refers to a strike
+[00:06:19] price that has about a 30% chance that
+[00:06:22] the stock will be above that strike
+[00:06:24] price on that expiration date. And when
+[00:06:28] you sell a cover call, you are going to
+[00:06:31] collect income in exchange for uh
+[00:06:35] essentially capping the upside potential
+[00:06:38] of your stock. Because if you own a
+[00:06:40] stock and you don't sell a cover call,
+[00:06:42] you have unlimited potential. As long as
+[00:06:45] the stock keeps going higher and higher
+[00:06:47] and higher, you'll keep making more and
+[00:06:49] more profit on that particular trade.
+[00:06:51] But once you sell a cover call, you
+[00:06:54] essentially cap the upside potential at
+[00:06:57] the strike price that you've chosen. And
+[00:07:00] this is the 30 delta that we would use
+[00:07:03] for selling that cover call, the upper
+[00:07:05] strike price on that cover call. And
+[00:07:08] what we're going to do is we're going to
+[00:07:09] take the premium that we just collected
+[00:07:11] on selling that cover call and now we're
+[00:07:14] going to buy a downside put. Um, and by
+[00:07:18] di buying a downside put, it essentially
+[00:07:21] does the opposite of what a cover call
+[00:07:23] does is in it protects you from uh
+[00:07:27] substantial downside uh risk. So, if you
+[00:07:31] were to just own the stock, you have
+[00:07:33] substantial downside risk. If the stock
+[00:07:35] keeps going down and down and down, you
+[00:07:37] would lose more and more money until it
+[00:07:38] gets to zero. Uh and what we're trying
+[00:07:41] to do is prevent that specific scenario
+[00:07:43] by buying a put option that allows us to
+[00:07:46] hedge our risk if the stock goes below a
+[00:07:49] certain strike uh the put strike. Now
+[00:07:53] how do you put pick your put strikes?
+[00:07:55] What you essentially do is you look at
+[00:07:57] how much premium have you collected from
+[00:07:59] your call option and you take that and
+[00:08:02] you look at what kind of put option can
+[00:08:04] you buy for roughly the same premium
+[00:08:07] that you've collected on selling that
+[00:08:10] call. And when those two are relatively
+[00:08:12] matched together, you have what we call
+[00:08:15] a zerocost collar. And a zerocost collar
+[00:08:20] essentially gives you this payoff
+[00:08:22] diagram that looks very similar to a
+[00:08:25] vertical spread. Uh because it actually
+[00:08:27] is the same payoff diagram or the same
+[00:08:30] synthetically the same as a vertical
+[00:08:32] spread. And what it does is it limits
+[00:08:36] your risk while at the same time limits
+[00:08:38] your upside. But it gives you that
+[00:08:40] downside protection without any cost to
+[00:08:44] you. Unlike if you were just to outright
+[00:08:46] buy a put or a put spread, it might cost
+[00:08:48] you one, two, 3% of the stock's value to
+[00:08:51] get 30 days worth of protection. Here
+[00:08:54] you essentially get similar, if not
+[00:08:56] identical protection, but for zero cost
+[00:08:59] because you've essentially limited the
+[00:09:01] upside potential um in this particular
+[00:09:05] scenario. Does that make sense?
+[00:09:06] Everyone, please type one into the chat
+[00:09:08] window if this strategy starts to make
+[00:09:11] sense for you. And if it doesn't, that's
+[00:09:13] okay. We're going to go through some
+[00:09:15] examples, some real examples to help you
+[00:09:17] better understand. Okay, so the first
+[00:09:20] example I'm going to give you is Amazon.
+[00:09:22] Um,
+[00:09:24] now when I put this together, the stock,
+[00:09:26] you know, the stock's down another 3%
+[00:09:28] here today. Um, but you know,
+[00:09:30] regardless, this is a good example of a
+[00:09:33] stock that you might own in your
+[00:09:35] portfolio. reporting earnings this
+[00:09:37] afternoon and maybe you are concerned
+[00:09:40] about some downside risks similar to
+[00:09:43] what we've seen in Microsoft. So the
+[00:09:46] goal I'll walk you through this and then
+[00:09:49] I'll walk you through some some more
+[00:09:50] examples here. Um so we're going to go
+[00:09:52] out to the March 6th expiration which is
+[00:09:55] roughly 30 days from expiration. Now,
+[00:09:58] you can choose different expirations
+[00:10:00] based on your needs in terms of how much
+[00:10:02] protection
+[00:10:04] um you need, but I think 30 days is
+[00:10:07] always a good starting point for most
+[00:10:09] traders. um especially if you have a
+[00:10:12] catalyst coming up um
+[00:10:16] you know and even if your time horizon
+[00:10:18] is longer than 30 days I think starting
+[00:10:21] out at 30 days and then potentially
+[00:10:23] rolling it or or or after after some
+[00:10:26] time buying more protection at a
+[00:10:28] longerdated option um you can keep doing
+[00:10:32] that over and over again rather than
+[00:10:35] buying a 60 or 90day collar even if you
+[00:10:38] might be looking for protection ction,
+[00:10:40] let's say over the next quarter or so.
+[00:10:42] But in Amazon's example at the time when
+[00:10:45] the stock was trading at around 233 or
+[00:10:47] so, we were looking at selling that
+[00:10:49] March 650 call. And the reason I'm
+[00:10:52] selling that 250 call is because that is
+[00:10:54] the 30 delta at the time of writing
+[00:10:58] this. So when the stock is around 233,
+[00:11:01] selling the 250 call option collected
+[00:11:04] $6.28.
+[00:11:07] Now 250
+[00:11:09] uh when the stock's trading at 233
+[00:11:12] essentially means that you still have in
+[00:11:14] this particular case another $17 in
+[00:11:17] upside for the stock. So if the stock
+[00:11:20] does pop on earnings um so for example
+[00:11:24] as you can see in this chart here when
+[00:11:25] it was trading at 232 um 250 is all the
+[00:11:29] way up here. It's essentially near the
+[00:11:31] all-time highs. So, if it basically gets
+[00:11:33] up at back to the all-time highs, you'll
+[00:11:37] still participate in upside. The only
+[00:11:40] thing is that if, let's say, they really
+[00:11:41] blow out earnings and the stocks at 260
+[00:11:44] or 270, anything beyond 250, you're not
+[00:11:47] going to be able to capture.
+[00:11:51] And then what we do is we take the
+[00:11:53] premium that we've collected, $6.28, 28.
+[00:11:55] And what we do is we go down the options
+[00:11:58] chain on the put side and we look at
+[00:12:00] what strike price is going to be closest
+[00:12:04] to $6.28
+[00:12:06] in premium. And when I looked at that
+[00:12:09] earlier today, it was around $2
+[00:12:13] $215
+[00:12:14] would be the strike price um that uh I
+[00:12:17] could buy for roughly $5.5. So, just to
+[00:12:22] um uh just to kind of show you those two
+[00:12:25] prices on the chart here, what we're
+[00:12:26] doing is we're limiting our upside
+[00:12:28] beyond this and we're at the same time
+[00:12:31] protecting our downside below that
+[00:12:34] support level 215 or so. And as you can
+[00:12:38] see, I'm collecting a net credit of 75,
+[00:12:41] which is, you know, virtually zero for a
+[00:12:45] $233
+[00:12:46] stock. Um, but it is it is a little bit
+[00:12:49] of income, right? You're collecting 75
+[00:12:52] cents here on a $233 stock. It's not
+[00:12:55] nothing, but it's a pretty small
+[00:12:57] percentage of your of your of your
+[00:13:00] holdings. Um, and but but that's the
+[00:13:04] goal is to be able to afford some level
+[00:13:07] of protection for you um
+[00:13:11] for essentially zero cost or in this
+[00:13:13] particular case a small income stream
+[00:13:16] that you're going to collect. Um, and as
+[00:13:18] you can see that that that P&L graph
+[00:13:21] here um essentially looks identical to a
+[00:13:25] vertical spread. If you were to sell, if
+[00:13:27] you were to trade a 215 250 vertical
+[00:13:30] spread on Amazon, uh your risk profile
+[00:13:33] would look uh nearly identical here in
+[00:13:36] terms of what we're seeing here. So, you
+[00:13:38] still have for every 100 shares, you
+[00:13:40] know, roughly $16,700
+[00:13:42] in upside and then you're protected from
+[00:13:45] downside beyond $1,800. So, even if the
+[00:13:48] stock were to drop 20% on earnings, um
+[00:13:51] that's when uh that's when you'll be
+[00:13:54] able to um get some downside protection.
+[00:13:58] Now, does that make sense everyone?
+[00:14:00] Please type two into the chat window if
+[00:14:02] that makes sense to you.
+[00:14:05] Now, I see a comment here saying that
+[00:14:07] options prices are quite different from
+[00:14:09] the slide. You're right. You know, these
+[00:14:11] slides were put together last night. So,
+[00:14:12] let's just take a look at where we are
+[00:14:15] today, right? So the stock's down, as
+[00:14:17] you can see, another 8 n bucks today. So
+[00:14:20] let's just take a look at structuring
+[00:14:22] this in real time using the current
+[00:14:25] market prices. And I'll show you how to
+[00:14:27] do it. We'll go through a few examples
+[00:14:28] here. Um, so we'll use Amazon just
+[00:14:31] because it's reporting after after the
+[00:14:33] close today. Many of you may hold this
+[00:14:35] stock in your portfolio and maybe you're
+[00:14:38] concerned that the overall tech industry
+[00:14:41] is starting to show some weakness here,
+[00:14:43] especially stocks related to AI and
+[00:14:48] and and you're concerned about some
+[00:14:49] downside, but maybe you've owned a stock
+[00:14:52] at a low cost basis. If you were to sell
+[00:14:55] the stock, you would have a tax bill. um
+[00:14:59] you know and this isn't the case for
+[00:15:02] Amazon but maybe there are other stocks
+[00:15:03] that you own where you rely on the
+[00:15:06] dividend so you don't want to sell the
+[00:15:07] stock and lose the dividend. So there
+[00:15:09] are various reasons that you might want
+[00:15:11] to
+[00:15:13] hedge a position and not sell the
+[00:15:16] position if you are concerned about some
+[00:15:19] downside and this is really where you
+[00:15:21] can use that collar. So here's what I'm
+[00:15:23] going to do. I'm going to go to modify
+[00:15:25] for the stock position here. I'm going
+[00:15:27] to add a call and I'm going to add a
+[00:15:29] put. What we're going to do is we're
+[00:15:31] going to sell that call option and we're
+[00:15:33] going to change the expiration to the
+[00:15:35] March 6 one because that's roughly 30
+[00:15:38] days from expiration. You know, if you
+[00:15:40] want to use a if you want to use the
+[00:15:43] March monthly ones, you can. If for
+[00:15:45] those of you that prefer to trade the
+[00:15:46] monthlys, that's about 43 days out to
+[00:15:48] go. Um, but let's just say for example
+[00:15:51] with something like Amazon, the weeklies
+[00:15:53] are very um very liquid. So I wouldn't
+[00:15:56] mind using the weekly options and
+[00:15:59] getting exactly what I want. So what I'm
+[00:16:01] going to do is I'm going to look at
+[00:16:03] selling a strike price for the call
+[00:16:05] option that's closest to 30 deltas. So
+[00:16:07] as you can see in your strike strike
+[00:16:10] price dropdown, you have your strike
+[00:16:12] price, you have your premium, and you
+[00:16:14] have your deltas. So, the closest one,
+[00:16:17] as you can see, to 30 deltas is the 245,
+[00:16:20] which is around $4.95,
+[00:16:23] which is a 29 delta. So, let's take a
+[00:16:25] look at that. As you can see, you're
+[00:16:27] collecting just around $5 for that March
+[00:16:31] 245 call. And then what we're going to
+[00:16:34] do is we're going to go down the put
+[00:16:36] strike chain until we find the strike
+[00:16:38] price that's closest to uh roughly $5 in
+[00:16:43] premium. And that's going to be the 205.
+[00:16:45] That's $4.80.
+[00:16:48] So, as you can see, that's how I'm going
+[00:16:50] to be able to put on essentially what is
+[00:16:52] a zero cost collar for uh Amazon given
+[00:16:56] the current prices. So, the stock's
+[00:16:58] currently trading around 220, call it
+[00:17:00] 225. If I sold the 245 calls, that's
+[00:17:04] giving me another 20 bucks in upside.
+[00:17:07] Basically, still getting me back up to
+[00:17:09] the uh top of the range that it's been
+[00:17:12] trading at for the last few months. And
+[00:17:15] then at the same time it's going to
+[00:17:17] protect me if the stock goes below 205.
+[00:17:21] 205 is all the way down here. It would
+[00:17:23] essentially have to break below this
+[00:17:26] recent range and even further um you
+[00:17:30] know so we're really trying to protect
+[00:17:32] ourselves from more of a catastrophic
+[00:17:34] uh you know selloff here in this
+[00:17:36] particular stock by essentially trading
+[00:17:39] this type of strategy which is
+[00:17:41] essentially zero cost. And you know, if
+[00:17:43] I take away the security leg for one
+[00:17:45] second, you know, this is the actual
+[00:17:48] options trade that you'll be making. Um,
+[00:17:50] you're buying the 205 puts, selling the
+[00:17:53] 245 uh calls, and you're essentially
+[00:17:57] collecting 28 cents in a net credit on
+[00:18:02] this particular trade. Um,
+[00:18:05] and if I add back the stock leg, you
+[00:18:07] know, that's kind of what you're what
+[00:18:09] you're looking at. And just to kind of
+[00:18:11] show you just, you know, if you were to
+[00:18:12] trade a March 6th 205 245
+[00:18:18] uh call vertical here, um you know,
+[00:18:21] these two uh these two positions, the
+[00:18:25] one on the left and the one on the right
+[00:18:27] are virtually identical because of of
+[00:18:30] put call par. You'll be able to do this
+[00:18:33] um you'll be able to do this uh the same
+[00:18:36] way, you know. So, for example, let's
+[00:18:39] say you don't own the stock and you just
+[00:18:40] want a payoff diagram that's very
+[00:18:42] similar to what we're doing here. You
+[00:18:44] could just trade the call vertical and
+[00:18:47] skip yourself needing to buy a 100
+[00:18:49] shares of the stock and then sell the
+[00:18:51] cover call and buy the put option. Okay,
+[00:18:54] does that make sense everyone? Please
+[00:18:55] type three into the chat window if that
+[00:18:57] makes sense to you. We'll look at a few
+[00:18:59] more examples here. Um and and there is
+[00:19:02] one question that I think is is is a
+[00:19:04] very good question which is you know do
+[00:19:06] you basically sell one contract and buy
+[00:19:09] one contract for every 100 shares you
+[00:19:12] own and that is correct. So for example
+[00:19:14] let's say you own 300 shares of Amazon.
+[00:19:17] What you would want to do is you would
+[00:19:18] want to sell up to three contracts and
+[00:19:21] buy up to three contracts of a put. Now
+[00:19:24] here's the thing. You don't have to
+[00:19:26] let's say you own 300 shares of the
+[00:19:28] stock. You don't have to hedge the whole
+[00:19:29] position. You could hedge a part part of
+[00:19:31] it, part of it. So, you could say,
+[00:19:33] "Okay, I own 300 shares. Um, but I'm but
+[00:19:36] I only need to hedge 200 shares of
+[00:19:38] that." Uh, so you can you can choose
+[00:19:41] what works for you in terms of a hedge.
+[00:19:44] But, you know, if you own 300 shares,
+[00:19:47] you can hedge up to 300 shares, but you
+[00:19:49] can always hedge a smaller amount than
+[00:19:52] that. Um, so,
+[00:19:55] um, great question. So, let's look at a
+[00:19:57] few more examples here. Um, uh, Nvidia
+[00:20:00] is probably one that I think is worth
+[00:20:02] paying attention to right now. Um,
+[00:20:04] whoops, not the right one.
+[00:20:10] So, Nvidia has been pushing this sort of
+[00:20:13] uh the trading range, right? It's failed
+[00:20:15] to break out above the the upper bound
+[00:20:17] of that range and it's been hovering
+[00:20:19] kind of near the bottom end of this
+[00:20:20] range around 175 or so. Um, Nvidia
+[00:20:24] reports earnings here in a couple of
+[00:20:27] weeks. It might be a little bit early to
+[00:20:29] put this on, but maybe there's uh, you
+[00:20:32] know, we see some contagion across the
+[00:20:34] the sector and we see, you know, a stock
+[00:20:36] like this start to start to break down
+[00:20:38] here. So, let's take a look at um,
+[00:20:41] adding a upside call and a downside put.
+[00:20:45] So, when we're selling the call option
+[00:20:47] again, we're looking Oh, let me change
+[00:20:49] the expiration date to the March 6th
+[00:20:52] one. So for something like Nvidia that's
+[00:20:54] very liquid um I would use the weekly
+[00:20:57] one. Um uh but you you know if you feel
+[00:21:00] more comfortable using the monthly one
+[00:21:02] you certainly can. Uh so as you can see
+[00:21:05] what I'm looking for is the 30 delta
+[00:21:07] strike price which in this particular
+[00:21:09] case is the 190 strike price. Uh 190 has
+[00:21:12] a delta of 30 cents. Uh a 30 delta
+[00:21:15] that's going to collect in this case
+[00:21:17] about $4. Call it $4.40 40s uh for
+[00:21:21] selling that 190 call. And 190 is all
+[00:21:24] the way up here. Essentially gets us
+[00:21:26] back to the upper bound of the range.
+[00:21:28] And when the stock gets back above the
+[00:21:30] upper bound of the range, I do not
+[00:21:32] participate in any upside beyond 190 if
+[00:21:36] I were to sell that 190 call. And then
+[00:21:39] what I'm going to do is I'm going to go
+[00:21:40] down the options chain until I find the
+[00:21:43] put strike that has roughly the same
+[00:21:46] premium, $4.40 40 cents um on the put
+[00:21:50] side. So, as you can see, that's going
+[00:21:51] to be the 160. And if I do the 160, I'm
+[00:21:54] collecting 440 on the 190s, paying $425
+[00:21:58] on the 160s. So, my net credit on this
+[00:22:00] is essentially 15, which is virtually
+[00:22:03] nothing um on a $175 stock. So that's
+[00:22:08] how I'm able to achieve this downside
+[00:22:11] protection for zero cost by selling that
+[00:22:15] upside call and matching the premiums.
+[00:22:18] So when the stock's trading at 175,
+[00:22:21] selling that 190 call gives me $15 in
+[00:22:25] upside and then buying the 160 calls
+[00:22:28] gives me $15 more in downside. and and
+[00:22:31] if it goes beyond that $15, I'm
+[00:22:34] essentially hedged in my position from
+[00:22:37] further downside. Um let's go through
+[00:22:40] one more example just to make this
+[00:22:43] crystal clear. Um let's look at let's
+[00:22:46] say Apple.
+[00:22:50] Apple's trading um
+[00:22:53] at pretty rich valuations historically
+[00:22:56] speaking.
+[00:22:59] Um, so Apple, you know, still at the
+[00:23:01] moment is near the top end of the range.
+[00:23:03] It's holding up pretty well relative to
+[00:23:06] the rest of the market. Um,
+[00:23:09] now Apple obviously already reported
+[00:23:11] earnings, so maybe you're not as
+[00:23:15] um
+[00:23:17] there's not as much of an urgency to put
+[00:23:19] on a collar strategy. But let's say
+[00:23:21] you're concerned about downside given
+[00:23:24] the fact that the stock has rallied back
+[00:23:25] up to previous highs. Maybe you're
+[00:23:28] thinking that this starts to look a bit
+[00:23:29] like a head and shoulders pattern and
+[00:23:31] you're concerned about a pullback here.
+[00:23:33] So, let's just take a look at adding
+[00:23:36] that call, adding that puts uh tra trade
+[00:23:39] and then we'll look at that March 6th
+[00:23:42] weekly option. And again, what we're
+[00:23:44] looking for is roughly the 30 deltas,
+[00:23:46] which would be the 285s.
+[00:23:49] And then what we're trying to match is
+[00:23:51] the put side that will give us roughly
+[00:23:54] the same premium $345
+[00:23:57] which is going to be the 260s. That will
+[00:23:59] be $3.50. These two are nearly
+[00:24:01] identical. So what that means is that it
+[00:24:04] limits my upside here uh you know to
+[00:24:06] about $10 more upside and then the 260
+[00:24:11] puts gives me about $15 in downside. Um,
+[00:24:15] so you know, this is the first example
+[00:24:18] that we've looked at out of all the ones
+[00:24:20] that we've looked at where the downside
+[00:24:23] amount is greater than the upside
+[00:24:25] amount. Um, which is more common uh with
+[00:24:29] these types of strategies because puts
+[00:24:31] tend to be more expensive than calls.
+[00:24:34] Um, and the other ones are more even,
+[00:24:37] you know, in Amazon and Nvidia that we
+[00:24:40] look through the two examples in terms
+[00:24:41] of how much upside you still have versus
+[00:24:43] how much downside protection you get.
+[00:24:46] Those two um in the Amazon and Nvidia
+[00:24:49] example, you were getting much more even
+[00:24:52] exposure on both sides. And that's
+[00:24:54] usually because of earnings. you're
+[00:24:57] getting a lot more premium on the call
+[00:24:59] side than you normally would. Once that
+[00:25:01] earnings uh goes by, uh you get to you t
+[00:25:05] you typically will see collards that
+[00:25:08] skew a little bit more um
+[00:25:11] against you, if you will, right? Where
+[00:25:13] you have only $10 in upside like we do
+[00:25:16] with Apple and but have $15 in downside
+[00:25:19] um in this particular example. uh that's
+[00:25:22] more common I would say but heading into
+[00:25:25] earnings you can sometimes see uh ones
+[00:25:28] that shift where it works a little bit
+[00:25:30] more f in your favor um but that
+[00:25:33] essentially in a nutshell is how you
+[00:25:35] would structure a protective zerocost
+[00:25:38] collar um you can make adjustments to it
+[00:25:42] you can always say no I want you know
+[00:25:45] $20 in upside so that's going to bring
+[00:25:47] in $2.13
+[00:25:49] so what can I afford for $2.13 13 cents,
+[00:25:52] maybe the 250s. So, you can always make
+[00:25:54] adjustments based on, you know, how much
+[00:25:56] upside you want or how much downside
+[00:25:58] protection you need. Um, but as a rule
+[00:26:01] of thumb, these are your ideal starting
+[00:26:04] points for this type of strategy. Okay,
+[00:26:07] does that make sense everyone? Please
+[00:26:09] type four into the chat window if that
+[00:26:11] makes sense to you.
+[00:26:17] Um, perfect. Okay, so
+[00:26:21] let's talk a little bit about managing a
+[00:26:23] collar strategy. We're going to go back
+[00:26:24] to the Amazon example here when we talk
+[00:26:27] about managing a collar strategy. So
+[00:26:33] if the collar if the stock were to drop
+[00:26:36] um so in this particular example, we're
+[00:26:38] looking at that 215 250 uh collar
+[00:26:42] strategy on Amazon. If the stock were to
+[00:26:44] drop and reaches your lower strike
+[00:26:47] price, the $215 strike price,
+[00:26:51] um, this is really where the first thing
+[00:26:54] you have to ask yourself is, you know,
+[00:26:56] once it reaches that lower strike price,
+[00:27:00] um,
+[00:27:02] does your outlook remain bearish?
+[00:27:05] meaning you know are you at a point
+[00:27:07] where maybe you feel that there's now uh
+[00:27:10] you know the stock has dropped uh it's
+[00:27:12] reached a prior support level and now it
+[00:27:14] could bounce from there right obviously
+[00:27:18] if you if your views on the underlying
+[00:27:21] stock changes um that's where you would
+[00:27:24] want to um reassess and potentially
+[00:27:28] close out your collar. Um, but if let's
+[00:27:31] say you still have a bearish view on the
+[00:27:35] stock and the stock reaches that lower
+[00:27:37] strike price, this is really where you
+[00:27:39] would want to look at rolling your um
+[00:27:44] your
+[00:27:48] collar strategy to the new 30-day
+[00:27:52] uh uh expiration date. and then look at
+[00:27:56] reentering the strikes based on the
+[00:27:58] current price of the stock. So the same
+[00:28:00] way we look for the current strikes
+[00:28:02] based on the current price, if the stock
+[00:28:04] were to drop to 215, you would do the
+[00:28:06] same thing. You would want to put on a
+[00:28:08] new protective collar going out 30 days
+[00:28:11] and then getting that um 30 delta call
+[00:28:14] option and then figuring out which call
+[00:28:16] which put option you can buy for the
+[00:28:18] premium that you've collected on that
+[00:28:20] 30-day option. Um, and this essentially
+[00:28:24] allows you to continue your downside
+[00:28:27] protection as the stock drops. So if if
+[00:28:30] your view is correct and the stock
+[00:28:32] starts to drop, you can continue to
+[00:28:34] further um
+[00:28:37] provide downside protection in your
+[00:28:39] portfolio in this particular case. Now,
+[00:28:41] at any point if your outlook changes to
+[00:28:45] either neutral or perhaps even bullish
+[00:28:48] in this particular in in in certain
+[00:28:51] instances, that's when you want to end
+[00:28:53] exit your collar position entirely. You
+[00:28:56] don't want to roll it at that particular
+[00:28:58] time. You simply want to exit your
+[00:29:00] collar strategy. And in the second
+[00:29:03] scenario, if this if Amazon were to
+[00:29:05] trade sideways, if it doesn't really
+[00:29:08] move anywhere, um this is really where
+[00:29:10] you would still want to consider rolling
+[00:29:12] it, especially if your outlook remains
+[00:29:14] bearish. So, just because it didn't move
+[00:29:17] uh or just because it moved sideways
+[00:29:19] doesn't necessarily mean that you don't
+[00:29:21] believe that there could be still
+[00:29:23] downside here, right? Um that's really
+[00:29:25] where you would want to use the same uh
+[00:29:27] you know, you roll out to a new 30 days
+[00:29:30] to expiration. um expiration date, but
+[00:29:33] then you can essentially keep the stra
+[00:29:36] the same strike prices. Now, you always
+[00:29:39] want to reassess in terms of
+[00:29:42] seeing if those new strike prices still
+[00:29:44] make sense. Are they still zero cost? Um
+[00:29:47] sometimes you might have to make some
+[00:29:49] minor adjustments to the strike prices,
+[00:29:51] you know, once 30 days goes by in order
+[00:29:54] to keep it zero cost, but um you should
+[00:29:57] be able to do it for zero cost to some
+[00:30:00] degree uh with the same strikes, if not
+[00:30:03] some minor adjustments to the strike
+[00:30:05] prices. And just like the previous
+[00:30:07] example, if your outlook at any point
+[00:30:10] changes to more neutral or potentially
+[00:30:12] even bullish, that's when you want to
+[00:30:15] exit the collar strategy altogether.
+[00:30:18] So
+[00:30:20] that's really where you want to look at
+[00:30:23] um just simply exiting your collar
+[00:30:26] strategy. And Edward's asking a really
+[00:30:28] good question. He's saying, wouldn't the
+[00:30:30] put continue to protect you after you
+[00:30:32] reach your strike price? And he is
+[00:30:34] absolutely right. And let's just go back
+[00:30:36] to the previous example. In his example,
+[00:30:38] he's just saying if it reaches 215 and
+[00:30:41] keeps moving lower, why do you have to
+[00:30:44] roll it? Doesn't the put option just
+[00:30:46] protect you against further downside?
+[00:30:48] And he's absolutely right. Um uh Edward,
+[00:30:52] what I'm trying to what I'm trying to
+[00:30:55] refer to is that um you know, for the
+[00:30:57] stock to reach your lower strike price,
+[00:30:59] it also has to take time, right? So you
+[00:31:02] only have 30 days in your collar
+[00:31:05] strategy. It only protects you below 215
+[00:31:09] for 30 days. So generally what I'm
+[00:31:11] saying is that it reaches your lower
+[00:31:13] strike price and you're essentially
+[00:31:15] nearing expiration or at expiration. So
+[00:31:19] you get the protection below 215 only
+[00:31:22] for 30 days. if it reaches 215 and uh
+[00:31:26] and the stock hasn't gotten, you know,
+[00:31:28] let's say the stock is at 215 or lower
+[00:31:31] um and you think that the stock can keep
+[00:31:33] moving lower, that's where you would
+[00:31:35] want to um look at utilizing or rolling
+[00:31:38] a collar strategy as the stock moves
+[00:31:41] lower. Okay, so hopefully that's just a
+[00:31:44] clarification.
+[00:31:47] All right, so with that, that covers
+[00:31:49] what I wanted to share with you here
+[00:31:50] today. Um hopefully this gives you a
+[00:31:53] clear understanding as to how you can
+[00:31:55] utilize the options play platform to um
+[00:32:01] to put on a a put collar strategy which
+[00:32:04] I think is quite relevant given the
+[00:32:06] market conditions that we're in. Um it
+[00:32:10] it's really
+[00:32:13] um what's the right word? It it's it's
+[00:32:15] it's not common to see the rotation that
+[00:32:18] we're seeing here in the markets right
+[00:32:20] now. We're seeing this great rotation
+[00:32:22] out of tech into value into small cap
+[00:32:26] into international markets um into
+[00:32:30] energy into industrials. Um something
+[00:32:34] that we generally haven't seen in a long
+[00:32:36] time and certainly not a rotation that's
+[00:32:39] been this durable. We've seen rotations
+[00:32:41] in the past. They sometimes last a few
+[00:32:44] weeks, maybe a month, but this time
+[00:32:46] we're seeing this rotation last multiple
+[00:32:49] months. Now, tech has underperformed the
+[00:32:51] S&P 500 by at least 3 months, if not
+[00:32:54] more. Um,
+[00:32:57] and
+[00:32:58] and um
+[00:33:01] there are, you know, a lot of value has
+[00:33:04] been wiped out in the markets over the
+[00:33:06] last just even last couple of weeks. Uh
+[00:33:09] so if you h you know still have some
+[00:33:11] stocks in your portfolio like Amazon,
+[00:33:13] like Nvidia, like stocks like that that
+[00:33:15] you are concerned about downside, this
+[00:33:18] is one way you could potentially protect
+[00:33:20] your portfolio um for zero cost. So at
+[00:33:24] this stage, what I'm going to do is I'm
+[00:33:25] going to open this up for our members
+[00:33:27] Q&A session. Uh if you have any
+[00:33:30] questions you can type if for those of
+[00:33:32] you that are members you are attending
+[00:33:34] the session live uh you can ask your
+[00:33:37] questions which is in the Q&A window
+[00:33:39] here at the bottom. Um
+[00:33:42] so if you can type your questions into
+[00:33:44] the Q&A window I will answer um any
+[00:33:48] questions that you might have. Um, and
+[00:33:51] if you're watching this recording, um,
+[00:33:54] you'll be able to sign up for a free
+[00:33:56] trial at optionsplay.com to use this
+[00:34:00] tool that I'm showing you today to
+[00:34:02] structure this zerocost collar for the
+[00:34:06] stocks or ETFs that you own. Um, as well
+[00:34:09] as if you want to join our next session
+[00:34:12] and join us for our live Q&A session.
+[00:34:16] Before we wrap up, I want to let you
+[00:34:18] know that the live Q&A portion of
+[00:34:20] today's session is available exclusively
+[00:34:23] to OptionsPlay members.
+[00:34:26] If you'd like full access to the tools,
+[00:34:29] research, and option strategies that you
+[00:34:31] saw during today's session, and you want
+[00:34:34] to participate in our live education
+[00:34:36] sessions where you can ask questions in
+[00:34:38] real time, start your free 14-day trial
+[00:34:42] at optionsplay.com.
+[00:34:44] As a member, you'll get ongoing access
+[00:34:47] to our options tools, daily trade ideas,
+[00:34:51] and multiple live sessions each week
+[00:34:53] designed to help you trade with greater
+[00:34:56] confidence and discipline.
+[00:34:58] Visit optionsplay.com to start your free
+[00:35:01] trial, and I'll see you at the next
+[00:35:03] trading session.
