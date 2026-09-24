@@ -59,6 +59,14 @@ name. Expect nulls; treat a positive as suspect until it survives real fills and
   (9/09) — `lib.alerts.universe` only unions them, it never refreshes them. So the evening desk's new names
   (9/23: OKTA, CRWD, TEAM, FSLY, CNH…) are not watched unless added by hand. Decide: auto-feed the focus file
   from the Adhikary scan / breakout scan / clusters, or keep it curated and add a staleness warning.
+* **8 stock reviews still show "open" for names no longer held** (parked by the owner 2026-09-23 to clean
+  up later). The new `close_out_stock_reviews()` in `run_build_reviews.py` closed 21 stuck rows but
+  deliberately skips what it can't match unambiguously: **HALO 9/18 and FTNT 8/12** (several cycles fit the
+  review) and **CRWD, NTAP, ZM, RY, RVMD, WDCX** (early-Aug `(open)` rows with no `@price` in the label and
+  no matching flat-to-flat cycle in `journal_trades`). Fix by hand: find the sell in `journal_trades` or the
+  owner's recollection, then `UPDATE journal_trade_reviews` by id (exit_date, realized_pnl, drop the
+  `open_position` tag), re-render with `run_trade_review_pages.py`, deploy. Do **not** re-run the review
+  builder over past dates.
 * **Defer the heavy imports** in `run_trade_review_pages.py` so the journal-site build stops needing a
   database driver to write a static file.
 
