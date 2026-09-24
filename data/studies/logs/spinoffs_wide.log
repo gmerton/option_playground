@@ -1,0 +1,13 @@
+# Spin-offs beyond the S&P 500 (pre-registration in the docstring)
+
+10-12B registrants 430; screened out: {'no ticker': 112, 'not in panel': 228, 'not newly listed': 8, 'not eligible at entry': 37}; SPIN-OFF events 45 (25 S&P 500 spincos, 20 others), first bars 2011-06-24 -> 2026-05-27
+first 20 sessions (the dumping window): +1.04% raw (median +0.90)
+
+ALL              n  45 | 60d  +2.46 (t +0.55) | 120d +10.45 (t +2.06, n 38) | 250d +36.63 (t +1.15) | 120d vs industry  +5.42 (t +0.96)
+S&P 500 spincos  n  25 | 60d  +6.84 (t +1.03) | 120d +16.87 (t +2.12, n 22) | 250d +68.80 (t +1.30) | 120d vs industry +13.56 (t +1.44)
+others           n  20 | 60d  -3.47 (t -0.66) | 120d  +1.62 (t +0.36, n 16) | 250d  -9.31 (t -0.86) | 120d vs industry  -3.87 (t -0.78)
+
+## PRIMARY 120d ADR-matched excess, ALL: +10.45pp (median +5.32), t +2.06, 66% +; halves +12.41 (n 12) / +9.54 (n 26) -> FAIL
+per entry year 120d: 2011 +nan (n 1.0)  2012 +32.9 (n 1.0)  2013 +4.7 (n 3.0)  2014 -2.4 (n 3.0)  2015 +16.6 (n 2.0)  2016 +18.4 (n 3.0)  2017 +17.4 (n 2.0)  2018 -8.2 (n 4.0)  2019 -4.9 (n 3.0)  2020 +17.8 (n 3.0)  2021 +13.6 (n 5.0)  2022 +84.9 (n 1.0)  2023 -2.8 (n 2.0)  2024 +18.7 (n 3.0)  2025 +10.1 (n 5.0)  2026 -12.4 (n 4.0)
+
+events (120d excess): PSX +33, ABBV +8, MUSA -9, ALLE +15, KN -11, KEYS +6, PYPL +17, FTV +3, YUMC +25, LW +28, HGV +29, PK +6, NVT +0, WH -2, REZI -23, FOX +0, DOW -10, CARR +100, OTIS +7, VNT -53, OGN +3, DTM +31, VSXY +5, GXO +22, KD +8, CEG +85, GEHC -16, VLTO +10, SOLV +3, GEV +74, AMTM -21, SNDK -28, AMRZ -1, RAL -29, SOLS +53, Q +56, VSNT -17, SUNB -7
