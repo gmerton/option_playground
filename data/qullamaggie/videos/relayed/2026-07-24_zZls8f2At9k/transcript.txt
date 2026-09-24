@@ -1,0 +1,267 @@
+[00:00:00] Hey guys, hope you and the families are
+[00:00:01] doing well. I'm going to show you
+[00:00:02] exactly what I do to improve the win
+[00:00:04] rate when I'm trading the Koala Maggy
+[00:00:06] style opening range breakouts. Now,
+[00:00:08] opening range breakouts were first
+[00:00:10] taught by a legendary hedge fund manager
+[00:00:13] Toby Crabel and then later popularized
+[00:00:15] by Koala Maggy. And there's some very
+[00:00:17] specific things that I do to help
+[00:00:19] improve the win rate and that is exactly
+[00:00:21] what I'm going to teach you in this
+[00:00:23] video by taking you through my recent
+[00:00:25] entries in AMD and Cypher, CIFR.
+[00:00:29] Market Search at today's video sponsor.
+[00:00:31] They're my go-to resource for analyzing
+[00:00:33] company fundamentals. If you're
+[00:00:35] interested in a discounted trial, then
+[00:00:37] you'll find a link to that in the
+[00:00:38] description and the comment section
+[00:00:40] below. So, let me give you a high-level
+[00:00:42] overview here with AMD and Cypher. We're
+[00:00:46] then going to go to a bunch of intraday
+[00:00:48] charts and I can teach you exactly what
+[00:00:51] I do because when you're looking at it
+[00:00:52] just here, it may not make too sense.
+[00:00:54] You may go, "Okay, yeah, AMD is kind of
+[00:00:56] basing along some moving averages. Okay,
+[00:00:58] it goes green there on the 5-minute
+[00:01:00] opening range breakout indicator. Search
+[00:01:02] my name on TradingView and you'll find
+[00:01:04] it. So, this is the 5-minute signal.
+[00:01:06] This is then the entry candlestick as it
+[00:01:09] takes out the high of the opening
+[00:01:10] 5-minute candle into new high of day
+[00:01:12] territory. Cypher, which is a crypto
+[00:01:15] miner but now pivoted into data centers
+[00:01:17] along with many others. That's going to
+[00:01:19] be a key theme that we're going to look
+[00:01:20] at in a minute. Goes green on my
+[00:01:22] 5-minute ORB indicator. Takes out the
+[00:01:24] high, so then my entry is there. So,
+[00:01:27] let's now go into the specific part for
+[00:01:29] why you clicked on this video. So, what
+[00:01:32] we have here is we have a collection of
+[00:01:34] 5-minute charts and this is how I
+[00:01:36] improve the win rate when I'm trading
+[00:01:39] this type of setup. So, firstly, this is
+[00:01:42] what my trading setup roughly looks
+[00:01:44] like. I have a 34-in curved monitor
+[00:01:45] here. I have another 34-in curved
+[00:01:48] monitor to the side and then I have two
+[00:01:50] 43-in 4K TVs that I plaster with
+[00:01:54] 5-minute charts of what I deem are
+[00:01:56] leading stocks in leading themes and
+[00:01:58] leading groups. This layout here is
+[00:02:01] super important for what I'm about to
+[00:02:03] teach you. So, I'm going to zoom in now
+[00:02:05] to pretty much the opening 5-minute
+[00:02:08] candle. Tell you what, let's go for
+[00:02:09] bar-by-bar replay. Watch this, okay?
+[00:02:11] So, this is then on the 22nd of June.
+[00:02:15] So, let's see if we can get this loaded
+[00:02:16] up. There we go. These are the opening
+[00:02:19] 5-minute candles on the 22nd of June.
+[00:02:23] Now, some of you may be familiar
+[00:02:25] as well with my ORB indicator. If you
+[00:02:28] search my name, then you'll be able to
+[00:02:29] find it on TradingView. What do you
+[00:02:31] notice? Well, the first thing to notice
+[00:02:33] is everything is lighting up green. What
+[00:02:36] does that mean? Well, it means it's
+[00:02:37] meeting the criteria that I set for the
+[00:02:40] opening range breakout candle. Now, what
+[00:02:42] does the criteria do? Well, the criteria
+[00:02:44] is specifically designed to identify
+[00:02:47] bullish candlesticks. So, if you think
+[00:02:49] about what's going on here from a supply
+[00:02:50] and demand perspective, let's look at
+[00:02:52] AMD for instance. What does AMD do?
+[00:02:54] Well, AMD opens on the low of that
+[00:02:57] 5-minute bar, pushes higher, and closes
+[00:02:59] right on the high of that 5-minute bar.
+[00:03:02] What does that mean from a supply and
+[00:03:03] demand perspective? Well, demand was
+[00:03:05] instantaneous and to degree where it
+[00:03:08] could take out all the supply and push
+[00:03:10] it higher. So, what that looks like in
+[00:03:11] terms of actual application is buy
+[00:03:14] orders as soon as the market opens, buy
+[00:03:16] orders flood the market, take out the
+[00:03:17] sell orders, go go go. Go go gadget, we
+[00:03:20] call this. Buy orders flood the market,
+[00:03:22] take out the sell orders, push it
+[00:03:23] higher, strong close. Demand is well and
+[00:03:26] truly in control. If we saw the polar
+[00:03:28] opposite of this, i.e. the bar was red,
+[00:03:31] opens on the high, closes on the low,
+[00:03:33] that would indicate supply is in
+[00:03:35] control. But, when you're looking for an
+[00:03:36] opening range breakout, you're looking
+[00:03:38] for strength, momentum, preferably
+[00:03:40] intraday relative strength as well.
+[00:03:42] That's going to be a key. Now, this is
+[00:03:44] the thing that I do. I look for what I
+[00:03:46] call group theme confirmation. Group
+[00:03:50] theme confirmation. What does that mean?
+[00:03:52] Well, when I'm looking at AMD, I'm not
+[00:03:55] just looking at AMD. I'm looking at the
+[00:03:57] wider group. So, I'm looking at
+[00:03:59] semiconductors, but I'm also aware about
+[00:04:01] the other AI related stocks. So, AI
+[00:04:04] storage, AI infrastructure, AI build
+[00:04:06] out, is money flowing to that theme?
+[00:04:09] Because the market tends to be very
+[00:04:11] thematic in nature, and it tends to have
+[00:04:13] rotations for which groups and themes
+[00:04:15] lead on a day-to-day basis. So, when I'm
+[00:04:18] looking at AMD, I'm looking for
+[00:04:20] confirmation. I don't just want to see
+[00:04:23] AMD going by itself. I can't emphasize
+[00:04:25] this enough. I don't just want to see
+[00:04:27] AMD going. I want to see basically the
+[00:04:30] entire theme going. So, if we switch
+[00:04:32] lanes a second and we go over to say the
+[00:04:35] crypto miners,
+[00:04:36] many of them now pivoted into data
+[00:04:38] center
+[00:04:39] stocks. Take a look here. We have
+[00:04:41] Cipher, we have Riot, we have Marathon,
+[00:04:44] we have Hut, we have Iron, we have APLD.
+[00:04:47] I could put others up there like a Tera
+[00:04:48] Wolf as well. It's the same answer. What
+[00:04:51] do you see? It's going green on my
+[00:04:52] 5-minute ORB indicator. This is
+[00:04:54] indicating strength. This is This is the
+[00:04:57] title of the video. This is how I
+[00:04:59] improved the win rate.
+[00:05:00] I'm looking specifically for this. And
+[00:05:03] that's why I set up my charts how I just
+[00:05:05] told you. Because when I'm then looking
+[00:05:07] at those 243-in 4K TVs, what I'm doing
+[00:05:11] is I've grouped them together. So, all
+[00:05:13] the crypto miner data center related
+[00:05:15] stocks are grouped together. All the
+[00:05:16] semiconductors are grouped together. All
+[00:05:18] the AI storage stocks, Seagate, Western
+[00:05:21] Digital, Micron, SanDisk, are all
+[00:05:23] grouped together. So, at a single
+[00:05:25] glance, I can see very easily where is
+[00:05:28] the money flowing? Where is the
+[00:05:29] strength?
+[00:05:31] I don't just want to be going for an ORB
+[00:05:33] in a stock that's just going by itself.
+[00:05:35] I'm trying to go with where I see the
+[00:05:37] strength. It could be the crypto miner
+[00:05:39] data center stock, it could be
+[00:05:40] semiconductors, AI storage, it could be
+[00:05:43] the gold miners one day, it could be
+[00:05:45] healthcare related stocks, it could be
+[00:05:46] the drone stocks, whatever it may be.
+[00:05:48] I'm trying to be where the strength is
+[00:05:50] and look very specifically for this when
+[00:05:53] I'm targeting 5-minute ORBs.
+[00:05:55] Then what I want to see is preferably
+[00:05:57] the indexes also showing strength as
+[00:05:59] well to indicate momentum. There's
+[00:06:00] actually what I call a gap down reversal
+[00:06:03] bar forming here as well. The indexes
+[00:06:04] gap down and it gets bought up and it's
+[00:06:06] turning around. So if we then play this
+[00:06:08] forward a bar,
+[00:06:09] what I then want to see is as I'm then
+[00:06:11] taking the trade. So AMD, as I showed
+[00:06:13] you at the beginning of the day, I'm
+[00:06:14] taking it through the high here.
+[00:06:16] Cypher, I'm taking it through the high.
+[00:06:17] A couple of couple of others on these
+[00:06:19] charts as well, but I'm just focusing on
+[00:06:20] these two so you kind of understand the
+[00:06:22] point of group theme confirmation. So
+[00:06:24] I'm taking these. They also are able to,
+[00:06:26] if you look at AMD, see how it's
+[00:06:27] breaking out ahead of the cues. See how
+[00:06:29] it's breaking out ahead of the spy.
+[00:06:31] Cypher, see how it's breaking out ahead
+[00:06:33] of the cues, ahead of the spy. So
+[00:06:35] they're showing strength in the sense of
+[00:06:36] that also then breaking out first. A
+[00:06:38] recent video I took you through the
+[00:06:40] 12-point checklist that I also apply,
+[00:06:42] but I'm being very specific here in
+[00:06:44] terms of this. So what I then see
+[00:06:46] specifically with the crypto minor data
+[00:06:49] center stocks, look, Cypher, new high,
+[00:06:51] everything ahead of the cues. New high,
+[00:06:53] Riot, new high, Marathon, new high, AP
+[00:06:55] LD, new high, IR ENT, new high, Hut, new
+[00:06:57] high.
+[00:06:58] See how they're starting to go ahead of
+[00:06:59] the indexes. Really important. Now why
+[00:07:02] did I go for Cypher? Why did I go for
+[00:07:04] AMD? I like stocks when I'm taking these
+[00:07:06] ORBs to be above all key daily moving
+[00:07:09] averages. So many of these, if I just
+[00:07:11] zoom the charts way out,
+[00:07:13] you may be able to see it like Riot
+[00:07:15] still's got some overhead there. Hut
+[00:07:16] going into the overhead 50. Marathon,
+[00:07:18] couple of overhead. E
+[00:07:20] AP LD has some overhead up there. So I'm
+[00:07:22] trying to go with where I think the
+[00:07:24] strongest stock is from a technical
+[00:07:26] perspective. Even better if it lines up
+[00:07:28] from a fundamental perspective, but try
+[00:07:30] and line as many positive bullish
+[00:07:32] factors up in a row as I can. So if we
+[00:07:34] then just play this forward
+[00:07:37] a few bars, you can see you literally
+[00:07:39] could have thrown a dart at any of
+[00:07:40] those, including the indexes, see? But
+[00:07:43] look, you could have thrown a dart at
+[00:07:44] any of the crypto miners and been in the
+[00:07:46] money immediately. AMD,
+[00:07:48] ASML, SMCI, Dell, MU, Western, Seagate.
+[00:07:53] Throw a dart at any of them, you're in
+[00:07:54] the money.
+[00:07:55] Now, does that happen every single time?
+[00:07:56] Absolutely not, but it's about trying to
+[00:07:58] stack the probabilities in our favor
+[00:08:01] when we're trading very specific setups.
+[00:08:04] So, then if I just play this forward,
+[00:08:06] we'll play it out
+[00:08:08] a little bit further and then I can take
+[00:08:09] you back to this image here. So,
+[00:08:11] remember this image. So, this is then
+[00:08:14] how I do it.
+[00:08:15] It's this.
+[00:08:16] Think about your trading setup, because
+[00:08:18] if you can't see this, then I can't help
+[00:08:20] you.
+[00:08:21] Does that make sense? If you can't see
+[00:08:22] this in terms of this layout here where
+[00:08:25] you're then grouping it together, okay,
+[00:08:26] I've got the semis there, I've got the
+[00:08:28] crypto miner data centers there, I've
+[00:08:29] got the healthcare stocks there, I've
+[00:08:31] got the banks there, whatever it may be,
+[00:08:33] this for me makes it really easy to dial
+[00:08:36] in, improve the win rate, go where the
+[00:08:38] strength is, go where the algos are.
+[00:08:39] Instead of going with a lone ranger
+[00:08:41] stock, the only one going from the
+[00:08:42] group, that's going to be more failure
+[00:08:44] prone in my view, I'm trying to go where
+[00:08:46] do I see the strength? And preferably
+[00:08:48] that area, that stock has been very
+[00:08:50] strong on the daily chart as well, like
+[00:08:52] AMD, like Cypher is being above all key
+[00:08:55] daily moving averages. So, I hope you
+[00:08:56] guys have enjoyed that little quick
+[00:08:58] video there to help you try and improve
+[00:09:00] your win rate when trading this specific
+[00:09:01] setup. If you like this kind of stuff,
+[00:09:03] head over to my platform,
+[00:09:04] jackrossellars.com. Take care. See you
+[00:09:05] soon.

@@ -1,0 +1,334 @@
+[00:00:00] [music]
+[00:00:05] &gt;&gt; It is a a very special time. We've got a
+[00:00:08] very special guest with us.
+[00:00:10] Why don't we bring out Julia for a
+[00:00:11] little mini market measures? How you
+[00:00:12] doing, Julia?
+[00:00:14] &gt;&gt; I'm doing great. How are you guys?
+[00:00:16] &gt;&gt; Fantastic.
+[00:00:17] &gt;&gt; Amazing.
+[00:00:18] &gt;&gt; Julia, she's going to get so mad at me.
+[00:00:20] Julia's getting married this week.
+[00:00:21] &gt;&gt; Oh, why'd you have to out me like that?
+[00:00:24] &gt;&gt; Wow. Congrats. Early congrats. Congrats
+[00:00:27] for you.
+[00:00:27] &gt;&gt; Congrats.
+[00:00:28] &gt;&gt; Thank you. Dress is going to be black.
+[00:00:30] I'm curious to see how the crowd
+[00:00:32] responds to that one. So, I'm excited.
+[00:00:34] [laughter]
+[00:00:34] &gt;&gt; That's fascinating.
+[00:00:35] &gt;&gt; Well, I don't think I've ever seen you
+[00:00:37] in any other color. I think it suits
+[00:00:38] you.
+[00:00:39] &gt;&gt; I know, right? I mean, it's what you
+[00:00:40] wear.
+[00:00:41] &gt;&gt; Oh, yeah. Dress is from Latvia.
+[00:00:44] It made it here. It's from an artist who
+[00:00:45] specializes in black. So, I'm excited.
+[00:00:47] It is 20 lbs.
+[00:00:49] &gt;&gt; Really? 20 lbs?
+[00:00:50] &gt;&gt; 20 lbs. I've been training for it. Yep.
+[00:00:52] &gt;&gt; That's amazing.
+[00:00:52] &gt;&gt; Yeah, I bet you have. That's crazy.
+[00:00:55] &gt;&gt; [laughter]
+[00:00:55] &gt;&gt; So, I'm ready to go. But, I have a piece
+[00:00:59] that we can talk about today. A little
+[00:01:00] bit of a retroactive study on the cost
+[00:01:03] of the pattern day trading rule. So, do
+[00:01:05] you guys want to hop into it?
+[00:01:06] &gt;&gt; Let's do it.
+[00:01:07] &gt;&gt; Absolutely.
+[00:01:08] &gt;&gt; Yeah. So, PDT is is done and dusted.
+[00:01:12] However, we wanted to do kind of a
+[00:01:14] retroactive study on like what kind of
+[00:01:16] costs, especially like active kind of
+[00:01:18] intraday traders might have incurred
+[00:01:19] from not being able to manage their zero
+[00:01:21] day positions because of pattern day
+[00:01:23] trading. So, this is also just kind of a
+[00:01:25] testament to show like why management,
+[00:01:27] especially at the you know, the ultra
+[00:01:29] short duration scale is so important.
+[00:01:31] So, that's kind of yeah, that's what we
+[00:01:34] got.
+[00:01:35] &gt;&gt; Love it. Dive in.
+[00:01:37] &gt;&gt; Cool. Let's hop in.
+[00:01:37] &gt;&gt; it.
+[00:01:38] &gt;&gt; Okay, cool. So, PDT rule ended on June
+[00:01:41] 4th. So, we are now without pattern day
+[00:01:44] trading rule, which is awesome. But,
+[00:01:46] prior to then, PDT traders were not able
+[00:01:49] to close their zero DTE positions same
+[00:01:51] day that they opened them. So, they'd
+[00:01:53] either do like the one day trick of
+[00:01:55] opening the day before and then managing
+[00:01:56] the day of or they would just hold to
+[00:01:58] expiration. So, But like a lot of those,
+[00:02:01] you know, management strategies that are
+[00:02:02] very important for short-term trading
+[00:02:04] were just not available to them.
+[00:02:06] So no closing at 50% the initial credit,
+[00:02:09] no closing at 2x loss. I know for like
+[00:02:11] the zero-day scales, like some of those
+[00:02:13] rules become more flexible, smaller
+[00:02:14] profit targets, smaller stop losses.
+[00:02:17] This also doesn't even account for just
+[00:02:19] closing before noon for example. So just
+[00:02:22] like all these, you know, mechanics were
+[00:02:24] not available to people. And zero-day
+[00:02:26] trading, if you look at like OCC data,
+[00:02:27] has just got has just exploded in
+[00:02:29] popularity. So we wanted to kind of take
+[00:02:32] a look at like what that kind of cost
+[00:02:34] was that people would have been facing
+[00:02:35] if they were trying to trade these
+[00:02:36] strategies while subject to PDT and not
+[00:02:39] being able to close early the same day.
+[00:02:41] Make sense?
+[00:02:42] &gt;&gt; Yeah.
+[00:02:43] &gt;&gt; Love it.
+[00:02:43] &gt;&gt; Easy peasy. So study design. We looked
+[00:02:46] at 539 occurrences, $20 wide iron
+[00:02:50] condors, 20 delta short strikes. And
+[00:02:53] again, this is kind of a more
+[00:02:54] conservative case cuz we're not looking
+[00:02:56] at the temporal management of closing
+[00:02:57] our position at noon, right? We're just
+[00:02:59] looking at closing at 50% the initial
+[00:03:01] credit, which is still like that's also
+[00:03:02] a very liberal, you know, credit target
+[00:03:05] for zero-day strategies, and then
+[00:03:06] comparing
+[00:03:09] that to the PDT case where you just have
+[00:03:11] to hold to expiration. And like what
+[00:03:13] kind of what does that cost you
+[00:03:15] basically in terms of average P&amp;Ls from
+[00:03:17] not having those management
+[00:03:19] possibilities available. Yeah?
+[00:03:22] &gt;&gt; Why 539?
+[00:03:24] &gt;&gt; That's just what we got.
+[00:03:26] &gt;&gt; Okay.
+[00:03:27] &gt;&gt; Well, you know that we have like, you
+[00:03:28] know, we didn't really have like dailies
+[00:03:30] until what, 2022? Like basically 2023?
+[00:03:33] Like the liquidity just wasn't there. So
+[00:03:35] we really don't have a very long look
+[00:03:37] back of data that we've been collecting.
+[00:03:39] But you know, with numbers of
+[00:03:41] occurrences, once you get to like 200,
+[00:03:43] that's when a lot of your like errors,
+[00:03:45] your standard deviations tend to taper
+[00:03:47] out a little bit. So this still gives
+[00:03:49] you a pretty good snapshot of what a lot
+[00:03:50] of like kind of typical occurrences
+[00:03:52] would be like for people
+[00:03:54] adopting these strategies, yeah?
+[00:03:56] &gt;&gt; I was just curious a friend of mine used
+[00:03:58] to trade when we used to trade at a prop
+[00:03:59] firm. He used to trade like 11 lots or
+[00:04:00] like factors of that. So, I was just
+[00:04:01] curious if you like chose that number
+[00:04:02] for a certain reason.
+[00:04:04] &gt;&gt; I just like the number. No, it's
+[00:04:05] actually that's all the data that we
+[00:04:06] have.
+[00:04:09] Cool.
+[00:04:10] &gt;&gt; All right, let's go to the next slide.
+[00:04:11] So,
+[00:04:12] &gt;&gt; [clears throat]
+[00:04:12] &gt;&gt; this is really interesting because you
+[00:04:14] know, for the kind of like longer term
+[00:04:16] you know, positions for defined risk a
+[00:04:18] lot of the time we kind of don't use
+[00:04:20] stop losses. But you can see in the zero
+[00:04:22] DTE case,
+[00:04:24] like those actually kind of matter quite
+[00:04:26] a bit more.
+[00:04:27] And what we see here is that when we
+[00:04:29] look at the 50% profit target about 70%
+[00:04:32] of the trades actually hit that. And
+[00:04:34] then another 28% hit the credit stop and
+[00:04:36] it was only about 3% of cases that
+[00:04:39] didn't hit one of those two. And again,
+[00:04:41] we're not you know, cutting off at noon
+[00:04:42] which is a very popular strategy for
+[00:04:44] people. We're just kind of using like
+[00:04:45] P&amp;Ls to kind of define the exit
+[00:04:47] conditions of the trade. But we can see
+[00:04:49] that overwhelming majority of the time
+[00:04:51] the zero day trades wound up hitting one
+[00:04:53] or the other.
+[00:04:55] And the majority being in the 50% of the
+[00:04:57] initial credit case in profit.
+[00:05:01] &gt;&gt; Yeah, so I think it's interesting where
+[00:05:02] like if you take if you're trying to
+[00:05:04] manage whether it's the profit or loss
+[00:05:08] with the PDT rule like what 98% 97% of
+[00:05:13] trades would have had factors that would
+[00:05:15] have hit those things. So, it's just a
+[00:05:17] totally different trade, right? It's
+[00:05:19] like it's like the difference is night
+[00:05:21] and day. Like there's no there's no in
+[00:05:23] between with this because as you can see
+[00:05:26] almost every situation you were either
+[00:05:28] hitting a stop loss or a profit target
+[00:05:30] and you wouldn't have been able to
+[00:05:32] you know, manage that. And but when you
+[00:05:34] when you mentioned the trick of like
+[00:05:36] starting a trade at the close to manage
+[00:05:38] the next day, yes, that does get you out
+[00:05:41] of PDT, but it puts you into gap risk
+[00:05:43] overnight risk and things like that
+[00:05:44] happen overnight too. So,
+[00:05:46] that is also you know, a different
+[00:05:48] trade. So, I I think this this is a
+[00:05:50] whole new landscape now that you have
+[00:05:52] the flexibility to trade however you
+[00:05:54] want and manage your risk however you
+[00:05:55] want.
+[00:05:55] &gt;&gt; Exactly. Yeah, and you can see in both
+[00:05:57] of these cases, both in the case where
+[00:05:59] the profit target was hit or in the stop
+[00:06:00] loss. Like if we look at both of those
+[00:06:02] trades in the managed and then kind of
+[00:06:04] like the unmanaged equivalent case, what
+[00:06:05] that outcome was, you can see that
+[00:06:07] management saves money on both of those
+[00:06:10] on all the like on average on all the
+[00:06:12] trades that we kind of looked at. In the
+[00:06:14] profitable case, it's 166 bucks per
+[00:06:16] trade and then in the stop loss case,
+[00:06:18] it's $93
+[00:06:20] per trade on average that you just save
+[00:06:23] in losses from being able to manage.
+[00:06:26] Which that was a surprising result for
+[00:06:28] me cuz again, you know, with a lot of
+[00:06:29] defined risk positions, just cuz you
+[00:06:30] know the loss, you know, the max loss
+[00:06:32] going into it, a lot of people don't put
+[00:06:34] stop losses on, but you can really see
+[00:06:35] the impact of actually employing that
+[00:06:37] here.
+[00:06:38] Noting again that we're not cutting off
+[00:06:39] at noon, which is another, you know, can
+[00:06:41] also help offset some of those losses.
+[00:06:45] So, if we just go to the next slide,
+[00:06:46] here we're looking kind of more at the
+[00:06:47] extreme case. So, here we're looking
+[00:06:49] basically in the C bar threshold case,
+[00:06:51] so like the worst 5% of losses,
+[00:06:54] what happened? And you can see that even
+[00:06:56] more, that's again when that management
+[00:06:58] really matters. When there's a super
+[00:06:59] volatile market, a lot of like intraday
+[00:07:01] movement, being able to kind of manage
+[00:07:03] that position and have like hands-on
+[00:07:06] capabilities of like, you know, intraday
+[00:07:09] being able to like take care of that, it
+[00:07:11] makes a huge difference in those more
+[00:07:13] extreme cases, which we know from short
+[00:07:14] premium trading. Those tails, while they
+[00:07:16] don't happen very much, can really skew
+[00:07:19] your average statistics just because of
+[00:07:20] how big they can potentially be even
+[00:07:23] though defining a risk certainly helps
+[00:07:25] in a lot of cases.
+[00:07:28] &gt;&gt; Big deal.
+[00:07:33] We can go to the next slide. So, here
+[00:07:35] again we're just kind of looking at our
+[00:07:36] risk measures in this managed versus PDT
+[00:07:38] case. And I think like even like we we
+[00:07:41] kind of, you know, highlighted that
+[00:07:43] worst case loss, but even just in
+[00:07:45] typical scenarios, that management
+[00:07:47] reduces the kind of like standard
+[00:07:48] deviation of results by almost 50%. So,
+[00:07:52] very big impact there. This is kind of
+[00:07:53] just a case for not you know, not just
+[00:07:55] like how maybe active traders can
+[00:07:57] benefit from the removal of this rule
+[00:07:59] and being able to manage their positions
+[00:08:00] intraday, but how important management
+[00:08:02] is in general for ultra short-term
+[00:08:04] trading.
+[00:08:05] We see that happen at the extreme
+[00:08:07] scales, but also like on the you know,
+[00:08:08] typical scales of like what you might
+[00:08:10] experience on a day-to-day basis. And
+[00:08:12] interesting enough, we saw like the
+[00:08:14] losing streak, if we look at like how
+[00:08:15] many days in a row we incurred a loss,
+[00:08:18] we saw that that also got reduced from
+[00:08:20] that management, meaning that there's a
+[00:08:22] small number of cases where the P&amp;L
+[00:08:23] actually flips from being able to like
+[00:08:25] have intraday management capabilities.
+[00:08:28] So, a lot of interesting results here
+[00:08:30] and a lot of new possibilities with the
+[00:08:32] new landscape.
+[00:08:34] &gt;&gt; Absolutely. That's true. I mean, it's
+[00:08:35] it's changed a lot of things for a lot
+[00:08:36] of different traders and this is
+[00:08:37] complete proof.
+[00:08:40] Big deal.
+[00:08:42] &gt;&gt; Beautiful.
+[00:08:42] &gt;&gt; So, we can go ahead and put a bow on
+[00:08:44] this. Fun little study.
+[00:08:46] But yeah, when we're looking at these
+[00:08:48] intraday profit targets and loss
+[00:08:50] targets, we saw that like overwhelming
+[00:08:51] majority hit 50% profit target like
+[00:08:54] intraday for zero DTE strategies on this
+[00:08:57] particular underlying.
+[00:08:59] A lot of people will have smaller profit
+[00:09:00] targets of like 20% for example just to
+[00:09:02] accumulate small you know, profits
+[00:09:04] throughout the day.
+[00:09:06] But we saw a pretty significant impact
+[00:09:07] just using that 50% threshold. Likewise
+[00:09:09] with risk using not just you know, like
+[00:09:12] the extreme losses, but just standard
+[00:09:13] deviation of P&amp;L, we saw that the
+[00:09:15] variance of possible outcomes gets
+[00:09:17] reduced significantly just from
+[00:09:19] employing these management strategies.
+[00:09:21] Noting that like a pretty big one we
+[00:09:22] didn't even account for here. So, this
+[00:09:24] is like even a pretty conservative
+[00:09:26] estimation of the impact. And then yeah,
+[00:09:29] looking at the worst case losses, which
+[00:09:31] don't happen a lot, we see that
+[00:09:32] significant reduction really you know,
+[00:09:34] coming into account even though these
+[00:09:36] are defined risk positions, which I
+[00:09:37] thought was an interesting um
+[00:09:39] interesting conclusion or result.
+[00:09:43] &gt;&gt; Yeah, and I think you and the team
+[00:09:43] really nerded out on this one. I mean,
+[00:09:45] this is a nerd masterclass. I love it.
+[00:09:47] &gt;&gt; We had to cut this down, too. This was
+[00:09:49] like 13 slides.
+[00:09:51] &gt;&gt; Yeah, I think the big the big takeaway
+[00:09:53] is the sensitivity of these options
+[00:09:54] trades.
+[00:09:56] Um, you know, 10 point moves in either
+[00:09:57] direction in the market can be the
+[00:09:59] difference between a winner and a loser.
+[00:10:01] And I think this also parleys into a
+[00:10:03] segment we covered last week. Uh, it was
+[00:10:06] a market measure, too, where
+[00:10:09] uh, there's so much benefit to
+[00:10:11] management in the last hour of trading.
+[00:10:14] And that's where your risk can really
+[00:10:15] come into play. And we see it all the
+[00:10:16] time, like the the 2:00 p.m. to 3:00
+[00:10:18] p.m. Central time frame, you can see big
+[00:10:21] swings in the market. And because these
+[00:10:22] are such sensitive trades, if you don't
+[00:10:24] have the flexibility to close them or
+[00:10:26] manage them, you can be on the on the
+[00:10:28] blunt end of that. So,
+[00:10:30] uh, thank you, Julia. This has been
+[00:10:32] amazing. And uh, we appreciate your your
+[00:10:35] content, of course.

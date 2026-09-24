@@ -1,0 +1,453 @@
+[00:00:00] This is strategic hedging with options
+[00:00:01] and futures and this video is about
+[00:00:03] black swan hedges. This video is for
+[00:00:05] educational purposes only and not
+[00:00:06] investment advice. So buying far out of
+[00:00:09] the money put options is a popular tail
+[00:00:11] risk or what's known as a black swan
+[00:00:13] hedge among sophisticated investors
+[00:00:15] aiming to protect portfolios against
+[00:00:17] severe market crashes or those rare
+[00:00:19] catastrophic events.
+[00:00:22] These puts offer an asymmetric payout.
+[00:00:24] So, while their cost is minimal during
+[00:00:26] normal market conditions, often leading
+[00:00:28] to recurring small losses, their value
+[00:00:30] can spike dramatically if a crash
+[00:00:31] occurs, providing a sizable compensation
+[00:00:34] just when a portfolio needs it most.
+[00:00:37] Let's move into the Thinker Swim trading
+[00:00:39] platform here to take a look at how a
+[00:00:41] black swan hedge would have performed
+[00:00:42] during an actual black swan event. I
+[00:00:44] have spy populated in the charts tab and
+[00:00:46] we're looking at a 10-year weekly chart.
+[00:00:48] We can see here that in January and
+[00:00:50] February of 2020, SPY was grinding
+[00:00:53] higher with very little realized in
+[00:00:56] implied volatility. Then in March of
+[00:00:58] 2020, SPY sold off approximately 30%.
+[00:01:02] And at that time, we saw a dramatic
+[00:01:04] spike in implied volatility. And in
+[00:01:06] fact, let's take a look at what the VIX,
+[00:01:08] the volatility index did during that
+[00:01:10] time frame. We can see here that the VIX
+[00:01:12] was trading in the upper teens in
+[00:01:15] January and February and spiked to a
+[00:01:18] high of 85.47
+[00:01:20] at the height of the selling in March of
+[00:01:22] 2020. Now, let's move into the analyze
+[00:01:25] section of the software. And we're going
+[00:01:26] to use the think back functionality
+[00:01:29] here. And let me just make the screen
+[00:01:31] bigger. And we're going to assume that I
+[00:01:34] decided to refresh my black swan hedges
+[00:01:38] on the monthly option expiration date of
+[00:01:41] February 21st of 2020. So I'm going to
+[00:01:45] populate the options chain for that date
+[00:01:47] for SPY.
+[00:01:49] And we're going to assume that I went
+[00:01:51] ahead and purchased far out of the money
+[00:01:53] put options as a black swan hedge in the
+[00:01:56] June 30th 2020 options expiration cycle.
+[00:02:00] These options would have expired in 130
+[00:02:03] days. And for the purposes of this
+[00:02:06] example, I would have been interested in
+[00:02:08] purchasing out of the money puts
+[00:02:10] anywhere between a three and five delta.
+[00:02:13] And a lot of times I like to pick nice
+[00:02:15] round numbers when doing this because
+[00:02:17] those strikes have pretty good
+[00:02:18] liquidity. So the for the purposes of
+[00:02:20] this example, we're going to assume that
+[00:02:22] I purchased the 250 strike put options.
+[00:02:26] uh they would have been trading with an
+[00:02:27] implied volatility of just over 31% and
+[00:02:30] the delta of these options would have
+[00:02:32] come in at.04
+[00:02:34] 04
+[00:02:36] and just to take a look at where SPY was
+[00:02:39] trading on that date, it would have been
+[00:02:41] trading at 336 spot 95. So the 250 puts
+[00:02:45] would have been very far out of the
+[00:02:47] money. So we all know that dramatic
+[00:02:50] selling took place in March of 2020.
+[00:02:53] Let's take a look at the charts here
+[00:02:54] just to take a look at specific dates.
+[00:02:57] And we can see here that the height of
+[00:02:59] the selling would have happened between
+[00:03:02] March 16th and the 23rd.
+[00:03:06] Okay. So, let's analyze
+[00:03:10] how these puts would have done had I
+[00:03:13] purchased them.
+[00:03:16] So, we're going to go up and select
+[00:03:17] single there. And we're going to assume
+[00:03:20] that I bought 20 of these put options.
+[00:03:22] that would have cost roughly $1,440
+[00:03:26] because those puts are trading at 72.
+[00:03:30] And let's fast forward to March
+[00:03:35] uh we'll select the 20th. So March 20th
+[00:03:37] of 2020 because that was the March uh
+[00:03:40] OPEX cycle, quarterly options expiration
+[00:03:42] cycle. And we can see here that the 20
+[00:03:46] puts that I would have purchased for
+[00:03:48] just over $1,400 would be sitting on an
+[00:03:51] unrealized gain on March 20th of just
+[00:03:54] shy of $65,000.
+[00:04:00] So that is the power of the black swan
+[00:04:02] hedge. Um for a very small capital
+[00:04:05] outlay, you have a very small
+[00:04:06] probability that these puts would make
+[00:04:08] money. But when we do run into these uh
+[00:04:11] once every decade type of black swan
+[00:04:14] events, these puts pay off dramatically.
+[00:04:18] Now, let's move to the March 20th, 2020
+[00:04:22] date here in the options chain so we can
+[00:04:24] see what those 250 puts look like. So,
+[00:04:26] I'm going to scroll down here and we can
+[00:04:29] see that the 250 puts
+[00:04:32] are now in the money. They have a delta
+[00:04:36] of.49. 49. The implied volatility of
+[00:04:40] these puts is just shy of 54%. And of
+[00:04:43] course, they're trading for roughly $33
+[00:04:46] per put option. And let's take a look at
+[00:04:49] what the implied volatility for the far
+[00:04:52] out of the money puts look like
+[00:04:55] after the volatility spike.
+[00:04:58] And let's go as far out of the money as
+[00:05:00] was listed.
+[00:05:02] So, we're scrolling all the way down,
+[00:05:04] and we can see that the 185 strike put
+[00:05:07] options
+[00:05:09] are now trading for
+[00:05:13] roughly $11.64
+[00:05:15] at an implied volatility of over 72%.
+[00:05:20] And of course, the delta here is going
+[00:05:22] to be negative.19. So something that's
+[00:05:24] interesting is when implied volatility
+[00:05:26] spikes
+[00:05:28] across the options chain, delta grows
+[00:05:30] and it merges towards 0.5.
+[00:05:33] So you're no longer able to find like a
+[00:05:35] five delta when you go as far out of the
+[00:05:37] money as you can when volatility spikes
+[00:05:39] to these levels.
+[00:05:41] So just something that's interesting to
+[00:05:43] note. Um but one thing I just wanted to
+[00:05:45] point out here is the implied volatility
+[00:05:49] for the far out of the money options
+[00:05:51] during times of calm. So in the February
+[00:05:54] um opex when I was looking to purchase
+[00:05:56] those was trading at like a 30% and when
+[00:05:59] volatility spikes it's not uncommon to
+[00:06:01] see those implied volatilities double or
+[00:06:03] even triple. So that just gives you a
+[00:06:05] sense for how these these options
+[00:06:07] behave. So now that we went through that
+[00:06:09] compelling example, let's get into more
+[00:06:11] specifics. You might be wondering what
+[00:06:13] qualifies as far out of the money with
+[00:06:16] these black swan hedges. And far out of
+[00:06:18] the money puts are typically considered
+[00:06:19] to be strike prices 20 to 30% below the
+[00:06:22] current market level for these types of
+[00:06:24] strategies. Traders buy these cheap put
+[00:06:27] options so that in the event of a sharp
+[00:06:28] market drop, the options increase in
+[00:06:31] value exponentially. And when you're
+[00:06:33] buying these far out of the money put
+[00:06:34] options, you're buying them for the Vega
+[00:06:37] exposure, not necessarily the delta
+[00:06:39] exposure. This strategy has been adopted
+[00:06:41] by hedge funds, some of which are famous
+[00:06:43] for profiting during major market
+[00:06:44] crashes. And some of you may have seen
+[00:06:46] this in the media. It's common practice
+[00:06:48] for portfolio hedgers to allocate a
+[00:06:50] small portion, usually a half to 2% of
+[00:06:53] the portfolio to these tail risk hedges.
+[00:06:56] So the overall rationale for using black
+[00:06:59] swan hedges is that we know that the
+[00:07:01] value of diversification can drop
+[00:07:03] dramatically during systemic crises when
+[00:07:05] correlations spike towards one. Far the
+[00:07:08] money put options remain one of the few
+[00:07:09] instruments that truly spike in value
+[00:07:11] during such times. So these put options
+[00:07:13] act as insurance by cushioning or
+[00:07:15] offsetting losses from downward moves
+[00:07:18] that would require tremendous
+[00:07:19] performance just to recover from. And
+[00:07:22] this was obviously illustrated when we
+[00:07:23] looked at March of 2020. So there are
+[00:07:26] definitely costs, drawbacks, and nuances
+[00:07:28] to using black swan hedges in an overall
+[00:07:30] portfolio. The primary downside is that
+[00:07:33] these options often expire worthless in
+[00:07:35] non-crash scenarios, and this results in
+[00:07:37] a persistent drag on long-term portfolio
+[00:07:40] returns. Maintaining a black swan hedge
+[00:07:42] requires regular repurchasing and
+[00:07:44] portfolio discipline, often rolling
+[00:07:46] shorterdated puts every 1 to four
+[00:07:48] months, or some traders use slightly
+[00:07:50] longerdated options to reduce these
+[00:07:52] transactions. This strategy requires
+[00:07:54] significant discipline because you can
+[00:07:56] go for such long periods of time without
+[00:07:59] it paying off. I've seen traders employ
+[00:08:01] these different black swan hedges for an
+[00:08:02] extended period of time. They end up
+[00:08:04] getting frustrated and give up on the
+[00:08:06] strategy thinking that it's not worth it
+[00:08:08] only to have the actual black swan event
+[00:08:10] happen shortly thereafter. I've also
+[00:08:12] seen some different traders get into
+[00:08:14] these elaborate systems of maintaining
+[00:08:15] these black swan hedges uh even to the
+[00:08:18] point where they're selling complicated
+[00:08:20] spreadsheets to help keep track of
+[00:08:21] everything. So most academics and some
+[00:08:24] traders argue that the long-term expense
+[00:08:26] of running these types of strategies can
+[00:08:28] outweigh their benefits unless an
+[00:08:30] investor is uniquely exposed to severe
+[00:08:32] tail risk or uses the strategy to take
+[00:08:35] more equity risk overall. And let's talk
+[00:08:37] about allocation sizing. This one's an
+[00:08:39] important one. Most guidelines suggest
+[00:08:42] that dedicating a half to 2% of a
+[00:08:44] portfolio to out of the money put
+[00:08:46] options strikes a somewhat reasonable
+[00:08:48] balance between protection and drag.
+[00:08:52] Now, let's talk about some practical
+[00:08:54] implementation guidelines. And this is
+[00:08:56] assuming that you are using the black
+[00:08:58] swan hedges to hedge a broad portfolio.
+[00:09:02] So, you want to choose index options,
+[00:09:04] preferably S&amp;P, SPY, or ES futures
+[00:09:07] options for their liquidity and
+[00:09:09] reliability of crash protection versus
+[00:09:12] single stocks, which may have
+[00:09:13] idiosyncratic risk that is harder to
+[00:09:15] model.
+[00:09:18] I like to use options on the ES futures
+[00:09:21] contract because they're highly
+[00:09:22] effective for capturing overnight
+[00:09:25] volatility because they trade nearly
+[00:09:27] 245. The continuous trading window
+[00:09:30] allows for options to respond in real
+[00:09:32] time to volatility spikes that happen
+[00:09:34] outside of regular US stock market
+[00:09:36] hours. Unlike S&amp;P or SPY options, which
+[00:09:41] are typically limited to standard market
+[00:09:43] sessions, I realize some of this is
+[00:09:45] starting to change. Um, you can have
+[00:09:47] different liquidity characteristics that
+[00:09:49] happen in the overnight sessions that
+[00:09:52] allow a person who is long Vega to
+[00:09:55] capitalize even more uh than during
+[00:09:57] normal cash market hours. Now, let's
+[00:09:59] talk about strike selection. Strike
+[00:10:01] selection is often based on delta. Many
+[00:10:03] traders buy strikes with delta values
+[00:10:05] between negative0.03 and negative0.10
+[00:10:08] for maximum vague exposure or convexity
+[00:10:11] relative to cost. Expiry selection
+[00:10:13] depends on cost tolerance and
+[00:10:15] rebalancing preferences. Common teners
+[00:10:18] range from 1 to four months with
+[00:10:19] longerdated puts sometimes used for
+[00:10:21] operational ease.
+[00:10:24] Some traders dynamically adjust the
+[00:10:26] hedge by closing or rolling puts when
+[00:10:29] market conditions change once the
+[00:10:31] options reach a certain expiration date
+[00:10:34] or profit threshold. And for those of
+[00:10:36] you who might be interested in obtaining
+[00:10:38] more information about these
+[00:10:39] implementation guidelines, here is a
+[00:10:41] list of some popular studies.
+[00:10:44] So, I want to move back into the Thinker
+[00:10:45] Swim Trading platform here and look at
+[00:10:47] building out a black swan hedge in real
+[00:10:49] time. I have spy populated in the charts
+[00:10:52] tab. And we're looking at a one-year
+[00:10:54] daily chart. And we can see that the
+[00:10:57] index has been trading bullish for the
+[00:10:59] last several months. And we're trading
+[00:11:01] near all-time highs heading into the end
+[00:11:04] of the year. I'm going to head over to
+[00:11:06] the trade tab here. Minimize this to
+[00:11:08] make the screen bigger. And for the
+[00:11:11] purposes of this example, I am
+[00:11:13] interested in purchasing far out of the
+[00:11:15] money puts in the March 31st, 2026
+[00:11:19] options expiration cycle. That takes us
+[00:11:22] through to the end of the first quarter
+[00:11:24] of 2026.
+[00:11:26] And I am interested in purchasing far
+[00:11:29] out of the money puts anywhere near a
+[00:11:33] one to five delta for this example.
+[00:11:37] And I like picking strikes where there
+[00:11:40] is quite a bit of open interest. So
+[00:11:42] let's scroll down here. And one strike
+[00:11:45] that stands out is the 400 strike put
+[00:11:48] options here. They have open interest of
+[00:11:50] over 15,000 contracts. And that puts us
+[00:11:53] at a negative
+[00:11:55] uh 0.02 delta. Those are trading at just
+[00:11:59] over a dollar. And if we scroll up and
+[00:12:02] take a look at the 450 strike puts,
+[00:12:06] uh these puts only have open interest in
+[00:12:09] this expiration cycle of 716 contracts.
+[00:12:12] So, I'd probably skip that one.
+[00:12:15] And let's see, let's look at the 500
+[00:12:18] strike.
+[00:12:19] So, we're 100 points higher up uh on the
+[00:12:23] options chain. And these have open
+[00:12:25] interest of 7,256.
+[00:12:28] The delta comes in at negative.04
+[00:12:31] and they're trading for $2 roughly 65.
+[00:12:36] So, let's go with the 400 strike puts.
+[00:12:39] These are black swan hedges. We don't
+[00:12:41] expect them to pay off. So, let's pay a
+[00:12:42] little less and go for the increased
+[00:12:44] open interest. So, let's go ahead and
+[00:12:46] select this put option. and we are going
+[00:12:50] to buy, let's say, 20 of those. So that
+[00:12:53] would put the cost for the black swan
+[00:12:55] hedge at just over $2,000. So I want to
+[00:12:58] move into option strat so that we can
+[00:13:00] take a look at what this position would
+[00:13:01] look like under different market
+[00:13:03] conditions. As you can see, I am long
+[00:13:05] the 2400 strike put options in the March
+[00:13:08] 31st, 2026 options expiration cycle. And
+[00:13:12] when I scroll down here, we can see that
+[00:13:13] the x-axis represents the price of spy
+[00:13:17] and the y-axis represents the profit and
+[00:13:20] loss of the position given these
+[00:13:22] different price assumptions.
+[00:13:24] And when we take a look at the trade
+[00:13:26] here, we can see that this solid green
+[00:13:28] line represents what's called the t
+[00:13:30] plus0 line, which is the theoretical
+[00:13:32] value of the position given these
+[00:13:34] different price assumptions today. This
+[00:13:38] dotted line here represents the
+[00:13:40] theoretical value of the position given
+[00:13:42] these different assumptions. If this
+[00:13:44] were to happen halfway through the trade
+[00:13:46] and this line here represents at
+[00:13:48] expiration.
+[00:13:49] So if I take this slider here and slide
+[00:13:53] it across
+[00:13:55] all the way to represent at expiration
+[00:13:58] here,
+[00:14:00] that's what the profit and loss diagram
+[00:14:01] looks like at expiration. And we can see
+[00:14:05] here that we would have paid $2,250
+[00:14:08] to enter into this trade. And we're
+[00:14:10] interested in seeing how this trade
+[00:14:12] would behave earlier in the life of the
+[00:14:13] trade. So, I'm going to just Whoops. I'm
+[00:14:15] just going to take this and slide it
+[00:14:17] back to current
+[00:14:19] uh current day.
+[00:14:22] And we can see here that the 400 strike
+[00:14:25] put options are currently trading at an
+[00:14:27] implied volatility of 44.5%.
+[00:14:30] And what we saw from the previous
+[00:14:32] example in March of 2020, we know that
+[00:14:34] these implied volatilities can easily
+[00:14:36] double during times of market stress. So
+[00:14:39] let's do that. Let's just slide this
+[00:14:41] implied volatility to two times. And
+[00:14:44] that would give us a sense of what the
+[00:14:46] value of this position would look like
+[00:14:48] if that happened really early in the
+[00:14:50] trade. So,
+[00:14:53] if implied volatility doubled and spy
+[00:14:56] didn't really move anywhere, those put
+[00:14:59] options would explode in value and
+[00:15:01] they'd be equal to roughly $43,000.
+[00:15:04] Now, we know that that's not really
+[00:15:06] realistic. SPY would probably be selling
+[00:15:08] off fairly dramatically if implied
+[00:15:10] volatility were to double. So, as we
+[00:15:12] move the cursor down, we can see what
+[00:15:16] the value of those put options would be.
+[00:15:18] So, if we sold off roughly 10% and
+[00:15:20] volatility doubled, we can see that the
+[00:15:22] value of those put options would be over
+[00:15:25] $60,000.
+[00:15:27] So, pretty dramatic. Now, let's see what
+[00:15:29] would happen if it took a while for that
+[00:15:31] to transpire. So, let's just slide this
+[00:15:34] over to roughly halfway into the trade.
+[00:15:37] And we could see that the value of the
+[00:15:39] put options would increase, but not
+[00:15:41] nearly as dramatically. And that's
+[00:15:43] because there would only be 72 days
+[00:15:45] remaining in the trade. So its
+[00:15:48] responsiveness to changes in implied
+[00:15:50] volatility
+[00:15:51] would be reduced because we'd be further
+[00:15:53] along in the trade. However, uh this
+[00:15:56] still would be a very profitable uh
+[00:15:58] trade if we were to be selling off
+[00:16:01] roughly 10% from current levels with
+[00:16:04] volatility doubling halfway into the
+[00:16:05] trade. Uh those put options would be
+[00:16:08] worth close to $25,000.
+[00:16:11] So this gives you a sense of how these
+[00:16:13] far to the money put options behave.
+[00:16:17] based on changes in implied volatility
+[00:16:19] and time. So, let's wrap up here with
+[00:16:22] some final thoughts. Far out of the
+[00:16:24] money put options can play a strategic
+[00:16:25] role in protecting against black swan
+[00:16:27] risks while enabling for higher exposure
+[00:16:29] to key risky assets, provided their
+[00:16:32] costs and sizing are managed within a
+[00:16:34] well diversified portfolio. The strategy
+[00:16:37] offers high convexity and protection in
+[00:16:39] a crash, but requires careful
+[00:16:41] monitoring, discipline, and awareness of
+[00:16:42] its long-term negative carry and
+[00:16:44] statistical odds of frequent expiry at
+[00:16:47] zero value. If you found this video
+[00:16:50] interesting or helpful, please like,
+[00:16:52] share, and subscribe. You're always
+[00:16:53] welcome to check out the Discord. The
+[00:16:55] link is in the video description below.
+[00:16:57] And as always, thanks for watching and
+[00:16:59] be awesome. This video is for
+[00:17:01] educational purposes only and does not
+[00:17:03] constitute investment, financial or
+[00:17:05] trading advice. No recommendations to
+[00:17:07] buy or sell securities are being made.
+[00:17:09] All examples are hypothetical and for
+[00:17:11] illustration only. All investments carry
+[00:17:13] risk, including the possible loss of
+[00:17:15] principle. Options trading involve
+[00:17:17] significant risk and is not suitable for
+[00:17:18] all investors. Past performance is not
+[00:17:21] indicative of future results. Consult a
+[00:17:23] qualified financial adviser before
+[00:17:24] implementing any strategy and review
+[00:17:26] your financial situation, risk
+[00:17:28] tolerance, costs, fees, and tax
+[00:17:30] implications. Options trading requires
+[00:17:32] broker approval, and not all strategies
+[00:17:34] are permitted in all account types.
+[00:17:36] Returns shown are hypothetical and not
+[00:17:38] guaranteed. Market conditions can change
+[00:17:40] quickly, and results will vary based on
+[00:17:42] market performance, timing, and
+[00:17:44] execution. Read characteristics and
+[00:17:46] risks of standardized options from your
+[00:17:48] broker or at www.optionsclearing.com.
+[00:17:50] options clearing.com before trading
+[00:17:52] options.

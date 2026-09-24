@@ -1,0 +1,615 @@
+[00:00:00] Hello. Um
+[00:00:01] I'm happy to say that this is our first
+[00:00:04] podcast, United States Investing
+[00:00:05] Championship first podcast.
+[00:00:07] I'm Norm Zada.
+[00:00:09] And I'm happy to have you with me from
+[00:00:11] Hong Kong, if I'm not mistaken,
+[00:00:15] Jay Law.
+[00:00:17] And Jay Law just broke
+[00:00:20] Mark Minervini's
+[00:00:23] world record
+[00:00:25] for the million-plus division.
+[00:00:28] Mark Mine Mark Minervini had set a
+[00:00:30] record of 338.4%.
+[00:00:34] And Mr. Law
+[00:00:36] has just
+[00:00:38] made 359.3%.
+[00:00:42] And I want to congratulate him for that.
+[00:00:45] Before I begin, I'd like to say that
+[00:00:47] we take the the accuracy of our results
+[00:00:50] very seriously.
+[00:00:52] So, when anybody has a high performance
+[00:00:54] in this competition, particularly if
+[00:00:56] they set a new record,
+[00:00:58] we go over their statements carefully.
+[00:01:00] Okay?
+[00:01:01] And in Mr. Law's case,
+[00:01:04] he sent us a 85-page
+[00:01:07] Interactive Brokers account.
+[00:01:10] And those of you who are familiar with
+[00:01:13] Interactive Brokers know that it's they
+[00:01:15] have wonderful statements, they're very
+[00:01:17] easy to read.
+[00:01:19] They compute a time-weighted return.
+[00:01:22] I went over the statement carefully, and
+[00:01:23] I can assure everyone that he did in
+[00:01:25] fact make 359.3%.
+[00:01:28] That said,
+[00:01:30] Mr. Law, welcome.
+[00:01:33] How are things in Hong Kong?
+[00:01:36] Oh, great. I'm very proud to be here as
+[00:01:39] a Hong Kong Hong Konger or Hong Kong
+[00:01:41] person. Um because my mother language is
+[00:01:44] not English, so I'm bringing my friend
+[00:01:47] to do a translation for me.
+[00:01:50] So, let's start by
+[00:01:52] asking some obvious questions.
+[00:01:55] Is there one or more books that you
+[00:01:58] would recommend to our viewers?
+[00:02:01] Well, it's very tough question to ask uh
+[00:02:04] to answer because there are too many uh
+[00:02:06] good books to read. Um but if I were to
+[00:02:10] only find recommend one book, uh it
+[00:02:12] would be the series of Market Wizards.
+[00:02:16] That was a Jack Schwager, uh he wrote
+[00:02:19] that, correct?
+[00:02:20] Yeah, I'm actually quite quite familiar
+[00:02:21] with that series.
+[00:02:23] Um
+[00:02:24] do you use uh any computer programs to
+[00:02:27] help you?
+[00:02:29] I don't use any computer programs. I
+[00:02:32] just use like everyone does um to use um
+[00:02:35] TradingView or um
+[00:02:38] uh a Futu or a Mal Mal, those type of um
+[00:02:42] information um trading uh platforms to
+[00:02:45] get data.
+[00:02:47] Obviously, I think it is very important
+[00:02:49] to um to review my track uh trading
+[00:02:53] records. So, I'm using Chart Log um to
+[00:02:56] interpret my uh to analyze and interpret
+[00:02:59] my trading records.
+[00:03:01] Um have you ever uh written any of uh
+[00:03:03] excuse me, have you ever Have you ever
+[00:03:05] read any of Mark Minervini's books or
+[00:03:07] taken any of his courses?
+[00:03:11] He's um my um uh mentor, I would say. I
+[00:03:16] Of course, I have read many of his
+[00:03:17] books. I can even like uh I remember
+[00:03:21] most of his teachings on the books. And
+[00:03:24] obviously, I also joined his uh trading
+[00:03:27] courses.
+[00:03:29] Okay, so if
+[00:03:31] if somebody, you know, came up to you
+[00:03:34] and said, "Uh Mr. Law, please help me
+[00:03:37] make money in the markets." What would
+[00:03:39] you tell them to do?
+[00:03:42] Well, there's there's one thing that you
+[00:03:44] have to remember is that you can't be
+[00:03:47] you won't you don't become LeBron James
+[00:03:49] in one day.
+[00:03:50] You can't go to the field just by simple
+[00:03:53] you know a few days training. So you do
+[00:03:55] have to do your homework.
+[00:03:58] I believe the 10,000 hours
+[00:04:01] uh rule is is very essential and
+[00:04:03] relevant.
+[00:04:05] Um you have to
+[00:04:07] uh spend time
+[00:04:09] um in a number of years in in in trading
+[00:04:13] for you to get familiar and immersed
+[00:04:16] into the industry and that you have to
+[00:04:19] go through um cycles of bear and bull
+[00:04:22] markets. There is no shortcut. So so how
+[00:04:25] many years have you been trading?
+[00:04:28] 15 15 years.
+[00:04:30] 15 years.
+[00:04:33] And did you start off making money or
+[00:04:35] did that
+[00:04:37] you know, did it take a while?
+[00:04:41] At the beginning I traded randomly
+[00:04:45] without any methodology.
+[00:04:48] I was overwhelmed with the concept of
+[00:04:50] financial independence. So
+[00:04:52] I just follow what's what the the KOLs
+[00:04:56] um
+[00:04:57] the uh
+[00:04:58] popular at that moment of time and to
+[00:05:01] follow the um the recommendations to buy
+[00:05:04] uh the bank stock simply for the reason
+[00:05:08] um they give really high interest yield.
+[00:05:11] Um but I didn't care about um all those
+[00:05:14] basic information of the stock.
+[00:05:22] Unfortunately, that was the year of
+[00:05:24] 2008.
+[00:05:26] I was pretty young at that stage, but
+[00:05:28] all the stocks that I bought dropped off
+[00:05:31] the value by 50%
+[00:05:33] um and I lost a lot of money.
+[00:05:36] Then I know that there is no shortcut
+[00:05:37] and I really have to
+[00:05:40] I really have to learn and to pay
+[00:05:43] effort. So I joined some courses in town
+[00:05:46] to start learning from the bottoms up.
+[00:05:50] And that moment of time, value investing
+[00:05:53] was the only
+[00:05:55] key or a norm for one to get into the
+[00:05:59] stock trading.
+[00:06:01] So,
+[00:06:02] go ahead. Okay, let me ask you a
+[00:06:03] question. So, would you describe
+[00:06:05] yourself as a
+[00:06:07] value investor,
+[00:06:09] buy and hold, CAN SLIM, day trader? How
+[00:06:13] would you describe yourself?
+[00:06:18] I don't believe in stereotyping.
+[00:06:21] I think it is very important
+[00:06:24] to pick a relevant style a style that is
+[00:06:27] relevant to that particular top point of
+[00:06:30] time. So, I have to be very flexible.
+[00:06:35] would you attribute your performance
+[00:06:37] this year to
+[00:06:39] a great success in a
+[00:06:42] small number of stocks? Is there any
+[00:06:44] particular stock that you traded this
+[00:06:46] year that was substantial
+[00:06:49] responsible for a substantial portion of
+[00:06:51] your gain?
+[00:06:53] I think this year is very similar to
+[00:06:56] 2019.
+[00:06:58] For after every year, it's my practice
+[00:07:00] to do postmortem. So, I review
+[00:07:04] each year's trading patterns and the
+[00:07:06] stock market pattern. So,
+[00:07:10] to just do some learnings and insights
+[00:07:12] for the for the year forward.
+[00:07:15] Mhm.
+[00:07:15] So, the similarity lies in
+[00:07:19] a lot of the profits in the market comes
+[00:07:22] from respective big winners. So, this
+[00:07:24] year is no exception.
+[00:07:26] So, buy and hold on some big winners
+[00:07:29] stock is my strategy.
+[00:07:31] Okay, so, I noticed in your statements
+[00:07:33] that you had a large position in
+[00:07:35] Palantir.
+[00:07:37] And as far as I could tell, you made a
+[00:07:39] significant percentage of your actual
+[00:07:42] gain in Palantir.
+[00:07:43] My question to you is what made you buy
+[00:07:46] Palantir?
+[00:07:49] Um okay.
+[00:07:51] It is a market leader and it monopolizes
+[00:07:54] the market in this
+[00:07:56] in its own rights.
+[00:07:58] Palantir has the traits of uh
+[00:08:01] big winner stock and I think it is very
+[00:08:04] important in a bull year a bull market
+[00:08:06] year like 20 2024. It is essential and
+[00:08:11] it is very important to identify those
+[00:08:13] big winners quickly and get into the
+[00:08:17] positions quickly.
+[00:08:19] It's market its traits is very similar
+[00:08:22] to Google Shopify
+[00:08:25] um those big winners in the past.
+[00:08:28] It has this techno technology advantage
+[00:08:32] and its contribution is has a very big
+[00:08:35] impact to
+[00:08:37] to the entire world.
+[00:08:39] It has this um
+[00:08:42] very unique and proprietary
+[00:08:44] technological advantage.
+[00:08:46] So it monopolizes the market in a sense
+[00:08:49] that
+[00:08:50] no one can copy that technology and
+[00:08:53] the the market leader position.
+[00:08:56] It is It is also the market leader and
+[00:08:59] what what we call now is a hot topic in
+[00:09:02] in the market that is AI. So artificial
+[00:09:04] intelligence is really the buzzword for
+[00:09:07] the market. Let me ask a question. Um So
+[00:09:11] I noticed that you had put on I think
+[00:09:13] your initial position
+[00:09:14] on March 6th and then you sold it the
+[00:09:17] next day for a loss.
+[00:09:20] And then you didn't actually get into
+[00:09:22] the stock in any significant way until I
+[00:09:23] think it was June early June. So my
+[00:09:26] question to you is
+[00:09:28] So what made you decide to get out of
+[00:09:32] your initial trade
+[00:09:34] shortly after you got into it around
+[00:09:37] March 6th.
+[00:09:39] Let me look back to the chart first.
+[00:09:42] Maybe I forgot the chart already.
+[00:09:44] Um, anyway,
+[00:09:46] I follow by my rules that if um, any
+[00:09:49] stock that hits my um, stop loss um,
+[00:09:52] signal, um, once the signal is
+[00:09:54] triggered, I will just have to sell it
+[00:09:57] with no mercy.
+[00:10:00] Um, the reason that I didn't buy
+[00:10:02] Palantir even earlier was that it uh,
+[00:10:05] its pattern was not
+[00:10:06] very stable um, during the time around
+[00:10:09] March. So, yeah, so that's why I didn't
+[00:10:12] get in uh, the position earlier.
+[00:10:15] So, um, it hit my uh, stop loss because
+[00:10:18] it doesn't have any significant um,
+[00:10:21] uptrend. So, I sold it.
+[00:10:25] And so, you put on your first position
+[00:10:27] as I recall, I'm just looking at my
+[00:10:29] papers here, on June 4th at 21.95. So,
+[00:10:33] what made you
+[00:10:35] What made you decide to go back in at
+[00:10:38] that time?
+[00:10:41] It It shows very clear signal that it
+[00:10:44] has a breakout pattern. Uh, we can, you
+[00:10:46] know, we can refer it um, uh, uh, the
+[00:10:49] pattern is like a VCP pattern or a bull
+[00:10:52] uh, flag uh,
+[00:10:54] pattern.
+[00:10:55] But it has very clear signal, so I
+[00:10:57] entered the market right away.
+[00:11:00] Okay, good. Let me ask you about one
+[00:11:02] other stock that I noticed you made a
+[00:11:05] a a decent amount of money on, that was
+[00:11:07] MicroStrategy.
+[00:11:09] Mhm. Um, why did you decide to take a
+[00:11:13] substantial position in MicroStrategy
+[00:11:15] Inc.?
+[00:11:17] Uh, simply because um, its industry, it
+[00:11:20] um, by that moment of time, Bitcoin was
+[00:11:24] really the hype of the market.
+[00:11:26] It's a leading stock in the
+[00:11:28] cryptocurrency.
+[00:11:31] It has a very strong fundamental
+[00:11:33] um um uh
+[00:11:35] data that uh we all heard that is
+[00:11:38] investing its own profit into buying
+[00:11:41] Bitcoins. So, this kind of a momentum
+[00:11:44] and cycle will push up um
+[00:11:47] uh
+[00:11:48] uh Bitcoin's price as well as uh the
+[00:11:50] stock price uh of MicroStrategy. I
+[00:11:53] really fancy this type of stock which
+[00:11:56] has a very strong uh fundamental um
+[00:11:59] and also technical um advantage.
+[00:12:03] So, um do you still own any Palantir or
+[00:12:07] MicroStrategy?
+[00:12:09] Uh I've cleared all my position on
+[00:12:12] MicroStrategy, but I still keep some
+[00:12:14] runners um from the profit on Palantir.
+[00:12:19] Interesting. There was another stock
+[00:12:20] that I noticed that you
+[00:12:22] put on a fairly substantial position,
+[00:12:24] and that was
+[00:12:25] SoFi Technologies.
+[00:12:28] Could you tell me why you liked liked
+[00:12:32] SoFi Technologies?
+[00:12:35] Okay. Um the fintech um industry has
+[00:12:38] also been a hype during the last quarter
+[00:12:42] of the year, and the entire industry is
+[00:12:45] not only SoFi, but also UPST and Affirm
+[00:12:48] are showing very strong growth signal.
+[00:12:51] Out of all the fintech stock, I I
+[00:12:54] reviewed all the data and found that
+[00:12:56] actually SoFi shows the strongest
+[00:12:59] momentum and also um the fundamental
+[00:13:02] data.
+[00:13:03] But most important is that when I look
+[00:13:06] at the pri- uh the data uh the trading
+[00:13:08] data, that um it has a very strong price
+[00:13:12] action. It shows tremendous uptrend and
+[00:13:15] very strong momentum.
+[00:13:18] Especially after it released its
+[00:13:20] earnings.
+[00:13:22] So, is it accurate to say that you
+[00:13:24] prefer the the leader in each industry?
+[00:13:27] If you get involved, it's it's primarily
+[00:13:29] in the leader.
+[00:13:32] Um so
+[00:13:33] it's a very good question. As I would
+[00:13:35] say I would pick the leading group.
+[00:13:38] But I would also among the leading
+[00:13:40] group, I would pick the leader out of
+[00:13:42] the leading group.
+[00:13:44] Understood. Do you ever sell stocks
+[00:13:47] short?
+[00:13:48] I did, but it's not my style. Um during
+[00:13:51] bear market, I would short some stocks,
+[00:13:53] but it's not my focus. It's never been
+[00:13:56] my focus.
+[00:13:58] What was your worst trade this year?
+[00:14:02] Worst trade um
+[00:14:04] uh CrowdStrike.
+[00:14:07] CrowdStrike.
+[00:14:09] And do you did you learn anything from
+[00:14:11] that trade?
+[00:14:15] Yeah.
+[00:14:16] Uh actually um if it's not uh this
+[00:14:20] competition, I don't think I would have
+[00:14:23] done this trade that was. So you're
+[00:14:26] blaming me.
+[00:14:28] No, no, no.
+[00:14:30] Uh
+[00:14:31] uh I'll take the money you made if you
+[00:14:33] don't mind.
+[00:14:36] Um because I was
+[00:14:39] betting on a rebound of the stock. So I
+[00:14:42] was I was very aggressive in making that
+[00:14:45] trade and eventually
+[00:14:48] um I didn't follow my rules on this
+[00:14:51] trade and that's why I lost money.
+[00:14:54] What What stop loss do you put on? Is it
+[00:14:56] a percentage stop loss?
+[00:15:00] Um I have several um ways um um in
+[00:15:05] developing my stop loss strategy. Uh the
+[00:15:07] percentage stop loss is only one of
+[00:15:10] them.
+[00:15:11] The control on the maximum drawdown has
+[00:15:14] always been my priority.
+[00:15:18] And what Do you mind if I ask what that
+[00:15:20] would be?
+[00:15:22] Let me calculate. Uh
+[00:15:23] I I need to do some calculations. Sorry.
+[00:15:26] I need to use my calculator.
+[00:15:28] Right, but if it was a percentage of the
+[00:15:30] entire account, that would be a big
+[00:15:32] number. So, I assume it's not a
+[00:15:33] percentage of the entire account unless
+[00:15:35] it's a very small percentage. Uh uh can
+[00:15:37] you repeat your question?
+[00:15:39] I'm I'm still wondering, you say you're
+[00:15:42] not just using a percentage
+[00:15:45] in terms of the decline in the stock.
+[00:15:47] You're also using a percentage in terms
+[00:15:50] of
+[00:15:51] the drawdown relative to your account
+[00:15:54] value.
+[00:15:55] Correct. But, then my point was that if
+[00:15:57] you're going to, you know, you have a
+[00:15:59] three or four million-dollar account at
+[00:16:00] some point. So,
+[00:16:02] it would seem that you're you probably,
+[00:16:05] you know, I'm I'm I'm I'm just wondering
+[00:16:06] what percentage is it? Is it 1/10 of 1%
+[00:16:09] of your account value or what How can
+[00:16:11] can you quantify that for us?
+[00:16:13] Uh that is relevant to the position
+[00:16:15] sizing. But, um in my general practice,
+[00:16:19] the maximum drawdown contributed by one
+[00:16:22] particular one particular trade won't be
+[00:16:24] bigger than 0.3%
+[00:16:28] of the entire portfolio.
+[00:16:30] Okay, 0.3%.
+[00:16:33] Can I ask you just some general
+[00:16:34] questions here? Like, what do you think
+[00:16:36] of I I don't expect you to be right here
+[00:16:39] because few people are, but I'm just
+[00:16:41] curious. What do you think of, say,
+[00:16:43] Bitcoin right now?
+[00:16:46] Well, I would interpret um Bitcoin from
+[00:16:50] different levels. Uh one is it um as an
+[00:16:53] asset um that's prevailing around the
+[00:16:57] world, it has significant value because
+[00:17:00] it's widely supported by the
+[00:17:03] president-to-be in United States, Donald
+[00:17:05] Trump, and also other different markets,
+[00:17:08] uh different countries. However, it is
+[00:17:11] not directly relevant to how I see the
+[00:17:14] price and also to see its related
+[00:17:17] stocks.
+[00:17:19] Um um in the market. So, it is they they
+[00:17:22] are two different things.
+[00:17:25] What do you think of the market right
+[00:17:26] here? Just in general, do you think 2025
+[00:17:30] is going to be a up year for the United
+[00:17:32] States stock market?
+[00:17:36] Uh it won't be an easy year like 2024
+[00:17:40] or 2023. Um it won't be that easy for
+[00:17:43] any of us.
+[00:17:45] Yeah, the inflation potential inflation
+[00:17:48] would would can be very hard hitting um
+[00:17:51] for any of the markets.
+[00:17:54] Well, in the month of December last
+[00:17:57] year, um even though the market was
+[00:17:59] still on the bull run, um but I started
+[00:18:03] to pay attention and to be wary of the
+[00:18:05] fact of
+[00:18:06] inflation of potential inflation. So, I
+[00:18:09] have already cut started to cut down my
+[00:18:11] positioning um significantly.
+[00:18:15] Did you say December December of this
+[00:18:17] year you cut back or December of last
+[00:18:19] year?
+[00:18:21] Last year. Last year.
+[00:18:23] Oh, well, what I mean is December 2024
+[00:18:25] you cut back.
+[00:18:27] Yeah. Yeah.
+[00:18:27] Okay. Yeah.
+[00:18:28] So, you're not as long as you were.
+[00:18:31] What? You are not as long as you were.
+[00:18:34] You you have you you don't have as many
+[00:18:36] long positions on now as you did at the
+[00:18:38] end at at say in November of 2024.
+[00:18:42] Correct. Okay. So, in my other trading
+[00:18:45] accounts, I also started to cut down my
+[00:18:49] positioning um significantly. And I I
+[00:18:52] just want to supplement what I I wanted
+[00:18:54] to say earlier is that after a 2-year
+[00:18:57] bull market, and um the market can be
+[00:18:59] very fragile and would be subjective
+[00:19:03] would subject to any market corrections
+[00:19:06] in no time.
+[00:19:08] I think the market expectation on the
+[00:19:10] interest rates of
+[00:19:12] when
+[00:19:13] um insane. People have been expecting
+[00:19:16] Donald Trump to cut interest rates
+[00:19:18] significantly and simply because of this
+[00:19:21] expect market expectation, there is
+[00:19:23] another bull run.
+[00:19:24] not uh not Donald Trump cut the interest
+[00:19:26] rates significantly. It uh um tax cut
+[00:19:29] tax cut. A tax cut. So, sorry, let me
+[00:19:32] let me go back uh a bit as that uh the
+[00:19:35] expectation on the tax rates cuts has
+[00:19:39] gone insane and there are um uh the
+[00:19:42] market expectation on that has led to
+[00:19:45] another bull run, which is um very
+[00:19:47] unreasonable and which is also very
+[00:19:50] risky for market at that time.
+[00:19:53] Are you short right now any stocks?
+[00:19:57] No, no, no shorting.
+[00:20:01] Have you ever wanted to quit? Have you
+[00:20:02] ever thought about quitting the stock
+[00:20:04] market?
+[00:20:07] Yes, I did um
+[00:20:09] during that year when I lost um
+[00:20:12] miserably.
+[00:20:14] Uh my epic failure came from shorting
+[00:20:17] the Brazil market because there has been
+[00:20:20] numerous
+[00:20:21] political scandals um that I started to
+[00:20:24] short the market
+[00:20:26] and I've learned my big lesson.
+[00:20:32] would it be fair to say that
+[00:20:34] it's not easy to make money in the stock
+[00:20:36] markets and that you
+[00:20:39] probably don't expect
+[00:20:42] to make the kind of return that you made
+[00:20:46] this year or excuse me in 2024 and that
+[00:20:50] listeners should not expect
+[00:20:53] to just start trading and all of a
+[00:20:55] sudden make 353%.
+[00:20:58] Mhm. Can you clarify your question
+[00:21:01] again? Well, I'm basically making a
+[00:21:03] statement and also asking a question.
+[00:21:05] Let let my statement to everyone, okay?
+[00:21:08] I have been my I've been we started this
+[00:21:10] contest in 1983, okay? And I used to
+[00:21:12] trade myself, so I have a lot of
+[00:21:14] experience in seeing exactly how people
+[00:21:16] do in the markets. And unfortunately,
+[00:21:18] the truth is that it's very very very
+[00:21:21] very difficult
+[00:21:23] to consistently make big returns in the
+[00:21:25] market.
+[00:21:26] And anybody that can do more than 20 or
+[00:21:28] 30% should be really happy and jumping
+[00:21:31] all around and celebrating, okay?
+[00:21:33] Because it's really hard. So, I don't
+[00:21:35] want anyone listening to this
+[00:21:37] podcast to think that oh, it's easy to
+[00:21:39] make 353%. This gentleman in front of
+[00:21:42] us,
+[00:21:42] he said it himself. He spent 10,000
+[00:21:44] hours, okay? And so, you've got to walk
+[00:21:48] before you can run.
+[00:21:50] And just start off, read things, play
+[00:21:54] with play money or
+[00:21:56] small account. Do not risk any
+[00:21:58] significant amount of money until you've
+[00:21:59] really studied and traded for several
+[00:22:02] years. So, that's my point.
+[00:22:04] Let me ask you this question, Jela. It's
+[00:22:06] been very very interesting to me. I I
+[00:22:08] really appreciate your
+[00:22:10] spending this much time with us.
+[00:22:13] First of all, do you have anything you
+[00:22:14] want to plug?
+[00:22:18] No.
+[00:22:19] Uh Le- Lena, call my phone. Can you
+[00:22:22] repeat your question?
+[00:22:23] have anything you want to promote?
+[00:22:25] Do you have a website? Do you have a
+[00:22:27] YouTube channel? Do you have anything
+[00:22:29] that you want to promote?
+[00:22:31] Oh, yeah.
+[00:22:32] Um my YouTube channel, um Jela Stock.
+[00:22:36] Mm.
+[00:22:37] I've spent 5 years to build this YouTube
+[00:22:40] channel. I selflessly shared my trading
+[00:22:44] tips, and also, more importantly, the
+[00:22:47] trading psych- my trading psychology. I
+[00:22:50] think this is very important. Um I want
+[00:22:52] to um inspire more people to get to
+[00:22:56] experience the trading market.
+[00:22:59] Okay, is there anything that you have
+[00:23:02] not said that you'd like to add to what
+[00:23:04] you've said so far?
+[00:23:07] Well, I want to share my perspective on
+[00:23:11] paper trade or trading simulators.
+[00:23:15] Which uh I think above all else the
+[00:23:17] psychology of trading is very important.
+[00:23:20] It's more important than the practice.
+[00:23:24] Well, above all the trades I it still
+[00:23:27] um springs to my mind I I can't forget
+[00:23:30] my mistake made on trading the
+[00:23:33] CrowdStrike um stock because I didn't
+[00:23:36] follow my own rules and I I I failed.
+[00:23:41] So, um the um the psychology at the end
+[00:23:44] of the day is more important than
+[00:23:46] anything else.
+[00:23:48] If you trade by the paper, not by real
+[00:23:51] money, you won't be feeling you won't be
+[00:23:54] experiencing the true feelings that it
+[00:23:57] how how much it hurts when you lose a
+[00:24:00] stock.
+[00:24:02] I lose money on the stock.
+[00:24:04] So, I won't recommend um
+[00:24:07] uh I won't recommend uh
+[00:24:09] people new beginners to trade with a big
+[00:24:12] portion of money, but I I I think it is
+[00:24:16] very important to to learn trading with
+[00:24:18] real money but in a small position.
+[00:24:22] I In my earlier years I I didn't um
+[00:24:26] I didn't control um
+[00:24:29] the entire p- uh my the how much money
+[00:24:31] that I invested um in the market. And at
+[00:24:34] the end I lost almost lost all of my
+[00:24:38] savings in my early years. So, um
+[00:24:41] you have to be cautious.
+[00:24:43] Can I ask you one more question before
+[00:24:45] we leave? Your wife is a trader, isn't
+[00:24:47] she?
+[00:24:49] Who's Who's better? Who's better? You or
+[00:24:51] your wife?
+[00:24:54] Yes, she is and I want to share a story.
+[00:24:58] Um, to be very honest, I won't enjoy
+[00:25:01] discussing about stocks um, in my date
+[00:25:03] with her.
+[00:25:06] Well, um, she started to get into the
+[00:25:09] trading uh, market um,
+[00:25:13] at the beginning as my assistant um, on
+[00:25:16] my YouTube channel. She helped me to do
+[00:25:18] animation and cartoons and gave me lots
+[00:25:23] interesting ideas to promote my YouTube
+[00:25:25] channel.
+[00:25:27] I didn't expect
+[00:25:29] that I would have inspired her to be a
+[00:25:32] trader through my YouTube videos. And
+[00:25:36] so, how this is how it goes and she
+[00:25:39] started to turn into the trader with me
+[00:25:43] along with my growth of my YouTube
+[00:25:49] So, she is my student. Aha.
+[00:25:53] I have a happy student.
+[00:25:55] Happy student.
+[00:25:57] Yeah, you say my money to invest.
+[00:26:00] I'm sorry, I didn't quite understand
+[00:26:02] that, but obviously anybody that wants
+[00:26:04] to like learn quickly should marry a top
+[00:26:08] money manager or work with a top money
+[00:26:10] manager.
+[00:26:15] This was wonderful. I want to thank both
+[00:26:16] of you very much.
+[00:26:18] I think we're done. I want to thank the
+[00:26:20] viewers for watching. If you lasted this
+[00:26:22] long, hopefully you learned something or
+[00:26:24] maybe many things.
+[00:26:26] Thank you again.
+[00:26:28] We're going to try to do one more pretty
+[00:26:29] soon, but thank you Mr. Law. Thank you.
+[00:26:32] Thank you.

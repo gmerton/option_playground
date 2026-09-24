@@ -33,6 +33,15 @@ OneOption/Ryan mould. But every *chart* he teaches from is a winner found in hin
 | [If you don't spend time studying historical stock moves…](videos/2020-07-02_zxqFTq59gZU/notes.md) | 2020-07-02 | **2/5.** ⭐ Primary source for **trail by stock type** (10/20-day for institutional names; 60-min 20/65-EMA for hype) and a 10–15% notional sizing cap. He admits he can't define the undercut & rally. His parabolic shorts lose on camera, matching our 0/10 short universes |
 | [Chat With Traders #212: Breakouts, Home Runs & Exponential Returns](videos/2021-03-01_K0F73Sq90j0/notes.md) | 2021-03-01 | **3.5/5.** ⭐ **The primary-source breakout system**: ORH entry, LOD stop, sell 20–25% into the first burst, trail 10/20-day on the close once the MA catches up. Honest (win rate 25–35%; overriding the trail loses ¾ of the time, which our "extended → tighten" INVERTED confirms). ❌ "Stocks that held up in the correction = almost free money" vs our down-day RS selection **INVERTED** (−3.51pp, t −3.33). Zero evidence |
 
+## Relayed sources
+
+Third parties teaching "Qullamaggie's" setups. Scored the same way, but where they differ from the primary spec
+above, the primary spec wins. Breitstein's relay lives in `data/lance_breitstein/` (see Follow-ups).
+
+| video | relayer | date | verdict |
+|---|---|---|---|
+| [The 1 Change for How I Improve Win Rate Trading Qullamaggie's Breakout Strategy](videos/relayed/2026-07-24_zZls8f2At9k/notes.md) | Jack Corsellis | 2026-07-24 | **1.5/5.** The "one change" is **group/theme confirmation**: take a 5-min ORB only when the whole theme and the index break out together. It isn't in Q's primary spec, which scans bottom-up and needs a *daily* breakout under the ORH. Evidence is one hindsight session where "a dart at any of them" won. It plausibly raises **win rate** (theme and market beta), not expectancy. Nearest evidence: leading-sector breakouts **lose** to bottom-3-sector breakouts by +5.60pp at 63d (same-date, t 2.61), and ORB9 loses to a random minute at t −8.50. Spec for a daily co-breakout test in the notes (~½ day), not queued |
+
 ## ⚠ Outcome and survivorship: read before using anything here
 
 1. **Hindsight catalogue.** His stated method of "back-testing" is an Evernote library of breakouts that worked,

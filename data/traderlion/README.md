@@ -49,6 +49,10 @@ backtests/<slug>/          (created on demand) test scripts + results.
 | Date | Video | Guest | Notes | Verdict |
 |---|---|---|---|---|
 | 2023-10-04 | [The Perfect VCP Trading Setup](https://www.youtube.com/watch?v=M_tD6X0CSOI) (38 min) | Mark Minervini | [notes](videos/interviews/2023-10-04_M_tD6X0CSOI/notes.md) | **2/5.** "VCP" is said once and never defined. FTD + first-to-new-highs is already NULL/UNDERPOWERED here. Useful for: [30:41] "fastest are extended -> wait for a subsequent entry" (= our entry-extension finding). Codable VCP spec + pre-registered test design in the notes (NOT RUN) |
+| 2024-10-09 | [THIS is How Leif Soreide Finds 90%+ Winners (High Tight Flags)](https://www.youtube.com/watch?v=mpe2_FCfpRg) (12 min) | Leif Soreide | [notes](videos/interviews/2024-10-09_mpe2_FCfpRg/notes.md) | **2/5.** "90%+ winners" is never said: the 90% is the *pole's* rise. The most complete HTF definition in these KBs; zero evidence. Codable spec in [setups/soreide_high_tight_flag.md](setups/soreide_high_tight_flag.md) (NOT RUN) |
+| 2024-10-27 | [+222% Return in 27 Days - The High Tight Flag Setup](https://www.youtube.com/watch?v=rdmjsbDVuoU) (50 min) | Leif Soreide | [notes](videos/interviews/2024-10-27_rdmjsbDVuoU/notes.md) | **2/5.** "+222% in 27 days" is not in the video. HTF Masterclass funnel; shows some losers. Management (scale at 1-3R, sell 100%, pyramid) contradicted/NULL here. ⭐ Early low-volume inside-day entry *inside* the flag = the right side of the entry-extension finding |
+| 2025-12-21 | [The Wedge Pop Swing Trading Setup](https://www.youtube.com/watch?v=fYxSQvuwOQc) (66 min) | Oliver Kell | [notes](videos/interviews/2025-12-21_fYxSQvuwOQc/notes.md) | **2.5/5.** Most objective setup in the KB: "the buy is the swing-high break of a tight mini-base, not the MA cross" = a claim with a built-in same-date control. "60-70% losers" matches our book. EMA crossback = pullback FAIL; RS-in-correction INVERTED. Spec in [setups/kell_wedge_pop.md](setups/kell_wedge_pop.md) (NOT RUN) |
+| 2026-02-07 | [+1300% Return in 2 Years (Chris Flanders)](https://www.youtube.com/watch?v=6aOnCK1gv2w) (1h53) | Christian Flanders | [notes](videos/interviews/2026-02-07_6aOnCK1gv2w/notes.md) | **3/5.** Best disclosure in the KB (489 trades, 30.5% win, top 5 trades = the year, losers in depth). Setups rejected here (EP-day ORB = catalyst-day -0.173R + ORB -1.22pp). ⭐ Pony: ~6 round trips in a day, -5% of the account = Gabe's same-day leak; ⭐ 5% monthly drawdown cap. ⚠ USIC 2025 MM +166% conflicts with the MPA write-up's Weissman "winner at +115%" |
 | 2026-07-22 | kCLiSsIZ7L4 | Pradeep Bonde | [review](2026-07-22_bonde_episodic_pivot_review.md) | Episodic pivot; DR-EP tested 2026-09-22 -> NULL |
 | 2026-07-29 | [Trading $100K Into $20M, VCP](https://www.youtube.com/watch?v=uMJXA_I9HDw) | Ritchie II / Hedgepath / Weissman (MPA) | [setup](setups/minervini_vcp_low_risk_entry.md) | 2.5/5 |
 | 2026-09-06 | J-I6iLGjp1Q | Alan Ellman (BCI) | [setup](setups/bci_covered_calls_cash_secured_puts.md) | 1/5 after test |
@@ -63,7 +67,7 @@ backtests/<slug>/          (created on demand) test scripts + results.
 ⚠ Auto-captions **mis-transcribe tickers and numbers constantly** — verify every ticker and every
 dollar figure against the chart discussion before quoting it. Observed in this KB: "DCP" for VCP,
 "three-quarters of a billion" for three-quarters of a *million*, "Mark Mervini/Menervini/Manini"
-for Minervini, "DFW" for the Deepvue platform, "MoniLert" and "Iron/IREN" uncertain.
+for Minervini, "DFW" for the Deepvue platform, "MoniLert" and "Iron/IREN" uncertain. Added 2026-09-23: "ests" = ASTS, "Kors"/"coz" = CORZ, "Iron" = IREN (confirmed in the Flanders video), "Abivac" = ABVX, "Cororeweave" = CRWV, "Wolf" = WULF; Flanders' "risked 75% of my account" = 0.75% (a lost decimal).
 
 ## Per-setup write-up structure
 

@@ -1,0 +1,12 @@
+{
+ "id": "ZF8uKPqAu8M",
+ "title": "I Backtested the ORB Breakout + Pullback Strategy (5 Years of Data)",
+ "channel": "Trading Steady",
+ "channel_url": "https://www.youtube.com/channel/UCSvU0JqZV5pQ9AIOT_7ZPaA",
+ "upload_date": "20250927",
+ "duration": 645,
+ "webpage_url": "https://www.youtube.com/watch?v=ZF8uKPqAu8M",
+ "view_count": 47507,
+ "description": "💻 Get the backtest code:\nPatreon: https://dub.sh/orb-pullback\nGitHub: https://github.com/sponsors/tradingsteady?metadata_youtube=orb-pullback\n\n*ORB Strategy with Breakout, Pullback & Continuation Pattern | 5-Year Backtest Results (S&P 500)*\n\nI’ve been trading the Opening Range Breakout (ORB) strategy for the last 6 months and found it consistently profitable. But one variation I see everywhere online is the breakout + pullback continuation pattern. On paper, it looks like a strong setup — but does it actually hold up in a backtest?\n\nIn this video, I test that exact idea on 5 years of S&P 500 data. I’ll explain the strategy rules, show you how I coded it into my backtester, and walk through the full results.\n\nIf you’ve ever wondered whether waiting for the pullback improves ORB performance, this video will give you the answer.\n\n*What’s in this video?*\n- Quick recap of the basic ORB rules\n- How the breakout + pullback continuation logic works\n- Full 5-year backtest on SPX data\n- Trade examples and equity curve results\n\n*Tools Used for Backtesting*\n- Python\n- Jupyter Notebook\n- Pandas, NumPy, Matplotlib\n\n*Timestamps*\n00:00 Intro\n00:25 ORB Strategy Recap\n01:50 Why Add a Pullback?\n02:20 Pullback and Continuation Rules\n04:00 Backtest Setup\n04:40 Results\n06:10 Trade Review\n07:35 Adding Stop Orders\n\n*Disclaimer*: This video is for educational purposes only and is *not financial advice*. Trading involves risk.",
+ "caption_track": "en-orig (auto)"
+}

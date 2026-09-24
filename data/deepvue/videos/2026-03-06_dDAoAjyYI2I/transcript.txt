@@ -1,0 +1,482 @@
+[00:00:00] [music]
+[00:00:04] Hey everyone, how's it going? Just want
+[00:00:06] to make a quick Dview tutorial on
+[00:00:08] relative measure volatility or RMV. This
+[00:00:10] is an indicator that I created. It's
+[00:00:12] proprietary to the DV platform. And what
+[00:00:15] it aims to do is identify specific price
+[00:00:18] action where the current action is very
+[00:00:22] tight relative to recent price action.
+[00:00:25] And why this is helpful and and very
+[00:00:27] beneficial is the fact that from
+[00:00:30] contraction comes expansion in the
+[00:00:32] market. So these tight areas that RMV
+[00:00:35] identifies are either signs of
+[00:00:37] constructive, you know, price and volume
+[00:00:39] action or potential entry points as
+[00:00:41] well. And they're most important when
+[00:00:43] they're occurring up the right-hand side
+[00:00:45] of a constructive base or within an
+[00:00:48] other constructive setup like after a
+[00:00:50] recent earnings gap. So today in the
+[00:00:53] video, I'm going to show you guys how to
+[00:00:55] set RMV up, why it's useful, and you
+[00:00:57] know, talk through a few kind of recent
+[00:00:59] case studies uh to show exactly how I
+[00:01:02] might use RMV. So, first things first,
+[00:01:04] to add RMV to your charts, I've already
+[00:01:06] got it down below, but let's go ahead
+[00:01:07] and just hide this one. What you want to
+[00:01:09] do is go up here to the indicators icon,
+[00:01:11] give that a click, and then type RMV or
+[00:01:14] type in relative measured volatility.
+[00:01:17] That will work as well. And then click
+[00:01:18] that, and it'll add it to your charts.
+[00:01:20] Uh by default it it might look something
+[00:01:22] like this. You can always doubleclick it
+[00:01:24] and adjust the style, adjust the plot,
+[00:01:27] the thickness. And then what I like to
+[00:01:29] do is really highlight this lowest zone.
+[00:01:32] And I usually do actually 10 to zero.
+[00:01:36] And basically what that tells you is a
+[00:01:39] value of 10 to 0 is very tight. So it's
+[00:01:42] showing relative tight price action when
+[00:01:44] it gets to this lower band. So, I like
+[00:01:46] to really highlight that and I might
+[00:01:48] even turn off, you know, zone one and
+[00:01:50] zone two and yeah, just keep that that
+[00:01:53] last zone there. Um, so something like
+[00:01:55] this where that last tight area here
+[00:01:58] when we get below that 10 level or even
+[00:02:00] that 15 level in some cases, uh, that's
+[00:02:02] what I really want to highlight. So, um,
+[00:02:04] that's how you'd set up RMV. And like I
+[00:02:06] said, this is how I actually have it set
+[00:02:08] up in, um, in my setup where I've got
+[00:02:11] this last band highlighted in blue. Uh
+[00:02:13] so like I mentioned RMV will oscillate
+[00:02:16] below between 100 and zero. Zero means
+[00:02:20] very very tight relative to recent price
+[00:02:22] action and 100 basically means that
+[00:02:24] there's expansion currently going on. So
+[00:02:27] here with Planet Labs PL on this
+[00:02:29] earnings gap up where you had big
+[00:02:31] expansion relative to recent price
+[00:02:32] action. We had a value of RMV of right
+[00:02:36] at 100 which means it's the maximum
+[00:02:38] expansion over the look back period
+[00:02:41] which by default is 15 days down here
+[00:02:44] right before this we had a very tight
+[00:02:48] range tight area here and RMV went so so
+[00:02:51] tight that it went got went right back
+[00:02:54] down to zero. So right before this
+[00:02:56] breakout which of course was due to
+[00:02:57] earnings you know often stocks go tight
+[00:02:59] into earnings because we're waiting
+[00:03:01] information. um as we got tight here,
+[00:03:03] R&amp;V went to zero. Um so let's move on to
+[00:03:06] a little bit after. So basically after
+[00:03:09] this gap up, we're seeing uh the stock
+[00:03:12] calm down a little bit relative to this
+[00:03:14] big expansion and it gets tight in this
+[00:03:16] area, gets, you know, dips below um
+[00:03:20] basically around around that 10 level to
+[00:03:22] 6.5 right here. And then as we carry on,
+[00:03:24] we start to see a range forming right
+[00:03:26] here. So, this is something that market
+[00:03:28] wizards look for is this tight area
+[00:03:31] right above moving averages or within an
+[00:03:34] overall constructive setup. And what RMV
+[00:03:36] aims to do is point out what market
+[00:03:38] wizards see this tight area objectively
+[00:03:41] using a numeric value. So, right here as
+[00:03:44] we go tight, RMV is zero. So, it would
+[00:03:48] get on your radar, you would spot that.
+[00:03:50] And then what you do is whenever RMV
+[00:03:52] goes down to zero or gets very close to
+[00:03:54] zero, what I do is I look for recent key
+[00:03:58] highs that kind of line up. So looking
+[00:04:01] at the past four highs, we have this
+[00:04:02] high, this high, this high, and this
+[00:04:04] high. All of them are basically in their
+[00:04:06] same in the same location. So this would
+[00:04:09] be your RMV pivots or the range pivot.
+[00:04:12] Now, drawing it at this high, you can
+[00:04:14] see that, you know, these highs are a
+[00:04:15] little bit lower than that. So I'd kind
+[00:04:17] of adjust the difference and just set it
+[00:04:19] at kind of this level. And then this
+[00:04:21] would be the potential buy point if the
+[00:04:23] stock breaks through that range. So this
+[00:04:25] would be the range breakout pivot right
+[00:04:28] here. Uh so that's basically how I uh
+[00:04:32] use RMV to identify tight ranges and
+[00:04:35] then you could potentially act on it the
+[00:04:36] next day. We have actually a shake below
+[00:04:38] this low and the 10 EMA and then a
+[00:04:41] breakout through the range. So you could
+[00:04:43] have bought it, you know, undercut rally
+[00:04:44] of the 10 EMA or as it pushed through
+[00:04:46] the range and we keep on going and we're
+[00:04:48] off to the races in a strong stock. But
+[00:04:51] again, the key thing is that this is a
+[00:04:53] relatively new tight area after the
+[00:04:56] stock has shown something special. So
+[00:04:58] tight areas are most important after the
+[00:05:01] stock is you know already shown a
+[00:05:03] winning characteristic like a big
+[00:05:04] earnings gap up or you know is still
+[00:05:07] relatively early in an uptrend where
+[00:05:09] this this gap up kind of started a new
+[00:05:11] uptrend. This is just a few uh days
+[00:05:14] later as a stock is compressing against
+[00:05:16] the 10 EMA. So confluence where we're
+[00:05:18] pulling into a 10 EMA or 21 EMA as we're
+[00:05:22] seeing a tight area. That's always the
+[00:05:24] best possible scenario uh for a
+[00:05:26] potential entry at a range breakout.
+[00:05:29] Now, tightness here, remember, what does
+[00:05:32] RMD show? It basically shows price
+[00:05:34] contraction. That doesn't mean that
+[00:05:36] there's going to be price expansion to
+[00:05:38] the upside. So, that's something that's
+[00:05:40] very important for traders to remember
+[00:05:42] because right here, we initially saw
+[00:05:43] expansion to the downside and then we
+[00:05:45] closed strong. Even the next day, we saw
+[00:05:48] uh a slight gap up, check back below the
+[00:05:50] 10 EMA, and recovery. So contraction
+[00:05:53] here means there's likely going to be
+[00:05:55] expansion. RMV going down below 10
+[00:05:57] likely means there's going to be ext
+[00:05:59] expansion coming in the next few bars.
+[00:06:01] It doesn't necessarily mean that there's
+[00:06:03] going to be expansion to the upside. So
+[00:06:05] that's why we always have to have a
+[00:06:06] stop-loss and you know use our you know
+[00:06:09] awareness about what's going on and
+[00:06:11] determine if we're going to enter it or
+[00:06:13] not. We're not going to blindly say you
+[00:06:15] know we're anticipating a breakout to
+[00:06:17] the upside here. I'm going to put my
+[00:06:18] whole portfolio in here uh at this
+[00:06:20] point. No, we're going to use our our
+[00:06:22] wits and, you know, just understand that
+[00:06:25] the situation is primed for a volatile
+[00:06:28] move. And if it is to the upside, we can
+[00:06:30] play that. Or if we're a short artist
+[00:06:32] and we want to, you know, participate to
+[00:06:34] the short side, say this tight area is
+[00:06:36] happening just above or sorry, just
+[00:06:39] below a declining 50 SMA, that could be
+[00:06:42] a prime setup for a short side trade as
+[00:06:45] we expand to the downside below that
+[00:06:47] range. So either way can work, but
+[00:06:49] that's kind of how um RMV is uh is very
+[00:06:52] useful to identify these pivots. Um so
+[00:06:54] actually I often kind of highlight both
+[00:06:57] the low and the high of a range once RMV
+[00:07:01] goes down to zero. So let's keep going.
+[00:07:03] We're seeing more expansion to the
+[00:07:05] upside here. Let's let's go one more
+[00:07:07] example with R&amp;V goes down to zero here.
+[00:07:10] So R&amp;V is declining. We're seeing looks
+[00:07:12] like a nice upside reversal, then a push
+[00:07:15] higher, and then a tight inside day. So
+[00:07:18] again, R&amp;B is going down to zero. I
+[00:07:19] actually already drew in this pivot.
+[00:07:22] These are where these highs up uh these
+[00:07:23] highs line up. So this is a potential
+[00:07:25] buy point. Um and it's situated right as
+[00:07:28] all the moving averages are converging
+[00:07:30] here uh right above the 50 SMA. So that
+[00:07:32] would be a potential buy point. And what
+[00:07:34] do we get the next day? We get expansion
+[00:07:36] this time to the upside. And PL has kind
+[00:07:39] of grinded higher. we retested the R&amp;B
+[00:07:41] pivot and I've often noticed that after
+[00:07:43] we break through a range like this, it
+[00:07:46] often flips to support if we do get a
+[00:07:48] retest. So, that's another thing to look
+[00:07:50] out for. Um, and so far PL hasn't done
+[00:07:52] much from uh this just kind of grinding
+[00:07:54] higher above the 50 SMA. Uh, but you
+[00:07:56] know, if you entered here with a stop at
+[00:07:58] the 50 SMA or this low, you know, you're
+[00:08:01] still in it and it's starting to move up
+[00:08:03] the right hand side of the base. A
+[00:08:04] little bit of volatility here today. We
+[00:08:05] actually saw a contract here with these
+[00:08:07] double inside days basically and then we
+[00:08:09] saw a little bit of expansion to the
+[00:08:11] downside here with PL. Let's show one
+[00:08:14] more example here with uh GLW
+[00:08:17] and talk through a little bit more how I
+[00:08:19] use this. So one thing to note is there
+[00:08:21] is um a look back period of 15 days.
+[00:08:24] Typically, that's the default. But after
+[00:08:26] recent gap ups, because this is such
+[00:08:29] extreme volatility, it's going to skew
+[00:08:31] that number, that reading for quite some
+[00:08:34] time until uh this is no longer a part
+[00:08:36] of the look back period. So, for IPOs
+[00:08:39] that don't have, you know, 15 days yet
+[00:08:41] or for recent gap ups, I like to
+[00:08:43] actually switch RMV over to an RMV5
+[00:08:47] here. And what that does is it makes
+[00:08:50] this indicator a lot more sensitive and
+[00:08:52] helps you spot those tight areas shortly
+[00:08:54] after gap ups that much better. So here
+[00:08:56] we go. We've got an inside day.
+[00:08:58] Volatility is coming down a little bit.
+[00:08:59] R&amp;V is going down. Here we've got an
+[00:09:01] upside reversal. It's still coming down
+[00:09:03] a little bit because overall we are
+[00:09:05] tightening. And then look look at what
+[00:09:07] happens here. We get an R&amp;V value of
+[00:09:09] 1.83. So very very tight. Again,
+[00:09:12] anything close to zero is showing you
+[00:09:14] that there's a tight range forming. What
+[00:09:16] do we do when RMV goes down to zero? We
+[00:09:18] look to see if there's any key highs
+[00:09:20] that could be range pivots. And for me,
+[00:09:23] this is where the art of, you know,
+[00:09:24] chart reading comes into play.
+[00:09:27] I would spot this high as the key kind
+[00:09:29] of turning point for this recent range
+[00:09:32] here. And the low is kind of the low of
+[00:09:34] this day here, which also, you know,
+[00:09:36] this could also be the low of the recent
+[00:09:37] range. But this would be the buy pivot
+[00:09:39] to the upside. What happens the next
+[00:09:41] day? Expansion. It's amazing how we see
+[00:09:44] expansion after RMV5 or RMV 10 or RMV15
+[00:09:48] goes to zero and we get expansion. This
+[00:09:50] is kind of a U-turn and we're off to the
+[00:09:52] races and we actually get another retest
+[00:09:55] here. So remember, if we get a pullback
+[00:09:57] to R&amp;B pivot, if you miss that initial
+[00:09:59] move higher, this could be a spot to
+[00:10:01] enter, especially when there's
+[00:10:03] confluence of a key moving average like
+[00:10:04] the 10 EMA. And after that retest, boom,
+[00:10:07] we're off to the races. And this one
+[00:10:09] actually set up another tight area. What
+[00:10:11] what happens during this area? All of
+[00:10:13] this is tight and all of this is RMD
+[00:10:15] basically equals zero. We get another
+[00:10:17] expansion. We push higher, have a nice I
+[00:10:20] think 15% move, 20% move higher, and now
+[00:10:24] we're kind of pulling back and retesting
+[00:10:26] the 21 EMA. And we're actually kind of
+[00:10:28] retesting this pivot here, which is
+[00:10:31] interesting. So, we'll see if this
+[00:10:33] support holds. Um, you know, this little
+[00:10:35] bit of weak action. We've got a gap down
+[00:10:36] here, unfilled gap down here. Um, so
+[00:10:39] this might not hold. uh but it is a key
+[00:10:41] level to keep an eye on. But the main
+[00:10:43] thing I want to show is RMV5 for recent
+[00:10:45] gap ups and how it can also flip to
+[00:10:48] support especially when there's strong
+[00:10:50] confluence and if you bought here stop
+[00:10:52] here you know you're not you're you're
+[00:10:54] testing your costs a little bit but it
+[00:10:56] never tests your stop and you're off to
+[00:10:58] the races and in a nice move. Uh so that
+[00:11:01] is RMV at its base. Again 100 means
+[00:11:04] expansion. Uh zero means contraction.
+[00:11:07] And the awesome thing about Deep View is
+[00:11:09] not only can you use this as an
+[00:11:10] indicator on your charts, but you can
+[00:11:13] actually screen by it. You can say,
+[00:11:15] "Show me all stocks that have um
+[00:11:17] momentum or, you know, absolute strength
+[00:11:20] rating over 90 over the past month and
+[00:11:22] RMV less than 10." Or what I like to do
+[00:11:25] is I go over to the DV leader screen,
+[00:11:27] which is a great kind of general
+[00:11:29] momentum screen.
+[00:11:31] And what I'll do is I'll add RMV to my
+[00:11:35] column and I'll sort by it. And there we
+[00:11:38] go. So now I'm sorting, you know,
+[00:11:40] highest R&amp;V to lowest. That will show
+[00:11:42] stocks that are expanding to the upside
+[00:11:44] or downside. Air expanded to the
+[00:11:46] downside today. So did uh Sienna uh CRS
+[00:11:49] a little bit of expansion relative to
+[00:11:51] the recent price action. DG breaking
+[00:11:52] down as well. But sorting it from lowest
+[00:11:55] to highest does the opposite. So these
+[00:11:57] are stocks that are showing tight areas.
+[00:11:59] And what do all market wizards say? They
+[00:12:01] look for in charts tight areas up the
+[00:12:03] right hand sides of bases or after
+[00:12:05] abnormal price action. So AOI recent
+[00:12:08] expansion tightening now. Um now it
+[00:12:11] might need a little bit more time. Let
+[00:12:12] that 10A catch up but this is a stock to
+[00:12:15] keep an eye on as it's forming this
+[00:12:16] tight range. BE tight on the right hand
+[00:12:18] side of a base right near the 21 EMA. I
+[00:12:21] love tight areas. RMV0 right near um you
+[00:12:24] know 21 EMAs. And let's switch back to
+[00:12:27] RMV15 here.
+[00:12:30] And you can see this is the tightest BE
+[00:12:32] has been since this area here. So very
+[00:12:36] interesting. So what I would do again
+[00:12:37] once there's a tight area that's formed,
+[00:12:39] you look for highs that are lining up.
+[00:12:41] That's these highs right here. And this
+[00:12:43] is a potential buy point. Um you know,
+[00:12:44] again, we don't know if there's going to
+[00:12:46] be expansion to the upside, but likely
+[00:12:48] over the next few days, there's going to
+[00:12:49] be expansion
+[00:12:51] from this recent range here in BE.
+[00:12:54] That's what tight coiled action is good
+[00:12:57] for is there's going to be volatility to
+[00:12:59] the upside or to the downside. And we
+[00:13:01] can play the upside and and get a nice
+[00:13:03] position on uh in a strong stock. That's
+[00:13:05] what you're trying to pair this a strong
+[00:13:07] stock with a strong setup. Then look for
+[00:13:09] an RMV um zero tight range. Let's just
+[00:13:13] space bar through. Camch uh tightening
+[00:13:15] over the last few days. Uh Dan
+[00:13:17] tightening over the last few days. All
+[00:13:18] right. Dell, another interesting one.
+[00:13:20] We've got recent expansion, recent
+[00:13:22] earnings gap. Now we've got basically a
+[00:13:24] few tight closes here. It's tightening
+[00:13:26] overall. I would say that, you know,
+[00:13:28] this is the high of the range and this
+[00:13:31] also lines up with the HVC level. So,
+[00:13:33] we're looking for um areas of
+[00:13:36] confluence. So, these highs pretty much
+[00:13:38] line up with the HVC. So, this would be
+[00:13:41] a potential buy point here uh to the
+[00:13:43] upside here with Dell. Uh figs
+[00:13:45] tightening up again, but a little bit
+[00:13:46] stretched from the moving averages, but
+[00:13:47] definitely tightening up. IRM tightening
+[00:13:49] up above the 21 EMA. uh pump, you know,
+[00:13:52] all these are showing tight areas
+[00:13:53] overall. Uh Pterodine, interesting, you
+[00:13:56] know, kind of a tight spot on the 21
+[00:13:57] EMA. We do have some recent gap downs.
+[00:14:00] So, you always want to consider the
+[00:14:01] overall chart. How is a stock acting
+[00:14:03] overall? This has some recent gap down.
+[00:14:05] So, I might avoid this even though there
+[00:14:08] still could be expansion to the upside.
+[00:14:10] And often really oversold stocks when
+[00:14:12] they form a tight range that can that
+[00:14:14] can also show that there's likely to be
+[00:14:16] strong expansion in the next few days.
+[00:14:18] uh twist tight range over the past two
+[00:14:20] days. Um SLDE again uh you know cup and
+[00:14:23] handle you know a little bit whippy.
+[00:14:25] This is a little bit weird of a looking
+[00:14:26] stock to my eye but it's tightening up
+[00:14:28] the right hand side here. LB tightening
+[00:14:30] above the 10 EMA. Uh Line tightening up
+[00:14:33] here basically double inside days. Uh
+[00:14:35] Agys um BIN tightening up here after a
+[00:14:39] nice expansion higher. Uh Cava you know
+[00:14:41] recent gapper here. Uh so again, this
+[00:14:43] would be one where you'd want to change
+[00:14:44] from RMV15
+[00:14:47] to RM5.
+[00:14:49] And it's still tightening up. You've got
+[00:14:50] a little bit of a fade here, but this to
+[00:14:53] me, to my eye, is that pivot for this
+[00:14:55] recent range that is forming. And it's
+[00:14:57] forming this kind of right above the low
+[00:15:00] of this gap up day. So you won't always
+[00:15:02] want to kind of consider all the the key
+[00:15:04] levels that are in play currently. Uh
+[00:15:06] Fastly tightening up recently. Uh you
+[00:15:08] also had a tight area in this this spot
+[00:15:10] where we had expansion shortly to the
+[00:15:12] downside. FTDR uh you know expansion uh
+[00:15:15] you know contraction right here after
+[00:15:16] this expansion and so on and so on. So
+[00:15:19] this is a great way to speed up your
+[00:15:21] workflow if you're looking to trade
+[00:15:23] earnings gaps you know after that move
+[00:15:25] up and you're looking for that tight
+[00:15:26] area or you're looking for a tight area
+[00:15:28] up the right hand side of the base
+[00:15:30] because as we're sorting by RMV we're
+[00:15:32] going from tight charts to more
+[00:15:36] expansion. And if I actually let's go
+[00:15:38] all the way down to 75. So these are now
+[00:15:41] stocks that relative to recent price
+[00:15:43] action, they're expanding over the past
+[00:15:45] few bars. Um so these are stocks that
+[00:15:48] are not tight and not really ready for
+[00:15:50] potential entries. Uh so that's the
+[00:15:52] benefit of RMV is it can save you a lot
+[00:15:54] of time during your screening process
+[00:15:55] and during your daily routine to find
+[00:15:57] those tight spots, you know, that much
+[00:15:59] faster. Um so that's a quick run through
+[00:16:01] of that.
+[00:16:03] And like I said, you can also scan scan
+[00:16:05] using RMV. Let's just make a quick new
+[00:16:09] screen. And let's say RMV tutorial.
+[00:16:14] Click save. And let's go ahead and type
+[00:16:17] in relative
+[00:16:20] measured volatility 15 days. And let's
+[00:16:23] do less than 10.
+[00:16:26] Let's do
+[00:16:28] dollar volume
+[00:16:32] average 20-day greater than let's do 40
+[00:16:36] million
+[00:16:39] and let's do
+[00:16:42] absolute
+[00:16:45] or as rating or let's just go sorry I
+[00:16:49] can't type today. Uh let's just go down
+[00:16:51] here
+[00:16:55] and go to
+[00:16:58] where is this performance rating as
+[00:17:00] rating let's do 3 month greater than 90.
+[00:17:04] There we go. So this is high momentum
+[00:17:06] stocks with now RMV less than 10. Let's
+[00:17:08] go ahead and save screen. And what I had
+[00:17:11] to do is change the RMV to be greater
+[00:17:13] than 10 to actually uh the range 0 to
+[00:17:16] 10. I just went down here, clicked range
+[00:17:18] and 0 to 10, and let's go ahead and
+[00:17:22] confirm that and save screen. And now
+[00:17:24] let's go ahead and sort the results by
+[00:17:28] RMV 15day. And now all these results are
+[00:17:31] the stocks with high momentum
+[00:17:33] that now are forming tight ranges. So
+[00:17:35] this could be a very great specialist
+[00:17:37] screen. If you love trading these tight
+[00:17:38] areas, just go ahead and run this every
+[00:17:40] single day. Again, here is the results
+[00:17:43] of uh or here's the filters that creates
+[00:17:45] this screen. Um and for instance,
+[00:17:48] another variation of this is you could
+[00:17:49] look for uh all this criteria, but also
+[00:17:52] within a few percent or few ADR from
+[00:17:54] that 21 EMA. That would be another layer
+[00:17:56] that you could add to this screen. Uh
+[00:17:59] perfect. So, that's a little bit about
+[00:18:01] relative measure volatility. Hopefully,
+[00:18:02] this gives you some ideas. It saves
+[00:18:04] people a lot of time, RMV. It saves me a
+[00:18:06] lot of time every single day. Uh so,
+[00:18:07] hopefully it does for you as well. Uh
+[00:18:09] thanks so much for watching. Leave a
+[00:18:11] like down below if you enjoyed.
+[00:18:12] Subscribe if you're new to the channel.
+[00:18:13] And also, if you're not already part of
+[00:18:15] DFW, check out a great special offer
+[00:18:17] down below in the description. And with
+[00:18:19] that, thanks again for watching, and
+[00:18:20] I'll see you guys in the next one.
+[00:18:21] Cheers.
