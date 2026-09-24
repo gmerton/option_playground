@@ -218,6 +218,9 @@ disagree in direction. Section refs are to `data/studies/TEST_INDEX.md`.
    (C1), and at the low end it's a **buy** signal (C2). "Rich" per-name events are the worst sales at real fills
    (C4). The only per-name gate with a positive sign (C3) isn't certified and loses in 2021-22. What does sort
    single names is **absolute price** (credit/width), and it works best exactly where IV rank says don't trade.
+   ⚠ **2026-09-24:** scored against the stock held at the same delta, that sort is **beta**, not premium
+   (`optionsplay_spec_2026-09-24`: excess Q5−Q1 t 1.00, floor arm −2.68pp; `csp_yield_rank_2026-09-24`: t 0.65).
+   It avoids badly priced spreads; it does not harvest a premium.
 4. **Net answer to Gabe:** Sosnoff's rule is right in one place and misstated everywhere else. The correct form
    our data supports is **"sell *index* put risk when the VIX *level* is high *and* the index has already sold
    off; never rank single names by their own IV."** It isn't "sell whatever has high IV rank". None of the five

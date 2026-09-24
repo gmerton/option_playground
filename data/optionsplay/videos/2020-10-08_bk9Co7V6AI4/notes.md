@@ -98,3 +98,6 @@ axis (see the test candidate below). **His exit rule is not new.** It is already
 2. **Not new, don't re-test:** IV rank as a sort (ivrank-vs-cw row), oversold entry (RSI row, a VIX proxy), the
    2×-credit stop (ETF put-spread rows), POP (doctrine rule 14), earnings avoidance (§9).
 3. **Pending, not new:** the 21-DTE leg of his exit waits on [FIX-1] (TEST_INDEX §10).
+
+## ✅ Test run 2026-09-24: NULL, negative sign
+`run_optionsplay_spec.py` → [`optionsplay_spec_2026-09-24.md`](../../../studies/optionsplay_spec_2026-09-24.md). His exact spec (50Δ/25Δ, ~45 DTE, cw ≥ 0.33) earns +9.45% on capital but **−2.68pp vs the stock held at the same net delta (month-weighted t −2.21)**, negative in 7 of 8 years. The floor and the quintile sort select high-beta names; the option structure adds nothing.
