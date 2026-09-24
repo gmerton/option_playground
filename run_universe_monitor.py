@@ -13,7 +13,8 @@ Detectors: long = UR (undercut & reclaim), ORB9 (opening-range break above the d
 through the 15-session pivot or a hand level -- data/watchlist/levels.csv `ticker,level,note` + alerts_latest.csv
 buy-stop rows -- above VWAP on 1.1x+ volume pace; tagged PRECISION for the validated Adhikary cohort);
 short = BIR (bounce into a declining MA, first violation of higher lows; short universe only),
-FBO (failed breakout of the prior-day high / opening range). ⛔ RETIRED AS A SHORT ENTRY 2026-09-23 --
+FBO (failed breakout of the prior-day high / opening range). ⛔ OFF BY DEFAULT since 2026-09-24 (not in --detectors).
+    RETIRED AS A SHORT ENTRY 2026-09-23 --
     -0.148%/trade on 3,175 curated alerts, WORSE than control in both halves, no stop floor helps
     (data/studies/alert_triggers_2026-09-23.md). It now fires only on LONG-universe names, where it
     serves its other role as the exit tell for a long -- a role that study did not measure.
@@ -565,7 +566,9 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("symbols", nargs="*", help="explicit symbols (live: overrides the universe)")
     ap.add_argument("--replay", metavar="YYYY-MM-DD", help="replay a past session from Tradier 1-min bars")
-    ap.add_argument("--detectors", default="ur,orb9,lvl,bir,fbo,para", help="comma list of ur,orb9,lvl (long) and bir,fbo,para (short)")
+    # FBO switched OFF by default 2026-09-24 (Gabe): retired as a short entry 9/23 and still scoring -1.69% cumulative
+    # on the live scorecard; its exit-tell role was never measured. Re-enable with --detectors ur,orb9,lvl,bir,fbo,para
+    ap.add_argument("--detectors", default="ur,orb9,lvl,bir,para", help="comma list of ur,orb9,lvl (long) and bir,fbo,para (short); fbo is OFF by default since 2026-09-24")
     ap.add_argument("--tag", default="", help="replay: write logs as universe_alerts_<date>_replay_<tag>*.log (keeps the study's replay logs intact)")
     ap.add_argument("--no-rebuild", action="store_true", help="use universe_latest.txt as-is")
     ap.add_argument("--full", action="store_true", help="preferred-list union instead of universe_focus.txt")
