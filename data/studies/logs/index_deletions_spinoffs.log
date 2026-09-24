@@ -1,0 +1,13 @@
+# Undervalued #5: forced selling -- S&P 500 deletions and spin-offs (pre-registration in the docstring)
+
+(a) DELETIONS for market cap since 2010: 124 on the list, 76 in the panel with prices
+  20 sessions INTO the rebalance close: -0.32% raw (median +2.05)
+  PRIMARY 60d excess from the rebalance close: -0.94pp (median -1.61), t -0.44, 41% +; halves +2.61 (n 11) / -1.57 (n 62)
+  bar (t >= 3, both halves > 0): FAIL
+  20d -0.61 (t -0.50) | 120d +2.20 (t +0.61) | 60d from the effective-date close -1.26 (t -0.59)
+  per year 60d: 2010 +nan (n 1.0)  2013 +8.0 (n 3.0)  2014 -2.8 (n 3.0)  2017 +2.6 (n 6.0)  2018 +19.0 (n 3.0)  2019 -9.6 (n 4.0)  2020 -5.6 (n 6.0)  2021 -1.6 (n 7.0)  2022 +12.5 (n 3.0)  2023 -20.6 (n 8.0)  2024 +5.5 (n 12.0)  2025 +0.0 (n 12.0)  2026 -1.4 (n 8.0)
+
+(b) SPIN-OFFS added to the S&P 500 since 2010: 20 on the list, 17 in the panel
+  first 20 sessions (the dumping window): -2.60% raw
+  60d excess from session 20: +10.16pp (t +1.26, n 17); 120d +22.93pp (t +2.12, n 16)
+  Q +56, SOLS +53, GEV +74, SOLV +3, VLTO +10, GEHC +3, CEG +97, OGN +6, VNT -55, OTIS -5, CARR +78, FOXA -12, FOX +0, ADT -37, PSX +34, TRIP +62
