@@ -3,6 +3,10 @@
 # Requires: AWS_PROFILE, TRADIER_API_KEY, MYSQL_PASSWORD in the environment; TWS/Gateway open on Fridays (straddle screen); .venv activated or use the paths below.
 set -u
 cd "$(dirname "$0")"
+# secrets live in ~/.trading_env; load them here like start_alerts.sh / morning_journal.sh do, so the desk does not
+# depend on the launching shell (2026-09-24: the GEX paper-trade step had logged nothing since it was added 9/21)
+if [ -f "$HOME/.trading_env" ]; then set +u; source "$HOME/.trading_env"; set -u; fi
+for v in TRADIER_API_KEY MYSQL_PASSWORD; do [ -n "${!v:-}" ] || echo "  ⚠ $v is not set -- add it to ~/.trading_env"; done
 PY=.venv/bin/python3; export PYTHONPATH=src
 D=$(date +%F); OUT=data/watchlist; mkdir -p "$OUT"
 # The regime read and the liquid-panel build read the local copy of the nightly Lambda day-matrix; pull it first
@@ -31,7 +35,13 @@ fi
 # SPY positive-gamma 1-day iron fly, forward paper trade (data/studies/gex_spy_ironfly_2026-09-21.md): settle due
 # trades, compute live GEX, log the signal and a paper fly if gamma is positive. Needs 15:30 ET or later; idempotent.
 echo "== 0 GEX iron-fly paper trade"
-$PY run_gex_fly_paper.py --close 2>&1 | grep -v "^\[dry\]" | tail -6
+mkdir -p "$OUT/logs"; GEX_LOG="$OUT/logs/gex_fly_$D.log"
+if $PY run_gex_fly_paper.py --close >"$GEX_LOG" 2>&1; then
+  tail -6 "$GEX_LOG"
+else
+  echo "  ⚠⚠ GEX fly step FAILED -- the forward sample misses tonight. Full output: $GEX_LOG"; tail -12 "$GEX_LOG"
+fi
+[ -f data/paper/gex_fly_signals.csv ] && echo "  signals logged so far: $(($(wc -l < data/paper/gex_fly_signals.csv) - 1))"
 echo "== 1/6 regime read (descriptive; see run_regime_validation.py for why it is not a forecast)"
 $PY run_trailing_retro.py --window 21 2>/dev/null | sed -n 1,25p | tee "$OUT/regime_$D.txt"
 echo; echo "== 1b open book (Flex snapshot + live Tradier marks): what expires and what it is worth"

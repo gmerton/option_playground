@@ -27,7 +27,7 @@ pip install pandas pyarrow awswrangler boto3 sqlparse aiohttp polygon-api-client
 root with `PYTHONPATH=src`.
 
 Secrets live in **`~/.trading_env`** (sourced by the shell profiles and by `start_alerts.sh` /
-`morning_journal.sh`; `daily_desk.sh` and `journal_day.sh` do *not* source it). Keys used:
+`morning_journal.sh` and, since 2026-09-24, `daily_desk.sh`; `journal_day.sh` does *not* source it). Keys used:
 `AWS_PROFILE=clarinut-gmerton`, `TRADIER_API_KEY`, `MYSQL_PASSWORD`, `IBKR_FLEX_TOKEN`, `ANTHROPIC_API_KEY`.
 
 Canonical invocation:
