@@ -64,3 +64,8 @@ risk unit) vs the spread +3.0%/yr (capital = max loss). The spread's capital eff
   control days only (pattern_test's `post`).
 - Caveats: house cost model (25% of bid-ask) governs the spread arm; earnings inside the 30-day window not excluded
   (the live scan flags them); stock R uncapped (capped variants in §"two findings").
+
+## Re-score at the MEASURED slippage (same day)
+
+P − S: **−0.332 (t −1.75) at 0.20**, **−0.318 (t −1.69) at 0.13**; spread net −0.002 / +0.005. Verdict unchanged —
+the spread's problem is the capped tail, not friction. Logs `breakout_putspread_vs_stock_slip20.log` / `_slip13.log`.

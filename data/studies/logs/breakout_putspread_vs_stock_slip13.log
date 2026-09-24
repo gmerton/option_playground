@@ -1,0 +1,41 @@
+precision signals with a valid stock trade: 1,512 (434 names), 2019-10-23 -> 2026-02-13
+# Put spread vs the house stock trade on precision-tier breakouts (pre-registration in the docstring)
+
+signals with a stock trade 1,512; with a tradeable 0.30/0.15 spread 961 (64%), 318 names, 577 dates
+stock R on the excluded (no tradeable spread) signals: +1.393 vs included +0.209  (is the spread subset a different population?)
+
+arm                                     n     mean      t   median   win%   days    worst
+S  stock, house process (R)           961   +0.324   1.69   -1.107   27.8   19.6    -6.76
+P  0.30/0.15 spread, net (ROC)        961   +0.005   0.29   +0.259   75.1   31.4    -1.00
+P  0.30/0.15 spread, GROSS mid        961   +0.027   1.38   +0.282   75.1   31.4    -1.00
+P2 0.45/0.30 spread, net (ROC)      1,107   -0.023  -0.83   +0.448   58.7   31.5    -1.00
+CTL 0.30/0.15, random same-name-month     76   +0.152   3.56   +0.282   86.8   31.8    -1.00
+
+## PRIMARY: ROC(P) - R(S), paired per signal, per $ of risk
+  diff -0.318  t -1.69  (n 961, 577 dates)   halves +0.065 (t +0.39) / -0.606 (t -1.99)  split 2022-03-10
+  per year:
+              n      S      P      d
+trade_date                          
+2019         15 -0.716 -0.108  0.608
+2020        213  0.284  0.144 -0.140
+2021        206 -0.476 -0.032  0.443
+2022         99 -0.211 -0.004  0.207
+2023         96 -0.333 -0.084  0.250
+2024        131  1.291  0.014 -1.277
+2025        154  0.756 -0.027 -0.782
+2026         47  0.343  0.095 -0.249
+  bar |t| >= 3 and halves same sign: FAIL
+
+## SECONDARY (Sidak |t| >= ~2.7 for 3 cells)
+  P2 - S : -0.236  t -1.52  (n 1,107)
+  P - CTL: -0.113  t -3.07  (n 76)  -- does the breakout signal help the spread?
+
+## shape
+  S: p5 -2.53  p25 -1.46  p75 +0.34  p95 +6.22  share <= -0.9 59.5%
+  P: p5 -1.00  p25 +0.00  p75 +0.31  p95 +0.38  share <= -0.9 14.9%
+  stock exits within 5 sessions: 37%  (the 'stopped out often' point)
+  when stock R <= -0.5 (stopped/lost) n   631  S -1.512  P -0.105
+  when stock R > -0.5                 n   330  S +3.498  P +0.251
+
+## capital-time (descriptive): per $ of CAPITAL per year while deployed
+  stock +12.4%/yr (median capital 23x the risk unit)   spread +19.5%/yr (capital = max loss)

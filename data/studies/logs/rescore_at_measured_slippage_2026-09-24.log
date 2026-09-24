@@ -1,0 +1,3 @@
+ETF puts @slip 0.25: HOLD -1.12%  T50 -2.51%  T75 -1.39%  ANN100 -4.28% | HOLD t -0.55 | T50-HOLD -1.42pp t -1.77
+ETF puts @slip 0.20: HOLD -0.46%  T50 -1.65%  T75 -0.36%  ANN100 -3.56% | HOLD t -0.31 | T50-HOLD -1.24pp t -1.49
+ETF puts @slip 0.13: HOLD +0.60%  T50 +0.03%  T75 +1.28%  ANN100 -2.06% | HOLD t +0.10 | T50-HOLD -0.52pp t -0.56

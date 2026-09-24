@@ -96,3 +96,14 @@ gaps; no take could trigger on those days anyway.
 - **Any-day vs Friday entry: NULL.**
 - **The ETF roster put leg after costs: FAILS** (HOLD −1.37%, T50 −2.78% net) — the in-book status of the pair's
   put half needs a decision; this study does not make it.
+
+## Re-score at the MEASURED slippage (2026-09-24, same day; `fill_slippage_2026-09-24.md`: 0.20 vs the pre-fill quote, 0.13 at the fill)
+
+| slippage | HOLD net (t) | T50 net | T75 net | ANN100 net | T50 − HOLD (t) |
+|---|---|---|---|---|---|
+| 0.25 (house) | −1.12% (−0.55) | −2.51% | −1.39% | −4.28% | −1.42pp (−1.77) |
+| **0.20 (measured, fair)** | −0.46% (−0.31) | −1.65% | −0.36% | −3.56% | −1.24pp (−1.49) |
+| 0.13 (measured at fill, best case) | +0.60% (+0.10) | +0.03% | +1.28% | −2.06% | −0.52pp (−0.56) |
+
+**Every verdict stands.** Even at the best-case 0.13 the roster put leg is flat (t 0.10) and the 50% take still trails
+holding. Log `data/studies/logs/rescore_at_measured_slippage_2026-09-24.log`.
