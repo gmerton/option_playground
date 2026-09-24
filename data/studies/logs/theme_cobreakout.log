@@ -1,0 +1,21 @@
+# Theme co-breakout [WL-5h] -- 11,506 house breakouts in 101 industries, 2019-10-16 -> 2026-09-18
+              n  mean_pct    win     R   f10   f21   f63  win10
+arm                                                            
+CONFIRMED  3537      0.63  31.35  0.03  0.43  1.10  3.24  51.17
+LONE       3492      0.55  32.16  0.08  0.53  0.82  4.53  51.03
+middle     4477      0.22  32.59  0.04  0.20  0.53  2.95  49.61
+
+## PRIMARY: CONFIRMED - LONE, same-date paired
+20-EMA trail %         dates  661 | CONFIRMED +1.75 vs LONE +0.15 | diff +1.607 t +1.80 | halves +2.355 / +1.065
+R (floor 2%, cap 20)   dates  661 | CONFIRMED +0.17 vs LONE +0.01 | diff +0.154 t +1.40 | halves +0.162 / +0.147
+fixed 10d %            dates  661 | CONFIRMED +0.60 vs LONE +0.59 | diff +0.009 t +0.02 | halves +0.516 / -0.359
+fixed 21d %            dates  661 | CONFIRMED +1.14 vs LONE +0.63 | diff +0.507 t +0.88 | halves +0.043 / +0.844
+fixed 63d %            dates  661 | CONFIRMED +3.57 vs LONE +4.13 | diff -0.565 t -0.42 | halves +0.727 / -1.503
+per year (CONFIRMED - LONE, 20-EMA %):
+date   2019   2020    2021   2022   2023   2024    2025   2026
+size  30.00  72.00  113.00  63.00  66.00  111.0  111.00  95.00
+mean   1.26   8.76   -0.21   0.15   1.15    1.7   -0.17   1.71
+win rate (same dates): CONFIRMED 34.0% vs LONE 31.9% | diff t +1.14
+
+## theme-day control: CONFIRMED breakouts vs same-group NON-breakout names, same close, same stop %
+n 3451 | CONFIRMED +0.66% vs same-group non-breakout +0.16% | diff +1.121 t +1.78 | halves +1.841 / +0.556
