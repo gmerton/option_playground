@@ -1,0 +1,83 @@
+# RMV gate [WL-3a] -- 42,876 house breakouts, 1455 names, 2019-10-01 -> 2026-09-18; all-breakout mean +0.57%
+gated share 40.6%
+
+## PRIMARY: gated vs ungated, same date, other names, % per trade
+dates 1417 | gated +0.63 vs ungated +1.05 | diff -0.43 t -1.43 | halves -1.08/+0.09
+per year:
+date   2019    2020    2021    2022    2023    2024    2025    2026
+size  48.00  207.00  203.00  171.00  198.00  194.00  219.00  177.00
+mean  -4.58   -1.06   -0.99   -0.21   -0.88    1.07    0.58   -0.51
+held-the-level share (date-matched): gated 12.3% vs ungated 14.0% | diff -1.7pp t -2.83
+R (stop floor 2%, cap 20): gated +0.090 vs ungated +0.180 | diff -0.090 t -1.46
+
+## confound check (pre-declared)
+         ext  stop_adr    adr
+g                            
+False  0.337     0.797  4.029
+True   0.303     0.725  4.139
+primary within extension terciles:
+  low ext  dates 1128 | gated +0.46 vs ungated +0.51 | diff -0.06 t -0.15 | halves -0.07/-0.05
+  mid ext  dates 1063 | gated +0.17 vs ungated +0.70 | diff -0.53 t -1.52 | halves -0.60/-0.49
+  high ext dates  968 | gated +0.66 vs ungated +1.21 | diff -0.55 t -0.95 | halves -0.89/-0.32
+secondary, ADR-tercile-matched within date: dates 1342 | gated +0.69 vs ungated +0.95 | diff -0.38 t -1.13 | halves -1.02/+0.11
+
+## exploratory (Sidak k = 8, |t| ~ 2.9; no verdict of their own)
+  RMV5<=10                     share 60.2% | dates 1472 | gated +0.54 vs ungated +1.10 | diff -0.56 t -1.76 | halves -1.29/+0.00
+  RMV15<=5                     share 31.7% | dates 1361 | gated +0.75 vs ungated +0.79 | diff -0.04 t -0.13 | halves -0.40/+0.25
+  RMV15<=15                    share 49.1% | dates 1448 | gated +0.40 vs ungated +1.10 | diff -0.70 t -2.52 | halves -1.04/-0.43
+  inner 1-bar TR, RMV15<=10    share 49.7% | dates 1451 | gated +0.94 vs ungated +0.96 | diff -0.02 t -0.06 | halves -0.43/+0.29
+  inner ATR3, RMV15<=10        share 41.1% | dates 1394 | gated +0.77 vs ungated +0.91 | diff -0.14 t -0.46 | halves -0.47/+0.11
+  Brandt ADX14<=12 (t-1)       share  4.7% | dates  784 | gated +2.13 vs ungated +0.65 | diff +1.48 t +2.87 | halves +0.68/+2.15
+
+
+# harness rows (paired rule; gated breakouts; close entry, day-low stop, hold 60)
+control = post (strata: median 19 candidates, 3 paired per signal)
+
+=== rmv15 gate on house breakout (daily) — 16,003 signals, 1315 names, 2019-10-01 -> 2026-06-22 ===
+                 n  meanR   medR     win    p90       t   ctrl   edge  p_edge  edge_t
+stop_hold  16003.0 -0.052 -1.293  21.615  6.862  -2.315  0.023 -0.075  -0.075   0.559
+t1R        16003.0 -0.361 -1.025  49.509  1.000 -13.101 -0.321 -0.040  -0.040   0.797
+t2R        16003.0 -0.270 -1.138  38.893  2.000  -8.312 -0.209 -0.061  -0.061  -0.575
+trail_bar  16003.0 -0.109 -0.545  34.044  2.380  -2.012 -0.048 -0.062  -0.062  -0.753
+ema20      16003.0 -0.142 -1.141  27.482  3.852  -2.231 -0.044 -0.097  -0.097  -0.857
+
+by half (n 7767 / 8236):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.302         0.183
+t1R             -0.428        -0.298
+t2R             -0.373        -0.172
+trail_bar       -0.296         0.066
+ema20           -0.487         0.184
+
+paired edge by half (t1R): -0.086 / +0.004 | best-arm paired edge t +0.80 | p_search (best of 5 arms, 2000 label perms) 0.4938
+paired edge by year (t1R; chronological halves miss a back-half regime):
+y        2019      2020      2021      2022      2023      2024      2025      2026
+size  186.000  3494.000  1630.000  2457.000  1599.000  1314.000  3250.000  2073.000
+mean   -0.158    -0.111    -0.032    -0.082     0.022    -0.208     0.065     0.029
+
+best arm: t1R | passes the bar (paired edge t >= 3, both halves' paired edge > 0, p_search < 0.003): no
+control = xname (strata: median 20 candidates, 3 paired per signal)
+
+=== rmv15 gate on house breakout xname (daily) — 17,205 signals, 1367 names, 2019-10-01 -> 2026-09-18 ===
+                 n  meanR   medR     win    p90       t   ctrl   edge  p_edge  edge_t
+stop_hold  17205.0 -0.099 -1.289  21.279  6.533  -2.628 -0.069 -0.029  -0.029  -1.451
+t1R        17205.0 -0.374 -1.033  48.916  1.000 -13.812 -0.296 -0.078  -0.078  -3.898
+t2R        17205.0 -0.290 -1.141  38.268  2.000  -8.776 -0.205 -0.085  -0.085  -4.366
+trail_bar  17205.0 -0.129 -0.554  33.618  2.306  -2.285 -0.101 -0.028  -0.028  -1.394
+ema20      17205.0 -0.178 -1.143  26.969  3.646  -2.608 -0.168 -0.010  -0.010  -0.923
+
+by half (n 7777 / 9428):
+           <2023-01-01  >=2023-01-01
+stop_hold       -0.302         0.069
+t1R             -0.428        -0.328
+t2R             -0.373        -0.222
+trail_bar       -0.296         0.009
+ema20           -0.486         0.076
+
+paired edge by half (ema20): -0.209 / +0.154 | best-arm paired edge t -0.92 | p_search (best of 5 arms, 2000 label perms) 0.9770
+paired edge by year (ema20; chronological halves miss a back-half regime):
+y        2019      2020      2021      2022      2023      2024     2025      2026
+size  186.000  3498.000  1634.000  2459.000  1600.000  1315.000  3255.00  3258.000
+mean   -0.163    -0.021    -0.345    -0.388     0.059    -0.132     0.44     0.031
+
+best arm: ema20 | passes the bar (paired edge t >= 3, both halves' paired edge > 0, p_search < 0.003): no

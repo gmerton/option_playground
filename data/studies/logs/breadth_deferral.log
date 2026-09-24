@@ -1,0 +1,36 @@
+# Breadth deferral [WL-3b] -- b5 median 0.55, share of days >= 0.80: 11.8%, >= 0.90: 2.6%
+precision-tier breakouts 2,014; mean +2.76%
+
+## PRIMARY: b5 >= 0.80 -- 251 breakouts on 116 dates
+B_status
+entered                 163
+stopped before entry     51
+abandoned                37
+A (enter now) +1.54% | B (defer) -0.30% incl. abandoned at 0 | A - B +3.03pp t +1.24 | halves -0.93/+7.73
+  entered-only: A -1.15% vs B -0.46% (n 163); abandoned names' A +24.59% (n 37); stopped-before-entry names' A -6.58%
+  R (cap 20): A +0.014 vs B -0.120 | A - B t +0.67
+  per year (A - B, pp):
+date  2019   2020   2021   2022  2023   2024   2025   2026
+size  2.00  22.00  15.00  24.00  23.0  17.00  11.00   2.00
+mean -7.76   0.35  -0.85  -1.59   0.1  21.74  -3.84  40.06
+  (2) filter: breakouts on b5 >= 0.80 days +1.54% vs ADR-matched other days +2.85% | date-level Welch t -0.12
+  (3) panel +1 sessions, ADR units: after b5 >= 0.80 +0.004 (n 207) vs all days +0.018 | Welch t -0.50
+  (3) panel +5 sessions, ADR units: after b5 >= 0.80 -0.013 (n 207) vs all days +0.088 | Welch t -1.67
+
+## secondary: b5 >= 0.90 -- 45 breakouts on 23 dates
+B_status
+entered                 32
+abandoned                7
+stopped before entry     6
+A (enter now) -0.52% | B (defer) +0.64% incl. abandoned at 0 | A - B -1.13pp t -1.57 | halves -2.02/+0.26
+  entered-only: A +0.44% vs B +0.91% (n 32); abandoned names' A +0.11% (n 7); stopped-before-entry names' A -6.38%
+  R (cap 20): A -0.192 vs B +0.150 | A - B t -2.08
+  per year (A - B, pp):
+date  2020  2021  2022  2023  2024  2025
+size   3.0   2.0  9.00  7.00  1.00  1.00
+mean  -2.6  -2.3 -1.76  0.34  2.21 -2.26
+  (2) filter: breakouts on b5 >= 0.90 days -0.52% vs ADR-matched other days +2.85% | date-level Welch t -2.18
+  (3) panel +1 sessions, ADR units: after b5 >= 0.90 -0.049 (n 46) vs all days +0.018 | Welch t -1.17
+  (3) panel +5 sessions, ADR units: after b5 >= 0.90 -0.146 (n 46) vs all days +0.088 | Welch t -2.18
+
+rank corr b5 vs activity cnt5_pct: -0.034 (n 843 dates)
