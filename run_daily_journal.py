@@ -417,6 +417,14 @@ def main() -> None:
         except Exception as exc:  # noqa: BLE001 -- the journal must still be written
             print(f"campaign section skipped: {exc.__class__.__name__}: {exc}")
 
+    # Sidecar notes: data/journal/notes/<date>.md, written BEFORE the day's journal exists (the market theme is
+    # dictated the same evening, but the file is built from Flex the next morning and is never overwritten once it
+    # exists, so pre-creating it would drop the trade tables). Merged into "General notes".
+    side = JOURNAL_DIR / "notes" / f"{date_iso}.md"
+    if side.exists():
+        md = md.replace("## General notes\n\n", "## General notes\n\n" + side.read_text().strip() + "\n\n", 1)
+        print(f"merged sidecar notes from {side}")
+
     JOURNAL_DIR.mkdir(parents=True, exist_ok=True)
     DAYS_DIR.mkdir(parents=True, exist_ok=True)
 
