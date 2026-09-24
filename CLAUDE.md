@@ -209,6 +209,9 @@ unless he says otherwise in the moment.
   its control, and no stop variant beats buying the close. **"Hard stop"** is the trade reviewer's
   retrospective entry-quality criterion, not a live level; **"emergency stop" does not exist here** — ask
   which live stop is meant. **Canonical definitions: `data/studies/stop_definitions.md`.**
+- **Only genuinely NEW ideas get tested — never re-test.** Before proposing any test, check TEST_INDEX and the
+  study docs; if a claim is already answered, cite the existing row in one line and move on. Propose a test only
+  for an axis the ledger has not touched, and say what makes it new (Gabe, 2026-09-23).
 - **Decide local vs cloud before running any test.** If local is clearly better (small panel, cached data,
   minutes of CPU), just run it locally. Otherwise (hours of CPU, big Athena pulls, jobs that should outlive
   the laptop session), ask him first. Say which you chose and why (Gabe, 2026-09-23).
