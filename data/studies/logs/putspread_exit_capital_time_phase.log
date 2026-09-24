@@ -1,0 +1,26 @@
+Fri  HOLD    trades/yr   7.1  net/yr   -2.34%  (phase sd 12.78)  gross/yr   36.74%  worst mo  -55.55%
+Fri  T25     trades/yr  14.0  net/yr  -50.73%  (phase sd  3.58)  gross/yr   64.50%  worst mo  -67.62%
+Fri  T50     trades/yr  11.0  net/yr  -34.07%  (phase sd  4.47)  gross/yr   56.86%  worst mo  -82.94%
+Fri  T75     trades/yr   9.2  net/yr  -10.03%  (phase sd  4.93)  gross/yr   73.78%  worst mo  -53.25%
+Fri  FAST50  trades/yr   7.6  net/yr  -10.98%  (phase sd 10.14)  gross/yr   30.75%  worst mo  -65.24%
+Fri  ANN100  trades/yr  17.3  net/yr  -75.18%  (phase sd  3.67)  gross/yr   61.86%  worst mo  -79.07%
+any  HOLD    trades/yr   7.2  net/yr  -16.82%  (phase sd 12.30)  gross/yr   25.85%  worst mo  -50.54%
+any  T25     trades/yr  15.2  net/yr  -55.55%  (phase sd  1.32)  gross/yr   79.61%  worst mo  -74.56%
+any  T50     trades/yr  11.7  net/yr  -35.34%  (phase sd  2.39)  gross/yr   73.21%  worst mo  -83.71%
+any  T75     trades/yr   9.5  net/yr  -14.61%  (phase sd  2.94)  gross/yr   91.81%  worst mo  -70.98%
+any  FAST50  trades/yr   7.6  net/yr  -11.09%  (phase sd  7.20)  gross/yr   36.15%  worst mo  -51.63%
+any  ANN100  trades/yr  20.0  net/yr  -74.98%  (phase sd  1.39)  gross/yr   87.25%  worst mo  -79.12%
+
+paired monthly t vs the incumbent (Fri, T50) and vs (Fri, HOLD):
+  Fri HOLD    vs Fri-T50  +2.13  vs Fri-HOLD    --  
+  Fri T25     vs Fri-T50  -1.70  vs Fri-HOLD  -3.33
+  Fri T50     vs Fri-T50    --    vs Fri-HOLD  -2.13
+  Fri T75     vs Fri-T50  +1.96  vs Fri-HOLD  -0.55
+  Fri FAST50  vs Fri-T50  +1.52  vs Fri-HOLD  -0.91
+  Fri ANN100  vs Fri-T50  -3.70  vs Fri-HOLD  -4.60
+  any HOLD    vs Fri-T50  +1.24  vs Fri-HOLD  -1.42
+  any T25     vs Fri-T50  -2.12  vs Fri-HOLD  -3.57
+  any T50     vs Fri-T50  -0.12  vs Fri-HOLD  -2.10
+  any T75     vs Fri-T50  +1.76  vs Fri-HOLD  -0.93
+  any FAST50  vs Fri-T50  +1.55  vs Fri-HOLD  -0.86
+  any ANN100  vs Fri-T50  -3.39  vs Fri-HOLD  -4.42

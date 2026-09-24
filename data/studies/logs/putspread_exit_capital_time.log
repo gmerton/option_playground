@@ -1,0 +1,268 @@
+  [ASHR 2018] 37,234 rows
+  [ASHR 2019] 38,723 rows
+  [ASHR 2020] 40,143 rows
+  [ASHR 2021] 38,401 rows
+  [ASHR 2022] 31,645 rows
+  [ASHR 2023] 30,318 rows
+  [ASHR 2024] 39,672 rows
+  [ASHR 2025] 41,171 rows
+  [ASHR 2026] 7,329 rows
+  ASHR: 1,422 entries, settle known 100.0%, median path coverage 100%
+  [EEM 2018] 41,672 rows
+  [EEM 2019] 45,953 rows
+  [EEM 2020] 54,201 rows
+  [EEM 2021] 49,599 rows
+  [EEM 2022] 39,052 rows
+  [EEM 2023] 43,406 rows
+  [EEM 2024] 51,237 rows
+  [EEM 2025] 59,737 rows
+  [EEM 2026] 19,509 rows
+  EEM: 1,482 entries, settle known 100.0%, median path coverage 100%
+  [FXI 2018] 42,705 rows
+  [FXI 2019] 43,912 rows
+  [FXI 2020] 43,648 rows
+  [FXI 2021] 42,407 rows
+  [FXI 2022] 38,934 rows
+  [FXI 2023] 37,684 rows
+  [FXI 2024] 43,933 rows
+  [FXI 2025] 53,952 rows
+  [FXI 2026] 13,516 rows
+  FXI: 1,523 entries, settle known 100.0%, median path coverage 100%
+  [GDX 2018] 31,384 rows
+  [GDX 2019] 38,753 rows
+  [GDX 2020] 54,021 rows
+  [GDX 2021] 37,465 rows
+  [GDX 2022] 40,561 rows
+  [GDX 2023] 42,830 rows
+  [GDX 2024] 45,499 rows
+  [GDX 2025] 71,675 rows
+  [GDX 2026] 29,831 rows
+  GDX: 1,538 entries, settle known 100.0%, median path coverage 100%
+  [GLD 2018] 56,762 rows
+  [GLD 2019] 67,690 rows
+  [GLD 2020] 118,000 rows
+  [GLD 2021] 98,300 rows
+  [GLD 2022] 97,096 rows
+  [GLD 2023] 105,340 rows
+  [GLD 2024] 124,173 rows
+  [GLD 2025] 231,549 rows
+  [GLD 2026] 76,139 rows
+  GLD: 1,593 entries, settle known 100.0%, median path coverage 100%
+  [INDA 2018] 6,969 rows
+  [INDA 2019] 34,612 rows
+  [INDA 2020] 40,838 rows
+  [INDA 2021] 42,438 rows
+  [INDA 2022] 19,479 rows
+  [INDA 2023] 19,516 rows
+  [INDA 2024] 9,835 rows
+  [INDA 2025] 7,778 rows
+  [INDA 2026] 1,726 rows
+  INDA: 916 entries, settle known 100.0%, median path coverage 100%
+  [IWM 2018] 100,167 rows
+  [IWM 2019] 105,207 rows
+  [IWM 2020] 130,241 rows
+  [IWM 2021] 181,160 rows
+  [IWM 2022] 206,299 rows
+  [IWM 2023] 138,542 rows
+  [IWM 2024] 183,162 rows
+  [IWM 2025] 222,681 rows
+  [IWM 2026] 62,387 rows
+  IWM: 1,595 entries, settle known 100.0%, median path coverage 100%
+  [QQQ 2018] 122,479 rows
+  [QQQ 2019] 133,533 rows
+  [QQQ 2020] 174,419 rows
+  [QQQ 2021] 323,781 rows
+  [QQQ 2022] 298,254 rows
+  [QQQ 2023] 286,670 rows
+  [QQQ 2024] 346,610 rows
+  [QQQ 2025] 383,987 rows
+  [QQQ 2026] 94,946 rows
+  QQQ: 1,582 entries, settle known 100.0%, median path coverage 100%
+  [SOXX 2018] 17,016 rows
+  [SOXX 2019] 17,517 rows
+  [SOXX 2020] 19,840 rows
+  [SOXX 2021] 26,588 rows
+  [SOXX 2022] 22,869 rows
+  [SOXX 2023] 27,178 rows
+  [SOXX 2024] 34,468 rows
+  [SOXX 2025] 52,283 rows
+  [SOXX 2026] 18,540 rows
+    split guard: 1 jump day(s) ['2024-03-07'], dropped 12 entries
+  SOXX: 669 entries, settle known 100.0%, median path coverage 100%
+  [SPY 2018] 260,082 rows
+  [SPY 2019] 277,909 rows
+  [SPY 2020] 385,096 rows
+  [SPY 2021] 422,951 rows
+  [SPY 2022] 376,112 rows
+  [SPY 2023] 316,927 rows
+  [SPY 2024] 391,258 rows
+  [SPY 2025] 442,799 rows
+  [SPY 2026] 120,540 rows
+  SPY: 1,597 entries, settle known 100.0%, median path coverage 100%
+  [TLT 2018] 50,890 rows
+  [TLT 2019] 63,750 rows
+  [TLT 2020] 90,213 rows
+  [TLT 2021] 68,184 rows
+  [TLT 2022] 67,651 rows
+  [TLT 2023] 65,125 rows
+  [TLT 2024] 78,258 rows
+  [TLT 2025] 86,951 rows
+  [TLT 2026] 18,957 rows
+  TLT: 1,577 entries, settle known 100.0%, median path coverage 100%
+  [USO 2018] 28,491 rows
+  [USO 2019] 27,969 rows
+  [USO 2020] 43,689 rows
+  [USO 2021] 52,274 rows
+  [USO 2022] 77,897 rows
+  [USO 2023] 63,920 rows
+  [USO 2024] 68,966 rows
+  [USO 2025] 72,028 rows
+  [USO 2026] 25,565 rows
+    split guard: 1 jump day(s) ['2020-04-30'], dropped 23 entries
+  USO: 1,483 entries, settle known 100.0%, median path coverage 100%
+  [XBI 2018] 60,818 rows
+  [XBI 2019] 65,721 rows
+  [XBI 2020] 85,990 rows
+  [XBI 2021] 78,597 rows
+  [XBI 2022] 71,773 rows
+  [XBI 2023] 60,711 rows
+  [XBI 2024] 74,366 rows
+  [XBI 2025] 70,807 rows
+  [XBI 2026] 23,032 rows
+  XBI: 1,511 entries, settle known 100.0%, median path coverage 100%
+  [XLE 2018] 52,861 rows
+  [XLE 2019] 47,188 rows
+  [XLE 2020] 51,920 rows
+  [XLE 2021] 59,949 rows
+  [XLE 2022] 82,210 rows
+  [XLE 2023] 68,041 rows
+  [XLE 2024] 66,372 rows
+  [XLE 2025] 69,983 rows
+  [XLE 2026] 13,486 rows
+    split guard: 1 jump day(s) ['2025-12-05'], dropped 14 entries
+  XLE: 1,546 entries, settle known 100.0%, median path coverage 100%
+  [XLF 2018] 32,412 rows
+  [XLF 2019] 34,288 rows
+  [XLF 2020] 38,375 rows
+  [XLF 2021] 43,306 rows
+  [XLF 2022] 37,189 rows
+  [XLF 2023] 36,525 rows
+  [XLF 2024] 47,747 rows
+  [XLF 2025] 55,134 rows
+  [XLF 2026] 11,737 rows
+  XLF: 1,556 entries, settle known 100.0%, median path coverage 100%
+  [XLK 2018] 47,567 rows
+  [XLK 2019] 55,429 rows
+  [XLK 2020] 81,782 rows
+  [XLK 2021] 83,580 rows
+  [XLK 2022] 84,076 rows
+  [XLK 2023] 92,670 rows
+  [XLK 2024] 76,969 rows
+  [XLK 2025] 68,115 rows
+  [XLK 2026] 14,799 rows
+    split guard: 1 jump day(s) ['2025-12-05'], dropped 14 entries
+  XLK: 1,533 entries, settle known 100.0%, median path coverage 100%
+  [XLP 2018] 35,998 rows
+  [XLP 2019] 39,355 rows
+  [XLP 2020] 45,667 rows
+  [XLP 2021] 43,233 rows
+  [XLP 2022] 52,202 rows
+  [XLP 2023] 46,980 rows
+  [XLP 2024] 53,455 rows
+  [XLP 2025] 53,600 rows
+  [XLP 2026] 11,687 rows
+  XLP: 1,455 entries, settle known 100.0%, median path coverage 100%
+    split guard: 1 jump day(s) ['2025-12-05'], dropped 3 entries
+  XLU: 1,483 entries, settle known 100.0%, median path coverage 100%
+  [XLV 2018] 50,143 rows
+  [XLV 2019] 52,328 rows
+  [XLV 2020] 73,517 rows
+  [XLV 2021] 65,953 rows
+  [XLV 2022] 74,484 rows
+  [XLV 2023] 67,008 rows
+  [XLV 2024] 73,265 rows
+  [XLV 2025] 71,674 rows
+  [XLV 2026] 13,716 rows
+  XLV: 1,476 entries, settle known 100.0%, median path coverage 100%
+  [XOP 2018] 42,001 rows
+  [XOP 2019] 36,315 rows
+  [XOP 2020] 64,006 rows
+  [XOP 2021] 82,887 rows
+  [XOP 2022] 111,463 rows
+  [XOP 2023] 89,138 rows
+  [XOP 2024] 81,257 rows
+  [XOP 2025] 81,504 rows
+  [XOP 2026] 17,108 rows
+    split guard: 1 jump day(s) ['2020-03-31'], dropped 23 entries
+  XOP: 1,509 entries, settle known 100.0%, median path coverage 100%
+
+=== sanity: Friday T50 vs the 2026-09-22 roster rebuild (options_cache, +4.35% gross / -6.78% net) ===
+  n 7,494  gross +6.28%  net -2.51%  take rate 75%  median days 26
+
+=== per-entry, FRIDAY entries (ROC on capital; net = house fills; t month-clustered) ===
+arm           n   gross%     net%      t   win%  take%  days  net%/cap-day   worst%
+HOLD      7,494     3.99    -1.37  -0.55   73.3    0.0  42.2       -0.0265   -100.0
+T25       7,494     4.69    -4.15  -2.86   84.4   82.0  20.5       -0.1899   -100.0
+T50       7,494     6.28    -2.78  -1.44   79.8   75.2  26.6       -0.0943   -100.0
+T75       7,494     7.86    -1.54  -0.66   75.6   66.0  32.9       -0.0423   -100.0
+FAST50    7,494     4.36    -1.49  -0.63   74.2    8.1  39.3       -0.0307   -100.0
+ANN100    7,494     4.69    -4.33  -3.75   87.4   83.9  16.5       -0.2598   -100.0
+
+=== PRIMARY: Friday, ROC(T50) - ROC(HOLD), net, paired ===
+  diff -1.42pp  t -1.77  (98 months, n 7,494)   halves -2.96 (t -2.52) / +0.00 (t +0.00)
+  per year (pp): 2018 -0.27  2019 -5.12  2020 -2.67  2021 -1.55  2022 -0.10  2023 -0.93  2024 -0.29  2025 -0.12  2026 +1.57
+  bar |t|>=3 and both halves same sign: FAIL
+  (exploratory) T25 - HOLD: -2.78pp t -2.26
+  (exploratory) T75 - HOLD: -0.17pp t -0.35
+  (exploratory) FAST50 - HOLD: -0.13pp t -0.71
+  (exploratory) ANN100 - HOLD: -2.96pp t -2.00
+
+  path coverage (valid both-leg marks / sessions): median 100%, <50% on 3.4% of entries
+    coverage >= 90%  n 5,904  T50-HOLD -4.52pp
+    coverage < 90%   n 1,590  T50-HOLD +10.22pp
+
+=== SECONDARY: one slot per ticker, re-deployed next eligible session (8.2 yrs, 20 slots) ===
+entry  exit    trades/yr  idle% net ROC/yr % gross/yr % worst mo % t vs Fri-T50
+Fri    HOLD          7.2   15.6        17.04      54.88     -42.84
+Fri    T25          14.1   19.5       -51.88      63.62     -67.62
+Fri    T50          11.1   16.6       -38.51      52.17     -82.94
+Fri    T75           9.3   14.7        -7.41      76.87     -53.25         2.34
+Fri    FAST50        7.6   16.4        -0.85      41.19     -61.74         2.06
+Fri    ANN100       17.5   23.4       -76.42      61.43     -79.07        -3.25
+any    HOLD          7.3    9.8         2.56      44.99     -50.28         1.81
+any    T25          15.4   12.0       -54.03      83.22     -74.56        -1.44
+any    T50          11.8   10.5       -33.24      76.28     -83.71         0.46
+any    T75           9.6    9.0       -15.70      90.75     -71.07         2.01
+any    FAST50        7.7   10.1        -1.00      46.91     -54.62         1.89
+any    ANN100       20.3   15.2       -73.03      90.79     -79.12        -2.71
+  Sidak bar for the 11 comparisons: |t| >= ~3.6
+
+=== TERTIARY (descriptive): entry weekday, paired vs Friday of the same ticker-week ===
+  HOLD  Mon -0.08% (vs Fri -0.29pp t -0.29) | Tue -0.94% (vs Fri +0.28pp t +0.31) | Wed -1.29% (vs Fri -0.29pp t -0.85) | Thu -1.34% (vs Fri -0.05pp t -0.24) | Fri -1.12%
+  T50   Mon -1.79% (vs Fri -0.15pp t -0.33) | Tue -2.43% (vs Fri +0.48pp t +0.61) | Wed -3.29% (vs Fri -0.42pp t -0.75) | Thu -3.11% (vs Fri -0.45pp t -1.14) | Fri -2.51%
+
+=== per ticker, Friday entries, net ROC % ===
+arm      HOLD    T25   T50   T75  FAST50  ANN100    n
+ticker                                               
+ASHR   -11.15 -12.36 -7.23 -5.10  -10.43  -11.83  368
+EEM     -6.21  -8.96 -9.34 -6.16   -5.88   -8.04  381
+FXI     -9.31  -6.62 -7.28 -7.48   -9.19   -6.49  391
+GDX      1.76  -1.54  0.47  1.47    1.65   -3.19  401
+GLD      9.39   2.80  5.96  8.07    7.22    1.10  408
+INDA    -6.79  -9.03 -6.10 -3.36   -5.94   -7.59  244
+IWM      1.44  -1.62 -1.20 -0.89    1.43   -1.12  409
+QQQ      6.72   3.80  5.04  4.82    6.88    1.99  406
+SOXX    -0.82   1.18  1.15 -0.68   -1.49   -1.79  184
+SPY      5.24   1.72  3.55  4.20    5.57    1.80  408
+TLT     -5.75  -8.01 -8.08 -7.19   -6.17   -7.87  405
+USO     -0.09  -6.05 -2.87 -2.21   -0.21   -6.31  381
+XBI     -5.81  -8.49 -7.49 -5.30   -6.18   -8.73  394
+XLE     -1.35  -4.07 -2.54 -1.83   -1.55   -4.16  395
+XLF     -0.73  -5.70 -4.20 -3.22   -1.20   -5.79  400
+XLK      3.22   0.43  1.81  2.25    2.93   -0.12  395
+XLP     -1.46  -5.10 -3.85 -1.61   -1.56   -5.41  370
+XLU      3.59  -0.45  0.65  4.02    4.32   -1.44  384
+XLV     -2.72  -3.82 -3.67 -2.97   -2.62   -5.84  384
+XOP     -5.30  -6.86 -5.76 -6.17   -5.21   -6.05  386
+
+trades -> /Users/gmerton/v2/options_playground/data/studies/logs/putspread_exit_capital_time_trades.parquet
