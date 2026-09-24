@@ -1,0 +1,296 @@
+[00:00:00] I just put one of the top options
+[00:00:03] traders, Tom Sosnoff, to the test and
+[00:00:06] the results were $11,357.50
+[00:00:10] in profit. I went over this exact
+[00:00:12] strategy earlier and I got a ton of
+[00:00:15] feedback about this trade and about this
+[00:00:17] strategy. So, I decided to actually do
+[00:00:20] it and here's the results. So, I'm going
+[00:00:22] to talk to you about how the strategy
+[00:00:24] works, the three key lessons I learned,
+[00:00:27] a couple bonus lessons, commentary and
+[00:00:30] feedback from from some of my comments.
+[00:00:33] So, there's a lot here. Stick around.
+[00:00:36] This is going to be a fun video. So, the
+[00:00:38] very first thing is the rules, $75,000
+[00:00:43] on a simulation account. ES futures puts
+[00:00:46] only one contract per trade, one trade
+[00:00:49] per week. Uh 10 delta short puts. I
+[00:00:53] adjusted from Tom's strategy. I'll tell
+[00:00:55] you a little bit more about why I
+[00:00:56] adjusted later.
+[00:00:58] And then 45 days
+[00:01:01] expiration, but then there's a 21-day
+[00:01:03] DTE, which means that when it hits 21,
+[00:01:07] when it's hits 21 days, I will roll
+[00:01:09] close. I'm not going to allow the trade
+[00:01:12] to go into a deep black dark hole. Uh
+[00:01:15] and then I also have a 50% profit target
+[00:01:18] so that I can roll trades as quick as I
+[00:01:21] possibly can. Now, 3 months in, my
+[00:01:24] initial goal, I had a video on it uh on
+[00:01:27] the when I started this test, so you can
+[00:01:29] see that. The initial goal was 20,000
+[00:01:32] and I'm at 11,357.
+[00:01:34] So, I'm about halfway there to my goal 3
+[00:01:37] months in. So, I'm doing pretty well. I
+[00:01:39] really want to hit what I learned in the
+[00:01:41] process. The great thing about doing
+[00:01:43] tests is that you actually learn stuff
+[00:01:45] and so that's awesome. But, take a look
+[00:01:48] at the cash flow plan here.
+[00:01:50] This is what I've actually done so far
+[00:01:52] and one of the things that you're going
+[00:01:54] to see here is that my best week was
+[00:01:56] $1,345.
+[00:01:58] What made that the best week? I'm
+[00:02:00] running the same strategy every week.
+[00:02:02] Well, it was because we were in a down
+[00:02:05] period. The market was falling pretty
+[00:02:07] hard. It had a 9% drop.
+[00:02:10] And that created volatility, and that
+[00:02:13] volatility created higher profits. And
+[00:02:16] so, in downturns, it creates higher
+[00:02:19] profits. I'm going to talk more about
+[00:02:20] that. But, the thing I really want to
+[00:02:22] get here is the compounding and the
+[00:02:24] weekly paycheck, which is really nice.
+[00:02:27] And so, the first lesson that ties into
+[00:02:29] the first lesson, and that is that every
+[00:02:31] trade closed frees up capital.
+[00:02:34] It gets the machine rolling, and we
+[00:02:39] build ourselves a cash flow system. And
+[00:02:41] so, the key thing here is you want to
+[00:02:43] start getting paid each week. And so,
+[00:02:46] Tom used the 10 delta. I tested the 10
+[00:02:50] and the 9. I kind of went like right
+[00:02:52] around the 90% probability marker, which
+[00:02:55] was really what was going on. But, the
+[00:02:57] key lesson is this. I wanted more
+[00:02:59] safety. So, if you want more safety, go
+[00:03:01] for it. And that is the key lesson. You
+[00:03:05] don't always have to do everything
+[00:03:06] somebody on YouTube says.
+[00:03:08] If you like it, change it. Make it work
+[00:03:11] for you, but follow a test, go with it,
+[00:03:13] and see what happens. You're going to
+[00:03:15] learn something valuable. And
+[00:03:17] uh in the process of doing this, I had a
+[00:03:19] video, and I got a challenge from Thomas
+[00:03:22] 1942.
+[00:03:24] And he hit me pretty aggressively, which
+[00:03:26] I like. I like it because iron sharpens
+[00:03:30] iron, and I want to be challenged. So,
+[00:03:33] please feel free. And I like to be
+[00:03:35] complimented, too. So, please feel free.
+[00:03:38] &gt;&gt; [laughter]
+[00:03:39] &gt;&gt; I just want to hear people to say
+[00:03:41] something. Real people, no bots. But,
+[00:03:43] Thomas was saying, "Hey, look, you're
+[00:03:44] going to get crushed in a downturn." Is
+[00:03:46] essentially what he said. And so, he ran
+[00:03:49] it in a back test, and he said he got
+[00:03:51] destroyed. There's no guardrails, but I
+[00:03:53] think he was forgetting about rolling
+[00:03:55] and managing the trade. Or perhaps, I
+[00:03:58] don't know what his his rules were as
+[00:04:01] far as
+[00:04:02] sizing, right? So, in sizing, he could
+[00:04:04] have been really hit. But, I wanted to
+[00:04:06] actually take his comment very
+[00:04:08] seriously. And so, take a look at what
+[00:04:11] it said here when the S&amp;P 500 drops
+[00:04:15] over 20%. So, in the last 20 years, we
+[00:04:19] have four
+[00:04:21] bear markets, right? Four 20% drops.
+[00:04:25] 2008, 2009, 2020, and 2022. The the
+[00:04:29] actual downturn. And there's been other
+[00:04:31] big drops as well. But, the point is
+[00:04:33] this, four out of 20 years. So, if 16
+[00:04:37] years were profitable and four were not,
+[00:04:39] what does that teach us?
+[00:04:41] Dun dun dun dun. What does that teach
+[00:04:43] us? It teaches us that we're going to
+[00:04:45] make money most of the time, almost all
+[00:04:48] of the time. But, when the market is
+[00:04:51] down, we cannot blow up. We have to have
+[00:04:55] those protective guardrails that Thomas
+[00:04:57] pointed out to us. Very important.
+[00:05:00] Because if I lose in those four years,
+[00:05:02] I'm okay with that. But, I don't want to
+[00:05:05] go home and not be able to play the
+[00:05:07] game, right? So, we have to have these
+[00:05:10] guardrails in place to protect our cash
+[00:05:13] flow. Very important stuff. And Joseph
+[00:05:17] replied to Thomas. There was a nice long
+[00:05:19] conversation there. And Thomas said,
+[00:05:22] "Look,
+[00:05:23] don't over leverage and roll before your
+[00:05:26] expiration." That really is important,
+[00:05:29] trade management. And that's why the 21
+[00:05:31] days to expiration rule is so important.
+[00:05:34] Guardrails is your position size and
+[00:05:35] managing the trade. That's your
+[00:05:37] guardrails. Make sure that you're
+[00:05:39] managing it cuz you don't want to crash
+[00:05:40] and burn. And the third lesson, this one
+[00:05:44] was really powerful, go back to the
+[00:05:46] first slide, you're going to notice that
+[00:05:48] March was my most money. Why? Because of
+[00:05:51] the volatility. And so, how is this a
+[00:05:53] lesson? Well, because when the market
+[00:05:56] starts to crash, you make more money.
+[00:05:58] So, on one trade you make 700, but then
+[00:06:02] on a down market, you're going to make
+[00:06:04] 1,500.
+[00:06:05] And so, even if you have to take a
+[00:06:07] couple small losses by rolling and
+[00:06:09] managing the trade,
+[00:06:10] guess what?
+[00:06:12] That will be offset by a bigger win in
+[00:06:15] next time. Right? And sometimes you
+[00:06:17] won't even have to take a loss. Like, I
+[00:06:18] did this test in a 9% drop and had no
+[00:06:22] losses, but I was able to benefit from
+[00:06:25] the high premiums because why? Cuz the
+[00:06:27] market bounced before I had to roll a
+[00:06:29] negative trade. I did have some trades
+[00:06:31] underwater, but I didn't have to roll or
+[00:06:33] close a negative trade, market bounced
+[00:06:36] first. So, it worked out basically
+[00:06:38] beautifully, right? But,
+[00:06:41] you can make even more money in a bear
+[00:06:43] market is the lesson. And so,
+[00:06:46] let's take a look now at the strategy.
+[00:06:48] We're going week by week. We want to
+[00:06:50] look short-term and long-term, week by
+[00:06:52] week.
+[00:06:53] A very short uh frame, it's not a good
+[00:06:56] test. 3 months isn't a good test. I'm
+[00:06:57] going to continue testing this, but I
+[00:06:59] want to know more feedback in the
+[00:07:00] comments of what you think I should do,
+[00:07:02] but 3 months over the course of a year
+[00:07:05] is $45,000 a year. And on a $75,000,
+[00:07:09] that's 60%. But, the whole point is get
+[00:07:12] that cash flow working. I don't know
+[00:07:14] about you, but 45K extra money isn't
+[00:07:17] bad, especially when this is about a
+[00:07:19] 5-minute trade a week. 45K for 5
+[00:07:21] minutes, that's not bad. And then,
+[00:07:22] what's that going to be next year? If I
+[00:07:24] bump to two contracts, that 45 could be
+[00:07:26] 90K. Right? So, it's good just to get
+[00:07:29] started because you're going to get paid
+[00:07:31] every week and your paycheck goes up.
+[00:07:33] You can't always say that about your
+[00:07:34] regular job. And that brings the
+[00:07:36] question of who does this work for? Uh
+[00:07:40] if you have 75K, this is great, but you
+[00:07:42] might be saying, "Oh, I don't have 75k.
+[00:07:44] What do I do?" Well, don't worry. You
+[00:07:46] could do the the MES. The {slash} MES is
+[00:07:49] the symbol, the micro. With and do
+[00:07:52] 2,500.
+[00:07:53] But if you don't have 2,500, you could
+[00:07:55] do what I did and start with a $100.
+[00:07:58] And find small stocks to do cash secured
+[00:08:01] puts on. Start adding to your account
+[00:08:04] every week. Start learning the process
+[00:08:07] and begin the cash flow. I actually did
+[00:08:09] a $100 account last year and it's
+[00:08:12] already up to 5,500.
+[00:08:14] And if I get enough interest and as it
+[00:08:17] keeps going, I'm going to do a case
+[00:08:18] study on that because I love to do
+[00:08:20] videos not about theory, but on what I'm
+[00:08:23] actually doing and what is actually
+[00:08:25] working, which is why I think people
+[00:08:26] love this channel. And so that brings up
+[00:08:29] a very important story, but don't click
+[00:08:31] away just because I'm doing a story.
+[00:08:33] This is important. Watch this part. Uh
+[00:08:35] I'm reading a book Investing in yourself
+[00:08:37] by reading is one of the best things you
+[00:08:39] can do. And so I'm reading a book by
+[00:08:41] Malcolm Gladwell called Outliers and
+[00:08:43] he's studying successful people. That's
+[00:08:45] the outlier.
+[00:08:45] &gt;&gt; [snorts]
+[00:08:46] &gt;&gt; And so there was this city this village
+[00:08:48] in Pennsylvania in the 1950s and no one
+[00:08:51] died of heart disease. Whereas heart
+[00:08:54] disease was rising everywhere else. And
+[00:08:57] so he this doctor went in and studied
+[00:09:00] these people. They were
+[00:09:02] uh from Italy from Rosetta, Italy. They
+[00:09:04] had immigrated there in the 1800s and
+[00:09:07] they built this community. And what he
+[00:09:09] noticed was their diet was all the same.
+[00:09:12] They were eating just like everybody
+[00:09:13] else. I mean, they were eating Italian
+[00:09:14] food, but they had fat and oil. They
+[00:09:17] weren't exercising. A lot of the people
+[00:09:18] were smoking, but they weren't dying of
+[00:09:20] heart disease and most of them were
+[00:09:22] living long lives and they were dying of
+[00:09:24] natural causes, right? Old age. And so
+[00:09:27] it was like, "What was the difference?"
+[00:09:28] And after all of the tests and the
+[00:09:30] studies, they found that it was their
+[00:09:32] community, right? They had church
+[00:09:35] families. They had extended families
+[00:09:37] living together. They were involved in
+[00:09:39] clubs. They would hang out on the street
+[00:09:42] and play games and spend time drinking
+[00:09:45] coffee and hanging out and just having a
+[00:09:47] good time. And that in itself
+[00:09:50] created healthy mindset, healthy
+[00:09:52] lifestyle, and gave them longer life.
+[00:09:55] And so in the same way, how does that
+[00:09:57] help trading? Well, dun dun dun da.
+[00:10:00] We have a trading community that's doing
+[00:10:02] that for people right here on this
+[00:10:03] YouTube channel. You get involved in the
+[00:10:05] comments, you learn. I respond to every
+[00:10:07] comment. We're building a community and
+[00:10:09] then there's a members community as
+[00:10:11] well. And so, you know, John right here
+[00:10:14] said, "I spent $20,000 on different
+[00:10:17] products
+[00:10:18] and he didn't get a lot from them." He
+[00:10:20] said, "But he's been with me for 7
+[00:10:21] months and it's helping." And it's
+[00:10:23] I'm part of the outlier, sure.
+[00:10:26] But I'm not a guru. I'm a guy that helps
+[00:10:28] people plug in and help you get
+[00:10:30] connected. I had a guy email me today
+[00:10:32] and he was like, "Hey, I have been in
+[00:10:34] this program for 7 months and I'm not
+[00:10:36] doing anything." Whereas John is. I'm
+[00:10:38] like, "Get involved in the community.
+[00:10:40] Get involved in the community. That's my
+[00:10:42] answer so you can start doing this
+[00:10:44] stuff." So with that being said, look at
+[00:10:46] what we've done as a community since we
+[00:10:49] started. We're at $40,000,
+[00:10:52] just under $40,000 since we started this
+[00:10:54] on February 2025. I'm logging real
+[00:10:56] trades. Everything I do is in person and
+[00:10:59] it only takes an hour a week. And I just
+[00:11:01] produced a case study so you can see it
+[00:11:03] for yourself. Click the link in the
+[00:11:06] description,
+[00:11:07] freedomincomeoptions.com/case-study.
+[00:11:12] And it shows it all of the details on
+[00:11:14] how I've been able to do this and how
+[00:11:16] I'm helping average. But I'll say this,
+[00:11:18] I'm excited about the future. Let me
+[00:11:20] know what kind of videos you want. But
+[00:11:22] if you like want to learn more about
+[00:11:23] this particular strategy, make sure that
+[00:11:26] you click right here and get the details
+[00:11:29] on the strategy. You're going to love
+[00:11:31] that video. It's where it was all
+[00:11:33] started. Thanks a lot and we'll see you
+[00:11:35] guys in the next video.
