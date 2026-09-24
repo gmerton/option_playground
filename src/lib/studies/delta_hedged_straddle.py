@@ -19,8 +19,8 @@ At expiry, straddle terminal value = max(S-K, 0) + max(K-S, 0) = |S - K|.
 
 Data / caching
 --------------
-  data/cache/{ticker}_options.parquet  — Athena option daily marks
-  data/cache/{ticker}_stock.parquet    — Tradier underlying closes
+  data/cache/{ticker}_dh_options.parquet  — Athena option daily marks (namespaced 2026-09-23)
+  data/cache/{ticker}_dh_stock.parquet — Tradier underlying OHLCV (namespaced 2026-09-23)
 
 Both caches store the full fetched date range.  On subsequent calls with the
 same or narrower date range the data is served from disk; a wider range
@@ -51,8 +51,13 @@ CACHE_DIR  = _REPO_ROOT / "data" / "cache"
 
 
 def _cache_path(ticker: str, kind: str) -> Path:
+    """⚠ 2026-09-23: this module's caches are namespaced `{ticker}_dh_{kind}.parquet`. They used to share
+    `{ticker}_{kind}.parquet` with run_qqq_regime_put_sweep / put_spread_study / the Friday screener, which use a
+    different schema (trade_date COLUMN, full history, appended). A cache miss here REPLACED those files with just
+    the requested window (SPY 2026-09-22: a 65-row stock file and a 0-row options file), breaking the certified
+    SPY bucket's script."""
     CACHE_DIR.mkdir(parents=True, exist_ok=True)
-    return CACHE_DIR / f"{ticker}_{kind}.parquet"
+    return CACHE_DIR / f"{ticker}_dh_{kind}.parquet"
 
 
 # ── Data fetchers ─────────────────────────────────────────────────────────────
@@ -65,7 +70,7 @@ def fetch_option_data(
 ) -> pd.DataFrame:
     """
     Fetch daily option rows for *ticker* over [start, end] from Athena.
-    Cached to data/cache/{ticker}_options.parquet.
+    Cached to data/cache/{ticker}_dh_options.parquet.
 
     Columns returned:
       trade_date, expiry, cp, strike, bid, ask, last, delta,
@@ -139,7 +144,7 @@ def fetch_stock_data(
 ) -> pd.DataFrame:
     """
     Fetch daily OHLCV for the underlying from Tradier.
-    Cached to data/cache/{ticker}_stock.parquet.
+    Cached to data/cache/{ticker}_dh_stock.parquet.
     Index: trade_date (DatetimeIndex); columns: open, high, low, close, volume.
     """
     cache_file = _cache_path(ticker, "stock")
