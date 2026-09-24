@@ -1,0 +1,400 @@
+[00:00:00] Okay, but we do have some slides to get
+[00:00:01] through. You guys want to You guys want
+[00:00:02] to hop into some research?
+[00:00:03] &gt;&gt; Let's do it.
+[00:00:05] &gt;&gt; Cool. Very cool piece from Sahil, if you
+[00:00:07] want to give him a follow over on X, but
+[00:00:08] we're going to be looking at VIX
+[00:00:09] expansions and contractions and like
+[00:00:11] understanding the mechanics of those in
+[00:00:13] a bit more detail. Yeah?
+[00:00:14] &gt;&gt; Yeah.
+[00:00:15] &gt;&gt; it.
+[00:00:16] &gt;&gt; Let's do it. Okay, so first slide. So,
+[00:00:17] 2026 has been kind of a lot of lot of
+[00:00:20] chop, a lot of volatility this year. Um
+[00:00:22] several uh sharp VIX moves including a
+[00:00:24] surge from 14 to 34 um uh 20 points in
+[00:00:28] 59 trading days followed by a
+[00:00:29] contraction in 20 trading days, which is
+[00:00:32] unusual. Usually you have um much more
+[00:00:35] rapid expansion and then a much longer
+[00:00:37] contraction. So, we kind of saw an
+[00:00:38] inversion of that this year, which has
+[00:00:40] been very interesting volatility
+[00:00:41] behavior. Um but we obviously, you know,
+[00:00:44] as traders know that like depending on
+[00:00:46] where the VIX is currently at, that
+[00:00:47] changes some of the behavior and some of
+[00:00:49] the dynamics. So, uh we wanted to take a
+[00:00:51] look at how basically we're going to be
+[00:00:53] using five-point moves um in the VIX
+[00:00:55] within a 30-day period, um what those
+[00:00:57] dynamics kind of look like um over time.
+[00:01:00] Make sense?
+[00:01:01] &gt;&gt; And yeah, it's usually elevator up and
+[00:01:02] stairs down, and it was definitely a
+[00:01:03] little bit different this time around.
+[00:01:05] &gt;&gt; Kind of an inverted flip, which we can
+[00:01:07] actually earn an inverted curve, which
+[00:01:09] we can kind of see on the next slide
+[00:01:10] actually. So, um we see that like
+[00:01:13] typically the volatility index like the
+[00:01:15] VIX is what we're going to use here is
+[00:01:16] sensitive to downward movement in the
+[00:01:18] index. So, when the index kind of goes
+[00:01:19] down, we see volatility go up and that
+[00:01:22] sort of relationship. And here we're
+[00:01:23] seeing yet an inversion of what we
+[00:01:25] typically see um when we have a big VIX
+[00:01:27] expansion. The VIX going up to 30 is not
+[00:01:30] the highest point of the range, but it's
+[00:01:31] very unusual for the VIX to get to those
+[00:01:33] high levels. And typically what we see
+[00:01:35] is a much sharper contraction over a
+[00:01:37] shorter period of time followed by a
+[00:01:39] longer expansion or longer period of
+[00:01:41] time. And here we kind of saw the
+[00:01:42] reverse in 2026, you know, for a variety
+[00:01:44] of reasons. But definitely unusual
+[00:01:46] volatility behavior, and we wanted to
+[00:01:47] understand sort of historically when we
+[00:01:50] zoom out and go back to 2025, um what do
+[00:01:53] VIX expansion and contraction mechanics
+[00:01:55] kind of look like? Make sense?
+[00:01:56] &gt;&gt; Yeah, I was talking about this with E
+[00:01:58] yesterday. I mean, it feels like we've
+[00:01:59] had 3 years in 1.
+[00:02:01] Like it does when you look at this
+[00:02:03] again. It was April, and there was June,
+[00:02:05] and then there's now.
+[00:02:07] &gt;&gt; Yeah, and I started I started trading in
+[00:02:09] 2020. I feel like we've had every market
+[00:02:11] two times over since then.
+[00:02:14] Uh we've had crashes, [clears throat]
+[00:02:15] bear markets, bull runs, and it's all
+[00:02:17] just been very um short-term or
+[00:02:19] short-lived. So, uh it's yeah, very good
+[00:02:23] learning experience trading throughout
+[00:02:24] that time. Um but you This year in
+[00:02:26] particular has been quite unusual
+[00:02:28] because of that volatility expansion
+[00:02:29] contraction dynamics kind of being
+[00:02:31] flipped around.
+[00:02:33] So, um if we go to the next slide, we
+[00:02:34] got our study here. So, here we're going
+[00:02:36] to be looking a little bit longer term
+[00:02:37] than just 2026, but we're going to be
+[00:02:39] looking at 2005 to 2025. We're going to
+[00:02:41] be looking over 7-day uh rolling
+[00:02:43] periods. We're going to be looking at
+[00:02:45] expansions and contractions over those
+[00:02:46] time frames um to understand that when
+[00:02:49] the VIX is at current levels, or you
+[00:02:51] know, whatever the current levels are,
+[00:02:52] when the VIX is in a specific range,
+[00:02:54] what behaviors are most common over
+[00:02:56] those 7-day rolling periods. Um and
+[00:02:59] critically here, we're going to be
+[00:03:01] excluding events that are kind of part
+[00:03:02] of the same event. So, for example, if
+[00:03:04] the VIX is at 13.5 on 1 day and 13.8 on
+[00:03:07] the next day, and both kind of spike to
+[00:03:09] 18 as their peak over that, you know,
+[00:03:12] 7-day 8-day period, then we're going to
+[00:03:14] be treating that as one event. So, here
+[00:03:15] we're not going to be repeating events,
+[00:03:17] repeating occurrences. We're going to be
+[00:03:18] looking at them um independently of one
+[00:03:20] another. And then uh we're going to be
+[00:03:22] looking at sort of like the swings that
+[00:03:24] happen um around those five-point moves.
+[00:03:26] And some very interesting statistics
+[00:03:27] that's the help put together. Make
+[00:03:29] sense?
+[00:03:31] &gt;&gt; Cool.
+[00:03:32] I love this graph. This is a cool graph.
+[00:03:35] So, here we're looking at the 7-day
+[00:03:37] cycles, and we're going to be looking at
+[00:03:39] sort of like the count of expansions and
+[00:03:41] contractions over time throughout the
+[00:03:43] different years, as well as the average
+[00:03:45] VIX levels. And this to me is a really
+[00:03:47] nice visual of volatility clustering,
+[00:03:50] what we tend to see together. Where um
+[00:03:52] typically we have kind of a baseline
+[00:03:54] number of expansions and contractions
+[00:03:56] throughout the years.
+[00:03:57] Usually, you know, a lot of the time we
+[00:03:59] have quieter periods, but then when
+[00:04:00] volatility escalates, those escalations
+[00:04:03] and those high volatility periods tend
+[00:04:05] to cluster together. All those large
+[00:04:06] moves tend to cluster together. It's
+[00:04:08] pretty unusual to have a large move kind
+[00:04:10] of an isolation. And I think this
+[00:04:12] exemplifies that really nicely where we
+[00:04:14] can see 2008 having a significant
+[00:04:16] clusters of expansions and contractions
+[00:04:18] sort of around those periods. And then,
+[00:04:20] you know, uh 2010 as well we see some of
+[00:04:22] that emergence as well as 2020. And then
+[00:04:24] intermit like in between those periods
+[00:04:26] kind of calmness. And I think this is
+[00:04:29] just a very nice visual for kind of
+[00:04:30] showing that.
+[00:04:32] &gt;&gt; Yeah, I think this is uh an interesting
+[00:04:35] way to see exactly what the point uh
+[00:04:37] that we're they're putting across is and
+[00:04:39] really just looking at uh
+[00:04:41] the the larger price moves and really
+[00:04:44] the rebounds we've had I think have been
+[00:04:47] the result of the VIX staying compressed
+[00:04:49] uh um for this longer period of time,
+[00:04:51] especially in the last couple months.
+[00:04:53] &gt;&gt; It's funny when you've been around a
+[00:04:54] long time though, you see some of these
+[00:04:55] dots you know exactly what they are.
+[00:04:57] &gt;&gt; You know exactly what they are.
+[00:04:59] &gt;&gt; the VIX the the VIX
+[00:05:01] the apocalypse or whatever in February
+[00:05:02] 2018, that's that dot up there.
+[00:05:05] Um
+[00:05:05] &gt;&gt; That's that big that big dot right
+[00:05:07] there?
+[00:05:07] &gt;&gt; Uh-huh.
+[00:05:08] And the one in 2015 is August of 2015,
+[00:05:11] the Chinese
+[00:05:12] uh yuan situation that happened. That's
+[00:05:15] the highest dot on that board, I'm
+[00:05:16] pretty sure of it.
+[00:05:18] &gt;&gt; Mhm.
+[00:05:18] &gt;&gt; And uh I don't know what that 2011 one
+[00:05:20] is. It's escape
+[00:05:22] That Fukushima might be.
+[00:05:24] Might be the Fukushima volcano
+[00:05:27] at the top there in 2011, I think.
+[00:05:29] And then 2010 is probably the March the
+[00:05:31] May flash crash. Sorry, take us over.
+[00:05:33] It's just fun. It's just like we just
+[00:05:35] want to look back.
+[00:05:37] &gt;&gt; And you can see that again is like
+[00:05:38] average VIX levels kind of increase and
+[00:05:39] that's what that blue line is kind of
+[00:05:41] looking at like the average rolling VIX
+[00:05:43] levels. Um we can see that with the VIX
+[00:05:45] levels comes an increased frequency of
+[00:05:47] expansions and contractions. And what I
+[00:05:50] found very interesting about this is
+[00:05:51] that the number of expansions and the
+[00:05:53] number of contractions are pretty close
+[00:05:55] to parity. So, you just get a lot of
+[00:05:58] everything during those high volatility
+[00:05:59] events. It's the same with price moves.
+[00:06:01] When you have like large moves to the
+[00:06:02] downside, like very large moves in the
+[00:06:04] S&amp;P, you that usually comes with some of
+[00:06:06] the largest moves recorded to the upside
+[00:06:08] as well. So, you really get a mix of
+[00:06:10] kind of everything during those high
+[00:06:11] volatility periods.
+[00:06:13] &gt;&gt; Yeah. And then COVID COVID 2020 was
+[00:06:16] where the entire VIX market was
+[00:06:19] elevated for a long period of time
+[00:06:22] in that 2025 range.
+[00:06:24] And that was like the one and only time
+[00:06:26] where we've experienced that where you
+[00:06:28] just had a 20 25 VIX for like the entire
+[00:06:31] year.
+[00:06:33] &gt;&gt; That That might be. I have to double
+[00:06:35] check this, but the only time that we
+[00:06:36] saw a 30% sell-off in like the Russell,
+[00:06:38] for example, and then a 30% rebound
+[00:06:40] within like 3 months.
+[00:06:42] &gt;&gt; I don't know.
+[00:06:43] &gt;&gt; That was Yeah, that was the whipsaw.
+[00:06:45] That was nuts. Um, but markets different
+[00:06:47] every day. And if we go to the next
+[00:06:49] slide, so what we can see here, this I
+[00:06:52] think is an interesting case to support
+[00:06:55] sort of like the levels of the VIX. So,
+[00:06:57] here we're going to be looking at 7-day
+[00:06:58] periods in you know, when the VIX is
+[00:07:00] basically starting out within some of
+[00:07:02] these ranges, 10 to 13, 13 to 16, and so
+[00:07:04] on. What we can see is that when you
+[00:07:06] have when you're at 10 to 13 of a VIX,
+[00:07:08] there's kind of nowhere to go but up. It
+[00:07:11] can go lower than that, but typically
+[00:07:13] over 7-day periods, this is where you're
+[00:07:15] seeing more contractions or more I'm
+[00:07:17] sorry, expansions tend to happen. And
+[00:07:19] then as you kind of go up, you know, in
+[00:07:22] in terms of the VIX levels, this is when
+[00:07:24] specifically around like the 22 to 25
+[00:07:27] range, you start to see like kind of a
+[00:07:29] 50/50 split between expansions and
+[00:07:31] contractions.
+[00:07:32] And another interesting behavior is that
+[00:07:34] the duration, noting that we're using
+[00:07:36] 7-day windows, the average duration of
+[00:07:38] those expansions and contractions gets
+[00:07:40] smaller the higher the VIX goes. Again,
+[00:07:43] with like the increased volatility, that
+[00:07:45] also means that like time frames for
+[00:07:47] some of these market behaviors tends to
+[00:07:49] decrease. Um and just being Yeah, like
+[00:07:51] quick thinking kind of comes in very
+[00:07:53] handy during those conditions.
+[00:07:55] &gt;&gt; And this chart is the reason why I'm
+[00:07:58] planning to close the AMD strangle and
+[00:07:59] the Intel strangle and the SMH strangle
+[00:08:01] and the BE strangle next week Tuesday
+[00:08:04] before VIX expiration of August.
+[00:08:08] &gt;&gt; There you have it.
+[00:08:08] &gt;&gt; And there you have it.
+[00:08:10] &gt;&gt; when you get up to VIX of 25, this is
+[00:08:12] when um contractions become much more
+[00:08:13] likely than expansions. Although, we
+[00:08:16] know in those very small percent of
+[00:08:17] cases, it can go up significantly
+[00:08:20] higher. Really depends on the
+[00:08:21] conditions, but the conditions required
+[00:08:22] to make that happen is really just like
+[00:08:24] a perfect cocktail of kind of everything
+[00:08:26] going wrong at the same time. Does not
+[00:08:28] happen very much. So, the VIX can
+[00:08:29] absolutely continue to go up at 25 and
+[00:08:31] can go up to whatever the recorded max
+[00:08:33] is. I think it's like 92. Um but
+[00:08:36] generally unlikely. Once you get up to
+[00:08:38] 25 when we're looking at like aggregate
+[00:08:40] occurrences, that's when the expand
+[00:08:41] contractions become much more likely.
+[00:08:43] Noting that like when the VIX is up to
+[00:08:45] those levels of 25, that's when also the
+[00:08:48] duration of a lot of these occurrences
+[00:08:49] on average tends to go down. Becomes
+[00:08:52] much uh
+[00:08:53] more rapid, I guess you could say.
+[00:08:56] &gt;&gt; 100% and that's that's when we like to
+[00:08:58] get into products like SVXY, planning
+[00:09:00] for a reversal in VIX levels in like a
+[00:09:03] defined risk way. I think it's makes a
+[00:09:05] lot of sense.
+[00:09:06] &gt;&gt; Yeah, noting those conditions don't come
+[00:09:08] around very often and that's part of why
+[00:09:09] like capital preservation, especially
+[00:09:11] when VIX is low, is important such that
+[00:09:13] like when, you know, the VIX does get to
+[00:09:15] those richer premium levels, then you
+[00:09:16] have more spare capital um to allocate
+[00:09:19] um within those conditions. So, um this
+[00:09:21] I also found to be a very interesting um
+[00:09:24] result, but here we're basically looking
+[00:09:26] at 7, 15, and 30-day cycles. So,
+[00:09:28] different time frames um for the VIX
+[00:09:30] cycles. And what's very interesting is
+[00:09:32] that when there is a 50/50 chance of an
+[00:09:35] expansion or contraction, that is around
+[00:09:38] an average VIX level of 20 to 21
+[00:09:40] regardless of what time frame you what
+[00:09:43] time frame you use. Noting that these
+[00:09:44] are averages, um but those kinds of
+[00:09:47] levels when the VIX is around 20 21,
+[00:09:49] looking at these different window sizes,
+[00:09:51] that's approximately when on average
+[00:09:54] your probability of an expansion or
+[00:09:56] contraction becomes a coin flip, more or
+[00:09:58] less.
+[00:10:00] &gt;&gt; Yeah. Mhm.
+[00:10:01] &gt;&gt; And that's kind of where you you want to
+[00:10:02] be playing the waiting game anyways, see
+[00:10:04] where it goes and then make a decision
+[00:10:06] from there.
+[00:10:07] &gt;&gt; Yeah. Um however, that being said, that
+[00:10:10] when you get into the 30-day cycles,
+[00:10:12] when you're looking over longer time
+[00:10:13] frames, i.e. when you're putting
+[00:10:14] strategies in over longer durations or
+[00:10:16] making longer time assumptions, um such
+[00:10:18] as like 30 days, for example, the as you
+[00:10:21] could say like the periodicity or the um
+[00:10:24] time frame of that kind of volatility
+[00:10:26] structure becomes longer, um which can
+[00:10:29] create more opportunities potentially,
+[00:10:30] but that's also more time commitment for
+[00:10:32] things to potentially go not in your
+[00:10:34] favor, right?
+[00:10:36] 100%.
+[00:10:38] So, um that average VIX level it I
+[00:10:40] thought was very interesting that being
+[00:10:41] consistent across different windows,
+[00:10:43] whether you're looking at 7 days, 15
+[00:10:45] days, or 30 days, that average VIX of
+[00:10:47] around 20 to 21 is when like the
+[00:10:50] probability of an expansion or
+[00:10:51] contraction becomes roughly the same.
+[00:10:54] So, um really interesting study kind of
+[00:10:56] breaking down the mechanics of the VIX
+[00:10:57] from Sahil. Um we can go to the
+[00:10:58] takeaways now.
+[00:11:01] But, um yes. So, um the VIX has had some
+[00:11:05] very interesting behavior in 2026, kind
+[00:11:07] of unusual from typical behaviors. Um
+[00:11:10] so, as the VIX increases, there usually
+[00:11:12] comes with larger price moves. We've
+[00:11:13] seen that historically and also a larger
+[00:11:15] number of expansions and contractions.
+[00:11:17] Um and just generally more opportunity
+[00:11:19] for volatility traders as that average
+[00:11:21] VIX does go up. However,
+[00:11:23] when the average VIX level does
+[00:11:25] increase, um that generally shrinks um
+[00:11:28] the sort of duration um that that can
+[00:11:30] expect for some of those volatility
+[00:11:31] behaviors. Um that I thought was very
+[00:11:34] interesting and then as well when the
+[00:11:35] VIX is around 20 regardless of what time
+[00:11:37] frames that we kind of looked at within
+[00:11:39] the study is around a 50/50 chance of
+[00:11:41] experiencing a spike or a drop. Um
+[00:11:43] noting that those are averages um and
+[00:11:45] also like the speed of the move which we
+[00:11:47] didn't talk about here can also change
+[00:11:49] those dynamics a little bit. So just
+[00:11:50] some things to keep in mind.
+[00:11:53] &gt;&gt; Yeah. And using the VIX as that
+[00:11:55] barometer realizing you know when the
+[00:11:57] VIX is super low it can stay low for a
+[00:11:59] long period of time but when it does
+[00:12:01] increase in a big way you can expect to
+[00:12:04] see uh
+[00:12:05] normally a swift reversal but you can
+[00:12:08] utilize different products to express
+[00:12:10] that assumption too.
+[00:12:12] &gt;&gt; Right. And just noting that like current
+[00:12:14] VIX levels um well obviously like they
+[00:12:17] change the behavior of the VIX. The
+[00:12:18] market tries very hard to suppress
+[00:12:21] volatility doesn't like volatility when
+[00:12:22] volatility goes up a lot of forces kind
+[00:12:25] of work together to try to make it go
+[00:12:26] down in most cases. I'll noting that you
+[00:12:28] know there can be sort of like rare
+[00:12:30] exceptions to that such as in black swan
+[00:12:31] events. Um however keeping that in mind
+[00:12:34] especially when choosing duration when
+[00:12:35] you're making volatility assumptions is
+[00:12:37] very important. So this is kind of a
+[00:12:39] lesson as well in choosing a duration
+[00:12:41] and sort of the time commitment that
+[00:12:42] you're willing to put into a trade
+[00:12:44] relative to where vol is at and where
+[00:12:46] you can expect it to go.
+[00:12:48] &gt;&gt; Love it. Beautiful work. Yeah.
+[00:12:51] &gt;&gt; I think that's all I got.
+[00:12:52] &gt;&gt; Cool. Appreciate you. See you later.
+[00:12:54] &gt;&gt; Thank you guys.
+[00:12:55] &gt;&gt; Absolutely.
+[00:12:56] &gt;&gt; Peace.

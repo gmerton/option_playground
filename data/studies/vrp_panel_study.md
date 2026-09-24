@@ -324,7 +324,7 @@ years a vol seller expects to be hurt — and it survives every conditioning cut
 VIX > 25, where the sample thins to 483 dates and the interval widens through zero.
 
 At 30 and 90 days there is no cell anywhere in the report that clears the hurdle. Not one
-IV-percentile bucket, not one VIX regime, not one year.
+IV-percentile bucket, not one VIX regime, not one year. ⚠ **Correction 2026-09-23:** that is wrong for the 90d VIX regimes. The table above shows VIX 20–25 (t_NW 4.10) and VIX > 25 (t_NW 4.85) marked YES on the Newey-West t. On the non-overlapping t they miss (2.09 and 3.16 vs the 3.29 bar). So at 90 days the premium is supported, not certified, when VIX ≥ 20 — consistent with "sell index vol when VIX is high".
 
 ## 2. The overlap correction is the whole story at 30d
 

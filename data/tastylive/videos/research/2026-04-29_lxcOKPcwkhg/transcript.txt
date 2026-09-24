@@ -1,0 +1,327 @@
+[00:00:00] The Cape ratio, created by Robert
+[00:00:01] Shiller, uses 10 years of
+[00:00:03] inflation-adjusted earnings to measure
+[00:00:06] whether the market is truly expensive or
+[00:00:08] not. Shiller correctly called both the
+[00:00:10] dot-com bubble and 2008 housing crash.
+[00:00:14] Cape uses the averages of the last 10
+[00:00:15] years, where a regular PE ratio uses one
+[00:00:19] year of earnings. The long-term average
+[00:00:21] is around 17, but today it's at 40.66,
+[00:00:25] more than double that 17 level, and just
+[00:00:28] 8% below the all-time high
+[00:00:30] where we had that big sell-off, uh
+[00:00:33] and you know, sometimes that can be that
+[00:00:35] the case where you gets too high and you
+[00:00:37] have sell-offs down the road. History
+[00:00:40] says that's exactly how it works. The
+[00:00:42] higher it gets, the long-term returns
+[00:00:44] over the next 10 to 20 years tend to be
+[00:00:46] weak or negative, but it's not
+[00:00:48] necessarily a short-term timing tool.
+[00:00:52] Critics argue today that the readings
+[00:00:53] are distorted by the Mag 7 accounting
+[00:00:56] for roughly 33% of the S&amp;P 500, and
+[00:00:59] specifically Nvidia's meteoric rise over
+[00:01:02] the last couple of years, and the PE
+[00:01:04] ratio for Nvidia is wild. So, here's the
+[00:01:07] real question. If AI structurally
+[00:01:09] rerates the index and the Mag 7 justify
+[00:01:12] a permanently higher multiple, what
+[00:01:14] number does Cape need to reach before it
+[00:01:17] matters again? 44, 50, or is it just not
+[00:01:21] a thing anymore? We're going to take a
+[00:01:22] look at a couple of different ways that
+[00:01:24] I'm viewing this in the options market
+[00:01:27] with today's options math check.
+[00:01:30] So, we're in the tastytrade platform and
+[00:01:32] uh I've got my watch list pulled up
+[00:01:34] here. This is one of my favorite watch
+[00:01:36] list to check every single day. It is
+[00:01:38] the vol futures curve. So, you might be
+[00:01:41] thinking, well, we're just talking about
+[00:01:42] Cape, right? We're talking about the Mag
+[00:01:43] 7. What does the vol futures curve have
+[00:01:45] to do with anything?
+[00:01:46] Uh I would argue that it has everything
+[00:01:48] to do with everything.
+[00:01:50] The number one reason why I look at this
+[00:01:52] every day is because when you think
+[00:01:54] about how markets move, when you think
+[00:01:56] about the tariff uh situation we had
+[00:01:59] last year, when you think about the war
+[00:02:01] that we've had this year, both of those
+[00:02:03] instances and COVID, to name another
+[00:02:06] one,
+[00:02:07] all three of those instances where the
+[00:02:08] market was selling off, the vol futures
+[00:02:10] were in backwardation.
+[00:02:11] Backwardation is simply when the
+[00:02:13] near-term contract is at a more
+[00:02:15] expensive price than the next contract.
+[00:02:18] During COVID, we had like a 15-point
+[00:02:20] backwardation. That was the biggest I've
+[00:02:21] ever seen. During uh
+[00:02:24] the tariff situation of last year, we
+[00:02:26] had like a five or six-point
+[00:02:27] backwardation, if I remember correctly.
+[00:02:29] And during the war, it's actually been
+[00:02:32] pretty muted. I we've had uh a similar
+[00:02:34] backwardation, but it nothing was near
+[00:02:36] as bad as the COVID backwardation that I
+[00:02:39] saw, which was like 15 points. Um so,
+[00:02:42] what does that all mean? Well, it tells
+[00:02:44] me that if we're to expect a market
+[00:02:46] crash, not a 5% sell-off, not a 3%
+[00:02:50] sell-off, I'm talking like down 20%,
+[00:02:53] down 30%, down 40%, I would believe that
+[00:02:57] if we're seeing that in real time, or if
+[00:02:59] we are to believe that it is to come,
+[00:03:02] the vol futures would be in
+[00:03:03] backwardation. Right now,
+[00:03:05] we're looking at my vol watch list here.
+[00:03:07] Really easy to create on your own. Uh if
+[00:03:10] you just type in VX, you'll see a lot of
+[00:03:12] these symbols, but you can create a
+[00:03:13] watch list, you can click edit right
+[00:03:15] here on the right-hand side of this
+[00:03:16] watch list tab, and you can either
+[00:03:18] remove these that we've added here, or
+[00:03:21] you can just add these symbols one by
+[00:03:22] one. So, I make sure that every year I
+[00:03:25] have all these listed, and uh you can
+[00:03:28] visually see the futures curve the vol
+[00:03:30] futures curve in real time. So, the K
+[00:03:32] contract turning at 2028, the M contract
+[00:03:35] at 2116, and so on and so on and so on.
+[00:03:38] You can see here, we are in contango all
+[00:03:40] the way through this curve. None of the
+[00:03:42] near-term ones near-term contracts are a
+[00:03:44] higher price than the next one. So, this
+[00:03:46] tells me that we are in a full contango
+[00:03:49] for all of these vol futures that I'm
+[00:03:51] looking at here, which tells me that the
+[00:03:52] market is, for lack of better terms, in
+[00:03:55] complacency. It's not a crazy
+[00:03:57] complacency. We they're kind of flat,
+[00:03:59] these futures, going from 2028 to a high
+[00:04:03] of 2095 all the way back uh here in the
+[00:04:05] V contract, but
+[00:04:07] the more
+[00:04:08] complacent the market gets, the less
+[00:04:10] volatile we see uh the markets be, the
+[00:04:13] more contango you will see in these
+[00:04:15] markets. Now, the flip side is, when
+[00:04:17] markets are flying around, when we're up
+[00:04:18] or down 200 points every single day in
+[00:04:20] the E-minis, you'll tend to see this
+[00:04:22] completely flatten out, or you'll see it
+[00:04:24] going to backwardation. So, for me, I'm
+[00:04:27] not expecting anything from these
+[00:04:28] markets other than a drift up and to the
+[00:04:31] right until this vol futures curve goes
+[00:04:34] into backwardation. That's how I've seen
+[00:04:36] it for the last couple of years, and I
+[00:04:38] think it can be as simple as that. Now,
+[00:04:40] these are living, breathing things. So,
+[00:04:42] right now we're in contango in vol
+[00:04:44] futures, but if we were to see a
+[00:04:46] 100-point sell-off, a 200-point sell-off
+[00:04:48] over the next three days, let's call it.
+[00:04:50] We do have a lot of Mag 7 stocks
+[00:04:52] reporting earnings this week. Caveat
+[00:04:54] there. Uh so, let's say we've got
+[00:04:57] sell-off, sell-off, sell-off. All these
+[00:04:59] companies that make up a huge portion of
+[00:05:01] the S&amp;P 500 and the Nasdaq, they start
+[00:05:03] selling off, we're going to see the vol
+[00:05:05] futures curve flatten out. And the more
+[00:05:07] we see it flatten out and go into
+[00:05:08] backwardation, that's when I start to
+[00:05:10] believe, okay, vol futures are in
+[00:05:12] backwardation. That opens the door for
+[00:05:14] us to really have a 20, 30, 40%
+[00:05:16] sell-off. I just don't see a situation
+[00:05:18] where we get down 30, 40% in the S&amp;P 500
+[00:05:22] without the vol curve being
+[00:05:23] backwardated. So, number one, we'll
+[00:05:26] check on that.
+[00:05:30] just understanding that, yes, we've got
+[00:05:32] all of these companies that are
+[00:05:34] reporting earnings this week that could
+[00:05:36] move the markets, but we have these
+[00:05:37] companies in the Mag 7 that make up a
+[00:05:40] huge portion of the S&amp;P 500. So, I would
+[00:05:42] say the the markets today are very
+[00:05:45] different than the market markets 10, 20
+[00:05:47] years ago.
+[00:05:49] Uh and that's simply because we've got a
+[00:05:51] lot of these companies that have
+[00:05:53] benefited from the AI boom. We've seen a
+[00:05:55] transformative nature in the way that
+[00:05:57] the markets move. We tend to see a lot
+[00:06:00] more V bottoms these days, uh not
+[00:06:03] necessarily like slow, trickle-down bear
+[00:06:06] markets like we used to see. Uh and we
+[00:06:08] just have so much more access to these
+[00:06:10] markets, a lot more speed to market with
+[00:06:13] algorithmic trading and all these
+[00:06:14] things, where you've got tons of
+[00:06:16] liquidity flowing in and out on just a
+[00:06:18] tweet. We see it every single day. So,
+[00:06:21] uh I would say, keep your eyes peeled
+[00:06:23] for the vol futures. Make sure that, you
+[00:06:25] know, if you're playing for a 20, 30%
+[00:06:28] sell-off in the S&amp;P 500, I want to see
+[00:06:30] this vol curve flatten out or go into
+[00:06:31] backwardation.
+[00:06:33] Um but this is a math check math check,
+[00:06:35] so we got to check out SPX and look at
+[00:06:38] the probabilities of getting to certain
+[00:06:40] levels through June, and we can also
+[00:06:43] look at some near-term stuff. I think
+[00:06:45] it's interesting. If you're trying to
+[00:06:46] avoid uh trading earnings directly,
+[00:06:49] maybe you're bullish on Apple but
+[00:06:50] bearish on Microsoft, something like
+[00:06:52] that. You can trade SPX or QQQ or NDX,
+[00:06:56] and just go straight to the uh indices
+[00:07:00] rather than trading the single-name
+[00:07:01] stocks. I mean, these indices still have
+[00:07:03] pretty low implied volatility, 18% IV in
+[00:07:05] SPX. And if we look at NDX, we're
+[00:07:08] probably going to see a similar thing
+[00:07:10] here. Yeah, 26%, 22%. Uh but look at
+[00:07:14] this, 26%
+[00:07:15] really heightened implied volatility
+[00:07:17] over the 30th and the 1st. This accounts
+[00:07:20] for the majority of the tech stocks that
+[00:07:21] are reporting this week. So, you do see
+[00:07:23] a nice little bump in implied
+[00:07:24] volatility, but nothing close to the
+[00:07:27] actual single names that we will see
+[00:07:29] report. So, if you're trying to avoid
+[00:07:31] trading directly, you can trade the NDX,
+[00:07:33] you can trade SPX.
+[00:07:35] Um but let's look at let's look at NDX
+[00:07:38] and SPX. Well, I think this is
+[00:07:40] interesting because we have such a
+[00:07:41] higher implied volatility over the next
+[00:07:43] three, four days because of these
+[00:07:45] earnings announcements. I think it would
+[00:07:46] be interesting to see, you know, how
+[00:07:48] does this extrapolate through May 15th
+[00:07:51] and June. Uh NDX trading at 27,288.
+[00:07:56] If we look at uh the futures as well,
+[00:07:59] they're kind of flat on the day. I
+[00:08:00] wouldn't be surprised to see this uh
+[00:08:01] sustained through the next couple of
+[00:08:03] days here while we wait for some data,
+[00:08:05] while we wait for some earnings reports
+[00:08:07] here. But
+[00:08:09] if we look at the probability of going
+[00:08:10] down, let's call it 3,000 points in NDX,
+[00:08:15] that would bring us to 24,200,
+[00:08:17] and if we look at the probabilities of
+[00:08:19] being in the money
+[00:08:20] uh down at those levels, only 5%. 10%
+[00:08:23] probability of touch over the next 18
+[00:08:25] days. So, not too much of a probability
+[00:08:28] to the downside. How about 3,000 points
+[00:08:30] to the upside? What does that look like?
+[00:08:32] That brings us to
+[00:08:33] drumroll, please, 30,000
+[00:08:36] in NDX.
+[00:08:37] Uh a smaller probability of getting up
+[00:08:41] there, 3,000 points higher. So, that's
+[00:08:44] interesting to me. And even looking at
+[00:08:45] these these premiums here, 35 points to
+[00:08:49] the downside, only six to the upside, if
+[00:08:51] you look at the actual value of uh these
+[00:08:55] options here. So, really interesting in
+[00:08:57] the near term. You got way more put skew
+[00:09:00] and probability to the downside rather
+[00:09:02] than premium and skew to the upside. But
+[00:09:05] as you go further out in time,
+[00:09:07] I think that changes. If we look at June
+[00:09:09] and even the end of the year, let's look
+[00:09:10] at the end of the year. See what uh the
+[00:09:12] holistic probabilities are looking like.
+[00:09:15] We'll look at the same levels, 24,200.
+[00:09:17] You've got a 30% probability of being in
+[00:09:19] the money, 3,000 points out of out of
+[00:09:21] the money from where we are now. And
+[00:09:23] 30K, you've got a 30% probability of
+[00:09:26] being in the money, and you've got uh
+[00:09:29] pretty much equidistant probabilities
+[00:09:31] here. You do have a little bit of upside
+[00:09:34] skew, which is interesting in NDX. Uh
+[00:09:36] 988 versus 844 to the downside. So,
+[00:09:41] premium up there, but we have to account
+[00:09:43] for interest rates as well. You're going
+[00:09:45] to see that in SPX, too. So, SPX, let's
+[00:09:48] look at 7,700. That tends to be the the
+[00:09:50] call that a lot of people are making
+[00:09:52] here. 33% very similar, 19 uh 196 points
+[00:09:56] up here
+[00:09:57] in terms of premium and then if we go
+[00:10:01] like 600 points out of the money to the
+[00:10:02] downside, we're looking at
+[00:10:06] 6600-ish
+[00:10:08] and that's about a 30% probability and
+[00:10:11] kind of a flat premium here. So really
+[00:10:14] interesting to see that
+[00:10:16] even after we account for some interest
+[00:10:18] rate premium on the upside. When we look
+[00:10:19] at SPX specifically, we've got
+[00:10:22] equidistant out of the money options
+[00:10:24] 6600 and 7700.
+[00:10:26] The put is still trading for a slight
+[00:10:28] bit more 205 relative to 196, but going
+[00:10:32] back to NDX, we've got a lot more
+[00:10:34] premium on the upside at 3000 relative
+[00:10:37] to the downside at 1242 or 24200. So
+[00:10:41] really interesting there. I think that
+[00:10:43] kind of tells you the story, right? If
+[00:10:45] we are to see a big move to the upside
+[00:10:47] and we're to ignore this
+[00:10:50] cape analysis or cape ratio,
+[00:10:53] ultimately
+[00:10:55] we might see the velocity of risk beat
+[00:10:57] to the upside for tech stocks, but the
+[00:11:00] S&amp;P more sector balanced, we might see a
+[00:11:03] little more premium to the downside even
+[00:11:05] after the interest rate infusion as you
+[00:11:06] go further out in time
+[00:11:08] out to December there. So again, I would
+[00:11:11] say as of right now
+[00:11:13] everything's kind of up in the air. It
+[00:11:14] kind of feels that way in the market
+[00:11:16] too, right? We have flat e-minis, a flat
+[00:11:18] Nasdaq completely. These things aren't
+[00:11:20] even ticking that much. So it's pretty
+[00:11:22] slow. I'm like clicking refresh. I'm
+[00:11:24] like is this market even moving? There's
+[00:11:25] just not a lot of activity today on this
+[00:11:27] Monday ahead of a lot of data reports,
+[00:11:29] ahead of a Fed decision this week. The
+[00:11:32] decision is basically that we're going
+[00:11:33] to keep the rates the same. I think
+[00:11:35] what's more interesting with the Fed is
+[00:11:37] the narrative around the future. I think
+[00:11:40] that could be a catalyst for market
+[00:11:41] movement.
+[00:11:43] And again, if these tech stocks have
+[00:11:45] poor earnings this week, that could
+[00:11:47] certainly be a catalyst to the downside
+[00:11:48] specifically because again, 33% or
+[00:11:51] roughly make up the mag seven makes up
+[00:11:54] 33% of the S&amp;P 500 or around there. And
+[00:11:57] of course a much higher ratio in the
+[00:11:59] Nasdaq specifically. So we'll see what
+[00:12:01] happens, but let me know what you think
+[00:12:03] in the comments below. If you like this
+[00:12:04] kind of content, please like the video,
+[00:12:06] subscribe to the Tasty Live channel and
+[00:12:08] we'll see you on the next edition of
+[00:12:10] Options Math Check.

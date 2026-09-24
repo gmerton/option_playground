@@ -1,0 +1,186 @@
+[00:00:00] separating reality from
+[00:00:03] Fear fix expansion separating reality
+[00:00:06] from Fear so selling premium and high
+[00:00:08] implied volatility is ideal because the
+[00:00:10] trader will likely benefit from a
+[00:00:12] volatility contraction volatility as we
+[00:00:14] talked about yesterday and many other
+[00:00:16] times is mean reverting so when it goes
+[00:00:20] up it's at some point it's going to come
+[00:00:23] down sometimes it stays high for a long
+[00:00:25] time like 2008 to 2009 stayed high for
+[00:00:29] almost I want to
+[00:00:31] say almost two 300 days or something but
+[00:00:35] usually it's five or six days and
+[00:00:39] volatility goes gets high and then it
+[00:00:42] contracts but when selling low
+[00:00:43] volatility there's the risk of implied
+[00:00:46] volatility
+[00:00:47] expansion that's volatility going up how
+[00:00:50] serious has this risk been over time
+[00:00:54] because we know that volatility goes up
+[00:00:56] um I mean we know when volatility goes
+[00:00:58] up it goes up really fast and we know
+[00:01:00] when it comes down it's like H it could
+[00:01:02] be torture sometimes but sure how much
+[00:01:05] of a risk is volatility exploding what
+[00:01:07] do you think let's go to next slide and
+[00:01:09] we'll give tony some more I don't know I
+[00:01:10] got a percentage let's give let's give
+[00:01:12] him some I'm gonna give him some more
+[00:01:13] information before I ask cont y so we're
+[00:01:17] going to look at the Spy we're going to
+[00:01:18] look at Tesla the reason we chose Tesla
+[00:01:20] is because of all the stocks that are
+[00:01:23] out there um that's consistently been in
+[00:01:26] the top of the um
+[00:01:30] most actively traded ones like right now
+[00:01:33] it probably be I think Nvidia is the
+[00:01:36] most actively
+[00:01:38] traded options you know um yeah it's
+[00:01:41] always been the one with some of the
+[00:01:42] most volume but Tesla's number two right
+[00:01:44] now and Tesla's always been one or two I
+[00:01:46] want to say for the last like five years
+[00:01:48] so we're using spy and Tesla they've
+[00:01:50] been one and two for the longest period
+[00:01:51] of time we're selling 16 Delta triangle
+[00:01:54] 45 days to expiration manag in 21 days
+[00:01:57] and we compared
+[00:02:00] when the vix range is when it's below 15
+[00:02:03] between 15 and 30 which it is right now
+[00:02:07] and then above 30 which it is a very
+[00:02:10] small percent of the time in fact I want
+[00:02:12] to say based on the research we did
+[00:02:13] yesterday that I kind of remember that
+[00:02:15] number to be like around 7% of the time
+[00:02:19] I I don't know if that's right Tony but
+[00:02:21] I think we're above 30 about 7% of the
+[00:02:23] time we're between 15 and 30
+[00:02:27] um we're between 15 and 30
+[00:02:31] probably
+[00:02:33] about about 40 to 50% of the time and
+[00:02:36] then obviously the balance below 50 um
+[00:02:39] yeah in the last calendar year from
+[00:02:41] February to February it's probably even
+[00:02:43] less than that it's only three or four
+[00:02:44] times in the whole year yeah Beth
+[00:02:46] there's a it says b o l o I'm sorry b o
+[00:02:51] l w just change that to an E so we so we
+[00:02:53] don't so we look perfect thank you let's
+[00:02:56] go next
+[00:02:58] slide so for example when the price of
+[00:03:01] the Spy 16 Delta strangle will be higher
+[00:03:05] when implied volatility is higher
+[00:03:06] resulting in a loss seller okay
+[00:03:08] obviously when when volatility goes up
+[00:03:10] premium sellers lose money so implied
+[00:03:13] volatility is 15% you collect 335 if
+[00:03:16] it's 25% you collect um 505 and if it's
+[00:03:19] 35% you collect 7 uh 35 so it's it's
+[00:03:25] proportionately the amount of Premium
+[00:03:27] goes up the other thing is when you're
+[00:03:30] selling 16 Delta strangles when
+[00:03:32] volatility is cheap um you don't make a
+[00:03:34] lot of money when volatility is
+[00:03:36] expensive or at least higher you make
+[00:03:38] money so that's the most important
+[00:03:41] takeaway from this entire slide it's
+[00:03:43] it's not it's that the return on
+[00:03:46] investment is a negative number when
+[00:03:48] volatility is low that's why we use IV
+[00:03:52] rank to tell us when to get into
+[00:03:53] positions and all that kind of stuff
+[00:03:55] because we don't do well unless implied
+[00:03:58] volatility is on the higher end of its
+[00:03:59] range we're talking about IV this is
+[00:04:01] we're talking about straight fix but but
+[00:04:04] we use ivr to help us with individual
+[00:04:06] stocks to put context around everything
+[00:04:08] um you can see the higher the implied
+[00:04:10] volatility the better that we do the
+[00:04:13] buying power the probability of profit
+[00:04:15] everything's going to be kind of the
+[00:04:16] same um but we just the average p&amp;l and
+[00:04:19] the return on investment is better when
+[00:04:21] volatility is higher let's go next
+[00:04:24] slide so to put context around
+[00:04:27] volatility expansion risk we examine the
+[00:04:28] frequency at and the magnitude of
+[00:04:30] expansions we recorded the vix on day 1
+[00:04:33] and day 45 and computed the difference
+[00:04:35] this was done every trading day since
+[00:04:37] 2017 you can imagine the amount of data
+[00:04:40] in here this is almost eight years worth
+[00:04:42] of stuff let's go next
+[00:04:45] slide so for spy in very low implied
+[00:04:49] volatility 75% of the 45-day periods saw
+[00:04:53] vix change of less than 3.7 points so it
+[00:04:56] was fairly rare to see a significant
+[00:04:58] change at the end of the period yes and
+[00:05:02] I think this is the important thing you
+[00:05:05] can't and and and I can't tell you how
+[00:05:08] many times we stressed this you cannot
+[00:05:11] time a vix
+[00:05:14] expansion it's that's why it's so
+[00:05:17] difficult to inventory long vix because
+[00:05:19] you know at some point it's going higher
+[00:05:22] but you cannot inventory it because it's
+[00:05:27] untable if that's actually a word to
+[00:05:30] hold if your timing is off yeah you
+[00:05:33] cannot time
+[00:05:34] it
+[00:05:36] so what happens here is that you can see
+[00:05:40] that that the the biggest risk to the
+[00:05:43] upside is when the vix is below 15 and
+[00:05:47] the least amount of risk to the upside
+[00:05:48] in the vix is when the vix is above
+[00:05:51] 30 um but you know again it's a very
+[00:05:55] difficult thing to
+[00:05:57] time you have almost no risk I shouldn't
+[00:06:00] say no risk but longterm when the vix is
+[00:06:03] above 30 it contracts longterm when the
+[00:06:06] vix is between 15 and 30 it also
+[00:06:10] contracts but when the vix is below 15
+[00:06:13] it expands let's go to next
+[00:06:18] slide even for individual stocks such as
+[00:06:22] Tesla when the implied volatility is
+[00:06:24] very low 75% of the 45-day periods
+[00:06:28] experienced the vix Exchange of less
+[00:06:29] than 3.8 points very similar to the Spy
+[00:06:32] almost a tenth of a point difference but
+[00:06:35] as a result the significant changes by
+[00:06:36] the end of these periods were relatively
+[00:06:38] rare So if you're betting on implied
+[00:06:41] volatility going higher in Tesla again
+[00:06:44] it only happens from very low levels of
+[00:06:46] implied volatility it does not happen
+[00:06:49] when the vix is above
+[00:06:53] 30 it's interesting to see how close the
+[00:06:56] vix and the Spy are to each other when
+[00:06:59] you just look at this stuff let's go
+[00:07:01] next
+[00:07:03] slide so the other main factors that
+[00:07:06] drive p&amp;l of a short premium trade are
+[00:07:08] Delta and Theta trade p&amp;l often comes
+[00:07:11] from time Decay Theta and from Price
+[00:07:13] movement Delta more than it does
+[00:07:15] volatility that's a very fair statement
+[00:07:18] um you know we're volatility sellers so
+[00:07:20] we're more dependent on volatility
+[00:07:22] contraction um
+[00:07:24] but you know there's a good little good
+[00:07:28] little slide let's go next next
+[00:07:31] slide as shown in our previous studies
+[00:07:34] selling premium in low implied
+[00:07:35] volatility low ivr can be profitable
+[00:07:39] even if it can be minimum though it's
+[00:07:42] reasonable to
+[00:07:44] mitigate um IV expansion so again when
+[00:07:48] IV is really low reduce the number of
+[00:07:49] contracts in overall size and maintain
+[00:07:51] some short Delta to offset the vager
+[00:07:54] risk the vager risk is just that
+[00:07:57] expands and that's mostly going to
+[00:07:58] happen in down mod
+[00:08:00] let's go to the last slide

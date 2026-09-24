@@ -1,0 +1,279 @@
+[00:00:00] We've got is there a inflated VIX during
+[00:00:03] earnings? Now earnings just passed Ryan
+[00:00:06] most of it. So
+[00:00:07] we really didn't see any volatility
+[00:00:10] expansion. So we're going from just a
+[00:00:12] moment ago.
+[00:00:14] I think as traders we would say there
+[00:00:16] was very little. But let's see what the
+[00:00:17] findings are. I have a
+[00:00:19] sneaky suspicion that it's going to
+[00:00:22] uptick ever so slightly but it's
+[00:00:24] statistically
+[00:00:26] neither here nor there. But let's see
+[00:00:27] the next one please. Next slide.
+[00:00:30] Earning season represents a high
+[00:00:31] volatility the daily trading range of
+[00:00:33] individual stocks is much wider around
+[00:00:37] earnings announcement. I mean I think
+[00:00:38] that's pretty volatility does expand.
+[00:00:41] That's the thing that we try to take
+[00:00:43] advantage of or at least if you have a
+[00:00:45] directional bias you get paid more for
+[00:00:48] being directionally right if a stock is
+[00:00:50] going to move more.
+[00:00:51] If a stock stays inside the expected
+[00:00:53] move which it usually does about 68% of
+[00:00:55] the time you benefit more from it.
+[00:00:57] That's the whole thing about earnings
+[00:00:58] plays. Analyzing the results from the
+[00:01:00] previous earnings season including April
+[00:01:02] of 2026 so it is
+[00:01:04] up to date. We wonder how our fear index
+[00:01:07] the VIX
+[00:01:08] reacts to earnings historically. Do you
+[00:01:10] see significantly higher VIX during the
+[00:01:13] earning season? Ryan what's your guess?
+[00:01:16] I know you haven't seen this so what's
+[00:01:18] your guess?
+[00:01:18] &gt;&gt; I'm going to say there's not much
+[00:01:21] of any change. I mean when we think
+[00:01:22] about earnings right and those higher
+[00:01:24] levels of volatility a lot of that is
+[00:01:26] just a function of those stocks or those
+[00:01:29] options excuse me retaining the premium
+[00:01:32] as there's very little time left due to
+[00:01:33] the binary event and less so you know of
+[00:01:36] course there's some buying around there
+[00:01:38] but less so this just rush and bid into
+[00:01:40] the market and then again it's on a
+[00:01:43] single stock basis versus what the VIX
+[00:01:45] represents.
+[00:01:47] Let's get to the next slide and find
+[00:01:48] out.
+[00:01:50] To understand that we analyze the VIX
+[00:01:51] during data during earnings and
+[00:01:54] non-earning season since 2013. So you've
+[00:01:56] got a good 13 years worth of information
+[00:01:58] here. Facts, on average, each earning
+[00:02:00] season lasts about 6 weeks. They're
+[00:02:02] going for the bulk of the earnings
+[00:02:03] there. There are 50 earning seasons
+[00:02:05] since 2013.
+[00:02:07] Four earning seasons per year, which may
+[00:02:09] get
+[00:02:10] may get down to two if we go into like a
+[00:02:12] Europe style
+[00:02:14] earnings announcement here. Where they
+[00:02:16] do it every half a year instead of
+[00:02:17] quarter, but we'll see. Plus the two for
+[00:02:20] this year. So, go.
+[00:02:22] And by the two for this year, they mean
+[00:02:23] the two quarters. Go.
+[00:02:27] We take a closer look at the following
+[00:02:28] metrics for both of the time frames. Vix
+[00:02:31] high, Vix high to low ranges, and the
+[00:02:33] average median
+[00:02:35] for Vix. So, they're trying to get all
+[00:02:37] three of
+[00:02:38] highs, lows. It's kind of like when
+[00:02:40] you're
+[00:02:41] going to go buy something, you know,
+[00:02:42] this is an average price. This is a This
+[00:02:44] is a good deal.
+[00:02:46] This is expensive. Like if you're if
+[00:02:49] you're going on a CarMax or something
+[00:02:50] like that. So, next one, please.
+[00:02:54] There were only two more instances of
+[00:02:56] Vix making a new high during earning
+[00:03:00] seasons.
+[00:03:01] Okay. Suggesting markets implied
+[00:03:03] volatility is not so sensitive to
+[00:03:05] earnings as expected.
+[00:03:06] Ryan, I think you're I think you're
+[00:03:08] spot-on here with your guess. Number of
+[00:03:10] times Vix made a new high during the
+[00:03:13] earning season, 26.
+[00:03:15] Non-earning season, 24. So,
+[00:03:18] I don't know if it's I don't even think
+[00:03:19] it's statistically
+[00:03:22] important here. It looks pretty random.
+[00:03:24] Basically 50/50. Yeah, I have to agree.
+[00:03:29] Yeah, I think so. Next one, please.
+[00:03:34] While a market expected higher
+[00:03:36] volatility for individual stocks, now
+[00:03:38] that's something you would you would
+[00:03:39] expect, right? I mean, we talk about
+[00:03:42] when earnings come out, that's the whole
+[00:03:43] thing that we try to take advantage of
+[00:03:45] by selling premium in earnings.
+[00:03:47] The index showed indifference to Vix
+[00:03:50] ranges between earning and non earning
+[00:03:53] seasons. Number of times that was wider
+[00:03:55] in a range is 25 to 25. So so far we
+[00:03:58] have much to do about nothing for
+[00:04:01] earnings for all of the media that talks
+[00:04:03] about, you know, this is the earning
+[00:04:05] season. We even do it ourselves, you
+[00:04:07] know, Nvidia's coming out or
+[00:04:11] whatever the stock de jour that's been
+[00:04:12] leading the AI
+[00:04:15] bull market is coming out. Maybe it's
+[00:04:18] going to affect the overall market. And
+[00:04:20] obviously it's going to affect the
+[00:04:21] overall market to some degree, but it
+[00:04:24] doesn't affect the market
+[00:04:26] in in its whole, right?
+[00:04:29] Doesn't seem to. No. And I don't think
+[00:04:31] that should be any surprise to anyone or
+[00:04:33] given
+[00:04:34] why you might go and look to buy call
+[00:04:36] options in the book at the VIX or or
+[00:04:38] more so puts, excuse me, in the S&amp;P. I
+[00:04:41] don't think it's a good because of
+[00:04:42] single stock earnings.
+[00:04:44] Yeah, no, I no, I totally agree. It's
+[00:04:46] much to do about nothing right now. And
+[00:04:48] I'm sure this next slide is going to
+[00:04:49] have nothing different to it. Next one,
+[00:04:51] please.
+[00:04:53] Both scenarios have an almost identical
+[00:04:55] range and median VIX. And here's the
+[00:04:57] average for the earning season around
+[00:04:59] 19. The median's around 16. Non earning
+[00:05:02] season, right there, 19 and 17.
+[00:05:07] As much as the media and even we like to
+[00:05:10] talk about now. We like to talk about it
+[00:05:11] from a from an actionable standpoint
+[00:05:15] here. I usually avoid earnings. Nick
+[00:05:19] actually trades through a lot of the a
+[00:05:22] lot of the earnings. I find them to be
+[00:05:28] I like post earnings trades. You know
+[00:05:30] what I mean? Like I I like I like that
+[00:05:32] way. I will
+[00:05:34] on
+[00:05:35] some earnings that I have positions on
+[00:05:38] stay in them for earnings. It does when
+[00:05:41] you talk about it from like a
+[00:05:43] a skewing the options point of view on
+[00:05:46] individual stocks, then you're going to
+[00:05:48] find that those individual stocks
+[00:05:50] definitely have some usually not
+[00:05:52] definitely usually more than 70% of the
+[00:05:55] time have that kind of volatility
+[00:05:58] expansion that we always talk about. And
+[00:06:00] then it would be like what am I what am
+[00:06:01] I going to do with the strategy I'm
+[00:06:03] going to going to use for the stock.
+[00:06:05] That's really what it comes down to
+[00:06:06] here. But statistically speaking
+[00:06:08] there's no there's no there's no VIX to
+[00:06:11] to jump on here. There's nothing really
+[00:06:14] to do when it comes to earnings for the
+[00:06:15] overall market.
+[00:06:17] Yeah, again, not surprised. I wish I had
+[00:06:19] more to add Tony, but given what the VIX
+[00:06:22] is
+[00:06:23] makes sense the numbers that we're
+[00:06:24] seeing here.
+[00:06:26] Yeah, next one please.
+[00:06:28] The takeaways there's almost no
+[00:06:29] correlation between the the index IV and
+[00:06:32] the individual stocks IV during earning
+[00:06:34] season.
+[00:06:35] Earnings and non-earnings have the same
+[00:06:37] average VIX over the long time. Did
+[00:06:40] Did you ever do like a
+[00:06:43] I don't know like
+[00:06:45] a
+[00:06:46] like a book report or something like
+[00:06:48] that and and you really
+[00:06:51] um
+[00:06:54] didn't read the book but you went
+[00:06:56] through the CliffNotes? Oh yeah. And
+[00:06:58] yeah
+[00:06:59] What's that? Absolutely.
+[00:07:01] Absolutely absolutely absolutely. Well,
+[00:07:03] that was like the findings here. There
+[00:07:05] was really nothing to do here. You could
+[00:07:07] just read the CliffNotes and you can get
+[00:07:10] you can get through that. Volatility for
+[00:07:12] earnings
+[00:07:13] is a non-event ladies and gentlemen and
+[00:07:15] that's really all you need to know.
+[00:07:18] Now it will affect the individual stocks
+[00:07:21] and that's where you have to make the
+[00:07:22] decision whether you're going to stay in
+[00:07:23] the stock or or stay out of it. But for
+[00:07:25] the overall market much to do about
+[00:07:27] nothing. Let's take a look at this
+[00:07:29] overall market since earnings are done
+[00:07:32] already for just about everything just a
+[00:07:34] few stragglers left. Even the S&amp;P's find
+[00:07:36] themselves hovering just over their
+[00:07:40] all-time just under their all-time high
+[00:07:42] high high which they made uh yesterday.
+[00:07:44] We're down 21 handles. Uh volatility is
+[00:07:47] up 11 cents.
+[00:07:49] Uh
+[00:07:50] really uh
+[00:07:52] a simple move in volatility, very uh
+[00:07:55] small move higher in volatility as the
+[00:07:58] market has sold off a little bit here.
+[00:08:00] Remember, yesterday expanded, too.
+[00:08:02] Nasdaq uh down 226.
+[00:08:05] Uh Russell down 17. Russell and the
+[00:08:08] Nasdaq are the two weakest, obviously,
+[00:08:09] on percent basis.
+[00:08:11] Uh and you got the Dow the strongest, uh
+[00:08:13] only down 36 or so. Volatility I already
+[00:08:16] mentioned, up 12 cents. Bonds are down
+[00:08:18] 15. Um they tried to rally, got up to
+[00:08:21] 113, sold back off there about a tick
+[00:08:23] off of their lows. Uh IV rank of 13 is
+[00:08:27] isn't that great. When you take a look
+[00:08:29] at the option chain here, you'll notice
+[00:08:31] that the the bond futures are going to
+[00:08:34] roll here in about a week or so. Um so
+[00:08:37] we are trading the front month M uh
+[00:08:41] bonds that are trading 112.17,
+[00:08:44] but the bonds that I think most people
+[00:08:46] will be looking to trade are the U bonds
+[00:08:48] here in June 26th. And they are about
+[00:08:52] 112.01, so they are lower than where the
+[00:08:55] bonds are right now that you'll be
+[00:08:57] trading. So when you are trading this,
+[00:08:59] you're taking a look at that and you
+[00:09:01] open up the platform and you see 112.
+[00:09:04] And in a moment, if they go under 112,
+[00:09:07] you'll see this line go to the opposite
+[00:09:09] side of 112. There's no mistaking the
+[00:09:11] pricing uh or that at the money line,
+[00:09:14] which is right in the middle there. Um
+[00:09:16] it reflects the proper future uh that
+[00:09:19] you'll be trading that's represented uh
+[00:09:21] by those options. Um oops, that's
+[00:09:24] tastytrade. I don't want to do that. I'm
+[00:09:25] so sorry. Oops, that's the wrong one,
+[00:09:27] too. There we go. Back to the charts.
+[00:09:28] Apologize.
+[00:09:30] Uh Bitcoin 13 uh down 13 or 1400. That's
+[00:09:33] about as low as I've seen it uh this
+[00:09:35] morning. Uh oil up $3 and change
+[00:09:38] flirting with its highs for the day.
+[00:09:40] Gold down 34. Uh, silver down 120, which
+[00:09:44] is about a two times more move lower
+[00:09:48] than, uh, gold. Ryan, we're going to
+[00:09:50] take a quick 90-second break. We're
+[00:09:52] going to come back.
+[00:09:53] We got the anticipated opening bell
+[00:09:55] coming up here. How excited are you for
+[00:09:57] this opening, the first one while you've
+[00:10:00] been on the show? It's only your second
+[00:10:02] show that's red.
+[00:10:04] I'm extremely excited, Tony.
+[00:10:06] I can tell. I can tell. I can see it. I
+[00:10:07] can see the enthusiasm in your face.
+[00:10:09] We're going to take a quick 90-second
+[00:10:10] break, come back. We got more tasty live
+[00:10:12] at the opening bell next.

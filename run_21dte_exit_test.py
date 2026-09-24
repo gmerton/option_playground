@@ -80,7 +80,10 @@ def build(ticker: str) -> pd.DataFrame:
         return pd.DataFrame()
     df["trade_date"] = pd.to_datetime(df["trade_date"])
     df["expiry"] = pd.to_datetime(df["expiry"])
-    df = df[(df["bid"] > 0) & (df["ask"] > 0)]
+    # ⚠ FIXED 2026-09-23: expiry-day rows must survive the zero-bid filter. A leg that expires worthless has
+    # bid 0; filtering it out made every both-legs-worthless strangle (the best outcome) disappear from ARM A.
+    # Found by the tastylive review; SPY hold-to-expiry flipped from -$1.77 to about +$1.13/share when restored.
+    df = df[((df["bid"] > 0) & (df["ask"] > 0)) | (df["trade_date"] == df["expiry"])]
     rows = []
     fridays = sorted(d for d in df["trade_date"].unique() if pd.Timestamp(d).weekday() == 4)
     for d in fridays:
@@ -118,7 +121,10 @@ def build(ticker: str) -> pd.DataFrame:
         fin = legs[legs["trade_date"] == exp]
         if fin.empty:
             continue
-        a_cost = float(fin["last"].fillna(fin["mid"]).clip(lower=0).sum())
+        if fin["cp"].nunique() < 2:                              # a leg with no expiry row at all: cannot settle
+            continue
+        px = fin["last"].fillna(fin["mid"]).clip(lower=0)
+        a_cost = float(px.where(fin["bid"] > 0, 0.0).sum())        # zero bid at expiry = worthless = 0
 
         rows.append(dict(
             sym=ticker, entry=pd.Timestamp(d), expiry=exp, credit=credit,
@@ -176,8 +182,8 @@ def main() -> None:
     da = (alt.b_alt - alt.a_pnl)
     print(f"     drop unresolved (used above): {d.mean():+.2f}   |   default them to the expiry outcome: {da.mean():+.2f}")
     print(f"     tail: ARM A worst 1% ${paired.a_pnl.quantile(0.01):,.0f} vs ARM B worst 1% ${paired.b_pnl.quantile(0.01):,.0f}")
-    T.to_csv("data/studies/exit_21dte_2026-09-23.csv", index=False)
-    print("\nwrote data/studies/exit_21dte_2026-09-23.csv")
+    T.to_csv("data/studies/exit_21dte_2026-09-23_fixed.csv", index=False)
+    print("\nwrote data/studies/exit_21dte_2026-09-23_fixed.csv")
 
 
 if __name__ == "__main__":

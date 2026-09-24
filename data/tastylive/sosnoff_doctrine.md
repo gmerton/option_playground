@@ -149,3 +149,77 @@ fails" would be an unsupported statement.
    cheap because the path-coverage guard exists.
 3. **VIX term structure as a gate inside the certified bucket.** ⚠ Best-of-k on the one certified cell, with a
    handful of episodes, so it's probably UNDERPOWERED.
+
+---
+
+## Sell vol when it's high: the scorecard (updated 2026-09-23)
+
+Gabe's standing question: *"a general theme of Sosnoff is to sell vol when it's high, and it does seem like that
+disagrees with the data."* This is every piece of evidence we hold, ours and the creators', split by **where** the
+rule is applied. Our own rows come first because they are real fills with a t; creator rows can only agree or
+disagree in direction. Section refs are to `data/studies/TEST_INDEX.md`.
+
+### A. Index, after stress (VIX high and the index has already sold off)
+
+| # | evidence | for / against | strength |
+|---|---|---|---|
+| A1 | **SPY bull put bearish-high-IV 0.25/0.15, t 6.07 (8/9 yrs) + SPX condor bearish-high-IV, t 5.21**. Same episodes, **one bet**, ~43% of trades in one year (§0/§1 Tier A/B certification) | **FOR** | ⭐ the only certified short-premium cell |
+| A2 | ETF bull puts (21 ETFs, 30/15Δ, hold to expiry) at **VIX ≥ 25: +4.5%/trade (n 1,123), +10.1% with the ETF above its 50-day**; 2022 −3%; the high-VIX test sample is 3 weeks (`etf_put_spread_study.md` l.39-46) | FOR | descriptive, same episodes as A1 |
+| A3 | IWM Bearish_HighIV with own-IV ≥ 80th pct **+7%** (n 45, washouts) (`iwm_iv_gate_study.md`) | FOR | small n, same episodes |
+| A4 | ⭐ **VRP panel (10 ETFs), premium rises with the VIX level.** 10d: VIX<15 +1.31 → 15-20 +1.84 → 20-25 **+2.60** (t 7.34) → >25 +1.82 (t 1.68, CI through 0). 90d: <15 −0.51 → 15-20 +0.44 → 20-25 **+2.53 (t_NW 4.10)** → >25 **+3.45 (t_NW 4.85, t_nolap 3.16)**. ⚠ **Erratum found here:** the report's prose (l.327, "at 30 and 90 days… not one VIX regime" clears) and the memory note contradict its own 90d table, which marks VIX 20-25 and >25 **YES** on t_NW. They fail on the non-overlapping t (2.09 / 3.16 vs the 3.29 hurdle), and 90d windows at VIX > 25 are a handful of episodes, so read it as "supportive, not certified". It's still the one place the *premium itself* (not a P&L) grows with the level | FOR (level) | NW-significant, fragile on t_nolap |
+| A5 | **Post-shock SPY premium**: after a ≥2σ day, short ATM straddles vs **VIX-matched** normal days: 1d +4.0pp (t 1.0), 5d +0.1pp, **10d −10.8pp (t −1.8), after UP shocks −20.7pp (t −2.1)** (§2) | **AGAINST "it just spiked"** · neutral on level | the richness **is** the VIX level; the spike adds nothing, and clustering hurts multi-day shorts |
+| A6 | Tail overlay [WL-5f] on the A1 bucket: 5Δ same-expiry puts **−100% on all 75 trades**; keep the bucket unhedged (§1) | FOR (the bucket as traded) | NULL overlay |
+| A7 | Localisation [WL-2b]: strategy "good stretches" aren't predictable (ρ −0.011; 99-cell VIX × trend sweep, family-wise p 0.36). The stress-state cell survives because it is **a single mechanism-backed split**, not a mined regime (§7) | qualifies A1 | NULL ×3 |
+| A8 | Skew as a signal: adds nothing beyond the VIX level (vol t −1.22 vs vix_pct t +6.54) (§9) | neutral: **level is the variable** | NULL |
+| A9 | Term structure (this wave, `2026-04-29_lxcOKPcwkhg`): VIX/VIX3M ≥ 1 on 7 of 7 ≥10% drawdowns since 2006, but it first inverts only after the S&P is down 3.4-9.3%. **20 of A1's 75 entries were backwardated at entry.** Mean +0.5% vs +9.0% contango, but medians are equal (+11.4 / +10.6); the gap is 2 max-loss trades (peek, UNDERPOWERED, now contaminated for SPY) | neutral | descriptive |
+| A10 | tastylive "sell strangles after a −3% day" (`2026-04-12_VRelP3ORlrA`): +$105 any day → more than 2×; 11 of 14 triggers inside our state (§9 tastylive batch) | FOR, direction | creator, mid, excludes Feb-Apr 2020 |
+| A11 | Julia Spina / Sahil (this wave, `2026-08-16_2KosXBxkNGo`): from VIX ≥ 25 contractions dominate; 50/50 at VIX ~20-21 (or 22-25, she says both) | FOR the *level* mean-reverting | descriptive. The curve prices the reversion; A5 says nothing extra is left beyond level |
+
+### B. Index, NOT after stress (low VIX, or high own-IV without a selloff)
+
+| # | evidence | for / against | strength |
+|---|---|---|---|
+| B1 | QQQ bullish-low-IV **−4.8% month-weighted, t −0.87** (the most frequent regime); QQQ bullish-high-IV t 1.04; SPX bullish-high-IV + 200MA t 2.26, 51% in one year (Tier A/B) | FOR "don't sell cheap index vol" | not certified either way |
+| B2 | IWM Bearish_LowIV negative in every IV band; Bullish_LowIV IV<30 −6.7% (`iwm_iv_gate_study.md`) | FOR "don't sell low" | descriptive |
+| B3 | **QQQ own-IV ≥ 80th pct is a VETO** (−1.7 / +0.8 / −4.0% across 3 delta pairs); the best band is 30-60 (§1 own-IV row) | **AGAINST "sell when own IV is high"** at the index, outside the stress state | FAIL as a gate |
+| B4 | ⭐ **The 1-day index short-vol results that certify sell in CALM conditions.** SPY 1-day short straddle on **positive**-gamma days **+13.7%, t 5.6**; 2× fly +5.8% (t 3.4); on negative-gamma (high-vol) days the fly loses −5.4% (t −3.1) (§2, §7 GEX) | **AGAINST a universal "sell high vol"** at short tenor | ⭐ certified |
+| B5 | tastylive VIX-bucket strangles (this wave, `2025-02-11_t7_7MUgXj2E`): "ROI negative when volatility is low" on SPY/TSLA 16Δ strangles | FOR "don't sell low" | creator, no n, mid |
+| B6 | tastylive SPX jade lizard (this wave, `2026-05-16_HMnAjgCyXp4`): every combination positive in a 3-year bull market | neither: **no vol condition**. It's regime beta at mid, and it contradicts B1 only through its sample | creator, mid, no control |
+| B7 | tastylive earnings season (this wave, `2026-05-17_I68T7ACpS-Q`): the VIX is the same in and out of earnings seasons (26 vs 24 new highs; mean 19 vs 19) | neither | descriptive |
+
+### C. Per name (single stocks; relative IV rank or percentile)
+
+| # | evidence | for / against | strength |
+|---|---|---|---|
+| C1 | ⭐ **IV rank vs credit/width**, 6,419 single-name bull puts: **zivr −1.89pp (t −1.25)**, within-date +0.25 (t 0.22); quintiles non-monotone and **backwards** (the lowest ivr earned most); credit/width wins (t 2.81 / 4.01) and works best in the **lowest**-ivr column (§1) | **AGAINST** | pre-registered NULL |
+| C2 | ⭐ **Long 7-DTE straddle gated on LOW own-IV percentile**: ≤20th pct mid +9.19 vs +5.05 ungated, monotone plateau (§2). **Short-straddle mirror:** IVpct ≤ 30 short **−4.51 [−9.02, −0.47]** (significant against the seller); IVpct ≥ 85 short +3.19 **[−2.86, +8.57]** (CI includes 0) (§5) | **AGAINST** (the edge is to **buy** low, not sell high) | SUPPORTED t 3.7 |
+| C3 | Paid-to-wait (setup names): IV ≥ 60th pct +5.7% net vs −3.3% ungated; gated−ungated **t 2.29, NOT CERTIFIED** after Šidák; 2021 −17%, 2022 −19% (§1, §0 missing-t row) | weak FOR | not certified |
+| C4 | Earnings vol premium: +0.601% at mid, **−0.428% at the bid**, crossing costs 171% of gross; **the selectivity lever inverts**: the richest implied-move quintile is the WORST at the bid (§9). calculator.py `iv30/rv30 ≥ 1.25` is **harmful**, and its quintiles invert (cheapest IV/RV best) (§9) | **AGAINST** | NULL / INVERTED |
+| C5 | 45-DTE / 20Δ strangles on 44 liquid names, real fills: hold −2.55, 21-DTE −1.02 per share, both negative (§1 21-DTE); 10-DTE single-name selling: costs 136% of gross (§1) | AGAINST (unconditional per-name selling) | FAIL |
+| C6 | Mega-cap 1-day 2× fly by own gamma: **−1.9%**; stock straddle spread 4.4% of mid = 4× SPY (§2) | AGAINST (per-name transfer of B4) | FAIL |
+| C7 | Vol-ETP call spreads (sell rich vol-product premium): UVXY −7.4% net (t −3.65), UVIX −8.8% (t −2.81) (§1) | AGAINST (friction) | INVERTED after costs |
+| C8 | tastylive `2025-02-11_t7_7MUgXj2E` extends the index result to "we use IV rank for individual stocks" with **no per-name evidence** (TSLA is scored on the VIX change) | claim only | contradicted by C1/C2 |
+
+### Reading after this wave
+
+1. **Index, after stress: HOLDS.** It's the one certified short-premium cell (A1). The VRP panel now adds a level
+   dose-response in the premium itself (A4, NW-significant at 90d, fragile on t_nolap). ⚠ **The variable is the
+   VIX *level* plus the selloff state, not the spike** (A5, A8). Nothing in this wave overturns it.
+   - The term-structure video (A9) and the Spina VIX-cycle study (A11) are descriptive shadows of the same state.
+   - The one new axis they raise, **VIX/VIX3M inversion beyond the VIX level**, is untested. Its prior is low
+     (skew precedent), and inside the bucket it's underpowered.
+2. **Index, not after stress: "don't sell cheap index vol" HOLDS in direction; "sell when own IV is high" FAILS**
+   (B3 veto). ⭐ **Refinement:** at a **1-day** tenor, the certified index short sells **calm**
+   (positive-gamma) days and loses on stressed ones (B4). So even at the index "sell high vol" is
+   **tenor-dependent**:
+   - calm days pay the overnight seller;
+   - stress pays the 2-4 week put seller.
+3. **Per name: FAILS, and in places INVERTS.** Relative IV (rank or percentile) doesn't sort single-name premium
+   (C1), and at the low end it's a **buy** signal (C2). "Rich" per-name events are the worst sales at real fills
+   (C4). The only per-name gate with a positive sign (C3) isn't certified and loses in 2021-22. What does sort
+   single names is **absolute price** (credit/width), and it works best exactly where IV rank says don't trade.
+4. **Net answer to Gabe:** Sosnoff's rule is right in one place and misstated everywhere else. The correct form
+   our data supports is **"sell *index* put risk when the VIX *level* is high *and* the index has already sold
+   off; never rank single names by their own IV."** It isn't "sell whatever has high IV rank". None of the five
+   videos in this wave overturns that. Three are neutral (term structure, earnings season, jade lizard), and two
+   support only its index half (VIX-bucket strangles, VIX expansions).
