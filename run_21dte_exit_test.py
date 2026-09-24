@@ -111,7 +111,10 @@ def build(ticker: str) -> pd.DataFrame:
         horizon = legs["trade_date"].nunique() or 1
 
         # ARM B: first session at or inside 21 DTE with both legs quoted
-        exitable = sorted(t for t in full if (exp - t).days <= EXIT_DTE)
+        # ⚠ FIXED 2026-09-24: expiry-day rows now always survive the filter, so without "t < exp" a trade with no
+        # both-legs-quoted session inside 21 DTE fell through to an "exit" at the expiry-day ASK (1,311 of 14,367
+        # trades). Those are UNRESOLVED per the pre-registration, not 21-DTE exits.
+        exitable = sorted(t for t in full if (exp - t).days <= EXIT_DTE and t < exp)
         b_cost, b_date = np.nan, pd.NaT
         if exitable:
             t0 = exitable[0]
