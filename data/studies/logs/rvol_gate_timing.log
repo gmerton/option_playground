@@ -1,0 +1,20 @@
+# RVOL gate timing: policy B (no RVOL gate) vs policy A (today's rules), per B-only episode
+
+## PRIMARY: W = 10 sessions | episodes 1,239 (559 names), A follows in 23%
+  B - A per episode: +0.538% of price (median -3.49), t +0.56 | halves -0.031 (t -1.05) / +0.948 (t +1.19) | in R +0.259 (t +1.11)
+  policy means: B +1.292%  A +0.753%
+  bar |t| >= 3, halves same sign: FAIL
+  per year: 2019 -3.15  2020 +2.15  2021 -1.96  2022 -2.73  2023 +1.00  2024 +0.62  2025 +2.38  2026 +0.12
+
+  split (descriptive): A follows n 288: B +8.32% vs A +3.24% | A never follows n 951: B's early trade -0.84% (A flat)
+  entry extension (ADR above 21 EMA) where A follows: early 2.09 -> late 2.43 (median), lag 3 sessions
+  ⚠ BIASED early-vs-late on the follow set only (conditioned on the later breakout): early +7.58% vs late +3.24% -- NOT the answer, shown to size the bias
+
+## secondary: W = 5 sessions | episodes 1,262 (559 names), A follows in 17%
+  B - A per episode: +0.673% of price (median -3.49), t +0.68 | halves -0.032 (t -1.12) / +1.174 (t +1.35) | in R +0.290 (t +1.14)
+  policy means: B +1.296%  A +0.624%
+
+## secondary: W = 20 sessions | episodes 1,223 (559 names), A follows in 28%
+  B - A per episode: +0.472% of price (median -3.49), t +0.53 | halves -0.210 (t -1.85) / +0.958 (t +1.38) | in R +0.234 (t +1.15)
+  policy means: B +1.184%  A +0.712%
+
