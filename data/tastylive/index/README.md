@@ -26,7 +26,7 @@ to check against our ledger.
   50%, rolling, "we studied / backtest / N years".
 - −3 for crypto / macro / chart-reading / beginner series; −4 for shorts (< 2 min).
 - 48 videos score ≥ 9, 150 score ≥ 7.
-- Only 2 were already reviewed (UIxluRMfh80, the 539 0DTE ICs study; +1 more).
+- Only 2 were already reviewed: UIxluRMfh80 (539 0DTE iron condors, 2.5/5) and -TsOWo9XFEo (double calendar vs iron condor, `data/tastylive/dcal_vs_iron_condor_2022-10_review.md`).
 
 ## Priority tiers
 
