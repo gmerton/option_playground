@@ -1,0 +1,171 @@
+[00:00] professional options Traders have a
+[00:02] preference to sell options premiums over
+[00:05] buying
+[00:06] so in today's video I'm going to explore
+[00:08] how you can potentially harness
+[00:10] volatility using a popular options
+[00:13] income strategy with limited risk
+[00:20] [Music]
+[00:21] this preference the selling options by
+[00:24] Traders is due to What's called the
+[00:26] volatility risk premium in a perfectly
+[00:29] efficient market option sellers would
+[00:32] net a zero net gain over a lifetime of
+[00:36] selling as the premiums collected would
+[00:38] theoretically offset any losses from the
+[00:41] volatility of the underlying asset which
+[00:44] is the risk that you're taking as an
+[00:46] option seller
+[00:47] however when we review the data we find
+[00:50] that options premiums consistently
+[00:53] overstate the actual volatility of the
+[00:56] underlying asset what this means is that
+[00:58] as an option seller you have the
+[01:01] advantage the premium that you collect
+[01:03] offsets more than the actual risk of the
+[01:06] trade over the long run
+[01:08] and this has been well documented by
+[01:10] empirical evidence over the past few
+[01:13] decades and it remains true across
+[01:16] multiple asset classes
+[01:18] however similar to an insurance company
+[01:21] option selling requires spreading out
+[01:24] the risk over a large number of Trades
+[01:27] with each potential loss to only account
+[01:30] for a small percentage of your total
+[01:32] portfolio
+[01:33] however not everyone has the luxury of a
+[01:36] sizable portfolio which brings us to the
+[01:39] iron Condor option strategy
+[01:42] an iron Condor is a directionally
+[01:44] neutral strategy that allows you to
+[01:47] potentially collect options premiums
+[01:49] with limited risk
+[01:51] and just like all complex option
+[01:53] strategies they can be better understood
+[01:56] if we break them down into their
+[01:58] foundational parts
+[02:00] you can think of an iron Condor as
+[02:02] either selling an out of the money
+[02:04] strangle while buying back a further out
+[02:07] of the money strangle to offset the risk
+[02:09] of the short string
+[02:11] or you can think of it as selling both a
+[02:14] bull put spread and a bear call spread
+[02:17] at the exact same time the profitability
+[02:20] of this strategy lies in the volatility
+[02:23] environment
+[02:24] so today I'm going to show you how big
+[02:26] of an impact implied volatility has on
+[02:30] this strategy
+[02:31] we're going to use Vol Q the NASDAQ 100
+[02:34] volatility index to compare two distinct
+[02:38] times and just how much premium and iron
+[02:40] Condor structure would have provided
+[02:44] we can see that on August 25th of 2021
+[02:47] Vol Q closed below 15 percent one of the
+[02:52] lowest readings of the index
+[02:54] and we're going to contrast this with
+[02:56] June 13th 2022 where there was more than
+[02:59] double that at over 38 percent
+[03:02] and you should note that these are not
+[03:04] the most extreme readings of the NASDAQ
+[03:06] 100 volatility index since the start of
+[03:08] a pandemic but they're simply near them
+[03:12] on August 25th 2021 the NASDAQ 100 index
+[03:16] closed above 15 300 and a 30-day 25
+[03:21] Delta iron Condor where we're selling
+[03:24] the 25 Delta call and a 25 Delta put
+[03:27] with a 100 wingspan buying the strike
+[03:31] prices that are 100 outside of the short
+[03:33] trikes would have created a 14 725
+[03:38] 14825
+[03:39] 15750 and 15 850 iron condor
+[03:44] that translates to a potential profit of
+[03:47] four thousand one hundred dollars with a
+[03:49] risk of five thousand nine hundred
+[03:51] dollars
+[03:52] and this is an iron Condor that if ndx
+[03:55] stays between the inner strikes of 14
+[03:57] 825 and 15 750. however note that these
+[04:03] strikes provide an investor with just
+[04:05] 3.7 percent of downside and 2.7 percent
+[04:10] of upside before this iron Condor starts
+[04:13] to show losses at expiration
+[04:17] if we contrast this with a 30-day 25
+[04:20] Delta iron Condor that has a 100 width
+[04:23] on June 13th of 2022 the high volatility
+[04:27] day when the NASDAQ 100 closed at 11 288
+[04:33] the strikes for that iron Condor would
+[04:35] have been the 10 400 10 500 12 175 and
+[04:41] 12 275. this iron Condor would have
+[04:44] collected
+[04:45] 46.70 of credit which translates to a
+[04:49] potential profit of four thousand six
+[04:51] hundred and seventy dollars and a risk
+[04:53] of 5 330 a better risk to reward ratio
+[04:58] than the previous trade but more
+[05:00] importantly this iron Condor gives the
+[05:03] investor 7.3 percent of downside and 8.2
+[05:07] percent of upside before the iron Condor
+[05:10] starts to show losses at expiration more
+[05:13] than double the previous iron condor
+[05:16] I hope that this provides context as to
+[05:19] how the volatility environment
+[05:20] significantly changes both the premiums
+[05:23] and the risk reward of an iron Condor
+[05:26] depending on how the volatility of the
+[05:29] underlying instrument or indexes
+[05:32] using the volatility index such as
+[05:34] volcue can provide insights into the
+[05:37] timing of such a strategy
+[05:39] additionally because iron Condors are
+[05:41] directionally neutral at least initially
+[05:43] when the trade is established they are
+[05:46] best initiated after a large outsized
+[05:49] move
+[05:50] against conventional wisdom our
+[05:52] statistics show that markets have a
+[05:55] better statistical chance of
+[05:57] consolidating or trading sideways only
+[06:00] after a large move
+[06:03] lastly one tip for maximizing an iron
+[06:07] Condor trade is that you actually have
+[06:09] the ability to collect more premium
+[06:11] after entering the trade if the market
+[06:14] starts to test one side of it without
+[06:17] adding any additional risk
+[06:20] if for example the underlying starts to
+[06:22] drift higher and starts to test the
+[06:25] upper strikes of the iron Condor you can
+[06:28] adjust the side of the lower strikes the
+[06:31] bull put spread to a higher strike price
+[06:33] as long as the new strikes are equal or
+[06:37] smaller in terms of the vertical width
+[06:40] you'll be able to collect more premium
+[06:42] without adding any additional risk
+[06:45] vice versa if the market trades lower
+[06:47] you can adjust the higher strikes of the
+[06:50] iron Condor the bare call spread Side
+[06:52] Lower and do the same thing
+[06:55] I really hope that this video helps you
+[06:57] better understand iron Condors because
+[06:59] it may seem like a complex strategy but
+[07:02] by breaking them down into simpler
+[07:04] components of two credit spreads they
+[07:07] become easier to understand how to
+[07:09] maximize yields and manage them
+[07:11] separately as parts of one trade
+[07:14] and lastly I hope the contrast of higher
+[07:17] and lower volatility environments of
+[07:19] this trade during different volatility
+[07:21] environments can affect the income that
+[07:24] you receive
+[07:26] and I'd just like to say a huge thank
+[07:28] you for watching this video and please
+[07:30] hit the Subscribe button and let me know
+[07:32] your experience of trading iron Condors
+[07:34] in the comments below and with that I
+[07:38] hope that you have a great trading day
+[07:40] [Music]
+[07:45] [Music]

@@ -1,0 +1,1660 @@
+[00:00] Good afternoon and welcome back everyone
+[00:02] to our options education webinar series.
+[00:05] My name is Tony Zag. I'm the chief
+[00:06] strategist here at OptionsPlay and we
+[00:09] have a very special session for you this
+[00:11] afternoon where we're going to cover a
+[00:13] pretty unique situation where a client
+[00:16] of ours lost over
+[00:18] $600,000 on a single credit spread
+[00:21] trade. specifically on a credit spread
+[00:24] trade that theoretically had a only a
+[00:27] $20,000 limited risk profile. How did
+[00:30] this client lose over $600,000 on this
+[00:34] particular trade? And more importantly,
+[00:36] how can you avoid it? That's what we're
+[00:38] going to discuss during today's session.
+[00:40] So, my primary goal today is to make
+[00:43] sure that you understand number one,
+[00:45] when credit spreads can potentially blow
+[00:48] up and more importantly, how can you
+[00:50] avoid it. So, we're going to discuss
+[00:52] this across two different uh sections.
+[00:54] Number one, we're going to help you
+[00:56] understand the methods to avoid account
+[00:59] blowups in trading credit spreads. What
+[01:01] you can do to avoid this particular
+[01:03] unique edge case scenario that even
+[01:06] though is very very unlikely to happen,
+[01:08] could theoretically happen to you. And
+[01:11] number two, more importantly, we want to
+[01:13] show you how you can find the best
+[01:15] yielding opportunities when you are
+[01:17] selling credit spreads to trade so that
+[01:20] you are setting yourself up for the
+[01:22] highest probability of success when you
+[01:25] are selling credit spreads. And when
+[01:27] you're able to combine the combination
+[01:28] of both, that's when you're able to grow
+[01:31] your account confidently and sustainably
+[01:34] like we do here every single Thursday
+[01:36] afternoon on these options education
+[01:38] sessions to help you learn how to grow
+[01:40] your account. Now, I see many of you
+[01:42] have already chimed in saying hello and
+[01:44] where you're from. So, if you're joining
+[01:46] us for the first time, please join us in
+[01:48] the chat window. Let us know who you
+[01:50] are, where you're joining from. As you
+[01:52] can see, we have a very vibrant
+[01:53] community of traders joining, all
+[01:56] working together to help each other grow
+[01:58] your trading account and learn from each
+[02:01] other. Now, if you're joining us for the
+[02:03] first time, you might be asking, are
+[02:04] these sessions recorded or and if you
+[02:06] can get access to the slides? And the
+[02:08] answer to to those questions are both
+[02:11] yes. You can sign up for a free trial at
+[02:14] optionsplay.com/signup or pointing your
+[02:16] phone to the QR code on your screen. And
+[02:19] that's going to give you access to the
+[02:21] recording, the slides, and the tools
+[02:24] that I'll be showing you during today's
+[02:25] session. It's a free 30-day trial. Takes
+[02:28] 10 seconds to get signed up. And like I
+[02:30] said, just point your phone to that QR
+[02:32] code or go to
+[02:34] optionsplay.com/signup to get access to
+[02:36] everything that I'm showing you during
+[02:38] today's session.
+[02:40] So, um, sorry that those that's the QR
+[02:44] code on your screen. Uh, if you need to
+[02:47] point your phone to that QR code, you
+[02:49] can sign up for that free trial. Um, and
+[02:51] I will also, um,
+[02:54] uh, leave this up at the end of the the
+[02:57] session here as well if you want to sign
+[02:59] up towards the end.
+[03:01] Um so if we look at kind of the scenario
+[03:06] which
+[03:08] uh had a trader a very unique scenario a
+[03:11] very a scenario that you know may not
+[03:14] happen
+[03:16] uh ever again but theoretically could
+[03:19] happen to someone um you know and it's
+[03:22] not very common but you know we do see
+[03:24] some occasionally big stocks that report
+[03:27] earnings after the close on Friday.
+[03:29] Those are the types of opportunities
+[03:31] that can create this very specific setup
+[03:34] that caused this one client to lose over
+[03:37] $600,000 on one credit spread that
+[03:40] theoretically only had a
+[03:42] $20,000 limited risk profile. So the
+[03:46] trade structure was on a stock uh Biogen
+[03:50] BIIB. It's a biotech stock. So obviously
+[03:53] biotech stocks in itself in nature is a
+[03:57] little bit more speculative and
+[03:58] generally speaking biotech stocks have
+[04:00] the propensity to make big moves up or
+[04:04] down on news of whether or not a drug
+[04:08] has been approved by the FDA or a drug
+[04:10] that has failed to be approved by FDA.
+[04:13] And what happened in this particular
+[04:14] case in November of 2020 was a bit of a
+[04:17] combination of both things and a very
+[04:19] unfortunately timed trade that caused
+[04:22] this particular client to lose a
+[04:24] substantial amount of capital beyond
+[04:27] what was the theoretical limited risk
+[04:29] profile of a credit spread. So before we
+[04:31] kind of jump into the idea uh before we
+[04:33] jump into the trade itself, you know,
+[04:36] credit spreads or vertical spreads in
+[04:38] general are marketed as a strategy with
+[04:41] limited risk. And theoretically there is
+[04:45] uh a limited risk to these types of
+[04:46] strategies. But if you hold them through
+[04:49] expiration, there are some chances very
+[04:52] remote, but there are some chances where
+[04:54] you could end up risking more money than
+[04:56] that limited risk uh structure. So this
+[04:58] is what I want to walk you through and
+[05:00] help you understand how this happens and
+[05:02] again how you can avoid it. So on this
+[05:05] particular case on November in November
+[05:08] 2020
+[05:09] uh the FDA advisory community initially
+[05:12] expressed support for Biogen's
+[05:14] Alzheimer's drug. This happened on
+[05:16] Wednesday, November 4th. Now if you look
+[05:18] at your chart here, that's this big big
+[05:20] candle here to the upside. um the stock
+[05:23] basically jumped from about
+[05:25] $255 or so to around
+[05:28] $355 on that news that the FDA uh was
+[05:32] showing some support of this particular
+[05:34] stock. And on that particular day when
+[05:37] the stock jumped $100, this client sold
+[05:40] 100 contracts of the 292 put for $3 and
+[05:45] bought a 100 contracts of the 290 put
+[05:47] for
+[05:48] $2.50. These premiums that I'm quoting
+[05:51] here right now are rough premiums.
+[05:53] They're not the exact premiums this
+[05:54] client particular got executed at, but
+[05:57] uh it doesn't really matter as to the
+[06:00] exact premiums they got executed at.
+[06:02] It's really more about the structure
+[06:04] itself. Okay. So, uh, this is obviously
+[06:07] a sizable trade from the perspective it
+[06:09] was a 100 contracts, but because it was
+[06:12] only a $2.5 wide credit spread, um, in
+[06:15] this particular case, the client was
+[06:17] only collecting 50 cents per contract.
+[06:20] So, $50 per contract times 100 contracts
+[06:24] uh brought in this client a net credit
+[06:27] of $5,000.
+[06:29] Now, because this is a
+[06:31] $2.5 wide credit spread, and because
+[06:34] this client brought in 50 cents, that
+[06:36] means $2 the rest of the
+[06:38] $2.50 was the total risk on this trade.
+[06:41] So, the maximum reward on this trade was
+[06:43] $5,000 versus the total risk, the
+[06:46] maximum risk on this trade was
+[06:48] $20,000. Even though it was a sizable
+[06:50] trade of a 100 contracts, the total risk
+[06:52] was $20,000. And this client sold this
+[06:56] credit spread on the news that this
+[06:59] particular stock uh you know that the
+[07:01] FDA community was expressing some
+[07:03] support for this particular stock and
+[07:04] the stock jumped 100 bucks and this
+[07:06] client sold this bullish credit spread
+[07:09] hoping that the stock would effectively
+[07:10] close above 292 a half which I'll bring
+[07:14] up to you on the chart here which which
+[07:16] is about right here. Um so at the time
+[07:19] when the when the stock rocketed higher
+[07:22] the client sold the 290 292 and a half
+[07:25] 290 uh 290 credit spread I'm hoping that
+[07:28] the stock will basically stay up above
+[07:31] that level on the very next day on that
+[07:34] was on a Wednesday when the news came
+[07:35] out on Thursday the stock pulled back a
+[07:37] little bit however at that time the
+[07:40] stock got halted because uh of the
+[07:42] particular news um that the FDA approval
+[07:46] was coming. However, unfortunately, what
+[07:49] happened is the stock got halted for
+[07:52] trading on f on Thursday and on this
+[07:55] particular day, this particular uh
+[07:57] credit spread expired that following
+[08:00] Friday. So, even though the stock got
+[08:03] halted, what happened was the FDA board
+[08:06] ultimately voted against the approval of
+[08:09] the drug after the close on Friday. So
+[08:14] effectively what happened was even
+[08:16] though the stock got halted by the
+[08:19] expiration date on Friday afternoon at
+[08:21] 400 p.m. even though you couldn't trade
+[08:23] the stock the stock at the time uh was
+[08:26] the last sale the last price of the
+[08:28] stock was around
+[08:30] $330. So in this particular case this
+[08:32] particular client thought well you know
+[08:35] I sold the 292 and a half put I bought
+[08:38] the 290 put the stock's currently
+[08:40] trading at 330. Um, even though the
+[08:43] stock got halted, you know, I'm good
+[08:45] because the stock is well outside of the
+[08:48] of the um of the credit spread of the
+[08:53] short strike of the credit spread. So,
+[08:54] I'm just going to leave it. I'm going to
+[08:56] hold it through expiration and I'm going
+[08:58] to make my
+[09:00] $5,000. Unfortunately, what happened was
+[09:02] that the news came out on Friday
+[09:04] afternoon after the close that the FDA
+[09:08] uh voted against this particular drug.
+[09:11] um and the stock and sent the stock
+[09:13] significantly lower, but because the
+[09:15] stock halted, this client didn't think
+[09:18] about how far the stock could open up
+[09:20] lower on Monday morning. Um and also did
+[09:24] not um and also because once you're
+[09:27] short a a uh a option going into into
+[09:32] expiration, once expiration is passed,
+[09:35] there's nothing you can do as a short
+[09:38] holder of that option. um you are at the
+[09:41] mercy of anyone who chooses to exercise
+[09:44] that call or put after hours even if it
+[09:48] doesn't theoretically make economic
+[09:51] sense for them to do it. But in this
+[09:53] particular case, what happened is the
+[09:54] buyer of a 292 a half put um realized
+[09:58] that the FDA uh voted against this
+[10:01] particular drug, believed that the stock
+[10:04] was going to open significantly lower on
+[10:06] Monday and chose to exercise the put
+[10:09] even though the put at the time was
+[10:11] about $40 out of the money.
+[10:15] So in this particular case, what happens
+[10:17] is on the following Monday, the stock
+[10:20] ended opening up at
+[10:22] $230. So the stock closed at 3:30,
+[10:25] opened at 230 and because this person
+[10:29] held this client held this short credit
+[10:32] spread through earnings, there was
+[10:33] nothing they could do other than uh
+[10:36] accept assignment of what is effectively
+[10:39] 10,000 shares of Biogen at the 292 and a
+[10:42] half strike price of the put option that
+[10:45] they sold. So what happens
+[10:48] is uh this limited risk strategy that
+[10:51] theoretically had a limited risk of $200
+[10:54] per contract and for 100 contracts is
+[10:57] $20,000. The short put was assigned to
+[11:00] this trader for 10,000 shares because
+[11:03] 100 contracts represents 10,000 shares
+[11:06] at the
+[11:08] $292.5 level. And when the stock opened
+[11:11] up at $230 on Monday, this uh trader
+[11:15] opened up their account on Monday to a
+[11:19] $625,000 unrealized loss in a margin
+[11:22] call on their account as a result of
+[11:25] this particular trade. So what can we
+[11:28] learn from this? It's that when you sell
+[11:31] a credit spread and you hold it through
+[11:34] expiration expecting that, hey, you
+[11:37] know, the markets are well outside of my
+[11:39] short strike. I'm going to hold it
+[11:41] through expiration so I can ek out every
+[11:43] single last scent out of my credit
+[11:45] spread. There is the there is the small
+[11:49] chance that something happens between
+[11:52] 4:00 and roughly 5:30 which is the last
+[11:56] uh which you know you have about an hour
+[11:58] and a half to exercise your calls and
+[12:00] puts to the OC. If you if you're a buyer
+[12:03] of a call or a put, there could
+[12:05] theoretically be some news in that hour
+[12:07] and a half that leads you to believe as
+[12:10] a buyer that it is worth exercising a
+[12:12] call or a put. Even though it
+[12:14] technically expired out of the money
+[12:16] because it doesn't matter that a call or
+[12:18] put is in the money or out of the money.
+[12:20] Someone could choose to exercise a call
+[12:22] or put regardless of whether it's in the
+[12:24] money or out of the money. It just
+[12:25] happens to be that if a call or a put is
+[12:27] out of the money
+[12:29] 99.99% of the chance it doesn't
+[12:32] 99.99% of the time it doesn't make sense
+[12:35] for that buyer to be exercising that
+[12:37] call or a put. Um but in this particular
+[12:40] case because some news had came out
+[12:43] after hours uh and there was still time
+[12:45] for this trader to execute or ex uh uh
+[12:49] exercise their their put option in this
+[12:51] particular case they chose to do it even
+[12:53] though the put option theoretically was
+[12:56] out of the money at expiration. Um so as
+[13:00] an option seller you are effectively at
+[13:03] a disadvantage because there is
+[13:05] effectively an hour and a half after um
+[13:08] the close on Friday where there's one
+[13:10] nothing you can do but theoretically
+[13:12] you're exposed to any potential
+[13:14] movements in that particular stock where
+[13:17] the buyer of the option has a choice in
+[13:20] that hour and a half if something
+[13:21] happens they could choose to exercise
+[13:23] that call or put and in that unlikely
+[13:26] event if that were to happen um and it
+[13:28] causes you to effectively be long or
+[13:31] short the stock on Monday morning and
+[13:33] the stock has moved materially against
+[13:35] you by Monday morning. You could have a
+[13:37] loss that exceeds the limited loss
+[13:41] potential of the credit spread because
+[13:43] the the the exposure that you have is
+[13:46] actually post the expiration. the
+[13:49] theoretical uh limited risk of the
+[13:52] strategy is only through expiration. But
+[13:55] once you get past
+[13:57] expiration, all bets are off. So this is
+[14:00] really what um you need to be aware of
+[14:03] before you sell a credit spread and
+[14:05] choose to hold the credit spread through
+[14:07] expiration. Does that make sense to
+[14:10] everyone? Please make please type one
+[14:12] into the chat window if that makes sense
+[14:14] to you.
+[14:18] And and yes, here's the thing. Someone
+[14:21] made a really good point. This person
+[14:23] was long the 290 puts. Couldn't they
+[14:26] have exercised this 290 put to offset
+[14:31] the long 100 shares? They would have to
+[14:33] to purchase uh you know at the 292 and a
+[14:37] half put option. And the short answer to
+[14:39] your question is yes. This person could
+[14:41] have exercised their 290 puts and
+[14:44] actually taken advantage of that.
+[14:46] However, this this client did not do
+[14:49] that. Um did not think that they needed
+[14:51] to do that and simply walked away
+[14:54] because they thought that this credit
+[14:55] spread expired out of the money and they
+[14:58] were going to capture the $5,000 on this
+[15:00] particular trade. Um because you know if
+[15:03] news comes out after hours and you
+[15:05] weren't sitting around your screens to
+[15:07] to find out about it or you found out
+[15:09] about it on Saturday morning instead of
+[15:11] Friday at 5 4:30 p.m. Um you know that's
+[15:15] kind of the the tough luck that this
+[15:17] client had to live with because they
+[15:20] didn't choose to exercise their 290 put.
+[15:22] But if you did find yourself in a
+[15:24] position where uh you sold the credit
+[15:26] spread and then something you know you
+[15:29] know this I'm just trying to remember a
+[15:32] couple of times in the last few years
+[15:34] there was an uh there was time a time
+[15:36] and I think in 2020 or 2022 where Tesla
+[15:40] reported earnings after the close on
+[15:42] Friday. Very unusual for a big stock
+[15:44] like Tesla to report after the close on
+[15:46] Friday, but it did happen once and it
+[15:49] did end up blowing up quite a few
+[15:50] accounts. uh you know people who were
+[15:52] short call options you know that where
+[15:54] the call option expired out of the money
+[15:56] but by Monday morning they found
+[15:58] themselves short the stock and the stock
+[15:59] was significantly higher. Nike also
+[16:01] reported after the close on Friday a
+[16:04] couple of years ago that also caused
+[16:06] some some issues. Um so it's it's not
+[16:08] common for for most major stocks to
+[16:10] report earnings uh after the close on
+[16:12] Friday, but we have seen a few events of
+[16:15] these over the years. for whatever
+[16:17] reasons, you know, stocks just chose to
+[16:19] to to choose that Friday expiration.
+[16:21] It's not a very popular time to to
+[16:23] announce earnings. But ultimately every
+[16:25] single Friday after the close, there are
+[16:27] a few companies that announce after the
+[16:29] close and this is a scenario that could
+[16:31] cause this to happen. But you know the
+[16:34] the point that someone made is that you
+[16:35] could have exercised the long puts to
+[16:38] offset this risk and that that would
+[16:40] have limited your loss to the $5,000 if
+[16:43] this client did choose to exercise those
+[16:46] long puts. But, you know, like I said,
+[16:47] if you didn't catch the news in time and
+[16:49] and put in your exercise notice uh
+[16:51] within the the hour and a half that you
+[16:53] have to to place your exercise notice,
+[16:56] then you are exposed past the earnings
+[16:59] expiration. Uh very very good
+[17:02] observation. Um, so in this particular
+[17:05] case, the client didn't actually lose
+[17:07] $625,000
+[17:09] uh because ultimately the brokerage firm
+[17:12] is
+[17:13] ultimately responsible for uh allowing
+[17:16] this client to effectively hold this
+[17:18] position through expiration. Um, and uh
+[17:21] the brokerage firm did have to end up
+[17:23] eating some of this loss. And granted,
+[17:26] the brokerage firm recovered some of it
+[17:27] because the stock did recover to some
+[17:30] degree after the earnings, right? just
+[17:31] it opened at 230 and within a couple of
+[17:33] days it traded back up to you know 255
+[17:36] that limited the losses uh in itself. Um
+[17:39] and then um you know the brokerage firm
+[17:41] ultimately ended up having to eat some
+[17:43] of that loss for the from the client. So
+[17:46] if the client but if the client let's
+[17:47] say had $50,000 in their account you
+[17:50] know would have wiped out $50,000 of
+[17:52] their equity. Um, so even though they
+[17:54] might not not have lost 625 and if this
+[17:58] client did have, you know, let's say $3
+[18:00] million in their account, they would
+[18:01] have lost
+[18:02] $625,000 if they closed that position on
+[18:05] Monday morning. So, um, that is the
+[18:08] scenario where you could put yourself in
+[18:10] a scenario where this could happen. So,
+[18:13] more importantly, the question is how do
+[18:15] you avoid it?
+[18:16] Um so first and foremost this the the to
+[18:22] avoid this particular scenario. It's
+[18:24] actually quite easy. Um it's not hard at
+[18:26] all to put yourself in a scenario to uh
+[18:30] make sure that this never happens to
+[18:31] you. And it all comes down to just basic
+[18:34] credit spread management. So we've been
+[18:38] showing you this particular slide at
+[18:40] every single juncture if you've learned
+[18:42] how to trade a credit spread here with
+[18:44] us at OptionsPlay. If you're doing this
+[18:46] for the first time, uh it's important to
+[18:49] understand that when you're selling
+[18:50] credit spreads, there are three possible
+[18:52] triggers to exit a credit spread. There
+[18:54] is a stop-loss level, there is a takerit
+[18:57] level, and there is a timebased
+[19:00] uh level. And all three rules are
+[19:02] designed to effectively avoid this exact
+[19:06] scenario from happening. So uh the first
+[19:09] is basically avoiding um um even getting
+[19:13] to a point where you have a full loss on
+[19:15] this particular trade. Uh and that is
+[19:18] using a stop-loss at around 100% of the
+[19:20] maximum gain on this particular trade.
+[19:23] And I'll walk you through an example of
+[19:25] what that means. On the flip side, you
+[19:26] also want to have a take-profit order um
+[19:30] at about 50% of the maximum gain of the
+[19:33] credit spread. And for those of you that
+[19:35] are uh you know, if you trade with TRAB
+[19:38] and you have access to a Thinkorswim uh
+[19:40] trading account, uh Brian, our senior
+[19:42] option strategist recently just
+[19:45] um
+[19:47] um our strategist uh Brian Overby just
+[19:50] uh recently um hosted a session on
+[19:53] Thinkerswim on how to place a bracket
+[19:55] order so that you can place both a
+[19:57] stop-loss order and a takerit order at
+[20:00] the same time. It's it's the only
+[20:03] options uh brokerage firm that I'm aware
+[20:06] of. I I think Interactive Brokers allows
+[20:08] you to do it as well, but Thinkers and
+[20:10] Interactive Brokers, I believe, are the
+[20:12] only two major brokerage firms that
+[20:14] allow you to place a stop-loss order and
+[20:17] a take-profit order on a complex
+[20:20] strategy like a credit spread um at the
+[20:23] same time. Most brokerage firms limit
+[20:25] you to do one or the other, which is
+[20:28] limiting in my opinion. Um, Tasty Trade
+[20:31] unfortunately does not do that. Um, it
+[20:33] is one of the uh the things that I kind
+[20:37] of have an issue with with Tasty Trade
+[20:39] even even you know thinkers obviously
+[20:41] built by um Tom Sausnoff. Um, Tasty
+[20:45] Trade I don't believe offers the OCC OCO
+[20:48] bracket order on complex option
+[20:49] strategies. Uh, but if they do that's
+[20:52] great. Um, if they do that's fantastic.
+[20:54] Um, but I don't believe they offer the
+[20:56] OCO bracket on complex orders.
+[21:00] Um, so this is something that you
+[21:02] definitely should um ask your brokerage
+[21:05] firm as to whether or not they support
+[21:07] that. But any brokerage firm that does
+[21:09] support that number one, what this
+[21:11] prevents many times is from you from
+[21:14] holding a credit spread through
+[21:16] expiration because an OCO bracket order
+[21:19] effectively will take profit or stop
+[21:21] loss uh your trade before it reaches
+[21:24] either maximum profit or maximum loss
+[21:26] which will only happen as you approach
+[21:28] expiration. But uh even if the stock
+[21:31] just basically stays where it is and
+[21:33] you're never and you're don't quite
+[21:35] reach that stop-loss or take-profit
+[21:36] order, that's where the third component
+[21:39] of our ris risk management strategy for
+[21:41] credit comes into play, which is exit
+[21:44] your trade at 21 days to expiration. And
+[21:47] this is to avoid at all at you know any
+[21:51] possible uh you know early assign you
+[21:55] know early assignment scenario where you
+[21:57] could find yourself at a loss that's
+[21:59] greater than the um the uh the
+[22:04] theoretical limit of a credit spread.
+[22:06] Now here here's the thing is that early
+[22:08] assignment doesn't carry the same uh
+[22:11] risk as what I showed you, right? Where
+[22:12] you get effectively assigned after uh
+[22:15] the expiration date. If you get early
+[22:17] assigned, then your long leg of the
+[22:20] credit spread will always offset any
+[22:22] particular losses that you have on the
+[22:24] long short equity leg that you have once
+[22:27] you are early assigned. So as long as if
+[22:30] you do get early assigned, right, your
+[22:33] risk will will remain the same, right?
+[22:36] Unless you hold it through expiration
+[22:38] and you let the long option expire
+[22:40] worthless or expire and then you
+[22:42] continue to hold the equity position
+[22:44] past the uh the expiration date. In that
+[22:47] particular scenario, yes, you could lose
+[22:49] more money than the theoretical loss of
+[22:52] a credit spread. But if you get assigned
+[22:54] early, early assignment doesn't change
+[22:56] the total risk of the particular trade.
+[22:58] It obviously changed the structure of
+[23:00] the trade and you need to have the
+[23:01] margin to hold on to that long or short
+[23:03] equity lag, but um the risk doesn't
+[23:06] change uh if you do get assigned early.
+[23:08] But we don't want to get assigned early.
+[23:11] We we don't we want to avoid that as
+[23:13] well, which is why we want to exit all
+[23:16] credit spreads at 21 days to expiration.
+[23:19] Now, for some of you, if you are trading
+[23:21] shorter dated expirations, if let's say
+[23:23] you're trading a, you know, 14-day
+[23:25] credit spread, you obviously can't exit
+[23:27] a 14-day credit spread at 21 days. What
+[23:30] you want to do is you want to have some
+[23:32] form of a timebased exit strategy to
+[23:35] exit before the actual expiration date
+[23:38] of the STR of the date of the of the
+[23:40] credit spread. So, let's say you do
+[23:42] theoretically sell a 14-day credit
+[23:44] spread or even let's say you sell a
+[23:46] one-day credit spread. You always want
+[23:48] to have some kind of timebased
+[23:51] um exit strategy where you are exiting
+[23:54] the trade prior to the expiration date
+[23:57] of the strategy. The only exception to
+[24:00] this is if you're trading an index
+[24:01] option, those that are cash settled.
+[24:04] Cash settled index options do not have
+[24:06] this uh exercise risk that I'm referring
+[24:09] to. Um, but in all stock or ETF options
+[24:13] that that have physical delivery, this
+[24:15] risk exists. And what you need to do is
+[24:18] make sure that no matter what your
+[24:20] strategy is when you're selling credit
+[24:22] spreads, that you have a timebased exit
+[24:24] strategy uh attached to your credit
+[24:27] spread to avoid this particular
+[24:29] scenario. Does that make sense everyone?
+[24:31] Please type two into the chat window if
+[24:33] that makes sense to you.
+[24:39] Perfect. Okay. So, just to help you
+[24:41] understand, right, if let's say I'm
+[24:43] looking at selling a credit spread, in
+[24:44] this particular case, I'm selling the
+[24:46] 100120 call credit spread. And let's say
+[24:48] I collect $8 for that credit spread.
+[24:51] Everything when we set our stop loss,
+[24:53] when we think about an OCO bracket order
+[24:55] is going to be relative to the $8 that
+[24:58] I've collected on this particular credit
+[25:00] spread. So, when I say we want to take
+[25:03] profits at 50% of the maximum gain, what
+[25:06] we want to do is basically set a takerit
+[25:08] order at 50% of the $8, which is $4 of
+[25:13] of uh at a $4 debit, right? So, if you
+[25:16] sold something for $8, it's now trading
+[25:18] at $4. What that allows you to do is
+[25:21] basically ex exit the trade once you've
+[25:23] made 50% of the total potential of the
+[25:26] trade. On the flip side, if you sold
+[25:29] something for $8 and the trade starts
+[25:31] going against you, that means the value
+[25:32] of the credit spread is expanding. You
+[25:34] sold something, you want it to go down,
+[25:36] but if it's going against you, then it's
+[25:38] going up. You want to set a stop loss at
+[25:40] about $16, 100% of the total maximum
+[25:44] gain potential of the credit spread. And
+[25:48] this allows you to bracket the order on
+[25:50] both sides so that if it goes in your
+[25:52] favor, you take profit. If it goes
+[25:53] against you, you you cut your losses.
+[25:55] But that third component, that 21 days
+[25:58] to expiration is important to have on
+[26:00] your strategy to avoid any concerns of
+[26:04] early assignment and avoid your concerns
+[26:06] of of holding this through expiration.
+[26:11] So 21 days, the reason we use 21 days is
+[26:15] because we typically sell credit spreads
+[26:17] that are about 45 days out. And if you
+[26:19] sell and if you exit your trade at 21
+[26:21] days or if it triggers a stop-loss or
+[26:24] take profit, I would say
+[26:26] 99.99% of the time you will not see an
+[26:29] early assignment and you will certainly
+[26:31] never see expiration if you follow these
+[26:34] rules.
+[26:36] Um in in that 0001% of the time you
+[26:40] could see an early assignment. And if
+[26:41] you get early assigned, what you want to
+[26:43] do is you basically want to exit the
+[26:45] equity leg and exit the long uh uh long
+[26:49] um call or put leg. That makes it uh so
+[26:52] that so that if you do exit both the
+[26:55] equity and the call put leg or the long
+[26:57] call put uh before expiration, your
+[27:00] maximum loss remains intact. Um, it's
+[27:03] only if you hold it through expiration,
+[27:04] post expiration, and the long call or
+[27:07] put expires and you still continue to
+[27:09] hold on to the equity position past that
+[27:11] expiration date, that's when your
+[27:13] exposure can be greater than uh the um
+[27:18] the theoretical
+[27:20] uh maximum risk of the credit spread.
+[27:23] Okay. So, let's talk a little bit about
+[27:26] credit spreads. You know, let's kind of
+[27:28] circle back to credit spreads now. Um
+[27:30] because you know we've talked
+[27:33] about what is the worst case scenario,
+[27:36] how it can happen and how to avoid it,
+[27:38] right? And hopefully
+[27:40] 99.99% of the time that won't happen to
+[27:42] you. You know, this was a very very uh
+[27:45] unusual edge case that was unlikely to
+[27:49] happen again. But it's important to
+[27:51] understand theoretically how it can
+[27:53] happen so that you basically never put
+[27:55] yourself in a position where it could
+[27:57] happen to you. Um, so let's now circle
+[28:00] back a little bit to credit spreads.
+[28:02] Now, I'm presuming most of you have some
+[28:04] experience trading credit spreads. If
+[28:05] not, have lots of experience trading
+[28:07] credit spreads. But for some of you here
+[28:09] that if you're relatively new to credit
+[28:11] spreads, I do want to give a bit of
+[28:12] introduction to credit spreads and show
+[28:14] you how you can find some of the best
+[28:16] yielding opportunities from a credit
+[28:18] spread perspective. So, just a very
+[28:20] quick overview, a credit spread is an
+[28:22] income generating strategy for what we
+[28:24] consider a mild directional view on a
+[28:26] stock or ETF. What that means is that as
+[28:29] long as the stock is starting to trend
+[28:30] in one direction or another, that's the
+[28:32] only criteria you generally need to
+[28:35] potentially initiate a credit spread.
+[28:37] You know, there are a lot of other
+[28:38] option strategies where you need to
+[28:40] believe that the stock is going to make
+[28:41] a big move in a short amount of time
+[28:44] before you might want to utilize that
+[28:46] strategy. So, for example, a call buying
+[28:48] a call option or buying a put option.
+[28:50] Those are two strategies where you need
+[28:52] to believe the stock is going to make a
+[28:54] big move in a short amount of time
+[28:56] before it makes sense for you to buy a
+[28:58] call option or buy a put option. Not the
+[29:00] same with a credit spread. It's you find
+[29:02] far more scenarios and potentially sell
+[29:04] a credit spread than you do where you
+[29:06] think the stock's going to make a big
+[29:07] move and it's justified to buy a call or
+[29:09] a put. So, it's a forgiving strategy
+[29:11] with a higher probability of success,
+[29:13] which I tend to find helps build
+[29:14] confidence for a lot of traders that are
+[29:16] new to trading options. and it has
+[29:18] limited risk and limited reward. Now, we
+[29:21] did talk about, you know, when that
+[29:22] limited risk factor can uh can can blow
+[29:26] up. Uh but hopefully, you know, what we
+[29:28] covered in the first section is really
+[29:30] clear rules as to how to avoid that and
+[29:32] to make sure that these strategies have
+[29:34] limited risk and limited reward. And the
+[29:36] benefit of that is that you know exactly
+[29:38] what you could potentially make or lose
+[29:40] before you get into a trade. Which means
+[29:43] that if you ever sell a credit spread
+[29:45] and you afterwards you say, "Oh crap, I
+[29:48] lost too much money on that credit
+[29:50] spread." The only person you can blame
+[29:52] is yourself because you know exactly how
+[29:55] much money you could potentially make or
+[29:57] lose before you get into a trade. So if
+[29:59] after you get you after you place the
+[30:01] trade and you say, "Hey, I lost too much
+[30:03] money." the only pro the only problem
+[30:05] that you have is that you traded too
+[30:07] many contracts of that particular
+[30:09] strategy. Um so you can only blame
+[30:11] yourself. You cannot blame anyone else.
+[30:14] So that is a tough uh thing to swallow
+[30:17] but that is the truth. Um so if you ever
+[30:20] you know and you know and please raise
+[30:24] your hand or type yes into the chat
+[30:25] window if you can if you've ever sold a
+[30:27] credit spread and afterwards said crap I
+[30:29] lost too much money on that credit
+[30:31] spread.
+[30:33] Unfortunately, the only person you can
+[30:35] blame on that is yourself because the
+[30:37] only person that can control how many
+[30:38] contracts you sell is yourself. Uh so
+[30:41] you know exactly how much you can you
+[30:43] can risk. You have control over that.
+[30:45] You need to make sure that you set that
+[30:47] up before you get into a trade. Okay. So
+[30:50] let's talk a little bit about the
+[30:52] optimal credit spread. Because when you
+[30:55] generally sell credit spreads, the goal
+[30:57] with a credit spread or sorry, the
+[30:59] minimum of a credit spread is that you
+[31:01] want to collect onethird of the vertical
+[31:03] rip. So in an example of a credit spread
+[31:05] where you sold the $97 uh put and you
+[31:08] bought the $88 put, that is a distance
+[31:12] between the two strikes of $9. So
+[31:15] whenever you trade any vertical spread,
+[31:17] the distance between the two strikes is
+[31:19] the total amount that you're playing
+[31:21] with. What that means is that if you
+[31:23] collect, let's say, onethird of that
+[31:25] vertical width, so $3 out of the $9 wide
+[31:28] credit spread, the rest of the of the
+[31:30] $9, which is $6 in this particular case,
+[31:33] that's going to be your total risk. So
+[31:35] in this particular case, if you're going
+[31:37] to collect $3 on a $9 wide credit
+[31:39] spread, you effectively have a 2:1
+[31:42] risk-reward ratio. For every $1 you can
+[31:45] potentially make, you're risking $2 on
+[31:47] the back of that. And that simply
+[31:49] requires you to be right 67% of the time
+[31:52] just to break even. So if you have
+[31:55] credit spreads where you make uh you
+[31:57] know $1 at a time when you're right and
+[31:59] maybe you have two winning trades of a
+[32:00] dollar and you have one losing trade
+[32:02] where you lose $2. You have one winning
+[32:04] trade where you win a dollar, one
+[32:06] winning trade where you win a dollar and
+[32:07] you lose a trade and you lose
+[32:09] $2. What do you get at the very end of
+[32:11] all of that? You know, you get a big fat
+[32:13] zero, big fat goose egg. Um, and a lot
+[32:15] of traders will say, you know, what's
+[32:17] the point of selling a credit spread
+[32:18] where, you know, your expected value is
+[32:20] zero? You know, why would I want to
+[32:22] shoot for that? And my answer to you is
+[32:24] that most traders don't even get to
+[32:27] break even. A lot of traders are losing
+[32:29] money on their trading. So, what our
+[32:31] goal here with credit spreads at the
+[32:33] minimum is to get you to break even. Um,
+[32:36] however, what you're going to find is
+[32:37] that there are lots of opportunities
+[32:39] when you're selling credit spreads or
+[32:41] you don't collect just $3 or you don't
+[32:42] collect just 33% of the width. You can
+[32:45] actually collect a little bit more. And
+[32:47] that is the edge that we want to seek
+[32:49] when we're selling credit spreads. So,
+[32:51] if we're selling a $97 strike put and
+[32:53] we're buying an $88 put, what we want to
+[32:56] do is we want to find credit spreads
+[32:57] where this $9 wide credit spread instead
+[33:00] of collecting $3 is collecting $4. And
+[33:03] what that means is your total risk here
+[33:05] is about $5 instead of $6. That brings
+[33:08] your risk-to-reward ratio to about one
+[33:10] and a half to one. Actually slightly
+[33:12] better than one and a half to one in
+[33:13] this particular case. And that is going
+[33:15] to require only 60% of your winners to
+[33:17] break even. So if you have two winning
+[33:19] trades where you win a dollar, one
+[33:20] winning trade where you lose a $150, one
+[33:23] two winning trades where you win a
+[33:24] dollar, one winning one losing trade
+[33:26] where you lose a $150. If you repeat
+[33:28] that over and over again, what do you
+[33:30] do? You start gaining an edge. you start
+[33:33] having positive expected value and
+[33:34] that's how you start growing your
+[33:36] account and start building account
+[33:38] equity in your account uh on a more
+[33:41] consistent
+[33:42] basis. But that's not the only place
+[33:45] that you can gain an edge. There's an
+[33:46] edge that you can gain on the options
+[33:48] trading pricing, but there's also an
+[33:51] edge that you can you can gain from a
+[33:53] direction perspective. So, um like I
+[33:55] said before, uh you can sell credit
+[33:57] spreads whenever you have just a general
+[34:00] trend, right? So if you look at this
+[34:01] particular stock, this is a stock that
+[34:03] is generally in an uptrend, right? And
+[34:05] then any point within this roughly
+[34:08] one-year time frame when the stock went
+[34:09] from $58 to $84. If you saw the credit
+[34:13] spread at any point of the year, meaning
+[34:15] you have no concept of timing, you just
+[34:17] saw that it was a it was trending higher
+[34:19] and you just sold the credit spread
+[34:20] every single time you saw that stock was
+[34:22] trending higher, you would you would
+[34:23] have made money almost throughout the
+[34:25] entire year. However, that doesn't mean
+[34:28] that that is not always the best
+[34:29] strategy. Meaning, you know, even if
+[34:32] let's say you sold the credit spread
+[34:34] right here, right? Let's let's say you
+[34:36] sold the credit spread on this one day,
+[34:38] a bullish credit spread in this
+[34:40] particular case. Um, you would have had
+[34:43] to sit through a little bit of chop,
+[34:46] right? Meaning small loss, flat, small
+[34:48] loss, flat, a little bit of a bigger
+[34:50] loss, but eventually kind of turned back
+[34:52] in your favor and you would have made a
+[34:53] profit on this particular trade. It's a
+[34:55] very simple and very forgiving strategy
+[34:57] and many times even if the stock
+[34:58] basically just trades sideways, you can
+[35:00] still make nearly the maximum profit on
+[35:03] this particular trade. So uh however if
+[35:06] let's say you timed your trades where
+[35:08] instead of entering the trade on that
+[35:10] particular candle let's say you enter
+[35:11] the trade on this particular
+[35:13] candle what happens is that you
+[35:15] basically end up being profitable almost
+[35:18] immediately and you exit the trade
+[35:20] within just five to seven business uh
+[35:23] trading days as opposed to in the
+[35:25] previous example. You would have made
+[35:26] money in the previous example, but you
+[35:28] would have had to sit through this trade
+[35:29] for probably 3 four weeks before you
+[35:32] were able to take profit on this
+[35:33] particular trade. So there is a distinct
+[35:36] difference in terms of timing that can
+[35:38] clearly give you an edge uh versus just
+[35:41] looking for an edge from an options
+[35:43] trading perspective. Does that make
+[35:45] sense? Everyone, please type three into
+[35:46] the chat window. What you're looking for
+[35:48] are credit spreads that collect more
+[35:50] than 33% of the width. And then you want
+[35:53] to time your trade specifically so that
+[35:55] if you are in an uptrend, what you wait
+[35:57] for is a bit of a pullback so that if
+[35:59] you do wait for those pullbacks, you
+[36:01] tend to have a much shorter time frame
+[36:03] trade. Um, so if you wait for a bit of a
+[36:05] pullback, you can make be profitable
+[36:07] much quicker and be profitable in uh um
+[36:10] not only much quicker but also not have
+[36:12] to sit through uh days and days of chop
+[36:15] where you could see some unrealized
+[36:17] losses before you start to see some some
+[36:19] gains on that particular trade. Um same
+[36:23] thing on the bearish side, right? If
+[36:24] you're looking for a bearish trade, what
+[36:26] you want to do is you want to wait for
+[36:27] rallies in a bearish trend and then
+[36:29] enter. If you wait for rallies and
+[36:31] enter, you can be profitable very very
+[36:33] quickly as opposed to having to sit
+[36:35] through chop, right? If you had sold a
+[36:37] bearish credit spread here, right? Um
+[36:40] would you have made money on this trade?
+[36:42] Theoretically, you would have
+[36:43] eventually, but you would have had to
+[36:45] sit through quite a bit of unrealized
+[36:47] losses and this would have been very
+[36:49] uncomfortable when you sold the credit
+[36:51] spread when it was trading at 74 and the
+[36:52] stock rallied all the way up to 78
+[36:55] before it eventually came back down
+[36:56] below 74 for you to be profitable. And
+[36:59] sometimes theoretically you could have
+[37:00] even gotten stopped out here and then
+[37:03] only to see the stock move in the
+[37:04] direction that you expected to. And I
+[37:06] know many of you have found yourself in
+[37:09] that particular scenario where you got
+[37:11] the directional view correct but your
+[37:13] timing was just off. You got stopped out
+[37:15] and then the trade went went in your
+[37:17] favor. And what you have to do is you
+[37:19] have to get better at timing. Um and
+[37:21] this is something that I actually, you
+[37:23] know, spend quite a bit of time on is
+[37:25] showing people how to time their trades
+[37:27] better. But you know I think the you
+[37:30] know based on what I'm showing you here
+[37:32] today really begs the question how can
+[37:34] you make sure that you identify you know
+[37:37] scenarios where one you have an edge
+[37:39] from an options trading perspective and
+[37:41] then you have an edge from a timing
+[37:44] perspective and that's really where the
+[37:45] options play credit spread trade idea
+[37:48] section is designed to automate
+[37:50] everything that I just showed you here
+[37:52] today because our credit spread uh our
+[37:55] credit spreads on our platform
+[37:57] automatically We only select credit
+[37:58] spreads that generate more than 33% of
+[38:01] the vertical width. It's actually ranked
+[38:03] based on uh which ones have the most
+[38:05] amount of yield. Meaning where do you
+[38:06] get the most edge is always at the very
+[38:08] top of the list from a credit spread
+[38:10] perspective. So most the stocks that
+[38:12] we're looking to look at. You're going
+[38:13] to see 37 38 40 42% edge on a credit
+[38:18] spread. Um, on top of that, our credit
+[38:21] spread is only looking at very liquid
+[38:23] underlying symbols so that you know that
+[38:26] if you found an opportunity, you can
+[38:28] execute the trade at the price that
+[38:29] we're quoting you basically near the
+[38:31] midpoint if not at the midpoint of a
+[38:33] credit spread. And then also third of
+[38:35] all, it also aligns with the our
+[38:38] technical directional view from a timing
+[38:40] perspective. So I just want to show that
+[38:42] to you here on our platform. So when you
+[38:44] go to the options display platform under
+[38:46] the ideas section there's a drop-own
+[38:49] menu and you can choose from that
+[38:50] drop-own menu whether you want to look
+[38:52] at technical ideas, cover call ideas,
+[38:54] shortput ideas or credit spread ideas.
+[38:57] And as you can see today we have 124
+[39:00] credit spread ideas. I just want to show
+[39:02] you kind of what that looks like and I'm
+[39:04] going to look at spy. Um spy currently
+[39:07] actually, as you can see, collects 47%
+[39:10] of the vertical width. very very
+[39:12] uncommon to see that for credit spread
+[39:14] to collect nearly 50% of the vertical
+[39:16] width but we saw a bit of that here
+[39:19] during the uh initial selloff um you
+[39:22] know in at the beginning of April and
+[39:24] we're seeing it again um and I think
+[39:26] this is something that I think is worth
+[39:28] looking at um today this is updated
+[39:30] every single hour this credit spread
+[39:32] report so it's so you're basically
+[39:34] getting um new opportunities uh you know
+[39:37] throughout the day but basically as you
+[39:39] can see we're clearly in a bit of
+[39:41] downtrend here in terms of the S&P 500.
+[39:44] And what we want to do is we want to
+[39:46] wait for these uptrends to enter that
+[39:48] bearish trade. And that's sort of what
+[39:50] we're getting right now is a bit of an
+[39:51] uptrend. So, I'm not saying that the S&P
+[39:54] 500 is moving lower, but from a uh
+[39:57] riskreward and from a timing
+[39:59] perspective, it is favorable for bearish
+[40:01] to adding bearish exposure at these
+[40:04] specific levels. Um, so if you do
+[40:06] believe that there's some downside going
+[40:08] forward from in the S&P 500, well, here
+[40:11] is an opportunity that you can sell the
+[40:13] June 13th
+[40:16] 562590 call vertical, and you're going
+[40:18] to collectundred
+[40:19] um uh $1212, which is $1,200. Um, and as
+[40:25] you can see, the risk-to-reward ratio on
+[40:27] this particular trade is pretty close to
+[40:29] 5050 um or one to one. Um, which is
+[40:32] something you don't ever see on stuff
+[40:35] like, you know, index op uh I'm sorry um
+[40:38] ETFs like spy QQQ. Usually you have
+[40:41] about a 3:1 risk-to-reward ratio. Here
+[40:44] you have a very unusual one to one
+[40:46] risk-to-reward ratio. So, you know, our
+[40:48] tool is designed to help you identify
+[40:50] where you can you find the highest um
+[40:54] risk-to-reward ratio. So, VO, which is
+[40:56] obviously Vanguard's version of
+[40:58] SPY. So, and that's why the chart looks
+[41:01] almost identical to SPY, but Vanguard's
+[41:04] ETF is actually collecting uh you know,
+[41:06] in this particular case a little bit
+[41:08] higher 49% of the vertical width. Now,
+[41:11] this is based on the premiums from, you
+[41:13] know, when the report run, but when you
+[41:14] click on it, we're actually pulling uh
+[41:16] the latest pricing here on on your on
+[41:19] your screens. And right now, this is
+[41:20] going to collect a little over $1,000 in
+[41:23] potential reward uh versus the $1,200 in
+[41:26] total risk on this particular trade. So,
+[41:28] you're still very close to one. Um, so
+[41:30] whenever this this this column here on
+[41:33] the left uh updates once an hour, but if
+[41:35] you click on any of these specific
+[41:37] ideas, it's going to pull the most
+[41:39] recent pricing to give you the most
+[41:41] updated pricing for your particular
+[41:43] trade. So if you sold this HPE 17 18 and
+[41:46] a half call vertical, you're going to
+[41:47] collect uh 60 cents versus 90 cents. So
+[41:50] about a one and a half to one
+[41:51] risk-to-reward ratio on HPE. And you can
+[41:54] basically go down the list. And as you
+[41:56] go down the list, basically uh the
+[41:58] premium versus width gets lower and
+[42:00] lower. So basically what you want to do
+[42:01] is you want to start at the top of the
+[42:02] list and work your way down. And as you
+[42:05] can see what we're doing is we're
+[42:06] basically doing all the work for you on
+[42:08] the options trading side and from the
+[42:11] timing perspective. So any of these
+[42:13] ideas that you're looking at, let me
+[42:14] look at some bullish ideas just to kind
+[42:16] of show you what those look like. Um
+[42:18] let's look at um uh let's look at Dollar
+[42:20] General. This is collecting 39% of the
+[42:23] vertical width. You can also do it on
+[42:25] GLD. Um, as you can see, what you're
+[42:27] looking for are stocks that are in an
+[42:29] uptrend. That's what we've got here for
+[42:30] Dollar General. And what you want to
+[42:32] look for are these kind of pullbacks in
+[42:34] this in this uptrend. That's kind of
+[42:35] what we've gotten so far is a little bit
+[42:37] of a small pullback. And that is the
+[42:39] your opportunity to get in the trade and
+[42:41] potentially be profitable in a very
+[42:43] short amount of time. And that's exactly
+[42:45] what we have here on Dollar General. So,
+[42:48] our tool basically does all of the work
+[42:50] for you in automating finding liquid
+[42:52] option underlying symbols, uh, sorting,
+[42:56] you know, credit spreads based on where
+[42:57] you get the most premium, meaning the
+[42:59] best riskreward. And it also filters out
+[43:02] where the timing is is not optimal. It
+[43:05] only it only uh puts an idea on your
+[43:08] screen when the timing is optimal for
+[43:11] that entry. so that you can basically
+[43:13] get all the things that we just
+[43:14] discussed here, the edge from an options
+[43:16] trading perspective and the timing where
+[43:18] you are basically waiting for these
+[43:20] setups for a bullish opportunity and
+[43:23] waiting for these rallies to enter that
+[43:25] bearish opportunity. So regardless of
+[43:26] whether your views on the markets are
+[43:28] bullish or bearish, you can always find
+[43:30] the best yielding opportunity selling
+[43:32] credit spreads using the options play
+[43:34] platform and it's all here on your
+[43:37] platform under the idea generation
+[43:39] section. Once you click on credit
+[43:40] spreads, you can even sort and filter
+[43:42] based on bullish and bearish or you can
+[43:44] just select all of them and see all the
+[43:46] opportunities. But it is pretty unique
+[43:48] opportunity that we're currently seeing
+[43:50] in SPY. You're seeing in DIA. You'll
+[43:52] probably see it in um some of the IWM.
+[43:55] So basically all of the major indices
+[43:58] are flashing the same signal. And it's
+[44:01] because we've had a nice rally here in a
+[44:03] lot of these these um uh a lot of these
+[44:06] major indices. And these indices are
+[44:08] starting to show some slowing momentum.
+[44:10] That means there's a higher probability
+[44:12] that this going to start rolling over
+[44:14] and start seeing a little bit of a move
+[44:16] here to the downside. And um and and and
+[44:20] that is a potential opportunity to add
+[44:23] some bearish exposure. Again, I'm not
+[44:26] saying that the markets are going to
+[44:27] move lower from here, but uh we
+[44:29] certainly have all of the uh components
+[44:32] that you would typically look at where
+[44:34] the probability and the riskreward looks
+[44:37] most favorable right now for adding some
+[44:39] bearish exposure on the major indices.
+[44:42] So, with that, that covers what I wanted
+[44:44] to share with you here today. I hope
+[44:46] that this is helpful in giving you a
+[44:48] better understanding of credit spreads,
+[44:50] how to make sure that you avoid any
+[44:52] possible scenario where you could get
+[44:54] yourself into a trouble uh like this one
+[44:56] client did. It's very unlikely, but it
+[44:58] could potentially happen to you. So,
+[45:00] it's really important that you
+[45:01] understand how it can happen, how you
+[45:03] can avoid it, and then every single day
+[45:05] when you're selling credit spreads, when
+[45:06] you how you can find the best possible
+[45:08] opportunities selling credit spreads.
+[45:11] So, while you point your phone, uh uh
+[45:13] I'm sorry, while you bring up the Q&A
+[45:16] window, which is at the bottom of your
+[45:17] screen, um if you do want to sign up for
+[45:19] a free trial to OptionsPlay to have
+[45:21] access to all the tools I just showed
+[45:23] you today, including the recording and
+[45:25] the slides from today's session, sign up
+[45:27] using the uh QR code on your screen at
+[45:31] optionsplay.com/signup or uh point your
+[45:34] phone to the QR code that is on your
+[45:36] screen. Okay. So, I'll leave that up
+[45:38] here for a minute while I pull up the
+[45:40] Q&A window. Um, you can pull up the Q&A
+[45:42] window, type your questions there, and I
+[45:44] will answer your questions out of the
+[45:46] Q&A Q&A
+[45:52] window. This client, uh, I have no idea
+[45:55] where this client chose to trade this.
+[45:57] You know, I would have never traded a
+[45:58] $2.5 wide credit spread that was what
+[46:01] was, you know, the stock was at 330.
+[46:04] This was this was a credit spread that
+[46:06] was $40 out of the money selling a $25
+[46:09] wide credit spread. I would have never
+[46:10] traded something like that. Um, so I
+[46:13] don't know where this client got this
+[46:14] idea and a lot of traders do this,
+[46:16] right? It's a high it was a very high
+[46:18] probability setup when the trader
+[46:20] entered this trade. Like I said, I don't
+[46:22] know what the premiums they got executed
+[46:24] at were um but they probably collected
+[46:26] pennies um for the the potential risks.
+[46:30] And at the time, you know, when you
+[46:31] traded a 100 contracts and you felt that
+[46:33] this this op, you know, this option was
+[46:35] $40 out of the money, there's probably,
+[46:37] you know, had a 90% chance of of being
+[46:39] successful on the trade. Um, a lot of
+[46:43] people do this, but it's just and a lot
+[46:45] of times it's these really far out of
+[46:47] the money credit spreads where people
+[46:49] get into trouble because they just
+[46:51] think, "Ah, there's no way this thing's
+[46:52] going to expire out of the in the money,
+[46:54] you know, so at expiration, they just
+[46:56] hold it through expiration, you know,
+[46:57] and if you're only collecting 10 cents
+[46:59] on a credit spread, you want to ek out
+[47:01] every single penny. So, the only way to
+[47:03] do that is to hold it through
+[47:04] expiration. And that's really where the
+[47:06] risk happens."
+[47:16] Um, someone just say just said Netflix
+[47:19] reported on Thursday when the market was
+[47:20] closed for Good Friday this month. And
+[47:22] yes, yeah, I just actually that's a
+[47:24] really good point. You know, Netflix was
+[47:26] uh I'm sure some people got caught on
+[47:28] that Netflix trade as well where you
+[47:30] know, you get an option that was looked
+[47:32] like it was expiring out of the money.
+[47:34] You know, earnings came out better than
+[47:36] expected. the stock popped and you
+[47:38] thought your call option expired
+[47:39] worthless. Next thing you know, on
+[47:41] Monday morning, you're short 100 shares
+[47:42] of that stock for every for every
+[47:44] contract you
+[47:47] sold. Is a brokerage firm not
+[47:49] responsible for letting you know that
+[47:50] the options were exercised? Um, yes, but
+[47:54] there's nothing you can do. If you hold
+[47:56] an option through expir a short option
+[47:58] through expiration, there's nothing you
+[48:00] can do at that point, right? The only
+[48:02] thing you can do is if you close out
+[48:04] that option prior to expiration, that's
+[48:06] the only thing you can do. Otherwise,
+[48:08] you just end up being uh you know short
+[48:10] long or short um the stock on Monday
+[48:13] morning. Um now, now here's the thing.
+[48:16] Uh options assignments are assigned
+[48:18] theoretically randomly. OCC goes to a
+[48:21] brokerage firm and says, you know, there
+[48:23] are 5,000 contracts that are exe that
+[48:26] have been exercised. you know, you you a
+[48:28] brokerage firm XYZ, you get, you know,
+[48:30] 100 contracts. Brokerage firm XYZ, you
+[48:33] get, you know, 300 contracts. Brokerage
+[48:35] firm blah blah blah, you get 500
+[48:36] contracts. And it's theoretically
+[48:38] distributed randomly to the brokerage
+[48:40] firms. And then within brokerage firms,
+[48:42] it's theoretically distributed randomly
+[48:43] to individual accounts. This person just
+[48:46] happens to have been on the wrong side
+[48:48] of that particular exercise notice.
+[49:03] um stop loss at 16 when net credit
+[49:06] received is eight. But since we're
+[49:07] taking profit of four, can we use eight
+[49:09] as a stop-loss? You can't use eight as a
+[49:11] stop-loss if the trade is traded at
+[49:13] eight because that means as soon as you
+[49:14] enter the trade, you would have been
+[49:15] stopped out. Um so you have to have a
+[49:17] stop loss that's above the price that
+[49:19] you ex enter the trade at. a cover call,
+[49:23] same thing. You have the same risk of
+[49:25] cover call. Well, I guess sorry, you
+[49:26] don't have the same risk of cover calls
+[49:28] because you own a 100 shares of stock,
+[49:30] right? So that if the short call gets
+[49:31] assigned and you end up being short 100
+[49:33] shares of stock, the whole point of the
+[49:35] long 100 shares that you own is to
+[49:37] offset that short position that you
+[49:39] have. So you don't have the same risk
+[49:41] when you have a covered call. It's only
+[49:43] for credit
+[49:44] spreads or ironing condors for that
+[49:46] matter.
+[49:56] Do you have to do the sell put or will
+[49:58] it automatically when you get assigned
+[50:00] the put is sold? I'm not sure I
+[50:02] understand your question Mike if you
+[50:04] don't
+[50:04] [Music]
+[50:05] mind clarifying that.
+[50:09] Um if your question is I think I
+[50:13] understand the question and correct me
+[50:15] if I'm if I'm not understanding it
+[50:17] correctly. Um I think the question is
+[50:19] basically uh if let's say the the short
+[50:23] option gets assigned do you have to
+[50:24] manually exercise the long put to offset
+[50:27] it and the answer is yes you don't
+[50:29] automatically get uh you know the long
+[50:32] put exercise unless the stock you know
+[50:35] unless it was in the money for both of
+[50:37] these right if it was in the money for
+[50:38] both of these then you would have been
+[50:40] assigned on the short strike and your
+[50:42] brokerage firm would have exercised your
+[50:44] you know you typically get auto exercise
+[50:46] on in the
+[50:48] contract. So, you know, those two would
+[50:49] have offset each other on Monday
+[50:51] morning. Um, but if if they were both
+[50:54] out of the money at expiration
+[50:55] theoretically and something happened
+[50:57] after hours, that's really where you can
+[50:59] get caught out.
+[51:04] Um, brokers that do not allow OCO orders
+[51:08] on complex trades, could you just set an
+[51:10] OCO on the short leg?
+[51:14] Um, I guess you could That's a That's an
+[51:18] interesting um
+[51:21] interesting uh suggestion is that if
+[51:24] your brokerage firm only allows you to
+[51:25] do an OCO on a single leg, could you do
+[51:28] it on the single leg and leave yourself
+[51:30] with the long leg? Yeah, I guess that's
+[51:33] possible. Um, I'm just trying to think
+[51:37] how you would price your single leg. I
+[51:40] think the tough part is really figuring
+[51:41] out what premiums to to put those OCO
+[51:43] orders at, but theoretically you
+[51:50] could. Um,
+[51:53] uh, someone's saying in volatile stocks
+[51:55] sometimes closing at 21 days before
+[51:57] expiration tends to leave leave a lot of
+[51:59] money on the table. Is it still better
+[52:00] to get out in such a scenario? Um, so
+[52:03] you don't have to just get out. You can
+[52:05] basically roll to a new 45day credit
+[52:08] spread, right? So you don't have to
+[52:09] necessarily leave money on the table.
+[52:11] You just want to roll your credit spread
+[52:13] out a new 45day credit spread. You can
+[52:15] continue to gain you can continue to
+[52:17] have your exposure and continue to try
+[52:19] to gain more from that particular trade,
+[52:21] especially if you still believe in the
+[52:22] directional view of that trade. Uh so
+[52:25] I'm not saying you have to get out of
+[52:26] the trade and full stop and and be out
+[52:28] of that stock. you just have to roll it
+[52:30] back out to a for new 45day credit
+[52:32] spread because rolling it out basically
+[52:34] avoids this whole assignment risk or
+[52:36] early assignment risk as you approach
+[52:39] expiration. It's a great question and I
+[52:41] think that was something that I sort of
+[52:43] failed to to talk about, you know, at
+[52:45] the time, but um if you reach 21 days to
+[52:48] expiration and you think that the stock
+[52:50] still has a room to grow, just roll it
+[52:52] out to a new 45day credit
+[52:56] spread. During pullbacks, we collect
+[52:59] less premium, too. You don't you
+[53:01] collect, you know, the the whole point
+[53:03] of our credit spread report is to find
+[53:06] you where the timing is correct and
+[53:08] you're collecting a, you know,
+[53:11] significantly higher than 33% of the
+[53:13] premium. You don't have to give up
+[53:15] premium just because you're trying to
+[53:16] wait for the best timing. A lot of
+[53:18] times, the best timing actually gives
+[53:19] you the best uh credit as well on a
+[53:22] credit spread.
+[53:24] Is it advantageous to use RSI as an
+[53:27] entry or exit point using 70 or 30 as
+[53:29] oversold? Yes. Um so when I talk about
+[53:32] timing or optimal timing you know any
+[53:34] any type of these momentum indicators
+[53:36] like RSI is a tool that you can use to
+[53:38] optimize timing right. So for example,
+[53:40] if let's say you pull up uh you know I'm
+[53:43] this is not particularly RSI but you
+[53:45] know pretend it is RSI when I'm telling
+[53:47] you that the timing here is per is is
+[53:49] great for for selling options it's
+[53:52] because the RSI or the in this
+[53:54] particular case the CCI is overbought
+[53:56] right um so yes technical indicators are
+[54:00] what you would want to use to optimize
+[54:02] the timing aspect of the trade. Uh is
+[54:05] there a video on timing the trades
+[54:07] better? Yes, I recently just posted a
+[54:09] video um a couple of weeks ago
+[54:11] specifically on timing and and the tools
+[54:14] that we have here at OptionsPlay to help
+[54:16] you better time your trades. Um you
+[54:18] know, we have a watch list uh built
+[54:20] recently on uh overvalued and
+[54:23] undervalued stocks. And I think the
+[54:25] biggest fallacy I think for a lot of
+[54:27] traders with um
+[54:30] um uh with fundamental analysis is the
+[54:34] fact that you can run a screener and you
+[54:36] can see that there are 66 stocks that we
+[54:38] deem as undervalued, but it does not
+[54:40] mean that now is the best time to buy
+[54:42] those undervalued stocks. Just because
+[54:44] you deem something as undervalued does
+[54:46] not mean that now is the best time to
+[54:48] buy the stocks. That's why we built uh
+[54:50] our idea um screener on top of um our
+[54:53] undervalued stock watch list so that we
+[54:56] can find the best opportunities to
+[54:57] actually buy these stocks. So these 19
+[55:00] stocks out of all of our undervalued
+[55:01] stocks have generated some kind of trade
+[55:03] signal today. And that's where when you
+[55:05] can look at these particular stocks and
+[55:07] see where there are opportunities to
+[55:09] buy. Um so you know these are kind of
+[55:11] where the timing potentially are best to
+[55:14] be buying uh those particular stocks. So
+[55:18] um you know this happens to be a bearish
+[55:20] uh you know signal that was generated on
+[55:22] our undervalued list. So you sometimes
+[55:24] have to go through this list uh and see
+[55:26] which ones have generated a buy signal
+[55:28] and we are doing more work so that you
+[55:31] know you don't have to do so many
+[55:32] clicks. You can just find you know where
+[55:34] the uh the fundamentals and technicals
+[55:37] are all align with each other. There are
+[55:38] some new work there's some new work that
+[55:40] we're doing along those lines to make
+[55:42] this even easier for you. But yes, I
+[55:44] recently um have uh hosted a webinar
+[55:48] specifically on market
+[55:50] timing. But you know, the credit spread
+[55:53] tool has already built the timing into
+[55:55] it so that it's all automated as part of
+[55:58] the credit spread uh trade idea
+[56:05] section. Um please let me know on the
+[56:07] credit spread when I close the credit
+[56:09] spread, do I have to close both sides
+[56:11] the same day? Yes, you want to close
+[56:12] both legs at the same time. You never
+[56:14] want to break up the the execution of
+[56:17] the two legs of a credit
+[56:20] spread. How do you know when the
+[56:22] pullback has stopped? You don't know
+[56:23] when the pullback has stopped. Um you
+[56:26] you don't, right? But you're basically
+[56:29] ba using statistics to say, you know, at
+[56:32] this point, so for example, let's go
+[56:34] back to spy.
+[56:39] um spy the momentum indicator has
+[56:42] rallied enough to get to a point where
+[56:44] you're basically saying the probability
+[56:46] of a pullback here is significant is
+[56:48] high enough for me to now enter this
+[56:51] trade right meaning a couple of days ago
+[56:53] theoretically it was a rally but it had
+[56:55] not rallied enough where the you know
+[56:57] the probability uh was worth entering
+[57:00] and it really was once it reached this
+[57:01] and that's why there's a red arrow here
+[57:03] the red arrow is generated once the
+[57:05] probability is reached a high enough
+[57:07] level where the prob probability is
+[57:09] higher high enough to justify entering a
+[57:12] bearish trade. Um so we basically use
+[57:14] technical analysis to measure the
+[57:16] probability and it has to exceed a
+[57:19] certain threshold before it triggers an
+[57:22] actual um a sell signal. But ultimately
+[57:25] you don't know for a fact that it's
+[57:27] going to stop there. It's just that at
+[57:29] that point it's high enough uh to
+[57:31] justify entering the trade.
+[57:36] uh the idea idea generation t is only
+[57:39] based on timing. Right? So when you look
+[57:41] at technical ideas, the only thing we
+[57:43] look at there is timing. We don't look
+[57:45] at fundamentals, you don't look at
+[57:46] options. We're just looking at timing.
+[57:48] So um it's different ways to approach
+[57:51] sort of the same problem, right? Do you
+[57:53] look at the options first? Do you look
+[57:54] at timing second? Or do you look at
+[57:56] timing first? And you look at options
+[57:57] second. So um you know and so if you
+[58:01] look at things like uh the the cover
+[58:03] call or short puts that's looking at
+[58:05] options first and then you're trying to
+[58:06] look at timing afterwards right um the
+[58:09] technical ideas is looking at timing
+[58:10] first and then you're looking at the
+[58:12] options afterwards. The credit spread
+[58:14] happens to be the one report where we're
+[58:15] kind of looking at both at the same time
+[58:17] and only giving you the ideas where both
+[58:20] have already been satisfied in order for
+[58:22] you to s see something uh that's part of
+[58:24] the credit spread report.
+[58:34] Can you go over how to switch from
+[58:36] bearish ideas to bullish credit spreads?
+[58:38] Uh yes. So um when you're under the
+[58:40] credit spreads, there is a um a button
+[58:43] here, a settings button. And when you
+[58:45] click on that settings button, you'll
+[58:46] see at the top um there's two
+[58:48] selections. Bullish credit spread uh
+[58:50] bullish put spread and bearish call
+[58:52] spread. So depending on which one you
+[58:53] select, um you can basically see bullish
+[58:56] uh credit spreads or you can see just
+[58:58] bearish credit spreads or you can see
+[58:59] both at the same
+[59:01] time. Hopefully that answered your
+[59:03] question, William.
+[59:06] Um is it possible to leg out of a short
+[59:10] leg of a spread using a stop movement
+[59:12] order and holding the long leg until
+[59:14] expiration? Uh you could um I don't
+[59:18] recommend doing it but you could you
+[59:20] could choose to exit a credit spread um
+[59:24] strategies commonly used in SPX option
+[59:26] to avoid paying commissions on closing
+[59:28] the long life traders devoid of
+[59:34] um yeah so if you're talking about
+[59:36] trading zero days expiration strategies
+[59:38] where you're kind of really far out of
+[59:40] the money and you know it the the cost
+[59:43] to exit those those trades are are are
+[59:46] relatively higher. Um,
+[59:49] uh, there was a notable case where a
+[59:51] trader
+[59:55] loss. I I'd have to I have to look into
+[59:58] this specific example that you're
+[59:59] talking about here. Um, I'm generally
+[60:02] not a huge fan of selling credit
+[60:03] spreads. I'm sorry, breaking up a credit
+[60:05] spread. And in SPX, you know, when
+[60:08] something is cash settled, you don't
+[60:11] have the same issue when something is
+[60:12] cash settled, meaning you could just
+[60:13] hold it through expiration and and you
+[60:16] don't have early you don't have
+[60:18] assignment risk because it's cash
+[60:19] settled. So I I don't know that this is
+[60:22] as relevant for SPX it is for, let's
+[60:24] say,
+[60:29] SPY. Great question here. Uh, someone's
+[60:32] asking, you know, when we sell credit
+[60:34] spreads where the short where the short
+[60:35] leg has a high delta, isn't that very
+[60:37] risky? Um, it's actually the exact
+[60:39] opposite, right? So, let me just walk
+[60:41] you through that that thought process
+[60:43] here. So, we sell this credit spread
+[60:45] that has a near one:1 risk-to-reward
+[60:47] ratio, right? We're selling an at the
+[60:49] money credit spread.
+[60:51] Um, this is the exact opposite of risky.
+[60:54] We're risking for every $1 we can
+[60:56] potentially make, we're risking about
+[60:58] $110 or so,
+[61:00] $120. If you were to sell a low delta
+[61:03] credit spread, right? Um, which is
+[61:05] something like this. Uh, why can't I go
+[61:09] any
+[61:13] higher? It's because there are no
+[61:15] strikes above 595, which is odd for
+[61:18] that. But let's just let's move let's
+[61:20] move to a different expiration, right?
+[61:22] just to kind of um just to kind of work
+[61:25] through this. So, let's say we sold the
+[61:28] 55 quot uh let's start at the
+[61:32] 558 just to kind of recenter this again.
+[61:35] Uh let's go back to our original
+[61:37] strikes. Right? So, this is the strike
+[61:39] that we would have sold. As you can see,
+[61:40] you have near one:1 risk-toreward ratio.
+[61:43] You know, think about risk from a
+[61:45] riskreward ratio perspective. How much
+[61:47] can I potentially make for every dollar
+[61:49] I can lose? Right? So when you sell a an
+[61:52] at the money credit spread my one my
+[61:54] risk-reward ratio is nearly one one. I
+[61:57] think of that as low risk right because
+[61:59] if I make $1, I can only risk uh you
+[62:03] know maybe a dollar a dollar10. Um now
+[62:05] if you choose your low delta credit
+[62:07] spread
+[62:08] right you have a higher probability of
+[62:11] success but for every $1 I can
+[62:13] potentially make in the off chance that
+[62:15] it does go against me. risking, you
+[62:17] know, orders of magnitude more than what
+[62:20] I can potentially make. I think of that
+[62:22] as high risk. Um, it's a different
+[62:25] perspective of how you think about it,
+[62:27] but if you really think about
+[62:28] risk-to-reward, um, you know, when you
+[62:30] sell an out- of-the- money credit
+[62:31] spread, you're taking on far more risk.
+[62:34] Um, you have a higher problem of
+[62:35] success, but you're taking on far more
+[62:37] risk. So, if you're trying to reduce
+[62:38] risk, you know, the high delta at the
+[62:41] money credit spreads are actually where
+[62:42] you're going to have the least amount of
+[62:44] risk.
+[62:50] You could also get into trouble with
+[62:52] debit spreads on the short leg. Um, you
+[62:54] can get in trouble with the debit spread
+[62:56] if you actually end up in between the
+[62:58] two strikes. Um, basically the long leg
+[63:01] gets automatically exercised. The short
+[63:03] leg is is assigned is expires worthless.
+[63:07] And let's say you let's say it's a it's
+[63:09] a call debit spread. U the, you know,
+[63:12] and the stock ends up in between the two
+[63:14] strikes at expiration. So the short leg
+[63:15] expires worthless. The long leg
+[63:17] automatically gets exercised and some
+[63:19] news comes out over the weekend or
+[63:21] Monday morning and the stock plummets on
+[63:23] Monday morning. So you got exercise, you
+[63:25] own a 100 shares of the stock and the
+[63:27] stock plummets on Monday. That's a risk
+[63:29] uh you know also with debit spreads if
+[63:32] you hold it through expiration.
+[63:35] Um, it's a different scenario, but there
+[63:37] are scenarios where, again, this is why
+[63:40] we always say don't hold options through
+[63:42] expiration. Even if you think it's going
+[63:44] to be out of the money and you're not
+[63:45] going to have a problem, something could
+[63:47] always happen after hours that causes an
+[63:59] issue with SPX. Do the same principle
+[64:02] apply to the width of the spread or is
+[64:04] it per contract? I'm not sure I
+[64:06] understand that question. Um, but it's
+[64:08] the same. It doesn't matter whether
+[64:10] you're trading spy or spx. It's the same
+[64:14] concept. Um, okay. That is all the time
+[64:18] that I have for today for questions. Um,
+[64:20] I hope that this is helpful in giving
+[64:22] you a better understanding of credit
+[64:24] spreads. Uh, and just kind of the uh the
+[64:27] the very small edge cases of what could
+[64:30] happen and why it's so important to to
+[64:32] manage risk and manage your your credit
+[64:34] spreads. You know, it's very unlikely
+[64:36] that this could happen to you, but in
+[64:38] the off chance that it does, we want to
+[64:40] make sure that you don't put yourself in
+[64:41] that scenario. And more importantly, you
+[64:44] know, we want to make sure that you
+[64:45] always find the best possible credit
+[64:47] spreads to get into to begin with. uh
+[64:50] you know with using tools like we have
+[64:52] here at at Optins Play with our credit
+[64:54] spread finder. With that, thank you so
+[64:56] much. I hope you guys have a great
+[64:57] trading day and I'll see you guys here
+[64:59] next

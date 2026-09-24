@@ -1,0 +1,687 @@
+[00:00] Good afternoon everyone. My name is
+[00:01] Brian Overby. I'm a senior option
+[00:03] strategist with Options Play. Uh welcome
+[00:06] to this growth lab. Uh we're titling the
+[00:09] growth lab how to trade credit spreads
+[00:11] after earnings. And uh with the the the
+[00:14] growth lab in general, we have to always
+[00:17] have to give a disclaimer because we
+[00:18] don't know who exactly is out there and
+[00:20] watching these videos. But uh any
+[00:22] securities that we use today, they're
+[00:24] not meant to be a recommendation.
+[00:25] They're only for demonstration p
+[00:26] purposes only and are not considered to
+[00:29] be a recommendation or solicitation to
+[00:31] buy or offer or sell any securities.
+[00:33] Past performance is not a guarantee of
+[00:35] future results. Now we have that out of
+[00:38] the way. Uh we've started a section
+[00:40] called the growth lab. And the growth
+[00:42] lab is trying to use all the tools
+[00:44] inside the options play platform and use
+[00:47] those to try to find trades that will
+[00:49] will fit into your dynamic. And today
+[00:53] I'm looking at trades that um kind of go
+[00:56] around earnings reports. Now [gasps]
+[01:00] through [clears throat] many years of
+[01:01] trading options, a lot of people like to
+[01:03] trade around earnings. And I don't mind
+[01:06] going into that trade as long as you
+[01:08] realize that that is a speculative trade
+[01:10] and you know, you manage your risks
+[01:13] according accordingly [clears throat] by
+[01:14] the strategy that you're using. So, from
+[01:17] time to time on shows and on podcasts,
+[01:19] I've I've talked about earnings because
+[01:21] something happens, right? You get this
+[01:22] event, the market goes up, market goes
+[01:24] down. Now, if you're a conservative
+[01:26] trader, a lot of people don't want to
+[01:28] trade around earnings because you can't
+[01:30] control that event. And even companies
+[01:33] that will have strong earnings will
+[01:34] sometimes sell off. You know, buy the
+[01:36] rumor, sell the news is that scenario.
+[01:38] So, what I'm going to look at today is
+[01:40] stocks that have announced earnings that
+[01:42] might be at new highs. and we're going
+[01:45] to talk about setting up bull call
+[01:47] vertical spreads around that. So, I have
+[01:51] on my my slide on my screen uh just I
+[01:53] just grabbed one slide from a previous
+[01:55] presentation that talks about vertical
+[01:58] spreads and selling credit spreads on
+[02:01] underlyings that you like. And you know,
+[02:03] a lot of times when I've seen stocks
+[02:05] make strong moves up into earnings and
+[02:08] have a solid earnings report, uh maybe
+[02:11] even set a new 52- week high, we'll see
+[02:14] it sell off a little bit. And once the
+[02:16] volatility stops and things kind of
+[02:19] settle down, I think that's always a
+[02:21] solid opportunity to look at bull call
+[02:24] vertical spreads. And there are tools
+[02:26] inside the options play platform uh that
+[02:29] will you know that will highlight some
+[02:31] momentum trades and that's what I'm
+[02:34] going to focus on today. Now, how do I
+[02:36] want to set up these vertical spreads?
+[02:38] And ideally, the to me the vertical
+[02:40] spread is uh well, I should say a credit
+[02:43] spread. And I and I'll highlight that by
+[02:46] just looking at um um this trade here
+[02:49] shortly in this slide. But I I think a
+[02:52] credit spread and in particular, we're
+[02:55] going to talk about bullish credit
+[02:56] spreads. So, we're going to be using
+[02:57] puts today. I I'd rather do them after
+[03:01] earnings. And um you still have some
+[03:04] volatility, but you have a little bit
+[03:05] more predictability. And I know that's a
+[03:07] little bit of an ox oxymoron, but you if
+[03:10] you're going to be selling spreads, you
+[03:12] don't want to be selling them on utility
+[03:13] companies that have, you know, very low
+[03:16] implied volatility or volatility just in
+[03:19] general. And you know, you just don't
+[03:21] get anything for selling those options.
+[03:23] So I always think that this is a good
+[03:24] time. We're at the trailing end of
+[03:27] earnings season. Let's look at bullp put
+[03:29] vertical spreads on some stocks that
+[03:31] have hit recent highs and try to decide
+[03:34] how we want to set those strategies up.
+[03:36] So here's a bullp put vertical spread.
+[03:39] So this will be the the the the basics
+[03:41] of the presentation today. Uh what we're
+[03:44] looking to do and with a lot of them and
+[03:46] and and a lot of things that Tony Zang,
+[03:48] the the chief uh option strategist at
+[03:51] Options Play talks about is trying to
+[03:54] find vertical spreads that give you a
+[03:58] lot of credit. So in other words, we're
+[04:00] trying to take advantage of time decay.
+[04:02] We're selling things that are closer our
+[04:05] option contract that is driving the
+[04:07] strategy is usually closer to where the
+[04:09] stock is at if the earnings event has
+[04:12] happened. Now, obviously, especially in
+[04:14] this marketplace with everything that's
+[04:16] going on with AI, you know, we're
+[04:18] getting headlines left and right, but we
+[04:21] know for sure when earnings is going to
+[04:23] be that headline. We know. So, avoiding
+[04:26] that headline and that potential uh
+[04:29] catalyst is is I think a great time to
+[04:34] start looking at uh put spreads. And a
+[04:37] lot of times we start at 45 days out.
+[04:40] And I know that there's a lot of members
+[04:41] out there. Sometimes I'll do vertical
+[04:43] spreads and I'll do them 30 days out
+[04:46] inside our daily play, our email that we
+[04:48] put out every day, the daily play
+[04:50] portfolio. Um, and I'll void earnings.
+[04:53] And so sometimes I'll go 30 days only
+[04:55] because the earnings is 35 days out. And
+[04:58] I just want to make you aware of that. I
+[04:59] always like to say that because we don't
+[05:01] always get to talk face to face. Um, and
+[05:03] speaking of talking face to face, if you
+[05:05] have any questions, you can put them in
+[05:06] the Q&A box. But the Q&A is going to be
+[05:09] reserved for members at the end of the
+[05:12] show. Uh, but you can go ahead and start
+[05:14] loading up that Q&A box. Try to avoid
+[05:16] the chat. Chat chat amongst yourselves
+[05:18] if you're out there, but uh, the Q&A box
+[05:21] is what I'm going to focus on. That's
+[05:22] the box that has a little question mark
+[05:24] on it.
+[05:25] >> [snorts]
+[05:25] >> uh and if you can actually put them down
+[05:28] below the video if if you are watching
+[05:30] it on on YouTube we can we can try to
+[05:32] address those questions via that
+[05:34] platform. Okay. So the max reward is
+[05:37] what's big here is if the stock is tra
+[05:41] let's call the stock right here. Let's
+[05:42] look just at our generic graph. We have
+[05:44] the stock unlimited upside substantial
+[05:46] downside. Uh if you bought the stock
+[05:48] outright where you cross here this is
+[05:50] your cost basis. This is the zero axis.
+[05:53] If I sell the put spread, well, we we
+[05:56] bring in a net credit, but from here on
+[05:58] up, from wherever that strike is at,
+[06:01] that's our maximum upside. The strike
+[06:03] minus what we receive is the break even.
+[06:06] So, I like what our goal here at
+[06:08] OptionsPlay and what a lot of the
+[06:10] platform looks for is ones that have a
+[06:13] decent break even. In other words, we
+[06:15] bring in enough premium. Um, in some
+[06:18] cases you can even almost come up to the
+[06:20] fact you can get 40 or 50% of the width
+[06:24] of the spread. It's very hard to find a
+[06:26] 50% one, but uh around 40%. As a matter
+[06:29] of fact, Tony's rule in general and you
+[06:32] know, not a bad one. You can always
+[06:33] tweak it a little bit, but you want to
+[06:35] look to get about 33% of the width of
+[06:39] the spread. So, if it's uh to make the
+[06:42] math simple, if the width of the spread
+[06:44] is $10,
+[06:46] we're looking to pull in about $330,
+[06:51] right? About a onethird of the width of
+[06:54] the spread. And that just means that we
+[06:57] are we got a potential for high time
+[06:59] decay because we have enough premium
+[07:02] that matters that can decay and we're
+[07:05] bullish on the underlying. The
+[07:07] alternative would be to look at maybe a
+[07:09] long call vertical spread or a bull call
+[07:13] spread and pay a net debit for it. But
+[07:16] in this in this instance, we're trying
+[07:18] to get theta or time decay on our side.
+[07:21] Now, our max risk will be the limit
+[07:22] between the strikes minus the net credit
+[07:25] received. And our break [clears throat]
+[07:26] even like as I mentioned is this strike
+[07:28] minus that premium received. Okay. So,
+[07:32] let's let's get back into the
+[07:34] presentation and let's start looking for
+[07:36] some of the trades uh that that uh we
+[07:42] uh uh that that I'm proposing that I'm
+[07:44] talking about here. Okay. So, I'm going
+[07:45] to back out of here. I'm going to exit
+[07:48] this
+[07:52] and we're going to run into the options
+[07:54] play platform.
+[07:57] Now, I I want to talk a little bit of I
+[08:00] know Tony covers this a lot in the
+[08:02] growth strategies, uh just ideas in
+[08:06] general and the general setup and some
+[08:08] of the new things that have been added
+[08:09] to the platform, but I always like to
+[08:11] put my spin on it a little bit. Um the
+[08:15] technical ideas is a great feature. It
+[08:17] gives you a lot of ideas. It deals a lot
+[08:19] with uh you know the bullish ideas here
+[08:22] and bearish ideas and the and the
+[08:24] momentum trade based off of uh CCI and
+[08:28] well basically an RSI type momentum
+[08:32] trade uh scenario but down here we're
+[08:35] actually looking at this is helping
+[08:37] build the momentum chart as far as the
+[08:41] charting is concerned and these are some
+[08:43] of the technical ideas but 445 is just
+[08:45] way too many. So, uh, we do have a a
+[08:49] sort feature, and I'm hitting this
+[08:50] little hamburger me menu right here. And
+[08:53] one of Tony's favorite trades are the
+[08:55] CCI trade. So, I always like to
+[08:57] highlight that. This is a momentum based
+[09:00] trade. Uh, doesn't give us a ton of
+[09:02] signals. Obviously, counter trend just
+[09:04] means that you're trying to catch well,
+[09:06] if it's on the bearish side of things,
+[09:07] you're trying to catch falling knives.
+[09:09] Trend following means that, you know,
+[09:11] we're setting new highs and we're we're
+[09:12] moving towards the upside. So, I always
+[09:15] like to kind of start I want to get rid
+[09:17] of the liquid stocks. Want to get rid of
+[09:20] uh the counter trend because to me
+[09:22] that's trying to catch falling knife.
+[09:24] So, that that sometimes can actually
+[09:27] highlight a stock that has been strong
+[09:29] recently and sometimes I I I'll even
+[09:31] like to use it to try to find u you know
+[09:34] new highs in stocks. So, I'm going to
+[09:37] highlight that today and I'm going to
+[09:38] get rid of the trend following. Okay.
+[09:40] So, now if we do that that's going to
+[09:41] really shorten this up. We click this.
+[09:45] Now, at this point in time, we're seeing
+[09:47] bullish trades that have just the CCI
+[09:50] trend following signal. And here, here's
+[09:53] a a a mark right here, CCI dip and
+[09:56] bullish trend. And one of the ones that
+[09:58] I actually came up with that I really
+[10:00] like and I want to highlight this is the
+[10:03] Birkshshire Hathway. Now, the company's
+[10:05] announcing earnings here shortly, so
+[10:08] it's not uh ideal because we got 16 days
+[10:11] until that earnings report. Um, so you
+[10:14] may lean towards actually doing a a bull
+[10:16] call spread, but this is a signal and I
+[10:19] wanted to highlight a stock that I found
+[10:22] using this feature because um because I
+[10:28] I I like the scenario where it's at. We
+[10:30] have the relative strength. So in other
+[10:32] words, we have a strong market, but we
+[10:34] don't have a a over overly done market
+[10:36] here on Bricksar Hathaway. Uh relative
+[10:39] strength is five out of 10. We got the
+[10:42] CCI dip in bullish trend. And so it's
+[10:44] highlighted here if you put your cursor
+[10:46] over it. And we can actually even pull
+[10:48] this chart up. Let's go here and zoom
+[10:52] out a little bit. And this is a time
+[10:56] when I think Birkshshire had if you can
+[10:59] find these type of scenarios, I think
+[11:00] that this is a solid scenario for a
+[11:04] company that's, you know, been around.
+[11:06] it hasn't done much ever since uh uh
+[11:09] Warren Buffett has decided to retire at
+[11:12] age 90. Unfortunately, I guess he he
+[11:14] didn't invest well enough to be able to
+[11:16] retire a little bit earlier. But with
+[11:18] that said, uh he uh since that time, the
+[11:21] stock has just kind of been in a in an
+[11:23] area of chop, but the fundamentals are
+[11:25] still really strong with Brookshire
+[11:26] Hathaway just across the board. So, I
+[11:28] find it interesting and and now that we
+[11:30] get a timing call and we're heading into
+[11:32] earnings, I just thought that that was a
+[11:34] really good stock and I wanted to
+[11:35] highlight that. Now, today we're going
+[11:37] to talk about short spreads and I don't
+[11:39] mind the short spread in this scenario.
+[11:41] And because of volatility, we're going
+[11:43] to actually get a a a decent net credit
+[11:49] by selling an attheoney uh short put
+[11:53] spread to get bullish. So, let's click
+[11:54] on high implied volatility and let's
+[11:57] modify this trade. And you'll note that
+[12:01] it's well, it's actually selected the in
+[12:03] the money option contract, the 500. I
+[12:06] would adjust that a little bit. And I'd
+[12:07] also adjust the timing if I'm going to
+[12:09] do this around earnings. The event is
+[12:12] earnings. So I I I don't I don't mind
+[12:16] giving it time to play out, but I don't
+[12:19] need to go out 43 days because that is
+[12:22] the catalyst that's in the trade. 43
+[12:26] days is our normal time and that's what
+[12:28] like I'm talking about today on the show
+[12:31] and a lot of the trades that we're going
+[12:32] to look at are going to go out over 45
+[12:35] over 45 days, but earnings have already
+[12:37] been announced. Okay, so let's go down
+[12:39] look at either 29 or 36 days. So this is
+[12:43] my process. I would go down to about 36
+[12:46] days and see we got the 500 available
+[12:51] just a few dollars out of the money. And
+[12:54] I always like to try to target the 22
+[12:57] delta and the software does that does
+[12:59] that for you. That's usually the option
+[13:02] contract that you pick. But we always
+[13:04] want to make sure that if we do that now
+[13:05] we're 15 points wide. We want to get
+[13:08] close to $5 on this trade. So even
+[13:11] heading into earnings, if we look at
+[13:13] this trade, you're still pulling down $4
+[13:15] here. That is the main reason why it was
+[13:18] selecting the in the money option
+[13:19] contract. We got a bullish very strong
+[13:21] thing, but our riskreward is below the
+[13:26] the amount of premium that we would
+[13:28] normally receive on a 15point wide
+[13:30] spread. So we'll look at a 10-point wid
+[13:32] spread, which I'm pretty sure will maybe
+[13:34] uh it might put us within the range. So
+[13:36] let's try this. Okay, 4 4 / 15 is 26% of
+[13:43] the width of the spread, which I guess I
+[13:45] could have did that math in my head, but
+[13:47] four divided by which is the midpoint
+[13:49] here. And that's just not quite enough
+[13:52] premium. We want to get a little bit
+[13:53] more premium versus that risk. So, if we
+[13:56] adjust this, let's go up to the 490.
+[13:59] Now, it's giving us a score of 90. Uh,
+[14:01] we're still close, but not and no cigar.
+[14:04] So, we're at about a third of it. we
+[14:06] would need this to be uh 333 in order
+[14:09] for it to fit the rule that we want to
+[14:11] receive about uh 10% of the width of the
+[14:14] spread. So, I'm going through the
+[14:16] process. That means that this is
+[14:19] probably, if I look on the bull side of
+[14:21] things, this is probably going to work
+[14:23] out fairly well on doing a bull call
+[14:26] spread heading into earnings with a CCI
+[14:29] happening. We're going to stay out at
+[14:30] the 30-day range and let's modify this
+[14:33] trade. Look at it. 500 550. Uh we'll go
+[14:37] at about 30. Well, we could go 29 or 30
+[14:40] on a on a bull call spread. 29 or 36. I
+[14:44] don't mind either or. But we're going to
+[14:47] look at this trade 550. What are we
+[14:49] targeting here? 7 delta. So, we want to
+[14:52] go about one standard deviation. We're
+[14:53] going to go down to the 530
+[14:56] 94. Let's look at the riskreward.
+[14:59] Uh 14 to make 16. H.
+[15:03] >> [clears throat]
+[15:03] >> We'd like that to be a little bit more
+[15:04] closer to double. So, the the option
+[15:07] pricing isn't great right now in the
+[15:09] Birkshar Hathway heading into that
+[15:11] earnings report. Um, I would modify
+[15:14] this. We're doing 500. We're paying 16
+[15:17] for that option. Uh, we're going to have
+[15:19] to actually go a little bit further out
+[15:22] to get a better riskreward.
+[15:25] Let's look at the 16 delta, which is
+[15:28] right here. So, this is the delta
+[15:29] column. We're highlighting that. And
+[15:32] that's a little bit better. Uh 1,000
+[15:35] risk to get 2,000 on the reward. Uh this
+[15:39] is where I would lean heading into
+[15:41] earnings. And this would be a bull call
+[15:44] vertical spread on Birkshshire Hathaway.
+[15:48] All right. Now, if I'm looking inside
+[15:51] the watch list, um I actually made a
+[15:54] watch list today just called earnings
+[15:56] beat. And these are some of the
+[15:58] companies are not all that had strong
+[16:00] earnings but actually sold off a little
+[16:02] bit. So once again we have the ideas
+[16:06] available and if we click on this it
+[16:09] will highlight uh these type of of of
+[16:12] trend following alerts. It doesn't it's
+[16:15] not it's just a signal. It's not a end
+[16:18] all beall right. You still want to look
+[16:20] at fundamentals. you still want to look
+[16:22] at other things, but it gives you gives
+[16:24] you starting points on underlying stocks
+[16:27] that you might consider trading. Okay,
+[16:30] so JP Morgan pops up right away. Solid
+[16:32] earnings report. Stock kind of sold off
+[16:35] a little bit. There was a weird report
+[16:37] that kind of came out this week that
+[16:39] said uh an AI feature,
+[16:44] you know, it said that that an AI
+[16:46] feature came out that might change the
+[16:49] the way money is managed uh going
+[16:54] forward. And a lot of the financial
+[16:56] stocks sold off and I was kind of
+[16:59] surprised by that. Obviously overdone.
+[17:00] It's not going to happen overnight,
+[17:02] that's for sure. and people still got to
+[17:04] feel comfortable with AI, but a lot of
+[17:06] the stock sold off. So, in this
+[17:08] instance, this is exactly where we're
+[17:11] talking about uh uh looking at a bullish
+[17:15] trend following after earnings. So, the
+[17:18] next earnings report isn't until out to
+[17:20] April going out 45 days and we get the
+[17:25] trend following alert. So, this is a a
+[17:28] perfect scenario for a stock that has
+[17:31] always traded at a good at a solid, you
+[17:33] know, PE, very well-known company. We're
+[17:36] in an era of where investment banking
+[17:39] and deals are starting to get done a
+[17:41] little bit more, and that is a a good
+[17:43] arm of JP Morgan. Uh the credit card uh
+[17:47] side of things has kind of hurting the
+[17:49] stock a little bit. uh some of the news
+[17:51] out of Washington about uh topping
+[17:54] interest at 10% which isn't happening
+[17:57] soon but with that said the stocks have
+[17:59] sold off. So here's an opportunity on a
+[18:03] stock that has recently announced
+[18:05] earnings that you can be a little bit
+[18:07] bullish on and we're getting this
+[18:09] bullish trend following signal recently
+[18:11] in the underlying stock. So how do I
+[18:13] want to set up that trade? Once again
+[18:15] going to click on high implied
+[18:16] volatility. We're going to look at the
+[18:20] put vertical here selling something
+[18:23] close to the money going out and I'm
+[18:25] gonna hit modify. So, we're going to go
+[18:27] up 43 days. And this is the way the
+[18:29] system is set up to try to pick that
+[18:31] trade. We're at 85 here. So, let's go on
+[18:35] uh we're 20 points wide. Let's see what
+[18:37] this delta is. So, it's picking the 23
+[18:40] delta and we hit trade.
+[18:43] So, we are uh $6.34
+[18:46] divided by 20. Uh we're 3.17. So, to me,
+[18:52] this is close enough to
+[18:54] our our our our potential on a 20 point
+[18:57] wide spread to look at $6.34 on a 20
+[19:02] point wide spread. You got a big buffer
+[19:05] from 300 on down because you're bringing
+[19:07] in enough premium. You have a a decent
+[19:10] riskreward on this trade. and we go out
+[19:12] 43 days. And this is how I like to use
+[19:15] the software to try to find trades where
+[19:18] I might be able to sell some premium
+[19:21] after an earnings report. Now, I will
+[19:24] sometimes adjust this too. Let's see if
+[19:26] we can go down a little bit. And if I
+[19:29] can if I can move this down to 15
+[19:32] points. We're at 300. We got to see the
+[19:34] amount of premium that we can bring in.
+[19:38] So, let's look at uh selling the 95
+[19:44] and going down to the 75 here. So, 530
+[19:51] on
+[19:53] still 20 points.
+[19:57] Not quite close enough. So, sometimes I
+[20:00] do like to move it down. And if I can, I
+[20:03] can even move it forward and see if we
+[20:06] get a little bit uh difference in the
+[20:08] skew. 15 points were 425 on that trade.
+[20:12] Uh 15 points wide. I don't mind this
+[20:15] one. 425 / 15 uh 28%.
+[20:21] I think I'd stay with the original
+[20:23] trade. So, let's go back, do the 43, and
+[20:26] we're going to send this into the growth
+[20:27] lab.
+[20:29] Let's trade this. Select a portfolio.
+[20:34] And so these are our watch list. These
+[20:36] are our portfolios. This is the Growth
+[20:38] Lab portfolio. We're going to be selling
+[20:42] uh we're going to be sending this one to
+[20:44] the Growth Lab portfolio.
+[20:47] Uh 395.
+[20:50] We need this to be the 300. There we go.
+[20:54] There we go. All right. And uh and then
+[20:57] we'll follow the trade. And if you're a
+[20:59] member and you come back and you uh
+[21:00] participate in all the growth labs, we
+[21:03] will follow these trades and we will uh
+[21:05] week in and week out take a look at them
+[21:07] and adjust the trades and talk about
+[21:09] just the performance of everything that
+[21:12] we actually do here on the growth lab.
+[21:14] So, we're going to send this into the
+[21:16] growth lab trade
+[21:21] and add that position.
+[21:30] All right. So, let's go back to here.
+[21:32] Look at see if there's any other trades
+[21:34] that are interesting. So now here is
+[21:38] these are strong stocks that have set
+[21:41] 52- week highs and the uh the signal now
+[21:46] is that it's been overdone. So I
+[21:49] sometimes like to look at the counter
+[21:51] trend [snorts] and say well did we set a
+[21:54] new high and have we sold off a little
+[21:56] bit on the underlying stock. So, if I
+[21:58] pull up Pterodine here, which is in my
+[22:01] list, we get a little bit of a bullish
+[22:03] counter trend, but what has happened in
+[22:05] in Pterodine is that we've actually set
+[22:08] an an a new high and and have shown a
+[22:10] lot of strength in this company. And so,
+[22:14] because of this, we get got a little bit
+[22:16] of a bearish move and a little bit of a
+[22:18] counter trend situation, but I love the
+[22:21] strength of the stock. We got all the
+[22:24] ducks in a row. Here's the 200 day.
+[22:26] Here's the 50-day. Here's the 20-day and
+[22:29] yet we've uh broken to the upside and
+[22:32] then sold off a little bit. Okay. So, do
+[22:35] you want to do uh we got a little bit of
+[22:37] volatility. We got a very liquid
+[22:38] underlying stock, a fairly pricey stock.
+[22:41] And sometimes I like to look at the
+[22:44] bearish counter trend as well. This is a
+[22:47] little bit overdone. And if I did get
+[22:49] that sell-off, which let me pull this
+[22:51] together here
+[22:54] where we came down a little bit on this
+[22:56] trade, we can probably get some decent
+[22:58] premium from looking at the trade and
+[23:00] tear down. Now, you still got to like
+[23:01] the underlying stock and it's a little
+[23:03] bit pricey, but it did have a solid uh
+[23:06] move after earnings report after the
+[23:08] earnings report and we still find
+[23:10] ourselves all at a new territory, new
+[23:12] high. All right, so how am I going to
+[23:14] look at this trade? Once again, we're
+[23:16] going to protect ourselves by the
+[23:18] premium that we bring in. So, let's
+[23:20] modify this trade. And we're looking at
+[23:23] a 310. So, we can actually do a 310
+[23:27] 320 trade here. Bring in on this trade.
+[23:32] $11.
+[23:35] 20 points wide. So, real good premium.
+[23:38] Um [snorts]
+[23:40] 30 points wide. $11. Okay, let's make it
+[23:42] 20 points wide. Let's see. This is the
+[23:44] 26 delta. Let's move down a little bit.
+[23:48] Let's go down to the 305
+[23:51] and look at the 280.
+[23:56] 25 points. Let's go 285. See how close
+[23:59] we get.
+[24:02] All right. So, now we are 20 points wide
+[24:05] and we're bringing in $78 uh.79.
+[24:09] So, it's still sitting within our rules.
+[24:11] So, we're going to say 8 / 20
+[24:14] and that's 40% of the width of the
+[24:17] spread. And you would expect that
+[24:18] because this is a volatile underlying,
+[24:20] but it also allows us to get a little
+[24:23] bit outside of the range. And it's
+[24:25] highlighted here by the option score on
+[24:27] options play score. We're looking at 93
+[24:30] in this instance. That's giving you a
+[24:32] hint that the premium is solid relative
+[24:36] to the risk or the width of the spread.
+[24:40] And you could also look at it as a a
+[24:41] whis a riskreward ratio. That's another
+[24:44] way to try to approach it in this
+[24:46] scenario.
+[24:48] All right. So let's uh look at trading
+[24:53] this. And I'm going to send this one to
+[24:55] the portfolio too.
+[25:01] And I'm going to add that position.
+[25:08] Now, other things to highlight, you
+[25:09] know, we're showing that it's very
+[25:10] liquid. You're still going to have wide
+[25:12] bid ass spreads on expensive underlying
+[25:14] stocks. Um, I don't mind this type of
+[25:17] trade. And I uh but keep in mind that
+[25:21] you're you're going to be working off of
+[25:22] the midpoint. You're going to not want
+[25:24] to give up a lot based off of that
+[25:26] midpoint, especially when you're trying
+[25:28] to get into the trades. So, we always
+[25:31] focus around the midpoint and the gets
+[25:33] highlighted here inside the platform.
+[25:36] And you can actually adjust that if
+[25:38] you'd like by hitting the bid ask. If
+[25:40] you want to do the bid or ask, if I'm
+[25:41] doing short spreads, I'm never going to
+[25:43] enter a market order. I'm always going
+[25:45] to try to trade somewhere between the
+[25:47] bid and ask. You should get that benefit
+[25:48] because you're giving the market maker
+[25:50] two legs. You're you're giving the
+[25:51] market maker their hedge. All right, so
+[25:55] we are getting to the Q&A portion of
+[25:58] this session. I see a few questions that
+[26:01] are in here.
+[26:05] I see a few questions that are in here
+[26:08] that are are addressed
+[26:13] and I will answer uh I'll answer two
+[26:17] questions.
+[26:19] Um and we and I'll try to address them
+[26:23] and then we're going to actually take a
+[26:25] pause and we'll continue the Q&A
+[26:27] sessions. The Q&A sessions is for
+[26:29] members only. And if you'd like to
+[26:31] become a member, uh there is in the
+[26:33] description a link that would allow you
+[26:35] a free trial to the options play
+[26:37] platform and all the tools that we have
+[26:39] and the week in and week out growth labs
+[26:41] that we perform. Not to mention the
+[26:43] daily play, which we come up with uh
+[26:45] three uh anywhere from two to three
+[26:47] trades per day based off of alerts
+[26:49] inside the platform that uh follow the
+[26:53] options play rules as far as long call
+[26:57] spreads, short call spreads, and even
+[26:58] sometimes just buying options outright.
+[27:00] So, if you'd like to check it out,
+[27:01] please do so below. And I'm going to
+[27:03] answer this one question. Uh when
+[27:06] looking at the page on option delta's op
+[27:08] option play, how can we tell how stale
+[27:10] or fresh the data is in a fastmoving
+[27:13] markets? No timestamp. Well, yeah, that
+[27:16] the time stamp up here will will
+[27:20] [clears throat] highlight it. um
+[27:25] when I'm looking at delta, right? Uh
+[27:27] delta is is going to be a first of all,
+[27:31] it's a theoretical number. [snorts] And
+[27:33] so I'm not going to worry about the
+[27:36] delta being uh a couple of pennies off
+[27:41] or a couple like if it's 63 versus
+[27:46] 69 that's not going to massively affect
+[27:50] the way that I'm going to approach the
+[27:51] trade. So I just want if you look
+[27:53] between platforms delta is is calculated
+[27:57] from a a pricing model. So you might get
+[28:00] different deltas just because they use
+[28:02] different pricing models. So keep that
+[28:04] in mind when I'm if you're just focusing
+[28:06] on delta. So we want to take the
+[28:08] information that's available and you
+[28:10] always take it with a a little bit of a
+[28:11] grain of salt anyways because you're
+[28:13] understanding that the real world
+[28:15] doesn't always work as well as the
+[28:16] theoretical world, but it does help you
+[28:19] choose strikes. I just wouldn't get I
+[28:21] wouldn't be get bogged down in the
+[28:23] minutia. All right, so that's it for
+[28:26] this episode of the growth lab. We're
+[28:29] going to I'm going to continue with the
+[28:30] Q&A for the next 15 minutes with the
+[28:32] members. And if you are watching it for
+[28:35] the first time, thanks for joining and
+[28:37] hopefully sign up for the free trial and
+[28:39] we'll see you again in the short term.
+[28:41] >> What you saw today is just a small part
+[28:43] of how options play helps traders
+[28:46] transform towards profitability. to
+[28:49] access our full platform, including
+[28:51] daily options ideas, weekly research,
+[28:55] and membersonly live education with Q&A.
+[28:59] You can start a 14-day trial at
+[29:02] optionsplay.com.
+[29:04] Our goal is to help you become
+[29:06] disciplined and become a profitable
+[29:09] trader through a continuous learning
+[29:11] process. Visit optionsplay.com and start
+[29:15] your free trial. and I'll see you at our
+[29:17] next live member session.

@@ -1,0 +1,1640 @@
+[00:00] welcome everyone
+[00:02] uh how are you today
+[00:05] my name is dan pasarelli and uh i am
+[00:07] going to be your host for
+[00:10] the next hour or so
+[00:11] [Music]
+[00:13] if you can hear me make your way on into
+[00:16] the chat box
+[00:18] oh wait apparently now i can start my
+[00:19] video
+[00:21] and give me a big old yes there we go
+[00:23] okay
+[00:25] great
+[00:26] all of the technical difficulties have
+[00:28] been fixed yay
+[00:31] accepted i'm on the run i'm on the last
+[00:33] slide
+[00:35] there we go okay you guys can hear me
+[00:37] that's awesome so my name is dan
+[00:39] passarelli and today we're going to talk
+[00:41] about how to trade credit spreads
+[00:45] credit spreads are one of my
+[00:48] favorite strategies uh it's definitely
+[00:51] one one of the go-to strategies when i'm
+[00:54] looking at a particular stock or etf
+[00:57] and um
+[00:59] the beard is longer than it was but not
+[01:02] really new
+[01:04] uh
+[01:05] so yeah credit spreads are one of my
+[01:06] favorite strategies to trade when uh
+[01:09] when i'm looking at stocks and certain
+[01:12] criteria are met and i'm going to share
+[01:14] with you what all those criteria are in
+[01:16] just one minute
+[01:18] before we get started i need to point
+[01:20] out options are not for everyone and you
+[01:22] should read characteristics and risks of
+[01:24] standardized options before trading
+[01:27] okay so excuse me one second here
+[01:33] okay so
+[01:35] we're talking about spreads so let's
+[01:37] let's kind of look at the mile high view
+[01:39] for just a second here
+[01:41] why would we trade a spread instead of
+[01:43] just buying a call or something
+[01:46] well
+[01:48] the reason we use
+[01:49] options in general is to what what a lot
+[01:52] of professionals would call shape your
+[01:54] risk
+[01:56] right if i just buy a stock
+[01:59] then if it goes up i make money if it
+[02:00] goes down i lose money and um you know i
+[02:03] i've sort of got this pretty
+[02:07] binary sort of bet on right
+[02:10] but when i use options i can i can
+[02:13] control my risk i can hedge and protect
+[02:15] my portfolio
+[02:17] or or even a stock on an individual
+[02:20] trade i can lower my capital expenditure
+[02:23] on a trade
+[02:24] i can trade what is called option
+[02:27] centric risk meaning i can make money
+[02:29] from time passing or if implied
+[02:32] volatility changes
+[02:34] i can
+[02:35] even take on leverage i can get a
+[02:37] greater percent profit when um
+[02:41] you know when the trade goes my way
+[02:43] and at the same time i can also have
+[02:46] lower dollar amount losses
+[02:51] now one of the things that we do when it
+[02:54] comes to
+[02:56] spreading
+[02:57] is we use spreads in order to sell
+[03:01] options
+[03:02] on a less risky way
+[03:05] because look when we sell options here's
+[03:07] what we want to do we want to
+[03:09] we want to
+[03:10] we're selling them because we think that
+[03:12] in the future they'll become worth less
+[03:14] so we sell them at whatever price we can
+[03:16] sell them now with the objective to buy
+[03:19] them back for less later
+[03:22] and one of the ways we profit when we
+[03:23] sell options is by collecting time decay
+[03:27] as time passes options lose their value
+[03:29] and so when we're short them that's one
+[03:31] thing that's sort of on our side
+[03:34] the risk can be unlimited
+[03:37] when we sell options naked
+[03:39] and that's a problem
+[03:42] even though time decay works through the
+[03:43] trade if there's a big enough move
+[03:45] against us
+[03:46] it can be trouble so the solution one of
+[03:49] the solutions becomes credit spreads and
+[03:51] there are two types of credit spreads
+[03:53] call credit spreads and put credit
+[03:55] spreads
+[03:56] a call credit spread is when we sell a
+[03:58] call and then we buy a higher strike
+[04:01] call with the same
+[04:03] expiration on the same underline
+[04:07] a put credit spread is when we sell a
+[04:08] put and then we buy a lower strike put
+[04:10] further out of the money
+[04:12] with the same expiration on the same
+[04:14] underline
+[04:16] so before we go any further
+[04:18] i feel like the best way to think about
+[04:21] credit spreads is this
+[04:24] the short option
+[04:26] is the trade
+[04:29] that is where you're making
+[04:31] whoops
+[04:32] the short option is the trade that is
+[04:34] where you're making or losing
+[04:37] your money
+[04:38] the long option is just the insurance
+[04:42] okay
+[04:43] so if you think about it that way
+[04:46] you're gonna get a lot more clear
+[04:48] picture of what it is you're trying to
+[04:50] accomplish
+[04:52] all right
+[04:55] so
+[04:57] let's let's break both of these trades
+[04:58] down we'll start with the call credit
+[05:00] spread why would we use a call credit
+[05:03] spread
+[05:04] well because
+[05:05] we want to profit from
+[05:07] low volatility
+[05:09] right
+[05:11] typically in a particular direction
+[05:14] in this case
+[05:15] we want to profit from the stock not
+[05:18] rising very much we'll talk more about
+[05:20] that in a second
+[05:22] we want to profit from time passing
+[05:24] while the stock is experiencing little
+[05:27] volatility
+[05:28] and we want to do it in a limited risk
+[05:30] sort of way
+[05:32] now
+[05:33] when do we use this
+[05:35] when we're not
+[05:36] bullish
+[05:38] so i'm not necessarily saying bearish
+[05:41] i'm saying we have a not bullish stance
+[05:44] okay maybe we put those in in
+[05:47] air quotes we can do that with video air
+[05:50] quotes a not bullish stance
+[05:53] basically we just think that the stock
+[05:55] is not going to go up above a certain
+[05:58] price
+[06:01] typically
+[06:02] technically what we look for is we look
+[06:05] for a stock that has resistance on the
+[06:08] chart
+[06:10] maybe it also has reports excuse me
+[06:12] maybe it also has support
+[06:14] and it's in a channel but it's near the
+[06:16] top of that channel a little bit closer
+[06:18] to resistance
+[06:20] uh also
+[06:22] as far as fundamentals go
+[06:24] there's either maybe some mildly bearish
+[06:26] news or no news at all okay
+[06:30] like basically if
+[06:32] if you're watching like one of the top
+[06:35] business shows right maybe you're
+[06:36] watching tony on cnbc
+[06:38] chances are if if he and and his uh
+[06:42] fellow
+[06:43] pundits or whatever you want to call
+[06:44] them are if they're talking about a
+[06:47] stock
+[06:48] it's probably actually not a good
+[06:50] candidate for a call credit spread most
+[06:52] of the time tony's a little bit more
+[06:54] sophisticated so maybe in his case
+[06:56] it is but you know there's not they're
+[06:58] not these high flyers they're not ones
+[07:00] with these big things going on and big
+[07:02] news good or bad they're they're kind of
+[07:05] these boring old stocks
+[07:10] so
+[07:11] i've got some guidelines and if you're
+[07:13] taking notes you should write this down
+[07:15] you want to know your maximum gain and
+[07:18] your maximum loss and i'm going to show
+[07:20] you how to easily calculate those things
+[07:24] we want a high probability trade which
+[07:26] most of the time these will be we'll
+[07:28] talk more about that on the next slide
+[07:32] we typically want to set these up
+[07:34] between one week to expiration
+[07:36] to two months to expiration
+[07:39] i have set them up with less time
+[07:43] uh but a lot of times it's it's hard to
+[07:45] find trades with less than a week to
+[07:47] expiration you can sometimes
+[07:50] um going out more than two months until
+[07:53] expiration
+[07:54] is usually not
+[07:56] ideal because
+[07:59] usually you could sell a shorter term
+[08:01] credit spread and take in
+[08:04] and get a higher theta
+[08:06] therefore make more instead of selling
+[08:08] one three month credit spread
+[08:11] you could sell three one month credit
+[08:12] spreads
+[08:13] [Music]
+[08:14] we also
+[08:16] like i said
+[08:17] we're not looking for a stock that has a
+[08:20] lot going on
+[08:22] if earnings is coming out we're not
+[08:23] going to do this or even if any other
+[08:25] news is coming out if there's a fed
+[08:27] meeting and we're talking about the spy
+[08:30] we're probably not going to trade a
+[08:32] credit spread on it call or put
+[08:36] now
+[08:36] it's common to trade
+[08:39] credit spreads and again we're going to
+[08:40] focus on the call credit spread here
+[08:41] first
+[08:43] one of two ways
+[08:45] we could trade out of the money called
+[08:48] credit spreads or
+[08:49] or at the money call credit spreads
+[08:53] so an out of the money credit spread
+[08:57] has a higher chance of success than an
+[08:59] at the money credit spread
+[09:03] it's further away so you're going to get
+[09:05] a lower credit received which means a
+[09:08] smaller payoff when the trade works out
+[09:12] but a bigger loss when it doesn't
+[09:14] and at the money spread where where we
+[09:18] sell one
+[09:19] call that's basically at money and then
+[09:21] buy one that's somewhat out of the money
+[09:24] has a lower chance of success than an
+[09:26] out of the money spread and in fact we
+[09:27] need not just a not bullish stance but
+[09:30] but we would do that on stocks that were
+[09:32] somewhat bearish on actually
+[09:35] we get a greater credit received which
+[09:37] means a bigger payoff when the trade
+[09:39] works out
+[09:41] and the other side of that is we have a
+[09:43] smaller loss when the trade doesn't work
+[09:46] out compared to the totally out of the
+[09:48] money spread okay
+[09:51] so let's take a look at exactly what
+[09:53] we're talking about here
+[09:56] let's say we have a stock that's trading
+[09:58] at 59
+[10:00] a share
+[10:02] and there's resistance at sixty dollars
+[10:04] a share and maybe this stock is kind of
+[10:07] flirted with resistance and maybe touch
+[10:09] 60 or something and it kind of bounced a
+[10:11] little bit back down looks like it's not
+[10:13] going to go above 60. okay
+[10:16] well
+[10:17] here's one thing we could do
+[10:19] we could sell the i have nov here on the
+[10:22] slide november uh as the example but
+[10:26] remember whatever month you're watching
+[10:28] this uh recording
+[10:31] we typically don't want to go beyond two
+[10:33] months until expiration
+[10:35] so in this case we would sell the
+[10:37] november 60 call at four dollars
+[10:41] and then at the same time buy one of the
+[10:44] november 65 calls at two dollars and
+[10:47] twenty cents
+[10:49] okay
+[10:50] so
+[10:52] we're selling one of these calls at four
+[10:55] dollars a share and buying the other one
+[10:57] at 220 a share
+[10:59] so we collect four dollars we pay 220
+[11:02] we're collecting a net credit of a
+[11:04] dollar eighty
+[11:07] now that's a dollar eighty to share with
+[11:10] options listed on
+[11:13] the u.s exchanges anyway
+[11:15] [Music]
+[11:17] each
+[11:18] option represents a hundred shares of
+[11:20] the underlying stock and so in that case
+[11:24] uh that would be
+[11:25] i would take in literally a hundred and
+[11:26] eighty dollars now there's another thing
+[11:29] of note here
+[11:30] and that is you may have noticed that
+[11:33] where i'm saying we observe resistance
+[11:35] at sixty dollars a share
+[11:37] we're selling our strike
+[11:39] at sixty
+[11:41] that's no coincidence
+[11:43] when we do call credit spreads we get an
+[11:47] edge
+[11:48] by selling the strike at or above
+[11:52] resistance and then buying a higher
+[11:54] strike
+[11:56] now why is that an edge well because
+[11:58] look when we trade options
+[12:01] we can make money by direction you're
+[12:03] well let's say by the stock price
+[12:05] movement
+[12:06] by time passing and by volatility
+[12:10] so
+[12:12] if sixty dollars a share is the price
+[12:14] that the stock has gotten up to and then
+[12:16] bounced down below
+[12:18] in the past
+[12:20] then
+[12:21] maybe that resistance will hole
+[12:25] what me and my other coach john here
+[12:28] uh have identified is that resistance
+[12:31] tends to hold okay it doesn't always
+[12:34] hold but more often than not it does so
+[12:36] that's one extra thing that's on our
+[12:38] side this little you know bounce
+[12:41] it's uh it's kind of like when you uh
+[12:44] remember when you were a kid and you
+[12:45] would go bumper bowling because you know
+[12:47] you
+[12:48] didn't have the fine motor skills of
+[12:50] like keeping it on the lane and out of
+[12:52] the gutter so they put like bumpers in
+[12:54] the gutters you guys
+[12:55] anybody ever played bumper bowling
+[12:58] super fun it's a lot easier right
+[13:01] well if the ball gets too close to the
+[13:04] gutter the bumper just sort of bumps it
+[13:05] back into the lane
+[13:07] that's kind of what resistance and and
+[13:09] for that matter support are for stocks
+[13:12] right
+[13:13] now obviously if you're really bad and
+[13:15] you throw the ball really hard it can
+[13:17] bounce over that bumper and you know
+[13:20] stacks can go through sport and
+[13:21] resistance but um
+[13:23] fun little analogy that just popped into
+[13:25] my head
+[13:27] so
+[13:28] a couple really important things here i
+[13:30] told you before that it's very important
+[13:32] to understand
+[13:34] your maximum
+[13:36] profit
+[13:37] maximum potential profit and your
+[13:39] maximum potential loss
+[13:42] so the maximum profit the most that can
+[13:46] be made by trading this spread
+[13:48] is a hundred and eighty dollars or a
+[13:51] dollar eighty per share
+[13:54] why is that let's just think about it
+[13:55] well we sell these options we collect
+[13:58] a dollar eighty
+[14:00] and if the stock ends up staying below
+[14:05] in fact here let's go to the next slide
+[14:06] if the stock ends up staying below 60
+[14:09] dollars a share
+[14:10] and ad expiration is still below 60 a
+[14:13] share all those options would expire
+[14:16] and the 180 dollars that i collected is
+[14:19] mine to keep
+[14:21] so that's why that would be our maximum
+[14:23] profit
+[14:24] now just looking at this this graph here
+[14:28] what do you think the worst thing is
+[14:30] that can happen
+[14:32] well what if the stock goes up above 65
+[14:36] a share
+[14:37] and is trading there at expiration
+[14:40] well that's the worst case scenario why
+[14:43] because the 60 call that were short
+[14:46] would get assigned
+[14:48] and i would have to short stock at sixty
+[14:50] dollars a share
+[14:52] and
+[14:53] if it's above sixty five dollars a share
+[14:57] i would
+[14:58] exercise that 65 strike call and
+[15:00] therefore buy that stock back that i
+[15:02] sold at 60
+[15:04] at 65
+[15:05] locking in
+[15:07] a loss of
+[15:08] 5
+[15:10] but mind you i collected a dollar eighty
+[15:13] a share so the net loss is just three
+[15:15] dollars and twenty cents that's the most
+[15:17] i can possibly lose on this trade
+[15:21] unless i try really hard to screw it up
+[15:25] uh now
+[15:26] our break even
+[15:28] is
+[15:29] 61.80 and the same logic sort of follows
+[15:32] if the stock is above 60 but below 65
+[15:36] i would get assigned on the 60 call
+[15:39] therefore getting short stock at 60 a
+[15:42] share
+[15:43] but i p and l that dollar 80 i collected
+[15:46] so my effective short price would be 61
+[15:49] and 80 cents
+[15:52] the way to
+[15:54] mathematically calculate the maximum
+[15:57] loss like you know the max gain is
+[15:58] always just what you collect
+[16:00] the way to calculate the max loss is
+[16:03] just simply
+[16:04] the difference between the two strike
+[16:06] prices which is easily identifiable here
+[16:09] it's five bucks
+[16:10] minus the premium collected
+[16:13] so five minus 1.80 is 320.
+[16:18] now let's talk about the put credit
+[16:19] spread
+[16:20] this is
+[16:23] this is like pretty easy right
+[16:26] like are you getting this hit the chat
+[16:28] box and give me a big old yes
+[16:30] if you're getting this
+[16:32] yes jerry says yes and herb says yes
+[16:35] victor corey
+[16:37] russ david no no
+[16:39] no is your first name and your last name
+[16:41] that's a funny name uh dylan siva
+[16:44] michael tom all right jim
+[16:47] carlos eva ken it's hard to read all
+[16:50] these names going across here ralph good
+[16:52] you guys are awesome
+[16:54] so
+[16:55] guess what
+[16:56] the put credit spread is just as easy
+[17:01] it's basically the call credit spread
+[17:02] but for the opposite scenario we use it
+[17:05] because we believe that there will be a
+[17:07] low volatility environment particularly
+[17:12] maybe sort of drifting a little higher
+[17:13] or at least not going down
+[17:16] we want to profit from time decay with
+[17:18] limited risk so we use that with a let's
+[17:21] do the air quotes again not bearish
+[17:23] stance okay not necessarily bullish
+[17:26] but not bearish
+[17:29] we have support here or maybe we're near
+[17:32] the bottom of a channel bouncing off
+[17:34] support
+[17:35] if there's any news it would be mildly
+[17:37] bullish or just simply no news at all
+[17:43] so here we always want to know our max
+[17:45] gain and our max loss
+[17:46] we want a high probability trade which
+[17:49] this will be if we set it up properly
+[17:51] we'll talk more about that in a minute
+[17:52] too run one week to two months time
+[17:55] horizon until expiration when we put the
+[17:57] trade on
+[17:59] and we want no earnings or other news
+[18:01] expected before the expiration of the
+[18:04] options we're considering using
+[18:09] murra says do i have the rules for the
+[18:11] credit spreads
+[18:12] yes i'm literally giving them to you
+[18:15] right now
+[18:16] that's what this presentation is about
+[18:18] i've already done that for the call
+[18:19] credit spread so now we're going to talk
+[18:21] about the credit score
+[18:23] okay so we can put on put credit spreads
+[18:26] two ways as well one where all the
+[18:28] options are out of the money and one
+[18:30] where
+[18:30] one of the option the option we're
+[18:32] selling
+[18:33] is at the money and when we're buying is
+[18:34] out of the money now i want i i had
+[18:37] basically the same slide here for the
+[18:40] call credit spread and you might look at
+[18:43] this like for those of you who trade
+[18:44] call credit spreads like there's a
+[18:46] couple of just fun little nuances that
+[18:48] aren't in this presentation slides that
+[18:50] i want to share with you so that you
+[18:52] know even if you're experienced with
+[18:54] this you're going to get something great
+[18:55] out of this
+[18:56] so
+[18:57] over the last maybe six months or so
+[19:00] i've been looking at
+[19:02] uh unusual activity
+[19:07] hello
+[19:10] what the heck just happened here
+[19:18] hold on a second here sorry about that
+[19:21] i
+[19:23] don't know i don't really even know how
+[19:24] that happened
+[19:26] but we're gonna fix it
+[19:34] two
+[19:38] me a big old yes if you can still see my
+[19:39] screen
+[19:40] [Music]
+[19:42] give me a big old yes if you can still
+[19:44] see my screen okay good
+[19:53] okay uh so what i was saying unusual
+[19:56] zoom activity yes ash yes
+[19:59] [Music]
+[20:02] so this is very interesting i've been
+[20:04] studying unusual activity over the past
+[20:06] six months and just look which basically
+[20:09] means like looking at
+[20:11] uh looking at
+[20:13] like
+[20:14] what has traded okay like hey 1200 of
+[20:18] these puts 1200 of the april 50 puts
+[20:21] traded at 63 cents and exactly 132
+[20:26] and 50 seconds and two hundredths of a
+[20:29] second or whatever it is
+[20:32] and
+[20:33] i've been doing a scan that i created
+[20:35] for credit spreads
+[20:37] what's very interesting
+[20:40] is is very counter-intuitive to those of
+[20:42] you who have traded these before
+[20:45] okay
+[20:49] more credit spreads than not
+[20:52] are at the money credit spreads
+[20:55] where where we're selling the at the
+[20:57] money option and then the out of the
+[20:59] money option is the one that we're
+[21:01] buying
+[21:02] and that's pretty surprising for many
+[21:04] years i've set up my credit spreads more
+[21:07] out of the money looking at them as high
+[21:10] probability trades and for those of you
+[21:12] who use
+[21:13] who look at delta as a proxy it's really
+[21:16] just an estimation it's not
+[21:18] mathematically accurate but for those
+[21:20] whose who use proxy as
+[21:23] or
+[21:23] those of you who use delta as a proxy
+[21:26] for probability of success
+[21:28] like the further out of the money you go
+[21:30] the the greater your chances of success
+[21:34] so i always looked at it like that just
+[21:36] a super high probability trade but
+[21:38] i would say most of the credit spreads
+[21:41] that i see trading
+[21:44] they're selling the at the money option
+[21:45] it's a little bit more of a directional
+[21:47] trade
+[21:48] so that's why like i actually had this
+[21:50] slide in the presentation i've given
+[21:51] this presentation a good handful of
+[21:53] times in the past i've had this slide in
+[21:55] there for years but i only recently
+[21:59] came to the realization that a lot of
+[22:01] people maybe more people do
+[22:03] bullet point
+[22:04] too here the aftermath spread
+[22:07] interesting isn't it i'm
+[22:09] i was surprised by that when i started
+[22:11] seeing that
+[22:12] so anyway with put credit spreads it's
+[22:14] sort of the same thing here
+[22:16] if we sell two out of the money options
+[22:19] we have a higher chance of success
+[22:21] because
+[22:22] because if the stock goes up i make
+[22:24] money if it stays where it is i make
+[22:26] money if it goes down a little bit all
+[22:27] the way to the strike price but not
+[22:29] through it i still make money
+[22:31] now they're further out of the money
+[22:33] options so i receive a lower credit
+[22:35] which means a smaller payoff when the
+[22:37] trade works out
+[22:38] and as you saw how to calculate
+[22:41] the um
+[22:43] the maximum loss it's the same with puts
+[22:45] the difference between the strike price
+[22:47] minus the credit received
+[22:49] so that means if i if i receive a
+[22:51] smaller credit
+[22:53] my maximum loss is bigger
+[22:55] so in in a lot of ways
+[22:57] the out of the money trade like
+[23:00] i could pose the question here and it
+[23:01] would be pretty interesting to get some
+[23:03] answers
+[23:05] is which of these
+[23:06] is is more risky
+[23:08] and it depends how you think about risk
+[23:10] right
+[23:12] the out of the money one has a greater
+[23:13] chance of success you'll you'll like if
+[23:16] you run permutations or if you trade
+[23:18] spreads like that a thousand times
+[23:21] you'll you
+[23:22] mathematically should make money on a
+[23:24] lot more of them than you lose
+[23:26] whereas the at the money
+[23:28] is more risky in that regard because
+[23:30] it's a lot more fifty fifty
+[23:35] but if you look at it from a risk reward
+[23:37] standpoint
+[23:38] even though the out of the money spread
+[23:40] is a higher chance of success
+[23:43] your profit is much smaller and your
+[23:45] loss is much bigger
+[23:47] so they're they're almost like different
+[23:50] types of trades all together out of the
+[23:52] money credit spreads and at the money
+[23:54] credit spreads
+[23:55] um
+[23:57] i do like to hold all questions until
+[24:00] the end so that i don't get
+[24:02] distracted
+[24:04] but uh and and so i'm gonna do that
+[24:07] wayne you're hold that question and and
+[24:10] fire it back at me later uh uh all you
+[24:12] guys okay
+[24:13] i don't like for me to get distracted
+[24:15] because that
+[24:16] you know that could be annoying to you
+[24:18] but i i did leave plenty of time for q a
+[24:21] so uh we're gonna get to all your
+[24:23] questions that's my favorite part you're
+[24:24] still i hope
+[24:27] so here's an example let's say you know
+[24:30] i'm mildly bullish on a 66 dollar stock
+[24:33] right or maybe i'm not bullish at all
+[24:35] but there's just really strong support
+[24:38] at 65 a share okay
+[24:42] the past five times it hit 65 it's
+[24:45] bounced higher now another thing here
+[24:49] support or resistance for that matter
+[24:51] they're not just like these magic lines
+[24:53] on a chart that oh look the stock
+[24:55] bounced off okay whoop-dee-doo big deal
+[24:58] like they actually mean something
+[25:01] technical analysis in general is a map
+[25:04] of human behavior it's what happened
+[25:06] it's it's a map of the orders
+[25:09] right
+[25:10] if a stock every time it gets down to 65
+[25:13] it bounces higher
+[25:15] why does it bounce higher why would a
+[25:17] stock go up
+[25:19] in fact there's only one answer to this
+[25:22] when we're on the trading floor and we
+[25:24] talk about this
+[25:26] like
+[25:27] i felt like i was being a
+[25:29] a smart aleck every time i i said this
+[25:32] but
+[25:33] why would a stock go up what is the only
+[25:36] reason why stock goes up who can tell me
+[25:38] we've got a good number of folks in the
+[25:40] room here somebody's going to fire off
+[25:41] that answer right now in the chat box
+[25:44] more demand than supply
+[25:47] bingo good job edmund
+[25:50] it's demand pressure it's buyers says
+[25:52] jim too right exactly mike will volume
+[25:55] but but specifically buying volume right
+[25:58] demand exactly
+[26:01] because like if there's
+[26:03] you know
+[26:04] 300 shares offered at at 61
+[26:09] and somebody buys 300 shares they're not
+[26:11] offered at 61 anymore the offer is
+[26:13] higher and then the bid ends up being
+[26:15] higher too it's just the it's just the
+[26:18] uh
+[26:19] it's just the um
+[26:21] mechanics of the market and and yeah so
+[26:24] uh dovel says tech analysis is astrology
+[26:27] for traders and a lot of people feel
+[26:29] that way and and to be fair maybe some
+[26:31] of it is especially for some traders who
+[26:33] maybe look at all these like really
+[26:35] kooky things but like this stuff like
+[26:37] the the basics of technical analysis
+[26:41] is not astrology and that's what i'm
+[26:43] trying to say here
+[26:44] like there are many like value traders
+[26:48] right and i'm not saying like
+[26:50] like a regular retail trader like many
+[26:53] of the folks who might be attending this
+[26:55] webinar i'm saying like a big
+[26:58] institutional trader with like hundreds
+[27:02] of millions or a billion dollars like in
+[27:05] the fund right
+[27:07] who hires these quants
+[27:10] for a million dollars a year to run
+[27:13] these models to to tell him or her where
+[27:16] what the value of that stock is
+[27:20] right there's lots of people like this
+[27:22] and when that's and when that stock goes
+[27:25] too far down below value
+[27:28] right
+[27:29] that's when they buy it and they they
+[27:31] just set uh like
+[27:33] a target or an alert or whatever it is
+[27:36] on their computers
+[27:38] and they say oh it went to 65 that's you
+[27:41] know 20
+[27:42] 20 below our value range that our you
+[27:45] know brilliant genius quants told us
+[27:48] you know that is where we should buy
+[27:50] because it's extremely cheap at that
+[27:52] level like that's what a support line is
+[27:55] it's really not something magic or like
+[27:58] you know self-fulfilling prophecy or or
+[28:00] like you know like dole said you know
+[28:01] astrology you know like
+[28:04] there's a lot of technical things that
+[28:06] really mean something and support and
+[28:08] resistance
+[28:09] like they're the kings of like that's
+[28:11] extremely useful information so how do
+[28:14] we
+[28:15] as
+[28:16] not quants how do we
+[28:19] as not
+[28:20] billion dollar institutional traders how
+[28:22] do we
+[28:24] use that information
+[28:27] it's almost like we can make the quant
+[28:30] or the institutional trader work for us
+[28:33] because we know that if there's enough
+[28:35] buying volume somebody added volume to
+[28:37] that and i and i like that if there's
+[28:39] enough demand pressure buying volume
+[28:43] at this price
+[28:45] because there's obviously in hindsight
+[28:47] there's obviously
+[28:49] people
+[28:50] willing to
+[28:51] put big money behind buying it there
+[28:54] maybe they'll be running that same model
+[28:56] this week right you probably will
+[28:59] [Music]
+[29:01] and so that puts this extra thing on our
+[29:03] side it's it's almost like we're like
+[29:07] we're like glimpsing just a little bit
+[29:10] like a little peek through the blinds of
+[29:12] this quants office kind of right we're
+[29:15] getting just a little bit of this
+[29:16] information like ah
+[29:19] this is one thing that's working for me
+[29:22] on my side to put me ahead of statistics
+[29:26] and selling volume you know that's the
+[29:28] resistance line ken yeah
+[29:31] yeah
+[29:33] okay so
+[29:34] here we
+[29:35] sell the november 65 put which happens
+[29:38] to go coincide with where i'm saying
+[29:41] support is in this case we could sell it
+[29:43] at support we can sell the strike price
+[29:45] at support or below support
+[29:48] and then we buy a lower strike
+[29:51] put
+[29:51] which one is the trade and which one is
+[29:54] insurance
+[29:55] 65 put because that's one we're selling
+[29:57] is the trade
+[29:59] 60 put is the insurance
+[30:03] the maximum gain here is 1.60 maximum
+[30:06] loss the difference between the two
+[30:08] strike prices minus the
+[30:10] premium received so five minus a dollar
+[30:13] sixty is three forty
+[30:16] and the break even here is just simply
+[30:18] 65 minus a dollar sixty so that's 63.40
+[30:22] now i want to point out yet another
+[30:24] thing here that's not even on the slide
+[30:27] just another thing
+[30:28] i mean is that okay with you guys if i
+[30:31] share
+[30:32] like a couple of little nuggets that are
+[30:34] not even
+[30:36] supposed to be in the presentation but
+[30:38] like i share a little extra is that okay
+[30:40] give me a give me a yes if that's okay
+[30:44] how did i know you were gonna say that
+[30:46] it's almost surprising okay
+[30:49] all right so
+[30:50] so this is something that i think is
+[30:52] pretty interesting here right
+[30:55] i have had people say
+[30:57] well
+[30:58] why would i sell
+[31:00] a put credit spread
+[31:03] where i can only make a dollar sixty
+[31:06] when i could just sell the 65 put and i
+[31:09] could make 270 it's like almost twice as
+[31:12] much and you know maybe 80 percent more
+[31:14] or whatever that math comes out to
+[31:17] i'm limiting my profits if i sell a
+[31:19] spread instead of just the outright put
+[31:23] you ever hear somebody say that you ever
+[31:24] think that to yourself
+[31:27] and sometimes it feels that way too
+[31:30] but here's the thing
+[31:33] what if i sold two of these spreads
+[31:36] i could make 230. i could make more than
+[31:38] just selling the put
+[31:41] and there we go
+[31:42] murrah hits it right on the head great
+[31:45] job
+[31:47] a couple other people chimed in the same
+[31:49] thing recipe for disaster exactly
+[31:52] we have unlimited risk with the put
+[31:55] right
+[31:57] so we have protection
+[32:00] and if we sell two of the spreads
+[32:02] instead of one put we can actually make
+[32:04] more and potentially lose less
+[32:07] now that's not 100 universally true
+[32:09] because you know if we look at this
+[32:12] if the stock ended up right at 60 if we
+[32:15] sold two we could lose 640 right
+[32:18] whereas
+[32:19] just by selling the put we would lose a
+[32:21] little bit less at this point
+[32:25] but you know down at 55 at 50 at 45
+[32:29] we've got so much protection with this
+[32:32] and that's why like before when i was
+[32:35] saying about like
+[32:36] we want low volatility
+[32:39] here's another thing the most we can
+[32:43] make is a dollar sixty i call this a not
+[32:45] bearish trade as opposed to a bullish
+[32:48] trade right it does have a positive
+[32:50] delta we can talk more about the greeks
+[32:52] later i saw somebody ask a question
+[32:54] about the greeks i i want to get to all
+[32:56] of them i might ask you to ask them
+[32:58] again but just hold off i believe the
+[33:00] next slide is actually your q a so just
+[33:02] sit tight for one second
+[33:04] so this is interesting the most here we
+[33:06] can make is a dollar sixty
+[33:09] we've a positive delta is this a bullish
+[33:12] trade i mean we look here the higher the
+[33:14] stock goes
+[33:16] we have a profit
+[33:17] but if the stock goes to 65 we make a
+[33:20] dollar sixty if it goes to 70 we still
+[33:23] only make a dollar 60. if it goes to 100
+[33:26] we still only make a dollar 60.
+[33:31] so what this is really more for
+[33:34] is it's for like
+[33:36] you know low volatility if we think that
+[33:39] this stock is going to explode up this
+[33:42] is a terrible trade
+[33:44] we'd much rather buy a call
+[33:47] if we think that the stock you know it's
+[33:48] going to follow a lot this is a terrible
+[33:50] trade too it's better than just selling
+[33:52] a put
+[33:55] but it's not good so what did we just
+[33:57] learn from that statement
+[33:59] the credit spreads in general call or
+[34:02] put
+[34:03] are good for low volatility environments
+[34:07] when we think the stock's not going to
+[34:09] go up too much and we think it's not
+[34:10] going to go down too much
+[34:12] you know basically between the break
+[34:14] even you know the stock is starting at
+[34:15] 66
+[34:16] we want to stay above the break even
+[34:19] but if it goes up a lot that doesn't
+[34:20] really help us we want it to be
+[34:21] somewhere within this sweet spot right
+[34:23] here
+[34:25] we thought it was going to go up a lot
+[34:26] we'd buy a call and that would just you
+[34:28] know that would be a whole different
+[34:29] conversation
+[34:33] i like dropping these little nuggets in
+[34:35] there you know so that you guys can
+[34:36] leave this presentation and like just
+[34:39] put the stuff to use and really be able
+[34:41] to like solidify and think about these
+[34:43] things more clearly i love it i love it
+[34:44] i love it
+[34:47] um
+[34:48] now you may ask by the way
+[34:50] maybe somebody did i i was now looking
+[34:53] at the questions
+[34:56] dan
+[34:57] dan that's me
+[34:58] do you ever sell puts
+[35:01] not part of spreads
+[35:02] and that answer is yes
+[35:05] i sell cash secured puts i don't sell
+[35:07] naked quotes i sell cash secured puts
+[35:09] and i only sell them in my ira
+[35:13] i've got a couple on in there now in
+[35:16] fact i've got i've got uh
+[35:21] i believe it's in two different stocks
+[35:23] in my ira i sold some cash secured puts
+[35:26] and you know what happened
+[35:29] the stocks had fallen below the strike
+[35:32] price
+[35:34] yeah
+[35:35] now that's usually when most traders
+[35:38] panic
+[35:39] that's usually when most traders say
+[35:41] well
+[35:43] before traders do that they say
+[35:46] yeah i would be okay getting assigned
+[35:48] and then it falls below the strike price
+[35:51] and they're going to get a sign and they
+[35:52] say oh no this is terrible i'm going to
+[35:54] get assigned i'm going to lose money
+[35:58] but
+[36:00] what i said before i put the trade on is
+[36:02] not i'd be okay if i get assigned
+[36:05] i said i hope i get assigned
+[36:08] that's actually why i do cash secured
+[36:10] goods
+[36:11] because i want to get assigned
+[36:14] and if the stock goes up and i skate and
+[36:16] i get to keep the premium that's okay
+[36:18] too
+[36:20] but when it falls you know
+[36:22] enough where i get assigned and i get to
+[36:25] keep that premium it's like i can buy
+[36:27] the stock you know it's like i was
+[36:29] already thinking about buying the stock
+[36:30] but i get to buy it at a lower price not
+[36:33] just because the stock went down but
+[36:34] because i also get to keep that premium
+[36:37] so this is you know this is a very
+[36:41] credit spreads are a very specific way
+[36:46] you trade them when you have a very
+[36:47] specific thesis on your trade
+[36:50] low volatility i don't want to get a
+[36:52] sign on anything i'm just trying i just
+[36:54] believe it's going to stay above the
+[36:55] strike price and i want to keep the
+[36:57] premium
+[37:00] okay
+[37:01] now
+[37:02] it's time for some questions
+[37:06] which is my favorite part
+[37:09] um
+[37:14] and i'm going to work out
+[37:16] like kind of from now so if i don't ask
+[37:19] your question from before if i don't
+[37:20] answer your question from before
+[37:22] i might ask you to re-ask it
+[37:25] so
+[37:26] wayne says
+[37:27] hey dan
+[37:29] if we are at the money and getting
+[37:31] closer to expiration why does our gamma
+[37:33] increase
+[37:35] causing bigger rapid delta changes well
+[37:40] it's it's the math of the model
+[37:42] like at the money options gammas and
+[37:45] thetas get really big as you approach
+[37:48] expiration on expiration day both gamma
+[37:51] and theta are at their highest
+[37:54] think of gamma as the price you pay for
+[37:58] the benefit of theta
+[38:00] think about it that way
+[38:02] or you could think of theta as
+[38:04] getting paid for bearing the risk of
+[38:06] gamma they're opposites but they're
+[38:09] they're more like two sides of the same
+[38:11] coin
+[38:13] so you know like why does gamma get
+[38:15] bigger because it does
+[38:17] i mean really like the way i think about
+[38:19] it is because
+[38:21] like at the money options are
+[38:24] they have close to a 50 delta
+[38:26] why because if you're right at the money
+[38:29] it's like a 50 50 chance of whether
+[38:32] you're gonna get assigned or not
+[38:34] if you're right at the money and there's
+[38:35] a year until expiration well
+[38:38] sure there's a 50 50 chance but if you
+[38:40] get in or out of the money by a buck or
+[38:42] you know by five or even five percent or
+[38:45] maybe even 10
+[38:46] the market can change courses so the
+[38:48] deltas don't change that much but when
+[38:51] it's like expiration day and you're
+[38:53] right at the money you're a penny away
+[38:55] from
+[38:56] expiring in the money or expiring out of
+[38:58] the money so so the gamma explodes
+[39:01] because your delta is going to be your
+[39:03] delta is not going to be 50 when the
+[39:05] bell rings on expiration your delta's
+[39:07] going to be 100 or it's going to be 50.
+[39:09] it's like
+[39:10] gamma to infinity right so i mean that's
+[39:12] why it's like that
+[39:15] interesting question wayne i like that
+[39:17] novel says i put my put and call credit
+[39:19] spreads at 20 delta on the short leg
+[39:22] and do a 10
+[39:23] to 20 strike spread as soon as i make 50
+[39:26] or 60 i exit and place the next trade
+[39:29] what do i think
+[39:30] um there's a couple of some of the
+[39:33] elements here
+[39:34] i like and some
+[39:35] uh
+[39:37] i think are not as relevant
+[39:39] i'm going to start out with uh the bad
+[39:42] news okay
+[39:44] so the way the option pricing model
+[39:47] works
+[39:48] is it basically ensures
+[39:52] uh what's the word
+[39:54] fairness it's fairness it's not really
+[39:56] the perfect word
+[39:57] but it ensures like sort of uh
+[40:00] an equitable scenario
+[40:03] it ensures that
+[40:04] buying or selling in this case any one
+[40:09] delta level
+[40:10] is no better or worse than selling any
+[40:13] other delta level
+[40:15] meaning
+[40:17] meaning if i sell
+[40:18] you know if my method was to sell a 40
+[40:21] delta option and do a 10 to 20 strike
+[40:24] spread and exit as soon as i make 50 or
+[40:26] 60 percent my trades not better or worse
+[40:28] than yours and that and that's because
+[40:30] of
+[40:32] this slide
+[40:34] yeah if if i used a 20 delta that's an
+[40:38] out of the money spread i have a much
+[40:39] higher chance of success but my risk
+[40:42] reward is a lot worse than a closer to
+[40:44] the money spread right if i were doing a
+[40:47] 40 delta
+[40:48] i'd have more losers than with the 20
+[40:50] delta but i'm going to make more money
+[40:52] on every trade and i'm going to lose
+[40:54] less money on every trade
+[40:56] so
+[40:57] i like that part
+[40:59] i i personally look at that as
+[41:04] maybe just a perpetuated fallacy
+[41:07] to me i would so much rather use support
+[41:10] and resistance to set my strikes than
+[41:12] the delta because the delta is arbitrary
+[41:15] now as far as doing a 10 or 20 strike
+[41:17] spread
+[41:19] i mean it kind of depends on what the
+[41:20] stock is right if it's a five dollar
+[41:23] stock
+[41:24] you know if you're selling a you know
+[41:27] the five strike call and then buying the
+[41:29] 25 strike call that's just kind of weird
+[41:31] right um if we're talking about uh
+[41:35] google pre-split or amazon let's just
+[41:38] say
+[41:38] um
+[41:39] then if we talk about amazon
+[41:41] then a ten dollar widespread is like a
+[41:44] pretty tight spread
+[41:45] right
+[41:47] like it's really more in percentages i i
+[41:50] think you know
+[41:52] but
+[41:52] you know if i'm just envisioning like a
+[41:54] hundred and fifty dollar stock
+[41:56] you know which maybe that's what you're
+[41:58] talking about double
+[41:59] okay
+[42:00] makes sense uh exiting as soon as you
+[42:03] make 50 or 60 percent i don't have a
+[42:05] problem with that
+[42:07] i mean what
+[42:08] what i'll do on some of my trades
+[42:11] is i'll exit maybe half at 50
+[42:14] and then try and get take a little bit
+[42:15] more i never hold it all the way until
+[42:18] expiration um
+[42:19] i just think that at some point the risk
+[42:21] reward isn't there if you have to wait a
+[42:23] whole another week to make a nickel but
+[42:25] if it reverses you lose you know
+[42:28] 9.95 it gets a little silly then you
+[42:31] know
+[42:32] [Music]
+[42:33] uh so yeah i i think that that that part
+[42:36] taking profit of 50 or 60 is nice and
+[42:38] conservative it's cool i like it yeah
+[42:41] it's
+[42:42] good jay
+[42:45] says what are your rules for closing
+[42:46] spreads and taking profits so there you
+[42:48] go
+[42:49] i mean i state that my rule is i close
+[42:52] at 65 percent you know which is not far
+[42:54] from what bill was saying
+[42:57] but like i just said i will sometimes i
+[43:00] will like
+[43:02] if it's one lot
+[43:04] you know i'll just close the whole thing
+[43:05] at 65
+[43:06] sometimes if i want to be a little bit
+[43:08] more conservative um
+[43:11] you know i might go closer to 50
+[43:13] sometimes if it seems like a really good
+[43:15] tree and it's working out i might be a
+[43:16] little bit greedier
+[43:18] uh sometimes
+[43:20] you know i'll split it into into two
+[43:22] orders i usually don't do three
+[43:24] you know i usually don't like close some
+[43:26] of it at 50 something at 60 some of it
+[43:28] at 70. i usually
+[43:30] split it up into two different uh exits
+[43:34] corey says
+[43:37] when a credit put spread is in the money
+[43:39] both lags
+[43:41] and close to expiration it's difficult
+[43:42] to roll up and out for a credit is there
+[43:45] a way to finesse it to get accepted
+[43:49] ye uh well let's talk about that
+[43:52] in a perfect world cory
+[43:55] you start doing that role
+[43:57] before both options are in the money
+[44:00] for me my rule is and it's a very very
+[44:04] simple rule
+[44:06] and some folks who have been trading
+[44:07] this a while probably have
+[44:09] a different way of doing this or a
+[44:11] different version
+[44:12] but
+[44:13] if
+[44:14] if the stock crosses the short strike
+[44:16] and the short strike becomes in the
+[44:18] money
+[44:19] that's where i either close the trade
+[44:20] and take a loss or i might even be able
+[44:22] to take a profit depending on how much
+[44:23] time is passed
+[44:25] or i do my role so i don't wait for both
+[44:27] to get in the money i
+[44:29] i do my role as soon as the short legs
+[44:31] in the money
+[44:32] and one of the reasons why i think it's
+[44:35] difficult is because
+[44:36] the when options are in the money
+[44:39] the bid aspects tend to widen
+[44:41] and sometimes it's hard to get
+[44:43] get out of that trade even for parity
+[44:46] um
+[44:48] so
+[44:49] yeah it
+[44:50] which is another reason why when
+[44:52] possible
+[44:54] close it before that happens now
+[44:55] obviously that's not always possible
+[44:57] sometimes you wake up
+[44:59] you go downstairs
+[45:01] put your
+[45:02] pod in the keurig
+[45:04] come upstairs rub the sleep out of your
+[45:06] eyes put it on your office glasses
+[45:08] and
+[45:09] you say log in your accounts and say oh
+[45:12] my goodness what happened here how could
+[45:14] the stock be oh no like all of a sudden
+[45:17] this credit spread is working out so
+[45:18] great now both legs are in the money you
+[45:20] make enough trades that's gonna happen
+[45:24] when that happens there's nothing you
+[45:25] can do so the thing about
+[45:28] difficult to roll up and out for a
+[45:30] credit
+[45:34] when you're in a situation where
+[45:37] you have a losing trade
+[45:40] ideally you'd like to do an adjustment
+[45:42] to turn that losing trade into a winning
+[45:44] trade
+[45:46] but if you can't
+[45:48] how about if you turn that losing trade
+[45:50] into less of a losing trade
+[45:52] that still works
+[45:54] i mean if that's the only trade you ever
+[45:56] make in your life then
+[45:58] that sucks but if you're like a trader
+[46:02] and you make
+[46:03] a lot of trades throughout your trading
+[46:05] career right
+[46:07] and even if you're a retail trader you
+[46:08] can still call it a career you can still
+[46:10] call yourself a trader
+[46:12] if between when you start trading make
+[46:14] your first ever trade
+[46:16] to
+[46:17] 10 years 20 years later when you make
+[46:19] your last ever trade
+[46:22] if you make some of your losses smaller
+[46:25] by adjusting
+[46:26] you did great
+[46:29] right
+[46:31] so
+[46:32] yeah don't
+[46:34] don't feel bad about about a losing
+[46:37] trade you you know
+[46:40] if you make
+[46:42] 10 000 trades i mean i guess my i
+[46:44] probably made about 50 000 trades
+[46:46] i made a lot of trades my days
+[46:48] you know
+[46:50] if you make
+[46:51] 20 of that if you make 10 000 trades
+[46:54] guess what you're gonna have some losers
+[46:57] and it's okay
+[46:58] it's all part of the game so
+[47:00] yeah keep doing what you're doing but
+[47:02] don't beat yourself up if if you can't
+[47:04] just make it a win
+[47:06] um
+[47:07] can you on credit spread suggested
+[47:11] uh what
+[47:14] uh
+[47:15] i'm not sure what that meant uh mark
+[47:18] says do you have an exit strategy if the
+[47:20] trade goes against you yeah we were just
+[47:23] kind of talking about that um there's
+[47:25] one of two things you can do
+[47:28] one
+[47:29] close down and take a loss and move on
+[47:32] there is no shame in taking loss
+[47:35] they say your first loss is your best
+[47:36] loss because you take it fast and it's
+[47:39] small and you're out and you move on to
+[47:41] a better scenario
+[47:44] whenever you have a loser you always
+[47:45] want to make your money back but you
+[47:47] know what you don't actually have to
+[47:49] make it back on that same trade
+[47:52] if the market changed and your forecast
+[47:54] changed like you know like it looked
+[47:56] like hey this stock is going to stay
+[47:58] above 50 and then some brand new news
+[48:01] comes out
+[48:04] it might now warrant stock being above
+[48:05] 50. your thesis might have changed
+[48:08] close it take a loss and put that money
+[48:10] to work on a trade that uh is better
+[48:13] so yeah so that's thing one you can
+[48:16] close and you can take a loss or you can
+[48:18] you can do an adjustment if it's a put
+[48:20] credit spread
+[48:21] we would typically roll
+[48:23] down to a lower strike if we're very
+[48:26] close to an expiration we might have to
+[48:28] also roll out to a
+[48:30] longer term expiration
+[48:33] we would only do that if there's more
+[48:34] support below the trade the new trade
+[48:37] has to also fit our criteria for being a
+[48:40] good credit spread if it's a call credit
+[48:42] spread we roll up to a higher strike if
+[48:44] there's resistance and if we're too
+[48:46] close to expiration we might also have
+[48:48] to roll out to further out expiration
+[48:50] [Music]
+[48:52] good question
+[48:53] where do you locate high option activity
+[49:00] well i mean one thing you can just look
+[49:02] on your brokerage platform and i i keep
+[49:06] a column for volume and another one for
+[49:08] open interest and it shows up there you
+[49:10] can also look at time and sales i've got
+[49:12] some uh
+[49:14] fancy
+[49:15] schmancy stuff that i'm still still
+[49:17] working on
+[49:18] for credit spreads
+[49:20] not ready to roll out just yet but uh
+[49:23] it's all sort of programmed
+[49:25] um
+[49:27] and i'm able to identify them but uh
+[49:30] we don't have that available to the
+[49:32] public just at this time
+[49:34] how do you choose the strike and date
+[49:37] for your cash covered puts
+[49:40] i typically keep them pretty short term
+[49:43] uh not always sometimes i have to go a
+[49:45] little further out in time
+[49:47] but i just i mean basically
+[49:50] i mean there's a little bit of science
+[49:52] behind it but
+[49:54] basically i think
+[49:58] where do i want to buy this stock
+[50:00] so where's my target price
+[50:03] what is the premium i can get
+[50:07] and
+[50:08] add the or
+[50:09] i take the strike price minus the
+[50:11] premium and if i get a sign that's why i
+[50:13] would be buying it am i happy with that
+[50:16] and if i skate if the stock doesn't get
+[50:18] down and i don't get a sign
+[50:20] is it worth
+[50:22] is it worth doing
+[50:24] for the that amount of premium that i'm
+[50:26] going to collect
+[50:29] usually most of the time like if you
+[50:31] sell a a year-long put
+[50:34] you usually don't
+[50:35] like you would usually be better off
+[50:37] selling like 12 one month puts than than
+[50:40] one 12 month what
+[50:42] um
+[50:43] so
+[50:44] i would have to do a whole presentation
+[50:46] on on that and i could one day they're
+[50:48] always asking me for topics so maybe
+[50:50] next time michelle asked me i'll suggest
+[50:52] uh i'll suggest that
+[50:55] use the five dollar spread how do we
+[50:56] decide on the spread
+[50:59] so if you look like you always have
+[51:02] different choices with your spread like
+[51:04] if if all the strikes are in one dollar
+[51:06] increments i go a dollar wide i can go
+[51:09] two dollar wide i'd go three dollar wide
+[51:12] four dollar riding five dollar wide
+[51:15] but if if you ever compare those like
+[51:18] next time you're thinking about
+[51:20] doing a credit spread
+[51:22] and the strikes are a dollar wide look
+[51:24] at your your risk reward
+[51:27] on the one dollar widespread on the two
+[51:29] on the three on the four and out of five
+[51:32] almost every time in fact i bet every
+[51:35] single time
+[51:36] you'll get better risk reward with
+[51:39] the one dollar spread
+[51:42] usually skip i i will skip a strike
+[51:44] sometimes but nine times out of ten not
+[51:46] skipping a strike
+[51:48] ends up being a superior trait
+[51:51] but check it out like it is situational
+[51:54] you know so look into it like i said i
+[51:56] don't always do sometimes i will skip a
+[51:58] strike but usually it's a better trade
+[52:00] if you don't
+[52:00] [Music]
+[52:02] what factors should one consider when
+[52:03] determining the time frame to put on a
+[52:06] credit spread
+[52:08] so look
+[52:12] if you are going to um
+[52:16] throw a baseball at a target
+[52:19] all right
+[52:20] whatever your skill level is in throwing
+[52:22] a baseball
+[52:23] i think i probably don't have a lot of
+[52:25] skill
+[52:26] and that target is 10 feet away
+[52:31] probably going to get it within this
+[52:32] amount of a range right you're going to
+[52:34] get it pretty close to that bullseye
+[52:37] now if the target is 30 feet away
+[52:40] are you still going to be within that
+[52:41] same range no
+[52:43] like
+[52:43] it it's going to fan out you're gonna
+[52:46] have much more margin for error 30 feet
+[52:49] away than you would 10 feet away well
+[52:51] guessing where a stock is going to be in
+[52:53] the future is the same way
+[52:55] so the shorter the amount of time to
+[52:57] expiration
+[52:59] the more likely you are to
+[53:01] predict it
+[53:02] right more likely you are to be right if
+[53:05] your bet
+[53:06] if you will it's not really a bet it's
+[53:08] something different than
+[53:10] betting
+[53:11] trading is right but no let's just put
+[53:13] it crudely like that if your bet is that
+[53:16] the stock is not going to fall below 60
+[53:20] if that bet lasts one day or one year
+[53:24] which are you more likely to be right on
+[53:27] one day
+[53:28] less can happen in one day
+[53:30] so i like to keep them as short as i can
+[53:32] and typically i make more in time decay
+[53:36] selling shorter term options so
+[53:38] you know
+[53:40] probably you have a whole presentation
+[53:42] on just that as well
+[53:44] but short shorter is better
+[53:48] all right i think i can take maybe two
+[53:50] more questions here maybe you guys are
+[53:52] asking some great questions
+[53:55] do you always trade at the money or out
+[53:57] of the money or mix it up what's the
+[53:58] criteria used to identify
+[54:01] um
+[54:03] i tend to do more out of the money than
+[54:06] at the money
+[54:08] i do find that
+[54:12] at the money is interesting because so
+[54:13] many people do it
+[54:15] but i've developed more skills for
+[54:18] um
+[54:21] out of the money spreads i think i just
+[54:22] feel a little bit more comfortable with
+[54:24] them
+[54:26] let's see here
+[54:29] when's the best time to exit a credit
+[54:31] spread if the underlying stock moves
+[54:33] quickly in your favor
+[54:36] i do like to set it at a certain
+[54:38] percentage i think i mean if i can if i
+[54:40] put the trade on
+[54:42] right now
+[54:43] and
+[54:45] it just really moves in my favor unex
+[54:48] unexpectedly
+[54:50] if i can buy it back for 65 of what i
+[54:53] sold it i'll do it right now
+[54:56] i look at it more that way
+[54:58] not how much time has to happen how far
+[55:00] the stock has to move
+[55:02] what percentage i can buy it back
+[55:04] meaning if i sell it at a dollar
+[55:06] if i can take the most i can make is a
+[55:08] dollar so 65 percent of that is if i can
+[55:10] buy a back of 35 cents i'm going to do
+[55:12] that i don't care if it's an hour later
+[55:14] or three weeks later
+[55:16] [Music]
+[55:17] if your credit spread goes against then
+[55:19] we have a three to one loss if you sell
+[55:22] a put you get more credit
+[55:24] and if it goes against we get put to us
+[55:27] then we sell a cup
+[55:29] yeah
+[55:33] myron scholes prove that uh you can't
+[55:37] you know
+[55:39] that that game only goes so far at some
+[55:42] points you just have such a string of
+[55:44] bad luck that you run out of money is
+[55:46] what happens to long-term capital a
+[55:48] company he started
+[55:50] but yeah yeah i mean bernard there's uh
+[55:53] there's
+[55:54] there's there's something to that for
+[55:56] sure i like that a lot
+[55:58] um
+[56:01] i like it yep there's lots of different
+[56:03] adjustments you can do
+[56:05] will says
+[56:08] nope where i already said that uh
+[56:12] no i do not justin i do not target
+[56:14] specific deltas
+[56:16] that's
+[56:18] mathematically
+[56:19] mathematically speaking no one delta is
+[56:23] better than another
+[56:24] to sell
+[56:26] that's just like how the how the option
+[56:28] pricing model works
+[56:38] uh
+[56:39] darrell
+[56:40] your
+[56:41] girl's question is you open your short
+[56:43] strike at the money with the 35 to 45
+[56:47] days to expiration within 5-10 days
+[56:50] you go in the money do you give a timer
+[56:52] get out
+[56:54] as soon as as soon as
+[56:58] it crosses the short strike i get out
+[57:04] hey dan dan 2.0 here i like that thank
+[57:06] you for doing this i'm relatively new to
+[57:08] trading with a fast learner
+[57:10] uh
+[57:18] well there's a little bit of a lawn
+[57:19] question it's about iron condors but
+[57:22] i'm just going to make this easy for you
+[57:25] think about daniel think about an iron
+[57:27] condor
+[57:28] as two credit spreads
+[57:30] as a call credit spread and a put credit
+[57:33] spread and what what i'll do
+[57:35] is once i can take a profit on one of
+[57:38] the credit spreads i'll do that a lot of
+[57:40] the times
+[57:42] in fact i'll always close it
+[57:44] well not always most of the time i'll
+[57:46] close it
+[57:48] uh before expiration
+[57:50] so just just like think about your iron
+[57:53] condors as two different spreads
+[57:56] and uh
+[57:58] and you're in good shape
+[58:01] and please get a reply got interrupted
+[58:03] reply about what ken kevin
+[58:08] i cannot
+[58:11] i don't know what to reply
+[58:13] uh
+[58:14] okay i'm gonna take one more question
+[58:16] then we gotta go
+[58:21] oh john asks a great question do you use
+[58:25] iv percentile as a factor
+[58:29] yes
+[58:31] so
+[58:31] i'm glad you asked that because i get to
+[58:33] drop one more like little nugget on you
+[58:37] oh and i'm looking there's a few people
+[58:39] who left class and they are not going to
+[58:41] get this you guys put in the effort you
+[58:43] put in the time you invested in
+[58:45] yourselves by sticking around here the
+[58:47] whole time and i love that
+[58:49] and the folks who left early don't get
+[58:51] to hear this so
+[58:54] okay do i use iv percentile as a factor
+[58:56] yes
+[58:57] because here's what we're doing with
+[58:59] this credit spread position
+[59:01] it's true that if the spread goes in the
+[59:04] money
+[59:06] uh you know like if this if the stock
+[59:08] moves against me i can lose money
+[59:11] right
+[59:12] and if it moves the other direction i
+[59:14] can make money
+[59:16] it's also true that if time passes i can
+[59:19] make money and i will
+[59:23] but there's also this volatility factor
+[59:25] and the more i sell the spread for
+[59:29] the better
+[59:30] right
+[59:31] and in fact when we're talking about
+[59:33] different deltas
+[59:34] like if we look at a a stock that's like
+[59:37] well
+[59:38] let's instead of using delta let's use a
+[59:41] certain percentage out of the money okay
+[59:43] similar concept different it's similar
+[59:46] if if i if i'm looking to sell a spread
+[59:50] three percent out of the money right so
+[59:52] the stock is at a hundred i'm going to
+[59:54] sell the 103 call and buy the 104 call
+[59:58] okay if i can sell that call for
+[60:05] 35 cents
+[60:07] the most i can make is 35 cents most i
+[60:10] can lose is 65 cents okay fair enough
+[60:12] right
+[60:14] what if
+[60:15] those options were more expensive
+[60:17] what if i could sell the spread for 45
+[60:20] cents
+[60:21] then the most i could make is 45 cents i
+[60:24] could make 10 cents more the most i
+[60:25] could lose is 55 cents i could lose 10
+[60:27] cents less
+[60:30] what we're talking about here is implied
+[60:32] volatility
+[60:33] implied volatility like i'm going to
+[60:35] tell you the secret about implied
+[60:36] volatility what it really is is how
+[60:39] cheap or expensive options are
+[60:43] you think about it that way you're going
+[60:44] to be miles ahead of most traders
+[60:47] it's how cheap or expensive options are
+[60:50] so i really only want to put on credit
+[60:52] spreads when i can sell them when
+[60:55] they're overpriced
+[60:57] when i can get a bigger
+[60:59] premium
+[61:01] all else held constant
+[61:03] so like it's not just about direction
+[61:05] it's not just about time but
+[61:07] it's also like
+[61:09] whenever i sell anything i want to sell
+[61:11] it
+[61:12] when it's
+[61:13] worth when i'm selling it for more than
+[61:16] it's worth
+[61:17] right
+[61:18] whenever i buy anything i want to buy it
+[61:20] for less than it's worth right
+[61:25] so
+[61:25] yes
+[61:26] use iv percentile absolutely
+[61:30] as long as i'm making sure that like
+[61:32] earnings isn't coming out or something
+[61:34] like if that's why implied volatility is
+[61:36] high i'm going to stay away
+[61:37] but yeah
+[61:39] great question john i love that
+[61:41] okay that
+[61:43] folks is all we have for today
+[61:47] thank you so much for spending you your
+[61:50] afternoon with me and i hope that this
+[61:53] was super helpful and i'm gonna be back
+[61:56] let's see i believe it's next week with
+[61:58] another really really great really fun
+[62:01] presentation you're gonna love it
+[62:03] and uh i'm gonna see you then so mark
+[62:05] your calendar uh i believe it's february
+[62:07] 16th i'll be back all right trade well
+[62:11] thank you catch you next time
+[62:13] bye folks once again i'm dan pascarelli
+[62:16] trade smart

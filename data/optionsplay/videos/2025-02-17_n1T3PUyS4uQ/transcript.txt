@@ -1,0 +1,1874 @@
+[00:00] okay all right good afternoon and
+[00:02] welcome back everyone to a very special
+[00:05] session that we're hosting today an
+[00:07] exclusive session that we're hosting on
+[00:09] how to select the best stocks for
+[00:11] selling cover calls we do a lot of
+[00:13] sessions here where we talk about
+[00:16] concept of cover calls mechanics of
+[00:18] cover calls how to manage cover calls
+[00:20] but we don't really spend a lot of time
+[00:22] as a deeper dive into what stocks should
+[00:25] you buy in order to sell set cover calls
+[00:28] on and that's where we're going to spend
+[00:29] some time on here today uh this is a
+[00:32] session that is available only to
+[00:34] members so that we can try to answer
+[00:36] more of your questions and also take a
+[00:38] more interactive session here towards
+[00:40] the end where you can uh give us some of
+[00:42] your symbols and we can take a look at
+[00:44] them together uh with regards to selling
+[00:47] cover calls so let's go ahead and get
+[00:49] started what we are uh here every single
+[00:51] Thursday is to help you Empower you to
+[00:54] grow your grow your account confidently
+[00:57] through the education that we provide
+[00:59] and we try to provide a very diverse uh
+[01:02] set of Education to help you better
+[01:04] understand everything from
+[01:07] um uh technical analysis fundamental
+[01:10] analysis option strategy and even Trader
+[01:13] mindset and psychology that are all
+[01:15] important to help you succeed as a
+[01:17] Trader but what we are going to discuss
+[01:19] here today is purely for education and
+[01:21] demonstration purposes it is not a
+[01:23] solicitation or recommendation to buy or
+[01:26] sell any of the specific Securities as
+[01:28] example purposes during today's session
+[01:31] um so my goal here is to help you learn
+[01:33] how to identify the best stocks for
+[01:35] selling cover calls today and we're
+[01:37] going to cover two aspects of that in
+[01:39] order to help you identify the best
+[01:42] stocks number one is capital
+[01:43] appreciation how can you gain a
+[01:46] directional Edge in identifying stocks
+[01:49] that have a higher probability of
+[01:51] appreciating in capital in the long run
+[01:53] that's number one and that's the primary
+[01:55] reason that you uh sell cover calls is
+[01:59] because you first own a stock that you
+[02:00] believe is going to appreciate in value
+[02:03] faster than the market though that's why
+[02:05] you own those stocks otherwise you
+[02:06] better off just buying an index fund
+[02:08] number two income maximization how to
+[02:11] identify the best options to maximize
+[02:13] income on those stocks that you hold in
+[02:16] order to not only generate capital
+[02:19] appreciation from owning those stocks
+[02:20] but also an income stream and that
+[02:22] income stream many times uh will be
+[02:25] orders of magnitude more than what
+[02:27] you're receiving in terms of income from
+[02:29] the dividend itself so those two things
+[02:31] combined is a very powerful um tool in
+[02:36] your toolbox as an options trador to
+[02:38] help you maximize your potential return
+[02:40] of your overall portfolio so we're going
+[02:42] to focus on both of those aspects during
+[02:44] during today's session now we are going
+[02:47] to go over a ton of tools during today's
+[02:50] session so if you don't already have
+[02:52] access to options play you can sign up
+[02:54] for your account at optionsplay
+[02:56] docomo uh that will give you access also
+[02:59] to the slide slides and the recording
+[03:01] during today's session so that you can
+[03:02] follow along at your own pace after we
+[03:06] post this on to YouTube this weekend um
+[03:10] now I'm not going to spend too much time
+[03:13] or I'm not going to spend any time
+[03:14] rather on trying to explain what is a
+[03:17] cover call the mechanics of a cover call
+[03:19] because this session is going to have
+[03:22] make the assumption that you already
+[03:24] have some of the basics of what a cover
+[03:26] call is um uh what a cover call is and
+[03:29] how to go about selling a cover call
+[03:32] however if you are brand new to cover
+[03:34] calls and you want to refresher you want
+[03:36] to make sure that you understand the
+[03:38] strategy well before you um uh you know
+[03:44] utilize the what you're going to learn
+[03:46] during today's session I highly
+[03:48] recommend that you watch the video
+[03:49] that's currently uh on your screen using
+[03:52] the QR code on your screen that will
+[03:54] point you to our YouTube channel so
+[03:56] please watch And subscribe I just looked
+[03:58] at some Analytics before we got started
+[04:00] here today nearly 60% of you that watch
+[04:03] our content on YouTube are not
+[04:05] subscribers one of the best ways to
+[04:07] support us here at options play is to
+[04:09] Simply hit that subscribe button make
+[04:11] sure you hit that notification Bell and
+[04:13] that's going to remind you when we post
+[04:15] new videos every single week uh so that
+[04:17] you get uh our latest videos emailed to
+[04:20] your inbox every time we post them so if
+[04:23] you are looking for refresher on cover
+[04:25] calls or if you're looking on some if
+[04:27] you're looking for any of our other
+[04:29] content or videos on other strategies
+[04:31] you can find them using that QR code on
+[04:34] your screen and once again please
+[04:36] subscribe to us on our YouTube channel
+[04:38] it'll help you uh provide you with the
+[04:41] content that you might need to help you
+[04:42] grow your trading account and at the
+[04:44] same time it is one of the best ways to
+[04:46] support us here at options play so let's
+[04:50] talk a little about stock selection okay
+[04:53] because this is a complicated topic um
+[04:56] there are literally infinite number of
+[04:58] ways that you can go about identifying
+[05:01] and selecting stocks for your portfolio
+[05:04] just look at the sheer number of
+[05:05] services that you can subscribe to that
+[05:09] claim that they have some secret sauce
+[05:11] or some way to help you identify stocks
+[05:14] uh better than everyone else there are
+[05:16] thousands and thousands of them and each
+[05:19] one of them arguably has a different way
+[05:21] or different method for doing so many of
+[05:23] them are successful many of them are not
+[05:25] successful uh so what gives which one
+[05:28] which indicators are best which things
+[05:30] uh should you be looking at and the
+[05:32] reality is that there are simply too
+[05:34] many sources of indicators for helping
+[05:36] you pick stocks there are literally
+[05:38] infinite number of technical indicators
+[05:40] fundamental indicators and different
+[05:42] ways to look at the same indicator uh
+[05:45] that it simply is for most Traders
+[05:49] information overload if you agree with
+[05:51] that type one into the chat window if
+[05:52] you find that the amount of information
+[05:54] that you have access to Simply
+[05:56] overwhelming that you didn't don't
+[05:58] really know where to start okay and I'm
+[06:01] going to see a lot of ones and you know
+[06:03] even though I have been doing this for
+[06:05] nearly 18 years now and I've built I
+[06:07] would say a pretty solid strategy and
+[06:10] consistent strategy for how I go about
+[06:12] identifying it doesn't stop me from
+[06:14] trying to learn new techniques and
+[06:16] seeing what other people are doing and
+[06:18] you know I constantly get sucked down
+[06:20] rabbit holes of learning new things and
+[06:23] saying is this a better process than
+[06:25] what I have and and and you know it it
+[06:27] is it's a good thing to explore but it's
+[06:31] also you have to draw a line in the sand
+[06:33] at some point and say you know this is
+[06:35] what I'm comfortable with this is what I
+[06:37] understand and this is what I'm going to
+[06:39] use and I'm not and I'm going to have to
+[06:41] learn how to ignore the noise of
+[06:43] everything else that's out there um and
+[06:45] it's a really difficult process as
+[06:47] Traders because you always want to
+[06:48] improve you always want to get better so
+[06:50] ignoring things sounds like the wrong
+[06:52] thing to do but that's really kind of
+[06:54] what I think makes the difference
+[06:55] between a consistent and profitable
+[06:57] Trader and and a lot of people who
+[06:59] struggle with trading is that those
+[07:01] consistent and profitable Traders will
+[07:03] actually largely learn how to ignore a
+[07:06] lot of the information that's out there
+[07:08] um because they kind of build the
+[07:09] process and they stick with their
+[07:11] process and they ignore everything else
+[07:13] um with where you
+[07:15] know our just human nature wants to
+[07:17] explore all those other things because
+[07:19] we think that those the other things
+[07:21] will potentially make us a better Trader
+[07:23] and because there are so many different
+[07:25] indicators you can look at you get
+[07:27] conflicting signals from different
+[07:29] indicator ators you know this indicator
+[07:30] tells you that this indicator tells you
+[07:32] a different thing and we get analysis by
+[07:34] paralysis so the question becomes you
+[07:36] know how can we simplify our research
+[07:39] and make objective decisions uh arguably
+[07:42] this is probably one of the hardest
+[07:44] things to do um and that's really what
+[07:46] we're going to try to spend today's
+[07:47] session to help you better understand uh
+[07:50] what to do so what I'm going to suggest
+[07:53] that you do is learn how to simplify
+[07:55] your process now simplify does not mean
+[07:58] simple simplify just means taking a set
+[08:01] of of indicators that have been proven
+[08:03] to give you some type of directional
+[08:06] Edge learn to learn to use them and then
+[08:09] at the same time learn to ignore
+[08:10] everything else so the two that I'm
+[08:13] going to teach you during today's
+[08:14] session are Trend analysis and relative
+[08:16] strength Trend analysis is effectively
+[08:19] looking at the history of a stock to try
+[08:21] to predict what is going to happen in
+[08:23] the future and what you're doing is
+[08:24] you're looking at this the history of
+[08:26] the stock itself so you're comparing the
+[08:28] stock to itself to its own history and
+[08:31] there's many ways that you can go about
+[08:33] doing that you know moving averages is
+[08:35] kind of a automated Trend analyses uh
+[08:38] you know the the slope of the moving
+[08:40] average is basically automatically drawn
+[08:42] for you and the slope of that moving
+[08:44] average gives you a sense for whether
+[08:45] the stock is trending higher or trending
+[08:47] lower you can also look at whether the
+[08:49] stock is above the moving average or
+[08:51] below the moving average and then number
+[08:53] two we want to take a look at is
+[08:55] relative strength and what we're doing
+[08:57] there is we're comparing the stock
+[08:58] relative to other assets such as the
+[09:00] market or the sector that the stock is
+[09:02] in rather than comparing it to itself so
+[09:05] what you're doing is you're taking one
+[09:07] component where you're comparing it to
+[09:08] itself and you're taking another
+[09:10] component where you're comparing it to
+[09:11] something else and what you're looking
+[09:13] at is these two things in conjunction
+[09:15] with each other that gives you a pretty
+[09:17] good sense for how the stock is doing
+[09:19] and how it may do uh what it might do
+[09:22] here in the future uh does that make
+[09:24] sense everyone please type two into the
+[09:26] chat window if that makes sense to you
+[09:28] and I'll break down kind of what that
+[09:29] means you know how you want to take a
+[09:31] look at Trend analysis how you want to
+[09:32] take a relative strength but the
+[09:34] underlying concept is that you know if
+[09:36] you're just using technical indicators
+[09:38] many times what you're doing is you're
+[09:39] just comparing stock a stock againsts
+[09:41] itself so no matter what how many
+[09:43] indicators you throw on you're still
+[09:45] only comparing the stock to itself what
+[09:47] you're not getting a sense for is how is
+[09:49] that stock doing compared to other
+[09:51] assets in the market generally speaking
+[09:53] if you're bullish on a stock you
+[09:54] generally want to see a stock that's not
+[09:56] only trending higher but it's also
+[09:58] outperforming the Market that tells you
+[10:00] that not only are you thinking about are
+[10:03] you interested in buying it but other
+[10:05] people seem to be accumulating it faster
+[10:07] than what the rest of the market is
+[10:09] right because you could just buy an
+[10:10] index fund and you automatically are
+[10:11] buying 500 different stocks but if
+[10:14] you're buying 500 stocks and you're
+[10:15] buying more of additional stock that you
+[10:17] are really bullish on then that one
+[10:19] stock is accumulating more volume than
+[10:21] the rest of the market that's kind of
+[10:22] what you're trying to get a sense for is
+[10:24] how is the stock doing is it trending
+[10:26] higher or lower and how is it doing
+[10:28] relative to the market Market is it
+[10:29] trending above the market or below the
+[10:31] market that'll give you a bigger a
+[10:34] better picture on a more complete
+[10:36] picture on what's actually happening
+[10:38] with that stock and that's going to be
+[10:39] an important element in helping you uh
+[10:42] select the right stocks for uh capital
+[10:45] appreciation so to help you gain that
+[10:48] directional Edge what you need to learn
+[10:50] how to do is to gain a consistent
+[10:53] application of trend analysis and
+[10:55] relative strength because it's one thing
+[10:57] to say okay I understand these two
+[10:59] things can help me give me a complete
+[11:01] picture but if you're looking at Trend
+[11:03] analysis in different ways day in and
+[11:05] day out you're going to get an
+[11:07] incomplete picture like I said you
+[11:09] moving averages is one way to
+[11:10] automatically get a sense for the trend
+[11:12] of a stock but are you going to use the
+[11:15] 20-day moving average the 50-day the 200
+[11:17] day are you going to use a simple moving
+[11:19] average an exponential moving average a
+[11:21] whole moving average there are infinite
+[11:23] number of moving averages you can use
+[11:25] and there are infinite number of ways
+[11:27] that you can look at that moving average
+[11:29] rather there are multiple ways that you
+[11:30] can look at the same moving average so
+[11:32] even if we all agree that we're just
+[11:34] going to use the 20-day simple moving
+[11:36] average many people may have different
+[11:38] interpretations of how to use that
+[11:40] moving average so it's not just about
+[11:42] using a specific set of tools but the
+[11:46] consistent application of that set of
+[11:48] tools is arguably more important than
+[11:51] the tools themselves um so what we're
+[11:53] going to do is we're going to show you
+[11:55] um how the tools that are available to
+[11:58] you here at options play consistently
+[12:01] applies the same indicators day in and
+[12:03] day out and give you the same uh the
+[12:06] same interpretation of those indicators
+[12:09] so that you can get a consistent
+[12:11] application of these two uh schools of
+[12:14] thought if you will in your trading
+[12:16] process does that make sense everyone
+[12:18] please type three into the chat window
+[12:20] if that makes sense to
+[12:23] you perfect okay so what you're going to
+[12:26] find on the options play platform are
+[12:28] these two indicators the trend indicator
+[12:30] and the relative strength indicator
+[12:31] that's going to help you get a better
+[12:33] sense of how the stock is doing relative
+[12:36] to the market so uh first thing we want
+[12:39] to take a look at is Trend analysis
+[12:40] that's the one month and six-month Trend
+[12:42] and you can find that in two different
+[12:44] places on the options play platform uh
+[12:46] first of all at the top of the quote bar
+[12:48] you will see the one month and six-month
+[12:50] Trend right there that will show you the
+[12:52] shortterm and longterm Trend what we're
+[12:54] looking at is shorter moving averages
+[12:56] for the short-term Trend and longer term
+[12:58] moving Aver averages for the long-term
+[13:00] Trend and what we're using is a triple
+[13:02] moving average in each one of these so
+[13:04] we're not just looking at a single one
+[13:05] we're looking at a combination of
+[13:07] multiple moving averages and how they're
+[13:09] do how they're um the relationship of
+[13:11] each one to each other to help you give
+[13:13] you a more Dynamic sense for what the
+[13:16] shortterm and long-term trend of a stock
+[13:18] is uh you can also see that same
+[13:21] indicator at the bottom of your chart
+[13:23] and I actually many times prefer looking
+[13:25] at this bottom of my chart because it
+[13:27] gives me not only a sense for what is
+[13:29] the current one month and six Monon
+[13:31] Trend it also shows me how that has
+[13:34] changed over time so as you can see when
+[13:37] the stock is in a very strong Trend you
+[13:39] have clear uh you know when it initially
+[13:41] starts that Trend the on month trend is
+[13:43] bullish but the six month Trend was
+[13:44] still neutral at this time and then at
+[13:47] one point you know once this kind of
+[13:48] starts to break out here it broke out
+[13:50] Above This resistance level both the one
+[13:52] month and six-month Trend turned bullish
+[13:54] and it stayed bullish throughout this
+[13:56] entire bullish Trend until you saw this
+[13:59] red candle here that's when things
+[14:01] started to turn a little bit South here
+[14:03] and as you can see the one month Trend
+[14:04] as you can see uh remain neutral
+[14:06] throughout this period of time um during
+[14:09] this period of time the one month Trend
+[14:11] remained neutral but at the same time
+[14:13] the six-month Trend remained bullish
+[14:15] this entire time so depending on whether
+[14:17] you're trading shortterm or long term it
+[14:20] gives you a sense for how things are
+[14:21] dynamically changing so you know this
+[14:23] will give you a sense for how strong the
+[14:25] trend is when it's starting to correct
+[14:27] or deteriorate and when starts to Trend
+[14:30] again here again and this is Bo you know
+[14:32] this happens to be a stock that's in our
+[14:33] current buy list here right now we
+[14:35] actually entered a um a bullish view
+[14:38] here in Boeing when it started to turn
+[14:40] green here again uh which is part of our
+[14:43] process for selecting these stocks is
+[14:46] not only do we have to look at a stock
+[14:47] relative to itself but we also at the
+[14:50] same time then want to look at relative
+[14:52] stength and we we create what's called a
+[14:54] technical score that's on a score of 1
+[14:56] to 10 you can find it on your platform
+[14:59] here um you can find it on your platform
+[15:02] here uh on a score of 1 to 10 and one
+[15:06] really means that you are looking at
+[15:07] some of the weakest stocks in the market
+[15:09] 10 are some of the strongest stocks in
+[15:11] the market and five is a neutral meaning
+[15:14] a stock that's essentially performing on
+[15:16] par with the market and the higher the
+[15:18] score the more the stock is
+[15:20] outperforming the market the lower the
+[15:22] score the more it's underperforming the
+[15:24] market so as you can see here you got a
+[15:26] relative strength of eight on uh on
+[15:29] Boeing so we have the relative strength
+[15:31] both here at the top of your quote bar
+[15:33] as well as here within uh on the on the
+[15:35] bottom of your chart so when you look at
+[15:38] the trend indicator and you look at the
+[15:39] relative strength indicator in
+[15:41] conjunction with each other you're going
+[15:43] to get a much more complete picture of
+[15:45] what the stock is doing um now I'm going
+[15:48] to show you kind of different
+[15:49] combinations of trend analysis and
+[15:52] relative strength to help you better
+[15:54] understand that uh but but does that
+[15:56] make sense everyone please type for into
+[15:58] the chat window if that makes sense to
+[16:00] you because what you want to understand
+[16:03] is how is the stock performing relative
+[16:05] to itself meaning is it trending higher
+[16:07] or lower and then is it outperforming
+[16:09] the market or underperforming the market
+[16:11] and I think it's pretty clear that you
+[16:12] know if you're bullish on something not
+[16:14] only do you want to see a trending
+[16:15] higher but ideally you also wanted to
+[16:17] see it outperforming the market and you
+[16:19] can't really tell whether a stock is
+[16:21] outperforming the market or Not by
+[16:23] looking at a chart of the stock itself
+[16:25] right you have to compare the stock
+[16:27] versus the market and that's not always
+[16:28] always do easy to do you got to have
+[16:30] like two different charts up together or
+[16:33] you have to Overlay two different charts
+[16:35] together and see you know if it's
+[16:36] outperform or underperforming um and
+[16:38] that's not always easy to do which is
+[16:40] why we distill it down to just a single
+[16:42] technical score easy to understand score
+[16:44] of one to 10 10 is outperforming or
+[16:47] anything above five is outperforming
+[16:48] anything below five is underperforming
+[16:50] and you're just trying to gauge for how
+[16:52] much outperformance and how little how
+[16:53] much underperformance you have of that
+[16:55] underlying stuff and what you're going
+[16:57] to see is that you're going to have
+[16:59] effectively four possible categories now
+[17:01] there is going to be some in between but
+[17:04] largely you're going to have four
+[17:05] different categories um we have the
+[17:07] trend following categories which for
+[17:10] those of you that you know look at the
+[17:11] trade ideas in our platform you're going
+[17:13] to see uh Trend following uh
+[17:16] opportunities are stocks that have both
+[17:19] strong relative strength meaning stocks
+[17:20] that are outperforming the overall
+[17:22] market and exhibiting bullish Trends uh
+[17:25] bare stocks or are stocks that have weak
+[17:27] relative strength and have bearish
+[17:29] Trends right so those are both what we
+[17:31] consider Trend following stocks meaning
+[17:34] the stock is trending in the same
+[17:36] direction as uh as the relative strength
+[17:40] that gives you bullish or bearish
+[17:41] candidates where you're simply following
+[17:43] the trend and then you also have what we
+[17:45] consider counter Trend ideas and these
+[17:47] are stocks for example that have weak
+[17:48] relative strength meaning stocks that
+[17:50] are underperforming the overall Market
+[17:53] but have started to exhibit bullish
+[17:54] Trends so these are stocks that perhaps
+[17:57] um you know over the last few months or
+[17:59] even perhaps last few years have
+[18:01] underperformed the overall Market Boeing
+[18:03] is actually a good example of this you
+[18:05] know over the last three years or so the
+[18:07] stock has severely underperformed the
+[18:09] S&P 500 but just recently started to
+[18:12] show some encouraging Trends and that's
+[18:15] what we consider a counter Trend move
+[18:17] right a stock that is uh and you know we
+[18:20] always you've you most of you have heard
+[18:22] of the concept of Buy Low sell high and
+[18:26] how do you actually buy low you have to
+[18:27] buy low when the stock looks terrible
+[18:29] when no one else wants to look at it
+[18:30] when when it's the worst performing
+[18:32] stock in the market and everyone's uh
+[18:34] it's the redheaded stepchild that no one
+[18:35] wants to touch that's when you want
+[18:37] that's how you buy low but how can you
+[18:39] identify stocks that are you know
+[18:41] bottoming out that are kind of
+[18:42] potentially starting to turn around
+[18:44] that's what the counter Trend moves
+[18:46] allow you to do how do you sell High
+[18:48] well you got to wait for stocks that are
+[18:50] outperforming the rest of the market
+[18:51] where everyone else is is is chasing
+[18:54] each other to buy this stock you know
+[18:56] where where it's starting to get
+[18:58] exhausted
+[18:59] once those stocks that are strongest in
+[19:00] the market start exhibiting some bearish
+[19:02] Trends that's the suggestion that
+[19:04] perhaps that stock is no longer a good
+[19:06] one to hold that you might be better off
+[19:08] selling that stock and looking at other
+[19:11] opportunities you know instead of being
+[19:13] the person who chases the stock hoping
+[19:15] that you're buying High to for it to go
+[19:17] even higher so you know Trend following
+[19:20] obviously is comfortable for a lot of
+[19:22] people because you know following a
+[19:24] trend seems easier and higher higher
+[19:26] probability of of the success counter
+[19:29] Trend sounds on higher risk um but you
+[19:31] know what you get is basically uh a
+[19:34] trend following trade typically will
+[19:35] have a higher prob of success but a poor
+[19:39] a worse risk to reward ratio because
+[19:41] you're effectively buying High hoping
+[19:43] it's going to go higher versus something
+[19:45] with a counter Trend you're taking a bit
+[19:47] more risk right because this is a stock
+[19:49] that hasn't quite proven itself to to be
+[19:51] a profitable trade uh it's clearly once
+[19:54] a stock that a lot of people have
+[19:55] avoided so you're kind of sticking your
+[19:57] neck out being the buyer there when it's
+[20:00] low but that's really where you have the
+[20:02] opportunity of making the big home run
+[20:04] moves because you're truly buying low
+[20:06] and hopefully selling high does that
+[20:08] make sense everyone please type five
+[20:09] into the chat window if that makes sense
+[20:11] to
+[20:13] you and we're going to go through some
+[20:15] examples of all of this to kind of show
+[20:17] you what what each of these look like
+[20:19] and how the optionsplay platform will
+[20:21] help you quickly visually identify all
+[20:24] of these particular categories but for
+[20:26] today's purposes for selling cover calls
+[20:29] and how to identify stocks for selling
+[20:31] cover calls what we're going to focus on
+[20:33] are these two categories stocks that are
+[20:36] in the strong bullish category and
+[20:37] stocks that are in the bullish counter
+[20:39] uh turnaround um category because those
+[20:42] are the type because obviously if you're
+[20:44] if you're uh selling a cover call you're
+[20:46] doing in a stock that you're buying
+[20:48] right you only buy stocks that you think
+[20:49] are going to appreciate and value in the
+[20:51] future so we're not going to look at
+[20:53] bearish stocks uh for today's purposes
+[20:56] but once you learn how to identify the
+[20:58] strong bullish and the bullish
+[20:59] turnaround you're going to quickly
+[21:01] understand how to identify the reverse
+[21:03] if you ever looking for a bearish trade
+[21:05] if you're looking at uh a bare market
+[21:08] and you want to identify stocks for
+[21:09] trading a bare Market you'll quickly
+[21:11] learn how to just effectively flip what
+[21:14] we learned here today and identify those
+[21:16] strong bearish stocks and those bearish
+[21:18] turnaround stocks but for today's
+[21:19] purposes we're going to f we're going to
+[21:21] focus on the two that are bullish and
+[21:23] help you better understand how to
+[21:25] quickly and Visually identify that using
+[21:28] the option play platform so with that
+[21:30] what I'm going to do is I'm going to
+[21:31] turn to the options play platform
+[21:34] now for those of you that are relatively
+[21:36] new to the optionsplay platform you may
+[21:38] not have quite realized this but
+[21:41] everything that we have built on the
+[21:43] leftand side of your screen in the idea
+[21:45] section in the watch list section in the
+[21:47] portfolio section have all been built to
+[21:50] help you visually quickly identify
+[21:53] exactly what we just taught you here so
+[21:56] for example um if you're looking at your
+[21:58] watch list or or your ideas what you'll
+[22:01] see is next to every single symbol you
+[22:04] have two you have a colored bar here on
+[22:05] the left hand side of of the symbol bar
+[22:08] and you have a little red arrow here um
+[22:11] so let me let me do this so let me
+[22:14] highlight it this way as you can see
+[22:16] next to every single symbol there is a
+[22:18] colorcoded bar next to it and then at
+[22:21] the right hand side there's a colorcoded
+[22:24] arrow on the right hand side and these
+[22:26] two uh the bar and the Arrow represents
+[22:29] the short-term and long-term trend of a
+[22:32] stock so if we look at let's say super
+[22:34] micro for a
+[22:36] second as you can see this is a stock
+[22:38] that where the six-month trend is
+[22:40] neutral and the one month trend is
+[22:42] bullish and as you can see from this
+[22:44] stock from from visually speaking not
+[22:46] only can I quickly identify stocks that
+[22:48] are six six ter six month trend is
+[22:50] neutral one month trend is bullish I can
+[22:52] also see how long it's been in this
+[22:54] particular Trend it hasn't been in this
+[22:56] trend for very long it's only been about
+[22:57] 5 days since been since it's been in
+[23:00] this trend so it's a relatively new
+[23:02] trend that it just started and I can
+[23:04] also see that the relative strength here
+[23:06] is two out of 10 so this could be the
+[23:10] very early signs of of what we would
+[23:13] consider a bullish turnaround stock I
+[23:15] don't quite have enough evidence in my
+[23:17] opinion to pull the trigger on it I
+[23:19] would like to see uh a couple of things
+[23:21] you know one thing that I have seen is
+[23:23] that this has started to break above you
+[23:25] know the previous High which is a good
+[23:27] starting point right right when we've
+[23:29] broken out above the previous High
+[23:31] that's a good sign that perhaps this is
+[23:33] starting to bottom this is starting to
+[23:34] break out here to the upside um uh what
+[23:37] I would like to see is really uh you
+[23:40] know potentially you know the the six
+[23:41] months Trend also turned positive here
+[23:44] as well and maybe a breakout here above
+[23:46] this swing high that would be a much
+[23:49] stronger confirmation that super micro
+[23:52] uh which has you know in the past uh
+[23:54] call it a year or so has really
+[23:56] struggled here you know this $25 stock
+[23:59] that um Turned down to in into the low
+[24:02] 20 so we're talking about a stock that
+[24:03] lost nearly 80% of its value here in the
+[24:06] past year is it starting to bottom here
+[24:09] I think you have the constructive signs
+[24:11] of potentially a bottom me so the lows
+[24:13] here were 17 we've made a new low here
+[24:15] around 25 so that's a higher low that's
+[24:18] a first start we've made a higher high
+[24:20] here uh you know before the high was 38
+[24:22] now we've managed to get back into the
+[24:24] low 40s right so we're making some of
+[24:27] the early progress of what could be a
+[24:29] bullish turnaround I'd like to see a
+[24:32] little bit more but this is one that
+[24:33] I'll likely have on my radar and this is
+[24:36] something that you know where uh using
+[24:38] the options plan platform you can
+[24:40] quickly identify stocks that you
+[24:42] probably will want to avoid now right
+[24:44] now I'm looking at the cover call ideas
+[24:46] list right we're going to cover that the
+[24:48] cover call section here in one second
+[24:50] first let's just talk about identifying
+[24:52] stocks so when I'm looking at the cover
+[24:54] call ideas list uh what I also have it
+[24:57] filtered by uh are I filtered out stocks
+[24:59] that are not liquid and stocks that are
+[25:01] somewhat liquid I'm gonna first just
+[25:03] focus on super liquid stocks that I know
+[25:06] I can trade options on very easily now
+[25:09] if I want to look more opportunities I
+[25:11] might look at somewhat liquid stocks as
+[25:13] well but for today's purposes let's
+[25:14] filter those out as well um I'm also
+[25:17] going to look at IV rank that are higher
+[25:19] because what I want to do is I want to
+[25:21] capture higher premiums when I'm selling
+[25:23] cover calls so I'm going to filter out
+[25:26] uh you know non-liquid stocks and I'm
+[25:28] going to filter out stocks with a lower
+[25:30] IV rank where the implied volatility on
+[25:32] the option is on the lower end uh where
+[25:34] I'm going to collect less premium on
+[25:36] those cover calls so this gives me a
+[25:39] list of in this particular case 80
+[25:41] stocks that are highly liquid with high
+[25:43] IV rank that I can sell cover calls on
+[25:46] and what it does is it ranks this these
+[25:48] opportunities based on yield right so if
+[25:50] I'm selling cover calls I'm generally W
+[25:52] to I want to collect as much yield as
+[25:54] possible and what this do what this list
+[25:56] does is it ranks those cover calls from
+[25:58] the highest amount of yield down to the
+[26:00] lowest amount of yield and what I want
+[26:02] to do is simply go down the list and
+[26:04] look at visually which stocks do I want
+[26:06] to potentially acquire or potentially
+[26:09] buy to sell cover calls on so super
+[26:12] micro as you can see I actually think
+[26:14] you know now that we're trading around
+[26:15] 42 or so is potentially a candidate
+[26:18] where I could pull the trigger on this
+[26:20] because we're starting to break out
+[26:22] again to a new relative High um you've
+[26:25] got what looks like a constructive Trend
+[26:26] that's starting to turn around here and
+[26:28] what we seem to have completed a bit of
+[26:31] a bottoming formation here in super
+[26:33] micro this is probably a little bit more
+[26:35] on the aggressive side for those of you
+[26:36] that taking on a little bit more risk
+[26:38] let me show you something that's
+[26:39] probably a little bit more obvious look
+[26:41] at the trip uh Trip Advisor one six
+[26:44] months trend is bullish one month trend
+[26:46] is bullish here as you can see this is
+[26:48] probably a a a lot more cleaner a lot
+[26:50] more less risky right if you look at
+[26:52] trip uh you know this is a stock that's
+[26:54] has a a relative strength score of nine
+[26:57] so this is stock that you know recent
+[27:00] recently has taken a very big move here
+[27:02] you know this doesn't seem like much but
+[27:04] a move from 133% to $13 to $17 from
+[27:08] percentage basis is huge so from a
+[27:11] relative strength perspective this is a
+[27:13] stock that has outperform the S&P 500 by
+[27:16] a very wide margin in the last couple of
+[27:19] months which is why this is a stock that
+[27:20] has a score of nine meaning a stock
+[27:23] that's clearly outperforming the S&P 500
+[27:26] by a very wide margin one of the uh uh
+[27:29] one of the stocks that have outperformed
+[27:30] the S&P 500 by the most in the in the
+[27:33] recent past um and that's why it's got a
+[27:35] relative strength of nine now this stock
+[27:37] has been in a bullish Trend here since
+[27:39] uh January 17th so it's been nearly a
+[27:42] month that the stock has been bullish on
+[27:44] so this is a much lower risk uh you know
+[27:48] or shouldn't say lower risk but this is
+[27:50] this is a um more obvious choice in
+[27:53] terms of a stock that's clearly in a
+[27:55] bullish Trend outperforming the overall
+[27:57] Market that has a higher probability of
+[28:00] continuing that that momentum here to
+[28:02] the upside these are the types of stocks
+[28:04] that you could see another 50% move 100%
+[28:07] move in the next year or so based on the
+[28:09] type of uh momentum that we're seeing
+[28:11] here because you want to see stocks that
+[28:13] are outperforming and uh uh beating uh
+[28:16] the overall market and the other thing
+[28:17] is that this stock reports earnings in a
+[28:19] month I'm sorry in a week and you know
+[28:22] stocks that are up performing the market
+[28:24] have a better probability of beating the
+[28:26] earnings announcement than stock stocks
+[28:28] that are underperforming the overall
+[28:29] market so you have a lot of things going
+[28:32] uh for this particular stock here in
+[28:33] Trip Advisor and I didn't have to do any
+[28:36] chart analysis to find this particular
+[28:38] stock I just simply looked at our our uh
+[28:41] trade ideas list of four cover calls I I
+[28:45] filtered out a couple of things that I
+[28:46] like to see um potential that I I like
+[28:49] to filter out here when I'm looking at
+[28:50] cover calls and I'm just going down the
+[28:52] list and I'm visually looking for things
+[28:54] that you know have a trend that's in the
+[28:57] direction that I'm looking for and then
+[28:59] I can quickly identify whether the
+[29:01] relative strength also allies with what
+[29:02] I'm looking for and quickly potentially
+[29:04] pull the trigger so if I bought the
+[29:06] stock here uh at
+[29:07] 1775 1775 here I'm selling the March
+[29:11] 28th $20 call options now the March 28th
+[29:16] $20 call options just for uh argument
+[29:19] sake right that's a do that's a strike
+[29:21] strike price that's $225 out of the
+[29:23] money out of a
+[29:25] $775 stock that's a stock that's a cover
+[29:28] call that's I'm selling that's 133% out
+[29:30] of the money in 43 days um and this is a
+[29:34] stock that's going to yield me 37% yield
+[29:37] on that cover call uh this is a stock
+[29:39] that paid zero dividends so if you own
+[29:41] the stock you're getting paid zero in
+[29:43] terms of income you obviously have the
+[29:45] capital appreciation but you've got zero
+[29:47] income so here what you're doing is
+[29:49] you're adding another potentially 37%
+[29:52] income to the ownership of this
+[29:54] particular stock which is certainly
+[29:56] nothing to uh sneeze at in terms of the
+[29:59] amount of yield and this is what I mean
+[30:01] in terms of most people don't quite
+[30:03] realize that the amount of income you
+[30:06] could receive on a cover call is orders
+[30:08] of magnitude higher than what you could
+[30:10] generally expect to receive on even a
+[30:13] high dividend paying stock so you know
+[30:16] we'll we'll take a look at a few more
+[30:17] examples down the line and hopefully
+[30:18] we'll find some stocks that do pay
+[30:20] dividends and just show you even in the
+[30:22] in in the stocks that are pay a decent
+[30:24] dividend you know the the cover call uh
+[30:27] yield that you're getting is still
+[30:28] orders of magnitude higher than what you
+[30:31] are collecting on the cover call itself
+[30:33] so this tool helps you not only identify
+[30:37] the highest yielding opportunities and
+[30:39] quickly give you a visual OPP a visual
+[30:41] view of whether this might be a stock
+[30:43] that you might want to pick for selling
+[30:45] a cover call it will then automatically
+[30:47] tell the pick the uh optimal expiration
+[30:50] date and strike price show you how much
+[30:52] yield you're collecting to potentially
+[30:54] for you to within a couple of seconds of
+[30:57] clicking on symbol having the technical
+[31:00] information that you need to decide okay
+[31:02] this meets all of my criterias to
+[31:04] potentially as a stock selection I know
+[31:07] exactly what expiration date what strike
+[31:09] price I'm going to sell and how much
+[31:10] yield I'm going to collect and I can
+[31:12] potentially click on the trade button
+[31:14] and execute that trade buy 100 shares of
+[31:16] this stock and sell that March 28th call
+[31:18] for 65 cents and know that I'm going to
+[31:20] collect a high amount of yields for this
+[31:22] cover call and I've purchased a stock
+[31:25] that has a high probability of
+[31:27] continuing that capital appreciation
+[31:29] here to the upside does that make sense
+[31:31] everyone please type one into the chat
+[31:33] window if that makes sense to you and
+[31:36] I'm just going to go down this list and
+[31:37] show you how quickly you can do the same
+[31:40] work yourself to identify stocks and not
+[31:42] have to spend hours and hours doing
+[31:44] research on technicals fundamentals
+[31:46] looking at charts looking at technical
+[31:48] indicators and all of that stuff and
+[31:50] just quickly within two seconds visually
+[31:52] be able to tell whether this might be a
+[31:54] stock worth taking a look at selling a
+[31:56] cover call on so let's go down the list
+[31:58] here um I'm not going to look at
+[31:59] Campbell suit because as you can see
+[32:01] it's red across the board I'm not going
+[32:03] to necessarily I'm generally not going
+[32:05] to buy cover calls or you know look at
+[32:07] buying a stock that's still in that
+[32:09] bullish Trend I need to see some
+[32:11] recovery before I can look at thinking
+[32:13] about doing that and I at the very least
+[32:15] the one month trend has to turn bullish
+[32:18] before I would even consider you know
+[32:20] picking a bottom here on a stock like
+[32:21] this so this is a good example of a
+[32:23] stock that I would quickly move away
+[32:25] from because visually I'm not even going
+[32:26] to look at that Bros as you can see it's
+[32:29] up 29% here today probably the just
+[32:31] reported earnings I'm not going to
+[32:33] bother on a stock that's up 30% here
+[32:35] today uh AI is one month trend is down
+[32:39] six month trend is neutral I'm generally
+[32:41] going to avoid that here as well so
+[32:42] let's look at the next one JD JD is six-
+[32:45] month trend is bullish one month trend
+[32:47] is neutral so as you can see you know
+[32:49] this is a stock that tried to make a
+[32:51] move here but it's starting to turn back
+[32:53] a little bit here it hasn't really made
+[32:55] any uh it hasn't broken out here has
+[32:57] been still stuck in this range here so
+[33:01] in my opinion until this breaks out from
+[33:02] this training range not worth my time
+[33:04] I'm going to move on uh this also has a
+[33:07] relative strength of 10 uh so the fact
+[33:09] that has a relative strength of 10 and
+[33:11] is starting to the trends are starting
+[33:12] to deteriorate that's another one that I
+[33:15] would avoid so anything with the 10 uh
+[33:17] it means that it's it's one of the
+[33:19] strongest stocks in the market and when
+[33:20] the strongest stocks in the market
+[33:22] starts to you know the trend starts to
+[33:24] deteriorate that's a potential candidate
+[33:26] for this bearish turn around right that
+[33:29] means this is one of the strongest
+[33:30] stocks in the market that may be
+[33:32] starting to roll over here those are not
+[33:34] the ones that I want for my for my um uh
+[33:37] for my cover calls so I'm going to move
+[33:39] on uh let's see Credo technology I've
+[33:41] never heard of Credo technology but the
+[33:43] one month trend is bearish I I also
+[33:45] don't think this is one that's suitable
+[33:47] for me as you can see the relative
+[33:48] strength of score of 10 uh when that
+[33:51] stren when that Trend starts to
+[33:53] deteriorate this could be a bearish
+[33:54] turnaround not the one for me I'm gonna
+[33:57] move on HS up 27% probably just recorded
+[34:00] earnings today not suitable for me now
+[34:03] looks looks at mongod DB okay this looks
+[34:06] promising score of nine okay that looks
+[34:09] pretty good uh one month and six month
+[34:11] Trend just turned bullish here just a
+[34:13] few days ago here at the beginning of
+[34:15] February this is a good candidate right
+[34:17] this is let's take a look at the chart
+[34:18] here a little bit longer so this is a
+[34:21] stock that you know a little bit higher
+[34:23] here but as you can see in in the in
+[34:25] just the last month or so this is the
+[34:27] stock that that went from 220 to 290
+[34:30] okay so you know big move here in the in
+[34:32] the short run clearly outperforming the
+[34:33] S&P 500 over the last month or so uh as
+[34:36] you can see recently just made a new
+[34:38] recent High broke out here this is a
+[34:40] great candidate right because not only
+[34:43] I'm I'm not late to this particular move
+[34:45] right this just broke out from that
+[34:46] trading range uh just yesterday uh this
+[34:49] is a potential here you know uh look you
+[34:52] have this big gap here at around 350 or
+[34:54] so that could be a good upside Target
+[34:56] here for uh selling that cover call and
+[34:59] as you can see this identified the March
+[35:00] 28th 370 calls that's all the way up
+[35:03] here you know so for this stock to get
+[35:05] called the way between now and that
+[35:06] March 28th the stock has to reached 370
+[35:09] that gives me plenty of upside cap
+[35:12] plenty of capital appreciation and at
+[35:14] the same time generates 18% yield on uh
+[35:17] on the stock that earns 0% dividend
+[35:20] yield 18% yield is a really nice yield
+[35:23] on your cash that you have uh set aside
+[35:25] to buy the stock that has uh you know
+[35:28] all the all the Hallmarks of a strong
+[35:30] technical uh play on this particular
+[35:33] stock um so as you can see out of out of
+[35:36] this list even though I'm walking you
+[35:38] through each one and walking you through
+[35:39] my thought process I'm able to identify
+[35:42] stocks like super micro Trip Advisor
+[35:44] mongod DB within a few seconds so
+[35:46] there's already three stocks that I've
+[35:48] identified and if I wasn't sitting here
+[35:50] walking you through my thought process I
+[35:52] would have been able to identify those
+[35:53] three opportunities in within probably
+[35:56] two minutes of my work and now I've gone
+[35:59] through all of the um now I've gone
+[36:02] through all of the uh the technicals
+[36:06] I've I've identified the exact
+[36:08] expiration date the strike price and I
+[36:10] can uh quickly identify uh you know a
+[36:13] trade that I can click click on the
+[36:14] trade button and send this off for
+[36:16] execution if you have a trade station
+[36:18] account you can connect your trade
+[36:19] station account and actually send this
+[36:21] off for execution um or you can add this
+[36:23] to a paper trading portfolio or if you
+[36:26] executed this Trading your Schwab
+[36:28] account you can simply create a Schwab
+[36:30] account here and click on this and add
+[36:32] it to your Schwab account so you can
+[36:33] track these positions here in options
+[36:35] play here as well um but this tool
+[36:38] allows you to quickly go down this list
+[36:40] let's just go through a couple of them a
+[36:42] couple of them more let's look at
+[36:43] Alibaba um Alibaba here has a score of
+[36:46] 10 now you know from my perspective I
+[36:48] think this might be a little bit late as
+[36:50] you can see this is part of what this
+[36:53] price history allows me to do you know
+[36:54] this started to break out here around 87
+[36:56] here the stock has ran all the way up to
+[36:59] 118 um you know in just a few short
+[37:02] weeks this might be one for me a little
+[37:05] bit late to the game and I I probably
+[37:07] would uh skip on this one in my opinion
+[37:10] just because of how strong the stock has
+[37:12] moved in in such a short period of time
+[37:14] I want to try to identify stocks that
+[37:16] are earlier in that move um and and this
+[37:19] is really what the tool allows me to
+[37:20] quickly do buy do okay a strong stock of
+[37:23] of uh relative score of eight one month
+[37:25] and six month trend is bullish uh so
+[37:27] clearly this is a stock that also has
+[37:29] the potential here of breaking out here
+[37:31] from this trading bottom and this is a
+[37:33] good example of of potentially getting
+[37:35] in early now for those of you that
+[37:37] followed our um bullish and bearish list
+[37:40] that we publish every single week you
+[37:42] know we've identified a lot of stocks
+[37:44] this previous year using this exact same
+[37:46] T type of trade setup you know if you
+[37:48] think about Disney you think of Shopify
+[37:50] you look at block you look at Lululemon
+[37:52] you look at Boeing all of these stocks
+[37:54] that we've identified that have made 20
+[37:56] 30% moves in just the last few weeks uh
+[37:59] last few months you know had this very
+[38:01] similar setup where you know it's a
+[38:02] stock that was bottoming but started to
+[38:04] outperform the market uh you know one
+[38:06] month and six month Trend started
+[38:07] turning bullish and when this thing
+[38:09] starts to break out to the upside you
+[38:11] tend to get a pretty sizable move in a
+[38:13] very short amount of time here you know
+[38:14] I would Target here around that 117
+[38:16] level here to the upside this is telling
+[38:18] me to sell the 128 uh March 28th 125
+[38:22] calls so it gives me even more upside so
+[38:24] this means that when I'm selling this
+[38:26] cover call I'm not giv up any capital
+[38:28] appreciation I'm not saying that I'm
+[38:30] going to generate 15% yield and cap my
+[38:33] returns because if the stock makes a big
+[38:35] rally I'm only going to make my uh my
+[38:37] returns up to that strike price as you
+[38:39] can see my strike price here is well
+[38:41] above my Target price so I'm basically
+[38:43] able to capture all of the capital
+[38:45] appreciation I that I think there is in
+[38:47] this particular stock and on top of that
+[38:49] generate additional 15% yield on top of
+[38:52] that um and this is really kind of where
+[38:54] when you think about how do you identify
+[38:56] the best stocks for selling cover calls
+[38:58] this is how you go about doing so and
+[38:59] you can do it very very quickly very
+[39:01] very efficiently using the options play
+[39:04] platform does that make sense everyone
+[39:05] please type two into the chat window if
+[39:07] that makes sense to
+[39:10] you and I'll go through just a couple of
+[39:13] more example to try to bring this home
+[39:15] so that I can show this to you as as as
+[39:17] much as possible and show you as many
+[39:19] examples as possible snowflake one month
+[39:21] and six months trend is bullish relative
+[39:23] strength score of 10 as you can see
+[39:26] potentially breaking out above a double
+[39:27] top you know Visa this reminds me very
+[39:30] much of the Visa trade we've recently
+[39:31] just made Visa gapped higher here and
+[39:33] then had a bit of a double top here was
+[39:35] starting to you know hadn't broke out
+[39:37] yet but had that one month and six
+[39:39] months Trend that was bullish had a very
+[39:40] strong relative strength and now Visa
+[39:42] made that 320 to 350 move in just three
+[39:45] weeks or so um so snowflake very similar
+[39:48] type of potential here um you know this
+[39:51] stock gapped higher from 130 to 190
+[39:55] right that's a $60 move so if it gaps
+[39:57] higher
+[39:58] from10 another $60 moves is around two 2
+[40:02] 250 this is telling me to sell the March
+[40:04] 28th 240 cover calls so again giving me
+[40:08] nearly 100% of the capital appreciation
+[40:11] I'm looking for in this particular stock
+[40:13] and at the same time generating an
+[40:14] additional 15% yield on top of that and
+[40:17] this is the type of trade that I'm
+[40:18] looking for before it breaks out so that
+[40:20] if it breaks out I'm going to capture
+[40:22] 100% of that big move here to the upside
+[40:25] and if it doesn't move I'm generating a
+[40:27] fair amount of downside protection here
+[40:29] in the short run to offset some
+[40:31] potential losses if it doesn't move here
+[40:33] to the upside and that's what a cover
+[40:34] call allows you do is that you can buy
+[40:36] the stock get a little bit of downside
+[40:38] protection but if you buy stocks that
+[40:40] are just about to break out or just
+[40:41] starting to break out you can get that
+[40:43] Mo capital appreciation very very
+[40:45] quickly without giving up any of that
+[40:47] capital appreciation and get a fair
+[40:50] amount of income in addition to the
+[40:52] potential capital appreciation so you
+[40:54] know this is why this is the number one
+[40:56] most utilized income I'm sorry the
+[40:59] number one most utilized option strategy
+[41:01] in the world cover calls it's a it's a
+[41:04] strategy that doesn't add additional
+[41:05] risk to your portfolio and is only going
+[41:07] to add to additional income to your
+[41:09] portfolio because whether you sell a
+[41:11] cover call or not on the stock that you
+[41:13] own you're not going to have any
+[41:15] additional Risk by adding that call
+[41:17] option that you've sold you're only
+[41:18] adding income to it that what you do
+[41:20] with that income is that you will give
+[41:22] up some capital appreciation so it's an
+[41:24] art about how to find stocks that are
+[41:26] going to potenti make that big move but
+[41:29] also selecting cover calls that allow
+[41:30] you to capture that big move without
+[41:32] giving it up and actually at the same
+[41:34] time generating a fair amount of income
+[41:36] and hopefully today what I've been able
+[41:38] to show you here is just within a few
+[41:39] minutes I was able to identify super
+[41:42] micro for those of you a little bit more
+[41:44] aggressive in nature but for those of
+[41:45] you that are more conservative in nature
+[41:47] Trip Trip Advisor um
+[41:50] JD mongod DB uh uh BYU I think we said
+[41:55] and snowflake right so just right off
+[41:56] the bat and chances are you're not going
+[41:58] to be able to buy five stocks today or
+[42:00] six stocks today and sell all cover
+[42:01] calls on all of them you probably are
+[42:03] going to focus on the ones with the
+[42:05] highest amount of yield so you might
+[42:07] want to look at Trip Advisor maybe JD
+[42:09] maybe mongod DB and you know and
+[42:12] depending on what you're comfortable
+[42:13] with you might not even have to go
+[42:15] further down the list but this is how I
+[42:17] can visually say I'm not even going to
+[42:19] look at the other stocks that are in
+[42:20] this list because I know it doesn't meet
+[42:23] my criteria from a technical perspective
+[42:26] um so with that let's just quickly run
+[42:29] back here to uh just explaining a little
+[42:32] bit about cover calls because you know
+[42:34] the optimal cover call is about 45 days
+[42:37] out and we generally want to use a a 10
+[42:40] Delta cover call so you know in this K
+[42:43] example when the Stock's trading around
+[42:44] 52 you know you have a few different
+[42:46] choices the 56 58 and let's say the 60
+[42:49] that's the 30 Delta the 20 Delta and the
+[42:51] 10 Delta our research clearly shows that
+[42:54] you're better off selling the uh the low
+[42:56] Delta to option which gives you the
+[42:58] lowest amount of income and the lowest
+[43:00] amount of yield which sounds
+[43:02] counterintuitive to maximizing income
+[43:04] but you have to remember when you
+[43:06] maximize uh capital appreciation you're
+[43:09] going to minimize income and in this
+[43:11] particular case capital appreciation is
+[43:14] going to be worth a lot more to you than
+[43:17] an additional uh 20 30 cents worth of
+[43:20] income because as you can see if I
+[43:22] choose the uh 56 strike and collect a
+[43:25] dollar 50 versus the $60 strike which
+[43:28] flicks only $1 what I'm giving up is $4
+[43:32] in capital appreciation in exchange for
+[43:35] 50 cents of income so you're giving up
+[43:38] $4 in capital appreciation in exchange
+[43:40] for 50 cents in income if you keep doing
+[43:42] that over and over and over again guess
+[43:45] what's going to happen you're going to
+[43:46] keep giving up large amounts of capital
+[43:48] appreciation and only get small amounts
+[43:50] of income and exchange for it and that
+[43:52] is going to actually underperform your
+[43:55] portfolio in the long run of what you
+[43:57] could be doing if you simply selected uh
+[44:00] strike prices that are further away so
+[44:02] our platform automates that for you when
+[44:04] you looking at cover call opportunities
+[44:06] using the idea generation platform in
+[44:09] options play for cover calls whoops
+[44:11] sorry for cover for
+[44:17] cover how do I do this for cover calls
+[44:20] so idea generation for cover calls every
+[44:23] single uh strategy that you click on it
+[44:25] will automatically select you that 10
+[44:28] Delta cover call a cover call that has a
+[44:30] probability of expiring worthless that's
+[44:32] close to 90% And what that's going to do
+[44:35] is make sure that you maximize that
+[44:37] capital appreciation while still getting
+[44:39] a good amount of income so this is
+[44:42] jd.com oh sorry we said we weren't going
+[44:44] to do JD because it wasn't a very good
+[44:46] trade we're looking at something like
+[44:47] mongod DB um when we're looking at
+[44:51] mongod DV we're getting plenty of
+[44:53] capital appreciation so we're talking
+[44:54] about you know uh basically all the way
+[44:57] here to the to the uh 52- we high this
+[45:00] stock would have to effectively exceed
+[45:02] this recent high in order for this stock
+[45:04] to get called away and if it doesn't
+[45:05] exceed that 52- we High I'm going to
+[45:08] receive 18% yield 18% yield as you can
+[45:12] as I as everyone here would know is
+[45:15] nothing to sneeze at in terms of uh
+[45:17] yield that you just simply weren't
+[45:19] getting if you were just owning the
+[45:20] stock so think about all the stocks that
+[45:22] you own and think about potentially um
+[45:25] adding you know 18% on top of that what
+[45:28] that would do for your portfolio it
+[45:30] would it would be a meaningful change uh
+[45:33] to Performance of your portfolio if you
+[45:34] were to uh consistently add 15 18 20%
+[45:38] yield to all the Holdings that you have
+[45:40] and that's what this stock and that's
+[45:41] what this tool helps you identifyed are
+[45:43] stocks that are potentially breaking out
+[45:45] and have the ability to give you that
+[45:47] amount of income at the same time okay
+[45:51] so um that's included in the cover call
+[45:55] scanner that you have available to you
+[45:57] at options play it is something that is
+[45:59] one of the most powerful Tools in my
+[46:01] opinion for those of you that are
+[46:02] interested in kind of these uh uh
+[46:05] lowrisk income strategies such as cover
+[46:08] calls and cover calls like I said is the
+[46:10] only option strategy that you can trade
+[46:12] that doesn't add additional risk to your
+[46:14] portfolio uh versus buying the stock
+[46:16] right so if you're already buying the
+[46:17] stock adding a cover call is only going
+[46:20] to reduce your risk and add income to
+[46:22] your portfolio you're not adding any
+[46:23] risk any other strategy that you would
+[46:25] trade adds additional risk to your
+[46:27] portfolio a cover call is the only one
+[46:28] that doesn't which is why I advocate no
+[46:31] matter who you are if you have an
+[46:33] options agreement if you have an options
+[46:35] account you should at the very least be
+[46:37] looking at adding cover calls to your
+[46:38] portfolio and this is a tool that helps
+[46:40] you identify the stock for selling cover
+[46:42] calls and the exact expiration and
+[46:44] strike price so that you can maximize
+[46:46] your yield and maximize your capital
+[46:48] appreciation at the same time so that
+[46:50] you can get the best performance of the
+[46:52] strategy for your overall portfolio and
+[46:55] then you can track these trades using
+[46:57] the optionsplay platform you can paper
+[46:59] trade it if you're brand new to these uh
+[47:00] to these strategies let's say you've
+[47:02] never sold the cover call before you've
+[47:03] never bought these stocks before paper
+[47:05] trade them use our platform to paper
+[47:07] trade them these are all tools that are
+[47:09] available to you here at optionsplay and
+[47:11] if you have a trade station account you
+[47:12] can even execute these Trad directly
+[47:14] into your trade station account from
+[47:16] your options play
+[47:18] portfolio with that that covers what I
+[47:21] wanted to share with you here today um
+[47:24] again if you don't have access to these
+[47:25] tools you can sign up very quickly for
+[47:28] it takes 10 seconds to sign up at
+[47:30] optionsplay docomo or you can point your
+[47:32] phone to that QR code um what I will do
+[47:34] is I will open this up for Q&A I want to
+[47:36] try to answer as many questions as
+[47:38] possible here today um even potentially
+[47:41] take some symbols of stocks that you
+[47:43] might own in your portfolio and we can
+[47:44] take a look at selling cover calls uh or
+[47:46] we can take a look at the technicals on
+[47:48] those stocks and then take a look at
+[47:49] which calls you might want to sell on
+[47:51] those stocks and then um TR again try to
+[47:54] answer as many questions as you have
+[47:56] time for for today um so let's open this
+[47:59] up for Q&A there is a Q&A window here at
+[48:01] the bottom of your screen please bring
+[48:03] up the Q&A window not the chat window
+[48:05] please type your questions in the Q&A
+[48:07] window and I'll try to answer your
+[48:09] questions uh in that
+[48:18] section um okay since this is a members
+[48:21] only section I will I will um I will
+[48:24] take some symbols so if you want to send
+[48:25] me some symbols or questions about
+[48:27] specific symbols so I try to answer
+[48:28] those questions the first question is
+[48:30] what do I think about selling cover
+[48:31] calls on UPS so as you can see relative
+[48:34] strength of two one month and six months
+[48:36] trend is bearish you know if you own UPS
+[48:40] I would say you might want to reconsider
+[48:42] whether or not you want to continue
+[48:43] holding on to the stock because it
+[48:45] certainly has all of the Hallmarks of
+[48:47] what we consider a bearish trend
+[48:49] following stock a stock that's bearish
+[48:51] and potentially likely to continue on
+[48:53] that bearish Trend do you want to
+[48:55] continue holding stocks that are
+[48:57] potentially heading down in my opinion
+[49:00] it as much as it hurts to sell stocks
+[49:02] potentially at a loss it's better many
+[49:05] times to sell that stock at a loss and
+[49:07] reinvest your capital in something
+[49:08] that's has a better opportunity than
+[49:10] holding on to a stock like this and
+[49:12] hoping that's going to come back because
+[49:14] the chances of this stock coming back
+[49:16] are less likely than one of the stocks
+[49:18] that we've identified today like Mongol
+[49:20] DB or trip advisor or um uh some of the
+[49:24] other ones we looked at here today um
+[49:27] uh snowflake bu do you know those are
+[49:29] much better places to allocate your
+[49:31] Capital so if you were to sell your UPS
+[49:33] stock let's say you sold your stock you
+[49:35] have $10,000 that might be you know the
+[49:37] type of stock that you might want to buy
+[49:39] buyb with or snowflake with and look at
+[49:42] potentially uh having a better capital
+[49:44] appreciation opportunity in those stocks
+[49:46] and generate higher yield because if you
+[49:48] were to sell cover calls on on uh UPS
+[49:51] right let's say we took uh a short-term
+[49:54] more conservative approach as you can
+[49:56] see you're gener 4% yield that doesn't
+[49:58] even match the dividend yield right UPS
+[50:01] earns a 5.7% dividend you're only
+[50:05] generating an additional four and a
+[50:06] quarter on the cover call so it's not
+[50:08] like you're even generating a ton of
+[50:10] yield on the cover call so when you're
+[50:11] looking at those things in conjunction
+[50:13] with each other from my perspective I
+[50:14] think this is a pass you might want to
+[50:16] consider selling your ups and look at
+[50:18] buying maybe something like Buu where
+[50:20] you're going to generate 15% yield on
+[50:21] the cover call and potentially have a
+[50:24] much higher chance of capital
+[50:25] appreciation
+[50:27] um hopefully that answered your
+[50:29] question uh where can I find a recording
+[50:31] in the session so we will be posting
+[50:33] this onto our YouTube channel uh so you
+[50:35] can point your phone to that QR code on
+[50:37] the screen here that will take you to a
+[50:38] video on cover calls on our YouTube
+[50:40] channel hit subscribe when you get to
+[50:42] that YouTube channel and that's how you
+[50:44] will get notified of uh when we post
+[50:47] this recording onto our YouTube channel
+[50:49] uh like I said 60% of you that watch our
+[50:51] videos on YouTube are not subscribers so
+[50:54] please consider subscribing because one
+[50:56] it's going to get you access to all all
+[50:58] of our videos as soon as we post it and
+[51:00] it's a good way to support
+[51:02] us I would like to sell cover calls and
+[51:04] cash secured puts on bitto I own 200
+[51:07] shares there are large monthly dividend
+[51:09] and weekly auctions BTO is an ETF on
+[51:11] bitcoin which invest in Bitcoin Futures
+[51:13] let me know what you think let's take a
+[51:15] look at that
+[51:20] BTO so this is a stock that's obviously
+[51:23] trading sideways here right now because
+[51:25] Bitcoin is trading sideways relative
+[51:26] strength of 10 this looks like it could
+[51:29] you know and you know this applies to
+[51:30] bitcoin as well but this looks like it's
+[51:33] at risk of potentially breaking it
+[51:34] hasn't broken yet which is you know not
+[51:36] not a reason to sell Bitcoin right but
+[51:38] if it does break that level you know
+[51:40] these support levels and you start to
+[51:42] see relative strain decline you see the
+[51:44] six- months Trend turn bearish that
+[51:45] might be a good sign that you know at
+[51:48] least for me in the short run I wouldn't
+[51:49] mind uh holding I wouldn't want to hold
+[51:52] this ETF maybe you're a long-term
+[51:53] investor in Bitcoin you don't care about
+[51:55] short-term fluctuations that's totally
+[51:57] fine uh so looking at kind of short-term
+[51:59] um uh you know conservative cover calls
+[52:03] you're generating about 8% yield now you
+[52:05] know as you said this pays a 64% yield
+[52:08] because you know it's it's it's paying
+[52:10] out the dividends uh here so you know is
+[52:14] does an 8% yield in my opinion give you
+[52:18] enough uh premium to offset kind of the
+[52:22] the capital appreciation here I don't
+[52:24] particularly think so so this is really
+[52:26] where I don't particularly think um
+[52:28] selling cover calls on bit is suitable
+[52:31] um and I question depending on whether
+[52:33] you're short-term or long-term investor
+[52:34] in Bitcoin I also question the current
+[52:36] technical outlook here it looks a little
+[52:38] bit uh at risk of turning lower
+[52:45] here um I'm a very satisfied customer of
+[52:48] options play thank you so much Mitchell
+[52:50] why would the stocks in the laort not
+[52:52] make the best stocks to do cover pulse
+[52:54] uh they are um the only thing the stocks
+[52:56] in the cover call in in the L report
+[52:59] that may not be as suitable for cover
+[53:01] calls is how much yield they generate
+[53:03] right so uh I'm just trying to pull up a
+[53:05] stock in that report I'm thinking about
+[53:07] Boeing right um the question is just
+[53:10] whether or not you're going to generate
+[53:12] a lot of yield so look at Boeing
+[53:13] Boeing's a great stock right you know
+[53:15] from a it's got all of the Hallmarks for
+[53:17] from a capital appreciation perspective
+[53:19] right recently just broke out here above
+[53:21] that 180 resistance level your early
+[53:24] stages of what could be potentially a
+[53:25] big move here to the upside it's
+[53:27] outperforming the markets but a cover
+[53:29] call only generates
+[53:30] 5.74% yield you know um if you already
+[53:34] own the stock there's no reason not to
+[53:36] sell this cover call right but there are
+[53:38] some it just really comes down to are
+[53:39] you generating enough yields for it um
+[53:42] you know where you might want to
+[53:43] allocate your Capital to something that
+[53:45] has a higher yield uh but you know let's
+[53:47] look at something like um I'm trying to
+[53:50] see what's something that might be
+[53:51] yielding higher like CME may be uh we
+[53:54] recently just owned we recently just
+[53:56] took a long position here in CME
+[54:00] um yeah so I'm CME also not generating
+[54:03] much yield here let's look at another
+[54:05] one maybe
+[54:12] Visa Visa you know so a lot of the
+[54:15] stocks in the in the um L report may be
+[54:18] bullish in nature but they not may may
+[54:20] not generate the most yields so that's
+[54:22] really kind of where the cover call
+[54:23] report here in the ideas page is sorted
+[54:26] based on yield that's where we can get
+[54:28] 20% yield 15% yield 133% yield versus a
+[54:32] lot of stocks you might be looking at 5%
+[54:34] yield 10 8% yield 10% yield on a cover
+[54:36] call this helps you identify the highest
+[54:39] yielding
+[54:41] opportunities um do you use stops to
+[54:43] protect you to the downside you're if
+[54:45] you're talking about the the stock
+[54:46] itself you know the the the challenge
+[54:49] here with using a stop on the stock
+[54:51] itself is that if you sold the stock you
+[54:53] will end up with a naked call option um
+[54:56] you know and one your Brokers will
+[54:58] likely reject that order because you
+[55:00] might it might not allow you to have a
+[55:01] naked call option so that's one thing to
+[55:03] consider um but if let's say your broker
+[55:06] does allow you to have naked call
+[55:07] options that's another reason to
+[55:09] potentially not use a stop order because
+[55:11] you could end up being uh you know
+[55:13] number one in a position where you have
+[55:15] unlimited risk with that naked call so I
+[55:18] prefer to kind of manage these trades
+[55:20] and look at them fairly frequently but
+[55:22] if you prefer using stops just be aware
+[55:24] of that risk
+[55:27] I prefer weekly uh expirations with $1
+[55:30] strike intervals is that silly um I'm
+[55:34] not sure I I understand the question you
+[55:36] know almost every single stock that
+[55:37] we're looking at here has weekly options
+[55:40] um you know as far as$ one strike
+[55:42] intervals that really just comes down to
+[55:45] uh oh I I think what you're saying is
+[55:47] that the weekly options have more
+[55:49] strikes available to you right uh yeah
+[55:51] absolutely I generally do agree with you
+[55:54] um you know I I many times prefer
+[55:56] treading the weekly options versus the
+[55:57] monthly options because they have higher
+[56:00] they have more granularity in terms of
+[56:02] the strike price choices um you know but
+[56:04] if you have like a $300 stock you know a
+[56:07] dollar or two usually don't doesn't
+[56:09] matter too much right but if you have a
+[56:10] $50 stock that $1 does make a big big
+[56:13] deal so no I don't think that's silly at
+[56:14] all Robert especially on certain
+[56:16] strategies like credit spreads I much
+[56:18] prefer selling weekly options on credit
+[56:19] spreads because I'm able to fine-tune
+[56:21] exactly the strikes I'm looking for
+[56:26] please explain the the the the trade
+[56:28] tracking oh so what I was saying is that
+[56:30] you know if you're trading these you
+[56:31] know you can you can connect your trade
+[56:33] station account and execute these trades
+[56:35] directly into your trade station account
+[56:36] but let's say you you trade at tasty
+[56:38] trade or whatever right you can create a
+[56:40] portfolio here uh I call it the tasty
+[56:42] trade portfolio um create it and let's
+[56:46] say you were to execute this trade into
+[56:48] your tasty trade portfolio let's say you
+[56:50] sold this uh 380 cover call you can
+[56:53] basically select that portfolio click on
+[56:55] ADD position and what that does is it
+[56:57] manually adds this trade into your tasty
+[56:59] trade portfolio which you can now track
+[57:01] it in options plan so I can go to my
+[57:04] portfolio I can go find my tasty trade
+[57:07] uh portfolio and now I have my Visa
+[57:09] cover call here in that POS in that
+[57:11] portfolio so it's one way that you can
+[57:14] use the options blade platform to kind
+[57:15] of take a especially if you have
+[57:18] multiple brokerage platforms you know
+[57:20] instead of having to necessarily log
+[57:21] into every single platform every single
+[57:23] day if you're not doing anything you
+[57:25] might just want to start your day with
+[57:26] options play where you have all your
+[57:27] positions at the same time and you can
+[57:29] view your paper trades you can view your
+[57:31] uh you know your multiple brokerage
+[57:33] accounts and all your positions and
+[57:34] we'll help you track all of them all at
+[57:36] the same
+[57:44] time um I understand what you're saying
+[57:46] about the stocks however writing calls
+[57:48] is in my mind for insurance you're
+[57:51] suggesting buying while in an uptrend
+[57:53] which will make the call options costly
+[57:55] a buy back if you have to um Felix uh
+[57:58] good good question so Felix is saying
+[58:00] that um he thinks writing calls is for
+[58:03] insurance so I don't agree with that uh
+[58:06] sell writing calls is for income purely
+[58:08] for income and it's about the strike
+[58:10] price that you sell right so yeah you're
+[58:12] right you know the call options will be
+[58:14] Coster to buy back if you have to but
+[58:16] you know you if let's just go back to
+[58:19] our example here of of
+[58:22] um
+[58:24] of let's go to what's a good example
+[58:28] here I think bu was a good example here
+[58:30] right this the Stock's currently trading
+[58:32] at 96 um you know I we were selling a
+[58:36] 125 calls just to put into perspective
+[58:39] that 125 call is all the way up here so
+[58:42] if you were to buy the stock and somehow
+[58:45] at expiration the stock was above
+[58:48] 125 you're saying that it would be
+[58:50] costly to buy this buy back the the the
+[58:53] the call option I would tell you don't
+[58:56] buy back the call take the profits you
+[58:58] just bought the stock at 93 and in 43
+[59:01] days the stock rallied to
+[59:03] $125 or higher what does that equate to
+[59:06] that's $30 that's $3,000 in profits on a
+[59:09] $9,600 um investment in 43 days you're
+[59:13] talking about nearly a 30% return in
+[59:16] your stock in 43 days take the profits
+[59:19] why buy back the call roll the profits
+[59:22] back into the next cover call that you
+[59:23] can buy you know just don't make this
+[59:26] complicated right like you've identified
+[59:29] a great uh breakout you traded the
+[59:32] breakout you captured the breakout move
+[59:34] on um don't try to make this more
+[59:36] complicated than it has to
+[59:41] be how can we select stocks that are
+[59:43] less than $50 um so just just go down
+[59:46] the list right you can the stock price
+[59:48] is right here so you can quickly look at
+[59:50] okay this is a $60 stock that's a $42
+[59:52] stock that's a $37 stock let's find the
+[59:55] first stock that meets our criteria uh
+[59:57] that is under $50 here um you just have
+[60:00] to go down the
+[60:01] list um I'm trying to help you find one
+[60:04] that's less than $50 that meets all of
+[60:06] our criterias here um iot that's close
+[60:10] to $50 let's take a look at
+[60:15] this one month and six month trend is
+[60:18] bullish relative strength score of 10
+[60:20] everything I'm looking for here hasn't
+[60:22] quite broken out here potential breakout
+[60:25] this is an opport where iot generates
+[60:28] 11.9% yield on a stock that doesn't pay
+[60:31] any dividends so you know you you are
+[60:33] sacrificing some yield here by by doing
+[60:36] this lower price stock so you just keep
+[60:38] coming back every single day this this
+[60:40] repopulates every single day every
+[60:41] single hour you can come back and just
+[60:43] go down the list and only look for
+[60:45] stocks that are under $50 that's the
+[60:47] best way to go about doing so um you can
+[60:49] also sort this based on premium which is
+[60:52] another way to basically find lower
+[60:54] price stocks as well
+[60:56] um so if if you look at kind of stocks
+[60:58] with lower premium you'll get lower
+[61:00] price stocks here as
+[61:02] well that's another way to do
+[61:06] it
+[61:10] um how analyze stocks already owned like
+[61:13] intuitive surgical let's look intuitive
+[61:21] surgical so uh relative strength of
+[61:24] score of nine one month and six months
+[61:25] for is bullish everything looks good
+[61:27] from a from a capital appreciation
+[61:29] perspective and then uh let's look at
+[61:31] maybe selling the March 28th 650 calls
+[61:34] 650 is all the way up here right so
+[61:36] meaning in the next 43 days the stock
+[61:38] has to Rally back above 650 before the
+[61:41] stock gets called away now you know if
+[61:43] you own this for 10 years in your IRA um
+[61:45] and tax is not a consideration meaning
+[61:47] you won't you don't care if it if the
+[61:50] stock gets called away you know uh great
+[61:52] you know this might be the stock that
+[61:53] you might want to sell uh options on
+[61:57] uh intuitive is not very liquid as you
+[61:59] can see liquidity here very liquid
+[62:01] intuitive surgical is very liquid as you
+[62:03] can see it's traded um 1.9 million
+[62:06] shares today already so on a on a $600
+[62:09] stock 1.9 million shares is a lot of
+[62:11] volume so this is a very liquid stock I
+[62:14] wouldn't be worried about getting filled
+[62:15] on that particular
+[62:18] stock um what about expires after
+[62:21] earnings I would taught to avoid
+[62:23] earnings when pursuing cover calls I
+[62:25] don't particular agree with that uh I
+[62:27] just you know we've back tested that
+[62:29] there's no difference in terms of
+[62:31] performance you know avoiding cover
+[62:34] avoiding earnings because when you're
+[62:35] selling cover calls when there is
+[62:37] earnings you're going to get number one
+[62:39] a strike price that's further away
+[62:40] because Delta's automatically adjust for
+[62:42] higher implied volatility and you're
+[62:44] going to get more income more premium
+[62:46] for it so you know it offsets kind of
+[62:48] that the the fact that things could move
+[62:51] more during earnings but that is all
+[62:53] already built into the price and already
+[62:54] built into the strike price when we're
+[62:56] using a Delta based approach to select
+[62:58] our strike prices so I don't agree with
+[63:00] avoiding earnings when you're selling
+[63:02] cover calls some people have that
+[63:04] preference and I understand that but the
+[63:06] the the back Testing Research doesn't
+[63:08] show that if you avoid earnings you have
+[63:09] a better result of selling cover
+[63:13] calls uh the yield in the trade ticket
+[63:15] is it including the capital appreciation
+[63:17] no it's just the yield on the cover call
+[63:19] that doesn't even include the capital
+[63:20] appreciation aspect of it so if you add
+[63:22] the capital appreciation on top of that
+[63:24] you're getting even a high
+[63:26] um higher return on your
+[63:30] Capital can we use this to buy calls
+[63:33] absolutely if you're looking at you know
+[63:35] if you're looking at this stock and you
+[63:36] really like trade a trade Trip Advisor
+[63:39] and you just want to buy the call option
+[63:40] well go to the trade Tab and look at
+[63:43] buying a call option we will help you
+[63:44] structure that call option here as well
+[63:47] on these types of
+[63:49] Trades can you provide insight as to why
+[63:52] the 45 day expiration is optimal um it's
+[63:55] because what you're trying to do is
+[63:56] you're trying to maximize Theta meaning
+[63:58] time Decay on the option and at the same
+[64:00] time you're trying to minimize gamma
+[64:02] gamma is the risk that you're taking
+[64:04] because as you get closer and closer to
+[64:05] expiration small moves in the stock will
+[64:07] start to make bigger and bigger moves in
+[64:09] the option and you want to avoid that
+[64:11] right so what we're trying to do is is
+[64:13] figure out like what time frame gives
+[64:15] you the most amount of theta with the
+[64:16] least amount of gamma and at around 45
+[64:20] days down to about 14 days that's really
+[64:23] the sweet spot where you have an Accel
+[64:25] acceleration in time Decay where gamma
+[64:28] is still relatively minimal when you get
+[64:29] into last two weeks of expiration gamma
+[64:32] starts to become a bigger and bigger
+[64:33] problem um so that's why we generally
+[64:35] speaking especially in other strategies
+[64:37] where you don't want to avoid or you
+[64:38] want to avoid assignment we sell at 45
+[64:41] days and we buy back at about 14 days or
+[64:43] 2 14 to 21 days um but with cover calls
+[64:47] because you don't care about assignment
+[64:48] or or actually in the case of cover
+[64:50] calls if you get a signed that's usually
+[64:52] a really good thing especially if you
+[64:54] take the methodology that we take which
+[64:56] is selling cover calls that are very far
+[64:58] away because if the stock gets called
+[65:00] away that means you've made a really
+[65:01] nice return on your stock and you should
+[65:03] be happy taking profits on that on that
+[65:05] nice return you just made on that
+[65:10] stock um Nike seems due for a breakout
+[65:13] let's take a look at Nike real quick
+[65:15] I'll try to answer a couple of more
+[65:17] questions here we've gone pretty long
+[65:19] here but Nike looks like it's on a
+[65:21] breakout um I'm not quite sure on that
+[65:25] yet you know we just made a new low here
+[65:27] um you know I I I'm not ready to call
+[65:30] this uh a breakout here maybe a break
+[65:33] down but not a breakout um you know I
+[65:36] really would like to see a a break above
+[65:38] 78 you know as you can see this has been
+[65:40] a major level that it couldn't get up
+[65:42] across here the last couple of months if
+[65:44] it broke out above 80 I would say if it
+[65:46] or if it got close to 80 and it was
+[65:48] outperforming the markets I would say
+[65:50] yes you're right but uh at this point I
+[65:52] wouldn't quite call it that paler you
+[65:55] know paler is on a big tear here really
+[65:57] hard to chase this stock in my opinion
+[66:00] um you know this was a what was it a $40
+[66:03] stock two quarters ago you know a little
+[66:05] over three months ago it's now
+[66:07] $117
+[66:09] stock um yeah hard to hard to hard to
+[66:14] justify that in my
+[66:17] opinion um Tesla would you do a cover
+[66:19] call in Tesla I'll take one more of
+[66:21] these ideas one more of these symbols
+[66:23] before uh we have to run here Tesla the
+[66:25] same thing you see score of 10 but
+[66:28] notice how the trend has deteriorated
+[66:30] recently right this trend this is what
+[66:33] this is a classic bearish turnaround
+[66:35] this is a stock that has clearly
+[66:36] outperformed the market but is now
+[66:38] starting to reverse and potentially at
+[66:40] risk of further downside so not a good
+[66:42] candidate in my opinion to buy or not a
+[66:44] good candidate to sell cover calls on
+[66:48] um do you consider fundamentals so I do
+[66:52] right but you know the point here is
+[66:53] that you want to do all you want to have
+[66:56] everything else research for you that
+[66:58] ready to go before you look at
+[66:59] fundamentals because the biggest problem
+[67:01] that I think with fundamentals is a lot
+[67:02] of people will say okay you know I found
+[67:04] the stock that technically looks good
+[67:06] let me look at the fundamentals you do
+[67:08] the fundamental research and then you
+[67:09] say okay this looks good as well from a
+[67:11] fundamental perspective and then you go
+[67:12] look at the options and then you say ah
+[67:14] you know options aren't very liquid or I
+[67:16] couldn't find you know enough yield or
+[67:17] blah blah blah right what this is trying
+[67:19] to do is trying to do everything else
+[67:21] that you need because fundamentals is
+[67:23] really U uh everyone has their own way
+[67:26] of looking at fundamentals it's a little
+[67:27] different here right um but you know
+[67:29] technicals is something that you can
+[67:31] take a very consistent approach on on
+[67:32] looking at technicals and and the
+[67:34] options piece so what we're doing is
+[67:35] we're kind of giveing you everything
+[67:37] that you need and then ultimately you
+[67:39] need to like look at the business itself
+[67:41] like you know do you understand the
+[67:42] business do you agree with the business
+[67:44] do you like the business those are
+[67:45] things that only you can kind of do it's
+[67:47] we can't kind of help you with that part
+[67:50] um so that's really kind of where we're
+[67:51] trying to spoon feed every other aspect
+[67:54] of it and then you can do at the last
+[67:56] piece The Last Mile if you want to add
+[67:58] some fundamental research to it but in
+[67:59] my opinion the technicals really kind of
+[68:02] speak to the fundamentals as well
+[68:03] because the technicals include all of
+[68:05] the fundamental information that's
+[68:06] included in the stock that is the
+[68:08] fundamental theory behind technical
+[68:10] analysis that all news all fundamental
+[68:13] data is already incorporated into price
+[68:14] and price is telling you everything so
+[68:16] in my opinion you don't necessarily need
+[68:18] to do the fundamental analysis I like to
+[68:20] because I don't like to trade stocks
+[68:22] that I don't know anything about um but
+[68:24] that's uh from my opinion not necessary
+[68:27] okay so with that that covers what I
+[68:29] wanted to share with you here today I
+[68:30] hope that this is helpful in giving you
+[68:32] a clear understanding of how to select
+[68:34] the best stocks for selling cover calls
+[68:36] and we will be back with you here next
+[68:38] week thank you so much and have a great
+[68:40] trading day

@@ -11,7 +11,8 @@ ranking by credit/width may be ranking how much risk you take, not how much edge
 rate and the actual win rate move together. It only works if credit/width proxies something real (implied richer
 than realised).
 
-DATA: the 18-name Friday chain cache (options_daily_v3, real bid/ask + greeks, 2019-10 -> 2026-01), RAW spot from
+DATA: the 20-name Friday chain cache (options_daily_v3, real bid/ask + greeks, 2018-01 -> 2026-01; corrected 2026-09-24,
+this line said 18 names from 2019-10), RAW spot from
 lib.studies.chain_spot, held to expiry.
 ARM A (his ranking, structure held FIXED): the 30d/20d bull put on every name-date; quintile-sort by
    credit / width (credit = short bid - long ask - commissions, i.e. a real fill) and compare net ROC.

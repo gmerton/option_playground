@@ -1,0 +1,1947 @@
+[00:03] okay let's go ahead and get started
+[00:05] welcome everyone
+[00:07] good afternoon and thank you for joining
+[00:09] me thank you everyone for taking the
+[00:11] time out and coming to this very special
+[00:14] webinar today we're gonna be talking
+[00:16] about how to utilize credit spreads
+[00:18] specifically on the nasdaq-100
+[00:20] index options we're gonna go into
+[00:24] details about how to trade credit
+[00:27] spreads we're gonna get into why the
+[00:30] nasdaq-100 index options are ideal for
+[00:34] this specific type of strategy I'm gonna
+[00:36] dive into a lot of the fundamental
+[00:38] concepts for trading credit spreads a
+[00:40] very in-depth look into how to utilize
+[00:44] this strategy correctly this is a very
+[00:47] special webinar it's taken me quite a
+[00:49] bit of time to put this together and I
+[00:50] really want to share this with you I'm
+[00:53] excited to share this content with you
+[00:55] and I want to thank Nasdaq for providing
+[00:57] this opportunity to provide this
+[00:59] education in this webinar to show you
+[01:01] guys how to utilize this very effective
+[01:03] strategy on this and index that you guys
+[01:06] can trade so for those of you that don't
+[01:08] know who I am my name is Tony Zang I am
+[01:11] the chief strategist here at options
+[01:13] play and today we're really going to get
+[01:16] into is in intro to the Nasdaq 100 index
+[01:19] telling you a little bit about what that
+[01:21] is what the product is and why it's
+[01:23] ideal for selling credit spreads I'll
+[01:26] get into an introduction of credit
+[01:28] spreads I'll get into everything from
+[01:30] the construction of a credit spread to
+[01:32] how to design the strategy the best
+[01:34] practices and then some trading tips now
+[01:38] this webinar does require some basic
+[01:39] options knowledge so if you have some
+[01:42] options trading experience this is
+[01:44] really going to help you better
+[01:46] understand this webinar now for those of
+[01:48] you that are brand new to options
+[01:49] trading I hope this inspires you to take
+[01:51] a look at these types of strategies for
+[01:54] your portfolio but really for those of
+[01:58] you that have experienced trading I hope
+[01:59] you guys learn something about how to
+[02:01] construct credit spreads better
+[02:02] understand how they should be utilized
+[02:04] correctly because they are very
+[02:06] different from all other forms of spread
+[02:08] trading especially if you trade debit
+[02:10] spreads or if you buy calls or puts or
+[02:12] if you sell other forms of
+[02:14] iron condors or butterflies credit
+[02:16] spreads are quite unique so I really
+[02:18] want to take the time and help you guys
+[02:20] understand the fundamentals of this
+[02:22] strategy so that you deploy correctly
+[02:24] for your portfolio now the format of
+[02:27] this webinar is that it is going to be
+[02:29] recorded I am going to go over quite a
+[02:32] quite a number of things here so the
+[02:34] recording is important for those of you
+[02:36] that want to take the time out and come
+[02:38] back and review the information that we
+[02:40] provide I'm gonna spend about 25 minutes
+[02:43] going through some of the slides really
+[02:45] diving into the concepts that I want you
+[02:48] guys to understand and then what I'll do
+[02:50] is I'll spend about 20 minutes actually
+[02:51] showing you some real examples of these
+[02:53] spreads with some live prices using
+[02:57] options play in the last 20 minutes of
+[02:58] this webinar and then at the very end
+[03:00] I'll open this up for Q&A and chances
+[03:03] are everyone's gonna have a lot of
+[03:04] questions so I'm just gonna ask that you
+[03:06] guys hold that off to the end so I'm
+[03:09] just gonna put this disclaimer up real
+[03:11] quick before we get started it's
+[03:12] basically saying that the contents of
+[03:15] this webinar is really for education
+[03:17] purposes this is not a recommendation or
+[03:20] solicitation for you to trade any of the
+[03:22] securities that we're talking about here
+[03:23] today and everything I'm going to be
+[03:25] using here is for illustrative and
+[03:27] educational purposes now today we're
+[03:30] going to go over is number one I want to
+[03:32] start off by talking about the Nasdaq
+[03:34] 100 index options talking about index
+[03:37] options as a whole why the Nasdaq 100
+[03:39] index options are specifically best
+[03:42] suited for this type of strategy that
+[03:44] we're gonna show you guys today credit
+[03:46] spreads then we'll dive into the actual
+[03:50] construction of a credit spread I think
+[03:52] there are a few different things that I
+[03:54] want to make sure everyone understands
+[03:56] fundamentally what's different about
+[03:57] credit spreads versus other forms of
+[03:59] options trading then we're gonna dive
+[04:01] into the actual trading strategy of
+[04:03] credit spreads I'll talk a little bit
+[04:06] about the best practices of these types
+[04:08] of strategies and then lastly I want to
+[04:10] talk about or show you guys some real
+[04:13] live analysis using different types of
+[04:16] strategies that were a cover here today
+[04:17] during the webinar now for this next
+[04:19] piece I'm going to ask Michelle for a
+[04:22] little bit of help here I just want to
+[04:23] do a quick poll here I want to get a
+[04:25] feel for how many people
+[04:27] currently trade index options or have
+[04:30] experienced trading options trading
+[04:32] index options so Michelle if you could
+[04:35] so as you can see here please take a
+[04:38] take a few seconds to answer this poll
+[04:40] here have you ever traded index options
+[04:42] before yes you have no I haven't or you
+[04:45] never traded options before at all just
+[04:48] please take a few minutes in a few
+[04:49] seconds answer that question just so I
+[04:51] get a feel for the audience in the room
+[04:53] here okay Michelle could you share with
+[05:07] us the results of that poll so the
+[05:12] results of the poll to 54% yes I've
+[05:15] traded index options
+[05:17] 43% no I've treated only stock ETF
+[05:20] options and 4% have not treated any
+[05:23] options at all before okay great so
+[05:25] about 50/50 of you have traded index
+[05:28] options spectacular the other half of
+[05:30] you that have not traded index options
+[05:31] before hopefully you learned something
+[05:33] about why this trap this tool is so 54%
+[05:38] of you have traded for 43 have traded
+[05:40] stocks and ETFs only great for those of
+[05:43] you that have never traded index options
+[05:45] before this will hopefully help you
+[05:47] understand a little bit about what's
+[05:48] different about index options versus
+[05:50] ETFs and what makes them better suited
+[05:51] for credit spread trading and then for
+[05:54] those of you that have never traded
+[05:55] options before I really hope that this
+[05:56] helps you know inspire you to take a
+[05:58] look at options trading as a new form of
+[06:01] trading for your portfolio so thank you
+[06:03] Michelle so I'll talk first of all just
+[06:06] introduce the Nasdaq 100 index itself
+[06:09] the Nasdaq 100 index is consist of a
+[06:12] hundred plus largest non-financial
+[06:14] stocks listed on the Nasdaq stock market
+[06:16] so many of you are familiar with this
+[06:18] index however I do want to point out
+[06:20] that there is there's the Nasdaq 100
+[06:22] index and there's also the Nasdaq
+[06:24] Composite Index and I want to make sure
+[06:26] that we don't confuse the two but now
+[06:28] we're specifically talking about the
+[06:30] Nasdaq 100 index this is the one that
+[06:32] has that it's generally speaking the
+[06:34] news a little bit more
+[06:36] for those of you that have traded the
+[06:37] Q's ETF that's tracking the Nasdaq 100
+[06:40] index so on the so the Nasdaq 100 index
+[06:44] options are effectively options listed
+[06:46] on the actual Nasdaq 100 index and there
+[06:49] is two indices that you can trade as as
+[06:52] a trader you have NB X which has been
+[06:55] full Nasdaq 100 index that has currently
+[06:58] an index value of roughly 7,500 so you
+[07:02] can think of it as almost like trading a
+[07:03] stock or ETF that has a value of a
+[07:06] $7,500 stock or ETF very high values a
+[07:09] very high notional amount so what Nasdaq
+[07:13] has recently created to make a smaller
+[07:15] notional value index is the NQ x which
+[07:18] is a 1/5 reduced Value Index which
+[07:20] reduces that index value from 7500 down
+[07:23] to 1500 so it's like trading a stock
+[07:25] that's trading at 1500 so a little bit
+[07:27] closer to Amazon in terms of pricing so
+[07:32] sell a large contract but better suited
+[07:34] for retail this index gives you access
+[07:38] to broad-based exposure to the Nasdaq
+[07:40] 100 index and you trade it the same way
+[07:42] you would potentially trade a stock or
+[07:44] ETF option however these are going to be
+[07:47] based off of the Nasdaq 100 index as
+[07:49] opposed to any specific stock or ETF and
+[07:51] this is really suitable for both retail
+[07:53] and institutional traders so that's just
+[07:56] a quick introduction as to what the
+[07:58] Nasdaq 100 index options are now I
+[08:01] really want to talk a little bit about
+[08:03] for those of you that have never traded
+[08:04] index option before what the true
+[08:06] difference is between stock and ETF
+[08:09] options versus index options and index
+[08:11] options offers quite a bit of
+[08:12] efficiencies in terms of costs and
+[08:14] transactions so first of all index
+[08:17] options are cash-settled
+[08:18] options so what this means is that at
+[08:20] expiration you will never ever need to
+[08:23] deliver or have to own shares regardless
+[08:26] of whether you're long or short the call
+[08:27] or put so what this means is that your
+[08:30] whatever profit and loss that you have
+[08:32] at expiration is settled and cash what
+[08:35] this does is it reduces the transaction
+[08:37] cost because you don't have to worry
+[08:38] about potentially closing a position at
+[08:40] expiration
+[08:41] to avoid assignment or to avoid having
+[08:44] to take delivery of some stock
+[08:46] everything a Sabbath settlement
+[08:48] so you can open a contract and without
+[08:51] closing it simply have the PNL at the
+[08:54] end of the option contract so it really
+[08:56] reduces the transaction cost by not
+[08:58] requiring you necessarily close out of a
+[09:01] trade at expiration second index options
+[09:04] are european-style which means that
+[09:06] there's no there's no early assignment
+[09:08] risk so especially for those of you that
+[09:10] are selling options and are concerned
+[09:12] about an early assignment
+[09:15] you can't you can't be early assigned on
+[09:17] an index option which is really good for
+[09:19] selling credit spreads because you have
+[09:21] that risk
+[09:22] when you're selling a credit spread of
+[09:24] early assignment so removing that risk
+[09:25] makes it a lot easier to manage the
+[09:27] trade there is also favorable tax
+[09:31] treatment this is one of the key
+[09:32] differences that I think makes it more
+[09:35] cost efficient to trade index options
+[09:37] versus ETF options especially if you're
+[09:39] trading the Q's in the NB x and NQ X
+[09:45] contracts give you favorable tax
+[09:47] treatment so only 60% of your gains in
+[09:49] the taxable account is taxed at short
+[09:52] term capital gains but 40% is taxed at
+[09:55] long-term capital gains which means that
+[09:57] your effective tax rate ponton trading
+[09:59] index options is can only go as high as
+[10:01] 23% so it can potentially give you a
+[10:04] higher profits if you are trading in a
+[10:07] taxable account and lastly when you're
+[10:09] trading index options there is no such
+[10:12] thing as corporate actions which reduces
+[10:14] the number of gaps which is really just
+[10:16] allowing you to make more trades because
+[10:18] when you're selling these types of
+[10:19] strategies like credit spreads many
+[10:21] times you want to avoid things like
+[10:23] earnings dividends product announcements
+[10:25] news events things like that so you
+[10:27] don't have any of that to worry about
+[10:28] when you're trading an index option
+[10:30] which just translates to potentially
+[10:32] more traits that you can make more
+[10:34] income that or more premium that you can
+[10:36] collect by selling credit spreads so
+[10:38] those are some of the differences
+[10:40] between trading ETF versus index options
+[10:43] that make it a little bit more efficient
+[10:45] when you're trading these types of
+[10:46] strategies using index options next for
+[10:50] those of you that have traded index
+[10:52] options I want to talk a little bit
+[10:53] about some of the research we've been
+[10:54] doing recently by comparing ndx vs. SPX
+[10:58] volatility and because many of you that
+[11:01] have traded
+[11:01] index options probably have traded SPX
+[11:04] index options and if you've traded svx
+[11:06] index options you've probably also sold
+[11:08] some credit spreads before so as you
+[11:11] know when you're selling credit spreads
+[11:12] you want higher implied volatility
+[11:14] because that translates the higher
+[11:16] premium that you're going to collect on
+[11:17] that credit spread so what we wanted to
+[11:20] do is compare n DX versus SPX volatility
+[11:23] we found some pretty interesting data
+[11:25] from 2010 to 2017 where we looked at
+[11:28] pretty much all different time frames as
+[11:31] well as all different deltas so
+[11:33] regardless of whether you sell very
+[11:35] short dated options or if you sell very
+[11:37] long dated options or if you sell at the
+[11:40] money calls and puts or are far out of
+[11:42] the money calls and puts as you can see
+[11:43] on the short end of the spectrum when
+[11:46] you're selling weekly options the
+[11:48] difference between MDX and SPX is about
+[11:50] 1.7 percent in the applied vol n DX is
+[11:53] higher than STX by about 1.7 percent um
+[11:56] when you go out to two weeks that's
+[11:59] about 2.2 percent in terms of implied
+[12:01] fall and anything further you kind of
+[12:03] taper off around 2.3 2.4 so this is
+[12:07] really interesting so that if you're if
+[12:09] you are already trading index options
+[12:11] and you're selling these types of credit
+[12:12] spreads it's important to know what kind
+[12:14] of volatility are you getting from the
+[12:16] products that you're trading so nbx does
+[12:18] provide some higher implied volatilities
+[12:20] which does translate into higher
+[12:22] premiums if you're selling these types
+[12:24] of strategies so now that we've kind of
+[12:27] discussed a little bit about index
+[12:30] options ndx and index options
+[12:33] specifically let's dive a little bit
+[12:34] into credit spreads what are they what
+[12:37] type of strategy are they for those of
+[12:39] you that are brand new to this strategy
+[12:40] I really want to take a few minutes and
+[12:42] break down the strategy so that everyone
+[12:44] that really truly understands it so
+[12:46] first of all a credit spread is what we
+[12:49] consider a limit limited risk and reward
+[12:52] option strategy that allows you to take
+[12:54] a loose directional view on an
+[12:56] underlying stock ETF or index so when
+[13:00] we're talking about a bullish view on a
+[13:01] number line ETF or index this is where
+[13:05] you would trade a bull put spread if
+[13:07] your Barracks you would trade a bear
+[13:09] call spread so let's actually look into
+[13:11] how to actually construct these so that
+[13:13] we can
+[13:13] define how to actually trade these in
+[13:16] the strategy so well we're talking about
+[13:19] a bold put vertical so this is the
+[13:20] bullish trade that you would make and
+[13:22] sometimes this is called a shortcut
+[13:24] vertical we're gonna use index in this
+[13:27] example where n DX is trading at 7500
+[13:31] what we're gonna do is we're gonna look
+[13:33] at selling a 7,500 foot so at the money
+[13:36] put and collecting an $80.00 credit for
+[13:39] that for those of you that are familiar
+[13:41] with selling puts you'll know that it's
+[13:42] a bullish strategy but however it's just
+[13:45] selling the out right foot has unlimited
+[13:47] risk and requires a significant amount
+[13:50] of margin to do so chances are many of
+[13:52] you may not have the margin or want to
+[13:55] take on the amount of risk by selling a
+[13:57] naked put on an index like this so the
+[14:00] credit spread really allows you to cap
+[14:02] that risk and reduce the amount of
+[14:03] margin by simply buying a lower put so
+[14:06] in this example we're buying a $7,400
+[14:09] put a lower plet and we're paying a $50
+[14:12] debit on this put so when that Nets out
+[14:14] to is an $80 credit by selling this
+[14:17] seventy five hundred a fifty dollar
+[14:18] debit by buying the seventy four hundred
+[14:20] that's a net credit of 30 dollars and
+[14:23] what this means is that and as you can
+[14:26] see what I've sold the seventy five
+[14:27] hundred I bought but seventy four
+[14:29] hundred so the width between those two
+[14:30] strikes is a hundred dollars so what
+[14:33] that means is that my max risk on this
+[14:35] particular trade is seven thousand
+[14:36] dollars because the max reward or the or
+[14:39] the premium that I've collected is three
+[14:41] thousand dollars on this trade and this
+[14:43] is a concept that's really important
+[14:45] understanding the distance between the
+[14:47] two widths and and the trade-off between
+[14:49] risk and reward I'm actually gonna cover
+[14:52] that on the next slide or in a little
+[14:55] bit but that's actually a really
+[14:56] important concept to understand and I'll
+[14:59] come back to that one second but I want
+[15:01] to first discuss just how to actually
+[15:03] construct one of these trades so here's
+[15:05] an example of a bullish trade that you
+[15:07] can make and this would you would treat
+[15:09] this type of trade if you expect the
+[15:12] outlook that you have on ndx is you feel
+[15:14] that the stock that the index is either
+[15:16] going to move a little higher you'll
+[15:18] profit by selling a short put a vertical
+[15:21] however you will actually still profit
+[15:24] even if the stock moves or even if the
+[15:26] index moves slightly lower or if it
+[15:28] stays neutral and this is really why
+[15:30] selling credit spreads is a very popular
+[15:32] strategy amongst a lot of traders
+[15:34] because you can really make money in a
+[15:37] lot of different scenarios whether the
+[15:38] index goes higher a little lower just
+[15:40] stated exactly where it is you can
+[15:42] always profit from a bull put vertical
+[15:44] the only time you have losses is if the
+[15:47] if the index really moves significantly
+[15:50] lower that's when you will have losses
+[15:52] on this specific trade so that's again
+[15:54] why that's how to construct a bull put
+[15:56] vertical and the different outlooks that
+[15:58] you will have in order to to implement
+[16:01] one of these types of trades so now
+[16:02] let's take a look at a fair call
+[16:04] vertical so basically it's the exact
+[16:06] opposite we're still going to use the
+[16:07] same example of ndx trading at 7500
+[16:10] we're gonna sell as this time a 7500
+[16:13] call so an at the money call let's say
+[16:15] we receive an $80 credit for doing so
+[16:17] but just like the other one a shorter
+[16:20] call the naked call is a better strategy
+[16:22] but it has unlimited risk and it
+[16:25] requires a significant amount of margin
+[16:26] to do so so in order to help reduce that
+[16:29] risk and reduce the margin requirements
+[16:32] what we're gonna do is we're gonna buy a
+[16:33] higher fall against them we're gonna buy
+[16:35] a $7,600 call same thing we're gonna pay
+[16:38] a $50 debit which brings our net credit
+[16:41] down to $30 so we're collecting again a
+[16:44] $3,000 premium which is our max reward
+[16:46] on the street and that means that we're
+[16:48] gonna risk $7,000 on this trade because
+[16:51] the distance between the two strikes and
+[16:53] the hundred dollars a hundred dollars
+[16:55] times 100 is $10,000 so whatever is
+[16:57] whatever we collect in premium the rest
+[17:00] of that is our risk and I'll just
+[17:02] discuss that a little bit in one of the
+[17:03] next slides on this relationship between
+[17:06] risk reward when we're selling credit
+[17:08] spreads which is very important now when
+[17:10] should you actually implement a bear
+[17:12] call vertical if you expect that index
+[17:15] is going to move lower this is one time
+[17:17] that you would consider selling a put
+[17:18] vertical and you'll end this strategy be
+[17:20] profitable however even if the index
+[17:22] moves slightly higher or stays neutral
+[17:24] this strategy will still be profitable
+[17:26] again that's why this is one of the more
+[17:28] popular trading strategy amongst options
+[17:31] traders because you don't have to have a
+[17:33] very strong directional view and even if
+[17:35] the index doesn't move anywhere you'll
+[17:37] still be able to collect some creamy the
+[17:39] only time that this
+[17:40] we'll actually suffer losses is if you
+[17:42] have a significant move higher in the
+[17:44] underlying index so that's just a quick
+[17:47] overview of what a bull put spread is
+[17:50] and a bear called vertical is just so to
+[17:53] illustrate these two strategies and when
+[17:55] you should consider deploying them so
+[17:57] with that what I really want to now dive
+[17:59] into is actually understanding two
+[18:01] fundamental concepts of trading credit
+[18:03] spreads or trading any options really
+[18:05] that is really important to
+[18:07] understanding to better understanding
+[18:09] how to trade the strategy and how to
+[18:11] take the right explorations and strike
+[18:13] prices for yourself so first first
+[18:17] important concept that I want to go over
+[18:19] is that is the relationship between
+[18:21] probability and risk reward and I have
+[18:24] to you every single trade that a lot of
+[18:27] you that have trade these types of
+[18:28] spreads are familiar with the concept of
+[18:30] probability of profit but I also have
+[18:32] probability of loss which is basically
+[18:34] the inverse of probability of profit now
+[18:37] the reason I want to bring up this
+[18:39] concept is because I get asked the
+[18:41] question a lot how do I find high
+[18:43] probability trades and before you go off
+[18:47] and try to find high probability trades
+[18:49] which always sounds good you need to
+[18:51] first understand the relationship
+[18:53] between probability and risk reward
+[18:55] because the two are inversely correlated
+[18:57] when you have something that has low
+[18:59] probability you're gonna have good risk
+[19:01] or reward when you have something with
+[19:03] high probability you're going to get
+[19:04] worse worse reward and understanding
+[19:06] this relationship is really important to
+[19:09] helping you decide what's right prices
+[19:11] and what credits Budds you decide you're
+[19:13] going to sell and the reason for this is
+[19:15] because if you're only looking for high
+[19:17] probability trades you're probably
+[19:19] getting really really bad risk reward on
+[19:21] that trade and and it's not saying that
+[19:24] high probability is bad it's just saying
+[19:26] that you must understand both in order
+[19:28] to decide which one's best suited for
+[19:30] you you don't want to just search for
+[19:32] high probability and you don't want to
+[19:33] just search for good risk your reward
+[19:35] you want to find a balance between the
+[19:37] two so what I have here is two examples
+[19:39] when you're selling credit spread you
+[19:41] can really sell credit spreads where the
+[19:43] strike prices are near the current price
+[19:45] or you can sell credit spreads where the
+[19:47] cart were to spread where the Sharks are
+[19:48] really far away from the current
+[19:50] so when you're selling a credit spread
+[19:52] that's very close to the current price
+[19:54] what you're generally gonna find is much
+[19:56] lower probability of probabilities of
+[19:59] profits so usually 60s 70% probability
+[20:02] of profit is usually the type of trades
+[20:05] that you'll find when you're selling
+[20:06] credit spreads that are close to the
+[20:08] current price now the trade-off with
+[20:10] that or the benefit of that of that low
+[20:13] probability of profit is that your wrist
+[20:15] or or generally speaking is much better
+[20:17] meaning you're risking usually about two
+[20:19] three thousand dollars for every
+[20:21] thousand dollars you have in potential
+[20:23] rewards on a trade like this conversely
+[20:27] for those of you that like these high
+[20:28] probability trades with many many of you
+[20:30] do the thing to understand is that yes
+[20:33] you can absolutely find trades that have
+[20:35] 95%
+[20:37] 95-97 even ninety-nine percent probably
+[20:39] really profit which sounds really good
+[20:41] because you always want to have trades
+[20:44] that have high probability success
+[20:45] however the downside to that and it's
+[20:48] really important to understand is that
+[20:49] you are risking the substantial amount
+[20:52] of money for the potential war that
+[20:54] you're receiving so many times with
+[20:55] these types of trades where you're
+[20:56] risking where you have probabilities
+[20:59] profit over ninety ninety five percent
+[21:01] you're risking sometimes 10 20 30 times
+[21:04] the amount that you're collecting in
+[21:06] premium on that credit spread so it's
+[21:09] not that that's not good it's just a
+[21:10] matter of making sure you understand the
+[21:12] amount of risk because when you're
+[21:14] selling something with the six and seven
+[21:15] percent probability of profit you're
+[21:17] collecting a thousand dollars you could
+[21:19] you could trade three four times and be
+[21:22] able to offset a one losing trade
+[21:24] however when you're trading something
+[21:26] with ninety five percent you're
+[21:27] collecting five hundred dollars at a
+[21:28] time when you're risking ninety five
+[21:30] hundred you would have to trade
+[21:32] sometimes twenty thirty winning trades
+[21:34] in a row and potentially have that all
+[21:36] wiped out by one losing trade so just
+[21:38] understanding that concept and the
+[21:40] relationship between the two is really
+[21:42] important in helping you decide which
+[21:44] strategies best suited for you the
+[21:47] second most important concept that I
+[21:49] want people to understand is the concept
+[21:52] of strikes election so I talked about
+[21:54] near the money far out of the money
+[21:56] strikes the other thing I want to talk
+[21:58] about is the width because the width
+[22:00] really determines what I call the
+[22:01] opportunity
+[22:02] and the width is the distance between
+[22:04] the two strikes the what the strikes
+[22:05] that you buy and the strike that you
+[22:07] sell so the width is the opportunity is
+[22:10] simply the width multiplied by hundred
+[22:12] so for the any of you that have trade
+[22:14] stocks or ETF options you're familiar at
+[22:16] each contract is a hundred shares it's
+[22:18] the same thing for indices you multiply
+[22:20] by a hundred that tells you your
+[22:22] opportunity so when you're when you're
+[22:24] selecting your strikes you have to
+[22:26] select two things number one a width and
+[22:28] then you have this like the distance
+[22:29] from the current price so I always tell
+[22:31] users to first start by defining your
+[22:34] with defining your opportunity because
+[22:36] the rest will come from the distance
+[22:39] from the current price now again when
+[22:41] we're talking about selling near the
+[22:43] money strikes you're gonna get better
+[22:44] risk reward with lower probability of
+[22:46] profit when you're selling farther out
+[22:48] of the money sharks you're going to get
+[22:49] worse reward with a high probability of
+[22:52] profit now the thing to really
+[22:53] understand between for credit spreads is
+[22:56] that once you divide your an opportunity
+[22:57] your opportunity simply created it is
+[23:01] the risk plus the premium that you
+[23:03] receive and the part that you have
+[23:04] control over is the premium that you
+[23:06] receive by selecting the distance away
+[23:09] from the current price when you select a
+[23:11] strike store close to the current price
+[23:13] you have high premiums which means lower
+[23:15] risk if you're selecting very far
+[23:18] strikes then you have low premiums which
+[23:20] results in a higher amount of risk so
+[23:23] that once you've defined your your width
+[23:25] that is your opportunity and that has
+[23:27] been defined and what you have control
+[23:29] over is how much premium we're going to
+[23:31] receive by selecting how far away the
+[23:34] strike zone so the firt the closer you
+[23:36] are the higher the premium that you
+[23:38] receive the smaller the risk the lower
+[23:41] the premium you receive the higher the
+[23:43] risk so that's a really important
+[23:45] relationship to understand so when
+[23:47] you're selecting your credit spreads
+[23:48] think about two things number one how
+[23:50] far part of the two strikes that defines
+[23:52] my opportunity and then how far away
+[23:55] from the current prices that defines how
+[23:57] much premium you actually receive so
+[24:00] those are the two factors that you need
+[24:01] to decide when you're selecting which
+[24:04] credit spreads that you're going to sell
+[24:06] on the underlying index so next what I
+[24:09] want to talk about is this specific
+[24:11] tragedy when do you actually deploy a
+[24:14] credit spread one of the
+[24:16] great things about trading credit
+[24:17] spreads that you can deploy them much
+[24:19] more often than many other option
+[24:21] trading strategies similar to selling
+[24:24] cover calls you can do them pretty much
+[24:25] all the time so it's just a matter of
+[24:28] defining when is the right time to enter
+[24:30] a credit spread strategy that's what I
+[24:32] want to help you guys define here today
+[24:34] so first of all when we're talking about
+[24:36] picking expiration dates this is where
+[24:38] selling credit spreads is fairly
+[24:40] straightforward because when you're
+[24:42] selling credit spreads on index options
+[24:45] for the most part you generally want to
+[24:48] keep your expirations very very short
+[24:50] weekly options anywhere from one to
+[24:52] three weeks out is typically where we
+[24:54] see most credit spreads traded on
+[24:57] indices like nd X so and the reason for
+[25:01] this is because short-dated options
+[25:02] really maximize data that's what you're
+[25:05] looking for when you're selling credit
+[25:06] spreads you're maximized if you want to
+[25:08] maximize theta or time decay and that
+[25:10] happens in the last few weeks before
+[25:12] expiration so that's why you usually
+[25:14] choose very short dated options so
+[25:16] that's pretty straightforward and that's
+[25:17] pretty across the board regardless of
+[25:20] what type of trader you are when it
+[25:22] comes to selecting strikes this is where
+[25:24] it really differs like I said you can
+[25:26] treat very high probability strikes
+[25:28] where you can choose very low
+[25:29] probability shirts and depending on what
+[25:33] your views on the market you select the
+[25:34] one that's appropriate for you so to
+[25:37] help you figure out which ones you
+[25:38] should choose what I've put out here is
+[25:41] really two two ways of thinking about
+[25:43] this number one you can either have a
+[25:45] strong directional view on the
+[25:47] underlying index so you either feel that
+[25:49] the stocks the index is going to move
+[25:50] higher or the index is going to move
+[25:52] lower that's really where you want to
+[25:54] trade near the money credit spreads
+[25:56] because this this near the money credit
+[25:58] spreads gives you a higher Delta which
+[26:01] is more sensitive moves in the
+[26:02] underlying index that allows you to take
+[26:04] advantage of that directional view to
+[26:07] some degree however there are plenty of
+[26:09] users that sell credit spreads that
+[26:11] effectively have no directional view
+[26:13] this is really for those of you that
+[26:15] have no directional view and you just
+[26:16] simply want to collect some premium this
+[26:18] is where you want to sell far out of the
+[26:20] money credit spreads so those high
+[26:22] probability credit spreads and the
+[26:24] reason for this is because when you sell
+[26:25] these far out of the money credit
+[26:26] spreads use a very low Delta on those
+[26:28] trades so you're very
+[26:30] you're not very sensitive to the moves
+[26:32] in the underlying index so we'll go over
+[26:34] some real examples putting the two side
+[26:36] by side near the money sharks and far
+[26:38] out of the money strikes so that you can
+[26:39] actually see a difference and how the
+[26:42] underlying index affects these
+[26:44] strategies so that helps you kind of
+[26:47] define or gives you that framework of
+[26:50] deciding what strikes should I choose
+[26:52] when you're selling your credit spread
+[26:54] so I have two examples here just to just
+[26:57] for illustrative purposes and we're
+[26:59] gonna go through options play in a few
+[27:01] minutes and show you guys these
+[27:02] strategies but selling and near the
+[27:04] money strike is like I said a lower
+[27:06] probability of profit rate but has a
+[27:08] significantly better risk reward this is
+[27:10] really like the first example that I
+[27:12] gave you with the put strategy where
+[27:14] we're selling an at the money put
+[27:15] selling a 7,500 foot receiving the 80
+[27:18] dollar credit buying a lower put against
+[27:20] that paying 50 bucks for it and having a
+[27:23] net credit of $30 so again this has an
+[27:26] opportunity of $10,000 because the
+[27:27] distance between the two strikes is 100
+[27:30] a hundred times 100 is $10,000 that's
+[27:32] your opportunity your max reward here is
+[27:35] the credit that you receive sort of 330
+[27:37] dollars or the $3,000 in credits that
+[27:39] you receive is your max reward your
+[27:41] match list is the rest of that
+[27:43] opportunity so the difference between
+[27:45] three thousand and ten thousand and
+[27:46] seven thousand so that's your max risk
+[27:48] and the probability of profit on these
+[27:50] types of trades usually in the 60% range
+[27:53] 60 65 percent range these are the types
+[27:56] of numbers that you should be used to
+[27:58] seeing when you're selling these near
+[28:00] the money strikes
+[28:01] conversely if you're selling far out of
+[28:03] the money strikes these are the high
+[28:05] probability trades with significantly
+[28:07] worse worse rewards what what these
+[28:10] types of trade looks like is you're
+[28:11] typically selling number one afar out of
+[28:13] the money foot so what that already is
+[28:15] very far out of the money so instead of
+[28:17] collecting eighty dollars in premium
+[28:19] collecting may be roughly about ten to
+[28:21] fifteen dollars in credits you're gonna
+[28:23] buy even lower put against that it's
+[28:26] gonna cost you only a few bucks to do
+[28:28] that about eight dollars in this
+[28:29] particular case and what you're gonna
+[28:31] receive is a net credit of seven dollars
+[28:34] now the opportunity here on the street
+[28:36] as you can see is twenty thousand
+[28:37] dollars because the distance between
+[28:39] these two strikes is two hundred dollars
+[28:41] so you have a twenty thousand dollar
+[28:42] opportunity but
+[28:43] only collecting $700 in premium on this
+[28:47] particular trade which means that you
+[28:49] have $19,000 a risk on this particular
+[28:51] trade now when you look at these numbers
+[28:54] they don't look particularly good but
+[28:55] what really attracts people to these
+[28:57] types of trades is the probability of
+[28:59] profit on these trades are really really
+[29:01] high sometimes you can find 95 97
+[29:03] percent of probability of profit now
+[29:08] what's interesting or at least what I
+[29:10] find interesting is that this is these
+[29:12] types of strategies these far
+[29:14] out-of-the-money strikes is actually
+[29:16] where we see a lot of index option
+[29:19] credits read traders typically trade we
+[29:22] actually saw a trade yesterday of about
+[29:24] for a little over 400 contracts on nbx
+[29:27] traded where someone risk about 8
+[29:29] million dollars to collect about
+[29:31] $100,000 in premium and that that trade
+[29:35] had about a 98% probability of profit so
+[29:38] and these types of traits like I said
+[29:41] you don't even have to have a
+[29:42] directional view because you're
+[29:44] basically saying that I don't think the
+[29:46] index is going to move three standard
+[29:48] deviations lower over the next couple of
+[29:50] weeks which is a completely valid way of
+[29:52] trading as well just just if you're
+[29:54] gonna make these trades make sure you
+[29:56] understand what is your match reward
+[29:59] what is your mattress and make sure
+[30:00] you're comfortable with those types of
+[30:02] risks before you go ahead and trade them
+[30:04] but I do want to illustrate that if you
+[30:06] look at the large trades the large
+[30:08] prints that happen on these index
+[30:10] options they tend to be more on this
+[30:13] side of the spectrum where these are
+[30:14] really high probability trades with
+[30:17] really poor miss reward ratios why don't
+[30:21] you actually enter one of these trades
+[30:23] now generally speaking for those of you
+[30:26] that sell credit spreads and this is
+[30:28] again where I'm gonna ask Michelle to
+[30:30] help me with another poll on Michelle
+[30:32] you send could you put up the poll about
+[30:34] how many people use technical analysis
+[30:37] and charting forward there for their
+[30:41] trading of what I really want to
+[30:43] understand is oh sorry the next poll I
+[30:45] apologize I want to understand how many
+[30:49] of you guys actually utilize technical
+[30:51] analysis and charting in your trading
+[30:55] so you know a lot of you said you've
+[30:56] about 95 percent of you said you trade
+[30:58] options so I'm curious as to what
+[31:00] percentage use technical analysis and
+[31:02] how many of you use other forms of
+[31:04] analysis in your trading when you're
+[31:06] utilizing options so let's see what what
+[31:25] are the results here
+[31:27] [Music]
+[31:33] okay so 82% of you say you use technical
+[31:37] analysis or charting in your training so
+[31:40] and about 20% of you said use other
+[31:43] forms of analysis so great so most of
+[31:47] you do and for those of you that do not
+[31:49] use technical analysis you may end up
+[31:52] using some more of those really high
+[31:54] probability trades where you don't have
+[31:56] a true directional view or maybe you
+[31:57] have other ways of figuring out your
+[31:59] directional views but the idea is that
+[32:02] when you you you want to utilize credit
+[32:04] spreads generally speaking they're best
+[32:06] used when you have overbought or
+[32:07] oversold conditions now these are for
+[32:09] those of you that use these technical
+[32:11] indicators like RSI MACD stochastic
+[32:14] moving percent are these types of
+[32:16] overbought oversold indicators are
+[32:18] really ideal for entering credit spreads
+[32:20] now for those of you that use these
+[32:22] types of indicators just please use the
+[32:25] chat window and type what type of
+[32:27] technical indicators you use in your
+[32:29] trading because that's really gonna help
+[32:31] us frame kind of looking at this next
+[32:33] slide I'm curious from you guys use RSI
+[32:35] or stochastic or maybe other forms of
+[32:37] trading to determine overbought oversold
+[32:39] just type them into the chat window the
+[32:43] other thing that you can utilize credits
+[32:45] for credit spreads for is if you've
+[32:47] identified double tops that will bottoms
+[32:49] so a lot of times you will have support
+[32:52] or resistance levels where you feel the
+[32:54] stocks going to bounce or an index is
+[32:56] going to bounce off support or
+[32:58] resistance these are all ideal times to
+[33:00] enter these types of credit spreads
+[33:02] meaning you have a relatively loose
+[33:04] directional view where you feel the
+[33:06] stocks not going to continue moving in
+[33:08] one direction it may reverse but it may
+[33:10] not necessarily go too far in that other
+[33:13] direction but you certainly feel that
+[33:14] it's not going to turn it's not going to
+[33:16] continue going in one direction or
+[33:18] another
+[33:19] so the only thing that I want to point
+[33:21] out is that when you're using credit
+[33:22] spreads you do not generally want to use
+[33:24] this when you are expecting a large
+[33:26] group so meaning if you feel that an
+[33:28] index worse or in a stock is about to
+[33:30] break out and it's gonna make a big move
+[33:32] in one direction or another there are
+[33:34] better strategies for that like buying a
+[33:36] call or put or even trading a debit
+[33:38] spread that are generally better for
+[33:40] capturing the large mean credit spreads
+[33:43] generally speaking are more so for a
+[33:45] neutral or modest move in the underlying
+[33:47] stock so if you felt that the then index
+[33:50] is oversold and you're bullish on that
+[33:52] stock you would want to sell the put
+[33:54] credit spread euro if you felt that an
+[33:56] index is overbought and you're bearish
+[33:58] on it you want to sell the call credit
+[34:00] spread so I'm looking through the chat
+[34:02] and it looks like many many of you use
+[34:04] I'm just reading here in the chat window
+[34:08] looks like a lot of you use MACD a lot
+[34:10] of you stochastics Bollinger Bands
+[34:17] moving averages so a lot of these types
+[34:19] of indicators and many of them do
+[34:22] relatively the same thing they're just
+[34:23] different calculations for trying to
+[34:26] gauge overbought oversold so what I have
+[34:29] here is just a quick chart this is ndx
+[34:32] the Nasdaq 100 index what I have here on
+[34:35] the bottom is a very standard stochastic
+[34:37] indicator for many of you that have used
+[34:39] the indicators that you guys have put in
+[34:41] the chat window I'm guessing most of you
+[34:43] are familiar with this every time the
+[34:45] stochastic indicator gets to oversold
+[34:47] these are ideal conditions and
+[34:49] potentially enter a bull foot credits
+[34:51] break so as you can see when the CICC
+[34:53] asset gets oversold this is when you
+[34:55] want to enter a bull put spread bull put
+[34:57] spread over and over again and this is
+[34:59] really one of the key differences
+[35:00] between trading credit spreads versus
+[35:02] other forms of trading is that credit
+[35:04] spreads is ideal for trading the same
+[35:06] index or ETF or stock over and over
+[35:09] again unlike trading calls and puts or
+[35:12] debit spreads it's something that you
+[35:13] typically enter on different stocks all
+[35:15] the time or different indices all the
+[35:17] time so specifically with trading credit
+[35:19] spreads this is why when we
+[35:21] look at the volume or what people trade
+[35:23] on on ndx it's primarily credit spreads
+[35:26] because it really allows you to trade
+[35:27] one strategy over and over again on the
+[35:30] same asset
+[35:31] conversely let's say you were overbought
+[35:34] or of the over if these same indicators
+[35:37] were saying overbought these are time to
+[35:39] enter a bear call credit spread so every
+[35:42] time the stochastic indicator gives you
+[35:43] that sell signal that's when you can
+[35:45] enter a call credit spread and you can
+[35:48] actually string the calls and puts
+[35:49] together so as you can see I've
+[35:51] identified oversold sit here so I can
+[35:53] pretend some sell a put credit spread
+[35:55] there and then once it reached here I
+[35:57] might sell a call credit spread even if
+[35:59] my put credit spread hasn't even expired
+[36:00] yet I can enter my call credit spread
+[36:03] here so you can actually string these
+[36:04] together and this is really why index
+[36:07] options is really ideal for selling
+[36:09] credit spreads because you can do these
+[36:10] over and over again you don't have to
+[36:12] worry about corporate actions they're
+[36:13] all cash settled there's no X they're
+[36:16] all european-style so you don't worry
+[36:18] about early exploit early assignment you
+[36:21] can just do them over and over again
+[36:23] every single time an indicator gets
+[36:24] overbought you sell the call credit
+[36:26] spread every time it's almost sold you
+[36:27] sell a put credit spread so with that
+[36:30] what I want to do is just leave you guys
+[36:33] with a few trading tips and then really
+[36:35] move on to showing you some real
+[36:36] strategies using oxygen supply so
+[36:38] talking about timing like I said we want
+[36:41] a time credit spread entries with
+[36:43] overbought oversold or if you use
+[36:46] support and resistance or any form of
+[36:48] analysis or charting that gives you an
+[36:51] idea as far as it stocks not going to
+[36:52] continue going in one direction or
+[36:54] another
+[36:54] those are ideal times that enter a
+[36:56] credit spread like I said you can string
+[36:58] puts and call verticals together which
+[37:00] is which is one of the great things
+[37:02] about selling credit spreads is you can
+[37:04] do it over and over again on the same
+[37:06] underlying the strategy itself between
+[37:09] selling calls and puts we do tend to see
+[37:12] more quick trades on this type of
+[37:14] strategy than we do on calls and this is
+[37:16] really because puts generate more
+[37:18] premium and because puts have a higher
+[37:20] implied wall that's why generally
+[37:22] speaking for the most part we do see
+[37:24] more volume on puts than we do see on
+[37:26] calls for credit spreads especially in
+[37:29] these index options and for those of you
+[37:31] depending on your account value
+[37:33] you want to make sure you choose the
+[37:34] correct index so we talked about nbx is
+[37:37] the bull nasdaq-100 index this is an
+[37:39] index that has US value roughly 7,500
+[37:42] right now this is suitable more so the
+[37:44] larger accounts are maybe even for
+[37:46] institutional traders and then for nqx
+[37:49] which is the reduced value index it is
+[37:50] the exact same index but just one-fifth
+[37:53] the value this is more suitable for
+[37:54] smaller accounts so we'll go through an
+[37:56] example of both when we're showing you
+[37:58] guys this on auctions play but just the
+[38:00] quick a few tips on trading these if
+[38:03] you're going to enter these trades
+[38:04] selling credit spreads now the last
+[38:06] piece that I want to go over before we
+[38:08] start looking at options play is risk
+[38:11] management so with any form of options
+[38:13] turning the key is risk management so
+[38:15] when to take profit 1 to cut losses
+[38:17] these are things that you should have
+[38:19] planned ahead before you enter the trade
+[38:21] so you know exactly when you're going to
+[38:23] take profit when you're gonna cut your
+[38:25] losses and when you're gonna hold the
+[38:26] trade until expiration now with selling
+[38:29] credit spreads the goal is simply just
+[38:30] to sell the credit spread let it expire
+[38:33] worthless keep that credit and do it
+[38:35] over and over again that's the goal and
+[38:37] however what we do find is that based on
+[38:40] all of our back testing of these types
+[38:42] of strategies even though you the goal
+[38:45] here is to let the credit spread expire
+[38:47] worthless but if you we have found that
+[38:50] it does make sense to take profits early
+[38:53] if you've made more than 50 percent of
+[38:55] your profits on that credit spread and
+[38:57] you have more than a week left to go on
+[38:59] a credit spread that is usually a good
+[39:01] time to just take profits and maybe sell
+[39:03] another credit spread instead of holding
+[39:06] that on to the roof holding on to that
+[39:08] credit spread for that last couple of
+[39:10] weeks and trying to still collect them
+[39:12] roughly 30 or 40 percent profit that the
+[39:15] left hand made it's better to take those
+[39:17] profits when you're ahead and sell
+[39:19] another credit spread on the other side
+[39:21] you should also have a plan for if the
+[39:23] trade goes against you so talking about
+[39:25] cutting losses so this is really talking
+[39:29] about how much premium you've received
+[39:31] with respect to the vertical width so if
+[39:33] you're selling goes near the money
+[39:34] credit spreads where you're collecting
+[39:36] more than 20% of the vertical width this
+[39:38] is
+[39:39] you want to cut your losses where your
+[39:40] trade is lost about seventy-five to a
+[39:42] hundred percent of the credit that
+[39:43] you've received on that trade if you're
+[39:46] selling those really far out of the
+[39:48] money credit spreads where you have a
+[39:49] high probability of profit on this is
+[39:52] really where the premium you receive is
+[39:53] less than 20% of the vertical with this
+[39:56] is where you want to cut your losses
+[39:57] when you've lost more than one hundred
+[39:59] two hundred percent of the credit that
+[40:01] you received these are some risk
+[40:02] management tools that can help you avoid
+[40:04] those really really large losses
+[40:06] especially on those high probability
+[40:08] trades where you do have quite a bit of
+[40:10] exposure to the downside making sure
+[40:13] that you have a plan for cutting your
+[40:14] losses early will help prevent blow ups
+[40:17] in your account so those are some of the
+[40:19] the keys or the rule of thumbs that you
+[40:22] should keep when you're selling these
+[40:23] types of credit spreads in terms of risk
+[40:25] management which is really key for you
+[40:27] for the long term success for these
+[40:28] types of strategies so let's now go
+[40:30] ahead and jump over the options play and
+[40:32] let's actually take a look at some real
+[40:33] training examples to show you different
+[40:35] credit spreads and show you how they
+[40:38] actually perform through different
+[40:40] conditions so for those of you that have
+[40:42] never seen options play welcome this is
+[40:45] a tool that's designed to help make your
+[40:47] options trading as easy as intuitive as
+[40:49] possible and really allow you to compare
+[40:51] different strategies side-by-side now we
+[40:54] created this platform we started this
+[40:56] company about five years ago because we
+[40:58] realized that when you start on a page
+[41:00] that looks like this that gives you all
+[41:01] the strikes all the calls and puts and
+[41:04] calls and puts with all the numbers on
+[41:06] it number one if you're new to this type
+[41:08] of trading this is a lot of data look at
+[41:10] and sometimes it's not really
+[41:12] informative and sometimes it's really
+[41:14] difficult to understand where to start
+[41:16] and even for those of you that have
+[41:17] experience using option change or very
+[41:20] familiar with using option chains
+[41:21] there's a lot of things that it doesn't
+[41:23] provide you with like how do I compare
+[41:25] one spread to the next spread or how do
+[41:27] I compare one exploration to another or
+[41:29] what if the index goes down by 10%
+[41:31] how much do I make or how much do I lose
+[41:33] these are the types of analytics that
+[41:35] you need in order to decide which credit
+[41:37] spreads the sell that's why we created
+[41:39] options we wanted to put all of those
+[41:41] metrics in your fingertips while still
+[41:44] allowing you to navigate through the
+[41:46] chain so and that's what I want to show
+[41:48] you guys here today so what we have here
+[41:51] is trade ideas and watch the
+[41:52] here on the Left we have our security
+[41:54] analysis panel here in the middle and
+[41:55] then we have trading an income here on
+[41:57] the right this is designed to really
+[42:00] provide you with all the tools that you
+[42:02] need to decide which what tragedy's to
+[42:04] deploy on any stock or ETF using options
+[42:08] so what I have here I've already
+[42:10] constructed I have a Nasdaq 100 index is
+[42:13] the full Nasdaq 100 index I'll pull up
+[42:16] the reduced value in one second but what
+[42:18] I have here is I've set up three credit
+[42:20] spreads and this is the the credit
+[42:22] spreads that we refer to the near the
+[42:24] money credit spread here on the left and
+[42:26] the really far out of the money credit
+[42:27] spread here on the right as you can see
+[42:29] the probability of profits two increases
+[42:32] the near the money has about a 58
+[42:34] percent probability of profit the the
+[42:36] one in the middle has about a 70%
+[42:38] probably profit and the one on the right
+[42:40] here has an 81% probability of profit as
+[42:42] you can see each one of these that I've
+[42:44] set up are a hundred dollars wide so the
+[42:46] opportunity here is ten thousand dollars
+[42:48] in each one I created that specifically
+[42:51] for the reason to help you guys compare
+[42:53] the three side by side so the 74 50 by
+[42:56] the 75 50 which is effectively selling
+[42:58] the at the money and buying back put
+[43:00] that's $100 less than current price will
+[43:03] collect about $2,600 out of that $10,000
+[43:06] opportunity the one in the middle will
+[43:08] collect roughly $2,000 from risking
+[43:10] $8,000 on this particular trade and the
+[43:12] one on the right will collect about
+[43:14] $1,000 and risk about $9,000 on the
+[43:17] trade so as you can see these are the
+[43:19] three possibilities that you can or the
+[43:21] range of possibilities that you can do
+[43:23] so what I want to now do is use the PNL
+[43:26] simulator which gives you an idea as far
+[43:27] as if the index goes higher index goes
+[43:30] lower how much money do you actually
+[43:31] make from each one of these strategies
+[43:33] how much money you actually risk from
+[43:35] each one of these strategies so I'm
+[43:37] pulling up bullish strategies on nvx
+[43:39] because I was looking at the stochastic
+[43:41] indicator which is what we were looking
+[43:43] at before and as you can see we talked
+[43:45] about here well every time it was it
+[43:48] reached over and sold it's good time to
+[43:50] enter a put credit spread it was
+[43:52] oversold here in the end of July it was
+[43:54] oversold here at the beginning of August
+[43:56] and it looks like it's about oversold
+[43:58] here and it's just starting to turn
+[43:59] around here so I think now is actually a
+[44:01] pretty ideal
+[44:02] time to consider ending a put credit
+[44:03] spread so here from my perspective I
+[44:06] have a fairly strong directional view on
+[44:08] this particular trade so I would
+[44:10] typically choose a strategy here on the
+[44:12] on the right-hand side because I'm
+[44:14] fairly confident that ndx is gonna start
+[44:16] moving a little higher or at least it's
+[44:18] not going to move much lower so what I
+[44:20] have here is I've created the scenario
+[44:22] of what happens if ndx stays exactly
+[44:23] where it is what happens if it stays
+[44:25] around
+[44:26] 7550 as you can see all three strategies
+[44:30] will provide me with profit so if I sold
+[44:33] this credits right here on the right I
+[44:34] make a $2,600 profit if I sold this
+[44:37] middle one 1901 on the right nine nine
+[44:39] hundred and sixty bucks so this really
+[44:41] allows me to take advantage of these
+[44:43] profits if this if the index stays where
+[44:46] it is or moves higher however what
+[44:48] happens in the next moves lower that's
+[44:50] really where these strategies will start
+[44:52] to differ so as you can see if the index
+[44:55] goes down to let's say 7500 here I've
+[44:59] lost twenty twenty three hundred dollars
+[45:01] on this train so this is really where
+[45:02] they might add the money or near the
+[45:04] money credit spread will actually start
+[45:06] to underperform if I'm wrong on my
+[45:08] analysis versus the other two will still
+[45:11] collect that 1,900 dollars and the
+[45:13] thousand dollars respectively so this is
+[45:15] really where if you're selling these
+[45:16] near the money or if these far out of
+[45:18] the money and credit spreads even if the
+[45:20] index value doesn't go in the direction
+[45:22] you expect it to
+[45:23] you're still likely going to make some
+[45:24] money and as you can see if the index
+[45:27] continues to go lower that's when it
+[45:29] starts to change so really the index has
+[45:30] to go down to 7400 and this is the
+[45:33] September 21st expiration which is only
+[45:35] eight days away so tint is on the index
+[45:38] isn't going to decline you know two
+[45:41] standard deviations over that short
+[45:43] period of time but you can also you can
+[45:45] use this tool to quickly look at what
+[45:47] are the expected losses of each one of
+[45:49] these strategies and how far does this
+[45:51] is the index need to go in order for me
+[45:53] to reach that so as you can see I can
+[45:55] quickly determine exactly where my
+[45:57] expected outcome is on ndx so I may be
+[46:01] expecting this to go back up to its
+[46:03] 52-week high around 7600 so from that
+[46:07] perspective if it does go up to 7600 I
+[46:09] would prefer to sell this near the money
+[46:12] credit spread because I'm gonna get a
+[46:13] nice
+[46:13] $2,600 in premium versus only 1900 or
+[46:17] only 960 however I do understand that my
+[46:20] risks to the downside and this is really
+[46:22] where you have to ask yourself where do
+[46:24] I feel nd X is going to go how strongly
+[46:26] do I feel that way if I feel fairly
+[46:29] strongly that this this index will
+[46:31] continue to go higher then you might
+[46:32] want to trade this strategy here on the
+[46:34] left but if you feel that there's a
+[46:36] fairly good chance that maybe the index
+[46:37] value will drop let's say you think
+[46:39] it'll drop down to 7400 then exactly
+[46:43] where my losses are where my returns are
+[46:45] so as you can see if it goes up to let's
+[46:47] say 7500 um even if it goes down to 7500
+[46:50] I probably prefer to trade this strategy
+[46:52] here in the middle and this is really
+[46:54] designed to help you play around and try
+[46:57] out the different strikes and and use
+[46:59] the PML simulator so that you can
+[47:01] quickly decide which strategy is best
+[47:03] suited for you based on your outlook on
+[47:05] the underlying index so this is and you
+[47:08] can use this to modify this you can
+[47:10] change the strikes you can move the
+[47:11] strikes down one you can move the
+[47:13] strikes up one this really allows you to
+[47:15] play around like I said what I usually
+[47:17] like to do is first define my
+[47:18] opportunity by determining the distance
+[47:21] between the two widths and then moving
+[47:23] the strikes either further away from the
+[47:24] current price that collect less premium
+[47:26] with higher probability or move the
+[47:29] strikes closer to the current price
+[47:30] which allows me to collect more premium
+[47:33] with a lower probability and
+[47:35] understanding that relationship really
+[47:37] helps you determine which strikes that
+[47:39] use you select for your given strategy
+[47:41] so with that what I'm going to do is I'm
+[47:43] going to now flip this over to nqx for
+[47:45] those of you who are interested in
+[47:47] trading a smaller index value just to
+[47:49] give you a quick snapshot I'm gonna set
+[47:52] up three strategies as well we're gonna
+[47:54] look at bullish we're gonna look at the
+[47:55] short put vertical I'm going to change
+[47:57] this to be the same September 21st
+[48:00] expiration and let's say I'm using a
+[48:03] 20-point spread here so I'm defining my
+[48:07] opportunity to 20 points
+[48:10] so I'm risking 2,000 the opto ttle
+[48:13] opportunity here is $2,000 and what I'm
+[48:16] gonna see is I'm gonna see how much
+[48:18] money I can collect in terms of premiums
+[48:20] so if I sold the at the money put and
+[48:22] bought and put $20 lower I'm gonna
+[48:24] collect five hundred sixty dollars
+[48:26] that means I'm going to risk $1400 so
+[48:29] then we can also put up a similar type
+[48:31] spread same $20 opportunity but let's
+[48:38] say let's say we go a little further out
+[48:39] of the money selling the 1500 foot in
+[48:43] buying the 1480 and then we'll do the
+[48:46] same thing here on the right really
+[48:48] allowing you to see the flexibility of
+[48:51] this platform and maybe this one we're
+[48:54] gonna sell a really far out of the money
+[48:58] let's say we do if we sell the 1480 by
+[49:01] the 1460 so as you can see each one of
+[49:03] these has an opportunity of two thousand
+[49:05] dollars one will collect five sixty one
+[49:07] looks like 370 one will collect roughly
+[49:10] one sixty one of the things that you can
+[49:12] also do with this tool is as you can see
+[49:15] everything is shaded green and red
+[49:16] that's based on this based on the index
+[49:19] staying within one standard deviation
+[49:20] range so you can use our trading range
+[49:23] simulator and actually change the
+[49:24] expected range that you think the index
+[49:27] will trade in and that will help you
+[49:28] determine your stripes visually you can
+[49:30] actually move your strikes up or down
+[49:33] one without having to use the strike
+[49:35] dropdowns which sometimes is really
+[49:37] nothing more than an educated guess at
+[49:40] best versus if you use our trading range
+[49:42] simulator which determines where you
+[49:44] think the index will trade in you can
+[49:46] actually use this to visually figure out
+[49:48] exactly which strikes to sell so as you
+[49:51] can see I can sell this 1475 1455 which
+[49:54] will only give me profits if the index
+[49:57] stays within the range that I expect so
+[49:59] this gives me a 90% probability but I'm
+[50:01] only gonna collect one hundred and
+[50:03] thirty dollars for an $1,800 risk so
+[50:07] then I can go back to my P&L simulator I
+[50:09] can decide where I think the stock or
+[50:11] the index will end up on exploration in
+[50:14] eight days so it's currently at fourteen
+[50:17] or fifteen twelve right now so what it
+[50:19] what if I think it's gonna go up to
+[50:21] fifteen twenty same thing as you can see
+[50:24] on this stochastic indicator it's just
+[50:26] overbought starting to turn around so
+[50:28] I'm a little bullish on this particular
+[50:30] trade and keep in mind this is by no
+[50:32] means a solicitation to trade this this
+[50:35] is simply just for illustrative purposes
+[50:37] this is designed to give you an idea of
+[50:39] some really comparing different
+[50:41] strategies and seeing what the expected
+[50:43] profit is if the if the index stays
+[50:45] where it is or moves a little higher and
+[50:46] if it moves lower exactly how much
+[50:48] losses will you expect as you can see
+[50:51] here the index can really move all the
+[50:53] way down to 1476 which is down here 1476
+[50:57] and still this strategy here the right
+[50:59] will be profitable the strategy really
+[51:02] needs to take a substantial nosedive or
+[51:04] the the index really has to take a
+[51:06] substantial nosedive over the next eight
+[51:08] days for this strategy here on the right
+[51:10] to have this $1,800 loss and that's
+[51:14] really why we have a 90 percent
+[51:15] probability because it requires severe
+[51:19] move in order for this trick here on the
+[51:21] right to to have that $1,800 loss so
+[51:25] again perhaps that's why more people
+[51:28] like to trade the strategy here on the
+[51:30] right and like I said there's not one
+[51:33] strategy that's better than the other
+[51:34] it's more about understanding exactly
+[51:36] what strategies best for which which
+[51:39] views that you have on the underlying
+[51:41] stocks and your outlook is you're quite
+[51:43] bullish on this index you generally want
+[51:45] to trade the strategy here on the right
+[51:47] I'm sorry the strategy here on the left
+[51:49] and if you don't really have a
+[51:50] directional view and you just want to
+[51:52] collects in the premium then you could
+[51:54] look at the strategy right as long as
+[51:56] you understand the potential risks if
+[51:59] the index doesn't pull back
+[52:00] substantially over the next eight days
+[52:03] and when you sell these types of credit
+[52:05] spreads so with that and that is you
+[52:08] know everything that I wanted to cover
+[52:10] with you I wanted to show you guys you
+[52:13] know first of all introduced the Nasdaq
+[52:16] 100 index options to you and understand
+[52:18] why they are suitable for this type of
+[52:20] strategy I hope you guys were able to
+[52:22] really learn something about the
+[52:25] construction of credit spreads and
+[52:26] understand really the the two core
+[52:28] concepts the relationship between
+[52:30] probability and risk reward as well as
+[52:33] the distance between the two strikes and
+[52:35] how that changes with respect to the
+[52:38] distance from the current price to
+[52:40] define your opportunity and then looking
+[52:42] at the this reward within that
+[52:43] opportunity looking at near the money
+[52:46] strikes all the way to far out of the
+[52:48] money strikes on
+[52:49] chanting the difference and the outlooks
+[52:51] of the on the underlying index and when
+[52:54] you should deploy each one of these
+[52:56] strategies I hope I was able to
+[52:58] illustrate that to you guys here with
+[52:59] options play and for those of you that
+[53:01] have not used options play we do have a
+[53:03] special offer for those of you that want
+[53:05] to take a look at this tool we have a
+[53:07] free 30-day trial as well as a lot of
+[53:09] options education webinars just like the
+[53:11] one we've done here with a 20% discount
+[53:13] options play if you go to options play
+[53:15] calm slash income so with that I just
+[53:18] want to thank your own for taking the
+[53:19] time out this afternoon at this point
+[53:21] what I'm gonna do is I'm going to pull
+[53:23] open this up for Q&A looks like I have
+[53:26] quite a few questions already here in
+[53:28] the queue so I'm gonna take as much time
+[53:30] as I can and answer as many questions
+[53:32] here so please whatever questions you
+[53:34] have please type them into the chat
+[53:37] window or the Q&A window and I will
+[53:39] answer as many questions as I can so
+[53:43] which has the best liquidity so at this
+[53:46] point and DX certainly will have higher
+[53:48] liquidity and qu X is a relatively new
+[53:51] contract that just launched so if you're
+[53:54] trading these NQ x I do recommend that
+[53:56] you use limit orders for that with nbx
+[53:59] you can still use market orders for
+[54:01] those types of trades so there is
+[54:03] certainly going to be more Liberty on
+[54:05] interest and DX versus NQ x at the
+[54:08] moment Kevin saying Kevin so that
+[54:13] question about pulling in DX up at your
+[54:15] broker that's a question for your broker
+[54:17] you should be able to call them up and
+[54:18] and sometimes depending on the broker
+[54:20] they have different symbols for the
+[54:22] index options so please call your broker
+[54:25] and they should be able to help you out
+[54:27] with that Jerry thank you so much I
+[54:29] really appreciate that Michaels asking
+[54:31] can the spread be closed prior to
+[54:32] expiration
+[54:33] absolutely so even though these are even
+[54:37] though these are European cash not
+[54:41] settled index you can close them the
+[54:43] same way you do a stock or ETF option so
+[54:46] the trading of them are remained the
+[54:47] same it's just that it's a little easier
+[54:50] to manage around expirations in my
+[54:51] opinion because of the fact they're cash
+[54:53] settled and they're european-style
+[54:56] is that a delta of 0.08 James is asking
+[55:00] James if you can tell me which
+[55:02] which one you're referring to but if
+[55:04] you're talking about those far out of
+[55:05] the money credit spreads absolutely
+[55:07] that's what we see we see a lot of we
+[55:10] see a lot of credit spreads traded worth
+[55:11] you know they're selling the ten Delta
+[55:13] and buying back the five deltas so these
+[55:15] are exactly what I mean these are very
+[55:17] low Delta trades so that these have very
+[55:19] low very low exposure to the underlying
+[55:24] index so these far out of the money's
+[55:27] have very low deltas very little
+[55:29] sensitivity underlying index so doesn't
+[55:31] matter if the index goes higher moves
+[55:32] lower you generally are able to take a
+[55:34] profit on these types of trades explain
+[55:38] opportunity I hope I was able to explain
+[55:40] opportunity it's simply the distance
+[55:41] between the width multiplied by a
+[55:43] hundred that's your total amount of
+[55:45] money that you're playing with and then
+[55:47] how much risk how much of that
+[55:49] opportunity is risk and how much of that
+[55:51] opportunity is reward is determined by
+[55:53] how far away from the current price
+[55:55] you're selecting your strikes I used
+[55:58] tape them good for overbought oversold
+[56:01] yeah so any of these indicators that you
+[56:04] guys all put in here these are all good
+[56:06] indicators it's not like one is better
+[56:07] than the other they're really all
+[56:10] designed to do the same thing they're
+[56:12] just different calculations can you show
+[56:17] this to see how you select the strikes
+[56:19] so you certainly can use the chain so
+[56:23] you can I can click here and modify and
+[56:25] look at the whole strikes but I would
+[56:27] argue that if you're just looking at the
+[56:28] chain it's really difficult to decide
+[56:30] which rights want to use that's why we
+[56:33] use a more visual approaches you can see
+[56:34] I've already used my one standard
+[56:37] deviation move so let's go back to one
+[56:39] standard deviation that allows me to
+[56:42] select my strikes visually so that I can
+[56:44] select strikes that only half profits
+[56:47] within once in aviation range that in my
+[56:50] opinion is a much better way to go about
+[56:52] selecting your strikes than simply
+[56:54] looking at a drop-down menu because when
+[56:56] I'm looking at this drop-down menu I
+[56:57] don't really know where to start
+[56:59] it's the best guess and I usually have
+[57:01] to pick one look at the analytics see if
+[57:03] it's something I wanted to do then you
+[57:05] go back to the to the chains so you end
+[57:07] up doing a lot of back-and-forth and
+[57:09] that's why we created this tool that
+[57:10] allows you to navigate the whole chain
+[57:12] without an navigated visually and that's
+[57:15] one of the reasons why we created this
+[57:17] platform which which product is very
+[57:23] liquid and bid-ask spreads and how do
+[57:26] you manage the trade if it goes against
+[57:28] so like I said the nbx is more liquid in
+[57:33] terms of been asked Sprint's and how to
+[57:35] manage them that's really what I just
+[57:37] what I was covering here in this
+[57:39] particular slide of taking profits early
+[57:43] if you made more than 50 cent profits
+[57:44] and you have at least a week to go and
+[57:46] cutting your losses depending on and
+[57:49] it's a different strategy depending on
+[57:50] whether you're selling these high
+[57:51] probability credit spreads with low
+[57:53] probability credit spreads on there's
+[57:55] different ways to manage your risk on
+[57:56] the downside I mean these are the
+[57:58] general rules of thumb before doing that
+[58:01] Jacobs asking how to calculate the
+[58:03] options play score what is a concretely
+[58:06] mean great question so we have what's
+[58:08] called an option lace board this is a
+[58:09] score that tells you the Risser award of
+[58:11] each strategy based on the the outlook
+[58:15] that you are based on it's thinking it's
+[58:18] a risk reward ratio and it's meant to
+[58:21] give you the inside of the same
+[58:23] mentality of a poker player meaning how
+[58:25] much reward am I getting every unit of
+[58:27] risk that I'm taking and it's basically
+[58:29] assuming that the stock and the index
+[58:31] and either go higher or lower I'm it
+[58:33] doesn't have a directional view and it's
+[58:35] saying what are your potential risks and
+[58:36] what are the potential rewards and it's
+[58:38] really calculated based on where you
+[58:40] think the index will end up so as you
+[58:42] can see if you think the index will take
+[58:44] a very wide range will recalculate your
+[58:46] risk reward ratio if you think that it's
+[58:49] in the trading very narrow range it'll
+[58:51] recalculate your risk reward ratio so if
+[58:53] you expect any Q X and trade in a very
+[58:55] narrow range the strategy here on the
+[58:57] right will give you very good miss
+[58:58] reward meaning it'll only give you a
+[59:00] reward and almost no risk on this
+[59:02] particular trade so this is really where
+[59:04] it's designed to give you a way to
+[59:05] actually compare different strategies
+[59:07] side-by-side and give you a way to
+[59:09] metric a metric to give you a good idea
+[59:12] of risk reward
+[59:18] Terry is asking can you show with the
+[59:20] trade button does for constructing the
+[59:22] actual trade great questions so for
+[59:23] those of you that aren't actually
+[59:25] looking to trade these strategies and
+[59:26] with the trade button it'll give you the
+[59:28] details on how to
+[59:29] enter this trade into your brokerage
+[59:30] platform this is designed to give you a
+[59:32] quick understanding of how to enter
+[59:34] these trades into your brokers platform
+[59:36] so this is designed to be broker
+[59:39] agnostic so you can use this for any
+[59:40] form of trading Jann's is asking to use
+[59:45] Delta for probability indicators so we
+[59:47] don't use Delta we actually calculate
+[59:49] our own probabilities of profit but
+[59:51] Delta is usually a pretty good
+[59:52] approximation that we don't have your
+[59:54] own probability calculations or if your
+[59:56] platform doesn't provide that how our
+[59:59] probabilities for using iron condors on
+[60:01] on Q X so it's the same thing as so you
+[60:05] can think of an iron Condor is putting a
+[60:07] put credit spread and a call credit
+[60:09] spread together that's really what an
+[60:10] iron Condor is however I would argue
+[60:13] that you don't necessarily want to trade
+[60:16] iron condors because we talked about you
+[60:18] want to put on a like a put credit
+[60:21] spread when it's oversold you want to
+[60:23] put on a call credit spread once over
+[60:25] box now I don't know why you would put
+[60:28] on an iron Condor which is a bull and
+[60:30] call spread at the same time because you
+[60:33] can't really be bullish and bearish on
+[60:34] the same stock nor do I think there's
+[60:37] any real analysis that tells you this
+[60:40] the index or the stock is not going to
+[60:42] move at all so that's why we generally
+[60:44] speaking you can leg into an iron Condor
+[60:47] you can sell a a put credit spread today
+[60:50] and maybe sell a call credit spread a
+[60:52] few days later and combine that ends up
+[60:54] being an iron Condor but we generally
+[60:56] don't believe that you should enter on
+[60:58] Condor as a single strategy it just
+[61:01] simply doesn't make sense because you're
+[61:03] effectively saying I think this the
+[61:04] index or stock is overbought and
+[61:06] oversold at the exact same time
+[61:08] which obviously can't be true so that's
+[61:11] my thoughts on training iron condors if
+[61:13] you want to trade them like into the
+[61:15] like into the put and call legs separate
+[61:19] does the as options play support
+[61:21] butterflies and broken wing butterflies
+[61:23] absolutely you can set up all types of
+[61:25] strategies so if you want to look at
+[61:26] condors butterflies all of these you can
+[61:29] do that you can set them up on the click
+[61:30] of a mouse and if you want to do broken
+[61:32] wings you can certainly do that so you
+[61:36] can do all types of strategies here
+[61:37] using options play
+[61:40] what is the advantage of trading nqx as
+[61:43] opposed to the Q's great question so the
+[61:46] difference between nqx and the Q's is
+[61:48] like I said with with trading index
+[61:50] options you have quite a few
+[61:51] efficiencies when you're trading ETFs
+[61:55] sorry when you're trading when you're
+[61:58] trading ETFs you have they're not
+[62:01] cash-settled
+[62:01] which means that you have you could
+[62:03] potentially need to close out a trade
+[62:06] before expiration and void assignment at
+[62:09] expiration which increases your
+[62:10] transaction costs there they are
+[62:14] american-style which means that they can
+[62:15] be exercised early so you always have
+[62:18] that risk when you're selling a credits
+[62:19] way that you might end up owning the
+[62:20] stock or have to deliver the stock
+[62:22] because you gotta earn the expiration
+[62:24] there is no favorable tax treatment on
+[62:27] trading the Q's and and so those are the
+[62:30] three main my opinion advantages in
+[62:33] trading NV X and then QX versus just
+[62:35] trading the Q's Tom's asking on the
+[62:39] options play I D is screen there's an
+[62:41] ox's plain logo sometimes appear next to
+[62:43] the stock symbol um great question tom
+[62:45] so that's really referring to stocks
+[62:48] that hit multiple scans or a BTN hit
+[62:51] multiple bullish scans for that day
+[62:52] that's why it's got an options play
+[62:54] score I'm happy to answer more questions
+[62:56] about an options play but I want to keep
+[62:58] the questions for this Q&A session two
+[63:00] more on the index options piece if you
+[63:03] have specific questions about options
+[63:05] play please sign up for a free trial and
+[63:07] I'm happy to answer as many questions
+[63:08] specifically regarding options play I
+[63:11] have a question here nqx weekly options
+[63:14] volume looks so small why we pick any
+[63:17] key exit rate options so any Q exits a
+[63:20] brand new product which explains why the
+[63:22] options volume and open interest is so
+[63:24] low but that doesn't necessarily mean
+[63:26] that you can't trade it so a lot of
+[63:27] people mistake liquidity with open
+[63:29] interest and volume open interest and
+[63:31] volume just refers to other people are
+[63:33] trading it it really doesn't have much
+[63:35] factor in liquidity so something can
+[63:38] have very little volume but still of
+[63:39] plenty of liquidity which is really what
+[63:41] you're looking for in a product so make
+[63:43] sure you don't confuse the two NQ x is a
+[63:45] brand-new product so there's not as much
+[63:47] longer than an open interest in it yet
+[63:51] when you're talking about taxation are
+[63:53] you talking about Canadian or us traders
+[63:56] I'm talking about us traders for first
+[64:01] of all these this was good education
+[64:03] thank you enlightening and definitely
+[64:04] worth implementing can you send me some
+[64:06] ideas on nbx while we're learning to
+[64:09] implement this index option trading so
+[64:11] keep in mind that this is not a
+[64:12] solicitation with trade in DX this is an
+[64:14] old purely for educational purposes but
+[64:16] if you're looking for ideas the best way
+[64:18] to do is using your chart so we talked
+[64:21] about using the charts
+[64:22] whenever you feel that the stock is
+[64:24] oversold using one of these overbought
+[64:26] oversold indicators that's the time to
+[64:29] consider entering one of these trades so
+[64:31] use that as your starting point if
+[64:33] you're just starting out with these
+[64:34] start with one or two contracts at first
+[64:36] but that is a really good starting point
+[64:39] for those of you no questions ask us and
+[64:40] that will allow you to ask us any
+[64:42] questions you have regarding trading
+[64:43] tractions rows the expiration on 2018
+[64:47] September 21st a.m. what is the a.m. you
+[64:49] really really good question so there is
+[64:51] on the nbx there are still AM and PM
+[64:54] explorations the a.m. explorations refer
+[64:57] to X refer to contracts that actually
+[65:00] stopped trading on Thursday afternoon
+[65:02] instead of Friday afternoon and they're
+[65:04] settled based on the Friday opening
+[65:06] price so for those of you that are
+[65:08] trading index options or first-time
+[65:10] index options that is one of the
+[65:11] differences between trading index
+[65:14] auctions versus ETF or stock options
+[65:16] because stock options all expire on
+[65:18] Friday and settled based on the clip
+[65:20] Friday closed
+[65:22] in price on the ndx the monthly
+[65:25] expirations are still a and settlement
+[65:27] so they stopped trading on Thursday
+[65:28] afternoon at 4:15 and they are settled
+[65:30] based on a Friday opening price is their
+[65:33] options ideas scanner and oxen place so
+[65:36] yes we have a lot of other tools and and
+[65:38] and things that are available to you
+[65:40] within options play but today like I
+[65:43] said we I want to direct our questions
+[65:44] specifically regarding trading nd X and
+[65:46] credit spreads you have a question about
+[65:48] options play please sign up for a free
+[65:50] trial and happy to answer as many
+[65:52] questions as you have do you offer
+[65:54] annual subscriptions absolutely we do I
+[65:57] have a question here are you tea and SPX
+[66:00] weeklies are easier trade than nd X in
+[66:03] my opinion then 10 to 16 days
+[66:06] exploration may be easier than 7 days to
+[66:08] expiration so there's all different
+[66:10] types of explorations you're simply
+[66:12] talking about explorations you can
+[66:13] choose the 15 day expiration here on nd
+[66:15] X as well so we do certainly have the 10
+[66:18] to 15 a 16 day explorations on so
+[66:21] basically we have the weeklies here as
+[66:23] well so you can trade them just as
+[66:25] easily as you do on Russell and SPX
+[66:29] Garry I'm the regular user this tool
+[66:31] makes my analysis much easier thank you
+[66:33] for presenting this today thank you Gary
+[66:35] and really appreciate this um James what
+[66:38] do you consider a small account and
+[66:39] large so I would say a small account is
+[66:42] that you're having if you're trading
+[66:43] options in your and you have less than
+[66:46] 25,000 dollars to play with that is what
+[66:48] I would consider a smaller account for
+[66:50] options a large account is really
+[66:52] anything over a hundred thousand dollars
+[66:53] in my opinion that's when you can start
+[66:56] playing around with NDX
+[66:57] anything less than a hundred thousand in
+[66:59] your options trading account you'll
+[67:00] probably be better suited for an n QX
+[67:03] contract arena thank you very much I
+[67:07] really appreciate this
+[67:08] James is asking monthly versus weekly um
+[67:11] James if you could clarify what you mean
+[67:13] by that question I'm happy to answer
+[67:14] that Adina's asking Tony will you be
+[67:18] sending out a copy of the presentation
+[67:20] to us yes so I'll send out the slides to
+[67:23] all options place subscribers or I'm
+[67:25] sorry if you have an option to play
+[67:27] account you will receive the slides that
+[67:29] I'm presenting here today so you have a
+[67:31] free trial you'll also get that as well
+[67:34] what is the recommended days to
+[67:36] expiration for any X and then QX great
+[67:38] question so we've covered this before
+[67:39] but basically you want to stay within
+[67:41] those weekly expirations one to three
+[67:44] weeks out is generally speaking where
+[67:46] you want to sell credit spreads that's
+[67:48] the majority of where credit spreads are
+[67:50] sold isn't that one two three weeks out
+[67:54] James okay great I'm glad I answer that
+[67:57] question I have a question here james is
+[68:08] asking volume was low I'm guessing
+[68:11] you're referring to any QX on that
+[68:12] question or oh you mean volume in terms
+[68:15] of audio James this webinar is recorded
+[68:20] so if you have trouble listening to us
+[68:22] right now hopefully the recording will
+[68:24] work out for you as well okay any other
+[68:29] questions regarding trading credit
+[68:31] spreads or n DX or n QX
+[68:55] thank you Tom Thank You Jerry I really
+[68:57] appreciate this before I sign off any
+[69:01] more questions regarding trading credit
+[69:03] spreads Raymond thank you very much I
+[69:06] really appreciate it I hope you guys
+[69:08] have found this presentation useful like
+[69:12] I said really you know if you're
+[69:16] interested in selling credit spreads and
+[69:18] you know how do you say you sell credit
+[69:20] spreads but on on stocks and ETFs some
+[69:23] of you may not have known the benefits
+[69:25] of trading index options versus ETF
+[69:28] options look at some excel and credit
+[69:29] spreads you know the fact that it's cash
+[69:33] flow European style and the favorable
+[69:35] tax treatment really is a huge benefit
+[69:38] for users that are selling credit
+[69:40] spreads so if you're doing this on the
+[69:42] queues or if you're doing this on stocks
+[69:44] you know take a look at index options
+[69:46] even if you don't trade them all the
+[69:47] time it's an interesting product to take
+[69:49] a look at because it does provide those
+[69:51] in additional efficiencies in terms of
+[69:54] costs and transactions Peters asking so
+[69:59] index rates will always go to full term
+[70:01] um I don't know even the full term you
+[70:05] mean full term so from a trading
+[70:07] perspective they are exactly the same as
+[70:09] ETF in index in stock options meaning
+[70:12] you can open and close them whenever
+[70:14] you'd like the only difference is at
+[70:16] expiration index options are settled in
+[70:19] cash so you never have to worry about
+[70:20] delivering shares or taking delivery of
+[70:23] shares it's just all settled in cash
+[70:26] it's just easier and cleaner at that
+[70:28] expiration and you don't have to worry
+[70:30] about earn the assignment so in my
+[70:32] opinion when you're selling credit
+[70:33] spreads those are two things that are
+[70:35] pretty important in determining how to
+[70:37] manage that train and index options it
+[70:39] makes that process that much easier Tim
+[70:47] thank you very much I really appreciate
+[70:49] that regards to your question about the
+[70:51] data please shoot me an email
+[70:54] and info and options play calm I'm happy
+[70:56] to answer your questions to that as well
+[70:58] so for any of you that have questions
+[71:00] about anything that we talked here
+[71:01] before after this you can email us at
+[71:03] info at options play calm down thank you
+[71:06] so much I really appreciate this I hope
+[71:09] you guys have found this useful
+[71:10] any last questions before I sign off for
+[71:13] the day if not I just want to thank
+[71:22] everyone again for taking the time out
+[71:24] this afternoon this was a very special
+[71:25] webinar for me I was really happy to put
+[71:29] this together and I want to thank Nasdaq
+[71:31] for having me be allowing me to present
+[71:32] this specific topic I think it's a great
+[71:35] strategy for those of you who are
+[71:36] looking or ready implementing credit
+[71:38] spreads to take a look at nd X and for
+[71:41] those who that are ready trading index
+[71:42] options like SPX to take a look at nd X
+[71:44] because of the higher implied volatility
+[71:47] and I really hope that you guys learn
+[71:49] something new when it comes to selling
+[71:50] credit spreads even for those of you
+[71:51] that have implemented these strategies I
+[71:54] know I have done credit spread webinars
+[71:56] in the past and I do think that I've
+[71:59] dived into a little deeper in some of
+[72:01] the concepts especially that
+[72:02] relationship between the width and the
+[72:04] distance between the current price and
+[72:07] the strikes very very important concept
+[72:09] if you're trading credit spread so I
+[72:11] hope that you guys learn something new
+[72:13] and are able to implement it in your
+[72:15] training especially if you're using
+[72:17] options play so thank you everyone for
+[72:19] taking the time out this afternoon we
+[72:21] will be back in about a month we're
+[72:24] going to I'll be doing another ndx
+[72:25] webinar we'll be talking about how to
+[72:27] hedge your portfolio using n DX options
+[72:29] on so please make sure that you sign up
+[72:31] for that I'm looking forward to seeing
+[72:34] you all then next time so thank you
+[72:37] everyone have a great afternoon I hope
+[72:38] you guys learn something on this webinar
+[72:41] Thanks
+[72:56] you

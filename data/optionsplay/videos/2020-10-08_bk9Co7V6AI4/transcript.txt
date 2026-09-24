@@ -1,0 +1,2002 @@
+[00:02] Okay, good afternoon and welcome back
+[00:03] everyone to our options education
+[00:05] webinar series. My name is Tony Zhang.
+[00:07] I'm the chief strategist here at
+[00:08] OptionsPlay. And today we're here to
+[00:10] talk about a very popular trading
+[00:12] strategy, one that we use very often in
+[00:15] our daily plays, which is selling
+[00:17] vertical credit spreads. So we'll talk a
+[00:19] little bit about the strategy just so
+[00:21] for those of you that are relatively new
+[00:23] to credit spreads, a better
+[00:24] understanding as to how they work, when
+[00:27] they should when you should utilize
+[00:28] them, how do you select the optimal
+[00:30] credit spreads. But most importantly, we
+[00:32] want to show you how you can find
+[00:34] optimal credit spreads using the tools
+[00:36] that we have built here at OptionsPlay,
+[00:38] and then make sure that you understand
+[00:39] how to analyze them and how to manage
+[00:41] these if you are trading credit spreads
+[00:44] in your account. So let's go ahead and
+[00:46] get started. Now before I do, what we're
+[00:48] going to discuss here today is purely
+[00:49] for education and demonstration
+[00:51] purposes. It is not a solicitation or
+[00:53] recommendation to buy or sell any
+[00:56] specific securities.
+[00:58] So for those of you that are brand new
+[00:59] to OptionsPlay, if you haven't signed up
+[01:01] yet, you can sign up for a free 30-day
+[01:03] trial at optionsplay.com so that you can
+[01:06] access the tools that we're going to
+[01:07] show you here today, both the
+[01:09] OptionsPlay platform as well as the
+[01:11] credit spread opportunity report that is
+[01:14] updated every single hour to give you a
+[01:16] better sense for how to find
+[01:17] opportunities here in the market.
+[01:20] Now
+[01:22] what we have here for today is the we're
+[01:24] going to be doing maximizing credit
+[01:26] spreads,
+[01:27] maximizing income with credit spreads
+[01:29] this Thursday. Next Thursday, because
+[01:31] earning season's about to kick off
+[01:33] again, we're going to start talking
+[01:34] about earning season using options.
+[01:37] And then the final Thursday
+[01:38] of the of September of October, we're
+[01:41] going to be doing a live market analysis
+[01:43] with Q&A. I am taking the last Thursday
+[01:47] off here this week for for the month of
+[01:49] October. So that's what we have for the
+[01:51] month of October. A lot of
+[01:54] I would say action actionable strategies
+[01:57] that we're going to teach you here this
+[01:58] month. So, make sure that you pay
+[02:00] attention to and then we're going to do
+[02:01] a review here at the end of October.
+[02:04] Now, we do have a very special election
+[02:06] special coming out tomorrow morning. For
+[02:08] those of you that join us on each
+[02:09] Tuesday and Friday morning market
+[02:11] outlook session, we are we're not doing
+[02:14] a regular market outlook session
+[02:15] tomorrow morning. We're going to be
+[02:16] doing an election special. We're going
+[02:18] to talk about um what the what the
+[02:21] possible outcomes are for the election,
+[02:23] how we're viewing the different
+[02:25] industries and sectors that will be
+[02:26] affected by the different possible
+[02:28] outcomes, by taxes, by regulation, and
+[02:31] we'll break down each individual sector
+[02:33] and what we're currently looking for.
+[02:35] Though, this is a members-only webinar.
+[02:37] So, you need to either be on a free
+[02:38] trial or you need to have a membership
+[02:41] to to register for that. So, I hope to
+[02:43] see many of you there tomorrow morning
+[02:46] for that at 9:00 a.m.
+[02:48] So, today what we're going to do is
+[02:50] we're going to talk a little bit about
+[02:51] when should you sell trade credit
+[02:53] spreads. It's very important that
+[02:54] investors understand when you should
+[02:56] utilize credit spreads. They're not
+[02:58] useful for all market conditions.
+[03:00] They're only useful for certain market
+[03:02] conditions, so it's important that you
+[03:03] understand when. Then we'll take a look
+[03:05] at a look at what credit spreads are,
+[03:07] how they're constructed, um and more
+[03:10] importantly, what are the optimal credit
+[03:12] spreads? How do you actually determine
+[03:14] whether a credit spread is optimal or
+[03:16] not? Then we'll take a look at how to
+[03:18] manage your credit spread. So, once
+[03:19] you're in a credit spread, how do you
+[03:21] actually uh go about deciding when to
+[03:23] get out of a credit spread? And then
+[03:25] we'll try to do as many live examples as
+[03:27] possible using the opportunity reports
+[03:29] that we're going to show you here that's
+[03:31] available to you for everyone here at
+[03:33] Options Play. And at the very end, we'll
+[03:35] open this up for Q&A.
+[03:38] So, the primary objective that I want to
+[03:40] help investors walk away from today's
+[03:42] webinar, which is really understanding
+[03:44] how can you find and trade the most
+[03:46] optimal credit spreads? And when I refer
+[03:49] to optimal, I'll show you here in a few
+[03:51] minutes as to what we mean by optimal
+[03:53] and how can you quickly find them so
+[03:55] that you're not searching manually
+[03:57] through
+[03:58] symbols and options chains to figure out
+[04:00] what symbols to sell credit spreads on,
+[04:02] how to find expiration dates and strike
+[04:04] prices. Our opportunity reports automate
+[04:06] all of that work for you. So we're we
+[04:08] want to show you how to access them and
+[04:10] more importantly how to use them,
+[04:12] analyze them, and trade them. So my name
+[04:14] is Tony Zhang. I'm the chief strategist
+[04:16] here at Options Play and what I'm going
+[04:18] to do here today is show you the tools
+[04:19] that we have developed here at Options
+[04:21] Play that's designed to help you find
+[04:23] these strategies as quickly as possible,
+[04:25] analyze them so that you know what are
+[04:27] optimal ones, what you're seeking when
+[04:29] you're when you're selling a credit
+[04:30] spread for you to go ahead and execute
+[04:33] those in your portfolio.
+[04:35] So let's talk first talk a little bit
+[04:37] about when should you sell credit
+[04:38] spreads. Now the thing about credit
+[04:40] spreads is that they're only useful in
+[04:42] certain market conditions. First of all,
+[04:44] many investors, especially for those of
+[04:46] you that are experienced, um I tend to
+[04:48] get a lot of answers from experienced
+[04:51] options traders that will tell me that
+[04:53] it's best to sell credit spreads in a
+[04:54] higher volatility environment. And that
+[04:57] is absolutely true. That that generally
+[04:59] speaking in a higher volatility
+[05:01] environment, credit spreads will do
+[05:03] better. But it's important to understand
+[05:05] that just because you have a high
+[05:06] volatility environment does not mean
+[05:08] that other strategies are not suitable.
+[05:10] Many times you can still use other
+[05:12] strategies even in a high volatility
+[05:15] environment. So what I want to be more
+[05:17] clear on is respect to the directional
+[05:20] view because even though you have
+[05:22] relatively larger exposure to implied
+[05:25] volatility when volatility is high, so
+[05:28] when you're selling credit spreads in a
+[05:30] in a high volatility environment, you're
+[05:31] going to get a little bit more profits,
+[05:33] you're going to get a little bit more
+[05:34] profit from the fact that volatility is
+[05:36] likely going to mean revert and give you
+[05:39] a little bit of boost to your to your
+[05:41] profits. However, even with credit
+[05:43] spreads, your biggest exposure is not to
+[05:46] Vega, which is implied volatility, your
+[05:48] biggest exposure is still to Delta. So,
+[05:51] the directional view that you have at an
+[05:53] underlying stock is still going to be
+[05:55] the most important aspect to determine
+[05:58] when it's optimal to sell a credit
+[05:59] spread, and when you should actually
+[06:01] sell that credit spread from a
+[06:03] directional perspective.
+[06:05] So, when we look at credit spreads, we
+[06:06] generally want to do them around
+[06:08] reversal points. So, whenever we think
+[06:10] that markets are going to reverse from
+[06:12] one direction to the other, these are
+[06:14] your optimal I conditions to sell a
+[06:17] credit spread. You want to do them
+[06:19] during market reversals. So, this could
+[06:21] be many different ways to do that. You
+[06:23] can use support or resistance, that's
+[06:25] the simplest way to look at a chart and
+[06:27] see where you think a market may start
+[06:30] to reverse either higher or lower. For
+[06:32] other technical analysts that use
+[06:35] different type of momentum indicators,
+[06:37] whether you use RSI or MACD or
+[06:39] stochastics, anytime when a when a when
+[06:42] an oscillator is either overbought or
+[06:44] oversold, are also conditions for
+[06:46] potentially um
+[06:49] selling a credit spread because again,
+[06:50] overbought and oversold conditions tell
+[06:52] you that momentum is shifting and it's
+[06:54] turning around and reversing in the in
+[06:56] the opposite direction. And lastly, when
+[06:58] you have a trading range, when you've
+[07:00] established a trading range and you
+[07:02] think that the markets are going to
+[07:03] stick stay within a specific range, that
+[07:05] also is generally speaking a good
+[07:08] opportunity to sell credit spreads. So,
+[07:10] the first thing to remember with credit
+[07:11] spreads is the fact that your biggest
+[07:13] exposure is still to Delta, not Vega.
+[07:16] So, don't use the implied volatility as
+[07:19] your sole decision-making process as to
+[07:21] whether you want to trade a debit or a
+[07:23] credit spread. We're going to explore a
+[07:25] little bit about the difference between
+[07:26] debit versus credit spreads after we
+[07:28] explain credit spreads, but the first
+[07:30] thing to remember is the fact that
+[07:31] directional view is still the most
+[07:33] important thing when you're selling
+[07:35] credit spreads. Does that make sense,
+[07:37] everyone? Please type one into the chat
+[07:39] window if that that sense to you.
+[07:42] Delta is still always going to be your
+[07:44] largest exposure even when you're
+[07:46] selling credit spreads, so don't just
+[07:48] use implied volatility as your sole
+[07:50] decision-making processes to whether you
+[07:52] want to trade a debit or credit spread.
+[07:55] Make sure that you have a good sense for
+[07:57] the directional view and use these types
+[07:59] of technical indicators to determine
+[08:01] when prices are about to reverse,
+[08:03] because that is going to be your optimal
+[08:05] time to sell a credit spread. So, for
+[08:07] this what I'm going to do is I'm going
+[08:08] to walk you through two types of credit
+[08:10] spreads, because there's a bullish
+[08:12] credit spread and a bearish credit
+[08:13] spread. We're going to talk about the
+[08:15] bullish credit spread first. This is
+[08:16] when we have a bullish to neutral view.
+[08:19] And I'm using IBB here. This is an older
+[08:22] chart here of IBB when it's clearly in a
+[08:24] strong uptrend, and what I particularly
+[08:27] looked for was small reversals during
+[08:29] this uptrend that signified a potential
+[08:32] reversal, because every time it declined
+[08:34] a little bit towards that 20-day moving
+[08:36] average, that became the subsequent
+[08:39] reversal higher. So, this is an
+[08:41] opportunity to potentially see that IBB
+[08:44] in a clear uptrend pulled back for a few
+[08:46] days to the 20-day moving average.
+[08:48] Here's my opportunity to look for a
+[08:50] reversal in that trend to resume that
+[08:53] longer-term bullish trend. So, this is
+[08:55] an opportunity where you could
+[08:57] potentially sell a credit spread.
+[09:00] So, in this particular case, IBB was
+[09:01] trading at just around 142 or so. So,
+[09:04] the optimal credit spread is to
+[09:06] generally sell a put near the current
+[09:09] price of the stock, because that
+[09:10] maximizes the income that you collect,
+[09:13] because at-the-money options will always
+[09:15] have the most amount of extrinsic value,
+[09:17] and you're maximizing that by selling
+[09:19] the out-of-the-money the at-the-money
+[09:21] put option. However, when you sell an
+[09:24] at-the-money put option, you are taking
+[09:26] on, number one, a substantial amount of
+[09:28] risk if the stock is to substantially
+[09:30] reverse lower, and number two, when you
+[09:32] sell a at-the-money put option, you're
+[09:35] going to have to put up a lot of cash or
+[09:37] margin in order to sell that underlying
+[09:40] to sell that short put. So, most
+[09:42] investors don't feel comfortable enough
+[09:44] to sell that naked call or cash secured
+[09:47] put. I'm sorry, naked put or cash
+[09:50] secured put because maybe they're
+[09:52] concerned that there is maybe a small
+[09:54] but inherent possibility that that um
+[09:58] uh that the IBB or this ETF decline
+[10:01] significantly. I would say the number
+[10:03] one question that I get from investors
+[10:05] saying when when we talk about selling
+[10:06] cash secured puts on stocks that we want
+[10:08] to own is what do I do if the stock
+[10:11] declines substantially? The answer is
+[10:12] there's not much you can do. The same
+[10:14] thing there's not much you can do when
+[10:15] you buy a stock and the stock declines
+[10:17] substantially. There's
+[10:19] That's the risk that you're taking when
+[10:20] you buy the stock. That's the risk that
+[10:21] you're taking when you sell a put
+[10:23] option. But not every investor wants to
+[10:25] take on that risk. So, that's why we
+[10:27] turn to credit spreads. Credit spreads
+[10:29] allow us to take a very similar trade to
+[10:32] selling a cash secured put or naked put
+[10:35] at the money which maximizes our income,
+[10:37] but we do it in a way with limited risk.
+[10:40] So, what we do is we buy a lower put
+[10:42] against it. In this particular case,
+[10:44] let's say I buy a 136 put against it.
+[10:47] And let's say I collect $5.10 by selling
+[10:50] the 142 put. I pay $2.95 to buy that 136
+[10:54] put. Now, what happens is instead of
+[10:58] risking roughly $142
+[11:01] or so
+[11:02] or rather $137 or so to make $5. Here,
+[11:06] what I'm doing now is by buying that
+[11:09] lower put, I reduce my potential reward,
+[11:12] right? I reduce it from $5.10 down to my
+[11:15] net credit. Oops, my my $5.10 down to
+[11:20] $2.25,
+[11:21] but what I've done is I've decreased my
+[11:24] risk. So, if I just sold the naked put
+[11:26] for about $5, then my total risk on that
+[11:29] trade is about $137.
+[11:32] Granted, that's far-fetched because the
+[11:34] stock would have to go to zero in order
+[11:36] for that to happen by my expiration
+[11:37] date, but what I have done is I've
+[11:39] reduced my risk from $137 down to just
+[11:42] $3.75.
+[11:44] So, this allows you to potentially sleep
+[11:47] at night and know for the know that no
+[11:49] matter what happens, even if the world
+[11:51] turns around while you sleep, you're not
+[11:53] taking on substantial amounts of risk,
+[11:55] you're not putting on a huge amount of
+[11:57] risk in your portfolio, and you can
+[12:01] normally to sell a single put, you would
+[12:03] have to put up roughly
+[12:05] to sell, I'm sorry, $13,000 in cash to
+[12:08] sell this naked put. That's a
+[12:10] substantial
+[12:13] amount of money versus to sell the
+[12:15] credit spread, you only need $375.
+[12:19] So, that's really, in my opinion, the
+[12:21] real reason why many investors would
+[12:23] rather sell the credit spread rather
+[12:25] than sell the naked put because naked
+[12:27] put simply requires too much in terms of
+[12:29] cash to be set aside to make that $5
+[12:32] versus if you can set aside just $375
+[12:35] and make potentially $225,
+[12:38] that makes a little bit more sense,
+[12:40] okay? Does that make sense, everyone?
+[12:42] Please type two into the chat window if
+[12:44] that makes sense to you.
+[12:49] I'm not sure
+[12:50] Oh, someone said that I did my math
+[12:52] wrong here if this is 2 215,
+[12:55] and that the risk is actually three
+[12:58] 385. Okay, I apologize for that. A
+[13:01] little bit of math error on my end. So,
+[13:06] uh let's see, 510 minus 95, that's
+[13:10] correct. Um
+[13:13] So, a little bit a little bit less
+[13:15] credit than we were looking for, 10
+[13:17] cents less less credit, but the thing
+[13:19] that we want to think about whenever
+[13:20] we're talking about a credit spread or
+[13:22] any type of vertical spread is really
+[13:24] the distance between the two strike
+[13:26] prices. The distance between the two
+[13:28] strike prices tells us how much money is
+[13:31] at play. Whatever the distance is,
+[13:33] that's the maximum amount that we're in
+[13:35] play on any type of vertical spread. So,
+[13:38] a 142 136 is a $6 wide credit spread.
+[13:42] The distance between the two strikes.
+[13:43] So, whenever we talk about the width of
+[13:45] a vertical, we're talking about the
+[13:47] distance between the two strikes. And
+[13:49] what we generally want to take a take a
+[13:51] look at is how much credit are we
+[13:53] receiving as a percentage of that width?
+[13:56] Because
+[13:58] whatever your width is,
+[14:01] the collection that you have in terms of
+[14:03] income,
+[14:05] the rest of it will be your risk. So,
+[14:07] whatever you collect in income, the rest
+[14:10] of it will be your risk. So, whenever
+[14:11] you're able to maximize your income,
+[14:14] what you're doing is you're reducing the
+[14:16] amount of risk. The more you you take in
+[14:18] an income, the less risk that you're
+[14:20] actually taking. So, this was calculated
+[14:23] off of the 225, which we know is off by
+[14:26] 10 cents, but 225 out of a $6 wide
+[14:29] credit spread means that I'm collecting
+[14:30] 37.5%
+[14:33] of the vertical width. That means the
+[14:36] rest that I'm risking is going to be uh
+[14:39] my my potential risk. So, here I'm
+[14:42] risking 37 and 37.5%
+[14:45] of the vertical width or my potential
+[14:47] reward is 37.5% of the vertical width
+[14:50] and my risk here is 62%
+[14:53] of the vertical width. So, what I'm
+[14:54] trying to do is always to find credit
+[14:56] spreads that maximize the amount of
+[14:58] income because that for every dollar
+[15:00] that I or every cent that I increase my
+[15:02] income by, I decrease my risk by that
+[15:05] one penny.
+[15:06] So, the goal here is to always make sure
+[15:08] that you try to trade strategies that
+[15:11] give you the highest amount of income.
+[15:12] The highest amount of income also gives
+[15:14] you the largest buffer. So, in the past
+[15:17] month in September, we look we learned
+[15:19] about buying versus selling options and
+[15:21] we learned about a few different
+[15:23] scenarios that when you're buying
+[15:24] options, you need the stock to make a
+[15:27] big move in order for you to be
+[15:28] profitable. When you're selling options,
+[15:30] you have a lot of different ways to make
+[15:32] money. If the trade goes in your favor,
+[15:33] you make money. If the stock stays put,
+[15:35] you make money. Even if the stock goes a
+[15:37] little bit against you, you also make
+[15:40] money. And only if the stock makes a big
+[15:42] move against you, do you lose money. So,
+[15:44] when you're selling a credit spread, you
+[15:45] have the same risk profile. Meaning, if
+[15:48] IBB starts to move higher, I'll make
+[15:50] money on this trade. If IBB moves
+[15:52] sideways and doesn't move higher at all,
+[15:54] I make money here. If the IBB goes a
+[15:56] little bit lower, I still make money.
+[15:58] The only time I lose money is if IBB
+[16:01] takes a big plunge to the downside.
+[16:04] As long as IBB stays above 139.75,
+[16:07] which we know is actually 139.85 because
+[16:11] of the 10 cent error that I had, as long
+[16:13] as IBB stays above 139.75,
+[16:17] I'll be profitable on this trade. So,
+[16:19] that is what attracts many investors to
+[16:21] selling credit spreads. It's a high
+[16:23] probability, it's a very forgiving
+[16:25] strategy. If you get the direction
+[16:27] right, you make money. If you get the
+[16:29] direction wrong, you can still make a
+[16:30] little bit of money. Only if you get the
+[16:32] direction completely wrong, do you
+[16:35] really lose substantial amounts of
+[16:36] capital. And that's what many investors
+[16:39] are seeking when they're trading these
+[16:41] types of credit spreads. Does that make
+[16:43] sense everyone? Please type three into
+[16:45] the chat window if that makes sense to
+[16:47] you.
+[16:50] Okay. So, let's just take a look at a
+[16:52] bearish example here. Now, let's just
+[16:54] say you have a contrarian view on IBB.
+[16:57] You believe that IBB is near a top. You
+[16:59] think it's going to start reversing
+[17:01] lower for whatever reason, and you think
+[17:03] that it's now going to start perhaps
+[17:05] reversing a little bit lower. So, as an
+[17:08] options trader, what you can do is,
+[17:10] naturally, as a first step, you might
+[17:12] want to sell a 142 call option. So, in
+[17:15] this particular case, if I sold this 142
+[17:17] call option for about $4.80,
+[17:21] um this gives me a little bit of a
+[17:23] buffer, meaning as long as the stock
+[17:25] stays where it is or moves even a little
+[17:26] bit higher, I'm able to be profitable.
+[17:28] And as if the stock does move lower, I'm
+[17:30] going to collect my $4.80.
+[17:33] But, the problem with selling a naked
+[17:35] call is that you truly have unlimited
+[17:37] risk. If IBB continues to move higher,
+[17:40] the more the higher it goes, the more
+[17:43] money you lose. And the only thing you
+[17:44] have to show for that risk is just
+[17:46] $4.80.
+[17:48] Not a whole lot of potential reward for
+[17:51] what could potentially be a lot of risk.
+[17:54] And this is why many investors who don't
+[17:56] like to sell naked calls or puts, not to
+[17:58] mention selling that naked call is going
+[18:00] to require a fair amount of margin in
+[18:03] order to do so. So, what you can do is
+[18:04] you can buy back a higher call. Let's
+[18:07] say you buy the 148 call and spend $2.25
+[18:11] to buy it. Now, instead of bringing in a
+[18:14] net credit of $4.80,
+[18:16] now you're bringing a net credit of just
+[18:18] $2.55.
+[18:20] But, in order to do that, what you've
+[18:22] done is you reduce your risk on the
+[18:23] entire trade down to just $3.45.
+[18:28] Now,
+[18:29] in this example, just like before, we're
+[18:31] trading a vertical spread that is a 142
+[18:35] 148, which, as we said before, the
+[18:38] distance between the two strikes is the
+[18:40] maximum amount of capital that's at
+[18:42] play. So, when that's $600 per contract.
+[18:47] So, when you have a vertical width of
+[18:49] $6, and you're collecting $2.55,
+[18:53] before in the previous example, in that
+[18:55] bullish example, $2.15 was about 36% of
+[18:59] the vertical width. Here, we're
+[19:02] collecting $2.55.
+[19:04] We're really getting a little bit more
+[19:06] income for it. And what that equates to
+[19:08] is now a vertical width of 42%. before
+[19:12] we're collecting 36 37% now we're
+[19:15] collecting 42% and this is really where
+[19:18] it starts to get interesting because
+[19:19] when you're able to collect 42% that
+[19:22] means instead of you're only risking 6
+[19:25] 58% of the vertical width in order to
+[19:30] to take on this type of reward. So now
+[19:32] your risk reward like before was closer
+[19:35] to two to one this one is much closer to
+[19:38] one to one. So you're looking at 42 to
+[19:41] 58 before you were looking at about 37
+[19:45] to about 60
+[19:47] 63 or so. So
+[19:49] this is really where the max when you're
+[19:51] able to maximize your income what you're
+[19:54] able to do is reduce your risk and this
+[19:57] is really the goal of what we're trying
+[19:59] to see when we refer to optimal credit
+[20:01] spreads. We're really trying to see
+[20:02] credit spreads that give you the maximum
+[20:04] amount of income possible for so that we
+[20:07] can minimize your risk so that all
+[20:09] things are equal you're able to be
+[20:11] profitable more often because you have a
+[20:13] bigger buffer because now that now that
+[20:15] you have a three $2.55 credit your
+[20:19] buffer is also expanded from about $2.15
+[20:23] in the previous example now to $2.55.
+[20:26] So even if IBB moves higher you now have
+[20:29] a larger buffer before you lose money on
+[20:32] this trade than before because you've
+[20:35] you've increased your income by that
+[20:37] extra 30 40 cents on this particular
+[20:39] trade. So if IBB stays sideways you make
+[20:42] money if IBB moves lower you make money
+[20:44] and if IBB moves a little bit higher
+[20:47] you'll still make money. The only time
+[20:48] you lose money is if IBB makes a big
+[20:50] move to the upside. Does that make
+[20:52] sense? Please type four into the chat
+[20:54] window if that makes sense to you.
+[20:58] And I know there's a few questions and I
+[20:59] will get back to you on some of these
+[21:01] questions
+[21:03] but I do want to get through this
+[21:05] content and then I will come back for
+[21:06] questions here at the very end. So,
+[21:09] just to recap, the credit spreads, they
+[21:11] are what we call a very forgiving
+[21:13] directional strategy because you could
+[21:15] really get the direction wrong and still
+[21:17] potentially make a little bit of money.
+[21:19] Um, but it's really suitable for when
+[21:21] you expect more of a neutral or small
+[21:23] directional move. The reason that it's
+[21:25] not suitable for when you expect a big
+[21:27] move is that there are far better
+[21:28] strategies for it. That's what we
+[21:30] learned last month in our buying versus
+[21:32] selling options webinar. I I highly
+[21:35] recommend if you missed that to please
+[21:36] go back and watch that because what we
+[21:39] learned from that from what we learned
+[21:41] from that webinar was the fact that when
+[21:43] you do expect a big move, you're much
+[21:45] better off buying a call or buying a put
+[21:47] or buying a debit spread, which is
+[21:48] something that we will talk about here
+[21:50] in the next month or so.
+[21:52] Buying debit spreads are very useful
+[21:54] when you expect a big move in a specific
+[21:56] directional view. Now, credit spreads do
+[21:59] generally work better in a higher
+[22:01] implied volatility environment. Now, how
+[22:03] do you measure a stock with high implied
+[22:05] volatility? That's really where we turn
+[22:07] to IV rank. We're going to show you how
+[22:09] we measure IV rank on our credit spread
+[22:11] opportunity report so that you know
+[22:13] which ones have higher IV rank, but
+[22:16] generally speaking, any IV rank above 30
+[22:18] is considered relatively high, and
+[22:21] anything above 50 is considered
+[22:23] extremely high. So, if you see an IV
+[22:25] rank above 50, that has a much higher
+[22:27] probability of giving you better returns
+[22:30] than IV ranks below 30. Now, from a
+[22:33] directional perspective, like I said,
+[22:35] even though it is a strategy that gives
+[22:37] you better returns in a high implied
+[22:39] volatility environment, you still need
+[22:41] to get the direction right. So, you
+[22:43] generally want to look for extreme
+[22:45] overbought or oversold conditions using
+[22:48] technical indicators. You want to look
+[22:50] for reversal points, whether you're
+[22:51] looking at top and bottom formations
+[22:53] using chart formations, or if you're
+[22:55] looking at support or resistance levels.
+[22:57] These are all suitable ways to determine
+[23:00] a potential reversal point at which you
+[23:03] may want to sell a credit spread. And
+[23:05] lastly, you do not want to use this
+[23:07] strategy when you're expecting a large
+[23:09] and fast move. So, you only want to use
+[23:12] this when you expect more of a small and
+[23:14] neutral move in the broader markets or
+[23:16] in the specific name or ETF that you're
+[23:19] currently trading.
+[23:21] So, with that, what I want to do is
+[23:23] um help investors better understand the
+[23:26] trade-off that you're making when you're
+[23:28] selling credit spreads. Because many
+[23:30] times investors will say, "Well, I I
+[23:32] will obviously choose the strategy with
+[23:33] a higher probability. I will obviously
+[23:35] choose the strategy that makes me money
+[23:38] in three different scenarios rather than
+[23:40] just requiring the stock to make a big
+[23:41] move." But, what's important to
+[23:43] understand is that you are making a
+[23:45] trade-off when you select these higher
+[23:47] probability trades that make money in a
+[23:50] lot of different scenarios. And it
+[23:51] really comes down to the fact that
+[23:53] whenever you're choosing any option
+[23:54] strategy, doesn't matter if you're
+[23:56] trying to select different strike
+[23:57] prices, different strategies, you're
+[23:59] always making a trade-off between two
+[24:01] important factors, and that's
+[24:03] risk-reward and probability. So, a lot
+[24:06] of investors If we talk about just
+[24:08] buying call options, you can buy
+[24:10] at-the-money call options that are
+[24:11] relatively expensive, or you can buy
+[24:13] these really far out-of-the-money call
+[24:15] options that are really cheap. And
+[24:16] unfortunately, I see too many beginners
+[24:18] will say, "Well, I'm going to buy the
+[24:20] cheap one because why would anyone want
+[24:21] to buy the expensive one?" Not really
+[24:24] realizing what trade-off you're making
+[24:26] when you're buying these really cheap
+[24:28] out-of-the-money options. And it really
+[24:29] comes down to the trade-off between
+[24:31] probability and risk-reward. A lot of
+[24:33] investors tend to get um attracted to
+[24:36] the cheap, really high risk-reward
+[24:39] strategies, meaning if you buy these
+[24:41] really far out-of-the-money call
+[24:42] options, which fueled some of the
+[24:44] rallies that we saw in late August,
+[24:46] these out-of-the-money call options that
+[24:48] made a boatload of money in a very short
+[24:50] amount of time. And guess what? That
+[24:53] stopped working immediately right after
+[24:55] it did work for about a month or two.
+[24:58] And it really comes down to the fact
+[24:59] that that's a trade-off that you're
+[25:00] making. When you seek these really high
+[25:02] payoffs, that's really high risk-reward
+[25:05] ratios, you have very low probability in
+[25:07] the long run of making money. And that's
+[25:09] the same thing that you have when you're
+[25:10] selling credit spreads. Credit spreads
+[25:12] have higher probability of profit, but
+[25:14] it's important to remember that you have
+[25:17] worse, substantially worse, risk-reward
+[25:19] ratios. Most credit spreads, you're
+[25:21] risking usually at least double
+[25:24] of the potential reward that you can
+[25:26] make. But, you do have more winners. So,
+[25:29] you win more often, but the times that
+[25:31] you lose, you will lose more than what
+[25:33] you win each time that you win.
+[25:35] Subsequently, when you buy options, when
+[25:37] you're using debit spreads, what you
+[25:39] have are really low probability of
+[25:41] profits. A lot of investors will say,
+[25:42] "Well, something has 33% probability of
+[25:45] profit. I'm not interested in that."
+[25:47] Because they're thinking to themselves,
+[25:48] "Well, if I lose two out of three
+[25:50] trades, I'm never going to make money."
+[25:52] But, what they don't realize is the
+[25:53] trade-off with that. With the trade-off
+[25:55] of the low probabilities that you have
+[25:56] better risk-reward. For most debit
+[25:58] spreads, you're risking $100 to try to
+[26:01] make $200. So, your reward, your
+[26:04] risk-reward are are are at polar
+[26:06] opposites, if you will, in probability.
+[26:08] And what you're trying to do is find a
+[26:09] balance. Or, within each strategy, what
+[26:11] you're trying to do is you're trying to
+[26:13] maximize or give yourself an edge. So,
+[26:15] what we're trying to do
+[26:17] is move this from instead of $200 worth
+[26:20] of risk for every $100 in reward, what
+[26:23] we're trying to do is something along
+[26:24] the lines of how do we reduce your risk
+[26:26] here to about 180 and increase your
+[26:28] reward here to about 120 or so?
+[26:31] Something along these lines, because
+[26:32] whenever I'm able to increase my reward,
+[26:34] what that does is it decreases my risk.
+[26:37] And we do the same thing when we're
+[26:38] trading debit spreads. We try to reduce
+[26:40] our risk as much as possible, because
+[26:42] what that does is it increases our
+[26:43] potential reward. So, one strategy is
+[26:46] not better than the other. I keep
+[26:48] hearing from investors saying, "I prefer
+[26:51] to sell credit spreads credit spreads
+[26:52] because they're better, or I prefer to
+[26:54] do this because they're better. The
+[26:56] reality is that none of these are better
+[26:58] than the other. They're all similar
+[27:00] because you're just making trade-offs
+[27:02] between probability and risk reward. Is
+[27:05] low probability worse than high
+[27:07] probability? No. Is high probability
+[27:09] better than than low probability? No,
+[27:11] not at all. You just have to understand
+[27:13] what you're trading off for that
+[27:15] probability. And that, I think, is one
+[27:17] of the most important lessons to learn
+[27:19] when you're trading options because
+[27:20] everyone's seeking this kind of holy
+[27:22] grail or magic bullet that somehow makes
+[27:24] them more money. And the reality is that
+[27:26] that doesn't exist. But once you
+[27:28] understand these concepts, you can make
+[27:30] better decisions that can put the edge
+[27:32] in your favor. And that's what we're
+[27:33] going to show you here today. So if that
+[27:35] makes sense to you, please type five
+[27:37] into the chat window.
+[27:41] Perfect. So, now that we've talked given
+[27:43] you a few examples, let's talk a little
+[27:45] bit about what are the optimal credit
+[27:46] spreads. So, from our perspective, and
+[27:48] this is something that, you know, for
+[27:50] those of you that joined the the
+[27:52] sessions with Tom Sosnoff at tastytrade,
+[27:54] you know, we've we've talked about this
+[27:55] a lot. And we have slightly differing
+[27:57] views as to what are optimal credit
+[27:59] spreads. But we all agree that the
+[28:02] different choices that you have with
+[28:03] respect to credit spreads, generally
+[28:05] speaking, the difference in terms of
+[28:06] performance between each one is
+[28:08] generally relatively low. Um so, what we
+[28:12] feel are the are the optimal credit
+[28:14] spreads based on our back testing is
+[28:16] really designed to minimize risk as much
+[28:18] as possible. Our goal, whenever we
+[28:21] optimize for credit spreads, is to
+[28:22] minimize risk because when we minimize
+[28:24] risk, we're able to maximize our
+[28:26] potential returns, even if that means
+[28:28] that you have a slightly lower
+[28:29] probability of profit. But the part that
+[28:31] Tom and I generally agree on is that you
+[28:33] generally want to sell about 45 days out
+[28:35] from expiration. You want to start out
+[28:37] about 45 days out. Where we disagree a
+[28:40] little bit as far as which legs you buy
+[28:41] and which legs you sell. We sell the 50
+[28:44] delta and we buy back the 25 delta,
+[28:46] which makes your net Delta about 25
+[28:49] Delta. So, your net Delta here is about
+[28:52] 25 Delta. Now, what Tom likes to do is
+[28:54] he likes to sell the 35
+[28:57] and then he buys the 25. I'm sorry, the
+[28:59] 20. So, that his net Delta here is only
+[29:01] about 15. Now, what his strategy does is
+[29:04] that generally speaking,
+[29:06] his strategy will have higher
+[29:08] probability of profits, but lower
+[29:10] income. Our strategies will have
+[29:12] slightly lower probability of profit,
+[29:14] but higher income. Now,
+[29:16] this is really where you as an investor
+[29:18] could make decisions on your own. And
+[29:20] we're going to show you how you can use
+[29:21] the options play tool to do that. But,
+[29:23] we are also going to show you the tools
+[29:25] that will first point you in the right
+[29:27] direction, and then you can make the
+[29:28] choice for yourself as to which strategy
+[29:31] is best suited for you. But, we we both
+[29:34] agree that generally speaking, you want
+[29:35] to try to collect at least 1/3 of the
+[29:38] distance between the two strikes. So, if
+[29:40] you have a $5 wide credit spread, you
+[29:42] want to collect about $1.67, $10, $3.33,
+[29:47] $12, $20, $6.67.
+[29:50] So, generally speaking, these are
+[29:51] probably the most common credit spreads
+[29:53] that you'll sell. So, we generally have
+[29:55] kind of these
+[29:56] burned into our head whenever we're
+[29:58] selling credit spreads is that
+[29:59] regardless of what width you're looking
+[30:01] for, you generally have a range as to
+[30:03] what you're trying to seek. Now, when
+[30:05] you're using these types of strategies,
+[30:07] you'll usually see that you'll have
+[30:08] about 67% winners or 67% probability of
+[30:13] profit while risking about $200 for
+[30:15] every $100 in potential income that you
+[30:18] receive. So, that is what we generally
+[30:21] consider the optimal credit spread. Now,
+[30:25] I consider this optimal because I never
+[30:27] want to risk more than two times what my
+[30:29] potential income
+[30:31] is. And when we sell the 50 to 25 Delta,
+[30:34] what we generally tend to find is that
+[30:36] we can actually get many times closer to
+[30:39] 40% of the width rather than 1/3. So,
+[30:42] when we have 40% income, what that means
+[30:45] is that our risk is reduced to 60% of
+[30:48] the vertical width. So, instead of
+[30:49] risking two to one, we're only risking
+[30:51] about one to one and a half or so, which
+[30:54] significantly reduces our risk. And
+[30:57] that's what we're trying to seek in our
+[30:59] strategy reports that I'll show you here
+[31:01] in 1 second. But, before we move on to
+[31:03] showing you our our opportunity report,
+[31:06] I do want to talk a little bit about
+[31:07] once you've entered a credit spread, how
+[31:09] do go about managing it. And generally
+[31:11] speaking, this is the part where Tom and
+[31:13] I are in complete agreement on, which is
+[31:15] really that there are three possible
+[31:17] triggers to exit your credit spread. And
+[31:20] whichever one triggers first, that is
+[31:23] your signal to get out of the credit
+[31:25] spread. Whether it's at a at a profit or
+[31:27] a loss, you want to get out whichever
+[31:29] one of these three's triggers first. So,
+[31:32] number one, if you get to 21 days to
+[31:35] expiration,
+[31:36] that's the first trigger. The second
+[31:38] trigger is if you've made 50% of the max
+[31:41] gain. And the third trigger is you've
+[31:44] lost 100% of the max gain. So, just to
+[31:48] give you an example, if I sell a $5 wide
+[31:51] credit spread, and let's say I collect
+[31:53] $2 in income for that $5 wide credit
+[31:57] spread. What I want to do is if I reach
+[32:00] a $1 profit on that particular trade, I
+[32:03] would take profit. If I reached a $2
+[32:07] loss, I would take my stop loss. Or, if
+[32:10] I reach 21 days to expiration first
+[32:13] without reaching either take profit or
+[32:16] stop loss, I would also get out of the
+[32:19] trade. Regardless of whether I'm in a
+[32:20] profit or a loss, if I'm at 21 days and
+[32:23] I haven't reached my take profit, or if
+[32:25] I haven't reached my stop loss, I would
+[32:27] simply get out of the trade. So, I just
+[32:29] want to make sure everyone understands
+[32:31] the math here. So, I sold it originally
+[32:33] for $2. So, if the trade starts to go in
+[32:36] my favor, then the income that starts to
+[32:38] decline, the so half of the max gain.
+[32:42] So, my max gain here is $2. Half of that
+[32:44] is $1. So, if it goes from $2 down to
+[32:48] $1, then I've gained $1 on the trade.
+[32:51] So, then I would take my profits and and
+[32:54] move on to the next trade. If this trade
+[32:56] starts to go against me and the and the
+[32:58] value of the credit spread starts to
+[33:00] rise instead of decline, and it rises up
+[33:03] to $4.
+[33:05] That's when I would consider cutting my
+[33:07] losses and taking a a loss on that
+[33:09] particular trade. And if let's say it
+[33:11] reaches 21 days to expiration and we are
+[33:14] not at either one of these profit
+[33:17] levels, either take profit or stop loss,
+[33:20] then I would get out of the trade
+[33:21] altogether. Now, some people will ask
+[33:24] about rolling whether it makes sense to
+[33:26] roll. From my perspective, if a trade is
+[33:28] going against me, it doesn't make sense
+[33:30] for me to roll simply because the
+[33:32] directional view that I had on the trade
+[33:34] is incorrect and I'm not going to
+[33:36] continue rolling and putting more money
+[33:38] at risk for a trade that just didn't
+[33:39] work out. But if the trade starts to go
+[33:42] in my favor, maybe it hasn't reached my
+[33:44] take profit yet, but it did reach 21
+[33:47] days to expiration, that is an
+[33:49] opportunity to roll your position out
+[33:51] another month and maybe adjust the
+[33:53] strike prices a little and stay in that
+[33:55] trade. So, for example, if IBB continues
+[33:58] to grind its way higher, but it doesn't
+[34:00] move much higher, but at 21 days to
+[34:02] expiration, maybe I've made uh 20 or 30%
+[34:05] of the max gain, then at that point I
+[34:07] may ask myself, do I think IBB is going
+[34:09] to continue moving higher? If I do, then
+[34:12] I may roll that trade into from a
+[34:14] November maybe out to December. But
+[34:17] that's really the time where I would
+[34:18] want to roll my position. When the trade
+[34:20] goes against me, that's not when I want
+[34:22] to roll my position because I simply got
+[34:24] the direction wrong. I don't want to
+[34:26] throw more money at a trade that didn't
+[34:28] go correctly. Um you can place another
+[34:31] trade if you feel strongly about it, but
+[34:34] generally speaking, that's not what I
+[34:36] do. But, that's a choice that you have
+[34:37] to make. I'm just letting you know what
+[34:39] I generally do when it comes to deciding
+[34:42] whether it makes sense to roll. Does
+[34:43] that make sense, everyone? Please type
+[34:45] six into the chat window if that makes
+[34:47] sense to you.
+[34:48] And I know there's a lot of questions
+[34:50] here. I will try to uh make sure that I
+[34:52] get to your questions. A lot of
+[34:53] questions about the 21-day rule. The
+[34:55] 21-day rule really comes down to the
+[34:57] fact that many investors have this
+[35:00] um, view that time decay is fastest in
+[35:04] that last two to three weeks. But, what
+[35:06] they don't realize is that when you have
+[35:08] very fast time decay, there's an
+[35:10] additional risk that you're taking on,
+[35:12] which is gamma risk. And gamma risk
+[35:14] starts to outweigh the acceleration in
+[35:16] time decay in those final two to three
+[35:19] weeks, which is why whenever we're
+[35:21] selling options, selling credit spreads,
+[35:23] selling covered calls, selling naked
+[35:25] puts, selling iron condors, we generally
+[35:27] want to avoid holding those trades in
+[35:29] the last two weeks because in those last
+[35:32] two weeks, yes, you're getting a little
+[35:33] bit extra income per day, but you're
+[35:36] taking on a whole lot more of gamma
+[35:38] risk. And what we're trying to do is
+[35:40] avoid that gamma risk. That's why we
+[35:42] close it out 21 days from expiration. If
+[35:45] we want to roll it out another two month
+[35:47] out to the December or January or
+[35:49] however long it
+[35:50] you're going out, you can do that if you
+[35:53] want more time on your trade, but always
+[35:55] roll it out. Don't hold it in the last
+[35:57] two to three weeks into expiration
+[35:59] because you're taking on a lot more
+[36:01] gamma risk.
+[36:03] So, with that, what I want to show you
+[36:05] is the credit spread opportunity report
+[36:07] that is available to all Options Play
+[36:09] members. You can find the credit spread
+[36:11] opportunity report at the bottom of your
+[36:13] Options Play platform when you click on
+[36:15] the credit spread report or credit
+[36:17] spread link. And what it'll take you to
+[36:20] is an opportunity report. And I'll show
+[36:22] you a few very quickly as to how the
+[36:24] opportunity report works. But, what the
+[36:26] opportunity report is designed to do is
+[36:28] that there are 4,200 symbols that you
+[36:31] can trade options on. But, we know that
+[36:32] the vast majority of those 4,200 is not
+[36:35] very liquid. So, first of all, we filter
+[36:37] out all of those non-liquid symbols. So,
+[36:39] we're only looking at what we consider
+[36:41] very liquid optionable symbols. This
+[36:44] usually is about 100 to 200 names per
+[36:46] day. And then, what we're looking for
+[36:49] are credit spreads that collect a
+[36:50] minimum of that 33% that we're referring
+[36:53] to. Because if we collect less than 33%,
+[36:56] that means we're risking more than two
+[36:58] to one. So, we never want to sell credit
+[36:59] spreads where we're risking more than
+[37:01] two to one. So, by filtering out 95% of
+[37:04] the names through liquidity, and then we
+[37:06] take a look at all the spreads all the
+[37:08] credit spreads that don't that don't
+[37:10] collect at least 33% of the width,
+[37:12] meaning the risk rewards are not in our
+[37:14] favor. And then, lastly, what we do is
+[37:16] we align it with our technical view. So,
+[37:18] what we have is a directional edge on
+[37:22] the view of the of the trade. Like I
+[37:24] said, the most important one of the most
+[37:26] important things of selling a credit
+[37:27] spread is still the directional view.
+[37:29] So, what we have is a report that gives
+[37:32] you out of the thousands of possible
+[37:34] combinations and
+[37:35] thousands is is
+[37:37] it's really more like millions of
+[37:38] possible combinations. It filters it
+[37:40] down to usually in the realm of 10 to 20
+[37:43] possible credit spreads. And this report
+[37:46] is actually updated for you every single
+[37:48] hour. And to understand how to read this
+[37:50] report, you can read it from left to
+[37:52] right. First of all, you have symbol and
+[37:54] direction. That is pretty
+[37:55] straightforward. What symbol is it? Is
+[37:57] it a bullish or bearish trade? Then,
+[37:59] we'll tell you the credit spread
+[38:00] details, meaning what strike price are
+[38:02] you buying, what strike price are you
+[38:03] selling, what expiration date are we
+[38:05] using. And then, one of the most
+[38:07] important things is risk to reward. This
+[38:09] is what we're talking about. How much
+[38:11] are you collecting of the vertical width
+[38:14] as a collection of the income. The
+[38:16] higher on the list you go, the better
+[38:18] the risk reward. The lower you go on the
+[38:20] list, the worse the risk-reward. So,
+[38:23] what you always want to do is focus on
+[38:25] the ones at the top of the list first
+[38:28] because those are the credit spreads
+[38:29] that give you the maximum amount of
+[38:31] income for the amount of risk that
+[38:33] you're taking. So, this APA trade that
+[38:35] I'm talking about here collects $1 out
+[38:38] of a 2 and 1/2 dollar wide credit
+[38:40] spread. That's 40% of the width. That
+[38:42] means I'm making potentially 40% of the
+[38:45] width and I'm risking only 60% of the
+[38:47] width. This is when the risk-reward is
+[38:49] skewed in my favor. And then we have a
+[38:51] few different things that helps you
+[38:53] better
+[38:55] sort and filter these if you'd like,
+[38:56] which is IV rank.
+[38:58] We talked about IV rank when high is,
+[39:00] generally speaking, a better opportunity
+[39:03] for selling credit spreads and also the
+[39:05] next earnings date so that you know
+[39:07] whether or not there's an earnings
+[39:08] coming up. Generally speaking, we don't
+[39:10] love selling credit spreads going into
+[39:12] an earnings event. So, we generally want
+[39:14] to understand if there are earnings
+[39:16] coming up. Now, with earning season
+[39:18] coming up right now, it's a little
+[39:19] harder to avoid. So, maybe sometimes you
+[39:22] could sell a 45-day option on something
+[39:24] that doesn't report earnings for another
+[39:26] 20 or 30 days. That's fine because
+[39:28] you're you're likely going to exit the
+[39:30] trade before that earnings date, but
+[39:32] it's important that you know what the IV
+[39:34] rank and the earnings dates are. And
+[39:36] like I said, this report is updated
+[39:38] hourly. So, the very last column tells
+[39:40] you when the report was last updated. We
+[39:43] update this every single hour starting
+[39:45] at about 10:15 a.m. after the market
+[39:47] opens. We update that every single hour
+[39:49] all the way through the close and the
+[39:51] last snapshot is around 4:15, 4:16, or
+[39:54] so after the close.
+[39:56] So, we generally use this report
+[39:58] intraday. We generally don't use it
+[39:59] after hours. And the reason only because
+[40:02] of that is because after hours we tend
+[40:04] to see that the spreads get wider. So,
+[40:06] sometimes we get some funky um premiums
+[40:09] that are not really executable. So,
+[40:11] that's why, generally speaking, we use
+[40:13] this report only during the intraday.
+[40:16] So, this is a report that you all have
+[40:18] access to and it really allows you to
+[40:20] quickly scan for possible opportunities
+[40:22] and I'll show you this real quick using
+[40:24] the current credit spreads report. So,
+[40:25] this is what was generated just about an
+[40:27] hour ago before we started this
+[40:30] um
+[40:30] this uh
+[40:32] this webinar. So, the two that kind of
+[40:34] jumps out at me are the two uh Tesla and
+[40:38] um
+[40:39] and and SLV. Now, Tesla reports earnings
+[40:42] in 13 days, so that may not be the best
+[40:44] suitable one because but it does have a
+[40:46] relatively high IV rank. So, for those
+[40:49] of you that perhaps are looking for an
+[40:50] earnings play, this is also one way that
+[40:52] you can play earnings with limited risk.
+[40:55] But, the one that I wanted to take a
+[40:56] look at was silver. Silver collects in
+[40:58] this particular case 39% of the width.
+[41:01] It's got an IV rank of 40% which is
+[41:03] pretty high here and silver's currently
+[41:05] trading at 22.20. This would sell the 22
+[41:08] strike, buy back the 20s. That's a $2
+[41:10] wide credit spread that I'm collecting
+[41:12] $0.77. That's 39% of the width. So, what
+[41:16] I would do is I would take this trade, I
+[41:18] would bring it up in Options Play
+[41:21] and I would look at this using Options
+[41:23] Play. So, SLV, you know, and I was
+[41:25] looking at gold here earlier today or
+[41:27] silver. Certainly broke down below that
+[41:29] support level but recently finding a
+[41:31] little bit of support. Maybe it's it's
+[41:33] ready to bounce back higher here. So,
+[41:35] this depends on whether you agree from a
+[41:37] directional perspective but silver looks
+[41:39] a bit oversold. Those are the conditions
+[41:42] that we generally look for for a bullish
+[41:44] credit spread and what we were looking
+[41:45] for is to sell the 22 and buy back the
+[41:48] 20 put credit spread. As you can see,
+[41:50] the midpoint here is still $0.77. So,
+[41:52] I'm still able to execute this trade at
+[41:54] the price from about a couple of hours
+[41:57] ago and this allows me to utilize the
+[41:59] Options Play tool to see what happens
+[42:02] and how much premium do I potentially
+[42:03] collect if SLV starts to move higher
+[42:07] uh between now and expiration. So, if it
+[42:09] moves up to let's say 23, how much can I
+[42:12] potentially make uh by let's say
+[42:14] Halloween? So using the P&L simulator
+[42:17] allows me to better understand what my
+[42:19] potential outcome for these credit
+[42:21] spreads are. But this prevent This means
+[42:23] that I don't have to search for specific
+[42:26] symbols. I don't have to see if there's
+[42:28] liquid or not. I don't have to
+[42:29] specifically pick expiration dates and
+[42:32] strike prices. The report does all of
+[42:34] that work for you and provides you all
+[42:36] the information that you need to decide
+[42:38] very quickly which one of these you want
+[42:40] to pay attention to, plug it into
+[42:42] Options Play, and immediately be able to
+[42:44] analyze them and potentially trade them
+[42:46] or execute them into your broker's
+[42:48] platform. So I'll just take a look at a
+[42:50] few of them here just to show you how
+[42:52] quickly I can take a look at this. Let's
+[42:54] say I don't mind Tesla's earnings coming
+[42:56] up in 13 days, and I see that Tesla's
+[42:58] trading at 429 or so. This is telling me
+[43:01] to sell the 420 356
+[43:04] put credit spread here on Tesla. So
+[43:06] let's take a look at that. 420 356.
+[43:13] So Tesla's certainly been range bound
+[43:15] here for the past couple of weeks or so.
+[43:17] It's been trading itself into a bit of a
+[43:18] triangle here. Maybe you think that
+[43:20] there's going to be a breakout here to
+[43:22] the upside. So what we can use is we can
+[43:24] use our strategy constructor to
+[43:26] construct a short put vertical. We're
+[43:28] going to sell the 420, buy the 356
+[43:32] or so. So that is a
+[43:37] $564
+[43:40] wide credit spread that I'm collecting
+[43:42] $26.60
+[43:44] for. $26.60
+[43:47] on a $64 wide credit spread is a little
+[43:49] over 41% of the width here. So this is
+[43:53] one what I mean, Tesla does have very
+[43:55] high implied volatility. You know, as we
+[43:57] saw here before the IV rank here is 39%.
+[44:00] So that's why I'm able to collect a
+[44:02] little bit more premium here.
+[44:04] Collecting that that premium allows me
+[44:06] to again, minimize right my risk. And
+[44:09] you can use this this tool to help you
+[44:11] understand what's your maximum reward,
+[44:13] what's your maximum risk, and quickly be
+[44:15] able to calculate that using the Options
+[44:18] Play tool. So, this is really designed
+[44:20] from the ground up to make your credit
+[44:22] spread trading experience as quick as
+[44:24] possible because I know that as a
+[44:26] trader, the amount of time it takes you
+[44:28] to, number one, research an underlying
+[44:30] stock, pull up the option chain,
+[44:32] determine which expiration date strike
+[44:35] price, uh
+[44:36] liquidity, IV rank, earnings date, all
+[44:39] of that stuff takes a lot of time to
+[44:41] collate that data. And many times, you
+[44:43] do all that work, and then you realize
+[44:45] that the credit spread doesn't collect
+[44:46] enough premium, or there's an earnings
+[44:48] coming up, or the IV rank's not high
+[44:50] enough. There's There's a lot of wasted
+[44:52] time in that. We wanted to avoid all of
+[44:54] that through this credit spread report.
+[44:56] And this is designed from the ground up
+[44:58] to facilitate us as traders to quickly
+[45:01] find these opportunities. And we many
+[45:03] times use this to find our daily play
+[45:06] ideas. We We pull from these reports to
+[45:09] to look at these stocks to see
+[45:10] opportunities, and these are the ones
+[45:12] that we present on the daily play ideas.
+[45:14] So, this is a very powerful tool for
+[45:16] those of you that are looking to sell
+[45:18] credit spreads to find ideas, but also
+[45:20] be able to understand how they're
+[45:22] constructed. So, I hope that this
+[45:24] webinar was helpful in giving you a
+[45:25] better understanding of credit spreads
+[45:28] themselves, and more importantly, the
+[45:30] tools that we have here at Options Play
+[45:32] to help you find and hopefully execute
+[45:34] and analyze these types of trades. So,
+[45:36] with that, that covers what I wanted to
+[45:38] share with you here today. I hope that
+[45:40] this was, again, helpful for those of
+[45:42] you that are relatively new to credit
+[45:43] spreads to learn more about it. And for
+[45:45] those of you that are currently selling
+[45:47] credit spreads, I hope that these tools
+[45:49] will help you quickly find opportunities
+[45:51] in the market rather than taking so much
+[45:53] time to find those. So, with that, what
+[45:55] I'll do is I'll open this up for Q&A. I
+[45:57] have a few minutes availed for Q&A. I
+[46:00] don't have a lot of time. However,
+[46:02] there's a chat window and there's a Q&A
+[46:04] window. What I like please is if you
+[46:07] have questions, to please type them into
+[46:09] the Q&A window. Um and I will answer
+[46:11] your questions through that Q&A windows
+[46:13] section um and I will do it
+[46:16] um as quickly as possible, uh but I do
+[46:19] have to run here in a few minutes, but I
+[46:20] do want to try to answer as many
+[46:22] questions as possible. Michael's asking,
+[46:24] "What do the colors indicate?" Indicate.
+[46:26] So, the colors are really color coded so
+[46:28] that no I I think from a premium width
+[46:30] perspective, it's fairly um
+[46:32] self-explanatory. The green ones are
+[46:34] means that you have the most amount of
+[46:36] income for the amount of risk. From an
+[46:39] IV rank perspective, what you're looking
+[46:40] for are red IV ranks because the higher
+[46:43] the IV rank, the redder they are, if you
+[46:45] will. Um the lower the IV rank, the the
+[46:48] the greener they are. So, it's just it's
+[46:50] just color coding so it's easier to spot
+[46:53] which ones have a higher IV rank. So,
+[46:54] Facebook, as you can see out of all of
+[46:56] these, actually have the highest IV rank
+[47:00] here out of all of them. But, credit
+[47:01] But, this particular one only collects
+[47:03] 34% of the width. So, the premium here
+[47:06] is not as attractive as something as
+[47:08] this, but certainly still up there in
+[47:10] terms of uh an opportunity that is
+[47:13] suitable, in my opinion.
+[47:15] Uh define IV rank. IV rank is just
+[47:18] taking the Let's say this was the
+[47:20] implied volatility chart of a stock over
+[47:22] the past year. All we're doing is taking
+[47:25] the absolute low, right? So, let's say
+[47:27] if this was 10,
+[47:28] and we're taking the absolute high,
+[47:30] let's say this was 100, then what we're
+[47:33] going to say is where is today's value
+[47:35] in respect to this range? So, like like
+[47:38] we said, the range was from 100 to to
+[47:40] 10. So, if today is down here, then what
+[47:43] we're going to say is IV rank is maybe
+[47:45] 10%, meaning it's at the bottom of its
+[47:47] one-year range. That's what IV rank is
+[47:50] trying to tell you. But, then if I if
+[47:51] let's say IV was up here, it would tell
+[47:53] you the IV rank is 90, meaning it's very
+[47:56] high compared to the range that it's
+[47:58] been over the last year. So, that's how
+[48:00] IV rank is calculated. It's pretty
+[48:01] simple.
+[48:03] When I log into OptionsPlay, I cannot
+[48:05] find it. Bill,
+[48:07] you can't find me credit spread report.
+[48:09] It's at the very bottom of your screen
+[48:11] on the black bar, the very bottom called
+[48:14] credit spreads.
+[48:17] Is there a separate subscription to the
+[48:18] credit spread screen or is it part of
+[48:19] the package? It's part of your
+[48:21] OptionsPlay membership.
+[48:24] Is IV Is IV as high day prior to
+[48:27] earnings? What is the best play? Um if
+[48:30] IV is high
+[48:32] day prior to earnings, what is the best
+[48:34] play? So, David, you know, like I said,
+[48:36] IV is not your sole decision-making
+[48:38] process as far as what's the best play.
+[48:41] The best play is dependent on your
+[48:42] directional view because your biggest
+[48:44] exposure is the delta. So, if you think
+[48:46] the stock's going to make a big move,
+[48:48] perhaps you might want to look at buying
+[48:49] some calls or puts or spreads. Um if you
+[48:52] think the stock's not going to make a
+[48:53] big move, then you definitely want to
+[48:55] sell credit spreads like this. But, it
+[48:56] depends on where you think the stock's
+[48:58] going to go.
+[49:00] Law- Lawrence is saying, "Have you ever
+[49:01] dealt with an an early assignment? Is
+[49:03] there a risk that you need to be
+[49:04] concerned with?" That's a great
+[49:05] question, Lawrence. Um yes, early
+[49:08] assignment is not particularly um the
+[49:11] most fun thing to go through, but keep
+[49:13] in mind that when you get assigned early
+[49:15] on a credit spread, it doesn't change
+[49:17] the risk of the trade. Your maximum risk
+[49:19] remains the same even if you get
+[49:21] assigned early unless you let the short
+[49:24] leg roll expire and you still keep the
+[49:28] stock leg. That's when your exposure
+[49:30] changes. But, as long as you hold the
+[49:32] trade to expiration, your risk does not
+[49:34] change. So, generally speaking, if you
+[49:36] get assigned early on a credit spread,
+[49:38] the best thing to do is to simply close
+[49:41] out both legs, the stock leg and the
+[49:43] remaining long put or call that you have
+[49:45] left, and get out of the trade
+[49:47] altogether. It's not a high risk, but if
+[49:49] you do have it does happen, you
+[49:51] generally just want to exit the trade.
+[49:53] Can you please explain gamma risk? Um so
+[49:56] gamma risk is really the risk that you
+[49:57] take being short the option. So delta
+[50:01] delta goes from zero to one. That's your
+[50:03] delta range. And at expiration, as you
+[50:05] get closer to closer expiration, um the
+[50:08] stock becomes very sensitive. It can
+[50:09] either go all the way to zero or all the
+[50:11] white way to one very very quickly, even
+[50:13] with a very small change in the
+[50:15] underlying stock price. So gamma tells
+[50:17] you how fast is the delta is changing.
+[50:20] So as you get closer to expiration, the
+[50:21] at-the-money options have the highest
+[50:23] amount of delta risk, meaning you can go
+[50:25] from a a
+[50:27] a big winner to a big loser in a very
+[50:29] short amount of time based on just the
+[50:31] stock price moving a very small amount.
+[50:33] So it's a sensitivity to P&L from the
+[50:36] stock price moving up or down. And gamma
+[50:38] gets really high as you get as you get
+[50:40] closer to expiration. And that
+[50:43] acceleration in gamma risk is not worth
+[50:46] it in the last 2 weeks before
+[50:48] expiration.
+[50:50] Why does the credit spreads not score
+[50:51] over 100?
+[50:53] It really comes down to the risk reward
+[50:55] ratio from the fact that you do still
+[50:58] have a fair amount of potential risk
+[51:00] here. Now, Tesla is a volatile stock. So
+[51:03] even though we're selling and buying
+[51:04] back to 356, notice that the trading
+[51:07] range for Tesla is all the way down to 2
+[51:09] 307. So there's a still high amount of
+[51:12] probability that Tesla will actually
+[51:14] move down substantially. So that's why
+[51:16] the options play score is not
+[51:18] particularly high because you still have
+[51:20] a fair amount that Tesla blows through
+[51:22] your lower strike and continues moving
+[51:24] lower between now and the November
+[51:26] expiration. But again, we're not really
+[51:28] trading till November expiration to be
+[51:30] perfectly honest. You know, we're really
+[51:31] trading closer to October 30th, as you
+[51:33] can see. That's closer to 338 as the
+[51:35] expected trading range. So you can use
+[51:37] that to kind of adjust your expectations
+[51:40] for your um your outlook for the
+[51:43] underlying stock.
+[51:45] What about DRM? I'm not sure what DRM
+[51:48] refers to Chuck if you can clarify.
+[51:50] Please explain buying versus selling
+[51:53] Delta. So if you're long an option
+[51:55] you're long Delta, if you're short an
+[51:56] option you're short Delta.
+[51:59] Rather rather sorry, I take that back. A
+[52:02] long call is long Delta, a short call is
+[52:05] short Delta, a long put is short Delta,
+[52:08] a short put is long Delta. It really
+[52:10] depends on it's just your exposure to
+[52:12] the underlying stock. Delta's just
+[52:14] telling you whether if you make money if
+[52:15] the stock goes higher or lower.
+[52:18] Um
+[52:19] So that's all Delta's telling you is the
+[52:20] sensitivity of your option to the
+[52:23] underlying stock price moving higher or
+[52:25] lower.
+[52:26] What's your favorite technical indicator
+[52:27] when deciding to sell a credit spread? I
+[52:29] tend to use either CCI, commodity
+[52:32] channel index, or an RSI. Those are
+[52:34] probably my two favorite indicators. I
+[52:36] am doing a special members only webinar
+[52:39] next Friday. So this Friday we have an
+[52:41] election special. Next Friday I'm doing
+[52:43] a technical analysis one. I'm going to
+[52:44] be talking about indicators. We've back
+[52:47] tested thousands of indicators over
+[52:50] 13 years and we have the performance
+[52:53] reports of all these technical
+[52:54] indicators. I'll be sharing that with
+[52:56] you in our members only webinar next
+[52:58] Friday. I hope those of you that are
+[53:00] interested in technical analysis will be
+[53:02] able to join me for that. Jacob's saying
+[53:04] should credit spreads be bought at
+[53:05] market or limit prices? If limit what
+[53:08] limit? You should always use a limit
+[53:09] price and we always encourage you to try
+[53:11] to start with the mid price and move
+[53:13] your way up move your way down, sorry.
+[53:17] Um and we actually have a webinar just
+[53:19] on this alone entering option orders on
+[53:22] our YouTube page. I highly recommend you
+[53:24] to watch that Jacob if you have not
+[53:26] watched it. James, can we get these
+[53:28] slides? Yes, all the slides are
+[53:30] available to you in the YouTube
+[53:31] description. Every single time we upload
+[53:33] something to YouTube the the slides are
+[53:35] linked in the description. So please if
+[53:38] you're watching any of our webinars on
+[53:40] YouTube and you want the slides, look in
+[53:42] the description. You'll be able to
+[53:43] download the slides.
+[53:45] Is there a subscription to access
+[53:46] Options Play spreadsheet? Um so, the
+[53:49] full Options Play membership gives you
+[53:51] access to all of these things. The
+[53:52] earnings calendar, the liquidity report,
+[53:54] the credit spread report. That is all
+[53:56] included in your membership for for
+[53:59] Options Play. There's no additional
+[54:00] subscription for that.
+[54:03] Would still like to know about P&L data.
+[54:05] I'm not sure what you mean by Clifford,
+[54:07] what you mean by P&L data. If you don't
+[54:08] mind clarifying, I'm happy to answer
+[54:10] that question. Where can you find the
+[54:12] spreadsheet? It is at the bottom of your
+[54:14] screen here where it says credit
+[54:16] spreads. That's how you can find the
+[54:18] spreadsheet.
+[54:21] Could you I think I've just talked about
+[54:22] that. Could you explain what you mean by
+[54:24] gamma risk? I think I've also discussed
+[54:26] that as well. What is the math of a 3700
+[54:29] and 13
+[54:32] 1700 original credit spread? Oh,
+[54:36] Jack, I was saying that if you sold a
+[54:38] naked put, not a credit spread. I was
+[54:40] saying that if you sold a naked put
+[54:42] here, if you sold this 142 put, you
+[54:45] would subtract $5 from 142. That gives
+[54:47] you roughly a 137 dollars. Multiply that
+[54:51] by 100 shares. That's how you get a
+[54:53] margin requirement of about $13,000 to
+[54:56] sell a naked to sell a 142 put or cash
+[54:59] secured put on on that IBB. That's what
+[55:02] I was referring to.
+[55:04] Are they updated on the hour every day?
+[55:06] They're updated about on the 15 on every
+[55:09] hour. So, 10:15, 11:15, 12:15, and so
+[55:12] on, all the way through 4:15.
+[55:15] What is an easy way to tell my profits
+[55:16] that is at 50%? So, Edward, that depends
+[55:19] on your brokerage firm. Each brokerage
+[55:21] firm has different ways to show you your
+[55:22] P&L. Most brokerage firms do just can
+[55:25] display your P&L from a percentage
+[55:27] perspective. That would be the best way.
+[55:31] What's the risk reward for condors
+[55:33] deltas? So, we usually sell about a 35
+[55:36] delta on an iron Condor and buy back
+[55:38] about a 20 Delta on an iron Condor. So
+[55:40] those are the Deltas that
+[55:42] um
+[55:43] uh
+[55:44] Tom refers to in his
+[55:47] uh credit spreads.
+[55:53] Tom Ted is saying received today to
+[55:55] close CRM call spread but did not change
+[55:57] in the web. Um so Ted, we will update
+[55:59] that af- after the close here today.
+[56:02] Philip is saying hey Tony, so when when
+[56:04] we sell a credit spread is not
+[56:05] considered a naked call. No, it is not a
+[56:08] naked call because it is covered it's
+[56:10] effectively covered by the long call
+[56:12] that you've purchased.
+[56:15] Um our Michael Donovan another great
+[56:17] educational session Options Play is a
+[56:19] great tool for someone trading options.
+[56:21] Any option strategy works well for me.
+[56:23] Thank you so much. I really appreciate
+[56:25] those kind of words. Brad suggestion
+[56:27] consider inverting the color coding for
+[56:29] IV rank so that you're looking for green
+[56:31] across the board for the best ideas.
+[56:33] Okay Brad, I can take a look at that. I
+[56:34] mean we usually want to use high IV with
+[56:38] red. Um we usually associate that color
+[56:40] red with high IV and green with low IV.
+[56:44] Um but I I'll take a look at that.
+[56:47] Bill is saying I don't have the black
+[56:49] bar. Bill, send me an email at
+[56:50] info@optionsplay.com
+[56:53] and I'll take a look at your account as
+[56:55] to why you don't see that.
+[56:57] Um
+[56:59] what is a 50 Delta call or put? So why I
+[57:02] do recommend that you take a look at
+[57:04] some of our basic educational webinars,
+[57:06] but Delta is basically an approximation
+[57:08] of the probability of a strike price
+[57:10] being in the money at expiration. So a
+[57:12] 50 Delta call or put is generally
+[57:14] speaking what we we refer to as the at
+[57:17] the money strikes. So we usually sell
+[57:19] the first strike outside of the at the
+[57:22] money strike prices on these credit
+[57:23] spreads.
+[57:24] Are you working also with the debit
+[57:26] spread list? Yes, we are also working
+[57:28] with the debit spread list and that is
+[57:30] was we will be publishing here in the
+[57:32] next um in November.
+[57:35] Has there been a comparison of
+[57:37] probabilities before expiration versus
+[57:39] after expiration to see how close
+[57:41] probabilities actually were? Um Patrick,
+[57:42] yeah. So, deltas we've back-tested this
+[57:45] for many many years, all the way back to
+[57:46] about 2007 before the financial crisis.
+[57:49] It is It is resound It is It is crazy
+[57:53] how accurate delta is to actual
+[57:56] probabilities of expiring worth of
+[57:58] expiring in the money at expiration. So,
+[58:01] yes, a lot of people have been put to a
+[58:04] I I can't explain to you the countless
+[58:07] computing cycles that options traders
+[58:09] have put onto this task of calculating
+[58:12] their probability models and whether
+[58:13] they are accurate or not because that is
+[58:16] effectively the intellectual property of
+[58:19] all market makers and options traders is
+[58:21] how good their volatility models are and
+[58:23] how accurate they are at predicting
+[58:25] probabilities.
+[58:29] Recommended expiry is the same for all
+[58:31] trades. Do you recommend expiry dates to
+[58:34] be out if we are trying multiple trades
+[58:36] from the list? Um no. So, we always use
+[58:39] 45 days to expiration. That is your
+[58:42] optimal expiration date for a selling a
+[58:44] credit spread. Um we We sometimes may
+[58:48] vary by week. So, sometimes some symbols
+[58:51] we might sell the weekly option, other
+[58:52] ones we might sell the monthly options,
+[58:54] but generally you're not deviating more
+[58:55] than no more than about 7 days or so.
+[59:00] When would you consider different
+[59:01] expiration dates in the two options of
+[59:03] the credit or debits? Not sure what you
+[59:05] mean by that, Barry, but you know, the
+[59:07] credit spreads we usually sell about 45
+[59:09] days out. Debit spreads we like to go a
+[59:11] little closer to 60 days. We're actually
+[59:13] making some of our modifications to our
+[59:16] application to account for that, where
+[59:17] debit spreads are naturally selecting
+[59:19] strike prices a little bit further away
+[59:21] than credit spreads. So, there's a lot
+[59:22] of things that are coming up in the
+[59:24] options flight platform to switch
+[59:25] between debit versus credit spreads and
+[59:27] automatically showing credit spreads in
+[59:29] the OptionsPlay platform.
+[59:32] Um, and yes, there are plans to include
+[59:34] the ability to create your own
+[59:35] portfolio, or rather, pull in your
+[59:37] portfolio from your brokerage firms, and
+[59:39] also some paper trading possibilities. A
+[59:41] lot of questions about paper trading, so
+[59:43] we're exploring the ability to paper
+[59:45] trade using the OptionsPlay.
+[59:47] Can one see these slides? Yes, all of
+[59:50] them are available on our YouTube
+[59:51] channel. If you look at any video on
+[59:53] YouTube, there's a link at the bottom in
+[59:55] the description with the link to the
+[59:57] slides if you want to download them.
+[60:01] Can you repeat what Tom does and what
+[60:03] you do with the delta? So, I sell the 50
+[60:06] and buy back the 20. Tom sells the 35
+[60:09] and buys back the 20. So, his delta
+[60:12] ranges are a little smaller. His net
+[60:13] exposure is only 15 delta, so he has
+[60:16] less delta exposure than ours. So, his
+[60:18] usually has less income with a high with
+[60:21] more risk, but it comes with a higher
+[60:23] probability of profit.
+[60:25] So, many of his probability of profits
+[60:27] are closer to 80% winners, but they're
+[60:30] many times risking about two and a half
+[60:32] to one
+[60:33] on the trade rather than
+[60:36] two to one.
+[60:39] Is the max risk really just the spread
+[60:41] of the strikes minus the premium
+[60:43] collected? Is the max risk Yes, that is.
+[60:45] The max risk is just the difference
+[60:47] between these two strikes minus the
+[60:49] premium that you collected. Can you ever
+[60:51] lose more than this amount?
+[60:53] No, you cannot lose more than this
+[60:55] account unless you get early assigned
+[60:57] and you don't manage them correctly.
+[61:00] And and unless you hold them to
+[61:02] expiration, get assigned on one leg, and
+[61:05] then
+[61:06] let's say the market moves over the
+[61:07] weekend and you have substantially large
+[61:10] exposure where the long where the long
+[61:12] leg is no longer providing that
+[61:13] protection. But again, if you keep to
+[61:15] the rules by closing out your trades at
+[61:17] those rules that we're referring to
+[61:19] here,
+[61:20] then you will never lose more than the
+[61:22] max loss of that trade.
+[61:25] Um
+[61:27] let's see.
+[61:36] Do you have a gamma scalping strategy?
+[61:38] Bill, uh we do not have a gamma scalping
+[61:41] strategy.
+[61:43] Do you calculate IV rank?
+[61:46] IE 39% for Tesla versus implied
+[61:49] volatility in Tesla and think or swim
+[61:50] shows 80%. So, IV rank is different than
+[61:54] implied volatility. If you go to If you
+[61:56] go to thinkorswim and you scroll to the
+[61:58] bottom of your options chain, there is a
+[62:01] a tab There is a section on your options
+[62:03] chain called options statistics. Under
+[62:06] those options statistics, there's a um
+[62:08] indicator here called IV percentile.
+[62:10] You'll see that IV rank for Tesla will
+[62:13] probably be very close to 39% as well.
+[62:16] IV rank only goes from 0 to 100. It's a
+[62:18] different indicator than implied
+[62:20] volatility. That's a completely
+[62:22] different thing. Implied vol IV rank is
+[62:23] calculated from implied volatility, but
+[62:26] implied volatility and IV rank are two
+[62:28] different things.
+[62:31] I thought IV rank vary depending on
+[62:33] which option you choose. IV rank
+[62:35] different than IV Uh that's correct. IV
+[62:37] rank and IV are completely different. IV
+[62:40] rank is a generalized volatility
+[62:43] indicator versus IV is calculated for
+[62:45] each individual strike price that you
+[62:47] can trade.
+[62:48] Please recommend a book for technical
+[62:50] analysis. Joseph, I've I've been so far
+[62:53] out of technical analysis in terms of
+[62:55] books. Um I'd have to look that up. Um
+[62:57] you can send me an email at honestly,
+[62:59] it's been probably a good 10 years
+[63:01] before I've read a technical
+[63:05] analysis book. Um I tend to find the
+[63:07] chart school um on uh stockcharts.com is
+[63:11] a really great online resource because
+[63:13] technical analysis is much more
+[63:15] interactive these days. You need a
+[63:16] computer to do that technical analysis.
+[63:19] So, I find reading a book then going on
+[63:21] to your computer is a little bit more
+[63:22] difficult. If you go to chart school um
+[63:25] at at um
+[63:26] stockcharts.com, it's fully interactive
+[63:28] and you can chart immediately on that
+[63:30] platform. So, I do recommend that.
+[63:33] What time is the Friday webinar? The
+[63:35] Friday webinar, the election special
+[63:37] that we're doing tomorrow, is at 9:00
+[63:38] a.m. Um you have to be a member in order
+[63:41] to sign up, um but it is at 9:00 a.m. Is
+[63:45] there a spread bid ask that you would
+[63:47] not enter because it's too wide? So,
+[63:49] Ted, what we've done with these credit
+[63:51] spread reports is we only look at very
+[63:53] liquid names. So, I don't have to worry
+[63:55] about how wide bid ask spreads,
+[63:57] liquidity, open interest, volume. I
+[63:58] don't have to worry about any of that.
+[63:59] These are all names that have already
+[64:01] passed bid ask spread filters. I'm
+[64:04] sorry, uh liquidity filters.
+[64:07] Isn't picking 5% out of the money short
+[64:09] strike instead of at the money a safer
+[64:11] play? It forgives you even if you have
+[64:13] the direction wrong a little bit. So,
+[64:15] this is a great question. The question
+[64:17] was why not just choose something really
+[64:19] far out of the money? And this is what I
+[64:21] see a lot of beginners do. They'll sell
+[64:23] something really far out of the money
+[64:25] and they do it because they think that,
+[64:27] okay, I have a lot more room to even if
+[64:29] I'm wrong, I can I can still make money
+[64:32] even if Tesla goes down to 385. Yes,
+[64:35] that is true. But, what you're doing is
+[64:37] you're taking on a lot more risk for the
+[64:40] amount of reward that you're doing. Like
+[64:42] I said, all things are trade-offs,
+[64:44] right? What you're trading off now is a
+[64:45] higher probability of profit for a
+[64:47] substantially worse risk reward. If
+[64:50] that's what you want to do, by all
+[64:51] means. Just understand that when you do
+[64:54] lose, you're going to lose substantially
+[64:56] more. I want to make sure that no matter
+[64:58] what happens, even if the trade
+[65:00] completely blows out and the stock goes
+[65:02] really far in the opposite direction
+[65:04] that I'm expecting to, that I do not
+[65:06] take on a substantial amount of risk.
+[65:08] When you do these high probability
+[65:10] trades that you're talking about, you
+[65:11] absolutely can do that. There's nothing
+[65:13] wrong with it. Just understand what
+[65:15] you're trading off when you're doing
+[65:16] that.
+[65:19] And and unfortunately, most of the
+[65:21] people that lost most of their money
+[65:23] during this sell-off were doing those
+[65:25] types of strategies. So, when when QQQ
+[65:28] was trading at 300, we were seeing a lot
+[65:30] of people selling these one-week 290,
+[65:32] 280, even 270 options that just got
+[65:35] blown out from one quick move to the
+[65:38] downside. And from my perspective, this
+[65:40] was a sharp move, but it was nothing
+[65:42] compared to what we saw during the
+[65:44] coronavirus, right? You know, if you had
+[65:46] sold some of these strategies, I saw
+[65:48] some some credit spreads where people
+[65:50] were collecting a few hundred dollars in
+[65:52] income and taking on about $4,500 worth
+[65:55] of risk because they were selling these
+[65:57] really far out of the money credit
+[65:58] spreads and they thought to themselves,
+[66:00] well, I have 98% probability of profit,
+[66:02] 99% probability of profit. I'm good. I'm
+[66:05] going to make money 99% of the time.
+[66:07] Forgetting the fact that the 1% of the
+[66:09] time that they lose money, they wipe out
+[66:11] potentially months, if not years, worth
+[66:14] of gains from that one bad month. And
+[66:16] all you need is one bad month, one big
+[66:19] black swan, and it takes you out
+[66:21] completely. That's why I don't like
+[66:23] doing that because in my
+[66:24] in my trades, even if you have a month
+[66:27] where the stock market is down 40%, the
+[66:29] most I'm losing is roughly one and a
+[66:32] half to two times the income that I'm
+[66:34] collecting.
+[66:35] That's the reason why I choose to have
+[66:37] these relatively lower probability but
+[66:40] much lower risk trades.
+[66:43] So, don't just don't just pick trades
+[66:45] because you have a higher probability of
+[66:46] profit. That is the one mistake that I
+[66:48] see most beginners make is that they
+[66:50] choose probability of profit over
+[66:52] everything else to their detriment in
+[66:54] the long run. It works for you in the
+[66:56] short run, it's better for you in the
+[66:57] short run, but in the long run, it blows
+[66:59] up in your face. We call This is what
+[67:02] traders call picking up pennies in front
+[67:04] of a freight train. Um
+[67:06] because that's literally what you're
+[67:07] doing. You that you're winning all the
+[67:09] time, you're picking up small profits
+[67:10] every single week, week-to-week, and
+[67:12] you're thinking to yourself, this is a
+[67:13] great way to make income, and all it
+[67:15] takes is one bad week, and you've wiped
+[67:17] out months, if not years, worth of
+[67:19] gains.
+[67:21] Um do you have strangle videos on
+[67:24] YouTube? So, I currently don't have a
+[67:26] strangles video. We don't sell a lot of
+[67:28] strangles here, but I certainly can
+[67:30] create one. There's something that has
+[67:31] been brought up a couple of times here
+[67:33] over the past month, so I will consider
+[67:35] adding that here in November.
+[67:37] Profit loss. So, I'm not sure,
+[67:40] Joseph, what you mean by profit and
+[67:42] loss, if you don't mind clarifying. I I
+[67:44] understand profit and loss, I just don't
+[67:45] know what your question with profit and
+[67:47] loss is. Is it better to use strike
+[67:49] prices on $5 increments, as these tend
+[67:51] to be more liquid? So, Michael, um
+[67:54] yes and no. So, I really like the
+[67:57] weeklies because they provide a lot of
+[67:59] flexibility in being able to um
+[68:03] to pick strike prices that I
+[68:04] specifically want. I can get much more
+[68:06] granular. I can find that 50 delta, I
+[68:08] can find that 25 delta. When they're $5
+[68:10] strikes, you tend to find it's a little
+[68:12] harder to find exactly the strike you're
+[68:13] looking for. Um
+[68:15] however, you know, liquidity is a factor
+[68:18] of the stock, not which expiration date
+[68:21] you're using. So, it's not like the
+[68:23] monthly options are more liquid than the
+[68:25] weekly options. That's a common
+[68:26] misconception. A lot of users will
+[68:28] they'll see is that weekly options have
+[68:29] low open interest and volume. That's
+[68:31] because they were just listed a few
+[68:33] weeks ago, or maybe just a few days ago.
+[68:35] Um that's why there's low open interest
+[68:37] and volume, but there's not they're not
+[68:38] any less liquid. You can trade them just
+[68:41] as easily as you can the monthly
+[68:42] options. So, don't be afraid to trade
+[68:44] those weekly options that have no open
+[68:46] interest and volume. Uh put your orders
+[68:48] in at the mid price, you'll see that
+[68:50] you're likely get filled, especially in
+[68:52] the names that are in the very liquid
+[68:53] names on our list.
+[69:01] Sorry to ask again, is there P&L on the
+[69:04] spreadsheet trades that you've taken
+[69:05] using the spreadsheet? Is there profit
+[69:07] Clifford? So yeah, we've you know, in
+[69:09] our daily play um
+[69:12] performance
+[69:13] spreadsheet, all the P&Ls are on there,
+[69:15] all the closing trades you can see what
+[69:17] when we entered, when we exited, what
+[69:19] the profit and loss is on each trade.
+[69:22] Why are why is there no credit spread
+[69:24] report on the Canadian version? Michael,
+[69:26] that's something that we're working on,
+[69:28] but um you know, the Canadian version is
+[69:30] different, it's a free version. Um the
+[69:32] US is a paid version, that's why we
+[69:33] spend a lot more efforts here in my
+[69:35] opinion on the US version, but we are
+[69:37] continuing to expand on the Canadian.
+[69:39] We're looking to build IV rank for
+[69:41] Canadian. We're we're working on new
+[69:43] reports including that credit spread
+[69:45] report, that is something that we are
+[69:46] working on here for the Canadian
+[69:48] markets.
+[69:50] Do you offer free trials? Yes, you can
+[69:52] sign up for a free trial at
+[69:53] optionsplay.com.
+[69:56] We have a free 30-day trial. You can go
+[69:58] to optionsplay.com to sign up for a post
+[70:01] a link into the chat window.
+[70:13] Just posted that into the chat window.
+[70:15] Okay, I have 2 minutes for a couple more
+[70:18] questions.
+[70:19] Please paste the YouTube links. So you
+[70:21] can find our YouTube channel at option
+[70:24] at youtube.com/optionsplay.
+[70:32] I'll post that link into the chat window
+[70:34] as well.
+[70:42] Is it possible to enter your own stock
+[70:43] into credit spread data spreadsheet? Um
+[70:46] no, but there's really no need to
+[70:49] because you know, that's what the
+[70:51] options play tool is for. Um you can
+[70:53] enter into options play and look at it
+[70:55] there.
+[70:56] Once in a trade, how do you how do you
+[70:58] use your portfolio function? So, that's
+[70:59] something that we don't have access to
+[71:01] everyone just yet. That's only available
+[71:03] to us to enter those trades into that
+[71:05] portfolio tool, but we are currently
+[71:06] looking at building out that portfolio
+[71:08] tool for you guys to be able to enter
+[71:10] your own trades.
+[71:11] Does 21 days to expiration apply to
+[71:13] cover calls? Generally speaking, Carlos,
+[71:15] yes, it does as well.
+[71:17] I have to slide the window up above my
+[71:19] taskbar to see the black
+[71:21] black bottom. Oh, okay.
+[71:23] Um
+[71:24] Bill, you might have to Oh, okay, I see.
+[71:26] Look at that. It's a response to someone
+[71:28] else. Is it possible to include the
+[71:29] cover calls and short put reports on the
+[71:31] Options Play website? Um Martin, that is
+[71:34] something that we are in the process of
+[71:35] doing. So, we are we have embedded the
+[71:37] cover call and
+[71:39] and cash secured put reports into a
+[71:40] website. We hope to re
+[71:43] We're actually hoping to release that
+[71:44] website maybe in the next week or two.
+[71:46] So, very very soon you'll be able to see
+[71:48] that within the website.
+[71:51] Okay, I think I I'm unfortunately
+[71:54] running out of time here. I have to run.
+[71:56] Um but I really tried to get through as
+[71:58] many questions as possible. I know many
+[71:59] of you still have questions to the
+[72:01] Options Play tool. So, please, you can
+[72:03] always submit questions to us using this
+[72:05] question ask us thing here at the upper
+[72:07] right-hand corner for any questions you
+[72:09] have regarding your trading strategies,
+[72:11] and we'll answer your questions
+[72:13] typically within a couple of hours. With
+[72:15] that, thank you so much for taking the
+[72:16] time out here this afternoon. I really
+[72:18] hope that this was helpful in giving you
+[72:20] a better understanding of how to utilize
+[72:22] credit spreads for your portfolio and
+[72:24] how to find those optimal credit spreads
+[72:27] where the risk reward is skewed in your
+[72:29] favor. So, with that, thank you so much.
+[72:31] Have a great evening, and we'll send out
+[72:33] the recording with the slides to you in
+[72:35] about um an hour or two once we finish
+[72:38] processing the recordings. Have a great
+[72:40] night, and I'll see you guys tomorrow
+[72:42] morning bright and early for our
+[72:43] election special for our members. Have a
+[72:46] great night.

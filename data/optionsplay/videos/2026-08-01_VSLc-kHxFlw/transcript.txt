@@ -1,0 +1,1075 @@
+[00:00] avoid searching for opportunities, but
+[00:02] actually rather just choosing from the
+[00:04] top performing strategies. That's our
+[00:06] goal here at OptionsPlay is to help
+[00:10] prioritize what you research and what
+[00:13] you're looking at so that you're
+[00:14] choosing and not searching. Searching is
+[00:18] a frustrating experience for anyone
+[00:20] who's traded options for any period of
+[00:22] time. If you're just searching for ideas
+[00:24] or searching for opportunities, you are
+[00:28] constantly hitting dead ends. It's a
+[00:30] huge mental load
+[00:32] on your your mental capacity and many
+[00:36] times when we're just searching for
+[00:38] ideas, by the time we find one, we're
+[00:40] mentally fatigued and we don't
+[00:42] necessarily follow through with the best
+[00:44] practices by the time we're actually
+[00:47] executing those trades.
+[00:54] Okay, good afternoon and welcome back
+[00:56] everyone to our Growth Lab series. We
+[00:59] are on week four of where does your next
+[01:03] trade come from?
+[01:05] Uh my apologies, I'm having some
+[01:07] technical issues with my camera, but
+[01:10] let's go ahead and get started
+[01:11] regardless. Today, what we're going to
+[01:13] be looking at is
+[01:15] the wheel strategy. Specifically, how
+[01:18] you can get paid to buy the stocks that
+[01:21] you're interested in owning and once you
+[01:24] own them, how to get paid to hold on to
+[01:26] those specific stocks.
+[01:28] Now, today what we're going to do is
+[01:29] we're going to go over the strategy at a
+[01:31] relatively high level,
+[01:33] look at the tools that are available to
+[01:35] you to help you identify the specific
+[01:39] opportunities, how you can maximize
+[01:42] yield for your portfolio using the
+[01:44] specific strategy, and using the
+[01:48] platform to quickly screen for ideas.
+[01:52] Now, this is going to be the like like I
+[01:56] said, the the last part in our four-part
+[01:59] series of showing you how you can use
+[02:02] the OptionsPlay platform to help you
+[02:05] find optimal trade ideas
+[02:08] and focusing on income strategies like
+[02:10] the wheel strategy is what we are ending
+[02:13] the month on for today.
+[02:16] If you're brand new to OptionsPlay, you
+[02:18] can sign up for what we're going to go
+[02:20] over here today for free at
+[02:22] new.optionsplay.com/registration
+[02:25] for a free 14-day trial. That will give
+[02:28] you access to everything that I'll be
+[02:30] showing you during today's session,
+[02:32] including [snorts] the dashboard, which
+[02:34] will have the webinar recordings from
+[02:38] today along with the slides and the
+[02:41] entire recording for the series. So, if
+[02:44] you missed out on week one, two, or
+[02:47] three, where we covered things like the
+[02:50] new earnings calendar, the credit spread
+[02:53] report,
+[02:54] the different tools that we have
+[02:56] available to you here at OptionsPlay to
+[02:58] help you find opportunities in the
+[03:00] market
+[03:02] regardless of how you are looking for
+[03:06] ideas,
+[03:08] this is all available to you here at the
+[03:10] OptionsPlay platform. Now, if you
+[03:12] already have an account, please log in
+[03:14] to your account and you can follow
+[03:16] along.
+[03:18] But, if you're brand new, you can either
+[03:20] use the link that I just sent into the
+[03:22] chat window or point your phone to the
+[03:24] QR code on your screen and that will
+[03:27] give you the ability to sign up for a
+[03:30] 14-day free trial of the tools that I'll
+[03:33] be showing you during today's session.
+[03:36] So, let's go ahead and get started.
+[03:39] What I'll do is cover
+[03:42] the wheel strategy at a very high level.
+[03:44] This is not meant to be a deep dive into
+[03:47] this specific strategy. I actually will
+[03:50] be doing a deep dive for the specific
+[03:52] strategy next month. Uh we're going to
+[03:55] be a kicking off a beginner option
+[03:57] strategy series for the month of August.
+[04:00] Really looking forward to that,
+[04:01] especially for those of you that are
+[04:03] just getting started with options.
+[04:05] That'll be a series catered to
+[04:08] helping you understand the basic option
+[04:11] strategies. And even if you are an
+[04:13] experienced options trader, I think
+[04:14] you'll find those sessions to be
+[04:18] enriching and you'll likely still learn
+[04:21] something from those strategies even if
+[04:23] you are an experienced options trader,
+[04:25] but I'll be doing a deep dive next
+[04:27] month. Today, we're going to be talking
+[04:29] about the strategies at a high level and
+[04:31] focusing more on the tools that are
+[04:33] available to help you maximize the yield
+[04:36] for these types of strategies. So,
+[04:40] the wheel strategy is actually a
+[04:43] combination of two
+[04:45] fairly straightforward, fairly simple
+[04:48] option strategies, which are selling a
+[04:51] put option and selling a call option.
+[04:54] Those are the two types of option
+[04:56] contracts that are available, and
+[04:58] specifically, we're looking at selling
+[05:00] or writing these specific contracts.
+[05:03] Now, selling a put option gives you the
+[05:06] ability to agree to buy the stock that
+[05:09] you want at a lower price.
+[05:12] And what this allows you to do is to own
+[05:15] that specific stock cushioned by the
+[05:18] premium or the income that you generate
+[05:21] from selling these put options.
+[05:23] And if those options get assigned to
+[05:26] you, you essentially own the stock that
+[05:29] you wanted to own with a discount from
+[05:32] the income that you receive. And then
+[05:34] what you try to do is you try to sell
+[05:36] call options and get paid to hold on to
+[05:39] that stock that you want to own, and you
+[05:43] keep doing that until the stock gets
+[05:45] called away or you sell that specific
+[05:47] stock. So, that completes sort of the
+[05:51] life cycle of the wheel strategy. And
+[05:54] it's called the wheel strategy because
+[05:55] essentially it's a circular motion in
+[05:57] terms of what you're doing, and you end
+[05:59] up back at the original starting point,
+[06:02] which is you want to buy a stock at a
+[06:04] lower price.
+[06:06] You want to get paid to try to buy that
+[06:08] stock at a lower price. And then once
+[06:10] you own that stock, you want to get paid
+[06:12] to hold that specific stock.
+[06:14] Now, there are obviously mechanical
+[06:17] details of this that I'm
+[06:19] at this stage glossing over because,
+[06:22] like I said, this is not meant to be a
+[06:23] deep dive of this specific strategy. We
+[06:26] will certainly do that here and during
+[06:28] our sessions next month. But, the thing
+[06:31] I want to highlight for traders who are
+[06:34] perhaps either thinking about the
+[06:36] strategy or currently trading the
+[06:38] strategy, but maybe not seeing the
+[06:41] um
+[06:43] not dedicating time and effort to
+[06:45] trading this as a strategy for their
+[06:47] portfolio,
+[06:48] is taking a look at the actual yield
+[06:53] that you get on some of these types of
+[06:54] strategies.
+[06:56] Now,
+[06:57] we pulled the roughly 800 or so
+[07:01] securities that we
+[07:04] uh on a daily basis screen for this
+[07:07] specific
+[07:09] strategy,
+[07:11] and wanted to take a look at what is the
+[07:14] median yield that you get for these
+[07:17] types of strategies. Because I tend to
+[07:19] find that most traders who are not
+[07:22] utilizing the strategy
+[07:24] significantly underestimate how much
+[07:27] income they can generate from the wheel
+[07:29] strategy. And for those of you that are
+[07:31] currently trading covered calls and
+[07:33] cash-secured puts, you're probably
+[07:36] familiar with this already, but the
+[07:38] average annualized yield, I'm sorry, the
+[07:41] median analyze the annual yield on a
+[07:44] cash secured put that we show you on the
+[07:47] options play platform is 56%
+[07:51] annualized yield.
+[07:54] It it it pales in comparison to anything
+[07:57] else that you can
+[07:59] uh
+[08:00] you know, that that that exhibits any
+[08:03] form of yield. And this is for the
+[08:05] stocks that you want to own. Um and then
+[08:08] on the flip side, cover calls, the
+[08:10] median annualized yield is about 10%.
+[08:13] Now, the the reason that there's such a
+[08:15] huge difference between these two is
+[08:18] because there's a very vast difference
+[08:20] in terms of the methodology for these
+[08:23] types of strategies. With short puts,
+[08:26] your goal is to maximize yield. So,
+[08:29] we're searching for
+[08:31] uh
+[08:31] expiration dates and strike prices where
+[08:34] we are maximizing that yield. With cover
+[08:36] calls, yield is actually a secondary
+[08:40] component of the specific strategy. The
+[08:43] primary component is owning the stock
+[08:46] and getting upside in that specific
+[08:48] stock. So, it's a different
+[08:50] goal that we have with cover calls than
+[08:53] we do with cash secured puts, which is
+[08:55] why you see such a large difference
+[08:57] between what is the average annualized
+[09:00] yield for one strategy over the other.
+[09:03] Um yield is simply how much income you
+[09:06] are
+[09:08] earning on the specific strategy
+[09:10] relative to
+[09:12] uh the cash that you have to put up in
+[09:15] order to
+[09:16] acquire that income. So, think of it
+[09:19] like if you have to buy a bond, the
+[09:22] principal versus the income that you
+[09:23] receive. Uh that's how you should be
+[09:26] thinking about yield.
+[09:28] And like I said, most investors who uh
+[09:32] are not utilizing these strategies
+[09:34] severely underestimate how much yield
+[09:39] uh are available from the options market
+[09:42] as a seller of put options and call
+[09:44] options. A lot of people think of these
+[09:46] strategies as {quote} and {unquote}
+[09:48] riskier strategies.
+[09:51] But in reality, the yield on them is
+[09:55] far exceeds
+[09:56] what you might
+[09:58] deem the yield the risk of these
+[10:00] particular strategies to be. So, that's
+[10:02] what we're going to take a look at here
+[10:03] today, okay?
+[10:06] So, let's start with the short put. Uh
+[10:07] just in a quick example here. If you
+[10:10] have a stock that's currently trading at
+[10:11] $100 and you sell a stock let's say a
+[10:14] stock is trading at $105
+[10:16] and you sell a $100 put and you collect
+[10:19] $3. Well,
+[10:21] this is the type strategy that allows
+[10:24] you to collect income. And if the stock
+[10:26] stays where it is, you keep the income.
+[10:28] If the stock dips below your strike
+[10:31] price, so if you sell a put option oops.
+[10:34] If you sell a put option at $100 and the
+[10:37] stock goes below $100, you essentially
+[10:40] now own the stock but you own it with a
+[10:42] $3 discount.
+[10:44] So, instead of owning the stock at 100,
+[10:46] you now own the stock at 97. The $3 that
+[10:50] you earned in income goes to help you
+[10:53] pay for that specific stock.
+[10:56] And you get paid regardless of whether
+[10:59] the stock rises, holds, or drifts lower.
+[11:03] And if the if the put option gets
+[11:05] assigned to you, meaning the stock is
+[11:07] below the strike price at expiration,
+[11:10] the premium that you receive will lower
+[11:12] your cost basis and you collect the
+[11:15] income now immediately once you sell the
+[11:18] put option and you get the discount
+[11:21] if the put option is put to you.
+[11:25] So, the the hardest part in my opinion
+[11:28] of this specific strategy is not
+[11:32] necessarily understanding the strategy
+[11:34] or picking the expiration dates or
+[11:36] strike prices, but actually figuring out
+[11:38] which stocks do you want to sell a put
+[11:41] option on because selling a put option
+[11:44] commits you to owning the stock, which
+[11:47] also implies which also means that
+[11:49] you're committing to the downside of
+[11:51] that stock if it materializes. So, you
+[11:55] want to be
+[11:57] you want to sell puts on stocks that you
+[12:01] wouldn't mind owning and are willing to
+[12:03] take that downside risk. You don't want
+[12:06] to just do it on any You don't want to
+[12:07] just sell puts on any stock and you
+[12:10] certainly don't want to sell puts just
+[12:11] because it has a high amount of yield
+[12:15] because like I said, yield
+[12:19] while
+[12:20] you know, while the yield might be high,
+[12:23] what you need to understand is that you
+[12:24] are taking on that downside risk. So,
+[12:26] you have to make sure you understand
+[12:29] the company behind the downside risk
+[12:33] that you're selling the put option on.
+[12:35] Does that make sense everyone? Please
+[12:37] type one into the chat window if that
+[12:39] makes sense to you.
+[12:44] Perfect. Okay, so
+[12:47] what I want to show you is how you can
+[12:48] use the Options Play platform
+[12:51] to look for the highest yielding
+[12:55] opportunities for the stocks that you
+[12:58] might be interested in.
+[13:00] What I'm going to show you is how you
+[13:02] can use the short put ideas section
+[13:05] inside of Options Play. So, when you use
+[13:07] Options Play under the ideas section,
+[13:09] you can choose short puts
+[13:11] and then what you can do is you can
+[13:14] take that list and filter it down based
+[13:18] on specific watch lists. You can use
+[13:20] global watch lists that we have built
+[13:22] for you such as our undervalued
+[13:26] um watch list. You can look at our
+[13:28] outperforming stocks watch list. You can
+[13:30] look at stocks that have upcoming
+[13:32] earnings, or you can just create your
+[13:34] own watch list and be able to see the
+[13:37] stocks that matter to you inside of the
+[13:41] stocks that are in the short puts. So,
+[13:43] what I'll do is I'll show you the
+[13:45] options by platform. So, under the
+[13:46] options under the ideas section, if you
+[13:49] go to the short puts,
+[13:54] that will show you all of the short puts
+[13:56] that we have screened for for today. As
+[13:58] you can see, there are 303
+[14:01] ideas. But, what you can do is you can
+[14:03] say, "Let me only look at the stocks in
+[14:06] this specific watch in this specific
+[14:08] list that are in, let's say,
+[14:11] uh the outperformer's." There are 39
+[14:14] particular stocks in the outperformer's.
+[14:16] And what I'm going to do is I'm going to
+[14:18] organize this based on yield. What that
+[14:21] means is that at the top of the list are
+[14:23] the stocks that are um generating the
+[14:26] highest amount of yield. So, in this
+[14:28] particular case, XYZ block generates the
+[14:31] highest yield of all
+[14:34] optionable uh of all cash-secured puts
+[14:37] that are in our outperforming category.
+[14:41] So, you can do this for any watch list
+[14:43] that you have, either it's a watch list
+[14:45] that you've made on your own or one of
+[14:47] the watch list that we update
+[14:49] dynamically on our platform every single
+[14:52] day. Um I'm going to use the outperform
+[14:55] uh watch list just for today's purposes
+[14:59] and walk you through how to utilize
+[15:02] looking at this specific setup. So,
+[15:04] here's XYZ currently trading at $81. As
+[15:07] you can see, this is a stock that um
+[15:10] from a charting perspective continues to
+[15:13] be quite strong here. This was a $60
+[15:15] stock just back here in April, now an
+[15:18] $80 stock
+[15:20] uh seeing a 25% gain to the upside in
+[15:23] the last couple of months, just recently
+[15:26] broke out here above $80. So, as you can
+[15:29] see, um,
+[15:31] you got a, uh, you know, this $80
+[15:33] resistance level's now broken out above
+[15:35] that level, starting to form a bit of a
+[15:37] base here. Maybe you think that this is
+[15:39] a good base for this to continue moving
+[15:41] higher. Um, so, this essentially gives
+[15:44] you a short list of stocks that you
+[15:47] might want to do a little bit more
+[15:48] research, a little bit more digging on,
+[15:51] and decide whether you would, uh,
+[15:53] like to own the specific stock. So, you
+[15:56] look at XYZ, currently trading at 71.
+[15:59] This is saying that if you sold the
+[16:01] August 28th $79 puts, you can collect
+[16:05] $3.98,
+[16:07] or $398
+[16:09] per contract, because each contract
+[16:11] reflects 100 shares of the stock.
+[16:14] Now, that means you have to put up
+[16:17] $7,500
+[16:19] worth of cash in order to buy 100 shares
+[16:23] of XYZ.
+[16:24] Um, that's your total downside risk,
+[16:26] meaning if the stock were to go down to
+[16:28] zero, your maximum risk is $7,502
+[16:33] if the stock goes to zero for your 100
+[16:36] shares. And in exchange for that, you're
+[16:38] going to earn, for, roughly $400 worth
+[16:41] of income in 29 days. So, what that
+[16:46] means is that you're earning 5%
+[16:49] of the cash that you are putting up in
+[16:52] 29 days. You're not earning 5% per year,
+[16:56] you're earning 5% in the next 29 days.
+[17:00] The,
+[17:01] that's the math, right? Imagine putting
+[17:03] $7,500
+[17:05] in,
+[17:06] this is not a comparison to a savings
+[17:08] account by any means, because the risk
+[17:11] on this is significantly higher than a
+[17:12] savings account, but just think about
+[17:15] the, the analogy, putting in $7,500
+[17:18] into a savings account and then walking
+[17:20] away with $400 in extra cash at the end
+[17:23] of 30 days. That's the way it in terms
+[17:26] of yield you should be thinking about
+[17:28] this. Now, this $7,500 you're putting up
+[17:32] has risk because if the stock were to
+[17:34] decline, you are taking on the same
+[17:36] amount of risk as someone who owns 100
+[17:39] shares of XYZ, which is why I go back to
+[17:42] my point, my original point. You only
+[17:45] want to sell cash secured puts on stocks
+[17:48] that you want to own or stocks that you
+[17:51] want to take on that downside risk for.
+[17:54] And what we are trying to do with our
+[17:56] platform is to help you identify stocks
+[17:59] that
+[18:00] meet different criteria that you might
+[18:03] look for
+[18:04] for selling specific stocks, whether
+[18:07] that's an undervalued stock or stocks
+[18:09] that outperform in this particular
+[18:10] market. Those are the ones that I would
+[18:13] typically look at, you know, to sell
+[18:15] cash secured puts. And instead of
+[18:17] looking at all the stocks that are
+[18:19] available, we're sorting it for you
+[18:21] based on yield. So, looking at
+[18:23] Booking.com, it's a $191 stock.
+[18:27] As you can see, if I sold 100 shares of
+[18:30] that particular stock, you know, this
+[18:31] stock recently just broke out here above
+[18:33] this 190 level, right? Just recently
+[18:37] broke out. Uh bit of a pullback here to
+[18:40] the support level here. Maybe you see
+[18:42] this as a potential bounce opportunity
+[18:44] going forward, right? So, selling that
+[18:46] 190 put requires $18,160
+[18:50] in cash to to
+[18:53] uh put on this specific trade and you
+[18:54] will earn $840
+[18:57] worth of income in the next 29 days.
+[19:00] That's 4.63%
+[19:02] yield in 29 days or annualizes out to
+[19:05] 76%.
+[19:08] Now, this we usually don't look at
+[19:10] annualized returns for uh holding
+[19:13] periods under 60 days.
+[19:15] But if But the the the metric is there
+[19:19] to help you compare apples to apples
+[19:22] because sometimes you might be trading a
+[19:23] 29-day option, sometimes you might
+[19:25] trading a 45-day option, or even
+[19:28] a 60-day option. You want to be able to
+[19:31] have one way to compare apples to apples
+[19:34] to specific income opportunities if they
+[19:37] are over different time frames. So,
+[19:39] that's what the annualized return is
+[19:41] therefore. I wouldn't go use that as a
+[19:44] gauge to determine how much yield you
+[19:46] can generate throughout the year, but if
+[19:49] you are doing this consistently year
+[19:51] over year, that's what the metric that I
+[19:53] was showing you here before was meant to
+[19:56] give you a sense for. You know, if you
+[19:58] if you earn 5% this month, 4 and 1/2%
+[20:01] the next month, what's the median yield
+[20:04] you'll you'll you'll earn with this
+[20:06] particular strategy over the year, and
+[20:09] that happens to be roughly 56%.
+[20:12] Um
+[20:13] on this specific type of strategy. Now,
+[20:15] like I said, once you sell this put
+[20:17] option, three things can happen.
+[20:19] Booking.com can be above 190, it could
+[20:22] Sorry, really two things can happen.
+[20:24] Booking.com could be above 190 by August
+[20:26] 28th, or it could be below 190 on August
+[20:30] 28th. If it's above 190, you now keep
+[20:33] the $840 of income, and you can choose
+[20:37] as to whether or not you want to sell
+[20:38] another cash-secured put put on
+[20:40] Booking.com, or maybe you might want to
+[20:43] sell a cash-secured put on a different
+[20:45] stock at that point. You can choose.
+[20:48] But if the stock is below 190 at
+[20:50] expiration, you now own 100 stock 100
+[20:53] shares of Booking.com, and you own it at
+[20:56] a price that is essentially $190
+[21:00] minus $8.40, which comes out to be
+[21:03] essentially $181.60.
+[21:06] That would be your effective um price
+[21:09] that you would own this stock at. You
+[21:11] don't own it at a 190, you subtract the
+[21:14] $840 of income that you've generated,
+[21:17] which means that you effectively own the
+[21:18] stock at $180
+[21:20] and 60 cents. That's a discount that
+[21:23] you're getting from from buying the
+[21:25] stock using a cash secured put versus a
+[21:28] limit order. And if you are buying
+[21:32] stocks using limit orders today, this is
+[21:36] a strategy that you might want to
+[21:37] consider as an alternative to that
+[21:40] because of how much income you can
+[21:42] generate while still taking on the same
+[21:45] obligations as placing a limit order.
+[21:47] When you place a limit order, what do
+[21:49] you need to do? You need to have the
+[21:50] cash uh you have to set aside the cash
+[21:53] to buy the stock. Your cash is locked
+[21:55] up, meaning you can't do something else
+[21:57] with it. And if the stock drops below
+[22:00] the limit price, you are obligated to
+[22:03] buy the stock at that specific price.
+[22:06] What does that sound like? That sounds
+[22:08] almost identical to a cash secured put.
+[22:10] You have to set aside cash to
+[22:12] potentially acquire the shares at a
+[22:14] specific price, and if the stock goes
+[22:16] below that strike price, you're
+[22:17] obligated to buy the stock at that
+[22:19] specific price. The difference between a
+[22:21] limit order and a and a cash secured put
+[22:24] is that a cash secured put pays you
+[22:26] income that a limit order does not. Now,
+[22:30] there are other differences between the
+[22:31] two. It's not an apples-to-apples
+[22:33] comparison, but at a very high level,
+[22:36] from a conceptual perspective, you have
+[22:38] the same obligations as a limit order,
+[22:40] but you're not getting paid when you use
+[22:43] a limit order. Does that make sense,
+[22:45] everyone? Please type two into the chat
+[22:47] window if that makes sense to you.
+[22:53] Um I saw a question here about why
+[22:55] wouldn't you sell a further out of the
+[22:57] money put option? Well, because with a
+[22:59] with a cash secured put, you're there's
+[23:01] two things that you're optimizing for.
+[23:03] One, you want to maximize the yield as
+[23:05] much as possible, but with a cash
+[23:07] secured put, generally speaking, your
+[23:09] goal is to acquire the shares. You know,
+[23:12] you're doing this in shares that you
+[23:13] want to acquire. So, you want to sell a
+[23:16] a cash secured put that's essentially as
+[23:18] you know, relatively close to the
+[23:20] current price of the stock so that you
+[23:22] have a high probability of acquiring the
+[23:25] these shares.
+[23:26] Uh that's the goal of selling a cash
+[23:28] secured put. And by selling a cash
+[23:30] secured put near the current price of
+[23:32] the stock, you have yields that are
+[23:36] sometimes 4 5% in 30 days, which
+[23:40] annualizes out to
+[23:42] uh you know, like I said, on on the
+[23:44] median yield is about 56%.
+[23:47] Um you know,
+[23:49] even you know, think about high high
+[23:52] yield junk bonds. You know, you're
+[23:53] getting nowhere near 50% yield
+[23:57] annualized on those types of products.
+[23:59] So, this is doing it on on stocks that
+[24:02] potentially are a lot less riskier than
+[24:06] potentially a a junk bond, but getting
+[24:09] yield that is um
+[24:13] significantly higher.
+[24:16] Okay? Um I'll just take a look at one
+[24:18] more example here. We'll look at
+[24:19] Blackstone. A $127
+[24:22] stock. If I were to sell that August
+[24:25] 28th 124 put, so a put that's a few
+[24:28] bucks out of the money, that I would
+[24:30] earn also $398,
+[24:33] requiring me roughly $12,000 in cash to
+[24:36] buy 100 shares of this stock. Over the
+[24:39] next 30 days, I'll earn $400 on that
+[24:42] $12,000
+[24:43] in cash, which is about a three and a
+[24:46] 3.3%
+[24:48] yield in 29 days. Just to put that into
+[24:52] comparison, Blackstone pays a really
+[24:54] hefty dividend, 3.84%.
+[24:58] So, if you own 100 shares of Blackstone,
+[25:00] you're going to earn 3.8% per year.
+[25:05] Here, you're earning nearly that amount
+[25:07] in just 1 month.
+[25:10] So, you're earning almost as much income
+[25:12] from the cash secured put in 1 month as
+[25:16] you do in the dividend that you do over
+[25:18] the full year.
+[25:20] Um and you know, uh
+[25:25] that that is how big of a difference
+[25:27] that you are going to make. So, if you
+[25:28] own 100 shares of Blackstone, you would
+[25:30] earn $497
+[25:32] worth of dividend income for the year,
+[25:35] but you would earn $400 of of put income
+[25:40] in just 30 days, under 30 days, at 29
+[25:43] days. That annualizes out to 50%.
+[25:47] So,
+[25:48] um all the stocks that I'm showing you
+[25:50] here, you know, as you can see, there
+[25:51] are 22 stocks that are essentially in
+[25:53] our out-perform
+[25:55] list that are in our short puts, and
+[25:58] because they're organized for you based
+[26:00] on annualized yield,
+[26:02] um these are all stocks that exhibit
+[26:05] that um out-performance, and we are
+[26:08] essentially sorting it for you based on
+[26:10] which stocks generate the most amount of
+[26:12] yield selling cash secured puts, and
+[26:15] this essentially ranks the ideas for you
+[26:18] so that you are not searching through a
+[26:20] list of 22 stocks trying to figure out
+[26:23] which ones you want to sell puts on. We
+[26:25] are prioritizing which ones you want to
+[26:28] do research on. We're saying, "Look at
+[26:30] XYZ first, then Booking, then
+[26:32] Blackstone, then Amgen."
+[26:34] Once you find a stock that you like,
+[26:37] that you would that you would like to
+[26:39] own, that's when you know that you not
+[26:42] only have you identified a great stock
+[26:45] to potentially sell a cash secured put
+[26:47] on, but more importantly, you are
+[26:49] maximizing yield of this specific
+[26:53] strategy.
+[26:54] That is the difference between
+[26:56] hunting for these manually and really
+[26:59] searching for these types of strategies
+[27:01] versus choosing from a list. Um
+[27:05] this list essentially is prioritizing
+[27:08] uh
+[27:09] the factors that are important to you,
+[27:11] but then it's ranked based on the
+[27:13] highest yield so that you don't have to
+[27:15] go through the full list, you just have
+[27:17] to go through the top
+[27:18] two, three, four names and as soon as
+[27:21] you find one that you like in terms of a
+[27:23] stock, you know you are maximizing the
+[27:26] yield opportunity for that specific
+[27:28] strategy in your portfolio. Does that
+[27:31] make sense everyone? Please type one
+[27:33] into the chat window if that makes sense
+[27:35] to you.
+[27:40] Perfect. Okay. So,
+[27:44] let's talk about cover calls. So, in
+[27:47] this example, let's say I sell a cash
+[27:49] secured put. By the expiration date, the
+[27:51] stock is below the strike price at
+[27:54] expiration.
+[27:55] Now I own 100 shares of stock for every
+[27:59] contract that I've sold. I own the stock
+[28:02] at that discount price that we were
+[28:04] talking about, the strike price minus
+[28:06] the income that I received, and now I
+[28:08] own the stock. And hopefully I own the
+[28:11] stock because I believe that there's
+[28:13] upside potential in this particular
+[28:16] stock. Now,
+[28:17] I might have a target price, I might
+[28:19] have a specific um
+[28:22] holding period in mind. Regardless of
+[28:25] how long you plan on holding it,
+[28:28] uh the the the thing about stock
+[28:30] ownership is that ultimately we never
+[28:33] know how long we're going to end up
+[28:35] owning a particular stock for. Maybe it
+[28:38] reaches our target price in a week,
+[28:40] maybe a month, maybe a year.
+[28:42] We don't have control over that.
+[28:44] So, while we hold on to that stock, and
+[28:47] we wait for that capital appreciation to
+[28:50] hopefully materialize,
+[28:52] this is really where, in traditional
+[28:54] stock ownership,
+[28:56] the only income that you have while you
+[28:59] hold on to a stock is the dividend
+[29:01] income of that particular stock.
+[29:04] And if there is a stock that doesn't pay
+[29:06] a dividend, then the only thing you have
+[29:09] to show is capital appreciation if the
+[29:11] stock if that ever materializes.
+[29:14] So,
+[29:15] what a cover call allows you to do is to
+[29:17] start extracting income from the assets
+[29:21] that you own in your portfolio. So, the
+[29:23] stocks and ETFs that you own in your
+[29:25] portfolio start extracting income from
+[29:29] those positions in addition to the
+[29:32] whatever dividend income you're already
+[29:34] receiving from those particular stocks.
+[29:37] And what we're doing is just instead of
+[29:39] selling put options, we're just selling
+[29:41] a call options. Because the call option
+[29:43] has the same uh
+[29:45] risk profile as selling the cash-secured
+[29:47] put. Uh you essentially own the stock,
+[29:50] and now you want to extract some income,
+[29:52] and
+[29:53] the only difference is that instead of
+[29:55] selling put options to acquire the
+[29:57] stock, you're now selling call options,
+[29:59] which instead of giving you the
+[30:00] obligation to buy the stock, now gives
+[30:03] you the obligation to sell the stock.
+[30:05] Because you own the stock, you you can
+[30:07] you can put yourself into the obligation
+[30:09] of of of selling that stock without
+[30:13] taking on any additional risk.
+[30:15] When you're selling a put option, you
+[30:17] are taking a risk for your portfolio
+[30:18] because if that stock goes to zero, you
+[30:21] have, you know,
+[30:22] substantial amount of risk because you
+[30:24] want to you essentially have exposure to
+[30:26] 100 shares of the stock.
+[30:28] But, with because you already own the
+[30:31] shares in a cover call, you don't take
+[30:33] on any additional risk when you sell a
+[30:36] cover when you sell a cover call because
+[30:38] you already own the stock, you're
+[30:40] already taking on that that downside
+[30:42] risk. By selling that call option,
+[30:44] you're not taking on any additional
+[30:46] risk. The only thing you're doing is
+[30:47] you're obligating yourself to sell the
+[30:49] stock at a specific price. And just like
+[30:52] the cash-secured put, you're getting
+[30:54] paid to take on that obligation. And
+[30:57] remember, you own a stock because you're
+[31:00] hoping to sell the stock in the future
+[31:02] for a profit. So,
+[31:05] what would you traditionally do if you
+[31:07] weren't an options trader? You would
+[31:09] place a limit order at a higher price
+[31:12] and hope that sometime in the future the
+[31:14] stock rises to that limit order and you
+[31:17] essentially have the obligation to sell
+[31:19] the stock at a specific price.
+[31:22] The difference is that if you place a
+[31:23] limit order, you have the same
+[31:25] obligations to sell the stock at a
+[31:27] specific price, but you don't have any
+[31:29] income to show for it. When you sell a
+[31:31] covered call, you get in you get paid
+[31:34] income to take on the exact same
+[31:37] obligation. So, that's really where a
+[31:40] covered call allows you to do the same
+[31:42] thing. That's really where we turn to
+[31:44] our covered call screener. Same thing
+[31:46] under the idea section, instead of going
+[31:48] to cover instead of going to short puts,
+[31:50] we go to covered calls. And in this
+[31:52] particular case, what you can do is you
+[31:54] can
+[31:55] merge the list of stocks. As you can
+[31:58] see, we have 282 282 stocks in our list
+[32:01] here.
+[32:02] Um
+[32:03] Now, and and I'm I'm only filtering for
+[32:05] very liquid securities here. If you you
+[32:07] can also look at somewhat liquid as you
+[32:09] can see that we have 843 securities in
+[32:13] total. But let let's let's expand it out
+[32:14] to liquid and somewhat liquid.
+[32:17] Um and what I can do is I can take that
+[32:19] list and say, "Okay, out of all those
+[32:21] stocks, let's take a look at the stocks
+[32:23] that I own in my portfolio, right?" Um
+[32:26] so, for those of you that are not
+[32:27] familiar with the Options Play platform,
+[32:30] uh you can construct a portfolio um
+[32:33] and add positions to your portfolio, so
+[32:35] you can add all your stock positions to
+[32:37] your portfolio. And what we can do is
+[32:40] when we're selling covered calls, we can
+[32:42] look at the stocks in your portfolio and
+[32:45] only show you opportunities to sell
+[32:47] covered calls for stocks that you
+[32:49] actually own in your portfolio. So, it
+[32:51] doesn't make sense to look at all
+[32:55] 843
+[32:57] opportunities because, yes,
+[33:00] you know,
+[33:01] Celsius Holdings will generate 80% yield
+[33:05] on a on a covered call. But if I don't
+[33:07] own the stock, I can't sell this covered
+[33:09] call. So, it doesn't make sense to look
+[33:12] at it. I'm only going to look at stocks
+[33:13] that I own in my portfolio. And for
+[33:16] today, out of all the stocks that I own
+[33:18] in my portfolio, Microsoft is going to
+[33:21] generate the most yield. This is also
+[33:23] the stock up 16% today. So,
+[33:26] implied volatility on this particular
+[33:28] stock is very hefty today.
+[33:31] This big jump here, and maybe this big
+[33:33] jump is an opportunity look at selling
+[33:36] the stock sometime in the future. This
+[33:37] is saying looking at selling the
+[33:39] September 465 covered call will generate
+[33:43] in this particular case
+[33:45] um
+[33:46] if we look at this particular strategy,
+[33:49] you know, it'll generate
+[33:54] $465
+[33:56] worth of income.
+[33:58] I'm [clears throat] sorry, $1,523
+[34:00] worth of income, which is about 3.46%
+[34:05] in terms of yield over 43 days.
+[34:08] So, just to put that into into into
+[34:10] context, if you own 100 shares of
+[34:13] Microsoft, you're getting paid $356
+[34:17] per year in dividend income, right? For
+[34:20] every 100 shares you're earning three
+[34:22] Sorry,
+[34:23] this might be a quarterly dividend.
+[34:25] Yeah, so quarter So, sorry, you are
+[34:27] earning $356
+[34:29] per year for every 100 shares of stock
+[34:32] that you own. Here, you're earning
+[34:34] $1,523
+[34:37] of income in 43 days by selling a
+[34:41] covered call. So, you're essentially
+[34:42] earning a covered call that's nearly
+[34:44] five times the dividend yield that you
+[34:47] get per year, but you're earning that in
+[34:50] just 43 days. That's how big of a
+[34:52] difference in terms of income
+[34:56] you are getting from a covered call
+[34:58] versus the dividend yield. Just to help
+[35:00] put these things into context because
+[35:02] like I said, this is really where I
+[35:03] think a lot of traders, a lot of
+[35:05] investors severely underestimate how
+[35:09] much potential income
+[35:11] is is available in these specific
+[35:14] strategies. Now, you might say to me,
+[35:16] "I'm not willing to sell Microsoft stock
+[35:18] at 465. I'm more interested in selling
+[35:21] at maybe at 500." Well, this is really
+[35:23] where you can make those modifications
+[35:25] to say, "Okay, what happens if I go out
+[35:27] to September and I want to go up to 495
+[35:31] or 500?" You can fine-tune these
+[35:33] specific strategies and see. So, for
+[35:36] example, if I sold the September $500
+[35:38] call, so I'm saying, "You know what? I'm
+[35:40] I don't I think this thing can go
+[35:41] higher. I think it go 500, maybe even
+[35:43] 550, right?" How much income can I still
+[35:46] generate? So, here you can generate $620
+[35:49] worth of income over the next 50 days,
+[35:52] which is still nearly double the annual
+[35:57] dividend income you were earning in just
+[36:00] 50 days.
+[36:01] That annualizes out to 10%, which is,
+[36:05] like I said, based on the covered call
+[36:06] data that we have, is probably the
+[36:09] average income that you will uh receive
+[36:13] from
+[36:14] uh one of the trades that we
+[36:17] uh
+[36:18] set up in inside of OptionsPlay.
+[36:21] Um let's take a look at another stock.
+[36:23] Let's look at ExxonMobil, right? And and
+[36:25] I'm using ExxonMobil because uh you
+[36:27] know, this is a stock that pays a higher
+[36:29] dividend yield.
+[36:31] You know, maybe you're owning the stock
+[36:32] and
+[36:34] because of you know, what's currently
+[36:35] going on in Iran, this might not be the
+[36:37] type of long-term holding that you are
+[36:40] looking for. You're just holding it in
+[36:41] the short run and you're looking to
+[36:43] generate as much yield as possible in
+[36:45] the short run for it. Selling that
+[36:47] September 167 and 1/2 puts.
+[36:50] I'm sorry, 167 and 1/2 calls which are
+[36:52] essentially selling calls near the peak
+[36:55] from March, right? You're essentially
+[36:58] selling it at that peak. So, you're
+[37:00] basically saying if it gets back towards
+[37:02] that peak, I'm willing to to sell this
+[37:04] particular stock and
+[37:07] in the meantime, I can generate $233
+[37:10] worth of income in just 43 days. Compare
+[37:14] that to the $4 $400 in income that I
+[37:18] earn per year holding on to the stock.
+[37:20] Now, ExxonMobil arguably is the stock
+[37:23] that pays a pretty decent dividend 2.6%.
+[37:26] So, if I have 100 shares of the stock,
+[37:28] I'll earn $400 per year. Here, I'm going
+[37:31] to collect about half of that in just 43
+[37:35] days. That's how much income that I can
+[37:37] generate from a covered call on
+[37:39] ExxonMobil and it obligates me that if
+[37:41] the stock rallies back above or you
+[37:44] know, to the prior peak in in in March,
+[37:48] that will be the trigger that allows me
+[37:50] to sell the stock while holding a while
+[37:53] earning that specific income. Not a bad
+[37:56] outcome in my in my
+[37:59] from my perspective.
+[38:01] I will take a look at one last example
+[38:03] here in Amazon.
+[38:05] Amazon stock
+[38:08] selling off a little bit here over the
+[38:10] last couple of
+[38:11] last couple of weeks
+[38:13] formed this double bottom around 225.
+[38:15] Maybe you're looking for a little bit of
+[38:16] a bounce here. This is looking at
+[38:18] selling a 275 call. Essentially getting
+[38:21] back to, again, those those uh May
+[38:24] peaks, right? If it gets back above 275,
+[38:27] you're saying, "I'd be comfortable
+[38:28] selling the stock at 275." Here, as you
+[38:31] can see, if I were to sell this, I would
+[38:33] earn $325
+[38:36] worth of income for every 100 shares of
+[38:38] stock that I own
+[38:40] on a stock that pays zero dividends. So,
+[38:43] that annualizes to 12.34%.
+[38:46] I'm earning, essentially, $325
+[38:49] over the next 43 days. Now, you can
+[38:53] always choose to be more aggressive. You
+[38:54] can choose to be shorter dated, longer
+[38:57] dated. You can make that choice and see
+[38:59] kind of what uh
+[39:01] uh you know, how that affects the amount
+[39:02] of income that you can potentially
+[39:04] generate. Uh but, that's what this tool
+[39:06] is designed to help you do, which is
+[39:09] maximize the income potential for this
+[39:11] specific strategy in your portfolio for
+[39:15] the stocks that you want to buy and for
+[39:17] the stocks that you own in your
+[39:18] portfolio that you can generate yield on
+[39:21] that portfolio, making sure that you are
+[39:23] looking at the top yielding
+[39:25] opportunities every single time you're
+[39:27] doing this analysis. You're not doing
+[39:29] this in alphabetical order. You're not
+[39:31] doing it based on uh which positions
+[39:33] have the most gains or losses. You're
+[39:35] doing it where you're going to generate
+[39:36] generate the most yield, which is going
+[39:39] to save you hours and hours of time from
+[39:42] researching these specific opportunities
+[39:44] across the 19 stocks that you own and
+[39:47] prioritizing the ones where you can
+[39:49] generate the most yield at the top of
+[39:51] your list. So, again, what we want to do
+[39:54] is
+[39:56] avoid searching for opportunities, but
+[39:58] actually rather just choosing from the
+[40:00] top performing strategies. That's our
+[40:02] goal here at Options Play is to help
+[40:06] prioritize what you research and what
+[40:09] you're looking at so that you're
+[40:10] choosing and not searching. Searching is
+[40:14] a frustrating experience for anyone
+[40:16] who's traded options for any period of
+[40:18] time. If you're just searching for ideas
+[40:20] or searching for opportunities, you are
+[40:24] constantly hitting dead ends. It's a
+[40:26] huge mental load
+[40:28] on your on your mental capacity. And
+[40:32] many times when we're just searching for
+[40:34] ideas, by the time we find one, we're
+[40:36] mentally fatigued and we don't
+[40:38] necessarily follow through with the best
+[40:40] practices
+[40:41] by the time we're actually executing
+[40:43] those trades. Instead, what we want you
+[40:46] to do is we will do the work and you
+[40:49] just pick from the top-performing
+[40:51] strategies, the ones that make sense for
+[40:53] your portfolio. Does that make sense?
+[40:56] Please type one into the chat window if
+[40:58] that makes sense to you.
+[41:03] Perfect.
+[41:05] So,
+[41:06] just to reiterate what we went over
+[41:08] today,
+[41:09] the platform will help run you through
+[41:11] the entire loop. The wheel strategy is
+[41:14] what generates income to allow you to
+[41:16] buy and sell the stocks and ETFs that
+[41:18] you want to own. You sell by selling
+[41:20] short puts.
+[41:22] Look at undervalued, look at
+[41:24] outperforming, look at the earnings
+[41:26] watchlist, or just create your own
+[41:28] watchlist. That will allow you to search
+[41:30] for the best
+[41:32] opportunities to sell put options for
+[41:35] the stocks that you love.
+[41:38] If and when those short puts get
+[41:39] assigned, you now own those stocks at a
+[41:42] discount, many times a significant
+[41:45] discount,
+[41:46] a discount factor that most investors
+[41:49] underestimate.
+[41:51] And then once you own that particular
+[41:52] stock, you want to start selling covered
+[41:54] calls and keep doing that until the
+[41:56] stock gets called away. Once the stock
+[41:59] gets called away and you have cash in
+[42:00] your account, you essentially take it
+[42:02] and you roll it all the way back in the
+[42:04] beginning. That's why we call it the
+[42:06] wheel strategy. You're just going around
+[42:07] in circles. Um it's a repeatable income
+[42:11] strategy for stock investors. It is not
+[42:14] for options traders, it's not for people
+[42:17] who
+[42:18] necessarily have a strong options
+[42:21] background. If you are currently buying
+[42:24] and selling stocks and ETFs in your
+[42:26] portfolio,
+[42:27] you are likely underestimating how much
+[42:30] income you could be adding to that
+[42:32] portfolio by using these mechanisms to
+[42:35] enter and exit your trades rather than
+[42:39] limit orders. So, that covers what I
+[42:41] wanted to share with you here today.
+[42:44] Once again, what I will do is open this
+[42:46] up for Q&A, but before I do, if you are
+[42:50] new to OptionsPlay, you want access to
+[42:52] the tools that I'm showing you during
+[42:54] today's session, you can get access to
+[42:56] it either by pointing your phone to the
+[42:58] QR code on your screen or going to the
+[43:01] link here that I've highlighted
+[43:03] on the right-hand side,
+[43:04] new.optionsplay.com/registration,
+[43:08] which I just posted into the chat window
+[43:10] for this
+[43:12] session.
+[43:13] Before we wrap up,
+[43:15] I want to let you know that the live Q&A
+[43:17] portion of today's session is available
+[43:20] exclusively to OptionsPlay members.
+[43:23] If you'd like full access to the tools,
+[43:26] research, and option strategies that you
+[43:28] saw during today's session, and you want
+[43:31] to participate in our live education
+[43:33] sessions where you can ask questions in
+[43:35] real time,
+[43:36] start your free 14-day trial at
+[43:39] optionsplay.com.
+[43:42] As a member, you'll get ongoing access
+[43:44] to our options tools, daily trade ideas,
+[43:48] and multiple live sessions each week
+[43:50] designed to help you trade with greater
+[43:53] confidence and discipline.
+[43:55] Visit optionsplay.com to start your free
+[43:58] trial, and I'll see you at the next
+[44:00] trading session.
+[45:02] >> Mhm.

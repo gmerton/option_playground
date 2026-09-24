@@ -14,7 +14,10 @@ from pathlib import Path
 import pandas as pd
 
 D = Path(__file__).parent
-REVIEWED = {"pQlGgcyrUoQ", "YfrZT_kTo_4", "iXOULnIGEKk", "lV8Jkl37h4M"}
+REVIEWED = {"pQlGgcyrUoQ", "YfrZT_kTo_4", "iXOULnIGEKk", "lV8Jkl37h4M",
+            # Tier 1, reviewed 2026-09-24
+            "bk9Co7V6AI4", "gUOWa-i4R70", "wG0yvxmDuXI", "jLUPi1Im9cw", "VSLc-kHxFlw", "n1T3PUyS4uQ",
+            "Uvk_no85Yj4", "2VzqGw2_ZFs", "5IvhBIQVujs", "m2-bo0kxMu0", "p477UMpfVxI"}
 
 # (points, regex on the title) -- tied to what the ledger can check
 RULES = [

@@ -33,13 +33,16 @@ parts are also listed individually. Review the parts, not the compilation.
 - −2 for weekly idea lists.
 - −4 for anything under 2 min.
 
-**Already reviewed (4):** `pQlGgcyrUoQ` (Sosnoff, 3/5), `YfrZT_kTo_4` (three filters, **3.5/5**, credit/width
+**Already reviewed before the index (4); plus the 11 Tier 1 videos on 2026-09-24:** `pQlGgcyrUoQ` (Sosnoff, 3/5), `YfrZT_kTo_4` (three filters, **3.5/5**, credit/width
 PASS), `iXOULnIGEKk` (selling winners early, 2.5/5), `lV8Jkl37h4M` (what volatility is telling you, 2.5/5). See
 `../README.md`.
 
 ## Priority tiers
 
 ### Tier 1: selecting what to sell premium on, checkable against our real-fill results
+✅ **All 11 reviewed 2026-09-24** (scores in `../README.md`; batch row in TEST_INDEX §9). wG0yvxmDuXI turned out to be
+a re-edit of the already-reviewed lV8Jkl37h4M. gUOWa-i4R70 is Dan Passarelli and Uvk_no85Yj4 is Brian Overby, not Tony Zhang.
+
 This is the direct continuation of the question "how do they pick names to sell vol on?". OptionsPlay's answer
 (direction first, then liquidity, then rank by premium-to-width) is the one creator selection rule that has passed
 on our quotes.
@@ -55,7 +58,7 @@ on our quotes.
 | Uvk_no85Yj4 | 2026-02-15 | How to Trade Credit Spreads After Earnings | earnings vol premium −0.43% at the bid; post-catalyst entry NULL |
 | 2VzqGw2_ZFs | 2018-09-16 | Credit Spread Income Strategy w/ NDX Weekly Index Options | the certified cell is an index put sale, but only bearish-high-IV |
 | 5IvhBIQVujs | 2022-10-07 | Generating Income with Index Options using Iron Condors (8 min) | SPX condor bearish-high-IV t 5.21; ETF condor call side t 0.6 |
-| m2-bo0kxMu0 | 2025-05-04 | How to Manage Losing Credit Spread | roll test: stop is a cost (−9.51pp), re-entry NULL |
+| m2-bo0kxMu0 | 2025-05-04 | How to Manage Losing Credit Spread | credit-spread 50%-take / 2×-stop exit −4.3%/trade, t −5.4 (`etf_put_spread_study.md` §2) |
 | p477UMpfVxI | 2021-03-19 | Lose MORE than your Max Loss on a Credit Spread (7 min) | assignment/pin mechanics; likely no test |
 
 ### Tier 2: Sosnoff on OptionsPlay (extends `data/tastylive/sosnoff_doctrine.md`)

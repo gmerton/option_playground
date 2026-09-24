@@ -1,0 +1,218 @@
+[00:00] so in today's video i want to do a
+[00:02] follow-up to
+[00:03] the recent video that we have produced
+[00:05] on credit spreads and the best practices
+[00:08] for this type of strategy
+[00:09] and i want to answer a question that
+[00:11] we've been getting from some investors
+[00:13] which is can you lose more money than
+[00:15] the max
+[00:16] risk on a credit spread because we've
+[00:19] seen a few different scenarios here in
+[00:20] the past few months
+[00:22] where investors who had a max risk on a
+[00:25] credit spread
+[00:26] actually lost more than that on the
+[00:28] specific trade so we want to show you
+[00:30] and identify
+[00:31] the potential scenarios where a credit
+[00:34] spread
+[00:34] that with defined risk can actually lose
+[00:37] more than that and more importantly
+[00:39] we'll show you how to avoid these types
+[00:41] of scenarios
+[00:42] let's go ahead and get started we think
+[00:44] of vertical spreads whether you're
+[00:46] trading a debit or
+[00:47] credit spread as defined risk strategies
+[00:50] meaning you cannot lose more
+[00:52] than the max risk of the spread but
+[00:55] there are certain scenarios where you
+[00:56] can find yourself usually around
+[00:58] expiration where you could risk more
+[01:01] than
+[01:01] what is defined as that max risk
+[01:05] so let's take a look at those three
+[01:06] scenarios that can potentially happen
+[01:09] and more importantly how can you avoid
+[01:11] it
+[01:12] so the first one is when you're selling
+[01:14] a credit spread on a stock
+[01:16] or etf this doesn't happen on index
+[01:18] options because the way that index
+[01:20] options are settled in cash
+[01:22] avoids this scenario so this is
+[01:24] referring to when you have a credit
+[01:26] spread that's expiring
+[01:28] and the stock is in between the two
+[01:30] strikes
+[01:31] so the short strike is in the money and
+[01:33] the long strike is
+[01:35] out of the money when this happens you
+[01:37] will effectively be
+[01:38] assigned on the short strike and you'll
+[01:41] be assigned on the short option which
+[01:43] means that you'll be
+[01:44] long or short the underlying stock but
+[01:47] your long option because it's out of the
+[01:49] money will
+[01:50] not be assigned now if you do nothing
+[01:53] and monday morning you
+[01:54] are you either are long or short the
+[01:56] stock you'll find yourself in a position
+[01:58] where you are now exposed to that stock
+[02:01] and if you don't close that stock
+[02:02] position or if the stock opens
+[02:04] substantially
+[02:05] higher or lower on monday you could
+[02:08] potentially expose yourself to
+[02:09] more risk than the max risk that you had
+[02:13] on the credit spread the second scenario
+[02:16] that you can find yourself in
+[02:18] is even more rare and this is really
+[02:20] where
+[02:21] the short strike or the credit spread
+[02:23] that you've sold
+[02:24] actually expires out of the money on
+[02:27] friday's close
+[02:28] and many times investors when they see
+[02:30] that their credit spread is
+[02:32] expiring out of the money they'll simply
+[02:34] leave it to expire
+[02:35] worthless but there are a few scenarios
+[02:38] where
+[02:39] the stock is expected to open
+[02:41] significantly higher
+[02:43] or lower on monday and what this does is
+[02:46] it causes
+[02:47] despite the fact that the short option
+[02:49] is out of the money
+[02:50] occasionally when a stock reports
+[02:53] earnings
+[02:53] after the close on friday and the
+[02:57] long holder of the clock of the call or
+[02:59] put
+[03:00] actually expects that the the out of the
+[03:02] money option that expired on friday's
+[03:04] close
+[03:04] is going to be in the money on monday
+[03:07] they'll actually still trigger an
+[03:09] assignment
+[03:09] on that out of the money option and we
+[03:12] saw
+[03:12] an example of this earlier this year
+[03:16] with nike that reported earnings after
+[03:18] the close on friday that's a fairly rare
+[03:20] scenario but it did happen
+[03:22] and some investors were caught out by
+[03:24] this scenario
+[03:26] so be very careful look for events that
+[03:28] are happening
+[03:29] after the close on friday especially if
+[03:31] you have an option that you believe is
+[03:33] expiring
+[03:34] out of the money see if there are any
+[03:37] fda approval announcements that are
+[03:39] coming out earnings events
+[03:40] catalyst product launches anything like
+[03:42] that that is being announced
+[03:44] after the close on friday you have to be
+[03:46] aware of that for monday's open
+[03:48] and lastly early assignment so when you
+[03:52] are short a credit spread if you are
+[03:54] ever assigned on the short leg before
+[03:57] the expiration date
+[03:58] this is really where it's somewhat rare
+[04:01] but when it does happen
+[04:03] you want to make sure that you
+[04:04] understand your risk of the trade
+[04:06] because when you're assigned early
+[04:08] that in itself does not change the max
+[04:11] risk
+[04:12] but if you hold on to the long position
+[04:15] pass
+[04:15] the expiry date of the long call or put
+[04:18] that you have on your credit spread
+[04:20] now you're left in the same scenario
+[04:22] that you have in the first scenario
+[04:24] which is you're now long or short the
+[04:26] stock and you're exposed
+[04:28] to more loss or bigger losses than the
+[04:31] max
+[04:31] loss of your credit spread so those are
+[04:34] the three scenarios that you may find
+[04:36] yourself in
+[04:36] one and three typically happen more
+[04:40] often than two but those are the three
+[04:43] possible scenarios that you might find
+[04:45] yourself in
+[04:45] where you could potentially lose more
+[04:48] than the max risk
+[04:50] of your credit spread the primary
+[04:52] question that a lot of investors have
+[04:54] then
+[04:54] is how do you avoid this the great news
+[04:57] here
+[04:57] is that it's really easy to avoid number
+[05:01] one
+[05:01] you simply want to exit your credit
+[05:03] spreads about two to three weeks
+[05:05] from expiration the rule of thumb here
+[05:08] is that if you
+[05:09] if you roll your credit spreads or exit
+[05:12] your credit spreads two to three weeks
+[05:14] from expiration
+[05:15] you will number one never have the
+[05:17] scenario where one leg is in the money
+[05:19] and the other one's out of the money at
+[05:21] expiration
+[05:22] number two you will rarely get assigned
+[05:24] early
+[05:25] if you roll your credit spreads two to
+[05:28] three weeks
+[05:28] from expiration now for those of you
+[05:30] that sell
+[05:31] very short dated options so perhaps
+[05:34] you're selling a credit spread that
+[05:35] expires in just
+[05:36] one or two days and you don't have the
+[05:38] luxury of closing out two to three weeks
+[05:40] in advance
+[05:41] just make sure that buy at the
+[05:43] expiration date by
+[05:44] 3 30 3 45 pm before friday's close
+[05:48] that you close out your position
+[05:50] especially if you have
+[05:52] a position that may be just out of the
+[05:54] money and might open up in the money
+[05:56] on monday and the second scenario which
+[05:59] is if you get assigned early
+[06:01] best practices when you're when you're
+[06:03] assigned early
+[06:04] is to simply close out both legs the
+[06:06] stock leg
+[06:07] and the long option leg that you have
+[06:09] left if you do that
+[06:11] you will maintain the max loss on that
+[06:14] credit spread
+[06:15] i hope that you have found this useful
+[06:17] in giving you a better understanding
+[06:19] as to how to manage credit spreads
+[06:22] understanding the main scenarios as to
+[06:24] when you could potentially leave
+[06:25] yourself exposed
+[06:27] to more risk than the max risk on a
+[06:29] credit spread
+[06:30] so please if you found this useful
+[06:32] please hit subscribe to our channel
+[06:34] make sure you hit the notification bell
+[06:36] so that you are notified when we upload
+[06:37] a new video
+[06:38] and please leave a comment in the
+[06:40] comment section and let us know have you
+[06:42] ever been in a scenario where you lost
+[06:45] more money than the max loss on a debit
+[06:48] or credit vertical spread
+[06:50] thank you so much and have a great day
+[07:02] [Music]
+[07:19] you

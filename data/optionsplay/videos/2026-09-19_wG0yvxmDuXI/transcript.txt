@@ -1,0 +1,962 @@
+[00:00] Historically speaking, the option market
+[00:03] always
+[00:05] uh over or overestimates what the future
+[00:09] volatility is going to be. And that gap
+[00:11] between what the option market estimates
+[00:15] future volatility to be versus what
+[00:18] actual volatility uh is is what's known
+[00:22] as the volatility risk premium. And
+[00:31] Okay, good afternoon and welcome back
+[00:33] everyone to our growth lab series on how
+[00:36] to read a market like a pro. My name is
+[00:39] Tony Zang. I'm the chief strategist here
+[00:41] at OptionsPlay. And this week we are
+[00:44] going to be covering volatility and what
+[00:47] it can tell you with regards to the
+[00:51] overall market. How to help you gain a
+[00:54] directional edge using volatility. how
+[00:57] to help you time the markets with
+[00:59] volatility and using IV rank or a
+[01:03] volatility to help you select the right
+[01:06] option strategy for your trading. We're
+[01:09] going to dive into all of that here this
+[01:11] week um on our growth lab series.
+[01:15] Now, everything that I'll be showing you
+[01:17] here today is available to you here at
+[01:20] OptionsPlay. If you are new to
+[01:22] OptionsPlay, you can sign up for a free
+[01:24] trial using the link here on your
+[01:27] screen, which I will post into the chat
+[01:29] window. Um, or you can point your phone
+[01:31] to the QR code and get access to
+[01:35] the um,
+[01:38] uh, the 14-day free trial that will give
+[01:40] you access to everything that I'll be
+[01:42] showing you during today's session,
+[01:44] which includes the recording and the
+[01:47] slides from today's session. So, uh,
+[01:50] this is, like I said, week three out of
+[01:53] week four of our growth lab series on
+[01:55] how to read the markets. Um, and let's
+[01:59] go ahead and get started. So the first
+[02:02] thing I want to help you understand with
+[02:06] regards to volatility is that we think
+[02:11] of options as a
+[02:14] um as a vehicle for volatility because
+[02:19] implied volatility is calculated from
+[02:21] the price of an option and we use it to
+[02:24] forecast or we use it it's essentially
+[02:27] the market's forecast for future
+[02:29] volatility.
+[02:31] However, historically speaking, the
+[02:34] option market always uh over or
+[02:38] overestimates what the future volatility
+[02:41] is going to be. And that gap between
+[02:45] what the option market estimates future
+[02:48] volatility to be versus what actual
+[02:50] volatility uh is is what's known as the
+[02:54] volatility risk premium. And essentially
+[02:57] since 1990, this gap has been positive,
+[03:01] meaning options overestimate what the
+[03:05] future volatility of the market's going
+[03:07] to be versus what the actual volatility
+[03:10] of the market was. Uh with the exception
+[03:13] of the 2008 financial crisis during a
+[03:16] brief period, the actual volatility in
+[03:19] the market was higher than what the
+[03:21] option price
+[03:23] uh forecasted it to be.
+[03:26] And because of this we learn or you may
+[03:30] have heard that there is a statistical
+[03:33] edge in selling premium or selling
+[03:36] options over buying. And this is why if
+[03:40] you've ever heard that concept, it is
+[03:43] because the fact that options
+[03:46] overestimate what future volatility is
+[03:49] going to be. meaning the price the uh
+[03:52] the price of an option is richer than
+[03:55] what it implies the future volatility of
+[03:58] the stock is going to be. So there is an
+[04:01] edge in the long run uh of selling
+[04:05] premium. It doesn't mean that selling
+[04:07] premium will will be a profitable trade
+[04:09] every single time. It just means
+[04:11] statistically speaking over the long run
+[04:14] you do have an edge as an options seller
+[04:17] over an options buyer. Now that doesn't
+[04:20] mean that you shouldn't ever buy options
+[04:22] either. Uh it just means that you have
+[04:24] to understand that if you're a buyer of
+[04:26] options, you have a headwind that you
+[04:29] have to overcome when you are a buyer of
+[04:32] options. So you really have to be very
+[04:34] selective of when you buy options
+[04:37] because there is this uh this gap that
+[04:42] you have to overcome as a buyer. Now,
+[04:45] there are still plenty of instances
+[04:47] where buying an option makes sense. Um,
+[04:51] but statistically speaking, selling
+[04:53] premium or selling options has an edge
+[04:56] over buying options. Does that make
+[04:58] sense? Everyone, please type one into
+[05:00] the chat window if that makes sense to
+[05:02] you.
+[05:06] And this fact is true across almost all
+[05:12] types of options whether we're looking
+[05:14] at index options, ETF options, single
+[05:17] stock options. Um and
+[05:20] [clears throat]
+[05:21] this is a fact that kind of this
+[05:23] relationship between what the option
+[05:26] market forecast future volatility be
+[05:29] versus reality uh seems to be a a nature
+[05:34] of the options market. So it's really
+[05:36] important to understand that before you
+[05:39] embark on trading anything. Okay. The
+[05:42] next thing I think it's really important
+[05:44] to understand is the fact that
+[05:46] volatility is what we call mean
+[05:49] reverting. It's just a a fancy way of
+[05:53] saying that volatility tends to revert
+[05:56] back to the long-term average. So when
+[05:58] volatility is high, it tends to move
+[06:01] back to the average. When volatility is
+[06:03] low, it also tends to move back to the
+[06:05] average in the long run. Okay? So
+[06:07] whenever you see volatility move to
+[06:10] extremes, those are opportunities to
+[06:13] essentially be a buyer of volatility or
+[06:16] a seller of volatility.
+[06:19] Unlike a stock that can just trend for
+[06:21] months at a time without necessarily uh
+[06:24] reverting back to a long-term average,
+[06:27] volatility is a mean reverting asset.
+[06:30] And that is important when you're
+[06:32] thinking about um timing and direction.
+[06:37] When I say direction, I mean direction
+[06:39] of volatility, not direction necessarily
+[06:42] of the underlying security. However, we
+[06:45] do learn that the direction of
+[06:47] volatility and the direction of the
+[06:49] stock are inversely correlated. So,
+[06:52] we'll talk about that here in a minute
+[06:53] here. But the important thing to
+[06:57] remember with volatility is that it does
+[07:00] snap back to the long-term average. And
+[07:02] that piece of information is very useful
+[07:05] in helping determine when you might want
+[07:08] to be a buyer and when you want to be a
+[07:10] seller of options premium as you look at
+[07:14] uh the implied volatility of an option.
+[07:17] We'll take a look at the tools that we
+[07:19] use to help us gauge when we might want
+[07:22] to be a buyer or a seller of options uh
+[07:26] relative to a single securities history.
+[07:29] Okay. Um so
+[07:32] the most
+[07:34] uh famous implied volatility indicator
+[07:39] is what we call the VIX. Uh most of you
+[07:42] that have been trading options for any
+[07:44] period of time are is likely familiar
+[07:47] with the VIX. It is essentially a
+[07:50] measure of the 30day implied volatility
+[07:54] of the S&P 500. It's essentially
+[07:57] stripped out from the options prices of
+[07:59] the S&P 500 and it estimates what we
+[08:02] expect the how much movement we expect
+[08:05] out of the S&P 500 over the next 30
+[08:09] days. And this is actually something we
+[08:11] quote um uh you know we help you see you
+[08:15] know on the options 360 report is we
+[08:18] look at the implied versus the expected
+[08:20] move over the past 10 days. Meaning
+[08:23] what's the market implying uh what the
+[08:25] next 10 days can see in terms of
+[08:27] volatility versus what we've actually
+[08:30] seen over the last 10 days. And as you
+[08:32] can see right now, there's a pretty
+[08:34] significant gap between what the
+[08:36] market's future expected volatility uh
+[08:40] estimates it's going to be versus what
+[08:42] we've actually seen over the past 10
+[08:45] days. And that gap again is where
+[08:48] sellers have an advantage or an edge
+[08:51] over buyers because as a buyer you have
+[08:53] to essentially overcome the fact that
+[08:56] the option will essentially decay in
+[08:58] value over time because of the fact that
+[09:01] actual volatility is not as high at
+[09:04] least in the current regime is not as
+[09:06] high as what you're paying in the price
+[09:09] of that specific option. So this is an
+[09:12] important thing that we track here and
+[09:14] we'll come back to this report here in
+[09:16] one second. But what the VIX tells us is
+[09:20] what is the S&P 500 option market
+[09:23] telling us the expected future
+[09:26] volatility is going to be and it gives
+[09:29] us an understanding as to whether
+[09:31] markets are relatively calm, whether
+[09:33] they're relatively normal or they are
+[09:35] relatively elevated or you know
+[09:37] sometimes we refer to the VIX as the
+[09:40] fear index. Essentially, the higher the
+[09:42] level of the VIX, the more fear there is
+[09:45] in the markets, the lower the value of
+[09:48] the VIX, the more calmer the overall
+[09:51] market is going to be. And we generally
+[09:54] associate fear with market bottoms,
+[09:57] right? So, not only are we using this
+[10:00] potentially gain uh a directional edge,
+[10:03] but we can also help us uh use this
+[10:06] specific indicator sometimes to help us
+[10:08] time that specific move. So, um if you
+[10:13] ever drew if you ever looked at a chart
+[10:15] of the VIX and overlay the S&P 500 over
+[10:18] it, you'll typically see during these
+[10:21] sort of V spikes, right? When implied
+[10:24] volatility spikes higher, um when
+[10:27] implied volatility spikes higher, that
+[10:30] spike tends to correspond with lows in
+[10:34] the market or bottoms in the market. And
+[10:37] you know, we could argue that we're
+[10:39] actually seeing some of that here in the
+[10:42] last week or so. We saw VIX spike as
+[10:44] high as just shy of 19 at uh the peak
+[10:48] yesterday and as of this morning, we've
+[10:50] already opened up at around 15. So, we
+[10:53] saw this big spike yesterday and uh a
+[10:57] big decline here today. And obviously,
+[11:00] we've all seen the S&P bottom yesterday
+[11:04] around that 750 level here to the
+[11:06] downside. And now we're opening up
+[11:08] around uh above 760 again here on SPY or
+[11:11] 7,600 on SPX. So the the volatility
+[11:18] indicator can give us not only a reading
+[11:22] on potentially direction but also timing
+[11:25] as well. Have we seen a market bottom?
+[11:29] Certainly volatility at the moment leads
+[11:31] us to believe that we could be near a
+[11:34] market bottom at the moment. And these
+[11:37] are all things that we look at here in
+[11:40] the options 360 report. We have a whole
+[11:42] section dedicated just looking at
+[11:45] volatility, helping us understand what
+[11:47] the volatility
+[11:49] um or what rather what the option market
+[11:51] is telling us about the uh the direction
+[11:56] or the mood of the market. And sometimes
+[11:58] we can gain insights into both the
+[12:02] directional view uh timing and as well
+[12:06] as the optimal option structure. And
+[12:10] we'll talk about that here in a second.
+[12:12] The second thing that we typically look
+[12:14] at when it comes to volatility beyond
+[12:17] looking at the implied volatility is we
+[12:20] look at the difference between the
+[12:22] implied volatility of calls versus puts
+[12:26] and that gives us a sense for where the
+[12:30] directional demand is in a market on a
+[12:33] given day. Now,
+[12:35] you can build your own custom indicators
+[12:38] for individual stock, but there is an
+[12:41] index called the skew index, which is
+[12:43] similar to the VIX, where it calculates
+[12:46] the out- ofthe- money call versus put um
+[12:49] or rather put versus call implied
+[12:52] volatility in out ofthe- money S&P
+[12:55] options. And what it gives us an idea of
+[12:58] is where is where is the demand today?
+[13:02] Are there more people buying put options
+[13:04] and bidding up puts meaning they are
+[13:07] concerned about downside uh risk or is
+[13:10] there more demand for upside calls and
+[13:14] that also is helpful in gauging uh a
+[13:17] directional view and as of yesterday's
+[13:20] close you know we were in the 63rd
+[13:23] percentile with regards to skew but on
+[13:26] September 11th on Friday last week
+[13:29] heading into the FOMC meeting this week
+[13:33] uh uh skew you know was in its 95th
+[13:37] percentile meaning it's the highest
+[13:39] level it's been uh in it's been higher
+[13:43] than 95% of days uh versus the past
+[13:47] year. Uh what that means that there was
+[13:49] an extreme amount of demand for downside
+[13:53] protection heading into this past
+[13:56] weekend and part of why we saw some
+[14:00] downside move here this week was the
+[14:03] option market was essentially implying
+[14:05] that there's a greater risk of the
+[14:08] market falling heading into FOMC meeting
+[14:11] yesterday and traders were buying up
+[14:14] protection to protect themselves against
+[14:16] some downside. side. So skew is another
+[14:19] way to look at um where are options
+[14:22] traders buying protection or you know
+[14:25] are they buying more downside protection
+[14:27] or are they buying more upside calls to
+[14:30] participate in future upside skew gives
+[14:33] us a sense for where that demand is
+[14:36] coming from. So if volatility is going
+[14:38] higher, is that volatility demand higher
+[14:41] coming from call buying or put buying?
+[14:44] And that's what we look at the skew
+[14:46] index to give us a view. And once again,
+[14:49] this is something that we highlight
+[14:50] inside of the of the options 360 report.
+[14:56] So right now, cross crash protection
+[14:58] right now still remains fairly
+[15:00] stretched. We're likely going to see
+[15:02] that come down um as of today. uh you
+[15:06] know going into the market today uh
+[15:08] because uh volatility has come down
+[15:11] obviously we've gotten we've gotten
+[15:14] managed to get back above the 760 level
+[15:16] on spy my expectation is that hedging
+[15:21] demand is going to be significantly
+[15:24] lower as a result of the FOMC meeting
+[15:28] yesterday. I think markets largely are
+[15:31] satisfied to some degree that the Fed is
+[15:34] now doing act doing doing something
+[15:36] actively and likely going to continue
+[15:39] doing more before the end of the year to
+[15:42] try to re inflation
+[15:44] because as interest rates started
+[15:46] running away a bit uh this past month
+[15:49] where the 10-year yield was of briefly
+[15:52] above 5%. We now see after the interest
+[15:56] rate rise 10-year yields are actually
+[15:58] lower today. Uh so the bond market is
+[16:01] finding a little bit more stab stability
+[16:04] and equity markets are able to rally on
+[16:07] the back end of that. So uh you know the
+[16:11] volatility market VIX coming down skew
+[16:14] coming down this is all um
+[16:18] what we typically will see near a market
+[16:21] bottom. So, this is kind of how we use
+[16:23] volatility to confirm some of the things
+[16:27] that we're seeing from in our underlying
+[16:29] charts on the S&P. When we're looking at
+[16:32] the S&P, we see that big candle to the
+[16:35] bottom that flushed down to 750 on the
+[16:37] S&P. We've managed to get back above 760
+[16:40] today. You see V come in. You see
+[16:42] hedging demand coming in. This is all um
+[16:46] confirmation that the option markets are
+[16:49] agreeing with the fact that the bond
+[16:52] market is stabilizing, the equity
+[16:54] markets are stabilizing, and we could
+[16:56] form a little bit of a base here for
+[16:59] further upside with equities. So this is
+[17:03] really where volatility is a really
+[17:05] important indicator to help us gauge
+[17:09] or rather confirm the directional view
+[17:12] that we might be seeing on our charts
+[17:14] when we're looking at the S&P or the
+[17:16] NASDAQ. Um because you have the VIX
+[17:19] index for the S&P. You have also similar
+[17:21] indices for let's say the NASDAQ 100,
+[17:24] the Russell 2000 um and these types of
+[17:27] stocks. And they even have some of these
+[17:30] indicators built for single stock here
+[17:33] as well. So you have a VX, you know,
+[17:35] effectively a VIX equivalent for Apple,
+[17:38] IBM, Amazon, Tesla, those types of
+[17:41] stocks as well that you can use to gauge
+[17:44] the directional view or the volatility
+[17:46] view of those specific individual
+[17:49] stocks. You can also look at some of the
+[17:51] tools that I'll be showing you here
+[17:52] today, which is looking at what we call
+[17:55] IV rank. Um, and we use IV rank to help
+[18:00] us gauge
+[18:02] this exact way of looking at things on
+[18:05] an individual stock basis because the
+[18:08] VIX is a published or calculated and
+[18:12] published data point for the S&P 500,
+[18:14] but you don't have the same calculation
+[18:18] and publication for all single stocks,
+[18:21] which is why we calculate that here
+[18:24] using a indicator called IV rank. which
+[18:27] is a fairly popular and fairly industry
+[18:31] standard way of looking at how cheap or
+[18:34] expensive are the options in a specific
+[18:38] stock right now relative to its history.
+[18:42] So, I just pulled out two different
+[18:43] stocks. Um, I'm looking at AMD and
+[18:46] CrowdStrike. Earlier today, AMD had an
+[18:49] IV rank of 19. Crowd uh Crowd Strike has
+[18:52] an IV rank of 54. And what this gives me
+[18:56] a sense for is how cheap are AMD options
+[19:01] relative to its history and how
+[19:03] expensive is Crowd Strike options
+[19:05] relative to its own history. And the
+[19:08] reason that we we use IV rank is because
+[19:11] it's just an easy indicator that's
+[19:13] between 0 to 100. You know, unlike the
+[19:16] VIX where, you know, it generally ranges
+[19:18] between call it 12 or 13 to the downside
+[19:22] and about 30 to the upside. Even though
+[19:24] it could go as high as you know 50 or
+[19:26] even 80 here sometimes to the upside
+[19:29] right there's no technical bounce
+[19:31] meaning it could go down tech VIX can't
+[19:32] go to zero because volatility the
+[19:34] markets can't really be zero and there's
+[19:37] no upside because the volatility in the
+[19:40] market could be theoretically infinite
+[19:43] right and that's hard to work with when
+[19:45] you're when you're working with
+[19:46] indicator that's essentially unbounded
+[19:48] so that's why we use IV rank it's always
+[19:51] going to range between zero to 100. 100
+[19:54] essentially means that it is the most
+[19:56] expensive
+[19:58] um price on on that stock's options
+[20:01] we've seen over the last year. And zero
+[20:04] means it's the cheapest that we've seen
+[20:06] over the past year. And 0 to 100 is just
+[20:09] easy to to to read for most people. The
+[20:13] the one downside I would say to IV rank
+[20:17] is that
+[20:18] what's considered high versus what's
+[20:21] considered low is not it's not an exact
+[20:24] science. I generally tend to use roughly
+[20:26] the 33% level. Some people use 30, some
+[20:30] people use 33. Um but it's usually
+[20:33] somewhere in the range of in the 25 30
+[20:38] 30 35 range or so is the cut off between
+[20:43] expensive options versus cheap options.
+[20:46] Uh it's not like you know if you use IV
+[20:50] percentile which is another way of
+[20:52] calculating but just it still bounds it
+[20:54] from 0 to 100. Uh if you use IV
+[20:57] percentile then you can use the 50 mark.
+[21:00] Um, so depending on whether your
+[21:02] platform or the tools that you're using
+[21:04] uses IV rank or IV percentile, you know,
+[21:06] I tend to find that IV rank is a more
+[21:08] commonly used indicator. Um, because
+[21:11] it's just an easier
+[21:14] um it's just an easier calculation to
+[21:16] calculate IV rank. But just the only
+[21:19] downside to IV rank is that where you
+[21:21] consider options to be expensive versus
+[21:24] cheap is it's not intuitive, right? is
+[21:28] somewhere around the call it 30 to 33
+[21:31] mark is the generally widely accepted
+[21:34] range as to where options are cheap
+[21:37] versus expensive. So when we look at AMD
+[21:42] it's got got an IV rank of 19%. What
+[21:45] that tells me is that options in this
+[21:47] particular stock is relatively
+[21:48] inexpensive compared to its own history.
+[21:51] So, if I have a directional view on AMD,
+[21:54] that's going to help formulate
+[21:57] what type of strategy I might want to
+[22:00] utilize for AMD. Do I want to buy calls
+[22:03] if I'm uh bullish? Do I want to buy a
+[22:05] debit spread? If I'm bearish, do I want
+[22:07] to buy puts? Um, or do I want to look at
+[22:10] selling something? Right? So for AMD,
+[22:13] because the options are relatively
+[22:15] inexpensive, this is really where I
+[22:18] could have an advantage or or I'm at
+[22:21] least not at this as I'm at least not at
+[22:25] a disadvantage to be a buyer of of
+[22:28] options for AMD versus in Crowdstrike
+[22:32] because the options are so expensive.
+[22:36] We already know that options we have a
+[22:39] advantage to be a seller in crowd strike
+[22:43] in itself relative to its own history
+[22:45] I'm also at an advantage to being a
+[22:48] seller in this market because remember
+[22:52] options uh volatility is a mean
+[22:54] reverting asset. So, if volatility is
+[22:57] very high, it tends to grav it tends to
+[23:00] move its way back to the long-term
+[23:02] average. And that long-term average,
+[23:04] like I said, is somewhere in that 20 25
+[23:06] to 35% range. So, if something in it is
+[23:10] in this 54% range, it's more likely to
+[23:13] drift back towards that long-term
+[23:15] average. So, if I had a a directional
+[23:18] view on Crowdstrike, I'd be more
+[23:21] inclined to be a seller of options uh to
+[23:24] t to take that directional view. Does
+[23:27] that make sense? Everyone, please type
+[23:28] two into the chat window if that makes
+[23:30] sense to you.
+[23:33] So Ivy rank is essentially taking what I
+[23:37] just help what I've what I was just
+[23:39] reviewing with regards to
+[23:43] what the option market tells us about
+[23:48] the the underlying security and helping
+[23:51] you apply it to the individual stocks
+[23:54] that you might be looking at on a daily
+[23:56] basis and formulating a directional view
+[23:58] on and helping you understand how that
+[24:03] volatility metric can help you determine
+[24:06] not only a directional uh and timing
+[24:10] edge, but more importantly, how to
+[24:12] structure an options trade to
+[24:16] take advantage of the uh the changes or
+[24:20] the extremes that we might see from time
+[24:22] to time in the option price. Okay. So,
+[24:28] um, so just to kind of walk you through
+[24:30] a few different examples here, let's
+[24:31] look at AMD. This is a stock that's in a
+[24:33] strong bullish, uh, category. And
+[24:37] because the options are very relatively
+[24:39] inexpensive, let's take a look at how we
+[24:42] can take that information
+[24:44] and formulate a a directional view.
+[24:48] Okay. So,
+[24:50] as you can see, AMD is just starting to
+[24:52] take off here today. It's, you know,
+[24:54] it's been kind of rangebound here for a
+[24:57] period of time and it's just starting to
+[24:58] break out here above, call it the 527
+[25:01] level, 525 level here to the upside. And
+[25:05] from the from my perspective, this could
+[25:06] easily revisit the all-time highs and
+[25:09] maybe continue moving higher here. And
+[25:11] because IV rank right now is in its 20th
+[25:15] uh is is at 20%. That's telling me that
+[25:17] the options are relatively inexpensive.
+[25:20] It's not as cheap as it's ever been over
+[25:22] the last year. It's still at 20, which
+[25:24] is on, you know, starting to get to kind
+[25:27] of the normal range, but it's still on
+[25:29] the cheaper end. And that's really
+[25:30] where, you know, if I rank was below 10,
+[25:34] I typically will just be an outright
+[25:35] buyer of a call option, but because it's
+[25:38] at 20, it's not the lowest it's been,
+[25:40] um, I'd be more inclined to be buying a
+[25:43] debit spread in this particular case.
+[25:46] Um, so, you know, I would be looking at
+[25:48] either going out to November or maybe to
+[25:50] the October expiration. And I would be
+[25:52] looking at um buying something like
+[25:55] maybe a debit spread like this to take
+[25:58] advantage of that upside potential. And
+[26:02] um what I'll do is I'll come back here
+[26:03] in a second to help you understand how
+[26:05] we not only use volatility to gain that
+[26:08] directional view, help us uh determine
+[26:11] what type of option structure might make
+[26:14] sense, but also we use volatility to
+[26:17] help us choose strike prices as well.
+[26:21] Um, so I'm going to come back to that
+[26:23] here in a second. So that's AMD. The
+[26:25] other one I would take a look at here
+[26:26] was Crowd Strike. Um, same thing, a
+[26:29] bullish view here, but because options
+[26:32] are rel relatively expensive, this is
+[26:35] where I would take a different view
+[26:36] here. As you can see, Crowd Strike
+[26:38] breaking out to new all-time highs. Uh,
+[26:41] you know, breaking out above this 225
+[26:43] level, continuing to move higher here.
+[26:45] But because, and it's actually pretty
+[26:47] strange, right? Because usually when a
+[26:50] stock is at all-time highs, that is
+[26:53] usually when we see options are really
+[26:55] inexpensive. Because options tend to be
+[26:58] very expensive when markets are at lows
+[27:00] or when a stock is near uh recent lows.
+[27:04] But here we're actually seeing the exact
+[27:06] opposite. We're seeing Crowd Strike have
+[27:08] very expensive options even though it
+[27:11] just broke out to new all-time highs,
+[27:13] which are typically more calm uh times
+[27:17] for a specific stock. So, this is really
+[27:20] where I would lean towards the high
+[27:22] implied volatility strategies here at
+[27:25] Options Play because these types of
+[27:28] strategies take advantage of the fact
+[27:30] that implied volatility right now is
+[27:33] high and it puts the edge back in our
+[27:35] favor as an option seller. So when you
+[27:40] select a high implied volatility
+[27:41] strategy, you have the bullish strategy
+[27:43] here on the left, you have the neutral
+[27:45] strategy in the middle, and then you
+[27:46] have the bearish strategy here on the
+[27:49] right. And because this stock just broke
+[27:52] out to new highs, one month and six
+[27:54] month trend is bullish, relative
+[27:56] strength is 10. I would be inclined to
+[27:59] take a bullish view on this particular
+[28:01] stock. And that's why I'd be more
+[28:02] inclined to potentially look at selling
+[28:05] this bull put spread here using uh
+[28:10] on crowd strike given where implied
+[28:12] volatility is right now. Does that make
+[28:15] sense everyone? Please type three into
+[28:17] the chat window if that makes sense to
+[28:19] you.
+[28:22] Perfect. And we'll look at one more
+[28:24] example. Let's look at Walmart.
+[28:30] Walmart has remained fairly weak here.
+[28:33] Um, and despite today's move in the
+[28:36] markets, we see Walmart continue to be
+[28:38] relatively weak here. Um, so you kind of
+[28:41] have this uh this
+[28:45] support level around 110 that finally
+[28:47] got broken below and we've retested that
+[28:50] level twice now. And you know I my view
+[28:53] is that we could see some further
+[28:55] weakness here from Walmart as consumer
+[28:58] discretionary and these types of stocks
+[29:01] continue to be under pressure. So
+[29:04] Walmart as you can see right now implied
+[29:06] volatility on the lower end which means
+[29:09] that if I have a bearish view here on
+[29:11] Walmart I'd be more inclined to either
+[29:13] buy a put option or a put spread. And
+[29:16] because IV view rank is not in the
+[29:18] bottom 10%, uh I'd be more inclined to
+[29:21] maybe trading a spread uh rather than an
+[29:24] outright put option in this particular
+[29:27] stock. But that's kind of how you can
+[29:30] use these indicators to sometimes give
+[29:34] you a directional view when the
+[29:36] indicators are near uh an extreme.
+[29:40] It can help you with potentially timing
+[29:42] of a specific stock, but it can also
+[29:45] help you structure
+[29:47] an option strategy that aligns
+[29:51] uh the long-term statistical edge in
+[29:53] your favor uh in your options structure.
+[29:58] So whether you're going to be a seller
+[29:59] or buyer of options, the volatility
+[30:02] helps you understand at this stage where
+[30:05] is that statistical edge. Does that make
+[30:08] sense to everyone? Please type one into
+[30:09] the chat window if that makes sense to
+[30:11] you.
+[30:16] Perfect. So, a little bit of a cheat
+[30:18] sheet here to leave you off with.
+[30:21] Essentially, when you have a bullish
+[30:23] view and a low IV rank, you might be
+[30:25] looking at buying something like a debit
+[30:27] call spread. If you're bullish, but
+[30:28] there's high IV rank like what we saw in
+[30:30] crowd strike, you might be looking at
+[30:32] pull selling a put credit spread. Uh, so
+[30:35] bullish IVR rank is something like the
+[30:37] AMD example that we just gave you. Um,
+[30:40] if you are if you have a bearish view
+[30:42] with something with low IV rank, like
+[30:43] the Walmart example I gave you, you
+[30:45] might want to buy a put uh put debit
+[30:48] spread. And then if you happen to find a
+[30:50] stock that you're bearish on that also
+[30:52] has high IV rank, you might want to look
+[30:54] at selling a call credit spread. So um
+[31:00] when Ivy rank is low it just means that
+[31:03] the options are cheap relative to its
+[31:05] own history. When IV rank it's high uh
+[31:07] it is rich relative to its own history.
+[31:10] And what you want to do is you want to
+[31:12] adjust your strategy accordingly to
+[31:15] whether options are relatively cheap or
+[31:18] expensive to its own history. Okay. Um,
+[31:25] and the last thing I want to just
+[31:26] discuss, which I said I'll circle back
+[31:28] to, which is the fact that
+[31:32] volatility also gives you a sense for
+[31:35] what the expected range of a stock is
+[31:38] going to be in the future. That's what
+[31:40] we're utilizing to calculate uh the
+[31:43] expected future um volatility is using
+[31:48] the option prices. we're backing out
+[31:50] that implied volatility. And the reason
+[31:53] that this matters to you is because as
+[31:56] an options trader, you you have to pick
+[31:59] strike prices, right? And a lot of times
+[32:02] when you're thinking about a credit
+[32:03] spread or a debit spread or a long call
+[32:06] or an iron condor or a cover call or a
+[32:09] short put,
+[32:12] you have to look at the underlying
+[32:14] volatility of the stock to help you pick
+[32:17] appropriate strike prices to gain a more
+[32:20] consistent
+[32:22] um a more consistent
+[32:27] um what's the right word? a more
+[32:29] consistent result from your trading.
+[32:31] Okay? And if if you use a volatility or
+[32:35] rather a probability based approach to
+[32:38] selecting your strike prices, you're
+[32:40] going to see more consistent results
+[32:42] from your strategies. So, for example,
+[32:44] if you're selling cover calls, if you're
+[32:47] using implied volatility to help you
+[32:49] select strike prices, meaning when the
+[32:52] implied volatility of a stock is low,
+[32:55] you select strike prices are closer to
+[32:57] the current price of the stock. And when
+[32:59] implied volatility is high, you adjust
+[33:02] your strike prices to be further away
+[33:04] because the market is implying that
+[33:06] there could be more volatility in the
+[33:08] future. If you adjust your strike prices
+[33:11] with of your strategy to what the
+[33:14] implied volatility is showing, you're
+[33:16] going to get a more consistent approach
+[33:18] to trading. Because for example, if you
+[33:20] sell a cover call that has an 80% chance
+[33:23] of expiring worthless every single time,
+[33:26] that 80% is going to naturally adjust
+[33:28] for when volatility is high and when
+[33:31] volatility is low. So that regardless of
+[33:33] whether volatility is high or low,
+[33:35] you're going to see roughly 80% of your
+[33:37] cover calls will expire worthless and
+[33:40] only 20% of your cover calls are getting
+[33:42] called away. Versus if you just said,
+[33:45] I'm going to sell cover calls that are
+[33:46] 10% above the money every single time.
+[33:49] Well, you're going to get inconsistent
+[33:51] results because sometimes V is high and
+[33:54] that 10% doesn't give you enough room
+[33:56] and other times V is low and that 10% is
+[33:59] too far away. So, you're going to get
+[34:01] inconsistent results monthtomonth versus
+[34:04] if you're using volatility to
+[34:05] essentially adjust your strike prices,
+[34:08] that is how you're going to be able to
+[34:11] gauge um you know the uh to gain a more
+[34:15] consistent approach. And
+[34:19] that is exactly why almost everything
+[34:22] built into options play already has that
+[34:25] built into the strategy selection. So,
+[34:29] when you select Walmart and we structure
+[34:33] a November $11095
+[34:36] put option for you, we've already
+[34:38] accounted for the current volatility of
+[34:42] Walmart, what the option market is
+[34:44] implying the future volatility is going
+[34:47] to be in selecting these specific strike
+[34:50] prices. And we built this because
+[34:54] there's no other way to do this
+[34:56] manually. It's it's too much work to do
+[34:58] it manually. What we are essentially
+[35:01] applying automatically for you is
+[35:04] helping you understand what is the one
+[35:06] standard deviation move for Walmart
+[35:08] between now and expiration. So as you
+[35:11] can see the one standard deviation is
+[35:12] somewhere between 95 and 90. That's why
+[35:15] we have this one SD marker in between 95
+[35:18] and 90. And we've chosen to select a
+[35:21] strike price that's just inside of that
+[35:24] one standard deviation. It's got a 15
+[35:26] delta or roughly 15% chance that
+[35:29] Walmart's going to be below $95 by that
+[35:33] November expiration. And we're using
+[35:36] these data points to help us select our
+[35:40] strike prices to structure these trades.
+[35:42] So that in a debit spread structure,
+[35:46] what you want to do is you want to buy
+[35:48] that downside. We're buying the 110 put,
+[35:50] but we want to pay as little as possible
+[35:53] for that 110 put as and at the same
+[35:55] time, we want to pay as little as
+[35:57] possible without giving a lot of upside
+[36:00] away to do so. And that's kind of the
+[36:02] the needle that we're trying to thread
+[36:04] when we're structuring these types of
+[36:05] trades. We want to bring in enough
+[36:07] premium to offset the cost of that 110
+[36:10] put, but we don't want to give away too
+[36:12] much downside if we have get the
+[36:14] directional view right. We don't want to
+[36:16] get the directional view right and then
+[36:18] not participate in it because we've
+[36:20] chosen a strike price that's too
+[36:22] aggressive. So using volatility to help
+[36:25] us select our strike prices, we're going
+[36:27] to get a much more consistent approach.
+[36:29] We're going to be optimizing our
+[36:31] strategies so that we're bringing as
+[36:33] much premium in as possible. As you can
+[36:36] see, buying that 110 put will cost $640.
+[36:39] buying the put spread will only cost
+[36:41] $536,
+[36:43] which has a pretty significant effect
+[36:46] because if let's say the stock goes down
+[36:48] to $95.
+[36:50] If I had bought the put option, I'm
+[36:52] getting it's a really nice return, 135%
+[36:55] return, right? That's fantastic for
+[36:58] getting the directional view correct.
+[37:00] Um, no one's going to sneeze at making
+[37:03] 135% return by buying that put option
+[37:06] and getting the directional view
+[37:08] correct. But as you can see, because I'm
+[37:11] collecting about a dollar in premium by
+[37:14] selling the $95 puts, because it brings
+[37:17] my cost basis down to $536
+[37:20] from $640, the same move in the
+[37:24] underlying stock now gives me 180%
+[37:28] return using that put spread. Because
+[37:31] I've reduced my risk, I've reduced my
+[37:33] capital outlay. If I'm right, I get a
+[37:36] higher return on my investment. And that
+[37:38] is what we're doing here with options
+[37:40] play is we're taking that volatility
+[37:43] input and we're trying to optimize the
+[37:45] strategy based on what the option market
+[37:48] is telling us where the stock can move
+[37:51] and trying to maximize the profit
+[37:54] potential on a trade like this. So that
+[37:57] instead of paying $640 for this trade,
+[37:59] I'm only paying $536 for it. And if I'm
+[38:03] and if I get the directional view right,
+[38:05] I'm basically maximizing my profit
+[38:07] potential while minimizing my risk,
+[38:10] which is why the strategy on the right
+[38:12] has the higher options play score. It is
+[38:15] the most optimized way of potentially
+[38:17] taking that directional view if you're
+[38:20] going to be buying options. On the flip
+[38:23] side, if let's say we look at that crowd
+[38:25] strike example,
+[38:27] if we are going to be a seller of
+[38:29] options,
+[38:32] what we want to do is we want to
+[38:33] maximize how much premium we bring in,
+[38:36] but at the same time, we want to take on
+[38:39] the least amount of risk possible. So,
+[38:42] what we're doing is we're selling in the
+[38:43] at the money put option, but we want to
+[38:45] buy a put option that's relatively close
+[38:48] by. In this particular case, we're going
+[38:50] to sell the we're going to buy the 220
+[38:52] puts. As you can see, that has about a
+[38:54] 25 delta, meaning there's a 25% chance
+[38:58] that the stock will be below 220 by
+[39:00] expiration, that's going to cost um a
+[39:05] relatively small amount comparison to
+[39:07] how much premium that we're bringing in.
+[39:09] Because if we just sold the 245 puts,
+[39:12] we're putting roughly uh you know, a
+[39:15] little over $20,000 at risk to sell just
+[39:19] the 245 puts. But if we just bought the
+[39:22] two 20 puts against that, we're bringing
+[39:24] our total risk down from over $20,000
+[39:27] down to just $1,500.
+[39:30] So, it's about finding the right balance
+[39:32] of
+[39:34] uh of paying not too much uh while
+[39:37] trying to bring down the total risk of
+[39:39] our trade by 90 95 sometimes even 97% in
+[39:43] total risk without necessarily spending
+[39:46] too much more. Right? How can you
+[39:48] maximize the amount of risk that you're
+[39:51] sorry maximizing
+[39:55] minimizing the risk at the same time
+[39:58] paying the least amount of possible to
+[40:00] minimize that risk. Um and where it's
+[40:03] all based on volatility to help us
+[40:05] determine that every single strategy you
+[40:08] see here on options play has already
+[40:09] been optimized for you based on
+[40:11] volatility alone. And this expands out
+[40:14] to if you're selling cover calls as
+[40:16] well. Let's say you own Crowd Strike and
+[40:18] you want to sell a cover call. Exactly
+[40:21] which strike price do you want to sell.
+[40:23] Well, we're going to use the the the
+[40:26] volatility curve to help us understand
+[40:29] how far out should we be going, how how
+[40:32] high of a strike price should we be
+[40:34] selling to essentially maximize the
+[40:36] income while minimizing the chances of
+[40:39] the stock being called away. So in all
+[40:42] of these specific strategies,
+[40:45] whether you're selling a cover call, a
+[40:46] cash secured put, a debit spread, a
+[40:48] credit spread, we are all using the
+[40:50] volatility as an input in selecting our
+[40:53] strike prices. And the options play tool
+[40:55] actually does it automatically for you
+[40:58] in all of these instances. So you
+[41:00] already have that optimized starting
+[41:02] point. You can always make fine
+[41:04] adjustments to it based on technical
+[41:06] analysis levels, your own personal
+[41:08] preferences for the specific strategy,
+[41:11] but we will always start you off with
+[41:13] what we believe is the most optimal set
+[41:16] of strike prices based on what the
+[41:19] volatility is telling us as your
+[41:21] starting point and then you can make
+[41:23] fine adjustments to it afterwards. But
+[41:25] it's important to understand that the
+[41:28] selection of these strategies and the
+[41:30] strike prices that we select are all
+[41:32] based on the volatility metrics that we
+[41:36] showed you here during today's session.
+[41:40] So with that, that covers what I wanted
+[41:42] to share with you here today. There's a
+[41:45] lot of information that's embedded
+[41:46] inside of the volatility of an options
+[41:51] or rather in the option price which we
+[41:54] use to back out the volatility of the
+[41:56] underlying security from that option
+[41:58] price. You can use it to help you gauge
+[42:01] direction. You can use it to help you
+[42:03] gauge the timing on a specific trade and
+[42:06] you can also more importantly use it to
+[42:08] gauge the exact option structure. both
+[42:11] the type of structure and the exact
+[42:14] strike prices of that structure to
+[42:17] optimize your chances of putting the
+[42:19] edge in your favor. And like I said,
+[42:22] this is all built directly into your
+[42:24] options play platform both in the form
+[42:26] of research. So the options 360 report
+[42:29] which kind of has that high level of
+[42:32] volatility overview at the beginning of
+[42:34] every single day to give you a sense for
+[42:36] what the volatility market is telling us
+[42:38] about the broader market and then um
+[42:42] when you're in looking at individual
+[42:44] trade ideas inside of options play using
+[42:46] the IV rank to help you gauge that
+[42:48] structure and then using our tools to
+[42:51] help you uh pick the exact expiration
+[42:54] dates and strike prices for a given
+[42:57] option structure. With that, like I
+[43:00] said, um that covers what I wanted to
+[43:02] share with you. If you are interested in
+[43:05] using the tools that I just showed you
+[43:07] here today, you can find that at
+[43:09] new.optionsplay.com/registration,
+[43:09] optionsplay.com/registration,
+[43:11] which I will point um in which I will
+[43:14] post into the chat window, or you can
+[43:16] point your phone to that QR code and
+[43:18] sign up for a free 14-day trial for the
+[43:21] tools that I just showed you today,
+[43:23] which again includes the recording and
+[43:26] the slides from today's session.
+[43:30] If you're watching this as a recording,
+[43:32] just know that attending these education
+[43:34] sessions live and participating in the
+[43:37] Q&A is reserved only for OptionsPlay
+[43:40] members. As a member, you'll get live
+[43:43] access to our weekly sessions and the
+[43:45] ability to ask questions in real time.
+[43:49] And with your membership, you'll receive
+[43:51] full access to the tools and research
+[43:53] you saw during today's session. So,
+[43:56] start your free 14-day trial at
+[43:58] optionsplay.com and join us live for the
+[44:02] next trading session.
