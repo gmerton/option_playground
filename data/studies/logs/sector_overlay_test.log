@@ -1,0 +1,40 @@
+window 2018-04 -> 2026-02 (95 months)
+sleeve in window: mean -0.05%/mo, sd 4.25 | corr: book -0.03, no-straddle -0.01, SPY -0.30 | book vs SPY +0.19, no-straddle vs SPY +0.37
+
+       book                sleeve    size  mean  sharpe  dSharpe  maxDD    dDD  worst  worst3  y2020  y2022
+  full book         sector spread    none  1.51    1.30     0.00  24.97   0.00  -8.25   -6.84  31.95 -15.70
+  full book         sector spread     25%  1.49    1.26    -0.04  22.94  -2.03  -7.08   -6.98  36.01  -7.00
+  full book         sector spread 50% *P*  1.48    1.16    -0.14  20.92  -4.05  -8.26   -7.13  40.06   1.71
+  full book         sector spread    100%  1.46    0.91    -0.40  24.03  -0.94 -12.31  -10.38  48.17  19.11
+  full book             de-meaned     25%  1.51    1.27    -0.03  22.73  -2.24  -7.07   -6.97  36.15  -6.85
+  full book             de-meaned 50% *P*  1.51    1.18    -0.12  20.48  -4.49  -8.24   -7.10  40.35   1.99
+  full book             de-meaned    100%  1.51    0.94    -0.37  23.84  -1.13 -12.26  -10.33  48.75  19.69
+  full book   SPY short (control)     25%  1.24    1.09    -0.21  24.96  -0.01  -7.39   -6.97  27.71 -12.00
+  full book   SPY short (control) 50% *P*  0.97    0.82    -0.49  24.97  -0.00  -7.57   -7.10  23.46  -8.30
+  full book   SPY short (control)    100%  0.44    0.30    -1.00  43.32  18.35  -9.48   -9.34  14.98  -0.89
+no-straddle         sector spread    none  1.09    0.95     0.00  38.10   0.00  -9.93   -8.23  17.75 -21.40
+no-straddle         sector spread     25%  1.08    0.91    -0.04  35.39  -2.71  -8.76   -7.36  21.80 -12.70
+no-straddle         sector spread 50% *P*  1.07    0.83    -0.12  32.68  -5.42  -7.59   -7.12  25.86  -4.00
+no-straddle         sector spread    100%  1.05    0.64    -0.30  27.26 -10.84 -12.80  -10.20  33.97  13.41
+no-straddle             de-meaned     25%  1.09    0.92    -0.03  35.11  -2.99  -8.74   -7.35  21.95 -12.56
+no-straddle             de-meaned 50% *P*  1.09    0.85    -0.10  32.13  -5.97  -7.56   -7.10  26.15  -3.71
+no-straddle             de-meaned    100%  1.09    0.67    -0.27  26.74 -11.36 -12.75  -10.15  34.54  13.99
+no-straddle   SPY short (control)     25%  0.83    0.77    -0.18  37.95  -0.15  -9.06   -6.99  13.51 -17.70
+no-straddle   SPY short (control) 50% *P*  0.56    0.52    -0.43  38.87   0.77  -8.20   -6.76   9.26 -14.00
+no-straddle   SPY short (control)    100%  0.03    0.02    -0.92  60.87  22.77  -8.26   -8.00   0.78  -6.59
+
+full book: its 10 worst months (%):
+               2022-08  2018-11  2019-04  2023-09  2022-04  2018-09  2025-04  2022-11  2023-02  2020-08
+book             -8.25    -6.43    -5.84    -5.78    -5.50    -4.53    -4.34    -3.91    -3.40    -3.32
+sector spread     4.97    -1.63    -5.15     0.54     5.59     1.53     5.44    -0.32    -4.53     3.64
+spy              -4.08     1.85     4.09    -4.74    -8.78     0.59    -0.87     5.56    -2.51     6.98
+sector spread mean in those months +1.01% vs all months -0.05%
+
+no-straddle: its 10 worst months (%):
+               2022-08  2022-04  2023-09  2020-02  2018-09  2019-07  2022-06  2019-04  2025-02  2022-01
+book             -9.93    -7.81    -6.96    -5.44    -5.18    -5.06    -4.90    -4.64    -4.49    -4.39
+sector spread     4.97     5.59     0.54     1.91     1.53     0.66     0.95    -5.15    -3.83     4.06
+spy              -4.08    -8.78    -4.74    -7.92     0.59     1.51    -8.25     4.09    -1.27    -5.27
+sector spread mean in those months +1.12% vs all months -0.05%
+
+PRIMARY (50%) candidate on {'full book': False, 'no-straddle': False} -> not a candidate

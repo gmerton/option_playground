@@ -49,6 +49,26 @@ def tstat(x) -> float:
     x = pd.Series(x).dropna(); return x.mean() / x.std(ddof=1) * sqrt(len(x))
 
 
+def spread_series(lb: int = 12, K: int = 3) -> tuple[pd.Series, pd.Series]:
+    """Monthly net spread (month-end index) and SPY monthly return -- the PRIMARY construction, no null. For overlays."""
+    px = yf.download(CORE + list(LATE) + ["SPY"], start="1998-12-01", auto_adjust=True, progress=False)["Close"]
+    m = px.resample("ME").last()
+    m = m[m.index < pd.Timestamp.today().normalize() - pd.offsets.MonthEnd(0)]
+    r = m.pct_change(); spy = r.pop("SPY")
+    for tk, since in LATE.items():
+        r.loc[r.index < pd.Timestamp(since), tk] = np.nan
+    sig = ((m.shift(1) / m.shift(lb)) - 1)[r.columns].where(r.notna())
+    net = {}
+    for i in range(1, len(r)):
+        s = sig.iloc[i - 1].dropna()
+        if len(s) < 2 * K + 1:
+            continue
+        o = s.sort_values()
+        net[r.index[i]] = r.iloc[i][list(o.index[-K:])].mean() - r.iloc[i][list(o.index[:K])].mean() - COST - BORROW
+    net = pd.Series(net).dropna()
+    return net, spy
+
+
 def main() -> None:
     px = yf.download(CORE + list(LATE) + ["SPY"], start="1998-12-01", auto_adjust=True, progress=False)["Close"]
     m = px.resample("ME").last()
