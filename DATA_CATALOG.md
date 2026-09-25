@@ -80,6 +80,7 @@ idempotent per year (see either builder).
 |---|---|---|
 | **`intraday_hist/{SPY,QQQ,TQQQ,SQQQ}_1min.parquet`** | IBKR 1-min bars (ts, OHLCV, average, barCount) | **2007-01→2026-09-17** (TQQQ/SQQQ from 2010) |
 | **`intraday_1min/<SYM>_<date>.parquet`** | per-name-day 1-min bars (Tradier; Polygon backfill) for the watchlist | 24,755 files, 2026-02→2026-09. ⚠ `vwap` is **per-bar**; session VWAP = `lib.journal.exit_kind.session_vwap` |
+| **`s3://gmerton-stock-data/backfill/intraday_1min/bars/<SYM>/`** (cloud) | Polygon 1-min bars, 1,715 liquid names (precision-tier names first), **2024-10 → 2026-09**, one parquet per name × 70-day chunk, same schema as `intraday_1min/` | ⏳ filling from 2026-09-25 (ECS `polygon-1min-backfill`, ~3 days; `services/polygon-1min-backfill/`). Free-tier key: nothing earlier than ~2y is available |
 | `alert_ctx_v*_<date>.parquet` | alert-replay context snapshots | 2026-02→09 |
 | `journal_intraday/`, `journal_daily/` | bars behind journal entries | 2026 |
 | `GOOG_*_1min_bidask.parquet` | intraday option quotes, 4 GOOG expiries | ⏸ paused 2026-08 |
