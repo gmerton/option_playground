@@ -1,0 +1,21 @@
+# Volume signature at the pullback low (pre-registration in the docstring)
+
+## P2 K1 entries: n 14,405; median pullback vol 0.97x, turn-day vol 0.87x avg50; hold20 37%
+  V1 DRY   +20: tagged n  4051 ( 28%) x +0.78 vs rest +1.10 | diff -0.14pp t -0.31 halves -0.41/+0.09 yrs 9/17 fail | hold20 33% vs 39% z -6.9
+  V1 DRY   +60: tagged n  4051 ( 28%) x +1.02 vs rest +1.48 | diff -0.08pp t -0.12 halves +0.66/-0.72 yrs 9/17 fail
+  V2 TURN  +20: tagged n  1572 ( 11%) x +1.71 vs rest +0.92 | diff +0.21pp t +0.27 halves -0.44/+0.65 yrs 8/17 fail | hold20 44% vs 37% z +6.0
+  V2 TURN  +60: tagged n  1572 ( 11%) x +2.88 vs rest +1.16 | diff +1.01pp t +0.80 halves +0.03/+1.70 yrs 9/17 fail
+  V3 BOTH  +20: tagged n   108 (  1%) x +1.48 vs rest +1.01 | diff -0.19pp t -0.10 halves -0.55/-0.10 yrs 11/16 fail | hold20 44% vs 37% z +1.3  <- PRIMARY
+  V3 BOTH  +60: tagged n   108 (  1%) x +0.37 vs rest +1.36 | diff +0.22pp t +0.06 halves +2.81/-0.45 yrs 8/16 fail
+  [context] K0 dip on dry volume: n 5534 x20 +0.73 vs rest +1.00; hold20 12% vs 13%
+
+## P1 K1 entries: n 2,647; median pullback vol 1.00x, turn-day vol 0.88x avg50; hold20 38%
+  V1 DRY   +20: tagged n   666 ( 25%) x -0.05 vs rest +1.02 | diff -2.56pp t -2.13 halves +nan/-2.56 yrs 6/7 fail | hold20 32% vs 40% z -3.7
+  V1 DRY   +60: tagged n   666 ( 25%) x +0.53 vs rest +0.73 | diff -4.76pp t -2.28 halves +nan/-4.76 yrs 6/7 fail
+  V2 TURN  +20: tagged n   304 ( 11%) x +1.31 vs rest +0.68 | diff -0.71pp t -0.39 halves +nan/-0.71 yrs 3/7 fail | hold20 47% vs 37% z +3.4
+  V2 TURN  +60: tagged n   304 ( 11%) x +1.58 vs rest +0.57 | diff -1.00pp t -0.26 halves +nan/-1.00 yrs 3/7 fail
+  V3 BOTH  +20: tagged n    17 (  1%) x +2.30 vs rest +0.74 | diff -0.95pp t -0.20 halves +nan/-0.95 yrs 4/6 fail | hold20 76% vs 38% z +3.2
+  V3 BOTH  +60: tagged n    17 (  1%) x +7.24 vs rest +0.63 | diff +3.39pp t +0.21 halves +nan/+3.39 yrs 3/6 fail
+  [context] K0 dip on dry volume: n 865 x20 -1.05 vs rest +0.24; hold20 10% vs 14%
+
+VERDICT: no volume signature passes
