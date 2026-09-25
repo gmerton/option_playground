@@ -262,7 +262,7 @@ REGIME_TIER_MAP: dict[str, dict[str, str]] = {
     },
 }
 TIER_NOTE = {
-    "S": "certified stress bucket -- ONE position; SPY is the vehicle (SPX condor has no live emitter yet)",
+    "S": "certified stress bucket -- SPY only (Gabe 2026-09-25: the SPX condor is not traded)",
     "U": "UNCERTIFIED -- conditions met, NOT a trade; never sized",
     "X": "BLOCKED -- not reproducible; do not trade",
     "C": "retired cell",

@@ -9,9 +9,10 @@ argued with after the fact. NAV P&L is shown alongside for context only.
 Five components, 100 points, each tied to a rule already on the plan sheet:
   entry quality   30  from journal_entry_grades (lib/journal/entry_grades.py), i.e. the SAME setup rubric the
                       alert monitor uses (lib/alerts/grading.py):
-                        setup 20      share of stock entries graded A/B: >=75% -> 20, 50-75% -> 10, else 0
-                        execution 10  share of alert-following entries filled <=0.25 ADR worse and <=10 min
-                                      after the alert: >=75% -> 10, 50-75% -> 5, else 0 (no alert entries -> 10)
+                        setup 30      share of stock entries graded A/B: >=75% -> 30, 50-75% -> 15, else 0
+                      (the 10-point "execution" score for following an intraday alert fast was DROPPED 2026-09-25:
+                      intraday triggers have no edge vs a random minute and the close is the house entry; the
+                      slip/delay figures are still recorded in journal_entry_grades as information.)
                       Sessions before the alert logs (pre-8/13) fall back to the old prose review verdicts.
   same-day trips  25  stock same-day round trips that were NOT true invalidations (exit at the trade's
                       worst price after a pre-entry level broke = INVALIDATION, not penalized; see
@@ -42,6 +43,7 @@ from lib.journal.entry_grades import ALERT_LOGS_START, drop_execution_errors, re
 
 SYSTEMATIC = "straddle_screener|systematic_spread_likely|playbook_verified|playbook_deviation|^systematic$|,systematic,|,systematic$"
 OUT_MD = Path("data/studies/journal_process_grades.md")
+RUBRIC_V4_FROM = "2026-09-25"   # first session scored with the v4 entry component
 OUT_CSV = Path("data/watchlist/logs/journal_process_grades.csv")
 
 
@@ -106,10 +108,13 @@ def main() -> int:
         e = eg[eg.trade_date == d]
         if str(d) >= ALERT_LOGS_START and len(e):
             ab = int(e.setup_grade.isin(["A", "B"]).sum()); share = ab / len(e)
-            s_setup = 20 if share >= 0.75 else 10 if share >= 0.50 else 0
             mt = e[e.alert_kind.notna()]; ok = int((mt.exec_ok == 1).sum())
-            s_exec = 10 if not len(mt) else (10 if ok / len(mt) >= 0.75 else 5 if ok / len(mt) >= 0.50 else 0)
-            s_entry, entry_src = s_setup + s_exec, "rubric"
+            if str(d) >= RUBRIC_V4_FROM:      # v4: setup share carries all 30; alert-following speed shown, not scored
+                s_entry, entry_src = (30 if share >= 0.75 else 15 if share >= 0.50 else 0), "rubric-v4"
+            else:                             # sessions before v4 keep the score they were given
+                s_setup = 20 if share >= 0.75 else 10 if share >= 0.50 else 0
+                s_exec = 10 if not len(mt) else (10 if ok / len(mt) >= 0.75 else 5 if ok / len(mt) >= 0.50 else 0)
+                s_entry, entry_src = s_setup + s_exec, "rubric"
             gc = e.setup_grade.value_counts()
             abcf = "/".join(str(int(gc.get(k, 0))) for k in "ABCF"); exec_s = f"{ok}/{len(mt)}"
         else:
@@ -145,7 +150,7 @@ def main() -> int:
              "Graded on process, not P&L; NAV P&L shown for context. Rubric in the script docstring. Entry grades use the same setup rubric as the alert monitor (`src/lib/alerts/grading.py`).*", "",
              "| date | grade | score | entry pts | stock entries A/B/C/F (rubric) | exec ok / alert entries | fills | stock round trips (invalidation / noise-stop / discretionary) | doubled | too-soon exits | NAV P&L |", "|---|---|---|---|---|---|---|---|---|---|---|"]
     for r in df.itertuples():
-        ent = r.entries_ABCF if r.entry_src == "rubric" else f"prose {r.disc_good}/{r.disc_bad} of {r.disc_entries}"
+        ent = r.entries_ABCF if str(r.entry_src).startswith("rubric") else f"prose {r.disc_good}/{r.disc_bad} of {r.disc_entries}"
         lines.append(f"| {r.date} | **{r.grade}** | {r.score} | {r.s_entry}/30 | {ent} | {r.exec_ok_of_alert} | {r.fills} | {r.stock_round_trips} ({r.rt_invalidation} / {r.rt_noise_stop} / {r.rt_discretionary}) | {r.doubled} | {r.too_soon} | {'' if pd.isna(r.nav_pnl) else f'{r.nav_pnl:+,.0f}'} |")
     lines += ["", "## By grade", "", "| grade | days | avg NAV P&L | avg fills | avg stock round trips |", "|---|---|---|---|---|"]
     for gr, r in g.iterrows():

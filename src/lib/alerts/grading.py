@@ -39,10 +39,14 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
-RUBRIC_VERSION = "v3-2026-09-21"
+# v4 (2026-09-25, Gabe after the top-down audit): a long entry AT THE CLOSE (15:45-16:00 ET) grades B. The ledger's best
+# entry is the close (entry_study_2026-09-17: the close beat every intraday entry, paired -1.2 to -2.3pp; the 2026-09-25
+# band test: open, close and the house rule all within 0.3pp), yet v3 graded it C as "after 12:00". Nothing else changed.
+RUBRIC_VERSION = "v4-2026-09-25"
 SHORT_KINDS = ("BIR", "FBO", "PARA")
 LONG_OPEN_UNTIL = 9 * 60 + 40  # 09:40 ET: alerts at/before this minute are the opening flood (C)
-LONG_NOON = 12 * 60            # after 12:00 ET: afternoon entries are C
+LONG_NOON = 12 * 60            # after 12:00 ET: afternoon entries are C ...
+LONG_CLOSE_FROM = 15 * 60 + 45  # ... except the close window, 15:45-16:00 ET = B (v4)
 SHORT_AFTER = 10 * 60 + 30    # 10:30 ET
 SHORT_RS_VETO_PCT = 3.0       # v2.1: a short on a name this far ABOVE SPY on the day is F (day leader)
 VERDICT = {"A": "good", "B": "good", "C": "gray_area", "F": "bad"}
@@ -111,15 +115,18 @@ def setup_grade(side: str, kind: str | None, minute: int, day_state: str | None,
     day_ok = ds == want or ds == "FLAT"          # FLAT (on both EMAs, 2026-09-15): either side is in play
     comp = [("day", ds, want, "pass" if day_ok else "context (v3: no longer a grade driver)")]
     if side == "long":
-        opening, afternoon = minute <= LONG_OPEN_UNTIL, minute >= LONG_NOON
-        comp.append(("time", _hhmm(minute), "09:41-12:00", "marginal" if (opening or afternoon) else "pass"))
+        at_close = minute >= LONG_CLOSE_FROM
+        opening, afternoon = minute <= LONG_OPEN_UNTIL, (minute >= LONG_NOON and not at_close)
+        comp.append(("time", _hhmm(minute), "09:41-12:00 or the close", "marginal" if (opening or afternoon) else "pass"))
         comp.append(("setup", kind or "no alert", "-", "no kind ranks once the universe is controlled (v2)"))
         what = kind or "entry without an alert"
         ctx = "" if day_ok else f" (daily chart {ds}: context, unvalidated)"
         if opening:
             return Grade("C", f"{what} in the first ten minutes (09:30-09:40){ctx}", tuple(comp))
+        if at_close:
+            return Grade("B", f"{what} at the close (15:45-16:00): the house entry{ctx}", tuple(comp))
         if afternoon:
-            return Grade("C", f"{what} after 12:00{ctx}", tuple(comp))
+            return Grade("C", f"{what} after 12:00, before the close{ctx}", tuple(comp))
         return Grade("B", f"{what} 09:41-12:00{' on a day-LONG name' if day_ok else ctx}", tuple(comp))
     early = minute < SHORT_AFTER
     comp.append(("time", _hhmm(minute), ">=10:30", "fail" if early else "pass"))
