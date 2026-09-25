@@ -133,9 +133,9 @@ class Metrics:
     ret_21d: Optional[float]
     ret_63d: Optional[float]
     rs_21d: Optional[float]             # ret_21d minus benchmark ret_21d
-    vol_20d: Optional[float]            # annualized realized vol, % (risk)
+    vol_20d: Optional[float]            # annualized realized vol as a FRACTION (0.108 = 10.8%)
     trend_score: Optional[int]          # 0..4 stage-style score
-    dist_days: Optional[int]            # IBD distribution days in last 25 sessions
+    dist_days: Optional[int]            # IBD-style distribution days in last 25 sessions (a vol gauge; see dist_phrase)
 
     @property
     def pct_vs(self):
@@ -340,16 +340,30 @@ def regime_verdict(spy: Metrics) -> str:
     return "BEAR — SPY below 200SMA and 50SMA"
 
 
-def dist_phrase(n: Optional[int]) -> str:
+# Share of sessions at each distribution-day count (desk rule, rolling 25), from run_distribution_days_test.py
+# (2026-09-24): SPY 1993-2026, QQQ 1999-2026. Used to show the count as a percentile instead of fixed labels --
+# on ETF volume the rule fires ~1 day in 5, so a count >= 6 is the NORMAL state (SPY 47% of sessions).
+_DIST_SHARE = {
+    "SPY": {0: .003, 1: .024, 2: .052, 3: .117, 4: .162, 5: .174, 6: .172, 7: .136, 8: .081, 9: .049,
+            10: .020, 11: .008, 12: .001},
+    "QQQ": {1: .010, 2: .043, 3: .096, 4: .149, 5: .180, 6: .164, 7: .138, 8: .108, 9: .064, 10: .034,
+            11: .012, 12: .002},
+}
+
+
+def dist_phrase(n: Optional[int], sym: str = "SPY") -> str:
+    """The count and its percentile (share of sessions since the ETF's start with a LOWER count).
+    Tested 2026-09-24 (TEST_INDEX, run_distribution_days_test.py): no forward-return signal on SPY/QQQ/IWM;
+    it tracks volatility that is already present (corr ~0.4 with trailing RV and VIX) and adds nothing
+    beyond VIX -- a volatility gauge, not a sell signal."""
     if n is None:
         return "n/a"
-    if n <= 2:
-        return f"{n} (healthy)"
-    if n <= 4:
-        return f"{n} (caution building)"
-    if n == 5:
-        return f"{n} (UNDER PRESSURE)"
-    return f"{n} (SERIOUS — defend / raise cash)"
+    table = _DIST_SHARE.get(sym)
+    if not table:
+        return f"{n}"
+    p = round(100 * sum(v for k, v in table.items() if k < n))
+    suf = "th" if 10 <= p % 100 <= 20 else {1: "st", 2: "nd", 3: "rd"}.get(p % 10, "th")
+    return f"{n} ({p}{suf} pctile)"
 
 
 def regime_block(spy: Metrics, indices: List[Metrics]):
@@ -372,22 +386,15 @@ def regime_block(spy: Metrics, indices: List[Metrics]):
         note = "broad participation" if diff >= 0 else "narrow / mega-cap-led (RSP lagging SPY)"
         print(f"  Participation: RSP−SPY 21d = {pct(diff)}  → {note}")
 
-    # ---- distribution-day breadth deterioration ----
+    # ---- distribution days: shown as a volatility gauge (see dist_phrase) ----
     qqq = next((m for m in indices if m.symbol == "QQQ"), None)
     spy_dd = spy.dist_days
     qqq_dd = qqq.dist_days if qqq else None
-    print(f"  Distribution days (last 25 sessions, institutional selling):")
-    print(f"      SPY {dist_phrase(spy_dd)}   |   QQQ {dist_phrase(qqq_dd)}")
-    worst = max([d for d in (spy_dd, qqq_dd) if d is not None], default=0)
-    if worst >= 5:
-        print("      ⚠  An uptrend with 5+ distribution days is deteriorating even if "
-              "price looks fine — tighten stops, throttle new risk.")
-    elif worst >= 3:
-        print("      ◦  Selling is accumulating; not a sell signal, but stop adding "
-              "aggressively until it resets.")
-    if spy_dd is not None and qqq_dd is not None and qqq_dd - spy_dd >= 2:
-        print("      ◦  QQQ carrying more distribution than SPY → tech is where the "
-              "institutional selling is concentrated (confirms the rotation).")
+    rv = f"{100 * spy.vol_20d:.1f}%" if spy.vol_20d is not None else "n/a"   # vol_20d is a fraction
+    print(f"  Distribution days (last 25 sessions; percentile vs history):")
+    print(f"      SPY {dist_phrase(spy_dd, 'SPY')}   |   QQQ {dist_phrase(qqq_dd, 'QQQ')}   |   SPY 20d realized vol {rv}")
+    print("      ◦  A lagging volatility gauge, not a sell signal: tested 2026-09-24, no forward-return effect on")
+    print("         SPY/QQQ/IWM and no information beyond VIX. Read realized vol, VIX and the GEX sign directly.")
 
 
 def takeaways(indices, sectors, industries):
@@ -614,9 +621,9 @@ def render_compare(snap_a: dict, snap_b: dict, pos_source: str, show_positions: 
     print(f"\n  SPY:           {spy_a.close:.2f} → {spy_b.close:.2f}  "
           f"({pct(spy_b.close / spy_a.close - 1).strip()})    "
           f"vs50: {pct(spy_a.pct_vs(spy_a.sma50)).strip()} → {pct(spy_b.pct_vs(spy_b.sma50)).strip()}")
-    print(f"  Distribution:  SPY {dist_phrase(spy_a.dist_days)} → {dist_phrase(spy_b.dist_days)}")
+    print(f"  Distribution:  SPY {dist_phrase(spy_a.dist_days, 'SPY')} → {dist_phrase(spy_b.dist_days, 'SPY')}")
     if qqq_a and qqq_b:
-        print(f"                 QQQ {dist_phrase(qqq_a.dist_days)} → {dist_phrase(qqq_b.dist_days)}")
+        print(f"                 QQQ {dist_phrase(qqq_a.dist_days, 'QQQ')} → {dist_phrase(qqq_b.dist_days, 'QQQ')}")
 
     def breadth(snap):
         return sum(1 for m in snap["idx"] if m.trend_score is not None and m.trend_score >= 3)
