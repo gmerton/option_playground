@@ -34,8 +34,8 @@ TRADIER_API_KEY=... PYTHONPATH=src .venv/bin/python3 market_conditions.py
 
 **3. `start_alerts.sh` — launch ~06:25 PT / 09:25 ET, leave running until the close**
 ```bash
-./start_alerts.sh                # focus universe (data/watchlist/universe_focus.txt + today's plan)
-./start_alerts.sh --full         # preferred-list union
+./start_alerts.sh                # auto universe: preferred list + holdings + last night's scans + fresh plan/creator lists
+./start_alerts.sh --full         # same (no-op since the focus file was retired 2026-09-24)
 ./start_alerts.sh AMD LITE       # explicit symbols
 ```
 - Produces: graded intraday alerts in the terminal (with chime) → `data/watchlist/logs/universe_alerts_<date>.log` and `data/journal/alerts/<date>.json`, published to `alerts.html` on the site.
@@ -55,7 +55,7 @@ STRADDLE=1 ./daily_desk.sh        # force the Friday-only straddle screen
 - Produces: the whole evening desk → `data/watchlist/` (`regime_<date>.txt`, `positions_<date>.txt`, `adhikary_<date>.txt`, `clusters_<date>.txt`, `straddle_screen_<date>.txt`, `alerts_latest.csv`).
 - Steps: pulls `minervini_matrix.parquet` + `preferred_tickers.txt` from S3 first (both were found badly stale in Sept — do not bypass) → `run_gex_fly_paper.py --close` → `run_trailing_retro.py` (regime) → `run_position_monitor.py --live` (open book) → `run_adhikary_scan.py` → `run_build_liquid_panel.py` + `run_scan_clusters.py` → `run_preferred_breakouts.py` (or the Lambda's S3 copy after 19:15 ET) → `run_straddle_screen.py` *(Fridays only)* → pending-notes list → `run_journal_grades.py` → `run_alert_scorecard.py` (+ `--oop`) → `lib.alerts.universe` (tomorrow's focus list)
 - Env: sourced from `~/.trading_env` by the script (since 2026-09-24); `AWS_PROFILE` for the S3 pulls. The panel builder's gap fill needs `POLYGON_API_KEY`. TWS/Gateway open on Fridays for the straddle IV-percentile gate (`IB_PORT=7496` live / `4002` paper).
-- **Skip it:** no `universe_focus.txt` for tomorrow (so `start_alerts.sh` watches a stale universe), expiring positions go unreviewed, and the GEX fly paper trade misses a settle.
+- **Skip it:** tomorrow's monitor universe misses tonight's scan names (it is rebuilt from the scan outputs at start), expiring positions go unreviewed, and the GEX fly paper trade misses a settle.
 
 ---
 

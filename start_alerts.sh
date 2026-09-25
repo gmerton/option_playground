@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 # Start the intraday alert monitor in this terminal (run ~09:25 ET / 06:25 PT).
-#   ./start_alerts.sh            focus universe (data/watchlist/universe_focus.txt + today's plan)
-#   ./start_alerts.sh --full     preferred-list union instead
+#   ./start_alerts.sh            the auto universe: preferred list + holdings + last night's scans + fresh plan/creator lists
+#                                (+ universe_extra.txt, - universe_exclude.txt); see src/lib/alerts/universe.py
+#   ./start_alerts.sh --full     same thing (kept for old habits; the hand-edited focus file was retired 2026-09-24)
 #   ./start_alerts.sh AMD LITE   explicit symbols only
 # Alerts print here (with a chime) and go to the journal site (alerts.html); no macOS dialogs.
 #   alerts are graded A/B (loud) / C (dimmed) / F (saved as out of play) by lib/alerts/grading.py; --index-gate is a no-op.

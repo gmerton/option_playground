@@ -98,7 +98,7 @@ print(p[["id","underlying_symbol","note_date"]].to_string(index=False) if len(p)
 PYEOF
 echo; echo "== 5b process report card (grade per session; rubric in run_journal_grades.py)"
 MYSQL_PASSWORD="${MYSQL_PASSWORD:-}" $PY run_journal_grades.py 2>/dev/null | tail -12
-echo; echo "== 6/6 live-alert scorecard for today, then the universe for tomorrow (edit $OUT/universe_focus.txt to change it)"
+echo; echo "== 6/6 live-alert scorecard for today, then the universe for tomorrow (auto-built; add names in $OUT/universe_extra.txt, drop them in universe_exclude.txt)"
 $PY run_alert_scorecard.py 2>/dev/null | tail -8
 $PY run_alert_scorecard.py --oop 2>/dev/null | tail -2      # out-of-play alerts: saved, never shown -- scored for comparison
 $PY -m lib.alerts.universe 2>/dev/null

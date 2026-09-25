@@ -54,7 +54,10 @@ name. Expect nulls; treat a positive as suspect until it survives real fills and
 * **Alerts → end-of-day only** — the owner wants to de-emphasise intraday alerts. Not yet implemented.
 * **`journal_campaigns` and spread rolls** — he rolled several spreads across expiries on 9/22; whether
   the campaign keying threaded them correctly is unverified.
-* **The live-alert universe is fed by stale hand-kept inputs** (found 2026-09-23, parked by the owner to
+* ✅ **RESOLVED 2026-09-24:** `universe_focus.txt` was retired (git history keeps it); `lib.alerts.universe` now
+  always unions preferred list + open holdings (Flex snapshot, one session late) + the evening scans + the EOD
+  monitor roster + plan/creator lists no older than 7 days + `universe_extra.txt`, minus `universe_exclude.txt`.
+  Original note: **The live-alert universe is fed by stale hand-kept inputs** (found 2026-09-23, parked by the owner to
   revisit). `start_alerts.sh` streams `universe_focus.txt` (last edited 9/14) + the newest `trade_plan_*.md`
   (9/09) — `lib.alerts.universe` only unions them, it never refreshes them. So the evening desk's new names
   (9/23: OKTA, CRWD, TEAM, FSLY, CNH…) are not watched unless added by hand. Decide: auto-feed the focus file

@@ -571,7 +571,7 @@ def main() -> int:
     ap.add_argument("--detectors", default="ur,orb9,lvl,bir,para", help="comma list of ur,orb9,lvl (long) and bir,fbo,para (short); fbo is OFF by default since 2026-09-24")
     ap.add_argument("--tag", default="", help="replay: write logs as universe_alerts_<date>_replay_<tag>*.log (keeps the study's replay logs intact)")
     ap.add_argument("--no-rebuild", action="store_true", help="use universe_latest.txt as-is")
-    ap.add_argument("--full", action="store_true", help="preferred-list union instead of universe_focus.txt")
+    ap.add_argument("--full", action="store_true", help="no-op since 2026-09-24 (the universe is always the full union; universe_focus.txt was retired)")
     ap.add_argument("--no-dialog", action="store_true", help=argparse.SUPPRESS)   # deprecated no-op: macOS pop-ups removed 2026-09-10
     ap.add_argument("--no-publish", action="store_true", help="live: don't write the journal-site JSON / S3")
     ap.add_argument("--heartbeat", type=int, default=5, help="minutes between heartbeat lines (live)")

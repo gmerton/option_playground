@@ -1,20 +1,27 @@
 """Assemble the live-alert universe with no hand entry.
 
 Sources (all optional except the preferred list):
-  data/preferred_tickers.txt                Trend-Template passers + manual overlay
-  data/watchlist/trade_plan_<latest>.md     first column of every markdown table
+  data/preferred_tickers.txt                Trend-Template passers + manual overlay (S3-owned, pulled by the desk)
+  open stock positions                      journal_open_positions, newest snapshot (needs MYSQL_PASSWORD)
+  data/watchlist/trade_plan_<latest>.md     first column of every markdown table -- only if <= 7 days old
   data/watchlist/alerts_latest.csv          Adhikary scan buy-stop rows
   data/watchlist/monitor_latest.json        breakout-monitor roster
+  data/ariel_hernandez/analysis/<latest>_watchlist_scored.md   creator watchlist -- only if <= 7 days old
   data/watchlist/universe_extra.txt         free-form adds (one ticker per line, # comments)
   data/watchlist/universe_exclude.txt       tickers to drop
 
 Writes data/watchlist/universe_latest.txt and returns the sorted list.
+
+2026-09-24: the hand-edited universe_focus.txt was retired. When it existed the monitor streamed ONLY it (+ the
+plan), so the evening scans never reached the next session (it was last edited 9/14, the plan 9/09). The universe is
+now always the union above; the hand levers are universe_extra.txt (add) and universe_exclude.txt (drop).
 """
 from __future__ import annotations
 
 import csv
 import json
 import re
+from datetime import date, datetime
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[3]
@@ -33,9 +40,36 @@ def _read_lines(p: Path) -> set[str]:
     return out
 
 
+MAX_AGE_DAYS = 7          # hand-made plans / creator scorecards older than this are stale, not a watchlist
+
+
+def _fresh(p: Path | None) -> Path | None:
+    """p if the YYYY-MM-DD in its name is within MAX_AGE_DAYS, else None."""
+    m = re.search(r"(\d{4}-\d{2}-\d{2})", p.name) if p else None
+    if not m:
+        return None
+    age = (date.today() - datetime.strptime(m.group(1), "%Y-%m-%d").date()).days
+    return p if age <= MAX_AGE_DAYS else None
+
+
 def latest_plan() -> Path | None:
     plans = sorted(WL.glob("trade_plan_*.md"))
-    return plans[-1] if plans else None
+    return _fresh(plans[-1]) if plans else None
+
+
+def holding_tickers() -> set[str]:
+    """Stock positions in the newest journal_open_positions snapshot. Empty if MySQL is unreachable."""
+    try:
+        from lib.mysql_lib import _get_conn
+        conn = _get_conn()          # keep a reference: the cursor only holds a weak one to its connection
+        cur = conn.cursor()
+        cur.execute("SELECT DISTINCT symbol FROM journal_open_positions WHERE asset_category = 'STK' AND "
+                    "report_date = (SELECT MAX(report_date) FROM journal_open_positions)")
+        out = {r[0].upper() for r in cur.fetchall() if r[0] and TICKER_RE.match(r[0].upper())}
+        conn.close()
+        return out
+    except Exception:  # noqa: BLE001 -- no DB (e.g. no MYSQL_PASSWORD) must not stop the monitor
+        return set()
 
 
 def plan_tickers(p: Path | None) -> set[str]:
@@ -79,22 +113,16 @@ def monitor_tickers() -> set[str]:
 def creator_tickers() -> set[str]:
     """Tickers from the newest Ariel watchlist scorecard (first column of its tables)."""
     scored = sorted((REPO / "data" / "ariel_hernandez" / "analysis").glob("*_watchlist_scored.md"))
-    return plan_tickers(scored[-1]) if scored else set()
+    return plan_tickers(_fresh(scored[-1])) if scored else set()
 
 
 def build_universe(write: bool = True, full: bool = False) -> tuple[list[str], dict[str, set[str]]]:
-    """Default: the curated focus file (if present) + the current plan's table names.
-    full=True (or no focus file): union of every source."""
-    focus = _read_lines(WL / "universe_focus.txt")
+    """Union of every source minus universe_exclude.txt. `full` is accepted for backward compatibility and ignored
+    (it used to switch from the retired universe_focus.txt to this union)."""
     exclude = _read_lines(WL / "universe_exclude.txt")
-    if focus and not full:
-        parts = {"focus": focus, "plan": plan_tickers(latest_plan())}
-        uni = sorted(set().union(*parts.values()) - exclude)
-        if write:
-            (WL / "universe_latest.txt").write_text("\n".join(uni) + "\n")
-        return uni, parts
     parts = {
         "preferred": _read_lines(REPO / "data" / "preferred_tickers.txt"),
+        "holdings": holding_tickers(),
         "plan": plan_tickers(latest_plan()),
         "scan": scan_tickers(),
         "monitor": monitor_tickers(),
@@ -105,7 +133,6 @@ def build_universe(write: bool = True, full: bool = False) -> tuple[list[str], d
     if write:
         (WL / "universe_latest.txt").write_text("\n".join(uni) + "\n")
     return uni, parts
-
 
 if __name__ == "__main__":
     import sys
