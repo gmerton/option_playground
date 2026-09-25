@@ -212,6 +212,12 @@
   }
   .callout p + p { margin-top: 8px; }
 
+  .appendix { border-top: 2px solid var(--rule); padding-top: 36px; }
+  .appx-part { display: flex; flex-direction: column; gap: 14px; padding-top: 8px; }
+  .appx-head { display: flex; align-items: baseline; gap: 12px; }
+  .appx-id { font-family: var(--mono); font-size: 0.85rem; color: var(--accent); font-weight: 500; }
+  ul.plain.nested { margin-top: 8px; gap: 6px; }
+
   footer { border-top: 1px solid var(--rule); padding-top: 20px; font-size: 0.85rem; color: var(--muted); display: flex; flex-direction: column; gap: 6px; }
   footer code { font-size: 0.82rem; }
 
@@ -341,7 +347,7 @@
           <h3>Continuous re-hedging</h3>
           <p>Dealers re-hedge in bands, when their delta drifts past a threshold, rather than on every tick. Long gamma means selling rallies and buying dips; short gamma means the reverse.</p>
           <p>Two secondary flows move delta without any price change. <strong>Vanna</strong>: a change in implied vol changes delta. In a rally IV usually falls, the delta of the puts dealers are short shrinks, and they buy back hedges, which extends the rally. <strong>Charm</strong>: time decay changes delta, most strongly into the close, Fridays and expiry.</p>
-          <p class="why"><strong>For GEX:</strong> vanna and charm are general market-structure theory. We have not tested them.</p>
+          <p class="why"><strong>For GEX:</strong> vanna and charm are general market-structure theory. We have not tested them. See the <a href="#appendix">appendix</a> for an introduction to each.</p>
         </div>
       </li>
       <li>
@@ -409,6 +415,51 @@
       <p><strong>Negative gamma at the close:</strong> expect bigger moves than implied vol suggests. Don't sell premium and don't fade moves.</p>
       <p>The tradeable part is sizing premium sales to the regime, not predicting direction.</p>
     </div>
+  </section>
+
+  <section id="appendix" class="appendix">
+    <span class="eyebrow">Appendix</span>
+    <h2>The second-order flows: vanna and charm</h2>
+    <p>Gamma describes how a dealer's delta changes when <em>price</em> moves. Two other sensitivities change that delta when price stands still: a change in implied volatility (vanna) and the passage of time (charm). Both produce hedge flows, and both depend on the same naive positioning assumption as GEX: dealers long calls and short puts, with most of the open interest in out-of-the-money puts. <strong>Neither has been tested in our ledger.</strong> What follows is the standard market-structure account.</p>
+
+    <div class="appx-part" id="vanna">
+      <div class="appx-head"><span class="appx-id">A.1</span><h3>Vanna: delta that moves with implied volatility</h3></div>
+      <div class="formula">vanna = ∂Δ / ∂σ &nbsp;&nbsp;<span style="color: var(--muted)">(equivalently ∂vega / ∂S)</span></div>
+      <ul class="plain">
+        <li><strong>What it measures.</strong> How much an option's delta changes when implied volatility changes, with price unchanged.</li>
+        <li><strong>The intuition.</strong> Higher IV makes an out-of-the-money option more likely to finish in the money, so its delta grows in size. Lower IV shrinks it toward zero. An OTM put's delta goes from, say, −0.20 to −0.28 when IV jumps, and back toward −0.12 when IV collapses.</li>
+        <li><strong>The dealer flow.</strong> Dealers short OTM puts are long delta from them and hedge by being short the underlying.
+          <ul class="plain nested">
+            <li><strong>IV falls</strong> (typical in a rally): the puts' deltas shrink, dealers are now over-hedged short, and they <strong>buy</strong> back hedges. This is the "vanna rally" that can extend a calm grind higher.</li>
+            <li><strong>IV rises</strong> (typical in a selloff): the puts' deltas grow, dealers are under-hedged, and they <strong>sell</strong>. This adds to the decline, alongside the negative-gamma flow.</li>
+          </ul>
+        </li>
+        <li><strong>When it is largest.</strong> Around big vol moves: the day after an event such as FOMC or CPI (when IV is crushed), and during volatility spikes. It is concentrated in OTM options with some time left.</li>
+      </ul>
+    </div>
+
+    <div class="appx-part" id="charm">
+      <div class="appx-head"><span class="appx-id">A.2</span><h3>Charm: delta that decays with time</h3></div>
+      <div class="formula">charm = ∂Δ / ∂t &nbsp;&nbsp;<span style="color: var(--muted)">("delta decay")</span></div>
+      <ul class="plain">
+        <li><strong>What it measures.</strong> How much an option's delta changes as one day passes, with price and IV unchanged.</li>
+        <li><strong>The intuition.</strong> As expiry approaches, an OTM option's chance of finishing in the money shrinks, so its delta drifts toward zero. An ITM option's delta drifts toward ±1.</li>
+        <li><strong>The dealer flow.</strong> With the market steady, the long delta dealers carry from their short OTM puts decays every day. They become over-hedged short and <strong>buy</strong> back hedges. The flow is steady and directionless in cause, but under the naive assumption it is a bid.</li>
+        <li><strong>When it is largest.</strong> Close to expiry and into the close, when the most time decay is realised. Also into weekends, since two days of decay are priced on Friday, and around monthly expiration (OPEX) when large positions roll off. After a big expiry, the flow that supported the market can disappear, which some traders associate with post-OPEX weakness.</li>
+      </ul>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Greek</th><th>Changes delta when…</th><th>Typical dealer flow (naive positioning)</th><th>Status here</th></tr></thead>
+        <tbody>
+          <tr><td>Gamma</td><td>price moves</td><td>Long: against the move · Short: with the move</td><td><span class="chip pass">Regime pass</span></td></tr>
+          <tr><td>Vanna</td><td>implied vol moves</td><td>IV down → buy · IV up → sell</td><td><span class="chip none">Untested</span></td></tr>
+          <tr><td>Charm</td><td>time passes</td><td>Steady buying into the close, weekends and OPEX</td><td><span class="chip none">Untested</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="why">Nearest results in the ledger, none of them a direct test: weekend options are richer than weekday ones, but the weekend 2× fly does not pass (+3.4%, t 1.3); the "IV stays inflated after a big move" claim fails against VIX-matched days. Both flows reverse sign if customers are net call buyers or net put sellers, the same caveat as the naive GEX sign.</p>
   </section>
 
   <footer>
