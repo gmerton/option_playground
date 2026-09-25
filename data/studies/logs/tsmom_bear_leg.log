@@ -1,0 +1,63 @@
+TSMOM bear leg -- monthly, net of 5 bp/side + 0.25%/yr borrow; window 1998-01 -> 2026-08; M = 7, pass |t| >= 3 + both halves > 0
+
+STANDALONE (% per month)
+                     cell   start   n  mean     t    h1    h2  beta  alpha  t_alpha yrs_pos
+  B TSMOM multi-asset *P* 1998-01 344  0.35  4.12  0.53  0.18 -0.05   0.40     4.67   24/29
+A SPY short-or-flat sma10 1998-01 344 -0.16 -0.95  0.11 -0.44 -0.52   0.27     2.26    4/29
+  A SPY short-or-flat r12 1998-01 344 -0.03 -0.18  0.23 -0.28 -0.40   0.31     2.66    5/29
+A QQQ short-or-flat sma10 1998-01 344 -0.11 -0.42  0.12 -0.35 -0.69   0.47     2.17    6/29
+  A QQQ short-or-flat r12 1998-01 344  0.02  0.11  0.21 -0.16 -0.50   0.44     2.25    5/29
+A IWM short-or-flat sma10 1998-01 344 -0.29 -1.38 -0.21 -0.38 -0.57   0.19     1.18    5/29
+  A IWM short-or-flat r12 1998-01 344 -0.25 -1.15  0.02 -0.52 -0.58   0.24     1.48    5/29
+
+CRISIS EPISODES (cumulative %, sleeve vs the beta-equivalent S&P short 'betaSh')
+                     cell  2000-02  2000-02 betaSh  2008 GFC  2008 GFC betaSh  2020 crash  2020 crash betaSh  2022 bear  2022 bear betaSh
+  B TSMOM multi-asset *P*     29.5             2.2      16.1              3.4         0.7                1.1       13.0               0.9
+A SPY short-or-flat sma10     43.5            22.6      61.5             34.8        12.4               10.7       -0.0               9.0
+  A SPY short-or-flat r12     41.5            17.6      55.5             27.0         0.0                8.3        4.1               7.0
+A QQQ short-or-flat sma10     96.6            30.1      34.3             46.2         0.0               14.2       22.8              12.0
+  A QQQ short-or-flat r12     92.0            21.7      43.5             33.4         0.0               10.3        9.4               8.6
+A IWM short-or-flat sma10     10.7            25.0      43.6             38.5        21.4               11.8        5.5               9.9
+  A IWM short-or-flat r12     38.9            25.5      59.0             39.1        21.4               12.0        5.6              10.1
+
+FAMILY A vs a same-vol ALWAYS-SHORT of the same index (mean %/mo, maxDD % of the cum sum)
+  SPY  sma10  timed -0.16 (dd 125.6)   always-short -0.63 (dd 217.8)   diff t +3.57
+  SPY  r12    timed -0.03 (dd  85.8)   always-short -0.55 (dd 191.0)   diff t +4.04
+  QQQ  sma10  timed -0.11 (dd 135.9)   always-short -0.82 (dd 317.2)   diff t +3.63
+  QQQ  r12    timed +0.02 (dd  83.5)   always-short -0.70 (dd 270.0)   diff t +3.65
+  IWM  sma10  timed -0.29 (dd 124.6)   always-short -0.60 (dd 202.6)   diff t +1.60
+  IWM  r12    timed -0.25 (dd 152.4)   always-short -0.61 (dd 205.8)   diff t +1.94
+
+PRIMARY permutation null (2,000 shuffles of the signal month): real +0.353%/mo, null mean +0.208, 95th pct +0.333 -> p 0.028
+
+PRIMARY by year (% sum):
+Date  1998  1999  2000  2001  2002  2003  2004  2005  2006  2007  2008  2009  2010  2011  2012  2013  2014  2015  2016  2017  2018  2019  2020  2021  2022  2023  2024  2025  2026
+B     13.6   4.5   1.7   9.6  13.9   5.9   6.1   4.2   3.8  13.7  12.3  -6.0   1.1   5.2   0.7   6.6  -0.0   4.2  -4.9   3.3  -5.6   5.7   0.6   0.1   7.9  -2.7   6.2   5.7   4.0
+
+OVERLAY window 2018-04 -> 2026-02 (95 months); sleeve mean +0.24%/mo, corr: book +0.07, no-straddle -0.04, S&P -0.20
+       book                sleeve    size  mean  sharpe  dSharpe  maxDD   dDD  worst  worst3  y2020  y2022
+  full book                 TSMOM    none  1.51    1.30     0.00  24.97  0.00  -8.25   -6.84  31.95 -15.70
+  full book                 TSMOM     25%  1.67    1.38     0.08  25.26  0.29  -7.64   -7.04  32.38 -10.14
+  full book                 TSMOM 50% *P*  1.84    1.39     0.08  25.56  0.59 -11.36   -8.53  32.82  -4.59
+  full book                 TSMOM    100%  2.18    1.29    -0.02  36.11 11.14 -18.82  -12.90  33.68   6.53
+  full book             de-meaned     25%  1.51    1.24    -0.06  28.28  3.31  -7.80   -7.21  30.37 -12.15
+  full book             de-meaned 50% *P*  1.51    1.13    -0.17  31.59  6.62 -11.70   -8.86  28.80  -8.61
+  full book             de-meaned    100%  1.51    0.89    -0.41  43.48 18.51 -19.49  -13.57  25.64  -1.51
+  full book   SPY short (control)     25%  1.24    1.09    -0.21  24.93 -0.04  -7.39   -6.98  27.73 -11.99
+  full book   SPY short (control) 50% *P*  0.98    0.82    -0.48  24.89 -0.08  -7.55   -7.12  23.51  -8.28
+  full book   SPY short (control)    100%  0.45    0.30    -1.00  43.08 18.11  -9.58   -9.43  15.07  -0.86
+no-straddle                 TSMOM    none  1.09    0.95     0.00  38.10  0.00  -9.93   -8.23  17.75 -21.40
+no-straddle                 TSMOM     25%  1.26    1.07     0.12  36.43 -1.67  -7.85   -6.92  18.18 -15.85
+no-straddle                 TSMOM 50% *P*  1.43    1.13     0.18  34.76 -3.33  -8.87   -7.27  18.61 -10.29
+no-straddle                 TSMOM    100%  1.77    1.10     0.15  38.81  0.71 -16.33  -11.82  19.48   0.83
+no-straddle             de-meaned     25%  1.09    0.93    -0.02  40.28  2.19  -8.02   -7.08  16.17 -17.86
+no-straddle             de-meaned 50% *P*  1.09    0.86    -0.09  42.47  4.37  -9.21   -7.61  14.59 -14.31
+no-straddle             de-meaned    100%  1.09    0.68    -0.26  46.85  8.75 -17.00  -12.49  11.44  -7.21
+no-straddle   SPY short (control)     25%  0.83    0.77    -0.18  37.90 -0.20  -9.06   -6.99  13.53 -17.69
+no-straddle   SPY short (control) 50% *P*  0.57    0.52    -0.43  38.75  0.66  -8.20   -6.74   9.31 -13.98
+no-straddle   SPY short (control)    100%  0.04    0.03    -0.92  60.50 22.40  -8.23   -7.99   0.87  -6.56
+full book: TSMOM mean in the book's 10 worst months +0.07% vs all +0.24%
+no-straddle: TSMOM mean in the book's 10 worst months +1.06% vs all +0.24%
+
+BEAR-LEG criteria (PRIMARY): {'(i) mean >= 0': True, '(ii) crisis +4/4 & beats beta-short': True, '(iii) overlay full': False, '(iii) overlay no-straddle': False} -> not a candidate
+RETURN-EDGE certifications (|t|>=3, halves agree): ['B TSMOM multi-asset *P*']
