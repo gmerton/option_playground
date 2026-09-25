@@ -24,9 +24,11 @@
 > follow it as a habit if you like, but do not treat it as an edge, and do not build on it. **CONTRADICTED** = the
 > panel says otherwise.
 
-1. ⚠ **UNVALIDATED — Location:** within 1 ADR of the 21 EMA; >2 ADR is a chase. *Source: August journal only (1–2 ADR
-   band −$4.6k).* First panel test pre-registered 2026-09-25: `run_band_runaway_entry.py` (buy early / buy the close /
-   skip).
+1. ⛔ **NOT SUPPORTED (tested 2026-09-25) — Location band** (within 1 ADR of the 21 EMA). *Source was the August journal
+   only.* Panel test `band_runaway_entry_2026-09-25.md` (2,862 mornings, 2010→2026): closes bought 1–2+ ADR over the
+   21 EMA returned +1.34%/20d vs +1.44% in-band; open vs close vs house rule all within 0.3pp (t ≤ 1.1). Don't skip a
+   precision-tier close for being extended, and don't rush in at the open either. The close stays the default for its
+   stop (the day's low), not for extra return.
 2. ⚠ **UNVALIDATED — No gap-up buys** (≥3% gap, first hour). *Source: August journal.* The panel shows catalyst gaps have
    no edge (Adhikary B, DR-EP), but has never tested the veto itself.
    **PARTLY SUPPORTED — No buying below falling EMAs.** *Journal (laggard bounce −$3.8k) plus panel:* crash-leader veto

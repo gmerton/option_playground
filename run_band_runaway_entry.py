@@ -77,10 +77,10 @@ def build(P):
     stack = stack_run(C, adr=adr)
     ext_close = (C / e21 - 1) * 100 / adr                       # at the close, EMA incl. that close
     ext_open = (O / e21.shift(1) - 1) * 100 / adr               # at the open, vs the prior EMA
-    prec = adr.between(4, 7) & (C / hi52 - 1 > -0.15) & stack.between(5, 40)
-    cand_prev = (prec & ext_close.between(0, 1) & P.elig.fillna(False)).shift(1).fillna(False).astype(bool)
+    prec = ((adr >= 4) & (adr <= 7)) & (C / hi52 - 1 > -0.15) & ((stack >= 5) & (stack <= 40))
+    cand_prev = (prec & ((ext_close >= 0) & (ext_close <= 1)) & P.elig.fillna(False)).shift(1).fillna(False).astype(bool)
     gap = O / C.shift(1) - 1
-    morning = cand_prev & ext_open.between(0, 1) & (gap < GAP_MAX)
+    morning = cand_prev & ((ext_open >= 0) & (ext_open <= 1)) & (gap < GAP_MAX)
     win = (C.index >= START) & (C.index <= END)
     m = morning.values & win[:, None]
     ev = np.zeros_like(m)

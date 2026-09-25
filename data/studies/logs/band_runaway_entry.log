@@ -1,0 +1,20 @@
+# Buy early / buy the close / skip (pre-registration in the docstring)
+# events 2,862 on 772 names, 2010-01-05 -> 2026-08-21; HOUSE trades 82% of them (the rest closed > 1 ADR over the 21 EMA)
+
+# +20: mean % per event  OPEN +1.42  CLOSE-ANY +1.43  HOUSE +1.18 (HOUSE per trade +1.44)
+  PRIMARY OPEN - HOUSE       +20: +0.276pp t +1.05 | halves -0.173 / +0.651 | years same sign 10/17 -> fail
+  OPEN - CLOSE-ANY           +20: +0.096pp t +1.01 | halves +0.085 / +0.104 | years same sign 11/17 -> fail
+  CLOSE-ANY - HOUSE          +20: +0.180pp t +0.79 | halves -0.258 / +0.546 | years same sign 10/17 -> fail
+  [DESCRIPTIVE, outcome-conditioned -- not evidence] ran-away days n 523: OPEN +5.03  CLOSE-ANY +1.34  (day open->close +3.65%)
+
+# +5: mean % per event  OPEN +0.32  CLOSE-ANY +0.31  HOUSE +0.25 (HOUSE per trade +0.30)
+  OPEN - HOUSE               + 5: -0.041pp t -0.28 | halves -0.297 / +0.173 | years same sign 8/17 -> fail
+  OPEN - CLOSE-ANY           + 5: +0.087pp t +0.96 | halves +0.086 / +0.087 | years same sign 12/17 -> fail
+  CLOSE-ANY - HOUSE          + 5: -0.128pp t -1.10 | halves -0.383 / +0.086 | years same sign 10/17 -> fail
+  [DESCRIPTIVE, outcome-conditioned -- not evidence] ran-away days n 528: OPEN +4.04  CLOSE-ANY +0.37  (day open->close +3.66%)
+
+# SECONDARY (1-min 2026-02 -> 09, exploratory, underpowered): n 77 events with bars, +5
+  entry 09:45 - HOUSE: +0.796pp (date-clustered t +1.13, n 77)
+  entry 10:30 - HOUSE: +0.788pp (date-clustered t +1.20, n 77)
+  entry 12:00 - HOUSE: +0.618pp (date-clustered t +1.18, n 77)
+  entry 14:00 - HOUSE: +0.463pp (date-clustered t +1.00, n 77)
