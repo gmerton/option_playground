@@ -589,6 +589,10 @@ def _attach_hold_to_expiry(conn, srows: list[dict]) -> None:
         conn, params=ids)
     legs["trade_date"] = pd.to_datetime(legs["trade_date"]).dt.date
     today = pd.Timestamp.today().date()
+    # a leg expiring TODAY is settled once today's close is final (after 16:15 ET), not only from tomorrow (2026-09-25)
+    from zoneinfo import ZoneInfo
+    now_et = datetime.now(ZoneInfo("America/New_York"))
+    settled_through = today if (now_et.date() == today and (now_et.hour, now_et.minute) >= (16, 15)) else today - timedelta(days=1)
     by_camp = {}
     for cid, g in legs.groupby("campaign_id"):
         g = g[g["trade_date"] == g["trade_date"].min()]          # the ORIGINAL open, not later rolls
@@ -597,7 +601,7 @@ def _attach_hold_to_expiry(conn, srows: list[dict]) -> None:
             q = abs(float(leg.quantity)) * (1 if leg.buy_sell == "BUY" else -1)
             cost += q * float(leg.trade_price) * 100
             exp = pd.Timestamp(leg.expiry).date()
-            if exp >= today:
+            if exp > settled_through:
                 pending = True; continue
             u = _underlying_close_on(conn, leg.underlying_symbol, exp)
             if u is None:
