@@ -1,4 +1,4 @@
-# HANDOFF — state of play as of 2026-09-23
+# HANDOFF — state of play as of 2026-09-24
 
 For a session (or a person) picking this up cold. Everything here is the **why** and the **right now**;
 the durable material lives in the files below. ⚠ Dated on purpose — the "Recently changed" and "In flight"
@@ -25,6 +25,23 @@ name. Expect nulls; treat a positive as suspect until it survives real fills and
 
 ## Recently changed — live, and not obvious from the code
 
+**2026-09-24 (one long session; details in TEST_INDEX / OPERATIONS):**
+* **Ops:** 74 dead scripts → `scripts/archive/`; `options_toolkit` (Lambda + CodeBuild + pipeline) deleted; **CI owns
+  Lambda code, `deploy_*_lambda.sh` own infra** (`deploy/code_guard.sh`, one module list per Lambda); the
+  undocumented **`options-daily-updater`** ECS task (v3's nightly feed) is now in OPERATIONS/CLAUDE; the desk reads
+  the Lambda's EOD scan after 19:15 ET, sources `~/.trading_env`, defaults `AWS_PROFILE`; the liquid-panel builder
+  fills yfinance-dropped sessions from Polygon (9/22 had 181/1726 names); journal cache backup now automated;
+  **`universe_focus.txt` retired** — the alert universe is always the auto union (incl. open holdings).
+* **Research verdicts:** FDX-template breakdown short NULL; long-INT/short-DIST spread UNDERPOWERED and not a hedge;
+  **sector-momentum 12-1 spread = the first genuine book hedge** (NULL return, cuts maxDD 4–5 pts, costs ~0.12
+  Sharpe — adoption is Gabe's preference call); ADR floor and in-play gate NULL; distribution-day count NULL on
+  SPY/QQQ/IWM (a lagging vol gauge; `market_conditions.py` now shows it as a percentile).
+* **Corrections:** the ETF-roster put leg is net-negative at real fills (+5.70% was gross); SPY/IWM calendar
+  "Tier B" superseded; "69.8% better held" is the long straddle's stop, not a short-premium roll (7 citations fixed).
+* **GEX paper trade logged its first signal + fly on 2026-09-24** (positive gamma at 15:37 ET).
+* KB: tastylive list done except the 0DTE cluster; OptionsPlay Tiers 4–5 done; new `data/al_brooks/`;
+  `data/studies/dealer_gamma_primer.html` (GEX / vanna / charm primer).
+
 * **Universe switched to INT** (Trend Template ∩ Ariel's momentum scan), 98 → 50 names. TT alone does not
   select (20d excess t 1.00) and its edge over a same-name-later control is negative. ⚠ INT encodes Ariel's
   *published rule*, not his *practice* — every mega-cap he actually watches fails his own ≥70%-off-low
@@ -43,6 +60,10 @@ name. Expect nulls; treat a positive as suspect until it survives real fills and
   preferred list is **S3-owned**; `data/preferred_tickers.txt` is a historical artefact. Never write it.
 
 ## In flight — open decisions, nobody has said no
+
+* **(2026-09-24) Waiting on Gabe:** ETF-roster / Friday-screener book status; whether to forward-track a 25%
+  sector-spread hedge sleeve; forward lockbox for the RV spread; `run_putspread_scan.py` fixes (mid pricing,
+  hard-coded 10/16 expiry, up/B+ veto not enforced, no earnings check) + its universe (SETUP vs leaders).
 
 * **Reclaim vs pullback-low entry** (TEST_INDEX §10) — the cleanest open question on the book. Three
   creators independently describe our entry finding with the *opposite sign*: they buy the reclaim of the
