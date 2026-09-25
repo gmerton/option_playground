@@ -33,6 +33,7 @@ idempotent per year (see either builder).
 |---|---|---|---|
 | **`options_flow_daily`** | `run_build_options_flow_daily.py` | per (ticker, day): call/put volume and OI (all, ≤30 DTE), OTM ≤30 DTE volume by delta band, $ premium, delta-weighted share volume | 2010→2026, 19.2M rows. ⚠ after ~Apr 2026 deltas are NULL and volume drops ~60% |
 | **`options_iv_daily`** | `run_build_options_iv_daily.py` | per (ticker, day): `skew` (25Δ put − 50Δ call IV, nearest 30 DTE), `put25_iv`, `call50_iv`, `cw` (call−put IV at the same strike, OI-weighted) | 2010→2026, 13.0M rows. Use through 2026-03 |
+| **`chain_spot_daily`** | `run_build_chain_spot_daily.py` | per (ticker, day): RAW spot from put-call parity (3 nearest-ATM strikes, ~30 DTE), `n_strikes`, `opt_vol`. **Includes delisted names**, so it is the only survivorship-free price series we have (optionable names, closes only). Adjust splits with `pit/splits.parquet` | 2010→2026, 16.3M rows, 10.8k tickers; ~0.4% from real closes; use through 2026-02 |
 | `fwd_vol_daily`, `option_legs_settled` | older studies (2026-03) | forward vol; settled legs | legacy, unverified |
 | `gm_equity.*` (`options_1min_parquet`, `stock_5min`, `options_daily_parquet`, …) | 2025 Polygon experiments | 1-min options (year=2021→2025 prefixes), 5-min stock | legacy; extent not verified. Check before relying on it |
 
@@ -124,7 +125,7 @@ tests (`pattern_test` writes them). They are reusable for re-scoring. They are n
 | **Anthropic API** | trade reviewer | `ANTHROPIC_API_KEY` |
 
 ## 7. What we do NOT have: the blind spots
-- **No survivorship-free price panel.** Delisted and failed names are missing from every panel. Blocked on paid data
+- **No survivorship-free OHLCV panel.** Delisted and failed names are missing from every panel. Partial fix: `chain_spot_daily` (closes only, optionable names, incl. delisted). Blocked on paid data
   (paid Polygon, or Sharadar SEP+SF1).
 - **No small-cap / micro-cap history** (ADDV < $30–50M). Blocks dilution fades, "first green day" and IPO/lockup work.
 - **No borrow-cost or locate data.** Short studies assume a flat borrow (0.25–1%/yr).

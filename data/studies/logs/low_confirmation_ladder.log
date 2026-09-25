@@ -15,8 +15,8 @@
     K3 - K0: +0.92pp month-weighted (pooled -0.18) t +2.13  (fires on 87% of episodes)
     K4 - K0: +0.78pp month-weighted (pooled -0.13) t +2.18  (fires on 87% of episodes)
     K5 - K0: +1.15pp month-weighted (pooled -0.38) t +2.08  (fires on 69% of episodes)
-  [bonus, exploratory] K1 low AT support      n    838 hold20   39%  x20 +3.47pp t +3.63
-  [bonus, exploratory] K1 low not at support  n   1809 hold20   38%  x20 -0.78pp t -0.89
+  [bonus, exploratory] K1 low AT support      n    824 hold20   40%  x20 +1.71pp t +1.75
+  [bonus, exploratory] K1 low not at support  n   1823 hold20   38%  x20 +0.75pp t +0.82
 
 ## P2   -- control coverage 96% of entries
   rung      n fires% hold20 prem ADR |  fwd20    x20      t        halves   yrs |  fwd60    x60      t
@@ -32,7 +32,7 @@
     K3 - K0: +0.37pp month-weighted (pooled -0.19) t +1.72  (fires on 87% of episodes)
     K4 - K0: +0.27pp month-weighted (pooled -0.15) t +1.50  (fires on 86% of episodes)
     K5 - K0: -0.03pp month-weighted (pooled -0.53) t -0.11  (fires on 70% of episodes)
-  [bonus, exploratory] K1 low AT support      n   4303 hold20   41%  x20 +2.00pp t +4.75
-  [bonus, exploratory] K1 low not at support  n  10102 hold20   36%  x20 +0.81pp t +2.63
+  [bonus, exploratory] K1 low AT support      n   4785 hold20   37%  x20 +0.45pp t +1.08
+  [bonus, exploratory] K1 low not at support  n   9620 hold20   38%  x20 +1.50pp t +4.94
 
 VERDICT: SIGNAL rungs: P2 K0 +20 (+1.07pp t +4.16), P2 K0 +60 (+1.62pp t +3.61), P2 K1 +20 (+1.10pp t +3.94), P2 K2 +20 (+1.39pp t +5.16), P2 K2 +60 (+1.50pp t +3.24), P2 K3 +20 (+1.33pp t +5.50), P2 K3 +60 (+1.68pp t +3.98), P2 K4 +20 (+0.98pp t +3.27)

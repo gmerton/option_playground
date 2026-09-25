@@ -38,7 +38,7 @@ Control = same-date names in the same population and ADR tercile, not themselves
   into a collapse (and later a delisting) are missing, and that bias flatters exactly this test: dip vs no-dip (see
   DATA_CATALOG §7). A +1pp/month edge is the same order as a plausible survivorship lift, so it cannot be told apart
   here.
-- **Global-minimum bonus (exploratory, not bar-bearing):** lows at support (within 0.5 ADR of the 50 SMA, 200 SMA or
+- ⛔ **RETRACTED 2026-09-25 (look-ahead: the support tag used the episode's final low). Fixed numbers: P1 +1.71pp t 1.75, P2 +0.45 t 1.08 (below non-support +1.50). See dip_survivorship_2026-09-25.md.** Original text: **Global-minimum bonus (exploratory, not bar-bearing):** lows at support (within 0.5 ADR of the 50 SMA, 200 SMA or
   prior base high) at K1: P1 **+3.47pp t 3.63** (n 838) vs −0.78 elsewhere; P2 +2.00 t 4.75 vs +0.81. Hold rates are the
   same (39–41% vs 36–38%), so support does not make the low hold *more often*; the ones that hold go further. This is
   the most interesting lead, and it is exploratory: it would need its own pre-registration and a holdout.

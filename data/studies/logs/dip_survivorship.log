@@ -1,0 +1,30 @@
+# Dip-in-uptrend: survivorship check + support holdout (pre-registration in the docstring)
+# chain-spot tickers 10,836; ADRp scale k = 1.877 (median ADR / mean|ret| on the survivor panel)
+# events: 73,946; SURV names 1058, NONSURV names 1466; delisting-truncated forward windows: SURV 1.6%, NONSURV 2.2%
+
+## SURV
+  P2 K0  n  11119 fwd +1.73% excess -0.88pp t -3.79 halves -0.78/-0.97 yrs 15/17 PASS  [T1 method check]
+  P2 K3  n  10526 fwd +1.74% excess -0.83pp t -4.51 halves -0.76/-0.90 yrs 15/17 PASS  [T1 method check]
+  P2 K1c n  10729 fwd +1.68% excess -0.60pp t -2.60 halves -0.28/-0.89 yrs 14/17   [context]
+  P1 K0  n   1951 fwd +1.99% excess -0.45pp t -0.47 halves +1.37/-0.86 yrs 10/15   [context]
+  P1 K1c n   1919 fwd +1.85% excess -0.48pp t -0.70 halves +1.60/-0.98 yrs 9/15   [context]
+
+## ALL
+  P2 K0  n  20256 fwd +1.27% excess -0.77pp t -4.31 halves -0.71/-0.81 yrs 16/17 PASS  [T2 PRIMARY]
+  P2 K3  n  19064 fwd +1.30% excess -0.70pp t -4.83 halves -0.65/-0.74 yrs 15/17 PASS  [T2 PRIMARY]
+  P2 K1c n  19542 fwd +1.24% excess -0.65pp t -3.69 halves -0.53/-0.76 yrs 16/17 PASS  [context]
+  P1 K0  n   4304 fwd +1.60% excess -0.97pp t -1.66 halves -1.33/-0.72 yrs 15/17   [context]
+  P1 K1c n   4218 fwd +1.50% excess -1.65pp t -3.17 halves -2.92/-0.68 yrs 15/17 PASS  [context]
+
+## NONSURV
+  P2 K0  n   8961 fwd +0.69% excess -0.68pp t -3.00 halves -0.86/-0.52 yrs 15/17 PASS  [T2 PRIMARY]
+  P2 K3  n   8396 fwd +0.74% excess -0.70pp t -3.60 halves -0.85/-0.57 yrs 15/17 PASS  [T2 PRIMARY]
+  P2 K1c n   8593 fwd +0.69% excess -0.61pp t -2.82 halves -0.74/-0.50 yrs 14/17   [context]
+  P1 K0  n   1609 fwd +1.15% excess -2.06pp t -3.08 halves -3.16/-1.36 yrs 15/17 PASS  [context]
+  P1 K1c n   1568 fwd +1.09% excess -2.47pp t -3.58 halves -4.60/-1.03 yrs 12/17 PASS  [context]
+
+## T3 SUPPORT HOLDOUT (NONSURV, K1c, support-tagged minus untagged)
+  P2: at support n 2974 excess -0.50 | elsewhere n 5619 excess -0.73 | diff +0.25pp t +0.58 halves -0.15/+0.61 fail  [T3 PRIMARY]
+  P1: at support n 492 excess -1.63 | elsewhere n 1076 excess -2.55 | diff -0.57pp t -0.55 halves -1.57/-0.23 fail
+
+READ (P2 K0): SURV -0.88 / ALL -0.77 (t -4.31) / NONSURV -0.68 -> SURVIVORSHIP ARTEFACT

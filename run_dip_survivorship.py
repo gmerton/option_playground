@@ -158,9 +158,10 @@ def run(C, V, surv, k):
                         fired["K3"] = (u, lo_v, lo_d)
                 u += 1
             if opened:
-                near = lambda lv: np.isfinite(lv) and abs(lo_v - lv) <= 0.5 * ad
-                sup = near(S50[lo_d, j]) or near(S200[lo_d, j]) or near(base_hi)
+                # support judged on the low KNOWN AT ENTRY (look-ahead fix 2026-09-25)
+                near = lambda low, lvl: bool(np.isfinite(lvl) and abs(low - lvl) <= 0.5 * ad)
                 for r, (e, lv, ld) in fired.items():
+                    sup = near(lv, S50[ld, j]) or near(lv, S200[ld, j]) or near(lv, base_hi)
                     for pop in pops:
                         ev.append((j, p, r, pop, e, sup))
             t = max(u, t + 1)

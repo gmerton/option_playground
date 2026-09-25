@@ -122,9 +122,10 @@ def episodes(F, idx):
                             fired[r] = (u, lo_v, lo_d)
                 u += 1
             if opened:
-                near = lambda lv: abs(lo_v - lv) <= 0.5 * adr_d if np.isfinite(lv) else False
-                support = near(F["s50"][lo_d, j]) or near(F["s200"][lo_d, j]) or near(base_hi)
+                # support is judged on the low KNOWN AT ENTRY (lv, ld), not the episode's final low (look-ahead fix 2026-09-25)
+                near = lambda low, lvl: bool(np.isfinite(lvl) and abs(low - lvl) <= 0.5 * adr_d)
                 for r, (e, lv, ld) in fired.items():
+                    support = near(lv, F["s50"][ld, j]) or near(lv, F["s200"][ld, j]) or near(lv, base_hi)
                     for pop in pops:
                         out.append(dict(j=j, peak=p, rung=r, pop=pop, i=e, low=lv, low_day=ld,
                                         premium=(C[e, j] - lv) / adr_d, support=support))
