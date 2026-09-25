@@ -1,0 +1,8 @@
+# Import closure of the preferred-list-refresh Lambda, relative to src/lib/.
+# The ONE list: read by buildspec_refresh.yml (CI, which owns code deploys) and deploy_refresh_lambda.sh
+# (infra: pinned layer, env/secrets, config, schedule). Adding a module here also needs its path in the
+# preferred-list-refresh pipeline's trigger filter if it is outside the existing globs.
+constants.py
+minervini/scan.py
+minervini/equity_daily.py
+interface/refresh_lambda.py

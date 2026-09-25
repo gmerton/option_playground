@@ -38,17 +38,15 @@ phases:
         pip install --platform manylinux2014_x86_64 --implementation cp
         --python-version 3.12 --only-binary=:all: --no-deps -t refresh_build
         polygon-api-client websockets
-      # Copy ONLY this Lambda's import closure — mirrors deploy_refresh_lambda.sh MODS.
+      # Copy ONLY this Lambda's import closure. The list lives in deploy/refresh_modules.txt, shared with
+      # deploy_refresh_lambda.sh so the two can never drift (2026-09-24).
       - |
-        for m in \
-          constants.py \
-          minervini/scan.py \
-          minervini/equity_daily.py \
-          interface/refresh_lambda.py; do
+        for m in $(grep -v '^[[:space:]]*#' deploy/refresh_modules.txt | grep .); do
           mkdir -p "refresh_build/lib/$(dirname "$m")"
           cp "src/lib/$m" "refresh_build/lib/$m"
+          touch "refresh_build/lib/$(dirname "$m")/__init__.py"
         done
-      - for d in "" "minervini/" "interface/"; do touch "refresh_build/lib/${d}__init__.py"; done
+      - touch "refresh_build/lib/__init__.py"
       - find refresh_build -type d \( -name tests -o -name __pycache__ \) -prune -exec rm -rf {} +
       # Fail early if the handler or the screen it depends on didn't make it in.
       - test -f refresh_build/lib/interface/refresh_lambda.py

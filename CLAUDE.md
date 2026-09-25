@@ -111,7 +111,9 @@ weeknights 22:00 ET, ~4.5 h) — **the nightly feed for `silver.options_daily_v3
   2026-03); the live equivalent runs inside `daily_desk.sh` / `start_alerts.sh`.
 
 ### Lambda deployment
-`deploy_breakout_lambda.sh` / `deploy_refresh_lambda.sh` deploy the two scheduled scan Lambdas;
+CI (CodePipeline on push to `main`) owns the two scheduled Lambdas' **code**; `deploy_breakout_lambda.sh` /
+`deploy_refresh_lambda.sh` own their **infra** (layer, secrets, config, schedule) and ship code only when it matches
+`origin/main` (`deploy/code_guard.sh`; module lists in `deploy/*_modules.txt`);
 `deploy_trade_journal.sh` pushes the journal site to S3/CloudFront.
 
 ## Research conventions

@@ -14,7 +14,7 @@ here — `git mv` the script back to the root to re-run it: `option_chart_app.py
 Deliberately NOT archived (still useful, or imported by another script): `run_build_fwd_vol.py`,
 `run_build_option_legs.py`, `run_backfill_options_v3.py`, `run_reversal_monitor.py`, `run_sleeping_giants.py`,
 `run_breakout_scorecard.py`, and six that other scripts import (`run_fvr_straddle_regression.py`,
-`run_long_straddle_study.py`, `run_refresh_preferred.py` [called by `deploy_breakout_lambda.sh`],
+`run_long_straddle_study.py`,
 `run_sleeping_giants_backtest_stage3.py`, `run_straddle_ticker_walkforward.py`, `run_uvxy_combined_sweep.py`).
 
 | file | last commit | what it is |
@@ -92,3 +92,4 @@ Deliberately NOT archived (still useful, or imported by another script): `run_bu
 | `scratch_nvda_calls.py` | 2026-05-28 | (no docstring) |
 | `scratch_sg_data_probe.py` | 2026-06-21 | Probe Athena options coverage for the sleeping-giants LEAP backtest. |
 | `upsert_put_spread_from_csv.py` | 2026-02-22 | One-off: upsert put spread study from saved CSVs into MySQL. |
+| `run_refresh_preferred.py` | 2026-07-27 | Local Minervini refresh with `--push` to S3 — **hazard**: can overwrite the S3 list the `preferred-list-refresh` Lambda owns. Archived 2026-09-24 (the first pass wrongly kept it: `deploy_breakout_lambda.sh` only names it in a comment). |

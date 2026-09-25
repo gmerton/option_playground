@@ -1,0 +1,12 @@
+# Import closure of the preferred-breakout-scan Lambda, relative to src/lib/.
+# The ONE list: read by buildspec_breakout.yml (CI, which owns code deploys) and deploy_breakout_lambda.sh
+# (infra: layer, env/secrets, config, schedule). Adding a module here also needs its path in the
+# preferred-breakout-scan pipeline's trigger filter if it is outside the existing globs.
+interface/breakout_lambda.py
+interface/breakout_artifacts.py
+interface/premarket_watchlist.py
+tradier/get_daily_history.py
+tradier/tradier_client_wrapper.py
+commons/get_underlying_price.py
+commons/list_contracts.py
+commons/list_expirations.py

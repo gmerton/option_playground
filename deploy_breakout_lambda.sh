@@ -8,6 +8,8 @@
 #
 set -eo pipefail
 [ -f "$HOME/.trading_env" ] && source "$HOME/.trading_env"   # secrets (2026-09-24: messages used to say ~/.bash_profile)
+# CI owns Lambda code; this script owns infra. See deploy/code_guard.sh (2026-09-24, option 1).
+source "$(dirname "$0")/deploy/code_guard.sh"
 
 # ---- config -----------------------------------------------------------------
 PROFILE="${AWS_PROFILE:-clarinut-gmerton}"
@@ -66,6 +68,7 @@ fi
 # ---- 2. build the slim function package (code + aiohttp only) -----------------
 # pandas/numpy come from the layer above; boto3 is in the runtime. typing_extensions
 # is an aiohttp-stack dependency that must ship with the function.
+code_guard deploy/breakout_modules.txt buildspec_breakout.yml
 echo ">> Building function package..."
 rm -rf build breakout_function.zip
 mkdir -p build
@@ -73,29 +76,21 @@ mkdir -p build
   aiohttp typing_extensions >/dev/null
 # copy ONLY the modules this Lambda imports (its closure) -- the full lib/ tree
 # carries a committed .venv (414M) and a data dir (lib/output, 238M) we don't want.
-MODS=(
-  interface/breakout_lambda.py
-  interface/breakout_artifacts.py
-  interface/premarket_watchlist.py
-  tradier/get_daily_history.py
-  tradier/tradier_client_wrapper.py
-  commons/get_underlying_price.py
-  commons/list_contracts.py
-  commons/list_expirations.py
-)
-for m in "${MODS[@]}"; do
+# the import closure lives in deploy/breakout_modules.txt (shared with the buildspec, 2026-09-24)
+while IFS= read -r m; do
   mkdir -p "build/lib/$(dirname "$m")"
   cp "src/lib/$m" "build/lib/$m"
-done
-for d in "" "interface/" "tradier/" "commons/"; do touch "build/lib/${d}__init__.py"; done
+  touch "build/lib/$(dirname "$m")/__init__.py"
+done < <(grep -v '^[[:space:]]*#' deploy/breakout_modules.txt | grep .)
+touch "build/lib/__init__.py"
 echo ">> build/lib (closure only): $(du -sh build/lib | cut -f1)"
 ( cd build && zip -qr9 ../breakout_function.zip . )
 echo ">> Package: $(du -h breakout_function.zip | cut -f1) zipped, "\
 "$(du -sh build | cut -f1) unzipped"
 
 # ---- 2. upload code to S3; the ticker universe is S3-owned -------------------
-# The preferred list in S3 is written nightly by the preferred-list-refresh Lambda (and by
-# run_refresh_preferred.py --push). Never push the local copy over it: on 2026-09-20 this step
+# The preferred list in S3 is written nightly by the preferred-list-refresh Lambda (the local
+# run_refresh_preferred.py --push path was archived 2026-09-24). Never push the local copy over it: on 2026-09-20 this step
 # replaced the fresh 89-name list with a July 23 local file. Seed S3 only if it has no list yet;
 # otherwise pull S3 down so the local copy (read by the desk scans) stays current.
 echo ">> Uploading code to s3://$BUCKET/$CODE_KEY..."
@@ -113,14 +108,19 @@ fi
 ENV_VARS="Variables={TRADIER_API_KEY=$TRADIER_API_KEY,BREAKOUT_BUCKET=$BUCKET,BREAKOUT_PREFIX=$PREFIX}"
 if aws lambda get-function --function-name "$FUNCTION" >/dev/null 2>&1; then
   echo ">> Updating existing function code + config..."
-  aws lambda update-function-code --function-name "$FUNCTION" \
-    --s3-bucket "$BUCKET" --s3-key "$CODE_KEY" --no-cli-pager >/dev/null
-  aws lambda wait function-updated --function-name "$FUNCTION"
+  if [ "$CODE_OK" = 1 ]; then
+    aws lambda update-function-code --function-name "$FUNCTION" \
+      --s3-bucket "$BUCKET" --s3-key "$CODE_KEY" --no-cli-pager >/dev/null
+    aws lambda wait function-updated --function-name "$FUNCTION"
+  else
+    echo ">> code NOT updated (infra-only); config/env/layer/schedule below still apply"
+  fi
   aws lambda update-function-configuration --function-name "$FUNCTION" \
     --runtime "$RUNTIME" --handler "$HANDLER" --role "$ROLE_ARN" \
     --memory-size "$MEMORY" --timeout "$TIMEOUT" --environment "$ENV_VARS" \
     --layers "$LAYER_ARN" --no-cli-pager >/dev/null
 else
+  [ "$CODE_OK" = 1 ] || { echo "!! first-time creation needs code that matches origin/main (or ALLOW_LOCAL_CODE=1)"; exit 1; }
   echo ">> Creating function..."
   aws lambda create-function --function-name "$FUNCTION" \
     --runtime "$RUNTIME" --handler "$HANDLER" --role "$ROLE_ARN" \

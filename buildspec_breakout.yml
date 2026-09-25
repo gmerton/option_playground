@@ -29,22 +29,15 @@ phases:
       - >
         pip install --platform manylinux2014_x86_64 --implementation cp
         --python-version 3.12 --only-binary=:all: -t build aiohttp typing_extensions
-      # Copy ONLY the modules this Lambda imports (its closure) -- mirrors
-      # deploy_breakout_lambda.sh so the package stays slim.
+      # Copy ONLY the modules this Lambda imports (its closure). The list lives in deploy/breakout_modules.txt,
+      # shared with deploy_breakout_lambda.sh so the two can never drift (2026-09-24).
       - |
-        for m in \
-          interface/breakout_lambda.py \
-          interface/breakout_artifacts.py \
-          interface/premarket_watchlist.py \
-          tradier/get_daily_history.py \
-          tradier/tradier_client_wrapper.py \
-          commons/get_underlying_price.py \
-          commons/list_contracts.py \
-          commons/list_expirations.py; do
+        for m in $(grep -v '^[[:space:]]*#' deploy/breakout_modules.txt | grep .); do
           mkdir -p "build/lib/$(dirname "$m")"
           cp "src/lib/$m" "build/lib/$m"
+          touch "build/lib/$(dirname "$m")/__init__.py"
         done
-      - for d in "" "interface/" "tradier/" "commons/"; do touch "build/lib/${d}__init__.py"; done
+      - touch "build/lib/__init__.py"
       # Fail the build early if the handler module didn't make it in.
       - test -f build/lib/interface/breakout_lambda.py
       - (cd build && zip -qr9 "../$ARTIFACT_ZIP" .)

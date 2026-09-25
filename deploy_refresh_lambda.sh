@@ -10,6 +10,8 @@
 # Prereqs: POLYGON_API_KEY in ~/.trading_env. Run from repo root.
 set -eo pipefail
 [ -f "$HOME/.trading_env" ] && source "$HOME/.trading_env"   # secrets (2026-09-24: messages used to say ~/.bash_profile)
+# CI owns Lambda code; this script owns infra. See deploy/code_guard.sh (2026-09-24, option 1).
+source "$(dirname "$0")/deploy/code_guard.sh"
 
 PROFILE="${AWS_PROFILE:-clarinut-gmerton}"
 REGION="us-west-2"
@@ -49,6 +51,7 @@ aws lambda get-layer-version-by-arn --arn "$LAYER_ARN" >/dev/null || { echo "!! 
 echo ">> Managed layer: $LAYER_ARN"
 
 # ---- 2. build the function package (closure + polygon client) ----------------
+code_guard deploy/refresh_modules.txt buildspec_refresh.yml
 echo ">> Building function package..."
 rm -rf refresh_build refresh_function.zip
 mkdir -p refresh_build
@@ -58,17 +61,13 @@ mkdir -p refresh_build
 .venv/bin/python3 -m pip install --platform manylinux2014_x86_64 --implementation cp \
   --python-version 3.12 --only-binary=:all: --no-deps --target refresh_build \
   polygon-api-client websockets >/dev/null
-MODS=(
-  constants.py
-  minervini/scan.py
-  minervini/equity_daily.py
-  interface/refresh_lambda.py
-)
-for m in "${MODS[@]}"; do
+# the import closure lives in deploy/refresh_modules.txt (shared with the buildspec, 2026-09-24)
+while IFS= read -r m; do
   mkdir -p "refresh_build/lib/$(dirname "$m")"
   cp "src/lib/$m" "refresh_build/lib/$m"
-done
-for d in "" "minervini/" "interface/"; do touch "refresh_build/lib/${d}__init__.py"; done
+  touch "refresh_build/lib/$(dirname "$m")/__init__.py"
+done < <(grep -v '^[[:space:]]*#' deploy/refresh_modules.txt | grep .)
+touch "refresh_build/lib/__init__.py"
 find refresh_build -type d \( -name tests -o -name __pycache__ \) -prune -exec rm -rf {} +
 ( cd refresh_build && zip -qr9 ../refresh_function.zip . )
 echo ">> Package: $(du -h refresh_function.zip | cut -f1) zipped"
@@ -78,15 +77,20 @@ aws s3 cp refresh_function.zip "s3://$BUCKET/$CODE_KEY" --only-show-errors
 ENV_VARS="Variables={POLYGON_API_KEY=$POLYGON_API_KEY,BREAKOUT_BUCKET=$BUCKET,BREAKOUT_PREFIX=$PREFIX}"
 if aws lambda get-function --function-name "$FUNCTION" >/dev/null 2>&1; then
   echo ">> Updating existing function..."
-  aws lambda update-function-code --function-name "$FUNCTION" \
-    --s3-bucket "$BUCKET" --s3-key "$CODE_KEY" --no-cli-pager >/dev/null
-  aws lambda wait function-updated --function-name "$FUNCTION"
+  if [ "$CODE_OK" = 1 ]; then
+    aws lambda update-function-code --function-name "$FUNCTION" \
+      --s3-bucket "$BUCKET" --s3-key "$CODE_KEY" --no-cli-pager >/dev/null
+    aws lambda wait function-updated --function-name "$FUNCTION"
+  else
+    echo ">> code NOT updated (infra-only); config/env/layer/schedule below still apply"
+  fi
   aws lambda update-function-configuration --function-name "$FUNCTION" \
     --runtime "$RUNTIME" --handler "$HANDLER" --role "$ROLE_ARN" \
     --memory-size "$MEMORY" --timeout "$TIMEOUT" --environment "$ENV_VARS" \
     --ephemeral-storage Size=1024 \
     --layers "$LAYER_ARN" --no-cli-pager >/dev/null
 else
+  [ "$CODE_OK" = 1 ] || { echo "!! first-time creation needs code that matches origin/main (or ALLOW_LOCAL_CODE=1)"; exit 1; }
   echo ">> Creating function..."
   aws lambda create-function --function-name "$FUNCTION" \
     --runtime "$RUNTIME" --handler "$HANDLER" --role "$ROLE_ARN" \
