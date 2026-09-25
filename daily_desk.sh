@@ -105,3 +105,12 @@ $PY run_alert_scorecard.py --oop 2>/dev/null | tail -2      # out-of-play alerts
 $PY -m lib.alerts.universe 2>/dev/null
 echo; echo "alerts file: $OUT/alerts_latest.csv"
 echo "tomorrow 09:25 ET:  ./start_alerts.sh     (UR + ORB9 on the focus universe, terminal display; --full for the preferred list)"
+
+# Nightly backup of the local caches (2026-09-25; DATA_CATALOG.md sec 8). data/cache and data/backups are not in git and
+# hold data that cannot be re-pulled (per-name 1-min bars, IBKR fill quotes, alert snapshots). sync WITHOUT --delete,
+# so a local deletion never removes the cloud copy. Own prefix backup/ -- s3://.../cache/ belongs to the Lambdas.
+# Runs detached so the desk does not wait on it; incremental after the first night.
+( for d in cache backups; do
+    aws s3 sync "data/$d" "s3://gmerton-stock-data/backup/$d" --only-show-errors --exclude ".DS_Store"
+  done ) > data/studies/logs/cache_backup.log 2>&1 &
+echo "cache backup -> s3://gmerton-stock-data/backup/ running in the background (log: data/studies/logs/cache_backup.log)"

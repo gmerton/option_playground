@@ -134,3 +134,20 @@ tests (`pattern_test` writes them). They are reusable for re-scoring. They are n
 - **Option quotes end ~2026-03** (bid/ask) and IV ~2026-05. Forward option tests need Tradier/IBKR capture going
   forward.
 - **Intraday single-name history is short** (2026-02 onward); only SPY/QQQ/TQQQ/SQQQ have long 1-min history.
+
+## 8. Cache retention (value review 2026-09-25)
+- **Tier A: cannot be re-pulled.** `intraday_1min/` (Tradier keeps ~20 sessions), `fill_quotes_ibkr_1min`
+  (IBKR has no expired-option history), `alert_ctx_*`, `journal_intraday/`, `journal_daily/`, `gex/`, the GOOG bid/ask
+  files. Backed up nightly.
+- **Tier B: broad reuse, slow to rebuild.** Price panels, `intraday_hist/`, the flow and IV extracts, short interest,
+  SEC pulls, QQQ/TLT/SPY chains, `vrp_panel/`, `pattern_*` (harness outputs, reused by rescoring). Kept locally and
+  backed up nightly.
+- **Backup:** `daily_desk.sh` ends with a detached `aws s3 sync data/{cache,backups} s3://gmerton-stock-data/backup/`
+  (no `--delete`). Log: `data/studies/logs/cache_backup.log`. Restore with `aws s3 sync s3://gmerton-stock-data/backup/cache data/cache`.
+- **Tier C: ARCHIVED and removed locally.** 92 single-study pulls from closed verdicts (calendar_path*, call_grid,
+  tenor_window, skew_vertical, event_convexity, straddle_recenter, the July ML grid, IV-condor, SPX extracts, stage_a_*,
+  …; ~4.0 GB) are in **`s3://gmerton-stock-data/archive/cache_2026-09-25/`**, S3 **Glacier Deep Archive**.
+  Restoring takes **12–48 h** (`aws s3api restore-object … --restore-request Days=7`), then a copy. For most of them,
+  re-pulling from v3 is faster.
+- **Rule going forward:** a new study pull goes in its own `data/cache/<study>/` directory. When the study's verdict is
+  final, archive that directory the same way.
