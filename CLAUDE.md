@@ -12,6 +12,7 @@ scripts are one-time studies, not tools.
 |---|---|
 | **`HANDOFF.md`** | **Picking this up cold?** Start here. The *why* and the *right now*: what changed recently and is not obvious from the code, what is in flight, what is knowingly broken. Dated — trust the files below it where they disagree. |
 | **`OPERATIONS.md`** | **What do I actually RUN, and when.** The whole repo reduces to ~13 top-level commands; everything else is orchestrator-invoked or a dead study script. Start here. |
+| **`DATA_CATALOG.md`** | **What data exists, where, its range, and what it cannot answer.** Read §0 (pre-study checklist) and §7 (blind spots) before designing any study. |
 | `data/studies/TEST_INDEX.md` | What has already been tested, with the verdict — one line per test, plus §10 for what's queued. **Check before proposing any study; most ideas here have been run.** |
 | `data/studies/daily_routine.md` | What to *act on* vs ignore each day (which signals carry expectancy). Different question from OPERATIONS.md. |
 
