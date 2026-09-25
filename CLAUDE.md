@@ -133,7 +133,10 @@ These are hard-won; violating them has produced wrong results more than once.
   a YIELD tag (MECHANISM / METHOD / REFRAME) for what a null still taught us.
 - **The trade journal is not evidence for setup selection** — it is admissible only for conformance,
   execution quality and cost realism. It is also structurally underpowered for certifying an edge.
-- Quiet mode: verbose output goes to a log file under `data/studies/`; surface a short summary plus the path.
+- **Quiet mode is the default** (Gabe, 2026-09-18; restated 2026-09-24): verbose output goes to a log file under
+  `data/studies/` (scratchpad for throwaways) and the reply gives a short summary plus the path. **Replies are capped
+  at ~5 lines** — verdict, the 2–3 numbers that matter, the file path, the next decision. No result tables, recaps
+  or 'what this means' sections unless he asks; tables belong in the study doc.
 - **Review the negatives for false negatives.** After a run of nulls, re-check each: did "wider data" actually
   change the universe? Is a "cost proxy" cell really a positive after-cost strategy?
 - **Pull all results — never truncate data the owner will act on.**
