@@ -1,0 +1,24 @@
+# Self-regime (own recent results) -> next breakouts: 2010-19 HOLDOUT (pre-registration in the docstring)
+# trades 2,226 on 688 names, 2009-06-25 -> 2026-09-17; holdout 380, replay 1,758; stop exits 54%, mean +0.86%/trade
+
+## S1 PRIMARY -- fewest-stop-out months (cut fixed on 2019-10+: stop share <= 0.43)
+  S1 HOLDOUT 2010-19: FEWEST-stop-out months n 9 mean -0.21% vs rest n 9 -2.10% | diff +1.89pp Welch t +0.94 | halves +1.41 / +2.29 | Q1 months positive 44%
+  S1 replay 2019-26 (in-sample): FEWEST-stop-out months n 18 mean +1.31% vs rest n 53 +0.18% | diff +1.13pp Welch t +0.52 | halves -0.31 / +2.77 | Q1 months positive 44%
+
+## S2 -- last 20 closed trades' mean % > 0 (HOT) vs not (COLD)
+  S2 HOLDOUT 2010-19: HOT n 109 -1.82% vs COLD n 271 -0.89% | month-clustered diff -3.71pp t -2.17 | halves -5.15 / -2.56 | years same sign 5/6
+     control within SPY > 50d: n 272 diff -1.93pp t -1.75
+     control within SPY < 50d: n 108 diff -1.97pp t -2.36
+  S2 replay 2019-26: HOT n 982 +1.05% vs COLD n 761 +1.55% | month-clustered diff +0.69pp t +0.46 | halves +1.77 / -0.05 | years same sign 4/7
+
+## Book view (descriptive)
+  book HOLDOUT 2010-19 (sum of trade % per exit month, 1 unit = 1% of book per trade):
+     ALWAYS               mean -4.16%/mo  Sharpe -0.81  maxDD 471.7%  units 380
+     HOT only             mean -1.87%/mo  Sharpe -0.82  maxDD 215.9%  units 109
+     2x HOT / 0.5x COLD   mean -4.89%/mo  Sharpe -0.99  maxDD 552.6%  units 354
+  book replay 2019-26 (sum of trade % per exit month, 1 unit = 1% of book per trade):
+     ALWAYS               mean +26.66%/mo  Sharpe +0.69  maxDD 451.9%  units 1743
+     HOT only             mean +12.41%/mo  Sharpe +0.53  maxDD 349.8%  units 982
+     2x HOT / 0.5x COLD   mean +31.94%/mo  Sharpe +0.67  maxDD 583.8%  units 2344
+
+VERDICT S1 (primary): NULL on the holdout
