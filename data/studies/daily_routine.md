@@ -17,15 +17,32 @@
 | 5 Journal | pending notes list | add same-day notes for every trade (`add_pending_note`) so the morning chain can grade them | — |
 | **Morning 8:00 PT (launchd `com.gmerton.morning-journal`)** | `morning_journal.sh`: Flex pull (retries while IBKR's statement is not ready) → `run_build_reviews.py` (review rows from the rubric + exit classifier, attaches staged notes) → `run_journal_grades.py` → `run_trade_review_pages.py --no-charts` → `deploy_trade_journal.sh` (S3 + CloudFront) | read the process GRADE and the hosted journal; `./morning_journal.sh --no-deploy` for a manual re-run; logs in `data/journal/logs/` | — |
 
-## Entry rules that survived the studies (apply to every long)
+## Entry rules for every long — with their evidence (relabelled 2026-09-25)
 
-1. **Location:** within 1 ADR of the 21 EMA. The 1–2 ADR band lost −$4.6k in August; >2 ADR is a chase.
-2. **No gap-up buys** (≥3% gap, first hour). No buying below falling EMAs (the laggard-bounce class, −$3.8k).
-3. **Trigger, not anticipation:** a reclaim (VWAP, 9/21 EMA, pivot) with the reclaim bar's low as the stop. For laggards, wait for the 50-day to be reclaimed and back-tested.
-4. **Stop ≤2% or size down to it.** 82 losers past 2% cost $13k in August. Size = risk ÷ stop distance; never widen.
-5. **No same-day exits unless the stop is hit.** Same-day round trips: 132 trades, −$7.9k.
-6. **Vehicle follows entry quality:** clean pullback + IV <60% → stock (or ITM 45+ DTE call); extended/uncertain or IV >60% → 30/15-delta put spread; never a 9%-OTM 3-week call held a day.
-7. **Exits:** grind → first daily close below the 20 EMA; spike (option 3× in days) → sell into strength / GTC target at +200–300%.
+> ⚠ Most of these came from the **August 2026 journal lens**, i.e. Gabe's own trades, which are **not admissible for
+> setup selection** (CLAUDE.md working rules). Each rule now carries its provenance. **UNVALIDATED** = journal only:
+> follow it as a habit if you like, but do not treat it as an edge, and do not build on it. **CONTRADICTED** = the
+> panel says otherwise.
+
+1. ⚠ **UNVALIDATED — Location:** within 1 ADR of the 21 EMA; >2 ADR is a chase. *Source: August journal only (1–2 ADR
+   band −$4.6k).* First panel test pre-registered 2026-09-25: `run_band_runaway_entry.py` (buy early / buy the close /
+   skip).
+2. ⚠ **UNVALIDATED — No gap-up buys** (≥3% gap, first hour). *Source: August journal.* The panel shows catalyst gaps have
+   no edge (Adhikary B, DR-EP), but has never tested the veto itself.
+   **PARTLY SUPPORTED — No buying below falling EMAs.** *Journal (laggard bounce −$3.8k) plus panel:* crash-leader veto
+   (never buy deep drawdowns in a healthy tape) and the Trend Template ablation (close > 150/200 SMA carry the weight).
+3. ⛔ **CONTRADICTED — "Trigger, not anticipation": a reclaim with the reclaim bar's low as the stop.** The panel says
+   **buy the close**: entry study 2026-09-17, reclaim + re-entry −2.28pp vs the close (t −3.4); Stage A: intraday
+   triggers ≈ a random later minute. Alerts are information, not triggers.
+4. **RISK POLICY, not an edge — Stop ≤2% or size down to it.** Size = risk ÷ stop distance; never widen. *Journal
+   ($13k past 2%).* The stop-distance cell failed as a grade on the panel (size-lever study); keep it as sizing hygiene.
+5. ✅ **SUPPORTED — No same-day exits unless the stop is hit.** Panel **and** journal: exit-timing study, scalp −0.13R vs
+   trail +0.89R; 278 same-day cycles −$8.3k at 19% win. Execution behaviour, which the journal *is* valid evidence for.
+6. **WEAK — Vehicle follows entry quality:** clean pullback + IV <60% → stock (or ITM 45+ DTE call); extended or
+   IV >60% → 30/15-delta put spread; never a 9%-OTM 3-week call held a day. *August descriptive + panel:* breakout put
+   spread vs house stock NULL, leaning stock (t −1.77).
+7. **PARTLY SUPPORTED — Exits:** grind → first daily close below the 20 EMA. Spike (option 3× in days) → sell into
+   strength: **NULL as a return lever** on real call prints (t +0.18); it only trims the tail, so it is a risk choice.
 
 ## Monthly
 
