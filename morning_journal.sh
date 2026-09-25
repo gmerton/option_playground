@@ -21,6 +21,10 @@ echo "== morning journal $(date) =="
 # Weekend / holiday guard: skip if no session in the last 3 days would be new (the pull is idempotent anyway).
 if [ "$(date +%u)" -ge 6 ]; then echo "weekend -- nothing to pull"; exit 0; fi
 
+# 0. Refresh the liquid panel with yesterday's completed session (2026-09-25 audit: the evening desk builds it before the
+#    close, so it always ended one session short; every intraday scan then skipped D-1). Non-fatal, ~75 s.
+PYTHONPATH=src:. $PY run_build_liquid_panel.py 2>&1 | grep -E "gap check|WARN|^wrote" | sed 's/^/  panel: /' || echo "  (panel refresh failed)"
+
 # 1. Flex pull (retry up to 6 x 10 min while IBKR has not generated the statement yet)
 for i in 1 2 3 4 5 6; do
   if $PY run_daily_journal.py --query-id 1605053 2>&1 | grep -v -i "warn" | tee /tmp/morning_flex.txt | tail -4; then

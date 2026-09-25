@@ -189,6 +189,11 @@ def main() -> None:
     ap.add_argument("--iv-source", choices=["ibkr", "athena"], default="ibkr",
                     help="reference for the IV percentile gate (default ibkr, falls back to athena)")
     ap.add_argument("--ib-client-id", type=int, default=47)
+    ap.add_argument("--allow-athena-fallback", action="store_true",
+                    help="let the stale athena percentile (iv_put_10 history ending 2026-02, ranked against today's "
+                         "iv30 -- cross-tenor) GATE names IBKR did not return; default: it is shown, never gates")
+    ap.add_argument("--force-archive", action="store_true",
+                    help="archive a full run even when it is not a Friday (the strategy enters Fridays only)")
     ap.add_argument("--data-source", choices=["tradier", "ibkr"], default="tradier",
                     help="where FVR and straddle quotes come from (default tradier; ibkr is slower)")
     a = ap.parse_args()
@@ -251,8 +256,15 @@ def main() -> None:
         if c not in d.columns:
             d[c] = np.nan
 
-    d["iv_src"] = np.where(d.ib_pctile.notna(), "ib", np.where(d.ath_pctile.notna(), "athena", "none"))
-    d["ivpct"] = d.ib_pctile.fillna(d.ath_pctile)
+    # 2026-09-25 audit: the athena reference ranks today's Tradier iv30 against an iv_put_10 history that ENDED
+    # 2026-02-20 -- cross-tenor and ~7 months stale -- and it used to gate silently whenever IBKR was missing.
+    # Default now: IBKR gates; a name IBKR did not return FAILS the IV gate (fail closed). athena is display-only.
+    if a.allow_athena_fallback:
+        d["iv_src"] = np.where(d.ib_pctile.notna(), "ib", np.where(d.ath_pctile.notna(), "athena", "none"))
+        d["ivpct"] = d.ib_pctile.fillna(d.ath_pctile)
+    else:
+        d["iv_src"] = np.where(d.ib_pctile.notna(), "ib", "none")
+        d["ivpct"] = d.ib_pctile
     d["g_iv"] = d.ivpct <= IVPCT_GATE
     # Gate 5, RSI(14) < 70. Read for every FVR >= report-floor name so near misses show it too.
     rsi_names = list(d.loc[d.fvr >= min(a.min_fvr, FVR_GATE), "tkr"])
@@ -281,6 +293,16 @@ def main() -> None:
 
     q = d[d.pass_all].sort_values("fvr", ascending=False)
     print(f"\n{'='*84}\n  QUALIFIERS ({len(q)})\n{'='*84}")
+    # banners live INSIDE the QUALIFIERS block because daily_desk.sh prints only from that line down (2026-09-25 audit)
+    if errs:
+        print(f"  ⚠ PARTIAL SCAN: {errs} of {len(d) + errs} names errored ({', '.join(f'{k} {v}' for k, v in why.items())}) "
+              f"-- these qualifiers come from the {len(d)} names that were screened")
+    n_noib = int((d.g_fvr & d.g_liq & d.ib_pctile.isna()).sum())
+    if n_noib and not a.allow_athena_fallback:
+        print(f"  ⚠ {n_noib} FVR+liquidity survivor(s) had no IBKR IV percentile and FAIL the IV gate "
+              f"(fail closed; --allow-athena-fallback lets the stale athena reference gate them)")
+    if date.today().weekday() != 4:
+        print(f"  ⚠ NOT A FRIDAY ({date.today():%A}) -- the strategy enters on Fridays only; this is a preview")
     if q.empty:
         print("  none")
     else:
@@ -329,6 +351,9 @@ def main() -> None:
     if errs > 0.25 * (len(d) + errs):
         print(f"\n  ⚠ {errs} of {len(d) + errs} names errored — NOT archived "
               f"(full results -> straddle_screen_latest.csv). Re-run once the source recovers.")
+        return
+    if date.today().weekday() != 4 and not a.force_archive:
+        print(f"\n  full results -> straddle_screen_latest.csv  (not a Friday: not archived; --force-archive to override)")
         return
     arch = Path("data/watchlist/straddle_screen")
     arch.mkdir(parents=True, exist_ok=True)

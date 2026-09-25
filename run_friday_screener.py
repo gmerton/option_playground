@@ -245,12 +245,16 @@ REGIME_TIER_MAP: dict[str, dict[str, str]] = {
     # 2026-09-22 ledger-wide correction (data/studies/multiple_testing_correction_2026-09-22.md):
     #   S = the certified index stress bucket (one shared allocation), U = uncertified -> skip or 1 token contract
     "QQQ Regime-Optimized": {
-        "Bearish_HighIV": "S", "Bearish_LowIV": "U",      # t 3.53 (same trade as SPY/SPX) / t 1.74
+        # 2026-09-25 audit: QQQ's stress cell is NOT CERTIFIED (t 3.53 fails the k=54 charge). Same bet as SPY, so SPY is
+        # the vehicle for the bucket; QQQ prints as uncertified and is never sized.
+        "Bearish_HighIV": "U", "Bearish_LowIV": "U",      # t 3.53 (same trade as SPY/SPX) / t 1.74
         "Bullish_HighIV": "U", "Bullish_LowIV": "U",      # t 1.04 / t -0.87 month-weighted (no edge)
     },
     "XLE Regime-Gated": {
-        "Bearish_HighIV": "A", "Bearish_LowIV": "C",
-        "Bullish_HighIV": "C", "Bullish_LowIV": "C",
+        # 2026-09-25 audit: the old "A" tier predates the 9/22 correction; the ledger says XLE bull put is BLOCKED (not
+        # reproducible from the split-adjusted cache, episodic only -- TEST_INDEX, playbook_review_2026-09.md).
+        "Bearish_HighIV": "X", "Bearish_LowIV": "X",
+        "Bullish_HighIV": "X", "Bullish_LowIV": "X",
     },
     "SPY Regime-Switching": {
         "Bearish_HighIV": "S", "Bearish_LowIV": "U",      # t 6.07 certified / long straddle, no t on file
@@ -258,14 +262,36 @@ REGIME_TIER_MAP: dict[str, dict[str, str]] = {
     },
 }
 TIER_NOTE = {
-    "S": "certified stress bucket -- ONE position across SPY/SPX/QQQ",
-    "U": "UNCERTIFIED (2026-09-22) -- skip or 1 token contract",
+    "S": "certified stress bucket -- ONE position; SPY is the vehicle (SPX condor has no live emitter yet)",
+    "U": "UNCERTIFIED -- conditions met, NOT a trade; never sized",
+    "X": "BLOCKED -- not reproducible; do not trade",
+    "C": "retired cell",
 }
 STRESS_BUCKET = "Index stress bucket"
 
 
 def regime_tier(name: str, regime: Optional[str]) -> Optional[str]:
     return REGIME_TIER_MAP.get(name, {}).get(regime) if regime else None
+
+
+def strategy_tier(name: str, result: dict) -> str:
+    """The tier of what fired: regime cell tier for regime strategies (regime read from the result or its summary),
+    else the plain-spread tier. Only 'S' is a certified trade (2026-09-25 audit: U/X/C never print ENTER)."""
+    regime = result.get("active_regime")
+    if not regime and name in REGIME_TIER_MAP:
+        for r in ("Bearish_HighIV", "Bearish_LowIV", "Bullish_HighIV", "Bullish_LowIV"):
+            if r in result.get("summary", ""):
+                regime = r
+                break
+    if name in REGIME_TIER_MAP and regime:
+        return REGIME_TIER_MAP[name].get(regime, "?")
+    return TIER_MAP.get(name, "?")
+
+
+def verdict_label(name: str, result: dict) -> str:
+    if not result["enter"]:
+        return "🔴  SKIP "
+    return "🟢  ENTER" if strategy_tier(name, result) == "S" else "⚪  UNCERT"
 
 
 # ── Pure helpers (no I/O) ─────────────────────────────────────────────────────
@@ -1486,7 +1512,9 @@ def _print_sizing(
             continue
         strat = strat_meta[name]
         akey  = strat.get("alloc_key", name)
-        tier  = regime_tier(name, result.get("active_regime")) or TIER_MAP.get(name)
+        tier  = strategy_tier(name, result)
+        if tier != "S":
+            continue                      # 2026-09-25 audit: uncertified / blocked cells are never sized
         if tier == "S":
             akey = STRESS_BUCKET          # SPY / QQQ bearish-high-IV share one allocation
         if akey not in entered:
@@ -1908,15 +1936,15 @@ async def run(today: date, capital: Optional[float] = None, risk_pct: float = 0.
             for line in result["lines"]:
                 print(line)
 
-            verdict = "🟢  ENTER" if result["enter"] else "🔴  SKIP"
-            print(f"\n  {verdict}")
+            verdict = verdict_label(name, result)
+            print(f"\n  {verdict}" + ("   (conditions met, but the cell is not certified -- see the tier tag)" if "UNCERT" in verdict else ""))
 
         # ── Summary ───────────────────────────────────────────────────────────
         print(f"\n{BAR}")
         print(f"  SUMMARY  ·  {today}  ·  VIX: {vix:.2f}")
         print(f"{BAR}")
         for name, result in results:
-            verdict  = "🟢  ENTER" if result["enter"] else "🔴  SKIP "
+            verdict  = verdict_label(name, result)
             factor   = result.get("fwd_vol_factor")
             strat    = next(s for s in STRATEGIES if s["name"] == name)
             warn_thr = strat.get("fwd_vol_warn")
@@ -1938,17 +1966,7 @@ async def run(today: date, capital: Optional[float] = None, risk_pct: float = 0.
             else:
                 exp_str = ""
             # Tier tag
-            active_regime = result.get("active_regime")
-            if not active_regime and name in REGIME_TIER_MAP:
-                # Regime skips embed the regime name in the summary — extract it
-                for r in ("Bearish_HighIV", "Bearish_LowIV", "Bullish_HighIV", "Bullish_LowIV"):
-                    if r in result.get("summary", ""):
-                        active_regime = r
-                        break
-            if name in REGIME_TIER_MAP and active_regime:
-                tier = REGIME_TIER_MAP[name].get(active_regime, "?")
-            else:
-                tier = TIER_MAP.get(name, "?")
+            tier = strategy_tier(name, result)
             tier_tag  = f"  [Tier {tier}{' -- ' + TIER_NOTE[tier] if tier in TIER_NOTE else ''}]"
             date_tag  = f"  [{today}]" if result.get("enter") else ""
             print(f"  {verdict}   {name:<28}  {result['summary']}{exp_str}{fwd_tag}{tier_tag}{date_tag}")

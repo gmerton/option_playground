@@ -6,7 +6,7 @@ Universe: names liquid on the panel (ADDV >= $50M), ADR%(20d) >= 3 (recipe #1). 
 gate was DELETED 2026-09-24: it bound on 11 of 671,700 ADR >= 3 name-days and 0 of 50,847 breakouts -- redundant,
 precision_gate_ablation_2026-09-24.md.) Today's bar = Tradier quote (open/high/low/last/volume) stamped onto daily history
 (data/cache/liquid_panel_2019.parquet, yfinance adjusted); intraday RVOL is pro-rated by session
-elapsed, so a mid-session run over-weights early volume -- re-run near the close for the real read.
+elapsed on the house U-shaped volume profile (lib.alerts.volprofile; linear time until 2026-09-25) -- re-run near the close for the real read.
 
 Archetypes (recipe #5 pivot = highest high of the prior 15 sessions; #6 triggers):
   A  BREAKOUT   close clears the pivot, RVOL >= 1.1, close in the upper half of the bar,
@@ -63,18 +63,28 @@ def main():
     addv = (C * V).tail(50).mean(); uni = addv[addv >= ADDV_MIN].index
     O, H, L, C, V = O[uni], H[uni], L[uni], C[uni], V[uni]
     elapsed = 1.0; label = str(C.index[-1].date()) + " (cached close)"
+    # staleness guard (2026-09-25 audit): the panel must hold the last COMPLETED session, or the live row is stamped
+    # after a gap and chg%, the pivot, the SMA stack and average volume all silently skip a day
+    _now = datetime.now(ZoneInfo("America/New_York"))
+    _last_done = pd.Timestamp(_now.date()) - pd.offsets.BDay(0 if (_now.hour, _now.minute) >= (16, 30) else 1)
+    if not a.asof and C.index[-1] < _last_done.normalize():
+        print(f"⚠⚠ STALE PANEL: last bar {C.index[-1].date()} but the last completed session is {_last_done.date()} -- "
+              f"run run_build_liquid_panel.py first; chg%, pivots and RVOL below skip a session")
     now = datetime.now(ZoneInfo("America/New_York")); mins = (now.hour - 9) * 60 + now.minute - 30
     # live only once today's session has opened: before 09:30 ET or on a weekend the "quotes" are the prior
     # session's, and appending them as a new bar duplicates that session (2026-09-20: a Sunday-night run
     # appended Friday as a fake Monday bar, pro-rated RVOL at 10%, and emptied the A/B lists)
     if not a.no_live and not a.asof and now.weekday() < 5 and mins >= 0:
         Q = asyncio.run(quotes(list(uni)))
-        elapsed = float(np.clip(mins / 390, 0.1, 1.0))
+        # RVOL pro-rating by the house U-shaped volume profile, not linear time (2026-09-25 audit): linear mins/390
+        # understated RVOL ~10% after 15:00 ET (0.92 vs 0.83 of the day's volume at 15:28) and emptied the A block
+        from lib.alerts.volprofile import vol_frac
+        elapsed = float(np.clip(vol_frac(mins), 0.05, 1.0))
         today = pd.Timestamp(now.date())
         row = {k: pd.Series({s: Q[s].get(k) for s in uni if s in Q and Q[s].get("last")}, dtype=float) for k in ("open", "high", "low", "last", "volume")}
         if today > C.index[-1] and len(row["last"]) > 0:
             O.loc[today], H.loc[today], L.loc[today], C.loc[today], V.loc[today] = row["open"], row["high"], row["low"], row["last"], row["volume"]
-            label = f"{today.date()} LIVE at {now:%H:%M} ET (session {100*elapsed:.0f}% elapsed; RVOL pro-rated)"
+            label = f"{today.date()} LIVE at {now:%H:%M} ET ({100*elapsed:.0f}% of a typical day's volume expected by now; RVOL pro-rated on the intraday profile)"
     C, O, H, L, V = C.ffill(limit=1), O.ffill(limit=1), H.ffill(limit=1), L.ffill(limit=1), V.fillna(0)
     s10, s20, s50 = C.rolling(10).mean(), C.rolling(20).mean(), C.rolling(50).mean()
     e20 = C.ewm(span=20, adjust=False).mean()

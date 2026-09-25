@@ -47,6 +47,11 @@ if [ "$fail" -ne 0 ]; then
 fi
 # before the bell: which plan levels are already dead from a gap, which holds gapped through their stops
 if [ "$(TZ=America/New_York date +%H%M)" -lt 0930 ]; then
+  # Refresh the liquid panel so it includes yesterday's completed session (2026-09-25 audit: the desk builds it at
+  # ~15:40 ET, before the close, so it always ended one session short and every intraday scan skipped D-1).
+  # Background + non-fatal; ~75 s.
+  ( PYTHONPATH=src:. .venv/bin/python3 run_build_liquid_panel.py > data/studies/logs/panel_refresh_morning.log 2>&1 \
+      || echo "(panel refresh failed -- see data/studies/logs/panel_refresh_morning.log)" ) &
   .venv/bin/python3 run_premarket_gaps.py 2>/dev/null || echo "(pre-market check skipped)"
   # which industries are hot before the bell (ETF + member pre-market moves in ADR units; context, not a gate)
   .venv/bin/python3 run_premarket_industries.py 2>/dev/null || echo "(pre-market industries skipped)"
