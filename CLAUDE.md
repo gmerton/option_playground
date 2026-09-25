@@ -54,14 +54,15 @@ On demand: `./journal_day.sh --date <YYYYMMDD>` is **backfill only** now that la
 daily; the trade reviewer (`python -m lib.trade_reviewer.cli [-p TICKER]`, needs `ANTHROPIC_API_KEY`); and
 `run_pullback_shorts.py`, `run_straddle_iv_gate.py`, `run_news_pull.py`.
 
-⚠ **Scripts that look operational but are traps** (details in `OPERATIONS.md`): `premarket_check.py` /
+⚠ **Scripts that look operational but are traps** (details in `OPERATIONS.md`; most were moved to `scripts/archive/` on 2026-09-24): `premarket_check.py` /
 `premarket_defense.py` (hand-edited `HOLDINGS` frozen 2026-06-15), `run_thursday_screener.py` (no IV gate),
 `run_stock_dcal_screener.py` (retired strategy), `run_minervini_scan.py` / `run_refresh_preferred.py`
 (the Lambda owns the S3 list — running these locally re-creates a stale-list overwrite), `run_eod_scan.sh`
 (prescribes crontab lines that were never installed; the `preferred-breakout-eod` Lambda does this now).
 
-Cloud jobs (EventBridge, both enabled): `preferred-breakout-eod` weeknights 23:15 UTC,
-`preferred-list-refresh-nightly` Tue–Sat 07:30 UTC.
+Cloud jobs (all enabled; full table in `OPERATIONS.md`): `preferred-breakout-eod` weeknights 23:15 UTC,
+`preferred-list-refresh-nightly` Tue–Sat 07:30 UTC, and **`options-daily-updater`** (ECS task via EventBridge Scheduler,
+weeknights 22:00 ET, ~4.5 h) — **the nightly feed for `silver.options_daily_v3`**; check it first when v3 looks stale.
 
 ## Architecture
 

@@ -60,3 +60,22 @@ data/cache/intraday_hist/
 data/studies/tenor_window_calls_2026-09-23.csv
 data/studies/pullback_entry_events.csv
 data/journal/logs/
+
+# ── Evening-desk / scanner outputs in data/watchlist/ (regenerated every run — do NOT commit) ──
+# 2026-09-24 housekeeping: these kept the working tree permanently dirty. Producers: daily_desk.sh,
+# run_adhikary_scan.py, run_scan_clusters.py, run_preferred_breakouts.py (and the preferred-breakout-eod
+# Lambda, whose copies live in s3://gmerton-stock-data/breakouts/), run_putspread_scan.py, run_premarket_*.py.
+# Hand-edited files in data/watchlist/ (levels.csv, universe_*.txt, thesis_log.md, trade_plan_*.md,
+# monitor_custom.json, ...) stay tracked. Dated files already in git stay as history (two are cited by studies).
+data/watchlist/*_latest.csv
+data/watchlist/*_latest.json
+data/watchlist/straddle_scan_latest.txt
+data/watchlist/adhikary_*20[0-9][0-9]-*.txt
+data/watchlist/alerts_20[0-9][0-9]-*.csv
+data/watchlist/clusters_20[0-9][0-9]-*
+data/watchlist/eod_20[0-9][0-9]-*.txt
+data/watchlist/positions_20[0-9][0-9]-*.txt
+data/watchlist/regime_20[0-9][0-9]-*.txt
+data/watchlist/straddle_screen_20[0-9][0-9]-*.txt
+data/watchlist/putspread_scan*_20[0-9][0-9]-*.csv
+data/watchlist/premarket_industries_20[0-9][0-9]-*.csv

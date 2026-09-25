@@ -7,8 +7,9 @@
 # Uses the AWS managed AWSSDKPandas layer (pandas+numpy+pyarrow+awswrangler) —
 # our custom pandas layer lacks pyarrow, which parquet + Iceberg staging need.
 #
-# Prereqs: POLYGON_API_KEY in env/~/.bash_profile. Run from repo root.
+# Prereqs: POLYGON_API_KEY in ~/.trading_env. Run from repo root.
 set -eo pipefail
+[ -f "$HOME/.trading_env" ] && source "$HOME/.trading_env"   # secrets (2026-09-24: messages used to say ~/.bash_profile)
 
 PROFILE="${AWS_PROFILE:-clarinut-gmerton}"
 REGION="us-west-2"
@@ -34,7 +35,7 @@ export AWS_DEFAULT_REGION="$REGION"
 
 # shellcheck disable=SC1091
 [ -f "$HOME/.bash_profile" ] && { source "$HOME/.bash_profile" || true; }
-: "${POLYGON_API_KEY:?POLYGON_API_KEY not set (expected in ~/.bash_profile)}"
+: "${POLYGON_API_KEY:?POLYGON_API_KEY not set (expected in ~/.trading_env)}"
 
 ACCOUNT="$(aws sts get-caller-identity --query Account --output text)"
 echo ">> Deploying $FUNCTION to account $ACCOUNT, region $REGION"

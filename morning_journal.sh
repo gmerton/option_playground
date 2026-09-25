@@ -50,4 +50,7 @@ $PY run_trade_review_pages.py $CHARTS 2>&1 | grep -v -i "warn" | grep "Wrote" ||
 if [ "$DEPLOY" = 1 ]; then
   ./deploy_trade_journal.sh 2>&1 | grep -v -i "warn" | tail -2 || { echo "!! deploy failed"; exit 1; }
 fi
+# 6. back up the git-ignored journal parquet cache (its S3 bucket is the only copy; 2026-09-24: last manual push was
+#    2026-09-02). Non-fatal: a failed backup never blocks the journal.
+./sync_journal_cache.sh push 2>&1 | grep -v -i "warn" | tail -1 || echo "  (journal cache backup failed -- run ./sync_journal_cache.sh push by hand)"
 echo "== done $(date) =="

@@ -3,10 +3,11 @@
 # Deploy the preferred-ticker breakout scan as an AWS Lambda + EventBridge schedule.
 # Idempotent: creates resources on first run, updates them on subsequent runs.
 #
-# Prereqs: AWS profile with Lambda/EventBridge/S3 perms; TRADIER_API_KEY in env
-# (sourced from ~/.bash_profile by this script). Run from repo root.
+# Prereqs: AWS profile with Lambda/EventBridge/S3 perms; TRADIER_API_KEY in ~/.trading_env
+# (sourced by this script; ~/.bash_profile is a fallback). Run from repo root.
 #
 set -eo pipefail
+[ -f "$HOME/.trading_env" ] && source "$HOME/.trading_env"   # secrets (2026-09-24: messages used to say ~/.bash_profile)
 
 # ---- config -----------------------------------------------------------------
 PROFILE="${AWS_PROFILE:-clarinut-gmerton}"
@@ -32,7 +33,7 @@ export AWS_DEFAULT_REGION="$REGION"
 
 # shellcheck disable=SC1091
 [ -f "$HOME/.bash_profile" ] && { source "$HOME/.bash_profile" || true; }
-: "${TRADIER_API_KEY:?TRADIER_API_KEY not set (expected in ~/.bash_profile)}"
+: "${TRADIER_API_KEY:?TRADIER_API_KEY not set (expected in ~/.trading_env)}"
 
 ACCOUNT="$(aws sts get-caller-identity --query Account --output text)"
 echo ">> Deploying to account $ACCOUNT, region $REGION, profile $PROFILE"

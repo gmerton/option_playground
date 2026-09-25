@@ -9,6 +9,10 @@
 #   ./journal_day.sh --no-charts     pages without Tradier chart data (fast)
 set -euo pipefail
 cd "$(dirname "$0")"
+# secrets live in ~/.trading_env; load them like morning_journal.sh / start_alerts.sh / daily_desk.sh do
+# (2026-09-24 housekeeping: this was the one orchestrator that depended on the launching shell)
+if [ -f "$HOME/.trading_env" ]; then set +u; source "$HOME/.trading_env"; set -u; fi
+export AWS_PROFILE="${AWS_PROFILE:-clarinut-gmerton}"
 PY=.venv/bin/python3; export PYTHONPATH=src:.
 PULL_ARGS=(); PAGE_ARGS=(); DEPLOY=1
 while [ $# -gt 0 ]; do
