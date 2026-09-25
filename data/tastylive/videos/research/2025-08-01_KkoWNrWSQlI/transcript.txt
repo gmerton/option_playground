@@ -1,0 +1,458 @@
+[00:00] And I believe this will be helpful to
+[00:01] any new traders who want to trade
+[00:03] futures products. Um understand the
+[00:05] landscape of each futures product, how
+[00:07] each futures product behaves differently
+[00:09] and uh so they have some more context
+[00:11] when they go and place trades, whether
+[00:13] it's putting their stop losses in, take
+[00:15] profits or putting a wing in or
+[00:17] something like that. So studying daily
+[00:19] ranges will give you context. And so
+[00:21] that's the uh the goal for this market
+[00:23] measure today.
+[00:25] >> Uh we like it.
+[00:27] All righty. So let's do it. intraday
+[00:29] scalping zones. And and by the way,
+[00:31] we'll we'll we'll be your harshest
+[00:34] critic on this one, just so you know. Um
+[00:36] because because when it comes to inday
+[00:38] scalping zones, that's kind of like um
+[00:40] this is kind of like something that
+[00:43] we've been talking about for literally
+[00:45] for years. So um hang on one second. Let
+[00:48] me get There you go. All right. So
+[00:53] we used to do it as a measure of kind of
+[00:55] whatever the expected move was for the
+[00:57] day. So like let's just say 1/ half a
+[00:59] standard deviation to one and a half
+[01:00] standard deviations. Let's think about
+[01:01] that way. But we haven't really done a
+[01:04] lot of work on intraday scalping zones
+[01:05] for quite some time now. So I think this
+[01:08] is going to be really cool. Um
+[01:10] >> and it's also interesting Thomas as
+[01:12] you're doing this now when
+[01:15] we're seeing a lot of two-sided markets.
+[01:18] Um had a massive rally for the past 6
+[01:21] months. Now it's getting choppy and
+[01:24] there's a lot of whatever your take is
+[01:26] on the market or whatever, there are
+[01:28] some opportunities uh right now that I
+[01:31] think we haven't seen in a while.
+[01:32] >> And you're talking to somebody that I
+[01:34] don't know if you know this, but I grew
+[01:35] up in this business as a scalper. First
+[01:37] 20 years of my career, I just stood in
+[01:38] the pit and scalped and like everybody
+[01:40] else did. So this is kind of my this
+[01:43] whole scalping thing. I want to cover it
+[01:45] more, but we haven't on the network.
+[01:47] Tony was a scalper, too. So let's do
+[01:49] this. Inday traders rely on speed,
+[01:51] intuition, and often guesswork. But how
+[01:54] far do prices really move on these days?
+[01:56] We analyzed intraday ranges to define
+[01:58] realistic scalping zones.
+[02:01] All right, let's go next slide, John.
+[02:05] Um, so scalping zones are based on
+[02:07] intraday price ranges from 8:30 to 3:00
+[02:10] p.m. It's central time. For each symbol,
+[02:13] we measured the 50th percentile, the
+[02:15] 75th percentile, the 95th percentile,
+[02:18] and the daily range. Okay.
+[02:22] >> Yeah. These are the three things I
+[02:23] decided to use. The 50th percentile
+[02:26] being like a base case, the 75th
+[02:27] percentile being some sort of stretch,
+[02:29] then 95th percentile being some sort of
+[02:31] outlier or extreme move in the market. I
+[02:33] also made sure to add a formula at the
+[02:35] end that kind of shows how I uh
+[02:37] calculated the daily range as a
+[02:38] percentage of the open price. So today
+[02:41] we'd be way outside of this.
+[02:42] >> That is correct.
+[02:43] >> Okay, let's go. Next slide.
+[02:47] So we pulled one minute. OLC is open,
+[02:51] high, low, close data. We analyze the
+[02:55] ES, the NASDAQ, and the Russell. Use the
+[02:59] futures, but it doesn't make a
+[03:00] difference. Crude oil, gold, silver,
+[03:03] Bitcoin, and ETH, and the last 12
+[03:05] months.
+[03:06] >> That is correct. Yeah. I used it doing I
+[03:07] used our Jupyter notebooks that we use
+[03:09] internally for our research for other
+[03:11] research projects. So I wanted to
+[03:12] include a snippet just to kind of show
+[03:14] the viewers kind of what we do in the
+[03:15] background and kind of how we pull data.
+[03:18] >> Good little glimpse into the
+[03:20] >> little glimpse of course. Yeah, I like
+[03:21] it. All right, let's go next slide.
+[03:26] >> All right.
+[03:27] >> All right, go ahead. I'll let you take
+[03:28] it.
+[03:28] >> Sure. Yeah, this first plot I I made it
+[03:30] a little bit more complicated than it
+[03:31] probably should have been, but let's
+[03:32] talk about box plots. So what we're
+[03:34] looking at here that colored in zone is
+[03:36] an interquartile range. So it's between
+[03:38] the 75th percentile and the 25th
+[03:40] percentile range. So right now as you
+[03:43] can see that red line that is the 95th
+[03:44] percentile range. That is the outlier
+[03:46] moves. The orange being the 75th
+[03:48] percentile and the 50th being the
+[03:49] median. And so as you can see when we
+[03:52] look at the first three box plots those
+[03:54] are the indices they trade at a very
+[03:56] small the in the IQR the interquartile
+[03:59] quartile range is much is sh it's lower.
+[04:02] It's it's not as wide. So those are good
+[04:05] uh futures products I would recommend
+[04:06] for small and consistent scalps. And
+[04:08] then when we look at commodities, you
+[04:10] kind of get also that small range, but
+[04:12] not exactly with the CL, but they offer
+[04:17] some more movement with still a good
+[04:20] amount of liquidity and volume in those
+[04:21] in those products. And then we're
+[04:23] looking at Bitcoin and Ethereum at the
+[04:25] end, the last two where they see massive
+[04:27] moves. even their 50% I mean their 50th
+[04:30] percentile moves the base case is much
+[04:32] higher than ES's or the S&P 500 futures
+[04:36] uh 95th percentile move and so those
+[04:38] would be products I would definitely
+[04:40] want to position smaller in and uh
+[04:42] definitely don't have as much volume as
+[04:44] the the indices
+[04:45] >> yeah and the markets aren't nearly as
+[04:47] tight
+[04:47] >> they're not as
+[04:49] >> what I want to what I want to add here
+[04:51] is box plots have been around for a
+[04:53] while but what you see here is a good
+[04:57] intuitive ative explanation of what they
+[05:00] represent. So if you've been trading for
+[05:02] a while, of course ES and NASDAQ equity
+[05:05] indices a little less volatile than
+[05:07] something like Bitcoin or Ethereum.
+[05:10] Okay? And what Thomas has done is shown
+[05:13] much wider ranges, wider boxes for the
+[05:16] more volatile things. That's what a box
+[05:19] plot shows you. Well, literally
+[05:21] visually. Okay? So you can see here
+[05:24] obviously crude oil is more volatile
+[05:27] than gold. Bitcoin is more volatile than
+[05:30] crude oil etc etc
+[05:34] let's take a look at the next slide.
+[05:35] Sure.
+[05:37] >> So crypto has the widest intraday
+[05:40] swings. I don't think that would
+[05:42] surprise us. Commodities offer solid
+[05:44] movement and the equity indexes are more
+[05:46] stable which favors
+[05:49] scaling in and out with with precision.
+[05:52] I think an easier way to describe that
+[05:53] would be I would increase the size of my
+[05:55] positions if I'm scaling I'm scalping in
+[05:58] equity indexes compared to
+[06:00] cryptocurrency.
+[06:01] >> Okay. I that's that's an absolute
+[06:03] no-brainer. I think that that when it
+[06:06] comes to scalping, you got to realize
+[06:07] that 90
+[06:09] 98% of all scalping is done in the ES. I
+[06:12] mean, some people will scout NASDAQ and
+[06:15] there are a few firms that will, you
+[06:17] know, they they'll make markets in
+[06:18] crypto, so they'll scalp it. There's
+[06:20] also some market makers that will scalp
+[06:21] like you know bonds and and some
+[06:25] customers scalp bonds and crude oil but
+[06:26] for the most part the equity index
+[06:29] indices specifically the ES sometimes
+[06:32] the NASDAQ but specifically the ES are
+[06:34] the primary vehicle
+[06:37] let's go next slide
+[06:40] so the NQ offers the richest daily range
+[06:43] which I don't think that would surprise
+[06:45] anybody um the E the ES is usually the
+[06:48] the ratio ES to NASDAQ is usually
+[06:51] depending on where we are, you can do it
+[06:53] 3:2 or 2:1. The Russell is more like
+[06:56] 5:2. So, if you're if you're just
+[06:58] thinking of what the what the ratios
+[07:00] are, um the Russell ranges are modest
+[07:04] but consistent. I think that's fair. The
+[07:06] ES remains steady near $70 per day. Um
+[07:09] it's 70 handles per day. And yeah, I
+[07:12] think it's a that's an average.
+[07:14] >> Scratch, but you you went back to the
+[07:17] beginning of the year for that average,
+[07:18] right? that has started. Yeah, the last
+[07:19] 12 months,
+[07:19] >> right? Last 12 months because right now
+[07:21] it's a little less than that. Right now
+[07:22] we've been in the like 60 range. Um
+[07:26] let's go next slide.
+[07:31] So volatility peaks in April likely due
+[07:34] to earnings or macro catalysts. I mean
+[07:38] this year it was all the tariff stuff
+[07:40] but after spikes after spikes movements
+[07:43] tend to compress. Yes. and can use this
+[07:46] to adjust trade size and expectations
+[07:48] monthtomonth. Um, yeah, I mean,
+[07:51] sometimes April's a nothing month. This
+[07:53] year it happened to be crazy. Uh, but I
+[07:57] think that's all pretty fair. I mean,
+[07:58] that's exactly
+[07:59] >> just to confirm just to confirm some of
+[08:02] the data here. What you also saw was a
+[08:04] spike in the VIX right in April because
+[08:07] like you said with the DAFFs and all
+[08:08] that jazz and the point is market
+[08:11] movements and volatility implied
+[08:14] volatilities are very closely related.
+[08:17] They're not 100% correlated, but yeah,
+[08:21] you saw just like we saw a spike in the
+[08:23] VIX in April, we also saw a spike in the
+[08:26] scalping ranges
+[08:29] >> and that mean reversion also is shown
+[08:31] here as well with that compression after
+[08:33] that big spike in April.
+[08:34] >> Yep.
+[08:35] >> Let's go next slide.
+[08:39] >> So using scalping zones to structure
+[08:41] trades. So this I'm curious about. So
+[08:43] take us through this.
+[08:44] >> Sure. So let's talk about when the
+[08:45] markets are in a base CA. I mean that
+[08:48] particular day of trading is a normal
+[08:49] choppy day. It's a base case. What I
+[08:51] recommend or a use case for those days
+[08:53] would be to fade extreme movements,
+[08:55] scalp the scalp the reversals and make
+[08:57] your targets tighter.
+[09:00] Anything you want to add to that for
+[09:02] that first case?
+[09:03] >> So the the 50th percentile just means if
+[09:05] the expected move is let's say $60, your
+[09:09] your base case is a $30 handle move. And
+[09:12] yeah, it'd be 50% of the average
+[09:14] >> 50%. So fade extremes. Well, that's what
+[09:16] we are. We're contrarians scalp
+[09:18] reversals. I mean, that's the same
+[09:20] thing. It's the contrarian play and the
+[09:22] tighter targets. I I would totally agree
+[09:24] with that.
+[09:24] >> Great. All right. Then the next case
+[09:25] would be the 75th percentile. So let's
+[09:28] just say we're in a trending market
+[09:30] stretching. Um the use case in that
+[09:32] situation would be to lean into a trend,
+[09:34] use wider targets, and trail your stops.
+[09:37] When you say lean into a trend,
+[09:41] you mean what?
+[09:43] >> What I mean by leaning into a trend is
+[09:47] to
+[09:47] >> Are you fading that trend or are you
+[09:49] buying that trend?
+[09:50] >> I'm buying the trend.
+[09:51] >> Okay. Cuz we would be we would still be
+[09:53] fading the trend.
+[09:55] >> So you'd be so leading into a trend it
+[09:58] you you in other words on a down day
+[10:00] today you'd be shorting this down move.
+[10:02] you would be because this is outside the
+[10:04] range today because today we're in the
+[10:06] extreme case. But right if we're inside
+[10:09] of we're inside of kind of a normal um
+[10:13] move for the day, we're usually on the
+[10:15] contrarian side. That's what we that's
+[10:17] what I think of when I say lean into a
+[10:18] trend. I agree with the wider targets
+[10:21] because if you're if you're moving more,
+[10:22] you want to wide the targets a little
+[10:24] bit.
+[10:24] >> Um the trailing stops for us are mental.
+[10:29] They're not hard stops. They're not
+[10:30] they're not orders that are resting.
+[10:32] They're just mental stops.
+[10:33] >> Sure.
+[10:33] >> Okay.
+[10:34] >> And then yeah, for the 95th percentile
+[10:36] or the extreme market condition or
+[10:38] outlier breakouts, the use case would be
+[10:40] to widen your stops and avoid early
+[10:42] exits.
+[10:44] >> Yeah. And that's where we that's where
+[10:45] we stop fading. So the difference for me
+[10:47] is when you get an extreme move like
+[10:49] today, I'm less likely to fade it
+[10:52] intraday. So for a scalp today, normally
+[10:55] if we were down, let's say 30 handles, I
+[10:57] would get long. If we're down 50
+[11:00] handles, I'd still get long.
+[11:02] >> Okay.
+[11:02] >> But if we're down 100 handles, I'd get
+[11:04] short. You know, that seems kind of
+[11:06] weird, but big moves outside of the
+[11:08] normal range have a very I feel like
+[11:10] they have a smaller chance of intraday
+[11:12] reversal. So, I feel like it's a better
+[11:13] play to be on the same side of the
+[11:15] market than to a reversal.
+[11:17] >> Yeah. Like another way to put it is
+[11:18] anything within the IQR, the
+[11:20] interquartile range. Yes.
+[11:21] >> Fade the scalp
+[11:23] >> or fade fade the reversal.
+[11:25] >> That That's what I would do.
+[11:26] >> Yeah. I don't know about you TV, but
+[11:28] that's my two cents.
+[11:31] Um, so next slide.
+[11:35] What do you got here?
+[11:36] >> All right. So, you have some
+[11:38] implications. I added like a bonus
+[11:40] graphic, a volatility radar. If you look
+[11:42] at the first three on the on the like
+[11:44] top from the beginning to the right or
+[11:46] the first subset of a of a graph, you
+[11:50] have the indices and you can see that
+[11:51] their range is very short. They're small
+[11:53] 1.4, 1.8, and 2.2 respectively. Then you
+[11:56] go to the commodities you have some
+[11:58] inconsistencies but much greater range.
+[12:00] And then when you go to the
+[12:01] cryptocurrency the ETH and the BTC you
+[12:04] can see that those uh that 68 the
+[12:06] standard deviation of the daily range is
+[12:08] much greater. So what are some
+[12:10] implications from this? You can avoid
+[12:12] overtrading by anchoring trades to an
+[12:14] expected range. You can adjust sizing by
+[12:17] symbols. So do not treat the ES and the
+[12:19] BTC the same. And don't chase. Know when
+[12:22] you're in a typical day versus an
+[12:23] outlier day like today.
+[12:26] Well, I think one of the really good
+[12:28] takeaways of this is the don't chase
+[12:30] rule because what I've learned over the
+[12:32] years is if you miss it, you miss it.
+[12:35] Don't chase.
+[12:36] >> Yeah.
+[12:36] >> Um and it's it's easier said than done
+[12:40] to know when you're in a when you're in
+[12:41] a typical day versus an outlier day
+[12:43] because you really don't know. I mean,
+[12:44] today they were they were kind enough
+[12:46] early on to give you an outlier day so
+[12:48] you didn't have to guess, but normally
+[12:51] it's much harder than that. But the
+[12:53] don't chase rule is really important.
+[12:56] >> So the the two things I' I' I'd say
+[12:59] about this, the nice thing about when
+[13:00] you're talking about adjusting size,
+[13:02] what you can do when you're doing this
+[13:04] at home is the size of the contract and
+[13:08] the buying power requirements sort of
+[13:10] even them out so you can see, okay, how
+[13:13] much does it cost? What's the capital
+[13:15] requirement to buy an ES versus buying
+[13:18] BTC, for example?
+[13:21] you factor in the capital requirements
+[13:23] and you factor in the volatility and
+[13:25] that starts to give you a solid number
+[13:27] of okay I'll buy you know
+[13:32] five worth of ES and only one worth of
+[13:35] Bitcoin for example whatever the capital
+[13:38] is so that's the sort of thing that the
+[13:41] the way I would do this is look at the
+[13:43] capital requirements and try to have
+[13:45] them balanced as far as don't chase one
+[13:49] of the things that I like to tell people
+[13:50] is money doesn't care. Your net lick,
+[13:54] your bank account doesn't really care
+[13:56] where what symbol it came from. If if
+[14:00] it's not if you if it's not working out
+[14:02] in ES or Bitcoin or whatever, don't
+[14:05] hesitate to look to another product. We
+[14:07] are product indifferent. Thomas looked
+[14:09] at seven symbols, awesome symbols, very
+[14:13] highly traded. But if they're not
+[14:15] working for you on a particular day,
+[14:17] either don't think about don't worry
+[14:19] about taking a day off or go look at
+[14:21] some other products.
+[14:24] Let's go to the last slide.
+[14:29] So key takeaways, each future symbol has
+[14:32] its own personality. I completely agree
+[14:33] with that. ES titan tame BTC wild and
+[14:36] tame. Now just to be fair, nobody really
+[14:39] trades BTC futures. I I just want to be
+[14:41] really clear about this. they they
+[14:43] they're they're a massive contract. So,
+[14:46] um you know, BTC futures are let's see
+[14:49] right now they're they're they're
+[14:52] $500 and there's $600,000 a contract,
+[14:56] right? It's a lot, right? There's
+[14:58] $600,000 a contract in notional, but you
+[15:00] have to put up like over 40% of that.
+[15:02] So, you're talking about like $250,000
+[15:04] just to trade a Bitcoin future.
+[15:06] >> It's it's $232,000
+[15:09] to buy one of those futures versus
+[15:12] And and just so you know, only 7,000
+[15:14] have traded today. So we don't really
+[15:17] nobody scalps Bitcoin futures. You
+[15:19] wanted scalping products, you'd scalp
+[15:21] ES, you'd scalp ZN, you'd scalp NQ, you
+[15:24] could scalp CL, but those are the if
+[15:27] you're trading futures, MEES, MNQ, that
+[15:29] kind of stuff.
+[15:32] >> 23,000. Bitcoin futures are 10 times the
+[15:36] requirement of ES.
+[15:37] >> Yeah, that's the other problem. Yep. Um
+[15:40] percentiles help define risk adjust risk
+[15:42] adjusted trade expectations.
+[15:44] >> So you can't know if a 95th percentile
+[15:46] day is coming. That's accurate. But when
+[15:49] price is already there, you know the
+[15:51] odds of further extensions are low. I
+[15:54] agree. We're there today. We've already
+[15:55] seen that happen. Understanding the
+[15:57] intraday range uh understanding the
+[16:00] range of intraday moves can benefit
+[16:01] traders who are looking to scalp or fade
+[16:04] large moves. Like I said earlier, we're
+[16:06] we're we will fade half a standard
+[16:09] deviation, 3/4 of a standard deviation,
+[16:11] but once we get outside of a standard
+[16:13] deviation, and you're up till you're 95,
+[16:15] 100%. We're done. We're not fading
+[16:18] anymore. We're not We can still trade
+[16:19] it, but we're not fading.
+[16:21] >> Yeah. And I just think that adding more
+[16:23] context for traders, especially new
+[16:24] traders, and adding more filtering when
+[16:27] you want to execute a trade, I think it
+[16:30] results in better trading and better
+[16:31] results. More filter. I think I think
+[16:34] this is a great presentation and what I
+[16:36] would suggest is go back to the you know
+[16:38] go back to Tasty Live website, go to
+[16:40] this market measure, load up the slides
+[16:43] and have those
+[16:45] box plots and that bar graph that Thomas
+[16:49] created. Just have that up and running.
+[16:51] If you're going to try and if if you
+[16:53] don't have the trading experience to
+[16:55] kind of intuitively understand NASDAQ
+[16:57] versus ES versus Russell versus Bitcoin,
+[17:00] have that data in front of you. It is
+[17:03] very informative.

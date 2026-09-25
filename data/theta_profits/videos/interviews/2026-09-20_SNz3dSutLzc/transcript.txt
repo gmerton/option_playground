@@ -1,0 +1,1760 @@
+[00:00] I think a lot of traders are always
+[00:01] looking for the new thing, they're
+[00:02] looking for the fancy thing and the
+[00:04] shiny thing.
+[00:05] I'm like, I don't know, man. I think we
+[00:06] can get back to basics. Get back to the
+[00:07] basics and we can solve 80 85% of the
+[00:10] puzzle with just that strategy.
+[00:12] >> For years at tastytrade, Dr. Jim Schultz
+[00:16] traded and taught all kinds of
+[00:18] sophisticated options strategies. But,
+[00:21] when asked about what his favorite is,
+[00:24] he comes back to one of the simplest
+[00:26] strategies there is, selling puts.
+[00:29] But, why? Let's find out. Welcome, Dr.
+[00:33] Jim.
+[00:33] >> It's good to be here. I'm very excited
+[00:35] to be on the the Theta Profits YouTube
+[00:37] channel. Thanks for having me.
+[00:39] >> Thanks for joining and let's get
+[00:41] straight to it. Give us the 40-second
+[00:44] version of why just selling puts is your
+[00:47] favorite strategy.
+[00:49] >> 40 seconds? Oh, man, I don't know if I
+[00:51] can do that. Okay.
+[00:52] >> [laughter]
+[00:53] >> Well, so so generally speaking, most
+[00:56] traders and investors in the marketplace
+[00:58] are they're bullish. They're permabulls,
+[01:00] right? So, entering the marketplace with
+[01:02] some bias other than bullish kind of
+[01:05] feels a little bit foreign to them and
+[01:07] it feels a little bit like, I don't know
+[01:09] if I really want to do this. So, a short
+[01:11] put in just 40 seconds elevator pitch,
+[01:14] it's going to give you all the powers of
+[01:17] selling options while also giving you
+[01:19] that bullish bias that you might be used
+[01:21] to having invested in index funds or
+[01:23] your favorite stocks or what have you.
+[01:25] So, you have that perfect marriage of
+[01:28] all the option strategic advantages, but
+[01:31] also that upside bias that you might be
+[01:33] familiar with.
+[01:34] >> And we are of course not only going to
+[01:35] talk about selling puts in general, we
+[01:38] are going to dig into how you do it.
+[01:40] What are your favorite way of selling
+[01:43] puts or how you find your trade, what
+[01:45] DTE you choose, etc. etc. But, first
+[01:49] tell us a little bit about yourself.
+[01:51] >> I grew up rail side of Detroit and I
+[01:54] grew up like if people have seen the
+[01:55] movie 8 Mile with Eminem, I actually
+[01:57] grew up on 10 Mile. So, I grew up like 2
+[01:59] miles away from where a lot of that
+[02:00] movie was shot. My parents are still
+[02:02] They still live in the house I grew up
+[02:04] in. I went to undergraduate college at
+[02:07] Central Michigan University. Fire up
+[02:08] Chips. I went to my PhD program down at
+[02:11] the University of Memphis, and that's
+[02:12] where I met my wife. And I graduated
+[02:14] with a PhD in finance, and I actually
+[02:16] started teaching finance at a small
+[02:18] university in South Carolina. And I
+[02:20] loved it. Like I loved it so much that I
+[02:22] thought that that's what I would do for
+[02:23] my whole career. But then I met Tom in
+[02:26] the fall of 2015, Tom Sosnoff. And in
+[02:29] the fall of 2015 and the tastytrade
+[02:31] network had been It had been on air for
+[02:33] a few years. And I was like, "Wow, man,
+[02:35] what they're doing is revolutionizing
+[02:37] trading. It's revolutionizing like how
+[02:40] retail traders can approach the
+[02:42] marketplace with derivatives." And so, I
+[02:43] got to know Tom. And I was like, "Man, I
+[02:46] can always go back and teach. Like
+[02:47] academia is not going anywhere. So, what
+[02:50] if I join the team? Like what if I came
+[02:52] to Chicago, I joined the team, and I was
+[02:54] part of the network?" And so, we went
+[02:55] back and forth about that. And then I
+[02:57] joined the network in fall of 2015. And
+[03:00] I was on the network up until about a
+[03:02] month ago when I left to build my own
+[03:03] thing, which is Options on Caps. So,
+[03:06] I've been finance the entire my entire
+[03:08] adult life has been devoted to finance.
+[03:11] >> And still on a long sabbatical from
+[03:13] academia.
+[03:14] >> Yeah. Yes, a very long sabbatical. And
+[03:17] it's funny like I I thought I thought,
+[03:20] you know, academia is not going
+[03:21] anywhere.
+[03:22] I don't know, John, with like with
+[03:23] YouTubers like yourself, with YouTubers
+[03:25] like myself, we give them a run for
+[03:27] their money now. Like they're not
+[03:28] necessarily free of competition.
+[03:31] >> When we discussed this interview, you
+[03:33] said that, you know,
+[03:35] you can build a full financial
+[03:36] foundation on just selling puts. How is
+[03:40] that?
+[03:42] >> Yeah. So, again, I've been in the unique
+[03:44] position of being on the tastytrade
+[03:46] network now for, you know, over 10
+[03:47] years. I mean, I just left the network,
+[03:49] but having done all the events that
+[03:50] we've gone around We've gone around the
+[03:52] country, we've even gone to other
+[03:53] countries, and then emailing viewers
+[03:56] that would email in to me like, you
+[03:57] know, every day for my show, blah blah
+[03:58] blah blah blah. I've had thousands and
+[04:00] thousands and thousands of conversations
+[04:03] with traders over the years. And so,
+[04:05] getting getting all that kind of
+[04:07] first-hand,
+[04:08] uh, you know, eyewitness data from all
+[04:11] these conversations, you know, it it
+[04:12] just kept reinforcing the power of short
+[04:15] premium. It just kept reinforcing the
+[04:17] power of selling options. And so, then I
+[04:19] was like, all right, selling options, it
+[04:21] just makes so much sense for a million
+[04:22] different reasons that I'm sure we'll
+[04:23] get into at least to some degree, uh, in
+[04:25] this interview. But it's like, okay, we
+[04:27] have all these things. And then as I
+[04:28] alluded to in the introduction, it's
+[04:30] like, all right, most traders want to
+[04:32] play the market from the long side. Most
+[04:35] traders want to tap into the positive
+[04:37] drift, the positive risk premium,
+[04:39] just this upward trajectory that the
+[04:41] market has enjoyed for 100 years, 125
+[04:44] years, whatever it's been. And so, it's
+[04:46] like, all right, how can we marry these
+[04:48] two things together? The short put just
+[04:50] makes a ton of sense. But then, having
+[04:52] had all these conversations, John, I
+[04:54] cannot tell you how many traders that
+[04:57] I've met and spoken with, conversed
+[04:59] with, their entire portfolio, the
+[05:01] foundation of their portfolio, is
+[05:04] selling puts in SPX, or selling puts in
+[05:07] SPY, or selling puts in the major market
+[05:10] indexes, and that's literally all they
+[05:12] do. Now, that's an oversimplification of
+[05:15] all the management and the scale and the
+[05:17] abilities, so I'm not trying to
+[05:18] obviously water down what they're doing.
+[05:20] But at the base level, when you look at
+[05:22] it, like from a zoomed-out bird's-eye
+[05:24] viewpoint, it's like, man, they're just
+[05:26] selling puts. It's really that powerful.
+[05:29] And so, I think a lot of traders are
+[05:30] always looking for the new thing,
+[05:32] they're looking for the fancy thing and
+[05:33] the shiny thing. I'm like, I don't know,
+[05:35] man, I think we can get back to basics,
+[05:37] get back to the basics, and we can solve
+[05:39] 80 85% of the puzzle with just that
+[05:41] strategy.
+[05:43] >> So,
+[05:44] let's spend a little time on the basics,
+[05:46] then. What is actually selling a put and
+[05:49] how does it make money? Maybe we should
+[05:52] just bring up an example here.
+[05:54] >> Yeah, sure. Yeah, we can bring up an
+[05:55] example. So, like so for example, you
+[05:58] know, if I just bring up here, I'll just
+[05:59] bring up like a market. We'll just go to
+[06:01] SPY. Like we can talk about like my
+[06:03] trade entry mechanics here in a little
+[06:05] bit, but if I go to SPY
+[06:07] and I go into this October example, or I
+[06:09] go into this October expiration, I
+[06:10] should say.
+[06:12] And let's say that I want to sell again,
+[06:15] just kind of picking one at random for
+[06:17] the purposes of this specific question.
+[06:19] Let's say I sell this 760 put. So, if I
+[06:22] sell this 760 put, you're going to see
+[06:24] that this guy's going to expire in 38
+[06:26] days. Right now, I'm collecting a credit
+[06:28] of $9.19.
+[06:31] That's going to be my maximum profit.
+[06:33] This is obviously the maximum profit is
+[06:35] on a per contract basis. The credit
+[06:37] collected is on a per share basis, and
+[06:40] every options contract, of course, is
+[06:41] 100 shares.
+[06:43] And so, right now, I mean, this is a
+[06:44] fairly high probability play because
+[06:46] it's out of the money. So, my pop is
+[06:47] 68%. That's my probability of profit,
+[06:49] the probability that I make at least one
+[06:51] penny at expiration. The probability
+[06:54] that I collect at least 50% of max
+[06:56] profit at any point over the life of the
+[06:59] trade is actually north of 80%. So,
+[07:01] that's really nice.
+[07:03] My delta is obviously going to be a
+[07:04] positive delta. It's right there on the
+[07:06] option chain that we just looked at. So,
+[07:07] I'm positive about 40 delta. My theta
+[07:10] shows me obviously the rate of decay.
+[07:12] This is what your entire channel is
+[07:13] about, so you know that quite well. This
+[07:15] is my rate of decay. So, those are the
+[07:16] basic parameters around the around the
+[07:19] trade bar. Okay. Now, how do I make
+[07:21] money? Well, just as the case with any
+[07:23] short options position, you're going to
+[07:25] make money one of three ways. You're
+[07:27] either going to make money if if I
+[07:29] actually go to the curve view here, I
+[07:30] think it'll be a little bit clearer.
+[07:32] If I look at the curve view and I click
+[07:33] on my analysis tab,
+[07:35] so you can see hopefully you can see
+[07:37] that if SPY rallies, then you're going
+[07:39] to make money.
+[07:40] So, if SPY goes up, this is a bullish
+[07:42] trade, right? I mean, if you do a
+[07:43] bullish trade and the stock goes up,
+[07:44] you're going to make money. If you do a
+[07:45] bearish trade and the stock goes down,
+[07:47] you're going to make money. So, at the
+[07:48] surface level, it is that simple, just
+[07:50] as it is with any other option strategy.
+[07:53] So, number one, it's a positive delta
+[07:54] play. I make money if the index of the
+[07:56] stock goes up. Okay, great. Number two,
+[08:00] because it's a positive data play, which
+[08:01] you can still see on the screen down
+[08:03] here, you can see that I'm going to make
+[08:05] about 16 cents a day from theta. Now,
+[08:08] that's just what it is now, that I would
+[08:10] see changes, it's dynamic as you get
+[08:11] closer to expiration, but it just shows
+[08:14] me the power of selling options again,
+[08:16] that I know that your audience as well
+[08:17] is very familiar with, but just in case
+[08:19] any beginners kind of snuck through the
+[08:21] security guards there, the theta shows
+[08:23] me that this guy is going to decay from
+[08:26] one day to the next. So, now I'm making
+[08:28] money if the market goes up, that's how
+[08:31] I can make money. I'm also making money
+[08:33] just by time going by, just by the
+[08:35] option price decaying as you get closer
+[08:37] and closer to expiration. That's the
+[08:39] second way that I'm going to make money.
+[08:41] And then, the third way that I'm going
+[08:42] to make money, if we go back to the
+[08:43] table view here, it'll be a bit more uh
+[08:45] clear, I think.
+[08:47] One of the variables I have pulled up
+[08:48] here on the tastytrade platform is Vega,
+[08:51] and Vega shows you how the option price
+[08:54] will change when the implied volatility
+[08:56] of that stock or index changes.
+[08:59] And by being by selling an option, you
+[09:02] are short Vega, so you are short
+[09:04] volatility.
+[09:05] So, generally speaking, the three ways
+[09:07] that you make money with every options
+[09:09] position are going to be direction,
+[09:10] which we just talked about, that's
+[09:12] delta. It's going to be time, which we
+[09:14] just talked about, that's theta. And
+[09:15] then, it's going to be volatility, which
+[09:17] we're talking about now, which is Vega.
+[09:18] If I sell an option, then that means I
+[09:21] am short Vega, and if volatility goes
+[09:23] down, or volatility contracts, then I'm
+[09:25] going to make money on that position,
+[09:27] because the lowering of volatility helps
+[09:30] my position by sending the option price
+[09:32] down. Whenever you sell an option, of
+[09:34] course, you want the option price to go
+[09:35] down.
+[09:36] If I was positive Vega, I would want
+[09:38] volatility to expand. I would want the
+[09:39] option price to go up. And so
+[09:41] essentially, I've got three ways to make
+[09:43] money.
+[09:44] Direction, time, and volatility. Now,
+[09:45] there's other ways. There's interest
+[09:47] rates and even dividend pricing kind of
+[09:49] sneaks in there from time to time, but
+[09:50] those are going to be much smaller in
+[09:51] nature, not the primary movers. So, this
+[09:54] is how you make money with a short put.
+[09:56] You're either right directionally, time
+[09:57] passes, or volatility contracts. And
+[09:59] just as a bit of a piggyback off of why
+[10:02] I love the short put so much,
+[10:04] if you get in a situation where the
+[10:06] market is rallying, where the stock or
+[10:08] the index is going up,
+[10:10] this can be so nice because you can get
+[10:12] paid so quickly.
+[10:15] Right? If the market rallies and you get
+[10:17] paid on Delta, that's great. But the
+[10:20] market is rallying and time is going by,
+[10:22] so you're getting paid on Theta, that's
+[10:24] great. Okay, the market is rallying,
+[10:26] prices are going higher, what's
+[10:28] typically happening to volatility when
+[10:30] that's happening? It's going down. Well,
+[10:32] again, remember, this is a short put, so
+[10:34] I'm short Vega, I want volatility to go
+[10:36] down. Volatility is going down, so I'm
+[10:39] getting paid on that as well. So, in the
+[10:41] event that you're right, you can get
+[10:42] paid really quickly. Of course, as I
+[10:44] always like to say on my show, for every
+[10:46] gimme, there's a gotcha. So, the gotcha
+[10:49] is when you're wrong and it goes down,
+[10:51] now you're getting hit on Delta, you're
+[10:53] getting hit on Vega, and we can talk
+[10:54] about that later when we talk about
+[10:56] management, but you have to understand
+[10:58] what you're signing up for, and I just
+[11:00] like the upside so much because it has
+[11:02] so many benefits.
+[11:04] >> And we will for sure also get into the
+[11:07] risks.
+[11:08] But before we get into the details of
+[11:11] how you trade selling puts specifically,
+[11:16] I'd like to hear what what you try to
+[11:18] achieve by your way of selling puts.
+[11:21] >> I guess what I'm trying to do, like what
+[11:23] the short put
+[11:24] it just it fits into the marketplace in
+[11:27] in so many different ways because of the
+[11:29] upside bias of the overall market,
+[11:31] because of the power of short premium.
+[11:33] But there's actually a third element
+[11:35] that I think can be really helpful to
+[11:37] tap into. So if I look at SPY for
+[11:40] example, and this is again why I think
+[11:42] short puts in the market indexes can be
+[11:45] such a powerful foundation. And this is
+[11:47] what I'm really trying to take advantage
+[11:49] of when I sell puts in the market,
+[11:51] specifically in the indexes. Now I'll
+[11:52] sell puts in individual stocks, too, but
+[11:54] specifically with the indexes, which I
+[11:56] think can be a great starting point for
+[11:58] just about anybody. If you look at like
+[12:01] if I go back to October,
+[12:03] let me actually delete Let me delete
+[12:04] this order just so we can look a bit
+[12:06] more closely at the chain. So you can
+[12:08] see the option chain for SPY right here.
+[12:11] You see all the strikes right there in
+[12:12] the center. I'm sure a lot of your
+[12:13] viewers are familiar with the tastytrade
+[12:15] platform, but I'm sure a lot of
+[12:16] platforms are set up very similarly. If
+[12:18] I change my Vega to implied volatility,
+[12:22] so now I'm actually looking at the
+[12:24] implied volatility
+[12:26] for each individual strike.
+[12:28] And what you'll notice Again, just look
+[12:30] at the relationship between the
+[12:33] at-the-money strike of 767 with SPY
+[12:36] right around 767. My at-the-money strike
+[12:38] has an implied volatility of 12 or just
+[12:40] over 12. As you move further out of the
+[12:43] money, so on tastytrade that would be
+[12:45] moving up on the screen, down in strike,
+[12:48] you can see the implied volatility is
+[12:50] climbing as you move up on the screen
+[12:54] and down in strikes. This is the
+[12:56] volatility skew that has been studied,
+[12:59] it has been researched. It was a
+[13:02] consequence of the 1987
+[13:04] market crash with Black Monday. That
+[13:07] That's when volatility skew became a
+[13:08] thing because that's when, you know, the
+[13:10] market kind of realized, "Wow, these
+[13:12] downside moves can be a lot more
+[13:13] significant and potent than the upside
+[13:15] moves. And so maybe we should start
+[13:17] pricing options differently rather than
+[13:19] being just completely symmetric on both
+[13:21] sides of where the stock or the index
+[13:23] currently sits." And so because you have
+[13:26] this volatility skew, you can get paid a
+[13:29] king's ransom for selling these
+[13:32] out-of-the-money puts. And I just
+[13:34] really, really like that in terms of
+[13:36] what I'm personally trying to tap into
+[13:39] with the short put. So again, you've got
+[13:41] the positive drift, you've got all the
+[13:42] power of short premium, but this
+[13:44] strategy specifically taps into the
+[13:47] volatility skew itself that's on the
+[13:50] option chain by selling these strikes
+[13:52] with really juicy, rich implied
+[13:55] volatility, which can be really nice
+[13:56] from a profit potential standpoint.
+[13:58] >> So, let's dig into how you trade it. And
+[14:02] let's start with the entry mechanics.
+[14:05] And my first question is how do you
+[14:08] choose your underlying? What are your
+[14:10] criteria? What is your process to find
+[14:13] which underlying are you going to sell
+[14:15] puts on?
+[14:16] >> Yeah. Yeah, that's a great question. So
+[14:18] if we go right back into the platform,
+[14:19] there's two very, very simple ways to do
+[14:22] it. So on tastytrade, if you click on
+[14:24] the small hamburger menu right here, it
+[14:26] brings up the potential you have a few
+[14:27] things you could choose from. I
+[14:29] typically like to start on the watch
+[14:30] list. And the two watch lists that I
+[14:33] like to use are Tom's watch list. So
+[14:35] this is Tom Sosnoff again. Maybe we'll
+[14:37] get a Dr. Jim watch list at some point
+[14:39] in the future, but it's not there yet.
+[14:41] So Tom's watch list and then the tasty
+[14:43] default watch list is another really
+[14:45] good one. Now there's a bunch of them
+[14:47] people can play around, you can check
+[14:48] out other things, what have you, but I
+[14:50] like these two because essentially by
+[14:53] being on this watch list, all the
+[14:55] underlying stocks that you see on these
+[14:57] watch lists, they're effectively going
+[14:59] to be pre-screened for activity. They're
+[15:03] going to be pre-screened for volume.
+[15:05] Like these are the same stocks that
+[15:07] everybody else is trading. So my
+[15:09] personal approach is I'm not interested
+[15:12] in finding some stock on a Motley Fool
+[15:15] website or what have you that nobody's
+[15:17] looked at ever and nobody's even heard
+[15:19] of it. That's not the game that I want
+[15:20] to play. I'm not going for a 10-bagger.
+[15:22] I'm not going for a 20-bagger. I'm not
+[15:24] doing any any of those things. I want to
+[15:25] trade the same stocks everyone else is
+[15:28] trading because I want super high
+[15:30] liquidity. I want to I want to be
+[15:32] trading tight bid-ask spread
+[15:33] differentials with fair markets, easy to
+[15:36] get in, and it's easy to get out. So, by
+[15:39] sticking with the tastytrade and Tom
+[15:41] Sosnoff's list, that puts me in that
+[15:43] sandbox right out of the gates.
+[15:45] >> But how then do you pick the stocks from
+[15:47] the watch list? And I guess I assume for
+[15:50] those of us who are not on tastytrade,
+[15:53] the the important point here is to make
+[15:55] a watch list of highly liquid stocks
+[15:58] with a solid volume. But how do you pick
+[16:01] from your watch list which one you will
+[16:03] do the trade on right now?
+[16:05] >> Exactly. And I think that's a great
+[16:07] idea, by the way. Yes, high volume,
+[16:09] tight bid-ask spread differentials, and
+[16:11] create your own watch list. And I would
+[16:12] just start with the S&P 500. It's a
+[16:14] pretty pretty good place to start. Maybe
+[16:16] the S&P 100. So, now that I'm on my
+[16:18] watch list, so, being a premium seller,
+[16:21] right? Trading from the short side.
+[16:22] We're focusing on the short put today,
+[16:24] but that of course is not the only
+[16:25] strategy that I use. But 80 to 90 to 95%
+[16:28] of the strategies that I do employ on a
+[16:30] given day are going to be short premium
+[16:32] strategies. Well, being a premium
+[16:34] seller, what we found on the tasty
+[16:36] network for many many many years, and
+[16:38] I'm continuing on with options on capped
+[16:40] and my own stuff, is selling premium
+[16:42] when volatility is elevated, when
+[16:44] volatility is higher, gives you more
+[16:46] statistical advantages than just selling
+[16:48] premium all the time or anytime. Selling
+[16:51] premium is so powerful that it's still
+[16:53] very advantageous to essentially sell
+[16:56] anytime,
+[16:57] but it can be that much more effective
+[16:59] if we wait for volatility to be elevated
+[17:02] before we sell premium. So, the metric
+[17:04] that I like to use, which is right here,
+[17:06] it's on the the drop-down menu, this IVR
+[17:10] metric. So, this stands for implied
+[17:13] volatility rank. And what IVR measures
+[17:16] is it is essentially showing you
+[17:18] where is implied volatility right now
+[17:22] relative to where it's been over the
+[17:23] previous 12 months. And so it is showing
+[17:26] me kind of like a distribution, you
+[17:28] know, what what percentile is implied
+[17:31] volatility sitting in relative to
+[17:33] whatever range it's been in over the
+[17:35] previous 12 months. So for example,
+[17:37] right now I have IVR sorted from high to
+[17:39] low.
+[17:40] Which is typically how I look at it
+[17:42] because I'm wanting to sell high
+[17:44] volatility. So if I look at EWZ for
+[17:46] example, this of course is the Brazilian
+[17:49] ETF, you can see the implied volatility
+[17:51] rank of EWZ is 90.2.
+[17:55] So what that is telling me that is
+[17:57] telling me that the implied volatility
+[17:59] for EWZ right now is basically in the
+[18:03] 90th percentile of all of its implied
+[18:06] volatilities over the previous 12
+[18:07] months. So if I think and just mentally
+[18:09] visualize a distribution, right now it's
+[18:12] sitting on the right hand tail of that
+[18:14] distribution. So if I'm looking to sell
+[18:16] high volatility, which I am looking to
+[18:17] do, this could potentially be a great
+[18:20] candidate for me to sell volatility. Now
+[18:22] again, I mean it's a Brazilian index,
+[18:23] these markets aren't necessarily
+[18:25] amazing, so I may pass when I'm looking
+[18:27] at other criteria, but just to kind of
+[18:29] describe where I begin the process, it
+[18:31] would be looking at implied volatility
+[18:34] rank. And so if I go down the list just
+[18:35] a couple of stocks here, you see Apple
+[18:37] is up here too.
+[18:39] So Apple has an implied volatility rank
+[18:40] of 54.4. So that is also relatively
+[18:44] high. So obviously Apple, everybody
+[18:46] knows Apple, I'm sure 100% of your
+[18:48] viewers are trading Apple day in day
+[18:50] out, week in week out, what have you.
+[18:52] This can be a really really great thing
+[18:54] to look at when it comes to trying to
+[18:55] find an opportunity in Apple when it
+[18:58] comes to high volatility versus low
+[19:00] volatility. So 54.4 is also really good.
+[19:04] So naturally, if I was watching this
+[19:07] interview or listening to this
+[19:08] interview, the follow-up question that I
+[19:09] would have is, all right Jim, is there a
+[19:11] cutoff point?
+[19:13] Like, is there a point where you
+[19:14] determine what's high versus what's low?
+[19:17] And this is again, I got to give a huge
+[19:19] shout out to the tastytrade. I mean,
+[19:20] they've just done amazing work over the
+[19:22] years and continue to do amazing work.
+[19:24] Right around 30.
+[19:26] 30 is actually a really good cutoff
+[19:28] point for high versus low volatility.
+[19:31] So, anything over 30, I'm very
+[19:33] interested in selling premium there.
+[19:35] Anything under 30, I'm a little bit less
+[19:37] interested. And then, you know, things
+[19:39] like single digits or in the teens, I'm
+[19:41] definitely a lot less interested. I'll
+[19:43] probably wait for something else, for a
+[19:44] different opportunity. But within the
+[19:46] watch list themselves, IVR is going to
+[19:49] be the thing I look at.
+[19:50] >> So, high liquidity, a high IV, are there
+[19:54] other important criteria you would like
+[19:57] to mention when you choose your
+[19:58] underlying?
+[19:59] >> So, those [clears throat] once those two
+[20:01] checks are in place,
+[20:03] you know, from there, I mean, I I
+[20:04] actually genuinely feel like the stocks
+[20:06] are interchangeable.
+[20:08] Like, I don't really I don't really care
+[20:09] about what Apple might be doing or not
+[20:11] doing. I don't really care about what I
+[20:13] mean, going on down the list, like what
+[20:14] Meta's doing or not doing, what Goldman
+[20:17] Sachs is doing or not doing. And so,
+[20:19] those are going to be the two that you
+[20:20] know, the two primary checks. And then,
+[20:22] you I mean, going down the list now,
+[20:24] obviously, the stock price is going to
+[20:25] play a big role. Simply be not because
+[20:28] it's high or low be or because I think I
+[20:29] know where it's going next cuz I I
+[20:31] don't. And I'm not sure anybody does, to
+[20:33] be perfectly honest with you. But it
+[20:35] does tell me a lot about, okay, what
+[20:37] type of position I might put on.
+[20:39] For instance, if I do something in Apple
+[20:41] at $300,
+[20:43] if I'm going to do something naked in
+[20:44] there, like a short put, I'm going to
+[20:46] have to be ready to put up, you know,
+[20:47] probably five or six thousand dollars in
+[20:49] margin. So, I want to make sure that I
+[20:51] have the account size to handle that. I
+[20:52] want to make sure I understand what I'm
+[20:54] getting myself into. And so, when we're
+[20:55] talking about something like a short
+[20:57] put, that's obviously very relevant. But
+[20:59] if I did like something in GDX, for
+[21:01] example, which is right down that that's
+[21:03] the next ticker down on the list, this
+[21:05] is only a $100 stock now. So, now I can
+[21:08] probably do whatever I want in here
+[21:09] that's, you know, undefined risk and
+[21:11] defined risk. I can sell puts, no
+[21:13] problem. The margin requirements are
+[21:15] going to be a lot less simply because
+[21:17] the basis on the underlying is a lot
+[21:19] less.
+[21:19] >> So we have chosen our underlying or you
+[21:22] have
+[21:22] taken us through the process of choosing
+[21:24] the underlying. Now you need to decide
+[21:27] what type of
+[21:29] put will you sell? You know, what DTE
+[21:31] will you sell and what delta for
+[21:34] instance and why? What is your process
+[21:37] there?
+[21:38] >> Yep, that's a great question. So let's
+[21:39] go into GDX to actually look at this
+[21:42] because again, I think this is going to
+[21:43] fit a lot of different account sizes. So
+[21:45] if I look at GDX again, I mean the IVR
+[21:48] 52.8 that looks really good. And so now
+[21:50] I go to the trade page and so now I'm
+[21:52] trying to figure out A DTE, that's
+[21:55] typically the first choice we have to
+[21:56] make. And then B, I already have my
+[21:58] strategy selection. I know it I know
+[22:00] it's going to be a short put.
+[22:01] DTE and then strike selection with the
+[22:04] kind of looking at deltas and things of
+[22:06] that nature. So DTE
+[22:08] 30 to 60 days is typically where I like
+[22:11] to live. Anywhere between 30 and 60
+[22:13] days, you're in really good spot on the
+[22:15] out of the money decay curve where that
+[22:17] decay is starting to pick up steam. If
+[22:20] you want something that's a bit more
+[22:21] conservative, I would go further out in
+[22:22] time, closer to 60. If you want
+[22:25] something that's a little bit more
+[22:25] aggressive that's going to move a little
+[22:27] bit faster, but you're okay with
+[22:29] potentially, you know, some adverse
+[22:31] moves against you that could be more
+[22:32] problematic, then choose something a
+[22:34] little bit lower. I don't typically like
+[22:36] anything like super short term for this
+[22:39] specific purpose. Like I know zero DTE
+[22:42] is a huge thing right now. Obviously
+[22:43] it's wildly popular. For this specific
+[22:46] use case, I don't think it's going to be
+[22:48] a great fit because you want to have
+[22:49] time for the decay to build up in the
+[22:52] position. You know, and if you do
+[22:54] something that's zero DTE or one DTE or
+[22:56] even seven DTE, there's just not enough
+[22:58] time for the decay to build up and
+[23:00] you're not really getting paid or
+[23:02] compensated for the risk that you're
+[23:03] taking, in my humble opinion.
+[23:05] >> So, you are a tasty veteran after all.
+[23:09] >> Hey, I mean, we've done amazing
+[23:11] research, man. I mean, they've done some
+[23:12] incredible research, and so I think 30
+[23:14] to 60 is just a sweet spot, and so I
+[23:16] really, really like it. That's correct.
+[23:18] And so, I I don't typically choose the
+[23:20] weekly options unless there's a good
+[23:21] reason to do that, like if there's an
+[23:23] earnings event or FOMC or something,
+[23:25] then I might do a weekly, but I'm
+[23:26] typically living in the monthlies. So,
+[23:28] for my purposes here, I'll go to October
+[23:30] with 38 days to go. I open that guy up.
+[23:33] And you can see it brings up the entire
+[23:35] option chain. So, again, we're going to
+[23:37] be living in this quadrant right up here
+[23:39] because I'm going to be selling puts,
+[23:40] and they're going to be out of the money
+[23:41] puts. Maybe you can have me on again,
+[23:43] and we can talk about some super special
+[23:44] cases of selling in the money puts and
+[23:47] and things like that. But, I'm going to
+[23:48] live up here.
+[23:50] And so, now I need to decide what delta
+[23:52] do I want to choose.
+[23:54] Well, I personally like to live between
+[23:58] uh I'm usually around 30 to 35 delta,
+[24:02] but I might go as low as 25, and I might
+[24:04] go as high as 45.
+[24:06] So, why do I like 30 to 35 as my
+[24:09] baseline? Well, like for example, if I
+[24:11] click on this 34 delta short put in GDX,
+[24:15] which is a 95 strike,
+[24:17] you're going to see right away, and
+[24:19] again, just note that the buying power
+[24:20] here is very, very modest. That's only
+[24:23] $1,500, so I'm that's going to fit a lot
+[24:25] of different account sizes, which is
+[24:27] obviously really nice.
+[24:28] But, the thing I like about the 30 to 35
+[24:31] delta is it's a really nice balance
+[24:34] between credit collected and probability
+[24:36] of profit because it's always going to
+[24:38] be a give and take, right? It's always
+[24:40] going to be a give me and a got you,
+[24:42] right? If you want more credit
+[24:44] collected, you have to be willing to
+[24:45] accept lower probability. But, if you
+[24:47] really want higher probability, you have
+[24:49] to be willing to accept lower credit
+[24:50] collected.
+[24:51] >> So, how much credit are you getting here
+[24:53] now on 38 days at your 30 35 with a
+[24:57] delta.
+[24:58] >> Yeah, I'm getting about $3.40.
+[25:01] And so $3.40 per share, $340 per
+[25:04] contract. And if you look at that
+[25:07] like one of the terms we used to use on
+[25:08] Tasty was a the premium efficiency of
+[25:12] the trade. So if you look at the premium
+[25:14] efficiency of the trade, that's not too
+[25:16] bad. I mean, you're getting 20% in terms
+[25:18] of the premium efficiency. I would say I
+[25:20] typically like to make sure it's at
+[25:21] least at 10%. 15 to 20 is a lot more
+[25:24] favorable because we want to think about
+[25:26] how is my capital being used? Like we
+[25:28] want to think about you know how much
+[25:29] bang for the buck am I getting on this
+[25:31] trade?
+[25:32] And so right here, $3.40 or $340 for the
+[25:35] contract on about $1,500 in buying
+[25:38] power.
+[25:39] And so 35 delta is kind of my baseline.
+[25:42] When would I go up to a 45 delta? So
+[25:45] this would be like the 99, basically the
+[25:47] at the money strike.
+[25:49] Well, this might be a situation where I
+[25:51] want to be more directional in that
+[25:53] stock.
+[25:54] Maybe I have a hunch about it. Maybe I
+[25:56] have a feeling about the stock. Maybe I
+[25:58] want more positive delta for my overall
+[26:00] portfolio. That happens all the time.
+[26:02] Where I'm looking at my total portfolio
+[26:04] metrics and I'm like, "Man, I need some
+[26:06] more positive delta." Because I'm too
+[26:07] short, because I want to be more long,
+[26:09] whatever the reason might be. So now I
+[26:11] might be looking for higher deltas at
+[26:13] the individual position level because it
+[26:15] will deliver that for me. So that might
+[26:17] be one of the reasons why I might
+[26:19] deviate away from my 35 delta baseline.
+[26:22] Now, what about
+[26:24] the 25 delta or maybe going a bit lower?
+[26:27] Well, this might be the case if I do
+[26:29] want to be more conservative. So now
+[26:31] maybe it has an event coming up. That
+[26:33] could be an earnings event or could be
+[26:35] some market wide catalyst like I mean,
+[26:37] obviously FOMC's
+[26:39] again one of the best candidates to kind
+[26:40] of explain that principle. Could be the
+[26:42] jobs number, could be whatever it is.
+[26:44] Where I want to be a bit more
+[26:45] conservative, but I still want to get
+[26:46] paid. Like I still want to make money.
+[26:48] So you can see right here this 24 delta,
+[26:51] John. You can see it's about a $2.14
+[26:54] credit.
+[26:55] And so again, premium efficiency still
+[26:57] looks pretty good. My probability is
+[26:58] obviously jumped up to 76%.
+[27:01] So that's really good. Uh but generally
+[27:04] between 25 and 45 most of the time. And
+[27:07] with the baseline around 35. One thing I
+[27:09] do want to say, and I know that this is
+[27:11] going to twist up some knickers out
+[27:12] there, so I definitely want to say it.
+[27:14] One thing I don't like doing
+[27:16] is going down to like a super low delta.
+[27:20] Like this nine delta. Right? This is a
+[27:22] very popular strategy that's online. And
+[27:25] every time I see it, John, it just ah
+[27:27] man, it makes my blood boil. Because
+[27:29] yes, it's a super high probability
+[27:31] trade. Like yes, most of the time it's
+[27:33] going to work. Yes, it can it can bring
+[27:35] in that extra paycheck. It can sell
+[27:37] options for income. All that other
+[27:39] rigmarole that you just see all over the
+[27:40] all over the internet. The problem is
+[27:43] when it doesn't work, man, it can put
+[27:45] you in the hurt locker really fast.
+[27:48] Really, really fast. Because when the
+[27:50] market starts moving down towards that
+[27:52] strike, all of a sudden, you're getting
+[27:55] hit on all these different effects.
+[27:57] You're getting hit on delta. You're
+[27:58] getting hit on Vega. You're getting hit
+[28:00] on Vomma, which is a second-level Greek
+[28:02] that a lot of people don't really think
+[28:04] about until it's too late. And so I just
+[28:06] wanted to mention that really quickly
+[28:07] since we're on the topic of delta
+[28:08] selection. That might be a its own
+[28:10] episode another time. But don't love the
+[28:13] low delta options cuz I don't feel like
+[28:14] the risk justifies the return.
+[28:16] >> But are you being more hit with a low
+[28:18] delta than on the the higher delta you
+[28:20] are selling on? Explain that very
+[28:22] quickly.
+[28:23] >> Yeah, abs- you you are. And that And
+[28:24] that's what kind of surprises some
+[28:26] people. Because when you Because when If
+[28:28] I sell like a 20 If I sell my 30 delta,
+[28:30] let's say. So let me let me let me
+[28:32] scroll this back down. If I sell this 30
+[28:34] delta,
+[28:35] right? So obviously, if the market goes
+[28:38] down, I'm going to lose 35 cents on the
+[28:40] on the dollar from just the delta
+[28:42] effect. But it's the other Greeks,
+[28:45] namely the second-level Greeks like
+[28:47] Vomma for to to get more specific with
+[28:49] this, that is much much lower and it's
+[28:51] much more contained. And so, it's a
+[28:54] situation where I'm going to get hit on
+[28:56] Delta, but I have a much bigger padding
+[28:58] to absorb the hit, number one, and then
+[29:00] number two, all the other,
+[29:03] you know, kind of ancillary Greeks are
+[29:05] more controlled and more contained. When
+[29:07] you go down to like a six Delta or like
+[29:09] a four Delta or like a nine Delta,
+[29:12] right? You have no padding to absorb
+[29:15] that move because you only collected 60
+[29:17] cents, 80 cents, you know, 40 cents,
+[29:19] whatever, and then all of a sudden these
+[29:21] second and third level Greeks begin
+[29:22] spiraling out of control. And so, all of
+[29:25] a sudden you're like, how am I losing so
+[29:26] much money? My Delta was only nine. But
+[29:29] the market dropped, you know, 1%, 2% in
+[29:31] the day, whatever. Why am I down so much
+[29:34] money? It doesn't make any sense. My
+[29:35] option is still out of the money. This
+[29:37] is what surprises a lot of people. It's
+[29:39] because all those other Greeks took hold
+[29:42] of that option and they're causing the
+[29:45] option price to skyrocket. And so,
+[29:47] that's the reason why. And also,
+[29:49] obviously, I mean, you probably see this
+[29:51] a lot yourself. What are most traders
+[29:53] doing with those eight Delta, nine Delta
+[29:56] options? They're not selling one.
+[29:58] They're selling multiple because they
+[30:00] can, because they get the buying power
+[30:02] relief. And so, you know, on a
+[30:03] one-for-one basis, is it a big
+[30:05] difference? I still think it's fairly
+[30:06] significant, but it's not as big of a
+[30:08] problem. But like if I go to, you know,
+[30:10] like you can see my 35 Delta, my buying
+[30:13] power is 1,500 bucks, okay? Let me go
+[30:15] back down to my nine Delta.
+[30:18] Now my buying power is only $800.
+[30:21] Right? So, now all of a sudden, where
+[30:22] does everybody's mind go? Myself
+[30:24] included. It's like, man, I'll just do
+[30:25] two to make up for the difference.
+[30:27] Right? Well, that's where you can run
+[30:28] into some real big problems.
+[30:30] >> Let's move to the exit mechanics. You
+[30:32] have entered your trade. You have
+[30:35] found the perfect underlying. It's
+[30:38] liquid, has high IV. You have sold your
+[30:42] 35
+[30:44] delta put
+[30:46] 30 to 60 days out choosing a monthly
+[30:50] expiration. Now,
+[30:52] how are you going to get out of this
+[30:54] trade? What are your exit mechanics?
+[30:56] What are your rules for taking profit
+[30:58] and taking a loss?
+[31:00] >> Yeah, so so a couple different ways
+[31:02] obviously. Let's go to the profit side
+[31:03] cuz it's very simple and
+[31:04] straightforward.
+[31:05] Generally speaking, 50% of max profit is
+[31:08] where I like to live. I just think it
+[31:09] makes a ton of sense because, you know,
+[31:12] going for the full profit doesn't really
+[31:13] make a lot of sense to me because then
+[31:15] you're holding on the trade until the
+[31:16] very end. And the very end of the
+[31:18] expiration cycle, that's where a lot of
+[31:19] the risk becomes concentrated with
+[31:21] gammas expanding, directional risk
+[31:23] expanding. It just doesn't make a lot of
+[31:25] sense to me. I like the 50% marker
+[31:27] because it's the perfect balance between
+[31:30] like if you think about a credit that
+[31:31] you collect, right? If I collect $3 on a
+[31:34] trade, let's say,
+[31:35] and I'm up a $1.50.
+[31:37] Now, just within the credit collected
+[31:40] itself, my risk return is perfectly in
+[31:42] balance in terms of the profit that I've
+[31:45] captured and the potential profit that's
+[31:47] left. Once I go beyond that point, now
+[31:50] all of a sudden it begins tilting in an
+[31:52] unfavorable way to where now I have more
+[31:55] captured profit at risk and the
+[31:57] potential profits are deteriorating
+[31:59] relative to what I've already captured.
+[32:02] So, from a profit potential standpoint,
+[32:04] I like 50% of max profit.
+[32:06] When would I deviate from that?
+[32:08] I actually don't deviate from that too
+[32:10] often.
+[32:11] The one exception to that rule would be
+[32:14] if I'm in a trade for like let's say I
+[32:16] put on a trade with 40 days to go
+[32:18] and I'm in the trade for 3 days and I'm
+[32:20] already up 30%.
+[32:22] Okay, that makes some sense. That makes
+[32:24] some just logical intuitive sense. You
+[32:26] take the risk off the table. You're
+[32:28] already more than halfway to your profit
+[32:29] objective. Again, just use kind of
+[32:31] trader common sense. Where you need to
+[32:33] be careful doing that though, and I've
+[32:35] seen this happen a ton. Again, this is
+[32:37] where all the conversations have been so
+[32:38] advantageous for me.
+[32:40] You got to be really careful because,
+[32:42] you know, as a premium seller, the game
+[32:44] that we're playing is obviously we're
+[32:46] risking more to make less in exchange
+[32:48] for higher probabilities. That's the
+[32:50] price of admission. That's what we all
+[32:52] do every single day. Okay, that's fine.
+[32:54] The problem is if I'm going for 50% of
+[32:56] max max profit, that's fine.
+[32:59] But if I then end up taking my 50% and
+[33:02] turning them into 42% and turning those
+[33:04] into 37% and turning those into 31%.
+[33:07] That's it's a slippery slope, obviously,
+[33:09] right? And so I really I'm really
+[33:11] careful with taking my winners off too
+[33:12] early because I need to be aware that if
+[33:15] I take my winners off too early,
+[33:17] I'm going to need even more winners on
+[33:19] the backside to make that make sense. I
+[33:22] already need a lot of winners to make it
+[33:23] work in the first place because I'm
+[33:25] risking more to make less. But if I
+[33:27] start even taking my profits even
+[33:29] earlier, you just have to be aware of
+[33:31] what you're signing up for. You're going
+[33:32] to need even more winners.
+[33:34] So from a profit standpoint, that's how
+[33:36] I look at it.
+[33:37] >> Let's say you're not
+[33:38] reaching that 50% level, but the trade
+[33:41] is, you know, moving along. It's not in
+[33:43] negative territory. Will you take it off
+[33:45] at some stage no matter what?
+[33:48] >> Yeah, typically when you start getting
+[33:49] around I'm going to say somewhere
+[33:51] between 14 and 21 days to go in the
+[33:53] expiration cycle. And so it's a fairly
+[33:55] known phenomenon that near expiration,
+[33:57] the gamma does begin to naturally
+[33:59] increase.
+[34:00] And so it doesn't really start to get
+[34:02] super gnarly until maybe the final week
+[34:05] or so. So I say, you know, 21's a good
+[34:07] marker. I personally think 14 is also a
+[34:09] good marker. And so anywhere between 21
+[34:12] to 14, you know, if I'm not at my profit
+[34:15] target yet, but I maybe I have a little
+[34:17] splash of green on the screen and I'm at
+[34:19] 19 days to go or 18 days to go and I'm
+[34:21] like, all right, like maybe I take the
+[34:23] trade off now. That makes a lot of sense
+[34:24] because you are getting closer to
+[34:26] expiration.
+[34:27] The other Greeks such as gamma are going
+[34:29] to begin to increase in an unfavorable
+[34:31] way.
+[34:32] And so taking the trade off at 14 to 21
+[34:34] or even if you don't want to take it
+[34:36] off, you can always just roll it to the
+[34:38] next cycle, too. That's a very common
+[34:39] adjustment tactic that we would do from
+[34:41] a profit standpoint.
+[34:42] >> So far we have talked about the trade
+[34:45] going in the direction it should, but um
+[34:48] sometimes it doesn't move with us. Uh
+[34:51] what are your rules for accepting a
+[34:53] loss? Do you use a stop loss and when
+[34:56] will you take a loss?
+[34:58] >> I don't know, John. My trades always
+[34:59] work. You mean you have trades that
+[35:00] don't work?
+[35:01] >> I do. I do actually.
+[35:03] >> [laughter]
+[35:04] >> Well, I'm really sorry to hear that. Uh
+[35:06] no, I'm kidding, of course. Uh
+[35:08] >> [laughter]
+[35:09] >> Every trader has trades that don't work.
+[35:10] It happens to all of us. Anyone who's
+[35:12] been trading longer than a day has had
+[35:14] trades that don't work. Great question.
+[35:16] So, I think there's two different ways
+[35:17] that you can approach this with one huge
+[35:20] bonus that the short put has, and this
+[35:22] is one of the reasons why I absolutely
+[35:25] love it.
+[35:26] So, number one, there's two different
+[35:28] ways you can do it.
+[35:29] My preferred way, which sounds a little
+[35:31] crazy, but it's the way I like to do it.
+[35:34] I don't have a stop loss and I don't
+[35:36] have a predetermined exit point. So, I
+[35:38] treat it on a case-by-case basis and a
+[35:40] day-by-day basis. I like to evaluate it
+[35:43] within the context of my overall
+[35:45] portfolio risk. And again, because I'm
+[35:48] trading the same stocks that everybody
+[35:50] else is trading, the likelihood that I
+[35:53] with a short put specifically, we're not
+[35:54] talking about short calls, with a short
+[35:56] put specifically, the likelihood that
+[35:58] I'll run into something that's really
+[36:00] difficult to handle is fairly low.
+[36:03] Especially if you're focusing on the
+[36:04] indexes. Now, you get into some
+[36:06] individual names, obviously that
+[36:08] likelihood increases rather
+[36:09] significantly sometimes, but you get
+[36:11] paid for that with higher premiums. And
+[36:13] so, again, that sounds like maybe a
+[36:14] secondary or tertiary uh conversation we
+[36:17] can have another time. But no
+[36:19] predetermined exit point, case-by-case
+[36:21] basis, I think that can be a very
+[36:24] powerful way to treat your short puts.
+[36:26] But for a lot of traders, that's going
+[36:28] to make them nervous, and that's going
+[36:30] to make them anxious, and rightfully so.
+[36:32] So, I think, you know, managing
+[36:34] somewhere between 2x and 3x of credit
+[36:36] received can make a lot of sense. So,
+[36:39] for instance, if I sell a put for $2,
+[36:42] if I want to manage that guy, no matter
+[36:44] what happens, at a 2x of credit received
+[36:46] like stop loss, then I'm buying it back
+[36:48] for $6. So, there'll be a $4 loss. If I
+[36:51] want to do a 3x of credit received, that
+[36:53] would be buying it back for $8. So, that
+[36:55] would be a $6 loss.
+[36:57] But, here is why I really One more I
+[37:00] want to make sure I say this cuz this is
+[37:01] really important.
+[37:03] Here is why I love the short puts so
+[37:06] much,
+[37:07] especially on
+[37:10] the same stocks that everybody else is
+[37:11] trading.
+[37:12] If it gets really bad,
+[37:14] if things get crazy, and the market
+[37:17] takes a dive, and blah blah blah blah
+[37:19] blah, whatever else,
+[37:20] never forget,
+[37:22] if it comes down to it, you can always
+[37:25] just take the stock. You can just take
+[37:28] the stock, and you can be a long-term
+[37:30] investor now, which is kind of a silly
+[37:32] thing to say, but not really, because
+[37:34] it's like, man, you know, if I'm selling
+[37:35] puts in like Apple, or I'm selling puts
+[37:38] in like Netflix, or hey, heaven forbid
+[37:41] you're selling puts in Nike, they're not
+[37:42] doing too well these days. But, even
+[37:44] still, it's like it's Nike. Am I really
+[37:46] super concerned about Nike? I don't
+[37:47] know, it's still Nike. And so, like when
+[37:49] you think about things like that, it's
+[37:51] like, all right, there's likely going to
+[37:53] be kind of this natural lid on just how
+[37:55] bad the damage could get, and you can
+[37:57] just take the stock and put it in your
+[37:58] sock drawer, and go live your life. And
+[38:01] again, if doing that with individual
+[38:03] stocks makes you nervous, then don't do
+[38:04] it with individual stocks. Just do it
+[38:06] with indexes, and then it becomes an
+[38:08] even stronger selling point.
+[38:09] >> But, is that what you would actually do,
+[38:11] or would you also with those losing
+[38:14] trades
+[38:15] you said that you're not using stop loss
+[38:17] yourself, but would you also with the
+[38:18] losing trades close them at 10 to 20
+[38:21] days before expiration with a loss.
+[38:24] >> Well, so I I probably wouldn't close it.
+[38:26] I would probably roll it. So, if I get
+[38:28] to let's say I get to 14 to 21 days then
+[38:30] I have a trade on, a short put on that
+[38:32] is red,
+[38:34] I'm probably not going to take that
+[38:35] loss, not yet. I mean, again, it's
+[38:37] case-by-case. I don't I don't want
+[38:39] anyone out there to believe I never take
+[38:40] losses cuz that is absolutely not true.
+[38:42] That's 100% I take I probably take more
+[38:44] losses than your average viewer out
+[38:46] there. But just go just going into the
+[38:49] trade, I don't want to think about it
+[38:50] that way. But at 14 to 21 days to go, I
+[38:54] would probably roll it out to the next
+[38:56] cycle. So, I wouldn't close it and be
+[38:57] done with it, I would roll it out to
+[38:59] bring in more premium, improve the break
+[39:01] evens, maybe even adjust the strike
+[39:03] around a little bit. And that just
+[39:05] speaks to the flexibility of options,
+[39:06] which I know your audience is
+[39:08] well aware of.
+[39:10] >> And that lead us to our next segment,
+[39:12] which is actually how you will manage
+[39:14] the trade. It to what to what extent you
+[39:16] manage them, in what situation you
+[39:18] manage them, what are your rules for
+[39:20] managing them? And you already mentioned
+[39:23] rolling.
+[39:24] >> Yeah, exactly. So, again, if we kind of
+[39:26] think about the hierarchy, right? If the
+[39:28] trade works and hits 50% of max profit,
+[39:30] I take it off, I'm done with it, and I
+[39:31] move on. If the trade doesn't work, I'm
+[39:34] typically trying to think in terms of
+[39:36] duration. I want to give that trade
+[39:37] duration. I want to give it a chance to
+[39:39] come back. Which again, doesn't doesn't
+[39:41] in any way, shape, or form mean that I
+[39:43] never take losses cuz that's not at all
+[39:44] what I'm trying to communicate. But it
+[39:46] does indeed mean that I want to give
+[39:48] this thing a chance. I want to give it
+[39:50] positive drift a chance to work. I want
+[39:52] to give, you know, the positive upward
+[39:53] trajectory of the overall market or
+[39:55] individual stocks kind of writ large a
+[39:57] chance to work. And so, I do that with
+[39:59] position sizing, I do that with
+[40:00] obviously strike selection. And so, I
+[40:02] want to give it I want to give it time
+[40:03] to work. But again, 2x to 3x of current
+[40:05] receive would also be fine. But what
+[40:07] about all the stuff in the middle?
+[40:09] Well, that's where I think, you know,
+[40:10] that's where the skill and the ability
+[40:12] really comes into play. And I think 14
+[40:14] to 21 days to go is where I'm rolling
+[40:16] out to the next cycle.
+[40:18] Uh you know,
+[40:19] kind of regardless of what's happened.
+[40:21] If I get to some profit that has not hit
+[40:23] my objective yet, so I'm not at 50% but
+[40:27] I'm at 17 days to go and I've got what I
+[40:30] like to call an economically significant
+[40:32] profit, I'm probably taking it off. Like
+[40:35] for instance, let's say I sell a put for
+[40:37] $3.
+[40:39] And my profit objective is $1.50. I get
+[40:41] to 17 days to go and the trade is up 60
+[40:44] cents.
+[40:46] So it's not anywhere close to my profit
+[40:47] target, but again, I think it's helpful
+[40:50] sometimes to think in terms of like, all
+[40:52] right, is that actually like an
+[40:53] economically significant profit? It
+[40:55] doesn't matter how many contracts you
+[40:56] have on. Just think about that just in
+[40:58] like everyday terms in a way. It's like,
+[41:00] well, that's 60 cents. So that's $60.
+[41:03] When I think about commissions and I
+[41:05] think about transaction costs, it's
+[41:06] like, yeah, that's going to be a
+[41:07] meaningful trade that's going to move me
+[41:09] forward towards whatever objectives I
+[41:11] might have. And so once something gets
+[41:13] to
+[41:14] uh economic significance, that's when
+[41:17] I'm looking to take it off if I'm inside
+[41:18] that 14 to 21 day marker.
+[41:21] I would say for me personally,
+[41:23] this is going to vary from one trader to
+[41:25] the next. I've seen it vary from one
+[41:26] trader to the next. Economic
+[41:28] significance probably cuts off for me
+[41:30] around, you know, 25 to 30 cents. Once I
+[41:32] get beyond that point, it's a pretty
+[41:34] easy decision. You know, if I'm sitting
+[41:36] on a 17 cent winner, am I going to take
+[41:38] it off? Probably not. I'm probably going
+[41:40] to roll it cuz to me that's right around
+[41:41] the scratch still. And so I'll probably
+[41:43] still leave that trade on. And then of
+[41:45] course, if it's red, I'm definitely
+[41:46] going to roll it to give it time. And so
+[41:48] that's how I think about the management
+[41:49] for kind of everything in between.
+[41:51] >> And some of those situations with your
+[41:53] 17 cent example, I guess you can also
+[41:56] get pretty nice premium by rolling.
+[41:59] >> That's exactly right. That's 100% right
+[42:01] and that's the beauty of options which I
+[42:02] know that you know and your whole
+[42:03] audience knows that I mean being able to
+[42:05] roll and adjust and extend duration is a
+[42:08] huge advantage that we have in our back
+[42:10] pocket.
+[42:10] >> Selling a put is also the first step in
+[42:13] the very popular wheel strategy where
+[42:16] you sell until you are assigned the
+[42:18] shares and then you switch around and
+[42:21] sell
+[42:22] a covered call on top of it. Do you do
+[42:24] that
+[42:25] when you are assigned the shares?
+[42:27] >> I don't it typically.
+[42:29] Not because I'm opposed to it, but it
+[42:31] kind of it depends on the situation. So
+[42:34] for instance, if I sell a put and I'm
+[42:37] assigned
+[42:39] then if I if I'm assigned around the
+[42:42] actual
+[42:44] if I'm assigned and the stock is still
+[42:45] around the assignment price, then I
+[42:48] might sell a call. Then I might want to
+[42:50] bring some premium in against that. So
+[42:51] it would be kind of a more typical more
+[42:53] traditional type of wheel strategy.
+[42:56] But a lot of times and I hopefully some
+[42:58] of you viewers out there have had
+[42:59] similar experiences so I'm not alone in
+[43:01] this. A lot of times the puts that I'm
+[43:04] assigned on, they're not right around
+[43:05] the strike price. They're actually
+[43:07] they're in the money by a significant
+[43:08] margin.
+[43:10] So when that happens, I actually
+[43:11] typically don't like to sell calls
+[43:14] against it right away because I'm
+[43:17] effectively faced with two scenarios,
+[43:19] neither of which is good. Either A, I
+[43:22] sell a call that's really far out of the
+[43:24] money, really up the chain because I
+[43:27] have to because I need to be mindful of
+[43:29] my assignment price. Like for example
+[43:31] for example,
+[43:32] let's say I got assigned at 60 and the
+[43:34] stock fell down to 50.
+[43:36] Well, my basis on the trade is 60
+[43:39] with again, I had the premium I
+[43:41] collected on entry and we'll just leave
+[43:42] that out for just the purposes of this
+[43:43] example.
+[43:45] I'm going to be looking to sell calls
+[43:46] above 60.
+[43:48] Well, the problem is if the stock is at
+[43:49] 50, the premium on those 62 and a half
+[43:52] calls is going to be what? It's going to
+[43:53] be nothing. So I have to think, all
+[43:55] right, am I going to really cap my
+[43:57] upside for you know, 19 cents or 26
+[44:00] cents? Probably not. So right there, I'm
+[44:02] like, okay, I'm probably just going to
+[44:03] hold the naked shares and I'm going to
+[44:05] be okay with that. Or also, number two,
+[44:08] my other option
+[44:09] is I move down the chain. So, now I'm
+[44:12] not selling the 62 and 1/2, maybe I'm
+[44:13] selling a 57 and 1/2 or a 57. Remember,
+[44:17] the stock is at 50. What's the problem
+[44:19] there? My basis is at 60. So, now I'm
+[44:22] selling underwater calls right out of
+[44:25] the gates. I don't really like that,
+[44:26] either. And so, a lot of times when I'm
+[44:28] assigned on a put that is somewhat in
+[44:30] the money, I'm actually okay just
+[44:32] holding the shares. And again, this is
+[44:35] one of the huge powerful things about
+[44:36] selling puts in the indexes because I'm
+[44:38] going to say that most of your audience
+[44:41] is actually okay being long the S&P 500
+[44:44] or you're okay being long the Russell
+[44:47] 2000 or what have you. That's really
+[44:49] powerful. So, let's use that to our
+[44:50] advantage and so, not feel the urgency
+[44:53] to sell the call right away. Just hold
+[44:56] the naked clean delta to the upside. If
+[44:58] you get a rally, if you get a move
+[45:00] higher, then maybe you look to sell some
+[45:02] calls when it makes more sense.
+[45:04] >> Let's dig a bit more into the risks with
+[45:07] selling short puts or naked puts. What
+[45:10] is the worst that can happen?
+[45:13] >> Yeah.
+[45:14] So, the theoretical worst that the worst
+[45:16] thing that can happen, and I am legally
+[45:17] required to say this,
+[45:19] the stock or the index could go to zero.
+[45:23] So, theoretically, that is possible.
+[45:25] Theoretically, you have to know that the
+[45:27] S&P 500 could go to zero today.
+[45:30] Theoretically, the Nasdaq could go to
+[45:32] zero today. There's a theoretical
+[45:34] possibility. Is it a practical
+[45:36] possibility?
+[45:38] I'm going to say no, but everybody has
+[45:39] to make up their own mind out there. I
+[45:41] cannot tell you what to think or what to
+[45:42] do. And so, when it comes to actual
+[45:44] practical realities, I think thinking in
+[45:46] terms of like two or three standard
+[45:48] deviations makes a lot more sense. And
+[45:51] so, this is where when you actually look
+[45:53] at the buying power that you have to set
+[45:55] aside for a short put that's naked, that
+[45:59] buying power actually coincides with
+[46:02] right around typically a two standard
+[46:05] deviation move.
+[46:07] And so that gives you a very practical
+[46:09] representation of what a likely
+[46:12] worst-case scenario would actually be.
+[46:15] Now again, could it be worse than that?
+[46:17] Yes. Will there be times when it is
+[46:19] worse than that? Yes. And again,
+[46:21] theoretically it can go to zero. And if
+[46:23] you're doing it in individual stocks,
+[46:25] sometimes they do go to zero. Again, not
+[46:27] super likely, not super often,
+[46:29] especially not in the stocks that I'm
+[46:31] trading, but it does happen. But when I
+[46:33] look at the actual risk, like when I'm
+[46:35] trying to figure out how much risk is in
+[46:37] this trade, I use the buying power. The
+[46:40] buying power to me is a very tangible
+[46:42] way for me to say, "All right, I'm going
+[46:44] to do that put in GDX that we were
+[46:46] looking at. $1,500. Okay, worst-case
+[46:49] scenario, that's probably what I'm
+[46:50] looking at. Could it be more than that?
+[46:52] Yes. Am I prepared if it is more than
+[46:54] that? Yes. But this does give me at
+[46:57] least some baseline as opposed to just
+[46:59] being some you know, some theoretical
+[47:01] infinity sign that of course that's the
+[47:03] theoretical max, but is that really
+[47:05] going to happen? No, it's not.
+[47:08] >> But the more realistic scenario may be
+[47:11] if you are selling puts on different
+[47:13] stocks and different indexes, is that we
+[47:15] see a major fall in the mark in the
+[47:19] whole market. And
+[47:21] and then you are in big
+[47:24] >> [laughter]
+[47:25] >> I thought this was a family show, John.
+[47:27] Okay. All right. Well, yeah, but but
+[47:29] that actually that actually makes my
+[47:31] right. So what would be a huge daily
+[47:34] move in the market? Like huge, huge,
+[47:36] huge. 10%, right? I think what I think
+[47:38] everybody can agree 10%. Okay, if the
+[47:41] S&P 500 drops 10% today, we're all in
+[47:44] trouble. Everybody's in trouble. Okay,
+[47:45] understood. Okay.
+[47:47] In order to hit the actual theoretical
+[47:50] maximum loss point that every platform
+[47:52] has to show you, that every equation has
+[47:54] to show you, it It have to drop another
+[47:56] 90% on top of that. It's just It's just
+[47:59] not going to happen. It's just not a
+[48:00] realistic possibility. And so again,
+[48:02] thinking more in terms of even the 10% I
+[48:04] mean, what's the I mean, that's happened
+[48:06] what? Two, three, four times in the
+[48:08] history of the stock market? And so it's
+[48:10] like, okay. Now again, size so that if
+[48:12] that thing does happen that you're still
+[48:14] going to you know, you can keep the
+[48:15] lights on. Like I understand that. But
+[48:17] in terms of a day-to-day practical
+[48:18] reality, it's just not something that I
+[48:21] think it is should be on most traders'
+[48:23] radar.
+[48:24] >> I always ask my guests to put their
+[48:26] strategy on a risk profile scale where
+[48:29] one is very low risk and 10 is very high
+[48:33] risk. And in my show, you are free to
+[48:35] define the numbers as you see fit. And
+[48:38] you are a professor of finance, so we
+[48:40] are curious about your definition.
+[48:42] Where would you put selling short puts?
+[48:45] >> Well, I like the fact that you've given
+[48:46] me the freedom to kind of reinvent the
+[48:47] scale. That's kind of nice. Uh
+[48:49] >> [laughter]
+[48:50] >> I would say, again, it really traces
+[48:53] back to the delta selection on what
+[48:55] strike you might go with.
+[48:56] I would say
+[48:58] it's between a one and a five.
+[49:01] It's no higher than a five. Even if
+[49:03] you're selling an at-the-money put. In
+[49:04] fact, if we can go Let's go back to the
+[49:05] platform just really quickly cuz this
+[49:07] will make a really really good point. So
+[49:09] if I go if I go to SPY,
+[49:11] so again, major market index, right? I
+[49:13] go to October.
+[49:15] If I sell
+[49:16] what is essentially, you know, in a lot
+[49:19] of ways the riskiest put that I could
+[49:21] sell without going in the money cuz
+[49:22] that's a separate discussion that I
+[49:24] think warrants a an entirely different
+[49:26] uh angle.
+[49:28] The riskiest put that I could sell would
+[49:29] be the at-the-money put, right? So the
+[49:31] stock is at 767. I sell the 767 put.
+[49:35] Look at the probability on selling This
+[49:38] is the at-the-money put. This is the put
+[49:40] where you theoretically have no wiggle
+[49:42] room between where the stock is and the
+[49:45] option going in the money. And look at
+[49:46] the probability of profit. It's still
+[49:48] 64%.
+[49:49] Look Look the probability of making 50%.
+[49:51] It's still 80%. Now, why is that? Well,
+[49:54] it's because you have all this extrinsic
+[49:55] value. It's because your break-even
+[49:57] point is so much further below where the
+[49:59] stock price is. And so, that's why I put
+[50:02] the ceiling of a short put at a five.
+[50:04] And that's if you're selling at the
+[50:05] money puts or even in the money puts.
+[50:07] Like that's if you're taking essentially
+[50:09] the riskiest of the bunch. Once you move
+[50:12] out of the money to any degree, your
+[50:14] risk drops precipitously. So, now my
+[50:17] risk is probably only a three or four or
+[50:19] two or maybe even a one. I mean, if
+[50:22] you're selling 25 delta puts on SPY or
+[50:25] QQQ,
+[50:26] I would have to say that is one of the
+[50:28] least risky strategies that you could
+[50:30] employ. Obviously, we have to talk about
+[50:32] size and the parameters and things like
+[50:34] that. And so, you know, from a sizing
+[50:36] standpoint, I think staying,
+[50:38] you know, between 3 to 5% of your
+[50:40] account in terms of buying power is a
+[50:42] good place to live so that you're not
+[50:44] oversized. Uh but yeah, I would say one
+[50:46] to five is probably going to be the
+[50:48] range.
+[50:49] >> I mean, what I'm just curious, what
+[50:51] would be a number 10 strategy on your
+[50:53] scale?
+[50:54] >> [laughter]
+[50:56] >> Well, I so I would say I mean I mean
+[50:58] selling straddles is is pretty high, I
+[51:00] would say. So, obviously a straddle is
+[51:02] where the where the put and the call
+[51:03] sold at the same strike. So, I mean, if
+[51:05] you're selling like if you sell a
+[51:07] straddle in AMD
+[51:10] or you sell a straddle in Micron,
+[51:12] you're going to get paid for that. Like
+[51:14] the premiums you're going to collect.
+[51:15] Like here, let's actually I mean, we'll
+[51:16] pull it up cuz we can, right? Let's go
+[51:17] to Micron.
+[51:19] I'm just choosing one of the memory
+[51:20] stocks that's obviously in play right
+[51:21] now, right? A thousand-dollar stock so
+[51:23] you're going to need a huge account to
+[51:24] do this. But just to make my point, if I
+[51:27] go into the 38-day cycle, you've got
+[51:29] Micron at 1025. So, if I sell, hey,
+[51:32] let's be a little bullish. If I sell a
+[51:34] 1030 straddle,
+[51:37] right? I'm going to collect $180 in
+[51:39] credit. Now, that's $180 per share. So,
+[51:42] it's $18,000 per contract. And my buying
+[51:46] power now is 30 grand. So again, if I'm
+[51:48] thinking about 5% position sizing, you
+[51:50] know, that's what you I'm looking at
+[51:52] 600,000 to do this trade the right way
+[51:54] to where I'm not emotionally charged up.
+[51:56] I can do it the way I can be objective,
+[51:58] blah blah blah blah blah. To me, this is
+[52:00] getting a lot closer to it like eight
+[52:02] out of 10, nine out of 10, 10 out of 10
+[52:04] because A,
+[52:05] you're in an individual stock, so that's
+[52:07] a different ballgame. B, you're selling
+[52:09] calls, that's also a different ballgame,
+[52:11] especially with an individual stock. And
+[52:13] then also C, you're doing it on a stock
+[52:16] that is wildly in play right now. Like
+[52:18] you can see the implied volatility of
+[52:20] Micron is 71%.
+[52:22] I mean, just for example purposes, if I
+[52:23] go back to Apple really quick, Apple's
+[52:26] only what? 40% or 30%? Yeah, you look at
+[52:28] the implied volatilities of Apple, it's
+[52:29] 32%.
+[52:31] And so you're talking about Micron, it's
+[52:33] it's more than double the implied
+[52:34] volatility of something like an Apple.
+[52:36] That would be nine out of 10 or maybe 10
+[52:38] out of 10.
+[52:40] >> Jim,
+[52:41] you have been selling puts for a long
+[52:43] time, I'm sure. What are your actual
+[52:46] results selling short puts?
+[52:49] >> That's a great question. So, as every
+[52:52] trader out there, I don't have the
+[52:53] results of the actual just the puts
+[52:55] themselves because it's a combination.
+[52:57] It's a piece to the puzzle. Like it's a
+[52:59] piece to the overall portfolio. But
+[53:01] again, I mean, if you look at I mean,
+[53:02] you can still go to the tastytrade
+[53:04] research now. You can pull up the market
+[53:05] measures. You can pull up the options
+[53:06] dives. I mean, they've looked at this
+[53:08] for so many years, right? Just how
+[53:10] effective short puts can be in terms of,
+[53:13] you know, matching market returns with a
+[53:14] fraction of the capital.
+[53:16] Like, you know, how can I get
+[53:17] market-like returns with less capital?
+[53:19] How can I get market-like returns with,
+[53:20] you know, less risk? I mean, short puts
+[53:22] can do that for you. And so I don't have
+[53:24] like a short put number for you like,
+[53:27] oh, I mean, short puts added, you know,
+[53:28] 300 basis points to my returns or 400
+[53:30] basis points to my returns or what have
+[53:32] you. I don't have that information for
+[53:34] you now. And I I I'd be curious to know
+[53:36] if, you know, too many traders out there
+[53:38] actually have it broken down by
+[53:40] strategy. If they do, then I need to
+[53:42] know what kind of journals you guys are
+[53:43] using cuz that's pretty impressive.
+[53:46] >> But
+[53:47] how do you measure the the how would you
+[53:49] measure the results? And let me ask in a
+[53:51] different way then.
+[53:53] What
+[53:54] what would [clears throat] you say would
+[53:55] be realistic long-term results from
+[53:59] selling puts that traders could expect
+[54:01] if they are doing it okay?
+[54:03] >> Yeah. Yeah, a great question. Yeah, so
+[54:06] so I think that, you know, if we think
+[54:07] about if we think about market returns.
+[54:09] I'll I'll answer your your second
+[54:11] question first. If we think about market
+[54:13] returns being about 10 or 11% on
+[54:15] average,
+[54:16] I personally think that most traders
+[54:18] with enough skill and enough ability can
+[54:21] achieve market-like returns with less
+[54:24] risk or
+[54:26] slightly better than market-like returns
+[54:28] with similar risk profiles. So, slightly
+[54:31] better means I mean, you know, 13 to 15%
+[54:34] annualized returns does not seem out of
+[54:36] the question to me with a strategy like
+[54:38] a short put only. If that's all you did.
+[54:41] Again, if that's exclusively what you
+[54:42] did, then that is I think that's very
+[54:45] very achievable. So, thinking about the
+[54:47] baseline. But then when I go back to,
+[54:50] you know, how do I know it's effective?
+[54:52] Well, again, it's not like when I think
+[54:54] about my own portfolio,
+[54:56] like
+[54:57] trading and testing and trialing, I
+[55:00] mean, if things aren't working, they
+[55:01] don't stay around. Because again, I have
+[55:03] no I mean, the only reason why I'm
+[55:05] trading, just like you are Johnson, just
+[55:07] everybody is, we're trying to move
+[55:08] forward. We're trying to make money. And
+[55:10] so, if it's not getting me what I'm what
+[55:12] I'm going for, then it's gone. Then I'm
+[55:14] not doing it. Like case in point, this
+[55:16] is why
+[55:18] I personally don't like selling put
+[55:20] spreads.
+[55:21] So, this is actually a perfect
+[55:22] continuation and it makes the point that
+[55:24] I want to make. A lot of traders out
+[55:26] there like selling put spreads because
+[55:28] you have the defined risk and you know
+[55:30] your worst-case scenario and you're able
+[55:32] to benefit from the upward trajectory in
+[55:34] the market. Okay. I was doing that, too.
+[55:37] But then I'm like I'm selling put
+[55:38] spreads and I'm also selling puts. I'm
+[55:40] like man, the puts are just so much more
+[55:42] effective. They're so much more
+[55:44] effective because you have that
+[55:46] unfiltered exposure to the Greeks, which
+[55:48] is what I want. I want the unfiltered
+[55:50] upside exposure with Delta. I want the
+[55:52] unfiltered decay exposure with Theta. I
+[55:54] want the unfiltered Vega exposure to
+[55:56] volatility contraction. With a short put
+[55:58] spread, yes, I'm defining my risk, but
+[56:01] I'm losing out on all that exposure. My
+[56:03] Theta's watered down. My Delta's watered
+[56:05] down. My Vega's watered down. Not to
+[56:08] mention,
+[56:09] you know, what do you do if you have a
+[56:10] short put that doesn't work?
+[56:12] Nothing. You just take max loss
+[56:14] basically, right? You can't roll it for
+[56:16] a credit. It just becomes really
+[56:17] difficult to deal with. And so the short
+[56:19] put is kind of like a, you know, kind of
+[56:22] like an in-house game of Survivor,
+[56:24] right? Where it's like man, I'm like the
+[56:25] short put spread was there, but now it's
+[56:27] mostly gone because the short put is
+[56:29] just so much more effective. So for me,
+[56:31] let me control my sizing on entry. Let
+[56:34] me let me make sure that I'm not getting
+[56:35] out over my skis, and then I think the
+[56:37] short put can just have a home in pretty
+[56:39] much anyone's anyone's portfolio.
+[56:41] >> Let's uh sum up. What would be the two
+[56:44] or three most important takeaways that
+[56:46] you really want the audience to remember
+[56:49] from this interview?
+[56:50] >> So so the number one thing that I want
+[56:52] everyone to remember, and this is
+[56:53] actually new. This is not something that
+[56:55] we've even mentioned, but it's such a
+[56:56] perfect way to introduce this idea.
+[57:00] The short put is such a powerful
+[57:02] strategy that regardless of whether you
+[57:05] are bullish or bearish or neutral in the
+[57:08] market, I think it has a home in your
+[57:10] portfolio. And that makes it quite
+[57:12] unique in that regard because, you know,
+[57:15] a lot of other strategies only really
+[57:17] fit if they match up with your overall
+[57:19] bias. Like, you know, I mean, if you're
+[57:22] bearish, then selling call spreads is
+[57:23] going to make a lot of sense. If you're
+[57:25] bullish, selling call spreads is not
+[57:27] necessarily going to make a ton of
+[57:29] sense. Now, it might make sense in terms
+[57:30] of balancing your portfolio metrics, but
+[57:32] it's not going to be your go-to strategy
+[57:34] when it comes to, you know, executing or
+[57:36] implementing that bearish bias. But a
+[57:38] short put is so powerful. I actually
+[57:41] think that it can fit either if you have
+[57:43] an overall bearish bias in the
+[57:45] marketplace because it can complement
+[57:47] all of your other bearish positions so
+[57:49] incredibly well. And then the second
+[57:51] thing I want to make sure that everybody
+[57:52] remembers is again, if you are a
+[57:55] permabull, if you like playing in the
+[57:56] market to the upside, you have the huge
+[57:58] advantage of taking if that's what it
+[58:01] comes to. If you want to wheel it, you
+[58:02] can wheel it. If you don't want to wheel
+[58:04] it, you don't have to wheel it. Like
+[58:05] there's a number of different things you
+[58:07] can do. It's just really beneficial and
+[58:08] advantageous.
+[58:10] >> What would be good resources to learn
+[58:12] more?
+[58:13] >> Well, obviously, I mean, Options
+[58:14] Uncapped would be a great place to to
+[58:16] check out. I mean, that's my brand new
+[58:17] YouTube channel. And, you know, one of
+[58:19] the thing I mean, you were asking about
+[58:20] results earlier. So, one of the things
+[58:22] that I'm doing differently, John, that I
+[58:23] really cuz I want to make a big positive
+[58:25] impact on the industry.
+[58:27] And so, if if anyone checks out the
+[58:28] Options Uncapped YouTube channel, what
+[58:31] you will find is you will find me
+[58:33] trading my own portfolio, no business
+[58:36] account, no corporate account. It's my
+[58:37] capital and I am showing full
+[58:40] transparency. So, I'm showing the P&L.
+[58:42] I'm showing all the trades. You see all
+[58:44] of it every day that I'm on the stream.
+[58:47] I explain everything I did, why I did
+[58:49] it, and you see everything out there.
+[58:51] And I mean, you know yourself, John,
+[58:52] it's like there are very few traders out
+[58:54] there that will do that. And so, I'm
+[58:56] putting my money where my mouth is. It's
+[58:57] on the Options Uncapped YouTube channel.
+[58:59] Those are my daily streams, and then we
+[59:01] have a bunch of educational content that
+[59:03] typically goes up in the evenings.
+[59:05] >> Um I will, of course, recommend that you
+[59:08] watch some of the other interviews here
+[59:10] on Theta Profits. There are several
+[59:13] interviews about selling puts in in
+[59:15] different ways. If you like to follow
+[59:18] the channel, I also suggest that you
+[59:20] subscribe to the newsletter that we send
+[59:22] out every week. And every Monday at noon
+[59:26] Eastern is Theta Live with new guests
+[59:29] every week.
+[59:31] Dr. Jim, thank you very much for coming
+[59:33] here and sharing how you sell puts with
+[59:36] such great enthusiasm.
+[59:38] >> You're welcome. Thanks for having me.
