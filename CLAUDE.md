@@ -90,6 +90,10 @@ weeknights 22:00 ET, ~4.5 h) — **the nightly feed for `silver.options_daily_v3
   $ premium, delta-weighted share volume. 19.2M rows, all tickers, 2010→2026, built in Athena by
   `run_build_options_flow_daily.py` (idempotent per year; ~15 s and ~2 GB scanned per year). ⚠ After ~Apr 2026 v3 is
   prints-only: delta columns go NULL and volumes drop ~60% — end flow studies at 2026-04.
+- **`silver.options_iv_daily` (Glue catalog, `data_source="AwsDataCatalog"`)** — per-(ticker, day) IV *shape* from v3
+  (DTE 10–60, quoted legs, delta-selected so raw strikes don't matter): `skew` (25Δ put IV − 50Δ call IV, expiry nearest
+  30 DTE), `put25_iv`, `call50_iv`, `cw` (OI-weighted call−put IV at the same strike). 13.0M rows 2010→2026, built by
+  `run_build_options_iv_daily.py` (idempotent per year, ~12 s/yr). Use through 2026-03 (bid/ask coverage).
 - **`stocks.options_cache` (MySQL)** is a synced *subset* of v3 (DTE 0–65, deduped). Its sync filters
   `bid > 0 AND ask > 0 AND delta IS NOT NULL`, exempting expiry-day rows — so **every zero-bid quote is
   missing except at expiry**. That silently breaks exit scans on winning spreads; pull from v3 when

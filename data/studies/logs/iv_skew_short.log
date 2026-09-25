@@ -1,0 +1,60 @@
+  iv 2010: 189,026
+  iv 2011: 191,376
+  iv 2012: 185,344
+  iv 2013: 202,830
+  iv 2014: 212,487
+  iv 2015: 232,078
+  iv 2016: 245,659
+  iv 2017: 256,763
+  iv 2018: 274,991
+  iv 2019: 287,080
+  iv 2020: 308,414
+  iv 2021: 335,470
+  iv 2022: 353,132
+  iv 2023: 352,436
+  iv 2024: 360,321
+  iv 2025: 377,489
+  iv 2026: 54,026
+# Option-implied short signals (pre-registration in the docstring)
+# formation weeks 839, 2010-02-05 -> 2026-02-27; costs 10 bp/side + 1%/yr borrow
+
+# SKEW top decile *PRIMARY* +20: 838 formation dates, 56 names/date
+  signal fwd +1.273% vs matched control +1.213% | excess +0.063pp t +0.67 (month-clustered) | halves +0.139 / -0.010 | years negative 7/17
+  SHORT P&L after 0.28% costs+borrow: -1.552% per trade (t -4.25)
+  excess by year: 2010:+0.12 2011:-0.19 2012:+0.72 2013:+0.12 2014:-0.19 2015:-0.68 2016:+0.77 2017:+0.39 2018:+0.08 2019:+0.69 2020:+0.07 2021:+0.34 2022:-0.60 2023:+0.01 2024:-0.45 2025:-0.08 2026:-0.93
+  [exploratory] PRIMARY within uptrend names (close > 50 SMA): excess +0.001pp t +0.00
+
+# SKEW top decile +5: 838 formation dates, 56 names/date
+  signal fwd +0.333% vs matched control +0.313% | excess +0.021pp t +0.62 (month-clustered) | halves +0.044 / -0.002 | years negative 8/17
+  SHORT P&L after 0.22% costs+borrow: -0.553% per trade (t -5.41)
+  excess by year: 2010:-0.04 2011:+0.07 2012:+0.32 2013:+0.02 2014:-0.02 2015:-0.20 2016:+0.17 2017:+0.01 2018:-0.03 2019:+0.13 2020:+0.12 2021:+0.13 2022:-0.24 2023:-0.04 2024:-0.14 2025:+0.06 2026:-0.04
+
+# CW bottom decile +20: 838 formation dates, 57 names/date
+  signal fwd +1.026% vs matched control +1.185% | excess -0.157pp t -2.60 (month-clustered) | halves +0.054 / -0.362 | years negative 11/17
+  SHORT P&L after 0.28% costs+borrow: -1.306% per trade (t -4.16)
+  excess by year: 2010:+0.19 2011:+0.06 2012:+0.33 2013:+0.15 2014:-0.07 2015:-0.05 2016:-0.19 2017:+0.09 2018:-0.49 2019:-0.28 2020:-0.61 2021:-0.39 2022:-0.10 2023:-0.54 2024:-0.31 2025:-0.38 2026:+0.49
+
+# CW bottom decile +5: 838 formation dates, 57 names/date
+  signal fwd +0.257% vs matched control +0.297% | excess -0.039pp t -1.53 (month-clustered) | halves +0.007 / -0.083 | years negative 11/17
+  SHORT P&L after 0.22% costs+borrow: -0.477% per trade (t -5.78)
+  excess by year: 2010:+0.05 2011:-0.06 2012:+0.20 2013:-0.02 2014:-0.03 2015:+0.06 2016:-0.16 2017:+0.03 2018:-0.10 2019:-0.00 2020:-0.11 2021:-0.14 2022:-0.11 2023:-0.20 2024:+0.00 2025:-0.14 2026:+0.54
+
+# [exploratory] SKEW decile gradient, +20 excess vs matched control (pp), month-clustered t
+  D 1: -0.124  t -1.33
+  D 2: -0.062  t -1.02
+  D 3: +0.027  t +0.56
+  D 4: -0.024  t -0.56
+  D 5: +0.057  t +1.38
+  D 6: +0.002  t +0.06
+  D 7: +0.033  t +0.69
+  D 8: +0.025  t +0.53
+  D 9: +0.009  t +0.15
+  D10: +0.063  t +0.67
+
+                    label  h  dates  names_per_date  abs_ret  ctl_ret  excess      t    h1     h2  short_pnl  t_short yrs_neg  PASS  VETO
+SKEW top decile *PRIMARY* 20    838          55.786    1.273    1.213   0.063  0.668 0.139 -0.010     -1.552   -4.247    7/17 False False
+          SKEW top decile  5    838          55.786    0.333    0.313   0.021  0.615 0.044 -0.002     -0.553   -5.414    8/17 False False
+         CW bottom decile 20    838          57.155    1.026    1.185  -0.157 -2.600 0.054 -0.362     -1.306   -4.158   11/17 False False
+         CW bottom decile  5    838          57.155    0.257    0.297  -0.039 -1.528 0.007 -0.083     -0.477   -5.777   11/17 False False
+
+VERDICT: SKEW top decile *PRIMARY* +20: fail; SKEW top decile +5: fail; CW bottom decile +20: fail; CW bottom decile +5: fail

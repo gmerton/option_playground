@@ -1,0 +1,34 @@
+2011: {'secs': 14, 'scanned_gb': 2.4, 'state': 'SUCCEEDED'}
+2012: {'secs': 11, 'scanned_gb': 2.7, 'state': 'SUCCEEDED'}
+2013: {'secs': 10, 'scanned_gb': 3.0, 'state': 'SUCCEEDED'}
+2014: {'secs': 11, 'scanned_gb': 4.6, 'state': 'SUCCEEDED'}
+2015: {'secs': 15, 'scanned_gb': 4.5, 'state': 'SUCCEEDED'}
+2016: {'secs': 11, 'scanned_gb': 4.6, 'state': 'SUCCEEDED'}
+2017: {'secs': 10, 'scanned_gb': 4.5, 'state': 'SUCCEEDED'}
+2018: {'secs': 13, 'scanned_gb': 5.0, 'state': 'SUCCEEDED'}
+2019: {'secs': 11, 'scanned_gb': 5.0, 'state': 'SUCCEEDED'}
+2020: {'secs': 11, 'scanned_gb': 6.6, 'state': 'SUCCEEDED'}
+2021: {'secs': 12, 'scanned_gb': 8.1, 'state': 'SUCCEEDED'}
+2022: {'secs': 15, 'scanned_gb': 8.5, 'state': 'SUCCEEDED'}
+2023: {'secs': 12, 'scanned_gb': 7.9, 'state': 'SUCCEEDED'}
+2024: {'secs': 18, 'scanned_gb': 10.0, 'state': 'SUCCEEDED'}
+2025: {'secs': 19, 'scanned_gb': 11.9, 'state': 'SUCCEEDED'}
+2026: {'secs': 11, 'scanned_gb': 2.8, 'state': 'SUCCEEDED'}
+ year       n  tickers
+ 2010  638871     3546
+ 2011  654360     3834
+ 2012  616349     3828
+ 2013  694323     4106
+ 2014  735309     4303
+ 2015  771299     4500
+ 2016  782545     4476
+ 2017  778990     4421
+ 2018  808250     4377
+ 2019  769269     4248
+ 2020  822560     4490
+ 2021 1009151     5719
+ 2022 1051884     5955
+ 2023  903800     5451
+ 2024  817666     5347
+ 2025  852609     5856
+ 2026  128683     4998
