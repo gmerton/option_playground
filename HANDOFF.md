@@ -33,8 +33,8 @@ name. Expect nulls; treat a positive as suspect until it survives real fills and
   candidates. Expect a wider nightly list than the historical ones.
 * **Trend Template: two criteria retracted** as *logically redundant* (close>150SMA and close>200SMA are
   entailed by the others). The rest are underpowered, not proven useful.
-* **CI/CD now exists.** Four pipelines, all path-filtered so research commits don't redeploy production:
-  `preferred-list-refresh`, `preferred-breakout-scan`, `journal-site`, `options_toolkit`.
+* **CI/CD now exists.** Three pipelines, all path-filtered so research commits don't redeploy production:
+  `preferred-list-refresh`, `preferred-breakout-scan`, `journal-site`. (A fourth, `options_toolkit`, was deleted 2026-09-24.)
 * **The journal site's reviews page is split** into a 13 KB presentation shell + a data JSON. Cosmetic
   changes deploy on commit via the `journal-site` pipeline. ⚠ `summary.html` and `alerts.html` still
   inline their data and remain local-build-and-deploy.
@@ -72,7 +72,9 @@ name. Expect nulls; treat a positive as suspect until it survives real fills and
 
 ## Known broken, deliberately not fixed
 
-* **`options_toolkit` pipeline has failed every run since at least 2026-09-09** (`exit status 254`). Its
+* ✅ **RETIRED 2026-09-24 (Gabe's OK):** the `options_toolkit` pipeline, the `options_toolkit_prod` CodeBuild project and
+  Lambda, and `buildspec.yml` were deleted; definitions saved locally in `data/backups/aws_retired_2026-09-24/` (not committed).
+  History: the `options_toolkit` pipeline had failed every run since at least 2026-09-09 (`exit status 254`). Its
   build role has no `lambda:` permission. The target Lambda has **zero invocations in 30 days and no
   resource policy**, so nothing can even invoke it. The recommendation is to disable the trigger rather
   than fix it — a pipeline that always fails trains you to ignore pipeline failures.

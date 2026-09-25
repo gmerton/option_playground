@@ -53,7 +53,7 @@ source ~/.trading_env && AWS_PROFILE=clarinut-gmerton ./daily_desk.sh
 STRADDLE=1 ./daily_desk.sh        # force the Friday-only straddle screen
 ```
 - Produces: the whole evening desk → `data/watchlist/` (`regime_<date>.txt`, `positions_<date>.txt`, `adhikary_<date>.txt`, `clusters_<date>.txt`, `straddle_screen_<date>.txt`, `alerts_latest.csv`).
-- Steps: pulls `minervini_matrix.parquet` + `preferred_tickers.txt` from S3 first (both were found badly stale in Sept — do not bypass) → `run_gex_fly_paper.py --close` → `run_trailing_retro.py` (regime) → `run_position_monitor.py --live` (open book) → `run_adhikary_scan.py` → `run_build_liquid_panel.py` + `run_scan_clusters.py` → `run_preferred_breakouts.py` → `run_straddle_screen.py` *(Fridays only)* → pending-notes list → `run_journal_grades.py` → `run_alert_scorecard.py` (+ `--oop`) → `lib.alerts.universe` (tomorrow's focus list)
+- Steps: pulls `minervini_matrix.parquet` + `preferred_tickers.txt` from S3 first (both were found badly stale in Sept — do not bypass) → `run_gex_fly_paper.py --close` → `run_trailing_retro.py` (regime) → `run_position_monitor.py --live` (open book) → `run_adhikary_scan.py` → `run_build_liquid_panel.py` + `run_scan_clusters.py` → `run_preferred_breakouts.py` (or the Lambda's S3 copy after 19:15 ET) → `run_straddle_screen.py` *(Fridays only)* → pending-notes list → `run_journal_grades.py` → `run_alert_scorecard.py` (+ `--oop`) → `lib.alerts.universe` (tomorrow's focus list)
 - Env: sourced from `~/.trading_env` by the script (since 2026-09-24); `AWS_PROFILE` for the S3 pulls. The panel builder's gap fill needs `POLYGON_API_KEY`. TWS/Gateway open on Fridays for the straddle IV-percentile gate (`IB_PORT=7496` live / `4002` paper).
 - **Skip it:** no `universe_focus.txt` for tomorrow (so `start_alerts.sh` watches a stale universe), expiring positions go unreviewed, and the GEX fly paper trade misses a settle.
 
@@ -74,7 +74,6 @@ STRADDLE=1 ./daily_desk.sh        # force the Friday-only straddle screen
 | `journal-site` | `buildspec_journal_site.yml` → the journal site's page generator | path-filtered | two failures on 2026-09-23, succeeded since |
 | `preferred-breakout-scan` | `buildspec_breakout.yml` → the breakout Lambda | path-filtered (`src/lib/interface/breakout_*.py`, tradier, …) | ⚠ a SECOND deploy path besides `deploy_breakout_lambda.sh` — open decision: which is canonical |
 | `preferred-list-refresh` | `buildspec_refresh.yml` → the refresh Lambda | path-filtered | same second-deploy-path question as above; three failures on 2026-09-22 |
-| `options_toolkit` | `buildspec.yml` → `options_toolkit_prod` | **every push** | fails every run; retirement pending (see the deploy table) |
 
 Other Lambdas / ECS resources in the account (`AGAWorkshop*`, `ninja-*`, `my-math-fucntion`, `sftp-endpoint-*`, `cloudwatch_catalog_3`, the `sftp-ecs-04` cluster, the CodeGuru rule) date from 2021 and are **not this repo**.
 
@@ -142,7 +141,7 @@ Same five steps as the automated morning chain (it now sources `~/.trading_env` 
 | `AWS_PROFILE=clarinut-gmerton ./deploy_refresh_lambda.sh` | redeploys `preferred-list-refresh` + `preferred-list-refresh-nightly` (`cron(30 7 ? * TUE-SAT)`, **verified ENABLED**). Needs `POLYGON_API_KEY`. Pandas layer is **pinned to v24** — v29 segfaults. | The nightly preferred list stops refreshing; every scan runs a frozen universe. |
 | `AWS_PROFILE=clarinut-gmerton ./sync_journal_cache.sh push` (or `pull`) | backs up `data/cache/journal_{daily,intraday}/` ↔ `s3://gmerton-trade-journal-cache`. The parquet cache is git-ignored — **this bucket is its only copy.** **Automated since 2026-09-24** as the last step of `morning_journal.sh`; run `pull` on a fresh checkout. | A lost/rebuilt checkout means a cold-cache rebuild. |
 | `PYTHONPATH=src .venv/bin/python3 scripts/cache_sync.py` | mirrors the *other* irreplaceable artifacts (IBKR intraday bars in `ibkr_bot/data/`, orphaned files with no producer) to `s3://gmerton-stock-data/cache`. **Not scheduled.** | IBKR bars that IBKR no longer serves are lost for good with the laptop. Run after any new bar pull. |
-| CodeBuild `buildspec.yml` | zips `src/` → `options_toolkit_prod` Lambda (deployed, no schedule). **⚠ RETIREMENT PENDING:** zero invocations, 3 s / 128 MB, and its `options_toolkit` CodePipeline fails on every push to `main`. Needs Gabe's OK to delete (Lambda + pipeline + CodeBuild project). | Nothing. |
+| ~~CodeBuild `buildspec.yml` → `options_toolkit_prod`~~ | **Deleted 2026-09-24** (Gabe's OK): the Lambda (zero invocations, 3 s / 128 MB), its CodeBuild project, the `options_toolkit` pipeline that failed on every push, and `buildspec.yml`. Definitions saved locally in `data/backups/aws_retired_2026-09-24/`. | — |
 
 **`run_index_audit.py` — run after any study lands.** Checks TEST_INDEX against the study docs on disk:
 orphans (a doc with no row) and broken links (a row pointing at a missing file). Exit code 1 on either, so
@@ -151,7 +150,7 @@ backtested with no row, §286 carried another study's `n`, and that afternoon's 
 unindexed. Docs closed by a status banner (SUPERSEDED/RETIRED/WITHDRAWN) count as a terminal state, not
 an orphan.
 
-**`run_eod_scan.sh` — ARCHIVED 2026-09-24** (`scripts/archive/`). It was a cron entrypoint that never had a crontab. The same scan runs in the cloud as the `preferred-breakout-eod` Lambda (19:15 ET), and `daily_desk.sh` step 3 still runs it locally for the pre-19:15 read — ⚠ **open decision:** after 19:15 ET the desk could read `s3://gmerton-stock-data/breakouts/eod_latest.txt` instead of rescanning (house rule: check S3 before scanning locally).
+**`run_eod_scan.sh` — ARCHIVED 2026-09-24** (`scripts/archive/`). It was a cron entrypoint that never had a crontab. The same scan runs in the cloud as the `preferred-breakout-eod` Lambda (19:15 ET), and since 2026-09-24 `daily_desk.sh` step 3 **uses the Lambda's copy once `eod_<date>.txt` exists in S3** (pulls `eod_<date>.txt`, `eod_latest.json`, `monitor_latest.json`) and only scans locally before 19:15 ET or if the pull fails.
 
 ---
 

@@ -111,7 +111,6 @@ weeknights 22:00 ET, ~4.5 h) — **the nightly feed for `silver.options_daily_v3
   2026-03); the live equivalent runs inside `daily_desk.sh` / `start_alerts.sh`.
 
 ### Lambda deployment
-`buildspec.yml` packages `src/` into `function.zip` → the `options_toolkit_prod` Lambda via CodeBuild.
 `deploy_breakout_lambda.sh` / `deploy_refresh_lambda.sh` deploy the two scheduled scan Lambdas;
 `deploy_trade_journal.sh` pushes the journal site to S3/CloudFront.
 

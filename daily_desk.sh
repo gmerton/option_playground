@@ -66,7 +66,20 @@ $PY run_adhikary_scan.py 2>/dev/null | tee "$OUT/adhikary_$D.txt" | sed -n 1,60p
 echo; echo "== 2c industry clusters of the scan's qualifiers (watchlist pointer, NOT a signal: group strength has no edge, see group_move_study_2026-09-17.md)"
 PYTHONPATH=src:. $PY run_scan_clusters.py 2>/dev/null | tee "$OUT/clusters_$D.txt" | cut -c1-220
 echo; echo "== 3/6 breakout scan on the preferred list (house Luk/Qullamaggie EOD screen)"
-$PY run_preferred_breakouts.py 2>/dev/null | tail -25
+# The preferred-breakout-eod Lambda runs this same scan at 19:15 ET into S3. Once today's copy exists, use it
+# instead of rescanning (house rule: check S3 before scanning locally; 2026-09-24 housekeeping). Before 19:15 ET,
+# or if the pull fails, scan locally as before. The Lambda's JSON is a superset of the local one.
+EOD_S3=s3://gmerton-stock-data/breakouts
+if aws s3 ls "$EOD_S3/eod_$D.txt" >/dev/null 2>&1 \
+   && aws s3 cp "$EOD_S3/eod_$D.txt" "$OUT/eod_$D.txt" --only-show-errors \
+   && aws s3 cp "$EOD_S3/eod_latest.json" "$OUT/eod_latest.json" --only-show-errors \
+   && aws s3 cp "$EOD_S3/monitor_latest.json" "$OUT/monitor_latest.json" --only-show-errors; then
+  echo "  (from the preferred-breakout-eod Lambda, $EOD_S3/eod_$D.txt -- no local rescan)"
+  tail -25 "$OUT/eod_$D.txt"
+else
+  echo "  (no Lambda scan for $D yet -- it runs at 19:15 ET; scanning locally)"
+  $PY run_preferred_breakouts.py 2>/dev/null | tail -25
+fi
 if [ "$(date +%u)" = 5 ] || [ "${STRADDLE:-0}" = 1 ]; then
   echo; echo "== 4/6 long-straddle screen (Friday entry day): all 5 playbook gates on the 323 pool (Tradier data; IBKR for the IV percentile)"
   # IBKR is used for the IV-percentile gate (falls back to the stale Athena table if TWS is closed).
