@@ -141,19 +141,23 @@ def score(E, F, idx, P):
     ctl = {}
     for h in HORIZONS:
         fr = np.full(C.shape, np.nan); fr[:-h] = C[h:] * (1 - SLIP) / (C[:-h] * (1 + SLIP)) - 1
+        # ADR terciles cut on the FULL eligible cross-section each date (fix 2026-09-25: cutting them on the
+        # population needed >= 30 precision-tier names per date and left most P1 entries without a control)
+        allb = P.elig.fillna(False).values & np.isfinite(adr)
+        terc = np.full(C.shape, -1)
+        for i in range(n):
+            if allb[i].sum() >= 30:
+                q = np.nanquantile(adr[i, allb[i]], [1 / 3, 2 / 3])
+                terc[i] = np.where(adr[i] <= q[0], 0, np.where(adr[i] <= q[1], 1, 2))
         for pop in ("P1", "P2"):
             base = F[pop] & ~in_ep & np.isfinite(fr) & np.isfinite(adr)
-            terc = np.full(C.shape, -1)
-            for i in range(n):
-                b = base[i]
-                if b.sum() >= 30:
-                    q = np.nanquantile(adr[i, b], [1 / 3, 2 / 3])
-                    terc[i] = np.where(adr[i] <= q[0], 0, np.where(adr[i] <= q[1], 1, 2))
-            M = np.full((n, 3), np.nan)
+            M = np.full((n, 4), np.nan)                    # cols 0-2 = tercile cells, col 3 = all population names that date
             for k in range(3):
                 w = base & (terc == k)
-                s = np.where(w, fr, 0).sum(1); c = w.sum(1)
-                M[:, k] = np.where(c >= 5, s / np.maximum(c, 1), np.nan)
+                sm = np.where(w, fr, 0).sum(1); c = w.sum(1)
+                M[:, k] = np.where(c >= 5, sm / np.maximum(c, 1), np.nan)
+            sm = np.where(base, fr, 0).sum(1); c = base.sum(1)
+            M[:, 3] = np.where(c >= 5, sm / np.maximum(c, 1), np.nan)
             ctl[(pop, h)] = (M, terc, fr)
     rows = []
     for r in E.itertuples():
@@ -162,9 +166,10 @@ def score(E, F, idx, P):
         rec["hold20"] = bool(r.i + 20 < n and np.nanmin(L[r.i + 1:r.i + 21, r.j]) > r.low) if r.i + 20 < n else np.nan
         for h in HORIZONS:
             M, terc, fr = ctl[(r.pop, h)]
-            tk = terc[r.i, r.j] if terc[r.i, r.j] >= 0 else (0 if adr[r.i, r.j] < 4.5 else 2)
+            tk = terc[r.i, r.j]
+            cm = M[r.i, tk] if tk >= 0 and np.isfinite(M[r.i, tk]) else M[r.i, 3]   # fall back to all same-date population names
             rec[f"fwd{h}"] = 100 * fr[r.i, r.j]
-            rec[f"x{h}"] = 100 * (fr[r.i, r.j] - M[r.i, tk]) if np.isfinite(M[r.i, tk]) else np.nan
+            rec[f"x{h}"] = 100 * (fr[r.i, r.j] - cm) if np.isfinite(cm) else np.nan
         rows.append(rec)
     return pd.DataFrame(rows)
 
@@ -189,7 +194,8 @@ def main():
            f"{T.date.min().date()} -> {T.date.max().date()}; Sidak(24) bar |t| >= {T_BAR}"]
     R = []
     for pop in ("P1", "P2"):
-        out.append(f"\n## {pop} {'(PRIMARY population)' if pop == 'P1' else ''}")
+        cov = T[T["pop"] == pop].x20.notna().mean()
+        out.append(f"\n## {pop} {'(PRIMARY population)' if pop == 'P1' else ''}  -- control coverage {cov:.0%} of entries")
         out.append(f"  {'rung':4s} {'n':>6s} {'fires%':>6s} {'hold20':>6s} {'prem ADR':>8s} | "
                    f"{'fwd20':>6s} {'x20':>6s} {'t':>6s} {'halves':>13s} {'yrs':>5s} | {'fwd60':>6s} {'x60':>6s} {'t':>6s}")
         n0 = T[(T["pop"] == pop) & (T.rung == "K0")].shape[0]
@@ -213,7 +219,7 @@ def main():
                 continue
             diff = (ep[r].fillna(0) - ep["K0"]).dropna()
             mo = diff.groupby(d0.reindex(diff.index).dt.to_period("M")).mean()
-            out.append(f"    {r} - K0: {diff.mean():+.2f}pp t {tstat(mo):+.2f}  (fires on {ep[r].notna().mean():.0%} of episodes)")
+            out.append(f"    {r} - K0: {mo.mean():+.2f}pp month-weighted (pooled {diff.mean():+.2f}) t {tstat(mo):+.2f}  (fires on {ep[r].notna().mean():.0%} of episodes)")
         # global-min bonus at K1
         S = T[(T["pop"] == pop) & (T.rung == "K1")]
         for lab, m in (("low AT support", S.support), ("low not at support", ~S.support)):

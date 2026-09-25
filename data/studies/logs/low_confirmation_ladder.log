@@ -1,0 +1,38 @@
+# Confirmation ladder off a pullback low (pre-registration in the docstring)
+# episodes: P1 3,478  P2 18,947; 2010-01-15 -> 2026-08-12; Sidak(24) bar |t| >= 3.07
+
+## P1 (PRIMARY population)  -- control coverage 64% of entries
+  rung      n fires% hold20 prem ADR |  fwd20    x20      t        halves   yrs |  fwd60    x60      t
+  K0     3478   100%    13%     0.35 |  +1.88  -0.36  -0.37  -2.57/ -0.18  6/12 |  +7.08  +0.36  +0.21
+  K1     2647    76%    38%     1.24 |  +2.09  +0.58  +0.67  +6.02/ +0.17  9/11 |  +6.71  +2.81  +1.42 <- PRIMARY
+  K2     2407    69%    42%     1.33 |  +2.06  +0.57  +0.71  +8.44/ +0.13 10/12 |  +6.58  +2.82  +1.39
+  K3     3012    87%    33%     1.02 |  +1.96  +0.84  +0.98  +4.21/ +0.59  8/11 |  +6.40  +2.70  +1.68
+  K4     3031    87%    28%     0.84 |  +2.01  +0.21  +0.27  +4.03/ -0.00  7/10 |  +6.59  +0.81  +0.51
+  K5     2404    69%    59%     2.28 |  +2.17  +1.51  +1.08  +5.86/ +1.32  7/11 |  +7.01  +3.11  +1.63
+  policy per episode vs K0 (+20, 0 if the rung never fires):
+    K1 - K0: +1.32pp month-weighted (pooled -0.29) t +2.47  (fires on 76% of episodes)
+    K2 - K0: +1.19pp month-weighted (pooled -0.45) t +1.93  (fires on 69% of episodes)
+    K3 - K0: +0.92pp month-weighted (pooled -0.18) t +2.13  (fires on 87% of episodes)
+    K4 - K0: +0.78pp month-weighted (pooled -0.13) t +2.18  (fires on 87% of episodes)
+    K5 - K0: +1.15pp month-weighted (pooled -0.38) t +2.08  (fires on 69% of episodes)
+  [bonus, exploratory] K1 low AT support      n    838 hold20   39%  x20 +3.47pp t +3.63
+  [bonus, exploratory] K1 low not at support  n   1809 hold20   38%  x20 -0.78pp t -0.89
+
+## P2   -- control coverage 96% of entries
+  rung      n fires% hold20 prem ADR |  fwd20    x20      t        halves   yrs |  fwd60    x60      t
+  K0    18947   100%    13%     0.33 |  +1.48  +1.07  +4.16  +0.90/ +1.23 16/17 |  +5.41  +1.62  +3.61
+  K1    14405    76%    37%     1.25 |  +1.56  +1.10  +3.94  +0.99/ +1.19 16/17 |  +5.52  +1.30  +2.57
+  K2    13069    69%    41%     1.37 |  +1.69  +1.39  +5.16  +1.52/ +1.28 16/17 |  +5.64  +1.50  +3.24
+  K3    16410    87%    32%     1.04 |  +1.49  +1.33  +5.50  +1.54/ +1.14 16/17 |  +5.35  +1.68  +3.98
+  K4    16355    86%    29%     0.89 |  +1.54  +0.98  +3.27  +0.77/ +1.16 15/17 |  +5.42  +1.36  +2.89
+  K5    13266    70%    59%     2.33 |  +1.37  +0.69  +2.53  +0.35/ +0.99 13/17 |  +4.97  +0.88  +1.79
+  policy per episode vs K0 (+20, 0 if the rung never fires):
+    K1 - K0: +0.36pp month-weighted (pooled -0.30) t +1.33  (fires on 76% of episodes)
+    K2 - K0: +0.35pp month-weighted (pooled -0.32) t +1.16  (fires on 69% of episodes)
+    K3 - K0: +0.37pp month-weighted (pooled -0.19) t +1.72  (fires on 87% of episodes)
+    K4 - K0: +0.27pp month-weighted (pooled -0.15) t +1.50  (fires on 86% of episodes)
+    K5 - K0: -0.03pp month-weighted (pooled -0.53) t -0.11  (fires on 70% of episodes)
+  [bonus, exploratory] K1 low AT support      n   4303 hold20   41%  x20 +2.00pp t +4.75
+  [bonus, exploratory] K1 low not at support  n  10102 hold20   36%  x20 +0.81pp t +2.63
+
+VERDICT: SIGNAL rungs: P2 K0 +20 (+1.07pp t +4.16), P2 K0 +60 (+1.62pp t +3.61), P2 K1 +20 (+1.10pp t +3.94), P2 K2 +20 (+1.39pp t +5.16), P2 K2 +60 (+1.50pp t +3.24), P2 K3 +20 (+1.33pp t +5.50), P2 K3 +60 (+1.68pp t +3.98), P2 K4 +20 (+0.98pp t +3.27)
