@@ -48,8 +48,7 @@ AWS_PROFILE=clarinut-gmerton MYSQL_PASSWORD=... PYTHONPATH=src .venv/bin/python3
 - **`daily_desk.sh`** — the evening desk: regime, open book, scans, clusters, grades, and tomorrow's focus
   universe. Pulls the Minervini matrix and preferred list from S3 first — do not bypass that.
 
-Periodic: `run_friday_screener.py` (Fri), `run_putspread_scan.py` (Thu — carries the tested IV≥60th-pctile
-gate; **`run_thursday_screener.py` is superseded and ungated**), and a monthly re-validation trio.
+Periodic: `run_friday_screener.py` (Fri), `run_putspread_scan.py` (Thu — its IV≥60th-pctile gate is UNDERPOWERED / NOT CERTIFIED and the script is not the tested rule: paper only, audit 2026-09-25), and a monthly re-validation trio.
 
 On demand: `./journal_day.sh --date <YYYYMMDD>` is **backfill only** now that launchd runs the same chain
 daily; the trade reviewer (`python -m lib.trade_reviewer.cli [-p TICKER]`, needs `ANTHROPIC_API_KEY`); and

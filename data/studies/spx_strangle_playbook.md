@@ -95,7 +95,7 @@ fired on the most recent Friday.
 | **2× stop loss** | Buy back strangle when combined mid ≥ 2× entry credit |
 | **Expiry** | Let expire (or close for small debit) if neither trigger reached |
 
-**Important on the stop:** The 2× stop never triggered in 10 years of backtesting (2016–2025,
+**Important on the stop:** The 2× stop never triggered in the backtest (⚠ audit 2026-09-25: effectively 2018–2025 — the VIX cache starts 2018-01-08, so 2016–17 regimes were NaN and the 2016-Q1 stress episode is untested;
 142+ trades). This does not mean it will never trigger — it means the 45 DTE horizon and the
 OTM strike selection have historically provided enough time and buffer for the market to
 resolve. Include the stop as a hard GTC order. Given SPX's potential for gap moves, set

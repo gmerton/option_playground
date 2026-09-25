@@ -101,7 +101,7 @@ TRADIER_API_KEY=... PYTHONPATH=src .venv/bin/python3 run_friday_screener.py
 ```bash
 IB_PORT=7496 IB_ALLOW_LIVE=1 TRADIER_API_KEY=... PYTHONPATH=src:. .venv/bin/python3 run_putspread_scan.py
 ```
-- **`run_putspread_scan.py` is current** (2026-09-18, carries the tested IV≥60th-pctile gate). Produces a single-name bull-put candidate list, terminal + `data/watchlist/`.
+- **`run_putspread_scan.py` is current** (2026-09-18) — ⚠ **audit 2026-09-25: the IV ≥ 60th-pct gate is UNDERPOWERED / NOT CERTIFIED (t 1.53), and this script does not implement the tested rule** (leaders not SETUP, an extra untested IV/RV ≥ 1 filter, mid credit, hard-coded `--expiry`). Paper only. Produces a single-name bull-put candidate list, terminal + `data/watchlist/`.
 - **`run_thursday_screener.py` is superseded** by it — same trade, no IV gate, and ungated is −3.3% net.
 - **Skip it:** no bull-put candidates; the straddle/bull-put pair goes one-legged.
 

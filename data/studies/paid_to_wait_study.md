@@ -15,7 +15,7 @@
 
 By regime state at entry (hold to expiry, net): up/B+ −5.2% (n 824), up/B− −0.8% (244), chop/B+ −8.2%, chop/B− +5.0%, bear/B+ −3.0%, bear/B− +10.9% (50). With the IV gate on: up/B− +10.9% (25), bear/B+ +14.7% (15), chop/B− +24.1% (12), up/B+ −2.3% (62).
 
-By year (hold, net): 2019 +15%, 2020 +13%, **2021 −17%, 2022 −19%**, 2023 −0.5%, 2024 −2.7%, 2025 +0.8%, 2026 (Jan–May entries) −45% on 46 events.
+By year (hold, net): 2019 +15%, 2020 +13%, **2021 −17%, 2022 −19%**, 2023 −0.5%, 2024 −2.7%, 2025 +0.8%, 2026 (Jan–Feb entries; ⚠ audit 2026-09-25: the CSV's last entry is 2026-02-20, not May) −45% on 46 events.
 
 ## Reading
 

@@ -1,5 +1,11 @@
 # Capital Allocation Framework
 
+> ## ⛔ AUDIT 2026-09-25 (supersedes everything below, including the 9/22 status block)
+> **Certified: ONE strategy — SPY bull put 0.25/0.15 in the stress regime (below 50MA + VIX ≥ 20), SPY only** (Gabe 9/25: the SPX
+> condor is not traded; QQQ is not certified). The straddle is PARKED (token size), the breakout is uncertified selection (trade small),
+> the paid-to-wait gate is paper only. See `audit_top_down_2026-09-25.md` and TEST_INDEX §0.
+
+
 > **⚠ Read `audit_review_2026-09-16.md` first.** After the September audits the only strategies with a defensible edge are the 7-DTE long straddle and the bull put spread, and **neither clears a monthly t of 2 alone — the 50/50 pair does (t 2.5, correlation −0.25)**. All calendar structures are withdrawn (no edge on clean data) and their framework rows are void. Size the two survivors as paired sleeves, not as independent line items.
 
 > ## ⛔ CERTIFICATION STATUS — 2026-09-22 (supersedes the tiers below)
