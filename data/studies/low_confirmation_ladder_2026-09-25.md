@@ -46,5 +46,6 @@ Control = same-date names in the same population and ADR tercile, not themselves
 ## Next (candidates, not run)
 1. **Survivorship check** for P2 K0/K3: rebuild spot for delisted optionable names from `options_daily_v3` chains
    (`chain_spot.py`), or a forward lockbox from 2026-10. No adoption before one of these.
-2. **Support-low pre-registration** (the bonus) on a holdout: fit nothing, test "K1 at support vs K1 elsewhere" on
-   2010–2017 (untouched by the exploratory look, which pooled the years). Same survivorship caveat.
+2. **Support-low pre-registration.** ⚠ Corrected 2026-09-25: an earlier draft proposed 2010–2017 as a holdout. That is
+   wrong, because the exploratory look pooled ALL years, so no in-panel holdout exists. The holdout is the names NOT in
+   the panel. Both follow-ups are pre-registered in `run_dip_survivorship.py` on `silver.chain_spot_daily`.
