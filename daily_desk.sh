@@ -6,6 +6,7 @@ cd "$(dirname "$0")"
 # secrets live in ~/.trading_env; load them here like start_alerts.sh / morning_journal.sh do, so the desk does not
 # depend on the launching shell (2026-09-24: the GEX paper-trade step had logged nothing since it was added 9/21)
 if [ -f "$HOME/.trading_env" ]; then set +u; source "$HOME/.trading_env"; set -u; fi
+export AWS_PROFILE="${AWS_PROFILE:-clarinut-gmerton}"   # S3 pulls + the straddle screen's Athena fallback (2026-09-24)
 for v in TRADIER_API_KEY MYSQL_PASSWORD; do [ -n "${!v:-}" ] || echo "  ⚠ $v is not set -- add it to ~/.trading_env"; done
 PY=.venv/bin/python3; export PYTHONPATH=src
 D=$(date +%F); OUT=data/watchlist; mkdir -p "$OUT"
