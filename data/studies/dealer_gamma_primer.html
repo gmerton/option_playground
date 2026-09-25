@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dealer Gamma Primer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #F5F7FA;
+    --surface: #FFFFFF;
+    --ink: #1C2430;
+    --muted: #586375;
+    --rule: #D8DEE7;
+    --accent: #1F6485;
+    --accent-soft: #E3EEF4;
+    --pos: #2E7A57;
+    --pos-soft: #E2F1E9;
+    --neg: #B0502A;
+    --neg-soft: #F7E7DF;
+    --warn: #8A6A12;
+    --warn-soft: #F4EDD6;
+    --code-bg: #EDF1F6;
+    --sans: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+    --cond: "IBM Plex Sans Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --bg: #11161D;
+      --surface: #171E27;
+      --ink: #E3E8EF;
+      --muted: #9AA5B4;
+      --rule: #2A3441;
+      --accent: #6BB2D2;
+      --accent-soft: #1A2C38;
+      --pos: #6CC39A;
+      --pos-soft: #16291F;
+      --neg: #E68D66;
+      --neg-soft: #2F1E17;
+      --warn: #D9B75A;
+      --warn-soft: #2B2514;
+      --code-bg: #1C2530;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #11161D;
+    --surface: #171E27;
+    --ink: #E3E8EF;
+    --muted: #9AA5B4;
+    --rule: #2A3441;
+    --accent: #6BB2D2;
+    --accent-soft: #1A2C38;
+    --pos: #6CC39A;
+    --pos-soft: #16291F;
+    --neg: #E68D66;
+    --neg-soft: #2F1E17;
+    --warn: #D9B75A;
+    --warn-soft: #2B2514;
+    --code-bg: #1C2530;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding-inline: 20px;
+    padding-block: 48px 72px;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+  }
+  h1, h2, h3 { font-family: var(--cond); text-wrap: balance; margin: 0; line-height: 1.15; }
+  h1 { font-size: 2.6rem; font-weight: 600; letter-spacing: -0.01em; }
+  h2 { font-size: 1.65rem; font-weight: 600; }
+  h3 { font-size: 1.15rem; font-weight: 600; }
+  p { margin: 0; max-width: 66ch; }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+  code, .mono { font-family: var(--mono); font-size: 0.9em; }
+  code { background: var(--code-bg); padding: 0.1em 0.35em; border-radius: 4px; }
+  .num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+
+  section { display: flex; flex-direction: column; gap: 18px; }
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .lede { font-size: 1.15rem; color: var(--muted); max-width: 60ch; }
+  header { display: flex; flex-direction: column; gap: 14px; border-bottom: 1px solid var(--rule); padding-bottom: 28px; }
+  .meta { display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 0.85rem; color: var(--muted); }
+
+  ul.plain { margin: 0; padding-left: 1.1em; display: flex; flex-direction: column; gap: 8px; max-width: 66ch; }
+
+  /* two-panel hedging diagram */
+  .regimes { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+  .regime {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .regime.pos { border-top: 3px solid var(--pos); }
+  .regime.neg { border-top: 3px solid var(--neg); }
+  .regime h3 .tag { font-family: var(--mono); font-size: 0.8rem; font-weight: 500; }
+  .regime.pos h3 .tag { color: var(--pos); }
+  .regime.neg h3 .tag { color: var(--neg); }
+  .regime svg { width: 100%; height: auto; display: block; }
+  .regime p { font-size: 0.95rem; }
+  .regime .effect { font-weight: 600; }
+
+  /* tables */
+  .table-wrap { overflow-x: auto; border: 1px solid var(--rule); border-radius: 8px; background: var(--surface); }
+  table { border-collapse: collapse; width: 100%; font-size: 0.93rem; }
+  th, td { text-align: left; vertical-align: top; padding: 11px 14px; border-bottom: 1px solid var(--rule); }
+  tr:last-child td { border-bottom: none; }
+  th { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); font-weight: 500; background: var(--bg); }
+
+  /* formula block */
+  .formula {
+    background: var(--code-bg);
+    border-radius: 8px;
+    padding: 16px 18px;
+    font-family: var(--mono);
+    font-size: 0.92rem;
+    overflow-x: auto;
+    line-height: 1.7;
+  }
+  .reading {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+  }
+  .reading div {
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    padding: 12px 14px;
+    background: var(--surface);
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .reading .big { font-family: var(--mono); font-size: 1.35rem; color: var(--neg); font-variant-numeric: tabular-nums; }
+  .reading .lbl { font-size: 0.8rem; color: var(--muted); }
+
+  /* timeline */
+  ol.timeline { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+  ol.timeline li {
+    display: grid;
+    grid-template-columns: 112px 1fr;
+    gap: 18px;
+    padding-block: 16px;
+    border-top: 1px solid var(--rule);
+  }
+  ol.timeline li:first-child { border-top: none; }
+  .t {
+    font-family: var(--mono);
+    font-size: 0.85rem;
+    color: var(--accent);
+    font-weight: 500;
+    font-variant-numeric: tabular-nums;
+    padding-top: 2px;
+  }
+  .tl-body { display: flex; flex-direction: column; gap: 6px; }
+  .tl-body h3 { font-size: 1.05rem; }
+  .why { font-size: 0.93rem; color: var(--muted); }
+  .why strong { color: var(--ink); font-weight: 600; }
+
+  /* verdict chips */
+  .chip {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 999px;
+    white-space: nowrap;
+    font-weight: 500;
+  }
+  .chip.pass { background: var(--pos-soft); color: var(--pos); }
+  .chip.fail { background: var(--neg-soft); color: var(--neg); }
+  .chip.near { background: var(--warn-soft); color: var(--warn); }
+  .chip.none { background: var(--accent-soft); color: var(--accent); }
+
+  .callout {
+    border-left: 3px solid var(--accent);
+    background: var(--accent-soft);
+    padding: 14px 18px;
+    border-radius: 0 8px 8px 0;
+    max-width: 66ch;
+  }
+  .callout p + p { margin-top: 8px; }
+
+  footer { border-top: 1px solid var(--rule); padding-top: 20px; font-size: 0.85rem; color: var(--muted); display: flex; flex-direction: column; gap: 6px; }
+  footer code { font-size: 0.82rem; }
+
+  @media (max-width: 520px) {
+    h1 { font-size: 2.05rem; }
+    ol.timeline li { grid-template-columns: 1fr; gap: 6px; }
+    .page { gap: 44px; padding-block: 32px 56px; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+<main class="page">
+
+  <header>
+    <span class="eyebrow">Options desk · primer · 2026-09-24</span>
+    <h1>Dealer Gamma Primer</h1>
+    <p class="lede">What positive and negative gamma mean, how dealer hedging plays out across a trading day, and which parts of the popular story our own tests support.</p>
+    <div class="meta">
+      <span>Underlying: <span class="mono">SPY</span> (QQQ as robustness)</span>
+      <span>Tested sample: 2010 → 2026-02</span>
+      <span>All times ET</span>
+    </div>
+  </header>
+
+  <section id="gamma">
+    <span class="eyebrow">1 · One option</span>
+    <h2>Gamma for a single option</h2>
+    <ul class="plain">
+      <li><strong>Delta</strong> is how much an option's price moves per $1 in the underlying. A 0.50-delta call behaves like 50 shares.</li>
+      <li><strong>Gamma</strong> is how fast delta itself changes as the underlying moves.</li>
+      <li><strong>Long an option means positive gamma.</strong> Your position gets longer as the stock rises and shorter as it falls, so big moves either way help you.</li>
+      <li><strong>Short an option means negative gamma.</strong> Your position moves against the market: shorter as it rises, longer as it falls. Big moves hurt.</li>
+      <li>Gamma is largest for options <strong>near the money</strong> and <strong>close to expiry</strong>.</li>
+    </ul>
+  </section>
+
+  <section id="dealers">
+    <span class="eyebrow">2 · The other side</span>
+    <h2>Why dealers matter</h2>
+    <p>Market makers take the other side of customer option trades and earn the bid-ask spread. They don't want a directional bet, so they <strong>delta-hedge</strong>: they buy or sell the underlying, mostly ES futures and SPY, to keep their net delta near zero. Which way that hedging pushes the market depends on the sign of <em>their</em> gamma.</p>
+
+    <div class="regimes">
+      <div class="regime pos">
+        <h3>Dealers long gamma <span class="tag">GEX &gt; 0</span></h3>
+        <svg viewBox="0 0 260 110" role="img" aria-label="Price rises, dealers sell; price falls, dealers buy. The path is pulled back toward the middle.">
+          <line x1="10" y1="55" x2="250" y2="55" stroke="var(--rule)" stroke-width="1" stroke-dasharray="3 4"/>
+          <polyline points="10,55 50,38 80,52 115,66 150,50 185,40 215,56 250,52" fill="none" stroke="var(--pos)" stroke-width="2.5" stroke-linejoin="round"/>
+          <text x="50" y="26" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="var(--muted)">sell</text>
+          <text x="115" y="88" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="var(--muted)">buy</text>
+          <text x="185" y="28" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="var(--muted)">sell</text>
+          <circle cx="50" cy="38" r="3.5" fill="var(--pos)"/>
+          <circle cx="115" cy="66" r="3.5" fill="var(--pos)"/>
+          <circle cx="185" cy="40" r="3.5" fill="var(--pos)"/>
+        </svg>
+        <p>Market rises → they <strong>sell</strong>. Market falls → they <strong>buy</strong>.</p>
+        <p class="effect" style="color: var(--pos)">Hedging leans against moves: dampening, mean reversion, range days.</p>
+      </div>
+      <div class="regime neg">
+        <h3>Dealers short gamma <span class="tag">GEX &lt; 0</span></h3>
+        <svg viewBox="0 0 260 110" role="img" aria-label="Price falls, dealers sell more; the move extends.">
+          <line x1="10" y1="30" x2="250" y2="30" stroke="var(--rule)" stroke-width="1" stroke-dasharray="3 4"/>
+          <polyline points="10,30 45,36 75,33 110,48 140,45 175,66 205,63 250,92" fill="none" stroke="var(--neg)" stroke-width="2.5" stroke-linejoin="round"/>
+          <text x="110" y="66" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="var(--muted)">sell</text>
+          <text x="175" y="84" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="var(--muted)">sell</text>
+          <text x="232" y="74" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="var(--muted)">sell</text>
+          <circle cx="110" cy="48" r="3.5" fill="var(--neg)"/>
+          <circle cx="175" cy="66" r="3.5" fill="var(--neg)"/>
+          <circle cx="232" cy="81" r="3.5" fill="var(--neg)"/>
+        </svg>
+        <p>Market rises → they <strong>buy</strong>. Market falls → they <strong>sell</strong>.</p>
+        <p class="effect" style="color: var(--neg)">Hedging chases moves: amplifying, trend and expansion days.</p>
+      </div>
+    </div>
+    <p>This is the same split Al Brooks draws between trend days and range days. The difference is that the gamma sign is known before the open.</p>
+  </section>
+
+  <section id="estimate">
+    <span class="eyebrow">3 · Measurement</span>
+    <h2>How we estimate it</h2>
+    <p>Nobody can see dealer positions directly. The standard <strong>naive assumption</strong> is that customers mostly <em>sell</em> calls (covered calls, overwriting) and <em>buy</em> puts (protection), which leaves dealers long calls and short puts. The desk computes exactly that in <code>run_gex_fly_paper.compute_gex</code>:</p>
+    <div class="formula">
+      Net GEX = Σ<sub>calls</sub> (OI × γ) − Σ<sub>puts</sub> (OI × γ)<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;× 100 × S² × 0.01 &nbsp;&nbsp;→ dollars per 1% move<br>
+      <span style="color: var(--muted)">every SPY expiry · strikes within ±20% of spot S</span>
+    </div>
+    <p><strong>Reading the number:</strong> −$7.8bn per 1% means that if SPY moves 1%, dealers would need to trade roughly $7.8bn of SPY exposure <em>in the same direction as the move</em> to stay hedged. A positive number means trading against the move.</p>
+    <div class="reading">
+      <div><span class="lbl">2026-09-24, morning (intraday estimate)</span><span class="big">−$5.87bn</span><span class="lbl">per 1% · SPY 765.97</span></div>
+      <div><span class="lbl">2026-09-24, 13:14 ET (intraday estimate)</span><span class="big">−$7.82bn</span><span class="lbl">per 1% · SPY 768.40</span></div>
+    </div>
+    <p><strong>Why it often turns negative in selloffs:</strong> as the market falls, spot moves toward the large put open interest below it. Those puts gain gamma, and under the naive sign dealers are short them, so net gamma goes negative just as the market gets fragile.</p>
+  </section>
+
+  <section id="day">
+    <span class="eyebrow">4 · Sequence</span>
+    <h2>A trading day, from the dealers' side</h2>
+    <p><strong>Customers</strong> are retail traders, funds buying puts, institutions selling covered calls, volatility funds, and a growing crowd of 0DTE traders. <strong>Dealers</strong> are firms such as Citadel Securities, Susquehanna and bank desks, which hedge with ES futures, SPY and stock baskets.</p>
+    <ol class="timeline">
+      <li>
+        <span class="t">~6–7 am</span>
+        <div class="tl-body">
+          <h3>Open interest is published</h3>
+          <p>The OCC publishes how many contracts exist at each strike as of yesterday's close. ES futures have traded all night, and dealers can hedge there.</p>
+          <p class="why"><strong>For GEX:</strong> OI updates only once a day, so any GEX number is yesterday's book priced at today's spot.</p>
+        </div>
+      </li>
+      <li>
+        <span class="t">pre-open</span>
+        <div class="tl-body">
+          <h3>News sets the gap</h3>
+          <p>Overnight news moves ES. The gap decides where spot opens relative to the big strikes.</p>
+          <p class="why"><strong>For GEX:</strong> gamma depends on spot's distance to the strikes, so a gap alone can change the regime.</p>
+        </div>
+      </li>
+      <li>
+        <span class="t">9:30</span>
+        <div class="tl-body">
+          <h3>The open</h3>
+          <p>Opening auction and the heaviest volume of the day. Customers open new positions, including 0DTE trades that won't appear in anyone's OI until tomorrow.</p>
+          <p class="why"><strong>For GEX:</strong> this is the biggest blind spot. 0DTE is a large share of SPX volume, and the morning's new positions change dealers' real gamma in ways the pre-open estimate can't see.</p>
+        </div>
+      </li>
+      <li>
+        <span class="t">through the day</span>
+        <div class="tl-body">
+          <h3>Continuous re-hedging</h3>
+          <p>Dealers re-hedge in bands, when their delta drifts past a threshold, rather than on every tick. Long gamma means selling rallies and buying dips; short gamma means the reverse.</p>
+          <p>Two secondary flows move delta without any price change. <strong>Vanna</strong>: a change in implied vol changes delta. In a rally IV usually falls, the delta of the puts dealers are short shrinks, and they buy back hedges, which extends the rally. <strong>Charm</strong>: time decay changes delta, most strongly into the close, Fridays and expiry.</p>
+          <p class="why"><strong>For GEX:</strong> vanna and charm are general market-structure theory. We have not tested them.</p>
+        </div>
+      </li>
+      <li>
+        <span class="t">~2 pm – close</span>
+        <div class="tl-body">
+          <h3>Gamma peaks</h3>
+          <p>Near-expiry options carry their highest gamma, and 0DTE contracts head to zero or intrinsic by 4:00.</p>
+          <p class="why"><strong>For GEX:</strong> hedging is most intense and most sensitive to small moves. Pinning talk centers here, and our pin test failed.</p>
+        </div>
+      </li>
+      <li>
+        <span class="t">3:50 – 4:00</span>
+        <div class="tl-body">
+          <h3>The close</h3>
+          <p>Market-on-close imbalances and the closing auction. Leveraged ETFs rebalance in the direction of the day's move, which acts like one more short-gamma flow.</p>
+          <p class="why"><strong>For GEX:</strong> the desk's certified 1-day trades price here, which is why the GEX close step runs from 15:30 and the paper fly enters around 15:50.</p>
+        </div>
+      </li>
+      <li>
+        <span class="t">after 4:00</span>
+        <div class="tl-body">
+          <h3>Expiry and the overnight count</h3>
+          <p>SPY options expire daily. The day's positions are tallied for tomorrow morning's OI.</p>
+          <p class="why"><strong>For GEX:</strong> tomorrow's number starts from here, and the prior-close sign is the variable our tests use.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section id="tested">
+    <span class="eyebrow">5 · Evidence</span>
+    <h2>What our own tests show</h2>
+    <p>The signal is the <strong>prior close's</strong> GEX sign, known before the open. Every result below uses it.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Claim often made</th><th>Verdict</th><th>Our result</th></tr></thead>
+        <tbody>
+          <tr><td>Negative gamma → more volatile days</td><td><span class="chip pass">Pass</span></td><td>SPY realized vol <span class="num">+8.1%</span> beyond what VIX and yesterday's vol predict, <span class="num">t 7.7</span>, both halves (QQQ <span class="num">+4.0%</span>, <span class="num">t 4.1</span>)</td></tr>
+          <tr><td>Positive gamma → calm days you can sell</td><td><span class="chip pass">Certified</span></td><td>SPY 1-day short straddle <span class="num">+13.7%</span> of credit at real fills, <span class="num">t 5.6</span>; the 2× iron fly <span class="num">+5.8%</span>, <span class="num">t 3.4</span></td></tr>
+          <tr><td>Negative gamma → trends you can ride</td><td><span class="chip near">Near miss</span></td><td>QQQ intraday momentum on negative days <span class="num">+4.16</span> bps/session, <span class="num">t 2.92</span> against a bar of 3; mostly 2018 and 2022</td></tr>
+          <tr><td>Price is pinned to the biggest-gamma strike</td><td><span class="chip fail">Fail</span></td><td>No magnet effect, daily or intraday</td></tr>
+          <tr><td>GEX tells you direction</td><td><span class="chip fail">No</span></td><td>It is a volatility-regime input, not up or down</td></tr>
+          <tr><td>Intraday GEX updates (noon re-estimate with 0DTE flow)</td><td><span class="chip none">Untested</span></td><td>How many traders use it; not in our ledger</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="caveats">
+    <span class="eyebrow">6 · Limits</span>
+    <h2>Caveats</h2>
+    <ul class="plain">
+      <li><strong>The sign is assumed, not observed.</strong> When customers pile into calls, as in 2021, dealers can be short calls and the naive number reads the wrong way.</li>
+      <li><strong>Dealers hedge whole books</strong> across many products, some of them off-exchange, so SPY option OI shows only part of their position.</li>
+      <li><strong>Intraday readings are not the tested number.</strong> Today's −$5.87bn and −$7.82bn were mid-session estimates; the validated variable is the reading at the close.</li>
+      <li><strong>The effect is on how much the market moves, not which way.</strong> SPY and ES trade enormous volume, and dealer hedging is one flow among many.</li>
+    </ul>
+  </section>
+
+  <section id="rule">
+    <span class="eyebrow">7 · Practice</span>
+    <h2>The practical rule</h2>
+    <div class="callout">
+      <p><strong>Positive gamma at the close:</strong> selling short-dated index premium has paid.</p>
+      <p><strong>Negative gamma at the close:</strong> expect bigger moves than implied vol suggests. Don't sell premium and don't fade moves.</p>
+      <p>The tradeable part is sizing premium sales to the regime, not predicting direction.</p>
+    </div>
+  </section>
+
+  <footer>
+    <span>Sources in this repo: <code>data/studies/gex_regime_pin_2026-09-21.md</code>, <code>gex_spy_straddle_2026-09-21.md</code>, <code>gex_spy_ironfly_2026-09-21.md</code>, <code>gex_noise_band_2026-09-21.md</code>, and <code>TEST_INDEX.md</code>.</span>
+    <span>Live computation: <code>run_gex_fly_paper.py</code> (<code>--close</code> from 15:30 ET, <code>--dry</code> to print without logging).</span>
+  </footer>
+
+</main>
+</body>
+</html>
