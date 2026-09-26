@@ -99,6 +99,9 @@ def fetch(sym: str, a: date, b: date) -> pd.DataFrame | None:
     if not rows:
         return pd.DataFrame()
     df = pd.DataFrame(rows)
+    if "vw" not in df:                          # some responses omit per-bar VWAP entirely (crash 2026-09-26)
+        df["vw"] = float("nan")
+    df["vw"] = df["vw"].fillna(df["c"])         # fall back to the bar close where VWAP is missing
     t = pd.to_datetime(df["t"], unit="ms", utc=True).dt.tz_convert(ET).dt.tz_localize(None)
     df = pd.DataFrame({"timestamp": (df["t"] // 1000).astype("int64").values, "price": df["vw"].values,
                        "open": df["o"].values, "high": df["h"].values, "low": df["l"].values, "close": df["c"].values,
