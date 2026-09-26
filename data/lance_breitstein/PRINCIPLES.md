@@ -114,6 +114,9 @@ tracks — see [README.md](README.md). Nothing below is written up yet except AV
       ⭐ The firsthand source for `run_journal_grades.py`. His card = ONE rotating process goal *is* the grade,
       + time blocks, a sleep/state→risk dial, and "easiest 50k" (the day's easiest LAYUP, not the biggest trade).
       Per DAY. Ours has 5 frozen components and can't score a zero-trade day. **3.5/5**, zero evidence, course module.
+- [x] **16 Years of Swing Trading Lessons in 12 Minutes** — `bZ7-iBaI_Xw` (2026-09-26) ✅ WRITTEN UP 2026-09-26
+      10 intraday→swing lessons, no numbers. **2/5, no new test**: size-down/gap risk AGREES; "intraday = more edge"
+      and "adapt to the regime" CONTRADICTED on our data (Stage A, WL-2b); adaptivity sim already queued (§10).
 - [x] **My Trade Grading System that Made Me $100M (A,B,C,D)** — `ubofAZwgd4w` (2026-08-15) ✅ WRITTEN UP
       Per TRADE, graded BEFORE entry, output = size; one rubric PER SETUP (capitulation vs breakout variables are
       "almost the opposite"). ⚠ His validation loop has no universe control — exactly the error our v1→v2

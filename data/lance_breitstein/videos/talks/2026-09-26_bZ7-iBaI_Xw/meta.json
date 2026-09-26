@@ -1,0 +1,19 @@
+{
+  "video_id": "bZ7-iBaI_Xw",
+  "url": "https://www.youtube.com/watch?v=bZ7-iBaI_Xw",
+  "title": "16 Years of Swing Trading Lessons in 12 Minutes",
+  "channel": "TheOneLanceB",
+  "channel_id": "UCzksXiC-Ju-DTIZmMiaOVfQ",
+  "stream_date": "2026-09-26",
+  "duration": "11:58",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en-orig",
+    "format": "timestamped_text_hh_mm_ss (~60s paragraphs)",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; names mis-transcribed (Qullamaggie -> 'Qualagi'/'Kamagi', Nikkei -> 'Nikkeay')."
+  },
+  "supplemental_notes_file": "notes.md"
+}
