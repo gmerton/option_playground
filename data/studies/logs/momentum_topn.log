@@ -1,0 +1,23 @@
+# 12-1 momentum as a ~20-name book (pre-registration in the docstring)
+
+## D1: +1.65%/mo, excess vs EW +0.67pp t_NW +2.93 halves +0.38/+0.92 yrs 12/16 | maxDD 28%, monthly sd 6.6%, turnover 31%
+  excess by year: 2011:-1.0 2012:+9.3 2013:+14.1 2014:+5.8 2015:+6.4 2016:-11.6 2017:+8.1 2018:+6.2 2019:+7.1 2020:+21.8 2021:-6.1 2022:+21.8 2023:-4.5 2024:+23.6 2025:+13.5 2026:+5.7
+
+## T20  <- PRIMARY: +2.20%/mo, excess vs EW +1.22pp t_NW +2.68 halves +0.44/+1.88 yrs 9/16 | minus decile +0.55pp t +1.89 | maxDD 35%, monthly sd 9.1%, turnover 38%
+  excess by year: 2011:-10.3 2012:+23.2 2013:+18.5 2014:+8.6 2015:-2.5 2016:-17.3 2017:+16.4 2018:-1.5 2019:+34.2 2020:+64.7 2021:-12.0 2022:+47.6 2023:-4.9 2024:+43.0 2025:-1.9 2026:+13.3
+
+## T30: +2.06%/mo, excess vs EW +1.08pp t_NW +2.77 halves +0.47/+1.60 yrs 11/16 | minus decile +0.41pp t +1.96 | maxDD 30%, monthly sd 8.2%, turnover 35%
+  excess by year: 2011:-6.5 2012:+18.1 2013:+18.3 2014:+8.9 2015:+1.6 2016:-20.0 2017:+18.5 2018:-0.1 2019:+23.0 2020:+54.4 2021:-15.5 2022:+42.9 2023:-9.0 2024:+36.7 2025:+13.3 2026:+9.5
+
+## LV20: +1.06%/mo, excess vs EW +0.08pp t_NW +0.34 halves +0.04/+0.11 yrs 8/16 | minus decile -0.59pp t -2.52 | maxDD 31%, monthly sd 5.1%, turnover 49%
+  excess by year: 2011:+7.6 2012:-5.1 2013:+6.6 2014:+11.3 2015:+8.9 2016:-22.4 2017:-3.6 2018:+5.2 2019:-12.6 2020:-15.4 2021:-0.6 2022:+17.2 2023:-12.8 2024:+33.2 2025:-6.9 2026:+3.7
+
+## DISPERSION: 1000 random 20-name picks from the decile, 15-yr mean monthly excess vs EW: p5 +0.38 p25 +0.55 p50 +0.67 p75 +0.79 p95 +0.97pp; share of draws with excess <= 0: 0%
+
+cell  months  ret_mo  excess  t_nw    h1    h2 yrs_pos  vs_D1  t_vs_D1  maxDD  vol_mo  turnover  PASS  ACCEPTABLE  WORSE
+  D1     180   1.648   0.668 2.931 0.375 0.918   12/16    NaN      NaN 28.327   6.578     0.312 False       False  False
+ T20     180   2.198   1.218 2.677 0.441 1.883    9/16  0.550    1.893 34.778   9.114     0.380 False        True  False
+ T30     180   2.059   1.079 2.766 0.469 1.601   11/16  0.411    1.962 30.394   8.154     0.349 False        True  False
+LV20     180   1.059   0.079 0.343 0.039 0.113    8/16 -0.589   -2.524 31.462   5.076     0.494 False       False   True
+
+VERDICT (PRIMARY T20): certification fail; implementation ACCEPTABLE. Acceptable cells: T20, T30
