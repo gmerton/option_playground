@@ -1,0 +1,41 @@
+# Residual momentum + frog in the pan (pre-registration in the docstring)
+
+## RAW 12-1 decile (reference): ~85 names, excess +0.67pp/mo t_NW +2.93 halves +0.36/+0.92 yrs 12/16 | p95-winsorised -0.12 t -0.64 | maxDD 28%
+  worst 5 excess months: 2019-09: -12.2, 2023-01: -9.1, 2021-03: -8.0, 2022-11: -6.1, 2014-04: -6.1
+  excess by year: 2011:-1.4 2012:+9.2 2013:+14.0 2014:+5.6 2015:+6.2 2016:-11.8 2017:+8.0 2018:+6.1 2019:+6.9 2020:+21.7 2021:-6.3 2022:+21.6 2023:-4.7 2024:+23.4 2025:+13.3 2026:+8.7
+
+## R residual momentum decile  <- PRIMARY: ~82 names, excess +0.19pp/mo t_NW +1.00 halves -0.22/+0.43 yrs 9/14 | vs RAW -0.51pp t -2.51 | p95-winsorised -0.16 t -0.96 | maxDD 23%
+  worst 5 excess months: 2023-01: -6.2, 2020-11: -6.0, 2021-03: -5.2, 2023-09: -4.5, 2014-10: -4.4
+  excess by year: 2013:+5.2 2014:-4.8 2015:+0.2 2016:-7.6 2017:-5.6 2018:+0.9 2019:-2.5 2020:+5.9 2021:+1.9 2022:+18.0 2023:-0.2 2024:+6.6 2025:+0.2 2026:+11.1
+
+## F frog-in-the-pan (top quintile, continuous half)  <- PRIMARY: ~86 names, excess +0.41pp/mo t_NW +2.15 halves +0.22/+0.57 yrs 13/16 | vs RAW -0.26pp t -1.73 | p95-winsorised +0.06 t +0.32 | maxDD 23%
+  worst 5 excess months: 2023-01: -9.3, 2021-03: -8.1, 2019-09: -7.9, 2016-08: -6.0, 2024-07: -5.8
+  excess by year: 2011:+8.0 2012:+2.1 2013:+7.9 2014:+7.3 2015:+5.7 2016:-18.9 2017:+5.9 2018:+6.7 2019:+7.3 2020:+20.0 2021:-7.4 2022:+9.1 2023:-9.6 2024:+12.7 2025:+5.5 2026:+12.0
+
+## [exploratory] R quintile, continuous half: ~84 names, excess +0.10pp/mo t_NW +0.54 halves -0.08/+0.21 yrs 9/14 | vs RAW -0.60pp t -3.00 | p95-winsorised -0.12 t -0.70 | maxDD 23%
+  worst 5 excess months: 2023-01: -7.2, 2016-08: -4.8, 2020-11: -4.4, 2022-11: -4.0, 2015-04: -3.9
+  excess by year: 2013:+3.3 2014:+4.6 2015:+0.1 2016:-9.9 2017:-2.9 2018:+3.5 2019:-4.0 2020:+9.9 2021:-6.6 2022:+9.4 2023:-11.6 2024:+4.7 2025:+1.8 2026:+13.1
+
+## METHOD CHECK (F): median rank corr of ID chain_spot vs panel closes over 31 formations: 0.81 (OK)
+
+## [exploratory] survivor panel (liquid_panel_2009, ADDV >= $50M)
+
+## panel RAW: ~62 names, excess +0.56pp/mo t_NW +2.41 halves -0.01/+1.04 yrs 12/16 | p95-winsorised -0.29 t -1.62 | maxDD 26%
+  worst 5 excess months: 2019-09: -10.1, 2021-03: -8.5, 2023-01: -7.3, 2018-10: -6.6, 2025-11: -6.4
+  excess by year: 2011:-8.6 2012:+8.1 2013:+5.5 2014:-2.4 2015:+6.2 2016:-10.6 2017:+0.7 2018:+5.6 2019:+6.0 2020:+32.0 2021:+0.5 2022:+15.0 2023:-1.9 2024:+18.3 2025:+18.0 2026:+9.0
+
+## panel R: ~63 names, excess +0.20pp/mo t_NW +1.19 halves -0.09/+0.40 yrs 9/15 | vs RAW -0.45pp t -2.10 | p95-winsorised -0.14 t -1.00 | maxDD 25%
+  worst 5 excess months: 2023-01: -5.3, 2022-07: -4.6, 2014-10: -4.4, 2021-03: -4.3, 2025-08: -3.7
+  excess by year: 2012:+8.1 2013:-0.4 2014:-6.5 2015:+4.7 2016:-9.7 2017:-2.4 2018:+3.3 2019:-5.6 2020:+2.9 2021:+6.4 2022:+16.6 2023:+2.8 2024:+3.6 2025:-2.1 2026:+11.5
+
+## panel F: ~64 names, excess +0.13pp/mo t_NW +0.78 halves +0.02/+0.23 yrs 11/16 | vs RAW -0.43pp t -2.16 | p95-winsorised -0.13 t -0.82 | maxDD 25%
+  worst 5 excess months: 2023-01: -8.4, 2021-03: -7.4, 2019-09: -6.9, 2012-01: -5.4, 2016-08: -5.4
+  excess by year: 2011:+2.4 2012:-2.0 2013:+3.0 2014:+1.1 2015:+7.3 2016:-17.6 2017:+7.5 2018:+7.7 2019:+2.1 2020:+9.6 2021:-11.0 2022:+2.1 2023:-10.4 2024:+11.8 2025:-0.3 2026:+10.6
+
+book  months  excess  t_nw     h1    h2 yrs_pos  vs_raw  t_vs_raw  wins_p95  t_wins  maxDD      n  PASS  BETTER
+ RAW     181   0.665 2.928  0.359 0.925   12/16     NaN       NaN    -0.123  -0.641 28.327 84.597 False   False
+   R     157   0.187 1.000 -0.215 0.429    9/14  -0.514    -2.514    -0.161  -0.957 23.472 82.280 False   False
+   F     181   0.410 2.146  0.217 0.573   13/16  -0.255    -1.731     0.059   0.324 23.102 86.414 False   False
+  RF     157   0.098 0.536 -0.083 0.206    9/14  -0.603    -2.997    -0.121  -0.696 22.769 84.338 False   False
+VERDICT R: certification fail (excess +0.19 t +1.00); vs RAW -0.51 t -2.51 -> not better than raw
+VERDICT F: certification fail (excess +0.41 t +2.15); vs RAW -0.26 t -1.73 -> not better than raw; method check OK
