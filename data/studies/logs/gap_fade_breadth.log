@@ -1,0 +1,24 @@
+# Gap-up fade x breadth -- events: 8,140 big gaps; 2,956 in a 50-day down-cycle (2010-01-04 -> 2026-09-21); short open->close, net 20 bp, excess vs same-date no-gap names; t on date-cluster means
+
+PRIMARY / SECONDARY
+  FALLING breadth, down50 (PRIMARY)                n  1738 dates  711  excess +0.541% t +3.87  halves +0.656/+0.275  yrs+ 12/17  raw net +0.486%  win 55%  *PRIMARY*
+  RISING breadth, down50                           n  1218 dates  550  excess +0.160% t +0.91  halves +0.003/-0.061  yrs+ 7/17  raw net -0.068%  win 51%
+  SECONDARY falling - rising: +0.395pp, Welch t on date means +1.70
+
+EXPLORATORY (no bar)
+  down10, falling breadth                          n  1801 dates  742  excess +0.479% t +3.37  halves +0.491/+0.366  yrs+ 13/17  raw net +0.476%  win 54%
+  down50, breadth level < 40%                      n   907 dates  329  excess +0.711% t +3.44  halves +1.002/+0.988  yrs+ 12/15  raw net +0.742%  win 61%
+  down50, SPY < 50-day SMA                         n  1309 dates  480  excess +0.612% t +3.57  halves +0.886/+0.666  yrs+ 16/17  raw net +0.520%  win 58%
+  NO down-cycle filter, falling breadth            n  4304 dates 1254  excess +0.102% t +1.04  halves +0.144/-0.217  yrs+ 11/17  raw net +0.136%  win 50%
+  NO down-cycle filter, all                        n  8140 dates 2482  excess +0.016% t +0.22  halves -0.014/-0.209  yrs+ 4/17  raw net -0.023%  win 50%
+  down50 falling, gap 5-8%                         n   865 dates  456  excess +0.285% t +1.90  halves +0.775/+0.076  yrs+ 11/17  raw net +0.427%  win 54%
+  down50 falling, gap 8-15%                        n   654 dates  359  excess +0.701% t +3.12  halves +0.578/+0.367  yrs+ 13/17  raw net +0.462%  win 57%
+  down50 falling, gap 15-+%                        n   219 dates  156  excess +0.882% t +1.82  halves -0.310/+0.658  yrs+ 8/16  raw net +0.793%  win 53%
+
+PRIMARY by year:
+date      2010    2011    2012    2013    2014    2015    2016    2017     2018    2019     2020    2021     2022     2023     2024     2025     2026
+n       23.000  54.000  38.000  14.000  49.000  54.000  53.000  38.000  104.000  44.000  180.000  63.000  150.000  149.000  203.000  253.000  269.000
+excess  -0.083   0.913   0.393  -0.729   1.566   1.418  -0.015   0.193    0.007   0.715   -2.105   0.209    0.632    0.763   -0.090    1.128    0.919
+raw     -0.556   0.403   0.768  -0.946   1.320   2.183   0.029   0.162   -0.124   0.608   -0.259   0.106    0.585    0.819   -0.138    1.297    0.544
+
+BAR: PASS (t >= 3, both halves > 0, majority of years > 0)

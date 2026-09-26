@@ -72,7 +72,7 @@ def main() -> None:
     down50 = (C < s50) & (s50 < s50.shift(5))
     down10 = (C < s10) & (s10 < s10.shift(5))
     above = (C > s50).where(E)
-    B = 100 * above.sum(axis=1) / E.sum(axis=1)
+    B = 100 * above.astype(float).sum(axis=1) / E.astype(float).sum(axis=1).replace(0, np.nan)
     Bp = B.shift(1)
     falling = (Bp - B.shift(21)) < 0
     spy = pd.read_parquet(REPO / "data/cache/liquid_panel_2009.parquet", columns=["date", "ticker", "close"])
@@ -93,20 +93,20 @@ def main() -> None:
     ev["spy_weak"] = spy_weak.reindex(ev.date).values.astype(bool)
     ev = ev.dropna(subset=["ctrl", "B"])
     ev["raw"] = 100 * (-ev.oc - 2 * SLIP)
-    ev["xs"] = 100 * (-(ev.oc - ev.ctrl) - 2 * SLIP)
+    ev["exs"] = 100 * (-(ev.oc - ev.ctrl) - 2 * SLIP)
     ev["down50"] = ev.down50.astype(bool); ev["down10"] = ev.down10.astype(bool)
 
     out = []
     def row(name, d, primary=False):
         if len(d) < 10:
             out.append(f"  {name:48s} n {len(d):5d}  (too few)"); return None
-        m, t, nd = tclu(d.xs, d.date)
+        m, t, nd = tclu(d.exs, d.date)
         h1 = d[d.date < SPLIT]; h2 = d[d.date >= SPLIT]
-        yrs = d.groupby(d.date.dt.year).xs.mean()
+        yrs = d.groupby(d.date.dt.year).exs.mean()
         out.append(f"  {name:48s} n {len(d):5d} dates {nd:4d}  excess {m:+.3f}% t {t:+.2f}  halves "
-                   f"{h1.xs.mean():+.3f}/{h2.xs.mean():+.3f}  yrs+ {(yrs > 0).sum()}/{len(yrs)}  raw net {d.raw.mean():+.3f}%"
-                   f"  win {100 * (d.xs > 0).mean():.0f}%" + ("  *PRIMARY*" if primary else ""))
-        return dict(m=m, t=t, h1=h1.xs.mean(), h2=h2.xs.mean(), yp=(yrs > 0).sum(), ny=len(yrs))
+                   f"{h1.exs.mean():+.3f}/{h2.exs.mean():+.3f}  yrs+ {(yrs > 0).sum()}/{len(yrs)}  raw net {d.raw.mean():+.3f}%"
+                   f"  win {100 * (d.exs > 0).mean():.0f}%" + ("  *PRIMARY*" if primary else ""))
+        return dict(m=m, t=t, h1=h1.exs.mean(), h2=h2.exs.mean(), yp=(yrs > 0).sum(), ny=len(yrs))
 
     base = ev[ev.down50]
     out.append(f"# Gap-up fade x breadth -- events: {len(ev):,} big gaps; {len(base):,} in a 50-day down-cycle "
@@ -115,8 +115,8 @@ def main() -> None:
     out.append("PRIMARY / SECONDARY")
     P1 = row("FALLING breadth, down50 (PRIMARY)", base[base.falling], primary=True)
     row("RISING breadth, down50", base[~base.falling])
-    tw = welch(base[base.falling].xs, base[base.falling].date, base[~base.falling].xs, base[~base.falling].date)
-    out.append(f"  SECONDARY falling - rising: {base[base.falling].xs.mean() - base[~base.falling].xs.mean():+.3f}pp, "
+    tw = welch(base[base.falling].exs, base[base.falling].date, base[~base.falling].exs, base[~base.falling].date)
+    out.append(f"  SECONDARY falling - rising: {base[base.falling].exs.mean() - base[~base.falling].exs.mean():+.3f}pp, "
                f"Welch t on date means {tw:+.2f}")
     out.append("\nEXPLORATORY (no bar)")
     row("down10, falling breadth", ev[ev.down10 & ev.falling])
@@ -127,7 +127,7 @@ def main() -> None:
     for lo, hi in ((0.05, 0.08), (0.08, 0.15), (0.15, 9)):
         row(f"down50 falling, gap {int(lo*100)}-{'+' if hi > 1 else int(hi*100)}%",
             base[base.falling & (base.gap >= lo) & (base.gap < hi)])
-    Y = base[base.falling].groupby(base[base.falling].date.dt.year).agg(n=("xs", "size"), excess=("xs", "mean"),
+    Y = base[base.falling].groupby(base[base.falling].date.dt.year).agg(n=("exs", "size"), excess=("exs", "mean"),
                                                                           raw=("raw", "mean"))
     out.append("\nPRIMARY by year:\n" + Y.round(3).T.to_string())
     ok = P1 is not None and P1["t"] >= 3 and P1["h1"] > 0 and P1["h2"] > 0 and P1["yp"] > P1["ny"] / 2
