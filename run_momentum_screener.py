@@ -15,6 +15,9 @@ RULE (same as the study; do not tune it here)
              The top QUINTILE is also written (study: +0.42pp/mo, t 2.64, 14/16 years), and the fixed-count books
              T20 / T30 = ranks 1-20 / 1-30 (run_momentum_topn.py: +1.22 / +1.08pp/mo, ACCEPTABLE vs the decile but
              tail-driven, 9/16 and 11/16 years, maxDD 35% / 30%). Flagged in_t20 / in_t30 in the list and lockbox.
+             T20-B = the BUFFER book (run_momentum_buffer.py: same return as T20, turnover 38% -> 13%/mo): keep last
+             formation's T20-B names while they stay in the top quintile, refill from the top ranks to 20. Flagged in_t20b;
+             the lockbox is its memory, so a missed month-end breaks the chain (it restarts as plain T20).
   benchmark  the equal-weight portfolio of every eligible name (the lockbox logs its size so it can be rebuilt).
 
 LIVE DIFFERENCES (declared, not tuned)
@@ -126,6 +129,21 @@ def main():
     top = E[E.bucket != ""].reset_index().rename(columns={"index": "ticker"})
     top.insert(0, "formation", asof.date().isoformat())
     top["universe_n"] = n
+    # T20-B buffer book (run_momentum_buffer.py, 2026-09-25: same return as T20, turnover 38% -> 13%/mo): keep last
+    # formation's T20-B names that are still in the top quintile, refill from the top ranks back to 20.
+    prev, prev_date = set(), None
+    box = OUT_DIR / "lockbox.csv"
+    if box.exists():
+        L = pd.read_csv(box)
+        if "in_t20b" in L.columns:
+            L = L[L.formation < asof.date().isoformat()]
+            if len(L):
+                prev_date = L.formation.max()
+                prev = set(L[(L.formation == prev_date) & L.in_t20b.astype(bool)].ticker)
+    keep = [t for t in top.ticker if t in prev]                      # top = the top quintile, in rank order
+    fill = [t for t in top.ticker if t not in prev][:max(20 - len(keep), 0)]
+    top["in_t20b"] = top.ticker.isin(set(keep) | set(fill))
+    t20b_sell = sorted(prev - set(keep))
 
     tag = "MONTH-END FORMATION" if is_month_end else "PREVIEW (not a completed month-end; nothing logged)"
     print(f"# 12-1 momentum screener -- {asof.date()} -- {tag}")
@@ -134,19 +152,22 @@ def main():
     print(f"{'rank':>4} {'ticker':<7} {'12-1':>8} {'close':>9} {'ADDV $M':>8}  bucket")
     for r in top.itertuples():
         print(f"{r.rank:4d} {r.ticker:<7} {r.score:+8.1%} {r.close:9.2f} {r.addv_m:8.0f}  {r.bucket}"
-              + ("  T20" if r.in_t20 else ("  T30" if r.in_t30 else "")))
+              + ("  T20" if r.in_t20 else ("  T30" if r.in_t30 else "")) + ("  T20-B" if r.in_t20b else ""))
     if fixed:
         print(f"split-adjusted here (missed in the matrix): {len(fixed)} -- " + ", ".join(fixed))
     if jumped:
         print("excluded (>45% day in window): " + ", ".join(jumped))
     print("T20 (5% each): " + " ".join(top[top.in_t20].ticker))
     print("T30 (3.3% each; T20 + these): " + " ".join(top[top.in_t30 & ~top.in_t20].ticker))
+    print(f"T20-B buffer book (5% each; keep while in the top quintile) vs {prev_date or 'no prior formation -> = T20'}:")
+    print("  HOLD: " + (" ".join(keep) or "-"))
+    print("  BUY:  " + (" ".join(fill) or "-"))
+    print("  SELL: " + (" ".join(t20b_sell) or "-") + "   (fell out of the top quintile or no longer eligible)")
     print(f"equal weight across the top decile: 1/{n10} = {1 / n10:.2%} of the sleeve per name")
 
     if is_month_end and not a.preview:
         OUT_DIR.joinpath("lists").mkdir(parents=True, exist_ok=True)
         f = OUT_DIR / "lists" / f"{asof.date()}.csv"
-        box = OUT_DIR / "lockbox.csv"
         if f.exists():
             print(f"lockbox: {asof.date()} already logged -> {f} (not overwritten)")
             return

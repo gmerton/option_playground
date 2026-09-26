@@ -121,6 +121,7 @@ PYTHONPATH=src .venv/bin/python3 run_momentum_screener.py          # e.g. 2026-1
 ```
 - Produce: the top decile / top quintile by 12-1 momentum (ADDV >= $50M, px >= $5), `data/momentum/lists/<date>.csv`,
   appended to the forward lockbox `data/momentum/lockbox.csv`. Mid-month runs are PREVIEW only and log nothing.
+- The book to trade is **T20-B** (buffer): the screener prints HOLD / BUY / SELL vs last month. It reads last month from the lockbox, so never skip a month-end.
 - Status: SUPPORTED near-miss (t_NW 2.93, `run_momentum_portfolio.py`), **not certified** — the lockbox is the forward test.
 - **Skip it:** a month is missing from the forward record, and it can't be backfilled honestly.
 
