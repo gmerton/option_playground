@@ -43,8 +43,9 @@ GRID = [(0.30, 0.20), (0.30, 0.15), (0.25, 0.15), (0.25, 0.10), (0.20, 0.10), (0
 def work(tk: str):
     V3 = pd.concat([pd.read_parquet(L.CACHE / f"v3_{y}.parquet", filters=[("ticker", "==", tk)]) for y in range(L.Y0, L.Y1 + 1)])
     V3 = V3[V3.trade_date <= L.END]
-    import run_dip_survivorship as DS
-    cs = DS.pull(); cs = cs[cs.ticker == tk].copy(); cs["trade_date"] = pd.to_datetime(cs.trade_date)
+    cs = pd.read_parquet(REPO / "data/cache/chain_spot/chain_spot_daily.parquet", columns=["ticker", "trade_date", "spot"],
+                         filters=[("ticker", "==", tk)])          # one ticker per worker (memory)
+    cs["trade_date"] = pd.to_datetime(cs.trade_date)
     spot = cs.set_index("trade_date").spot.sort_index()
     ch = L.Chain(V3)
     exps = np.array(sorted(V3.expiry.unique()))
@@ -97,7 +98,8 @@ def work(tk: str):
 
 
 def main():
-    with Pool(8) as p:
+    import os
+    with Pool(int(os.environ.get("WORKERS", "4"))) as p:
         R = pd.DataFrame([r for rows in p.map(work, L.TICKERS) for r in rows])
     R.to_parquet(REPO / "data/studies/logs/leg_in_delta_sweep_trades.parquet")
     out = ["# Leg-in call spread: delta sweep (pre-registration in the docstring)"]
