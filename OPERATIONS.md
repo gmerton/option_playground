@@ -115,6 +115,15 @@ PYTHONPATH=src .venv/bin/python3 run_trade_lens.py --start <d> --end <d> --out <
 - Note: `run_build_liquid_panel.py` used to be the manual monthly prerequisite — **`daily_desk.sh` now refreshes that panel every evening**, so don't run it by hand.
 - **Skip it:** the conditional expectancy tables you read each night drift out of date.
 
+**7b. Month-end (first morning after the last session) — 12-1 momentum sleeve list**
+```bash
+PYTHONPATH=src .venv/bin/python3 run_momentum_screener.py          # e.g. 2026-10-01 for the 2026-09-30 formation
+```
+- Produce: the top decile / top quintile by 12-1 momentum (ADDV >= $50M, px >= $5), `data/momentum/lists/<date>.csv`,
+  appended to the forward lockbox `data/momentum/lockbox.csv`. Mid-month runs are PREVIEW only and log nothing.
+- Status: SUPPORTED near-miss (t_NW 2.93, `run_momentum_portfolio.py`), **not certified** — the lockbox is the forward test.
+- **Skip it:** a month is missing from the forward record, and it can't be backfilled honestly.
+
 ---
 
 ## On demand
