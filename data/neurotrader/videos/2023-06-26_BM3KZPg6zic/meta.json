@@ -1,0 +1,11 @@
+{
+  "video_id": "BM3KZPg6zic",
+  "url": "https://www.youtube.com/watch?v=BM3KZPg6zic",
+  "title": "Using Trade Dependence to Improve the Donchian Breakout Trading Strategy",
+  "channel": "neurotrader",
+  "channel_id": "UCSh87zxGNu8q8iOInRK6E9w",
+  "stream_date": "2023-06-26",
+  "duration": "12:03",
+  "transcript": {"file": "transcript.txt", "source": "youtube_auto_captions", "lang": "en-orig", "format": "timestamped_text_mm_ss", "tool": "yt-dlp"},
+  "supplemental_notes_file": "notes.md"
+}

@@ -1,0 +1,11 @@
+{
+  "video_id": "3zI_l_P-lF8",
+  "url": "https://www.youtube.com/watch?v=3zI_l_P-lF8",
+  "title": "Do Moving Averages Actually Work as Support and Resistance?",
+  "channel": "neurotrader",
+  "channel_id": "UCSh87zxGNu8q8iOInRK6E9w",
+  "stream_date": "2023-02-07",
+  "duration": "7:11",
+  "transcript": {"file": "transcript.txt", "source": "youtube_auto_captions", "lang": "en-orig", "format": "timestamped_text_mm_ss", "tool": "yt-dlp"},
+  "supplemental_notes_file": "notes.md"
+}

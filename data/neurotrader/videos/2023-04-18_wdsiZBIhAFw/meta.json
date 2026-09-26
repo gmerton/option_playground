@@ -1,0 +1,11 @@
+{
+  "video_id": "wdsiZBIhAFw",
+  "url": "https://www.youtube.com/watch?v=wdsiZBIhAFw",
+  "title": "Self-Exciting Behavior and Detecting the End of Price Trends",
+  "channel": "neurotrader",
+  "channel_id": "UCSh87zxGNu8q8iOInRK6E9w",
+  "stream_date": "2023-04-18",
+  "duration": "8:20",
+  "transcript": {"file": "transcript.txt", "source": "youtube_auto_captions", "lang": "en-orig", "format": "timestamped_text_mm_ss", "tool": "yt-dlp"},
+  "supplemental_notes_file": "notes.md"
+}
