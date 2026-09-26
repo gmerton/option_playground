@@ -12,7 +12,9 @@ RULE (same as the study; do not tune it here)
   eligible   price >= $5 at t, 252 sessions of history, and no >45% single-day move inside the formation window
              (the study cut series at unexplained >45% jumps, which dropped those names from ranking)
   buy        TOP DECILE by score, equal weight, hold to the next month-end close, then rebalance.
-             The top QUINTILE is also written (study: +0.42pp/mo, t 2.64, 14/16 years).
+             The top QUINTILE is also written (study: +0.42pp/mo, t 2.64, 14/16 years), and the fixed-count books
+             T20 / T30 = ranks 1-20 / 1-30 (run_momentum_topn.py: +1.22 / +1.08pp/mo, ACCEPTABLE vs the decile but
+             tail-driven, 9/16 and 11/16 years, maxDD 35% / 30%). Flagged in_t20 / in_t30 in the list and lockbox.
   benchmark  the equal-weight portfolio of every eligible name (the lockbox logs its size so it can be rebuilt).
 
 LIVE DIFFERENCES (declared, not tuned)
@@ -120,6 +122,7 @@ def main():
     E["rank"] = np.arange(1, n + 1)
     n10, n20 = int(np.ceil(n * 0.10)), int(np.ceil(n * 0.20))
     E["bucket"] = np.where(E["rank"] <= n10, "D1", np.where(E["rank"] <= n20, "Q1", ""))
+    E["in_t20"], E["in_t30"] = E["rank"] <= 20, E["rank"] <= 30        # fixed-count books (run_momentum_topn.py: ACCEPTABLE)
     top = E[E.bucket != ""].reset_index().rename(columns={"index": "ticker"})
     top.insert(0, "formation", asof.date().isoformat())
     top["universe_n"] = n
@@ -130,11 +133,14 @@ def main():
           f"top decile {n10}, top quintile {n20}; excluded for a >45% day: {len(jumped)}")
     print(f"{'rank':>4} {'ticker':<7} {'12-1':>8} {'close':>9} {'ADDV $M':>8}  bucket")
     for r in top.itertuples():
-        print(f"{r.rank:4d} {r.ticker:<7} {r.score:+8.1%} {r.close:9.2f} {r.addv_m:8.0f}  {r.bucket}")
+        print(f"{r.rank:4d} {r.ticker:<7} {r.score:+8.1%} {r.close:9.2f} {r.addv_m:8.0f}  {r.bucket}"
+              + ("  T20" if r.in_t20 else ("  T30" if r.in_t30 else "")))
     if fixed:
         print(f"split-adjusted here (missed in the matrix): {len(fixed)} -- " + ", ".join(fixed))
     if jumped:
         print("excluded (>45% day in window): " + ", ".join(jumped))
+    print("T20 (5% each): " + " ".join(top[top.in_t20].ticker))
+    print("T30 (3.3% each; T20 + these): " + " ".join(top[top.in_t30 & ~top.in_t20].ticker))
     print(f"equal weight across the top decile: 1/{n10} = {1 / n10:.2%} of the sleeve per name")
 
     if is_month_end and not a.preview:
