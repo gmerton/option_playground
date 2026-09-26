@@ -35,3 +35,6 @@ It is **not queued**. Ask if you want it pre-registered.
 
 **For the book today:** don't add call spreads to "fix" a losing put spread (e.g. the GLW roll). Judge the call
 spread as a stand-alone trade. On current evidence it has no edge after costs.
+
+## Tested 2026-09-25 -- INVERTED
+`run_leg_in_call_spread.py` (pre-registered): the call spread sold once the bull put is winning loses **-7.26%/trade on risk after costs, t -4.31** (n 4,939, 13 underlyings, 2012-2026). Selling it after the rally is worse than selling the same spread at the same DTE any other time (-4.23pp, t -1.74). Don't leg into the condor.

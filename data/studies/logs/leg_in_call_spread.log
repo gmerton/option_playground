@@ -1,0 +1,47 @@
+  v3 2013: 278,286 rows
+  v3 2014: 570,099 rows
+  v3 2015: 966,034 rows
+  v3 2016: 1,133,826 rows
+  v3 2017: 1,163,551 rows
+  v3 2018: 1,491,199 rows
+  v3 2019: 1,480,095 rows
+  v3 2020: 1,872,133 rows
+  v3 2021: 2,041,650 rows
+  v3 2022: 1,864,561 rows
+  v3 2023: 1,621,967 rows
+  v3 2024: 1,715,186 rows
+  v3 2025: 1,973,789 rows
+  v3 2026: 329,088 rows
+# Leg into a condor: sell a call spread after the bull put is winning (pre-registration in the docstring)
+  SPY: treated 465, control trades 1865
+  QQQ: treated 475, control trades 1820
+  IWM: treated 454, control trades 2018
+  AAPL: treated 404, control trades 2113
+  MSFT: treated 425, control trades 1820
+  NVDA: treated 421, control trades 1870
+  AMZN: treated 415, control trades 2130
+  META: treated 106, control trades 802
+  GOOGL: treated 404, control trades 1770
+  TSLA: treated 365, control trades 2478
+  AMD: treated 313, control trades 1733
+  NFLX: treated 414, control trades 2212
+  AVGO: treated 372, control trades 1623
+
+Treated call spreads: 5033 (trigger fired in 5033 of the base cycles); median DTE 17; control trades 24254
+Unconditional control call spread (all DTEs, take, net): -4.70%/trade on risk, n 23858
+
+ group exit measure    n  mean  gross     t    h1    h2   yrs  win  PASS  primary
+pooled take     abs 4939 -7.26  -4.57 -4.31 -8.04 -6.66 11/15 0.78  True     True
+pooled take    diff 4919 -4.23    NaN -1.74 -3.94 -4.44 11/15  NaN False    False
+pooled hold     abs 4937 -8.74  -7.00 -4.05 -8.68 -8.79 11/15 0.72  True    False
+pooled hold    diff 4917 -5.02    NaN -1.58 -4.64 -5.30 10/15  NaN False    False
+  ETFs take     abs 1373 -6.38  -3.78 -1.97 -7.18 -5.62 10/15 0.77 False    False
+  ETFs take    diff 1367 -4.93    NaN -1.03 -5.29 -4.59  8/15  NaN False    False
+  ETFs hold     abs 1373 -7.28  -5.63 -1.69 -6.83 -7.71 10/15 0.70 False    False
+  ETFs hold    diff 1367 -5.76    NaN -0.90 -6.06 -5.47 10/15  NaN False    False
+ names take     abs 3566 -7.59  -4.88 -4.85 -8.42 -7.01 11/15 0.79  True    False
+ names take    diff 3552 -3.95    NaN -1.86 -3.33 -4.39 11/15  NaN False    False
+ names hold     abs 3564 -9.31  -7.53 -4.77 -9.52 -9.16 12/15 0.72  True    False
+ names hold    diff 3550 -4.73    NaN -1.83 -4.00 -5.24 11/15  NaN False    False
+
+VERDICT (PRIMARY pooled/take/abs): -7.26%/trade on risk after costs (gross -4.57), t -4.31, halves -8.04/-6.66, yrs 11/15 -> PASS; timing vs matched control -4.23pp t -1.74 -> do not adopt
