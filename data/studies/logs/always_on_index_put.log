@@ -1,0 +1,42 @@
+# Always-on 45-DTE 12-delta SPY put (pre-registration in the docstring)
+trades 748 weekly entries 2010-01-08 -> 2026-01-09 (quotes through 2026-04-01); median delta -0.120, median DTE 42, median spread 1.7% of mid; certified-regime entries 122 (16%)
+ARM A exits: {'take': 0.844, '21dte': 0.154, 'expiry': 0.003} (expiry = no quote from 21 DTE on -> intrinsic)
+
+## ARM A (50% take / 21 DTE) *PRIMARY*
+  ALWAYS-ON                          n  748 months 193  +1.326% of margin t +5.18  halves +1.546/+1.018  yrs+ 15/17  win 89%  median +1.80  $+38/contract
+  certified Bearish_HighIV subset    n  122 months  57  +3.375% of margin t +11.33  halves +4.061/+2.783  yrs+ 14/14  win 93%  median +3.71  $+80/contract
+  COMPLEMENT (key secondary)         n  626 months 181  +0.665% of margin t +1.73  halves +1.141/+0.625  yrs+ 14/17  win 88%  median +1.65  $+30/contract
+  certified - complement: Welch t on month means +5.56
+
+## ARM B (hold to expiry)
+  ALWAYS-ON                          n  748 months 193  +2.723% of margin t +4.04  halves +3.016/+2.250  yrs+ 16/17  win 96%  median +3.35  $+86/contract
+  certified Bearish_HighIV subset    n  122 months  57  +6.953% of margin t +20.73  halves +7.511/+7.158  yrs+ 14/14  win 100%  median +6.74  $+206/contract
+  COMPLEMENT (key secondary)         n  626 months 181  +1.619% of margin t +1.70  halves +2.290/+1.156  yrs+ 14/17  win 95%  median +3.00  $+62/contract
+  certified - complement: Welch t on month means +5.28
+
+worst 10 trades (ARM A, % of margin / $ per contract):
+  2020-02-21 K 305 exp 2020-04-03 -107.0% $-4317 (21dte); hold -141.7%
+  2020-02-14 K 313 exp 2020-03-31 -63.9% $-2825 (21dte); hold -121.5%
+  2018-11-30 K 252.5 exp 2019-01-11 -34.6% $-1156 (21dte); hold +3.7%
+  2020-03-06 K 244 exp 2020-04-17 -26.7% $-742 (21dte); hold +12.0%
+  2022-09-09 K 367 exp 2022-10-21 -25.6% $-1131 (21dte); hold +5.0%
+  2015-12-24 K 194 exp 2016-02-05 -20.5% $-635 (21dte); hold -16.4%
+  2025-02-14 K 568 exp 2025-03-31 -19.1% $-1546 (21dte); hold -5.3%
+  2025-03-28 K 525 exp 2025-05-09 -18.6% $-1564 (21dte); hold +5.9%
+  2010-04-30 K 106 exp 2010-06-19 -16.9% $-195 (21dte); hold +6.7%
+  2021-12-31 K 440 exp 2022-02-11 -14.4% $-879 (21dte); hold +3.8%
+
+crash windows (sum of per-trade % of margin, entries in window): A / B
+  2011-08    n   9  A +25.0  B -51.0  worst A -5.5
+  2015-08    n  11  A +13.9  B +24.3  worst A -13.7
+  2018-02    n   8  A +10.6  B +24.7  worst A -4.4
+  2018-Q4    n  13  A -28.3  B +15.1  worst A -34.6
+  2020-02/03 n  11  A -153.7  B -505.6  worst A -107.0
+  2022       n  52  A +71.3  B +183.6  worst A -25.6
+
+per year mean % of margin:
+trade_date  2010  2011  2012  2013  2014  2015  2016  2017  2018  2019  2020  2021  2022  2023  2024  2025  2026
+retA        2.56  2.41  2.22  1.38  0.82  1.02  1.87  1.00 -0.21  1.42 -0.05  2.16  1.37  1.30   0.9  1.26  1.23
+retB        5.83  2.42  4.16  2.91  2.83  1.79  3.46  2.02  1.87  3.06 -3.46  4.76  3.53  2.98   2.6  2.76  2.68
+
+BAR (PRIMARY ARM A always-on): PASS
