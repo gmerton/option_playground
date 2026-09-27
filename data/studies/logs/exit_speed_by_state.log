@@ -1,0 +1,23 @@
+# Exit speed by SPY gamma state at entry (pre-registration in the docstring)
+
+## PRIMARY pool: precision-tier house breakouts: 1,506 trades on 702 dates; NEG-gamma 524 trades on 239 dates (35%)
+  NEG gamma: BASE +2.00% win 31% held 14.2 top10 +45.9 | FAST +0.19% win 35% held 8.7 top10 +21.6 | TIME10 +0.32% win 42% held 7.0 top10 +16.8 | SLOW +4.02% win 25% held 23.7 top10 +56.0
+  POS gamma: BASE +2.40% win 30% held 13.9 top10 +52.2 | FAST +0.57% win 32% held 9.1 top10 +25.7 | TIME10 +0.42% win 41% held 7.0 top10 +16.3 | SLOW +4.12% win 23% held 22.9 top10 +56.8
+  I[FAST   - BASE | NEG - POS] +0.180pp  t +0.18  halves -1.751 / +1.946  years same sign 1/7  *PRIMARY*
+  I[TIME10 - BASE | NEG - POS] +0.795pp  t +0.66  halves -1.068 / +2.474  years same sign 3/7
+  I[SLOW   - BASE | NEG - POS] -0.164pp  t -0.18  halves +1.681 / -1.858  years same sign 5/7
+  [expl] I[FAST - BASE | VIX top tercile - rest] -3.496pp t -2.27
+  [expl] I[TIME10 - BASE | VIX top tercile - rest] -3.055pp t -1.67
+  [expl] I[SLOW - BASE | VIX top tercile - rest] +0.643pp t +0.63
+
+## second pool: generic house breakouts (ADR >= 3): 6,130 trades on 1216 dates; NEG-gamma 1,942 trades on 498 dates (32%)
+  NEG gamma: BASE +0.58% win 30% held 13.8 top10 +34.9 | FAST -0.18% win 33% held 8.6 top10 +19.0 | TIME10 -0.02% win 41% held 7.0 top10 +14.4 | SLOW +1.97% win 23% held 23.1 top10 +42.1
+  POS gamma: BASE +0.46% win 28% held 13.2 top10 +35.7 | FAST -0.03% win 31% held 8.8 top10 +21.4 | TIME10 -0.10% win 39% held 6.9 top10 +14.9 | SLOW +2.03% win 22% held 22.3 top10 +40.4
+  I[FAST   - BASE | NEG - POS] +0.015pp  t +0.04  halves -0.617 / +0.722  years same sign 4/8
+  I[TIME10 - BASE | NEG - POS] +0.625pp  t +1.45  halves +0.374 / +1.021  years same sign 6/8
+  I[SLOW   - BASE | NEG - POS] -0.224pp  t -0.47  halves +0.232 / -0.732  years same sign 4/8
+  [expl] I[FAST - BASE | VIX top tercile - rest] -1.738pp t -3.73
+  [expl] I[TIME10 - BASE | VIX top tercile - rest] -1.479pp t -2.41
+  [expl] I[SLOW - BASE | VIX top tercile - rest] +0.517pp t +0.87
+
+BAR (PRIMARY I[FAST] precision): NOT MET
