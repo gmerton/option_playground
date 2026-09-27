@@ -239,6 +239,19 @@ crash-leader veto is a *conditional* structure, which randomness would not produ
 database and a 2005 start date, and reports **not one number** — this is the channel's characteristic failure and
 the reason the half-score is capped.
 
+
+**Update 2026-09-27 (re-review on Gabe's request).** Two newer results and one direct check:
+- ⭐ **The interviewer's stat, checked on SPY 1993-2026** (descriptive, not pre-registered; forward returns after an
+  all-time-high close vs all days; year-block bootstrap because windows overlap): 1y **+1.7pp** (CI −2.4…+6.1),
+  3y **+3.4pp** (CI −8.4…+17.5), 5y **+9.1pp** (CI −12.0…+31.9); month-end samples agree (1y +13.3% vs +12.1%).
+  So both are half right: the point estimates lean the interviewer's way (a few hundred bp), and Tom is right that
+  it isn't statistically significant. What the data rules out is the fear: **buying the index at an all-time high
+  has not been worse than buying on any other day.**
+- **"Who says momentum works?" is now CONTRADICTED directly:** 12-1 cross-sectional momentum (buying what already
+  went up) is SUPPORTED on the survivorship-free panel, t 2.93, both halves positive (2026-09-25).
+- Unchanged: at the single-stock breakout level, buying the 20-day high is the book's weakest part (the control
+  beats the signal). And the 52-week-high proximity gate added nothing on its own (precision-gate ablation, 2026-09-24).
+
 ---
 
 ## 11. `hQxILUx-ke0` — "If You Don't Think in Probabilities, You'll Never Win" (3:29, 2026-09-03)
