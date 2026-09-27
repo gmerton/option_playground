@@ -1,0 +1,24 @@
+# Does the 20-EMA trail cost money? STOP_ONLY vs BASE, exposure held fixed (pre-registration in the docstring)
+
+## PRIMARY pool: precision-tier house breakouts: 1,960 trades, 548 names, 832 dates; arms differ on 42% of trades; median beta 1.38
+  held days: BASE 13.8, STOP_ONLY 22.8 | exits BASE {'stop': 0.56, 'trail': 0.43, 'time': 0.02} | STOP_ONLY {'stop': 0.75, 'time': 0.25}
+  PRIMARY  STOP_ONLY - BASE+FILL(beta)       +0.302pp  t +1.16  halves +0.490 / +0.183  years same sign as mean 5/8
+           STOP_ONLY - BASE+FILL(beta=1)     +0.622pp  t +2.11  halves +0.638 / +0.612  years same sign as mean 5/8
+           STOP_ONLY - BASE, SPY-hedged each +0.332pp  t +1.27  halves +0.413 / +0.281  years same sign as mean 5/8
+    raw    STOP_ONLY - BASE (the lead)       +1.284pp  t +3.62  halves +1.168 / +1.358  years same sign as mean 7/8
+  BASE       mean +2.72%  median -4.14%  win 31%  p5 -10.8%  top-decile mean +54.5%
+  BASE_FILL  mean +3.70%  median -4.26%  win 32%  p5 -11.0%  top-decile mean +58.7%
+  SO         mean +4.00%  median -5.19%  win 24%  p5 -12.3%  top-decile mean +72.0%
+  per year STOP_ONLY - BASE+FILL: 2019:+3.03 2020:+0.50 2021:-0.85 2022:+2.68 2023:-1.58 2024:+0.41 2025:+2.52 2026:-0.75
+  BAR (primary): NOT MET
+
+## second pool: generic house breakouts (ADR >= 3): 7,655 trades, 1065 names, 1380 dates; arms differ on 42% of trades; median beta 1.33
+  held days: BASE 13.2, STOP_ONLY 22.0 | exits BASE {'stop': 0.56, 'trail': 0.42, 'time': 0.01} | STOP_ONLY {'stop': 0.77, 'time': 0.23}
+  PRIMARY  STOP_ONLY - BASE+FILL(beta)       +0.396pp  t +2.18  halves +0.690 / +0.219  years same sign as mean 5/8
+           STOP_ONLY - BASE+FILL(beta=1)     +0.663pp  t +3.15  halves +0.866 / +0.540  years same sign as mean 5/8
+           STOP_ONLY - BASE, SPY-hedged each +0.383pp  t +1.99  halves +0.627 / +0.235  years same sign as mean 5/8
+    raw    STOP_ONLY - BASE (the lead)       +1.251pp  t +5.20  halves +1.354 / +1.189  years same sign as mean 7/8
+  BASE       mean +0.56%  median -3.86%  win 29%  p5 -10.7%  top-decile mean +36.6%
+  BASE_FILL  mean +1.42%  median -4.05%  win 30%  p5 -10.9%  top-decile mean +40.8%
+  SO         mean +1.81%  median -4.90%  win 22%  p5 -11.9%  top-decile mean +54.2%
+  per year STOP_ONLY - BASE+FILL: 2019:+0.61 2020:+2.04 2021:-1.04 2022:+0.93 2023:-1.14 2024:+0.84 2025:+1.56 2026:-0.41
