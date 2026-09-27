@@ -4,6 +4,11 @@
 > **Certified:** bull put 0.25/0.15 below 50MA + VIX ≥ 20 (**t 6.07**), shared with the SPX condor as ONE position.
 > **No t on file:** bullish-high-IV bull put, bearish-low-IV straddle, and the double calendar. Treat as unsupported.
 
+> ### What to actually trade (2026-09-26) — the body below is the March 2026 research and is kept for the record
+> - **Trade ONE cell:** Bearish_HighIV (SPY below its 50-day MA **and** VIX ≥ 20) → bull put **0.25Δ / 0.15Δ**, ~20 DTE, Friday entry, **no stop**, 50% take. This is the "Index stress bucket" (`strategy_registry.py`), flagged **S** by `run_friday_screener.py`. SPY only; the SPX condor is the same bet and is not traded.
+> - **Do not trade** the other rows of the decision grid: Bullish_HighIV put spread, Bearish_LowIV straddle, and every double calendar (including the Bearish_HighIV one — the calendar studies were invalidated by the 2026-09-16 path-truncation erratum and the clean re-run found no edge). Calm regimes (VIX < 20) → no SPY trade.
+> - **2026-09-26 replication:** the same regime edge shows in a different structure, the 45-DTE 12Δ naked put (certified subset +3.38% of margin, t 11.3, 32/32 stress episodes positive; the non-regime weeks +0.67%, t 1.7, and they hold every crash loss). So **never sell SPY puts always-on**. The 45-DTE naked version is a candidate alternative structure for the same bucket, pending a head-to-head. `always_on_index_put_2026-09-26.md`.
+
 
 **Last updated:** 2026-03-21
 **Status:** Research complete. Double calendar added for Bearish_HighIV and Bullish_LowIV.
@@ -49,9 +54,11 @@ rather than a single position at 2–3%. See sizing section below.
 
 ```
                     VIX ≥ 20                              VIX < 20
-SPY below 50MA  → Put spread 0.25/0.15 (no stop)      → Long straddle 0.50
-                  + Double cal 0.25P/0.10C (hold)
-SPY above 50MA  → Put spread 0.45/0.35 (no stop)      → Double cal 0.25P/0.25C (50%PT)
+SPY below 50MA  → Put spread 0.25/0.15 (no stop) ✅    → Long straddle 0.50 ⛔
+                  + Double cal 0.25P/0.10C (hold) ⛔
+SPY above 50MA  → Put spread 0.45/0.35 (no stop) ⛔    → Double cal 0.25P/0.25C (50%PT) ⛔
+
+✅ = certified, trade it · ⛔ = unsupported (2026-09-22/09-26), do not trade
 ```
 
 **No stop loss on either put spread regime.** SPY mean-reverts even in elevated-VIX

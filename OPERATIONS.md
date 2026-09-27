@@ -95,7 +95,9 @@ Other Lambdas / ECS resources in the account (`AGAWorkshop*`, `ninja-*`, `my-mat
 TRADIER_API_KEY=... PYTHONPATH=src .venv/bin/python3 run_friday_screener.py
 ```
 - Produces: per-strategy ENTER/SKIP verdict, terminal only. Actively maintained (7 spreads retired 2026-09-22).
-- **Skip it:** nothing breaks. ⚠ Per memory, **all 13 remaining entries are Tier U** — token size only.
+- ⭐ **It carries the book's ONE certified trade (updated 2026-09-26):** `SPY Regime-Switching` in **Bearish_HighIV** (SPY close below its 50-day MA **and** VIX ≥ 20) is tagged **S = the index stress bucket**: SPY bull put 0.25Δ/0.15Δ, ~20 DTE, Friday entry, no stop, one shared allocation (`strategy_registry.py` "Index stress bucket"). Evidence: t 6.07; re-confirmed 2026-09-26 as a 45-DTE 12Δ naked put (certified subset t 11.3, 32/32 stress episodes positive — `always_on_index_put_2026-09-26.md`). SPY only: the SPX condor is not traded (Gabe 2026-09-25); QQQ's stress cell prints U and is never sized (same bet, uncertified alone).
+- Everything else on the roster is **Tier U** — token size only, or skip.
+- **Skip it:** fine on a calm Friday (VIX < 20 or SPY above its 50-day MA → the stress bucket can't fire). ⚠ On a stress Friday, skipping it skips the only certified trade.
 
 **6. Thursday bull-put screens — two scripts, one job**
 ```bash

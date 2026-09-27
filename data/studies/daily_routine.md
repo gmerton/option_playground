@@ -60,5 +60,8 @@
 4. Score Ariel's nightly calls (`data/ariel_hernandez/analysis/`) — hit rate accrues per video.
 
 
+### Friday: the index stress bucket — the book's ONE certified trade (added 2026-09-26)
+Run `run_friday_screener.py`. Act only if SPY closed **below its 50-day MA and VIX ≥ 20** (Bearish_HighIV): the `SPY Regime-Switching` line prints **S** → sell the SPY bull put **0.25Δ / 0.15Δ**, ~20 DTE, no stop, 50% take, one shared allocation ("Index stress bucket"). Otherwise there is no SPY trade that week — **never sell SPY puts always-on** (outside the regime: +0.67%/trade, t 1.7, and every crash loss; `always_on_index_put_2026-09-26.md`). Evidence: t 6.07 (20-DTE spread), re-confirmed 2026-09-26 on a 45-DTE 12Δ put (t 11.3, 32/32 stress episodes). The regime fires ~9 weeks a year and is episodic (~43% of trades in one stress year). Everything else the screener prints is Tier U: token size or skip.
+
 ### Friday: stock double calendars / diagonals -- ⚠ ON HOLD 2026-09-16
 The study behind `run_stock_dcal_screener.py` had a path-truncation bug (see `calendar_path_study.md` erratum); on the clean ETF re-run no calendar / diagonal / condor has an edge. The clean stock run (2026-09-16) shows every structure losing 5–18% per trade on single names; the screener is RETIRED. Do not act on its output. The IWM / QQQ / SPY double-calendar entries were removed from the Friday screener the same day.
