@@ -1,0 +1,20 @@
+# Simulated adaptive trader (pre-registration in the docstring)
+## PART 0 runs test: 2,226 house breakouts ordered by exit, z -10.65 (more streaking than chance; |z| < 2 = no serial dependence)
+
+## PART 1 sizing feedback on the real sequence (2,226 trades, 18 calendar years; notional 10% x multiplier)
+  rule            logW    CAGR  maxDD  under  minEq | vs FIXED real  shuffled-mean  value  p   | halves (logW vs FIXED)
+  FIXED         +0.888   +5.1%  54.0%    98%   0.51 | +0.000   +0.000   +0.000  1.000 | +0.000 / +0.000
+  AM_STREAK     +0.583   +3.3%  45.8%    98%   0.56 | -0.305   -0.050   -0.255  0.914 | -0.090 / -0.220
+  AM_20         +0.844   +4.8%  44.4%    98%   0.60 | -0.044   +0.548   -0.592  0.963 | -0.037 / -0.024
+  DD_CUT        +0.521   +2.9%  37.7%    98%   0.69 | -0.368   -0.182   -0.186  0.938 | +0.091 / -0.527
+  QUIT          +0.418   +2.3%  37.9%    97%   0.71 | -0.471   -0.472   +0.002  0.507 | +0.136 / -0.580
+  TURTLE_SKIP   +0.121   +0.7%   7.2%    83%   0.93 | -0.767   -1.451   +0.684  0.000 | +0.360 / -1.161
+  TURTLE_SIZE   +0.923   +5.3%  65.9%    98%   0.40 | +0.035   -0.022   +0.057  0.447 | -0.008 / +0.065
+
+## PART 2 knob adaptation, precision pool 2019-10-23 -> 2026-09-22 (2,016 trades)
+  fixed cells, mean % per trade over the evaluation months (best = hindsight, not a rule):
+   HOUSE +2.76 | w0.5_EMA20 +1.82 | w0.5_TIME10 +0.23 | w0.5_STOPONLY +2.41 | w0.75_EMA20 +2.44 | w0.75_TIME10 +0.40 | w0.75_STOPONLY +3.32 | w1.0_EMA20 +2.64 | w1.0_TIME10 +0.56 | w1.0_STOPONLY +3.86
+  ADAPT3: mean +2.35% vs HOUSE +2.76% -> -0.41pp t -0.98 halves +0.12 / -0.68 | month-permutation p 0.650 (null mean +2.53%) | picks: w1.0_STOPONLY 22, w1.0_TIME10 13, HOUSE 12, w0.75_STOPONLY 7, w0.5_TIME10 6, w0.5_STOPONLY 4, w0.75_TIME10 3, w1.0_EMA20 3, w0.5_EMA20 2, w0.75_EMA20 2  *PRIMARY*
+  ADAPT6: mean +2.74% vs HOUSE +2.76% -> -0.02pp t -0.06 halves +0.49 / -0.28 | month-permutation p 0.603 (null mean +2.84%) | picks: w1.0_STOPONLY 34, w1.0_TIME10 17, w0.75_STOPONLY 8, HOUSE 5, w0.5_TIME10 4, w0.75_TIME10 3, w1.0_EMA20 2, w0.75_EMA20 1
+
+VERDICT: sizing rules that ADD VALUE: none | knob adaptation (ADAPT3 primary): NOT MET
