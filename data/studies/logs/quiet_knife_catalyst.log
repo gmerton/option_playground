@@ -1,0 +1,12 @@
+# Quiet knife x crowded short x scheduled catalyst (pre-registration in the docstring)
+knife weeks 8,650; episodes 1,210 (419 names); with SI + control 1,164; 60-session hold, 10 bp/side, excess vs same-date non-knife names in the same SI tercile and catalyst state
+  ALL episodes: raw +2.31% | excess -0.29pp t -1.05 median -3.77 win 43%
+  HIGH short x catalyst=True : n  132 weeks  87  raw -1.28%  excess -5.36pp t -2.68  median -7.01  halves -2.15 / -3.24  yrs+ 2/9  *PRIMARY*
+  HIGH short x catalyst=False: n  331 weeks 167  raw +1.18%  excess -1.03pp t -0.63  median -3.11  halves -5.12 / -0.28  yrs+ 3/9
+  LOW  short x catalyst=True : n   61 weeks  48  raw +3.01%  excess +0.99pp t +0.21  median -6.42  halves +11.09 / -2.49  yrs+ 3/8
+  LOW  short x catalyst=False: n  274 weeks 128  raw +2.79%  excess -0.66pp t -0.36  median -4.62  halves -3.79 / -0.58  yrs+ 4/8
+  MID  short x catalyst=True : n   84 weeks  67  raw +4.09%  excess -0.18pp t -0.07  median -0.23  halves +0.20 / +1.72  yrs+ 5/9
+  MID  short x catalyst=False: n  282 weeks 148  raw +4.15%  excess +0.71pp t +0.47  median -2.02  halves -4.84 / +3.05  yrs+ 5/9
+  interaction [HIGH & CAT] - [LOW & NO CAT]: -2.17pp Welch t -1.72
+
+BAR (PRIMARY HIGH short x catalyst): NOT MET
