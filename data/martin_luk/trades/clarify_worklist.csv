@@ -38,7 +38,7 @@ line_no,date,ticker,direction,action,confidence,fill_timing,fill_date,source,iss
 119,2026-07-24,WULF,short,short,inferred,today,2026-07-24,2026-07-24_Oac266pBZMY@15:50,confidence=inferred; note flags a garble,,,,,,
 120,2026-07-24,SNDK,short,reentry,stated,,2026-07-24,2026-07-24_Oac266pBZMY@04:49,fill date vague (''); note flags a garble,,,,,,
 121,2026-07-24,SKHY,short,entry,stated,Wednesday,2026-07-22,2026-07-24_Oac266pBZMY@108:07,ticker check (SKHY); note flags a garble,,,,,,
-123,2026-07-24,GME,long,entry,stated,,2026-07-24,2026-07-24_Oac266pBZMY@48:22,fill date vague (''),,,,,,
+123,2026-07-24,GME,long,entry,stated,,2026-07-24,2026-07-24_Oac266pBZMY@48:22,fill date vague (''),,,,drop (retrospective -- auto),,"2026-09-27: his 2021 GME story, not a 2026 pick"
 124,2026-07-24,BOIL,long,entry,stated,2022,,2026-07-24_Oac266pBZMY@38:56,fill date vague ('2022'),,,,drop (retrospective/add -- auto),,
 127,2026-07-24,?,short,add,stated,yesterday,2026-07-23,2026-07-24_Oac266pBZMY@108:07,ticker unknown/ambiguous,,,,drop (retrospective/add -- auto),,
 133,2026-07-22,RIVN,long,buy,stated,today,2026-07-22,2026-07-22_OTJ1GjZ8rAc@15:16,note flags a garble,,,,,,
