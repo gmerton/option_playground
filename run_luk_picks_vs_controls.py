@@ -17,6 +17,11 @@ DATA   data/martin_luk/trades/observed_trades.jsonl (504 rows from his livestrea
        are DROPPED, not guessed.
 PICKS  action in {entry, buy, short, reentry}; adds, trims, holds, watches excluded (not independent picks). One pick
        per (ticker, direction, fill date). Direction long / short as logged.
+       ⚙ AMENDED 2026-09-27 (before any scoring): CONTEMPORANEOUS picks only -- a pick counts only if he disclosed it on
+       the stream of its fill date or within 7 calendar days after it. Retrospective selections are excluded because
+       he chose them knowing the outcome: the whole 2026-01-31 presentation (VKNEJA5r8zw, "+969% Return in 1 Year",
+       hand-picked 2025 trades) and any pick whose fill is > 7 days before its video or only month-level dated
+       (e.g. "Oct trades | 25 Nov 2025").
 ENTRY  the CLOSE of the fill date (the house entry; this scores his SELECTION, not his intraday execution).
        Prices: liquid_panel_2019 refreshed first; names outside it (ETFs, young listings) from yfinance, adjusted.
 RETURN signed by direction, 20 sessions (PRIMARY) and 5 sessions, net 10 bp/side; a name without 20 later sessions
