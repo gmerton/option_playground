@@ -70,7 +70,7 @@ line_no,date,ticker,direction,action,confidence,fill_timing,fill_date,source,iss
 307,2026-04-22,BMNR,long,entry,stated,today,2026-04-22,2026-04-22_70HSadiCjPw@29:19,note flags a garble,,,,,,
 322,2026-04-09,UMY,long,entry,stated,today,2026-04-09,2026-04-09_4Kt7AtQ4Dto@33:56,ticker check (UMY),,,,,,
 342,2026-04-07,?,long,entry,stated,today,2026-04-07,2026-04-07_wTbuVPT4hc0@16:18,ticker unknown/ambiguous; note flags a garble,,,,,,
-351,2026-04-06,?,long,entry,stated,today,2026-04-06,2026-04-06_SRbfFeUeWeY@19:44,ticker unknown/ambiguous; note flags a garble,,,,,,
+351,2026-04-06,?,long,entry,stated,today,2026-04-06,2026-04-06_SRbfFeUeWeY@19:44,ticker unknown/ambiguous; note flags a garble,BMNR;MSTR;COIN,,,keep,19:44,"Gabe 2026-09-27: the three crypto positions are BMNR, MSTR, COIN (fill 4/6); consistent with lines 337/340/341 (4/7: MSTR & COIN stopped out, BMNR held). Scorer expands ';' into three picks"
 357,2026-03-13,PG,short,entry,inferred,today,2026-03-13,2026-03-13_0bvjF-T_3UE@04:20,confidence=inferred,,,,,,
 394,2026-03-02,SNDK,short,add,stated,today,2026-03-02,2026-03-02_f2cY0ph_0FE@33:57,note flags a garble,,,,drop (retrospective/add -- auto),,
 428,2026-01-31,UPS,long,entry,stated,,2026-01-31,2026-01-31_VKNEJA5r8zw@113:04,fill date vague (''),,,,drop (retrospective/add -- auto),,
