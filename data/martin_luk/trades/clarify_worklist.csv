@@ -58,12 +58,12 @@ line_no,date,ticker,direction,action,confidence,fill_timing,fill_date,source,iss
 197,2026-06-24,ALAB,long,buy,inferred,today,2026-06-24,2026-06-24_tx321OQ8iD0@105:58,confidence=inferred,ALAB,,,keep,105:58,"Gabe 2026-09-27: confirmed ALAB (Astera Labs), bought that day"
 203,2026-06-23,IONQ,long,reentry,stated,today,2026-06-23,2026-06-23_Z2PyXDLCRaM@118:54,note flags a garble,IONQ,,,keep,118:54,Gabe 2026-09-27: confirmed IONQ re-entry
 208,2026-06-23,?,long,entry,inferred,yesterday,2026-06-22,2026-06-23_Z2PyXDLCRaM@29:17,ticker unknown/ambiguous; confidence=inferred; note flags a garble,CBRS,,,keep,29:17,"Gabe 2026-09-27: caption 'CPRS' is CBRS (Cerebras Systems, recent IPO)"
-209,2026-06-22,TE,long,entry,stated,today,2026-06-22,2026-06-22_Q1Deuj_Rkso@55:55,ticker check (TE),,,,,,
-218,2026-06-12,BOOT,long,entry,inferred,yesterday,2026-06-11,2026-06-12_HnKJ8ZCARwE@04:55,confidence=inferred,,,,,,
+209,2026-06-22,TE,long,entry,stated,today,2026-06-22,2026-06-22_Q1Deuj_Rkso@55:55,ticker check (TE),TE,,,keep,55:55,Gabe 2026-09-27: 'T1 Energy' = TE
+218,2026-06-12,BOOT,long,entry,inferred,yesterday,2026-06-11,2026-06-12_HnKJ8ZCARwE@04:55,confidence=inferred,HOOD,,,keep,04:55,"Gabe 2026-09-27: caption 'boot' is HOOD (confirmed from the video), bought on the same 60-min reclaim candle as Intel"
 219,2026-06-12,?,long,entry,inferred,today,2026-06-12,2026-06-12_HnKJ8ZCARwE@44:26,ticker unknown/ambiguous; confidence=inferred; note flags a garble,,,,,,
 235,2026-06-02,UMAC,long,entry,stated,today,2026-06-02,2026-06-02_HM79DK83psE@41:54,note flags a garble,,,,,,
 242,2026-05-28,UMAC,long,entry,inferred,today,2026-05-28,2026-05-28_KIConi96jLo@11:17,confidence=inferred,,,,,,
-260,2026-05-20,SNDK,long,entry,stated,today,2026-05-20,2026-05-20_603RKPXwd3Y@135:41,note flags a garble,,,,,,
+260,2026-05-20,SNDK,long,entry,stated,today,2026-05-20,2026-05-20_603RKPXwd3Y@135:41,note flags a garble,SNDK,,,keep,135:41,"Gabe 2026-09-27: confirmed SNDK, bought on the 5-min breakout"
 285,2026-05-05,CRCL,long,entry,stated,,2026-05-05,2026-05-05_cu2qxjXIfPc@53:27,fill date vague (''),,,,,,
 286,2026-05-05,AOI,long,entry,stated,thursday,2026-04-30,2026-05-05_cu2qxjXIfPc@42:36,ticker check (AOI),AAOI,,,keep,42:36,Gabe 2026-09-27: 'AOI' is AAOI (Applied Optoelectronics)
 289,2026-05-05,?,long,entry,stated,friday,2026-05-01,2026-05-05_cu2qxjXIfPc@46:48,ticker unknown/ambiguous,NBIS,,,keep,46:48,Gabe 2026-09-27: caption 'naps'/'Napius' is NBIS (Nebius); bought Friday as a breakout
