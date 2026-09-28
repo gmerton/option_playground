@@ -66,7 +66,7 @@ line_no,date,ticker,direction,action,confidence,fill_timing,fill_date,source,iss
 260,2026-05-20,SNDK,long,entry,stated,today,2026-05-20,2026-05-20_603RKPXwd3Y@135:41,note flags a garble,,,,,,
 285,2026-05-05,CRCL,long,entry,stated,,2026-05-05,2026-05-05_cu2qxjXIfPc@53:27,fill date vague (''),,,,,,
 286,2026-05-05,AOI,long,entry,stated,thursday,2026-04-30,2026-05-05_cu2qxjXIfPc@42:36,ticker check (AOI),,,,,,
-289,2026-05-05,?,long,entry,stated,friday,2026-05-01,2026-05-05_cu2qxjXIfPc@46:48,ticker unknown/ambiguous,,,,,,
+289,2026-05-05,?,long,entry,stated,friday,2026-05-01,2026-05-05_cu2qxjXIfPc@46:48,ticker unknown/ambiguous,NBIS,,,keep,46:48,Gabe 2026-09-27: caption 'naps'/'Napius' is NBIS (Nebius); bought Friday as a breakout
 307,2026-04-22,BMNR,long,entry,stated,today,2026-04-22,2026-04-22_70HSadiCjPw@29:19,note flags a garble,,,,,,
 322,2026-04-09,UMY,long,entry,stated,today,2026-04-09,2026-04-09_4Kt7AtQ4Dto@33:56,ticker check (UMY),,,,,,
 342,2026-04-07,?,long,entry,stated,today,2026-04-07,2026-04-07_wTbuVPT4hc0@16:18,ticker unknown/ambiguous; note flags a garble,,,,,,
@@ -98,7 +98,7 @@ line_no,date,ticker,direction,action,confidence,fill_timing,fill_date,source,iss
 451,2026-01-31,AEO,long,entry,inferred,December,,2026-01-31_VKNEJA5r8zw@121:21,confidence=inferred; fill date vague ('December'),,,,drop (retrospective/add -- auto),,
 452,2026-01-31,AAOI,short,entry,inferred,November,,2026-01-31_VKNEJA5r8zw@219:12,confidence=inferred; fill date vague ('November'); note flags a garble,,,,drop (retrospective/add -- auto),,
 465,2026-01-21,?,long,entry,stated,today,2026-01-21,2026-01-21_VZnilD2O7N4@43:10,ticker unknown/ambiguous; note flags a garble,,,,,,
-473,2026-01-09,?,long,entry,stated,today,2026-01-09,2026-01-09__ko_4ity85A@52:52,ticker unknown/ambiguous; note flags a garble,,,,,,
-482,2026-01-08,?,long,entry,stated,today,2026-01-08,2026-01-08_IgiOMLGVD_A@42:12,ticker unknown/ambiguous; note flags a garble,,,,,,
-486,2025-12-16,?,short,entry,stated,today,2025-12-16,2025-12-16_YDDP_Wswt_Q@72:44,ticker unknown/ambiguous; note flags a garble,,,,,,
-496,2025-12-03,IONQ,long,entry,inferred,today,2025-12-03,2025-12-03_uN-4AR4OKYU@70:06,confidence=inferred,,,,,,
+473,2026-01-09,?,long,entry,stated,today,2026-01-09,2026-01-09__ko_4ity85A@52:52,ticker unknown/ambiguous; note flags a garble,RIVN,,,keep,52:52,Gabe 2026-09-27: definitely RIVN (confirmed from the video); entry 20.01 consistent with the 1/9 range
+482,2026-01-08,?,long,entry,stated,today,2026-01-08,2026-01-08_IgiOMLGVD_A@42:12,ticker unknown/ambiguous; note flags a garble,HUT,,,keep,42:12,"Gabe 2026-09-27: caption 'hut' is HUT (Hut 8), not HOOD"
+486,2025-12-16,?,short,entry,stated,today,2025-12-16,2025-12-16_YDDP_Wswt_Q@72:44,ticker unknown/ambiguous; note flags a garble,SNDK,,,keep,72:44,Gabe 2026-09-27: caption 'SNTY' is SNDK; short taken live this session
+496,2025-12-03,IONQ,long,entry,inferred,today,2025-12-03,2025-12-03_uN-4AR4OKYU@70:06,confidence=inferred,ONDS,,,keep,70:06,"Gabe 2026-09-27: caption 'OQ'/'IQ' is ONDS (Ondas), not IONQ; from the video"
