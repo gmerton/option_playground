@@ -13,7 +13,7 @@ line_no,date,ticker,direction,action,confidence,fill_timing,fill_date,source,iss
 58,2026-08-21,COIN,long,entry,inferred,,2026-08-21,2026-08-21_72SNbrYCpuA@18:37,confidence=inferred; fill date vague (''),,,,,,
 60,2026-08-17,RKLB,long,entry,inferred,today,2026-08-17,2026-08-17_28slvAelnSc@74:13,confidence=inferred; note flags a garble,,,,,,
 64,2026-08-17,CRCL,long,entry,stated,,2026-08-17,2026-08-17_28slvAelnSc@80:12,fill date vague (''); note flags a garble,,,,,,
-66,2026-08-17,AOI,long,entry,inferred,2026-08-11,2026-08-11,2026-08-17_28slvAelnSc@75:23,ticker check (AOI); confidence=inferred,,,,,,
+66,2026-08-17,AOI,long,entry,inferred,2026-08-11,2026-08-11,2026-08-17_28slvAelnSc@75:23,ticker check (AOI); confidence=inferred,AAOI,,,,,"2026-09-27: 'AOI' is AAOI, same decode Gabe confirmed on line 286 (AOI is not a live ticker)"
 71,2026-08-12,DELL,long,add,inferred,today,2026-08-12,2026-08-12_1fkRKvTZJ8s@132:23,confidence=inferred; note flags a garble,,,,drop (retrospective/add -- auto),,
 73,2026-08-12,APP,long,entry,inferred,today,2026-08-12,2026-08-12_1fkRKvTZJ8s@51:26,confidence=inferred,,,,,,
 76,2026-08-12,AAOI,long,entry,inferred,yesterday,2026-08-11,2026-08-12_1fkRKvTZJ8s@98:34,confidence=inferred; note flags a garble,,,,,,
@@ -65,11 +65,11 @@ line_no,date,ticker,direction,action,confidence,fill_timing,fill_date,source,iss
 242,2026-05-28,UMAC,long,entry,inferred,today,2026-05-28,2026-05-28_KIConi96jLo@11:17,confidence=inferred,,,,,,
 260,2026-05-20,SNDK,long,entry,stated,today,2026-05-20,2026-05-20_603RKPXwd3Y@135:41,note flags a garble,,,,,,
 285,2026-05-05,CRCL,long,entry,stated,,2026-05-05,2026-05-05_cu2qxjXIfPc@53:27,fill date vague (''),,,,,,
-286,2026-05-05,AOI,long,entry,stated,thursday,2026-04-30,2026-05-05_cu2qxjXIfPc@42:36,ticker check (AOI),,,,,,
+286,2026-05-05,AOI,long,entry,stated,thursday,2026-04-30,2026-05-05_cu2qxjXIfPc@42:36,ticker check (AOI),AAOI,,,keep,42:36,Gabe 2026-09-27: 'AOI' is AAOI (Applied Optoelectronics)
 289,2026-05-05,?,long,entry,stated,friday,2026-05-01,2026-05-05_cu2qxjXIfPc@46:48,ticker unknown/ambiguous,NBIS,,,keep,46:48,Gabe 2026-09-27: caption 'naps'/'Napius' is NBIS (Nebius); bought Friday as a breakout
-307,2026-04-22,BMNR,long,entry,stated,today,2026-04-22,2026-04-22_70HSadiCjPw@29:19,note flags a garble,,,,,,
-322,2026-04-09,UMY,long,entry,stated,today,2026-04-09,2026-04-09_4Kt7AtQ4Dto@33:56,ticker check (UMY),,,,,,
-342,2026-04-07,?,long,entry,stated,today,2026-04-07,2026-04-07_wTbuVPT4hc0@16:18,ticker unknown/ambiguous; note flags a garble,,,,,,
+307,2026-04-22,BMNR,long,entry,stated,today,2026-04-22,2026-04-22_70HSadiCjPw@29:19,note flags a garble,BMNR,,,keep,29:19,Gabe 2026-09-27: confirmed BMNR (Bitmine)
+322,2026-04-09,UMY,long,entry,stated,today,2026-04-09,2026-04-09_4Kt7AtQ4Dto@33:56,ticker check (UMY),UAMY,,,keep,33:56,"Gabe 2026-09-27: caption 'U M Y' is UAMY (United States Antimony); micro-cap, reduced size for liquidity"
+342,2026-04-07,?,long,entry,stated,today,2026-04-07,2026-04-07_wTbuVPT4hc0@16:18,ticker unknown/ambiguous; note flags a garble,SOLS,,,keep,16:18,Gabe 2026-09-27: SOLS (Solstice Advanced Materials); 4/7 range 76.82-79.28 fits the ~78.65 limit
 351,2026-04-06,?,long,entry,stated,today,2026-04-06,2026-04-06_SRbfFeUeWeY@19:44,ticker unknown/ambiguous; note flags a garble,BMNR;MSTR;COIN,,,keep,19:44,"Gabe 2026-09-27: the three crypto positions are BMNR, MSTR, COIN (fill 4/6); consistent with lines 337/340/341 (4/7: MSTR & COIN stopped out, BMNR held). Scorer expands ';' into three picks"
 357,2026-03-13,PG,short,entry,inferred,today,2026-03-13,2026-03-13_0bvjF-T_3UE@04:20,confidence=inferred,,,,,,
 394,2026-03-02,SNDK,short,add,stated,today,2026-03-02,2026-03-02_f2cY0ph_0FE@33:57,note flags a garble,,,,drop (retrospective/add -- auto),,
