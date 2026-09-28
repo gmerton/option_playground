@@ -4,7 +4,7 @@
 
 Two checks per video. **Ambiguous tickers**: spots where the auto-caption garbled a symbol — click the timestamp, check the chart, confirm the ticker. **Trades**: each trade with the day it was placed; ⬜ marks rows that need a glance — an unresolved ticker (`?`), an unresolved fill date, or a date *inferred* to a different day than the stream (e.g. he said "Thursday"). Rows with no ⬜ are same-session or he stated the date.
 
-**830** ticker flags · **215** trades to date-check · across **84** videos. Conf: 🟡 likely · ❓ unsure.
+**859** ticker flags · **250** trades to date-check · across **88** videos. Conf: 🟡 likely · ❓ unsure.
 
 ## Index — ticker flags by video
 
@@ -26,6 +26,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 - [2026-03-04 — $GLD $SLV pullback short](#2026-03-04-gld-slv-pullback-short) · 13
 - [2026-01-21 — Buy pullbacks and Greenland](#2026-01-21-buy-pullbacks-and-greenland) · 13
 - [2025-12-13 — Panic sell](#2025-12-13-panic-sell) · 13
+- [2026-09-21 — EP102](#2026-09-21-ep102) · 12
 - [2026-08-06 — Don't worry be happy](#2026-08-06-don-t-worry-be-happy) · 12
 - [2026-07-22 — Study the charts](#2026-07-22-study-the-charts) · 12
 - [2026-04-28 — Dip buys not working](#2026-04-28-dip-buys-not-working) · 12
@@ -63,6 +64,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 - [2026-02-18 — Wait for the close](#2026-02-18-wait-for-the-close) · 9
 - [2026-02-11 — Watchlists](#2026-02-11-watchlists) · 9
 - [2026-01-31 — +969% Return in 1 Year: The Pullback Strategy of a Trading Champion](#2026-01-31-969-return-in-1-year-the-pullback-strategy-of-a-trading-champion) · 9
+- [2026-09-15 — Patience](#2026-09-15-patience) · 8
 - [2026-08-21 — Reset](#2026-08-21-reset) · 8
 - [2026-08-17 — Missed $ONDS](#2026-08-17-missed-onds) · 8
 - [2026-08-04 — Lockout rally again](#2026-08-04-lockout-rally-again) · 8
@@ -86,12 +88,147 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 - [2026-04-08 — Huge gap-up and $CAR short](#2026-04-08-huge-gap-up-and-car-short) · 6
 - [2026-02-26 — Chop chop chop](#2026-02-26-chop-chop-chop) · 6
 - [2026-02-06 — $SNDK LoD](#2026-02-06-sndk-lod) · 6
+- [2026-09-16 — FOMC special](#2026-09-16-fomc-special) · 5
 - [2026-09-02 — Getting too bearish](#2026-09-02-getting-too-bearish) · 5
 - [2026-07-29 — Bleeding slowly](#2026-07-29-bleeding-slowly) · 5
 - [2026-07-24 — EP71](#2026-07-24-ep71) · 5
 - [2026-04-27 — Short term extension and oil strength](#2026-04-27-short-term-extension-and-oil-strength) · 5
+- [2026-09-14 — Another gap](#2026-09-14-another-gap) · 4
 - [2026-07-01 — Clean](#2026-07-01-clean) · 4
 - [2025-11-26 — Oct trades](#2025-11-26-oct-trades) · 4
+
+
+## 2026-09-21 — EP102
+
+[▶ watch](https://www.youtube.com/watch?v=2lJj3qrHkso) · `data/martin_luk/videos/livestreams/2026-09-21_2lJj3qrHkso` · 12 ticker flags · 28 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [05:21](https://www.youtube.com/watch?v=2lJj3qrHkso&t=321s) | BMR / BMAN hour | crypto long entered Thursday with MSTR | BMNR | 🟡 |
+| ⬜ | [06:26](https://www.youtube.com/watch?v=2lJj3qrHkso&t=386s) | I ran / iron | also entered Thursday; gapped up ~6.5% premarket; crypto/AI-miner peer of NBIS | IREN | 🟡 |
+| ⬜ | [58:49](https://www.youtube.com/watch?v=2lJj3qrHkso&t=3529s) | Naps / Nepius | tried same day as IREN, stopped; 'Nepius pullback by this morning' | NBIS | 🟡 |
+| ⬜ | [09:18](https://www.youtube.com/watch?v=2lJj3qrHkso&t=558s) | crowd / crow | software/cybersecurity, bounce with IGV, stopped with PANW | CRWD | 🟡 |
+| ⬜ | [95:22](https://www.youtube.com/watch?v=2lJj3qrHkso&t=5722s) | pand / PW / a W | cybersecurity, weak vs other software | PANW | 🟡 |
+| ⬜ | [86:56](https://www.youtube.com/watch?v=2lJj3qrHkso&t=5216s) | talent / Palentia | strongest software stock Friday | PLTR | 🟡 |
+| ⬜ | [78:13](https://www.youtube.com/watch?v=2lJj3qrHkso&t=4693s) | hood / who | crypto strength encouraged focus | HOOD | 🟡 |
+| ⬜ | [15:30](https://www.youtube.com/watch?v=2lJj3qrHkso&t=930s) | micro strategy | 'I saw some micro strategy into strength around 20%' | MSTR (and 'saw' = 'sold' -> trim) | 🟡 |
+| ⬜ | [66:42](https://www.youtube.com/watch?v=2lJj3qrHkso&t=4002s) | SpaceX | long last Thursday stopped 30 min after entry; Friday 5-min breakout and re-entry | SPCX (prior KB decode, Gabe-confirmed 2026-07-23) | ✅ |
+| ⬜ | [54:21](https://www.youtube.com/watch?v=2lJj3qrHkso&t=3261s) | closed most of my short | shorts covered after Thursday open; names not stated | unknown | ❓ |
+| ⬜ | [30:36](https://www.youtube.com/watch?v=2lJj3qrHkso&t=1836s) | IN | viewer: 'What's your price target for IN?' | IREN or NBIS (not a trade row) | ❓ |
+| ⬜ | [74:49](https://www.youtube.com/watch?v=2lJj3qrHkso&t=4489s) | SK highex | memory names gapping with MU (context only, not traded) | SK Hynix | 🟡 |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [53:16](https://www.youtube.com/watch?v=2lJj3qrHkso&t=3196s) | MSTR | long · stopped_out | Thursday | 2026-09-17 |
+| ⬜ | [53:31](https://www.youtube.com/watch?v=2lJj3qrHkso&t=3211s) | MSTR | long · reentry | Thursday | 2026-09-17 |
+| · | [15:30](https://www.youtube.com/watch?v=2lJj3qrHkso&t=930s) | MSTR | long · trim | today | 2026-09-21 |
+| ⬜ | [51:59](https://www.youtube.com/watch?v=2lJj3qrHkso&t=3119s) | BMNR | long · entry | Thursday | 2026-09-17 |
+| ⬜ | [60:03](https://www.youtube.com/watch?v=2lJj3qrHkso&t=3603s) | IREN | long · stopped_out | Thursday | 2026-09-17 |
+| ⬜ | [61:20](https://www.youtube.com/watch?v=2lJj3qrHkso&t=3680s) | IREN | long · reentry | Thursday | 2026-09-17 |
+| ⬜ | [58:49](https://www.youtube.com/watch?v=2lJj3qrHkso&t=3529s) | NBIS | long · stopped_out | Thursday | 2026-09-17 |
+| · | [26:34](https://www.youtube.com/watch?v=2lJj3qrHkso&t=1594s) | NBIS | long · entry | today | 2026-09-21 |
+| ⬜ | [76:34](https://www.youtube.com/watch?v=2lJj3qrHkso&t=4594s) | SNDK | long · entry | Friday | 2026-09-18 |
+| ⬜ | [81:15](https://www.youtube.com/watch?v=2lJj3qrHkso&t=4875s) | HOOD | long · entry | Friday | 2026-09-18 |
+| ⬜ | [86:43](https://www.youtube.com/watch?v=2lJj3qrHkso&t=5203s) | COIN | long · entry | Friday | 2026-09-18 |
+| ⬜ | [86:56](https://www.youtube.com/watch?v=2lJj3qrHkso&t=5216s) | PLTR | long · entry | Thursday | 2026-09-17 |
+| ⬜ | [88:12](https://www.youtube.com/watch?v=2lJj3qrHkso&t=5292s) | PLTR | long · stopped_out | Friday | 2026-09-18 |
+| ⬜ | [92:01](https://www.youtube.com/watch?v=2lJj3qrHkso&t=5521s) | PLTR | long · stopped_out | Friday | 2026-09-18 |
+| ⬜ | [91:40](https://www.youtube.com/watch?v=2lJj3qrHkso&t=5500s) | PLTR | long · reentry | Friday | 2026-09-18 |
+| ⬜ | [93:26](https://www.youtube.com/watch?v=2lJj3qrHkso&t=5606s) | TSLA | long · stopped_out | Thursday | 2026-09-17 |
+| ⬜ | [94:05](https://www.youtube.com/watch?v=2lJj3qrHkso&t=5645s) | TSLA | long · reentry | Friday | 2026-09-18 |
+| ⬜ | [96:02](https://www.youtube.com/watch?v=2lJj3qrHkso&t=5762s) | PANW | long · entry | Friday | 2026-09-18 |
+| ⬜ | [97:43](https://www.youtube.com/watch?v=2lJj3qrHkso&t=5863s) | PANW | long · reentry | Friday | 2026-09-18 |
+| ⬜ | [99:02](https://www.youtube.com/watch?v=2lJj3qrHkso&t=5942s) | PANW | long · stopped_out | Friday | 2026-09-18 |
+| ⬜ | [99:02](https://www.youtube.com/watch?v=2lJj3qrHkso&t=5942s) | CRWD | long · stopped_out | Friday | 2026-09-18 |
+| ⬜ | [99:17](https://www.youtube.com/watch?v=2lJj3qrHkso&t=5957s) | CRWD | long · reentry | Friday | 2026-09-18 |
+| · | [09:18](https://www.youtube.com/watch?v=2lJj3qrHkso&t=558s) | CRWD | long · stopped_out | today | 2026-09-21 |
+| ⬜ | [67:44](https://www.youtube.com/watch?v=2lJj3qrHkso&t=4064s) | SPCX | long · stopped_out | Thursday | 2026-09-17 |
+| ⬜ | [100:33](https://www.youtube.com/watch?v=2lJj3qrHkso&t=6033s) | SPCX | long · stopped_out | Friday | 2026-09-18 |
+| ⬜ | [101:51](https://www.youtube.com/watch?v=2lJj3qrHkso&t=6111s) | SPCX | long · reentry | Friday | 2026-09-18 |
+| · | [65:52](https://www.youtube.com/watch?v=2lJj3qrHkso&t=3952s) | SMCI | long · stopped_out | — | 2026-09-21 |
+| ⬜ | [54:21](https://www.youtube.com/watch?v=2lJj3qrHkso&t=3261s) | ? | short · exit | Thursday | 2026-09-17 |
+
+
+## 2026-09-16 — FOMC special
+
+[▶ watch](https://www.youtube.com/watch?v=qAbZe_GD42w) · `data/martin_luk/videos/livestreams/2026-09-16_qAbZe_GD42w` · 5 ticker flags · 6 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [05:34](https://www.youtube.com/watch?v=qAbZe_GD42w&t=334s) | took some shorts (unnamed) | bounce on the cues into the declining nine ... it took some shorts | Unnamed morning shorts; possibly QQQ itself or names timed off the Qs | ❓ |
+| ⬜ | [60:22](https://www.youtube.com/watch?v=qAbZe_GD42w&t=3622s) | sockets / the semi short | the sockets bounce into the declining nine ... tried to short it on Friday and it failed; 'I almost got stopped. That was from the semi short' (06:59) | SOX semiconductor index; vehicle unknown (SOXX / SMH / SOXS or a single semi) | ❓ |
+| ⬜ | [23:35](https://www.youtube.com/watch?v=qAbZe_GD42w&t=1415s) | Silver | Silver actually is a pretty good short today ... if I'm not in it last Friday | Silver short; vehicle unknown (SLV or futures) | ❓ |
+| ⬜ | [18:18](https://www.youtube.com/watch?v=qAbZe_GD42w&t=1098s) | Ext (and 'TAM' at 17:52) | pretty fast mover ... slightly under the weekly 9 and 21 and daily 50 ... I'll give him a little bit of room ... IWM is still very weak | AXTI (prior stream's 'exti'/'XTI' small-cap semi short) | 🟡 |
+| ⬜ | [96:51](https://www.youtube.com/watch?v=qAbZe_GD42w&t=5811s) | Tesla | Tesla short is the one that I took | TSLA | 🟡 |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [05:34](https://www.youtube.com/watch?v=qAbZe_GD42w&t=334s) | ? | short · entry | today | 2026-09-16 |
+| ⬜ | [06:59](https://www.youtube.com/watch?v=qAbZe_GD42w&t=419s) | ? | short · entry | today | 2026-09-16 |
+| ⬜ | [60:22](https://www.youtube.com/watch?v=qAbZe_GD42w&t=3622s) | ? | short · stopped_out | Friday | 2026-09-11 |
+| ⬜ | [23:35](https://www.youtube.com/watch?v=qAbZe_GD42w&t=1415s) | ? | short · hold | Friday | 2026-09-11 |
+| · | [20:36](https://www.youtube.com/watch?v=qAbZe_GD42w&t=1236s) | AXTI | short · hold | — | 2026-09-16 |
+| · | [96:51](https://www.youtube.com/watch?v=qAbZe_GD42w&t=5811s) | TSLA | short · entry | — | 2026-09-16 |
+
+
+## 2026-09-15 — Patience
+
+[▶ watch](https://www.youtube.com/watch?v=E5h9Cam51OU) · `data/martin_luk/videos/livestreams/2026-09-15_E5h9Cam51OU` · 8 ticker flags · 6 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [68:57](https://www.youtube.com/watch?v=E5h9Cam51OU&t=4137s) | SK high next | considering to short the memories ... shorting SK high next | SKHY (SK Hynix US ADR) | 🟡 |
+| ⬜ | [33:38](https://www.youtube.com/watch?v=E5h9Cam51OU&t=2018s) | gold / silver | 25% position in silver in gold or bigger ... they go down ... my way | vehicle not stated: GLD/SLV or futures | ❓ |
+| ⬜ | [14:17](https://www.youtube.com/watch?v=E5h9Cam51OU&t=857s) | ALAB, um, AXI, Intel | viewer: relative weakness to NASDAQ ... when you shorted them | ALAB / AXTI / INTC | 🟡 |
+| ⬜ | [14:38](https://www.youtube.com/watch?v=E5h9Cam51OU&t=878s) | rubric uh FT&T | viewer: showed relative strength above 50 EMA ... I shouldn't have shorted them (viewer's own trades, not logged) | RBRK / FTNT (software/cyber) | ❓ |
+| ⬜ | [05:35](https://www.youtube.com/watch?v=E5h9Cam51OU&t=335s) | could crowd or other or maybe like NW | cybersecurity/software strength ... serving in weekly nine | CRWD / NET? (discussion only) | ❓ |
+| ⬜ | [24:31](https://www.youtube.com/watch?v=E5h9Cam51OU&t=1471s) | coin / micro strategy | crypto breaking previous day low | COIN / MSTR (commentary only) | 🟡 |
+| ⬜ | [54:29](https://www.youtube.com/watch?v=E5h9Cam51OU&t=3269s) | Unity | software dip buy question; IGV extended | U? (viewer question, commentary only) | ❓ |
+| ⬜ | [73:19](https://www.youtube.com/watch?v=E5h9Cam51OU&t=4399s) | PBY | long-side viewer question, inside day above the 21 EMA | ? (not traded) | ❓ |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [10:45](https://www.youtube.com/watch?v=E5h9Cam51OU&t=645s) | TSLA | short · entry | yesterday | 2026-09-14 |
+| ⬜ | [33:38](https://www.youtube.com/watch?v=E5h9Cam51OU&t=2018s) | ? | short · hold | — | 2026-09-15 |
+| ⬜ | [33:59](https://www.youtube.com/watch?v=E5h9Cam51OU&t=2039s) | ? | short · hold | — | 2026-09-15 |
+| · | [68:57](https://www.youtube.com/watch?v=E5h9Cam51OU&t=4137s) | SKHY | short · entry | today | 2026-09-15 |
+| · | [14:17](https://www.youtube.com/watch?v=E5h9Cam51OU&t=857s) | ALAB | short · entry | — | 2026-09-15 |
+| · | [14:17](https://www.youtube.com/watch?v=E5h9Cam51OU&t=857s) | INTC | short · entry | — | 2026-09-15 |
+
+
+## 2026-09-14 — Another gap
+
+[▶ watch](https://www.youtube.com/watch?v=rrTaA0m7WxA) · `data/martin_luk/videos/livestreams/2026-09-14_rrTaA0m7WxA` · 4 ticker flags · 4 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [20:50](https://www.youtube.com/watch?v=rrTaA0m7WxA&t=1250s) | AAP | this AAP is like Yeah, I'm not setting a stop at the high of day and then I got taken out (said during semis / AI-themes discussion) | AAP literal, or a garbled semi/AI name - unresolved; ticker left '?' | ❓ |
+| ⬜ | [17:10](https://www.youtube.com/watch?v=rrTaA0m7WxA&t=1030s) | this memory ETF | memory ETF losing all the supports; he was a week early on the fake-out | a memory-sector ETF (symbol not spoken); ticker left '?' | ❓ |
+| ⬜ | [06:19](https://www.youtube.com/watch?v=rrTaA0m7WxA&t=379s) | HP | HP opening below Friday's candle low and the 9 EMA; later viewer: 'leading names like Dow HP' (30:58). Watchlist only, not a trade. | HPE or HPQ (not a trade row) | ❓ |
+| ⬜ | [16:50](https://www.youtube.com/watch?v=rrTaA0m7WxA&t=1010s) | ESA | So far softwares are getting support on the 9 and 21. ESA is rejected. Watchlist only. | unknown (not a trade row) | ❓ |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [04:33](https://www.youtube.com/watch?v=rrTaA0m7WxA&t=273s) | ? | short · exit | Friday | 2026-09-11 |
+| ⬜ | [12:38](https://www.youtube.com/watch?v=rrTaA0m7WxA&t=758s) | ? | short · hold | today | 2026-09-14 |
+| ⬜ | [20:50](https://www.youtube.com/watch?v=rrTaA0m7WxA&t=1250s) | ? | short · stopped_out | — | 2026-09-14 |
+| ⬜ | [17:46](https://www.youtube.com/watch?v=rrTaA0m7WxA&t=1066s) | ? | short · stopped_out | — | 2026-09-14 |
 
 
 ## 2026-09-10 — EP96

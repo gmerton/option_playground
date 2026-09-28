@@ -1,0 +1,19 @@
+{
+  "video_id": "E5h9Cam51OU",
+  "url": "https://www.youtube.com/watch?v=E5h9Cam51OU",
+  "title": "Patience | 15 Sep 2026",
+  "channel": "martinlukkt",
+  "channel_id": "UCB6jWJJvO_sWZ2PwgmMcxCw",
+  "stream_date": "2026-09-15",
+  "duration": "1:18:46",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en-orig",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

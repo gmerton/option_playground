@@ -1,0 +1,195 @@
+{
+ "video_id": "E5h9Cam51OU",
+ "date": "2026-09-15",
+ "title": "Patience | 15 Sep 2026",
+ "observed_trades": [
+  {
+   "date": "2026-09-15",
+   "ticker": "TSLA",
+   "direction": "short",
+   "action": "entry",
+   "setup": "Index bounce after the prior stream: NASDAQ/SPY spiked into the gap level / previous-day low (near gap fill) while Russell stayed extended to the downside; took a Tesla short into that bounce.",
+   "entry_basis": "15-min candle rejection at the 60-minute EMA convergence",
+   "stop": "",
+   "source": "2026-09-15_E5h9Cam51OU@10:45",
+   "confidence": "stated",
+   "notes": "'yesterday after ... ended the stream, the market actually get a little bit of bounce' (09:47-10:12); 'I still like took a shot on Tesla short uh and right at the ... 15minute candle which is the um this rejection over here and the 60 minute EMA convergence. So let's see whether it's going to work' (10:45-11:03). 'Tesla' is literal.",
+   "fill_timing": "yesterday"
+  },
+  {
+   "date": "2026-09-15",
+   "ticker": "?",
+   "direction": "short",
+   "action": "hold",
+   "setup": "Gold short (precious-metals short from the 2026-09-10 stream) still held as a very large position; sized big because gold is a slow mover (low ATR), has no earnings/little overnight-gap catalyst, and moved his way right after entry.",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-09-15_E5h9Cam51OU@33:38",
+   "confidence": "stated",
+   "notes": "Viewer: 'Do you have a 25% position in silver in gold or bigger?' Luk: 'they're bigger. Gold is ... a really really large position' (31:57-33:38); 'Gold is like more like twice ... of my silver position' (33:59-34:19); 'they go down ... go to my way right after my entry' (40:29). Direction = short from 'go down ... my way'. Vehicle not stated (GLD vs futures).",
+   "fill_timing": ""
+  },
+  {
+   "date": "2026-09-15",
+   "ticker": "?",
+   "direction": "short",
+   "action": "hold",
+   "setup": "Silver short held at ~35-40% of account alongside the gold short; same slow-mover / low-gap-risk sizing rationale.",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-09-15_E5h9Cam51OU@33:59",
+   "confidence": "stated",
+   "notes": "'silver is like um more than 30 35 35 or 40%' (33:59). Direction short from 'they go down ... go to my way right after my entry' (40:29). Note: the 2026-09-10 stream logged a silver short STOPPED OUT, so this is presumably a re-entry not described in this stream. Vehicle not stated (SLV vs futures).",
+   "fill_timing": ""
+  },
+  {
+   "date": "2026-09-15",
+   "ticker": "SKHY",
+   "direction": "short",
+   "action": "entry",
+   "setup": "Memory-names short while industries weak: hourly and 15-min charts ugly, SPY weak on daily and weekly; admits it is not the ideal place/timing (QQQ/SPY not near the 9 EMA, market still extended) so kept it to one name.",
+   "entry_basis": "Clean rejection (intraday) with a tight stop",
+   "stop": "Tight stop (level not stated)",
+   "source": "2026-09-15_E5h9Cam51OU@68:57",
+   "confidence": "stated",
+   "notes": "'I'm considering to short the memories' (56:29); 'I know that is not the ... best place for an entry ... We got a tight stop. Uh we got a pretty clean rejection. So I'm going to only like um ... shorting SK high next. I'm not going to do crazy stuffs here' (68:29-68:57); 'I don't think it's ideal time for entry because cues and spiral not close to the 9A' (69:11). Caption 'SK high next' = SK Hynix US ADR (SKHY, same decode as 2026-09-10 extract).",
+   "fill_timing": "today"
+  },
+  {
+   "date": "2026-09-15",
+   "ticker": "ALAB",
+   "direction": "short",
+   "action": "entry",
+   "setup": "Semi short (relative weakness to NASDAQ); per a viewer, not extended to the downside at entry.",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-09-15_E5h9Cam51OU@14:17",
+   "confidence": "inferred",
+   "notes": "Only from a viewer's comment: 'ALAB, um, AXI, Intel all shown relative weakness to ... NASDAQ, but most of them were not extended to the downside when you shorted them' (14:17). Luk does not confirm or deny; he answers on sector strength. Date of fill unknown (around 10 Sep). AXTI in the same list is already logged in the 2026-09-10 extract and is NOT repeated here to avoid a duplicate.",
+   "fill_timing": ""
+  },
+  {
+   "date": "2026-09-15",
+   "ticker": "INTC",
+   "direction": "short",
+   "action": "entry",
+   "setup": "Semi short (relative weakness to NASDAQ); per a viewer, not extended to the downside at entry.",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-09-15_E5h9Cam51OU@14:17",
+   "confidence": "inferred",
+   "notes": "Only from a viewer's comment ('ALAB, um, AXI, Intel ... when you shorted them', 14:17); Luk does not confirm. 'Intel' = INTC. Possibly the unnamed third semi short in the 2026-09-10 extract (ticker '?') - check before counting both.",
+   "fill_timing": ""
+  }
+ ],
+ "principles": [
+  {
+   "category": "posture",
+   "text": "Don't short into downside extension (Russell extended): wait for the bounce into resistance rather than chase; patience for better entries over action.",
+   "timestamp": "12:25"
+  },
+  {
+   "category": "posture",
+   "text": "Sector strength decides the side: software is strong (pullback to the weekly 9, weekly uptrend), semis are under all EMAs in a downtrend, so shorts go in semis, not software. A name in a strong sector is 'not a short'.",
+   "timestamp": "15:27"
+  },
+  {
+   "category": "process",
+   "text": "Headlines (e.g. AI-policy news) are interesting stories but irrelevant to trading decisions; he trades price action, like Darvas.",
+   "timestamp": "09:47"
+  },
+  {
+   "category": "process",
+   "text": "Does not use market breadth or put/call ratios; decisions come from names in his screens and watchlists.",
+   "timestamp": "38:07"
+  },
+  {
+   "category": "risk",
+   "text": "Very large positions (gold ~2x silver, silver 35-40%) are acceptable in slow movers (low ATR) with no earnings and little overnight-gap catalyst, especially when the trade works right after entry.",
+   "timestamp": "40:00"
+  },
+  {
+   "category": "risk",
+   "text": "Risk per trade lowered to ~0.3% on average this year.",
+   "timestamp": "75:18"
+  },
+  {
+   "category": "posture",
+   "text": "In a weak market avoid longs entirely; short-base / extension breakouts only work in strong markets (e.g. April). Prefer a longer consolidation or deeper pullback for extended leaders like MRNA.",
+   "timestamp": "41:57"
+  },
+  {
+   "category": "short_entries",
+   "text": "A short-side hold stays fine while price is under the declining 9 EMA; concern starts only if it takes out the previous-day high and gets above the declining 9.",
+   "timestamp": "28:40"
+  },
+  {
+   "category": "short_entries",
+   "text": "A non-ideal-timing short is acceptable only with a clean rejection and a tight stop, and kept small (one name, 'nothing crazy'); when the market really weakens there will be many shortable bounces.",
+   "timestamp": "68:29"
+  },
+  {
+   "category": "psychology",
+   "text": "In a losing stretch, look for commonalities in losers AND in passed winners: sector strength, entry location (at extensions?), stop placement; some of it is luck on a small sample.",
+   "timestamp": "47:26"
+  }
+ ],
+ "ambiguous_tickers": [
+  {
+   "timestamp": "68:57",
+   "caption_text": "SK high next",
+   "context": "considering to short the memories ... shorting SK high next",
+   "guess": "SKHY (SK Hynix US ADR)",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "33:38",
+   "caption_text": "gold / silver",
+   "context": "25% position in silver in gold or bigger ... they go down ... my way",
+   "guess": "vehicle not stated: GLD/SLV or futures",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "14:17",
+   "caption_text": "ALAB, um, AXI, Intel",
+   "context": "viewer: relative weakness to NASDAQ ... when you shorted them",
+   "guess": "ALAB / AXTI / INTC",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "14:38",
+   "caption_text": "rubric uh FT&T",
+   "context": "viewer: showed relative strength above 50 EMA ... I shouldn't have shorted them (viewer's own trades, not logged)",
+   "guess": "RBRK / FTNT (software/cyber)",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "05:35",
+   "caption_text": "could crowd or other or maybe like NW",
+   "context": "cybersecurity/software strength ... serving in weekly nine",
+   "guess": "CRWD / NET? (discussion only)",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "24:31",
+   "caption_text": "coin / micro strategy",
+   "context": "crypto breaking previous day low",
+   "guess": "COIN / MSTR (commentary only)",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "54:29",
+   "caption_text": "Unity",
+   "context": "software dip buy question; IGV extended",
+   "guess": "U? (viewer question, commentary only)",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "73:19",
+   "caption_text": "PBY",
+   "context": "long-side viewer question, inside day above the 21 EMA",
+   "guess": "? (not traded)",
+   "confidence": "unsure"
+  }
+ ]
+}

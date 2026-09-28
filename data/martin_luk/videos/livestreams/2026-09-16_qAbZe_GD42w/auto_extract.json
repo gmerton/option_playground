@@ -1,0 +1,164 @@
+{
+ "video_id": "qAbZe_GD42w",
+ "date": "2026-09-16",
+ "title": "FOMC special | 16 Sep 2026",
+ "observed_trades": [
+  {
+   "date": "2026-09-16",
+   "ticker": "?",
+   "direction": "short",
+   "action": "entry",
+   "setup": "Pre-FOMC shorts added in the morning as the Qs bounced into the declining daily 9 (SPY also bouncing into its declining daily 9, below the weekly 9); still leaning bearish.",
+   "entry_basis": "Bounce into the declining daily 9 EMA",
+   "stop": "",
+   "source": "2026-09-16_qAbZe_GD42w@05:34",
+   "confidence": "inferred",
+   "notes": "'I added some shorts uh early in the morning and they are like getting favor tight risk' (03:53); 'we got a bounce on the cues into the declining nine. So it took some shorts' (05:34). Tickers never named; unclear whether QQQ itself or individual names timed off the Qs. The semi short (next row) is presumably one of these.",
+   "fill_timing": "today"
+  },
+  {
+   "date": "2026-09-16",
+   "ticker": "?",
+   "direction": "short",
+   "action": "entry",
+   "setup": "Semis short: the 'sockets' (semiconductor index) bouncing into the declining daily 9 - a level he had waited on for a while after a failed attempt on Friday; getting some rejection today.",
+   "entry_basis": "Rejection of the bounce into the declining daily 9",
+   "stop": "",
+   "source": "2026-09-16_qAbZe_GD42w@06:59",
+   "confidence": "inferred",
+   "notes": "'I almost got stopped. That was from the semi short' (06:59); 'today also like um is the day that the sockets bounce into the declining nine. Like I think I waited for this for quite a while ... So far we're getting some kind of rejection today. Let's see whether we can get some followroughs' (60:22-60:41). Vehicle not stated; caption 'sockets' = SOX (semiconductor index) - vehicle could be SOXX/SMH/SOXS or a single semi name. Inferred that the 06:59 semi short and the 60:22 SOX commentary are the same position.",
+   "fill_timing": "today"
+  },
+  {
+   "date": "2026-09-16",
+   "ticker": "?",
+   "direction": "short",
+   "action": "stopped_out",
+   "setup": "Earlier attempt to short the semis ('sockets') bounce on Friday that failed.",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-09-16_qAbZe_GD42w@60:22",
+   "confidence": "inferred",
+   "notes": "'tried to short it on I think on this day on Friday and it failed and then we haven't got a really clean rejection' (60:22-60:41). 'Failed' read as stopped out; not explicitly said. Same vehicle ambiguity as the semi short row.",
+   "fill_timing": "Friday"
+  },
+  {
+   "date": "2026-09-16",
+   "ticker": "?",
+   "direction": "short",
+   "action": "hold",
+   "setup": "Silver short held since last Friday: first bounce into the declining daily 50 after losing the 50, EMAs converging, 9 already below the declining 50; finding rejection today (gold doing similar).",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-09-16_qAbZe_GD42w@23:35",
+   "confidence": "inferred",
+   "notes": "'Silver actually is a pretty good short today. I think if I'm not in it last Friday, I'm I may consider taking this today' (23:35) - implies he has been short silver since last Friday. Vehicle not stated (SLV / futures / other).",
+   "fill_timing": "Friday"
+  },
+  {
+   "date": "2026-09-16",
+   "ticker": "AXTI",
+   "direction": "short",
+   "action": "hold",
+   "setup": "Short on a fast-moving name that has rallied ~3 days from the daily/weekly 50 cluster and is very strong today but still slightly under the weekly 9/21 and daily 50; giving it extra room because IWM/Russell remain the weakest.",
+   "entry_basis": "",
+   "stop": "Widened ('give it a little bit more room') unless the market shifts to the upside",
+   "source": "2026-09-16_qAbZe_GD42w@20:36",
+   "confidence": "inferred",
+   "notes": "'Ext is is pretty It's very strong today. But given that it is a pretty fast mover ... still slightly under the the weekly 9 and 21 and also the daily 50. I'll give him a little bit of room. Unless ... the markets suddenly shifted towards the upside ... given that the IWM is still very weak ... Give him a little bit more room' (18:18-21:29). Caption 'Ext' decoded as AXTI (the small-cap semi he shorted 9/09-9/10, captioned 'exti'/'XTI' in the prior stream). 'Give it room' implies an open short, not stated outright. The '17:52 Monday TAM opens at the daily 50 EMA' description may refer to the same chart.",
+   "fill_timing": ""
+  },
+  {
+   "date": "2026-09-16",
+   "ticker": "TSLA",
+   "direction": "short",
+   "action": "entry",
+   "setup": "Missed the first 15-min breakdown; waited for the pullback into the anchored VWAP and shorted the rejection on the lower timeframe.",
+   "entry_basis": "Lower-timeframe rejection at the anchored VWAP after a missed 15-min breakdown",
+   "stop": "",
+   "source": "2026-09-16_qAbZe_GD42w@96:51",
+   "confidence": "stated",
+   "notes": "'I think Tesla short is the one that I took and I missed I missed the first breakdown the 15minut breakdown ... waits for the pullback into ... the anchor web level and then shorted the the rejection of the anchor web in the lower time frames' (96:51-97:24). Given as an example answering a viewer question; date of the trade not stated.",
+   "fill_timing": ""
+  }
+ ],
+ "principles": [
+  {
+   "category": "entry",
+   "text": "Trade both the first lower-timeframe reversal and the retest: if the 1-/5-min breakdown is missed, wait for a lower high / the anchored-VWAP retest or a retest of the declining 9/21 on the lower timeframe (TSLA short example). Keep stops tight, ideally below 1%.",
+   "timestamp": "94:33"
+  },
+  {
+   "category": "execution",
+   "text": "Don't chase a missed trigger: ARM's 1-min breakdown happened in seconds and got too far from the 9 EMA; wait for a retest (anchored VWAP) instead.",
+   "timestamp": "57:21"
+  },
+  {
+   "category": "levels",
+   "text": "Gaps are traded as support/resistance for pullbacks: in a downtrend (under the EMAs) a bounce back into a gap is a short-reversal level; in an uptrend a pullback into the gap below is potential support. Gaps do not have to fill.",
+   "timestamp": "89:00"
+  },
+  {
+   "category": "posture",
+   "text": "For longs he wants market breadth to widen; with strength confined to software/cyber and Russell the weakest, he stays short-leaning.",
+   "timestamp": "22:41"
+  },
+  {
+   "category": "selection",
+   "text": "Prefer the name with the shallower pullback, faster reclaim of the EMAs after a correction and smaller market cap (easier for a $15B stock to double than an $80B one) - SMTC over BE. Holding near the 50 EMA/anchored VWAP despite repeated push-downs is a sign of strength before a breakout.",
+   "timestamp": "35:59"
+  },
+  {
+   "category": "risk",
+   "text": "His biggest drawdowns come right after equity peaks: not selling into strength, then overtrading/revenge trading and SIZING UP in the drawdown during choppy markets turns a 15% drawdown into 30%. Reduce the number of trades when the market or your trading is not good; wait for the fat pitch.",
+   "timestamp": "75:36"
+  },
+  {
+   "category": "risk",
+   "text": "After several losses in one day (e.g. three in a row) a big winner that day is unlikely; losing streaks cluster in many trades over a short time. Taking a break of days/weeks resets the odds.",
+   "timestamp": "85:26"
+  },
+  {
+   "category": "process",
+   "text": "Every re-entry is treated as an independent trade, so each is judged fairly and equally.",
+   "timestamp": "93:39"
+  }
+ ],
+ "ambiguous_tickers": [
+  {
+   "timestamp": "05:34",
+   "caption_text": "took some shorts (unnamed)",
+   "context": "bounce on the cues into the declining nine ... it took some shorts",
+   "guess": "Unnamed morning shorts; possibly QQQ itself or names timed off the Qs",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "60:22",
+   "caption_text": "sockets / the semi short",
+   "context": "the sockets bounce into the declining nine ... tried to short it on Friday and it failed; 'I almost got stopped. That was from the semi short' (06:59)",
+   "guess": "SOX semiconductor index; vehicle unknown (SOXX / SMH / SOXS or a single semi)",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "23:35",
+   "caption_text": "Silver",
+   "context": "Silver actually is a pretty good short today ... if I'm not in it last Friday",
+   "guess": "Silver short; vehicle unknown (SLV or futures)",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "18:18",
+   "caption_text": "Ext (and 'TAM' at 17:52)",
+   "context": "pretty fast mover ... slightly under the weekly 9 and 21 and daily 50 ... I'll give him a little bit of room ... IWM is still very weak",
+   "guess": "AXTI (prior stream's 'exti'/'XTI' small-cap semi short)",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "96:51",
+   "caption_text": "Tesla",
+   "context": "Tesla short is the one that I took",
+   "guess": "TSLA",
+   "confidence": "likely"
+  }
+ ]
+}

@@ -1,0 +1,136 @@
+{
+ "video_id": "rrTaA0m7WxA",
+ "date": "2026-09-14",
+ "title": "Another gap | 14 Sep 2026",
+ "observed_trades": [
+  {
+   "date": "2026-09-14",
+   "ticker": "?",
+   "direction": "short",
+   "action": "exit",
+   "setup": "Some of his open shorts were taken out by the strong Friday rally, before today's gap down.",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-09-14_rrTaA0m7WxA@04:33",
+   "confidence": "stated",
+   "notes": "Viewer: 'Did you close their shorts on Friday or in morning today?' - 'Uh on Friday' (04:33); 'we got a pretty strong actions on Friday. Unfortunately, that kind of checks me out in some of the shorts' (05:36) - caption 'checks me out' likely = 'kicks me out', i.e. possibly stop-outs rather than discretionary covers. Names not stated; partial (he still holds others, see hold row). May overlap with the 'AAP' stop-out row.",
+   "fill_timing": "Friday"
+  },
+  {
+   "date": "2026-09-14",
+   "ticker": "?",
+   "direction": "short",
+   "action": "hold",
+   "setup": "Remaining shorts held through the gap down for a longer-term move; he declines to cover even though IWM is extended from the 9 EMA near the daily 50.",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-09-14_rrTaA0m7WxA@12:38",
+   "confidence": "stated",
+   "notes": "'I think it makes sense to like um cover some shots here, but I I'm going to like hold uh yeah, hold my positions ... for a longer time. So ... I'm not interested in covering any shorts here' (12:38-13:06). Tickers of the held shorts not named in audio.",
+   "fill_timing": "today"
+  },
+  {
+   "date": "2026-09-14",
+   "ticker": "?",
+   "direction": "short",
+   "action": "stopped_out",
+   "setup": "Short with a tight stop (not at the high of day); taken out before the gap down he wanted to catch - the tight-stop tradeoff.",
+   "entry_basis": "",
+   "stop": "Tight stop below the high of day (explicitly NOT at HOD)",
+   "source": "2026-09-14_rrTaA0m7WxA@20:50",
+   "confidence": "stated",
+   "notes": "'this AAP is like Yeah, I'm not setting a stop at the high of day and then I got taken out' (20:50); 'that's the tradeoff for setting a really tight stop ... you're going to miss some of the runs, some of the gap downs' (21:42). Caption 'AAP' - said amid semis/AI discussion; ticker unresolved (AAP literal vs a garbled semi/AI name). Direction short inferred from 'miss ... the gap downs'. Stop-out timing not stated (likely Friday, before today's gap).",
+   "fill_timing": ""
+  },
+  {
+   "date": "2026-09-14",
+   "ticker": "?",
+   "direction": "short",
+   "action": "stopped_out",
+   "setup": "Memory ETF short taken on an anticipated fake-out a few days/a week too early; bled via repeated small losses before the breakdown.",
+   "entry_basis": "Anticipated fake-out (entered before it confirmed)",
+   "stop": "",
+   "source": "2026-09-14_rrTaA0m7WxA@17:46",
+   "confidence": "inferred",
+   "notes": "'this memory ETF is like losing all the supports ... I am like a little bit too early on this one too like this fake out. I should have waited ... wait for the fake outs first. So a few days early, a week early and least to a thousand cuts' (17:10-18:05). Caption 'least to a thousand cuts' = 'led to death by a thousand cuts'. Inferred: he never says 'I shorted' explicitly, and it is unclear whether he is still short (he also says he wants a bounce to load 'huge shorts' on memory names, 09:24). Ticker (memory ETF) not named.",
+   "fill_timing": ""
+  }
+ ],
+ "principles": [
+  {
+   "category": "posture",
+   "text": "No shorts into a gap-down; sit out and wait for a (weak) bounce into declining MAs for the next short entry.",
+   "timestamp": "06:52"
+  },
+  {
+   "category": "posture",
+   "text": "Plan to size up ('huge shorts') on memory names only if the bounce is weak and breadth keeps declining / softwares fail their gap-up.",
+   "timestamp": "09:24"
+  },
+  {
+   "category": "management",
+   "text": "Don't cover shorts just because the index is extended from the 9 EMA; hold for the longer-term move and use bounces for new entries.",
+   "timestamp": "13:06"
+  },
+  {
+   "category": "setup",
+   "text": "A clean weekly breakout close followed by a gap down below the weekly 9 is a standard fake-out / upthrust that destroys the technicals.",
+   "timestamp": "13:59"
+  },
+  {
+   "category": "posture",
+   "text": "Trade what you see, no bias: a name can either make a lower low in the downtrend or find support on the rising 9/21 and set up an uptrend - let the reaction decide.",
+   "timestamp": "16:22"
+  },
+  {
+   "category": "entry",
+   "text": "Wait for the fake-out to happen before shorting; entering a few days to a week early leads to death by a thousand cuts.",
+   "timestamp": "17:46"
+  },
+  {
+   "category": "risk",
+   "text": "A tight stop (not at the high of day) is a tradeoff: you will get taken out and miss some of the runs/gap downs.",
+   "timestamp": "21:42"
+  },
+  {
+   "category": "selection",
+   "text": "No semi longs while the sector shows relative weakness; if buying leaders on a pullback, softwares are the better candidates.",
+   "timestamp": "31:18"
+  },
+  {
+   "category": "posture",
+   "text": "When nothing is interesting, stop watching the screen - staring leads to overtrading and random trades.",
+   "timestamp": "32:47"
+  }
+ ],
+ "ambiguous_tickers": [
+  {
+   "timestamp": "20:50",
+   "caption_text": "AAP",
+   "context": "this AAP is like Yeah, I'm not setting a stop at the high of day and then I got taken out (said during semis / AI-themes discussion)",
+   "guess": "AAP literal, or a garbled semi/AI name - unresolved; ticker left '?'",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "17:10",
+   "caption_text": "this memory ETF",
+   "context": "memory ETF losing all the supports; he was a week early on the fake-out",
+   "guess": "a memory-sector ETF (symbol not spoken); ticker left '?'",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "06:19",
+   "caption_text": "HP",
+   "context": "HP opening below Friday's candle low and the 9 EMA; later viewer: 'leading names like Dow HP' (30:58). Watchlist only, not a trade.",
+   "guess": "HPE or HPQ (not a trade row)",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "16:50",
+   "caption_text": "ESA",
+   "context": "So far softwares are getting support on the 9 and 21. ESA is rejected. Watchlist only.",
+   "guess": "unknown (not a trade row)",
+   "confidence": "unsure"
+  }
+ ]
+}

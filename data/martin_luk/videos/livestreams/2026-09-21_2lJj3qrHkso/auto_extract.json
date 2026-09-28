@@ -1,0 +1,509 @@
+{
+ "video_id": "2lJj3qrHkso",
+ "date": "2026-09-21",
+ "title": "EP102 | 21 Sep 2026",
+ "observed_trades": [
+  {
+   "date": "2026-09-21",
+   "ticker": "MSTR",
+   "direction": "long",
+   "action": "stopped_out",
+   "setup": "Crypto long (Bitcoin proxy) after several fake-outs; waited for the pullback into the weekly EMAs instead of buying the daily-9 breakout; first attempt of the day.",
+   "entry_basis": "Intraday candle entry on the pullback into the hourly converging EMAs",
+   "stop": "Below the low of the entry candle",
+   "source": "2026-09-21_2lJj3qrHkso@53:16",
+   "confidence": "stated",
+   "notes": "'I also got stopped out once before I re-enter again on MSTR ... the stop setting below the low of this candle and I got stopped out' (53:16-53:31). Late in session after 2-3 stop-outs elsewhere (54:38-55:05).",
+   "fill_timing": "Thursday"
+  },
+  {
+   "date": "2026-09-21",
+   "ticker": "MSTR",
+   "direction": "long",
+   "action": "reentry",
+   "setup": "Crypto long: after a breakout attempt in Bitcoin was rejected and buyers stepped in, pullback into the 60-min rising 9 / hourly converging EMAs; MSTR showing RS vs Bitcoin; market strength encouraged it. Plays crypto on a shorter-timeframe, more aggressive entry because crypto moves fast.",
+   "entry_basis": "Re-entry a few candles later near a 4-hour candle, slightly below the prior day high and below the daily 9 (daily 13 EMA); pullback into the 60-min rising 9, ~90 min after the open",
+   "stop": "Tighter than the first entry; ~0.15% of account at risk",
+   "source": "2026-09-21_2lJj3qrHkso@53:31",
+   "confidence": "stated",
+   "notes": "'I reentered it on a few candles later' (53:31); 'I reentered the same size ... around 22 or 23% ... only like 0.15% of my accounts for the risk on my re-entry' (56:21-56:50); 'my entry was somewhere right here near this 4hour candle' (44:59-45:22). Also 'MSTR BMR like those two I've entered it on on Thursday' (05:21).",
+   "fill_timing": "Thursday"
+  },
+  {
+   "date": "2026-09-21",
+   "ticker": "MSTR",
+   "direction": "long",
+   "action": "trim",
+   "setup": "Selling part of the Thursday MSTR long into strength after the gap-up (plan to book profits into the extended index gap).",
+   "entry_basis": "Into strength, ~20% gain",
+   "stop": "",
+   "source": "2026-09-21_2lJj3qrHkso@15:30",
+   "confidence": "inferred",
+   "notes": "Caption: 'I saw some micro strategy into strength around 20%' (15:30) read as 'I SOLD some MicroStrategy into strength, around 20%' (caption 'saw'->'sold' is an interpretation). Context: 'I'm probably going to book some profits today' (04:44). Could instead mean the position is up ~20%.",
+   "fill_timing": "today"
+  },
+  {
+   "date": "2026-09-21",
+   "ticker": "BMNR",
+   "direction": "long",
+   "action": "entry",
+   "setup": "Crypto long, same idea as MSTR: pullback into the hourly 9 with a 15-min EMA crossover and pullback into the rising 15-min 50 EMA.",
+   "entry_basis": "Breakout of the previous (intraday) candle high, a few minutes after the MSTR entry; taken on stream",
+   "stop": "",
+   "source": "2026-09-21_2lJj3qrHkso@51:59",
+   "confidence": "stated",
+   "notes": "'MSTR BMR like those two I've entered it on on Thursday' (05:21); 'BMR is just this a really similar idea ... my entry is kind of like right at the breakout of the previous candle high ... I traded it on the stream ... a few minutes away from the MSTR entry' (51:32-52:14). Caption 'BMR'/'BMAN hour'/'BMNR' = BMNR. Today he may trim with COIN or wait for a push into the gap (25:42-26:34) - plan only.",
+   "fill_timing": "Thursday"
+  },
+  {
+   "date": "2026-09-21",
+   "ticker": "IREN",
+   "direction": "long",
+   "action": "stopped_out",
+   "setup": "Crypto/AI-miner long on a gap-up day (up ~6.5% premarket), plan was no opening-range breakouts - wait for a pullback at least into the anchored VWAP; first attempt of the day.",
+   "entry_basis": "5-min candle breakout (first entry)",
+   "stop": "",
+   "source": "2026-09-21_2lJj3qrHkso@60:03",
+   "confidence": "stated",
+   "notes": "'I think I tried an entry like before this one. So this is the second entry of the day. The first one is probably the five minute candle breakout ... then I got stopped out a few minutes later' (60:03-60:17). Caption 'iron'/'I ran' = IREN (listed with crypto theme, 'I ran also on Thursday' 06:26).",
+   "fill_timing": "Thursday"
+  },
+  {
+   "date": "2026-09-21",
+   "ticker": "IREN",
+   "direction": "long",
+   "action": "reentry",
+   "setup": "Stopped out then snapped back: 15-min close back above all the 15-min EMAs, holding the hourly and daily EMAs, clustered EMAs, sideways an hour; held the 50 and above the 21 while NBIS broke; daily first higher low after correction, gentle pullback, gap-up into EMAs; weekly above EMAs.",
+   "entry_basis": "5-min candle breakout above all the EMAs and the previous candle high, very close to the daily 9, ~90 min after open",
+   "stop": "",
+   "source": "2026-09-21_2lJj3qrHkso@61:20",
+   "confidence": "stated",
+   "notes": "'I bought the on this five minute candle breakout uh above all the EMAs and the previous candle high and it is very close to the to the daily nine' (61:20-61:39); 'I ran also on Thursday' (06:26). Caption 'iron' = IREN.",
+   "fill_timing": "Thursday"
+  },
+  {
+   "date": "2026-09-21",
+   "ticker": "NBIS",
+   "direction": "long",
+   "action": "stopped_out",
+   "setup": "Long tried on the same day as IREN on a gap-up; it broke down way below the 50.",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-09-21_2lJj3qrHkso@58:49",
+   "confidence": "stated",
+   "notes": "'I also tried Naps on that on the same day but it stops me out and it goes like further lower while way below the the 50' (58:49-59:04). Caption 'Naps' = NBIS (Nebius, AI-infra peer of IREN; 'Nepius' at 26:34).",
+   "fill_timing": "Thursday"
+  },
+  {
+   "date": "2026-09-21",
+   "ticker": "NBIS",
+   "direction": "long",
+   "action": "entry",
+   "setup": "Pullback reversal into the converging daily EMAs and weekly 10 EMA; clean bounce; semis ETF extended is the one negative but tight risk + clean technicals.",
+   "entry_basis": "1-min reversal this morning (tight risk)",
+   "stop": "Tight (1-min reversal low)",
+   "source": "2026-09-21_2lJj3qrHkso@26:34",
+   "confidence": "inferred",
+   "notes": "'Nepius pullback by this morning. Pull back reversal into converg EMA on daily and weekly 10 EMA. Nice clean bounce. So far so good' (26:34-27:23); 'the one minute reversal like the tight risk and the beautiful technicals ... even though it could stops you out' (28:06). 'by' read as 'buy'; could be commentary on a chart rather than his fill. Caption 'Nepius' = NBIS.",
+   "fill_timing": "today"
+  },
+  {
+   "date": "2026-09-21",
+   "ticker": "SNDK",
+   "direction": "long",
+   "action": "entry",
+   "setup": "Memory names all gapping up near the prior-day high (MU, SK Hynix); Oliver Kell 'wick play' idea - open at the prior day's upper wick then breakout of the prior-day high; index and memory ETF a bit extended but open too strong.",
+   "entry_basis": "Hesitated on the opening-range-high breakout; entered at the 3rd minute on the pullback into the anchored VWAP",
+   "stop": "Very tight",
+   "source": "2026-09-21_2lJj3qrHkso@76:34",
+   "confidence": "stated",
+   "notes": "'I wait for the enter at the the third minute got to pull back into the encoy web and then I just press the button and the stop is just very tight' (76:34-76:45); 'the next one is SNDK. I got quite lucky on this one' (73:28). Friday's first two trades SNDK and HOOD not stopped (84:06).",
+   "fill_timing": "Friday"
+  },
+  {
+   "date": "2026-09-21",
+   "ticker": "HOOD",
+   "direction": "long",
+   "action": "entry",
+   "setup": "After a pullback into the daily 50, Thursday was an inside day that found support at the 60-min 9 and closed near the high; another gap-up Friday; crypto strength encouraged the focus on HOOD.",
+   "entry_basis": "Did not trade the gap-up; waited for the pullback and entered the minute after a 1-min candle close",
+   "stop": "",
+   "source": "2026-09-21_2lJj3qrHkso@81:15",
+   "confidence": "stated",
+   "notes": "'I didn't trade the gap up and then I just wait for the pullback and I think I entered on at the one minute ... waited for this one minute candle close and then I enter on the next minute' (81:15-81:33). Caption 'hood'/'who' = HOOD.",
+   "fill_timing": "Friday"
+  },
+  {
+   "date": "2026-09-21",
+   "ticker": "COIN",
+   "direction": "long",
+   "action": "entry",
+   "setup": "Crypto laggard among liquid names, gap-up only slightly above the daily 9 (less extended than MSTR); daily shakeout overshooting the 50 EMA then reclaimed with a strong close; character: loves lockout rallies after consolidation.",
+   "entry_basis": "Anchored VWAP pullback, then breakout of the previous candle high",
+   "stop": "",
+   "source": "2026-09-21_2lJj3qrHkso@86:43",
+   "confidence": "inferred",
+   "notes": "'I think I this is the anchor fee pullback and then I I think I I wait for the breakout ... from the previous candle' (86:43-86:56), in the Friday trade review. Held today: 'for coin. I'm planning to take some off at the 150 weekly' (25:21) confirms a position; the fill day is from review order, not stated.",
+   "fill_timing": "Friday"
+  },
+  {
+   "date": "2026-09-21",
+   "ticker": "PLTR",
+   "direction": "long",
+   "action": "entry",
+   "setup": "Software long (IGV pulling back with the market into the rising 9).",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-09-21_2lJj3qrHkso@86:56",
+   "confidence": "stated",
+   "notes": "'Palantir here. It's the one that I got stopped out on Friday. My first entry is on Thursday' (86:56). Caption 'talent'/'Palentia' = PLTR.",
+   "fill_timing": "Thursday"
+  },
+  {
+   "date": "2026-09-21",
+   "ticker": "PLTR",
+   "direction": "long",
+   "action": "stopped_out",
+   "setup": "IGV gapped up and faded Friday; PLTR gapped up and rolled over with the sector.",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-09-21_2lJj3qrHkso@88:12",
+   "confidence": "stated",
+   "notes": "'the one that I got stopped out on Friday' (86:56); 'Palentia also gets a gap up and then eventually rolling over together with the sector' (88:12-88:33). Unclear if this is the Thursday position or the first Friday attempt (see next rows).",
+   "fill_timing": "Friday"
+  },
+  {
+   "date": "2026-09-21",
+   "ticker": "PLTR",
+   "direction": "long",
+   "action": "stopped_out",
+   "setup": "First Friday attempt: 1-min candle breakout.",
+   "entry_basis": "1-min candle breakout",
+   "stop": "",
+   "source": "2026-09-21_2lJj3qrHkso@92:01",
+   "confidence": "inferred",
+   "notes": "'Is this the first try? No, I think I tried this one minute candle breakout, but it just stops me out. So this is the re-entry ... the second entry of the day' (92:01). May be the same stop-out as the 88:12 row.",
+   "fill_timing": "Friday"
+  },
+  {
+   "date": "2026-09-21",
+   "ticker": "PLTR",
+   "direction": "long",
+   "action": "reentry",
+   "setup": "Cleanest/strongest software name Friday; faded into the daily 21 and found support; market (SPY/IGV) holding the rising 9; software weekly setting up, not extended.",
+   "entry_basis": "1-min candle breakout (did not wait for a 5-min reversal)",
+   "stop": "0.3% stop",
+   "source": "2026-09-21_2lJj3qrHkso@91:40",
+   "confidence": "stated",
+   "notes": "'I just buy the one minute candle breakout and this is a 0.3% risk. I mean 0.3% stop like this is really really tight' (91:40); 'this is the re-entry ... the second entry of the day' (92:01).",
+   "fill_timing": "Friday"
+  },
+  {
+   "date": "2026-09-21",
+   "ticker": "TSLA",
+   "direction": "long",
+   "action": "stopped_out",
+   "setup": "Thursday entry that got stopped out.",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-09-21_2lJj3qrHkso@93:26",
+   "confidence": "stated",
+   "notes": "'the next one is also the the Thursday entry getting stopped out and then the re-entry on Friday. Tesla' (93:26-93:51). Stop-out day not stated.",
+   "fill_timing": "Thursday"
+  },
+  {
+   "date": "2026-09-21",
+   "ticker": "TSLA",
+   "direction": "long",
+   "action": "reentry",
+   "setup": "Pullback into converging daily 9 and daily 50, overshooting the anchored VWAP from the swing high.",
+   "entry_basis": "5-min candle breakout",
+   "stop": "",
+   "source": "2026-09-21_2lJj3qrHkso@94:05",
+   "confidence": "stated",
+   "notes": "'this one is the five minute candle breakouts and the daily 9 and the daily 50 like is the converging EMAs again' (93:51-94:05).",
+   "fill_timing": "Friday"
+  },
+  {
+   "date": "2026-09-21",
+   "ticker": "PANW",
+   "direction": "long",
+   "action": "entry",
+   "setup": "Cybersecurity long despite relative weakness vs other software; level lined up with the 60-min 50 EMA, daily 9, near prior-day lows.",
+   "entry_basis": "5-min candle breakout at the 60-min 50 EMA",
+   "stop": "Tight",
+   "source": "2026-09-21_2lJj3qrHkso@96:02",
+   "confidence": "stated",
+   "notes": "'I tried this five minute candle breakout which is at a 60 minute 50 EMA ... pretty tight entry. But no, like it just keeps going down ... below the 50 EMA and eventually reaches the anchored VWAP and the 150' (96:02-96:36). Caption 'pand'/'PW'/'a W' = PANW (cybersecurity).",
+   "fill_timing": "Friday"
+  },
+  {
+   "date": "2026-09-21",
+   "ticker": "PANW",
+   "direction": "long",
+   "action": "reentry",
+   "setup": "After going sideways 10-15 min at the lows, took the breakout at the anchored VWAP + daily 21 despite ugly 15-min EMAs.",
+   "entry_basis": "Breakout after sideways action at the anchored VWAP / daily 21",
+   "stop": "",
+   "source": "2026-09-21_2lJj3qrHkso@97:43",
+   "confidence": "inferred",
+   "notes": "'I eventually I think it's a pretty decent level like on the anchor VWAP and also the daily 21. So yeah, I still take it' (97:43). Inferred as a second entry distinct from the 96:02 attempt; could be the same trade described twice.",
+   "fill_timing": "Friday"
+  },
+  {
+   "date": "2026-09-21",
+   "ticker": "PANW",
+   "direction": "long",
+   "action": "stopped_out",
+   "setup": "",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-09-21_2lJj3qrHkso@99:02",
+   "confidence": "stated",
+   "notes": "CRWD 'just stops me out and together with the a W' (99:02) - 'a W' = PANW. Which PANW entry was stopped is not stated.",
+   "fill_timing": "Friday"
+  },
+  {
+   "date": "2026-09-21",
+   "ticker": "CRWD",
+   "direction": "long",
+   "action": "stopped_out",
+   "setup": "Cybersecurity long, similar traits to PANW; first attempt.",
+   "entry_basis": "1-min candle, pullback into the 1-min rising 9",
+   "stop": "",
+   "source": "2026-09-21_2lJj3qrHkso@99:02",
+   "confidence": "stated",
+   "notes": "'crow is the similar ... I also traded this ... on the pullback into the rising nine on the one minute ... it just stops me out and together with the a W' (98:26-99:02). Caption 'crow'/'crowd' = CRWD.",
+   "fill_timing": "Friday"
+  },
+  {
+   "date": "2026-09-21",
+   "ticker": "CRWD",
+   "direction": "long",
+   "action": "reentry",
+   "setup": "Re-entry after the stop-out.",
+   "entry_basis": "5-min breakout",
+   "stop": "",
+   "source": "2026-09-21_2lJj3qrHkso@99:17",
+   "confidence": "stated",
+   "notes": "'then I re-entered it on the five minute five minute breakout here' (99:17). Caption 'crow' = CRWD.",
+   "fill_timing": "Friday"
+  },
+  {
+   "date": "2026-09-21",
+   "ticker": "CRWD",
+   "direction": "long",
+   "action": "stopped_out",
+   "setup": "Re-entry stopped at today's open as software flagged.",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-09-21_2lJj3qrHkso@09:18",
+   "confidence": "stated",
+   "notes": "'I think I got stopped out from the crowd today. kind of like software is a flagging here' (09:18); 'getting stopped out at the open today' (99:17). Caption 'crowd' = CRWD.",
+   "fill_timing": "today"
+  },
+  {
+   "date": "2026-09-21",
+   "ticker": "SPCX",
+   "direction": "long",
+   "action": "stopped_out",
+   "setup": "SpaceX long (slow-ADR name); tried the tightest possible stop.",
+   "entry_basis": "Entry on a 15-min (caption '150 minute') bar, extended intraday from the daily low",
+   "stop": "Low of the 15-min bar (tighter than the daily low)",
+   "source": "2026-09-21_2lJj3qrHkso@67:44",
+   "confidence": "stated",
+   "notes": "Viewer: 'your SpaceX long like last Thursday ... You use 15 minute bar low as the stop'; Martin: 'Yes. And I got stopped out at uh yeah just 30 minutes after the entry' (66:42-67:44). SpaceX = SPCX per prior KB decode (Gabe-confirmed 2026-07-23).",
+   "fill_timing": "Thursday"
+  },
+  {
+   "date": "2026-09-21",
+   "ticker": "SPCX",
+   "direction": "long",
+   "action": "stopped_out",
+   "setup": "After a failed breakdown/shakeout (he had lost on shorts there), flipped to long; first Friday attempt.",
+   "entry_basis": "5-min breakout near the hourly 21",
+   "stop": "",
+   "source": "2026-09-21_2lJj3qrHkso@100:33",
+   "confidence": "stated",
+   "notes": "'I also traded this five minute breakout ... somewhere near the 21 on the hourly. Yeah, but I got stopped out' (100:06-100:33); last trade(s) of Friday. SpaceX = SPCX.",
+   "fill_timing": "Friday"
+  },
+  {
+   "date": "2026-09-21",
+   "ticker": "SPCX",
+   "direction": "long",
+   "action": "reentry",
+   "setup": "Pullback into the daily 9 and hourly 50 EMA after the failed breakdown; 'if I'm wrong on the short side maybe it's a good time to go for the long'.",
+   "entry_basis": "Breakout of an intraday candle high",
+   "stop": "",
+   "source": "2026-09-21_2lJj3qrHkso@101:51",
+   "confidence": "stated",
+   "notes": "'I think I entered on the on this maybe the breakout of this this candle' (101:51). SpaceX = SPCX.",
+   "fill_timing": "Friday"
+  },
+  {
+   "date": "2026-09-21",
+   "ticker": "SMCI",
+   "direction": "long",
+   "action": "stopped_out",
+   "setup": "Example of a breakout bought extended from the low of day.",
+   "entry_basis": "Intraday pullback into the 5-min 9 EMA and anchored VWAP",
+   "stop": "Below the intraday swing low",
+   "source": "2026-09-21_2lJj3qrHkso@65:52",
+   "confidence": "inferred",
+   "notes": "'occasionally I think SMCI is the one maybe ... eventually it also like got stopped out like on on this one intraday pull back into the 5 minute 9 EMA also the anchor VWAP' (65:25-65:52). Said as an example; unclear it was his trade or its date. SMCI 'is down here in the tracking list' (06:26).",
+   "fill_timing": ""
+  },
+  {
+   "date": "2026-09-21",
+   "ticker": "?",
+   "direction": "short",
+   "action": "exit",
+   "setup": "Covered most of his shorts after Thursday's open as the market turned up, then tried longs.",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-09-21_2lJj3qrHkso@54:21",
+   "confidence": "stated",
+   "notes": "'on Thursday at the open I am still heavily short but then after the open I closed most of my short and then tried some longs but a few longs get stopped out' (54:21). Short names not stated.",
+   "fill_timing": "Thursday"
+  }
+ ],
+ "principles": [
+  {
+   "category": "entry",
+   "text": "Prefers pullbacks over breakouts because they give tighter risk; skips breakouts already extended from the low of day rather than set a stop 3-5% away.",
+   "timestamp": "65:09"
+  },
+  {
+   "category": "entry",
+   "text": "Gap-up days into index resistance: don't trade the opening-range breakout; wait for a pullback at least into the anchored VWAP, ideally into clustered/converging EMAs.",
+   "timestamp": "58:28"
+  },
+  {
+   "category": "entry",
+   "text": "Crypto names move fast, so he enters more aggressively on the shorter timeframe (e.g., hourly 9 pullback) rather than waiting for a close above the daily 9; the 21 EMA is the key support to watch.",
+   "timestamp": "49:07"
+  },
+  {
+   "category": "risk",
+   "text": "Several names from the same theme on the same day are each still sized ~20-25%; a re-entry after a stop uses the same size, so a tighter stop means less account risk (MSTR re-entry ~0.15%).",
+   "timestamp": "56:21"
+  },
+  {
+   "category": "risk",
+   "text": "Tight stops raise reward/risk and control risk but get taken out easily; they require a pinpoint entry and punish chasing.",
+   "timestamp": "68:21"
+  },
+  {
+   "category": "exit",
+   "text": "No price targets; exits on volume expansion, price acceleration, or a failure of a defined EMA.",
+   "timestamp": "31:00"
+  },
+  {
+   "category": "process",
+   "text": "Watchlists re-split by daily dollar volume (>$500M vs $100-500M); concentrate on the liquid names, since sub-$500M names bring slippage and wider spreads.",
+   "timestamp": "07:42"
+  },
+  {
+   "category": "posture",
+   "text": "Edge = finding asymmetric risk/reward entries, whatever the tactic; expects tactics to decay and to adapt.",
+   "timestamp": "70:57"
+  },
+  {
+   "category": "posture",
+   "text": "Entry windows in this tape are short (Thursday/Friday gave the best entries); with QQQ/SPY stretched above the EMAs, the priority now is to stop entering new trades, avoid FOMO, and wait for a pullback into the daily 9 while sitting tight.",
+   "timestamp": "104:39"
+  },
+  {
+   "category": "posture",
+   "text": "Book some profits into an index gap-up into resistance (QQQ at top of gap, Russell into declining 9).",
+   "timestamp": "04:44"
+  }
+ ],
+ "ambiguous_tickers": [
+  {
+   "timestamp": "05:21",
+   "caption_text": "BMR / BMAN hour",
+   "context": "crypto long entered Thursday with MSTR",
+   "guess": "BMNR",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "06:26",
+   "caption_text": "I ran / iron",
+   "context": "also entered Thursday; gapped up ~6.5% premarket; crypto/AI-miner peer of NBIS",
+   "guess": "IREN",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "58:49",
+   "caption_text": "Naps / Nepius",
+   "context": "tried same day as IREN, stopped; 'Nepius pullback by this morning'",
+   "guess": "NBIS",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "09:18",
+   "caption_text": "crowd / crow",
+   "context": "software/cybersecurity, bounce with IGV, stopped with PANW",
+   "guess": "CRWD",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "95:22",
+   "caption_text": "pand / PW / a W",
+   "context": "cybersecurity, weak vs other software",
+   "guess": "PANW",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "86:56",
+   "caption_text": "talent / Palentia",
+   "context": "strongest software stock Friday",
+   "guess": "PLTR",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "78:13",
+   "caption_text": "hood / who",
+   "context": "crypto strength encouraged focus",
+   "guess": "HOOD",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "15:30",
+   "caption_text": "micro strategy",
+   "context": "'I saw some micro strategy into strength around 20%'",
+   "guess": "MSTR (and 'saw' = 'sold' -> trim)",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "66:42",
+   "caption_text": "SpaceX",
+   "context": "long last Thursday stopped 30 min after entry; Friday 5-min breakout and re-entry",
+   "guess": "SPCX (prior KB decode, Gabe-confirmed 2026-07-23)",
+   "confidence": "confirmed"
+  },
+  {
+   "timestamp": "54:21",
+   "caption_text": "closed most of my short",
+   "context": "shorts covered after Thursday open; names not stated",
+   "guess": "unknown",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "30:36",
+   "caption_text": "IN",
+   "context": "viewer: 'What's your price target for IN?'",
+   "guess": "IREN or NBIS (not a trade row)",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "74:49",
+   "caption_text": "SK highex",
+   "context": "memory names gapping with MU (context only, not traded)",
+   "guess": "SK Hynix",
+   "confidence": "likely"
+  }
+ ]
+}

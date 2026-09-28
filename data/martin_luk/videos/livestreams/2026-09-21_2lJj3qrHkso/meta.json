@@ -1,0 +1,19 @@
+{
+  "video_id": "2lJj3qrHkso",
+  "url": "https://www.youtube.com/watch?v=2lJj3qrHkso",
+  "title": "EP102 | 21 Sep 2026",
+  "channel": "martinlukkt",
+  "channel_id": "UCB6jWJJvO_sWZ2PwgmMcxCw",
+  "stream_date": "2026-09-21",
+  "duration": "1:46:53",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en-orig",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}
