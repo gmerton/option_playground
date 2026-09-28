@@ -87,7 +87,7 @@ def pull_long(E: pd.DataFrame) -> pd.DataFrame:
     m = m.sort_values("dd").drop_duplicates(["ticker", "trade_date"])
     m["iv_long"] = ((m.bid_iv_c + m.ask_iv_c) / 2 + (m.bid_iv_p + m.ask_iv_p) / 2) / 2
     m = m[m.iv_long > 0]
-    return m[["ticker", "trade_date", "iv_long", "dte"]].rename(columns={"dte": "dte_long"})
+    return m[["ticker", "trade_date", "iv_long", "dte_c"]].rename(columns={"dte_c": "dte_long"})
 
 
 def sort(E, sig, out, label, primary):
