@@ -16,6 +16,7 @@ SECTIONS = [
     ("alerts.html", "Live alerts", "Today's alert monitor feed: setups graded A/B (loud), C (dimmed), with industry context."),
     ("tutorial/qcom/index.html", "Tutorial: QCOM entries", "A flip book of 12 QCOM entries (8/31 to 9/11): judge each setup before you see the verdict."),
     ("tito/index.html", "Tito's best trades", "His 20 curated winners with daily charts, option paths, commentary and the scale-out rule."),
+    ("luk/index.html", "Martin Luk's trades", "Every position he disclosed on stream, winners and losers, grouped into campaigns with his commentary and video links."),
 ]
 
 CSS = """
