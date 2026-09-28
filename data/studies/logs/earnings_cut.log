@@ -1,0 +1,25 @@
+# Cut size before earnings on an open breakout (pre-registration in the docstring)
+
+## PRIMARY pool: precision-tier house breakouts: 2,016 house trades; 196 open through a print with matched controls (median 2 controls each); cushion >= 1 ADR: 62%
+  DiD CUT : +0.943pp  t +0.72  halves +1.983 / -0.235 | raw -1.991pp, control -2.480pp | per year 2020:+4.78 2021:+0.52 2022:+1.56 2023:-2.16 2024:-7.43 2025:+3.44 2026:+0.06  *PRIMARY*
+      cushion >= 1 ADR  n  121  +1.462pp t +0.78
+      cushion < 1 ADR   n   75  -0.560pp t -0.35
+  DiD EXIT: +2.359pp  t +0.72  halves +4.959 / -0.589 | raw -4.978pp, control -6.201pp | per year 2020:+11.96 2021:+1.31 2022:+3.90 2023:-5.40 2024:-18.57 2025:+8.59 2026:+0.14
+      cushion >= 1 ADR  n  121  +3.655pp t +0.78
+      cushion < 1 ADR   n   75  -1.401pp t -0.35
+  hold  on print trades: mean +25.12%  sd 46.9  p5 -11.4%  top-decile mean +138.7%
+  cut40 on print trades: mean +23.13%  sd 41.9  p5 -7.4%  top-decile mean +120.8%
+  exit  on print trades: mean +20.14%  sd 39.9  p5 -2.4%  top-decile mean +105.6%
+
+## second pool: generic house breakouts (ADR >= 3): 8,225 house trades; 873 open through a print with matched controls (median 6 controls each); cushion >= 1 ADR: 57%
+  DiD CUT : -0.251pp  t -0.59  halves +0.600 / -0.853 | raw -1.121pp, control -0.739pp | per year 2019:-7.66 2020:+1.25 2021:-0.03 2022:+1.23 2023:-1.64 2024:-4.08 2025:+1.33 2026:-0.90
+      cushion >= 1 ADR  n  496  -0.341pp t -0.63
+      cushion < 1 ADR   n  377  -0.204pp t -0.39
+  DiD EXIT: -0.629pp  t -0.59  halves +1.499 / -2.131 | raw -2.803pp, control -1.848pp | per year 2019:-19.15 2020:+3.13 2021:-0.08 2022:+3.09 2023:-4.10 2024:-10.20 2025:+3.33 2026:-2.26
+      cushion >= 1 ADR  n  496  -0.853pp t -0.63
+      cushion < 1 ADR   n  377  -0.509pp t -0.39
+  hold  on print trades: mean +14.75%  sd 30.4  p5 -11.2%  top-decile mean +82.0%
+  cut40 on print trades: mean +13.62%  sd 25.5  p5 -7.2%  top-decile mean +68.1%
+  exit  on print trades: mean +11.94%  sd 22.9  p5 -2.6%  top-decile mean +58.9%
+
+BAR (PRIMARY CUT40 DiD, precision): NOT MET
