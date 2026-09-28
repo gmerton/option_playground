@@ -1,0 +1,27 @@
+# Long-side veto t-test (pre-registration in the docstring)
+
+## PRIMARY 2010-01 -> 2019-09: 2,350 breakouts on 1150 dates
+  V1 below 200 SMA   20d: vetoed n   214 (9% of breakouts) excess -2.09% vs allowed -0.52% -> diff -1.58pp t -2.23 halves -2.88/-0.60 yrs- 7/10  *PRIMARY*
+  V1 below 200 SMA   60d: vetoed n   214 (9% of breakouts) excess -2.85% vs allowed +0.09% -> diff -2.94pp t -2.27 halves -4.01/-2.16 yrs- 8/10
+  V1 below 200 SMA   house trade %: vetoed -1.64% vs allowed -0.98% -> -0.66pp t -1.31
+  V2 6-month < -10%  20d: vetoed n   210 (9% of breakouts) excess -1.08% vs allowed -0.62% -> diff -0.46pp t -0.62 halves -2.09/+0.77 yrs- 5/10  *PRIMARY*
+  V2 6-month < -10%  60d: vetoed n   210 (9% of breakouts) excess -1.17% vs allowed -0.08% -> diff -1.09pp t -0.82 halves -2.29/-0.20 yrs- 4/10
+  V2 6-month < -10%  house trade %: vetoed -0.24% vs allowed -1.12% -> +0.88pp t +1.34
+
+## SECONDARY 2019-10 -> 2026-09: 8,076 breakouts on 1382 dates
+  V1 below 200 SMA   20d: vetoed n   609 (8% of breakouts) excess -2.02% vs allowed -0.20% -> diff -1.83pp t -2.76 halves -2.32/-1.18 yrs- 6/8
+  V1 below 200 SMA   60d: vetoed n   567 (7% of breakouts) excess -1.49% vs allowed +1.58% -> diff -3.07pp t -2.81 halves -5.95/+0.02 yrs- 6/8
+  V1 below 200 SMA   house trade %: vetoed -1.58% vs allowed +0.71% -> +nanpp t +nan
+  V2 6-month < -10%  20d: vetoed n   557 (7% of breakouts) excess -1.64% vs allowed -0.24% -> diff -1.40pp t -2.04 halves -1.79/-0.88 yrs- 5/8
+  V2 6-month < -10%  60d: vetoed n   516 (7% of breakouts) excess -0.59% vs allowed +1.50% -> diff -2.09pp t -1.75 halves -4.95/+0.91 yrs- 6/8
+  V2 6-month < -10%  house trade %: vetoed -1.38% vs allowed +0.68% -> +nanpp t +nan
+
+## DESCRIPTIVE panel-wide (all eligible name-days, non-overlapping 20-session dates, ADR-matched)
+  PRIMARY 2 V1 below 200 SMA  : vetoed - allowed +0.01pp t +0.07 (123 dates)
+  PRIMARY 2 V2 6-month < -10% : vetoed - allowed -0.01pp t -0.02 (120 dates)
+  SECONDARY V1 below 200 SMA  : vetoed - allowed -0.26pp t -0.77 (87 dates)
+  SECONDARY V2 6-month < -10% : vetoed - allowed -0.33pp t -0.97 (86 dates)
+
+BAR (per veto): PRIMARY diff <= 0 with t <= -3, both halves < 0, majority of years < 0, 2019-26 sign agrees
+  V1 below 200 SMA: NOT CERTIFIED (primary -1.58pp t -2.23; 2019-26 -1.83pp)
+  V2 6-month < -10%: NOT CERTIFIED (primary -0.46pp t -0.62; 2019-26 -1.40pp)

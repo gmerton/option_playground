@@ -1,0 +1,40 @@
+# Ariel scan ablation inside INT and AH (pre-registration in the docstring)
+multiple testing: 20 cells, Sidak |t| >= 3.02
+
+== INT (production), 20d (delta > 0 => the criterion SUBTRACTS) ==
+         dropped  names  excess  d_adj      t     h1     h2  agree          verdict
+        — full —     35   1.467  0.000    NaN  0.000  0.000   True                 
+a1 >=70% off low     49   0.843 -0.623 -2.744 -0.927 -0.412   True inert/unresolved
+  a2 close>50sma     35   1.467  0.000    NaN  0.000  0.000   True inert/unresolved
+  a3 >=2M sh/day     46   0.976 -0.491 -4.236 -0.535 -0.461   True             ADDS
+     a4 price>$7     35   1.484  0.017  0.807  0.047 -0.003  False inert/unresolved
+  a5 ADDV>=$100M     35   1.467  0.000    NaN  0.000  0.000   True inert/unresolved
+
+== INT (production), 5d (delta > 0 => the criterion SUBTRACTS) ==
+         dropped  names  excess  d_adj      t     h1     h2  agree          verdict
+        — full —     35   0.375  0.000    NaN  0.000  0.000   True                 
+a1 >=70% off low     49   0.209 -0.166 -2.608 -0.230 -0.118   True inert/unresolved
+  a2 close>50sma     35   0.375  0.000    NaN  0.000  0.000   True inert/unresolved
+  a3 >=2M sh/day     46   0.260 -0.114 -3.890 -0.121 -0.109   True             ADDS
+     a4 price>$7     35   0.368 -0.007 -1.057 -0.004 -0.008   True inert/unresolved
+  a5 ADDV>=$100M     35   0.375  0.000    NaN  0.000  0.000   True inert/unresolved
+
+== AH alone, 20d (delta > 0 => the criterion SUBTRACTS) ==
+         dropped  names  excess  d_adj      t     h1     h2  agree          verdict
+        — full —     72   0.847  0.000    NaN  0.000  0.000   True                 
+a1 >=70% off low    209   0.320 -0.527 -1.713 -0.742 -0.353   True inert/unresolved
+  a2 close>50sma     96   0.932  0.086  0.413 -0.005  0.159  False inert/unresolved
+  a3 >=2M sh/day    108   0.557 -0.290 -2.173 -0.161 -0.393   True inert/unresolved
+     a4 price>$7     72   0.898  0.051  1.820  0.056  0.047   True inert/unresolved
+  a5 ADDV>=$100M     87   0.811 -0.036 -0.294  0.040 -0.097  False inert/unresolved
+
+== AH alone, 5d (delta > 0 => the criterion SUBTRACTS) ==
+         dropped  names  excess  d_adj      t     h1     h2  agree          verdict
+        — full —     72   0.176  0.000    NaN  0.000  0.000   True                 
+a1 >=70% off low    209   0.105 -0.071 -0.942 -0.069 -0.072   True inert/unresolved
+  a2 close>50sma     96   0.250  0.074  1.160  0.073  0.075   True inert/unresolved
+  a3 >=2M sh/day    108   0.107 -0.069 -2.197 -0.048 -0.085   True inert/unresolved
+     a4 price>$7     72   0.179  0.003  0.561 -0.004  0.009  False inert/unresolved
+  a5 ADDV>=$100M     87   0.156 -0.019 -0.537  0.001 -0.036  False inert/unresolved
+
+DESCRIPTIVE 2026-09-25: mega-caps in TT and passing a2-a5 but excluded by a1 alone: AAPL (1.38x low), NVDA (1.37x low)

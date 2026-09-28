@@ -31,6 +31,7 @@
    stop (the day's low), not for extra return.
 2. ⚠ **UNVALIDATED — No gap-up buys** (≥3% gap, first hour). *Source: August journal.* The panel shows catalyst gaps have
    no edge (Adhikary B, DR-EP), but has never tested the veto itself.
+   **SUPPORTED (2026-09-28) — no breakouts below the 200 SMA:** vetoed breakouts lag by 1.6–1.8pp at 20 days in BOTH 2010-19 (t −2.23) and 2019-26 (t −2.76), ~3pp at 60; not yet |t| ≥ 3 (`veto_ttest_2026-09-28.md`). The 6-month < −10% veto did NOT hold out of time: drop it.
    **PARTLY SUPPORTED — No buying below falling EMAs.** *Journal (laggard bounce −$3.8k) plus panel:* crash-leader veto
    (never buy deep drawdowns in a healthy tape). ⚠ Corrected 2026-09-28: the Trend Template ablation does NOT show close > 150/200 SMA carrying the weight -- c1/c2 were RETRACTED as logically redundant (implied by the other criteria) and every criterion is underpowered (full TT = +0.575pp). The falling-EMA veto rests on the crash-leader result and the journal, not on the ablation.
 3. ⛔ **CONTRADICTED — "Trigger, not anticipation": a reclaim with the reclaim bar's low as the stop.** The panel says
