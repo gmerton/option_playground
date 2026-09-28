@@ -93,7 +93,7 @@ def split_line(M, col, lab, out, thr=1.0):
     M = M.assign(b=M.R >= thr)
     g = M.trade_date.dt.to_period("M").astype(str).factorize()[0]
     f = cl_ols(M[col].values, M[["b"]], g)
-    d, t = f.params[1], f.tvalues[1]
+    d, t = f.params.iloc[1], f.tvalues.iloc[1]
     h = M.trade_date < SPLIT
     h1 = M[h & M.b][col].mean() - M[h & ~M.b][col].mean()
     h2 = M[~h & M.b][col].mean() - M[~h & ~M.b][col].mean()
@@ -123,7 +123,7 @@ def main():
     out.append(f"\n## SECONDARY (b): all {len(A)} weekly 45-DTE 12d put sales (% of Reg-T), month-clustered OLS")
     out.append("  " + "  ".join(f"{k} {f.params[k]:+.3f} (t {f.tvalues[k]:+.2f})" for k in ["const", "backwardation", "vix", "cert"]))
     f0 = cl_ols(A.retA.values, A[["bw"]], g)
-    out.append(f"  backwardation alone: {f0.params[1]:+.2f}pp t {f0.tvalues[1]:+.2f} (bw n {int(A.bw.sum())}, contango n {int((~A.bw).sum())})")
+    out.append(f"  backwardation alone: {f0.params.iloc[1]:+.2f}pp t {f0.tvalues.iloc[1]:+.2f} (bw n {int(A.bw.sum())}, contango n {int((~A.bw).sum())})")
     for lab, s in (("contango weeks (Sinclair SELL rule)", A[~A.bw]), ("certified regime (book rule)", A[A.cert]),
                    ("backwardation weeks", A[A.bw]), ("contango AND not certified", A[~A.bw & ~A.cert])):
         m, t = mclu(s.retA, s.trade_date); h = s.trade_date < SPLIT
