@@ -55,9 +55,9 @@ line_no,date,ticker,direction,action,confidence,fill_timing,fill_date,source,iss
 183,2026-06-26,?,long,buy,stated,today,2026-06-26,2026-06-26_mbNrtjYog_U@45:51,ticker unknown/ambiguous; note flags a garble,,,,,,
 185,2026-06-26,?,long,buy,stated,'Wednesday'-style phrase (2026-06-24),,2026-06-26_mbNrtjYog_U@59:29,ticker unknown/ambiguous,,,,,,
 193,2026-06-25,?,long,buy,stated,today,2026-06-25,2026-06-25_OBQEWy8PAck@71:03,ticker unknown/ambiguous,,,,,,
-197,2026-06-24,ALAB,long,buy,inferred,today,2026-06-24,2026-06-24_tx321OQ8iD0@105:58,confidence=inferred,,,,,,
-203,2026-06-23,IONQ,long,reentry,stated,today,2026-06-23,2026-06-23_Z2PyXDLCRaM@118:54,note flags a garble,,,,,,
-208,2026-06-23,?,long,entry,inferred,yesterday,2026-06-22,2026-06-23_Z2PyXDLCRaM@29:17,ticker unknown/ambiguous; confidence=inferred; note flags a garble,,,,,,
+197,2026-06-24,ALAB,long,buy,inferred,today,2026-06-24,2026-06-24_tx321OQ8iD0@105:58,confidence=inferred,ALAB,,,keep,105:58,"Gabe 2026-09-27: confirmed ALAB (Astera Labs), bought that day"
+203,2026-06-23,IONQ,long,reentry,stated,today,2026-06-23,2026-06-23_Z2PyXDLCRaM@118:54,note flags a garble,IONQ,,,keep,118:54,Gabe 2026-09-27: confirmed IONQ re-entry
+208,2026-06-23,?,long,entry,inferred,yesterday,2026-06-22,2026-06-23_Z2PyXDLCRaM@29:17,ticker unknown/ambiguous; confidence=inferred; note flags a garble,CBRS,,,keep,29:17,"Gabe 2026-09-27: caption 'CPRS' is CBRS (Cerebras Systems, recent IPO)"
 209,2026-06-22,TE,long,entry,stated,today,2026-06-22,2026-06-22_Q1Deuj_Rkso@55:55,ticker check (TE),,,,,,
 218,2026-06-12,BOOT,long,entry,inferred,yesterday,2026-06-11,2026-06-12_HnKJ8ZCARwE@04:55,confidence=inferred,,,,,,
 219,2026-06-12,?,long,entry,inferred,today,2026-06-12,2026-06-12_HnKJ8ZCARwE@44:26,ticker unknown/ambiguous; confidence=inferred; note flags a garble,,,,,,
