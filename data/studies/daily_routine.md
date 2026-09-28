@@ -32,7 +32,7 @@
 2. ⚠ **UNVALIDATED — No gap-up buys** (≥3% gap, first hour). *Source: August journal.* The panel shows catalyst gaps have
    no edge (Adhikary B, DR-EP), but has never tested the veto itself.
    **PARTLY SUPPORTED — No buying below falling EMAs.** *Journal (laggard bounce −$3.8k) plus panel:* crash-leader veto
-   (never buy deep drawdowns in a healthy tape) and the Trend Template ablation (close > 150/200 SMA carry the weight).
+   (never buy deep drawdowns in a healthy tape). ⚠ Corrected 2026-09-28: the Trend Template ablation does NOT show close > 150/200 SMA carrying the weight -- c1/c2 were RETRACTED as logically redundant (implied by the other criteria) and every criterion is underpowered (full TT = +0.575pp). The falling-EMA veto rests on the crash-leader result and the journal, not on the ablation.
 3. ⛔ **CONTRADICTED — "Trigger, not anticipation": a reclaim with the reclaim bar's low as the stop.** The panel says
    **buy the close**: entry study 2026-09-17, reclaim + re-entry −2.28pp vs the close (t −3.4); Stage A: intraday
    triggers ≈ a random later minute. Alerts are information, not triggers.
