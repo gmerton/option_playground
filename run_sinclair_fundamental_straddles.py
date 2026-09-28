@@ -19,7 +19,8 @@ UNIVERSE  today's S&P 100 (Wikipedia, 2026-09-28) minus GICS Financials = 86 nam
           GOOGL -> 85. ⚠ SURVIVOR / LOOK-AHEAD BIAS, declared: today's members, not point-in-time membership. The sort
           is relative inside the universe, so both legs carry it; the absolute level is not interpretable. Historic
           v3 symbols mapped (FB -> META, UTX -> RTX).
-FUNDAMENTALS  SEC XBRL company facts (data/cache/sec_companyfacts.parquet; Alphabet pulled for both CIKs), POINT-IN-
+FUNDAMENTALS  SEC XBRL company facts (pulled per name incl. predecessor CIKs -- XOM, AVGO, Alphabet; equity / net
+          income / op. cash flow fall back to the incl.-NCI / ProfitLoss / continuing-ops tags where missing), POINT-IN-
           TIME: only facts FILED before the ranking Friday. Flows (net income, operating cash flow) are trailing-12-month
           = latest annual, or YTD + prior annual - prior-year YTD. Stocks (equity, assets, liabilities) = latest filed.
           Shares = cover-page count (fallbacks: balance-sheet count, weighted basic), split-adjusted to the Friday.
@@ -98,36 +99,50 @@ def universe() -> list[str]:
     return sorted(set(u) - {"GOOG"})
 
 
-def alphabet_facts() -> pd.DataFrame:
-    f = CACHE / "alphabet_facts.parquet"
-    if f.exists():
-        return pd.read_parquet(f)
-    rows = []
-    for cik in ("0001288776", "0001652044"):
-        j = requests.get(f"https://data.sec.gov/api/xbrl/companyfacts/CIK{cik}.json", headers=UA, timeout=120).json()
-        for ns, tags in j["facts"].items():
-            for tag, body in tags.items():
-                if tag not in FACT_TAGS:
-                    continue
-                for unit, vals in body["units"].items():
-                    for v in vals:
-                        rows.append(dict(cik=cik, ticker="GOOGL", tag=tag, unit=unit, val=v["val"], start=v.get("start"),
-                                         end=v["end"], fy=v.get("fy"), fp=v.get("fp"), form=v.get("form"), filed=v["filed"],
-                                         frame=v.get("frame")))
-        time.sleep(0.3)
-    d = pd.DataFrame(rows)
-    for c in ("start", "end", "filed"):
-        d[c] = pd.to_datetime(d[c])
-    d.to_parquet(f, index=False)
-    return d
+EXTRA_CIKS = {"XOM": ["0000034088"], "AVGO": ["0001441634", "0001649338"], "GOOGL": ["0001288776"]}
+FALLBACK = {"StockholdersEquity": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+            "NetIncomeLoss": "ProfitLoss",
+            "NetCashProvidedByUsedInOperatingActivities": "NetCashProvidedByUsedInOperatingActivitiesContinuingOperations"}
 
 
 def load_facts(U) -> pd.DataFrame:
-    d = pd.read_parquet(REPO / "data/cache/sec_companyfacts.parquet")
-    d = pd.concat([d[d.ticker.isin(U) & d.tag.isin(FACT_TAGS)], alphabet_facts()], ignore_index=True)
-    for c in ("start", "end", "filed"):
-        d[c] = pd.to_datetime(d[c])
-    return d.dropna(subset=["val", "end", "filed"])
+    """SEC company facts pulled fresh for the universe (current CIK + predecessor CIKs); a fallback tag fills a
+    primary tag only where the primary has no fact for that period end."""
+    f = CACHE / "facts.parquet"
+    if not f.exists():
+        ct = requests.get("https://www.sec.gov/files/company_tickers.json", headers=UA, timeout=60).json()
+        m = {v["ticker"].upper(): str(v["cik_str"]).zfill(10) for v in ct.values()}
+        want = set(FACT_TAGS) | set(FALLBACK.values())
+        rows = []
+        for t in U:
+            for cik in [m.get(t)] + EXTRA_CIKS.get(t, []):
+                if not cik:
+                    continue
+                r = requests.get(f"https://data.sec.gov/api/xbrl/companyfacts/CIK{cik}.json", headers=UA, timeout=120)
+                time.sleep(0.15)
+                if r.status_code != 200:
+                    log(f"  facts {t} {cik}: HTTP {r.status_code}"); continue
+                for ns, tags in r.json()["facts"].items():
+                    for tag, body in tags.items():
+                        if tag not in want:
+                            continue
+                        for unit, vals in body["units"].items():
+                            for v in vals:
+                                rows.append(dict(cik=cik, ticker=t, tag=tag, unit=unit, val=v["val"], start=v.get("start"),
+                                                 end=v["end"], form=v.get("form"), filed=v["filed"]))
+            log(f"  facts {t}")
+        d = pd.DataFrame(rows)
+        for c in ("start", "end", "filed"):
+            d[c] = pd.to_datetime(d[c])
+        d.to_parquet(f, index=False)
+    d = pd.read_parquet(f).dropna(subset=["val", "end", "filed"])
+    d = d[d.unit.isin(["USD", "shares"])]
+    for prim, fb in FALLBACK.items():
+        have = set(zip(d[d.tag == prim].ticker, d[d.tag == prim].end))
+        x = d[d.tag == fb]
+        x = x[[(t, e) not in have for t, e in zip(x.ticker, x.end)]].assign(tag=prim)
+        d = pd.concat([d[d.tag != fb], x], ignore_index=True)
+    return d
 
 
 def ttm(f: pd.DataFrame, D) -> float:
