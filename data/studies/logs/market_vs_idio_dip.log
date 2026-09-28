@@ -1,0 +1,79 @@
+panel (4458, 1724) 2009-01-02 -> 2026-09-23 | close-only ADR scale k = 1.877
+
+[A] panel, OHLC ADR: 12,224 matched dip events, arms {'IDIO': 10057, 'MID': 1602, 'MKT': 565}
+
+               run      arm outcome     n  months  excess_pp      t  h1_pp  h2_pp
+      A panel OHLC      MKT     x20   564      64      1.636  0.948  2.348  1.589
+      A panel OHLC      MKT    xr20   564      64      1.579  0.911  1.519  1.583
+      A panel OHLC      MKT      x5   565      65      0.177  0.328  2.871 -0.000
+      A panel OHLC      MKT     x60   560      63      2.332  0.819 -1.913  2.615
+      A panel OHLC     IDIO     x20  9698     128     -0.198 -0.549 -1.087 -0.167
+      A panel OHLC     IDIO    xr20  9698     128     -0.210 -0.582 -1.091 -0.180
+      A panel OHLC     IDIO      x5  9991     129     -0.047 -0.268 -0.359 -0.037
+      A panel OHLC     IDIO     x60  8926     126     -0.608 -0.806 -4.436 -0.464
+      A panel OHLC      MID     x20  1574      91      0.980  0.716 -1.106  1.045
+      A panel OHLC      MID    xr20  1574      91      0.781  0.591 -1.355  0.847
+      A panel OHLC      MID      x5  1598      92     -0.084 -0.152  0.449 -0.100
+      A panel OHLC      MID     x60  1504      89      3.291  0.965 -6.971  3.622
+      A panel OHLC MKT-IDIO     x20    64      64      1.129  0.929  2.614  0.917
+B panel close-only      MKT     x20   689      74     -0.116 -0.082  0.449 -0.173
+B panel close-only      MKT    xr20   689      74     -0.302 -0.214  0.091 -0.342
+B panel close-only      MKT      x5   691      75     -0.195 -0.351 -0.186 -0.196
+B panel close-only      MKT     x60   684      73      0.225  0.105  1.229  0.123
+B panel close-only     IDIO     x20 10995     147     -0.024 -0.079  0.556 -0.058
+B panel close-only     IDIO    xr20 10995     147     -0.043 -0.141  0.577 -0.078
+B panel close-only     IDIO      x5 11334     148     -0.030 -0.180 -0.183 -0.022
+B panel close-only     IDIO     x60 10168     145     -0.292 -0.418 -2.269 -0.168
+B panel close-only      MID     x20  1892     106      1.104  0.954 -0.669  1.199
+B panel close-only      MID    xr20  1892     106      1.015  0.893 -0.699  1.107
+B panel close-only      MID      x5  1916     107     -0.128 -0.299 -0.240 -0.122
+B panel close-only      MID     x60  1818     104      3.498  1.115 -1.560  3.780
+B panel close-only MKT-IDIO     x20    71      71     -1.661 -1.320 -0.452 -1.958
+       C chain ALL      MKT     x20  1219     116     -0.746 -0.885  0.826 -1.033
+       C chain ALL      MKT    xr20  1219     116     -0.882 -1.061  0.614 -1.155
+       C chain ALL      MKT      x5  1225     116     -0.032 -0.084  0.707 -0.168
+       C chain ALL      MKT     x60  1180     114     -2.070 -1.416  0.829 -2.572
+       C chain ALL     IDIO     x20 15638     182     -0.011 -0.037 -0.007 -0.012
+       C chain ALL     IDIO    xr20 15638     182     -0.013 -0.042 -0.045 -0.004
+       C chain ALL     IDIO      x5 15923     182      0.044  0.353 -0.158  0.098
+       C chain ALL     IDIO     x60 14759     180      0.419  0.790 -0.304  0.627
+       C chain ALL      MID     x20  2648     151      0.181  0.311 -0.593  0.342
+       C chain ALL      MID    xr20  2648     151      0.172  0.298 -0.566  0.325
+       C chain ALL      MID      x5  2664     151     -0.054 -0.155 -0.042 -0.056
+       C chain ALL      MID     x60  2539     148     -0.980 -0.942 -2.397 -0.686
+       C chain ALL MKT-IDIO     x20   115     115     -1.750 -1.758 -0.280 -2.628
+      C chain SURV      MKT     x20   700      94      1.169  1.320  2.191  1.019
+      C chain SURV      MKT    xr20   700      94      1.111  1.310  1.937  0.989
+      C chain SURV      MKT      x5   700      94      0.449  1.090  1.273  0.327
+      C chain SURV      MKT     x60   680      91      0.628  0.392  2.024  0.431
+      C chain SURV     IDIO     x20  8744     181      0.356  1.119  0.427  0.343
+      C chain SURV     IDIO    xr20  8744     181      0.357  1.127  0.416  0.347
+      C chain SURV     IDIO      x5  8876     181      0.150  1.078 -0.190  0.210
+      C chain SURV     IDIO     x60  8272     179      1.427  2.578  0.781  1.549
+      C chain SURV      MID     x20  1652     133      0.672  0.953 -0.795  0.885
+      C chain SURV      MID    xr20  1652     133      0.643  0.905 -0.848  0.861
+      C chain SURV      MID      x5  1658     133     -0.101 -0.220 -0.066 -0.106
+      C chain SURV      MID     x60  1588     130      0.333  0.265 -1.123  0.546
+      C chain SURV MKT-IDIO     x20    93      93     -0.404 -0.329  1.261 -1.237
+   C chain NONSURV      MKT     x20   519     103     -3.330 -3.062 -0.427 -4.005
+   C chain NONSURV      MKT    xr20   519     103     -3.571 -3.240 -0.601 -4.263
+   C chain NONSURV      MKT      x5   525     102     -0.674 -1.366  0.197 -0.879
+   C chain NONSURV      MKT     x60   500     101     -5.739 -3.360 -0.286 -6.936
+   C chain NONSURV     IDIO     x20  6894     180     -0.477 -1.225 -0.287 -0.558
+   C chain NONSURV     IDIO    xr20  6894     180     -0.482 -1.234 -0.342 -0.542
+   C chain NONSURV     IDIO      x5  7047     180     -0.090 -0.585 -0.138 -0.070
+   C chain NONSURV     IDIO     x60  6487     178     -0.866 -1.279 -1.022 -0.797
+   C chain NONSURV      MID     x20   996     139     -0.632 -1.077 -0.420 -0.701
+   C chain NONSURV      MID    xr20   996     139     -0.611 -1.104 -0.323 -0.705
+   C chain NONSURV      MID      x5  1006     139      0.024  0.083 -0.022  0.040
+   C chain NONSURV      MID     x60   951     136     -3.172 -2.725 -3.507 -3.063
+   C chain NONSURV MKT-IDIO     x20   101     101     -2.072 -1.583  0.347 -3.531
+
+[A] PRIMARY MKT x20 per year (pp, events):
+date   2010   2011  2013   2018   2019   2020   2021    2022   2023   2024   2025   2026
+mean   1.97   0.32  9.82  -0.79  22.63   7.73   7.88   -2.09  -2.55   5.95  -0.17   0.25
+size  20.00  11.00  4.00  39.00   1.00  69.00  53.00  114.00  66.00  50.00  66.00  72.00
+
+PRE-REGISTERED BAR (primary, A MKT x20): FAIL  (majority of years positive: True)
+METHOD CHECK: close-only panel same sign as OHLC: False | chain SURV same sign as close-only panel: False
+SURVIVORSHIP READ (MKT x20): SURV +1.17 / ALL -0.75 (t -0.88) / NONSURV -3.33 -> UNINTERPRETABLE (method check failed)
