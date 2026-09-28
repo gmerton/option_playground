@@ -1,104 +1,104 @@
-line_no,date,ticker,direction,action,confidence,fill_timing,fill_date,source,issue,ticker_fixed,direction_fixed,fill_date_fixed,keep_or_drop,video_timestamp,your_note
-3,2026-09-10,DUST,long,entry,stated,yesterday,2026-09-09,2026-09-10_y5Cx9UfXgqs@38:38,note flags a garble,,,,,,
-7,2026-09-10,?,short,entry,inferred,yesterday,2026-09-09,2026-09-10_y5Cx9UfXgqs@50:47,ticker unknown/ambiguous; confidence=inferred,,,,,,
-8,2026-09-10,?,short,entry,stated,yesterday,2026-09-09,2026-09-10_y5Cx9UfXgqs@59:27,ticker unknown/ambiguous,,,,,,
-35,2026-08-28,SK Hynix,short,add,stated,today,2026-08-28,2026-08-28_ufN4u_ncWZg@79:31,ticker unknown/ambiguous,,,,drop (retrospective/add -- auto),,
-37,2026-08-28,OLO,short,entry,inferred,yesterday,2026-08-27,2026-08-28_ufN4u_ncWZg@141:53,confidence=inferred; note flags a garble,,,,,,
-38,2026-08-28,GLD/SLV,short,entry,stated,earlier this year,,2026-08-28_ufN4u_ncWZg@152:31,ticker unknown/ambiguous; fill date vague ('earlier this year'),,,,drop (retrospective/add -- auto),,
-45,2026-08-27,RDDT,short,entry,likely,today,2026-08-27,2026-08-27_5ACCeRUiR2k@82:01,confidence=likely,,,,,,
-46,2026-08-27,QBTS,short,entry,stated,today,2026-08-27,2026-08-27_5ACCeRUiR2k@30:31,note flags a garble,,,,,,
-51,2026-08-27,AI,short,entry,likely,today,2026-08-27,2026-08-27_5ACCeRUiR2k@09:49,confidence=likely,,,,,,
-52,2026-08-25,SPCX,long,entry,inferred,,2026-08-25,2026-08-25_WjAbgRQCHZ8@101:56,confidence=inferred; fill date vague (''); note flags a garble,,,,,,
-53,2026-08-25,IGV,long,entry,stated,,2026-08-25,2026-08-25_WjAbgRQCHZ8@69:14,fill date vague (''),,,,,,
-58,2026-08-21,COIN,long,entry,inferred,,2026-08-21,2026-08-21_72SNbrYCpuA@18:37,confidence=inferred; fill date vague (''),,,,,,
-60,2026-08-17,RKLB,long,entry,inferred,today,2026-08-17,2026-08-17_28slvAelnSc@74:13,confidence=inferred; note flags a garble,,,,,,
-64,2026-08-17,CRCL,long,entry,stated,,2026-08-17,2026-08-17_28slvAelnSc@80:12,fill date vague (''); note flags a garble,,,,,,
-66,2026-08-17,AOI,long,entry,inferred,2026-08-11,2026-08-11,2026-08-17_28slvAelnSc@75:23,ticker check (AOI); confidence=inferred,AAOI,,,,,"2026-09-27: 'AOI' is AAOI, same decode Gabe confirmed on line 286 (AOI is not a live ticker)"
-71,2026-08-12,DELL,long,add,inferred,today,2026-08-12,2026-08-12_1fkRKvTZJ8s@132:23,confidence=inferred; note flags a garble,,,,drop (retrospective/add -- auto),,
-73,2026-08-12,APP,long,entry,inferred,today,2026-08-12,2026-08-12_1fkRKvTZJ8s@51:26,confidence=inferred,,,,,,
-76,2026-08-12,AAOI,long,entry,inferred,yesterday,2026-08-11,2026-08-12_1fkRKvTZJ8s@98:34,confidence=inferred; note flags a garble,,,,,,
-77,2026-08-12,?,long,entry,inferred,today,2026-08-12,2026-08-12_1fkRKvTZJ8s@51:26,ticker unknown/ambiguous; confidence=inferred,,,,,,
-78,2026-08-10,AHR,long,entry,stated,,2026-08-10,2026-08-10_AntPf0JXhbw@88:58,fill date vague (''),,,,,,
-79,2026-08-07,CIFR,long,entry,stated,7th August,,2026-08-13__GDlFxwuZXE@60:44,note flags a garble,,,,,,
-84,2026-08-06,CRCL,long,entry,inferred,today,2026-08-06,2026-08-06_DZNRjMvhFUw@69:25,confidence=inferred; note flags a garble,,,,,,
-86,2026-08-05,RKLB,long,entry,stated,recently,,2026-08-05_K5bjqj9GBUE@78:36,fill date vague ('recently'),,,,drop (retrospective/add -- auto),,
-87,2026-08-05,?,long,entry,inferred,today,2026-08-05,2026-08-05_K5bjqj9GBUE@06:02,ticker unknown/ambiguous; confidence=inferred,,,,,,
-88,2026-08-05,?,long,entry,inferred,today,2026-08-05,2026-08-05_K5bjqj9GBUE@90:44,ticker unknown/ambiguous; confidence=inferred,,,,,,
-92,2026-08-04,CRWD,long,entry,inferred,2026-07-29,2026-07-29,2026-08-04_z73SOenHQQA@82:07,confidence=inferred; note flags a garble,,,,,,
-95,2026-08-03,PBF,long,entry,stated,,2026-08-03,2026-08-03_Flrm2Y_qB_M@23:07,fill date vague (''); note flags a garble,,,,,,
-96,2026-08-03,NET,long,entry,stated,Wednesday (previous week),,2026-08-03_Flrm2Y_qB_M@08:16,fill date vague ('Wednesday (previous week)'),,,,,,
-97,2026-08-03,FTNT,long,entry,stated,"Thursday (earnings day, previous week)",,2026-08-03_Flrm2Y_qB_M@76:31,"fill date vague ('Thursday (earnings day, previous week)')",,,,,,
-99,2026-08-03,FTNT,long,entry,stated,Friday (previous week),,2026-08-03_Flrm2Y_qB_M@11:02,fill date vague ('Friday (previous week)'),,,,,,
-100,2026-08-03,CRWD,long,entry,stated,"prior stream (before the previous Thursday, exact date not stated)",,2026-08-03_Flrm2Y_qB_M@05:38,"fill date vague ('prior stream (before the previous Thursday, exact date not stated)')",,,,,,
-101,2026-08-03,?,long,entry,stated,Thursday (previous week),,2026-08-03_Flrm2Y_qB_M@10:22,ticker unknown/ambiguous; fill date vague ('Thursday (previous week)'),,,,,,
-102,2026-08-03,?,long,entry,stated,Thursday (previous week),,2026-08-03_Flrm2Y_qB_M@12:36,ticker unknown/ambiguous; fill date vague ('Thursday (previous week)'),BMNR,,2026-07-30,keep,12:36,Gabe 2026-09-27: caption 'BNN' is BMNR; fill = 'Thursday (previous week)' relative to the Mon 8/3 stream = 2026-07-30 (from the transcript)
-104,2026-07-29,?,long,entry,stated,today,2026-07-29,2026-07-29_xZ5LigAsWec@53:10,ticker unknown/ambiguous,SKHY,,,keep,53:10,Gabe 2026-09-27: SK Hynix traded as the US-listed SKHY (one answer for lines 141/121/104)
-105,2026-07-29,?,long,add,stated,today,2026-07-29,2026-07-29_xZ5LigAsWec@53:36,ticker unknown/ambiguous,,,,drop (retrospective/add -- auto),,
-118,2026-07-27,AMD,short,entry,inferred,,2026-07-27,2026-07-27_oXZRlT1bh1k@24:50,confidence=inferred; fill date vague (''); note flags a garble,,,,,,
-119,2026-07-24,WULF,short,short,inferred,today,2026-07-24,2026-07-24_Oac266pBZMY@15:50,confidence=inferred; note flags a garble,,,,,,
-120,2026-07-24,SNDK,short,reentry,stated,,2026-07-24,2026-07-24_Oac266pBZMY@04:49,fill date vague (''); note flags a garble,,,,,,
-121,2026-07-24,SKHY,short,entry,stated,Wednesday,2026-07-22,2026-07-24_Oac266pBZMY@108:07,ticker check (SKHY); note flags a garble,SKHY,,,keep,108:07,Gabe 2026-09-27: SK Hynix traded as the US-listed SKHY (one answer for lines 141/121/104)
-123,2026-07-24,GME,long,entry,stated,,2026-07-24,2026-07-24_Oac266pBZMY@48:22,fill date vague (''),,,,drop (retrospective -- auto),,"2026-09-27: his 2021 GME story, not a 2026 pick"
-124,2026-07-24,BOIL,long,entry,stated,2022,,2026-07-24_Oac266pBZMY@38:56,fill date vague ('2022'),,,,drop (retrospective/add -- auto),,
-127,2026-07-24,?,short,add,stated,yesterday,2026-07-23,2026-07-24_Oac266pBZMY@108:07,ticker unknown/ambiguous,,,,drop (retrospective/add -- auto),,
-133,2026-07-22,RIVN,long,buy,stated,today,2026-07-22,2026-07-22_OTJ1GjZ8rAc@15:16,note flags a garble,,,,,,
-136,2026-07-22,MSTR,long,buy,stated,Monday,2026-07-20,2026-07-22_OTJ1GjZ8rAc@26:23,note flags a garble,,,,,,
-139,2026-07-22,BMNR,long,buy,stated,Monday,2026-07-20,2026-07-22_OTJ1GjZ8rAc@26:44,note flags a garble,,,,,,
-141,2026-07-15,SKHY,short,short,stated,today,2026-07-15,2026-07-15_BRht1eWBAIY@42:29,ticker check (SKHY),SKHY,,,keep,42:29,Gabe 2026-09-27: SK Hynix traded as the US-listed SKHY (one answer for lines 141/121/104)
-151,2026-07-14,LITE,short,reentry,inferred,today,2026-07-14,2026-07-14_3ELOuIvRims@32:12,confidence=inferred,,,,,,
-157,2026-07-13,LITE,short,short,inferred,today,2026-07-13,2026-07-13_F_Xw70m9jeA@34:37,confidence=inferred,,,,,,
-165,2026-07-13,?,short,short,stated,Thursday last week (2026-07-09),,2026-07-13_F_Xw70m9jeA@52:05,ticker unknown/ambiguous,,,,,,
-170,2026-07-01,RDDT,long,buy,inferred,today,2026-07-01,2026-07-01_bKkGWr8uCgE@29:01,confidence=inferred; note flags a garble,,,,,,
-172,2026-07-01,QBTS,long,buy,stated,yesterday,2026-06-30,2026-07-01_bKkGWr8uCgE@04:28,note flags a garble,,,,,,
-176,2026-07-01,?,long,buy,stated,today,2026-07-01,2026-07-01_bKkGWr8uCgE@24:08,ticker unknown/ambiguous,,,,,,
-178,2026-06-26,NET,long,buy,stated,today,2026-06-26,2026-06-26_mbNrtjYog_U@46:15,note flags a garble,NET,,,keep,46:15,Gabe 2026-09-27: confirmed NET (Cloudflare)
-183,2026-06-26,?,long,buy,stated,today,2026-06-26,2026-06-26_mbNrtjYog_U@45:51,ticker unknown/ambiguous; note flags a garble,FLEX,,,keep,45:51,"Gabe 2026-09-27: 'Flossy and Nettie' = FLEX and NET, the day's only two buys; NET is its own row (178), so this row is FLEX"
-185,2026-06-26,?,long,buy,stated,'Wednesday'-style phrase (2026-06-24),,2026-06-26_mbNrtjYog_U@59:29,ticker unknown/ambiguous,,,,,,
-193,2026-06-25,?,long,buy,stated,today,2026-06-25,2026-06-25_OBQEWy8PAck@71:03,ticker unknown/ambiguous,,,,,,
-197,2026-06-24,ALAB,long,buy,inferred,today,2026-06-24,2026-06-24_tx321OQ8iD0@105:58,confidence=inferred,ALAB,,,keep,105:58,"Gabe 2026-09-27: confirmed ALAB (Astera Labs), bought that day"
-203,2026-06-23,IONQ,long,reentry,stated,today,2026-06-23,2026-06-23_Z2PyXDLCRaM@118:54,note flags a garble,IONQ,,,keep,118:54,Gabe 2026-09-27: confirmed IONQ re-entry
-208,2026-06-23,?,long,entry,inferred,yesterday,2026-06-22,2026-06-23_Z2PyXDLCRaM@29:17,ticker unknown/ambiguous; confidence=inferred; note flags a garble,CBRS,,,keep,29:17,"Gabe 2026-09-27: caption 'CPRS' is CBRS (Cerebras Systems, recent IPO)"
-209,2026-06-22,TE,long,entry,stated,today,2026-06-22,2026-06-22_Q1Deuj_Rkso@55:55,ticker check (TE),TE,,,keep,55:55,Gabe 2026-09-27: 'T1 Energy' = TE
-218,2026-06-12,BOOT,long,entry,inferred,yesterday,2026-06-11,2026-06-12_HnKJ8ZCARwE@04:55,confidence=inferred,HOOD,,,keep,04:55,"Gabe 2026-09-27: caption 'boot' is HOOD (confirmed from the video), bought on the same 60-min reclaim candle as Intel"
-219,2026-06-12,?,long,entry,inferred,today,2026-06-12,2026-06-12_HnKJ8ZCARwE@44:26,ticker unknown/ambiguous; confidence=inferred; note flags a garble,,,,,,
-235,2026-06-02,UMAC,long,entry,stated,today,2026-06-02,2026-06-02_HM79DK83psE@41:54,note flags a garble,,,,,,
-242,2026-05-28,UMAC,long,entry,inferred,today,2026-05-28,2026-05-28_KIConi96jLo@11:17,confidence=inferred,,,,,,
-260,2026-05-20,SNDK,long,entry,stated,today,2026-05-20,2026-05-20_603RKPXwd3Y@135:41,note flags a garble,SNDK,,,keep,135:41,"Gabe 2026-09-27: confirmed SNDK, bought on the 5-min breakout"
-285,2026-05-05,CRCL,long,entry,stated,,2026-05-05,2026-05-05_cu2qxjXIfPc@53:27,fill date vague (''),,,,,,
-286,2026-05-05,AOI,long,entry,stated,thursday,2026-04-30,2026-05-05_cu2qxjXIfPc@42:36,ticker check (AOI),AAOI,,,keep,42:36,Gabe 2026-09-27: 'AOI' is AAOI (Applied Optoelectronics)
-289,2026-05-05,?,long,entry,stated,friday,2026-05-01,2026-05-05_cu2qxjXIfPc@46:48,ticker unknown/ambiguous,NBIS,,,keep,46:48,Gabe 2026-09-27: caption 'naps'/'Napius' is NBIS (Nebius); bought Friday as a breakout
-307,2026-04-22,BMNR,long,entry,stated,today,2026-04-22,2026-04-22_70HSadiCjPw@29:19,note flags a garble,BMNR,,,keep,29:19,Gabe 2026-09-27: confirmed BMNR (Bitmine)
-322,2026-04-09,UMY,long,entry,stated,today,2026-04-09,2026-04-09_4Kt7AtQ4Dto@33:56,ticker check (UMY),UAMY,,,keep,33:56,"Gabe 2026-09-27: caption 'U M Y' is UAMY (United States Antimony); micro-cap, reduced size for liquidity"
-342,2026-04-07,?,long,entry,stated,today,2026-04-07,2026-04-07_wTbuVPT4hc0@16:18,ticker unknown/ambiguous; note flags a garble,SOLS,,,keep,16:18,Gabe 2026-09-27: SOLS (Solstice Advanced Materials); 4/7 range 76.82-79.28 fits the ~78.65 limit
-351,2026-04-06,?,long,entry,stated,today,2026-04-06,2026-04-06_SRbfFeUeWeY@19:44,ticker unknown/ambiguous; note flags a garble,BMNR;MSTR;COIN,,,keep,19:44,"Gabe 2026-09-27: the three crypto positions are BMNR, MSTR, COIN (fill 4/6); consistent with lines 337/340/341 (4/7: MSTR & COIN stopped out, BMNR held). Scorer expands ';' into three picks"
-357,2026-03-13,PG,short,entry,inferred,today,2026-03-13,2026-03-13_0bvjF-T_3UE@04:20,confidence=inferred,,,,,,
-394,2026-03-02,SNDK,short,add,stated,today,2026-03-02,2026-03-02_f2cY0ph_0FE@33:57,note flags a garble,,,,drop (retrospective/add -- auto),,
-428,2026-01-31,UPS,long,entry,stated,,2026-01-31,2026-01-31_VKNEJA5r8zw@113:04,fill date vague (''),,,,drop (retrospective/add -- auto),,
-429,2026-01-31,TSLA,long,entry,stated,,2026-01-31,2026-01-31_VKNEJA5r8zw@199:07,fill date vague (''),,,,drop (retrospective/add -- auto),,
-430,2026-01-31,TQQQ,long,entry,stated,April,,2026-01-31_VKNEJA5r8zw@156:42,fill date vague ('April'),,,,drop (retrospective/add -- auto),,
-432,2026-01-31,SOFI,long,entry,stated,December,,2026-01-31_VKNEJA5r8zw@128:56,fill date vague ('December'),,,,drop (retrospective/add -- auto),,
-433,2026-01-31,SNDK,short,entry,stated,November,,2026-01-31_VKNEJA5r8zw@218:08,fill date vague ('November'),,,,drop (retrospective/add -- auto),,
-434,2026-01-31,SMR,long,entry,stated,,2026-01-31,2026-01-31_VKNEJA5r8zw@177:14,fill date vague (''),,,,drop (retrospective/add -- auto),,
-435,2026-01-31,RKLB,short,entry,inferred,,2026-01-31,2026-01-31_VKNEJA5r8zw@125:00,confidence=inferred; fill date vague (''),,,,drop (retrospective/add -- auto),,
-436,2026-01-31,RGTI,long,entry,stated,September,,2026-01-31_VKNEJA5r8zw@191:02,fill date vague ('September'),,,,drop (retrospective/add -- auto),,
-437,2026-01-31,QS,long,entry,stated,,2026-01-31,2026-01-31_VKNEJA5r8zw@115:41,fill date vague (''),,,,drop (retrospective/add -- auto),,
-438,2026-01-31,QBTS,long,entry,stated,,2026-01-31,2026-01-31_VKNEJA5r8zw@193:14,fill date vague (''),,,,drop (retrospective/add -- auto),,
-439,2026-01-31,QBTS,short,entry,stated,December,,2026-01-31_VKNEJA5r8zw@139:40,fill date vague ('December'),,,,drop (retrospective/add -- auto),,
-440,2026-01-31,PL,long,entry,stated,,2026-01-31,2026-01-31_VKNEJA5r8zw@180:44,fill date vague (''),,,,drop (retrospective/add -- auto),,
-441,2026-01-31,OKLO,long,entry,stated,,2026-01-31,2026-01-31_VKNEJA5r8zw@172:41,fill date vague (''),,,,drop (retrospective/add -- auto),,
-442,2026-01-31,IONQ,long,entry,stated,September,,2026-01-31_VKNEJA5r8zw@185:34,fill date vague ('September'),,,,drop (retrospective/add -- auto),,
-443,2026-01-31,HOOD,long,entry,stated,April,,2026-01-31_VKNEJA5r8zw@164:40,fill date vague ('April'),,,,drop (retrospective/add -- auto),,
-444,2026-01-31,GDX,short,entry,stated,October,,2026-01-31_VKNEJA5r8zw@213:21,fill date vague ('October'),,,,drop (retrospective/add -- auto),,
-445,2026-01-31,FUTU,long,entry,stated,July,,2026-01-31_VKNEJA5r8zw@168:27,fill date vague ('July'),,,,drop (retrospective/add -- auto),,
-446,2026-01-31,CSIQ,long,entry,stated,December,,2026-01-31_VKNEJA5r8zw@141:38,fill date vague ('December'),,,,drop (retrospective/add -- auto),,
-447,2026-01-31,CRCL,long,entry,inferred,,2026-01-31,2026-01-31_VKNEJA5r8zw@119:31,confidence=inferred; fill date vague (''),,,,drop (retrospective/add -- auto),,
-448,2026-01-31,BBAI,long,entry,stated,February,,2026-01-31_VKNEJA5r8zw@146:23,fill date vague ('February'),,,,drop (retrospective/add -- auto),,
-449,2026-01-31,AVGO,long,entry,inferred,,2026-01-31,2026-01-31_VKNEJA5r8zw@206:46,confidence=inferred; fill date vague (''),,,,drop (retrospective/add -- auto),,
-450,2026-01-31,AMD,long,entry,stated,,2026-01-31,2026-01-31_VKNEJA5r8zw@204:51,fill date vague (''),,,,drop (retrospective/add -- auto),,
-451,2026-01-31,AEO,long,entry,inferred,December,,2026-01-31_VKNEJA5r8zw@121:21,confidence=inferred; fill date vague ('December'),,,,drop (retrospective/add -- auto),,
-452,2026-01-31,AAOI,short,entry,inferred,November,,2026-01-31_VKNEJA5r8zw@219:12,confidence=inferred; fill date vague ('November'); note flags a garble,,,,drop (retrospective/add -- auto),,
-465,2026-01-21,?,long,entry,stated,today,2026-01-21,2026-01-21_VZnilD2O7N4@43:10,ticker unknown/ambiguous; note flags a garble,,,,,,
-473,2026-01-09,?,long,entry,stated,today,2026-01-09,2026-01-09__ko_4ity85A@52:52,ticker unknown/ambiguous; note flags a garble,RIVN,,,keep,52:52,Gabe 2026-09-27: definitely RIVN (confirmed from the video); entry 20.01 consistent with the 1/9 range
-482,2026-01-08,?,long,entry,stated,today,2026-01-08,2026-01-08_IgiOMLGVD_A@42:12,ticker unknown/ambiguous; note flags a garble,HUT,,,keep,42:12,"Gabe 2026-09-27: caption 'hut' is HUT (Hut 8), not HOOD"
-486,2025-12-16,?,short,entry,stated,today,2025-12-16,2025-12-16_YDDP_Wswt_Q@72:44,ticker unknown/ambiguous; note flags a garble,SNDK,,,keep,72:44,Gabe 2026-09-27: caption 'SNTY' is SNDK; short taken live this session
-496,2025-12-03,IONQ,long,entry,inferred,today,2025-12-03,2025-12-03_uN-4AR4OKYU@70:06,confidence=inferred,ONDS,,,keep,70:06,"Gabe 2026-09-27: caption 'OQ'/'IQ' is ONDS (Ondas), not IONQ; from the video"
+key,line_no,date,ticker,direction,action,confidence,fill_timing,fill_date,source,issue,ticker_fixed,direction_fixed,fill_date_fixed,keep_or_drop,video_timestamp,your_note
+2026-09-10_y5Cx9UfXgqs@38:38|DUST|entry|long#0,3,2026-09-10,DUST,long,entry,stated,yesterday,2026-09-09,2026-09-10_y5Cx9UfXgqs@38:38,note flags a garble,,,,,,
+2026-09-10_y5Cx9UfXgqs@50:47|?|entry|short#0,7,2026-09-10,?,short,entry,inferred,yesterday,2026-09-09,2026-09-10_y5Cx9UfXgqs@50:47,ticker unknown/ambiguous; confidence=inferred,,,,,,
+2026-09-10_y5Cx9UfXgqs@59:27|?|entry|short#0,8,2026-09-10,?,short,entry,stated,yesterday,2026-09-09,2026-09-10_y5Cx9UfXgqs@59:27,ticker unknown/ambiguous,,,,,,
+2026-08-28_ufN4u_ncWZg@79:31|SK Hynix|add|short#0,35,2026-08-28,SK Hynix,short,add,stated,today,2026-08-28,2026-08-28_ufN4u_ncWZg@79:31,ticker unknown/ambiguous,,,,drop (retrospective/add -- auto),,
+2026-08-28_ufN4u_ncWZg@141:53|OLO|entry|short#0,37,2026-08-28,OLO,short,entry,inferred,yesterday,2026-08-27,2026-08-28_ufN4u_ncWZg@141:53,confidence=inferred; note flags a garble,,,,,,
+2026-08-28_ufN4u_ncWZg@152:31|GLD/SLV|entry|short#0,38,2026-08-28,GLD/SLV,short,entry,stated,earlier this year,,2026-08-28_ufN4u_ncWZg@152:31,ticker unknown/ambiguous; fill date vague ('earlier this year'),,,,drop (retrospective/add -- auto),,
+2026-08-27_5ACCeRUiR2k@82:01|RDDT|entry|short#0,45,2026-08-27,RDDT,short,entry,likely,today,2026-08-27,2026-08-27_5ACCeRUiR2k@82:01,confidence=likely,,,,,,
+2026-08-27_5ACCeRUiR2k@30:31|QBTS|entry|short#0,46,2026-08-27,QBTS,short,entry,stated,today,2026-08-27,2026-08-27_5ACCeRUiR2k@30:31,note flags a garble,,,,,,
+2026-08-27_5ACCeRUiR2k@09:49|AI|entry|short#0,51,2026-08-27,AI,short,entry,likely,today,2026-08-27,2026-08-27_5ACCeRUiR2k@09:49,confidence=likely,,,,,,
+2026-08-25_WjAbgRQCHZ8@101:56|SPCX|entry|long#0,52,2026-08-25,SPCX,long,entry,inferred,,2026-08-25,2026-08-25_WjAbgRQCHZ8@101:56,confidence=inferred; fill date vague (''); note flags a garble,,,,,,
+2026-08-25_WjAbgRQCHZ8@69:14|IGV|entry|long#0,53,2026-08-25,IGV,long,entry,stated,,2026-08-25,2026-08-25_WjAbgRQCHZ8@69:14,fill date vague (''),,,,,,
+2026-08-21_72SNbrYCpuA@18:37|COIN|entry|long#0,58,2026-08-21,COIN,long,entry,inferred,,2026-08-21,2026-08-21_72SNbrYCpuA@18:37,confidence=inferred; fill date vague (''),,,,,,
+2026-08-17_28slvAelnSc@74:13|RKLB|entry|long#0,60,2026-08-17,RKLB,long,entry,inferred,today,2026-08-17,2026-08-17_28slvAelnSc@74:13,confidence=inferred; note flags a garble,,,,,,
+2026-08-17_28slvAelnSc@80:12|CRCL|entry|long#0,64,2026-08-17,CRCL,long,entry,stated,,2026-08-17,2026-08-17_28slvAelnSc@80:12,fill date vague (''); note flags a garble,,,,,,
+2026-08-17_28slvAelnSc@75:23|AOI|entry|long#0,66,2026-08-17,AOI,long,entry,inferred,2026-08-11,2026-08-11,2026-08-17_28slvAelnSc@75:23,ticker check (AOI); confidence=inferred,AAOI,,,,,"2026-09-27: 'AOI' is AAOI, same decode Gabe confirmed on line 286 (AOI is not a live ticker)"
+2026-08-12_1fkRKvTZJ8s@132:23|DELL|add|long#0,71,2026-08-12,DELL,long,add,inferred,today,2026-08-12,2026-08-12_1fkRKvTZJ8s@132:23,confidence=inferred; note flags a garble,,,,drop (retrospective/add -- auto),,
+2026-08-12_1fkRKvTZJ8s@51:26|APP|entry|long#0,73,2026-08-12,APP,long,entry,inferred,today,2026-08-12,2026-08-12_1fkRKvTZJ8s@51:26,confidence=inferred,,,,,,
+2026-08-12_1fkRKvTZJ8s@98:34|AAOI|entry|long#0,76,2026-08-12,AAOI,long,entry,inferred,yesterday,2026-08-11,2026-08-12_1fkRKvTZJ8s@98:34,confidence=inferred; note flags a garble,,,,,,
+2026-08-12_1fkRKvTZJ8s@51:26|?|entry|long#0,77,2026-08-12,?,long,entry,inferred,today,2026-08-12,2026-08-12_1fkRKvTZJ8s@51:26,ticker unknown/ambiguous; confidence=inferred,,,,,,
+2026-08-10_AntPf0JXhbw@88:58|AHR|entry|long#0,78,2026-08-10,AHR,long,entry,stated,,2026-08-10,2026-08-10_AntPf0JXhbw@88:58,fill date vague (''),,,,,,
+2026-08-13__GDlFxwuZXE@60:44|CIFR|entry|long#0,79,2026-08-07,CIFR,long,entry,stated,7th August,,2026-08-13__GDlFxwuZXE@60:44,note flags a garble,,,,,,
+2026-08-06_DZNRjMvhFUw@69:25|CRCL|entry|long#0,84,2026-08-06,CRCL,long,entry,inferred,today,2026-08-06,2026-08-06_DZNRjMvhFUw@69:25,confidence=inferred; note flags a garble,,,,,,
+2026-08-05_K5bjqj9GBUE@78:36|RKLB|entry|long#0,86,2026-08-05,RKLB,long,entry,stated,recently,,2026-08-05_K5bjqj9GBUE@78:36,fill date vague ('recently'),,,,drop (retrospective/add -- auto),,
+2026-08-05_K5bjqj9GBUE@06:02|?|entry|long#0,87,2026-08-05,?,long,entry,inferred,today,2026-08-05,2026-08-05_K5bjqj9GBUE@06:02,ticker unknown/ambiguous; confidence=inferred,,,,,,
+2026-08-05_K5bjqj9GBUE@90:44|?|entry|long#0,88,2026-08-05,?,long,entry,inferred,today,2026-08-05,2026-08-05_K5bjqj9GBUE@90:44,ticker unknown/ambiguous; confidence=inferred,,,,,,
+2026-08-04_z73SOenHQQA@82:07|CRWD|entry|long#0,92,2026-08-04,CRWD,long,entry,inferred,2026-07-29,2026-07-29,2026-08-04_z73SOenHQQA@82:07,confidence=inferred; note flags a garble,,,,,,
+2026-08-03_Flrm2Y_qB_M@23:07|PBF|entry|long#0,95,2026-08-03,PBF,long,entry,stated,,2026-08-03,2026-08-03_Flrm2Y_qB_M@23:07,fill date vague (''); note flags a garble,,,,,,
+2026-08-03_Flrm2Y_qB_M@08:16|NET|entry|long#0,96,2026-08-03,NET,long,entry,stated,Wednesday (previous week),,2026-08-03_Flrm2Y_qB_M@08:16,fill date vague ('Wednesday (previous week)'),,,,,,
+2026-08-03_Flrm2Y_qB_M@76:31|FTNT|entry|long#0,97,2026-08-03,FTNT,long,entry,stated,"Thursday (earnings day, previous week)",,2026-08-03_Flrm2Y_qB_M@76:31,"fill date vague ('Thursday (earnings day, previous week)')",,,,,,
+2026-08-03_Flrm2Y_qB_M@11:02|FTNT|entry|long#0,99,2026-08-03,FTNT,long,entry,stated,Friday (previous week),,2026-08-03_Flrm2Y_qB_M@11:02,fill date vague ('Friday (previous week)'),,,,,,
+2026-08-03_Flrm2Y_qB_M@05:38|CRWD|entry|long#0,100,2026-08-03,CRWD,long,entry,stated,"prior stream (before the previous Thursday, exact date not stated)",,2026-08-03_Flrm2Y_qB_M@05:38,"fill date vague ('prior stream (before the previous Thursday, exact date not stated)')",,,,,,
+2026-08-03_Flrm2Y_qB_M@10:22|?|entry|long#0,101,2026-08-03,?,long,entry,stated,Thursday (previous week),,2026-08-03_Flrm2Y_qB_M@10:22,ticker unknown/ambiguous; fill date vague ('Thursday (previous week)'),,,,,,
+2026-08-03_Flrm2Y_qB_M@12:36|?|entry|long#0,102,2026-08-03,?,long,entry,stated,Thursday (previous week),,2026-08-03_Flrm2Y_qB_M@12:36,ticker unknown/ambiguous; fill date vague ('Thursday (previous week)'),BMNR,,2026-07-30,keep,12:36,Gabe 2026-09-27: caption 'BNN' is BMNR; fill = 'Thursday (previous week)' relative to the Mon 8/3 stream = 2026-07-30 (from the transcript)
+2026-07-29_xZ5LigAsWec@53:10|?|entry|long#0,104,2026-07-29,?,long,entry,stated,today,2026-07-29,2026-07-29_xZ5LigAsWec@53:10,ticker unknown/ambiguous,SKHY,,,keep,53:10,Gabe 2026-09-27: SK Hynix traded as the US-listed SKHY (one answer for lines 141/121/104)
+2026-07-29_xZ5LigAsWec@53:36|?|add|long#0,105,2026-07-29,?,long,add,stated,today,2026-07-29,2026-07-29_xZ5LigAsWec@53:36,ticker unknown/ambiguous,,,,drop (retrospective/add -- auto),,
+2026-07-27_oXZRlT1bh1k@24:50|AMD|entry|short#0,118,2026-07-27,AMD,short,entry,inferred,,2026-07-27,2026-07-27_oXZRlT1bh1k@24:50,confidence=inferred; fill date vague (''); note flags a garble,,,,,,
+2026-07-24_Oac266pBZMY@15:50|WULF|short|short#0,119,2026-07-24,WULF,short,short,inferred,today,2026-07-24,2026-07-24_Oac266pBZMY@15:50,confidence=inferred; note flags a garble,,,,,,
+2026-07-24_Oac266pBZMY@04:49|SNDK|reentry|short#0,120,2026-07-24,SNDK,short,reentry,stated,,2026-07-24,2026-07-24_Oac266pBZMY@04:49,fill date vague (''); note flags a garble,,,,,,
+2026-07-24_Oac266pBZMY@108:07|SKHY|entry|short#0,121,2026-07-24,SKHY,short,entry,stated,Wednesday,2026-07-22,2026-07-24_Oac266pBZMY@108:07,ticker check (SKHY); note flags a garble,SKHY,,,keep,108:07,Gabe 2026-09-27: SK Hynix traded as the US-listed SKHY (one answer for lines 141/121/104)
+2026-07-24_Oac266pBZMY@48:22|GME|entry|long#0,123,2026-07-24,GME,long,entry,stated,,2026-07-24,2026-07-24_Oac266pBZMY@48:22,fill date vague (''),,,,drop (retrospective -- auto),,"2026-09-27: his 2021 GME story, not a 2026 pick"
+2026-07-24_Oac266pBZMY@38:56|BOIL|entry|long#0,124,2026-07-24,BOIL,long,entry,stated,2022,,2026-07-24_Oac266pBZMY@38:56,fill date vague ('2022'),,,,drop (retrospective/add -- auto),,
+2026-07-24_Oac266pBZMY@108:07|?|add|short#0,127,2026-07-24,?,short,add,stated,yesterday,2026-07-23,2026-07-24_Oac266pBZMY@108:07,ticker unknown/ambiguous,,,,drop (retrospective/add -- auto),,
+2026-07-22_OTJ1GjZ8rAc@15:16|RIVN|buy|long#0,133,2026-07-22,RIVN,long,buy,stated,today,2026-07-22,2026-07-22_OTJ1GjZ8rAc@15:16,note flags a garble,,,,,,
+2026-07-22_OTJ1GjZ8rAc@26:23|MSTR|buy|long#0,136,2026-07-22,MSTR,long,buy,stated,Monday,2026-07-20,2026-07-22_OTJ1GjZ8rAc@26:23,note flags a garble,,,,,,
+2026-07-22_OTJ1GjZ8rAc@26:44|BMNR|buy|long#0,139,2026-07-22,BMNR,long,buy,stated,Monday,2026-07-20,2026-07-22_OTJ1GjZ8rAc@26:44,note flags a garble,,,,,,
+2026-07-15_BRht1eWBAIY@42:29|SKHY|short|short#0,141,2026-07-15,SKHY,short,short,stated,today,2026-07-15,2026-07-15_BRht1eWBAIY@42:29,ticker check (SKHY),SKHY,,,keep,42:29,Gabe 2026-09-27: SK Hynix traded as the US-listed SKHY (one answer for lines 141/121/104)
+2026-07-14_3ELOuIvRims@32:12|LITE|reentry|short#0,151,2026-07-14,LITE,short,reentry,inferred,today,2026-07-14,2026-07-14_3ELOuIvRims@32:12,confidence=inferred,,,,,,
+2026-07-13_F_Xw70m9jeA@34:37|LITE|short|short#0,157,2026-07-13,LITE,short,short,inferred,today,2026-07-13,2026-07-13_F_Xw70m9jeA@34:37,confidence=inferred,,,,,,
+2026-07-13_F_Xw70m9jeA@52:05|?|short|short#0,165,2026-07-13,?,short,short,stated,Thursday last week (2026-07-09),,2026-07-13_F_Xw70m9jeA@52:05,ticker unknown/ambiguous,,,,,,
+2026-07-01_bKkGWr8uCgE@29:01|RDDT|buy|long#0,170,2026-07-01,RDDT,long,buy,inferred,today,2026-07-01,2026-07-01_bKkGWr8uCgE@29:01,confidence=inferred; note flags a garble,,,,,,
+2026-07-01_bKkGWr8uCgE@04:28|QBTS|buy|long#0,172,2026-07-01,QBTS,long,buy,stated,yesterday,2026-06-30,2026-07-01_bKkGWr8uCgE@04:28,note flags a garble,,,,,,
+2026-07-01_bKkGWr8uCgE@24:08|?|buy|long#0,176,2026-07-01,?,long,buy,stated,today,2026-07-01,2026-07-01_bKkGWr8uCgE@24:08,ticker unknown/ambiguous,,,,,,
+2026-06-26_mbNrtjYog_U@46:15|NET|buy|long#0,178,2026-06-26,NET,long,buy,stated,today,2026-06-26,2026-06-26_mbNrtjYog_U@46:15,note flags a garble,NET,,,keep,46:15,Gabe 2026-09-27: confirmed NET (Cloudflare)
+2026-06-26_mbNrtjYog_U@45:51|?|buy|long#0,183,2026-06-26,?,long,buy,stated,today,2026-06-26,2026-06-26_mbNrtjYog_U@45:51,ticker unknown/ambiguous; note flags a garble,FLEX,,,keep,45:51,"Gabe 2026-09-27: 'Flossy and Nettie' = FLEX and NET, the day's only two buys; NET is its own row (178), so this row is FLEX"
+2026-06-26_mbNrtjYog_U@59:29|?|buy|long#0,185,2026-06-26,?,long,buy,stated,'Wednesday'-style phrase (2026-06-24),,2026-06-26_mbNrtjYog_U@59:29,ticker unknown/ambiguous,,,,,,
+2026-06-25_OBQEWy8PAck@71:03|?|buy|long#0,193,2026-06-25,?,long,buy,stated,today,2026-06-25,2026-06-25_OBQEWy8PAck@71:03,ticker unknown/ambiguous,,,,,,
+2026-06-24_tx321OQ8iD0@105:58|ALAB|buy|long#0,197,2026-06-24,ALAB,long,buy,inferred,today,2026-06-24,2026-06-24_tx321OQ8iD0@105:58,confidence=inferred,ALAB,,,keep,105:58,"Gabe 2026-09-27: confirmed ALAB (Astera Labs), bought that day"
+2026-06-23_Z2PyXDLCRaM@118:54|IONQ|reentry|long#0,203,2026-06-23,IONQ,long,reentry,stated,today,2026-06-23,2026-06-23_Z2PyXDLCRaM@118:54,note flags a garble,IONQ,,,keep,118:54,Gabe 2026-09-27: confirmed IONQ re-entry
+2026-06-23_Z2PyXDLCRaM@29:17|?|entry|long#0,208,2026-06-23,?,long,entry,inferred,yesterday,2026-06-22,2026-06-23_Z2PyXDLCRaM@29:17,ticker unknown/ambiguous; confidence=inferred; note flags a garble,CBRS,,,keep,29:17,"Gabe 2026-09-27: caption 'CPRS' is CBRS (Cerebras Systems, recent IPO)"
+2026-06-22_Q1Deuj_Rkso@55:55|TE|entry|long#0,209,2026-06-22,TE,long,entry,stated,today,2026-06-22,2026-06-22_Q1Deuj_Rkso@55:55,ticker check (TE),TE,,,keep,55:55,Gabe 2026-09-27: 'T1 Energy' = TE
+2026-06-12_HnKJ8ZCARwE@04:55|BOOT|entry|long#0,218,2026-06-12,BOOT,long,entry,inferred,yesterday,2026-06-11,2026-06-12_HnKJ8ZCARwE@04:55,confidence=inferred,HOOD,,,keep,04:55,"Gabe 2026-09-27: caption 'boot' is HOOD (confirmed from the video), bought on the same 60-min reclaim candle as Intel"
+2026-06-12_HnKJ8ZCARwE@44:26|?|entry|long#0,219,2026-06-12,?,long,entry,inferred,today,2026-06-12,2026-06-12_HnKJ8ZCARwE@44:26,ticker unknown/ambiguous; confidence=inferred; note flags a garble,,,,,,
+2026-06-02_HM79DK83psE@41:54|UMAC|entry|long#0,235,2026-06-02,UMAC,long,entry,stated,today,2026-06-02,2026-06-02_HM79DK83psE@41:54,note flags a garble,,,,,,
+2026-05-28_KIConi96jLo@11:17|UMAC|entry|long#0,242,2026-05-28,UMAC,long,entry,inferred,today,2026-05-28,2026-05-28_KIConi96jLo@11:17,confidence=inferred,,,,,,
+2026-05-20_603RKPXwd3Y@135:41|SNDK|entry|long#0,260,2026-05-20,SNDK,long,entry,stated,today,2026-05-20,2026-05-20_603RKPXwd3Y@135:41,note flags a garble,SNDK,,,keep,135:41,"Gabe 2026-09-27: confirmed SNDK, bought on the 5-min breakout"
+2026-05-05_cu2qxjXIfPc@53:27|CRCL|entry|long#0,285,2026-05-05,CRCL,long,entry,stated,,2026-05-05,2026-05-05_cu2qxjXIfPc@53:27,fill date vague (''),,,,,,
+2026-05-05_cu2qxjXIfPc@42:36|AOI|entry|long#0,286,2026-05-05,AOI,long,entry,stated,thursday,2026-04-30,2026-05-05_cu2qxjXIfPc@42:36,ticker check (AOI),AAOI,,,keep,42:36,Gabe 2026-09-27: 'AOI' is AAOI (Applied Optoelectronics)
+2026-05-05_cu2qxjXIfPc@46:48|?|entry|long#0,289,2026-05-05,?,long,entry,stated,friday,2026-05-01,2026-05-05_cu2qxjXIfPc@46:48,ticker unknown/ambiguous,NBIS,,,keep,46:48,Gabe 2026-09-27: caption 'naps'/'Napius' is NBIS (Nebius); bought Friday as a breakout
+2026-04-22_70HSadiCjPw@29:19|BMNR|entry|long#0,307,2026-04-22,BMNR,long,entry,stated,today,2026-04-22,2026-04-22_70HSadiCjPw@29:19,note flags a garble,BMNR,,,keep,29:19,Gabe 2026-09-27: confirmed BMNR (Bitmine)
+2026-04-09_4Kt7AtQ4Dto@33:56|UMY|entry|long#0,322,2026-04-09,UMY,long,entry,stated,today,2026-04-09,2026-04-09_4Kt7AtQ4Dto@33:56,ticker check (UMY),UAMY,,,keep,33:56,"Gabe 2026-09-27: caption 'U M Y' is UAMY (United States Antimony); micro-cap, reduced size for liquidity"
+2026-04-07_wTbuVPT4hc0@16:18|?|entry|long#0,342,2026-04-07,?,long,entry,stated,today,2026-04-07,2026-04-07_wTbuVPT4hc0@16:18,ticker unknown/ambiguous; note flags a garble,SOLS,,,keep,16:18,Gabe 2026-09-27: SOLS (Solstice Advanced Materials); 4/7 range 76.82-79.28 fits the ~78.65 limit
+2026-04-06_SRbfFeUeWeY@19:44|?|entry|long#0,351,2026-04-06,?,long,entry,stated,today,2026-04-06,2026-04-06_SRbfFeUeWeY@19:44,ticker unknown/ambiguous; note flags a garble,BMNR;MSTR;COIN,,,keep,19:44,"Gabe 2026-09-27: the three crypto positions are BMNR, MSTR, COIN (fill 4/6); consistent with lines 337/340/341 (4/7: MSTR & COIN stopped out, BMNR held). Scorer expands ';' into three picks"
+2026-03-13_0bvjF-T_3UE@04:20|PG|entry|short#0,357,2026-03-13,PG,short,entry,inferred,today,2026-03-13,2026-03-13_0bvjF-T_3UE@04:20,confidence=inferred,,,,,,
+2026-03-02_f2cY0ph_0FE@33:57|SNDK|add|short#0,394,2026-03-02,SNDK,short,add,stated,today,2026-03-02,2026-03-02_f2cY0ph_0FE@33:57,note flags a garble,,,,drop (retrospective/add -- auto),,
+2026-01-31_VKNEJA5r8zw@113:04|UPS|entry|long#0,428,2026-01-31,UPS,long,entry,stated,,2026-01-31,2026-01-31_VKNEJA5r8zw@113:04,fill date vague (''),,,,drop (retrospective/add -- auto),,
+2026-01-31_VKNEJA5r8zw@199:07|TSLA|entry|long#0,429,2026-01-31,TSLA,long,entry,stated,,2026-01-31,2026-01-31_VKNEJA5r8zw@199:07,fill date vague (''),,,,drop (retrospective/add -- auto),,
+2026-01-31_VKNEJA5r8zw@156:42|TQQQ|entry|long#0,430,2026-01-31,TQQQ,long,entry,stated,April,,2026-01-31_VKNEJA5r8zw@156:42,fill date vague ('April'),,,,drop (retrospective/add -- auto),,
+2026-01-31_VKNEJA5r8zw@128:56|SOFI|entry|long#0,432,2026-01-31,SOFI,long,entry,stated,December,,2026-01-31_VKNEJA5r8zw@128:56,fill date vague ('December'),,,,drop (retrospective/add -- auto),,
+2026-01-31_VKNEJA5r8zw@218:08|SNDK|entry|short#0,433,2026-01-31,SNDK,short,entry,stated,November,,2026-01-31_VKNEJA5r8zw@218:08,fill date vague ('November'),,,,drop (retrospective/add -- auto),,
+2026-01-31_VKNEJA5r8zw@177:14|SMR|entry|long#0,434,2026-01-31,SMR,long,entry,stated,,2026-01-31,2026-01-31_VKNEJA5r8zw@177:14,fill date vague (''),,,,drop (retrospective/add -- auto),,
+2026-01-31_VKNEJA5r8zw@125:00|RKLB|entry|short#0,435,2026-01-31,RKLB,short,entry,inferred,,2026-01-31,2026-01-31_VKNEJA5r8zw@125:00,confidence=inferred; fill date vague (''),,,,drop (retrospective/add -- auto),,
+2026-01-31_VKNEJA5r8zw@191:02|RGTI|entry|long#0,436,2026-01-31,RGTI,long,entry,stated,September,,2026-01-31_VKNEJA5r8zw@191:02,fill date vague ('September'),,,,drop (retrospective/add -- auto),,
+2026-01-31_VKNEJA5r8zw@115:41|QS|entry|long#0,437,2026-01-31,QS,long,entry,stated,,2026-01-31,2026-01-31_VKNEJA5r8zw@115:41,fill date vague (''),,,,drop (retrospective/add -- auto),,
+2026-01-31_VKNEJA5r8zw@193:14|QBTS|entry|long#0,438,2026-01-31,QBTS,long,entry,stated,,2026-01-31,2026-01-31_VKNEJA5r8zw@193:14,fill date vague (''),,,,drop (retrospective/add -- auto),,
+2026-01-31_VKNEJA5r8zw@139:40|QBTS|entry|short#0,439,2026-01-31,QBTS,short,entry,stated,December,,2026-01-31_VKNEJA5r8zw@139:40,fill date vague ('December'),,,,drop (retrospective/add -- auto),,
+2026-01-31_VKNEJA5r8zw@180:44|PL|entry|long#0,440,2026-01-31,PL,long,entry,stated,,2026-01-31,2026-01-31_VKNEJA5r8zw@180:44,fill date vague (''),,,,drop (retrospective/add -- auto),,
+2026-01-31_VKNEJA5r8zw@172:41|OKLO|entry|long#0,441,2026-01-31,OKLO,long,entry,stated,,2026-01-31,2026-01-31_VKNEJA5r8zw@172:41,fill date vague (''),,,,drop (retrospective/add -- auto),,
+2026-01-31_VKNEJA5r8zw@185:34|IONQ|entry|long#0,442,2026-01-31,IONQ,long,entry,stated,September,,2026-01-31_VKNEJA5r8zw@185:34,fill date vague ('September'),,,,drop (retrospective/add -- auto),,
+2026-01-31_VKNEJA5r8zw@164:40|HOOD|entry|long#0,443,2026-01-31,HOOD,long,entry,stated,April,,2026-01-31_VKNEJA5r8zw@164:40,fill date vague ('April'),,,,drop (retrospective/add -- auto),,
+2026-01-31_VKNEJA5r8zw@213:21|GDX|entry|short#0,444,2026-01-31,GDX,short,entry,stated,October,,2026-01-31_VKNEJA5r8zw@213:21,fill date vague ('October'),,,,drop (retrospective/add -- auto),,
+2026-01-31_VKNEJA5r8zw@168:27|FUTU|entry|long#0,445,2026-01-31,FUTU,long,entry,stated,July,,2026-01-31_VKNEJA5r8zw@168:27,fill date vague ('July'),,,,drop (retrospective/add -- auto),,
+2026-01-31_VKNEJA5r8zw@141:38|CSIQ|entry|long#0,446,2026-01-31,CSIQ,long,entry,stated,December,,2026-01-31_VKNEJA5r8zw@141:38,fill date vague ('December'),,,,drop (retrospective/add -- auto),,
+2026-01-31_VKNEJA5r8zw@119:31|CRCL|entry|long#0,447,2026-01-31,CRCL,long,entry,inferred,,2026-01-31,2026-01-31_VKNEJA5r8zw@119:31,confidence=inferred; fill date vague (''),,,,drop (retrospective/add -- auto),,
+2026-01-31_VKNEJA5r8zw@146:23|BBAI|entry|long#0,448,2026-01-31,BBAI,long,entry,stated,February,,2026-01-31_VKNEJA5r8zw@146:23,fill date vague ('February'),,,,drop (retrospective/add -- auto),,
+2026-01-31_VKNEJA5r8zw@206:46|AVGO|entry|long#0,449,2026-01-31,AVGO,long,entry,inferred,,2026-01-31,2026-01-31_VKNEJA5r8zw@206:46,confidence=inferred; fill date vague (''),,,,drop (retrospective/add -- auto),,
+2026-01-31_VKNEJA5r8zw@204:51|AMD|entry|long#0,450,2026-01-31,AMD,long,entry,stated,,2026-01-31,2026-01-31_VKNEJA5r8zw@204:51,fill date vague (''),,,,drop (retrospective/add -- auto),,
+2026-01-31_VKNEJA5r8zw@121:21|AEO|entry|long#0,451,2026-01-31,AEO,long,entry,inferred,December,,2026-01-31_VKNEJA5r8zw@121:21,confidence=inferred; fill date vague ('December'),,,,drop (retrospective/add -- auto),,
+2026-01-31_VKNEJA5r8zw@219:12|AAOI|entry|short#0,452,2026-01-31,AAOI,short,entry,inferred,November,,2026-01-31_VKNEJA5r8zw@219:12,confidence=inferred; fill date vague ('November'); note flags a garble,,,,drop (retrospective/add -- auto),,
+2026-01-21_VZnilD2O7N4@43:10|?|entry|long#0,465,2026-01-21,?,long,entry,stated,today,2026-01-21,2026-01-21_VZnilD2O7N4@43:10,ticker unknown/ambiguous; note flags a garble,,,,,,
+2026-01-09__ko_4ity85A@52:52|?|entry|long#0,473,2026-01-09,?,long,entry,stated,today,2026-01-09,2026-01-09__ko_4ity85A@52:52,ticker unknown/ambiguous; note flags a garble,RIVN,,,keep,52:52,Gabe 2026-09-27: definitely RIVN (confirmed from the video); entry 20.01 consistent with the 1/9 range
+2026-01-08_IgiOMLGVD_A@42:12|?|entry|long#0,482,2026-01-08,?,long,entry,stated,today,2026-01-08,2026-01-08_IgiOMLGVD_A@42:12,ticker unknown/ambiguous; note flags a garble,HUT,,,keep,42:12,"Gabe 2026-09-27: caption 'hut' is HUT (Hut 8), not HOOD"
+2025-12-16_YDDP_Wswt_Q@72:44|?|entry|short#0,486,2025-12-16,?,short,entry,stated,today,2025-12-16,2025-12-16_YDDP_Wswt_Q@72:44,ticker unknown/ambiguous; note flags a garble,SNDK,,,keep,72:44,Gabe 2026-09-27: caption 'SNTY' is SNDK; short taken live this session
+2025-12-03_uN-4AR4OKYU@70:06|IONQ|entry|long#0,496,2025-12-03,IONQ,long,entry,inferred,today,2025-12-03,2025-12-03_uN-4AR4OKYU@70:06,confidence=inferred,ONDS,,,keep,70:06,"Gabe 2026-09-27: caption 'OQ'/'IQ' is ONDS (Ondas), not IONQ; from the video"
