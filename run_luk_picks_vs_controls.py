@@ -12,7 +12,8 @@ disclosed answers it directly. (His trades are admissible here: they are the obj
 
 DATA   data/martin_luk/trades/observed_trades.jsonl (504 rows from his livestreams, 2025-11 -> 2026-09) with Gabe's
        fixes from clarify_worklist.csv applied: ticker_fixed / direction_fixed / fill_date_fixed override;
-       keep_or_drop = drop removes the row; a ticker_fixed holding several symbols separated by ';' expands
+       keep_or_drop = drop removes the row (rows matched on the worklist's stable `key`
+       column, source|ticker|action|direction#n, never on line numbers); a ticker_fixed holding several symbols separated by ';' expands
        into one pick per symbol (same direction and fill date). ⚠ CLARIFICATION RULE (declared now): resolve from what he says or shows
        on screen only, never from charts or memory of what moved; unresolved "?" tickers and non-day fill dates
        are DROPPED, not guessed.

@@ -48,10 +48,12 @@ def yt(src: str) -> str | None:
 def load() -> pd.DataFrame:
     d = pd.DataFrame([json.loads(l) for l in open(SRC / "observed_trades.jsonl") if l.strip()])
     d["line_no"] = np.arange(1, len(d) + 1)
+    # match worklist rows on the stable key (line numbers shift whenever build_luk_extracts.py adds videos)
+    d["key"] = (d.source.astype(str) + "|" + d.ticker.astype(str) + "|" + d.action.astype(str) + "|" + d.direction.astype(str))
+    d["key"] = d.key + "#" + d.groupby("key").cumcount().astype(str)
     W = pd.read_csv(SRC / "clarify_worklist.csv", dtype=str)
-    W["line_no"] = W.line_no.astype(int)
-    d = d.merge(W[["line_no", "ticker_fixed", "direction_fixed", "fill_date_fixed", "keep_or_drop", "your_note", "issue"]],
-                on="line_no", how="left")
+    d = d.merge(W[["key", "ticker_fixed", "direction_fixed", "fill_date_fixed", "keep_or_drop", "your_note", "issue"]],
+                on="key", how="left")
     kd = d.keep_or_drop.fillna("")
     d["state"] = np.where(d.issue.notna() & (kd == ""), "pending",
                           np.where(kd.str.contains("retrospective"), "retrospective",
