@@ -106,6 +106,18 @@ def price_fly(expiry: str, S: float) -> dict | None:
                 credit=round(credit, 4), max_risk=round(width - credit, 4))
 
 
+def prev_session(today: str) -> str:
+    """The last completed SPY trading day before today (from Tradier daily history; handles weekends and holidays)."""
+    start = (pd.Timestamp(today) - pd.Timedelta(days=10)).strftime("%Y-%m-%d")
+    h = get("/markets/history", symbol="SPY", interval="daily", start=start, end=today).get("history") or {}
+    days = h.get("day") or []
+    days = [days] if isinstance(days, dict) else days
+    past = sorted(d["date"] for d in days if d["date"] < today)
+    if not past:
+        sys.exit("could not determine the previous session from Tradier history")
+    return past[-1]
+
+
 def settle(dry: bool) -> None:
     if not TRD.exists():
         return
@@ -131,6 +143,11 @@ def settle(dry: bool) -> None:
     if not dry:
         t.to_csv(TRD, index=False)
     s = t[t.settled.notna()]
+    if "valid" in t.columns:                            # rows marked valid=False (e.g. a stale signal) stay out of the tally
+        bad = s[s.valid.astype(str).str.lower() == "false"]
+        if len(bad):
+            print(f"excluded from the tally (valid=False): {len(bad)} -- " + "; ".join(f"{r.entered} {r.variant}: {r.note}" for r in bad.itertuples()))
+        s = s[s.valid.astype(str).str.lower() != "false"]
     if len(s):
         for v, g in s.groupby("variant"):
             print(f"running tally {v}: {len(g)} flies, {g.pnl_usd.sum():+,.0f} $, mean {g.ret_risk_pct.mean():+.2f}% on risk, win {100 * (g.pnl_usd > 0).mean():.0f}%")
@@ -142,6 +159,8 @@ def log_row(path: Path, row: dict, dry: bool) -> None:
         return
     OUT.mkdir(parents=True, exist_ok=True)
     df = pd.DataFrame([row])
+    if path.exists():                                   # align to the file's header (columns were added 2026-09-28)
+        df = df.reindex(columns=pd.read_csv(path, nrows=0).columns)
     df.to_csv(path, mode="a", header=not path.exists(), index=False)
 
 
@@ -187,6 +206,11 @@ def main() -> None:
         if not SIG.exists():
             sys.exit("no close signal logged yet")
         s = pd.read_csv(SIG); prev = s[s.date < today].tail(1)
+        last = prev_session(today)
+        if not prev.empty and prev.iloc[0].date != last:
+            # 2026-09-28: a missed close run (no desk on 9/25) let Monday's open trade key off Thursday's signal
+            print(f"last close signal is from {prev.iloc[0].date}, not the previous session {last} -> stale, no 0DTE entry")
+            return
         if prev.empty or prev.iloc[0].sign != "POSITIVE":
             print(f"last close signal: {'none' if prev.empty else prev.iloc[0].sign} -> no 0DTE entry")
             return
