@@ -1,0 +1,19 @@
+# Stress bucket head-to-head (pre-registration in the docstring)
+paired regime entries: 113 of 122 (56 months), 2010-01-29 -> 2025-11-21; A median width $9, credit $1.32, exits {'take': 103, 'expiry': 10}
+  A 20-DTE 0.25/0.15 spread    ROC +8.15%/trade (median +15.19, t +3.93) win 93% | worst -100.0% of capital ($-1258/contract) | CVaR5 -100.0% | median capital $768/contract | mean $ P&L +61
+  B 45-DTE 12Δ naked (Reg-T)   ROC +3.15%/trade (median +3.58, t +11.08) win 93% | worst -26.7% of capital ($-1564/contract) | CVaR5 -11.5% | median capital $3,128/contract | mean $ P&L +83
+  (B on a SPAN-like capital ≈ Reg-T/5: ROC +15.76%/trade — sensitivity only)
+
+PRIMARY paired ROC_A - ROC_B: +5.94pp  t +2.73  halves +6.95 / +4.05
+  A annualised ROC per capital-day +330%/yr (mean hold 14 d); B held ≤ 24 d by rule
+  episode-level (33 episodes): A +10.25% vs B +3.47% -> +6.78pp t +3.59; A positive in 30/33, B in 33/33
+  2020-02/03 n  7: A +2.78% (worst -100.0) | B +3.70% (worst -26.7)
+  2022       n 33: A +5.69% (worst -100.0) | B +2.86% (worst -6.6)
+  2018-Q4    n  7: A -6.40% (worst -100.0) | B +1.38% (worst -7.9)
+
+per year ROC %/trade:
+trade_date   2010  2011   2012   2014   2015   2016  2018   2019  2020   2021  2022   2023   2024  2025
+roc_A       13.46 -2.63  13.01  12.43  13.74  13.55 -1.22  14.59  7.46  14.23  5.69  16.08  13.84  6.33
+roc_B        5.33  4.20   3.41   3.27   3.41   3.48  2.13   2.52  4.12   3.64  2.86   2.66   3.02  1.16
+
+VERDICT: EQUIVALENT on return (choose on tail / capital)
