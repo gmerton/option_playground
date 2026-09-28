@@ -1,0 +1,6 @@
+# I Replaced my 6AM Premarket Trading Routine with Claude + Codex (PKFkJ4TprVo, 2026-06-30, 23 min)
+**2.5/5 (process) · no strategy claim.** Claude builds a daily pre-market report from her weekend-watchlist template: gappers + catalyst, TJL day list, swing list (gap ≥ 8%, above the 200 SMA), market tone, economic calendar. Free data only (Yahoo etc.). Emailed via Resend by ~08:45. Sponsor: Questrade custom indexing.
+
+⭐ **METHOD: an independent second model as fact-checker.** Codex CLI is called from Claude's session, *blind* to Claude's output. It gets the same rules and data and writes its own report, and Claude then merges both into an "agree / disagree" section. Relevance here: our 2026-09-23 "verify before asserting" error set came from claims checked *after* they were stated. A blind second pass has to reproduce the number from the primary artefact before a TEST_INDEX row is written, which targets exactly that failure. It can be a no-context subagent; it doesn't need a second vendor. The value is independence from the first pass's framing.
+
+⚠ Caveat she states herself: the report is prep, not signals. Her "risk-on/off" tone line = our regime read, which is descriptive, not a forecast.
