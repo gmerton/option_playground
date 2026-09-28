@@ -1,0 +1,35 @@
+panel (4458, 1724), 2009-01-02 -> 2026-09-23
+catalyst days (eligible): UP 2,410  DOWN 2,829
+UP-flagged names per test date: median 9, p10 2, p90 26
+
+                              cell  dates  excess_pp      t  h1_pp  h2_pp  pos_dates
+        PRIMARY UP h20 ADR-matched    155      0.015  0.048  0.246 -0.152     47.097
+UP h20 ADR+RET-matched (mechanism)    155     -0.019 -0.062  0.269 -0.227     49.677
+              DOWN h20 ADR-matched    167     -0.199 -0.883 -0.160 -0.230     43.114
+               ANY h20 ADR-matched    198     -0.062 -0.286 -0.017 -0.099     44.949
+                 UP h5 ADR-matched    625      0.024  0.341  0.134 -0.053     49.760
+                UP h60 ADR-matched     50      0.441  0.441  0.659  0.255     46.000
+         UP h20 inside INT (2020-)      7     -3.727 -2.204    NaN -3.727     14.286
+       UP h20 inside HYB-B (2020-)      6      0.101  0.038    NaN  0.101     33.333
+
+PRIMARY per-year excess (pp, dates):
+       mean  size
+2010  1.197     4
+2011  1.628     5
+2012  0.663     5
+2013  1.001    11
+2014 -0.832    10
+2015 -0.628     9
+2016 -1.583     9
+2017  1.412    12
+2018 -0.509    10
+2019 -0.578    10
+2020  2.268    10
+2021 -0.535     9
+2022 -1.365     8
+2023  0.157    11
+2024 -0.993    12
+2025 -1.152    12
+2026  1.782     8
+
+PRE-REGISTERED BAR (primary): FAIL
