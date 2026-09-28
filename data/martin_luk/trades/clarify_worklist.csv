@@ -51,8 +51,8 @@ line_no,date,ticker,direction,action,confidence,fill_timing,fill_date,source,iss
 170,2026-07-01,RDDT,long,buy,inferred,today,2026-07-01,2026-07-01_bKkGWr8uCgE@29:01,confidence=inferred; note flags a garble,,,,,,
 172,2026-07-01,QBTS,long,buy,stated,yesterday,2026-06-30,2026-07-01_bKkGWr8uCgE@04:28,note flags a garble,,,,,,
 176,2026-07-01,?,long,buy,stated,today,2026-07-01,2026-07-01_bKkGWr8uCgE@24:08,ticker unknown/ambiguous,,,,,,
-178,2026-06-26,NET,long,buy,stated,today,2026-06-26,2026-06-26_mbNrtjYog_U@46:15,note flags a garble,,,,,,
-183,2026-06-26,?,long,buy,stated,today,2026-06-26,2026-06-26_mbNrtjYog_U@45:51,ticker unknown/ambiguous; note flags a garble,,,,,,
+178,2026-06-26,NET,long,buy,stated,today,2026-06-26,2026-06-26_mbNrtjYog_U@46:15,note flags a garble,NET,,,keep,46:15,Gabe 2026-09-27: confirmed NET (Cloudflare)
+183,2026-06-26,?,long,buy,stated,today,2026-06-26,2026-06-26_mbNrtjYog_U@45:51,ticker unknown/ambiguous; note flags a garble,FLEX,,,keep,45:51,"Gabe 2026-09-27: 'Flossy and Nettie' = FLEX and NET, the day's only two buys; NET is its own row (178), so this row is FLEX"
 185,2026-06-26,?,long,buy,stated,'Wednesday'-style phrase (2026-06-24),,2026-06-26_mbNrtjYog_U@59:29,ticker unknown/ambiguous,,,,,,
 193,2026-06-25,?,long,buy,stated,today,2026-06-25,2026-06-25_OBQEWy8PAck@71:03,ticker unknown/ambiguous,,,,,,
 197,2026-06-24,ALAB,long,buy,inferred,today,2026-06-24,2026-06-24_tx321OQ8iD0@105:58,confidence=inferred,ALAB,,,keep,105:58,"Gabe 2026-09-27: confirmed ALAB (Astera Labs), bought that day"
