@@ -32,19 +32,19 @@ line_no,date,ticker,direction,action,confidence,fill_timing,fill_date,source,iss
 100,2026-08-03,CRWD,long,entry,stated,"prior stream (before the previous Thursday, exact date not stated)",,2026-08-03_Flrm2Y_qB_M@05:38,"fill date vague ('prior stream (before the previous Thursday, exact date not stated)')",,,,,,
 101,2026-08-03,?,long,entry,stated,Thursday (previous week),,2026-08-03_Flrm2Y_qB_M@10:22,ticker unknown/ambiguous; fill date vague ('Thursday (previous week)'),,,,,,
 102,2026-08-03,?,long,entry,stated,Thursday (previous week),,2026-08-03_Flrm2Y_qB_M@12:36,ticker unknown/ambiguous; fill date vague ('Thursday (previous week)'),,,,,,
-104,2026-07-29,?,long,entry,stated,today,2026-07-29,2026-07-29_xZ5LigAsWec@53:10,ticker unknown/ambiguous,,,,,,
+104,2026-07-29,?,long,entry,stated,today,2026-07-29,2026-07-29_xZ5LigAsWec@53:10,ticker unknown/ambiguous,SKHY,,,keep,53:10,Gabe 2026-09-27: SK Hynix traded as the US-listed SKHY (one answer for lines 141/121/104)
 105,2026-07-29,?,long,add,stated,today,2026-07-29,2026-07-29_xZ5LigAsWec@53:36,ticker unknown/ambiguous,,,,drop (retrospective/add -- auto),,
 118,2026-07-27,AMD,short,entry,inferred,,2026-07-27,2026-07-27_oXZRlT1bh1k@24:50,confidence=inferred; fill date vague (''); note flags a garble,,,,,,
 119,2026-07-24,WULF,short,short,inferred,today,2026-07-24,2026-07-24_Oac266pBZMY@15:50,confidence=inferred; note flags a garble,,,,,,
 120,2026-07-24,SNDK,short,reentry,stated,,2026-07-24,2026-07-24_Oac266pBZMY@04:49,fill date vague (''); note flags a garble,,,,,,
-121,2026-07-24,SKHY,short,entry,stated,Wednesday,2026-07-22,2026-07-24_Oac266pBZMY@108:07,ticker check (SKHY); note flags a garble,,,,,,
+121,2026-07-24,SKHY,short,entry,stated,Wednesday,2026-07-22,2026-07-24_Oac266pBZMY@108:07,ticker check (SKHY); note flags a garble,SKHY,,,keep,108:07,Gabe 2026-09-27: SK Hynix traded as the US-listed SKHY (one answer for lines 141/121/104)
 123,2026-07-24,GME,long,entry,stated,,2026-07-24,2026-07-24_Oac266pBZMY@48:22,fill date vague (''),,,,drop (retrospective -- auto),,"2026-09-27: his 2021 GME story, not a 2026 pick"
 124,2026-07-24,BOIL,long,entry,stated,2022,,2026-07-24_Oac266pBZMY@38:56,fill date vague ('2022'),,,,drop (retrospective/add -- auto),,
 127,2026-07-24,?,short,add,stated,yesterday,2026-07-23,2026-07-24_Oac266pBZMY@108:07,ticker unknown/ambiguous,,,,drop (retrospective/add -- auto),,
 133,2026-07-22,RIVN,long,buy,stated,today,2026-07-22,2026-07-22_OTJ1GjZ8rAc@15:16,note flags a garble,,,,,,
 136,2026-07-22,MSTR,long,buy,stated,Monday,2026-07-20,2026-07-22_OTJ1GjZ8rAc@26:23,note flags a garble,,,,,,
 139,2026-07-22,BMNR,long,buy,stated,Monday,2026-07-20,2026-07-22_OTJ1GjZ8rAc@26:44,note flags a garble,,,,,,
-141,2026-07-15,SKHY,short,short,stated,today,2026-07-15,2026-07-15_BRht1eWBAIY@42:29,ticker check (SKHY),,,,,,
+141,2026-07-15,SKHY,short,short,stated,today,2026-07-15,2026-07-15_BRht1eWBAIY@42:29,ticker check (SKHY),SKHY,,,keep,42:29,Gabe 2026-09-27: SK Hynix traded as the US-listed SKHY (one answer for lines 141/121/104)
 151,2026-07-14,LITE,short,reentry,inferred,today,2026-07-14,2026-07-14_3ELOuIvRims@32:12,confidence=inferred,,,,,,
 157,2026-07-13,LITE,short,short,inferred,today,2026-07-13,2026-07-13_F_Xw70m9jeA@34:37,confidence=inferred,,,,,,
 165,2026-07-13,?,short,short,stated,Thursday last week (2026-07-09),,2026-07-13_F_Xw70m9jeA@52:05,ticker unknown/ambiguous,,,,,,
