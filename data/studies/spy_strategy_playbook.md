@@ -1,10 +1,26 @@
 # SPY Regime-Switching Options Strategy — Trading Playbook
 
-> ## ⚠ SPLIT STATUS 2026-09-22 — only the bearish-high-IV cell is certified.
+> ## ⭐ WHAT TO TRADE ON SPY NOW (2026-09-29) — the calm weekly put. Everything below this block is history.
+> - **LIVE: calm-regime weekly put sale** (CERTIFIED-CANDIDATE, `spy_calm_weekly_put_2026-09-28.md`, TEST_INDEX row 17).
+>   **Fridays only**, at the close (~15:30–15:50 ET). Enter only if the regime is **CALM** (NOT [SPY < 50-day SMA **and** VIX ≥ 20])
+>   **and SPY dealer GEX > 0**. Sell the **7-DTE put** (the next Friday expiry) at **5Δ**, **ONE contract** (Gabe 2026-09-28).
+>   Hold to expiry: **no stop, no adjustment, no take-profit.**
+> - **Evidence:** 5Δ excess over beta **+3.49 bp/trade, t 7.14**, 100% of years positive, worst trade −86 bp (≈ −$660 at 1 lot);
+>   the 10Δ primary is t 5.25. QQQ replicates. ~23 qualifying Fridays a year. Mon–Thu entries tested weaker: Fridays only.
+> - **Risk:** 2010–2026 only (no 2008 in v3); a 1987-style −20% week ≈ −$10.7k at 1 lot. The GEX gate is what skipped
+>   2020-02-21 (−758 bp on the 10Δ). The 10/5 vertical gives back the edge (t 1.3), so defined risk is not the fix; size is.
+> - **How it is surfaced:** `daily_desk.sh` step 0b (`run_calm_put_paper.py --entry`) prints a **`LIVE ACTION`** line on a
+>   qualifying Friday and logs the paper trades to `data/paper/calm_put_*.csv` (forward paper sample from 2026-10-02).
+>   Negative gamma or STRESS on the Friday → **no trade that week.**
+> - **⛔ PARKED 2026-09-28 (Gabe): the stress bull put** (below 50MA & VIX ≥ 20, 0.25Δ/0.15Δ, ~20 DTE). Its return turned out
+>   to be the post-2010 rebound (absent 1990–2009), with no premium beyond beta. Token size only, if at all. It is **not** the
+>   trade — the block below that says "Trade ONE cell" is superseded.
+
+> ## ⛔ SUPERSEDED 2026-09-29 — SPLIT STATUS 2026-09-22 — only the bearish-high-IV cell is certified.
 > **Certified:** bull put 0.25/0.15 below 50MA + VIX ≥ 20 (**t 6.07**), shared with the SPX condor as ONE position.
 > **No t on file:** bullish-high-IV bull put, bearish-low-IV straddle, and the double calendar. Treat as unsupported.
 
-> ### What to actually trade (2026-09-26) — the body below is the March 2026 research and is kept for the record
+> ### ⛔ SUPERSEDED 2026-09-29 (stress cell PARKED 9/28) — What to actually trade (2026-09-26) — the body below is the March 2026 research and is kept for the record
 > - **Trade ONE cell:** Bearish_HighIV (SPY below its 50-day MA **and** VIX ≥ 20) → bull put **0.25Δ / 0.15Δ**, ~20 DTE, Friday entry, **no stop**, 50% take. This is the "Index stress bucket" (`strategy_registry.py`), flagged **S** by `run_friday_screener.py`. SPY only; the SPX condor is the same bet and is not traded.
 > - **Do not trade** the other rows of the decision grid: Bullish_HighIV put spread, Bearish_LowIV straddle, and every double calendar (including the Bearish_HighIV one — the calendar studies were invalidated by the 2026-09-16 path-truncation erratum and the clean re-run found no edge). Calm regimes (VIX < 20) → no SPY trade.
 > - **2026-09-26 replication:** the same regime edge shows in a different structure, the 45-DTE 12Δ naked put (certified subset +3.38% of margin, t 11.3, 32/32 stress episodes positive; the non-regime weeks +0.67%, t 1.7, and they hold every crash loss). So **never sell SPY puts always-on**. The 45-DTE naked version is a candidate alternative structure for the same bucket, pending a head-to-head. `always_on_index_put_2026-09-26.md`.
