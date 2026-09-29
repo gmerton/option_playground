@@ -56,3 +56,10 @@ before any sort.** "Poor fundamentals" quartiles (low RoE −28.6, low RoA −29
 losses −28.9 per week) all do WORSE than the unsorted baseline. Held to expiry, the only non-negative cells are the
 CHEAP quartiles (low P/E +4.8 t 0.23, low P/B +7.8 t 0.37, low P/CF +2.4 t 0.09), which are noise. The largest-cap
 quartile loses least weekly (−14.0, t −5.6; gross −0.1). No one-sided cell is profitable.
+
+## Post-hoc (Gabe asked): all four permutations, buy or sell × good or poor quartile
+
+28 cells (7 factors × top/bottom quartile × buy/sell). **1-week hedged: all 28 negative, −14 to −37bp/wk, every t
+≤ −5.6.** Held to expiry: best cell = BUY the high-P/CF quartile +48bp/cohort, t 1.98, then BUY high-RoA +37 (t 1.87).
+None reaches 3, and with 28 cells the Šidák bar is ~3.1. Buying and selling both lose because the gross is ≈ 0 and
+each side pays its own costs.
