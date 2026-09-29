@@ -43,6 +43,16 @@ else
   echo "  ⚠⚠ GEX fly step FAILED -- the forward sample misses tonight. Full output: $GEX_LOG"; tail -12 "$GEX_LOG"
 fi
 [ -f data/paper/gex_fly_signals.csv ] && echo "  signals logged so far: $(($(wc -l < data/paper/gex_fly_signals.csv) - 1))"
+# Calm-regime SPY weekly put sale, forward paper trade (data/studies/spy_calm_weekly_put_2026-09-28.md, CERTIFIED-
+# CANDIDATE): settles due trades every evening; on FRIDAYS from 15:30 ET logs the signal and, if CALM & GEX > 0, a 7-DTE
+# 10-delta and 5-delta put. Reuses the GEX the step above just logged. Idempotent.
+echo "== 0b calm weekly put paper trade (Fridays)"
+CP_LOG="$OUT/logs/calm_put_$D.log"
+if $PY run_calm_put_paper.py --entry >"$CP_LOG" 2>&1; then
+  tail -5 "$CP_LOG"
+else
+  echo "  ⚠ calm-put step did not complete (on a Friday before 15:30 this is expected). Full output: $CP_LOG"; tail -4 "$CP_LOG"
+fi
 echo "== 1/6 regime read (descriptive; see run_regime_validation.py for why it is not a forecast)"
 $PY run_trailing_retro.py --window 21 2>/dev/null | sed -n 1,25p | tee "$OUT/regime_$D.txt"
 echo; echo "== 1b open book (Flex snapshot + live Tradier marks): what expires and what it is worth"
