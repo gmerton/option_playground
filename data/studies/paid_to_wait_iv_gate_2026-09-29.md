@@ -31,3 +31,31 @@ version of the gate; the 0.13-of-spread slippage calibration is NOT applied (hou
 **Read.** Pass both → the gate is SUPPORTED (paper trade with the correct gate, still no size until forward data).
 Fail 1 → the gate does not separate outcomes → the paid-to-wait put spread goes NULL. Pass 1, fail 2 → the gate works
 but the spread is not better than holding 0.15 delta of stock → NULL as a *vehicle* (stock instead).
+
+---
+
+## Results (run 2026-09-29, after the pre-registration above was committed in a0b69fa; `run_paid_to_wait_iv_gate.py`, `.log`, `.csv`)
+
+**Verdict: NULL. With full IV coverage the gate does not separate outcomes, and every version of the spread loses to
+holding 0.15 delta of the same stock. The paid-to-wait put spread is closed.**
+
+IV percentile now known for 98.8% of events (was 24.7%); new gate agrees with the old one on 80% of the 382 overlap
+events (rank corr 0.71). Gated 468 / ungated 1,062.
+
+| cell | mean (% of max loss) | month t | halves (2019–22 / 2023–26) |
+|---|---|---|---|
+| gated `roc_hold_net` | **−1.45%** (win 75%) | −0.93 | −6.09 / −1.33 |
+| ungated `roc_hold_net` | −4.27% | −1.65 | −5.20 / −6.32 |
+| **P1 gated − ungated** | +4.92pp | **1.33** (bar 3.2) | +6.36 / +3.53 |
+| **P2 gated spread − Δ-matched stock** | **−9.08pp** | **−3.21** | −10.06 / −9.85 |
+| put25 gate: gated − ungated | +0.71pp | 0.15 | |
+
+- The original +5.7% on 129 gated events does not survive coverage: on 468 gated events the spread **loses −1.45% net**.
+  The gate's lead over ungated (+4.9pp) is the same sign but t 1.33, and the put-25Δ version of the gate is ~0.
+- **The stock beats the spread significantly** (t −3.2, both halves, 7 of 8 years): the SETUP names went up (+7.6% of
+  max-loss capital for 0.15Δ of stock) and the short put spread's capped credit, costs and gap losses gave that away.
+- Only the bear states were positive for the gated spread (bear/B+ +8.4%, n 106; bear/B− +15.2%, n 19) — exploratory.
+
+**What it means for the book now.** Stop the paper paid-to-wait put spread: as a way to "get paid while waiting" for a
+SETUP name it is worse than simply owning a small stock position. `run_putspread_scan.py` (Thu) has no tested edge
+behind it; per the working rule it should be treated as retired unless Gabe wants the bear-state lead pre-registered.

@@ -1,0 +1,26 @@
+events 1,548; new percentile known 98.8% (old iv_pct 24.7%)
+sanity: gate agreement new vs old on 382 events: 79.8%; rank corr 0.71
+gated 468 / ungated 1062 (dropped, no percentile: 18)
+
+                               cell      n  mean  t_month     h1    h2  months   win
+                 gated roc_hold_net  468.0 -1.45    -0.93  -6.09 -1.33      63 74.57
+               ungated roc_hold_net 1062.0 -4.27    -1.65  -5.20 -6.32      71 71.94
+         PRIMARY 1: gated - ungated    NaN  4.92     1.33   6.36  3.53      59   NaN
+ PRIMARY 2: gated spread - dm stock  468.0 -9.08    -3.21 -10.06 -9.85      63 46.15
+               gated dm stock alone  468.0  7.62     1.82   3.97  8.52      63 58.76
+          ungated spread - dm stock 1062.0 -8.12    -3.27  -2.81 -9.39      71 47.65
+        put25 gate: gated - ungated    NaN  0.71     0.15   0.54  0.87      59   NaN
+put25 gate: gated spread - dm stock  468.0 -8.03    -3.01 -12.11 -8.08      62 47.65
+
+PASS 1 gate effect (t >= 3.2, halves > 0): no
+PASS 2 beats delta-matched stock: no
+READ: NULL: the gate does not separate outcomes
+
+by year, gated vs ungated roc_hold_net (%), and gated spread - dm stock:
+entry_date     2019   2020  2021  2022  2023   2024   2025  2026
+gated          -0.4   14.4 -24.5 -10.8  14.9   -7.2   -0.9 -62.0
+n_g             5.0  143.0  25.0  45.0  13.0  103.0  118.0  16.0
+ungated        20.4   11.7 -14.4 -22.0  -1.7   -1.3    1.8 -37.7
+g_minus_stock  -7.9   -9.1  -7.8  -8.0   3.7   -3.8   -8.9 -60.2
+
+by regime state, gated roc_hold_net (%): {'bear/B+': 8.4, 'bear/B-': 15.2, 'chop/B+': -6.2, 'chop/B-': -22.3, 'up/B+': -7.0, 'up/B-': 5.1} {'bear/B+': 106, 'bear/B-': 19, 'chop/B+': 25, 'chop/B-': 23, 'up/B+': 222, 'up/B-': 73}
