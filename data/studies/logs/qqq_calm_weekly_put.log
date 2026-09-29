@@ -1,0 +1,26 @@
+  QQQ puts 2010: 0
+  QQQ puts 2011: 2,926
+  QQQ puts 2012: 4,378
+  QQQ puts 2013: 7,331
+  QQQ puts 2014: 10,648
+  QQQ puts 2015: 11,867
+  QQQ puts 2016: 10,844
+  QQQ puts 2017: 12,014
+  QQQ puts 2018: 16,636
+  QQQ puts 2019: 17,017
+  QQQ puts 2020: 22,897
+  QQQ puts 2021: 55,003
+  QQQ puts 2022: 77,555
+  QQQ puts 2023: 104,910
+  QQQ puts 2024: 114,467
+  QQQ puts 2025: 113,845
+  QQQ puts 2026: 97,594
+QQQ price jumps > 20% (split check): 0
+                 cell   n   years  net_bp  t_net  excess_bp  t_excess   h1   h2  yrs_pos   win   worst
+  N10 PRIMARY CALM&G+ 351 2011-26    9.01   9.64       7.50      6.60 6.65 8.30     0.94 96.01 -184.38
+     N10 CALM no gate 618 2011-26    7.82   5.32       5.64      4.00 5.22 6.01     0.88 95.79 -511.64
+N10 CALM&G- (skipped) 267 2011-26    6.25   1.96       3.20      1.07 3.12 3.26     0.81 95.51 -511.64
+          N05 CALM&G+ 355 2011-26    5.21  19.53       4.38      8.35 3.72 5.01     1.00 99.44  -74.83
+
+REPLICATION (QQQ, fixed SPY rule): excess +7.50 bp t +6.60, halves +6.65/+8.30 -> REPLICATES
+per year excess (primary): {2011: 37.31, 2012: 4.3, 2013: 6.28, 2014: 6.15, 2015: 3.47, 2016: 6.62, 2017: 5.25, 2018: 10.0, 2019: 4.58, 2020: 16.18, 2021: 13.2, 2022: 30.87, 2023: 5.46, 2024: -1.81, 2025: 11.03, 2026: 19.13}
