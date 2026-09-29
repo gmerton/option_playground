@@ -47,3 +47,12 @@ the gross spread is zero.
 Net −34 to −42bp/wk for all 7 (t −11 to −14, 0/11 years positive). Gross is still ≈ 0 except MCAP, **+7.60bp/wk,
 t 2.72** (book direction), which remains under the bar and is an exploratory window. MCAP held to expiry
 −20.9bp/cohort (t −0.58); D/E held to expiry +2.2 (t 0.11). The conclusion does not change.
+
+## Post-hoc (Gabe asked): one side only — SHORT straddles by quartile (bp of notional)
+
+Baseline, selling on ALL 85 names with no sort: 1-week hedged net −23.2/wk (t −9.2), gross −1.8 (t −0.8); held to
+expiry −27.2/cohort (t −2.1). **There is no vol premium to sell on second-month mega-cap straddles after costs, even
+before any sort.** "Poor fundamentals" quartiles (low RoE −28.6, low RoA −29.8, high D/E −26.3, high P/E incl.
+losses −28.9 per week) all do WORSE than the unsorted baseline. Held to expiry, the only non-negative cells are the
+CHEAP quartiles (low P/E +4.8 t 0.23, low P/B +7.8 t 0.37, low P/CF +2.4 t 0.09), which are noise. The largest-cap
+quartile loses least weekly (−14.0, t −5.6; gross −0.1). No one-sided cell is profitable.
