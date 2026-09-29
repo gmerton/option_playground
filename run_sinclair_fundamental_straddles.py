@@ -220,12 +220,12 @@ def metrics(X: pd.DataFrame) -> dict[str, pd.Series]:
     """Each returns a SCORE where HIGH = the book's TOP quartile (short straddles)."""
     s = {}
     s["P/E"] = -(X.ni / X.mcap)                  # low E/P (incl. negative E) = high P/E
-    s["P/B"] = -(X.eq / X.mcap)
+    s["P/B"] = -(X["eq"] / X.mcap)
     s["P/CF"] = -(X.ocf / X.mcap)
     s["MCAP"] = X.mcap
-    de = X.liab / X.eq
-    s["D/E"] = de.where(X.eq > 0, np.inf)
-    s["RoE"] = (X.ni / X.eq).where(X.eq > 0)
+    de = X.liab / X["eq"]
+    s["D/E"] = de.where(X["eq"] > 0, np.inf)
+    s["RoE"] = (X.ni / X["eq"]).where(X["eq"] > 0)
     s["RoA"] = X.ni / X.assets
     return {k: v.replace([np.inf], 1e18) for k, v in s.items()}
 
