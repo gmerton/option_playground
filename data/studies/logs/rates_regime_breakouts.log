@@ -1,0 +1,75 @@
+regime share of sessions 2010-2026: {'NORMAL': 0.735, 'RISING': 0.095, 'HIGH-STEADY': 0.091, 'FALLING': 0.079}
+HIGH-STEADY years: [2022, 2023, 2024, 2025, 2026]
+
+HOUSE breakouts 2010-26 with a rate-beta tercile: 54,367
+mean % per trade by regime x rate-beta tercile (T1 long-duration / T3 beneficiaries):
+             mean               size             
+t             1.0   2.0   3.0    1.0   2.0    3.0
+reg                                              
+FALLING      0.67  0.18  0.73   1691   884   1008
+HIGH-STEADY -0.77  0.64  1.42   3986  4008   5853
+NORMAL       0.19  0.54  0.85  11840  8032  12555
+RISING      -0.54 -1.00 -0.63   1304  1092   2114
+
+== PRIMARY: house pool, gap T3 - T1 on regime dummies: dates with T1 & T3 breakouts 2378 ==
+             coef_pp      t
+const          0.842  1.885
+RISING        -1.144 -1.259
+FALLING       -0.456 -0.387
+HIGH-STEADY    0.456  0.520
+  RISING: 36 episodes, share with the coefficient's sign 69%
+  FALLING: 30 episodes, share with the coefficient's sign 67%
+  HIGH-STEADY: 6 episodes, share with the coefficient's sign 83%
+H1 RISING: coef -1.14pp t -1.26, episode sign share 69% -> FAIL
+H2 HIGH-STEADY: coef +0.46pp t +0.52, episode sign share 83% -> FAIL
+
+== SECONDARY: relative-high (top quintile of 5y range, steady) vs other: dates with T1 & T3 breakouts 2378 ==
+          coef_pp      t
+const       1.044  2.177
+REL-HIGH   -0.960 -1.237
+  REL-HIGH: 15 episodes, share with the coefficient's sign 53%
+
+PRECISION tier events: 2,338
+             mean             size          
+t             1.0   2.0   3.0  1.0  2.0  3.0
+reg                                         
+FALLING      1.27 -3.08 -1.66   80   21   18
+HIGH-STEADY  2.52  1.68  3.67  192  207  297
+NORMAL      -0.41  1.38  1.93  529  257  525
+RISING      -1.13 -2.37  0.96   67   36  109
+
+== SECONDARY: precision tier: dates with T1 & T3 breakouts 171 ==
+             coef_pp      t
+const         -3.033 -1.098
+RISING         2.811  0.531
+FALLING        5.315  1.513
+HIGH-STEADY    1.244  0.241
+  RISING: 10 episodes, share with the coefficient's sign 50%
+  FALLING: 7 episodes, share with the coefficient's sign 86%
+  HIGH-STEADY: 6 episodes, share with the coefficient's sign 50%
+
+== EXPLORATORY (not pre-registered): all house breakouts, regime level effect vs NORMAL, month-clustered ==
+             coef_pct      t
+const           0.533  1.372
+RISING         -1.226 -1.344
+FALLING         0.034  0.026
+HIGH-STEADY     0.030  0.037
+
+RISING by year vs NORMAL same year:
+      mean  size  normal_same_year
+yr                                
+2010  0.70   165              0.20
+2011 -3.68   480             -2.20
+2012 -1.87    73              2.39
+2013  0.03   123              0.41
+2015 -1.05    49             -2.57
+2016 -0.84   285              0.45
+2017  0.58     4              0.89
+2018 -6.60    15             -0.99
+2019 -4.89    36              2.04
+2021 -2.73   649             -0.86
+2022 -1.85  1339             -2.22
+2023 -0.06   386              1.91
+2024  5.41   482              2.44
+2025  0.80   211              3.21
+2026  3.37   213              1.05
