@@ -27,6 +27,9 @@ PRE-REGISTRATION
   Diversification check (descriptive): each ticker's mean P&L in SPY's 20 worst entry weeks (2010-2026), to show
              whether its tail coincides with SPY's.
 
+DATA FIX (after the first run, disclosed): closes are un-adjusted to RAW with data/cache/pit/splits.parquet to match
+v3's raw strikes; only trades spanning a split date are dropped. First-run log: calm_weekly_put_panel_SPLITBUG.log (void).
+
 Usage: AWS_PROFILE=clarinut-gmerton PYTHONPATH=src:. .venv/bin/python3 run_calm_weekly_put_panel.py > data/studies/logs/calm_weekly_put_panel.log
 """
 from __future__ import annotations
@@ -78,12 +81,23 @@ def main():
     vix.index = pd.to_datetime(vix.index).normalize(); vix = vix.reindex(px.index).ffill()
     irx = (yf.download("^IRX", start="2009-06-01", end="2026-04-01", progress=False, auto_adjust=False)["Close"].squeeze() / 100)
     irx.index = pd.to_datetime(irx.index).normalize(); irx = irx.reindex(px.index).ffill()
+    # DATA FIX after the first run (disclosed): v3 strikes are RAW; yfinance Close is split-ADJUSTED. Un-adjust every
+    # close with the split history (raw = adjusted x each LATER split's to/from ratio), and drop only trades whose window
+    # spans a split date. The first run (log kept as calm_weekly_put_panel_SPLITBUG.log) settled raw strikes against
+    # adjusted prices and is void for every name with a split (AAPL NVDA AMZN GOOGL TSLA NFLX USO XLE XLU).
+    sp = pd.read_parquet("data/cache/pit/splits.parquet"); sp["execution_date"] = pd.to_datetime(sp.execution_date)
+    split_dates = {}
+    for r_ in sp[sp.ticker.isin(A + B)].itertuples():
+        ratio = r_.split_to / r_.split_from
+        m = px.index < r_.execution_date
+        px.loc[m, r_.ticker] = px.loc[m, r_.ticker] * ratio
+        split_dates.setdefault(r_.ticker, []).append(r_.execution_date)
     earn = pd.read_parquet("data/cache/earnings_yf.parquet")
     earn["session"] = pd.to_datetime(earn.session)
     rows = []
     for tk in A + B:
         S = px[tk].dropna()
-        jumps = int((S.pct_change().abs() > 0.35).sum())
+        jumps = int((S.pct_change().abs() > 0.35).sum())   # after un-adjusting, remaining jumps are real moves
         calm = ~((S < S.rolling(50).mean()) & (vix.reindex(S.index) >= 20))
         D = pull(tk)
         D = D[(D.bid > 0) & (D.ask >= D.bid) & D.delta.notna()].copy()
@@ -100,8 +114,8 @@ def main():
             ei = S.index.searchsorted(x.expiry.values, side="right") - 1
             x["ST"] = S.values[ei]
             x = x.dropna(subset=["S0", "ST"])
-            # raw strikes vs a split-adjusted close would mis-settle across splits: drop trades spanning a big jump
-            x = x[(x.ST / x.S0 - 1).abs() < 0.35]
+            for sd in split_dates.get(tk, []):          # a trade spanning a split date cannot be settled cleanly
+                x = x[~((x.trade_date < sd) & (x.expiry >= sd))]
             x["calm"] = calm.reindex(x.trade_date).fillna(False).values
             if tk in B and len(es):
                 has = np.array([((es > t) & (es <= e)).any() or ((es == t)).any() for t, e in zip(x.trade_date.values, x.expiry.values)])
@@ -115,7 +129,7 @@ def main():
             x["tk"], x["leg"], x["univ"] = tk, leg, "A" if tk in A else "B"
             rows.append(x[x.calm])
         if jumps:
-            print(f"  note {tk}: {jumps} daily moves > 35% (split/adjustment) -- spanning trades dropped")
+            print(f"  note {tk}: {jumps} daily moves > 35% in the raw series (real moves, kept)")
     X = pd.concat(rows, ignore_index=True)
     per = []
     for (u, leg, tk), g in X.groupby(["univ", "leg", "tk"]):
