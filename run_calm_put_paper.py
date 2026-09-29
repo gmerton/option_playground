@@ -31,6 +31,7 @@ OUT = gf.OUT
 SIG, TRD = OUT / "calm_put_signals.csv", OUT / "calm_put_trades.csv"
 SLIP, COMM = 0.25, 0.0065
 TARGETS = {"n10": (0.10, 0.025), "n05": (0.05, 0.015)}
+LIVE_LEG = "n05"          # Gabe 2026-09-28: live = the 5-delta put, ONE contract (worst tested week ~-86 bp = ~0.8% of NAV)
 
 
 def daily_closes(n_days: int = 120) -> pd.Series:
@@ -137,6 +138,10 @@ def entry(dry: bool) -> None:
         r = x.loc[(x.ad - tgt).abs().idxmin()]
         mid = (r.bid + r.ask) / 2
         credit = mid - SLIP * (r.ask - r.bid) - COMM
+        if leg == LIVE_LEG:
+            print(f"\n  >>> LIVE ACTION (Gabe 2026-09-28: 5-delta, 1 contract): SELL TO OPEN 1 SPY {ex} {r.strike:g} PUT "
+                  f"(delta {r.delta:+.3f}) -- limit at mid {mid:.2f} or better, not below {credit:.2f}; hold to expiry, "
+                  f"no stop, no adjustment. <<<\n")
         log_row(TRD, dict(entered=today, time=now.strftime("%H:%M"), leg=leg, expiry=ex, strike=r.strike, delta=round(r.delta, 4),
                           bid=r.bid, ask=r.ask, credit=round(credit, 4), S_entry=S, vix=vix, gex=round(gex),
                           S_settle=None, pnl_share=None, pnl_bp=None, excess_bp=None, settled=None), dry)
