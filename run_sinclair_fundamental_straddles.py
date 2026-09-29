@@ -357,6 +357,8 @@ def pnl(S, P, raw, fridays) -> pd.DataFrame:
 
 def evaluate(E, fac, score, out, res):
     E = E.assign(score=score.values).dropna(subset=["score"])
+    nd = E.groupby("trade_date").score.transform("size")
+    E = E[nd >= 20]                                   # guard: quartiles need >= 20 scored names that Friday
     E["q"] = E.groupby("trade_date").score.transform(lambda s: pd.qcut(s.rank(method="first"), 4, labels=False))
     lo, hi = E[E.q == 0], E[E.q == 3]
 
