@@ -41,3 +41,9 @@ RoA        -43.7 -46.6 -52.4 -43.8 -57.0 -56.0 -35.3 -44.7 -40.2 -36.6 -44.7 -55
 vol-pricing error the option market leaves on the table. The weekly re-formation turns a zero-edge sort into a pure
 cost drain. This is the third single-stock vol sort to fail after Goyal–Saretto and Vasquez, and the first where even
 the gross spread is zero.
+
+## Post-hoc (Gabe asked, not pre-registered): 2016-01 → 2026-02 only
+
+Net −34 to −42bp/wk for all 7 (t −11 to −14, 0/11 years positive). Gross is still ≈ 0 except MCAP, **+7.60bp/wk,
+t 2.72** (book direction), which remains under the bar and is an exploratory window. MCAP held to expiry
+−20.9bp/cohort (t −0.58); D/E held to expiry +2.2 (t 0.11). The conclusion does not change.
