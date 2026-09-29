@@ -4,7 +4,7 @@
 
 **Why.** Audit List A #6 (`audit_top_down_2026-09-25.md`), audit step 3 item 3. The SPDR-sector 12-1 spread
 (`run_sector_momentum_spread.py`, 2026-09-24) has ~zero return but paid in 3 of 4 bears (2008 +25%, 2020 +16%,
-2022 +31%; 2000–02 −1…%) and survived de-meaning as a book overlay (`run_sector_overlay_test.py`). Four episodes is
+2022 +31%; 2000–02 −10.3%) and survived de-meaning as a book overlay (`run_sector_overlay_test.py`). Four episodes is
 anecdote. Ken French's industry returns reach back to 1926 and give ~10 episodes. Breadth is OFF right now; this is
 the only bear-leg candidate left in the ledger.
 
@@ -27,7 +27,7 @@ the monthly Mkt total-return index of ≥ 20%, peak → trough, where an episode
 | 4 | 1968-11 | 1970-06 | −33.6% | new |
 | 5 | 1972-12 | 1974-09 | −46.5% | new |
 | 6 | 1987-08 | 1987-11 | −29.9% | new |
-| 7 | 2000-08 | 2002-09 | −45.0% | ETF test (−1…%, failed) |
+| 7 | 2000-08 | 2002-09 | −45.0% | ETF test (−10.3%, failed) |
 | 8 | 2007-10 | 2009-02 | −50.3% | ETF test (+) |
 | 9 | 2020-01 | 2020-03 | −20.2% | ETF test (+) |
 | 10 | 2021-12 | 2022-09 | −24.8% | ETF test (+) |
