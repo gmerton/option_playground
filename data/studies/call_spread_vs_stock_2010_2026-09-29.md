@@ -31,3 +31,32 @@ vs-stock number; the share of entries dropped for missing legs/spot.
 **Cost of the pull.** One Athena query on `options_daily_v3`, 20 tickers × Fridays 2009-06 → 2019-12, DTE 25–40,
 |Δ| 0.10–0.40 (the original query's filters), cached to `data/cache/call_spread_vs_stock_2010_chains.parquet`.
 Approved by Gabe 2026-09-29.
+
+---
+
+## Results (run 2026-09-29, after the pre-registration above was committed in acf91b3; `run_call_spread_vs_stock_2010.py`, `.log`, `.csv`)
+
+**Verdict: FAIL — NULL. On unseen 2010–2019 the call debit spread does NOT beat its own delta in stock, and it is
+worst exactly where the original claimed its edge (SPY < 200 SMA). The 2019–26 lead was that sample.**
+
+5,895 entries, 19 names, 117 months (dropped: 1,045 missing legs, 245 missing spot, 160 bad prices; 19% of entries
+settled on the Friday before a Saturday-dated expiry).
+
+| cut | n | call $ | Δ-stock $ | call − stock | month t | halves (2010–14 / 2015–19) |
+|---|---|---|---|---|---|---|
+| **ALL (P1)** | 5,895 | +23 | +36 | **−$9** | **−1.27** | +4 / −24 |
+| **SPY < 200 SMA (P2)** | 788 | +4 | +53 | **−$35** | **−1.88** | −12 / −53 |
+| down months | 1,529 | −121 | −128 | +$8 | 0.59 | |
+| up months | 4,366 | +74 | +94 | −$17 | −1.96 | |
+| put credit 30/20 − stock | 5,895 | | | −$17 | −3.43 | |
+
+- The "capped downside" mechanism does not reproduce: in down months the spread lost almost as much as its delta in
+  stock (−$121 vs −$128). The debit is paid every month; the cap only helps in large drops.
+- 2015–2019 is negative every year but 2015 (2017 −$44, t −3.05). Pooled 2010–2026 (exploratory): +$33, t 1.85;
+  SPY < 200 SMA +$47, t 0.86.
+- The put credit spread loses to its delta here too (−$17, t −3.43), consistent with the 9/22 finding.
+- ⚠ **Coverage:** META is absent (traded as FB before 2022; the query used today's ticker), GOOGL starts 2014-04,
+  QQQ 2011-04 (QQQQ before). One name of 20 cannot move −$9 (t −1.27) to t ≥ 3; not re-run.
+
+**What it means for the book now.** No vehicle beats owning the stock on its own delta. Express longs in stock; the
+call debit spread is a sizing tool (defined risk), not a source of return.
