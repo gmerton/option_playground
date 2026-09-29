@@ -1,0 +1,43 @@
+== VALIDATION (fit 2010-17, predict 2018-26), 45-DTE 16-delta legs ==
+  P: median |mid err| 8.0%, credit ratio 1.030, actual net +26.60 bp vs synthetic +28.04 -> registered bias 0.949 (NOT used), credit scale applied 0.970
+  C: median |mid err| 9.0%, credit ratio 1.041, actual net -1.97 bp vs synthetic -3.86 -> registered bias 0.512 (NOT used), credit scale applied 0.961
+
+Fridays with both legs: 1540 (852 synthetic 1993-2009, 688 v3 2010-26); months 396
+scale to monthly CVaR_5% = 100 bp: {'PUT': np.float64(0.066), 'STRANGLE': np.float64(0.06), 'HEDGED': np.float64(0.105)}
+
+== per era, each arm at equal full-sample CVaR (monthly bp) ==
+arm      HEDGED    PUT  STRANGLE
+era                             
+1993-99   11.18  15.20      9.11
+2000-02   23.68   6.70     11.95
+2003-06   11.67  13.82     12.05
+2007-09    9.10   1.96      4.58
+2010-19    7.14   9.86      7.74
+2020-26    2.27   7.67      6.08
+ALL        9.31  10.04      8.34
+arm      HEDGED    PUT  STRANGLE
+era                             
+1993-99   -93.0 -110.0    -181.0
+2000-02  -124.0 -184.0    -144.0
+2003-06   -32.0   -5.0     -43.0
+2007-09  -600.0 -578.0    -474.0
+2010-19  -124.0 -117.0    -100.0
+2020-26  -502.0 -400.0    -357.0
+ALL      -600.0 -578.0    -474.0
+arm      HEDGED    PUT  STRANGLE
+era                             
+1993-99   -93.0 -110.0    -143.0
+2000-02   -85.0 -113.0     -90.0
+2003-06   -24.0   -5.0     -43.0
+2007-09  -402.0 -356.0    -310.0
+2010-19  -124.0 -117.0    -100.0
+2020-26  -502.0 -400.0    -357.0
+ALL      -502.0 -400.0    -357.0
+
+raw mean bp per Friday entry (unscaled), and the put's beta component:
+             PUT  call  STRANGLE  HEDGED   beta
+src                                            
+synthetic  39.90 -1.86     38.04   29.89  12.98
+v3         38.45 -4.98     33.47   14.12  23.47
+PRIMARY STRANGLE - PUT at equal CVaR: -1.71 bp/month, t -1.74, halves 1993-09 -1.51 / 2010-26 -1.91 -> EQUIVALENT
+SECONDARY HEDGED - PUT at equal CVaR: -0.74 bp/month, t -0.60, halves 1993-09 +2.12 / 2010-26 -3.75 -> EQUIVALENT

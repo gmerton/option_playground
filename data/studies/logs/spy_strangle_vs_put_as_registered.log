@@ -1,0 +1,43 @@
+== VALIDATION (fit 2010-17, predict 2018-26), 45-DTE 16-delta legs ==
+  P: median |mid err| 8.0%, credit ratio 1.030, actual net +26.60 bp vs synthetic +28.04 -> bias 0.949, scale applied 0.949
+  C: median |mid err| 9.0%, credit ratio 1.041, actual net -1.97 bp vs synthetic -3.86 -> bias 0.512, scale applied 0.512
+
+Fridays with both legs: 1540 (852 synthetic 1993-2009, 688 v3 2010-26); months 396
+scale to monthly CVaR_5% = 100 bp: {'PUT': np.float64(0.066), 'STRANGLE': np.float64(0.057), 'HEDGED': np.float64(0.104)}
+
+== per era, each arm at equal full-sample CVaR (monthly bp) ==
+arm      HEDGED    PUT  STRANGLE
+era                             
+1993-99   10.49  14.77      4.52
+2000-02   22.67   6.15      5.72
+2003-06   11.06  13.45      7.85
+2007-09    8.11   1.38     -1.69
+2010-19    7.09   9.83      7.41
+2020-26    2.26   7.65      5.82
+ALL        8.89   9.79      5.58
+arm      HEDGED    PUT  STRANGLE
+era                             
+1993-99   -93.0 -110.0    -190.0
+2000-02  -125.0 -184.0    -149.0
+2003-06   -34.0   -5.0     -45.0
+2007-09  -597.0 -579.0    -477.0
+2010-19  -124.0 -117.0     -95.0
+2020-26  -499.0 -399.0    -342.0
+ALL      -597.0 -579.0    -477.0
+arm      HEDGED    PUT  STRANGLE
+era                             
+1993-99   -93.0 -110.0    -141.0
+2000-02   -85.0 -113.0     -92.0
+2003-06   -24.0   -5.0     -45.0
+2007-09  -400.0 -356.0    -303.0
+2010-19  -124.0 -117.0     -95.0
+2020-26  -499.0 -399.0    -342.0
+ALL      -499.0 -399.0    -342.0
+
+raw mean bp per Friday entry (unscaled), and the put's beta component:
+             PUT   call  STRANGLE  HEDGED   beta
+src                                             
+synthetic  38.32 -19.85     18.48   28.31  12.98
+v3         38.45  -4.98     33.47   14.12  23.47
+PRIMARY STRANGLE - PUT at equal CVaR: -4.21 bp/month, t -4.36, halves 1993-09 -6.14 / 2010-26 -2.19 -> WORSE
+SECONDARY HEDGED - PUT at equal CVaR: -0.90 bp/month, t -0.74, halves 1993-09 +1.81 / 2010-26 -3.76 -> EQUIVALENT

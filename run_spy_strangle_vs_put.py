@@ -34,6 +34,10 @@ PRE-REGISTRATION
   Caveats   1993-2009 is synthetic (model risk concentrated exactly in the crises); the static hedge is not
             re-balanced; SPY is American (early assignment ignored).
 
+CORRECTION after the first run (disclosed): the registered bias rule divides net bp, which fails when both nets are
+negative (the call leg); credits are now scaled by 1 / median credit ratio. As-registered log kept:
+logs/spy_strangle_vs_put_as_registered.log.
+
 Usage: PYTHONPATH=src:. .venv/bin/python3 run_spy_strangle_vs_put.py > data/studies/logs/spy_strangle_vs_put.log
 """
 from __future__ import annotations
@@ -115,9 +119,13 @@ def main():
         pay = np.maximum(K - v.S_T.values, 0) if cp == "P" else np.maximum(v.S_T.values - K, 0)
         bp_syn = (cr - pay) / v.S_0.values * 1e4
         b = v.bp_n.sum() / bp_syn.sum()
-        scale[cp] = min(1.0, b) if b > 0 else 1.0
+        # CORRECTION (after the first run, disclosed): the registered net-bp ratio is meaningless when both nets are
+        # negative (calls: -1.97 vs -3.86 -> 0.512 cut the synthetic call CREDIT in half although the synthetic was
+        # too PESSIMISTIC). Scale credits by 1 / median credit ratio instead (the level error of the IV model).
+        cr_ratio = np.median(mid_syn / v.mid.values)
+        scale[cp] = 1.0 / cr_ratio
         print(f"  {cp}: median |mid err| {np.median(np.abs(mid_syn / v.mid.values - 1)):.1%}, credit ratio {np.median(mid_syn / v.mid.values):.3f}, "
-              f"actual net {v.bp_n.mean():+.2f} bp vs synthetic {bp_syn.mean():+.2f} -> bias {b:.3f}, scale applied {scale[cp]:.3f}")
+              f"actual net {v.bp_n.mean():+.2f} bp vs synthetic {bp_syn.mean():+.2f} -> registered bias {b:.3f} (NOT used), credit scale applied {scale[cp]:.3f}")
         fits[cp] = fit(a)
     # ---- weekly legs: actual 2010-26
     F = A[A.trade_date.dt.dayofweek == 4]
