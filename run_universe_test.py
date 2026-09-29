@@ -42,7 +42,7 @@ START = "2020-01-01"       # 252-session windows need a year of panel history (p
 ARMS = ["TT", "AH", "INT", "HYB-A", "HYB-B"]
 
 
-def build_masks(P: DailyPanel, raw: pd.DataFrame) -> dict[str, pd.DataFrame]:
+def build_masks(P: DailyPanel, raw: pd.DataFrame, start: str = START) -> dict[str, pd.DataFrame]:
     C, H, L = P.close, P.high, P.low
     piv = lambda v: raw.pivot(index="date", columns="ticker", values=v).sort_index().reindex(index=C.index, columns=C.columns)
     dolvol, vol = piv("dolvol"), piv("volume")
@@ -65,7 +65,7 @@ def build_masks(P: DailyPanel, raw: pd.DataFrame) -> dict[str, pd.DataFrame]:
     out = {}
     for k, v in m.items():
         v = (v & P.elig).shift(1).fillna(False).astype(bool)     # membership as of the PRIOR close
-        v[v.index < START] = False
+        v[v.index < start] = False
         out[k] = v
     out["_adr"], out["_addv"] = adr.shift(1), addv.shift(1)
     return out

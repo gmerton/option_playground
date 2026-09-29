@@ -35,8 +35,8 @@ pd.set_option("display.width", 250)
 TODAY = date.today().isoformat()
 
 
-def build():
-    raw = pd.read_parquet(pt.REPO / "data/cache/liquid_panel_2019.parquet")
+def build(path: str = "data/cache/liquid_panel_2019.parquet"):
+    raw = pd.read_parquet(pt.REPO / path)
     raw = raw[~raw.ticker.isin(["SPY", "QQQ", "IWM", "RSP"])]
     p = Panel.from_long(raw)
     O = raw.pivot(index="date", columns="ticker", values="open").sort_index()

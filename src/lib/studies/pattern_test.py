@@ -394,7 +394,8 @@ def run_daily(name: str, pattern, *, hold: int = 5, controls: int = 3, split: st
     print(f"control = {control} (strata: median {np.median((st['k'] >= 0).sum(axis=1) - 1):.0f} candidates, "
           f"{controls} paired per signal)")
     tab = _report(name, T, K, DAILY_ARMS, split, note + f"; ctrl={control}", "daily", ledger=ledger, paired=paired)
-    tab.attrs.update(p_search=paired["p_search"], null=paired["null"])
+    tab.attrs.update(p_search=paired["p_search"], null=paired["null"],
+                     arms={a: {k: v[k] for k in ("pedge", "edge_t", "eh1", "eh2")} for a, v in paired["arms"].items()})
     return tab
 
 
