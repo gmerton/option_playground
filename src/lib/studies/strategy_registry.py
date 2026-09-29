@@ -413,9 +413,13 @@ ALL_STRATEGIES: list[Strategy] = [
         avg_concurrent=2,
         freq_per_year=28,
         note="Below 50MA + VIX>=20: SPY bull put 0.25/0.15 / SPX condor 0.20c/0.30p / QQQ bull put 0.25/0.15 -- ONE position.",
-        portfolio_alloc=3_000,
+        # 2026-09-28: PARKED (Gabe). The vertical earns nothing beyond its delta-matched SPY move
+        # (stress_vehicle_h2h_2026-09-28.md) and that post-stress rebound is NOT CONFIRMED 1990-2009
+        # (stress_rebound_2026-09-28.md: -0.56pp t -0.68 vs +1.98pp t 4.88 in 2010-26). Token size only.
+        portfolio_alloc=1_000,
         caveats=[
-            "SPY and SPX certified (t 6.1 / 5.2); QQQ same trade but uncertified alone -- prefer SPY/SPX legs",
+            "PARKED 2026-09-28: return = the post-2010 stress rebound (no premium beyond beta); rebound absent 1990-2009",
+            "Token size only; keep the capped SPY vertical -- the failure mode is a 2008-style continued decline",
             "~43% of trades fall in one stress year -- episodic, not a steady earner",
         ],
     ),
