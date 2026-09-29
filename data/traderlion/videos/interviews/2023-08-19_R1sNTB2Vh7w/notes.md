@@ -1,0 +1,2 @@
+# TraderLion: "48 Years of Trading Lessons with Market Wizard Peter Brandt" (R1sNTB2Vh7w, 2023-08-19, 38 min)
+Reviewed 2026-09-29 together with _G8QyHkvQ2Q. See `../2026-09-26__G8QyHkvQ2Q/notes.md` for the scored delta. Nothing here is not covered there or in the Chat With Traders review. The one extra detail: leave a trade alone until +200 bp of account before managing it; drawdowns > 30% three times (month-end basis).
