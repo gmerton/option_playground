@@ -1,0 +1,21 @@
+/Users/gmerton/v2/options_playground/run_dip_survivorship.py:116: FutureWarning: The default fill_method='pad' in DataFrame.pct_change is deprecated and will be removed in a future version. Either fill in any non-leading NA values prior to calling pct_change or specify 'fill_method=None' to not fill NA values.
+  mar = (Cc.pct_change().abs().shift(1).rolling(20).mean())
+/Users/gmerton/v2/options_playground/.venv/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: Degrees of freedom <= 0 for slice
+  c = cov(x, y, rowvar, dtype=dtype)
+/Users/gmerton/v2/options_playground/.venv/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:2894: RuntimeWarning: divide by zero encountered in divide
+  c *= np.true_divide(1, fact)
+/Users/gmerton/v2/options_playground/.venv/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:2894: RuntimeWarning: invalid value encountered in multiply
+  c *= np.true_divide(1, fact)
+/Users/gmerton/v2/options_playground/run_dip_survivorship.py:123: FutureWarning: The default fill_method='pad' in DataFrame.pct_change is deprecated and will be removed in a future version. Either fill in any non-leading NA values prior to calling pct_change or specify 'fill_method=None' to not fill NA values.
+  ret = C.pct_change()
+/Users/gmerton/v2/options_playground/run_dip_survivorship.py:123: FutureWarning: The default fill_method='pad' in DataFrame.pct_change is deprecated and will be removed in a future version. Either fill in any non-leading NA values prior to calling pct_change or specify 'fill_method=None' to not fill NA values.
+  ret = C.pct_change()
+survivor names in both sources: 1686; dates 2010-01-04 -> 2026-02-20; k 1.877
+daily-return correlation chain vs panel, per name: median 0.952, p10 0.749; |chain/panel - 1| median 7.33%, p90 45.96%
+           source rung   fwd     n  excess      t     h1     h2   yrs  PASS
+chain-spot closes   K0 1.733 11119  -0.806 -3.474 -0.719 -0.885 14/17  True
+chain-spot closes   K3 1.738 10526  -0.801 -4.321 -0.703 -0.889 15/17  True
+     panel closes   K0 2.208 13902  -0.787 -4.223 -0.453 -1.087 14/17  True
+     panel closes   K3 1.918 13164  -0.742 -4.040 -0.468 -0.985 15/17  True
+
+READ (panel closes, P2 K0: -0.79pp, t -4.22): DEFINITION drives the flip -> NULL (fragile)
