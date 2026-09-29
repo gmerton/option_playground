@@ -89,7 +89,7 @@ def main():
     }
     rows = []
     for k, g in cells.items():
-        g = g.reset_index()
+        g = g.reset_index().sort_values("trade_date").drop_duplicates("trade_date")
         mu, t = mclust(g.bp_n, g.trade_date); ex, tx = mclust(g.excess, g.trade_date)
         be, _ = mclust(g.beta_bp, g.trade_date)
         yr = g.groupby(g.trade_date.dt.year).excess.mean()
