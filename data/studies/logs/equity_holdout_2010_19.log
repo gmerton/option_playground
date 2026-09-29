@@ -1,0 +1,155 @@
+panel (4458, 1724) 2009-01-02 -> 2026-09-23; holdout 2010-01-01 -> 2019-09-30
+12,308 earnings reactions on 242 names | good 26%
+control = xname (strata: median 20 candidates, 3 paired per signal)
+
+=== HOLDOUT earnings good+MUTED [xname] (daily) — 676 signals, 176 names, 2010-01-22 -> 2019-08-22 ===
+               n  meanR   medR     win    p90      t   ctrl   edge  p_edge  edge_t
+stop_hold  676.0  0.018  0.031  51.923  1.261  0.476 -0.018  0.037   0.037   0.715
+t1R        676.0 -0.038  0.080  53.846  1.000 -0.665 -0.132  0.094   0.094   2.535
+t2R        676.0  0.003  0.041  52.367  1.319  0.144 -0.074  0.077   0.077   1.763
+trail_bar  676.0  0.000 -0.113  43.047  1.032  0.018 -0.043  0.044   0.044   0.466
+ema20      676.0  0.008 -0.071  45.266  1.075  0.279 -0.048  0.056   0.056   0.998
+
+by half (n 275 / 401):
+           <2015-01-01  >=2015-01-01
+stop_hold        0.031         0.010
+t1R             -0.025        -0.047
+t2R              0.009        -0.001
+trail_bar       -0.011         0.008
+ema20           -0.002         0.015
+
+paired edge by half (t1R): +0.046 / +0.127 | best-arm paired edge t +2.54 | p_search (best of 5 arms, 2000 label perms) 0.0175
+paired edge by year (t1R; chronological halves miss a back-half regime):
+y       2010    2011    2012   2013    2014    2015    2016    2017    2018    2019
+size  35.000  47.000  55.000  58.00  80.000  95.000  77.000  94.000  75.000  60.000
+mean  -0.123   0.186  -0.003   0.28  -0.098   0.255   0.168  -0.026   0.102   0.146
+
+best arm: t1R | passes the bar (paired edge t >= 3, both halves' paired edge > 0, p_search < 0.003): no
+control = post (strata: median 20 candidates, 3 paired per signal)
+
+=== HOLDOUT earnings good+MUTED [post] (daily) — 624 signals, 162 names, 2010-01-22 -> 2019-08-22 ===
+               n  meanR   medR     win    p90      t   ctrl   edge  p_edge  edge_t
+stop_hold  624.0  0.024  0.030  51.763  1.287  0.788  0.034 -0.010  -0.010  -0.202
+t1R        624.0 -0.032  0.083  53.526  1.000 -0.318 -0.024 -0.008  -0.008  -0.093
+t2R        624.0  0.014  0.040  52.244  1.333  0.547  0.017 -0.003  -0.003  -0.159
+trail_bar  624.0  0.007 -0.105  43.910  1.041  0.491  0.010 -0.003  -0.003  -0.212
+ema20      624.0  0.015 -0.069  45.673  1.080  0.644 -0.008  0.023   0.023   0.788
+
+by half (n 248 / 376):
+           <2015-01-01  >=2015-01-01
+stop_hold        0.057         0.002
+t1R             -0.004        -0.050
+t2R              0.035         0.000
+trail_bar        0.011         0.005
+ema20            0.014         0.016
+
+paired edge by half (ema20): +0.018 / +0.026 | best-arm paired edge t +0.79 | p_search (best of 5 arms, 2000 label perms) 0.4118
+paired edge by year (ema20; chronological halves miss a back-half regime):
+y       2010   2011    2012    2013    2014    2015    2016    2017   2018    2019
+size  29.000  43.00  48.000  52.000  76.000  88.000  67.000  89.000  72.00  60.000
+mean  -0.169   0.02  -0.012   0.359  -0.125   0.153  -0.194  -0.068  -0.02   0.281
+
+best arm: ema20 | passes the bar (paired edge t >= 3, both halves' paired edge > 0, p_search < 0.003): no
+control = xname (strata: median 20 candidates, 3 paired per signal)
+
+=== HOLDOUT earnings good+MUTED [xname] (daily) — 676 signals, 176 names, 2010-01-22 -> 2019-08-22 ===
+               n  meanR   medR     win    p90      t   ctrl   edge  p_edge  edge_t
+stop_hold  676.0  0.018  0.031  51.923  1.261  0.476 -0.018  0.037   0.037   0.715
+t1R        676.0 -0.038  0.080  53.846  1.000 -0.665 -0.132  0.094   0.094   2.535
+t2R        676.0  0.003  0.041  52.367  1.319  0.144 -0.074  0.077   0.077   1.763
+trail_bar  676.0  0.000 -0.113  43.047  1.032  0.018 -0.043  0.044   0.044   0.466
+ema20      676.0  0.008 -0.071  45.266  1.075  0.279 -0.048  0.056   0.056   0.998
+
+by half (n 275 / 401):
+           <2015-01-01  >=2015-01-01
+stop_hold        0.031         0.010
+t1R             -0.025        -0.047
+t2R              0.009        -0.001
+trail_bar       -0.011         0.008
+ema20           -0.002         0.015
+
+paired edge by half (t1R): +0.046 / +0.127 | best-arm paired edge t +2.54 | p_search (best of 5 arms, 2000 label perms) 0.0175
+paired edge by year (t1R; chronological halves miss a back-half regime):
+y       2010    2011    2012   2013    2014    2015    2016    2017    2018    2019
+size  35.000  47.000  55.000  58.00  80.000  95.000  77.000  94.000  75.000  60.000
+mean  -0.123   0.186  -0.003   0.28  -0.098   0.255   0.168  -0.026   0.102   0.146
+
+best arm: t1R | passes the bar (paired edge t >= 3, both halves' paired edge > 0, p_search < 0.003): no
+control = post (strata: median 20 candidates, 3 paired per signal)
+
+=== HOLDOUT breakout in HYB-A [post] (daily) — 171 signals, 59 names, 2010-01-20 -> 2019-09-06 ===
+               n  meanR   medR     win    p90      t   ctrl   edge  p_edge  edge_t
+stop_hold  171.0 -1.230 -1.438   7.018 -1.041 -7.216 -0.418 -0.811  -0.811  -4.441
+t1R        171.0 -0.609 -1.143  39.766  1.000 -5.762 -0.324 -0.285  -0.285  -2.468
+t2R        171.0 -0.754 -1.231  25.731  2.000 -6.305 -0.412 -0.342  -0.342  -2.702
+trail_bar  171.0 -0.491 -0.628  28.655  0.932 -5.567 -0.122 -0.370  -0.370  -3.201
+ema20      171.0 -0.913 -1.192  17.544  0.732 -6.961 -0.341 -0.571  -0.571  -4.327
+
+by half (n 68 / 103):
+           <2015-01-01  >=2015-01-01
+stop_hold       -1.218        -1.238
+t1R             -0.878        -0.431
+t2R             -1.001        -0.591
+trail_bar       -0.760        -0.314
+ema20           -0.822        -0.972
+
+paired edge by half (t1R): -0.605 / -0.074 | best-arm paired edge t -2.47 | p_search (best of 5 arms, 2000 label perms) 0.9995
+paired edge by year (t1R; chronological halves miss a back-half regime):
+y       2010   2011    2012    2013   2014   2015    2016   2017    2018    2019
+size  32.000  7.000  11.000  13.000  5.000  8.000  16.000  9.000  37.000  33.000
+mean  -0.481 -0.143  -0.779  -1.036 -0.541  0.175  -0.213  0.405   0.054  -0.341
+
+best arm: t1R | passes the bar (paired edge t >= 3, both halves' paired edge > 0, p_search < 0.003): no
+control = xname (strata: median 4 candidates, 3 paired per signal)
+
+=== HOLDOUT breakout in HYB-A [xname] (daily) — 156 signals, 56 names, 2010-01-20 -> 2019-09-06 ===
+               n  meanR   medR     win    p90      t   ctrl   edge  p_edge  edge_t
+stop_hold  156.0 -1.211 -1.451   7.051 -1.049 -6.517 -0.704 -0.507  -0.507  -2.253
+t1R        156.0 -0.611 -1.139  39.744  1.000 -5.645 -0.454 -0.158  -0.158  -1.334
+t2R        156.0 -0.790 -1.238  25.000  2.000 -6.518 -0.498 -0.292  -0.292  -2.286
+trail_bar  156.0 -0.496 -0.633  28.846  0.945 -5.332 -0.340 -0.156  -0.156  -1.778
+ema20      156.0 -0.948 -1.203  17.308  0.701 -7.009 -0.446 -0.502  -0.502  -3.000
+
+by half (n 63 / 93):
+           <2015-01-01  >=2015-01-01
+stop_hold       -1.236        -1.194
+t1R             -0.917        -0.405
+t2R             -1.081        -0.593
+trail_bar       -0.783        -0.302
+ema20           -0.934        -0.957
+
+paired edge by half (t1R): -0.340 / -0.034 | best-arm paired edge t -1.33 | p_search (best of 5 arms, 2000 label perms) 0.9920
+paired edge by year (t1R; chronological halves miss a back-half regime):
+y       2010   2011   2012   2013   2014   2015    2016   2017    2018    2019
+size  32.000  7.000  10.00  10.00  4.000  1.000  15.000  8.000  36.000  33.000
+mean  -0.322 -0.568  -0.14  -0.14 -1.078 -0.282   0.387  0.523   0.064  -0.461
+
+best arm: t1R | passes the bar (paired edge t >= 3, both halves' paired edge > 0, p_search < 0.003): no
+control = post (strata: median 20 candidates, 3 paired per signal)
+
+=== HOLDOUT breakout in HYB-A [post] (daily) — 171 signals, 59 names, 2010-01-20 -> 2019-09-06 ===
+               n  meanR   medR     win    p90      t   ctrl   edge  p_edge  edge_t
+stop_hold  171.0 -1.230 -1.438   7.018 -1.041 -7.216 -0.418 -0.811  -0.811  -4.441
+t1R        171.0 -0.609 -1.143  39.766  1.000 -5.762 -0.324 -0.285  -0.285  -2.468
+t2R        171.0 -0.754 -1.231  25.731  2.000 -6.305 -0.412 -0.342  -0.342  -2.702
+trail_bar  171.0 -0.491 -0.628  28.655  0.932 -5.567 -0.122 -0.370  -0.370  -3.201
+ema20      171.0 -0.913 -1.192  17.544  0.732 -6.961 -0.341 -0.571  -0.571  -4.327
+
+by half (n 68 / 103):
+           <2015-01-01  >=2015-01-01
+stop_hold       -1.218        -1.238
+t1R             -0.878        -0.431
+t2R             -1.001        -0.591
+trail_bar       -0.760        -0.314
+ema20           -0.822        -0.972
+
+paired edge by half (t1R): -0.605 / -0.074 | best-arm paired edge t -2.47 | p_search (best of 5 arms, 2000 label perms) 0.9995
+paired edge by year (t1R; chronological halves miss a back-half regime):
+y       2010   2011    2012    2013   2014   2015    2016   2017    2018    2019
+size  32.000  7.000  11.000  13.000  5.000  8.000  16.000  9.000  37.000  33.000
+mean  -0.481 -0.143  -0.779  -1.036 -0.541  0.175  -0.213  0.405   0.054  -0.341
+
+best arm: t1R | passes the bar (paired edge t >= 3, both halves' paired edge > 0, p_search < 0.003): no
+
+H3 members per date: median 2; dates with >= 5 members 28/123
+H3 ADR-matched excess by year (%): {2010: 2.03, 2011: 0.5, 2013: -4.03, 2014: 6.23, 2016: -0.66, 2017: 1.33, 2018: 0.58, 2019: -0.22}
