@@ -7,17 +7,24 @@ cache) plus SPY/QQQ/IWM/RSP. This is the long-history panel every validation scr
 
 Survivorship: the universe is whoever is liquid on --asof. Re-run monthly; ~2 min.
 Usage: PYTHONPATH=src python run_build_liquid_panel.py [--asof 2026-07-31] [--addv 30e6]
+Small-cap panel (2026-09-29): ... --addv 5e6 --addv-max 50e6 --start 2009-01-01 --out data/cache/smallcap_panel_2009.parquet
 """
 import argparse, time, sys
 import pandas as pd, yfinance as yf
 from lib.minervini.scan import load_cache
 
 ap = argparse.ArgumentParser(); ap.add_argument("--asof", default=None); ap.add_argument("--addv", type=float, default=30e6); ap.add_argument("--start", default="2019-01-01")
-ap.add_argument("--out", default="data/cache/liquid_panel_2019.parquet"); a = ap.parse_args()
+ap.add_argument("--out", default="data/cache/liquid_panel_2019.parquet")
+# 2026-09-29: optional upper ADDV bound, for the separate small-cap panel (run_smallcap_tests.py). Default = no cap, so the
+# nightly liquid-panel build is unchanged. The index ETFs are only added when there is no cap.
+ap.add_argument("--addv-max", type=float, default=None); a = ap.parse_args()
 close, high, low, dolvol = load_cache("data/cache/minervini_matrix.parquet")
 asof = pd.Timestamp(a.asof) if a.asof else close.index[-1]
 addv = dolvol.loc[:asof].tail(50).mean(); px = close.loc[:asof].iloc[-1]
-tickers = sorted(set(addv[(addv >= a.addv) & (px >= 5)].index) | {"SPY", "QQQ", "IWM", "RSP"})
+sel = (addv >= a.addv) & (px >= 5)
+if a.addv_max is not None:
+    sel &= addv < a.addv_max
+tickers = sorted(set(addv[sel].index) | ({"SPY", "QQQ", "IWM", "RSP"} if a.addv_max is None else {"SPY", "IWM"}))
 print(f"universe as of {asof.date()}: {len(tickers)} names", flush=True)
 frames = []; t0 = time.time()
 for k in range(0, len(tickers), 100):
