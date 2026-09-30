@@ -1,0 +1,22 @@
+# SMALL CAPS (pre-registration in the docstring; implementation notes above main)
+
+== T1 MOMENTUM 12-1, top vs bottom decile, monthly, net ==
+   universe      stat  months  names_med  mean_pct  nw_t    h1    h2 yrs_pos  pos_share
+    S small    spread     200        359     0.443 1.349 0.776 0.135   10/17      0.588
+    S small long_only     200        359     0.214 1.072 0.119 0.303    8/17      0.471
+M mid/large    spread     200        587     0.732 1.882 0.322 1.110   13/17      0.765
+M mid/large long_only     200        587     0.661 2.725 0.235 1.054   13/17      0.765
+T1 PASS (S spread NW t >= 3.2, both halves > 0, >= 60% yrs): no
+
+== T2 PRECISION BREAKOUT on S (house trade, % per trade, 20 bp/side) ==
+ stat    n  dates  mean_pct  date_t     h1     h2  names
+  ret 2387   1334    -0.819  -2.806 -2.047 -0.431    575
+x_sel 2387   1334    -0.503  -1.989 -1.706 -0.303    575
+x_tim 2383   1331    -0.467  -1.552 -1.886 -0.083    575
+T2 PASS (selection: signal - same-date ADR-tercile control, date t >= 3.2, halves > 0): no
+
+== T3 SURVIVORSHIP CHECK: T1 on chain-spot closes incl. delisted ==
+                                            universe      stat  months  names_med  mean_pct   nw_t    h1     h2 yrs_pos  pos_share
+X chain-spot low-option-volume half (incl. delisted)    spread     181       1218    -0.171 -0.605 0.015 -0.331    7/16      0.438
+X chain-spot low-option-volume half (incl. delisted) long_only     181       1218     0.160  1.119 0.018  0.283   11/16      0.688
+T3 READ: X spread -0.171%/mo vs S +0.443%/mo -> T1 did not pass; T3 is context only
