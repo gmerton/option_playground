@@ -1,0 +1,19 @@
+# PIT breakout certification; tickers with prices 604, ever-members w/ prices 587
+member coverage with prices, year-ends 2010..2024: 70% 73% 75% 77% 78% 81% 83% 85% 88% 89% 91% 93% 95% 96% 97%
+base breakouts 2,391 (362 names), TIER 310; 2010-01-04 -> 2025-04-11
+
+## PRIMARY: TIER - NON-TIER breakouts, same date, % per trade
+dates 154 | TIER -1.08% vs NON-TIER -2.58% | diff +1.50pp t +1.90 | halves +1.09/+1.62 | yrs+ 11/14
+BAR: FAIL
+per year (dates, mean diff pp):
+date  2010  2011  2012  2013  2014  2015  2016  2018   2020   2021   2022   2023  2024  2025
+size  10.0  7.00  8.00   3.0   1.0  1.00  5.00  4.00  24.00  39.00  34.00  10.00  5.00  3.00
+mean  -2.5 -1.22  2.68   1.0  10.1  5.41  6.38  1.03   0.13   0.32   5.51   0.16  0.26 -5.75
+(d) same in R: TIER -0.311 vs NON -0.707 | diff +0.396 t +1.82 | halves +0.132/+0.473
+(c) regime: before 2023 diff +1.80 t +2.11 | 2023+ diff -0.80 t -0.43
+
+## SECONDARY: vs 3 random same-date members (same process)
+  (a) TIER                 ret: n   310 | signal -1.214 vs random -0.518 | edge -0.733 t -1.20 | halves -0.487/-0.830
+  (a) TIER                 R  : n   310 | signal -0.367 vs random -0.191 | edge -0.178 t -1.03 | halves -0.125/-0.199
+  (b) all base breakouts   ret: n  2391 | signal -1.483 vs random -0.400 | edge -0.874 t -3.71 | halves -0.980/-0.797
+  (b) all base breakouts   R  : n  2391 | signal -0.449 vs random -0.145 | edge -0.286 t -3.76 | halves -0.337/-0.250
