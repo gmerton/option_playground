@@ -1,0 +1,26 @@
+# RVOL-proxy tests (pre-registration in the md)
+
+== D1: top-N by dollar volume within day, 2010-01 -> 2019-09 holdout (12,802 breakouts) ==
+ N  R   by  dates   delta       t      h1      h2 yrs_pos
+ 1  R    -    838 -0.0172 -0.4895 -0.0756  0.0411    5/10
+ 2  R    -    838 -0.0226 -0.9670 -0.0437 -0.0015    6/10
+ 3  R    -    679 -0.0276 -1.3450 -0.0496 -0.0056    3/10
+ 5  R    -    333 -0.0147 -0.7250 -0.0447  0.0151    4/10
+ 2 Rh    -    838 -0.0343 -0.5741 -0.0637 -0.0050    5/10
+ 2  R terc    226  0.0354  1.1962 -0.0484  0.1193    5/10
+per year (N=2): 2010:+0.002 2011:+0.005 2012:-0.135 2013:-0.090 2014:-0.055 2015:+0.005 2016:+0.001 2017:-0.061 2018:+0.003 2019:+0.029
+D1 PRIMARY (N=2): delta -0.0226R t -0.97, halves -0.0437/-0.0015, yrs+ 6/10 -> FAIL
+
+== D2: UDVR top vs bottom tercile (cross-sectional pct among eligible), excess R vs same-date controls ==
+                 pop      n  months   diff      t      h1     h2
+broad pool (PRIMARY) 226668     198 0.0139 0.3852  0.0064 0.0211
+      precision tier   2303      36 0.8800 1.9208 -1.1942 1.0686
+dose-response by UDVR quintile (broad pool):
+       n  mean_excess_R
+q                      
+0  20861        -0.0147
+1  32973         0.0378
+2  43092         0.0777
+3  54351         0.0858
+4  75391         0.0623
+D2 PRIMARY: top - bottom +0.0139R t +0.39, halves +0.0064/+0.0211 -> FAIL
