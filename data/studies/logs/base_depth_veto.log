@@ -1,0 +1,28 @@
+# Base depth veto -- 53,994 house breakouts, 1428 names, 2010-01-04 -> 2026-09-21; all-breakout mean +0.24%
+depth quantiles (10/25/50/75/90): 4% / 11% / 34% / 51% / 64%
+DEEP (>33%) share 52.0% | median dist-from-peak DEEP 26% vs not -0% | median ADR DEEP 4.1 vs 3.7
+
+## PRIMARY: DEEP (>33%) - NOT-DEEP, same date, other names, % per trade (hypothesis < 0)
+dates 2598 | DEEP +0.26 vs not +0.29 | diff -0.02 t -0.13 | halves -0.57/+0.26
+per year:
+date    2010    2011    2012   2013  2014    2015    2016    2017    2018    2019    2020    2021    2022    2023    2024    2025    2026
+size  131.00  102.00  113.00  96.00  96.0  106.00  133.00  118.00  128.00  169.00  206.00  194.00  168.00  203.00  219.00  238.00  178.00
+mean   -0.46   -0.09   -2.69  -0.55   1.1   -1.47    0.09   -0.42    3.43    1.92    0.65   -1.18   -1.17    1.88   -2.05   -0.22    0.55
+R: DEEP +0.035 vs not +0.026 | diff +0.009 t +0.17
+
+## pre-declared confound checks
+(a) ADR-tercile-matched within date: dates 2231 | DEEP +0.44 vs not +0.60 | diff -0.03 t -0.15 | halves +0.04/-0.06
+(b) within dist-from-peak terciles:
+    near peak (dist -61%-1%, DEEP share 4%) dates  495 | DEEP +2.38 vs not +1.06 | diff +1.32 t +1.33 | halves +0.27/+1.44
+    mid       (dist 1%-21%, DEEP share 53%) dates 1488 | DEEP +0.23 vs not +0.30 | diff -0.07 t -0.26 | halves -0.83/+0.18
+    far below (dist 21%-96%, DEEP share 99%) dates  121 | DEEP +0.14 vs not -0.36 | diff +0.49 t +0.60 | halves +2.80/-0.37
+(c) O'Neil form, dist <= 10% (n 26,506, DEEP share 14.3%): dates 1338 | DEEP +1.01 vs not +0.74 | diff +0.27 t +0.80 | halves -0.51/+0.49
+
+## exploratory (Sidak k = 6, |t| ~ 2.9; no verdict of their own)
+  dose response (pooled means, not date-matched): <15% n 15,207 mean +0.16% med -3.19 | 15-33% n 10,709 mean +0.35% med -2.72 | >33% n 28,078 mean +0.25% med -3.30
+  15-33% vs <15%:           dates 1908 | 15-33 +0.42 vs <15 +0.06 | diff +0.35 t +1.29 | halves +0.82/+0.17
+  DEEP > 50%:               dates 2139 | >50% +0.43 vs not +0.45 | diff -0.02 t -0.06 | halves -0.81/+0.33
+  depth in ADR, top vs bottom tercile (within date): dates 2730 | top +0.17 vs bottom +0.24 | diff -0.08 t -0.39 | halves -0.12/-0.05
+  126-day lookback, >33%:   dates 2369 | DEEP +0.37 vs not +0.29 | diff +0.08 t +0.39 | halves -0.50/+0.36
+  COHR cell (depth>33% & dist>=20%, share 34.1%): dates 2366 | cell +0.37 vs rest +0.37 | diff +0.00 t +0.01 | halves -0.26/+0.14
+  held-the-level share: DEEP 13.5% vs not 12.7% | diff +0.8pp t +1.44
