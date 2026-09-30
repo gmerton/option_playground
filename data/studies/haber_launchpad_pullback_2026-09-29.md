@@ -24,3 +24,28 @@ day one because price sits below the 20 EMA). Also reported: the same names' bre
 entry at b, same exit) vs the pullback entry.
 **Prior.** H1 low–moderate (RMV tightness gate NULL; VCP NULL). H2 low–moderate (EMA-pullback entries t ≤ 1.4, retrace
 NULL), but first-touch-after-a-stage-2-break is untested. Local, ~1–1.5 h total.
+
+---
+
+## Results (run 2026-09-29, after ec69b3b; `run_haber_setups.py`, summary `.log`, harness detail `logs/haber_setups.log`)
+
+**Verdict: both NULL on the pre-registered bar. MECHANISM: in stage-2 names, the pullback entry is much better than the
+breakout-day entry — but neither beats random names.**
+
+| setup | exit arm | n | mean R | paired edge vs **xname** (PRIMARY) | t (bar 3.2) | halves | vs post (edge, t) |
+|---|---|---|---|---|---|---|---|
+| **Launchpad** | ema20 | 2,917 | +0.10 | **+0.101R** | **1.01** | +0.17 / +0.07 | +0.107, **t 2.38** (p_search 0.031) |
+| **First 50-day pullback** | stop_hold | 1,804 | −0.26 | **−0.118R** | **−1.49** | −0.12 / −0.12 | +0.020, t 0.61 |
+| stage-2 breakout-day entry, same names (reported) | stop_hold | 1,804 | −0.48 | **−0.489R** | **−6.29** | −0.49 / −0.49 | — |
+
+- **Launchpad:** right sign on both controls and both halves; the timing edge vs a later day in the same name (t 2.38)
+  is stronger than the selection edge (t 1.01). Short of the bar → NULL (a timing lead, UNDERPOWERED at best).
+- **First 50-day pullback:** loses slightly to random names and ties a later day in the same name. "Almost always a
+  buy" is not supported.
+- **The breakout day itself (secondary, not pre-registered as a test):** buying the first 52-week-high break after
+  ≥ 6 months in the same names is −0.49R vs random names (t −6.3, both halves) — the ledger's standing finding
+  ("we select well, we enter badly": the breakout entry buys too high) in a new population. Waiting for the first
+  50-day touch recovers ~0.37R of that, which is Haber's point about entry — but it only gets back to ≈ random.
+
+**What it means for the book now.** Nothing to add. The one live implication is a reinforcement: don't buy the day of
+a fresh stage-2 / 52-week-high break; if a name is wanted, the first 50-day pullback is the better of the two entries.

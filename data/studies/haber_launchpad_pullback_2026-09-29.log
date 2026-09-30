@@ -1,0 +1,9 @@
+# Haber setups (pre-registration in the md). launchpad signals 2,931; first-50d-pullback signals 1,808
+                                    setup control       arm    n  meanR  paired_edge      t     h1     h2  p_search
+                          HABER launchpad   xname     ema20 2917  0.100        0.101  1.008  0.171  0.066     0.088
+                 HABER first 50d pullback   xname stop_hold 1804 -0.256       -0.118 -1.489 -0.115 -0.119     0.990
+                          HABER launchpad    post     ema20 2907  0.102        0.107  2.384  0.123  0.100     0.031
+                 HABER first 50d pullback    post stop_hold 1754 -0.222        0.020  0.606  0.349 -0.117     0.440
+HABER stage-2 breakout entry (same names)   xname stop_hold 1804 -0.478       -0.489 -6.289 -0.490 -0.488     1.000
+PASS HABER launchpad (vs xname, t >= 3.2, halves > 0): no
+PASS HABER first 50d pullback (vs xname, t >= 3.2, halves > 0): no
