@@ -68,6 +68,28 @@ of ΔVIX, intraday timing of the flows. One definition per test, one run.
 
 ---
 
-## Results
+## Results (run 2026-09-30, after the pre-registration above; `run_vanna_charm_flow.py`, log `logs/vanna_charm_flow.log`, daily panel `logs/vanna_charm_flow_daily.csv`)
 
-*(pending)*
+**Verdicts: Test 1 (charm) NULL · Test 2 (vanna) NULL.** 3,981 SPY sessions 2010-01-05 → 2026-02-23, 7.49M chain rows.
+
+| test | full-sample b | NW t | bps of SPY per 1 SD of flow | halves (t) | years same sign |
+|---|---|---|---|---|---|
+| **T1 charm** (CF → r_t, opex-cycle FE) | +34.1 | **0.89** | +1.7 | −1.64 / +1.30 (flip) | 9 / 17 |
+| **T2 vanna** (VEX·ΔVIX → r_t, spot–vol controls) | −63.1 | **−1.18** | −6.9 | **+3.00 / −2.26 (flip)** | 10 / 17 |
+
+Neither is near the 3.2 bar and both flip sign between halves, so neither dealer convention is favoured.
+T2's per-year t is dominated by 2024 (−7.7), a single-year spike (the 2024-08-05 VIX event sits in it), and 2018
+(−3.4); 2010–17 goes the other way. That is instability, not a mechanism.
+
+**Sanity:** under the naive convention CF is negative every day (dealers short calls / long puts, so decay makes
+them sell), mean −0.076 of 20-day ADV; VEX correlates −0.70 with log VIX, which is why the spot–vol interactions
+with log VIX were in the control.
+
+**Exploratory (no verdict, charged at 16+ cells):** T1 without the opex FE t 1.48; T1 on open→close t 2.14; charm from
+DTE ≤ 7 only t 0.76; 2022+ (daily expiries) T1 t 1.09, T2 t −2.15. The opex-cycle calendar profile shows expiry day
+itself at **−21.6 bps, t −3.13** and 3 sessions before at **+22.8 bps, t 3.21**, the other 14 cells |t| < 2. With 16
+cells the Šidák bar is ~3.4, the two extremes are adjacent-but-opposite, and the charm flow does not explain them
+(T1 with the FE is null), so this is a calendar lead at most. It is **not** evidence for the charm story.
+
+**YIELD: METHOD.** BS vanna/charm from the v3 chain (mid IV, chain spot, finite-difference charm) is now reusable
+in `run_vanna_charm_flow.py`; the daily flow panel is cached.
