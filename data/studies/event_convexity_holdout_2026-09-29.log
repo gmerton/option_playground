@@ -1,0 +1,50 @@
+12,388 purchases | event 2,851 / control 9,537 | event dates 83, control dates 270
+bucket         arm  event_mean  control_mean  diff_pp  welch_t     h1     h2  ev_dates  ctl_dates  p5x_ev  p5x_ctl
+ 0.25d     sell_5d      -10.27         -5.99    -1.68    -0.24   1.40  -4.89        83        270    1.35     1.28
+ 0.25d    sell_10d      -18.08         -3.48    -9.18    -0.93 -14.49  -3.54        83        270    3.20     2.97
+ 0.25d hold_expiry       -6.30         -8.13     0.82     0.07  -1.12   2.75        83        270    7.54     6.46
+ 0.12d     sell_5d      -23.12        -12.66    -6.77    -0.96  -3.47 -10.23        83        270    1.59     1.55
+ 0.12d    sell_10d      -27.91         -9.94   -11.29    -1.03 -15.54  -6.81        83        270    2.77     3.59
+ 0.12d hold_expiry      -16.68        -12.21     2.63     0.19  -0.01   5.22        83        270    5.46     5.88
+
+PRIMARY 0.25d sell_5d: -1.68pp, Welch t -0.24, halves +1.40/-4.89 -> FAIL
+  fomc: 78 dates, 1298 purchases, sell_5d mean -12.7% median -46.0%
+  election: 5 dates, 107 purchases, sell_5d mean +19.1% median -64.5%
+    election eve 2010-11-01: n 12 sell_5d mean +109.1% median +46.9%
+    election eve 2012-11-05: n 13 sell_5d mean -79.2% median -90.0%
+    election eve 2014-11-03: n 29 sell_5d mean -9.3% median -43.4%
+    election eve 2016-11-07: n 19 sell_5d mean +236.8% median -15.4%
+    election eve 2018-11-05: n 34 sell_5d mean -72.4% median -89.7%
+Traceback (most recent call last):
+  File "/Users/gmerton/v2/options_playground/run_event_convexity_holdout_score.py", line 92, in <module>
+    main()
+    ~~~~^^
+  File "/Users/gmerton/v2/options_playground/run_event_convexity_holdout_score.py", line 83, in main
+    O = pd.read_parquet("data/cache/event_convexity/trades.parquet"); O["date"] = pd.to_datetime(O.date)
+  File "/Users/gmerton/v2/options_playground/.venv/lib/python3.13/site-packages/pandas/io/parquet.py", line 669, in read_parquet
+    return impl.read(
+           ~~~~~~~~~^
+        path,
+        ^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/Users/gmerton/v2/options_playground/.venv/lib/python3.13/site-packages/pandas/io/parquet.py", line 258, in read
+    path_or_handle, handles, filesystem = _get_path_or_handle(
+                                          ~~~~~~~~~~~~~~~~~~~^
+        path,
+        ^^^^^
+    ...<2 lines>...
+        mode="rb",
+        ^^^^^^^^^^
+    )
+    ^
+  File "/Users/gmerton/v2/options_playground/.venv/lib/python3.13/site-packages/pandas/io/parquet.py", line 141, in _get_path_or_handle
+    handles = get_handle(
+        path_or_handle, mode, is_text=False, storage_options=storage_options
+    )
+  File "/Users/gmerton/v2/options_playground/.venv/lib/python3.13/site-packages/pandas/io/common.py", line 882, in get_handle
+    handle = open(handle, ioargs.mode)
+FileNotFoundError: [Errno 2] No such file or directory: 'data/cache/event_convexity/trades.parquet'

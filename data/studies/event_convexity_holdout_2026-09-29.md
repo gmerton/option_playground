@@ -24,3 +24,31 @@ anecdote); the pooled 2010–2026 Welch t with the original trades.
 is FOMC-heavy; a pass says "scheduled macro events", not "elections".
 **Cost.** Athena: entry chunks (~150 name-dates each) + path pulls, cached under `data/cache/event_convexity_2010/`.
 Approved by Gabe 2026-09-29 ("go").
+
+---
+
+## Results (run 2026-09-29, after the pre-registration above was committed in 5442ca0; `run_event_convexity_holdout_score.py`, `.log`, `.csv`)
+
+**Verdict: FAIL → NULL. On 83 unseen event dates, calls bought the session before FOMC decisions and elections do no
+better than the same calls bought on ordinary Wednesdays. The 2019–26 lead (Welch t 1.96) does not replicate.**
+
+12,388 purchases (2,851 event / 9,537 control; 83 event dates, 270 control dates).
+
+| bucket | exit | event mean | control mean | diff | Welch t | halves (2010–14 / 2015–19) |
+|---|---|---|---|---|---|---|
+| **0.25Δ** | **sell after 5 sessions (PRIMARY)** | −10.3% | −6.0% | **−1.7pp** | **−0.24** | +1.4 / −4.9 |
+| 0.25Δ | sell after 10 | −18.1% | −3.5% | −9.2pp | −0.93 | |
+| 0.25Δ | hold to expiry | −6.3% | −8.1% | +0.8pp | 0.07 | |
+| 0.12Δ | sell after 5 | −23.1% | −12.7% | −6.8pp | −0.96 | |
+
+- P(≥ 5x) is the same on event and control dates (1.35% vs 1.28% at 0.25Δ, 5-day exit): no fatter right tail.
+- **FOMC** (78 dates): 5-day mean −12.7%, median −46%.
+- **Elections** (5): mean +19.1% but median −64.5%, and it is two events: 2010 (+109%) and 2016 (+237% mean, carried by
+  a few names); 2012 −79%, 2014 −9%, 2018 −72%. With 2020/2022/2024 (all risk-on) that is 5 of 8 elections positive
+  in mean, 8 events — still anecdote.
+- Pooled 2010–26 Welch t: **not computed** — the original trade cache (`data/cache/event_convexity/`) no longer
+  exists; rebuilding it needs a second Athena pull and cannot change the holdout verdict.
+
+**What it means for the book now.** Retire "buy convexity into scheduled events" (MARGINAL → NULL). For the
+2026-11-03 midterms: the evidence for pre-election OTM calls is 8 events with a median loss in the unseen five; if
+Gabe plays it, it is a thesis bet sized as a lottery ticket, not a tested edge.
