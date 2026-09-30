@@ -1,0 +1,11 @@
+# Sleeping Giants on a point-in-time S&P 500 (pre-registration in the docstring)
+ever-members 2013+ 772; with yfinance prices 604; member coverage with prices ~89.8%
+SG episodes 999 / 405 names; arm-B breakouts 661; priced LEAPs 5248 of 6640 requests (split exclusions 62)
+ARM B (PRIMARY) SG - same-date random S&P LEAP: n 514 / 351 dates | SG ROC mean +18.4% median -40.5% | ctrl mean +15.6% | EXCESS mean +2.9pp median -6.3pp win 46% t +0.29 halves +16.6/-5.3 yrs+ 9/12 top-5 share 3.06 | stock ex +0.3pp
+  per year: 2014:+10 2015:+43 2016:+4 2017:+25 2018:+16 2019:+10 2020:-39 2021:-14 2022:+5 2023:+8 2024:-14 2025:+32
+  PRIMARY BAR: NOT MET
+ARM A SG - control: n 778 / 293 dates | SG ROC mean +12.2% median -52.9% | ctrl mean +13.8% | EXCESS mean -1.6pp median -13.6pp win 41% t +0.13 halves -0.3/-2.5 yrs+ 6/12 top-5 share nan | stock ex -1.0pp
+ARM B, cheap IV (pct <= 0.25) [secondary]: n 313 / 238 dates | SG ROC mean +21.4% median -32.0% | ctrl mean +15.8% | EXCESS mean +5.5pp median -6.0pp win 47% t +0.82 halves +11.2/+2.4 yrs+ 7/12 top-5 share 2.10 | stock ex +0.8pp
+ARM B, not cheap IV: n 197 / 164 dates | SG ROC mean +15.2% median -53.5% | ctrl mean +17.1% | EXCESS mean -1.9pp median -9.1pp win 44% t -0.27 halves +24.4/-19.1 yrs+ 7/12 top-5 share nan | stock ex -0.6pp
+exploratory ARM+50/TRAIL-30: SG +17.7% vs ctrl +14.4% (diff +3.4pp)
+IV pct known for 99% of arm-B SG entries
