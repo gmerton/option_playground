@@ -1,0 +1,61 @@
+# RS-loss exit vs 20-EMA trail (pre-registration in the docstring)
+
+## PRIMARY pool: precision-tier house breakouts: 1,965 trades, 549 names, 836 dates (2019-10-23 -> 2026-09-28)
+entry tier distribution: tier0; 1.0      14; 2.0     127; 3.0    1821; NaN       3
+arm - A, paired, t clustered by entry date; % per trade; R clipped +-20
+arm   pct     R  R_cap20   hold  d_pct  t_pct    h1     h2   d_R   t_R  share_diff  d_pct_on_diff  t_on_diff
+  A 2.734 0.643    0.408 13.823  0.000    NaN 0.000  0.000 0.000   NaN       0.000            NaN        NaN
+  B 2.756 0.648    0.413 13.762  0.023  2.495 0.059 -0.000 0.005 2.381       1.069          2.126      2.354
+  C 3.983 0.937    0.601 22.183  1.249  3.681 1.253  1.246 0.275 3.411      42.952          2.908      4.387
+
+B != A subset n 21: B -0.746%  RAND -1.666%  A -2.872%  | B - RAND +0.920pp t +1.30  | RAND - A +1.206pp t +1.77  | hold B 9.2 vs A 15.0 sessions
+
+per year (% per trade):
+       B-A   C-A    n  B!=A %
+date                         
+2019  0.59 -1.03   16   12.50
+2020  0.08  2.44  307    2.61
+2021  0.03  0.27  281    0.71
+2022  0.00  0.93  154    0.00
+2023  0.01  0.75  138    0.72
+2024  0.00  1.40  176    0.00
+2025 -0.04  3.38  314    0.96
+2026  0.02  0.16  579    0.86
+
+by SPY 63d return tercile at entry (B - A, %):
+              n    B_A      t  diff_share
+spy_terc                                 
+low       656.0  0.037  2.191       0.915
+mid       657.0  0.012  0.929       0.913
+high      652.0  0.019  1.709       1.380
+
+## second pool: generic house breakouts (ADR >= 3): 7,666 trades, 1065 names, 1384 dates (2019-10-07 -> 2026-09-28)
+entry tier distribution: tier0; 0.0      11; 1.0     391; 2.0    1319; 3.0    5940; NaN       5
+arm - A, paired, t clustered by entry date; % per trade; R clipped +-20
+arm   pct     R  R_cap20   hold  d_pct  t_pct    h1    h2   d_R   t_R  share_diff  d_pct_on_diff  t_on_diff
+  A 0.580 0.119    0.047 13.160  0.000    NaN 0.000 0.000 0.000   NaN       0.000            NaN        NaN
+  B 0.632 0.132    0.060 12.818  0.053  0.464 0.056 0.051 0.013 0.187       4.031          1.305      2.699
+  C 1.713 0.386    0.255 20.160  1.133  4.533 1.250 1.064 0.250 4.524      42.825          2.646      5.642
+
+B != A subset n 309: B +0.316%  RAND +0.026%  A -0.989%  | B - RAND +0.290pp t +1.36  | RAND - A +1.015pp t +2.50  | hold B 7.2 vs A 15.7 sessions
+
+per year (% per trade):
+       B-A   C-A     n  B!=A %
+date                          
+2019 -0.08 -0.65    84    8.33
+2020  0.13  3.44  1138    7.73
+2021 -0.01 -0.06   973    3.19
+2022  0.04 -0.31   677    2.51
+2023 -0.01 -0.26   768    5.21
+2024  0.07  1.70   775    3.10
+2025  0.08  2.20  1316    3.95
+2026  0.05  0.56  1935    2.58
+
+by SPY 63d return tercile at entry (B - A, %):
+               n    B_A      t  diff_share
+spy_terc                                  
+low       2556.0  0.074  0.420       3.756
+mid       2558.0  0.030 -0.747       4.066
+high      2552.0  0.054  1.964       4.271
+
+PRIMARY B - A (precision, %): +0.023pp t +2.49 halves +0.059/-0.000 | B!=A 1.1% of trades, +2.126pp on that subset (t +2.35)

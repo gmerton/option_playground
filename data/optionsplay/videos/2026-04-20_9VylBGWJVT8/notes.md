@@ -82,6 +82,8 @@ era-inconsistent (`industry_rotation_detection_study.md` §3a).
 
 ### ⭐ RS-loss exit: sell when the name stops leading, vs the 20-EMA trail (pre-registerable)
 
+> **RAN 2026-09-30 → NULL** (`data/studies/rs_loss_exit_2026-09-30.md`): B − A +0.02pp t 2.49, the exits differ on 1.1% of trades; the RS-only arm's lead is the no-trail exposure gap. The selection follow-on below is therefore not queued.
+
 **Why this one.** It is the only claim in either OptionsPlay equity video that the ledger has not touched. Our exit
 research is all price-level (the profit-lock study, the Qullamaggie partial INVERTED, spike-vs-grind NULL). This asks
 whether *relative* weakness exits earlier than *absolute* weakness on the trades where it matters. The prior is low to

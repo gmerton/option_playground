@@ -1,0 +1,12 @@
+
+precision: n 1965  mean %: A 2.73 C 3.98 HOLD60 4.05 SMA50 3.57 EMA50 3.63 HOLDmatch 2.77
+  C - HOLD60    -0.066pp t -0.69 halves -0.03/-0.09
+  C - SMA50     +0.408pp t +3.00 halves +0.24/+0.52
+  C - EMA50     +0.353pp t +3.09 halves +0.36/+0.35
+  C - HOLDmatch +1.212pp t +2.88 halves -0.14/+2.06
+
+generic: n 7666  mean %: A 0.58 C 1.71 HOLD60 1.85 SMA50 1.40 EMA50 1.37 HOLDmatch 1.45
+  C - HOLD60    -0.138pp t -2.08 halves -0.17/-0.12
+  C - SMA50     +0.310pp t +1.84 halves +0.04/+0.47
+  C - EMA50     +0.342pp t +1.62 halves +0.10/+0.49
+  C - HOLDmatch +0.258pp t +1.12 halves -0.70/+0.83
