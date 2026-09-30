@@ -19,3 +19,20 @@ a big move, and short-term reversal/momentum would otherwise masquerade as a vol
 halves (2010–2017 / 2018–2026) > 0, positive in a majority of years. Reported: HIGH − LOW; +5/+60; HIGH split by
 formation-week return sign (up-week vs down-week high volume); absolute net of 10 bp/side.
 Local, background run.
+
+---
+
+## Results (run 2026-09-29; `run_high_volume_premium.py`, `.log`)
+
+**Verdict: NULL. Unusually high trading volume carries no information about the next month once the week's return and
+volatility are held fixed.** 852 weekly formations, 531k name-weeks.
+
+| signal | +20 excess vs matched | t (bar 3) | halves | yrs + | +60 excess (t) |
+|---|---|---|---|---|---|
+| **HIGH abnormal volume (PRIMARY)** | **−0.000%** | **−0.01** | −0.10 / +0.09 | 8/17 | +0.10 (0.67) |
+| LOW abnormal volume | +0.11% | 1.37 | +0.20 / +0.03 | 11/17 | +0.24 (1.11) |
+| HIGH on an up-week ("smart money buying") | −0.005% | −0.06 | | 8/17 | +0.07 (0.34) |
+| HIGH on a down-week | −0.07% | −0.78 | | 8/17 | −0.02 (−0.11) |
+
+HIGH − LOW +20: −0.11% (t −1.00). The GKM premium does not show up in liquid US names 2010–26 (the published effect
+was 1963–1996, mostly smaller stocks). "Up on high volume" adds nothing beyond the up-move itself.
