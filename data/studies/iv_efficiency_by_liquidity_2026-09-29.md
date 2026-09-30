@@ -78,3 +78,12 @@ points less than IV, relative to the names whose IV looks cheapest. Illiquid IV 
 **What it means for the book now.** Nothing tradeable yet. If the effect survives check 3, the shape is "sell
 illiquid-name vol when its IV is rich vs the realised-vol forecast" (−29 vol-pt gradient), and the follow-up is whether
 that exceeds the spread (straddle bid-ask in these names is often 20–40% of premium).
+
+## Addendum pre-registration: horizon / earnings check (written 2026-09-29 BEFORE the check ran; do not edit after)
+Same panel, forecast, deciles-within-month (re-ranked on the subset) and PRIMARY statistic, restricted to ticker-months
+where (a) the IV's expiry is 21–40 DTE (`options_iv_daily.skew_dte`, the same nearest-30-DTE expiry `call50_iv` uses),
+and (b) NO earnings date (union of `earnings_yf.parquet` sessions and MySQL `earnings_report`) falls in
+(month-end, month-end + max(DTE, 31) calendar days], and (c) the ticker has ≥ 1 earnings date on file within ±400 days
+(so "no earnings" is not missing data). Earnings dates are scheduled in advance, so (b) uses no outcome information.
+**Read:** β(D10) − β(D1) keeps |t| ≥ 3, both halves > 0 AND ≥ half its full-sample size (≥ +0.30) → the effect SURVIVES
+the horizon/event explanation. Otherwise → horizon/earnings mismatch explains it (downgrade to NULL as a mispricing).
