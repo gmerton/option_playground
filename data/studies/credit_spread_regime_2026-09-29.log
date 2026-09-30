@@ -1,0 +1,17 @@
+# Credit spread regime (pre-registration in the md). 1990-01-02 -> 2026-08-31, 9,233 sessions
+
+== PRIMARY: dCS = 20-session change in BAA10Y (pp) ==
+  dCS | P1 returns: coef -0.0002 t -0.01 (n 9,230); halves +0.0158 (t +1.07) / -0.0048 (t -0.22) -> FAIL
+  dCS | P2 vol: coef +0.1642 t +3.03 (n 9,230); halves +0.2035 (t +2.34) / +0.1619 (t +2.43) -> FAIL
+
+== reported ==
+  BAA10Y level pct | P1 returns: coef -0.0073 t -1.46 (n 9,230); halves -0.0041 (t -0.60) / -0.0100 (t -1.34)
+  BAA10Y level pct | P2 vol: coef +0.0870 t +2.28 (n 9,230); halves +0.0517 (t +1.14) / +0.1450 (t +2.35)
+  HYG - IEF 20d rel (sign flipped: weakness = +) | P1 returns: coef +0.0136 t +0.12 (n 4,855); halves -0.7562 (t -3.86) / +0.0334 (t +0.28)
+  HYG - IEF 20d rel (sign flipped: weakness = +) | P2 vol: coef +1.0381 t +2.30 (n 4,855); halves +3.8565 (t +2.57) / +0.9481 (t +2.08)
+  flag dCS >= +0.30pp: 4.2% of sessions; P(>=10% dd in 63d) 26.8% vs 13.2%; fwd21 +1.27% vs +0.68%
+  2010+ P2 vol + GEX: dCS coef +0.1422 t +1.53 (n 4,187); GEX-neg coef +0.0566 t +2.00
+  2010+ P1 returns + GEX: dCS coef +0.0051 t +0.32 (n 4,187); GEX-neg coef -0.0056 t -1.74
+
+TODAY (2026-08-31): BAA10Y 1.59, dCS20 -0.02pp, level pct 17%, VIX 14.9
+VERDICT: P1 FAIL, P2 FAIL

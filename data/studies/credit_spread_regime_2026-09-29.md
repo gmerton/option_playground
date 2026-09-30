@@ -27,3 +27,31 @@ regime?); today's reading.
 **Read.** A pass in P2 alone = credit is a vol input (sizing / premium-selling gate), not a direction call. A pass in P1 =
 a directional regime input. Neither = credit adds nothing to VIX + tape for our purposes.
 Local (FRED + yfinance), minutes.
+
+---
+
+## Results (run 2026-09-29, after f9f3b17; `run_credit_spread_regime.py`, `.log`)
+
+**Verdict: P1 NULL · P2 UNDERPOWERED (near miss). Credit widening says nothing about the next month's direction beyond
+VIX and the tape, and only a little about vol — most of which our GEX regime already carries.**
+
+9,230 daily observations, 1990-01 → 2026-08, NW 21 lags.
+
+| test | ΔCS coefficient | t (bar 3.2) | halves (1990–2007 / 2008–2026) |
+|---|---|---|---|
+| **P1 fwd 21d return** | −0.0002 | **−0.01** | +0.016 (t 1.07) / −0.005 (t −0.22) |
+| **P2 fwd 21d log RV** | +0.164 per pp | **3.03** | +0.20 (t 2.34) / +0.16 (t 2.43) |
+
+- P2: a +0.30pp widening over 20 sessions ≈ +5% higher next-month realised vol beyond VIX and trailing RV. Same sign
+  both halves, t 3.03 < 3.2 → UNDERPOWERED. Since 2010 with the SPY GEX sign added: ΔCS t 1.53, GEX t 2.00 — credit adds
+  little beyond the regime input we already use.
+- Flag (ΔCS ≥ +0.30pp, 4.2% of sessions): P(≥ 10% drawdown in 63 sessions) 26.8% vs 13.2%, but forward 21d return
+  +1.27% vs +0.68% — widening marks a two-tailed, high-vol state, not a sell signal.
+- Level (percentile) and HYG − IEF: P2-type vol links t 2.3, no return link. (HYG's "first half" is only 2007-04 →
+  2007-12 and is not interpretable.)
+- **Today:** BAA10Y **1.46** (2026-09-28), 20-session change **−0.08pp**, the **3rd percentile of the last year and 2.6%
+  since 1986** — credit is about as tight as it gets and not widening.
+
+**What it means for the book now.** No new regime input. Credit is calm despite the 5.2% 10-year; the vol-sizing lead
+is UNDERPOWERED and mostly redundant with GEX. If it's ever added, it belongs as a vol/sizing flag (widening ≥ 0.30pp),
+never a direction call.
