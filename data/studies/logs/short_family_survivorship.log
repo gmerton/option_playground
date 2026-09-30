@@ -1,0 +1,13 @@
+# Audit #9 short family on chain_spot (pre-registration in the docstring); k 1.877; offering events kept 12,389
+                            label  h    n  names   fwd   ctl  excess     t    h1    h2 yrs_neg  short_pnl  t_short verdict
+     A offering ALL +20 (PRIMARY) 20 2051    606  0.89  0.95   -0.18 -0.91  0.15 -0.49    7/16      -1.17    -2.49    fail
+              A offering SURV +20 20 1660    401  1.46  1.17    0.21  1.04  0.43 -0.01    6/16      -1.74    -3.86    fail
+           A offering NONSURV +20 20  391    205 -1.51 -0.01   -2.00 -3.26 -1.33 -2.65   12/16       1.23     1.92    PASS
+               A offering ALL +60 60 2052    607  2.57  3.27   -0.62 -1.59 -0.54 -0.69   11/16      -3.01    -3.49    fail
+A offering PRIMARY-ISSUER ALL +20 20 1746    485  0.98  0.99   -0.12 -0.55  0.21 -0.43    9/16      -1.26    -2.79    fail
+      B CRASH-H ALL +20 (PRIMARY) 20 9229   1525  0.70  0.98   -0.28 -0.71 -0.25 -0.31    7/16      -0.98    -1.32    fail
+               B CRASH-H SURV +20 20 3884    604  1.99  1.65   -0.08 -0.16 -0.36  0.20    9/16      -2.27    -1.47    fail
+            B CRASH-H NONSURV +20 20 5345    921 -0.23  0.49   -0.53 -1.27 -0.25 -0.81    9/16      -0.05    -0.91    fail
+ B CRASH-H ALL +20, 10%/yr borrow 20 9229   1525  0.70  0.98   -0.28 -0.71 -0.25 -0.31    7/16      -1.70    -2.40    fail
+A offering ALL +20 (PRIMARY): fail
+B CRASH-H ALL +20 (PRIMARY): fail
