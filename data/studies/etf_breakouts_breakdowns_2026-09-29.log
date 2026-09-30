@@ -1,0 +1,8 @@
+# ETF breakout (long) / breakdown (short), arm ema20 (pre-registration in the md)
+          setup control    n  etfs  meanR  paired_edge      t     h1     h2  p_search
+  LONG breakout   xname 1332    31  0.003        0.054  0.466  0.049  0.058     0.149
+  LONG breakout    post 1332    31  0.003        0.058  1.567 -0.032  0.136     0.187
+SHORT breakdown   xname  807    31 -0.473       -0.156 -2.638 -0.109 -0.188     0.800
+SHORT breakdown    post  807    31 -0.473       -0.082 -1.179 -0.028 -0.120     0.569
+PASS LONG breakout: no
+PASS SHORT breakdown: no

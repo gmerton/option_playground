@@ -24,3 +24,24 @@ range; SMA10 < SMA20 < SMA50. Stop = max(day high, close × 1.02), judged on the
 **Prior.** Long low–moderate (house breakout ~0 on stocks; the group-move study found the ETF/SPY ratio a martingale
 after a group-strength signal). Short low (our short record), but the ETF vehicle removes the delisting/squeeze
 asymmetry that hurt single names. Local, ~1–1.5 h.
+
+---
+
+## Results (run 2026-09-29, after b15f8d6; `run_etf_breakouts_breakdowns.py`, summary `.log`, harness detail `logs/etf_bb.log`)
+
+**Verdict: both NULL. The ETF vehicle doesn't rescue the breakdown short — it still loses outright and loses more than
+shorting random other ETFs the same day. The house breakout on ETFs is ≈ 0 ([BB-3] answered: no).**
+
+| side | n (31 ETFs) | mean R (abs) | edge vs **xname** (PRIMARY) | t (bar 3.2) | halves | vs post (edge, t) |
+|---|---|---|---|---|---|---|
+| **LONG breakout** | 1,332 | +0.003 | +0.054R | **0.47** | +0.05 / +0.06 | +0.058, t 1.57 |
+| **SHORT breakdown** | 807 | **−0.473** | **−0.156R** | **−2.64** | −0.11 / −0.19 | −0.082, t −1.18 |
+
+- The short loses about half a unit of risk per trade and underperforms random ETF shorts on the same dates in both
+  halves (t −2.64): fresh 20-day lows in downtrending group ETFs bounce, like single names.
+- The long earns nothing absolute and doesn't beat other ETFs — consistent with the group-move study (ETF/SPY ratio a
+  martingale after a strength signal).
+
+**What it means for the book now.** Breakdown shorts fail on stocks, on stocks incl. dead names, and on ETFs: close the
+breakdown-short family (0 for 10). Mechanically timed shorts on fresh lows fight a short-term reversal that shows up in
+every universe we have. [BB-3] closed: don't add ETF breakouts to the desk.
