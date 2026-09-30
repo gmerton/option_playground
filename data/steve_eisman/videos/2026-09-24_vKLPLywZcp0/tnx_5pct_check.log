@@ -1,0 +1,16 @@
+1962-01-02 -> 2026-09-25, 16,171 sessions; last 10y 5.18%, share of sessions > 5%: 53.5%
+
+C1 (non-overlapping 63-session blocks)
+  ALL        >5%: n 137 fwd +1.77% P(>=10% dd) 12.4% | <=5%: n 119 fwd +2.56% P 12.6% | diff fwd -0.80pp t -0.83; diff P -0.2pp t -0.05
+  1962-1993  >5%: n 106 fwd +1.79% P(>=10% dd) 10.4% | <=5%: n  21 fwd +1.99% P 4.8% | diff fwd -0.20pp t -0.12; diff P +5.6pp t +1.00
+  1994-2026  >5%: n  31 fwd +1.68% P(>=10% dd) 19.4% | <=5%: n  98 fwd +2.69% P 14.3% | diff fwd -1.01pp t -0.64; diff P +5.1pp t +0.63
+
+C2 crossings: first close > 5% after >= 60 sessions at or below
+  1966-02-28  10y 5.02%  fwd63 -4.3%  maxDD63 -8.3%
+  1966-07-11  10y 5.03%  fwd63 -16.3%  maxDD63 -16.3%
+  1967-06-14  10y 5.02%  fwd63 +3.9%  maxDD63 -1.9%
+  1999-02-12  10y 5.05%  fwd63 +8.8%  maxDD63 -0.5%
+  2001-11-26  10y 5.00%  fwd63 -4.1%  maxDD63 -6.7%
+  2006-04-13  10y 5.04%  fwd63 -4.1%  maxDD63 -5.1%
+  2007-06-07  10y 5.10%  fwd63 -0.8%  maxDD63 -5.6%
+  2026-09-16  10y 5.01%  fwd63 +nan%  maxDD63 +nan%

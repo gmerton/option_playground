@@ -30,3 +30,23 @@ decline in ^GSPC closes. Signal known at the close; everything forward starts th
   list each with the forward 63-session return and max drawdown. Too few events for a t; reported as a table.
 - **Known confound, stated now:** > 5% was the norm 1966–2002 and rare since 2008, so C1 is largely an era split. The
   halves check is the partial guard. Local, minutes.
+
+## Results for claim 2 (run 2026-09-29 after the pre-registration above; `run_tnx_5pct_check.py`, `tnx_5pct_check.log`)
+**C1 (the literal state) — NULL.** Over 256 non-overlapping 63-session blocks since 1962, 10y > 5% vs ≤ 5%: forward
+return −0.80pp (t −0.83), P(≥ 10% drawdown within 63 sessions) 12.4% vs 12.6% (t −0.05). Halves agree in sign on the
+drawdown gap (+5.6pp, +5.1pp) but neither is near significance (t 1.00 / 0.63). A yield above 5% is not a
+correction signal by itself.
+**C2 (the crossing, descriptive, n 7 before today's).** First close above 5% after ≥ 60 sessions below: forward 63
+sessions −4.3, −16.3, +3.9, +8.8, −4.1, −4.1, −0.8% (5 of 7 negative, median −4.1%); max drawdown reached −10% once
+(1966-07). The current episode's crossing is 2026-09-16 (10y 5.01%; 5.18% on 9/25). Leans his way; n 7 is anecdote.
+
+## Verdict: 2.5/5 — credible credit analyst, market-timing claim not supported
+- ✅ Honest framing: he calls both of his "two variables" unpredictable, which agrees with our oil map (no lag/continuation
+  edge) and the 9/28 rates test (no rate rule for breakout selection).
+- ❌ "10-year above 5% → correction imminent": NULL as a state (1962→, t −0.05 on correction odds). The crossing
+  anecdotes lean negative (5/7) but mostly shallow; not a basis for position changes.
+- ➖ The substance of the episode (off-balance-sheet AI financing, Oracle/Blue Owl, SoftBank junk-for-equity) is credit
+  thesis, not testable with repo data. Logged as context; the repo has no 10-K / credit-spread series.
+- For the book now: no change. Our regime inputs (SPY trend × breadth, GEX sign) already carry the tape state; a
+  yield-level gate adds nothing measurable. If Gabe wants a rates input, the one untested angle is a **credit** spread
+  (HY OAS widening), which is where Eisman's actual argument points — not queued.
