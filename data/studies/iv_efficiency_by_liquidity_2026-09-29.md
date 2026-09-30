@@ -87,3 +87,24 @@ and (b) NO earnings date (union of `earnings_yf.parquet` sessions and MySQL `ear
 (so "no earnings" is not missing data). Earnings dates are scheduled in advance, so (b) uses no outcome information.
 **Read:** β(D10) − β(D1) keeps |t| ≥ 3, both halves > 0 AND ≥ half its full-sample size (≥ +0.30) → the effect SURVIVES
 the horizon/event explanation. Otherwise → horizon/earnings mismatch explains it (downgrade to NULL as a mispricing).
+
+## Addendum results (run after 3896c68; `run_iv_efficiency_horizon_check.py`, `iv_efficiency_horizon_check_2026-09-29.log`)
+
+**Read per the addendum: SURVIVES** — β(D10) − β(D1) = **+0.415, t 9.43**, halves +0.54 (t 6.8) / +0.34 (t 6.5), ≥ +0.30.
+**But most of the original effect WAS the horizon/earnings mismatch**, and what remains is confined to the least liquid
+tenth of a much more liquid subset:
+
+- The mismatch was concentrated exactly where suspected: only **20%** of D1 rows had IV at 21–40 DTE vs **94%** of D10.
+- Clean subset: 48,130 ticker-months, 1,304 names (the truly illiquid names mostly drop out: subset D1's median option
+  volume is 126 contracts/day vs 15 in the full-sample D1). 
+- β by decile: D1 **0.61**, D2–D10 **0.87–1.07** (flat, ≈ efficient). The monotone gradient is gone; one decile remains.
+- Bias: D1 log(IV/RV) +0.105 (was +0.228). Tradeable shape in D1: gap Q5 − Q1 RV − IV **−7.7 vol pts** (was −28.8);
+  D2–D10 −1.6…+3.5 (nothing).
+- Note: per-decile clustered SEs are ~0.17 on the subset; the difference's t 9.4 is tighter because month shocks are
+  shared across deciles (the pooled interaction nets them out).
+
+**Final verdict: SUPPORTED, NARROW.** Mid IV is still measurably less efficient in the least-liquid decile of names that
+have a ~30-DTE expiry (β 0.61 vs ~1.0), after removing horizon and earnings effects — but the effect is ~¼ of the
+headline, lives in one decile, and the raw −29-vol-pt shape was mostly structural (longer-dated IV, earnings inside the
+IV window). **For the book:** nothing tradeable yet. The follow-up, if pursued, is the harvest test on that one decile:
+sell rich / buy cheap ATM vol at real bid/ask in D1 names with 21–40 DTE and no earnings, vs the −7.7 vol-pt gradient.
