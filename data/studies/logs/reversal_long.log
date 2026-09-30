@@ -1,0 +1,26 @@
+# reversal long (pre-registration in the md); k 1.877; signals 28,649
+
+## PRIMARY: ALL, entry t+1 close, 10-day hold
+       cell     n  dates  names  long_net  t_abs  ctrl  excess     t    h1    h2   yrs  yrs_share    win  top1_share
+ALL t+1 h10 28618   3246   2806     1.195  4.392 0.856   0.339 2.911 0.357 0.335 10/16      0.625 55.801       1.144
+PRIMARY bar: FAIL
+per year: long net % / excess %
+date    2010  2011  2012  2013  2014  2015  2016  2017  2018  2019  2020  2021  2022  2023  2024  2025
+r_1_10  3.56  1.83  0.34  1.55  0.71 -0.36  2.18  2.03  0.59  2.36 -1.56  1.23  1.65  1.36  1.72  0.71
+x      -0.06  0.23 -0.02 -0.26  0.19  0.38  0.82  1.26  0.14  0.70 -0.20  0.63  0.54 -0.06  0.48 -0.07
+
+## pre-declared checks
+              cell     n  dates  names  long_net  t_abs   ctrl  excess     t    h1    h2   yrs  yrs_share   win  top1_share
+  (a) HEALTHY tape 10012   1963   1893      0.11  0.661 -0.044   0.153 1.568 0.304 0.217  9/16      0.562 49.91       2.722
+(a) UNHEALTHY tape 18606   1283   2515      1.78  5.658  1.341   0.439 2.905 0.435 0.523 12/16      0.750 58.97       0.847
+(b) top-1% share of summed excess: 114.4%
+                                 cell     n  dates  names  long_net  t_abs  ctrl  excess      t    h1    h2   yrs  yrs_share    win  top1_share
+(c) method check SURV on panel closes 16357   2640   1169     1.392  3.193 1.214   0.178 -0.727 0.088 -0.25 12/16       0.75 56.887       2.372
+
+## secondary (Sidak k = 4, |t| >= 2.8; house 3 governs)
+              cell     n  dates  names  long_net  t_abs  ctrl  excess     t    h1    h2   yrs  yrs_share    win  top1_share
+entry t close, h10 28648   3247   2810     1.217  4.524 0.811   0.406 3.145 0.375 0.379 11/16      0.688 55.983       0.970
+           t+1, h5 28618   3246   2806     0.679  3.099 0.400   0.280 3.200 0.324 0.239 13/16      0.812 54.127       1.071
+          t+1, h20 28618   3246   2806     1.942  5.930 1.638   0.304 2.426 0.399 0.416 11/16      0.688 55.098       1.833
+      SURV t+1 h10 13861   2395   1100     1.536  3.878 1.196   0.340 1.312 0.280 0.123 13/16      0.812 57.918       1.083
+   NONSURV t+1 h10 14757   2922   1706     0.876  2.299 0.537   0.339 2.139 0.292 0.347 10/16      0.625 53.812       1.183

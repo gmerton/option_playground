@@ -39,3 +39,26 @@
 **Also reported:** the cell matching today's regime (SPY just above its 50-day). Script: `run_reversal_long.py`. Local: the cache already exists.
 
 ---
+## Results (run 2026-09-30, after 26c0f07; `run_reversal_long.py`, log `logs/reversal_long.log`, trades `logs/reversal_long_trades.csv`)
+
+**Verdict: NULL · YIELD MECHANISM.** The lead does not survive as a long.
+
+| cell | n | long net %/trade | excess vs random same-tercile | t | halves | yrs + |
+|---|---|---|---|---|---|---|
+| **PRIMARY** ALL, t+1 entry, 10d | 28,618 | +1.20 | **+0.34** | **2.91** | +0.36 / +0.34 | 10/16 |
+| (a) HEALTHY tape | 10,012 | **+0.11** | +0.15 | 1.57 | | 9/16 |
+| (a) UNHEALTHY tape | 18,606 | +1.78 | +0.44 | 2.91 | | 12/16 |
+| (c) method check, panel closes (SURV) | 16,357 | +1.39 | +0.18 | **−0.73** | +0.09 / **−0.25** | |
+| secondary: entry at t close | 28,648 | +1.22 | +0.41 | 3.15 | | |
+| secondary: t+1, 5d | 28,618 | +0.68 | +0.28 | 3.20 | | 13/16 |
+| secondary: t+1, 20d | 28,618 | +1.94 | +0.30 | 2.43 | | |
+
+- **Primary misses** the bar (t 2.91 < 3), although both halves are positive and absolute net is > 0.
+- **(b) Concentration fails outright:** the top 1% of trades carry **114%** of the summed excess. The other 99% net slightly negative vs control.
+- **(c) The method check does not reproduce** on real exchange closes: t −0.73, back half negative. The chain-spot parity series is where the effect lives. The skip-day entry removed only ~0.07pp, so the remaining gap between the two price series is unexplained noise, not an edge I'd trade.
+- **(a) Crash-leader veto:** in a healthy tape the trade is flat (+0.11% absolute, t 1.57). What there is lives in unhealthy tapes, which is ordinary bear-market rebound beta plus a little reversal.
+- The 5-day secondary (t 3.20) is a secondary under k = 4 with the same concentration problem; no claim.
+
+**MECHANISM.** Most of the parent short's t −7.02 was its asymmetric exit, not reversal. A 2% / prior-close stop plus a 20-EMA exit gets stopped on the first bounce; random names bounce less. A symmetric fixed hold leaves a small, concentrated, series-dependent residue.
+
+**What it means for the book now.** No new stock-buying rule. Today's tape (SPY just above its 50-day, breadth OFF) sits between the two cells, and neither clears the bar. Do not buy fresh 15-day lows.
