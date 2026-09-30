@@ -72,3 +72,7 @@ R-scaling effect (the house rule: judge stop-width effects in percent, not R). I
 the tier with or without it, and dropping it roughly doubles the list. (2) Keep the box; a fitted score adds nothing.
 (3) Reminder the test surfaced: month-weighted, the tier's excess over random same-date names is negative 2010–26; its
 positive trade-weighted mean comes from busy breakout months.
+
+**Decision (Gabe, 2026-09-29): KEEP RVOL ≥ 1.1 in the precision tier.** Basis: the pre-registered T1 rule (KEEP). Noted
+for the record: the data show no measurable contribution (the RVOL-only rejects ≈ the tier); it is kept as the status quo,
+consistent with precision over recall and the continuity of the forward lockbox. No code change.
