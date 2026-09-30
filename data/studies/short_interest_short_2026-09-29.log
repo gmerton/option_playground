@@ -1,0 +1,20 @@
+# Short interest short (pre-registration in the md). formations 206, name-dates 166,355
+     signal  h  borrow     n  formations  excess_pct      t     h1     h2 yrs_neg  yrs_neg_share  short_pnl_pct  t_short
+       high 10    0.05 16757         206      -0.074 -0.836 -0.001 -0.137     5/9          0.556         -0.892   -3.069
+       high 20    0.05 16757         206      -0.151 -1.025  0.018 -0.298     5/9          0.556         -1.397   -2.811
+       high 20    0.01 16757         206      -0.151 -1.025  0.018 -0.298     5/9          0.556         -1.080   -2.172
+       high 60    0.05 16473         204      -0.506 -1.302  0.053 -1.003     5/9          0.556         -4.276   -3.480
+     rising 10    0.05 16671         205       0.049  0.554  0.086  0.018     4/9          0.444         -1.009   -3.215
+     rising 20    0.05 16671         205       0.021  0.171 -0.019  0.056     2/9          0.222         -1.582   -3.109
+     rising 60    0.05 16388         203       0.152  0.779  0.077  0.218     5/9          0.556         -4.879   -3.770
+high_rising 10    0.05  2923         205      -0.089 -0.612  0.050 -0.210     6/9          0.667         -0.831   -2.478
+high_rising 20    0.05  2923         205      -0.088 -0.393  0.075 -0.229     5/9          0.556         -1.522   -2.744
+high_rising 60    0.05  2885         203       0.480  1.033  1.289 -0.231     4/9          0.444         -5.295   -3.640
+
+PRIMARY HIGH +20, 5% borrow: excess -0.15% t -1.02, halves +0.02/-0.30, yrs neg 5/9, short P&L -1.40% -> FAIL
+
+== survivorship check: HIGH +20, 5% borrow, chain-spot closes (DTC decile re-ranked within each group universe: no) ==
+       signal  h  borrow     n  formations  excess_pct      t    h1     h2 yrs_neg  yrs_neg_share  short_pnl_pct  t_short
+    chain ALL 20    0.05 19702         193       0.065  0.374 0.513 -0.378     4/9          0.444         -1.483   -2.390
+   chain SURV 20    0.05 10735         193       0.356  1.902 0.721 -0.006     1/9          0.111         -2.010   -3.343
+chain NONSURV 20    0.05  8945         193      -0.160 -0.646 0.393 -0.707     5/9          0.556         -0.755   -1.119
