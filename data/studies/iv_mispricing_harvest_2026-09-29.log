@@ -1,0 +1,13 @@
+# IV-mispricing harvest (pre-registration in the md). priced straddles 9,700 of 9,749 ticker-months
+
+=== D1: n 4865, months 152, median straddle spread 33.5% of mid ===
+  [mid  ] L/S +11.89%/mo t +3.77 halves +9.09/+14.10 yrs+ 14/15 | short-RICH +10.21 (t +3.30) | long-CHEAP +1.68 (t +0.48) | short-RICH - short-ALL +7.42 (t +4.46)
+  [house] L/S -10.74%/mo t -3.47 halves -13.09/-8.88 yrs+ 3/15 | short-RICH -3.43 (t -1.12) | long-CHEAP -7.30 (t -2.09) | short-RICH - short-ALL +4.31 (t +2.69)
+  [cross] L/S -33.36%/mo t -9.97 halves -35.27/-31.86 yrs+ 0/15 | short-RICH -17.07 (t -5.43) | long-CHEAP -16.29 (t -4.61) | short-RICH - short-ALL +1.21 (t +0.76)
+
+=== D10: n 4835, months 151, median straddle spread 5.1% of mid ===
+  [mid  ] L/S  -6.91%/mo t -1.45 halves -19.01/+2.74 yrs+ 5/14 | short-RICH -7.57 (t -1.63) | long-CHEAP +0.67 (t +0.20) | short-RICH - short-ALL -1.10 (t -0.32)
+  [house] L/S -10.75%/mo t -2.25 halves -22.93/-1.02 yrs+ 3/14 | short-RICH -9.69 (t -2.08) | long-CHEAP -1.06 (t -0.32) | short-RICH - short-ALL -1.38 (t -0.40)
+  [cross] L/S -14.58%/mo t -3.04 halves -26.85/-4.79 yrs+ 2/14 | short-RICH -11.80 (t -2.54) | long-CHEAP -2.78 (t -0.83) | short-RICH - short-ALL -1.65 (t -0.48)
+
+PRIMARY (D1, house fills): FAIL

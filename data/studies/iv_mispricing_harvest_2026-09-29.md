@@ -27,3 +27,33 @@ variance premium?); median straddle spread as % of mid; the same trade in D10 as
 close panel defined the population; option prices are v3 (all names).
 **Cost.** One Athena join on v3 (temp table of ~3–4k ticker × month-end pairs, ATM ±2 strikes) + the cached chain-spot.
 Approved by Gabe 2026-09-29 ("go").
+
+---
+
+## Results (run 2026-09-29, after 74c772e; `run_iv_mispricing_harvest.py`, `.log`, trades `logs/iv_mispricing_harvest_trades.csv`)
+
+**Verdict: FAIL → NULL as a trade · MECHANISM confirmed at mid. The illiquid-decile IV mispricing is real in actual
+option prices, and the bid-ask spread is almost exactly its price.**
+
+9,700 straddles priced (of 9,749 ticker-months). D1 median straddle spread **33.5% of mid** (D10: 5.1%).
+
+| D1, per straddle, % of mid | long-short / mo | t | halves | short-RICH | long-CHEAP | short-RICH − short-ALL-D1 |
+|---|---|---|---|---|---|---|
+| at mid (gross) | **+11.9%** | **3.77** | +9.1 / +14.1 | +10.2 (t 3.30) | +1.7 | **+7.4 (t 4.46)** |
+| **house fills (25% of spread) — PRIMARY** | **−10.7%** | **−3.47** | −13.1 / −8.9 | −3.4 | −7.3 | +4.3 (t 2.69) |
+| full crossing | −33.4% | −9.97 | | −17.1 | −16.3 | +1.2 |
+
+D10 reference: no effect at mid (L/S −6.9%, t −1.45), as the efficiency test predicted.
+
+- At mid the trade does what the efficiency test said: shorting the RICH-IV illiquid straddles earns +10%/month of
+  premium and beats shorting the decile at random by +7.4pp (t 4.46), 14/15 years positive for the long-short.
+- **Break-even fill:** the long-short loses ~0.9% of premium per 1% of spread paid; it breaks even at **~0.13 of the
+  spread** (short-RICH alone at ~0.19). Our measured real fills were 0.13 — but on liquid names; illiquid names fill
+  worse. At the house 0.25 it loses.
+- The long-CHEAP leg adds cost without edge (+1.7% at mid); the information is in the RICH side.
+
+**What it means for the book now.** Nothing to trade as a taker. The only possible route is a MAKER strategy — resting
+sells of RICH D1 straddles near mid — whose fill rate and adverse selection cannot be measured on end-of-day data.
+If Gabe wants it, the next step is a forward paper log of limit orders (price, fill/no-fill, fill time), not a backtest.
+Answer to Gabe's question: **yes, illiquid options are mispriced in a predictable direction — and the spread is what
+the market charges to trade against it.**
