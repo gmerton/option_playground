@@ -35,3 +35,40 @@ coefficients per year (stability); rank correlation of predicted vs realised R o
 **Prior:** T1 — neutral-to-drop (X ≈ tier in the ablation). T2 — low (within-date ranking 72 cells NULL; features do not
 sort outcomes); a flexible model would fit noise, which is why the model is linear and ridge-shrunk.
 Local, ~1.5–2 h.
+
+---
+
+## Results (run 2026-09-29, after effa552; `run_rvol_drop_and_score.py`, `.log`)
+
+226,668 breakout events 2010–26 (the pool). "excess" = trade-weighted mean excess R; t and halves = month-weighted
+(the pre-registered clustering) — the two disagree in sign, which is the book's known shape (the tier's return lives in
+a few busy months; the multiple-testing correction already recorded the tier as month-weighted −0.04).
+
+### T1 — RVOL: rule says KEEP, but the test cannot tell A from X
+| set | n | mean R | excess (trade-wtd) | month t | halves (month-wtd) |
+|---|---|---|---|---|---|
+| A tier (RVOL ≥ 1.1) | 2,303 | +0.309 | +0.365 | −2.21 | −0.50 / −0.03 |
+| B tier without RVOL | 4,644 | +0.334 | +0.324 | −2.04 | −0.46 / −0.01 |
+| **X = rejected only by RVOL** | 2,341 | **+0.358** | **+0.283** | −1.44 | −0.45 / −0.04 |
+
+Rule: X excess +0.283 ≥ 0.5 × A (+0.183) ✔, but X's halves are negative ✘ → **KEEP RVOL** as pre-registered.
+⚠ The halves condition fails for the tier itself (A −0.50 / −0.03), so it cannot separate X from A. On every statistic X
+≈ A (mean R +0.36 vs +0.31; month t −1.44 vs −2.21). **Honest read: RVOL does no measurable joint work; removing it
+doubles the signal count at the same quality.** The KEEP is a rule artefact, disclosed rather than overridden.
+
+### T2 — fitted score vs the box: FAIL
+| arm (OOS 2012–26) | n | mean R | excess (trade-wtd) | month t |
+|---|---|---|---|---|
+| SCORE (walk-forward ridge) | 1,545 | +0.091 | +0.095 | +0.16 |
+| BOX (precision tier) | 2,222 | +0.347 | +0.384 | −1.73 |
+
+**PRIMARY SCORE − BOX monthly excess +0.186R, t 1.21** (143 months), halves +0.61 / −0.09 → **FAIL**. The score does
+predict R across the whole pool (OOS rank correlation +0.13), but what it learns is mostly the R denominator: its largest
+coefficients are ADR (−) and the day's change (+), i.e. breakouts whose day-low stop is tight relative to the move — an
+R-scaling effect (the house rule: judge stop-width effects in percent, not R). It selects entirely different trades
+(0 overlap with the tier) and earns less per trade. A continuous model is not better than the box.
+
+**What it means for the book now.** (1) RVOL is Gabe's call on a principle, not on evidence: the data can't distinguish
+the tier with or without it, and dropping it roughly doubles the list. (2) Keep the box; a fitted score adds nothing.
+(3) Reminder the test surfaced: month-weighted, the tier's excess over random same-date names is negative 2010–26; its
+positive trade-weighted mean comes from busy breakout months.
