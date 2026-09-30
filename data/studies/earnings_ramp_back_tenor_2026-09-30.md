@@ -41,6 +41,29 @@ holding through the print, IV or liquidity gates on the entry, single-name or se
 
 ---
 
-## Results
+## Results (run 2026-09-30, after the pre-registration above; `run_earnings_ramp_back_tenor.py`, log `logs/earnings_ramp_back_tenor.log`)
 
-*(pending)*
+**VERDICT: NULL (FAIL as a trade) · YIELD MECHANISM.** 17,056 prints on 1,072 names; 10,612 priced at the −5 entry
+(median 37 DTE); 9,945 with ≥ 1 same-date control (mean 2.37).
+
+| entry | n | ATM IV in → out | ramp | MID | HOUSE | CROSS | t (house, by date) | rt spread | neg yrs |
+|---|---|---|---|---|---|---|---|---|---|
+| −3 | 9,601 | 0.432 → 0.448 | +1.7 vp | +0.79% | −6.26% | −11.70% | −25.1 | 18.5% | 8/8 |
+| **−5** | 10,612 | 0.422 → 0.445 | +2.3 vp | **−0.06%** | **−7.15%** | −12.63% | −23.5 | 18.7% | 8/8 |
+| −10 | 11,021 | 0.412 → 0.463 | +5.1 vp | −5.71% | −12.14% | −17.09% | −34.7 | 17.0% | 8/8 |
+
+**Primary (−5, house fill):** event −7.14% (t −23.3); controls −9.51%; **paired edge +2.37pp, t 13.4**, halves
++1.93 / +2.83, positive in 8/8 years. The pre-registered PASS required the event trade itself to make money; it
+loses in every year. **FAIL.**
+
+**What it says.** Moving to the back tenor fixed the parent's problem: theta no longer beats vega. At mid the
+trade breaks even (−0.06%, versus −6.9% on the front expiry) and the earnings print is worth a real +2.4pp over an
+identical no-earnings straddle (the ramp is +2.3 vp vs +0.3 vp for controls). But a 37-DTE straddle's round trip
+costs ~19% of its price in spread, so any fill short of mid gives it all back and more. The edge-vs-control is the
+ramp itself (a mechanism, like the parent's +47 vp): it is not a trade, because the counterfactual isn't "buy a
+no-earnings straddle", it's "don't trade". ⚠ Don't read t 13 as a signal: both arms are long straddles, so it only
+says earnings straddles lose LESS.
+
+**Closes the ramp line.** Front tenor: theta wins. Back tenor: spread wins. A long-vega harvest of the ramp needs
+a cheaper vehicle than an ATM straddle (a calendar or other structure with a short leg), and those are outside this
+registration.

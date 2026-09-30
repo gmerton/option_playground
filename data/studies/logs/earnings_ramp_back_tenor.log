@@ -1,0 +1,28 @@
+events 17,056 (1072 names, prints 2019-02-01 -> 2026-02-27); controls 51,168 for 17,056 events
+  (ticker, date) targets 133,513
+  pulled 7,697,132 rows -> data/cache/earnings_ramp_back_tenor_chains.parquet
+
+==============================================================================================================
+EVENT TRADE: buy the ~37 DTE ATM straddle N sessions out, sell on the pre-print session (% of cost)
+entry        n   dte     IV in->out  ramp vp     MID   HOUSE   CROSS t(house)  rt spr  neg yrs
+-3       9,601    36   0.432->0.448     +1.7   +0.79   -6.26  -11.70   -25.13   18.5%  8/8
+-5      10,612    37   0.422->0.445     +2.3   -0.06   -7.15  -12.63   -23.50   18.7%  8/8
+-10     11,021    37   0.412->0.463     +5.1   -5.71  -12.14  -17.09   -34.70   17.0%  8/8
+
+==============================================================================================================
+PRIMARY: -5 session entry, paired edge vs same-date no-earnings controls (9,945 events with >=1 control, mean 2.37 controls)
+   sample    n  dates  event_house  t_event  ctrl_house  edge_mid  edge_house  t_edge  edge_cross  ramp_evt_vp  ramp_ctrl_vp
+     full 9945   1258       -7.136  -23.272      -9.505     3.096       2.369  13.439       1.647        2.297         0.275
+2019-2022 5081    684       -6.530  -15.482      -8.461     3.054       1.932   9.017       0.909        2.281         0.363
+2023-2026 4864    574       -7.770  -17.846     -10.596     3.139       2.826  10.147       2.418        2.313         0.184
+         n  event_house  ctrl_house  edge_house
+P                                              
+2019   975        -4.47       -8.16        3.69
+2020  1203        -8.01       -9.58        1.57
+2021  1459        -7.79       -8.79        1.00
+2022  1444        -5.42       -7.40        1.99
+2023  1454        -7.18       -9.48        2.30
+2024  1409        -4.68       -8.71        4.03
+2025  1643       -10.04      -12.38        2.35
+2026   358       -11.92      -14.34        2.42
+-> edge +2.37pp t 13.44; event house mean -7.14% (t -23.27); halves +1.93 / +2.83  => FAIL
