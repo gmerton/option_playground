@@ -37,3 +37,44 @@ harvestable (that is the follow-up).
 
 **Cost.** Two queries on Glue summary tables (`options_iv_daily` month-ends, `options_flow_daily` monthly means),
 ~15 s/yr each; local regression. Approved by Gabe 2026-09-29.
+
+---
+
+## Results (run 2026-09-29, after the pre-registration above was committed in e4149be; `run_iv_efficiency_by_liquidity.py`, `.log`)
+
+**Verdict: PASS on the pre-registered statistic → SUPPORTED as a MEASUREMENT: the mid IV of illiquid options is a much
+worse forecast of realised vol, and the error is predictable. Mechanism NOT established — see the open alternative.**
+
+213,448 ticker-months, 2,415 names, 2012–2026 (out-of-sample HAR).
+
+| decile (option vol) | median contracts/day | β (share of IV's gap borne out) | mean log(IV/RV) | R² F → F+IV | RV − IV, gap Q5 − Q1 (vol pts) |
+|---|---|---|---|---|---|
+| **D1 least liquid** | 15 | **0.31** | +0.23 | 0.39 → 0.44 | **−28.8** |
+| D2 | 61 | 0.50 | +0.15 | 0.41 → 0.50 | −17.2 |
+| D5 | 547 | 0.69 | +0.10 | 0.50 → 0.62 | −10.1 |
+| D9 | 8,426 | 0.81 | +0.09 | 0.55 → 0.69 | −4.9 |
+| **D10 most liquid** | 33,483 | **0.92** | +0.07 | 0.63 → 0.76 | −3.0 |
+
+**PRIMARY β(D10) − β(D1) = +0.61, t 17.2; halves +0.63 (t 16.4) / +0.54 (t 15.1).** Monotone across all ten deciles.
+Robustness on chain-spot RV: +0.49, t 13.9, same gradient.
+
+Reading: in the most liquid options, when IV sits above the public (past-RV) forecast, ~92% of that gap shows up in
+realised vol. In the least liquid, only ~31% does; and the names whose IV looks richest vs the forecast realise ~29 vol
+points less than IV, relative to the names whose IV looks cheapest. Illiquid IV is also biased high on average
+(IV ≈ 26% above RV in logs vs ~7% for D10).
+
+### ⭐ "A clean result is a bug until proven otherwise": checks run (not pre-registered, reported for the read)
+1. **Quote noise (errors-in-variables)?** If the mid were random noise inside a wide quote, instrumenting the gap with
+   LAST month's gap would restore β. It does not: D1 0.25 vs D10 0.82. And D1 gaps are MORE persistent month to month
+   (autocorrelation 0.41 vs ~0.30), the opposite of iid noise. (A first attempt instrumented with NEXT month's gap; that
+   instrument is mechanically invalid — next month's HAR includes this month's realised vol — and was discarded.)
+2. **A few odd names (fixed effects)?** Within-ticker (demeaned) β: D1 0.38 vs D10 0.96. Holds inside the same stock.
+3. **⚠ NOT YET EXCLUDED — horizon/event mismatch.** `call50_iv` uses the expiry nearest 30 DTE within 10–60; illiquid
+   names often list only monthlies, so their IV can span ~50 days and include an earnings date the 21-session RV window
+   misses. That would make IV look "too high vs what followed" persistently, most in illiquid names, with no mispricing.
+   Next check: pull `skew_dte` and earnings dates; re-run on ticker-months with DTE 21–40 and no earnings inside either
+   window. Until then this is a measurement, not a mispricing claim.
+
+**What it means for the book now.** Nothing tradeable yet. If the effect survives check 3, the shape is "sell
+illiquid-name vol when its IV is rich vs the realised-vol forecast" (−29 vol-pt gradient), and the follow-up is whether
+that exceeds the spread (straddle bid-ask in these names is often 20–40% of premium).
