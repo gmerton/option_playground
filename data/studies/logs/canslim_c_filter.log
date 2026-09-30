@@ -1,0 +1,25 @@
+# [BB-2] CAN SLIM C as a universe filter (pre-registration in the docstring)
+panel (4458, 1724), window 2010-01-01 -> 2026-09-23
+median names/day: eligible 592, covered 451, C 38, INT 10, INT&C 2
+
+delta = ADR-matched forward excess, arm minus reference, paired per non-overlapping date (pp)
+                                             cell  dates  of  arm_n  ref_n   d_pp      t     h1     h2  agree
+                       PRIMARY  INT&C vs INT, 20d     88 210    2.0   10.0 -0.433 -0.855 -0.319 -0.471   True
+                     (a) C vs eligible panel, 20d    210 210   37.0    NaN  0.195  1.363 -0.000  0.375  False
+         (a') C vs EPS-covered panel, 20d  [info]    210 210   37.0  450.0  0.191  1.342 -0.014  0.381  False
+                      (b) INT&C&ACCEL vs INT, 20d     10 210    0.0   10.0  0.005  0.002    NaN  0.005  False
+                       (c) INT&TRIPLE vs INT, 20d     79 210    1.0   10.0 -0.128 -0.228  1.869 -0.353  False
+                            (d) INT&C vs INT, 63d     23  66    1.0    9.0  0.858  0.397 -1.904  1.440  False
+(e) INT&C vs INT, 20d, ex 10 sessions post-report     76 210    1.5    8.0 -0.387 -0.653 -0.126 -0.468   True
+
+per year — PRIMARY  INT&C vs INT, 20d:
+date     2010  2011  2012  2013  2014  2015  2017  2018  2020   2021  2022  2023   2024   2025  2026
+mean_pp -1.18  0.45  1.62 -1.03 -0.51  0.16 -4.99 -0.68 -4.28  -0.46 -2.28   0.2  -0.08   2.08 -0.63
+dates    3.00  5.00  2.00  2.00  5.00  4.00  1.00  8.00  7.00  10.00  4.00   6.0  12.00  11.00  8.00
+
+per year — (a) C vs eligible panel, 20d:
+date      2010   2011   2012   2013   2014   2015   2016   2017   2018   2019   2020   2021   2022   2023   2024   2025  2026
+mean_pp   1.22   0.19  -0.77  -0.48   0.39   0.65  -1.88   0.69   0.06  -0.11   0.32   0.08  -0.24   0.34   0.66   1.39  1.07
+dates    13.00  13.00  12.00  13.00  12.00  13.00  13.00  12.00  13.00  12.00  13.00  13.00  12.00  13.00  12.00  13.00  8.00
+
+PRIMARY INT&C - INT (20d, ADR-matched): -0.433pp t -0.85 halves -0.32/-0.47 dates 88/210
