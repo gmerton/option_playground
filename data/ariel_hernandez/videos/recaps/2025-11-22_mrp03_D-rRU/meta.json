@@ -1,0 +1,19 @@
+{
+  "video_id": "mrp03_D-rRU",
+  "url": "https://www.youtube.com/watch?v=mrp03_D-rRU",
+  "title": "11/21/2025 Daily Recap: What's Next?",
+  "channel": "Ariel Hernandez",
+  "channel_id": "UCn8hF9X6MGDtbTBb6w3JUYA",
+  "stream_date": "2025-11-22",
+  "duration": "12:28",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en-orig",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

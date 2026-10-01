@@ -1,0 +1,19 @@
+{
+  "video_id": "M4xMDkvFE0A",
+  "url": "https://www.youtube.com/watch?v=M4xMDkvFE0A",
+  "title": "A fully stretched rubber band!",
+  "channel": "Ariel Hernandez",
+  "channel_id": "UCn8hF9X6MGDtbTBb6w3JUYA",
+  "stream_date": "2026-06-02",
+  "duration": "13:30",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en-orig",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

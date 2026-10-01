@@ -1,0 +1,19 @@
+{
+  "video_id": "0-fl3Z_cng0",
+  "url": "https://www.youtube.com/watch?v=0-fl3Z_cng0",
+  "title": "Nasdaq new all time highs! Let the Bull resume!",
+  "channel": "Ariel Hernandez",
+  "channel_id": "UCn8hF9X6MGDtbTBb6w3JUYA",
+  "stream_date": "2026-09-22",
+  "duration": "18:43",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en-orig",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

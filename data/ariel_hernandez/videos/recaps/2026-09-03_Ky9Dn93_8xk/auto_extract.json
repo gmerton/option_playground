@@ -1,0 +1,35 @@
+{
+ "video_id": "Ky9Dn93_8xk",
+ "title": "Is it time for laser eyes!",
+ "upload_date": "2026-09-03",
+ "date": "2026-09-03",
+ "session_date": "2026-09-03",
+ "session_date_basis": "spoken",
+ "observed_trades": [
+  {
+   "date": "2026-09-03",
+   "ticker": "IBIT",
+   "ticker_as_captioned": "I bet",
+   "vehicle": null,
+   "direction": "long",
+   "action": "hold",
+   "fill_timing": "",
+   "timing_basis": "",
+   "fill_date_stated": "",
+   "is_retrospective": false,
+   "position_after": "open",
+   "setup": "Still holding the Bitcoin ETF from 36; crypto group acting strong on big volume after a short consolidation.",
+   "entry_basis": "",
+   "stop": "",
+   "size": "",
+   "price": 36,
+   "price_kind": "basis",
+   "source": "2026-09-03_Ky9Dn93_8xk@00:32",
+   "confidence": "stated",
+   "quote": "Um the crypto names and I bet I still own from 36 bucks.",
+   "notes": "Restated at 08:02 ('IBIT the one that I own'). Circle: he wanted to buy through yesterday's highs but never says he did, so no row."
+  }
+ ],
+ "principles": [],
+ "ambiguous_tickers": []
+}

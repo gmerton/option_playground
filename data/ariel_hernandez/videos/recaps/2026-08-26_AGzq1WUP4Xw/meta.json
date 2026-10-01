@@ -1,0 +1,19 @@
+{
+  "video_id": "AGzq1WUP4Xw",
+  "url": "https://www.youtube.com/watch?v=AGzq1WUP4Xw",
+  "title": "Punched in the Dicks Sporting Goods",
+  "channel": "Ariel Hernandez",
+  "channel_id": "UCn8hF9X6MGDtbTBb6w3JUYA",
+  "stream_date": "2026-08-26",
+  "duration": "18:59",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en-orig",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

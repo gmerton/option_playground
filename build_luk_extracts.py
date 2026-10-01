@@ -128,7 +128,11 @@ def main() -> None:
         for t in d.get("observed_trades", []):
             timing = t.get("fill_timing", "")
             t["fill_timing"] = timing
-            t["fill_date"] = resolve_fill_date(timing, sd) or t.get("fill_date_stated") or ""
+            if "timing_basis" in t and not timing.strip() and t.get("action") != "hold":
+                # v2 extracts (Ariel): an empty fill_timing means "not indicated", NOT "today"
+                t["fill_date"] = t.get("fill_date_stated") or ""
+            else:
+                t["fill_date"] = resolve_fill_date(timing, sd) or t.get("fill_date_stated") or ""
             trades.append(t)
     # stable sort: date desc, then ticker
     trades.sort(key=lambda t: (t.get("date", ""), t.get("ticker", "")), reverse=True)

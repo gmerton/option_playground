@@ -1,0 +1,105 @@
+[00:00] Hey guys, it is September 3rd, 2026. I wanted to make this quick video because I got asked a few times about how it is that I like to view and look at level two. Um, look, when you are a swing and
+
+[00:11] position trader, the reality is is that level two is not nearly as important as how the market's acting, how an individual group is acting, if a stock might have good earnings and sales, if
+
+[00:22] the underlying trend is up. Um, level two and time and sales is very, very useful um, if you are a shorter-term uh, trader, uh, smaller time frame. And I made a note today and I said, "Look,
+
+[00:37] there's just this big seller sitting on 150." Um, one, how I knew that. Two, what that might mean, um, for an individual trader. And today on stream, you know, hours before it gets up to
+
+[00:51] that 150 level, I I said, "There is a seller sitting right on 150." And Okay, so I want to just take a uh, brief moment to kind of uh, describe, at least from my point of view, um, the way I
+
+[01:04] kind of view level two. Um, how it is that I personally like to look at it. When you're looking at the montage, you're going to see that you've got all of these places that orders are
+
+[01:14] being routed through, whether it's through Arca, through EdgeX, through the Nasdaq. Um, effectively, these are all of the places that your orders can be routed
+
+[01:24] through. Not every trader, um, you can pick your routes. Not every trader is, you know, uh, trading through the Nasdaq or just has a resting order there or through Arca. You can pick whe- where
+
+[01:37] you want to or where you want to route your orders to get filled. Um, so that's great. But when I'm personally, for some of you guys who are maybe used to or have heard of Bookmap,
+
+[01:50] uh, effectively, what's being done there is they're taking resting orders that are sitting inside the NASDAQ um or your INET book. And when you've got
+
+[02:02] your montage, you're effectively looking at all of your venues, all of where all of your different orders might be coming through. And then you're seeing them um in here.
+
+[02:13] And then what you're doing is you're seeing or excuse me, you're seeing them here. And then you're seeing them go off um on the tape level two. If people are
+
+[02:22] buying above the ask, selling below the bid, market orders. Um and then so you can get a sense of who is in control of the tape. Sometimes you see a refreshing order on the bid and he happens to keep
+
+[02:34] routing his orders through ARCA. And then you just say to yourself, man, this guy's you know, really in control of price. And maybe price can continue to rally so
+
+[02:44] long as he has a refreshing order that is maybe stepping up and up and up and up and up. Um if you are an intraday trader, when you
+
+[02:52] come into the day and price is trading at $144, but you can see a huge resting order at $150. Right? A resting seller at $150. And this was way earlier. You could look
+
+[03:06] at the picture that I posted. That in your mind, you would think, okay, price can't go through $150 until all of his shares that he wants to sell get sold. Okay, that makes sense. But
+
+[03:21] what else does him just resting in a huge $75 million order at $150 tell you? He is in no hurry to get out. But there is a ton of liquidity there. When you see that and price is at $144 and you're
+
+[03:37] an intraday trader, you have to expect that's actually not bearish. That's actually bullish that price can go up to $150, take out his liquidity. And normally
+
+[03:51] when you do, right at that level, you see a huge pickup in volume because there's a lot of buyers they'll see that wall they'll start to buy it price will then squeeze through. There are people
+
+[04:00] shorting in front of that 150 and then you get a nice clean push through. If you are an intraday trader, that is an awesome scalping strategy. It is amazing.
+
+[04:11] If you see a resting order on the ask and he is just sitting there and price is trading below it there is a likelihood that price goes up and through that level.
+
+[04:24] Right? And now think about it from a psychological perspective. If he were a panicked seller, what would he do? Would he even be at 150? Or if he had
+
+[04:35] $75 million of shares to unload, what would he actually be doing? He'd be selling to the bid. Right? He'd be selling 148, 147, 146, 144, 143. But no, just the opposite. He
+
+[04:52] is sitting there with a huge order, a resting order at $150. And he is very confident, someone with $75 million open position that those shares are
+
+[05:04] going his shares are going to be sold. Right? Or in other words, price is going to get bought through that level. Cuz you can't go through 150 until his shares are bought.
+
+[05:16] Effectively, him as a seller at 150. So, if you're a trading at 144 and you're a scalper and it's at 146, 147 and you get a bullish consolidation above VWAP building higher lows and you want to
+
+[05:29] scalp through that I don't blame you, but you just have to have an understanding of what it is that you're looking at. On the flip side, if you see a huge resting order on the bid
+
+[05:41] and you're let's say it was at 144, but you're trading at 149 and he is not going anywhere. And he is a buyer, let's say a $50 million. Right? Well, what happens is is if he were an
+
+[05:56] anxious buyer, a buyer that were dying to get in, a buyer that needs to get in right now, well, he would if if price were at, you know, whatever it is, he would be buying the ask or above the ask
+
+[06:08] and trying to get filled his position. But, instead, he might just have a huge resting order lower and he's like, "No, I'm going to let price come down to me." Right? A big order.
+
+[06:20] Um and more times than not, when you're the biggest resting order on the book, price tends to go and sweep out that liquidity. Um and if you're a scalper,
+
+[06:31] you know, that is definitely something that you can take advantage of. Now, you know, SPCE is one of those where it's highly liquid. We were talking about it even
+
+[06:41] um in the room when when price was a heck of a lot lower. But, if you want to, you know, if you're trading with a big account and that is something that you want to take advantage of, yeah, I
+
+[06:50] could put on 10,000 shares there and you get that nice little dollar, $2 move. Um you know, there's no problem with that. Now, is it scalable um over the long term of your career?
+
+[07:02] You know, maybe maybe not. Depends you know, what what it is you're trading for. But, if there is an edge there that a lot of people are really unfamiliar with and you'll see, you know, um
+
+[07:14] it again, like Book Map, all they're doing is taking all of Nasdaq's largest resting orders and they're plotting them for you um so that you can see them visually
+
+[07:26] instead of having to go through, you know, this Inet and and kind of search for the largest resting orders. So, um if I had to look for one right now, I just saw a pretty big one.
+
+[07:37] Um where is it at the moment? [sighs] Um and if again, if you're willing to look, you can find the largest resting orders. And here's somebody at a at a
+
+[07:48] hundred and and here's a bank um at a hundred fifty-one dollars and forty-seven cents. So, um you know, like an eighty million ninety million dollar position. And so, can price go there?
+
+[08:01] Maybe, but if you have a nice little bullish consolidation up into that level, then um you know, price cannot go higher until that seller gets sold into. So,
+
+[08:11] hopefully that kind of makes sense if you are a shorter term uh trader cuz yeah, I I I kind of posted it on X and I'm like, look this huge hundred fifty dollar seller just sitting there and the
+
+[08:20] chart looks bullish. The chart looks good. Price is going up. Price is building out on a smaller time frame. You've got a level that you know when you start to get through that one fifty,
+
+[08:31] there's a reason price picks up right through that level on a smaller time frame. It's because people are buying his order that he's selling.
+
+[08:39] Um So, hopefully that makes sense. If you choose to take advantage of it, great. Um take advantage of it. There's nothing wrong with that at all. If you don't,
+
+[08:48] you know, you don't. Again, if you're a trend trader, level two and time and sales, it matters, but it, you know, does it really matter? Um
+
+[08:59] cuz again, the people who have resting orders, those get moved all the time, but when somebody is sitting there for over an hour, two hours, right? That can be
+
+[09:09] something that you can build into, take a pretty big position, scalp that kind of a move if that's your jam. If it's not, then, you know, maybe this video is not for you.
+
+[09:18] And again, from my understanding and as I've always looked at level two, your montage is effectively um where you have all of your venues,
+
+[09:27] right? All of your routes, and you can see it, you know, exactly who maybe is in charge of uh order flow for the moment. It could be a refreshing order coming in through Arca or coming in
+
+[09:39] through Ajex or coming in through the Nasdaq, um etc. And then your I net's just going to be your resting Nasdaq orders. So, again,
+
+[09:48] is this information for everybody? No. Um is it valuable for some? Possibly. But I was asked so I figured I'd make a quick video about it. Anyway, hopefully that helps and I'll talk to you guys
+
+[09:58] soon. Later.

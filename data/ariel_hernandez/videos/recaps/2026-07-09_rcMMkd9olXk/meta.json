@@ -1,0 +1,19 @@
+{
+  "video_id": "rcMMkd9olXk",
+  "url": "https://www.youtube.com/watch?v=rcMMkd9olXk",
+  "title": "Expected bounce. Now what?",
+  "channel": "Ariel Hernandez",
+  "channel_id": "UCn8hF9X6MGDtbTBb6w3JUYA",
+  "stream_date": "2026-07-09",
+  "duration": "15:09",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en-orig",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

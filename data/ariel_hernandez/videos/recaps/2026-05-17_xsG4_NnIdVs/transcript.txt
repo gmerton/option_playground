@@ -1,0 +1,205 @@
+[00:00] Hey guys, May 17th. I want to take this um moment to kind of go over Theme Tracker. I know some of you guys use it, some of you guys aren't as familiar with it. There's definitely been some
+
+[00:11] updates, some me cleaning things up, um you know, as well as, you know, kind of on mobile. I I I find myself, you know, scanning on mobile all the time, looking through
+
+[00:22] charts, reading through filings. And that was one of the things that uh was a recent addition was adding uh SEC filings right into here, as well. So, I kind of want to cover more so how I use
+
+[00:34] the app, how I look to uh scan through names. I I love looking at 1-month, 3-month relative strength. I also finally added 6-month of relative strength in here, as well. So,
+
+[00:46] um we'll just start to kind of cover all of the pieces of Theme Tracker. There is just way more than meets the eye, and and I'm constantly trying to improve it.
+
+[00:56] Um you know, I use it for myself, and and there's just already a bunch of tabs in here, and I've removed some things that I wasn't using myself. The last thing I really want to do is just flood
+
+[01:06] um you know, this this app, basically, with things that I don't use. Um if I'm not using them for myself, selfishly, um you know, I won't have them here just for
+
+[01:17] the sake of having it. Um at the end of the day, I'm trying to improve my own nightly process, um my own uh stock discovery, you know, searching for the needles in the haystack, my own universe
+
+[01:27] list, and, you know, just the functionality of it. And and I'm always trying to improve. Um so, one of the things that too you guys will notice is there might be times that
+
+[01:36] you're using the app, and, you know, you kind of got a um like you go to click on another tab, and it's just like, "Hey, like you're disconnected. You have to reload."
+
+[01:45] That's likely because I made a little tweak, um something with the UI or an addition, and I republish it, and and um there's not so many users on this thing that, you know, I I I will make my
+
+[01:58] changes at any random time in the day. So, if you ever notice that that it's happening to you, that's probably because I'm working on it in the back end. Don't ever think that it just
+
+[02:06] crashed. I am working on this thing 24/7, it feels like, and I'm also working on it on mobile. So, I'll be looking at it, you know, when I'm just
+
+[02:16] hanging out on the couch and I'm kind of just going through the UI on it and making sure that things are functioning properly. And if they're not, you know, I'm making an update and
+
+[02:25] then I'll republish it. And when that happens, you know, if you're on it, you get logged out or you got to log back in. That's most likely cuz I made some kind of change to it. But anyway,
+
+[02:35] let's just kind of go through how it is that I use it on a daily basis, how it is that I use it to craft a universe list, how names even, you know, get on my
+
+[02:45] radar throughout the trading day, maybe in the evening. So, the first thing that I really like to do is I love starting with like 3-month and 1-month relative strength. And obviously, when I see a
+
+[02:57] group that's consistently living near the highs, right? Semiconductor, semiconductors, you know, computer hardware, and I'm seeing, you know, these these groups live up near the the
+
+[03:07] highs, you can click right on that group and then see all of your stocks and you can even go same thing with the individual names, 3-month,
+
+[03:16] and then you can just click on those names and then even just with your simple, you know, your arrow keys on your keyboard, start to look through these charts. If the charts are like,
+
+[03:26] "Okay, I've seen that name before. It looks pretty good. It looks pretty great." You know, etc. You can just um take this little clipboard and add it
+
+[03:35] right into your clipboard if you think it looks good. If you think it looks bad and and you're maybe interested in the other side of the market, you can add it and it'll be red to the bear side of
+
+[03:44] your clipboard, right? Also, in here, if you use your arrow keys right and left, you've got all of your fundamentals. You've got news, all of the most recent news with this name, and
+
+[03:57] then filings. So, any SEC filings, there's no recent ones for HIMX. And if you wanted to click right on semiconductors, you could as well. And then even on your phone, you'll have
+
+[04:07] these little chevrons where you can basically go from one stock to the next to the next to the next, etc. But if there happens to be filings,
+
+[04:16] they'll be right there. And then the beautiful part is you can click right on that 10-Q, and it'll take you right to the website, and you can even do that on mobile, and you can read right through
+
+[04:27] the the filing that there might have been. So, that is super super useful. And what I'm trying to do and build in is building another tab called like my portfolio,
+
+[04:38] and you could put in the names that you do own in there or your watchlist. And then you can either select like a little toggle on and off where you want to be notified, and and I'll try to build it
+
+[04:49] in for like an email notification, a push notification right to your text, or right within the app itself. It'll be like a little look like an envelope with like a number
+
+[04:59] one in red or two or three or four or five, and it'll tell you how many messages you have with stocks that you are either on your watchlist or in your portfolio. And it'll say like Nvidia,
+
+[05:10] you know, 8K. It'll say you know, Amazon, 8K. If it came out with earnings, 10-Q, and it'll just tell if there was an offering, it'll tell you about that as well.
+
+[05:21] And at least you'll have it, you know, right in like a little envelope. So, that's something, you know, down the road. And I know, like I said, I'm always trying to iterate. So, if you
+
+[05:29] happen to be using the app and then, you know, you kind of got disconnected, just log back in. That's almost 100% of the time me working within it. So, don't be alarmed. Just log back in. Not a big
+
+[05:41] deal. We don't we not only have basically every single industry group within the market. And at the end of the day, there are times when I look like to look at
+
+[05:51] today and say, "Hey, what what groups were the best today? Solar." Well, that's no surprise. Look at what SEDG did. Look at SHLS. You can sort them by percent gain today, 1 week, 1 month. You
+
+[06:01] can sort them by dollar volume. You can sort them by average daily range. That's a very easy way to do it. If you go, "You know what? The solar group is really interesting." You can just
+
+[06:10] clipboard the entire group. And then you go up here to your clipboard. You can copy that entire group. You can put it right into your TradingView, your DeepView, your Finviz, whatever. And
+
+[06:20] then you can look at those charts that way, your own charting platform. Very, very easy to do. Um and I personally just kind of love doing
+
+[06:28] that. I will just go through and I'll clip a bunch of groups that I find interesting. And then you'll have all of these groups. You'll have all of these names in here. They break them down by
+
+[06:37] how many stocks in each group. You can copy the entire thing and then right into TradingView. Super, super easy to do. So, and then again, double click and that
+
+[06:47] makes it red. Um click it again, turns it off and then it gets those names in a bearish clipboard as well. So, you got bullish, you've got a bearish. You can copy them and then you know exactly
+
+[06:57] where it's at. And and then that clipboard works um all throughout the entire app. So, whenever you bullish clipboard something or bearish clipboard something, it'll always be right on this
+
+[07:05] main page right there for you to copy and and then put it on your TradingView for instance. Anyway, you also have You have all of the industry groups. 142 groups, uh if I'm not mistaken. You've
+
+[07:17] got all of your group ETFs. So, individual groups. So, you could go like change from open, right TAN. No surprise, solars were super strong on Friday. TAN, you can then drop it down
+
+[07:28] and then see how the individual names, NXT, right Enphase, SEDG, etc. how they performed. Again, you can click It tells you the weighting to that individual group. You can click right on it. You
+
+[07:39] got the chart. You know, simple. Um you've got uh sector S&P 500 groups right in here as well. You've got and again, similar story. You can drop it down, see the weighting, see the stocks,
+
+[07:52] click on it, and then, you know, have a chart, have fundamentals, have news, have filings. You've got your equal weight, your countries, same story. You can look
+
+[08:02] within the country, see how which individual countries are acting best. And then I've got COT data. I personally love looking at COT data. And you've got all of your markets here. So, S&P 500,
+
+[08:13] Nasdaq. And I'll personally go through them. And probably the one that jumped out the most to me was Ethereum this past week, where it got super super crowded
+
+[08:21] on the small small spec side. You got this huge pickup in small speculators just bought the hell out of Ethereum. And I kind of joke, you know, Tom Lee, was that you? You get this big push up
+
+[08:33] in small speculators. And then, as I'm making this video Sunday night, you see Ethereum open up and it's gapping down. And that kind of makes me chuckle because the people who lose most in the
+
+[08:42] market just bought the out of Ethereum. And Ethereum's now going down. So, kind of find that a little bit comical. But, that is how that works. And, you know,
+
+[08:52] positioning is something that I definitely like to look at. Here we've got an economic calendar. And it's just kind of good to say, "Hey, you know, we've got CPI or PPI or the FOMC." You
+
+[09:04] can do a little drop down on any of these and see, you know, prior data. Earnings, very simple. And if you just give this a moment, you can go back a few weeks, you can go
+
+[09:13] forward ahead of time, and see kind of what's going on. But, with earnings calendars, if there's a prior transcript, again, you can look at the transcript, and then you can hit
+
+[09:25] summary, and then it'll take maybe like 20 or 30 seconds. It'll go through this entire transcript, and then give you the top 10 bullet points from that prior transcript on earnings. So, very very
+
+[09:37] easy to do. Again, you can click on the chart, you can click in a bullish and you say, "Oh, you know what? I like Baidu." Or, "I don't like Baidu." and put that into your um watch list, export
+
+[09:47] it if you'd like. Um and then if you're like, "Oh, you know what? I'd like to see the other stocks in this internet content information." Click right there and it'll take you to all of the names
+
+[09:56] within that group. Um so, pretty easy to do on that front. Breath, probably one of my favorite tabs um that that I have. You know, I love looking at this and you can basically
+
+[10:08] say, "Oh, wow, 80 stocks up 4% on the day, 48 stocks down or 468 stocks down 4 or more percent on the day." And you know, when you get this big number or you know, there's there's 28 stocks 10x
+
+[10:20] or more it's ATR from the 50, you can click on these cells and again, there's there's a huge number here, but it'll give you all of the stocks that, you know, went down 4% or more um on Friday
+
+[10:34] and you can sit there and go through all of these and and you could sort them by their percent change or I also like to look at them by group. And then I say to myself, "Wow, 56 of those were biotech,
+
+[10:45] gold we obviously saw how gold and silver acted." You know, that was a pretty bad move, aerospace and defense and then you can pop those groups up and then see the worst performers and again,
+
+[10:55] similar story, pull those charts up, similar thing, it's the same chart model where you'll be able to look at chart, fundamental, news, filings, etc. Um and then you've got your scanner and
+
+[11:08] this will be for pre-market and after hours. So, for pre-market you'll see nothing right now. For after hours, of course, it'll still show cuz it was Friday at the close. Um and then
+
+[11:17] obviously, you can sort by 20-day uh dollar volume and then sort by market cap and it'll just give you in the morning the stocks that have gapped up, the stocks that have gapped down. Um you
+
+[11:27] could even pop this out on your desktop, very easy to do. Um and then just kind of shrink it, move it off to the corner of one of your screens. Similar with these highs and lows, this will show
+
+[11:37] nothing right now. When the market's active, this will show you literally the stocks that are hitting highs of the day at that moment, all of the stocks that are doing so, stocks that are hitting
+
+[11:47] lows of the day. I absolutely love this page. I will pop this out. I leave it open basically all day on my screen. I know where money's going, where money's leaving to the moment in real time. It's
+
+[11:56] pretty damn fantastic. And then I hit like to hit summary. And these will be all the stocks that moved on Friday, up, down. And then I personally like to sort them by group, and then you could look
+
+[12:06] at software application was the names that were moving up and down. And then on the flip side, the names that were Again, we looked at biotech, we saw how bad those were. Well, of course, biotech
+
+[12:16] is the group that was getting the most hits on the downside. That's no surprise. But in real time, we would have been seeing them hit lows of the day um for most of the day. And if they
+
+[12:25] were on news, it'll show it at the very bottom. On news. And if you want, you can click on one of these, um and then again, you'll get a chart
+
+[12:33] model, same exact thing as as other parts of the app as well. So, really really easy to do. And then again, when you see these charts moving, you'll see some news. Um, right now it happens to
+
+[12:44] be showing team. Don't know why, but um probably cuz I just Yeah, it'll it'll show like whatever stock is being highlighted um up here, it'll it'll pull up the news for it. And you can click
+
+[12:55] right on that news as well. And then it'll take you to the news article um that was was kind of being displayed. This is probably one of my favorite parts throughout the trading day to just
+
+[13:04] leave this open. And and you get a sense of where money's going, where money's leaving. And then SEC filings, also this one can be popped out, very very useful. You just leave it, and let's just say
+
+[13:14] you know you own Nvidia, or you know you own whatever stock it might be, and then all of a sudden there is a filing that comes in for that name, you can just see these things roll in as
+
+[13:25] they're happening. Um, and then that's really really nice to see. Again, you can click on the ticker symbol, that'll pull it up, or you can click on view, and that will pull up the SEC filing for
+
+[13:35] you to read right then and there. Super, super useful. And again, I'm going to continue to build upon it, iterate more and more and more. That just won't stop. Like, I will continue to try to make it
+
+[13:46] best for my personal use. Um, if you've got guys, if you guys have suggestions, I'm happy, um, to take those suggestions and try to build it for our best use. Um, and I
+
+[13:58] built parts of it where I was like, "Oh, you know what? That's pretty cool." But then I just didn't use it enough. And again, pretty cool is just is fine, but it's not good enough. I personally want
+
+[14:08] to build it for me, um, you know, selfishly. Um, I want to improve my own process. I want to improve my own, um, finding the needle in the haystack. That is really important. Um, but of
+
+[14:21] course, if somebody's got a great suggestion, and I know that a lot of people do, um, I'm I'm happy to take those suggestions, make it better, make it more useful, and, um, there will be
+
+[14:31] more tabs here most likely in the future. The next one coming, you know, will probably be the My Portfolio tab, where you can put the names that you do own, and then you can link, you know,
+
+[14:42] your, uh, filings right to it. So, if like one of your names gets a filing, a piece of news, you sit back down at the desk, and you're like, "Oh, why's my stock moving?" And then you happen to
+
+[14:52] check your My Portfolio tab. Um, you know, it'll say, you know, Nvidia 8-K, and you can click right on it, read it, see what the news was. Um, or on the flip side, I I will see, no guarantees,
+
+[15:05] but trying to turn it into an email/push notification right to your phone. You're out to lunch, and you got off the desk midday, and then your stock just did an offering, right? I'd love, personally,
+
+[15:18] I'd love to get a text message of that right away, and then with the link the SEC filing where I can click it and read it right then and there at lunch, right? I want to know about
+
+[15:29] these things in in real time. So, yeah, there there's definitely ideas floating in my head for how to make it better, and I'll always kind of be thinking
+
+[15:38] about that in real time. And like I said, if you're using it, you know, and you happen to notice that that, you know, you have to relog back
+
+[15:47] in, it's probably me making an update to it. Not a big deal. You can look at everything as a heat map as well. And then when you click on heat map, you can look at, you
+
+[15:56] know, today, 1 week, 3 months, 6 month, year to date, etc. And then here's your clipboard, there's your light mode, dark mode. And then if you want to search up a ticker, of
+
+[16:08] course, you can do that. Click on it, etc. I'm going to try to build this out, too, so that you can actually start to type out the group theme. So, if I were to start to type
+
+[16:18] out semiconductor, it'll just tell me semiconductor equipment or just semiconductor, and I can click on it and it'll just pull up the entire
+
+[16:26] group. So, that is probably an update that is coming soon, and I'll just continue to work on it from there. But, yeah, hopefully you guys can see how I
+
+[16:35] get a better use from it. My My idea with it has always just been to improve my nightly process. A lot of times, you know, I will go on that highs and lows group, and I'll see a bunch of
+
+[16:46] a group acting really well. See a really nice chart, and I'll just put it in my bullish clipboard, put it in my bullish clipboard, put it in my And at the end of the day, I'll take copy that bullish
+
+[16:54] clipboard, and I'll and I'll just copy it and put it right into my TradingView. And then at night, I'll just look through those names and be like, "Okay, these will
+
+[17:02] just stay in the universal list, but maybe in a couple of days these things might be actionable." And that is really how I stay on top of my own universal list. So,
+
+[17:13] hopefully that kind of helps. And then if there's any suggestions, any little tweaks that can be made, I'm all ears. Always trying to make, um, you know, this this uh website a
+
+[17:24] whole hell of a lot better. So, hopefully that helps kind of make some sense of how I use it. Um, and yeah, like I said, I'm all ears just to make this better from anybody
+
+[17:34] who's got a really great suggestion. Anyway, guys, thanks.

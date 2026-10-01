@@ -1,0 +1,161 @@
+[00:00] Hey guys, September 13th, 2026. I want to take this moment and talk about the 620 setup. I know I get asked because I mention it quite a bit whether I'm talking about um
+
+[00:14] in the nightly watch list videos or in the after hours recaps, trades I might be taking. In this kind of environment, pullback buys have been the preferred way to try to get involved into names
+
+[00:28] versus breakouts. And if you want to short as well, shorting into declining moving averages um or buying pullbacks into ascending moving averages or shorting at resistance gaps,
+
+[00:42] um shorting at fails of prior day highs or buying undercut rallies, these all have um counterintuitive entry tactics. And what I mean by that is you're looking to
+
+[00:55] short something that's going up after multiple days, but as a short into a declining key moving average. And you're looking to get long into an ascending or if something
+
+[01:08] undercuts a prior meaningful low and then reclaims that level and starts to turn back up. So, the 620 setup is actually something that I learned from Gil Morales. Um he used to for anybody
+
+[01:19] unfamiliar with Gil, he used to manage money for Bill Bill O'Neil and Company. And he came up with the 620 setup. It's not some magical um
+
+[01:32] it's not like some magical trading system. It's far from that. There's a lot more context that goes into it, but because I mention it so often, I wanted to kind of add some of that context
+
+[01:43] behind this setup. It's good to remember that moving averages the reason that they work is because a lot of people are using them. A lot of people put them on their charts. It's
+
+[01:55] why the 10-day can be important or for some people they use the nine or the 20-day can be important. Some people use the 21. It's why the 50-day can be important. Some people use the 65.
+
+[02:06] So, I just wanted to have people remember moving averages are just areas, areas of interest. Now, you guys have heard me talk about the importance of groups. And
+
+[02:21] so, now let's just imagine that a group is pulling back together in unison and let's just say for the sake of discussion we're talking about five
+
+[02:32] semiconductor stocks that you've noticed are moving together. Well, if four of them are starting to bounce at their 20-day, right? You now can sit there and say to yourself, "Okay, are they all
+
+[02:44] triggering 620 setups back to the upside?" And if so, what does that look like? How do I enter? Where's my stop placement? And how do I think about it? So, let's just kind of
+
+[02:57] go through that. And And again, what I want to I just want to read off a little piece of of what Gil Morales said about the 620
+
+[03:08] setups. And hopefully this will make um a little bit more sense. Um So, he basically said that he began to notice that he could use those entries and exits in short sale positions
+
+[03:21] at logical resistance or support that I could see on a daily chart. So, again, your focus, especially for me, is always on the daily. My focus is always on individual groups. My focus always tries
+
+[03:35] to be on leadership. But then you say to yourself, "Now you've got a logical area, an ascending 50-day, a declining 50-day, where price then starts to react on a smaller time
+
+[03:49] frame to that level of interest." Well, let's just say we're looking at a short and stocks start to come down within a group and you happen to be looking at one of those against a
+
+[04:00] logical area of resistance and you get a 620 setup, you now have a smaller time frame confluence with bigger time frame level of interest and now you have your moving averages crossing over on a
+
+[04:14] smaller time frame. So, effectively what could be considered an entry signal. And the important part is you now have a high, if you're playing the short side, to manage your risk against.
+
+[04:28] Okay, so that's a short. On the flip side, if you get an undercut of a prior meaningful low and you get a rally and you get your 620 setup to the upside and you happen to notice that a few
+
+[04:42] other names are starting to turn up within that group as well, you now have a smaller time frame bouncing on a smaller time frame from a daily logical level. And let's just say it happens to
+
+[04:55] be a semiconductor and the Qs are bouncing, well then now you're adding in some extra confluence that could very well help your semiconductors bounce some more. You if you're let's just say
+
+[05:07] uh playing AMD as a UNR or as a bounce setup and you have the QQQ and the SMH starting to turn up and another semiconductor like, you know, Alab and
+
+[05:20] Intel, that's adding on some confluence that your AMD idea can have a little bit more legs. Why? Because you've got Intel bouncing, you've got Alab bouncing, you've got the SMH bouncing, which is
+
+[05:33] the group as a whole, and you've got the QQQ's turning up as well. So, that is kind of how you think about it from like a higher overarching level. You first have got your group and your market,
+
+[05:44] very important, what are they doing? And then the individual stock itself. So, don't just think that a 620 setup is some kind of magical thing. You'll get a lot of those, right? Like, is a 620
+
+[05:56] setup as a as a move higher great if you're buying on the fifth green day in a row? No, of course not. You're That's the exact opposite of the Gil Morales, how he taught it. He's
+
+[06:09] using the 620 setup really for undercut rallies, and he's using them for failures at key moving averages or left-side peaks on prior on a daily chart. Three, four, five days up in a
+
+[06:20] row, and I'll get people and I I I even have it all the time with people in the Discord. You guys will be like, "Aero, what do you think about the 620 setup?" Yeah, but what's the daily chart look
+
+[06:30] like? Right? If you're just like paying attention to a 5-minute chart, but you're totally unaware of the daily, then you're really using it um incorrectly, right? Your great swing
+
+[06:39] trades, really you don't even need the 5-minute chart, but the important part is is it helps at a tighter spot to get long with an area of risk that can be very, very tight. That's why you couple
+
+[06:53] the two things. A 5-minute chart that's turning up off of a logical level or a 5-minute chart that's turning down off of a area of resistance. So, that is
+
+[07:04] important. We'll look at a couple examples. You don't need um a ton of these to really make sense of um
+
+[07:13] you know, how how this can play out. So, we're first looking at this Dell chart, and Dell on earnings, what does it do? It starts to just pull back, pull back, pull back right into the daily. And
+
+[07:27] what's this doing here? It's a rising 50-day. And then what does Dell do? It starts to bounce off the 50-day, and it's important to recognize that Gil Morales likes to use MACD. So, your
+
+[07:39] first part of your the first thing that happens is your MACD crosses up and then a little bit later your moving averages do. So, I know some people who like to get
+
+[07:49] long that MACD cross, but the thing that I'll say about MACD is you can get a lot of false signals within MACD before it finally either rolls over as a short or works as a long setup.
+
+[08:01] And but if you take this when your moving averages finally cross up, your entry is right here. Um let me get the uh arrow. Your entry is right there.
+
+[08:16] And your stop is roughly 4% call it to low of day. So, knowing you have a 4% stop, if you were to say, "Hey, I'm going to take a 10% position of my portfolio." Know that you're roughly
+
+[08:28] risking uh half percent of your portfolio on that trade. So, if you take that kind of trade, maybe you say to yourself, "You know what? I'm I'm willing to take a 5% position. I'll add
+
+[08:38] to it later down the road." And you know, if it continues to work, I don't see a problem with that either. You can do that and then all of a sudden the percent that you're actually risking
+
+[08:50] becomes a little bit smaller, but that is effectively the concept of a 620 setup. It all happens to pull back after earnings into a rising 50 simple moving average, you get your MACD cross, and
+
+[09:02] then you get your EMA cross. So, MACD cross will always happen first, and then here's a example of it on on the short side where recently you had what? And I've
+
+[09:14] talked about this before. If you want to play the short side, don't short in the hole, wait for price to come into a declining key moving average. So, what do you get? You get price rally multiple
+
+[09:26] days in a row right into a and we're literally rallying multiple days in a row, and then you finally get into the 50-day,
+
+[09:38] and what happens? And this is what I was talking about getting some false signals um with with MACD, you get MACD crossover once, but what didn't happen? Your six
+
+[09:48] period didn't cross below your 20. Then all of a sudden, your MACD crosses over again, and now you finally get your six period moving average cross below your 20, and then what happens over the next
+
+[10:02] one two sessions plus the day you shorted it, you get a nice little unwind, 4%, where on the flip side your risk is 1%. And then you get a day two move and a day three move.
+
+[10:16] Um so, you know, if you get a day two and then a day three move um or really even if you consider this day one the day you short and into day three into that morning washout,
+
+[10:27] that could very well be a spot um to peel some of those profits. And again, how would you potentially consider taking some off? You get the washout and then you get the reclaim of VWAP and a
+
+[10:38] 620 setup back to the upside, you get your MACD crossing back up, you get your moving averages crossing back up, and that tells you, "Hey, let me go ahead and make sure that I've paid myself on
+
+[10:49] this trade. I can continue to be patient with some of it using the declining 50 cuz I've absolutely nailed my entry, but I should take some time to lock in some of these gains, you know, at 1580,
+
+[11:00] 1590, and all of a sudden, you know, you watch this thing go to 1750, uh but you're still sitting, you know, comfortably with this as a winner. Um But again, the entire concept of a 620
+
+[11:13] setup is using daily confluence and still always thinking about the overarching trend of the market, the overarching trend of the group, and then the context of we're up one, two, three,
+
+[11:31] four days in a row. Are you really a buyer of Cypher after a 35% move? To which you guys would hear me say, are you effing nuts? Right? Of course not. And again, even this Rocket Lab, similar
+
+[11:48] story. What did it do in here? You rally into a declining 50-day. What do you think this ended up looking like on a 5-minute chart? Let's see if this one will allow me to go
+
+[11:59] um that far back. Let's see. Um yep, on this day. There you go. I mean, look at how absolutely gorgeous this is, right? What do you get right in the
+
+[12:09] morning? You get your cross of MACD. Then what ends up happening in here? You get your 620 setup plus on a really small time frame, a nice little rejection of VWAP where you try to get
+
+[12:19] back over and you fail. But here's the thing, your stop is high of day. So, 3% stop, you know what your stop is going to be. That allows you to manage your risk properly, size in properly, knowing
+
+[12:32] I'm risking 3% on every single share that I take to high of day. Okay, that's fine. You know, it ends up giving you a tiny little bit of trouble, but not before closing fairly weak. And then
+
+[12:43] what does this thing end up doing? Right? From an entry in here to you know, where this thing just completely unwinds, a 26% move. Right? So, 9, 10 times your money um in very
+
+[12:58] quick succession where it's just like every day is a down day, down day, down day, and can't even get above a rising 10-simple moving average. Where the next day you're gapping down, you're below a
+
+[13:09] 10, you're below the 200. There's just no reason to do anything with this trade. And what are you doing? Are you shorting in the hole? No, you're short And what did it do here? You're shorting
+
+[13:19] after the bounce into a flattening and a falling key moving average. For anybody who's followed me on Twitter long enough, you guys know I've said this, if you want to get
+
+[13:29] aggressive on the short side, wait for a push into declining moving averages. If you want to get aggressive on the long side in particular in this market, pullbacks into ascending moving
+
+[13:39] averages, support gaps, undercut rallies, really the only way to get involved unless you've got like this insanely picture perfect breakout that you must have and we're in an
+
+[13:48] environment where breakouts are being rewarded. We have not been in an rewarded. So, that's all I really needed to touch on the subject. Again, it's using the
+
+[13:59] overarching trend of the group in the market to make your decisions and not just looking at a stock up three days in a row and then on this day on Wednesday the 1st, you're like, "Ariel, but you
+
+[14:12] know, on on whatever the hell day this is, look at the 620 setup, you know, should I take the 620 set?" It's like, "Are you really going to take the 620 setup on
+
+[14:20] the fourth day in a row into a declining 50-day?" And that's what it requires some practice and what's called situational awareness.
+
+[14:29] Are you if you're really going to buy a stock on the potential fourth green day in a row, you need a little bit of help is what you need or you need to pick a new career, new hobby, new
+
+[14:38] whatever. Uh but you can't be buying stocks into a flattening 50-day on the fourth up day in a row. What you'd rather see in that scenario is let it get above the 50 on its own and then
+
+[14:48] re-tighten up and then maybe a little pullback into the 50 for you to play the 620 setup as it shows up as support. Not showing up yourself on the fourth up day in a row to be a buyer of this as a 620
+
+[15:00] setup that just ends up completely failing. So, again, but it doesn't matter. This isn't some magical elixir as some like, it's going to cure
+
+[15:10] all your trading woes. It just allows you to have defined risk with your entries, but you still have to develop that situational awareness. What groups are you trading? Is the stock even a
+
+[15:22] leader? Is it even worth buying? Is it in an undercut rally? Is it a support gap? Is it a key moving average? Or on the flip side, is it a resistance gap, a falling moving average, or a prior left
+
+[15:33] side peak? All of those uh scenarios, that was the intent of why Gil Morales created that 620 setup to begin with. Bigger picture in mind first, smaller entry tactic
+
+[15:45] second. So, hopefully that makes sense. Um if you guys have any questions, kind of happy to brush up on it again, but hopefully that will kind of help
+
+[15:53] reinforce what a 620 setup really is. All right, guys. We'll talk to you soon.

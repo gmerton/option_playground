@@ -1,0 +1,19 @@
+{
+  "video_id": "fx5BUtP3P_U",
+  "url": "https://www.youtube.com/watch?v=fx5BUtP3P_U",
+  "title": "Bulls get the day 2 rally!",
+  "channel": "Ariel Hernandez",
+  "channel_id": "UCn8hF9X6MGDtbTBb6w3JUYA",
+  "stream_date": "2026-04-01",
+  "duration": "15:06",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en-orig",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

@@ -1,0 +1,19 @@
+{
+ "video_id": "9K8q3znBvDw",
+ "title": "Looking at level 2",
+ "upload_date": "2026-09-03",
+ "date": "2026-09-03",
+ "session_date": "2026-09-03",
+ "session_date_basis": "spoken",
+ "observed_trades": [],
+ "principles": [],
+ "ambiguous_tickers": [
+  {
+   "timestamp": "06:31",
+   "caption_text": "SPCE",
+   "context": "Level 2 explainer about a large resting seller at $150 on a liquid name trading 144-151; no trade of his own stated.",
+   "guess": "SPCX",
+   "confidence": "likely"
+  }
+ ]
+}

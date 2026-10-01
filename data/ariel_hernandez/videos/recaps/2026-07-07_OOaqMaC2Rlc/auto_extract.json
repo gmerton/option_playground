@@ -1,0 +1,66 @@
+{
+ "video_id": "OOaqMaC2Rlc",
+ "title": "Out of memory!",
+ "upload_date": "2026-07-07",
+ "date": "2026-07-06",
+ "session_date": "2026-07-06",
+ "session_date_basis": "spoken",
+ "observed_trades": [
+  {
+   "date": "2026-07-06",
+   "ticker": "AAOI",
+   "ticker_as_captioned": "AOI",
+   "vehicle": null,
+   "direction": "short",
+   "action": "short",
+   "fill_timing": "the fifth",
+   "timing_basis": "stated",
+   "fill_date_stated": "",
+   "is_retrospective": true,
+   "position_after": "open",
+   "setup": "Short in a fast-moving optics name, the kind he says he prefers to short; he had it on from 205 and no longer does.",
+   "entry_basis": "",
+   "stop": "",
+   "size": "",
+   "price": 205,
+   "price_kind": "fill",
+   "source": "2026-07-07_OOaqMaC2Rlc@03:26",
+   "confidence": "stated",
+   "quote": "an AOI where I used to have a 205 short on it. Um, pretty bad cover on my part. I shorted on the fifth.",
+   "notes": "'the fifth' is not pinned: the session is Mon 2026-07-06 and July 5 is a Sunday, so he likely means an earlier month; left blank. 'AOI' read as Applied Optoelectronics (AAOI). Covered later (next row)."
+  },
+  {
+   "date": "2026-07-06",
+   "ticker": "AAOI",
+   "ticker_as_captioned": "AOI",
+   "vehicle": null,
+   "direction": "short",
+   "action": "cover",
+   "fill_timing": "the day that this thing just collapsed",
+   "timing_basis": "stated",
+   "fill_date_stated": "",
+   "is_retrospective": true,
+   "position_after": "closed",
+   "setup": "Covered the 205 short as price went out over the extended-hours high; calls it a bad cover, the top tick on the day the stock then collapsed.",
+   "entry_basis": "covered on a push over the ETH (extended-hours) high",
+   "stop": "",
+   "size": "",
+   "price": null,
+   "price_kind": null,
+   "source": "2026-07-07_OOaqMaC2Rlc@03:39",
+   "confidence": "stated",
+   "quote": "I covered it out over the ETH's high. Um, literally top tick to cover on the day that this thing just collapsed",
+   "notes": "Ticker named two sentences earlier ('an AOI'). Cover date not given. No current position."
+  }
+ ],
+ "principles": [],
+ "ambiguous_tickers": [
+  {
+   "timestamp": "03:26",
+   "caption_text": "AOI",
+   "context": "optics/photonics name he was short from 205 and covered",
+   "guess": "AAOI",
+   "confidence": "likely"
+  }
+ ]
+}

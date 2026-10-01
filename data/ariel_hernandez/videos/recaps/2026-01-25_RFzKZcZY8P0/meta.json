@@ -1,0 +1,19 @@
+{
+  "video_id": "RFzKZcZY8P0",
+  "url": "https://www.youtube.com/watch?v=RFzKZcZY8P0",
+  "title": "How I navigated a fun 2025! 7.2 million. Plus the December Recap",
+  "channel": "Ariel Hernandez",
+  "channel_id": "UCn8hF9X6MGDtbTBb6w3JUYA",
+  "stream_date": "2026-01-25",
+  "duration": "37:53",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en-orig",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

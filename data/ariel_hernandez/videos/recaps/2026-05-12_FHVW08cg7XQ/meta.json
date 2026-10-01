@@ -1,0 +1,19 @@
+{
+  "video_id": "FHVW08cg7XQ",
+  "url": "https://www.youtube.com/watch?v=FHVW08cg7XQ",
+  "title": "Bears land a light jab. More to follow?",
+  "channel": "Ariel Hernandez",
+  "channel_id": "UCn8hF9X6MGDtbTBb6w3JUYA",
+  "stream_date": "2026-05-12",
+  "duration": "9:38",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en-orig",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

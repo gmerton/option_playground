@@ -1,0 +1,161 @@
+[00:00] Hey guys, it is August 22nd, 2026 and I want to make this video covering the topic of cot data. Um, you guys have probably heard me talk about it before. Um, it is something that I've learned
+
+[00:11] from Jason Shapiro. Let's talk a little bit about what cot data is. It is reportables um in the futures markets with you have large and small speculators and commercials.
+
+[00:24] So effectively, you you have to think to yourself when you think about cot data, who are historically the biggest losers in the market? Well, they're going to be large and small speculators, right?
+
+[00:39] Commercials usually are the sometimes the producers of whether it be crude oil or wheat or soybeans or copper, silver, gold, and you can get now if you're looking at
+
+[00:56] you know um these this these cot data figures and and I'll just kind of pull up the chart here. um when you're looking at cot data and you're looking at different industries,
+
+[01:08] you don't and this isn't perfect, right? Um and I and I'll explain it as best as I can. The way that I've learned it is one, it's not 100%. You don't look at cot data and say, "Oh, something is
+
+[01:22] crowded to the long side, therefore I should short it." Or something is very very crowded to the bottom, right? or it's it's heavily shorted by large and small speculators. Therefore, I should
+
+[01:36] look to be long. But generally speaking, you want to fade the masses, right? And and I think a really good way to think about this is if everybody's piled into one side of the boat, if everybody's
+
+[01:51] already long a particular asset or group, whatever it might be, the the Dow Jones, Ethereum, um, and even recently copper. You've heard me talk about that. It doesn't
+
+[02:04] always mean it's going to work perfectly. What you really are looking for, and this is the way that I've learned it, is you're looking for a news failure. And what that would look like
+
+[02:16] is you get a really piece of good news. Let's say everybody's long um the Dow Jones and you get a really piece of good news for the market, but then the Dow closes on the lows. Well, if everybody's
+
+[02:31] already long and the Dow then closes on the lows on a day where there's a piece of good news, that could be viewed as a news failure and you've got a spot to risk off of. That's the important part
+
+[02:42] about the trade and you now have a bunch of small and large speculators very long on one side of the boat and you know that they have to potentially unwind some positioning. If we think back to
+
+[02:55] 2022 when the markets bottomed, it was heavily shorted and you got the worst inflation data in a decade and the stock market bottomed on that day. You got the data, you gap down, and then you get the
+
+[03:11] gap down and you actually close on the highs in October of 2022. And so you got large and small speculators. They're heavily short the market. The market's in a downtrend.
+
+[03:22] That makes sense. You get heavy crowded positioning to the short side and then you get a close on the highs. That's a news failure and you've got an entry day. You've got positioning leaning to
+
+[03:35] the side of large and small speculators are already short and then therefore you get an opportunity to go long and play the turn. The idea with cot data is you're actually looking for turns, but
+
+[03:48] you're looking for the turn um only when positioning agrees. So, a really good um example, and I don't want to say that um I've seen it work incredibly well um for
+
+[04:03] Ethereum, but if you go back to since last year, as soon as this positioning started to get crowded in August and then more so in September and then October, does anybody remember? So,
+
+[04:17] there was no large and small speculators really trading Ethereum. Then Tom Lee starts to buy the hell out of Ethereum and you know retail traders are getting very excited about it. And then you look
+
+[04:32] at um ETH and I will pull up the chart here and show you guys um and you look at ETH as of last year, right? you started to um and the dates on this would be in Jul and August and
+
+[04:48] then September and then October very it start the rate of change went up substantially when you look at cot data now we go from no positioning at all to now speculators are starting to get long
+
+[05:05] right now as of late um you know you've you've actually started to that speculators stay very long, but the rate of change hasn't gone up dramatically. Um,
+
+[05:20] so it'll actually be interesting to see how this ends up playing out with Ethereum. Um, where you kind of look at it, you go, "Well, Ariel, lately it's made a pretty big move." And for that, I
+
+[05:32] will um, excuse me, just moved the wrong chart there. Um, to that I would agree. And it'll be interesting to see if Ethereum can actually continue to go higher um you know with all of this all
+
+[05:46] of the um large and small speculators um in particular the large speculators already you know kind of being in that pool. But what you are what you don't have right now and like you did over
+
+[05:59] here is you don't have the same amount of small speculators uh playing in that pool. That's just one example. Um, another example would be the Dow Jones, right? What has started to happen to the
+
+[06:11] Dow Jones going basically to um, you know, 6 and every one of these bars is a weak. So, basically going back to 623, 630, 77, the Dow has gotten crowded. Yes, it's gone a little bit
+
+[06:28] higher. But then you get your most crowded positioning on 84 um which is just three weeks ago. And now we can take a peek at the Dow Jones and you'll see how the Dow um since that
+
+[06:43] time the peak on this would have been August 5th and your peak on positioning would have been August 4th. So here's August 4th. That's Friday. That's the reportable. But even the week prior you
+
+[06:57] had had a steady run up in the Dow in terms of positioning. And the important part here is the rate of change. You go from large speculators not being in that pool at all to them now starting to get
+
+[07:11] crowded on the long side. And the commercials, it's always going to be the aggregate of small and large speculators. So if small and large speculators are long, the aggregate of
+
+[07:26] that is going to be your commercials. And so on the reporting period, which is a Friday, 84 if I'm not mistaken, um or at least this would have been when it appeared that positioning, but it
+
+[07:42] would have been from the re week prior. You get this crowded positioning and then all of a sudden you look at your Dow and on 85 effectively this puts in a high and it has continued to stay under
+
+[07:56] pressure. Well, the important part when you look at cot data and cot positioning is at the for the time being it is crowded on the long side. So do you have a ton of edge aligning yourself with who
+
+[08:09] historically are the biggest losers in the market? So that's a really good way to kind of um look at cot data and and let's look at another example because we don't want to single out um just
+
+[08:22] instances where it works. You want to kind of look at instances where it doesn't work. And you've seen the rate of change if you look at the last five years. Copper is as crowded right now as
+
+[08:33] it has ever been. Right? Literally in the last 5 years, I don't have any sort of reading that shows us even more crowded. Now, of course, we can all think about copper and say, well, you
+
+[08:46] need tons of copper for these data centers. You need steel, you need copper, you need some silver for some of the electronic components. Um, and all of that makes sense. So, could could
+
+[08:57] that be a reason that copper continues to act? Well, now the one thing that I'll say is when you do look at copper, once it started to really get crowded in terms of um rate of change, I would say
+
+[09:11] early May. And if you look at the copper chart now, yes, I can look at FCX, which is a copper producer, and it just broke out of a beautiful base, might I add. And can that go higher? Of course it
+
+[09:24] can. But when you look at copper futures themselves, look at what this has been doing effectively since May 5th when I mentioned it started to get [snorts] very very crowded. If you start to look
+
+[09:36] in here um in May, early May, middle of May, you know, every one of these is a week and you start to look at the date there and you're like, okay, 55, 512, 519, 526, it it's getting kind of
+
+[09:49] crowded in here. Well, then you look at your copper futures chart. this damn thing has done nothing. Why? That's because everybody who can own it owns it already. Now, that might not be the same
+
+[10:03] case for a producer like FCX or SECCO or ERRO and you look at some of these charts and you go, you know, these are these are really nice charts. And and to that I I would agree. I I thought it was
+
+[10:18] really really pretty in here. And you had much less crowded positioning in copper going into November, December. And you look at um November uh December, which you would be like
+
+[10:33] right here, positioning started to pick up, right? Um but it did it did, if you look at erro, it it did break out and it did work pretty well from this little base. So it's always interesting. Um,
+
+[10:46] again, CO data is not meant to be uh the end- all beall your biggest decision maker. I think another really good example that we can look at and and we could probably leave it there is when
+
+[11:01] you look at um how we bottomed in 2022. So, let's take a peek at this. So, here we are. We've got the NQ and this would be October of 2022. Look at the small speculators down here. They are short
+
+[11:18] the hell out of the market. Well, what happened in October of 2022? We got the hottest infl inflation print ever, right? And then we can go and and quickly look at the NQ back then. and
+
+[11:34] this was our gap down and bought up. There would have been your day to buy October 13th of 2022. And if you were looking at your cot data right around then,
+
+[11:49] you had small speculators, not as short as they had been on November 13th, but still very much on the short side of the market. So you get small and large speculators. The people
+
+[12:03] who lose most often on one side of the boat, there's a piece of bad news. News goes in the opposite direction. So in other words, in the opposite direction of the most frequent
+
+[12:17] losers in the market, small and large speculators, and you say, "Now I've got an entry." And you can pick the turn. And coincidentally, that ended up marking the low. You look at the NASDAQ
+
+[12:29] as of late and semiconductors and the NASDAQ's just been kind of building out this base as of late and it's not doing anything. But then all of a sudden you start to look at cot data and you're
+
+[12:40] like, "Oh boy." Right? Small speculators are actually getting pretty damn long here um in comparison to anything before. So your rate of change is actually where they're getting more and
+
+[12:55] more and more long. Does that happen to be because some of these semiconductor names has gotten have gotten beaten up quite a bit. If that's the case then, you know, and they're trying to buy the
+
+[13:09] dip, buy the dip, buy the dip. All of a sudden, if this gets more crowded on the long side, it's hard for the NASDAQ to go higher when then everybody owns it. So again, that doesn't mean you don't
+
+[13:23] have you just don't go long. I I don't think that that's what that means at all. What it means is if you get a piece of good news that should send the market higher and the
+
+[13:34] market then closes on the lows, you absolutely should keep an eye on your positions and still treat them the same. Trail them on their ascending moving average. Maybe that requires you
+
+[13:46] to peel a piece into that. But um I I've been asked about cot data because you know I do have it and you've got you know all of your markets and and look there are people out there who just
+
+[13:59] trade futures markets and who trade cattle and who trade hog and who trade coffee and sugar and orange juice and lumber and you know your bonds and and and as long as it's uh you can and even
+
+[14:11] your currencies you know when things get too crowded on one side you you you fade the masses. Um, but you're looking for a news failure, a piece of bad news that you would say,
+
+[14:23] "Oh man, that's supposed to send the market lower, but everybody's already short." You go long against the masses. And why? Because if they're wrong and they got to get out and they're
+
+[14:34] massively short, they got to cover, forcing price higher. And then on the flip side, if everybody's already long and you get a piece of good news that should send a market higher and it
+
+[14:43] closes on the lows, they have to unwind that long positioning sending markets lower and you are playing the turn. So again, the the caveat with cot data is you are really paying attention to a
+
+[14:57] piece of news so that you can deem it a news failure. Otherwise, um it it's just good for showing you where positioning is. You can combine cot data with some nim if you like trading tech names, if
+
+[15:11] you like trading uh individual stocks themselves. I have it help me. So, for instance, when Ethereum was super crowded uh last year, I was like and then Tom Lee was going on CNBC every day
+
+[15:25] and and basically pumping BMR and Ethereum, I was just saying I'm going to avoid this stuff. Why? Because it's crowded to the long side. I didn't sit there and try to find a position in
+
+[15:36] Ethereum and Ethereum and Ethere and then all of a sudden a chart starts to bottom. You get a stage 4B, but your rate of change has slowed down in terms of positioning to one side because you
+
+[15:47] can even look at gold for instance and say, "Well, Ariel, it's it's always got large speculators right on it uh to the upside, right?" But you're what you have here is rates of change. And the more
+
+[16:02] someone gets long something or the faster it happens, the more it struggles to go higher when large and small speculators all own the same side of the boat. So that's just good to um pay
+
+[16:14] attention to um and kind of know and understand that rate of change as well. So hopefully that kind of clears things up. If anybody has questions, I'd be happy to make another video and kind of
+
+[16:25] um you know go through it again a little slower, different examples. But um yeah, if you guys have questions, hopefully that makes sense and kind of how I use cot data in my own trading. Again, it's
+
+[16:35] not there to completely influence you and what you can and cannot do. Um you know, usually there are moments when the masses can be right. Um, but again, when you know that everybody is on one side
+
+[16:49] of the boat and then you get a piece of news that should send everything higher because it's a great piece of news, right? Like let's just say for a hypothetical example, the next three
+
+[16:59] weeks the NASDAQ gets super crowded to the long side. Four weeks, six weeks, whatever it might be, and then the war ends, right? Trump's like, "Hey, look, no more war with Iran." And then all of
+
+[17:11] a sudden the markets, you're like, "Holy markets are going to fly on this." And they don't. Then all of a sudden you say, "Well, everybody already owns the NASDAQ." And then what happens? You
+
+[17:21] could potentially treat that as a news failure. You were supposed to rally. It gapped up overnight and then it just started to fade on the close your closing week. You get short, stop at
+
+[17:31] high, and then you know you've got long positioning to unwind. That would be a hypothetical example of what could happen. So, just some thoughts on how I view it and hopefully that makes sense
+
+[17:42] and um yeah, I I'll I'm I'm happy to answer any questions based on this topic anytime. So, just feel free to reach out. Later, guys.

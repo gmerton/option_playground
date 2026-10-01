@@ -1,0 +1,19 @@
+{
+  "video_id": "oSjce5YeQTk",
+  "url": "https://www.youtube.com/watch?v=oSjce5YeQTk",
+  "title": "12/1/2025 Daily Recap: Last Month of the year!",
+  "channel": "Ariel Hernandez",
+  "channel_id": "UCn8hF9X6MGDtbTBb6w3JUYA",
+  "stream_date": "2025-12-02",
+  "duration": "23:42",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en-orig",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

@@ -1,0 +1,19 @@
+{
+  "video_id": "OWf9AO4PWGo",
+  "url": "https://www.youtube.com/watch?v=OWf9AO4PWGo",
+  "title": "Bulls cure Cancer: MRNA",
+  "channel": "Ariel Hernandez",
+  "channel_id": "UCn8hF9X6MGDtbTBb6w3JUYA",
+  "stream_date": "2026-08-19",
+  "duration": "16:37",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en-orig",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

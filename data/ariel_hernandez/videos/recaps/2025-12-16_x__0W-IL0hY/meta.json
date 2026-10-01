@@ -1,0 +1,19 @@
+{
+  "video_id": "x__0W-IL0hY",
+  "url": "https://www.youtube.com/watch?v=x__0W-IL0hY",
+  "title": "12/16/2025 Daily Recap: $QQQ $SPY Higher low?",
+  "channel": "Ariel Hernandez",
+  "channel_id": "UCn8hF9X6MGDtbTBb6w3JUYA",
+  "stream_date": "2025-12-16",
+  "duration": "16:23",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en-orig",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

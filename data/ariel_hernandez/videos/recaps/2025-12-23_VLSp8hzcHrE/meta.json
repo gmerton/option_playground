@@ -1,0 +1,19 @@
+{
+  "video_id": "VLSp8hzcHrE",
+  "url": "https://www.youtube.com/watch?v=VLSp8hzcHrE",
+  "title": "12/22/2025 Daily Recap: It's a metal market!",
+  "channel": "Ariel Hernandez",
+  "channel_id": "UCn8hF9X6MGDtbTBb6w3JUYA",
+  "stream_date": "2025-12-23",
+  "duration": "10:41",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en-orig",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

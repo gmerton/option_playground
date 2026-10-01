@@ -1,0 +1,81 @@
+[00:00] Hey guys, I just wanted to uh talk about this quick little add-on. So, I ended up integrating some of my favorite scans right into Theme Tracker. So, if you just go, obviously you've got your list.
+
+[00:13] Most recently I have added um portfolio um and you could kind of have your names that are in there, your entire watch list, long or short. Um and then your universe list and we'll
+
+[00:26] talk about that in a second how to integrate, but if you go right into your stock screener, you go to your these pre-builts that I have on here for you, you can just click on some of my
+
+[00:39] favorite scans. Let's Let's just call it a one-week mover. And it'll run through your list of one-week movers. Um
+
+[00:47] you could look at them list view or you can look at them chart view and it'll just pull up uh all the mini charts. So, which is very convenient. Right here you sort them by time.
+
+[00:58] Super super easy to do. Um and if you like a chart and you kind of want to dig through them and you're like, "Okay, you know what? ASTS, I don't know about FIG. I don't know about
+
+[01:09] sale." And And you go through your charts, Enphase, Ed, etc., etc. Um you could go to your list and you guys have kind of heard me talk about the clipboard before. So, a single click
+
+[01:20] will put it right on your long watch list if you thought was actionable, and it'll be there and you could just send to watch list. You can send it a click it a second time and that'll go on your
+
+[01:31] bearish watch list and send a watch list and you could add, you know, all of the names. Just make it um make it red effectively. Or a third click and it's
+
+[01:41] blue. And if you're like, "Well, the name looks good. It's nice to see, um but I don't know that it's actionable anytime soon." You can send it to your watch list and
+
+[01:53] that'll send right to your universe watch list. So, whenever you do go to your portfolio and watch list, those names will now be right there. So, very very easy
+
+[02:04] um to kind of, you know, and anywhere you're at on this entire app, if you have a third click and it turns blue, um it can go right to your universe list. Uh again, you can click on a group and
+
+[02:17] that third click, whoops, um the third click, when it turns blue, that's and then you you're looking at your clipboard again, you can send to your watch list and then those names will be
+
+[02:28] on the watch list. And then also, um whenever you're in any single group, you click on this little wafer and that'll always pull up the mini charts within that group.
+
+[02:38] Give them a quick second to load, pick your pick your particular time frame, super super easy uh to do right there. And what was what else? Oh, yeah, SEC filings. This one I think I may have
+
+[02:51] talked about before, but I um tied in all SEC filings where, you know, Hive, for instance, and you can just click view and that will show you and pull up the SEC filings right there.
+
+[03:04] And um what I'm trying to do, what I'll do next, um or or at least soon enough, is your portfolio and watch list. So, if you have your portfolio or your watch list or your universe, um or if you
+
+[03:17] think, you know, a name is actionable, um I will tie in the SEC filings directly to a name and I'll I'll create like a little uh it'll look like a little envelope. And so, if a stock has
+
+[03:31] um an SEC filing, you know, for for one of your names in your portfolio, um I'll kind of try to tie it in so that you know that that individual name just got
+
+[03:42] a file filing, whether it was earnings or an offering or um just a regular 8K with some news, um and so you'll know about it and it'll tie right in. Again, you can
+
+[03:54] always click on the individual name. You can always read through, you know, their most recent filing. You can click on, you know, other names. They might have more recent filings and you can go way
+
+[04:05] back. You know, these are 2023 filings, so you can go way back and look at their 10Ks, their 10Qs, their 8Ks. If there's offerings, you'll you'll have that right there and you'll be able to read through
+
+[04:17] those. So, fairly easy to do and I'll try to tie in the filings as soon as possible. But for now, you do have some stock screeners that you can play with. These are some
+
+[04:28] of my favorite and if you find some names that you really like, you can obviously pull up the chart. You can view them as little mini charts effectively and if
+
+[04:39] there's multiple um pages, you just sift your way through pages. If there's more than 200, then you will have multiple pages. If not,
+
+[04:49] they will all just be on one page for you to look through. So, pretty easy to do and if you happen to make your own and you want to save it as your own, you just call this mine and
+
+[05:01] then it'll be under your presets as well. And then you can easily just, you know, kill it. But yeah, super super easy to do. Um
+
+[05:11] So, hopefully that helps and just remember wherever you see a clipboard, single click puts it in your bullish clipboard, double click puts it red, makes it in your bearish, a third click
+
+[05:21] puts it in your universe and then you just send to watchlist. Or if you want to pull those names out and put them in right into your TradingView, just hit copy. Um and then you'll just go ahead
+
+[05:32] into your TradingView or your DeepView or your Finviz or whatever and just literally paste wherever you can paste your entire list with the comma. So, it makes it super super easy to do. So,
+
+[05:44] um yeah, I I've got like a gazillion more ideas in the head. So, if you're using the app or or the website, excuse me. If you're using the website and you notice you have to log back in,
+
+[05:56] that's because I'm making um I'll make an adjustment, I'll republish it, I'll make an adjustment, I'll republish it. So, I apologize if that's a little frustrating that you do have to
+
+[06:08] keep logging in. But, um you know, my apologies. I I It's just every time I republish something or make a small little tweak
+
+[06:17] and and then I want to see it, you know, what it looks like functionality-wise, um yeah, it it it like logs everybody out. So, hopefully that's not too much of a
+
+[06:29] pain in the ass for everybody. But, you know, it it kind of is what it is for the time being. Anyway, that was it. Yeah, screener is live SEC filings and your own portfolio and watch
+
+[06:40] list. You can add names into any of those parts and I'm going to try to tie in the SEC filings right to that. And right at the top of your, you know, your normal page, you know, right up here,
+
+[06:51] um or or maybe at the top of like every page, I'll have that little envelope so that you know, one of your names had a filing in case you want to read
+
+[06:59] it. I'll I'm going to try to build in a push notification so that if you're wanting to put in um your phone number, you'll just get it as a text message where then you can just read it uh your
+
+[07:10] SEC filing right there as a link on your phone. So, for anybody who's interested in that. But, anyway, um yeah, hopefully that helps and you
+
+[07:19] could fool around with the stock screener. Officially, all of my stock screeners that I basically use from, you know, even CAN SLIM um with good earnings and sales,
+
+[07:30] uh you know, you'll have all of your stocks right in there. So, very very easy to use, but uh anyway, that's it, guys. We'll talk to you soon. Later.
