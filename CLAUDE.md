@@ -194,6 +194,11 @@ simply ran *after* the claim. The order is the fix. Each rule carries the case t
 How the owner wants the work done. These are his standing instructions, not inferences — follow them
 unless he says otherwise in the moment.
 
+- **The goal is triple-digit annual returns** (Gabe, 2026-09-30) — "like Tito, Qullamaggie, Ariel and Luk … rather than
+  finding strategies that have a very small but positive return." Rank every proposed study by whether it can move the
+  book toward that; do not propose or run low-return index / calendar / premium tests unless he asks (the trigger was an
+  SPY dip rule that passed at +0.45%/trade, 6.8%/yr). Supersedes "what to run NOW" (9/28) as the organising goal. The
+  research conventions above still apply to anything that claims to get there.
 - **Commit directly to `main`.** Personal repo; no feature-branch-by-default. Commit and push straight to
   `main` unless told otherwise.
 - **His trades are not evidence.** Assume he is a bad trader. His log is admissible for conformance,

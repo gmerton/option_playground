@@ -30,6 +30,14 @@ The house breakout is **uncertified selection, trade small**. The measured leak 
 2.6 ADR higher than a random later entry in the same name. Expect nulls; treat a positive as suspect until it
 survives real fills, a control that holds the confound fixed, and a correction.
 
+## ⭐ The goal (Gabe, 2026-09-30)
+
+**Triple-digit annual returns, "like Tito, Qullamaggie, Ariel and Luk" — not strategies with a very small but positive
+return.** This supersedes "what to run NOW" (9/28). Rank studies by whether they can move the book toward that. The
+measured starting point: the mechanical house breakout compounds ~5%/yr at 10% notional with a 54% drawdown
+(`adaptive_trader_2026-09-27.md`), so the open question is where those traders' return comes from. The SPY dip rule
+below passed but is off-goal; the TLT month-end and third-Friday proposals are parked.
+
 ## Recently changed — live, and not obvious from the code
 
 **2026-09-30 evening — ⭐ index dip rule PASSES the discovery bar (candidate, NOT adopted; Gabe to decide):** buy the SPY
