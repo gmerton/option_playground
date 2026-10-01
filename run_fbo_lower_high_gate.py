@@ -80,7 +80,18 @@ def lh_tags(m: pd.DataFrame, t: str, adr_pct: float, close_t: float) -> tuple[bo
     after = since.iloc[tr_pos + 1:]
     need = trough * (1 + 0.10 * adr_pct / 100)
     lh = bool(((after.high >= need) & (after.high < hi)).any())
-    return lh, lh and close_t < trough
+    # LH+ (fixed after the first run returned n = 0: the trough above includes the alert bar, so a close below it is
+    # impossible). Mini-support = the low between the session high and a lower-high bar that printed BEFORE the alert
+    # bar; LH+ = the alert close breaks that support.
+    prior = since.iloc[:-1]
+    lows, highs = prior.low.values, prior.high.values
+    lhp = False
+    for k in range(1, len(prior)):
+        sup = lows[:k].min()
+        if sup * (1 + 0.10 * adr_pct / 100) <= highs[k] < hi and close_t < sup:
+            lhp = True
+            break
+    return lh, lhp
 
 
 def short_trade(m: pd.DataFrame, t: str, stop_pct: float) -> float | None:

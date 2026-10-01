@@ -1,0 +1,10 @@
+# FBO lower-high gate (pre-registration in the docstring)
+curated FBO alerts scored 3,175 (skipped 0) over 153 dates, 95 names; LH 45%, LH+ 66%; median stop 0.50 ADR
+  ALL FBO (reproduces 9/23)    n 3,175  SIGNAL -0.148%  POST +0.008%  edge -0.156pp t -4.04  halves -0.160 / -0.153  win 46%
+  PRIMARY  LH                  n 1,444  SIGNAL -0.083%  POST -0.001%  edge -0.082pp t -2.25  halves -0.019 / -0.142  win 47%
+  not LH                       n 1,731  SIGNAL -0.203%  POST +0.016%  edge -0.218pp t -4.10  halves -0.286 / -0.162  win 46%
+  LH+ (mini-support break)     n 2,090  SIGNAL -0.170%  POST +0.015%  edge -0.185pp t -4.14  halves -0.149 / -0.217  win 47%
+
+  LH minus not-LH (SIGNAL, date-paired, 152 dates): +0.050pp  t +0.57
+
+PRIMARY LH SIGNAL - POST: -0.082pp t -2.25 halves -0.019/-0.142 n 1444
