@@ -30,7 +30,7 @@ survives real fills, a control that holds the confound fixed, and a correction.
 
 ## Recently changed — live, and not obvious from the code
 
-**2026-09-30 (9 tests, all NULL / UNDERPOWERED; rows in TEST_INDEX, docs in `data/studies/*_2026-09-30.md`):**
+**2026-09-30 (8 tests, all NULL / UNDERPOWERED; rows in TEST_INDEX, docs in `data/studies/*_2026-09-30.md`):**
 * **Exits — keep the 20-EMA trail.** RS-loss exit NULL (differs on 1.1% of trades); swing-low trail NULL
   (exposure-matched +0.44pp t 1.71, width-fragile). ⚠ Pattern now seen four times (STOP_ONLY, RS-only, swing-low,
   vol-decay): any LOOSER exit wins ~+0.8pp raw, ~half of it beta, residual t < 2. Always run the beta × SPY
