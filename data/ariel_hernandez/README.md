@@ -47,6 +47,24 @@ analysis/<date>_<topic>.md         Per-video scoring: his call per ticker vs our
                                    follow-up (what the chart did). This is where the hit-rate accrues.
 ```
 
+### Bulk transcripts and the trade log (started 2026-09-30)
+
+The channel has ~705 PUBLIC videos back to 2025-04 (about 377 daily recaps of ~15 min and 328 "Premarket Prep" live
+streams of ~48 min) plus the members-only watchlist videos. The public ones are ingested in bulk, newest first:
+
+```
+videos/_channel_videos.tsv         manifest of every channel video (id, tab, title, seconds, availability)
+videos/recaps/<date>_<id>/         public daily videos (Videos tab)
+videos/premarket/<date>_<id>/      public "Premarket Prep" streams (Live tab)
+videos/<type>/<date>_<id>/auto_extract.json   per-video extract: HIS OWN trades, each with a verbatim quote
+trades/observed_trades.jsonl       the trade log, built from the extracts (same shape as Luk's, plus vehicle/size/quote)
+ambiguous_tickers.md               generated homework: garbled tickers and trade dates to confirm
+```
+
+- `ingest_ariel_channel.py` — resumable bulk ingest (uses the `en-orig` caption track; the `en` track returns 429).
+- `build_luk_extracts.py --kb data/ariel_hernandez --name "Ariel Hernandez"` — rebuilds the log and the homework page.
+- `check_extract_quotes.py --kb data/ariel_hernandez` — checks every trade row's quote against its transcript.
+
 Video folder date = the evening the video was recorded/uploaded (his "9/8 watchlist" is filed
 under 2026-09-07). `for_session` in meta.json carries the session it was made for.
 
