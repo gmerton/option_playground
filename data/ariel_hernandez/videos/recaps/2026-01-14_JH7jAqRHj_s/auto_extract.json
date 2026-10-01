@@ -1,0 +1,168 @@
+{
+ "video_id": "JH7jAqRHj_s",
+ "title": "1/14/2026 Daily Recap: Software left for dead!",
+ "upload_date": "2026-01-14",
+ "date": "2026-01-14",
+ "session_date": "2026-01-14",
+ "session_date_basis": "spoken",
+ "observed_trades": [
+  {
+   "date": "2026-01-14", "ticker": "COIN", "ticker_as_captioned": "coin", "vehicle": null,
+   "direction": "long", "action": "entry",
+   "fill_timing": "yesterday", "timing_basis": "stated", "fill_date_stated": "2026-01-13", "is_retrospective": false,
+   "position_after": "partial",
+   "setup": "Bought Coinbase with Bitcoin moving, after it found support on the rising 50-day.",
+   "entry_basis": "support on the rising 50 with Bitcoin pushing", "stop": "", "size": "", "price": null, "price_kind": null,
+   "source": "2026-01-14_JH7jAqRHj_s@02:24", "confidence": "stated",
+   "quote": "You started to find support on the rising 50 yesterday. I bought coin with Bitcoin going",
+   "notes": "Caption 'coin' = COIN (Coinbase named at 02:56). Half of yesterday's shares cut today (see trim row)."
+  },
+  {
+   "date": "2026-01-14", "ticker": "COIN", "ticker_as_captioned": "coin", "vehicle": null,
+   "direction": "long", "action": "add",
+   "fill_timing": "today", "timing_basis": "stated", "fill_date_stated": "2026-01-14", "is_retrospective": false,
+   "position_after": "partial",
+   "setup": "Added to Coinbase as it took out yesterday's high, pushing into the 50-day before rolling over midday.",
+   "entry_basis": "break of yesterday's high", "stop": "", "size": "", "price": null, "price_kind": null,
+   "source": "2026-01-14_JH7jAqRHj_s@02:34", "confidence": "stated",
+   "quote": "today when we're taking out yesterday's highs, you know, I'm adding some more",
+   "notes": "The adds were removed the same day."
+  },
+  {
+   "date": "2026-01-14", "ticker": "COIN", "ticker_as_captioned": "Coinbase", "vehicle": null,
+   "direction": "long", "action": "trim",
+   "fill_timing": "today", "timing_basis": "implied", "fill_date_stated": "2026-01-14", "is_retrospective": false,
+   "position_after": "partial",
+   "setup": "Cut today's adds and half of yesterday's shares when Coinbase rejected the declining 50-day and took out the lows.",
+   "entry_basis": "", "stop": "rejection at the declining 50-day / taking out the lows", "size": "all adds plus half of yesterday's shares", "price": null, "price_kind": null,
+   "source": "2026-01-14_JH7jAqRHj_s@03:05", "confidence": "stated",
+   "quote": "just peel away some of the Coinbase my ads and some of",
+   "notes": "Repeated at 11:10: 'even a Coinbase where I added and then when it took out basically the lows, I had to cut my ads, cut half from yesterday.'"
+  },
+  {
+   "date": "2026-01-14", "ticker": "ALB", "ticker_as_captioned": "ALB", "vehicle": null,
+   "direction": "long", "action": "trim",
+   "fill_timing": "today", "timing_basis": "implied", "fill_date_stated": "2026-01-14", "is_retrospective": false,
+   "position_after": "partial",
+   "setup": "Took a small piece of ALB off as it rejected and rolled over.",
+   "entry_basis": "", "stop": "", "size": "a little piece", "price": null, "price_kind": null,
+   "source": "2026-01-14_JH7jAqRHj_s@03:16", "confidence": "stated",
+   "quote": "you're kind of rolling over. I took a little piece off",
+   "notes": "Ticker named in the preceding sentence ('you had an ALB')."
+  },
+  {
+   "date": "2026-01-14", "ticker": "ALB", "ticker_as_captioned": "ALB", "vehicle": null,
+   "direction": "long", "action": "add",
+   "fill_timing": "towards the end of the day", "timing_basis": "stated", "fill_date_stated": "2026-01-14", "is_retrospective": false,
+   "position_after": "open",
+   "setup": "Re-added the ALB piece late in the day as QQQ turned up and ALB formed a 620 setup back above VWAP.",
+   "entry_basis": "620 setup back above VWAP", "stop": "", "size": "the piece taken off", "price": null, "price_kind": null,
+   "source": "2026-01-14_JH7jAqRHj_s@03:16", "confidence": "stated",
+   "quote": "I actually added it back uh towards the end of the day",
+   "notes": "Still long at 04:37: 'I have my long in ALB'."
+  },
+  {
+   "date": "2026-01-14", "ticker": "TSLA", "ticker_as_captioned": "Tesla", "vehicle": null,
+   "direction": "long", "action": "add",
+   "fill_timing": "yesterday", "timing_basis": "stated", "fill_date_stated": "2026-01-13", "is_retrospective": false,
+   "position_after": "closed",
+   "setup": "Added to Tesla on the 50 SMA.",
+   "entry_basis": "50 SMA", "stop": "", "size": "", "price": null, "price_kind": null,
+   "source": "2026-01-14_JH7jAqRHj_s@03:28", "confidence": "stated",
+   "quote": "What ended up happening was I added yesterday on the 50 simple moving average",
+   "notes": "He says this add caused him to kill the position today (11:00)."
+  },
+  {
+   "date": "2026-01-14", "ticker": "TSLA", "ticker_as_captioned": "Tesla", "vehicle": null,
+   "direction": "long", "action": "stopped_out",
+   "fill_timing": "this morning", "timing_basis": "stated", "fill_date_stated": "2026-01-14", "is_retrospective": false,
+   "position_after": "closed",
+   "setup": "On the gap down he waited for the break of the first 5-minute low, then stopped himself out; a nice green trade went flat.",
+   "entry_basis": "", "stop": "break of the first five-minute low", "size": "whole position", "price": null, "price_kind": null,
+   "source": "2026-01-14_JH7jAqRHj_s@03:50", "confidence": "stated",
+   "quote": "when you broke the five-minute low, I ended up stopping myself out of my Tesla",
+   "notes": "Self-described mismanagement; at 11:00 'which kind of caused me to have to kill my position today'."
+  },
+  {
+   "date": "2026-01-14", "ticker": "SILJ", "ticker_as_captioned": "SIJ / SILJ", "vehicle": null,
+   "direction": "short", "action": "short",
+   "fill_timing": "yesterday", "timing_basis": "stated", "fill_date_stated": "2026-01-13", "is_retrospective": false,
+   "position_after": "open",
+   "setup": "Short junior silver miners on relative weakness of the miners vs silver futures.",
+   "entry_basis": "relative weakness in silver miners", "stop": "", "size": "", "price": null, "price_kind": null,
+   "source": "2026-01-14_JH7jAqRHj_s@04:03", "confidence": "stated",
+   "quote": "I put on a short on SIJ yesterday",
+   "notes": "Still holding: 'I still have my short in SILJ' (04:37)."
+  },
+  {
+   "date": "2026-01-14", "ticker": "BABA", "ticker_as_captioned": "Alibaba / Baba", "vehicle": null,
+   "direction": "long", "action": "hold",
+   "fill_timing": "", "timing_basis": "", "fill_date_stated": "", "is_retrospective": false,
+   "position_after": "open",
+   "setup": "Alibaba long held from 159.",
+   "entry_basis": "", "stop": "", "size": "", "price": 159, "price_kind": "basis",
+   "source": "2026-01-14_JH7jAqRHj_s@04:37", "confidence": "stated",
+   "quote": "I have my long in Alibaba and we will continue to let this work from 159",
+   "notes": "Quote spans 04:37-04:49 blocks."
+  },
+  {
+   "date": "2026-01-14", "ticker": "NEM", "ticker_as_captioned": "NEM", "vehicle": null,
+   "direction": "long", "action": "trim",
+   "fill_timing": "today", "timing_basis": "stated", "fill_date_stated": "2026-01-14", "is_retrospective": false,
+   "position_after": "partial",
+   "setup": "Trimmed Newmont again as it reached seven ATRs above the 50-day while riding the 20 SMA; now a hold.",
+   "entry_basis": "", "stop": "", "size": "a little bit more", "price": null, "price_kind": null,
+   "source": "2026-01-14_JH7jAqRHj_s@04:49", "confidence": "stated",
+   "quote": "I have my long in NEM which I reduced a little bit more of today",
+   "notes": "Trim trigger: 7x ATR from the 50 (05:01)."
+  },
+  {
+   "date": "2026-01-14", "ticker": "NFLX", "ticker_as_captioned": "Netflix", "vehicle": null,
+   "direction": "short", "action": "cover",
+   "fill_timing": "today", "timing_basis": "implied", "fill_date_stated": "2026-01-14", "is_retrospective": false,
+   "position_after": "partial",
+   "setup": "Covered part of the Netflix short into weakness; will trail the rest with the 20 SMA / ~96 neckline into earnings.",
+   "entry_basis": "", "stop": "20 SMA, or the upper neckline around 96", "size": "some", "price": 96, "price_kind": "stop",
+   "source": "2026-01-14_JH7jAqRHj_s@05:01", "confidence": "stated",
+   "quote": "Netflix I finally covered some off as well into this weakness",
+   "notes": "Calls the Netflix short one of his bigger positions (11:21)."
+  },
+  {
+   "date": "2026-01-14", "ticker": "XOM", "ticker_as_captioned": "XOM / SOM", "vehicle": null,
+   "direction": "long", "action": "hold",
+   "fill_timing": "", "timing_basis": "", "fill_date_stated": "", "is_retrospective": false,
+   "position_after": "open",
+   "setup": "Exxon long breaking out of a two-year base.",
+   "entry_basis": "", "stop": "", "size": "one of his bigger positions", "price": null, "price_kind": null,
+   "source": "2026-01-14_JH7jAqRHj_s@05:23", "confidence": "stated",
+   "quote": "XOM, which continues to be an absolute monster for me today",
+   "notes": ""
+  },
+  {
+   "date": "2026-01-14", "ticker": "VLO", "ticker_as_captioned": "VLOO", "vehicle": null,
+   "direction": "long", "action": "entry",
+   "fill_timing": "today", "timing_basis": "stated", "fill_date_stated": "2026-01-14", "is_retrospective": false,
+   "position_after": "closed",
+   "setup": "Tried Valero on a break over prior day high.",
+   "entry_basis": "break over prior day high", "stop": "", "size": "", "price": null, "price_kind": null,
+   "source": "2026-01-14_JH7jAqRHj_s@05:56", "confidence": "stated",
+   "quote": "I tried to add some VLOO today as a little break over prior day high",
+   "notes": "Caption 'VLOO' read as VLO (Valero), listed among energy names. 'add' here means add to the book; no prior VLO position mentioned, so logged as entry."
+  },
+  {
+   "date": "2026-01-14", "ticker": "VLO", "ticker_as_captioned": "VLOO", "vehicle": null,
+   "direction": "long", "action": "exit",
+   "fill_timing": "today", "timing_basis": "implied", "fill_date_stated": "2026-01-14", "is_retrospective": false,
+   "position_after": "closed",
+   "setup": "Weak close got him out; he won't hold flat positions overnight in a choppy tape.",
+   "entry_basis": "", "stop": "weak close", "size": "", "price": null, "price_kind": null,
+   "source": "2026-01-14_JH7jAqRHj_s@06:23", "confidence": "stated",
+   "quote": "I got long VLOO and then ultimately the week close got me out",
+   "notes": "Caption 'week close' = weak close."
+  }
+ ],
+ "principles": [],
+ "ambiguous_tickers": [
+  {"timestamp": "05:56", "caption_text": "VLOO", "context": "energy names (CVX, MPC, OXY...) then 'I tried to add some VLOO today'", "guess": "VLO", "confidence": "likely"}
+ ]
+}

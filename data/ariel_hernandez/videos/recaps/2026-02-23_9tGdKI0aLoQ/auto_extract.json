@@ -1,0 +1,110 @@
+{
+ "video_id": "9tGdKI0aLoQ",
+ "title": "Claude to death",
+ "upload_date": "2026-02-23",
+ "date": "2026-02-23",
+ "session_date": "2026-02-23",
+ "session_date_basis": "spoken",
+ "observed_trades": [
+  {
+   "date": "2026-02-23", "ticker": "XOM", "ticker_as_captioned": "XOM", "vehicle": null,
+   "direction": "long", "action": "hold",
+   "fill_timing": "", "timing_basis": "", "fill_date_stated": "", "is_retrospective": false,
+   "position_after": "open",
+   "setup": "Holding Exxon; fine as long as it stays above the 20 SMA.",
+   "entry_basis": "", "stop": "above the 20 simple moving average", "size": "",
+   "price": null, "price_kind": null,
+   "source": "2026-02-23_9tGdKI0aLoQ@02:35", "confidence": "stated",
+   "quote": "Right? My XOM continues to act great.",
+   "notes": "Repeated at 03:16: 'XOM again continuing to act fine as long as you are above the 20 simple moving average'."
+  },
+  {
+   "date": "2026-02-23", "ticker": "AVGO", "ticker_as_captioned": "AVGO", "vehicle": null,
+   "direction": "short", "action": "hold",
+   "fill_timing": "", "timing_basis": "", "fill_date_stated": "", "is_retrospective": false,
+   "position_after": "open",
+   "setup": "Short Broadcom, still rejecting off the 50 SMA.",
+   "entry_basis": "rejection off the 50 simple moving average", "stop": "", "size": "",
+   "price": null, "price_kind": null,
+   "source": "2026-02-23_9tGdKI0aLoQ@02:35", "confidence": "stated",
+   "quote": "My AVGO short is, you know, still rejecting off the 50 simple moving average",
+   "notes": ""
+  },
+  {
+   "date": "2026-02-23", "ticker": "MU", "ticker_as_captioned": "Micron", "vehicle": null,
+   "direction": "long", "action": "hold",
+   "fill_timing": "", "timing_basis": "", "fill_date_stated": "", "is_retrospective": false,
+   "position_after": "open",
+   "setup": "Long Micron, down a couple of bucks; fine as long as it holds above 415.",
+   "entry_basis": "", "stop": "holding above the 415 level", "size": "",
+   "price": 415, "price_kind": "level",
+   "source": "2026-02-23_9tGdKI0aLoQ@02:49", "confidence": "stated",
+   "quote": "Micron on the long side, I'm down a couple bucks, but as long as we're holding above that 415 level",
+   "notes": ""
+  },
+  {
+   "date": "2026-02-23", "ticker": "NFLX", "ticker_as_captioned": "Netflix", "vehicle": null,
+   "direction": "short", "action": "hold",
+   "fill_timing": "", "timing_basis": "", "fill_date_stated": "", "is_retrospective": false,
+   "position_after": "open",
+   "setup": "Netflix short continuing to make new closing lows.",
+   "entry_basis": "", "stop": "", "size": "",
+   "price": null, "price_kind": null,
+   "source": "2026-02-23_9tGdKI0aLoQ@02:49", "confidence": "inferred",
+   "quote": "Netflix on the short side continues to basically be at new closing lows",
+   "notes": "No first-person pronoun on this item, but it sits in his run-down of his own positions (XOM, AVGO short, Micron, SQQQ)."
+  },
+  {
+   "date": "2026-02-23", "ticker": "QQQ", "ticker_as_captioned": "SQQQ", "vehicle": "SQQQ",
+   "direction": "short", "action": "hold",
+   "fill_timing": "the 12 or 11th of february", "timing_basis": "stated", "fill_date_stated": "", "is_retrospective": false,
+   "position_after": "open",
+   "setup": "Long SQQQ (short Nasdaq) held since about Feb 11-12, working out fine.",
+   "entry_basis": "", "stop": "", "size": "",
+   "price": null, "price_kind": null,
+   "source": "2026-02-23_9tGdKI0aLoQ@03:00", "confidence": "stated",
+   "quote": "SQQQ I have a long open. Um I pretty much had it since the what day was this? The 12 or 11th of February",
+   "notes": "Entry date uncertain between Feb 11 and Feb 12, so fill_date_stated left blank."
+  },
+  {
+   "date": "2026-02-23", "ticker": "VLO", "ticker_as_captioned": "VLOO", "vehicle": null,
+   "direction": "long", "action": "hold",
+   "fill_timing": "", "timing_basis": "", "fill_date_stated": "", "is_retrospective": false,
+   "position_after": "open",
+   "setup": "Valero digesting up near highs; energy stock acting fine.",
+   "entry_basis": "", "stop": "", "size": "",
+   "price": null, "price_kind": null,
+   "source": "2026-02-23_9tGdKI0aLoQ@03:00", "confidence": "inferred",
+   "quote": "working out just fine. And then VLOO just digesting up here",
+   "notes": "'VLOO' = Valero (VLO), 'energy stock'. Listed in his position run-down right after SQQQ; no explicit 'I own'."
+  },
+  {
+   "date": "2026-02-23", "ticker": "SLV", "ticker_as_captioned": "SLV", "vehicle": null,
+   "direction": "short", "action": "short",
+   "fill_timing": "today", "timing_basis": "implied", "fill_date_stated": "2026-02-23", "is_retrospective": false,
+   "position_after": "closed",
+   "setup": "Tried again to short SLV on a smaller-time-frame breakdown, thinking it was rejecting the 20 SMA.",
+   "entry_basis": "smaller time frame breakdown; rejection of the 20 simple moving average", "stop": "new high", "size": "",
+   "price": null, "price_kind": null,
+   "source": "2026-02-23_9tGdKI0aLoQ@05:36", "confidence": "stated",
+   "quote": "I tried once again to get short the SLV. Did not work.",
+   "notes": "Preceded by 'I did very little today.' Also 'I tried to short this breakdown' in the same block."
+  },
+  {
+   "date": "2026-02-23", "ticker": "SLV", "ticker_as_captioned": "SLV", "vehicle": null,
+   "direction": "short", "action": "stopped_out",
+   "fill_timing": "today", "timing_basis": "implied", "fill_date_stated": "2026-02-23", "is_retrospective": false,
+   "position_after": "closed",
+   "setup": "Stopped out of the SLV short when it made a new high.",
+   "entry_basis": "", "stop": "stopped out on a new high", "size": "",
+   "price": null, "price_kind": null,
+   "source": "2026-02-23_9tGdKI0aLoQ@05:47", "confidence": "stated",
+   "quote": "I ended up getting stopped out of my position when you went and made a new high",
+   "notes": ""
+  }
+ ],
+ "principles": [],
+ "ambiguous_tickers": [
+  {"timestamp": "03:00", "caption_text": "VLOO", "context": "'VLOO just digesting up here. Energy stock'", "guess": "VLO", "confidence": "likely"}
+ ]
+}

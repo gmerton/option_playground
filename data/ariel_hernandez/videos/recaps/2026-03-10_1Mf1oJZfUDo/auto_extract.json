@@ -1,0 +1,122 @@
+{
+ "video_id": "1Mf1oJZfUDo",
+ "title": "Stock Market ping pong continues",
+ "upload_date": "2026-03-10",
+ "date": "2026-03-10",
+ "session_date": "2026-03-10",
+ "session_date_basis": "spoken",
+ "observed_trades": [
+  {
+   "date": "2026-03-10", "ticker": "APP", "ticker_as_captioned": "Apple love and", "vehicle": null,
+   "direction": "short", "action": "short",
+   "fill_timing": "over the last couple of days", "timing_basis": "stated", "fill_date_stated": "", "is_retrospective": true,
+   "position_after": "closed",
+   "setup": "Tried shorting AppLovin into the 200-day; it closed too strong to sit in comfortably. Right idea, wrong timing; it then sold off today.",
+   "entry_basis": "short into the 200 simple moving average", "stop": "closed too strong to hold", "size": "",
+   "price": null, "price_kind": null,
+   "source": "2026-03-10_1Mf1oJZfUDo@02:37", "confidence": "stated",
+   "quote": "unfortunately, I tried shorting this one over the last couple of days, not a lot of success.",
+   "notes": "'Apple love and' (02:26) = AppLovin (APP). Exact dates not stated."
+  },
+  {
+   "date": "2026-03-10", "ticker": "APP", "ticker_as_captioned": "Apple love and", "vehicle": null,
+   "direction": "short", "action": "cover",
+   "fill_timing": "", "timing_basis": "", "fill_date_stated": "", "is_retrospective": true,
+   "position_after": "closed",
+   "setup": "Covered the first attempt because the close was too strong.",
+   "entry_basis": "", "stop": "closing a little too strong", "size": "",
+   "price": null, "price_kind": null,
+   "source": "2026-03-10_1Mf1oJZfUDo@02:37", "confidence": "stated",
+   "quote": "closing a little bit too strong for me to just sit in there comfortably.",
+   "notes": "Quote begins in the 02:37 block ('and then it just') and runs into 02:49."
+  },
+  {
+   "date": "2026-03-10", "ticker": "APP", "ticker_as_captioned": "Apple love and", "vehicle": null,
+   "direction": "short", "action": "reentry",
+   "fill_timing": "a few days later", "timing_basis": "stated", "fill_date_stated": "", "is_retrospective": true,
+   "position_after": "closed",
+   "setup": "Second AppLovin short attempt a few days later; again not closing weak enough to hold.",
+   "entry_basis": "", "stop": "not closing weak enough", "size": "",
+   "price": null, "price_kind": null,
+   "source": "2026-03-10_1Mf1oJZfUDo@02:49", "confidence": "inferred",
+   "quote": "And then again, a few days later, you know, it just is not closing weak enough",
+   "notes": "Second attempt inferred from 'again' plus 'for me to comfortably able to hold that'; he does not explicitly say he re-shorted."
+  },
+  {
+   "date": "2026-03-10", "ticker": "APP", "ticker_as_captioned": "Apple love and", "vehicle": null,
+   "direction": "short", "action": "cover",
+   "fill_timing": "a few days later", "timing_basis": "stated", "fill_date_stated": "", "is_retrospective": true,
+   "position_after": "closed",
+   "setup": "Covered the second attempt; APP then broke down today from the 50-day.",
+   "entry_basis": "", "stop": "", "size": "",
+   "price": null, "price_kind": null,
+   "source": "2026-03-10_1Mf1oJZfUDo@02:49", "confidence": "inferred",
+   "quote": "not closing weak enough for me to comfortably able",
+   "notes": "Not short today when it sold off ('right idea, wrong timing')."
+  },
+  {
+   "date": "2026-03-10", "ticker": "GDX", "ticker_as_captioned": "GDX", "vehicle": null,
+   "direction": "short", "action": "hold",
+   "fill_timing": "", "timing_basis": "", "fill_date_stated": "", "is_retrospective": false,
+   "position_after": "partial",
+   "setup": "Remainder of the GDX short from 115; now trailing it with the 20 SMA.",
+   "entry_basis": "", "stop": "20 simple moving average as guide", "size": "the remainder",
+   "price": 115, "price_kind": "basis",
+   "source": "2026-03-10_1Mf1oJZfUDo@04:37", "confidence": "stated",
+   "quote": "I still continue to remain short. I am now using the 20",
+   "notes": "'remainder of my 115 short on GDX' (04:49); 115 read as his entry level. At 09:18: 'I have GDX at the moment as a 115 short'."
+  },
+  {
+   "date": "2026-03-10", "ticker": "NVDA", "ticker_as_captioned": "Nvidia", "vehicle": null,
+   "direction": "short", "action": "short",
+   "fill_timing": "today", "timing_basis": "stated", "fill_date_stated": "2026-03-10", "is_retrospective": false,
+   "position_after": "open",
+   "setup": "Shorted Nvidia against the 50-day; tight high-of-day stop.",
+   "entry_basis": "short against the 50-day", "stop": "high of day, less than a dollar risk", "size": "5% position, less than 1% risk",
+   "price": 185.39, "price_kind": "fill",
+   "source": "2026-03-10_1Mf1oJZfUDo@04:49", "confidence": "stated",
+   "quote": "I picked up a little bit of Nvidia short today against the 50.",
+   "notes": "Fill 185.39 stated at 09:30 ('I took my short at ... 185.39 with high of day risk')."
+  },
+  {
+   "date": "2026-03-10", "ticker": "PLTR", "ticker_as_captioned": "Palantir", "vehicle": null,
+   "direction": "short", "action": "hold",
+   "fill_timing": "a few days ago", "timing_basis": "stated", "fill_date_stated": "", "is_retrospective": false,
+   "position_after": "open",
+   "setup": "Short Palantir after a V-shaped recovery into the flattening 200; relative weakness. Plans to cover a piece near 147 (unfilled gap) and let the rest work on the declining 50.",
+   "entry_basis": "V-shape recovery into the flattening 200", "stop": "", "size": "",
+   "price": 168.88, "price_kind": "basis",
+   "source": "2026-03-10_1Mf1oJZfUDo@05:24", "confidence": "stated",
+   "quote": "I also have a Palantir short shorted very very similar",
+   "notes": "Entry 168.88 stated at 09:42; 'It's not the news that got me into Palantir short a few days ago' (10:59). Cover target 147."
+  },
+  {
+   "date": "2026-03-10", "ticker": "VLO", "ticker_as_captioned": "VLO", "vehicle": null,
+   "direction": "long", "action": "hold",
+   "fill_timing": "", "timing_basis": "", "fill_date_stated": "", "is_retrospective": false,
+   "position_after": "partial",
+   "setup": "Still long Valero; effectively completely trimmed already, letting it work.",
+   "entry_basis": "", "stop": "", "size": "effectively completely trimmed",
+   "price": null, "price_kind": null,
+   "source": "2026-03-10_1Mf1oJZfUDo@09:53", "confidence": "stated",
+   "quote": "I still have my long in VLO",
+   "notes": "At 10:28: 'I'm effectively completely trimmed on Exxon Mobil and VLO'."
+  },
+  {
+   "date": "2026-03-10", "ticker": "XOM", "ticker_as_captioned": "Exxon Mobil", "vehicle": null,
+   "direction": "long", "action": "hold",
+   "fill_timing": "", "timing_basis": "", "fill_date_stated": "", "is_retrospective": false,
+   "position_after": "partial",
+   "setup": "Still long Exxon, effectively fully trimmed; comfortable while above 145, would allow down to the ~143 gap fill and might add there as the 50 catches up.",
+   "entry_basis": "", "stop": "comfortable above 145; room to the gap fill ~143", "size": "effectively completely trimmed",
+   "price": 145, "price_kind": "stop",
+   "source": "2026-03-10_1Mf1oJZfUDo@09:53", "confidence": "stated",
+   "quote": "and I still have my long in Exxon Mobil.",
+   "notes": "Quote starts at end of 09:53 block and continues into 10:04."
+  }
+ ],
+ "principles": [],
+ "ambiguous_tickers": [
+  {"timestamp": "02:26", "caption_text": "Apple love and", "context": "shorted into the 50 / loss of the 200-day; he tried shorting it", "guess": "APP", "confidence": "likely"}
+ ]
+}

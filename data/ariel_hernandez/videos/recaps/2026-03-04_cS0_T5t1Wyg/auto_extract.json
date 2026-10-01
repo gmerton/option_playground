@@ -1,0 +1,96 @@
+{
+ "video_id": "cS0_T5t1Wyg",
+ "title": "BTC back on the horse",
+ "upload_date": "2026-03-04",
+ "date": "2026-03-04",
+ "session_date": "2026-03-04",
+ "session_date_basis": "spoken",
+ "observed_trades": [
+  {
+   "date": "2026-03-04", "ticker": "VLO", "ticker_as_captioned": "VLOO", "vehicle": null,
+   "direction": "long", "action": "hold",
+   "fill_timing": "", "timing_basis": "", "fill_date_stated": "", "is_retrospective": false,
+   "position_after": "open",
+   "setup": "Long Valero with the oil and gas group running again.",
+   "entry_basis": "", "stop": "", "size": "",
+   "price": null, "price_kind": null,
+   "source": "2026-03-04_cS0_T5t1Wyg@01:26", "confidence": "stated",
+   "quote": "Off to the races again today. I own VLOO, very very nice day.",
+   "notes": "'VLOO' = Valero (VLO). Repeated at 13:17: 'VLOO is absolutely fantastic. I continue to be long this name'."
+  },
+  {
+   "date": "2026-03-04", "ticker": "AVGO", "ticker_as_captioned": "AVGO", "vehicle": null,
+   "direction": "short", "action": "hold",
+   "fill_timing": "the 9th of february", "timing_basis": "stated", "fill_date_stated": "2026-02-09", "is_retrospective": false,
+   "position_after": "open",
+   "setup": "Short Broadcom into earnings since Feb 9; stays short while it lives below the 50 SMA.",
+   "entry_basis": "", "stop": "stay short while below the 50 simple moving average", "size": "",
+   "price": null, "price_kind": null,
+   "source": "2026-03-04_cS0_T5t1Wyg@04:35", "confidence": "stated",
+   "quote": "I will continue to stay short uh AVGO going all the way back to the 9th of February",
+   "notes": "fill_timing/date refer to when the short was put on. Also 03:59 'AVGO on earnings and that is one that I continue to be short'; after-hours earnings push toward 334.5. Quote begins at the tail of the 04:35 block and runs into 04:46."
+  },
+  {
+   "date": "2026-03-04", "ticker": "BE", "ticker_as_captioned": "Bloom Energy", "vehicle": null,
+   "direction": "long", "action": "entry",
+   "fill_timing": "today", "timing_basis": "stated", "fill_date_stated": "2026-03-04", "is_retrospective": false,
+   "position_after": "open",
+   "setup": "Subtle higher lows; bought the break of the prior day high, closed near highs. Plans to lighten a touch around 270-274.",
+   "entry_basis": "break of prior day high", "stop": "", "size": "some",
+   "price": null, "price_kind": null,
+   "source": "2026-03-04_cS0_T5t1Wyg@09:04", "confidence": "stated",
+   "quote": "I did buy um some Bloom Energy today.",
+   "notes": "Target 270/273/274 to lighten up. At 13:17: 'I do have some BE which I picked up today'."
+  },
+  {
+   "date": "2026-03-04", "ticker": "IGV", "ticker_as_captioned": "IGV", "vehicle": null,
+   "direction": "long", "action": "entry",
+   "fill_timing": "earlier", "timing_basis": "stated", "fill_date_stated": "", "is_retrospective": true,
+   "position_after": "closed",
+   "setup": "Tried to play a software bounce in IGV earlier; caught a tiny move and it rolled back over.",
+   "entry_basis": "", "stop": "", "size": "",
+   "price": null, "price_kind": null,
+   "source": "2026-03-04_cS0_T5t1Wyg@11:24", "confidence": "stated",
+   "quote": "I personally wish I were long some IGV. I tried to play it earlier.",
+   "notes": "Pointing at a chart ('it was right in here'); date not stated. Not currently long."
+  },
+  {
+   "date": "2026-03-04", "ticker": "IGV", "ticker_as_captioned": "IGV", "vehicle": null,
+   "direction": "long", "action": "exit",
+   "fill_timing": "earlier", "timing_basis": "stated", "fill_date_stated": "", "is_retrospective": true,
+   "position_after": "closed",
+   "setup": "Caught a teeny tiny move, then IGV rolled back over; no luck.",
+   "entry_basis": "", "stop": "", "size": "",
+   "price": null, "price_kind": null,
+   "source": "2026-03-04_cS0_T5t1Wyg@11:38", "confidence": "stated",
+   "quote": "to play this here. Caught a teeny tiny move.",
+   "notes": "Exit implied by 'with no luck' and 'wish I were long'."
+  },
+  {
+   "date": "2026-03-04", "ticker": "GDX", "ticker_as_captioned": "GDX", "vehicle": null,
+   "direction": "short", "action": "hold",
+   "fill_timing": "two days ago", "timing_basis": "stated", "fill_date_stated": "", "is_retrospective": false,
+   "position_after": "open",
+   "setup": "Short GDX taken two days ago; closed up about half a percent today.",
+   "entry_basis": "", "stop": "", "size": "",
+   "price": null, "price_kind": null,
+   "source": "2026-03-04_cS0_T5t1Wyg@13:17", "confidence": "stated",
+   "quote": "I do have GDX from two days ago, which I continue to remain short.",
+   "notes": "At 14:37 he says 'yesterday or two days ago was GDX', so the entry day is 2026-03-02 or 2026-03-03; fill_date_stated left blank."
+  },
+  {
+   "date": "2026-03-04", "ticker": "XOM", "ticker_as_captioned": "Exon Mobile", "vehicle": null,
+   "direction": "long", "action": "hold",
+   "fill_timing": "", "timing_basis": "", "fill_date_stated": "", "is_retrospective": false,
+   "position_after": "open",
+   "setup": "Still long Exxon Mobil.",
+   "entry_basis": "", "stop": "", "size": "",
+   "price": null, "price_kind": null,
+   "source": "2026-03-04_cS0_T5t1Wyg@13:17", "confidence": "stated",
+   "quote": "I continue to be long this name and I continue to be long Exon Mobile",
+   "notes": "'Exon Mobile' = Exxon Mobil (XOM)."
+  }
+ ],
+ "principles": [],
+ "ambiguous_tickers": []
+}

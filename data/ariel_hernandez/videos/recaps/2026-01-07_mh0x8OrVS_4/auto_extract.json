@@ -1,0 +1,144 @@
+{
+ "video_id": "mh0x8OrVS_4",
+ "title": "1/6/2026 Daily Recep: Making Memory Great Again!",
+ "upload_date": "2026-01-07",
+ "date": "2026-01-06",
+ "session_date": "2026-01-06",
+ "session_date_basis": "spoken",
+ "observed_trades": [
+  {
+   "date": "2026-01-06", "ticker": "AMZN", "ticker_as_captioned": "Amazon", "vehicle": null,
+   "direction": "long", "action": "entry",
+   "fill_timing": "friday", "timing_basis": "stated", "fill_date_stated": "2026-01-02", "is_retrospective": false,
+   "position_after": "closed",
+   "setup": "Bought Amazon on a pivot breakout at about 233; shaken out right away, then the stock rallied 4% today.",
+   "entry_basis": "pivot at the 233 level", "stop": "", "size": "", "price": 233, "price_kind": "level",
+   "source": "2026-01-07_mh0x8OrVS_4@01:37", "confidence": "stated",
+   "quote": "Amazon woke up in a big way. Unfortunately, I bought this thing on Friday",
+   "notes": "Also at 08:44: 'I bought Amazon on Friday, you know, no go.'"
+  },
+  {
+   "date": "2026-01-06", "ticker": "AMZN", "ticker_as_captioned": "Amazon", "vehicle": null,
+   "direction": "long", "action": "stopped_out",
+   "fill_timing": "friday", "timing_basis": "stated", "fill_date_stated": "2026-01-02", "is_retrospective": false,
+   "position_after": "closed",
+   "setup": "Shaken out of the Friday Amazon entry the same day.",
+   "entry_basis": "", "stop": "", "size": "", "price": null, "price_kind": null,
+   "source": "2026-01-07_mh0x8OrVS_4@08:53", "confidence": "stated",
+   "quote": "I thought it had a nice little pivot, and I'm getting stopped out on Friday",
+   "notes": "Quote spans 08:53-09:03 blocks. At 01:37 'got immediately shaking out shaken out' and 01:48 'tried buying it on Friday, got shaken out right away'."
+  },
+  {
+   "date": "2026-01-06", "ticker": "ALAB", "ticker_as_captioned": "ALAB", "vehicle": null,
+   "direction": "long", "action": "entry",
+   "fill_timing": "friday", "timing_basis": "stated", "fill_date_stated": "2026-01-02", "is_retrospective": false,
+   "position_after": "closed",
+   "setup": "Bought Astera Labs because semiconductors were acting well.",
+   "entry_basis": "semiconductor group strength", "stop": "", "size": "", "price": null, "price_kind": null,
+   "source": "2026-01-07_mh0x8OrVS_4@08:44", "confidence": "stated",
+   "quote": "I bought ALAB because I thought semiconductors were acting well",
+   "notes": ""
+  },
+  {
+   "date": "2026-01-06", "ticker": "ALAB", "ticker_as_captioned": "ALAB", "vehicle": null,
+   "direction": "long", "action": "stopped_out",
+   "fill_timing": "monday", "timing_basis": "stated", "fill_date_stated": "2026-01-05", "is_retrospective": false,
+   "position_after": "closed",
+   "setup": "ALAB looked good for a day then stopped him out Monday.",
+   "entry_basis": "", "stop": "", "size": "", "price": null, "price_kind": null,
+   "source": "2026-01-07_mh0x8OrVS_4@08:53", "confidence": "stated",
+   "quote": "come Monday, you know, I'm getting stopped out",
+   "notes": "Also 'that was a no-go yesterday'."
+  },
+  {
+   "date": "2026-01-06", "ticker": "RDDT", "ticker_as_captioned": "Reddit", "vehicle": null,
+   "direction": "long", "action": "entry",
+   "fill_timing": "friday", "timing_basis": "stated", "fill_date_stated": "2026-01-02", "is_retrospective": false,
+   "position_after": "open",
+   "setup": "Bought Reddit Friday; it pushed out today.",
+   "entry_basis": "", "stop": "", "size": "", "price": null, "price_kind": null,
+   "source": "2026-01-07_mh0x8OrVS_4@09:14", "confidence": "stated",
+   "quote": "I did buy Reddit as well on Friday",
+   "notes": "Still held at 15:11: 'I do have my Reddit long which I bought on Friday.'"
+  },
+  {
+   "date": "2026-01-06", "ticker": "QUBT", "ticker_as_captioned": "QUBt", "vehicle": null,
+   "direction": "short", "action": "add",
+   "fill_timing": "yesterday", "timing_basis": "stated", "fill_date_stated": "2026-01-05", "is_retrospective": false,
+   "position_after": "open",
+   "setup": "Added to an existing QUBT short against the 50 SMA.",
+   "entry_basis": "rejection at the 50 SMA", "stop": "done as a short above 12.55", "size": "", "price": 12.55, "price_kind": "stop",
+   "source": "2026-01-07_mh0x8OrVS_4@09:27", "confidence": "stated",
+   "quote": "I tried putting on some QUBt short against the 50 simple moving average uh yesterday",
+   "notes": "He calls these 'my ads' (adds), so treated as an add to an existing short ('I still have my QBT short', 15:11)."
+  },
+  {
+   "date": "2026-01-06", "ticker": "QUBT", "ticker_as_captioned": "QUBt / QBT", "vehicle": null,
+   "direction": "short", "action": "cover",
+   "fill_timing": "today", "timing_basis": "implied", "fill_date_stated": "2026-01-06", "is_retrospective": false,
+   "position_after": "partial",
+   "setup": "Covered yesterday's adds for a small gain as price ramped back toward flat; core short kept.",
+   "entry_basis": "", "stop": "will be done with the short above 12.55", "size": "the adds from yesterday", "price": null, "price_kind": null,
+   "source": "2026-01-07_mh0x8OrVS_4@15:11", "confidence": "stated",
+   "quote": "I still have my QBT short. I just took off my ads from yesterday for a little bit of money",
+   "notes": "Also at 09:39: 'I just took my ads off for a small small gain'. Would re-add on a 50 SMA rejection."
+  },
+  {
+   "date": "2026-01-06", "ticker": "SILJ", "ticker_as_captioned": "SIJ", "vehicle": null,
+   "direction": "short", "action": "stopped_out",
+   "fill_timing": "", "timing_basis": "", "fill_date_stated": "", "is_retrospective": false,
+   "position_after": "closed",
+   "setup": "Short in junior silver miners stopped out when price took out the 22nd's high; he had a pretty big position.",
+   "entry_basis": "", "stop": "taking out last Monday's (the 22nd) high", "size": "a pretty big position built up", "price": null, "price_kind": null,
+   "source": "2026-01-07_mh0x8OrVS_4@13:17", "confidence": "stated",
+   "quote": "I finally got stopped out of SIJ",
+   "notes": "Caption 'SIJ' = SILJ (spelled SILJ at 14:25). Day of the stop not stated; context ('didn't cover any off on Monday and then right back off to the races today') suggests Monday or today. Quote is 7 words."
+  },
+  {
+   "date": "2026-01-06", "ticker": "NEM", "ticker_as_captioned": "NEM", "vehicle": null,
+   "direction": "long", "action": "hold",
+   "fill_timing": "", "timing_basis": "", "fill_date_stated": "", "is_retrospective": false,
+   "position_after": "open",
+   "setup": "Newmont long held about a month; new closing all-time high today.",
+   "entry_basis": "", "stop": "", "size": "", "price": null, "price_kind": null,
+   "source": "2026-01-07_mh0x8OrVS_4@13:40", "confidence": "stated",
+   "quote": "I do have my NEM and that was a really nice new u new",
+   "notes": "'I've owned it you know for about a about a month now' (13:51)."
+  },
+  {
+   "date": "2026-01-06", "ticker": "NFLX", "ticker_as_captioned": "Netflix", "vehicle": null,
+   "direction": "short", "action": "hold",
+   "fill_timing": "middle of november", "timing_basis": "stated", "fill_date_stated": "", "is_retrospective": false,
+   "position_after": "open",
+   "setup": "Netflix short from mid-November; new closing low today, possibly fading to April's lows.",
+   "entry_basis": "", "stop": "", "size": "", "price": null, "price_kind": null,
+   "source": "2026-01-07_mh0x8OrVS_4@14:36", "confidence": "stated",
+   "quote": "I still have my Netflix short from uh middle of November",
+   "notes": "fill_timing refers to the original entry, not today's action (hold)."
+  },
+  {
+   "date": "2026-01-06", "ticker": "TSLA", "ticker_as_captioned": "Tesla", "vehicle": null,
+   "direction": "long", "action": "entry",
+   "fill_timing": "today", "timing_basis": "stated", "fill_date_stated": "2026-01-06", "is_retrospective": false,
+   "position_after": "open",
+   "setup": "Bought Tesla at support from the December 2nd gap on a small 620 setup just under 432.",
+   "entry_basis": "620 setup at the December 2 support gap, just underneath 432", "stop": "today's low of day; about a 1% stop", "size": "5% position", "price": 432, "price_kind": "level",
+   "source": "2026-01-07_mh0x8OrVS_4@15:11", "confidence": "stated",
+   "quote": "I did pick up some Tesla today",
+   "notes": "Would add above the 50 SMA."
+  },
+  {
+   "date": "2026-01-06", "ticker": "XOM", "ticker_as_captioned": "X soom / XOM", "vehicle": null,
+   "direction": "long", "action": "hold",
+   "fill_timing": "", "timing_basis": "", "fill_date_stated": "", "is_retrospective": false,
+   "position_after": "open",
+   "setup": "Exxon long held and trailed through a nasty down day in energy.",
+   "entry_basis": "", "stop": "trailing", "size": "", "price": 117, "price_kind": "basis",
+   "source": "2026-01-07_mh0x8OrVS_4@15:59", "confidence": "stated",
+   "quote": "XOM not the prettiest action today, but I am in from 117s",
+   "notes": "Also at 02:49 'of course, I am an X soom. Um, and I'm just trailing'."
+  }
+ ],
+ "principles": [],
+ "ambiguous_tickers": []
+}
