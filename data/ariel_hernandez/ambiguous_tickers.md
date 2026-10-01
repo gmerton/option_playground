@@ -4,7 +4,7 @@
 
 Two checks per video. **Ambiguous tickers**: spots where the auto-caption garbled a symbol — click the timestamp, check the chart, confirm the ticker. **Trades**: each trade with the day it was placed; ⬜ marks rows that need a glance — an unresolved ticker (`?`), an unresolved fill date, or a date *inferred* to a different day than the stream (e.g. he said "Thursday"). Rows with no ⬜ are same-session or he stated the date.
 
-**294** ticker flags · **1535** trades to date-check · across **276** videos. Conf: 🟡 likely · ❓ unsure.
+**313** ticker flags · **1763** trades to date-check · across **315** videos. Conf: 🟡 likely · ❓ unsure.
 
 ## Index — ticker flags by video
 
@@ -87,6 +87,10 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 - [2025-06-26 — 6/26/2025 After-Hours Recap](#2025-06-26-6-26-2025-after-hours-recap) · 2
 - [2025-06-26 — 6/26/2025 Live stream $OST](#2025-06-26-6-26-2025-live-stream-ost) · 2
 - [2025-06-25 — 6/25/2025 Premarket Prep](#2025-06-25-6-25-2025-premarket-prep) · 2
+- [2025-06-20 — 6/20/2025 Premarket Prep](#2025-06-20-6-20-2025-premarket-prep) · 2
+- [2025-06-17 — 6/17/2025 After-Hours Recap](#2025-06-17-6-17-2025-after-hours-recap) · 2
+- [2025-06-04 — 6/4/2025 Premarket Prep](#2025-06-04-6-4-2025-premarket-prep) · 2
+- [2025-05-29 — 2025/05/29 Discord Live Stream](#2025-05-29-2025-05-29-discord-live-stream) · 2
 - [2026-09-25 — A look ahead to next week: A tale of two markets](#2026-09-25-a-look-ahead-to-next-week-a-tale-of-two-markets) · 1
 - [2026-09-24 — The market message: Focus on the leaders!](#2026-09-24-the-market-message-focus-on-the-leaders) · 1
 - [2026-09-17 — Do bulls have a second wind?](#2026-09-17-do-bulls-have-a-second-wind) · 1
@@ -177,6 +181,17 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 - [2025-06-27 — 6/27/2025 After-Hours Recap](#2025-06-27-6-27-2025-after-hours-recap) · 1
 - [2025-06-27 — 6/27/2025 Premarket Prep](#2025-06-27-6-27-2025-premarket-prep) · 1
 - [2025-06-25 — 6/25/2025 After-Hours Recap](#2025-06-25-6-25-2025-after-hours-recap) · 1
+- [2025-06-24 — 6/24/2025 Premarket Prep Special Guest](#2025-06-24-6-24-2025-premarket-prep-special-guest) · 1
+- [2025-06-16 — 6/16/2025 Premarket Prep](#2025-06-16-6-16-2025-premarket-prep) · 1
+- [2025-06-13 — 6/13/2025 After-Hours Recap](#2025-06-13-6-13-2025-after-hours-recap) · 1
+- [2025-06-13 — 6/13/2025 Premarket Prep](#2025-06-13-6-13-2025-premarket-prep) · 1
+- [2025-06-12 — 6/12/2025 After-Hours Recap](#2025-06-12-6-12-2025-after-hours-recap) · 1
+- [2025-06-11 — 6/11/2025 Premarket Prep](#2025-06-11-6-11-2025-premarket-prep) · 1
+- [2025-06-10 — 6/10/2025 After-Hours Recap](#2025-06-10-6-10-2025-after-hours-recap) · 1
+- [2025-06-09 — 6/9/2025 Premarket Prep](#2025-06-09-6-9-2025-premarket-prep) · 1
+- [2025-05-30 — 5/30/2025 After-Hours Recap](#2025-05-30-5-30-2025-after-hours-recap) · 1
+- [2025-05-30 — 5/30/2025 Premarket Prep](#2025-05-30-5-30-2025-premarket-prep) · 1
+- [2025-05-29 — 2025/05/29 After-Hours Recap](#2025-05-29-2025-05-29-after-hours-recap) · 1
 
 
 ## 2026-09-30 — What is keeping this market alive?
@@ -7077,4 +7092,868 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | ⬜ | [33:20](https://www.youtube.com/watch?v=tLEsCp1uejc&t=2000s) | NVDA | long · exit | 38 | _(unresolved)_ |
 | ⬜ | [19:15](https://www.youtube.com/watch?v=tLEsCp1uejc&t=1155s) | SNOW | long · entry | 527 | 2025-05-27 |
 | ⬜ | [19:30](https://www.youtube.com/watch?v=tLEsCp1uejc&t=1170s) | SNOW | long · exit | — | _(unresolved)_ |
+
+
+## 2025-06-24 — 6/24/2025 Premarket Prep Special Guest
+
+[▶ watch](https://www.youtube.com/watch?v=TD0fzQdvFyI) · `data/ariel_hernandez/videos/recaps/2025-06-24_TD0fzQdvFyI` · 1 ticker flags · 5 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [21:42](https://www.youtube.com/watch?v=TD0fzQdvFyI&t=1302s) | arc | Cathie Wood ('Kathy') trimming; 'look at arc ... I am long from 59 bucks ... ran right off the lows from 40 to 70' | ARKK | 🟡 |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [12:31](https://www.youtube.com/watch?v=TD0fzQdvFyI&t=751s) | HOOD | long · entry | — | _(unresolved)_ |
+| ⬜ | [14:43](https://www.youtube.com/watch?v=TD0fzQdvFyI&t=883s) | SHOP | long · stopped_out | — | _(unresolved)_ |
+| · | [21:42](https://www.youtube.com/watch?v=TD0fzQdvFyI&t=1302s) | ARKK | long · hold | — | 2025-06-24 |
+| ⬜ | [31:21](https://www.youtube.com/watch?v=TD0fzQdvFyI&t=1881s) | RKLB | long · entry | yesterday | 2025-06-23 |
+| ⬜ | [34:25](https://www.youtube.com/watch?v=TD0fzQdvFyI&t=2065s) | JPM | long · stopped_out | — | _(unresolved)_ |
+
+
+## 2025-06-24 — 6/24/2025 After-Hours Recap
+
+[▶ watch](https://www.youtube.com/watch?v=at3TrHOlHP4) · `data/ariel_hernandez/videos/recaps/2025-06-24_at3TrHOlHP4` · 0 ticker flags · 12 trades
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [00:38](https://www.youtube.com/watch?v=at3TrHOlHP4&t=38s) | ASML | long · entry | 8:16 | _(unresolved)_ |
+| ⬜ | [00:38](https://www.youtube.com/watch?v=at3TrHOlHP4&t=38s) | ASML | long · stopped_out | friday | 2025-06-20 |
+| · | [03:04](https://www.youtube.com/watch?v=at3TrHOlHP4&t=184s) | PANW | long · hold | — | 2025-06-24 |
+| ⬜ | [03:14](https://www.youtube.com/watch?v=at3TrHOlHP4&t=194s) | JPM | long · entry | 610 | 2025-06-10 |
+| ⬜ | [03:14](https://www.youtube.com/watch?v=at3TrHOlHP4&t=194s) | JPM | long · stopped_out | 613 | 2025-06-13 |
+| ⬜ | [04:50](https://www.youtube.com/watch?v=at3TrHOlHP4&t=290s) | DASH | long · entry | — | _(unresolved)_ |
+| ⬜ | [03:36](https://www.youtube.com/watch?v=at3TrHOlHP4&t=216s) | DASH | long · stopped_out | — | _(unresolved)_ |
+| ⬜ | [03:57](https://www.youtube.com/watch?v=at3TrHOlHP4&t=237s) | TSM | long · entry | 64 | 2025-06-04 |
+| ⬜ | [03:57](https://www.youtube.com/watch?v=at3TrHOlHP4&t=237s) | TSM | long · exit | — | _(unresolved)_ |
+| · | [07:54](https://www.youtube.com/watch?v=at3TrHOlHP4&t=474s) | TSLA | long · hold | — | 2025-06-24 |
+| ⬜ | [05:32](https://www.youtube.com/watch?v=at3TrHOlHP4&t=332s) | SHOP | long · entry | 610 | 2025-06-10 |
+| ⬜ | [05:32](https://www.youtube.com/watch?v=at3TrHOlHP4&t=332s) | SHOP | long · stopped_out | next day | 2025-06-11 |
+
+
+## 2025-06-23 — 6/23/2025 After-Hours Recap
+
+[▶ watch](https://www.youtube.com/watch?v=Hf-I7i5z3Kk) · `data/ariel_hernandez/videos/recaps/2025-06-23_Hf-I7i5z3Kk` · 0 ticker flags · 10 trades
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [01:50](https://www.youtube.com/watch?v=Hf-I7i5z3Kk&t=110s) | TEM | long · exit | — | _(unresolved)_ |
+| ⬜ | [04:11](https://www.youtube.com/watch?v=Hf-I7i5z3Kk&t=251s) | EAT | long · exit | last week | _(unresolved)_ |
+| ⬜ | [10:04](https://www.youtube.com/watch?v=Hf-I7i5z3Kk&t=604s) | ASML | long · stopped_out | a few days ago | _(unresolved)_ |
+| · | [09:51](https://www.youtube.com/watch?v=Hf-I7i5z3Kk&t=591s) | ARKK | long · hold | — | 2025-06-23 |
+| · | [10:34](https://www.youtube.com/watch?v=Hf-I7i5z3Kk&t=634s) | PANW | long · hold | — | 2025-06-23 |
+| · | [10:34](https://www.youtube.com/watch?v=Hf-I7i5z3Kk&t=634s) | TSLA | long · hold | — | 2025-06-23 |
+| ⬜ | [10:46](https://www.youtube.com/watch?v=Hf-I7i5z3Kk&t=646s) | NFLX | long · exit | — | _(unresolved)_ |
+| ⬜ | [10:46](https://www.youtube.com/watch?v=Hf-I7i5z3Kk&t=646s) | PLTR | long · exit | — | _(unresolved)_ |
+| ⬜ | [10:46](https://www.youtube.com/watch?v=Hf-I7i5z3Kk&t=646s) | CLS | long · exit | — | _(unresolved)_ |
+| ⬜ | [10:46](https://www.youtube.com/watch?v=Hf-I7i5z3Kk&t=646s) | CRWD | long · exit | — | _(unresolved)_ |
+
+
+## 2025-06-23 — 6/23/2025 Premarket Prep
+
+[▶ watch](https://www.youtube.com/watch?v=oqz5ZqsHcds) · `data/ariel_hernandez/videos/recaps/2025-06-23_oqz5ZqsHcds` · 0 ticker flags · 4 trades
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [15:34](https://www.youtube.com/watch?v=oqz5ZqsHcds&t=934s) | TEM | long · exit | — | _(unresolved)_ |
+| · | [20:16](https://www.youtube.com/watch?v=oqz5ZqsHcds&t=1216s) | RGTI | short · hold | — | 2025-06-23 |
+| ⬜ | [09:57](https://www.youtube.com/watch?v=oqz5ZqsHcds&t=597s) | DASH | long · entry | — | _(unresolved)_ |
+| ⬜ | [09:57](https://www.youtube.com/watch?v=oqz5ZqsHcds&t=597s) | DASH | long · exit | the next day | _(unresolved)_ |
+
+
+## 2025-06-20 — 6/20/2025 After-Hours Recap
+
+[▶ watch](https://www.youtube.com/watch?v=4kK8g1i-uxY) · `data/ariel_hernandez/videos/recaps/2025-06-20_4kK8g1i-uxY` · 0 ticker flags · 6 trades
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [02:48](https://www.youtube.com/watch?v=4kK8g1i-uxY&t=168s) | ALAB | long · entry | today | 2025-06-20 |
+| · | [02:58](https://www.youtube.com/watch?v=4kK8g1i-uxY&t=178s) | ALAB | long · exit | today | 2025-06-20 |
+| ⬜ | [07:48](https://www.youtube.com/watch?v=4kK8g1i-uxY&t=468s) | TMDX | long · exit | wednesday | 2025-06-18 |
+| · | [12:00](https://www.youtube.com/watch?v=4kK8g1i-uxY&t=720s) | PANW | long · hold | — | 2025-06-20 |
+| · | [12:00](https://www.youtube.com/watch?v=4kK8g1i-uxY&t=720s) | ARKK | long · hold | — | 2025-06-20 |
+| · | [12:00](https://www.youtube.com/watch?v=4kK8g1i-uxY&t=720s) | RGTI | short · hold | — | 2025-06-20 |
+
+
+## 2025-06-20 — 6/20/2025 Premarket Prep
+
+[▶ watch](https://www.youtube.com/watch?v=j3n_2BoV5Hk) · `data/ariel_hernandez/videos/recaps/2025-06-20_j3n_2BoV5Hk` · 2 ticker flags · 16 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [15:29](https://www.youtube.com/watch?v=j3n_2BoV5Hk&t=929s) | GRR | Lost the 50 after earnings; shorted next day, partial cover, final cover on '65' | ? | ❓ |
+| ⬜ | [37:04](https://www.youtube.com/watch?v=j3n_2BoV5Hk&t=2224s) | Socks ... sock cell | 'I had this one at like 13 bucks ... no, it was sock cell. I had this one right down here' | SOXL | 🟡 |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [02:28](https://www.youtube.com/watch?v=j3n_2BoV5Hk&t=148s) | ARKK | long · trim | — | _(unresolved)_ |
+| ⬜ | [35:33](https://www.youtube.com/watch?v=j3n_2BoV5Hk&t=2133s) | ARKK | long · entry | — | _(unresolved)_ |
+| ⬜ | [14:34](https://www.youtube.com/watch?v=j3n_2BoV5Hk&t=874s) | SOFI | long · entry | 611 | 2025-06-11 |
+| ⬜ | [14:34](https://www.youtube.com/watch?v=j3n_2BoV5Hk&t=874s) | SOFI | long · stopped_out | two days later | 2025-06-13 |
+| ⬜ | [15:18](https://www.youtube.com/watch?v=j3n_2BoV5Hk&t=918s) | MU | short · short | — | _(unresolved)_ |
+| ⬜ | [15:43](https://www.youtube.com/watch?v=j3n_2BoV5Hk&t=943s) | ? | short · short | the very next day | _(unresolved)_ |
+| ⬜ | [15:53](https://www.youtube.com/watch?v=j3n_2BoV5Hk&t=953s) | ? | short · cover | — | _(unresolved)_ |
+| ⬜ | [15:53](https://www.youtube.com/watch?v=j3n_2BoV5Hk&t=953s) | ? | short · cover | 65 | _(unresolved)_ |
+| ⬜ | [18:50](https://www.youtube.com/watch?v=j3n_2BoV5Hk&t=1130s) | COIN | long · entry | — | _(unresolved)_ |
+| ⬜ | [18:50](https://www.youtube.com/watch?v=j3n_2BoV5Hk&t=1130s) | COIN | long · stopped_out | — | _(unresolved)_ |
+| ⬜ | [26:39](https://www.youtube.com/watch?v=j3n_2BoV5Hk&t=1599s) | TOST | long · exit | — | _(unresolved)_ |
+| ⬜ | [42:31](https://www.youtube.com/watch?v=j3n_2BoV5Hk&t=2551s) | JPM | long · entry | — | _(unresolved)_ |
+| ⬜ | [42:31](https://www.youtube.com/watch?v=j3n_2BoV5Hk&t=2551s) | JPM | long · stopped_out | — | _(unresolved)_ |
+| ⬜ | [42:31](https://www.youtube.com/watch?v=j3n_2BoV5Hk&t=2551s) | JPM | long · stopped_out | a few days later | _(unresolved)_ |
+| ⬜ | [44:28](https://www.youtube.com/watch?v=j3n_2BoV5Hk&t=2668s) | SNOW | long · entry | — | _(unresolved)_ |
+| ⬜ | [37:04](https://www.youtube.com/watch?v=j3n_2BoV5Hk&t=2224s) | SOXX | long · entry | — | _(unresolved)_ |
+
+
+## 2025-06-18 — 6/18/2025 Premarket Prep
+
+[▶ watch](https://www.youtube.com/watch?v=Ac_aRm-hOj8) · `data/ariel_hernandez/videos/recaps/2025-06-18_Ac_aRm-hOj8` · 0 ticker flags · 1 trades
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [18:36](https://www.youtube.com/watch?v=Ac_aRm-hOj8&t=1116s) | ARQQ | long · hold | — | 2025-06-18 |
+
+
+## 2025-06-17 — 6/17/2025 Premarket Prep
+
+[▶ watch](https://www.youtube.com/watch?v=4BNm85NuP44) · `data/ariel_hernandez/videos/recaps/2025-06-17_4BNm85NuP44` · 0 ticker flags · 10 trades
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [18:44](https://www.youtube.com/watch?v=4BNm85NuP44&t=1124s) | ARKK | long · hold | — | 2025-06-17 |
+| ⬜ | [28:07](https://www.youtube.com/watch?v=4BNm85NuP44&t=1687s) | SHOP | long · entry | — | _(unresolved)_ |
+| ⬜ | [28:07](https://www.youtube.com/watch?v=4BNm85NuP44&t=1687s) | SHOP | long · trim | same day | _(unresolved)_ |
+| ⬜ | [28:23](https://www.youtube.com/watch?v=4BNm85NuP44&t=1703s) | SHOP | long · stopped_out | the next day | _(unresolved)_ |
+| ⬜ | [34:19](https://www.youtube.com/watch?v=4BNm85NuP44&t=2059s) | DASH | long · entry | — | _(unresolved)_ |
+| ⬜ | [34:19](https://www.youtube.com/watch?v=4BNm85NuP44&t=2059s) | DASH | long · stopped_out | — | _(unresolved)_ |
+| ⬜ | [47:19](https://www.youtube.com/watch?v=4BNm85NuP44&t=2839s) | EQT | long · entry | — | _(unresolved)_ |
+| ⬜ | [47:19](https://www.youtube.com/watch?v=4BNm85NuP44&t=2839s) | EQT | long · stopped_out | the next day | _(unresolved)_ |
+| ⬜ | [47:34](https://www.youtube.com/watch?v=4BNm85NuP44&t=2854s) | EQT | long · reentry | — | _(unresolved)_ |
+| ⬜ | [47:34](https://www.youtube.com/watch?v=4BNm85NuP44&t=2854s) | EQT | long · stopped_out | — | _(unresolved)_ |
+
+
+## 2025-06-17 — 6/17/2025 After-Hours Recap
+
+[▶ watch](https://www.youtube.com/watch?v=DEOGo_kJBRQ) · `data/ariel_hernandez/videos/recaps/2025-06-18_DEOGo_kJBRQ` · 2 ticker flags · 6 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [01:11](https://www.youtube.com/watch?v=DEOGo_kJBRQ&t=71s) | ARC | still own ARC, already trimmed | ? | ❓ |
+| ⬜ | [01:11](https://www.youtube.com/watch?v=DEOGo_kJBRQ&t=71s) | ET | own some ET, trimmed on today's pullback | ? | ❓ |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [01:11](https://www.youtube.com/watch?v=DEOGo_kJBRQ&t=71s) | PANW | long · entry | today | 2025-06-17 |
+| ⬜ | [01:11](https://www.youtube.com/watch?v=DEOGo_kJBRQ&t=71s) | ? | long · hold | — | 2025-06-17 |
+| ⬜ | [01:25](https://www.youtube.com/watch?v=DEOGo_kJBRQ&t=85s) | ? | long · trim | today | 2025-06-17 |
+| · | [01:25](https://www.youtube.com/watch?v=DEOGo_kJBRQ&t=85s) | TEM | long · hold | — | 2025-06-17 |
+| · | [15:32](https://www.youtube.com/watch?v=DEOGo_kJBRQ&t=932s) | TMDX | long · hold | — | 2025-06-17 |
+| ⬜ | [05:18](https://www.youtube.com/watch?v=DEOGo_kJBRQ&t=318s) | NFLX | long · exit | — | _(unresolved)_ |
+
+
+## 2025-06-16 — 6/16/2025 After-Hours Recap
+
+[▶ watch](https://www.youtube.com/watch?v=HTWh_XdoP7g) · `data/ariel_hernandez/videos/recaps/2025-06-16_HTWh_XdoP7g` · 0 ticker flags · 4 trades
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [02:35](https://www.youtube.com/watch?v=HTWh_XdoP7g&t=155s) | HUT | long · entry | today | 2025-06-16 |
+| · | [06:07](https://www.youtube.com/watch?v=HTWh_XdoP7g&t=367s) | EAT | long · entry | today | 2025-06-16 |
+| · | [07:20](https://www.youtube.com/watch?v=HTWh_XdoP7g&t=440s) | ASML | long · entry | today | 2025-06-16 |
+| · | [07:20](https://www.youtube.com/watch?v=HTWh_XdoP7g&t=440s) | ASML | long · exit | today | 2025-06-16 |
+
+
+## 2025-06-16 — 6/16/2025 Premarket Prep
+
+[▶ watch](https://www.youtube.com/watch?v=xIdR9txwzGU) · `data/ariel_hernandez/videos/recaps/2025-06-16_xIdR9txwzGU` · 1 ticker flags · 3 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [24:40](https://www.youtube.com/watch?v=xIdR9txwzGU&t=1480s) | I already own this one | Roku discussed as a top-10 holding in Cathie's ARK ETF, 'her ETF's shaping up', then 'I already own this one' | ARKK | ❓ |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [24:40](https://www.youtube.com/watch?v=xIdR9txwzGU&t=1480s) | ? | long · hold | — | 2025-06-16 |
+| ⬜ | [31:23](https://www.youtube.com/watch?v=xIdR9txwzGU&t=1883s) | HCAI | long · entry | — | _(unresolved)_ |
+| ⬜ | [31:35](https://www.youtube.com/watch?v=xIdR9txwzGU&t=1895s) | HCAI | long · exit | right before earnings | _(unresolved)_ |
+
+
+## 2025-06-13 — 6/13/2025 After-Hours Recap
+
+[▶ watch](https://www.youtube.com/watch?v=C4dYf7CwzAU) · `data/ariel_hernandez/videos/recaps/2025-06-13_C4dYf7CwzAU` · 1 ticker flags · 8 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [08:26](https://www.youtube.com/watch?v=C4dYf7CwzAU&t=506s) | My longs are still ARC. | Listed with TEM and TMDX as remaining longs | ARQQ | ❓ |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [00:12](https://www.youtube.com/watch?v=C4dYf7CwzAU&t=12s) | SOFI | long · stopped_out | today | 2025-06-13 |
+| · | [00:12](https://www.youtube.com/watch?v=C4dYf7CwzAU&t=12s) | JPM | long · stopped_out | today | 2025-06-13 |
+| · | [00:12](https://www.youtube.com/watch?v=C4dYf7CwzAU&t=12s) | TOST | long · exit | today | 2025-06-13 |
+| ⬜ | [00:24](https://www.youtube.com/watch?v=C4dYf7CwzAU&t=24s) | SHOP | long · stopped_out | — | _(unresolved)_ |
+| ⬜ | [08:26](https://www.youtube.com/watch?v=C4dYf7CwzAU&t=506s) | ? | long · hold | — | 2025-06-13 |
+| · | [08:26](https://www.youtube.com/watch?v=C4dYf7CwzAU&t=506s) | TEM | long · hold | — | 2025-06-13 |
+| · | [08:37](https://www.youtube.com/watch?v=C4dYf7CwzAU&t=517s) | TMDX | long · hold | — | 2025-06-13 |
+| · | [08:37](https://www.youtube.com/watch?v=C4dYf7CwzAU&t=517s) | QBTS | short · hold | — | 2025-06-13 |
+
+
+## 2025-06-13 — 6/13/2025 Premarket Prep
+
+[▶ watch](https://www.youtube.com/watch?v=suaP4V6bLIU) · `data/ariel_hernandez/videos/recaps/2025-06-13_suaP4V6bLIU` · 1 ticker flags · 13 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [10:22](https://www.youtube.com/watch?v=suaP4V6bLIU&t=622s) | ARC / arc | trimmed green position that gapped down | ? | ❓ |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [30:19](https://www.youtube.com/watch?v=suaP4V6bLIU&t=1819s) | JPM | long · hold | — | 2025-06-13 |
+| ⬜ | [08:53](https://www.youtube.com/watch?v=suaP4V6bLIU&t=533s) | SHOP | long · trim | the day prior | _(unresolved)_ |
+| ⬜ | [09:03](https://www.youtube.com/watch?v=suaP4V6bLIU&t=543s) | SHOP | long · exit | yesterday | 2025-06-12 |
+| ⬜ | [09:28](https://www.youtube.com/watch?v=suaP4V6bLIU&t=568s) | SOFI | long · trim | yesterday | 2025-06-12 |
+| · | [45:22](https://www.youtube.com/watch?v=suaP4V6bLIU&t=2722s) | SOFI | long · trim | this morning | 2025-06-13 |
+| · | [10:22](https://www.youtube.com/watch?v=suaP4V6bLIU&t=622s) | QBTS | short · hold | — | 2025-06-13 |
+| ⬜ | [21:57](https://www.youtube.com/watch?v=suaP4V6bLIU&t=1317s) | ? | long · trim | — | _(unresolved)_ |
+| · | [10:38](https://www.youtube.com/watch?v=suaP4V6bLIU&t=638s) | TEM | long · hold | — | 2025-06-13 |
+| · | [10:38](https://www.youtube.com/watch?v=suaP4V6bLIU&t=638s) | TMDX | long · hold | — | 2025-06-13 |
+| · | [13:11](https://www.youtube.com/watch?v=suaP4V6bLIU&t=791s) | TOST | long · hold | — | 2025-06-13 |
+| ⬜ | [29:35](https://www.youtube.com/watch?v=suaP4V6bLIU&t=1775s) | UBER | long · stopped_out | recently | _(unresolved)_ |
+| ⬜ | [39:12](https://www.youtube.com/watch?v=suaP4V6bLIU&t=2352s) | PLTR | long · entry | the 23rd | 2025-04-23 |
+| ⬜ | [38:49](https://www.youtube.com/watch?v=suaP4V6bLIU&t=2329s) | NFLX | long · entry | — | _(unresolved)_ |
+
+
+## 2025-06-12 — 6/12/2025 Premarket Prep
+
+[▶ watch](https://www.youtube.com/watch?v=ixb-s_g_zu4) · `data/ariel_hernandez/videos/recaps/2025-06-12_ixb-s_g_zu4` · 0 ticker flags · 10 trades
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [16:01](https://www.youtube.com/watch?v=ixb-s_g_zu4&t=961s) | SHOP | long · entry | yesterday | 2025-06-11 |
+| ⬜ | [16:01](https://www.youtube.com/watch?v=ixb-s_g_zu4&t=961s) | SOFI | long · entry | yesterday | 2025-06-11 |
+| ⬜ | [16:01](https://www.youtube.com/watch?v=ixb-s_g_zu4&t=961s) | TMDX | long · trim | yesterday | 2025-06-11 |
+| ⬜ | [16:01](https://www.youtube.com/watch?v=ixb-s_g_zu4&t=961s) | NFLX | long · exit | the day before | 2025-06-10 |
+| · | [21:10](https://www.youtube.com/watch?v=ixb-s_g_zu4&t=1270s) | JPM | long · hold | — | 2025-06-12 |
+| ⬜ | [29:21](https://www.youtube.com/watch?v=ixb-s_g_zu4&t=1761s) | QBTS | short · short | — | _(unresolved)_ |
+| · | [34:35](https://www.youtube.com/watch?v=ixb-s_g_zu4&t=2075s) | TOST | long · hold | — | 2025-06-12 |
+| ⬜ | [41:41](https://www.youtube.com/watch?v=ixb-s_g_zu4&t=2501s) | ARKK | long · entry | 65 | _(unresolved)_ |
+| ⬜ | [41:41](https://www.youtube.com/watch?v=ixb-s_g_zu4&t=2501s) | ARKK | long · exit | 65 | _(unresolved)_ |
+| ⬜ | [41:56](https://www.youtube.com/watch?v=ixb-s_g_zu4&t=2516s) | ARKK | long · reentry | the very next day | _(unresolved)_ |
+
+
+## 2025-06-12 — 6/12/2025 After-Hours Recap
+
+[▶ watch](https://www.youtube.com/watch?v=PGwuBc5VFpE) · `data/ariel_hernandez/videos/recaps/2025-06-13_PGwuBc5VFpE` · 1 ticker flags · 12 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [05:39](https://www.youtube.com/watch?v=PGwuBc5VFpE&t=339s) | ARC | trimmed more ARC this afternoon when it broke the five SMA; booked half | ARKK | ❓ |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [00:47](https://www.youtube.com/watch?v=PGwuBc5VFpE&t=47s) | SHOP | long · entry | — | _(unresolved)_ |
+| ⬜ | [00:47](https://www.youtube.com/watch?v=PGwuBc5VFpE&t=47s) | SHOP | long · trim | yesterday | 2025-06-11 |
+| · | [00:59](https://www.youtube.com/watch?v=PGwuBc5VFpE&t=59s) | SHOP | long · stopped_out | today | 2025-06-12 |
+| · | [02:08](https://www.youtube.com/watch?v=PGwuBc5VFpE&t=128s) | SOFI | long · trim | today | 2025-06-12 |
+| ⬜ | [05:29](https://www.youtube.com/watch?v=PGwuBc5VFpE&t=329s) | ? | long · trim | this afternoon | 2025-06-12 |
+| ⬜ | [12:29](https://www.youtube.com/watch?v=PGwuBc5VFpE&t=749s) | TEM | long · trim | — | _(unresolved)_ |
+| ⬜ | [12:29](https://www.youtube.com/watch?v=PGwuBc5VFpE&t=749s) | TMDX | long · trim | — | _(unresolved)_ |
+| · | [12:29](https://www.youtube.com/watch?v=PGwuBc5VFpE&t=749s) | TOST | long · hold | — | 2025-06-12 |
+| · | [11:14](https://www.youtube.com/watch?v=PGwuBc5VFpE&t=674s) | JPM | long · hold | — | 2025-06-12 |
+| ⬜ | [12:54](https://www.youtube.com/watch?v=PGwuBc5VFpE&t=774s) | QBTS | short · short | yesterday | 2025-06-11 |
+| · | [12:54](https://www.youtube.com/watch?v=PGwuBc5VFpE&t=774s) | QBTS | short · add | today | 2025-06-12 |
+| ⬜ | [04:10](https://www.youtube.com/watch?v=PGwuBc5VFpE&t=250s) | UBER | long · stopped_out | — | _(unresolved)_ |
+
+
+## 2025-06-11 — 6/11/2025 After-Hours Recap
+
+[▶ watch](https://www.youtube.com/watch?v=XgiCOdDedsw) · `data/ariel_hernandez/videos/recaps/2025-06-11_XgiCOdDedsw` · 0 ticker flags · 5 trades
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [00:14](https://www.youtube.com/watch?v=XgiCOdDedsw&t=14s) | SHOP | long · entry | today | 2025-06-11 |
+| · | [00:45](https://www.youtube.com/watch?v=XgiCOdDedsw&t=45s) | SHOP | long · trim | today | 2025-06-11 |
+| · | [00:58](https://www.youtube.com/watch?v=XgiCOdDedsw&t=58s) | SOFI | long · entry | today | 2025-06-11 |
+| · | [04:12](https://www.youtube.com/watch?v=XgiCOdDedsw&t=252s) | TMDX | long · trim | today | 2025-06-11 |
+| · | [04:23](https://www.youtube.com/watch?v=XgiCOdDedsw&t=263s) | TOST | long · hold | — | 2025-06-11 |
+
+
+## 2025-06-11 — 6/11/2025 Premarket Prep
+
+[▶ watch](https://www.youtube.com/watch?v=sc9cX4910mQ) · `data/ariel_hernandez/videos/recaps/2025-06-11_sc9cX4910mQ` · 1 ticker flags · 8 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [06:41](https://www.youtube.com/watch?v=sc9cX4910mQ&t=401s) | arc | similar to how I did an arc yesterday / My arc is working great | ? | ❓ |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [06:11](https://www.youtube.com/watch?v=sc9cX4910mQ&t=371s) | TMDX | long · hold | — | 2025-06-11 |
+| ⬜ | [06:41](https://www.youtube.com/watch?v=sc9cX4910mQ&t=401s) | ? | long · trim | yesterday | 2025-06-10 |
+| ⬜ | [09:25](https://www.youtube.com/watch?v=sc9cX4910mQ&t=565s) | JPM | long · entry | yesterday | 2025-06-10 |
+| ⬜ | [16:14](https://www.youtube.com/watch?v=sc9cX4910mQ&t=974s) | TSLA | long · exit | — | _(unresolved)_ |
+| · | [18:05](https://www.youtube.com/watch?v=sc9cX4910mQ&t=1085s) | TOST | long · hold | — | 2025-06-11 |
+| ⬜ | [14:13](https://www.youtube.com/watch?v=sc9cX4910mQ&t=853s) | CLS | long · entry | — | _(unresolved)_ |
+| ⬜ | [48:04](https://www.youtube.com/watch?v=sc9cX4910mQ&t=2884s) | CLS | long · trim | — | _(unresolved)_ |
+| ⬜ | [48:16](https://www.youtube.com/watch?v=sc9cX4910mQ&t=2896s) | CLS | long · exit | the next day | _(unresolved)_ |
+
+
+## 2025-06-10 — 6/10/2025 Premarket Prep
+
+[▶ watch](https://www.youtube.com/watch?v=gNKd3hFBGv4) · `data/ariel_hernandez/videos/recaps/2025-06-10_gNKd3hFBGv4` · 0 ticker flags · 6 trades
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [13:07](https://www.youtube.com/watch?v=gNKd3hFBGv4&t=787s) | COIN | long · entry | yesterday | 2025-06-09 |
+| ⬜ | [23:30](https://www.youtube.com/watch?v=gNKd3hFBGv4&t=1410s) | TEM | long · entry | recently | _(unresolved)_ |
+| · | [17:55](https://www.youtube.com/watch?v=gNKd3hFBGv4&t=1075s) | SNOW | long · hold | — | 2025-06-10 |
+| ⬜ | [20:16](https://www.youtube.com/watch?v=gNKd3hFBGv4&t=1216s) | CLS | long · entry | — | _(unresolved)_ |
+| ⬜ | [20:49](https://www.youtube.com/watch?v=gNKd3hFBGv4&t=1249s) | CLS | long · exit | — | _(unresolved)_ |
+| ⬜ | [38:16](https://www.youtube.com/watch?v=gNKd3hFBGv4&t=2296s) | CCJ | long · entry | in 2022 | _(unresolved)_ |
+
+
+## 2025-06-10 — 6/10/2025 After-Hours Recap
+
+[▶ watch](https://www.youtube.com/watch?v=wLt-n8oQp0I) · `data/ariel_hernandez/videos/recaps/2025-06-11_wLt-n8oQp0I` · 1 ticker flags · 11 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [08:57](https://www.youtube.com/watch?v=wLt-n8oQp0I&t=537s) | ARC | ARC um was able to take off a third today; my remaining longs are in ARC | ? | ❓ |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [06:35](https://www.youtube.com/watch?v=wLt-n8oQp0I&t=395s) | COIN | long · entry | the prior evening | 2025-06-09 |
+| · | [06:35](https://www.youtube.com/watch?v=wLt-n8oQp0I&t=395s) | COIN | long · trim | today | 2025-06-10 |
+| · | [06:35](https://www.youtube.com/watch?v=wLt-n8oQp0I&t=395s) | COIN | long · stopped_out | today | 2025-06-10 |
+| · | [06:49](https://www.youtube.com/watch?v=wLt-n8oQp0I&t=409s) | NFLX | long · exit | today | 2025-06-10 |
+| · | [08:45](https://www.youtube.com/watch?v=wLt-n8oQp0I&t=525s) | TMDX | long · trim | today | 2025-06-10 |
+| ⬜ | [08:57](https://www.youtube.com/watch?v=wLt-n8oQp0I&t=537s) | TEM | long · entry | yesterday | 2025-06-09 |
+| ⬜ | [09:07](https://www.youtube.com/watch?v=wLt-n8oQp0I&t=547s) | ? | long · trim | today | 2025-06-10 |
+| · | [10:52](https://www.youtube.com/watch?v=wLt-n8oQp0I&t=652s) | KGC | long · exit | today | 2025-06-10 |
+| · | [13:35](https://www.youtube.com/watch?v=wLt-n8oQp0I&t=815s) | JPM | long · entry | today | 2025-06-10 |
+| · | [13:47](https://www.youtube.com/watch?v=wLt-n8oQp0I&t=827s) | TOST | long · hold | — | 2025-06-10 |
+| · | [14:03](https://www.youtube.com/watch?v=wLt-n8oQp0I&t=843s) | RGTI | short · hold | — | 2025-06-10 |
+
+
+## 2025-06-09 — 6/9/2025 Premarket Prep
+
+[▶ watch](https://www.youtube.com/watch?v=p5UIimjOpC8) · `data/ariel_hernandez/videos/recaps/2025-06-09_p5UIimjOpC8` · 1 ticker flags · 11 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [36:09](https://www.youtube.com/watch?v=p5UIimjOpC8&t=2169s) | ARC | ETF he bought Friday at 59.04, a Cathie Wood fund ('I own Ark') | ARKK | 🟡 |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [08:21](https://www.youtube.com/watch?v=p5UIimjOpC8&t=501s) | COIN | long · entry | — | _(unresolved)_ |
+| ⬜ | [08:21](https://www.youtube.com/watch?v=p5UIimjOpC8&t=501s) | COIN | long · exit | — | _(unresolved)_ |
+| ⬜ | [36:09](https://www.youtube.com/watch?v=p5UIimjOpC8&t=2169s) | ARKK | long · entry | friday | 2025-06-06 |
+| · | [27:10](https://www.youtube.com/watch?v=p5UIimjOpC8&t=1630s) | TOST | long · hold | — | 2025-06-09 |
+| · | [37:22](https://www.youtube.com/watch?v=p5UIimjOpC8&t=2242s) | TMDX | long · hold | — | 2025-06-09 |
+| · | [37:22](https://www.youtube.com/watch?v=p5UIimjOpC8&t=2242s) | NFLX | long · hold | — | 2025-06-09 |
+| ⬜ | [24:45](https://www.youtube.com/watch?v=p5UIimjOpC8&t=1485s) | CLS | long · entry | — | _(unresolved)_ |
+| ⬜ | [24:45](https://www.youtube.com/watch?v=p5UIimjOpC8&t=1485s) | CLS | long · exit | — | _(unresolved)_ |
+| ⬜ | [38:37](https://www.youtube.com/watch?v=p5UIimjOpC8&t=2317s) | BTSG | long · entry | last thursday | 2025-06-05 |
+| ⬜ | [38:37](https://www.youtube.com/watch?v=p5UIimjOpC8&t=2317s) | BTSG | long · exit | last thursday | 2025-06-05 |
+| ⬜ | [47:40](https://www.youtube.com/watch?v=p5UIimjOpC8&t=2860s) | HSAI | long · entry | — | _(unresolved)_ |
+
+
+## 2025-06-09 — 6/9/2025 After-Hours recap
+
+[▶ watch](https://www.youtube.com/watch?v=sGkJ6G1MmEc) · `data/ariel_hernandez/videos/recaps/2025-06-09_sGkJ6G1MmEc` · 0 ticker flags · 3 trades
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [03:28](https://www.youtube.com/watch?v=sGkJ6G1MmEc&t=208s) | COIN | long · entry | — | 2025-06-09 |
+| · | [05:19](https://www.youtube.com/watch?v=sGkJ6G1MmEc&t=319s) | TEM | long · entry | today | 2025-06-09 |
+| · | [05:40](https://www.youtube.com/watch?v=sGkJ6G1MmEc&t=340s) | ARKK | long · hold | — | 2025-06-09 |
+
+
+## 2025-06-06 — 6/6/2025 After-Hours Recap
+
+[▶ watch](https://www.youtube.com/watch?v=-BrtNCERj50) · `data/ariel_hernandez/videos/recaps/2025-06-06_-BrtNCERj50` · 0 ticker flags · 11 trades
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [08:30](https://www.youtube.com/watch?v=-BrtNCERj50&t=510s) | TSLA | long · exit | a few days ago | _(unresolved)_ |
+| ⬜ | [02:23](https://www.youtube.com/watch?v=-BrtNCERj50&t=143s) | ARKK | long · entry | yesterday | 2025-06-05 |
+| ⬜ | [02:23](https://www.youtube.com/watch?v=-BrtNCERj50&t=143s) | ARKK | long · stopped_out | yesterday | 2025-06-05 |
+| · | [03:15](https://www.youtube.com/watch?v=-BrtNCERj50&t=195s) | ARKK | long · entry | today | 2025-06-06 |
+| · | [05:03](https://www.youtube.com/watch?v=-BrtNCERj50&t=303s) | KGC | long · exit | today | 2025-06-06 |
+| · | [05:03](https://www.youtube.com/watch?v=-BrtNCERj50&t=303s) | TOST | long · hold | today | 2025-06-06 |
+| · | [05:15](https://www.youtube.com/watch?v=-BrtNCERj50&t=315s) | TMDX | long · trim | today | 2025-06-06 |
+| · | [05:27](https://www.youtube.com/watch?v=-BrtNCERj50&t=327s) | NFLX | long · trim | today | 2025-06-06 |
+| · | [06:28](https://www.youtube.com/watch?v=-BrtNCERj50&t=388s) | RGTI | short · cover | today | 2025-06-06 |
+| ⬜ | [08:30](https://www.youtube.com/watch?v=-BrtNCERj50&t=510s) | UBER | long · exit | — | _(unresolved)_ |
+| ⬜ | [08:41](https://www.youtube.com/watch?v=-BrtNCERj50&t=521s) | PLTR | long · exit | — | _(unresolved)_ |
+
+
+## 2025-06-06 — 6/6/2025 Premarket Prep. Special Guest
+
+[▶ watch](https://www.youtube.com/watch?v=oW-kTP0Rugo) · `data/ariel_hernandez/videos/recaps/2025-06-06_oW-kTP0Rugo` · 0 ticker flags · 9 trades
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [19:43](https://www.youtube.com/watch?v=oW-kTP0Rugo&t=1183s) | NFLX | long · hold | — | 2025-06-06 |
+| ⬜ | [19:55](https://www.youtube.com/watch?v=oW-kTP0Rugo&t=1195s) | PLTR | long · entry | — | _(unresolved)_ |
+| ⬜ | [19:55](https://www.youtube.com/watch?v=oW-kTP0Rugo&t=1195s) | CRWD | long · entry | — | _(unresolved)_ |
+| ⬜ | [19:55](https://www.youtube.com/watch?v=oW-kTP0Rugo&t=1195s) | UBER | long · entry | — | _(unresolved)_ |
+| ⬜ | [20:28](https://www.youtube.com/watch?v=oW-kTP0Rugo&t=1228s) | UBER | long · stopped_out | — | _(unresolved)_ |
+| ⬜ | [25:03](https://www.youtube.com/watch?v=oW-kTP0Rugo&t=1503s) | DASH | long · stopped_out | — | _(unresolved)_ |
+| ⬜ | [25:03](https://www.youtube.com/watch?v=oW-kTP0Rugo&t=1503s) | TSM | long · entry | — | _(unresolved)_ |
+| ⬜ | [25:03](https://www.youtube.com/watch?v=oW-kTP0Rugo&t=1503s) | TSM | long · exit | — | _(unresolved)_ |
+| · | [25:03](https://www.youtube.com/watch?v=oW-kTP0Rugo&t=1503s) | TOST | long · hold | — | 2025-06-06 |
+
+
+## 2025-06-05 — 6/5/2025 After-Hours Recap
+
+[▶ watch](https://www.youtube.com/watch?v=_yBBPJAGtHM) · `data/ariel_hernandez/videos/recaps/2025-06-05__yBBPJAGtHM` · 0 ticker flags · 12 trades
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [00:00](https://www.youtube.com/watch?v=_yBBPJAGtHM&t=0s) | TSLA | long · exit | yesterday | 2025-06-04 |
+| ⬜ | [00:13](https://www.youtube.com/watch?v=_yBBPJAGtHM&t=13s) | COIN | long · trim | yesterday | 2025-06-04 |
+| · | [00:26](https://www.youtube.com/watch?v=_yBBPJAGtHM&t=26s) | COIN | long · trim | today | 2025-06-05 |
+| · | [00:26](https://www.youtube.com/watch?v=_yBBPJAGtHM&t=26s) | COIN | long · exit | today | 2025-06-05 |
+| · | [00:40](https://www.youtube.com/watch?v=_yBBPJAGtHM&t=40s) | ARKK | long · entry | today | 2025-06-05 |
+| · | [10:29](https://www.youtube.com/watch?v=_yBBPJAGtHM&t=629s) | ARKK | long · exit | today | 2025-06-05 |
+| · | [10:29](https://www.youtube.com/watch?v=_yBBPJAGtHM&t=629s) | CRWD | long · entry | today | 2025-06-05 |
+| · | [11:27](https://www.youtube.com/watch?v=_yBBPJAGtHM&t=687s) | CRWD | long · exit | today | 2025-06-05 |
+| · | [08:20](https://www.youtube.com/watch?v=_yBBPJAGtHM&t=500s) | KGC | long · hold | — | 2025-06-05 |
+| · | [11:27](https://www.youtube.com/watch?v=_yBBPJAGtHM&t=687s) | NFLX | long · hold | — | 2025-06-05 |
+| · | [11:27](https://www.youtube.com/watch?v=_yBBPJAGtHM&t=687s) | TMDX | long · hold | — | 2025-06-05 |
+| · | [11:54](https://www.youtube.com/watch?v=_yBBPJAGtHM&t=714s) | TOST | long · hold | — | 2025-06-05 |
+
+
+## 2025-06-05 — Scanning for group strength!
+
+[▶ watch](https://www.youtube.com/watch?v=oO4CLlK8I7U) · `data/ariel_hernandez/videos/recaps/2025-06-05_oO4CLlK8I7U` · 0 ticker flags · 1 trades
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [03:50](https://www.youtube.com/watch?v=oO4CLlK8I7U&t=230s) | KGC | long · hold | — | 2025-06-05 |
+
+
+## 2025-06-05 — 6/5/2025 Premarket Prep
+
+[▶ watch](https://www.youtube.com/watch?v=vZnxoxgowws) · `data/ariel_hernandez/videos/recaps/2025-06-05_vZnxoxgowws` · 0 ticker flags · 11 trades
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [10:54](https://www.youtube.com/watch?v=vZnxoxgowws&t=654s) | TSLA | long · exit | yesterday | 2025-06-04 |
+| ⬜ | [12:10](https://www.youtube.com/watch?v=vZnxoxgowws&t=730s) | TSLA | long · reentry | yesterday | 2025-06-04 |
+| ⬜ | [13:12](https://www.youtube.com/watch?v=vZnxoxgowws&t=792s) | TSLA | long · exit | yesterday | 2025-06-04 |
+| ⬜ | [14:53](https://www.youtube.com/watch?v=vZnxoxgowws&t=893s) | TSLA | long · trim | — | _(unresolved)_ |
+| · | [02:46](https://www.youtube.com/watch?v=vZnxoxgowws&t=166s) | KGC | long · hold | — | 2025-06-05 |
+| ⬜ | [16:52](https://www.youtube.com/watch?v=vZnxoxgowws&t=1012s) | COIN | long · entry | two days ago on tuesday | 2025-06-03 |
+| ⬜ | [17:06](https://www.youtube.com/watch?v=vZnxoxgowws&t=1026s) | COIN | long · trim | yesterday | 2025-06-04 |
+| ⬜ | [08:13](https://www.youtube.com/watch?v=vZnxoxgowws&t=493s) | NFLX | long · entry | that day | _(unresolved)_ |
+| ⬜ | [08:22](https://www.youtube.com/watch?v=vZnxoxgowws&t=502s) | CRWD | long · entry | the next day | _(unresolved)_ |
+| ⬜ | [08:22](https://www.youtube.com/watch?v=vZnxoxgowws&t=502s) | UBER | long · entry | — | _(unresolved)_ |
+| ⬜ | [08:22](https://www.youtube.com/watch?v=vZnxoxgowws&t=502s) | PLTR | long · entry | — | _(unresolved)_ |
+
+
+## 2025-06-04 — 6/4/2025 Premarket Prep
+
+[▶ watch](https://www.youtube.com/watch?v=DHdfRrYE_74) · `data/ariel_hernandez/videos/recaps/2025-06-04_DHdfRrYE_74` · 2 ticker flags · 20 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [09:06](https://www.youtube.com/watch?v=DHdfRrYE_74&t=546s) | GRR | only other short besides Rigetti, held for the last few months | ? | ❓ |
+| ⬜ | [18:40](https://www.youtube.com/watch?v=DHdfRrYE_74&t=1120s) | TNTX | old long with traction, listed with KGC, Netflix, Tesla | TMDX | 🟡 |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [08:15](https://www.youtube.com/watch?v=DHdfRrYE_74&t=495s) | COIN | long · entry | yesterday | 2025-06-03 |
+| ⬜ | [08:39](https://www.youtube.com/watch?v=DHdfRrYE_74&t=519s) | SMR | short · cover | monday | 2025-06-02 |
+| ⬜ | [08:15](https://www.youtube.com/watch?v=DHdfRrYE_74&t=495s) | SMR | short · stopped_out | yesterday | 2025-06-03 |
+| ⬜ | [10:13](https://www.youtube.com/watch?v=DHdfRrYE_74&t=613s) | RGTI | short · short | 528 | 2025-05-28 |
+| ⬜ | [12:10](https://www.youtube.com/watch?v=DHdfRrYE_74&t=730s) | RGTI | short · cover | the 30th | 2025-05-30 |
+| ⬜ | [09:06](https://www.youtube.com/watch?v=DHdfRrYE_74&t=546s) | ? | short · hold | — | 2025-06-04 |
+| ⬜ | [15:16](https://www.youtube.com/watch?v=DHdfRrYE_74&t=916s) | HIMS | long · entry | a few days ago | _(unresolved)_ |
+| ⬜ | [15:16](https://www.youtube.com/watch?v=DHdfRrYE_74&t=916s) | HIMS | long · exit | — | _(unresolved)_ |
+| ⬜ | [15:40](https://www.youtube.com/watch?v=DHdfRrYE_74&t=940s) | DASH | long · entry | — | _(unresolved)_ |
+| ⬜ | [15:40](https://www.youtube.com/watch?v=DHdfRrYE_74&t=940s) | DASH | long · stopped_out | — | _(unresolved)_ |
+| · | [18:40](https://www.youtube.com/watch?v=DHdfRrYE_74&t=1120s) | KGC | long · hold | — | 2025-06-04 |
+| · | [18:54](https://www.youtube.com/watch?v=DHdfRrYE_74&t=1134s) | NFLX | long · hold | — | 2025-06-04 |
+| ⬜ | [18:54](https://www.youtube.com/watch?v=DHdfRrYE_74&t=1134s) | ? | long · hold | — | 2025-06-04 |
+| · | [18:54](https://www.youtube.com/watch?v=DHdfRrYE_74&t=1134s) | TOST | long · hold | — | 2025-06-04 |
+| ⬜ | [42:03](https://www.youtube.com/watch?v=DHdfRrYE_74&t=2523s) | TSLA | long · entry | — | _(unresolved)_ |
+| ⬜ | [20:10](https://www.youtube.com/watch?v=DHdfRrYE_74&t=1210s) | PLTR | long · entry | 4:23 | 2025-04-23 |
+| ⬜ | [20:10](https://www.youtube.com/watch?v=DHdfRrYE_74&t=1210s) | PLTR | long · exit | — | _(unresolved)_ |
+| ⬜ | [26:49](https://www.youtube.com/watch?v=DHdfRrYE_74&t=1609s) | SNOW | long · stopped_out | — | _(unresolved)_ |
+| ⬜ | [36:27](https://www.youtube.com/watch?v=DHdfRrYE_74&t=2187s) | CRWD | long · exit | — | _(unresolved)_ |
+| ⬜ | [42:59](https://www.youtube.com/watch?v=DHdfRrYE_74&t=2579s) | SMCI | short · short | — | _(unresolved)_ |
+
+
+## 2025-06-04 — 6/4/2025 After-Hours recap
+
+[▶ watch](https://www.youtube.com/watch?v=cinT9AQ0bVE) · `data/ariel_hernandez/videos/recaps/2025-06-04_cinT9AQ0bVE` · 0 ticker flags · 16 trades
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [04:03](https://www.youtube.com/watch?v=cinT9AQ0bVE&t=243s) | COIN | long · trim | today | 2025-06-04 |
+| · | [05:58](https://www.youtube.com/watch?v=cinT9AQ0bVE&t=358s) | TSM | long · entry | today | 2025-06-04 |
+| · | [06:23](https://www.youtube.com/watch?v=cinT9AQ0bVE&t=383s) | TSM | long · stopped_out | today | 2025-06-04 |
+| · | [07:25](https://www.youtube.com/watch?v=cinT9AQ0bVE&t=445s) | QBTS | short · short | today | 2025-06-04 |
+| · | [07:49](https://www.youtube.com/watch?v=cinT9AQ0bVE&t=469s) | QBTS | short · stopped_out | today | 2025-06-04 |
+| · | [07:25](https://www.youtube.com/watch?v=cinT9AQ0bVE&t=445s) | RGTI | short · hold | — | 2025-06-04 |
+| ⬜ | [08:24](https://www.youtube.com/watch?v=cinT9AQ0bVE&t=504s) | TSLA | long · add | — | _(unresolved)_ |
+| · | [08:24](https://www.youtube.com/watch?v=cinT9AQ0bVE&t=504s) | TSLA | long · exit | near the end of day | 2025-06-04 |
+| ⬜ | [09:12](https://www.youtube.com/watch?v=cinT9AQ0bVE&t=552s) | UBER | long · stopped_out | — | _(unresolved)_ |
+| ⬜ | [09:12](https://www.youtube.com/watch?v=cinT9AQ0bVE&t=552s) | CLS | long · exit | — | _(unresolved)_ |
+| ⬜ | [09:12](https://www.youtube.com/watch?v=cinT9AQ0bVE&t=552s) | DASH | long · entry | — | _(unresolved)_ |
+| ⬜ | [09:12](https://www.youtube.com/watch?v=cinT9AQ0bVE&t=552s) | DASH | long · exit | — | _(unresolved)_ |
+| · | [09:55](https://www.youtube.com/watch?v=cinT9AQ0bVE&t=595s) | TOST | long · hold | — | 2025-06-04 |
+| · | [09:55](https://www.youtube.com/watch?v=cinT9AQ0bVE&t=595s) | TMDX | long · hold | — | 2025-06-04 |
+| · | [09:55](https://www.youtube.com/watch?v=cinT9AQ0bVE&t=595s) | NFLX | long · hold | — | 2025-06-04 |
+| · | [09:55](https://www.youtube.com/watch?v=cinT9AQ0bVE&t=595s) | KGC | long · hold | — | 2025-06-04 |
+
+
+## 2025-06-03 — 6/3/2025 Premarket Prep. Special Guest
+
+[▶ watch](https://www.youtube.com/watch?v=3ZM0EIUmSfI) · `data/ariel_hernandez/videos/recaps/2025-06-03_3ZM0EIUmSfI` · 0 ticker flags · 20 trades
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [02:12](https://www.youtube.com/watch?v=3ZM0EIUmSfI&t=132s) | HIMS | long · entry | yesterday | 2025-06-02 |
+| ⬜ | [47:42](https://www.youtube.com/watch?v=3ZM0EIUmSfI&t=2862s) | HIMS | long · stopped_out | yesterday | 2025-06-02 |
+| ⬜ | [08:02](https://www.youtube.com/watch?v=3ZM0EIUmSfI&t=482s) | DASH | long · entry | yesterday | 2025-06-02 |
+| ⬜ | [47:42](https://www.youtube.com/watch?v=3ZM0EIUmSfI&t=2862s) | DASH | long · stopped_out | yesterday | 2025-06-02 |
+| ⬜ | [03:43](https://www.youtube.com/watch?v=3ZM0EIUmSfI&t=223s) | SMR | short · cover | — | _(unresolved)_ |
+| ⬜ | [08:59](https://www.youtube.com/watch?v=3ZM0EIUmSfI&t=539s) | UBER | long · stopped_out | — | _(unresolved)_ |
+| ⬜ | [08:59](https://www.youtube.com/watch?v=3ZM0EIUmSfI&t=539s) | CLS | long · stopped_out | — | _(unresolved)_ |
+| · | [22:04](https://www.youtube.com/watch?v=3ZM0EIUmSfI&t=1324s) | TOST | long · hold | — | 2025-06-03 |
+| · | [29:13](https://www.youtube.com/watch?v=3ZM0EIUmSfI&t=1753s) | TSLA | long · hold | — | 2025-06-03 |
+| · | [29:13](https://www.youtube.com/watch?v=3ZM0EIUmSfI&t=1753s) | TMDX | long · hold | — | 2025-06-03 |
+| ⬜ | [28:11](https://www.youtube.com/watch?v=3ZM0EIUmSfI&t=1691s) | NFLX | long · entry | the very next day | _(unresolved)_ |
+| ⬜ | [28:50](https://www.youtube.com/watch?v=3ZM0EIUmSfI&t=1730s) | PLTR | long · entry | the next day | _(unresolved)_ |
+| ⬜ | [34:12](https://www.youtube.com/watch?v=3ZM0EIUmSfI&t=2052s) | PLTR | long · exit | when it gapped down | _(unresolved)_ |
+| ⬜ | [28:50](https://www.youtube.com/watch?v=3ZM0EIUmSfI&t=1730s) | CRWD | long · entry | the day after that | _(unresolved)_ |
+| ⬜ | [28:50](https://www.youtube.com/watch?v=3ZM0EIUmSfI&t=1730s) | UBER | long · entry | same day | _(unresolved)_ |
+| ⬜ | [31:38](https://www.youtube.com/watch?v=3ZM0EIUmSfI&t=1898s) | HOOD | long · entry | — | _(unresolved)_ |
+| ⬜ | [31:48](https://www.youtube.com/watch?v=3ZM0EIUmSfI&t=1908s) | HOOD | long · exit | — | _(unresolved)_ |
+| ⬜ | [43:26](https://www.youtube.com/watch?v=3ZM0EIUmSfI&t=2606s) | AMD | long · entry | — | _(unresolved)_ |
+| ⬜ | [43:40](https://www.youtube.com/watch?v=3ZM0EIUmSfI&t=2620s) | AMD | long · trim | — | _(unresolved)_ |
+| ⬜ | [27:15](https://www.youtube.com/watch?v=3ZM0EIUmSfI&t=1635s) | QQQ | long · entry | on a monday | _(unresolved)_ |
+
+
+## 2025-06-03 — 6/3/2025 After-Hours recap
+
+[▶ watch](https://www.youtube.com/watch?v=S7-5fyidvTs) · `data/ariel_hernandez/videos/recaps/2025-06-03_S7-5fyidvTs` · 0 ticker flags · 10 trades
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [01:56](https://www.youtube.com/watch?v=S7-5fyidvTs&t=116s) | TSLA | long · hold | — | 2025-06-03 |
+| · | [02:32](https://www.youtube.com/watch?v=S7-5fyidvTs&t=152s) | COIN | long · entry | today | 2025-06-03 |
+| ⬜ | [05:03](https://www.youtube.com/watch?v=S7-5fyidvTs&t=303s) | SMR | short · short | — | _(unresolved)_ |
+| ⬜ | [05:03](https://www.youtube.com/watch?v=S7-5fyidvTs&t=303s) | SMR | short · cover | — | _(unresolved)_ |
+| · | [05:03](https://www.youtube.com/watch?v=S7-5fyidvTs&t=303s) | SMR | short · stopped_out | first five minute bar of the day | 2025-06-03 |
+| · | [05:16](https://www.youtube.com/watch?v=S7-5fyidvTs&t=316s) | RGTI | short · hold | — | 2025-06-03 |
+| · | [06:30](https://www.youtube.com/watch?v=S7-5fyidvTs&t=390s) | KGC | long · hold | — | 2025-06-03 |
+| · | [06:30](https://www.youtube.com/watch?v=S7-5fyidvTs&t=390s) | NFLX | long · hold | — | 2025-06-03 |
+| · | [06:30](https://www.youtube.com/watch?v=S7-5fyidvTs&t=390s) | TMDX | long · hold | — | 2025-06-03 |
+| · | [06:30](https://www.youtube.com/watch?v=S7-5fyidvTs&t=390s) | TOST | long · hold | — | 2025-06-03 |
+
+
+## 2025-06-02 — 6/2/2025 After-Hours Recap
+
+[▶ watch](https://www.youtube.com/watch?v=0WEuouuDBAg) · `data/ariel_hernandez/videos/recaps/2025-06-02_0WEuouuDBAg` · 0 ticker flags · 11 trades
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [02:57](https://www.youtube.com/watch?v=0WEuouuDBAg&t=177s) | TOST | long · hold | — | 2025-06-02 |
+| · | [03:56](https://www.youtube.com/watch?v=0WEuouuDBAg&t=236s) | KGC | long · hold | — | 2025-06-02 |
+| ⬜ | [06:52](https://www.youtube.com/watch?v=0WEuouuDBAg&t=412s) | PLTR | long · exit | on the earnings gap down | _(unresolved)_ |
+| ⬜ | [06:52](https://www.youtube.com/watch?v=0WEuouuDBAg&t=412s) | CRWD | long · exit | — | _(unresolved)_ |
+| ⬜ | [07:14](https://www.youtube.com/watch?v=0WEuouuDBAg&t=434s) | HOOD | long · exit | — | _(unresolved)_ |
+| ⬜ | [07:34](https://www.youtube.com/watch?v=0WEuouuDBAg&t=454s) | CLS | long · stopped_out | — | _(unresolved)_ |
+| ⬜ | [10:54](https://www.youtube.com/watch?v=0WEuouuDBAg&t=654s) | SNOW | long · entry | — | _(unresolved)_ |
+| ⬜ | [10:54](https://www.youtube.com/watch?v=0WEuouuDBAg&t=654s) | SNOW | long · exit | the other day | _(unresolved)_ |
+| · | [07:14](https://www.youtube.com/watch?v=0WEuouuDBAg&t=434s) | NFLX | long · hold | — | 2025-06-02 |
+| · | [07:14](https://www.youtube.com/watch?v=0WEuouuDBAg&t=434s) | TMDX | long · hold | — | 2025-06-02 |
+| · | [07:14](https://www.youtube.com/watch?v=0WEuouuDBAg&t=434s) | TSLA | long · hold | — | 2025-06-02 |
+
+
+## 2025-06-02 — 6/2/2025 Premarket Prep
+
+[▶ watch](https://www.youtube.com/watch?v=i10G_NlpGFI) · `data/ariel_hernandez/videos/recaps/2025-06-02_i10G_NlpGFI` · 0 ticker flags · 9 trades
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [02:38](https://www.youtube.com/watch?v=i10G_NlpGFI&t=158s) | KGC | long · entry | 5:15 | 2025-05-15 |
+| ⬜ | [07:28](https://www.youtube.com/watch?v=i10G_NlpGFI&t=448s) | PLTR | short · short | friday | 2025-05-30 |
+| ⬜ | [08:15](https://www.youtube.com/watch?v=i10G_NlpGFI&t=495s) | PLTR | short · stopped_out | friday | 2025-05-30 |
+| ⬜ | [09:31](https://www.youtube.com/watch?v=i10G_NlpGFI&t=571s) | PLTR | long · entry | — | _(unresolved)_ |
+| ⬜ | [26:05](https://www.youtube.com/watch?v=i10G_NlpGFI&t=1565s) | CRWD | long · entry | — | _(unresolved)_ |
+| ⬜ | [26:16](https://www.youtube.com/watch?v=i10G_NlpGFI&t=1576s) | TSLA | long · entry | 50 points ago | _(unresolved)_ |
+| · | [26:16](https://www.youtube.com/watch?v=i10G_NlpGFI&t=1576s) | NFLX | long · hold | — | 2025-06-02 |
+| · | [10:24](https://www.youtube.com/watch?v=i10G_NlpGFI&t=624s) | TOST | long · hold | — | 2025-06-02 |
+| · | [15:53](https://www.youtube.com/watch?v=i10G_NlpGFI&t=953s) | SMR | short · hold | — | 2025-06-02 |
+
+
+## 2025-05-30 — 5/30/2025 After-Hours Recap
+
+[▶ watch](https://www.youtube.com/watch?v=NFrOED2AYcY) · `data/ariel_hernandez/videos/recaps/2025-05-30_NFrOED2AYcY` · 1 ticker flags · 12 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [06:03](https://www.youtube.com/watch?v=NFrOED2AYcY&t=363s) | IQ with another 7% lower today | Speculative names falling; he then covers 'little pieces of that'. Positions he names later are Regetti and SMR, so no row logged for IQ. | IONQ | ❓ |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [05:18](https://www.youtube.com/watch?v=NFrOED2AYcY&t=318s) | HIMS | long · entry | a few days ago | _(unresolved)_ |
+| ⬜ | [07:46](https://www.youtube.com/watch?v=NFrOED2AYcY&t=466s) | HIMS | long · stopped_out | yesterday | 2025-05-29 |
+| ⬜ | [07:46](https://www.youtube.com/watch?v=NFrOED2AYcY&t=466s) | UBER | long · stopped_out | — | _(unresolved)_ |
+| ⬜ | [07:56](https://www.youtube.com/watch?v=NFrOED2AYcY&t=476s) | DASH | long · stopped_out | yesterday | 2025-05-29 |
+| · | [08:18](https://www.youtube.com/watch?v=NFrOED2AYcY&t=498s) | CLS | long · stopped_out | today | 2025-05-30 |
+| · | [06:03](https://www.youtube.com/watch?v=NFrOED2AYcY&t=363s) | RGTI | short · cover | today | 2025-05-30 |
+| · | [14:07](https://www.youtube.com/watch?v=NFrOED2AYcY&t=847s) | SMR | short · cover | today | 2025-05-30 |
+| · | [13:31](https://www.youtube.com/watch?v=NFrOED2AYcY&t=811s) | KGC | long · hold | — | 2025-05-30 |
+| · | [13:42](https://www.youtube.com/watch?v=NFrOED2AYcY&t=822s) | NFLX | long · hold | — | 2025-05-30 |
+| · | [13:42](https://www.youtube.com/watch?v=NFrOED2AYcY&t=822s) | TMDX | long · hold | — | 2025-05-30 |
+| · | [13:42](https://www.youtube.com/watch?v=NFrOED2AYcY&t=822s) | TOST | long · hold | — | 2025-05-30 |
+| · | [13:42](https://www.youtube.com/watch?v=NFrOED2AYcY&t=822s) | TSLA | long · hold | — | 2025-05-30 |
+
+
+## 2025-05-30 — 5/30/2025 Premarket Prep
+
+[▶ watch](https://www.youtube.com/watch?v=jRnWgfwAsVQ) · `data/ariel_hernandez/videos/recaps/2025-05-30_jRnWgfwAsVQ` · 1 ticker flags · 13 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [24:02](https://www.youtube.com/watch?v=jRnWgfwAsVQ&t=1442s) | GRR is a bare flag. I've been short this thing since April third | Short held since early April from ~23; liquidity fell from ~$100M to ~$20M/day | GRRR | ❓ |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [05:02](https://www.youtube.com/watch?v=jRnWgfwAsVQ&t=302s) | UBER | long · stopped_out | yesterday | 2025-05-29 |
+| ⬜ | [16:10](https://www.youtube.com/watch?v=jRnWgfwAsVQ&t=970s) | HIMS | long · entry | two days ago | 2025-05-28 |
+| ⬜ | [16:21](https://www.youtube.com/watch?v=jRnWgfwAsVQ&t=981s) | HIMS | long · stopped_out | yesterday | 2025-05-29 |
+| ⬜ | [05:17](https://www.youtube.com/watch?v=jRnWgfwAsVQ&t=317s) | DASH | long · stopped_out | yesterday | 2025-05-29 |
+| · | [07:18](https://www.youtube.com/watch?v=jRnWgfwAsVQ&t=438s) | SMR | short · hold | — | 2025-05-30 |
+| ⬜ | [07:18](https://www.youtube.com/watch?v=jRnWgfwAsVQ&t=438s) | RGTI | short · short | yesterday, really from two days ago | 2025-05-28 |
+| ⬜ | [15:10](https://www.youtube.com/watch?v=jRnWgfwAsVQ&t=910s) | TSLA | long · trim | two days ago | 2025-05-28 |
+| · | [21:03](https://www.youtube.com/watch?v=jRnWgfwAsVQ&t=1263s) | CLS | long · hold | — | 2025-05-30 |
+| ⬜ | [24:02](https://www.youtube.com/watch?v=jRnWgfwAsVQ&t=1442s) | ? | short · hold | since april third, april 2nd | _(unresolved)_ |
+| ⬜ | [41:23](https://www.youtube.com/watch?v=jRnWgfwAsVQ&t=2483s) | SNOW | long · exit | — | _(unresolved)_ |
+| ⬜ | [46:15](https://www.youtube.com/watch?v=jRnWgfwAsVQ&t=2775s) | ESTC | short · short | february | _(unresolved)_ |
+| ⬜ | [45:37](https://www.youtube.com/watch?v=jRnWgfwAsVQ&t=2737s) | ESTC | short · cover | — | _(unresolved)_ |
+| ⬜ | [38:02](https://www.youtube.com/watch?v=jRnWgfwAsVQ&t=2282s) | CCJ | long · entry | back in 2022 of october | _(unresolved)_ |
+
+
+## 2025-05-29 — 2025/05/29 Discord Live Stream
+
+[▶ watch](https://www.youtube.com/watch?v=8Yat259nhZk) · `data/ariel_hernandez/videos/recaps/2025-05-29_8Yat259nhZk` · 2 ticker flags · 22 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [128:50](https://www.youtube.com/watch?v=8Yat259nhZk&t=7730s) | GrrR / GR RR / grr / GRR | a short held ~two months alongside Rigetti and SMR shorts | GRRR | ❓ |
+| ⬜ | [268:23](https://www.youtube.com/watch?v=8Yat259nhZk&t=16103s) | NO | short held through earnings, 988 average, fell to 700, covered 4/24 | NOW | 🟡 |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [00:13](https://www.youtube.com/watch?v=8Yat259nhZk&t=13s) | UBER | long · stopped_out | today | 2025-05-29 |
+| ⬜ | [310:38](https://www.youtube.com/watch?v=8Yat259nhZk&t=18638s) | UBER | long · entry | on the 423 watch list going into 424 | _(unresolved)_ |
+| ⬜ | [311:03](https://www.youtube.com/watch?v=8Yat259nhZk&t=18663s) | UBER | long · trim | — | _(unresolved)_ |
+| ⬜ | [311:15](https://www.youtube.com/watch?v=8Yat259nhZk&t=18675s) | UBER | long · add | — | _(unresolved)_ |
+| ⬜ | [266:36](https://www.youtube.com/watch?v=8Yat259nhZk&t=15996s) | RGTI | short · short | yesterday | 2025-05-28 |
+| ⬜ | [80:01](https://www.youtube.com/watch?v=8Yat259nhZk&t=4801s) | SMR | short · short | yesterday | 2025-05-28 |
+| · | [82:06](https://www.youtube.com/watch?v=8Yat259nhZk&t=4926s) | SMR | short · add | this morning | 2025-05-29 |
+| ⬜ | [274:52](https://www.youtube.com/watch?v=8Yat259nhZk&t=16492s) | GRRR | short · hold | for two months now | _(unresolved)_ |
+| ⬜ | [328:41](https://www.youtube.com/watch?v=8Yat259nhZk&t=19721s) | HIMS | long · entry | yesterday | 2025-05-28 |
+| · | [42:38](https://www.youtube.com/watch?v=8Yat259nhZk&t=2558s) | HIMS | long · stopped_out | this morning | 2025-05-29 |
+| ⬜ | [328:41](https://www.youtube.com/watch?v=8Yat259nhZk&t=19721s) | DASH | long · entry | — | _(unresolved)_ |
+| · | [16:38](https://www.youtube.com/watch?v=8Yat259nhZk&t=998s) | DASH | long · stopped_out | today | 2025-05-29 |
+| ⬜ | [31:20](https://www.youtube.com/watch?v=8Yat259nhZk&t=1880s) | CLS | long · trim | — | _(unresolved)_ |
+| ⬜ | [273:51](https://www.youtube.com/watch?v=8Yat259nhZk&t=16431s) | TSLA | long · trim | yesterday | 2025-05-28 |
+| ⬜ | [228:42](https://www.youtube.com/watch?v=8Yat259nhZk&t=13722s) | NFLX | long · entry | on 422 | 2025-04-22 |
+| ⬜ | [174:02](https://www.youtube.com/watch?v=8Yat259nhZk&t=10442s) | KGC | long · hold | for 10 days | _(unresolved)_ |
+| · | [274:22](https://www.youtube.com/watch?v=8Yat259nhZk&t=16462s) | TOST | long · hold | — | 2025-05-29 |
+| · | [274:39](https://www.youtube.com/watch?v=8Yat259nhZk&t=16479s) | TMDX | long · hold | — | 2025-05-29 |
+| ⬜ | [22:21](https://www.youtube.com/watch?v=8Yat259nhZk&t=1341s) | CRWD | long · exit | a few days ago on 521 | 2025-05-21 |
+| ⬜ | [309:32](https://www.youtube.com/watch?v=8Yat259nhZk&t=18572s) | SNOW | long · exit | yesterday | 2025-05-28 |
+| ⬜ | [268:23](https://www.youtube.com/watch?v=8Yat259nhZk&t=16103s) | NOW | short · cover | on 424 | 2025-04-24 |
+| ⬜ | [319:00](https://www.youtube.com/watch?v=8Yat259nhZk&t=19140s) | HOOD | unknown · stopped_out | — | _(unresolved)_ |
+
+
+## 2025-05-29 — 5/29/2025 Premarket Prep
+
+[▶ watch](https://www.youtube.com/watch?v=lHmRCjdP0YM) · `data/ariel_hernandez/videos/recaps/2025-05-29_lHmRCjdP0YM` · 0 ticker flags · 12 trades
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [02:59](https://www.youtube.com/watch?v=lHmRCjdP0YM&t=179s) | TSLA | long · trim | yesterday | 2025-05-28 |
+| ⬜ | [13:23](https://www.youtube.com/watch?v=lHmRCjdP0YM&t=803s) | HIMS | long · reentry | yesterday | 2025-05-28 |
+| ⬜ | [38:51](https://www.youtube.com/watch?v=lHmRCjdP0YM&t=2331s) | DASH | long · entry | yesterday | 2025-05-28 |
+| ⬜ | [35:11](https://www.youtube.com/watch?v=lHmRCjdP0YM&t=2111s) | HSAI | long · entry | — | _(unresolved)_ |
+| ⬜ | [35:22](https://www.youtube.com/watch?v=lHmRCjdP0YM&t=2122s) | HSAI | long · trim | — | _(unresolved)_ |
+| ⬜ | [35:22](https://www.youtube.com/watch?v=lHmRCjdP0YM&t=2122s) | HSAI | long · exit | — | _(unresolved)_ |
+| · | [41:55](https://www.youtube.com/watch?v=lHmRCjdP0YM&t=2515s) | CLS | long · hold | — | 2025-05-29 |
+| · | [41:55](https://www.youtube.com/watch?v=lHmRCjdP0YM&t=2515s) | KGC | long · hold | — | 2025-05-29 |
+| · | [41:55](https://www.youtube.com/watch?v=lHmRCjdP0YM&t=2515s) | NFLX | long · hold | — | 2025-05-29 |
+| · | [41:55](https://www.youtube.com/watch?v=lHmRCjdP0YM&t=2515s) | TMDX | long · hold | — | 2025-05-29 |
+| · | [41:55](https://www.youtube.com/watch?v=lHmRCjdP0YM&t=2515s) | TOST | long · hold | — | 2025-05-29 |
+| · | [41:55](https://www.youtube.com/watch?v=lHmRCjdP0YM&t=2515s) | UBER | long · hold | — | 2025-05-29 |
+
+
+## 2025-05-29 — 2025/05/29 After-Hours Recap
+
+[▶ watch](https://www.youtube.com/watch?v=qrRXSN49mn8) · `data/ariel_hernandez/videos/recaps/2025-05-29_qrRXSN49mn8` · 1 ticker flags · 14 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [09:54](https://www.youtube.com/watch?v=qrRXSN49mn8&t=594s) | GRR | I have a short in SMR, Regetti, and GRR now for the last two months | ? | ❓ |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [01:08](https://www.youtube.com/watch?v=qrRXSN49mn8&t=68s) | UBER | long · stopped_out | today | 2025-05-29 |
+| ⬜ | [03:08](https://www.youtube.com/watch?v=qrRXSN49mn8&t=188s) | HIMS | long · entry | yesterday | 2025-05-28 |
+| · | [03:08](https://www.youtube.com/watch?v=qrRXSN49mn8&t=188s) | HIMS | long · stopped_out | this morning | 2025-05-29 |
+| ⬜ | [03:08](https://www.youtube.com/watch?v=qrRXSN49mn8&t=188s) | DASH | long · entry | yesterday | 2025-05-28 |
+| · | [03:22](https://www.youtube.com/watch?v=qrRXSN49mn8&t=202s) | DASH | long · exit | this morning | 2025-05-29 |
+| ⬜ | [09:09](https://www.youtube.com/watch?v=qrRXSN49mn8&t=549s) | TSLA | long · trim | yesterday | 2025-05-28 |
+| ⬜ | [09:54](https://www.youtube.com/watch?v=qrRXSN49mn8&t=594s) | SMR | short · short | yesterday | 2025-05-28 |
+| ⬜ | [09:54](https://www.youtube.com/watch?v=qrRXSN49mn8&t=594s) | RGTI | short · short | yesterday | 2025-05-28 |
+| ⬜ | [09:54](https://www.youtube.com/watch?v=qrRXSN49mn8&t=594s) | ? | short · hold | — | 2025-05-29 |
+| · | [09:40](https://www.youtube.com/watch?v=qrRXSN49mn8&t=580s) | CLS | long · hold | — | 2025-05-29 |
+| · | [09:40](https://www.youtube.com/watch?v=qrRXSN49mn8&t=580s) | KGC | long · hold | — | 2025-05-29 |
+| · | [09:40](https://www.youtube.com/watch?v=qrRXSN49mn8&t=580s) | NFLX | long · hold | — | 2025-05-29 |
+| · | [09:40](https://www.youtube.com/watch?v=qrRXSN49mn8&t=580s) | TMDX | long · hold | — | 2025-05-29 |
+| · | [09:40](https://www.youtube.com/watch?v=qrRXSN49mn8&t=580s) | TOST | long · hold | — | 2025-05-29 |
+
+
+## 2025-05-28 — 5/28/2025 Premarket Prep
+
+[▶ watch](https://www.youtube.com/watch?v=fvoEZ_pxV_Y) · `data/ariel_hernandez/videos/recaps/2025-05-28_fvoEZ_pxV_Y` · 0 ticker flags · 7 trades
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [05:56](https://www.youtube.com/watch?v=fvoEZ_pxV_Y&t=356s) | TSLA | long · hold | — | 2025-05-28 |
+| ⬜ | [09:42](https://www.youtube.com/watch?v=fvoEZ_pxV_Y&t=582s) | HSAI | long · trim | before earnings | _(unresolved)_ |
+| ⬜ | [09:55](https://www.youtube.com/watch?v=fvoEZ_pxV_Y&t=595s) | HSAI | long · exit | — | _(unresolved)_ |
+| ⬜ | [19:27](https://www.youtube.com/watch?v=fvoEZ_pxV_Y&t=1167s) | UBER | long · add | yesterday | 2025-05-27 |
+| ⬜ | [51:16](https://www.youtube.com/watch?v=fvoEZ_pxV_Y&t=3076s) | UBER | long · trim | — | _(unresolved)_ |
+| ⬜ | [19:42](https://www.youtube.com/watch?v=fvoEZ_pxV_Y&t=1182s) | SNOW | long · entry | yesterday | 2025-05-27 |
+| ⬜ | [20:21](https://www.youtube.com/watch?v=fvoEZ_pxV_Y&t=1221s) | NFLX | long · entry | — | _(unresolved)_ |
+
+
+## 2025-05-28 — 5/28/2025 After-Hours Recap
+
+[▶ watch](https://www.youtube.com/watch?v=o3D41i6_Oag) · `data/ariel_hernandez/videos/recaps/2025-05-28_o3D41i6_Oag` · 0 ticker flags · 6 trades
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [02:18](https://www.youtube.com/watch?v=o3D41i6_Oag&t=138s) | TSLA | long · trim | today | 2025-05-28 |
+| · | [02:52](https://www.youtube.com/watch?v=o3D41i6_Oag&t=172s) | DASH | long · entry | today | 2025-05-28 |
+| · | [03:05](https://www.youtube.com/watch?v=o3D41i6_Oag&t=185s) | SNOW | long · exit | today | 2025-05-28 |
+| · | [03:58](https://www.youtube.com/watch?v=o3D41i6_Oag&t=238s) | HIMS | long · entry | today | 2025-05-28 |
+| · | [05:21](https://www.youtube.com/watch?v=o3D41i6_Oag&t=321s) | GEO | short · short | today | 2025-05-28 |
+| · | [05:36](https://www.youtube.com/watch?v=o3D41i6_Oag&t=336s) | SMR | short · short | today | 2025-05-28 |
 

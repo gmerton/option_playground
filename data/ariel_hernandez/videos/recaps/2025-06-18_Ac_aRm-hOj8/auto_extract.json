@@ -1,0 +1,35 @@
+{
+ "video_id": "Ac_aRm-hOj8",
+ "title": "6/18/2025 Premarket Prep",
+ "upload_date": "2025-06-18",
+ "date": "2025-06-18",
+ "session_date": "2025-06-18",
+ "session_date_basis": "upload",
+ "observed_trades": [
+  {
+   "date": "2025-06-18",
+   "ticker": "ARQQ",
+   "ticker_as_captioned": "it",
+   "vehicle": null,
+   "direction": "long",
+   "action": "hold",
+   "fill_timing": "",
+   "timing_basis": "",
+   "fill_date_stated": "",
+   "is_retrospective": false,
+   "position_after": "open",
+   "setup": "Owns a speculative name that has volume coming in but isn't moving.",
+   "entry_basis": "",
+   "stop": "",
+   "size": "",
+   "price": null,
+   "price_kind": null,
+   "source": "2025-06-18_Ac_aRm-hOj8@18:36",
+   "confidence": "inferred",
+   "quote": "No chance. I like I own it, but it's just not really moving.",
+   "notes": "'it' follows his comment on ARQQ ('too extended makes no money. Speculative ... Not something I would buy up at 33 34 bucks today'); referent not certain."
+  }
+ ],
+ "principles": [],
+ "ambiguous_tickers": []
+}

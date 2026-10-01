@@ -1,0 +1,146 @@
+{
+ "video_id": "PGwuBc5VFpE",
+ "title": "6/12/2025 After-Hours Recap",
+ "upload_date": "2025-06-13",
+ "date": "2025-06-12",
+ "session_date": "2025-06-12",
+ "session_date_basis": "spoken",
+ "observed_trades": [
+  {
+   "date": "2025-06-12", "ticker": "SHOP", "ticker_as_captioned": "Shopify", "vehicle": null,
+   "direction": "long", "action": "entry", "fill_timing": "", "timing_basis": "", "fill_date_stated": "",
+   "is_retrospective": false, "position_after": "closed",
+   "setup": "New long in Shopify off a flat pivot that looked good one day, then broke down.",
+   "entry_basis": "flat pivot", "stop": "prior day low", "size": "",
+   "price": null, "price_kind": null,
+   "source": "2025-06-13_PGwuBc5VFpE@00:47", "confidence": "stated",
+   "quote": "going into today, I had taken a long in Shopify",
+   "notes": "Entry date not stated; before 6/11."
+  },
+  {
+   "date": "2025-06-12", "ticker": "SHOP", "ticker_as_captioned": "Shopify", "vehicle": null,
+   "direction": "long", "action": "trim", "fill_timing": "yesterday", "timing_basis": "stated", "fill_date_stated": "2025-06-11",
+   "is_retrospective": false, "position_after": "partial",
+   "setup": "Trimmed some Shopify into a little profit.",
+   "entry_basis": "", "stop": "", "size": "some",
+   "price": null, "price_kind": null,
+   "source": "2025-06-13_PGwuBc5VFpE@00:47", "confidence": "stated",
+   "quote": "I did trim some yesterday into a little bit of profit",
+   "notes": ""
+  },
+  {
+   "date": "2025-06-12", "ticker": "SHOP", "ticker_as_captioned": "Shopify", "vehicle": null,
+   "direction": "long", "action": "stopped_out", "fill_timing": "today", "timing_basis": "implied", "fill_date_stated": "2025-06-12",
+   "is_retrospective": false, "position_after": "closed",
+   "setup": "Remainder stopped at yesterday's low; overall a small losing position.",
+   "entry_basis": "", "stop": "yesterday's lows (prior day low)", "size": "remainder",
+   "price": null, "price_kind": null,
+   "source": "2025-06-13_PGwuBc5VFpE@00:59", "confidence": "stated",
+   "quote": "they came back for it and took me out at, uh, yesterday's lows",
+   "notes": "Also at 07:07 'took a small loss on that one today'."
+  },
+  {
+   "date": "2025-06-12", "ticker": "SOFI", "ticker_as_captioned": "SoFi", "vehicle": null,
+   "direction": "long", "action": "trim", "fill_timing": "today", "timing_basis": "stated", "fill_date_stated": "2025-06-12",
+   "is_retrospective": false, "position_after": "partial",
+   "setup": "Closed a third of SoFi for about a 10-cent gain; expects the rest stopped tomorrow.",
+   "entry_basis": "", "stop": "", "size": "a third of my position",
+   "price": null, "price_kind": null,
+   "source": "2025-06-13_PGwuBc5VFpE@02:08", "confidence": "stated",
+   "quote": "something similar with SoFi today that I did with Shopify yesterday, and that is close a portion of my shares",
+   "notes": "Size from 12:42 'SoFi, small, a third of my position trimmed today'."
+  },
+  {
+   "date": "2025-06-12", "ticker": "?", "ticker_as_captioned": "ARC", "vehicle": null,
+   "direction": "long", "action": "trim", "fill_timing": "this afternoon", "timing_basis": "stated", "fill_date_stated": "2025-06-12",
+   "is_retrospective": false, "position_after": "partial",
+   "setup": "Trimmed more ARC when it broke the 5-day SMA; has now locked in half.",
+   "entry_basis": "", "stop": "", "size": "half of my position",
+   "price": null, "price_kind": null,
+   "source": "2025-06-13_PGwuBc5VFpE@05:29", "confidence": "stated",
+   "quote": "I did go ahead and trim more ARC uh this afternoon when it broke the five simple moving average",
+   "notes": "'ARC' unresolved in this video; possibly ARKK. Also 12:29 'booked half of my ARC'."
+  },
+  {
+   "date": "2025-06-12", "ticker": "TEM", "ticker_as_captioned": "TEM", "vehicle": null,
+   "direction": "long", "action": "trim", "fill_timing": "", "timing_basis": "", "fill_date_stated": "",
+   "is_retrospective": false, "position_after": "partial",
+   "setup": "Has booked half of TEM, which had been working.",
+   "entry_basis": "", "stop": "", "size": "half",
+   "price": null, "price_kind": null,
+   "source": "2025-06-13_PGwuBc5VFpE@12:29", "confidence": "stated",
+   "quote": "I've booked half of my TEM. I booked a majority of my TMDX.",
+   "notes": "When the trim happened is not stated."
+  },
+  {
+   "date": "2025-06-12", "ticker": "TMDX", "ticker_as_captioned": "TMDX", "vehicle": null,
+   "direction": "long", "action": "trim", "fill_timing": "", "timing_basis": "", "fill_date_stated": "",
+   "is_retrospective": false, "position_after": "partial",
+   "setup": "Booked a majority (earlier said half) of TMDX, one of his better movers.",
+   "entry_basis": "", "stop": "", "size": "a majority / half",
+   "price": null, "price_kind": null,
+   "source": "2025-06-13_PGwuBc5VFpE@12:29", "confidence": "stated",
+   "quote": "I've booked half of my TEM. I booked a majority of my TMDX.",
+   "notes": "At 06:56 'TMDX, I'm out half'. Trim date not stated."
+  },
+  {
+   "date": "2025-06-12", "ticker": "TOST", "ticker_as_captioned": "Toast", "vehicle": null,
+   "direction": "long", "action": "hold", "fill_timing": "", "timing_basis": "", "fill_date_stated": "",
+   "is_retrospective": false, "position_after": "partial",
+   "setup": "Half position remaining; has gone nowhere, likely stopped tomorrow.",
+   "entry_basis": "", "stop": "", "size": "out of half",
+   "price": null, "price_kind": null,
+   "source": "2025-06-13_PGwuBc5VFpE@12:29", "confidence": "stated",
+   "quote": "Toast, I've been out of half for quite a while",
+   "notes": ""
+  },
+  {
+   "date": "2025-06-12", "ticker": "JPM", "ticker_as_captioned": "JP Morgan", "vehicle": null,
+   "direction": "long", "action": "hold", "fill_timing": "", "timing_basis": "", "fill_date_stated": "",
+   "is_retrospective": false, "position_after": "open",
+   "setup": "Owns JPM, untrimmed, his only full position; may be stopped below the 20 SMA tomorrow.",
+   "entry_basis": "", "stop": "below the 20 simple moving average", "size": "full position",
+   "price": null, "price_kind": null,
+   "source": "2025-06-13_PGwuBc5VFpE@11:14", "confidence": "stated",
+   "quote": "one of the banks that I own is JP Morgan",
+   "notes": "12:29 'I am untrimmed on JPM. It's still my only full position'."
+  },
+  {
+   "date": "2025-06-12", "ticker": "QBTS", "ticker_as_captioned": "QBTS", "vehicle": null,
+   "direction": "short", "action": "short", "fill_timing": "yesterday", "timing_basis": "stated", "fill_date_stated": "2025-06-11",
+   "is_retrospective": false, "position_after": "open",
+   "setup": "Shorted QBTS as it rolled over while Rigetti was ripping.",
+   "entry_basis": "rolling over / relative weakness", "stop": "", "size": "",
+   "price": 16.7, "price_kind": "fill",
+   "source": "2025-06-13_PGwuBc5VFpE@12:54", "confidence": "stated",
+   "quote": "kind of rolling over so I got myself short 1670s",
+   "notes": "Ticker at 12:42 'And short QBTS from yesterday'. '1670s' read as 16.70s."
+  },
+  {
+   "date": "2025-06-12", "ticker": "QBTS", "ticker_as_captioned": "QBTS", "vehicle": null,
+   "direction": "short", "action": "add", "fill_timing": "today", "timing_basis": "stated", "fill_date_stated": "2025-06-12",
+   "is_retrospective": false, "position_after": "open",
+   "setup": "Added to the QBTS short when it took out yesterday's lows.",
+   "entry_basis": "break of yesterday's lows", "stop": "", "size": "some more",
+   "price": null, "price_kind": null,
+   "source": "2025-06-13_PGwuBc5VFpE@12:54", "confidence": "stated",
+   "quote": "I added some more today when we took out",
+   "notes": ""
+  },
+  {
+   "date": "2025-06-12", "ticker": "UBER", "ticker_as_captioned": "Uber", "vehicle": null,
+   "direction": "long", "action": "stopped_out", "fill_timing": "", "timing_basis": "", "fill_date_stated": "",
+   "is_retrospective": true, "position_after": "closed",
+   "setup": "Mentions having been stopped out of Uber earlier.",
+   "entry_basis": "", "stop": "", "size": "",
+   "price": null, "price_kind": null,
+   "source": "2025-06-13_PGwuBc5VFpE@04:10", "confidence": "stated",
+   "quote": "You know, I'd gotten stopped out of Uber",
+   "notes": "Earlier stop, date not given."
+  }
+ ],
+ "principles": [],
+ "ambiguous_tickers": [
+  {"timestamp": "05:39", "caption_text": "ARC", "context": "trimmed more ARC this afternoon when it broke the five SMA; booked half", "guess": "ARKK", "confidence": "unsure"}
+ ]
+}

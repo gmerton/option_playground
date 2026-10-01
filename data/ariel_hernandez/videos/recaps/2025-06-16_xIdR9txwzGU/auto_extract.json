@@ -1,0 +1,47 @@
+{
+ "video_id": "xIdR9txwzGU",
+ "title": "6/16/2025 Premarket Prep",
+ "upload_date": "2025-06-16",
+ "date": "2025-06-16",
+ "session_date": "2025-06-16",
+ "session_date_basis": "upload",
+ "observed_trades": [
+  {
+   "date": "2025-06-16", "ticker": "?", "ticker_as_captioned": "this one (Roku / her ARK ETF)", "vehicle": null,
+   "direction": "long", "action": "hold", "fill_timing": "", "timing_basis": "", "fill_date_stated": "",
+   "is_retrospective": false, "position_after": "open",
+   "setup": "Says he already owns 'this one' while discussing Roku as a top-10 holding of Cathie Wood's ARK ETF; holding up great.",
+   "entry_basis": "", "stop": "", "size": "",
+   "price": null, "price_kind": null,
+   "source": "2025-06-16_xIdR9txwzGU@24:40", "confidence": "stated",
+   "quote": "I already own this one, but uh it's holding up great",
+   "notes": "Referent ambiguous: ROKU or the ARK ETF (ARKK) mentioned in the previous sentence."
+  },
+  {
+   "date": "2025-06-16", "ticker": "HCAI", "ticker_as_captioned": "HCAI", "vehicle": null,
+   "direction": "long", "action": "entry", "fill_timing": "", "timing_basis": "", "fill_date_stated": "",
+   "is_retrospective": true, "position_after": "closed",
+   "setup": "Tried buying HCAI coming out of a consolidation; didn't go anywhere.",
+   "entry_basis": "breakout from consolidation", "stop": "", "size": "",
+   "price": null, "price_kind": null,
+   "source": "2025-06-16_xIdR9txwzGU@31:23", "confidence": "stated",
+   "quote": "I tried buying it when it was coming out of this consolidation here",
+   "notes": "Ticker named in the same block ('HCAI is interesting'); pointing at chart."
+  },
+  {
+   "date": "2025-06-16", "ticker": "HCAI", "ticker_as_captioned": "HCAI", "vehicle": null,
+   "direction": "long", "action": "exit", "fill_timing": "right before earnings", "timing_basis": "stated", "fill_date_stated": "",
+   "is_retrospective": true, "position_after": "closed",
+   "setup": "Made a couple bucks and sold before earnings.",
+   "entry_basis": "", "stop": "", "size": "",
+   "price": null, "price_kind": null,
+   "source": "2025-06-16_xIdR9txwzGU@31:35", "confidence": "stated",
+   "quote": "couple bucks and then had to let it go right before earnings",
+   "notes": ""
+  }
+ ],
+ "principles": [],
+ "ambiguous_tickers": [
+  {"timestamp": "24:40", "caption_text": "I already own this one", "context": "Roku discussed as a top-10 holding in Cathie's ARK ETF, 'her ETF's shaping up', then 'I already own this one'", "guess": "ARKK", "confidence": "unsure"}
+ ]
+}

@@ -1,0 +1,69 @@
+{
+ "video_id": "TD0fzQdvFyI",
+ "title": "6/24/2025 Premarket Prep Special Guest",
+ "upload_date": "2025-06-24",
+ "date": "2025-06-24",
+ "session_date": "2025-06-24",
+ "session_date_basis": "upload",
+ "observed_trades": [
+  {
+   "date": "2025-06-24", "ticker": "HOOD", "ticker_as_captioned": "hood", "vehicle": null,
+   "direction": "long", "action": "entry", "fill_timing": "", "timing_basis": "", "fill_date_stated": "",
+   "is_retrospective": true, "position_after": "unknown",
+   "setup": "Says a room member caught HOOD at 35 while he did not try buying it until 50 (undercut-and-rally theme).",
+   "entry_basis": "", "stop": "", "size": "",
+   "price": 50, "price_kind": "fill",
+   "source": "2025-06-24_TD0fzQdvFyI@12:31", "confidence": "inferred",
+   "quote": "caught hood at 35. Um I didn't try buying it till 50",
+   "notes": "Phrasing implies he tried buying around 50; date and outcome not stated."
+  },
+  {
+   "date": "2025-06-24", "ticker": "SHOP", "ticker_as_captioned": "shop", "vehicle": null,
+   "direction": "long", "action": "stopped_out", "fill_timing": "", "timing_basis": "", "fill_date_stated": "",
+   "is_retrospective": true, "position_after": "closed",
+   "setup": "Already stopped out of SHOP; still watching it.",
+   "entry_basis": "", "stop": "", "size": "",
+   "price": null, "price_kind": null,
+   "source": "2025-06-24_TD0fzQdvFyI@14:43", "confidence": "stated",
+   "quote": "And you know, I already got stopped out of shop",
+   "notes": "Date of stop not given."
+  },
+  {
+   "date": "2025-06-24", "ticker": "ARKK", "ticker_as_captioned": "arc", "vehicle": null,
+   "direction": "long", "action": "hold", "fill_timing": "", "timing_basis": "", "fill_date_stated": "",
+   "is_retrospective": false, "position_after": "open",
+   "setup": "Long ARK from 59; it ran from 40 to 70 off the lows in a straight line.",
+   "entry_basis": "", "stop": "", "size": "",
+   "price": 59, "price_kind": "basis",
+   "source": "2025-06-24_TD0fzQdvFyI@21:42", "confidence": "stated",
+   "quote": "I want to be the ultimate optimist because I am long from 59 bucks",
+   "notes": "'arc' resolved as Cathie Wood's ARK ETF (ARKK) from context (Kathy, 40 to 70 run); see ambiguous_tickers."
+  },
+  {
+   "date": "2025-06-24", "ticker": "RKLB", "ticker_as_captioned": "Rocket Lab", "vehicle": null,
+   "direction": "long", "action": "entry", "fill_timing": "yesterday", "timing_basis": "stated", "fill_date_stated": "2025-06-23",
+   "is_retrospective": false, "position_after": "open",
+   "setup": "Bought Rocket Lab ahead of a potential all-time-high move.",
+   "entry_basis": "", "stop": "", "size": "",
+   "price": 30.86, "price_kind": "fill",
+   "source": "2025-06-24_TD0fzQdvFyI@31:21", "confidence": "inferred",
+   "quote": "Yeah, I bought it at 3086 yesterday",
+   "notes": "Two-speaker stream with guest Alec; attributed to Ariel because the same speaker then asks Alec for his NBIS thoughts. '3086' read as 30.86."
+  },
+  {
+   "date": "2025-06-24", "ticker": "JPM", "ticker_as_captioned": "JPM", "vehicle": null,
+   "direction": "long", "action": "stopped_out", "fill_timing": "", "timing_basis": "", "fill_date_stated": "",
+   "is_retrospective": true, "position_after": "closed",
+   "setup": "Owned JPM and got kicked out; kicking himself as the chart is clean.",
+   "entry_basis": "", "stop": "", "size": "",
+   "price": 168, "price_kind": "basis",
+   "source": "2025-06-24_TD0fzQdvFyI@34:25", "confidence": "inferred",
+   "quote": "By the way, I owned it at 168 bucks and I'm totally kicking myself",
+   "notes": "Speaker attribution in the two-person stream is inferred (Ariel). '168' may be a caption garble. Continues 'because I got kicked out of JPM'."
+  }
+ ],
+ "principles": [],
+ "ambiguous_tickers": [
+  {"timestamp": "21:42", "caption_text": "arc", "context": "Cathie Wood ('Kathy') trimming; 'look at arc ... I am long from 59 bucks ... ran right off the lows from 40 to 70'", "guess": "ARKK", "confidence": "likely"}
+ ]
+}

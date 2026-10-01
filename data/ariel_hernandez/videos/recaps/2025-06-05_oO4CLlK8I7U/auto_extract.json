@@ -1,0 +1,35 @@
+{
+ "video_id": "oO4CLlK8I7U",
+ "title": "Scanning for group strength!",
+ "upload_date": "2025-06-05",
+ "date": "2025-06-05",
+ "session_date": "2025-06-05",
+ "session_date_basis": "spoken",
+ "observed_trades": [
+  {
+   "date": "2025-06-05",
+   "ticker": "KGC",
+   "ticker_as_captioned": "KGC",
+   "vehicle": null,
+   "direction": "long",
+   "action": "hold",
+   "fill_timing": "",
+   "timing_basis": "",
+   "fill_date_stated": "",
+   "is_retrospective": false,
+   "position_after": "open",
+   "setup": "Mentions owning KGC while scanning the gold group for strength.",
+   "entry_basis": "",
+   "stop": "",
+   "size": "",
+   "price": null,
+   "price_kind": null,
+   "confidence": "stated",
+   "quote": "KGC is one that I own.",
+   "notes": "Education video on group scanning; only own-position mention.",
+   "source": "2025-06-05_oO4CLlK8I7U@03:50"
+  }
+ ],
+ "principles": [],
+ "ambiguous_tickers": []
+}

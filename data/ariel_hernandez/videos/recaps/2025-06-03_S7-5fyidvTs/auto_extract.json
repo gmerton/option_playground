@@ -1,0 +1,122 @@
+{
+ "video_id": "S7-5fyidvTs",
+ "title": "6/3/2025 After-Hours recap",
+ "upload_date": "2025-06-03",
+ "date": "2025-06-03",
+ "session_date": "2025-06-03",
+ "session_date_basis": "spoken",
+ "observed_trades": [
+  {
+   "date": "2025-06-03", "ticker": "TSLA", "ticker_as_captioned": "Tesla", "vehicle": null,
+   "direction": "long", "action": "hold", "fill_timing": "", "timing_basis": "", "fill_date_stated": "",
+   "is_retrospective": false, "position_after": "open",
+   "setup": "Long Tesla; stays long while it holds the 20-day SMA despite an 11-dollar drop on Elon's tweet.",
+   "entry_basis": "", "stop": "hold of the 20 SMA, roughly the 330 level", "size": "",
+   "price": 330, "price_kind": "stop",
+   "source": "2025-06-03_S7-5fyidvTs@01:56", "confidence": "stated",
+   "quote": "Of course, I am long um Tesla and I continue to remain long so long as we hold the 20 simple moving average",
+   "notes": "Also listed in his current longs at 06:30."
+  },
+  {
+   "date": "2025-06-03", "ticker": "COIN", "ticker_as_captioned": "Coin", "vehicle": null,
+   "direction": "long", "action": "entry", "fill_timing": "today", "timing_basis": "stated", "fill_date_stated": "2025-06-03",
+   "is_retrospective": false, "position_after": "open",
+   "setup": "Only new long of the day: COIN holding its 20-day SMA, digesting in the upper half of the range with Bitcoin acting well.",
+   "entry_basis": "hold of the 20 simple moving average", "stop": "", "size": "",
+   "price": null, "price_kind": null,
+   "source": "2025-06-03_S7-5fyidvTs@02:32", "confidence": "stated",
+   "quote": "stock that I ended up taking today was Coin with a hold of the 20 simple moving average",
+   "notes": "Repeated at 04:54 ('I bought coin today'). Says he would peel some off under 256 if the market pulls in."
+  },
+  {
+   "date": "2025-06-03", "ticker": "SMR", "ticker_as_captioned": "SMR", "vehicle": null,
+   "direction": "short", "action": "short", "fill_timing": "", "timing_basis": "", "fill_date_stated": "",
+   "is_retrospective": true, "position_after": "partial",
+   "setup": "Short SMR from about 35.",
+   "entry_basis": "", "stop": "", "size": "",
+   "price": 35, "price_kind": "fill",
+   "source": "2025-06-03_S7-5fyidvTs@05:03", "confidence": "stated",
+   "quote": "I had a short on this thing. Um, you know, about from 35 bucks",
+   "notes": "Entry date not given; earlier session."
+  },
+  {
+   "date": "2025-06-03", "ticker": "SMR", "ticker_as_captioned": "SMR", "vehicle": null,
+   "direction": "short", "action": "cover", "fill_timing": "", "timing_basis": "", "fill_date_stated": "",
+   "is_retrospective": true, "position_after": "partial",
+   "setup": "Covered part of the SMR short in the 31 range.",
+   "entry_basis": "", "stop": "", "size": "some",
+   "price": 31, "price_kind": "fill",
+   "source": "2025-06-03_S7-5fyidvTs@05:03", "confidence": "stated",
+   "quote": "I covered some off in the $31 range",
+   "notes": "Date of the partial cover not given."
+  },
+  {
+   "date": "2025-06-03", "ticker": "SMR", "ticker_as_captioned": "SMR", "vehicle": null,
+   "direction": "short", "action": "stopped_out", "fill_timing": "first five minute bar of the day", "timing_basis": "stated", "fill_date_stated": "2025-06-03",
+   "is_retrospective": false, "position_after": "closed",
+   "setup": "Remaining SMR short shares (held with stop at breakeven) stopped on the first 5-minute bar; stock then dumped and went red.",
+   "entry_basis": "", "stop": "breakeven ('holding the rest for flat')", "size": "last of my shares",
+   "price": null, "price_kind": null,
+   "source": "2025-06-03_S7-5fyidvTs@05:03", "confidence": "stated",
+   "quote": "of course it literally hits my stop first five minute bar of the day",
+   "notes": "Ticker named at 05:03 ('last of my shares in SMR'); confirmed at 05:49 'I got stopped out on a short today'."
+  },
+  {
+   "date": "2025-06-03", "ticker": "RGTI", "ticker_as_captioned": "regetti", "vehicle": null,
+   "direction": "short", "action": "hold", "fill_timing": "", "timing_basis": "", "fill_date_stated": "",
+   "is_retrospective": false, "position_after": "open",
+   "setup": "Still short Rigetti, acting weak.",
+   "entry_basis": "", "stop": "", "size": "",
+   "price": null, "price_kind": null,
+   "source": "2025-06-03_S7-5fyidvTs@05:16", "confidence": "stated",
+   "quote": "I do have also regetti short and that is acting well",
+   "notes": "'regetti' = Rigetti Computing (RGTI)."
+  },
+  {
+   "date": "2025-06-03", "ticker": "KGC", "ticker_as_captioned": "KGC", "vehicle": null,
+   "direction": "long", "action": "hold", "fill_timing": "", "timing_basis": "", "fill_date_stated": "",
+   "is_retrospective": false, "position_after": "open",
+   "setup": "Listed among current longs.",
+   "entry_basis": "", "stop": "", "size": "",
+   "price": null, "price_kind": null,
+   "source": "2025-06-03_S7-5fyidvTs@06:30", "confidence": "stated",
+   "quote": "My current longs are in Coin, KGC, Netflix, TMDX, Toast, and Tesla.",
+   "notes": ""
+  },
+  {
+   "date": "2025-06-03", "ticker": "NFLX", "ticker_as_captioned": "Netflix", "vehicle": null,
+   "direction": "long", "action": "hold", "fill_timing": "", "timing_basis": "", "fill_date_stated": "",
+   "is_retrospective": false, "position_after": "open",
+   "setup": "Listed among current longs.",
+   "entry_basis": "", "stop": "", "size": "",
+   "price": null, "price_kind": null,
+   "source": "2025-06-03_S7-5fyidvTs@06:30", "confidence": "stated",
+   "quote": "My current longs are in Coin, KGC, Netflix, TMDX, Toast, and Tesla.",
+   "notes": ""
+  },
+  {
+   "date": "2025-06-03", "ticker": "TMDX", "ticker_as_captioned": "TMDX", "vehicle": null,
+   "direction": "long", "action": "hold", "fill_timing": "", "timing_basis": "", "fill_date_stated": "",
+   "is_retrospective": false, "position_after": "open",
+   "setup": "Listed among current longs; acted strong all day.",
+   "entry_basis": "", "stop": "", "size": "",
+   "price": null, "price_kind": null,
+   "source": "2025-06-03_S7-5fyidvTs@06:30", "confidence": "stated",
+   "quote": "My current longs are in Coin, KGC, Netflix, TMDX, Toast, and Tesla.",
+   "notes": ""
+  },
+  {
+   "date": "2025-06-03", "ticker": "TOST", "ticker_as_captioned": "Toast", "vehicle": null,
+   "direction": "long", "action": "hold", "fill_timing": "", "timing_basis": "", "fill_date_stated": "",
+   "is_retrospective": false, "position_after": "partial",
+   "setup": "Already trimmed Toast; bearish engulfing at the 20, expects the remainder may be stopped tomorrow; up about 60 cents on remaining shares.",
+   "entry_basis": "", "stop": "5/30 low, 41.10", "size": "trimmed; remaining shares",
+   "price": 41.1, "price_kind": "stop",
+   "source": "2025-06-03_S7-5fyidvTs@06:30", "confidence": "stated",
+   "quote": "From the looks of it, you know, Toast might come for the last of my shares tomorrow",
+   "notes": "'530s low uh 4110' read as the 5/30 low at 41.10. 'I am trimmed on the position' at 06:56."
+  }
+ ],
+ "principles": [],
+ "ambiguous_tickers": []
+}
