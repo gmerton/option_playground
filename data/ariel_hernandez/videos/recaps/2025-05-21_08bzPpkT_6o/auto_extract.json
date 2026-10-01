@@ -1,0 +1,190 @@
+{
+ "video_id": "08bzPpkT_6o",
+ "title": "5/21/2025 Premarket Prep",
+ "upload_date": "2025-05-21",
+ "date": "2025-05-21",
+ "session_date": "2025-05-21",
+ "session_date_basis": "upload",
+ "observed_trades": [
+  {
+   "date": "2025-05-21", "ticker": "TSLA", "ticker_as_captioned": "Tesla (not named in the sentence)", "vehicle": null,
+   "direction": "long", "action": "hold",
+   "fill_timing": "", "timing_basis": "", "fill_date_stated": "", "is_retrospective": true,
+   "position_after": "open",
+   "setup": "Bought as it broke back above the 200-day; still held, not trimmed.",
+   "entry_basis": "break back above the 200-day", "stop": "", "size": "", "price": 292.83, "price_kind": "basis",
+   "source": "2025-05-21_08bzPpkT_6o@03:29", "confidence": "inferred",
+   "quote": "I'm in from 292 292, I want to say, if I'm not mistaken",
+   "notes": "Ticker inferred: answers a viewer ('You're in from 300') right after 'Tesla looks fine' at 02:22; at 09:55 'The only name I'm not trimmed on is CLS and Tesla'. Basis stated as 29283 = 292.83."
+  },
+  {
+   "date": "2025-05-21", "ticker": "KGC", "ticker_as_captioned": "KGC", "vehicle": null,
+   "direction": "long", "action": "entry",
+   "fill_timing": "a few days ago", "timing_basis": "stated", "fill_date_stated": "", "is_retrospective": true,
+   "position_after": "open",
+   "setup": "Gold miner bought right at the 50-day SMA, using the 50 as the guide; held a small gap down and moved higher with rising volume.",
+   "entry_basis": "pullback to the 50-day SMA", "stop": "the 50-day SMA", "size": "", "price": 13.62, "price_kind": "fill",
+   "source": "2025-05-21_08bzPpkT_6o@04:30", "confidence": "stated",
+   "quote": "I'm in KGC and I bought KGC right at the 50 a few days ago.",
+   "notes": "Says 'I bought this thing um 515' (likely 5/15, not pinned) and later 'Um 1362' (read as the fill price 13.62; could be another level). Still in."
+  },
+  {
+   "date": "2025-05-21", "ticker": "CRWD", "ticker_as_captioned": "crowd", "vehicle": null,
+   "direction": "long", "action": "hold",
+   "fill_timing": "", "timing_basis": "", "fill_date_stated": "", "is_retrospective": true,
+   "position_after": "open",
+   "setup": "Cup and handle; held through a prior pullback, needs to hold the 20-day or he will trim.",
+   "entry_basis": "", "stop": "will trim if it loses the 20-day", "size": "", "price": 400, "price_kind": "basis",
+   "source": "2025-05-21_08bzPpkT_6o@08:55", "confidence": "inferred",
+   "quote": "I'm in at 400. You know, I'm going to need to see it kind of hold this 20",
+   "notes": "'I'm in at 400' follows talk of both crowd (cup and handle) and PANW gapping down on earnings; 400 fits CRWD, not PANW. Ticker inferred."
+  },
+  {
+   "date": "2025-05-21", "ticker": "CLS", "ticker_as_captioned": "CLS", "vehicle": null,
+   "direction": "long", "action": "hold",
+   "fill_timing": "", "timing_basis": "", "fill_date_stated": "", "is_retrospective": false,
+   "position_after": "open",
+   "setup": "Held long, one of two names not yet trimmed.",
+   "entry_basis": "", "stop": "", "size": "untrimmed", "price": null, "price_kind": null,
+   "source": "2025-05-21_08bzPpkT_6o@09:55", "confidence": "stated",
+   "quote": "The only name I'm not trimmed on is CLS and Tesla.",
+   "notes": "He says he is 'in several of' ZS, RBRK, SE, TSLA, NVDA, AVGO, PLTR, HOOD, UBER and trimmed on all but CLS and TSLA; which of those he holds is not specified, so no rows for them."
+  },
+  {
+   "date": "2025-05-21", "ticker": "MSTR", "ticker_as_captioned": "MSTR", "vehicle": null,
+   "direction": "long", "action": "entry",
+   "fill_timing": "yesterday", "timing_basis": "stated", "fill_date_stated": "2025-05-20", "is_retrospective": false,
+   "position_after": "closed",
+   "setup": "Saw strength in Bitcoin and tried MSTR over the prior day's high despite planning to buy nothing.",
+   "entry_basis": "break of prior day high", "stop": "low of day", "size": "very small (three names about 15% of account)", "price": null, "price_kind": null,
+   "source": "2025-05-21_08bzPpkT_6o@10:41", "confidence": "stated",
+   "quote": "And I tried some MSTR over prior day high, and it literally washes out to low of day.",
+   "notes": "'I kind of made the mistake yesterday too' at 10:33."
+  },
+  {
+   "date": "2025-05-21", "ticker": "MSTR", "ticker_as_captioned": "MSTR", "vehicle": null,
+   "direction": "long", "action": "stopped_out",
+   "fill_timing": "yesterday", "timing_basis": "implied", "fill_date_stated": "2025-05-20", "is_retrospective": false,
+   "position_after": "closed",
+   "setup": "Washed out to low of day and stopped him; then V-shaped back to highs.",
+   "entry_basis": "", "stop": "low of day", "size": "", "price": null, "price_kind": null,
+   "source": "2025-05-21_08bzPpkT_6o@10:52", "confidence": "stated",
+   "quote": "So, I take my little loss and then the thing Vshape recovers",
+   "notes": "Also 'I did stop on MSTR yesterday' at 21:41."
+  },
+  {
+   "date": "2025-05-21", "ticker": "HSAI", "ticker_as_captioned": "HSAI", "vehicle": null,
+   "direction": "long", "action": "entry",
+   "fill_timing": "yesterday", "timing_basis": "implied", "fill_date_stated": "2025-05-20", "is_retrospective": false,
+   "position_after": "open",
+   "setup": "Small breakout try in a market he thinks needs a breather.",
+   "entry_basis": "breakout", "stop": "has more wiggle room than RKLB", "size": "very very small (three names about 15% of account)", "price": null, "price_kind": null,
+   "source": "2025-05-21_08bzPpkT_6o@11:05", "confidence": "stated",
+   "quote": "HSAI and Rocket Lab. And again, very very small position.",
+   "notes": "'I'm still in HSAI' at 11:38. At 21:51 he lists 'I took a loss on HSAI' among recent trades, presumably an earlier HSAI trade; not logged separately."
+  },
+  {
+   "date": "2025-05-21", "ticker": "RKLB", "ticker_as_captioned": "Rocket Lab", "vehicle": null,
+   "direction": "long", "action": "entry",
+   "fill_timing": "yesterday", "timing_basis": "implied", "fill_date_stated": "2025-05-20", "is_retrospective": false,
+   "position_after": "open",
+   "setup": "Small breakout try in a market he thinks needs a breather.",
+   "entry_basis": "breakout", "stop": "about 30 cents below current premarket price", "size": "very very small (three names about 15% of account)", "price": null, "price_kind": null,
+   "source": "2025-05-21_08bzPpkT_6o@11:05", "confidence": "stated",
+   "quote": "HSAI and Rocket Lab. And again, very very small position.",
+   "notes": "'I'm still in Rocket Lab ... another 30 cents for Rocket Lab. I'll be stopped out' at 11:38."
+  },
+  {
+   "date": "2025-05-21", "ticker": "SOXX", "ticker_as_captioned": "Soxel", "vehicle": "SOXL",
+   "direction": "long", "action": "exit",
+   "fill_timing": "", "timing_basis": "", "fill_date_stated": "", "is_retrospective": true,
+   "position_after": "closed",
+   "setup": "Recent small loss where he did not follow his rules.",
+   "entry_basis": "", "stop": "", "size": "very small", "price": null, "price_kind": null,
+   "source": "2025-05-21_08bzPpkT_6o@21:51", "confidence": "stated",
+   "quote": "I took two very small losses in Soxel and Amazon, which I didn't even follow my rules.",
+   "notes": "From a list of recent trades. SOXL is 3x semis; ticker SOXX as proxy."
+  },
+  {
+   "date": "2025-05-21", "ticker": "AMZN", "ticker_as_captioned": "Amazon", "vehicle": null,
+   "direction": "long", "action": "exit",
+   "fill_timing": "", "timing_basis": "", "fill_date_stated": "", "is_retrospective": true,
+   "position_after": "closed",
+   "setup": "Recent small loss where he did not follow his rules.",
+   "entry_basis": "", "stop": "", "size": "very small", "price": null, "price_kind": null,
+   "source": "2025-05-21_08bzPpkT_6o@21:51", "confidence": "stated",
+   "quote": "I took two very small losses in Soxel and Amazon, which I didn't even follow my rules.",
+   "notes": "From a list of recent trades."
+  },
+  {
+   "date": "2025-05-21", "ticker": "HOOD", "ticker_as_captioned": "Hood", "vehicle": null,
+   "direction": "long", "action": "stopped_out",
+   "fill_timing": "", "timing_basis": "", "fill_date_stated": "", "is_retrospective": true,
+   "position_after": "closed",
+   "setup": "Stopped himself out for a loss on a trade that would now be a large winner.",
+   "entry_basis": "", "stop": "", "size": "", "price": null, "price_kind": null,
+   "source": "2025-05-21_08bzPpkT_6o@22:05", "confidence": "stated",
+   "quote": "Hood, I stopped myself out, so it was a loss",
+   "notes": "From a list of recent trades; date not given. He also lists HOOD among names he is 'in several of' at 09:30, so a later re-entry may exist."
+  },
+  {
+   "date": "2025-05-21", "ticker": "SMCI", "ticker_as_captioned": "SMCI", "vehicle": null,
+   "direction": "short", "action": "cover",
+   "fill_timing": "recent", "timing_basis": "stated", "fill_date_stated": "", "is_retrospective": true,
+   "position_after": "closed",
+   "setup": "Covered a recent short.",
+   "entry_basis": "", "stop": "", "size": "", "price": null, "price_kind": null,
+   "source": "2025-05-21_08bzPpkT_6o@22:31", "confidence": "stated",
+   "quote": "covered up some recent shorts. um in like now SMCI, MU, MU, so AVGO",
+   "notes": "From a list of recent trades; cover date not given."
+  },
+  {
+   "date": "2025-05-21", "ticker": "MU", "ticker_as_captioned": "MU", "vehicle": null,
+   "direction": "short", "action": "cover",
+   "fill_timing": "recent", "timing_basis": "stated", "fill_date_stated": "", "is_retrospective": true,
+   "position_after": "closed",
+   "setup": "Covered a recent short.",
+   "entry_basis": "", "stop": "", "size": "", "price": null, "price_kind": null,
+   "source": "2025-05-21_08bzPpkT_6o@22:31", "confidence": "stated",
+   "quote": "covered up some recent shorts. um in like now SMCI, MU, MU, so AVGO",
+   "notes": "From a list of recent trades; cover date not given."
+  },
+  {
+   "date": "2025-05-21", "ticker": "AVGO", "ticker_as_captioned": "AVGO", "vehicle": null,
+   "direction": "short", "action": "cover",
+   "fill_timing": "recent", "timing_basis": "stated", "fill_date_stated": "", "is_retrospective": true,
+   "position_after": "closed",
+   "setup": "Covered a recent short.",
+   "entry_basis": "", "stop": "", "size": "", "price": null, "price_kind": null,
+   "source": "2025-05-21_08bzPpkT_6o@22:31", "confidence": "stated",
+   "quote": "covered up some recent shorts. um in like now SMCI, MU, MU, so AVGO",
+   "notes": "From a list of recent trades; cover date not given."
+  },
+  {
+   "date": "2025-05-21", "ticker": "SUNW", "ticker_as_captioned": "SunW", "vehicle": null,
+   "direction": "long", "action": "entry",
+   "fill_timing": "at the time", "timing_basis": "stated", "fill_date_stated": "", "is_retrospective": true,
+   "position_after": "partial",
+   "setup": "2020-21 day-trading era sympathy play to SPI: put most of a ~$100k account into SunW; went to 4 the same day.",
+   "entry_basis": "sympathy momentum with SPI", "stop": "", "size": "about 80,000 shares, nearly the whole account", "price": 0.92, "price_kind": "fill",
+   "source": "2025-05-21_08bzPpkT_6o@30:35", "confidence": "stated",
+   "quote": "like 80,000 shares of SunW at like 90 cent average, 92 cent average",
+   "notes": "Career-history anecdote from 2020/2021 (exact date not given). 'I bought' ends the 30:22 block."
+  },
+  {
+   "date": "2025-05-21", "ticker": "SUNW", "ticker_as_captioned": "SunW", "vehicle": null,
+   "direction": "long", "action": "trim",
+   "fill_timing": "the same day", "timing_basis": "stated", "fill_date_stated": "", "is_retrospective": true,
+   "position_after": "unknown",
+   "setup": "Sold pieces on the way up the same day; about a $200,000 trade.",
+   "entry_basis": "", "stop": "", "size": "", "price": null, "price_kind": null,
+   "source": "2025-05-21_08bzPpkT_6o@30:48", "confidence": "stated",
+   "quote": "I was peeling out on the way up, but it was like a, you know, $200,000 trade",
+   "notes": "2020/2021 anecdote."
+  }
+ ],
+ "principles": [],
+ "ambiguous_tickers": [
+  {"timestamp": "22:18", "caption_text": "GRR short is a win", "context": "List of recent trades; outcome only, no action, not logged.", "guess": "?", "confidence": "unsure"}
+ ]
+}

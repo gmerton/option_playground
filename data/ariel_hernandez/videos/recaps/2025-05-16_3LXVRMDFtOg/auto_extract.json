@@ -1,0 +1,89 @@
+{
+ "video_id": "3LXVRMDFtOg",
+ "title": "Trading Rule: Avoid HUGE Losses & Maximize Profits!",
+ "upload_date": "2025-05-16",
+ "date": "2025-05-16",
+ "session_date": "2025-05-16",
+ "session_date_basis": "upload",
+ "observed_trades": [
+  {
+   "date": "2025-05-16", "ticker": "TSLA", "ticker_as_captioned": "Tesla", "vehicle": null,
+   "direction": "long", "action": "entry",
+   "fill_timing": "the same day", "timing_basis": "stated", "fill_date_stated": "", "is_retrospective": true,
+   "position_after": "open",
+   "setup": "Bought as price went through the 200-day; held overnight with a low-of-day stop and it went on to work.",
+   "entry_basis": "move through the 200-day", "stop": "low of day", "size": "", "price": null, "price_kind": null,
+   "source": "2025-05-16_3LXVRMDFtOg@00:21", "confidence": "stated",
+   "quote": "So I bought on the same day Tesla, right? price as it was going through the 200",
+   "notes": "Short clip (education on holding near-flat positions). Same day as the TOST entry; no date given. Position status after not stated; 'gone on to work' implies still held."
+  },
+  {
+   "date": "2025-05-16", "ticker": "TOST", "ticker_as_captioned": "Toast", "vehicle": null,
+   "direction": "long", "action": "entry",
+   "fill_timing": "that same day", "timing_basis": "stated", "fill_date_stated": "", "is_retrospective": true,
+   "position_after": "open",
+   "setup": "Earnings gap-up buy; closed flat on him but he kept it because it was a positive earnings gapper with a low-of-day stop.",
+   "entry_basis": "earnings gap up", "stop": "low of day", "size": "", "price": 40.81, "price_kind": "fill",
+   "source": "2025-05-16_3LXVRMDFtOg@00:21", "confidence": "stated",
+   "quote": "That same day I bought Toast on the earnings gap up",
+   "notes": "Price '4081' read as 40.81. Went on to work."
+  },
+  {
+   "date": "2025-05-16", "ticker": "TMDX", "ticker_as_captioned": "TMDX", "vehicle": null,
+   "direction": "long", "action": "entry",
+   "fill_timing": "the very same day", "timing_basis": "stated", "fill_date_stated": "", "is_retrospective": true,
+   "position_after": "open",
+   "setup": "Earnings gap-up buy held overnight with a low-of-day stop; went on to work.",
+   "entry_basis": "earnings gap up", "stop": "low of day", "size": "", "price": null, "price_kind": null,
+   "source": "2025-05-16_3LXVRMDFtOg@00:31", "confidence": "stated",
+   "quote": "And then TMDX, right? And I bought it the very this very next",
+   "notes": "He corrects himself: 'No, it was the very same day and I held it.'"
+  },
+  {
+   "date": "2025-05-16", "ticker": "SOXX", "ticker_as_captioned": "SO XL / Sockel", "vehicle": "SOXL",
+   "direction": "long", "action": "entry",
+   "fill_timing": "", "timing_basis": "", "fill_date_stated": "", "is_retrospective": true,
+   "position_after": "open",
+   "setup": "Bought the 3x semis ETF instead of picking a single semiconductor, betting semis would lead a market push higher.",
+   "entry_basis": "breakthrough of a key pivot", "stop": "low of day", "size": "", "price": 13.76, "price_kind": "fill",
+   "source": "2025-05-16_3LXVRMDFtOg@01:28", "confidence": "stated",
+   "quote": "I literally bought 1376 and this thing squirted higher",
+   "notes": "SOXL is 3x semiconductors; ticker set to SOXX as the semis proxy. Closed at his average that day."
+  },
+  {
+   "date": "2025-05-16", "ticker": "SOXX", "ticker_as_captioned": "SO XL / Sockel", "vehicle": "SOXL",
+   "direction": "long", "action": "exit",
+   "fill_timing": "", "timing_basis": "", "fill_date_stated": "", "is_retrospective": true,
+   "position_after": "closed",
+   "setup": "Cut it near his average despite the low-of-day stop not being hit (violated his own sell rule); it then ran to 19 after weekend news.",
+   "entry_basis": "", "stop": "low of day (not hit)", "size": "", "price": null, "price_kind": null,
+   "source": "2025-05-16_3LXVRMDFtOg@01:39", "confidence": "stated",
+   "quote": "I was like, \"I'll cut it. I'll re-evaluate tomorrow.\"",
+   "notes": "Exit day unclear: says he'd cut it, then describes the next day going sideways and holding his average; 'two very small losses' in the companion 5/21 stream. Small loss / near flat."
+  },
+  {
+   "date": "2025-05-16", "ticker": "AMZN", "ticker_as_captioned": "Amazon", "vehicle": null,
+   "direction": "long", "action": "entry",
+   "fill_timing": "", "timing_basis": "", "fill_date_stated": "", "is_retrospective": true,
+   "position_after": "open",
+   "setup": "Little flat base over the 50-day SMA, similar to Nvidia's.",
+   "entry_basis": "flat base over the 50-day", "stop": "low of day, $4", "size": "", "price": 193, "price_kind": "fill",
+   "source": "2025-05-16_3LXVRMDFtOg@02:28", "confidence": "stated",
+   "quote": "So, I bought this 193 with my stop at low of day.",
+   "notes": "Closed the week slightly red."
+  },
+  {
+   "date": "2025-05-16", "ticker": "AMZN", "ticker_as_captioned": "Amazon", "vehicle": null,
+   "direction": "long", "action": "exit",
+   "fill_timing": "", "timing_basis": "", "fill_date_stated": "", "is_retrospective": true,
+   "position_after": "closed",
+   "setup": "Got rid of it while slightly red without the low-of-day stop being hit; it then gapped to 208 on weekend news.",
+   "entry_basis": "", "stop": "low of day (not hit)", "size": "", "price": null, "price_kind": null,
+   "source": "2025-05-16_3LXVRMDFtOg@02:41", "confidence": "stated",
+   "quote": "well, I'm glad I got rid of it",
+   "notes": "Exit day not clear (around the day after entry, before the weekend). He calls it a violation of his sell rule."
+  }
+ ],
+ "principles": [],
+ "ambiguous_tickers": []
+}

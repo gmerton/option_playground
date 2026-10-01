@@ -1,0 +1,135 @@
+{
+ "video_id": "OBXePH5Wmh8",
+ "title": "4 16 2025 Premarket Prep",
+ "upload_date": "2025-04-16",
+ "date": "2025-04-16",
+ "session_date": "2025-04-16",
+ "session_date_basis": "upload",
+ "observed_trades": [
+  {
+   "date": "2025-04-16", "ticker": "SMCI", "ticker_as_captioned": "SMCI", "vehicle": null,
+   "direction": "short", "action": "hold",
+   "fill_timing": "", "timing_basis": "", "fill_date_stated": "", "is_retrospective": false,
+   "position_after": "open",
+   "setup": "Short semiconductor position held into the Nvidia H20 charge news that hit all semis.",
+   "entry_basis": "", "stop": "", "size": "", "price": null, "price_kind": null,
+   "source": "2025-04-16_OBXePH5Wmh8@04:18", "confidence": "stated",
+   "quote": "that um I still had some shorts on an an SMCI and MU and AVGO",
+   "notes": "Premarket stream; session date from the title (never spoken)."
+  },
+  {
+   "date": "2025-04-16", "ticker": "MU", "ticker_as_captioned": "MU", "vehicle": null,
+   "direction": "short", "action": "hold",
+   "fill_timing": "the earnings gap down day", "timing_basis": "stated", "fill_date_stated": "", "is_retrospective": true,
+   "position_after": "open",
+   "setup": "Short from the earnings gap-down day; looked like a bear flag and is now gapping below it.",
+   "entry_basis": "earnings gap down", "stop": "", "size": "", "price": 98, "price_kind": "basis",
+   "source": "2025-04-16_OBXePH5Wmh8@18:39", "confidence": "stated",
+   "quote": "MU definitely a short candidate. I'm already short from 98.",
+   "notes": "Also named among the shorts held at 04:18. Entry date not given beyond 'the earnings gap down day'."
+  },
+  {
+   "date": "2025-04-16", "ticker": "AVGO", "ticker_as_captioned": "AVGO", "vehicle": null,
+   "direction": "short", "action": "hold",
+   "fill_timing": "", "timing_basis": "", "fill_date_stated": "", "is_retrospective": false,
+   "position_after": "open",
+   "setup": "Short semiconductor position held into the Nvidia H20 news.",
+   "entry_basis": "", "stop": "", "size": "", "price": null, "price_kind": null,
+   "source": "2025-04-16_OBXePH5Wmh8@04:18", "confidence": "stated",
+   "quote": "that um I still had some shorts on an an SMCI and MU and AVGO",
+   "notes": "Same sentence as the SMCI row."
+  },
+  {
+   "date": "2025-04-16", "ticker": "CRWD", "ticker_as_captioned": "Crowd Strike", "vehicle": null,
+   "direction": "long", "action": "entry",
+   "fill_timing": "yesterday", "timing_basis": "stated", "fill_date_stated": "2025-04-15", "is_retrospective": false,
+   "position_after": "open",
+   "setup": "Small starter long in a leader while the market is weak; market has to pull him in before adding.",
+   "entry_basis": "", "stop": "about 3% risk on the position", "size": "5% position", "price": null, "price_kind": null,
+   "source": "2025-04-16_OBXePH5Wmh8@04:18", "confidence": "stated",
+   "quote": "I did try to dip my toes yesterday in Crowd Strike, Uber and Spotify",
+   "notes": "Size from 19:18 ('5% on Crowd Strike'); 'I bought crowd' at 29:21. At 45:52 he says he bought an unnamed stock 'as that was taking out prior day highs. So 391' - possibly this CRWD fill, not resolved (see ambiguous_tickers). Positions went red after the NVDA news."
+  },
+  {
+   "date": "2025-04-16", "ticker": "UBER", "ticker_as_captioned": "Uber", "vehicle": null,
+   "direction": "long", "action": "entry",
+   "fill_timing": "yesterday", "timing_basis": "stated", "fill_date_stated": "2025-04-15", "is_retrospective": false,
+   "position_after": "open",
+   "setup": "Bought as it broke back over the 50-day after missing the earlier undercut-and-rally near 63.",
+   "entry_basis": "break back over the 50-day", "stop": "prior day's low, less than $2 (about 2.5%)", "size": "6% position, very small", "price": 74.13, "price_kind": "fill",
+   "source": "2025-04-16_OBXePH5Wmh8@37:19", "confidence": "stated",
+   "quote": "as it was uh breaking back over the 50 yesterday I bought some uh very small position using prior days lows as my stop",
+   "notes": "Uber named at 37:09 ('I'm in Uber from yesterday'). Also in the 04:18 list; size 6% at 19:18."
+  },
+  {
+   "date": "2025-04-16", "ticker": "SPOT", "ticker_as_captioned": "Spotify", "vehicle": null,
+   "direction": "long", "action": "entry",
+   "fill_timing": "yesterday", "timing_basis": "stated", "fill_date_stated": "2025-04-15", "is_retrospective": false,
+   "position_after": "open",
+   "setup": "Leader that held its March lows; undercut-and-rally double bottom, small flat base, started going yesterday.",
+   "entry_basis": "", "stop": "", "size": "5% position", "price": null, "price_kind": null,
+   "source": "2025-04-16_OBXePH5Wmh8@04:18", "confidence": "stated",
+   "quote": "I did try to dip my toes yesterday in Crowd Strike, Uber and Spotify",
+   "notes": "'I'm in Spotify' at 09:05; size 5% at 19:18."
+  },
+  {
+   "date": "2025-04-16", "ticker": "MSTR", "ticker_as_captioned": "MSTR", "vehicle": null,
+   "direction": "short", "action": "short",
+   "fill_timing": "yesterday", "timing_basis": "implied", "fill_date_stated": "", "is_retrospective": false,
+   "position_after": "open",
+   "setup": "Small short as Bitcoin pulled back on the Nvidia news, held overnight as a hedge against the new longs.",
+   "entry_basis": "", "stop": "high of day", "size": "a little bit", "price": 310, "price_kind": "fill",
+   "source": "2025-04-16_OBXePH5Wmh8@19:44", "confidence": "stated",
+   "quote": "I also took a short on MSTR just under 310",
+   "notes": "Price 'just under 310'. Timing implied from 30:35-31:06 ('shorting a little MSTR overnight', hedge against longs he had just taken). Gapping down premarket."
+  },
+  {
+   "date": "2025-04-16", "ticker": "HIMS", "ticker_as_captioned": "HIMS", "vehicle": null,
+   "direction": "long", "action": "entry",
+   "fill_timing": "1/21", "timing_basis": "stated", "fill_date_stated": "2025-01-21", "is_retrospective": true,
+   "position_after": "partial",
+   "setup": "Old trade cited when a viewer asked about HIMS; example of why to sell into strength.",
+   "entry_basis": "", "stop": "", "size": "", "price": 29, "price_kind": "fill",
+   "source": "2025-04-16_OBXePH5Wmh8@38:56", "confidence": "stated",
+   "quote": "So, I bought this thing at 29 on 121.",
+   "notes": "'121' read as January 21; year assumed 2025."
+  },
+  {
+   "date": "2025-04-16", "ticker": "HIMS", "ticker_as_captioned": "HIMS", "vehicle": null,
+   "direction": "long", "action": "trim",
+   "fill_timing": "1/31", "timing_basis": "stated", "fill_date_stated": "2025-01-31", "is_retrospective": true,
+   "position_after": "partial",
+   "setup": "Sold some into strength a few days after entry.",
+   "entry_basis": "", "stop": "", "size": "some", "price": 37, "price_kind": "fill",
+   "source": "2025-04-16_OBXePH5Wmh8@38:56", "confidence": "stated",
+   "quote": "I sold some at 37 just a few days later.",
+   "notes": "Caption '131' read as January 31."
+  },
+  {
+   "date": "2025-04-16", "ticker": "HIMS", "ticker_as_captioned": "HIMS", "vehicle": null,
+   "direction": "long", "action": "trim",
+   "fill_timing": "", "timing_basis": "", "fill_date_stated": "", "is_retrospective": true,
+   "position_after": "partial",
+   "setup": "Sold more on a parabolic day in the 60s (stock ran to 73).",
+   "entry_basis": "", "stop": "", "size": "some", "price": null, "price_kind": null,
+   "source": "2025-04-16_OBXePH5Wmh8@39:10", "confidence": "stated",
+   "quote": "some on this parabolic day or or this day here in the 60s",
+   "notes": "Price 'in the 60s' only; date pointed at on chart."
+  },
+  {
+   "date": "2025-04-16", "ticker": "HIMS", "ticker_as_captioned": "HIMS", "vehicle": null,
+   "direction": "long", "action": "exit",
+   "fill_timing": "", "timing_basis": "", "fill_date_stated": "", "is_retrospective": true,
+   "position_after": "closed",
+   "setup": "Closed the remainder after getting caught in a gap down.",
+   "entry_basis": "", "stop": "", "size": "the rest", "price": null, "price_kind": null,
+   "source": "2025-04-16_OBXePH5Wmh8@39:10", "confidence": "stated",
+   "quote": "and then I got caught in this gap down and closed the rest",
+   "notes": "Date not stated."
+  }
+ ],
+ "principles": [],
+ "ambiguous_tickers": [
+  {"timestamp": "45:52", "caption_text": "I bought it effectively as that was taking out prior day highs. So 391", "context": "Example of his 5-min / prior-day-high entry tactic; stock not named on the call (pointing at a chart).", "guess": "CRWD", "confidence": "unsure"}
+ ]
+}

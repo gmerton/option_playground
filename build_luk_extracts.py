@@ -146,6 +146,8 @@ def main() -> None:
     with PRINC_RAW.open("w", encoding="utf-8") as f:
         for d in extracts:
             for pr in d.get("principles", []):
+                if not isinstance(pr, dict):      # tolerate a stray string in an extract
+                    continue
                 row = {
                     "video_id": d.get("video_id", ""),
                     "date": d.get("date", ""),

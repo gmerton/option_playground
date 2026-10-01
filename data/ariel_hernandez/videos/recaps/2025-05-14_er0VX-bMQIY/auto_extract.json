@@ -1,0 +1,162 @@
+{
+ "video_id": "er0VX-bMQIY",
+ "title": "5/13/2025 Premarket Prep",
+ "upload_date": "2025-05-14",
+ "date": "2025-05-13",
+ "session_date": "2025-05-13",
+ "session_date_basis": "upload",
+ "observed_trades": [
+  {
+   "date": "2025-05-13", "ticker": "SOXX", "ticker_as_captioned": "Soxel / Socks", "vehicle": "SOXL",
+   "direction": "long", "action": "entry",
+   "fill_timing": "the other day", "timing_basis": "stated", "fill_date_stated": "", "is_retrospective": true,
+   "position_after": "open",
+   "setup": "Bought SOXL as it got over a little pivot / 13.76 breakout while semis were heating up; same day as his AMZN trade.",
+   "entry_basis": "break over the 13.76 pivot", "stop": "low of day", "size": "",
+   "price": 13.76, "price_kind": "level",
+   "source": "2025-05-14_er0VX-bMQIY@06:09", "confidence": "stated",
+   "quote": "I had the idea of Soxel the other day and like a total schmuck.",
+   "notes": "SOXL is a 3x semiconductor ETF; underlying given as SOXX (semis index). Breakout level 1376 at 06:23 and 49:41. Closed same day (next row). Session date taken from the video title (5/13); not spoken."
+  },
+  {
+   "date": "2025-05-13", "ticker": "SOXX", "ticker_as_captioned": "Soxel / Socks", "vehicle": "SOXL",
+   "direction": "long", "action": "exit",
+   "fill_timing": "the other day", "timing_basis": "stated", "fill_date_stated": "", "is_retrospective": true,
+   "position_after": "closed",
+   "setup": "Closed it at the close because it closed weak/tiny red, without the low-of-day stop being hit; it then ran without him.",
+   "entry_basis": "", "stop": "low of day was not hit", "size": "",
+   "price": null, "price_kind": null,
+   "source": "2025-05-14_er0VX-bMQIY@06:23", "confidence": "stated",
+   "quote": "I just closed it because it closed weak like a total idiot",
+   "notes": "At 49:41 he says it 'closed tiny red. I took off like 1,200 bucks on it' - unclear whether $1,200 is the loss or the position. He regrets the exit; now up ~$4/share from his price."
+  },
+  {
+   "date": "2025-05-13", "ticker": "AMZN", "ticker_as_captioned": "Amazon", "vehicle": null,
+   "direction": "long", "action": "entry",
+   "fill_timing": "a few days ago", "timing_basis": "stated", "fill_date_stated": "", "is_retrospective": true,
+   "position_after": "open",
+   "setup": "Bought the 193 push as Amazon broke a little flat pivot while above the 50-day; same day as SOXL.",
+   "entry_basis": "193 push over a little flat pivot, above the 50-day", "stop": "low of day", "size": "enough size to be fine if it broke low of day",
+   "price": 193, "price_kind": "level",
+   "source": "2025-05-14_er0VX-bMQIY@06:37", "confidence": "stated",
+   "quote": "Did the same thing on Amazon. Same exact day. I bought the 193 push",
+   "notes": "At 49:08 'I had a 193 on Amazon a few days ago ... I bought this thing literally right on 58' - '58' is probably May 8 in his m/d shorthand, not set as fill_date_stated because of the garble."
+  },
+  {
+   "date": "2025-05-13", "ticker": "AMZN", "ticker_as_captioned": "Amazon", "vehicle": null,
+   "direction": "long", "action": "exit",
+   "fill_timing": "a few days ago", "timing_basis": "stated", "fill_date_stated": "", "is_retrospective": true,
+   "position_after": "closed",
+   "setup": "Closed it the same day because it closed weak, intending to buy back the next day; low-of-day stop never hit and it gapped up without him.",
+   "entry_basis": "", "stop": "low of day was not hit", "size": "",
+   "price": null, "price_kind": null,
+   "source": "2025-05-14_er0VX-bMQIY@06:37", "confidence": "stated",
+   "quote": "closed it because it didn't close week or because it kind of closed",
+   "notes": "'week' = weak (caption)."
+  },
+  {
+   "date": "2025-05-13", "ticker": "NFLX", "ticker_as_captioned": "Netflix", "vehicle": null,
+   "direction": "long", "action": "entry",
+   "fill_timing": "422", "timing_basis": "stated", "fill_date_stated": "2025-04-22", "is_retrospective": true,
+   "position_after": "open",
+   "setup": "First buy of the rally: flat-base breakout after earnings; skipped 4/21 when the market was rough and bought the next day as the market pushed higher.",
+   "entry_basis": "over a little flat-base breakout", "stop": "low of day", "size": "",
+   "price": null, "price_kind": null,
+   "source": "2025-05-14_er0VX-bMQIY@27:59", "confidence": "stated",
+   "quote": "Netflix was the first one that I bought right right here on 422",
+   "notes": "Told as an example to a viewer. Price garbled ('I bought,9'). At 47:36 'I had Netflix working' - still held."
+  },
+  {
+   "date": "2025-05-13", "ticker": "PLTR", "ticker_as_captioned": "Palunteer", "vehicle": null,
+   "direction": "long", "action": "entry",
+   "fill_timing": "423", "timing_basis": "stated", "fill_date_stated": "2025-04-23", "is_retrospective": true,
+   "position_after": "unknown",
+   "setup": "Flat-base breakout, the day after his Netflix buy.",
+   "entry_basis": "simple flat-base breakout", "stop": "", "size": "",
+   "price": 99, "price_kind": "fill",
+   "source": "2025-05-14_er0VX-bMQIY@28:22", "confidence": "stated",
+   "quote": "Next day I literally came in on Palunteer and it was a very similar setup",
+   "notes": "'bought this thing at like 990s effectively' - read as ~$99; garbled. Current status not stated."
+  },
+  {
+   "date": "2025-05-13", "ticker": "CRWD", "ticker_as_captioned": "CrowdStrike", "vehicle": null,
+   "direction": "long", "action": "entry",
+   "fill_timing": "424", "timing_basis": "stated", "fill_date_stated": "2025-04-24", "is_retrospective": true,
+   "position_after": "open",
+   "setup": "Breaking through the $400 psychological level, bought on the third day once NFLX and PLTR had traction.",
+   "entry_basis": "break through the $400 psychological level", "stop": "", "size": "",
+   "price": 400, "price_kind": "level",
+   "source": "2025-05-14_er0VX-bMQIY@28:48", "confidence": "stated",
+   "quote": "the very next day I came in and brought CrowdStrike",
+   "notes": "'brought' = bought. At 47:36 'I had Crowd working' - still held."
+  },
+  {
+   "date": "2025-05-13", "ticker": "UBER", "ticker_as_captioned": "Uber", "vehicle": null,
+   "direction": "long", "action": "entry",
+   "fill_timing": "424", "timing_basis": "stated", "fill_date_stated": "2025-04-24", "is_retrospective": true,
+   "position_after": "open",
+   "setup": "50-day SMA reclaim, bought the same day as CRWD once the first two names had traction.",
+   "entry_basis": "50 SMA reclaim", "stop": "", "size": "",
+   "price": null, "price_kind": null,
+   "source": "2025-05-14_er0VX-bMQIY@28:59", "confidence": "stated",
+   "quote": "and Uber on 424 as a 50s SMA reclaim",
+   "notes": "Also 29:27 'Then I come in and I buy Uber and Crowd Strike.' At 47:36 'I already had Uber working' - still held."
+  },
+  {
+   "date": "2025-05-13", "ticker": "AMR", "ticker_as_captioned": "AMR", "vehicle": null,
+   "direction": "long", "action": "entry",
+   "fill_timing": "february 1st, 2022", "timing_basis": "stated", "fill_date_stated": "2022-02-01", "is_retrospective": true,
+   "position_after": "unknown",
+   "setup": "Education example: stock had reclaimed its 200 and stair-stepped higher; he bought a tight setup off the 50 at $65 and it went to ~180.",
+   "entry_basis": "move up off the 50 after tightening", "stop": "", "size": "",
+   "price": 65, "price_kind": "fill",
+   "source": "2025-05-14_er0VX-bMQIY@44:33", "confidence": "stated",
+   "quote": "I remember it like it was yesterday. 65 bucks is where I came in.",
+   "notes": "Old (2022) example used for teaching. Exit not stated."
+  },
+  {
+   "date": "2025-05-13", "ticker": "TMDX", "ticker_as_captioned": "TMDX", "vehicle": null,
+   "direction": "long", "action": "entry",
+   "fill_timing": "", "timing_basis": "", "fill_date_stated": "", "is_retrospective": true,
+   "position_after": "open",
+   "setup": "Bought while already working behind traction (TSLA, UBER, NFLX, CRWD); did not close well but held through the weekend because the low-of-day stop was not hit.",
+   "entry_basis": "", "stop": "low of day", "size": "",
+   "price": 115.19, "price_kind": "fill",
+   "source": "2025-05-14_er0VX-bMQIY@46:58", "confidence": "stated",
+   "quote": "So, I bought TMDX um 11519 and the reason that I held it",
+   "notes": "Answering a viewer asking why he held TMDX and Toast through the weekend - so bought the session before a weekend (likely Fri 5/9; not stated). Small red at that close."
+  },
+  {
+   "date": "2025-05-13", "ticker": "TOST", "ticker_as_captioned": "Toast", "vehicle": null,
+   "direction": "long", "action": "entry",
+   "fill_timing": "", "timing_basis": "", "fill_date_stated": "", "is_retrospective": true,
+   "position_after": "open",
+   "setup": "Bought alongside TMDX while working behind traction; closed flat, held through the weekend with a low-of-day stop.",
+   "entry_basis": "", "stop": "low of day", "size": "",
+   "price": null, "price_kind": null,
+   "source": "2025-05-14_er0VX-bMQIY@47:12", "confidence": "stated",
+   "quote": "I bought TMDX and Toast and neither of them did anything wrong",
+   "notes": "Held through the weekend; entry day not stated (likely the Friday before)."
+  },
+  {
+   "date": "2025-05-13", "ticker": "TSLA", "ticker_as_captioned": "Tesla", "vehicle": null,
+   "direction": "long", "action": "entry",
+   "fill_timing": "", "timing_basis": "", "fill_date_stated": "", "is_retrospective": true,
+   "position_after": "open",
+   "setup": "Breakout around 291-292 as Tesla got above its 200; had a huge push and closed ~7 points above his entry.",
+   "entry_basis": "291/292 breakout spot", "stop": "", "size": "",
+   "price": 292.83, "price_kind": "fill",
+   "source": "2025-05-14_er0VX-bMQIY@48:32", "confidence": "stated",
+   "quote": "So, I bought Tesla, you know, 292s, 29283",
+   "notes": "Day not stated directly; context (33:07 'Tesla on Friday ... big push right off the open') suggests the prior Friday."
+  }
+ ],
+ "principles": [
+  "Respect the stop once you enter: if the stop is low of day, use low of day; do not close a position just because it closed weak (regret on AMZN and SOXL).",
+  "Progressive exposure: get traction on one or two leaders before adding more names.",
+  "Only buy a stock on a day its market/group is going up; avoid swings below the 200-day."
+ ],
+ "ambiguous_tickers": [
+  {"timestamp": "06:09", "caption_text": "Soxel", "context": "semis heating up; 1376 breakout", "guess": "SOXL (vehicle) on SOXX", "confidence": "likely"}
+ ]
+}

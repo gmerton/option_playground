@@ -49,6 +49,9 @@ analysis/<date>_<topic>.md         Per-video scoring: his call per ticker vs our
 
 ### Bulk transcripts and the trade log (started 2026-09-30)
 
+**Status 2026-10-01:** every public recap is extracted (3,682 rows, 420 distinct dated opens). Summary, his stated
+P&L by period and the open decodes: `data/studies/ariel_trade_log_2026-10-01.md`.
+
 The channel has ~705 PUBLIC videos back to 2025-04 (about 377 daily recaps of ~15 min and 328 "Premarket Prep" live
 streams of ~48 min) plus the members-only watchlist videos. The public ones are ingested in bulk, newest first:
 
