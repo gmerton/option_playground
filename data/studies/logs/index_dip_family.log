@@ -1,0 +1,118 @@
+# Index dip family, one 2012-published rule on 2013-2026 -- pre-registration in the docstring
+
+# SPY 1993-01-29 -> 2026-09-18, 8467 days
+any-day entry with this exit, 2013->: n 3447 | win  73.9% | mean +0.224% | PF  1.55 (overlapping, one per day)
+
+## SPY D5 (close below the prior 5-day low) (PRIMARY) -- 344 signal days 2013->, 10.0% of days
+  2013->      signal days +0.645% (n 344, win 76.7%) vs other days +0.177% (n 3103, win 73.5%) | diff +0.468pp, t +3.72
+    2013-2019  diff +0.429pp, t +3.64
+    2020-2026  diff +0.493pp, t +2.34
+    years positive 13/14: 13:+0.44 14:+0.82 15:+0.84 16:+0.20 17:+0.63 18:+0.07 19:+0.23 20:+0.40 21:+1.40 22:+0.25 23:-0.22 24:+0.68 25:+1.03 26:+0.52
+  book 2013-> gross n  209 | win  75.1% | mean +0.478% | PF  1.87 | avg bars 3.0
+              net   n  209 | win  73.7% | mean +0.454% | PF  1.82
+  PRIMARY bar (t >= 3, both halves +, majority of years +, net mean > 0): PASS
+  (in-sample 1993-2012, descriptive) signal days +0.639% (n 549, win 71.2%) vs other days +0.151% (n 4469, win 69.2%) | diff +0.488pp, t +4.01
+  (in-sample book) gross n  331 | win  71.0% | mean +0.587% | PF  2.02
+  R1 vol control: signal coefficient with lagged RV20 z-score in the regression +0.445pp, t +3.57
+      RV20 low  tercile: signal +0.274% (n 82) vs other +0.035% | diff +0.238pp, t +1.99
+      RV20 mid  tercile: signal +0.515% (n 123) vs other +0.225% | diff +0.290pp, t +1.32
+      RV20 high tercile: signal +0.979% (n 139) vs other +0.280% | diff +0.699pp, t +3.04
+  R2 random-entry null, % mean trade   : book   0.48 | random median   0.21 (5-95%: 0.08 .. 0.33) | draws >= book 0.00%
+  R2 random-entry null, bp per long day: book  15.99 | random median   8.08 (5-95%: 2.95 .. 13.07) | draws >= book 0.50%
+  R2 random-entry null, % winners      : book  75.12 | random median  73.90 (5-95%: 70.06 .. 77.41) | draws >= book 27.80%
+  R3 long days +15.99 bp (n 631, 18.3% of days) vs flat days +3.88 bp | diff +12.10 bp, t +2.19
+     book net: CAGR 6.77%, maxDD -13.3% | buy-and-hold: CAGR 14.97%, maxDD -33.7%
+  (exploratory, next-open entry and exit) signal days +0.507% (n 344, win 72.7%) vs other days +0.179% (n 3103, win 68.5%) | diff +0.328pp, t +2.98
+  (exploratory, next-open book net) n  209 | win  71.8% | mean +0.341% | PF  1.62
+
+## SPY TT (down Monday) (secondary) -- 274 signal days 2013->, 7.9% of days
+  2013->      signal days +0.517% (n 274, win 76.6%) vs other days +0.199% (n 3173, win 73.6%) | diff +0.318pp, t +3.68
+    2013-2019  diff +0.188pp, t +1.84
+    2020-2026  diff +0.494pp, t +3.42
+    years positive 13/14: 13:+0.02 14:+0.44 15:+0.65 16:+0.20 17:+0.00 18:-0.18 19:+0.11 20:+0.47 21:+0.37 22:+0.97 23:+0.73 24:+0.13 25:+0.33 26:+0.36
+  book 2013-> gross n  272 | win  76.5% | mean +0.516% | PF  2.48 | avg bars 2.7
+              net   n  272 | win  76.1% | mean +0.493% | PF  2.39
+  (in-sample 1993-2012, descriptive) signal days +0.501% (n 423, win 70.4%) vs other days +0.178% (n 4595, win 69.4%) | diff +0.323pp, t +3.38
+  (in-sample book) gross n  420 | win  70.2% | mean +0.501% | PF  1.91
+  R1 vol control: signal coefficient with lagged RV20 z-score in the regression +0.308pp, t +3.61
+      RV20 low  tercile: signal +0.099% (n 89) vs other +0.048% | diff +0.051pp, t +0.43
+      RV20 mid  tercile: signal +0.543% (n 90) vs other +0.231% | diff +0.312pp, t +2.62
+      RV20 high tercile: signal +0.884% (n 95) vs other +0.318% | diff +0.566pp, t +2.87
+  R2 random-entry null, % mean trade   : book   0.52 | random median   0.21 (5-95%: 0.06 .. 0.35) | draws >= book 0.00%
+  R2 random-entry null, bp per long day: book  19.01 | random median   8.13 (5-95%: 2.56 .. 14.04) | draws >= book 0.25%
+  R2 random-entry null, % winners      : book  76.47 | random median  73.84 (5-95%: 69.51 .. 77.96) | draws >= book 14.35%
+  R3 long days +19.01 bp (n 744, 21.6% of days) vs flat days +2.55 bp | diff +16.47 bp, t +3.64
+     book net: CAGR 9.93%, maxDD -13.4% | buy-and-hold: CAGR 14.97%, maxDD -33.7%
+  (exploratory, next-open entry and exit) signal days +0.356% (n 274, win 73.0%) vs other days +0.199% (n 3173, win 68.6%) | diff +0.157pp, t +2.05
+  (exploratory, next-open book net) n  272 | win  72.1% | mean +0.330% | PF  1.86
+
+## POST HOC P1 -- SPY D5 decided 10 minutes before the close, filled at the close (3413 of 3449 days have 1-min data; median |1-min last / daily close - 1| 0.9 bp)
+  signal days: at the close 340, at T-10 338, both 313, T-10 only 25, close only 27
+  T-10 signal, close fill: signal days +0.645% (n 338, win 76.6%) vs other days +0.176% (n 3074, win 73.5%) | diff +0.469pp, t +3.59
+  close signal, same days: signal days +0.635% (n 340, win 76.5%) vs other days +0.177% (n 3072, win 73.5%) | diff +0.458pp, t +3.62
+  T-10 book net: n  202 | win  73.8% | mean +0.479% | PF  1.88
+
+## POST HOC, exploratory -- SPY D5 by regime, 2013->
+  above 200d: signal +0.463% (n 245, win 77.1%) vs other +0.135% | diff +0.328pp, t +2.41
+  below 200d: signal +1.096% (n 99, win 75.8%) vs other +0.422% | diff +0.674pp, t +2.04
+  book net return by year: 13:+10.4% 14:+5.8% 15:+0.8% 16:+1.1% 17:+6.8% 18:-3.0% 19:+1.9% 20:+14.0% 21:+26.5% 22:-1.9% 23:+0.8% 24:+9.8% 25:+16.3% 26:+7.0%
+  five worst trades (net): 2020-02-21 -11.2%, 2018-12-17 -7.7%, 2020-03-16 -6.5%, 2018-10-04 -6.0%, 2018-03-16 -5.9%
+  state at the last cached bar (2026-09-18): above the 200d, RV20 tercile low, signal off
+
+# QQQ 1999-03-10 -> 2026-09-18, 6925 days
+any-day entry with this exit, 2013->: n 3448 | win  73.7% | mean +0.277% | PF  1.51 (overlapping, one per day)
+
+## QQQ D5 (close below the prior 5-day low) (secondary) -- 354 signal days 2013->, 10.3% of days
+  2013->      signal days +0.801% (n 354, win 75.7%) vs other days +0.217% (n 3094, win 73.5%) | diff +0.584pp, t +4.43
+    2013-2019  diff +0.577pp, t +4.15
+    2020-2026  diff +0.574pp, t +2.70
+    years positive 11/14: 13:+1.00 14:+0.88 15:+1.04 16:-0.04 17:+0.57 18:+0.72 19:+0.05 20:-0.04 21:+1.06 22:+0.71 23:-0.14 24:+0.92 25:+1.02 26:+1.00
+  book 2013-> gross n  200 | win  69.0% | mean +0.459% | PF  1.66 | avg bars 3.2
+              net   n  200 | win  68.5% | mean +0.434% | PF  1.61
+  (in-sample 1993-2012, descriptive) signal days +1.007% (n 433, win 70.7%) vs other days +0.125% (n 3043, win 68.0%) | diff +0.882pp, t +3.82
+  (in-sample book) gross n  241 | win  68.5% | mean +0.717% | PF  1.72
+  R1 vol control: signal coefficient with lagged RV20 z-score in the regression +0.541pp, t +4.08
+      RV20 low  tercile: signal +0.705% (n 70) vs other +0.085% | diff +0.620pp, t +2.73
+      RV20 mid  tercile: signal +0.595% (n 131) vs other +0.210% | diff +0.385pp, t +1.92
+      RV20 high tercile: signal +1.022% (n 153) vs other +0.369% | diff +0.653pp, t +2.70
+  R2 random-entry null, % mean trade   : book   0.46 | random median   0.26 (5-95%: 0.10 .. 0.41) | draws >= book 1.40%
+  R2 random-entry null, bp per long day: book  14.89 | random median  10.18 (5-95%: 3.77 .. 16.28) | draws >= book 9.45%
+  R2 random-entry null, % winners      : book  69.00 | random median  73.87 (5-95%: 70.36 .. 77.17) | draws >= book 98.50%
+  R3 long days +14.89 bp (n 637, 18.5% of days) vs flat days +6.64 bp | diff +8.25 bp, t +1.27
+     book net: CAGR 6.07%, maxDD -14.8% | buy-and-hold: CAGR 20.19%, maxDD -35.1%
+  (exploratory, next-open entry and exit) signal days +0.728% (n 354, win 72.9%) vs other days +0.243% (n 3093, win 69.2%) | diff +0.485pp, t +3.78
+  (exploratory, next-open book net) n  200 | win  67.0% | mean +0.330% | PF  1.46
+
+## QQQ TT (down Monday) (secondary) -- 258 signal days 2013->, 7.5% of days
+  2013->      signal days +0.575% (n 258, win 76.7%) vs other days +0.253% (n 3190, win 73.4%) | diff +0.321pp, t +2.83
+    2013-2019  diff +0.280pp, t +2.06
+    2020-2026  diff +0.385pp, t +2.04
+    years positive 11/14: 13:+0.39 14:+0.11 15:+0.51 16:+0.55 17:+0.05 18:+0.39 19:-0.01 20:+0.21 21:+0.27 22:+1.44 23:+0.29 24:-0.09 25:-0.01 26:+0.54
+  book 2013-> gross n  255 | win  76.5% | mean +0.569% | PF  2.13 | avg bars 2.7
+              net   n  255 | win  76.5% | mean +0.543% | PF  2.07
+  (in-sample 1993-2012, descriptive) signal days +0.493% (n 299, win 69.2%) vs other days +0.211% (n 3177, win 68.2%) | diff +0.283pp, t +1.62
+  (in-sample book) gross n  296 | win  69.3% | mean +0.475% | PF  1.45
+  R1 vol control: signal coefficient with lagged RV20 z-score in the regression +0.300pp, t +2.68
+      RV20 low  tercile: signal +0.133% (n 82) vs other +0.122% | diff +0.011pp, t +0.06
+      RV20 mid  tercile: signal +0.507% (n 81) vs other +0.235% | diff +0.272pp, t +1.63
+      RV20 high tercile: signal +1.013% (n 95) vs other +0.405% | diff +0.608pp, t +2.62
+  R2 random-entry null, % mean trade   : book   0.57 | random median   0.26 (5-95%: 0.08 .. 0.44) | draws >= book 0.15%
+  R2 random-entry null, bp per long day: book  21.01 | random median  10.34 (5-95%: 2.93 .. 17.80) | draws >= book 0.75%
+  R2 random-entry null, % winners      : book  76.47 | random median  73.80 (5-95%: 69.53 .. 78.11) | draws >= book 16.05%
+  R3 long days +21.01 bp (n 701, 20.3% of days) vs flat days +4.89 bp | diff +16.12 bp, t +2.76
+     book net: CAGR 10.19%, maxDD -11.5% | buy-and-hold: CAGR 20.19%, maxDD -35.1%
+  (exploratory, next-open entry and exit) signal days +0.552% (n 258, win 72.1%) vs other days +0.271% (n 3189, win 69.3%) | diff +0.281pp, t +2.66
+  (exploratory, next-open book net) n  255 | win  71.8% | mean +0.523% | PF  2.02
+
+## POST HOC P1 -- QQQ D5 decided 10 minutes before the close, filled at the close (3413 of 3449 days have 1-min data; median |1-min last / daily close - 1| 1.1 bp)
+  signal days: at the close 352, at T-10 351, both 325, T-10 only 26, close only 27
+  T-10 signal, close fill: signal days +0.767% (n 351, win 73.8%) vs other days +0.224% (n 3062, win 73.8%) | diff +0.543pp, t +3.68
+  close signal, same days: signal days +0.795% (n 352, win 75.6%) vs other days +0.221% (n 3061, win 73.6%) | diff +0.574pp, t +4.35
+  T-10 book net: n  208 | win  68.3% | mean +0.462% | PF  1.66
+
+## POST HOC, exploratory -- QQQ D5 by regime, 2013->
+  above 200d: signal +0.718% (n 262, win 77.9%) vs other +0.177% | diff +0.541pp, t +4.09
+  below 200d: signal +1.039% (n 92, win 69.6%) vs other +0.462% | diff +0.577pp, t +1.58
+  book net return by year: 13:+14.5% 14:+5.9% 15:+7.4% 16:-2.9% 17:+6.8% 18:-5.2% 19:+1.3% 20:+5.8% 21:+17.8% 22:-9.6% 23:+7.1% 24:+17.5% 25:+18.5% 26:+2.8%
+  five worst trades (net): 2020-02-21 -10.7%, 2018-12-17 -8.6%, 2018-10-04 -7.0%, 2022-01-19 -6.0%, 2020-09-03 -5.9%
+  state at the last cached bar (2026-09-18): above the 200d, RV20 tercile mid, signal off

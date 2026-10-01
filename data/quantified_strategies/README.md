@@ -6,7 +6,7 @@ delisted stocks). Skeptic-default scoring like every KB here.
 
 `videos/<date>_<id>/` holds `transcript.txt` and `notes.md`.
 
-**Channel triage (2026-09-30):** [channel_triage_2026-09-30.md](channel_triage_2026-09-30.md) — 321 videos, 40 transcripts read. Three tests proposed: the dip family settled with one 2012-published rule (existing queue row), TLT month-end, third-Friday open-to-close short.
+**Channel triage (2026-09-30):** [channel_triage_2026-09-30.md](channel_triage_2026-09-30.md) — 321 videos, 40 transcripts read. Three tests proposed: the dip family settled with one 2012-published rule (existing queue row), TLT month-end, third-Friday open-to-close short. **The first was run the same day: PASS on the discovery bar** (SPY +0.468pp over any-day entry, t 3.72, 2013–26), see `../studies/index_dip_family_2026-09-30.md`.
 
 | video | date | verdict |
 |---|---|---|

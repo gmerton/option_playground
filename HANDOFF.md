@@ -32,6 +32,14 @@ survives real fills, a control that holds the confound fixed, and a correction.
 
 ## Recently changed — live, and not obvious from the code
 
+**2026-09-30 evening — ⭐ index dip rule PASSES the discovery bar (candidate, NOT adopted; Gabe to decide):** buy the SPY
+close below the prior 5-day low, sell after a close above the prior high or 5 days. One rule, published by Quantified
+Strategies in Oct 2012, tested on 2013–2026 only: +0.468pp over any other entry day with the same exit, t 3.72, 13/14
+years, +0.454% net per trade; survives a vol control, a random-entry null and a 15:50 decision. ⚠ 6.8%/yr at 18%
+exposure (below buy-and-hold), long-vs-flat days t 2.19, about half the edge in a calm uptrend. Same day: the channel's
+Darvas breakout NULL (t 0.09 vs any-day entry). `data/studies/index_dip_family_2026-09-30.md`; two more proposals
+(TLT month-end, third-Friday short) sit in TEST_INDEX §10.
+
 **2026-09-30 (8 tests, all NULL / UNDERPOWERED; rows in TEST_INDEX, docs in `data/studies/*_2026-09-30.md`):**
 * **Exits — keep the 20-EMA trail.** RS-loss exit NULL (differs on 1.1% of trades); swing-low trail NULL
   (exposure-matched +0.44pp t 1.71, width-fragile). ⚠ Pattern now seen four times (STOP_ONLY, RS-only, swing-low,

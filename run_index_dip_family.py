@@ -39,6 +39,15 @@ DESIGN
         drawdown and exposure vs buy-and-hold over the same window, net.
   EXPLORATORY (labelled, no claim): in-sample 1993-2012; next-open entry and exit; per-year table.
 
+ADDED AFTER THE FIRST RUN (2026-09-30, labelled post hoc): the primary passed (t 3.72), and a clean pass is a bug until
+proven otherwise. The rule decides and fills on the same closing print, which cannot be traded: a market-on-close order
+must be in by 15:50. P1 REAL-FILL CHECK: take the signal from the last 1-min price before 10 minutes to the close
+(IBKR 1-min, data/cache/intraday_hist, 2007 ->) against the same prior 5-day low, fill at the official close, same exit,
+same any-day control, 2013 ->. Report how many signal days change and the cell. D5 only (TT is the same construction).
+
+Also post hoc and EXPLORATORY (no claim): the primary cell split by trend (close above / below the 200-day average at
+the signal) so today's regime row can be marked, the book's net return by year, and its five worst trades.
+
 Local run (one cached parquet, seconds of CPU).
 Usage: PYTHONPATH=src .venv/bin/python3 run_index_dip_family.py   (log -> data/studies/logs/index_dip_family.log)
 """
@@ -215,6 +224,54 @@ def report(sym: str, rule: str, d: pd.DataFrame, sig: pd.Series, out: list[str],
     out.append(f"  (exploratory, next-open book net) {stats(book(exo, sig).query('signal >= @OOS').net)}")
 
 
+def posthoc_1550(sym: str, d: pd.DataFrame, out: list[str]) -> None:
+    m = pd.read_parquet(REPO / f"data/cache/intraday_hist/{sym}_1min.parquet", columns=["ts", "close"])
+    m["day"] = m.ts.dt.normalize()
+    last = m.groupby("day").ts.transform("max")
+    pre = m[m.ts <= last - pd.Timedelta(minutes=10)].groupby("day").close.last()   # last print before T-10 min
+    off = m.groupby("day").close.last()
+    j = d.join(pre.rename("p1550")).join(off.rename("c1min")).loc[OOS:]
+    j = j.dropna(subset=["p1550"])
+    out.append(f"\n## POST HOC P1 -- {sym} D5 decided 10 minutes before the close, filled at the close "
+               f"({len(j)} of {len(d.loc[OOS:])} days have 1-min data; median |1-min last / daily close - 1| "
+               f"{1e4 * (j.c1min / j.close - 1).abs().median():.1f} bp)")
+    low5 = d.low.shift(1).rolling(5).min().reindex(j.index)
+    early, final = (j.p1550 < low5), sig_d5(d).reindex(j.index)
+    out.append(f"  signal days: at the close {int(final.sum())}, at T-10 {int(early.sum())}, both {int((early & final).sum())}, "
+               f"T-10 only {int((early & ~final).sum())}, close only {int((final & ~early).sum())}")
+    ex = exit_frame(d)
+    full = early.reindex(d.index).fillna(False).astype(bool)
+    full.loc[:j.index[0]] = False
+    exj, sj = ex.loc[j.index], full.loc[j.index]
+    txt, _, _ = cell(exj, sj, OOS)
+    out.append(f"  T-10 signal, close fill: {txt}")
+    txt, _, _ = cell(exj, final.astype(bool), OOS)
+    out.append(f"  close signal, same days: {txt}")
+    tr = book(ex, full)
+    out.append(f"  T-10 book net: {stats(tr.net)}")
+
+
+def posthoc_regime(sym: str, d: pd.DataFrame, out: list[str]) -> None:
+    ex, sig = exit_frame(d), sig_d5(d)
+    up = (d.close > d.close.rolling(200).mean())
+    out.append(f"\n## POST HOC, exploratory -- {sym} D5 by regime, 2013->")
+    for lab, m in (("above 200d", up), ("below 200d", ~up)):
+        mm = m.loc[OOS:].values
+        y, ss = ex.gross.loc[OOS:][mm], sig.loc[OOS:][mm]
+        dd_, tt_ = hac(y, ss.rename("sig"))
+        out.append(f"  {lab}: signal {100 * y[ss].mean():+.3f}% (n {int(ss.sum())}, win {100 * (y[ss] > 0).mean():.1f}%) vs other "
+                   f"{100 * y[~ss].mean():+.3f}% | diff {dd_:+.3f}pp, t {tt_:+.2f}")
+    tr = book(ex, sig).query("signal >= @OOS")
+    by = tr.groupby(tr.signal.dt.year).net.agg(lambda r: 100 * ((1 + r).prod() - 1))
+    out.append("  book net return by year: " + " ".join(f"{y % 100:02d}:{v:+.1f}%" for y, v in by.items()))
+    w = tr.nsmallest(5, "net")
+    out.append("  five worst trades (net): " + ", ".join(f"{r.signal.date()} {100 * r.net:+.1f}%" for r in w.itertuples()))
+    last = d.iloc[-1]
+    rv_t = pd.qcut(d.rv.loc[OOS:], 3, labels=["low", "mid", "high"]).iloc[-1]
+    out.append(f"  state at the last cached bar ({d.index[-1].date()}): {'above' if up.iloc[-1] else 'below'} the 200d, RV20 tercile {rv_t}, "
+               f"signal {'ON' if sig.iloc[-1] else 'off'}")
+
+
 def main() -> None:
     out = ["# Index dip family, one 2012-published rule on 2013-2026 -- pre-registration in the docstring"]
     for sym in ("SPY", "QQQ"):
@@ -225,6 +282,8 @@ def main() -> None:
         out.append(f"any-day entry with this exit, 2013->: {stats(al)} (overlapping, one per day)")
         report(sym, "D5 (close below the prior 5-day low)", d, sig_d5(d), out, primary=(sym == "SPY"))
         report(sym, "TT (down Monday)", d, sig_tt(d), out, primary=False)
+        posthoc_1550(sym, d, out)
+        posthoc_regime(sym, d, out)
     LOG.parent.mkdir(parents=True, exist_ok=True)
     LOG.write_text("\n".join(out) + "\n")
     print("\n".join(out))
