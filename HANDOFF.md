@@ -16,12 +16,14 @@ sections go stale fastest, so trust the files over this doc where they disagree.
 ## The one-paragraph version of the book
 
 Research here is overwhelmingly **destructive** — it kills things. Since the 2026-09-25 top-down audit (TEST_INDEX §0)
-**nothing is certified as a strategy**. The index stress put sale, the old "one certified bucket", was PARKED on
+**nothing was certified as a strategy** until 2026-09-30, when Gabe added a REPLICATION track for published premia
+(CLAUDE.md) and 12-1 momentum certified under it. The index stress put sale, the old "one certified bucket", was PARKED on
 2026-09-28 because 60–80% of its P&L is beta (the post-selloff rebound) and the rebound is absent 1990–2009. What is
 live is small and forward-tested:
 * **Calm-regime SPY weekly put** (Fridays, CALM & GEX > 0, 7-DTE 5Δ, hold to expiry; t 7.14 excess over beta,
   replicates on QQQ) — LIVE at 5Δ × 1 contract, desk step 0b prints `LIVE ACTION`.
-* **12-1 momentum sleeve** (survivorship-free, t_NW 2.93) — `run_momentum_screener.py`, first formation 2026-09-30.
+* ⭐ **12-1 momentum sleeve — CERTIFIED (replication track, 2026-09-30), the first certified strategy** (survivorship-free,
+  t_NW 2.93, 12/16 yrs) — `run_momentum_screener.py`, first formation 2026-09-30.
 * **GEX regime** is a certified *mechanism* (not a trade); the 1-day 2× fly and the long straddle are paper/token only.
 
 The house breakout is **uncertified selection, trade small**. The measured leak is the **entry**: the breakout buys

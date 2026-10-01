@@ -1,5 +1,10 @@
 # 12-1 momentum portfolio (C): the academic baseline for buying stocks (2026-09-25)
 
+> ⭐ **CERTIFIED (replication track), 2026-09-30.** Gabe adopted a replication bar for premia published before the
+> sample (t ≥ 2 and ≥ own Šidák, both halves, majority of years, pre-registered, post-publication, survivorship-free;
+> CLAUDE.md research conventions). This primary cell qualifies: t_NW 2.93, halves +0.38/+0.92, 12/16 years. The
+> verdict below was correct under the discovery bar and is kept for the record.
+
 Script: `run_momentum_portfolio.py` (pre-registered b20b0f6). Log: `data/studies/logs/momentum_portfolio.log`; table
 `momentum_portfolio_2026-09-25.csv`.
 

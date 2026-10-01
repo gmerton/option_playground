@@ -129,7 +129,13 @@ These are hard-won; violating them has produced wrong results more than once.
 - **Pre-register the test** in the script's docstring before running it: universe, arms, control, the bar, and
   the multiple-testing charge. State the primary cell in advance; everything else is exploratory.
 - **The bar is |t| ≥ 3 with both halves of the sample the same sign** — and when you test many cells, the
-  Šidák/BH-corrected threshold governs instead, not the raw 3.
+  Šidák/BH-corrected threshold governs instead, not the raw 3. That is the **DISCOVERY** track.
+- **REPLICATION track (Gabe, 2026-09-30)** — for a premium *published before our sample starts*, tested once,
+  pre-registered (primary cell named in advance), on post-publication data only, with an economic rationale:
+  bar **t ≥ 2** (and ≥ its own Šidák threshold over the pre-registered cells), both halves the same sign, a majority
+  of years positive, survivorship-free where the universe can die. Verdict: **CERTIFIED (replication)**. It does
+  NOT apply to creator claims, our own discoveries, or anything found by search — those stay on discovery.
+  First certification: 12-1 momentum (t_NW 2.93, 2011–26 vs Jegadeesh-Titman 1993).
 - **Always have a control**, and prefer one that holds the confound fixed (same name later, same day other
   name, exposure-matched buy-and-hold). A result with no benchmark cannot be distinguished from beta.
 - **Chronological halves do not catch a regime in the back half** — check per-year too.
