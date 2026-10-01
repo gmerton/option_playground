@@ -1,0 +1,41 @@
+# Quarter-end pair (Karsan QAFDAuK_tqU) — pre-registration in the notes, see docstring
+## A. SPY quarter-end vs month-end turn (1993-02-01 -> 2026-09-29)
+                 window  QE_W_bp  ME_W_bp  other_bp   b_QE  t_QE  b_ME  t_ME  QE_minus_ME     t  n_QE  n_ME
+      PRIMARY 2000-2026    18.22     3.63      3.40  14.82  1.78  0.23  0.04        14.59  1.49   214   428
+         half 2000-2012    23.66     7.44      0.36  23.30  1.73  7.08  0.72        16.22  1.01   104   208
+         half 2013-2026    13.07     0.03      6.28   6.79  0.70 -6.24 -0.92        13.04  1.15   110   220
+in-sample era 1993-1999    -7.51    19.58      7.88 -15.39 -1.11 11.70  1.24       -27.09 -1.64    55   111
+
+S1 up-quarter QE_W minus down-quarter QE_W: -18.64 bp/day t -0.79 (n up 150, down 64; means +12.64 / +31.28)
+S2 year-end W +7.53 bp (n 53) vs other QE_W +21.74 bp (n 161) [descriptive]
+per year QE_W - ME_W (bp/day): positive in 15 of 27 years
+Date  2000  2001  2002  2003  2004  2005  2006  2007   2008  2009  2010  2011  2012  2013  2014  2015  2016  2017  2018  2019  2020  2021  2022  2023  2024  2025  2026
+diff -68.0 -27.6  52.2  15.9 -11.4 -53.9  11.7  -2.0  170.1  59.5 -22.2  -9.6  96.3  39.9   9.5  29.8  -7.4  -9.9   8.6  61.3 -32.7  20.0  12.1  -8.5 -12.7  32.5  49.0
+exploratory: day -1 return vs next-quarter return, Spearman -0.05 (p 0.67, n 74)
+
+## B. Quarter-end IV V-shape (VIX 2008-06-02 -> 2026-09-25; VIX3M 2009-09-18 -> 2026-09-25)
+
+VIX: V = dlog[0->+5] - dlog[-5->0], in % log points; quarter ends (qe) vs other month ends (me)
+series    window  n_qe  n_me  V_qe  V_me  diff     t  pre_qe  post_qe  share_qe_trough  share_me_trough
+   VIX 2017-2026    38    78  3.13 -2.05  5.18  1.23   -1.35     1.78            34.21            19.23
+   VIX 2017-2021    20    40 -2.03 -8.88  6.85  1.09   -0.96    -2.99            30.00            12.50
+   VIX 2022-2026    18    38  8.86  5.14  3.72  0.73   -1.79     7.08            38.89            26.32
+   VIX 2008-2016    35    68 -6.98 -3.99 -2.99 -0.69    4.88    -2.10            17.14            19.12
+dose (2017+ diff minus placebo diff): +8.17
+per year qe - me V: positive in 5 of 10
+date  2017  2018  2019  2020  2021  2022  2023  2024  2025  2026
+V     -6.3  -2.4  -2.8  24.2  21.6  -2.0   7.0   9.6  13.8 -15.9
+
+VIX3M: V = dlog[0->+5] - dlog[-5->0], in % log points; quarter ends (qe) vs other month ends (me)
+series    window  n_qe  n_me  V_qe  V_me  diff     t  pre_qe  post_qe  share_qe_trough  share_me_trough
+ VIX3M 2017-2026    38    78  2.88  0.24  2.64  1.02   -1.90     0.99            23.68            28.21
+ VIX3M 2017-2021    20    40 -0.24 -4.05  3.81  1.07   -1.78    -2.02            20.00            22.50
+ VIX3M 2022-2026    18    38  6.35  4.76  1.59  0.45   -2.02     4.33            27.78            34.21
+ VIX3M 2009-2016    30    58 -4.89 -2.40 -2.49 -0.84    2.38    -2.51            16.67            24.14
+dose (2017+ diff minus placebo diff): +5.14
+per year qe - me V: positive in 5 of 10
+date  2017  2018  2019  2020  2021  2022  2023  2024  2025  2026
+V     -2.2  -4.2  -0.8  12.8  13.5  -5.3   4.1   3.0  11.3  -8.7
+
+A PRIMARY QE_W - ME_W: +14.59 bp/day t +1.49 halves +16.22/+13.04
+B PRIMARY VIX V (qe - me) 2017-26: +5.18 t +1.23 halves +6.85/+3.72 placebo -2.99

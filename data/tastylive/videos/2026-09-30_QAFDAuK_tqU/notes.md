@@ -49,6 +49,8 @@ table, no number beyond the illustration._
 
 ## Not tested, could be
 
+> **RAN 2026-09-30 → UNDERPOWERED × 2** (`data/studies/quarter_end_pair_2026-09-30.md`): A +14.6 bp/day t 1.49, up-quarter interaction wrong sign (t −0.79); B +5.2 pts t 1.23, placebo −3.0.
+
 ### A. Quarter-end vs month-end turn, conditional on the quarter (pre-registerable; low prior)
 
 - **Data:** yfinance SPY adjusted daily closes, same pull as `run_turn_of_month.py`. PRIMARY window 2000-01 →
