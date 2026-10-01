@@ -1,0 +1,35 @@
+{
+ "video_id": "lvBwF6KIFKk",
+ "title": "8/25/2025 Watchlist video",
+ "upload_date": "2025-08-25",
+ "date": "2025-08-22",
+ "session_date": "2025-08-22",
+ "session_date_basis": "spoken",
+ "observed_trades": [
+  {
+   "date": "2025-08-22",
+   "ticker": "CCL",
+   "ticker_as_captioned": "CCL",
+   "vehicle": null,
+   "direction": "long",
+   "action": "entry",
+   "fill_timing": "626",
+   "timing_basis": "stated",
+   "fill_date_stated": "2025-06-26",
+   "is_retrospective": true,
+   "position_after": "open",
+   "setup": "Held since 6/26; new flat base and 52-week high on Friday volume; would like to add over Friday's high.",
+   "entry_basis": "",
+   "stop": "the 50-day",
+   "size": "",
+   "price": null,
+   "price_kind": null,
+   "source": "2025-08-25_lvBwF6KIFKk@10:02",
+   "confidence": "stated",
+   "quote": "CCL one I've owned now for months since 626.",
+   "notes": "Still holds it ('I mean, I own it'); add is only a plan."
+  }
+ ],
+ "principles": [],
+ "ambiguous_tickers": []
+}

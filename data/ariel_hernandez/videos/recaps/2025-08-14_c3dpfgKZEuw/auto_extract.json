@@ -1,0 +1,35 @@
+{
+ "video_id": "c3dpfgKZEuw",
+ "title": "8/13/2025 Daily Recap + Watchlist",
+ "upload_date": "2025-08-14",
+ "date": "2025-08-13",
+ "session_date": "2025-08-13",
+ "session_date_basis": "spoken",
+ "observed_trades": [
+  {
+   "date": "2025-08-13",
+   "ticker": "RBLX",
+   "ticker_as_captioned": "Roblox",
+   "vehicle": null,
+   "direction": "short",
+   "action": "add",
+   "fill_timing": "today",
+   "timing_basis": "stated",
+   "fill_date_stated": "2025-08-13",
+   "is_retrospective": false,
+   "position_after": "open",
+   "setup": "Added to an existing RBLX short on the breakdown through 127.",
+   "entry_basis": "127 breakdown",
+   "stop": "",
+   "size": "some more",
+   "price": 127.0,
+   "price_kind": "level",
+   "source": "2025-08-14_c3dpfgKZEuw@19:05",
+   "confidence": "stated",
+   "quote": "Um, I did have a short on Roblox and I added some more today kind of on the 127 breakdown.",
+   "notes": "Plans to add on a break of the 20-SMA, targeting the 50-day for covers."
+  }
+ ],
+ "principles": [],
+ "ambiguous_tickers": []
+}

@@ -1,0 +1,43 @@
+{
+ "video_id": "4jl3CPL9Z7U",
+ "title": "7/9/2025 Premarket Prep",
+ "upload_date": "2025-07-09",
+ "date": "2025-07-08",
+ "session_date": "2025-07-08",
+ "session_date_basis": "spoken",
+ "observed_trades": [
+  {
+   "date": "2025-07-08",
+   "ticker": "?",
+   "ticker_as_captioned": "ARC",
+   "vehicle": null,
+   "direction": "long",
+   "action": "hold",
+   "fill_timing": "",
+   "timing_basis": "",
+   "fill_date_stated": "",
+   "is_retrospective": false,
+   "position_after": "open",
+   "setup": "Holding ARC; high-tight flag, the 50-day is now above his average, nothing to do.",
+   "entry_basis": "",
+   "stop": "",
+   "size": "",
+   "price": null,
+   "price_kind": null,
+   "source": "2025-07-09_4jl3CPL9Z7U@11:32",
+   "confidence": "stated",
+   "quote": "You know, the 50 is now above my average",
+   "notes": "Ticker unresolved: caption 'ARC'. Video is actually the 7/8 nightly watchlist despite the title."
+  }
+ ],
+ "principles": [],
+ "ambiguous_tickers": [
+  {
+   "timestamp": "11:32",
+   "caption_text": "ARC",
+   "context": "ARC is another one has this little hightype flag going ... the 50 is now above my average",
+   "guess": "?",
+   "confidence": "unsure"
+  }
+ ]
+}
