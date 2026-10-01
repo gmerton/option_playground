@@ -1,0 +1,14 @@
+# Laggard-breakdown contagion (pre-registration in the docstring)
+events 2,662 on 1417 dates, 103 industries; median peers 4, control names 270
+day 0 (common-shock check): peers -1.06% vs ADR-matched control -0.38% (diff t -20.27)
+         5d  peer - control -0.026pp  t -0.37  halves -0.007 / -0.035  years + 6/17  | break-below-50 rate peers 31.7% vs matched 30.4% (diff +1.2pp t +1.63)
+        10d  peer - control +0.056pp  t +0.84  halves +0.044 / +0.062  years + 10/17  | break-below-50 rate peers 46.2% vs matched 44.2% (diff +1.7pp t +2.15)
+PRIMARY 15d  peer - control +0.085pp  t +0.10  halves +0.015 / +0.119  years + 10/17  | break-below-50 rate peers 55.7% vs matched 54.2% (diff +1.2pp t +1.87)
+
+per year:
+date       2010   2011   2012    2013    2014    2015    2016    2017    2018    2019    2020    2021    2022    2023    2024    2025    2026
+n         66.00  79.00  86.00  106.00  112.00  125.00  124.00  170.00  147.00  149.00  162.00  244.00  144.00  183.00  283.00  252.00  230.00
+15d_pp    -0.27   0.47   0.43   -0.28    0.23   -1.04   -0.20    0.68    0.79   -0.03   -0.71    0.03    0.30   -0.55    0.26    0.72    0.03
+brk15_pp   1.79  -7.45   2.24    7.70    5.13    6.01   -0.94    4.55   -0.44    1.67   -1.63    2.29    1.51    1.49   -2.13   -1.14    2.42
+
+PRIMARY 15d peer - control: +0.085pp t +0.10 halves +0.015/+0.119
