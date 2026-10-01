@@ -21,6 +21,10 @@ pipeline:
 Flow: **raw transcripts (here)** → distilled `principles.md` + extracted `observed_trades.jsonl`
 → (optionally) seed `luk_notes.jsonl` → analyzer → screener rules → trade suggestions.
 
+**Entry cards (2026-09-30):** `trades/entry_cards.jsonl` — for each clean entry, what he SAID about stop, size and
+trigger, coded from the transcript only with verbatim quotes (`build_luk_entry_cards.py` verifies them). Summary:
+`data/studies/luk_entry_cards_2026-09-30.md`.
+
 ## Layout
 
 ```
