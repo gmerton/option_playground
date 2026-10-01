@@ -1,5 +1,7 @@
 # Right side of the V — same price, different expected value
 
+> ⛔ **TESTED 2026-09-30 → NULL, lean INVERTED** (`data/studies/right_side_v_gap_2026-09-30.md`): on the SPY/QQQ gap fade 2007–26, right − left +0.2 bp (t 0.09); with a real stop the win rate does not rise (29% vs 28%); the trigger trails a random minute (t −2.2). Daily form: confirmation ladder 2026-09-25, same answer.
+
 > **Verdict:** ⭐⭐ **His single unifying concept, and the most testable idea in the entire KB.**
 > Every other setup he teaches is a special case of it. Fully EOD-testable, and it explains a
 > result the repo already produced without understanding why.
