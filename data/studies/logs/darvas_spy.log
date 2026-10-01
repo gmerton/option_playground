@@ -1,0 +1,72 @@
+# Darvas box on SPY (Quantified Strategies b8Usenu2QIY) -- pre-registration in the docstring
+SPY 1993-01-29 -> 2026-09-18, 8467 days, 351 signal days
+
+## REPLICATION (claim: n 279, win 74.2%, mean +0.34%, PF 3.08; eras 2.70 / 2.78 / 3.94)
+  A ignore-while-long  gross n  282 | win  74.8% | mean +0.343% | PF  2.94 | avg bars 3.1
+                       net   n  282 | win  72.7% | mean +0.315% | PF  2.71
+      1993-2004: n   98 | win  68.4% | mean +0.255% | PF  1.90
+      2005-2015: n   85 | win  80.0% | mean +0.368% | PF  4.01
+      2016-2026: n   99 | win  76.8% | mean +0.408% | PF  4.43
+  B re-enter           gross n  351 | win  72.6% | mean +0.289% | PF  2.43 | avg bars 3.1
+                       net   n  351 | win  70.9% | mean +0.261% | PF  2.25
+      1993-2004: n  121 | win  68.6% | mean +0.239% | PF  1.82
+      2005-2015: n  111 | win  75.7% | mean +0.335% | PF  3.95
+      2016-2026: n  119 | win  73.9% | mean +0.296% | PF  2.53
+  lookback neighbourhood (A, gross; claim 11: 2.75, 13: 2.97, 16: 2.84, 18: 2.71, 20: 2.80):
+      11d: n  287 | win  74.6% | mean +0.342% | PF  3.00
+      12d: n  282 | win  74.8% | mean +0.343% | PF  2.94
+      13d: n  279 | win  74.6% | mean +0.332% | PF  2.82
+      16d: n  270 | win  74.4% | mean +0.346% | PF  3.05
+      18d: n  264 | win  74.2% | mean +0.333% | PF  2.87
+      20d: n  257 | win  74.3% | mean +0.325% | PF  2.86
+
+## PRIMARY -- same exit, every entry day: does the signal day beat any other day?
+  SPY: signal days +0.289% (n 351, win 72.6%) vs other days +0.283% (n 8114, win 69.4%) | diff +0.006pp, t +0.09
+      half 1993-2009: diff +0.004pp, t +0.04
+      half 2010-2026: diff +0.008pp, t +0.11
+      years positive: 15/34
+  any-day entry with the QS exit: n 8465 | win  69.5% | mean +0.283% | PF  1.62 (overlapping, one per day)
+
+## S1 -- exposure-matched: open-to-open return on long days vs flat days
+  long days +11.32 bp (n 863, 10.2% of days) vs flat days +4.01 bp | diff +7.31 bp, t +2.98
+  (exploratory) strategy net: CAGR 2.64%, maxDD -6.8% | buy-and-hold: CAGR 10.83%, maxDD -55.4%
+
+## POST HOC -- random-entry null for S1 (same count of signal days, same book, same exit; 2,000 draws)
+  bp per long day  strategy  11.32 | random median   8.63 (5-95%: 3.81 .. 13.63) | share of random draws >= strategy 18.0%
+  % mean trade     strategy   0.34 | random median   0.28 (5-95%: 0.12 .. 0.43) | share of random draws >= strategy 23.4%
+  bars held        strategy   3.06 | random median   3.35 (5-95%: 3.12 .. 3.59) | share of random draws >= strategy 97.9%
+  % winners        strategy  74.82 | random median  69.46 (5-95%: 65.47 .. 73.46) | share of random draws >= strategy 1.4%
+
+## S2 -- other indexes (out of sample for the parameters)
+  QQQ 1999-03-10 -> : strategy A gross n  199 | win  66.3% | mean +0.079% | PF  1.16
+  QQQ: signal days +0.179% (n 244, win 68.0%) vs other days +0.416% (n 6679, win 70.0%) | diff -0.237pp, t -2.06
+      half 1993-2009: diff -0.674pp, t -2.31
+      half 2010-2026: diff -0.018pp, t -0.19
+      years positive: 7/28
+  IWM 2000-05-26 -> : strategy A gross n  163 | win  66.9% | mean +0.137% | PF  1.31
+  IWM: signal days +0.087% (n 193, win 65.8%) vs other days +0.239% (n 6413, win 67.7%) | diff -0.151pp, t -1.24
+      half 1993-2009: diff +0.364pp, t +1.94
+      half 2010-2026: diff -0.424pp, t -2.76
+      years positive: 13/27
+
+## EXPLORATORY -- ablation (SPY, all signal days vs other days, same exit)
+  breakout only             : signal days +0.127% (n 1140, win 68.5%) vs other days +0.308% (n 7325, win 69.7%) | diff -0.180pp, t -3.60
+      half 1993-2009: diff -0.210pp, t -2.44
+      half 2010-2026: diff -0.156pp, t -2.84
+      years positive: 6/34
+  + 0.75% cap               : signal days +0.145% (n 974, win 68.2%) vs other days +0.301% (n 7491, win 69.7%) | diff -0.156pp, t -3.08
+      half 1993-2009: diff -0.211pp, t -2.43
+      half 2010-2026: diff -0.116pp, t -2.02
+      years positive: 8/34
+  + volume (full rule)      : signal days +0.289% (n 351, win 72.6%) vs other days +0.283% (n 8114, win 69.4%) | diff +0.006pp, t +0.09
+      half 1993-2009: diff +0.004pp, t +0.04
+      half 2010-2026: diff +0.008pp, t +0.11
+      years positive: 15/34
+  full, vol avg excl. today : signal days +0.262% (n 339, win 71.7%) vs other days +0.284% (n 8126, win 69.4%) | diff -0.022pp, t -0.35
+      half 1993-2009: diff -0.026pp, t -0.25
+      half 2010-2026: diff -0.017pp, t -0.23
+      years positive: 14/34
+  breakout + volume, no cap : signal days +0.217% (n 449, win 71.7%) vs other days +0.287% (n 8016, win 69.4%) | diff -0.070pp, t -1.09
+      half 1993-2009: diff -0.002pp, t -0.02
+      half 2010-2026: diff -0.136pp, t -1.57
+      years positive: 12/34

@@ -36,6 +36,12 @@ DESIGN
   The creator's own search is uncharged here: 12 is the best of the 6 lookbacks he shows, and the 0.75% cap and the
   15-day volume window come with no neighbourhood at all.
 
+ADDED AFTER THE FIRST RUN (2026-09-30, labelled post hoc): the primary came back null per TRADE (t 0.09) while S1 came
+back +7.3 bp per DAY (t 2.98). The two differ only in holding time, and S1's control (flat days) does not hold the
+exit fixed. RANDOM-ENTRY NULL: draw the same number of signal days uniformly at random 2,000 times, run the identical
+ignore-while-long book with the same exit, and place the strategy's per-long-day return, mean trade and mean bars in
+that distribution. If random entries also earn ~11 bp per long day, S1 is the exit's arithmetic, not the entry.
+
 Local run (one cached parquet, seconds of CPU).
 Usage: PYTHONPATH=src .venv/bin/python3 run_darvas_spy.py   (log -> data/studies/logs/darvas_spy.log)
 """
@@ -180,6 +186,25 @@ def main() -> None:
     yrs = len(d) / 252
     f = lambda e: f"CAGR {100 * (e.iloc[-1] ** (1 / yrs) - 1):.2f}%, maxDD {100 * (e / e.cummax() - 1).min():.1f}%"
     out.append(f"  (exploratory) strategy net: {f(eq)} | buy-and-hold: {f(bh)}")
+
+    out.append("\n## POST HOC -- random-entry null for S1 (same count of signal days, same book, same exit; 2,000 draws)")
+    rng = np.random.default_rng(20260930)
+    valid = np.flatnonzero(ex.gross.notna().values)
+    oov = oo.fillna(0).values
+    sims = []
+    for _ in range(2000):
+        rs = pd.Series(False, index=d.index)
+        rs.iloc[rng.choice(valid, int(sig.sum()), replace=False)] = True
+        rt = trades(ex, rs)
+        days = np.concatenate([np.arange(a, b) for a, b in zip(rt.e, rt.x)])
+        sims.append((1e4 * oov[days].mean(), 100 * rt.gross.mean(), rt.bars.mean(), 100 * (rt.gross > 0).mean()))
+    sims = pd.DataFrame(sims, columns=["bp_day", "mean_trade", "bars", "win"])
+    mine = dict(bp_day=1e4 * oo[ok & long].mean(), mean_trade=100 * tr.gross.mean(), bars=tr.bars.mean(),
+                win=100 * (tr.gross > 0).mean())
+    for c, unit in (("bp_day", "bp per long day"), ("mean_trade", "% mean trade"), ("bars", "bars held"), ("win", "% winners")):
+        q = sims[c]
+        out.append(f"  {unit:16s} strategy {mine[c]:6.2f} | random median {q.median():6.2f} (5-95%: {q.quantile(.05):.2f} .. "
+                   f"{q.quantile(.95):.2f}) | share of random draws >= strategy {100 * (q >= mine[c]).mean():.1f}%")
 
     out.append("\n## S2 -- other indexes (out of sample for the parameters)")
     for sym in ("QQQ", "IWM"):
