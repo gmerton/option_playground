@@ -232,6 +232,18 @@ def main() -> None:
     inbrk = np.mean([bool(brk.at[r.fill, r.tk]) if r.tk in brk.columns else False for r in L.itertuples()])
     out.append(f"  share of his long picks that were a house breakout that day: {100 * inbrk:.0f}%; a precision-tier breakout: {100 * inprec:.0f}%")
 
+    # POST HOC (added after the first run, aggregate only): the 0% overlap above looked too clean, so check where his
+    # long fills sit relative to our trigger
+    piv = H.shift(1).rolling(15).max()
+    Lp = L[L.tk.isin(P.close.columns)]
+    g = lambda F: np.array([F.at[r.fill, r.tk] for r in Lp.itertuples()], dtype=float)
+    c_, p_ = g(P.close), g(piv)
+    near = np.mean([bool(brk[r.tk].loc[:r.fill].iloc[-4:].any() or brk[r.tk].loc[r.fill:].iloc[:4].any()) for r in Lp.itertuples()])
+    out.append(f"## POST HOC overlap check ({len(Lp)} long picks in the panel): closed above the 15-day pivot {100 * np.nanmean(c_ >= p_):.0f}%; "
+               f"traded above it intraday {100 * np.nanmean(g(H) >= p_):.0f}%; a house breakout within 3 sessions either side "
+               f"{100 * near:.0f}%; EMA stack >= 5 days {100 * np.nanmean(g(stack) >= 5):.0f}%; median close "
+               f"{np.nanmedian((c_ / g(P.ema20) - 1) * 100 / g(P.adr)):+.2f} ADR above the 20 EMA")
+
     LOG.parent.mkdir(parents=True, exist_ok=True)
     LOG.write_text("\n".join(out) + "\n")
     print("\n".join(out))

@@ -1,0 +1,31 @@
+# Martin Luk's picks vs our selection -- INTERIM LOOK 1 (unambiguous picks only); pre-registration in the docstring
+opener rows 205: pending (excluded) 64, retrospective (excluded) 28; scored picks 106 (69 long, 37 short), 62 fill dates, 2025-11-26 -> 2026-09-18
+prices: panel to 2026-09-29; 12 names from yfinance (ARKK, ARM, DRIP, GLD, QQQ, SKHY, SLV, SQQQ, TE, TSLL, UAMY, UVXY)
+unpriced or non-session fill date (dropped): 0
+
+## LONG picks (69 priced)
+  -- 20 sessions: 66 picks with a full window; raw signed return net of costs +6.52% (median +6.16%), win 58%; C2 names per pick median 4; C2 mean +5.08%, C1 mean +2.95%
+  vs C2 our precision tier <- PRIMARY n  66 / 38 dates | mean  +1.43pp | date-cluster  +3.44pp, t +0.92 | week-cluster t +1.05 (20 wks) | MDE(80%) 10.4pp | halves -1.51 / +4.38 | win 52%
+  vs C1 same-date ADR tercile        n  65 / 37 dates | mean  +3.29pp | date-cluster  +3.03pp, t +0.98 | week-cluster t +1.81 (20 wks) | MDE(80%) 8.7pp | halves +1.71 / +4.65 | win 49%
+  vs C3 same name later              n  60 / 33 dates | mean  +5.44pp | date-cluster  +3.02pp, t +0.73 | week-cluster t +1.05 (17 wks) | MDE(80%) 11.7pp | halves +6.13 / +4.76 | win 60%
+  (exploratory) ex levered ETFs vs C2 n  62 / 36 dates | mean  +2.52pp | date-cluster  +3.71pp, t +0.98 | week-cluster t +1.10 (19 wks) | MDE(80%) 10.6pp | halves +1.13 / +3.82 | win 52%
+  -- 5 sessions: 69 picks with a full window; raw signed return net of costs +2.59% (median +3.24%), win 59%; C2 names per pick median 4; C2 mean +2.96%, C1 mean +1.69%
+  vs C2 our precision tier           n  69 / 39 dates | mean  -0.37pp | date-cluster  +0.09pp, t +0.05 | week-cluster t +0.83 (21 wks) | MDE(80%) 4.6pp | halves -2.01 / +1.13 | win 45%
+  vs C1 same-date ADR tercile        n  68 / 38 dates | mean  +0.66pp | date-cluster  +0.39pp, t +0.32 | week-cluster t +1.39 (21 wks) | MDE(80%) 3.4pp | halves +0.51 / +0.79 | win 54%
+  vs C3 same name later              n  66 / 38 dates | mean  +2.34pp | date-cluster  +1.76pp, t +1.05 | week-cluster t +1.66 (20 wks) | MDE(80%) 4.7pp | halves +3.35 / +1.33 | win 58%
+  (exploratory) ex levered ETFs vs C2 n  65 / 37 dates | mean  -0.51pp | date-cluster  -0.14pp, t -0.08 | week-cluster t +0.53 (20 wks) | MDE(80%) 4.9pp | halves -1.00 / -0.04 | win 45%
+
+## SHORT picks (37 priced)
+  -- 20 sessions: 30 picks with a full window; raw signed return net of costs +1.75% (median +3.54%), win 63%; C2 names per pick median 3; C2 mean -2.06%, C1 mean -1.09%
+  vs C1 (control - pick)             n  28 / 20 dates | mean  +0.56pp | date-cluster  +0.94pp, t +0.13 | week-cluster t +0.03 (15 wks) | MDE(80%) 19.7pp | halves -5.67 / +6.79 | win 57%
+  -- 5 sessions: 37 picks with a full window; raw signed return net of costs +1.68% (median +1.42%), win 54%; C2 names per pick median 3; C2 mean +0.25%, C1 mean -1.12%
+  vs C1 (control - pick)             n  35 / 24 dates | mean  +0.22pp | date-cluster  -0.61pp, t -0.15 | week-cluster t +0.25 (17 wks) | MDE(80%) 11.4pp | halves -1.33 / +1.68 | win 49%
+
+## PRIMARY: longs vs C2 at 20 sessions, date-cluster t +0.92 (bar 3.0 at look 1; both halves positive)
+## Features: his long picks vs the same-date precision tier (medians; descriptive; the pre-registered trigger t >= 2 was NOT met, shown for context only)
+  ADR %                              his picks median      6.5 (n 61) | precision tier median      4.7 (n 251)
+  off 52wk high %                    his picks median    -15.3 (n 57) | precision tier median      1.1 (n 251)
+  stack days                         his picks median      9.0 (n 61) | precision tier median     16.0 (n 251)
+  sessions in panel (IPO-age proxy)  his picks median   1373.0 (n 61) | precision tier median   1836.0 (n 251)
+  share of his long picks that were a house breakout that day: 0%; a precision-tier breakout: 0%
+## POST HOC overlap check (61 long picks in the panel): closed above the 15-day pivot 8%; traded above it intraday 10%; a house breakout within 3 sessions either side 2%; EMA stack >= 5 days 64%; median close +1.03 ADR above the 20 EMA
