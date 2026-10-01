@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """
 TIGHT-STOP SURVIVAL AT LUK-STYLE INTRADAY PULLBACK ENTRIES, WITH A MACRO GATE
-Pre-registered 2026-09-30, before any scoring. ⛔ NOT RUN -- waits for Gabe's go on where to run it (see RUN).
+Pre-registered 2026-09-30, before any scoring. ⛔ NOT RUN -- QUEUED by Gabe 2026-09-30 until he has done further
+disambiguation of the Luk trade log (data/martin_luk/trades/clarify_worklist.csv); where to run it is also his call
+(see RUN). The S3b stance weeks are to be RE-COUNTED from the log after that pass and before any scoring.
 Creator method -> DISCOVERY track (|t| >= 3).
 
 WHY. The goal (Gabe, 2026-09-30) is triple-digit returns in the style of Luk / Tito / Qullamaggie / Ariel. Two results
@@ -90,4 +92,4 @@ RUN  Not a small panel: 37,245 parquet chunks, 11.3 GB in S3 (0.8 s per chunk me
 import sys
 
 if __name__ == "__main__":
-    sys.exit("pre-registered 2026-09-30; not run. See the docstring (RUN).")
+    sys.exit("pre-registered 2026-09-30; queued until the Luk worklist disambiguation is further along. See the docstring.")
