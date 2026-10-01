@@ -1,0 +1,19 @@
+{
+  "video_id": "yY6yFyy9CPc",
+  "url": "https://www.youtube.com/watch?v=yY6yFyy9CPc",
+  "title": "10/27/2025 Daily Recap: Mag 7 lead",
+  "channel": "Ariel Hernandez",
+  "channel_id": "UCn8hF9X6MGDtbTBb6w3JUYA",
+  "stream_date": "2025-10-27",
+  "duration": "13:33",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en-orig",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

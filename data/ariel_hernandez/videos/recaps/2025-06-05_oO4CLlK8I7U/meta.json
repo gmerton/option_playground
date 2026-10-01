@@ -1,0 +1,19 @@
+{
+  "video_id": "oO4CLlK8I7U",
+  "url": "https://www.youtube.com/watch?v=oO4CLlK8I7U",
+  "title": "Scanning for group strength!",
+  "channel": "Ariel Hernandez",
+  "channel_id": "UCn8hF9X6MGDtbTBb6w3JUYA",
+  "stream_date": "2025-06-05",
+  "duration": "7:42",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en-orig",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

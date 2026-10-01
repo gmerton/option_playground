@@ -1,0 +1,19 @@
+{
+  "video_id": "3ZM0EIUmSfI",
+  "url": "https://www.youtube.com/watch?v=3ZM0EIUmSfI",
+  "title": "6/3/2025 Premarket Prep. Special Guest",
+  "channel": "Ariel Hernandez",
+  "channel_id": "UCn8hF9X6MGDtbTBb6w3JUYA",
+  "stream_date": "2025-06-03",
+  "duration": "48:43",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en-orig",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

@@ -1,0 +1,19 @@
+{
+  "video_id": "Js5NQqp3Q-k",
+  "url": "https://www.youtube.com/watch?v=Js5NQqp3Q-k",
+  "title": "10/20/2025 Daily Recap: Tug-O-War",
+  "channel": "Ariel Hernandez",
+  "channel_id": "UCn8hF9X6MGDtbTBb6w3JUYA",
+  "stream_date": "2025-10-20",
+  "duration": "18:23",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en-orig",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

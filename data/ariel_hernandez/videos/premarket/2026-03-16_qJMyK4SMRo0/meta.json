@@ -1,0 +1,19 @@
+{
+  "video_id": "qJMyK4SMRo0",
+  "url": "https://www.youtube.com/watch?v=qJMyK4SMRo0",
+  "title": "3/16/2026 Premarket Prep",
+  "channel": "Ariel Hernandez",
+  "channel_id": "UCn8hF9X6MGDtbTBb6w3JUYA",
+  "stream_date": "2026-03-16",
+  "duration": "45:36",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en-orig",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

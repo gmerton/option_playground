@@ -4,21 +4,48 @@
 
 Two checks per video. **Ambiguous tickers**: spots where the auto-caption garbled a symbol — click the timestamp, check the chart, confirm the ticker. **Trades**: each trade with the day it was placed; ⬜ marks rows that need a glance — an unresolved ticker (`?`), an unresolved fill date, or a date *inferred* to a different day than the stream (e.g. he said "Thursday"). Rows with no ⬜ are same-session or he stated the date.
 
-**47** ticker flags · **223** trades to date-check · across **50** videos. Conf: 🟡 likely · ❓ unsure.
+**133** ticker flags · **511** trades to date-check · across **100** videos. Conf: 🟡 likely · ❓ unsure.
 
 ## Index — ticker flags by video
 
+- [2026-05-06 — Bears on strike!](#2026-05-06-bears-on-strike) · 6
 - [2026-09-04 — Q2 Recap](#2026-09-04-q2-recap) · 5
 - [2026-08-17 — A sleepy day](#2026-08-17-a-sleepy-day) · 4
+- [2026-06-01 — A fully stretched rubber band!](#2026-06-01-a-fully-stretched-rubber-band) · 4
+- [2026-05-15 — Bulls ready for the Hamptons?](#2026-05-15-bulls-ready-for-the-hamptons) · 4
+- [2026-04-17 — 4/17 stream](#2026-04-17-4-17-stream) · 4
+- [2026-04-02 — March Recap: $1,031,358.14](#2026-04-02-march-recap-1-031-358-14) · 4
+- [2026-04-01 — Bulls get the day 2 rally!](#2026-04-01-bulls-get-the-day-2-rally) · 4
 - [2026-08-18 — AI trade on its last leg?](#2026-08-18-ai-trade-on-its-last-leg) · 3
 - [2026-07-28 — Snapback incoming?](#2026-07-28-snapback-incoming) · 3
 - [2026-07-27 — Rotation out of AI](#2026-07-27-rotation-out-of-ai) · 3
+- [2026-06-09 — More Wide and More Loose!](#2026-06-09-more-wide-and-more-loose) · 3
+- [2026-06-05 — One ugly day or something more?](#2026-06-05-one-ugly-day-or-something-more) · 3
+- [2026-05-29 — Software takes over!](#2026-05-29-software-takes-over) · 3
+- [2026-05-13 — Bulls land on Mars!](#2026-05-13-bulls-land-on-mars) · 3
+- [2026-05-04 — Software starting to lead?](#2026-05-04-software-starting-to-lead) · 3
+- [2026-04-30 — A month to remember!](#2026-04-30-a-month-to-remember) · 3
+- [2026-04-16 — Melt up, but keep your head on a swivel!](#2026-04-16-melt-up-but-keep-your-head-on-a-swivel) · 3
 - [2026-09-22 — Nasdaq new all time highs! Let the Bull resume!](#2026-09-22-nasdaq-new-all-time-highs-let-the-bull-resume) · 2
 - [2026-09-08 — Heavy weights vs the equal weight](#2026-09-08-heavy-weights-vs-the-equal-weight) · 2
 - [2026-08-31 — End of month window dressing](#2026-08-31-end-of-month-window-dressing) · 2
 - [2026-08-13 — Software dominates the tape](#2026-08-13-software-dominates-the-tape) · 2
 - [2026-08-10 — Jensen the FURU](#2026-08-10-jensen-the-furu) · 2
 - [2026-07-23 — Not so Magnificent 7](#2026-07-23-not-so-magnificent-7) · 2
+- [2026-06-23 — Memory names developing amnesia?](#2026-06-23-memory-names-developing-amnesia) · 2
+- [2026-06-10 — Distribution days adding up!](#2026-06-10-distribution-days-adding-up) · 2
+- [2026-06-04 — Watchlist video for Friday. Gravity taking over!](#2026-06-04-watchlist-video-for-friday-gravity-taking-over) · 2
+- [2026-05-28 — When drones fly!](#2026-05-28-when-drones-fly) · 2
+- [2026-05-27 — Up in the neoCLOUDS](#2026-05-27-up-in-the-neoclouds) · 2
+- [2026-05-26 — A memorable rally!](#2026-05-26-a-memorable-rally) · 2
+- [2026-05-19 — We now have a line in the sand. What's next?](#2026-05-19-we-now-have-a-line-in-the-sand-what-s-next) · 2
+- [2026-05-14 — Hindenburg Omen strikes again](#2026-05-14-hindenburg-omen-strikes-again) · 2
+- [2026-05-07 — The start of some digestion?](#2026-05-07-the-start-of-some-digestion) · 2
+- [2026-05-05 — All hail AMD](#2026-05-05-all-hail-amd) · 2
+- [2026-04-27 — All roads lead to NVDA!](#2026-04-27-all-roads-lead-to-nvda) · 2
+- [2026-04-14 — Runaway train!](#2026-04-14-runaway-train) · 2
+- [2026-04-07 — Bulls are waking up!](#2026-04-07-bulls-are-waking-up) · 2
+- [2026-04-06 — A total sleeper... Zzzzzzz](#2026-04-06-a-total-sleeper-zzzzzzz) · 2
 - [2026-09-25 — A look ahead to next week: A tale of two markets](#2026-09-25-a-look-ahead-to-next-week-a-tale-of-two-markets) · 1
 - [2026-09-24 — The market message: Focus on the leaders!](#2026-09-24-the-market-message-focus-on-the-leaders) · 1
 - [2026-09-17 — Do bulls have a second wind?](#2026-09-17-do-bulls-have-a-second-wind) · 1
@@ -36,6 +63,17 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 - [2026-07-07 — Biotechs getting stretched!](#2026-07-07-biotechs-getting-stretched) · 1
 - [2026-07-06 — Out of memory!](#2026-07-06-out-of-memory) · 1
 - [2026-06-30 — Semis continue to lead! What's Next!?](#2026-06-30-semis-continue-to-lead-what-s-next) · 1
+- [2026-06-02 — Parabolic shorts coming soon!](#2026-06-02-parabolic-shorts-coming-soon) · 1
+- [2026-05-18 — Ordinary pullback or something more?](#2026-05-18-ordinary-pullback-or-something-more) · 1
+- [2026-05-11 — Bears ready to fight back?](#2026-05-11-bears-ready-to-fight-back) · 1
+- [2026-05-01 — $QQQ historically extended! Now what?](#2026-05-01-qqq-historically-extended-now-what) · 1
+- [2026-04-29 — Magnificent 7 keep winning!](#2026-04-29-magnificent-7-keep-winning) · 1
+- [2026-04-23 — Market is semi vertical!](#2026-04-23-market-is-semi-vertical) · 1
+- [2026-04-22 — CAR crash today!](#2026-04-22-car-crash-today) · 1
+- [2026-04-20 — Relentless bulls, what's next!?](#2026-04-20-relentless-bulls-what-s-next) · 1
+- [2026-04-15 — All time highs!!](#2026-04-15-all-time-highs) · 1
+- [2026-04-09 — Bulls get continuation!](#2026-04-09-bulls-get-continuation) · 1
+- [2026-04-03 — MA-Rejection](#2026-04-03-ma-rejection) · 1
 
 
 ## 2026-09-30 — What is keeping this market alive?
@@ -1120,4 +1158,1452 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | · | [03:23](https://www.youtube.com/watch?v=CuwOjSUiN9g&t=203s) | AXTI | short · hold | — | 2026-06-30 |
 | ⬜ | [13:25](https://www.youtube.com/watch?v=CuwOjSUiN9g&t=805s) | AMAT | long · entry | april 22nd | 2026-04-22 |
 | ⬜ | [13:25](https://www.youtube.com/watch?v=CuwOjSUiN9g&t=805s) | AMAT | long · stopped_out | — | _(unresolved)_ |
+
+
+## 2026-06-29 — Line in the Sand!
+
+[▶ watch](https://www.youtube.com/watch?v=vtsgdQ4BbxM) · `data/ariel_hernandez/videos/recaps/2026-06-29_vtsgdQ4BbxM` · 0 ticker flags · 5 trades
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [16:00](https://www.youtube.com/watch?v=vtsgdQ4BbxM&t=960s) | INTC | long · stopped_out | today | 2026-06-29 |
+| · | [12:56](https://www.youtube.com/watch?v=vtsgdQ4BbxM&t=776s) | INTC | long · reentry | today | 2026-06-29 |
+| · | [05:36](https://www.youtube.com/watch?v=vtsgdQ4BbxM&t=336s) | FTNT | long · hold | — | 2026-06-29 |
+| ⬜ | [15:20](https://www.youtube.com/watch?v=vtsgdQ4BbxM&t=920s) | DELL | long · exit | — | _(unresolved)_ |
+| ⬜ | [14:56](https://www.youtube.com/watch?v=vtsgdQ4BbxM&t=896s) | ARM | long · exit | — | _(unresolved)_ |
+
+
+## 2026-06-26 — Bulls Get Rotation!
+
+[▶ watch](https://www.youtube.com/watch?v=gyvRqenP0Qo) · `data/ariel_hernandez/videos/recaps/2026-06-28_gyvRqenP0Qo` · 0 ticker flags · 3 trades
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [01:21](https://www.youtube.com/watch?v=gyvRqenP0Qo&t=81s) | AAOI | short · short | — | _(unresolved)_ |
+| · | [08:36](https://www.youtube.com/watch?v=gyvRqenP0Qo&t=516s) | AXTI | short · hold | — | 2026-06-26 |
+| · | [07:45](https://www.youtube.com/watch?v=gyvRqenP0Qo&t=465s) | FTNT | long · hold | — | 2026-06-26 |
+
+
+## 2026-06-23 — Memory names developing amnesia?
+
+[▶ watch](https://www.youtube.com/watch?v=XRafeQAofaI) · `data/ariel_hernandez/videos/recaps/2026-06-24_XRafeQAofaI` · 2 ticker flags · 8 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [02:54](https://www.youtube.com/watch?v=XRafeQAofaI&t=174s) | hot | 'I'm just not getting traction. Whether it's hot, whether it's trying Bloom Energy again' - a name he tried; Hut (HUT) is discussed later at 08:10. | HUT | ❓ |
+| ⬜ | [08:10](https://www.youtube.com/watch?v=XRafeQAofaI&t=490s) | Enphase | 'led uh by one of your Neo clouds, Enphase' - market commentary, no trade; caption rendering of NBIS. | NBIS | 🟡 |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [02:54](https://www.youtube.com/watch?v=XRafeQAofaI&t=174s) | ? | long · entry | — | _(unresolved)_ |
+| ⬜ | [02:54](https://www.youtube.com/watch?v=XRafeQAofaI&t=174s) | ? | long · exit | — | _(unresolved)_ |
+| ⬜ | [02:54](https://www.youtube.com/watch?v=XRafeQAofaI&t=174s) | BE | long · reentry | — | _(unresolved)_ |
+| ⬜ | [02:54](https://www.youtube.com/watch?v=XRafeQAofaI&t=174s) | BE | long · exit | — | _(unresolved)_ |
+| ⬜ | [03:04](https://www.youtube.com/watch?v=XRafeQAofaI&t=184s) | INTC | long · entry | recently | _(unresolved)_ |
+| · | [03:04](https://www.youtube.com/watch?v=XRafeQAofaI&t=184s) | INTC | long · stopped_out | today | 2026-06-23 |
+| ⬜ | [09:27](https://www.youtube.com/watch?v=XRafeQAofaI&t=567s) | DOCN | long · stopped_out | the 9th | 2026-06-09 |
+| · | [13:00](https://www.youtube.com/watch?v=XRafeQAofaI&t=780s) | AXTI | short · hold | — | 2026-06-23 |
+
+
+## 2026-06-22 — Mag 7 or Lag 7?
+
+[▶ watch](https://www.youtube.com/watch?v=_Rxz_OLeGVc) · `data/ariel_hernandez/videos/recaps/2026-06-23__Rxz_OLeGVc` · 0 ticker flags · 7 trades
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [06:40](https://www.youtube.com/watch?v=_Rxz_OLeGVc&t=400s) | DDOG | long · entry | today | 2026-06-22 |
+| · | [06:40](https://www.youtube.com/watch?v=_Rxz_OLeGVc&t=400s) | DDOG | long · stopped_out | today | 2026-06-22 |
+| · | [06:50](https://www.youtube.com/watch?v=_Rxz_OLeGVc&t=410s) | HUT | long · entry | today | 2026-06-22 |
+| · | [06:50](https://www.youtube.com/watch?v=_Rxz_OLeGVc&t=410s) | HUT | long · stopped_out | today | 2026-06-22 |
+| ⬜ | [07:20](https://www.youtube.com/watch?v=_Rxz_OLeGVc&t=440s) | AMZN | long · entry | a couple of days ago | _(unresolved)_ |
+| · | [07:31](https://www.youtube.com/watch?v=_Rxz_OLeGVc&t=451s) | AMZN | long · stopped_out | today | 2026-06-22 |
+| ⬜ | [07:31](https://www.youtube.com/watch?v=_Rxz_OLeGVc&t=451s) | INTC | long · entry | on thursday | 2026-06-18 |
+
+
+## 2026-06-17 — What a Warsh out!
+
+[▶ watch](https://www.youtube.com/watch?v=mFiJ8DZxdCQ) · `data/ariel_hernandez/videos/recaps/2026-06-18_mFiJ8DZxdCQ` · 0 ticker flags · 2 trades
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [12:28](https://www.youtube.com/watch?v=mFiJ8DZxdCQ&t=748s) | RKLB | long · entry | today | 2026-06-17 |
+| · | [12:28](https://www.youtube.com/watch?v=mFiJ8DZxdCQ&t=748s) | AMZN | long · hold | — | 2026-06-17 |
+
+
+## 2026-06-16 — Chop and Digestion
+
+[▶ watch](https://www.youtube.com/watch?v=OaNPWBDg7bg) · `data/ariel_hernandez/videos/recaps/2026-06-17_OaNPWBDg7bg` · 0 ticker flags · 7 trades
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [01:05](https://www.youtube.com/watch?v=OaNPWBDg7bg&t=65s) | WDC | short · short | today | 2026-06-16 |
+| · | [02:09](https://www.youtube.com/watch?v=OaNPWBDg7bg&t=129s) | RKLB | long · entry | today | 2026-06-16 |
+| · | [02:09](https://www.youtube.com/watch?v=OaNPWBDg7bg&t=129s) | RKLB | long · exit | today | 2026-06-16 |
+| · | [02:32](https://www.youtube.com/watch?v=OaNPWBDg7bg&t=152s) | DDOG | long · entry | today | 2026-06-16 |
+| · | [02:56](https://www.youtube.com/watch?v=OaNPWBDg7bg&t=176s) | DDOG | long · trim | today | 2026-06-16 |
+| · | [02:56](https://www.youtube.com/watch?v=OaNPWBDg7bg&t=176s) | DDOG | long · exit | at the end of the day | 2026-06-16 |
+| ⬜ | [08:39](https://www.youtube.com/watch?v=OaNPWBDg7bg&t=519s) | AMZN | long · entry | friday | 2026-06-12 |
+
+
+## 2026-06-15 — Semiconductor Summer!
+
+[▶ watch](https://www.youtube.com/watch?v=szQWxu6w4xo) · `data/ariel_hernandez/videos/recaps/2026-06-16_szQWxu6w4xo` · 0 ticker flags · 3 trades
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [04:28](https://www.youtube.com/watch?v=szQWxu6w4xo&t=268s) | AMZN | long · entry | friday | 2026-06-12 |
+| ⬜ | [04:40](https://www.youtube.com/watch?v=szQWxu6w4xo&t=280s) | RKLB | long · entry | friday | 2026-06-12 |
+| ⬜ | [04:52](https://www.youtube.com/watch?v=szQWxu6w4xo&t=292s) | RKLB | long · exit | friday | 2026-06-12 |
+
+
+## 2026-06-10 — Distribution days adding up!
+
+[▶ watch](https://www.youtube.com/watch?v=cw2HBEarEJk) · `data/ariel_hernandez/videos/recaps/2026-06-11_cw2HBEarEJk` · 2 ticker flags · 5 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [11:19](https://www.youtube.com/watch?v=cw2HBEarEJk&t=679s) | LIT | 'I'm short LIT. I'm short XTI. I'm short stocks' | LITE | 🟡 |
+| ⬜ | [11:19](https://www.youtube.com/watch?v=cw2HBEarEJk&t=679s) | XTI | 'I'm short LIT. I'm short XTI. I'm short stocks' | AXTI | 🟡 |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [05:49](https://www.youtube.com/watch?v=cw2HBEarEJk&t=349s) | ARM | long · exit | — | _(unresolved)_ |
+| · | [10:50](https://www.youtube.com/watch?v=cw2HBEarEJk&t=650s) | IGV | long · hold | — | 2026-06-10 |
+| · | [11:09](https://www.youtube.com/watch?v=cw2HBEarEJk&t=669s) | QQQ | short · hold | — | 2026-06-10 |
+| ⬜ | [11:19](https://www.youtube.com/watch?v=cw2HBEarEJk&t=679s) | ? | short · hold | — | 2026-06-10 |
+| ⬜ | [11:19](https://www.youtube.com/watch?v=cw2HBEarEJk&t=679s) | ? | short · hold | — | 2026-06-10 |
+
+
+## 2026-06-09 — More Wide and More Loose!
+
+[▶ watch](https://www.youtube.com/watch?v=I_aQ87JCMaU) · `data/ariel_hernandez/videos/recaps/2026-06-10_I_aQ87JCMaU` · 3 ticker flags · 13 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [01:08](https://www.youtube.com/watch?v=I_aQ87JCMaU&t=68s) | DocuSign / Doc | 'I had some DocuSign ... when you took out that 160 level, for me that was it'; later 'gotten rid of Doc and', 'Damn Doc and'. Could be DOCU as captioned or DOCN heard as 'Doc-N'. | DOCN | ❓ |
+| ⬜ | [09:53](https://www.youtube.com/watch?v=I_aQ87JCMaU&t=593s) | XTI ... and then AL | 'getting myself short on a couple things, in particular the Optics, XTI, um LITE, and then AL' = AXTI, LITE, AAOI | AXTI / AAOI | 🟡 |
+| ⬜ | [02:26](https://www.youtube.com/watch?v=I_aQ87JCMaU&t=146s) | this 106, 107 level | AAOI pre-market level, then 'cover my shares uh at 206 bucks'; 106/107 is probably 206/207 | AAOI | 🟡 |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [00:56](https://www.youtube.com/watch?v=I_aQ87JCMaU&t=56s) | NBIS | long · exit | today | 2026-06-09 |
+| ⬜ | [01:08](https://www.youtube.com/watch?v=I_aQ87JCMaU&t=68s) | ? | long · exit | today | 2026-06-09 |
+| · | [01:27](https://www.youtube.com/watch?v=I_aQ87JCMaU&t=87s) | MU | long · exit | today | 2026-06-09 |
+| · | [01:58](https://www.youtube.com/watch?v=I_aQ87JCMaU&t=118s) | BE | long · entry | today | 2026-06-09 |
+| ⬜ | [01:58](https://www.youtube.com/watch?v=I_aQ87JCMaU&t=118s) | AAOI | short · short | a few days ago | _(unresolved)_ |
+| ⬜ | [02:11](https://www.youtube.com/watch?v=I_aQ87JCMaU&t=131s) | AAOI | short · cover | on friday | 2026-06-05 |
+| · | [02:26](https://www.youtube.com/watch?v=I_aQ87JCMaU&t=146s) | AAOI | short · cover | today | 2026-06-09 |
+| · | [02:56](https://www.youtube.com/watch?v=I_aQ87JCMaU&t=176s) | LITE | short · cover | today | 2026-06-09 |
+| · | [03:20](https://www.youtube.com/watch?v=I_aQ87JCMaU&t=200s) | AXTI | short · cover | today | 2026-06-09 |
+| · | [03:20](https://www.youtube.com/watch?v=I_aQ87JCMaU&t=200s) | QQQ | short · trim | today | 2026-06-09 |
+| · | [04:02](https://www.youtube.com/watch?v=I_aQ87JCMaU&t=242s) | IGV | long · hold | — | 2026-06-09 |
+| ⬜ | [04:50](https://www.youtube.com/watch?v=I_aQ87JCMaU&t=290s) | ARM | long · exit | on friday | 2026-06-05 |
+| ⬜ | [05:16](https://www.youtube.com/watch?v=I_aQ87JCMaU&t=316s) | DELL | long · exit | — | _(unresolved)_ |
+
+
+## 2026-06-08 — Wide and Loose = time to be patient
+
+[▶ watch](https://www.youtube.com/watch?v=qOqhwkFP3k8) · `data/ariel_hernandez/videos/recaps/2026-06-08_qOqhwkFP3k8` · 0 ticker flags · 1 trades
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [04:29](https://www.youtube.com/watch?v=qOqhwkFP3k8&t=269s) | NBIS | long · hold | — | 2026-06-08 |
+
+
+## 2026-06-05 — One ugly day or something more?
+
+[▶ watch](https://www.youtube.com/watch?v=8auHYqihoaI) · `data/ariel_hernandez/videos/recaps/2026-06-07_8auHYqihoaI` · 3 ticker flags · 18 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [18:10](https://www.youtube.com/watch?v=8auHYqihoaI&t=1090s) | DocuSign | position he trims; caption may be mis-hearing DOCN (DigitalOcean) | DOCU | ❓ |
+| ⬜ | [04:04](https://www.youtube.com/watch?v=8auHYqihoaI&t=244s) | AOI / AEOI | optics name shorted at 205 against its highs | AAOI | 🟡 |
+| ⬜ | [03:55](https://www.youtube.com/watch?v=8auHYqihoaI&t=235s) | AXTI / XTI | existing short that has been working | AXTI | 🟡 |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [01:26](https://www.youtube.com/watch?v=8auHYqihoaI&t=86s) | IGV | long · hold | — | 2026-06-05 |
+| ⬜ | [03:34](https://www.youtube.com/watch?v=8auHYqihoaI&t=214s) | TSLA | long · entry | — | _(unresolved)_ |
+| ⬜ | [03:45](https://www.youtube.com/watch?v=8auHYqihoaI&t=225s) | TSLA | long · trim | thursday | 2026-06-04 |
+| ⬜ | [03:45](https://www.youtube.com/watch?v=8auHYqihoaI&t=225s) | TSLA | long · exit | friday | 2026-05-29 |
+| · | [13:23](https://www.youtube.com/watch?v=8auHYqihoaI&t=803s) | QQQ | short · hold | — | 2026-06-05 |
+| · | [13:23](https://www.youtube.com/watch?v=8auHYqihoaI&t=803s) | AXTI | short · hold | — | 2026-06-05 |
+| ⬜ | [04:04](https://www.youtube.com/watch?v=8auHYqihoaI&t=244s) | AAOI | short · short | thursday | 2026-06-04 |
+| ⬜ | [04:16](https://www.youtube.com/watch?v=8auHYqihoaI&t=256s) | AAOI | short · cover | thursday | 2026-06-04 |
+| ⬜ | [13:14](https://www.youtube.com/watch?v=8auHYqihoaI&t=794s) | AAOI | short · short | friday | 2026-05-29 |
+| · | [05:01](https://www.youtube.com/watch?v=8auHYqihoaI&t=301s) | AAOI | short · cover | today | 2026-06-05 |
+| ⬜ | [13:14](https://www.youtube.com/watch?v=8auHYqihoaI&t=794s) | CRDO | short · short | friday | 2026-05-29 |
+| · | [18:10](https://www.youtube.com/watch?v=8auHYqihoaI&t=1090s) | CRDO | short · cover | today | 2026-06-05 |
+| ⬜ | [06:01](https://www.youtube.com/watch?v=8auHYqihoaI&t=361s) | SNDK | long · entry | the 19th | 2026-05-19 |
+| ⬜ | [17:26](https://www.youtube.com/watch?v=8auHYqihoaI&t=1046s) | SNDK | long · exit | friday | 2026-05-29 |
+| · | [17:38](https://www.youtube.com/watch?v=8auHYqihoaI&t=1058s) | ARM | long · exit | today | 2026-06-05 |
+| · | [17:49](https://www.youtube.com/watch?v=8auHYqihoaI&t=1069s) | MU | long · hold | — | 2026-06-05 |
+| · | [18:10](https://www.youtube.com/watch?v=8auHYqihoaI&t=1090s) | NBIS | long · trim | today | 2026-06-05 |
+| · | [18:10](https://www.youtube.com/watch?v=8auHYqihoaI&t=1090s) | DOCU | long · trim | today | 2026-06-05 |
+
+
+## 2026-06-04 — Watchlist video for Friday. Gravity taking over!
+
+[▶ watch](https://www.youtube.com/watch?v=k4sBILZbNkQ) · `data/ariel_hernandez/videos/recaps/2026-06-05_k4sBILZbNkQ` · 2 ticker flags · 7 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [09:51](https://www.youtube.com/watch?v=k4sBILZbNkQ&t=591s) | Dockin | In his list of longs: 'ARM, Dockin, IGV, Micron, Enphase, Sandisk, and Tesla'. | DOCN | 🟡 |
+| ⬜ | [09:51](https://www.youtube.com/watch?v=k4sBILZbNkQ&t=591s) | Enphase | In his list of longs; ENPH as written or a mis-caption of NBIS. | NBIS | ❓ |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [09:31](https://www.youtube.com/watch?v=k4sBILZbNkQ&t=571s) | SNDK | long · hold | — | 2026-06-04 |
+| · | [09:31](https://www.youtube.com/watch?v=k4sBILZbNkQ&t=571s) | MU | long · hold | — | 2026-06-04 |
+| · | [09:51](https://www.youtube.com/watch?v=k4sBILZbNkQ&t=591s) | ARM | long · hold | — | 2026-06-04 |
+| ⬜ | [09:51](https://www.youtube.com/watch?v=k4sBILZbNkQ&t=591s) | ? | long · hold | — | 2026-06-04 |
+| · | [09:51](https://www.youtube.com/watch?v=k4sBILZbNkQ&t=591s) | IGV | long · hold | — | 2026-06-04 |
+| ⬜ | [09:51](https://www.youtube.com/watch?v=k4sBILZbNkQ&t=591s) | ? | long · hold | — | 2026-06-04 |
+| · | [10:02](https://www.youtube.com/watch?v=k4sBILZbNkQ&t=602s) | TSLA | long · trim | today | 2026-06-04 |
+
+
+## 2026-06-02 — Parabolic shorts coming soon!
+
+[▶ watch](https://www.youtube.com/watch?v=gMw4PSF5aTk) · `data/ariel_hernandez/videos/recaps/2026-06-03_gMw4PSF5aTk` · 1 ticker flags · 9 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [10:30](https://www.youtube.com/watch?v=gMw4PSF5aTk&t=630s) | DocuSign | 'I still own DocuSign ... Didn't really do anything wrong considering IGV closed down' | DOCU | ❓ |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [02:15](https://www.youtube.com/watch?v=gMw4PSF5aTk&t=135s) | ARM | long · trim | today | 2026-06-02 |
+| · | [10:30](https://www.youtube.com/watch?v=gMw4PSF5aTk&t=630s) | DOCU | long · hold | — | 2026-06-02 |
+| · | [10:40](https://www.youtube.com/watch?v=gMw4PSF5aTk&t=640s) | IGV | long · hold | — | 2026-06-02 |
+| · | [10:40](https://www.youtube.com/watch?v=gMw4PSF5aTk&t=640s) | MU | long · hold | — | 2026-06-02 |
+| · | [10:52](https://www.youtube.com/watch?v=gMw4PSF5aTk&t=652s) | ENPH | long · hold | — | 2026-06-02 |
+| · | [11:11](https://www.youtube.com/watch?v=gMw4PSF5aTk&t=671s) | SNDK | long · hold | — | 2026-06-02 |
+| · | [11:22](https://www.youtube.com/watch?v=gMw4PSF5aTk&t=682s) | NVDA | long · trim | today | 2026-06-02 |
+| · | [11:22](https://www.youtube.com/watch?v=gMw4PSF5aTk&t=682s) | QQQ | short · hold | — | 2026-06-02 |
+| · | [12:06](https://www.youtube.com/watch?v=gMw4PSF5aTk&t=726s) | TSLA | long · entry | today | 2026-06-02 |
+
+
+## 2026-06-01 — A fully stretched rubber band!
+
+[▶ watch](https://www.youtube.com/watch?v=M4xMDkvFE0A) · `data/ariel_hernandez/videos/recaps/2026-06-02_M4xMDkvFE0A` · 4 ticker flags · 10 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [01:07](https://www.youtube.com/watch?v=M4xMDkvFE0A&t=67s) | DocuSign | 'DocuSign is still a name that I've that I bought on the 16th of April'; later 'DOCK' and 'I've got DOCN' | DOCN | 🟡 |
+| ⬜ | [05:49](https://www.youtube.com/watch?v=M4xMDkvFE0A&t=349s) | DOCK | 'I buy DOCK on Friday' | DOCN | 🟡 |
+| ⬜ | [09:03](https://www.youtube.com/watch?v=M4xMDkvFE0A&t=543s) | NBIX | holdings list; NBIS trimmed earlier in the video | NBIS | 🟡 |
+| ⬜ | [12:52](https://www.youtube.com/watch?v=M4xMDkvFE0A&t=772s) | Enphase | 'my continued plan with names like ARM, names like Enphase'; not in the 'I've got' list | ENPH | ❓ |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [01:17](https://www.youtube.com/watch?v=M4xMDkvFE0A&t=77s) | DOCN | long · entry | the 16th of april | 2026-04-16 |
+| ⬜ | [05:49](https://www.youtube.com/watch?v=M4xMDkvFE0A&t=349s) | DOCN | long · add | friday | 2026-05-29 |
+| · | [03:58](https://www.youtube.com/watch?v=M4xMDkvFE0A&t=238s) | NBIS | long · trim | today | 2026-06-01 |
+| · | [04:18](https://www.youtube.com/watch?v=M4xMDkvFE0A&t=258s) | ARM | long · trim | today | 2026-06-01 |
+| ⬜ | [06:01](https://www.youtube.com/watch?v=M4xMDkvFE0A&t=361s) | NVDA | long · stopped_out | friday | 2026-05-29 |
+| · | [06:01](https://www.youtube.com/watch?v=M4xMDkvFE0A&t=361s) | NVDA | long · reentry | today | 2026-06-01 |
+| · | [09:03](https://www.youtube.com/watch?v=M4xMDkvFE0A&t=543s) | IGV | long · hold | — | 2026-06-01 |
+| · | [09:03](https://www.youtube.com/watch?v=M4xMDkvFE0A&t=543s) | MU | long · hold | — | 2026-06-01 |
+| · | [09:03](https://www.youtube.com/watch?v=M4xMDkvFE0A&t=543s) | SNDK | long · hold | — | 2026-06-01 |
+| · | [12:52](https://www.youtube.com/watch?v=M4xMDkvFE0A&t=772s) | ENPH | long · hold | — | 2026-06-01 |
+
+
+## 2026-05-29 — Software takes over!
+
+[▶ watch](https://www.youtube.com/watch?v=YJEgDo9bW_Y) · `data/ariel_hernandez/videos/recaps/2026-05-30_YJEgDo9bW_Y` · 3 ticker flags · 15 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [06:53](https://www.youtube.com/watch?v=YJEgDo9bW_Y&t=413s) | Light | 'I've tried to buy Light, I've tried to buy AOI. Those groups have not gotten any love as of late' | LITE | 🟡 |
+| ⬜ | [06:53](https://www.youtube.com/watch?v=YJEgDo9bW_Y&t=413s) | AOI | same sentence; no optics discussion elsewhere in this video | AAOI | 🟡 |
+| ⬜ | [07:50](https://www.youtube.com/watch?v=YJEgDo9bW_Y&t=470s) | Dock and | 'I do have Dock and which is just consolidating here ... get out over that 166 level' | DOCN | 🟡 |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [00:44](https://www.youtube.com/watch?v=YJEgDo9bW_Y&t=44s) | IGV | long · entry | the 13th of april | 2026-04-13 |
+| ⬜ | [02:17](https://www.youtube.com/watch?v=YJEgDo9bW_Y&t=137s) | NVDA | long · entry | thursday | 2026-05-28 |
+| ⬜ | [02:17](https://www.youtube.com/watch?v=YJEgDo9bW_Y&t=137s) | NVDA | long · add | friday | 2026-05-22 |
+| ⬜ | [07:17](https://www.youtube.com/watch?v=YJEgDo9bW_Y&t=437s) | NVDA | long · exit | — | _(unresolved)_ |
+| ⬜ | [06:53](https://www.youtube.com/watch?v=YJEgDo9bW_Y&t=413s) | LITE | long · entry | — | _(unresolved)_ |
+| ⬜ | [06:53](https://www.youtube.com/watch?v=YJEgDo9bW_Y&t=413s) | LITE | long · exit | — | _(unresolved)_ |
+| ⬜ | [07:06](https://www.youtube.com/watch?v=YJEgDo9bW_Y&t=426s) | AAOI | long · entry | a few days ago | _(unresolved)_ |
+| ⬜ | [07:06](https://www.youtube.com/watch?v=YJEgDo9bW_Y&t=426s) | AAOI | long · exit | a few days ago | _(unresolved)_ |
+| ⬜ | [07:06](https://www.youtube.com/watch?v=YJEgDo9bW_Y&t=426s) | AMZN | long · entry | — | _(unresolved)_ |
+| ⬜ | [07:06](https://www.youtube.com/watch?v=YJEgDo9bW_Y&t=426s) | AMZN | long · exit | — | _(unresolved)_ |
+| ⬜ | [07:40](https://www.youtube.com/watch?v=YJEgDo9bW_Y&t=460s) | DELL | long · exit | thursday afternoon | 2026-05-28 |
+| · | [07:50](https://www.youtube.com/watch?v=YJEgDo9bW_Y&t=470s) | ARM | long · hold | — | 2026-05-29 |
+| ⬜ | [07:50](https://www.youtube.com/watch?v=YJEgDo9bW_Y&t=470s) | DOCN | long · add | friday | 2026-05-22 |
+| · | [08:37](https://www.youtube.com/watch?v=YJEgDo9bW_Y&t=517s) | NBIS | long · hold | — | 2026-05-29 |
+| · | [08:37](https://www.youtube.com/watch?v=YJEgDo9bW_Y&t=517s) | SNDK | long · hold | — | 2026-05-29 |
+
+
+## 2026-05-28 — When drones fly!
+
+[▶ watch](https://www.youtube.com/watch?v=DS-jMphq8yc) · `data/ariel_hernandez/videos/recaps/2026-05-28_DS-jMphq8yc` · 2 ticker flags · 14 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [07:06](https://www.youtube.com/watch?v=DS-jMphq8yc&t=426s) | arc | 'I tried a little bit of arc, the market stopped me out. Like the market is just not even allowing you to short.' Just before, he discusses 'arc G' (genomics) and 'Cathy's ETF'. | ARKK | 🟡 |
+| ⬜ | [10:54](https://www.youtube.com/watch?v=DS-jMphq8yc&t=654s) | AOI | 'I took a loss the other day trying to get into AOI ... over two on these uh optics names'. | AAOI | 🟡 |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [03:37](https://www.youtube.com/watch?v=DS-jMphq8yc&t=217s) | DELL | long · trim | today | 2026-05-28 |
+| · | [01:13](https://www.youtube.com/watch?v=DS-jMphq8yc&t=73s) | NVDA | long · entry | today | 2026-05-28 |
+| ⬜ | [01:35](https://www.youtube.com/watch?v=DS-jMphq8yc&t=95s) | AMZN | long · entry | yesterday | 2026-05-27 |
+| · | [03:25](https://www.youtube.com/watch?v=DS-jMphq8yc&t=205s) | ARM | long · trim | today | 2026-05-28 |
+| ⬜ | [07:06](https://www.youtube.com/watch?v=DS-jMphq8yc&t=426s) | CRWD | short · short | — | _(unresolved)_ |
+| ⬜ | [07:06](https://www.youtube.com/watch?v=DS-jMphq8yc&t=426s) | CRWD | short · stopped_out | — | _(unresolved)_ |
+| ⬜ | [07:06](https://www.youtube.com/watch?v=DS-jMphq8yc&t=426s) | ? | short · short | — | _(unresolved)_ |
+| ⬜ | [07:06](https://www.youtube.com/watch?v=DS-jMphq8yc&t=426s) | ? | short · stopped_out | — | _(unresolved)_ |
+| · | [08:03](https://www.youtube.com/watch?v=DS-jMphq8yc&t=483s) | LITE | long · entry | today | 2026-05-28 |
+| · | [08:03](https://www.youtube.com/watch?v=DS-jMphq8yc&t=483s) | LITE | long · exit | today | 2026-05-28 |
+| ⬜ | [10:54](https://www.youtube.com/watch?v=DS-jMphq8yc&t=654s) | AAOI | long · entry | the other day | _(unresolved)_ |
+| ⬜ | [10:54](https://www.youtube.com/watch?v=DS-jMphq8yc&t=654s) | AAOI | long · exit | the other day | _(unresolved)_ |
+| · | [09:38](https://www.youtube.com/watch?v=DS-jMphq8yc&t=578s) | SNDK | long · hold | — | 2026-05-28 |
+| · | [10:24](https://www.youtube.com/watch?v=DS-jMphq8yc&t=624s) | NBIS | long · hold | — | 2026-05-28 |
+
+
+## 2026-05-27 — Up in the neoCLOUDS
+
+[▶ watch](https://www.youtube.com/watch?v=Mv9wuDDWbEc) · `data/ariel_hernandez/videos/recaps/2026-05-27_Mv9wuDDWbEc` · 2 ticker flags · 7 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [06:18](https://www.youtube.com/watch?v=Mv9wuDDWbEc&t=378s) | ARK | After praising ARKG: 'Cathie Wood might have picked herself a nice basket. With that said, I did get short some ARK ... if Tesla starts to pull, I would suspect that so would ARK' | ARKK | 🟡 |
+| ⬜ | [05:20](https://www.youtube.com/watch?v=Mv9wuDDWbEc&t=320s) | a 654 plus | 'I'm sitting on about a 654 plus um at the moment' on the CrowdStrike short - a number, unclear whether an average price or an open gain | ? | ❓ |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [00:23](https://www.youtube.com/watch?v=Mv9wuDDWbEc&t=23s) | ARM | long · hold | — | 2026-05-27 |
+| · | [02:24](https://www.youtube.com/watch?v=Mv9wuDDWbEc&t=144s) | SNDK | long · hold | — | 2026-05-27 |
+| · | [04:14](https://www.youtube.com/watch?v=Mv9wuDDWbEc&t=254s) | AMZN | long · entry | today | 2026-05-27 |
+| · | [05:20](https://www.youtube.com/watch?v=Mv9wuDDWbEc&t=320s) | CRWD | short · short | this morning | 2026-05-27 |
+| · | [06:18](https://www.youtube.com/watch?v=Mv9wuDDWbEc&t=378s) | ARKK | short · short | today | 2026-05-27 |
+| · | [11:34](https://www.youtube.com/watch?v=Mv9wuDDWbEc&t=694s) | NVDA | long · entry | today | 2026-05-27 |
+| · | [11:54](https://www.youtube.com/watch?v=Mv9wuDDWbEc&t=714s) | NVDA | long · exit | today | 2026-05-27 |
+
+
+## 2026-05-26 — A memorable rally!
+
+[▶ watch](https://www.youtube.com/watch?v=dupQE1J0MV0) · `data/ariel_hernandez/videos/recaps/2026-05-26_dupQE1J0MV0` · 2 ticker flags · 14 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [13:19](https://www.youtube.com/watch?v=dupQE1J0MV0&t=799s) | DocuSign | 'I've got Dell, I've got DocuSign, I've got IGV' - same video names DOCN at 05:36 | DOCU | ❓ |
+| ⬜ | [13:19](https://www.youtube.com/watch?v=dupQE1J0MV0&t=799s) | MBIS | 'I've got MU, I've got MBIS, I've got SNDK. Only MBIS finished down for me today' | NBIS | 🟡 |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [01:13](https://www.youtube.com/watch?v=dupQE1J0MV0&t=73s) | SNDK | long · hold | — | 2026-05-26 |
+| · | [01:26](https://www.youtube.com/watch?v=dupQE1J0MV0&t=86s) | DELL | long · trim | today | 2026-05-26 |
+| · | [02:47](https://www.youtube.com/watch?v=dupQE1J0MV0&t=167s) | AAOI | long · entry | today | 2026-05-26 |
+| · | [03:01](https://www.youtube.com/watch?v=dupQE1J0MV0&t=181s) | AAOI | long · stopped_out | today | 2026-05-26 |
+| · | [03:14](https://www.youtube.com/watch?v=dupQE1J0MV0&t=194s) | AAOI | long · reentry | today | 2026-05-26 |
+| · | [03:14](https://www.youtube.com/watch?v=dupQE1J0MV0&t=194s) | AAOI | long · stopped_out | today | 2026-05-26 |
+| ⬜ | [03:49](https://www.youtube.com/watch?v=dupQE1J0MV0&t=229s) | MU | long · entry | — | _(unresolved)_ |
+| · | [04:11](https://www.youtube.com/watch?v=dupQE1J0MV0&t=251s) | MU | long · trim | today | 2026-05-26 |
+| · | [12:13](https://www.youtube.com/watch?v=dupQE1J0MV0&t=733s) | GEV | long · entry | today | 2026-05-26 |
+| · | [12:13](https://www.youtube.com/watch?v=dupQE1J0MV0&t=733s) | GEV | long · exit | today | 2026-05-26 |
+| · | [13:19](https://www.youtube.com/watch?v=dupQE1J0MV0&t=799s) | ARM | long · hold | — | 2026-05-26 |
+| · | [13:19](https://www.youtube.com/watch?v=dupQE1J0MV0&t=799s) | DOCU | long · hold | — | 2026-05-26 |
+| · | [13:19](https://www.youtube.com/watch?v=dupQE1J0MV0&t=799s) | IGV | long · hold | — | 2026-05-26 |
+| · | [13:19](https://www.youtube.com/watch?v=dupQE1J0MV0&t=799s) | NBIS | long · hold | — | 2026-05-26 |
+
+
+## 2026-05-19 — We now have a line in the sand. What's next?
+
+[▶ watch](https://www.youtube.com/watch?v=Ckil0rOuMmU) · `data/ariel_hernandez/videos/recaps/2026-05-19_Ckil0rOuMmU` · 2 ticker flags · 8 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [07:14](https://www.youtube.com/watch?v=Ckil0rOuMmU&t=434s) | Enphase | 'I continue to own Enphase. I continue to own uh Micron.' No solar discussion in the video | ENPH as captioned, or NBIS misheard | ❓ |
+| ⬜ | [08:38](https://www.youtube.com/watch?v=Ckil0rOuMmU&t=518s) | DocuSign | 'software stocks like FROG ... And then you've got DocuSign, which is one that I own' | DOCU as captioned, or DOCN misheard | ❓ |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [01:15](https://www.youtube.com/watch?v=Ckil0rOuMmU&t=75s) | SNDK | long · entry | today | 2026-05-19 |
+| · | [01:25](https://www.youtube.com/watch?v=Ckil0rOuMmU&t=85s) | MU | long · hold | — | 2026-05-19 |
+| ⬜ | [07:14](https://www.youtube.com/watch?v=Ckil0rOuMmU&t=434s) | ? | long · hold | — | 2026-05-19 |
+| ⬜ | [09:18](https://www.youtube.com/watch?v=Ckil0rOuMmU&t=558s) | ARM | long · add | the other day on wednesday | 2026-05-13 |
+| ⬜ | [09:27](https://www.youtube.com/watch?v=Ckil0rOuMmU&t=567s) | ARM | long · stopped_out | friday | 2026-05-15 |
+| · | [07:14](https://www.youtube.com/watch?v=Ckil0rOuMmU&t=434s) | DELL | long · hold | — | 2026-05-19 |
+| ⬜ | [08:38](https://www.youtube.com/watch?v=Ckil0rOuMmU&t=518s) | ? | long · hold | — | 2026-05-19 |
+| · | [07:14](https://www.youtube.com/watch?v=Ckil0rOuMmU&t=434s) | IGV | long · hold | — | 2026-05-19 |
+
+
+## 2026-05-18 — Ordinary pullback or something more?
+
+[▶ watch](https://www.youtube.com/watch?v=eBMOyS1ghoM) · `data/ariel_hernandez/videos/recaps/2026-05-18_eBMOyS1ghoM` · 1 ticker flags · 13 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [10:46](https://www.youtube.com/watch?v=eBMOyS1ghoM&t=646s) | DocuSign | Holdings list: 'I've got Amazon, ARM, Dell, DocuSign, IGV, MU, NBIS, and an SQQQ long'. Earlier in the same video he says 'I look at DOCN. DOCN's pulling back for me', so 'DocuSign' here is probably DOCN. | DOCN | 🟡 |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [10:37](https://www.youtube.com/watch?v=eBMOyS1ghoM&t=637s) | MU | long · trim | today | 2026-05-18 |
+| · | [10:37](https://www.youtube.com/watch?v=eBMOyS1ghoM&t=637s) | NBIS | long · trim | today | 2026-05-18 |
+| · | [10:46](https://www.youtube.com/watch?v=eBMOyS1ghoM&t=646s) | QQQ | short · hold | — | 2026-05-18 |
+| · | [10:46](https://www.youtube.com/watch?v=eBMOyS1ghoM&t=646s) | AMZN | long · hold | — | 2026-05-18 |
+| · | [06:42](https://www.youtube.com/watch?v=eBMOyS1ghoM&t=402s) | DELL | long · hold | — | 2026-05-18 |
+| · | [06:30](https://www.youtube.com/watch?v=eBMOyS1ghoM&t=390s) | DOCN | long · hold | — | 2026-05-18 |
+| · | [10:46](https://www.youtube.com/watch?v=eBMOyS1ghoM&t=646s) | IGV | long · hold | — | 2026-05-18 |
+| ⬜ | [06:08](https://www.youtube.com/watch?v=eBMOyS1ghoM&t=368s) | ARM | long · add | wednesday | 2026-05-13 |
+| ⬜ | [06:08](https://www.youtube.com/watch?v=eBMOyS1ghoM&t=368s) | ARM | long · trim | last friday | 2026-05-15 |
+| ⬜ | [05:58](https://www.youtube.com/watch?v=eBMOyS1ghoM&t=358s) | BE | long · exit | friday | 2026-05-15 |
+| ⬜ | [06:08](https://www.youtube.com/watch?v=eBMOyS1ghoM&t=368s) | HUT | long · exit | friday | 2026-05-15 |
+| ⬜ | [08:24](https://www.youtube.com/watch?v=eBMOyS1ghoM&t=504s) | VLO | long · entry | back in february | _(unresolved)_ |
+| ⬜ | [08:13](https://www.youtube.com/watch?v=eBMOyS1ghoM&t=493s) | VLO | long · stopped_out | the 17th | _(unresolved)_ |
+
+
+## 2026-05-15 — Bulls ready for the Hamptons?
+
+[▶ watch](https://www.youtube.com/watch?v=6MMFX9Qv4PQ) · `data/ariel_hernandez/videos/recaps/2026-05-16_6MMFX9Qv4PQ` · 4 ticker flags · 14 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [03:24](https://www.youtube.com/watch?v=6MMFX9Qv4PQ&t=204s) | Cypher | 'I had some um Cypher. This one was cut for break even' | CIFR | 🟡 |
+| ⬜ | [09:30](https://www.youtube.com/watch?v=6MMFX9Qv4PQ&t=570s) | N Vis | 'the Amazon and the Micron and the N Vis and the Dock In' | NBIS | 🟡 |
+| ⬜ | [09:40](https://www.youtube.com/watch?v=6MMFX9Qv4PQ&t=580s) | Dock In | 'the Amazon and the Micron and the N Vis and the Dock In' | DOCN | 🟡 |
+| ⬜ | [01:05](https://www.youtube.com/watch?v=6MMFX9Qv4PQ&t=65s) | DocuSign | 'you're getting your DocuSign ... a handful of days later' (not logged as a row) | DOCN | 🟡 |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [00:54](https://www.youtube.com/watch?v=6MMFX9Qv4PQ&t=54s) | MU | long · entry | april 8th | _(unresolved)_ |
+| ⬜ | [00:54](https://www.youtube.com/watch?v=6MMFX9Qv4PQ&t=54s) | AMZN | long · entry | april 8th | _(unresolved)_ |
+| ⬜ | [00:54](https://www.youtube.com/watch?v=6MMFX9Qv4PQ&t=54s) | DELL | long · entry | on these lows | _(unresolved)_ |
+| ⬜ | [00:54](https://www.youtube.com/watch?v=6MMFX9Qv4PQ&t=54s) | QQQ | long · entry | on these lows | _(unresolved)_ |
+| ⬜ | [01:26](https://www.youtube.com/watch?v=6MMFX9Qv4PQ&t=86s) | MU | long · trim | — | _(unresolved)_ |
+| ⬜ | [03:12](https://www.youtube.com/watch?v=6MMFX9Qv4PQ&t=192s) | HUT | long · stopped_out | — | _(unresolved)_ |
+| ⬜ | [03:12](https://www.youtube.com/watch?v=6MMFX9Qv4PQ&t=192s) | BE | long · stopped_out | — | _(unresolved)_ |
+| ⬜ | [03:12](https://www.youtube.com/watch?v=6MMFX9Qv4PQ&t=192s) | CIFR | long · exit | — | _(unresolved)_ |
+| ⬜ | [03:24](https://www.youtube.com/watch?v=6MMFX9Qv4PQ&t=204s) | ARM | long · add | — | _(unresolved)_ |
+| ⬜ | [03:24](https://www.youtube.com/watch?v=6MMFX9Qv4PQ&t=204s) | ARM | long · trim | — | _(unresolved)_ |
+| ⬜ | [09:40](https://www.youtube.com/watch?v=6MMFX9Qv4PQ&t=580s) | QQQ | short · entry | friday | 2026-05-08 |
+| · | [09:30](https://www.youtube.com/watch?v=6MMFX9Qv4PQ&t=570s) | NBIS | long · hold | — | 2026-05-15 |
+| · | [09:30](https://www.youtube.com/watch?v=6MMFX9Qv4PQ&t=570s) | DOCN | long · hold | — | 2026-05-15 |
+| · | [11:39](https://www.youtube.com/watch?v=6MMFX9Qv4PQ&t=699s) | IGV | long · hold | — | 2026-05-15 |
+
+
+## 2026-05-14 — Hindenburg Omen strikes again
+
+[▶ watch](https://www.youtube.com/watch?v=d-hOKjsZbcE) · `data/ariel_hernandez/videos/recaps/2026-05-14_d-hOKjsZbcE` · 2 ticker flags · 17 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [06:10](https://www.youtube.com/watch?v=d-hOKjsZbcE&t=370s) | DocuSign | name in his position run-through; caption may be mis-hearing DOCN (DigitalOcean) | DOCU | ❓ |
+| ⬜ | [05:34](https://www.youtube.com/watch?v=d-hOKjsZbcE&t=334s) | Cypher / Cipher | bought alongside Hut with crypto miners moving | CIFR | 🟡 |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [01:43](https://www.youtube.com/watch?v=d-hOKjsZbcE&t=103s) | IGV | long · hold | — | 2026-05-14 |
+| · | [07:18](https://www.youtube.com/watch?v=d-hOKjsZbcE&t=438s) | CRCL | long · entry | today | 2026-05-14 |
+| · | [02:43](https://www.youtube.com/watch?v=d-hOKjsZbcE&t=163s) | CRCL | long · exit | today | 2026-05-14 |
+| ⬜ | [02:53](https://www.youtube.com/watch?v=d-hOKjsZbcE&t=173s) | PLTR | short · short | yesterday | 2026-05-13 |
+| · | [02:53](https://www.youtube.com/watch?v=d-hOKjsZbcE&t=173s) | PLTR | short · cover | today | 2026-05-14 |
+| · | [03:22](https://www.youtube.com/watch?v=d-hOKjsZbcE&t=202s) | BE | long · entry | today | 2026-05-14 |
+| · | [03:32](https://www.youtube.com/watch?v=d-hOKjsZbcE&t=212s) | HUT | long · entry | today | 2026-05-14 |
+| · | [03:42](https://www.youtube.com/watch?v=d-hOKjsZbcE&t=222s) | HUT | long · trim | today | 2026-05-14 |
+| ⬜ | [03:50](https://www.youtube.com/watch?v=d-hOKjsZbcE&t=230s) | ARM | long · add | yesterday | 2026-05-13 |
+| ⬜ | [05:34](https://www.youtube.com/watch?v=d-hOKjsZbcE&t=334s) | CIFR | long · entry | yesterday | 2026-05-13 |
+| · | [05:47](https://www.youtube.com/watch?v=d-hOKjsZbcE&t=347s) | AMZN | long · hold | — | 2026-05-14 |
+| · | [05:59](https://www.youtube.com/watch?v=d-hOKjsZbcE&t=359s) | DELL | long · hold | — | 2026-05-14 |
+| · | [06:10](https://www.youtube.com/watch?v=d-hOKjsZbcE&t=370s) | DOCU | long · hold | — | 2026-05-14 |
+| · | [06:30](https://www.youtube.com/watch?v=d-hOKjsZbcE&t=390s) | MU | long · hold | — | 2026-05-14 |
+| · | [06:30](https://www.youtube.com/watch?v=d-hOKjsZbcE&t=390s) | ENPH | long · hold | — | 2026-05-14 |
+| ⬜ | [10:46](https://www.youtube.com/watch?v=d-hOKjsZbcE&t=646s) | GLW | long · stopped_out | — | _(unresolved)_ |
+| ⬜ | [10:46](https://www.youtube.com/watch?v=d-hOKjsZbcE&t=646s) | NVDA | long · exit | — | _(unresolved)_ |
+
+
+## 2026-05-13 — Bulls land on Mars!
+
+[▶ watch](https://www.youtube.com/watch?v=Caax_GL0sVE) · `data/ariel_hernandez/videos/recaps/2026-05-13_Caax_GL0sVE` · 3 ticker flags · 8 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [07:23](https://www.youtube.com/watch?v=Caax_GL0sVE&t=443s) | Enphase | 'it's nice to see that these Neo clouds um on the back of Enphase, which is another one that I own, um gaps up on earnings' - a neo-cloud name is expected, Enphase is solar | NBIS | ❓ |
+| ⬜ | [00:20](https://www.youtube.com/watch?v=Caax_GL0sVE&t=20s) | Cypher | 'I did buy back some Cypher' | CIFR | 🟡 |
+| ⬜ | [00:28](https://www.youtube.com/watch?v=Caax_GL0sVE&t=28s) | AOLI | optics stock he credits; no trade stated | AAOI | 🟡 |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [00:11](https://www.youtube.com/watch?v=Caax_GL0sVE&t=11s) | HUT | long · entry | today | 2026-05-13 |
+| · | [05:37](https://www.youtube.com/watch?v=Caax_GL0sVE&t=337s) | HUT | long · exit | today | 2026-05-13 |
+| · | [00:20](https://www.youtube.com/watch?v=Caax_GL0sVE&t=20s) | CIFR | long · reentry | today | 2026-05-13 |
+| · | [02:29](https://www.youtube.com/watch?v=Caax_GL0sVE&t=149s) | ARM | long · add | today | 2026-05-13 |
+| · | [05:37](https://www.youtube.com/watch?v=Caax_GL0sVE&t=337s) | PLTR | short · short | today | 2026-05-13 |
+| ⬜ | [06:05](https://www.youtube.com/watch?v=Caax_GL0sVE&t=365s) | QQQ | short · entry | 2 days ago | _(unresolved)_ |
+| ⬜ | [06:25](https://www.youtube.com/watch?v=Caax_GL0sVE&t=385s) | QQQ | short · stopped_out | — | _(unresolved)_ |
+| ⬜ | [07:23](https://www.youtube.com/watch?v=Caax_GL0sVE&t=443s) | ? | long · hold | — | 2026-05-13 |
+
+
+## 2026-05-11 — Bears ready to fight back?
+
+[▶ watch](https://www.youtube.com/watch?v=BbEyIMwoYGc) · `data/ariel_hernandez/videos/recaps/2026-05-11_BbEyIMwoYGc` · 1 ticker flags · 2 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [11:21](https://www.youtube.com/watch?v=BbEyIMwoYGc&t=681s) | DocuSign | 'I look at my DocuSign ... this super powerful name, which I think can go a hell of a lot higher' | DOCU as captioned, or DOCN misheard | ❓ |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [00:32](https://www.youtube.com/watch?v=BbEyIMwoYGc&t=32s) | AMZN | long · hold | — | 2026-05-11 |
+| ⬜ | [11:21](https://www.youtube.com/watch?v=BbEyIMwoYGc&t=681s) | ? | long · hold | — | 2026-05-11 |
+
+
+## 2026-05-07 — The start of some digestion?
+
+[▶ watch](https://www.youtube.com/watch?v=ZTVkwDvTO0A) · `data/ariel_hernandez/videos/recaps/2026-05-08_ZTVkwDvTO0A` · 2 ticker flags · 16 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [04:52](https://www.youtube.com/watch?v=ZTVkwDvTO0A&t=292s) | DocuSign | Portfolio walk-through: 'NBIS trimmed it up a little, MU I just kept, IGV ..., DocuSign okay ... let it work'. DOCN is named separately at 11:28 as a recent earnings gapper; 'DocuSign' may be how the caption renders DOCN. | DOCN | ❓ |
+| ⬜ | [02:44](https://www.youtube.com/watch?v=ZTVkwDvTO0A&t=164s) | Cypher | 'Cypher, let me go ahead and peel some off into this ... it makes a push in after hours on the back of Iron's earnings' - crypto-miner context. | CIFR | 🟡 |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [00:13](https://www.youtube.com/watch?v=ZTVkwDvTO0A&t=13s) | AAOI | long · trim | — | _(unresolved)_ |
+| · | [00:28](https://www.youtube.com/watch?v=ZTVkwDvTO0A&t=28s) | AAOI | long · exit | today | 2026-05-07 |
+| · | [01:02](https://www.youtube.com/watch?v=ZTVkwDvTO0A&t=62s) | MP | long · exit | today | 2026-05-07 |
+| · | [01:22](https://www.youtube.com/watch?v=ZTVkwDvTO0A&t=82s) | CCJ | long · entry | today | 2026-05-07 |
+| · | [01:22](https://www.youtube.com/watch?v=ZTVkwDvTO0A&t=82s) | CCJ | long · stopped_out | today | 2026-05-07 |
+| ⬜ | [01:33](https://www.youtube.com/watch?v=ZTVkwDvTO0A&t=93s) | VICR | long · entry | yesterday | 2026-05-06 |
+| · | [01:33](https://www.youtube.com/watch?v=ZTVkwDvTO0A&t=93s) | VICR | long · stopped_out | today | 2026-05-07 |
+| · | [02:44](https://www.youtube.com/watch?v=ZTVkwDvTO0A&t=164s) | CIFR | long · trim | today | 2026-05-07 |
+| · | [03:15](https://www.youtube.com/watch?v=ZTVkwDvTO0A&t=195s) | QQQ | short · entry | today | 2026-05-07 |
+| · | [04:52](https://www.youtube.com/watch?v=ZTVkwDvTO0A&t=292s) | NBIS | long · trim | today | 2026-05-07 |
+| · | [04:52](https://www.youtube.com/watch?v=ZTVkwDvTO0A&t=292s) | MU | long · hold | — | 2026-05-07 |
+| · | [07:33](https://www.youtube.com/watch?v=ZTVkwDvTO0A&t=453s) | IGV | long · hold | — | 2026-05-07 |
+| ⬜ | [04:52](https://www.youtube.com/watch?v=ZTVkwDvTO0A&t=292s) | ? | long · hold | — | 2026-05-07 |
+| ⬜ | [07:02](https://www.youtube.com/watch?v=ZTVkwDvTO0A&t=422s) | DELL | long · trim | yesterday | 2026-05-06 |
+| · | [05:05](https://www.youtube.com/watch?v=ZTVkwDvTO0A&t=305s) | AXTI | short · short | today | 2026-05-07 |
+| ⬜ | [05:16](https://www.youtube.com/watch?v=ZTVkwDvTO0A&t=316s) | ARM | long · trim | yesterday | 2026-05-06 |
+
+
+## 2026-05-06 — Bears on strike!
+
+[▶ watch](https://www.youtube.com/watch?v=cD3NS2FQFmA) · `data/ariel_hernandez/videos/recaps/2026-05-06_cD3NS2FQFmA` · 6 ticker flags · 30 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [00:11](https://www.youtube.com/watch?v=cD3NS2FQFmA&t=11s) | FSLY | 'nice little gap up on um FSLY. I did literally take some off at uh 268'; not in his holdings list, and 'FSCLY' at 06:25 is an earnings failure | ? | ❓ |
+| ⬜ | [00:37](https://www.youtube.com/watch?v=cD3NS2FQFmA&t=37s) | AOI | optics name with earnings tomorrow; 'I have AOI' in holdings list | AAOI | 🟡 |
+| ⬜ | [00:58](https://www.youtube.com/watch?v=cD3NS2FQFmA&t=58s) | SQQ | 'I was in an SQQ long ... got hit in the gap down' | SQQQ | 🟡 |
+| ⬜ | [01:54](https://www.youtube.com/watch?v=cD3NS2FQFmA&t=114s) | Cypher | 'Cypher I still have' | CIFR | 🟡 |
+| ⬜ | [02:47](https://www.youtube.com/watch?v=cD3NS2FQFmA&t=167s) | MBI S | 'MBI S I trimmed off' | NBIS | 🟡 |
+| ⬜ | [09:41](https://www.youtube.com/watch?v=cD3NS2FQFmA&t=581s) | DocuSign | holdings list in the slot where DOCN was discussed | DOCN | 🟡 |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [00:11](https://www.youtube.com/watch?v=cD3NS2FQFmA&t=11s) | ? | long · trim | today | 2026-05-06 |
+| · | [00:23](https://www.youtube.com/watch?v=cD3NS2FQFmA&t=23s) | NBIS | long · trim | today | 2026-05-06 |
+| · | [00:23](https://www.youtube.com/watch?v=cD3NS2FQFmA&t=23s) | DELL | long · trim | today | 2026-05-06 |
+| · | [00:23](https://www.youtube.com/watch?v=cD3NS2FQFmA&t=23s) | LITE | long · stopped_out | today | 2026-05-06 |
+| · | [00:37](https://www.youtube.com/watch?v=cD3NS2FQFmA&t=37s) | AAOI | long · trim | today | 2026-05-06 |
+| ⬜ | [00:58](https://www.youtube.com/watch?v=cD3NS2FQFmA&t=58s) | QQQ | short · entry | yesterday | 2026-05-05 |
+| · | [01:08](https://www.youtube.com/watch?v=cD3NS2FQFmA&t=68s) | QQQ | short · exit | today | 2026-05-06 |
+| · | [01:08](https://www.youtube.com/watch?v=cD3NS2FQFmA&t=68s) | AXTI | short · short | today | 2026-05-06 |
+| · | [01:20](https://www.youtube.com/watch?v=cD3NS2FQFmA&t=80s) | AXTI | short · cover | today | 2026-05-06 |
+| · | [11:35](https://www.youtube.com/watch?v=cD3NS2FQFmA&t=695s) | VICR | long · entry | today | 2026-05-06 |
+| · | [02:47](https://www.youtube.com/watch?v=cD3NS2FQFmA&t=167s) | VICR | long · trim | today | 2026-05-06 |
+| · | [01:54](https://www.youtube.com/watch?v=cD3NS2FQFmA&t=114s) | ARM | long · trim | today | 2026-05-06 |
+| · | [01:54](https://www.youtube.com/watch?v=cD3NS2FQFmA&t=114s) | CIFR | long · hold | — | 2026-05-06 |
+| · | [02:05](https://www.youtube.com/watch?v=cD3NS2FQFmA&t=125s) | DOCN | long · trim | today | 2026-05-06 |
+| · | [02:36](https://www.youtube.com/watch?v=cD3NS2FQFmA&t=156s) | MP | long · hold | — | 2026-05-06 |
+| ⬜ | [02:36](https://www.youtube.com/watch?v=cD3NS2FQFmA&t=156s) | MU | long · trim | yesterday | 2026-05-05 |
+| · | [02:36](https://www.youtube.com/watch?v=cD3NS2FQFmA&t=156s) | MU | long · trim | today | 2026-05-06 |
+| ⬜ | [02:57](https://www.youtube.com/watch?v=cD3NS2FQFmA&t=177s) | CRWV | long · exit | — | _(unresolved)_ |
+| ⬜ | [08:11](https://www.youtube.com/watch?v=cD3NS2FQFmA&t=491s) | NVDA | long · entry | the 10th | 2026-04-10 |
+| ⬜ | [08:11](https://www.youtube.com/watch?v=cD3NS2FQFmA&t=491s) | NVDA | long · exit | — | _(unresolved)_ |
+| ⬜ | [08:20](https://www.youtube.com/watch?v=cD3NS2FQFmA&t=500s) | GLW | long · entry | — | _(unresolved)_ |
+| ⬜ | [08:32](https://www.youtube.com/watch?v=cD3NS2FQFmA&t=512s) | GLW | long · stopped_out | — | _(unresolved)_ |
+| ⬜ | [10:04](https://www.youtube.com/watch?v=cD3NS2FQFmA&t=604s) | GEV | long · entry | yesterday | 2026-05-05 |
+| ⬜ | [10:25](https://www.youtube.com/watch?v=cD3NS2FQFmA&t=625s) | GEV | long · exit | yesterday | 2026-05-05 |
+| ⬜ | [09:53](https://www.youtube.com/watch?v=cD3NS2FQFmA&t=593s) | RKLB | long · entry | — | _(unresolved)_ |
+| ⬜ | [01:43](https://www.youtube.com/watch?v=cD3NS2FQFmA&t=103s) | RKLB | long · exit | — | _(unresolved)_ |
+| ⬜ | [09:53](https://www.youtube.com/watch?v=cD3NS2FQFmA&t=593s) | PL | long · entry | — | _(unresolved)_ |
+| ⬜ | [09:53](https://www.youtube.com/watch?v=cD3NS2FQFmA&t=593s) | PL | long · exit | — | _(unresolved)_ |
+| · | [01:54](https://www.youtube.com/watch?v=cD3NS2FQFmA&t=114s) | AMZN | long · hold | — | 2026-05-06 |
+| · | [09:41](https://www.youtube.com/watch?v=cD3NS2FQFmA&t=581s) | IGV | long · hold | — | 2026-05-06 |
+
+
+## 2026-05-05 — All hail AMD
+
+[▶ watch](https://www.youtube.com/watch?v=VrJBHmRzMQM) · `data/ariel_hernandez/videos/recaps/2026-05-06_VrJBHmRzMQM` · 2 ticker flags · 8 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [01:34](https://www.youtube.com/watch?v=VrJBHmRzMQM&t=94s) | Cypher / Cipher | neo cloud / miner names; 'CIFR' spelled at 12:31 | CIFR | 🟡 |
+| ⬜ | [07:35](https://www.youtube.com/watch?v=VrJBHmRzMQM&t=455s) | AOI | optics name discussed with LITE and GLW; 'maybe eventual add-on to AOI' | AAOI | 🟡 |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [01:34](https://www.youtube.com/watch?v=VrJBHmRzMQM&t=94s) | CIFR | long · entry | today | 2026-05-05 |
+| · | [06:14](https://www.youtube.com/watch?v=VrJBHmRzMQM&t=374s) | CIFR | long · trim | today | 2026-05-05 |
+| ⬜ | [03:06](https://www.youtube.com/watch?v=VrJBHmRzMQM&t=186s) | DOCN | long · hold | the 16th of april | 2026-04-16 |
+| · | [05:31](https://www.youtube.com/watch?v=VrJBHmRzMQM&t=331s) | GEV | long · entry | today | 2026-05-05 |
+| · | [05:21](https://www.youtube.com/watch?v=VrJBHmRzMQM&t=321s) | GEV | long · exit | today | 2026-05-05 |
+| ⬜ | [07:35](https://www.youtube.com/watch?v=VrJBHmRzMQM&t=455s) | LITE | long · trim | — | _(unresolved)_ |
+| · | [08:14](https://www.youtube.com/watch?v=VrJBHmRzMQM&t=494s) | AAOI | long · hold | — | 2026-05-05 |
+| ⬜ | [11:37](https://www.youtube.com/watch?v=VrJBHmRzMQM&t=697s) | DELL | long · entry | the 31st | 2026-03-31 |
+
+
+## 2026-05-04 — Software starting to lead?
+
+[▶ watch](https://www.youtube.com/watch?v=xZtgZg-F3fk) · `data/ariel_hernandez/videos/recaps/2026-05-04_xZtgZg-F3fk` · 3 ticker flags · 8 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [00:00](https://www.youtube.com/watch?v=xZtgZg-F3fk&t=0s) | MBIS | 'a huge move since I bought it on Friday'; later 'I own MBIS' in the Neo cloud passage. | NBIS | 🟡 |
+| ⬜ | [01:38](https://www.youtube.com/watch?v=xZtgZg-F3fk&t=98s) | DocuSign | 'DocuSign is one that I own ... got some earnings tomorrow' and 'I own a DocuSign' (06:30). Could be DOCU as captioned or a mis-caption of DOCN. | DOCN | ❓ |
+| ⬜ | [07:01](https://www.youtube.com/watch?v=xZtgZg-F3fk&t=421s) | LITEE | 'My LITEE, which is one that I'm long ... hit that $1,000 mark'. | LITE | 🟡 |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [00:00](https://www.youtube.com/watch?v=xZtgZg-F3fk&t=0s) | NBIS | long · entry | friday | 2026-05-01 |
+| ⬜ | [01:38](https://www.youtube.com/watch?v=xZtgZg-F3fk&t=98s) | ? | long · hold | — | 2026-05-04 |
+| · | [02:09](https://www.youtube.com/watch?v=xZtgZg-F3fk&t=129s) | ARM | long · hold | — | 2026-05-04 |
+| · | [02:41](https://www.youtube.com/watch?v=xZtgZg-F3fk&t=161s) | RKLB | long · entry | today | 2026-05-04 |
+| ⬜ | [02:51](https://www.youtube.com/watch?v=xZtgZg-F3fk&t=171s) | PL | long · stopped_out | friday | 2026-05-01 |
+| ⬜ | [04:29](https://www.youtube.com/watch?v=xZtgZg-F3fk&t=269s) | CRWV | long · exit | — | _(unresolved)_ |
+| ⬜ | [07:11](https://www.youtube.com/watch?v=xZtgZg-F3fk&t=431s) | LITE | long · trim | friday | 2026-05-01 |
+| ⬜ | [07:20](https://www.youtube.com/watch?v=xZtgZg-F3fk&t=440s) | AAOI | long · trim | friday | 2026-05-01 |
+
+
+## 2026-05-01 — $QQQ historically extended! Now what?
+
+[▶ watch](https://www.youtube.com/watch?v=ZSaGPv6MMUA) · `data/ariel_hernandez/videos/recaps/2026-05-02_ZSaGPv6MMUA` · 1 ticker flags · 9 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [02:31](https://www.youtube.com/watch?v=ZSaGPv6MMUA&t=151s) | software ... as this UNR at 76 bucks | 'software, um, which is something that I own' while showing a chart building above a rising 50-day | IGV | 🟡 |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [01:45](https://www.youtube.com/watch?v=ZSaGPv6MMUA&t=105s) | NBIS | long · entry | friday | 2026-04-24 |
+| ⬜ | [01:59](https://www.youtube.com/watch?v=ZSaGPv6MMUA&t=119s) | MP | long · entry | friday | 2026-04-24 |
+| ⬜ | [02:31](https://www.youtube.com/watch?v=ZSaGPv6MMUA&t=151s) | ? | long · hold | — | 2026-05-01 |
+| · | [02:51](https://www.youtube.com/watch?v=ZSaGPv6MMUA&t=171s) | DOCN | long · hold | — | 2026-05-01 |
+| ⬜ | [03:59](https://www.youtube.com/watch?v=ZSaGPv6MMUA&t=239s) | AAOI | long · entry | wednesday | 2026-04-29 |
+| ⬜ | [03:59](https://www.youtube.com/watch?v=ZSaGPv6MMUA&t=239s) | AAOI | long · add | thursday | 2026-04-30 |
+| ⬜ | [04:09](https://www.youtube.com/watch?v=ZSaGPv6MMUA&t=249s) | AAOI | long · trim | friday | 2026-04-24 |
+| · | [06:27](https://www.youtube.com/watch?v=ZSaGPv6MMUA&t=387s) | ARM | long · hold | — | 2026-05-01 |
+| ⬜ | [09:16](https://www.youtube.com/watch?v=ZSaGPv6MMUA&t=556s) | MU | long · entry | — | _(unresolved)_ |
+
+
+## 2026-04-30 — A month to remember!
+
+[▶ watch](https://www.youtube.com/watch?v=Xc0VR1fwxVQ) · `data/ariel_hernandez/videos/recaps/2026-05-01_Xc0VR1fwxVQ` · 3 ticker flags · 24 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [03:23](https://www.youtube.com/watch?v=Xc0VR1fwxVQ&t=203s) | Yesterday I had my final covers at 338 | short covered within the semiconductor group discussion; instrument never named | ? | ❓ |
+| ⬜ | [12:49](https://www.youtube.com/watch?v=Xc0VR1fwxVQ&t=769s) | XTI / AXT | optics name he is short; 'AXT is not a name I like. They make absolutely no money' | AXTI | 🟡 |
+| ⬜ | [06:09](https://www.youtube.com/watch?v=Xc0VR1fwxVQ&t=369s) | AOI | optics leader, high tight flag, 'could see 180, 190, 200' | AAOI | 🟡 |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [10:27](https://www.youtube.com/watch?v=Xc0VR1fwxVQ&t=627s) | NVDA | long · trim | — | _(unresolved)_ |
+| · | [10:38](https://www.youtube.com/watch?v=Xc0VR1fwxVQ&t=638s) | NVDA | long · add | today | 2026-04-30 |
+| · | [10:38](https://www.youtube.com/watch?v=Xc0VR1fwxVQ&t=638s) | NVDA | long · trim | today | 2026-04-30 |
+| · | [00:47](https://www.youtube.com/watch?v=Xc0VR1fwxVQ&t=47s) | AMZN | long · hold | — | 2026-04-30 |
+| · | [03:36](https://www.youtube.com/watch?v=Xc0VR1fwxVQ&t=216s) | ARM | long · hold | — | 2026-04-30 |
+| ⬜ | [03:23](https://www.youtube.com/watch?v=Xc0VR1fwxVQ&t=203s) | ? | short · cover | yesterday | 2026-04-29 |
+| ⬜ | [06:09](https://www.youtube.com/watch?v=Xc0VR1fwxVQ&t=369s) | AAOI | long · entry | yesterday | 2026-04-29 |
+| · | [12:17](https://www.youtube.com/watch?v=Xc0VR1fwxVQ&t=737s) | AAOI | long · trim | today | 2026-04-30 |
+| · | [12:37](https://www.youtube.com/watch?v=Xc0VR1fwxVQ&t=757s) | AAOI | long · add | today | 2026-04-30 |
+| ⬜ | [06:20](https://www.youtube.com/watch?v=Xc0VR1fwxVQ&t=380s) | GLW | long · entry | yesterday | 2026-04-29 |
+| ⬜ | [06:20](https://www.youtube.com/watch?v=Xc0VR1fwxVQ&t=380s) | GLW | long · stopped_out | yesterday | 2026-04-29 |
+| · | [06:55](https://www.youtube.com/watch?v=Xc0VR1fwxVQ&t=415s) | LITE | long · entry | today | 2026-04-30 |
+| ⬜ | [08:21](https://www.youtube.com/watch?v=Xc0VR1fwxVQ&t=501s) | RKLB | long · entry | yesterday | 2026-04-29 |
+| ⬜ | [09:00](https://www.youtube.com/watch?v=Xc0VR1fwxVQ&t=540s) | RKLB | long · exit | yesterday | 2026-04-29 |
+| · | [15:57](https://www.youtube.com/watch?v=Xc0VR1fwxVQ&t=957s) | PL | long · entry | today | 2026-04-30 |
+| · | [11:06](https://www.youtube.com/watch?v=Xc0VR1fwxVQ&t=666s) | ENPH | long · entry | today | 2026-04-30 |
+| · | [11:27](https://www.youtube.com/watch?v=Xc0VR1fwxVQ&t=687s) | ENPH | long · exit | today | 2026-04-30 |
+| · | [12:49](https://www.youtube.com/watch?v=Xc0VR1fwxVQ&t=769s) | AXTI | short · cover | today | 2026-04-30 |
+| · | [12:49](https://www.youtube.com/watch?v=Xc0VR1fwxVQ&t=769s) | AXTI | short · short | today | 2026-04-30 |
+| · | [13:25](https://www.youtube.com/watch?v=Xc0VR1fwxVQ&t=805s) | AXTI | short · add | today | 2026-04-30 |
+| · | [13:43](https://www.youtube.com/watch?v=Xc0VR1fwxVQ&t=823s) | DELL | long · hold | — | 2026-04-30 |
+| · | [13:55](https://www.youtube.com/watch?v=Xc0VR1fwxVQ&t=835s) | DOCN | long · hold | — | 2026-04-30 |
+| · | [14:42](https://www.youtube.com/watch?v=Xc0VR1fwxVQ&t=882s) | IGV | long · hold | — | 2026-04-30 |
+| · | [15:48](https://www.youtube.com/watch?v=Xc0VR1fwxVQ&t=948s) | MU | long · hold | — | 2026-04-30 |
+
+
+## 2026-04-29 — Magnificent 7 keep winning!
+
+[▶ watch](https://www.youtube.com/watch?v=8wQOmZ2FFf8) · `data/ariel_hernandez/videos/recaps/2026-04-30_8wQOmZ2FFf8` · 1 ticker flags · 18 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [10:14](https://www.youtube.com/watch?v=8wQOmZ2FFf8&t=614s) | Docan / Dockan | 'I've got Docan' and 'Dockan ... I already own this name from much lower um in the 79s ... over 99' | DOCN | 🟡 |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [00:52](https://www.youtube.com/watch?v=8wQOmZ2FFf8&t=52s) | AMZN | long · hold | — | 2026-04-29 |
+| · | [14:19](https://www.youtube.com/watch?v=8wQOmZ2FFf8&t=859s) | ARM | long · hold | — | 2026-04-29 |
+| · | [02:00](https://www.youtube.com/watch?v=8wQOmZ2FFf8&t=120s) | NVDA | long · hold | — | 2026-04-29 |
+| · | [02:00](https://www.youtube.com/watch?v=8wQOmZ2FFf8&t=120s) | MU | long · hold | — | 2026-04-29 |
+| · | [13:58](https://www.youtube.com/watch?v=8wQOmZ2FFf8&t=838s) | AAOI | long · entry | today | 2026-04-29 |
+| · | [15:50](https://www.youtube.com/watch?v=8wQOmZ2FFf8&t=950s) | GLW | long · entry | today | 2026-04-29 |
+| · | [03:52](https://www.youtube.com/watch?v=8wQOmZ2FFf8&t=232s) | GLW | long · stopped_out | today | 2026-04-29 |
+| · | [17:59](https://www.youtube.com/watch?v=8wQOmZ2FFf8&t=1079s) | RKLB | long · entry | today | 2026-04-29 |
+| · | [04:06](https://www.youtube.com/watch?v=8wQOmZ2FFf8&t=246s) | RKLB | long · exit | towards the end of the day | 2026-04-29 |
+| ⬜ | [07:35](https://www.youtube.com/watch?v=8wQOmZ2FFf8&t=455s) | CRWV | long · entry | a few days ago | _(unresolved)_ |
+| ⬜ | [07:35](https://www.youtube.com/watch?v=8wQOmZ2FFf8&t=455s) | CRWV | long · exit | a few days ago | _(unresolved)_ |
+| ⬜ | [07:48](https://www.youtube.com/watch?v=8wQOmZ2FFf8&t=468s) | NBIS | long · entry | this month | _(unresolved)_ |
+| ⬜ | [07:48](https://www.youtube.com/watch?v=8wQOmZ2FFf8&t=468s) | NBIS | long · exit | this month | _(unresolved)_ |
+| · | [10:14](https://www.youtube.com/watch?v=8wQOmZ2FFf8&t=614s) | DELL | long · hold | — | 2026-04-29 |
+| · | [15:29](https://www.youtube.com/watch?v=8wQOmZ2FFf8&t=929s) | DOCN | long · hold | — | 2026-04-29 |
+| · | [10:14](https://www.youtube.com/watch?v=8wQOmZ2FFf8&t=614s) | IGV | long · hold | — | 2026-04-29 |
+| · | [19:26](https://www.youtube.com/watch?v=8wQOmZ2FFf8&t=1166s) | AMD | short · cover | today | 2026-04-29 |
+| · | [19:40](https://www.youtube.com/watch?v=8wQOmZ2FFf8&t=1180s) | MRVL | short · hold | — | 2026-04-29 |
+
+
+## 2026-04-27 — All roads lead to NVDA!
+
+[▶ watch](https://www.youtube.com/watch?v=sovhD6eo-30) · `data/ariel_hernandez/videos/recaps/2026-04-27_sovhD6eo-30` · 2 ticker flags · 16 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [04:13](https://www.youtube.com/watch?v=sovhD6eo-30&t=253s) | Enphase | 'new buys in Enphase, new buys in Coreweave, and an add in Rocket Lab' and 'I'm long Enphase' - parallels 'NBIS ... a name that I bought' two minutes earlier; caption rendering of NBIS. | NBIS | 🟡 |
+| ⬜ | [10:56](https://www.youtube.com/watch?v=sovhD6eo-30&t=656s) | Dock | 'I'm long Dock' in the position list; no company context. DOCN or DOCU. | ? | ❓ |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [02:35](https://www.youtube.com/watch?v=sovhD6eo-30&t=155s) | NBIS | long · entry | today | 2026-04-27 |
+| · | [02:50](https://www.youtube.com/watch?v=sovhD6eo-30&t=170s) | CRWV | long · entry | today | 2026-04-27 |
+| · | [02:50](https://www.youtube.com/watch?v=sovhD6eo-30&t=170s) | RKLB | long · add | today | 2026-04-27 |
+| · | [04:23](https://www.youtube.com/watch?v=sovhD6eo-30&t=263s) | SNDK | long · trim | today | 2026-04-27 |
+| ⬜ | [03:52](https://www.youtube.com/watch?v=sovhD6eo-30&t=232s) | ARM | long · trim | — | _(unresolved)_ |
+| ⬜ | [04:02](https://www.youtube.com/watch?v=sovhD6eo-30&t=242s) | AMD | short · short | friday | 2026-04-24 |
+| · | [10:43](https://www.youtube.com/watch?v=sovhD6eo-30&t=643s) | AMD | short · cover | today | 2026-04-27 |
+| · | [04:02](https://www.youtube.com/watch?v=sovhD6eo-30&t=242s) | MRVL | short · add | today | 2026-04-27 |
+| · | [04:02](https://www.youtube.com/watch?v=sovhD6eo-30&t=242s) | MRVL | short · cover | today | 2026-04-27 |
+| · | [04:34](https://www.youtube.com/watch?v=sovhD6eo-30&t=274s) | NVDA | long · trim | today | 2026-04-27 |
+| · | [07:51](https://www.youtube.com/watch?v=sovhD6eo-30&t=471s) | GLW | long · exit | today | 2026-04-27 |
+| · | [10:43](https://www.youtube.com/watch?v=sovhD6eo-30&t=643s) | AXTI | short · hold | — | 2026-04-27 |
+| · | [10:56](https://www.youtube.com/watch?v=sovhD6eo-30&t=656s) | DELL | long · hold | — | 2026-04-27 |
+| ⬜ | [10:56](https://www.youtube.com/watch?v=sovhD6eo-30&t=656s) | ? | long · hold | — | 2026-04-27 |
+| · | [10:56](https://www.youtube.com/watch?v=sovhD6eo-30&t=656s) | IGV | long · hold | — | 2026-04-27 |
+| · | [10:56](https://www.youtube.com/watch?v=sovhD6eo-30&t=656s) | MU | long · hold | — | 2026-04-27 |
+
+
+## 2026-04-23 — Market is semi vertical!
+
+[▶ watch](https://www.youtube.com/watch?v=ARyrloTg1Sg) · `data/ariel_hernandez/videos/recaps/2026-04-24_ARyrloTg1Sg` · 1 ticker flags · 19 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [09:39](https://www.youtube.com/watch?v=ARyrloTg1Sg&t=579s) | Enphase | 'I tried some Enphase today as well. That did not work for me.' Earlier (04:48) he says 'Does money go into the neo clouds, right? Like an Enphase' - Enphase is solar, the neo-cloud description fits Nebius. | NBIS | ❓ |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [05:24](https://www.youtube.com/watch?v=ARyrloTg1Sg&t=324s) | AMZN | long · entry | immediately after that follow-through day | _(unresolved)_ |
+| ⬜ | [05:35](https://www.youtube.com/watch?v=ARyrloTg1Sg&t=335s) | NVDA | long · entry | the 10th | 2026-04-10 |
+| ⬜ | [05:35](https://www.youtube.com/watch?v=ARyrloTg1Sg&t=335s) | ARM | long · entry | the 15th | 2026-04-15 |
+| ⬜ | [05:46](https://www.youtube.com/watch?v=ARyrloTg1Sg&t=346s) | ASML | long · exit | yesterday | 2026-04-22 |
+| ⬜ | [05:57](https://www.youtube.com/watch?v=ARyrloTg1Sg&t=357s) | CIEN | long · exit | yesterday | 2026-04-22 |
+| · | [06:26](https://www.youtube.com/watch?v=ARyrloTg1Sg&t=386s) | GLW | long · exit | today | 2026-04-23 |
+| · | [06:46](https://www.youtube.com/watch?v=ARyrloTg1Sg&t=406s) | MU | long · add | today | 2026-04-23 |
+| · | [07:00](https://www.youtube.com/watch?v=ARyrloTg1Sg&t=420s) | MU | long · trim | today | 2026-04-23 |
+| · | [15:07](https://www.youtube.com/watch?v=ARyrloTg1Sg&t=907s) | DOCN | long · hold | — | 2026-04-23 |
+| · | [08:57](https://www.youtube.com/watch?v=ARyrloTg1Sg&t=537s) | CAR | short · cover | towards the end of the day | 2026-04-23 |
+| · | [09:21](https://www.youtube.com/watch?v=ARyrloTg1Sg&t=561s) | RKLB | long · trim | today | 2026-04-23 |
+| ⬜ | [09:39](https://www.youtube.com/watch?v=ARyrloTg1Sg&t=579s) | ? | long · entry | today | 2026-04-23 |
+| ⬜ | [09:39](https://www.youtube.com/watch?v=ARyrloTg1Sg&t=579s) | ? | long · exit | today | 2026-04-23 |
+| · | [11:27](https://www.youtube.com/watch?v=ARyrloTg1Sg&t=687s) | IGV | long · trim | today | 2026-04-23 |
+| · | [13:13](https://www.youtube.com/watch?v=ARyrloTg1Sg&t=793s) | AXTI | short · short | today | 2026-04-23 |
+| ⬜ | [14:34](https://www.youtube.com/watch?v=ARyrloTg1Sg&t=874s) | AMAT | long · entry | yesterday | 2026-04-22 |
+| ⬜ | [14:34](https://www.youtube.com/watch?v=ARyrloTg1Sg&t=874s) | AMAT | long · exit | — | _(unresolved)_ |
+| · | [15:07](https://www.youtube.com/watch?v=ARyrloTg1Sg&t=907s) | DELL | long · hold | — | 2026-04-23 |
+| · | [15:18](https://www.youtube.com/watch?v=ARyrloTg1Sg&t=918s) | QQQ | short · hold | — | 2026-04-23 |
+
+
+## 2026-04-22 — CAR crash today!
+
+[▶ watch](https://www.youtube.com/watch?v=gT5_d3KO17M) · `data/ariel_hernandez/videos/recaps/2026-04-22_gT5_d3KO17M` · 1 ticker flags · 18 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [12:28](https://www.youtube.com/watch?v=gT5_d3KO17M&t=748s) | Dakin | list of longs: 'Amazon, ARM, Dell, Dakin, GLW, IGV' | DOCN | 🟡 |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [01:21](https://www.youtube.com/watch?v=gT5_d3KO17M&t=81s) | CAR | short · cover | today | 2026-04-22 |
+| · | [01:58](https://www.youtube.com/watch?v=gT5_d3KO17M&t=118s) | MU | long · add | today | 2026-04-22 |
+| · | [02:45](https://www.youtube.com/watch?v=gT5_d3KO17M&t=165s) | SNDK | long · entry | today | 2026-04-22 |
+| · | [02:56](https://www.youtube.com/watch?v=gT5_d3KO17M&t=176s) | AMAT | long · entry | today | 2026-04-22 |
+| · | [03:25](https://www.youtube.com/watch?v=gT5_d3KO17M&t=205s) | ENPH | long · entry | today | 2026-04-22 |
+| · | [03:25](https://www.youtube.com/watch?v=gT5_d3KO17M&t=205s) | ENPH | long · exit | today | 2026-04-22 |
+| ⬜ | [03:36](https://www.youtube.com/watch?v=gT5_d3KO17M&t=216s) | NBIS | long · entry | — | _(unresolved)_ |
+| · | [03:56](https://www.youtube.com/watch?v=gT5_d3KO17M&t=236s) | CIEN | long · stopped_out | today | 2026-04-22 |
+| · | [04:06](https://www.youtube.com/watch?v=gT5_d3KO17M&t=246s) | GLW | long · entry | today | 2026-04-22 |
+| · | [04:19](https://www.youtube.com/watch?v=gT5_d3KO17M&t=259s) | ASML | long · exit | today | 2026-04-22 |
+| · | [05:54](https://www.youtube.com/watch?v=gT5_d3KO17M&t=354s) | ARM | long · trim | today | 2026-04-22 |
+| · | [06:31](https://www.youtube.com/watch?v=gT5_d3KO17M&t=391s) | AMZN | long · hold | — | 2026-04-22 |
+| · | [06:43](https://www.youtube.com/watch?v=gT5_d3KO17M&t=403s) | DELL | long · hold | — | 2026-04-22 |
+| · | [12:28](https://www.youtube.com/watch?v=gT5_d3KO17M&t=748s) | DOCN | long · hold | — | 2026-04-22 |
+| · | [06:54](https://www.youtube.com/watch?v=gT5_d3KO17M&t=414s) | IGV | long · hold | — | 2026-04-22 |
+| · | [07:28](https://www.youtube.com/watch?v=gT5_d3KO17M&t=448s) | RKLB | long · hold | — | 2026-04-22 |
+| · | [07:38](https://www.youtube.com/watch?v=gT5_d3KO17M&t=458s) | NVDA | long · hold | — | 2026-04-22 |
+| ⬜ | [12:43](https://www.youtube.com/watch?v=gT5_d3KO17M&t=763s) | IBIT | long · exit | yesterday | 2026-04-21 |
+
+
+## 2026-04-21 — Bulls take a breather!
+
+[▶ watch](https://www.youtube.com/watch?v=EpgND2DFU-E) · `data/ariel_hernandez/videos/recaps/2026-04-21_EpgND2DFU-E` · 0 ticker flags · 18 trades
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [04:46](https://www.youtube.com/watch?v=EpgND2DFU-E&t=286s) | AMZN | long · trim | today | 2026-04-21 |
+| · | [04:46](https://www.youtube.com/watch?v=EpgND2DFU-E&t=286s) | ARM | long · trim | today | 2026-04-21 |
+| · | [04:46](https://www.youtube.com/watch?v=EpgND2DFU-E&t=286s) | ASML | long · hold | — | 2026-04-21 |
+| · | [04:56](https://www.youtube.com/watch?v=EpgND2DFU-E&t=296s) | CIEN | long · trim | today | 2026-04-21 |
+| · | [04:56](https://www.youtube.com/watch?v=EpgND2DFU-E&t=296s) | DELL | long · trim | today | 2026-04-21 |
+| · | [05:53](https://www.youtube.com/watch?v=EpgND2DFU-E&t=353s) | IGV | long · trim | today | 2026-04-21 |
+| · | [06:03](https://www.youtube.com/watch?v=EpgND2DFU-E&t=363s) | CAR | short · short | today | 2026-04-21 |
+| · | [06:26](https://www.youtube.com/watch?v=EpgND2DFU-E&t=386s) | CAR | short · cover | today | 2026-04-21 |
+| ⬜ | [12:19](https://www.youtube.com/watch?v=EpgND2DFU-E&t=739s) | CRCL | long · entry | yesterday | 2026-04-20 |
+| ⬜ | [12:40](https://www.youtube.com/watch?v=EpgND2DFU-E&t=760s) | CRCL | long · exit | — | _(unresolved)_ |
+| ⬜ | [12:30](https://www.youtube.com/watch?v=EpgND2DFU-E&t=750s) | IBIT | long · entry | — | _(unresolved)_ |
+| ⬜ | [12:40](https://www.youtube.com/watch?v=EpgND2DFU-E&t=760s) | IBIT | long · exit | — | _(unresolved)_ |
+| · | [13:00](https://www.youtube.com/watch?v=EpgND2DFU-E&t=780s) | DOCN | long · hold | — | 2026-04-21 |
+| · | [13:00](https://www.youtube.com/watch?v=EpgND2DFU-E&t=780s) | MU | long · hold | — | 2026-04-21 |
+| · | [13:00](https://www.youtube.com/watch?v=EpgND2DFU-E&t=780s) | NVDA | long · hold | — | 2026-04-21 |
+| · | [13:00](https://www.youtube.com/watch?v=EpgND2DFU-E&t=780s) | RKLB | long · hold | — | 2026-04-21 |
+| · | [13:00](https://www.youtube.com/watch?v=EpgND2DFU-E&t=780s) | QQQ | short · hold | — | 2026-04-21 |
+| · | [13:00](https://www.youtube.com/watch?v=EpgND2DFU-E&t=780s) | AXTI | short · hold | — | 2026-04-21 |
+
+
+## 2026-04-20 — Relentless bulls, what's next!?
+
+[▶ watch](https://www.youtube.com/watch?v=NlwZUkSPDFM) · `data/ariel_hernandez/videos/recaps/2026-04-20_NlwZUkSPDFM` · 1 ticker flags · 11 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [06:20](https://www.youtube.com/watch?v=NlwZUkSPDFM&t=380s) | Car | 'Car continues to go absolutely nuts ... two funds own the whole float. And I tried a little stab at it today' | CAR | 🟡 |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [00:13](https://www.youtube.com/watch?v=NlwZUkSPDFM&t=13s) | QQQ | short · trim | today | 2026-04-20 |
+| · | [00:24](https://www.youtube.com/watch?v=NlwZUkSPDFM&t=24s) | AMZN | long · hold | — | 2026-04-20 |
+| · | [00:57](https://www.youtube.com/watch?v=NlwZUkSPDFM&t=57s) | MU | long · add | today | 2026-04-20 |
+| · | [00:57](https://www.youtube.com/watch?v=NlwZUkSPDFM&t=57s) | CRCL | long · add | today | 2026-04-20 |
+| · | [01:19](https://www.youtube.com/watch?v=NlwZUkSPDFM&t=79s) | AXTI | short · short | today | 2026-04-20 |
+| · | [01:31](https://www.youtube.com/watch?v=NlwZUkSPDFM&t=91s) | AXTI | short · cover | at the end of the day | 2026-04-20 |
+| · | [02:25](https://www.youtube.com/watch?v=NlwZUkSPDFM&t=145s) | ASML | long · add | today | 2026-04-20 |
+| · | [02:47](https://www.youtube.com/watch?v=NlwZUkSPDFM&t=167s) | RKLB | long · hold | — | 2026-04-20 |
+| · | [03:07](https://www.youtube.com/watch?v=NlwZUkSPDFM&t=187s) | ARM | long · hold | — | 2026-04-20 |
+| · | [06:31](https://www.youtube.com/watch?v=NlwZUkSPDFM&t=391s) | CAR | short · short | today | 2026-04-20 |
+| · | [06:31](https://www.youtube.com/watch?v=NlwZUkSPDFM&t=391s) | CAR | short · cover | today | 2026-04-20 |
+
+
+## 2026-04-17 — 4/17 stream
+
+[▶ watch](https://www.youtube.com/watch?v=4q976MP3O14) · `data/ariel_hernandez/videos/recaps/2026-04-17_4q976MP3O14` · 4 ticker flags · 32 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [83:26](https://www.youtube.com/watch?v=4q976MP3O14&t=5006s) | VLOO / Vlo Pro / BL / vlog | energy name he closes as crude falls; 'Who needs crude oil' | VLO | 🟡 |
+| ⬜ | [211:05](https://www.youtube.com/watch?v=4q976MP3O14&t=12665s) | I'm in there with you ... two spots ... 4809 and 47606 | ticker not named; prices match the CAR short discussed around it | CAR | 🟡 |
+| ⬜ | [08:54](https://www.youtube.com/watch?v=4q976MP3O14&t=534s) | CE / CEN / Sienna / CI | position he trims twice; 'CIEN' spelled out at 186:19 | CIEN | 🟡 |
+| ⬜ | [301:18](https://www.youtube.com/watch?v=4q976MP3O14&t=18078s) | Dell ... had to shake myself out of a few on Wednesday | possible Wednesday partial sale of Dell; speaker unclear, not logged | DELL | ❓ |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [02:56](https://www.youtube.com/watch?v=4q976MP3O14&t=176s) | AMZN | long · trim | today | 2026-04-17 |
+| · | [93:34](https://www.youtube.com/watch?v=4q976MP3O14&t=5614s) | CIEN | long · trim | today | 2026-04-17 |
+| · | [297:15](https://www.youtube.com/watch?v=4q976MP3O14&t=17835s) | NVDA | long · trim | today | 2026-04-17 |
+| · | [296:53](https://www.youtube.com/watch?v=4q976MP3O14&t=17813s) | MU | long · trim | today | 2026-04-17 |
+| · | [297:15](https://www.youtube.com/watch?v=4q976MP3O14&t=17835s) | RKLB | long · trim | today | 2026-04-17 |
+| ⬜ | [37:27](https://www.youtube.com/watch?v=4q976MP3O14&t=2247s) | ARM | long · add | yesterday | 2026-04-16 |
+| · | [37:39](https://www.youtube.com/watch?v=4q976MP3O14&t=2259s) | ARM | long · trim | today | 2026-04-17 |
+| · | [48:33](https://www.youtube.com/watch?v=4q976MP3O14&t=2913s) | DOCN | long · trim | today | 2026-04-17 |
+| · | [183:49](https://www.youtube.com/watch?v=4q976MP3O14&t=11029s) | IBIT | long · trim | today | 2026-04-17 |
+| · | [296:53](https://www.youtube.com/watch?v=4q976MP3O14&t=17813s) | IGV | long · trim | today | 2026-04-17 |
+| · | [83:26](https://www.youtube.com/watch?v=4q976MP3O14&t=5006s) | VLO | long · exit | today | 2026-04-17 |
+| ⬜ | [83:03](https://www.youtube.com/watch?v=4q976MP3O14&t=4983s) | XOM | long · exit | — | _(unresolved)_ |
+| ⬜ | [241:34](https://www.youtube.com/watch?v=4q976MP3O14&t=14494s) | QQQ | long · entry | the 31st | 2026-03-31 |
+| · | [230:56](https://www.youtube.com/watch?v=4q976MP3O14&t=13856s) | QQQ | long · exit | today | 2026-04-17 |
+| · | [228:02](https://www.youtube.com/watch?v=4q976MP3O14&t=13682s) | QQQ | short · entry | today | 2026-04-17 |
+| · | [296:40](https://www.youtube.com/watch?v=4q976MP3O14&t=17800s) | DELL | long · hold | — | 2026-04-17 |
+| · | [78:23](https://www.youtube.com/watch?v=4q976MP3O14&t=4703s) | CRCL | long · entry | today | 2026-04-17 |
+| · | [105:35](https://www.youtube.com/watch?v=4q976MP3O14&t=6335s) | CRCL | long · stopped_out | today | 2026-04-17 |
+| · | [153:47](https://www.youtube.com/watch?v=4q976MP3O14&t=9227s) | CRCL | long · reentry | today | 2026-04-17 |
+| · | [141:17](https://www.youtube.com/watch?v=4q976MP3O14&t=8477s) | CRCL | long · stopped_out | today | 2026-04-17 |
+| · | [157:28](https://www.youtube.com/watch?v=4q976MP3O14&t=9448s) | CRCL | long · reentry | today | 2026-04-17 |
+| · | [382:45](https://www.youtube.com/watch?v=4q976MP3O14&t=22965s) | CRCL | long · exit | today | 2026-04-17 |
+| · | [29:37](https://www.youtube.com/watch?v=4q976MP3O14&t=1777s) | CAR | short · add | today | 2026-04-17 |
+| · | [211:05](https://www.youtube.com/watch?v=4q976MP3O14&t=12665s) | CAR | short · short | today | 2026-04-17 |
+| · | [237:40](https://www.youtube.com/watch?v=4q976MP3O14&t=14260s) | CAR | short · add | today | 2026-04-17 |
+| · | [314:50](https://www.youtube.com/watch?v=4q976MP3O14&t=18890s) | CAR | short · add | today | 2026-04-17 |
+| · | [315:42](https://www.youtube.com/watch?v=4q976MP3O14&t=18942s) | CAR | short · cover | today | 2026-04-17 |
+| · | [399:29](https://www.youtube.com/watch?v=4q976MP3O14&t=23969s) | CAR | short · cover | today | 2026-04-17 |
+| · | [135:42](https://www.youtube.com/watch?v=4q976MP3O14&t=8142s) | AXTI | short · short | today | 2026-04-17 |
+| · | [228:52](https://www.youtube.com/watch?v=4q976MP3O14&t=13732s) | AXTI | short · cover | today | 2026-04-17 |
+| · | [236:38](https://www.youtube.com/watch?v=4q976MP3O14&t=14198s) | AXTI | short · short | today | 2026-04-17 |
+| · | [399:29](https://www.youtube.com/watch?v=4q976MP3O14&t=23969s) | AXTI | short · cover | today | 2026-04-17 |
+
+
+## 2026-04-16 — Melt up, but keep your head on a swivel!
+
+[▶ watch](https://www.youtube.com/watch?v=s720ldQLhho) · `data/ariel_hernandez/videos/recaps/2026-04-16_s720ldQLhho` · 3 ticker flags · 20 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [06:43](https://www.youtube.com/watch?v=s720ldQLhho&t=403s) | XTI | 'tried XTI on the extension today'; photonics names mentioned next | AXTI | 🟡 |
+| ⬜ | [15:44](https://www.youtube.com/watch?v=s720ldQLhho&t=944s) | AMU | double inside day at the rising 5-day; 'I've trimmed some off' | MU | 🟡 |
+| ⬜ | [07:05](https://www.youtube.com/watch?v=s720ldQLhho&t=425s) | CIEHN / CIN / Sienna | 'I do have CIEHN on the long side' | CIEN | 🟡 |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [00:32](https://www.youtube.com/watch?v=s720ldQLhho&t=32s) | AMZN | long · entry | the 9th | 2026-04-09 |
+| · | [00:23](https://www.youtube.com/watch?v=s720ldQLhho&t=23s) | AMZN | long · trim | today | 2026-04-16 |
+| ⬜ | [02:35](https://www.youtube.com/watch?v=s720ldQLhho&t=155s) | ARM | long · add | yesterday | 2026-04-15 |
+| · | [02:15](https://www.youtube.com/watch?v=s720ldQLhho&t=135s) | ARM | long · add | today | 2026-04-16 |
+| · | [02:57](https://www.youtube.com/watch?v=s720ldQLhho&t=177s) | CIEN | long · add | today | 2026-04-16 |
+| · | [02:45](https://www.youtube.com/watch?v=s720ldQLhho&t=165s) | MU | long · hold | — | 2026-04-16 |
+| ⬜ | [03:08](https://www.youtube.com/watch?v=s720ldQLhho&t=188s) | DELL | long · trim | yesterday | 2026-04-15 |
+| · | [03:48](https://www.youtube.com/watch?v=s720ldQLhho&t=228s) | DOCN | long · entry | today | 2026-04-16 |
+| · | [04:23](https://www.youtube.com/watch?v=s720ldQLhho&t=263s) | IBIT | long · exit | today | 2026-04-16 |
+| · | [04:40](https://www.youtube.com/watch?v=s720ldQLhho&t=280s) | IBIT | long · reentry | today | 2026-04-16 |
+| ⬜ | [05:00](https://www.youtube.com/watch?v=s720ldQLhho&t=300s) | IGV | long · trim | the day prior | _(unresolved)_ |
+| ⬜ | [05:00](https://www.youtube.com/watch?v=s720ldQLhho&t=300s) | IGV | long · trim | yesterday | 2026-04-15 |
+| · | [05:22](https://www.youtube.com/watch?v=s720ldQLhho&t=322s) | NVDA | long · hold | — | 2026-04-16 |
+| · | [05:32](https://www.youtube.com/watch?v=s720ldQLhho&t=332s) | RKLB | long · add | this morning | 2026-04-16 |
+| · | [06:22](https://www.youtube.com/watch?v=s720ldQLhho&t=382s) | QQQ | long · hold | — | 2026-04-16 |
+| · | [06:33](https://www.youtube.com/watch?v=s720ldQLhho&t=393s) | VLO | long · hold | — | 2026-04-16 |
+| ⬜ | [06:22](https://www.youtube.com/watch?v=s720ldQLhho&t=382s) | XOM | long · exit | — | _(unresolved)_ |
+| · | [06:43](https://www.youtube.com/watch?v=s720ldQLhho&t=403s) | AXTI | short · short | today | 2026-04-16 |
+| · | [06:56](https://www.youtube.com/watch?v=s720ldQLhho&t=416s) | AXTI | short · cover | today | 2026-04-16 |
+| · | [09:56](https://www.youtube.com/watch?v=s720ldQLhho&t=596s) | SATS | long · exit | today | 2026-04-16 |
+
+
+## 2026-04-15 — All time highs!!
+
+[▶ watch](https://www.youtube.com/watch?v=eOHF9p4LAlw) · `data/ariel_hernandez/videos/recaps/2026-04-16_eOHF9p4LAlw` · 1 ticker flags · 13 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [11:02](https://www.youtube.com/watch?v=eOHF9p4LAlw&t=662s) | 9:43 | 'I had some at 9:43 and was just never able to keep it on the 8th' - read as a GEV price of 943, could conceivably be a clock time. | GEV | 🟡 |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [00:40](https://www.youtube.com/watch?v=eOHF9p4LAlw&t=40s) | AMZN | long · hold | — | 2026-04-15 |
+| · | [01:02](https://www.youtube.com/watch?v=eOHF9p4LAlw&t=62s) | NVDA | long · hold | — | 2026-04-15 |
+| ⬜ | [14:12](https://www.youtube.com/watch?v=eOHF9p4LAlw&t=852s) | MU | long · trim | — | _(unresolved)_ |
+| · | [06:32](https://www.youtube.com/watch?v=eOHF9p4LAlw&t=392s) | ARM | long · hold | — | 2026-04-15 |
+| · | [07:34](https://www.youtube.com/watch?v=eOHF9p4LAlw&t=454s) | CAR | short · add | today | 2026-04-15 |
+| · | [07:44](https://www.youtube.com/watch?v=eOHF9p4LAlw&t=464s) | CAR | short · cover | today | 2026-04-15 |
+| · | [09:18](https://www.youtube.com/watch?v=eOHF9p4LAlw&t=558s) | CIEN | long · entry | today | 2026-04-15 |
+| · | [10:29](https://www.youtube.com/watch?v=eOHF9p4LAlw&t=629s) | DELL | long · trim | today | 2026-04-15 |
+| ⬜ | [10:29](https://www.youtube.com/watch?v=eOHF9p4LAlw&t=629s) | DELL | long · entry | the 31st | 2026-03-31 |
+| ⬜ | [11:02](https://www.youtube.com/watch?v=eOHF9p4LAlw&t=662s) | GEV | long · entry | the 8th | 2026-04-08 |
+| ⬜ | [11:02](https://www.youtube.com/watch?v=eOHF9p4LAlw&t=662s) | GEV | long · exit | the 8th | 2026-04-08 |
+| ⬜ | [15:51](https://www.youtube.com/watch?v=eOHF9p4LAlw&t=951s) | SATS | long · entry | yesterday | 2026-04-14 |
+| ⬜ | [16:55](https://www.youtube.com/watch?v=eOHF9p4LAlw&t=1015s) | IGV | long · entry | the 13th | 2026-04-13 |
+
+
+## 2026-04-14 — Runaway train!
+
+[▶ watch](https://www.youtube.com/watch?v=T3Jj2FE2R7o) · `data/ariel_hernandez/videos/recaps/2026-04-14_T3Jj2FE2R7o` · 2 ticker flags · 19 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [01:58](https://www.youtube.com/watch?v=T3Jj2FE2R7o&t=118s) | I bid | 'I bid, as you started to weaken up a little bit. I I bought some yesterday in after hours ... If and when crypto wants to start acting just a touch better' | IBIT | 🟡 |
+| ⬜ | [02:07](https://www.youtube.com/watch?v=T3Jj2FE2R7o&t=127s) | IGB | 'IGB, I sold some off when you broke VWAP today'; later 'obviously IGV a little bit of a squat as well' | IGV | 🟡 |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [00:12](https://www.youtube.com/watch?v=T3Jj2FE2R7o&t=12s) | AMZN | long · trim | today | 2026-04-14 |
+| · | [01:47](https://www.youtube.com/watch?v=T3Jj2FE2R7o&t=107s) | DELL | long · hold | — | 2026-04-14 |
+| ⬜ | [01:58](https://www.youtube.com/watch?v=T3Jj2FE2R7o&t=118s) | IBIT | long · entry | yesterday in after hours | 2026-04-13 |
+| · | [01:58](https://www.youtube.com/watch?v=T3Jj2FE2R7o&t=118s) | IBIT | long · trim | today | 2026-04-14 |
+| · | [02:07](https://www.youtube.com/watch?v=T3Jj2FE2R7o&t=127s) | IGV | long · trim | today | 2026-04-14 |
+| ⬜ | [02:18](https://www.youtube.com/watch?v=T3Jj2FE2R7o&t=138s) | IGV | long · entry | yesterday | 2026-04-13 |
+| · | [02:31](https://www.youtube.com/watch?v=T3Jj2FE2R7o&t=151s) | MU | long · trim | today | 2026-04-14 |
+| · | [03:43](https://www.youtube.com/watch?v=T3Jj2FE2R7o&t=223s) | NVDA | long · trim | today | 2026-04-14 |
+| · | [05:02](https://www.youtube.com/watch?v=T3Jj2FE2R7o&t=302s) | RKLB | long · add | today | 2026-04-14 |
+| · | [05:23](https://www.youtube.com/watch?v=T3Jj2FE2R7o&t=323s) | RKLB | long · stopped_out | today | 2026-04-14 |
+| · | [05:33](https://www.youtube.com/watch?v=T3Jj2FE2R7o&t=333s) | RKLB | long · reentry | today | 2026-04-14 |
+| · | [06:14](https://www.youtube.com/watch?v=T3Jj2FE2R7o&t=374s) | QQQ | long · hold | — | 2026-04-14 |
+| · | [06:24](https://www.youtube.com/watch?v=T3Jj2FE2R7o&t=384s) | VLO | long · hold | — | 2026-04-14 |
+| · | [06:33](https://www.youtube.com/watch?v=T3Jj2FE2R7o&t=393s) | XOM | long · exit | today | 2026-04-14 |
+| · | [06:55](https://www.youtube.com/watch?v=T3Jj2FE2R7o&t=415s) | ARM | long · entry | today | 2026-04-14 |
+| · | [07:18](https://www.youtube.com/watch?v=T3Jj2FE2R7o&t=438s) | CAR | short · short | right in the morning | 2026-04-14 |
+| · | [07:29](https://www.youtube.com/watch?v=T3Jj2FE2R7o&t=449s) | CAR | short · cover | today | 2026-04-14 |
+| · | [07:39](https://www.youtube.com/watch?v=T3Jj2FE2R7o&t=459s) | AXTI | short · short | today | 2026-04-14 |
+| · | [07:50](https://www.youtube.com/watch?v=T3Jj2FE2R7o&t=470s) | AXTI | short · cover | today | 2026-04-14 |
+
+
+## 2026-04-13 — Running with the Bulls!
+
+[▶ watch](https://www.youtube.com/watch?v=XkPpDEkF08Q) · `data/ariel_hernandez/videos/recaps/2026-04-13_XkPpDEkF08Q` · 0 ticker flags · 17 trades
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [00:12](https://www.youtube.com/watch?v=XkPpDEkF08Q&t=12s) | IBIT | long · entry | today | 2026-04-13 |
+| · | [01:41](https://www.youtube.com/watch?v=XkPpDEkF08Q&t=101s) | IGV | long · entry | today | 2026-04-13 |
+| · | [03:56](https://www.youtube.com/watch?v=XkPpDEkF08Q&t=236s) | IGV | long · add | today | 2026-04-13 |
+| ⬜ | [04:05](https://www.youtube.com/watch?v=XkPpDEkF08Q&t=245s) | RKLB | long · entry | friday | 2026-04-10 |
+| ⬜ | [04:15](https://www.youtube.com/watch?v=XkPpDEkF08Q&t=255s) | RKLB | long · exit | friday | 2026-04-10 |
+| · | [04:15](https://www.youtube.com/watch?v=XkPpDEkF08Q&t=255s) | RKLB | long · entry | today | 2026-04-13 |
+| · | [05:13](https://www.youtube.com/watch?v=XkPpDEkF08Q&t=313s) | DELL | long · add | today | 2026-04-13 |
+| · | [05:22](https://www.youtube.com/watch?v=XkPpDEkF08Q&t=322s) | MU | long · add | today | 2026-04-13 |
+| · | [05:33](https://www.youtube.com/watch?v=XkPpDEkF08Q&t=333s) | MU | long · add | today | 2026-04-13 |
+| · | [05:43](https://www.youtube.com/watch?v=XkPpDEkF08Q&t=343s) | MU | long · add | today | 2026-04-13 |
+| ⬜ | [06:53](https://www.youtube.com/watch?v=XkPpDEkF08Q&t=413s) | ARM | long · entry | last week | _(unresolved)_ |
+| ⬜ | [07:04](https://www.youtube.com/watch?v=XkPpDEkF08Q&t=424s) | ARM | long · stopped_out | last week | _(unresolved)_ |
+| · | [08:06](https://www.youtube.com/watch?v=XkPpDEkF08Q&t=486s) | AMZN | long · hold | — | 2026-04-13 |
+| · | [08:06](https://www.youtube.com/watch?v=XkPpDEkF08Q&t=486s) | NVDA | long · hold | — | 2026-04-13 |
+| · | [08:06](https://www.youtube.com/watch?v=XkPpDEkF08Q&t=486s) | QQQ | long · hold | — | 2026-04-13 |
+| · | [08:06](https://www.youtube.com/watch?v=XkPpDEkF08Q&t=486s) | VLO | long · hold | — | 2026-04-13 |
+| · | [08:06](https://www.youtube.com/watch?v=XkPpDEkF08Q&t=486s) | XOM | long · hold | — | 2026-04-13 |
+
+
+## 2026-04-10 — Flat Base Breakout.
+
+[▶ watch](https://www.youtube.com/watch?v=85SuKMuBjEc) · `data/ariel_hernandez/videos/recaps/2026-04-13_85SuKMuBjEc` · 0 ticker flags · 8 trades
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [08:24](https://www.youtube.com/watch?v=85SuKMuBjEc&t=504s) | NVDA | long · entry | the fifth | _(unresolved)_ |
+| ⬜ | [09:35](https://www.youtube.com/watch?v=85SuKMuBjEc&t=575s) | ACLS | long · entry | — | _(unresolved)_ |
+| ⬜ | [14:29](https://www.youtube.com/watch?v=85SuKMuBjEc&t=869s) | TSLA | long · entry | this day | _(unresolved)_ |
+| ⬜ | [14:38](https://www.youtube.com/watch?v=85SuKMuBjEc&t=878s) | TSLA | long · add | the 11th | _(unresolved)_ |
+| ⬜ | [15:56](https://www.youtube.com/watch?v=85SuKMuBjEc&t=956s) | RKLB | long · entry | the first | _(unresolved)_ |
+| ⬜ | [16:07](https://www.youtube.com/watch?v=85SuKMuBjEc&t=967s) | RKLB | long · exit | the first | _(unresolved)_ |
+| ⬜ | [16:07](https://www.youtube.com/watch?v=85SuKMuBjEc&t=967s) | RKLB | long · reentry | the second | _(unresolved)_ |
+| · | [19:53](https://www.youtube.com/watch?v=85SuKMuBjEc&t=1193s) | XOM | long · hold | — | 2026-04-10 |
+
+
+## 2026-04-09 — Bulls get continuation!
+
+[▶ watch](https://www.youtube.com/watch?v=mt3uTrsgnGs) · `data/ariel_hernandez/videos/recaps/2026-04-09_mt3uTrsgnGs` · 1 ticker flags · 19 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [12:51](https://www.youtube.com/watch?v=mt3uTrsgnGs&t=771s) | Arc | 'I don't have many shorts on. Arc is the only one and a tiny piece of car' | ARKK | 🟡 |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [01:16](https://www.youtube.com/watch?v=mt3uTrsgnGs&t=76s) | MU | long · entry | today | 2026-04-09 |
+| · | [01:38](https://www.youtube.com/watch?v=mt3uTrsgnGs&t=98s) | MU | long · stopped_out | today | 2026-04-09 |
+| · | [01:49](https://www.youtube.com/watch?v=mt3uTrsgnGs&t=109s) | MU | long · reentry | today | 2026-04-09 |
+| · | [09:04](https://www.youtube.com/watch?v=mt3uTrsgnGs&t=544s) | AMZN | long · entry | today | 2026-04-09 |
+| · | [03:00](https://www.youtube.com/watch?v=mt3uTrsgnGs&t=180s) | AXTI | short · short | today | 2026-04-09 |
+| · | [03:00](https://www.youtube.com/watch?v=mt3uTrsgnGs&t=180s) | AXTI | short · stopped_out | today | 2026-04-09 |
+| · | [03:13](https://www.youtube.com/watch?v=mt3uTrsgnGs&t=193s) | AXTI | short · reentry | today | 2026-04-09 |
+| · | [03:13](https://www.youtube.com/watch?v=mt3uTrsgnGs&t=193s) | AXTI | short · add | today | 2026-04-09 |
+| · | [03:23](https://www.youtube.com/watch?v=mt3uTrsgnGs&t=203s) | AXTI | short · cover | today | 2026-04-09 |
+| · | [03:34](https://www.youtube.com/watch?v=mt3uTrsgnGs&t=214s) | CAR | short · short | today | 2026-04-09 |
+| · | [03:45](https://www.youtube.com/watch?v=mt3uTrsgnGs&t=225s) | CAR | short · cover | today | 2026-04-09 |
+| · | [12:51](https://www.youtube.com/watch?v=mt3uTrsgnGs&t=771s) | CAR | short · short | today | 2026-04-09 |
+| · | [03:55](https://www.youtube.com/watch?v=mt3uTrsgnGs&t=235s) | RKLB | long · entry | today | 2026-04-09 |
+| · | [04:26](https://www.youtube.com/watch?v=mt3uTrsgnGs&t=266s) | RKLB | long · exit | today | 2026-04-09 |
+| · | [05:32](https://www.youtube.com/watch?v=mt3uTrsgnGs&t=332s) | DELL | long · hold | — | 2026-04-09 |
+| · | [05:32](https://www.youtube.com/watch?v=mt3uTrsgnGs&t=332s) | ARKK | short · cover | today | 2026-04-09 |
+| · | [06:07](https://www.youtube.com/watch?v=mt3uTrsgnGs&t=367s) | XOM | long · hold | — | 2026-04-09 |
+| · | [08:05](https://www.youtube.com/watch?v=mt3uTrsgnGs&t=485s) | VLO | long · hold | — | 2026-04-09 |
+| · | [07:33](https://www.youtube.com/watch?v=mt3uTrsgnGs&t=453s) | QQQ | long · hold | — | 2026-04-09 |
+
+
+## 2026-04-08 — Bulls earn the Follow Through Day!!!
+
+[▶ watch](https://www.youtube.com/watch?v=xcc2K4tOVT4) · `data/ariel_hernandez/videos/recaps/2026-04-09_xcc2K4tOVT4` · 0 ticker flags · 7 trades
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [01:23](https://www.youtube.com/watch?v=xcc2K4tOVT4&t=83s) | XOM | long · hold | — | 2026-04-08 |
+| · | [01:23](https://www.youtube.com/watch?v=xcc2K4tOVT4&t=83s) | VLO | long · hold | — | 2026-04-08 |
+| · | [06:36](https://www.youtube.com/watch?v=xcc2K4tOVT4&t=396s) | AMPX | long · entry | today | 2026-04-08 |
+| · | [06:36](https://www.youtube.com/watch?v=xcc2K4tOVT4&t=396s) | AMPX | long · stopped_out | today | 2026-04-08 |
+| · | [07:39](https://www.youtube.com/watch?v=xcc2K4tOVT4&t=459s) | GEV | long · entry | today | 2026-04-08 |
+| · | [07:39](https://www.youtube.com/watch?v=xcc2K4tOVT4&t=459s) | GEV | long · exit | today | 2026-04-08 |
+| · | [09:53](https://www.youtube.com/watch?v=xcc2K4tOVT4&t=593s) | CAR | short · short | today | 2026-04-08 |
+
+
+## 2026-04-07 — Bulls are waking up!
+
+[▶ watch](https://www.youtube.com/watch?v=2H9p8xthyNo) · `data/ariel_hernandez/videos/recaps/2026-04-07_2H9p8xthyNo` · 2 ticker flags · 9 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [02:59](https://www.youtube.com/watch?v=2H9p8xthyNo&t=179s) | baby GO | 'Even out of baby GO, this was a name that I was short ... I had to get out of my position 331' | ? | ❓ |
+| ⬜ | [04:59](https://www.youtube.com/watch?v=2H9p8xthyNo&t=299s) | Arc | 'I still continue to be short Arc' - said right after the aerospace/Rocket Lab/SpaceX passage | ARKK | ❓ |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [01:35](https://www.youtube.com/watch?v=2H9p8xthyNo&t=95s) | DELL | long · hold | — | 2026-04-07 |
+| ⬜ | [02:59](https://www.youtube.com/watch?v=2H9p8xthyNo&t=179s) | ? | short · short | — | _(unresolved)_ |
+| ⬜ | [02:59](https://www.youtube.com/watch?v=2H9p8xthyNo&t=179s) | ? | short · cover | — | _(unresolved)_ |
+| ⬜ | [04:59](https://www.youtube.com/watch?v=2H9p8xthyNo&t=299s) | ? | short · hold | — | 2026-04-07 |
+| · | [05:21](https://www.youtube.com/watch?v=2H9p8xthyNo&t=321s) | CAR | short · short | today | 2026-04-07 |
+| · | [05:49](https://www.youtube.com/watch?v=2H9p8xthyNo&t=349s) | CAR | short · cover | today | 2026-04-07 |
+| · | [05:49](https://www.youtube.com/watch?v=2H9p8xthyNo&t=349s) | CAR | short · cover | today | 2026-04-07 |
+| · | [05:49](https://www.youtube.com/watch?v=2H9p8xthyNo&t=349s) | CAR | short · reentry | today | 2026-04-07 |
+| · | [06:05](https://www.youtube.com/watch?v=2H9p8xthyNo&t=365s) | CAR | short · cover | today | 2026-04-07 |
+
+
+## 2026-04-06 — A total sleeper... Zzzzzzz
+
+[▶ watch](https://www.youtube.com/watch?v=6-dRT5ix61o) · `data/ariel_hernandez/videos/recaps/2026-04-06_6-dRT5ix61o` · 2 ticker flags · 9 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [02:40](https://www.youtube.com/watch?v=6-dRT5ix61o&t=160s) | Arc | 'I did add a piece of Arc against the 20 simple moving average' ... 09:13 'I still hold Arc short' | ARKK | ❓ |
+| ⬜ | [09:13](https://www.youtube.com/watch?v=6-dRT5ix61o&t=553s) | Appa | 'I did go ahead and take off the last of Appa' right after 'I continue to hold VLO and XOM' | APA | ❓ |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [02:40](https://www.youtube.com/watch?v=6-dRT5ix61o&t=160s) | XOM | long · hold | — | 2026-04-06 |
+| · | [09:02](https://www.youtube.com/watch?v=6-dRT5ix61o&t=542s) | VLO | long · hold | — | 2026-04-06 |
+| ⬜ | [02:40](https://www.youtube.com/watch?v=6-dRT5ix61o&t=160s) | ? | short · add | today | 2026-04-06 |
+| · | [02:53](https://www.youtube.com/watch?v=6-dRT5ix61o&t=173s) | AXTI | short · cover | today | 2026-04-06 |
+| ⬜ | [03:06](https://www.youtube.com/watch?v=6-dRT5ix61o&t=186s) | AXTI | short · add | thursday | 2026-04-02 |
+| ⬜ | [03:19](https://www.youtube.com/watch?v=6-dRT5ix61o&t=199s) | AXTI | short · cover | — | _(unresolved)_ |
+| · | [03:19](https://www.youtube.com/watch?v=6-dRT5ix61o&t=199s) | QQQ | long · trim | today | 2026-04-06 |
+| ⬜ | [09:13](https://www.youtube.com/watch?v=6-dRT5ix61o&t=553s) | ? | unknown · exit | today | 2026-04-06 |
+| · | [09:13](https://www.youtube.com/watch?v=6-dRT5ix61o&t=553s) | AVGO | short · hold | — | 2026-04-06 |
+
+
+## 2026-04-03 — MA-Rejection
+
+[▶ watch](https://www.youtube.com/watch?v=5wsSZZLN4kk) · `data/ariel_hernandez/videos/recaps/2026-04-06_5wsSZZLN4kk` · 1 ticker flags · 14 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [09:15](https://www.youtube.com/watch?v=5wsSZZLN4kk&t=555s) | AVGO ... when I got short | He walks AppLovin, then 'Even AVGO, similar story', then 'what I was looking at on this day when I got short'; the short is read as AVGO, the chart on screen. | AVGO | 🟡 |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [04:00](https://www.youtube.com/watch?v=5wsSZZLN4kk&t=240s) | GDX | short · short | — | _(unresolved)_ |
+| ⬜ | [04:00](https://www.youtube.com/watch?v=5wsSZZLN4kk&t=240s) | GDX | short · cover | — | _(unresolved)_ |
+| ⬜ | [07:13](https://www.youtube.com/watch?v=5wsSZZLN4kk&t=433s) | APP | short · short | — | _(unresolved)_ |
+| ⬜ | [07:13](https://www.youtube.com/watch?v=5wsSZZLN4kk&t=433s) | APP | short · cover | — | _(unresolved)_ |
+| ⬜ | [07:48](https://www.youtube.com/watch?v=5wsSZZLN4kk&t=468s) | APP | short · short | the next day | _(unresolved)_ |
+| ⬜ | [07:59](https://www.youtube.com/watch?v=5wsSZZLN4kk&t=479s) | APP | short · cover | by the end of the day | _(unresolved)_ |
+| ⬜ | [09:38](https://www.youtube.com/watch?v=5wsSZZLN4kk&t=578s) | AVGO | short · short | — | _(unresolved)_ |
+| ⬜ | [11:38](https://www.youtube.com/watch?v=5wsSZZLN4kk&t=698s) | COIN | long · entry | — | _(unresolved)_ |
+| ⬜ | [14:08](https://www.youtube.com/watch?v=5wsSZZLN4kk&t=848s) | COIN | long · trim | — | _(unresolved)_ |
+| ⬜ | [14:17](https://www.youtube.com/watch?v=5wsSZZLN4kk&t=857s) | COIN | long · stopped_out | the next day | _(unresolved)_ |
+| ⬜ | [15:55](https://www.youtube.com/watch?v=5wsSZZLN4kk&t=955s) | MSTR | short · short | — | _(unresolved)_ |
+| ⬜ | [15:45](https://www.youtube.com/watch?v=5wsSZZLN4kk&t=945s) | MSTR | short · stopped_out | — | _(unresolved)_ |
+| ⬜ | [16:19](https://www.youtube.com/watch?v=5wsSZZLN4kk&t=979s) | NFLX | short · short | — | _(unresolved)_ |
+| ⬜ | [16:41](https://www.youtube.com/watch?v=5wsSZZLN4kk&t=1001s) | NFLX | short · add | — | _(unresolved)_ |
+
+
+## 2026-04-02 — Are we ready to follow through?
+
+[▶ watch](https://www.youtube.com/watch?v=7cqIpSAKQsw) · `data/ariel_hernandez/videos/recaps/2026-04-03_7cqIpSAKQsw` · 0 ticker flags · 8 trades
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [00:56](https://www.youtube.com/watch?v=7cqIpSAKQsw&t=56s) | QQQ | long · entry | tuesday | 2026-03-31 |
+| ⬜ | [01:09](https://www.youtube.com/watch?v=7cqIpSAKQsw&t=69s) | DELL | long · entry | tuesday | 2026-03-31 |
+| ⬜ | [11:07](https://www.youtube.com/watch?v=7cqIpSAKQsw&t=667s) | LITE | short · cover | thursday | 2026-03-26 |
+| ⬜ | [11:31](https://www.youtube.com/watch?v=7cqIpSAKQsw&t=691s) | AXTI | short · cover | thursday | 2026-03-26 |
+| ⬜ | [11:54](https://www.youtube.com/watch?v=7cqIpSAKQsw&t=714s) | DELL | long · trim | thursday | 2026-03-26 |
+| ⬜ | [12:08](https://www.youtube.com/watch?v=7cqIpSAKQsw&t=728s) | QQQ | long · trim | thursday | 2026-03-26 |
+| · | [12:08](https://www.youtube.com/watch?v=7cqIpSAKQsw&t=728s) | AVGO | short · hold | — | 2026-04-02 |
+| ⬜ | [12:19](https://www.youtube.com/watch?v=7cqIpSAKQsw&t=739s) | AAPL | short · cover | thursday | 2026-03-26 |
+
+
+## 2026-04-02 — March Recap: $1,031,358.14
+
+[▶ watch](https://www.youtube.com/watch?v=cFqpoVNXOGQ) · `data/ariel_hernandez/videos/recaps/2026-04-04_cFqpoVNXOGQ` · 4 ticker flags · 77 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [25:00](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=1500s) | APPA | 13x ATR from the 50, rolling over 'despite crude oil's 11% move'; two short trades | APA | 🟡 |
+| ⬜ | [30:38](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=1838s) | that silver name | a short he traded repeatedly in March; never named | ? | ❓ |
+| ⬜ | [12:35](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=755s) | Arc | short against the 20; listed as 'ARKK on the short side' at 02:55 | ARKK | 🟡 |
+| ⬜ | [29:35](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=1775s) | Apple 11 / Apple | 'trying to short Apple 11' = AppLovin; 'Apple was fine' at 30:04 probably = APA | APP / APA | 🟡 |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [03:10](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=190s) | XOM | long · hold | — | 2026-04-02 |
+| · | [03:10](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=190s) | VLO | long · hold | — | 2026-04-02 |
+| ⬜ | [04:06](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=246s) | GDX | short · short | the 2nd | 2026-03-02 |
+| ⬜ | [04:50](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=290s) | GDX | short · cover | — | _(unresolved)_ |
+| ⬜ | [05:13](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=313s) | GDX | short · cover | the 19th | 2026-03-19 |
+| ⬜ | [06:16](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=376s) | BE | long · entry | march 4th | 2026-03-04 |
+| ⬜ | [06:49](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=409s) | BE | long · add | — | _(unresolved)_ |
+| ⬜ | [06:59](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=419s) | BE | long · exit | — | _(unresolved)_ |
+| ⬜ | [07:09](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=429s) | APP | short · short | the 5th | 2026-03-05 |
+| ⬜ | [07:09](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=429s) | APP | short · cover | the 5th | _(unresolved)_ |
+| ⬜ | [07:09](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=429s) | APP | short · short | the 6th | 2026-03-06 |
+| ⬜ | [07:44](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=464s) | APP | short · cover | the 6th | _(unresolved)_ |
+| ⬜ | [08:38](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=518s) | PLTR | short · short | — | _(unresolved)_ |
+| ⬜ | [08:49](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=529s) | PLTR | short · add | — | _(unresolved)_ |
+| ⬜ | [09:10](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=550s) | PLTR | short · cover | a couple days later | _(unresolved)_ |
+| ⬜ | [09:10](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=550s) | PLTR | short · stopped_out | the 23rd | 2026-03-23 |
+| ⬜ | [09:31](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=571s) | NVDA | short · short | the 10th | 2026-03-10 |
+| ⬜ | [09:56](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=596s) | NVDA | short · add | the following day | 2026-03-11 |
+| ⬜ | [09:43](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=583s) | NVDA | short · cover | the following day | _(unresolved)_ |
+| ⬜ | [09:56](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=596s) | NVDA | short · reentry | — | _(unresolved)_ |
+| ⬜ | [10:07](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=607s) | NVDA | short · stopped_out | — | _(unresolved)_ |
+| ⬜ | [10:50](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=650s) | DELL | long · entry | the 11th | 2026-03-11 |
+| ⬜ | [10:59](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=659s) | DELL | long · exit | the 11th | _(unresolved)_ |
+| ⬜ | [11:49](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=709s) | RKLB | long · entry | 3/12 | 2026-03-12 |
+| ⬜ | [12:12](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=732s) | RKLB | long · exit | 3/12 | _(unresolved)_ |
+| ⬜ | [12:35](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=755s) | ARKK | short · short | the 13th | 2026-03-13 |
+| ⬜ | [13:03](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=783s) | ARKK | short · add | — | _(unresolved)_ |
+| ⬜ | [12:53](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=773s) | ARKK | short · stopped_out | the 17th | 2026-03-17 |
+| ⬜ | [12:53](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=773s) | ARKK | short · reentry | the 18th | 2026-03-18 |
+| ⬜ | [15:40](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=940s) | ARKK | short · add | — | _(unresolved)_ |
+| ⬜ | [15:50](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=950s) | ARKK | short · cover | — | _(unresolved)_ |
+| ⬜ | [13:46](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=826s) | COIN | long · entry | — | _(unresolved)_ |
+| ⬜ | [13:46](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=826s) | COIN | long · exit | — | _(unresolved)_ |
+| ⬜ | [14:16](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=856s) | RKLB | long · reentry | the 17th | 2026-03-17 |
+| ⬜ | [15:19](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=919s) | RKLB | long · exit | the next day | 2026-03-18 |
+| ⬜ | [16:22](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=982s) | AXTI | short · short | the 18th | 2026-03-18 |
+| ⬜ | [17:52](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=1072s) | AXTI | short · stopped_out | the next day | 2026-03-19 |
+| ⬜ | [16:46](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=1006s) | AXTI | short · add | — | _(unresolved)_ |
+| ⬜ | [19:23](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=1163s) | AXTI | short · reentry | the 20th | 2026-03-20 |
+| ⬜ | [19:51](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=1191s) | AXTI | short · stopped_out | the 23rd | 2026-03-23 |
+| ⬜ | [19:23](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=1163s) | AXTI | short · reentry | the 24th | 2026-03-24 |
+| ⬜ | [19:44](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=1184s) | AXTI | short · cover | — | _(unresolved)_ |
+| ⬜ | [20:38](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=1238s) | AXTI | short · reentry | the 20th | _(unresolved)_ |
+| ⬜ | [21:03](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=1263s) | AXTI | short · add | — | _(unresolved)_ |
+| ⬜ | [21:53](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=1313s) | AXTI | short · cover | — | _(unresolved)_ |
+| ⬜ | [21:53](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=1313s) | AXTI | short · add | thursday | 2026-03-26 |
+| ⬜ | [22:06](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=1326s) | AXTI | short · cover | thursday | 2026-03-26 |
+| ⬜ | [18:31](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=1111s) | BE | long · entry | the 19th | 2026-03-19 |
+| ⬜ | [19:01](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=1141s) | BE | long · trim | — | _(unresolved)_ |
+| ⬜ | [19:01](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=1141s) | BE | long · exit | the next day | 2026-03-20 |
+| ⬜ | [23:11](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=1391s) | AVGO | short · short | late february | _(unresolved)_ |
+| ⬜ | [23:22](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=1402s) | AVGO | short · stopped_out | not long after earnings | _(unresolved)_ |
+| ⬜ | [23:22](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=1402s) | AVGO | short · reentry | — | _(unresolved)_ |
+| ⬜ | [23:44](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=1424s) | AVGO | short · cover | — | _(unresolved)_ |
+| ⬜ | [23:53](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=1433s) | LITE | short · short | — | _(unresolved)_ |
+| ⬜ | [23:53](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=1433s) | LITE | short · cover | a few days later | _(unresolved)_ |
+| ⬜ | [24:08](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=1448s) | LITE | short · cover | the very next day | _(unresolved)_ |
+| ⬜ | [24:08](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=1448s) | LITE | short · cover | the very next day | _(unresolved)_ |
+| ⬜ | [24:21](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=1461s) | LITE | short · add | — | _(unresolved)_ |
+| ⬜ | [24:37](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=1477s) | LITE | short · cover | — | _(unresolved)_ |
+| ⬜ | [24:49](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=1489s) | LITE | short · stopped_out | — | _(unresolved)_ |
+| ⬜ | [24:49](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=1489s) | LITE | short · cover | — | _(unresolved)_ |
+| ⬜ | [24:59](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=1499s) | APA | short · short | — | _(unresolved)_ |
+| ⬜ | [25:11](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=1511s) | APA | short · add | — | _(unresolved)_ |
+| ⬜ | [25:11](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=1511s) | APA | short · cover | — | _(unresolved)_ |
+| ⬜ | [25:23](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=1523s) | APA | short · reentry | the 30th | 2026-03-30 |
+| ⬜ | [25:23](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=1523s) | APA | short · add | that same day | 2026-03-30 |
+| ⬜ | [25:35](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=1535s) | APA | short · cover | — | _(unresolved)_ |
+| ⬜ | [25:46](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=1546s) | APA | short · add | the following day | _(unresolved)_ |
+| ⬜ | [25:57](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=1557s) | APA | short · cover | thursday | 2026-03-26 |
+| ⬜ | [26:41](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=1601s) | QQQ | long · entry | — | _(unresolved)_ |
+| ⬜ | [26:41](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=1601s) | QQQ | long · trim | — | _(unresolved)_ |
+| ⬜ | [27:37](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=1657s) | DELL | long · entry | — | _(unresolved)_ |
+| ⬜ | [27:37](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=1657s) | DELL | long · stopped_out | — | _(unresolved)_ |
+| ⬜ | [27:47](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=1667s) | DELL | long · reentry | — | _(unresolved)_ |
+| ⬜ | [27:47](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=1667s) | DELL | long · trim | — | _(unresolved)_ |
+| ⬜ | [30:27](https://www.youtube.com/watch?v=cFqpoVNXOGQ&t=1827s) | ? | short · short | — | _(unresolved)_ |
+
+
+## 2026-04-01 — Bulls get the day 2 rally!
+
+[▶ watch](https://www.youtube.com/watch?v=fx5BUtP3P_U) · `data/ariel_hernandez/videos/recaps/2026-04-01_fx5BUtP3P_U` · 4 ticker flags · 15 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [02:50](https://www.youtube.com/watch?v=fx5BUtP3P_U&t=170s) | Arc | Position he adds to on intraday failure, stopped, re-added at '6922'; listed between APPA and AVGO in his open positions. | ARKK | 🟡 |
+| ⬜ | [03:01](https://www.youtube.com/watch?v=fx5BUtP3P_U&t=181s) | APPA | 'I tried adding some APPA today'; then refers to 'these energy names'. Taken as APA Corp. | APA | 🟡 |
+| ⬜ | [10:44](https://www.youtube.com/watch?v=fx5BUtP3P_U&t=644s) | Dow was good and then reshorting Apple was good | Month recap of his positions; 'Dow' probably Dell and 'Apple' probably the same APPA name. No rows logged from this sentence. | ? | ❓ |
+| ⬜ | [10:35](https://www.youtube.com/watch?v=fx5BUtP3P_U&t=635s) | XTI | 'whether it was XTI has been unbelievable which I still have' - AXTI with the first letter dropped. | AXTI | 🟡 |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| · | [00:35](https://www.youtube.com/watch?v=fx5BUtP3P_U&t=35s) | LITE | short · cover | today | 2026-04-01 |
+| · | [00:57](https://www.youtube.com/watch?v=fx5BUtP3P_U&t=57s) | LITE | short · add | today | 2026-04-01 |
+| · | [01:20](https://www.youtube.com/watch?v=fx5BUtP3P_U&t=80s) | AXTI | short · cover | today | 2026-04-01 |
+| · | [02:29](https://www.youtube.com/watch?v=fx5BUtP3P_U&t=149s) | AVGO | short · cover | today | 2026-04-01 |
+| ⬜ | [02:50](https://www.youtube.com/watch?v=fx5BUtP3P_U&t=170s) | ? | short · add | today | 2026-04-01 |
+| ⬜ | [02:50](https://www.youtube.com/watch?v=fx5BUtP3P_U&t=170s) | ? | short · stopped_out | today | 2026-04-01 |
+| ⬜ | [03:01](https://www.youtube.com/watch?v=fx5BUtP3P_U&t=181s) | ? | short · add | today | 2026-04-01 |
+| · | [03:01](https://www.youtube.com/watch?v=fx5BUtP3P_U&t=181s) | APA | short · add | today | 2026-04-01 |
+| · | [03:14](https://www.youtube.com/watch?v=fx5BUtP3P_U&t=194s) | APA | short · cover | today | 2026-04-01 |
+| ⬜ | [03:14](https://www.youtube.com/watch?v=fx5BUtP3P_U&t=194s) | APA | short · add | yesterday | 2026-03-31 |
+| ⬜ | [03:14](https://www.youtube.com/watch?v=fx5BUtP3P_U&t=194s) | APA | short · cover | yesterday | 2026-03-31 |
+| · | [03:33](https://www.youtube.com/watch?v=fx5BUtP3P_U&t=213s) | DELL | long · trim | today | 2026-04-01 |
+| · | [03:33](https://www.youtube.com/watch?v=fx5BUtP3P_U&t=213s) | QQQ | long · trim | today | 2026-04-01 |
+| ⬜ | [13:44](https://www.youtube.com/watch?v=fx5BUtP3P_U&t=824s) | XOM | long · trim | the 30th | 2026-03-30 |
+| · | [13:56](https://www.youtube.com/watch?v=fx5BUtP3P_U&t=836s) | VLO | long · hold | — | 2026-04-01 |
 

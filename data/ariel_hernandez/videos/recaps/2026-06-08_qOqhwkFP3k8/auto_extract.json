@@ -1,0 +1,35 @@
+{
+ "video_id": "qOqhwkFP3k8",
+ "title": "Wide and Loose = time to be patient",
+ "upload_date": "2026-06-08",
+ "date": "2026-06-08",
+ "session_date": "2026-06-08",
+ "session_date_basis": "spoken",
+ "observed_trades": [
+  {
+   "date": "2026-06-08",
+   "ticker": "NBIS",
+   "ticker_as_captioned": "NBIS",
+   "vehicle": null,
+   "direction": "long",
+   "action": "hold",
+   "fill_timing": "",
+   "timing_basis": "",
+   "fill_date_stated": "",
+   "is_retrospective": false,
+   "position_after": "open",
+   "setup": "Still owns it; a little weak today, he had hoped for more strength off the 20-day.",
+   "entry_basis": "",
+   "stop": "",
+   "size": "",
+   "price": null,
+   "price_kind": null,
+   "source": "2026-06-08_qOqhwkFP3k8@04:29",
+   "confidence": "stated",
+   "quote": "We'll see what it does tomorrow. This is a name I still own.",
+   "notes": "Ticker named at 04:18 ('NBIS, you know, this is another quote-unquote Neo Cloud')."
+  }
+ ],
+ "principles": [],
+ "ambiguous_tickers": []
+}

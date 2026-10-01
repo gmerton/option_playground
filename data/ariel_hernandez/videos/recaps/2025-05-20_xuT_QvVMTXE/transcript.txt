@@ -1,0 +1,133 @@
+[00:00] Hey everybody, it is May 19th, 2025 and I just wanted to make this video um you know I talked a little bit about this today um during the live stream. I wanted to make this video to show you
+
+[00:12] guys a little bit about how even I build myself a scan within Finn Viz. I personally love Finn Viz. You guys can tinker with it a little bit more. I went out today and got Finn Viz Elite. Um so
+
+[00:26] there is no more ads popping up. Um and and you know, we don't have to look at those eyes. Um hopefully I find a little bit more value in Finn Viz Elite. I will let you guys know um how I feel about it
+
+[00:39] um going forward, but I was just using the free version for forever. Um I found it to be plenty. Um but I will be just kind of diving into in this video here um how we build a watch list. And you
+
+[00:52] guys will even notice that some of the stocks that I've been talking about, some of the stocks that I do talk about end up on a screener as simple as this one. Um, and so I wanted to make this
+
+[01:03] video just so I can put it in like the education tab for, you know, just scanning the market, building your watch list, um, as a educational video. Um, and hopefully, you know, the people who
+
+[01:15] missed today's live stream will always have that for themselves going forward. So, um, very very simply for those of you who don't know, this effectively is Finn Viz. This is the finnvvis.com
+
+[01:29] uh website. It's it's very convenient, right? You have your tickers that were your top gainers on the day, your biggest losers of the day. A nice little heat map. You know, they they uh draw
+
+[01:39] out some they give you some tickers that, you know, have symbols, you know, that some things are wedging, some things are channeling up, blah blah blah. I don't really focus too much on
+
+[01:47] that. I like to get right into the meat and potatoes and I like to make myself my own screener. So, um, when I go into finnvvis.com, the first thing you're going to do is you're going to click on
+
+[02:00] screener. Um, and then one of the things that I like to do is instead of, you know, going descriptive, fundamental, technical, news, ETF, I just go to all and effectively I get all of the things
+
+[02:11] that they have um as potential filters to help me find what it is that I'm looking for. So, one of the first things that I tend to look for um when I'm on Finn Viz is I'm focused on the market
+
+[02:25] cap, right? So, I don't want anything that's too too massive and above or too too cheap. Um, you know, I want something effectively small, but it has to be over $300 million. Um, I don't
+
+[02:39] want to be in things that are, you know, under $200 million or things that have to be 5 billion and above. Um, right, just anything that's over $300 million of mark cap market cap. It effectively
+
+[02:51] eliminates everything else um that's below it. um that's just going to be either too illquid, too cheap, too shitty. Um and just let's just go ahead and throw those out the window. So, uh
+
+[03:01] first filter is small when you go to market cap. Second, uh thing down on the far left column, market cap small plus, so over 300 million. The next thing that I want to do is, especially now that the
+
+[03:16] market has been healthier, I do not care about stocks if they're not above their 50 simple moving average at this point. So, um, very simply, price has to be above 50 simple moving average. So,
+
+[03:32] price above 50 SMA. Um, I only want to look for stocks. I don't care about ETFs. So, stocks only exclude funds, right? So, that's um one that I will have right there. The other one that I
+
+[03:46] normally like to have is um 52- week high low. So, I want to know stocks that have already been in an uptrend effectively. So, um you know, you know, if I'm looking at a uh from its 52- week
+
+[04:00] low, so you know, going back a year, I really want to know stocks that are call it even 50% above their low. And this is where you can kind of get to the tinkering. Um, if you want to if you
+
+[04:11] want stocks that are very very have been very explosive, right, 70% above their 52- week lows, uh, 50% is going to give you, you know, a wider range of stocks. But just for the sake of this video, um,
+
+[04:25] and so we can kind of narrow our focus. Um, and again, this is where I like Finn Viz. You go ahead and play with it. You can save the scanner, you can build another one, you can save that one. Um,
+
+[04:36] and just kind of fool around with these. But for the sake again of this video, let's do 70% or more above their 52- week low. So, um, let's go 70% or more above low, um, is what I like to do for
+
+[04:52] price. You know, I I don't mind stocks that are and and the reason that I say this is as long as they trade enough volume, right? I remember I caught a super super big winner um, in Rocket Lab
+
+[05:04] and I had like a $6 average. So really, you know, I don't want to do over five, right? You know, I mean that, you know, that'll get you there. But even Rocket Lab, let's just say over seven, right?
+
+[05:16] Let's just somewhere in the middle over $7 on stocks. Um, and then we can go a little bit further. Average volume, you know, it's going to give me stocks that are a bit more expensive, stocks that
+
+[05:27] are a little bit cheaper. But if you know um and again when I'm scanning I I I will look at these charts and I'll put them into Thinker Swim or I'll put them into Deep View or I'll put them into um
+
+[05:37] your trading view. You're going to look at how much volume they're actually trading. Multiply it by the price that gives you your dollar volume. Um I want my stocks at the minimum again because
+
+[05:47] it's dependent on price to be trading at least over a 100,000 shares per day. I mean, obviously, um, this is just going to filter out and weed out all of the crap lowflat China stocks, you know,
+
+[06:00] that that are just kind of booming, trading, you know, 85,000 shares a day. So, um, how do we take this thing one step further? Well, we're going to take this thing one step further by, um, and
+
+[06:14] obviously you guys can see here I have 20 pages, right? That's just a little a little bit obnoxious. So, what's something else we can do to, you know, um to kind of, you know, tighten these
+
+[06:28] things up? Um, you know, one of the things that I then like to do is I like to look at EPS growth quarter over quarter. If anybody here has studied Bill O'Neal, what did Bill O'Neal always
+
+[06:40] say? Stocks that had um earnings and sales growth 30% greater quarter over quarter for three straight quarters tend to give you the biggest moves in the future. Right? So, especially in a
+
+[06:52] healthy market. So, again, this is one of those that you can tinker with as well. But I like to go with let's go over let's call it 20% quarter over quarter on EPS. And then right next to
+
+[07:06] it, sales column, 20% uh quarter over-arter sales growth. All of a sudden, my window of stocks has gotten a whole lot smaller. Um, if I want to take it even one step further, let's go 30%
+
+[07:21] quarter over quarter growth and 30% quarter over quarter growth for sales. All of a sudden, now we're down to three windows. And then very, very simply, what do I do? Well, you know, if I want
+
+[07:35] to take it one step further and you're like, "Hey, look, this market has been super strong. If you're not above the 200 simple moving average, I don't care about you either." So, price above the
+
+[07:46] 200 SMA. What does that do? It still leaves us at three pages, but maybe knocked out a uh knocked off a few tickers. And then, you know, you've got this really, really nice list of charts.
+
+[07:56] Obviously, you can just kind of hover over them, and these are going to be charts that are very, very strong. Um, but again, let's go a little bit further. Let's just look at this in
+
+[08:05] chart form. Go ahead and click chart. Scroll down. Now you have chart. And then if you want to take it again one step further. Um, you know, Finn Viz does allow me to adjust these. So, it's
+
+[08:18] got a 50 simple, a 200. So, those are just the only two lines on the chart. Completely fine. Um, but just kind of to take a bigger picture view on some of these charts, right? We can look at the
+
+[08:28] weekly. Um, and then we go down to these stocks right here. Um, and and again, this is you're at five pages, but now we're looking at charts effectively, and there's only, you know, 12 charts per
+
+[08:41] per um, you know, per page. So now there is effectively, you know, five pages worth of charts for us to look through. And then I can start to really see these names and um, you know, figure out what
+
+[08:54] exactly is what. So you know ALAB semiconductor you know AMS and then you know you've got your industry group. So right when I'm looking at the industry group you can see how this says
+
+[09:05] specialty industrial machinery and then BCRX drug manufacturer lodging solar right and and you can look at it like that. Um, and it's a very very nice way to start to make sense of what group
+
+[09:21] these things are in. Right? CRDO, another semiconductor, right? ALAB, a semiconductor, right? Carvana, and you can start to see what these weekly looks like. And again, for me, it's just as
+
+[09:32] simple as, you know, taking a few of these stocks and going through them, right? What does an affirm look like? Nope. What's AGX look like? And then you'd say, okay, well, this thing moves
+
+[09:43] 5% per day, completely vertical, effectively new all-time high. Is that going to be a double top short sale? I don't know. But I would never buy this here. Needs to build out the right hand
+
+[09:52] side of the chart. But AGX looks pretty interesting. Trades $50 million a day. A bounce right off the lows. Straight off the right hand side. Okay, next. AB. How does that look? Okay, well, it's just
+
+[10:03] starting to come around above the 50, above the 200. It's in the semiconductor space. A nice move up. Starting to flag out a little bit here. a few more days, this thing could look good, right? AMSC
+
+[10:14] um is another stock. And so when I'm coming across these names, if I think that they're actionable, right? So, not only did I already filter, I know they have good earnings and sales, when I
+
+[10:24] recognize that they're in a similar group and these groups are hanging out well. Um all of a sudden, they make my bigger watch list. I wait for a daily setup that I understand, right? I size
+
+[10:35] it right. Um timing it up with the market. Um, and again, I don't think that this video needs to go too much longer. Um, I just wanted to give you guys kind of a preview of how I use Finn
+
+[10:45] Viz, but just we'll just finish going through this list and you guys can see EQT super base on the weekly. Um, you know, this thing has just gone really, really nicely sideways. I mean, the
+
+[10:57] weekly on this thing looks fantastic like it wants to go higher. Um, HIMS is another one that's on there. KGC is a name that I own. Hood is a name that we've been talking about for forever.
+
+[11:09] Um, you know, guys, these are just literally great great names. Uh, Palunteer, you know, even these more speculative stuff, right? Your QBTS, your QBT. Um, obviously they have
+
+[11:20] accelerating earnings in sales. Well, because when you've never had any earnings in sales before, even making $15,000 for the quarter is considered accelerating. And if you're above all of
+
+[11:30] the moving averages and you've meet the uh liquidity constraints that I might put on it and you're above a certain dollar price, you know, um it will of course hit my radar. Some of course I
+
+[11:42] like more than others. And again, just go on and on. Here's your sle, here's some sound. Here's some SYM. Here's your SMR. Um and again, this is, you know, you meet some of those. Here's a TMDX, a
+
+[11:55] really healthy one. Um, and guys, this is just one of the screeners. And then what you can do is you can save this screener. You can play with it a little bit more. You can adjust it. Um, and
+
+[12:08] there is a lot of things that you guys can play with here on Finiz. I think it's very, very easy to use. Um, one of my favorite screeners, but I just wanted to give you guys one of my favorite ways
+
+[12:19] to find stocks that have been trading momentum. Um and and again a lot of these stocks will even come up on my radar uh before we ever trade them. So um it's just they're it's just a good
+
+[12:29] thing to have. Good little tool in your back pocket and I wanted to get this video out for everybody tonight before I did the watch list. So um anyway, I will leave you guys with that and hopefully
+
+[12:40] that is helpful. Any questions you guys are always welcome to ask and you know kind of from what I can see it feels about the same as you know the free version. So, you know, if I notice some
+
+[12:52] big meaningful difference, I will let you guys know. Um, you know, I spent about 240 bucks on it for the year. So, you know, how do I feel about it? I don't know. I'll let you guys know if I
+
+[13:03] think, um, it's, you know, worth spending the money or not. But, you know, as far as I'm concerned, free has always worked for me. So, um, anyway, uh, thank you guys again and I will see
+
+[13:14] you guys in the morning. Cheers.

@@ -1,0 +1,19 @@
+{
+  "video_id": "r4N2W3FmWLU",
+  "url": "https://www.youtube.com/watch?v=r4N2W3FmWLU",
+  "title": "7/31/2025 Daily Recap + Watchlist",
+  "channel": "Ariel Hernandez",
+  "channel_id": "UCn8hF9X6MGDtbTBb6w3JUYA",
+  "stream_date": "2025-08-01",
+  "duration": "22:02",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en-orig",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

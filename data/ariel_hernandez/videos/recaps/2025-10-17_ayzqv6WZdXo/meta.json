@@ -1,0 +1,19 @@
+{
+  "video_id": "ayzqv6WZdXo",
+  "url": "https://www.youtube.com/watch?v=ayzqv6WZdXo",
+  "title": "10/17/2025 Daily Recap: Chop continues",
+  "channel": "Ariel Hernandez",
+  "channel_id": "UCn8hF9X6MGDtbTBb6w3JUYA",
+  "stream_date": "2025-10-17",
+  "duration": "20:43",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en-orig",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

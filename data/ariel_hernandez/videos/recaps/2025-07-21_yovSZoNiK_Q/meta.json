@@ -1,0 +1,19 @@
+{
+  "video_id": "yovSZoNiK_Q",
+  "url": "https://www.youtube.com/watch?v=yovSZoNiK_Q",
+  "title": "7/21/2025 Premarket Prep",
+  "channel": "Ariel Hernandez",
+  "channel_id": "UCn8hF9X6MGDtbTBb6w3JUYA",
+  "stream_date": "2025-07-21",
+  "duration": "47:20",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en-orig",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

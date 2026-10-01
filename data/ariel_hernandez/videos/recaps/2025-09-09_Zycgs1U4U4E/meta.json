@@ -1,0 +1,19 @@
+{
+  "video_id": "Zycgs1U4U4E",
+  "url": "https://www.youtube.com/watch?v=Zycgs1U4U4E",
+  "title": "9/9/2025 Daily Recap",
+  "channel": "Ariel Hernandez",
+  "channel_id": "UCn8hF9X6MGDtbTBb6w3JUYA",
+  "stream_date": "2025-09-09",
+  "duration": "12:12",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en-orig",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

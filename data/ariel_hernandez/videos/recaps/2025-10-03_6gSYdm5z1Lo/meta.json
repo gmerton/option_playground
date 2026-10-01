@@ -1,0 +1,19 @@
+{
+  "video_id": "6gSYdm5z1Lo",
+  "url": "https://www.youtube.com/watch?v=6gSYdm5z1Lo",
+  "title": "10/3/2025 Daily Recap: Red flags appear",
+  "channel": "Ariel Hernandez",
+  "channel_id": "UCn8hF9X6MGDtbTBb6w3JUYA",
+  "stream_date": "2025-10-03",
+  "duration": "19:41",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en-orig",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

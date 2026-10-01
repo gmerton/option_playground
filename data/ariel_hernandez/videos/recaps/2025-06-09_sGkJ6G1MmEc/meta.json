@@ -1,0 +1,19 @@
+{
+  "video_id": "sGkJ6G1MmEc",
+  "url": "https://www.youtube.com/watch?v=sGkJ6G1MmEc",
+  "title": "6/9/2025 After-Hours recap",
+  "channel": "Ariel Hernandez",
+  "channel_id": "UCn8hF9X6MGDtbTBb6w3JUYA",
+  "stream_date": "2025-06-09",
+  "duration": "11:41",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en-orig",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

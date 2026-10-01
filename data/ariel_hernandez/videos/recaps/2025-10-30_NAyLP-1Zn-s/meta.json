@@ -1,0 +1,19 @@
+{
+  "video_id": "NAyLP-1Zn-s",
+  "url": "https://www.youtube.com/watch?v=NAyLP-1Zn-s",
+  "title": "10/29/2025: Daily Recap and Watchlist video. META down bad",
+  "channel": "Ariel Hernandez",
+  "channel_id": "UCn8hF9X6MGDtbTBb6w3JUYA",
+  "stream_date": "2025-10-30",
+  "duration": "18:45",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en-orig",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

@@ -1,0 +1,19 @@
+{
+  "video_id": "Y9Pq_HrssrU",
+  "url": "https://www.youtube.com/watch?v=Y9Pq_HrssrU",
+  "title": "10/30/2025 Watchlist video & Recap: Golden AAPL",
+  "channel": "Ariel Hernandez",
+  "channel_id": "UCn8hF9X6MGDtbTBb6w3JUYA",
+  "stream_date": "2025-10-31",
+  "duration": "21:09",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en-orig",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

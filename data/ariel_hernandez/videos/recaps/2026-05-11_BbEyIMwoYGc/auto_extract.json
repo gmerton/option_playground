@@ -1,0 +1,66 @@
+{
+ "video_id": "BbEyIMwoYGc",
+ "title": "Bears ready to fight back?",
+ "upload_date": "2026-05-11",
+ "date": "2026-05-11",
+ "session_date": "2026-05-11",
+ "session_date_basis": "spoken",
+ "observed_trades": [
+  {
+   "date": "2026-05-11",
+   "ticker": "AMZN",
+   "ticker_as_captioned": "Amazon",
+   "vehicle": null,
+   "direction": "long",
+   "action": "hold",
+   "fill_timing": "",
+   "timing_basis": "",
+   "fill_date_stated": "",
+   "is_retrospective": false,
+   "position_after": "open",
+   "setup": "Owns it; shrugs off today's pause.",
+   "entry_basis": "",
+   "stop": "",
+   "size": "",
+   "price": null,
+   "price_kind": null,
+   "source": "2026-05-11_BbEyIMwoYGc@00:32",
+   "confidence": "stated",
+   "quote": "Um Amazon is one that I own. Not that big a deal.",
+   "notes": ""
+  },
+  {
+   "date": "2026-05-11",
+   "ticker": "?",
+   "ticker_as_captioned": "DocuSign",
+   "vehicle": null,
+   "direction": "long",
+   "action": "hold",
+   "fill_timing": "",
+   "timing_basis": "",
+   "fill_date_stated": "",
+   "is_retrospective": false,
+   "position_after": "open",
+   "setup": "Letting it work while it trends; would add back / add more if it tightens or builds higher lows. Calls it a super powerful name.",
+   "entry_basis": "",
+   "stop": "",
+   "size": "",
+   "price": null,
+   "price_kind": null,
+   "source": "2026-05-11_BbEyIMwoYGc@11:21",
+   "confidence": "stated",
+   "quote": "like I look at my DocuSign. I I'm not sitting here in any way",
+   "notes": "Caption says 'DocuSign' (DOCU), but this may be a caption rendering of the spoken ticker DOCN; left unresolved. 'add some back' implies he has trimmed at some point."
+  }
+ ],
+ "principles": [],
+ "ambiguous_tickers": [
+  {
+   "timestamp": "11:21",
+   "caption_text": "DocuSign",
+   "context": "'I look at my DocuSign ... this super powerful name, which I think can go a hell of a lot higher'",
+   "guess": "DOCU as captioned, or DOCN misheard",
+   "confidence": "unsure"
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+  "video_id": "x06dmMNqPBc",
+  "url": "https://www.youtube.com/watch?v=x06dmMNqPBc",
+  "title": "10/14/2025 Daily Recap: The Poop is flying",
+  "channel": "Ariel Hernandez",
+  "channel_id": "UCn8hF9X6MGDtbTBb6w3JUYA",
+  "stream_date": "2025-10-14",
+  "duration": "12:56",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "en-orig",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions; tickers often mis-transcribed. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}
