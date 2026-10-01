@@ -1,0 +1,66 @@
+{
+ "video_id": "Hevwn4zLKEc",
+ "title": "9/10/2025 Daily Recap",
+ "upload_date": "2025-09-10",
+ "date": "2025-09-10",
+ "session_date": "2025-09-10",
+ "session_date_basis": "spoken",
+ "observed_trades": [
+  {
+   "date": "2025-09-10",
+   "ticker": "RBRK",
+   "ticker_as_captioned": "Rubric",
+   "vehicle": null,
+   "direction": "long",
+   "action": "entry",
+   "fill_timing": "early in the day",
+   "timing_basis": "stated",
+   "fill_date_stated": "2025-09-10",
+   "is_retrospective": false,
+   "position_after": "closed",
+   "setup": "Tried a bounce off the 50-day SMA after an earnings drop; failed right away.",
+   "entry_basis": "bounce off the 50 simple moving average",
+   "stop": "",
+   "size": "",
+   "price": null,
+   "price_kind": null,
+   "source": "2025-09-10_Hevwn4zLKEc@05:40",
+   "confidence": "stated",
+   "quote": "I did try this uh early in the day, um, as a bounce off of the 50 simple moving average",
+   "notes": "Rubric = Rubrik (RBRK); company context is earnings reaction only."
+  },
+  {
+   "date": "2025-09-10",
+   "ticker": "RBRK",
+   "ticker_as_captioned": "Rubric",
+   "vehicle": null,
+   "direction": "long",
+   "action": "stopped_out",
+   "fill_timing": "fairly quickly",
+   "timing_basis": "stated",
+   "fill_date_stated": "2025-09-10",
+   "is_retrospective": false,
+   "position_after": "closed",
+   "setup": "The 50-SMA bounce failed right away; stopped out for a tiny loss.",
+   "entry_basis": "",
+   "stop": "",
+   "size": "",
+   "price": null,
+   "price_kind": null,
+   "source": "2025-09-10_Hevwn4zLKEc@05:40",
+   "confidence": "stated",
+   "quote": "I ended up getting stopped out fairly quickly. Tiny little loss",
+   "notes": "Same-day stop-out; 'no bid in this thing at all'."
+  }
+ ],
+ "principles": [],
+ "ambiguous_tickers": [
+  {
+   "timestamp": "05:40",
+   "caption_text": "Rubric",
+   "context": "tried a bounce off the 50 SMA, stopped out; 'dying on earnings'",
+   "guess": "RBRK",
+   "confidence": "likely"
+  }
+ ]
+}
