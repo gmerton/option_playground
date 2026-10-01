@@ -1,0 +1,26 @@
+# Swing-low structural trail vs 20-EMA trail (pre-registration in the docstring)
+
+## PRIMARY pool: precision-tier house breakouts: 1,965 trades, 549 names, 836 dates; arms differ on 33% of trades; held BASE 13.8 vs SW 17.5 sessions; SW exits earlier on 3%
+  PRIMARY  SW - BASE, exposure-matched         +0.444pp  t +1.71  halves +0.440 / +0.447  years same sign 7/8
+    raw    SW - BASE                           +0.805pp  t +2.88  halves +0.747 / +0.842  years same sign 7/8
+           SW - RAND (same-length random exit) +2.447pp  t +4.95  halves +1.124 / +3.278  years same sign 8/8
+    expl   SW(w2) - BASE, exposure-matched     +0.167pp  t +0.29  halves +0.621 / -0.117  years same sign 5/8
+    expl   SW(w5) - BASE, exposure-matched     +0.169pp  t +0.36  halves -0.026 / +0.291  years same sign 5/8
+  BASE  mean +2.73%  median -4.12%  win 31%  p5 -10.7%  top-decile mean +54.4%
+  SW    mean +3.54%  median -4.60%  win 28%  p5 -11.2%  top-decile mean +64.5%
+  RAND  mean +1.09%  median -2.49%  win 37%  p5 -8.7%  top-decile mean +25.4%
+  per year PRIMARY: 2019:+1.43 2020:+0.44 2021:+0.08 2022:+1.00 2023:-0.54 2024:+0.27 2025:+1.36 2026:+0.24
+  BAR (primary): NOT MET
+
+## second pool: generic house breakouts (ADR >= 3): 7,666 trades, 1065 names, 1384 dates; arms differ on 32% of trades; held BASE 13.2 vs SW 16.5 sessions; SW exits earlier on 3%
+  PRIMARY  SW - BASE, exposure-matched         +0.119pp  t +0.54  halves +0.234 / +0.050  years same sign 5/8
+    raw    SW - BASE                           +0.393pp  t +2.05  halves +0.589 / +0.276  years same sign 5/8
+           SW - RAND (same-length random exit) +0.671pp  t +3.78  halves +0.235 / +0.932  years same sign 6/8
+    expl   SW(w2) - BASE, exposure-matched     +0.074pp  t +0.13  halves +0.528 / -0.198  years same sign 5/8
+    expl   SW(w5) - BASE, exposure-matched     +0.217pp  t +0.87  halves +0.520 / +0.036  years same sign 5/8
+  BASE  mean +0.58%  median -3.86%  win 29%  p5 -10.7%  top-decile mean +36.7%
+  SW    mean +0.97%  median -4.25%  win 26%  p5 -11.1%  top-decile mean +44.0%
+  RAND  mean +0.30%  median -2.43%  win 36%  p5 -8.4%  top-decile mean +20.2%
+  per year PRIMARY: 2019:+0.95 2020:+1.06 2021:-0.69 2022:+0.08 2023:-0.42 2024:-0.04 2025:+0.29 2026:+0.11
+
+PRIMARY SW - BASE exposure-matched (precision): +0.444pp t +1.71 halves +0.440/+0.447 years 7/8
