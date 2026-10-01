@@ -1,0 +1,3399 @@
+[00:00:00] when you're afraid to be wrong. You
+[00:00:01] don't need to get everything perfect.
+[00:00:03] Again, as a swing trader, I'm right 35
+[00:00:05] maybe 40% of the time. Even in a good
+[00:00:08] environment, even during April and May,
+[00:00:11] market pays for compounding, not for
+[00:00:13] being right. Take things a small little
+[00:00:15] thing at a time. How do I find the
+[00:00:17] stocks to trade? What is progressive
+[00:00:19] exposure? What is position sizing? What
+[00:00:22] are my entry tactics? What is a clean
+[00:00:24] technical setup? How do I view groups?
+[00:00:27] What is the market overview? But take
+[00:00:29] time to learn each of those puzzle
+[00:00:31] pieces. And once you learn all of those
+[00:00:33] puzzle pieces, that allows you to put
+[00:00:35] the whole picture together. I remember I
+[00:00:36] bought Palunteer at 100, it doubled. I
+[00:00:38] bought CLS at 100, it more than tripled.
+[00:00:41] I bought Robin Hood in the 50s, it it
+[00:00:43] went up almost 200%. I remember I bought
+[00:00:46] Dell on the shake into a support gap,
+[00:00:49] which is basically going back to this
+[00:00:51] day's close. And then as soon as you go
+[00:00:54] back and retest that level, you hold a
+[00:00:56] support gap. You hold the 20 simple
+[00:00:59] moving average. You're buying that as
+[00:01:00] it's responding to that level. Your stop
+[00:01:03] is minuscule like a dollar and change
+[00:01:06] for something that I buy at 156 and just
+[00:01:08] a few months later is at 400 plus. The
+[00:01:11] art of saying no. So if you have a
+[00:01:14] market filter, the market is below the
+[00:01:15] 50-day, the 10day below the 20, both are
+[00:01:18] sloping down. That's your market filter.
+[00:01:20] Very easily with key moving averages.
+[00:01:23] Not buying a growth stock when that's
+[00:01:25] the case. If you need everything to be
+[00:01:27] perfect, often times the best charts,
+[00:01:30] the best entries, the best setups get
+[00:01:31] away from you while you're waiting for
+[00:01:33] perfect. The answer is always to trade
+[00:01:35] smaller. Either you're not seeing things
+[00:01:38] well, the market is not being friendly,
+[00:01:40] or your entry tactics are terrible for
+[00:01:43] the environment that you're in, or
+[00:01:45] you're just flat out playing the wrong
+[00:01:46] side of the market. All of those
+[00:01:48] scenarios, you want to be trading
+[00:01:50] smaller. Hey everyone, welcome back to
+[00:01:52] another episode. As always, we're
+[00:01:54] bringing top traders, US investing
+[00:01:55] champions, and market wizards here onto
+[00:01:57] the show to share their journeys, their
+[00:01:59] methods, their strategies, and the key
+[00:02:01] principles that they want to pass on to
+[00:02:02] you guys to save you time, save you
+[00:02:04] money, and improve your trading
+[00:02:06] performance. And if you love learning
+[00:02:08] from great traders, we have two
+[00:02:09] exclusive bonuses just for you. Down
+[00:02:12] below in description, you'll find two
+[00:02:14] resources. The first is a breakdown of
+[00:02:17] today's interview with key quotes, key
+[00:02:19] takeaways, and key concepts that you can
+[00:02:21] apply right away to your trading.
+[00:02:23] Second, just below that is something I'm
+[00:02:25] very, very proud of. It is 10 lessons
+[00:02:27] from Market Wizards. This combines 100
+[00:02:30] plus interviews that I've done just like
+[00:02:32] this one and combines all that knowledge
+[00:02:34] into one place. Again, 100% free. So
+[00:02:37] again, these are located down below in
+[00:02:39] the description. Check them out, share
+[00:02:40] them with fellow traders, and happy
+[00:02:42] studying. And just one more reminder, if
+[00:02:44] you enjoy these podcasts, please go
+[00:02:46] ahead and double check down below that
+[00:02:47] you're subscribed and leave a like. That
+[00:02:49] helps us out immensely and helps us
+[00:02:51] continue to bring on great guests. Uh
+[00:02:53] so, thanks so much in advance. Uh sit
+[00:02:55] back, relax, get your notebooks ready,
+[00:02:57] and enjoy.
+[00:03:00] [music]
+[00:03:03] All right, welcome back everybody. It's
+[00:03:05] my pleasure to introduce the next
+[00:03:06] speaker, Ariel Hernandez. Uh he's going
+[00:03:08] to be discussing the puzzle pieces to
+[00:03:10] profitability, discussing how to build
+[00:03:12] your trading system from the ground up
+[00:03:14] the right way. Uh Ariel is a full-time
+[00:03:16] trader. He's the founder of Market Pulse
+[00:03:19] and uh it's a pleasure to have him. So
+[00:03:20] Ariel, thank you so much for being here
+[00:03:22] and uh appreciate you taking the time.
+[00:03:24] Thanks, Richard. Thanks for having me.
+[00:03:25] Yeah, this should be tons of fun and and
+[00:03:27] hopefully uh talking to some newer
+[00:03:29] traders, aspiring traders, and kind of
+[00:03:32] setting them um on the right path.
+[00:03:34] >> Let's do it. Let's dive in.
+[00:03:37] All right. So, I did go ahead and I I've
+[00:03:41] been asked a gazillion times and you and
+[00:03:42] I have spoken privately. Um, when you're
+[00:03:45] talking to a brand new trader, it can
+[00:03:47] feel pretty overwhelming because
+[00:03:51] how do I how do we say this? There's so
+[00:03:53] many things you need to know, right? And
+[00:03:56] I kind of call them non-negotiables. But
+[00:03:58] if you start at if you try to learn
+[00:04:02] everything all at once, it can feel very
+[00:04:04] overwhelming. And the way I kind of like
+[00:04:07] to view things and I view the stock
+[00:04:09] market this way too, it is just a big
+[00:04:12] puzzle. Um, and the more you know, uh,
+[00:04:16] the the more the broader picture, the
+[00:04:18] whole puzzle makes sense. But you can't
+[00:04:21] start by learning everything or
+[00:04:23] effectively you'll learn nothing at all.
+[00:04:25] You have to start by digesting and
+[00:04:28] ingesting little bits at a time,
+[00:04:30] effectively small puzzle pieces. And
+[00:04:33] like a puzzle, when you put it together
+[00:04:35] in your mind or on a table, you pick up
+[00:04:38] a piece, you see where it fits, you see
+[00:04:40] how things click together, and you can't
+[00:04:43] complete the entire puzzle in your head
+[00:04:46] without knowing these individual pieces,
+[00:04:48] or as you and I both know them,
+[00:04:51] non-negotiables, right? things such as
+[00:04:53] how we might scan the market, how we
+[00:04:56] view relative strength, what sort of
+[00:04:59] technical setups you use to get yourself
+[00:05:00] involved with a stock. You know, what um
+[00:05:04] what proper position sizing sizing looks
+[00:05:07] like, what progressive exposure looks
+[00:05:09] like, how you might trim into strength,
+[00:05:11] if you trim into strength, how do you
+[00:05:13] trail your remainder of your uh stocks?
+[00:05:16] And so, a lot of these things, if you
+[00:05:18] try to learn it all at once, it feels
+[00:05:20] very overwhelming. And every single year
+[00:05:22] that you do trade, you know, you always
+[00:05:25] have that light bulb moment, that aha
+[00:05:26] moment that um I didn't know that. I
+[00:05:29] can't believe I trusted myself to trade
+[00:05:31] without knowing that what thing,
+[00:05:34] whatever that thing might be. And so I
+[00:05:36] kind of wrote this um ebook and turned
+[00:05:40] it into a little bit of a presentation
+[00:05:42] for us today. And hopefully we'll go
+[00:05:43] through some of this and this will help
+[00:05:45] some people make some sense of the
+[00:05:48] market.
+[00:05:49] >> Perfect.
+[00:05:50] >> Yep. And uh for anybody who doesn't
+[00:05:52] know, I am Ariel Hernandez. I've been
+[00:05:54] swing trading now for just over uh
+[00:05:57] full-time trading for just over 6 years.
+[00:06:00] Swing trading since the start of 2022,
+[00:06:04] about the worst time that anybody can
+[00:06:06] become a full-time swing trader. Um
+[00:06:09] markets were obviously super um
+[00:06:11] incredible in 2020. Everybody knows that
+[00:06:14] we were um you know driven by monetary
+[00:06:18] policy just money being created and
+[00:06:21] printed and flooded into the markets. Um
+[00:06:23] everybody kind of had to sit at home. A
+[00:06:26] lot of people became traders. Not
+[00:06:28] everybody stayed as traders. Um and that
+[00:06:31] is
+[00:06:33] the unwillingness to from some people to
+[00:06:36] kind of sit back and learn um when
+[00:06:39] markets environment change how to keep
+[00:06:42] the money you've made um and then you
+[00:06:44] know sidestep a bad market and and it's
+[00:06:46] not like I sidestep a terrible market. I
+[00:06:49] decided to become a swing trader in
+[00:06:51] 2022. So I effectively stepped right
+[00:06:53] into a bad market. But fortunately, and
+[00:06:56] you've talked with some of these people
+[00:06:57] before, um, some people that I
+[00:06:59] absolutely admire from a Stan Weinstein
+[00:07:02] to learning Bill O'Neal and some of his
+[00:07:05] tactics through some of the people who
+[00:07:07] have learned from him like a Pat Walker
+[00:07:09] momentum from a Dan Zanger, a Mark
+[00:07:12] Minervini, taking concepts from all of
+[00:07:14] them, applying it to my own trading is
+[00:07:16] is uh, what got me through. And then the
+[00:07:18] market has been pretty incredible uh you
+[00:07:20] know late 22 and and obviously into
+[00:07:24] today uh recording June 17th and and you
+[00:07:27] know we are basically in the best market
+[00:07:29] that anybody has ever seen since 1999.
+[00:07:32] So it's it's a blessing but
+[00:07:34] >> at least since 2020 at least since 2020
+[00:07:37] >> you know it was a little bit different
+[00:07:39] in that environment. Um the difference
+[00:07:42] was
+[00:07:44] what was going higher were NFTTS
+[00:07:47] and what's going higher now
+[00:07:50] is on the back of billions hundreds of
+[00:07:53] billions of dollars being spent. In
+[00:07:55] fact,
+[00:07:57] you know, Google raising an extra $80
+[00:07:59] billion
+[00:08:01] um
+[00:08:03] just so that they can fund their growth
+[00:08:07] in the AI space even more. Um I remember
+[00:08:10] in 2020 you you had meme stocks, right?
+[00:08:13] You had COVID stocks, unprofitable
+[00:08:16] biotechs flying. Um, you had your TCAT
+[00:08:19] and your DLPN, unprofitable, you know,
+[00:08:23] people paying millions and millions of
+[00:08:25] dollars for photos of a JPEG rock um, or
+[00:08:28] a monkey where this is much different.
+[00:08:32] It feels in some points a little bit
+[00:08:34] overdone, but what it really is is
+[00:08:38] fueled by hundreds of billions of
+[00:08:40] dollars of real money being spent by the
+[00:08:43] biggest companies in the world. So, a
+[00:08:45] little different. And obviously before
+[00:08:47] we started recording, you and I were
+[00:08:49] talking about how today felt a little
+[00:08:51] odd with, you know, rates unchanged,
+[00:08:55] markets getting hit, in particular, the
+[00:08:57] mega caps. A lot of them living
+[00:08:59] underneath their 50-day and their 200
+[00:09:01] day, and, you know, you
+[00:09:04] they're they're innocent until proven
+[00:09:06] guilty, but today definitely wasn't a
+[00:09:08] pretty look. Um, but we try to not, you
+[00:09:11] know, think about that too much until
+[00:09:13] comes into play.
+[00:09:14] >> And I'm sure one of the puzzle pieces is
+[00:09:16] the market analysis, situational
+[00:09:17] awareness. It all plays into exactly
+[00:09:19] what we covered today.
+[00:09:21] >> Yes. Yes. And and one of the things that
+[00:09:24] we don't want to do um is operate, and
+[00:09:27] we'll get to it. Um, we don't want to
+[00:09:29] operate,
+[00:09:30] and some people have kind of seen me
+[00:09:32] tweet this recently, it's not what you
+[00:09:35] buy or even sometimes where you buy it.
+[00:09:38] Those can be very important, but it's
+[00:09:40] the when you buy and understanding that
+[00:09:43] your environment ultimately trumps
+[00:09:46] everything you're doing in the market.
+[00:09:48] If the market is no good, and that's not
+[00:09:50] to say that individual stocks can't
+[00:09:52] perform well in a in a crummy market,
+[00:09:54] but if the environment is no good, the
+[00:09:57] market will let you know, and it'll let
+[00:09:59] you know through the feedback that
+[00:10:00] you're getting on your individual
+[00:10:01] positions. So, we'll kind of uh move on
+[00:10:04] here um into this next slide, and it's
+[00:10:07] how the pieces fit together. I'm sure I
+[00:10:11] could have um you know, come up with
+[00:10:14] more than 21 pieces. I'm sure that if we
+[00:10:17] talked about it a little bit longer, we
+[00:10:19] could probably find seven or 10 more
+[00:10:21] pieces um to talk about, but it's
+[00:10:24] effectively your foundation, your
+[00:10:27] selection, your execution, your
+[00:10:29] management, and your survival. So, you
+[00:10:33] have to it's it's hard to
+[00:10:37] it's hard to find the winning stocks
+[00:10:40] that could be winning stocks if you
+[00:10:42] don't know how to scan the markets. So,
+[00:10:44] and then it's it's hard to get yourself
+[00:10:47] to hold a position if you oversize. But
+[00:10:50] again, as a brand new trader, these are
+[00:10:52] all things that we kind of have to
+[00:10:53] learn. And instead of being overwhelmed
+[00:10:56] with all of the things that you have to
+[00:10:58] learn, we're going to try our best to
+[00:11:00] break it down into individual pieces so
+[00:11:03] that it doesn't feel too overwhelming.
+[00:11:06] So with that, let's talk about the
+[00:11:08] foundation, which of course, Richard, as
+[00:11:11] you mentioned it, read the market before
+[00:11:14] you read the chart. It is incredibly
+[00:11:18] important. And the first foundation or
+[00:11:21] foundational piece um would be risk on
+[00:11:24] versus risk off reading the market
+[00:11:27] environment. And then I I put here 75%
+[00:11:31] of stocks. And that's typically and I
+[00:11:34] say that because it's it's majority of
+[00:11:36] the stocks that we're going to be
+[00:11:37] trading growth names. A lot of people
+[00:11:39] aren't necessarily and I and I guess to
+[00:11:42] this before I continue.
+[00:11:45] If you're trading a gold stock, I don't
+[00:11:50] care that the S&P 500 is coming down.
+[00:11:53] I'm focused on GLD or gold futures. If
+[00:11:58] I'm trading
+[00:12:00] cryptocurrencies,
+[00:12:01] I don't care that the NASDAQ is going
+[00:12:03] down. I'm focused on maybe Bitcoin or
+[00:12:07] Ethereum or any other one of the cryptos
+[00:12:09] that might be moving. And so when I say
+[00:12:12] if you're focused on and if you're
+[00:12:14] buying an energy stock, oil and gas,
+[00:12:17] what crude oil is doing is important and
+[00:12:20] maybe has zero to do with the NASDAQ.
+[00:12:24] So,
+[00:12:25] and I would say half of your stock's
+[00:12:27] price appreciation is directly
+[00:12:30] correlated to the group that it's in,
+[00:12:33] but even more so it is correlated to the
+[00:12:36] underlying market as well. Um, so
+[00:12:40] majority of your stocks move with the
+[00:12:42] market, the biggest lever to your own
+[00:12:45] P&L is reading the market regime than it
+[00:12:50] is picking the stocks. And it goes back
+[00:12:52] to what I mentioned earlier. It's not
+[00:12:55] the what you buy and and where you buy
+[00:12:59] it. It's when you buy it. If you had
+[00:13:02] been going through the correction and
+[00:13:04] the choppy phase which was, you know,
+[00:13:07] middle of October, November, December,
+[00:13:09] January, February into March, and then
+[00:13:13] all of a sudden, ends of March, you
+[00:13:15] start to get Marvel, you know, acting
+[00:13:18] better, ARM acting better, Dell gapping
+[00:13:20] up on earnings, hanging in there. Well,
+[00:13:23] and we could even look at some of these
+[00:13:25] charts quickly. you know when you go
+[00:13:27] back to this period here let me know if
+[00:13:30] you can see this well Richard okay so
+[00:13:34] this is ends of February so the market
+[00:13:37] is still acting poorly
+[00:13:40] yet Dell is gapping up above all key
+[00:13:43] moving averages it's giving you a big
+[00:13:45] pickup in volume that's certainly not my
+[00:13:48] aunt Susie and then it's beginning to
+[00:13:50] digest while the market continues to be
+[00:13:53] choppy you could see this even when you
+[00:13:55] go back to the correction in 2023, which
+[00:13:59] is one of my favorite corrections. It
+[00:14:00] was just the simple um three waves down
+[00:14:03] in the summer. I won't forget it. It was
+[00:14:08] this would have been right here. So, it
+[00:14:10] would have been this simple three-waves
+[00:14:12] down correction and then right when you
+[00:14:15] got this market follow-through day going
+[00:14:18] on November 1st and then you look at a
+[00:14:21] name like Netflix, you look at AET, you
+[00:14:25] look at deck, you look at AMD, you look
+[00:14:27] at Uber, right around that time, five
+[00:14:30] industry groups, I won't forget it,
+[00:14:32] right at that time at DECK
+[00:14:36] was gapping out and this would have been
+[00:14:39] right in
+[00:14:41] effectively into a new all-time high
+[00:14:43] when the market was still going through
+[00:14:45] a correction. And then Netflix, I won't
+[00:14:48] forget this one. This one proceeded to
+[00:14:50] double right from there. And this would
+[00:14:53] have been in, let's go back to 20. Here
+[00:14:56] it is. So, this thing gaps back up above
+[00:14:59] the 200 day. And while the market
+[00:15:01] continues lower,
+[00:15:03] this thing is just going sideways. And
+[00:15:06] that is one of the most important things
+[00:15:09] when you're trying to find the stocks
+[00:15:11] that are showing relative strength. And
+[00:15:13] we'll circle back uh to this topic again
+[00:15:16] here momentarily. You want to be
+[00:15:19] understanding of what the market is
+[00:15:22] doing and how stocks typically act in
+[00:15:25] that environment because stocks have a
+[00:15:28] hard time going up when the market's
+[00:15:29] going down. But the stocks that are
+[00:15:32] holding up best when the market had been
+[00:15:34] going down are the names you really want
+[00:15:36] to just you know focus in on uh when the
+[00:15:40] market environment starts to shift and
+[00:15:42] you get what is known as that classic
+[00:15:44] Bill O'Neal follow-through day. So
+[00:15:47] simple very simple uh exercise risk on
+[00:15:51] your index is above your 50-day your
+[00:15:54] 50-day is above your 200 day typically
+[00:15:57] breath is expanding. We saw that big
+[00:16:00] time in April. Um, names that are
+[00:16:04] offense, semis, software,
+[00:16:08] growth, right? Anything techreated tends
+[00:16:10] to be when tech is leading, when the
+[00:16:14] QQQs are leading the move up, that for
+[00:16:17] me is risk on, risk off. Indexes are
+[00:16:20] below the 50-day breath is contracting.
+[00:16:23] Usually you'll see distribution days. So
+[00:16:27] bigger volume on the down days, you
+[00:16:29] know, on the up days it seems like the
+[00:16:31] volume just kind of dissipates. Although
+[00:16:34] let's not mistake um low volume rallies
+[00:16:37] for rallies that cannot be durable
+[00:16:39] because again we saw that from April 8th
+[00:16:42] of this year on you could absolutely
+[00:16:45] have a rally on low volume
+[00:16:49] um and then everybody is doesn't believe
+[00:16:51] that the rally is real. What's most
+[00:16:53] important is you have group and stock
+[00:16:55] participation
+[00:16:57] and once you have that in particular
+[00:16:59] some of your XLK which is let's say 30%
+[00:17:02] of your S&P 500 acting well
+[00:17:06] you almost can't be negative in that
+[00:17:08] scenario when you've got growth name
+[00:17:09] after growth name after growth name
+[00:17:12] trending higher. So that's super
+[00:17:13] important. Hey everyone, just want to
+[00:17:15] jump in here real quick and let you know
+[00:17:16] that this episode is brought to you by
+[00:17:18] DFW, which is the platform I use every
+[00:17:20] single day to find new trading ideas,
+[00:17:22] monitor existing positions, identify new
+[00:17:25] leading themes, and analyze the markets.
+[00:17:27] You guys deserve a platform that keeps
+[00:17:29] innovating, and brings you the most
+[00:17:30] up-to-date tools to trade the market.
+[00:17:32] And at DFW, almost every single week,
+[00:17:34] we're launching a new feature or system
+[00:17:36] update. Here's what makes DFW different.
+[00:17:38] The screener comes loaded with preset
+[00:17:40] screens from actual market wizards and
+[00:17:42] top traders. So, you're starting from
+[00:17:43] the setups that the best in the world
+[00:17:45] actually use. And when you're flipping
+[00:17:47] through results, you've got mini charts
+[00:17:49] right there, so you can visually scan
+[00:17:50] through hundreds of stocks all at once.
+[00:17:52] That alone saves me so much time every
+[00:17:54] single week. The charting is built for
+[00:17:56] how we actually trade. Multiple time
+[00:17:58] frames, unlimited indicators included,
+[00:18:00] Ankor, VWAP, enhanced volume, custom
+[00:18:02] indicators like RMV, and the built-in RS
+[00:18:05] rating. You've got custom dashboards to
+[00:18:07] track the market, themes, and real-time
+[00:18:09] sector rotation so you always know where
+[00:18:11] the money's flowing. Best yet, we just
+[00:18:13] launched the DV AI terminal, which
+[00:18:15] brings all your research into DV with
+[00:18:17] easy to use preset prompts or your own
+[00:18:19] custom ones. You can even identify gap
+[00:18:22] catalyst with just a right click. So, go
+[00:18:24] ahead and try it out today. We set up an
+[00:18:26] exclusive offer for all Trailerine
+[00:18:28] podcast listeners. So, to activate your
+[00:18:30] trial today, check out the link down
+[00:18:32] below in the description or visit
+[00:18:33] dv.com/mpodcast.
+[00:18:35] That's dv.com/mpodcast.
+[00:18:37] And with that, let's get back to the
+[00:18:38] interview.
+[00:18:40] Yeah, just to just to add here, um
+[00:18:43] >> completely agree with this and I
+[00:18:44] actually wrote an article um kind of
+[00:18:46] looking at the case study of uh the last
+[00:18:49] April um 2025 correction where obviously
+[00:18:53] we had the big sell-off due to the
+[00:18:54] tariffs and basically um I think my
+[00:18:57] opening point was what was the greatest
+[00:18:59] opportunity coming out of that
+[00:19:01] correction and the the main point was
+[00:19:04] that it wasn't picking one stock that
+[00:19:07] doubled and tripled from there. It was
+[00:19:09] getting aggressive when we reclaimed the
+[00:19:11] 21 EMA, the 50 SMA. Like you said
+[00:19:14] before, it was about when you kind of
+[00:19:17] got aggressive, not necessarily the the
+[00:19:19] single instrument or group of stocks
+[00:19:21] that you were focused on. You know, if
+[00:19:22] you got aggressive at the right time, it
+[00:19:24] almost didn't matter where you bought
+[00:19:26] >> what what you bought. That natural
+[00:19:29] breath expansion at the at the start of
+[00:19:31] of a new market cycle, it's going to
+[00:19:33] lift all boats. So, it's it's more about
+[00:19:35] being open-minded to a rally working.
+[00:19:37] Um, getting on exposure while managing
+[00:19:40] risk because that's obviously a huge,
+[00:19:41] you know, part. You want to protect
+[00:19:43] yourself if a rally fails. Uh, but not,
+[00:19:46] you know, you got to risk stuff to
+[00:19:47] actually participate in an uptrend. And
+[00:19:49] we saw that last year in 2020 25 and
+[00:19:52] then this year in 2026, like you said,
+[00:19:54] low valu rally. Nobody believes it's
+[00:19:57] going to work. Uh, but the stocks were
+[00:19:59] telling you, the setups were telling
+[00:20:00] you, and that's why we have to have a
+[00:20:02] market cycle system, which I guess is
+[00:20:04] your point here. You got to know when
+[00:20:05] it's risk on versus risk off. And that I
+[00:20:09] think is what I'm glad you led with the
+[00:20:10] slide because I think it's it's the most
+[00:20:12] important component uh of trading. And
+[00:20:16] it might take a year or two, multiple
+[00:20:18] cycles to really internalize that when
+[00:20:21] to get aggressive and when not. And and
+[00:20:22] you know, you learn something new every
+[00:20:24] cycle, too. the little tells deck
+[00:20:26] gapping up um and you learn more over
+[00:20:29] time. But yeah,
+[00:20:30] >> just deck Richard, it was and you go
+[00:20:33] back to 2025,
+[00:20:35] you go back and look at the when stocks
+[00:20:37] went and made a new low in March and
+[00:20:40] stocks really washed out through those
+[00:20:42] March lows except a few. Your Crowd
+[00:20:46] Strike, your CLS, your Robin Hood, your
+[00:20:49] Palunteer. I remember I bought Palanteer
+[00:20:52] at 100. It doubled. I bought CLS at 100.
+[00:20:56] It's it more than tripled. Um I bought
+[00:20:59] Robin Hood in the 50s. It it went up
+[00:21:01] almost 200%. Now I for other reasons got
+[00:21:04] shaken out of uh Robin Hood and then
+[00:21:06] didn't buy it back, you know, due to
+[00:21:08] earnings, but it almost didn't matter
+[00:21:11] what you bought. It's more about
+[00:21:13] recognizing the shift in the
+[00:21:15] environment. And you know, most
+[00:21:17] follow-rough days tend to fail. Um, but
+[00:21:21] that's also why you have to have and you
+[00:21:23] have to know what progressive exposure
+[00:21:25] looks like, what proper position sizing
+[00:21:28] looks like, so that even if you are
+[00:21:30] caught on the wrong side of a
+[00:21:32] follow-through day, it doesn't really do
+[00:21:33] a lot of damage to you. But if you get
+[00:21:36] caught on the right side of a
+[00:21:37] follow-through day, that's the market
+[00:21:38] saying, "Hey, this is working. Go find
+[00:21:41] something else. This is working. Go find
+[00:21:43] something else." And all boats are being
+[00:21:44] lifted. Everybody feels like a genius in
+[00:21:47] a really good environment. And that's
+[00:21:49] exactly what the market tells you.
+[00:21:51] Immediately after a valid follow-through
+[00:21:54] day, you get stock after stock after
+[00:21:56] stock after stock really going to work.
+[00:21:59] Um, and that I think is super important
+[00:22:02] to be paying attention to. And all of it
+[00:22:04] really ends up stemming from the
+[00:22:06] feedback in our own portfolio,
+[00:22:09] really irrelevant of what you buy, so
+[00:22:11] long as you know how to find the quote
+[00:22:13] unquote needles in the hay stack and you
+[00:22:15] are paying attention to names that are
+[00:22:16] showing relative strength. How do you do
+[00:22:18] that? Well, you do that through
+[00:22:19] scanning. But the easiest way of doing
+[00:22:22] it is what stocks are hitting what
+[00:22:25] stocks are less than 20% or 15% or 10%
+[00:22:28] from an all-time high while the market
+[00:22:31] is going down. That's a pretty big tell.
+[00:22:35] If a stock is going up over the course
+[00:22:38] of 30 days when the market's effectively
+[00:22:41] going sideways or down, that's relative
+[00:22:43] strength. If a stock is sideways when
+[00:22:45] the market's down, that's relative
+[00:22:46] strength. If a stock is up when the
+[00:22:48] market's if a stock is more up than the
+[00:22:50] market when the market's up, that's
+[00:22:51] relative strength. And then when the
+[00:22:53] market's getting absolutely hammered,
+[00:22:54] but your stock is down a percent or two,
+[00:22:56] again, that's relative strength. You do
+[00:22:58] that over the course of 30 days or 40
+[00:23:00] days or 90 days, what you have there is
+[00:23:03] likely a chart that's gone up and then
+[00:23:05] is just consolidating.
+[00:23:07] And the more the market gets beaten up,
+[00:23:10] and that's why like as a swing trader, I
+[00:23:14] welcome corrections. In fact, give me
+[00:23:17] the worst possible correction ever
+[00:23:19] because we know that from those ugly
+[00:23:21] corrections come periods of awesome low
+[00:23:25] volatility swing trading and it and then
+[00:23:28] they all stem from a market
+[00:23:30] follow-through day. So, yeah,
+[00:23:32] understanding risk on, risk off, what
+[00:23:34] that follow-through day might look like,
+[00:23:36] and then what stocks you're looking at
+[00:23:39] after, during, and just um before you
+[00:23:43] get that valid follow-through day is
+[00:23:45] important, but I think finding relative
+[00:23:48] strength is not nearly as hard as I
+[00:23:51] think some people make it seem. um or
+[00:23:56] you and I both, you know, having studied
+[00:23:59] a Mark or Bill O'Neal or Stan Weinstein,
+[00:24:02] those are the stocks that, you know,
+[00:24:04] they just stand out all the time, right?
+[00:24:08] If and and I say this as well, if even
+[00:24:12] if you missed SanDisk from 40 to 200, as
+[00:24:16] as soon as it goes sideways, 7 weeks,
+[00:24:18] party's back on, right? It's like the
+[00:24:21] momentum on these things are up. they
+[00:24:23] stop and they take a breather and then
+[00:24:25] they continue higher. Um, and you
+[00:24:27] welcome a deep market correction because
+[00:24:30] that just makes the leaders that much
+[00:24:32] more explosive when you finally come out
+[00:24:34] of that corrective period. So, um, with
+[00:24:37] that that kind of leads us into industry
+[00:24:40] and subindustry groups and this will be
+[00:24:42] your foundational piece number two hot
+[00:24:45] and then what I want people to do is to
+[00:24:48] think in themes not in tickers, right?
+[00:24:51] Because if you sit there and you find a
+[00:24:54] chart and the chart looks great, but
+[00:24:57] it's in a weak group, I would ra I would
+[00:25:00] tell you this. I would rather own
+[00:25:05] the worst fundamental company in the
+[00:25:08] semiconductor space April 8th, then I
+[00:25:13] would have owning the strongest food
+[00:25:17] stock, right? Or home builder, right?
+[00:25:20] Like if you own Toll Brothers, great.
+[00:25:23] They're the best acting homebuilder, but
+[00:25:26] if you owned the cruddiest semiconductor
+[00:25:30] on April 8th, you did much better than
+[00:25:33] the guy who bought Toll Brothers. And
+[00:25:35] it's simple. It's you have to think in
+[00:25:38] themes. Again, half of your half of any
+[00:25:41] stock's move is explained by its sector.
+[00:25:44] And then um if you're not focused on
+[00:25:48] stocks within the top 40 groups, which
+[00:25:50] is almost like a universal thing for
+[00:25:53] anybody who's a cancelling trader, you
+[00:25:55] want to be focused on stocks within the
+[00:25:58] top 40 groups. So without it, it you're
+[00:26:02] just like um
+[00:26:04] not bound to fail, but you're bound to
+[00:26:08] find less stocks that make big moves,
+[00:26:11] which is
+[00:26:12] >> you're swimming against the current a
+[00:26:13] little bit.
+[00:26:14] >> Exactly. And like I said, I'd rather own
+[00:26:16] the worst semiconductor in the strongest
+[00:26:18] I'd rather own the worst stock in the
+[00:26:20] strongest group than the best stock in
+[00:26:22] the weakest group. You know, stocks, you
+[00:26:25] know, they don't move alone. They've all
+[00:26:28] moved together and they tend to move.
+[00:26:31] Just think back to last year. It wasn't
+[00:26:33] just Oakllo. It was Oaklo. It was SMR.
+[00:26:37] It was NE. It wasn't just Regetti. It
+[00:26:41] for the Quantums. It was Regetti and NQ
+[00:26:44] and QBT QBTS and QBT. They might be the,
+[00:26:48] you know, they might be like these
+[00:26:50] unprofitable, unproven businesses except
+[00:26:53] they all broke out of big bases and made
+[00:26:56] D and they all doubled.
+[00:26:58] And it's the same thing what you've seen
+[00:27:00] it with the Neoclouds. Has it just been
+[00:27:03] Hut moving? No, it's been Hut with Wolf
+[00:27:07] and APLD and NBIS and Cipher. Uh, and
+[00:27:12] they're just all moving together. Was it
+[00:27:14] just um AMD? No, it's AMD, ARM, Marll,
+[00:27:19] Intel, you know, for the semiconductors,
+[00:27:22] equipment and materials. Is it just
+[00:27:25] ASML? No, it's AAT, it's KAC, it's LRCX.
+[00:27:29] Was it just SanDisk? Nope. It was MU and
+[00:27:32] STX and WDC. These things move in
+[00:27:35] groups. And so identifying
+[00:27:39] themes and groups is much more important
+[00:27:42] than identifying a nice chart setup. A
+[00:27:46] lot of times someone will ask me, "Hey,
+[00:27:49] what do you think of XYZ chart?" And the
+[00:27:51] first thing I do if I don't know the
+[00:27:54] company right off the top of my head, I
+[00:27:56] go and look at what group they're in. If
+[00:27:59] they're group number 97,
+[00:28:02] I don't care, right? Like it's a decent
+[00:28:05] chart. You can draw a pen in, but
+[00:28:08] congratulations, it's group number 97.
+[00:28:10] The odds that this becomes a failed
+[00:28:12] breakout
+[00:28:14] go way up just because it's group number
+[00:28:16] 97. If it's group number three, now
+[00:28:20] we're talking. Right now we're talking.
+[00:28:22] And so that's that's really important.
+[00:28:25] Think in themes, not in tickers. Money
+[00:28:27] rotates in groups. Semism run together.
+[00:28:29] Home builders will run together. Uranium
+[00:28:31] names will run together.
+[00:28:33] It's it's happened since the dawn of
+[00:28:35] time. It'll always happen like that. You
+[00:28:37] know, institutions
+[00:28:39] um they they put money to work in
+[00:28:42] baskets. And I I always think back to
+[00:28:45] not that I didn't already know this, but
+[00:28:48] when Stan Drunken Miller was doing an
+[00:28:51] interview one time, he said um he tells
+[00:28:54] the guys at his trading uh you know who
+[00:28:56] who like will buy stocks for him. He'll
+[00:28:58] just tell them to go buy it. and and he
+[00:29:00] said something. Malay got elected as
+[00:29:02] president and he was like, "Oh, this is
+[00:29:05] going to be super bullish Argentina." He
+[00:29:07] told the guys on his desk, "Go buy me
+[00:29:10] the five most liquid Argentinian
+[00:29:12] stocks." He didn't say which five. He
+[00:29:16] didn't sort them by um fundamentals. He
+[00:29:20] just said, "Buy me the five most
+[00:29:21] liquid." Well, he's not the only, you
+[00:29:25] know, family fund with a few billion
+[00:29:27] dollars to run. And so when Argentina
+[00:29:30] becomes a theme, they allocate to just
+[00:29:33] the whole theme, right? Melly and YPF
+[00:29:37] and GG. Like why does a bank and an oil
+[00:29:40] stock move together? Well, they're
+[00:29:42] moving together because it's Argentina.
+[00:29:45] It's the theme. Um, and it's it's the
+[00:29:48] same thing, but now just think about
+[00:29:50] that same concept, but with more broad
+[00:29:54] implications. It's the fourth industrial
+[00:29:57] revolution. It's AI. It's everything
+[00:29:59] that goes into it. So, it's the AI data
+[00:30:02] center buildout, the powering it, the
+[00:30:05] the actual infrastructure and
+[00:30:07] construction of it. And so, there is
+[00:30:09] just money flying to every which theme
+[00:30:12] that AI even touches. So, very very good
+[00:30:15] to think about and it's the reason why,
+[00:30:18] you know, there are continue to be some
+[00:30:20] groups which just are not nearly as
+[00:30:23] loved. Um, and so every um, a simple way
+[00:30:28] of scanning. So every watch list, you
+[00:30:30] know, I kind of tag it with its
+[00:30:31] subindustry group. Um, and then track
+[00:30:34] names that are leading for one week, one
+[00:30:36] month, three month. You could even go
+[00:30:38] out as far as 6 months. I think it I
+[00:30:40] find a little less relevance there,
+[00:30:42] although it can continue to be relevant.
+[00:30:45] And I've even done a video on this where
+[00:30:47] how to scan for relative strength.
+[00:30:50] And if you looked at and I did it
+[00:30:52] exactly a year ago and exactly one year
+[00:30:56] ago the stocks and the group that kept
+[00:30:59] hitting my scans and hitting my scans
+[00:31:01] and hitting my scans, gold and silver.
+[00:31:04] Well, does anybody remember what gold
+[00:31:06] and silver ended up doing from the
+[00:31:09] middle of last year until the beginning
+[00:31:11] of this year? They had already been in
+[00:31:13] established uptrends, but then they
+[00:31:15] finally went parabolic
+[00:31:17] um into that move. And I know you and I
+[00:31:20] were actually in New York together um
+[00:31:22] during that move. So, but you you didn't
+[00:31:27] miss the parabolic move if you had just
+[00:31:30] tracked the relative strength over right
+[00:31:32] who's the best groups over the last
+[00:31:33] three months, gold and silver. Let's pay
+[00:31:36] attention to those. And then you did not
+[00:31:38] miss the parabolic move. If you even
+[00:31:40] tracked those and found those names in
+[00:31:42] in June or July and you go up and then
+[00:31:47] you go sideways and I always like to
+[00:31:49] reference this gold chart because it is
+[00:31:51] picture perfect and depicts exactly
+[00:31:54] that. You have a massive uh 10-year long
+[00:31:58] cup and handle and gold finally emerges
+[00:32:00] from that in February going into March
+[00:32:04] of 2024 and you make a move up and then
+[00:32:07] you consolidate. You make a move up and
+[00:32:09] then you consolidate and then up and
+[00:32:10] consolidation and up and a longer
+[00:32:12] consolidation. And I mean some of this
+[00:32:15] up the right hand side. This is just as
+[00:32:17] absolutely picture perfect as any
+[00:32:19] consolidation as you'll ever find in any
+[00:32:21] book anywhere where you go up and then
+[00:32:24] all of a sudden you go sideways from
+[00:32:27] April until August. I mean you just
+[00:32:30] don't find anything prettier up the
+[00:32:32] right hand side. You want to talk about
+[00:32:34] volatility contraction. You want to talk
+[00:32:36] about all key moving averages above all
+[00:32:38] key moving averages getting really tight
+[00:32:40] on the right hand side. A nice clean
+[00:32:42] horizontal pivot which for me are always
+[00:32:45] the most reliable and then just another
+[00:32:48] breakout and then finally you know you
+[00:32:50] finish that off with just a very nice
+[00:32:53] parabolic move. Um and then you know
+[00:32:56] something that's either going to roll
+[00:32:58] over or uh you know will continue to
+[00:33:01] build out its long base because it's
+[00:33:03] what it needs before it can ever
+[00:33:05] continue to go higher. But thinking in
+[00:33:07] themes not in tickers
+[00:33:11] relative strength and relative weakness.
+[00:33:14] So again reading the market scoreboard
+[00:33:17] relative strength is how a stock
+[00:33:18] performs versus the S&P 500 and then its
+[00:33:22] sector. So, for me, I always have the
+[00:33:25] S&P 500 as my baseline, and I like to
+[00:33:29] think about how my individual stocks act
+[00:33:32] or how my group is acting versus the S&P
+[00:33:35] 500. That gives me the strongest groups
+[00:33:40] to the forefront. And then you can do
+[00:33:42] that um one step further. How is your
+[00:33:45] stock acting versus the group? And then
+[00:33:47] that's how you end up in let's call it
+[00:33:50] AMD versus Nvidia recently. Um so again
+[00:33:55] how a stock performs versus the S&P 500
+[00:33:58] or its sector. Again I wrote here the
+[00:34:00] math is trivial but the implication is
+[00:34:02] enormous. Right? So if you're focused on
+[00:34:04] the names with the strongest relative
+[00:34:06] strength you end up in the best names in
+[00:34:08] the market.
+[00:34:10] Um again institutions only they they
+[00:34:13] move stocks from 20 to 200. They don't
+[00:34:16] chase weak charts. They accumulate
+[00:34:18] strength. And that's exactly why charts
+[00:34:20] look strong is because institutions are
+[00:34:22] accumulating. And the best time to find
+[00:34:25] those names are when the market's going
+[00:34:27] down, they effectively stick out like
+[00:34:29] sore thumbs. Markets going up, these
+[00:34:31] names go up more. Market's going down.
+[00:34:34] Even on a day like today or go back a
+[00:34:38] few days ago and what was it, Richard?
+[00:34:40] It was last what what were the two big
+[00:34:43] recent down days we just had? It was
+[00:34:45] last Thursday
+[00:34:47] and Friday. Is that correct?
+[00:34:50] >> Uh or maybe the two days before that.
+[00:34:52] Let's see.
+[00:34:52] >> Yeah, two days before that. So, Friday
+[00:34:54] and Tuesday, excuse me. And what stock
+[00:34:57] was acting really, really well, CRDO,
+[00:35:00] and I remember we had that nasty down uh
+[00:35:03] Tuesday, and this is on Tuesday. This
+[00:35:07] stock closes green,
+[00:35:09] right? Like if that's not a, you know, a
+[00:35:12] stock going up 5% on the day when your
+[00:35:15] markets are closing down, it's like uh
+[00:35:18] you better be paying attention to this
+[00:35:21] stock because it's trying to tell you
+[00:35:23] that it is trying to go higher. So
+[00:35:26] making sure that you are recognizing
+[00:35:28] that in real time. Obviously, it's
+[00:35:30] pretty difficult if you're a brand new
+[00:35:31] trader. You know, sometimes you think
+[00:35:33] it's extended, maybe the market's not so
+[00:35:35] good, etc. But those are the sort of
+[00:35:37] names um you want to be paying attention
+[00:35:40] to. And then obviously um if you if you
+[00:35:44] are a fan of IBD um you do want an RS
+[00:35:47] rating of 70 plus. That's kind of even
+[00:35:50] on the low end in my opinion. I I prefer
+[00:35:53] 80 90, right? 90 is like even better. Um
+[00:35:59] and that that's typically ideal. And
+[00:36:01] then yes, up 5% while the index is up 8%
+[00:36:05] is relative weakness. That is not
+[00:36:08] relative strength. And then just think
+[00:36:10] about that when the Q's are down big and
+[00:36:12] CRDO is up 5%. That is huge relative
+[00:36:15] strength. So making sure that you're
+[00:36:17] paying attention to that. Super super
+[00:36:19] important.
+[00:36:20] >> Before you go to the next one, just can
+[00:36:21] you go back to the CRDO uh chart for
+[00:36:23] just a sec?
+[00:36:24] >> Yes, I can.
+[00:36:24] >> Because um on June 5th and CRDO had a
+[00:36:28] big wick on that day. Um, yeah. Uh, two
+[00:36:32] more to the right. Yes, right here.
+[00:36:34] >> Yeah. So, this looks weak, right? But
+[00:36:37] the index was down 5% this day and this
+[00:36:41] held above the prior days low. So,
+[00:36:43] there's um it the fact that it didn't
+[00:36:47] break the prior day's low when the index
+[00:36:49] is below the 21 EMA breaking down 5%
+[00:36:53] that's RS. And there's there's RS on a
+[00:36:55] one-day basis, but then you want to kind
+[00:36:57] of collect evidence of RS over a period,
+[00:37:00] right? You don't want a stock that's
+[00:37:01] just strong for one day. That can be an
+[00:37:04] outlier. But especially during the later
+[00:37:06] stage of a correction, if you kind of
+[00:37:09] keep a list each day of stocks showing
+[00:37:11] RS, subtle signs, you know, gapping up
+[00:37:13] when the market's pulling back, holding
+[00:37:15] above its moving average when the
+[00:37:16] market's below. If you do that for like
+[00:37:18] five days and a you know five stocks
+[00:37:21] show up every single day, those are the
+[00:37:23] ones you want to kind of keep an eye on
+[00:37:25] closely and look for that next setup.
+[00:37:27] >> And Richard, what will you notice too?
+[00:37:29] Like with the CRDO, was it the only
+[00:37:32] semiconductor acting well? No.
+[00:37:35] >> ARM, Marll, AMD, like these AAT, KAC,
+[00:37:41] ASabel, LRCX, these things are just not
+[00:37:44] going away. Um and and the market gives
+[00:37:48] like a little reprieve for a day and AAT
+[00:37:52] is often flying. Um I I had by the way
+[00:37:57] sidebar I had AAP really well. I mean
+[00:38:00] today again not the prettiest chart but
+[00:38:02] I remember I was looking in here up this
+[00:38:04] right hand side and I was like boy this
+[00:38:06] looks like a really nice cup and handle.
+[00:38:09] Um, and sure enough, you know, it ended
+[00:38:11] up playing out pretty well, but of
+[00:38:12] course, not until I got shaken out,
+[00:38:14] which was in here. Uh, [laughter]
+[00:38:17] which but if you're if you're saying to
+[00:38:19] yourself, you know, it might have broken
+[00:38:23] down some, what was the market, what
+[00:38:25] were the names in the group doing at
+[00:38:26] that time, and did it really do anything
+[00:38:28] wrong? Yes, it it failed to break out in
+[00:38:32] that moment, but it it wasn't long
+[00:38:34] before it was back above all key moving
+[00:38:36] averages and going and printing a new
+[00:38:39] all-time closing high. So, something to
+[00:38:41] pay attention to. Obviously, stocks
+[00:38:43] don't make it easy to get involved. They
+[00:38:45] tend to shake out all the time, which is
+[00:38:49] I know why some people love to buy the
+[00:38:51] shakeout instead. But is if that's
+[00:38:53] something that you study and and you
+[00:38:56] know I I talk to Nick every single day
+[00:38:58] for instance and he loves buying um
+[00:39:01] support gaps the drenle gaps which I
+[00:39:04] know you guys now have on Deep View.
+[00:39:06] >> Those are perfect. Those can literally
+[00:39:08] be perfect. And and speaking of those
+[00:39:10] support gaps, when the market shakes, I
+[00:39:14] remember I bought Dell on the shake into
+[00:39:17] a support gap, which is basically going
+[00:39:19] back to this day's close. And then as
+[00:39:23] soon as you go back and retest that
+[00:39:25] level, you hold a support gap, you hold
+[00:39:28] the 20 simple moving average, you're
+[00:39:30] buying that as it's responding to that
+[00:39:32] level, your stop is minuscule, like a
+[00:39:35] dollar and change for something that I
+[00:39:37] buy at 156 and just a few months later
+[00:39:41] is at 400 plus, right? So it's like
+[00:39:45] those are some in some cases can be the
+[00:39:47] best riskreward sort of spots. So even
+[00:39:50] on something like CRDO, hit you you'll
+[00:39:53] hold the 20. And by the way, that stock
+[00:39:56] moves 10% per day. So to close down only
+[00:40:00] 5%, it didn't even close down its full
+[00:40:03] average daily range. That's something
+[00:40:05] else that people can look at and say,
+[00:40:07] "Wow, okay, the market might have been
+[00:40:09] down however much percent this day, but
+[00:40:11] it only closed down 5% and it actually
+[00:40:14] moves 10% per day." So definitely
+[00:40:18] something to um to keep in mind and and
+[00:40:21] exactly what you said, Richard.
+[00:40:22] >> Paying attention.
+[00:40:23] >> One more thing as go ahead.
+[00:40:25] >> Yeah. Sorry. Sorry to keep on being
+[00:40:26] >> No, dude. You interrupt all you want,
+[00:40:28] brother.
+[00:40:28] >> Yeah. RS is just so important. And and
+[00:40:30] one other tactic that I want to mention
+[00:40:34] today is like a and this is like full
+[00:40:36] correction. We're in a full correction.
+[00:40:38] We're start we've got a key low in and
+[00:40:40] we're counting the days until a
+[00:40:41] follow-through day. it. I what I like to
+[00:40:44] do is I'll look at how many days we are
+[00:40:47] since that key low. So, let's say we
+[00:40:49] make the the key low 4 days ago. Um,
+[00:40:52] I'll go ahead in in DFW and run like a
+[00:40:55] general screen that has general
+[00:40:56] criteria, right? Liquidity, stuff like
+[00:40:58] that. And I'll sort it by price percent
+[00:41:02] change over five days because we're like
+[00:41:05] five days from that key low. So, what
+[00:41:06] you're seeing is which stocks have
+[00:41:08] bounced the strongest since that day.
+[00:41:11] Um, and I'll also kind of look at a a
+[00:41:13] one month view. So, if it's been five
+[00:41:15] days, I'll look at a one-mon view
+[00:41:16] because then you'll see which stocks are
+[00:41:18] holding up the best in that last leg
+[00:41:20] down before that key low. Um, and I I
+[00:41:23] picked this up from from Eve Boach.
+[00:41:25] Shout out to her. So, um, that's just a
+[00:41:27] key that's a way that you can see what's
+[00:41:30] holding up the best and what's bouncing
+[00:41:32] the strongest. Then you can even do
+[00:41:33] this, you know, if say we're 3 days
+[00:41:35] after the follow-through day, you could
+[00:41:37] do a price percent change 3 days or
+[00:41:40] price percent change again for that key
+[00:41:42] low and have a little bit more of a
+[00:41:43] bigger window. But you're trying to see
+[00:41:46] which stocks are bouncing the strongest
+[00:41:47] and are in proper setups holding up the
+[00:41:50] best big picture. So, sorry to jump in
+[00:41:52] again, but I think that's a good please
+[00:41:54] keep going. I love it. I honestly think
+[00:41:56] that's a perfect compliment because
+[00:41:58] one of the things too that I think
+[00:42:00] people there might be some misconception
+[00:42:02] around is just because you didn't buy
+[00:42:04] something on the follow-through day does
+[00:42:06] not mean if it's a valid follow-through
+[00:42:08] day and it's going to be a leader, it'll
+[00:42:11] have hit new 52- week highs first. It
+[00:42:14] might feel stretched, but that does not
+[00:42:16] mean if if you like buying pullbacks or
+[00:42:18] support gaps or um there might be a high
+[00:42:21] tight pennant or I know high tight flags
+[00:42:23] can be a little bit more rare, but that
+[00:42:25] does not mean that you're not going to
+[00:42:27] get a follow through or another
+[00:42:30] continuation setup down the road.
+[00:42:34] So so many stocks and that this goes for
+[00:42:37] even SanDisk. Again, I know this is kind
+[00:42:39] of an anomaly with with how strong this
+[00:42:41] one has been, but it gave you a setup in
+[00:42:44] the 40s. It gave you a setup in the
+[00:42:45] 200s. It gave you a setup on the 50-day
+[00:42:48] reclaim. It gave you a setup at 900 with
+[00:42:51] a high tight penant. It gave you a
+[00:42:53] pullback by going back to May 19th. It's
+[00:42:56] just giving so many opportunities to get
+[00:43:00] long a leader that I I I even bought
+[00:43:03] this. I missed the 247 breakout because
+[00:43:06] I bought ALAB in January. Big mistake.
+[00:43:09] Although looking at it now uh that I
+[00:43:11] don't own it, it's it's it's a heck of a
+[00:43:14] lot higher. And and I bought a Reddit
+[00:43:17] which again did not work and and I
+[00:43:19] passed on SanDisk, you know, just bad
+[00:43:23] bad um to not buy something like that.
+[00:43:26] But that's not to say that it didn't
+[00:43:28] work buying it at 9. I didn't buy Micron
+[00:43:31] at 150, right? but I bought it at 406
+[00:43:35] and it worked great. So just because a
+[00:43:39] leader might feel extended, that's
+[00:43:41] exactly what leaders do, but they almost
+[00:43:44] always seem to give you a secondary and
+[00:43:46] another follow-through, especially if
+[00:43:49] that follow-through day is valid. And to
+[00:43:51] what you said, Richard, is there some
+[00:43:53] when you're doing that scan for stocks
+[00:43:56] up the most pre uh percent change from
+[00:43:59] the lows or from that date?
+[00:44:01] >> Are you also recognizing that there's
+[00:44:03] particular you're looking for particular
+[00:44:05] themes exactly
+[00:44:06] >> that are holding up?
+[00:44:07] >> I have I have a column in DW right next
+[00:44:10] to that price percent change that will
+[00:44:12] be what gicks industry it'll be in. So
+[00:44:15] you'll see exactly like you'll see the
+[00:44:17] top five are semis. you'll see the top
+[00:44:20] five or software. Um, also like just in
+[00:44:23] general like Deep View if it's the most
+[00:44:25] common industry group, Deep View will
+[00:44:28] cover color it in blue just kind of
+[00:44:30] highlighting again the strength in that
+[00:44:31] group. So yeah, 100% that that's so key
+[00:44:34] because it'll point you towards the
+[00:44:35] group and then you can investigate, be a
+[00:44:38] detective, find the the the instruments
+[00:44:40] you want to play, whether that's looking
+[00:44:42] at liquidity, looking at the quality of
+[00:44:44] the setup. But yeah, 100%. I'm I'm
+[00:44:46] really focused on what theme is showing
+[00:44:49] up, not just like which individual
+[00:44:51] stocks are holding up the best.
+[00:44:53] >> Yeah. And for anybody um I know in the
+[00:44:55] other slide too, I had um was it one
+[00:45:00] other slide up? Yeah. Um trading tickers
+[00:45:03] without gicks context is flying blind.
+[00:45:05] For anybody who doesn't know what that
+[00:45:07] means, that is the if I'm not mistaken,
+[00:45:09] global industry classification standard.
+[00:45:12] So it's just basically stocks being
+[00:45:15] grouped into groups. So um
+[00:45:19] >> sectors.
+[00:45:20] >> Exactly.
+[00:45:20] >> Groups. Subindustries.
+[00:45:22] >> Y industries. Yep.
+[00:45:24] >> Just for anybody because you said Gixon.
+[00:45:25] I I I knew but somebody might be
+[00:45:28] listening to this guy. I have no idea
+[00:45:29] what he just said. Um okay. So moving
+[00:45:32] on. The fourth puzzle piece is leaders
+[00:45:34] versus lagards. Leaders, they tend to
+[00:45:37] build higher lows. They have shallow
+[00:45:39] shallower pullbacks. um they've got, you
+[00:45:41] know, usually decreasing volume even on
+[00:45:43] those pullbacks. We're not really too
+[00:45:45] worried about the indices here at this
+[00:45:47] point. Usually leaders tend to show up
+[00:45:49] before the market even gives you that
+[00:45:51] follow-through day and then their
+[00:45:52] rallies tend to be on a pick up in
+[00:45:54] volume and then when they do base, they
+[00:45:57] give you tighter bases. Obviously, we
+[00:45:59] just looked at that gold as an example.
+[00:46:02] We could even and a great another great
+[00:46:04] example of this would be um Nvidia when
+[00:46:08] it went on its own fivemonth base. This
+[00:46:11] is exactly what leaders do. They make a
+[00:46:14] gigantic move up off the lows
+[00:46:15] effectively 200 and some odd percent and
+[00:46:18] then proceed to go sideways for months
+[00:46:20] on end at the top of the range. That is
+[00:46:23] exactly what leaders go on to do and it
+[00:46:25] seems to happen over and over and over.
+[00:46:28] The longer the base, typically the
+[00:46:31] longer and prolonged the breakout can
+[00:46:33] be. The shorter the base, you can still
+[00:46:36] have some very explosive moves. Um,
+[00:46:39] we've we've seen it even out of a name
+[00:46:41] like SanDisk, which again, hate to keep
+[00:46:44] bringing this one up, but it is just
+[00:46:45] such an absolute textbook beauty. You
+[00:46:48] make this big move off these lows, you
+[00:46:51] know, 500% and then you build a 7-week
+[00:46:54] sideways base and then you proceed to
+[00:46:56] build a 9-week sideways base. And at
+[00:47:00] each of these times, the market is going
+[00:47:02] through a little bit of turmoil, which
+[00:47:04] is completely healthy and normal. And
+[00:47:06] then even this one before the market
+[00:47:09] broke out in January well before the
+[00:47:11] market and then again as the market was
+[00:47:13] going through its own uh period of
+[00:47:16] consolidation so was SanDisk before
+[00:47:18] proceeding to its next slug higher. So
+[00:47:21] leaders tend to do that shallower
+[00:47:23] pullbacks sharper rallies um and then
+[00:47:26] rank a group uh a distance from its 52-
+[00:47:29] week high and then look at its relative
+[00:47:32] strength rank. And something that, you
+[00:47:33] know, we continue, even Richard and I
+[00:47:35] talk about all the time, it's the
+[00:47:37] easiest way to put yourself on the side
+[00:47:39] of a big winning trade, paying attention
+[00:47:41] to relative strength. um and then watch
+[00:47:45] the lagard and and I don't actually know
+[00:47:48] that this is the best way to do it but
+[00:47:51] there has been some um you know kind of
+[00:47:55] looking at this when the lagards start
+[00:47:57] to break down that can start to affect
+[00:48:00] some of your leadership
+[00:48:03] not necessarily but I I can give a
+[00:48:05] pretty good example um with the optics
+[00:48:08] names recently and it's hard to call CI
+[00:48:11] a lagard But you break down on earnings,
+[00:48:14] you start to roll over below the 50. And
+[00:48:16] this entire time when CIEN breaks below
+[00:48:19] the 50 um after this thing had been in a
+[00:48:22] really nice prolonged uptrend, the other
+[00:48:25] optic stocks, whether you're looking at
+[00:48:27] light, um has done absolutely nothing,
+[00:48:30] whether you're looking at AOI, has done
+[00:48:32] absolutely nothing. So hard to call a
+[00:48:36] name like CIN a lagard, but it has
+[00:48:38] become one, especially within its own
+[00:48:40] group. And you have to start to view
+[00:48:42] that um under a lens where you say,
+[00:48:45] "Hey, if these lagards CIN start to
+[00:48:48] break down and break down on earnings,
+[00:48:51] you got to be careful with these other
+[00:48:53] quote unquote leaders because just when
+[00:48:56] you think that they are leaders,
+[00:48:59] they they start to follow suit um with
+[00:49:02] the others, right, with CIN and and if
+[00:49:04] you look throughout all the optics, GLW,
+[00:49:07] VIAV,
+[00:49:08] they have all turned into a headache. um
+[00:49:11] if you're trying to buy a pullback, buy
+[00:49:13] a reclaim of a key moving average,
+[00:49:16] they've all become a real big pain. And
+[00:49:19] so paying attention to the quote unquote
+[00:49:21] lagger. When it breaks structure first,
+[00:49:24] the leader is usually one to three weeks
+[00:49:26] away from doing the same. And that's
+[00:49:28] just kind of from my own observation.
+[00:49:30] CIE just broke down 10 days ago. Call it
+[00:49:34] two weeks. If I'm looking at AOI, you
+[00:49:38] certainly look and and LIT, you look
+[00:49:41] like you are right there from also
+[00:49:43] breaking below their 50. And and you
+[00:49:45] start to break below the 50 and it can
+[00:49:47] get all sorts of ugly quickly. So
+[00:49:50] something to pay attention to. Finding
+[00:49:52] the needle in the hay stack puzzle piece
+[00:49:54] number five. How and why we scanned the
+[00:49:56] market. Right? So you've got over 7,000
+[00:49:59] listed stocks, right? I would say much
+[00:50:01] fewer than 50 of them are ever worthy of
+[00:50:04] your attention on any given day. I
+[00:50:06] personally like to shrink my list down
+[00:50:09] even further. 8 to 10 to 12 stocks that
+[00:50:13] I even have an alert on. I would say 100
+[00:50:17] 150 names um in my universe list at like
+[00:50:21] any one time. I was talking to a student
+[00:50:24] today and he said he had 300 names on
+[00:50:26] his universe list and he's done a really
+[00:50:28] good job of holding some big winners
+[00:50:30] Marll and Dell and he still has them.
+[00:50:32] But the one of the things that I said I
+[00:50:34] said 300 names is maybe too much and
+[00:50:36] because you like holding names for a
+[00:50:38] longer period of time the way you can
+[00:50:40] kind of um shrink your universe list is
+[00:50:45] have some accelerating earnings in
+[00:50:46] sales. if they don't have accelerating
+[00:50:49] earnings in sales, maybe they could be
+[00:50:51] kind of that um
+[00:50:54] um I don't know I don't want to call it
+[00:50:56] like a wallet pattern, but just know
+[00:50:58] that it's going to be like you're you're
+[00:51:00] just trading this for a few day momentum
+[00:51:02] burst for your equity curve and then
+[00:51:05] that's it, right? But if you want to sit
+[00:51:06] in something for weeks and potentially
+[00:51:09] months, usually having accelerating
+[00:51:12] earnings and sales is the thing that
+[00:51:15] stops that stock from roundtpping all of
+[00:51:17] its gains, right? So Oplo was fun last
+[00:51:20] year, but it more than roundtrip the
+[00:51:23] entire thing. Why? They make zero
+[00:51:25] dollars. So, they're they're fun and
+[00:51:28] they work when the theme is working. But
+[00:51:30] if you really want to sit in names, and
+[00:51:32] you want to be more of a position
+[00:51:33] trader, multimonth, even a full year,
+[00:51:37] accelerating earnings and sales, uh, 25%
+[00:51:40] quarter quarter or trailing 12 months,
+[00:51:43] near their 20-day highs. I personally
+[00:51:45] like stocks with over a billion dollar
+[00:51:47] market cap. And people are like, "Well,
+[00:51:50] Ariel, at a billion dollars in market
+[00:51:52] cap, are you are do you feel like you're
+[00:51:53] missing names?" The reality is no,
+[00:51:57] right? A billion dollars nowadays for a
+[00:51:59] company is is actually kind of small. I
+[00:52:02] mean, as crazy as that might sound,
+[00:52:04] right? You could still have 2500 stocks
+[00:52:06] to pay attention to, north of a billion
+[00:52:09] dollars. And to this, I'll say if you
+[00:52:13] are into trading momentum,
+[00:52:16] Regetti had a billion dollar market cap
+[00:52:18] at like $2. Did you miss anything? If
+[00:52:21] you didn't buy it at a$150, but you
+[00:52:23] bought it at two, right? It still went
+[00:52:26] to 50s. So, you didn't miss anything. A
+[00:52:28] billion dollars for me is perfect. Um,
+[00:52:31] and that's a really good scan to run.
+[00:52:33] Another one is your highest momentum.
+[00:52:35] So, 70% above 52- week lows. That's
+[00:52:38] already charts that are going up. Um,
+[00:52:41] greater than $10, uh, trades more than 2
+[00:52:44] million shares a day. And then price
+[00:52:46] above the 50 simple moving average. You
+[00:52:48] can adjust that to prices above or below
+[00:52:51] the 50 simple moving average or even
+[00:52:53] below up to 5%. Um, and that will give
+[00:52:56] you a couple stocks that might just be
+[00:52:57] consolidating just underneath before you
+[00:52:59] get that old Oliver Kell wedge pop uh
+[00:53:02] potentially right back through the 50,
+[00:53:04] which is a setup that I do not mind
+[00:53:06] trading at all. And then episodic pivots
+[00:53:09] or earnings gap ups, power earnings
+[00:53:11] gaps, and then you could take that as a
+[00:53:13] you gap up on news. um you trade big-
+[00:53:16] time elevated volume um could be on news
+[00:53:19] or earnings or after the stock's been
+[00:53:21] neglected and then again shout out to a
+[00:53:23] meat um trading a high volume close
+[00:53:26] setup but right behind uh those as well
+[00:53:29] if if they meet the criteria so finding
+[00:53:32] the needles in the haystack is a
+[00:53:34] nonnegotiable
+[00:53:35] any questions there brother
+[00:53:37] >> no uh do you have a preferred market cap
+[00:53:39] range like I like the like five to 20
+[00:53:42] billion range in general and trading
+[00:53:46] those for
+[00:53:46] >> so they can double and triple and
+[00:53:49] quadruple. Um,
+[00:53:51] not you know I don't want to neglect
+[00:53:53] because I didn't mind the move that AMD
+[00:53:57] made right and AMD is was a half a
+[00:54:03] trillion or or le just a little less. So
+[00:54:06] I don't want to neglect because you can
+[00:54:09] just be over a billion. Of course, there
+[00:54:12] is that like sweet spot where you know
+[00:54:14] you're you're a call it a you know10
+[00:54:18] billion dollar business and you can go
+[00:54:20] to 50 or 100 or what have you. Um like
+[00:54:24] if I had to have a preference I I happen
+[00:54:27] to like Rocket Lab even though maybe
+[00:54:30] right now it's not acting the best but
+[00:54:32] you know that 60 billion with with
+[00:54:35] SpaceX at 2.5 trillion. So, it's like
+[00:54:37] you got this $60 billion business with
+[00:54:39] maybe some wiggle room up to a hundred
+[00:54:42] plus in the future, right? Like that to
+[00:54:44] me feels feels fairly comfortable. Um,
+[00:54:48] >> yes. Like once you get to Sorry,
+[00:54:50] Richard. Once you get to like these two
+[00:54:52] and three trillion market cap, I I ask
+[00:54:56] myself like, yes, they can go up, but
+[00:54:58] how much meat is on the bone? Like, we
+[00:55:00] all want to catch a 100% move. Is Nvidia
+[00:55:04] going to be the stock that gives us a
+[00:55:06] 100% move here and then what becomes an
+[00:55:09] eight or a 10 trillion dollar company?
+[00:55:11] Not saying that it well not saying that
+[00:55:13] it can't versus
+[00:55:16] you catching, you know, Enbis
+[00:55:19] or or ARM or even Dell, right? And it's
+[00:55:23] got that opportunity to, you know,
+[00:55:24] double, triple, quadruple versus
+[00:55:27] something like Nvidia where you just
+[00:55:29] look at it and you're like, if this
+[00:55:30] thing quadruples, it's like it's like 20
+[00:55:33] trillion dollars, right? Like the odds
+[00:55:34] of that become significantly less as you
+[00:55:37] get too big. Too big for your own good.
+[00:55:40] >> Yeah. And I was just going to add um
+[00:55:42] would you mind defining dollar volume
+[00:55:44] and talking a little bit about that
+[00:55:45] aspect and and why you look for uh
+[00:55:47] pretty liquid in the can slim and and
+[00:55:49] reasonably liquid in the scan number two
+[00:55:51] as well? Yeah. Well,
+[00:55:54] so institutions have to trade liquid
+[00:55:58] names. Otherwise, they're building
+[00:55:59] positions for a really long time in
+[00:56:02] illlquid stocks. But what can happen is
+[00:56:03] if you're trading an eliquid name, you
+[00:56:06] know, something that's only trading 20
+[00:56:07] million bucks a day. It only takes one
+[00:56:10] player to exit their position to
+[00:56:13] absolutely destroy a stock, right? But
+[00:56:15] if somebody wants to exit a billion
+[00:56:18] dollars of Nvidia, they could do so
+[00:56:20] fairly easily in two days, right,
+[00:56:24] without, you know, crushing the price of
+[00:56:27] Nvidia. And, you know, as a as a retail
+[00:56:30] trader,
+[00:56:32] I I would always just say if you're
+[00:56:35] sticking to more liquid stocks, you'll
+[00:56:37] never you'll deal with less slippage.
+[00:56:40] And that's really important. One of the
+[00:56:41] costs of doing business, especially as
+[00:56:43] your own portfolio begins to scale, is
+[00:56:46] not moving the stocks that you're
+[00:56:48] trading. There are instances where I'm
+[00:56:50] buying a name like Dawan and I'm like,
+[00:56:53] if I buy the actual if I buy a 10%
+[00:56:56] portfolio size, I I don't want to move a
+[00:56:58] stock even 50 cents, right? And there
+[00:57:02] are instances where there are names that
+[00:57:03] I might be trading that are trading 80
+[00:57:06] million or hundred million dollars in
+[00:57:08] daily dollar volume where you move them
+[00:57:10] a little bit and I don't want that at
+[00:57:12] all because you move them on the way in
+[00:57:14] you move them on the way out and as
+[00:57:17] you're buying others might be doing the
+[00:57:18] same thing. So you're dealing with
+[00:57:19] slippage, the cost of doing business on
+[00:57:22] both sides versus if I buy Intel, let's
+[00:57:26] say you could put a myself or any
+[00:57:30] institution could buy $5 million worth
+[00:57:33] of Intel with a single click of a button
+[00:57:35] and it might move 8 cents, right? So or
+[00:57:39] 10 cents or 15 like much less. And so
+[00:57:42] your slipage is a whole lot less. And if
+[00:57:46] you're focused on very highly liquid
+[00:57:48] names,
+[00:57:49] just even just north of a hundred
+[00:57:52] million dollars a day, you're not
+[00:57:54] missing out on any of the best stocks in
+[00:57:57] the market. Zero. No, you're not missing
+[00:58:00] Micron. You're not missing SanDisk.
+[00:58:03] You're not missing Nvidia. You're not
+[00:58:04] missing ARM, Marvel. They're all trading
+[00:58:08] billions of dollars a day. I know that
+[00:58:12] stocks that are trading 20 million bucks
+[00:58:14] a day, they can they can certainly make
+[00:58:16] big moves,
+[00:58:19] but and maybe most people with smaller
+[00:58:21] accounts like they might be trading with
+[00:58:23] a 30,000, 20,000, this isn't something
+[00:58:26] that they have to think about because
+[00:58:28] they might only be buying 20 shares, 10
+[00:58:30] shares, 15 shares, 50 shares. But as
+[00:58:34] most traders and everybody wants to
+[00:58:36] scale, you have to be trading names that
+[00:58:39] are liquid. Otherwise, it just becomes
+[00:58:42] far too difficult. Um, you you move a
+[00:58:45] stock when you get in, you move a stock
+[00:58:46] when you get out. That cost of doing
+[00:58:48] business adds up at the end of every
+[00:58:50] single trading year in a way that you
+[00:58:53] don't even really want to do that math.
+[00:58:54] So, um, again, you're not missing any of
+[00:58:58] the best stocks in the stock market over
+[00:59:01] the last 12 months if you just set a
+[00:59:04] filter at 60 million. Um, and then
+[00:59:08] almost everybody can find, you know,
+[00:59:10] great stocks to trade, good earnings and
+[00:59:12] sales, over a billion dollar market cap,
+[00:59:14] over 60 million daily dollar volume. And
+[00:59:18] and what it'll do is it'll actually
+[00:59:21] it'll narrow your focus on to the best
+[00:59:23] of the best. I would even take it
+[00:59:26] another step further. Don't trade stocks
+[00:59:28] that trade less than 3% average daily
+[00:59:31] range per day. You want to make money
+[00:59:35] this decade. Avoid the turtles,
+[00:59:38] right? General Electric is fine. It's
+[00:59:41] going up. But do you want to own General
+[00:59:44] Electric for a 30% move in a year or do
+[00:59:49] you want to catch AOI from 40 to 200,
+[00:59:54] right? So, and even AOI at 40 bucks was
+[00:59:59] trading $100 million a day and it had a,
+[01:00:02] you know, 8% average daily range and a
+[01:00:05] market cap north of 1 billion and it,
+[01:00:07] you know, has good accelerating earnings
+[01:00:09] and sales. And it's the same thing with
+[01:00:11] um a name like ALAB, for instance. Like
+[01:00:14] they've all got it, but what you're
+[01:00:16] doing is you're just eliminating the
+[01:00:18] General Electrics or the Boeings of the
+[01:00:20] world. Slow. They maybe have some good
+[01:00:23] growth, but then they're just too slow.
+[01:00:26] And you got to do something to quote
+[01:00:28] unquote find the needles in the
+[01:00:30] haystack.
+[01:00:31] >> Yep. Great. Yeah, I think the combo of
+[01:00:33] liquidity plus higher ADR that there's a
+[01:00:37] sweet spot there. And I I don't like the
+[01:00:39] super high ADRs because like those can
+[01:00:41] be their own animals. Um but you know I
+[01:00:44] think like five to eight percent is kind
+[01:00:46] of a sweet spot for
+[01:00:47] >> sweet spot. DRDO.
+[01:00:49] >> Yeah,
+[01:00:50] >> it's a sweet it's a sweet spot and you
+[01:00:52] know those and ALAB a big opportunity
+[01:00:55] for those names to double Marll like 6%
+[01:00:59] even AMD recently th they move
+[01:01:02] beautifully but then even sometimes when
+[01:01:04] they become too big like Nvidia or Apple
+[01:01:08] all of a sudden its average daily range
+[01:01:11] shrinks all the way to two and three and
+[01:01:13] and hence the reason why you get these
+[01:01:15] double and these triple leveraged ETFs
+[01:01:18] which you know they're they're own
+[01:01:20] monsters but they can actually be very
+[01:01:24] beneficial if used properly as well. Not
+[01:01:26] something that I tend to trade but
+[01:01:28] during a period of a momentum burst
+[01:01:31] there some of the best instruments and
+[01:01:33] at first I was like you know the market
+[01:01:35] doesn't really need a a 3x leveraged
+[01:01:38] whatever it might be but there are
+[01:01:40] instances when it's actually not that
+[01:01:42] bad.
+[01:01:42] >> I think we need a 10x SpaceX. Is that is
+[01:01:45] that
+[01:01:45] >> man? That's I think we've already got
+[01:01:47] two X um and probably 3X if I'm not
+[01:01:51] mistaken.
+[01:01:53] >> One more thing about like the universe
+[01:01:55] uh that I think might be good to
+[01:01:56] mention.
+[01:01:58] >> Like this is something that you learn
+[01:01:59] over time, but learning the character of
+[01:02:01] the stock you're trading, you know, is
+[01:02:03] it a is it a stock that when in trends
+[01:02:05] trades cleanly? And this goes to
+[01:02:07] liquidity a little bit too. Does it
+[01:02:09] respect the moving averages? That's the
+[01:02:11] ones I like to focus on. it. I call them
+[01:02:13] choppy traders if they're kind of the
+[01:02:14] opposite. There's like no respect for
+[01:02:16] moving averages. There's little follow
+[01:02:18] through on breakouts. Um
+[01:02:20] >> IOC, you mean?
+[01:02:21] >> Yeah. Yeah. Exactly. Exactly. And all
+[01:02:23] like the commodity ones. That's what
+[01:02:25] like another reason why I I dislike
+[01:02:27] them. Um, but also just like when I'm
+[01:02:30] when I'm screening and I find a good
+[01:02:32] setup, it's in a good theme, I'll look
+[01:02:34] at like the last trend like from a base
+[01:02:37] and like first of all, I'll do like a
+[01:02:39] measuring tool in DVW and like measure
+[01:02:40] from the breakout to where it kind of
+[01:02:42] topped or rolled over and like was that
+[01:02:44] a meaningful move? Was that a 40 50%
+[01:02:47] move that I would be interested in? Um,
+[01:02:49] and
+[01:02:50] >> and linear and linear
+[01:02:51] >> linear linear and respecting the moving
+[01:02:53] averages. that those little things
+[01:02:54] looking to the left, what is the stock
+[01:02:56] done before? Has it shown it's capable
+[01:02:58] of making a market leader move, you
+[01:03:01] know, does it is it a serial gapper?
+[01:03:03] Like does it like to gap up on on
+[01:03:04] earnings and positive news? Those are
+[01:03:07] little nuances that you'll pick up and
+[01:03:09] have a running list of that can help
+[01:03:10] you, you know, focus on the right names.
+[01:03:13] >> Yeah, I agree with that completely. I
+[01:03:15] know. Um it's tough when you look at an
+[01:03:19] IoT or a TEM and you're like, well, the
+[01:03:22] theme is good. The but it just it itself
+[01:03:25] is such a choppy, inconsistent,
+[01:03:29] but it goes back to learning your
+[01:03:30] stock's personality. If you've watched
+[01:03:32] your stock long enough and you say,
+[01:03:34] "Hey, this thing loves to shake out the
+[01:03:36] 20-day." So then just waiting for it to
+[01:03:39] shake out the 20-day and then be a buyer
+[01:03:41] there and knowing, hey, this this is
+[01:03:43] what this thing likes to do. This is how
+[01:03:45] I will would buy this name anyway. It's
+[01:03:48] tough when you're
+[01:03:50] um if if you're not super adaptable to
+[01:03:54] different entry tactics.
+[01:03:57] If you're just like, "No, I'm a
+[01:03:58] traditional breakout buyer and I only
+[01:04:00] like to buy earnings gap ups or I only
+[01:04:02] like to buy." There are charts that like
+[01:04:04] to gap up on earnings but then do
+[01:04:06] nothing for a few days. That can be very
+[01:04:09] very annoying. There have been charts
+[01:04:12] that like to gap up on earnings and then
+[01:04:13] immediately follow through. Um, so that
+[01:04:17] might work for you, but then the others
+[01:04:19] might not. So definitely learning your
+[01:04:21] stock's personality. I like what you
+[01:04:23] said there about um learning looking
+[01:04:27] left and seeing if it's got linear price
+[01:04:29] history. If it doesn't, and it never
+[01:04:31] has, I'd rather it prove to me that this
+[01:04:34] is like a new regime, new market
+[01:04:36] participants in this thing, new
+[01:04:38] institutions that are like desperately
+[01:04:40] trying to own it. They'll drive it up.
+[01:04:42] It'll become linear. It'll have like
+[01:04:44] that Dave Ryan ants, right? Where it's
+[01:04:46] just being accumulated day after day
+[01:04:48] after day for a couple of weeks and then
+[01:04:50] it'll flag. It'll pull back. It's up
+[01:04:52] four, five, six weeks in a row. Now
+[01:04:54] you're like, I man, I got to own this
+[01:04:56] thing at some point. Uh, and then you're
+[01:04:58] just waiting for that new consolidation,
+[01:05:00] whether it be a consolidation like
+[01:05:01] SanDisk or something a little sloppier
+[01:05:04] like VRT. Um, I remember VRT at like 17
+[01:05:09] bucks and then it just like ran away.
+[01:05:11] And it never made me comfortable to buy
+[01:05:14] it, but that was a big lesson. Those are
+[01:05:17] the ones that institutions that they're
+[01:05:18] dying to own this thing. They don't care
+[01:05:20] what it looks like, what the price is.
+[01:05:22] There's no weak hands and they are
+[01:05:24] accumulating the hell out of it. So
+[01:05:28] >> that those those are how that how how it
+[01:05:30] goes sometimes. Anyway,
+[01:05:31] >> yeah, I bought, by the way, uh I bought
+[01:05:33] VRT like from that gap down at like 178,
+[01:05:37] sold it on one bad day and just never
+[01:05:39] bought it back, dude. It's just it
+[01:05:41] happens. Uh oh, no, not ever, but like
+[01:05:44] not not during that initial move.
+[01:05:45] >> I was about to say anytime I've tried to
+[01:05:47] own VRT recently, um it's it's not been
+[01:05:50] pretty.
+[01:05:50] >> Yep.
+[01:05:52] >> So, speaking of I think it got back
+[01:05:54] above the 50day today.
+[01:05:56] >> Yeah, I think so.
+[01:05:57] >> And and so did CEG just when you think
+[01:06:00] they were below it. It faded a little
+[01:06:01] bit into the the close. Yeah,
+[01:06:03] >> I mean market market was a was kind of
+[01:06:05] dough. Okay, so moving on. Puzzle piece
+[01:06:08] number six. Fundamentals and themes
+[01:06:11] drive price. The fuel beneath the chart.
+[01:06:13] The biggest winners. Always pair
+[01:06:15] powerful fundamentals with a chart
+[01:06:17] confirming institutional accumulation.
+[01:06:19] Something that we just talked about.
+[01:06:21] Look for tripledigit EPS growth. does
+[01:06:23] not always have to be like that, but if
+[01:06:25] you have it, um, obviously better
+[01:06:27] revenue, uh, confirms kind of that EPS
+[01:06:29] story. Um, and then great fundamentals
+[01:06:33] plus a hot theme gives you that much
+[01:06:36] more potential. Going back to what I
+[01:06:37] mentioned earlier, I would rather own
+[01:06:40] the crummiest stock, right, in the
+[01:06:43] strongest group, in a hot theme, that
+[01:06:45] increases your potential. you now give
+[01:06:47] me a hot theme with great earnings and
+[01:06:50] sales, then you look like ALAB where you
+[01:06:53] look ugly at first, then the theme gets
+[01:06:55] hot, now it's like, oh man, but they do
+[01:06:57] have awesome earnings and sales. In
+[01:06:58] fact, they've got tripledigit EPS uh
+[01:07:01] growth. I'm not sure if it's still that,
+[01:07:03] but I'm pretty sure it was for a while.
+[01:07:05] Um, and then all of a sudden, huge move.
+[01:07:09] Um, and then again, same fundamentals,
+[01:07:12] but in a dead theme, you're going to get
+[01:07:15] 20 30%. Amazing fundamentals. In a great
+[01:07:19] theme, you get 100 200% moves. And that
+[01:07:23] is very important to remember. You can
+[01:07:26] go and catch awesome move, but if it's a
+[01:07:30] crummy theme and it's like moving in a
+[01:07:33] vacuum, you're swimming upstream.
+[01:07:36] doesn't make for nearly as awesome of a
+[01:07:38] trade as it does when it's got awesome
+[01:07:40] fundamentals in a great theme. So, and
+[01:07:42] then obviously a chart, the technicals
+[01:07:45] itself triggers the entry and triggers
+[01:07:48] the trade. Fundamentals and themes
+[01:07:51] decide how big to go and how long to
+[01:07:54] hold. Semiconductors right now, that has
+[01:07:58] been kind of the the theme. um anything
+[01:08:01] AI related has been the theme. Although
+[01:08:04] maybe a theme that's getting narrower
+[01:08:07] and narrower um in as the as the length
+[01:08:10] of this trend goes. I don't know if
+[01:08:12] that's entirely true or not, but if
+[01:08:14] they've got good fundamentals and a hot
+[01:08:16] theme, that obviously should be the
+[01:08:18] determining factor of your patience and
+[01:08:21] your position sizing.
+[01:08:23] Um okay. Um, puzzle piece number seven
+[01:08:26] before we wrap up the foundation,
+[01:08:28] improving your situational awareness.
+[01:08:30] Read the whole board, not just your
+[01:08:33] ticker. So, hold the full picture in
+[01:08:35] your head, the your index, your breath,
+[01:08:38] your leaders, your laggers, your themes.
+[01:08:41] I don't really focus too much on bonds.
+[01:08:43] I have been focusing a little bit about
+[01:08:45] the dollar. We talked about this a bit
+[01:08:47] before we started um recording. You'll
+[01:08:50] notice today the dollar was super
+[01:08:52] strong. the market was getting beaten
+[01:08:54] up. You almost saw those things moving
+[01:08:56] tick for tick. Um and and obviously that
+[01:09:00] is kind of holding the whole picture in
+[01:09:01] your head. The last time we saw the
+[01:09:03] dollar rallying in a big way was 2022.
+[01:09:06] We obviously know what the market was
+[01:09:07] doing at that time. So I at least want
+[01:09:10] to be conscious of it. And that's just
+[01:09:13] part of holding the whole picture in my
+[01:09:14] head. On the flip side of that, I can't
+[01:09:17] lose sight of the fact that WDC, NBIS,
+[01:09:20] ARM, and even Micron all tapped a new
+[01:09:23] all-time closing high today at some
+[01:09:25] point. So, you know, balancing those
+[01:09:28] things is is is kind of important for
+[01:09:31] me. What leaders are doing is very
+[01:09:34] important. That's the most important
+[01:09:36] thing to me. But also and equally as
+[01:09:40] important is what setups do I have that
+[01:09:43] are buyable
+[01:09:45] tomorrow?
+[01:09:46] If I've got very few stocks that are
+[01:09:49] actionable and then that they're
+[01:09:52] triggering for on a technical level,
+[01:09:55] then I just do nothing. Um, and I let
+[01:09:58] names work if I have them. Um, and then
+[01:10:01] maybe if the market you show some
+[01:10:03] distribution, do I have a name or two
+[01:10:06] that I could potentially short on the
+[01:10:08] other side of the market to play some
+[01:10:11] potential unwind in the market? Um,
+[01:10:14] setups repeat. Um, context never does.
+[01:10:17] The same chart is a buy in one tape and
+[01:10:19] is a trap in another. Right? That's why
+[01:10:22] that when is very, very important. And
+[01:10:24] then your morning checklist, right? What
+[01:10:26] does your index look like? How's your
+[01:10:29] breath? What's your leadership looking
+[01:10:31] like? And then you know what is there is
+[01:10:34] there any news for the market? Today was
+[01:10:36] FOMC. Knowing that and then your own
+[01:10:39] book, right? What positions do you have
+[01:10:41] open? What's working? What's not? Um and
+[01:10:44] then taking it from there. And then um
+[01:10:47] awareness
+[01:10:48] catches it early. distribution,
+[01:10:51] distribution days, failed breakouts,
+[01:10:53] defensive stocks leading, and then maybe
+[01:10:56] even the dollar, not so much bonds
+[01:10:58] rallying, um, is something that would
+[01:11:00] kind of raise the antennas. If we start
+[01:11:02] to see failed breakouts, if I start to
+[01:11:05] see toilet paper, I always joke the XLP
+[01:11:08] consumer staples leading, you know, that
+[01:11:10] makes me a little bit more defensive um,
+[01:11:13] than if semiconductors and the SMH acts
+[01:11:15] great. If the SMH turns into a failed
+[01:11:18] breakout and the dollar start to rally
+[01:11:20] and my own stocks start to stop me out,
+[01:11:23] those are red flags. Those all go into
+[01:11:26] kind of improving your own situ
+[01:11:28] situational awareness. But ultimately,
+[01:11:31] that can all be boiled down to
+[01:11:34] your own portfolio. How are your names
+[01:11:38] acting? How is your universal list
+[01:11:41] acting?
+[01:11:42] They were showing relative strength
+[01:11:44] before you bought them. They were they
+[01:11:47] were going up when you were in them. You
+[01:11:49] eventually get stopped out. Something
+[01:11:51] looks like a clean setup. You go to buy
+[01:11:53] it, it fails. Those are all things that
+[01:11:56] you can kind of say, "Hey, let's pump
+[01:11:58] the brakes a little bit." But as long as
+[01:12:00] leaders continue to lead, you kind of
+[01:12:02] got to, you know, keep some of the
+[01:12:04] negativity out of your head.
+[01:12:09] [clears throat] All right, moving on. Um
+[01:12:11] this second part is on selection. So a
+[01:12:15] small menu of setups traded with
+[01:12:17] conviction. So the setups I trade um
+[01:12:21] again a big move up type base. We talked
+[01:12:24] about it in gold. We talked about it
+[01:12:25] with Nvidia. So you'll get even SanDisk.
+[01:12:28] You get that 30 to 100% move in some
+[01:12:30] cases even more. Then two to eight weeks
+[01:12:32] of contraction. You saw it again with
+[01:12:34] SanDisk. Seven weeks of sideways, nine
+[01:12:37] weeks of sideways. Then range expansion.
+[01:12:40] Again, you saw it with gold. Um, and in
+[01:12:43] some cases, you can get five months of
+[01:12:46] contraction. The bigger the contraction,
+[01:12:48] the better, especially if it's coming
+[01:12:50] off of a really big move. Episodic
+[01:12:52] pivots or power earnings gaps are the
+[01:12:54] other setups that I love to trade. Um,
+[01:12:58] usually I don't buy them on day one
+[01:13:00] anymore. I kind of will wait for
+[01:13:03] even the Scotland fish hook. Um, I know
+[01:13:05] you you've obviously chatted with him
+[01:13:07] before. um or the high volume close
+[01:13:10] setup which AmI talks about so often and
+[01:13:13] uh just sometimes a simple I if you're
+[01:13:16] going to buy them on the earnings gap up
+[01:13:18] day something as simple as a fivem
+[01:13:20] minute opening range break um could be
+[01:13:22] good enough I love volatility
+[01:13:24] contraction patterns that is the exact
+[01:13:26] chart that we spoke about in gold just
+[01:13:30] picture perfect you get a very big move
+[01:13:33] up and then all of a sudden and these
+[01:13:35] pullbacks are very shallow but
+[01:13:37] Effectively they get shallower and
+[01:13:39] shallower as you move the right hand
+[01:13:41] side of the chart. That is your classic
+[01:13:44] very classic U mark mini VCP and then
+[01:13:48] obviously a simple bull flag. So a move
+[01:13:50] up and they could they could be very
+[01:13:53] very short bull flags or they're almost
+[01:13:56] the traditional cup and handles. Um
+[01:13:59] think about something like Morgan
+[01:14:01] Stanley. Um, as of late, this is just a
+[01:14:04] textbook cup. And then you have your
+[01:14:06] handle here on the right hand side. And
+[01:14:08] would you be too surprised if I can find
+[01:14:11] you another banking stock which looked
+[01:14:14] identical at the exact same moment?
+[01:14:16] Well, don't be too surprised because
+[01:14:17] stocks move together. Goldman Sachs,
+[01:14:20] your cup and your handle, no surprise.
+[01:14:24] No surprise.
+[01:14:25] Charts move together. That's probably
+[01:14:27] the thing that I would reiterate more
+[01:14:30] than anything.
+[01:14:32] Setups are fine in a vacuum, but they're
+[01:14:36] better when they're together. Morgan
+[01:14:38] Stanley, Goldman Sachs, I mean, you
+[01:14:40] know, two synonymous names in the
+[01:14:42] banking industry, both with cup and
+[01:14:44] handles, both with breakouts. Surprise,
+[01:14:47] surprise. And it wasn't the only cup and
+[01:14:49] handle um that I was looking at. Guess
+[01:14:52] what you had here? And this is a
+[01:14:53] semiconductor. A cup with a handle,
+[01:14:56] right? And we were looking at AAT
+[01:14:58] earlier, Richard. A cup
+[01:15:01] with a handle. And yes, some of them can
+[01:15:03] be a little bit volatile on the right
+[01:15:05] hand side of the chart, but would you be
+[01:15:07] too surprised that semiconductors
+[01:15:11] were giving you cup and handle setups
+[01:15:13] and then they're breaking out together.
+[01:15:15] So very important. Again, those are the
+[01:15:17] setups that I like to trade and that's
+[01:15:19] how we kind of view it as selection.
+[01:15:21] again, pick two or three setups, learn
+[01:15:24] them cold, know them like the back of
+[01:15:25] your hand, um, and let the rest of the
+[01:15:28] market exist without you. That's like a
+[01:15:30] good way to, you know, kind of view it
+[01:15:32] as you become a little bit more
+[01:15:34] seasoned. Um, I used to trade the
+[01:15:36] earnings gap up, but then I learned from
+[01:15:38] a me and I learned from Scotland the
+[01:15:40] fish hook setup, the HVC, and then you
+[01:15:43] add those to your playbook. If you
+[01:15:45] happen to miss an earnings gap up on day
+[01:15:48] one for whatever reason or because you
+[01:15:50] didn't want to buy it or maybe you've
+[01:15:52] noticed that they've been pretty
+[01:15:53] volatile on day one, that doesn't mean
+[01:15:56] that you have completely missed the
+[01:15:58] setup. In fact, you can buy it a day
+[01:16:00] later, two days later, 5 days later, and
+[01:16:03] maybe it still meets the criteria for a
+[01:16:05] setup that you understand.
+[01:16:10] >> Yeah. One more example, and this is
+[01:16:12] VCPs. Can you bring up MU? um
+[01:16:15] >> way down in the base.
+[01:16:16] >> Yeah, at least this is kind of my
+[01:16:18] perspective. Um Oh, no. Uh the most
+[01:16:20] recent base actually is what I'm looking
+[01:16:22] at.
+[01:16:22] >> Um this is this is my interpretation of
+[01:16:24] ECPs. Uh Ariel, you might be a little
+[01:16:26] bit different, but it doesn't always
+[01:16:28] have to be higher lows. We we just need
+[01:16:30] some tightening on the right side. And
+[01:16:32] like there there was a shake out here.
+[01:16:34] Yeah. And that's like a perfect high
+[01:16:36] handle, whatever you want to call it.
+[01:16:37] It's not so much about memorizing
+[01:16:40] patterns. It's about like understanding
+[01:16:42] what does constructive price and volume
+[01:16:43] action look like and it can express
+[01:16:46] itself in multiple ways. But we're
+[01:16:48] looking for a mature base and then a
+[01:16:51] burst up the right side and then
+[01:16:53] tightness. And like you don't need to
+[01:16:55] memorize exactly what a cup and handle
+[01:16:57] looks like, although it's like the
+[01:16:58] simplest, but that's what I look for is
+[01:17:00] just like tightness up the right side at
+[01:17:02] when a stock is in a mature base. And
+[01:17:04] yeah, we've got a we've got like this
+[01:17:05] could be there's an undercut and rally
+[01:17:07] setup here. This is a beautiful This is
+[01:17:09] a
+[01:17:10] >> absolutely beautiful shakeout here, too.
+[01:17:12] So, this is um I I don't mind when price
+[01:17:16] does this at all.
+[01:17:18] >> Oops. This does not bother me in the
+[01:17:20] slightest bit when when price gives a
+[01:17:23] healthy shake out underneath the base.
+[01:17:25] And I remember the market gave a
+[01:17:27] follow-through day on the ETH, hence the
+[01:17:29] gap up. Surprised that a stock would gap
+[01:17:31] up with the market because that's
+[01:17:33] exactly what stocks do. They tend to
+[01:17:34] move in lock step with the market. But
+[01:17:37] some better than others. Micron being a
+[01:17:40] leader. I ended up buying this on the
+[01:17:42] 9th on effectively the little undercut
+[01:17:44] and the reclaim of the 50 simple moving
+[01:17:47] average. Um, you know, we could take it
+[01:17:48] down to a smaller time frame and look at
+[01:17:50] the actual setup itself, but a pretty
+[01:17:52] straightforward setup nonetheless. Um,
+[01:17:54] when you look at just what a 620 setup
+[01:17:58] looks like and it it boils it down to a
+[01:18:00] five minute chart, you know what the
+[01:18:03] market's doing, you know what group it's
+[01:18:05] in. You know that these things are super
+[01:18:07] strong. It reclaims a key level. The
+[01:18:10] market just gave you a follow-through
+[01:18:11] day, the prior day technically, and now
+[01:18:14] you've got a smaller time frame to get
+[01:18:16] in and then to manage risk on a smaller
+[01:18:19] time frame with the bigger picture
+[01:18:20] context in mind. And also with the
+[01:18:22] market environment, having change
+[01:18:25] regimes into a potential, we just got
+[01:18:27] the follow-through day. Now, it's time
+[01:18:28] to start getting aggress not
+[01:18:30] aggressively long, but it's time to
+[01:18:32] start getting some money to work in the
+[01:18:34] market. um and doing so quickly,
+[01:18:36] especially if this is going to be a
+[01:18:37] valid follow-through day. You know,
+[01:18:39] getting positioned anywhere from the 8th
+[01:18:41] all the way up until, you know, middle
+[01:18:43] of April, from the 8th to the 16th or
+[01:18:46] 18th or 20th makes total sense to me. Um
+[01:18:50] and then obviously, you know, we all
+[01:18:52] know what the market does from there.
+[01:18:54] So,
+[01:18:54] >> yeah. And one more thing, um that was a
+[01:18:56] little bit of a tell for SNDK is MU, the
+[01:18:58] base before this, if you could go back
+[01:19:00] to this. Uh no, stay on MU for just a
+[01:19:03] sec. Sorry.
+[01:19:04] um the base before this. So back in um
+[01:19:08] here December time frame, this gapped
+[01:19:12] and broke out and was trending before
+[01:19:15] SNDK even started moving at the right
+[01:19:17] side of its base. So seeing the strength
+[01:19:19] here tells you to investigate the theme
+[01:19:21] a little bit more. And then SNDK uh so
+[01:19:24] this this broke out of the base that uh
+[01:19:26] on December 19th SNDK that same time
+[01:19:29] frame if you could bring up that chart
+[01:19:31] um was just moving off the lows and
+[01:19:34] didn't break out until Jan 2 uh Jan 6
+[01:19:37] time frame. So that's that's a little
+[01:19:39] bit about how again narrowing your focus
+[01:19:41] a little bit and spotting those early
+[01:19:43] entries when sister stocks are are
+[01:19:45] developing and setting up. So just want
+[01:19:47] to point out that
+[01:19:48] >> and and look at how absolutely tight
+[01:19:50] these days are. Y like the range goes
+[01:19:53] from you know a big wide range on the
+[01:19:56] way up obviously pretty nasty wide range
+[01:19:59] on the way down but then you do develop
+[01:20:01] those higher lows you are above all key
+[01:20:03] moving averages and just before you have
+[01:20:05] range expansion I mean you couldn't
+[01:20:08] really trade any tighter over the course
+[01:20:10] of three days for a stock that moves 7%
+[01:20:13] per day effectively you know you're
+[01:20:15] trading you're trading these days with
+[01:20:18] uh you know half of its typical range
+[01:20:20] Yep. Which is
+[01:20:22] >> one one one thing about that bad bar and
+[01:20:24] just like really bad bars in general at
+[01:20:25] the beginning of the base. Draw a line
+[01:20:27] from that close
+[01:20:29] >> when when a stock has a really bad bar.
+[01:20:31] This is just an observation I made.
+[01:20:33] >> Does it follow through below that close
+[01:20:36] or does it not want to close below that
+[01:20:38] bar? This whole base was bas I don't
+[01:20:40] know. I don't know if it even closed on
+[01:20:41] that on December 3rd, which is um a
+[01:20:44] little bit I don't think it closed below
+[01:20:45] that.
+[01:20:45] >> Okay, so close here. 19596
+[01:20:50] 19438. Dude, you're talking less than a
+[01:20:53] buck, right? 40 cents. 40 I mean a
+[01:20:55] little bit more.
+[01:20:56] >> Yeah. So, just like HVC's can be helpful
+[01:20:59] on really good days as earnings, as
+[01:21:01] pivots, you know, a really bad bar if
+[01:21:03] there's no progress down. Yes, the stock
+[01:21:06] might need some time. this based out for
+[01:21:08] a bunch more weeks. But, you know, pay
+[01:21:11] attention to whether we get follow
+[01:21:12] through below it because that can be a
+[01:21:14] tell to keep an eye on a stock. This is
+[01:21:16] a stock that went from um in the prior
+[01:21:18] move 52 to 300 basically. Then it had
+[01:21:22] that bad bar, built a base, but you
+[01:21:25] should still have this on your radar
+[01:21:27] disregarding that one bar because it
+[01:21:29] doesn't want to close below that close.
+[01:21:31] So just something to keep an eye on
+[01:21:32] >> and and how important still that 50-day
+[01:21:35] is. This entire time this thing was so
+[01:21:38] strong it remained 10 times its average
+[01:21:40] true range above the 50 effectively the
+[01:21:43] entire way up.
+[01:21:45] >> And all this bar did was allow that
+[01:21:47] compression to take place even a little
+[01:21:49] bit faster. Let the moving averages were
+[01:21:53] not You can consolidate through time or
+[01:21:55] you can consolidate through price. This
+[01:21:57] one did a little bit of both with that
+[01:22:00] November 20th bar. And in reality,
+[01:22:02] nothing super harmful where you would
+[01:22:05] look at this and go, man, that that
+[01:22:07] defeated this, you know, absolutely
+[01:22:09] beautiful name. Um, and and just one to
+[01:22:14] study study a ton of because obviously
+[01:22:18] we might never see a move like this, but
+[01:22:20] it's how big moves develop. You make a
+[01:22:23] big move up and you consolidate
+[01:22:25] sometimes for seven weeks, sometimes for
+[01:22:27] nine, sometimes for four months. Gold
+[01:22:30] was another beautiful base. Nvidia was
+[01:22:32] another beautiful base. That SMCI was a
+[01:22:34] beautiful base. It's about understanding
+[01:22:37] what those bases look like, how they can
+[01:22:39] develop, how big of a move it up it was
+[01:22:42] before that consolidation needed to take
+[01:22:45] place. And I don't mind this bar at all,
+[01:22:48] Richard. I mean, I remember clear as day
+[01:22:51] having that 247 alert, but my problem
+[01:22:53] that day was buying ALAB and Reddit,
+[01:22:58] both of which were working for a day.
+[01:23:00] So, I was like, well, all right, I
+[01:23:01] missed one, you know, and I'm like,
+[01:23:03] okay, I missed it. No big deal. But
+[01:23:05] then, obviously, this is the one that
+[01:23:06] really ended up working. And the other
+[01:23:08] two, well, we know how those are
+[01:23:10] looking. Although ALAB is a heck of a
+[01:23:13] lot higher um now than than when I
+[01:23:17] bought it. But anyway, um okay, so next
+[01:23:21] is entry tactics, getting in. And this
+[01:23:23] is another puzzle piece. Again, it's
+[01:23:25] good to know your setups. Know your
+[01:23:27] entry tactics. Um entry tactics, getting
+[01:23:30] in with structure and not hope. And
+[01:23:33] entry is not price. It's a moment when
+[01:23:35] buyers prove control. So it's a pivot.
+[01:23:38] Sometimes it's for me typically I love
+[01:23:40] to buy a break over a prior day high.
+[01:23:43] How can you go higher if you haven't
+[01:23:45] broken a prior day high? The other way
+[01:23:48] that I do like to buy is pullbacks into
+[01:23:50] key moving averages. Oftent times you
+[01:23:53] are still within a prior day range or
+[01:23:55] you have broken the prior day range
+[01:23:58] holding a key moving average and start
+[01:24:00] to turn back up. But something very very
+[01:24:03] simple for a brand new trader to do like
+[01:24:05] a SanDisk, is it even really breaking
+[01:24:08] out if it's not breaking above a prior
+[01:24:09] day high or breaking out of the range?
+[01:24:11] The answer is no. And so you're buying
+[01:24:13] something within a range. I've always
+[01:24:16] kind of had this belief. If you're going
+[01:24:18] to buy in a range, buy the weakness in a
+[01:24:22] range, not the strength. Because if you
+[01:24:24] buy within a range and you buy the
+[01:24:26] strength, you're very likely to get
+[01:24:27] chopped up. When you start to buy
+[01:24:29] strength, you want to buy those new
+[01:24:30] highs. And again, shout out to Dr. Wish
+[01:24:35] and the green line breakout. When you're
+[01:24:37] buying a all-time high, there are no
+[01:24:40] more sellers apparently. Well, that that
+[01:24:43] doesn't necessarily have to be true, but
+[01:24:45] there it's you're in price discovery
+[01:24:47] mode. And who wants to sell their stock
+[01:24:51] when everybody every historical buyer is
+[01:24:54] great? So that is a kind of that
+[01:24:57] psychological side of it and that's your
+[01:25:00] that's your pivot right it's that new
+[01:25:03] all-time high or the break of the range
+[01:25:05] or at the very least the break of a
+[01:25:08] prior day high you could play a opening
+[01:25:10] range break 1 5 minute 60 minute 30
+[01:25:13] minute 15 minute I've seen people do it
+[01:25:16] all multitude of ways again it boils
+[01:25:19] down in my opinion not so much to the
+[01:25:22] time frame that you're using to get
+[01:25:24] yourself positioned and but more so the
+[01:25:27] when you're doing it. If you're buying a
+[01:25:29] breakout in a healthy environment after
+[01:25:32] a market correction, your likelihood of
+[01:25:35] success goes way up. Um if you're buying
+[01:25:38] a stock with in a top 40 group, your
+[01:25:40] success your likelihood of success goes
+[01:25:43] way up. And if you're buying a stock in
+[01:25:45] a good group with good earnings and
+[01:25:46] sales in a good market after a market
+[01:25:49] correction and you've now gotten the
+[01:25:51] follow-through day, you're now your
+[01:25:53] success, your likelihood of success goes
+[01:25:55] way up. So, you're just kind of stacking
+[01:25:57] the deck in your favor. And um I don't
+[01:26:00] remember exactly who was that said this.
+[01:26:03] I think it may have been Mark and he
+[01:26:04] said something like um
+[01:26:07] gambling um and trading stocks can be
+[01:26:10] very similar. The difference is I get to
+[01:26:13] see my cards first before I put money on
+[01:26:16] the table. And that's exactly what, you
+[01:26:18] know, taking your entry might look like.
+[01:26:21] If I just had to blindly say, "Oh, FCX
+[01:26:25] is going to break out tomorrow." Maybe.
+[01:26:28] But if I got to say, well, copper's
+[01:26:31] ripping, industrials are doing well,
+[01:26:33] metals and mining are doing well, FCX
+[01:26:36] has got a clean pivot, and then and then
+[01:26:38] you layer, you know, those things in
+[01:26:42] your favor. Now, all of a sudden, your
+[01:26:44] likelihood of success does go up, but
+[01:26:46] you have to kind of layer those other
+[01:26:49] pieces. And and that is where you know
+[01:26:51] having that situational awareness is
+[01:26:53] something that everybody will get better
+[01:26:55] at. But having that understanding um as
+[01:26:58] one of your puzzle pieces is so
+[01:27:00] important. And then obviously the
+[01:27:02] reclaim entry where it could be the
+[01:27:04] reclaim of a key moving average, the
+[01:27:05] reclaim of a support gap. So a stock
+[01:27:07] might fade at the open. There are times
+[01:27:09] where that's the same case. The market
+[01:27:12] might gap up. You don't want to chase a
+[01:27:13] gap up, but you do wait for the profit
+[01:27:17] takers to come in. you get a little bit
+[01:27:19] of a fade at the open and then you buy
+[01:27:20] the reclaim of VWAP. Um, and that's just
+[01:27:23] volume weighted average price and then
+[01:27:26] your stop will you'll already have a low
+[01:27:28] in place. And so your entry is your
+[01:27:31] reclaim of VWAP, your stop is low of
+[01:27:33] day. That allows you to understand what
+[01:27:35] you're even risking before you ever get
+[01:27:37] in. And that is something that all of us
+[01:27:39] should know before we ever get into
+[01:27:41] anything is where you're leaving in case
+[01:27:44] you're wrong.
+[01:27:46] And that is entry tactics. When to avoid
+[01:27:48] buying, the art of saying no. So if you
+[01:27:51] have a market filter, the market is
+[01:27:53] below the 50-day, the 10day is below the
+[01:27:55] 20, both are sloping down. That's your
+[01:27:58] market filter very easily with key
+[01:28:00] moving averages.
+[01:28:02] Not buying a growth stock when that's
+[01:28:05] the case, especially if it's not a
+[01:28:08] follow-through day. If you've had a low
+[01:28:10] and then you're going to float higher
+[01:28:11] for two, three sessions and then get a
+[01:28:13] follow-through day and then you buy it
+[01:28:15] even though you're still below the 50.
+[01:28:17] Okay, fine. A follow-through day is its
+[01:28:19] own separate guideline for getting you
+[01:28:21] engaged in the market. But in most
+[01:28:23] instances, when you're below the 50,
+[01:28:25] you're below the declining 10 and the
+[01:28:27] 20. That should be a very simple market
+[01:28:29] filter for a new trader. Just don't be a
+[01:28:32] buyer of stocks. Don't buy stocks that
+[01:28:34] are extended. So either above their flat
+[01:28:36] pivot for me. I also would say don't buy
+[01:28:39] stocks that are more than four times
+[01:28:41] their average true range from the 50. A
+[01:28:44] very simple example is if a stock moves
+[01:28:46] 4% per day, don't buy greater than 16%
+[01:28:51] above the 50 simple moving average,
+[01:28:54] you're already starting to get into once
+[01:28:57] you're at six times, seven times and
+[01:28:59] people are like, "Wow, this looks so
+[01:29:00] amazing." You're buying extended. The
+[01:29:03] only nuance there is if it's an earnings
+[01:29:06] gap up, that becomes the only reason
+[01:29:09] that you can buy anything that's
+[01:29:11] extended because it's on a news
+[01:29:12] catalyst. Extension from the 50 is
+[01:29:15] actually what you want to see. So, a
+[01:29:17] little counterintuitive, but again,
+[01:29:19] something that I think um you know,
+[01:29:20] traders definitely pick up on and they
+[01:29:22] have to learn. Also, be a little bit
+[01:29:24] more careful with late stage bases.
+[01:29:27] names that are a little loose around
+[01:29:28] pivots, names that look like they built
+[01:29:30] a clean pivot but then fail once, fail
+[01:29:33] twice, fail three time, you got to be a
+[01:29:35] little bit more careful. Um, look at
+[01:29:37] where the stock has come from. That's
+[01:29:40] not to say that names can't go higher,
+[01:29:41] but when you do get to late stage bases,
+[01:29:44] they tend to be a little bit choppier.
+[01:29:46] Um, they they tend to need at least a
+[01:29:48] correction before they can come back to
+[01:29:50] life. Uh, wided loose base, something of
+[01:29:53] which you're seeing in the optics again.
+[01:29:56] Do I know that they're going to break
+[01:29:58] down? No. But think about where a name
+[01:30:02] like LIT has come from. And then say to
+[01:30:05] yourself, does this base up here feel
+[01:30:10] like a clean base? Maybe, but just not
+[01:30:15] yet. And it's not that I don't think
+[01:30:17] it's great, but it's you have to take
+[01:30:20] into context of where this thing has
+[01:30:22] come from and in the time frame it has
+[01:30:24] done it. it, you know, just last April,
+[01:30:27] so 16 months ago or or 14 months ago,
+[01:30:31] you know, the stock was $45 and it
+[01:30:34] effectively got to a,000 plus. Is this
+[01:30:37] enough consolidation here for you? Is
+[01:30:39] this clean enough where you say to
+[01:30:41] yourself, you know, this this looks a
+[01:30:43] little bit more like this type
+[01:30:45] consolidation? Not quite. What you're
+[01:30:47] seeing it during this consolidation of
+[01:30:50] October of last year was a lot cleaner.
+[01:30:54] And considering that this thing was
+[01:30:55] breaking out with the market was
+[01:30:58] chopping and and in fact chopping and
+[01:31:00] then almost going lower.
+[01:31:03] So incredible resilience from this name.
+[01:31:05] But now that you've made this gigantic
+[01:31:07] move up, you've got CIE a leader in its
+[01:31:10] group breaking down. I would just say
+[01:31:13] it's not that it can't work. It's just
+[01:31:15] that maybe the group's not getting as
+[01:31:17] much love as we thought. And maybe this
+[01:31:19] consolidation, considering the recent
+[01:31:22] move up over the last year, isn't a long
+[01:31:25] enough consolidation after a,000%
+[01:31:28] plus move. Um, so be a little bit
+[01:31:31] mindful of late stage bases. Um, and
+[01:31:34] then again, you're already at your max
+[01:31:36] heat. So maybe you're already at max
+[01:31:39] heat. Um, meaning if you've got too much
+[01:31:43] brand new exposure on and you know that
+[01:31:45] if you're going to go get stopped out of
+[01:31:46] all those brand new positions without
+[01:31:48] seeing too much traction, um, your your
+[01:31:52] your chance for a four 4% 5% 6% 7%
+[01:31:57] portfolio draw down from your realized
+[01:31:59] gains might be a little bit too much.
+[01:32:01] And that's also um, you know, kind of
+[01:32:04] dovetailing into what progressive
+[01:32:05] exposure can can really be. So, moving
+[01:32:08] on here, we've got execution, risk
+[01:32:12] first, shares second, stops without
+[01:32:14] negotiation.
+[01:32:16] That's an absolute must. So, proper
+[01:32:18] position sizing, the math under every
+[01:32:20] winning trade. Position sizing isn't
+[01:32:22] just how many shares. The question is
+[01:32:24] how much will I lose if I'm wrong? As a
+[01:32:26] swing trader, you have to know you're
+[01:32:28] wrong 35 or or sorry, 60 65% of the
+[01:32:33] time. I my stats say I'm right 35 to 37%
+[01:32:37] of the time. But when you have a winner,
+[01:32:40] right, letting that thing work, letting
+[01:32:42] it make up for a bunch of your little
+[01:32:43] losses. That is the idea. Um, and then
+[01:32:46] obviously your shares is your account
+[01:32:49] risk uh multiplied by the risk of or
+[01:32:53] your account size multiplied by your
+[01:32:55] risk percentage and then divided by your
+[01:32:58] entry minus your stop. An easy way of
+[01:33:00] saying
+[01:33:02] um if you're buying at a 100 bucks and
+[01:33:04] your stop is 99, right? If you're buying
+[01:33:07] a 10% position and you're risking only
+[01:33:10] 1%, how much can you actually buy to
+[01:33:12] keep your loss at.3%.
+[01:33:15] So, how many shares can you buy? So, um
+[01:33:17] risk per trade 0.5%. I actually don't
+[01:33:20] even go that high. I know some people uh
+[01:33:23] like to do that. I think 75% can be a
+[01:33:26] little um high too. And that a little
+[01:33:28] high as well. When you're for me, even
+[01:33:32] without a losing streak, I like to keep
+[01:33:34] my losses right around a quarter of 1%,
+[01:33:38] maybe even three of 1%. That makes me
+[01:33:42] feel most comfortable. If you're risking
+[01:33:44] more than 1% on a single trade, you are
+[01:33:47] definitely gambling. You're oversizing.
+[01:33:49] There's really no reason for that.
+[01:33:52] Almost all swing traders will go through
+[01:33:54] 8 10 12 losses in a row. The last thing
+[01:33:56] you really want to do is give back, you
+[01:33:59] know, 10 12 15% of your portfolio during
+[01:34:02] a single bad losing streak. I want to
+[01:34:05] say it was October of last year. Um,
+[01:34:09] just after we had that, you know, kind
+[01:34:11] of nasty, um, down day October 10th, I
+[01:34:15] had like a 11 trade losing streak, I
+[01:34:18] ended up losing one and a half% of my
+[01:34:20] portfolio.
+[01:34:21] So, by the time I get to my third and my
+[01:34:24] fourth and my fifth loss, I'm taking 3%
+[01:34:28] position sizes, not because I don't
+[01:34:32] trust the setups that I'm trading or I
+[01:34:34] don't trust myself or I don't trust the
+[01:34:36] mark. I'm either not seeing things well,
+[01:34:39] the market isn't friendly, or my entry
+[01:34:43] tactics are horrible for for the market
+[01:34:46] that we're in. I should be buying
+[01:34:47] pullbacks, but I'm buying breakouts.
+[01:34:50] And you notice that by the time you get
+[01:34:52] to your fourth and your fifth losing
+[01:34:54] trade in a row, and if any one of those
+[01:34:56] three things are true, my entry tactics
+[01:34:59] stink, the market's a little bit choppy,
+[01:35:03] or I'm not seeing things, well, it all
+[01:35:06] of those scenarios, I want to be trading
+[01:35:08] smaller and smaller size. So, if I have
+[01:35:11] to take a 3% position size, but then my
+[01:35:14] stop is 2% to low of day and I'm risking
+[01:35:18] effectively nothing. Good. Good. Let the
+[01:35:21] market get me into a winner and then I'm
+[01:35:24] going to say, "Oh, that's an aerospace
+[01:35:26] and defense stock. Let me go buy
+[01:35:27] another." Oh, I've got another winner in
+[01:35:29] an aerospace and defense. Let me go buy
+[01:35:31] another. And so operating behind
+[01:35:34] traction versus getting more aggressive
+[01:35:36] to make back losers. It was very easy to
+[01:35:39] make up my 1 and a.5% portfolio draw
+[01:35:41] down once I got myself into a few
+[01:35:44] positions. Those happen to be shorts.
+[01:35:47] Um I I shorted Regetti. I shorted um
+[01:35:51] UAMY
+[01:35:53] um and so and I even I think I shorted
+[01:35:55] um Nugget because gold had you know a
+[01:35:58] pretty nasty pullback got a little
+[01:35:59] extended there and so but I I was seeing
+[01:36:04] things well on the short side of the
+[01:36:05] market and all it really took was 3 5%
+[01:36:09] positions on the short side to more than
+[01:36:12] make up for my losses that I had on the
+[01:36:15] long side. Um, so proper position sizing
+[01:36:18] is truly truly the best way that any
+[01:36:22] trader can
+[01:36:24] really uh control their risk. The shares
+[01:36:27] that you buy is like the single most
+[01:36:30] important thing that helps control your
+[01:36:33] draw down. When you're in an up market,
+[01:36:35] you're a genius. Everything is working.
+[01:36:38] Trading is simple. You look in the
+[01:36:40] mirror, you know, your chest is a little
+[01:36:42] bit bigger. You're just a genius, right?
+[01:36:44] your head weighs a million pounds
+[01:36:46] because you can't do anything wrong,
+[01:36:48] right? In a bad market, you should
+[01:36:51] notice by trade number four that either
+[01:36:53] you're not seeing things well, the
+[01:36:55] market's not friendly, or your entry
+[01:36:56] tactics are terrible for the environment
+[01:36:59] that you're in. So hopefully that makes
+[01:37:01] sense. Um, using average true range for
+[01:37:04] position sizing. So stocks sizing for
+[01:37:07] stocks actual personality. And this goes
+[01:37:10] back to what you said earlier, Richard.
+[01:37:12] If I'm buying CRDO or let's say AOI that
+[01:37:17] moves 13% per day, I don't need more
+[01:37:20] than a 5% position. I personally don't
+[01:37:22] know how people put 20% of their account
+[01:37:24] into a name like that. I think that that
+[01:37:26] volatility is insane. It it feels fun
+[01:37:29] when you catch it and it makes a huge
+[01:37:31] move, but volatility cuts both ways and
+[01:37:36] you know, just being wrong and being
+[01:37:38] wrong and being wrong could lead to
+[01:37:39] massive paper cuts. So ATR is a stock's
+[01:37:42] average true daily range or an average
+[01:37:45] daily range. So um a $5 ATR stock moves
+[01:37:50] five times as much as a $1 ATR stock.
+[01:37:52] And that is as effectively um
+[01:37:57] just looking at a stock's average daily
+[01:37:58] range with its current price, you can
+[01:38:01] figure out roughly how many bucks per
+[01:38:03] day it moves up or down. Um so knowing
+[01:38:06] that uh a stock's personality in terms
+[01:38:09] of its average true range very important
+[01:38:11] stop distance should never exceed more
+[01:38:13] than one to one and a half times its
+[01:38:15] average true range. And I even think
+[01:38:17] that that's a lot. So if a stock moves
+[01:38:20] 5% per day and I go to buy a breakout
+[01:38:22] over prior day high, right? Having a
+[01:38:25] stop that's seven and a half% away that
+[01:38:27] seems a little bit steep. Um, normally
+[01:38:31] low of day is my stop. And if a stock
+[01:38:33] moves 5% per day, I almost, actually,
+[01:38:37] I'll even say this, I never buy a stock
+[01:38:40] when it has moved its full average daily
+[01:38:42] range already. You're effectively asking
+[01:38:45] the market for favors at that point. I
+[01:38:47] don't like to ask the market for any
+[01:38:48] favors. Um, yes, on a breakout day you
+[01:38:52] you can get an outsized move, but if
+[01:38:55] you're buying a break over prior day
+[01:38:56] high and you got like, let's say the
+[01:38:59] oops reversal setup, which I know you're
+[01:39:01] familiar with, Richard,
+[01:39:03] you the oops reversal is meant to be
+[01:39:05] played after the wash out and then a
+[01:39:07] reclaim of a prior day low and and you
+[01:39:11] might be buying it as it's going back
+[01:39:12] through the prior day low or bouncing
+[01:39:14] off a key moving average or reclaiming
+[01:39:16] an intraday VWAP. But if you wait until
+[01:39:19] it has to take out a prior day high from
+[01:39:22] an oops reversal. Now all of a sudden
+[01:39:24] the stock had to move more. Now it's a
+[01:39:26] it's bullish that it did that. But all
+[01:39:29] of a sudden if you're then stop is the
+[01:39:31] low of the day and you're buying it over
+[01:39:33] a prior day high and an oops reversal,
+[01:39:35] your stop is like twice as big as it
+[01:39:37] should ever be. Um so that becomes very
+[01:39:40] uncomfortable.
+[01:39:41] Um and then no ads one price is three
+[01:39:44] times its ATR above your initial entry
+[01:39:47] without a fresh base and then again trim
+[01:39:50] into strength. Um never chase price and
+[01:39:53] for me more than four times its ATR
+[01:39:56] above the 50 simple moving average is a
+[01:39:58] nogo for buying a brand new position in
+[01:40:01] this environment recently. I've been I I
+[01:40:04] have been bending that rule a little
+[01:40:06] bit. I haven't been breaking it five
+[01:40:08] times its ATR from the 50 because things
+[01:40:10] are just so damn strong. That's okay.
+[01:40:13] Um, but 7 8 9 10 you I was tweeting
+[01:40:18] about this a few weeks ago when
+[01:40:20] semiconductors were flying 20 I had 42
+[01:40:23] stocks on in my universe list that were
+[01:40:26] more than 10 times their average true
+[01:40:27] range above their 50 simple moving
+[01:40:30] average. 27 of them were semiconductors.
+[01:40:34] eight, nine, 10 days ago, zero were
+[01:40:38] semiconductors. In other words, the
+[01:40:41] market worked out all of that froth. So,
+[01:40:44] if you showed up to buy something at 8,
+[01:40:46] 9, 10, 12, 15 times its ATR above the
+[01:40:50] 50, the market rinsed all of that froth
+[01:40:54] out. 27 out of 42 stocks were
+[01:40:56] semiconductors extended from the 50.
+[01:40:59] less than two weeks ago, zero were
+[01:41:01] semiconductors extended from the 50. So
+[01:41:05] that's a huge and you just have to kind
+[01:41:08] of know that. And for me, again, more
+[01:41:10] than four times, there's just not a lot
+[01:41:12] of meat on the bone at seven times, I
+[01:41:14] like to trim. And then every ATR above
+[01:41:16] that, I like to trim some more.
+[01:41:19] Going moving on with execution, cutting
+[01:41:21] losers quickly, the single most
+[01:41:23] important skill. Um, you can have
+[01:41:26] mediocre everything else and still make
+[01:41:28] money if you cut losers fast and let
+[01:41:30] your winners run. Um, I think it was Pat
+[01:41:34] Walker who said this, you're supposed to
+[01:41:37] um cap your losers, not cap your
+[01:41:39] winners. Um, so so if you have a loss,
+[01:41:42] you take it quickly, but when you have a
+[01:41:44] win, let that sucker work. If it's above
+[01:41:47] the 10, above the 20, let it work. Once
+[01:41:50] it starts to get extended, you know,
+[01:41:52] ATR, consider yourself very lucky if it
+[01:41:54] gets to 10 and 12 and 15 times its ATR
+[01:41:57] from the 50. I consider myself super
+[01:42:00] blessed when Dell got to 20 times its
+[01:42:03] ATR from the 50 that at that point, you
+[01:42:05] know, you kind of got to have it in you
+[01:42:07] to just know to step aside. Um, the
+[01:42:10] stops lives where your thesis is wrong.
+[01:42:12] For me, that's typically low of day or a
+[01:42:14] prior low of day. Um, not where you're
+[01:42:17] uncomfortable. Stops are structural, not
+[01:42:20] dollar-based. At least that's always for
+[01:42:22] me. I always know the dollar amount that
+[01:42:25] I'm going to lose before I enter based
+[01:42:28] on structure. Where am I buying? Where's
+[01:42:30] my stop? How much am I losing in case
+[01:42:32] I'm wrong based on how many shares I can
+[01:42:35] take? Um, and then that helps me adjust
+[01:42:38] my position sizing to only take a.3%
+[01:42:42] loss if I'm going to have it.
+[01:42:44] Um, no trade ever loses more than 7 to
+[01:42:46] 8% from entry. Otherwise, the charts
+[01:42:49] just not that tight. Um, most of the
+[01:42:52] time for me, 3 to 5% seems to be about
+[01:42:54] right based on the stocks that I'm
+[01:42:56] trading and their average daily range.
+[01:42:58] And then, uh, math is asymmetric. A 10%
+[01:43:01] loss needs 11% to recover. A 25% loss
+[01:43:05] needs 33%. And if you lose 50% of your
+[01:43:08] portfolio, you need a 100% gain to get
+[01:43:10] it back. So, keep losses small. very
+[01:43:14] very important. And then moving averages
+[01:43:16] as a trailing tool, the 1020 and the 50,
+[01:43:19] nothing else. I I do use the 200. I
+[01:43:22] think that is the ultimate line in the
+[01:43:23] sand. Above the 200, very important.
+[01:43:26] Below the 200, we know what the heck is
+[01:43:28] going on. Um moving averages are not
+[01:43:31] magic lines. Again, they're just general
+[01:43:33] areas where buyers and sellers can
+[01:43:36] potentially be interested in it. A lot
+[01:43:38] of traders do use them. That's why
+[01:43:40] they're they are as valid as they are,
+[01:43:42] but they are definitely not the holy
+[01:43:43] grail. I know some people who use the 9
+[01:43:45] EMA or the 10 SMA or the the 21 EMA. I
+[01:43:51] use the 20 SMA, the 9.5 uh whole moving
+[01:43:55] average, Ashley. That's that's that's
+[01:43:56] the holy grail for me, Ashley.
+[01:43:58] [laughter]
+[01:44:00] >> It doesn't matter. It's all going to be
+[01:44:02] it's all about the areas that that these
+[01:44:03] are part of.
+[01:44:04] >> Exactly. Right. I I put much more
+[01:44:05] emphasis on price structure. So, if
+[01:44:08] you're building technical higher lows, I
+[01:44:12] find that to be way more important than
+[01:44:15] where's the 20-day. If you undercut the
+[01:44:17] 20-day, but you built a structural
+[01:44:19] higher low, I'm still hanging out in
+[01:44:21] that trade. And a really good example of
+[01:44:23] this for me was last year on this ARC
+[01:44:26] trade and I was using the at this point.
+[01:44:30] So, I had bought this breakout and you
+[01:44:33] started to have these pullbacks and I
+[01:44:35] started to kind of view these as like
+[01:44:37] some even where you broke down, but
+[01:44:39] you're still above the 50 at this point
+[01:44:41] mentally I was like, I'm going to use
+[01:44:42] the 50. So, this because I had already
+[01:44:44] trimmed my position. This pullback
+[01:44:46] didn't necessarily bother me. And then I
+[01:44:49] knew when you had made this move, sharp
+[01:44:50] move right back up to highs, I knew that
+[01:44:52] I would then be using August 1 low
+[01:44:55] structurally
+[01:44:57] as my higher low. Well, when you pulled
+[01:44:59] back again, breaking the 50-day on this
+[01:45:01] day didn't bother me because you were
+[01:45:03] still above that August 1 low. And then
+[01:45:06] this next pullback did not bother me
+[01:45:08] because you are now above August 20th
+[01:45:10] low. So structural structural
+[01:45:14] um just just price structure is much
+[01:45:18] more important than a lagging moving
+[01:45:21] average. I can then sit through these
+[01:45:23] higher lows and it not bother me in any
+[01:45:25] way, shape or form. And eventually I was
+[01:45:28] stopped out on
+[01:45:30] um November 6th because you had broken
+[01:45:33] what I thought to be was um another
+[01:45:36] fairly important little base which it
+[01:45:38] had built. So once you kind of got to
+[01:45:40] this close for me that was that was it.
+[01:45:43] And you know for now that has kind of
+[01:45:45] turned out to be the right idea because
+[01:45:47] I don't know that I would have been
+[01:45:48] comfortable watching this thing go you
+[01:45:50] know basically back to where I bought
+[01:45:52] it. So, um, yes,
+[01:45:55] >> Ashley, sorry, with with this chart. Uh,
+[01:45:57] we had we talked about those bad bars,
+[01:45:59] uh, earlier, and this is a good example
+[01:46:01] of bad bar off the top and that gap down
+[01:46:04] here.
+[01:46:05] >> Yeah. Yeah. So, that gap down finally
+[01:46:07] loses that close really, which is
+[01:46:09] interesting.
+[01:46:10] >> Oh, switch sides. Sorry. Sorry.
+[01:46:11] >> No, you're good. You're good.
+[01:46:13] Um, yeah, that that bad gap down there
+[01:46:17] that to the 50-day, you finally kind of
+[01:46:19] really lose that close from that day.
+[01:46:22] And those those bad bars off the top
+[01:46:25] like that when a name's been trending
+[01:46:27] and then just completely out of
+[01:46:29] character bad bar. I call those like
+[01:46:31] base starter bars a little bit like the
+[01:46:33] stock's going to need a little bit of
+[01:46:34] time or a lot of time. I think TTD um
+[01:46:37] this is just an example that comes to
+[01:46:38] mind. Can you bring up TTD back in like
+[01:46:40] 20 2021? Um yeah, this this stock has
+[01:46:43] gotten destroyed, but um
+[01:46:45] >> here.
+[01:46:46] >> Yeah. No, I think um
+[01:46:48] >> Oh, 2021.
+[01:46:50] >> Yeah, 2021. Um yeah. Yeah, off the top
+[01:46:53] there. So, it made a new high and um
+[01:46:57] actually to the left, but that that's
+[01:46:59] another one, but all the way to the left
+[01:47:00] there's this big bar. Yep, that's what
+[01:47:02] I'm thinking of. Look at that negative
+[01:47:04] bar. This was a leader up until that
+[01:47:06] point. And then it it needed like two
+[01:47:09] years of consolidation uh to to work
+[01:47:12] that out and then it had another off off
+[01:47:14] the top there. So those big out of
+[01:47:17] character bars for me something to keep
+[01:47:19] an eye on as well when I'm holding us
+[01:47:20] holding this.
+[01:47:21] >> This thing has just been a this thing
+[01:47:22] has just been rough all together.
+[01:47:25] >> Yeah,
+[01:47:26] >> it was it was a great name during 2020,
+[01:47:28] man. Like this this was great.
+[01:47:29] >> Yes, it was.
+[01:47:30] >> Three weeks tight like at the cup and
+[01:47:32] handle spot.
+[01:47:33] >> So nice right here, too.
+[01:47:35] >> Yep. That's That's a classic cup and
+[01:47:38] handle with a shake out and everything.
+[01:47:39] Great suck to study. I mean, look at
+[01:47:41] that shake out with this shake out.
+[01:47:43] >> Yeah.
+[01:47:44] >> And and you talk about like compression
+[01:47:46] up the right hand side. Look at how
+[01:47:48] narrow of a bar this is on June 20th or
+[01:47:52] June 1st. Like this is the kind of
+[01:47:54] candlestick when I'm looking at the
+[01:47:55] right hand side, I am going, man, that
+[01:47:58] looks amazing. Because if I buy it over
+[01:48:00] a prior day high, I could set my stop to
+[01:48:02] this day's low. Yep.
+[01:48:04] >> And be no risk at all. And and obviously
+[01:48:06] that ends up working out, you know,
+[01:48:08] great. That ends up working out really
+[01:48:11] really well where you just get, you
+[01:48:12] know, even a couple of uh weeks of
+[01:48:14] momentum. I mean, 40% not bad.
+[01:48:17] >> Yep. Not not bad at all. Um, okay. So,
+[01:48:20] moving averages is a trailing tool. You
+[01:48:23] know, again, the 10, 20, the 50, the
+[01:48:25] 100, and the 150, they're noise. I have
+[01:48:28] them on my charts for visuals. I don't
+[01:48:30] trade off of them or around them, but
+[01:48:32] there is a big space between the 50 and
+[01:48:34] the 200. Um,
+[01:48:36] so I I have them there visually. The 200
+[01:48:39] is a market health filter or a market
+[01:48:42] stock filter. Like if you're above the
+[01:48:44] 200,
+[01:48:45] technical chart patterns that are
+[01:48:47] bullish chart patterns that take a place
+[01:48:50] above the 200 for me are bullish.
+[01:48:52] Technical chart patterns that take place
+[01:48:54] below the 200 should be viewed under a
+[01:48:56] bearish lens. Of course, you do have
+[01:48:58] reversal patterns, right? You've you've
+[01:49:01] I mean, I'm sure you saw this tan. Um,
+[01:49:03] and again, the market gives you them
+[01:49:06] every now and again. Um, where you get
+[01:49:09] this, uh, you get these
+[01:49:12] I don't even know what you call this
+[01:49:14] thing. What do they call this one?
+[01:49:16] Richardap
+[01:49:18] Island gap. Yeah. Uh, and you saw it you
+[01:49:21] saw it with Microsoft as well where you
+[01:49:24] got over the 200 island gap and then it
+[01:49:26] just gets all bad from there. Um, so
+[01:49:30] yes, the the market does give you them,
+[01:49:32] but again, for the most part, below the
+[01:49:34] 200, no good. Above the 200, okay, fine.
+[01:49:38] We're cooking. And technical, clean,
+[01:49:41] bullish technical setups should be
+[01:49:43] viewed under a bullish lens above the
+[01:49:45] 200, below the 200 with a bearish lens.
+[01:49:48] Keep it simple. Um
+[01:49:51] and and if you've got yourself a good
+[01:49:53] trend, you'll notice that it the typical
+[01:49:56] news for something above the 200 tends
+[01:49:58] to be bullish. And then when you're
+[01:50:00] below the 200, any kind of any kind of
+[01:50:02] bad news, you know, tends to get
+[01:50:04] hammered below the 200. Okay, moving on.
+[01:50:07] Management and we are down to our last
+[01:50:10] couple pieces. Trim, add, scale, rotate,
+[01:50:12] turn winners into outsized winners. So,
+[01:50:15] momentum burst, trimming into strength.
+[01:50:18] Um and then harvest before the mean
+[01:50:20] reverts. So a momentum burst is an 8 to
+[01:50:23] 20% expansion and that is all obviously
+[01:50:25] depending on a stock's average daily
+[01:50:27] range over 3 to 8 days. I typically look
+[01:50:30] 3 to five but you know you can go eight
+[01:50:33] sometimes um stocks coming out of a
+[01:50:35] correction even better right to be
+[01:50:38] patient for the 7 8 9 10 days um that a
+[01:50:41] stock will shoot up for before you get a
+[01:50:43] pullback. I like to finance my trade
+[01:50:46] into that. So derisk some of it and then
+[01:50:49] that allows me to comfortably sit
+[01:50:50] through pullbacks. So three to five days
+[01:50:53] especially now I say three to five
+[01:50:55] because stocks move so much faster um
+[01:50:58] than like at any other time. So you get
+[01:51:00] like this 3 to 5 day momentum burst trim
+[01:51:02] into that. I personally like to trim
+[01:51:05] anywhere from a third to a half of my
+[01:51:08] position. If I get a 20 30% move in
+[01:51:11] three sessions to five sessions, I I
+[01:51:15] like to just just take off half, right?
+[01:51:17] If it goes higher, you still have half.
+[01:51:19] If it comes back lower, you'll be
+[01:51:21] grateful that you sold half. Uh you can
+[01:51:23] go to sleep at night, you know, knowing
+[01:51:25] that that you you captured a 20% move.
+[01:51:28] Um after that burst, the odds of a
+[01:51:30] multi-day pullback are sideways. They do
+[01:51:33] rise sharply. stocks tend to revert to
+[01:51:35] the mean once they get extended from
+[01:51:37] their key moving averages and then again
+[01:51:39] layer trims as well as trims um into
+[01:51:42] extensions. So sell a third do to a half
+[01:51:44] after that strong 3 to 5 day push and
+[01:51:47] then uh trail or that 15 to 20% move um
+[01:51:52] and then sell into other pieces. And it
+[01:51:54] doesn't necessarily have to be quote
+[01:51:56] unquote parabolic. Um but into 7 8 9 10
+[01:52:01] 11 12 every ATR above the 50 simple
+[01:52:04] moving average. I like to trim some more
+[01:52:07] and trim some more. And I I personally
+[01:52:10] just do 10% of what I have left. So my
+[01:52:13] my trims actually get smaller and
+[01:52:16] smaller and smaller and smaller until I
+[01:52:19] think you've gone ballistic like Dell.
+[01:52:22] And then you know, thank you very much.
+[01:52:24] I'll just go ahead and um take my exit
+[01:52:26] here. Um an extension is what is up a
+[01:52:30] lot. Vertical closing on highs with
+[01:52:32] accelerating volume. That's when you
+[01:52:35] sell. Again, Dell uh reminded me a
+[01:52:38] little bit of Oracle, but Oracle just so
+[01:52:41] happened to peak when the market was
+[01:52:43] then going to go through some
+[01:52:44] volatility. Dell just so happened to gap
+[01:52:47] up when the market, you know, was was
+[01:52:50] going to do a little bit of pulling
+[01:52:51] back, but potentially, you know, go on a
+[01:52:54] continued run from here.
+[01:52:57] Um adding to your winning position. So,
+[01:52:59] you add to your winners, you never add
+[01:53:01] to your losers. If you're adding to
+[01:53:02] losers, you're already fighting with
+[01:53:04] what the market's telling you. And the
+[01:53:07] market, if it's telling you that you're
+[01:53:08] wrong, and you're adding more again,
+[01:53:11] just fighting what the market's telling
+[01:53:13] you, you need to know where you're wrong
+[01:53:16] so that if you get there, you're not
+[01:53:18] buying more, you're just getting out.
+[01:53:20] Um, and then each ad must be triggered
+[01:53:22] by the stock proving itself further.
+[01:53:24] What I mean by that is it's giving you
+[01:53:27] another clean technical setup. So, if
+[01:53:29] you're buying an undercut and reclaim or
+[01:53:32] the oops reversal or a reclaim of the
+[01:53:36] 50-day, you might get that oops reversal
+[01:53:39] and then you get like, you know, three,
+[01:53:40] four, five days up in a row and then you
+[01:53:43] trim off a tiny little piece, but then
+[01:53:45] the stock builds higher lows against the
+[01:53:47] rising 20 and that second higher low
+[01:53:50] gives you a very, very tight day so that
+[01:53:52] you can add more above the prior day
+[01:53:54] high and that is completely fine. But
+[01:53:57] that is the stock proving itself to you
+[01:53:59] after you've bought it well, got
+[01:54:02] rewarded, paid yourself, structurally it
+[01:54:05] did nothing wrong, and then it gave you
+[01:54:07] a follow-up setup. You might own it for
+[01:54:10] another 3 weeks. You're up 30, 40% on
+[01:54:12] it. Then it gaps up on earnings.
+[01:54:15] Now all of a sudden you might have a HVC
+[01:54:18] to work with. Now all of a sudden you
+[01:54:20] might have a fish hook setup to work
+[01:54:22] with or a hight flag or a highteight
+[01:54:25] pennant or another technical setup for
+[01:54:28] you to be able to add more shares. Um so
+[01:54:32] again a couple of clean ads if you get
+[01:54:34] your first bull flag and then the next
+[01:54:37] range expansion you can go ahead and add
+[01:54:39] to your position. So pyramiding. So
+[01:54:43] initial you have your first full percent
+[01:54:46] or your first amount. Let's call it a
+[01:54:48] th000 shares and then your next ad. I
+[01:54:51] never double um my my um position size.
+[01:54:57] So I always take a little bit less than
+[01:54:58] what I already own as to not screw up my
+[01:55:01] cost basis too much. I think that's more
+[01:55:03] of a mental thing. But there are times
+[01:55:05] when you can own a stock for several
+[01:55:07] months. It gives you a really nice
+[01:55:09] consolidation. And then I just treat
+[01:55:11] this next buy as a brand new position as
+[01:55:13] if I didn't own it from lower. Um, and
+[01:55:15] then move the stop um on the on that
+[01:55:19] position every time you go to add. So if
+[01:55:21] I buy it as a brand new position, my
+[01:55:23] stop on that brand new position might
+[01:55:25] still be low of day, but structurally,
+[01:55:27] if I own some from a few months ago, I
+[01:55:30] might already be trailing the 50-day
+[01:55:32] with those shares. compartmentalize that
+[01:55:35] where if you're adding more, treat it
+[01:55:38] like a brand new position. And that is
+[01:55:39] really the only way I do like to pyramid
+[01:55:42] into my stock is if I'm buying it and
+[01:55:44] adding to it as if it were a brand new
+[01:55:47] um position. And then progressive
+[01:55:49] exposure. I find this part to be
+[01:55:51] incredibly important. So, you're earning
+[01:55:53] the right to size up. Um exposure
+[01:55:56] expands and contracts with the market
+[01:55:58] environment and your recent performance.
+[01:56:00] you earn and the market earns your
+[01:56:04] investment. So, you get a follow-through
+[01:56:07] day, it's a valid one. You buy
+[01:56:10] something, it works, you buy more. That
+[01:56:14] works, you buy more. That works, you buy
+[01:56:16] more. That works, you buy more. You're
+[01:56:18] getting aggressive behind things that
+[01:56:20] are working. But if you get a quote
+[01:56:23] unquote follow-through day and you buy
+[01:56:25] something and then the market goes and
+[01:56:26] takes out those lows, you have only put
+[01:56:29] on a position or two and the market
+[01:56:32] didn't prove those to be winning
+[01:56:33] positions. You got knocked out. Now
+[01:56:36] you're back in cash and you haven't put
+[01:56:38] yourself in more harm's way as the
+[01:56:40] market then maybe wants to turn back
+[01:56:42] down. So the market has to earn your
+[01:56:45] investment. Progressive exposure again
+[01:56:48] along with proper position sizing to me
+[01:56:50] is one of the most important ways to
+[01:56:53] keep yourself out of harm's way and to
+[01:56:55] minimize your draw downs. A catastrophic
+[01:56:58] blowups happen when traders size up
+[01:57:00] right before conditions deteriorate.
+[01:57:02] That makes it that this makes um that
+[01:57:06] blow up impossible. Um you could still
+[01:57:09] slowly paper cut yourself to death.
+[01:57:11] Absolutely. But if you adhere to
+[01:57:13] progressive exposure,
+[01:57:15] it really um limits the possibility for
+[01:57:19] you to just quickly blow up your
+[01:57:21] portfolio. Pilot positions first. Um
+[01:57:24] again, I don't even know that I would um
+[01:57:29] get myself to 25% invested or invest 25%
+[01:57:33] of my portfolio in a single day. I know
+[01:57:36] with Bill O'Neal and I've even listened
+[01:57:38] to Mike Webster on this getting 30% of
+[01:57:41] your portfolio on or just after the
+[01:57:44] first couple of follow-through days and
+[01:57:46] Richard maybe you could speak on this
+[01:57:47] because I know you've spoken with Mike
+[01:57:49] quite a bit. Um getting to about 30%
+[01:57:52] invested within the on the
+[01:57:54] follow-through day and just after seems
+[01:57:56] to be about the sweet spot, but they go
+[01:57:59] after a couple of stocks. They don't
+[01:58:01] just go after, you know, 30% or 25% in a
+[01:58:05] single name. Again, I won't speak to
+[01:58:07] Mike's personal uh portfolio, but I if
+[01:58:10] you're managing, you know, um Bill's
+[01:58:13] portfolio, it would be, let's say, 30%
+[01:58:16] over the course of two days and then
+[01:58:18] build on from there as more set more
+[01:58:21] setups kind of uh materialize.
+[01:58:26] Um okay. And then constructing an open
+[01:58:29] portfolio.
+[01:58:30] um from single trades to a coherent
+[01:58:32] book. So in a strong market, four to
+[01:58:34] eight core positions, I could tap I
+[01:58:36] could typically go a little bit more
+[01:58:38] than that, right? Especially in this
+[01:58:40] most recent environment, you probably
+[01:58:41] got up uh north of uh 12 positions.
+[01:58:44] Again, you you'll hear even from some of
+[01:58:48] the most popular cancelling traders
+[01:58:51] is being a little bit more concentrated
+[01:58:54] in four to eight names is a little bit
+[01:58:56] better than having super small position
+[01:58:58] size in 20 stocks. Um, your top two to
+[01:59:01] three to four leaders um should probably
+[01:59:05] be your biggest positions in a weaker
+[01:59:06] tape. Two to four names. I also
+[01:59:09] personally do not mind um playing the
+[01:59:13] other side of the market if the market
+[01:59:15] starts to see some distribution. So I
+[01:59:18] will always almost always have at
+[01:59:20] minimum four to six positions open. Um
+[01:59:23] sometimes even on both sides of the
+[01:59:24] market. Um
+[01:59:27] so
+[01:59:30] um yeah so again your your open heat is
+[01:59:33] your total loss across every position.
+[01:59:35] If you were stopped out today, um you
+[01:59:38] want to kind of cap that at about 2%.
+[01:59:40] And even that to me is just a touch
+[01:59:42] high, but that would be about it. Not
+[01:59:44] going to get more exposure. Um if you're
+[01:59:47] at 2% equity, um
+[01:59:51] and then again, if you put on three
+[01:59:52] semiconductors, treat that as one
+[01:59:54] position, right? The last thing you
+[01:59:56] really want to do is get deepse for
+[01:59:57] anybody who knows what I'm talking
+[01:59:59] about. if you have too much um exposure
+[02:00:01] in just one sector um correlated names
+[02:00:04] treat that as the exact same bucket. So
+[02:00:06] if if you're taking if you bought AMD,
+[02:00:10] Marll, ARM, SanDisk, Micron, you know,
+[02:00:14] you got to start to kind of treat these
+[02:00:15] things as the same exact basket. They
+[02:00:18] tend to go up together. They tend to
+[02:00:19] pull back together. So something to keep
+[02:00:21] in mind.
+[02:00:22] >> And then one question, sorry, jump in.
+[02:00:24] uh that open heat 2% is that kind of
+[02:00:27] looking at newer trades because what if
+[02:00:29] you have a trade that correct is just
+[02:00:31] trending it's above the 21 EMA you know
+[02:00:33] like it could easily have you know five
+[02:00:35] >> I don't even think about those Richard
+[02:00:37] if you because in under most
+[02:00:39] circumstances those have already been
+[02:00:40] trimmed
+[02:00:42] >> and even if you get stopped out and I I
+[02:00:44] kind of made a tweet about this and it
+[02:00:45] really like helped me with my mentality.
+[02:00:47] I never look at my unrealized gains as
+[02:00:52] my money. If if you started with a
+[02:00:54] $100,000 account in April and then all
+[02:00:57] of a sudden you got to $160,000 by June,
+[02:01:02] but then and you're in a bunch of
+[02:01:05] positions and maybe they're trimmed and
+[02:01:08] then all of a sudden, you know, the
+[02:01:09] market gets crushed, you eventually get
+[02:01:11] stopped out of all your names and you
+[02:01:12] end up with $148,000.
+[02:01:15] Did you lose $12,000 because your
+[02:01:17] unrealized equity peak was 160 or did
+[02:01:20] you make $48,000 because you started at
+[02:01:23] a hundred? So, I only like to if if I'm
+[02:01:26] going to give back some unrealized gains
+[02:01:29] on a brand new position or on a on a
+[02:01:31] position that I've had open, not a
+[02:01:33] problem. But it that's not the same as
+[02:01:37] taking red on a brand new position to
+[02:01:39] me.
+[02:01:39] >> Agreed. So, so if I have $20,000 in open
+[02:01:43] profits and I close it for 15K, I made
+[02:01:45] 15K. I gave back, you know, a quarter of
+[02:01:48] the open gains, but you still made
+[02:01:50] $15,000. I I I But it's way different
+[02:01:54] than opening up a position and then just
+[02:01:56] losing five grand.
+[02:01:57] >> Yep.
+[02:01:58] >> So, um, kind of thinking about it like
+[02:02:00] that.
+[02:02:01] >> Yeah, makes sense.
+[02:02:02] >> Uh, flipping from long to short, trading
+[02:02:04] the other side of the tape. Shorting
+[02:02:06] isn't the opp So shorting isn't the
+[02:02:08] opposite of going long, although some
+[02:02:10] people do. Um, and you can flip the
+[02:02:12] chart upside down. Um, as silly as that
+[02:02:15] might sound, it's his own dip. Uh,
+[02:02:16] discipline obviously if you're trading
+[02:02:18] stocks that are hard to borrow, borrow
+[02:02:20] fees. Um, and then of course there's
+[02:02:22] unlimited upside risk. Um, I do like
+[02:02:25] shorting into declining moving averages.
+[02:02:27] And then you couple that with a 5m
+[02:02:29] minute 620 setup back to the downside.
+[02:02:32] Um, and then again, you get much more
+[02:02:35] traction on the short side of the market
+[02:02:36] when the index loses the 50, when the 10
+[02:02:39] is below the 20. Um, or of course,
+[02:02:41] you're focused on stocks that are
+[02:02:43] already below their key moving averages,
+[02:02:46] for instance, like um any of the bags,
+[02:02:50] right? you look at Meta or you look at
+[02:02:52] Microsoft or you look at Palunteer or
+[02:02:55] you look at I if if you're actually
+[02:02:57] shorting that side of the market
+[02:02:59] traction has been much easier to come by
+[02:03:01] if you're shorting stocks that are
+[02:03:03] already below their 200 day. Um and then
+[02:03:05] same thing you're going to cap your
+[02:03:06] individual short risk at a quarter to a
+[02:03:09] half percent per trade. I personally
+[02:03:10] like a quarter. Um and and and for me
+[02:03:16] similarly, Richard, when I'm looking to
+[02:03:18] get myself involved on the short side,
+[02:03:22] there's only two types of shorts I
+[02:03:23] really like to trade, and that's
+[02:03:25] extended parabolics
+[02:03:28] or
+[02:03:29] just the opposite of what we look for
+[02:03:31] when we're looking for that
+[02:03:32] follow-through day and names that have
+[02:03:35] been showing the best relative strength.
+[02:03:37] I like to say to myself, what names have
+[02:03:40] been super weak? And then when the
+[02:03:42] market starts to show you some periods
+[02:03:44] of distribution all of a sudden, you
+[02:03:47] know, you're shorting and it could be,
+[02:03:49] you know, MSTR if you want to short
+[02:03:52] MSTR. Um, you know, a pretty good
+[02:03:54] example as of late could be a name like
+[02:03:57] Carvana, right? Maybe a late stage base
+[02:04:01] and you've got this latestage base.
+[02:04:03] you're back below the 200 and you're
+[02:04:05] shorting these pushes into flattening or
+[02:04:09] declining moving averages back um in in
+[02:04:12] March and February, you were seeing lots
+[02:04:16] of that. You could look at a name like
+[02:04:17] Uber and effectively every single visit
+[02:04:21] of the 50 simple moving average was a
+[02:04:25] short opportunity. But you but that's
+[02:04:28] something that you're prepared for
+[02:04:31] knowing that hey if the market's going
+[02:04:33] to undergo some distribution what's
+[02:04:36] already showing some relative weakness
+[02:04:38] how can I get myself involved in that
+[02:04:40] side of the market if that's something
+[02:04:41] you choose to do. If that works it's not
+[02:04:45] because you're a genius. It's because
+[02:04:47] you're seeing things well. The market is
+[02:04:49] rewarding that side. Um and your entry
+[02:04:52] tactics are on point. Right? Normally
+[02:04:54] those three things come together. And
+[02:04:56] it's the same thing to the long side.
+[02:04:58] You're on to the right groups. You're
+[02:05:00] seeing things well. Your entry tactics
+[02:05:02] are on point and the market's helping
+[02:05:04] lift the group that you're in. It's the
+[02:05:07] same thing to the short side. If the
+[02:05:09] market rewards you on the short side and
+[02:05:11] you go and take another and it works and
+[02:05:13] another and it works and another and it
+[02:05:15] works, you're using progressive exposure
+[02:05:17] on the short side. As it's working,
+[02:05:20] you're not arguing with the market like
+[02:05:22] it should go down. It's a everything's a
+[02:05:24] Ponzi right now. Yeah, you know, the
+[02:05:27] government can't keep pumping the
+[02:05:29] markets and you're just stubbornly
+[02:05:30] shorting names at 52- week highs is not
+[02:05:33] the way. Um, if you want to short a
+[02:05:35] parabolic, fine. That has its own
+[02:05:37] criteria as a setup. And that's not
+[02:05:40] something that, you know, we should be
+[02:05:42] talking to with newer newer traders.
+[02:05:44] >> Um, are you quicker to derisk or take a
+[02:05:46] partial on your shorts versus your
+[02:05:48] longs? How's the position management a
+[02:05:50] little bit different with these? Yeah,
+[02:05:52] if if you're shorting a parabolic, then
+[02:05:55] for me it's um you know I'm looking for
+[02:05:58] like two day two, right? So you'll get
+[02:06:00] like normally day one it's usually a big
+[02:06:02] unwind and then day two you'll get like
+[02:06:04] a maybe a small gap down and a wash out.
+[02:06:07] I'm taking some off because I know
+[02:06:10] things can only go down so much. If you
+[02:06:11] get 30% move down from your entry,
+[02:06:15] you've you've nailed it, right? that
+[02:06:17] that for on the short side 30 40 I mean
+[02:06:21] that that's a big move like 50% move
+[02:06:23] down on a short side is huge. So yes, a
+[02:06:27] whole lot quicker if you're shorting a
+[02:06:29] parabolic. I'm looking to cover into the
+[02:06:31] ascending moving averages effectively,
+[02:06:34] which is also why bounces from ascending
+[02:06:36] moving averages can work so well. Um
+[02:06:38] because you've got short sellers looking
+[02:06:40] to cover in some of those spots. But if
+[02:06:42] you're shorting something below the 200
+[02:06:45] simple moving average, three to five day
+[02:06:47] wash out, cover it and then just trail
+[02:06:50] with a declining
+[02:06:52] 20-day for instance. Okay.
+[02:06:54] >> Um and then just play it play it just
+[02:06:56] like that just like you would along and
+[02:06:58] try to be patient. We don't know how
+[02:07:00] long something can fade for. Um, but
+[02:07:03] again, it just becomes really tough
+[02:07:05] because there's only so much things tend
+[02:07:08] to go down unless your name is the trade
+[02:07:11] desk and Dualingo.
+[02:07:13] Those are about the only two. Um but
+[02:07:16] yeah, 30% parabolics or um if you're
+[02:07:21] playing a stage into a stage four
+[02:07:23] breakdown, then then treat it almost as
+[02:07:26] you would along 3 to 5 days on the
+[02:07:28] momentum wash out and then just trail it
+[02:07:30] on the declining 20 or the declining 50.
+[02:07:33] And then finally for the last little
+[02:07:35] section, this is fairly quick survival.
+[02:07:37] Staying in the game long enough to
+[02:07:38] compound, handling a losing streak,
+[02:07:41] surviving the storm so you can compound
+[02:07:43] after. So a 30 to 35 to 45% win rate. I
+[02:07:46] tend to kind of fall in like that 37 to
+[02:07:48] 40 is totally normal. Streaks of four,
+[02:07:51] six or even 10 losses happen. That
+[02:07:53] happened to me in October and it was
+[02:07:55] still a profitable month. Um what
+[02:07:57] matters is how you aggressively shrink.
+[02:07:59] In other words, how do you shrink your
+[02:08:02] position sizing so that you go from I'm
+[02:08:04] taking 10% position sizes to seven to
+[02:08:07] five to three. Um and then again
+[02:08:10] mechanical degrossing.
+[02:08:12] So
+[02:08:14] going from let's say 70 it's like going
+[02:08:17] from I'm taking um
+[02:08:21] you know 100% size which could be 10% of
+[02:08:24] your portfolio to then seven to then
+[02:08:26] five to then three all should be based
+[02:08:29] on your own prior traction. Um and then
+[02:08:31] as you're getting stopped out of your
+[02:08:33] positions um I I don't really use
+[02:08:36] staggered stops too much but that is
+[02:08:38] something that I've been kind of trying
+[02:08:40] to learn and incorporate. Uh, shout out
+[02:08:42] Jeff Sun for putting that on my radar.
+[02:08:44] And that is one of those things where if
+[02:08:46] you buy a breakout, but then it just
+[02:08:48] doesn't quite break out, take off a
+[02:08:50] third, take off a third, take off a
+[02:08:52] third, stop low of day, um, or stop at
+[02:08:54] the low of the pivot, but without having
+[02:08:56] your full size at the low of day pivot,
+[02:08:58] right? Usually when you buy a breakout,
+[02:09:01] the best trades go and they don't turn
+[02:09:04] back around. So that's what you want
+[02:09:06] your stocks to act like, too. Um, so
+[02:09:10] draw downs are signals, right? Either
+[02:09:12] the market changed, your setup stopped
+[02:09:14] working, or your execution is off. The
+[02:09:18] answer is always to trade smaller.
+[02:09:20] Either you're not seeing things well,
+[02:09:22] the market is not being friendly, or
+[02:09:24] your entry tactics are terrible for the
+[02:09:28] environment that you're in, or you're
+[02:09:30] just flat out playing the wrong side of
+[02:09:31] the market. All of those scenarios, you
+[02:09:34] want to be trading smaller. losing
+[02:09:36] streaks make you want to do more, which
+[02:09:38] is counterintuitive. You want to make
+[02:09:40] that money back, right? But again, the
+[02:09:43] right answer is always to do less. Um,
+[02:09:47] go for a walk, go lift some weights, go
+[02:09:49] to sleep, pick up golf, do some fishing,
+[02:09:51] do some hiking, play with your dogs, do
+[02:09:54] anything but trade more. Um, again, if
+[02:09:57] you like shorting the market and and
+[02:09:59] this conversation
+[02:10:01] um is hopefully based more towards newer
+[02:10:04] traders, shorting the market is probably
+[02:10:06] not the first thing that you should get
+[02:10:08] yourself into. Then maybe there is
+[02:10:10] something for you to do in a crummy
+[02:10:12] environment. But if you're on a losing
+[02:10:14] streak, it's most likely because
+[02:10:18] you're not a genius for the for what
+[02:10:20] you're doing for the environment that
+[02:10:22] you're in. If you change what you're
+[02:10:25] doing for your environment, then you
+[02:10:27] might feel like a genius, right? In in
+[02:10:32] March and February, shorting against the
+[02:10:35] declining 50, and I could find 50
+[02:10:37] examples of that chart like Uber was the
+[02:10:40] thing that's working. It if you started
+[02:10:42] to buy stocks from April until end of
+[02:10:45] April, you're a genius because you're
+[02:10:47] going long. So, um, yeah, hopefully that
+[02:10:50] makes sense. So, doing less when you're
+[02:10:52] having a losing streak. Don't let
+[02:10:54] perfect get in the way of progress. Uh,
+[02:10:56] the trap of paralysis and
+[02:10:58] overoptimization.
+[02:11:00] Again, focus on what you know. Um,
+[02:11:03] perfectionism is is a stall tactic. Um,
+[02:11:07] when you're afraid to be wrong, you
+[02:11:08] don't need to get everything perfect.
+[02:11:10] Again, as a swing trader, I'm right 35
+[02:11:13] maybe 40% of the time, even in a good
+[02:11:15] environment, even during April and May.
+[02:11:19] Um
+[02:11:20] uh market pays for compounding not for
+[02:11:23] being right. Uh a a B+ trade taken beats
+[02:11:26] an A+ uh trade watched. So again the
+[02:11:30] when is very important. You don't you
+[02:11:32] could have a B+ entry but if you
+[02:11:35] understand that the environment is there
+[02:11:37] and you take that entry is much better
+[02:11:39] than if you're just waiting for
+[02:11:40] something picture perfect. I I know
+[02:11:43] Richard um when we do these model books
+[02:11:46] and I've made a model book myself. I am
+[02:11:49] putting SanDisk on there. I am putting
+[02:11:51] Nvidia on there and gold on there. But
+[02:11:53] if you're waiting for that, you're going
+[02:11:56] to be waiting for a really long time.
+[02:11:59] And so if you're waiting for this quote
+[02:12:01] unquote A+ to come around, this perfect
+[02:12:04] chart in a perfect group with
+[02:12:06] accelerating or if you need everything
+[02:12:08] to be perfect, oftent times the best
+[02:12:10] charts, the best entries, the best
+[02:12:12] setups get away from you while you're
+[02:12:14] waiting for perfect um exact. And then
+[02:12:18] common traps, waiting for the exact
+[02:12:19] pivot to hit. Um you know, doing a
+[02:12:22] gazillion back tests, right? Sometimes,
+[02:12:25] you know, getting in there um in real
+[02:12:27] time is the best way to learn. And then,
+[02:12:30] you know, when you miss an entry, you
+[02:12:32] know, you size it up 3x the size because
+[02:12:35] you're like, "Oh my god, now I got to
+[02:12:36] get the chart." Um, you know, that that
+[02:12:39] will absolutely kill you. And then a
+[02:12:41] predefined trigger. So, the night before
+[02:12:43] I I you know, I do a nightly watch list
+[02:12:45] every single day before the next day. I
+[02:12:49] don't ever go a without putting together
+[02:12:52] a watch list. That is predefining the
+[02:12:55] stocks you want to watch for the next
+[02:12:56] day. predefining your entry tactic,
+[02:12:59] knowing the if this then that scenario
+[02:13:01] for both the long and the potential
+[02:13:04] short side the night before with alerts
+[02:13:06] set so that when your alert hits and
+[02:13:08] you're like it's hitting to the upside,
+[02:13:10] you know exactly what to do. My brain
+[02:13:12] then goes, how are the other stocks in
+[02:13:15] the group acting? How is the market
+[02:13:16] acting? It's time to, you know, execute.
+[02:13:20] And then um and then that's it. Now you
+[02:13:23] have all the pieces. Hopefully that was
+[02:13:26] um pretty good. Uh read the regime, find
+[02:13:29] the leaders, wait for your setup. Part
+[02:13:31] number two is risk first stops without
+[02:13:35] negotiation, trim some into strength,
+[02:13:37] and then shrink your size during draw
+[02:13:40] downs. You can still take that B+ trade.
+[02:13:42] You don't have to wait for perfect.
+[02:13:45] Perfect is very rare. Um and then, you
+[02:13:47] know, let your money compound through
+[02:13:49] doing the right thing day after day
+[02:13:52] after day after day. And don't forget to
+[02:13:53] do your nightly homework so that you can
+[02:13:55] be prepared for the next day.
+[02:13:58] >> Awesome. Well, you covered a ton uh
+[02:14:01] today. So, thank you so much for for the
+[02:14:03] depth here. Uh there's a lot of nuances
+[02:14:05] that you shared. So, um a lot of folks I
+[02:14:07] think will have to watch this multiple
+[02:14:09] times. Uh but this is fantastic. And if
+[02:14:12] you had to say, you know, one
+[02:14:14] overarching message that you want
+[02:14:16] everybody to walk away with having
+[02:14:17] watched this, what would you tell them
+[02:14:20] to focus on or or you know, the biggest
+[02:14:22] uh piece of advice that you want to
+[02:14:23] share?
+[02:14:25] Yeah, I think if you're a brand new
+[02:14:26] trader, obviously if you're a seasoned
+[02:14:28] veteran, um
+[02:14:30] you obviously don't stop learning, but
+[02:14:32] if you're a brand new trader, don't be
+[02:14:34] overwhelmed by what you still don't know
+[02:14:37] to take things and as the you know name
+[02:14:40] of this uh slide is of these slides. Um
+[02:14:44] it's it's puzzle pieces to
+[02:14:46] profitability. You have to remember take
+[02:14:48] things a small little thing at a time.
+[02:14:51] How do I find the stocks to trade? What
+[02:14:53] is progressive exposure? What is um
+[02:14:56] position sizing? What are my entry
+[02:14:58] tactics? What is a clean technical
+[02:15:00] setup? How do I view groups? What is the
+[02:15:03] market overview? But take time to learn
+[02:15:05] each of those puzzle pieces. And once
+[02:15:08] you learn all of those puzzle pieces,
+[02:15:09] that allows you to put the whole picture
+[02:15:11] together. Don't get overwhelmed because
+[02:15:13] this is a at moments, Richard, you know
+[02:15:16] this, it can be an overwhelming career.
+[02:15:19] But if you take the time to learn all of
+[02:15:22] the individual pieces, you can then make
+[02:15:25] sense of the whole um without feeling
+[02:15:28] overwhelmed like I just don't know that,
+[02:15:30] I just don't know that. And then get
+[02:15:31] overly frustrated at at something that
+[02:15:34] is truly difficult. So focus on one
+[02:15:37] little thing at a time. Treat this as a
+[02:15:39] long lasting career, not as a hobby. And
+[02:15:43] um yeah, I mean amazing things can
+[02:15:46] happen, Rich. Yeah, you might have to
+[02:15:47] relearn the pieces a few times over many
+[02:15:51] market cycles. I know I have had to
+[02:15:52] relearn stuff.
+[02:15:53] >> I have too. You know, again, it's I'm
+[02:15:56] not perfect. Like, if I were perfect, I
+[02:15:58] I' I'd have bought SanDisk on January
+[02:16:01] 1st. Instead, I'm buying it 250% higher.
+[02:16:04] And then even that, I didn't hold
+[02:16:06] perfectly. So, there are always things
+[02:16:08] that I can look back at and just say, I
+[02:16:11] didn't do that well. I didn't do that
+[02:16:12] well. But as the the next market cycle
+[02:16:14] comes, I'm I'm improved for the for the
+[02:16:17] ne for the next bare cycle, for the next
+[02:16:19] bull cycle, and then you get that
+[02:16:21] follow-through day. The important part
+[02:16:23] is is that we catch a meat s some of the
+[02:16:26] move, a meat of the move, however long
+[02:16:28] that move might be. And then you can
+[02:16:29] reflect back when it's all said and done
+[02:16:31] and say, "What did I do wrong? What
+[02:16:33] could I have done better? And what did I
+[02:16:35] learn from this experience?" And
+[02:16:36] everybody has to do that. Even watching
+[02:16:38] this and and reading through these
+[02:16:40] slides and and going through it
+[02:16:41] yourself. You're never going to be
+[02:16:44] perfect. Let's forget about that, right?
+[02:16:46] Nobody is perfect. I know the best
+[02:16:48] traders in the world who who make
+[02:16:51] mistakes all the time. That's not the
+[02:16:53] game here. The game is to make money.
+[02:16:55] It's not to be right. Right. People want
+[02:16:57] to be right, which is actually why they
+[02:16:59] have such a hard time selling their
+[02:17:01] losers because they refuse to be wrong.
+[02:17:04] But but if you accept that you're going
+[02:17:07] to be wrong a lot, that actually helps
+[02:17:09] you make more money down the road. So
+[02:17:11] again, don't be overwhelmed. That would
+[02:17:13] be my kind of um my my lasting message
+[02:17:17] with people. And take every little piece
+[02:17:20] and and there's probably a lot of other
+[02:17:22] little pieces, Rich, that we could talk
+[02:17:24] about, but take every little piece and
+[02:17:28] study it, break it down, and then
+[02:17:30] realize how everything kind of layers on
+[02:17:32] top of each other. even though they're
+[02:17:34] all separate nuances that help you
+[02:17:37] become more profitable. So hopefully
+[02:17:40] that helps, man.
+[02:17:41] >> Yeah, this was fantastic and and thanks
+[02:17:43] again for putting this together. And
+[02:17:44] each of these pieces, it actually uh and
+[02:17:47] not not not to do like a selfish plug,
+[02:17:49] but like the book that we wrote, the
+[02:17:51] trader handbook, it fits really well
+[02:17:52] with that because each chapter of that
+[02:17:54] is kind of one piece that you laid out,
+[02:17:56] you know, routines, entry tactics,
+[02:17:58] screening. So, uh for people looking for
+[02:18:01] more guidance, you know, that's that's
+[02:18:02] an option for you. um the playbook. Um
+[02:18:06] but yeah, this was fantastic. And again,
+[02:18:07] I think people are going to have to
+[02:18:08] watch this multiple times uh to really
+[02:18:11] uh get get everything you share today.
+[02:18:13] But uh appreciate it immensely. You
+[02:18:14] know, thank you so much. Uh to everybody
+[02:18:16] watching, I hope you guys enjoyed. Uh
+[02:18:18] let us know your, you know, biggest
+[02:18:19] takeaway or nugget uh in the chat right
+[02:18:21] now or down below in the comments. Um
+[02:18:23] and with that, you know, uh we'll be
+[02:18:25] right back. Thanks everybody.
+[02:18:30] >> [music]
+[02:18:34] [music]

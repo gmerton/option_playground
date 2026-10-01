@@ -71,3 +71,8 @@ the browser cookie jar.
 
 Palunteer → PLTR · Marll → MRVL · Octa → OKTA · SNX / SNXX → SanDisk leveraged ETF (exact symbol
 unconfirmed) · MSFU → MSFT 2x · NVDL → NVDA 2x · poet → POET · "620 setup" → 5-min 6/20 EMA cross (Morales).
+
+## Elsewhere
+
+- TraderLion long-form interview (recorded 2026-06-17, published 2026-09-13, `-dv_2h61a2o`): his full process with thresholds,
+  and how it compares with the repo's AH encoding → `../traderlion/videos/interviews/2026-09-13_-dv_2h61a2o/notes.md` (2.5/5).

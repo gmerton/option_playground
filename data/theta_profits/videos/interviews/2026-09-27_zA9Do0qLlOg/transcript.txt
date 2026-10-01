@@ -1,0 +1,959 @@
+[00:00] I wasn't going to turn like a two-day
+[00:02] win into like a three-month relationship
+[00:05] just to like wait for the last 54%.
+[00:09] A lot of time I'm able to close it out
+[00:11] with like 40 to 50% profit within a week
+[00:15] or so.
+[00:16] &gt;&gt; She sells puts with a 90% win rate and
+[00:20] reports very solid profits. Today we
+[00:23] will walk through the exact five steps
+[00:26] she's using to identify the best trades.
+[00:30] Welcome toss.
+[00:31] &gt;&gt; Hi John.
+[00:33] &gt;&gt; Nice to have you back and let's get
+[00:35] straight to it. Give us the 40 secondond
+[00:37] version of your put selling strategy and
+[00:39] how it has worked for you.
+[00:41] &gt;&gt; I sell buttons only on stocks that I
+[00:44] want to own. And so these are stock that
+[00:46] I've researched and would genuinely you
+[00:49] know be happy to own them. My
+[00:52] proprietary indicator alerts me whenever
+[00:55] one of them becomes oversold and then I
+[00:58] check whether it's a normal pullback or
+[01:01] whether the underlying thesis has
+[01:03] changed. So from there I combine gamma
+[01:06] level volume profile and option flows to
+[01:10] choose an expiration and strike that's
+[01:12] meaningful for the downside buffer. And
+[01:15] I size every trade like with assignment
+[01:18] in mind and I often use put credit
+[01:21] spread to define my risk. So across 52
+[01:26] closed trades so far um this whole
+[01:29] process has actually produced more than
+[01:32] 137,000 in profit using one contract per
+[01:36] alert that I put out with a 90% win rate
+[01:39] as you mentioned.
+[01:41] &gt;&gt; That's great. and we will walk through
+[01:43] your five steps of finding the best
+[01:46] trades for you. But first, tell us a
+[01:49] little bit about yourself, especially as
+[01:51] an options trader.
+[01:52] &gt;&gt; I love having a lot of free time like,
+[01:55] you know, to hang out with my friends
+[01:56] and family, to eat, to watch anime,
+[02:00] shopping, and play pickle ball, and just
+[02:03] in general enjoy life. But I was not
+[02:06] able to have that kind of quality of
+[02:09] life when I was still working in
+[02:12] corporate. So I got serious about
+[02:14] trading cuz I was tired just wasting my
+[02:17] life away climbing the ladder and
+[02:19] dealing with a lot of office politics.
+[02:23] And fortunately, I was able to get
+[02:25] really good at trading to the point
+[02:28] where I was able to retire my parents,
+[02:30] myself, and even open a Discord where
+[02:33] more than a thousand people are learning
+[02:35] and flourishing every day. The last time
+[02:38] that I was here with you, we talked
+[02:40] about selling puts on NQ, which is still
+[02:44] my bread and butter, by the way. And
+[02:47] actually, at the time of this recording,
+[02:49] I have a published trade log on my
+[02:51] website for that strategy, and it has a
+[02:54] 94% win rate, over 500 alerted trades,
+[02:58] and $216,000
+[03:01] in profit using one contract per alert.
+[03:04] But today, we're talking about selling
+[03:06] puts on individual stocks just to keep
+[03:09] it interesting. And I'm happy to walk
+[03:12] through that with you.
+[03:14] &gt;&gt; That's right. Today's topic is selling
+[03:16] how you sell puts and give us an
+[03:19] overview of your trading style when it
+[03:22] comes to selling puts and what what is
+[03:24] attracting you to uh uh selling puts as
+[03:27] as one of your go-to strategies.
+[03:30] &gt;&gt; I wanted a trading style that fits me. I
+[03:34] talked about how I love having a lot of
+[03:36] free time. So, I wanted something that
+[03:39] didn't require me to stare at the screen
+[03:41] all the time. And that's a big reason
+[03:45] why I gravitate towards selling puts. It
+[03:48] can be a simple, forgiving, and overall
+[03:51] just a lot less screen intensive than
+[03:54] scalping or buying calls. Time decay
+[03:58] usually works in my favor. I also don't
+[04:01] need to predict an exact upside target.
+[04:04] I can be a little wrong on the
+[04:06] directions or early on the timing and
+[04:09] the trade will still usually work in my
+[04:11] favor. Most importantly, selling put is
+[04:15] an agreement to buy share at a strike
+[04:18] price that I'm interested in if I'm
+[04:22] assigned. And so if I sell a strike, if
+[04:26] I sell a put at a strike where I already
+[04:29] want to own that stock, then I get paid
+[04:32] for waiting and making that commitment,
+[04:35] right? So this framing is really
+[04:37] important because I don't want people to
+[04:41] think like oh I don't mind owning it
+[04:43] after the position goes against them.
+[04:46] This is like something that I always
+[04:49] think about first and that's something
+[04:51] that I decide after doing research on
+[04:54] the individual stocks before entering
+[04:57] the trade so that I always size for
+[05:00] assignment making all my trades very
+[05:02] manageable. If I understand it
+[05:04] correctly, you don't have like one exact
+[05:08] strategy that's the same every time, but
+[05:11] you have a pretty exact process of how
+[05:14] you find your trade and then you choose
+[05:16] your whether you sell a short put or a
+[05:18] put credit or what what will be the
+[05:21] exact strikes and so on as a result of
+[05:24] that process. Is that correctly
+[05:26] understood?
+[05:27] &gt;&gt; Yeah, correct. And you mentioned it's a
+[05:29] five-step framework that I'll walk
+[05:31] through. There's a lot of way to sell
+[05:34] blood. Some people do it just by the
+[05:36] exact amount of day to expiration or
+[05:39] delta, but that's not something that I
+[05:42] stick to religiously. I have my
+[05:44] framework that I use and that I'm
+[05:46] flexible with when I'm choosing the
+[05:48] strike or the expirations.
+[05:50] &gt;&gt; So mention very quickly the five steps
+[05:52] before we get into the details for each
+[05:55] of them. So the five steps are one
+[05:58] having a curated watch list of company
+[06:01] that I have researched and would
+[06:03] consider owning. Two having my
+[06:05] proprietary indicator which alerts me
+[06:08] whenever one of those stocks on my watch
+[06:10] list move into an overextended or
+[06:13] oversold area. Three gamma exposure
+[06:17] levels from tools like Tanuki Trey or
+[06:20] Mentor Q. Four, a six-month volume
+[06:24] profile that I use on Trading View. And
+[06:27] five, options flow from unusual well.
+[06:31] &gt;&gt; As serious options traders, we must make
+[06:34] back testing part of our process. My
+[06:38] favorite tool for that is Option Omega.
+[06:40] It is an advanced back testing platform
+[06:43] built by longtime traders, and I'm
+[06:46] especially excited to see some of their
+[06:48] recent improvements. They are game
+[06:51] changers. The new optimizer lets you
+[06:54] take a strategy and test lots of
+[06:57] variations in a matter of seconds.
+[07:00] Wondering when to enter a trade or which
+[07:02] delta to use? You can now run hundreds
+[07:06] of tests in one go to see what
+[07:09] historically made a difference. It is
+[07:12] fun and easy. But here is what I really
+[07:15] like about Option Omega. It's not just
+[07:18] superb software. There is a huge
+[07:22] community of serious traders and a team
+[07:25] puts a lot of effort into education
+[07:27] because back testing is not an easy fix.
+[07:30] It's a tool for serious hardworking
+[07:33] traders like ourselves who like to test
+[07:37] ideas, challenge assumptions and
+[07:40] hopefully develop a real edge in options
+[07:43] trading. And once you have a strategy
+[07:47] all tested out, it takes just a click or
+[07:50] two to automate the trading. So this is
+[07:52] my recommendation. Check out Option
+[07:56] Omega. You'll get 50% off your first
+[07:59] year if you use my affiliate link on the
+[08:02] screen. A lot of data to get in here and
+[08:06] I'm always very impressed with the
+[08:09] traders and guests who have this kind of
+[08:11] very clear, elaborate process. I look
+[08:14] forward to digging into it. Let's start
+[08:16] with step one, building the building the
+[08:19] right stocks or your watch list. Tell us
+[08:23] about that.
+[08:24] &gt;&gt; About twice a year, I do something
+[08:26] similar to an index reconstitutions
+[08:28] where I review my current watch list,
+[08:31] remove companies that no longer fit, and
+[08:34] look for new candidates to add. Social
+[08:36] media and Substack from my experience
+[08:39] can be useful for discovering new themes
+[08:42] that I haven't considered before. From
+[08:44] there, I go deeper to research into the
+[08:47] sector and individual companies and then
+[08:50] I keep the approved name on my trading
+[08:52] view watch list. So, as you can see
+[08:54] here, my watch list, I have things
+[08:56] organized into different sectors and
+[08:59] subsectors. So, you know, like with
+[09:02] semis, these are the stocks that I
+[09:04] really like. AMD is one that I trade
+[09:06] very often. TSM, Intel, Dell like Marbal
+[09:12] etc. And then with memory and storage
+[09:16] sector these are the one that I also
+[09:18] trade a lot with Micron SNDK and
+[09:22] Seagate. Then in terms of like things
+[09:25] like data center I have NBIS, core,
+[09:29] wolf, iron,
+[09:32] be for energy
+[09:36] and then you know we have the photonics
+[09:38] which is also a very hot sector. So here
+[09:41] I really like AXTI uh core and light.
+[09:47] So those are just examples of like
+[09:51] stocks that I have on my watch list that
+[09:53] I have done research on. AI has actually
+[09:56] made this whole fundamental research
+[09:58] process a lot easier and faster. I use a
+[10:01] bot to help compile informations and
+[10:04] monitor negative news. A couple of
+[10:06] important things that I like to do deep
+[10:09] dives on before I select a companies.
+[10:12] One, I look at the business model and
+[10:14] the revenue streams. I don't invest in
+[10:17] anything that I don't understand. So,
+[10:19] it's really important for me to nail
+[10:22] this down and like know how they make
+[10:25] money. And then I check their balance
+[10:27] sheet, their cash flow, their earning
+[10:29] qualities just to get a gauge of their
+[10:32] financial statement health. Then I look
+[10:34] at the team that's behind the company,
+[10:36] the management's reputations, how
+[10:38] they've been executing quarter over
+[10:39] quarter, how they've been allocating
+[10:41] capital, and more importantly, how they
+[10:44] sound on earnings calls. Cuz as we all
+[10:46] know CEO and CFO can mess up calls
+[10:50] really badly and sound really
+[10:52] incompetent on calls which can erode
+[10:55] trust over time and that's not good for
+[10:57] the company. I also look at competitive
+[10:59] positioning and customer retention
+[11:02] health and cyclicality of the sector and
+[11:04] then on a regular basis the bot will
+[11:07] also monitor for any negative
+[11:08] developments regarding the company. So
+[11:11] like any new regulations, lawsuits,
+[11:14] inside the selling, loss or one
+[11:16] contracts, dilutions, accounting
+[11:19] concerns, or in just general like a
+[11:21] broken thesis about the company.
+[11:23] &gt;&gt; Let's move to step two, the alert and
+[11:26] first filter. What happens here?
+[11:29] &gt;&gt; So going back to my trading view screen,
+[11:33] you can see like I have these two band,
+[11:35] my pink and blue trusty bands. And this
+[11:39] is my proprietary indicator.
+[11:42] So I use it. It's an indicator plotted
+[11:46] around a slow moving average with
+[11:49] volatility based projections as the
+[11:51] bands. It gives me a visual map of like
+[11:54] extension zones where price is trading
+[11:58] near its mean versus where statistically
+[12:02] stretch. Right? So, because I have all
+[12:06] my stocks that I like on my watch list,
+[12:10] I can configure an alert to go off
+[12:12] whenever a stock crosses into the lower
+[12:16] white and blue band down here.
+[12:20] And that tells me the stock is below its
+[12:22] mean and relatively oversold, which is
+[12:26] the environment where I want to start
+[12:28] looking for a put sale.
+[12:32] But oversold does not mean it cannot go
+[12:35] lower. It's an alert for me to start
+[12:38] investigating and become interested in
+[12:41] the trade. But it's not like an
+[12:43] automatic buy signal, right? I have
+[12:45] other step in the process. I mean, I say
+[12:48] this because like every trader
+[12:49] eventually learns that oversold can
+[12:52] always come more oversold and so there's
+[12:55] not the market doesn't care that my
+[12:57] indicator turn blue, right?
+[12:59] But you you have a proprietary
+[13:02] indicator. But for the viewers who don't
+[13:04] have access and that would be almost all
+[13:06] I'm sure that don't have access to your
+[13:08] own indicator, what could be like a
+[13:10] simplified or best alternative version
+[13:14] if you want to build something yourself
+[13:15] in in Trading View? What what should you
+[13:17] look for?
+[13:18] &gt;&gt; I mean if you want to have built
+[13:20] something yourself in Trading View, I
+[13:23] would recommend looking at a longer
+[13:26] moving average. you know, like not
+[13:28] something like the nine and the 20, like
+[13:31] something higher. And also look at like
+[13:34] the volatility of that particular stock
+[13:37] and how it's been moving and take that
+[13:40] into account because not every stock
+[13:43] move at the same pace. So, it should be
+[13:46] able to customize based on the stock
+[13:49] that you have it on, right? And then
+[13:52] there's there are a lot of other like
+[13:55] free indicators out there that will like
+[13:58] alert you if something looks oversold or
+[14:02] overbought, right? Like in something
+[14:05] simple like RSI will also say, hey, this
+[14:07] look a little bit oversold or this look
+[14:09] a little overbought. So that's one
+[14:12] confluence or signal that you can use.
+[14:14] So you have been given the first
+[14:16] indication that it might be an
+[14:17] interesting trade and your step three is
+[14:19] to look at the gamma exposure. What is
+[14:22] this telling you?
+[14:23] &gt;&gt; So before I go into how I use GAX in my
+[14:27] process, I want to do a quick overview
+[14:29] of what GEX is for viewers who might not
+[14:32] be familiar with the concept. So GEX is
+[14:35] an estimate of how options positionings
+[14:38] may affect dueler hedging. Now it's
+[14:40] important to not treat this as a crystal
+[14:43] ball. Instead, I use it as a map of
+[14:45] areas where price may be attracted to,
+[14:48] rejected, pin, or move quickly through
+[14:51] if a level breaks. The exact labeling
+[14:54] can vary by platform, but I'm going to
+[14:56] talk about the labels that Tanuki uses
+[15:00] cuz that's the platform that I use the
+[15:02] most. Call walls, these can act as an
+[15:04] upside targets or areas of resistance.
+[15:07] put walls. These can mark important
+[15:09] downside that may be potential support
+[15:12] or potential magnets on heavy downtrend
+[15:14] days. And then in between the calls and
+[15:16] put walls, you have the high volatility
+[15:18] level or the HVL. So this is the
+[15:22] boundary between a more stable versus
+[15:25] more volatile price environment. And
+[15:27] these levels are dynamic, right? They
+[15:29] can change as price, open interest, and
+[15:32] expiration approach. So I use them again
+[15:35] as inputs but not guarantees.
+[15:37] &gt;&gt; And we do have a few other videos about
+[15:40] the gamma levels and gs on theta
+[15:43] profits. So I'll try to link some of
+[15:45] them in the article accompanying uh
+[15:47] accompanying this uh video. So let's go
+[15:50] to how you actually use it.
+[15:52] &gt;&gt; Okay. So what you see here is Tanuki
+[15:55] tray which is a popular GX platform that
+[15:58] I use. I have AMD pull up and as you can
+[16:03] see here this the C1 is a call wall that
+[16:06] I explained earlier. So then you have
+[16:11] the P1 as the put the first put wall and
+[16:16] in this case actually the high
+[16:18] volatility level is also where the first
+[16:22] put wall is at just because of how
+[16:25] positioning is for this particular
+[16:27] expiration.
+[16:29] Normally I want my short strike below a
+[16:32] major put wall or another meaningful
+[16:35] downside level. And sometime you'll see
+[16:39] like there'll be multiple put walls that
+[16:42] are pretty much like around the same
+[16:44] size. Like I said the first point wall
+[16:47] is 540. So if I were to choose the
+[16:49] strike that I would want something below
+[16:52] that. But I don't just choose the strike
+[16:55] from what's presented in gamma alone. I
+[16:58] want agreement and confluence among like
+[17:01] several things right gamma yes volume
+[17:05] profile
+[17:06] price structure premium liquidity and
+[17:10] you know the size of the position so
+[17:12] when like subro all these signal
+[17:15] converge that gives me a lot more
+[17:17] confident than any one of them by itself
+[17:22] &gt;&gt; right so this is one of the steps that
+[17:24] you always go through before you put on
+[17:26] a
+[17:27] &gt;&gt; correct good on a trade but it is not
+[17:29] the one and single truth only.
+[17:32] &gt;&gt; Yep.
+[17:33] &gt;&gt; Step four is volume profile and price
+[17:37] structure. What do you mean by that?
+[17:39] &gt;&gt; I like to look at the six months volume
+[17:43] profile because I think that's a good
+[17:45] time period where it's not been too long
+[17:48] and not been too short. So this is the
+[17:52] volume profile. As you can see, I still
+[17:54] have AMD up as an example here. This is
+[17:57] what it looks like over a sixmon period.
+[18:01] And you have this label here called the
+[18:05] PC or the point of control. And that's
+[18:10] the price area with the most traded
+[18:13] volume over this selected period of six
+[18:16] months. You can think of it as the
+[18:19] market's most accepted price or fair
+[18:22] value during that sixmonth period. So
+[18:25] whenever possible, I want my short
+[18:27] strike for my puts below the PC. And
+[18:31] this is often also below meaningful
+[18:33] price support. And my rational is pretty
+[18:36] simple for this. I don't want to take
+[18:40] assignment at the price everybody
+[18:42] already considers normal or fair. Right?
+[18:46] I already told you I like to shop and
+[18:48] that applies to stocks too. I don't want
+[18:51] a market price. I want the sale price.
+[18:54] &gt;&gt; So in this particular case here, where
+[18:57] would you think that you would put the
+[18:58] put strike?
+[19:00] &gt;&gt; Yeah. So right here over the six months
+[19:04] period, you can see that AMD PC is
+[19:07] around 480, right? So if I were to
+[19:10] choose a strike, I would definitely want
+[19:13] it to be below there. And also looking
+[19:17] at the price structure alone, we had
+[19:20] that big sell-off in July over AI and
+[19:25] semiconductor stocks. And as you can
+[19:27] see, even even through that large sell
+[19:29] off, AMD was able to hold 423 to 425
+[19:35] area. So that's another meaningful
+[19:37] support level to keep in mind. So, if I
+[19:39] was to pick a strike, it's definitely
+[19:41] below 480 and somewhere like
+[19:46] around that support level that that I
+[19:48] mentioned that I saw in July.
+[19:51] &gt;&gt; Your step five is options flow. What do
+[19:55] you mean by options flow?
+[19:57] &gt;&gt; The last step that I checked is with
+[20:00] unusual whale. This is a tool that
+[20:02] monitors option trades uh from you know
+[20:07] uh option trades from all types of
+[20:10] market participant throughout the day
+[20:12] and I look for unusual activities such
+[20:16] as large in the money put sale or
+[20:19] concentrated shortdated call buying.
+[20:23] Those in my experience are very good
+[20:26] signals for when big money or
+[20:29] institution wants to get in a trade and
+[20:32] when they have a directional bias for
+[20:34] that particular underlying.
+[20:37] Sometimes I find an in the money put
+[20:40] cell that I like and I may use the same
+[20:43] expiration as that flow while choosing
+[20:47] my own more conservative strike with my
+[20:50] process. And I'll quickly show you what
+[20:53] it looks like on an usual well. So I
+[20:57] have Andy pull up just because we've
+[20:59] been talking about that. But you know I
+[21:02] like to look for a premium of over
+[21:04] 100,000 just because I don't want to see
+[21:07] anything that's too small that cause a
+[21:09] lot of noise. And you can see here you
+[21:13] have like these are put sales. Somebody
+[21:16] sold puts at the 480 stride for the
+[21:18] October 16 expiration with a total
+[21:22] premiums around million dollar. And
+[21:24] that's something that's notable, right?
+[21:26] And something that I look at when I'm
+[21:30] trying to decide what whether I want to
+[21:33] enter the trade or not. And this is just
+[21:35] like you know a cautionary warning but I
+[21:40] just want to like mention that although
+[21:43] I like seeing where large money may be
+[21:45] positions
+[21:47] flow is not a guaranteed
+[21:50] winner. Right? Just because you see big
+[21:53] money going into a trade doesn't mean
+[21:56] they can't be wrong. They can be wrong a
+[21:59] lot of time and they just they're just
+[22:02] wrong with more money. Right? So don't
+[22:04] ever just blindly copy using flows
+[22:08] alone. It should be part of your larger
+[22:11] process.
+[22:12] &gt;&gt; So I guess we have five steps. None of
+[22:15] them are the single answer and can
+[22:18] guarantee any successful trade but to in
+[22:21] total they may reduce your risk or
+[22:24] improve your probabilities. Is that a
+[22:26] fair way to sum it up?
+[22:29] &gt;&gt; That's trading right? I mean, there's no
+[22:31] signal that can give you 100% confidence
+[22:33] in a trade. The best we can do as
+[22:36] traders is reduce the probability that
+[22:38] we're wrong.
+[22:39] &gt;&gt; Can you elaborate a little bit about how
+[22:41] you choose your expiration date? How far
+[22:44] out you like to go and what determines
+[22:47] how far out you go?
+[22:49] So I want enough time for the thesis to
+[22:54] work out without you know paying for
+[22:58] unnecessary certainty. I look at things
+[23:01] like liquidity, premium available,
+[23:04] upcoming earnings or other major events
+[23:07] for that company and whether that
+[23:10] expiration aligns with the gamma data
+[23:13] that I'm seeing.
+[23:15] A lot of time I like to choose an
+[23:17] expiration that is a monthly expiration
+[23:20] just because of the bigger liquidity
+[23:22] available.
+[23:24] And I'm in general just like less
+[23:27] interested in rigid like day to
+[23:30] expiration rule that I know some people
+[23:33] like to popularize. You know, some
+[23:35] people have very rigid like 30 DTE or 45
+[23:39] DTE that they stick to. But for me, I'm
+[23:43] more flexible. More time in general give
+[23:46] price more time to recover, but it also
+[23:51] keeps my capital and risk committed
+[23:53] longer. Shorter durations give faster
+[23:56] decay but less room to be wrong. So
+[23:59] there's a tradeoff.
+[24:01] &gt;&gt; What is the most typical expiration you
+[24:04] have?
+[24:06] Usually for things that I think need
+[24:09] some time to recover, I will look at two
+[24:12] to three months out.
+[24:15] &gt;&gt; So pretty far out actually compared to
+[24:17] many.
+[24:18] &gt;&gt; Yeah. But because of the stripe that I
+[24:22] choose and like when I enter the trade,
+[24:26] a lot of time I'm able to close it out
+[24:28] with like 40 to 50% profit within a week
+[24:31] or so.
+[24:33] Do you normally sell an naked put or you
+[24:37] choose a put credit spread and how do
+[24:39] you choose between the two? If I truly
+[24:42] wants to share and own them and I have a
+[24:45] relatively light portfolio portfolio
+[24:48] like within that concentrations then I
+[24:51] will sell naked puts right for example
+[24:54] if I don't have a lot of exposure in
+[24:57] photonics and I think like that sector
+[25:01] is going to move then I will sell naked
+[25:04] puts for more premium and I don't mind
+[25:07] the extra exposure right
+[25:10] if If I want to define risk, if the
+[25:13] stock is relatively expensive or if the
+[25:15] market environment in general is less
+[25:18] certain, I prefer put credit spreads.
+[25:22] Buying that lower put caps the worst
+[25:25] case scenario for me.
+[25:27] &gt;&gt; I think it would be a good idea if you
+[25:28] can sum up this process very quickly
+[25:31] before we move on. And uh maybe could
+[25:34] you walk us very quickly through an
+[25:37] example with the process? Sure, I'll be
+[25:39] happy to. I'll actually walk you through
+[25:42] a trade that I took last week on AMD
+[25:45] since we've been talking about it all
+[25:47] day. Looking at Trading View, as you can
+[25:50] see,
+[25:52] I got on September 14 on Monday,
+[25:57] the the daily candle actually touch into
+[26:00] the lower band of my indicator. Right,
+[26:02] we can go into the five minute view
+[26:04] here.
+[26:09] And like that happened pretty early in
+[26:12] the day and that's when I got the alert.
+[26:15] So then I started looking into it. I
+[26:19] already knew the broader catalyst. There
+[26:22] was a lot of talks if you remember that
+[26:25] weekend about slowing down AI from the
+[26:28] three frontiers lab. So that affected a
+[26:32] lot of AI and semiconductor stock on Mon
+[26:35] on last Monday.
+[26:37] But I still confirmed that there is no
+[26:39] new AMD specific development that broke
+[26:42] my thesis. That matters a lot because a
+[26:45] sector wide risk off move is very
+[26:48] different. So my company specific
+[26:50] problem.
+[26:52] &gt;&gt; So that was step two. You alerted um the
+[26:54] filter uh saying that this might be an
+[26:57] interesting trade. Step three, the gamma
+[27:00] exposure is next in your process.
+[27:03] &gt;&gt; Yes, with Tanuki here, I'm using the
+[27:06] replay feature. So, you can see like
+[27:09] what the gamma looked like on September
+[27:12] 14. As you can see, we had the first put
+[27:16] first put wall at 490 and we move into a
+[27:20] little bit at like 10:35 Eastern time.
+[27:23] Price was trading below the first put
+[27:26] wall, right?
+[27:28] And
+[27:31] then I checked the six-month volume
+[27:33] profile. So going back to trading view,
+[27:37] I won't bring this up, but earlier you
+[27:39] saw that we had the PC at 480 for AMD.
+[27:45] And right then on Monday, price was
+[27:49] trading at 487.
+[27:51] So
+[27:53] I didn't want to sell a put super close
+[27:56] to spot. I wanted a little bit more room
+[27:59] because I wasn't sure like how long this
+[28:02] broader catalyst is going to continue.
+[28:04] Right. So with the last step, I looked
+[28:07] into unusual well and I saw large in the
+[28:10] money puts out on January 15, 2027.
+[28:15] Here was the flow that got me
+[28:16] interested.
+[28:18] So January
+[28:21] 15 500 put as you can see on the 14
+[28:26] there was quite a lot of put sale early
+[28:31] in the day and seeing that flow made me
+[28:36] want to choose that expirations because
+[28:38] I know like there's somebody who's
+[28:41] willing to own this stock at you know an
+[28:45] in the money strike. So, if they're
+[28:48] willing to put their money there, then
+[28:51] I'm also willing to go along with them.
+[28:55] But I wanted to be a little more
+[28:56] conservative based on my process. So, I
+[28:59] picked a short strike below the prior
+[29:02] low that I saw in July, which I
+[29:05] mentioned earlier. And I opened the
+[29:07] January 15 400/300
+[29:12] put credit spread for minus745.
+[29:18] So I got 1745 credit for that trade. And
+[29:22] I'll show you the entry that I took on
+[29:24] that trade. So you can see this is my
+[29:27] Discord. And on September 14 at 7:45
+[29:32] Pacific time, I opened that AMD put
+[29:36] credit spread and I got 1745 credit for
+[29:39] it.
+[29:40] &gt;&gt; And is this trade still open?
+[29:43] &gt;&gt; No, this trade is actually closed. And
+[29:47] as you can see in my trading view chart
+[29:49] here, so I enter on September 14 in the
+[29:53] morning and from there A andd rebounded
+[29:57] very quickly. Right? So I was able to
+[30:01] close a trade actually on Thursday for
+[30:04] 46%
+[30:06] profit on the credit that I received
+[30:10] about $800 per spread. And to me, that
+[30:14] was like a very easy decisions cuz I
+[30:17] wasn't going to turn like a two-day win
+[30:20] into like a three-mon relationship just
+[30:22] to like wait for the last 54%.
+[30:26] I got the big move that I wanted and I
+[30:29] was happy to take the gains. And I'll
+[30:32] actually show you my exit as well. So,
+[30:34] you can see on September 17, last
+[30:37] Thursday, at 8:51
+[30:39] Pacific time, I was able to close this
+[30:42] trade out for 945 debit, netting a 46%
+[30:47] profit.
+[30:49] &gt;&gt; That's very nice.
+[30:52] And I think that leads us to the next
+[30:55] segment, which is your exit mechanics.
+[30:59] And how do you set your profit target?
+[31:02] Do you have one set profit target or is
+[31:04] this discretionary and but how do you
+[31:07] set your profit target and when do you
+[31:09] set it?
+[31:10] &gt;&gt; I definitely lean more toward the
+[31:13] discretionary side. If the stock reaches
+[31:16] or approach the first call wall of you
+[31:20] know the the next monthly expiration
+[31:23] onto new P that's when I will often trim
+[31:26] or close because price has reached one
+[31:29] of my upside potential upside area and I
+[31:34] may also take profit early if the short
+[31:37] put is already more than pro 40%
+[31:39] profitable while there's still like more
+[31:42] than half of the time left on the trade.
+[31:44] Okay, as you can see with the AMD trade,
+[31:47] right, like I only put that on for two
+[31:49] days and it was already 46% in profit.
+[31:52] So, that was easy for me to take the
+[31:54] gains and yeah, that's like a good
+[31:56] return for the amount of time and risk
+[31:59] used and that let me redeploy the
+[32:02] capital into new trades. I will also
+[32:04] sometimes exit even sooner if the larger
+[32:09] macro environment and market changes and
+[32:12] I want less exposure in that particular
+[32:14] sector.
+[32:16] &gt;&gt; But then the opposite question when do
+[32:18] you accept a loss?
+[32:20] &gt;&gt; I actually don't use a stop-loss when I
+[32:23] put on my naked puts or credit spread
+[32:26] trades.
+[32:27] option price can jump a lot because
+[32:30] volatility expansions and bid ass it can
+[32:33] be wide especially on a spread. So my
+[32:36] real stop is decis base and risk based.
+[32:40] If for whatever reason that company is
+[32:42] no longer something that I want to own
+[32:45] on a short to medium turn then I will
+[32:48] close the position and accept the loss.
+[32:51] And before the entry, I know what would
+[32:54] make me long like a fundamental
+[32:57] development in the negative side or an
+[33:00] unacceptable change in volatility and
+[33:02] overall market conditions that will make
+[33:05] me want to reduce my portfolio risk in
+[33:08] general.
+[33:08] &gt;&gt; Let's move to management. To what extent
+[33:11] do you manage uh your trades and in what
+[33:14] situations would that be and what are
+[33:17] the ways you would manage? So I told you
+[33:20] I wanted something that would help me
+[33:23] not be like a corporate slave. So I
+[33:25] didn't want to be a slave to the market
+[33:27] and I try not to micromanage
+[33:31] just like through the normal noise of
+[33:33] the underlying. I usually become more
+[33:36] active during expiration week for my
+[33:39] trade especially if the stock is near or
+[33:42] below my short strike. If my shortp put
+[33:46] has roughly 70% or greater probability
+[33:50] of expiring in the money that week, then
+[33:53] I start making decisions on whether I
+[33:57] want to close it, roll it, or take
+[33:59] assignment.
+[34:00] &gt;&gt; Let's talk about risks. What is the
+[34:03] worst that can happen with your strategy
+[34:06] and your way of trading? So with a
+[34:09] negative short put the most extreme
+[34:13] scenario is that the stock goes to zero
+[34:16] right company goes bankrupt stock get
+[34:19] delisted goes to zero my loss would be
+[34:22] the strike price minus the premium that
+[34:24] I receive multiply by 100 share per
+[34:27] contract super more commonly the painful
+[34:31] scenario is getting assigned while the
+[34:34] stock is free falling because of some
+[34:36] like real negative
+[34:39] A put credit spread can lower that pain.
+[34:44] Define the risk because the lower long
+[34:47] put caps the downside. But the spread
+[34:50] itself is not without risk. If the stock
+[34:53] finishes need or strikes, pin risks and
+[34:56] afterhour movement can create an
+[34:59] unexpected assignment. Right? So that's
+[35:02] why I don't just casually leave like
+[35:06] challenge spread or positions unattended
+[35:09] into expirations.
+[35:11] And honestly, it just boils down to
+[35:14] picking good companies, keeping sizing
+[35:17] reasonable, choosing logical strikes and
+[35:20] expirations, and knowing what to do when
+[35:23] I'm wrong.
+[35:24] &gt;&gt; But we are still talking about the
+[35:27] individual trade. But I I would guess
+[35:29] that one bad scenario here because you
+[35:32] probably have several different put
+[35:35] trades on at any time and I would guess
+[35:37] maybe one really bad scenario for you if
+[35:40] if we have a big market falling down so
+[35:44] that it hits all your all your trades or
+[35:47] many of your trades. How bad can that
+[35:50] get for you?
+[35:52] &gt;&gt; Yeah. So that's something that I
+[35:53] mentioned earlier, right? like if
+[35:55] there's a change in the macro or market
+[35:59] environment then I want to like look at
+[36:02] my positions and look at my
+[36:05] concentrations risk. I don't want to be
+[36:08] super concentrated in a specific sector
+[36:12] especially if that whole sector is
+[36:13] selling up then like multiple positions
+[36:16] will move together and that's when like
+[36:19] I will decide what position I want to
+[36:23] reduce based on like you know which
+[36:26] company I like the most and also like
+[36:30] where the spot price is for each of the
+[36:32] underlying and whether I'm in profit or
+[36:35] a small loss for that particular
+[36:37] position.
+[36:39] &gt;&gt; Do you have any hedges on on portfolio
+[36:41] level to kind of help you your total
+[36:44] portfolio in and to offset some of the
+[36:47] losses in a situation like that?
+[36:50] &gt;&gt; Yeah. So if I feel that the overall
+[36:54] market is changing and that there might
+[36:57] be some volatility coming in, I will
+[37:00] actually like buy some puts or put debit
+[37:03] spread to hedge my exposure because if
+[37:07] you think about it, a
+[37:09] short put or put credit spread strategy
+[37:12] is a long to neutral strategy, right?
+[37:16] And so overall, you still have long
+[37:19] delta exposure. And that's why if you
+[37:22] want to hedge it, you should like put on
+[37:26] some put or short something to actually
+[37:30] help you offset it.
+[37:32] &gt;&gt; There is one question I always ask and
+[37:34] that is to place your strategy or
+[37:37] trading style on a risk scale from one
+[37:40] being very low risk to 10 being very
+[37:43] high risk. And you are free to define
+[37:46] these numbers as you see fit. Where will
+[37:48] you put your trading style on such a
+[37:51] scale?
+[37:52] &gt;&gt; I love this question. For the way that I
+[37:56] trade it mostly with define put credit
+[37:59] spread on companies that I have
+[38:02] researched as strike chosen below
+[38:05] multiple reference levels. I personally
+[38:08] rank it around a three out of 10.
+[38:12] But I just want to qualify that number.
+[38:15] The strategy itself is not automatically
+[38:19] low risk. An oversized naked put on a
+[38:23] you know meme or speculative stock can
+[38:26] be extremely risky. Mean stock could go
+[38:28] to zero for sure. So the risk rating
+[38:32] comes from picking good companies. the
+[38:35] trade structure, position size and
+[38:37] management plan, not just from the
+[38:41] selling put strategy alone.
+[38:44] &gt;&gt; You mentioned a bit about your results
+[38:46] in the beginning, but let's dig into
+[38:48] your results. What have been your actual
+[38:52] results trading your put strategies?
+[38:55] &gt;&gt; Actually, let me bring up my trade log.
+[38:59] So this is my website and my trade log
+[39:02] which has all the trades that I've
+[39:05] alerted. I update this on a periodic
+[39:07] basis. I have real time updates within
+[39:11] my discord but this is the public
+[39:13] versions that I do update so that for
+[39:15] transparency
+[39:17] and as you go through all my trades you
+[39:19] can see I started keeping track publicly
+[39:23] starting in August of last year in 2025.
+[39:26] So, it's been a little bit more than a
+[39:28] year and over five and 500 closed trades
+[39:35] and I have a 90% win rate. 40 452
+[39:40] of those 502 trades were winning trades,
+[39:44] netting a total of 130,000
+[39:48] 137,000
+[39:50] per contract alerted. So,
+[39:55] I know the question you're going to ask
+[39:56] is like how much capital is involved,
+[39:59] right? And
+[40:00] &gt;&gt; you are reading my mind.
+[40:04] &gt;&gt; Uh, that's a super fair questions. I
+[40:08] always alert my trade with a 100,000
+[40:13] capital in mind. So, I don't put on
+[40:16] positions if I think it's going to
+[40:19] conflict with that sizing. Obviously, my
+[40:23] own account is a lot bigger and so like
+[40:26] this is not to say that I only made
+[40:28] 137,000. This is the record to show that
+[40:32] if you took one trade per alert with a
+[40:35] 100,000 in capital, then this is the
+[40:38] result that you would get.
+[40:41] &gt;&gt; But how do you like to measure the
+[40:42] results as a percentage of the buying
+[40:45] power used? I I realized when I
+[40:47] interview so many traders that traders
+[40:49] actually measure their results in very
+[40:51] different ways. So how what is your
+[40:54] favorite way of measuring your results?
+[40:56] &gt;&gt; For me, I think about how long I have
+[41:01] tied up that capital. If I was able to
+[41:05] close that trade within half the amount
+[41:08] of time left, I consider that like a
+[41:12] very big win. And I rank that very high
+[41:14] when I tra my trade. And also like I
+[41:18] think about the premium that I'm getting
+[41:21] for the risk that I'm putting on. I
+[41:24] don't want to put on some trades that's
+[41:26] you know only going to give me like 1%
+[41:29] returns on capital. Like that's
+[41:33] something that somebody who is more
+[41:36] conservative or riskaverse might be
+[41:39] interested in. But for me, I want to get
+[41:43] more rewards for the risk that I put on.
+[41:46] &gt;&gt; I guess it depends on the length of the
+[41:49] trade as well.
+[41:51] &gt;&gt; Correct.
+[41:53] And then I think like the the most
+[41:55] important thing is whether that trace
+[41:58] put smile on my face or not. Right? So,
+[42:03] I know this is super subjective, but I
+[42:05] like to tell people that whenever I look
+[42:07] at my P&amp;L for a particular tray and it
+[42:10] puts a smile on my face, that's a good
+[42:13] tray. And that's usually when I start
+[42:16] considering like whether I should trim
+[42:19] or close the tray as well cuz like my
+[42:22] emotion tells me a lot about, you know,
+[42:25] the risk and like what I'm getting. And
+[42:30] conversely, if a trade puts me through a
+[42:32] lot of pain and stress, then like that's
+[42:35] not a good tra that's a trade that I
+[42:37] want to avoid in the future. And I note
+[42:39] that down as well. And I don't know if
+[42:42] traders like journal their emotions, but
+[42:45] I think it's really important. And
+[42:47] definitely one of the criteria that I
+[42:49] keep track of. And I have a bot that
+[42:52] like goes through all these like
+[42:54] different notes that I have to like give
+[42:57] me the data I need to see like what kind
+[43:02] of trades have been good and what kind
+[43:04] of trades are neutral and what kind of
+[43:06] trades are not so good that I should
+[43:07] avoid.
+[43:08] &gt;&gt; Let's sum up. What would be the two or
+[43:10] three most important takeaways you
+[43:13] really want the audience to remember?
+[43:16] First, sell puts only on companies you
+[43:19] have researched at a size that you're
+[43:21] comfortable with.
+[43:23] I wouldn't mind owning it. Is the risk
+[43:25] plan only if it's true before entering
+[43:28] the trade.
+[43:30] Second, use gamma volume profile and
+[43:34] flow as confluence,
+[43:36] not as fortunelling tools. No one signal
+[43:41] can give you 100% confidence in a trade
+[43:44] unless you have like insider
+[43:45] information, right? And yeah, use them
+[43:48] to help you pick the strike and
+[43:50] expirations, but understand that risk
+[43:53] and have a plan before you enter. And
+[43:56] overall, this strategy fits well with me
+[43:59] because it gives me two different tools.
+[44:04] N2 put selling that we talked about last
+[44:06] time is my more active breadandbut
+[44:08] strategy selling puts on individual
+[44:11] stock being be more selective take
+[44:14] advantage of pullbacks on companies that
+[44:17] I personally like and potentially get to
+[44:20] own shares at a strike that I chose in
+[44:24] advance.
+[44:24] &gt;&gt; What would be good resources to learn
+[44:27] more?
+[44:29] Visit my website the optionseller.com
+[44:33] to learn more and of course join our
+[44:36] discord to get my alerts in your time
+[44:38] and to trade with other like-minded
+[44:41] members
+[44:42] &gt;&gt; and I will of course recommend people to
+[44:45] watch some of the other interviews here.
+[44:47] There are many ways to sell puts and
+[44:50] people trade it in different ways and I
+[44:53] I don't think there is one necessarily
+[44:55] one right or wrong way but you will find
+[44:57] a number of different ways of tra
+[45:00] selling puts in different interviews
+[45:01] here most recently with Dr. Jim, well
+[45:04] known from Tasty Live, who talked about
+[45:06] how he is doing it. And also I
+[45:11] remind you that every Monday at 12 noon
+[45:14] Eastern time, we have Theta Live with
+[45:17] new guests every week.
+[45:20] Thank you very much for coming here and
+[45:22] sharing your very detailed process of
+[45:25] how you how you and do your put strategy
+[45:28] with us.
+[45:30] &gt;&gt; Thank you for having me. It was super
+[45:32] nice talking to you, John.

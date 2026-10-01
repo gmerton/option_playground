@@ -105,3 +105,6 @@
 [ ] BwWh9cPYZdY | A consistently profitable 0DTE Iron Condor strategy - even after thousands of trades
 [ ] 0JtSJ5lvbfk | A 0DTE trend-following options strategy that works
 [ ] ZpoKKZBIlBI | How to make consistent income trading In The Money Covered Calls
+# Added after the 2026-07-05 fetch (reviewed):
+[x] SNz3dSutLzc | After 10 Years at Tastylive, This Is Still My #1 Options Strategy
+[x] zA9Do0qLlOg | Inside Her 5-Step Put Selling Strategy: 90% Wins in 502 Trades
