@@ -1,4 +1,4 @@
-# HANDOFF — state of play as of 2026-09-24
+# HANDOFF — state of play as of 2026-09-30
 
 For a session (or a person) picking this up cold. Everything here is the **why** and the **right now**;
 the durable material lives in the files below. ⚠ Dated on purpose — the "Recently changed" and "In flight"
@@ -15,15 +15,47 @@ sections go stale fastest, so trust the files over this doc where they disagree.
 
 ## The one-paragraph version of the book
 
-Research here is overwhelmingly **destructive** — it kills things. After a ledger-wide multiple-testing
-correction (2026-09-22) exactly **one** bucket certifies: index premium selling in stress
-(SPY bull put t 6.07, SPX condor t 5.21 — which are **one bet**, not two). The 10-day VRP is real
-(+1.75 vol points, t 8.93, 17/17 years) but **30d and 90d clear nothing**. The equity breakout book
-averages **+0.014R** and three independent angles now say it cannot be improved by mechanical selection.
-The measured leak is the **entry**: the breakout buys 2.6 ADR higher than a random later entry in the same
-name. Expect nulls; treat a positive as suspect until it survives real fills and a correction.
+Research here is overwhelmingly **destructive** — it kills things. Since the 2026-09-25 top-down audit (TEST_INDEX §0)
+**nothing is certified as a strategy**. The index stress put sale, the old "one certified bucket", was PARKED on
+2026-09-28 because 60–80% of its P&L is beta (the post-selloff rebound) and the rebound is absent 1990–2009. What is
+live is small and forward-tested:
+* **Calm-regime SPY weekly put** (Fridays, CALM & GEX > 0, 7-DTE 5Δ, hold to expiry; t 7.14 excess over beta,
+  replicates on QQQ) — LIVE at 5Δ × 1 contract, desk step 0b prints `LIVE ACTION`.
+* **12-1 momentum sleeve** (survivorship-free, t_NW 2.93) — `run_momentum_screener.py`, first formation 2026-09-30.
+* **GEX regime** is a certified *mechanism* (not a trade); the 1-day 2× fly and the long straddle are paper/token only.
+
+The house breakout is **uncertified selection, trade small**. The measured leak is the **entry**: the breakout buys
+2.6 ADR higher than a random later entry in the same name. Expect nulls; treat a positive as suspect until it
+survives real fills, a control that holds the confound fixed, and a correction.
 
 ## Recently changed — live, and not obvious from the code
+
+**2026-09-30 (9 tests, all NULL / UNDERPOWERED; rows in TEST_INDEX, docs in `data/studies/*_2026-09-30.md`):**
+* **Exits — keep the 20-EMA trail.** RS-loss exit NULL (differs on 1.1% of trades); swing-low trail NULL
+  (exposure-matched +0.44pp t 1.71, width-fragile). ⚠ Pattern now seen four times (STOP_ONLY, RS-only, swing-low,
+  vol-decay): any LOOSER exit wins ~+0.8pp raw, ~half of it beta, residual t < 2. Always run the beta × SPY
+  exposure-matched control on an exit test (`run_trail_cost_exposure.py` / `run_swing_low_trail.py`).
+* **Selection/universe:** CAN SLIM "C" EPS growth on INT NULL (wrong sign, thin); laggard-breakdown contagion NULL
+  (the "contagion" is a shared day-0 industry shock, no follow-through).
+* **Intraday:** right side of the V on the SPY/QQQ gap fade 2007–26 NULL, lean INVERTED (the turn is paid for in
+  price); FBO lower-high gate NULL, his literal sequence INVERTED → FBO stays retired.
+* **Calendar:** quarter-end turn and the quarter-end VIX "V" (JHEQX roll) both UNDERPOWERED; his up-quarter
+  mechanism runs the wrong way.
+* **Journal (conformance only):** loss-limit arm 0 NULL — no tilt after losses (k≥2 +$12, t 0.60); Cameron's
+  "80% double the loss" = 25% here; **size creeps with the loss streak (0.93× → 1.19× median, t 1.66) — lean only**.
+  Same-day round trips 336 of 585 episodes since 8/03, −$11.6k at 21% win (Gabe declined a desk tally 9/30; keep
+  flagging it in replies).
+* **KB:** Karsan quarter-end 2/5, Theta Profits "TOS" put seller 2/5 (no new test), Ariel on TraderLion 2.5/5 (his
+  ADR ≥ 3% floor is the one AH-encoding gap that could matter). 1-min SPY/QQQ RTH history 2007→ lives in
+  `data/cache/intraday_hist/` — use it for any index intraday test.
+
+**2026-09-25 → 09-29 (see TEST_INDEX §0 and the dated rows):** top-down audit (supersedes the 9/20 book table);
+audit step 3 list A complete (QQQ 2× fly re-cut SUPPORTED t 3.64; activity gate + HYB-A REVERSED in the 2010–19
+holdout; paid-to-wait IV gate NULL → `run_putspread_scan.py` has no tested edge; Sleeping Giants retired; event
+convexity NULL); stress put sale PARKED (beta); calm weekly put CERTIFIED-CANDIDATE → live 5Δ × 1; momentum
+sleeve built; Ariel-criterion ablation on INT ran 9/28 (a3 ≥ 2M sh/day ADDS, t −4.24 when dropped); vanna/charm
+flows NULL; earnings ramp at 30–45 DTE FAIL as a trade; IPO lockup NULL.
+
 
 **2026-09-24 (one long session; details in TEST_INDEX / OPERATIONS):**
 * **Ops:** 74 dead scripts → `scripts/archive/`; `options_toolkit` (Lambda + CodeBuild + pipeline) deleted; **CI owns
@@ -45,7 +77,7 @@ name. Expect nulls; treat a positive as suspect until it survives real fills and
 * **Universe switched to INT** (Trend Template ∩ Ariel's momentum scan), 98 → 50 names. TT alone does not
   select (20d excess t 1.00) and its edge over a same-name-later control is negative. ⚠ INT encodes Ariel's
   *published rule*, not his *practice* — every mega-cap he actually watches fails his own ≥70%-off-low
-  criterion. The queued Ariel criterion ablation should run before anyone calls INT "Ariel's universe".
+  criterion. (The Ariel criterion ablation ran 2026-09-28: a3 ≥ 2M sh/day ADDS, a1 leans ADDS — TEST_INDEX §4.)
 * **`prev_green` removed** from the watchlist Potent gate — untested, NULL, and it was discarding 46.5% of
   candidates. Expect a wider nightly list than the historical ones.
 * **Trend Template: two criteria retracted** as *logically redundant* (close>150SMA and close>200SMA are
@@ -65,13 +97,13 @@ name. Expect nulls; treat a positive as suspect until it survives real fills and
   sector-spread hedge sleeve; forward lockbox for the RV spread; `run_putspread_scan.py` fixes (mid pricing,
   hard-coded 10/16 expiry, up/B+ veto not enforced, no earnings check) + its universe (SETUP vs leaders).
 
-* **Reclaim vs pullback-low entry** (TEST_INDEX §10) — the cleanest open question on the book. Three
-  creators independently describe our entry finding with the *opposite sign*: they buy the reclaim of the
-  pre-pullback high, our tested arm buys the lower price. Nobody has tested their version.
-* **The 620 setup** — unparked; the "not enough minute data" objection was stale (the cache is 192 tickers
-  × 166 sessions). Prior is low: Stage A found every intraday arm ≈ a random later minute.
-* **UR/FBO stop floor** — a 0.60 ADR floor was adopted for ORB9 alerts only. UR and FBO alerts still emit
-  sub-0.5-ADR stops (0.35 and 0.48 on 2026-09-22, both losses). Re-run the floor study on those types.
+* **Tomorrow (2026-10-01) AM:** first momentum-sleeve formation — run `run_momentum_screener.py` (OPERATIONS 7b).
+* **Fridays from 2026-10-02:** calm weekly put LIVE (5Δ × 1) + paper log; run the desk at/after 15:30 ET.
+* **The 620 setup** — the last untested intraday entry with a spec (192 tickers × 166 sessions of 1-min cache).
+  Prior is low: Stage A found every intraday arm ≈ a random later minute, and FBO / the V test (9/30) agree.
+* **Strongest bounce since the correction low** (§10) — specced, ~60 episodes, UNDERPOWERED at best.
+* ~~Reclaim vs pullback-low~~ (NULL 9/23), ~~UR/FBO stop floor~~ (closed 9/23, floor stays ORB9-only),
+  ~~Ariel criterion ablation~~ (ran 9/28) — done; listed here earlier as open.
 * **Alerts → end-of-day only** — the owner wants to de-emphasise intraday alerts. Not yet implemented.
 * **`journal_campaigns` and spread rolls** — he rolled several spreads across expiries on 9/22; whether
   the campaign keying threaded them correctly is unverified.
