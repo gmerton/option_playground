@@ -27,6 +27,15 @@ docstring. Log `logs/momentum_leap_leverage.log`; months `logs/momentum_leap_lev
   month. The verdict doesn't depend on the cost model.
 - ⚠ **Sizing warning, more important than the vehicle:** 2.5× leverage on this sleeve had an **83% max drawdown**
   (unlevered: 40%). Momentum's crash months (2011-08/09, 2020-03, 2022) compound under leverage. Leverage should be
-  sized off the drawdown: about 1.25–1.5× keeps the historical worst near 50–60%.
+  sized off the drawdown. Computed on the same name-months, financing at a flat 4%/yr:
+
+  | leverage | mean/mo | CAGR | max DD |
+  |---|---|---|---|
+  | 1.0× | +1.72% | 19.1% | 39.5% |
+  | 1.25× | +2.07% | 22.0% | 47.9% |
+  | 1.5× | +2.41% | 24.5% | 55.7% |
+  | 2.0× | +3.11% | 28.0% | 69.3% |
+
+  (This subset is names with quotable LEAPs, so the level is a bit above the full sleeve's; the slope is the point.)
 
 **Consequence:** if the momentum sleeve is levered, use margin, modestly. No LEAP vehicle.
