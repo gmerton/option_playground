@@ -38,6 +38,24 @@ measured starting point: the mechanical house breakout compounds ~5%/yr at 10% n
 (`adaptive_trader_2026-09-27.md`), so the open question is where those traders' return comes from. The SPY dip rule
 below passed but is off-goal; the TLT month-end and third-Friday proposals are parked.
 
+## 🔖 Bookmark — 2026-10-01 (session paused for compaction)
+
+Work since the goal reset, in order, and what is waiting:
+1. **Luk picks vs our selection, interim look 1** (`luk_picks_vs_controls_2026-09-30.md`): UNDERPOWERED, +3.44pp vs our
+   precision tier, t 0.92; 0 of 61 long picks was a house breakout. Re-run after Gabe's worklist pass = look 2 (bar 3.2).
+2. **Luk entry cards** (`luk_entry_cards_2026-09-30.md`, `data/martin_luk/trades/entry_cards.jsonl`): stated stops
+   1–2.5%, risk 0.3%, positions 20–30%, 88% intraday triggers. Ten trade-log problems listed there for Gabe (CIFR 8/13,
+   INTC 7/15, AFRM 8/12 look like viewers' trades; AVGO 3/5 logged long reads short) — NOT applied.
+3. **Tight-stop survival test** — pre-registered in `run_luk_tight_stop_survival.py`, ⛔ QUEUED by Gabe until he does
+   more worklist disambiguation; re-count the stance weeks then; local (~40–60 min) vs ECS is his call.
+4. **Ariel trade log — DONE** (`ariel_trade_log_2026-10-01.md`): all 349 public recaps → 3,682 rows, 420 distinct dated
+   opens, every quote verbatim; his stated P&L by period is in that doc. Premarket streams judged redundant (pilot).
+   **Next decision for Gabe:** confirm decodes ("ARC"=ARKK ×58, GRR, NQ, QBT, DocuSign/Dock, Enphase), then build
+   journal pages and/or score his dated opens against prices like the Luk picks test.
+- Extraction agents run on **Opus** (Gabe 2026-10-01). Tooling: `ingest_ariel_channel.py`, `build_luk_extracts.py --kb`,
+  `check_extract_quotes.py --kb`, brief `data/ariel_hernandez/trades/EXTRACTION_BRIEF.md`.
+- Parked off-goal: TLT month-end, third-Friday short; SPY dip rule is a passed candidate, not adopted.
+
 ## Recently changed — live, and not obvious from the code
 
 **2026-09-30 evening — ⭐ index dip rule PASSES the discovery bar (candidate, NOT adopted; Gabe to decide):** buy the SPY
