@@ -4,7 +4,7 @@
 
 Two checks per video. **Ambiguous tickers**: spots where the auto-caption garbled a symbol — click the timestamp, check the chart, confirm the ticker. **Trades**: each trade with the day it was placed; ⬜ marks rows that need a glance — an unresolved ticker (`?`), an unresolved fill date, or a date *inferred* to a different day than the stream (e.g. he said "Thursday"). Rows with no ⬜ are same-session or he stated the date.
 
-**325** ticker flags · **1938** trades to date-check · across **337** videos. Conf: 🟡 likely · ❓ unsure.
+**325** ticker flags · **1937** trades to date-check · across **337** videos. Conf: 🟡 likely · ❓ unsure.
 
 ## Index — ticker flags by video
 
@@ -4416,12 +4416,12 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | ⬜ | [06:58](https://www.youtube.com/watch?v=gj2dNLXjwJo&t=418s) | ? | long · entry | — | _(unresolved)_ |
 | ⬜ | [06:58](https://www.youtube.com/watch?v=gj2dNLXjwJo&t=418s) | ? | long · entry | — | _(unresolved)_ |
 | ⬜ | [07:07](https://www.youtube.com/watch?v=gj2dNLXjwJo&t=427s) | ? | long · exit | — | _(unresolved)_ |
-| ⬜ | [07:18](https://www.youtube.com/watch?v=gj2dNLXjwJo&t=438s) | ? | short · short | — | _(unresolved)_ |
-| ⬜ | [07:28](https://www.youtube.com/watch?v=gj2dNLXjwJo&t=448s) | ? | short · add | the next day | _(unresolved)_ |
-| ⬜ | [07:39](https://www.youtube.com/watch?v=gj2dNLXjwJo&t=459s) | ? | short · cover | — | _(unresolved)_ |
-| ⬜ | [07:39](https://www.youtube.com/watch?v=gj2dNLXjwJo&t=459s) | ? | short · stopped_out | — | _(unresolved)_ |
-| ⬜ | [07:52](https://www.youtube.com/watch?v=gj2dNLXjwJo&t=472s) | ? | short · short | — | _(unresolved)_ |
-| ⬜ | [07:52](https://www.youtube.com/watch?v=gj2dNLXjwJo&t=472s) | ? | short · stopped_out | — | _(unresolved)_ |
+| ⬜ | [07:18](https://www.youtube.com/watch?v=gj2dNLXjwJo&t=438s) | IONQ | short · short | — | _(unresolved)_ |
+| ⬜ | [07:28](https://www.youtube.com/watch?v=gj2dNLXjwJo&t=448s) | IONQ | short · add | the next day | _(unresolved)_ |
+| ⬜ | [07:39](https://www.youtube.com/watch?v=gj2dNLXjwJo&t=459s) | IONQ | short · cover | — | _(unresolved)_ |
+| ⬜ | [07:39](https://www.youtube.com/watch?v=gj2dNLXjwJo&t=459s) | IONQ | short · stopped_out | — | _(unresolved)_ |
+| ⬜ | [07:52](https://www.youtube.com/watch?v=gj2dNLXjwJo&t=472s) | IONQ | short · short | — | _(unresolved)_ |
+| ⬜ | [07:52](https://www.youtube.com/watch?v=gj2dNLXjwJo&t=472s) | IONQ | short · stopped_out | — | _(unresolved)_ |
 | ⬜ | [08:28](https://www.youtube.com/watch?v=gj2dNLXjwJo&t=508s) | SNDK | short · short | the seventh | _(unresolved)_ |
 | ⬜ | [08:28](https://www.youtube.com/watch?v=gj2dNLXjwJo&t=508s) | SNDK | short · stopped_out | the seventh | _(unresolved)_ |
 | ⬜ | [08:40](https://www.youtube.com/watch?v=gj2dNLXjwJo&t=520s) | SNDK | short · short | — | _(unresolved)_ |
@@ -5014,7 +5014,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | · | [03:39](https://www.youtube.com/watch?v=vnvW_crgjmE&t=219s) | RGTI | short · short | this pre-market | 2025-11-06 |
 | ⬜ | [04:13](https://www.youtube.com/watch?v=vnvW_crgjmE&t=253s) | RGTI | short · stopped_out | yesterday | 2025-11-05 |
 | ⬜ | [04:38](https://www.youtube.com/watch?v=vnvW_crgjmE&t=278s) | IONQ | short · short | — | _(unresolved)_ |
-| ⬜ | [04:52](https://www.youtube.com/watch?v=vnvW_crgjmE&t=292s) | ? | short · short | now | 2025-11-06 |
+| · | [04:52](https://www.youtube.com/watch?v=vnvW_crgjmE&t=292s) | IONQ | short · short | now | 2025-11-06 |
 | · | [08:52](https://www.youtube.com/watch?v=vnvW_crgjmE&t=532s) | ARKK | long · hold | — | 2025-11-06 |
 | ⬜ | [09:51](https://www.youtube.com/watch?v=vnvW_crgjmE&t=591s) | BABA | long · entry | yesterday | 2025-11-05 |
 | ⬜ | [12:53](https://www.youtube.com/watch?v=vnvW_crgjmE&t=773s) | TEM | long · entry | a few weeks ago | _(unresolved)_ |
@@ -8432,7 +8432,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | · | [41:59](https://www.youtube.com/watch?v=GvrVNAB1a3g&t=2519s) | MU | short · hold | — | 2025-05-07 |
 | ⬜ | [19:05](https://www.youtube.com/watch?v=GvrVNAB1a3g&t=1145s) | TMDX | long · entry | — | _(unresolved)_ |
 | ⬜ | [19:19](https://www.youtube.com/watch?v=GvrVNAB1a3g&t=1159s) | TMDX | long · exit | — | _(unresolved)_ |
-| ⬜ | [05:11](https://www.youtube.com/watch?v=GvrVNAB1a3g&t=311s) | ? | short · short | — | _(unresolved)_ |
+| ⬜ | [05:11](https://www.youtube.com/watch?v=GvrVNAB1a3g&t=311s) | IONQ | short · short | — | _(unresolved)_ |
 | ⬜ | [05:23](https://www.youtube.com/watch?v=GvrVNAB1a3g&t=323s) | ? | short · cover | — | _(unresolved)_ |
 | ⬜ | [05:23](https://www.youtube.com/watch?v=GvrVNAB1a3g&t=323s) | ? | short · reentry | — | _(unresolved)_ |
 | ⬜ | [23:16](https://www.youtube.com/watch?v=GvrVNAB1a3g&t=1396s) | MSTR | short · short | — | _(unresolved)_ |
