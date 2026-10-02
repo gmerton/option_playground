@@ -4,7 +4,7 @@
 
 Two checks per video. **Ambiguous tickers**: spots where the auto-caption garbled a symbol — click the timestamp, check the chart, confirm the ticker. **Trades**: each trade with the day it was placed; ⬜ marks rows that need a glance — an unresolved ticker (`?`), an unresolved fill date, or a date *inferred* to a different day than the stream (e.g. he said "Thursday"). Rows with no ⬜ are same-session or he stated the date.
 
-**325** ticker flags · **1935** trades to date-check · across **337** videos. Conf: 🟡 likely · ❓ unsure.
+**325** ticker flags · **1933** trades to date-check · across **337** videos. Conf: 🟡 likely · ❓ unsure.
 
 ## Index — ticker flags by video
 
@@ -1577,7 +1577,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | · | [09:31](https://www.youtube.com/watch?v=k4sBILZbNkQ&t=571s) | SNDK | long · hold | — | 2026-06-04 |
 | · | [09:31](https://www.youtube.com/watch?v=k4sBILZbNkQ&t=571s) | MU | long · hold | — | 2026-06-04 |
 | · | [09:51](https://www.youtube.com/watch?v=k4sBILZbNkQ&t=591s) | ARM | long · hold | — | 2026-06-04 |
-| ⬜ | [09:51](https://www.youtube.com/watch?v=k4sBILZbNkQ&t=591s) | ? | long · hold | — | 2026-06-04 |
+| · | [09:51](https://www.youtube.com/watch?v=k4sBILZbNkQ&t=591s) | DOCN | long · hold | — | 2026-06-04 |
 | · | [09:51](https://www.youtube.com/watch?v=k4sBILZbNkQ&t=591s) | IGV | long · hold | — | 2026-06-04 |
 | ⬜ | [09:51](https://www.youtube.com/watch?v=k4sBILZbNkQ&t=591s) | ? | long · hold | — | 2026-06-04 |
 | · | [10:02](https://www.youtube.com/watch?v=k4sBILZbNkQ&t=602s) | TSLA | long · trim | today | 2026-06-04 |
@@ -2266,7 +2266,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | · | [07:51](https://www.youtube.com/watch?v=sovhD6eo-30&t=471s) | GLW | long · exit | today | 2026-04-27 |
 | · | [10:43](https://www.youtube.com/watch?v=sovhD6eo-30&t=643s) | AXTI | short · hold | — | 2026-04-27 |
 | · | [10:56](https://www.youtube.com/watch?v=sovhD6eo-30&t=656s) | DELL | long · hold | — | 2026-04-27 |
-| ⬜ | [10:56](https://www.youtube.com/watch?v=sovhD6eo-30&t=656s) | ? | long · hold | — | 2026-04-27 |
+| · | [10:56](https://www.youtube.com/watch?v=sovhD6eo-30&t=656s) | DOCN | long · hold | — | 2026-04-27 |
 | · | [10:56](https://www.youtube.com/watch?v=sovhD6eo-30&t=656s) | IGV | long · hold | — | 2026-04-27 |
 | · | [10:56](https://www.youtube.com/watch?v=sovhD6eo-30&t=656s) | MU | long · hold | — | 2026-04-27 |
 
