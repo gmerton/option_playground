@@ -31,7 +31,7 @@ OUT = gf.OUT
 SIG, TRD = OUT / "calm_put_signals.csv", OUT / "calm_put_trades.csv"
 SLIP, COMM = 0.25, 0.0065
 TARGETS = {"n10": (0.10, 0.025), "n05": (0.05, 0.015)}
-LIVE_LEG = "n05"          # Gabe 2026-09-28: live = the 5-delta put, ONE contract (worst tested week ~-86 bp = ~0.8% of NAV)
+LIVE_LEG = None           # was "n05" (live 5-delta x 1, Gabe 2026-09-28). REMOVED FROM THE PLAYBOOK 2026-10-02 (Gabe: "We need to hunt bigger fish") -- off-goal (a few bp/week), not an evidence retirement; the paper log keeps running for the record
 
 
 def daily_closes(n_days: int = 120) -> pd.Series:

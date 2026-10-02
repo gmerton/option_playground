@@ -7,7 +7,7 @@
 | step | command | act on | ignore |
 |---|---|---|---|
 | 0 GEX fly paper trade | `run_gex_fly_paper.py --close` (from 15:30 ET; idempotent) → `data/paper/gex_fly_signals.csv`, `gex_fly_trades.csv` | nothing tonight — it settles due flies and logs a paper fly for SPY and (since 2026-09-29) QQQ when that ticker's own gamma is positive; the forward sample is reviewed after ~6 months / ~100 flies ([gex_spy_ironfly_2026-09-21.md](gex_spy_ironfly_2026-09-21.md)). A skipped evening is a hole in that sample | the day's single fly result |
-| 0b Calm weekly put | `run_calm_put_paper.py --entry` (inside the desk; Fridays from 15:30 ET) → `data/paper/calm_put_*.csv` | **Fridays: the `LIVE ACTION` line** — sell the 7-DTE 5Δ SPY put ×1 when CALM & GEX > 0 (see the Friday section below). Other evenings it only settles due trades | the 10Δ paper leg (evidence only) |
+| 0b Calm weekly put (**PAPER ONLY — removed from the playbook 2026-10-02**) | `run_calm_put_paper.py --entry` (inside the desk; Fridays from 15:30 ET) → `data/paper/calm_put_*.csv`; no LIVE ACTION line any more | **Fridays: the `LIVE ACTION` line** — sell the 7-DTE 5Δ SPY put ×1 when CALM & GEX > 0 (see the Friday section below). Other evenings it only settles due trades | the 10Δ paper leg (evidence only) |
 | 1 Regime | `run_trailing_retro.py` | the state line (SPY trend × breadth) — it selects which row of each study's conditional table applies today | the trailing style spread and "what worked last 30 days" as forecasts (no persistence, `trailing_regime_validation.md`) |
 | **1b Open book** | `run_position_monitor.py --live` → `data/watchlist/positions_<date>.txt` | **anything tagged `<<< EXPIRES` (≤2 DTE)** — decide close/roll/let-expire tonight, not at the bell. The 7-DTE straddles and the bull put block are the evidenced pair: check both are still on and roughly balanced. `EXPIRED, reconcile` = a leg past expiry still showing open | the net P&L line as a performance read — it is a mark, not a decision, and the stock legs dominate it. ⚠ one (underlying, expiry) cell can merge two unrelated positions into one odd-looking row |
 | 2 Adhikary scan | `run_adhikary_scan.py` → `alerts_latest.csv` | **SETUP rows with `precision=YES`**: set a buy-stop at the pivot. A-block rows with `precision=YES` that broke today on a close in the upper half | B catalysts (no validated edge); the C block (daily bar is a continuation signal, never short it) |
@@ -62,7 +62,9 @@
 4. Score Ariel's nightly calls (`data/ariel_hernandez/analysis/`) — hit rate accrues per video.
 
 
-### Friday: the calm weekly SPY put — the live SPY trade (updated 2026-09-29)
+### Friday: the calm weekly SPY put — ⛔ REMOVED FROM THE PLAYBOOK 2026-10-02 (Gabe: "We need to hunt bigger fish") -- off-goal (a few bp/week), not an evidence retirement; the paper log keeps running for the record
+
+*History:*
 `daily_desk.sh` step 0b does this for you: on a Friday run from 15:30 ET it prints a **`LIVE ACTION`** line when the week
 qualifies. Rule: regime **CALM** (NOT [SPY < 50-day SMA and VIX ≥ 20]) **and SPY dealer GEX > 0** → sell the **7-DTE 5Δ
 SPY put, ONE contract**, at the close; hold to expiry, no stop, no adjustment. Otherwise no SPY trade that week. Evidence:

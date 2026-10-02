@@ -21,7 +21,7 @@ Research here is overwhelmingly **destructive** — it kills things. Since the 2
 2026-09-28 because 60–80% of its P&L is beta (the post-selloff rebound) and the rebound is absent 1990–2009. What is
 live is small and forward-tested:
 * **Calm-regime SPY weekly put** (Fridays, CALM & GEX > 0, 7-DTE 5Δ, hold to expiry; t 7.14 excess over beta,
-  replicates on QQQ) — LIVE at 5Δ × 1 contract, desk step 0b prints `LIVE ACTION`.
+  replicates on QQQ) — ⛔ REMOVED FROM THE PLAYBOOK 2026-10-02 (Gabe: "We need to hunt bigger fish") -- off-goal (a few bp/week), not an evidence retirement; the paper log keeps running for the record.
 * ⭐ **12-1 momentum sleeve — CERTIFIED (replication track, 2026-09-30), the first certified strategy** (survivorship-free,
   t_NW 2.93, 12/16 yrs) — `run_momentum_screener.py`, first formation 2026-09-30.
 * **GEX regime** is a certified *mechanism* (not a trade); the 1-day 2× fly and the long straddle are paper/token only.
@@ -131,7 +131,7 @@ flows NULL; earnings ramp at 30–45 DTE FAIL as a trade; IPO lockup NULL.
   hard-coded 10/16 expiry, up/B+ veto not enforced, no earnings check) + its universe (SETUP vs leaders).
 
 * **Tomorrow (2026-10-01) AM:** first momentum-sleeve formation — run `run_momentum_screener.py` (OPERATIONS 7b).
-* **Fridays from 2026-10-02:** calm weekly put LIVE (5Δ × 1) + paper log; run the desk at/after 15:30 ET.
+* ~~Fridays: calm weekly put LIVE~~ — removed from the playbook 2026-10-02 (off-goal); paper log only.
 * **The 620 setup** — the last untested intraday entry with a spec (192 tickers × 166 sessions of 1-min cache).
   Prior is low: Stage A found every intraday arm ≈ a random later minute, and FBO / the V test (9/30) agree.
 * **Strongest bounce since the correction low** (§10) — specced, ~60 episodes, UNDERPOWERED at best.
