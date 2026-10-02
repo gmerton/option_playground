@@ -1,0 +1,30 @@
+# Put-spread basket smoothness vs the same exposure (pre-registered 2026-10-01); see docstring
+6,166 spreads, 20 names, 345 Fridays, 85 months 2019-02 -> 2026-02; returns are on committed max-loss capital
+
+arm   mean/mo   vol/mo  Sharpe    maxDD  worst mo    CVaR5  % mo +
+A      +3.86%   22.61%   +0.59   -96.4%    -83.1%   -59.5%     67%
+T5     +6.70%   25.96%   +0.89   -95.6%    -84.1%   -63.3%     73%
+B1     +7.17%   20.67%   +1.20   -84.1%    -72.1%   -44.8%     68%
+B2     +5.33%   17.17%   +1.07   -90.6%    -90.3%   -39.9%     69%
+B2 rescaled to A's vol (x1.32): mean +7.02%/mo, maxDD -1400.1%, worst -118.9%, CVaR5 -52.5%
+
+## PRIMARY Sharpe(A) - Sharpe(B2): -0.48, 95% block-bootstrap [-1.13, +0.09] -> FAIL
+  S1 A vs B1 (same names at delta)   -0.61, 98.3% [-0.97, -0.19]
+  S2 T5 vs B2                        -0.18, 98.3% [-1.38, +0.91]
+
+## crash months
+  2020-02: A -3.2%  T5 +26.0%  B1 +8.8%  B2 -2.9%
+  2020-03: A -67.2%  T5 -48.6%  B1 -72.1%  B2 -90.3%
+  2022-05: A -33.2%  T5 -25.2%  B1 -23.8%  B2 -15.6%
+  2022-06: A -4.2%  T5 -2.4%  B1 -21.4%  B2 -13.0%
+  2022-09: A -83.1%  T5 -77.5%  B1 -52.7%  B2 -39.4%
+
+## by year (sum of monthly returns)
+  2019: A +120.1%  T5 +163.1%  B1 +133.3%  B2 +105.2%
+  2020: A +66.1%  T5 +178.2%  B1 +91.8%  B2 +38.1%
+  2021: A +62.1%  T5 +42.6%  B1 +119.4%  B2 +99.3%
+  2022: A -194.0%  T5 -171.9%  B1 -134.7%  B2 -68.7%
+  2023: A +132.7%  T5 +229.1%  B1 +185.0%  B2 +94.0%
+  2024: A +129.5%  T5 +92.9%  B1 +159.7%  B2 +133.9%
+  2025: A +18.4%  T5 +45.5%  B1 +54.6%  B2 +48.0%
+  2026: A -6.6%  T5 -10.1%  B1 +0.8%  B2 +3.0%

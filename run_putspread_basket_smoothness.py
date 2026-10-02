@@ -35,6 +35,12 @@ REPORTED  mean monthly return, vol, max drawdown, worst month, monthly CVaR 5%, 
 VERDICT  PASS -> a smoothness case exists for the parking-lot sleeve; FAIL -> the same exposure in SPY is at least as
          smooth, and the calm weekly put + T-bills is the better parking lot.
 Local, seconds.
+
+⚙ AMENDMENT 2026-10-01 (implementation bug, disclosed; the design is unchanged): the first run took SPY's prices
+from SPY's own spread rows. SPY has no qualifying spread on most Fridays, so the join silently dropped 225 of 395
+Fridays (49 months kept, March 2020 lost). That run's output is preserved as luk-style "run 1" in the log history and
+is NOT the result. Fix: SPY entry/expiry closes come from data/cache/liquid_panel_2019.parquet (adjusted; B2 only
+uses the ratio SPY_T / SPY_S, so the adjustment does not matter), taking the last close on or before each date.
 """
 from __future__ import annotations
 
@@ -84,8 +90,13 @@ def boot_diff(a: pd.Series, b: pd.Series, level: float) -> tuple[float, float, f
 def main() -> None:
     t = pd.read_csv(SRC, parse_dates=["date", "expiry"])
     t = t[t.wing == 0.20].copy()
-    spy = t[t.sym == "SPY"].set_index("date")[["S", "ST"]].rename(columns={"S": "spyS", "ST": "spyT"})
-    t = t.join(spy, on="date").dropna(subset=["spyS", "spyT"])
+    pan = pd.read_parquet("data/cache/liquid_panel_2019.parquet", columns=["date", "ticker", "close"])
+    q = pan[pan.ticker == "SPY"].set_index("date").close.sort_index()
+    q.index = pd.to_datetime(q.index)
+    at = lambda d: q.loc[:d].iloc[-1] if len(q.loc[:d]) else np.nan
+    t["spyS"] = t.date.map(at)
+    t["spyT"] = t.expiry.map(at)
+    t = t.dropna(subset=["spyS", "spyT"])
     risk = t.width - t.credit
     t["A"] = t.roc
     t["B1"] = (DELTA * (t.ST - t.S) - 2 * STK_COST * DELTA * t.S) / risk
