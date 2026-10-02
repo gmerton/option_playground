@@ -48,10 +48,7 @@ Work since the goal reset, in order, and what is waiting:
    1–2.5%, risk 0.3%, positions 20–30%, 88% intraday triggers. Ten trade-log problems listed there for Gabe (CIFR 8/13,
    INTC 7/15, AFRM 8/12 look like viewers' trades; AVGO 3/5 logged long reads short) — NOT applied.
 3. **Tight-stop survival test — RAN 2026-10-01 on ECS: NULL** (`luk_tight_stop_survival_2026-10-01.md`): 13,410 entries, TIGHT − BETA +0.003pp t +0.02 (MDE 0.38pp); 59% stopped same day; re-entries worse. With picks look 2, the codable Luk method (selection + entry/stop) carries no edge.
-4. **Ariel trade log — DONE** (`ariel_trade_log_2026-10-01.md`): all 349 public recaps → 3,682 rows, 420 distinct dated
-   opens, every quote verbatim; his stated P&L by period is in that doc. Premarket streams judged redundant (pilot).
-   **Next decision for Gabe:** confirm decodes ("ARC"=ARKK ×58, GRR, NQ, QBT, DocuSign/Dock, Enphase), then build
-   journal pages and/or score his dated opens against prices like the Luk picks test.
+4. **Ariel BROKER log + selection test (2026-10-01)**: his 6 monthly "all trades" tables → `broker_trades.csv` (202 trades, reconcile to the cent; direction 181). `ariel_broker_picks_2026-10-01.md`: all-picks UNDERPOWERED; ⭐ **shorts +7.66pp vs same-date names, t 3.39 (CANDIDATE)**; longs −2.23pp t −2.15. Next decision: mechanical test of "very extended name, first failure" shorts (does the edge survive without his discretion?).
 - Extraction agents run on **Opus** (Gabe 2026-10-01). Tooling: `ingest_ariel_channel.py`, `build_luk_extracts.py --kb`,
   `check_extract_quotes.py --kb`, brief `data/ariel_hernandez/trades/EXTRACTION_BRIEF.md`.
 - Parked off-goal: TLT month-end, third-Friday short; SPY dip rule is a passed candidate, not adopted.

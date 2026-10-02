@@ -1,0 +1,20 @@
+# Ariel broker-logged picks: selection vs management (pre-registered 2026-10-01); see docstring
+broker rows 202; with date+direction 181; picks after merging re-tries 146 (91 long, 55 short), 83 dates
+prices: panel to 2026-09-30; 16 from yfinance (ARKK, BABA, CSIQ, GDX, GFI, IGV, MAGS, NUGT, OPEN, PDD, SILJ, SLV, SQQQ, TQQQ, TSM, UAMY)
+unpriced (dropped): 0 []
+
+## raw signed 10-session return of his picks: mean +1.24%, median -0.17%; C1 mean -0.26%
+## PRIMARY: picks - C1 at 10 sessions (bar t >= 3, halves +, >= 4/6 months +)
+  ALL vs C1 (10)                 n 146 /  83 dates | mean  +1.50pp | date-cluster t +0.98 | MDE(80%) 3.4pp | halves +3.64 / -0.64 | months + 4/6 | win 49%
+## SECONDARY (Sidak |t| >= 2.57)
+  S1 longs vs C1 (10)            n  91 /  62 dates | mean  -2.23pp | date-cluster t -2.15 | MDE(80%) 3.1pp | halves -1.63 / -2.81 | months + 1/6 | win 33%
+  S2 shorts vs C1 (10)           n  55 /  44 dates | mean  +7.66pp | date-cluster t +3.39 | MDE(80%) 6.0pp | halves +11.77 / +3.70 | months + 5/6 | win 75%
+  S3 all vs C1 (20)              n 146 /  83 dates | mean  +1.26pp | date-cluster t +0.52 | MDE(80%) 5.1pp | halves +2.20 / +0.32 | months + 3/6 | win 47%
+  S4 all vs C3 same name later (10) n 146 /  83 dates | mean  +1.38pp | date-cluster t +0.22 | MDE(80%) 4.3pp | halves +4.35 / -1.60 | months + 5/6 | win 48%
+## reported: 5 sessions
+  all vs C1 (5)                  n 146 /  83 dates | mean  +0.36pp | date-cluster t +0.27 | MDE(80%) 2.5pp | halves +1.92 / -1.20 | months + 2/6 | win 52%
+
+## DESCRIPTIVE (management)
+  M1 his 10 largest $ winners: 5/10 are top-decile on the 10-session C1 excess; their mean excess +21.4pp vs all picks +1.5pp; Spearman($ P&L, excess) +0.10
+  M2 implied traded notional: winners median $1,449,224 (n 34) vs losers $1,054,074 (n 103); Mann-Whitney p 0.013
+  M3 his realised % (cumulative, indicative) mean -0.28% vs a fixed 10-session hold from the close on the same picks +0.81% (n 137); winners realised +4.90% vs fixed-hold +4.87%; losers -1.99% vs -0.54%
