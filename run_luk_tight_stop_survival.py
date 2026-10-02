@@ -169,7 +169,7 @@ def load_minutes(s3, tk: str) -> pd.DataFrame | None:
     m = m[~m.index.duplicated()]
     m["d"] = m.index.normalize()
     m["mn"] = m.index.hour * 60 + m.index.minute
-    return m[["d", "mn", "open", "high", "low", "close"]]
+    return m[["d", "mn", "open", "high", "low", "close", "volume"]]
 
 
 def first_trigger(o, h, l, mn, Lb, fh, b, lo_z, hi_z, start):
@@ -213,7 +213,9 @@ def run_trade(entry, stop, i0, day_bars, later, st_later, d0):
     return None
 
 
-def process(tk: str, st: pd.DataFrame, cal: list) -> list[dict]:
+def process(tk: str, st: pd.DataFrame, cal: list, features=None, extra=None) -> list[dict]:
+    """features(extra, t, f, minutes_before_entry, L, adr_d) -> dict is an optional, additive hook (used by
+    run_luk_avwap_confluence.py); it never changes the trade itself."""
     import boto3
     s3 = boto3.client("s3")
     m = load_minutes(s3, tk)
@@ -269,6 +271,8 @@ def process(tk: str, st: pd.DataFrame, cal: list) -> list[dict]:
             row = dict(ticker=tk, date=t, attempt=attempt, entry_time=t + pd.Timedelta(minutes=int(mn[i0])), entry=entry,
                        stop=stop, d=d, adr=r.adr, beta=r.beta, ret_tight=tight[0], exit_tight=tight[1], held=tight[2],
                        stopped=tight[3], stopped_same_day=tight[4])
+            if attempt == 0 and features is not None:
+                row.update(features(extra, t, f, g.iloc[:i0], stop + 0.01, adr_d))
             if attempt == 0:
                 wide = run_trade(entry, entry - adr_d, i0, (o, l, mn), later, st_later, t)
                 row.update(ret_wide=wide[0], exit_wide=wide[1], stop_wide_pct=adr_d / entry)
