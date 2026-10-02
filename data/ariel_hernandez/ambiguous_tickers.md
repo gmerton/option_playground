@@ -4,7 +4,7 @@
 
 Two checks per video. **Ambiguous tickers**: spots where the auto-caption garbled a symbol — click the timestamp, check the chart, confirm the ticker. **Trades**: each trade with the day it was placed; ⬜ marks rows that need a glance — an unresolved ticker (`?`), an unresolved fill date, or a date *inferred* to a different day than the stream (e.g. he said "Thursday"). Rows with no ⬜ are same-session or he stated the date.
 
-**325** ticker flags · **1941** trades to date-check · across **337** videos. Conf: 🟡 likely · ❓ unsure.
+**325** ticker flags · **1938** trades to date-check · across **337** videos. Conf: 🟡 likely · ❓ unsure.
 
 ## Index — ticker flags by video
 
@@ -7218,9 +7218,9 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | ⬜ | [14:34](https://www.youtube.com/watch?v=j3n_2BoV5Hk&t=874s) | SOFI | long · entry | 611 | 2025-06-11 |
 | ⬜ | [14:34](https://www.youtube.com/watch?v=j3n_2BoV5Hk&t=874s) | SOFI | long · stopped_out | two days later | 2025-06-13 |
 | ⬜ | [15:18](https://www.youtube.com/watch?v=j3n_2BoV5Hk&t=918s) | MU | short · short | — | _(unresolved)_ |
-| ⬜ | [15:43](https://www.youtube.com/watch?v=j3n_2BoV5Hk&t=943s) | ? | short · short | the very next day | _(unresolved)_ |
-| ⬜ | [15:53](https://www.youtube.com/watch?v=j3n_2BoV5Hk&t=953s) | ? | short · cover | — | _(unresolved)_ |
-| ⬜ | [15:53](https://www.youtube.com/watch?v=j3n_2BoV5Hk&t=953s) | ? | short · cover | 65 | _(unresolved)_ |
+| ⬜ | [15:43](https://www.youtube.com/watch?v=j3n_2BoV5Hk&t=943s) | GRRR | short · short | the very next day | _(unresolved)_ |
+| ⬜ | [15:53](https://www.youtube.com/watch?v=j3n_2BoV5Hk&t=953s) | GRRR | short · cover | — | _(unresolved)_ |
+| ⬜ | [15:53](https://www.youtube.com/watch?v=j3n_2BoV5Hk&t=953s) | GRRR | short · cover | 65 | _(unresolved)_ |
 | ⬜ | [18:50](https://www.youtube.com/watch?v=j3n_2BoV5Hk&t=1130s) | COIN | long · entry | — | _(unresolved)_ |
 | ⬜ | [18:50](https://www.youtube.com/watch?v=j3n_2BoV5Hk&t=1130s) | COIN | long · stopped_out | — | _(unresolved)_ |
 | ⬜ | [26:39](https://www.youtube.com/watch?v=j3n_2BoV5Hk&t=1599s) | TOST | long · exit | — | _(unresolved)_ |
@@ -7655,7 +7655,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | ⬜ | [08:15](https://www.youtube.com/watch?v=DHdfRrYE_74&t=495s) | SMR | short · stopped_out | yesterday | 2025-06-03 |
 | ⬜ | [10:13](https://www.youtube.com/watch?v=DHdfRrYE_74&t=613s) | RGTI | short · short | 528 | 2025-05-28 |
 | ⬜ | [12:10](https://www.youtube.com/watch?v=DHdfRrYE_74&t=730s) | RGTI | short · cover | the 30th | 2025-05-30 |
-| ⬜ | [09:06](https://www.youtube.com/watch?v=DHdfRrYE_74&t=546s) | ? | short · hold | — | 2025-06-04 |
+| · | [09:06](https://www.youtube.com/watch?v=DHdfRrYE_74&t=546s) | GRRR | short · hold | — | 2025-06-04 |
 | ⬜ | [15:16](https://www.youtube.com/watch?v=DHdfRrYE_74&t=916s) | HIMS | long · entry | a few days ago | _(unresolved)_ |
 | ⬜ | [15:16](https://www.youtube.com/watch?v=DHdfRrYE_74&t=916s) | HIMS | long · exit | — | _(unresolved)_ |
 | ⬜ | [15:40](https://www.youtube.com/watch?v=DHdfRrYE_74&t=940s) | DASH | long · entry | — | _(unresolved)_ |
@@ -7838,7 +7838,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | ⬜ | [07:18](https://www.youtube.com/watch?v=jRnWgfwAsVQ&t=438s) | RGTI | short · short | yesterday, really from two days ago | 2025-05-28 |
 | ⬜ | [15:10](https://www.youtube.com/watch?v=jRnWgfwAsVQ&t=910s) | TSLA | long · trim | two days ago | 2025-05-28 |
 | · | [21:03](https://www.youtube.com/watch?v=jRnWgfwAsVQ&t=1263s) | CLS | long · hold | — | 2025-05-30 |
-| ⬜ | [24:02](https://www.youtube.com/watch?v=jRnWgfwAsVQ&t=1442s) | ? | short · hold | since april third, april 2nd | _(unresolved)_ |
+| ⬜ | [24:02](https://www.youtube.com/watch?v=jRnWgfwAsVQ&t=1442s) | GRRR | short · hold | since april third, april 2nd | _(unresolved)_ |
 | ⬜ | [41:23](https://www.youtube.com/watch?v=jRnWgfwAsVQ&t=2483s) | SNOW | long · exit | — | _(unresolved)_ |
 | ⬜ | [46:15](https://www.youtube.com/watch?v=jRnWgfwAsVQ&t=2775s) | ESTC | short · short | february | _(unresolved)_ |
 | ⬜ | [45:37](https://www.youtube.com/watch?v=jRnWgfwAsVQ&t=2737s) | ESTC | short · cover | — | _(unresolved)_ |
@@ -7928,7 +7928,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | ⬜ | [09:09](https://www.youtube.com/watch?v=qrRXSN49mn8&t=549s) | TSLA | long · trim | yesterday | 2025-05-28 |
 | ⬜ | [09:54](https://www.youtube.com/watch?v=qrRXSN49mn8&t=594s) | SMR | short · short | yesterday | 2025-05-28 |
 | ⬜ | [09:54](https://www.youtube.com/watch?v=qrRXSN49mn8&t=594s) | RGTI | short · short | yesterday | 2025-05-28 |
-| ⬜ | [09:54](https://www.youtube.com/watch?v=qrRXSN49mn8&t=594s) | ? | short · hold | — | 2025-05-29 |
+| · | [09:54](https://www.youtube.com/watch?v=qrRXSN49mn8&t=594s) | GRRR | short · hold | — | 2025-05-29 |
 | · | [09:40](https://www.youtube.com/watch?v=qrRXSN49mn8&t=580s) | CLS | long · hold | — | 2025-05-29 |
 | · | [09:40](https://www.youtube.com/watch?v=qrRXSN49mn8&t=580s) | KGC | long · hold | — | 2025-05-29 |
 | · | [09:40](https://www.youtube.com/watch?v=qrRXSN49mn8&t=580s) | NFLX | long · hold | — | 2025-05-29 |
@@ -8086,7 +8086,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 
 | ✔ | Time | Ticker | Dir · Action | He said | Fill date |
 |---|------|--------|--------------|---------|-----------|
-| ⬜ | [16:10](https://www.youtube.com/watch?v=SRAs-E3QhpA&t=970s) | GRR | short · hold | beginning of april | _(unresolved)_ |
+| ⬜ | [16:10](https://www.youtube.com/watch?v=SRAs-E3QhpA&t=970s) | GRRR | short · hold | beginning of april | _(unresolved)_ |
 | ⬜ | [02:37](https://www.youtube.com/watch?v=SRAs-E3QhpA&t=157s) | RGTI | short · short | yesterday | 2025-05-21 |
 | · | [02:50](https://www.youtube.com/watch?v=SRAs-E3QhpA&t=170s) | TSLA | long · hold | — | 2025-05-22 |
 | · | [11:47](https://www.youtube.com/watch?v=SRAs-E3QhpA&t=707s) | XP | long · hold | — | 2025-05-22 |
@@ -8179,7 +8179,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | · | [02:24](https://www.youtube.com/watch?v=66yySXSIIRo&t=144s) | TSLA | long · hold | — | 2025-05-19 |
 | · | [02:24](https://www.youtube.com/watch?v=66yySXSIIRo&t=144s) | UBER | long · hold | — | 2025-05-19 |
 | · | [02:24](https://www.youtube.com/watch?v=66yySXSIIRo&t=144s) | RGTI | short · hold | — | 2025-05-19 |
-| ⬜ | [02:24](https://www.youtube.com/watch?v=66yySXSIIRo&t=144s) | ? | short · hold | — | 2025-05-19 |
+| · | [02:24](https://www.youtube.com/watch?v=66yySXSIIRo&t=144s) | GRRR | short · hold | — | 2025-05-19 |
 
 
 ## 2025-05-19 — Scanning using Finviz
@@ -8274,7 +8274,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | ⬜ | [34:21](https://www.youtube.com/watch?v=JEAQnTV3TkU&t=2061s) | SOXX | long · exit | — | _(unresolved)_ |
 | ⬜ | [34:56](https://www.youtube.com/watch?v=JEAQnTV3TkU&t=2096s) | AMZN | long · entry | — | _(unresolved)_ |
 | ⬜ | [35:24](https://www.youtube.com/watch?v=JEAQnTV3TkU&t=2124s) | AMZN | long · exit | — | _(unresolved)_ |
-| ⬜ | [26:48](https://www.youtube.com/watch?v=JEAQnTV3TkU&t=1608s) | ? | short · short | — | _(unresolved)_ |
+| ⬜ | [26:48](https://www.youtube.com/watch?v=JEAQnTV3TkU&t=1608s) | GRRR | short · short | — | _(unresolved)_ |
 | ⬜ | [29:39](https://www.youtube.com/watch?v=JEAQnTV3TkU&t=1779s) | AVGO | short · short | — | _(unresolved)_ |
 | ⬜ | [29:50](https://www.youtube.com/watch?v=JEAQnTV3TkU&t=1790s) | MU | short · short | — | _(unresolved)_ |
 
@@ -8363,7 +8363,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | ⬜ | [40:37](https://www.youtube.com/watch?v=sIgOJxnCcm0&t=2437s) | NOW | short · stopped_out | — | _(unresolved)_ |
 | ⬜ | [40:37](https://www.youtube.com/watch?v=sIgOJxnCcm0&t=2437s) | AVGO | short · stopped_out | — | _(unresolved)_ |
 | ⬜ | [40:50](https://www.youtube.com/watch?v=sIgOJxnCcm0&t=2450s) | RGTI | short · stopped_out | — | _(unresolved)_ |
-| ⬜ | [40:21](https://www.youtube.com/watch?v=sIgOJxnCcm0&t=2421s) | ? | short · short | — | _(unresolved)_ |
+| ⬜ | [40:21](https://www.youtube.com/watch?v=sIgOJxnCcm0&t=2421s) | GRRR | short · short | — | _(unresolved)_ |
 
 
 ## 2025-05-09 — 5/9/2025 Premarket Prep
@@ -8473,7 +8473,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | ⬜ | [04:04](https://www.youtube.com/watch?v=lPG2Nyg0Tjg&t=244s) | UBER | long · trim | — | _(unresolved)_ |
 | ⬜ | [04:16](https://www.youtube.com/watch?v=lPG2Nyg0Tjg&t=256s) | NVDA | short · short | recent | _(unresolved)_ |
 | ⬜ | [04:16](https://www.youtube.com/watch?v=lPG2Nyg0Tjg&t=256s) | ESTC | short · hold | several months ago | _(unresolved)_ |
-| ⬜ | [04:16](https://www.youtube.com/watch?v=lPG2Nyg0Tjg&t=256s) | GRR | short · hold | several months ago | _(unresolved)_ |
+| ⬜ | [04:16](https://www.youtube.com/watch?v=lPG2Nyg0Tjg&t=256s) | GRRR | short · hold | several months ago | _(unresolved)_ |
 | ⬜ | [04:16](https://www.youtube.com/watch?v=lPG2Nyg0Tjg&t=256s) | MU | short · hold | several months ago | _(unresolved)_ |
 | ⬜ | [04:16](https://www.youtube.com/watch?v=lPG2Nyg0Tjg&t=256s) | SMCI | short · hold | several months ago | _(unresolved)_ |
 | ⬜ | [15:44](https://www.youtube.com/watch?v=lPG2Nyg0Tjg&t=944s) | TSLA | long · entry | friday | 2025-05-02 |
