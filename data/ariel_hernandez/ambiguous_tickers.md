@@ -4,7 +4,7 @@
 
 Two checks per video. **Ambiguous tickers**: spots where the auto-caption garbled a symbol — click the timestamp, check the chart, confirm the ticker. **Trades**: each trade with the day it was placed; ⬜ marks rows that need a glance — an unresolved ticker (`?`), an unresolved fill date, or a date *inferred* to a different day than the stream (e.g. he said "Thursday"). Rows with no ⬜ are same-session or he stated the date.
 
-**325** ticker flags · **1933** trades to date-check · across **337** videos. Conf: 🟡 likely · ❓ unsure.
+**325** ticker flags · **1928** trades to date-check · across **337** videos. Conf: 🟡 likely · ❓ unsure.
 
 ## Index — ticker flags by video
 
@@ -1579,7 +1579,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | · | [09:51](https://www.youtube.com/watch?v=k4sBILZbNkQ&t=591s) | ARM | long · hold | — | 2026-06-04 |
 | · | [09:51](https://www.youtube.com/watch?v=k4sBILZbNkQ&t=591s) | DOCN | long · hold | — | 2026-06-04 |
 | · | [09:51](https://www.youtube.com/watch?v=k4sBILZbNkQ&t=591s) | IGV | long · hold | — | 2026-06-04 |
-| ⬜ | [09:51](https://www.youtube.com/watch?v=k4sBILZbNkQ&t=591s) | ? | long · hold | — | 2026-06-04 |
+| · | [09:51](https://www.youtube.com/watch?v=k4sBILZbNkQ&t=591s) | NBIS | long · hold | — | 2026-06-04 |
 | · | [10:02](https://www.youtube.com/watch?v=k4sBILZbNkQ&t=602s) | TSLA | long · trim | today | 2026-06-04 |
 
 
@@ -1818,7 +1818,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 |---|------|--------|--------------|---------|-----------|
 | · | [01:15](https://www.youtube.com/watch?v=Ckil0rOuMmU&t=75s) | SNDK | long · entry | today | 2026-05-19 |
 | · | [01:25](https://www.youtube.com/watch?v=Ckil0rOuMmU&t=85s) | MU | long · hold | — | 2026-05-19 |
-| ⬜ | [07:14](https://www.youtube.com/watch?v=Ckil0rOuMmU&t=434s) | ? | long · hold | — | 2026-05-19 |
+| · | [07:14](https://www.youtube.com/watch?v=Ckil0rOuMmU&t=434s) | NBIS | long · hold | — | 2026-05-19 |
 | ⬜ | [09:18](https://www.youtube.com/watch?v=Ckil0rOuMmU&t=558s) | ARM | long · add | the other day on wednesday | 2026-05-13 |
 | ⬜ | [09:27](https://www.youtube.com/watch?v=Ckil0rOuMmU&t=567s) | ARM | long · stopped_out | friday | 2026-05-15 |
 | · | [07:14](https://www.youtube.com/watch?v=Ckil0rOuMmU&t=434s) | DELL | long · hold | — | 2026-05-19 |
@@ -1945,7 +1945,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | · | [05:37](https://www.youtube.com/watch?v=Caax_GL0sVE&t=337s) | PLTR | short · short | today | 2026-05-13 |
 | ⬜ | [06:05](https://www.youtube.com/watch?v=Caax_GL0sVE&t=365s) | QQQ | short · entry | 2 days ago | _(unresolved)_ |
 | ⬜ | [06:25](https://www.youtube.com/watch?v=Caax_GL0sVE&t=385s) | QQQ | short · stopped_out | — | _(unresolved)_ |
-| ⬜ | [07:23](https://www.youtube.com/watch?v=Caax_GL0sVE&t=443s) | ? | long · hold | — | 2026-05-13 |
+| · | [07:23](https://www.youtube.com/watch?v=Caax_GL0sVE&t=443s) | NBIS | long · hold | — | 2026-05-13 |
 
 
 ## 2026-05-11 — Bears ready to fight back?
@@ -2296,8 +2296,8 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | · | [15:07](https://www.youtube.com/watch?v=ARyrloTg1Sg&t=907s) | DOCN | long · hold | — | 2026-04-23 |
 | · | [08:57](https://www.youtube.com/watch?v=ARyrloTg1Sg&t=537s) | CAR | short · cover | towards the end of the day | 2026-04-23 |
 | · | [09:21](https://www.youtube.com/watch?v=ARyrloTg1Sg&t=561s) | RKLB | long · trim | today | 2026-04-23 |
-| ⬜ | [09:39](https://www.youtube.com/watch?v=ARyrloTg1Sg&t=579s) | ? | long · entry | today | 2026-04-23 |
-| ⬜ | [09:39](https://www.youtube.com/watch?v=ARyrloTg1Sg&t=579s) | ? | long · exit | today | 2026-04-23 |
+| · | [09:39](https://www.youtube.com/watch?v=ARyrloTg1Sg&t=579s) | NBIS | long · entry | today | 2026-04-23 |
+| · | [09:39](https://www.youtube.com/watch?v=ARyrloTg1Sg&t=579s) | NBIS | long · exit | today | 2026-04-23 |
 | · | [11:27](https://www.youtube.com/watch?v=ARyrloTg1Sg&t=687s) | IGV | long · trim | today | 2026-04-23 |
 | · | [13:13](https://www.youtube.com/watch?v=ARyrloTg1Sg&t=793s) | AXTI | short · short | today | 2026-04-23 |
 | ⬜ | [14:34](https://www.youtube.com/watch?v=ARyrloTg1Sg&t=874s) | AMAT | long · entry | yesterday | 2026-04-22 |
