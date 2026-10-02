@@ -1,0 +1,31 @@
+# Martin Luk's picks vs our selection -- INTERIM LOOK 2 (resolved picks only); pre-registration in the docstring
+opener rows 191: pending (excluded) 6, retrospective (excluded) 28; scored picks 149 (102 long, 47 short), 75 fill dates, 2025-11-26 -> 2026-09-18
+prices: panel to 2026-09-30; 15 names from yfinance (ARKK, ARM, DRIP, DUST, GLD, IGV, QQQ, SKHY, SLV, SOXL, SQQQ, TE, TSLL, UAMY, UVXY)
+unpriced or non-session fill date (dropped): 0
+
+## LONG picks (102 priced)
+  -- 20 sessions: 89 picks with a full window; raw signed return net of costs +2.66% (median +2.30%), win 53%; C2 names per pick median 4; C2 mean +2.89%, C1 mean +2.13%
+  vs C2 our precision tier <- PRIMARY n  89 / 46 dates | mean  -0.22pp | date-cluster  -0.22pp, t -0.07 | week-cluster t +0.05 (23 wks) | MDE(80%) 8.9pp | halves -1.98 / +1.50 | win 48%
+  vs C1 same-date ADR tercile        n  88 / 46 dates | mean  +0.29pp | date-cluster  -0.24pp, t -0.09 | week-cluster t +0.31 (23 wks) | MDE(80%) 7.5pp | halves +3.41 / -2.84 | win 45%
+  vs C3 same name later              n  76 / 38 dates | mean  -0.14pp | date-cluster  -2.16pp, t -0.54 | week-cluster t -0.30 (19 wks) | MDE(80%) 11.2pp | halves +12.32 / -12.59 | win 45%
+  (exploratory) ex levered ETFs vs C2 n  85 / 44 dates | mean  +0.49pp | date-cluster  -0.17pp, t -0.05 | week-cluster t +0.11 (22 wks) | MDE(80%) 9.1pp | halves -0.09 / +1.03 | win 48%
+  -- 5 sessions: 102 picks with a full window; raw signed return net of costs +2.28% (median +3.25%), win 60%; C2 names per pick median 4; C2 mean +1.59%, C1 mean +1.30%
+  vs C2 our precision tier           n 102 / 49 dates | mean  +0.69pp | date-cluster  +0.87pp, t +0.60 | week-cluster t +1.00 (25 wks) | MDE(80%) 4.1pp | halves -0.67 / +2.05 | win 51%
+  vs C1 same-date ADR tercile        n 101 / 49 dates | mean  +0.81pp | date-cluster  +0.44pp, t +0.36 | week-cluster t +1.13 (25 wks) | MDE(80%) 3.4pp | halves +0.59 / +1.03 | win 54%
+  vs C3 same name later              n  89 / 46 dates | mean  +0.78pp | date-cluster  +0.52pp, t +0.34 | week-cluster t +0.62 (23 wks) | MDE(80%) 4.3pp | halves +3.17 / -1.54 | win 52%
+  (exploratory) ex levered ETFs vs C2 n  98 / 47 dates | mean  +0.64pp | date-cluster  +0.72pp, t +0.47 | week-cluster t +0.76 (24 wks) | MDE(80%) 4.4pp | halves -0.75 / +1.97 | win 51%
+
+## SHORT picks (47 priced)
+  -- 20 sessions: 39 picks with a full window; raw signed return net of costs +2.38% (median +2.72%), win 64%; C2 names per pick median 3; C2 mean -2.89%, C1 mean -0.69%
+  vs C1 (control - pick)             n  37 / 25 dates | mean  +1.75pp | date-cluster  +2.56pp, t +0.44 | week-cluster t +0.39 (17 wks) | MDE(80%) 16.3pp | halves -2.65 / +5.91 | win 57%
+  -- 5 sessions: 47 picks with a full window; raw signed return net of costs +2.35% (median +1.53%), win 57%; C2 names per pick median 3; C2 mean +0.27%, C1 mean -1.26%
+  vs C1 (control - pick)             n  45 / 29 dates | mean  +0.95pp | date-cluster  -0.05pp, t -0.01 | week-cluster t +0.39 (19 wks) | MDE(80%) 9.7pp | halves +1.34 / +0.58 | win 51%
+
+## PRIMARY: longs vs C2 at 20 sessions, date-cluster t -0.07 (bar 3.2 at look 2; both halves positive)
+## Features: his long picks vs the same-date precision tier (medians; descriptive; the pre-registered trigger t >= 2 was NOT met, shown for context only)
+  ADR %                              his picks median      6.7 (n 91) | precision tier median      4.7 (n 334)
+  off 52wk high %                    his picks median    -17.5 (n 87) | precision tier median      1.0 (n 334)
+  stack days                         his picks median      7.0 (n 91) | precision tier median     15.0 (n 334)
+  sessions in panel (IPO-age proxy)  his picks median   1392.0 (n 91) | precision tier median   1843.0 (n 334)
+  share of his long picks that were a house breakout that day: 0%; a precision-tier breakout: 0%
+## POST HOC overlap check (91 long picks in the panel): closed above the 15-day pivot 9%; traded above it intraday 11%; a house breakout within 3 sessions either side 2%; EMA stack >= 5 days 56%; median close +0.81 ADR above the 20 EMA

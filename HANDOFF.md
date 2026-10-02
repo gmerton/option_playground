@@ -41,7 +41,8 @@ below passed but is off-goal; the TLT month-end and third-Friday proposals are p
 ## 🔖 Bookmark — 2026-10-01 (session paused for compaction)
 
 Work since the goal reset, in order, and what is waiting:
-1. **Luk picks vs our selection, interim look 1** (`luk_picks_vs_controls_2026-09-30.md`): UNDERPOWERED, +3.44pp vs our
+1. **Luk picks vs our selection, LOOK 2 (2026-10-01)** (`luk_picks_vs_controls_look2_2026-10-01.md`): worklist 64 → 6 open (Gabe + on-screen TradingView watchlist frames); 149 picks; longs vs precision tier **−0.22pp, t −0.07** — the look-1 +3.44pp lead is gone. Selection ≈ ours; next = tight-stop survival test (#3).
+   Look 1 for history: **Luk picks vs our selection, interim look 1** (`luk_picks_vs_controls_2026-09-30.md`): UNDERPOWERED, +3.44pp vs our
    precision tier, t 0.92; 0 of 61 long picks was a house breakout. Re-run after Gabe's worklist pass = look 2 (bar 3.2).
 2. **Luk entry cards** (`luk_entry_cards_2026-09-30.md`, `data/martin_luk/trades/entry_cards.jsonl`): stated stops
    1–2.5%, risk 0.3%, positions 20–30%, 88% intraday triggers. Ten trade-log problems listed there for Gabe (CIFR 8/13,
