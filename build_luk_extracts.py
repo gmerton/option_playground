@@ -138,11 +138,13 @@ def main() -> None:
     dec_path = KB / "trades" / "ticker_decodes.csv"
     if dec_path.exists():
         import csv
-        dec = {r["caption"].strip().lower(): r["ticker"] for r in csv.DictReader(dec_path.open())}
+        rows = list(csv.DictReader(dec_path.open()))
+        dec = {r["caption"].strip().lower(): r["ticker"] for r in rows}
+        every = {r["caption"].strip().lower() for r in rows if (r.get("scope") or "").strip() == "all"}
         n_dec = 0
         for t in trades:
             cap = (t.get("ticker_as_captioned") or "").strip().lower()
-            if cap in dec and t.get("ticker", "?") in ("?", "", (t.get("ticker_as_captioned") or "").strip()):
+            if cap in dec and (cap in every or t.get("ticker", "?") in ("?", "", (t.get("ticker_as_captioned") or "").strip())):
                 t["ticker_original"], t["ticker"] = t.get("ticker", "?"), dec[cap]
                 n_dec += 1
         print(f"applied {n_dec} confirmed ticker decodes from {dec_path.name}")

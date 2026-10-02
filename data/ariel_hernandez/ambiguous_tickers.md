@@ -4,7 +4,7 @@
 
 Two checks per video. **Ambiguous tickers**: spots where the auto-caption garbled a symbol — click the timestamp, check the chart, confirm the ticker. **Trades**: each trade with the day it was placed; ⬜ marks rows that need a glance — an unresolved ticker (`?`), an unresolved fill date, or a date *inferred* to a different day than the stream (e.g. he said "Thursday"). Rows with no ⬜ are same-session or he stated the date.
 
-**325** ticker flags · **1928** trades to date-check · across **337** videos. Conf: 🟡 likely · ❓ unsure.
+**325** ticker flags · **1923** trades to date-check · across **337** videos. Conf: 🟡 likely · ❓ unsure.
 
 ## Index — ticker flags by video
 
@@ -1498,7 +1498,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | ✔ | Time | Ticker | Dir · Action | He said | Fill date |
 |---|------|--------|--------------|---------|-----------|
 | · | [00:56](https://www.youtube.com/watch?v=I_aQ87JCMaU&t=56s) | NBIS | long · exit | today | 2026-06-09 |
-| ⬜ | [01:08](https://www.youtube.com/watch?v=I_aQ87JCMaU&t=68s) | ? | long · exit | today | 2026-06-09 |
+| · | [01:08](https://www.youtube.com/watch?v=I_aQ87JCMaU&t=68s) | DOCN | long · exit | today | 2026-06-09 |
 | · | [01:27](https://www.youtube.com/watch?v=I_aQ87JCMaU&t=87s) | MU | long · exit | today | 2026-06-09 |
 | · | [01:58](https://www.youtube.com/watch?v=I_aQ87JCMaU&t=118s) | BE | long · entry | today | 2026-06-09 |
 | ⬜ | [01:58](https://www.youtube.com/watch?v=I_aQ87JCMaU&t=118s) | AAOI | short · short | a few days ago | _(unresolved)_ |
@@ -1556,7 +1556,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | · | [17:38](https://www.youtube.com/watch?v=8auHYqihoaI&t=1058s) | ARM | long · exit | today | 2026-06-05 |
 | · | [17:49](https://www.youtube.com/watch?v=8auHYqihoaI&t=1069s) | MU | long · hold | — | 2026-06-05 |
 | · | [18:10](https://www.youtube.com/watch?v=8auHYqihoaI&t=1090s) | NBIS | long · trim | today | 2026-06-05 |
-| · | [18:10](https://www.youtube.com/watch?v=8auHYqihoaI&t=1090s) | DOCU | long · trim | today | 2026-06-05 |
+| · | [18:10](https://www.youtube.com/watch?v=8auHYqihoaI&t=1090s) | DOCN | long · trim | today | 2026-06-05 |
 
 
 ## 2026-06-04 — Watchlist video for Friday. Gravity taking over!
@@ -1598,7 +1598,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | · | [13:45](https://www.youtube.com/watch?v=9B5H1BEbg1A&t=825s) | TSLA | long · hold | — | 2026-06-03 |
 | · | [14:47](https://www.youtube.com/watch?v=9B5H1BEbg1A&t=887s) | QQQ | short · add | today | 2026-06-03 |
 | · | [14:03](https://www.youtube.com/watch?v=9B5H1BEbg1A&t=843s) | AXTI | short · hold | — | 2026-06-03 |
-| · | [14:47](https://www.youtube.com/watch?v=9B5H1BEbg1A&t=887s) | DOCU | long · trim | today | 2026-06-03 |
+| · | [14:47](https://www.youtube.com/watch?v=9B5H1BEbg1A&t=887s) | DOCN | long · trim | today | 2026-06-03 |
 | · | [14:57](https://www.youtube.com/watch?v=9B5H1BEbg1A&t=897s) | ARM | long · trim | today | 2026-06-03 |
 | · | [14:57](https://www.youtube.com/watch?v=9B5H1BEbg1A&t=897s) | ENPH | long · trim | today | 2026-06-03 |
 | ⬜ | [11:54](https://www.youtube.com/watch?v=9B5H1BEbg1A&t=714s) | CRWD | short · short | the other day | _(unresolved)_ |
@@ -1620,7 +1620,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | ✔ | Time | Ticker | Dir · Action | He said | Fill date |
 |---|------|--------|--------------|---------|-----------|
 | · | [02:15](https://www.youtube.com/watch?v=gMw4PSF5aTk&t=135s) | ARM | long · trim | today | 2026-06-02 |
-| · | [10:30](https://www.youtube.com/watch?v=gMw4PSF5aTk&t=630s) | DOCU | long · hold | — | 2026-06-02 |
+| · | [10:30](https://www.youtube.com/watch?v=gMw4PSF5aTk&t=630s) | DOCN | long · hold | — | 2026-06-02 |
 | · | [10:40](https://www.youtube.com/watch?v=gMw4PSF5aTk&t=640s) | IGV | long · hold | — | 2026-06-02 |
 | · | [10:40](https://www.youtube.com/watch?v=gMw4PSF5aTk&t=640s) | MU | long · hold | — | 2026-06-02 |
 | · | [10:52](https://www.youtube.com/watch?v=gMw4PSF5aTk&t=652s) | ENPH | long · hold | — | 2026-06-02 |
@@ -1773,7 +1773,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | · | [12:13](https://www.youtube.com/watch?v=dupQE1J0MV0&t=733s) | GEV | long · entry | today | 2026-05-26 |
 | · | [12:13](https://www.youtube.com/watch?v=dupQE1J0MV0&t=733s) | GEV | long · exit | today | 2026-05-26 |
 | · | [13:19](https://www.youtube.com/watch?v=dupQE1J0MV0&t=799s) | ARM | long · hold | — | 2026-05-26 |
-| · | [13:19](https://www.youtube.com/watch?v=dupQE1J0MV0&t=799s) | DOCU | long · hold | — | 2026-05-26 |
+| · | [13:19](https://www.youtube.com/watch?v=dupQE1J0MV0&t=799s) | DOCN | long · hold | — | 2026-05-26 |
 | · | [13:19](https://www.youtube.com/watch?v=dupQE1J0MV0&t=799s) | IGV | long · hold | — | 2026-05-26 |
 | · | [13:19](https://www.youtube.com/watch?v=dupQE1J0MV0&t=799s) | NBIS | long · hold | — | 2026-05-26 |
 
@@ -1822,7 +1822,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | ⬜ | [09:18](https://www.youtube.com/watch?v=Ckil0rOuMmU&t=558s) | ARM | long · add | the other day on wednesday | 2026-05-13 |
 | ⬜ | [09:27](https://www.youtube.com/watch?v=Ckil0rOuMmU&t=567s) | ARM | long · stopped_out | friday | 2026-05-15 |
 | · | [07:14](https://www.youtube.com/watch?v=Ckil0rOuMmU&t=434s) | DELL | long · hold | — | 2026-05-19 |
-| ⬜ | [08:38](https://www.youtube.com/watch?v=Ckil0rOuMmU&t=518s) | ? | long · hold | — | 2026-05-19 |
+| · | [08:38](https://www.youtube.com/watch?v=Ckil0rOuMmU&t=518s) | DOCN | long · hold | — | 2026-05-19 |
 | · | [07:14](https://www.youtube.com/watch?v=Ckil0rOuMmU&t=434s) | IGV | long · hold | — | 2026-05-19 |
 
 
@@ -1915,7 +1915,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | ⬜ | [05:34](https://www.youtube.com/watch?v=d-hOKjsZbcE&t=334s) | CIFR | long · entry | yesterday | 2026-05-13 |
 | · | [05:47](https://www.youtube.com/watch?v=d-hOKjsZbcE&t=347s) | AMZN | long · hold | — | 2026-05-14 |
 | · | [05:59](https://www.youtube.com/watch?v=d-hOKjsZbcE&t=359s) | DELL | long · hold | — | 2026-05-14 |
-| · | [06:10](https://www.youtube.com/watch?v=d-hOKjsZbcE&t=370s) | DOCU | long · hold | — | 2026-05-14 |
+| · | [06:10](https://www.youtube.com/watch?v=d-hOKjsZbcE&t=370s) | DOCN | long · hold | — | 2026-05-14 |
 | · | [06:30](https://www.youtube.com/watch?v=d-hOKjsZbcE&t=390s) | MU | long · hold | — | 2026-05-14 |
 | · | [06:30](https://www.youtube.com/watch?v=d-hOKjsZbcE&t=390s) | ENPH | long · hold | — | 2026-05-14 |
 | ⬜ | [10:46](https://www.youtube.com/watch?v=d-hOKjsZbcE&t=646s) | GLW | long · stopped_out | — | _(unresolved)_ |
@@ -1963,7 +1963,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | ✔ | Time | Ticker | Dir · Action | He said | Fill date |
 |---|------|--------|--------------|---------|-----------|
 | · | [00:32](https://www.youtube.com/watch?v=BbEyIMwoYGc&t=32s) | AMZN | long · hold | — | 2026-05-11 |
-| ⬜ | [11:21](https://www.youtube.com/watch?v=BbEyIMwoYGc&t=681s) | ? | long · hold | — | 2026-05-11 |
+| · | [11:21](https://www.youtube.com/watch?v=BbEyIMwoYGc&t=681s) | DOCN | long · hold | — | 2026-05-11 |
 
 
 ## 2026-05-08 — Markets are extended, here is my plan!
@@ -2005,7 +2005,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | · | [04:52](https://www.youtube.com/watch?v=ZTVkwDvTO0A&t=292s) | NBIS | long · trim | today | 2026-05-07 |
 | · | [04:52](https://www.youtube.com/watch?v=ZTVkwDvTO0A&t=292s) | MU | long · hold | — | 2026-05-07 |
 | · | [07:33](https://www.youtube.com/watch?v=ZTVkwDvTO0A&t=453s) | IGV | long · hold | — | 2026-05-07 |
-| ⬜ | [04:52](https://www.youtube.com/watch?v=ZTVkwDvTO0A&t=292s) | ? | long · hold | — | 2026-05-07 |
+| · | [04:52](https://www.youtube.com/watch?v=ZTVkwDvTO0A&t=292s) | DOCN | long · hold | — | 2026-05-07 |
 | ⬜ | [07:02](https://www.youtube.com/watch?v=ZTVkwDvTO0A&t=422s) | DELL | long · trim | yesterday | 2026-05-06 |
 | · | [05:05](https://www.youtube.com/watch?v=ZTVkwDvTO0A&t=305s) | AXTI | short · short | today | 2026-05-07 |
 | ⬜ | [05:16](https://www.youtube.com/watch?v=ZTVkwDvTO0A&t=316s) | ARM | long · trim | yesterday | 2026-05-06 |
@@ -2104,7 +2104,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | ✔ | Time | Ticker | Dir · Action | He said | Fill date |
 |---|------|--------|--------------|---------|-----------|
 | ⬜ | [00:00](https://www.youtube.com/watch?v=xZtgZg-F3fk&t=0s) | NBIS | long · entry | friday | 2026-05-01 |
-| ⬜ | [01:38](https://www.youtube.com/watch?v=xZtgZg-F3fk&t=98s) | ? | long · hold | — | 2026-05-04 |
+| · | [01:38](https://www.youtube.com/watch?v=xZtgZg-F3fk&t=98s) | DOCN | long · hold | — | 2026-05-04 |
 | · | [02:09](https://www.youtube.com/watch?v=xZtgZg-F3fk&t=129s) | ARM | long · hold | — | 2026-05-04 |
 | · | [02:41](https://www.youtube.com/watch?v=xZtgZg-F3fk&t=161s) | RKLB | long · entry | today | 2026-05-04 |
 | ⬜ | [02:51](https://www.youtube.com/watch?v=xZtgZg-F3fk&t=171s) | PL | long · stopped_out | friday | 2026-05-01 |
