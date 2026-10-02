@@ -1,0 +1,31 @@
+# Luk tight-stop survival (pre-registered 2026-09-30, amended 2026-10-01 before scoring); runtime 2 min
+entries 2024-10-02 -> 2026-08-26: 13410 first entries on 473 dates, 620 names; re-entries 10896
+stop distance d: median 1.10% (IQR 0.73-1.53); d / ADR median 0.17; WIDE stop median 5.61%
+
+## Raw per-trade (first entries, net of 10 bp/side)
+  net_tight    mean -0.005%  median -1.167%  win 13%
+  net_wide     mean +0.032%  median -1.814%  win 31%
+  net_random   mean +0.020%  median -1.106%  win 17%
+  ret_beta     mean +0.232%  median -0.022%  win 45%
+
+## PRIMARY: TIGHT net minus BETA (beta x QQQ over the same window), entry-date cluster means
+  TIGHT - BETA                                 dates  473 | mean +0.003pp | t +0.02 | MDE 0.38pp | halves +0.357 / -0.381 | quarters + 2/8
+  -> bar t >= 3, both halves > 0, majority of quarters > 0: NOT MET
+
+## SECONDARY (Sidak |t| >= 2.57 over 5 cells; discovery bar 3 governs)
+  S1 TIGHT - RANDOM later minute (same d)      dates  473 | mean +0.100pp | t +0.97 | MDE 0.29pp | halves +0.124 / +0.075 | quarters + 6/8
+  S2 TIGHT - WIDE (1 ADR stop), % per trade    dates  473 | mean -0.230pp | t -1.60 | MDE 0.40pp | halves -0.681 / +0.259 | quarters + 4/8
+  S3a gate ON - OFF (QQQ > 21 EMA & 9 > 21)          diff +0.266pp, Welch t +0.95 (ON 295 dates mean +0.103, OFF 178 mean -0.163)
+  S3b his LONG weeks - SHORT/EMPTY weeks           diff -0.183pp, Welch t -0.96 (LONG 100 dates mean -0.552, SHORT 57 mean -0.370)
+
+## DESCRIPTIVE
+  stopped same day 59% | within 3 sessions 83% | stopped ever 86% | median hold 0 sessions
+  R (gross / d): mean +0.19, median -1.00, share >= 5R 5.3%, >= 10R 3.1%
+  top 10% of trades = -24081% of the summed net return (sum -68.9% over 13410 trades)
+  re-entry arm: 10896 re-entries, net mean -0.201%, same-day stop 69%
+
+## ACCOUNT SIMULATION (a simulation, not the test: 0.3% risk, position min(0.3%/d, 30%), gross cap 200%, realised equity)
+  TIGHT all days      total +16.6%  maxDD -48.7%  trades taken 2107
+  WIDE  all days      total +63.9%  maxDD -43.5%  trades taken 3988
+  TIGHT gate ON only  total +103.7%  maxDD -37.9%  trades taken 1441
+  WIDE  gate ON only  total +73.0%  maxDD -26.9%  trades taken 2801

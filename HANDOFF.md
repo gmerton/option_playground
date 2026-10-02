@@ -47,8 +47,7 @@ Work since the goal reset, in order, and what is waiting:
 2. **Luk entry cards** (`luk_entry_cards_2026-09-30.md`, `data/martin_luk/trades/entry_cards.jsonl`): stated stops
    1–2.5%, risk 0.3%, positions 20–30%, 88% intraday triggers. Ten trade-log problems listed there for Gabe (CIFR 8/13,
    INTC 7/15, AFRM 8/12 look like viewers' trades; AVGO 3/5 logged long reads short) — NOT applied.
-3. **Tight-stop survival test** — pre-registered in `run_luk_tight_stop_survival.py`, ⛔ QUEUED by Gabe until he does
-   more worklist disambiguation; re-count the stance weeks then; local (~40–60 min) vs ECS is his call.
+3. **Tight-stop survival test — RAN 2026-10-01 on ECS: NULL** (`luk_tight_stop_survival_2026-10-01.md`): 13,410 entries, TIGHT − BETA +0.003pp t +0.02 (MDE 0.38pp); 59% stopped same day; re-entries worse. With picks look 2, the codable Luk method (selection + entry/stop) carries no edge.
 4. **Ariel trade log — DONE** (`ariel_trade_log_2026-10-01.md`): all 349 public recaps → 3,682 rows, 420 distinct dated
    opens, every quote verbatim; his stated P&L by period is in that doc. Premarket streams judged redundant (pilot).
    **Next decision for Gabe:** confirm decodes ("ARC"=ARKK ×58, GRR, NQ, QBT, DocuSign/Dock, Enphase), then build
