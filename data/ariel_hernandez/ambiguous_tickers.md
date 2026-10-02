@@ -1600,7 +1600,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | · | [14:03](https://www.youtube.com/watch?v=9B5H1BEbg1A&t=843s) | AXTI | short · hold | — | 2026-06-03 |
 | · | [14:47](https://www.youtube.com/watch?v=9B5H1BEbg1A&t=887s) | DOCN | long · trim | today | 2026-06-03 |
 | · | [14:57](https://www.youtube.com/watch?v=9B5H1BEbg1A&t=897s) | ARM | long · trim | today | 2026-06-03 |
-| · | [14:57](https://www.youtube.com/watch?v=9B5H1BEbg1A&t=897s) | ENPH | long · trim | today | 2026-06-03 |
+| · | [14:57](https://www.youtube.com/watch?v=9B5H1BEbg1A&t=897s) | NBIS | long · trim | today | 2026-06-03 |
 | ⬜ | [11:54](https://www.youtube.com/watch?v=9B5H1BEbg1A&t=714s) | CRWD | short · short | the other day | _(unresolved)_ |
 | ⬜ | [12:03](https://www.youtube.com/watch?v=9B5H1BEbg1A&t=723s) | CRWD | short · cover | — | _(unresolved)_ |
 
@@ -1623,7 +1623,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | · | [10:30](https://www.youtube.com/watch?v=gMw4PSF5aTk&t=630s) | DOCN | long · hold | — | 2026-06-02 |
 | · | [10:40](https://www.youtube.com/watch?v=gMw4PSF5aTk&t=640s) | IGV | long · hold | — | 2026-06-02 |
 | · | [10:40](https://www.youtube.com/watch?v=gMw4PSF5aTk&t=640s) | MU | long · hold | — | 2026-06-02 |
-| · | [10:52](https://www.youtube.com/watch?v=gMw4PSF5aTk&t=652s) | ENPH | long · hold | — | 2026-06-02 |
+| · | [10:52](https://www.youtube.com/watch?v=gMw4PSF5aTk&t=652s) | NBIS | long · hold | — | 2026-06-02 |
 | · | [11:11](https://www.youtube.com/watch?v=gMw4PSF5aTk&t=671s) | SNDK | long · hold | — | 2026-06-02 |
 | · | [11:22](https://www.youtube.com/watch?v=gMw4PSF5aTk&t=682s) | NVDA | long · trim | today | 2026-06-02 |
 | · | [11:22](https://www.youtube.com/watch?v=gMw4PSF5aTk&t=682s) | QQQ | short · hold | — | 2026-06-02 |
@@ -1656,7 +1656,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | · | [09:03](https://www.youtube.com/watch?v=M4xMDkvFE0A&t=543s) | IGV | long · hold | — | 2026-06-01 |
 | · | [09:03](https://www.youtube.com/watch?v=M4xMDkvFE0A&t=543s) | MU | long · hold | — | 2026-06-01 |
 | · | [09:03](https://www.youtube.com/watch?v=M4xMDkvFE0A&t=543s) | SNDK | long · hold | — | 2026-06-01 |
-| · | [12:52](https://www.youtube.com/watch?v=M4xMDkvFE0A&t=772s) | ENPH | long · hold | — | 2026-06-01 |
+| · | [12:52](https://www.youtube.com/watch?v=M4xMDkvFE0A&t=772s) | NBIS | long · hold | — | 2026-06-01 |
 
 
 ## 2026-05-29 — Software takes over!
@@ -1917,7 +1917,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | · | [05:59](https://www.youtube.com/watch?v=d-hOKjsZbcE&t=359s) | DELL | long · hold | — | 2026-05-14 |
 | · | [06:10](https://www.youtube.com/watch?v=d-hOKjsZbcE&t=370s) | DOCN | long · hold | — | 2026-05-14 |
 | · | [06:30](https://www.youtube.com/watch?v=d-hOKjsZbcE&t=390s) | MU | long · hold | — | 2026-05-14 |
-| · | [06:30](https://www.youtube.com/watch?v=d-hOKjsZbcE&t=390s) | ENPH | long · hold | — | 2026-05-14 |
+| · | [06:30](https://www.youtube.com/watch?v=d-hOKjsZbcE&t=390s) | NBIS | long · hold | — | 2026-05-14 |
 | ⬜ | [10:46](https://www.youtube.com/watch?v=d-hOKjsZbcE&t=646s) | GLW | long · stopped_out | — | _(unresolved)_ |
 | ⬜ | [10:46](https://www.youtube.com/watch?v=d-hOKjsZbcE&t=646s) | NVDA | long · exit | — | _(unresolved)_ |
 
@@ -2169,8 +2169,8 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | ⬜ | [08:21](https://www.youtube.com/watch?v=Xc0VR1fwxVQ&t=501s) | RKLB | long · entry | yesterday | 2026-04-29 |
 | ⬜ | [09:00](https://www.youtube.com/watch?v=Xc0VR1fwxVQ&t=540s) | RKLB | long · exit | yesterday | 2026-04-29 |
 | · | [15:57](https://www.youtube.com/watch?v=Xc0VR1fwxVQ&t=957s) | PL | long · entry | today | 2026-04-30 |
-| · | [11:06](https://www.youtube.com/watch?v=Xc0VR1fwxVQ&t=666s) | ENPH | long · entry | today | 2026-04-30 |
-| · | [11:27](https://www.youtube.com/watch?v=Xc0VR1fwxVQ&t=687s) | ENPH | long · exit | today | 2026-04-30 |
+| · | [11:06](https://www.youtube.com/watch?v=Xc0VR1fwxVQ&t=666s) | NBIS | long · entry | today | 2026-04-30 |
+| · | [11:27](https://www.youtube.com/watch?v=Xc0VR1fwxVQ&t=687s) | NBIS | long · exit | today | 2026-04-30 |
 | · | [12:49](https://www.youtube.com/watch?v=Xc0VR1fwxVQ&t=769s) | AXTI | short · cover | today | 2026-04-30 |
 | · | [12:49](https://www.youtube.com/watch?v=Xc0VR1fwxVQ&t=769s) | AXTI | short · short | today | 2026-04-30 |
 | · | [13:25](https://www.youtube.com/watch?v=Xc0VR1fwxVQ&t=805s) | AXTI | short · add | today | 2026-04-30 |

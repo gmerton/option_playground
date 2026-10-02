@@ -138,15 +138,23 @@ def main() -> None:
     dec_path = KB / "trades" / "ticker_decodes.csv"
     if dec_path.exists():
         import csv
-        rows = list(csv.DictReader(dec_path.open()))
-        dec = {r["caption"].strip().lower(): r["ticker"] for r in rows}
-        every = {r["caption"].strip().lower() for r in rows if (r.get("scope") or "").strip() == "all"}
+        rules = list(csv.DictReader(dec_path.open()))      # first matching rule wins
         n_dec = 0
         for t in trades:
-            cap = (t.get("ticker_as_captioned") or "").strip().lower()
-            if cap in dec and (cap in every or t.get("ticker", "?") in ("?", "", (t.get("ticker_as_captioned") or "").strip())):
-                t["ticker_original"], t["ticker"] = t.get("ticker", "?"), dec[cap]
+            raw = (t.get("ticker_as_captioned") or "").strip()
+            cap, d = raw.lower(), str(t.get("date", ""))[:10]
+            for r in rules:
+                if r["caption"].strip().lower() != cap:
+                    continue
+                if (r.get("date_from") or "") and d < r["date_from"]:
+                    continue
+                if (r.get("date_to") or "") and d > r["date_to"]:
+                    continue
+                if (r.get("scope") or "").strip() != "all" and t.get("ticker", "?") not in ("?", "", raw):
+                    continue
+                t["ticker_original"], t["ticker"] = t.get("ticker", "?"), r["ticker"]
                 n_dec += 1
+                break
         print(f"applied {n_dec} confirmed ticker decodes from {dec_path.name}")
     # stable sort: date desc, then ticker
     trades.sort(key=lambda t: (t.get("date", ""), t.get("ticker", "")), reverse=True)
