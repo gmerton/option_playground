@@ -1,0 +1,18 @@
+# Extended name, first failure short (pre-registered 2026-10-01); see docstring
+panel 2009-01-02 -> 2026-09-23, 1728 names
+
+## event counts: K=6: 8052 events / 2142 dates, K=8: 1168 events / 654 dates, K=10: 130 events / 108 dates
+## PRIMARY: K=8, h=10, trigger short - C1 (bar t>=3, halves +, years majority +, absolute > 0)
+  K=8 h=10 vs C1                             n  1166 /  652 dates | mean  -0.03pp | date-cluster t +0.00 | MDE(80%) 0.96pp | halves -0.34 / +0.18 | years + 8/18 | abs short -0.76% | win 50%
+  -> power gate met; PRIMARY bar: NOT MET
+## SECONDARY (Sidak |t| >= 2.57)
+  S1 K=10 h=10 vs C1                         n   129 /  107 dates | mean  +0.59pp | date-cluster t +0.85 | MDE(80%) 1.62pp | halves +0.62 / +0.43 | years + 9/17 | abs short +0.05% | win 46%
+  S2 K=6 h=10 vs C1                          n  8041 / 2135 dates | mean  -0.10pp | date-cluster t -0.63 | MDE(80%) 0.37pp | halves -0.00 / -0.14 | years + 10/18 | abs short -0.68% | win 50%
+  S3 K=8 h=20 vs C1                          n  1159 /  647 dates | mean  -0.17pp | date-cluster t -0.43 | MDE(80%) 1.18pp | halves -0.19 / -0.18 | years + 11/18 | abs short -1.22% | win 50%
+  S4 K=8 h=10 vs C2 extension w/o trigger    n  1111 /  620 dates | mean  -1.63pp | date-cluster t -10.16 | MDE(80%) 0.51pp | halves -1.44 / -2.05 | years + 0/18 | abs short -0.78% | win 27%
+## reported
+  K=8 h=5 vs C1                              n  1167 /  653 dates | mean  +0.01pp | date-cluster t +0.36 | MDE(80%) 0.63pp | halves -0.12 / +0.19 | years + 8/18 | abs short -0.61% | win 51%
+  K=8 h=10 absolute short (no control)       n  1166 /  652 dates | mean  -0.76pp | date-cluster t -2.24 | MDE(80%) 0.99pp | halves -1.09 / -0.64 | years + 4/18 | abs short -0.76% | win 43%
+  Ariel window 2025-10..2026-03, K=8         n    40 /   31 dates | mean  +2.98pp | date-cluster t +2.23 | MDE(80%) 3.84pp | halves +nan / +3.05 | years + 2/2 | abs short +1.79% | win 62%
+  Ariel window 2025-10..2026-03, K=10        n    12 /   12 dates | mean  +2.40pp | date-cluster t +1.15 | MDE(80%) 5.84pp | halves +nan / +2.40 | years + 1/2 | abs short +2.03% | win 58%
+  K=8 events by year: 2009:4, 2010:28, 2011:12, 2012:32, 2013:43, 2014:51, 2015:23, 2016:71, 2017:102, 2018:68, 2019:98, 2020:78, 2021:47, 2022:26, 2023:135, 2024:159, 2025:122, 2026:69
