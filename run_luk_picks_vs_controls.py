@@ -60,6 +60,16 @@ the ambiguous ones so we can continue refining"). INTERIM LOOK 1:
     an extra, more conservative t on ISO-week cluster means is printed beside the pre-registered fill-date t because
     20-session windows from neighbouring dates overlap. Exploratory: longs excluding leveraged / inverse ETFs.
 
+⚙ AMENDED 2026-10-01 (before scoring look 2; Gabe: "rerun our analysis of Luk's technique using the new information
+that we filled in today. Include the ones you resolved from frames"). INTERIM LOOK 2:
+  * same primary, same controls, same code path; bar is now t >= 3.2 (Sidak over 2 looks), both halves positive.
+  * new evidence source for the worklist: his ON-SCREEN TradingView watchlists (LONGS / SHORTS / FOCUS / TRACKING) and
+    the chart symbol on screen, read from 1080p frames at the cited timestamp. This is "what he shows on screen" under
+    the declared clarification rule; a name counts as held only in LONGS / SHORTS. Rows resolved this way carry a
+    "Claude 2026-10-01 (TradingView ...)" note; Gabe-confirmed rows say so.
+  * the 6 rows still open (SOXS x2, RKLB date, CRCL date, USAR, WDC/SNDK) are excluded as before.
+  * log -> data/studies/logs/luk_picks_vs_controls_look2.log (look 1's log is kept).
+
 Run: PYTHONPATH=src:. .venv/bin/python3 run_luk_picks_vs_controls.py   (log -> data/studies/logs/luk_picks_vs_controls.log)
 """
 from __future__ import annotations
@@ -77,7 +87,8 @@ from lib.commons.ma_stack import stack_run
 from run_precision_tier_control import build
 
 warnings.filterwarnings("ignore")
-LOG = Path("data/studies/logs/luk_picks_vs_controls.log")
+LOOK, BAR = 2, 3.2
+LOG = Path(f"data/studies/logs/luk_picks_vs_controls_look{LOOK}.log")
 COST, SEED, RETRO_VIDEO = 0.002, 20260927, "VKNEJA5r8zw"
 LEVERED = {"SQQQ", "TQQQ", "UVXY", "TSLL", "DRIP", "SOXL", "SOXS", "BOIL", "KOLD", "UVIX", "SVIX"}
 
@@ -96,7 +107,7 @@ def picks() -> tuple[pd.DataFrame, dict]:
 
 
 def main() -> None:
-    out = ["# Martin Luk's picks vs our selection -- INTERIM LOOK 1 (unambiguous picks only); pre-registration in the docstring"]
+    out = [f"# Martin Luk's picks vs our selection -- INTERIM LOOK {LOOK} (resolved picks only); pre-registration in the docstring"]
     pk, n = picks()
     out.append(f"opener rows {n['openers']}: pending (excluded) {n['pending']}, retrospective (excluded) {n['retrospective']}; "
                f"scored picks {len(pk)} ({(pk.dirn == 'long').sum()} long, {(pk.dirn == 'short').sum()} short), "
@@ -210,7 +221,7 @@ def main() -> None:
     s = R[(R.dirn == "long")].dropna(subset=["raw20", "c2_20"])
     dm = (s.raw20 - s.c2_20).groupby(s.fill).mean()
     t_primary = dm.mean() / (dm.std(ddof=1) / sqrt(len(dm)))
-    out.append(f"\n## PRIMARY: longs vs C2 at 20 sessions, date-cluster t {t_primary:+.2f} (bar 3.0 at look 1; both halves positive)")
+    out.append(f"\n## PRIMARY: longs vs C2 at 20 sessions, date-cluster t {t_primary:+.2f} (bar {BAR} at look {LOOK}; both halves positive)")
     hi52 = H.shift(1).rolling(252, min_periods=120).max()
     off52 = (P.close / hi52 - 1) * 100
     stack = stack_run(P.close, adr=P.adr)
