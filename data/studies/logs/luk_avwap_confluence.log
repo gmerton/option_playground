@@ -1,0 +1,19 @@
+# AVWAP confluence at Luk-style tight-stop entries (pre-registered 2026-10-01); runtime 2 min
+first entries 13410 on 473 dates (tight-stop test: 13,410 / 473); band +/-0.25 ADR
+share confluent: ANY 50%, A1 18%, A2 28%, A3 15%, A4 17%
+
+## cells: TIGHT net - BETA on the subset, entry-date cluster means (bar t >= 3 primary; Sidak |t| >= 2.57)
+  PRIMARY ANY            trades  6646 dates  470 | mean -0.047pp | t -0.26 | MDE 0.51pp | halves +0.195 / -0.306 | quarters + 3/8
+  -> PRIMARY bar: NOT MET
+  S A1                   trades  2396 dates  436 | mean -0.484pp | t -3.20 | MDE 0.42pp | halves -0.421 / -0.544 | quarters + 2/8
+  S A2                   trades  3737 dates  455 | mean +0.215pp | t +0.69 | MDE 0.88pp | halves +0.704 / -0.285 | quarters + 3/8
+  S A3                   trades  1949 dates  424 | mean -0.363pp | t -2.40 | MDE 0.42pp | halves -0.273 / -0.447 | quarters + 2/8
+  S A4                   trades  2266 dates  444 | mean -0.330pp | t -1.33 | MDE 0.69pp | halves -0.595 / -0.067 | quarters + 4/8
+
+## reported, not cells
+  NOT-ANY                trades  6764 dates  465 | mean -0.058pp | t -0.41 | MDE 0.39pp | halves +0.292 / -0.424 | quarters + 2/8
+  ANY - NOT-ANY: +0.011pp, Welch t +0.05
+  0 anchors              trades  6764 dates  465 | mean -0.058pp | t -0.41 | MDE 0.39pp | halves +0.292 / -0.424 | quarters + 2/8
+  1 anchor               trades  4050 dates  460 | mean +0.102pp | t +0.54 | MDE 0.53pp | halves +0.416 / -0.220 | quarters + 5/8
+  2+ anchors             trades  2596 dates  444 | mean -0.232pp | t -1.04 | MDE 0.63pp | halves -0.090 / -0.373 | quarters + 4/8
+  WIDE arm, ANY          trades  6646 dates  470 | mean +0.058pp | t +0.23 | MDE 0.72pp | halves +0.651 / -0.576 | quarters + 3/8
