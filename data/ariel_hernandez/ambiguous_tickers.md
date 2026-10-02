@@ -4,7 +4,7 @@
 
 Two checks per video. **Ambiguous tickers**: spots where the auto-caption garbled a symbol — click the timestamp, check the chart, confirm the ticker. **Trades**: each trade with the day it was placed; ⬜ marks rows that need a glance — an unresolved ticker (`?`), an unresolved fill date, or a date *inferred* to a different day than the stream (e.g. he said "Thursday"). Rows with no ⬜ are same-session or he stated the date.
 
-**325** ticker flags · **1983** trades to date-check · across **337** videos. Conf: 🟡 likely · ❓ unsure.
+**325** ticker flags · **1941** trades to date-check · across **337** videos. Conf: 🟡 likely · ❓ unsure.
 
 ## Index — ticker flags by video
 
@@ -1713,8 +1713,8 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | · | [03:25](https://www.youtube.com/watch?v=DS-jMphq8yc&t=205s) | ARM | long · trim | today | 2026-05-28 |
 | ⬜ | [07:06](https://www.youtube.com/watch?v=DS-jMphq8yc&t=426s) | CRWD | short · short | — | _(unresolved)_ |
 | ⬜ | [07:06](https://www.youtube.com/watch?v=DS-jMphq8yc&t=426s) | CRWD | short · stopped_out | — | _(unresolved)_ |
-| ⬜ | [07:06](https://www.youtube.com/watch?v=DS-jMphq8yc&t=426s) | ? | short · short | — | _(unresolved)_ |
-| ⬜ | [07:06](https://www.youtube.com/watch?v=DS-jMphq8yc&t=426s) | ? | short · stopped_out | — | _(unresolved)_ |
+| ⬜ | [07:06](https://www.youtube.com/watch?v=DS-jMphq8yc&t=426s) | ARKK | short · short | — | _(unresolved)_ |
+| ⬜ | [07:06](https://www.youtube.com/watch?v=DS-jMphq8yc&t=426s) | ARKK | short · stopped_out | — | _(unresolved)_ |
 | · | [08:03](https://www.youtube.com/watch?v=DS-jMphq8yc&t=483s) | LITE | long · entry | today | 2026-05-28 |
 | · | [08:03](https://www.youtube.com/watch?v=DS-jMphq8yc&t=483s) | LITE | long · exit | today | 2026-05-28 |
 | ⬜ | [10:54](https://www.youtube.com/watch?v=DS-jMphq8yc&t=654s) | AAOI | long · entry | the other day | _(unresolved)_ |
@@ -2664,7 +2664,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | · | [01:35](https://www.youtube.com/watch?v=2H9p8xthyNo&t=95s) | DELL | long · hold | — | 2026-04-07 |
 | ⬜ | [02:59](https://www.youtube.com/watch?v=2H9p8xthyNo&t=179s) | ? | short · short | — | _(unresolved)_ |
 | ⬜ | [02:59](https://www.youtube.com/watch?v=2H9p8xthyNo&t=179s) | ? | short · cover | — | _(unresolved)_ |
-| ⬜ | [04:59](https://www.youtube.com/watch?v=2H9p8xthyNo&t=299s) | ? | short · hold | — | 2026-04-07 |
+| · | [04:59](https://www.youtube.com/watch?v=2H9p8xthyNo&t=299s) | ARKK | short · hold | — | 2026-04-07 |
 | · | [05:21](https://www.youtube.com/watch?v=2H9p8xthyNo&t=321s) | CAR | short · short | today | 2026-04-07 |
 | · | [05:49](https://www.youtube.com/watch?v=2H9p8xthyNo&t=349s) | CAR | short · cover | today | 2026-04-07 |
 | · | [05:49](https://www.youtube.com/watch?v=2H9p8xthyNo&t=349s) | CAR | short · cover | today | 2026-04-07 |
@@ -2689,7 +2689,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 |---|------|--------|--------------|---------|-----------|
 | · | [02:40](https://www.youtube.com/watch?v=6-dRT5ix61o&t=160s) | XOM | long · hold | — | 2026-04-06 |
 | · | [09:02](https://www.youtube.com/watch?v=6-dRT5ix61o&t=542s) | VLO | long · hold | — | 2026-04-06 |
-| ⬜ | [02:40](https://www.youtube.com/watch?v=6-dRT5ix61o&t=160s) | ? | short · add | today | 2026-04-06 |
+| · | [02:40](https://www.youtube.com/watch?v=6-dRT5ix61o&t=160s) | ARKK | short · add | today | 2026-04-06 |
 | · | [02:53](https://www.youtube.com/watch?v=6-dRT5ix61o&t=173s) | AXTI | short · cover | today | 2026-04-06 |
 | ⬜ | [03:06](https://www.youtube.com/watch?v=6-dRT5ix61o&t=186s) | AXTI | short · add | thursday | 2026-04-02 |
 | ⬜ | [03:19](https://www.youtube.com/watch?v=6-dRT5ix61o&t=199s) | AXTI | short · cover | — | _(unresolved)_ |
@@ -2863,9 +2863,9 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | · | [00:57](https://www.youtube.com/watch?v=fx5BUtP3P_U&t=57s) | LITE | short · add | today | 2026-04-01 |
 | · | [01:20](https://www.youtube.com/watch?v=fx5BUtP3P_U&t=80s) | AXTI | short · cover | today | 2026-04-01 |
 | · | [02:29](https://www.youtube.com/watch?v=fx5BUtP3P_U&t=149s) | AVGO | short · cover | today | 2026-04-01 |
-| ⬜ | [02:50](https://www.youtube.com/watch?v=fx5BUtP3P_U&t=170s) | ? | short · add | today | 2026-04-01 |
-| ⬜ | [02:50](https://www.youtube.com/watch?v=fx5BUtP3P_U&t=170s) | ? | short · stopped_out | today | 2026-04-01 |
-| ⬜ | [03:01](https://www.youtube.com/watch?v=fx5BUtP3P_U&t=181s) | ? | short · add | today | 2026-04-01 |
+| · | [02:50](https://www.youtube.com/watch?v=fx5BUtP3P_U&t=170s) | ARKK | short · add | today | 2026-04-01 |
+| · | [02:50](https://www.youtube.com/watch?v=fx5BUtP3P_U&t=170s) | ARKK | short · stopped_out | today | 2026-04-01 |
+| · | [03:01](https://www.youtube.com/watch?v=fx5BUtP3P_U&t=181s) | ARKK | short · add | today | 2026-04-01 |
 | · | [03:01](https://www.youtube.com/watch?v=fx5BUtP3P_U&t=181s) | APA | short · add | today | 2026-04-01 |
 | · | [03:14](https://www.youtube.com/watch?v=fx5BUtP3P_U&t=194s) | APA | short · cover | today | 2026-04-01 |
 | ⬜ | [03:14](https://www.youtube.com/watch?v=fx5BUtP3P_U&t=194s) | APA | short · add | yesterday | 2026-03-31 |
@@ -2904,7 +2904,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | · | [02:56](https://www.youtube.com/watch?v=7IHwl44gFT8&t=176s) | XOM | long · hold | — | 2026-03-31 |
 | · | [02:56](https://www.youtube.com/watch?v=7IHwl44gFT8&t=176s) | VLO | long · hold | — | 2026-03-31 |
 | · | [03:38](https://www.youtube.com/watch?v=7IHwl44gFT8&t=218s) | AVGO | short · cover | today | 2026-03-31 |
-| ⬜ | [03:58](https://www.youtube.com/watch?v=7IHwl44gFT8&t=238s) | ? | short · cover | today | 2026-03-31 |
+| · | [03:58](https://www.youtube.com/watch?v=7IHwl44gFT8&t=238s) | ARKK | short · cover | today | 2026-03-31 |
 | ⬜ | [04:43](https://www.youtube.com/watch?v=7IHwl44gFT8&t=283s) | LITE | short · cover | yesterday | 2026-03-30 |
 | · | [04:31](https://www.youtube.com/watch?v=7IHwl44gFT8&t=271s) | LITE | short · cover | today | 2026-03-31 |
 | · | [04:43](https://www.youtube.com/watch?v=7IHwl44gFT8&t=283s) | AXTI | short · hold | — | 2026-03-31 |
@@ -3002,7 +3002,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | · | [02:29](https://www.youtube.com/watch?v=QmmVD9xr8hg&t=149s) | XOM | long · hold | — | 2026-03-24 |
 | · | [05:21](https://www.youtube.com/watch?v=QmmVD9xr8hg&t=321s) | MU | long · entry | today | 2026-03-24 |
 | · | [05:33](https://www.youtube.com/watch?v=QmmVD9xr8hg&t=333s) | MU | long · exit | by the end of the day | 2026-03-24 |
-| ⬜ | [09:04](https://www.youtube.com/watch?v=QmmVD9xr8hg&t=544s) | ? | short · hold | — | 2026-03-24 |
+| · | [09:04](https://www.youtube.com/watch?v=QmmVD9xr8hg&t=544s) | ARKK | short · hold | — | 2026-03-24 |
 | · | [09:04](https://www.youtube.com/watch?v=QmmVD9xr8hg&t=544s) | AXTI | short · hold | — | 2026-03-24 |
 | ⬜ | [12:27](https://www.youtube.com/watch?v=QmmVD9xr8hg&t=747s) | GDX | short · short | — | _(unresolved)_ |
 
@@ -3149,7 +3149,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | · | [03:11](https://www.youtube.com/watch?v=Cop1587fIDo&t=191s) | XOM | long · hold | — | 2026-03-13 |
 | · | [07:56](https://www.youtube.com/watch?v=Cop1587fIDo&t=476s) | GDX | short · hold | — | 2026-03-13 |
 | ⬜ | [04:55](https://www.youtube.com/watch?v=Cop1587fIDo&t=295s) | NVDA | short · short | yesterday | 2026-03-12 |
-| ⬜ | [09:53](https://www.youtube.com/watch?v=Cop1587fIDo&t=593s) | ? | short · short | today | 2026-03-13 |
+| · | [09:53](https://www.youtube.com/watch?v=Cop1587fIDo&t=593s) | ARKK | short · short | today | 2026-03-13 |
 | · | [10:04](https://www.youtube.com/watch?v=Cop1587fIDo&t=604s) | PLTR | short · hold | — | 2026-03-13 |
 | · | [10:04](https://www.youtube.com/watch?v=Cop1587fIDo&t=604s) | VLO | long · hold | — | 2026-03-13 |
 
@@ -4732,7 +4732,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | · | [04:04](https://www.youtube.com/watch?v=WbqCWEG7hlY&t=244s) | CIFR | short · short | today | 2025-11-20 |
 | · | [12:34](https://www.youtube.com/watch?v=WbqCWEG7hlY&t=754s) | OKLO | short · hold | — | 2025-11-20 |
 | · | [12:34](https://www.youtube.com/watch?v=WbqCWEG7hlY&t=754s) | RGTI | short · hold | — | 2025-11-20 |
-| ⬜ | [06:14](https://www.youtube.com/watch?v=WbqCWEG7hlY&t=374s) | ? | long · exit | — | _(unresolved)_ |
+| ⬜ | [06:14](https://www.youtube.com/watch?v=WbqCWEG7hlY&t=374s) | ARKK | long · exit | — | _(unresolved)_ |
 
 
 ## 2025-11-19 — 11/19/2025 Daily recap and Watchlist: NVDA saves the world
@@ -4981,7 +4981,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | ⬜ | [28:46](https://www.youtube.com/watch?v=L1fXIr6fXFo&t=1726s) | OKLO | short · cover | friday | 2025-10-31 |
 | ⬜ | [28:46](https://www.youtube.com/watch?v=L1fXIr6fXFo&t=1726s) | OKLO | short · cover | friday | 2025-10-31 |
 | · | [11:14](https://www.youtube.com/watch?v=L1fXIr6fXFo&t=674s) | TSLA | long · hold | — | 2025-11-07 |
-| ⬜ | [11:14](https://www.youtube.com/watch?v=L1fXIr6fXFo&t=674s) | ? | long · hold | — | 2025-11-07 |
+| · | [11:14](https://www.youtube.com/watch?v=L1fXIr6fXFo&t=674s) | ARKK | long · hold | — | 2025-11-07 |
 
 
 ## 2025-11-06 — 11/6/2025 Daily Recap: $ARKK loses the 50sma
@@ -5098,7 +5098,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | · | [04:40](https://www.youtube.com/watch?v=dT-iUDq6VyQ&t=280s) | TSLA | long · add | today | 2025-11-03 |
 | · | [06:37](https://www.youtube.com/watch?v=dT-iUDq6VyQ&t=397s) | B | long · entry | today | 2025-11-03 |
 | ⬜ | [05:49](https://www.youtube.com/watch?v=dT-iUDq6VyQ&t=349s) | UAMY | short · cover | on 1022 | 2025-10-22 |
-| ⬜ | [11:04](https://www.youtube.com/watch?v=dT-iUDq6VyQ&t=664s) | ? | long · hold | — | 2025-11-03 |
+| · | [11:04](https://www.youtube.com/watch?v=dT-iUDq6VyQ&t=664s) | ARKK | long · hold | — | 2025-11-03 |
 | · | [11:14](https://www.youtube.com/watch?v=dT-iUDq6VyQ&t=674s) | DELL | long · hold | — | 2025-11-03 |
 | · | [11:14](https://www.youtube.com/watch?v=dT-iUDq6VyQ&t=674s) | MAGS | long · hold | — | 2025-11-03 |
 | · | [11:26](https://www.youtube.com/watch?v=dT-iUDq6VyQ&t=686s) | RKLB | long · hold | — | 2025-11-03 |
@@ -5164,7 +5164,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | · | [08:33](https://www.youtube.com/watch?v=82U0X4CUtzw&t=513s) | RKLB | long · hold | — | 2025-10-28 |
 | · | [08:57](https://www.youtube.com/watch?v=82U0X4CUtzw&t=537s) | DELL | long · trim | today | 2025-10-28 |
 | · | [09:11](https://www.youtube.com/watch?v=82U0X4CUtzw&t=551s) | BABA | long · hold | — | 2025-10-28 |
-| ⬜ | [09:11](https://www.youtube.com/watch?v=82U0X4CUtzw&t=551s) | ? | long · hold | — | 2025-10-28 |
+| · | [09:11](https://www.youtube.com/watch?v=82U0X4CUtzw&t=551s) | ARKK | long · hold | — | 2025-10-28 |
 
 
 ## 2025-10-27 — 10/27/2025 Daily Recap: Mag 7 lead
@@ -5292,7 +5292,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | ⬜ | [12:09](https://www.youtube.com/watch?v=ayzqv6WZdXo&t=729s) | HIMS | long · entry | yesterday | 2025-10-16 |
 | ⬜ | [12:19](https://www.youtube.com/watch?v=ayzqv6WZdXo&t=739s) | HIMS | long · stopped_out | yesterday | 2025-10-16 |
 | · | [14:57](https://www.youtube.com/watch?v=ayzqv6WZdXo&t=897s) | RKLB | long · trim | today | 2025-10-17 |
-| ⬜ | [15:17](https://www.youtube.com/watch?v=ayzqv6WZdXo&t=917s) | ? | long · hold | — | 2025-10-17 |
+| · | [15:17](https://www.youtube.com/watch?v=ayzqv6WZdXo&t=917s) | ARKK | long · hold | — | 2025-10-17 |
 | · | [16:03](https://www.youtube.com/watch?v=ayzqv6WZdXo&t=963s) | RGTI | short · hold | — | 2025-10-17 |
 | ⬜ | [16:27](https://www.youtube.com/watch?v=ayzqv6WZdXo&t=987s) | ? | long · entry | a few days ago | _(unresolved)_ |
 | ⬜ | [16:15](https://www.youtube.com/watch?v=ayzqv6WZdXo&t=975s) | ? | long · trim | today | 2025-10-17 |
@@ -5345,7 +5345,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | · | [09:59](https://www.youtube.com/watch?v=3ZWVp7W6Vmo&t=599s) | GEV | long · add | today | 2025-10-15 |
 | ⬜ | [09:59](https://www.youtube.com/watch?v=3ZWVp7W6Vmo&t=599s) | GEV | long · stopped_out | about 10 minutes later | _(unresolved)_ |
 | · | [10:12](https://www.youtube.com/watch?v=3ZWVp7W6Vmo&t=612s) | GEV | long · exit | today | 2025-10-15 |
-| ⬜ | [11:57](https://www.youtube.com/watch?v=3ZWVp7W6Vmo&t=717s) | ? | long · hold | — | 2025-10-15 |
+| · | [11:57](https://www.youtube.com/watch?v=3ZWVp7W6Vmo&t=717s) | ARKK | long · hold | — | 2025-10-15 |
 | · | [12:34](https://www.youtube.com/watch?v=3ZWVp7W6Vmo&t=754s) | RKLB | long · trim | today | 2025-10-15 |
 | · | [12:48](https://www.youtube.com/watch?v=3ZWVp7W6Vmo&t=768s) | TSLA | long · hold | — | 2025-10-15 |
 | · | [13:26](https://www.youtube.com/watch?v=3ZWVp7W6Vmo&t=806s) | QQQ | short · hold | — | 2025-10-15 |
@@ -5390,7 +5390,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 |---|------|--------|--------------|---------|-----------|
 | ⬜ | [11:11](https://www.youtube.com/watch?v=jD3sQyvYzvA&t=671s) | GEV | long · entry | wednesday | 2025-10-08 |
 | · | [12:32](https://www.youtube.com/watch?v=jD3sQyvYzvA&t=752s) | QQQ | short · hold | — | 2025-10-13 |
-| ⬜ | [13:20](https://www.youtube.com/watch?v=jD3sQyvYzvA&t=800s) | ? | long · hold | — | 2025-10-13 |
+| · | [13:20](https://www.youtube.com/watch?v=jD3sQyvYzvA&t=800s) | ARKK | long · hold | — | 2025-10-13 |
 | · | [13:20](https://www.youtube.com/watch?v=jD3sQyvYzvA&t=800s) | RKLB | long · hold | — | 2025-10-13 |
 | · | [13:20](https://www.youtube.com/watch?v=jD3sQyvYzvA&t=800s) | TSLA | long · hold | — | 2025-10-13 |
 
@@ -5452,7 +5452,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 |---|------|--------|--------------|---------|-----------|
 | · | [08:29](https://www.youtube.com/watch?v=yYu3m045I0A&t=509s) | TSLA | long · trim | today | 2025-10-07 |
 | · | [22:20](https://www.youtube.com/watch?v=yYu3m045I0A&t=1340s) | OPEN | long · reentry | today | 2025-10-07 |
-| ⬜ | [22:30](https://www.youtube.com/watch?v=yYu3m045I0A&t=1350s) | ? | long · hold | — | 2025-10-07 |
+| · | [22:30](https://www.youtube.com/watch?v=yYu3m045I0A&t=1350s) | ARKK | long · hold | — | 2025-10-07 |
 | · | [22:44](https://www.youtube.com/watch?v=yYu3m045I0A&t=1364s) | RKLB | long · hold | — | 2025-10-07 |
 | · | [22:44](https://www.youtube.com/watch?v=yYu3m045I0A&t=1364s) | PDD | long · hold | — | 2025-10-07 |
 | · | [22:44](https://www.youtube.com/watch?v=yYu3m045I0A&t=1364s) | RGTI | short · short | today | 2025-10-07 |
@@ -5481,7 +5481,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | · | [03:18](https://www.youtube.com/watch?v=ZJ4IxEUiu3w&t=198s) | CRWV | long · stopped_out | towards the end of the day | 2025-10-06 |
 | · | [03:28](https://www.youtube.com/watch?v=ZJ4IxEUiu3w&t=208s) | RGTI | short · short | today | 2025-10-06 |
 | · | [07:13](https://www.youtube.com/watch?v=ZJ4IxEUiu3w&t=433s) | RGTI | short · stopped_out | today | 2025-10-06 |
-| ⬜ | [07:24](https://www.youtube.com/watch?v=ZJ4IxEUiu3w&t=444s) | ? | long · hold | — | 2025-10-06 |
+| · | [07:24](https://www.youtube.com/watch?v=ZJ4IxEUiu3w&t=444s) | ARKK | long · hold | — | 2025-10-06 |
 | · | [07:36](https://www.youtube.com/watch?v=ZJ4IxEUiu3w&t=456s) | RKLB | long · hold | — | 2025-10-06 |
 | · | [07:36](https://www.youtube.com/watch?v=ZJ4IxEUiu3w&t=456s) | XAR | long · hold | — | 2025-10-06 |
 | · | [07:48](https://www.youtube.com/watch?v=ZJ4IxEUiu3w&t=468s) | PDD | long · hold | — | 2025-10-06 |
@@ -5520,7 +5520,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | · | [09:48](https://www.youtube.com/watch?v=6gSYdm5z1Lo&t=588s) | OPEN | long · exit | today | 2025-10-03 |
 | · | [10:18](https://www.youtube.com/watch?v=6gSYdm5z1Lo&t=618s) | GEV | long · entry | this morning | 2025-10-03 |
 | · | [11:08](https://www.youtube.com/watch?v=6gSYdm5z1Lo&t=668s) | GEV | long · exit | today | 2025-10-03 |
-| ⬜ | [14:22](https://www.youtube.com/watch?v=6gSYdm5z1Lo&t=862s) | ? | long · hold | — | 2025-10-03 |
+| · | [14:22](https://www.youtube.com/watch?v=6gSYdm5z1Lo&t=862s) | ARKK | long · hold | — | 2025-10-03 |
 | · | [14:33](https://www.youtube.com/watch?v=6gSYdm5z1Lo&t=873s) | PDD | long · hold | — | 2025-10-03 |
 | · | [14:54](https://www.youtube.com/watch?v=6gSYdm5z1Lo&t=894s) | TSLA | long · add | today | 2025-10-03 |
 
@@ -5712,7 +5712,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | · | [08:40](https://www.youtube.com/watch?v=lyQhaxuSrMM&t=520s) | MP | long · hold | — | 2025-09-23 |
 | · | [08:51](https://www.youtube.com/watch?v=lyQhaxuSrMM&t=531s) | CCJ | long · hold | — | 2025-09-23 |
 | · | [09:14](https://www.youtube.com/watch?v=lyQhaxuSrMM&t=554s) | CCL | long · hold | — | 2025-09-23 |
-| ⬜ | [09:34](https://www.youtube.com/watch?v=lyQhaxuSrMM&t=574s) | ? | long · hold | — | 2025-09-23 |
+| · | [09:34](https://www.youtube.com/watch?v=lyQhaxuSrMM&t=574s) | ARKK | long · hold | — | 2025-09-23 |
 | · | [12:47](https://www.youtube.com/watch?v=lyQhaxuSrMM&t=767s) | AOI | long · stopped_out | today | 2025-09-23 |
 | · | [12:47](https://www.youtube.com/watch?v=lyQhaxuSrMM&t=767s) | SYM | long · trim | today | 2025-09-23 |
 | · | [13:13](https://www.youtube.com/watch?v=lyQhaxuSrMM&t=793s) | IONQ | short · short | today | 2025-09-23 |
@@ -5755,8 +5755,8 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 
 | ✔ | Time | Ticker | Dir · Action | He said | Fill date |
 |---|------|--------|--------------|---------|-----------|
-| ⬜ | [00:37](https://www.youtube.com/watch?v=a6X6tT5JLD4&t=37s) | ? | long · add | on 99 | 2025-09-09 |
-| ⬜ | [00:37](https://www.youtube.com/watch?v=a6X6tT5JLD4&t=37s) | ? | long · stopped_out | on 917 | 2025-09-17 |
+| ⬜ | [00:37](https://www.youtube.com/watch?v=a6X6tT5JLD4&t=37s) | ARKK | long · add | on 99 | 2025-09-09 |
+| ⬜ | [00:37](https://www.youtube.com/watch?v=a6X6tT5JLD4&t=37s) | ARKK | long · stopped_out | on 917 | 2025-09-17 |
 | · | [00:57](https://www.youtube.com/watch?v=a6X6tT5JLD4&t=57s) | OKLO | long · trim | today | 2025-09-19 |
 | ⬜ | [01:50](https://www.youtube.com/watch?v=a6X6tT5JLD4&t=110s) | CCJ | long · entry | on 99 | 2025-09-09 |
 | ⬜ | [02:36](https://www.youtube.com/watch?v=a6X6tT5JLD4&t=156s) | SYM | long · entry | yesterday | 2025-09-18 |
@@ -5785,8 +5785,8 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | ✔ | Time | Ticker | Dir · Action | He said | Fill date |
 |---|------|--------|--------------|---------|-----------|
 | · | [00:12](https://www.youtube.com/watch?v=RGmEbBIVR88&t=12s) | OKLO | long · trim | today | 2025-09-18 |
-| ⬜ | [00:34](https://www.youtube.com/watch?v=RGmEbBIVR88&t=34s) | ? | long · add | on 99 | _(unresolved)_ |
-| ⬜ | [00:34](https://www.youtube.com/watch?v=RGmEbBIVR88&t=34s) | ? | long · stopped_out | yesterday | 2025-09-17 |
+| ⬜ | [00:34](https://www.youtube.com/watch?v=RGmEbBIVR88&t=34s) | ARKK | long · add | on 99 | _(unresolved)_ |
+| ⬜ | [00:34](https://www.youtube.com/watch?v=RGmEbBIVR88&t=34s) | ARKK | long · stopped_out | yesterday | 2025-09-17 |
 | ⬜ | [09:03](https://www.youtube.com/watch?v=RGmEbBIVR88&t=543s) | ? | long · entry | march | _(unresolved)_ |
 | · | [05:06](https://www.youtube.com/watch?v=RGmEbBIVR88&t=306s) | MSTR | short · short | today | 2025-09-18 |
 | · | [06:08](https://www.youtube.com/watch?v=RGmEbBIVR88&t=368s) | SYM | long · entry | today | 2025-09-18 |
@@ -5887,7 +5887,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | · | [01:20](https://www.youtube.com/watch?v=zc9-nTk2a9M&t=80s) | ETH | long · entry | today | 2025-09-12 |
 | · | [01:44](https://www.youtube.com/watch?v=zc9-nTk2a9M&t=104s) | XRP | long · entry | today | 2025-09-12 |
 | · | [02:11](https://www.youtube.com/watch?v=zc9-nTk2a9M&t=131s) | PLTR | long · entry | today | 2025-09-12 |
-| ⬜ | [02:26](https://www.youtube.com/watch?v=zc9-nTk2a9M&t=146s) | ? | long · add | a few days ago | _(unresolved)_ |
+| ⬜ | [02:26](https://www.youtube.com/watch?v=zc9-nTk2a9M&t=146s) | ARKK | long · add | a few days ago | _(unresolved)_ |
 | · | [03:11](https://www.youtube.com/watch?v=zc9-nTk2a9M&t=191s) | CCL | long · hold | — | 2025-09-12 |
 | · | [03:11](https://www.youtube.com/watch?v=zc9-nTk2a9M&t=191s) | PDD | long · hold | — | 2025-09-12 |
 | · | [03:22](https://www.youtube.com/watch?v=zc9-nTk2a9M&t=202s) | CCJ | long · hold | — | 2025-09-12 |
@@ -5945,7 +5945,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 |---|------|--------|--------------|---------|-----------|
 | · | [02:26](https://www.youtube.com/watch?v=Zycgs1U4U4E&t=146s) | CCJ | long · entry | today | 2025-09-09 |
 | · | [06:31](https://www.youtube.com/watch?v=Zycgs1U4U4E&t=391s) | MP | long · entry | today | 2025-09-09 |
-| ⬜ | [05:54](https://www.youtube.com/watch?v=Zycgs1U4U4E&t=354s) | ? | long · add | today | 2025-09-09 |
+| · | [05:54](https://www.youtube.com/watch?v=Zycgs1U4U4E&t=354s) | ARKK | long · add | today | 2025-09-09 |
 | · | [05:54](https://www.youtube.com/watch?v=Zycgs1U4U4E&t=354s) | PDD | long · add | today | 2025-09-09 |
 | · | [06:08](https://www.youtube.com/watch?v=Zycgs1U4U4E&t=368s) | TSLA | long · add | today | 2025-09-09 |
 
@@ -5985,7 +5985,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 |---|------|--------|--------------|---------|-----------|
 | ⬜ | [06:50](https://www.youtube.com/watch?v=XWtPleuyvNY&t=410s) | ? | long · exit | — | _(unresolved)_ |
 | · | [10:46](https://www.youtube.com/watch?v=XWtPleuyvNY&t=646s) | PDD | long · hold | — | 2025-09-04 |
-| ⬜ | [11:32](https://www.youtube.com/watch?v=XWtPleuyvNY&t=692s) | ? | long · hold | — | 2025-09-04 |
+| · | [11:32](https://www.youtube.com/watch?v=XWtPleuyvNY&t=692s) | ARKK | long · hold | — | 2025-09-04 |
 
 
 ## 2025-09-03 — 9/3/2025 Daily Recap
@@ -6003,7 +6003,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | ✔ | Time | Ticker | Dir · Action | He said | Fill date |
 |---|------|--------|--------------|---------|-----------|
 | · | [03:09](https://www.youtube.com/watch?v=aA9pPlkXqec&t=189s) | PDD | long · entry | today | 2025-09-03 |
-| ⬜ | [05:43](https://www.youtube.com/watch?v=aA9pPlkXqec&t=343s) | ? | long · hold | — | 2025-09-03 |
+| · | [05:43](https://www.youtube.com/watch?v=aA9pPlkXqec&t=343s) | ARKK | long · hold | — | 2025-09-03 |
 | · | [05:54](https://www.youtube.com/watch?v=aA9pPlkXqec&t=354s) | CCL | long · hold | — | 2025-09-03 |
 
 
@@ -6021,7 +6021,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 
 | ✔ | Time | Ticker | Dir · Action | He said | Fill date |
 |---|------|--------|--------------|---------|-----------|
-| ⬜ | [04:48](https://www.youtube.com/watch?v=OXHzHCe20F4&t=288s) | ? | long · hold | — | 2025-09-02 |
+| · | [04:48](https://www.youtube.com/watch?v=OXHzHCe20F4&t=288s) | ARKK | long · hold | — | 2025-09-02 |
 | · | [04:59](https://www.youtube.com/watch?v=OXHzHCe20F4&t=299s) | CCL | long · hold | — | 2025-09-02 |
 | · | [04:59](https://www.youtube.com/watch?v=OXHzHCe20F4&t=299s) | RBLX | short · hold | — | 2025-09-02 |
 | · | [04:59](https://www.youtube.com/watch?v=OXHzHCe20F4&t=299s) | PLTR | short · short | today | 2025-09-02 |
@@ -6114,7 +6114,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | ⬜ | [12:06](https://www.youtube.com/watch?v=xvxqqAQqlxc&t=726s) | HOOD | long · stopped_out | yesterday | 2025-08-19 |
 | ⬜ | [12:06](https://www.youtube.com/watch?v=xvxqqAQqlxc&t=726s) | TSLA | long · stopped_out | yesterday | 2025-08-19 |
 | ⬜ | [12:16](https://www.youtube.com/watch?v=xvxqqAQqlxc&t=736s) | OKLO | long · exit | yesterday | 2025-08-19 |
-| ⬜ | [16:28](https://www.youtube.com/watch?v=xvxqqAQqlxc&t=988s) | ? | long · hold | — | 2025-08-20 |
+| · | [16:28](https://www.youtube.com/watch?v=xvxqqAQqlxc&t=988s) | ARKK | long · hold | — | 2025-08-20 |
 | · | [16:39](https://www.youtube.com/watch?v=xvxqqAQqlxc&t=999s) | CCL | long · hold | — | 2025-08-20 |
 | · | [16:51](https://www.youtube.com/watch?v=xvxqqAQqlxc&t=1011s) | RBLX | short · hold | — | 2025-08-20 |
 | · | [17:09](https://www.youtube.com/watch?v=xvxqqAQqlxc&t=1029s) | QBTS | short · hold | — | 2025-08-20 |
@@ -6144,7 +6144,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | · | [10:23](https://www.youtube.com/watch?v=_oQVtkrA16k&t=623s) | TSLA | long · stopped_out | today | 2025-08-19 |
 | · | [10:34](https://www.youtube.com/watch?v=_oQVtkrA16k&t=634s) | OKLO | long · exit | today | 2025-08-19 |
 | · | [10:34](https://www.youtube.com/watch?v=_oQVtkrA16k&t=634s) | IWM | long · exit | today | 2025-08-19 |
-| ⬜ | [11:29](https://www.youtube.com/watch?v=_oQVtkrA16k&t=689s) | ? | long · hold | — | 2025-08-19 |
+| · | [11:29](https://www.youtube.com/watch?v=_oQVtkrA16k&t=689s) | ARKK | long · hold | — | 2025-08-19 |
 | · | [11:29](https://www.youtube.com/watch?v=_oQVtkrA16k&t=689s) | CCL | long · hold | — | 2025-08-19 |
 
 
@@ -6167,7 +6167,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | ⬜ | [05:57](https://www.youtube.com/watch?v=3D49YXhwSs8&t=357s) | PLTR | short · short | — | _(unresolved)_ |
 | ⬜ | [05:57](https://www.youtube.com/watch?v=3D49YXhwSs8&t=357s) | PLTR | short · stopped_out | the next day | _(unresolved)_ |
 | ⬜ | [07:51](https://www.youtube.com/watch?v=3D49YXhwSs8&t=471s) | TSLA | long · entry | on 88 | 2025-08-08 |
-| ⬜ | [08:58](https://www.youtube.com/watch?v=3D49YXhwSs8&t=538s) | ? | long · hold | — | 2025-08-18 |
+| · | [08:58](https://www.youtube.com/watch?v=3D49YXhwSs8&t=538s) | ARKK | long · hold | — | 2025-08-18 |
 | · | [08:58](https://www.youtube.com/watch?v=3D49YXhwSs8&t=538s) | OKLO | long · hold | — | 2025-08-18 |
 | ⬜ | [09:10](https://www.youtube.com/watch?v=3D49YXhwSs8&t=550s) | RBLX | short · cover | friday | 2025-08-15 |
 | · | [09:23](https://www.youtube.com/watch?v=3D49YXhwSs8&t=563s) | CCL | long · hold | — | 2025-08-18 |
@@ -6311,7 +6311,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | ⬜ | [15:07](https://www.youtube.com/watch?v=r4N2W3FmWLU&t=907s) | RGTI | short · short | on the 29th | 2025-07-29 |
 | ⬜ | [15:07](https://www.youtube.com/watch?v=r4N2W3FmWLU&t=907s) | SOFI | short · cover | yesterday | 2025-07-30 |
 | ⬜ | [14:45](https://www.youtube.com/watch?v=r4N2W3FmWLU&t=885s) | JOBY | short · short | last monday | _(unresolved)_ |
-| ⬜ | [13:32](https://www.youtube.com/watch?v=r4N2W3FmWLU&t=812s) | ? | long · entry | since the beginning of last month | _(unresolved)_ |
+| ⬜ | [13:32](https://www.youtube.com/watch?v=r4N2W3FmWLU&t=812s) | ARKK | long · entry | since the beginning of last month | _(unresolved)_ |
 | · | [14:03](https://www.youtube.com/watch?v=r4N2W3FmWLU&t=843s) | CCL | long · hold | — | 2025-07-31 |
 | · | [14:03](https://www.youtube.com/watch?v=r4N2W3FmWLU&t=843s) | IBIT | long · hold | — | 2025-07-31 |
 | · | [14:12](https://www.youtube.com/watch?v=r4N2W3FmWLU&t=852s) | OKLO | long · hold | — | 2025-07-31 |
@@ -6358,7 +6358,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 |---|------|--------|--------------|---------|-----------|
 | · | [03:57](https://www.youtube.com/watch?v=qxshGKWaEpA&t=237s) | TOST | long · trim | today | 2025-07-29 |
 | · | [04:09](https://www.youtube.com/watch?v=qxshGKWaEpA&t=249s) | OKLO | long · trim | today | 2025-07-29 |
-| ⬜ | [17:31](https://www.youtube.com/watch?v=qxshGKWaEpA&t=1051s) | ? | long · hold | — | 2025-07-29 |
+| · | [17:31](https://www.youtube.com/watch?v=qxshGKWaEpA&t=1051s) | ARKK | long · hold | — | 2025-07-29 |
 | · | [17:31](https://www.youtube.com/watch?v=qxshGKWaEpA&t=1051s) | CCL | long · hold | — | 2025-07-29 |
 | · | [17:41](https://www.youtube.com/watch?v=qxshGKWaEpA&t=1061s) | IBIT | long · hold | — | 2025-07-29 |
 | · | [17:55](https://www.youtube.com/watch?v=qxshGKWaEpA&t=1075s) | TSLA | long · hold | — | 2025-07-29 |
@@ -6390,7 +6390,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | · | [03:19](https://www.youtube.com/watch?v=_jAfrMi_Ekk&t=199s) | IBIT | long · hold | — | 2025-07-28 |
 | ⬜ | [09:04](https://www.youtube.com/watch?v=_jAfrMi_Ekk&t=544s) | CLS | long · entry | — | _(unresolved)_ |
 | ⬜ | [09:04](https://www.youtube.com/watch?v=_jAfrMi_Ekk&t=544s) | CLS | long · exit | — | _(unresolved)_ |
-| ⬜ | [09:17](https://www.youtube.com/watch?v=_jAfrMi_Ekk&t=557s) | ? | long · hold | — | 2025-07-28 |
+| · | [09:17](https://www.youtube.com/watch?v=_jAfrMi_Ekk&t=557s) | ARKK | long · hold | — | 2025-07-28 |
 | · | [09:17](https://www.youtube.com/watch?v=_jAfrMi_Ekk&t=557s) | CCL | long · hold | — | 2025-07-28 |
 | · | [09:17](https://www.youtube.com/watch?v=_jAfrMi_Ekk&t=557s) | TOST | long · hold | — | 2025-07-28 |
 | · | [09:17](https://www.youtube.com/watch?v=_jAfrMi_Ekk&t=557s) | TSLA | long · hold | — | 2025-07-28 |
@@ -6430,7 +6430,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | ✔ | Time | Ticker | Dir · Action | He said | Fill date |
 |---|------|--------|--------------|---------|-----------|
 | · | [05:52](https://www.youtube.com/watch?v=mr2Mom7j0ug&t=352s) | TSLA | long · exit | before the close | 2025-07-23 |
-| ⬜ | [05:52](https://www.youtube.com/watch?v=mr2Mom7j0ug&t=352s) | ? | long · hold | — | 2025-07-23 |
+| · | [05:52](https://www.youtube.com/watch?v=mr2Mom7j0ug&t=352s) | ARKK | long · hold | — | 2025-07-23 |
 | · | [06:05](https://www.youtube.com/watch?v=mr2Mom7j0ug&t=365s) | CCL | long · hold | — | 2025-07-23 |
 | · | [06:05](https://www.youtube.com/watch?v=mr2Mom7j0ug&t=365s) | DKNG | long · hold | — | 2025-07-23 |
 | · | [06:05](https://www.youtube.com/watch?v=mr2Mom7j0ug&t=365s) | IBIT | long · hold | — | 2025-07-23 |
@@ -6458,7 +6458,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | · | [02:40](https://www.youtube.com/watch?v=RXsHWcR37DI&t=160s) | TSLA | long · hold | — | 2025-07-22 |
 | ⬜ | [03:11](https://www.youtube.com/watch?v=RXsHWcR37DI&t=191s) | NFLX | long · exit | june 10th | 2025-06-10 |
 | · | [09:53](https://www.youtube.com/watch?v=RXsHWcR37DI&t=593s) | TOST | long · hold | — | 2025-07-22 |
-| ⬜ | [16:49](https://www.youtube.com/watch?v=RXsHWcR37DI&t=1009s) | ? | long · hold | — | 2025-07-22 |
+| · | [16:49](https://www.youtube.com/watch?v=RXsHWcR37DI&t=1009s) | ARKK | long · hold | — | 2025-07-22 |
 | · | [16:49](https://www.youtube.com/watch?v=RXsHWcR37DI&t=1009s) | CCL | long · hold | — | 2025-07-22 |
 | · | [17:00](https://www.youtube.com/watch?v=RXsHWcR37DI&t=1020s) | IBIT | long · hold | — | 2025-07-22 |
 | ⬜ | [17:24](https://www.youtube.com/watch?v=RXsHWcR37DI&t=1044s) | OKLO | long · trim | — | _(unresolved)_ |
@@ -6515,7 +6515,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | · | [03:55](https://www.youtube.com/watch?v=kmfIC_Xi4Ek&t=235s) | OKLO | long · trim | midday | 2025-07-16 |
 | ⬜ | [11:53](https://www.youtube.com/watch?v=kmfIC_Xi4Ek&t=713s) | SHOP | long · entry | back on 611 | 2025-06-11 |
 | ⬜ | [12:04](https://www.youtube.com/watch?v=kmfIC_Xi4Ek&t=724s) | SHOP | long · exit | — | _(unresolved)_ |
-| ⬜ | [15:53](https://www.youtube.com/watch?v=kmfIC_Xi4Ek&t=953s) | ? | long · hold | — | 2025-07-16 |
+| · | [15:53](https://www.youtube.com/watch?v=kmfIC_Xi4Ek&t=953s) | ARKK | long · hold | — | 2025-07-16 |
 | · | [15:53](https://www.youtube.com/watch?v=kmfIC_Xi4Ek&t=953s) | CCL | long · hold | — | 2025-07-16 |
 | · | [15:53](https://www.youtube.com/watch?v=kmfIC_Xi4Ek&t=953s) | IBIT | long · hold | — | 2025-07-16 |
 
@@ -6554,7 +6554,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | ⬜ | [01:18](https://www.youtube.com/watch?v=WJLpSY8-o_k&t=78s) | IBIT | long · trim | yesterday | 2025-07-14 |
 | ⬜ | [03:36](https://www.youtube.com/watch?v=WJLpSY8-o_k&t=216s) | ? | long · trim | today | 2025-07-15 |
 | ⬜ | [06:17](https://www.youtube.com/watch?v=WJLpSY8-o_k&t=377s) | AG | long · exit | — | _(unresolved)_ |
-| ⬜ | [04:23](https://www.youtube.com/watch?v=WJLpSY8-o_k&t=263s) | ? | long · hold | — | 2025-07-15 |
+| · | [04:23](https://www.youtube.com/watch?v=WJLpSY8-o_k&t=263s) | ARKK | long · hold | — | 2025-07-15 |
 | · | [04:23](https://www.youtube.com/watch?v=WJLpSY8-o_k&t=263s) | CCL | long · hold | — | 2025-07-15 |
 | · | [04:23](https://www.youtube.com/watch?v=WJLpSY8-o_k&t=263s) | OKLO | long · hold | — | 2025-07-15 |
 
@@ -6578,7 +6578,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | ⬜ | [46:26](https://www.youtube.com/watch?v=H6KQGJnHDLE&t=2786s) | IBIT | long · trim | friday | 2025-07-11 |
 | ⬜ | [11:20](https://www.youtube.com/watch?v=H6KQGJnHDLE&t=680s) | AG | long · entry | friday | 2025-07-11 |
 | · | [15:58](https://www.youtube.com/watch?v=H6KQGJnHDLE&t=958s) | CCL | long · hold | — | 2025-07-14 |
-| ⬜ | [09:16](https://www.youtube.com/watch?v=H6KQGJnHDLE&t=556s) | ? | long · entry | — | _(unresolved)_ |
+| ⬜ | [09:16](https://www.youtube.com/watch?v=H6KQGJnHDLE&t=556s) | ARKK | long · entry | — | _(unresolved)_ |
 | ⬜ | [27:08](https://www.youtube.com/watch?v=H6KQGJnHDLE&t=1628s) | SOFI | long · entry | — | _(unresolved)_ |
 | ⬜ | [27:22](https://www.youtube.com/watch?v=H6KQGJnHDLE&t=1642s) | SOFI | long · stopped_out | on the 13th | _(unresolved)_ |
 | ⬜ | [42:20](https://www.youtube.com/watch?v=H6KQGJnHDLE&t=2540s) | JPM | long · entry | — | _(unresolved)_ |
@@ -6603,7 +6603,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | · | [02:43](https://www.youtube.com/watch?v=urtKHrRabUw&t=163s) | AG | long · exit | today | 2025-07-14 |
 | · | [03:03](https://www.youtube.com/watch?v=urtKHrRabUw&t=183s) | IBIT | long · trim | this morning | 2025-07-14 |
 | · | [03:13](https://www.youtube.com/watch?v=urtKHrRabUw&t=193s) | IBIT | long · trim | about 9:30 central | 2025-07-14 |
-| ⬜ | [05:15](https://www.youtube.com/watch?v=urtKHrRabUw&t=315s) | ? | long · hold | — | 2025-07-14 |
+| · | [05:15](https://www.youtube.com/watch?v=urtKHrRabUw&t=315s) | ARKK | long · hold | — | 2025-07-14 |
 | · | [05:15](https://www.youtube.com/watch?v=urtKHrRabUw&t=315s) | CCL | long · hold | — | 2025-07-14 |
 
 
@@ -6624,7 +6624,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | ⬜ | [00:14](https://www.youtube.com/watch?v=aBYO_RPr-AQ&t=14s) | IBIT | long · entry | wednesday | 2025-07-09 |
 | · | [00:14](https://www.youtube.com/watch?v=aBYO_RPr-AQ&t=14s) | IBIT | long · trim | today | 2025-07-11 |
 | · | [00:25](https://www.youtube.com/watch?v=aBYO_RPr-AQ&t=25s) | AG | long · entry | today | 2025-07-11 |
-| ⬜ | [14:27](https://www.youtube.com/watch?v=aBYO_RPr-AQ&t=867s) | ? | long · hold | — | 2025-07-11 |
+| · | [14:27](https://www.youtube.com/watch?v=aBYO_RPr-AQ&t=867s) | ARKK | long · hold | — | 2025-07-11 |
 | · | [14:27](https://www.youtube.com/watch?v=aBYO_RPr-AQ&t=867s) | CCL | long · hold | — | 2025-07-11 |
 | ⬜ | [11:33](https://www.youtube.com/watch?v=aBYO_RPr-AQ&t=693s) | RGTI | short · short | the 7th | 2025-07-07 |
 | ⬜ | [11:33](https://www.youtube.com/watch?v=aBYO_RPr-AQ&t=693s) | RGTI | short · stopped_out | — | _(unresolved)_ |
@@ -6662,7 +6662,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | · | [01:40](https://www.youtube.com/watch?v=UZfNGHWGKr4&t=100s) | RGTI | short · short | today | 2025-07-09 |
 | · | [02:01](https://www.youtube.com/watch?v=UZfNGHWGKr4&t=121s) | RGTI | short · cover | today | 2025-07-09 |
 | · | [07:54](https://www.youtube.com/watch?v=UZfNGHWGKr4&t=474s) | IBIT | long · entry | today | 2025-07-09 |
-| ⬜ | [10:39](https://www.youtube.com/watch?v=UZfNGHWGKr4&t=639s) | ? | long · hold | — | 2025-07-09 |
+| · | [10:39](https://www.youtube.com/watch?v=UZfNGHWGKr4&t=639s) | ARKK | long · hold | — | 2025-07-09 |
 
 
 ## 2025-07-08 — 7/8/2025 Premarket Prep
@@ -6713,7 +6713,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 
 | ✔ | Time | Ticker | Dir · Action | He said | Fill date |
 |---|------|--------|--------------|---------|-----------|
-| ⬜ | [11:32](https://www.youtube.com/watch?v=4jl3CPL9Z7U&t=692s) | ? | long · hold | — | 2025-07-08 |
+| · | [11:32](https://www.youtube.com/watch?v=4jl3CPL9Z7U&t=692s) | ARKK | long · hold | — | 2025-07-08 |
 
 
 ## 2025-07-07 — 7/7/2025 After-Hours Recap
@@ -6733,7 +6733,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | · | [01:28](https://www.youtube.com/watch?v=77GiXsTzlcQ&t=88s) | IBIT | long · hold | today | 2025-07-07 |
 | ⬜ | [04:42](https://www.youtube.com/watch?v=77GiXsTzlcQ&t=282s) | SOFI | long · entry | — | _(unresolved)_ |
 | ⬜ | [04:51](https://www.youtube.com/watch?v=77GiXsTzlcQ&t=291s) | SOFI | long · stopped_out | on the 13th | _(unresolved)_ |
-| ⬜ | [05:23](https://www.youtube.com/watch?v=77GiXsTzlcQ&t=323s) | ? | long · hold | — | 2025-07-07 |
+| · | [05:23](https://www.youtube.com/watch?v=77GiXsTzlcQ&t=323s) | ARKK | long · hold | — | 2025-07-07 |
 | · | [05:23](https://www.youtube.com/watch?v=77GiXsTzlcQ&t=323s) | CCL | long · hold | — | 2025-07-07 |
 
 
@@ -6770,7 +6770,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | ✔ | Time | Ticker | Dir · Action | He said | Fill date |
 |---|------|--------|--------------|---------|-----------|
 | ⬜ | [40:25](https://www.youtube.com/watch?v=8ql-ofepO_k&t=2425s) | IBIT | long · entry | yesterday | 2025-07-02 |
-| ⬜ | [36:26](https://www.youtube.com/watch?v=8ql-ofepO_k&t=2186s) | ? | long · entry | — | _(unresolved)_ |
+| ⬜ | [36:26](https://www.youtube.com/watch?v=8ql-ofepO_k&t=2186s) | ARKK | long · entry | — | _(unresolved)_ |
 | ⬜ | [31:27](https://www.youtube.com/watch?v=8ql-ofepO_k&t=1887s) | CCL | long · entry | the 26th | 2025-06-26 |
 | ⬜ | [20:20](https://www.youtube.com/watch?v=8ql-ofepO_k&t=1220s) | OST | short · short | the day before it dunked | _(unresolved)_ |
 | ⬜ | [20:20](https://www.youtube.com/watch?v=8ql-ofepO_k&t=1220s) | OST | short · add | the day it had the huge flush | _(unresolved)_ |
@@ -6818,7 +6818,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 
 | ✔ | Time | Ticker | Dir · Action | He said | Fill date |
 |---|------|--------|--------------|---------|-----------|
-| ⬜ | [06:47](https://www.youtube.com/watch?v=Ei2MqVLmEro&t=407s) | ? | long · hold | — | 2025-07-01 |
+| · | [06:47](https://www.youtube.com/watch?v=Ei2MqVLmEro&t=407s) | ARKK | long · hold | — | 2025-07-01 |
 | · | [06:47](https://www.youtube.com/watch?v=Ei2MqVLmEro&t=407s) | CCL | long · hold | — | 2025-07-01 |
 | · | [06:47](https://www.youtube.com/watch?v=Ei2MqVLmEro&t=407s) | HUT | long · entry | today | 2025-07-01 |
 | · | [06:58](https://www.youtube.com/watch?v=Ei2MqVLmEro&t=418s) | HUT | long · exit | today | 2025-07-01 |
@@ -6947,7 +6947,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | · | [00:55](https://www.youtube.com/watch?v=YL3jUqgpF-E&t=55s) | FCX | long · entry | today | 2025-06-26 |
 | · | [01:06](https://www.youtube.com/watch?v=YL3jUqgpF-E&t=66s) | CCL | long · entry | today | 2025-06-26 |
 | ⬜ | [09:36](https://www.youtube.com/watch?v=YL3jUqgpF-E&t=576s) | KGC | long · entry | yesterday | 2025-06-25 |
-| ⬜ | [09:14](https://www.youtube.com/watch?v=YL3jUqgpF-E&t=554s) | ? | long · hold | — | 2025-06-26 |
+| · | [09:14](https://www.youtube.com/watch?v=YL3jUqgpF-E&t=554s) | ARKK | long · hold | — | 2025-06-26 |
 | · | [09:58](https://www.youtube.com/watch?v=YL3jUqgpF-E&t=598s) | OST | short · short | today | 2025-06-26 |
 | · | [10:31](https://www.youtube.com/watch?v=YL3jUqgpF-E&t=631s) | OST | short · cover | today | 2025-06-26 |
 
@@ -7090,10 +7090,10 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | ⬜ | [17:16](https://www.youtube.com/watch?v=tLEsCp1uejc&t=1036s) | TSM | long · entry | — | _(unresolved)_ |
 | ⬜ | [17:16](https://www.youtube.com/watch?v=tLEsCp1uejc&t=1036s) | TSM | long · exit | — | _(unresolved)_ |
 | ⬜ | [17:27](https://www.youtube.com/watch?v=tLEsCp1uejc&t=1047s) | DASH | long · stopped_out | — | _(unresolved)_ |
-| ⬜ | [22:45](https://www.youtube.com/watch?v=tLEsCp1uejc&t=1365s) | ? | long · trim | already | _(unresolved)_ |
-| ⬜ | [23:31](https://www.youtube.com/watch?v=tLEsCp1uejc&t=1411s) | ? | long · entry | — | _(unresolved)_ |
-| ⬜ | [23:31](https://www.youtube.com/watch?v=tLEsCp1uejc&t=1411s) | ? | long · stopped_out | that same day | _(unresolved)_ |
-| ⬜ | [23:46](https://www.youtube.com/watch?v=tLEsCp1uejc&t=1426s) | ? | long · reentry | the next day | _(unresolved)_ |
+| ⬜ | [22:45](https://www.youtube.com/watch?v=tLEsCp1uejc&t=1365s) | ARKK | long · trim | already | _(unresolved)_ |
+| ⬜ | [23:31](https://www.youtube.com/watch?v=tLEsCp1uejc&t=1411s) | ARKK | long · entry | — | _(unresolved)_ |
+| ⬜ | [23:31](https://www.youtube.com/watch?v=tLEsCp1uejc&t=1411s) | ARKK | long · stopped_out | that same day | _(unresolved)_ |
+| ⬜ | [23:46](https://www.youtube.com/watch?v=tLEsCp1uejc&t=1426s) | ARKK | long · reentry | the next day | _(unresolved)_ |
 | ⬜ | [32:33](https://www.youtube.com/watch?v=tLEsCp1uejc&t=1953s) | TSLA | long · entry | — | _(unresolved)_ |
 | ⬜ | [32:33](https://www.youtube.com/watch?v=tLEsCp1uejc&t=1953s) | TSLA | long · trim | 528 | 2025-05-28 |
 | ⬜ | [32:33](https://www.youtube.com/watch?v=tLEsCp1uejc&t=1953s) | TSLA | long · exit | 64 | 2025-06-04 |
@@ -7278,7 +7278,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | ✔ | Time | Ticker | Dir · Action | He said | Fill date |
 |---|------|--------|--------------|---------|-----------|
 | · | [01:11](https://www.youtube.com/watch?v=DEOGo_kJBRQ&t=71s) | PANW | long · entry | today | 2025-06-17 |
-| ⬜ | [01:11](https://www.youtube.com/watch?v=DEOGo_kJBRQ&t=71s) | ? | long · hold | — | 2025-06-17 |
+| · | [01:11](https://www.youtube.com/watch?v=DEOGo_kJBRQ&t=71s) | ARKK | long · hold | — | 2025-06-17 |
 | ⬜ | [01:25](https://www.youtube.com/watch?v=DEOGo_kJBRQ&t=85s) | ? | long · trim | today | 2025-06-17 |
 | · | [01:25](https://www.youtube.com/watch?v=DEOGo_kJBRQ&t=85s) | TEM | long · hold | — | 2025-06-17 |
 | · | [15:32](https://www.youtube.com/watch?v=DEOGo_kJBRQ&t=932s) | TMDX | long · hold | — | 2025-06-17 |
@@ -7336,7 +7336,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | · | [00:12](https://www.youtube.com/watch?v=C4dYf7CwzAU&t=12s) | JPM | long · stopped_out | today | 2025-06-13 |
 | · | [00:12](https://www.youtube.com/watch?v=C4dYf7CwzAU&t=12s) | TOST | long · exit | today | 2025-06-13 |
 | ⬜ | [00:24](https://www.youtube.com/watch?v=C4dYf7CwzAU&t=24s) | SHOP | long · stopped_out | — | _(unresolved)_ |
-| ⬜ | [08:26](https://www.youtube.com/watch?v=C4dYf7CwzAU&t=506s) | ? | long · hold | — | 2025-06-13 |
+| · | [08:26](https://www.youtube.com/watch?v=C4dYf7CwzAU&t=506s) | ARKK | long · hold | — | 2025-06-13 |
 | · | [08:26](https://www.youtube.com/watch?v=C4dYf7CwzAU&t=506s) | TEM | long · hold | — | 2025-06-13 |
 | · | [08:37](https://www.youtube.com/watch?v=C4dYf7CwzAU&t=517s) | TMDX | long · hold | — | 2025-06-13 |
 | · | [08:37](https://www.youtube.com/watch?v=C4dYf7CwzAU&t=517s) | QBTS | short · hold | — | 2025-06-13 |
@@ -7362,7 +7362,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | ⬜ | [09:28](https://www.youtube.com/watch?v=suaP4V6bLIU&t=568s) | SOFI | long · trim | yesterday | 2025-06-12 |
 | · | [45:22](https://www.youtube.com/watch?v=suaP4V6bLIU&t=2722s) | SOFI | long · trim | this morning | 2025-06-13 |
 | · | [10:22](https://www.youtube.com/watch?v=suaP4V6bLIU&t=622s) | QBTS | short · hold | — | 2025-06-13 |
-| ⬜ | [21:57](https://www.youtube.com/watch?v=suaP4V6bLIU&t=1317s) | ? | long · trim | — | _(unresolved)_ |
+| ⬜ | [21:57](https://www.youtube.com/watch?v=suaP4V6bLIU&t=1317s) | ARKK | long · trim | — | _(unresolved)_ |
 | · | [10:38](https://www.youtube.com/watch?v=suaP4V6bLIU&t=638s) | TEM | long · hold | — | 2025-06-13 |
 | · | [10:38](https://www.youtube.com/watch?v=suaP4V6bLIU&t=638s) | TMDX | long · hold | — | 2025-06-13 |
 | · | [13:11](https://www.youtube.com/watch?v=suaP4V6bLIU&t=791s) | TOST | long · hold | — | 2025-06-13 |
@@ -7409,7 +7409,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | ⬜ | [00:47](https://www.youtube.com/watch?v=PGwuBc5VFpE&t=47s) | SHOP | long · trim | yesterday | 2025-06-11 |
 | · | [00:59](https://www.youtube.com/watch?v=PGwuBc5VFpE&t=59s) | SHOP | long · stopped_out | today | 2025-06-12 |
 | · | [02:08](https://www.youtube.com/watch?v=PGwuBc5VFpE&t=128s) | SOFI | long · trim | today | 2025-06-12 |
-| ⬜ | [05:29](https://www.youtube.com/watch?v=PGwuBc5VFpE&t=329s) | ? | long · trim | this afternoon | 2025-06-12 |
+| · | [05:29](https://www.youtube.com/watch?v=PGwuBc5VFpE&t=329s) | ARKK | long · trim | this afternoon | 2025-06-12 |
 | ⬜ | [12:29](https://www.youtube.com/watch?v=PGwuBc5VFpE&t=749s) | TEM | long · trim | — | _(unresolved)_ |
 | ⬜ | [12:29](https://www.youtube.com/watch?v=PGwuBc5VFpE&t=749s) | TMDX | long · trim | — | _(unresolved)_ |
 | · | [12:29](https://www.youtube.com/watch?v=PGwuBc5VFpE&t=749s) | TOST | long · hold | — | 2025-06-12 |
@@ -7449,7 +7449,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | ✔ | Time | Ticker | Dir · Action | He said | Fill date |
 |---|------|--------|--------------|---------|-----------|
 | · | [06:11](https://www.youtube.com/watch?v=sc9cX4910mQ&t=371s) | TMDX | long · hold | — | 2025-06-11 |
-| ⬜ | [06:41](https://www.youtube.com/watch?v=sc9cX4910mQ&t=401s) | ? | long · trim | yesterday | 2025-06-10 |
+| ⬜ | [06:41](https://www.youtube.com/watch?v=sc9cX4910mQ&t=401s) | ARKK | long · trim | yesterday | 2025-06-10 |
 | ⬜ | [09:25](https://www.youtube.com/watch?v=sc9cX4910mQ&t=565s) | JPM | long · entry | yesterday | 2025-06-10 |
 | ⬜ | [16:14](https://www.youtube.com/watch?v=sc9cX4910mQ&t=974s) | TSLA | long · exit | — | _(unresolved)_ |
 | · | [18:05](https://www.youtube.com/watch?v=sc9cX4910mQ&t=1085s) | TOST | long · hold | — | 2025-06-11 |
@@ -7494,7 +7494,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | · | [06:49](https://www.youtube.com/watch?v=wLt-n8oQp0I&t=409s) | NFLX | long · exit | today | 2025-06-10 |
 | · | [08:45](https://www.youtube.com/watch?v=wLt-n8oQp0I&t=525s) | TMDX | long · trim | today | 2025-06-10 |
 | ⬜ | [08:57](https://www.youtube.com/watch?v=wLt-n8oQp0I&t=537s) | TEM | long · entry | yesterday | 2025-06-09 |
-| ⬜ | [09:07](https://www.youtube.com/watch?v=wLt-n8oQp0I&t=547s) | ? | long · trim | today | 2025-06-10 |
+| · | [09:07](https://www.youtube.com/watch?v=wLt-n8oQp0I&t=547s) | ARKK | long · trim | today | 2025-06-10 |
 | · | [10:52](https://www.youtube.com/watch?v=wLt-n8oQp0I&t=652s) | KGC | long · exit | today | 2025-06-10 |
 | · | [13:35](https://www.youtube.com/watch?v=wLt-n8oQp0I&t=815s) | JPM | long · entry | today | 2025-06-10 |
 | · | [13:47](https://www.youtube.com/watch?v=wLt-n8oQp0I&t=827s) | TOST | long · hold | — | 2025-06-10 |

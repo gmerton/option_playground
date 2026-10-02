@@ -134,6 +134,18 @@ def main() -> None:
             else:
                 t["fill_date"] = resolve_fill_date(timing, sd) or t.get("fill_date_stated") or ""
             trades.append(t)
+    # confirmed caption decodes (Gabe), applied to rows the extractor left unresolved ('?') or kept verbatim
+    dec_path = KB / "trades" / "ticker_decodes.csv"
+    if dec_path.exists():
+        import csv
+        dec = {r["caption"].strip().lower(): r["ticker"] for r in csv.DictReader(dec_path.open())}
+        n_dec = 0
+        for t in trades:
+            cap = (t.get("ticker_as_captioned") or "").strip().lower()
+            if cap in dec and t.get("ticker", "?") in ("?", "", (t.get("ticker_as_captioned") or "").strip()):
+                t["ticker_original"], t["ticker"] = t.get("ticker", "?"), dec[cap]
+                n_dec += 1
+        print(f"applied {n_dec} confirmed ticker decodes from {dec_path.name}")
     # stable sort: date desc, then ticker
     trades.sort(key=lambda t: (t.get("date", ""), t.get("ticker", "")), reverse=True)
     TRADES_OUT.write_text(
