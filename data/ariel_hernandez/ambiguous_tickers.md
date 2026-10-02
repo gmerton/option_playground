@@ -4297,7 +4297,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | · | [08:25](https://www.youtube.com/watch?v=0mh7SHCcuK8&t=505s) | NEM | long · hold | — | 2025-12-18 |
 | · | [13:55](https://www.youtube.com/watch?v=0mh7SHCcuK8&t=835s) | AEO | short · hold | — | 2025-12-18 |
 | · | [13:55](https://www.youtube.com/watch?v=0mh7SHCcuK8&t=835s) | NFLX | short · hold | — | 2025-12-18 |
-| · | [13:55](https://www.youtube.com/watch?v=0mh7SHCcuK8&t=835s) | QBTS | short · hold | — | 2025-12-18 |
+| · | [13:55](https://www.youtube.com/watch?v=0mh7SHCcuK8&t=835s) | QUBT | short · hold | — | 2025-12-18 |
 | · | [13:55](https://www.youtube.com/watch?v=0mh7SHCcuK8&t=835s) | TSLA | long · hold | — | 2025-12-18 |
 
 
@@ -6092,7 +6092,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | ⬜ | [08:17](https://www.youtube.com/watch?v=SJkta-_yynU&t=497s) | IWM | long · exit | recently | _(unresolved)_ |
 | · | [10:36](https://www.youtube.com/watch?v=SJkta-_yynU&t=636s) | ARKK | long · hold | — | 2025-08-21 |
 | · | [10:46](https://www.youtube.com/watch?v=SJkta-_yynU&t=646s) | CCL | long · hold | — | 2025-08-21 |
-| · | [10:57](https://www.youtube.com/watch?v=SJkta-_yynU&t=657s) | QBTS | short · hold | — | 2025-08-21 |
+| · | [10:57](https://www.youtube.com/watch?v=SJkta-_yynU&t=657s) | QUBT | short · hold | — | 2025-08-21 |
 | ⬜ | [14:35](https://www.youtube.com/watch?v=SJkta-_yynU&t=875s) | PLTR | short · short | — | _(unresolved)_ |
 
 
@@ -6117,7 +6117,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | · | [16:28](https://www.youtube.com/watch?v=xvxqqAQqlxc&t=988s) | ARKK | long · hold | — | 2025-08-20 |
 | · | [16:39](https://www.youtube.com/watch?v=xvxqqAQqlxc&t=999s) | CCL | long · hold | — | 2025-08-20 |
 | · | [16:51](https://www.youtube.com/watch?v=xvxqqAQqlxc&t=1011s) | RBLX | short · hold | — | 2025-08-20 |
-| · | [17:09](https://www.youtube.com/watch?v=xvxqqAQqlxc&t=1029s) | QBTS | short · hold | — | 2025-08-20 |
+| · | [17:09](https://www.youtube.com/watch?v=xvxqqAQqlxc&t=1029s) | QUBT | short · hold | — | 2025-08-20 |
 
 
 ## 2025-08-19 — 8/19/2025 Daily Recap. Leaders were hammered!
@@ -6136,7 +6136,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | ✔ | Time | Ticker | Dir · Action | He said | Fill date |
 |---|------|--------|--------------|---------|-----------|
 | · | [11:29](https://www.youtube.com/watch?v=_oQVtkrA16k&t=689s) | RBLX | short · hold | — | 2025-08-19 |
-| · | [18:29](https://www.youtube.com/watch?v=_oQVtkrA16k&t=1109s) | QBTS | short · short | today | 2025-08-19 |
+| · | [18:29](https://www.youtube.com/watch?v=_oQVtkrA16k&t=1109s) | QUBT | short · short | today | 2025-08-19 |
 | ⬜ | [05:54](https://www.youtube.com/watch?v=_oQVtkrA16k&t=354s) | PLTR | short · short | 811 | 2025-08-11 |
 | ⬜ | [05:54](https://www.youtube.com/watch?v=_oQVtkrA16k&t=354s) | PLTR | short · stopped_out | — | _(unresolved)_ |
 | ⬜ | [08:00](https://www.youtube.com/watch?v=_oQVtkrA16k&t=480s) | HOOD | long · trim | — | _(unresolved)_ |

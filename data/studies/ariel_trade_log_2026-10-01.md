@@ -58,7 +58,7 @@ trades. They get size differently. Luk buys a 20-30% position against a 1-2% int
 cuts on the close, and pyramids the ones that work. Both lean on shorts and on standing aside for stretches.
 
 ## Open items
-- **Decodes CONFIRMED by Gabe 2026-10-01** (applied via `trades/ticker_decodes.csv`): ARC=ARKK, GRR=GRRR, NQ=IONQ (on-screen slide), QBT=QUBT (unresolved rows), Dock/Dockin=DOCN, DocuSign=DOCN (all rows), Enphase=NBIS (unresolved rows); the Feb 11-12 2026 "Enphase" rows stay ENPH. May-Jun 2026 "Enphase" rows = NBIS (all). Still open: Aug/Dec 2025 "QBT" rows tagged QBTS (QUBT?).
+- **Decodes CONFIRMED by Gabe 2026-10-01** (applied via `trades/ticker_decodes.csv`): ARC=ARKK, GRR=GRRR, NQ=IONQ (on-screen slide), QBT=QUBT (unresolved rows), Dock/Dockin=DOCN, DocuSign=DOCN (all rows), Enphase=NBIS (unresolved rows); the Feb 11-12 2026 "Enphase" rows stay ENPH. May-Jun 2026 "Enphase" rows = NBIS (all). All "QBT" rows = QUBT (incl. the Aug/Dec 2025 extractor QBTS tags).
 - *Original list:* "ARC" (58 rows) is ARKK in several transcripts ("Cathie's holdings", "I own
   Ark"); "GRR" (9) probably GRRR; "NQ" / "OQ" (8) probably IONQ; "QBT" (7) QBTS or QUBT; "DocuSign" / "Dock" (5+)
   DOCN or DOCU; "Enphase" (5) may be NBIS misheard.
