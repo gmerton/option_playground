@@ -4,7 +4,7 @@
 
 Two checks per video. **Ambiguous tickers**: spots where the auto-caption garbled a symbol — click the timestamp, check the chart, confirm the ticker. **Trades**: each trade with the day it was placed; ⬜ marks rows that need a glance — an unresolved ticker (`?`), an unresolved fill date, or a date *inferred* to a different day than the stream (e.g. he said "Thursday"). Rows with no ⬜ are same-session or he stated the date.
 
-**325** ticker flags · **1937** trades to date-check · across **337** videos. Conf: 🟡 likely · ❓ unsure.
+**325** ticker flags · **1935** trades to date-check · across **337** videos. Conf: 🟡 likely · ❓ unsure.
 
 ## Index — ticker flags by video
 
@@ -3851,11 +3851,11 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | ⬜ | [06:45](https://www.youtube.com/watch?v=RFzKZcZY8P0&t=405s) | TSLA | long · add | — | _(unresolved)_ |
 | ⬜ | [06:45](https://www.youtube.com/watch?v=RFzKZcZY8P0&t=405s) | TSLA | long · trim | — | _(unresolved)_ |
 | ⬜ | [06:45](https://www.youtube.com/watch?v=RFzKZcZY8P0&t=405s) | TSLA | long · exit | december 29th | 2025-12-29 |
-| ⬜ | [07:11](https://www.youtube.com/watch?v=RFzKZcZY8P0&t=431s) | ? | short · short | — | _(unresolved)_ |
-| ⬜ | [07:31](https://www.youtube.com/watch?v=RFzKZcZY8P0&t=451s) | ? | short · cover | the next day | _(unresolved)_ |
-| ⬜ | [07:41](https://www.youtube.com/watch?v=RFzKZcZY8P0&t=461s) | ? | short · cover | a few days later | _(unresolved)_ |
-| ⬜ | [07:41](https://www.youtube.com/watch?v=RFzKZcZY8P0&t=461s) | ? | short · reentry | — | _(unresolved)_ |
-| ⬜ | [07:52](https://www.youtube.com/watch?v=RFzKZcZY8P0&t=472s) | ? | short · stopped_out | — | _(unresolved)_ |
+| ⬜ | [07:11](https://www.youtube.com/watch?v=RFzKZcZY8P0&t=431s) | QUBT | short · short | — | _(unresolved)_ |
+| ⬜ | [07:31](https://www.youtube.com/watch?v=RFzKZcZY8P0&t=451s) | QUBT | short · cover | the next day | _(unresolved)_ |
+| ⬜ | [07:41](https://www.youtube.com/watch?v=RFzKZcZY8P0&t=461s) | QUBT | short · cover | a few days later | _(unresolved)_ |
+| ⬜ | [07:41](https://www.youtube.com/watch?v=RFzKZcZY8P0&t=461s) | QUBT | short · reentry | — | _(unresolved)_ |
+| ⬜ | [07:52](https://www.youtube.com/watch?v=RFzKZcZY8P0&t=472s) | QUBT | short · stopped_out | — | _(unresolved)_ |
 | ⬜ | [08:17](https://www.youtube.com/watch?v=RFzKZcZY8P0&t=497s) | NEM | long · entry | the 5th | 2025-12-05 |
 | ⬜ | [08:17](https://www.youtube.com/watch?v=RFzKZcZY8P0&t=497s) | NEM | long · exit | — | _(unresolved)_ |
 | ⬜ | [08:17](https://www.youtube.com/watch?v=RFzKZcZY8P0&t=497s) | NEM | long · reentry | the 9th | 2025-12-09 |
@@ -4136,7 +4136,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | ⬜ | [14:20](https://www.youtube.com/watch?v=zJbM10jT1VM&t=860s) | RDDT | long · entry | — | _(unresolved)_ |
 | · | [16:22](https://www.youtube.com/watch?v=zJbM10jT1VM&t=982s) | NEM | long · hold | — | 2026-01-08 |
 | · | [16:22](https://www.youtube.com/watch?v=zJbM10jT1VM&t=982s) | NFLX | short · hold | — | 2026-01-08 |
-| · | [16:35](https://www.youtube.com/watch?v=zJbM10jT1VM&t=995s) | QBT | short · hold | — | 2026-01-08 |
+| · | [16:35](https://www.youtube.com/watch?v=zJbM10jT1VM&t=995s) | QUBT | short · hold | — | 2026-01-08 |
 
 
 ## 2026-01-07 — 1/7/2026 Daily Recap: What random feels like!
@@ -4155,7 +4155,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 |---|------|--------|--------------|---------|-----------|
 | · | [13:03](https://www.youtube.com/watch?v=k8rB4s5lydM&t=783s) | NEM | long · hold | — | 2026-01-07 |
 | · | [04:47](https://www.youtube.com/watch?v=k8rB4s5lydM&t=287s) | NFLX | short · hold | — | 2026-01-07 |
-| ⬜ | [04:59](https://www.youtube.com/watch?v=k8rB4s5lydM&t=299s) | ? | short · hold | — | 2026-01-07 |
+| · | [04:59](https://www.youtube.com/watch?v=k8rB4s5lydM&t=299s) | QUBT | short · hold | — | 2026-01-07 |
 | · | [05:21](https://www.youtube.com/watch?v=k8rB4s5lydM&t=321s) | RDDT | long · hold | — | 2026-01-07 |
 | · | [05:32](https://www.youtube.com/watch?v=k8rB4s5lydM&t=332s) | XOM | long · hold | — | 2026-01-07 |
 | ⬜ | [12:18](https://www.youtube.com/watch?v=k8rB4s5lydM&t=738s) | AMZN | long · entry | the second | 2026-01-02 |
@@ -4273,7 +4273,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | ⬜ | [02:36](https://www.youtube.com/watch?v=VLSp8hzcHrE&t=156s) | ? | long · exit | — | _(unresolved)_ |
 | · | [06:01](https://www.youtube.com/watch?v=VLSp8hzcHrE&t=361s) | CSIQ | long · entry | today | 2025-12-22 |
 | · | [06:13](https://www.youtube.com/watch?v=VLSp8hzcHrE&t=373s) | PLTR | long · trim | today | 2025-12-22 |
-| ⬜ | [06:26](https://www.youtube.com/watch?v=VLSp8hzcHrE&t=386s) | ? | short · hold | — | 2025-12-22 |
+| · | [06:26](https://www.youtube.com/watch?v=VLSp8hzcHrE&t=386s) | QUBT | short · hold | — | 2025-12-22 |
 | · | [06:39](https://www.youtube.com/watch?v=VLSp8hzcHrE&t=399s) | XOM | long · add | today | 2025-12-22 |
 | ⬜ | [07:26](https://www.youtube.com/watch?v=VLSp8hzcHrE&t=446s) | XOM | long · entry | — | _(unresolved)_ |
 
@@ -4370,7 +4370,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | ⬜ | [07:51](https://www.youtube.com/watch?v=PCLxXMWBz3o&t=471s) | ? | long · exit | — | _(unresolved)_ |
 | ⬜ | [07:51](https://www.youtube.com/watch?v=PCLxXMWBz3o&t=471s) | ? | short · short | — | _(unresolved)_ |
 | ⬜ | [07:51](https://www.youtube.com/watch?v=PCLxXMWBz3o&t=471s) | ? | short · cover | — | _(unresolved)_ |
-| · | [08:26](https://www.youtube.com/watch?v=PCLxXMWBz3o&t=506s) | QBT | short · hold | — | 2025-12-15 |
+| · | [08:26](https://www.youtube.com/watch?v=PCLxXMWBz3o&t=506s) | QUBT | short · hold | — | 2025-12-15 |
 | · | [11:28](https://www.youtube.com/watch?v=PCLxXMWBz3o&t=688s) | XOM | long · hold | — | 2025-12-15 |
 
 
