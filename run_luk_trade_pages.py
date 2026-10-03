@@ -99,6 +99,36 @@ def campaigns(d: pd.DataFrame) -> list[dict]:
     return out
 
 
+def ext(h: pd.DataFrame, day: pd.Timestamp, price: float | None) -> dict | None:
+    """Fill-day OHLC (and a stated price) in ADR units from the prior session's 20 EMA."""
+    k = h.index.searchsorted(day)
+    if k < 21 or k >= len(h):
+        return None
+    prev = h.iloc[k - 1]; bar = h.iloc[k]
+    ema = float(h.Close.ewm(span=20, adjust=False).mean().iloc[k - 1])
+    adr_pct = float((h.High / h.Low - 1).iloc[k - 20:k].mean())
+    unit = adr_pct * float(prev.Close)
+    if not unit > 0:
+        return None
+    f = lambda p: round((float(p) - ema) / unit, 2)
+    o = dict(date=h.index[k].date().isoformat(), ema20=round(ema, 2), adr=round(adr_pct * 100, 1),
+             low=f(bar.Low), high=f(bar.High), open=f(bar.Open), close=f(bar.Close))
+    if price is not None and np.isfinite(price):
+        o["stated"] = f(price)
+        o["stated_in_range"] = bool(bar.Low * 0.995 <= price <= bar.High * 1.005)
+    return o
+
+
+def ext_html(o: dict | None, dirn: str = "") -> str:
+    if not o:
+        return ""
+    s = (f"<div class='ext'><span class='lab'>Fill-day range vs 20 EMA</span> ({o['date']}, EMA {o['ema20']}, ADR {o['adr']}%): "
+         f"low <b>{o['low']:+.2f}</b> &middot; open {o['open']:+.2f} &middot; close {o['close']:+.2f} &middot; high <b>{o['high']:+.2f}</b> ADR")
+    if "stated" in o:
+        s += (f" &middot; his stated fill <b>{o['stated']:+.2f}</b> ADR" + ("" if o["stated_in_range"] else " <span class='warn'>(outside the day's range: date or price is off)</span>"))
+    return s + "</div>"
+
+
 def chart_data(c: dict, H: dict) -> dict:
     empty = {"candles": [], "ema9": [], "ema21": [], "markers": [], "volume": []}
     if c["state"] == "pending" or not c["resolved_tk"] or c["tk"] not in H:
@@ -168,7 +198,7 @@ STATE_TXT = {"pending": "⏳ pending clarification: chart withheld until the wor
              "ok": ""}
 
 
-def trade_page(c: dict, u: dict) -> str:
+def trade_page(c: dict, u: dict, H: dict) -> str:
     why = ("Chart withheld: this campaign still has a row on the clarification worklist." if c["state"] == "pending"
            else "No daily history for this symbol (unresolved ticker or not on yfinance).")
     tl = []
@@ -182,6 +212,8 @@ def trade_page(c: dict, u: dict) -> str:
             v = x.get(key)
             if isinstance(v, str) and v.strip() and v != "nan":
                 bits.append(f"<div><span class='lab'>{lab}.</span> {e(v)}</div>")
+        if str(x["action"]) in OPENERS | {"add"} and c["state"] != "pending" and c["tk"] in H and pd.notna(x["fill"]):
+            bits.append(ext_html(ext(H[c["tk"]], x["fill"], None)))
         tl.append("<li>" + "".join(bits) + "</li>")
     head = f"{e(c['tk'])} {c['dirn']}"
     return f"""<meta charset="utf-8">
@@ -189,6 +221,7 @@ def trade_page(c: dict, u: dict) -> str:
 <style>{DETAIL_CSS}
  ul.tl {{ list-style: none; padding: 0; margin: 0; }} ul.tl li {{ border-left: 3px solid var(--border); padding: 6px 0 10px 12px; margin-bottom: 6px; font-size: 13px; }}
  .lab {{ color: var(--muted); }} .muted {{ color: var(--muted); }} .warn {{ color: #b26b00; font-weight: 600; }} #und {{ width: 100%; }}
+ .ext {{ margin-top: 4px; padding: 4px 8px; background: #f2f5fb; border-radius: 6px; display: inline-block; }}
 </style>
 {LIGHTWEIGHT_CHARTS_SCRIPT}
 <a class="back" href="index.html">&larr; Martin Luk's trades</a>
@@ -199,7 +232,8 @@ def trade_page(c: dict, u: dict) -> str:
 grey arrow = exit / stop-out, grey dot = a mention (hold, stop change). Markers sit on the FILL date where he gave one, else the stream date.
 Daily bars only: his intraday fills are not visible.</div></div>
 <div class="block commentary"><h2>What he said, in order</h2><ul class="tl">{''.join(tl)}</ul>
-<div class="chart-note">Commentary is from auto-captions of his livestreams (tickers often garbled; see the clarification notes). Timestamps link to the video.</div></div>
+<div class="chart-note">Commentary is from auto-captions of his livestreams (tickers often garbled; see the clarification notes). Timestamps link to the video.
+"Fill-day range vs 20 EMA" = where on that day's bar his fill could have been: (price &minus; prior day's 20 EMA) &divide; (20-day ADR in dollars); positive = above the EMA.</div></div>
 <script>{PAGE_JS}
 render({json.dumps(u)}, {json.dumps(why)});</script>
 """
@@ -212,9 +246,10 @@ def index_page(cs: list[dict], d: pd.DataFrame) -> str:
         badge = {"pending": "<span class='warn'>pending</span>", "retrospective": "<span class='muted'>retro</span>", "ok": ""}[c["state"]]
         first = c["rows"][0]
         setup = str(first.get("setup") or "")[:90]
+        x0 = c.get("ext0"); rng = f"{x0['low']:+.1f} … {x0['high']:+.1f}" if x0 else "—"
         rows.append(f"<tr onclick=\"location.href='{c['slug']}.html'\"><td>{c['n']}</td><td><b>{e(c['tk'])}</b></td><td>{c['dirn']}</td>"
                     f"<td>{c['start'].date()}</td><td>{c['end'].date()}</td><td class='num'>{len(c['rows'])}</td><td>{e(c['ended'])}</td>"
-                    f"<td>{badge}</td><td class='setup'>{e(setup)}</td></tr>")
+                    f"<td class='num'>{rng}</td><td>{badge}</td><td class='setup'>{e(setup)}</td></tr>")
     return f"""<meta charset="utf-8">
 <title>Martin Luk's Trades</title>
 <style>{BASE_CSS}
@@ -232,7 +267,7 @@ def index_page(cs: list[dict], d: pd.DataFrame) -> str:
 resolved, so the outcome can't bias the clarification. <b>{n_retro}</b> are <span class="muted">retrospective</span> (reviewed after the fact, outcome known).
 <br>Unlike Tito's list this is NOT curated: it's everything he disclosed, winners and losers. It's still his account of his trades, not audited fills,
 and it isn't evidence for our setup selection; the admissible comparison is the pre-registered picks-vs-controls test (TEST_INDEX section 10).</div>
-<div class="wrap"><table><tr><th>#</th><th>Ticker</th><th>Side</th><th>First</th><th>Last</th><th class="num">Updates</th><th>Ended</th><th></th><th>Setup (first mention)</th></tr>
+<div class="wrap"><table><tr><th>#</th><th>Ticker</th><th>Side</th><th>First</th><th>Last</th><th class="num">Updates</th><th>Ended</th><th class="num">Entry range (ADR vs 20 EMA)</th><th></th><th>Setup (first mention)</th></tr>
 {''.join(rows)}</table></div>
 """
 
@@ -250,7 +285,10 @@ def main() -> int:
         except KeyError:
             pass
     for c in cs:
-        (OUT / f"{c['slug']}.html").write_text(trade_page(c, chart_data(c, H)))
+        first = next((x for x in c["rows"] if str(x["action"]) in OPENERS and pd.notna(x["fill"])), None)
+        if first is not None and c["state"] != "pending" and c["tk"] in H:
+            c["ext0"] = ext(H[c["tk"]], first["fill"], None)
+        (OUT / f"{c['slug']}.html").write_text(trade_page(c, chart_data(c, H), H))
     (OUT / "index.html").write_text(index_page(cs, d))
     print(f"wrote {OUT}/index.html + {len(cs)} campaign pages | pending {sum(c['state'] == 'pending' for c in cs)}, "
           f"retrospective {sum(c['state'] == 'retrospective' for c in cs)}, charted {sum(c['tk'] in H and c['state'] != 'pending' for c in cs)}, "

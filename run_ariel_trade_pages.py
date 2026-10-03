@@ -29,7 +29,7 @@ import numpy as np
 import pandas as pd
 import yfinance as yf
 
-from run_luk_trade_pages import PAGE_JS as _LUK_JS, yt
+from run_luk_trade_pages import PAGE_JS as _LUK_JS, ext, ext_html, yt
 from run_trade_review_pages import BASE_CSS, DETAIL_CSS, LIGHTWEIGHT_CHARTS_SCRIPT
 
 SRC = Path("data/ariel_hernandez/trades")
@@ -98,26 +98,6 @@ def attach_broker(cs: list[dict]) -> int:
     return hit
 
 
-def ext(h: pd.DataFrame, day: pd.Timestamp, price: float | None) -> dict | None:
-    """Fill-day OHLC (and a stated price) in ADR units from the prior session's 20 EMA."""
-    k = h.index.searchsorted(day)
-    if k < 21 or k >= len(h):
-        return None
-    prev = h.iloc[k - 1]; bar = h.iloc[k]
-    ema = float(h.Close.ewm(span=20, adjust=False).mean().iloc[k - 1])
-    adr_pct = float((h.High / h.Low - 1).iloc[k - 20:k].mean())
-    unit = adr_pct * float(prev.Close)
-    if not unit > 0:
-        return None
-    f = lambda p: round((float(p) - ema) / unit, 2)
-    o = dict(date=h.index[k].date().isoformat(), ema20=round(ema, 2), adr=round(adr_pct * 100, 1),
-             low=f(bar.Low), high=f(bar.High), open=f(bar.Open), close=f(bar.Close))
-    if price is not None and np.isfinite(price):
-        o["stated"] = f(price)
-        o["stated_in_range"] = bool(bar.Low * 0.995 <= price <= bar.High * 1.005)
-    return o
-
-
 def chart_data(c: dict, H: dict) -> dict:
     empty = {"candles": [], "ema10": [], "ema20": [], "sma50": [], "markers": [], "volume": []}
     if not c["resolved_tk"] or c["tk"] not in H:
@@ -155,16 +135,6 @@ def chart_data(c: dict, H: dict) -> dict:
             "volume": [{"time": ts(i), "value": float(r.Volume), "color": "#b8e0cb" if r.Close >= r.Open else "#f0c4c4"} for i, r in w.iterrows()],
             "markers": mk, "ema10": line(full.Close.ewm(span=10, adjust=False).mean()),
             "ema20": line(full.Close.ewm(span=20, adjust=False).mean()), "sma50": line(full.Close.rolling(50).mean())}
-
-
-def ext_html(o: dict | None, dirn: str) -> str:
-    if not o:
-        return ""
-    s = (f"<div class='ext'><span class='lab'>Fill-day range vs 20 EMA</span> ({o['date']}, EMA {o['ema20']}, ADR {o['adr']}%): "
-         f"low <b>{o['low']:+.2f}</b> &middot; open {o['open']:+.2f} &middot; close {o['close']:+.2f} &middot; high <b>{o['high']:+.2f}</b> ADR")
-    if "stated" in o:
-        s += (f" &middot; his stated fill <b>{o['stated']:+.2f}</b> ADR" + ("" if o["stated_in_range"] else " <span class='warn'>(outside the day's range: date or price is off)</span>"))
-    return s + "</div>"
 
 
 def money(v) -> str:
