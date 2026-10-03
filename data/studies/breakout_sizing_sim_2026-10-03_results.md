@@ -20,3 +20,7 @@ Bootstrap (month blocks): CAGR p5 / p50 / p95 · max DD p5 / p50 / p95
 - R050: 2019-26 CAGR +2% / +25% / +55% · DD -62% / -39% / -24%; full CAGR -2% / +8% / +19% · DD -73% / -49% / -31%
 - R100: 2019-26 CAGR -17% / +4% / +31% · DD -86% / -62% / -37%; full CAGR -14% / -4% / +8% · DD -95% / -78% / -52%
 - R050_G100: 2019-26 CAGR -2% / +12% / +27% · DD -53% / -31% / -19%; full CAGR -3% / +3% / +10% · DD -67% / -42% / -25%
+
+## Added after the run (Gabe 2026-10-03: Luk cites 0.3%), same rules, descriptive
+
+- R030 (0.3% risk, 30% position / 200% gross): full +5.3% DD -48% · 2010-18 -4.0% DD -33% · 2019-26 +17.0% DD -39% · mean gross 47% · skipped 13%; bootstrap 2019-26 CAGR +1% / +17% / +38%, DD -53% / -32% / -19%
