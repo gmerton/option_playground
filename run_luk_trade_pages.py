@@ -290,7 +290,12 @@ def main() -> int:
             c["ext0"] = ext(H[c["tk"]], first["fill"], None)
         (OUT / f"{c['slug']}.html").write_text(trade_page(c, chart_data(c, H), H))
     (OUT / "index.html").write_text(index_page(cs, d))
-    print(f"wrote {OUT}/index.html + {len(cs)} campaign pages | pending {sum(c['state'] == 'pending' for c in cs)}, "
+    # drop pages from earlier runs whose numbering no longer exists (2026-10-03: 205 Luk orphans were deployed by the sync)
+    keep = {f"{c['slug']}.html" for c in cs} | {"index.html"}
+    stale = [f for f in OUT.glob("*.html") if f.name not in keep]
+    for f in stale:
+        f.unlink()
+    print(f"wrote {OUT}/index.html + {len(cs)} campaign pages, removed {len(stale)} stale | pending {sum(c['state'] == 'pending' for c in cs)}, "
           f"retrospective {sum(c['state'] == 'retrospective' for c in cs)}, charted {sum(c['tk'] in H and c['state'] != 'pending' for c in cs)}, "
           f"no price data for: {sorted(set(tks) - set(H))}")
     return 0

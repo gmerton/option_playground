@@ -19,6 +19,7 @@
 
 set -euo pipefail
 cd "$(dirname "$0")"
+export AWS_PROFILE="${AWS_PROFILE:-clarinut-gmerton}"   # 2026-10-03: a bare shell got AccessDenied on the sync
 
 BUCKET=gmerton-trade-journal
 DIST_ID=E2VZA7AMN3NFDL

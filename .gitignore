@@ -79,3 +79,17 @@ data/watchlist/regime_20[0-9][0-9]-*.txt
 data/watchlist/straddle_screen_20[0-9][0-9]-*.txt
 data/watchlist/putspread_scan*_20[0-9][0-9]-*.csv
 data/watchlist/premarket_industries_20[0-9][0-9]-*.csv
+
+# ── Generated files that were tracked and kept the tree dirty (untracked 2026-10-03) ─────────────
+# Rewritten by the daily orchestrators; a stray `git commit -a` swept all six into f4ddacb. Their producers own them:
+#   preferred_tickers.txt  <- S3 (s3://gmerton-stock-data/breakouts/), pulled by daily_desk.sh / deploy_breakout_lambda.sh
+#   journal_process_grades.{md,csv} <- run_journal_grades.py · pattern_ledger.csv <- lib/studies/pattern_test.py
+#   alert_scorecard_all.csv <- run_alert_scorecard.py · universe_latest.txt <- lib/alerts/universe.py
+data/preferred_tickers.txt
+data/studies/journal_process_grades.md
+data/studies/pattern_ledger.csv
+data/watchlist/logs/
+data/watchlist/universe_latest.txt
+# Study stderr/stdout captures (the curated *.log files a study cites stay committable)
+data/studies/logs/*.err
+data/studies/logs/*.stdout

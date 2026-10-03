@@ -201,6 +201,9 @@ unless he says otherwise in the moment.
   research conventions above still apply to anything that claims to get there.
 - **Commit directly to `main`.** Personal repo; no feature-branch-by-default. Commit and push straight to
   `main` unless told otherwise.
+  **Stage explicit paths — never `git commit -a` / `git add -A`** (2026-10-03: `-a` swept six orchestrator-rewritten
+  files, incl. `preferred_tickers.txt`, into a TEST_INDEX commit and pushed them; reverted in 9dbfdcb). The generated
+  outputs are gitignored now, but parallel sessions and studies still leave the tree dirty.
 - **His trades are not evidence.** Assume he is a bad trader. His log is admissible for conformance,
   execution and cost realism **only** — never for setup selection, and never as a benchmark. This is the
   rule most likely to be got wrong by someone new, and it is expensive: treating the journal as evidence

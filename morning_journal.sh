@@ -18,8 +18,9 @@ for arg in "$@"; do case "$arg" in --no-deploy) DEPLOY=0;; --charts) CHARTS="";;
 exec > >(tee -a "$OUT") 2>&1
 echo "== morning journal $(date) =="
 
-# Weekend / holiday guard: skip if no session in the last 3 days would be new (the pull is idempotent anyway).
-if [ "$(date +%u)" -ge 6 ]; then echo "weekend -- nothing to pull"; exit 0; fi
+# Weekend guard: skip SUNDAY only (2026-10-03: Saturday must run -- it is the first morning Friday's statement exists;
+# skipping it left Friday unloaded until Monday). The pull is idempotent, so Monday re-seeing Friday is harmless.
+if [ "$(date +%u)" -eq 7 ]; then echo "Sunday -- nothing new to pull"; exit 0; fi
 
 # 0. Refresh the liquid panel with yesterday's completed session (2026-09-25 audit: the evening desk builds it before the
 #    close, so it always ended one session short; every intraday scan then skipped D-1). Non-fatal, ~75 s.
@@ -41,8 +42,15 @@ grep -q "Wrote data/journal/" /tmp/morning_flex.txt || { echo "!! no journal wri
 DAY=$(grep -o "data/journal/[0-9-]*\.md" /tmp/morning_flex.txt | head -1 | grep -o "[0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}")
 echo "-- journal day: $DAY"
 
-# 2. review rows for that session (idempotent; attaches staged trader notes)
-$PY run_build_reviews.py --since "$DAY" --until "$DAY" 2>&1 | grep -v -i "warn" | tail -4 || { echo "!! review builder failed"; exit 1; }
+# 2. review rows for that session (attaches staged trader notes). Skipped when the session already has reviews: since
+#    Saturday runs too (2026-10-03), Monday sees Friday again, and re-running the builder over a reviewed date is how the
+#    425 duplicates of 2026-09-21 happened (CLAUDE.md gotcha).
+N_RV=$($PY -c "from lib.mysql_lib import _get_conn; c=_get_conn(); k=c.cursor(); k.execute('SELECT COUNT(*) FROM journal_trade_reviews WHERE entry_date=%s', ('$DAY',)); print(k.fetchone()[0])" 2>/dev/null || echo 0)
+if [ "${N_RV:-0}" -gt 0 ]; then
+  echo "  reviews: $DAY already has $N_RV -- builder skipped"
+else
+  $PY run_build_reviews.py --since "$DAY" --until "$DAY" 2>&1 | grep -v -i "warn" | tail -4 || { echo "!! review builder failed"; exit 1; }
+fi
 
 # 3. process grade (rubric entry grades + the session report card)
 $PY run_journal_grades.py --since "$DAY" 2>&1 | grep -v -i "warn" | grep -E "^ *$DAY|grade" | head -3 || { echo "!! grades failed"; exit 1; }

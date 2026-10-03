@@ -250,8 +250,13 @@ def main() -> int:
                 stats.append({**c["ext0"], "dirn": c["dirn"], "retro": c["retro"], "tk": c["tk"]})
         (OUT / f"{c['slug']}.html").write_text(trade_page(c, chart_data(c, H), H))
     (OUT / "index.html").write_text(index_page(cs, d, n_broker))
+    # drop pages from earlier runs whose numbering no longer exists (2026-10-03: 205 Luk orphans were deployed by the sync)
+    keep = {f"{c['slug']}.html" for c in cs} | {"index.html"}
+    stale = [f for f in OUT.glob("*.html") if f.name not in keep]
+    for f in stale:
+        f.unlink()
     S = pd.DataFrame(stats); S.to_csv("data/studies/ariel_entry_ext_2026-10-02.csv", index=False)
-    print(f"wrote {OUT}/index.html + {len(cs)} campaign pages | charted {sum(c['tk'] in H for c in cs)}, broker-matched {n_broker}, "
+    print(f"wrote {OUT}/index.html + {len(cs)} campaign pages, removed {len(stale)} stale | charted {sum(c['tk'] in H for c in cs)}, broker-matched {n_broker}, "
           f"entry ranges {len(S)}, no price data for {len(set(tks) - set(H))}: {sorted(set(tks) - set(H))[:30]}")
     if len(S):
         st = S.dropna(subset=["stated"]) if "stated" in S else S.iloc[:0]
