@@ -672,13 +672,16 @@ def _vehicle_bucket(vehicle: str | None) -> str | None:
 
 
 LONG_VOL_COMBOS = {"long straddle", "long strangle", "reverse iron condor"}
-SHORT_VOL_COMBOS = {"iron condor", "iron butterfly", "short straddle", "short strangle"}
+SHORT_VOL_COMBOS = {"iron condor", "iron butterfly", "short straddle", "short strangle", "double calendar", "double diagonal",
+                    "reverse calendar"}
+# Calendars sit under Short Vol: net long vega but sold for the front month's theta, which is how this book uses them.
 # Short Vol subtotals on the Performance card (Gabe 2026-10-03). Order = display order; anything unmatched -> Other.
 SHORT_VOL_SUBS = [
     ("Put spreads", lambda v: v in ("bull put spread", "bear put spread")),
     ("Call spreads", lambda v: v in ("bear call spread", "bull call spread")),
     ("Iron condors / butterflies", lambda v: v in ("iron condor", "iron butterfly")),
     ("Short straddles / strangles", lambda v: v in ("short straddle", "short strangle")),
+    ("Calendars / diagonals", lambda v: v in ("calendar spread", "diagonal spread", "double calendar", "double diagonal", "reverse calendar")),
     ("Short puts", lambda v: v.startswith("short put")),
     ("Short calls", lambda v: v.startswith("short call")),
 ]
@@ -981,7 +984,7 @@ function vehicleBucket(v) {       // mirrors _vehicle_bucket() in run_trade_revi
   if (v === 'long stock') return 'Long Stock';
   if (v === 'short stock') return 'Short Stock';
   if (v.startsWith('long call') || v.startsWith('long put') || ['long straddle', 'long strangle', 'reverse iron condor'].includes(v)) return 'Long Vol';
-  if (v.startsWith('short call') || v.startsWith('short put') || v.includes('spread') || ['iron condor', 'iron butterfly', 'short straddle', 'short strangle'].includes(v)) return 'Short Vol';
+  if (v.startsWith('short call') || v.startsWith('short put') || v.includes('spread') || ['iron condor', 'iron butterfly', 'short straddle', 'short strangle', 'double calendar', 'double diagonal', 'reverse calendar'].includes(v)) return 'Short Vol';
   return null;
 }
 function urlMatch(r) {
@@ -1230,8 +1233,23 @@ def _compute_directions(rows: list[dict]) -> None:
 def _combo_vehicle(legs: list[dict]) -> str | None:
     """Call + put structures from the opening legs (2026-10-03: 13 rows stayed generic 'spread', and 8 of them were
     LONG straddles / strangles that the Short Vol card was counting). 2 legs = straddle / strangle, long or short by
-    side; 4 legs = iron condor / butterfly when the inner strikes are short (reverse = long). None otherwise."""
+    side; 4 legs = iron condor / butterfly when the inner strikes are short (reverse = long). Two expiries per type =
+    calendar / diagonal (single or double), short the near month; near month LONG = reverse calendar. None otherwise."""
     c = [l for l in legs if l["put_call"] == "C"]; p = [l for l in legs if l["put_call"] == "P"]
+
+    def cal(g):  # one same-type pair across two expiries -> (kind, reversed) or None
+        if len(g) != 2 or {x["buy_sell"] for x in g} != {"BUY", "SELL"} or not all(x.get("expiry") for x in g):
+            return None
+        near, far = sorted(g, key=lambda x: str(x["expiry"]))
+        if str(near["expiry"]) == str(far["expiry"]):
+            return None
+        return ("calendar" if float(near["strike"]) == float(far["strike"]) else "diagonal", near["buy_sell"] == "BUY")
+    pairs = [cal(g) for g in (c, p) if g]
+    if pairs and all(pairs) and len(pairs) * 2 == len(legs):
+        if any(rv for _, rv in pairs):
+            return "reverse calendar"
+        kind = "calendar" if all(k == "calendar" for k, _ in pairs) else "diagonal"
+        return f"double {kind}" if len(pairs) == 2 else f"{kind} spread"
     if len(legs) == 2 and len(c) == 1 and len(p) == 1 and c[0]["buy_sell"] == p[0]["buy_sell"]:
         side = "long" if c[0]["buy_sell"] == "BUY" else "short"
         return f"{side} {'straddle' if float(c[0]['strike']) == float(p[0]['strike']) else 'strangle'}"
@@ -1250,7 +1268,7 @@ def _refine_spread_vehicles(rows: list[dict]) -> None:
     precise 2-leg vertical spread name (bull/bear call/put spread) from the actual opening legs.
     Leaves the generic 'spread' label alone if a day's legs don't form a clean 2-leg, same-type
     vertical (more/fewer legs, mixed put+call, or missing strike data)."""
-    targets = [r for r in rows if r.get("vehicle") == "spread"]
+    targets = [r for r in rows if r.get("vehicle") == "spread" or (r.get("vehicle") is None and r.get("campaignId") is not None)]
     if not targets:
         return
     pairs = sorted({(r["underlying"], r["entryDate"]) for r in targets})
@@ -1260,7 +1278,7 @@ def _refine_spread_vehicles(rows: list[dict]) -> None:
         legs_by_pair: dict[tuple, list[dict]] = {}
         for underlying, entry_date in pairs:
             df = pd.read_sql(
-                """SELECT conid, put_call, buy_sell, strike FROM journal_trades
+                """SELECT conid, put_call, buy_sell, strike, expiry FROM journal_trades
                    WHERE underlying_symbol=%s AND trade_date=%s AND asset_category='OPT'
                      AND open_close IN ('O','C;O')""",
                 conn, params=[underlying, entry_date],
@@ -1273,7 +1291,7 @@ def _refine_spread_vehicles(rows: list[dict]) -> None:
         if camp_ids:
             ph = ",".join(["%s"] * len(camp_ids))
             cdf = pd.read_sql(
-                f"""SELECT ct.campaign_id, t.conid, t.put_call, t.buy_sell, t.strike, t.trade_date
+                f"""SELECT ct.campaign_id, t.conid, t.put_call, t.buy_sell, t.strike, t.expiry, t.trade_date
                     FROM journal_campaign_trades ct JOIN journal_trades t ON t.trade_id = ct.trade_id
                     WHERE ct.campaign_id IN ({ph}) AND t.open_close IN ('O','C;O')""",
                 conn, params=camp_ids,
@@ -1292,6 +1310,8 @@ def _refine_spread_vehicles(rows: list[dict]) -> None:
         combo = _combo_vehicle(legs)
         if combo:
             r["vehicle"] = combo
+            continue
+        if r.get("vehicle") is None:
             continue
         if len(legs) != 2 or legs[0]["put_call"] != legs[1]["put_call"]:
             continue  # not a clean 2-leg vertical -- leave the generic label
