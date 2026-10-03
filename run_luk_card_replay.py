@@ -117,13 +117,20 @@ def minutes(s3, tk: str, cache: dict) -> pd.DataFrame | None:
             fr = []
             for f in fs:
                 b = pd.read_parquet(f)
-                if "ts" in b.columns:
-                    b = b.set_index(pd.to_datetime(b.ts))
-                if "price" in b.columns and "close" not in b.columns:
-                    b["close"] = b.price
+                if b.empty or "price" not in b.columns and "close" not in b.columns:
+                    continue                      # empty cache files exist (e.g. SPY_2026-04-03)
+                if not isinstance(b.index, pd.DatetimeIndex):
+                    tcol = "ts" if "ts" in b.columns else "timestamp"
+                    b = b.set_index(pd.to_datetime(b[tcol]))
+                # execution fix after the first run crashed (2026-10-03, no outcomes seen): older cache files carry
+                # only price/volume; a 1-minute bar from a single price is open = high = low = close = price
+                for c in ("open", "high", "low", "close"):
+                    if c not in b.columns:
+                        b[c] = b["price"]
                 fr.append(b[["open", "high", "low", "close", "volume"]])
-            m = pd.concat(fr).sort_index()
-            m = m[~m.index.duplicated()]
+            if fr:
+                m = pd.concat(fr).sort_index()
+                m = m[~m.index.duplicated()]
     if m is not None:
         if m.index.tz is not None:
             m.index = m.index.tz_convert("America/New_York").tz_localize(None)
