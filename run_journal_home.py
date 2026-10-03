@@ -18,6 +18,7 @@ SECTIONS = [
     ("tito/index.html", "Tito's best trades", "His 20 curated winners with daily charts, option paths, commentary and the scale-out rule."),
     ("momentum/index.html", "12-1 momentum backtest", "The certified momentum sleeve, 2011 to 2026: growth of $1, drawdowns and yearly returns vs the equal-weight universe and SPY."),
     ("luk/index.html", "Martin Luk's trades", "Every position he disclosed on stream, winners and losers, grouped into campaigns with his commentary and video links."),
+    ("ariel/index.html", "Ariel Hernandez's trades", "Every position from his daily recaps, grouped into campaigns: commentary, video links, broker P&amp;L, and where each entry sat vs the 20 EMA."),
 ]
 
 CSS = """
