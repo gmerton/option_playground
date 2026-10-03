@@ -80,7 +80,8 @@ def main() -> None:
     # regime at t-1
     spy = C["SPY"]
     down = (spy < e20["SPY"]) & (e10["SPY"] < e20["SPY"])
-    breadth = (C > sma50).where(P.elig).sum(axis=1) / P.elig.sum(axis=1)
+    el = P.elig.fillna(False).astype(bool)
+    breadth = ((C > sma50) & el).sum(axis=1).astype(float) / el.sum(axis=1).astype(float).replace(0, np.nan)
     weak = (down | (breadth < 0.40)).shift(1, fill_value=False)
     comp = pd.DataFrame({"down": down.shift(1, fill_value=False), "breadth_lt40": (breadth < 0.40).shift(1, fill_value=False)})
 
@@ -170,7 +171,7 @@ def main() -> None:
              f"Excess = 10-session % return minus 3 same-date random leaders, month-clustered t. WEAK share of dates "
              f"(2010+): {weak[dates >= '2010-01-01'].mean():.0%}.", "",
              f"House breakout: WEAK {bw[0]:+.2f}pp (t {bw[0] / bw[1]:.2f}, n {bw[2]}) · STRONG {bs[0]:+.2f}pp (t {bs[0] / bs[1]:.2f}, n {bs[2]})", "",
-             "## Primary (tactic − breakout, WEAK regime) + secondary", "", R.round(3).to_markdown(index=False), "",
+             "## Primary (tactic − breakout, WEAK regime) + secondary", "", R.round(3).to_string(index=False), "",
              "## Exploratory: per level × regime", ""]
     ex = []
     for (tac, lvl), g in E.groupby(["tactic", "level"]):
@@ -180,7 +181,7 @@ def main() -> None:
     for comp_name in ("down", "breadth_lt40"):
         for tac, g in pooled.groupby("tactic"):
             mu, se, n = ms(g[g[comp_name]]); ex.append((tac, "pooled", f"{comp_name} only", n, mu, mu / se if se else np.nan))
-    lines.append(pd.DataFrame(ex, columns=["tactic", "level", "regime", "n", "excess_pp", "t"]).round(3).to_markdown(index=False))
+    lines.append(pd.DataFrame(ex, columns=["tactic", "level", "regime", "n", "excess_pp", "t"]).round(3).to_string(index=False))
     open(f"{OUT}_results.md", "w").write("\n".join(lines) + "\n")
     print("\n".join(lines[:12]))
 
