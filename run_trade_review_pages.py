@@ -451,6 +451,10 @@ SUMMARY_CSS = BASE_CSS + """
   h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin: 28px 0 10px; }
   .strategy-block { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px; margin-bottom: 18px; }
   .strategy-name { font-size: 15px; font-weight: 600; margin-bottom: 12px; }
+  table.subtotals { border-collapse: collapse; width: 100%; margin-top: 14px; font-size: 12.5px; }
+  table.subtotals th, table.subtotals td { padding: 6px 10px; border-top: 1px solid var(--border); text-align: right; white-space: nowrap; }
+  table.subtotals th { color: var(--muted); font-weight: 600; font-size: 11px; text-transform: uppercase; }
+  table.subtotals .lab { text-align: left; } table.subtotals tr.total td { font-weight: 700; border-top: 2px solid var(--border); }
   .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 14px; margin-bottom: 4px; }
   .stat-cell .label { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .03em; }
   .stat-cell .value { font-size: 18px; font-variant-numeric: tabular-nums; margin-top: 2px; }
@@ -659,12 +663,47 @@ def _vehicle_bucket(vehicle: str | None) -> str | None:
         return "Long Stock"
     if vehicle == "short stock":
         return "Short Stock"
-    if vehicle.startswith("long call") or vehicle.startswith("long put") or vehicle == "long straddle":
+    if vehicle.startswith("long call") or vehicle.startswith("long put") or vehicle in LONG_VOL_COMBOS:
         return "Long Vol"
     if (vehicle.startswith("short call") or vehicle.startswith("short put")
-            or "spread" in vehicle or vehicle == "iron condor"):
+            or "spread" in vehicle or vehicle in SHORT_VOL_COMBOS):
         return "Short Vol"
     return None
+
+
+LONG_VOL_COMBOS = {"long straddle", "long strangle", "reverse iron condor"}
+SHORT_VOL_COMBOS = {"iron condor", "iron butterfly", "short straddle", "short strangle"}
+# Short Vol subtotals on the Performance card (Gabe 2026-10-03). Order = display order; anything unmatched -> Other.
+SHORT_VOL_SUBS = [
+    ("Put spreads", lambda v: v in ("bull put spread", "bear put spread")),
+    ("Call spreads", lambda v: v in ("bear call spread", "bull call spread")),
+    ("Iron condors / butterflies", lambda v: v in ("iron condor", "iron butterfly")),
+    ("Short straddles / strangles", lambda v: v in ("short straddle", "short strangle")),
+    ("Short puts", lambda v: v.startswith("short put")),
+    ("Short calls", lambda v: v.startswith("short call")),
+]
+
+
+def _short_vol_sub(vehicle: str) -> str:
+    return next((name for name, f in SHORT_VOL_SUBS if f(vehicle)), "Other")
+
+
+def _render_subtotals(brows: list[dict]) -> str:
+    names = [n for n, _ in SHORT_VOL_SUBS] + ["Other"]
+    trs = []
+    for name in names + ["Total"]:
+        sub = brows if name == "Total" else [r for r in brows if _short_vol_sub(r.get("vehicle") or "") == name]
+        if not sub:
+            continue
+        st = _strategy_stats(sub)
+        wr = f'{st["win_rate"]:.0f}%' if st["win_rate"] is not None else "—"
+        avg = fmt_pnl(st["avg_realized"]) if st["avg_realized"] is not None else "—"
+        cls = ' class="total"' if name == "Total" else ""
+        trs.append(f'<tr{cls}><td class="lab">{name}</td><td>{st["n_total"]}</td><td>{st["n_closed"]} / {st["n_open"]}</td><td>{wr}</td>'
+                   f'<td>{fmt_pnl(st["total_realized"])}</td><td>{avg}</td><td>{fmt_pnl(st["total_unrealized"])}</td>'
+                   f'<td>{fmt_pnl(st["total_realized"] + st["total_unrealized"])}</td></tr>')
+    return ('<table class="subtotals"><thead><tr><th class="lab">By strategy</th><th>Trades</th><th>Closed / Open</th><th>Win rate</th>'
+            '<th>Realized</th><th>Avg / trade</th><th>Unrealized</th><th>Combined</th></tr></thead><tbody>' + "".join(trs) + "</tbody></table>")
 
 
 def _render_vehicle_breakdown(rows: list[dict]) -> str:
@@ -686,6 +725,7 @@ def _render_vehicle_breakdown(rows: list[dict]) -> str:
         blocks.append(f"""<div class="strategy-block">
   <a class="card-link" href="trade_reviews.html?vehicle={quote(bucket)}"><div class="strategy-name">{bucket}</div>
   <div class="stat-grid">{''.join(cells)}</div><div class="view-all">View all {st["n_total"]} trades &rarr;</div></a>
+  {_render_subtotals(brows) if bucket == "Short Vol" and brows else ""}
 </div>""")
     n_unclassified = sum(1 for r in rows if _vehicle_bucket(r.get("vehicle")) is None)
     note = (
@@ -940,8 +980,8 @@ function vehicleBucket(v) {       // mirrors _vehicle_bucket() in run_trade_revi
   if (!v) return null;
   if (v === 'long stock') return 'Long Stock';
   if (v === 'short stock') return 'Short Stock';
-  if (v.startsWith('long call') || v.startsWith('long put') || v === 'long straddle') return 'Long Vol';
-  if (v.startsWith('short call') || v.startsWith('short put') || v.includes('spread') || v === 'iron condor') return 'Short Vol';
+  if (v.startsWith('long call') || v.startsWith('long put') || ['long straddle', 'long strangle', 'reverse iron condor'].includes(v)) return 'Long Vol';
+  if (v.startsWith('short call') || v.startsWith('short put') || v.includes('spread') || ['iron condor', 'iron butterfly', 'short straddle', 'short strangle'].includes(v)) return 'Short Vol';
   return null;
 }
 function urlMatch(r) {
@@ -1187,6 +1227,24 @@ def _compute_directions(rows: list[dict]) -> None:
     _refine_spread_vehicles(rows)
 
 
+def _combo_vehicle(legs: list[dict]) -> str | None:
+    """Call + put structures from the opening legs (2026-10-03: 13 rows stayed generic 'spread', and 8 of them were
+    LONG straddles / strangles that the Short Vol card was counting). 2 legs = straddle / strangle, long or short by
+    side; 4 legs = iron condor / butterfly when the inner strikes are short (reverse = long). None otherwise."""
+    c = [l for l in legs if l["put_call"] == "C"]; p = [l for l in legs if l["put_call"] == "P"]
+    if len(legs) == 2 and len(c) == 1 and len(p) == 1 and c[0]["buy_sell"] == p[0]["buy_sell"]:
+        side = "long" if c[0]["buy_sell"] == "BUY" else "short"
+        return f"{side} {'straddle' if float(c[0]['strike']) == float(p[0]['strike']) else 'strangle'}"
+    if len(legs) == 4 and len(c) == 2 and len(p) == 2 and all({x["buy_sell"] for x in g} == {"BUY", "SELL"} for g in (c, p)):
+        sc = next(float(x["strike"]) for x in c if x["buy_sell"] == "SELL"); lc = next(float(x["strike"]) for x in c if x["buy_sell"] == "BUY")
+        sp = next(float(x["strike"]) for x in p if x["buy_sell"] == "SELL"); lp = next(float(x["strike"]) for x in p if x["buy_sell"] == "BUY")
+        if sc < lc and sp > lp:
+            return "iron butterfly" if sc == sp else "iron condor"
+        if sc > lc and sp < lp:
+            return "reverse iron condor"
+    return None
+
+
 def _refine_spread_vehicles(rows: list[dict]) -> None:
     """For rows generically labeled 'spread' (tag systematic_spread_likely), determines the
     precise 2-leg vertical spread name (bull/bear call/put spread) from the actual opening legs.
@@ -1231,6 +1289,10 @@ def _refine_spread_vehicles(rows: list[dict]) -> None:
         if not legs:
             legs = legs_by_pair.get((r["underlying"], r["entryDate"])) or []
         legs = list({leg["conid"]: leg for leg in legs}.values())  # dedupe repeat fills
+        combo = _combo_vehicle(legs)
+        if combo:
+            r["vehicle"] = combo
+            continue
         if len(legs) != 2 or legs[0]["put_call"] != legs[1]["put_call"]:
             continue  # not a clean 2-leg vertical -- leave the generic label
         pc = legs[0]["put_call"]
