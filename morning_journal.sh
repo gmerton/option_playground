@@ -26,6 +26,9 @@ if [ "$(date +%u)" -eq 7 ]; then echo "Sunday -- nothing new to pull"; exit 0; f
 #    close, so it always ended one session short; every intraday scan then skipped D-1). Non-fatal, ~75 s.
 PYTHONPATH=src:. $PY run_build_liquid_panel.py 2>&1 | grep -E "gap check|WARN|^wrote" | sed 's/^/  panel: /' || echo "  (panel refresh failed)"
 
+# 0b. Book gate history (lib/regime/book_gate.py): record the sessions the refreshed panel now covers. Non-fatal.
+$PY -m lib.regime.book_gate 2>/dev/null | sed -n '1p; /^recorded\|not updated/p' | sed 's/^/  gate: /' || echo "  (book gate not recorded)"
+
 # 1. Flex pull (retry up to 6 x 10 min while IBKR has not generated the statement yet)
 for i in 1 2 3 4 5 6; do
   if $PY run_daily_journal.py --query-id 1605053 2>&1 | grep -v -i "warn" | tee /tmp/morning_flex.txt | tail -4; then

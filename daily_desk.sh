@@ -72,6 +72,14 @@ if PANEL_LOG=$($PY run_build_liquid_panel.py 2>&1); then
 else
   echo "  (panel refresh failed; the scan and clusters use the cached panel)"; echo "$PANEL_LOG" | tail -3 | sed 's/^/  /'
 fi
+# Book gate (lib/regime/book_gate.py, 2026-10-03): QQQ > SMA50, EMA9 > EMA21, 5-day net 20-day highs-lows > 0.
+# OFF = no NEW house longs tomorrow (a drawdown tool, not an edge; never applied to the momentum sleeve). Also records
+# every session into MySQL journal_book_gate so entries can later be scored by gate state.
+echo; echo "== 1c book gate (no-new-longs rule when OFF)"
+GATE_OUT=$(MYSQL_PASSWORD="${MYSQL_PASSWORD:-}" $PY -m lib.regime.book_gate 2>/dev/null)
+GATE_LINE=$(echo "$GATE_OUT" | head -1)
+echo "  ${GATE_LINE:-(book gate failed to compute)}"
+echo "$GATE_OUT" | grep "^recorded\|not updated" | sed 's/^/  /'
 echo; echo "== 2/6 Adhikary scan (precision=YES + SETUP pivots are the actionable rows)"
 $PY run_adhikary_scan.py 2>/dev/null | tee "$OUT/adhikary_$D.txt" | sed -n 1,60p
 echo; echo "== 2c industry clusters of the scan's qualifiers (watchlist pointer, NOT a signal: group strength has no edge, see group_move_study_2026-09-17.md)"
@@ -91,6 +99,7 @@ else
   echo "  (no Lambda scan for $D yet -- it runs at 19:15 ET; scanning locally)"
   $PY run_preferred_breakouts.py 2>/dev/null | tail -25
 fi
+case "$GATE_LINE" in *"GATE OFF"*) echo "  ⚠ book gate OFF: the breakout rows above are no-new-longs tomorrow (${GATE_LINE#*as of })";; esac
 if [ "$(date +%u)" = 5 ] || [ "${STRADDLE:-0}" = 1 ]; then
   echo; echo "== 4/6 long-straddle screen (Friday entry day): all 5 playbook gates on the 323 pool (Tradier data; IBKR for the IV percentile)"
   # IBKR is used for the IV-percentile gate (falls back to the stale Athena table if TWS is closed).

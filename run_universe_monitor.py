@@ -79,6 +79,8 @@ def headline(a: Alert, gated: bool) -> str:
     sa = a.fields.get("stop_adr")
     g = a.fields.get("grade")
     head = f"{a.symbol:<6s} {side:<5s} @ {a.price:.2f}  stop {a.stop:.2f} ({risk:.1f}%{f', {sa:.2f} ADR' if sa else ''}){f'  [{g}]' if g else ''}"
+    if side == "LONG" and a.fields.get("book_gate") == "OFF":
+        head += "  [gate OFF]"            # book gate (lib/regime/book_gate.py): no-new-longs rule; a tag, not a filter
     it = a.fields.get("industry_txt")
     tail = f"  | {a.t:%H:%M} {a.kind}{' (gated)' if gated else ''}{f' | {it}' if it else ''} | {a.msg}"
     if _TTY:
@@ -401,6 +403,12 @@ class Engine:
             a.fields["out_of_play"] = True
         gated = gated or g.grade in ("C", "F")
         a.fields["gated"] = gated
+        # book gate at the prior close (lib/regime/book_gate.py): tag only -- grade, display and sound are unchanged
+        bg = getattr(self, "book_gate", None)
+        if bg and a.kind not in SHORT_KINDS:
+            a.fields["book_gate"] = bg
+            if bg == "OFF":
+                a.msg += " | book gate OFF at the prior close: no-new-longs rule"
         ind, ind_txt = self.idx.industry(a.symbol, a.t)
         a.fields.update(ind); a.fields["industry_txt"] = ind_txt
         if a.fields.get("out_of_play"):
@@ -442,6 +450,13 @@ async def run_live(args) -> int:
                  sound=args.sound, index_gate=args.index_gate, short_syms=short_syms, day_gate=not args.no_day_gate)
     eng.idx.prev_close = {s: ctx[s].prev_close for s in INDEX_SYMBOLS if s in ctx}
     eng.idx.ref_ctx = {s: ctx[s] for s in set(INDEX_SYMBOLS) | etfs if s in ctx}
+    try:                                          # book gate at the last panel close (a tag on LONG alerts, never a filter)
+        from lib.regime.book_gate import latest as _gate_latest
+        eng.book_gate, _gl, _gd = _gate_latest()
+        print(_gl + ("" if _gd.date() < session else "  ⚠ panel already includes today"))
+    except Exception as e:
+        eng.book_gate = None
+        print(f"(book gate unavailable: {e})")
     print_industries(eng)
     print_levels(eng)
     async with TradierClient(api_key=os.environ["TRADIER_API_KEY"]) as _seed_client:
