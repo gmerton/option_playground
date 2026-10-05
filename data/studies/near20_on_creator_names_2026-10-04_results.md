@@ -44,3 +44,16 @@ month
 ## Notes (2026-10-04)
 - Execution fixes before the first result printed: `R.copy` hit the pandas method; a string replace then broke `R.copy_ex`. No outcome was seen before the fixes.
 - Post-hoc read (disclosed): NEAR20 fills 98% (their names already sit near the 20 EMA), so NEAR20 ≈ COPY; BREAKOUT is in cash ~80% of events. On excess vs the same-date ADR field, NEAR20 − BREAKOUT is about zero (see the line printed above in the session log / TEST_INDEX): the raw +6.8pp is mostly being invested in a rising tape.
+
+## EXPLORATORY exit sweep (post hoc, Gabe: a 60-session common exit is not realistic; 5 looks, no pass bar)
+Excess vs the same-date ADR-band field held over the SAME window; unfilled = 0. `tight` = 1.5% intraday stop, else exit on the first close below the 9 EMA, cap 20.
+
+| exit | NEAR20 | BREAKOUT | NEAR20 − BREAKOUT |
+|---|---|---|---|
+| 1 session | −0.80pp (t −2.37) | +0.36pp (t 2.18) | −1.16pp (t −3.75) |
+| 5 sessions | −0.53 (t −1.07) | +0.23 (t 0.87) | −0.76 (t −1.36) |
+| 10 sessions | −0.12 (t −0.14) | +0.22 (t 0.78) | −0.33 (t −0.44) |
+| 20 sessions | +0.70 (t 0.41) | +0.96 (t 2.12) | −0.26 (t −0.18) |
+| tight stop + 9-EMA exit | −0.77 (t −1.58) | +0.34 (t 2.04) | −1.11 (t −1.92) |
+
+By trader, NEAR20: Ariel −0.52 / −0.16 / +0.46 / +1.72 / −0.56; Luk −1.82 / −1.93 / −2.30 / −3.12 / −1.57. Per-event rows: `near20_on_creator_names_2026-10-04_exit_sweep.csv`.
