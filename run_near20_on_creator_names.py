@@ -140,8 +140,8 @@ def main() -> None:
     L = [f"# Near the 20 EMA on Luk's / Ariel's names vs our breakout ({pd.Timestamp.now():%Y-%m-%d %H:%M})", "",
          f"{len(R)} events (t0 {R.t0.min().date()} → {R.t0.max().date()}); NEAR20 filled {R.near_filled.mean():.0%}, BREAKOUT fired {R.brk_fired.mean():.0%}.", "",
          f"**PRIMARY NEAR20 − BREAKOUT: {v}** — {m:+.2f}pp per event, t {t:.2f}, n {n}; halves {h1:+.2f} / {h2:+.2f}; MDE {2.8 * se:.2f}pp", "",
-         f"- per event: NEAR20 {R.near20.mean():+.2f}% · BREAKOUT {R.breakout.mean():+.2f}% · COPY {R.copy.mean():+.2f}%", "", "## Reported, not a pass", ""]
-    for lab, x in (("NEAR20 − COPY", R.near20 - R.copy), ("BREAKOUT − COPY", R.breakout - R.copy),
+         f"- per event: NEAR20 {R.near20.mean():+.2f}% · BREAKOUT {R.breakout.mean():+.2f}% · COPY {R["copy"].mean():+.2f}%", "", "## Reported, not a pass", ""]
+    for lab, x in (("NEAR20 − COPY", R.near20 - R["copy"]), ("BREAKOUT − COPY", R.breakout - R["copy"]),
                    ("beta check, excess vs same-date ADR field: NEAR20", R.near_ex), ("… BREAKOUT", R.brk_ex), ("… COPY", R.copy_ex)):
         a = ct(x, R.month); L.append(f"- {lab}: {a[0]:+.2f}pp t {a[1]:.2f} n {a[2]}")
     for lab, kw in (("band 0.5 ADR", dict(band=0.5)), ("wait 10", dict(wait=10)), ("wait 40", dict(wait=40)), ("MANAGED (stops + 20-EMA exit)", dict(managed=True))):
