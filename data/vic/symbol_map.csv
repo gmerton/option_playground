@@ -1,0 +1,16 @@
+vic_ticker,symbol,source,note
+MONOY,MONOY,yahoo,US ADR (USD) - matches the VIC price; the Tokyo line is 3064.T
+OSW,OSW,yahoo,
+9909,9909.HK,yahoo,Hong Kong (HKD)
+AUTLF,AUTLF,yahoo,US OTC line (USD) - matches the VIC price; the ASX line is ASB.AX
+FND,FND,yahoo,
+HNRG,HNRG,yahoo,
+AMRZ,AMRZ,yahoo,
+SHUR,SHUR.BR,yahoo,Euronext Brussels (EUR)
+AUUA.,AUUA.V,yahoo,TSX Venture (CAD)
+CGEH,CEPL,tradier,OTC CGEH uplisted to Nasdaq as CEPL on 2026-07-08; Tradier's CEPL series includes the OTC history; no split at the uplisting
+PESI,PESI,yahoo,
+AMZN,AMZN,yahoo,
+FFH.TO,FFH.TO,yahoo,Toronto (CAD)
+LQDA,LQDA,yahoo,
+FICO,FICO,yahoo,
