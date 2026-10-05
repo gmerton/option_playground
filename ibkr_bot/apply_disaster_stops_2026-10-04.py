@@ -10,6 +10,7 @@ Safety:
   * clientId 0 (the only id that may modify / cancel orders created in TWS -- repo gotcha); reqAutoOpenOrders binds them.
   * An EXISTING protective stop is MODIFIED in place (price, and quantity if it differs) -- never a second stop.
     More than one protective stop on a name = stacked -> that name is SKIPPED and reported.
+    An existing TRAIL or STP LMT is never modified (auxPrice means something else on those) -> SKIPPED.
   * Position quantity must match the plan exactly, else the name is SKIPPED (the book changed since the plan).
   * After --apply it re-reads the account and prints one line per name.
 
@@ -63,6 +64,11 @@ def main() -> int:
             print(f"SKIP {sym}: position is {have:g}, plan expects {qty} -- re-run the stop calculation"); continue
         if len(mine) > 1:
             print(f"SKIP {sym}: {len(mine)} {side} stops already resting (stacked) -- clean up in TWS first"); continue
+        if mine and mine[0].order.orderType != "STP":
+            # TRAIL: auxPrice is the trail AMOUNT, not a stop price; STP LMT: lmtPrice would be left stale.
+            # Either way a modify here would mis-set it, and a new STP alongside it would stack -> skip.
+            t = mine[0]
+            print(f"SKIP {sym}: existing {t.order.orderType} stop (orderId {t.order.orderId}) -- change it in TWS, not here"); continue
         if mine:
             t = mine[0]
             print(f"MODIFY {sym}: {side} {t.order.totalQuantity:g} STP {t.order.auxPrice:g} -> {side} {abs(qty)} STP {px:.2f} (orderId {t.order.orderId})")
