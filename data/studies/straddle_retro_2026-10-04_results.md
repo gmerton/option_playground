@@ -121,3 +121,8 @@ USAR 2026-09-25 2026-10-02    True  214.0    -139.7    68.0     -65.3      31.8 
 ## Checks (2026-10-04)
 - Contracts per straddle: 1 on 47 of 58 trades (2-6 on the rest), so most "size" differences are the OPTION PRICE (higher-priced / higher-IV underlyings), not a sizing decision.
 - Concentration: the top 3 trades supply $4,827 of the systematic book's +$5,894 early-exit advantage (RDDT 8/12 +$2,605, PLTR 8/26, FDX 9/21 region). Without RDDT 8/12 the equal-weighted gap is +5.6pp.
+
+## Exit-rule test NOT queued (2026-10-04) + entry-weekday conformance
+- A "close at −40%, hold winners" rule is the −50% stop already measured on the full 2018-26 gated sample (TEST_INDEX §2 row 30 / straddle_recenter): stop REMOVED, −3.84pp on the book, −9.51pp on the breach cohort, 69.8% of breaches better held. Not re-tested (only-new-ideas rule).
+- Conformance (descriptive): only 17 of 55 systematic entries were on a FRIDAY (Mon 9, Tue 10, Wed 10, Thu 9). The playbook enters Fridays only (tenor study 2026-09-21: Mon-Thu entries 5.7-8.5pp worse than Friday on the same name and expiry).
+  Hold-to-expiry: Friday entries +1.6% mean (median −32.1%, n 17) vs Mon-Thu −25.0% (median −50.3%, n 38). Early exits: Friday +7.0% vs Mon-Thu −13.0%. Small samples, but the gap is the size the tenor study predicts.
