@@ -3,7 +3,7 @@
 _Every entry pattern tested with `lib.studies.pattern_test`, newest last._
 
 **Bar to pass (daily, from 2026-09-23):** paired edge t >= 3 on the best arm, both halves' paired edge > 0, and p_search < 0.003 (label-permutation null over the best-of-arms pick). Grid rows also carry p_opt (the whole grid re-run under each permutation). Rows before 2026-09-23 used the unpaired rule (|t| on raw R + point edge > 0) and have no edge_t / p_search.
-**Multiple testing:** 83 patterns tested so far — at 5% significance, expect ~4.2 to clear by chance. Discount accordingly.
+**Multiple testing:** 84 patterns tested so far — at 5% significance, expect ~4.2 to clear by chance. Discount accordingly.
 
 | tested | name | timeframe | n | best_arm | meanR | ctrl | edge | t | edge_t | p_search | p_opt | half1 | half2 | passed | note |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -90,3 +90,4 @@ _Every entry pattern tested with `lib.studies.pattern_test`, newest last._
 | 2026-09-29 | HABER first 50d pullback [xname] | daily | 1808 | trail_bar | -0.1034 | -0.0503 | -0.0531 | -2.0761 | -1.1531 | 0.99 |  | 0.1672 | -0.215 | False | pre-registered 2026-09-29 (ec69b3b); ctrl=xname |
 | 2026-09-29 | ETF LONG breakout [xname] | daily | 1332 | t1R | -0.1046 | -0.1543 | 0.0497 | -1.7615 | 1.669 | 0.1494 |  | -0.1619 | -0.0544 | False | pre-registered 2026-09-29 (b15f8d6); ctrl=xname |
 | 2026-09-29 | ETF SHORT breakdown [xname] | daily | 807 | stop_hold | -0.6574 | -0.6916 | 0.0342 | -4.9676 | 0.0803 | 0.8001 |  | -0.4278 | -0.817 | False | pre-registered 2026-09-29 (b15f8d6); ctrl=xname |
+| 2026-10-04 | touch>=5 gate on house breakout | daily | 6845 | t2R | -0.1972 | -0.1939 | -0.0033 | -4.6763 | 1.8612 | 0.1399 |  | -0.2822 | -0.1752 | False | TEST_INDEX §10 touch count (SMB/Breitstein), >=5 touches t-60..t-1 within 0.25 ADR; ctrl=post |
