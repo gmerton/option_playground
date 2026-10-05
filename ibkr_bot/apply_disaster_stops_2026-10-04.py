@@ -12,6 +12,8 @@ Safety:
     More than one protective stop on a name = stacked -> that name is SKIPPED and reported.
     An existing TRAIL or STP LMT is never modified (auxPrice means something else on those) -> SKIPPED.
   * Position quantity must match the plan exactly, else the name is SKIPPED (the book changed since the plan).
+  * OLD-PRICE CHECK: the dry run saves each resting stop (orderId, type, price, qty); --apply needs that file and SKIPS
+    any name whose stop differs from it (moved, filled, cancelled, added). Always dry-run, read it, then --apply.
   * After --apply it re-reads the account and prints one line per name.
 
 Usage (live TWS on 7496):
@@ -21,6 +23,7 @@ Usage (live TWS on 7496):
 from __future__ import annotations
 
 import argparse
+import json
 import os
 import sys
 
@@ -42,6 +45,14 @@ PLAN = {
     "TNA":  (15, "SELL", 57.83),
 }
 
+# The dry run records each name's resting stop here; --apply refuses any name whose stop changed since.
+SNAPSHOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "disaster_stops_2026-10-04_dryrun.json")
+
+
+def stop_state(t) -> dict | None:
+    return None if t is None else {"orderId": t.order.orderId, "type": t.order.orderType,
+                                   "aux": round(float(t.order.auxPrice), 2), "qty": float(t.order.totalQuantity)}
+
 
 def main() -> int:
     ap = argparse.ArgumentParser(); ap.add_argument("--apply", action="store_true"); a = ap.parse_args()
@@ -56,10 +67,20 @@ def main() -> int:
         if c.secType == "STK" and o.orderType in ("STP", "STP LMT", "TRAIL"):
             stops.setdefault(c.symbol, []).append(t)
 
-    actions = []
+    seen = None
+    if a.apply:
+        try:
+            seen = json.load(open(SNAPSHOT))
+        except FileNotFoundError:
+            print(f"no dry-run snapshot at {SNAPSHOT} -- run without --apply first, check the plan, then --apply"); ib.disconnect(); return 1
+
+    actions, state = [], {}
     for sym, (qty, side, px) in PLAN.items():
         have = pos.get(sym, 0)
         mine = [t for t in stops.get(sym, []) if t.order.action == side]
+        state[sym] = stop_state(mine[0]) if len(mine) == 1 else None
+        if seen is not None and (sym not in seen or seen[sym] != state[sym]):
+            print(f"SKIP {sym}: resting stop changed since the dry run ({seen.get(sym)} -> {state[sym]}) -- dry-run again"); continue
         if have != qty:
             print(f"SKIP {sym}: position is {have:g}, plan expects {qty} -- re-run the stop calculation"); continue
         if len(mine) > 1:
@@ -78,6 +99,9 @@ def main() -> int:
             actions.append(("new", sym, side, abs(qty), px))
 
     if not a.apply:
+        os.makedirs(os.path.dirname(SNAPSHOT), exist_ok=True)
+        json.dump(state, open(SNAPSHOT, "w"), indent=1)
+        print(f"\nsnapshot of resting stops -> {SNAPSHOT}")
         print("\nDry run only. Re-run with --apply to send these orders."); ib.disconnect(); return 0
     if input(f"\nSend {len(actions)} order changes to the LIVE account? type 'yes': ").strip() != "yes":
         print("aborted, nothing sent"); ib.disconnect(); return 1
