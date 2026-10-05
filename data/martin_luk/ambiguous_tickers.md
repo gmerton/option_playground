@@ -4,7 +4,7 @@
 
 Two checks per video. **Ambiguous tickers**: spots where the auto-caption garbled a symbol — click the timestamp, check the chart, confirm the ticker. **Trades**: each trade with the day it was placed; ⬜ marks rows that need a glance — an unresolved ticker (`?`), an unresolved fill date, or a date *inferred* to a different day than the stream (e.g. he said "Thursday"). Rows with no ⬜ are same-session or he stated the date.
 
-**859** ticker flags · **250** trades to date-check · across **88** videos. Conf: 🟡 likely · ❓ unsure.
+**864** ticker flags · **252** trades to date-check · across **89** videos. Conf: 🟡 likely · ❓ unsure.
 
 ## Index — ticker flags by video
 
@@ -88,6 +88,7 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 - [2026-04-08 — Huge gap-up and $CAR short](#2026-04-08-huge-gap-up-and-car-short) · 6
 - [2026-02-26 — Chop chop chop](#2026-02-26-chop-chop-chop) · 6
 - [2026-02-06 — $SNDK LoD](#2026-02-06-sndk-lod) · 6
+- [2026-09-17 — LOCKED IN](#2026-09-17-locked-in) · 5
 - [2026-09-16 — FOMC special](#2026-09-16-fomc-special) · 5
 - [2026-09-02 — Getting too bearish](#2026-09-02-getting-too-bearish) · 5
 - [2026-07-29 — Bleeding slowly](#2026-07-29-bleeding-slowly) · 5
@@ -151,6 +152,32 @@ Two checks per video. **Ambiguous tickers**: spots where the auto-caption garble
 | ⬜ | [101:51](https://www.youtube.com/watch?v=2lJj3qrHkso&t=6111s) | SPCX | long · reentry | Friday | 2026-09-18 |
 | · | [65:52](https://www.youtube.com/watch?v=2lJj3qrHkso&t=3952s) | SMCI | long · stopped_out | — | 2026-09-21 |
 | ⬜ | [54:21](https://www.youtube.com/watch?v=2lJj3qrHkso&t=3261s) | ? | short · exit | Thursday | 2026-09-17 |
+
+
+## 2026-09-17 — LOCKED IN
+
+[▶ watch](https://www.youtube.com/watch?v=soTk48wKouE) · `data/martin_luk/videos/livestreams/2026-09-17_soTk48wKouE` · 5 ticker flags · 6 trades
+
+**Ambiguous tickers**
+
+| ✔ | Time | Caption said | Context | Best guess | Conf |
+|---|------|--------------|---------|-----------|------|
+| ⬜ | [131:42](https://www.youtube.com/watch?v=soTk48wKouE&t=7902s) | the free weapon | SMCI pull back into the free weapon I believe in the 5 M | VWAP on the 5-min chart | 🟡 |
+| ⬜ | [133:44](https://www.youtube.com/watch?v=soTk48wKouE&t=8024s) | 16 minut | wait for the bounce on the 16 minut | 65-minute chart | ❓ |
+| ⬜ | [143:08](https://www.youtube.com/watch?v=soTk48wKouE&t=8588s) | SNK maybe SK K HX MU | memory names ... pull back into the daily nine | SNDK, SKHY, MU | 🟡 |
+| ⬜ | [145:08](https://www.youtube.com/watch?v=soTk48wKouE&t=8708s) | back above the 1921 | nvidia is now back above the 1921 | NVDA back above the 9/21 EMAs | 🟡 |
+| ⬜ | [140:23](https://www.youtube.com/watch?v=soTk48wKouE&t=8423s) | Sem di | Sem di and should be better to afford them | SMCI? (garbled) | ❓ |
+
+**Trades** (confirm fill dates)
+
+| ✔ | Time | Ticker | Dir · Action | He said | Fill date |
+|---|------|--------|--------------|---------|-----------|
+| ⬜ | [03:23](https://www.youtube.com/watch?v=soTk48wKouE&t=203s) | ? | short · hold | today | 2026-09-17 |
+| · | [151:17](https://www.youtube.com/watch?v=soTk48wKouE&t=9077s) | SI (silver) | short · stop | today | 2026-09-17 |
+| · | [151:37](https://www.youtube.com/watch?v=soTk48wKouE&t=9097s) | GC (gold) | short · exit | today | 2026-09-17 |
+| ⬜ | [130:03](https://www.youtube.com/watch?v=soTk48wKouE&t=7803s) | ? | long · stop | today | 2026-09-17 |
+| · | [134:17](https://www.youtube.com/watch?v=soTk48wKouE&t=8057s) | crypto basket (small coins) | long · entry | today | 2026-09-17 |
+| · | [138:33](https://www.youtube.com/watch?v=soTk48wKouE&t=8313s) | MSTR | long · hold | today | 2026-09-17 |
 
 
 ## 2026-09-16 — FOMC special

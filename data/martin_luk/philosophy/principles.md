@@ -1639,3 +1639,73 @@ stopped out or covered almost everywhere by 9/8, ending flat on a self-imposed n
   compliance explain part of it, but he calls the premium too high.
   `2026-09-10_y5Cx9UfXgqs@08:07`
 
+
+## Addendum — 14 to 21 Sep 2026 streams (not yet folded into the tallies above)
+
+Sources: `2026-09-14_rrTaA0m7WxA`, `2026-09-15_E5h9Cam51OU`, `2026-09-16_qAbZe_GD42w`, `2026-09-17_soTk48wKouE`
+(⚠ partial captions: 07:37–118:31 missing), `2026-09-21_2lJj3qrHkso`. Merged 2026-10-04 from each folder's `auto_extract.json`.
+No stream since 9/21 (checked 2026-10-04).
+
+**Stance over the week.** Short-leaning (semis) 14–16 Sep, sitting out gap-downs; the 17 Sep gap-up stopped his silver short at
+the open, he covered gold with it, flipped long and was stopped 3–4 times; by 21 Sep long crypto equities (MSTR, BMNR), booking
+profits into an index gap-up and "stop entering new trades" with QQQ/SPY stretched above the EMAs.
+
+### Entries
+- **Gap days are not entry days, in either direction.** No shorts into a gap-down that is extended onto support; no longs on a
+  gap-up because the gap puts price > 1% from the EMAs and a gentle pullback stops a tight-stop entry; on a gap-up into index
+  resistance skip the opening-range break and wait for the anchored VWAP or converging EMAs. Extends the 10 Sep gap-down rule.
+  `2026-09-14_rrTaA0m7WxA@06:52`, `2026-09-15_E5h9Cam51OU@12:25`, `2026-09-17_soTk48wKouE@148:42`, `2026-09-21_2lJj3qrHkso@58:28`
+- **Missed the trigger → wait for the retest, never chase.** ARM's 1-min breakdown ran from the 9 in seconds; take the lower high /
+  anchored-VWAP retest / declining 9-21 retest on the lower timeframe instead, stop ideally < 1%.
+  `2026-09-16_qAbZe_GD42w@57:21`, `2026-09-16_qAbZe_GD42w@94:33`
+- **Pullbacks over breakouts, for the stop.** Skips breakouts already extended from the low of day rather than carry a 3–5% stop;
+  after repeated stop-outs, stop buying strength and wait for the pullback.
+  `2026-09-21_2lJj3qrHkso@65:09`, `2026-09-17_soTk48wKouE@140:23`
+- **Crypto equities: enter on the shorter timeframe** (hourly 9 pullback) instead of waiting for a daily close over the 9; the
+  daily 21 is the line. `2026-09-21_2lJj3qrHkso@49:07`
+
+### Short-side
+- **Weekly upthrust = the short's precondition.** A clean weekly breakout close followed by a gap below the weekly 9 is the
+  fake-out; shorting a few days to a week before it happens is "death by a thousand cuts".
+  `2026-09-14_rrTaA0m7WxA@13:59`, `2026-09-14_rrTaA0m7WxA@17:46`
+- **A bounce through the prior high and every EMA is uncharacteristic of a weak market** — when one stops a short at the open, cover
+  the correlated shorts too (gold with silver). `2026-09-17_soTk48wKouE@151:37`, `2026-09-17_soTk48wKouE@152:24`
+- **Hold a short while it stays under the declining 9**; concern starts only on a prior-day-high break back over it. Don't cover
+  because the index is extended from its 9 — use the bounces for new entries.
+  `2026-09-15_E5h9Cam51OU@28:40`, `2026-09-14_rrTaA0m7WxA@13:06`
+- Reconfirmed: sector decides the side (software strong → semis are the shorts; "a name in a strong sector is not a short").
+  `2026-09-15_E5h9Cam51OU@15:27`, `2026-09-14_rrTaA0m7WxA@31:18`
+
+### Selection
+- **Among leaders, prefer the shallower pullback, the faster EMA reclaim and the smaller market cap** (SMTC over BE: "easier for a
+  $15B stock to double than an $80B one"); holding the 50 EMA / anchored VWAP through repeated push-downs is strength.
+  `2026-09-16_qAbZe_GD42w@35:59`
+- **Liquidity tiers:** watchlists re-split by daily $ volume (> $500M vs $100–500M); concentrate on the liquid tier for slippage.
+  `2026-09-21_2lJj3qrHkso@07:42`
+
+### Risk & sizing
+- **Gap risk caps position size, not the stop.** Positions stay at 20–25% of the account even when a ~0.75% stop would allow
+  35–40%; slippage is a second reason not to size up on a tight stop. Before 2026: 25–30% positions at 0.5% risk; 2026: 20–25% at
+  ~0.3%, to shrink drawdowns in chop. `2026-09-17_soTk48wKouE@138:17`, `2026-09-17_soTk48wKouE@147:03`,
+  `2026-09-17_soTk48wKouE@153:41`, `2026-09-15_E5h9Cam51OU@75:18`
+- **Exception — slow movers:** gold ~2× silver, silver 35–40% is acceptable in low-ATR instruments without earnings or overnight
+  catalysts, especially when the trade works immediately. `2026-09-15_E5h9Cam51OU@40:00`
+- **Same-theme names are each sized normally** (20–25%); a re-entry after a stop uses the same size, so the tighter stop means less
+  account risk (MSTR re-entry ~0.15%). `2026-09-21_2lJj3qrHkso@56:21`
+- **His worst drawdowns start at equity peaks:** not selling into strength, then overtrading and SIZING UP in the drawdown during
+  chop turns 15% into 30%. Three losses in a day → a big winner that day is unlikely; a break of days/weeks resets.
+  `2026-09-16_qAbZe_GD42w@75:36`, `2026-09-16_qAbZe_GD42w@85:26`
+
+### Exits
+- **No price targets** — exit on volume expansion, price acceleration, or a failure of the defined EMA.
+  `2026-09-21_2lJj3qrHkso@31:00`
+
+### Process & mindset
+- **Edge = finding asymmetric entries, whatever the tactic;** expects tactics to decay. `2026-09-21_2lJj3qrHkso@70:57`
+- **Losing-stretch review: look for what the losers AND the passed-on winners share** (sector strength, entry location, stop
+  placement), allowing for luck in a small sample; for a trader who doesn't grow, the leak is usually size, hesitation, or booking
+  small gains. `2026-09-15_E5h9Cam51OU@47:26`, `2026-09-17_soTk48wKouE@158:06`
+- When nothing is interesting, stop watching the screen. `2026-09-14_rrTaA0m7WxA@32:47`
+- ⚠ **Contradiction to resolve:** 15 Sep "does not use market breadth or put/call ratios; ignores headlines" vs his own breadth
+  thermometer rule (Jul) and 16 Sep "for longs I want breadth to widen". Read: he does not use breadth *indicators*; he reads
+  breadth from his own screens and group behaviour. `2026-09-15_E5h9Cam51OU@38:07`, `2026-09-16_qAbZe_GD42w@22:41`

@@ -1,0 +1,19 @@
+{
+  "video_id": "soTk48wKouE",
+  "url": "https://www.youtube.com/watch?v=soTk48wKouE",
+  "title": "LOCKED IN | 17 Sep 2026",
+  "channel": "martinlukkt",
+  "channel_id": "UCB6jWJJvO_sWZ2PwgmMcxCw",
+  "stream_date": "2026-09-17",
+  "duration": "2:41:46",
+  "summary": "",
+  "transcript": {
+    "file": "transcript.txt",
+    "source": "youtube_auto_captions",
+    "lang": "ru-orig",
+    "format": "timestamped_text_mm_ss",
+    "tool": "yt-dlp",
+    "quality_note": "Auto-generated captions, mis-tagged ru-orig (English content); 07:37-118:31 missing. See notes.md."
+  },
+  "supplemental_notes_file": "notes.md"
+}

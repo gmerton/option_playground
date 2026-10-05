@@ -58,11 +58,14 @@ def has_captions(vid: str) -> bool:
     """
     if not YTDLP.exists():
         return False
+    # web_embedded avoids the default client's bot-check / 429; require POSITIVE evidence, since a failed
+    # call prints neither message and used to be read as "has captions" (2026-10-04).
     out = subprocess.run(
-        [str(YTDLP), "--list-subs", "--skip-download", vid],
+        [str(YTDLP), "--list-subs", "--skip-download", "--ignore-no-formats-error",
+         "--extractor-args", "youtube:player_client=web_embedded", vid],
         capture_output=True, text=True,
     ).stdout
-    return "has no automatic captions" not in out
+    return "Available automatic captions" in out and "has no automatic captions" not in out
 
 
 def scan_ingested() -> dict[str, dict]:

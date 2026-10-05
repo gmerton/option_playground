@@ -1,0 +1,164 @@
+{
+ "video_id": "soTk48wKouE",
+ "date": "2026-09-17",
+ "title": "LOCKED IN | 17 Sep 2026",
+ "observed_trades": [
+  {
+   "date": "2026-09-17",
+   "stop": "",
+   "fill_timing": "today",
+   "ticker": "?",
+   "direction": "short",
+   "action": "hold",
+   "setup": "Existing short book hit by a broad gap-up ('a disaster for my shorts'); SPY above the 9 and 21, Russell dipped then reacted strongly off the low.",
+   "entry_basis": "",
+   "source": "2026-09-17_soTk48wKouE@03:23",
+   "confidence": "stated",
+   "notes": "Tickers not named in the captured audio; the 07:37-118:31 audio is missing from the captions."
+  },
+  {
+   "date": "2026-09-17",
+   "stop": "",
+   "fill_timing": "today",
+   "ticker": "SI (silver)",
+   "direction": "short",
+   "action": "stop",
+   "setup": "Precious-metal short stopped out at the open as metals rallied into resistance.",
+   "entry_basis": "",
+   "source": "2026-09-17_soTk48wKouE@151:17",
+   "confidence": "stated",
+   "notes": "'silver has been like have stops me out at the open'. Instrument (futures/ETF) not stated."
+  },
+  {
+   "date": "2026-09-17",
+   "stop": "",
+   "fill_timing": "today",
+   "ticker": "GC (gold)",
+   "direction": "short",
+   "action": "exit",
+   "setup": "Covered gold because of its correlation with the stopped silver short; read the strong bounce through the prior high and all EMAs as uncharacteristic of a weak market.",
+   "entry_basis": "",
+   "source": "2026-09-17_soTk48wKouE@151:37",
+   "confidence": "stated",
+   "notes": "'getting stopped up from silver is the main reason that I also get rid of gold' (151:37); 'not right time for the precious metal shorts' (152:39)."
+  },
+  {
+   "date": "2026-09-17",
+   "stop": "",
+   "fill_timing": "today",
+   "ticker": "?",
+   "direction": "long",
+   "action": "stop",
+   "setup": "Flipped long during the session and was stopped out three or four times; missed the breakouts that did follow through (INTC gap-up kept going despite extension from the 9; SMCI pullback into VWAP on the 5-min).",
+   "entry_basis": "",
+   "source": "2026-09-17_soTk48wKouE@130:03",
+   "confidence": "stated",
+   "notes": "Names of the stopped longs not in the captured audio."
+  },
+  {
+   "date": "2026-09-17",
+   "stop": "",
+   "fill_timing": "today",
+   "ticker": "crypto basket (small coins)",
+   "direction": "long",
+   "action": "entry",
+   "setup": "Entered crypto without waiting for the 9 EMA pullback: small coins breaking the previous-day high, most cryptos undercut-and-rallying off the lows; plans to stay patient for a bounce on the 65-min(?) chart.",
+   "entry_basis": "Previous-day-high break / undercut and rally off the lows",
+   "source": "2026-09-17_soTk48wKouE@134:17",
+   "confidence": "stated",
+   "notes": "'I didn't wait for the like the nine ... pull back' (134:17). '16 minut' probably the 65-minute chart (unsure)."
+  },
+  {
+   "date": "2026-09-17",
+   "stop": "",
+   "fill_timing": "today",
+   "ticker": "MSTR",
+   "direction": "long",
+   "action": "hold",
+   "setup": "Open MSTR long with a ~0.75% stop sized 20-23% of the account.",
+   "entry_basis": "",
+   "source": "2026-09-17_soTk48wKouE@138:33",
+   "confidence": "stated",
+   "notes": "Entry date not stated in captured audio; 9/21 stream mentions MSTR entered 'on Thursday' (= 9/17)."
+  }
+ ],
+ "principles": [
+  {
+   "category": "risk",
+   "timestamp": "138:17",
+   "text": "Gap risk caps size, not the stop: positions stay at 20-25% of the account even when a tight stop (MSTR ~0.75%) would allow 35-40%, because nothing else limits an after-hours gap loss."
+  },
+  {
+   "category": "risk",
+   "timestamp": "147:03",
+   "text": "Sizing history: before 2026 ~25-30% positions (rarely 35%) at 0.5% risk; in 2026 lowered to 20-25% at ~0.3% risk to shrink drawdowns in the chop - 'an optimisation for my style: low win rate, tight risk'."
+  },
+  {
+   "category": "risk",
+   "timestamp": "153:41",
+   "text": "Slippage is not sized for explicitly, but it is one reason he will not size up just because the stop is tight."
+  },
+  {
+   "category": "entry",
+   "timestamp": "148:42",
+   "text": "Avoid long entries on gap-up days: the gap stretches price >1% from the EMAs, so even a gentle pullback stops a tight-stop entry whose price is far from support."
+  },
+  {
+   "category": "entry",
+   "timestamp": "140:23",
+   "text": "After repeated stop-outs in leaders, stop buying into strength and wait for a proper pullback entry (memory leaders into the daily 9, IGV/software pullback alerts set before the open)."
+  },
+  {
+   "category": "short_entries",
+   "timestamp": "152:24",
+   "text": "A strong bounce that takes out the prior high and all the EMAs is uncommon in a genuinely weak market; when it happens and a short stops out at the open, cover correlated shorts too (gold with silver) - it is not the time for that short."
+  },
+  {
+   "category": "posture",
+   "timestamp": "136:06",
+   "text": "A selective tape - some names in a group follow through, others in the same group fade - means no easy group-wide move; be pickier and smaller."
+  },
+  {
+   "category": "psychology",
+   "timestamp": "158:06",
+   "text": "Risk management is 'the holy grail'; a trader who doesn't blow up but doesn't grow should study his trades for the upside leak: sizing too small, hesitating when the market is good, or booking small gains too early."
+  }
+ ],
+ "ambiguous_tickers": [
+  {
+   "timestamp": "131:42",
+   "caption_text": "the free weapon",
+   "context": "SMCI pull back into the free weapon I believe in the 5 M",
+   "guess": "VWAP on the 5-min chart",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "133:44",
+   "caption_text": "16 minut",
+   "context": "wait for the bounce on the 16 minut",
+   "guess": "65-minute chart",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "143:08",
+   "caption_text": "SNK maybe SK K HX MU",
+   "context": "memory names ... pull back into the daily nine",
+   "guess": "SNDK, SKHY, MU",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "145:08",
+   "caption_text": "back above the 1921",
+   "context": "nvidia is now back above the 1921",
+   "guess": "NVDA back above the 9/21 EMAs",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "140:23",
+   "caption_text": "Sem di",
+   "context": "Sem di and should be better to afford them",
+   "guess": "SMCI? (garbled)",
+   "confidence": "unsure"
+  }
+ ]
+}
