@@ -16,8 +16,10 @@ grading criterion, and one does not exist in this repo at all.
 | width | **1.0 ADR** below the current close | the **ENTRY BAR's low**, fixed at entry — typically 0.4–0.8 ADR |
 | execution | ⭐ **RESTING, EXECUTED INTRADAY** | ⭐ **JUDGED ON THE CLOSE** |
 | what it is for | the crash | ordinary trade management |
-| how often it fires | **4–6% of days** | often |
+| how often it fires | **4–6% of days** ⚠ see correction below | often |
 | recomputed | daily, off the current close; never stored | per trade, from the entry bar |
+
+> ⚠ **CORRECTION 2026-10-05 (`run_momentum_disaster_stop.py`).** "4–6%" is the entry study's **same-day** rate for a stop 1 ADR under the **entry** price (`entry_study_2026-09-17.md`, "stopped same day" column). A stop **recomputed daily** 1 ADR under the latest close and rested intraday — the live practice — fires on **~14–15% of days** (liquid_panel_2009, 2011–26; close-below only 7.3%), so most held names are stopped within a month. On the 12-1 momentum sleeve it COSTS −1.50pp/mo (t −3.69) and raises maxDD. The daily-recomputed version has NOT been tested on the breakout book; until it is, do not assume the 4–6% figure for held positions.
 
 **The single most important line:** the wide stop is the intraday one; the tight stop is the close-judged
 one. Getting this backwards is the specific error made on 2026-09-23 — the close-judged rule was quoted
