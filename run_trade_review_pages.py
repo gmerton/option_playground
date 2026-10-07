@@ -786,16 +786,101 @@ def _strategy_grid(srows: list[dict], empty: str = "No trades yet.") -> str:
 </table>"""
 
 
+def _pnl_series(closed_rows: list[dict]) -> list[dict]:
+    """Cumulative REALIZED P&L by exit date, one point per date that closed at least one trade, each point carrying
+    the trades it closed (for the tooltip). Open trades are excluded: unrealized marks are a stale snapshot."""
+    by_day: dict[str, list] = {}
+    for r in closed_rows:
+        if r.get("realizedPnl") is None:
+            continue
+        d = pd.Timestamp(r["exitDate"]).strftime("%Y-%m-%d")
+        by_day.setdefault(d, []).append(r)
+    out, cum = [], 0.0
+    for d in sorted(by_day):
+        day = sum(float(r["realizedPnl"]) for r in by_day[d])
+        cum += day
+        out.append({"time": d, "value": round(cum, 2), "day": round(day, 2),
+                    "trades": [{"t": r["underlying"], "pnl": round(float(r["realizedPnl"]), 2), "f": r["detailFile"]}
+                               for r in sorted(by_day[d], key=lambda r: -float(r["realizedPnl"]))]})
+    return out
+
+
+PNL_CHART_CSS = """
+  .pnl-chart-wrap { position: relative; }
+  .pnl-chart { width: 100%; height: 324px; }   /* chart is 300 + room for the time-axis labels */
+  .pnl-tip { position: absolute; display: none; pointer-events: none; z-index: 3; background: var(--panel);
+             border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; font-size: 12.5px;
+             box-shadow: 0 4px 14px rgba(0,0,0,.08); min-width: 170px; }
+  .pnl-tip .d { color: var(--muted); font-size: 11.5px; } .pnl-tip .v { font-size: 16px; font-variant-numeric: tabular-nums; margin: 2px 0 4px; }
+  .pnl-tip .tr { display: flex; justify-content: space-between; gap: 14px; font-variant-numeric: tabular-nums; }
+  .pnl-legend { color: var(--muted); font-size: 12px; margin-top: 6px; }
+"""
+
+PNL_CHART_JS = """
+(function () {
+  const pts = __PNL_POINTS__;
+  const el = document.getElementById('pnl-chart'), tip = document.getElementById('pnl-tip');
+  if (!pts.length || !window.LightweightCharts) { el.innerHTML = '<div class="empty">No closed trades yet.</div>'; return; }
+  const chart = LightweightCharts.createChart(el, {
+    width: el.clientWidth || 860, height: 300,
+    layout: { background: { color: '#ffffff' }, textColor: '#6b7280' },
+    grid: { vertLines: { visible: false }, horzLines: { color: '#e1e4ea' } },
+    rightPriceScale: { borderColor: '#e1e4ea' },
+    timeScale: { borderColor: '#e1e4ea', timeVisible: false },
+    crosshair: { mode: LightweightCharts.CrosshairMode.Magnet, vertLine: { labelVisible: false }, horzLine: { visible: false, labelVisible: false } },
+    handleScroll: false, handleScale: false,
+  });
+  // one series, coloured by its sign (polarity): the site's good/bad tokens, 2px line, nothing filled hard
+  const series = chart.addBaselineSeries({
+    baseValue: { type: 'price', price: 0 }, lineWidth: 2,
+    topLineColor: '#157a4d', topFillColor1: 'rgba(21,122,77,.18)', topFillColor2: 'rgba(21,122,77,.02)',
+    bottomLineColor: '#c23b3b', bottomFillColor1: 'rgba(194,59,59,.02)', bottomFillColor2: 'rgba(194,59,59,.18)',
+    priceFormat: { type: 'custom', formatter: v => (v < 0 ? '-$' : '$') + Math.abs(Math.round(v)).toLocaleString() },
+    lastValueVisible: false, priceLineVisible: false,   // the card above carries the hero number; the axis label collided with the top tick
+  });
+  series.setData(pts.map(p => ({ time: p.time, value: p.value })));
+  series.createPriceLine({ price: 0, color: '#9aa1ad', lineWidth: 1, lineStyle: 2, axisLabelVisible: false, title: '' });
+  chart.timeScale().fitContent();
+  const byTime = Object.fromEntries(pts.map(p => [p.time, p]));
+  const money = v => (v < 0 ? '-$' : '+$') + Math.abs(v).toLocaleString(undefined, { maximumFractionDigits: 0 });
+  chart.subscribeCrosshairMove(param => {
+    const p = param.time && byTime[typeof param.time === 'string' ? param.time : `${param.time.year}-${String(param.time.month).padStart(2,'0')}-${String(param.time.day).padStart(2,'0')}`];
+    if (!p || !param.point) { tip.style.display = 'none'; return; }
+    tip.innerHTML = `<div class="d">${p.time} &middot; ${p.trades.length} closed</div>`
+      + `<div class="v ${p.value < 0 ? 'pnl-neg' : 'pnl-pos'}">${money(p.value)} <span class="d">cumulative</span></div>`
+      + p.trades.map(t => `<div class="tr"><span>${t.t}</span><span class="${t.pnl < 0 ? 'pnl-neg' : 'pnl-pos'}">${money(t.pnl)}</span></div>`).join('');
+    tip.style.display = 'block';
+    const w = tip.offsetWidth, x = param.point.x, left = x + 16 + w > el.clientWidth ? x - w - 16 : x + 16;
+    tip.style.left = Math.max(0, left) + 'px'; tip.style.top = Math.max(0, param.point.y - 20) + 'px';
+  });
+  chart.subscribeClick(param => {
+    const p = param.time && byTime[typeof param.time === 'string' ? param.time : `${param.time.year}-${String(param.time.month).padStart(2,'0')}-${String(param.time.day).padStart(2,'0')}`];
+    if (p && p.trades.length === 1) location.href = 'trades/' + p.trades[0].f;
+  });
+  new ResizeObserver(() => chart.applyOptions({ width: el.clientWidth })).observe(el);
+})();
+"""
+
+
 def _render_strategy_page(spec: dict, srows: list[dict], card: str, note: str) -> str:
-    """A strategy's own page: the same stats card as the summary, then the trade grids split open / closed."""
+    """A strategy's own page: the same stats card as the summary, a cumulative realized P&L chart, then the trade
+    grids split open / closed."""
     open_rows = [r for r in srows if not r.get("exitDate")]
     closed_rows = [r for r in srows if r.get("exitDate")]
+    pts = _pnl_series(closed_rows)
+    chart_html = f"""<h2>Profit over time</h2>
+<div class="strategy-block">
+  <div class="strategy-name">Cumulative realized P&amp;L by exit date</div>
+  <div class="pnl-chart-wrap"><div id="pnl-chart" class="pnl-chart"></div><div id="pnl-tip" class="pnl-tip"></div></div>
+  <div class="pnl-legend">Closed trades only, summed on the day each closed ({len(pts)} exit days, {len(closed_rows)} trades). Open positions are not marked to market here. Hover for the trades closed that day; click a single-trade day to open its review.</div>
+</div>"""
     return f"""<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <title>{spec['label']}</title>
-<style>{SUMMARY_CSS}{CARD_LINK_CSS}</style>
+<style>{SUMMARY_CSS}{CARD_LINK_CSS}{PNL_CHART_CSS}</style>
+{LIGHTWEIGHT_CHARTS_SCRIPT}
 </head>
 <body>
 <a class="back" href="index.html">&larr; Home</a> &middot; <a class="back" href="summary.html">Strategy performance</a> &middot; <a class="back" href="trade_reviews.html">All reviews</a>
@@ -806,11 +891,13 @@ def _render_strategy_page(spec: dict, srows: list[dict], card: str, note: str) -
   {card}
   {note}
 </div>
+{chart_html}
 <h2>Open ({len(open_rows)})</h2>
 <div class="strategy-block">{_strategy_grid(open_rows, "No open trades.")}</div>
 <h2>Closed ({len(closed_rows)})</h2>
 <div class="strategy-block">{_strategy_grid(closed_rows, "No closed trades yet.")}</div>
 <script>{SORT_JS}</script>
+<script>{PNL_CHART_JS.replace("__PNL_POINTS__", json.dumps(pts))}</script>
 </body>
 </html>
 """
