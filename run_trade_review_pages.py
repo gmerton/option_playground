@@ -81,7 +81,9 @@ STRATEGIES = [
      "symbol_any": ["put spread", "put credit spread"],
      # a condor's put side is not a put-spread trade: drop it however it is labelled
      "exclude_symbol_any": ["condor"], "exclude_tags": ["iron_condor"],
-     "dedupe_campaign": True},
+     "dedupe_campaign": True,
+     # the trade grids live on their own page (Gabe 2026-10-07); the summary card keeps the stats and links there
+     "detail_page": "put_spreads.html"},
 ]
 
 LIGHTWEIGHT_CHARTS_SCRIPT = (
@@ -758,8 +760,66 @@ CARD_LINK_CSS = """
 """
 
 
-def render_summary_page(rows: list[dict]) -> str:
+def _strategy_grid(srows: list[dict], empty: str = "No trades yet.") -> str:
+    """The per-trade grid of one strategy card. Pre-sorted to match the grid's default (exit date DESC, blanks
+    last) so the rows do not visibly re-shuffle when SORT_JS applies it on load (see th(default_sort=...))."""
+    srows_sorted = sorted(srows, key=lambda r: (r["exitDate"] or "", r["entryDate"] or ""), reverse=True)
+    if not srows_sorted:
+        return f'<div class="empty">{empty}</div>'
+    trow_html = "".join(
+        f'<tr onclick="location.href=\'trades/{r["detailFile"]}\'">'
+        f'<td class="ticker" data-v="{r["underlying"]}">{r["underlying"]}</td>'
+        f'<td class="dates" data-v="{sort_date(r["entryDate"])}">{fmt_date_compact(r["entryDate"]) or "—"}</td>'
+        f'<td class="dates" data-v="{sort_date(r["exitDate"])}">{fmt_date_compact(r["exitDate"]) or "open"}</td>'
+        f'<td data-v="{r.get("vehicle") or ""}">{r.get("vehicle") or "—"}</td>'
+        f'<td data-v="{r.get("entryVerdict") or ""}">{badge_html(r.get("entryVerdict"))}</td>'
+        f'<td data-v="{r.get("exitVerdict") or ""}">{badge_html(r.get("exitVerdict"))}</td>'
+        f'<td class="pnl" data-v="{sort_num(r.get("realizedPnl"))}">{fmt_pnl(r.get("realizedPnl"))}</td>'
+        f'<td class="pnl" data-v="{sort_num(r.get("_pctReturn"))}">{_fmt_pct(r.get("_pctReturn"))}</td>'
+        f'<td class="pnl" data-v="{sort_num(r.get("_holdPnl"))}">{fmt_pnl(r.get("_holdPnl")) if r.get("_holdPnl") is not None else "pending"}</td>'
+        f"</tr>"
+        for r in srows_sorted
+    )
+    return f"""<table class="grid">
+  <thead><tr>{th("Ticker")}{th("Entry date", True)}{th("Exit date", True, default_sort="desc")}{th("Vehicle")}{th("Entry grade")}{th("Exit grade")}{th("P&amp;L", True)}{th("Return %", True)}{th("Held to expiry", True)}</tr></thead>
+  <tbody>{trow_html}</tbody>
+</table>"""
+
+
+def _render_strategy_page(spec: dict, srows: list[dict], card: str, note: str) -> str:
+    """A strategy's own page: the same stats card as the summary, then the trade grids split open / closed."""
+    open_rows = [r for r in srows if not r.get("exitDate")]
+    closed_rows = [r for r in srows if r.get("exitDate")]
+    return f"""<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{spec['label']}</title>
+<style>{SUMMARY_CSS}{CARD_LINK_CSS}</style>
+</head>
+<body>
+<a class="back" href="index.html">&larr; Home</a> &middot; <a class="back" href="summary.html">Strategy performance</a> &middot; <a class="back" href="trade_reviews.html">All reviews</a>
+<h1>{spec['label']}</h1>
+<div class="sub">Every trade in this strategy, one row per campaign (a rolled spread counts once). Generated __GENERATED_AT__.
+  <br>Click any column header to re-sort a grid; click a row for its review.</div>
+<div class="strategy-block">
+  {card}
+  {note}
+</div>
+<h2>Open ({len(open_rows)})</h2>
+<div class="strategy-block">{_strategy_grid(open_rows, "No open trades.")}</div>
+<h2>Closed ({len(closed_rows)})</h2>
+<div class="strategy-block">{_strategy_grid(closed_rows, "No closed trades yet.")}</div>
+<script>{SORT_JS}</script>
+</body>
+</html>
+"""
+
+
+def render_summary_page(rows: list[dict]) -> tuple[str, dict[str, str]]:
+    """Returns (summary html, {filename: html} for strategies with their own detail page)."""
     conn = _get_conn()
+    detail_pages: dict[str, str] = {}
     try:
         blocks = []
         for spec in STRATEGIES:
@@ -781,35 +841,23 @@ def render_summary_page(rows: list[dict]) -> str:
                 _stat_cell("Combined total", fmt_pnl(combined)),
                 _stat_cell("If held to expiry (expired, closed)", (f'{fmt_pnl(st["hold_total"])} vs {fmt_pnl(st["hold_realized"])} realized, n={st["hold_n"]}') if st.get("hold_total") is not None else "—"),
             ]
-            # Pre-sort to match the grid's default (exit date DESC, blanks last) so the rows do not visibly
-            # re-shuffle when SORT_JS applies it on load. See th(default_sort=...) in lib.journal.sortable.
-            srows_sorted = sorted(srows, key=lambda r: (r["exitDate"] or "", r["entryDate"] or ""), reverse=True)
-            if srows_sorted:
-                trow_html = "".join(
-                    f'<tr onclick="location.href=\'trades/{r["detailFile"]}\'">'
-                    f'<td class="ticker" data-v="{r["underlying"]}">{r["underlying"]}</td>'
-                    f'<td class="dates" data-v="{sort_date(r["entryDate"])}">{fmt_date_compact(r["entryDate"]) or "—"}</td>'
-                    f'<td class="dates" data-v="{sort_date(r["exitDate"])}">{fmt_date_compact(r["exitDate"]) or "open"}</td>'
-                    f'<td data-v="{r.get("vehicle") or ""}">{r.get("vehicle") or "—"}</td>'
-                    f'<td data-v="{r.get("entryVerdict") or ""}">{badge_html(r.get("entryVerdict"))}</td>'
-                    f'<td data-v="{r.get("exitVerdict") or ""}">{badge_html(r.get("exitVerdict"))}</td>'
-                    f'<td class="pnl" data-v="{sort_num(r.get("realizedPnl"))}">{fmt_pnl(r.get("realizedPnl"))}</td>'
-                    f'<td class="pnl" data-v="{sort_num(r.get("_pctReturn"))}">{_fmt_pct(r.get("_pctReturn"))}</td>'
-                    f'<td class="pnl" data-v="{sort_num(r.get("_holdPnl"))}">{fmt_pnl(r.get("_holdPnl")) if r.get("_holdPnl") is not None else "pending"}</td>'
-                    f"</tr>"
-                    for r in srows_sorted
-                )
-                table_html = f"""<table class="grid">
-  <thead><tr>{th("Ticker")}{th("Entry date", True)}{th("Exit date", True, default_sort="desc")}{th("Vehicle")}{th("Entry grade")}{th("Exit grade")}{th("P&amp;L", True)}{th("Return %", True)}{th("Held to expiry", True)}</tr></thead>
-  <tbody>{trow_html}</tbody>
-</table>"""
+            note = ('<div class="note">Return % = P&amp;L as a percent of premium paid to open the structure (capital deployed for that trade), not account equity. Held to expiry = what the original legs would have made settled at intrinsic on their expiry date (the playbook\'s own exit), before commissions; "pending" until the expiry has passed.</div>')
+            card = f"""<a class="card-link" href="trade_reviews.html?strategy={spec['key']}"><div class="strategy-name">{spec['label']}</div>
+  <div class="stat-grid">{''.join(cells)}</div><div class="view-all">View all {st["n_total"]} trades &rarr;</div></a>"""
+            page = spec.get("detail_page")
+            if page:
+                # summary keeps the card; the grids move to their own page
+                blocks.append(f"""<div class="strategy-block">
+  {card}
+  <div class="view-all"><a href="{page}" style="color:var(--accent);text-decoration:none;">Detailed grids: all {st["n_total"]} trades, {st["n_open"]} open and {st["n_closed"]} closed &rarr;</a></div>
+  {note}
+</div>""")
+                detail_pages[page] = _render_strategy_page(spec, srows, card, note)
             else:
-                table_html = '<div class="empty">No trades yet.</div>'
-            blocks.append(f"""<div class="strategy-block">
-  <a class="card-link" href="trade_reviews.html?strategy={spec['key']}"><div class="strategy-name">{spec['label']}</div>
-  <div class="stat-grid">{''.join(cells)}</div><div class="view-all">View all {st["n_total"]} trades &rarr;</div></a>
-  <div class="note">Return % = P&amp;L as a percent of premium paid to open the structure (capital deployed for that trade), not account equity. Held to expiry = what the original legs would have made settled at intrinsic on their expiry date (the playbook's own exit), before commissions; "pending" until the expiry has passed.</div>
-  {table_html}
+                blocks.append(f"""<div class="strategy-block">
+  {card}
+  {note}
+  {_strategy_grid(srows)}
 </div>""")
     finally:
         conn.close()
@@ -842,7 +890,7 @@ def render_summary_page(rows: list[dict]) -> str:
 <script>{SORT_JS}</script>
 </body>
 </html>
-"""
+""", detail_pages
 
 
 def _pnl_trade_row(r: dict) -> str:
@@ -1388,8 +1436,11 @@ def main() -> None:
     primary = [r for r in rows if r["isPrimary"]]
     if len(primary) != len(rows):
         print(f"summary aggregates {len(primary)} primary reviews ({len(rows) - len(primary)} duplicates collapsed)")
-    summary_html = render_summary_page(primary).replace("__GENERATED_AT__", generated_at)
-    SUMMARY_OUT.write_text(summary_html)
+    summary_html, detail_pages = render_summary_page(primary)
+    SUMMARY_OUT.write_text(summary_html.replace("__GENERATED_AT__", generated_at))
+    for fname, html in detail_pages.items():
+        (SUMMARY_OUT.parent / fname).write_text(html.replace("__GENERATED_AT__", generated_at))
+        print(f"wrote {SUMMARY_OUT.parent / fname}")
 
     # keep the queryable tag layer in step with the reviews the pages were built from
     from lib.alerts.publish import install_page
