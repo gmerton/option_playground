@@ -807,7 +807,14 @@ def _pnl_series(closed_rows: list[dict]) -> list[dict]:
 
 PNL_CHART_CSS = """
   .pnl-chart-wrap { position: relative; }
-  .pnl-chart { width: 100%; height: 324px; }   /* chart is 300 + room for the time-axis labels */
+  .pnl-chart { width: 100%; height: 300px; }
+  /* lightweight-charts renders into a <table>; SUMMARY_CSS's generic table/tr/td rules (margin-top 14px, row borders,
+     cell padding, pointer cursor) leak into it and the margin pushed the time axis out of the library's overflow-hidden
+     wrapper (labels clipped in half, 2026-10-07). Reset them inside the chart only. */
+  .pnl-chart table { margin-top: 0; width: auto; }
+  .pnl-chart tr { border: 0; cursor: default; }
+  .pnl-chart td { padding: 0; font-size: inherit; }
+  .pnl-chart tbody tr:hover { background: transparent; }
   .pnl-tip { position: absolute; display: none; pointer-events: none; z-index: 3; background: var(--panel);
              border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; font-size: 12.5px;
              box-shadow: 0 4px 14px rgba(0,0,0,.08); min-width: 170px; }
