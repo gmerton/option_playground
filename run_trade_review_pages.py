@@ -645,6 +645,10 @@ def _strategy_stats(srows: list[dict]) -> dict:
         "hold_n": len(held),
         "hold_realized": sum(a for a, _ in held) if held else None,
         "hold_total": sum(b for _, b in held) if held else None,
+        # the closed trades NOT in the comparison (expiry still ahead -> held-to-expiry pending): their realized P&L,
+        # so hold_realized + hold_rest = total_realized and the card ties out
+        "hold_rest": (s_closed.sum() - sum(a for a, _ in held)) if held else None,
+        "hold_rest_n": len(closed_pnls) - len(held),
     }
 
 
@@ -1050,7 +1054,10 @@ def render_summary_page(rows: list[dict]) -> tuple[str, dict[str, str]]:
                 _stat_cell("Median % return (closed)", _fmt_pct(st["median_pct"])),
                 _stat_cell("Open (unrealized)", fmt_pnl(st["total_unrealized"])),
                 _stat_cell("Combined total", fmt_pnl(combined)),
-                _stat_cell("If held to expiry (expired, closed)", (f'{fmt_pnl(st["hold_total"])} vs {fmt_pnl(st["hold_realized"])} realized, n={st["hold_n"]}') if st.get("hold_total") is not None else "—"),
+                _stat_cell("Held to expiry vs realized (closed trades whose expiry has passed)",
+                           (f'{fmt_pnl(st["hold_total"])} held vs {fmt_pnl(st["hold_realized"])} realized on {st["hold_n"]} of {st["n_closed"]} closed'
+                            + (f'; the other {st["hold_rest_n"]} realized {fmt_pnl(st["hold_rest"])} and are pending' if st["hold_rest_n"] else ""))
+                           if st.get("hold_total") is not None else "—"),
             ]
             note = ('<div class="note">Return % = P&amp;L as a percent of premium paid to open the structure (capital deployed for that trade), not account equity. Held to expiry = what the original legs would have made settled at intrinsic on their expiry date (the playbook\'s own exit), before commissions; "pending" until the expiry has passed.</div>')
             card = f"""<a class="card-link" href="trade_reviews.html?strategy={spec['key']}"><div class="strategy-name">{spec['label']}</div>
