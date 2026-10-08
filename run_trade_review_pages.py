@@ -786,9 +786,11 @@ def _strategy_grid(srows: list[dict], empty: str = "No trades yet.") -> str:
 </table>"""
 
 
-def _pnl_series(closed_rows: list[dict]) -> list[dict]:
+def _pnl_series(closed_rows: list[dict], start: str | None = None, end: str | None = None) -> list[dict]:
     """Cumulative REALIZED P&L by exit date, one point per date that closed at least one trade, each point carrying
-    the trades it closed (for the tooltip). Open trades are excluded: unrealized marks are a stale snapshot."""
+    the trades it closed (for the tooltip). Open trades are excluded: unrealized marks are a stale snapshot.
+    `start`/`end` (YYYY-MM-DD) pad the series with a zero point and a flat carry so it spans the same dates as the
+    capital chart below it."""
     by_day: dict[str, list] = {}
     for r in closed_rows:
         if r.get("realizedPnl") is None:
@@ -802,7 +804,70 @@ def _pnl_series(closed_rows: list[dict]) -> list[dict]:
         out.append({"time": d, "value": round(cum, 2), "day": round(day, 2),
                     "trades": [{"t": r["underlying"], "pnl": round(float(r["realizedPnl"]), 2), "f": r["detailFile"]}
                                for r in sorted(by_day[d], key=lambda r: -float(r["realizedPnl"]))]})
+    if out and start and end:
+        # one point per session, carried forward: realized P&L is flat between closes, and both charts then share the
+        # same time points (identical tick labels)
+        have = {p["time"]: p for p in out}
+        dense, last = [], {"time": start, "value": 0.0, "day": 0.0, "trades": []}
+        for d in pd.bdate_range(min(start, out[0]["time"]), max(end, out[-1]["time"])):
+            k = d.strftime("%Y-%m-%d")
+            last = have.get(k) or {"time": k, "value": last["value"], "day": 0.0, "trades": []}
+            dense.append(last)
+        out = dense
     return out
+
+
+def _capital_series(conn, srows: list[dict]) -> tuple[list[dict], dict]:
+    """Capital dedicated to the strategy, per session: the sum over campaigns open that day of the capital each one ties up.
+    Capital per campaign from its ORIGINAL opening legs (journal_campaign_trades -> journal_trades, open legs only):
+      credit vertical (net cash received)  -> width x contracts x 100 - credit   (the margin the broker holds = max loss)
+      debit vertical  (net cash paid)      -> the debit                           (what was paid = max loss)
+    Held from the row's entry date through the session BEFORE its exit date; open rows run to today. Rolls are not
+    re-priced (the original structure's capital is carried) -- noted on the page. Rows without a campaign id are skipped.
+    Returns (points, meta) where meta has the skipped count, average and peak capital."""
+    today = pd.Timestamp.today().normalize()
+    ids = sorted({r["campaignId"] for r in srows if r.get("campaignId") is not None})
+    skipped = sum(1 for r in srows if r.get("campaignId") is None)
+    if not ids:
+        return [], {"skipped": skipped, "avg": None, "peak": None, "n": 0}
+    ph = ",".join(["%s"] * len(ids))
+    legs = pd.read_sql(
+        f"""SELECT ct.campaign_id, t.strike, t.buy_sell, t.quantity, t.trade_price, t.trade_date
+            FROM journal_campaign_trades ct JOIN journal_trades t ON t.trade_id = ct.trade_id
+            WHERE ct.campaign_id IN ({ph}) AND t.open_close IN ('O','C;O') AND t.asset_category='OPT'""",
+        conn, params=ids)
+    legs["trade_date"] = pd.to_datetime(legs["trade_date"]).dt.date
+    cap_by_camp: dict[int, float] = {}
+    for cid, g in legs.groupby("campaign_id"):
+        g = g[g["trade_date"] == g["trade_date"].min()]
+        q = g["quantity"].abs().astype(float)
+        sign = g["buy_sell"].map(lambda b: 1.0 if b == "SELL" else -1.0)
+        net_cash = float((sign * g["trade_price"].astype(float) * q).sum() * 100)      # + = credit received
+        strikes = g["strike"].astype(float)
+        width = float(strikes.max() - strikes.min())
+        contracts = float(q.min()) if len(g) else 0.0
+        cap = (width * contracts * 100 - net_cash) if net_cash > 0 else -net_cash
+        if cap > 0:
+            cap_by_camp[int(cid)] = cap
+    by_row = []
+    for r in srows:
+        cid = r.get("campaignId")
+        if cid is None or int(cid) not in cap_by_camp or not r.get("entryDate"):
+            skipped += 0 if cid is None else 1
+            continue
+        a = pd.Timestamp(r["entryDate"]).normalize()
+        b = pd.Timestamp(r["exitDate"]).normalize() if r.get("exitDate") else today + pd.Timedelta(days=1)
+        by_row.append((a, b, cap_by_camp[int(cid)], r["underlying"]))
+    if not by_row:
+        return [], {"skipped": skipped, "avg": None, "peak": None, "n": 0}
+    days = pd.bdate_range(min(a for a, _, _, _ in by_row), today)
+    pts = []
+    for d in days:
+        live = [(c, u) for a, b, c, u in by_row if a <= d < b]
+        pts.append({"time": d.strftime("%Y-%m-%d"), "value": round(sum(c for c, _ in live), 2), "n": len(live),
+                    "names": sorted({u for _, u in live})})
+    vals = pd.Series([p["value"] for p in pts])
+    return pts, {"skipped": skipped, "avg": float(vals.mean()), "peak": float(vals.max()), "n": len(by_row)}
 
 
 PNL_CHART_CSS = """
@@ -821,6 +886,9 @@ PNL_CHART_CSS = """
   .pnl-tip .d { color: var(--muted); font-size: 11.5px; } .pnl-tip .v { font-size: 16px; font-variant-numeric: tabular-nums; margin: 2px 0 4px; }
   .pnl-tip .tr { display: flex; justify-content: space-between; gap: 14px; font-variant-numeric: tabular-nums; }
   .pnl-legend { color: var(--muted); font-size: 12px; margin-top: 6px; }
+  .cap-chart { width: 100%; height: 220px; }
+  .cap-chart table { margin-top: 0; width: auto; } .cap-chart tr { border: 0; cursor: default; }
+  .cap-chart td { padding: 0; font-size: inherit; } .cap-chart tbody tr:hover { background: transparent; }
 """
 
 PNL_CHART_JS = """
@@ -839,7 +907,7 @@ PNL_CHART_JS = """
   });
   // one series, coloured by its sign (polarity): the site's good/bad tokens, 2px line, nothing filled hard
   const series = chart.addBaselineSeries({
-    baseValue: { type: 'price', price: 0 }, lineWidth: 2,
+    baseValue: { type: 'price', price: 0 }, lineWidth: 2, lineType: 1,   // steps: realized P&L only changes on exit days
     topLineColor: '#157a4d', topFillColor1: 'rgba(21,122,77,.18)', topFillColor2: 'rgba(21,122,77,.02)',
     bottomLineColor: '#c23b3b', bottomFillColor1: 'rgba(194,59,59,.02)', bottomFillColor2: 'rgba(194,59,59,.18)',
     priceFormat: { type: 'custom', formatter: v => (v < 0 ? '-$' : '$') + Math.abs(Math.round(v)).toLocaleString() },
@@ -853,7 +921,7 @@ PNL_CHART_JS = """
   chart.subscribeCrosshairMove(param => {
     const p = param.time && byTime[typeof param.time === 'string' ? param.time : `${param.time.year}-${String(param.time.month).padStart(2,'0')}-${String(param.time.day).padStart(2,'0')}`];
     if (!p || !param.point) { tip.style.display = 'none'; return; }
-    tip.innerHTML = `<div class="d">${p.time} &middot; ${p.trades.length} closed</div>`
+    tip.innerHTML = `<div class="d">${p.time} &middot; ${p.trades.length ? p.trades.length + ' closed' : 'nothing closed'}</div>`
       + `<div class="v ${p.value < 0 ? 'pnl-neg' : 'pnl-pos'}">${money(p.value)} <span class="d">cumulative</span></div>`
       + p.trades.map(t => `<div class="tr"><span>${t.t}</span><span class="${t.pnl < 0 ? 'pnl-neg' : 'pnl-pos'}">${money(t.pnl)}</span></div>`).join('');
     tip.style.display = 'block';
@@ -865,22 +933,70 @@ PNL_CHART_JS = """
     if (p && p.trades.length === 1) location.href = 'trades/' + p.trades[0].f;
   });
   new ResizeObserver(() => chart.applyOptions({ width: el.clientWidth })).observe(el);
+
+  // ── capital chart: same dates, its own axis (two charts, never two y-scales) ──
+  const cpts = __CAP_POINTS__;
+  const cel = document.getElementById('cap-chart'), ctip = document.getElementById('cap-tip');
+  if (!cel || !cpts.length) return;
+  const cchart = LightweightCharts.createChart(cel, {
+    width: cel.clientWidth || 860, height: 220,
+    layout: { background: { color: '#ffffff' }, textColor: '#6b7280' },
+    grid: { vertLines: { visible: false }, horzLines: { color: '#e1e4ea' } },
+    rightPriceScale: { borderColor: '#e1e4ea' },
+    timeScale: { borderColor: '#e1e4ea', timeVisible: false },
+    crosshair: { mode: LightweightCharts.CrosshairMode.Magnet, vertLine: { labelVisible: false }, horzLine: { visible: false, labelVisible: false } },
+    handleScroll: false, handleScale: false,
+  });
+  const cseries = cchart.addAreaSeries({
+    lineColor: '#3f6fd8', lineWidth: 2, lineType: 1,            // 1 = steps: capital changes on fill days, not between them
+    topColor: 'rgba(63,111,216,.18)', bottomColor: 'rgba(63,111,216,.02)',
+    priceFormat: { type: 'custom', formatter: v => '$' + Math.round(v).toLocaleString() },
+    lastValueVisible: false, priceLineVisible: false,
+  });
+  cseries.setData(cpts.map(p => ({ time: p.time, value: p.value })));
+  cchart.timeScale().fitContent();
+  const cby = Object.fromEntries(cpts.map(p => [p.time, p]));
+  const keyOf = t => typeof t === 'string' ? t : `${t.year}-${String(t.month).padStart(2,'0')}-${String(t.day).padStart(2,'0')}`;
+  cchart.subscribeCrosshairMove(param => {
+    const p = param.time && cby[keyOf(param.time)];
+    if (!p || !param.point) { ctip.style.display = 'none'; return; }
+    const names = p.names.slice(0, 10).join(', ') + (p.names.length > 10 ? ` +${p.names.length - 10} more` : '');
+    ctip.innerHTML = `<div class="d">${p.time} &middot; ${p.n} open</div><div class="v">$${Math.round(p.value).toLocaleString()} <span class="d">at risk</span></div><div class="d">${names}</div>`;
+    ctip.style.display = 'block';
+    const w = ctip.offsetWidth, x = param.point.x, left = x + 16 + w > cel.clientWidth ? x - w - 16 : x + 16;
+    ctip.style.left = Math.max(0, left) + 'px'; ctip.style.top = Math.max(0, param.point.y - 20) + 'px';
+  });
+  new ResizeObserver(() => cchart.applyOptions({ width: cel.clientWidth })).observe(cel);
 })();
 """
 
 
-def _render_strategy_page(spec: dict, srows: list[dict], card: str, note: str) -> str:
-    """A strategy's own page: the same stats card as the summary, a cumulative realized P&L chart, then the trade
-    grids split open / closed."""
+def _render_strategy_page(conn, spec: dict, srows: list[dict], card: str, note: str) -> str:
+    """A strategy's own page: the same stats card as the summary, a cumulative realized P&L chart and a capital-deployed
+    chart on the same dates, then the trade grids split open / closed."""
     open_rows = [r for r in srows if not r.get("exitDate")]
     closed_rows = [r for r in srows if r.get("exitDate")]
-    pts = _pnl_series(closed_rows)
+    cpts, cmeta = _capital_series(conn, srows)
+    span = (cpts[0]["time"], cpts[-1]["time"]) if cpts else (None, None)
+    pts = _pnl_series(closed_rows, *span)
+    n_exit_days = sum(1 for p in pts if p["trades"])
+    cap_html = ""
+    if cpts:
+        realized = sum(float(r["realizedPnl"]) for r in closed_rows if r.get("realizedPnl") is not None)
+        roc = f' Realized P&amp;L is {realized / cmeta["avg"] * 100:+.1f}% of the average capital deployed.' if cmeta["avg"] else ""
+        skipped = f' {cmeta["skipped"]} row(s) without resolvable opening legs are left out.' if cmeta["skipped"] else ""
+        cap_html = f"""<div class="strategy-block">
+  <div class="strategy-name">Capital dedicated to the strategy</div>
+  <div class="pnl-chart-wrap"><div id="cap-chart" class="cap-chart"></div><div id="cap-tip" class="pnl-tip"></div></div>
+  <div class="pnl-legend">Sum of the capital each open spread ties up: a credit spread holds width &times; contracts &times; 100 minus the credit (the margin, which is also its max loss); a debit spread holds the debit paid. Counted from entry through the session before exit; open spreads run to today; a rolled spread carries its original structure's capital. Average ${cmeta["avg"]:,.0f}, peak ${cmeta["peak"]:,.0f} over {cmeta["n"]} spreads.{roc}{skipped} Hover for the names open that day.</div>
+</div>"""
     chart_html = f"""<h2>Profit over time</h2>
 <div class="strategy-block">
   <div class="strategy-name">Cumulative realized P&amp;L by exit date</div>
   <div class="pnl-chart-wrap"><div id="pnl-chart" class="pnl-chart"></div><div id="pnl-tip" class="pnl-tip"></div></div>
-  <div class="pnl-legend">Closed trades only, summed on the day each closed ({len(pts)} exit days, {len(closed_rows)} trades). Open positions are not marked to market here. Hover for the trades closed that day; click a single-trade day to open its review.</div>
-</div>"""
+  <div class="pnl-legend">Closed trades only, summed on the day each closed ({n_exit_days} exit days, {len(closed_rows)} trades); flat where nothing closed. Open positions are not marked to market here. Hover for the trades closed that day; click a single-trade day to open its review.</div>
+</div>
+{cap_html}"""
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -904,7 +1020,7 @@ def _render_strategy_page(spec: dict, srows: list[dict], card: str, note: str) -
 <h2>Closed ({len(closed_rows)})</h2>
 <div class="strategy-block">{_strategy_grid(closed_rows, "No closed trades yet.")}</div>
 <script>{SORT_JS}</script>
-<script>{PNL_CHART_JS.replace("__PNL_POINTS__", json.dumps(pts))}</script>
+<script>{PNL_CHART_JS.replace("__PNL_POINTS__", json.dumps(pts)).replace("__CAP_POINTS__", json.dumps(cpts))}</script>
 </body>
 </html>
 """
@@ -946,7 +1062,7 @@ def render_summary_page(rows: list[dict]) -> tuple[str, dict[str, str]]:
   <div class="view-all"><a href="{page}" style="color:var(--accent);text-decoration:none;">Detailed grids: all {st["n_total"]} trades, {st["n_open"]} open and {st["n_closed"]} closed &rarr;</a></div>
   {note}
 </div>""")
-                detail_pages[page] = _render_strategy_page(spec, srows, card, note)
+                detail_pages[page] = _render_strategy_page(conn, spec, srows, card, note)
             else:
                 blocks.append(f"""<div class="strategy-block">
   {card}
