@@ -69,12 +69,19 @@ def straddle_tags(cp, d0, screen_dir: Path) -> list[str]:
     if any(float(l.get("net_qty", 0)) < 0 for l in legs): return []
     tags = ["long_straddle"]
     f = screen_dir / f"straddle_screen_{d0.isoformat()}.csv"
-    if f.exists():
-        sc = pd.read_csv(f); hit = sc[sc.tkr == cp.underlying]
+    sc = pd.read_csv(f) if f.exists() else None
+    # A screen file whose IV gate had no data (2026-10-02: iv_src 'none' on all 261 rows, 0 passers) proves nothing
+    # about the day's picks -- treating it as "not on screen" mis-tagged four straddles as discretionary. Fall back
+    # to the pool rule and say why.
+    outage = sc is not None and ("ivpct" in sc.columns and sc["ivpct"].notna().sum() == 0) and not bool((sc.get("pass_all") == True).any())
+    if sc is not None and not outage:
+        hit = sc[sc.tkr == cp.underlying]
         on_screen = bool(len(hit)) and bool(hit.iloc[0].get("pass_all", False))
         tags.append("straddle_screener" if on_screen else "discretionary")
         tags.append("screen_pick" if on_screen else "not_on_screen")
     else:
+        if outage:
+            tags.append("screen_iv_outage")
         pool = Path("data/watchlist/straddle_pool_323.txt")
         in_pool = pool.exists() and cp.underlying in {x.strip() for x in pool.read_text().split()}
         tags.append("straddle_screener" if in_pool else "discretionary"); tags.append("screen_unverified")

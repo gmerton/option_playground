@@ -74,7 +74,8 @@ TRADES_DIR = Path("data/journal/trades")
 # the free-text symbol. `dedupe_campaign` keeps one row per campaign (preferring the primary), so a rolled
 # spread counts once -- straddles never roll, which is why the original spec did not need it.
 STRATEGIES = [
-    {"key": "straddle_screener", "label": "Long Straddles (systematic)", "exclude_tags": ["discretionary"]},
+    {"key": "straddle_screener", "label": "Long Straddles (systematic)", "exclude_tags": ["discretionary"],
+     "detail_page": "straddles.html"},
     {"key": "put_spreads", "label": "Put Spreads (excl. iron condors)",
      "vehicles": ["bull put spread", "bear put spread"],
      # rescues the handful whose legs could not be resolved, so vehicle stayed the generic "spread"
