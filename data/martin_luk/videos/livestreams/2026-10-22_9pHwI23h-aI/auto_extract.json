@@ -1,0 +1,357 @@
+{
+ "video_id": "9pHwI23h-aI",
+ "date": "2026-10-22",
+ "title": "EP107 | 22 Oct 2026",
+ "observed_trades": [
+  {
+   "date": "2026-10-22",
+   "ticker": "SQQQ",
+   "direction": "long",
+   "action": "reentry",
+   "setup": "Index short (QQQ) via the inverse ETF in a high-volatility down tape; re-entered after an earlier attempt.",
+   "entry_basis": "Re-entered on a specific (intraday) candle shown on the chart",
+   "stop": "",
+   "source": "2026-10-22_9pHwI23h-aI@05:30",
+   "confidence": "inferred",
+   "notes": "'Yeah, I reentered the SNQ again. That almost stops me out. I reentered it at the exactly this candle.' (05:30-06:10). Caption 'SNQ' read as SQQQ (his usual QQQ-short vehicle; prior decode 'SQQ loan' = SQQQ); viewer later calls his '3x ETF trade' risky (60:31). Day not stated; the next sentence reviews 'yesterday', so likely the 10-21 session. Position direction = long SQQQ = short QQQ.",
+   "fill_timing": ""
+  },
+  {
+   "date": "2026-10-22",
+   "ticker": "COIN",
+   "direction": "short",
+   "action": "entry",
+   "setup": "Crypto-stock short while crypto rallied into the declining 9/21; he says he shorted it a little too early because crypto stocks were still too strong yesterday.",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-10-22_9pHwI23h-aI@11:14",
+   "confidence": "stated",
+   "notes": "'I think the shorts on coin is fine.' (08:20); 'crypto stocks are too strong yesterday that I just shorted coin a little bit too early' (10:57-11:14). Later 'I can't short coin anymore. That's That's fine.' (19:57) - meaning unclear (no add / no new short); no exit stated.",
+   "fill_timing": "yesterday"
+  },
+  {
+   "date": "2026-10-22",
+   "ticker": "SNDK",
+   "direction": "short",
+   "action": "entry",
+   "setup": "Early-morning short among yesterday's first few trades; he judges it weak because QQQ was not yet at resistance, making the short easy to fail.",
+   "entry_basis": "Early-morning entry (before QQQ reached resistance)",
+   "stop": "",
+   "source": "2026-10-22_9pHwI23h-aI@08:20",
+   "confidence": "stated",
+   "notes": "'maybe the short on SNDK like earlier in the early morning may not be that good as the like the cues is not at the resistance level' (08:20-08:45); 'the first few trades are could be avoided' (08:01-08:20). Exit not stated. 'cues' = QQQ.",
+   "fill_timing": "yesterday"
+  },
+  {
+   "date": "2026-10-22",
+   "ticker": "SNDK",
+   "direction": "short",
+   "action": "stopped_out",
+   "setup": "Short into the declining daily 21 and a flat 150, under all daily and weekly EMAs; stopped out Tuesday.",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-10-22_9pHwI23h-aI@58:31",
+   "confidence": "inferred",
+   "notes": "'Syndicate also could be an entry. Yeah, I got stopped those on this dust shot uh on Tuesday' (58:31-59:41); 'we're just into the declining 21 and also the flat uh 150 under all the EMAs. It's just a nice shot' (59:41). Caption 'Syndicate' read as SanDisk/SNDK and 'dust shot' as 'this short'; 'those' could also cover MU, named just before. Distinct from yesterday's early-morning SNDK short (08:20).",
+   "fill_timing": "Tuesday"
+  },
+  {
+   "date": "2026-10-22",
+   "ticker": "GEV",
+   "direction": "short",
+   "action": "entry",
+   "setup": "Short on the bounce into the declining daily 9 (not waiting for the 21) because the 150 sat at the same level, the weekly looked vulnerable and the base was a weak stage-3-to-4 base of lower highs/lower lows below all EMAs; QQQ was pulling back into its 9 with semis weak.",
+   "entry_basis": "Reaction at the declining daily 9 EMA, which coincided with the 150",
+   "stop": "",
+   "source": "2026-10-22_9pHwI23h-aI@39:38",
+   "confidence": "stated",
+   "notes": "Viewer: 'your GEV shorts ... had a reaction during the touch of the 9 EMA. Hence, you took it short anyway' (36:44-38:02). Martin: 'yesterday I think um I I just just don't like like how GV lose the 150 and then now it's like basing below all the EMAs.' (39:12-39:38); 'the weekly is ... what makes me willing to take the risk and also like the 150 is also at a similar level to the nine' (39:51-40:07). Caption 'GV' = GEV. Also 'Maybe I should have shorted a little bit more on the infrastructure stuff. Yesterday' (96:16-100:49) - consistent, names not stated.",
+   "fill_timing": "yesterday"
+  },
+  {
+   "date": "2026-10-22",
+   "ticker": "USO",
+   "direction": "long",
+   "action": "hold",
+   "setup": "Oil long held through a failed reversal that went straight down into the rising EMAs; plan was to hold until a close below the 9 rather than sell early.",
+   "entry_basis": "",
+   "stop": "Close below the 9 EMA",
+   "source": "2026-10-22_9pHwI23h-aI@35:36",
+   "confidence": "stated",
+   "notes": "'I almost yeah I almost decided to sell to sell USO yesterday but I somehow I just like just trying to hold until maybe until the close below like the nine' (35:36-35:54); 'Luckily I didn't' (36:17). Viewer 'thought that you were shorting USO yesterday' - Martin: 'No, no, you you you were seeing it wrong' (137:03) confirms long.",
+   "fill_timing": "yesterday"
+  },
+  {
+   "date": "2026-10-22",
+   "ticker": "GLD",
+   "direction": "short",
+   "action": "hold",
+   "setup": "Gold short near the converging weekly EMAs after a deep pullback, spike, rejection and loss of all EMAs; month-long sideways action pulling into the 21; he says a bounce to the 50 would be better but it is still a valid short here.",
+   "entry_basis": "Near the converging (weekly) EMAs",
+   "stop": "",
+   "source": "2026-10-22_9pHwI23h-aI@28:11",
+   "confidence": "inferred",
+   "notes": "Viewer: 'Um, may I ask why you got 100% on gold and silver shots?' (28:11). Martin: 'I just like shorting near the converging EMAs' (29:50); 'I still think it's a valid short um right here' (30:07). Holding inferred from the viewer's premise, which he does not dispute. Instrument not stated ('gold'); GLD assumed. '100%' is the viewer's figure (size or allocation unclear).",
+   "fill_timing": ""
+  },
+  {
+   "date": "2026-10-22",
+   "ticker": "SLV",
+   "direction": "short",
+   "action": "hold",
+   "setup": "Silver short, treated as 'a weaker gold' (gold with relative weakness); same thesis as the gold short.",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-10-22_9pHwI23h-aI@30:07",
+   "confidence": "inferred",
+   "notes": "Viewer: 'why you got 100% on gold and silver shots?' (28:11). Martin: 'I treat silver is like a weaker weaker gold like it's just a gold but with a relative weakness. So yeah, sometimes you just take the risk and u accept it and just pull the trigger' (30:07-30:41). Instrument not stated ('silver'); SLV assumed.",
+   "fill_timing": ""
+  },
+  {
+   "date": "2026-10-22",
+   "ticker": "?",
+   "direction": "short",
+   "action": "hold",
+   "setup": "Live position whose stop sits just above the high of day; price overshot the high of day but stopped a few cents short of his stop.",
+   "entry_basis": "",
+   "stop": "Just above the high of day (35 cents away at one point)",
+   "source": "2026-10-22_9pHwI23h-aI@122:26",
+   "confidence": "inferred",
+   "notes": "'this G like how many cents until it hit my stops like 35 cents. Oh, it's actually overshooting the the height of day, but I'm just I'm just a few cents above it. I think this is really lucky' (122:26-124:54). Stop above HOD implies a short. Ticker 'this G' unresolved (GEV, discussed as his short, is a guess); SNDK's intraday chart is discussed right after (125:13).",
+   "fill_timing": "today"
+  },
+  {
+   "date": "2026-10-22",
+   "ticker": "MSFT",
+   "direction": "long",
+   "action": "entry",
+   "setup": "RETROSPECTIVE: his first-ever trade, Microsoft, on 15 Oct 2020 (sixth anniversary of his trading).",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-10-22_9pHwI23h-aI@70:32",
+   "confidence": "stated",
+   "notes": "'My first trade uh was made on 15th of October back in 2020. And I still remember that trade that is Microsoft back in 15th of October 2020' (70:32-70:51). Not a current trade; fill date 2020-10-15.",
+   "fill_timing": "15th of October 2020"
+  },
+  {
+   "date": "2026-10-22",
+   "ticker": "?",
+   "direction": "long",
+   "action": "entry",
+   "setup": "RETROSPECTIVE: the 'aha moment' breakout trade early in his career that ran over 100% in a few days; Kristjan entered the same name at the same time (found out after).",
+   "entry_basis": "Breakout",
+   "stop": "",
+   "source": "2026-10-22_9pHwI23h-aI@81:55",
+   "confidence": "stated",
+   "notes": "'so I bought I bought uh the VA I don't know it's like it's pro split' (81:55); 'This breakout like it's such a great trade that it moves like moves higher for like over 100% in just a few days' (78:20). Ticker 'the VA' unresolved (CVNA is a guess given the later 'cabana' question). Year not stated (before the May trade, likely 2022-23).",
+   "fill_timing": ""
+  },
+  {
+   "date": "2026-10-22",
+   "ticker": "?",
+   "direction": "long",
+   "action": "trim",
+   "setup": "RETROSPECTIVE: sold half of the 'aha' breakout trade into strength.",
+   "entry_basis": "Into strength (probably the second day)",
+   "stop": "",
+   "source": "2026-10-22_9pHwI23h-aI@82:17",
+   "confidence": "stated",
+   "notes": "'yeah probably sell it some somewhere in here near here the first half I sell half here' (82:17); 'probably sell some into strength on the second date' (80:01-80:45). Same unresolved ticker as the 81:55 row.",
+   "fill_timing": "second day"
+  },
+  {
+   "date": "2026-10-22",
+   "ticker": "?",
+   "direction": "long",
+   "action": "trim",
+   "setup": "RETROSPECTIVE: sold another 40% near the high of day on a Thursday; he credits the parabolic-short lesson for the exit.",
+   "entry_basis": "Near the high of day",
+   "stop": "",
+   "source": "2026-10-22_9pHwI23h-aI@82:17",
+   "confidence": "stated",
+   "notes": "'sell the remaining like 40% on uh second oh on Thursday that's a pretty good that's a pretty good exit probably somewhere above here like yeah in the high of day' (82:17-82:34). Same unresolved ticker as the 81:55 row.",
+   "fill_timing": "Thursday"
+  },
+  {
+   "date": "2026-10-22",
+   "ticker": "?",
+   "direction": "long",
+   "action": "exit",
+   "setup": "RETROSPECTIVE: sold the final 10% a little lower.",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-10-22_9pHwI23h-aI@82:34",
+   "confidence": "stated",
+   "notes": "'and then the remaining 10% I think a little bit lower so yeah the exit was pretty good too' (82:34). Same unresolved ticker as the 81:55 row.",
+   "fill_timing": ""
+  },
+  {
+   "date": "2026-10-22",
+   "ticker": "?",
+   "direction": "long",
+   "action": "entry",
+   "setup": "RETROSPECTIVE: May breakout in the same name that put his equity curve to a new high, ending a ~2-year drawdown since early 2021.",
+   "entry_basis": "May breakout",
+   "stop": "",
+   "source": "2026-10-22_9pHwI23h-aI@83:09",
+   "confidence": "stated",
+   "notes": "'I bought it in May. Yeah, I also bought the May breakout too.' (83:09); 'the May trade is the one that really um puts my equity curves into the new high' (83:37); viewer then asks 'How much size did you put in cabana' and he answers 'It's just a normal trait' (84:06-85:42). Ticker likely CVNA ('cabana'), unconfirmed; year likely 2023 (not stated).",
+   "fill_timing": "May"
+  }
+ ],
+ "principles": [
+  {
+   "category": "entry",
+   "text": "Shorting a bounce into the declining 21 EMA has a higher success rate than shorting at the declining 9; the 9 is still a good short when it converges with another level (50 EMA, prior candle high, prior swing low, anchored VWAP). Using the declining 9 alone has a lower win rate.",
+   "timestamp": "38:19"
+  },
+  {
+   "category": "entry",
+   "text": "Prefers to short while the stock is still within its base, near converging EMAs, rather than when it is already breaking down and extended.",
+   "timestamp": "28:57"
+  },
+  {
+   "category": "entry",
+   "text": "Calls his early short his mistake: he should have waited for a longer (about 3-day) bounce into the declining 9 EMA. Shorting at several stacked resistances (unfilled gap, weekly EMA, flat 50) gives a better edge than shorting early in the morning.",
+   "timestamp": "25:03"
+  },
+  {
+   "category": "entry",
+   "text": "Trends start on the lowest timeframe (1-min -> 15-min -> hourly -> daily), so he enters on intraday candle breakouts or breakdowns rather than buying falling knives.",
+   "timestamp": "46:02"
+  },
+  {
+   "category": "posture",
+   "text": "On a high-conviction trade, accept the risk and pull the trigger. If hesitating, don't take it; come back in a few days to see whether the entry worked and take away what made it work or fail.",
+   "timestamp": "41:58"
+  },
+  {
+   "category": "risk",
+   "text": "With a tight stop (<1%) on a fast stock (ADR >4-5%) he keeps normal 20-25% sizing and risks only ~0.1-0.15%; he does not size up for a 'perfect' tight-stop entry because gap risk can destroy the account.",
+   "timestamp": "95:04"
+  },
+  {
+   "category": "risk",
+   "text": "Will not risk anything like 10% of the account on one trade, however good it looks.",
+   "timestamp": "61:31"
+  },
+  {
+   "category": "risk",
+   "text": "Sizes about the same as when the account was small (maybe up to ~30%); larger sizing in fewer positions only raises variance, so he does not recommend it.",
+   "timestamp": "88:05"
+  },
+  {
+   "category": "risk",
+   "text": "Heavy short exposure without profit cushion is risky: a gap up against an overexposed book can mean a >5% drawdown on the gap alone.",
+   "timestamp": "07:38"
+  },
+  {
+   "category": "process",
+   "text": "Journal every trade by hand (entries, exits, shares, P&L); the effort of manual entry is a check on overtrading.",
+   "timestamp": "87:00"
+  },
+  {
+   "category": "process",
+   "text": "Trade a small account as if managing a $100M portfolio, to build habits that scale.",
+   "timestamp": "89:07"
+  },
+  {
+   "category": "process",
+   "text": "Routine: about an hour after waking going through charts, screens and the watchlist; about 30 min before the open, review pre-market movers and the watchlist for gaps into levels for pullback entries. Usually watches only until ~12:30-1pm, longer on volatile or opportunity-rich days.",
+   "timestamp": "114:11"
+  }
+ ],
+ "ambiguous_tickers": [
+  {
+   "timestamp": "05:30",
+   "caption_text": "SNQ",
+   "context": "'I reentered the SNQ again. That almost stops me out'; viewer later calls his '3x ETF trade' risky",
+   "guess": "SQQQ",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "39:38",
+   "caption_text": "GV / GEV",
+   "context": "viewer 'your GEV shorts'; 'how GV lose the 150'",
+   "guess": "GEV",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "58:31",
+   "caption_text": "Syndicate",
+   "context": "'Syndicate also could be an entry. Yeah, I got stopped those on this dust shot uh on Tuesday'",
+   "guess": "SNDK",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "122:26",
+   "caption_text": "this G",
+   "context": "live position, stop a few cents above the high of day (short)",
+   "guess": "? (GEV possible)",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "28:11",
+   "caption_text": "gold and silver shots",
+   "context": "viewer: 'why you got 100% on gold and silver shots?'; instrument not named",
+   "guess": "GLD / SLV (vehicle unknown)",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "81:55",
+   "caption_text": "the VA",
+   "context": "retrospective 'aha moment' breakout, >100% in a few days, 'pro split'",
+   "guess": "? (CVNA possible)",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "84:06",
+   "caption_text": "cabana / Kfana / Kafana",
+   "context": "viewer asks size 'in cabana' after the May trade; 90:40 'Kafana just went another ... 600%' on a cap screen",
+   "guess": "CVNA",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "08:45",
+   "caption_text": "UXY",
+   "context": "'number one stock that I'm watching today' (watch only, no row)",
+   "guess": "UVXY",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "19:32",
+   "caption_text": "CPRS",
+   "context": "lockout rally to the downside (commentary, no row)",
+   "guess": "?",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "17:43",
+   "caption_text": "RGV",
+   "context": "'remains strong like a safe haven' sector (commentary)",
+   "guess": "IGV",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "25:20",
+   "caption_text": "kills / cues",
+   "context": "index finding resistance at the 9",
+   "guess": "QQQ",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "51:20",
+   "caption_text": "so excess / soc",
+   "context": "VIEWER's trade with day-low stop, stopped out (not his; no row)",
+   "guess": "SOXS",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "118:10",
+   "caption_text": "K L",
+   "context": "'down 15% from the highs ... 400 billion market cap' (commentary)",
+   "guess": "?",
+   "confidence": "unsure"
+  }
+ ]
+}

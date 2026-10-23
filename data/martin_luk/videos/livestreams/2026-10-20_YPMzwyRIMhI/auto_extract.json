@@ -1,0 +1,197 @@
+{
+  "video_id": "YPMzwyRIMhI",
+  "date": "2026-10-20",
+  "title": "Firing shorts | 20 Oct 2026",
+  "observed_trades": [
+    {
+      "ticker": "SLV",
+      "direction": "short",
+      "action": "entry",
+      "setup": "Small premarket silver short off the hourly converging EMAs (with some 4-hour context); he admits there is still room to the daily 9 and calls the entry a little too aggressive. Said he'd consider re-shorting at the declining 9 if stopped out.",
+      "entry_basis": "Bounce after the close below the 9 EMA, the breakdown, then the bounce; hourly converging EMAs",
+      "stop": "At the 4-hour candle high",
+      "source": "2026-10-20_YPMzwyRIMhI@02:07",
+      "confidence": "stated",
+      "notes": "'in uh the premarket I shorted a little a bit of silver and uh I'm not sure whether that's a That's a good trade' (02:07-05:30); 'Stop on silver is at the at this 4hour candle high' (09:24); 'my entry was was around at this bounce uh like after the close below the nine and then the breakdown and then the and then the bounce' (20:02); 'definitely a little bit too too aggressive' (20:21). Size: 'both of them are like more than 100% of my accounts' (137:00, gold+silver); risk 'slightly higher than 0.5%' for silver (148:54). Instrument not stated (SLV vs silver futures); SLV used as proxy. 'a little a bit' at 02:07 conflicts with the >100%-of-account answer later; may mean an add to an existing silver short, unresolved.",
+      "fill_timing": "premarket today",
+      "date": "2026-10-20"
+    },
+    {
+      "ticker": "GLD",
+      "direction": "short",
+      "action": "hold",
+      "setup": "Existing gold short, held through the session; he declined to add a DUST long because he already has enough gold-short exposure and fears a gap up.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-10-20_YPMzwyRIMhI@133:30",
+      "confidence": "stated",
+      "notes": "'I think I I have enough exposure for the gold short so I don't yeah I don't want to be too greedy' (133:30-133:47); 'How are you sizing gold and silver? Um, there are like huge positions ... both of them are like more than 100% of my accounts' (137:00-137:42); gold risk 'slightly less than 0.5%' (148:54). Entry date not given in this stream. Instrument not stated (GLD vs gold futures); GLD used as proxy.",
+      "fill_timing": "",
+      "date": "2026-10-20"
+    },
+    {
+      "ticker": "COIN",
+      "direction": "short",
+      "action": "hold",
+      "setup": "Open short in Coinbase, one of his current crypto shorts (with BMNR); he says he doesn't like the bounce in crypto.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-10-20_YPMzwyRIMhI@124:20",
+      "confidence": "stated",
+      "notes": "'maybe like the coin and EMNR shorts. Yes. Uh they are like still they're around like 20 to 25%' (124:20); viewer: 'What's your position sizing in the current shorts?' Luk: 'coin and PMN are are around around like I think slightly less than 20% ... I think coin is like around 20%' (127:31-127:52), sized on account equity excluding margin. Entry date not given.",
+      "fill_timing": "",
+      "date": "2026-10-20"
+    },
+    {
+      "ticker": "BMNR",
+      "direction": "short",
+      "action": "hold",
+      "setup": "Open short in BitMine (crypto/ETH-treasury name), paired with the COIN short.",
+      "entry_basis": "",
+      "stop": "",
+      "source": "2026-10-20_YPMzwyRIMhI@127:31",
+      "confidence": "stated",
+      "notes": "Captioned 'EMNR' (124:20), 'PMN' (127:31) and 'BN' (127:52): 'I think coin is like around 20% and BN is like 18 or 19% of my account' (127:52). Decoded as BMNR (same decode as the 2026-09-21 extract); see ambiguous_tickers. Entry date not given.",
+      "fill_timing": "",
+      "date": "2026-10-20"
+    },
+    {
+      "ticker": "XBI",
+      "direction": "short",
+      "action": "entry",
+      "setup": "Biotech ETF short at the 50 EMA; he notes IBB still looks strong and that there are better short candidates, but the risk is tight at the 50.",
+      "entry_basis": "At the 50 EMA",
+      "stop": "Tight; at/above the 50 EMA (no level stated)",
+      "source": "2026-10-20_YPMzwyRIMhI@121:32",
+      "confidence": "inferred",
+      "notes": "'now it's still too early to save and XBI look like a good shot.' (121:32); 'left the XBI. This IBB still looks pretty strong at the moment ... other like better short candidates than um than XBI. But yeah, right now it's at the 50 EMA. So I think the the risk is tight enough.' (122:28-123:07). 'left the XBI' is likely a clipped '[shor]ted the XBI'; no explicit first-person fill. Drop if precision demands a stated fill.",
+      "fill_timing": "today",
+      "date": "2026-10-20"
+    }
+  ],
+  "principles": [
+    {
+      "category": "risk",
+      "text": "Holds a losing position overnight as long as it has not hit his stop; about 95% of the time he will not take it off manually.",
+      "timestamp": "134:19"
+    },
+    {
+      "category": "exits",
+      "text": "If a stock gaps below his stop, about 95% of the time he sells at the open and lets the stop trigger rather than waiting for a bounce; he can buy back on a 1-minute opening-range-high breakout if the stock reacts positively after stopping him out.",
+      "timestamp": "134:49"
+    },
+    {
+      "category": "sizing",
+      "text": "Rarely sizes above 25% of the account in high-ADR stocks unless he has really high conviction in that trade idea.",
+      "timestamp": "124:20"
+    },
+    {
+      "category": "sizing",
+      "text": "Calculates position size from his original account size rather than the grown one (e.g. 10K, not 13K after a 30% run), so he sizes up slowly and has a buffer that avoids having to size down in a mild drawdown.",
+      "timestamp": "125:04"
+    },
+    {
+      "category": "sizing",
+      "text": "Position-size percentages are computed on pure account equity, never including margin buying power; sizing off 3x buying power risks blow-up on a ~33% drawdown.",
+      "timestamp": "128:08"
+    },
+    {
+      "category": "selection",
+      "text": "Shorting gold and silver is not a valid reason to short copper.",
+      "timestamp": "132:33"
+    },
+    {
+      "category": "risk",
+      "text": "Avoids stacking more exposure on the same theme (skipped a DUST long while already short gold) so as not to be greedy into a possible ugly gap the next day.",
+      "timestamp": "133:30"
+    },
+    {
+      "category": "posture",
+      "text": "Big returns in a reversal rally come from being fully prepared for the turn so he can size up and build exposure across multiple positions quickly; tight stops with a low win rate increase the upside.",
+      "timestamp": "146:23"
+    },
+    {
+      "category": "process",
+      "text": "Win rate is an output of his trading, not an input; focus on the inputs, i.e. entries and timing.",
+      "timestamp": "150:15"
+    },
+    {
+      "category": "exits",
+      "text": "Self-assessment: his selling is much poorer than his entries; he exits longs too early out of fear of giving back gains when a stock gets extended.",
+      "timestamp": "158:22"
+    },
+    {
+      "category": "selection",
+      "text": "To shrink a focus list, raise the volatility and liquidity criteria and favour faster, more liquid, higher-priced names: easier to trade, less slippage, lower trading cost.",
+      "timestamp": "164:39"
+    },
+    {
+      "category": "process",
+      "text": "Spends most study effort journaling and reviewing his own trades, especially losses, one by one (entry, exit, what went wrong vs the market) and looking for commonalities in losing trades.",
+      "timestamp": "177:36"
+    },
+    {
+      "category": "sizing",
+      "text": "Losses taken while sizing up during a losing streak are far larger than normal losses; simply not sizing up in a losing streak prevents them, and confronting the figures is what fixed it.",
+      "timestamp": "191:59"
+    }
+  ],
+  "ambiguous_tickers": [
+    {
+      "timestamp": "124:20",
+      "caption_text": "EMNR / PMN (127:31) / BN (127:52)",
+      "context": "current crypto short sized ~18-19%, paired with COIN",
+      "guess": "BMNR",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "09:09",
+      "caption_text": "QVXY / UBXY (12:26) / UVXY (20:21)",
+      "context": "'maybe I'm going to try some trades like QVXY' then 'bounce back a little bit for the UBXY'; no clear fill stated, not logged",
+      "guess": "UVXY",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "02:07",
+      "caption_text": "silver",
+      "context": "premarket short; instrument not named",
+      "guess": "SLV",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "133:30",
+      "caption_text": "gold short",
+      "context": "held short, >100% of account with silver; instrument not named",
+      "guess": "GLD",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "154:22",
+      "caption_text": "SNDQ / SNQ (154:47)",
+      "context": "retrospective: his largest absolute winner this year, added into, larger than normal size; direction not stated; not logged",
+      "guess": "SNDK",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "152:52",
+      "caption_text": "alf",
+      "context": "retrospective April-May long sold too early, missed the last part of the parabolic run; not logged",
+      "guess": "?",
+      "confidence": "unsure"
+    },
+    {
+      "timestamp": "153:10",
+      "caption_text": "arm",
+      "context": "retrospective April-May long sold too early; not logged",
+      "guess": "ARM",
+      "confidence": "likely"
+    },
+    {
+      "timestamp": "122:28",
+      "caption_text": "left the XBI",
+      "context": "possibly clipped 'shorted the XBI'",
+      "guess": "XBI",
+      "confidence": "likely"
+    }
+  ]
+}

@@ -1,0 +1,376 @@
+{
+ "video_id": "z_IxO8qskgs",
+ "date": "2026-10-12",
+ "title": "Short updates | 12 Oct 2026",
+ "observed_trades": [
+  {
+   "date": "2026-10-12",
+   "ticker": "SNDK",
+   "direction": "short",
+   "action": "trim",
+   "setup": "Partial cover of the SNDK short at/after today's open to secure profits and free up buying power.",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-10-12_z_IxO8qskgs@07:08",
+   "confidence": "stated",
+   "notes": "'I'll probably cover some short positions today. To secure some profits and also free up some purchasing power. Mhm. But I did cover some SNTQ' (05:58-07:08); 'in the opening, I mean, after the opening' (11:43). Caption 'SNTQ' = SNDK (same short discussed as SNTK/S&DK/SMDK later). 'some' = partial; remainder size not stated.",
+   "fill_timing": "today"
+  },
+  {
+   "date": "2026-10-12",
+   "ticker": "?",
+   "direction": "short",
+   "action": "trim",
+   "setup": "Partial cover of a short at/after today's open, alongside SNDK and PHTI.",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-10-12_z_IxO8qskgs@07:08",
+   "confidence": "stated",
+   "notes": "'But I did cover some SNTQ, uh D-REIT, PHTI, in the opening' (07:08-11:43). 'D-REIT' unresolved; see ambiguous_tickers.",
+   "fill_timing": "today"
+  },
+  {
+   "date": "2026-10-12",
+   "ticker": "?",
+   "direction": "short",
+   "action": "trim",
+   "setup": "Partial cover of a short at/after today's open, alongside SNDK and the 'D-REIT' name.",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-10-12_z_IxO8qskgs@07:08",
+   "confidence": "stated",
+   "notes": "'D-REIT, PHTI, in the opening, I mean, after the opening. So I think I've finished my operations for today' (07:08-11:43). 'PHTI' unresolved; see ambiguous_tickers.",
+   "fill_timing": "today"
+  },
+  {
+   "date": "2026-10-12",
+   "ticker": "?",
+   "direction": "long",
+   "action": "exit",
+   "setup": "Sold a long position early 'for no specific reason' because he could not handle being long and short on margin at the same time; chose the short side.",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-10-12_z_IxO8qskgs@27:44",
+   "confidence": "stated",
+   "notes": "'How to sell my long positions too soon. For example, as a Calendar, I believe I sold it on this day, September 30th. For no reason, for no specific reason' (27:44-28:04). Ticker garbled as 'Calendar'; see ambiguous_tickers. Retrospective (2026-09-30).",
+   "fill_timing": "September 30th"
+  },
+  {
+   "date": "2026-10-12",
+   "ticker": "RDDT",
+   "direction": "short",
+   "action": "entry",
+   "setup": "Short into a rally toward the declining 9 and 21-day moving averages.",
+   "entry_basis": "Rally into the 9/21-day MAs on Wednesday",
+   "stop": "",
+   "source": "2026-10-12_z_IxO8qskgs@30:21",
+   "confidence": "stated",
+   "notes": "'I also had some unsuccessful short positions like Rabbit, I did go short I think on Wednesday, on this day, on this rally towards the 9 and 21 day moving averages' (30:21-30:50). 'Rabbit' = Reddit (RDDT) per prior Luk decode; likely Wed 2026-10-07.",
+   "fill_timing": "Wednesday"
+  },
+  {
+   "date": "2026-10-12",
+   "ticker": "RDDT",
+   "direction": "short",
+   "action": "stopped_out",
+   "setup": "Stopped out as the stock rose sharply into the close and never came back.",
+   "entry_basis": "",
+   "stop": "Stop loss hit (level not stated)",
+   "source": "2026-10-12_z_IxO8qskgs@30:50",
+   "confidence": "stated",
+   "notes": "'But it rose sharply again at the close and never returned. I think I was kicked out twice due to stop loss' (30:50-31:06). First of two stop-outs.",
+   "fill_timing": "Wednesday"
+  },
+  {
+   "date": "2026-10-12",
+   "ticker": "RDDT",
+   "direction": "short",
+   "action": "reentry",
+   "setup": "Second attempt at the same short (implied by 'kicked out twice').",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-10-12_z_IxO8qskgs@30:50",
+   "confidence": "inferred",
+   "notes": "'I think I was kicked out twice due to stop loss' (30:50-31:06). The re-entry itself is not narrated; inferred from two stop-outs. Timing not stated.",
+   "fill_timing": ""
+  },
+  {
+   "date": "2026-10-12",
+   "ticker": "RDDT",
+   "direction": "short",
+   "action": "stopped_out",
+   "setup": "Second stop-out on the RDDT short.",
+   "entry_basis": "",
+   "stop": "Stop loss hit (level not stated)",
+   "source": "2026-10-12_z_IxO8qskgs@30:50",
+   "confidence": "inferred",
+   "notes": "'kicked out twice due to stop loss' (30:50-31:06). Second stop-out; timing not stated.",
+   "fill_timing": ""
+  },
+  {
+   "date": "2026-10-12",
+   "ticker": "SPCX",
+   "direction": "short",
+   "action": "entry",
+   "setup": "Tried to short SpaceX as part of a space-sector short thesis; it kept breaking up, making higher lows, holding the 50-day EMA.",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-10-12_z_IxO8qskgs@38:08",
+   "confidence": "inferred",
+   "notes": "'space is a sector that we are trying to sell short. Especially SpaceX, but SpaceX was going against me' (38:08-39:03). Retrospective; date not stated. Inferred from 'going against me' + 'never found a successful short sale'.",
+   "fill_timing": ""
+  },
+  {
+   "date": "2026-10-12",
+   "ticker": "SPCX",
+   "direction": "short",
+   "action": "exit",
+   "setup": "Gave up on the SpaceX short after it kept going against him; has not shorted it since.",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-10-12_z_IxO8qskgs@39:14",
+   "confidence": "inferred",
+   "notes": "'never found a successful short sale . Like, yeah, I give up. I have n't short-circuited it since, I think, maybe here' (39:14). 'short-circuited' = shorted (caption/translation garble). Whether exits were stops or manual not stated.",
+   "fill_timing": ""
+  },
+  {
+   "date": "2026-10-12",
+   "ticker": "SNDK",
+   "direction": "long",
+   "action": "entry",
+   "setup": "Long SNDK, one of the best-trending stocks (~5,000% move in under a year).",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-10-12_z_IxO8qskgs@65:16",
+   "confidence": "stated",
+   "notes": "'SNDK, I actually joined this on September 18th. And then I eventually closed it' (65:16-65:52). Retrospective (2026-09-18).",
+   "fill_timing": "September 18th"
+  },
+  {
+   "date": "2026-10-12",
+   "ticker": "SNDK",
+   "direction": "long",
+   "action": "exit",
+   "setup": "Closed the long when it began breaking the 9 EMA and the prior candle's low, without waiting for a close below the 9 EMA, because he doubts a multi-week rally.",
+   "entry_basis": "",
+   "stop": "Closed on break of the 9 EMA and the previous candle's low; would not give it room to the 21 EMA or breakeven",
+   "source": "2026-10-12_z_IxO8qskgs@65:52",
+   "confidence": "stated",
+   "notes": "'closed it, I think on this day. The break of the previous candle' (65:52); 'this is my entry and I decided to close it. I didn't wait for the close below the 9 EMA. I simply closed it after it started breaking the 9 EMA and also the low of the' (74:25). Exit date not stated (between 09-18 and 10-02). Retrospective.",
+   "fill_timing": ""
+  },
+  {
+   "date": "2026-10-12",
+   "ticker": "SNDK",
+   "direction": "short",
+   "action": "entry",
+   "setup": "Short SNDK on relative weakness vs semis/memory after its peak; after a weak close below the daily 9 on the gap-down week, shorted the Monday rebound.",
+   "entry_basis": "Rebound on Monday Oct 5 into the descending daily 9-period MA, with the 60-min EMAs declining",
+   "stop": "",
+   "source": "2026-10-12_z_IxO8qskgs@68:24",
+   "confidence": "inferred",
+   "notes": "'after the close, I decided to try to go short if we had a rebound in the next few days, which is Monday, like October 5th. So, we had a Monday, we had a push towards the descending nine-period moving average' (68:24-68:38); 'I think S&DK is the first short film I've talked about. And then I even added to the position' (68:54-69:15). Fill itself not said in one sentence; inferred from the plan + 'added to the position'. 'short film' = short (garble). He says the Oct 2 anchored-VWAP rejection 'I do n't think I took it'.",
+   "fill_timing": "Monday, like October 5th"
+  },
+  {
+   "date": "2026-10-12",
+   "ticker": "SNDK",
+   "direction": "short",
+   "action": "add",
+   "setup": "Added to the SNDK short on Wednesday's rebound; aggressive, high-risk add driven by conviction in the risk-reward.",
+   "entry_basis": "Wednesday's rebound/rally",
+   "stop": "",
+   "source": "2026-10-12_z_IxO8qskgs@69:15",
+   "confidence": "stated",
+   "notes": "'And then I even added to the position on this rebound, on Wednesday's rebound , Wednesday's rally. And yes, it's a little bit uh aggressive' (69:15); 'willing to use, to sacrifice, to use a high risk for this operation and, uh, luckily it worked out' (69:38-69:54); 'after my addition to the SMDK' (79:07-80:02). Wednesday = 2026-10-07.",
+   "fill_timing": "Wednesday"
+  },
+  {
+   "date": "2026-10-12",
+   "ticker": "?",
+   "direction": "short",
+   "action": "entry",
+   "setup": "Fairly large semiconductor short taken after SNDK's rebound/add and the semis' weekly close below the 9/20 MAs; Thursday gap down below the prior low and the 9-day MA, then waited for the intraday rebound into aligned resistance.",
+   "entry_basis": "Intraday rebound into the swing low / 50 hourly EMA / 9 30-min EMA; filled on the break of the 5-minute candle",
+   "stop": "",
+   "source": "2026-10-12_z_IxO8qskgs@79:07",
+   "confidence": "stated",
+   "notes": "'And shorting semiconductors is another fairly large position I recently took' (79:07); 'last Thursday, we had a gap down in the semiconductor ETF' (80:02); 'I thought I got it right on the break of the 5- minute candle' (81:15). Instrument not named ('semiconductor ETF'; could be SMH/SOXX or an inverse ETF) - see ambiguous_tickers. Thursday = 2026-10-08. Size: 'fairly large'.",
+   "fill_timing": "last Thursday"
+  },
+  {
+   "date": "2026-10-12",
+   "ticker": "QBTS",
+   "direction": "short",
+   "action": "entry",
+   "setup": "Quantum-computing short.",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-10-12_z_IxO8qskgs@85:35",
+   "confidence": "stated",
+   "notes": "'I actually shorted QBTS on Friday here, I think. Yes, here on Friday' (85:58). Friday = 2026-10-02 (retrospective, pointing at chart).",
+   "fill_timing": "Friday"
+  },
+  {
+   "date": "2026-10-12",
+   "ticker": "QBTS",
+   "direction": "short",
+   "action": "exit",
+   "setup": "Panic-covered the QBTS short near the high of the day; immediately saw it as a mistake.",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-10-12_z_IxO8qskgs@85:58",
+   "confidence": "stated",
+   "notes": "'But then, somehow, on Tuesday, I somehow covered, I covered in the fortress. I just don't know, I panicked or what. And then yes, I covered almost the maximum for the day' (85:58-86:20). Tuesday = 2026-10-06. 'in the fortress' unclear garble.",
+   "fill_timing": "Tuesday"
+  },
+  {
+   "date": "2026-10-12",
+   "ticker": "QBTS",
+   "direction": "short",
+   "action": "reentry",
+   "setup": "Re-shorted QBTS 15-30 minutes after the panic cover; IWM bouncing into its declining 21-period MA on Oct 6 added conviction.",
+   "entry_basis": "Same-day re-entry ~15-30 min after the cover; IWM bounce into declining 21 MA",
+   "stop": "",
+   "source": "2026-10-12_z_IxO8qskgs@86:44",
+   "confidence": "stated",
+   "notes": "'I just went back in, I went back in like 15 to 30 minutes later. Overall, it's a small loss' (86:44); 'the reason I shorted Quantum again is the IWM on October 6th' (88:22). Tuesday 2026-10-06.",
+   "fill_timing": "Tuesday"
+  },
+  {
+   "date": "2026-10-12",
+   "ticker": "?",
+   "direction": "short",
+   "action": "add",
+   "setup": "Live add to the semiconductor-ETF short: a limit a few cents above a candle high first missed, then filled later in the stream.",
+   "entry_basis": "Limit order above the high of an intraday candle on a rebound toward the highs; ideal would have been the 5-min candle break",
+   "stop": "Under 1.5% using the 15-minute candle breakout; deliberately very tight",
+   "source": "2026-10-12_z_IxO8qskgs@77:23",
+   "confidence": "inferred",
+   "notes": "'My limit order is a few cents above the high of this candle that didn't execute' (61:05-63:48); 'I think my entry was successful, but the limit order has already been executed. Yes, my entry is around 182.30 more or less. The original was like 80' (76:24-77:23); 'even if you use the 15-minute candle breakout , it's still less than a 1.5% stop' (77:59-78:28). Ticker never named on this fill; context (58:58-61:05) is the semiconductor ETF he is looking to short near the highs and 'increase my position', so tagged as an add to the Thursday semis short - inferred. Price ~182.30.",
+   "fill_timing": "today"
+  }
+ ],
+ "principles": [
+  {
+   "category": "posture",
+   "text": "Being too early is not an edge for his style: it slowly drains mental and financial capital through repeated small losses, so by the time the real move comes he lacks the size or conviction to catch it.",
+   "timestamp": "46:13"
+  },
+  {
+   "category": "entry",
+   "text": "Short-side moves are faster than long-side moves; if you miss the early entries you probably won't catch the move without chasing.",
+   "timestamp": "48:07"
+  },
+  {
+   "category": "entry",
+   "text": "After a parabolic move, the bounce that forms the first lower high (a failed second attempt to push up after the first crack) is a decent short entry.",
+   "timestamp": "51:37"
+  },
+  {
+   "category": "entry",
+   "text": "Prefers to short near the highs on a rebound (trying to hit the turn) and add when the stock/ETF confirms the breakdown; shorting after a close below the 9-period MA is also good.",
+   "timestamp": "60:15"
+  },
+  {
+   "category": "entry",
+   "text": "Does not short on weakness in the first 15-30 minutes after the open (too volatile); waits for the intraday rebound into aligned resistance.",
+   "timestamp": "80:39"
+  },
+  {
+   "category": "risk",
+   "text": "Whether to move a stop to breakeven depends on market stage: when he believes a downtrend is beginning he does not move short stops to breakeven and will sacrifice open profits to capture more downside.",
+   "timestamp": "72:05"
+  },
+  {
+   "category": "exit",
+   "text": "In a market he doesn't expect to produce a multi-week rally, he closes longs as soon as they break the 9 EMA and the prior candle's low rather than giving room to the 21 EMA or breakeven.",
+   "timestamp": "74:25"
+  },
+  {
+   "category": "risk",
+   "text": "Equity curve governs aggressiveness: when trading well he holds larger positions and takes fewer profits; in a drawdown he takes profits sooner and moves stops to breakeven.",
+   "timestamp": "75:25"
+  },
+  {
+   "category": "process",
+   "text": "On days/periods that are not in your favor, don't trade or trade less, because losses on bad days are what kill you.",
+   "timestamp": "83:27"
+  },
+  {
+   "category": "process",
+   "text": "Overly tight stops are not necessarily good; don't blindly copy his entries, stop placement or stock selection.",
+   "timestamp": "78:28"
+  },
+  {
+   "category": "posture",
+   "text": "Don't FOMO or chase price.",
+   "timestamp": "103:28"
+  }
+ ],
+ "ambiguous_tickers": [
+  {
+   "timestamp": "07:08",
+   "caption_text": "SNTQ",
+   "context": "covered some shorts at today's open; same short later called SNTK / S&DK / SMDK",
+   "guess": "SNDK",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "07:08",
+   "caption_text": "D-REIT",
+   "context": "covered some shorts at today's open alongside SNDK and PHTI",
+   "guess": "?",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "07:08",
+   "caption_text": "PHTI",
+   "context": "covered some shorts at today's open alongside SNDK",
+   "guess": "?",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "27:44",
+   "caption_text": "as a Calendar",
+   "context": "long sold 2026-09-30 'for no specific reason' when he flipped to the short side",
+   "guess": "?",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "30:21",
+   "caption_text": "Rabbit",
+   "context": "short Wednesday into the 9/21-day MAs, stopped twice; 'Rabbit' decoded as Reddit in a prior Luk stream",
+   "guess": "RDDT",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "38:08",
+   "caption_text": "SpaceX",
+   "context": "space-sector short that kept going against him; UFO ETF mentioned alongside",
+   "guess": "SPCX",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "79:07",
+   "caption_text": "the semiconductor ETF / shorting semiconductors",
+   "context": "fairly large semis short Thursday 10-08 and the live add filled ~182.30 today; instrument never named",
+   "guess": "SMH",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "85:58",
+   "caption_text": "Quantum / QBTS",
+   "context": "shorted Fri, panic-covered Tue, re-shorted 15-30 min later",
+   "guess": "QBTS",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "96:54",
+   "caption_text": "Friday's AOI",
+   "context": "'Friday's AOI is also a decent entry ... a great short position' - commentary, not logged as his trade",
+   "guess": "AAOI",
+   "confidence": "likely"
+  }
+ ]
+}

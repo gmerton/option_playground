@@ -1,0 +1,321 @@
+{
+ "video_id": "WjkWNi-ASn8",
+ "date": "2026-10-13",
+ "title": "USO Long | 13 Oct 2026",
+ "observed_trades": [
+  {
+   "date": "2026-10-13",
+   "ticker": "?",
+   "direction": "short",
+   "action": "trim",
+   "setup": "Covering part of a memory-name short into the flush, as it nears the unfilled 12 Aug gap and the prior low of the wide green support candles; expects a 1-3 day rebound from very stretched-to-downside levels.",
+   "entry_basis": "Into weakness: approaching the unfilled Aug 12 gap / prior support candles",
+   "stop": "",
+   "source": "2026-10-13_WjkWNi-ASn8@03:37",
+   "confidence": "stated",
+   "notes": "'I've covered some, um, RAM. A couple of minutes ago. So RAM is getting close to the unfilled gap' (03:37). Ticker captioned 'RAM' - a memory-name short (see 'second opportunity to short memory', 09:38-10:20); exact symbol unresolved (DRAM ETF? MU?). Remains bearish, plans to re-short the rebound (04:51-05:37).",
+   "fill_timing": "a couple of minutes ago"
+  },
+  {
+   "date": "2026-10-13",
+   "ticker": "?",
+   "direction": "short",
+   "action": "trim",
+   "setup": "Took profits on roughly half of his short book on the memory-led drop, staying conservative with the Qs at the 21 EMA; expects a second chance to short memory on a bounce off the 21 EMA.",
+   "entry_basis": "Into weakness with QQQ at its 21 EMA support",
+   "stop": "",
+   "source": "2026-10-13_WjkWNi-ASn8@10:20",
+   "confidence": "stated",
+   "notes": "'I'll probably take some profits' (09:38); 'short memory if the price bounces off the 21 EMA. So I closed almost half of my position today' (10:20). Position not named - may be the same action as the RAM cover at 03:37 or the short book overall. Later: 'I will still hold maybe half, at least part of the shorts' (38:30).",
+   "fill_timing": "today"
+  },
+  {
+   "date": "2026-10-13",
+   "ticker": "USO",
+   "direction": "long",
+   "action": "entry",
+   "setup": "Oil long (weekly/daily chart breaking out of a VCP-like base, rising MAs, testing the 120-130 area); first attempt in the pre-market.",
+   "entry_basis": "Pre-market intraday entry",
+   "stop": "Low of the green (entry) candle",
+   "source": "2026-10-13_WjkWNi-ASn8@05:37",
+   "confidence": "stated",
+   "notes": "'And I also went into USO in the pre-market a couple of minutes ago. Um. I tried, uh, to enter like, um, this way' (05:37). Weekly-chart thesis 66:07-70:06.",
+   "fill_timing": "pre-market"
+  },
+  {
+   "date": "2026-10-13",
+   "ticker": "USO",
+   "direction": "long",
+   "action": "stopped_out",
+   "setup": "First pre-market USO attempt stopped at the low of the green candle.",
+   "entry_basis": "",
+   "stop": "Low of the green candle",
+   "source": "2026-10-13_WjkWNi-ASn8@07:35",
+   "confidence": "stated",
+   "notes": "'Yes, but it stopped me . I placed my stop at the low of this green candle and it took me out' (07:35).",
+   "fill_timing": "pre-market"
+  },
+  {
+   "date": "2026-10-13",
+   "ticker": "USO",
+   "direction": "long",
+   "action": "reentry",
+   "setup": "Went back into USO after the first green candle formed; describes waiting for a strong close back above the EMAs and buying the pullback toward the 15-minute line with an EMA cross.",
+   "entry_basis": "Pullback toward the 15-minute EMA line after a strong close back above the EMAs (EMA crossover)",
+   "stop": "",
+   "source": "2026-10-13_WjkWNi-ASn8@07:35",
+   "confidence": "stated",
+   "notes": "'And then , uh, I went back in, uh, into this candle , after the first ... green candle had formed' (07:35-08:01); 'Back above the EMAs and then bought the pullbacks towards the 15- minute line' (08:16); repeated at 49:33-50:02: 'my oil inflows are in the green candle ... I bought it on the pullback towards the 15- minute line'. Translated captions; the 08:01-08:16 'wait until closing time' may describe a 15-min candle close.",
+   "fill_timing": "pre-market"
+  },
+  {
+   "date": "2026-10-13",
+   "ticker": "SQQQ",
+   "direction": "long",
+   "action": "stopped_out",
+   "setup": "Index short via SQQQ: first add attempt on the pullback to the 50-hour EMA lost.",
+   "entry_basis": "Pullback to the 50-hour EMA",
+   "stop": "",
+   "source": "2026-10-13_WjkWNi-ASn8@44:29",
+   "confidence": "inferred",
+   "notes": "'I really like my ad on SQQQ. Yes, I missed my first post' (44:08); 'I think I had a loss on the first pullback to the 50-hour EMA' (44:29-44:52). Captions are a garbled translation ('ad' = add, 'post' = attempt?). Unclear whether 'this day' is today or a prior session on the chart.",
+   "fill_timing": ""
+  },
+  {
+   "date": "2026-10-13",
+   "ticker": "SQQQ",
+   "direction": "long",
+   "action": "add",
+   "setup": "Added to SQQQ (QQQ short) on a strong SQQQ day that opened ~3% down and rose all day past the daily 9 and prior-day high; entered on a later candle after the earlier stop.",
+   "entry_basis": "Later intraday candle after the stop-out, with SQQQ through the daily 9 and prior day high",
+   "stop": "",
+   "source": "2026-10-13_WjkWNi-ASn8@45:16",
+   "confidence": "inferred",
+   "notes": "'I really like my ad on SQQQ' (44:08); 'I think I probably went short on uh on this candle. After I was pulled over for stopping a few minutes ago' (45:16) - 'went short' read as the QQQ short via SQQQ long. Timing ambiguous.",
+   "fill_timing": ""
+  },
+  {
+   "date": "2026-10-13",
+   "ticker": "QBTS",
+   "direction": "short",
+   "action": "entry",
+   "setup": "Quantum short; initial entry on Friday.",
+   "entry_basis": "",
+   "stop": "Wider than usual because of the hedge/re-short sequence",
+   "source": "2026-10-13_WjkWNi-ASn8@51:03",
+   "confidence": "stated",
+   "notes": "'In Q BTS, the entrance is, uh, a little wider than...' (50:02); 'My initial entry was, uh, yes, it was on Friday' (51:03). Friday = 2026-10-09. Caption 'Q BTS' = QBTS.",
+   "fill_timing": "Friday"
+  },
+  {
+   "date": "2026-10-13",
+   "ticker": "QBTS",
+   "direction": "short",
+   "action": "exit",
+   "setup": "Hedged/covered the QBTS short during the rise, which he calls a mistake.",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-10-13_WjkWNi-ASn8@51:03",
+   "confidence": "inferred",
+   "notes": "'Because I made the mistake of hedging during the rise and then I realized I shouldn't have done it and just went back short. That same day' (51:03). 'hedging' read as covering / offsetting the short; 'that same day' most likely Friday.",
+   "fill_timing": "that same day"
+  },
+  {
+   "date": "2026-10-13",
+   "ticker": "QBTS",
+   "direction": "short",
+   "action": "reentry",
+   "setup": "Went back short QBTS the same day after realizing the hedge was a mistake.",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-10-13_WjkWNi-ASn8@51:03",
+   "confidence": "stated",
+   "notes": "'and then I realized I shouldn't have done it and just went back short. That same day' (51:03).",
+   "fill_timing": "that same day"
+  },
+  {
+   "date": "2026-10-13",
+   "ticker": "SKHY",
+   "direction": "short",
+   "action": "entry",
+   "setup": "SK Hynix short taken October 7th off the South Korean chart after a candle printed; admits the entry was not ideal but expected a crash; it worked.",
+   "entry_basis": "Based on the South Korean (local) chart after the Oct 7 candle",
+   "stop": "",
+   "source": "2026-10-13_WjkWNi-ASn8@53:33",
+   "confidence": "stated",
+   "notes": "'SK Hynix's entry isn't really ideal in my opinion. I think I base it mainly on the graphs from South Korea. This is October 7th' (53:33); 'if they take me out because of a stop loss, well, what does it matter . Um, I just think, yeah, this is going to crash' (53:54); 'Fortunately, it worked' (54:15). Retrospective. SKHY per prior decodes.",
+   "fill_timing": "October 7th"
+  },
+  {
+   "date": "2026-10-13",
+   "ticker": "AXTI",
+   "direction": "short",
+   "action": "entry",
+   "setup": "Small-cap, high-volatility semi position with a wider than usual stop offset by much smaller size.",
+   "entry_basis": "",
+   "stop": "Wider than usual, more than 2%",
+   "source": "2026-10-13_WjkWNi-ASn8@54:15",
+   "confidence": "inferred",
+   "notes": "'In XTI, this time I set my stop a little ... wider than usual, more than 2% . Um, it's mainly because I'm using a smaller size than in the other positions' (54:15-55:29). 'XTI' = AXTI per prior decodes. Direction not stated; inferred short from the surrounding short-book discussion (SK Hynix crash) and prior AXTI shorts. Entry date not stated.",
+   "fill_timing": ""
+  },
+  {
+   "date": "2026-10-13",
+   "ticker": "?",
+   "direction": "unknown",
+   "action": "entry",
+   "setup": "Traded a name captioned 'DSI' yesterday (in response to a question).",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-10-13_WjkWNi-ASn8@55:48",
+   "confidence": "inferred",
+   "notes": "'What do we do with DSI? I operated on her ... yesterday' (55:48-56:49). Machine-translated captions ('operated on her' = traded it?); ticker, direction and action unknown.",
+   "fill_timing": "yesterday"
+  },
+  {
+   "date": "2026-10-13",
+   "ticker": "?",
+   "direction": "short",
+   "action": "hold",
+   "setup": "Holding a crypto-related short after repeated losses being too bearish; would switch to a crypto long if a breakout pushes him out, MSTR looking good.",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-10-13_WjkWNi-ASn8@84:53",
+   "confidence": "inferred",
+   "notes": "'Finally, yes, I had ... too many losses on this one because I was too bearish' (80:45-81:13); 'Or if Litecoin is going to push me out of the position. Perhaps, perhaps I'll switch to a long position in cryptocurrencies. Especially since MSTR looks pretty good' (84:53). 'Litecoin' likely a garble (Bitcoin?); 'this one' may instead refer to SpaceX discussed just before (79:35-80:45). Instrument unknown.",
+   "fill_timing": ""
+  },
+  {
+   "date": "2026-10-13",
+   "ticker": "?",
+   "direction": "short",
+   "action": "hold",
+   "setup": "Still holding a short captioned 'CTF', sitting at the 21-week EMA; wants it to drop more before covering.",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-10-13_WjkWNi-ASn8@19:32",
+   "confidence": "inferred",
+   "notes": "'Let me see, CTF is right at the 21st weekly. I'd like to wait until it drops a bit more before covering it' (19:32). Ticker unresolved.",
+   "fill_timing": ""
+  }
+ ],
+ "principles": [
+  {
+   "category": "exits",
+   "text": "Not good at holding shorts; swing-trades them by covering when the selling pressure is on and looking to re-short on the rebound.",
+   "timestamp": "04:51"
+  },
+  {
+   "category": "exits",
+   "text": "Prefers taking profits on shorts into the move rather than holding for more, accepting the trade-off that a re-entry is not guaranteed and further downside may be missed.",
+   "timestamp": "11:50"
+  },
+  {
+   "category": "risk",
+   "text": "Short-book plan: on a strong recovery from the lows (first close above the 60-min EMA) cover about half and keep part; if the market breaks above the high of the red candle, get rid of all shorts.",
+   "timestamp": "37:58"
+  },
+  {
+   "category": "sizing",
+   "text": "On very high-volatility, small-cap names he sets a wider stop (more than 2%) but uses a much smaller size than other positions.",
+   "timestamp": "54:15"
+  },
+  {
+   "category": "process",
+   "text": "Checks shorter timeframes to see how a stock or index reacts to support/resistance and to read market sentiment.",
+   "timestamp": "40:58"
+  },
+  {
+   "category": "mindset",
+   "text": "No single setup or style works for every new trader: start trading, try them all, and keep what fits you; even styles you drop teach useful concepts.",
+   "timestamp": "46:55"
+  },
+  {
+   "category": "short_entries",
+   "text": "Prefers to short on the next stronger, multi-day rebound in sync with the general market rather than randomly short-selling intraday.",
+   "timestamp": "80:09"
+  },
+  {
+   "category": "market_read",
+   "text": "In a divergent market, small caps not participating, declining breadth and rising new lows are not a positive sign; a trending market wants small caps to participate.",
+   "timestamp": "90:07"
+  },
+  {
+   "category": "selection",
+   "text": "When shorting, pick the weaker names in the group.",
+   "timestamp": "92:21"
+  }
+ ],
+ "ambiguous_tickers": [
+  {
+   "timestamp": "03:37",
+   "caption_text": "RAM",
+   "context": "memory-name short partially covered near the unfilled Aug 12 gap",
+   "guess": "? (DRAM memory ETF or MU)",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "19:32",
+   "caption_text": "CTF",
+   "context": "short held at the 21-week EMA, wants more downside before covering",
+   "guess": "?",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "19:32",
+   "caption_text": "EMD",
+   "context": "at strong support (9-week and prior swing high), possible long entry; not a position",
+   "guess": "AMD",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "50:02",
+   "caption_text": "Q BTS",
+   "context": "short entered Friday, hedged and re-shorted",
+   "guess": "QBTS",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "53:33",
+   "caption_text": "SK Hynix",
+   "context": "short entered Oct 7 off the Korean chart",
+   "guess": "SKHY",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "54:15",
+   "caption_text": "XTI",
+   "context": "high-volatility small-cap, wider >2% stop, smaller size",
+   "guess": "AXTI",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "55:48",
+   "caption_text": "DSI",
+   "context": "'I operated on her yesterday'",
+   "guess": "?",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "84:53",
+   "caption_text": "Litecoin",
+   "context": "'if Litecoin is going to push me out of the position' - crypto short",
+   "guess": "BTC (or a crypto proxy)",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "79:35",
+   "caption_text": "SpaceX",
+   "context": "crashing today; future short candidate on a rebound",
+   "guess": "SPCX",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "91:40",
+   "caption_text": "MS stock / corn / circle",
+   "context": "viewer short idea; he prefers weaker names like 'corn' or 'circle' (not positions)",
+   "guess": "MSTR? / COIN / CRCL",
+   "confidence": "unsure"
+  }
+ ]
+}

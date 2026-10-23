@@ -1,0 +1,184 @@
+{
+ "video_id": "3N_LunfjRC0",
+ "date": "2026-10-19",
+ "title": "Hold still | 19 Oct 2026",
+ "observed_trades": [
+  {
+   "date": "2026-10-19",
+   "ticker": "?",
+   "direction": "short",
+   "action": "trim",
+   "setup": "Short book from the prior week's sell-off (names not stated); began covering into weakness as indices reached weekly EMAs while he was traveling.",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-10-19_3N_LunfjRC0@30:13",
+   "confidence": "stated",
+   "notes": "'I covered most on Thursday. And definitely some on Wednesday, too. Mainly covered at the the weekly EMAs' (30:00-30:13); 'some of them on Wednesday and then Thursday I covered the most' (31:10-31:22). Partial cover of the short book; tickers never named. Cover level referenced: '50 weekly EMA on on Russell' (30:13-30:39) as a potential support/cover level - IWM used as the reference index, not stated as a position.",
+   "fill_timing": "Wednesday"
+  },
+  {
+   "date": "2026-10-19",
+   "ticker": "?",
+   "direction": "short",
+   "action": "exit",
+   "setup": "Covered nearly all of the short book into weakness on Thursday, at the weekly EMAs (Russell 50 weekly as the reference support); missed the Friday flush as a result.",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-10-19_3N_LunfjRC0@09:03",
+   "confidence": "stated",
+   "notes": "'just cover the shorts um into weakness. But I I covered I think nearly the most of my shorts on uh on Thursday. So, I I don't get any benefits from the Friday um flush' (09:03-09:16); 'I covered most on Thursday' (30:00); 'Thursday I covered the most' (31:22). 'Most', not all - some shorts may remain open (position_after unknown). Tickers never named. Reasons: weekly EMAs as support, and 'I'm off the desk. I'm I'm traveling ... I just tried to like cover them into the strength' (32:23-33:22) - 'strength' as captioned, context is covering into weakness.",
+   "fill_timing": "Thursday"
+  },
+  {
+   "date": "2026-10-19",
+   "ticker": "?",
+   "direction": "short",
+   "action": "exit",
+   "setup": "Covered the semiconductor short(s) near the weekly 21 EMA; says he missed a lot of further downside from Wednesday.",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-10-19_3N_LunfjRC0@31:22",
+   "confidence": "stated",
+   "notes": "'Also, Sammy's uh I covered um near the 21 weekly. Probably somewhere like somewhere here. So, I actually missed quite a lot um further downside from from Wednesday' (31:22-31:55). 'Sammy's' = semis (cf. prior decode 'Sammy' = SMH); instrument not stated (SMH/SOXX/single semis/inverse ETF). Cover day not stated - Wednesday or Thursday by context. He then cites 'this semi conductor ETF' bouncing ~15% in two sessions (34:06) as commentary, not a position.",
+   "fill_timing": ""
+  }
+ ],
+ "principles": [
+  {
+   "category": "risk",
+   "text": "Overnight gap risk after entry cannot be managed away; it is part of the game.",
+   "timestamp": "05:38"
+  },
+  {
+   "category": "sizing",
+   "text": "Small caps carry higher gap risk and lower liquidity, so he sizes them 10-20% smaller than normal as a risk premium.",
+   "timestamp": "06:12"
+  },
+  {
+   "category": "entries",
+   "text": "Gap-downs into converging anchored VWAPs (e.g. 4-week) are tradeable shorts; plain gap-down breakdowns away from those levels (e.g. DELL) he does not trade.",
+   "timestamp": "12:14"
+  },
+  {
+   "category": "short_entries",
+   "text": "For shorts, focus on weak names below their EMAs; don't short strong names that are still above key EMAs.",
+   "timestamp": "20:15"
+  },
+  {
+   "category": "market_read",
+   "text": "Short bias is set by the big-picture market structure and breadth; breadth is a pretty important indicator to him.",
+   "timestamp": "20:54"
+  },
+  {
+   "category": "short_entries",
+   "text": "After a short stops out, if the index gaps above all EMAs and holds, the reason to short no longer exists - stop re-attempting the short side.",
+   "timestamp": "24:20"
+  },
+  {
+   "category": "short_entries",
+   "text": "If a short stops out but the stock has not broken any resistance or shown strength (still below declining 21, prior breakdown high), a re-entry (e.g. hourly candle breakdown) is still valid; a QQQ close above the declining 21 is the first warning sign to stop shorting or flip long.",
+   "timestamp": "27:14"
+  },
+  {
+   "category": "exits",
+   "text": "Covers shorts at weekly EMAs used as support (e.g. Russell 50-week EMA); treats shorts as shorter swings and covers into weakness rather than trying to capture the whole move.",
+   "timestamp": "30:13"
+  },
+  {
+   "category": "posture",
+   "text": "When traveling/off the desk he reduces focus and covers shorts rather than managing them; there will be more entries if the market really turns weak.",
+   "timestamp": "32:23"
+  },
+  {
+   "category": "mindset",
+   "text": "Never try to be right or nail the entry and exit; don't treat every trade (especially shorts) as a home run - multi-month trends offer plenty of entries.",
+   "timestamp": "37:40"
+  },
+  {
+   "category": "psychology",
+   "text": "After a good run, slow down: overtrading with a cushion is behavioral slippage that hurts the next A-grade trade (death by 1,000 cuts).",
+   "timestamp": "43:17"
+  },
+  {
+   "category": "risk",
+   "text": "Uses hard stop orders placed after entry, so exits involve no hesitation or personal judgment; ignoring stops early on turned 3% losses into 5-8% outliers.",
+   "timestamp": "57:09"
+  },
+  {
+   "category": "risk",
+   "text": "Big winners never hit or even come close to the stop after entry; a stock going below the stop is a bad sign, so exit without second thoughts.",
+   "timestamp": "61:01"
+  },
+  {
+   "category": "exits",
+   "text": "Holding period for shorts depends on how fast the stock drops, not a fixed number of days.",
+   "timestamp": "63:15"
+  },
+  {
+   "category": "short_entries",
+   "text": "Best timing for pullback shorts is when the general market/index is at its own EMAs; shorting individual names at their EMAs while the market is extended has a lower success rate.",
+   "timestamp": "92:46"
+  },
+  {
+   "category": "short_entries",
+   "text": "Before shorting crypto he wants the index and Bitcoin both at resistance together, not with the stock market extended from its declining EMAs.",
+   "timestamp": "89:23"
+  },
+  {
+   "category": "risk",
+   "text": "No limit on the number of stop-outs per stock or per day.",
+   "timestamp": "93:59"
+  }
+ ],
+ "ambiguous_tickers": [
+  {
+   "timestamp": "31:22",
+   "caption_text": "Sammy's",
+   "context": "'Also, Sammy's uh I covered um near the 21 weekly' - semis short covered",
+   "guess": "SMH (semis; instrument unstated)",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "30:39",
+   "caption_text": "Russell",
+   "context": "50 weekly EMA on Russell used as the cover level for his shorts; not stated as a position",
+   "guess": "IWM",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "10:50",
+   "caption_text": "crowd",
+   "context": "'Nothing's stays off from the crowd' - reads as 'stay away from the crowd', not CRWD",
+   "guess": "? (not a ticker)",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "80:20",
+   "caption_text": "AOY / AOI / AUI",
+   "context": "viewer's short covered last Tuesday, compared with SNDK; not his trade",
+   "guess": "AAOI",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "34:06",
+   "caption_text": "this semi conductor ETF",
+   "context": "up ~15% in two sessions after the flush; commentary",
+   "guess": "SMH or SOXX",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "34:06",
+   "caption_text": "The Corning",
+   "context": "up ~30% in three-four sessions; commentary",
+   "guess": "GLW",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "34:21",
+   "caption_text": "your sister's going QCOM",
+   "context": "viewer question, garbled",
+   "guess": "QCOM",
+   "confidence": "unsure"
+  }
+ ]
+}
