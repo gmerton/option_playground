@@ -1,0 +1,3 @@
+msg_id,ticker,action,field,stated,corrected,verdict
+1450876314608337029,AEO,add,price,22.25,27.25,fixed
+1541497931738386472,GDX,reentry,price,125.5,,override

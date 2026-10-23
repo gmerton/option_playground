@@ -1,0 +1,6 @@
+msg_id,ticker,action,field,stated,corrected,verdict
+1475874906938806404,MU,exit,price,118.29,418.29,fixed
+1498469767504465961,NVDA,trim,price,118.7,218.7,fixed
+1501680692655030352,ARM,trim,price,268.03,238.03,fixed
+1539645517687164978,AMZN,reentry,price,162.16,262.16,fixed
+1554856879115472968,IWM,add,price,579.9,279.9,fixed

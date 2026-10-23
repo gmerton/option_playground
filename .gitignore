@@ -93,3 +93,7 @@ data/watchlist/universe_latest.txt
 # Study stderr/stdout captures (the curated *.log files a study cites stay committable)
 data/studies/logs/*.err
 data/studies/logs/*.stdout
+
+# Ariel Discord scrapes (paid channel content): kept local; only the derived ledger is committed
+data/ariel_hernandez/discord/live_*_raw_*.json
+data/ariel_hernandez/discord/live_*_ideas_messages.json

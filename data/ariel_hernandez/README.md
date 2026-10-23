@@ -97,3 +97,34 @@ unconfirmed) · MSFU → MSFT 2x · NVDL → NVDA 2x · poet → POET · "620 se
 
 - TraderLion long-form interview (recorded 2026-06-17, published 2026-09-13, `-dv_2h61a2o`): his full process with thresholds,
   and how it compares with the repo's AH encoding → `../traderlion/videos/interviews/2026-09-13_-dv_2h61a2o/notes.md` (2.5/5).
+
+### Discord #live-long-ideas and #live-short-ideas (MarketPulse), added 2026-10-22
+
+His live calls, posted as he trades, with exact timestamps. This is a primary source; the recap log above is his own
+retelling. Scraped from the rendered channels in a logged-in Chrome session, back to each channel's first post:
+**long 1,762 messages (2025-04-08 -> 2026-10-22), short 1,379 (2025-04-07 -> 2026-10-22), all his.**
+**The raw scrapes are local only** (gitignored: `discord/live_*_raw_*.json`, `discord/live_*_ideas_messages.json`).
+
+```
+discord/EXTRACTION_BRIEF.md                 brief the extraction agents followed (long + short sections)
+discord/{,short_}extract_N.jsonl            hand-read action rows (long 1,274, short 883); quotes machine-checked
+discord/{,short_}price_check.csv            every stated number vs that session's unadjusted range
+discord/{,short_}price_fixes.csv            typo fixes (long 5, short 1) + short_price_overrides.csv (GDX 125.50 blanked)
+discord/{,short_}bar_prices.csv             actions posted without a number, priced from the 1-min bar at the post
+discord/{,short_}actions.csv                ledger rows; price_source = stated | fixed | bar
+discord/{,short_}trades.csv                 round trips, every one with an exclude_reason if not scoreable
+discord/{,short_}trades_clean.csv           scoreable only: long 311, short 159
+```
+
+Rebuild: `run_fetch_daily_raw_polygon.py` (daily bars) -> `build_ariel_discord_ledger.py [--channel short]` ->
+`check_ariel_discord_prices.py [--channel short]` -> `run_price_ariel_discord_from_bars.py` -> build again.
+
+- **He leaves exits out.** A trade ends as "stale" after >30 days with no action, or "exit_unposted" when he re-opens on
+  a later day. Neither is scored.
+- **Bar prices** are the open of the minute he posted. Against 960 posts that do carry a price: median gap 0.10%,
+  89% within 0.5%.
+- **Stated-only prices flatter him.** Unpriced posts are mostly losing exits; adding them moved the clean long mean
+  from +1.7% to +0.8% and the win rate from 39% to 32%. `ret_stated` is a sanity check (first entry only, unsized,
+  before costs), not a score.
+- **Leveraged products are logged as themselves** (TQQQ, SOXL, SQQQ, NUGT...) with `underlying` set; the recap log
+  logs them on the underlying.

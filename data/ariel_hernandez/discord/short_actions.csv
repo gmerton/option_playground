@@ -1,0 +1,885 @@
+ts_et,ticker,underlying,direction,action,price,price_stated,price_source,size_pct,size_text,fraction_of_position,stop_text,stop_price,stop_price_stated,setup,position_after,confidence,quote,notes,msg_ids,batch
+2025-04-07 12:24:05,MSTR,,short,watch,,,,,,,,,,losing the 200sma,unknown,stated,$MSTR losing the 200sma with $BTC looks interesting,Short-side alert to members; no fill stated.,1358839762336874507,1
+2025-04-10 09:42:42,MSTR,,short,short,281.06,,bar,,some,,HOD,288,288,5min ORB,open,stated,Trying some $MSTR short 5min ORB,,1359886314790719608 1359886363029147899,1
+2025-04-10 12:08:39,MSTR,,short,trim,266,266,stated,,1/3rd,0.333,,,,,partial,stated,1/3rd trim on MSTR 266s,Partial cover of the 4/10 5min ORB short.,1359923041135624465,1
+2025-04-10 12:08:46,MSTR,,short,stop,,,,,,,flat,,,,open,inferred,Stops to flat on the remainder,Ticker from 1359923041135624465 (MSTR trim just before).,1359923070252613876,1
+2025-04-15 11:37:48,MSTR,,short,watch,,,,,,,,,,6/20 setup,unknown,stated,Watching $MSTR closely on this 6/20 setup for a possible SS. @everyone,,1361727219097010337,1
+2025-04-15 11:48:07,MSTR,,short,short,310,310,stated,,,,HOD,,,,open,stated,In MSTR short. just sub 310,He wrote 'just sub 310'; fill slightly below 310.,1361729815052288291 1361729905280155668,1
+2025-05-01 15:43:50,NVDA,,short,short,112.5,112.5,stated,10,small; only a 10% position (2% risk to HOD),,HOD,,,losing the 50sma,open,stated,Just chased a small short in $NVDA here $112.50s,Chased; said 113 was the better spot.,1367587339626348577 1367587350640590899 1367587379434754188 1367587481922441227,1
+2025-05-02 15:05:50,NVDA,,short,add,114.3,114.3,stated,,small,,HOD,,,,open,stated,Just added small to $NVDA short. 114.30. Stop remains HOD,,1367940164067790989,1
+2025-05-13 10:44:06,RGTI,,short,short,10.41,10.41,stated,,,,cover 10.80,10.8,10.8,,open,stated,$RGTI short 10.41 cover 10.80,,1371860565588185188,1
+2025-05-21 10:14:23,RGTI,,short,watch,11.85,11.85,stated,,,,12.08,12.08,12.08,lose 11.85,unknown,stated,Watching RGTI short once again if we can lose 11.85. stop would be 12.08,Trigger is a loss of 11.85.,1374752190870065242,1
+2025-05-21 13:20:15,CRWV,,short,short,105.6,105.6,stated,,,,,,,,open,stated,Short CRWV. 105.60,,1374798965572239511,1
+2025-05-22 10:11:07,CRWV,,short,add,111,111,stated,,small,,$114.50 cover spot,114.5,114.5,,open,inferred,small CRWV short $111. $114.50 cover spot,"Written as 'small CRWV short' while already short CRWV from 105.60 (5/21; 'keeping all of CRWV' later on 5/22), so logged as an add. Further adds planned on a 6/20 setup.",1375113753322065921 1375113821512794212,1
+2025-05-22 11:40:08,OKLO,,short,watch,39.5,39.5,stated,,,,HOD,,,against yesterdays highs,unknown,stated,Watching OKLO on the short side against yesterdays highs. 39.50s with HOD being the stop level,,1375136157649735770,1
+2025-05-22 11:41:07,OKLO,,short,short,39.2,,bar,,small stab,,$40 cover spot,40,40,,open,inferred,small stab here using $40 as my cover spot. adds on a 6/20 setup with market cooperation,Ticker from 1375136157649735770 (OKLO watch at 39.50s one minute earlier); no fill price stated.,1375136403603587134,1
+2025-05-22 11:49:22,QBTS,,short,short,18.56,,bar,,,,,,,,open,stated,QBTS another short here,No price stated.,1375138478471249980,1
+2025-05-22 15:56:35,QBTS,,short,cover,18.8825,,bar,,,1.0,,,,,closed,stated,exiting both QBTS and OKLO short today,Small loss; no cushion to hold overnight.,1375200692985135175,1
+2025-05-22 15:56:35,OKLO,,short,cover,39.85,,bar,,,1.0,,,,,closed,stated,exiting both QBTS and OKLO short today,Small loss; no cushion to hold overnight.,1375200692985135175,1
+2025-05-23 09:35:14,RGTI,,short,watch,13.86,13.86,stated,,,,,,,red/green,unknown,stated,RGTI watch against red/green 13.86,,1375467111199150091,1
+2025-05-23 09:39:39,RGTI,,short,short,13.58,13.58,stated,,,,red/green level,13.86,13.86,red/green,open,stated,13.58 RGTI. risk off red/green level,Stop number from the watch line 1375467111199150091 (13.86). Adds only if working.,1375468223390158909 1375467111199150091 1375468282500485272,1
+2025-05-28 09:55:54,GEO,,short,watch,,,,,,,20sma,,,,unknown,stated,Short ideas in GEO and RGTI today,,1377284251749187685 1377284306728390706,1
+2025-05-28 09:55:54,RGTI,,short,watch,,,,,,,todays highs,,,,unknown,stated,Short ideas in GEO and RGTI today,,1377284251749187685 1377284329184432310,1
+2025-05-28 11:58:09,SMR,,short,short,35.35,,bar,,some,,HOD,,,g/r spot,open,stated,Short some SMR. g/r spot. using HOD as my stop,,1377315016973488168,1
+2025-06-04 09:51:24,QBTS,,short,short,17.3,17.3,stated,,,,HOD,,,,open,stated,QBTS 17.30 short. cover HOD,,1379819836313440318,1
+2025-06-05 11:49:59,SMR,,short,watch,,,,,,,HOD,,,6/20 setup,unknown,stated,Watching SMR here 6/20 setup to the downside. risk would be HOD,,1380212066236891298,1
+2025-06-05 12:13:30,SMR,,short,short,31,31,stated,,,,10sma 31.70s,31.7,31.7,,open,stated,Short SMR 31. 10sma is my stop 31.70s,,1380217982776639519,1
+2025-06-05 12:17:38,MSFT,,short,watch,468.19,468.19,stated,,,,,,,DTSS,unknown,stated,MSFT DTSS idea,,1380219021781241906 1380219048553611264,1
+2025-06-05 12:48:11,MSFT,,short,short,467.22,,bar,,,,HOD,,,DTSS,open,stated,MSFT short stop HOD,No fill price; DTSS level posted 30 min earlier was 468.19. Confirmed held in 1380296436310081687.,1380226710183874672,1
+2025-06-05 15:16:45,MSTR,,short,watch,,,,,,,,,,DTSS,unknown,stated,MSTR DTSS triggering again here,Alert 'triggering again'; no fill stated.,1380264101967696063,1
+2025-06-05 17:24:58,SMR,,short,reentry,29.92,,bar,,some; not enough shares,,,,,,open,stated,I have some SMR short back on. laying on the bid but hard to get filled,"'back on' after the 12:13 SMR short; laying on the bid, partially filled (after hours). Holds RGTI, SMR, MSFT shorts per 1380296436310081687.",1380296368773529849 1380300086000484452,1
+2025-06-09 09:37:20,LTH,,short,watch,,,,,,,,,,,unknown,stated,LTH too thin for me,Passed: too thin to trade; 'a nice short idea'.,1381628234650615969 1381628275457130648,1
+2025-06-09 13:01:03,RGTI,,short,add,11.3729,,bar,,,,20sma,,,,open,stated,Added RGTI short. 20sma my spot for the cover,No price stated.,1381679501427343601,1
+2025-06-10 11:32:36,MSFT,,short,watch,,,,,,,HOD,,,DTSS,unknown,stated,MSFT DTSS short idea. stop HOD,"Posted as an 'idea'; he was already short MSFT from 6/5, could be an add, no fill stated.",1382019629622493394,1
+2025-06-11 11:07:22,QBTS,,short,watch,,,,,,,,,,relative weakness vs group,unknown,stated,Watching QBTS as a short idea,,1382375668645626009 1382375691143610478,1
+2025-06-11 11:33:14,QBTS,,short,short,16.9,16.9,stated,,not all of the size,,17.45,17.45,17.45,green/red level,open,stated,QBTS short green/red level 16.90. 17.45 stop,Plans to add on a break of the 20sma.,1382382176552615977 1382382375777992844,1
+2025-06-12 09:53:59,QBTS,,short,add,16.24,,bar,,,,todays highs (whole position),,,losing yesterdays lows,open,stated,Adding QBTS losing yesterdays lows. cover at todays highs on the whole position,No price stated.,1382719587195424849,1
+2025-06-16 12:30:01,RGTI,,short,short,11.9,11.9,stated,,,,HOD,,,,open,inferred,RGTI once again 11.90s with a stop at HOD,"'once again' -- may be an add to the existing RGTI short (adds on 6/9), not a fresh entry.",1384208408575737957,1
+2025-06-16 12:42:39,LOAR,,short,watch,,,,,,,,,,bearflag; relative weakness,unknown,stated,LOAR another short idea.,,1384211586314666045 1384211654002216971,1
+2025-06-18 11:41:31,RGTI,,short,watch,,,,,,,,,,,unknown,stated,Quantum names into focus on the short side,Quantum group focus list on the short side.,1384920975182663752 1384921001292468308,1
+2025-06-18 11:41:31,IONQ,,short,watch,,,,,,,,,,,unknown,stated,Quantum names into focus on the short side,Quantum group focus list on the short side.,1384920975182663752 1384921001292468308,1
+2025-06-18 11:41:31,QUBT,,short,watch,,,,,,,,,,,unknown,stated,Quantum names into focus on the short side,Quantum group focus list on the short side.,1384920975182663752 1384921001292468308,1
+2025-06-18 11:41:31,QBTS,,short,watch,,,,,,,,,,,unknown,stated,Quantum names into focus on the short side,Quantum group focus list on the short side.,1384920975182663752 1384921001292468308,1
+2025-06-18 11:48:02,OST,,short,watch,,,,,,,,,,china liquidation setup,unknown,stated,OST china liquidation setup. wash sales all the way up,Short idea; warns members to be careful.,1384922617101811733 1384922651071348867 1384922711150694522,1
+2025-06-18 13:25:40,IONQ,,short,short,38.86,,bar,,,,HOD,,,,open,stated,IONQ short using HOD as the cover,No price stated.,1384947187552616589,1
+2025-06-23 10:39:45,RGTI,,short,watch,,,,,,,,,,,unknown,stated,watching RGTI for short adds as well,Watching for short adds.,1386717371364016251,1
+2025-06-26 11:03:54,RGTI,,short,watch,,,,,,,,,,,unknown,stated,RGTI on watch as always for more adds,Watching for more short adds.,1387810614956658900,1
+2025-06-26 11:32:56,MSTR,,short,watch,392.56,392.56,stated,,,,,,,rejected key level,unknown,stated,Watching MSTR here for a short,,1387817918464528464 1387818068834517072,1
+2025-06-26 14:02:34,RGTI,,short,add,11.38,11.38,stated,,,,,,,,open,stated,Adding RGTI here 11.38,,1387855577857785878,1
+2025-06-26 14:32:14,MSTR,,short,short,385.075,,bar,,small,,,,,,open,inferred,small short idea on MSTR here,'small short idea on MSTR here' -- ambiguous between a small fill and an alert; next day he is still only 'interested' vs 392.,1387863042104098928,1
+2025-06-27 10:42:00,MSTR,,short,watch,392,392,stated,,,,,,,key level 392,unknown,stated,interested in MSTR agsint 392 as the key level,,1388167488616796240 1388167500725882952,1
+2025-07-01 14:58:45,RGTI,,short,reentry,11.44,,bar,,,,,,,,open,stated,getting repositioned in RGTI short,'getting repositioned'; no price.,1389681652950761763,1
+2025-07-09 09:56:21,RGTI,,short,short,13.455,,bar,,starter,,,,,5m ORB low,open,stated,RGTI starter on the short side,,1392504655669624914 1392504676473376819,1
+2025-07-09 15:52:08,RGTI,,short,cover,13.44,13.44,stated,,,1.0,,,,,closed,stated,covering RGTI flat here. 13.44,Flat.,1392594191263207565,1
+2025-07-10 09:38:26,RGTI,,short,short,13.335,,bar,,,,HOD,,,5min ORB break low,open,inferred,RGTI once again as a 5min ORB break low,"'RGTI once again as a 5min ORB break low' -- reads as an entry, no price stated.",1392862533248876595 1392862541868175544,1
+2025-07-10 09:48:29,AG,,short,watch,8.4,8.4,stated,,,,,,,failed breakout,unknown,stated,AG as a short watch 8.40s,,1392865065157525636 1392865112733257758,1
+2025-07-23 09:18:24,PTHL,,short,watch,,,,,,,,,,fail; unusual premarket volume,unknown,stated,eyeing PTHL for the fail today. unusual premarket volume this morning has peeked my interest. one by one these names have been collapsing,,1397568537173954770,1
+2025-08-07 09:44:04,IONQ,,short,short,39.86,,bar,,,,HOD,,,,open,stated,Short IONQ using HOD as my stop,,1403010811206565889,1
+2025-08-11 09:32:16,PLTR,,short,short,184.17,,bar,,,,HOD,,,First red day setup,open,stated,First red day setup short on PLTR. stop is HOD,,1404457395236769803,1
+2025-08-11 11:49:04,JOBY,,short,short,17.19,,bar,,,,HOD,,,6/20 setup,open,inferred,JOBY 6/20 setup here. HOD stop,'JOBY 6/20 setup here' -- read as an entry; could be an alert.,1404491820901204128,1
+2025-08-12 10:02:36,RBLX,,short,short,130.72,,bar,,,,HOD,,,short on red,open,stated,RBLX short on red. stop HOD,,1404827415749984287,1
+2025-08-15 09:36:28,QUBT,,short,short,15.13,,bar,,,,15.40,15.4,15.4,stay red on the day,open,inferred,QUBT with the idea that it stay red on the day. 15.40 stop,Entry implied (stop given); no price.,1405908004334993608,1
+2025-08-21 13:25:04,QUBT,,short,add,14.52,14.52,stated,,,,HOD (on the adds),,,,open,stated,Adding to QUBT 14.52. Those adds have a stop at HOD,,1408139861415694396,1
+2025-08-26 11:22:16,RBLX,,short,watch,,,,,,,HOD,,,move to red on the day,unknown,stated,looking for adds on RBLX here on a move to red on the day,Watching for adds.,1409920897338572811 1409920906414919760,1
+2025-08-26 11:27:15,RBLX,,short,add,124.74,124.74,stated,,,,HOD,,,,open,inferred,just added 124.74,Ticker from 1409920897338572811 (RBLX adds watch 5 min earlier).,1409922148247797862 1409920897338572811 1409920906414919760,1
+2025-09-02 11:45:02,PLTR,,short,watch,,,,,,,158.50,158.5,158.5,back to red on the day,unknown,stated,watching PLTR here if we go back to red on the day. 158.50 would be the stop,,1412463338876698684,1
+2025-09-18 15:34:31,MSTR,,short,short,348,348,stated,,,,HOD,,,,open,stated,short MSTR 348 stop HOD,,1418319296894996590,1
+2025-09-19 11:14:40,IONQ,,short,watch,,,,,,,HOD,,,6/20 setup,unknown,stated,watching IONQ on the short side today. will have to trigger a 6/20 setup and i would be using HOD as my stop,,1418616289882017975,1
+2025-09-23 11:01:16,IONQ,,short,short,74.06,,bar,,small starter,,opening print 74,74,74,opening print,open,inferred,short IONQ today using opening print as my guide for now 74. small starter,"'using opening print as my guide for now 74' -- 74 read as the opening-print guide/stop, not a fill; no fill price stated. Add spots: sub VWAP, 6/20, green to red.",1420062471762481162 1420062572832489584,1
+2025-09-23 11:10:29,IONQ,,short,stop,,,,,,,76 highs,76,76,,open,inferred,76 highs is where i'm wrong,Ticker from 1420062471762481162.,1420064788515651616,1
+2025-09-23 13:37:51,IONQ,,short,add,73.1,73.1,stated,,,,,,,,open,stated,adds to IONQ 73.10,,1420101876828999793,1
+2025-09-23 13:44:29,IONQ,,short,add,71.86,71.86,stated,,,,,,,green/red spot $72,open,inferred,71.86 adds,Ticker from 1420103329731842051 (watching IONQ at green/red 72).,1420103543657992303 1420103329731842051,1
+2025-09-23 15:58:33,IONQ,,short,cover,75.095,,bar,,,1.0,,,,,closed,stated,closing IONQ short,No price; would not hold into close unless near 72.,1420137283474165833 1420127375928197331,1
+2025-09-24 08:48:40,IONQ,,short,reentry,74.26,74.26,stated,,small starter as a place holder,,76 key level,76,76,,open,inferred,Just took a small starter as a place holder. will only add if its working,Ticker from 1420391036395589714 ('put IONQ back on today using 76 as my key level'). Premarket.,1420391487954489559 1420391515682898093 1420391036395589714,1
+2025-09-24 08:55:06,SNDK,,short,watch,,,,,,,,,,,unknown,stated,eyes on SNKD today as well,He wrote 'SNKD' (typo for SNDK).,1420393108729892874,1
+2025-09-24 09:34:48,IONQ,,short,add,73.3603,,bar,,,,,,,,open,stated,adds on IONQ and SNDK on the short side,,1420403097158553630,1
+2025-09-24 09:34:48,SNDK,,short,add,104.185,,bar,,,,,,,,open,stated,adds on IONQ and SNDK on the short side,No SNDK short entry in this channel; 1420403052875091969 says something was 'posted in the wrong channel' -- the initial SNDK short likely went to the long channel.,1420403097158553630,1
+2025-09-24 09:38:47,IONQ,,short,add,73.81,,bar,,,,,,,5min ORB,open,stated,more IONQ adds 5min ORB,,1420404100922605711,1
+2025-09-24 09:39:32,SNDK,,short,add,103.8,,bar,,,,red/green 106,106,106,red/green,open,stated,adds on SNDK,,1420404287774658672 1420404324068229162,1
+2025-09-24 09:42:58,IREN,,short,short,48,48,stated,,,,,,,,open,stated,IREN short 48,,1420405153470746757,1
+2025-09-24 10:12:00,IREN,,short,add,47.46,,bar,,,,$50,50,50,,open,stated,adding to IREN. still using $50 as my stop for now,,1420412459252191403,1
+2025-09-25 13:32:02,IREN,,short,add,46.4,46.4,stated,,another piece,,,,,,open,stated,adding another piece to IREN 46.40,,1420825188735389706,1
+2025-09-29 09:49:07,SNDK,,short,cover,107.7,107.7,stated,,,1.0,,,,,closed,stated,covered SNDK 107.70. did a terrible job covering any,,1422218639741812858,1
+2025-09-29 14:59:54,IREN,,short,cover,46,46,stated,,half,0.5,,,,,partial,stated,covering half of IREN 46,,1422296851838800026,1
+2025-09-29 15:26:32,MSTR,,short,add,324.31,324.31,stated,,30% to my MSTR short,,10/20sma,,,,open,stated,Adding 30% to my MSTR short from 348. 10/20sma will be my cover spot on half of my position + my covers on these adds if i am wrong.,Adds to the 348 short; 10/20sma is the cover on half the position plus these adds.,1422303554995224801 1422303570128142386,1
+2025-09-30 10:53:21,IREN,,short,cover,46.84,46.84,stated,,,1.0,,,,,closed,stated,out of IREN 46.84,,1422597192987971584,1
+2025-09-30 11:27:18,RGTI,,short,short,29.82,29.82,stated,,,,HOD,,,adds on green/red and break of opening print,open,stated,short RGTI 29.82. Looking for adds on a Green/red move and break of the opening print,,1422605735266746439 1422605759098785874,1
+2025-09-30 12:09:00,RGTI,,short,add,29.57,29.57,stated,,,,,,,,open,stated,adding RGTI 29.57,,1422616230199693472,1
+2025-09-30 13:01:01,IREN,,short,short,46.15,46.15,stated,,half sized,,HOD,,,,open,stated,Short half sized IREN. HOD as my stop,,1422629322681880597 1422629374804623360,1
+2025-09-30 13:42:47,RGTI,,short,add,29.19,29.19,stated,,,,,,,,open,stated,adding RGTI 29.19,,1422639830801584319,1
+2025-09-30 13:52:33,IREN,,short,cover,47.3,,bar,,,1.0,,,,,closed,stated,Done with IREN. strong market bounce,No price; strong market bounce.,1422642290509221908,1
+2025-10-01 09:36:55,MSTR,,short,cover,334.3,334.3,stated,,half,0.5,,,,,partial,stated,covering half of my MSTR,,1422940347876773990 1422940370009854002,1
+2025-10-01 09:47:54,IONQ,,short,cover,61.51,61.51,stated,,half,0.5,,,,,partial,stated,covering half of my IONQ 61.51,,1422943112333885582,1
+2025-10-01 10:16:02,RGTI,,short,cover,29.83,29.83,stated,,half,0.5,,,,,partial,stated,closing half of my RGTI 29.83,,1422950190179946507,1
+2025-10-01 11:16:08,RGTI,,short,cover,30.7,30.7,stated,,last half,1.0,,,,,closed,stated,closed the last half of RGTI 30.70,,1422965315033366699,1
+2025-10-01 11:31:58,IREN,,short,short,46.68,46.68,stated,,half size,,,,,,open,stated,half size on IREN 46.68,,1422969301031456790,1
+2025-10-01 15:48:24,IREN,,short,cover,47,47,stated,,,1.0,,,,,closed,stated,cutting IREN 47. not holding red on a short overnight,Not holding red on a short overnight.,1423033834479554580,1
+2025-10-02 09:40:03,IONQ,,short,cover,65.53,65.53,stated,,the last,1.0,,,,,closed,stated,out of the last of my IONQ 65.53,,1423303523059372145,1
+2025-10-02 10:42:52,MSTR,,short,add,349.33,,bar,,,,353/50sma (whole position),353,353,,open,stated,adding more MSTR here to my initial 348 short.,Adds to the initial 348 short; no price.,1423319329860092024 1423319387334770830,1
+2025-10-03 11:51:38,MSTR,,short,cover,353.63,353.63,stated,,,1.0,,,,,closed,stated,done with MSTR back above the 200/50sma,Back above the 200/50sma.,1423699024040427540 1423699076536598558,1
+2025-10-03 13:43:14,MSTR,,short,short,350.56,350.56,stated,,,,,,,6/20 setup at the loss of the 200sma,open,stated,short MSTR 350.56 6/20 setup at the loss of the 200sma.,,1423727109603590395,1
+2025-10-06 09:51:38,RGTI,,short,short,38.64,38.64,stated,,Half size position,,prior day highs,,,,open,stated,short RGTI against prior day highs as my stop.. Half size position 38.64,,1424755988753416233,1
+2025-10-06 12:30:19,RGTI,,short,stopped_out,40.68,40.68,stated,,,1.0,,,,,closed,stated,stop on RGTI. wont short until we have seen more group weakness,,1424795924122828811 1424795943307317361,1
+2025-10-06 14:34:01,RGTI,,short,reentry,41.54,,bar,,small starter,,,,,,open,stated,small starter on RGTI again. will only add if its working,No price; adds only if working.,1424827054171492533,1
+2025-10-07 10:37:14,RGTI,,short,short,45.4,45.4,stated,,,,,,,,open,stated,short RGTI 45.40,Unclear whether the 10/6 starter was still held; prepared to let it go to 46-48.,1425129851269943306 1425129902964998234 1425130064332324935,1
+2025-10-08 11:01:20,RGTI,,short,add,43.67,43.67,stated,,another piece,,,,,,open,stated,adding another piece to RGTI 43.67,,1425498305097498684,1
+2025-10-08 11:01:28,RGTI,,short,stop,,,,,,,yesterdays highs,46.18,46.18,,open,inferred,adjusting hard stop to 46.18 yesterdays highs,Ticker from 1425498305097498684. 'hard stop'.,1425498340753408061,1
+2025-10-14 14:39:50,UAMY,,short,add,17.54,17.54,stated,3,another 3% add,,over most recent consolidation 18.50,18.5,18.5,,open,stated,another 3% add to UAMY 17.54 short,Initial UAMY short not posted as text (1427651611404275843 is an image-only message).,1427727621860491316 1427727722615935036,1
+2025-10-15 09:34:32,RGTI,,short,watch,,,,,,,,,,stay red today,unknown,stated,watching RGTI if we stay red today,,1428013176791892121,1
+2025-10-15 09:39:20,RGTI,,short,short,56.1,56.1,stated,3,small starter 3%,,,,,,open,stated,small RGTI starter 3% once again,Price from the following line 1428014419048402995.,1428014383115534480 1428014419048402995,1
+2025-10-15 09:48:47,RGTI,,short,add,55.45,55.45,stated,,small add,,,,,,open,stated,small add to RGTI 55.45,,1428016762930204774,1
+2025-10-15 13:14:54,UAMY,,short,cover,13.03,13.03,stated,,a third of my shares,0.333,,,,,partial,stated,covering a third of my shares 13.03 UAMY,,1428068634374312037,1
+2025-10-15 13:16:57,RGTI,,short,cover,51.05,51.05,stated,,a third,0.333,,,,,partial,stated,covering a third of RGTI 51.05,,1428069149174927451,1
+2025-10-16 10:00:55,UAMY,,short,cover,12.12,12.12,stated,,"another third (of what is left, not of original)",0.333,,,,,partial,stated,covering another third of UAMY 12.12,,1428382204727263283 1428382319084835060 1428382341142810664,1
+2025-10-16 12:35:34,NUGT,GDX,short,short,185.85,185.85,stated,3,starter 3% position,,,,,,open,stated,starter short in NUGT. 3% position,NUGT = 2x gold miners (GDX); shorting it.,1428421121539178700 1428421196407505008,1
+2025-10-16 14:16:41,NUGT,GDX,short,add,183.97,183.97,stated,3,small 3% add,,,,,,open,inferred,183.97 small 3% add.,Ticker from 1428446023440662549 ('Under 184 I will add a small piece to NUGT').,1428446570159931514 1428446023440662549,1
+2025-10-17 14:16:50,SQQQ,QQQ,long,trim,14.91,14.91,stated,,1/3rd,0.333,,,,,partial,stated,trimming 1/3rd of my SQQQ long 14.91. .20 loss,SQQQ held LONG = short QQQ exposure. .20 loss on the trim. Entry not in this batch.,1428808996529242144,1
+2025-10-20 12:26:54,SNDK,,short,short,149.31,149.31,stated,3,3% position,,,,,,open,stated,Short a 3%  position in SNDK 149.31,WDC STX MU as guides; adds only once working.,1429868493716586698 1429868564608712734,1
+2025-10-20 13:28:30,NUGT,GDX,short,add,166.1,166.1,stated,,adding 2k shares to 7600 shares,,,,,,open,stated,adding NUGT short here 166.10 just,,1429883997130985594 1429884250324467752,1
+2025-10-21 12:55:01,SNDK,,short,add,147.11,147.11,stated,,small add; only a 5% position now,,,,,,open,stated,small add to SNDK short,5% is the total position after the add.,1430237955514957875 1430237979879805048 1430238011605651576,1
+2025-10-21 13:57:38,NUGT,GDX,short,cover,136.08,136.08,stated,,a third,0.333,,,,,partial,stated,Covered a third of my NUGT 136.08,,1430253716304560138,1
+2025-10-22 09:05:44,NUGT,GDX,short,cover,127.15,127.15,stated,,a piece; down to half of my original size,0.25,,,,,partial,stated,covered a piece of NUGT. down to half of my original size. 127.15/127.28,Two fills 127.15/127.28. 2/3 -> 1/2 of original = 0.25 of current.,1430542644945354874,1
+2025-10-22 09:30:39,RGTI,,short,cover,39.1,39.1,stated,,some; a third left of my original,0.5,,,,,partial,stated,covered some RGTI 39.10,2/3 -> 1/3 of original = 0.5 of current.,1430548916054786058 1430548957674737735,1
+2025-10-22 09:36:38,SNDK,,short,stopped_out,152.2,,bar,,,1.0,,,,,closed,stated,SNDK stopped short,No price.,1430550421499547809,1
+2025-10-22 09:37:15,NUGT,GDX,short,cover,135.66,135.66,stated,,more; down to a third left,0.333,,,,,partial,stated,135.66 more NUGT covered,1/2 -> 1/3 of original = 0.333 of current.,1430550575816376370 1430550604614340698,1
+2025-10-22 10:18:09,SNDK,,short,watch,,,,,,,,,,below VWAP,unknown,stated,will eye SNDK once again below VWAP,,1430560868659101736,1
+2025-10-22 10:21:36,SNDK,,short,reentry,154.0701,,bar,3,3% starter,,HOD,,,below VWAP,open,inferred,3% starter using HOD,Ticker from 1430560868659101736. No price.,1430561738109227048 1430560868659101736,1
+2025-10-22 10:31:34,SNDK,,short,add,148.67,,bar,3,3% add,,,,,,open,stated,3% add to SNDK,,1430564246453878784,1
+2025-10-22 11:22:59,NVDA,,short,short,179.2,179.2,stated,5,5%,,HOD,,,,open,inferred,5% short NVDA stop HOD 179.20,'5% short NVDA stop HOD 179.20' -- 179.20 read as the fill (half covered next day at 181.87 with stop at yesterday's HOD still live); could be the HOD stop level.,1430577185344852021,1
+2025-10-22 14:22:23,RGTI,,short,cover,35.07,35.07,stated,,the last,1.0,,,,,closed,stated,closed the last of RGTI 35.07,,1430622333000745101,1
+2025-10-22 14:23:47,NUGT,GDX,short,cover,134.46,134.46,stated,,the last,1.0,,,,,closed,stated,covered the last of my NUGT 134.46,,1430622684626026647,1
+2025-10-22 14:29:23,UAMY,,short,cover,11.98,11.98,stated,,down to a third of my original,0.25,,,,,partial,stated,down to a third of my original UAMY short 11.98 cover,After two third-covers he held 4/9 of original; -> 1/3 of original = 0.25 of current.,1430624093639540787,1
+2025-10-22 15:00:46,UAMY,,short,cover,13.04,13.04,stated,,the last,1.0,,,,,closed,stated,covered the last of my UAMY,,1430631988955713629 1430632015669235732,1
+2025-10-23 10:39:51,NVDA,,short,cover,181.87,181.87,stated,,half,0.5,,,,,partial,stated,covering half of my NVDA 181.87,,1430928718678720584,1
+2025-10-23 10:40:34,NVDA,,short,stop,,,,,,,yesterdays HOD (on the last),,,,open,inferred,the stop on the last is yesterdays HOD,Ticker from 1430928718678720584.,1430928896454295603,1
+2025-10-23 12:26:28,RGTI,,short,short,39.34,39.34,stated,3,,,42 for now,42,42,,open,stated,3% RGTI short 39.34,,1430955547372290049 1430955570579509378 1430955584294752267,1
+2025-10-23 15:13:06,NVDA,,short,cover,182.98,182.98,stated,,the last,1.0,,,,,closed,stated,cutting the last of my NVDA. small loss 182.98,Small loss.,1430997481809903717,1
+2025-10-24 09:36:18,RGTI,,short,cover,42.63,42.63,stated,,,1.0,,,,,closed,stated,cut my RGTI 42.63,,1431275111041728522,1
+2025-10-24 09:43:23,RGTI,,short,reentry,41.96,41.96,stated,3,3% starter,,43,43,43,fail against 42,open,inferred,taking my 3% starter using 43 as my stop 41.96,Ticker from 1431275111041728522/1431275180855918634 (RGTI cut minutes earlier).,1431276896397561876 1431275180855918634,1
+2025-10-27 11:54:01,IREN,,short,short,63.03,63.03,stated,3,3% position,,HOD,,,,open,stated,Short IREN 63.03 3% position. will look to add on pops. HOD is my stop,,1432396934668226570,1
+2025-10-28 09:36:44,IREN,,short,add,64.94,64.94,stated,3,,,66.50,66.5,66.5,,open,stated,adding IREN 64.94,,1432724770809581588 1432724776564166697 1432724827554316298,1
+2025-10-28 09:58:54,RGTI,,short,watch,40.05,40.05,stated,,,,,,,sub VWAP + 6/20 setup,unknown,stated,watching RGTI for some possible adds sub 40.05,Watching for adds to the existing RGTI short.,1432730349321982002 1432748935176261662,1
+2025-10-28 12:04:40,IREN,,short,cover,66.56,66.56,stated,,,,,,,,unknown,inferred,cutting IREN 66.56,"'cutting IREN' at the 66.50 stop; next day he 'adds' and on 10/31 calls IREN his biggest position, so this may have been only the adds.",1432762002316464148 1432762045056553141,1
+2025-10-29 09:32:37,IREN,,short,add,62.1,62.1,stated,3,adding 3%,,,,,red/green spot,open,stated,adding IREN using the red/green spot 62.10,Written as an add although IREN was 'cut' 10/28; may be a re-entry.,1433086124481445981 1433086144496537641,1
+2025-10-29 12:10:14,OKLO,,short,watch,,,,,,,20sma,,,against the 20sma,unknown,stated,watching OKLO for a short against the 20sma,,1433125791046045707,1
+2025-10-29 13:27:07,OKLO,,short,short,142.36,142.36,stated,,2.5% risk,,145+,145,145,,open,stated,short OKLO 142.36,,1433145137177034973 1433145226914173090,1
+2025-10-29 15:33:29,OKLO,,short,add,144.9,,bar,3,tagged back some OKLO 3% size,,152 hard stop,152,152,,open,inferred,tagged back some OKLO 3% size. will add tomorrow if it's working,'tagged back' -- read as an add to the OKLO short; no price.,1433176938142240808 1433176966751588362,1
+2025-10-29 15:33:50,SMR,,short,watch,,,,,,,todays highs 44.50,44.5,44.5,,unknown,stated,SMR another option using today s highs 44.50,,1433177025962705008,1
+2025-10-30 09:49:26,SNDK,,short,short,200.88,200.88,stated,3,3% position,,205.64 for now,205.64,205.64,,open,stated,short SNDK 200.88 using 205.64 as my stop for now,,1433452743582023762 1433452809436528660,1
+2025-10-30 10:51:14,OKLO,,short,add,142.76,142.76,stated,,,,at my average,,,,open,stated,adding to OKLO 142.76,,1433468297650765844 1433468324561551503,1
+2025-10-30 11:49:32,SNDK,,short,add,198.18,198.18,stated,,added small; its a 6% position,,,,,,open,stated,added small SNDK 198.18,6% is total after the add.,1433482967673475072 1433483003887095959,1
+2025-10-30 15:41:42,RGTI,,short,cover,41.99,41.99,stated,,,1.0,,,,,closed,stated,closing RGTI at  flat 41.99,Flat; won't hold overnight.,1433541393128755271 1433541501354508358,1
+2025-10-31 09:36:04,SNDK,,short,cover,206.69,206.69,stated,,,1.0,,,,,closed,stated,206.69 exit on SNDK.,,1433811769545068666,1
+2025-10-31 09:52:39,SNDK,,short,reentry,200.03,,bar,3,3% size,,$8 stop,,,First red day setup,open,stated,I’m a glutton for punishment. 3% size with a $8 stop on SNDK,"$8 is the stop width, not a level. No price.",1433815941585698877 1433816265717448825,1
+2025-10-31 12:16:16,IREN,,short,watch,61,61,stated,,,,,,,rejects 61,unknown,stated,If the market stays heavy and IREN rejects 61 I would be comfortable adding a small amount,Conditional small add to his biggest position if the market stays heavy.,1433852085765672960 1433852123489239222,1
+2025-11-03 10:38:10,IREN,,short,cover,68.51,68.51,stated,,a third,0.333,,,,,partial,stated,covered a third of my IREN loss 68.51,At a loss; 6/20 intraday to tail the rest.,1434929660696858624 1434929722697056346,1
+2025-11-03 12:45:26,IREN,,short,cover,65.04,65.04,stated,,another third,0.333,,,,,partial,inferred,covered another third of my IREN short 65.04,'another third' -- of remaining assumed (his UAMY convention).,1434961686757904400,1
+2025-11-03 12:51:21,OKLO,,short,cover,126.61,126.61,stated,,a half,0.5,,,,,partial,stated,covered a half of my OKLO 126.61,,1434963177187049513,1
+2025-11-03 13:00:42,IREN,,short,cover,67.18,67.18,stated,,the last,1.0,,,,,closed,stated,closed the last of IREN short 67.18,,1434965530942509066,1
+2025-11-03 13:04:36,SNDK,,short,cover,205.11,205.11,stated,,,1.0,,,,,closed,stated,closing SNDK 205.11,,1434966511789019248 1434966566369366170,1
+2025-11-04 10:55:00,IREN,,short,short,69.72,69.72,stated,3,,,72.50,72.5,72.5,,open,stated,3% short 69.72,Ticker on the following line 1435296291713318922.,1435296282947358850 1435296291713318922 1435296395635462366,1
+2025-11-04 11:50:32,IREN,,short,add,68.76,68.76,stated,,small add,,remains the same (72.50),72.5,72.5,,open,stated,small add to IREN 68.76,,1435310260553253025 1435310280975581375,1
+2025-11-04 12:11:46,RGTI,,short,short,37.73,37.73,stated,5,,,HOD,,,,open,stated,short RGTI 37.73 stop HOD 5% position,,1435315603207618671,1
+2025-11-05 09:58:06,CIFR,,short,short,25.06,25.06,stated,5,,,HOD,,,DTSS (level 25.11),open,stated,short 5% CIFR 25.06,,1435644350288761044 1435644357767073942 1435644449085718609,1
+2025-11-05 10:59:46,IREN,,short,cover,72.86,72.86,stated,,,1.0,,,,,closed,stated,closed IREN 72.86,At/through the 72.50 stop.,1435659871100862534,1
+2025-11-05 12:53:42,IREN,,short,watch,,,,,,,,,,yesterdays highs; pull like CIFR,unknown,stated,watching IREN at yesterdays highs to see if we pull like CIFR,,1435688544977817650,1
+2025-11-05 14:41:55,RGTI,,short,cover,37.5899,,bar,,,1.0,,,,,closed,stated,out of RGTI. Flat trade,Flat; flat level stated as 37.70 in 1435713652408979650.,1435715778539425882 1435713652408979650,1
+2025-11-05 16:10:07,RGTI,,short,short,37.5,37.5,stated,,<3% position,,after hours highs,,,IONQ sympathy,open,stated,short RGTI as IONQ sympathy 37.50,After hours; liquidity limited.,1435737973143638189 1435738101166112799 1435738730529820776,1
+2025-11-05 16:41:10,RGTI,,short,cover,38.14,38.14,stated,,,1.0,,,,,closed,inferred,took the exit. but still eyeing with IONQ failure 38.14,Ticker from 1435737973143638189 (after-hours RGTI short).,1435745785995329728,1
+2025-11-06 09:08:50,RGTI,,short,watch,,,,,,,,,,trade off IONQ/QBTS weakness,unknown,stated,those are the focus to trade RGTI,,1435994341293162629 1435994313979985990,1
+2025-11-06 14:04:05,IONQ,,short,watch,,,,,,,,,,,unknown,stated,watching IONQ closely for a short as well,,1436068644927836222,1
+2025-11-06 14:16:48,IONQ,,short,short,57.22,57.22,stated,3,3% short for now,,room to 59; 3% stop,59,59,,open,stated,short IONQ 57.22,,1436071845391630357 1436071900781477948 1436071958537175081 1436072168122355843,1
+2025-11-07 09:42:26,OKLO,,short,cover,99.52,99.52,stated,,a third of my remaining,0.333,,,,into support gap,partial,stated,covered a third of my OKLO remaining into this support gap,,1436365184124850308 1436365202319872182,1
+2025-11-07 09:52:53,CIFR,,short,cover,20.38,20.38,stated,,a third,0.333,,,,,partial,stated,covered a third of CIFR 20.38,,1436367813836144681,1
+2025-11-07 09:58:40,SNDK,,short,short,228,228,stated,3,starter; 3% position,,,,,,open,stated,228 starter in SNDK,,1436369268915830905 1436369368769499166,1
+2025-11-07 10:03:54,SNDK,,short,add,223.73,,bar,2,2% add,,228,228,228,,open,stated,2% add to SNDK,,1436370589429272627 1436370617346818208,1
+2025-11-07 10:27:46,RGTI,,short,cover,33.33,33.33,stated,,a third,0.333,,,,,partial,stated,covering a third of my RGTI 33.33,,1436376592904491008,1
+2025-11-07 10:39:09,IONQ,,short,add,52.68,52.68,stated,,doubling my IONQ position,,flat on the whole position ($55),55,55,,open,stated,doubling my IONQ position 52.68,Average 54.95.,1436379456276136026 1436379526967066734 1436379670261268541 1436379687374028990,1
+2025-11-07 13:37:10,IONQ,,short,add,54.37,54.37,stated,,,,HOD (full stop),,,,open,stated,adding to IONQ here 54.37,,1436424256849445015 1436424283797590090,1
+2025-11-07 14:34:50,IONQ,,short,cover,55.87,55.87,stated,,half,0.5,,,,,partial,stated,closed half of my IONQ 55.87,,1436438768071479346,1
+2025-11-07 14:57:25,RGTI,,short,cover,33.285,,bar,,another third,0.333,,,,50sma reclaim,partial,stated,covering another third of my RGTI on the 50sma reclaim,No price.,1436444452326604843,1
+2025-11-07 14:58:44,IONQ,,short,cover,57.71,57.71,stated,,,1.0,,,,,closed,stated,closed IONQ 57.71,Green trade went red.,1436444783705854054 1436444836306620599,1
+2025-11-07 14:59:46,SNDK,,short,cover,229.41,229.41,stated,,,1.0,,,,,closed,stated,closed SNDK 229.41,,1436445042985140325,1
+2025-11-07 15:07:46,IONQ,,short,watch,,,,,,,10sma,,,go red on the day,unknown,stated,watching IONQ to see if we go red on the day,,1436447056481747046 1436447086513230006,1
+2025-11-07 15:19:00,IONQ,,short,reentry,57.29,57.29,stated,,adding back,,,,,,open,stated,adding back to IONQ,,1436449884889677865 1436449925117251624,1
+2025-11-07 15:59:24,CIFR,,short,cover,20.7,20.7,stated,,another third,0.333,,,,,partial,inferred,taking off another third of my CIFR at the close,'another third' -- of remaining assumed.,1436460050779738176 1436460073852604510,1
+2025-11-07 16:13:20,RGTI,,short,cover,34.67,34.67,stated,,another third,0.333,,,,,partial,inferred,just covered another third of my RGTI 34.67,'another third' -- of remaining assumed.,1436463558878822480,1
+2025-11-11 09:52:33,SNDK,,short,short,264.12,264.12,stated,3,,,270.92,270.92,270.92,,open,stated,short SNDK 264.12,,1437817281005621278 1437817368683352205 1437817454108872714,1
+2025-11-11 11:14:44,SNDK,,short,stopped_out,268.96,,bar,,,1.0,,,,,closed,stated,stopped on SNDK,No price; stop was 270.92.,1437837965228249180,1
+2025-11-11 11:53:16,SNDK,,short,reentry,268.28,268.28,stated,3,,,,,,270.91 level being rejected,open,stated,in SNDK once again 268.28,,1437847661339476078 1437847678288396349 1437847198825054320,1
+2025-11-11 15:54:54,SNDK,,short,cover,270.8,270.8,stated,,,1.0,,,,,closed,stated,cutting SNDK near flat. Not going to sit in red overnight 270.80,Near flat; won't sit red overnight.,1437908470853795922,1
+2025-11-12 09:20:08,SNDK,,short,short,270.59,270.59,stated,,tiny start,,,,,,open,stated,270.59 tiny start in SNDK to keep it on the radar,,1438171512002580491,1
+2025-11-12 09:36:34,SNDK,,short,add,275.16,275.16,stated,,only have a 3% position,,,,,,open,inferred,275.16 add,Ticker from 1438171512002580491.,1438175647439650948 1438175674098520220,1
+2025-11-12 09:48:17,SNDK,,short,add,275.28,275.28,stated,,5% position at the moment,,,,,established high of 280.57,open,inferred,275.28 adds,Ticker from 1438178433094914230.,1438178597939581059 1438178433094914230 1438178615492612250,1
+2025-11-12 12:41:08,SNDK,,short,cover,281,281,stated,,half,0.5,,,,,partial,stated,reducing half of SNDK here. 281,,1438222097351704807 1438222143824330844,1
+2025-11-12 12:55:23,OPEN,,short,short,8.47,8.47,stated,2.5,small 2.5% position,,10/28 highs,,,DTSS,open,stated,8.47 OPEN short,8.55 in 1438225920442765445 is the DTSS level (or a second fill).,1438225682336583720 1438225787001110599 1438225920442765445,1
+2025-11-12 13:33:58,SNDK,,short,cover,283.445,,bar,,,1.0,,,,,closed,stated,out of SNDK.,No price.,1438235392015994880,1
+2025-11-12 14:34:20,STX,,short,watch,,,,,,,,,,sub VWAP and pressure,unknown,stated,STX WDC are doing what they are supposed too. Sub VWAP and pressure interest me. otherwise hands off,,1438250585466863826,1
+2025-11-12 14:34:20,WDC,,short,watch,,,,,,,,,,sub VWAP and pressure,unknown,stated,STX WDC are doing what they are supposed too. Sub VWAP and pressure interest me. otherwise hands off,,1438250585466863826,1
+2025-11-12 15:33:52,CIFR,,short,cover,17.44,17.44,stated,,a third of my remaining,0.333,,,,,partial,stated,covering a third of my remaining CIFR shares 17.44,,1438265564421161062,1
+2025-11-12 15:42:45,RGTI,,short,cover,28.36,28.36,stated,,a third,0.333,5 and 10sma on the rest,,,,partial,stated,locking in a third of my RGTI into this weakness. nice 25% fade in 5 days. will use the 5 and 10sma as my guide on the rest,,1438267802304905229 1438267819274801202,1
+2025-11-12 15:44:37,CIFR,,short,stop,,,,,,,todays highs for more covers; 10sma 20.60 for the last piece,20.6,20.6,,open,stated,will use todays highs as my guide for more covers on CIFR and then the 10sma 20.60 for the last piece,,1438268271219707914,1
+2025-11-13 09:45:13,CIFR,,short,cover,15.88,15.88,stated,,25% of my remaining,0.25,,,,,partial,stated,covering 25% of my remaining CIFR 15.88,,1438540213365243975,1
+2025-11-13 09:47:42,CIFR,,short,stop,,,,,,,limit order on half of remaining 17.30,17.3,17.3,,open,inferred,setting a limit order on half of my remaining shares 17.30,Ticker from 1438540213365243975. Resting buy-to-cover on half the remaining shares in case of a 50sma bounce.,1438540839264587920 1438540901415784458,1
+2025-11-13 12:19:37,CIFR,,short,cover,15.53,15.53,stated,,another 25% of my remaining,0.25,,,,,partial,stated,Just covered another 25% of my remaining CIFR into this weakness 15.53,8k of original 44k shares left after this.,1438579066801361008 1438579666859458811,1
+2025-11-14 07:33:43,CIFR,,short,cover,13.3,13.3,stated,,another piece,,,,,,partial,stated,13.30 just covered another piece of CIFR. Will continue to pay myself on the way down.,,1438869506012217474,1
+2025-11-14 07:47:12,CIFR,,short,cover,12.88,12.88,stated,,more covers; 3k shares left,,,,,,partial,inferred,12.88 more covers,Ticker from 1438869506012217474 (CIFR covers 4 min earlier).,1438872900030693418 1438873222430064652,1
+2025-11-14 07:55:12,RGTI,,short,cover,23.28,23.28,stated,,more covers; Done with 90% of my shares,,,,,,partial,stated,23.28 more covers on RGTI. Done with 90% of my shares,,1438874912709284000,1
+2025-11-14 07:56:15,OKLO,,short,cover,93.06,93.06,stated,,piece,,,,,,partial,stated,93.06 piece of OKLO covered as well,,1438875178707718317,1
+2025-11-17 10:05:14,TSM,,short,short,284.05,284.05,stated,5,,,HOD/ 50sma,,,,open,stated,short TSM 284.05 5% position,,1439994800622272513 1439994834315378870,1
+2025-11-17 13:51:46,SNDK,,short,short,267.53,267.53,stated,3,,,,,,,open,stated,SNDK 3% short 267.53,,1440051810025996531,1
+2025-11-18 09:36:03,SNDK,,short,add,252.66,252.66,stated,3,,,HOD on those adds,,,,open,stated,added to my SNDK 252.66,,1440349845394165901 1440349894870302900,1
+2025-11-18 10:18:45,NFLX,,short,short,112.04,112.04,stated,3,,,200sma,,,,open,stated,NFLX short 112.04 3% position. 200sma is my stop,,1440360590253228186,1
+2025-11-18 11:57:31,NFLX,,short,stop,,,,,,,cover if it can't reject 113.20s,113.2,113.2,,open,inferred,watching NFLX here 113.20s,Conditional cover level.,1440385447942684672 1440385491265519616,1
+2025-11-18 12:58:08,NFLX,,short,cover,113.46,113.46,stated,,,1.0,,,,,closed,stated,covered NFLX 113.46,,1440400702471143567,1
+2025-11-19 09:35:10,NFLX,,short,reentry,112.01,112.01,stated,3,,,200sma,,,,open,stated,3$% position back on NFLX 112.01,He wrote '3$%'.,1440712009338585232 1440712079291191568,1
+2025-11-19 10:17:51,TSM,,short,cover,283.48,,bar,,,1.0,,,,,closed,stated,cut TSM for flat,Flat; no price.,1440722752171675749,1
+2025-11-19 10:54:29,TSM,,short,reentry,282.48,282.48,stated,5,,,todays HOD,,,,open,stated,Just stuck TSM back on with a 5% position,,1440731969469153452 1440731998170779648 1440732020669026518,1
+2025-11-19 15:59:24,TSM,,short,cover,282.5,,bar,,,1.0,,,,,closed,stated,Closed TSM at flat again,Flat again; no price; not holding into NVDA earnings.,1440808705808666624,1
+2025-11-20 10:05:51,NFLX,,short,add,108.28,108.28,stated,2,adding 2%,,,,,,open,stated,adding 2% to my NFLX 108.28,Targeting ~10% of portfolio in NFLX short.,1441082118523584522 1441082175322849390,1
+2025-11-20 10:50:04,IREN,,short,short,52.59,52.59,stated,3,,,,,,rejecting the 50sma,open,inferred,Adding IREN 52.59 as as Shot rejecting the 50sma,Written 'Adding IREN' but the prior IREN short closed 11/5 at 72.86; logged as a new short.,1441093246297178153 1441093255184777226,1
+2025-11-20 11:00:19,NFLX,,short,add,109.25,109.25,stated,3,,,,,,,open,stated,adding 3% to NFLX,,1441095828474429705 1441095889648095423,1
+2025-11-20 15:52:15,SNDK,,short,cover,195.06,195.06,stated,,half,0.5,,,,,partial,stated,covered half of my SNDK here. Wonderful trade 195.06,,1441169293361414174,1
+2025-11-21 11:52:22,IREN,,short,cover,42.71,42.71,stated,,a third,0.333,,,,,partial,stated,covered a third of IREN 42.71,,1441471312903012473,1
+2025-11-24 09:42:21,IREN,,short,cover,45.58,45.58,stated,,another third,0.333,,,,,partial,inferred,covering another third of my IREN 45.58,'another third' -- of remaining assumed.,1442525757980147843,1
+2025-11-24 09:42:26,IREN,,short,stop,,,,,,,flat on the rest,,,,open,inferred,stop at flat on the rest,Ticker from 1442525757980147843.,1442525780264616008,1
+2025-11-24 13:32:03,SNDK,,short,add,225.98,225.98,stated,,a third of my SNDK covers,,228,228,228,,open,stated,adding back a third of my SNDK covers on. 225.98,Re-adding a third of covered shares; 228 also triggers more covers of the 260 shares.,1442583562128855102 1442583671726145783,1
+2025-11-24 15:55:39,SNDK,,short,cover,227.71,227.71,stated,,closed my SNDK adds,,,,,,partial,stated,closed my SNDK adds,Exit of the 225.98 add tranche.,1442619702567243877,1
+2025-11-24 17:18:23,SNDK,,short,cover,246.14,246.14,stated,,the last,1.0,,,,,closed,stated,closed the last of my SNDK 246.14 S&P 500 addition,S&P 500 addition news.,1442640520349487275 1442640540192473220,1
+2025-11-25 14:21:01,CIFR,,short,add,17,17,stated,3,,,HOD,,,,open,stated,Added 3% position to CIFR 17,,1442958272444366909 1442958305843609611,1
+2025-11-25 15:32:10,CIFR,,short,stopped_out,17.64,,bar,,adds,,,,,,partial,stated,Stopped on CIFR adds. 17.56-$18 is what i would need to see fail for me to consider adding back.,Stopped on the adds only; no price.,1442976181950611698 1442976227928576200,1
+2025-11-26 09:51:01,CIFR,,short,cover,19.07,19.07,stated,,the last,1.0,,,,,closed,stated,covered the last of my CIFR 19.07,,1443252714082664448,1
+2025-12-01 14:24:04,NFLX,,short,add,108.57,108.57,stated,3,,,20sma,,,,open,stated,adding 3% position to NFLX 108.57,,1445133371259883561 1445133387147907243,1
+2025-12-02 11:30:50,INTC,,short,short,42.42,42.42,stated,5,,,HOD,,,DTSS,open,stated,short INTC as a DTSS setup,,1445452161281560597 1445452267045130311 1445452290214592542,1
+2025-12-02 15:36:29,INTC,,short,stopped_out,43.5,43.5,stated,,,1.0,,,,,closed,inferred,INTC just too strong to hold into the close. 43.50stop. will deal with it tomorrow if we start to pull back below 42.50,'43.50stop' -- read as exited at the 43.50 stop; too strong to hold into the close.,1445513983238078496,1
+2025-12-04 14:22:55,QUBT,,short,short,12.91,12.91,stated,,,,todays highs/200sma,,,,open,stated,Short QUBT 12.91 using todays highs/200sma as my guide,,1446220242589188166,1
+2025-12-04 15:29:16,QUBT,,short,cover,13.6,13.6,stated,,,1.0,,,,,closed,stated,cut QUBT 13.60,,1446236942835384321,1
+2025-12-04 15:29:25,RGTI,,short,cover,29.9,29.9,stated,,,1.0,,,,,closed,stated,cut RGTI 29.90,Remainder of the RGTI short (90% covered by 11/14).,1446236978734432366,1
+2025-12-04 15:29:37,OKLO,,short,cover,113.72,113.72,stated,,,1.0,,,,,closed,stated,cut OKLO 113.72,,1446237029460480000,1
+2025-12-04 15:35:16,IREN,,short,cover,46.37,46.37,stated,,half of my remaining,0.5,,,,,partial,stated,cutting half of my remaining IREN 46.37,,1446238451916734645,1
+2025-12-05 09:32:40,QUBT,,short,short,13.22,13.22,stated,3,,,HOD,,,,open,stated,Short QUBT 13.22 stop HOD. 3% position and looking to add,,1446509588709904438,1
+2025-12-08 14:38:11,NFLX,,short,cover,96.88,96.88,stated,,20%,0.2,,,,,partial,stated,covering 20% of my NFLX 96.88,,1447673637162320098,1
+2025-12-09 11:17:46,IREN,,short,cover,48.76,48.76,stated,,the last,1.0,,,,,closed,stated,48.76 closed the last of my IREN short.,,1447985587863683113,1
+2025-12-11 10:09:16,NFLX,,short,cover,94,94,stated,,another 30% of my original; down to half of my original position,0.375,,,,,partial,stated,cover another 30% of my original NFLX shares at 94,80% -> 50% of original = 0.375 of current.,1448693126989484164 1448693222992908478,1
+2025-12-11 11:43:42,QUBT,,short,cover,12.62,12.62,stated,,half,0.5,,,,,partial,stated,covering half of QUBT 12.62,,1448716891928400046,1
+2025-12-16 12:59:44,AEO,,short,short,26.96,26.96,stated,2,2%; building to 5-7%,,,,,11x ATR from the 50sma,open,stated,Short 2% AEO. Plenty of liquidity but i will add in a few pieces to get up to a 5-7% position,,1450547963972681838 1450547985728540786 1450548175134789704,1
+2025-12-16 13:02:10,AEO,,short,add,26.85,26.85,stated,,more,,,,,,open,inferred,adding more 26.85,Ticker from 1450547963972681838.,1450548576815157470,1
+2025-12-16 13:21:09,AEO,,short,add,26.79,26.79,stated,,more,,,,,,open,inferred,added more 26.79,Ticker from 1450547963972681838.,1450553353611251712,1
+2025-12-16 15:58:12,AEO,,short,stopped_out,27.25,27.25,stated,,,1.0,,,,,closed,inferred,stop 27.25 AEO.,'stop 27.25 AEO. will deal with it tomorrow' -- read as stopped/exited at 27.25 before the close; he re-shorts next morning.,1450592877322309672 1450592927893033021,1
+2025-12-17 09:32:50,AEO,,short,reentry,27.26,27.26,stated,,,,,,,,open,stated,short AEO 27.26,,1450858282087485443 1450858342372081734,1
+2025-12-17 10:44:29,AEO,,short,add,27.25,22.25,fixed,,,,HOD (hard stop),,,,open,stated,adds to AEO 22.25,22.25 as written; likely a typo for 27.25 (AEO trading ~27).,1450876314608337029 1450876347705720863,1
+2025-12-17 11:36:52,AEO,,short,stopped_out,27.7101,,bar,,,1.0,,,,,closed,stated,stopped AEO for now as well.,No price.,1450889497582768290 1450889654567043294,1
+2025-12-17 12:15:56,AEO,,short,watch,,,,,,,,,,6/20 setup. VWAP break/rejection loss of LOD,unknown,stated,6/20 setup. VWAP break/rejection loss of LOD,,1450899327646957679 1450899366318440489,1
+2025-12-17 12:16:16,VSCO,,short,watch,,,,,,,,,,,unknown,stated,eyes on VSCO RL URBN etc,Apparel peers named alongside AEO.,1450899411625312441,1
+2025-12-17 12:16:16,RL,,short,watch,,,,,,,,,,,unknown,stated,eyes on VSCO RL URBN etc,Apparel peers named alongside AEO.,1450899411625312441,1
+2025-12-17 12:16:16,URBN,,short,watch,,,,,,,,,,,unknown,stated,eyes on VSCO RL URBN etc,Apparel peers named alongside AEO.,1450899411625312441,1
+2025-12-17 12:56:54,AEO,,short,watch,,,,,,,,,,6/20 triggered; sub VWAP,unknown,stated,AEO 6/20 triggered,Trigger alert; no fill stated.,1450909637040672902 1450909651075072176,1
+2025-12-18 09:46:08,SILJ,,short,short,27.56,27.56,stated,3,starter 3% position,,,,,,open,stated,starter short in SILJ 3% position 27.56,,1451224020023513128,1
+2025-12-18 10:19:37,AEO,,short,add,27.64,27.64,stated,,,,,,,break of VWAP,open,stated,adds on AEO 27.64,'adds' though last AEO short was stopped 12/17; re-entry on the 6/20 trigger not posted.,1451232445939716129 1451232470996357272,1
+2025-12-18 11:12:30,SILJ,,short,cover,28.13,28.13,stated,,,1.0,,,,,closed,stated,covered the SILJ short 28.13,,1451245752029548736,1
+2025-12-18 12:06:27,SILJ,,short,reentry,27.85,,bar,3,3% add back,,,,,,open,stated,3% add back to SILJ.,No price.,1451259328572031119 1451259370674323467,1
+2025-12-19 09:39:41,SILJ,,short,cover,28.4,28.4,stated,,half,0.5,,,,,partial,stated,covered half SILJ 28.40,,1451584783850405939,1
+2025-12-19 09:47:28,AEO,,short,add,27.88,27.88,stated,,,,,,,,open,stated,adding AEO 27.88,,1451586743076655205,1
+2025-12-19 10:18:47,SILJ,,short,cover,28.64,28.64,stated,,,1.0,,,,,closed,stated,closed SILJ  28.64,,1451594621229596913,1
+2025-12-19 15:47:03,AEO,,short,cover,27.675,,bar,,,1.0,,,,,closed,stated,Slowly covering my AEO at flat. Not going to sit with no cushion over the weekend.,"Covering at flat, slowly; no price; not holding over the weekend.",1451677234426548274,1
+2025-12-22 10:25:07,SILJ,,short,short,29.51,29.51,stated,3,,,,,,mean reversion (SLV 9.5x ATR from the 50sma),open,stated,3% short SILJ 29.51,,1452683379735531682 1452683471821471978,1
+2025-12-22 15:56:08,SILJ,,short,cover,29.51,,bar,,,1.0,,,,,closed,stated,SILJ exiting flat . can't stick around on the short with no cushion. will try again tomorrow if the metals choose to stay heavy,Exiting flat; no price.,1452766683801587772,1
+2025-12-23 09:31:17,SILJ,,short,short,29.64,29.64,stated,3,,,,,,,open,stated,Short 3% SILJ 29.64,,1453032222893543496 1453032264119095316,1
+2025-12-23 09:37:21,SILJ,,short,add,29.52,29.52,stated,,,,,,,,open,stated,adding SILJ 29.52,,1453033748005392598,1
+2025-12-23 09:44:28,SILJ,,short,add,29.48,29.48,stated,,I am in a full position,,,,,,open,inferred,adding 29.48,Ticker from 1453033748005392598.,1453035537912037529 1453035599111131312,1
+2025-12-24 07:45:25,SILJ,,short,stop,,,,,,,30.20-30 hard stop,30.2,30.2,,open,stated,"30.20-30 is my hard stop on SILJ. Traveling today , be safe trading",,1453367964807205066,1
+2025-12-31 11:21:14,SILJ,,short,add,27.95,27.95,stated,3,,,,,,,open,stated,add to SILJ 3% position 27.95,More on a break of the 20sma.,1455958995721519277 1455959031477833800,1
+2026-01-05 15:17:04,QUBT,,short,add,12.19,12.19,stated,3,,,50sma and todays highs,,,,open,stated,added QUBT short 3% add onto my existing position. 12.19 adds,,1457830280835498167 1457830324951318650,1
+2026-01-06 11:24:56,SILJ,,short,cover,29.77,,bar,,half,0.5,,,,,partial,stated,closed half of my SILJ here.,No price.,1458134253299568744,1
+2026-01-06 11:24:56,SILJ,,short,stop,,,,,,,30.20 on the rest,30.2,30.2,,open,stated,30.20 remains the stop on the rest.,,1458134253299568744,1
+2026-01-06 15:31:15,SILJ,,short,cover,30.16,30.16,stated,,the last,1.0,,,,,closed,stated,closed the last of my SILJ 30.16,,1458196239710425325,1
+2026-01-06 15:56:01,QUBT,,short,cover,12.075,,bar,,short adds from yesterday,,,,,,partial,stated,cut off my QUBT short adds from yesterday.,Exit of the 12.19 add tranche; no price.,1458202472932704446,1
+2026-01-06 15:56:01,QUBT,,short,stop,,,,,,,12.55 hard stop on the last,12.55,12.55,,open,stated,12.55 will be my hard stop on the last of my position.,,1458202472932704446,1
+2026-01-07 09:31:56,SILJ,,short,reentry,29.12,29.12,stated,3,,,yesterdays highs,,,,open,stated,back in SILJ with a 3% posiition and a stop at yesterdays highs,,1458468203427528785 1458468318162976981,1
+2026-01-07 09:33:02,QUBT,,short,add,11.715,,bar,,small add back,,50sma,,,,open,stated,Small add back to QUBT using the 50sma as the guide,,1458468478620139651,1
+2026-01-07 15:52:19,SILJ,,short,cover,29.705,,bar,,,1.0,,,,,closed,stated,closed SILJ. Will deal with it down the road. $HL the main name i'm watching for Silver Junior miner strength/weakness,No price.,1458563927788228701,1
+2026-01-08 09:51:54,SILJ,,short,short,28.92,28.92,stated,3,3%,,,,,,open,stated,SILJ 28.92 3%,looking to add if HL stays weak,1458835615197040816 1458835671639658770,2
+2026-01-08 13:06:41,APP,,short,short,612.23,612.23,stated,5,5% position,,50sma,,,,open,stated,Short 5% APP position. stop at the 50sma,price from next line,1458884635667988666 1458884658363371550,2
+2026-01-08 13:09:51,SILJ,,short,add,29.25,,bar,3,3%,,,,,,open,stated,just added 3% to SILJ short.,,1458885432539353108,2
+2026-01-08 15:25:00,SILJ,,short,trim,29.315,,bar,,Reduced my position,,,,,,partial,inferred,Reduced my position,ticker not named; silver-futures context and the open SILJ short; closed the rest at 15:57,1458919441881628806,2
+2026-01-08 15:57:56,SILJ,,short,cover,29.485,,bar,,,1.0,,,,,closed,stated,closed the last of my SILJ again,,1458927729683468310,2
+2026-01-09 10:30:45,QUBT,,short,cover,12.56,12.56,stated,,,1.0,,,,,closed,stated,closed my QUBT short. 12.56,,1459207781260464129,2
+2026-01-09 11:12:33,APP,,short,stopped_out,637.92,637.92,stated,,,1.0,,,,,closed,stated,was stopped out on APP 637.92,,1459218298393595947,2
+2026-01-09 12:17:50,QUBT,,short,short,12.12,12.12,stated,2,2% position and need to build in,,,,,,open,stated,Short QUBT. 2% position and need to build in. Just not enough liquidity at the moment to get aggressive at one spot.,price from next line,1459234727083905025 1459234738563973203,2
+2026-01-09 12:49:14,SILJ,,short,short,30.5,,bar,3,3%,,,,,,open,stated,3% short on SILJ. eyes glued to HL,,1459242632021545003 1459242659334848691,2
+2026-01-09 13:00:14,SILJ,,short,add,30.23,,bar,,,,,,,,open,stated,adds on SILJ,,1459245397359984670,2
+2026-01-09 13:04:18,APP,,short,short,642.02,642.02,stated,3,3% APP position,,HOD,,,6/20,open,stated,put on a 3% APP position 6/20,price 642.02 from 13:06:55 line; will add back under the 50sma,1459246423240343602 1459246547744329963 1459247080156565555,2
+2026-01-09 14:48:09,NFLX,,short,cover,89.22,89.22,stated,,another 30% of my remaining,0.3,,,,,partial,stated,covering another 30% of my remaining NFLX 89.22,ongoing NFLX short being scaled out,1459272556644139028,2
+2026-01-09 15:56:23,APP,,short,cover,647.38,647.38,stated,,,1.0,,,,,closed,stated,APP closed 647.38,,1459289728569577707,2
+2026-01-09 15:57:40,SILJ,,short,cover,30.54,30.54,stated,,,1.0,,,,,closed,stated,SILJ 30.54 closed,,1459290051786575904,2
+2026-01-12 13:31:30,QUBT,,short,cover,12.07,12.07,stated,,,1.0,,,,,closed,stated,closed QUBT flat 12.07,closed flat,1460340430880112796,2
+2026-01-12 15:20:17,SILJ,,short,short,32.17,32.17,stated,3,3%,,,,,,open,stated,3% short on SILJ 32.17,,1460367808096501832 1460367839683805288,2
+2026-01-12 15:56:08,SILJ,,short,cover,32.25,,bar,,,1.0,,,,,closed,stated,closed SILJ. no follow through so I cannot keep it overnight,,1460376826873643213,2
+2026-01-13 09:40:06,NFLX,,short,cover,90.91,90.91,stated,,10% of my remaining shares,0.1,,,,,partial,inferred,covering 10% of my remaining shares. looking to get down to a quarter of my original before earnings 90.91 covers,"ticker not named; the only open short being scaled out ahead of earnings is NFLX (30% covered 1/9 at 89.22, covers continue 1/14, 1/20)",1460644583582072884,2
+2026-01-13 10:04:34,SILJ,,short,short,32.79,,bar,3,3%,,,,,10x ATR from the 50sma (SLV) mean reversion,open,stated,short 3% SILJ. 10x ATR from the 50sma is SLV,,1460650740048728259,2
+2026-01-13 10:24:00,SILJ,,short,add,32.57,32.57,stated,3,3%,,,,,,open,stated,3% add to SILJ 32.57,,1460655631676604429,2
+2026-01-13 11:28:45,SILJ,,short,add,32.48,32.48,stated,3,3%,,,,,,open,stated,3% add to SILJ 32.48,,1460671928661573807,2
+2026-01-14 12:18:39,SILJ,,short,add,32.04,32.04,stated,,,,,,,,open,stated,SILJ adds going red on the day. 32.04,adds as SILJ went red on the day,1461046871513366709,2
+2026-01-14 13:49:21,QUBT,,short,short,11.83,11.83,stated,3,3% position,,,,,loss of the 50sma and 6/20 setup,open,stated,Short QUBT loss of the 50sma and 6/20 setup,,1461069696945098885 1461069786694942804 1461069890172485683,2
+2026-01-14 14:32:00,QUBT,,short,stopped_out,12.175,,bar,,,1.0,,,,,closed,stated,QUBT stopped me out quickly,,1461080431259816077,2
+2026-01-14 14:58:08,SILJ,,short,cover,32.56,,bar,,slowly covering,,,,,,partial,stated,slowly covering my SILJ. wont hold it all into the overnight with the strength in silver,won't hold it all overnight; amount not stated,1461087010273099837,2
+2026-01-14 15:06:49,NFLX,,short,cover,88.4,,bar,,my last piece,,,,,,partial,inferred,covering my last piece of NFLX. will hold the rest in earnings/50sma,says 'last piece' but 'will hold the rest in earnings/50sma' and covers again 1/20 - read as the last planned cover before earnings; position still open,1461089192649036085,2
+2026-01-15 08:32:16,SILJ,,short,add,31.4,,bar,,adding pieces,,,,,,open,stated,adding pieces this morning to SILJ with the expectation SLV is putting in a lower high,premarket 08:32,1461352289473138790 1461352313741508680,2
+2026-01-15 11:54:51,SILJ,,short,add,32.27,32.27,stated,,,,,,,,open,stated,adding more SILJ here 32.27,,1461403273255714992,2
+2026-01-16 10:27:15,SILJ,,short,add,31.94,,bar,,,,,,,,open,stated,SILJ adds into that breakdown,adds into the breakdown,1461743612172697648 1461743698785341649,2
+2026-01-20 09:50:31,SILJ,,short,add,34.47,,bar,,,,,,,,open,stated,adds on SILJ. eyes on HL and CDE. CDE already went red on the day.,,1463183922526421168,2
+2026-01-20 15:46:23,SILJ,,short,cover,35.28,,bar,,,1.0,,,,,closed,inferred,cant stick around on SILJ,'cant stick around' read as covering the whole SILJ short; no price,1463273479196377306 1463273534985076840,2
+2026-01-20 16:06:39,NFLX,,short,cover,83.73,83.73,stated,,another third of my remaining,0.333,,,,,partial,stated,covering another third of my remaining NFLX shares. 83.73,16:06 after the close,1463278576794075287,2
+2026-01-21 09:31:19,SILJ,,short,short,36,36,stated,3,3% short SILJ position,,,,,,open,stated,started back in with a 3% short SILJ position 36,,1463541477794779372,2
+2026-01-21 09:45:55,SLV,,short,short,85.19,85.19,stated,5,5% position,,yesterdays highs,,,,open,stated,short SLV 85.19 stop at yesterdays highs 5% position,,1463545152642486414,2
+2026-01-21 10:19:36,SLV,,short,add,84.73,,bar,,,,,,,,open,stated,just added to SLV,,1463553628576157717,2
+2026-01-21 10:19:36,SILJ,,short,add,35.42,,bar,,,,,,,,open,stated,just added to SLV and SILJ,,1463553628576157717,2
+2026-01-21 11:37:07,NVDA,,short,short,182.02,182.02,stated,5,5%,,50sma,,,,open,stated,5% short on NVDA 182.02,'using the 50sma as my guide',1463573134014812265 1463573158295769189 1463573199873769543,2
+2026-01-21 14:29:20,SLV,,short,add,83.9,,bar,,,,,,,,open,stated,added to SLV short,,1463616474991038565,2
+2026-01-21 14:44:04,NVDA,,short,cover,184.22,,bar,,,1.0,,,,,closed,stated,closed NVDA short.,,1463620182835724359,2
+2026-01-21 15:28:28,NVDA,,short,short,184.13,184.13,stated,,,,50sma,,,below the 50sma,open,stated,sticking an NVDA short back on below the 50sma. 184.13,re-entry of the NVDA short,1463631355198832873,2
+2026-01-22 09:35:42,NVDA,,short,add,184.78,,bar,,small add,,HOD,,,5min ORB low,open,stated,small add on NVDA 5min oRB low,,1463904967197724950 1463904977918361727,2
+2026-01-23 08:37:03,SLV,,short,short,89.7,89.7,stated,5,5% SLV short,,,,,,open,stated,put on a 5% SLV short,"premarket 08:37; no SLV cover reported since 1/21 adds, so may be an add to an open short",1464252597518073936 1464252658738139207,2
+2026-01-23 09:31:47,SILJ,,short,short,38,38,stated,,,,,,,,open,stated,Short SILJ 38,,1464266371750690961,2
+2026-01-23 09:39:43,SLV,,short,add,90.22,,bar,,,,90.50,90.5,90.5,,open,stated,just added to SLV,,1464268365496586303 1464268397402652803,2
+2026-01-23 10:17:38,SLV,,short,add,90.11,,bar,,,,,,,,open,stated,added more SLV,,1464277909123367118,2
+2026-01-23 10:36:16,SILJ,,short,add,38.35,,bar,,small adds,,,,,,open,stated,small adds on SILJ,,1464282596530982954 1464282631922516083,2
+2026-01-23 12:59:24,NUGT,GDX,short,add,275,275,stated,3,3%,,,,,,open,inferred,3% add to NUGT 275,NUGT (2x gold miners) logged as a SHORT given the channel and 'NUGT about to stop me out' as metals rallied; no NUGT entry was posted before this 'add',1464318618115248375,2
+2026-01-23 13:49:57,NUGT,GDX,short,add,275.29,,bar,,,,,,,,open,inferred,added to NUGT,"short NUGT, see 12:59 row",1464331340139860277,2
+2026-01-23 13:49:57,SLV,,short,short,91.3399,,bar,,,,,,,,open,stated,picked up SLV,re-entry ('working to get back into SLV' 12:59 implies the earlier SLV short was closed unreported),1464331340139860277,2
+2026-01-23 14:53:11,NUGT,GDX,short,stopped_out,283.0,,bar,,,1.0,,,,,closed,stated,NUGT stopped,,1464347255019405392 1464346529925042501,2
+2026-01-23 17:02:09,SLV,,short,short,93.6,93.6,stated,1,1% position,,,,,,open,inferred,I also have a 1% position in SLV 93.60 for over the weekend into the after hours push,17:02 after hours; 'I also have a 1% position in SLV 93.60 for over the weekend' - unclear whether a new fill or the remainder of the day's short,1464379707389644811,2
+2026-01-26 10:32:25,SILJ,,short,short,40.61,40.61,stated,3,3%,,,,,,open,stated,short 3% SILJ 40.61,,1465368792984191027,2
+2026-01-26 10:34:30,SLV,,short,short,100.85,100.85,stated,3,3%,,,,,,open,stated,3% short on SLV 100.85,on top of the 1% weekend piece,1465369318530482395,2
+2026-01-26 11:29:06,SILJ,,short,add,40.255,,bar,,,,,,,,open,stated,just added to SILJ,,1465383058143182848,2
+2026-01-26 12:56:11,SILJ,,short,add,40.6,,bar,,a touch more,,,,,,open,inferred,added a touch more,ticker from the 11:29 SILJ add and 'eyes on HL',1465404971234365698 1465404986748829920,2
+2026-01-26 13:13:52,SLV,,short,add,104.21,104.21,stated,3,another 3%,,,,,,open,stated,adding another 3% SLV short. 104.21,,1465409423236272374,2
+2026-01-26 13:29:52,SLV,,short,add,103.38,103.38,stated,,,,,,,,open,stated,add to $SLV 103.38,,1465413451018145900 1465413485180616715,2
+2026-01-26 13:30:20,SILJ,,short,add,40.05,40.05,stated,,,,,,,,open,stated,adds to SILJ 40.05,,1465413565568782521,2
+2026-01-26 13:34:00,SLV,,short,add,102.12,102.12,stated,,,,,,,,open,stated,adds to SLV 102.12,,1465414491893141584,2
+2026-01-26 13:59:05,SLV,,short,add,100.855,,bar,,,,,,,,open,stated,more adds to SLV,,1465420802500333688,2
+2026-01-26 14:03:07,SILJ,,short,add,39.5299,,bar,,,,,,,,open,stated,more onto SILJ,,1465421816972705955,2
+2026-01-27 09:38:33,SILJ,,short,add,38.17,,bar,3,3%,,HOD,,,going red,open,stated,3% short add to SILJ going red,,1465717626310492231 1465717643880300657,2
+2026-01-27 09:49:36,SLV,,short,add,98.72,,bar,3,3%,,HOD,,,,open,stated,3% add to SLV,,1465720405107933358 1465720411689058451,2
+2026-01-27 09:55:35,SILJ,,short,add,37.7914,,bar,2,another 2%,,,,,LOD break,open,stated,another 2% add to LOD break on SILJ,,1465721911219589120,2
+2026-01-27 09:58:16,SLV,,short,add,96.5,96.5,stated,2,2%,,,,,,open,stated,2% add to SLV 96.50,reached max comfort level,1465722585164550265 1465722602915102805 1465722623575986269,2
+2026-01-27 10:12:39,NVDA,,short,cover,188.995,,bar,,,1.0,,,,,closed,stated,closed NVDA short,,1465726207201902720,2
+2026-01-27 15:53:47,SLV,,short,cover,100.92,,bar,,,1.0,,,,,closed,stated,went flat on SLV,'went flat' = exited around breakeven; no price,1465812055679303807 1465812071928299774,2
+2026-01-27 15:55:16,SILJ,,short,trim,38.525,,bar,,reduced half,0.5,,,,,partial,stated,reduced half of my SILJ with a gain,with a gain,1465812429182337115,2
+2026-01-27 15:55:31,SILJ,,short,stop,,,,,,,flat,,,,partial,stated,stop at flat on the rest,,1465812490129772802,2
+2026-01-27 18:06:51,SLV,,short,short,100.9037,,bar,3,small 3% starter,,,,,,open,stated,I have a small 3% starter in the overnight session on $SLV. Not going to get agressive until we see continued weakness,18:06 overnight session,1465845542327418900,2
+2026-01-28 10:07:59,SILJ,,short,add,39.46,,bar,3,3 % position,,,,,,open,stated,adding 3 % position to SILJ,,1466087420498939915,2
+2026-01-28 10:27:08,SLV,,short,add,101.72,,bar,,piecing myself back in,,,,,,open,stated,piecing myself back in SLV,,1466092240735703090,2
+2026-01-28 12:40:11,SLV,,short,add,103.04,103.04,stated,2,2%,,,,,,open,stated,2% SLV adds 103.04,,1466125720299503810 1466125764674981969,2
+2026-01-28 12:59:50,SILJ,,short,add,38.72,,bar,2,another 2%,,,,,,open,stated,another 2% add to SILJ,,1466130666130243775,2
+2026-01-28 13:30:16,SLV,,short,add,102.165,,bar,,,,,,,,open,stated,adding more SLV,,1466138327177498634,2
+2026-01-28 14:37:29,SLV,,short,cover,102.87,,bar,,half,0.5,,,,,partial,stated,closed half of my SLV. cant stay short above VWAP,can't stay short above VWAP,1466155242843406438,2
+2026-01-28 15:34:07,SILJ,,short,cover,38.895,,bar,,,1.0,,,,,closed,inferred,covering SILJ,'covering SILJ' after 'not going to be able to keep SILJ into the close' - read as full cover,1466169491988942891 1466168899421732924,2
+2026-01-28 16:02:23,SLV,,short,watch,,,,,,,106.70 highs,106.7,106.7,,partial,stated,I am watching SLV once again against 106.70 highs,watching to re-short against 106.70 highs; still holds half the SLV short,1466176609517179077,2
+2026-01-28 16:25:24,SLV,,short,add,105.28,105.28,stated,,,,,,,,open,stated,added sine SLV short,'sine' typo for 'some'; 16:25 after hours,1466182398139175133 1466182410814099651,2
+2026-01-28 18:07:25,SLV,,short,add,105.15,105.15,stated,,,,,,,,open,stated,Adds to SLV,18:07 overnight,1466208074225160285 1466208123479003457,2
+2026-01-28 20:34:43,SI,,long,entry,,,,,hedged on my shares,,,,,,open,inferred,I am sitting hedged on my shares until I see a failure in the silver market,silver futures LONG hedge against the SLV short shares; ticker inferred from 'closed out on the futures long' (1/29) and '$SI' (1/29 19:06); time the hedge was put on not stated,1466245144427761897,2
+2026-01-29 09:36:54,SLV,,short,add,108.63,,bar,,a bit higher,,,,,,open,stated,I have added more to SLV short a bit higher,,1466441983722651764,2
+2026-01-29 09:36:54,SI,,long,exit,14.35,,bar,,,1.0,,,,,closed,inferred,closed out on the futures long,silver futures hedge closed,1466441983722651764,2
+2026-01-29 10:14:19,AVGO,,short,short,326.6512,,bar,,,,HOD,,,break of yesterdays lows,open,stated,Short AVGO break of yesterdays lows,,1466451400480395369 1466451410261643418,2
+2026-01-29 19:06:27,SI,,long,entry,,,,,half the size hedge on $SI as I did yesterday,,,,,,open,stated,I have half the size hedge on $SI as I did yesterday,"silver futures long hedge on the SLV short, 19:06",1466585315379511296,2
+2026-01-29 20:15:18,SI,,long,exit,,,,,,1.0,,,,,closed,inferred,sold my hedge for a loss. Will only open it back up before bed if I think we can gap up,sold the SI hedge for a loss,1466602643416940760,2
+2026-01-30 09:32:21,SLV,,short,cover,90.08,90.08,stated,,a third,0.333,,,,,partial,stated,a third of my SLV covred 90.08,,1466803229882060936,2
+2026-01-30 09:54:56,AVGO,,short,add,335.83,,bar,3,3%,,20sma,,,,open,stated,a 3% add to AVGO using the 20sma as my guide,'using the 20sma as my guide',1466808911498842226,2
+2026-01-30 10:09:34,STX,,short,short,440.11,,bar,5,5%,,HOD,,,,open,stated,5% short STX stop HOD,,1466812595158908959,2
+2026-01-30 11:42:30,SLV,,short,cover,85.18,85.18,stated,,A third left,0.5,,,,,partial,stated,A third left of my SLV with more covers at 85.18,2/3 -> 1/3 of original; 'still have 10% of my account there',1466835979943022612 1466836193562988556,2
+2026-01-30 12:47:56,SLV,,short,cover,79.4,79.4,stated,,more covers,,,,,,partial,inferred,79.40 more covers.,ticker from the running SLV covers,1466852448277889107,2
+2026-01-30 12:55:33,SLV,,short,cover,77.24,77.24,stated,,,,,,,,partial,inferred,More at 77.24,ticker from the running SLV covers,1466854365024223232 1466854403284668607,2
+2026-01-30 12:56:57,SLV,,short,cover,77.83,77.83,stated,,,1.0,,,,,closed,inferred,I’m officially covered,price from '77.83 final covers'; ticker from the running SLV covers,1466854716221821145 1466854826355720244,2
+2026-02-03 13:59:30,STX,,short,add,436,436,stated,3,3%,,,,,,open,stated,3% add to STX 436,,1468320010232533248,2
+2026-02-03 14:56:34,AVGO,,short,cover,312.47,312.47,stated,,a third,0.333,,,,6/20 setup into the 200sma,partial,stated,covered a third of my AVGO 312.47,setup line follows the cover; may describe the original short,1468334370678112389 1468334403775103141,2
+2026-02-03 15:57:09,STX,,short,cover,443.16,443.16,stated,,,1.0,,,,,closed,stated,closed STX 443.16,,1468349618374053908,2
+2026-02-04 08:50:23,MU,,short,short,413.1,,bar,2,2% MU short,,,,,,open,stated,I put on a 2% MU short as a reminder so i can keep my eyes on it,"premarket 08:50, 'as a reminder'",1468604605901570180,2
+2026-02-04 09:30:39,MU,,short,add,407,407,stated,,,,,,,,open,stated,MU adds 407,,1468614737825894514,2
+2026-02-04 10:13:51,STX,,short,short,440.57,440.57,stated,3,3%,,,,,back through VWAP,open,stated,STX short back through VWAP 3%. 440.57,,1468625611734913045,2
+2026-02-04 10:17:30,MU,,short,add,399.3386,,bar,3,3%,,,,,LOD break,open,stated,3% adds on MU with LOD break,,1468626530954641501,2
+2026-02-04 11:07:04,MU,,short,cover,381.7,381.7,stated,,20%,0.2,,,,,partial,stated,covered 20% of my MU 381.70,,1468639001748570173,2
+2026-02-04 11:07:29,STX,,short,cover,416.92,416.92,stated,,20%,0.2,,,,,partial,stated,20% cover on STX 416.92,,1468639108065661040,2
+2026-02-04 12:52:47,MU,,short,cover,367.76,367.76,stated,,another 20% ... of my remaining,0.2,,,,,partial,stated,another 20% cover on MU 367.76,,1468665609444130857 1468665722086621276,2
+2026-02-04 12:53:01,STX,,short,cover,403.52,403.52,stated,,another 20% ... of my remaining,0.2,,,,,partial,stated,another 20% cover on STX 403.52,,1468665668542009375 1468665722086621276,2
+2026-02-05 09:52:35,AVGO,,short,add,322.79,322.79,stated,3,3% add,,,,,rejection of the 10sma,open,stated,just added AVGO short as a rejection of the 10sma. 3% add. 322.79,,1468982648050548859,2
+2026-02-05 09:53:44,AVGO,,short,stop,,,,,,,328.37avg (flat on the rest),328.37,328.37,,open,stated,328.37avg is my stop,,1468982936014426290 1468982721085968529,2
+2026-02-05 09:56:25,MU,,short,add,382.61,382.61,stated,3,3%,,HOD,,,20sma as guide,open,stated,3% add to MU short 382.61,,1468983610278154261 1468983663646605409 1468983713361559624,2
+2026-02-05 10:11:36,STX,,short,add,401.8,401.8,stated,3,3%,,,,,,open,stated,3% add to STX 401.80,,1468987434447536303,2
+2026-02-05 15:59:59,STX,,short,cover,405.68,405.68,stated,,my STX adds,,,,,,partial,stated,cut my STX adds 405.68,cut the add tranche,1469075105505349643,2
+2026-02-05 16:41:56,STX,,short,add,398.78,398.78,stated,,,,,,,,open,inferred,stuck on 398.78 on STX again,16:41 after hours; 'stuck on 398.78' read as putting the short back on,1469085664917192896,2
+2026-02-06 11:10:41,AVGO,,short,cover,329.02,329.02,stated,,,1.0,,,,,closed,stated,Closed AVGO,,1469364691200508126 1469364747261706270,2
+2026-02-09 13:10:40,NBIS,,short,short,92.42,92.42,stated,3,3%,,50sma,,,6/20,open,stated,3% NBIS short. 6/20 setup using the 50sma as my guide,will be trimmed before earnings,1470482049394675900 1470482108211531932 1470482156534104187,2
+2026-02-09 13:21:17,AVGO,,short,short,347.62,347.62,stated,5,5%,,50sma,,,,open,stated,5% short on AVGO using the 50sma as my guide 347.62,,1470484720797089904,2
+2026-02-09 15:39:50,NBIS,,short,cover,93.6,93.6,stated,,,1.0,,,,,closed,stated,closed NBIS 93.60,,1470519586951794728,2
+2026-02-10 09:53:58,MU,,short,cover,373.31,373.31,stated,,20% of my remaining,0.2,,,,,partial,stated,covering 20% of my remaining MU 373.31,,1470794935593734306,2
+2026-02-11 09:31:15,MU,,short,cover,400.21,400.21,stated,,,1.0,,,,,closed,stated,closed out MU at the open as well,price from '400.21 closed the last bit',1471151606023192753 1471152469118681232,2
+2026-02-11 10:05:52,AVGO,,short,add,339.7,339.7,stated,3,3%,,,,,,open,stated,adding 3% short to AVGO 339.70,,1471160316066005014,2
+2026-02-11 11:04:07,MU,,short,short,395.09,395.09,stated,3,3%,,,,,,open,stated,3% short MU 395.09,,1471174976001282232 1471175044553244912,2
+2026-02-11 12:44:32,MU,,short,cover,403.4,403.4,stated,,,1.0,,,,,closed,stated,cut MU 403.40,,1471200245210677278,2
+2026-02-11 13:14:31,MU,,short,short,401.23,401.23,stated,,one last time,,,,,,open,stated,trying one last time on MU 401.23,,1471207790755315906,2
+2026-02-11 14:14:34,MU,,short,cover,407.39,,bar,,,1.0,,,,,closed,inferred,MU no luck and i wont try it again today,'no luck' - read as out of the second MU attempt (likely stopped); no price,1471222903939793029,2
+2026-02-11 14:43:51,AVGO,,short,cover,343.99,,bar,,the AVGO adds,,,,,,partial,stated,cut the AVGO adds today.,cut today's add tranche,1471230275458433054,2
+2026-02-11 14:43:57,AVGO,,short,stop,,,,,,,50sma,,,,partial,stated,stop is the 50sma on the rest,stop on the rest,1471230299143798784,2
+2026-02-12 09:48:20,AVGO,,short,add,341.67,341.67,stated,5,5%,,HOD (adds); 50sma (remainder),,,,open,stated,added 5% short AVGO 341.67,,1471518291385127036 1471518396234334258,2
+2026-02-12 09:55:00,NFLX,,short,cover,77.07,77.07,stated,,20% of my remaining,0.2,,,,,partial,stated,covering 20% of my remaining NFLX 77.07,,1471519970771996787,2
+2026-02-12 11:13:43,NEM,,short,short,123.04,,bar,5,5% position,,HOD 123.03,123.03,123.03,,open,inferred,short NEM 5% position. stop HOD 123.03,"123.03 follows 'stop HOD' so taken as the stop level, not the fill; could be the fill",1471539780511600883,2
+2026-02-13 09:42:28,NEM,,short,add,119.63,119.63,stated,5,5%,,HOD (whole position),,,,open,stated,added 5% to NEM 119.63,,1471879205573627915 1471879237182034032,2
+2026-02-13 10:02:30,NEM,,short,stopped_out,123.0353,,bar,,NEM adds,,,,,,partial,stated,stopped out of  NEM adds,,1471884244761444452,2
+2026-02-13 10:18:31,NEM,,short,add,123.33,123.33,stated,,,,hard stop 125.50 on the whole position,125.5,125.5,,open,stated,123.33 adds back on NEM,,1471888275927994390 1471888330516856872,2
+2026-02-13 10:33:11,AVGO,,short,cover,330.17,330.17,stated,,a third,0.333,,,,,partial,stated,covered a third of AVGO 330.17,,1471891966961783001,2
+2026-02-13 12:30:46,NEM,,short,cover,125.87,125.87,stated,,,1.0,,,,,closed,stated,closed NEM for now,,1471921556425805894 1471921604190671024,2
+2026-02-13 15:00:26,NEM,,short,short,125.14,125.14,stated,5,5%,,,,,rejection of prior day high,open,stated,taking a 5% in NEM once again 125.14 on the rejection of prior day high,,1471959221284372480 1471959282747441366,2
+2026-02-13 15:56:49,NEM,,short,cover,125.435,,bar,,,1.0,,,,,closed,stated,NEM closed. GLD pinned to highs and SLV much weaker,,1471973411927621662,2
+2026-02-17 09:43:59,NEM,,short,short,121.48,121.48,stated,5,5% position,,,,,5min ORB,open,stated,Short NEM 5min ORB 121.48,,1473329137988014217 1473329193805942935,2
+2026-02-17 13:22:51,NEM,,short,stopped_out,122.64,122.64,stated,,,1.0,,,,,closed,stated,stopped on NEM,,1473384218548633641 1473384290413969428,2
+2026-02-17 15:07:39,GDX,,short,short,100.41,100.41,stated,,,,,,,6/20,open,stated,short GDX 100.41,instead of NEM with earnings coming up,1473410592382648373 1473410606814986436 1473410562879918082,2
+2026-02-18 09:39:12,GDX,,short,stopped_out,102.22,102.22,stated,,,1.0,,,,,closed,stated,GDX stopped out 102.22,,1473690320238805176,2
+2026-02-18 10:27:54,AVGO,,short,cover,336.11,336.11,stated,,another third of my remaining,0.333,,,,,partial,stated,covered another third of my remaining AVGO. 336.11,,1473702575684587624,2
+2026-02-18 12:34:45,AVGO,,short,add,335.12,,bar,,add back my AVGO trims,,,,,6/20 setup and rejection of prior day high,open,stated,add back my AVGO trims,,1473734499354284234 1473734533537861725,2
+2026-02-18 13:27:39,GDX,,short,short,102.69,102.69,stated,,,,HOD,,,,open,stated,shorted GDX 102.69 using HOD as the stop,need a weak close to keep,1473747814189236245 1473747835752288449,2
+2026-02-19 09:52:50,AVGO,,short,cover,334.82,,bar,,AVGO adds from yesterday,,,,,,partial,stated,closed AVGO adds from yesterday,,1474056141351817286,2
+2026-02-19 11:22:24,AVGO,,short,cover,338.24,338.24,stated,,down to a small third of my original shares,,,,,,partial,stated,338.24 more closed on AVGO. down to a small third of my original shares,,1474078678949302546,2
+2026-02-19 11:31:27,GDX,,short,watch,,,,,,,,,,,unknown,stated,watchign GDX once again with the basket of miners,watching GDX again with the miner basket (AEM NEM SILJ),1474080955974160505 1474081005152244026,2
+2026-02-19 11:46:29,AVGO,,short,add,334.85,334.85,stated,,,,,,,,open,stated,adding back AVGO 334.85,,1474084739790143620,2
+2026-02-19 11:46:29,AVGO,,short,stop,,,,,,,338.50,338.5,338.5,,open,stated,moving stop on position to 338.50,,1474084739790143620,2
+2026-02-19 11:51:55,GDX,,short,short,103.33,,bar,5,5% GDX,,,,,6/20 setup and the rejection of prior day high,open,inferred,i have a 5% GDX on the 6/20 setup and the rejection of prior day high. keeping my eyes on NEM AEM as the primary gold leaders.,'i have a 5% GDX' - fill not posted; may be the 2/18 short held overnight,1474086110086041783,2
+2026-02-20 09:45:33,AVGO,,short,cover,338.19,,bar,,my AVGO from yesterday,,,,,,partial,inferred,closed my AVGO from yesterday. will reconsider adding if we reject the 50sma,yesterday's add tranche; core short continues (adds again 10:16),1474416696998629490,2
+2026-02-20 10:07:00,GDX,,short,short,103.54,,bar,8,8% position,,,,,5min ORB low,open,stated,GDX short 5min ORB low,,1474422094757498971 1474422147253272596,2
+2026-02-20 10:16:46,AVGO,,short,add,333.8,,bar,5,5%,,,,,50sma rejection,open,stated,5% short add to AVGO on the 50sma rejection,,1474424549977227357,2
+2026-02-20 11:46:07,GDX,,short,cover,104.68,,bar,,half,0.5,,,,,partial,stated,covering half of GDX above VWAP,above VWAP,1474447038107353339,2
+2026-02-20 15:04:55,GDX,,short,cover,105.74,,bar,,,1.0,,,,,closed,stated,done with GDX. Copper and metals best groups at the moment.,,1474497067580653752,2
+2026-02-23 10:55:57,SLV,,short,short,78.56,78.56,stated,6,6% position,,HOD,,,,open,stated,short SLV 78.56,,1475521575133642876 1475521588408356894 1475521682025484298,2
+2026-02-23 15:23:44,SLV,,short,cover,79.82,79.82,stated,,,1.0,,,,,closed,stated,closed SLV,,1475588965410275479 1475588993142751423,2
+2026-02-24 09:32:32,AVGO,,short,cover,315.66,315.66,stated,,20% of my AVGO shares,0.2,,,,,partial,stated,315.66 covered 20% of my AVGO shares,,1475862972973973577,2
+2026-03-02 10:21:05,GDX,,short,short,115.06,115.06,stated,5,5%,,highs,,,,open,stated,115.06 short GDX 5%,,1478049517537591388 1478049531508691006,2
+2026-03-03 09:35:02,GDX,,short,cover,105.83,105.83,stated,,20%,0.2,,,,,partial,stated,covered 20% of my GDX 105.83,,1478400317036040283,2
+2026-03-03 11:46:58,AVGO,,short,cover,314.9,314.9,stated,,half of my remaining,0.5,,,,,partial,stated,covering up half of my remaining AVGO 314.90,,1478433518697713684,2
+2026-03-04 09:37:42,NFLX,,short,cover,99.2,99.2,stated,,,1.0,,,,,closed,stated,closed the last of my NFLX 99.20,,1478763374060765297,2
+2026-03-05 12:03:17,GDX,,short,cover,101.36,101.36,stated,,another 20% of my remaining,0.2,,,,,partial,stated,covering another 20% of my remaining GDX 101.36,,1479162400400740353 1479162426111819856,2
+2026-03-05 12:31:12,APP,,short,short,497.09,497.09,stated,5,5%,,200sma,,,,open,stated,APP 5% short 497.09,,1479169424526282792 1479169440506577040,2
+2026-03-05 15:57:15,APP,,short,cover,508.72,508.72,stated,,,1.0,,,,,closed,inferred,closed 508.72,"ticker not named; APP is the intraday short opened at 12:31 (GDX ~101, AVGO ~315)",1479221279226724363,2
+2026-03-05 15:59:27,GDX,,short,cover,101.77,101.77,stated,,down to half of my original,0.22,,,,,partial,stated,down to half of my original GDX. 101.77 covers.,fraction derived: 0.8x0.8=0.64 of original -> 0.5,1479221834376413334,2
+2026-03-06 09:58:49,APP,,short,short,495.73,495.73,stated,5,5% position again,,HOD,,,off VWAP,open,stated,just tried APP short off VWAP 495.73,,1479493465426366534 1479493516324245604,2
+2026-03-06 10:15:01,AVGO,,short,cover,337.42,337.42,stated,,,1.0,,,,,closed,stated,closed AVGO 337.42,,1479497539257630882,2
+2026-03-06 11:23:27,AVGO,,short,short,335.3,335.3,stated,5,5% position,,,,,,open,stated,put a 5% position back on AVGO 335.30,,1479514762760028211,2
+2026-03-06 11:39:17,AVGO,,short,cover,339.71,339.71,stated,,,1.0,,,,,closed,inferred,short lived on AVGO 339.71,"'short lived' - out of the re-entry, likely stopped",1479518748200141155,2
+2026-03-06 12:36:14,AVGO,,short,short,338.27,338.27,stated,5,5% once again,,highs,,,6/20,open,stated,AVGO 6/20 short 338.27,,1479533081302929610 1479533104644362271,2
+2026-03-06 14:33:04,PLTR,,short,short,160.8,,bar,5,5%,,162s,162,162,200sma as guide,open,stated,short 5% PLTR using the 200sma as my guide,about 1.50 risk,1479562479427387563 1479562500788846773 1479562570200387625,2
+2026-03-06 15:13:28,PLTR,,short,add,158.06,158.06,stated,3,3%,,,,,,open,stated,3% add to PLTR 158.06,,1479572647896420567,2
+2026-03-06 15:58:18,APP,,short,cover,502.76,502.76,stated,,,1.0,,,,,closed,stated,closed APP 502.76,,1479583931220103453,2
+2026-03-09 10:20:40,AVGO,,short,cover,338.17,338.17,stated,,,1.0,,,,,closed,stated,closed AVGO flat 338.17,flat,1480571026088661044,2
+2026-03-10 12:02:07,NVDA,,short,short,185.39,185.39,stated,5,5%,,HOD / 50sma,,,,open,stated,short NVDA 185.39,,1480958944590692453 1480958983865897030,2
+2026-03-11 10:01:08,NVDA,,short,stopped_out,187.03,187.03,stated,,,1.0,,,,,closed,stated,stopped on NVDA 187.03,,1481290886997475501,2
+2026-03-11 10:34:04,NVDA,,short,short,186.16,186.16,stated,5,5% once again,,,,,losing VWAP and reject of prior day high,open,stated,short NVDA 5% once again 186.16. losing VWAP and reject of prior day high,,1481299174510166126 1481299230437015684,2
+2026-03-11 15:51:15,PLTR,,short,cover,151.74,151.74,stated,,20%,0.2,,,,,partial,stated,covered 20% of PLTR today 151.74,,1481378997182005389,2
+2026-03-11 15:55:20,NVDA,,short,cover,185.92,185.92,stated,,,1.0,,,,,closed,stated,NVDA closed 185.92,,1481380023029203146,2
+2026-03-12 09:47:21,NVDA,,short,short,183.52,183.52,stated,5,5%,,50sma,,,5min ORB,open,stated,183.52 5min ORB 5% on NVDA. 50sma as my guide,,1481649804747735153,2
+2026-03-12 12:08:40,VLO,,short,trim,239,239,stated,,20% of my remaining,0.2,,,,6.5x ATR from the 50sma,partial,inferred,Just trimmed 20% of my remaining VLO 239,direction assumed short (channel default); the ATR-extension trim wording reads like a LONG trim - may be a long posted here,1481685367600971868 1481685411536572436,2
+2026-03-13 10:12:02,ARKK,,short,short,71.56,71.56,stated,5,5% position,,yesterdays HOD,,,,open,stated,Short $ARKK 71.56 5% position stop at yesterdays HOD,,1482018404939595786,2
+2026-03-16 12:43:09,GDX,,short,cover,92.93,92.93,stated,,10% of my remaining,0.1,,,,hold of the support gap,partial,stated,covered 10% of my remaining GDX on the hold of the supposrt gap. 92.93,,1483143598689095894,2
+2026-03-16 15:10:32,NVDA,,short,stopped_out,187.13,187.13,stated,,,1.0,,,,,closed,stated,NVDA stopped 187.13,,1483180690693554238,2
+2026-03-17 09:42:38,PLTR,,short,cover,154.14,154.14,stated,,down to half of my original,0.375,,,,,partial,stated,154.14 covered myself down to half of my original PLTR,fraction derived: 0.8 of original -> 0.5,1483460558987460658,2
+2026-03-17 10:16:08,ARKK,,short,add,72.76,72.76,stated,5,5%,,resistance gap highs 73.10,73.1,73.1,,open,stated,5% 72.76 adds on ARKK. Stop is at the resistance gap highs 73.10,,1483468990713041018,2
+2026-03-17 10:45:17,ARKK,,short,cover,73.12,73.12,stated,,,1.0,,,,,closed,stated,closed ARKK 73.12,at the stated 73.10 stop,1483476323434500178,2
+2026-03-17 11:08:40,ARKK,,short,short,72.88,72.88,stated,5,5% position,,highs of that resistance gap,,,,open,stated,Back in ARKK with a 5% position 72.88,,1483482209494237315 1483482259486150927,2
+2026-03-17 11:36:59,ARKK,,short,add,72.5,72.5,stated,5,another 5%,,,,,loss of yesterdays highs,open,stated,another 5% add to ARKK on the loss of yesterdays highs 72.50,,1483489333930492085,2
+2026-03-17 13:32:47,ARKK,,short,cover,73.19,,bar,,,1.0,,,,,closed,inferred,ARKK short no dice,'no dice' - out of the ARKK short; no price,1483518478970261566,2
+2026-03-18 09:42:27,GDX,,short,cover,89.36,89.36,stated,,10% of my remaining,0.1,,,,into this support gap,partial,stated,covering 10% of my remaining GDX into this support gap 89.36,,1483822901122699336,2
+2026-03-18 09:45:08,ARKK,,short,short,73.06,73.06,stated,3,3% position for now,,,,,into the resistance gap and red/green,open,stated,short ARKK into the resistance gap and red/green 73.06 spot,'72.76avg' posted 09:46 implies an unposted add,1483823575214588087 1483823664351674520 1483823694475296780 1483823975766163578,2
+2026-03-18 10:14:17,ARKK,,short,add,72.57,72.57,stated,,,,,,,,open,stated,add to ARKK 72.57,,1483830910527737927,2
+2026-03-18 10:27:33,ARKK,,short,add,72.23,72.23,stated,,,,,,,,open,stated,adds to ARKK 72.23,,1483834251605577839,2
+2026-03-18 15:19:23,AXTI,,short,short,48.59,48.59,stated,3,3%,,HOD,,,,open,stated,just shorted AXTI 3% AXTI 48.59,,1483907691951816955 1483907820993904793,2
+2026-03-19 08:17:29,GDX,,short,cover,81.49,81.49,stated,,half of my remaining,0.5,,,,,partial,stated,covered half of my remaining GDX 81.49,08:17 premarket; less than 20% of original left,1484163904408911912 1484164261902028851,2
+2026-03-19 08:48:36,GDX,,short,cover,80.22,80.22,stated,,more ... 10% of my origional,,,,,,partial,inferred,covered more 80.22,ticker from the 08:17 GDX cover,1484171737796050986 1484171758188888205,2
+2026-03-19 09:10:15,GDX,,short,cover,80.15,80.15,stated,,,1.0,,,,,closed,stated,closed GDX here 80.15,,1484177186465255516,2
+2026-03-19 09:48:03,AXTI,,short,add,48.14,48.14,stated,3,3% adds,,48.76,48.76,48.76,rejection of red/green,open,stated,48.14 adds to AXTI,,1484186695724433418 1484186722794340403 1484186745259163739 1484186776439623760,2
+2026-03-19 11:14:47,AXTI,,short,cover,51.2673,,bar,,,1.0,,,,,closed,stated,closed out on AXTI,,1484208525935771668,2
+2026-03-19 11:31:03,AXTI,,short,short,52.45,,bar,,keeping size to 2-3% on adds,,,,,against those ATHs,open,stated,AXTI started in again against those ATHs keeping size to 2-3% on adds. not worth getting agressive,,1484212617714335847,2
+2026-03-19 11:37:10,ARKK,,short,add,70.18,70.18,stated,3,3%,,,,,,open,stated,3% add to ARKK. 70.18,71.94 avg after,1484214156658741490 1484214401694171156,2
+2026-03-19 12:59:32,AXTI,,short,add,53.49,,bar,,pieceing myself in,,highs,,,,open,inferred,pieceing myself in once again versus the highs,ticker from the next line ('playing AXTI'),1484234883617394759 1484234956367597679,2
+2026-03-19 15:00:57,ARKK,,short,cover,70.88,70.88,stated,,my ARKK adds,,,,,,partial,stated,cut my ARKK adds today 70.88,,1484265442926399739,2
+2026-03-19 15:26:41,ARKK,,short,add,71.17,71.17,stated,3,just 3% size,,,,,,open,inferred,put those shares back on 71.17,'those shares' = the ARKK adds cut at 15:00,1484271918055162030 1484271932366000290,2
+2026-03-20 09:37:26,AXTI,,short,short,59.32,59.32,stated,3,3%,,todays HOD,,,,open,stated,3% short 59.32 AXTI short risking todays HOD,,1484546412950716456 1484546439437750282,2
+2026-03-23 10:08:31,AXTI,,short,cover,58.36,58.36,stated,,half,0.5,,,,,partial,stated,58.36 covers on AXTI,,1485641399239180349,2
+2026-03-23 10:08:41,AXTI,,short,stop,,,,,,,flat,,,,partial,stated,still sitting on half of the position with a flat stop,on the remaining half,1485641439504240661,2
+2026-03-23 10:10:19,AXTI,,short,cover,59.29,,bar,,,1.0,,,,,closed,stated,closed the last of AXTI,,1485641853599748248,2
+2026-03-23 10:15:54,PLTR,,short,cover,159.92,159.92,stated,,,1.0,,,,,closed,stated,closed PLTR 159.92,,1485643257395417100,2
+2026-03-23 10:17:45,ARKK,,short,cover,71.09,,bar,,my ARKK adds from thursday,,,,,,partial,stated,closed my ARKK adds from thursday,,1485643724297076910,2
+2026-03-23 10:32:43,AXTI,,short,short,63.67,63.67,stated,2,2% starter,,$65,65,65,10x+ ATR from the 50sma,open,inferred,63.67 2% starter,ticker from 10:30 'trying AXTI again',1485647490035351723 1485647615583584417 1485646824470745190,2
+2026-03-23 11:01:40,AXTI,,short,add,62.44,62.44,stated,2,another 2%,,,,,sub 62.50,open,inferred,62.44 adds,ticker from the AXTI re-entry,1485654775641936086 1485654210665250958,2
+2026-03-23 11:36:59,AVGO,,short,short,322.29,322.29,stated,5,5%,,,,,,open,stated,short 5% AVGO 322.29,,1485663661094735975,2
+2026-03-23 11:38:19,AXTI,,short,add,61.52,61.52,stated,2,another 2%,,HOD,,,,open,stated,another 2% add AXTI with stop at HOD 61.52,61.52 taken as the fill (HOD is above the 63.67 starter),1485663998774087730,2
+2026-03-23 11:41:22,ARKK,,short,add,70.97,70.97,stated,,add back my covers today,,,,,,open,stated,add back my covers today 70.97 on ARKK,,1485664765614231693,2
+2026-03-23 14:05:20,AXTI,,short,cover,63.46,63.46,stated,,last two adds,,,,,,partial,stated,closed off last two adds on AXTI 63.46,,1485700994322141254,2
+2026-03-23 14:38:42,AXTI,,short,cover,64.5,64.5,stated,,,1.0,,,,,closed,stated,AXTI closed the last of it. 64.50,,1485709391637254335,2
+2026-03-23 15:17:01,AXTI,,short,short,64.47,64.47,stated,2,small 2%,,,,,,open,inferred,small 2% 64.47,ticker from the next line,1485719034975617156 1485719170384527470,2
+2026-03-23 15:58:19,AXTI,,short,cover,64.45,64.45,stated,,,1.0,,,,,closed,inferred,64.45 closed. 0 weakness into the close. no comfortable way to hold it overnight despite the 11x ATR from the 50sma.,ticker from the 15:17 AXTI short,1485729430595702835,2
+2026-03-24 08:39:14,AXTI,,short,short,65.4,65.4,stated,,starter,,,,,,open,stated,65.40 and 65.05 starter on AXTI in premarket,premarket; two fills 65.40 and 65.05,1485981316918022296,2
+2026-03-24 09:42:57,AXTI,,short,short,68.16,68.16,stated,3,3% starter size,,,,,12x ATR from the 50sma,open,stated,68.16  3% starter size back on AXT 12x ATR from the 50sma.,'AXT' typo for AXTI; 'back on' - premarket starter apparently closed unreported,1485997352518160595,2
+2026-03-24 09:52:54,LITE,,short,short,751.78,751.78,stated,5,5%,,todays highs,,,,open,stated,5% short LITE against todays highs 751.78,,1485999856731295818,2
+2026-03-24 10:13:20,AVGO,,short,add,315.62,315.62,stated,3,3% size,,,,,,open,stated,just added 3% size to my AVGO,,1486004998432227428 1486005060012998757,2
+2026-03-24 10:22:23,AXTI,,short,add,66.76,66.76,stated,3,3%,,,,,,open,inferred,3% add 66.76,ticker from 09:53 'adds on AXTI if we can lose 66.50',1486007277705105519,2
+2026-03-24 10:47:14,LITE,,short,stopped_out,775.1,775.1,stated,,,1.0,,,,,closed,stated,stopped out on LITE 775.10,,1486013530388955188,2
+2026-03-24 10:58:04,ARKK,,short,cover,69.18,69.18,stated,,25% of my ARKK position,0.25,,,,bounce of the support gap,partial,stated,closed 25% of my ARKK position on the bounce of the support gao 69.18,,1486016259005878477,2
+2026-03-24 11:00:03,AXTI,,short,cover,69.51,69.51,stated,,half,0.5,,,,,partial,stated,half of AXTI closed 69.51. spending too much time above VWAP. before getting aggressive you want to be on the same side as the seller. we don't have that yet,,1486016756710375527,2
+2026-03-24 11:07:26,AVGO,,short,cover,318.81,318.81,stated,,my AVGO adds from today,,,,,,partial,stated,closed my AVGO adds from today 318.81,,1486018614585987105,2
+2026-03-24 12:05:08,AXTI,,short,add,68.9,68.9,stated,3,3%,,,,,rejecting that $70 level,open,stated,3% add to AXTI rejecting that $70 level,,1486033133156565082 1486033197283147879,2
+2026-03-24 12:06:20,AVGO,,short,add,317.73,317.73,stated,,added back my covered shares,,,,,sub VWAP 6/20,open,stated,added back my covered shares 317.73 AVGO sub VWAP 6/20 setup,,1486033437792927885,2
+2026-03-24 13:10:51,LITE,,short,short,787.85,787.85,stated,5,5%,,highs today,,,6/20 and failure of March 20th highs,open,stated,5% 787.85 LITE short stop at highs today. 6/20setup and a failure of March 20th highs,,1486049672874426520,2
+2026-03-24 14:51:57,AXTI,,short,cover,69,69,stated,,most recent adds,,,,,,partial,stated,69 covers on AXTI most recent adds. .10 loss. will only adds back IF we stay heavy,.10 loss,1486075113924329502,2
+2026-03-24 15:30:55,AXTI,,short,add,67.94,67.94,stated,,,,,,,,open,stated,adds at 67.94,,1486084920613802076,2
+2026-03-24 15:57:08,LITE,,short,cover,801.96,,bar,,,1.0,,,,,closed,stated,went flat LITE,went flat,1486091521315963120,2
+2026-03-24 16:25:23,AVGO,,short,cover,321.42,321.42,stated,,,1.0,,,,,closed,stated,closed out of the AVGO short 321.42,16:25 after the close,1486098627712647179,2
+2026-03-24 19:49:32,AXTI,,short,cover,70.4,70.4,stated,,,1.0,,,,,closed,stated,closed out on the last of AXTI in after hours. 70.40-70.80,"after hours, fills 70.40-70.80",1486150006514778112,2
+2026-03-25 08:33:47,AXTI,,short,short,69,69,stated,,4k share starter,,,,,,open,inferred,I have a 4k share starter at 69. Not super liquid this morning but watching to see if the memory action spills over into optics,premarket 08:33; ticker not named - AXTI (next posts 'added to AXTI today at the open'),1486342336135823380,2
+2026-03-25 08:34:10,AVGO,,short,watch,,,,,,,200sma,,,,unknown,stated,AVGO watching as well against the 200sma,,1486342430067523605,2
+2026-03-25 09:30:36,AXTI,,short,add,67.26,,bar,,,,,,,,open,stated,added to AXTI today at the open,,1486356632853020815,2
+2026-03-25 09:32:38,AVGO,,short,short,320.59,320.59,stated,5,5% starter,,200sma,,,,open,inferred,5% starter 320.59 using the 200sma as my guide,ticker from 08:34 'AVGO watching as well against the 200sma',1486357142926659628,2
+2026-03-25 09:44:08,AXTI,,short,add,68.38,68.38,stated,,,,,,,rejection of red/green,open,stated,added the rejection of red/green on both AXTI and LITE,,1486360037852053514 1486360069770707086,2
+2026-03-25 09:44:08,LITE,,short,short,798.55,798.55,stated,,,,,,,rejection of red/green,open,stated,added the rejection of red/green on both AXTI and LITE,says 'added' but LITE went flat 3/24 - effectively a new short; price from the 09:44:30 line,1486360037852053514 1486360133150965951,2
+2026-03-25 15:03:04,AXTI,,short,add,66.28,,bar,,another piece,,,,,,open,stated,wrong channel. But added another piece of AXTI,'wrong channel' remark,1486440301718667305,2
+2026-03-26 09:37:29,AXTI,,short,add,64.84,,bar,2,another 2%,,,,,66.50s as my guide,open,stated,another 2% add on AXTI using 66.50s as my guide for those adds,,1486720754426052688,2
+2026-03-27 09:33:18,ARKK,,short,cover,66.48,66.48,stated,,20% on my remaining,0.2,,,,,partial,stated,20% on my remaining ARKK covered.,,1487082088728625204 1487082098081923254,2
+2026-03-27 09:45:37,AXTI,,short,add,64.39,64.39,stated,2,2% adds,,65,65,65,,open,inferred,64.39 2% adds,"ticker not named; AXTI (adds in progress, ~66 the day before); not ARKK, which was covered at 66.48 twelve minutes earlier",1487085188499505335 1487085209663963256,2
+2026-03-27 12:03:03,APA,,short,short,43.88,43.88,stated,3,3%,,todays highs,,,12x ATR from the 50sma,open,stated,I have a 3% short on APA 43.88,,1487119776118608064 1487119803398357083 1487119843806154762,2
+2026-03-27 13:10:46,APA,,short,add,43.7,43.7,stated,2,2%,,todays highs,,,,open,stated,2% add to APA. still using todays highs for my stop. 43.70,,1487136814509588690,2
+2026-03-27 15:53:56,APA,,short,cover,44.4,44.4,stated,,,1.0,,,,,closed,stated,APA closed 44.40,,1487177877576351945,2
+2026-03-30 10:13:10,APA,,short,short,44.75,44.75,stated,3,3% position to start,,HOD,,,13x ATR from the 50sma,open,stated,44.75 APA short,,1488179285310312560 1488179374971818074 1488179400091635863,2
+2026-03-30 10:46:05,LITE,,short,cover,649.65,649.65,stated,,20%,0.2,,,,,partial,stated,649.65 covered 20% of LITE,,1488187567454163045,2
+2026-03-30 10:47:07,AXTI,,short,cover,51.19,51.19,stated,,20% of my position,0.2,,,,,partial,stated,covered 51.19 AXTI 20% of my position,,1488187826792300795,2
+2026-03-30 13:18:48,APA,,short,add,43.86,43.86,stated,2,2% add; 5% position,,HOD,,,,open,stated,43.86 2% add to APA,,1488226000390066330 1488226015342891219 1488226034456465539,2
+2026-03-31 09:54:37,AVGO,,short,cover,301.04,301.04,stated,,a third,0.333,,,,U&R,partial,stated,covered a third of my AVGO on the U&R setup 301.04,,1488537006291292180,2
+2026-03-31 09:54:57,ARKK,,short,cover,65.63,65.63,stated,,a third,0.333,,,,,partial,stated,covered a third of ARKK also 65.63,,1488537088512233542,2
+2026-03-31 12:41:14,APA,,short,add,43.08,43.08,stated,2,2% more,,,,,,open,stated,added 2% more to APA 43.08,,1488578934902624266,2
+2026-03-31 12:49:49,APA,,short,stop,,,,,,,43.75,43.75,43.75,,open,stated,APA stops 43.75. cost basis 43.98,cost basis 43.98,1488581092825890828,2
+2026-03-31 13:20:06,APA,,short,cover,41.24,41.24,stated,,a third,0.333,,,,into the support gap,partial,stated,41.24 covers on a third of my APA trade into the support gap,,1488588714958655740,2
+2026-03-31 15:38:32,APA,,short,cover,42.4,42.4,stated,,down to half of my original,0.25,,,,,partial,stated,getting down to half of my original APA. 42.40,fraction derived: 2/3 -> 1/2,1488623555452076032,2
+2026-03-31 15:48:36,LITE,,short,stop,,,,,20% more of my original,,701.28,701.28,701.28,,partial,stated,701.28 stop on 20% more of my original LITE,,1488626085699653633,2
+2026-04-01 09:36:58,APA,,short,add,42.02,42.02,stated,,add yesterdays covers (only the second covers),,42.40,42.4,42.4,,open,inferred,42.02 add yesterdays covers,ticker from the 3/31 APA covers,1488894950325227602 1488894981904011404 1488895021594710208,2
+2026-04-01 10:09:00,LITE,,short,cover,761.51,761.51,stated,,another third,0.333,,,,,partial,stated,covered another third of my LITE shares 761.51,,1488903010963685537,2
+2026-04-01 11:08:40,LITE,,short,add,777.17,777.17,stated,5,5% portfolio adds,,,,,,open,stated,777.17 short LITE 5% portfolio adds,,1488918028384206919 1488918140942287052,2
+2026-04-01 11:53:34,AXTI,,short,cover,50.46,50.46,stated,,10% of my remaining,0.1,,,,,partial,stated,covering 10% of my remaining AXTI 50.46,,1488929327449116824,2
+2026-04-01 12:11:02,AVGO,,short,cover,315.67,315.67,stated,,another third of my remaining,0.333,,,,,partial,stated,covering off another third of my remaining AVGO 315.67,,1488933720793813002,2
+2026-04-01 12:31:39,ARKK,,short,add,69.07,69.07,stated,3,3%,,,,,6/20 and rejection of intraday highs,open,stated,added a 3% ARKK postion to my existing shres on this 6/20 and rejection of intraday highs 69.07,,1488938909457973429,2
+2026-04-01 13:04:54,ARKK,,short,cover,69.44,69.44,stated,,my adds and half my my remaining shares,,,,,,partial,inferred,69.44 closed my adds and half my my remaining shares,ticker from the 12:31 ARKK add,1488947279443267804,2
+2026-04-01 13:22:35,LITE,,short,stop,,,,,,,783.60,783.6,783.6,,open,stated,783.60 stop set on LITE. will let it stop me out,,1488951727305789490,2
+2026-04-01 13:23:11,ARKK,,short,add,69.21,69.21,stated,3,3% position,,todays HOD,,,rejecting intraday highs,open,stated,3% position put back on ARKK 69.21rejecting intraday highs again,,1488951881597452319 1488951924165312553,2
+2026-04-01 15:30:39,APA,,short,cover,41.39,41.39,stated,,APA adds,,,,,,partial,stated,closed APA adds 41.39,,1488983957075923166,2
+2026-04-02 08:26:40,LITE,,short,cover,710.0,710.0,stated,,25% of my position,0.25,,,,,partial,stated,got some 710.00 fills on 25% of my position,premarket 08:26; ticker on the next line,1489239648231231660 1489239672629624912,2
+2026-04-02 09:31:13,AXTI,,short,cover,45.62,45.62,stated,,10%,0.1,,,,,partial,stated,covered 10% of my AXTI 45.62,,1489255891550076929,2
+2026-04-02 09:39:29,AXTI,,short,cover,42.23,42.23,stated,,another 10%,0.1,,,,,partial,inferred,got off another 10% 42.23,ticker from the 09:31 AXTI cover,1489257972155551844,2
+2026-04-02 09:52:27,LITE,,short,cover,750.31,750.31,stated,,25% more,0.25,,,,,partial,stated,25% more covered LITE 750.31,,1489261236188352633,2
+2026-04-02 10:16:44,LITE,,short,cover,778.86,778.86,stated,,my LITE adds from yesterday,,,,,,partial,stated,cut my LITE adds from yesterday 778.86,,1489267346559209562,2
+2026-04-02 10:18:39,LITE,,short,cover,785.66,785.66,stated,,,1.0,,,,,closed,stated,LITE is gone 785.66,above the 783.60 stop,1489267829449429102,2
+2026-04-02 10:21:39,AXTI,,short,cover,47.54,47.54,stated,,25% more,0.25,,,,,partial,stated,25% more of my AXTI is closed 47.54,,1489268582750621716,2
+2026-04-02 10:37:41,ARKK,,short,cover,68.77,68.77,stated,,ARKK adds,,,,,,partial,stated,closed ARKK adds 68.77,,1489272619088744489,2
+2026-04-02 10:38:44,APA,,short,cover,41.32,41.32,stated,,a third of my remaining,0.333,,,,,partial,stated,closed off a third of my remaining APA 41.32,,1489272884152107138,2
+2026-04-02 11:52:16,ARKK,,short,add,67.99,67.99,stated,5,5%,,,,,rejecting green on the day,open,stated,stuck 5% ARKK position back on 67.99,,1489291389018833048 1489291409839100005,2
+2026-04-02 12:53:14,AXTI,,short,add,51.74,51.74,stated,3,3% portfolio,,,,,into the 20sma,open,stated,51.74 3% portfolio added back to AXTI into the 20sma,,1489306729740111872,2
+2026-04-02 13:14:04,AXTI,,short,cover,52.53,,bar,,half of those adds,,,,,,partial,stated,reduced half of those adds in AXTI holding the 20sma,,1489311971475067011,2
+2026-04-02 13:35:57,AXTI,,short,add,51.75,51.75,stated,,added those back,,,,,,open,inferred,51.75 added those back,ticker from the 13:14 AXTI line,1489317478386634956 1489317652609503343,2
+2026-04-02 15:13:40,APA,,short,cover,41.96,41.96,stated,,another quarter,,,,,,partial,stated,closed another quarter of my APA 41.96,quarter of original vs remaining not stated,1489342070039642182,2
+2026-04-02 15:43:04,AXTI,,short,cover,52.27,52.27,stated,,AXTI adds,,,,,,partial,stated,closed AXTI adds 52.27,,1489349470570283250,2
+2026-04-02 15:49:26,ARKK,,short,cover,68.37,68.37,stated,,ARKK adds,,,,,,partial,stated,68.37 ARKK adds closed as well,,1489351072106680420,2
+2026-04-06 10:05:52,ARKK,,short,add,69.03,69.03,stated,3,3%,,HOD and the 20sma on the whole position,,,,open,stated,Added 3% ARKK short side 69.03,,1490714163121750106 1490714233350914150,2
+2026-04-06 12:50:28,APA,,short,cover,42.61,42.61,stated,,half of my remining,0.5,,,,,partial,stated,cut half of my remining APA 42.61,,1490755586240020480,2
+2026-04-06 13:04:23,AXTI,,short,cover,40.27,40.27,stated,,a third of my remaining,0.333,,,,,partial,stated,cutting a third of my remaining AXTI 40.27,,1490759088777203833,2
+2026-04-06 15:58:58,APA,,short,cover,43.03,43.03,stated,,,1.0,,,,,closed,stated,closed APA 43.03,,1490803024220651583,2
+2026-04-07 09:31:43,AVGO,,short,add,324.1,324.1,stated,5,5% position,,,,,,open,stated,AVGO adds 324.10 5% position,,1491067958066286664,2
+2026-04-07 09:31:47,AVGO,,short,stop,,,,,,,200sma,,,,open,inferred,using the 200sma as my guide,Guide line follows context msg 1491067958066286664 'AVGO adds 324.10 5% position'; ticker from it.,1491067975099351070,3
+2026-04-07 09:36:25,CAR,,short,short,227.44,227.44,stated,3,3% position,,,,,extension,open,stated,got short a 3% position into this extension on CAR 227.44,,1491069139945521172,3
+2026-04-07 10:02:41,CAR,,short,add,229.52,229.52,stated,3,3%,,235,235,235,,open,stated,3% CAR add 229.52 with my stop at 235,,1491075747350319125,3
+2026-04-07 10:58:20,CAR,,short,cover,233.19,233.19,stated,,half,0.5,,,,,partial,stated,punched out of half of CAR 233.19,,1491089753183879328,3
+2026-04-07 11:07:31,CAR,,short,cover,237,237,stated,,,1.0,,,,,closed,stated,237 closed CAR.,Closed above the stated 235 stop.,1491092066166374402,3
+2026-04-07 11:18:21,CAR,,short,reentry,238.52,238.52,stated,3,3% again,,,,,,open,inferred,238.52 fills on 3% again,Ticker from 1491092114409390170 / CAR thread ('will try again on a bigger squeeze out').,1491094792963358993,3
+2026-04-07 11:27:23,CAR,,short,add,236.46,236.46,stated,3,3%,,,,,,open,inferred,236.46 3% add,Ticker from the CAR re-entry just before.,1491097065311174656,3
+2026-04-07 12:16:25,AXTI,,short,cover,45.2,45.2,stated,,another 25% of my remaining,0.25,,,,,partial,stated,45.20 covered another 25% of my remaining AXTI shares,,1491109403120898331,3
+2026-04-07 12:31:45,CAR,,short,cover,240,240,stated,,,1.0,,,,,closed,stated,closed CAR 240,,1491113265101541517,3
+2026-04-07 12:37:37,AVGO,,short,cover,331.31,331.31,stated,,,1.0,,,,,closed,stated,closed AVGO 331.31,,1491114741530366072,3
+2026-04-07 13:02:37,CAR,,short,reentry,245.52,245.52,stated,3,starter on 3%,,,,,,open,inferred,245.52 starter on 3%,Ticker inferred: later 'closed half of CAR' (1491155264462651532) closes this sequence.,1491121032382386280,3
+2026-04-07 14:14:09,CAR,,short,add,249.6,249.6,stated,3,3%,,,,,,open,inferred,249.60 3% add,Ticker from the CAR starter at 245.52.,1491139033756205247,3
+2026-04-07 14:51:45,CAR,,short,add,244.33,244.33,stated,2,just another 2% size,,,,,,open,inferred,244.33 adds just another 2% size,Ticker from the CAR sequence.,1491148493438451762,3
+2026-04-07 15:18:39,CAR,,short,cover,250.91,250.91,stated,,half,0.5,,,,,partial,stated,closed half of CAR,Price from the next bare line.,1491155264462651532 1491155416330145882,3
+2026-04-07 15:20:19,CAR,,short,stopped_out,252.86,252.86,stated,,the rest,1.0,,,,,closed,inferred,stopped on the rest 252.86,Ticker from 1491155264462651532 'closed half of CAR'.,1491155682735427618,3
+2026-04-07 15:31:12,CAR,,short,reentry,251.31,251.31,stated,3,3% start into the close,,,,,,open,inferred,251.31 3% start into the close,Ticker inferred from the CAR day; stopped out of CAR two minutes earlier.,1491158422924562453,3
+2026-04-07 15:34:08,CAR,,short,add,250.57,250.57,stated,2,2%,,,,,,open,inferred,2% add 250.57,Ticker from the CAR re-entry at 251.31.,1491159159440281690,3
+2026-04-07 15:52:26,CAR,,short,cover,252.89,252.89,stated,,,1.0,,,,,closed,inferred,252.89 closed,Ticker from the CAR sequence.,1491163768380592269,3
+2026-04-07 19:10:45,AXTI,,short,cover,48.44,48.44,stated,,another half; tiny size at this point,0.5,,,,,partial,stated,closed another half of AXTI 48.44. tiny size at this point,Posted 19:10 ET (after hours).,1491213674101346565,3
+2026-04-07 19:18:41,AXTI,,short,cover,49.45,49.45,stated,,the rest,1.0,,,,,closed,inferred,closed out the rest 49.45,Ticker from 1491213674101346565.,1491215671101624622,3
+2026-04-08 09:33:30,CAR,,short,reentry,255.81,255.81,stated,3,3% position,,,,,,open,inferred,255.81 3% position,No ticker; next message 'small CAR add 264.47' gives CAR.,1491430792801423381,3
+2026-04-08 10:01:05,CAR,,short,add,264.47,264.47,stated,3,small; another 3%,,,,,,open,stated,small CAR add 264.47,,1491437734399578264 1491437755828273193,3
+2026-04-08 10:35:34,CAR,,short,add,248.29,248.29,stated,2,2%,,,,,,open,inferred,248.29 2% add,Ticker from CAR adds.,1491446413131911350,3
+2026-04-08 10:46:14,AXTI,,short,reentry,55,55,stated,5,5% position,,,,,,open,stated,I just put a 5% position in AXTI back on $55,AXTI closed 2026-04-07 evening; 'back on'.,1491449095594971417,3
+2026-04-08 12:03:34,CAR,,short,add,244.78,244.78,stated,2,just another 2%,,,,,,open,stated,244.78 just another 2% add on CAR,,1491468559266611231,3
+2026-04-08 12:34:29,CAR,,short,add,240.79,240.79,stated,1,1%,,,,,,open,stated,240.79 1% add to CAR,,1491476338836635720,3
+2026-04-08 12:37:07,AXTI,,short,cover,54.87,54.87,stated,,half,0.5,,,,,partial,stated,closed half of AXTI. too much group strength to stay stubborn 54.87,,1491477000076918814,3
+2026-04-08 12:37:14,AXTI,,short,stop,,,,,,,in the 55s,,,,open,inferred,stop in the 55s on the rest,Stop on the remaining AXTI half; ticker from 1491477000076918814.,1491477030422974556,3
+2026-04-08 13:06:16,AXTI,,short,add,54.25,54.25,stated,,added back the shares covered; back to a 5% position,,,,,,open,stated,added 54.25 on the shares I covered of AXTI,,1491484339467452528 1491484364561846432,3
+2026-04-08 13:50:29,AXTI,,short,stopped_out,55.15,55.15,stated,,,1.0,,,,,closed,stated,got stopped on AXTI 55.15,,1491495463466045501,3
+2026-04-08 14:18:26,AXTI,,short,reentry,54.9,54.9,stated,3,3%; keeping size small,,,,,,open,stated,54.90 3% short AXTI. keeping size small but do want to sneak back into the lagging optics name.,,1491502499050422382,3
+2026-04-08 15:35:51,CAR,,short,cover,253.1,253.1,stated,,half,0.5,,,,,partial,stated,253.10 covers on half of my CAR.,,1491521983245189281,3
+2026-04-08 15:57:13,CAR,,short,cover,258.31,258.31,stated,,,1.0,,,,,closed,stated,258.31 closed CAR,,1491527358975578153,3
+2026-04-09 09:30:39,CAR,,short,short,260.9,,bar,3,3%,,,,,rejection of red/green,open,stated,3% CAR short on the rejection of red/green,,1491792464913367152,3
+2026-04-09 09:32:10,CAR,,short,add,252,252,stated,3,3%,,,,,,open,inferred,3% add 252 adds,Ticker from the CAR short 90s earlier.,1491792844615323738,3
+2026-04-09 09:35:42,AXTI,,short,cover,57.66,57.66,stated,,for now,1.0,,,,,closed,stated,closed AXTI for now 57.66,,1491793735837810770,3
+2026-04-09 09:48:55,AXTI,,short,reentry,60.06,60.06,stated,3,3% position,,,,,,open,stated,short 3% position in AXTI 60.06,,1491797059357904917,3
+2026-04-09 10:04:37,AXTI,,short,cover,61.48,61.48,stated,,,1.0,,,,,closed,stated,AXTI no dice 61.48 exit,'no dice' -> loss exit.,1491801013521223922,3
+2026-04-09 10:06:30,CAR,,short,cover,260.435,,bar,,a loss on half,0.5,,,,,partial,inferred,I could not get out of all my shares before the halt,"Ticker from 1491801423480881376 ('actively trading CAR'); could not get all shares out before the halt; covered half at a loss, no price.",1491801484046762136 1491801510684786850,3
+2026-04-09 10:06:44,CAR,,short,add,276,276,stated,,,,,,,,open,inferred,added 276,First of two adds in one message (276 and 270); ticker from the CAR messages just before.,1491801545468285028,3
+2026-04-09 10:11:05,MU,,short,cover,405.41,,bar,,half,0.5,,,,,partial,stated,Closed half of MU,"No MU entry in this channel's context; direction assumed short by channel default, may be a long posted here.",1491802637425705000,3
+2026-04-09 10:11:15,MU,,short,stop,,,,,,,50sma,,,,open,inferred,will use the 50sma as the stop on the last half,Stop on the last MU half; ticker from 1491802637425705000.,1491802681013174483,3
+2026-04-09 10:15:43,AXTI,,short,reentry,61.21,61.21,stated,3,3%,,,,,,open,stated,61.21 AXTI short 3%,,1491803804264435933,3
+2026-04-09 10:25:47,AXTI,,short,add,60.8,60.8,stated,,,,,,,,open,stated,60.80 adds on AXTI,,1491806336772604037,3
+2026-04-09 10:34:54,AXTI,,short,add,59.93,59.93,stated,,,,,,,,open,inferred,looking for more AXTI adds,Bare price 59.93 follows 'looking for more AXTI adds'; read as an AXTI add fill.,1491808632533418017 1491808804415868949,3
+2026-04-09 10:51:23,CAR,,short,add,262.97,,bar,2,2%,,,,,,open,stated,2% CAR add,,1491812782419738816,3
+2026-04-09 11:33:21,AXTI,,short,trim,62,62,stated,,,,,,,,partial,stated,reduced AXTI 62,'reduced' -- amount not stated.,1491823341718343730,3
+2026-04-09 11:36:24,AXTI,,short,cover,62.175,,bar,,,1.0,,,,,closed,stated,closed AXTI,,1491824111461335092,3
+2026-04-09 11:49:39,ARKK,,short,trim,69.55,69.55,stated,,a third,0.333,,,,,partial,stated,reduced a third of ARKK 69.55,ARKK short from context (2026-04-06 'Added 3% ARKK short side 69.03').,1491827442552410284,3
+2026-04-09 12:06:02,AXTI,,short,reentry,62,62,stated,3,keeping size to 3%,,,,,,open,inferred,AXTI 62 keeping size to 3% until we stay heacy,AXTI was closed at 11:36; read as a new 3% short at 62.,1491831567956316282,3
+2026-04-09 12:58:51,CAR,,short,add,261,261,stated,2,2%,,,,,,open,stated,2% add to CAR 261,,1491844859827585255,3
+2026-04-09 14:04:48,AXTI,,short,add,59.6,59.6,stated,2,2%,,,,,,open,stated,2% add to AXTI 59.60,,1491861457246228674,3
+2026-04-09 14:33:34,CAR,,short,trim,269.74,,bar,,partials,,,,,,partial,stated,reducing partials of CAR above VWAP.,Reducing partials above VWAP.,1491868693129597028,3
+2026-04-09 14:55:31,AXTI,,short,cover,61.12,61.12,stated,,,1.0,flat,,,,closed,stated,AXTI short covered on flat 61.12,Covered at flat.,1491874218953015438,3
+2026-04-09 15:59:43,CAR,,short,short,297.8,297.8,stated,3,3% starter,,,,,,open,stated,297.80 3% starter CAR,New starter; unclear whether earlier CAR shares were fully covered.,1491890373570854979,3
+2026-04-10 09:32:15,AXTI,,short,reentry,63.62,63.62,stated,,,,,,,,open,stated,Short 63.62 AXTI,,1492155254765260810,3
+2026-04-10 09:32:34,CAR,,short,add,292.12,292.12,stated,,,,,,,,open,stated,Added to CAR 292.12,,1492155334121492620,3
+2026-04-10 09:35:32,CAR,,short,add,286,286,stated,2,small; 2% adds,,,,,,open,inferred,Small 286. 2% adds,Ticker from 'Added to CAR' just before.,1492156081202532523,3
+2026-04-10 09:49:16,AXTI,,short,add,63.36,63.36,stated,,,,,,,push into green,open,stated,63.36 adds to AXTI on this push into green,,1492159536730083499,3
+2026-04-10 09:54:53,CAR,,short,add,280.1,280.1,stated,1,1%,,,,,,open,stated,280.10 CAR add 1%,,1492160949056966757,3
+2026-04-10 10:37:22,CAR,,short,add,273.96,273.96,stated,1,small 1%,,,,,,open,stated,small 1% add 273.96,Ticker from 'CAR ^'.,1492171639427694806 1492171657186381998,3
+2026-04-10 10:40:29,AXTI,,short,cover,64.5,64.5,stated,,half my adds,,,,,,partial,stated,covered half my adds 64.50 an AXTI,,1492172424610054144,3
+2026-04-10 11:38:40,AXTI,,short,add,63.94,63.94,stated,3,3%,,,,,,open,stated,AXTI 3% add 63.94 adds. looking to keep them and possibly add more if VWAP stays heavy,,1492187069345300654,3
+2026-04-10 11:40:48,CAR,,short,add,269.15,269.15,stated,1,1%,,,,,,open,stated,1% add to CAR 269.15,,1492187605062779172,3
+2026-04-10 11:57:42,AXTI,,short,add,62.58,62.58,stated,2,2%,,,,,red on the day,open,stated,2% add to AXTI 62.58 red on the day,,1492191859131547649,3
+2026-04-10 12:01:06,CAR,,short,add,263.18,263.18,stated,1,1%,,,,,,open,stated,1% add 263.18 CAR,,1492192711783088230,3
+2026-04-10 12:18:12,CAR,,short,add,260.23,260.23,stated,1,1%,,,,,,open,stated,260.23  1% added to CAR,,1492197018284724407,3
+2026-04-10 12:59:59,AXTI,,short,cover,64.3,64.3,stated,,all,1.0,,,,,closed,stated,64.30 closed all of AXTI.,,1492207531798429706,3
+2026-04-10 13:38:04,CAR,,short,trim,279.42,,bar,,pieces,,,,,,partial,stated,I have been covering up pieces of CAR for the last 20in above VWAP. Volume is nonexistent so I can't punch out all at once. if/when we fail back below VWAP I can continue to short it again,Covering pieces of CAR above VWAP over ~20 minutes; no price.,1492217117679026458,3
+2026-04-10 15:31:12,CAR,,short,cover,291.5,291.5,stated,,the last small piece,1.0,,,,,closed,stated,291.50 closed the last small piece of CAR.,,1492245585581834241,3
+2026-04-13 09:31:59,CAR,,short,reentry,295.53,295.53,stated,,starter,,,,,,open,stated,295.53 starter in CAR,,1493242351953379420,3
+2026-04-13 09:34:10,CAR,,short,add,301,301,stated,,,,red/green,,,,open,inferred,301 adds against the red/green spot,Ticker from the CAR starter just before.,1493242898060279828,3
+2026-04-13 09:40:05,CAR,,short,add,292.06,292.06,stated,,,,,,,,open,stated,292.06 adds to CAR,,1493244388678303924,3
+2026-04-13 09:40:18,CAR,,short,stop,,,,,,,red/green,,,,open,inferred,red/green is my stop for now,Ticker from 1493244388678303924.,1493244444642902056,3
+2026-04-13 09:45:14,AXTI,,short,reentry,62.37,62.37,stated,3,3%,,,,,,open,stated,3% short AXTI 62.37,,1493245683480793189,3
+2026-04-13 09:48:50,CAR,,short,cover,300,300,stated,,half,0.5,,,,,partial,stated,cut half of CAR at 300,,1493246591589552269,3
+2026-04-13 09:49:04,CAR,,short,stop,,,,,,,308,308,308,,open,inferred,will manage the other half aagainst 308,Manage the other half against 308; ticker from 1493246591589552269.,1493246651702313062,3
+2026-04-13 09:49:24,CAR,,short,stopped_out,305.33,,bar,,,1.0,,,,,closed,stated,stopped on CAR,Stop was 308.,1493246732706779288,3
+2026-04-13 09:50:40,AXTI,,short,add,60.17,60.17,stated,,small,,,,,,open,stated,small adds on AXTI 60.17,,1493247051650302094,3
+2026-04-13 09:53:42,CAR,,short,reentry,307.51,307.51,stated,,small starter,,friday high,,,,open,stated,307.51 CAR small starter against against friday high,,1493247817689337928,3
+2026-04-13 10:11:13,AXTI,,short,add,61.66,61.66,stated,3,3%,,,,,,open,stated,3% add to AXTI 61.66,,1493252222719627284,3
+2026-04-13 10:14:55,CAR,,short,add,317,317,stated,3,3%,,,,,,open,stated,3% add to CAR 317,,1493253155281047697,3
+2026-04-13 10:27:00,CAR,,short,add,309.66,309.66,stated,,,,,,,,open,stated,CAR added 309.66,,1493256195606056991,3
+2026-04-13 10:29:48,CAR,,short,add,303.36,303.36,stated,2,2%,,,,,,open,inferred,303.36 2% add,Ticker from 'CAR added 309.66' just before.,1493256900014374933,3
+2026-04-13 10:33:51,AXTI,,short,cover,64.5,64.5,stated,,,1.0,,,,,closed,stated,covered 64.50 AXTI,Read as fully covered: next line 'would consuder starting back in on red'.,1493257918546444359,3
+2026-04-13 10:38:06,AXTI,,short,reentry,63.8,63.8,stated,3,small 3%,,,,,,open,inferred,63.80 small 3% back on,Ticker from 1493257918546444359 (AXTI covered 5 min earlier).,1493258990019285125,3
+2026-04-13 11:22:31,AXTI,,short,add,63.49,63.49,stated,,,,,,,,open,stated,adds to AXTI 63.49,,1493270167445045298,3
+2026-04-13 12:03:06,AXTI,,short,add,62.49,62.49,stated,,,,,,,,open,stated,adds to AXTI 62.49. trying to build in and manage risk against that lecel,,1493280381032599552,3
+2026-04-13 14:50:21,AXTI,,short,cover,63.08,,bar,,,1.0,,,,,closed,stated,closed AXTI,,1493322468604248285,3
+2026-04-13 15:04:15,CAR,,short,short,362.3011,,bar,3,small 3% starter,,highs 364,364,364,,open,inferred,I have a small 3% starter vs highs 364,No ticker; CAR inferred from price level (CAR adds at 349-380 the next day). '364' may be the high he is shorting against or the fill; logged as the stop. No CAR cover since the 10:27 add was reported.,1493325970105565324,3
+2026-04-13 15:05:51,CAR,,short,add,353.48,353.48,stated,2,2%,,,,,,open,inferred,adds 353.48 2% add,"Ticker inferred, follows 1493325970105565324 starter.",1493326369721942189,3
+2026-04-13 15:10:26,CAR,,short,add,349.38,349.38,stated,2,2%,,,,,,open,inferred,349.38 2%,Ticker inferred (same sequence).,1493327526309793886,3
+2026-04-13 15:14:06,CAR,,short,add,344.87,344.87,stated,2,small 2%,,,,,,open,inferred,344.87 small 2% adds,Ticker inferred (same sequence).,1493328446628040896,3
+2026-04-13 15:36:37,ARKK,,short,cover,71.96,71.96,stated,,,1.0,,,,,closed,stated,71.96 ARKK closed,,1493334114944680216,3
+2026-04-14 09:30:37,AXTI,,short,reentry,68,68,stated,3,3%,,,,,,open,stated,got short 3% AXTI at 68,,1493604396477583441,3
+2026-04-14 09:34:46,CAR,,short,short,349.96,349.96,stated,,,,,,,,open,stated,CAR short 349.96,Unclear whether the 2026-04-13 afternoon CAR short was still open.,1493605438707466281,3
+2026-04-14 09:39:46,AXTI,,short,add,64,64,stated,2,2%,,,,,,open,stated,2% short add to AXTI 64,,1493606697363701770,3
+2026-04-14 09:45:17,CAR,,short,add,339.06,,bar,,,,,,,,open,stated,more adds on CAR,,1493608086307340482,3
+2026-04-14 13:58:36,CAR,,short,reentry,380.34,380.34,stated,2,starter size again; 2%,,,,,,open,inferred,380.34 starter size again,No ticker; CAR inferred from price level. No CAR cover reported in between.,1493671832744890679 1493671841406124283,3
+2026-04-14 14:03:32,CAR,,short,add,378.7,,bar,,small,,,,,,open,inferred,small adds,Ticker from the CAR starter at 380.34.,1493673074267131994,3
+2026-04-14 14:21:16,AXTI,,short,short,66.91,66.91,stated,2,2% starter size,,,,,,open,stated,2% starter size on AXTI 66.91,'starter' although no AXTI cover since the 68/64 entries was reported.,1493677540760489995,3
+2026-04-14 14:29:45,AXTI,,short,add,66.59,,bar,,small,,,,,on red,open,stated,small AXTI adds on red,,1493679675635925092,3
+2026-04-15 09:39:01,CAR,,short,short,393,393,stated,3,3% position,,,,,VWAP failure,open,stated,put on a 3% position 393 on the VWAP failure CAR,,1493968894426222643,3
+2026-04-15 09:40:13,AXTI,,short,short,64.33,64.33,stated,3,3%,,,,,VWAP failure,open,stated,3% on AXTI VWAP failure 64.33,,1493969198290960385,3
+2026-04-15 10:41:48,AXTI,,short,cover,66.8,,bar,,,1.0,,,,,closed,stated,closed AXTI on green,Closed on green (no price).,1493984694931554478,3
+2026-04-15 15:06:50,AXTI,,short,cover,59.52,59.52,stated,,a third,0.333,,,,,partial,stated,covered off a third of AXTI 59.52,AXTI was closed at 10:41; a re-entry between was not posted.,1494051395391848508,3
+2026-04-15 15:31:14,AXTI,,short,cover,61.31,61.31,stated,,another third,0.333,,,,,partial,stated,covered another third of AXTI 61.31,,1494057534385033320,3
+2026-04-15 15:55:27,AXTI,,short,cover,62.59,62.59,stated,,,1.0,,,,,closed,stated,closed AXTI 62.59,,1494063627219636225,3
+2026-04-16 09:30:50,AXTI,,short,short,61,61,stated,,,,,,,,open,stated,have a AXTI short on 61,,1494329225426239570,3
+2026-04-16 09:38:42,CAR,,short,short,409,409,stated,5,5%,,yesterdays highs,,,,open,stated,Short CAR against yesterdays highs. 5% 409,,1494331204680421406,3
+2026-04-16 09:39:36,CAR,,short,add,402,402,stated,,,,,,,sub VWAP,open,inferred,402 sub VWAP add,Ticker from the CAR short just before.,1494331429423808512,3
+2026-04-16 09:40:42,AXTI,,short,stopped_out,63,63,stated,,,1.0,,,,,closed,stated,stopped on AXTI 63,,1494331705950076928,3
+2026-04-16 10:25:07,AXTI,,short,reentry,71.49,71.49,stated,,small,,,,,DTSS,open,stated,started into AXTI small as a DTSS 71.49,,1494342886928421026,3
+2026-04-16 10:29:42,AXTI,,short,cover,74,74,stated,,,1.0,,,,,closed,stated,Out of AXTI 74,,1494344038256611328,3
+2026-04-16 11:25:43,CAR,,short,short,433.87,433.87,stated,3,3% starter,,,,,squeeze out,open,inferred,433.87 in that squeeze out,No ticker; CAR inferred from price level and the next adds ('a little more CAR 411'). No cover of the 409/402 CAR short was reported.,1494358134435746016 1494358166421639339,3
+2026-04-16 11:31:15,CAR,,short,add,420,420,stated,,,,,,,,open,inferred,420 adds,Ticker inferred from the CAR sequence.,1494359528815198418,3
+2026-04-16 11:40:26,CAR,,short,add,411,411,stated,,a little more,,,,,,open,stated,a little more CAR 411,,1494361838790643852,3
+2026-04-16 12:09:01,AXTI,,short,reentry,75.06,75.06,stated,1.5,small 1.5% size,,,,,,open,stated,small 1.5% size on AXTI 75.06,,1494369033036763331,3
+2026-04-17 09:41:37,CAR,,short,watch,,,,,,,,,,below VWAP,unknown,stated,CAR short idea still in tact,'CAR short idea still in tact / below VWAP I have my eyes on it'.,1494694326733639762 1494694354202136728,3
+2026-04-17 10:53:12,CAR,,short,short,469.15,469.15,stated,,starter,,,,,volume pickup,open,inferred,469.15 starter into this volume pickup,No ticker; CAR inferred from the CAR watch 11 min earlier and price level.,1494712340288110814,3
+2026-04-17 10:54:27,AXTI,,short,short,79.75,,bar,,starter,,green,,,,open,stated,AXTI starter short against green as well,,1494712654495748286,3
+2026-04-20 10:59:21,AXTI,,short,short,76.3,76.3,stated,2,2% starter,,$80,80,80,,open,stated,AXTI short 2% starter using $80 as the stop,,1495801050324537526 1495801065130557451,3
+2026-04-20 15:02:19,CAR,,short,short,581,581,stated,3,3% starter,,highs,,,,open,stated,took a 3% starter 581 in CAR with stop to highs.,,1495862196587073576,3
+2026-04-20 15:14:53,CAR,,short,add,575.54,575.54,stated,,,,,,,,open,stated,575.54 adds to CAR,,1495865360325283840,3
+2026-04-20 15:31:48,CAR,,short,cover,583.74,583.74,stated,,half,0.5,,,,,partial,stated,583.74 cut half. Wont stick with adds or with the short if we can't stay heavy. Above VWAP is no good,,1495869614935113808,3
+2026-04-20 15:36:43,CAR,,short,cover,584.0,,bar,,,1.0,,,,,closed,stated,CAR closed,,1495870852263182418,3
+2026-04-20 15:55:29,AXTI,,short,cover,78,78,stated,,half,0.5,,,,,partial,stated,chopped off half of that AXTI 78,Position was 'super small 2.2%' per 1495873360561836203.,1495875575405871198,3
+2026-04-20 15:58:01,AXTI,,short,cover,78.55,78.55,stated,,,1.0,,,,,closed,inferred,78.55 just closed it off.,Ticker from 1495875575405871198.,1495876213552709874,3
+2026-04-21 09:48:20,AXTI,,short,short,74,74,stated,,,,76,76,76,,open,stated,AXTI short 74 with a stop against 76,,1496145566575624374,3
+2026-04-22 13:39:40,CAR,,short,cover,553,553,stated,,1/5th of the position,0.2,,,,,partial,stated,covers on CAR 553 on 1/5th of the position,No CAR short entry posted after the 2026-04-20 close.,1496566175042371754,3
+2026-04-22 13:41:42,CAR,,short,cover,559.5,559.5,stated,,a little more; 1/3rd covered,,,,,,partial,inferred,559.50 a little more covered.,Ticker from 1496566175042371754; '1/3rd covered' read as cumulative.,1496566683723108392 1496566697094545688,3
+2026-04-22 15:31:01,CAR,,short,cover,468,468,stated,,another 30% of what I have left,0.3,,,,,partial,inferred,468 covered another 30% of what I have left.,Ticker from the CAR covers earlier today.,1496594196407124143,3
+2026-04-22 15:59:16,CAR,,short,cover,435.08,435.08,stated,,another third of my shares,0.333,,,,,partial,inferred,435.08 another third of my shares covered,Ticker from CAR covers.,1496601305161007144,3
+2026-04-23 09:31:10,AXTI,,short,short,82,82,stated,,,,,,,,open,stated,just took AXTI short 82,,1496866023884853501,3
+2026-04-23 09:41:57,AXTI,,short,cover,82.3,,bar,,,1.0,,,,,closed,stated,AXTI starter no luck,'no luck' -> loss exit.,1496868735519293531,3
+2026-04-23 09:45:26,AXTI,,short,watch,,,,,,,,,,stay heavy sub VWAP,unknown,inferred,watching for it to stay heavy sub VWAP,Ticker from 1496868735519293531.,1496869615882473586,3
+2026-04-23 09:49:51,CAR,,short,cover,328,328,stated,,half of my remaining,0.5,,,,,partial,stated,covering half of my remaining CAR 328,,1496870727041679533,3
+2026-04-23 15:36:41,MRVL,,short,short,163.53,163.53,stated,3,3%,,,,,,open,stated,3% $MRVL short 163.53,,1496958009979699200,3
+2026-04-23 15:51:15,CAR,,short,cover,231.09,231.09,stated,,,1.0,,,,,closed,stated,CAR closed 231.09,,1496961674937372673,3
+2026-04-23 17:51:09,MRVL,,short,cover,167.89,167.89,stated,,half,0.5,,,,,partial,stated,167.89 closed half of MRVL,,1496991850496524399,3
+2026-04-23 17:51:20,MRVL,,short,stop,,,,,,,over 168,168,168,,open,inferred,need to close out more over 168,'need to close out more over 168'.,1496991893396127814,3
+2026-04-23 17:55:43,MRVL,,short,cover,167.99,,bar,,,1.0,,,,,closed,stated,MRVL closed,,1496992998683050164,3
+2026-04-24 09:50:06,AMD,,short,short,345.59,345.59,stated,3,starter; 3%,,348 is the guide,348,348,,open,stated,AMD starter 345.59,,1497233177301880985 1497233284231335937,3
+2026-04-24 10:16:10,AMD,,short,cover,348.32,348.32,stated,,,1.0,,,,,closed,stated,AMD closed,,1497239737650511963 1497239781204164760,3
+2026-04-24 10:22:10,AMD,,short,reentry,346.43,346.43,stated,,,,,,,through premarket highs,open,stated,AMD once again 346.43 through premarket highs,,1497241246777737268,3
+2026-04-24 11:09:08,AMD,,short,cover,349.09,,bar,,,1.0,,,,,closed,stated,AMD closed,,1497253064720121896,3
+2026-04-24 12:32:40,MRVL,,short,cover,164.24,164.24,stated,,another 20% of my short,0.2,,,,VWAP reclaim,partial,stated,164.24 covered another 20% of my short on this VWAP reclaim.,Ticker from 'MRVL ^'. MRVL was closed 2026-04-23; a re-short was not posted.,1497274089222574253 1497274367975882996,3
+2026-04-24 12:50:41,AXTI,,short,cover,80,80,stated,,,1.0,,,,,closed,stated,AXTI no dice. closed at $80,'no dice' -> loss exit; AXTI short since the 2026-04-23 82 entry not otherwise posted.,1497278619750240266,3
+2026-04-24 12:51:36,MRVL,,short,add,162.89,162.89,stated,3,small 3% portfolio position,,,,,,open,stated,MRVL add back a small 3% portfolio position 162.89,,1497278850319646782,3
+2026-04-24 12:55:59,AMD,,short,reentry,348.86,348.86,stated,3,3% starter,,,,,6/20,open,stated,AMD 3% starter on this 6/20 setup 348.86,,1497279956819120269,3
+2026-04-24 13:14:01,AXTI,,short,reentry,80,80,stated,2,very small 2% position,,,,,,open,stated,I started myself into AXTI again $80. very small 2% position,,1497284493789233294,3
+2026-04-24 13:22:34,AMD,,short,add,347.0,,bar,3,3%,,,,,,open,stated,3% adds to AMD,,1497286643923681400,3
+2026-04-24 13:22:41,AXTI,,short,add,79.14,,bar,,building myself back into,,,,,,open,stated,and building myself back into AXTI,,1497286672654798848,3
+2026-04-27 09:35:57,MRVL,,short,add,158.12,158.12,stated,2,small; just another 2%,,,,,,open,stated,small MRVL adds 158.12,,1498316777812394157 1498316816651653211,3
+2026-04-27 09:36:31,AXTI,,short,add,69.9,69.9,stated,2,another 2%,,,,,,open,stated,another 2% add to AXTI as well 69.90,,1498316921810980946,3
+2026-04-27 09:48:57,AMD,,short,cover,333.07,333.07,stated,,20%,0.2,,,,,partial,stated,AMD 333.07 20% of AMD covered,,1498320049755390164,3
+2026-04-27 09:53:40,MRVL,,short,cover,152.87,152.87,stated,,20%,0.2,,,,,partial,stated,20% MRVL 152.87 covered,,1498321238052048967,3
+2026-04-27 11:44:28,MRVL,,short,cover,156.33,156.33,stated,,another 20% of my remaining shares,0.2,reclaim 159,,,,partial,stated,MRVL another 20% covered of my remaining shares 156.33. No more to cover unless we reclaim 159,No more covering unless 159 is reclaimed.,1498349119612391544,3
+2026-04-27 15:53:17,MRVL,,short,cover,158.16,158.16,stated,,another 20%,0.2,,,,,partial,stated,covered another 20% of MRVL 158.16,,1498411738448658613,3
+2026-04-28 09:30:22,MRVL,,short,cover,147.61,147.61,stated,,20%,0.2,,,,,partial,inferred,147.61 MRVL covered,Size from the plan message 1498677559854895267.,1498677761634598952 1498677559854895267,3
+2026-04-28 09:30:44,AMD,,short,cover,314.83,314.83,stated,,20%,0.2,,,,,partial,inferred,314.83 AMD,Bare 'AMD' price; action and size from the plan message 1498677559854895267.,1498677853724868649 1498677559854895267,3
+2026-04-28 09:33:40,AXTI,,short,cover,66.36,66.36,stated,,20%,0.2,,,,bounce on the 20sma,partial,stated,covered 20% 66.36 AXTI,,1498678591620251668 1498678619692728360,3
+2026-04-28 09:36:16,MRVL,,short,cover,151.8,151.8,stated,,another 20% of my remaining,0.2,,,,reclaim of prior day low,partial,stated,MRVL another 20% of my remaining MRVL covered on the reclaim of prior day low 151.80,,1498679247030456400,3
+2026-04-28 09:42:40,AMD,,short,cover,324.21,324.21,stated,,another 10%,0.1,,,,,partial,stated,AMD another 10% covered 324.21,,1498680855357292624,3
+2026-04-29 09:54:15,AXTI,,short,cover,73,73,stated,,another 20%,0.2,,,,,partial,stated,covered off another 20% of AXTI,,1499046159061356656 1499046179890004072,3
+2026-04-29 10:32:51,AMD,,short,trim,328.52,328.52,stated,,20%,0.2,,,,,partial,stated,20% trim AMD 328.52,,1499055875992846409,3
+2026-04-29 10:38:44,AXTI,,short,add,74.69,74.69,stated,,todays covers back on,,,,,,open,stated,added todays covers back on AXTI 74.69,,1499057355847897088,3
+2026-04-29 12:28:14,INTC,,short,short,92.03,92.03,stated,5,5%,,,,,6/20 setup and 15x ATR from the 50sma,open,stated,5% INTC short 92.03,,1499084911414608054 1499084958298542261,3
+2026-04-29 14:10:50,AMD,,short,add,333.48,333.48,stated,3,3%,,,,,resistance gap failure,open,stated,AMD 3% add 333.48,,1499110729977041047 1499110768766095482,3
+2026-04-29 14:23:50,AMD,,short,cover,336,336,stated,,half of my AMD position,0.5,,,,,partial,stated,AMD covered half of my AMD position 336,,1499114002414833814,3
+2026-04-29 14:24:13,AMD,,short,stop,,,,,,,338,338,338,,open,inferred,338 will cover the last of it,'338 will cover the last of it'.,1499114097382260836,3
+2026-04-29 14:55:37,INTC,,short,cover,93.88,,bar,,,1.0,,,,,closed,stated,closed INTC,,1499122002617958431,3
+2026-04-29 15:08:58,AMD,,short,cover,338.54,338.54,stated,,,1.0,,,,,closed,stated,AMD closed 338.54,,1499125360296464577,3
+2026-04-29 15:54:01,MRVL,,short,cover,155.97,155.97,stated,,another 10%,0.1,,,,,partial,stated,closing another 10% MRVL 155.97,,1499136697127145612,3
+2026-04-29 16:18:55,INTC,,short,reentry,93.72,93.72,stated,3,3% position,,,,,,open,stated,put on a 3% INTC position 93.72,Posted 16:18 ET (after hours).,1499142964356714668,3
+2026-04-30 10:59:07,MRVL,,short,cover,162.23,162.23,stated,,,1.0,,,,,closed,stated,162.23 MRVL closed,,1499424873636958420,3
+2026-04-30 11:38:27,INTC,,short,short,94.21,94.21,stated,5,5% short,,red/green,,,,open,stated,short INTC using red/green as my guide 94.21,Unclear whether the 93.72 after-hours INTC short was still open.,1499434769664966698 1499435407283060807,3
+2026-04-30 12:11:45,AXTI,,short,cover,76.6,76.6,stated,,half,0.5,,,,,partial,stated,covered half of my AXTI 76.60,,1499443151209758872,3
+2026-04-30 12:11:53,AXTI,,short,stop,,,,,,,flat,,,,open,inferred,stop at flat on the rest,Stop on the remaining AXTI; ticker from 1499443151209758872.,1499443183271280642,3
+2026-04-30 12:26:04,AXTI,,short,cover,78,78,stated,,,1.0,,,,,closed,stated,AXTI closed 78,Likely the flat stop.,1499446752057495633,3
+2026-04-30 13:57:21,INTC,,short,cover,94.82,94.82,stated,,,1.0,,,,,closed,stated,INTC cut 94.82,,1499469725376315524,3
+2026-04-30 14:10:10,INTC,,short,reentry,94.31,94.31,stated,,,,green,,,,open,inferred,94.31 tried again,Ticker from 'INTC cut 94.82' 13 min earlier.,1499472953576919071 1499472973352927262,3
+2026-04-30 14:54:09,INTC,,short,add,93.5,93.5,stated,,,,,,,break of VWAP,open,inferred,93.50 add on the break of VWAP,Ticker from the INTC re-entry.,1499484019748765957,3
+2026-04-30 15:45:04,INTC,,short,cover,93.93,,bar,,,1.0,flat,,,,closed,stated,INTC closed flat,Closed flat.,1499496832764608673,3
+2026-04-30 16:09:32,AXTI,,short,short,75.3,,bar,,some,,,,,rejection of the resistance gap $84,open,stated,AXTI stuck some short on. rejection of the resistance gap $84,"$84 is the resistance-gap level, probably near the fill; not logged as the price.",1499502992444096592,3
+2026-05-01 09:40:27,AXTI,,short,add,91.18,91.18,stated,,,,,,,,open,stated,I have an AXTI add 91.18,,1499767462806163487,3
+2026-05-01 10:36:39,INTC,,short,short,97.96,97.96,stated,5,5%,,,,,,open,stated,INTC 97.96 5% short,,1499781606960005202,3
+2026-05-01 10:53:57,INTC,,short,cover,99.52,,bar,,,,,,,,unknown,inferred,INTC no dice,"'no dice'; at 11:45 he says he is 'Keeping a 3% starter on INTC', so this may have been a partial cover.",1499785961347747941,3
+2026-05-01 11:01:27,INTC,,short,watch,,,,,,,,,,big volume reject at the $100 breakout; 16x ATR from the 50sma,unknown,stated,Big volume reject on INTC at the $100 breakout,,1499787848260255756 1499787962987053147,3
+2026-05-01 11:45:17,INTC,,short,short,99.01,,bar,3,3% starter; super small,,$100 level,100,100,,open,inferred,Keeping a 3% starter on INTC using that $100 level as my guide. super small,'Keeping' a 3% starter -- may be the remainder rather than a new fill.,1499798876339835021,3
+2026-05-01 13:37:50,INTC,,short,add,98.2,98.2,stated,,,,,,,,open,inferred,looking to keep building into INTC,Price from the next bare line.,1499827204329050333 1499827282339037366,3
+2026-05-01 14:42:36,AXTI,,short,add,90.1,90.1,stated,,,,,,,losing that left side peak,open,inferred,AXTI losing that left side peak,Bare price 90.10 read as an AXTI add (he was piecing into AXTI).,1499843499908923564 1499843517034533015,3
+2026-05-01 15:18:44,INTC,,short,stop,,,,,,,above $100,100,100,,open,stated,INTC above $100 I will close my position. Will not get agressive untul it breaks VWAP,,1499852594112233684,3
+2026-05-01 15:28:59,INTC,,short,cover,100.06,100.06,stated,,,1.0,,,,,closed,stated,INTC closed 100.06,,1499855174997377067,3
+2026-05-01 15:45:03,AXTI,,short,cover,92.75,,bar,,,1.0,,,,,closed,inferred,AXTI will not keep either. can deal with it next week,'will not keep either' read as closing AXTI into the weekend; no price.,1499859215727198379,3
+2026-05-04 09:43:28,AXTI,,short,short,97.44,97.44,stated,3,3%,,,,,sub VWAP,open,stated,3% short 97.44 AXTI. has to stay sub VWAP for me to want to add,,1500855384242655433,3
+2026-05-04 11:05:59,AXTI,,short,cover,97.6,97.6,stated,,half,0.5,,,,,partial,stated,closed half of AXTI. holding back above VWAP. 97.60,,1500876151222960382,3
+2026-05-05 09:48:33,AXTI,,short,short,107.31,107.31,stated,3,3%,,,,,,open,stated,3% AXTI short 107.31,Unclear whether the remaining half from 2026-05-04 was still open.,1501219052948033626,3
+2026-05-05 09:50:11,AXTI,,short,add,105.85,,bar,,small,,,,,failure,open,inferred,small adds there on the failure looking for pops to stay heavy,Ticker from 1501219052948033626.,1501219462656032928,3
+2026-05-06 09:31:16,AXTI,,short,short,108,108,stated,3,3%,,HOD,,,,open,stated,108 AXTI 3% short. HOD is my stop for now,,1501577092733862020,3
+2026-05-06 12:37:26,AXTI,,short,cover,100.22,100.22,stated,,a third,0.333,,,,,partial,stated,cut a third of my AXTI 100.22,,1501623941817696369,3
+2026-05-06 14:00:28,AXTI,,short,cover,103.37,,bar,,more,,,,,,partial,stated,closed off more AXTI,,1501644835680026633,3
+2026-05-06 14:00:28,AXTI,,short,stop,,,,,,,flat,,,,open,stated,stops at flat on the rest,,1501644835680026633,3
+2026-05-06 14:35:28,AXTI,,short,cover,105.935,,bar,,,1.0,,,,,closed,stated,AXTI closed,,1501653646662832288,3
+2026-05-07 13:26:49,AXTI,,short,short,103.48,103.48,stated,,some,,,,,,open,stated,I just put on some AXTI short,Fill from the next bare line.,1501998758601294024 1501998794122727474,3
+2026-05-07 13:27:00,AXTI,,short,add,102.96,102.96,stated,,,,,,,,open,inferred,102.96,Second bare fill price after 'I just put on some AXTI short'.,1501998802780033256 1501998758601294024,3
+2026-05-07 14:30:07,AXTI,,short,add,104.64,104.64,stated,,,,106.50,106.5,106.5,,open,stated,104.64 add on AXTI,,1502014686646767699 1502014736559247380,3
+2026-05-07 15:37:04,AXTI,,short,cover,105.4,105.4,stated,,half,0.5,,,,,partial,stated,closed half of my AXTI 105.40,,1502031537422598234,3
+2026-05-11 10:32:39,PLTR,,short,short,134.68,134.68,stated,5,5%,,136,136,136,loss of its opening print,open,stated,Short 5% PLTR 134.68 using on the loss of its opening print,,1503404478936645662 1503404511992217630,3
+2026-05-11 15:12:17,PLTR,,short,cover,136.58,,bar,,,1.0,,,,,closed,stated,PLTR closed,,1503474850675822843,3
+2026-05-12 09:53:09,AXTI,,short,short,125.24,125.24,stated,,,,,,,green/red move,open,stated,Short AXTI 125.24 green/red move.,,1503756926570463342,3
+2026-05-12 09:59:34,PLTR,,short,short,135.62,135.62,stated,5,5%,,,,,,open,stated,took a 5% short PLTR 135.62,,1503758540492247093,3
+2026-05-12 15:49:14,PLTR,,short,cover,135.22,135.22,stated,,,1.0,,,,,closed,stated,PLTR closed,,1503846537694810215 1503846562512769104,3
+2026-05-13 09:44:45,PLTR,,short,reentry,133.66,133.66,stated,5,5%,,HOD,,,,open,stated,PLTR short back on 133.66,,1504117201492250825 1504117231745892444,3
+2026-05-14 12:02:54,PLTR,,short,cover,133.6899,,bar,,,1.0,,,,,closed,stated,PLTR closed at flat,Closed at flat.,1504514352949231806,3
+2026-05-15 09:38:24,AXTI,,short,short,114,114,stated,,starter,,,,,,open,stated,i just put on a starter AXTI short 114,,1504840377709101127,3
+2026-05-15 09:51:33,AXTI,,short,add,113.92,,bar,,,,,,,green/red failure,open,inferred,add on on the green/red failure,Ticker from 1504840377709101127.,1504843686498926745,3
+2026-05-19 09:47:00,AXTI,,short,short,109.59,109.59,stated,3,3% position,,,,,,open,stated,took AXTI short 109.59 3% position,,1506292094203985950,3
+2026-05-19 10:16:37,AXTI,,short,add,108.06,108.06,stated,2,2%,,,,,,open,stated,AXTI add 108.06 2%,,1506299545087246486,3
+2026-05-19 13:19:50,AXTI,,short,cover,114.89,114.89,stated,,half,0.5,,,,,partial,stated,cut half of my AXTI here 114.89,,1506345652672790579,3
+2026-05-27 09:38:25,CRWD,,short,short,654.18,654.18,stated,10,10%,,,,,,open,stated,10% CRWD short 654.18,,1509189036433084427,3
+2026-05-27 11:32:36,ARKK,,short,short,78,78,stated,2,2%,,,,,,open,stated,2% ARKK short $78. looking to add more but will do so slowly with eyes on TSLA,Watching TSLA for direction.,1509217771123380254,3
+2026-05-27 11:38:06,ARKK,,short,add,77.8,77.8,stated,,,,,,,,open,inferred,Looking to add if we stay heavy. added 77.80,Ticker from the ARKK short 6 min earlier.,1509219153536483458,3
+2026-05-27 11:41:25,ARKK,,short,add,77.75,77.75,stated,,small pieces,,,,,,open,inferred,77.75 will keep adding small pieces all the way down if it's working,Ticker from the ARKK sequence.,1509219991692513280,3
+2026-05-27 11:44:08,ARKK,,short,add,77.71,77.71,stated,,sitting on a 5% position now,,,,,,open,inferred,77.71 adds,Ticker from the ARKK sequence.,1509220672067604694 1509220755408158942,3
+2026-05-28 09:59:49,ARKK,,short,cover,78.58,78.58,stated,,,1.0,,,,,closed,stated,closed ARKK 78.58,,1509556809889742879,3
+2026-05-28 10:54:09,CRWD,,short,stopped_out,661.86,661.86,stated,,,1.0,,,,,closed,stated,CRWD stopped out 661.86,,1509570482209558689,3
+2026-06-04 13:35:14,AAOI,,short,short,205.02,205.02,stated,3,3%,,,,,,open,stated,205.02 short 3% on AAOI,,1512147735648669967,3
+2026-06-04 15:07:53,AAOI,,short,cover,206.63,206.63,stated,,,1.0,,,,,closed,stated,AAOI closed. consolidation a bit too long there 206.63,,1512171052174803086,3
+2026-06-05 10:55:05,AAOI,,short,reentry,205.63,205.63,stated,3,3%,,210 risk off area,210,210,,open,stated,205.63 AAOI 3% short,,1512469821189656756 1512469934763151400,3
+2026-06-05 11:23:25,CRDO,,short,short,223.11,223.11,stated,3,3%,,230,230,230,,open,stated,3% short 223.11 CRDO,,1512476950478983300 1512477071043985500,3
+2026-06-05 11:48:56,CRDO,,short,stop,,,,,,,5min hold over 230,230,230,,open,inferred,if we get a 5min hold over this 230 level I wont stick around. will cut. Needed to wait for VWAP to break more decisively,Ticker from the CRDO short.,1512483372415451137,3
+2026-06-05 12:53:23,AAOI,,short,cover,188.36,188.36,stated,,20%,0.2,,,,,partial,stated,cover 20% of my AAOI 188.36,,1512499590887375020,3
+2026-06-05 13:58:31,AXTI,,short,cover,91.85,91.85,stated,,20%,0.2,,,,,partial,stated,91.85 20% of AXTI covered,No AXTI entry posted since 2026-05-19.,1512515982260699218,3
+2026-06-05 14:58:04,CRDO,,short,cover,210.25,210.25,stated,,a third,0.333,,,,,partial,stated,closed a third of CRDO 210.25,,1512530969410932837,3
+2026-06-08 11:34:36,LITE,,short,short,889.7,889.7,stated,5,5%,,,,,,open,stated,5% LITE short 889.70,,1513566928193720412,3
+2026-06-09 09:30:42,AAOI,,short,cover,206.36,206.36,stated,,,1.0,,,,,closed,stated,AAOI short closed 206.36,,1513898136400298046,3
+2026-06-09 09:31:01,CRDO,,short,cover,231.28,231.28,stated,,,1.0,,,,,closed,stated,CRDO 231.28 closed,,1513898214133334156,3
+2026-06-09 12:27:05,LITE,,short,cover,794.22,794.22,stated,,30%,0.3,,,,,partial,stated,30% of LITE covered 794.22,,1513942523247198368,3
+2026-06-09 12:56:26,AXTI,,short,cover,76.5,76.5,stated,,another 20%,0.2,,,,,partial,stated,76.50 another 20% covered AXTI,,1513949910351876339,3
+2026-06-11 09:33:35,AAOI,,short,short,166.55,166.55,stated,3,3%,,HOD,,,,open,stated,3% AAOI short 166.55 with a stop at HOD,Preceded by a stray '3' line.,1514623635816714331 1514623516836892844,3
+2026-06-11 09:48:06,AAOI,,short,cover,170.45,170.45,stated,,,1.0,,,,,closed,stated,AAOI closed 170.45,,1514627289932103770,3
+2026-06-11 10:18:37,AAOI,,short,reentry,168.42,168.42,stated,,,,,,,loss of VWAP and prior day low,open,stated,Tried AAOI once again loss of VWAP and prior day low,,1514634970830868703 1514635002372030585,3
+2026-06-11 15:45:22,AAOI,,short,cover,174.4,174.4,stated,,,1.0,,,,,closed,stated,AAOI closed 174.40,,1514717198654898307,3
+2026-06-12 10:11:42,LITE,,short,cover,914.86,914.86,stated,,,1.0,,,,,closed,stated,LITE closed 914.86,,1514995619373121646,3
+2026-06-16 09:57:03,WDC,,short,short,721.51,721.51,stated,5,5%,,HOD,,,against premarket highs,open,stated,Took 5% WDC short 721.51,,1516441480565227562 1516441503726305290 1516441515361308813,3
+2026-06-17 09:36:28,WDC,,short,cover,720.18,720.18,stated,,,1.0,,,,,closed,stated,closed WDC 720.18,,1516798688180174918,3
+2026-06-25 09:42:21,AXTI,,short,trim,66.11,66.11,stated,,10% on my remaining,0.1,,,,,partial,stated,10% trim on my remaining AXTI 66.11,,1519699271648149546,3
+2026-06-25 10:08:29,AXTI,,short,cover,66.45,66.45,stated,,another 10%,0.1,,,,,partial,inferred,another 10%^ covered 66.45,Ticker from '^' / 1519699271648149546.,1519705851508559942,3
+2026-07-01 13:59:24,CRWD,,short,short,774.34,774.34,stated,5,5%,,HOD,,,DTSS,open,stated,5% CRWD short 774.34,Next CRWD prices are 195-200; 774.34 vs 197.21 close is inconsistent (possible typo or a different ticker).,1521938291405094943 1521938312603111454 1521938334958489703,3
+2026-07-01 14:01:56,CVNA,,short,short,69.94,69.94,stated,2,2%,,,,,declining 50sma and resistance gap,open,stated,CVNA 2% short against the declining 50sma and resistance gap,,1521938928666677339 1521938965672890389,3
+2026-07-02 09:54:42,CRWD,,short,cover,197.21,197.21,stated,,,1.0,,,,,closed,stated,CRWD closed 197.21,Price inconsistent with the 774.34 entry as written.,1522239097152868362,3
+2026-07-02 10:44:10,CRWD,,short,reentry,195.05,195.05,stated,5,5% position; sub 5% position,,,,,DTSS,open,stated,CRWD one more stab 195.05 DTSS once again 5% position,,1522251545847271575 1522251690168946688,3
+2026-07-02 14:00:00,AXTI,,short,trim,53.52,53.52,stated,,a third of my remaining,0.333,,,,,partial,stated,Trimmed a third of my remaining AXTI 53.52,,1522300829414064260,3
+2026-07-02 14:06:45,AXTI,,short,trim,54.39,54.39,stated,,another third,0.333,,,,,partial,stated,took off another third of that AXTI 54.39,,1522302525364113529,3
+2026-07-06 09:38:04,CRWD,,short,cover,200.53,200.53,stated,,,1.0,,,,,closed,stated,CRWD closed 200.53,,1523684462976569425,3
+2026-07-10 11:43:46,NVDA,,short,short,207.87,207.87,stated,5,5% position,,,,,,open,stated,NVDA short 5% position 207.87,,1525165648672456997,3
+2026-07-10 12:20:10,NVDA,,short,cover,209.9,209.9,stated,,,1.0,,,,,closed,stated,NVDA closes 209.90,,1525174806901690428,3
+2026-07-16 10:12:01,CVNA,,short,cover,72.56,72.56,stated,,,1.0,,,,,closed,stated,CVNA closed 72.56,,1527316884792410272,3
+2026-07-21 10:05:07,CIFR,,short,short,22.23,22.23,stated,3,3%,,$23; 50sma guide,23,23,,open,stated,tried a 3% CIFR 22.23,,1529127086785171537 1529127110550229083 1529127171132624927,3
+2026-07-21 11:10:01,CIFR,,short,cover,23.22,23.22,stated,,half,0.5,,,,,partial,stated,CIFR closed out half 23.22,,1529143422336762001,3
+2026-07-21 11:15:52,CIFR,,short,cover,22.38,22.38,stated,,the rest,1.0,,,,,closed,stated,CIFR closed the rest,,1529144893958783026 1529144925487235102,3
+2026-07-21 13:55:38,CIFR,,short,reentry,23.92,23.92,stated,3,one more small stab; just under 3% size,,,,,resistance gap,open,stated,one more small stab on CIFR against the resistance gap 23.92,,1529185098837000414 1529185144383082667,3
+2026-07-23 10:44:08,IREN,,short,short,41.91,41.91,stated,2,2%,,yesterdays highs $44,44,44,,open,stated,took a 2% IREN short 41.91,,1529861681168257145 1529861778622906429,3
+2026-07-24 09:56:13,IREN,,short,cover,37.84,37.84,stated,,a third,0.333,,,,,partial,stated,covered a third of IREN 37.84,,1530212013135888555,3
+2026-07-27 10:29:45,IREN,,short,cover,35.83,35.83,stated,,another third,0.333,,,,,partial,stated,IREN covered off another third at 35.83,,1531307614670164110,3
+2026-07-27 10:29:50,IREN,,short,stop,,,,,,,20sma,,,,open,inferred,will keep the rest on the 20sma,Rest managed against the 20sma; ticker from 1531307614670164110.,1531307634483920937,3
+2026-07-28 16:16:15,WDC,,short,short,491.98,491.98,stated,,small,,yesterdays $497 close,497,497,,open,stated,Put on a small short for the wife 491.98 against yesterdays $497 close $WDC,"Short for his wife's account; '$5-6 risk' is risk, not a price.",1531757203416158228 1531757460132729003,3
+2026-07-28 18:45:44,WDC,,short,cover,464.2,464.2,stated,,half,0.5,,,,,partial,inferred,covered half of the position 464.20,Ticker from 1531757203416158228.,1531794821075697804,3
+2026-08-04 10:57:59,IREN,,short,cover,41.83,,bar,,the last bit,1.0,,,,,closed,stated,IREN closed the last bit at flat,Closed at flat.,1534213822120984697,3
+2026-08-05 10:23:31,NBIS,,short,short,222.5,222.5,stated,3,only 3% size,,,,,rejecting the 50sma,open,stated,222.50 NBIS short only 3% size,,1534567536312717483 1534567580642050078,3
+2026-08-05 10:27:31,AXTI,,short,add,74.04,74.04,stated,2,also 3% AXTI short ... a small 2% add onto my existing position,,,,,,open,stated,also 3% AXTI short 74.04 a small 2% add onto my existing position,Size wording ambiguous (3% vs 2% add).,1534568541486059530,3
+2026-08-05 12:29:20,NBIS,,short,cover,227.86,227.86,stated,,,1.0,,,,,closed,stated,Closed NBIS,,1534599200782946445 1534599248224452770,3
+2026-08-06 10:02:36,AXTI,,short,cover,72.14,72.14,stated,,half of my AXTI adds,,,,,,partial,stated,closed half of my AXTI adds 72.14,,1534924661333299364,3
+2026-08-06 10:11:01,AXTI,,short,cover,74.1,74.1,stated,,all adds,,,,,,partial,stated,AXTI closed all adds 74.10,,1534926776680185986,3
+2026-08-07 10:43:31,CVNA,,short,short,72.9,72.9,stated,2,2%,,resistance gaps up to 74,74,74,against the 200sma,open,stated,just put on a 2% CVNA short 72.90 with the intention of adding more against the 200sma.,,1535297345170833481 1535297430327922729,3
+2026-08-07 12:01:02,CVNA,,short,add,72.06,72.06,stated,2,2%,,,,,,open,stated,CVNA 2% add 72.06,,1535316851666591925,3
+2026-08-07 12:01:05,CVNA,,short,stop,,,,,,,HOD,,,,open,inferred,stops now HOD,Ticker from 1535316851666591925.,1535316866472345653,3
+2026-08-07 15:52:29,AXTI,,short,cover,88.82,88.82,stated,,,1.0,,,,,closed,stated,AXTI closed 88.82,,1535375097144279231,3
+2026-08-10 15:02:28,CVNA,,short,stopped_out,73.2,,bar,,,1.0,,,,,closed,stated,was stopped out of CVNA,,1536449675668750507,3
+2026-08-18 10:47:01,FCX,,short,short,66.5,66.5,stated,3,3%,,,,,,open,stated,3% FCX short 66.50,,1539284493360177222,3
+2026-08-19 10:36:40,FCX,,short,cover,68.98,68.98,stated,,,1.0,,,,,closed,stated,FCX closed,,1539644273740353556 1539644313397493910,3
+2026-08-19 14:04:50,FCX,,short,reentry,68.34,68.34,stated,5,5%,,,,,,open,stated,Put on a 5% short FCX position,,1539696663717875772 1539696719548129391,3
+2026-08-19 15:58:04,FCX,,short,cover,68.9,68.9,stated,,,1.0,,,,,closed,stated,fcx CLOSED .60 LOSS 68.90,"'.60 LOSS' is the loss, not a price.",1539725159110414367,3
+2026-08-20 13:29:42,MU,,short,short,954.68,954.68,stated,8,8%,,50sma,,,,open,stated,"Short 8% MU 954.68 
+50sma as my guide",,1540050208946397224,3
+2026-08-20 15:26:49,MU,,short,stopped_out,966.17,966.17,stated,,,1.0,,,,,closed,stated,MU stopped 966.17,,1540079680336564404,3
+2026-08-21 09:54:19,GDX,,short,short,102.24,102.24,stated,5,5%,,HOD,,,,open,stated,GDX 102.24 Short 5%,,1540358392688672820 1540358593390317598,3
+2026-08-21 10:38:15,GDX,,short,add,102.31,102.31,stated,5,5%,,,,,6/20,open,stated,added 5% to GDX 6/20 setup 102.31,,1540369448513437827,3
+2026-08-21 15:48:11,GDX,,short,cover,103.02,103.02,stated,,,1.0,,,,,closed,inferred,GDX can't hold,'GDX can't hold' + bare price read as covering the GDX short.,1540447447958954034 1540447484676145173,3
+2026-08-24 13:22:26,GDX,,short,reentry,102.485,125.5,bar,5,5%,,,,,,open,stated,5% back on GDX short 125.50,125.50 as written; inconsistent with GDX ~102 days before and after (possible typo).,1541497931738386472,3
+2026-08-24 15:51:58,GDX,,short,cover,103.45,,bar,,,1.0,,,,,closed,inferred,No cushion to keep.,'No cushion to keep.' then 'GDX' -- read as closing the GDX short into the close; no price.,1541535562895327284 1541535611368767538,3
+2026-08-25 09:41:17,GDX,,short,short,102.53,102.53,stated,3,3% position for now,,HOD; yesterdays highs,,,,open,stated,102.53 GDX short with stop at HOD. 3% position for now. but watching NEM WPM KGC for sentiment,Watching NEM WPM KGC for sentiment.,1541804665782665329 1541804687676936213,3
+2026-08-25 11:35:33,GDX,,short,cover,104.735,,bar,,,1.0,,,,,closed,stated,GDX no luck. Was a small position so no harm,'no luck' -> loss exit.,1541833421809262632,3
+2026-08-26 10:48:06,GDX,,short,short,103.43,103.43,stated,5,5%,,yesterdays HOD,,,,open,stated,103.43 GDX short 5%,,1542183868105367572 1542183887902351420,3
+2026-08-31 09:33:04,STX,,short,short,817.64,817.64,stated,5,5%,,HOD,,,,open,stated,STX short 817.64,,1543976923661606932 1543976939054698556 1543976949368750120,3
+2026-08-31 15:58:17,STX,,short,cover,827.94,827.94,stated,,,1.0,,,,,closed,stated,STX closed 827.94,,1544073866010435645,3
+2026-09-01 09:34:24,STX,,short,reentry,825.32,825.32,stated,5,5%,,today's highs,,,,open,stated,825.32 5% short in STX,,1544339649684840488 1544342022939349033,3
+2026-09-01 10:04:38,GDX,,short,trim,96.42,96.42,stated,,30%,0.3,,,,,partial,stated,trimmed 30% GDX 96.42,,1544347257250512996,3
+2026-09-01 11:00:32,STX,,short,cover,831.05,831.05,stated,,,1.0,,,,,closed,stated,Closed STX 831.05 STX closed,,1544361324899860563,3
+2026-09-01 11:19:13,STX,,short,reentry,820.69,820.69,stated,,a little smaller this time,,highs,,,,open,stated,"820.69 a little smaller this time on STX. Same idea, watching versus highs",,1544366024814633051 1544366051498917961,3
+2026-09-01 15:51:00,STX,,short,cover,816.58,816.58,stated,,,1.0,,,,,closed,stated,STX closed 816.58,,1544434421342535680,3
+2026-09-02 10:52:58,MU,,short,short,939.1,939.1,stated,5,5%,,HOD,,,,open,stated,MU short 939.10 5%,,1544721806831779960 1544721849739378740,3
+2026-09-03 15:35:24,GDX,,short,trim,101.12,101.12,stated,,another third,0.333,,,,,partial,stated,took off another third of GDX 101.12,,1545155272035672144,3
+2026-09-09 09:36:51,VLO,,short,short,384.09,384.09,stated,5,5%,,,,,,open,stated,5% VLO short 384.09,,1547239365783322644,3
+2026-09-10 12:10:14,VLO,,short,reentry,389,389,stated,5,5%,,394,394,394,,open,stated,tried VLO 5% short once again 389,'tried ... once again'; no cover of the 384.09 short was posted.,1547640354302595165 1547640399118606428,3
+2026-09-10 12:13:03,BWET,,short,short,636.3,636.3,stated,2,2% starter,,,,,,open,stated,2% BWET starter 636.30,Direction not stated; channel default short assumed.,1547641065727856681,3
+2026-09-10 15:54:18,BWET,,short,cover,646.34,,bar,,,1.0,,,,,closed,stated,getting out of BWET at the close,Exit planned at the close; no price. Same message says he keeps VLO.,1547696744328990825,3
+2026-09-11 09:43:27,VLO,,short,cover,394,394,stated,,,1.0,,,,,closed,stated,VLO 394 closed,At the stated 394 stop.,1547965805000392806,3
+2026-09-22 15:34:03,GDX,,short,cover,98.02,98.02,stated,,half of my remaining,0.5,,,,,partial,stated,covering half of my remaining GDX 98.02,,1552040301915283457,3
+2026-09-22 15:34:15,GDX,,short,stop,,,,,,,99.08,99.08,99.08,,open,inferred,99.08 stop on the last bit,Stop on the last bit; ticker from 1552040301915283457.,1552040353186586716,3
+2026-10-09 10:07:47,TZA,IWM,short,short,47.26,47.26,stated,3,3%,,,,,,open,stated,TZA short 3% 47.26,Shorting TZA (3x inverse small caps) = LONG IWM exposure; logged as stated (short TZA).,1558118786085691403,3
+2026-10-13 09:52:09,TZA,IWM,short,cover,47.97,,bar,,,1.0,,,,,closed,stated,TZA closed,Closes the TZA short (long IWM exposure).,1559564403152789716,3
+2026-10-16 11:16:11,GDX,,short,add,88.06,88.06,stated,3,3% size,,todays highs,,,,open,stated,88.06 GDX adds on the short,,1560672717429145641 1560672727826694175 1560672754246619290,3
+2026-10-22 11:05:40,TSLA,,short,short,383.71,383.71,stated,5,5%,,HOD,,,,open,stated,5% TSLA short 383.71,,1562844397010419934 1562844405218418853,3
+2026-10-22 15:52:41,GDX,,short,trim,81.93,81.93,stated,,a third,0.333,,,,,partial,stated,Trimmed a third of my GDX 81.93,,1562916626435678290,3
