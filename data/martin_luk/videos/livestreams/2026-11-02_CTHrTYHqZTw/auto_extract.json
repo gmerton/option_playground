@@ -1,0 +1,395 @@
+{
+ "video_id": "CTHrTYHqZTw",
+ "date": "2026-11-02",
+ "title": "DRAM fat finger | 2 Nov 2026",
+ "observed_trades": [
+  {
+   "date": "2026-11-02",
+   "ticker": "SOXX",
+   "direction": "short",
+   "action": "entry",
+   "setup": "short semi ETF bounce: three consecutive gap ups into declining EMAs",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-11-02_CTHrTYHqZTw@19:17",
+   "confidence": "stated",
+   "quote": "on Wednesday, I keep trying to short the",
+   "notes": "Multiple attempts on Wednesday; 21:24 'all of the attempts failed'. Semi ETF decoded as SOXX (captions: 'the semi ETF', 'so excess' 50:49, 'StockX' 49:36 viewer, 'SpaceX short' 68:47). Alternative: SOXS long (inverse vehicle, his SQQQ habit) - the stated 'high 50 freeze' (high 50s) close price on Friday should disambiguate; if SOXX was not near $58 on 2026-10-30, this is long SOXS.",
+   "fill_timing": "wednesday"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "SOXX",
+   "direction": "short",
+   "action": "stopped_out",
+   "setup": "Wednesday short attempts failed; ETF held up during the day",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-11-02_CTHrTYHqZTw@21:57",
+   "confidence": "stated",
+   "quote": "even though I got stopped out a few times on Wednesday",
+   "notes": "'got stopped out a few times on Wednesday' (21:57). Semi ETF decoded as SOXX (captions: 'the semi ETF', 'so excess' 50:49, 'StockX' 49:36 viewer, 'SpaceX short' 68:47). Alternative: SOXS long (inverse vehicle, his SQQQ habit) - the stated 'high 50 freeze' (high 50s) close price on Friday should disambiguate; if SOXX was not near $58 on 2026-10-30, this is long SOXS.",
+   "fill_timing": "wednesday"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "SOXX",
+   "direction": "short",
+   "action": "reentry",
+   "setup": "planned short: gap down Thursday, waited for bounce into unfilled gap and declining hourly 9 EMA; rejection at hourly EMAs/opening-range high while QQQ weaker",
+   "entry_basis": "15-minute candle rejection at declining hourly 9 EMA / unfilled gap, skipped first hour",
+   "stop": "",
+   "source": "2026-11-02_CTHrTYHqZTw@26:04",
+   "confidence": "stated",
+   "quote": "I think I shorted on this on this 15 15 minute candle",
+   "notes": "25:44 'a really good short opportunity that I've already planned in on Wednesday'; 27:20 didn't wait for the 15-min close. Semi ETF decoded as SOXX (captions: 'the semi ETF', 'so excess' 50:49, 'StockX' 49:36 viewer, 'SpaceX short' 68:47). Alternative: SOXS long (inverse vehicle, his SQQQ habit) - the stated 'high 50 freeze' (high 50s) close price on Friday should disambiguate; if SOXX was not near $58 on 2026-10-30, this is long SOXS.",
+   "fill_timing": "thursday"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "SOXX",
+   "direction": "short",
+   "action": "trim",
+   "setup": "took 1/3 off into swing lows on Friday",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-11-02_CTHrTYHqZTw@49:54",
+   "confidence": "stated",
+   "quote": "I did close um one/ird on my of my of the semi short",
+   "notes": "'slightly under this swing lows too... near the close or... a little bit lower' (50:36); 50:49 'I think high 50 freeze on this so excess' = price ~high 50s (53?). Semi ETF decoded as SOXX (captions: 'the semi ETF', 'so excess' 50:49, 'StockX' 49:36 viewer, 'SpaceX short' 68:47). Alternative: SOXS long (inverse vehicle, his SQQQ habit) - the stated 'high 50 freeze' (high 50s) close price on Friday should disambiguate; if SOXX was not near $58 on 2026-10-30, this is long SOXS.",
+   "fill_timing": "friday"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "SOXX",
+   "direction": "short",
+   "action": "hold",
+   "setup": "week one of the breakdown, not extended to downside; may swing longer",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-11-02_CTHrTYHqZTw@68:47",
+   "confidence": "stated",
+   "quote": "I think SpaceX short. I may I may swing it for",
+   "notes": "'SpaceX' decoded as SOXX (semi short). 70:51 'I will swing this one for longer, I guess... I'm still decided'. 138:14 'I think I'm going to hold my shorts today.' Semi ETF decoded as SOXX (captions: 'the semi ETF', 'so excess' 50:49, 'StockX' 49:36 viewer, 'SpaceX short' 68:47). Alternative: SOXS long (inverse vehicle, his SQQQ habit) - the stated 'high 50 freeze' (high 50s) close price on Friday should disambiguate; if SOXX was not near $58 on 2026-10-30, this is long SOXS.",
+   "fill_timing": "today"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "COIN",
+   "direction": "short",
+   "action": "cover",
+   "setup": "closed COIN short near swing-low support",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-11-02_CTHrTYHqZTw@49:54",
+   "confidence": "stated",
+   "quote": "I did close um my coin short at",
+   "notes": "'at around 140 low 140s on slightly above this swing lows' (49:54). Entry not described in this stream.",
+   "fill_timing": "friday"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "DRAM",
+   "direction": "short",
+   "action": "entry",
+   "setup": "short after FOMC release, 2pm candle",
+   "entry_basis": "2 p.m. candle after FOMC",
+   "stop": "candle high (2pm candle)",
+   "source": "2026-11-02_CTHrTYHqZTw@60:56",
+   "confidence": "stated",
+   "quote": "I took the short on on this",
+   "notes": "'I set my stop at the at this candle high' (61:24). FOMC Wednesday -> entry Wednesday (he checked IBKR 'on Thursday'). DRAM decoded from title 'DRAM fat finger' and 'DRAM shorts' (60:26); captions 'DM shot', 'DM', 'the RAM'. Day inferred from FOMC + 'on Thursday... last night'; fill_timing left as his word '2 p.m.' context.",
+   "fill_timing": "2 p.m."
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "DRAM",
+   "direction": "short",
+   "action": "add",
+   "setup": "accidental: entered a sell stop instead of buy stop; it triggered ~30 min later and doubled the short instead of stopping out",
+   "entry_basis": "",
+   "stop": "none (no actual stop after the error)",
+   "source": "2026-11-02_CTHrTYHqZTw@62:00",
+   "confidence": "stated",
+   "quote": "I'm doing like twice my original positions",
+   "notes": "62:17 'I put the wrong stop order like I'm using like a sell stop order... instead of like buy stop order'; 62:32 'I double down on the on my exit on my stop'; 61:42 'like 30 minutes later'. Fat-finger add, same session as entry.",
+   "fill_timing": "30 minutes later"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "DRAM",
+   "direction": "short",
+   "action": "trim",
+   "setup": "took 1/3 off memory short into swing lows Friday",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-11-02_CTHrTYHqZTw@50:49",
+   "confidence": "inferred",
+   "quote": "also um one/3 on the memory short here",
+   "notes": "'memory short' assumed = the DRAM short (17:53 'this memory short... interesting story', told at 60:26 as the DRAM short). Same Friday trims as COIN/semi.",
+   "fill_timing": "friday"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "DRAM",
+   "direction": "short",
+   "action": "hold",
+   "setup": "remaining shorts held today; not out of the woods on weekly",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-11-02_CTHrTYHqZTw@138:14",
+   "confidence": "inferred",
+   "quote": "I think I'm going to hold my shorts today.",
+   "notes": "Generic 'my shorts'; DRAM assumed among them since only 1/3 trimmed Friday.",
+   "fill_timing": "today"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "?",
+   "direction": "short",
+   "action": "trim",
+   "setup": "took ~15% profit on silver short at weekly 150 EMA",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-11-02_CTHrTYHqZTw@72:15",
+   "confidence": "stated",
+   "quote": "I already took some profits on on silver on Friday.",
+   "notes": "'I took around like I think 15% of my positions and it's now at this 150 weekly already'. Direction short inferred from 72:38 'I would cover my short' (gold) and silver falling to support. Vehicle unknown (SLV / silver futures / inverse ETF).",
+   "fill_timing": "friday"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "?",
+   "direction": "short",
+   "action": "hold",
+   "setup": "gold short held; would cover after another week down / toward weekly 150 EMA",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-11-02_CTHrTYHqZTw@72:38",
+   "confidence": "stated",
+   "quote": "So I I would I think I would um cover my short if",
+   "notes": "Context 'gold is still well above the 150 weekly'. Vehicle unknown (GLD / gold futures / inverse ETF).",
+   "fill_timing": "today"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "USO",
+   "direction": "long",
+   "action": "hold",
+   "setup": "oil position well under the 9 EMA; likely to exit / sell into bounce unless V recovery reclaims declining 9 EMA",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-11-02_CTHrTYHqZTw@138:14",
+   "confidence": "inferred",
+   "quote": "for USO for oil I I would",
+   "notes": "138:33 'probably going to exit because it's well under the nine'; 139:43 'probably I'm going to sell it into the bounce'. Direction long inferred from 'sell it'.",
+   "fill_timing": "today"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "?",
+   "direction": "long",
+   "action": "hold",
+   "setup": "live position flushing into rising EMAs; plan to wait for close below the 9, swing low as hard stop",
+   "entry_basis": "close below 9 EMA",
+   "stop": "recent swing low as hard stop",
+   "source": "2026-11-02_CTHrTYHqZTw@28:53",
+   "confidence": "inferred",
+   "quote": "I would use this low or this low",
+   "notes": "Ticker not named on audio (chart on screen). 29:24 'I'm not going to sell it right now'; 29:43 'may need to exit the position'. Long inferred from 'flushing into the rising EMAs... wait for the bounce'.",
+   "fill_timing": "today"
+  }
+ ],
+ "principles": [
+  {
+   "category": "process",
+   "text": "Runs a leader scan every weekend ranking stocks by monthly performance, to catch leaders missed by daily scans and to gauge what is working; spends ~10 minutes going through the whole list.",
+   "timestamp": "03:39"
+  },
+  {
+   "category": "selection",
+   "text": "Prefers to focus on software and biotech leaders because they move faster and are more liquid, easier to trade.",
+   "timestamp": "15:00"
+  },
+  {
+   "category": "posture",
+   "text": "Wants to see more panic/selling (e.g. QQQ reaching its 50 EMA) before taking longs while many AI names are just starting downtrends.",
+   "timestamp": "16:54"
+  },
+  {
+   "category": "short_entries",
+   "text": "Shorting bounces into declining EMAs (daily/weekly 9, declining 50) is how he maximizes reward-to-risk; three consecutive gap ups into declining EMAs favour the short.",
+   "timestamp": "23:24"
+  },
+  {
+   "category": "short_entries",
+   "text": "Does not place shorts on a gap down into the daily 9 EMA (potential support); waits for a bounce into the unfilled gap / declining hourly 9 EMA.",
+   "timestamp": "23:43"
+  },
+  {
+   "category": "process",
+   "text": "Skipping the first hour after the open avoids dealing with the opening chop and lets him come to the desk with a fresh mind.",
+   "timestamp": "25:16"
+  },
+  {
+   "category": "short_entries",
+   "text": "Intraday short trigger: waits for a 15-minute breakdown or rejection at the hourly EMAs/opening-range high, and checks QQQ for relative weakness.",
+   "timestamp": "26:04"
+  },
+  {
+   "category": "exits",
+   "text": "For a long flushing into rising EMAs his plan is to wait for a close below the 9 EMA, using a recent swing low as a hard stop.",
+   "timestamp": "28:53"
+  },
+  {
+   "category": "entries",
+   "text": "Parabolic/oversold longs are better when the indices are also extended to the downside; does not like buying a gap up into resistance.",
+   "timestamp": "35:46"
+  },
+  {
+   "category": "regime",
+   "text": "Explosive acceleration in leaders (semis +100% in two months), declining breadth, strong oil and AI leaders breaking down ahead of the market make him bearish; acceleration signals eventual exhaustion and lowers odds of further breakouts.",
+   "timestamp": "42:28"
+  },
+  {
+   "category": "psychology",
+   "text": "Missing a bounce produced FOMO and poor trades.",
+   "timestamp": "46:51"
+  },
+  {
+   "category": "short_entries",
+   "text": "A higher-win-rate short comes after one more consolidation or rejection (e.g. a pin bar) at the 21 or declining 9 EMA, shorting the next day.",
+   "timestamp": "48:42"
+  },
+  {
+   "category": "exits",
+   "text": "Takes partial profits on shorts into swing lows/key support (e.g. a third off).",
+   "timestamp": "49:54"
+  },
+  {
+   "category": "selection",
+   "text": "Prefers tech stocks because they are faster, more liquid and easier to trade, but traders doing well outside tech need not avoid it.",
+   "timestamp": "51:51"
+  },
+  {
+   "category": "posture",
+   "text": "Shorts are more dangerous than longs because the market is in a bull market most of the time; avoids swinging shorts while the index is above the weekly 50 EMA - the best time to hold shorts longer is under the 50 EMA.",
+   "timestamp": "53:38"
+  },
+  {
+   "category": "process",
+   "text": "Uses no hotkeys and places stops separately from the entry order.",
+   "timestamp": "67:15"
+  },
+  {
+   "category": "short_entries",
+   "text": "Prefers shorting near the weekly 9 EMA and does not like shorting when the market is already extended to the downside.",
+   "timestamp": "67:59"
+  },
+  {
+   "category": "posture",
+   "text": "Prefers shorts as quicker swings; does not want a habit of swinging shorts while the market is above the weekly 50, since bounces can be powerful or V-shaped.",
+   "timestamp": "71:10"
+  },
+  {
+   "category": "market_read",
+   "text": "Defensive sectors tend to mean revert: when extended they pull back and base rather than run for multiple weeks/months.",
+   "timestamp": "77:04"
+  },
+  {
+   "category": "exits",
+   "text": "Shorts: covers into weakness rather than waiting for a close above an EMA. Longs: trails with the 9 or 21 EMA, but about 50% of the time sells into strength; wants to improve long exits.",
+   "timestamp": "82:07"
+  },
+  {
+   "category": "exits",
+   "text": "Sells more into strength because the last part of a run is often explosive and trailing with EMAs gives back a chunk of profits; willing to sacrifice upside to limit drawdown from the peak.",
+   "timestamp": "98:56"
+  },
+  {
+   "category": "psychology",
+   "text": "Tends to revenge trade or overtrade in drawdowns, so he avoids putting himself in post-run drawdowns that lead to deeper ones.",
+   "timestamp": "101:17"
+  },
+  {
+   "category": "sizing",
+   "text": "Scales risk per trade slower than account growth (e.g. +50% account -> ~+25% risk or less) to keep a buffer so he does not have to size down in a drawdown.",
+   "timestamp": "105:22"
+  },
+  {
+   "category": "macro",
+   "text": "99% of the time ignores binary events like midterms; considers them irrelevant.",
+   "timestamp": "125:12"
+  },
+  {
+   "category": "posture",
+   "text": "Cautious about adding shorts when the market is already too extended to the downside.",
+   "timestamp": "140:39"
+  }
+ ],
+ "ambiguous_tickers": [
+  {
+   "timestamp": "15:12",
+   "caption_text": "crowd",
+   "context": "Tesla and crowd as potential longs if market extends down",
+   "guess": "CRWD",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "17:53",
+   "caption_text": "the exo excess trait",
+   "context": "semi short trade",
+   "guess": "SOXX trade (or SOXS)",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "19:17",
+   "caption_text": "the semi ETF",
+   "context": "shorting semiconductor ETF",
+   "guess": "SOXX (alt SMH, or long SOXS)",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "50:49",
+   "caption_text": "high 50 freeze on this so excess",
+   "context": "price of the semi-short partial close",
+   "guess": "SOXX or SOXS; 'high 50 threes' price ~53",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "68:47",
+   "caption_text": "SpaceX short",
+   "context": "short he may swing longer, week one of breakdown",
+   "guess": "SOXX",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "49:54",
+   "caption_text": "coin short",
+   "context": "closed short around low 140s",
+   "guess": "COIN",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "60:41",
+   "caption_text": "DM shot / DM / the RAM",
+   "context": "the fat-finger memory short",
+   "guess": "DRAM",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "72:15",
+   "caption_text": "silver",
+   "context": "silver short partial profit",
+   "guess": "SLV or silver future/inverse - vehicle unknown",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "72:38",
+   "caption_text": "gold ... cover my short",
+   "context": "gold short",
+   "guess": "GLD or gold future/inverse - vehicle unknown",
+   "confidence": "unsure"
+  }
+ ]
+}

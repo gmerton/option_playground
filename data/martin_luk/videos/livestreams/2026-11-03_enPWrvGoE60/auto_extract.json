@@ -1,0 +1,388 @@
+{
+ "video_id": "enPWrvGoE60",
+ "date": "2026-11-03",
+ "title": "Adding shorts again | 3 Nov 2026",
+ "observed_trades": [
+  {
+   "date": "2026-11-03",
+   "ticker": "?",
+   "direction": "short",
+   "action": "cover",
+   "setup": "oil short; covered near yesterday's lows at the hourly 9 EMA after close below the 9 EMA",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-11-03_enPWrvGoE60@13:13",
+   "confidence": "stated",
+   "quote": "oil I covered it near the lows of yesterday",
+   "notes": "13:13 'oil I covered it near the lows of yesterday like at the hourly 9 EMA. Not really the best exit'. Vehicle for the oil short not named (USO / crude futures / an inverse oil ETF); ticker left '?'.",
+   "fill_timing": "yesterday"
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "SQQQ",
+   "direction": "long",
+   "action": "entry",
+   "setup": "short the Qs on Monday; he calls it a mistake - shorted too early on that candle while indices were extended from the 9 EMA",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-11-03_enPWrvGoE60@21:41",
+   "confidence": "inferred",
+   "quote": "I made a mistake to like shorting to early on Monday",
+   "notes": "Context 21:06 'I'll at least wait for the hourly nine on the queues or maybe just wait for tomorrow or the daily nine EMA. That I I made a mistake to like shorting to early on Monday'. Underlying inferred as QQQ from context; vehicle not stated - recorded as SQQQ long (= short QQQ) per his usual vehicle. Uncertain whether still held or stopped.",
+   "fill_timing": "monday"
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "?",
+   "direction": "short",
+   "action": "entry",
+   "setup": "SK Hynix short ('South Korea chart ... just looks so shortable'), taken despite weak-day concerns, toward the declining 50 EMA",
+   "entry_basis": "",
+   "stop": "extremely tight; possibly 152.1 (viewer at 63:47 asks why stop at 152.1 not above daily VWAP; he says tightening because today may not be the best day for shorts)",
+   "source": "2026-11-03_enPWrvGoE60@68:45",
+   "confidence": "inferred",
+   "quote": "I'm using a extremely tight stop on",
+   "notes": "14:08 'SK Hynix is a pretty decent short'; 34:45 'SK Hynix missed the entry on this 1-minute candle, and then I hesitated'; 66:00 viewer 'kind of similar story today with SK Hynix'; 68:45 'I really like this um South Korea chart as on SK Hynix. This just looks so shortable. ... I'm using a extremely tight stop on on on the two trades. That I've talked. I think it's less than 0.1% risk per trade ... 0.02% risk per trade. So, I'm only losing like .05% for the two losses'. Instrument unclear (Korea-listed 000660 or an HK-listed leveraged SK Hynix product - he mentions an 'IPO anchor VWAP on SK Hynix' at 143:35, suggesting a recently listed product). 'Two trades' may be two SK Hynix attempts or SK Hynix plus another short; unclear whether these were stopped out. Stop 152.1 attribution to this trade is a guess.",
+   "fill_timing": "today"
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "?",
+   "direction": "short",
+   "action": "hold",
+   "setup": "shorts opened today, total sizing under 20%; gap risk higher than usual, may reduce exposure before close if no strong close",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-11-03_enPWrvGoE60@109:59",
+   "confidence": "stated",
+   "quote": "all my the BE shorts all the shorts today are less than 20% sizing",
+   "notes": "108:22 'that's the the last attempt on uh on the short side today'; 109:59 'I think it's less than 20% all my the BE shorts all the shorts today are less than 20% sizing'. 'BE' may be Bloom Energy (BE) or a garble; ticker left '?'.",
+   "fill_timing": "today"
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "SOXL",
+   "direction": "long",
+   "action": "hold",
+   "setup": "holding SOXL (3x semis ETF) through AMD/Intel/Marvell earnings: enough profit cushion, ETF reduces single-stock risk",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-11-03_enPWrvGoE60@128:19",
+   "confidence": "stated",
+   "quote": "Um I'm probably not going to do anything.",
+   "notes": "Viewer 127:41 'You have an SOXL shares ... after close AMD's EP today. Do you close position'; 128:19 'Um I'm probably not going to do anything. The first reason is um I got enough profit cushion. ... That's why I'm I am buying the ETF instead of the individual stocks'.",
+   "fill_timing": ""
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "SNDK",
+   "direction": "short",
+   "action": "entry",
+   "setup": "October short example (shown on chart)",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-11-03_enPWrvGoE60@149:51",
+   "confidence": "stated",
+   "quote": "Like I shorted it at at this candle.",
+   "notes": "Answer to viewer asking about October short exits. Caption 'SNTK' decoded as SNDK (SanDisk) - likely, not certain. Exact entry date not stated.",
+   "fill_timing": ""
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "SNDK",
+   "direction": "short",
+   "action": "add",
+   "setup": "added on a bounce",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-11-03_enPWrvGoE60@149:51",
+   "confidence": "stated",
+   "quote": "And also added on on this bounce as well.",
+   "notes": "149:51-150:09. Decode SNTK->SNDK.",
+   "fill_timing": ""
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "SNDK",
+   "direction": "short",
+   "action": "trim",
+   "setup": "covered ~1/3 into a gap down at the previous swing lows",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-11-03_enPWrvGoE60@150:09",
+   "confidence": "stated",
+   "quote": "I closed some on on this gap down like when it reaches the previous swing lows.",
+   "notes": "150:26 'Yeah, I closed 1/3 I think.' Decode SNTK->SNDK.",
+   "fill_timing": ""
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "SNDK",
+   "direction": "short",
+   "action": "cover",
+   "setup": "covered the whole remaining position near the open on a later gap down (missed the next gap down)",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-11-03_enPWrvGoE60@150:37",
+   "confidence": "stated",
+   "quote": "I just I just I exit my my whole position.",
+   "notes": "150:26 'on this gap down I think after the near the open I just I just I exit my my whole position. So I missed the next the next gap down.' Decode SNTK->SNDK.",
+   "fill_timing": ""
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "COIN",
+   "direction": "short",
+   "action": "entry",
+   "setup": "short on a candle on Friday (shown on chart)",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-11-03_enPWrvGoE60@151:26",
+   "confidence": "stated",
+   "quote": "And recently for coin, I shorted it on this on this candle Friday.",
+   "notes": "Caption 'coin' = COIN (known decode). 'Friday' presumably Oct 30, 2026 but only his word recorded.",
+   "fill_timing": "friday"
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "COIN",
+   "direction": "short",
+   "action": "cover",
+   "setup": "covered after earnings gap down into the previous swing lows, low 140s",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-11-03_enPWrvGoE60@151:26",
+   "confidence": "stated",
+   "quote": "And then I closed it like after earnings, we got a gap down and then",
+   "notes": "151:40 'reaching the previous swing lows. So near like the high the low 140s.'",
+   "fill_timing": "after earnings"
+  }
+ ],
+ "principles": [
+  {
+   "category": "regime",
+   "text": "Concerned this could be the start of a bear market given very poor breadth, extended prior moves and no real correction in 3-4 years; compares it to the 2021-22 stage-3 to stage-4 transition.",
+   "timestamp": "08:43"
+  },
+  {
+   "category": "short_entries",
+   "text": "When the indices are extended from the 9 EMA, wait for a pullback to the hourly 9 EMA, or the next day / daily 9 EMA, before shorting; shorting too early into extension was a mistake.",
+   "timestamp": "21:06"
+  },
+  {
+   "category": "short_entries",
+   "text": "Does not want to chase or short into weakness after missing an entry; waits for a bounce instead.",
+   "timestamp": "34:45"
+  },
+  {
+   "category": "psychology",
+   "text": "Flags his own risk of overtrading on a day with no clear opportunity.",
+   "timestamp": "28:27"
+  },
+  {
+   "category": "process",
+   "text": "Studies charts by zooming out on weekly/daily to find explosive moves (big % in 1-3 weeks or a month) or long-lasting trends (6+ months), both up and down; studies intraday entries on lower timeframes via replay, with a smaller sample.",
+   "timestamp": "38:35"
+  },
+  {
+   "category": "process",
+   "text": "Started by going through every Nasdaq-100 and S&P stock one by one, focused on explosive/long-lasting move periods; now also studies past moves of stocks he recently traded.",
+   "timestamp": "41:00"
+  },
+  {
+   "category": "other",
+   "text": "Avoids trading chat rooms: too much noise from inexperienced traders, conflicting opinions; trading is personal and better studied alone unless you find a genuinely good partner.",
+   "timestamp": "44:53"
+  },
+  {
+   "category": "risk",
+   "text": "On a day he judges unfavourable for his side, he tightens the stop tighter than the natural level (e.g. inside the daily VWAP) to limit loss.",
+   "timestamp": "63:59"
+  },
+  {
+   "category": "risk",
+   "text": "Will take a setup he likes on a poor day only with an extremely tight stop and tiny risk (~0.02% per trade, well under 0.1%); a stop-out is a small 'donation', a winner is a killer trade.",
+   "timestamp": "69:16"
+  },
+  {
+   "category": "short_entries",
+   "text": "After a huge breakdown candle, a quick snapback the next day or day after into the declining daily 9 EMA is shortable; better entries are above the 9 or at the 21 EMA.",
+   "timestamp": "77:52"
+  },
+  {
+   "category": "short_entries",
+   "text": "If the day looks too strong, wait for the next day or for a higher level (21 EMA, or 50 EMA on the hourly) to short.",
+   "timestamp": "81:26"
+  },
+  {
+   "category": "risk",
+   "text": "Shorting UVXY even after a parabolic run is too dangerous (it can run another 30%+, 1,000% in 2020); going long the Qs or stocks is preferable.",
+   "timestamp": "100:24"
+  },
+  {
+   "category": "risk",
+   "text": "Trades leveraged ETFs based on analysis of the underlying but sets the stop on the leveraged ETF itself, accepting occasional stop-outs the underlying would not have hit.",
+   "timestamp": "103:03"
+  },
+  {
+   "category": "risk",
+   "text": "Does not move stops after entering a trade; fears it would become a bad habit.",
+   "timestamp": "104:00"
+  },
+  {
+   "category": "market_read",
+   "text": "Agrees that the higher the timeframe, the stronger an EMA acts as support/resistance.",
+   "timestamp": "104:53"
+  },
+  {
+   "category": "posture",
+   "text": "Not attracted to longs while the market does not favour the long side; wants more confirmation and wider participation across sectors and stock types before going long.",
+   "timestamp": "105:55"
+  },
+  {
+   "category": "exits",
+   "text": "Does not take partial profits when a tight-stop trade moves fast in his favour; a fast move is a sign to hold for a multi-day or multi-week swing.",
+   "timestamp": "107:04"
+  },
+  {
+   "category": "sizing",
+   "text": "After a strong month he sizes up much slower than account growth, to control drawdown and prevent oversizing; today's shorts in total were under 20% sizing.",
+   "timestamp": "109:59"
+  },
+  {
+   "category": "psychology",
+   "text": "After a good period he notices he becomes less patient and does not wait for the best opportunities; smaller sizing limits the damage.",
+   "timestamp": "110:46"
+  },
+  {
+   "category": "risk",
+   "text": "Gap risk on shorts was higher than usual; if no strong close, he may reduce exposure before the close.",
+   "timestamp": "111:12"
+  },
+  {
+   "category": "other",
+   "text": "He only stays up for the US close when volatility is high and he has heavy exposure or margin; high leverage costs sleep and lifestyle, and he will increasingly prioritise health over performance.",
+   "timestamp": "119:14"
+  },
+  {
+   "category": "process",
+   "text": "Takes trades mostly near the open, sometimes midday, very rarely near the close.",
+   "timestamp": "124:38"
+  },
+  {
+   "category": "sizing",
+   "text": "Probably would take less risk after hitting a large account milestone.",
+   "timestamp": "125:13"
+  },
+  {
+   "category": "short_entries",
+   "text": "Will still short even if the intraday chart makes higher highs and higher lows, if price is moving into resistance (e.g. the daily 9 EMA) and shows rejection/distribution selling.",
+   "timestamp": "126:29"
+  },
+  {
+   "category": "risk",
+   "text": "Holds a sector ETF (SOXL) through component earnings: with profit cushion, the ETF reduces single-stock risk, and in earnings season you cannot avoid all reports, so some uncertainty must be accepted.",
+   "timestamp": "128:33"
+  },
+  {
+   "category": "short_entries",
+   "text": "Intraday short triggers are flexible: 5-minute 9 EMA / candle breakdown with stop at the breakdown candle high, a 1-minute breakdown if price gets higher into the 50 EMA, or an anchored-VWAP rejection from the high of day; shorting breakdowns or bounces both work.",
+   "timestamp": "131:52"
+  },
+  {
+   "category": "entries",
+   "text": "Traders using wider 2-4% stops can use 15-minute candle breakdowns; higher timeframe triggers give less noise and fewer losing trades.",
+   "timestamp": "136:02"
+  },
+  {
+   "category": "sizing",
+   "text": "With volatility ahead, shorts are taken without crazy sizing and with preparation for gap ups.",
+   "timestamp": "140:02"
+  },
+  {
+   "category": "entries",
+   "text": "When anchored VWAP differs by timeframe he treats it as a range, with the daily level most important; may take a first try at the hourly AVWAP and, if it fails, retry near the daily level once it shows rejection or an intraday breakout.",
+   "timestamp": "142:26"
+  },
+  {
+   "category": "process",
+   "text": "Anchors VWAP only at swing highs/lows, earnings, IPO day, or huge gap ups/downs.",
+   "timestamp": "146:33"
+  },
+  {
+   "category": "entries",
+   "text": "Prefers price to have shown respect/reaction at an anchored VWAP before taking the trade, though not mandatory.",
+   "timestamp": "147:58"
+  },
+  {
+   "category": "exits",
+   "text": "For shorts he tends to cover into weakness (gap downs, previous swing lows) rather than wait for a close and trail with the 9/21 EMA; on longs he sells into gap ups.",
+   "timestamp": "150:55"
+  }
+ ],
+ "ambiguous_tickers": [
+  {
+   "timestamp": "13:13",
+   "caption_text": "and oil I covered it near the lows of yesterday",
+   "context": "oil short covered",
+   "guess": "crude oil vehicle (USO / futures / inverse ETF)",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "14:08",
+   "caption_text": "I think like SK Hynix is a pretty decent short",
+   "context": "SK Hynix short",
+   "guess": "SK Hynix - instrument unknown (000660.KS or HK-listed leveraged product)",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "21:06",
+   "caption_text": "wait for the hourly nine on the queues",
+   "context": "index context",
+   "guess": "QQQ",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "21:41",
+   "caption_text": "I made a mistake to like shorting to early on Monday",
+   "context": "Monday short, follows QQQ discussion",
+   "guess": "QQQ short, vehicle maybe SQQQ",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "21:53",
+   "caption_text": "I missed your quick view short too",
+   "context": "missed short",
+   "guess": "?",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "109:59",
+   "caption_text": "all my the BE shorts all the shorts today",
+   "context": "today's shorts",
+   "guess": "BE (Bloom Energy) or garble",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "149:51",
+   "caption_text": "I think SNTK this one Like I shorted it",
+   "context": "October short example",
+   "guess": "SNDK",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "151:26",
+   "caption_text": "And recently for coin, I shorted it",
+   "context": "short, closed after earnings",
+   "guess": "COIN",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "131:13",
+   "caption_text": "I'm considering shorting A H A today",
+   "context": "viewer's idea, not his trade",
+   "guess": "?",
+   "confidence": "unsure"
+  }
+ ]
+}

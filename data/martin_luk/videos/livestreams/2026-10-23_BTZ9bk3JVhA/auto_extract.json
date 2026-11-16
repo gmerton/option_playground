@@ -1,0 +1,428 @@
+{
+ "video_id": "BTZ9bk3JVhA",
+ "date": "2026-10-23",
+ "title": "A stream full of wisdoms from me and Clement | 23 Oct 2026",
+ "observed_trades": [
+  {
+   "date": "2026-10-23",
+   "ticker": "UVXY",
+   "direction": "long",
+   "action": "entry",
+   "setup": "Long volatility for a quick market flush: SPY still at highs while QQQ and Russell weak; QQQ bounced into declining 9/50 EMA then gapped down; UVXY pulled back into rising 9/21 EMA then gapped up",
+   "entry_basis": "pullback into rising 9 and 21 EMA then gap up (59:18-59:47)",
+   "stop": "",
+   "source": "2026-10-23_BTZ9bk3JVhA@57:09",
+   "confidence": "stated",
+   "quote": "the reason I choose UVXY is like how the spy is holding up",
+   "notes": "Clement asks at 52:53 'Do you have any other reason for deciding to enter UVXY other than the pullback?'; Martin answers in first person 55:08-59:47 ('Perfect pullback by uh in my opinion' 59:47). Long UVXY = bearish market bet. Entry time not stated (presumably this session, not said).",
+   "fill_timing": ""
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "COIN",
+   "direction": "short",
+   "action": "entry",
+   "setup": "Crypto names rallying into declining EMAs; COIN overshooting yesterday's unfilled gap, at declining 21 EMA / gap-down anchored VWAP; 5-minute candle breakdown",
+   "entry_basis": "5-minute candle breakdown; ~148.8 per 65:00",
+   "stop": "",
+   "source": "2026-10-23_BTZ9bk3JVhA@63:10",
+   "confidence": "inferred",
+   "quote": "So I've already shorted something. Um in the previous minutes, in the past 10 or 15 minutes.",
+   "notes": "Ticker decode: 62:19 'Take a guess what what have I shorted?' -> 63:10 'One is the answer and 5-minute candle breakdown' (read as 'Coin is the answer'), followed by 'MSTR is also another one that I'd like to short' and 64:48 'the reason why I'm looking at the at coin and MSTR'. 65:00 'You shorted at 148.8. I think that's a really nice entry.' (likely Clement reading the chart; entry price 148.8 inferred). MSTR explicitly NOT shorted ('would be too too heavily shorted'). Quote spans 61:16/62:19 lines.",
+   "fill_timing": "in the past 10 or 15 minutes"
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "?",
+   "direction": "short",
+   "action": "entry",
+   "setup": "SpaceX short via a leveraged ETF: hourly 9 EMA rejection, anchored VWAP from prior gap-down day, SPY/Russell/Nasdaq pulling back into hourly 9 EMA",
+   "entry_basis": "hourly 9 EMA / anchored VWAP from prior gap-down day",
+   "stop": "",
+   "source": "2026-10-23_BTZ9bk3JVhA@250:39",
+   "confidence": "stated",
+   "quote": "so actually the one that I'm entering is space X short. I use the leverage ETF.",
+   "notes": "Underlying is SpaceX (treated as a listed stock in this stream: 257:02 anchored VWAP to 'SpaceX first day'; 17:57/19:24 'SpaceX is ... my number one target on on the short side'). Vehicle ticker never said -> '?'; direction recorded as SHORT SpaceX exposure (likely long an inverse single-stock leveraged ETF). 236:47 'I actually entered another short ... an hour ago'. First attempt was stopped out (next row), then re-entered.",
+   "fill_timing": "an hour ago"
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "?",
+   "direction": "short",
+   "action": "stopped_out",
+   "setup": "SpaceX short via leveraged ETF, first attempt stopped",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-10-23_BTZ9bk3JVhA@251:23",
+   "confidence": "stated",
+   "quote": "And I I got stopped out once. I think on this candle.",
+   "notes": "See SpaceX entry row; vehicle ticker not said. 251:37 'I also shorted on this candle and then it stops me out'.",
+   "fill_timing": ""
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "?",
+   "direction": "short",
+   "action": "reentry",
+   "setup": "SpaceX short via leveraged ETF re-entered on 5-minute candle breakdown",
+   "entry_basis": "5-minute candle breakdown",
+   "stop": "",
+   "source": "2026-10-23_BTZ9bk3JVhA@251:37",
+   "confidence": "stated",
+   "quote": "and then I re-entered it on this 5-minute candle breakdown.",
+   "notes": "See SpaceX entry row; vehicle ticker not said. Still apparently held: 209:26 'maybe I'll consider to cover some shorts into the weekend'; 261:33 'I will cover some if we are not seeing him really weak close today'.",
+   "fill_timing": ""
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "?",
+   "direction": "long",
+   "action": "hold",
+   "setup": "Long oil; it keeps going up, trailing the 9 EMA smoothly",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-10-23_BTZ9bk3JVhA@186:21",
+   "confidence": "stated",
+   "quote": "but I'm long I but I I'm I'm long in this thing",
+   "notes": "Context 186:03 'Oil is accelerating. It's so strong.'; 187:18 'It's just trailing the 9-year May smoothly'. Instrument not named (crude futures / oil ETF / oil stock?) -> '?'.",
+   "fill_timing": ""
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "?",
+   "direction": "short",
+   "action": "entry",
+   "setup": "SpaceX short back in July (prior trade recalled)",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-10-23_BTZ9bk3JVhA@50:42",
+   "confidence": "stated",
+   "quote": "I still remember back in July, I short at SpaceX on right here on",
+   "notes": "Historical trade, July (year implied 2026, not said). Vehicle/ticker for SpaceX not given -> '?'. Followed by stop-out next day.",
+   "fill_timing": "july"
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "?",
+   "direction": "short",
+   "action": "stopped_out",
+   "setup": "SpaceX July short stopped out the next day, before trend continued down",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-10-23_BTZ9bk3JVhA@52:28",
+   "confidence": "stated",
+   "quote": "But I got stopped out the next day and that's the day that it found resistance",
+   "notes": "Historical July trade; 'the next day' after the July entry.",
+   "fill_timing": "the next day (july)"
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "SNDK",
+   "direction": "short",
+   "action": "entry",
+   "setup": "SNDK short, first of four attempts in one session; first two entries 'not really that good'",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-10-23_BTZ9bk3JVhA@133:45",
+   "confidence": "stated",
+   "quote": "I think this is the fourth attempt the fourth short attempt for the day.",
+   "notes": "PRIOR SESSION, date not stated (viewer raised 'DK was a good example' at 132:59; the final entry was on the 12:31 candle, which had not yet occurred in this stream's session at 133:45). 'SNT'/'S&D'/'SNDK' in captions -> SNDK (137:19 'SNDK is going for the the 50 on the hourly'). Do NOT score against 2026-10-23 prices.",
+   "fill_timing": ""
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "SNDK",
+   "direction": "short",
+   "action": "stopped_out",
+   "setup": "SNDK short attempts stopped out twice after aggressive early-morning entries",
+   "entry_basis": "",
+   "stop": "",
+   "source": "2026-10-23_BTZ9bk3JVhA@140:15",
+   "confidence": "stated",
+   "quote": "I getting too aggressive in the early morning then I got stopped out twice and then I took two more attempts to to nail the shots.",
+   "notes": "PRIOR SESSION, date not stated. Two stop-outs in the early morning (one row covers both; 'stopped out twice'). Status of the third attempt not stated.",
+   "fill_timing": ""
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "SNDK",
+   "direction": "short",
+   "action": "reentry",
+   "setup": "Fourth SNDK short attempt on the 12:31 candle with QQQ bouncing into the 50/59 EMA and unfilled gap level",
+   "entry_basis": "12:31 candle, QQQ at hourly EMA + unfilled gap",
+   "stop": "",
+   "source": "2026-10-23_BTZ9bk3JVhA@134:24",
+   "confidence": "stated",
+   "quote": "The main reason why I shorted like on the at this candle is is mainly based on the cues",
+   "notes": "PRIOR SESSION, date not stated. Full: 134:24-135:03 'The main reason why I shorted like on the at this candle is is mainly based on the cues which is at this this candle. 12:31 and the cues is bouncing into the uh 59 EMA as well as the unfilled gap level.' 140:15 'took two more attempts to to nail the shots' (final attempt worked).",
+   "fill_timing": ""
+  }
+ ],
+ "principles": [
+  {
+   "category": "market_read",
+   "text": "Long green candles followed by long red candles that close below the green candle's low are not bullish price action.",
+   "timestamp": "06:06"
+  },
+  {
+   "category": "market_read",
+   "text": "The longer an uptrend runs without a panic, the lower the odds that the next dip is a viable buy-the-dip.",
+   "timestamp": "13:26"
+  },
+  {
+   "category": "process",
+   "text": "Don't copy his style; decide your own posture and have your plan before you arrive at the screen and open the broker. If you are asking whether it is too late to short, it is too late.",
+   "timestamp": "41:29"
+  },
+  {
+   "category": "short_entries",
+   "text": "Shorting via leveraged ETFs is mathematically better due to compounding, but it depends on the ETF's liquidity and price; he uses both shorting the stock and leveraged ETFs, whichever he likes more.",
+   "timestamp": "48:39"
+  },
+  {
+   "category": "short_entries",
+   "text": "UVXY suits a quick, trending sell-off; if the downtrend instead gets strong bounces or longer consolidations, inverse index ETFs (SQQQ, SPXS, Russell 3x short) are better.",
+   "timestamp": "55:08"
+  },
+  {
+   "category": "entries",
+   "text": "UVXY works best when the market has rallied and UVXY pulls back into its rising 9/21 EMA and then gaps up; judged together with market context.",
+   "timestamp": "59:18"
+  },
+  {
+   "category": "risk",
+   "text": "Without a quick follow-through to the downside UVXY just chops you up; he took many losses longing it and does not recommend trading it unless you clearly know what you are doing.",
+   "timestamp": "60:51"
+  },
+  {
+   "category": "mindset",
+   "text": "Prepare for the losses first; no setup (e.g. shorting every 5-minute candle breakdown) guarantees a win, and the details and variations matter.",
+   "timestamp": "66:21"
+  },
+  {
+   "category": "process",
+   "text": "To learn intraday entries, go through the charts yourself: find a good entry on the daily, then zoom into the intraday to define it; the best trigger may be a 5-min or 15-min breakdown or another type.",
+   "timestamp": "68:44"
+  },
+  {
+   "category": "selection",
+   "text": "He has never studied longing a strong theme in a weak market and does not do it; it is not his type, though it can work.",
+   "timestamp": "72:10"
+  },
+  {
+   "category": "selection",
+   "text": "Prefers liquid stocks over super-high-ADR illiquid low caps; with a growing account and experience, liquid names produce better trades, so liquidity is now the main selection factor.",
+   "timestamp": "84:58"
+  },
+  {
+   "category": "market_read",
+   "text": "Measures breadth by the number of stocks in his three watchlists (leading/mediocre/lagging), demoting names gradually as they weaken; equal-weight RSP is not a main input.",
+   "timestamp": "103:29"
+  },
+  {
+   "category": "process",
+   "text": "Verify any indicator signal before trusting it: signals that fire on the candle close (e.g. chandelier exit) can sell you out and rebuy you higher after a gap, and look worse on daily bars.",
+   "timestamp": "115:47"
+  },
+  {
+   "category": "entries",
+   "text": "Most of his trades are taken within the first hour or two; midday entries happen occasionally but are a small proportion.",
+   "timestamp": "122:10"
+  },
+  {
+   "category": "psychology",
+   "text": "He overtrades after good periods when equity is at highs, giving back 5-10%; solution (agreed with Clement over lunch, which Martin calls 'a really smart solution') is to withdraw the money at equity peaks and spend it, manufacturing a fake drawdown; it's about the habit, not the money.",
+   "timestamp": "127:24"
+  },
+  {
+   "category": "short_entries",
+   "text": "No max re-entry count: treat each trade independently, forget prior losses, and ask whether this entry is valid, e.g. shorting a pullback at a resistance level.",
+   "timestamp": "135:57"
+  },
+  {
+   "category": "risk",
+   "text": "He will not re-enter late in the day because the overnight gap risk is too high.",
+   "timestamp": "137:33"
+  },
+  {
+   "category": "regime",
+   "text": "In a right market you rarely get many re-entries in a day; repeated failed 5- or 15-minute breakdowns that stop you out several times signal a choppy market (about 80% of the time it won't happen).",
+   "timestamp": "137:41"
+  },
+  {
+   "category": "process",
+   "text": "To avoid overtrading via too many re-entries, zoom out and trade only daily levels (sometimes hourly gap levels); his SNDK four-attempt day was a negative example of being too aggressive early in the morning.",
+   "timestamp": "139:33"
+  },
+  {
+   "category": "process",
+   "text": "Know your strengths and weaknesses; once past the beginner stage, shift focus from external knowledge (AI, fancy tools) to fixing your own mistakes (adds to an inaudible point by Clement that Martin endorses).",
+   "timestamp": "142:07"
+  },
+  {
+   "category": "process",
+   "text": "C and B games drag results down most; improving them is worth more than turning A games into A+; journaling helps.",
+   "timestamp": "145:08"
+  },
+  {
+   "category": "psychology",
+   "text": "Prioritise weaknesses over strengths: without fixing overtrading, revenge trading and limiting risk per trade he would remain a boom-and-buster (disagrees with the 'abuse your strengths' idea).",
+   "timestamp": "149:43"
+  },
+  {
+   "category": "process",
+   "text": "To test a cue (e.g. RS new high before a breakout), study ~100 recent breakouts; the market is the best teacher.",
+   "timestamp": "152:44"
+  },
+  {
+   "category": "entries",
+   "text": "Doesn't like trading the close; the first hour to hour-and-a-half is the best window, then set the stop and forget it, possibly with limit orders to book profits.",
+   "timestamp": "155:57"
+  },
+  {
+   "category": "selection",
+   "text": "Study big, clear trends first (up and down) and find entries where risk is clear and tightest; only later study choppy markets and the fake-outs within them.",
+   "timestamp": "158:21"
+  },
+  {
+   "category": "process",
+   "text": "Journal with entry and exit remarks per trade (e.g. sold into extension on a second gap up with increasing volume; bought after inside day; oversized; chased); review huge winners against market, peers, sector and index; write paragraphs during big or prolonged drawdowns.",
+   "timestamp": "166:34"
+  },
+  {
+   "category": "process",
+   "text": "Use AI to ask for guidance and have it ask you questions, not to hand you summaries or answers; build your own thinking process first.",
+   "timestamp": "171:23"
+  },
+  {
+   "category": "sizing",
+   "text": "With a much larger account he would split entries into halves with very small risk (~0.1% per trade) and diversify across more trades.",
+   "timestamp": "181:02"
+  },
+  {
+   "category": "mindset",
+   "text": "Don't look at the news; knowing more can make you trade worse (oil long example, just trailing the 9 EMA).",
+   "timestamp": "187:09"
+  },
+  {
+   "category": "short_entries",
+   "text": "Don't short a stock in 'no man's land' with no resistance overhead even if the market looks bearish; there are better candidates.",
+   "timestamp": "189:34"
+  },
+  {
+   "category": "short_entries",
+   "text": "Preferred short: a gap up into an unfilled gap area together with the declining 9 EMA (e.g. semis bouncing into the gap and declining 9 EMA).",
+   "timestamp": "83:20"
+  },
+  {
+   "category": "entries",
+   "text": "He trades pullbacks into the EMAs, the unfilled gap and anchored VWAP, plus break-and-retest (learned from Vincent Desiano).",
+   "timestamp": "196:18"
+  },
+  {
+   "category": "sizing",
+   "text": "Crypto-related stocks are fast movers, so he does not use huge size on them, though he takes no extra caution holding them over the weekend.",
+   "timestamp": "224:30"
+  },
+  {
+   "category": "mindset",
+   "text": "Accept the randomness and unpredictability of the future; it's a huge part of trading.",
+   "timestamp": "231:47"
+  },
+  {
+   "category": "psychology",
+   "text": "He traded worst during choppy periods (late Aug to early Sep) when he was streaming a lot.",
+   "timestamp": "234:12"
+  },
+  {
+   "category": "process",
+   "text": "His EMAs are 9, 21 and 50, plus the 150 EMA.",
+   "timestamp": "234:12"
+  },
+  {
+   "category": "exits",
+   "text": "If no really weak close on a Friday, he will cover some shorts into the weekend.",
+   "timestamp": "261:33"
+  },
+  {
+   "category": "exits",
+   "text": "After a big crash while still in a long, raise the stop to the huge red candle low or a bit below the daily 50 EMA; a bounce into the hourly 9 EMA plus a key MA is a good exit, selling on the hourly candle breakdown.",
+   "timestamp": "267:47"
+  },
+  {
+   "category": "risk",
+   "text": "Tight stops raise the chance of shakeouts; what matters is spotting the shakeout and finding a re-entry. A ~1% stop is fine; at ~0.5% consider widening a little.",
+   "timestamp": "273:13"
+  },
+  {
+   "category": "market_read",
+   "text": "Failed breakdowns on clean setups often come from sector strength ('wrong stock in the wrong sector'); studying failed breakouts/breakdowns avoids many traps. A reason only becomes an edge if it recurs over ~100 cases.",
+   "timestamp": "277:35"
+  }
+ ],
+ "ambiguous_tickers": [
+  {
+   "timestamp": "63:10",
+   "caption_text": "One is the answer and 5-minute candle breakdown",
+   "context": "Answer to 'what have I shorted?'; followed by 'MSTR is also another one' and 'looking at coin and MSTR'",
+   "guess": "COIN",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "250:39",
+   "caption_text": "space X short. I use the leverage ETF",
+   "context": "SpaceX treated as listed stock (anchored VWAP to its first day); leveraged ETF vehicle not named",
+   "guess": "SpaceX via unnamed leveraged inverse ETF",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "133:45",
+   "caption_text": "let's use the SNT case",
+   "context": "fourth short attempt; later 'SNDK is going for the 50 on the hourly', 'the S&D case'",
+   "guess": "SNDK",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "132:59",
+   "caption_text": "Listen, DK was a good example",
+   "context": "viewer question about re-entries",
+   "guess": "SNDK",
+   "confidence": "likely"
+  },
+  {
+   "timestamp": "121:42",
+   "caption_text": "My SNTQ entry was was taken uh midday",
+   "context": "example of a midday entry, date not stated; not logged as a trade",
+   "guess": "SQQQ (known 'SNQ' decode) or an SNDK leveraged ETF",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "186:21",
+   "caption_text": "but I'm long in this thing",
+   "context": "oil accelerating; instrument not named",
+   "guess": "crude oil (futures or oil ETF)",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "64:19",
+   "caption_text": "NKLA web that I bought and traded like",
+   "context": "garbled historical example near COIN/MSTR discussion; not logged",
+   "guess": "?",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "80:20",
+   "caption_text": "the 9-year may is pretty important for for Dow",
+   "context": "'Dell'/'Dow' discussed as possible leader; not a trade",
+   "guess": "DELL",
+   "confidence": "unsure"
+  },
+  {
+   "timestamp": "254:07",
+   "caption_text": "Why G V is still getting an under gun rally",
+   "context": "followed by IGV weekly bar question",
+   "guess": "IGV",
+   "confidence": "unsure"
+  }
+ ]
+}
