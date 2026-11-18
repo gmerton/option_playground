@@ -34,9 +34,9 @@ ev['half'] = (ev.fwd <= -0.5).astype(int); ev['dbl'] = (ev.fwd >= 1).astype(int)
 
 
 def cell(t, a, b):
-    m = t.groupby([t.date.dt.to_period('M'), 'grp']).xs.mean().unstack()
+    m = t.groupby([t.date.dt.to_period('M'), 'grp'])['xs'].mean().unstack()
     d = (m[a] - m[b]).dropna()
-    yr = t.groupby(['year', 'grp']).xs.mean().unstack(); yd = (yr[a] - yr[b])
+    yr = t.groupby(['year', 'grp'])['xs'].mean().unstack(); yd = (yr[a] - yr[b])
     return d, nw_t(d.values), yd
 
 
@@ -65,11 +65,11 @@ for label, t, graded in [('2011-18 (GRADED)', ev[ev.year <= 2018], True), ('2019
           '', '| group | mean xs | median fwd | P(double) | P(halve) | n |', '|---|---|---|---|---|---|']
     for g in ('LOW', 'MID', 'HIGH'):
         s = t[t.grp == g]
-        L.append(f'| {g} | {s.xs.mean():+.1%} | {s.fwd.median():+.1%} | {s.dbl.mean():.1%} | {s.half.mean():.1%} | {len(s):,} |')
+        L.append(f'| {g} | {s['xs'].mean():+.1%} | {s.fwd.median():+.1%} | {s.dbl.mean():.1%} | {s.half.mean():.1%} | {len(s):,} |')
     L += ['', '| ADR tercile | LOW − HIGH xs | LOW P(double) / P(halve) | HIGH P(double) / P(halve) |', '|---|---|---|---|']
     for a in (0, 1, 2):
         s = t[t.adr_t == a]; l, h = s[s.grp == 'LOW'], s[s.grp == 'HIGH']
-        L.append(f'| {["low", "mid", "high"][a]} | {l.xs.mean() - h.xs.mean():+.1%} | {l.dbl.mean():.1%} / {l.half.mean():.1%} | '
+        L.append(f'| {["low", "mid", "high"][a]} | {l['xs'].mean() - h['xs'].mean():+.1%} | {l.dbl.mean():.1%} / {l.half.mean():.1%} | '
                  f'{h.dbl.mean():.1%} / {h.half.mean():.1%} |')
     L += ['', '| year | LOW − HIGH xs |', '|---|---|'] + [f'| {y} | {v:+.1%} |' for y, v in yd.items()] + ['']
 open('data/studies/low_price_leaders_2026-11-17.md', 'w').write('\n'.join(L) + '\n'); print('\n'.join(L))
