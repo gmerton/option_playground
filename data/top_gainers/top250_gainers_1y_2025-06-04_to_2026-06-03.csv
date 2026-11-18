@@ -1,0 +1,251 @@
+rank,ticker,company,pct_gain,sector,industry_group,start_close,current_close,avg_dollar_vol_20d
+1,AXTI,AXT Inc,6139.8,Technology,Semiconductors,1.71,106.7,1121568886
+2,SNDK,Sandisk Corporation Common Stock,4499.4,Technology,"Hardware, Equipment & Parts",39.82,1831.5,19528601780
+3,WOLF,"Wolfspeed, Inc.",3730.4,Technology,Semiconductors,1.61,61.67,689307745
+4,BE,Bloom Energy Corporation,1318.9,Industrials,Electrical Equipment & Parts,20.25,287.32,2904612152
+5,LITE,Lumentum Holdings Inc. Common Stock,1068.4,Technology,Communication Equipment,80.28,938.0,6094383341
+6,LWLG,"Lightwave Logic, Inc. Common Stock",1059.4,Basic Materials,Chemicals - Specialty,1.06,12.29,116082966
+7,ABVX,Abivax SA American Depositary Shares,1018.5,Healthcare,Biotechnology,8.06,90.15,257474491
+8,WDC,Western Digital Corp.,991.5,Technology,Computer Hardware,54.43,594.11,3439145170
+9,PL,Planet Labs PBC,981.0,Industrials,Aerospace & Defense,3.99,43.13,500505350
+10,AAOI,"Applied Optoelectronics, Inc.",975.8,Technology,Semiconductors,17.11,184.07,2261971879
+11,MU,"Micron Technology, Inc.",945.6,Technology,Semiconductors,103.25,1079.57,45168534418
+12,TE,T1 Energy Inc.,917.7,Industrials,Electrical Equipment & Parts,1.13,11.5,388432927
+13,AEHR,Aehr Test Systems,880.2,Technology,Semiconductors,11.69,114.59,247313508
+14,SOGP,Sound Group Inc. American Depositary Shares,871.7,Technology,Software - Application,1.29,12.54,285813
+15,SLGL,Sol-Gel Technologies Ltd. Ordinary Shares,868.8,Healthcare,Biotechnology,7.38,71.5,2195126
+16,ERAS,"Erasca, Inc. Common Stock",761.4,Healthcare,Biotechnology,1.53,13.18,54958674
+17,HYMC,Hycroft Mining Holding Corporation Class A Common Stock,759.6,Basic Materials,Gold,3.74,32.15,79751861
+18,KOD,Kodiak Sciences Inc Common Stock,753.1,Healthcare,Biotechnology,3.97,33.87,23730063
+19,RILYL,"BRC Group Holdings, Inc. Depositary Shares each representing 1/1000th in a share of 7.375% Series B Cumulative Perpetual Preferred Stock, par value $0.0001",751.5,,Investment Advice,2.0,17.03,173164
+20,CLYM,"Climb Bio, Inc. Common Stock",709.3,Healthcare,Biotechnology,1.29,10.44,10009253
+21,OPTX,"Syntec Optics Holdings, Inc. Class A Common Stock",704.5,Technology,"Hardware, Equipment & Parts",1.57,12.63,13964106
+22,AMPX,"Amprius Technologies, Inc.",693.4,Industrials,Electrical Equipment & Parts,2.74,21.74,199800197
+23,VSAT,Viasat Inc,683.1,Technology,Communication Equipment,8.89,69.62,189196661
+24,NBTX,Nanobiotix S.A. American Depositary Shares,673.6,Healthcare,Biotechnology,4.55,35.2,3681489
+25,HUT,Hut 8 Corp. Common Stock,671.8,,Finance Services,17.01,131.29,603081433
+26,ANRO,Alto Neuroscience Inc.,669.4,Healthcare,Biotechnology,2.45,18.85,7480028
+27,CRML,Critical Metals Corp. Ordinary Shares,659.3,Basic Materials,Industrial Materials,1.45,11.01,123703125
+28,MXL,"MaxLinear, Inc. Common Stock",648.8,Technology,Semiconductors,12.21,91.39,501384558
+29,VICR,Vicor Corp,647.9,Technology,"Hardware, Equipment & Parts",44.19,330.48,268970482
+30,SATS,EchoStar Corporation,646.4,Technology,Communication Equipment,16.2,120.92,846262956
+31,CELC,Celcuity Inc. Common Stock,642.5,Healthcare,Biotechnology,11.98,88.95,178529774
+32,CIEN,Ciena Corporation,639.5,Technology,Communication Equipment,83.89,620.37,1238610984
+33,STX,Seagate Technology Holdings PLC Ordinary Shares (Ireland),637.0,Technology,Computer Hardware,127.64,940.69,3010548598
+34,INBX,"Inhibrx Biosciences, Inc. Common Stock",632.5,Healthcare,Biotechnology,13.0,95.22,57860259
+35,CIFR,Cipher Digital Inc. Common Stock,601.6,Financial Services,Financial - Capital Markets,3.74,26.24,584579503
+36,ASTC,Astrotech Corporation (DE) Common Stock,594.8,Industrials,Aerospace & Defense,5.8,40.3,297422512
+37,IREN,IREN Limited Ordinary Shares,594.4,Financial Services,Financial - Capital Markets,9.43,65.48,3570979422
+38,PRAX,"Praxis Precision Medicines, Inc. Common Stock",574.2,Healthcare,Biotechnology,41.37,278.93,138235701
+39,ONDS,Ondas Inc. Common Stock,563.4,Technology,Communication Equipment,1.75,11.61,995946303
+40,ANL,Adlai Nortye Ltd. American Depositary Shares,562.4,Healthcare,Biotechnology,1.7,11.26,1892281
+41,TNGX,"Tango Therapeutics, Inc.",556.6,Healthcare,Biotechnology,3.27,21.47,65556488
+42,NBIS,Nebius Group N.V. Class A Ordinary Shares,538.9,Communication Services,Internet Content & Information,39.39,251.68,4047861732
+43,TSEM,Tower Semiconductor Ltd,536.4,Technology,Semiconductors,42.1,267.91,627394255
+44,QTTB,Q32 Bio Inc. Common Stock,531.6,Healthcare,Biotechnology,1.93,12.19,17484602
+45,OSS,"One Stop Systems, Inc. Common Stock",521.6,Technology,Computer Hardware,3.06,19.02,41933765
+46,WULF,TeraWulf Inc. Common Stock,517.0,Financial Services,Financial - Capital Markets,4.24,26.16,681763961
+47,ALMS,Alumis Inc. Common Stock,488.9,Healthcare,Biotechnology,3.41,20.08,20330059
+48,TTMI,TTM Technologies Inc,485.7,Technology,"Hardware, Equipment & Parts",32.37,189.6,466683545
+49,DOCN,"DigitalOcean Holdings, Inc.",481.5,Technology,Software - Infrastructure,29.87,173.68,555679073
+50,COGT,"Cogent Biosciences, Inc. Common Stock",472.0,Healthcare,Biotechnology,5.64,32.26,71925426
+51,VIAV,Viavi Solutions Inc. Common Stock,464.3,Technology,Communication Equipment,9.29,52.42,342878941
+52,INTC,Intel Corp,456.6,Technology,Semiconductors,20.25,112.71,15910257689
+53,URGN,UroGen Pharma Ltd. Ordinary Shares,440.7,Healthcare,Biotechnology,4.92,26.6,26811260
+54,LPTH,Lightpath Technologies Inc,438.6,Technology,"Hardware, Equipment & Parts",2.9,15.62,64921926
+55,RLYB,Rallybio Corporation Common Stock,434.2,Healthcare,Biotechnology,3.01,16.07,1599505
+56,SIF,"SIFCO Industries, Inc.",433.1,Industrials,Aerospace & Defense,3.75,19.99,2192903
+57,LAR,Lithium Argentina AG,431.9,Basic Materials,Industrial Materials,1.91,10.16,30664550
+58,NKTR,Nektar Therapeutics,429.1,Healthcare,Biotechnology,11.19,59.23,66793146
+59,ASYS,Amtech Systems Inc,426.8,Technology,Semiconductors,4.0,21.07,8420465
+60,FLNC,"Fluence Energy, Inc. Class A Common Stock",412.4,Utilities,Renewable Utilities,4.85,24.85,408625524
+61,SLS,"SELLAS Life Sciences Group, Inc. Common Stock",411.9,Healthcare,Biotechnology,1.6,8.19,88456522
+62,COHR,Coherent Corp.,411.4,Technology,"Hardware, Equipment & Parts",81.63,417.43,2468449076
+63,POWL,Powell Industries Inc,406.8,Industrials,Electrical Equipment & Parts,59.14,299.73,190791272
+64,DGXX,Digi Power X Inc. Subordinate Voting Shares,404.6,Financial Services,Asset Management - Cryptocurrency,1.51,7.62,135989827
+65,TER,"Teradyne, Inc. Common Stock",399.2,Technology,Semiconductors,82.06,409.67,1338108815
+66,MRAM,"Everspin Technologies, Inc",396.0,Technology,Semiconductors,5.76,28.57,248139979
+67,STRL,"Sterling Infrastructure, Inc. Common Stock",393.8,Industrials,Engineering & Construction,193.81,957.03,599088891
+68,ORKA,"Oruka Therapeutics, Inc. Common Stock",389.7,Healthcare,Biotechnology,11.68,57.2,79796687
+69,TOYO,"TOYO Co., Ltd Ordinary Shares",388.9,Energy,Solar,3.37,16.45,6206205
+70,PVLA,"Palvella Therapeutics, Inc. Common Stock",384.8,Healthcare,Biotechnology,23.81,115.42,27525307
+71,AIP,"Arteris, Inc. Common Stock",383.1,Technology,Semiconductors,7.75,37.44,45222389
+72,LIXT,"Lixte Biotechnology Holdings, Inc. Common Stock",382.7,Healthcare,Biotechnology,1.39,6.71,996665
+73,ENLT,Enlight Renewable Energy Ltd. Ordinary Shares,380.7,Utilities,Renewable Utilities,19.96,95.95,23124982
+74,NGL,NGL ENERGY PARTNERS LP,380.2,Energy,Oil & Gas Midstream,3.39,16.28,6206697
+75,RLAY,"Relay Therapeutics, Inc. Common Stock",373.7,Healthcare,Biotechnology,3.23,15.3,64303639
+76,DNTH,"Dianthus Therapeutics, Inc. Common Stock",373.1,Healthcare,Biotechnology,17.96,84.97,50933240
+77,VPG,"Vishay Precision Group, Inc.",369.2,Technology,"Hardware, Equipment & Parts",27.69,129.93,75051423
+78,SIMO,Silicon Motion Technology Corporation,367.0,Technology,Semiconductors,65.64,306.57,318526418
+79,AMD,Advanced Micro Devices,357.5,Technology,Semiconductors,118.58,542.52,17079322995
+80,TRT,Trio-Tech International,356.2,Technology,Semiconductors,2.62,11.93,19750225
+81,MRVL,"Marvell Technology, Inc. Common Stock",355.0,Technology,Semiconductors,66.3,301.65,8450839779
+83,NVTS,Navitas Semiconductor Corporation Common Stock,354.9,Technology,Semiconductors,6.78,30.84,978998423
+82,BAND,Bandwidth Inc. Class A Common Stock,354.9,Technology,Software - Infrastructure,14.42,65.6,60803852
+84,PHOE,Phoenix Asia Holdings Limited Ordinary Shares,351.9,Industrials,Construction,3.6,16.28,3275406
+85,RFIL,RF Industries Ltd,350.6,Industrials,Electrical Equipment & Parts,4.05,18.25,4524049
+86,NESR,National Energy Services Reunited Corp. Ordinary Shares,345.6,Energy,Oil & Gas Equipment & Services,5.61,25.0,49421015
+87,SYRE,"Spyre Therapeutics, Inc. Common Stock",345.0,Healthcare,Biotechnology,16.52,73.52,71684943
+88,OCC,Optical Cable Corp.,343.7,Technology,Communication Equipment,3.16,14.02,4753879
+89,LASR,"nLIGHT, Inc. Common Stock",341.6,Technology,Semiconductors,17.3,76.39,109802505
+90,RXT,"Rackspace Technology, Inc. Common Stock",341.5,Technology,Software - Infrastructure,1.18,5.21,211960536
+91,ELA,Envela Corporation,340.3,Consumer Cyclical,Luxury Goods,5.48,24.13,3677871
+92,UCTT,"Ultra Clean Holdings, Inc.",339.9,Technology,Semiconductors,21.04,92.55,91544664
+93,BLDP,Ballard Power Systems Inc.,339.1,Industrials,Industrial - Machinery,1.38,6.06,68968520
+94,BBGI,Beasley Broadcasting Group Inc,338.4,Communication Services,Broadcasting,4.6,20.18,523167
+95,ARWR,Arrowhead Research Corporation,333.4,Healthcare,Biotechnology,16.74,72.55,135663302
+96,KOPN,Kopin Corp,332.9,Technology,Consumer Electronics,1.43,6.19,59657881
+97,VSH,"Vishay Intertechnology, Inc.",331.4,Technology,Semiconductors,14.83,63.97,342427286
+98,SMTC,Semtech Corp,326.3,Technology,Semiconductors,38.35,163.5,573112477
+99,RKLB,Rocket Lab Corporation Common Stock,326.2,Industrials,Aerospace & Defense,26.91,114.7,3902004055
+100,EVC,Entravision Communication,325.7,Communication Services,Broadcasting,2.02,8.6,46690925
+101,SEDG,"SolarEdge Technologies, Inc.",323.7,Energy,Solar,17.47,74.02,305135494
+102,ASTI,"Ascent Solar Technologies, Inc. Common Stock",320.1,Energy,Solar,1.65,6.91,15564718
+103,MTC,"MMTec, Inc. Common Shares",319.1,Technology,Software - Application,1.02,4.28,558735
+104,HYLN,Hyliion Holdings Corp.,316.8,Consumer Cyclical,Auto - Parts,1.55,6.46,33957684
+105,GSAT,"Globalstar, Inc. Common Stock",315.9,Communication Services,Telecommunications Services,19.62,81.6,103523894
+106,CVGI,"Commercial Vehicle Group, Inc.",312.9,Consumer Cyclical,Auto - Parts,1.4,5.78,3113485
+107,ASX,"ASE Technology Holding Co., Ltd.",312.7,Technology,Semiconductors,9.67,39.91,326637556
+108,QUIK,QuickLogic Corp,311.6,Technology,Semiconductors,5.6,23.05,14509274
+109,SKYT,"SkyWater Technology, Inc. Common Stock",311.3,Technology,Semiconductors,9.33,38.37,45462588
+110,ICHR,Ichor Holdings,310.7,Technology,Semiconductors,17.64,72.45,80227748
+111,IMMX,"Immix Biopharma, Inc. Common Stock",309.7,Healthcare,Biotechnology,2.06,8.44,12645450
+112,STTK,"Shattuck Labs, Inc. Common Stock",309.5,Healthcare,Biotechnology,1.16,4.75,3754123
+113,LRCX,Lam Research Corp,305.5,Technology,Semiconductors,84.77,343.71,2764030559
+114,GLW,Corning Incorporated,295.5,Technology,"Hardware, Equipment & Parts",50.76,200.76,3023855322
+115,AMKR,Amkor Technology Inc,294.3,Technology,Semiconductors,19.07,75.2,343343695
+116,UMAC,"Unusual Machines, Inc.",293.7,Financial Services,Shell Companies,7.33,28.86,223200825
+117,GPRE,"Green Plains, Inc.",291.6,Basic Materials,Chemicals - Specialty,4.06,15.9,27550314
+118,FORM,FormFactor Inc.,291.1,Technology,Semiconductors,32.22,126.02,274313975
+119,FCEL,FuelCell Energy Inc  NEW (DE),286.7,Industrials,Electrical Equipment & Parts,5.64,21.81,245284292
+120,RVMD,"Revolution Medicines, Inc. Common Stock",286.3,Healthcare,Biotechnology,40.38,155.99,421441220
+121,ANTX,"AN2 Therapeutics, Inc. Common Stock",285.3,Healthcare,Biotechnology,1.09,4.2,1062990
+122,ACMR,"ACM Research, Inc. Class A Common Stock",284.7,Technology,Semiconductors,23.1,88.86,150258265
+123,ARMP,"Armata Pharmaceuticals, Inc. Common Stock",284.3,Healthcare,Biotechnology,1.98,7.59,595075
+124,SPHR,Sphere Entertainment Co.,283.1,Communication Services,Entertainment,37.0,141.75,95068750
+125,CLS,"Celestica, Inc.",282.1,Technology,"Hardware, Equipment & Parts",119.9,458.14,890455735
+126,ALAB,"Astera Labs, Inc. Common Stock",281.8,Technology,Semiconductors,95.22,363.54,1736792035
+127,GLUE,"Monte Rosa Therapeutics, Inc. Common Stock",281.6,Healthcare,Biotechnology,4.61,17.59,15754033
+128,MKSI,MKS Inc. Common Stock,281.4,Technology,"Hardware, Equipment & Parts",87.88,335.15,397903536
+129,BELFB,Bel Fuse Inc,280.0,Technology,"Hardware, Equipment & Parts",73.71,280.09,94154435
+130,FLEX,Flex Ltd. Ordinary Shares,278.6,Technology,"Hardware, Equipment & Parts",42.77,161.94,1041999016
+131,BELFA,Bel Fuse Inc,277.2,Technology,"Hardware, Equipment & Parts",65.91,248.58,23495715
+132,BIOA,"BioAge Labs, Inc. Common Stock",275.6,Healthcare,Biotechnology,4.27,16.04,7253279
+133,ASTS,"AST SpaceMobile, Inc. Class A Common Stock",275.5,Technology,Communication Equipment,28.69,107.73,2681474577
+134,PENG,"Penguin Solutions, Inc. Ordinary Shares",274.9,Technology,"Hardware, Equipment & Parts",19.05,71.41,200356480
+135,DELL,Dell Technologies Inc.,273.6,Technology,Computer Hardware,112.7,421.08,3919647422
+136,AXGN,"Axogen, Inc. Common Stock",272.8,Healthcare,Medical - Devices,10.9,40.63,32449695
+137,FIX,"Comfort Systems USA, Inc.",271.0,Industrials,Engineering & Construction,498.63,1850.04,801883834
+138,DRTS,Alpha Tau Medical Ltd. Ordinary Shares,259.9,Healthcare,Biotechnology,2.94,10.58,12458107
+139,PACS,"PACS Group, Inc.",258.9,Financial Services,Financial - Conglomerates,10.17,36.5,37331809
+140,FEIM,"Frequency Electronics, Inc.",256.3,Technology,Communication Equipment,19.41,69.16,11231671
+141,RILYZ,"BRC Group Holdings, Inc. 5.25% Senior Notes due 2028",255.0,Financial Services,Investment - Banking & Investment Services,5.64,20.02,1189194
+142,ARTV,"Artiva Biotherapeutics, Inc. Common Stock",253.8,Healthcare,Biotechnology,1.97,6.97,7005473
+143,EDSA,"Edesa Biotech, Inc. Common Shares",251.8,Healthcare,Biotechnology,1.95,6.86,4000377
+144,SITM,SiTime Corporation Common Stock,251.5,Technology,Semiconductors,202.78,712.75,500063484
+145,DWSN,Dawson Geophysical Company New Common Stock,250.5,Energy,Oil & Gas Equipment & Services,1.28,4.49,466951
+146,EFXT,Enerflex Ltd.,248.7,Energy,Oil & Gas Equipment & Services,7.43,25.91,16625954
+147,FET,"Forum Energy Technologies, Inc.",248.3,Energy,Oil & Gas Equipment & Services,14.98,52.17,8510495
+148,KORE,"KORE Group Holdings, Inc.",248.1,Communication Services,Telecommunications Services,2.64,9.19,205922
+149,ELVA,Electrovaya Inc. Common Shares,247.1,Industrials,Electrical Equipment & Parts,3.25,11.28,5897075
+150,TXG,"10x Genomics, Inc. Class A Common Stock",244.3,Healthcare,Medical - Healthcare Information Services,9.34,32.16,73961716
+151,POET,POET Technologies Inc. Common Shares,243.3,Technology,Semiconductors,4.48,15.38,849099925
+152,TMQ,Trilogy Metals Inc,242.3,Basic Materials,Industrial Materials,1.3,4.45,13102373
+153,TLYS,Tilly's Inc.,241.5,Consumer Cyclical,Apparel - Retail,1.3,4.44,1158324
+154,TTI,"TETRA Technologies, Inc.",240.6,Energy,Oil & Gas Equipment & Services,2.86,9.74,15322997
+155,CENX,Century Aluminum Co,239.8,Basic Materials,Aluminum,19.73,67.03,121147163
+156,NNNN,Anbio Biotechnology Class A Ordinary Shares,239.0,Healthcare,Medical - Instruments & Supplies,8.41,28.51,684088
+157,IMOS,ChipMOS TECHNOLOGIES INC,238.3,Technology,Semiconductors,18.55,62.75,7242939
+158,WATT,Energous Corporation,238.1,Technology,"Hardware, Equipment & Parts",8.41,28.44,9698927
+159,APLD,Applied Digital Corporation Common Stock,237.4,Technology,Information Technology Services,13.25,44.71,993223228
+160,CYD,China Yuchai International Ltd.,236.1,Industrials,Industrial - Machinery,17.16,57.67,12769500
+161,DPRO,Draganfly Inc. Common Shares,234.4,Industrials,Aerospace & Defense,2.09,6.99,16036708
+162,MAAS,Maase Inc. Class A Ordinary Shares,233.7,Financial Services,Asset Management,3.29,10.98,393148
+164,UAMY,United States Antimony Corporation,233.1,Basic Materials,Industrial Materials,2.75,9.16,111037933
+163,NBR,Nabors Industries Ltd.,233.1,Energy,Oil & Gas Drilling,28.9,96.28,28220687
+166,MOD,Modine Manufacturing Co,229.5,Consumer Cyclical,Auto - Parts,91.66,302.03,392302593
+165,WYY,WidePoint Corporation,229.5,Technology,Information Technology Services,3.52,11.6,1767477
+167,RILYT,"BRC Group Holdings, Inc. 6.00% Senior Notes Due 2028",229.5,,Investment Advice,6.45,21.25,805963
+168,ZURA,Zura Bio Limited Class A Ordinary Shares,227.1,Healthcare,Biotechnology,1.18,3.86,3206783
+169,AP,Ampco-Pittsburgh Corp.,225.0,Industrials,Manufacturing - Metal Fabrication,3.6,11.7,1761468
+170,LSCC,Lattice Semiconductor Corp,224.5,Technology,Semiconductors,47.64,154.6,322930300
+171,KLIC,Kulicke & Soffa Industries Inc,224.5,Technology,Semiconductors,33.41,108.4,106456547
+172,HBM,Hudbay Minerals Inc.,223.7,Basic Materials,Copper,9.37,30.33,162831456
+173,NEXA,Nexa Resources S.A. Common Shares,222.0,Basic Materials,Industrial Materials,4.91,15.81,18315271
+174,SANM,Sanmina  Corp,221.4,Technology,"Hardware, Equipment & Parts",87.97,282.72,225929272
+175,RHLD,"Resolute Holdings Management, Inc.",220.7,Industrials,Specialty Business Services,35.08,112.51,22699517
+176,LTRX,Lantronix Inc,220.5,Technology,Communication Equipment,2.34,7.5,10696600
+177,RILY,"BRC Group Holdings, Inc. Common Stock",219.5,Financial Services,Financial - Conglomerates,2.98,9.52,11097064
+178,GTX,Garrett Motion Inc. Common Stock,219.2,Consumer Cyclical,Auto - Parts,10.13,32.34,104167770
+179,CNTA,Centessa Pharmaceuticals plc American Depositary Shares,218.0,Healthcare,Biotechnology,12.53,39.85,44086794
+180,GCTS,"GCT Semiconductor Holding, Inc.",217.6,Technology,Semiconductors,1.02,3.24,35060320
+181,BNAI,Brand Engagement Network Inc. Common Stock,217.1,Technology,Software - Infrastructure,4.34,13.75,6000724
+182,LQDA,Liquidia Corporation Common Stock,216.4,Healthcare,Biotechnology,17.6,55.69,104318128
+184,AVTX,"Avalo Therapeutics, Inc. Common Stock",215.9,Healthcare,Biotechnology,4.35,13.74,56462048
+183,ARM,Arm Holdings plc American Depositary Shares,215.9,Technology,Semiconductors,130.36,411.83,3880796549
+185,TYGO,"Tigo Energy, Inc. Common Stock",215.5,Energy,Solar,1.1,3.47,2875463
+186,AGX,"Argan, Inc",215.1,Industrials,Engineering & Construction,217.8,686.37,194020338
+187,TGB,Taseko Mines Limited,215.0,Basic Materials,Copper,2.47,7.78,38700668
+189,OUST,"Ouster, Inc.",214.7,Technology,"Hardware, Equipment & Parts",13.97,43.96,211589354
+188,UUUU,Energy Fuels Inc.,214.7,Energy,Uranium,5.72,18.0,219248440
+190,MOB,Mobilicom Limited Ordinary Shares,214.0,Technology,Communication Equipment,2.14,6.72,1640867
+191,SIFY,Sify Technologies Limited,212.7,Communication Services,Telecommunications Services,5.12,16.01,1214723
+192,BKSY,BlackSky Technology Inc.,211.8,Technology,"Hardware, Equipment & Parts",12.02,37.48,118993750
+193,PSIG,PS International Group Ltd. Ordinary Shares,211.2,Industrials,Integrated Freight & Logistics,2.78,8.66,9105638
+194,CRVS,"Corvus Pharmaceuticals, Inc.",209.3,Healthcare,Biotechnology,3.75,11.6,24858499
+195,AMAT,Applied Materials Inc,209.3,Technology,Semiconductors,161.93,500.77,3631293864
+196,NOK,Nokia Corporation,209.2,Technology,Communication Equipment,5.41,16.73,1802880931
+197,HPE,Hewlett Packard Enterprise Company,209.1,Technology,Computer Hardware,17.84,55.15,1534072430
+198,SEPN,"Septerna, Inc. Common Stock",206.4,Healthcare,Biotechnology,9.97,30.55,8970986
+199,MTSI,"MACOM Technology Solutions Holdings, Inc",206.4,Technology,Semiconductors,127.41,390.34,647721770
+200,LUNR,"Intuitive Machines, Inc. Class A Common Stock",205.9,Industrials,Aerospace & Defense,11.06,33.83,626235330
+201,SGML,Sigma Lithium Corporation Common Shares,205.6,Basic Materials,Industrial Materials,4.96,15.16,69502584
+202,COHU,Cohu Inc,205.5,Technology,Semiconductors,18.37,56.12,79243355
+203,OMER,Omeros Corporation,204.2,Healthcare,Biotechnology,3.34,10.16,21164241
+204,NEWP,New Pacific Metals Corp.,203.9,Basic Materials,Other Precious Metals,1.54,4.68,6926250
+205,FN,Fabrinet,203.0,Technology,"Hardware, Equipment & Parts",239.28,725.0,682714394
+206,NWPX,"NWPX Infrastructure, Inc. Common Stock",200.6,Industrials,Manufacturing - Metal Fabrication,39.82,119.7,16134904
+207,SILC,Silicom Ltd,200.2,Technology,Communication Equipment,14.65,43.98,8431591
+208,BNR,Burning Rock Biotech Limited American Depositary Shares,199.7,Healthcare,Medical - Diagnostics & Research,2.9,8.69,226431
+209,STRO,"Sutro Biopharma, Inc.",198.9,Healthcare,Biotechnology,9.09,27.18,10447361
+210,FTRE,Fortrea Holdings Inc. Common Stock,198.9,Healthcare,Biotechnology,5.23,15.63,19029301
+211,RMBS,Rambus Inc,198.6,Technology,Semiconductors,57.15,170.66,313133338
+212,CECO,Ceco Environmental Corp,197.4,Industrials,Industrial - Pollution & Treatment Controls,26.72,79.47,76043611
+213,TVTX,"Travere Therapeutics, Inc. Common Stock",197.0,Healthcare,Biotechnology,15.22,45.2,106607515
+214,BODI,"The Beachbody Company, Inc. Class A Common Stock",196.5,Communication Services,Internet Content & Information,3.67,10.88,881652
+215,VECO,Veeco Instruments Inc,196.4,Technology,Semiconductors,20.4,60.46,88122881
+216,SRZN,"Surrozen, Inc. Common",195.7,Healthcare,Biotechnology,8.31,24.57,2516361
+217,AA,Alcoa Corporation,195.4,Basic Materials,Aluminum,27.37,80.86,314523726
+218,VATE,INNOVATE Corp.,194.8,Industrials,Engineering & Construction,5.61,16.54,831623
+219,BTE,Baytex Energy Corp.,194.7,Energy,Oil & Gas Exploration & Production,1.71,5.04,93834760
+220,TSAT,Telesat Corporation Class A Common Shares and Class B Variable Voting Shares,193.9,Technology,Communication Equipment,15.92,46.79,11509864
+221,VOR,Vor Biopharma Inc. Common Stock,193.8,Healthcare,Biotechnology,4.57,13.44,12889400
+222,VRT,Vertiv Holdings Co Class A Common Stock,193.7,Industrials,Electrical Equipment & Parts,112.85,331.44,1936740153
+223,CPSH,CPS Technologies Corp. Common Stock,193.3,Technology,"Hardware, Equipment & Parts",2.68,7.86,34113242
+224,ONTO,Onto Innovation Inc.,191.4,Technology,Semiconductors,96.08,279.98,355468077
+225,USAS,Americas Gold and Silver Corporation,191.3,Basic Materials,Industrial Materials,2.02,5.88,35786769
+226,SVM,Silvercorp Metals Inc. Common Shares,191.2,Basic Materials,Silver,4.21,12.26,51334291
+227,RIOT,"Riot Platforms, Inc. Common Stock",191.1,Financial Services,Financial - Capital Markets,9.5,27.65,446693233
+228,PDFS,PDF Solutions Inc,191.0,Technology,Software - Application,18.95,55.14,51412061
+229,NEGG,"Newegg Commerce, Inc. Common Shares",190.0,Consumer Cyclical,Specialty Retail,6.28,18.21,2697141
+230,SIDU,"Sidus Space, Inc. Class A Common Stock",189.9,Industrials,Aerospace & Defense,1.48,4.29,136471144
+231,MTRN,Materion Corporation,188.7,Basic Materials,Industrial Materials,79.16,228.52,62577559
+232,VNCE,Vince Holding Corp. Common Stock,188.1,Consumer Cyclical,Apparel - Manufacturers,1.51,4.35,764945
+233,GSIT,GSI Technology,187.9,Technology,Semiconductors,3.39,9.76,31902741
+234,PUMP,ProPetro Holding Corp.,187.7,Energy,Oil & Gas Equipment & Services,5.68,16.34,90889402
+235,PGEN,"Precigen, Inc. Common Stock",186.5,Healthcare,Biotechnology,1.33,3.81,19570842
+236,RAPP,"Rapport Therapeutics, Inc. Common Stock",183.3,Healthcare,Biotechnology,13.06,37.0,12343622
+237,CTNM,"Contineum Therapeutics, Inc. Class A Common Stock",183.0,Healthcare,Biotechnology,4.41,12.48,2308407
+238,HIMX,"Himax Technologies, Inc.",182.9,Technology,Semiconductors,8.55,24.19,138993896
+239,CLMT,"Calumet, Inc. Common Stock",182.5,Energy,Oil & Gas Exploration & Production,13.23,37.37,32245187
+240,SSL,Sasol Limited,182.4,Basic Materials,Chemicals - Specialty,4.67,13.19,17596280
+241,ALB,Albemarle Corporation,182.0,Basic Materials,Chemicals - Specialty,59.7,168.34,418468260
+242,UMC,United Microelectronic Corp.,181.1,Technology,Semiconductors,7.62,21.42,319088980
+243,ZEPP,"Zepp Health Corporation American depositary shares, each representing sixteen Class A ordinary shares",181.0,Technology,Consumer Electronics,2.42,6.8,1452904
+244,ENS,"EnerSys, Inc.",180.9,Industrials,Electrical Equipment & Parts,85.48,240.14,115518574
+245,CMPS,COMPASS Pathways Plc American Depository Shares,180.8,Healthcare,Medical - Care Facilities,4.52,12.69,49447381
+246,CRDO,Credo Technology Group Holding Ltd Ordinary Shares,180.7,Technology,Communication Equipment,76.46,214.6,1560593533
+247,STM,STMicroelectronics N.V.,180.6,Technology,Semiconductors,28.41,79.71,788397347
+248,ESPR,"Esperion Therapeutics, Inc.",180.4,Healthcare,Biotechnology,1.12,3.14,37645133
+249,MGNX,"MacroGenics, Inc.",180.0,Healthcare,Biotechnology,1.5,4.2,5913733
+250,TYRA,"Tyra Biosciences, Inc. Common Stock",179.6,Healthcare,Biotechnology,10.26,28.69,23512844
