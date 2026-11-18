@@ -148,7 +148,7 @@ and the 5Y winner 51%. About **45–48% drew down more than 50%** along the way.
   measured a re-entry loop on the same name.**
 
 ## 5. Candidate hypotheses for the computational phase (new axes only)
-1. **Re-entry loop on an established leader** (new): after the first 52w-high close, trade the name repeatedly.
+1. ~~**Re-entry loop on an established leader**~~ **RUN 2026-11-17: INVERTED** (B1 − A −1.3% to −2.4%, t −3.2 to −9.1; NULL vs hold). Re-entry recovers the move on the 3% that double and costs it on the rest, so §3.3 was outcome conditioning. See `leader_reentry_loop_2026-11-17.md`. Original text: after the first 52w-high close, trade the name repeatedly.
    Exit on a close below the 21 EMA (or 50 SMA), re-enter on the next reclaim / new 50-day-high close. Score
    total capture vs single-trip and vs buy-and-hold, **on the full population of names that made a first 52w
    high**, not on these winners. This is the gap §3.3 points at.
