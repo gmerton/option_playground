@@ -291,6 +291,10 @@ Discovered the expensive way. Each one looks like a different problem than it is
   condition fires on ~100% of signals (2026-09-23, `orb_retest_vs_break_2026-09-23.md`). Use
   **`lib.journal.exit_kind.session_vwap(bars)`** — `cumsum(vwap × volume) / cumsum(volume)`. The
   live detectors are unaffected (`lib/alerts/bars.py` computes its own from the stream).
+- **Never rank or filter on a split-ADJUSTED price LEVEL.** Adjusted history divides past prices by every later
+  split, so a low adjusted price in 2012 partly means "split later", i.e. "won later": look-ahead. It manufactured
+  a t 4.2 'low-price leaders' pass on 2026-11-17 that went to t 0.89 on the nominal price. Use raw prices for levels
+  (price floors, price buckets) and adjusted series only for returns and ratios.
 - **MySQL is bound to `127.0.0.1`.** Nothing in the cloud can reach it, which is why the journal site's
   presentation had to be split from its data before CI could deploy it.
 

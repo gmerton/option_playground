@@ -1,5 +1,12 @@
 # Low share price among fresh leaders, volatility held fixed (2026-11-17)
 
+> ## ⛔ RETRACTED 2026-11-17 (same day): look-ahead through future splits
+> `logpx` was computed **after** split-adjusting chain_spot, so a 2012 "price" reflects every split through 2026.
+> Later splitters are disproportionately later winners, so a low adjusted price encodes the future. On the
+> **nominal** (raw) price at the event: **2011-18 LOW − HIGH +2.2%, t 0.89; 2019-25 −0.1%, t −0.02**, and low-priced
+> names halve MORE (5.3% vs 2.3%). No price effect. The veto test was not run. Re-score:
+> `low_price_leaders_2026-11-17_nominal.csv`. Everything below is the contaminated original, kept for the record.
+
 **Verdict: PASS on the pre-registered spread (DISCOVERY) · as a long selector ≈ SPY · actionable as a VETO, untested
 as one.** Low-priced fresh 52w-high names beat high-priced ones by ~10%/yr with volatility held fixed, and they
 blow up no more often. The edge is mostly the **high-priced leg lagging**, not the low-priced leg winning.

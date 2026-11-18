@@ -9,7 +9,7 @@ left tail with it. On the untouched 2019–25 test it is a volatility sorter, no
   return is lower (+5.2% vs +6.4%).
 - Exploratory (after the result, not graded): **ADR alone** predicts doubling (AUC 0.752) as well as the
   7-feature composite, and predicts halving equally (0.755), so the composite is mostly volatility.
-  The one asymmetric feature is **low share price**: doubling AUC 0.674, halving 0.513. That is a search-found
+  ~~The one asymmetric feature is **low share price**~~ (RETRACTED: `logpx` used split-adjusted prices, i.e. look-ahead; on nominal price there is no effect, see `low_price_leaders_2026-11-17.md`): doubling AUC 0.674, halving 0.513. That is a search-found
   lead for a fresh pre-registered test, not a finding.
 - For the triple-digit goal: fresh leaders sorted by observable shape do not give a doubling rate above ~10%,
   and that comes with an equal blow-up rate. At equal-risk sizing (smaller size in high-ADR names, which is how
